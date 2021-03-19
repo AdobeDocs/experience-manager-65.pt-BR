@@ -1,8 +1,8 @@
 ---
-title: Adicionar rastreamento Adobe Analytics aos componentes
-seo-title: Adicionar rastreamento Adobe Analytics aos componentes
-description: 'null'
-seo-description: nulo
+title: Adicionar rastreamento do Adobe Analytics aos componentes
+seo-title: Adicionar rastreamento do Adobe Analytics aos componentes
+description: Adicionar rastreamento do Adobe Analytics aos componentes
+seo-description: 'null'
 uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,21 +10,21 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
 
 
-# Adicionar rastreamento Adobe Analytics aos componentes{#adding-adobe-analytics-tracking-to-components}
+# Adicionar rastreamento do Adobe Analytics aos componentes{#adding-adobe-analytics-tracking-to-components}
 
 ## Inclusão do módulo Adobe Analytics em um componente de página {#including-the-adobe-analytics-module-in-a-page-component}
 
-Componentes do modelo de página (por exemplo, `head.jsp, body.jsp`) requer que o JSP inclua para carregar o ContextHub e a integração do Adobe Analytics (que faz parte dos Cloud Services). Tudo inclui carregar arquivos JavaScript.
+Componentes do modelo da página (por exemplo, `head.jsp, body.jsp`) precisa de inclusões de JSP para carregar o ContextHub e a integração do Adobe Analytics (que faz parte do Cloud Services). Tudo inclui carregar arquivos JavaScript.
 
-A entrada ContextHub deve ser incluída imediatamente abaixo da tag `<head>`, enquanto Cloud Services devem ser incluídos na seção `<head>` e antes da seção `</body>`; por exemplo:
+A entrada do ContextHub deve ser incluída imediatamente abaixo da tag `<head>`, enquanto que o Cloud Services deve ser incluído em `<head>` e antes da seção `</body>`; por exemplo:
 
 ```xml
 <head>
@@ -39,11 +39,11 @@ A entrada ContextHub deve ser incluída imediatamente abaixo da tag `<head>`, en
 </body>
 ```
 
-O script `contexthub` que você insere depois do elemento `<head>` adiciona os recursos do ContextHub à página.
+O script `contexthub` inserido após o elemento `<head>` adiciona os recursos do ContextHub à página.
 
-Os scripts `cloudservices` adicionados nas seções `<head>` e `<body>` aplicam-se às configurações de serviços em nuvem que são adicionadas à página. (Se a página usar mais de uma configuração de Cloud Services, será necessário incluir o ContextHub jsp e os Cloud Services jsp apenas uma vez.)
+Os scripts `cloudservices` adicionados nas seções `<head>` e `<body>` aplicam-se às configurações de serviços de nuvem que são adicionadas à página. (Se a página usar mais de uma configuração de Cloud Services, será necessário incluir o jsp do ContextHub e o jsp do Cloud Services apenas uma vez.)
 
-Quando uma estrutura do Adobe Analytics é adicionada à página, os scripts `cloudservices` geram javascript relacionado ao Adobe Analytics e referências a bibliotecas do lado do cliente, de modo semelhante ao seguinte exemplo:
+Quando uma estrutura Adobe Analytics é adicionada à página, os scripts `cloudservices` geram javascript relacionado ao Adobe Analytics e referências a bibliotecas do lado do cliente, semelhante ao seguinte exemplo:
 
 ```xml
 <div class="sitecatalyst cloudservice">
@@ -111,9 +111,9 @@ $CQ(function(){
 </div>
 ```
 
-Todos AEM sites de amostra, como Geometrixx Outdoors, têm esse código incluído.
+Todos AEM sites de exemplo, como Geometrixx Outdoors, têm esse código incluído.
 
-### O Evento sitecatalystAfterCollect {#the-sitecatalystaftercollect-event}
+### O evento sitecatalystAfterCollect {#the-sitecatalystaftercollect-event}
 
 O script `cloudservices` aciona o evento `sitecatalystAfterCollect`:
 
@@ -121,44 +121,44 @@ O script `cloudservices` aciona o evento `sitecatalystAfterCollect`:
 $CQ(document).trigger("sitecatalystAfterCollect");
 ```
 
-Esse evento é acionado para indicar que o rastreamento de página foi concluído. Se você estiver executando operações de rastreamento adicionais nesta página, você deve ouvir esse evento em vez do evento pronto para carregamento do documento ou documento. O uso do evento `sitecatalystAfterCollect` evita colisões ou outros comportamentos imprevisíveis.
+Esse evento é acionado para indicar que o rastreamento de página foi concluído. Se você estiver executando operações de rastreamento adicionais nesta página, é necessário ouvir esse evento em vez do evento document load ou document ready . Usar o evento `sitecatalystAfterCollect` evita colisões ou outro comportamento imprevisível.
 
 >[!NOTE]
 >
->A biblioteca `/libs/cq/analytics/clientlibs/sitecatalyst/sitecatalyst.js` inclui o código do arquivo Adobe Analytics `s_code.js`.
+>A biblioteca `/libs/cq/analytics/clientlibs/sitecatalyst/sitecatalyst.js` inclui o código do arquivo `s_code.js` do Adobe Analytics.
 
-## Implementação do rastreamento Adobe Analytics para componentes personalizados {#implementing-adobe-analytics-tracking-for-custom-components}
+## Implementação do rastreamento do Adobe Analytics para componentes personalizados {#implementing-adobe-analytics-tracking-for-custom-components}
 
-Permita que seus componentes AEM interajam com a estrutura do Adobe Analytics. Em seguida, configure sua estrutura para que a Adobe Analytics rastreie os dados do componente.
+Permitir que os componentes do AEM interajam com a estrutura do Adobe Analytics. Em seguida, configure sua estrutura para que o Adobe Analytics rastreie os dados do componente.
 
-Os componentes que interagem com a estrutura do Adobe Analytics aparecem no SideKick quando você está editando uma estrutura. Depois de arrastar o componente para a estrutura, as propriedades do componente são exibidas e você pode mapeá-las com as propriedades do Adobe Analytics. (Consulte [Configurando uma Estrutura para o Rastreamento Básico](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework).)
+Os componentes que interagem com a estrutura do Adobe Analytics aparecem no SideKick quando você está editando uma estrutura. Depois de arrastar o componente para a estrutura, as propriedades do componente são exibidas e você pode mapeá-las com as propriedades do Adobe Analytics. (Consulte [Configurando uma estrutura para rastreamento básico](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework).)
 
 Os componentes podem interagir com a estrutura do Adobe Analytics quando o componente tem um nó filho chamado `analytics`. O nó `analytics` tem as seguintes propriedades:
 
 * `cq:trackevents`: Identifica os eventos CQ que o componente expõe. (Consulte Eventos personalizados.)
-* `cq:trackvars`: Nomeia as variáveis CQ que estão mapeadas com as propriedades do Adobe Analytics.
+* `cq:trackvars`: Nomes das variáveis CQ que são mapeadas com propriedades do Adobe Analytics.
 * `cq:componentName`: O nome do componente que aparece no Sidekick.
 * `cq:componentGroup`: O grupo no Sidekick que inclui o componente.
 
 O código no componente JSP adiciona o javascript à página que aciona o rastreamento e define os dados que são rastreados. O nome do evento e os nomes de dados usados no javascript devem corresponder aos valores correspondentes das propriedades do nó `analytics`.
 
-* Use o atributo de rastreamento de dados para rastrear os dados do evento quando uma página for carregada. (Consulte [Rastreamento de Eventos Personalizados no Carregamento de Página](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
-* Use a função CQ_Analytics.record para rastrear os dados do evento quando os usuários interagirem com os recursos da página. (Consulte [Rastreamento de Eventos personalizados após o carregamento da página](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
+* Use o atributo de rastreamento de dados para rastrear os dados do evento quando uma página for carregada. (Consulte [Rastreamento de eventos personalizados no carregamento de página](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
+* Use a função CQ_Analytics.record para rastrear os dados do evento quando os usuários interagirem com os recursos da página. (Consulte [Rastreamento de eventos personalizados após o carregamento da página](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
 
-Quando você usa esses métodos de rastreamento de dados, o módulo de integração da Adobe Analytics realiza automaticamente as chamadas para a Adobe Analytics para registrar os eventos e os dados.
+Quando você usa esses métodos de rastreamento de dados, o módulo de integração do Adobe Analytics realiza automaticamente as chamadas para o Adobe Analytics para registrar os eventos e dados.
 
-### Exemplo: Acompanhamento de cliques de topnav {#example-tracking-topnav-clicks}
+### Exemplo: Rastreamento de cliques de navegação superior {#example-tracking-topnav-clicks}
 
-Estenda o componente de navegação superior da fundação para que o Adobe Analytics rastreie os cliques em links de navegação na parte superior da página. Quando um link de navegação é clicado, a Adobe Analytics registra o link que foi clicado e a página na qual ele foi clicado.
+Estenda o componente de navegação superior de base para que o Adobe Analytics rastreie cliques em links de navegação na parte superior da página. Quando um link de navegação é clicado, o Adobe Analytics registra o link que foi clicado e a página na qual ele foi clicado.
 
-Os procedimentos a seguir exigem que você já tenha realizado as seguintes tarefas:
+Os procedimentos a seguir exigem que você já tenha executado as seguintes tarefas:
 
 * Criado um aplicativo CQ.
-* Criada uma configuração Adobe Analytics e uma estrutura Adobe Analytics.
+* Criação de uma Configuração do Adobe Analytics e uma Estrutura do Adobe Analytics.
 
 #### Copie o componente de navegação superior {#copy-the-topnav-component}
 
-Copie o componente de navegação superior para seu aplicativo CQ. O procedimento requer que seu aplicativo esteja configurado no CRXDE Lite.
+Copie o componente de navegação superior para o aplicativo CQ. O procedimento requer que seu aplicativo esteja configurado no CRXDE Lite.
 
 1. Clique com o botão direito do mouse no nó `/libs/foundation/components/topnav` e clique em Copiar.
 1. Clique com o botão direito do mouse na pasta Componentes abaixo da pasta do aplicativo e clique em Colar.
@@ -166,7 +166,7 @@ Copie o componente de navegação superior para seu aplicativo CQ. O procediment
 
 #### Integração do topnav com o Adobe Analytics Framework {#integrating-topnav-with-the-adobe-analytics-framework}
 
-Configure o componente de navegação superior e edite o arquivo JSP para definir os eventos e dados de rastreamento.
+Configure o componente de navegação superior e edite o arquivo JSP para definir os eventos e os dados de rastreamento.
 
 1. Clique com o botão direito do mouse no nó de navegação superior e clique em Criar > Criar nó. Especifique os seguintes valores de propriedade e clique em OK:
 
@@ -179,7 +179,7 @@ Configure o componente de navegação superior e edite o arquivo JSP para defini
    * Tipo: String
    * Valor: topnavClick
 
-1. Adicione a seguinte propriedade ao nó do Analytics para nomear as variáveis de dados:
+1. Adicione a seguinte propriedade ao nó do analytics para nomear as variáveis de dados:
 
    * Nome: cq:trackvars
    * Tipo: String
@@ -191,7 +191,7 @@ Configure o componente de navegação superior e edite o arquivo JSP para defini
    * Tipo: String
    * Valor: topnav (rastreamento)
 
-1. Adicione a seguinte propriedade ao nó do analytics para nomear o grupo de componentes do Sidekick:
+1. Adicione a seguinte propriedade ao nó do Analytics para nomear o grupo de componentes do Sidekick:
 
    * Nome: cq:componentGroup
    * Tipo: String
@@ -199,7 +199,7 @@ Configure o componente de navegação superior e edite o arquivo JSP para defini
 
 1. Clique em Salvar tudo.
 1. Abra o arquivo `topnav.jsp`.
-1. Em um elemento, adicione o seguinte atributo:
+1. No elemento a , adicione o seguinte atributo:
 
    ```xml
    onclick = "tracknav('<%= child.getPath() %>.html')"
@@ -290,46 +290,46 @@ O conteúdo do arquivo `topnav.jsp` deve aparecer da seguinte maneira:
 
 >[!NOTE]
 >
->Geralmente, é desejável rastrear dados do ContextHub. Para obter informações sobre como usar o javascript para obter essas informações, consulte [Acessar valores no ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
+>Geralmente, é desejável rastrear dados do ContextHub. Para obter informações sobre como usar o javascript para obter essas informações, consulte [Acessando Valores no ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
 
 #### Adicionar o componente de rastreamento ao Sidekick {#adding-the-tracking-component-to-sidekick}
 
-Adicione componentes habilitados para rastreamento com o Adobe Analytics ao Sidekick para que você possa adicioná-los à sua estrutura.
+Adicione componentes ativados para rastreamento com o Adobe Analytics ao Sidekick, para que você possa adicioná-los à sua estrutura.
 
-1. Abra sua estrutura do Adobe Analytics na sua Configuração do Adobe Analytics. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
-1. No Sidekick, clique no botão Design.
+1. Abra sua estrutura do Adobe Analytics em sua configuração do Adobe Analytics. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
+1. No Sidekick, clique no botão Design .
 
    ![](assets/chlimage_1a.png)
 
-1. Na área Configuração de rastreamento de link, clique em Configurar herança.
+1. Na área Configuração de rastreamento de link , clique em Configurar herança.
 
    ![chlimage_1](assets/chlimage_1aa.png)
 
-1. Na lista Componentes permitidos, selecione topnav (tracking) na seção Geral e clique em OK.
-1. Expanda Sidekick para entrar no modo de edição. O componente agora está disponível no grupo Geral.
+1. Na lista Componentes permitidos , selecione topnav (tracking) na seção Geral e clique em OK.
+1. Expanda Sidekick para entrar no modo de edição. O componente agora está disponível no grupo Geral .
 
-#### Adicionar o componente de topnav à sua estrutura {#adding-the-topnav-component-to-your-framework}
+#### Adicionar o componente de navegação superior à sua estrutura {#adding-the-topnav-component-to-your-framework}
 
-Arraste o componente de navegação superior para a estrutura do Adobe Analytics e mapeie as variáveis e eventos do componente para as variáveis e eventos do Adobe Analytics. (Consulte [Configurando uma Estrutura para o Rastreamento Básico](/help/sites-administering/adobeanalytics-connect.md).)
+Arraste o componente de navegação superior para a estrutura do Adobe Analytics e mapeie as variáveis e os eventos do componente para as variáveis e os eventos do Adobe Analytics. (Consulte [Configurando uma estrutura para rastreamento básico](/help/sites-administering/adobeanalytics-connect.md).)
 
 ![chlimage_1-1](assets/chlimage_1-1a.png)
 
-O componente de topnav agora é integrado à estrutura do Adobe Analytics. Quando você adiciona o componente a uma página, clicar nos itens na barra de navegação superior faz com que os dados de rastreamento sejam enviados para a Adobe Analytics.
+O componente de navegação superior agora é integrado à estrutura do Adobe Analytics. Ao adicionar o componente a uma página, clicar nos itens na barra de navegação superior faz com que os dados de rastreamento sejam enviados para o Adobe Analytics.
 
-### Envio de dados s.products para Adobe Analytics {#sending-s-products-data-to-adobe-analytics}
+### Envio de dados de s.products para o Adobe Analytics {#sending-s-products-data-to-adobe-analytics}
 
-Os componentes podem gerar dados para a variável s.products que é enviada para a Adobe Analytics. Projete seus componentes para contribuir com a variável s.products:
+Os componentes podem gerar dados para a variável s.products enviada para o Adobe Analytics. Projete seus componentes para contribuir com a variável s.products :
 
 * Registre um valor chamado `product` de uma estrutura específica.
-* Exponha os membros de dados do valor `product` para que possam ser mapeados com as variáveis do Adobe Analytics na estrutura do Adobe Analytics.
+* Exponha os membros de dados do valor `product` para que possam ser mapeados com variáveis Adobe Analytics na estrutura do Adobe Analytics.
 
-A variável s.products da Adobe Analytics usa a seguinte sintaxe:
+A variável s.products do Adobe Analytics usa a seguinte sintaxe:
 
 ```
 s.products="category;product;quantity;price;eventY={value}|eventZ={value};evarA={value}|evarB={value}"
 ```
 
-O módulo de integração da Adobe Analytics constrói a variável `s.products` usando os valores `product` gerados pelos componentes AEM. O valor `product` no javascript que AEM componentes geram é uma matriz de valores com a seguinte estrutura:
+O módulo de integração do Adobe Analytics constrói a variável `s.products` usando os valores `product` que AEM os componentes gerados. O valor `product` no javascript que AEM componentes gerados é uma matriz de valores que tem a seguinte estrutura:
 
 ```
 "product": [{
@@ -352,7 +352,7 @@ Quando um item de dados é omitido do valor `product`, ele é enviado como uma s
 
 >[!NOTE]
 >
->Quando nenhum evento está associado a um valor de produto, a Adobe Analytics usa o evento `prodView` por padrão.
+>Quando nenhum evento é associado a um valor de produto, o Adobe Analytics usa o evento `prodView` por padrão.
 
 O nó `analytics` do componente deve expor os nomes das variáveis usando a propriedade `cq:trackvars`:
 
@@ -365,7 +365,7 @@ O nó `analytics` do componente deve expor os nomes das variáveis usando a prop
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-O módulo eCommerce fornece vários componentes que geram dados variáveis s.products. Por exemplo, o componente submitorder ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) gera um javascript semelhante ao seguinte exemplo:
+O módulo eCommerce fornece vários componentes que geram dados variáveis s.products . Por exemplo, o componente submitorder ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) gera javascript semelhante ao seguinte exemplo:
 
 ```
 <script type="text/javascript">
@@ -441,6 +441,6 @@ O módulo eCommerce fornece vários componentes que geram dados variáveis s.pro
 
 #### Limitação do tamanho das chamadas de rastreamento {#limiting-the-size-of-tracking-calls}
 
-Geralmente, os navegadores da Web limitam o tamanho das solicitações de GET. Como os valores de produto CQ e SKU são caminhos de repositório, os arrays de produtos que incluem vários valores podem exceder o limite de tamanho da solicitação. Portanto, seus componentes devem limitar o número de itens na matriz `product` de cada `CQ_Analytics.record function`. Crie várias funções se o número de itens que você precisa rastrear puder exceder o limite.
+Geralmente, os navegadores da Web limitam o tamanho das solicitações do GET. Como o produto CQ e os valores de SKU são caminhos de repositório, as matrizes de produtos que incluem vários valores podem exceder o limite de tamanho da solicitação. Portanto, seus componentes devem limitar o número de itens na matriz `product` de cada `CQ_Analytics.record function`. Crie várias funções se o número de itens que você precisa rastrear puder exceder o limite.
 
-Por exemplo, o componente de submissão de eCommerce limita o número de `product` itens em uma chamada para quatro. Quando o carrinho contém mais de quatro produtos, ele gera várias funções `CQ_Analytics.record`.
+Por exemplo, o componente Subpedido de comércio eletrônico limita o número de `product` itens em uma chamada para quatro. Quando o carrinho contém mais de quatro produtos, ele gera várias funções `CQ_Analytics.record`.
