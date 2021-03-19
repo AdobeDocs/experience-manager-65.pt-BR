@@ -1,6 +1,6 @@
 ---
-title: Sites de comunidades
-seo-title: Sites de comunidades
+title: Sites das comunidades
+seo-title: Sites das comunidades
 description: Visão geral da documentação da AEM Communities
 seo-description: Visão geral da documentação da AEM Communities
 uuid: 9842ce6c-1af8-4b27-b199-07410e797ab2
@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 2bd74d5e90aff1146de5c5a0dffd99fc7dd9031c
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '479'
 ht-degree: 5%
 
 ---
@@ -20,17 +21,17 @@ ht-degree: 5%
 
 # Sites das comunidades {#communities-sites}
 
-Esta seção é para aqueles que administram o AEM Communities e assumem familiaridade com os recursos do AEM Communities.
+Esta seção é para aqueles que administram o AEM Communities e assume familiaridade com recursos do AEM Communities.
 
 ## Visão geral {#overview}
 
 Para obter uma visão geral e tutoriais de introdução, visite:
 
-* [Visão geral do AEM Communities](overview.md)
+* [Visão geral da AEM Communities](overview.md)
 * [Introdução ao AEM Communities](getting-started.md)
 * [Introdução ao AEM Communities para ativação](getting-started-enablement.md)
 
-## Tópicos de Administração e Configuração {#administration-and-configuration-topics}
+## Tópicos de administração e configuração {#administration-and-configuration-topics}
 
 ### Criação e gerenciamento de sites das comunidades {#communities-site-creation-and-management}
 
@@ -41,7 +42,7 @@ Para obter uma visão geral e tutoriais de introdução, visite:
       * [Grupos (subcomunidades)](groups.md)
    * [Moderação](moderation.md)
    * [Gerenciamento de membros e grupos](members.md)
-   * [Recursos de ativação](resources.md)
+   * [Recursos de habilitação](resources.md)
    * [Relatórios](reports.md)
 
 
@@ -57,36 +58,36 @@ Para obter uma visão geral e tutoriais de introdução, visite:
 
 ### Conteúdo gerado pelo usuário {#user-generated-content}
 
-Um recurso principal do AEM Communities é a geração de conteúdo gerado pelo usuário (UGC) por visitantes do site conectados (membros). Para saber mais sobre como trabalhar com o UGC, visite:
+Um recurso importante do AEM Communities é a geração de conteúdo gerado pelo usuário (UGC) por visitantes do site que fizeram logon (membros). Para saber mais sobre como trabalhar com a visita do UGC:
 
-* [Loja](working-with-srp.md) UGC comum: escolha de SRP para armazenamento compartilhado de UGC
+* [Loja](working-with-srp.md) UGC comum: escolha do SRP para armazenamento compartilhado do UGC
 * [Moderação do UGC](moderate-ugc.md): membros confiáveis podem moderar o UGC em massa ou no contexto
-* [Marcando UGC](tag-ugc.md): os recursos podem ser configurados para permitir que os membros marcem o conteúdo
-* [Traduzindo UGC](translate-ugc.md): os recursos podem ser configurados para traduzir todo o UGC ou permitir que os membros traduzam postagens selecionadas
-* [Configuração](analytics.md) do Analytics: habilitar a Adobe Analytics a relatar várias métricas relacionadas à atividade de membros
+* [Marcação do UGC](tag-ugc.md): podem ser configurados para permitir que os membros marquem o conteúdo
+* [Traduzindo UGC](translate-ugc.md): podem ser configurados para traduzir todos os UGC ou permitir que membros traduzam postagens selecionadas
+* [Configuração](analytics.md) do Analytics: permitindo que o Adobe Analytics relate várias métricas relacionadas à atividade do membro
 
 ### Membros da comunidade {#community-members}
 
-* [Gerenciando usuários e grupos](users.md) de usuários: detalhes sobre membros da comunidade e grupos de membros, incluindo membros privilegiados.
+* [Gerenciando usuários e grupos](users.md) de usuários: detalhes dos membros da comunidade e dos grupos de membros, incluindo os membros privilegiados.
 * [Limites](limits.md) de contribuição: capacidade de restringir a publicação por novos membros.
-* [Serviço](deploy-communities.md#tunnel-service-on-author) de túnel: permite que membros do lado da publicação e grupos de membros sejam acessados a partir do ambiente do autor.
-* [consoles](members.md) de membros e grupos: permite que membros do lado da publicação e grupos de membros sejam criados e gerenciados a partir do ambiente do autor.
-* [Sincronização](sync.md) do usuário: para sincronizar membros e grupos de membros em várias instâncias de publicação.
-* [Logon social com Facebook e Twitter](social-login.md): capacidade de visitantes do site se tornarem membros da comunidade usando suas credenciais do Facebook ou Twitter.
-* [Pontuação e símbolos](implementing-scoring.md): capacidade de atribuição de emblemas para identificar funções de um membro e para que os membros ganhem emblemas através da sua participação na comunidade.
-* [Notificações](notifications.md): capacidade de os membros serem notificados da atividade que seguem.
-* [Subscrições](subscriptions.md): capacidade de os membros interagirem com a comunidade usando email externo.
-* [Mensagens](messaging.md): capacidade de os membros interagirem com a comunidade usando mensagens internas.
+* [Serviço](deploy-communities.md#tunnel-service-on-author) de túnel: permite que membros do lado da publicação e grupos de membros sejam acessados do ambiente de criação.
+* [consoles](members.md) Membros e Grupos: permite que membros do lado da publicação e grupos de membros sejam criados e gerenciados a partir do ambiente de criação.
+* [Sincronização](sync.md) de usuários: para sincronizar membros e grupos de membros em várias instâncias de publicação.
+* [Logon do Social com Facebook e Twitter](social-login.md): capacidade de os visitantes do site se tornarem membros da comunidade usando suas credenciais do Facebook ou do Twitter.
+* [Pontuação e emblemas](implementing-scoring.md): Capacidade de atribuição de cartões para identificar funções de um membro e para que os membros ganhem cartões através da sua participação na comunidade.
+* [Notificações](notifications.md): capacidade de notificação de atividades por parte dos membros.
+* [Assinaturas](subscriptions.md): capacidade de os membros interagirem com a comunidade usando email externo.
+* [Mensagens](messaging.md): capacidade de membros interagirem com a comunidade usando mensagens internas.
 
-### Recursos de ativação {#enablement-features}
+### Recursos de habilitação {#enablement-features}
 
-* [Configurando a ativação](enablement.md): informações necessárias para configurar corretamente os recursos de ativação.
+* [Configurando a ativação](enablement.md): as informações necessárias para configurar corretamente os recursos de ativação.
 * [Configuração](analytics.md) do Analytics: informações necessárias para ativar os recursos do Adobe Analytics for Communities.
-* [Marcação de recursos](tag-resources.md) de habilitação: necessário para criar catálogos de ativação.
+* [Marcar recursos de habilitação](tag-resources.md): necessário para criar catálogos de ativação.
 
 ### Implantação {#deployment}
 
-A seção de implantação contém informações específicas da AEM Communities.
+A seção implantação contém informações específicas do AEM Communities.
 
 A natureza do trabalho com conteúdo da comunidade influencia a estrutura da implantação:
 
@@ -96,12 +97,12 @@ A natureza do trabalho com conteúdo da comunidade influencia a estrutura da imp
 
 * [Pacote de recursos das Comunidades mais recentes](deploy-communities.md#latestfeaturepack)
 
-Consulte a página de implantação para obter informações específicas de outras Comunidades, como para [Atualização](upgrade.md), [Dispatcher](dispatcher.md) e [Replicação](deploy-communities.md#replication-agents-on-author).
+Consulte a página de implantação para obter outras informações específicas das Comunidades, como para [Upgrade](upgrade.md), [Dispatcher](dispatcher.md) e [Replication](deploy-communities.md#replication-agents-on-author).
 
 ## Documentação de comunidades relacionadas {#related-communities-documentation}
 
-* Visite [Implantação de comunidades](deploy-communities.md) para saber mais sobre implantações recomendadas.
+* Visite [Implantação de comunidades](deploy-communities.md) para saber mais sobre as implantações recomendadas.
 
-* Visite [Comunidades em desenvolvimento](communities.md) para saber mais sobre a estrutura de componentes sociais (SCF) e como personalizar componentes e recursos das Comunidades.
+* Visite [Desenvolvimento de comunidades](communities.md) para saber mais sobre a estrutura de componentes sociais (SCF) e a personalização de componentes e recursos das Comunidades.
 
-* Visite [Criação de componentes das comunidades](author-communities.md) para saber como criar e configurar componentes das Comunidades.
+* Visite [Criação de componentes do Communities](author-communities.md) para saber como criar com e configurar componentes do Communities.
