@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 0051791da06d15a48b82cf93164a89b4ea42ce98
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '626'
 ht-degree: 7%
 
 ---
@@ -23,13 +24,13 @@ ht-degree: 7%
 
 ## Visão geral {#overview}
 
-No AEM Communities, há vários relatórios que podem ser acessados de várias maneiras a partir do ambiente do autor.
+Para o AEM Communities, há vários relatórios que podem ser acessados de várias maneiras do ambiente de criação.
 
-Em geral, os vários relatórios são:
+Em geral, os diversos relatórios são:
 
 * [Relatório de atribuições](#assignments-report)
 
-   Para uma [comunidade de ativação](/help/communities/overview.md#enablement-community), fornece uma visão geral do progresso dos alunos em suas atribuições, incluindo uma pontuação associada ao implementar o padrão SCORM.
+   Para uma [comunidade de ativação](/help/communities/overview.md#enablement-community), fornece uma visão geral do progresso dos alunos em suas atribuições, incluindo uma pontuação associada se estiver implementando o padrão SCORM.
 
 * [Relatório de exibições](#views-report)
 
@@ -37,9 +38,9 @@ Em geral, os vários relatórios são:
 
 * [Relatório de publicações](#posts-report)
 
-   Fornece um gráfico de vários tipos de publicações por membros da comunidade para qualquer site da comunidade.
+   Fornece um gráfico de vários tipos de postagens por membros da comunidade para qualquer site da comunidade.
 
-Quando [Adobe Analytics estiver ativado](/help/communities/sites-console.md#analytics), os relatórios incluirão o número de visualizações, reproduções, comentários e classificações para cada recurso de ativação ao longo do tempo.
+Quando [Adobe Analytics estiver ativado](/help/communities/sites-console.md#analytics), os relatórios incluirão o número de exibições, reproduções, comentários e classificações para cada recurso de ativação ao longo do tempo.
 
 Os relatórios tabulares podem ser exportados no formato .csv para processamento subsequente.
 
@@ -47,19 +48,19 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
 
 ### Relatórios para sites da comunidade {#reports-for-community-sites}
 
-* Da navegação global: **[!UICONTROL Navegação]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]**
+* Na navegação global: **[!UICONTROL Navegação]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]**
 
 * Escolha entre:
 
    * **[!UICONTROL Relatório de atribuições]**
 
-      * Gerar um relatório para Site da comunidade, Usuário ou Grupo e Atribuição selecionados.
+      * Gere um relatório para o Site da Comunidade, Usuário ou Grupo e Atribuição selecionados.
    * **[!UICONTROL Relatório de publicações]**
 
-      * Gere um relatório para o Site da comunidade, o Tipo de conteúdo e o Período.
+      * Gere um relatório para o Site da comunidade, Tipo de conteúdo e Período selecionado.
    * **[!UICONTROL Relatório de exibições]**
 
-      * gerar um relatório para o Site da comunidade, o Tipo de conteúdo e o Período.
+      * gerar um relatório para o Site da comunidade, Tipo de conteúdo e Período.
 
 
 
@@ -67,12 +68,12 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
 
 ### Relatórios para recursos de ativação e caminhos de aprendizado {#reports-for-enablement-resources-and-learning-paths}
 
-* Da navegação global: **[!UICONTROL Navegação]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**
+* Na navegação global: **[!UICONTROL Navegação]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**
 
 * Selecione um site da comunidade de ativação existente:
 
-   * Selecione o ícone **Relatório** para gerar relatórios que abrangem todos os recursos de ativação.
-   * Selecione um caminho de aprendizado de ativação.
+   * Selecione o ícone **Report** para gerar relatórios que cubram todos os recursos de ativação.
+   * Selecione um caminho de aprendizagem de ativação.
    * Selecione o ícone **Relatório** para gerar relatórios para:
 
       * Os recursos de ativação incluídos.
@@ -80,51 +81,51 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
 
 * Esses relatórios fornecem:
 
-   * Dados da tabela, disponíveis para download como CSV:
+   * Dados da tabela, baixáveis como CSV:
 
-      * Como identificar o aluno
+      * Identificando o aluno
       * Seu status
       * Se atribuído ou acessado pelo catálogo
       * Número de comentários feitos
       * Classificação de estrelas fornecida
 
-Para obter mais detalhes, consulte [seção Relatórios](/help/communities/resources.md#report) do console Recursos.
+Para obter mais detalhes, consulte a [seção Relatórios](/help/communities/resources.md#report) do console Recursos.
 
 ## Relatório de atribuições {#assignments-report}
 
-O console Atribuições permite que os relatórios sejam filtrados por meio da ativação do site da comunidade, usuários ou grupos e atribuição.
+O console Atribuições permite que os relatórios sejam filtrados por ativação do site da comunidade, usuários ou grupos e atribuição.
 
-O relatório fornece informações sobre o seu progresso, bem como quaisquer comentários ou notações que lhe sejam fornecidos.
+O relatório fornece informações sobre o seu progresso, bem como quaisquer comentários ou notações fornecidas.
 
 ![relatório de atribuição](assets/assignment-report.png)
 
-Selecione os critérios para o relatório:
+Selecione os critérios do relatório :
 
 * **Site**
 
-   Selecione um site de comunidade de ativação.
+   Selecione um site da comunidade de ativação.
 
 * **Usuário ou grupo**
    * Selecione Usuário para gerar um relatório para um aluno.
    * Selecione Grupo para gerar um relatório para um grupo de alunos.
 
-   O serviço de túnel acessará membros e grupos de membros do ambiente publish.
+   O serviço de túnel acessará membros e grupos de membros do ambiente de publicação.
 
 * **Atribuição**
 
-   Escolha entre os recursos de ativação atribuídos aos alunos selecionados.
+   Escolha entre os recursos de ativação atribuídos ao(s) aluno(s) selecionado(s).
 
-Selecione **Gerar** para criar o relatório:
+Selecione **Generate** para criar o relatório:
 
-![generate-report](assets/generate-assignment-report.png)
+![gerar relatório](assets/generate-assignment-report.png)
 
 ## Relatório de exibições {#views-report}
 
-O console do Visualização permite que os relatórios sejam gerados nas visualizações de página por recursos da comunidade para um determinado período.
+O console Exibições permite que os relatórios sejam gerados nas exibições de página por recursos da comunidade por um determinado período.
 
-![relatório de visualizações](assets/view-report.png)
+![exibir relatório](assets/view-report.png)
 
-Selecione os critérios para o relatório:
+Selecione os critérios do relatório:
 
 * **[!UICONTROL Site]**
 
@@ -132,9 +133,9 @@ Selecione os critérios para o relatório:
 
 * **[!UICONTROL Tipo de conteúdo]**
 
-   Pode escolher Todo o conteúdo ou selecionar um dos recursos presentes no site.
+   Pode escolher Todos os conteúdos ou selecionar um dos recursos existentes no site.
 
-* **[!UICONTROL Período]**
+* **[!UICONTROL Intervalo de tempo]**
 
    Selecione um dos seguintes:
 
@@ -143,17 +144,17 @@ Selecione os critérios para o relatório:
    * Últimos 90 dias
    * Ano anterior
 
-Selecione **[!UICONTROL Gerar]** para criar o relatório.
+Selecione **[!UICONTROL Generate]** para criar o relatório.
 
-![visualizações de geração](assets/generate-views.png)
+![generate-views](assets/generate-views.png)
 
 ## Relatório de publicações {#posts-report}
 
-O console Publicações permite que os relatórios sejam gerados em número de publicações para recursos da comunidade em um determinado período.
+O console Publicações permite que os relatórios sejam gerados no número de publicações para recursos da comunidade por um determinado período.
 
-![post-report](assets/posts-report.png)
+![relatório de postagens](assets/posts-report.png)
 
-Selecione os critérios para o relatório:
+Selecione os critérios do relatório:
 
 * **[!UICONTROL Site]**
 
@@ -161,9 +162,9 @@ Selecione os critérios para o relatório:
 
 * **[!UICONTROL Tipo de conteúdo]**
 
-   Pode escolher Todo o conteúdo ou selecionar um dos recursos presentes no site.
+   Pode escolher Todos os conteúdos ou selecionar um dos recursos existentes no site.
 
-* **[!UICONTROL Período]**
+* **[!UICONTROL Intervalo de tempo]**
 
    Selecione um dos seguintes:
 
@@ -172,18 +173,18 @@ Selecione os critérios para o relatório:
    * Últimos 90 dias
    * Ano anterior
 
-Selecione **[!UICONTROL Gerar]** para criar o relatório.
+Selecione **[!UICONTROL Generate]** para criar o relatório.
 
-![generate-report](assets/generate-posts-report.png)
+![gerar relatório](assets/generate-posts-report.png)
 
 ## Resolução de problemas {#troubleshooting}
 
 ### Nenhum site da comunidade listado {#no-community-sites-listed}
 
-Se nenhum site da comunidade estiver listado, verifique se a Adobe Analytics foi ativada para um site. Se você escolher relatórios em atribuições, verifique se a função de atribuições está na estrutura do site da comunidade.
+Se nenhum site da comunidade estiver listado, verifique se o Adobe Analytics foi ativado para um site. Se você escolher relatórios em atribuições, verifique se a função de atribuições está na estrutura do site da comunidade.
 
-### Os relatórios não são exibidos na instância do autor de AEM {#reports-do-not-show-in-aem-author-instance}
+### Os relatórios não são exibidos na instância do autor do AEM {#reports-do-not-show-in-aem-author-instance}
 
-Se os relatórios não forem exibidos na instância de autor de AEM, verifique se há personalizações, como o mapeamento de URL na instância de publicação. Se o mapeamento de URL for feito somente na instância de publicação de AEM do site de comunidades, verifique se o mesmo foi configurado na instância de autor de AEM na configuração **Site Trend Report Social Component Fatory**.
+Se os relatórios não forem exibidos na instância do autor do AEM, verifique as personalizações, como o mapeamento de URL na instância de publicação. Se o mapeamento de URL for feito somente na instância de publicação do AEM do site de comunidades, verifique se o mesmo foi configurado na instância do autor do AEM na configuração **Site Trend Report Social Component Fatory**.
 
 ![Mapeamento de URL no autor do AEM](assets/sitetrend.png)
