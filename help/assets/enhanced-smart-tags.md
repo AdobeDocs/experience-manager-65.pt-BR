@@ -2,10 +2,12 @@
 title: Tags inteligentes aprimoradas
 description: Tags inteligentes aprimoradas
 contentOwner: AG
+feature: Tags inteligentes, pesquisa
+role: Profissional
 translation-type: tm+mt
-source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1602'
 ht-degree: 1%
 
 ---
@@ -23,7 +25,7 @@ Para que o Serviço de conteúdo inteligente aplique as tags certas, treine-o pa
 
 Depois que uma tag é treinada e pronta, o serviço agora pode aplicar essas tags em ativos por meio de um fluxo de trabalho de marcação.
 
-Em segundo plano, o Serviço de conteúdo inteligente usa a estrutura da API do Adobe Sensei para treinar seu algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
+Em segundo plano, o Serviço de conteúdo inteligente usa a estrutura da Adobe Sensei AI para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
 
 O Serviço de conteúdo inteligente é um serviço em nuvem hospedado em [!DNL Adobe Developer Console]. Para usá-lo em [!DNL Adobe Experience Manager], o administrador do sistema deve integrar sua implantação [!DNL Experience Manager] com [!DNL Adobe Developer Console].
 
@@ -93,9 +95,9 @@ Adicione os ativos a uma pasta e aplique as tags a cada ativo da página de prop
 
 >[!NOTE]
 >
->1. A formação é um processo irrevogável. A Adobe recomenda que você analise as tags no conjunto de ativos preparado bem antes de treinar o Serviço de conteúdo inteligente nas tags.
+>1. A formação é um processo irrevogável. O Adobe recomenda que você analise as tags no conjunto de ativos preparado bem antes de treinar o Serviço de conteúdo inteligente nas tags.
 >1. Antes de treinar uma tag, consulte [Diretrizes de treinamento do Serviço de conteúdo inteligente](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
->1. Ao treinar o Serviço de conteúdo inteligente pela primeira vez, a Adobe recomenda treiná-lo em pelo menos duas tags distintas.
+>1. Ao treinar o Serviço de conteúdo inteligente pela primeira vez, o Adobe recomenda treiná-lo em pelo menos duas tags distintas.
 
 
 ## Entender os resultados da pesquisa [!DNL Experience Manager] com tags inteligentes {#understandsearch}
