@@ -9,10 +9,11 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
+feature: Formulários adaptáveis
 translation-type: tm+mt
-source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '338'
 ht-degree: 8%
 
 ---
@@ -22,9 +23,9 @@ ht-degree: 8%
 
 ## Visão geral {#overview}
 
-Você pode ter diferentes tipos de usuários com habilidades variadas que trabalham com formulários adaptáveis. Embora os usuários especialistas tenham o conhecimento certo para trabalhar com scripts e regras complexas, pode haver usuários básicos que precisam trabalhar somente com o layout e as propriedades básicas dos formulários adaptáveis.
+Você pode ter diferentes tipos de usuários com habilidades variadas que trabalham com o Adaptive Forms. Embora os usuários especialistas tenham o conhecimento certo para trabalhar com scripts e regras complexas, pode haver usuários básicos que precisam trabalhar somente com o layout e as propriedades básicas dos formulários adaptáveis.
 
-O AEM Forms permite limitar o acesso do editor de regras aos usuários com base em sua função ou função. Nas configurações do Serviço de configuração de formulários adaptáveis, você pode especificar os [grupos de usuários](/help/sites-administering/security.md) que podem visualizar e acessar o editor de regras.
+O AEM Forms permite limitar o acesso do editor de regras aos usuários com base em sua função ou função. Nas configurações do Adaptive Forms Configuration Service, você pode especificar os [grupos de usuários](/help/sites-administering/security.md) que podem visualizar e acessar o editor de regras.
 
 ## Especificar grupos de usuários que podem acessar o editor de regras {#specify-user-groups-that-can-access-rule-editor}
 
