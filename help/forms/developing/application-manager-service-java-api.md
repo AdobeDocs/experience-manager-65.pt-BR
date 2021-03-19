@@ -1,43 +1,44 @@
 ---
-title: Start rápido JavaAPI do serviço Application Manager (SOAP)
-seo-title: Start rápido JavaAPI do serviço Application Manager (SOAP)
-description: Start rápido JavaAPI do serviço Application Manager (SOAP)
+title: Início rápido de JavaAPI do serviço do Application Manager (SOAP)
+seo-title: Início rápido de JavaAPI do serviço do Application Manager (SOAP)
+description: Início rápido de JavaAPI do serviço do Application Manager (SOAP)
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
+role: Desenvolvedor
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
 
-# Start Rápido (SOAP) de JavaAPI de serviço do Application Manager {#application-manager-service-javaapi-quick-start-soap}
+# Início rápido de JavaAPI (SOAP) do serviço do Application Manager {#application-manager-service-javaapi-quick-start-soap}
 
-O SOAP (Java API Quick Start) está disponível para o serviço Application Manager.
+O Java API Quick Start (SOAP) está disponível para o serviço do Application Manager.
 
-[Start rápido: Implantação de aplicativos usando a API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
+[Início rápido: Implantação de aplicativos usando a API do Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
-[Start rápido: Remoção de um aplicativo usando a API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
-
->[!NOTE]
->
->As APIs do gerenciador de aplicativos suportam somente arquivos LCA AEM Forms. Ele não suporta arquivos LCA do LiveCycle ES2 e ES4.
-
-As operações do AEM Forms podem ser executadas usando a API fortemente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
+[Início rápido: Remoção de um aplicativo usando a API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
 
 >[!NOTE]
 >
->O Start rápido da API Java (SOAP) localizado em Programação com formulários AEM é baseado no Forms se você estiver usando outro sistema operacional, como o Unix, substitua os caminhos específicos do Windows por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se você estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definição de propriedades de ligação](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>As APIs do gerenciador de aplicativos são compatíveis apenas com arquivos AEM Forms LCA. Ele não oferece suporte a arquivos LCA do LiveCycle ES2 e ES4.
 
-## Start rápido (modo SOAP): Implantação de aplicativos usando a API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+As operações do AEM Forms podem ser executadas usando a API altamente digitada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
-O exemplo de código Java a seguir importa um aplicativo com base em um arquivo LCA existente chamado *EncryptDocument.lca*.
+>[!NOTE]
+>
+>O Início rápido da API Java (SOAP), localizado em Programação com formulários de AEM, é baseado na Forms se você estiver usando outro sistema operacional, como o Unix, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+
+## Início rápido (modo SOAP): Implantação de aplicativos usando a API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+
+O seguinte exemplo de código Java importa um aplicativo com base em um arquivo LCA existente chamado *EncryptDocument.lca*.
 
 ```java
  /*
@@ -137,9 +138,9 @@ O exemplo de código Java a seguir importa um aplicativo com base em um arquivo 
  
 ```
 
-## Start rápido (modo SOAP): Remoção de um aplicativo usando a API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+## Início rápido (modo SOAP): Remover um aplicativo usando a API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
-O exemplo de código Java a seguir remove um aplicativo chamado *EncryptDocument*.
+O seguinte exemplo de código Java remove um aplicativo chamado *EncryptDocument*.
 
 ```java
  /*
