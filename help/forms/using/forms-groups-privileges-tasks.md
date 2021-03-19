@@ -1,8 +1,8 @@
 ---
 title: AEM Forms em grupos e privilégios OSGi
 seo-title: AEM Forms em grupos e privilégios OSGi
-description: Atribuir usuários aos grupos para gerenciar o AEM Forms no OSGi
-seo-description: Atribuir usuários aos grupos para gerenciar o AEM Forms no OSGi
+description: Atribua usuários aos grupos para gerenciar o AEM Forms no OSGi
+seo-description: Atribua usuários aos grupos para gerenciar o AEM Forms no OSGi
 uuid: f269a206-356d-4cee-b449-05c5da87121a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,20 +10,21 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
+role: Administrador
 translation-type: tm+mt
-source-git-commit: a4314a30e2329aebe02f4983fd543240be920ee8
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 1%
+source-wordcount: '280'
+ht-degree: 2%
 
 ---
 
 
 # AEM Forms em grupos e privilégios OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
-Você pode [criar grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) e atribuir políticas e [usuários](/help/sites-administering/user-group-ac-admin.md#user-administration) aos grupos no AEM. Essas políticas controlam os privilégios dos usuários que fazem parte do grupo.
+Você pode [criar grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) e atribuir políticas e [usuários](/help/sites-administering/user-group-ac-admin.md#user-administration) aos grupos em AEM. Essas políticas controlam os privilégios dos usuários que fazem parte do grupo.
 
-Depois que você instalar [o pacote complementar do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), os grupos mencionados neste artigo, como usuários de formulários e usuários avançados de formulários, ficam automaticamente disponíveis para atribuição. A tabela a seguir lista as tarefas que um usuário pode executar para o AEM Forms no OSGi com base nas atribuições do grupo:
+Depois de instalar [Pacote do complemento AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), os grupos mencionados neste artigo, como usuários de formulários e usuários avançados de formulários, ficam automaticamente disponíveis para atribuição. A tabela a seguir lista as tarefas que um usuário pode executar para o AEM Forms no OSGi com base nas atribuições de grupo:
 
 <table>
  <tbody>
@@ -32,12 +33,12 @@ Depois que você instalar [o pacote complementar do AEM Forms](../../forms/using
    <td>Tarefas</td> 
   </tr>
   <tr>
-   <td>forms-users <sup>[1]</sup></td> 
+   <td>usuários de formulários <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>Criar, pré-visualização, publicar e enviar formulários adaptativos</li> 
-     <li>Criar, pré-visualização e publicar comunicações interativas e fragmentos de documento</li> 
-     <li>Fazer upload de ativos para uma instância AEM</li> 
+     <li>Criar, visualizar, publicar e enviar formulários adaptáveis</li> 
+     <li>Criar, visualizar e publicar comunicações interativas e fragmentos de documento</li> 
+     <li>Fazer upload de ativos para uma instância de AEM</li> 
      <li>Criar temas</li> 
     </ul> </td> 
   </tr>
@@ -45,31 +46,31 @@ Depois que você instalar [o pacote complementar do AEM Forms](../../forms/using
    <td>usuários avançados de formulários</td> 
    <td>
     <ul> 
-     <li>Criar, pré-visualização, publicar e enviar formulários adaptativos</li> 
-     <li>Criar, pré-visualização e publicar comunicações interativas e fragmentos de documento</li> 
+     <li>Criar, visualizar, publicar e enviar formulários adaptáveis</li> 
+     <li>Criar, visualizar e publicar comunicações interativas e fragmentos de documento</li> 
      <li>Criar scripts para formulários adaptáveis usando o editor de código</li> 
      <li>Fazer upload de ativos incluindo scripts</li> 
      <li>Criar temas</li> 
-     <li>Importar pacotes que contêm XDP</li> 
+     <li>Importar pacotes contendo XDP</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>formulários-submissão-revisores</td> 
+   <td>forms-submit-revisores</td> 
    <td>
     <ul> 
-     <li>Reexame de envios</li> 
-     <li>Aprovar ou rejeitar submissões</li> 
+     <li>Envio de revisão</li> 
+     <li>Aprovar ou rejeitar envios</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>template-author <sup>[2]</sup></td> 
+   <td>autores de modelo <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>Criar e pré-visualização formulários adaptáveis ou modelos de comunicação interativa</li> 
+     <li>Criar e visualizar formulários adaptáveis ou modelos de comunicações interativas</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td><p>fdm-autores</p> </td> 
+   <td><p>fdm-authors</p> </td> 
    <td>
     <ul> 
      <li>Criar e modificar um modelo de dados de formulário</li> 
@@ -79,7 +80,7 @@ Depois que você instalar [o pacote complementar do AEM Forms](../../forms/using
    <td>cm-agent-users</td> 
    <td>
     <ul> 
-     <li>Acesse cartas de gerenciamento de correspondência ou comunicações interativas usando a interface do usuário do agente</li> 
+     <li>Acessar cartas de gerenciamento de correspondência ou comunicações interativas usando a interface do usuário do agente</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -91,15 +92,15 @@ Depois que você instalar [o pacote complementar do AEM Forms](../../forms/using
     </ul> </td> 
   </tr>
   <tr>
-   <td>usuários do fluxo de trabalho</td> 
+   <td>usuários de fluxo de trabalho</td> 
    <td>
     <ul> 
-     <li>Use AEM aplicativos de caixa de entrada<br /> <strong>Observação: </strong>É necessário ter usuários com agente de cm e atribuições de grupo de usuários de fluxo de trabalho para acessar a interface do usuário do Interative Communications Agent na caixa de entrada AEM.</li> 
+     <li>Use AEM aplicativos da caixa de entrada<br /> <strong>Observação: </strong>Você deve ter usuários com agente-cm e atribuições de grupo de usuários de fluxo de trabalho para acessar a interface do Agente de Comunicações Interativas em AEM caixa de entrada.</li> 
      <li>Gerenciar instâncias de fluxo de trabalho</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>administradores de fd</td> 
+   <td>fd-administrators</td> 
    <td>
     <ul> 
      <li>Configurar o gerador de PDF</li> 
