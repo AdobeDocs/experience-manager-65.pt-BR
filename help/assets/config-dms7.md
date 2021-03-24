@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Profissional de negócios, Administrador
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: ef975961ddcd6910b5fba2dea7e9302921f45055
 workflow-type: tm+mt
-source-wordcount: '6141'
+source-wordcount: '6154'
 ht-degree: 5%
 
 ---
@@ -499,7 +499,11 @@ Para manter o Dynamic Media - modo Scene7 em execução sem problemas, o Adobe r
 
 #### Atualização dos parâmetros de trabalho predefinidos para o processamento de diferentes formatos de arquivo
 
-Você pode ajustar parâmetros de trabalho para processamento mais rápido ao carregar arquivos. Por exemplo, se você estiver carregando arquivos PSD, mas não quiser processá-los como modelos, poderá definir a extração de camada como false (off). Nesse caso, o parâmetro de trabalho ajustado seria exibido como `process=None&createTemplate=false`.
+Você pode ajustar parâmetros de trabalho para processamento mais rápido ao carregar arquivos. Por exemplo, se você carregar arquivos PSD, mas não quiser processá-los como modelos, poderá definir a extração de camada como false (off). Nesse caso, o parâmetro de trabalho ajustado aparece da seguinte maneira: `process=None&createTemplate=false`.
+
+Caso deseje ativar a criação do modelo, use os seguintes parâmetros: `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`.
+
+<!-- REMOVED BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
 O Adobe recomenda usar os seguintes parâmetros de trabalho &quot;ajustados&quot; para arquivos PDF, PostScript® e PSD:
 
@@ -511,9 +515,11 @@ O Adobe recomenda usar os seguintes parâmetros de trabalho &quot;ajustados&quot
 | ---| ---|
 | PDF | `pdfprocess=Thumbnail&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
 | PostScript® | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Thumbnail&airesolution=150&aicolorspace=Auto&aialpha=false` |
-| PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
+| PSD | `process=None&layerNaming=AppendName&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-Para atualizar qualquer um desses parâmetros, siga as etapas em [Habilitar o parâmetro de trabalho de upload do tipo MIME Assets/Dynamic Media Classic com suporte](#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+<!-- CQDOC-17657 for PSD entry in table above -->
+
+Para atualizar qualquer um desses parâmetros, siga as etapas em [Habilitar o parâmetro de trabalho de upload do tipo MIME Assets/Dynamic Media Classic com suporte](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
 #### Atualizar a fila do fluxo de trabalho transitório do Granite {#updating-the-granite-transient-workflow-queue}
 
