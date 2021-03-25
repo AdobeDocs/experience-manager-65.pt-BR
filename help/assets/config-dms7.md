@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Profissional de negócios, Administrador
 translation-type: tm+mt
-source-git-commit: 543f59a82e869e7d004d994014e0bd586b013b02
+source-git-commit: 6f4cbacb89a891ea8193ca2f495aba353bea6b1a
 workflow-type: tm+mt
-source-wordcount: '6133'
+source-wordcount: '6154'
 ht-degree: 5%
 
 ---
@@ -519,7 +519,7 @@ O Adobe recomenda usar os seguintes parâmetros de trabalho &quot;ajustados&quot
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
+Para atualizar qualquer um desses parâmetros, siga as etapas em [Habilitar o parâmetro de trabalho de upload do tipo MIME Assets/Dynamic Media Classic com suporte](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
 #### Atualizar a fila do fluxo de trabalho transitório do Granite {#updating-the-granite-transient-workflow-queue}
 
