@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: ef975961ddcd6910b5fba2dea7e9302921f45055
+source-git-commit: d700510efb340598a7931647164e22d574884569
 workflow-type: tm+mt
-source-wordcount: '5511'
+source-wordcount: '5517'
 ht-degree: 1%
 
 ---
@@ -351,7 +351,7 @@ Para configurar o Experience Manager para poder publicar ativos no Dynamic Media
 
 Ative o ouvinte de Dam do Adobe CQ Dynamic Media Classic, que é desativado por padrão.
 
-Para habilitá-lo:
+Para ativar o Ouvinte de Dam do Adobe CQ Dynamic Media Classic:
 
 1. Toque no ícone [!UICONTROL Ferramentas] e navegue até **[!UICONTROL Operações > Console da Web]**. O console da Web é aberto.
 1. Navegue até **[!UICONTROL Adobe CQ Dynamic Media Classic Dam Listener]** e selecione a caixa de seleção **[!UICONTROL Enabled]**.
@@ -525,7 +525,7 @@ Para configurar a configuração padrão:
 
 Você pode configurar a pasta para a qual os ativos são carregados no Dynamic Media Classic quando o ativo não estiver na pasta de destino CQ. Consulte Publicação de ativos fora da pasta de destino CQ.
 
-Para configurar a pasta ad hoc:
+Para configurar a pasta Ad-hoc:
 
 1. Toque no ícone Experience Manager e navegue até **[!UICONTROL Deployment > Cloud Services]**, toque **[!UICONTROL Dynamic Media Classic]** e selecione a configuração no Dynamic Media Classic.
 1. Para abrir a configuração, toque em **[!UICONTROL Edit]**.
