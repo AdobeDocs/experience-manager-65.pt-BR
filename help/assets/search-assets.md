@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Pesquisar, metadados
 role: Profissional
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: fd283b840830bef613689f81cf753e226fb834d7
 workflow-type: tm+mt
-source-wordcount: '5720'
+source-wordcount: '5577'
 ht-degree: 5%
 
 ---
@@ -20,15 +20,15 @@ ht-degree: 5%
 
 [!DNL Experience Manager Assets] O suporta os seguintes casos de uso e este artigo descreve o uso, os conceitos, as configurações, as limitações e a solução de problemas desses casos de uso.
 
-| Pesquisar ativos | Configuração e administração | Trabalhar com resultados de pesquisa |
+| Pesquisar por ativos | Configurar e administrar a funcionalidade de pesquisa | Trabalhar com resultados de pesquisa |
 |---|---|---|
 | [Pesquisas básicas](#searchbasics) | [Índice de pesquisa](#searchindex) | [Classificar resultados](#sort) |
 | [Entender a interface do usuário de pesquisa](#searchui) | [Pesquisa visual ou de semelhança](#configvisualsearch) | [Verificar propriedades e metadados de um ativo](#checkinfo) |
 | [Sugestões de pesquisa](#searchsuggestions) | [Metadados obrigatórios](#mandatorymetadata) | [Download](#download) |
 | [Entender os resultados e o comportamento da pesquisa](#searchbehavior) | [Modificar aspectos de pesquisa](#searchfacets) | [Atualizações de metadados em massa](#metadataupdates) |
 | [Classificação de pesquisa e reforço](#searchrank) | [Extração de texto](#extracttextupload) | [Coleções inteligentes](#collections) |
-| [Pesquisa avançada: filtragem e escopo da pesquisa](#scope) | [Predicados personalizados](#custompredicates) | [Entender e solucionar problemas de resultados inesperados](#unexpectedresults) |
-| [Pesquisar a partir de outras soluções e aplicativos](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Aplicativo de desktop do Experience Manager](#desktopapp)</li><li>[Imagens do Adobe Stock](#adobestock)</li><li>[Ativos da Dynamic Media](#dynamicmedia)</li></ul> |  |  |
+| [Pesquisa avançada: filtragem e escopo da pesquisa](#scope) | [Predicados personalizados](#custompredicates) | [Entender e solucionar problemas de resultados inesperados](#unexpected-results) |
+| [Pesquisar a partir de outras soluções e aplicativos](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Aplicativo de desktop do Experience Manager](#desktop-app)</li><li>[Imagens do Adobe Stock](#adobe-stock)</li><li>[Ativos da Dynamic Media](#dynamic-media)</li></ul> |  |  |
 | [Seletor de ativos](#assetpicker) |  |  |
 | [](#limitations) Limitações e  [dicas](#tips) |  |  |
 | [Exemplos ilustrados](#samples) |  |  |
@@ -69,11 +69,11 @@ Para encontrar rapidamente os ativos relevantes, a interface avançada fornece m
 
 Quando os resultados são muitos ativos, [!DNL Experience Manager] exibe os primeiros 100 na exibição de cartão e 200 na exibição de lista. À medida que os usuários rolam, mais ativos são carregados. Isso melhora o desempenho. Assista a uma demonstração em vídeo do [número de ativos exibidos](https://www.youtube.com/watch?v=LcrGPDLDf4o).
 
-Às vezes, você pode ver alguns ativos inesperados nos resultados da pesquisa. Para obter mais informações, consulte [resultados inesperados](#troubleshoot-unexpected-search-results-and-issues).
+Às vezes, você pode ver alguns ativos inesperados nos resultados da pesquisa. Para obter mais informações, consulte [resultados inesperados](#unexpected-results).
 
 [!DNL Experience Manager] O pode pesquisar vários formatos de arquivo e os filtros de pesquisa podem ser personalizados para atender às necessidades de sua empresa. Entre em contato com o administrador para entender quais opções de pesquisa são disponibilizadas para o repositório DAM e quais restrições sua conta tem.
 
-### Resultados com e sem tags inteligentes aprimoradas {#withsmarttags}
+### Resultados com e sem Tags inteligentes aprimoradas {#withsmarttags}
 
 Por padrão, a pesquisa [!DNL Experience Manager] combina os termos de pesquisa com uma cláusula AND. Por exemplo, considere pesquisar palavras-chave em execução. Somente os ativos com mulheres e palavras-chave em execução nos metadados aparecem nos resultados da pesquisa por padrão. O mesmo comportamento é retido quando caracteres especiais (pontos, sublinhados ou traços) são usados com as palavras-chave. As seguintes consultas de pesquisa retornam os mesmos resultados:
 
@@ -82,11 +82,11 @@ Por padrão, a pesquisa [!DNL Experience Manager] combina os termos de pesquisa 
 * `woman-running`
 
 No entanto, a consulta `woman -running` retorna ativos sem `running` em seus metadados.
-O uso de tags inteligentes adiciona uma cláusula `OR` extra para localizar qualquer um dos termos de pesquisa como as tags inteligentes aplicadas. Um ativo marcado com `woman` ou `running` usando tags inteligentes também aparece nessa consulta de pesquisa. Então os resultados da pesquisa são uma combinação de...
+O uso de Tags inteligentes adiciona uma cláusula `OR` extra para localizar qualquer um dos termos de pesquisa como as tags inteligentes aplicadas. Um ativo marcado com `woman` ou `running` usando Tags inteligentes também aparece nessa consulta de pesquisa. Então os resultados da pesquisa são uma combinação de...
 
 * Ativos com `woman` e `running` palavras-chave nos metadados (comportamento padrão).
 
-* Os ativos são marcados com tags inteligentes com uma das palavras-chave (comportamento de tags inteligentes).
+* Os ativos são marcados com tags inteligentes com uma das palavras-chave (comportamento das Tags inteligentes).
 
 ### Pesquise sugestões ao digitar {#searchsuggestions}
 
@@ -144,7 +144,7 @@ Para localizar imagens visualmente semelhantes a uma imagem selecionada pelo usu
 
 *Figura: Encontre imagens semelhantes usando a opção na exibição de cartão.*
 
-### Imagens do Adobe Stock {#adobestock}
+### Imagens do Adobe Stock {#adobe-stock}
 
 Na interface do usuário [!DNL Experience Manager], os usuários podem pesquisar [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) e licenciar os ativos necessários. Adicione `Location: Adobe Stock` na barra Omnisearch. Você também pode usar o painel Filtros para localizar todos os ativos licenciados ou não licenciados ou pesquisar um ativo específico usando o número de arquivo do Adobe Stock.
 
@@ -152,35 +152,38 @@ Na interface do usuário [!DNL Experience Manager], os usuários podem pesquisar
 
 Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** no painel **[!UICONTROL Filtros]**. Isso filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação.
 
-### Pesquisar usando valores específicos em campos de metadados {#gqlsearch}
+### Pesquisa GQL usando valores específicos nos campos de metadados {#gql-search}
 
-Você pode pesquisar ativos com base em valores exatos de campos de metadados específicos, como título, descrição e autor. O recurso de pesquisa de texto completo do GQL busca apenas os ativos cujo valor de metadados corresponda exatamente à sua consulta de pesquisa. Os nomes das propriedades (por exemplo, autor, título e assim por diante) e os valores distinguem maiúsculas de minúsculas.
+Você pode pesquisar ativos com base em valores exatos de campos de metadados, como título, descrição e criador. O recurso de pesquisa de texto completo do GQL busca apenas os ativos cujo valor de metadados corresponda exatamente à sua consulta de pesquisa. Os nomes das propriedades (Criador, Título e assim por diante) e os valores distinguem maiúsculas de minúsculas.
 
 | Campo de metadados | Valor e uso da faceta |
-| ----------------------------------------- | --------------------------------------- |
-| Título | `title:John` |
-| Criador | `creator:John` |
-| Local | `location:NA` |
-| Descrição | `description:"Sample Image"` |
-| Ferramenta Criador | `creatortool:"Adobe Photoshop CC 2020"` |
-| Proprietário de direitos autorais | `copyrightowner:"Adobe Systems"` |
-| Contribuinte | `contributor:John` |
-| Termos de Uso  | `usageterms:"CopyRights Reserved"` |
-| Criado | `created`:AAAA-MM-DDTHH |
-| Expira Data | `expires`:AAAA-MM-DDTHH |
-| No horário | `ontime`:AAAA-MM-DDTHH |
-| Hora de desligar | `offtime`:AAAA-MM-DDTHH |
-| Intervalo de tempo (expira o dateontime, offtime) | `facet field`: limite inferior..upperbound |
+|---|---|
+| Título | title:John |
+| Criador | criador:John |
+| Local | local:NA |
+| Descrição | description: &quot;Imagem de exemplo&quot; |
+| Ferramenta Criador | criatortool: &quot;Adobe Photoshop CC 2015&quot; |
+| Proprietário de direitos autorais | copyrights towner: &quot;Adobe Systems&quot; |
+| Contribuinte | colaborador:John |
+| Termos de Uso  | usageterms:&quot;CopyRights Reserved&quot; |
+| Criado | criado:AAAA-MM-DDTHH |
+| Expira Data | expira:AAAA-MM-DDTHH |
+| No horário | ontime:YYYY-MM-DDTHH |
+| Hora de desligar | offtime:AAAA-MM-DDTHH |
+| Intervalo de tempo (expira o dateontime, offtime) | campo de faceta : limite inferior..upperbound |
 | Caminho | /content/dam/&lt;nome da pasta> |
-| Título do PDF | `pdftitle`: &quot;Documento do Adobe&quot; |
-| Assunto | `subject:"Training"` |
-| Tags | `tags:"Location And Travel"` |
-| Tipo | `type:"image\png"` |
-| Largura da imagem | `width`:lowerbound..upperbound |
-| Altura da imagem | `height`:lowerbound..upperbound |
-| Person | `person:John` |
+| Título do PDF | pdftitle:&quot;Documento do Adobe&quot; |
+| Assunto | assunto: &quot;Formação&quot; |
+| Tags | Tags: &quot;Localização E Viagem&quot; |
+| Tipo | type: &quot;image\png&quot; |
+| Largura da imagem | largura:limite inferior..upperbound |
+| Altura da imagem | altura:limite inferior..upperbound |
+| Person | pessoa:John |
 
 As propriedades `path`, `limit`, `size` e `orderby` não podem ser combinadas usando o operador `OR` com qualquer outra propriedade.
+
+<!-- TBD: Where are the limit, size, orderby properties defined?
+-->
 
 A palavra-chave de uma propriedade gerada pelo usuário é seu rótulo de campo no editor de propriedades em minúsculas, com espaços removidos.
 
@@ -194,31 +197,31 @@ Estes são alguns exemplos de formatos de pesquisa para consultas complexas:
 * Para exibir ativos com um valor de propriedade que contenha uma string específica (por exemplo: título = Sala de Reunião de Basileia): `title:*Meeting*`
 * Para exibir ativos que contêm uma string específica e têm um valor de propriedade específico (por exemplo: procure por Adobe de sequência em ativos com title=John Doe): `*Adobe* title:"John Doe"`
 
-## Pesquise ativos de outras [!DNL Experience Manager] ofertas ou interfaces {#beyondomnisearch}
+## Pesquise ativos de outras [!DNL Experience Manager] ofertas ou interfaces {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] conecta o repositório DAM a várias outras  [!DNL Experience Manager] soluções para fornecer acesso mais rápido a ativos digitais e simplificar os fluxos de trabalho criativos. Qualquer descoberta de ativo começa com navegação ou pesquisa. O comportamento de pesquisa permanece basicamente o mesmo em várias superfícies e soluções. Alguns métodos de pesquisa são alterados conforme o público-alvo, os casos de uso e a interface do usuário variam nas soluções [!DNL Experience Manager]. Os métodos específicos estão documentados para as soluções individuais nos links abaixo. As dicas e comportamentos universalmente aplicáveis estão documentados neste artigo.
 
 ### Pesquisar ativos no painel Adobe Asset Link {#aal}
 
-Usando o Adobe Asset Link, os profissionais criativos agora podem acessar o conteúdo armazenado em [!DNL Experience Manager Assets], sem sair dos aplicativos Adobe Creative Cloud compatíveis. Os criadores podem navegar, pesquisar, sair e fazer check-in de ativos com facilidade usando o painel no aplicativo no [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] e [!DNL Adobe InDesign]. O Asset Link também permite que os usuários pesquisem resultados visualmente semelhantes. Os resultados da exibição de pesquisa visual são fornecidos por algoritmos de aprendizado de máquina da Adobe Sensei e ajudam os usuários a encontrar imagens esteticamente semelhantes. Consulte [pesquisar e procurar ativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) usando o Adobe Asset Link.
+Usando o Adobe Asset Link, os profissionais criativos agora podem acessar o conteúdo armazenado em [!DNL Experience Manager Assets], sem sair dos aplicativos Adobe Creative Cloud compatíveis. Os criadores podem navegar, pesquisar, sair e fazer check-in de ativos com facilidade usando o painel no aplicativo nos aplicativos [!DNL Adobe Creative Cloud]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] e [!DNL Adobe InDesign]. O Asset Link também permite que os usuários pesquisem resultados visualmente semelhantes. Os resultados da exibição de pesquisa visual são fornecidos por algoritmos de aprendizado de máquina da Adobe Sensei e ajudam os usuários a encontrar imagens esteticamente semelhantes. Consulte [pesquisar e procurar ativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) usando o Adobe Asset Link.
 
-### Pesquisar ativos no [!DNL Experience Manager] aplicativo de desktop {#desktopapp}
+### Pesquisar ativos no [!DNL Experience Manager] aplicativo de desktop {#desktop-app}
 
 Os profissionais de criação usam o aplicativo de desktop para tornar o [!DNL Experience Manager Assets] facilmente pesquisável e disponível em seu desktop local (Win ou Mac). Os criadores podem revelar facilmente os ativos desejados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas em [!DNL Experience Manager] com uma nova versão criada no repositório. O aplicativo suporta pesquisas básicas usando uma ou mais palavras-chave, curingas `*` e `?` e operador `AND`. Consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) no aplicativo de desktop.
 
-### Pesquisar ativos em [!DNL Brand Portal] {#brandportal}
+### Pesquisar ativos em [!DNL Brand Portal] {#brand-portal}
 
 Usuários de linha de negócios e profissionais de marketing usam o Brand Portal para compartilhar com eficiência e segurança os ativos digitais aprovados com suas equipes internas estendidas, parceiros e revendedores. Consulte [pesquisar ativos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
-### Pesquisar [!DNL Adobe Stock] imagens {#adobestock-1}
+### Pesquisar [!DNL Adobe Stock] imagens {#adobe-stock1}
 
-Na interface do usuário [!DNL Experience Manager], os usuários podem pesquisar ativos da Adobe Stock e licenciar os ativos necessários. Adicione `Location: Adobe Stock` no campo Omnisearch . Você também pode usar o painel **[!UICONTROL Filters]** para localizar todos os ativos licenciados ou não licenciados ou pesquisar um ativo específico usando o número de arquivo Adobe Stock. Consulte [gerenciar imagens do Adobe Stock no Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Na interface do usuário [!DNL Experience Manager], os usuários podem pesquisar ativos da Adobe Stock e licenciar os ativos necessários. Adicione `Location: Adobe Stock` no campo Omnisearch . Você também pode usar o painel **[!UICONTROL Filters]** para localizar todos os ativos licenciados ou não licenciados ou pesquisar um ativo específico usando o número de arquivo Adobe Stock. Consulte [gerenciar [!DNL Adobe Stock] imagens em [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Pesquisar ativos do Dynamic Media {#dynamicmedia}
+### Pesquisar [!DNL Dynamic Media] ativos {#dynamic-media}
 
 Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** no painel **[!UICONTROL Filtros]**. Isso filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação. Ao criar páginas da Web, os autores podem pesquisar por conjuntos no Localizador de conteúdo. Há um filtro para conjuntos disponível em um menu pop-up.
 
-### Pesquisar ativos no Localizador de conteúdo ao criar páginas da Web {#contentfinder}
+### Pesquisar ativos no Localizador de conteúdo ao criar páginas da Web {#content-finder}
 
 Os autores podem usar o Localizador de conteúdo para pesquisar o repositório DAM para os ativos relevantes e usar os ativos nas páginas da Web que eles criam. Os autores também podem usar a funcionalidade Ativos conectados para procurar ativos que estão disponíveis em uma implantação remota [!DNL Experience Manager]. Os autores podem usar esses ativos em páginas da Web em uma implantação local [!DNL Experience Manager]. Consulte [usar ativos remotos](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
@@ -226,13 +229,13 @@ Os autores podem usar o Localizador de conteúdo para pesquisar o repositório D
 
 [!DNL Experience Manager] o recurso de pesquisa suporta a pesquisa de coleções e a pesquisa de ativos dentro de uma coleção. Consulte [pesquisar coleções](/help/assets/manage-collections.md).
 
-## Seletor de ativo {#assetpicker}
+## Seletor de ativo {#asset-picker}
 
 >[!NOTE]
 >
 >O seletor de ativo era chamado [seletor de ativo](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) em versões anteriores de [!DNL Adobe Experience Manager].
 
-O seletor de ativos permite navegar, pesquisar e filtrar ativos do DAM de uma maneira especial. Você pode iniciar o seletor de ativos na sua instância [!DNL Experience Manager] usando `https://[aem-server]:[port]/aem/assetpicker.html`. Esse URL abre o seletor de ativos no modo de navegação. Use os parâmetros de solicitação compatíveis como sufixo, como `mode` (seleções únicas ou múltiplas) ou `viewmode` com `assettype` (imagem, vídeo, texto) e `mimetype`. Esses parâmetros definem o contexto do seletor de ativos para uma instância de pesquisa específica e permanecem intactos durante toda a seleção. Também é possível buscar os metadados dos ativos selecionados usando essa funcionalidade.
+O seletor de ativos permite pesquisar, filtrar e navegar pelos ativos do DAM de uma maneira especial. O seletor de ativos está disponível em `https://[aem_server]:[port]/aem/assetpicker.html`. Você pode buscar os metadados dos ativos selecionados usando o seletor de ativos. Você pode iniciá-lo com parâmetros de solicitação compatíveis, como tipo de ativo (imagem, vídeo, texto) e modo de seleção (seleções únicas ou múltiplas). Esses parâmetros definem o contexto do seletor de ativos para uma instância de pesquisa específica e permanecem intactos durante toda a seleção.
 
 O seletor de ativos usa a mensagem HTML5 `Window.postMessage` para enviar dados do ativo selecionado para o recipient. Funciona somente no modo de navegação e somente com a página de resultados do Omnisearch.
 
@@ -240,13 +243,13 @@ Passe os seguintes parâmetros de solicitação em um URL para iniciar o seletor
 
 | Nome | Valores | Exemplo | Propósito |
 |---|---|---|---|
-| sufixo do recurso (B) | Caminho da pasta como o sufixo de recurso no URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Para iniciar o seletor de ativos com uma pasta específica selecionada, por exemplo, com a pasta `/content/dam/we-retail/en/activities` selecionada, o URL deve ser do formato: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Se você precisar selecionar uma pasta específica quando o seletor de ativos for iniciado, passe-a como um sufixo de recurso. |
-| `mode` | único, múltiplo | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | No modo múltiplo, é possível selecionar vários ativos simultaneamente usando o seletor de ativos. |
+| sufixo do recurso (B) | Caminho da pasta como o sufixo de recurso no URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Para iniciar o seletor de ativos com uma pasta específica selecionada, por exemplo, com a pasta `/content/dam/we-retail/en/activities` selecionada, o URL deve ser do formato: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Se você precisar selecionar uma pasta específica quando o seletor de ativos for iniciado, passe-a como um sufixo de recurso. |
+| `mode` | único, múltiplo | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | No modo múltiplo, é possível selecionar vários ativos simultaneamente usando o seletor de ativos. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use esses parâmetros para abrir o seletor de ativos como Caixa de diálogo do Granite. Essa opção só é aplicável quando você inicia o seletor de ativos por meio do Campo de caminho do Granite e o configura como URL pickerSrc. |
-| `root` | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | Use essa opção para especificar a pasta raiz do seletor de ativos. Nesse caso, o seletor de ativos permite selecionar apenas ativos secundários (diretos/indiretos) na pasta raiz. |
-| `viewmode` | pesquisa |  | Para iniciar o seletor de ativos no modo de pesquisa, com parâmetros tipo de ativo e tipo de ativo. |
-| `assettype` | imagens, documentos, multimídia, arquivos. | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives)</li></ul> | Use a opção para filtrar tipos de ativos com base no valor fornecido. |
-| `mimetype` | Tipo MIME (`/jcr:content/metadata/dc:format`) de um ativo (curinga também compatível). | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png)</li></ul> | Use-o para filtrar ativos com base no tipo MIME. |
+| `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Use essa opção para especificar a pasta raiz do seletor de ativos. Nesse caso, o seletor de ativos permite selecionar apenas ativos secundários (diretos/indiretos) na pasta raiz. |
+| `viewmode` | pesquisa |  | Para iniciar o seletor de ativos no modo de pesquisa, com os parâmetros `assettype` e `mimetype`. |
+| `assettype` | Imagens, documentos, multimídia, arquivos. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Use a opção para filtrar tipos de ativos com base no valor fornecido. |
+| `mimetype` | Tipo MIME (`/jcr:content/metadata/dc:format`) de um ativo (curinga também compatível). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Use-o para filtrar ativos com base no tipo MIME. |
 
 Para acessar a interface do seletor de ativos, vá para `https://[aem_server]:[port]/aem/assetpicker`. Navegue até a pasta desejada e selecione um ou mais ativos. Como alternativa, pesquise o ativo desejado na caixa Omnisearch , aplique o filtro conforme necessário e selecione-o.
 
@@ -262,6 +265,7 @@ O recurso de pesquisa em [!DNL Experience Manager Assets] tem as seguintes limit
 * [!DNL Experience Manager] pode continuar a mostrar o termo de pesquisa depois de selecionar as propriedades de um ativo de resultados pesquisados e cancelar a pesquisa.  <!-- (CQ-4273540) -->
 * Ao procurar pastas ou arquivos e pastas, os resultados da pesquisa não podem ser classificados em nenhum parâmetro.
 * Se você selecionar `Return` sem digitar na barra Omnisearch, [!DNL Experience Manager] retornará uma lista de somente arquivos e não pastas. Se você pesquisar especificamente por pastas sem usar uma palavra-chave, [!DNL Experience Manager] não retornará nenhum resultado.
+* Você pode realizar pesquisa de texto completo nas pastas. Especifique um termo de pesquisa para que a pesquisa funcione.
 
 Pesquisa visual ou pesquisa de semelhança tem as seguintes limitações:
 
@@ -335,7 +339,7 @@ Para excluir ativos específicos dos resultados da pesquisa, use a propriedade `
 
 ### Pesquisa visual ou de semelhança {#configvisualsearch}
 
-A pesquisa visual usa marcação inteligente e requer [!DNL Experience Manager] 6.5.2.0 ou posterior. Após configurar a funcionalidade de marcação inteligente, siga estas etapas:
+A pesquisa visual usa Tags inteligentes. Após configurar a funcionalidade de marcação inteligente, siga estas etapas.
 
 1. No [!DNL Experience Manager] CRXDE, no nó `/oak:index/lucene`, adicione as seguintes propriedades e valores e salve as alterações.
 
@@ -355,7 +359,7 @@ A pesquisa visual usa marcação inteligente e requer [!DNL Experience Manager] 
    Salve as alterações.
 
 1. Acesse `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` e adicione a propriedade `similarityTags` do tipo `Boolean` com o valor `true`.
-1. Aplique tags inteligentes aos ativos em seu repositório [!DNL Experience Manager].
+1. Aplique Tags inteligentes aos ativos em seu repositório [!DNL Experience Manager]. Consulte [como configurar tags inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
 1. No CRXDE, no nó `/oak-index/damAssetLucene`, defina a propriedade `reindex` para `true`. Salve as alterações.
 1. (Opcional) Se você tiver personalizado o formulário de pesquisa, copie o nó `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` para `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Salve as alterações.
 
@@ -413,9 +417,9 @@ Você pode fazer o seguinte com os ativos que pesquisou em [!DNL Experience Mana
 
 ### Classificar resultados de pesquisa {#sort}
 
-Classifique os resultados da pesquisa para descobrir mais rapidamente os ativos necessários. Você só pode classificar os resultados da pesquisa ao selecionar **[[!UICONTROL Arquivos]](#searchui)** no painel **[!UICONTROL Filtros]**. [!DNL Assets]O usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independente da quantidade) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do lado do servidor fornece resultados mais rápidos e precisos do que a classificação do lado do cliente.
+Classifique os resultados da pesquisa para descobrir mais rapidamente os ativos necessários. Você pode classificar os resultados da pesquisa na exibição de lista e somente ao selecionar **[[!UICONTROL Arquivos]](#searchui)** no painel **[!UICONTROL Filtros]**. [!DNL Assets]O usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independente da quantidade) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do lado do servidor fornece resultados mais rápidos e precisos do que a classificação do lado do cliente.
 
-Você pode classificar os resultados da pesquisa da mesma maneira que pode classificar ativos em qualquer pasta. A classificação funciona nessas colunas — Nome, Título, Status, Dimension, Tamanho, Classificação, Uso, (Data) Criado, (Data) Modificado, (Data) Publicado, Fluxo de trabalho e Check-out.
+Na exibição em lista, é possível classificar os resultados da pesquisa da mesma maneira que você pode classificar ativos em qualquer pasta. A classificação funciona nessas colunas — Nome, Título, Status, Dimension, Tamanho, Classificação, Uso, (Data) Criado, (Data) Modificado, (Data) Publicado, Fluxo de trabalho e Check-out.
 
 Para obter limitações da funcionalidade de classificação, consulte [limitações](#limitations).
 
@@ -450,7 +454,7 @@ Uma coleção é um conjunto ordenado de ativos que pode incluir ativos de locai
 
 Você pode criar coleções inteligentes com base nos critérios de pesquisa. No painel **[!UICONTROL Filtros]**, selecione **[!UICONTROL Arquivos]** e clique em **[!UICONTROL Salvar coleção inteligente]**. Consulte [gerenciar coleções](/help/assets/manage-collections.md).
 
-## Resultados e problemas de pesquisa inesperados {#unexpectedresults}
+## Resultados e problemas de pesquisa inesperados {#unexpected-results}
 
 | Erro, problemas, sintomas | Possível motivo | Possível correção ou compreensão do problema |
 |---|---|---|
