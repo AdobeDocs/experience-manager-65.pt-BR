@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 notas de versão anteriores do Servi
 description: Notas de versão para  [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 131e564e4ed50c4f08412ba39c62f15b9c362b8c
+source-git-commit: ecb32596edecaf47ef54a74c2be8ecf252de466c
 workflow-type: tm+mt
-source-wordcount: '17898'
+source-wordcount: '17912'
 ht-degree: 17%
 
 ---
@@ -36,6 +36,8 @@ Os principais recursos e aprimoramentos introduzidos no [!DNL Adobe Experience M
    * Converter um formulário PDF em um formulário adaptável usando o [!DNL Automated Forms Conversion service].
 
 * Suporte para [!DNL Microsoft SQL Server] 2019 em [!DNL Experience Manager Forms].
+
+* Suporte para [!DNL Microsoft] grupos de disponibilidade Always On do SQL Server 2016 para Alta Disponibilidade para implantações OSGi.
 
 * O repositório integrado (Apache Jackrabbit Oak) foi atualizado para a versão 1.22.5.
 
