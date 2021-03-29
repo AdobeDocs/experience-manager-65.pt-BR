@@ -9,11 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
-feature: Atualização
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 8d6818d0f2d90482f930f8e98682670ed6d0dd28
 workflow-type: tm+mt
-source-wordcount: '2722'
+source-wordcount: '2724'
 ht-degree: 2%
 
 ---
@@ -72,7 +71,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Modelos do fluxo de trabalho {#workflow-models}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -121,7 +120,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Instâncias do fluxo de trabalho {#workflow-instances}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -147,7 +146,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Inicializadores do fluxo de trabalho {#workflow-launchers}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -178,7 +177,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Scripts de fluxo de trabalho {#workflow-scripts}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -213,7 +212,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Configurações do ContextHub {#contexthub-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -244,7 +243,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Designs Cloud Services Classic {#classic-cloud-services-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -283,7 +282,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Designs de painéis clássicos {#classic-dashboards-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -322,7 +321,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Designs de relatórios clássicos {#classic-reports-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -361,7 +360,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Designs padrão {#default-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -400,7 +399,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Ponto de extremidade JavaScript do Adobe DTM {#adobe-dtm-javascript-endpoint}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -423,7 +422,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Endpoint de gancho da Web do Adobe DTM {#adobe-dtm-web-hook-endpoint}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -446,7 +445,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Tarefas da caixa de entrada {#inbox-tasks}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -473,7 +472,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Configurações do Blueprint do gerenciador de vários sites {#multi-site-manager-blueprint-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong><em></em>Localização anterior</strong></td>
@@ -500,7 +499,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Configurações do Gadget do Painel de Projetos AEM {#aem-projects-dashboard-gadget-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -530,7 +529,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Modelo de Email de Notificação de Replicação {#replication-notification-e-mail-template}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -563,7 +562,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Tags {#tags}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -597,7 +596,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Cloud Services de tradução {#translation-cloud-services}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -642,7 +641,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Idiomas de tradução {#translation-languages}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -673,7 +672,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Regras de tradução {#translation-rules}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -704,7 +703,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Biblioteca de cliente do widget de tradução {#translation-widget-client-library}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -749,9 +748,11 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 | **Orientação relativa à reestruturação** | Nenhuma ação necessária. |
 | **Notas** | O Console da Web de Ativação em Árvore agora está disponível por meio de **Ferramentas > Implantação > Replicação > Ativar árvore**. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ### Cloud Services do conector de tradução do fornecedor {#vendor-translation-connector-cloud-services}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -798,7 +799,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Modelos de email de notificação de fluxo de trabalho {#workflow-notification-email-templates}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
@@ -830,7 +831,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 
 ### Pacotes de Fluxo de Trabalho {#workflow-packages}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Localização anterior</strong></td>
