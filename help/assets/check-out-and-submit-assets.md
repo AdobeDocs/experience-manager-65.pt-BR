@@ -1,12 +1,12 @@
 ---
-title: Fazer check-in e check-out de ativos para edição
+title: Fazer check-in e check-out de arquivos em [!DNL Assets]
 description: Saiba como fazer check-out de ativos para edição e check-in deles novamente depois que as alterações forem concluídas.
 contentOwner: AG
 role: Profissional
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: eb87d77e1366786e8574f84590dfe9a3303efda0
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,7 @@ Esse recurso ajuda a impedir que outros usuários substituam as alterações fei
 ## Confira os ativos {#checking-out-assets}
 
 1. Na interface do usuário [!DNL Assets], selecione o ativo que deseja fazer check-out. Você também pode selecionar vários ativos para fazer check-out.
-1. Na barra de ferramentas, clique em **[!UICONTROL Check-out]**.
-A opção **[!UICONTROL Check-out]** alterna para **[!UICONTROL Check-in]**.
+1. Na barra de ferramentas, clique em **[!UICONTROL Check-out]**. A opção **[!UICONTROL Check-out]** alterna para **[!UICONTROL Check-in]**.
 Para verificar se outros usuários podem editar o ativo com check-out, faça logon como um usuário diferente. Um símbolo de cadeado é exibido na miniatura do ativo que você fez check-out.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
@@ -33,7 +32,7 @@ Para verificar se outros usuários podem editar o ativo com check-out, faça log
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Você pode clicar em **[!UICONTROL Exibir propriedades]** para editar os metadados do ativo bloqueado.
+   Para editar os metadados do ativo bloqueado, clique em **[!UICONTROL Exibir propriedades]**.
 
 1. Clique em **[!UICONTROL Editar]** para abrir o ativo no modo de edição.
 
@@ -64,6 +63,6 @@ Os administradores podem verificar ativos com check-out feito por outros usuári
 
 >[!MORELIKETHIS]
 >
->* [Entender o check-in e o check-out no aplicativo de desktop do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
->* [Tutorial em vídeo para entender o check-in e o check-out em Ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+>* [Entender check-in e check-out  [!DNL Experience Manager] no aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Tutorial em vídeo para entender o check-in e o check-out [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 
