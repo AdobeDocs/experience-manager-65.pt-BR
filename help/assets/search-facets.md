@@ -3,10 +3,11 @@ title: Pesquisar aspectos para filtrar os resultados da pesquisa
 description: Como criar, modificar e usar facetas de pesquisa em [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Administrador, Desenvolvedor
+feature: 'Pesquisar  '
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2427'
 ht-degree: 17%
 
 ---
