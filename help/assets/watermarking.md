@@ -3,10 +3,11 @@ title: Adicionar marca d'água aos ativos digitais
 description: Saiba como usar o recurso Marca d'água para adicionar uma marca d'água digital aos ativos.
 contentOwner: AG
 role: Profissional de negócios, Administrador
+feature: Gerenciamento de ativos
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
