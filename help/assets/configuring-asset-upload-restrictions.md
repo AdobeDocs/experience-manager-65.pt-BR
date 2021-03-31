@@ -3,11 +3,12 @@ title: Configurar restrições de upload de ativos
 description: 'Restringir o tipo de ativos (arquivos) que os usuários podem fazer upload '
 contentOwner: AG
 role: Desenvolvedor, Administrador, Arquiteto
+feature: Gerenciamento de ativos,Fazer upload
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 15%
+source-wordcount: '196'
+ht-degree: 14%
 
 ---
 
