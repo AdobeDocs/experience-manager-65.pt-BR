@@ -3,10 +3,11 @@ title: Ativar a detecção de ativos duplicados
 description: Saiba como habilitar a detecção de ativos duplicados no Experience Manager.
 contentOwner: AG
 role: Profissional de negócios, Administrador
+feature: Gerenciamento de ativos,Relatórios de ativos
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
