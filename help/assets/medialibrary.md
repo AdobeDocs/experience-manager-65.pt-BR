@@ -3,10 +3,11 @@ title: Use a Biblioteca de mídia para o gerenciamento básico de ativos digitai
 description: '[!DNL Experience Manager Assets] e Biblioteca de mídia para gerenciamento de ativos.'
 contentOwner: AG
 role: Arquiteto, Líder
+feature: Gerenciamento de ativos
 translation-type: tm+mt
-source-git-commit: 15c525746a613eb33cd09b7ff476f43aa18b146b
+source-git-commit: ad0672c345262712e51e821fa4e050b505063ac4
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
