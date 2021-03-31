@@ -3,10 +3,11 @@ title: Digital Rights Management de ativos
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados em [!DNL Experience Manager].
 contentOwner: AG
 role: Profissional de negócios, Administrador
+feature: DRM,Gerenciamento de ativos
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1404'
 ht-degree: 5%
 
 ---
