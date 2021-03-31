@@ -4,9 +4,9 @@ description: Saiba como criar referências a ativos digitais de dentro de [!DNL 
 contentOwner: AG
 role: Profissional de negócios, Administrador
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: e6a0cab17d203183cc4169563179060338596cc3
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1381'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Além de eliminar a redundância, referenciar os ativos em [!DNL Adobe Creative 
 
 As referências são resolvidas com base no caminho, na ID do documento e na ID da instância dos ativos referenciados.
 
-## Adicionar ativos digitais como referências em [!DNL Adobe Illustrator] {#refai}
+## [!DNL Adobe Illustrator]: Adicionar ativos digitais como referências  {#refai}
 
 Você pode fazer referência a ativos digitais existentes em um arquivo [!DNL Adobe Illustrator].
 
@@ -45,7 +45,7 @@ Você pode fazer referência a ativos digitais existentes em um arquivo [!DNL Ad
 
    *Figura: Referências de ativos nos detalhes do ativo.*
 
-## Adicionar ativos digitais como referências em [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
+## [!DNL Adobe InDesign]: Adicionar ativos digitais como referências  {#add-aem-assets-as-references-in-adobe-indesign}
 
 Para fazer referência a ativos digitais em um arquivo [!DNL InDesign], arraste os ativos para o arquivo [!DNL InDesign] ou exporte o arquivo [!DNL InDesign] como um arquivo ZIP.
 
@@ -55,6 +55,8 @@ Os ativos referenciados já existem em [!DNL Experience Manager Assets]. Você p
 >
 >Se [!DNL InDesign Server] for enviado por proxy, os arquivos [!DNL InDesign] terão sua visualização incorporada aos metadados XMP. Nesse caso, a extração em miniatura não é explicitamente necessária. No entanto, se [!DNL InDesign Server] não for proxy, as miniaturas deverão ser extraídas explicitamente para arquivos [!DNL InDesign].
 
+Quando um arquivo INDD é carregado, as referências são buscadas consultando ativos com as propriedades `xmpMM:InstanceID` e `xmpMM:DocumentID` no repositório.
+
 ### Criar referências arrastando ativos {#create-references-by-dragging-aem-assets}
 
 Esse procedimento é semelhante a [adicionar ativos digitais como referências no Adobe Illustrator](#refai).
@@ -62,12 +64,12 @@ Esse procedimento é semelhante a [adicionar ativos digitais como referências n
 ### Criar referências a ativos exportando um arquivo ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Execute as etapas em [Criar modelos de fluxo de trabalho](/help/sites-developing/workflows-models.md) para criar um novo fluxo de trabalho.
-1. Use o recurso Pacote de [!DNL Adobe InDesign] para exportar o documento. [!DNL Adobe InDesign] pode exportar um documento e os ativos vinculados como um pacote. Nesse caso, a pasta exportada contém uma pasta Links que contém subativos no arquivo [!DNL InDesign].
+1. Use o [recurso do pacote](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) de [!DNL Adobe InDesign] para exportar o documento. [!DNL Adobe InDesign] pode exportar um documento e os ativos vinculados como um pacote. Nesse caso, a pasta exportada contém uma pasta `Links` que contém subativos no arquivo [!DNL InDesign]. A pasta `Links` está presente na mesma pasta que o arquivo INDD.
 1. Crie um arquivo ZIP e faça upload dele para o repositório [!DNL Experience Manager].
 1. Inicie o workflow `Unarchiver`.
 1. Quando o fluxo de trabalho é concluído, as referências na pasta Links são automaticamente referenciadas como subativos. Para exibir uma lista de ativos referenciados, navegue até a página de detalhes do ativo [!DNL InDesign] e feche o [Painel](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## Adicionar ativos digitais como referências em [!DNL Adobe Photoshop] {#refps}
+## [!DNL Adobe Photoshop]: Adicionar ativos digitais como referências  {#refps}
 
 1. Use o [!DNL Experience Manager] aplicativo de desktop para acessar [!DNL Experience Manager Assets]. Baixe e revele os ativos no sistema de arquivos local. Use a funcionalidade [!UICONTROL Colocar Linked] em [!DNL Adobe Photoshop]. Consulte [colocar ativos no aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
