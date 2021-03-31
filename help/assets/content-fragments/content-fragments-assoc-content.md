@@ -10,10 +10,12 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
+feature: Fragmentos de conteúdo
+role: Profissional de negócios, Administrador
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '246'
 ht-degree: 21%
 
 ---
@@ -21,15 +23,15 @@ ht-degree: 21%
 
 # Conteúdo associado{#associated-content}
 
-O conteúdo associado fornece a conexão para que os ativos (isto é,) possam ser usados (opcionalmente) com o fragmento quando ele é adicionado a uma página de conteúdo. Isso proporciona flexibilidade ao [fornecer uma variedade de ativos a serem acessados ao usar o fragmento de conteúdo em uma página](/help/sites-authoring/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado.
+O conteúdo associado fornece a conexão para que os ativos (ou seja,) possam ser usados (opcionalmente) com o fragmento quando ele for adicionado a uma página de conteúdo. Isso proporciona flexibilidade [fornecendo um intervalo de ativos para acessar ao usar o fragmento de conteúdo em uma página](/help/sites-authoring/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado.
 
-## Adicionar conteúdo associado {#adding-associated-content}
+## Adicionar Conteúdo Associado {#adding-associated-content}
 
 >[!NOTE]
 >
 >Existem vários métodos de adicionar [ativos visuais (por exemplo, imagens)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
-Para fazer a associação, primeiro é necessário [adicionar seus ativos de mídia a uma coleção](/help/assets/manage-collections.md#adding-assets-to-a-collection). Assim que isso for feito, você poderá:
+Para fazer a associação, primeiro é necessário [adicionar o(s) ativo(s) de mídia a uma coleção](/help/assets/manage-collections.md#adding-assets-to-a-collection). Feito isso, você pode:
 
 1. Abra o fragmento e selecione **Conteúdo associado** no painel lateral.
 
@@ -38,7 +40,7 @@ Para fazer a associação, primeiro é necessário [adicionar seus ativos de mí
 1. Selecione **Associar conteúdo** ou **Associar coleção** (conforme apropriado, dependendo de alguma coleção já ter sido associada ou não).
 1. Selecione a coleção necessária.
 
-   Como opção, é possível adicionar o fragmento à coleção selecionada; isso ajuda a rastrear.
+   Opcionalmente, é possível adicionar o próprio fragmento à coleção selecionada; isso auxilia no rastreamento.
 
    ![cfm-6420-04](assets/cfm-6420-04.png)
 
@@ -46,12 +48,12 @@ Para fazer a associação, primeiro é necessário [adicionar seus ativos de mí
 
    ![cfm-6420-05](assets/cfm-6420-05.png)
 
-## Editar conteúdo associado {#editing-associated-content}
+## Editar Conteúdo Associado {#editing-associated-content}
 
 Depois de associar uma coleção, você pode:
 
 * **** Remova a associação.
-* **Adicionar** ativos à coleção.
+* **Adicione** Ativos à coleção.
 * Selecione um ativo para ação adicional.
 * Edite o ativo.
 
