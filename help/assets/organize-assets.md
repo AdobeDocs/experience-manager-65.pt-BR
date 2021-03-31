@@ -3,10 +3,11 @@ title: Organize seus ativos digitais
 description: Organize seus ativos digitais, imagens, arquivos, pastas e assim por diante usando o Experience Manager.
 contentOwner: AG
 role: Profissional
+feature: Gerenciamento de ativos,Pesquisar
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '785'
 ht-degree: 1%
 
 ---
