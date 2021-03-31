@@ -3,10 +3,11 @@ title: Use o rasterizador de PDF para gerar representações
 description: Gere miniaturas e representações de alta qualidade usando a biblioteca Adobe PDF Rasterizer .
 contentOwner: AG
 role: Desenvolvedor, Administrador
+feature: Ferramentas de Desenvolvedor,Representações
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
