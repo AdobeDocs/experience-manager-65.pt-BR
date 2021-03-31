@@ -3,10 +3,11 @@ title: Entender os conceitos de metadados
 description: Saiba mais sobre a necessidade e os tipos de metadados que permitem classificar e organizar facilmente os ativos.
 contentOwner: AG
 role: Profissional de negócios, Administrador
+feature: Metadados
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '2734'
+source-wordcount: '2735'
 ht-degree: 6%
 
 ---
