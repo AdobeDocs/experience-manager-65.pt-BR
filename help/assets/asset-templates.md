@@ -3,10 +3,11 @@ title: Modelos de ativos
 description: Saiba mais sobre os modelos de Ativos no [!DNL Adobe Experience Manager Assets] e como usar os modelos de ativos para criar materiais de apoio de marketing.
 contentOwner: AG
 role: Profissional
+feature: Gerenciamento de ativos,Ferramentas do desenvolvedor
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1550'
 ht-degree: 0%
 
 ---
@@ -93,7 +94,7 @@ Você pode editar um material adicional imediatamente depois de criá-lo. Como a
 
 1. Para modificar o texto em um campo editável, clique no campo de texto da lista de campos editáveis e edite o texto no campo.
 
-   ![chlimage_1-111](assets/chlimage_1-316.png)
+   ![chlimage_1-191](assets/chlimage_1-316.png)
 
    É possível editar as propriedades do texto, por exemplo, estilo de fonte, cor e tamanho usando as opções fornecidas.
 
