@@ -1,8 +1,8 @@
 ---
 title: Markdown
-seo-title: Marcação
-description: Durante a criação, o editor de fragmentos de conteúdo usa a sintaxe de markdown para permitir que você escreva conteúdo facilmente.
-seo-description: Durante a criação, o editor de fragmentos de conteúdo usa a sintaxe de markdown para permitir que você escreva conteúdo facilmente.
+seo-title: Markdown
+description: Durante a criação, o editor de fragmento de conteúdo usa a sintaxe de marcação para permitir que você grave conteúdo com facilidade.
+seo-description: Durante a criação, o editor de fragmento de conteúdo usa a sintaxe de marcação para permitir que você grave conteúdo com facilidade.
 uuid: afcbf82f-3a75-4491-9172-706188db65bb
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,10 +10,12 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
 docset: aem65
+feature: Fragmentos de conteúdo
+role: Profissional de negócios, Administrador
 translation-type: tm+mt
-source-git-commit: 08bf8f42898446f2e5cca1fde55ceb84710a1e30
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '544'
 ht-degree: 4%
 
 ---
@@ -21,25 +23,25 @@ ht-degree: 4%
 
 # Markdown{#markdown}
 
-Quando você está [criando](content-fragments-variations.md#authoring-your-content), o editor de fragmentos de conteúdo usa a sintaxe *markdown* para permitir que você grave conteúdo facilmente:
+Quando você está [criando](content-fragments-variations.md#authoring-your-content), o editor de fragmento de conteúdo usa a sintaxe *markdown* para permitir que você grave facilmente o conteúdo:
 
 ![editor de marcação](/help/assets/content-fragments/assets/cfm-6420-08.png)
 
 Você pode definir:
 
-* [Notação do cabeçalho](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
-* [Quebras de parágrafos e linhas](/help/assets/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)
+* [Notação de cabeçalho](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
+* [Parágrafos e quebras de linha](/help/assets/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)
 * [Links](/help/assets/content-fragments/content-fragments-markdown.md#links)
 * [Imagens](/help/assets/content-fragments/content-fragments-markdown.md#images)
 * [Bloquear aspas](/help/assets/content-fragments/content-fragments-markdown.md#block-quotes)
 * [Listas](/help/assets/content-fragments/content-fragments-markdown.md#lists)
 * [Ênfase](/help/assets/content-fragments/content-fragments-markdown.md#emphasis)
 * [Blocos de código](/help/assets/content-fragments/content-fragments-markdown.md#code-blocks)
-* [A barra invertida escapa](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
+* [Escovas da barra invertida](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
 
-## Notação do cabeçalho {#heading-notation}
+## Notação de cabeçalho {#heading-notation}
 
-Para criar um cabeçalho, insira uma tag hash (#) na frente do cabeçalho. Uma hash tag (#) é usada para H1, duas hash tags (##) para H2 etc. Você pode usar até 6 hashtags. Por exemplo:
+Para criar um cabeçalho, coloque uma hash tag (#) na frente do cabeçalho. Uma hash tag (#) é usada para H1, duas hash tags (##) para H2 etc. Você pode usar até 6 hashtags. Por exemplo:
 
     `## This is an H2`
 
@@ -57,15 +59,15 @@ Como opção, você pode criar um H1 ao sublinhar o texto em sinais iguais e cri
 
     `-------------`
 
-## Quebras de parágrafos e linhas {#paragraphs-and-line-breaks}
+## Parágrafos e quebras de linha {#paragraphs-and-line-breaks}
 
-Um parágrafo é simplesmente uma ou mais linhas consecutivas de texto, separadas por uma ou mais linhas em branco. Uma linha em branco é uma linha que só contém espaços ou guias. Os parágrafos normais não devem ser recuados com espaços ou tabulações.
+Um parágrafo é simplesmente uma ou mais linhas consecutivas de texto, separadas por uma ou mais linhas em branco. Uma linha em branco é uma linha que contém apenas espaços ou guias. Os parágrafos normais não devem ser recuados com espaços ou tabulações.
 
-Uma quebra de linha é criada terminando uma linha com dois ou mais espaços e depois um retorno.
+Uma quebra de linha é criada ao terminar uma linha com dois ou mais espaços e depois um retorno.
 
 ## Links {#links}
 
-Você pode criar links em linha e de referência.
+Você pode criar links integrados e de referência.
 
 Em ambos os estilos, o texto do link é delimitado por colchetes `[]`.
 
@@ -89,7 +91,7 @@ Um link de referência tem a seguinte sintaxe:
 
 ## Imagens {#images}
 
-A sintaxe das imagens é semelhante aos links. É possível criar imagens em linha e referenciadas.
+A sintaxe das imagens é semelhante aos links. Você pode criar imagens embutidas e referenciadas.
 
 Por exemplo, uma imagem em linha tem a seguinte sintaxe:
 
@@ -100,20 +102,20 @@ Por exemplo, uma imagem em linha tem a seguinte sintaxe:
 A sintaxe inclui:
 
 * Um ponto de exclamação: !;
-* seguido de um conjunto de colchetes, que contém o texto alternativo do atributo da imagem;
-* seguido por um conjunto de parênteses, contendo o URL ou o caminho para a imagem, e um atributo de título opcional incluído entre duplos ou aspas simples.
+* seguido por um conjunto de colchetes, contendo o texto alternativo do atributo para a imagem;
+* seguido por um conjunto de parênteses, contendo o URL ou o caminho para a imagem, e um atributo de título opcional entre aspas duplas ou simples.
 
-Uma imagem de estilo de referência tem a seguinte sintaxe:
+Uma imagem do estilo de referência tem a seguinte sintaxe:
 
     `![Alt text][id]`
 
-Onde &quot;id&quot; é o nome de uma referência de imagem definida. As referências de imagem são definidas usando sintaxe idêntica a referências de link:
+Onde &quot;id&quot; é o nome de uma referência de imagem definida. As referências de imagem são definidas usando a sintaxe idêntica às referências de link:
 
     `[id]: url/to/image "Optional title attribute"`
 
 ## Bloquear aspas {#block-quotes}
 
-É possível citar o texto adicionando o símbolo > antes do texto. Por exemplo:
+É possível fazer aspas de texto adicionando o símbolo > antes do texto. Por exemplo:
 
     `>This is block quotes`
 
@@ -157,7 +159,7 @@ Para criar uma lista ordenada, adicione os números, seguidos de um ponto, antes
 
 É possível adicionar um estilo em itálico ou negrito ao texto.
 
-Para adicionar itálico, faça o seguinte:
+Para adicionar itálico da seguinte maneira:
 
     `*single asterisks*`
 
@@ -173,7 +175,7 @@ Você pode negrito como segue:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Para indicar uma extensão de código, vincule-o com aspas invertidas (`). Ao contrário de um bloco de código pré-formatado, uma extensão de código indica o código dentro de um parágrafo normal.
+Para indicar uma extensão de código, vincule-a com aspas de backtick (`). Ao contrário de um bloco de código pré-formatado, uma extensão de código indica código dentro de um parágrafo normal.
 
 Por exemplo:
 
@@ -181,19 +183,19 @@ Por exemplo:
 
 ## Blocos de código {#code-blocks}
 
-Blocos de código geralmente são usados para ilustrar o código-fonte. É possível criar blocos de código recuando o código usando uma guia ou no mínimo 4 espaços. Por exemplo:
+Os blocos de código geralmente são usados para ilustrar o código-fonte. Você pode criar blocos de código recuando o código usando uma guia ou um mínimo de 4 espaços. Por exemplo:
 
     `This is a normal paragraph.`
 
         `This is a code block.`
 
-## A barra invertida escapa {#backslash-escapes}
+## A barra invertida evita {#backslash-escapes}
 
-Você pode usar escape de barra invertida para gerar caracteres literais que têm um significado especial na formatação da sintaxe. Por exemplo, se você quiser circundar uma palavra com asteriscos literais (em vez de uma tag HTML &lt;em>), você pode usar barras invertidas antes dos asteriscos, como em:
+Você pode usar escape de barra invertida para gerar caracteres literais que têm significado especial na formatação da sintaxe. Por exemplo, se você deseja rodar uma palavra com asteriscos literais (em vez de uma tag HTML &lt;em> ), é possível usar barras invertidas antes dos asteriscos, desta forma:
 
     `\\*literal asterisks\\*`
 
-As escapadas de barra invertida estão disponíveis para os seguintes caracteres:
+Os escape de barra invertida estão disponíveis para os seguintes caracteres:
 
     ` \ backslash`
 
