@@ -3,11 +3,12 @@ title: Ativos relacionados
 description: Saiba como relacionar ativos digitais que compartilham alguns atributos comuns. Além disso, crie relacionamentos derivados da origem entre ativos digitais.
 contentOwner: AG
 role: Profissional
+feature: Colaboração,Gerenciamento de ativos
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 0%
+source-wordcount: '637'
+ht-degree: 1%
 
 ---
 
