@@ -10,10 +10,10 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Formulários adaptáveis
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 7a3f54d90769708344e6751756b2a12ac6c962d7
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 0%
+source-wordcount: '2078'
+ht-degree: 1%
 
 ---
 
@@ -163,6 +163,24 @@ Os seguintes atalhos de teclado estão disponíveis no AEM Forms.
 | Mover para o painel anterior | Alt+Seta para a esquerda |
 | Redefinir os dados preenchidos em um formulário | Alt+R |
 | Enviar um formulário | Alt+S |
+
+Além disso, há várias teclas de atalho de teclado disponíveis para o componente **[!UICONTROL Seletor de data]** no Adaptive Forms. Para ativar as teclas de atalho, toque no componente **[!UICONTROL Seletor de data]** e toque em ![Configurar](assets/configure-icon.svg) para abrir as propriedades. Na seção **[!UICONTROL Padrões]**, selecione um padrão de exibição usando as listas suspensas **[!UICONTROL Tipo]** e **[!UICONTROL Padrão]**. Salve as propriedades para ativar o uso de teclas de atalho para o componente **[!UICONTROL Seletor de data]**.
+
+As seguintes teclas de atalho do teclado estão disponíveis para o componente Seletor de data no Adaptive Forms:
+
+| Ação | Atalho de teclado |
+|---|---|
+| <ul><li>Exibir as opções do componente Seletor de datas quando o foco da guia realçar o ícone do calendário</li><li>Executar o evento de clique quando o foco da guia realçar uma opção</li> | Espaço ou Enter |
+| Ocultar as opções do componente Seletor de datas | Esc |
+| <ul><li>Mova o cursor para frente por meio das opções disponíveis no componente Seletor de datas.</li><li>Definir foco da guia no ícone de calendário quando o campo de entrada de data estiver ativo</li> | Guia |
+| Mova o cursor para trás através das opções disponíveis no componente Seletor de datas | Shift+Tab |
+| <ul><li>Exibir as opções do componente Seletor de data quando o foco da guia realçar o campo de entrada de data</li><li>Mova o cursor para baixo no calendário disponível no componente Seletor de datas</li> | Seta para baixo |
+| Mova o cursor para cima no calendário, disponível no componente Seletor de datas | Seta para cima |
+| Move o cursor para trás no calendário, disponível no componente Seletor de datas | Seta para a esquerda |
+| Move o cursor para frente no calendário disponível no componente Seletor de datas | Seta para a direita |
+| Executar a ação da legenda disponível entre as setas de navegação para a direita e para a esquerda no calendário | Shift+Seta para cima |
+| Execute a ação para o ícone de seta de navegação direita ![seta para a direita](assets/right-navigation-icon.svg) disponível no calendário | Shift+Seta para a esquerda |
+| Execute a ação para o ícone de seta de navegação à esquerda ![seta para a esquerda](assets/left-navigation-icon.svg) disponível no calendário | Shift+Seta para a direita |
 
 ## Use a ferramenta de acessibilidade para encontrar problemas de acessibilidade restantes
 
