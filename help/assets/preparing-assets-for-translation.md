@@ -3,10 +3,11 @@ title: Preparar ativos para tradução
 description: Crie pastas raiz de idioma para preparar ativos para tradução para suportar ativos multilíngues.
 contentOwner: AG
 role: Profissional de negócios, Administrador
+feature: Projetos
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '444'
 ht-degree: 1%
 
 ---
