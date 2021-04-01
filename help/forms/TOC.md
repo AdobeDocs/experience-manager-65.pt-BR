@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience manager
 sub-product: formulários
 solution: Experience Manager, Experience Manager Forms
@@ -10,7 +10,7 @@ user-guide-description: Crie, gerencie, publique e atualize formulários digitai
 feature-set: Experience Manager Forms
 role: Profissional
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
 workflow-type: tm+mt
 source-wordcount: '3720'
 ht-degree: 4%
@@ -49,7 +49,7 @@ ht-degree: 4%
       + [Configurar e configurar o site de referência do We.Gov e do We.Finance](/help/forms/using/forms-install-configure-gov-reference-site.md)
       + [Apresentação do site de referência We.Gov e We.Finance](/help/forms/using/forms-gov-reference-site-user-demo.md)
       + [Apresentação do site de referência de recrutamento de funcionários](/help/forms/using/employee-recruitment-reference-site.md)
-      + [Site de referência da renovação do seguro automático We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
+      + [Site de referência de renovação do seguro automático We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
       + [Apresentação do site de referência do We.Gov FOIA](/help/forms/using/gov-reference-site-foia-walkthrough.md)
       + [Referência de fragmentos de formulário adaptáveis](using/reference-adaptive-form-fragments.md)
       + [Temas de Referência](using/reference-themes.md)
