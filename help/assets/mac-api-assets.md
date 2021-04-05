@@ -4,14 +4,14 @@ description: Crie, leia, atualize, exclua, gerencie ativos digitais usando a API
 contentOwner: AG
 role: Desenvolvedor
 feature: APIs,API HTTP de ativos,Ferramentas do desenvolvedor
+exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1730'
 ht-degree: 1%
 
 ---
-
 
 # [!DNL Assets] API HTTP  {#assets-http-api}
 
@@ -314,4 +314,4 @@ Exclui um recurso (-tree) no caminho fornecido.
 
 * [A API HTTP atualiza as ](#update-asset-metadata) propriedades dos metadados no  `jcr` namespace. No entanto, a interface do usuário do Experience Manager atualiza as propriedades dos metadados no namespace `dc`.
 
-* A API de ativo não retorna os metadados completos. Na API, os namespaces são codificados e esses apenas são retornados. Se precisar de metadados inteiros, verifique o caminho do ativo `/jcr_content/metadata.json`.
+* A API HTTP de ativos não retorna os metadados completos. Os namespaces são codificados e somente esses namespaces são retornados. Para obter metadados completos, consulte o caminho do ativo `/jcr_content/metadata.json`.
