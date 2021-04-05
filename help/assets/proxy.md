@@ -3,14 +3,14 @@ title: '[!DNL Assets] desenvolvimento de proxy'
 description: Um proxy é um proxy [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] , operações suportadas, componentes de proxy e como desenvolver um trabalhador proxy personalizado.
 contentOwner: AG
 role: Administrador, Arquiteto
+exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Assets] desenvolvimento de proxy  {#assets-proxy-development}
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Um proxy é uma instância de Experience Manager específica (e às vezes separada) que usa trabalhadores proxy como processadores responsáveis por manipular um trabalho e criar um resultado. Um trabalhador proxy pode ser usado para uma grande variedade de tarefas. No caso de um proxy [!DNL Assets], ele pode ser usado para carregar ativos para renderização no Assets. Por exemplo, o [trabalhador proxy IDS](indesign.md) usa um Servidor [!DNL Adobe InDesign] para processar arquivos para uso no Assets.
 
-Quando o proxy é uma instância [!DNL Experience Manager] separada, isso ajuda a reduzir a carga na(s) instância(s) de criação do Experience Manager. Por padrão, [!DNL Assets] executa as tarefas de processamento de ativos na mesma JVM (externalizada via Proxy) para reduzir a carga na instância de criação do Experience Manager.
+Quando o proxy é uma instância [!DNL Experience Manager] separada, isso ajuda a reduzir a carga na(s) instância(s) de criação [!DNL Experience Manager] . Por padrão, [!DNL Assets] executa as tarefas de processamento de ativos na mesma JVM (externalizada via Proxy) para reduzir a carga na instância de criação [!DNL Experience Manager].
 
 ## Proxy (Acesso HTTP) {#proxy-http-access}
 
@@ -104,7 +104,7 @@ Este é um exemplo de uso da API:
  proxyJobService.removeJob(jobId);
 ```
 
-### Configurações do Cloud Service {#cloud-service-configurations}
+### Configurações de Cloud Service {#cloud-service-configurations}
 
 >[!NOTE]
 >
