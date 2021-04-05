@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: Gerador de PDF
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 3bb12f6323398971ec315f49611a39977bd548a2
 workflow-type: tm+mt
-source-wordcount: '6148'
+source-wordcount: '6171'
 ht-degree: 2%
 
 ---
@@ -320,7 +320,7 @@ A tabela a seguir mostra tipos comuns de impressoras e sua resolução medida em
 
 >[!NOTE]
 >
->A reamostragem de imagens monocromáticas pode ter resultados de exibição inesperados, como sem exibição de imagem. Se isso acontecer, desative a reamostragem e converta o arquivo novamente. Esse problema provavelmente ocorrerá com a subamostragem e, provavelmente, com a redução da amostragem bicúbica.
+>A reamostragem de imagens monocromáticas pode ter resultados de exibição inesperados, como sem exibição de imagem. Se isso acontecer, desative a reamostragem e converta o arquivo novamente. Esse problema provavelmente ocorrerá com a subamostragem e, menos provavelmente, com a desamostragem bicúbica.
 
 <table>
  <tbody>
@@ -515,6 +515,8 @@ Essas opções determinam como os arquivos do Microsoft Word são convertidos. P
 **[!UICONTROL Habilitar Marcação]** avançada: Adiciona tags avançadas para acessibilidade aprimorada.
 
 **[!UICONTROL Converter todos os estilos em marcadores]**: Converte todos os estilos no documento do Word em marcadores no documento PDF.
+
+**[!UICONTROL Converter estilos especificados em marcadores]**: Converte os estilos definidos no campo  **[!UICONTROL Estilos com]** níveis em marcadores no documento PDF.
 
 **[!UICONTROL Estilos Com Níveis]**: Especifica quais estilos no documento do Word são convertidos em marcadores no documento PDF. Especifica também o nível dos marcadores. Para usar esse recurso, desmarque a opção **[!UICONTROL Converter todos os estilos em marcadores]** e especifique os nomes de estilo no seguinte formato:
 
