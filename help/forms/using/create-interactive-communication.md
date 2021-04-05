@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Comunicação interativa
+exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 92092e1c050c9264c19e3cd9da9b240607af7bab
 workflow-type: tm+mt
-source-wordcount: '6122'
+source-wordcount: '6212'
 ht-degree: 1%
 
 ---
-
 
 # Criar uma comunicação interativa{#create-an-interactive-communication}
 
@@ -473,7 +473,7 @@ Execute as etapas a seguir para adicionar o canal da Web a uma Comunicação int
 
    Da mesma forma, você pode tocar na caixa de seleção **Web** na guia **Channels** para excluir o canal Web da Comunicação Interativa.
 
-## Componente Adicionar botão ao canal da Web {#add-button-component-to-the-web-channel}
+## Adicione o componente Botão ao canal da Web {#add-button-component-to-the-web-channel}
 
 É possível adicionar um botão como um componente ao canal da Web da Comunicação interativa. Defina regras usando o [editor de regras](../../forms/using/rule-editor.md) para poder navegar para outras Comunicações interativas, formulários adaptáveis, outros ativos, como imagens ou fragmentos de documento, ou um URL externo ao tocar no botão.
 
@@ -611,3 +611,23 @@ A interface de criação do canal da Web facilita o agrupamento dos componentes 
 
    ![content_tree_grouping](assets/content_tree_grouping.png)
 
+## Formato de saída para Canal de impressão {#output-format-print-channel}
+
+Use a API PrintChannel para definir o formato de saída para o canal Print de uma Comunicação interativa. Se você não definir um formato de saída, o AEM Forms gera a saída no formato PDF.
+
+```javascript
+//options for rendering print channel of a multi-channel document
+PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
+PrintDocument printDocument = printChannel.render(renderOptions);
+```
+
+Para gerar a saída em qualquer outro formato, especifique o tipo de formato de saída. Consulte [PrintChannel API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html) para obter a lista de tipos de formatos de saída suportados.
+
+Por exemplo, você pode usar a seguinte amostra para definir PCL como formato de saída para uma Comunicação interativa:
+
+```javascript
+//options for rendering print channel of a multi-channel document
+PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
+renderOptions.setRenderFormat(PrintConfig.HP_PCL_5e);
+PrintDocument printDocument = printChannel.render(renderOptions);
+```
