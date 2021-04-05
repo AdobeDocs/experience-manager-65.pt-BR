@@ -4,14 +4,14 @@ description: Saiba mais sobre os manipuladores de mídia e como usar fluxos de t
 contentOwner: AG
 role: Profissional
 feature: Fluxo De Trabalho,Representações
+exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '2165'
+source-wordcount: '2168'
 ht-degree: 4%
 
 ---
-
 
 # Processar ativos usando manipuladores de mídia e workflows {#processing-assets-using-media-handlers-and-workflows}
 
@@ -46,6 +46,8 @@ Os seguintes manipuladores de mídia estão disponíveis em [!DNL Assets] e lida
 | [!UICONTROL OpenOfficeHandler] | com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
 | [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
 | [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | fallback no caso de nenhum outro manipulador ter sido encontrado para extrair dados de um ativo |
+
+{style=&quot;table-layout:auto&quot;}
 
 Todos os manipuladores executam as seguintes tarefas:
 
