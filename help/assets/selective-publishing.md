@@ -6,15 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Profissional de negócios, Administrador
+role: Business Practitioner, Administrator
+exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
+feature: Publicação
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2935'
 ht-degree: 4%
 
 ---
-
 
 # Configuração da publicação seletiva no nível da pasta no Dynamic Media {#selective-publish-configure-folder}
 
@@ -264,4 +265,3 @@ Quando você usa **[!UICONTROL Exibição de lista]**, uma coluna adicional para
 Um ativo que não está sincronizado com o Dynamic Media, mas tem uma ação de publicação do Dynamic Media acionada nele, resulta na seguinte mensagem de erro e solução:
 
 ![Erro de publicação seletiva](/help/assets/assets-dm/selective-publish-error.png)
-
