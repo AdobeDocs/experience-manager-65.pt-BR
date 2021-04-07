@@ -5,15 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-role: Profissional de negócios, Administrador
+role: Business Practitioner, Administrator,Developer
+exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
+feature: Configuração,Conjuntos de Regras
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '765'
 ht-degree: 5%
 
 ---
-
 
 # Uso de conjuntos de regras para transformar URLs {#using-rulesets-to-transform-urls}
 
@@ -84,4 +85,3 @@ Consulte também [Usar a imagem &#39;asset&#39; em vez de &#39;is&#39; em um con
    As condições do conjunto de regras são aplicadas nas solicitações dos Servidores de Imagem Dynamic Media ao vivo.
 
    Se você fizer alterações no arquivo de conjunto de regras, as alterações serão aplicadas imediatamente quando você fizer upload novamente e publicar novamente o arquivo de conjunto de regras atualizado.
-
