@@ -1,8 +1,8 @@
 ---
-title: Mapeamento de grupos de usuários personalizados no AEM 6.5
-seo-title: Mapeamento de grupos de usuários personalizados no AEM 6.5
-description: Saiba como o Mapeamento personalizado de grupos de usuários funciona em AEM.
-seo-description: Saiba como o Mapeamento personalizado de grupos de usuários funciona em AEM.
+title: Mapeamento de grupo de usuários personalizado no AEM 6.5
+seo-title: Mapeamento de grupo de usuários personalizado no AEM 6.5
+description: Saiba como o Mapeamento de grupo de usuários personalizado funciona no AEM.
+seo-description: Saiba como o Mapeamento de grupo de usuários personalizado funciona no AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,54 +10,55 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
+exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
+feature: Segurança
 translation-type: tm+mt
-source-git-commit: c2937a1989c6cfe33cc3f56f89c307cb5fb8d272
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '505'
 ht-degree: 1%
 
 ---
 
+# Mapeamento de grupo de usuários personalizado no AEM 6.5 {#custom-user-group-mapping-in-aem}
 
-# Mapeamento personalizado de grupos de usuários no AEM 6.5 {#custom-user-group-mapping-in-aem}
-
-## Comparação do conteúdo JCR relacionado ao CUG {#comparison-of-jcr-content-related-to-cug}
+## Comparação do conteúdo do JCR relacionado ao CUG {#comparison-of-jcr-content-related-to-cug}
 
 <table>
  <tbody>
   <tr>
-   <td><strong>Versões anteriores AEM</strong></td>
+   <td><strong>Versões AEM mais antigas</strong></td>
    <td><strong>AEM 6.5</strong></td>
    <td><strong>Comentários</strong></td>
   </tr>
   <tr>
-   <td><p>Propriedade: cq:cugEnabled</p> <p>A declarar o tipo de nó: N/A, propriedade residual</p> </td>
-   <td><p>Autorização:</p> <p>Nó: rep:cugPolicy do tipo de nó rep:CugPolicy</p> <p>A declarar o tipo de nó: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Autenticação:</p> <p>Tipo de mistura: granite:AuthenticationRequired</p> </td>
-   <td><p>Para restringir o acesso de leitura, uma política de CUG dedicada é aplicada ao nó do público alvo.</p> <p>NOTA: As políticas só podem ser aplicadas nos caminhos suportados configurados.</p> <p>Os nós com o nome rep:cugPolicy e o tipo rep:CugPolicy são protegidos e não podem ser gravados usando chamadas regulares de API JCR; em vez disso, use o gerenciamento de controles de acesso JCR.</p> <p>Consulte <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">esta página</a> para obter mais informações.</p> <p>Para impor o requisito de autenticação em um nó, é suficiente adicionar o tipo de mixin granite:AuthenticationRequired.</p> <p>NOTA: Só respeitado abaixo dos caminhos suportados configurados.</p> </td>
+   <td><p>Propriedade: cq:cugEnabled</p> <p>Declarando tipo de nó: N/A, propriedade residual</p> </td>
+   <td><p>Autorização:</p> <p>Nó: rep:cugPolicy do tipo de nó rep:CugPolicy</p> <p>Declarando tipo de nó: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Autenticação:</p> <p>Tipo de mistura: granite:AuthenticationRequired</p> </td>
+   <td><p>Para restringir o acesso de leitura, uma política CUG dedicada é aplicada ao nó de destino.</p> <p>OBSERVAÇÃO: As políticas só podem ser aplicadas nos caminhos compatíveis configurados.</p> <p>Os nós com o nome rep:cugPolicy e tipo rep:CugPolicy são protegidos e não podem ser gravados usando chamadas de API JCR comuns; em vez disso, use o gerenciamento de controle de acesso JCR.</p> <p>Consulte <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">esta página</a> para obter mais informações.</p> <p>Para impor o requisito de autenticação em um nó, é suficiente adicionar o tipo mixin granite:AuthenticationRequired.</p> <p>OBSERVAÇÃO: Apenas respeitado abaixo dos caminhos compatíveis configurados.</p> </td>
   </tr>
   <tr>
-   <td><p>Propriedade: cq:cugPrincipals</p> <p>A declarar o tipo de nó: NA, propriedade residual</p> </td>
-   <td><p>Propriedade: rep:principalNames</p> <p>A declarar o tipo de nó: rep:CugPolicy</p> </td>
-   <td><p>A propriedade que contém os nomes dos principais que têm permissão para ler o conteúdo abaixo do CUG restrito está protegida e não pode ser gravada usando chamadas regulares de API JCR; em vez disso, use o gerenciamento de controles de acesso JCR.</p> <p>Consulte <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">esta página</a> para obter mais detalhes sobre a implementação.</p> </td>
+   <td><p>Propriedade: cq:cugPrincipals</p> <p>Declarando tipo de nó: NA, propriedade residual</p> </td>
+   <td><p>Propriedade: rep:principalNames</p> <p>Declarando tipo de nó: rep:CugPolicy</p> </td>
+   <td><p>A propriedade que contém os nomes dos principais que têm permissão para ler o conteúdo abaixo do CUG restrito está protegida e não pode ser gravada usando chamadas de API JCR regulares; em vez disso, use o gerenciamento de controle de acesso JCR.</p> <p>Consulte <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">esta página</a> para obter mais detalhes sobre a implementação.</p> </td>
   </tr>
   <tr>
-   <td><p>Propriedade: cq:cugLoginPage</p> <p>A declarar o tipo de nó: NA, propriedade residual</p> </td>
-   <td><p>Propriedade: granite:loginPath (opcional)</p> <p>A declarar o tipo de nó: granite:AuthenticationRequired</p> </td>
-   <td><p>Um nó JCR que tenha o tipo de combinação granite:AuthenticationRequired definido pode, opcionalmente, definir um caminho de logon alternativo.</p> <p>NOTA: Só respeitado abaixo dos caminhos suportados configurados.</p> </td>
+   <td><p>Propriedade: cq:cugLoginPage</p> <p>Declarando tipo de nó: NA, propriedade residual</p> </td>
+   <td><p>Propriedade: granite:loginPath (opcional)</p> <p>Declarando tipo de nó: granite:AuthenticationRequired</p> </td>
+   <td><p>Um nó JCR que tenha o tipo mixin granite:AuthenticationRequired definido, pode definir opcionalmente um caminho de logon alternativo.</p> <p>OBSERVAÇÃO: Apenas respeitado abaixo dos caminhos compatíveis configurados.</p> </td>
   </tr>
   <tr>
-   <td><p>Propriedade: cq:cugRealm</p> <p>A declarar o tipo de nó: NA, propriedade residual</p> </td>
+   <td><p>Propriedade: cq:cugRealm</p> <p>Declarando tipo de nó: NA, propriedade residual</p> </td>
    <td>ND</td>
    <td>Não há mais suporte para a nova implementação.</td>
   </tr>
  </tbody>
 </table>
 
-## Comparação dos serviços OSGi {#comparison-of-osgi-services}
+## Comparação de serviços OSGi {#comparison-of-osgi-services}
 
-**Versões anteriores AEM**
+**Versões AEM mais antigas**
 
-Rótulo: Suporte a Adobe Granite Closed User Group (CUG)
+Rótulo: Suporte para CUG (Adobe Granite Closed User Group)
 
 Nome: com.day.cq.auth.impl.CugSupportImpl
 
@@ -65,40 +66,40 @@ Nome: com.day.cq.auth.impl.CugSupportImpl
 
 * Rótulo: Configuração do Apache Jackrabbit Oak CUG
 
-   Nome: org.apache.Jackrabbit.oak.spi.security.authorized.cug.impl.CugConfiguration
+   Nome: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration
 
-   ConfigurationPolicy = NECESSÁRIO
+   ConfigurationPolicy = OBRIGATÓRIO
 
-* Rótulo: Apache Jackrabbit Oak CUG Excluir Lista
+* Rótulo: Lista de exclusões do Apache Jackrabbit Oak CUG
 
-   Nome: org.apache.Jackrabbit.oak.spi.security.license.impl.CugExcludeImpl
+   Nome: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl
 
-   ConfigurationPolicy = NECESSÁRIO
+   ConfigurationPolicy = OBRIGATÓRIO
 
 * Nome: com.adobe.granite.auth.requirements.impl.RequirementsService
 * Rótulo: Requisito de autenticação do Adobe Granite e manipulador de caminho de logon
 
    Nome: com.adobe.granite.auth.requirements.impl.DefaultRequirementsHandler
 
-   ConfigurationPolicy = NECESSÁRIO
+   ConfigurationPolicy = OBRIGATÓRIO
 
 **Comentários**
 
-* Configuração da autorização do CUG e habilitar/desabilitar a avaliação.
-Serviço para configurar a lista de exclusão de principais que não devem ser afetados pela autorização CUG.
+* Configuração da autorização do CUG e ativação/desativação da avaliação.
+Serviço para configurar a lista de exclusão de entidades principais que não devem ser afetadas pela autorização do CUG.
 
    >[!NOTE]
    > 
-   >Se `CugExcludeImpl` não estiver configurado, `CugConfiguration` voltará ao padrão.
+   >Se `CugExcludeImpl` não estiver configurado, o `CugConfiguration` voltará ao padrão.
 
-   É possível conectar uma implementação CugExclude personalizada em caso de necessidades especiais.
+   É possível plug-in de uma implementação CugExclude personalizada em caso de necessidades especiais.
 
-* Componente OSGi implementando LoginPathProvider que expõe um caminho de logon correspondente ao LoginSeletorHandler. Ela tem uma referência obrigatória a um RequirementsHandler, que é usado para registrar o observador que escuta as alterações nos requisitos de autenticação armazenados no conteúdo por meio do tipo de mixin granite:AuthenticationRequired.
-* Componente OSGi implementando o RequirementsHandler que notifica o SlingAuthenticator sobre alterações nos requisitos de autorização.
+* Componente OSGi implementando LoginPathProvider que expõe um caminho de logon correspondente para LoginSelectorHandler. Ela tem uma referência obrigatória a um RequerHandler, que é usada para registrar o observador que escuta os requisitos de autenticação alterados armazenados no conteúdo por meio do tipo mixin granite:AuthenticationRequired .
+* Componente OSGi implementando o RequirementsHandler que notifica o SlingAuthenticator sobre alterações a requisitos autorais.
 
-   Como a política de configuração para este componente é EXIGIR, ela só será ativada se um conjunto de caminhos suportados for especificado.
+   Como a política de configuração para este componente é REQUIRE, ela só será ativada se um conjunto de caminhos suportados for especificado.
 
-   Habilitar o serviço iniciará o RequirementsService.
+   Habilitar o serviço iniciará o RequerimentoService.
 
 <!-- nested tables not supported - text above is the table>
 <table>
@@ -156,4 +157,3 @@ Serviço para configurar a lista de exclusão de principais que não devem ser a
  </tbody>
 </table>
 -->
-
