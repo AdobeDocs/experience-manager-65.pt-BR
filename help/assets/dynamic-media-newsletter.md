@@ -4,15 +4,16 @@ description: 'O informativo do Dynamic Media disponibilizado pelo Experience Lea
 keywords: Dynamic Media, boletim informativo, atualizações de produtos, dicas e truques, eventos, sucesso do cliente, blog, blogs, imagens, vídeos, recursos, recursos
 contentOwner: Rick Brough
 solution: Dynamic Media Classic, Experience Manager
-role: Profissional de negócios, Administrador
+role: Business Practitioner, Administrator
+exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
+feature: Colaboração, Dynamic Media Classic
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1172'
 ht-degree: 0%
 
 ---
-
 
 # ![Logotipo do informativo do Dynamic Media](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
