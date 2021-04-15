@@ -2,16 +2,16 @@
 title: Integração com as práticas recomendadas do Adobe Creative Cloud
 description: Práticas recomendadas para integrar [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] a fim de simplificar os fluxos de trabalho de transferência de ativos e alcançar alta velocidade de conteúdo.
 contentOwner: AG
-role: Profissional de negócios, Administrador
-feature: Colaboração, Adobe Asset Link, Aplicativo de desktop Experience Manager
+role: Business Practitioner, Administrator
+feature: Colaboração, Adobe Asset Link, Aplicativo de desktop
+exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: c4cfb709162ca8f8f6e8508516c39542347c6bc4
 workflow-type: tm+mt
-source-wordcount: '3259'
+source-wordcount: '3254'
 ht-degree: 16%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] e práticas recomendadas  [!DNL Creative Cloud] de integração  {#aem-and-creative-cloud-integration-best-practices}
 
