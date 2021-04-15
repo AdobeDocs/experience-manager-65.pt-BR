@@ -3,14 +3,14 @@ title: '[!DNL Experience Manager] Notas de versão do service pack 6.5'
 description: Notas de versão específicas do  [!DNL Adobe Experience Manager] 6.5 service pack 8
 docset: aem65
 mini-toc-levels: 1
+exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 translation-type: tm+mt
-source-git-commit: fb1423b7ae110b8a3cf8e0e389394e9266157a9f
+source-git-commit: e2eb007eb7660004f98b4c26aba00a6a6e2a2f1a
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3418'
 ht-degree: 4%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] Notas de versão do service pack 6.5  {#aem-service-pack-release-notes}
 
@@ -154,9 +154,11 @@ Esta é a lista de correções fornecidas na versão [!DNL Experience Manager] 6
 
 * Ao adicionar uma estrutura de página a um grupo da comunidade, o título do [!UICONTROL Group] na navegação estrutural é alterado para o título da primeira [!UICONTROL Page] (NPR-35803).
 * Ao contrário dos moderadores, um membro padrão da comunidade não pode acessar e editar nenhuma publicação de rascunho (NPR-35339).
-* Controle de acesso quebrado e negação de serviço com DSRPReindexServlet, o que faz com que o site das comunidades fique inativo até que a indexação seja concluída (NPR-35591).
+* Controle de acesso quebrado e negação de serviço com `DSRPReindexServlet`, o que faz com que o site de comunidades fique inativo até que a indexação seja concluída (NPR-35591).
 * Remover [!UICONTROL Todos os Usuários] do campo [!UICONTROL Administradores] não os remove realmente do back-end (NPR-35592, NPR-35611).
 * O componente [!UICONTROL Compor mensagem] não retorna nenhum resultado quando o texto inserido é uma correspondência parcial (NPR-35666).
+
+* Ao tentar adicionar tags a um novo blog selecionando **Adicionar tags**, é notado algum impacto no desempenho. Para melhorar o desempenho, instale o hotfix [cqTagLucene-0.0.1.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip) que resolve o problema de sugestão de tag. Você pode baixar o hotfix de [!DNL Software Distribution].
 
 ### [!DNL Brand Portal] {#brandportal-6580}
 
