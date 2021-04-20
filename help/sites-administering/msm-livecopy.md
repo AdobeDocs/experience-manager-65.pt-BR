@@ -1,7 +1,7 @@
 ---
 title: Criação e sincronização de cópias em tempo real
 description: Saiba como criar e sincronizar Live Copies.
-feature: Gerenciamento de vários sites
+feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 translation-type: tm+mt
 source-git-commit: 05dc73448d6902ccdbc92782fff39ef1a6339056

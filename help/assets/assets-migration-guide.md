@@ -2,8 +2,8 @@
 title: Migrar ativos em massa
 description: Descreve como trazer ativos para [!DNL Adobe Experience Manager], aplicar metadados, gerar representações e ativá-los para publicar instâncias.
 contentOwner: AG
-role: Arquiteto, Administrador
-feature: Migração,Representações,Gerenciamento de Ativos
+role: Architect, Administrator
+feature: Migration,Renditions,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

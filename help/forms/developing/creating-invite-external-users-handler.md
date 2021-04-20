@@ -1,7 +1,7 @@
 ---
 title: Criando um Manipulador de Usuários Externos de Convite
 description: Criando um Manipulador de Usuários Externos de Convite
-role: Desenvolvedor
+role: Developer
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

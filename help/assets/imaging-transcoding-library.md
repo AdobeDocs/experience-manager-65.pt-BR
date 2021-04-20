@@ -2,8 +2,8 @@
 title: Biblioteca de transcodificação de imagens
 description: Saiba como configurar e usar a Biblioteca de transcodificação de imagens Adobe Imaging, uma solução que pode executar funções essenciais de manipulação de imagens, incluindo codificação, transcodificação, redefinição de imagens e redimensionamento de imagens.
 contentOwner: AG
-role: Administrador
-feature: Representações,Ferramentas do desenvolvedor,Processamento de ativos
+role: Administrator
+feature: Renditions,Developer Tools,Asset Processing
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

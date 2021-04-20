@@ -2,8 +2,8 @@
 title: Ativos multilíngues e tradução de ativos
 description: Saiba como automatizar fluxos de trabalho para traduzir ativos, incluindo binários, metadados e tags em vários idiomas.
 contentOwner: AG
-feature: Gerenciamento de ativos
-role: Administrador
+feature: Asset Management
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

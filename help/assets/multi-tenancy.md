@@ -2,8 +2,8 @@
 title: Multilocação para coleções, trechos e modelos de trecho
 description: Saiba como o recurso de multilocação permite segregar o conteúdo no repositório CRX com base na organização do cliente para impedir o acesso não autorizado.
 contentOwner: AG
-role: Arquiteto, Administrador, Líder
-feature: Coleções
+role: Architect, Administrator, Leader
+feature: Collections
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

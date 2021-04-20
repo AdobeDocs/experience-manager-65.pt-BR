@@ -2,8 +2,8 @@
 title: Pastas privadas para compartilhar ativos
 description: Saiba como criar uma pasta privada no  [!DNL Adobe Experience Manager Assets] e compartilhá-la com outros usuários e atribuir vários privilégios a eles.
 contentOwner: AG
-role: Profissional
-feature: Colaboração
+role: Business Practitioner
+feature: Collaboration
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: '[!DNL Assets] Experiência da página inicial'
 description: Personalize a [!DNL Experience Manager Assets] Página inicial para obter uma experiência avançada de tela de boas-vindas, incluindo um instantâneo das atividades recentes em torno dos ativos.
 contentOwner: AG
-feature: Ferramentas de desenvolvedor, Gerenciamento de ativos
-role: Administrador, profissional
+feature: Developer Tools, Asset Management
+role: Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

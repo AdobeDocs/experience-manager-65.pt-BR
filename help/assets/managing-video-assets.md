@@ -2,8 +2,8 @@
 title: Gerenciar ativos de vídeo
 description: Carregue, visualize, anote e publique ativos de vídeo em [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Profissional
-feature: Gerenciamento de ativos
+role: Business Practitioner
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

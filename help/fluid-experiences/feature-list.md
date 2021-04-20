@@ -2,7 +2,7 @@
 title: Lista de recursos de experiências fluídas do AEM
 description: Lista de recursos de experiências fluídas
 index: n
-feature: 'Criação  '
+feature: Authoring
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

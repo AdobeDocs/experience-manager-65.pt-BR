@@ -3,8 +3,8 @@ title: Pré-visualização de ativos 3D
 description: Saiba como visualizar ativos 3D
 contentOwner: Rick Brough
 docset: aem65
-feature: Ativos 3D
-role: Profissional
+feature: 3D Assets
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Modelos de ativos
 description: Saiba mais sobre os modelos de Ativos no [!DNL Adobe Experience Manager Assets] e como usar os modelos de ativos para criar materiais de apoio de marketing.
 contentOwner: AG
-role: Profissional
-feature: Gerenciamento de ativos,Ferramentas do desenvolvedor
+role: Business Practitioner
+feature: Asset Management,Developer Tools
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

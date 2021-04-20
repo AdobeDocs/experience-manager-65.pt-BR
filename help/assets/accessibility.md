@@ -2,7 +2,7 @@
 title: Recursos e interfaces acessíveis do  [!DNL Experience Manager Assets]
 description: Saiba como os recursos de acessibilidade em [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] ajudam usuários portadores de deficiência.
 contentOwner: AG
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: Business Practitioner, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 translation-type: tm+mt

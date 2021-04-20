@@ -2,8 +2,8 @@
 title: Processar ativos usando fluxos de trabalho
 description: Processamento de ativos para converter formatos, criar representações, gerenciar ativos, validar ativos e executar fluxos de trabalho.
 contentOwner: AG
-feature: Fluxo de trabalho, representações
-role: Profissional de negócios, Administrador
+feature: Workflow, Renditions
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

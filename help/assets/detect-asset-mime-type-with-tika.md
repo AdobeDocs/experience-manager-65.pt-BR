@@ -2,8 +2,8 @@
 title: Detectar o tipo MIME de ativos usando o Apache Tika
 description: Ative o Apache Tika para ajudar [!DNL Experience Manager Assets] detectar o tipo MIME de ativos do fluxo de conteúdo durante a operação de upload, em vez da extensão de arquivo.
 contentOwner: AG
-role: Administrador, Arquiteto
-feature: Metadados,Ferramentas do desenvolvedor,Gerenciamento de ativos
+role: Administrator, Architect
+feature: Metadata,Developer Tools,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

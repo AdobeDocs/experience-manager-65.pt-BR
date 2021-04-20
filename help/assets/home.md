@@ -2,8 +2,8 @@
 title: Guia do Assets
 description: Este guia aborda todas as tarefas do Experience Manager Assets, como criar, gerenciar, entregar e otimizar ativos digitais.
 user-guide-title: Guia do Assets
-feature: Gerenciamento de ativos
-role: Profissional de negócios, arquiteto, administrador
+feature: Asset Management
+role: Business Practitioner, Architect, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

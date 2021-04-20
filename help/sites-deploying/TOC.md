@@ -7,8 +7,8 @@ user-guide-title: Guia de implementação do AEM 6.5
 breadcrumb-title: Guia de implementação
 user-guide-description: Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.5, incluindo a implantação do Adobe Managed Services na nuvem.
 feature-set: Experience Manager Sites
-feature: Implantação
-role: Arquiteto
+feature: Deploying
+role: Architect
 translation-type: tm+mt
 source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
 workflow-type: tm+mt

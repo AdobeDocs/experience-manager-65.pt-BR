@@ -2,8 +2,8 @@
 title: Compartilhamento de pastas para  [!DNL Adobe Creative Cloud] práticas recomendadas
 description: Configure [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] para trocar pastas com usuários do Adobe Creative Cloud (CC).
 contentOwner: AG
-role: Profissional de negócios, Administrador
-feature: Colaboração
+role: Business Practitioner, Administrator
+feature: Collaboration
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

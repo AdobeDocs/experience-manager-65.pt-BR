@@ -1,7 +1,7 @@
 ---
 title: Usar o modo Layout para redimensionar componentes para formulários adaptáveis
 description: 'Definir a posição dos componentes usando a grade responsiva disponível no modo Layout '
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

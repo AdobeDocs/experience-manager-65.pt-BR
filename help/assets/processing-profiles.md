@@ -8,8 +8,8 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
-role: Profissional de negócios, Administrador
-feature: Fluxo De Trabalho,Gerenciamento De Ativos,Representações
+role: Business Practitioner, Administrator
+feature: Workflow,Asset Management,Renditions
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

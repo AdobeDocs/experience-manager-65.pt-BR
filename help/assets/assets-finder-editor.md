@@ -2,8 +2,8 @@
 title: Criar e configurar as páginas do Editor de ativos
 description: Saiba como criar páginas personalizadas do Editor de ativos e editar vários ativos simultaneamente.
 contentOwner: AG
-role: Profissional de negócios, Administrador
-feature: Ferramentas para desenvolvedores, Gerenciamento de ativos
+role: Business Practitioner, Administrator
+feature: Developer Tools,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

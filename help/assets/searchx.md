@@ -2,8 +2,8 @@
 title: Estender a funcionalidade de pesquisa.
 description: Estenda os recursos de pesquisa de [!DNL Adobe Experience Manager Assets] além dos padrões.
 contentOwner: AG
-role: Desenvolvedor
-feature: 'Pesquisar  '
+role: Developer
+feature: Search
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Fluxo de atividades de ativos digitais na exibição de linha do tempo
 description: Este artigo descreve como exibir registros de atividades para ativos na linha do tempo.
 contentOwner: AG
-feature: Gerenciamento de ativos
-role: Profissional de negócios, Administrador
+feature: Asset Management
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

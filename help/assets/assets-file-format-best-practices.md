@@ -2,8 +2,8 @@
 title: Práticas recomendadas para processar os formatos de arquivo compatíveis
 description: Práticas recomendadas para processar os vários tipos de arquivo com suporte usando [!DNL Experience Manager Assets].
 contentOwner: AG
-role: Administrador
-feature: Gerenciamento de ativos,Ferramentas do desenvolvedor
+role: Administrator
+feature: Asset Management,Developer Tools
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
