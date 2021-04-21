@@ -5,13 +5,12 @@ audience: end-user
 user-guide-title: Guia do usuário do AEM 6.5 Communities
 breadcrumb-title: Guia do Communities
 user-guide-description: Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais.
-feature-set: Experience Manager
 feature: Communities
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '502'
 ht-degree: 12%
 
 ---
@@ -53,7 +52,7 @@ ht-degree: 12%
    + [Pontuação e emblemas de comunidades](implementing-scoring.md)
    + [Gerenciar usuários e grupos de usuários](users.md)
    + [Console de grupos da comunidade](groups.md)
-   + [Logon do Social com Facebook e Twitter](social-login.md)
+   + [Logon no Social com Facebook e Twitter](social-login.md)
    + [SRP - Armazenamento de conteúdo da comunidade](working-with-srp.md)
    + [Console de sites das comunidades](sites-console.md)
    + [Consoles de gerenciamento de membros e grupos](members.md)
