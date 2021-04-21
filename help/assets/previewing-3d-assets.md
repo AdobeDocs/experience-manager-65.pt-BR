@@ -3,26 +3,26 @@ title: Pré-visualização de ativos 3D
 description: Saiba como visualizar ativos 3D
 contentOwner: Rick Brough
 docset: aem65
-feature: 3D Assets
+feature: Ativos 3D
 role: Business Practitioner
+exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+source-git-commit: 666bc5d943af371726708cb2ef157a9b3f07eb8e
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 16%
+source-wordcount: '553'
+ht-degree: 15%
 
 ---
 
+# Visualização de ativos 3D no Adobe Experience Manager{#previewing-3d-assets-aem}
 
-# Visualização de ativos 3D no AEM{#previewing-3d-assets-aem}
+O Experience Manager oferece suporte para upload, delivery e visualização interativa de ativos 3D como parte do processo de criação.
 
-O Adobe Experience Manager oferece suporte para upload, delivery e visualização interativa de ativos 3D como parte do processo de criação.
-
-O visualizador 3D interativo está disponível na página de detalhes do ativo no AEM. O visualizador inclui, entre outras coisas, uma coleção de controles de câmera interativos que permitem girar, aplicar zoom e deslocar o ativo 3D.
+O visualizador 3D interativo está disponível na página de detalhes do ativo no Experience Manager. O visualizador inclui, entre outras coisas, uma coleção de controles de câmera interativos que permitem girar, aplicar zoom e deslocar o ativo 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
-## Formatos compatíveis com a visualização 3D em AEM {#supported-3d-previewing-assets}
+## Formatos compatíveis com a visualização 3D no Experience Manager {#supported-3d-previewing-assets}
 
 A visualização 3D interativa é compatível com os seguintes formatos de arquivo:
 
@@ -35,7 +35,9 @@ A visualização 3D interativa é compatível com os seguintes formatos de arqui
 | DN | Adobe Dimension | model/x-adobe-dn | Suporte apenas para ingestão; visualização não disponível. |
 | USDZ | Arquivo Zip de descrição da cena universal | model/vnd.usdz+zip | Suporte apenas para ingestão; visualização não disponível. |
 
-**Observação**: Se os materiais não forem renderizados na pré-visualização de um modelo GLTF, verifique se eles estão nomeados corretamente e localizados em uma  `textures` pasta na mesma pasta raiz do modelo, semelhante ao seguinte:
+>[!NOTE]
+>
+>Se os materiais não forem renderizados na pré-visualização de um modelo GLTF, verifique se eles estão nomeados corretamente e em uma pasta `textures` na mesma pasta raiz do modelo, semelhante ao seguinte:
 
     Ativo (pasta)
     model.
@@ -44,17 +46,17 @@ A visualização 3D interativa é compatível com os seguintes formatos de arqui
     material_0_baseColor.
     jpegmaterial_0_normal.jpeg
 
-## Considerações de desempenho ao visualizar ativos 3D no AEM{#performance-3d-previewing-assets}
+## Considerações de desempenho ao visualizar ativos 3D no Experience Manager{#performance-3d-previewing-assets}
 
 O tempo necessário para abrir um ativo 3D na página de visualização de detalhes do ativo depende de vários fatores, como largura de banda, complexidade da imagem e latências para o servidor.
 
 Além disso, os recursos do computador cliente, como uma estação de trabalho, um notebook ou um dispositivo de toque móvel, também são importantes a ser considerados ao manipular a câmera interativamente. Um sistema bastante eficiente com bons recursos gráficos pode tornar a experiência de visualização interativa em 3D mais fácil e favorável.
 
-**Visualização de ativos 3D no AEM**
+**Para visualizar ativos 3D no Experience Manager:**
 
-1. Verifique se você fez upload dos ativos 3D no AEM.
+1. Certifique-se de ter carregado ativos 3D no Experience Manager.
 Consulte [Formatos compatíveis com a visualização 3D](#supported-3d-previewing-assets) e [Fazer upload de ativos](/help/assets/manage-assets.md#uploading-assets).
-1. Em AEM, na página **[!UICONTROL Navegação]**, toque em **[!UICONTROL Ativos > Arquivos.]**
+1. No Experience Manager, na página **[!UICONTROL Navegação]**, toque em **[!UICONTROL Ativos > Arquivos.]**
 
    ![Página de navegação](/help/assets/assets-dm/navigation-assets.png)
 
@@ -63,24 +65,19 @@ Consulte [Formatos compatíveis com a visualização 3D](#supported-3d-previewin
    ![Seleção de cartão 3D](/help/assets/assets-dm/3d-card-select.png)
    _Na Exibição de cartão, toque no cartão do ativo 3D que deseja visualizar._
 
-1. Toque no cartão do ativo 3D para abri-lo na página de exibição de detalhes do ativo.
+1. Toque no cartão do ativo 3D.
 
    ![Visualização 3D interativa](/help/assets/assets-dm/3d-preview.png)
    _Visualização interativa de um ativo 3D na página de visualização de detalhes do ativo._
 1. Na página de exibição de detalhes do ativo para o ativo 3D, siga um destes procedimentos:
-   * **Vire sua câmera**—Órbita sua exibição ao redor da cena e dos objetos 3D.
-      * _Rato_: Clique com o botão esquerdo e arraste.
-      * _Tela_ sensível ao toque: Pressione com um único dedo e arraste.
-   * **Deslocar sua câmera** - Deslocar sua exibição para a esquerda, para a direita, para cima ou para baixo.
-      * _Rato_: Clique com o botão direito + arraste.
-      * _Tela_ sensível ao toque: Pressione com dois dedos e arraste.
-   * **Ampliação da câmera** - Amplie a câmera para mover-se de áreas da cena 3D.
-      * _Rato_: Roda de rolagem.
-      * _Tela_ sensível ao toque: Um beliscão de dois dedos.
-   * **Recenter sua câmera** — Insira novamente sua câmera em um ponto de um objeto na cena 3D.
-      * _Rato_: Clique duas vezes.
-      * _Tela_ sensível ao toque: Toque duas vezes.
-   * **Redefinir** — Próximo ao canto inferior direito da página, toque no ícone Redefinir para restaurar o ponto de destino da exibição para o centro do ativo 3D. A redefinição também aproxima ou afasta a câmera para mostrar o ativo inteiro e com um tamanho de visualização razoável.
-   * **Modo** de tela cheia—Para entrar no modo de tela cheia, no canto inferior direito da página, toque no ícone Tela cheia.
+
+   | Exibir | Descrição | Ação do mouse | Ação da tela de toque |
+   | --- | --- | --- | --- |
+   | **Rode a câmera** | Gire a visualização em torno da cena 3D e dos objetos. | Clique com o botão esquerdo e arraste. | Pressione com um único dedo e arraste. |
+   | **Deslocar a câmera** | Deslocar a vista para a esquerda, para a direita, para cima ou para baixo. | Clique com o botão direito + arraste. | Pressione com dois dedos e arraste. |
+   | **Zoom da câmera** | Mova para dentro e para fora de áreas na cena 3D. | Roda de rolagem. | Um beliscão de dois dedos. |
+   | **Recenter a câmera** | Insira novamente sua câmera em um ponto em um objeto na cena 3D. | Duplo clique. | Toque duas vezes. |
+   | **Redefinir** | Próximo ao canto inferior direito da página, toque no ícone Redefinir para restaurar o ponto de destino da exibição para o centro do ativo 3D. A redefinição também aproxima ou afasta a câmera para mostrar o ativo inteiro e com um tamanho de visualização razoável. |  |  |
+   | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, toque no ícone Tela cheia. |  |  |
 
 1. Quando terminar, próximo ao canto superior direito da página, toque em **[!UICONTROL Fechar.]**
