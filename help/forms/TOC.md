@@ -7,12 +7,11 @@ audience: end-user
 user-guide-title: Guia do Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
-feature-set: Experience Manager Forms
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '3720'
+source-wordcount: '3718'
 ht-degree: 4%
 
 ---
@@ -49,7 +48,7 @@ ht-degree: 4%
       + [Configurar e configurar o site de referência do We.Gov e do We.Finance](/help/forms/using/forms-install-configure-gov-reference-site.md)
       + [Apresentação do site de referência We.Gov e We.Finance](/help/forms/using/forms-gov-reference-site-user-demo.md)
       + [Apresentação do site de referência de recrutamento de funcionários](/help/forms/using/employee-recruitment-reference-site.md)
-      + [Site de referência de renovação do seguro automático We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
+      + [Site de referência da renovação do seguro automático We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
       + [Apresentação do site de referência do We.Gov FOIA](/help/forms/using/gov-reference-site-foia-walkthrough.md)
       + [Referência de fragmentos de formulário adaptáveis](using/reference-adaptive-form-fragments.md)
       + [Temas de Referência](using/reference-themes.md)
@@ -569,7 +568,7 @@ ht-degree: 4%
    + Serviço de informação do sistema {#system-information-service}
       + [Configurar o serviço de informação do sistema](/help/forms/using/admin-help/set-system-information-service.md)
       + [APIs do Serviço de informações do sistema](/help/forms/using/admin-help/system-information-service-apis.md)
-+ Relatório de processo {#process-reporting}
++ Relatório de processo  {#process-reporting}
    + [Introdução ao Relatório de Processos](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Introdução ao Relatório de processos](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Como a geração de relatórios do processo funciona](/help/forms/using/process-reporting/process-reporting-architecture.md)
