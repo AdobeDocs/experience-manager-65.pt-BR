@@ -10,14 +10,14 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
+exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2239'
 ht-degree: 97%
 
 ---
-
 
 # Criação - o Ambiente e as ferramentas{#authoring-the-environment-and-tools}
 
@@ -141,7 +141,7 @@ Na barra de ferramentas superior dos ativos, é possível filtrá-los por:
 * Nome
 * Caminho
 * Tipo de ativo como imagens, manuscritos, documentos, vídeos, páginas, parágrafos e produtos
-* Características do ativo como Orientação (Retrato, Paisagem, Quadrado) e Estilo (Cor, Monocromático, Escala de cinza)
+* Características do ativo, como Orientação (Retrato, Paisagem, Quadrado) e Estilo (Cor, Monocromático, Escala de cinza)
 
    * Disponíveis somente para determinados tipos de ativos
 
@@ -243,7 +243,7 @@ Selecione o tipo de referência apropriado para obter mais informações. Em det
 
 * Instâncias de conteúdo emprestado e concedido usando o componente **Referência**, daqui você pode navegar até a página de referência/referenciada
 
-* [Referências a páginas de produtos](/help/sites-administering/generic.md#showing-product-references) (disponíveis no console Comércio - Produtos)
+* [Referências a páginas de produtos](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (disponíveis no console Comércio - Produtos)
 * [Lançamentos](/help/sites-authoring/launches.md), fornecem acesso a lançamentos relacionados
 * [](/help/sites-administering/msm.md)As Live Copies exibem os caminhos de todas as live copies que são baseadas no recurso selecionado.
 * [Blueprint](/help/sites-administering/msm-best-practices.md), fornece detalhes e várias ações
@@ -286,7 +286,7 @@ As Informações da página (ícone de equalizador) abrem um menu que também fo
 Por exemplo, quando apropriado, **Informações da página** também terá as opções:
 
 * [Promover lançamento](/help/sites-authoring/launches-promoting.md) se a página for um lançamento.
-* [Abrir na ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interface clássica se essas opções tiverem sido  [ativadas por um administrador](/help/sites-administering/enable-classic-ui-editor.md)
+* [Abrir na ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interface clássica se esta opção tiver sido  [ativada por um administrador](/help/sites-administering/enable-classic-ui-editor.md)
 
 Além disso, **Informações da página** pode fornecer acesso ao Analytics e a recomendações, quando apropriado.
 
