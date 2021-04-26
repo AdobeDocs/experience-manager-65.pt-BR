@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
-feature: Carousel Banners
+feature: Banners em carrossel
 role: Business Practitioner, Administrator
+exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '4807'
+source-wordcount: '4804'
 ht-degree: 4%
 
 ---
-
 
 # Banners em carrossel{#carousel-banners}
 
@@ -57,7 +57,7 @@ Para ativar e executar rapidamente:
 
    >[!NOTE]
    >
-   >Se você for um cliente do AEM Sites ou do Ecommerce, poderá usar o recurso integrado para navegar até páginas de produtos e pesquisar os SKUs existentes no catálogo de produtos. Não é necessário inserir manualmente as variáveis de ponto de acesso ou mapa de imagem. Consulte as informações sobre [como configurar o eCommerce](/help/sites-administering/generic.md).
+   >Se você for um cliente do AEM Sites ou do Ecommerce, poderá usar o recurso integrado para navegar até páginas de produtos e pesquisar os SKUs existentes no catálogo de produtos. Não é necessário inserir manualmente as variáveis de ponto de acesso ou mapa de imagem. Consulte as informações sobre [como configurar o eCommerce](/help/commerce/cif-classic/administering/generic.md).
    >
    >
    >Se você for um cliente do AEM Assets e Dynamic Media, insira manualmente os dados dos pontos de acesso e mapas de imagem e integre o URL publicado ou o código Incorporado ao seu sistema de gerenciamento de conteúdo de terceiros.
@@ -104,7 +104,7 @@ Quando você adiciona pontos de acesso ou mapas de imagem a uma imagem de banner
 
 >[!NOTE]
 >
->Se você for um cliente do AEM Sites e/ou AEM Ecommerce, pule esta etapa. Não é necessário identificar manualmente os pontos de acesso ou as variáveis do mapa de imagem; você pode usar a integração com o Ecommerce para integração de produto. Consulte as informações sobre [como configurar o eCommerce](/help/sites-administering/generic.md). Além disso, você pode usar o componente Interativo e adicioná-lo à sua página da Web.
+>Se você for um cliente do AEM Sites e/ou AEM Ecommerce, pule esta etapa. Não é necessário identificar manualmente os pontos de acesso ou as variáveis do mapa de imagem; você pode usar a integração com o Ecommerce para integração de produto. Consulte as informações sobre [como configurar o eCommerce](/help/commerce/cif-classic/administering/generic.md). Além disso, você pode usar o componente Interativo e adicioná-lo à sua página da Web.
 >
 >Se você for um cliente de AEM Assets ou Mídia, publique o URL ou código Incorporado e faça a integração com seu sistema de gerenciamento de conteúdo de terceiros e identifique pontos de acesso e mapas de imagem manualmente.
 
