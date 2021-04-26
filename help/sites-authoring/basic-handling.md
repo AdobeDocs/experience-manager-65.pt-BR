@@ -10,14 +10,14 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
+exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 translation-type: tm+mt
-source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 95%
 
 ---
-
 
 # Manuseio básico{#basic-handling}
 
@@ -108,7 +108,7 @@ Em Navegação, os consoles disponíveis são:
   </tr>
   <tr>
    <td>Commerce</td>
-   <td>Permite gerenciar produtos, catálogos de produtos e pedidos relacionados ao seus sites de <a href="/help/sites-administering/ecommerce.md">Comércio</a>. </td>
+   <td>Permite gerenciar produtos, catálogos de produtos e pedidos relacionados ao seus sites de <a href="/help/commerce/cif-classic/administering/ecommerce.md">Comércio</a>. </td>
   </tr>
   <tr>
    <td>Fragmentos de experiência</td>
@@ -147,7 +147,7 @@ No painel Ferramentas, cada opção no painel lateral contém um intervalo de su
 
 O cabeçalho sempre está presente na parte superior da tela. Embora a maioria das opções no cabeçalho permaneça igual, independentemente de onde você esteja no sistema, algumas são específicas do contexto.
 
-![bh-05](assets/bh-03.png)
+![bh-03](assets/bh-03.png)
 
 * [Navegação global](#navigatingconsolesandtools)
 
@@ -193,7 +193,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
 * Navegações estruturais
 
-   ![bh-03](assets/bh-05.png)
+   ![bh-05](assets/bh-05.png)
 
    Situadas no meio do painel e sempre mostrando a descrição do item atualmente selecionado, as navegações estruturais permitem que você navegue dentro de um console específico. No console Sites, você pode navegar pelos níveis do seu site.
 
@@ -205,7 +205,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Isso está disponível somente na exibição de lista. Consulte [visualização de lista](#list-view) para obter mais informações.
+   Isso está disponível somente na exibição de lista. Consulte [exibição de lista](#list-view) para obter mais informações.
 
 * Botão **Criar**
 
@@ -225,9 +225,9 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
 * Navegação pelo teclado
 
-   Você pode navegar por um site usando apenas o teclado. Isso usa a funcionalidade padrão do navegador da tecla **TAB** (ou **OPT+TAB**) para movê-lo entre os elementos na página que são *focalizáveis*.
+   Você pode navegar por um site usando apenas o teclado. Isso usa a funcionalidade padrão do navegador da tecla **TAB** (ou **OPT+TAB**) para movê-lo entre elementos na página que são *focalizáveis*.
 
-   No console do **Sites** há a opção adicionada para **Ir para o conteúdo principal**. Isso se torna visível à medida que você *tab* passa pelas opções de cabeçalho e acelera sua navegação, permitindo que você pule os elementos padrão na barra de ferramentas (produto) e leve você diretamente para o conteúdo principal.
+   No console do **Sites** há a opção adicionada para **Ir para o conteúdo principal**. Isso fica visível à medida que você *tab* passa pelas opções de cabeçalho e acelera a navegação, permitindo que você ignore os elementos padrão na barra de ferramentas (produto) e o leve diretamente para o conteúdo principal.
 
    ![bh-30](assets/bh-30.png)
 
@@ -345,12 +345,12 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
    <td>Exibição de cartão<br /> </td>
    <td>
     <ul>
-     <li>Área de trabalho:<br /> Passar o mouse sobre o mouse e, em seguida, usar a ação rápida de marca de seleção</li>
+     <li>Área de trabalho:<br /> Mouseover, em seguida, use a ação rápida de marca de verificação</li>
      <li>Dispositivo móvel:<br /> Tocar e segurar o cartão</li>
     </ul> </td>
    <td>
     <ul>
-     <li>Área de trabalho:<br /> Clique no cartão</li>
+     <li>Desktop:<br /> Clique no cartão</li>
      <li>Dispositivo móvel:<br /> Toque no cartão</li>
     </ul> </td>
   </tr>
@@ -416,7 +416,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
    * O nome do recurso e a divisa serão destacados quando forem tocados ou clicados.
 
-   ![bh-15](assets/bh-17.png)
+   ![bh-17](assets/bh-17.png)
 
    * Os filhos do recurso clicado/tocado aparecerão na coluna à direita do pai.
    * Se você tocar ou clicar em um nome de recurso sem filhos, seus detalhes aparecerão na coluna final.
@@ -593,4 +593,3 @@ A opção **Referências** mostra conexões com o recurso selecionado. Por exemp
 Isso abrirá um painel semelhante para [pesquisar](/help/sites-authoring/search.md) usando os filtros de localização apropriados já definidos, que permitem filtrar ainda mais o conteúdo que você deseja exibir.
 
 ![bh-29](assets/bh-29.png)
-
