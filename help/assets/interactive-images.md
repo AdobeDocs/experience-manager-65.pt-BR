@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
-feature: Interactive Images
+feature: Imagens interativas
 role: Business Practitioner, Administrator
+exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '4335'
+source-wordcount: '4332'
 ht-degree: 2%
 
 ---
-
 
 # Imagens interativas{#interactive-images}
 
@@ -49,7 +49,7 @@ Etapas de imagens interativas:
 
 1. **(Opcional) Identificação de variáveis de ponto de acesso**  - Se você usar o AEM Assets e o Dynamic Media de forma independente, comece identificando as variáveis dinâmicas usadas na implementação existente do Quickview, para que você possa inserir dados de ponto de acesso ao criar a imagem interativa. Consulte [(Opcional) Identificação de variáveis de ponto de acesso](#optional-identifying-hotspot-variables).
 No entanto, se você usar o AEM Sites ou AEM eCommerce, ou ambos, essa etapa não será necessária.
-Consulte [Conceitos de comércio eletrônico no AEM Assets](/help/sites-administering/concepts.md).
+Consulte [Conceitos de comércio eletrônico no AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Opcional) Criação de uma predefinição do visualizador de Imagem interativa**  - Personalize a imagem gráfica usada para representar pontos de acesso. Não é necessário criar sua própria predefinição do visualizador de Imagem interativa se você pretende usar a predefinição do visualizador de Imagem interativa pronta para uso chamada `Shoppable_Banner`.
 Consulte [(Opcional) Criação de uma predefinição do visualizador de Imagem interativa](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -75,7 +75,7 @@ Se estiver usando um WCM de terceiros (Web Content Manager), é necessário inte
 >Essa tarefa só será necessária se o seguinte for verdadeiro:
 >
 >* Você deseja adicionar interatividade à imagem, acionando para o Quickviews.
->* Sua implementação do AEM *not* usa uma estrutura de integração do eCommerce para inserir dados de produtos em AEM de qualquer solução de eCommerce, como IBM Websphere Commerce, Elastic Path, hybris ou Intershop. Consulte [Conceitos de comércio eletrônico no AEM Assets](/help/sites-administering/concepts.md).
+>* Sua implementação do AEM *not* usa uma estrutura de integração do eCommerce para inserir dados de produtos em AEM de qualquer solução de eCommerce, como IBM Websphere Commerce, Elastic Path, hybris ou Intershop. Consulte [Conceitos de comércio eletrônico no AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 >
 >
