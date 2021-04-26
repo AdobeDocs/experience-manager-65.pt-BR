@@ -9,9 +9,9 @@ user-guide-description: Este guia aborda como criar sua instância no AEM.
 feature: Desenvolvimento
 role: Developer
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '910'
 ht-degree: 16%
 
 ---
@@ -70,10 +70,6 @@ ht-degree: 16%
    + [Integração de serviços com o console JMX](jmx-integration.md)
    + [Desenvolvimento do editor em massa](dev-bulk-editor.md)
    + [Desenvolvimento de relatórios](dev-reports.md)
-   + eCommerce{#ecommerce}
-      + [eCommerce](ecommerce.md)
-      + [Desenvolvimento (genérico)](generic.md)
-      + [Desenvolvimento com o SAP Commerce Cloud](sap-commerce-cloud.md)
 + Componentes{#components}
    + [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
    + [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
