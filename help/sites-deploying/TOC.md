@@ -9,10 +9,10 @@ user-guide-description: Saiba mais sobre a instalação, implantação e arquite
 feature: Implantação
 role: Architect
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 18%
+source-wordcount: '328'
+ht-degree: 16%
 
 ---
 
@@ -90,11 +90,6 @@ ht-degree: 18%
    + [Reestruturação do repositório Forms no AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
    + [Reestruturação do repositório de comércio eletrônico no AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
    + [Reestruturação do repositório para AEM Communities no 6.5](communities-repository-restructuring-in-aem-6-5.md)
-+ eCommerce {#ecommerce}
-   + [Visão geral do eCommerce](ecommerce.md)
-   + [Commerce Cloud SAP](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-   + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + Práticas recomendadas     {#practices}
    + [Práticas recomendadas de implantação](best-practices.md)
    + [Árvore de desempenho](performance-tree.md)
