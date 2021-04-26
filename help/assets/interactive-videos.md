@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
-feature: Interactive Videos
+feature: Vídeos interativos
 role: Business Practitioner, Administrator
+exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '6061'
+source-wordcount: '6058'
 ht-degree: 5%
 
 ---
-
 
 # Vídeos interativos{#interactive-videos}
 
@@ -50,10 +50,10 @@ Assista a uma apresentação de 7 minutos e 30 segundos sobre [como os vídeos i
 
 ### Webinar de sucesso do cliente do Adobe {#adobe-customer-success-webinar}
 
-O webinário &quot;Usar vídeo interativo, compartilhamento de links e compartilhamento de YouTube no AEM Assets&quot; ensina como usar o vídeo interativo e outros recursos para unir eventos orientados por conversão ao conteúdo de marketing de vídeo.
+O webinário &quot;Usar vídeo interativo, compartilhamento de link e compartilhamento de YouTube no AEM Assets&quot; ensina como usar o vídeo interativo e outros recursos para unir eventos orientados por conversão ao conteúdo de marketing por vídeo.
 
 >[!NOTE]
-[Uso de vídeo interativo, compartilhamento de link e compartilhamento de YouTube no AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+[Usar vídeo interativo, compartilhamento de link e compartilhamento de YouTube no AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
 
 ## Início rápido: Vídeos interativos {#quick-start-interactive-videos}
 
@@ -73,7 +73,7 @@ Etapas de vídeo interativo:
 
 1. **(Opcional) Identificação de variáveis do Quickview**  - comece identificando as variáveis dinâmicas usadas pela implementação existente do Quickview. Você usa as variáveis para mapear miniaturas de produto para o produto correspondente do Quickview, ao criar seu vídeo interativo. Consulte [(Opcional) Identificação de variáveis do Quickview](#optional-identifying-quickview-variables).
    *Observe que esta etapa só será necessária se todas as seguintes etapas forem verdadeiras*: ・ Você deseja adicionar interatividade ao seu vídeo, acionando para visualizações rápidas.
-・ Sua implementação do AEM *not* usa uma estrutura de integração do eCommerce para inserir dados de produtos em AEM de qualquer solução de eCommerce, como IBM Websphere Commerce, Elastic Path, hybris ou Intershop. Consulte [Conceitos de comércio eletrônico no AEM Assets](/help/sites-administering/concepts.md).
+・ Sua implementação do AEM *not* usa uma estrutura de integração do eCommerce para inserir dados de produtos em AEM de qualquer solução de eCommerce, como IBM Websphere Commerce, Elastic Path, hybris ou Intershop. Consulte [Conceitos de comércio eletrônico no AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Opcional) Criação de uma predefinição do visualizador de Vídeo interativo**  - Personalize a aparência e o comportamento de vários componentes que compõem o player, como o depurador de vídeo e as miniaturas interativas.
 Não é necessário criar sua própria predefinição do visualizador de Vídeo interativo se você pretende usar as predefinições do visualizador de Vídeo interativo prontas para uso `Shoppable_Video_Light` ou `Shoppable_Video_Dark`.
@@ -98,7 +98,7 @@ Se estiver usando um WCM de terceiros (Web Content Manager), é necessário inte
 >[!NOTE]
 Essa tarefa só será necessária se o seguinte for verdadeiro:
 * Você deseja adicionar interatividade ao vídeo, acionando para o Quickviews.
-* Sua implementação do AEM *not* usa uma estrutura de integração do eCommerce para inserir dados de produtos em AEM de qualquer solução de eCommerce, como IBM Websphere Commerce, Elastic Path, hybris ou Intershop. Consulte [Conceitos de comércio eletrônico no AEM Assets](/help/sites-administering/concepts.md).
+* Sua implementação do AEM *not* usa uma estrutura de integração do eCommerce para inserir dados de produtos em AEM de qualquer solução de eCommerce, como IBM Websphere Commerce, Elastic Path, hybris ou Intershop. Consulte [Conceitos de comércio eletrônico no AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 Se a implementação do AEM usar o eCommerce, você poderá ignorar esta tarefa e prosseguir para a próxima tarefa.
 
