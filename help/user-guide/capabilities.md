@@ -1,22 +1,22 @@
 ---
-title: Guia do usuário dos recursos AEM 6.5
-seo-title: Guia do usuário dos recursos AEM 6.5
+title: Guia do usuário dos recursos do AEM 6.5
+seo-title: Guia do usuário dos recursos do AEM 6.5
 description: Uma visão geral dos recursos essenciais do AEM 6.5
 seo-description: Uma visão geral dos recursos essenciais do AEM 6.5
+exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 45%
+source-wordcount: '157'
+ht-degree: 44%
 
 ---
 
-
-# AEM 6.5 Capacidades Guias do Usuário {#aem-65-capabilities-user-guides}
+# AEM 6.5 Guias do usuário de recursos {#aem-65-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluindo nossa implantação em nuvem dos Serviços gerenciados da Adobe.
+[Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluindo a implantação do Adobe Managed Services na nuvem.
 
 [Saiba como gerenciar um projeto do AEM](/help/managing/home.md).
 
@@ -26,7 +26,7 @@ ht-degree: 45%
 
 [Saiba mais sobre como administrar o AEM](/help/sites-administering/home.md).
 
-## Ativos AEM {#aem-assets}
+## AEM Assets {#aem-assets}
 
 [Crie, gerencie, entregue e otimize ativos digitais.](/help/assets/home.md)
 
@@ -36,7 +36,11 @@ ht-degree: 45%
 
 ## AEM Screens {#aem-screens}
 
-[Saiba mais sobre a solução de sinalização digital para publicar experiências dinâmicas e interativas.](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+[Saiba mais sobre a solução de sinalização digital para publicar experiências dinâmicas e interativas.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+
+## Comércio AEM {#aem-commerce}
+
+[Saiba mais sobre AEM Commerce.](/help/commerce/home.md)
 
 ## AEM Communities {#aem-communities}
 
@@ -44,7 +48,7 @@ ht-degree: 45%
 
 ## AEM Livefyre {#aem-livefyre}
 
-[Compartilhe conteúdo gerado pelo usuário com AEM Livefyre.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
+[Compartilhe conteúdo gerado pelo usuário com o AEM Livefyre.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 
 ## AEM Mobile {#aem-mobile}
 
