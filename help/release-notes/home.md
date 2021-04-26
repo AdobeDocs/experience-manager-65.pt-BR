@@ -1,22 +1,22 @@
 ---
 title: Notas de versão do Adobe Experience Manager 6.5
 description: As Notas de versão do AEM abrangem informações importantes sobre a versão mais recente do AEM, incluindo novidades, plataformas compatíveis, recursos obsoletos e removidos e problemas conhecidos.
+exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 translation-type: tm+mt
-source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 38%
+source-wordcount: '384'
+ht-degree: 41%
 
 ---
-
 
 # Notas de versão do Adobe Experience Manager 6.5
 
 As Notas de versão do AEM abrangem informações importantes sobre a versão mais recente do AEM, incluindo novidades, plataformas compatíveis, recursos obsoletos e removidos e problemas conhecidos.
 
-## Artigos principais do AEM
+## Artigos principais AEM
 
-* [Introdução ao AEM](https://helpx.adobe.com/br/experience-manager/get-started.html)
+* [Introdução ao AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=pt-BR)
 * [Atualizações recentes na documentação](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md)
 
@@ -30,16 +30,17 @@ As Notas de versão do AEM abrangem informações importantes sobre a versão ma
 | [Guia de administração](/help/sites-administering/home.md) | Saiba mais sobre como administrar o AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no AEM. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no AEM na interface do usuário clássica. |
-| [Guia do usuário do Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
+| [Guia do usuário do Screens](https://docs.adobe.com/content/help/br/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
 | [Guia de implantação do usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do AEM. |
 | [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar a instância do AEM. |
-| [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto do AEM com êxito. |
+| [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto de AEM com êxito. |
+| [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre a Commerce Integration Framework no AEM. |
 | [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Este guia mostra como compartilhar conteúdo gerado pelo usuário com o Livefyre. |
 
-## Principais recursos do AEM
+## Principais recursos AEM
 
-* [Tutoriais do AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)
+* [AEM tutoriais](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)
 * [Guia do usuário do Dispatcher](https://docs.adobe.com/content/help/pt-BR/experience-manager-dispatcher/using/dispatcher.html)
 * [Guia do usuário do HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
 * [Guia do usuário dos Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
