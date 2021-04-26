@@ -1,13 +1,13 @@
 ---
 title: Introdução ao conteúdo e comércio AEM
-description: Saiba como implantar um projeto de Conteúdo e Comércio AEM.
+description: Saiba como implantar um projeto de Conteúdo e Comércio de AEM.
 topics: Commerce
 feature: Estrutura de integração de comércio
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 8ead3d1b24177effa4d40141408c5676eaabcc30
+source-git-commit: 3df590b5b5dd4a72af1808fe55c8e61338334d0d
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '681'
 ht-degree: 5%
 
 ---
@@ -28,17 +28,17 @@ A integração do conteúdo e do comércio AEM é um processo de duas etapas:
 
 2. Conectar AEM com sua solução comercial
 
-### Instale o complemento Conteúdo AEM e Commerce para o AEM 6.5
+### Instale o complemento Conteúdo AEM e Comércio para o AEM 6.5 {#install-add-on}
 
 Baixe e instale o AEM Commerce Add-On para AEM 6.5 no portal [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
 Inicie e instale o AEM 6.5 Service Pack necessário. Recomendamos instalar o último service pack disponível.
 
-    >[!NOTA]
-     > 
-     > Isso será feito pelo CSE para clientes do Serviço gerenciado AEM.
+>[!NOTE]
+>
+>Isso será feito pelo CSE para AEM clientes do Managed Service.
 
-### Conectar AEM ao seu sistema de comércio
+### Conecte AEM ao seu sistema de comércio {#connect}
 
 AEM pode ser conectado a qualquer sistema de comércio que tenha um ponto de extremidade GraphQL acessível para AEM. Normalmente, esses pontos de extremidade estão disponíveis publicamente ou podem ser conectados via VPN privada ou conexões locais, dependendo da configuração individual do projeto.
 
