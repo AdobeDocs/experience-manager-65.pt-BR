@@ -3,9 +3,9 @@ title: AEM - Perguntas frequentes sobre a integração com o Commerce usando a C
 description: AEM - Perguntas frequentes sobre a integração com o Commerce usando a Commerce Integration Framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45,aece1190-9530-4060-9b08-022da7068987
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '946'
 ht-degree: 46%
 
 ---
@@ -36,7 +36,7 @@ O complemento CIF usado com AEM permite que os dados fluam da solução comercia
 
 ## 6. Que tamanho de catálogo AEM com o suporte à CIF?
 
-Isso depende de alguns aspectos adicionais que você precisa considerar. Qual é a proporção de cache dos dados e páginas do catálogo? Quantas solicitações simultâneas você espera durante as horas de pico? Em que escala as APIs de suas soluções comerciais podem ser utilizadas?
+Isso depende de alguns aspectos adicionais que você precisa considerar. Qual é a proporção de cache dos dados e páginas do catálogo? Quantas solicitações simultâneas você espera durante as horas de pico? Qual é a escala das APIs de suas soluções comerciais?
 
 ## 7. Como o PIM atua nessa estrutura?
 
@@ -64,11 +64,11 @@ Os dados do produto geralmente já são traduzidos no PIM ou na Magento. A integ
 
 ## 13. Há alguma maneira de aprimorar os dados do produto com texto comercial? Onde é possível fazer isso? No AEM ou na solução comercial?
 
-Recomendamos gerenciar dados e conteúdo de marketing relacionados no AEM. Decorre dados de produtos de sua solução comercial com atributos adicionais usando Fragmentos de conteúdo ou crie e vincule Fragmentos de experiência para conteúdo não estruturado com seus produtos.
+Recomendamos o gerenciamento de dados e conteúdo relacionados ao marketing no AEM. Decorre dados de produtos de sua solução comercial com atributos adicionais usando Fragmentos de conteúdo ou crie e vincule Fragmentos de experiência para conteúdo não estruturado com seus produtos.
 
 ## 14. Como podemos garantir a conformidade com o PCI ao usar o AEM para a camada de apresentação inteira?
 
-Recomendamos usar métodos de pagamento abstratos. Isso coloca o cliente do navegador em comunicação direta com o provedor do gateway de pagamento para que nem o Adobe nem as soluções de comércio retenham ou transmitam os dados do titular do cartão. Esta abordagem requer apenas uma conformidade PCI de nível 3. No entanto, há outros aspectos que devem ser considerados em termos de conformidade com o PCI, como o modo como os funcionários interagem com o sistema e os dados. Para obter mais informações sobre a conformidade com a Magento PCI, consulte <https://magento.com/pci-compliance>
+Recomendamos o uso de métodos de pagamento abstratos. Isso coloca o cliente do navegador em comunicação direta com o provedor do gateway de pagamento para que nem o Adobe nem as soluções de comércio retenham ou transmitam os dados do titular do cartão. Esta abordagem requer apenas uma conformidade PCI de nível 3. No entanto, há outros aspectos que devem ser considerados em termos de conformidade com o PCI, como o modo como os funcionários interagem com o sistema e os dados. Para obter mais informações sobre a conformidade com a Magento PCI, consulte <https://magento.com/pci-compliance>
 
 ## 15. Se eu usar versões de nuvem de AEM e Magento, esta solução conjunta é compatível com PCI?
 
