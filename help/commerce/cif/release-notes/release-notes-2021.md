@@ -2,10 +2,10 @@
 title: Notas de versão do AEM Content and Commerce 2021
 description: Notas de versão do AEM Content and Commerce 2021
 translation-type: tm+mt
-source-git-commit: 1a6d713e74056333b18ed68f58876c2a75d535b8
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
@@ -27,7 +27,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
-| Complemento CIF | v021.04.22 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| Complemento CIF | 2021.4.22 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | Componentes principais da CIF | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | Site de referência CIF Venia | 2021.4.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
@@ -59,7 +59,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 ### O que foi melhorado
 
-* Reutilização aprimorada do componente de detalhes do produto para páginas orientadas por conteúdo
+* Melhor reutilização do componente de detalhes do produto para páginas orientadas por conteúdo
 
 * Melhor armazenamento em cache e menos chamadas de back-end para PDPs
 
@@ -79,9 +79,9 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 * Propriedades do console do produto estendido para mostrar Ativos vinculados e Fragmentos de experiência, incluindo ações para navegar rapidamente para o conteúdo associado.
 
-### O que foi melhorado  {#what-is-improved-february}
+### O que foi melhorado {#what-is-improved-february}
 
-* Camada de dados do lado do cliente aprimorada com url de imagem do produto e informações de categoria
+* Camada de dados do lado do cliente aprimorada com url de imagem do produto e informações de categoria.
 
 * Várias correções de erros.
 
@@ -97,7 +97,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 * Gerenciamento de experiência do produto: Nova guia de propriedade &quot;Comércio&quot; para Ativos e Fragmentos de experiência. Esta guia permite vincular Ativos e Fragmentos de experiência a produtos e categorias. A guia também mostra dados em tempo real para objetos de comércio vinculados e um link para mostrar detalhes no console do produto.
 
-### O que foi melhorado  {#what-is-improved-january}
+### O que foi melhorado {#what-is-improved-january}
 
 * Enviar dados do usuário após a autenticação para a Camada de dados do cliente do Adobe.
 
