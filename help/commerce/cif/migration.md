@@ -2,9 +2,9 @@
 title: Migração para o complemento CIF (Commerce Integration Framework) da AEM
 description: Como migrar para o complemento CIF (Commerce Integration Framework) do AEM de uma versão antiga
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ O complemento CIF está disponível para o AEM 6.5 por meio do [Portal de distri
 
 Consulte [Introdução ao Conteúdo AEM e Comércio](getting-started.md).
 
-Para dar suporte a projetos que implantam o CIF Adobe, forneça [AEM os Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components).
+Para oferecer suporte a projetos que implantam a CIF, o Adobe fornece [AEM os Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components).
 
 ## Catálogo de produtos
 
@@ -33,6 +33,6 @@ A importação de dados de catálogo de produtos não é compatível com o compl
 
 Se você usar o blueprint do catálogo com a CIF clássica, precisará atualizar o fluxo de trabalho do catálogo de produtos. O complemento CIF agora renderiza experiências de catálogo de produtos dinamicamente usando modelos de catálogo de AEM. Não é mais necessária a replicação de dados de produto ou páginas de produto.
 
-## Interação entre dados não armazenáveis em cache e compras
+## Dados não acessíveis e interação de compra
 
-As solicitações do lado do cliente para dados e interações que não podem ser armazenados em cache (por exemplo, adicionar ao carrinho, pesquisa) devem ir diretamente para o terminal de comércio (solução comercial ou camada de integração) via CDN/Dispatcher. Remova qualquer chamada em que AEM era apenas um proxy.
+As solicitações do lado do cliente para dados e interações que não podem ser armazenados em cache (por exemplo, add-to-cart, search) devem ir diretamente para o endpoint de comércio (solução comercial ou camada de integração) via CDN/Dispatcher. Remova qualquer chamada em que AEM era apenas um proxy.
