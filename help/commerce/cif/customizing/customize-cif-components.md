@@ -11,10 +11,10 @@ feature: Estrutura de integração de comércio
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '2549'
-ht-degree: 29%
+source-wordcount: '2541'
+ht-degree: 28%
 
 ---
 
@@ -61,7 +61,7 @@ Clonaremos o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e su
 
 1. Adicione as configurações OSGi necessárias para conectar a instância do AEM a uma instância da Magento ou adicione as configurações ao projeto recém-criado.
 
-1. Nesta etapa, já deve estar funcionando uma versão de loja conectada a uma instância da Magento. Navegue até a página `US` > `Home` em: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Neste ponto, você deve ter uma versão funcional de uma loja conectada a uma instância do Magento. Navegue até a página `US` > `Home` em: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    Você verá que a loja está usando o tema Venia. Ao expandir o Menu principal da loja você verá várias categorias, que é um sinal de que a conexão com a Magento está funcionando.
 
@@ -494,8 +494,8 @@ Revise a funcionalidade do símbolo **New** que já foi implementado no Teaser d
 
 ## Recursos adicionais {#additional-resources}
 
-- [Arquétipo do AEM](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html)
+- [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components)
 - [Personalizar os Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-- [Personalizar os Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/customizing.html)
-- [Introdução ao AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [Personalizar os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+- [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
