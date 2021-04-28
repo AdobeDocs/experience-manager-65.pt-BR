@@ -9,10 +9,10 @@ feature: Estrutura de integração de comércio
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 32%
+source-wordcount: '2566'
+ht-degree: 28%
 
 ---
 
@@ -65,17 +65,17 @@ Clonaremos o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e su
 
 ## Módulo de bibliotecas de clientes e ui.frontend {#introduction-to-client-libraries}
 
-O CSS e o JavaScript responsáveis pela renderização de temas/estilos da loja são gerenciados no AEM por uma [biblioteca do cliente](/help/sites-developing/clientlibs.md) ou, abreviando, clientlibs. As bibliotecas de clientes fornecem um mecanismo para organizar o CSS e o Javascript no código de um projeto e, em seguida, na página.
+O CSS e o JavaScript responsáveis pela renderização de temas/estilos da loja são gerenciados em AEM por uma [biblioteca do cliente](/help/sites-developing/clientlibs.md) ou clientlibs, abreviando. As bibliotecas de clientes fornecem um mecanismo para organizar o CSS e o Javascript no código de um projeto e, em seguida, na página.
 
 É possível aplicar estilos específicos da marca AEM os Componentes principais da CIF, adicionando e substituindo o CSS gerenciado por essas bibliotecas de clientes. Entender como as bibliotecas de clientes são estruturadas e incluídas na página é essencial.
 
 O [ui.frontend](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) é um projeto dedicado [webpack](https://webpack.js.org/) para gerenciar todos os ativos de front-end de um projeto. Isso permite que desenvolvedores de front-end usem qualquer número de idiomas e tecnologias como [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) e muito mais.
 
-O módulo `ui.frontend` também é um módulo Maven e é integrado ao projeto maior por meio do uso de um módulo NPM no [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Durante uma criação, o `aem-clientlib-generator` copia os arquivos CSS e JavaScript compilados em uma Biblioteca do cliente no módulo `ui.apps`.
+O módulo `ui.frontend` também é um módulo Maven e é integrado ao projeto maior por meio do uso de um módulo NPM no [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Durante uma criação, o `aem-clientlib-generator` copia os arquivos CSS e JavaScript compilados em uma biblioteca do cliente no módulo `ui.apps`.
 
 ![ui.front-end para a arquitetura ui.apps](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*CSS e Javascript compilados são copiados do  `ui.frontend` módulo para o  `ui.apps` módulo como uma biblioteca do cliente durante uma build Maven*
+*CSS e Javascript compilados são copiados do  `ui.frontend` módulo para o  `ui.apps` módulo como uma biblioteca cliente durante uma build Maven*
 
 ## Atualizar o estilo do Teaser {#ui-frontend-module}
 
@@ -164,7 +164,7 @@ Em seguida, faça uma pequena alteração no estilo do Teaser para ver como o m�
 
    ![CSS do site compilado em ui.apps](../assets/style-cif-component/comiled-css-ui-apps.png)
 
-   Este é o arquivo `site.css` copiado para o projeto `ui.apps`. Agora ela faz parte de uma biblioteca de clientes chamada `clientlib-site` com uma categoria de `venia.site`. Quando o arquivo fizer parte do módulo `ui.apps`, ele poderá ser implantado em AEM.
+   Isso copia o arquivo `site.css` para o projeto `ui.apps`. Agora ela faz parte de uma biblioteca do cliente chamada `clientlib-site` com uma categoria de `venia.site`. Quando o arquivo fizer parte do módulo `ui.apps`, ele poderá ser implantado em AEM.
 
    >[!NOTE]
    >
@@ -225,7 +225,7 @@ Em seguida, verifique a inclusão das bibliotecas de clientes na página.
 
    ![Exibir como publicado](../assets/style-cif-component/view-as-published.png)
 
-   A página será exibida sem carregar o javascript criado pelo autor no AEM, como seria exibido no site publicado. Observe que o url tem o parâmetro de consulta `?wcmmode=disabled` anexado. Ao desenvolver o CSS e o Javascript, é recomendado usar esse parâmetro para simplificar a página sem nenhuma ação de seu autor no AEM.
+   A página será exibida sem carregar o javascript criado pelo autor no AEM, como seria exibido no site publicado. Observe que o url tem o parâmetro de consulta `?wcmmode=disabled` anexado. Ao desenvolver o CSS e o Javascript, é uma boa prática usar esse parâmetro para simplificar a página sem nenhuma ação de AEM autor.
 
 1. Visualize a fonte da página e você deve ser capaz de identificar se várias bibliotecas de clientes foram incluídas:
 
@@ -275,18 +275,18 @@ Há várias opções para incluir uma biblioteca do lado do cliente. Em seguida,
 
    ![Política da página - página inicial](../assets/style-cif-component/page-policy-properties.png)
 
-   No lado direito, é possível ver uma lista das **categorias** de bibliotecas de clientes que serão incluídas em todas as páginas que utilizam esse modelo.
+   No lado direito, você pode ver uma lista de bibliotecas de clientes **categories** que serão incluídas em todas as páginas que usam esse modelo.
 
    * `venia.dependencies` - Fornece todas as bibliotecas de fornecedores  `venia.site` dependentes.
    * `venia.site` - Esta é a categoria  `clientlib-site` que o  `ui.frontend` módulo gera.
 
-   Observe que outros modelos utilizam a mesma política, **Página de conteúdo**, **Página de aterrissagem**, etc. Ao reutilizar a mesma política, podemos garantir que as mesmas bibliotecas de clientes sejam incluídas em todas as páginas.
+   Observe que outros modelos usam a mesma política, **Página de conteúdo**, **Página de aterrissagem**, e assim por diante. Ao reutilizar a mesma política, podemos garantir que as mesmas bibliotecas de clientes sejam incluídas em todas as páginas.
 
    A vantagem de utilizar modelos e políticas de página para gerenciar a inclusão das bibliotecas de clientes é que você pode alterar a política de acordo com o modelo. Por exemplo, talvez você esteja gerenciando duas marcas diferentes na mesma instância do AEM. Cada marca terá seu próprio estilo ou *tema*, mas as bibliotecas base e o código base serão os mesmos. Outro exemplo: se você quisesse que uma bibliotecas do cliente maior fosse exibida apenas em determinadas páginas, seria possível fazer uma política de página exclusiva para esse modelo.
 
 ## Desenvolvimento de Webpack Local {#local-webpack-development}
 
-No exercício anterior, foi feita uma atualização em um arquivo Sass no módulo `ui.frontend` e, depois de executar uma compilação Maven, as alterações são implantadas em AEM. Em seguida, analisaremos o aproveitamento de um servidor de desenvolvimento de webpack para desenvolver rapidamente os estilos de front-end.
+No exercício anterior, foi feita uma atualização em um arquivo Sass no módulo `ui.frontend` e, depois de executar uma build Maven, as alterações são implantadas em AEM. Em seguida, analisaremos o aproveitamento de um servidor de desenvolvimento de webpack para desenvolver rapidamente os estilos de front-end.
 
 O webpack-dev-server proxies imagens e alguns dos CSS/JavaScript da instância local do AEM, mas permite que o desenvolvedor modifique os estilos e o JavaScript no módulo `ui.frontend`.
 
@@ -328,7 +328,7 @@ O webpack-dev-server proxies imagens e alguns dos CSS/JavaScript da instância l
 
    >[!CAUTION]
    >
-   > Se você receber um erro relacionado ao Sass, pare o servidor e execute o comando `npm rebuild node-sass` e repita as etapas acima. Isso pode ocorrer se tiver uma versão diferente de `npm` e `node`, então especificada no projeto `aem-cif-guides-venia/pom.xml`.
+   > Se você receber um erro relacionado ao Sass, pare o servidor e execute o comando `npm rebuild node-sass` e repita as etapas acima. Isso pode ocorrer se você tiver uma versão diferente de `npm` e `node`, então especificada no projeto `aem-cif-guides-venia/pom.xml`.
 
 1. Navegue até [http://localhost:8080/](http://localhost:8080/) em uma nova guia com o mesmo navegador que uma instância de AEM conectada. Você deve ver a página inicial Venia através do webpack-dev-server:
 
