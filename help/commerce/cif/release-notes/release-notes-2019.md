@@ -2,10 +2,10 @@
 title: Notas de versão do AEM Content and Commerce 2021
 description: Notas de versão do AEM Content and Commerce 2021
 translation-type: tm+mt
-source-git-commit: c2fb9af056fa4be13cfd7e60e8a44485e8712c0b
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '973'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
