@@ -2,10 +2,10 @@
 title: Notas de versão do AEM Content and Commerce 2021
 description: Notas de versão do AEM Content and Commerce 2021
 translation-type: tm+mt
-source-git-commit: c859aa89e481e852302e9cda0adf2acc04d68a55
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 12%
+source-wordcount: '1324'
+ht-degree: 11%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 12%
 
 * Os componentes principais da CIF foram estendidos para hidratar a Camada de dados do cliente do Adobe, enviando dados comerciais. A Camada de dados do cliente do Adobe é um método padronizado para coletar dados e comunicar os dados aos servidores de análise e relatórios digitais. Para obter mais detalhes, consulte [Camada de dados do cliente do Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
-* As páginas Detalhes do produto e Lista de produtos são estendidas para preencher automaticamente os metadados de SEO (por exemplo, título, meta descrição, metapalavras-chave) configurados na interface do usuário do administrador do Magento
+* As páginas Detalhes do produto e Lista do produto foram estendidas para preencher automaticamente os metadados de SEO (como título, meta descrição, meta palavras-chave) configurados na interface do usuário do administrador do Magento
 
 * Bug do componente de teaser de comércio corrigido.
 
