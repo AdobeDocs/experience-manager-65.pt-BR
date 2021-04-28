@@ -7,7 +7,7 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 2%
@@ -203,7 +203,7 @@ Este procedimento fará upload e configurará a loja de demonstração - Geometr
    * nome de usuário: administrador
    * senha: nimda
 
-1. Na navegação da barra lateral, explique **Sistema** e **Ferramentas**. Em seguida, selecione **Importar** para abrir o **Assistente: Janela Importação de CSV**.
+1. Na navegação da barra lateral, expanda **Sistema** e **Ferramentas**. Em seguida, selecione **Importar** para abrir o **Assistente: Janela Importação de CSV**.
 1. Na guia **Configuration**, **Upload** o seguinte **Import file**:
 
    [Obter arquivo](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
