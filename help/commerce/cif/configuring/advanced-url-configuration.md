@@ -9,10 +9,10 @@ feature: Estrutura de integração de comércio
 kt: 4933
 thumbnail: 34350.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 95%
+source-wordcount: '791'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +24,7 @@ Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-
 
 ## Configuração {#configuration}
 
-Para configurar o serviço `UrlProvider` de acordo com os requisitos e necessidades de SEO, o projeto deve fornecer uma configuração OSGI para a &quot;Configuração do provedor de URL da CIF&quot; e definir o serviço conforme descrito abaixo.
+Para configurar o serviço `UrlProvider` de acordo com os requisitos e necessidades de SEO, o projeto deve fornecer uma configuração OSGI para a &quot;Configuração do provedor de URL da CIF&quot; e configurar o serviço conforme descrito abaixo.
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ As substituições de URL também podem ser obtidas usando o servidor HTTP do AE
 
 ## Exemplo
 
-O projeto da [loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia) inclui configurações de exemplo para demonstrar o uso de URLs personalizados para páginas de produto e categoria. Dessa forma, cada projeto pode configurar padrões de URL individuais para páginas de produto e categoria de acordo com suas necessidades de SEO. Usa-se uma combinação do `UrlProvider` da CIF e os Mapeamentos do Sling conforme descrito acima.
+O projeto da [loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia) inclui configurações de exemplo para demonstrar o uso de URLs personalizados para páginas de produto e categoria. Isso permite que cada projeto configure padrões de URL individuais para páginas de produto e categoria de acordo com suas necessidades de SEO. Usa-se uma combinação do `UrlProvider` da CIF e os Mapeamentos do Sling conforme descrito acima.
 
 >[!NOTE]
 >
@@ -74,5 +74,5 @@ O projeto da [loja de referência Venia](https://github.com/adobe/aem-cif-guides
 ## Recursos adicionais
 
 * [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia)
-* [Mapeamento de recursos do AEM](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [Mapeamento de recursos do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Mapeamentos do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
