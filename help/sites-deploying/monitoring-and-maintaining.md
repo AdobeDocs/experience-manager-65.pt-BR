@@ -77,7 +77,7 @@ Para fazer isso, você precisa [fazer backup de todo o repositório](#backing-up
 
 >[!CAUTION]
 >
->Se você estiver operando um servidor de aplicativos de terceiros, as pastas adicionais podem estar em um local diferente e também podem precisar ser copiadas em backup. Consulte [Como instalar AEM com um Servidor de Aplicativos](/help/sites-deploying/application-server-install.md) para obter informações sobre como instalar servidores de aplicativos. [](/content/docs/en/aem/6-3/deploy/installing.md#instalação do adobe experience manager com um servidor de aplicativos)
+>Se você estiver operando um servidor de aplicativos de terceiros, as pastas adicionais podem estar em um local diferente e também podem precisar ser copiadas em backup. Consulte [Como instalar AEM com um Servidor de Aplicativos](/help/sites-deploying/application-server-install.md) para obter informações sobre como instalar servidores de aplicativos.
 
 >[!CAUTION]
 >
