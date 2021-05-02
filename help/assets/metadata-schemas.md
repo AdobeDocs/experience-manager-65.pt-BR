@@ -1,17 +1,17 @@
 ---
-title: 'Esquemas de metadados para definir o layout da página de propriedades de metadados em [!DNL Adobe Experience Manager Assets]. '
+title: 'Esquemas de metadados definem o layout da página de propriedades de metadados '
 description: O esquema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar esquema de metadados personalizado, editar esquema de metadados e aplicar esquema de metadados a ativos.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Metadata
+role: Business Practitioner,Administrator
+feature: Metadados
+exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+source-git-commit: ae0c8bda918e2e8a7a6a32e0228d1a2410b283d9
 workflow-type: tm+mt
-source-wordcount: '3605'
-ht-degree: 7%
+source-wordcount: '3571'
+ht-degree: 8%
 
 ---
-
 
 # Esquemas de metadados {#metadata-schemas}
 
@@ -27,9 +27,9 @@ Para exibir e editar a página de propriedades de um ativo, siga estas etapas:
 
    ![Guia Básico das Propriedades do ativo, onde o tipo de ativo não pode ser alterado](assets/asset-properties-basic-tab.png)
 
-*Figura: Guia Básico em  [!UICONTROL Propriedades] do ativo.*
+   *Figura: Guia Básico em  [!UICONTROL Propriedades] do ativo.*
 
-Para modificar o tipo MIME de um ativo, use um formulário de esquema de metadados personalizado ou modifique um formulário existente. Consulte [Editar esquema de metadados Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) para obter mais informações. Se você modificar o esquema de metadados de um tipo MIME, o layout da página de propriedades dos ativos e todos os subtipos serão modificados. Por exemplo, modificar um esquema jpeg em `default/image` modifica apenas o layout de metadados (propriedades de ativos) para ativos com o tipo MIME `image/jpeg`. No entanto, se você editar o esquema padrão, suas alterações modificarão o layout de metadados para todos os tipos de ativos.
+   Para modificar o tipo MIME de um ativo, use um formulário de esquema de metadados personalizado ou modifique um formulário existente. Consulte [Editar esquema de metadados Forms](#edit-metadata-schema-forms) para obter mais informações. Se você modificar o esquema de metadados de um tipo MIME, o layout da página de propriedades dos ativos e todos os subtipos serão modificados. Por exemplo, modificar um esquema jpeg em `default/image` modifica apenas o layout de metadados (propriedades de ativos) para ativos com o tipo MIME `image/jpeg`. No entanto, se você editar o esquema padrão, suas alterações modificarão o layout de metadados para todos os tipos de ativos.
 
 ## Formulários de esquema de metadados {#default-metadata-schema-forms}
 
@@ -113,7 +113,7 @@ A seguir estão os valores válidos para essa propriedade:
 
 * `./jcr:content/metadata/dc:title`: armazena o valor no nó de metadados do ativo como a propriedade `dc:title`.
 
-* `./jcr:created`: Armazena a data e a hora de criação de um ativo. É uma propriedade protegida. Se você configurar essas propriedades, o Adobe recomenda marcá-las como Desativar edição.
+* `./jcr:created`: Armazena a data e a hora de criação de um ativo. É uma propriedade protegida. Se você configurar essas propriedades, o Adobe recomenda marcá-las como Desativar edição. Caso contrário, o erro &quot;Os ativos falharam ao serem modificados&quot; ocorre ao salvar as propriedades do ativo.
 
 Para garantir que o componente seja exibido corretamente no formulário de esquema de metadados, o caminho da propriedade não deve incluir espaços.
 
@@ -301,7 +301,7 @@ Nesse caso, crie um nó em `/etc/dam/metadataeditor/mimetypemappings` no reposit
 [!DNL Assets] O mapeia os seguintes tipos MIME e formulários de esquema:
 
 | Formulário de esquema | Tipos MIME |
-| --------------------------- | --------------------------------------------------- |
+|---|---|
 | image/jpeg | image/pjpeg |
 | image/tiff | image/x-tiff |
 | application/pdf | application/postscript |
@@ -326,9 +326,7 @@ Por exemplo, você pode definir uma variante do esquema de metadados padrão e a
 
 Somente os ativos carregados na pasta à qual esse esquema é aplicado estão em conformidade com os metadados modificados definidos no esquema de metadados da variante. [!DNL Assets] em outras pastas onde o esquema original é aplicado, continue em conformidade com os metadados definidos no esquema original.
 
-A herança de metadados por ativos é baseada no esquema aplicado à pasta de primeiro nível na hierarquia. Em outras palavras, se uma pasta não contiver subpastas, os ativos na pasta herdarão os metadados do esquema aplicado à pasta.
-
-Você pode aplicar um schema diferente na subpasta . Os ativos em uma subpasta herdam o esquema de metadados da subpasta imediata. Se nenhum schema ou o mesmo schema for aplicado no nível da subpasta, seus ativos herdarão o schema da pasta pai.
+A herança de metadados por ativos é baseada no esquema aplicado à pasta de nível superior na hierarquia. O mesmo schema é aplicado ou herdado pelas subpastas. Se um schema diferente for aplicado no nível da subpasta, a herança será interrompida.
 
 1. Na interface [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados]**. A página **[!UICONTROL Formulários de esquema de metadados]** é exibida.
 1. Marque a caixa de seleção ao lado de um formulário, por exemplo, o formulário de metadados padrão, clique em **[!UICONTROL Copiar]** e salve-o como um formulário personalizado. Especifique um nome personalizado para o formulário, por exemplo `my_default`. Como alternativa, é possível criar um formulário personalizado.
