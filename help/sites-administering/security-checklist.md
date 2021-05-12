@@ -11,11 +11,10 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
-feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Segurança
+source-git-commit: 1c6ee9b547fd0870feb510e35ffdcb8e3f857f18
 workflow-type: tm+mt
-source-wordcount: '2842'
+source-wordcount: '2873'
 ht-degree: 0%
 
 ---
@@ -26,7 +25,7 @@ Esta seção trata de várias etapas que você deve tomar para garantir que sua 
 
 >[!NOTE]
 >
->Mais informações [também estão disponíveis sobre as ameaças de segurança mais perigosas conforme publicadas pelo Open Web Application Security Project (OWASP)](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
+>Informações adicionais também estão disponíveis sobre as ameaças de segurança mais perigosas, conforme publicado pelo [Open Web Application Security Project (OWASP)](https://owasp.org/www-project-top-ten/).
 
 >[!NOTE]
 >
@@ -333,11 +332,9 @@ Para mitigar isso, siga as etapas abaixo:
 
 **Mitigar contra ações causadas pelo servlet de download de ativos**
 
-O Servlet de download de ativos padrão no AEM permite que usuários autenticados emitam solicitações de download simultâneas e arbitrariamente grandes para criar arquivos ZIP de ativos visíveis para eles que podem sobrecarregar o servidor e/ou a rede.
+O servlet de download de ativos padrão permite que usuários autenticados emitam solicitações de download simultâneas e arbitrariamente grandes para criar arquivos ZIP de ativos. Criar arquivos ZIP grandes pode sobrecarregar o servidor e a rede. Para mitigar um potencial risco de Negação de Serviço (DoS) causado por esse comportamento, `AssetDownloadServlet` o componente OSGi é desabilitado por padrão na instância de publicação [!DNL Experience Manager]. Está ativado na instância do autor [!DNL Experience Manager] por padrão.
 
-Para atenuar possíveis riscos de DoS causados por esse recurso, o `AssetDownloadServlet` componente OSGi é desabilitado por padrão para instâncias de publicação em versões de AEM mais recentes.
-
-Se a configuração exigir que o Servidor de Download de Ativos esteja habilitado, consulte [este artigo](/help/assets/download-assets-from-aem.md) para obter mais informações.
+Se você não precisar do recurso de download, desative o servlet nas implantações de criação e publicação. Se a configuração exigir que o recurso de download de ativos esteja ativado, consulte [este artigo](/help/assets/download-assets-from-aem.md) para obter mais informações. Além disso, é possível definir um limite máximo de download que sua implantação possa suportar.
 
 ### Desative o WebDAV {#disable-webdav}
 
@@ -452,4 +449,4 @@ A Adobe recomenda que você realize um teste de penetração de sua infraestrutu
 
 ### Práticas recomendadas de desenvolvimento {#development-best-practices}
 
-É importante que o novo desenvolvimento esteja seguindo as [Práticas recomendadas de segurança](/help/sites-developing/security.md) para garantir que seu ambiente de AEM permaneça seguro.
+É importante que o novo desenvolvimento esteja seguindo as [Práticas recomendadas de segurança](/help/sites-developing/security.md) para garantir que seu ambiente AEM permaneça seguro.
