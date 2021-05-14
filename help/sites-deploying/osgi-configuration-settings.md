@@ -10,15 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuração
+exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
+source-git-commit: ca66c0655bcd878644e275fc8f7a41b38110beae
 workflow-type: tm+mt
-source-wordcount: '3806'
+source-wordcount: '3561'
 ht-degree: 0%
 
 ---
-
 
 # Configurações do OSGi{#osgi-configuration-settings}
 
@@ -433,29 +432,6 @@ Os outros modos podem ser acessados do sidekick, ou o sufixo `?wcmmode=disabled`
 Consulte [Limpeza de versão](/help/sites-deploying/version-purging.md) para obter mais informações.
 
 **Day CQ Workflow Email Notification** ServiceConfigure as configurações de email para notificações enviadas por um workflow.
-
-**Day CQSE HTTP** ServiceControl o CQ Servlet Engine:
-
-* **NIO para HTTP, **Se deve ou não usar NIO para HTTP. O padrão é true. Usado somente se HTTP estiver habilitado.
-* **Tempo limite da conexão, **Tempo limite da conexão em milissegundos. Essa propriedade se aplica às conexões HTTP e HTTPS. O padrão é 60 segundos.
-
-* **Ative HTTPS** , se HTTPS estiver ou não ativada. O padrão é false.
-* **Tempo limite da sessão**, tempo de vida padrão de uma sessão HTTP especificado em minutos. Se o tempo limite for 0 ou inferior, as sessões nunca expirarão. O padrão é 10 minutos.
-* **Registro de Depuração**, Escreva ou não mensagens de nível DEBUG. O padrão é false.
-* **Solicitar tamanho do buffer**, tamanho do buffer para solicitações em bytes. O padrão é 8 KB.
-* **Número máximo de threads**, Número máximo de threads a serem usados para lidar com solicitações. O padrão é 200.
-
-As seguintes propriedades só se aplicam se o HTTPS estiver ativado.
-
-* **Porta** HTTPS, Porta para escuta de solicitação HTTPS. O padrão é 433.
-* **NIO para HTTPS**, independentemente de usar ou não NIO para HTTP. O padrão é o valor da propriedade NIO for HTTP .
-* **Armazenamento de chaves**, Caminho absoluto para o Armazenamento de chaves a ser usado para HTTPS. Obrigatório se HTTPS estiver ativado.
-* **Senha do Armazenamento de chaves**, Senha para acessar o Armazenamento de chaves.
-* **Alias da chave**, Alias da chave secreta no Armazenamento de chaves.
-* **Senha** da chave, Senha para desbloquear a chave secreta no Armazenamento de chaves.
-* **Certificado** do cliente, requisito para que o cliente forneça um certificado válido. O padrão é nenhum.
-
-Consulte também [Ativando HTTP sobre SSL](/help/sites-administering/ssl-by-default.md) para obter detalhes sobre as opções relacionadas ao SSL e uma descrição completa sobre como habilitar HTTPS para CQSE.
 
 **Fábrica de analisador HTML de regravação do CQ**
 
