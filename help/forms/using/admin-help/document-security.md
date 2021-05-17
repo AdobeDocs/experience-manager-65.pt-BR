@@ -10,15 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Segurança de documentos
+exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
+source-git-commit: 76201cc58f2d3f7d65f867801fcb95f5390baada
 workflow-type: tm+mt
-source-wordcount: '2548'
+source-wordcount: '2560'
 ht-degree: 0%
 
 ---
-
 
 # Sobre a segurança do documento {#about-document-security}
 
@@ -158,7 +157,7 @@ A proteção de política pode ser aplicada a um documento PDF usando o Adobe Ac
 
 As políticas contêm informações sobre os usuários autorizados e as configurações de confidencialidade a serem aplicadas aos documentos. Os usuários podem ser qualquer pessoa em sua organização, bem como pessoas externas à organização que têm uma conta. Se o administrador ativar o recurso de convite do usuário, será possível adicionar novos usuários às políticas, iniciando um processo de email de convite de registro.
 
-As configurações de confidencialidade em uma política determinam como os destinatários podem usar o documento. Por exemplo, você pode especificar se os destinatários podem imprimir ou copiar texto, fazer alterações ou adicionar assinaturas e comentários a documentos protegidos. A mesma política também pode especificar configurações de confidencialidade diferentes para usuários específicos.
+As configurações de confidencialidade em uma política determinam como os recipients podem usar o documento. Por exemplo, você pode especificar se os destinatários podem imprimir ou copiar texto, fazer alterações ou adicionar assinaturas e comentários a documentos protegidos. A mesma política também pode especificar configurações de confidencialidade diferentes para usuários específicos.
 
 >[!NOTE]
 >
@@ -223,6 +222,10 @@ Os coordenadores do conjunto de políticas podem executar estas tarefas:
 * Exibir eventos de política e documento para qualquer política ou documento dentro do conjunto de políticas
 * Revogar acesso a documentos
 * Alternar políticas para o documento.
+
+>[!NOTE]
+>
+>Você pode recuperar no máximo 1000 nomes de conjuntos de políticas do banco de dados.
 
 Os conjuntos de políticas são criados e excluídos nas páginas da Web da administração de segurança de documentos por administradores e coordenadores de conjuntos de políticas que têm permissão para isso.
 
