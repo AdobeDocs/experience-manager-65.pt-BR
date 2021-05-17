@@ -12,9 +12,9 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Segurança de documentos
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: 76201cc58f2d3f7d65f867801fcb95f5390baada
+source-git-commit: ffba6ecf6c3d75a71c3e6f970fd9a20ce467492d
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2562'
 ht-degree: 0%
 
 ---
@@ -225,7 +225,7 @@ Os coordenadores do conjunto de políticas podem executar estas tarefas:
 
 >[!NOTE]
 >
->Você pode recuperar no máximo 1000 nomes de conjuntos de políticas do banco de dados.
+>Você pode recuperar no máximo 1000 nomes de conjuntos de políticas do banco de dados usando a API `getAllPolicysetnames()`.
 
 Os conjuntos de políticas são criados e excluídos nas páginas da Web da administração de segurança de documentos por administradores e coordenadores de conjuntos de políticas que têm permissão para isso.
 
