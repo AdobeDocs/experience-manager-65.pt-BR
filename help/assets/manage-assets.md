@@ -4,12 +4,11 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos, como carreg
 contentOwner: AG
 mini-toc-levels: 1
 role: Business Practitioner
-feature: Asset Management,Search
+feature: Gerenciamento de ativos,Pesquisar
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-translation-type: tm+mt
-source-git-commit: 46b11d0b59d748f2035e7ed46dc8caeef79d48c0
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
-source-wordcount: '9798'
+source-wordcount: '9796'
 ht-degree: 4%
 
 ---
@@ -114,7 +113,7 @@ Você pode optar por substituir um ativo existente, criar outra versão ou mante
 >
 >Quando você seleciona **[!UICONTROL Substituir]** na caixa de diálogo [!UICONTROL Nomear conflito], a ID do ativo é regenerada para o novo ativo. Essa ID é diferente da ID do ativo anterior.
 >
->Se o Asset Insights estiver ativado para rastrear impressões/cliques com o Adobe Analytics, a ID de ativo regenerada invalida os dados capturados para o ativo no Analytics.
+>Se o Asset Insights estiver ativado para rastrear impressões ou cliques com [!DNL Adobe Analytics], a ID de ativo regenerada invalida os dados capturados para o ativo em [!DNL Analytics].
 
 Se o ativo carregado existir em [!DNL Assets], a caixa de diálogo **[!UICONTROL Duplicatas Detectadas]** avisa que você está tentando fazer upload de um ativo duplicado. A caixa de diálogo será exibida somente se o valor de `SHA 1` soma de verificação do binário do ativo existente corresponder ao valor de soma de verificação do ativo que você carrega. Nesse caso, os nomes dos ativos não importam.
 
