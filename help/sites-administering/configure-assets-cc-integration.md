@@ -2,16 +2,15 @@
 title: Configurar a integração do AEM Assets com o Experience Cloud
 description: Saiba como configurar a integração do AEM Assets com o Experience Cloud.
 contentOwner: AG
-feature: Asset Management
+feature: Gerenciamento de ativos
 role: Business Practitioner, Architect, Administrator
-translation-type: tm+mt
-source-git-commit: a9c9194ac1d163be3ab642ab5a6323de02d67363
+exl-id: d167cf97-6829-45a7-ba46-2239d530b060
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---
-
 
 # Configurar a integração do AEM Assets com o Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
@@ -27,7 +26,7 @@ No back-end, o servidor do AEM autentica seu perfil no gateway e, em seguida, si
 
 >[!NOTE]
 >
->Esse recurso foi descontinuado no AEM Assets. Encontre substituições em [Práticas recomendadas de integração do AEM e do Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Se você tiver qualquer query, [entre em contato com o Atendimento ao Cliente do Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
+>Esse recurso foi descontinuado em [!DNL Assets]. Encontre substituições em [Práticas recomendadas de integração do AEM e do Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Se você tiver qualquer query, [entre em contato com o Atendimento ao Cliente do Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
 
 <!-- Hiding this for now via cqdoc-16834.
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-48.png)
@@ -172,5 +171,4 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 >[!MORELIKETHIS]
 >
 >* [Práticas recomendadas de integração de ativos e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
->* [Práticas recomendadas de compartilhamento de ativos para a pasta do Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
 
