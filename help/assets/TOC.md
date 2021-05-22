@@ -6,10 +6,9 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '582'
 ht-degree: 42%
 
 ---
@@ -27,7 +26,7 @@ ht-degree: 42%
    + [Pesquisar ativos digitais](search-assets.md)
    + [Trabalhar com metadados de ativos](metadata.md)
    + [Ativos multilíngues](multilingual-assets.md)
-   + [ [!DNL Adobe Stock] Usar ativos em ativos](aem-assets-adobe-stock.md)
+   + [Usar [!DNL Adobe Stock] ativos em Ativos](aem-assets-adobe-stock.md)
    + [Pré-visualização de ativos 3D](previewing-3d-assets.md)
    + [Revisar ativos e coleções de pastas](bulk-approval.md)
    + [Tags inteligentes aprimoradas](enhanced-smart-tags.md)
@@ -35,7 +34,7 @@ ht-degree: 42%
    + [Processar ativos](assets-workflow.md)
    + [Adicionar mapas de imagem](image-maps.md)
    + [Reutilizar ativos usando o MSM](reuse-assets-using-msm.md)
-   + [Connected Assets com [!DNL Sites]](use-assets-across-connected-assets-instances.md)
+   + [Ativos conectados com [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
    + [Informativo do Dynamic Media por Experience League](dynamic-media-newsletter.md)
    + [Configuração do Dynamic Media](administering-dynamic-media.md)
@@ -57,7 +56,7 @@ ht-degree: 42%
    + [Vídeo](s7-video.md)
    + [Adicionar recursos do Dynamic Media à sua página](scene7.md)
    + [Entrega de conteúdo HTTP2](http2.md)
-   + [Entrega de ativos de mídia dinâmica](delivering-dynamic-media-assets.md)
+   + [Entrega de ativos do Dynamic Media](delivering-dynamic-media-assets.md)
    + [Ativação da proteção de hotlink no Dynamic Media](hotlink-protection.md)
    + [Suporte para 3D](/help/assets/assets-3d.md)
    + [Conjuntos de imagem](image-sets.md)
@@ -87,11 +86,11 @@ ht-degree: 42%
    + [Personalizar e estender [!DNL Assets]](extending-assets.md)
    + [Processar ativos usando manipuladores de mídia e fluxos de trabalho](media-handlers.md)
    + [Estender funcionalidade de pesquisa](searchx.md)
-   + [Instalar e  [!DNL ImageMagick] configurar para trabalhar com o [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [Instale e configure [!DNL ImageMagick] para trabalhar com [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Integrar ativos ao fluxo de atividades](extending-activity-stream.md)
    + [Estender editor de ativos](asseteditorx.md)
    + [[!DNL Assets] API HTTP](mac-api-assets.md)
-   + [Suporte a fragmentos de conteúdo  [!DNL Assets] na API HTTP](assets-api-content-fragments.md)
+   + [Suporte a Fragmentos de conteúdo na API HTTP  [!DNL Assets] HTTP](assets-api-content-fragments.md)
    + [[!DNL Assets] desenvolvimento de proxy](proxy.md)
 + Administrar ativos {#administer}
    + [Formatos de arquivo não suportados](assets-formats.md)
@@ -125,12 +124,11 @@ ht-degree: 42%
    + [Multilocação para coleções, trechos e modelos de trecho](multi-tenancy.md)
    + [Marque seus ativos com água](watermarking.md)
    + [Modelos de ativos](asset-templates.md)
-   + [Práticas recomendadas para compartilhar pastas com a [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
-   + [ [!DNL Assets] Configurar com [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configurar [!DNL Assets] com [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicar ativos em [!DNL Brand Portal]](brand-portal-publish-assets.md)
-   + [Publicar pastas em [!DNL Brand Portal]](brand-portal-publish-folder.md)
-   + [Publicar coleções no [!DNL Brand Portal]](brand-portal-publish-collection.md)
+   + [Publicar pastas para [!DNL Brand Portal]](brand-portal-publish-folder.md)
+   + [Publicar coleções em [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + Fragmentos de conteúdo {#fragments}
    + [Trabalho com fragmentos de conteúdo](content-fragments/content-fragments.md)
    + [Gerenciamento dos fragmentos de conteúdo](content-fragments/content-fragments-managing.md)
