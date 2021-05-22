@@ -10,38 +10,40 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 7699c08b-a5b8-4f8b-8856-113d09349f49
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 525b11fbb60fc3568ecc028562ffbf174b8e4c37
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 2%
+source-wordcount: '80'
+ht-degree: 12%
 
 ---
 
 
-# Compartilhamento de pastas com Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
+# Compartilhamento de pastas com o Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
 
 >[!CAUTION]
 >
->O recurso AEM para compartilhamento de pasta do Creative Cloud está obsoleto. Os clientes são altamente aconselhados a usar recursos mais recentes, como [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) ou [AEM aplicativo desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Saiba mais sobre as [Práticas recomendadas de integração de AEM e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>O recurso de Compartilhamento de pastas do AEM para o Creative Cloud está obsoleto. É altamente recomendável que os clientes usem recursos mais recentes, como [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) ou [AEM aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR). Saiba mais em [Práticas recomendadas de integração do AEM e do Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
-Os ativos Adobe Experience Manager (AEM) permitem que você compartilhe pastas que contêm ativos com usuários do Adobe Creative Cloud. Para obter detalhes sobre como configurar o Adobe Marketing Cloud para permitir que você compartilhe ativos com o Adobe Creative Cloud, consulte [Configuração da integração Assets-Creative Cloud](/help/sites-administering/configure-assets-cc-integration.md).
+<!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 
-1. No console Ativos, selecione uma pasta para compartilhar com o Creative Cloud.
+Adobe Experience Manager (AEM) Assets lets you share folders containing assets with Adobe Creative Cloud users. For details on how to configure Adobe Marketing Cloud to let you share assets with Adobe Creative Cloud, see [Configuring Assets-Creative Cloud integration](/help/sites-administering/configure-assets-cc-integration.md).
+
+1. In the Assets console, select a folder to share with Creative Cloud.
 
    ![](assets/chlimage_1-139.png)
 
-1. Na barra de ferramentas, clique em **Compartilhar**.
+1. From the toolbar, click **Share**.
 
    ![](assets/chlimage_1-140.png)
 
-1. Na lista, selecione a opção **Adobe Creative Cloud**.
+1. From the list, select the **Adobe Creative Cloud** option.
 
    ![](assets/chlimage_1-141.png)
 
-1. Na página **Compartilhamento de Creative Cloud**, adicione o usuário para compartilhar a pasta e clique em **Salvar**.
+1. In the **Creative Cloud Sharing** page, add the user to share the folder with and then click **Save**.
 
    ![](assets/chlimage_1-142.png)
 
-1. Clique em **Ok** para fechar a mensagem de confirmação.
-1. Faça logon no Creative Cloud com as credenciais do usuário com o qual você compartilhou a pasta. A pasta compartilhada está disponível no Creative Cloud.
+1. Click **Ok** to close the confirmation message.
+1. Log on to Creative Cloud with the credentials of the user you shared the folder with. The shared folder is available in Creative Cloud.
+-->
