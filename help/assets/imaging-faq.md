@@ -1,20 +1,18 @@
 ---
 title: Imagem inteligente
 description: A geração de imagens inteligentes aplica as características de exibição exclusivas de cada usuário para veicular automaticamente as imagens certas, otimizadas para sua experiência, resultando em melhor desempenho e envolvimento.
-uuid: c11e52ba-8d64-4dc5-b30a-fc10c2b704e5
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
-feature: Asset Management
+feature: Gerenciamento de ativos,Representações
 role: Business Practitioner, Administrator
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-translation-type: tm+mt
-source-git-commit: 8d27457ad88cb84e670e78bab4c40da36fcfc629
+source-git-commit: fde3cb4a2461ca80f410f360fd5d56f359cec149
 workflow-type: tm+mt
-source-wordcount: '1912'
-ht-degree: 2%
+source-wordcount: '2626'
+ht-degree: 1%
 
 ---
 
@@ -42,6 +40,53 @@ Os seguintes exemplos de ativos de imagem representam a otimização adicionada 
 |  |  |  |  | Média = 51% |
 
 Semelhante ao acima, o Adobe também executou um teste com URLs 7009 de sites de clientes ativos. Eles conseguiram atingir uma média de 38% mais de otimização do tamanho do arquivo para JPEG. Para PNG com formato WebP, eles conseguiram atingir uma média de 31% a mais de otimização no tamanho do arquivo. Esse tipo de otimização é possível por causa da capacidade de Smart Imaging.
+
+Na Web móvel, os desafios são somados por dois fatores:
+
+* Grande variedade de dispositivos com diferentes formatos e telas de alta resolução.
+* Largura de banda de rede restrita.
+
+Em termos de imagens, o objetivo é servir imagens de melhor qualidade da maneira mais eficiente possível.
+
+### Sobre a otimização da taxa de pixels do dispositivo {#dpr}
+
+DPR (Device pixel ratio, proporção de pixel do dispositivo) - também conhecido como CSS pixel ratio - é a relação entre os pixels físicos e os pixels lógicos de um dispositivo. Especialmente com o advento das telas de retina, a resolução de pixels dos dispositivos móveis modernos está crescendo a um ritmo rápido.
+
+Habilitar a otimização da taxa de pixels do dispositivo renderiza a imagem na resolução nativa da tela, o que a torna mais nítida.
+
+Ativar a configuração do DPR do Smart Imaging ajusta automaticamente a imagem solicitada com base na densidade de pixels da exibição da qual a solicitação está sendo veiculada. Atualmente, a densidade de pixels da exibição vem dos valores do cabeçalho Akamai CDN.
+
+| Valores permitidos no URL de uma imagem | Descrição |
+|---|---|
+| `dpr=off` | Desative a otimização do DPR em um nível de URL de imagem individual. |
+| `dpr=on,dprValue` | Substitua o valor do DPR detectado pelo Smart Imaging, com um valor personalizado (como detectado por qualquer lógica do lado do cliente ou outros meios). O valor permitido para `dprValue` é qualquer número maior que 0. Valores especificados de 1,5, 2 ou 3 são típicos. |
+
+>[!NOTE]
+>
+>* Você pode usar `dpr=on,dprValue` mesmo que a configuração do DPR no nível da empresa esteja desativada.
+>* Devido à otimização do DPR, quando a imagem resultante é maior que a configuração MaxPix Dynamic Media , a largura MaxPix é sempre reconhecida pela manutenção da proporção da imagem.
+
+
+| Tamanho da imagem solicitada | Valor do DPR | Tamanho da imagem entregue |
+|---|---|---|
+| 816x500 | 1 | 816x500 |
+| 816x500 | 2 | 1632x1000 |
+
+Consulte também [Ao trabalhar com imagens](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) e [Ao trabalhar com o Recorte inteligente](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+
+### Sobre a otimização da largura de banda de rede {#network-bandwidth-optimization}
+
+Ativar a Largura de Banda da Rede ajusta automaticamente a qualidade da imagem veiculada com base na largura de banda real da rede. Para uma largura de banda de rede fraca, a otimização do DPR é automaticamente desativada, mesmo que já esteja ativada.
+
+Se desejar, sua empresa pode recusar a otimização da largura de banda da rede no nível de imagem individual ao anexar `network=off` ao URL da imagem.
+
+| Valor permitido no URL de uma imagem | Descrição |
+|---|---|
+| `network=off` | Desativa a otimização de rede em um nível de URL de imagem individual. |
+
+>[!NOTE]
+>
+>O DPR e os valores de largura de banda da rede são baseados nos valores detectados do lado do cliente do CDN empacotado. Esses valores às vezes são imprecisos. Por exemplo, iPhone5 com DPR=2 e iPhone12 com DPR=3, ambos mostram DPR=2. Ainda assim, para dispositivos de alta resolução, o envio de DPR=2 é melhor do que o envio de DPR=1. Em breve: O Adobe está trabalhando no código do lado do cliente para determinar com precisão o DPR de um usuário final.
 
 ## Quais são os principais benefícios do último Smart Imaging? {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -135,13 +180,23 @@ Para usar a Smart Imaging, a conta do Dynamic Media Classic ou Dynamic Media no 
 
 Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta ou contas da empresa.
 
-Toque em **[!UICONTROL Configurar > Configuração do aplicativo > Configurações gerais]**. Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado]**. Se você estiver usando um domínio genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição ao enviar um tíquete de suporte técnico.
+Toque em **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Configurações Gerais]** Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado]**. Se você estiver usando um domínio genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição ao enviar um tíquete de suporte técnico.
 
 Seu primeiro domínio personalizado não tem custo adicional com uma licença do Dynamic Media.
 
 ## Qual é o processo para ativar a Smart Imaging na minha conta? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
 Você inicia a solicitação para usar a geração inteligente de imagens; ele não é ativado automaticamente.
+
+Por padrão, o DPR de Smart Imaging e a otimização de rede estão desativadas (desativadas) em uma conta de empresa do Dynamic Media. Se quiser ativar (ativar) um ou ambos os aprimoramentos prontos para uso, crie um caso de suporte, conforme descrito abaixo.
+
+O agendamento de lançamento do DPR de Smart Imaging e da otimização de rede é o seguinte:
+
+| Região | Data de destino |
+|---|---|
+| América do Norte | 24 de maio de 2021 |
+| Europa, Oriente Médio e África | 25 de junho de 2021 |
+| Ásia-Pacífico | 19 de julho de 2021 |
 
 1. [Use o Admin Console para criar um caso de suporte.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 1. Forneça as seguintes informações no caso de suporte:
@@ -151,7 +206,7 @@ Você inicia a solicitação para usar a geração inteligente de imagens; ele n
 
       Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta ou contas da empresa.
 
-      Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**.
+      Clique em **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Configurações Gerais]**.
 
       Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado.]**
    1. Verifique se você está usando a CDN por meio do Adobe e não é gerenciada com uma relação direta.
@@ -159,7 +214,7 @@ Você inicia a solicitação para usar a geração inteligente de imagens; ele n
 
       Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta ou contas da empresa.
 
-      Clique em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**.
+      Clique em **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Configurações Gerais]**.
 
       Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado]**. Se você estiver usando um domínio genérico do Dynamic Media Classic, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
    1. Indique se você também precisa de Smart Imaging para funcionar via HTTP/2.
@@ -190,7 +245,7 @@ Durante a transição inicial, as imagens não armazenadas em cache acessam dire
 ## Como posso verificar se a geração de imagens inteligentes está funcionando como esperado?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Depois que sua conta for configurada com geração inteligente de imagens, carregue um URL de imagem do Dynamic Media Classic ou Adobe Experience Manager - Dynamic Media no navegador.
-1. Abra o painel do desenvolvedor do Chrome clicando em **[!UICONTROL Exibir > Desenvolvedor > Ferramentas do desenvolvedor]** no navegador. Ou escolha qualquer ferramenta de desenvolvedor de navegador de sua escolha.
+1. Abra o painel do desenvolvedor do Chrome clicando em **[!UICONTROL Exibir]** > **[!UICONTROL Desenvolvedor]** > **[!UICONTROL Ferramentas do desenvolvedor]** no navegador. Ou escolha qualquer ferramenta de desenvolvedor de navegador de sua escolha.
 
 1. Certifique-se de que o cache esteja desativado quando as ferramentas do desenvolvedor estiverem abertas.
 
@@ -210,6 +265,10 @@ Durante a transição inicial, as imagens não armazenadas em cache acessam dire
 
 Sim. Você pode desativar a Imagem inteligente adicionando o modificador `bfc=off` ao URL.
 
+## Posso solicitar que o DPR e a otimização de rede sejam desativados no nível da empresa? {#dpr-companylevel-turnoff}
+
+Sim. Para desativar o DPR e a otimização de rede em sua empresa, crie um caso de suporte conforme descrito anteriormente neste tópico.
+
 ## Que &quot;ajuste&quot; está disponível? Existem configurações ou comportamentos que podem ser definidos? (#tuning-settings)
 
 Atualmente, você pode ativar ou desativar o Smart Imaging. Nenhum outro ajuste está disponível.
@@ -218,6 +277,14 @@ Atualmente, você pode ativar ou desativar o Smart Imaging. Nenhum outro ajuste 
 
 Não há essa capacidade de provisionamento no Smart Imaging atual.
 
-## Às vezes, uma imagem JPEG é retornada ao Chrome em vez de uma imagem WebP. Por quê? (#jpeg-webp)
+## Às vezes, uma imagem JPEG é retornada ao Chrome em vez de uma imagem WebP. Por que essa mudança acontece? (#jpeg-webp)
 
 O Smart Imaging determina se a conversão é benéfica ou não. Ele retorna a nova imagem somente se a conversão resultar em um tamanho de arquivo menor com qualidade comparável.
+
+## Como a otimização do DPR do Smart Imaging funciona com componentes do Adobe Experience Manager Sites e visualizadores do Dynamic Media?
+
+* Os Componentes principais dos sites do Experience Manager são configurados por padrão para otimização do DPR. Para evitar imagens com tamanho excessivo devido à otimização do DPR de imagem inteligente do lado do servidor, `dpr=off` é sempre adicionado às imagens Dynamic Media dos Componentes principais do Experience Manager Sites .
+* Dado que o Dynamic Media Foundation Component é configurado por padrão para otimização de DPR, para evitar imagens com tamanho excessivo devido à otimização de DPR de imagem inteligente do lado do servidor, `dpr=off` é sempre adicionado às imagens do Dynamic Media Foundation Component. Mesmo que o cliente desmarque a otimização do DPR no Componente de base do DM, o DPR de imagem inteligente do lado do servidor não inicia. Em resumo, no Componente de base do DM, a otimização do DPR entra em vigor com base apenas na configuração de nível do Componente de base do DM.
+* Qualquer otimização de DPR do lado do visualizador funciona em conjunto com a otimização de DPR de imagem inteligente do lado do servidor e não resulta em imagens muito grandes. Em outras palavras, sempre que o DPR for manipulado pelo visualizador, como a exibição principal somente em um visualizador habilitado para zoom, os valores do DPR de imagem inteligente do lado do servidor não serão acionados. Da mesma forma, sempre que elementos do visualizador, como amostras e miniaturas, não tiverem tratamento com DPR, o valor do DPR de Smart Imaging do lado do servidor será acionado.
+
+Consulte também [Ao trabalhar com imagens](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) e [Ao trabalhar com o Recorte inteligente](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
