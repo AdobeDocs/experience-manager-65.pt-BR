@@ -10,12 +10,11 @@ discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
-feature: Components,Publishing
-translation-type: tm+mt
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+feature: Componentes,Publicação
+source-git-commit: fde3cb4a2461ca80f410f360fd5d56f359cec149
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 31%
+source-wordcount: '3274'
+ht-degree: 30%
 
 ---
 
@@ -151,39 +150,50 @@ Você *deve* editar as seguintes Configurações do Dynamic Media ao tocar no í
 >
 >Por padrão, o componente de imagem do Dynamic Media é adaptável. Se desejar torná-lo de um tamanho fixo, defina-o no componente na guia **[!UICONTROL Avançado]** com a **[!UICONTROL Largura]** e a **[!UICONTROL Altura.]**
 
-* **[!UICONTROL Predefinição do visualizador]** — Selecione uma predefinição do visualizador existente no menu suspenso. Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições do visualizador. Não é possível selecionar uma predefinição de visualizador se você estiver usando uma predefinição de imagem e vice-versa.
+* **[!UICONTROL Predefinição do visualizador]**  - Selecione uma predefinição do visualizador existente no menu suspenso. Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições do visualizador. Não é possível selecionar uma predefinição de visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 
    Essa será a única opção disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia. As predefinições do visualizador exibidas também são inteligentes: apenas as predefinições relevantes do visualizador são exibidas.
 
-* **[!UICONTROL Modificadores do visualizador]** — Os modificadores do visualizador assumem a forma de par name=value com um &amp; delimitador e permitem alterar os visualizadores, conforme descrito no Guia de referência dos visualizadores. Um exemplo de um modificador do visualizador é `posterimage=img.jpg&caption=text.vtt,1`, que define uma imagem diferente para a miniatura do vídeo e associa um arquivo de legenda/subtítulo fechado ao vídeo.
+* **[!UICONTROL Modificadores do visualizador]**  - Os modificadores do visualizador assumem a forma de par name=value com um &amp; delimitador e permitem alterar os visualizadores, conforme descrito no Guia de referência dos visualizadores. Um exemplo de um modificador do visualizador é `posterimage=img.jpg&caption=text.vtt,1`, que define uma imagem diferente para a miniatura do vídeo e associa um arquivo de legenda/subtítulo fechado ao vídeo.
 
-* **[!UICONTROL Predefinição de imagem]** — Selecione uma predefinição de imagem existente no menu suspenso. Se a predefinição de imagem que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições de imagens. Não é possível selecionar uma predefinição de visualizador se você estiver usando uma predefinição de imagem e vice-versa.
-
-   Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
-
-* **[!UICONTROL Modificadores de imagem]** — Você pode aplicar efeitos de imagem fornecendo comandos de imagem adicionais. Eles estão descritos em Predefinições de imagem e na referência do Comando de disponibilização de imagens.
+* **[!UICONTROL Predefinição de imagem]**  - Selecione uma predefinição de imagem existente no menu suspenso. Se a predefinição de imagem que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições de imagens. Não é possível selecionar uma predefinição de visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 
    Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
 
-* **[!UICONTROL Pontos de interrupção]** — se estiver usando esse ativo em um site responsivo, é necessário adicionar os pontos de interrupção da imagem. Os pontos de interrupção da imagem precisam ser separados por vírgulas (,). Essa opção funciona quando não há altura ou largura definida em uma predefinição de imagem.
+* **[!UICONTROL Modificadores de imagem]**  - Você pode aplicar efeitos de imagem fornecendo comandos de imagem adicionais. Eles estão descritos em Predefinições de imagem e na referência do Comando de disponibilização de imagens.
+
+   Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
+
+* **[!UICONTROL Pontos de interrupção]**  - se estiver usando esse ativo em um site responsivo, é necessário adicionar os pontos de interrupção da imagem. Os pontos de interrupção da imagem precisam ser separados por vírgulas (,). Essa opção funciona quando não há altura ou largura definida em uma predefinição de imagem.
 
    Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
 
    Você pode editar as seguintes configurações avançadas ao tocar em **[!UICONTROL Editar]** no componente.
 
-* **[!UICONTROL Título]** — Altere o título da imagem.
+* **[!UICONTROL Otimizar para dispositivos]**  de resolução mais alta - marque a caixa de seleção (padrão) para permitir a otimização do DPR (Device Pixel Ratio).
 
-* **[!UICONTROL Texto alternativo]** — Adicione um título à imagem para os usuários que tenham os gráficos desativados.
+   Consulte também [Sobre a otimização da taxa de pixels do dispositivo](/help/assets/imaging-faq.md#dpr).
+
+   Observe que qualquer valor de DPR de imagem inteligente do Adobe Experience Manager Dynamic Media é ignorado.
+
+   A opção **[!UICONTROL Otimizar para dispositivos de resolução mais alta]** só é mostrada quando o seguinte é verdadeiro:
+   * Em Tipo de predefinição, **[!UICONTROL Predefinição de imagem]** é selecionado e **[!UICONTROL RESS_IP]** é selecionado na lista suspensa **[!UICONTROL Predefinição de imagem]**.
+
+   ![configuração da relação de pixels do dispositivo para predefinição de imagem](/help/assets/assets-dm/dpr-ress-ip.png)
+
+* **[!UICONTROL Título]**  - Altere o título da imagem.
+
+* **[!UICONTROL Texto alternativo]**  - Adicione um título à imagem para os usuários que têm os gráficos desativados.
 
    Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
 
-* **[!UICONTROL URL, Abrir em]** — Você pode definir um ativo para abrir um link. Defina o URL e, em Abrir em, indique se você deseja que ele abra na mesma janela ou em uma nova.
+* **[!UICONTROL URL, Abrir em]**  - Você pode definir um ativo para abrir um link. Defina o URL e, em Abrir em, indique se você deseja que ele abra na mesma janela ou em uma nova.
 
    Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
 
-* **[!UICONTROL Largura]** — Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
+* **[!UICONTROL Largura]**  - insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
 
-* **[!UICONTROL Altura]** — Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
+* **[!UICONTROL Altura]**  - Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
 
 
 #### Ao trabalhar com vídeo {#when-working-with-video}
@@ -198,22 +208,22 @@ Você deve editar as seguintes configurações do Dynamic Media clicando em **[!
 >
 >Por padrão, o componente de vídeo Mídia dinâmica é adaptável. Se quiser torná-lo de um tamanho fixo, defina-o no componente com a **[!UICONTROL Largura]** e **[!UICONTROL Altura]** na guia **[!UICONTROL Avançado]**.
 
-* **[!UICONTROL Predefinição do visualizador]** — Selecione uma predefinição do visualizador de vídeo existente no menu suspenso. Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições do visualizador.
+* **[!UICONTROL Predefinição do visualizador]**  - Selecione uma predefinição do visualizador de vídeo existente no menu suspenso. Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. Consulte Gerenciar predefinições do visualizador.
 
-* **[!UICONTROL Modificadores do visualizador]** — Os modificadores do visualizador assumem a forma de par name=value com um &amp; delimiter e permitem alterar os visualizadores, conforme descrito no Guia de referência de visualizadores do Adobe. Um exemplo de um modificador do visualizador é `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL Modificadores do visualizador]**  - Os modificadores do visualizador assumem a forma de par name=value com um &amp; delimiter e permitem alterar os visualizadores, conforme descrito no Guia de referência de visualizadores do Adobe. Um exemplo de um modificador do visualizador é `posterimage=img.jpg&caption=text.vtt,1`
 
    Com modificadores do visualizador, você pode, por exemplo, fazer o seguinte:
 
    * Associar um arquivo de legenda a um vídeo: [caption][https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Associar um arquivo de navegação a um vídeo: [navigation][https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
-   Você pode editar as seguintes Configurações avançadas clicando em **[!UICONTROL Editar]** no componente.
+      Você pode editar as seguintes Configurações avançadas clicando em **[!UICONTROL Editar]** no componente.
 
-* **[!UICONTROL Título]** — Altere o título do vídeo.
+* **[!UICONTROL Título]**  - Altere o título do vídeo.
 
-* **[!UICONTROL Largura]** — Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
+* **[!UICONTROL Largura]**  - insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
 
-* **[!UICONTROL Altura]** — Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
+* **[!UICONTROL Altura]**  - Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
 
 #### Ao trabalhar com o Recorte inteligente {#when-working-with-smart-crop}
 
@@ -229,25 +239,39 @@ Você deve editar a seguinte configuração do Dynamic Media clicando em **[!UIC
 >
 >Por padrão, o componente de imagem do Dynamic Media é adaptável. Se desejar torná-lo de um tamanho fixo, defina-o no componente na guia **[!UICONTROL Avançado]** com a **[!UICONTROL Largura]** e a **[!UICONTROL Altura.]**
 
-* **[!UICONTROL Modificadores de imagem]** — Você pode aplicar efeitos de imagem fornecendo comandos de imagem adicionais. Eles estão descritos em Predefinições de imagem e na referência do Comando de disponibilização de imagens.
+* **[!UICONTROL Modificadores de imagem]**  - Você pode aplicar efeitos de imagem fornecendo comandos de imagem adicionais. Eles estão descritos em Predefinições de imagem e na referência do Comando de disponibilização de imagens.
 
    Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
 
    Você pode editar as seguintes Configurações avançadas clicando em **[!UICONTROL Editar]** no componente.
 
-* **[!UICONTROL Título]** — Altere o título da imagem de Recorte inteligente.
+* **[!UICONTROL Ativar correspondência de proporção de aspecto]**  - Para permitir que a Dynamic Media escolha uma representação de recorte inteligente com uma proporção de aspecto que melhor corresponda à proporção de aspecto da imagem original, selecione esta opção.
 
-* **[!UICONTROL Texto alternativo]** — Adicione um título à imagem de recorte inteligente para os usuários que têm gráficos desativados.
+* **[!UICONTROL Otimizar para dispositivos]**  de resolução mais alta - marque a caixa de seleção (padrão) para permitir a otimização do DPR (Device Pixel Ratio).
+
+   Consulte também [Sobre a otimização da taxa de pixels do dispositivo](/help/assets/imaging-faq.md#dpr).
+
+   Observe que qualquer valor de DPR de imagem inteligente do Adobe Experience Manager Dynamic Media é ignorado.
+
+   A opção **[!UICONTROL Otimizar para dispositivos de resolução mais alta]** só é mostrada quando o seguinte é verdadeiro:
+
+   * Em Tipo de predefinição, a opção **[!UICONTROL Recorte inteligente]** é selecionada.
+
+   ![configuração de proporção de pixels do dispositivo para recorte inteligente](/help/assets/assets-dm/dpr-smartcrop.png)
+
+* **[!UICONTROL Título]**  - Altere o título da imagem de Recorte inteligente.
+
+* **[!UICONTROL Texto alternativo]**  - Adicione um título à imagem de recorte inteligente para os usuários que têm gráficos desativados.
 
    Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
 
-* **[!UICONTROL URL, Abrir em]** — Você pode definir um ativo para abrir um link. Defina o URL e, em Abrir em, indique se você deseja que ele abra na mesma janela ou em uma nova.
+* **[!UICONTROL URL, Abrir em]**  - Você pode definir um ativo para abrir um link. Defina o URL e, em Abrir em, indique se você deseja que ele abra na mesma janela ou em uma nova.
 
    Essa opção não estará disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mix de mídia.
 
-* **[!UICONTROL Largura]** — Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
+* **[!UICONTROL Largura]**  - insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
 
-* **[!UICONTROL Altura]** — Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
+* **[!UICONTROL Altura]**  - Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
 
 ### Componente Mídia interativa {#interactive-media-component}
 
@@ -272,21 +296,21 @@ Observe que não há suporte para a atribuição de uma predefinição do visual
 
 Você pode editar as seguintes configurações **[!UICONTROL Geral]** tocando em **[!UICONTROL Editar]** no componente.
 
-* **[!UICONTROL Predefinição do visualizador]** — Selecione uma predefinição do visualizador existente no menu suspenso. Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. As Predefinições do visualizador devem ser publicadas para poderem ser usadas. Consulte Gerenciar predefinições do visualizador.
+* **[!UICONTROL Predefinição do visualizador]**  - Selecione uma predefinição do visualizador existente no menu suspenso. Se a predefinição de visualizador que você está procurando não estiver visível, pode ser necessário torná-la visível. As Predefinições do visualizador devem ser publicadas para poderem ser usadas. Consulte Gerenciar predefinições do visualizador.
 
-* **[!UICONTROL Título]** — Altere o título do vídeo.
+* **[!UICONTROL Título]**  - Altere o título do vídeo.
 
-* **[!UICONTROL Largura]** — Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
+* **[!UICONTROL Largura]**  - insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
 
-* **[!UICONTROL Altura]** — Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
+* **[!UICONTROL Altura]**  - Insira o valor em pixels se desejar que a imagem tenha um tamanho fixo. Deixar esse valor em branco torna o ativo adaptável.
 
    É possível editar as seguintes configurações de **[!UICONTROL Adicionar ao carrinho]** clicando em **[!UICONTROL Editar]** no componente.
 
-* **[!UICONTROL Mostrar ativo do produto]** — Por padrão, esse valor é selecionado. O ativo do produto mostra uma imagem do produto, conforme definido no módulo Comércio. Limpe a marca de seleção para não mostrar o ativo do produto.
+* **[!UICONTROL Mostrar ativo do produto]**  - por padrão, esse valor é selecionado. O ativo do produto mostra uma imagem do produto, conforme definido no módulo Comércio. Limpe a marca de seleção para não mostrar o ativo do produto.
 
-* **[!UICONTROL Mostrar preço]** do produto — Por padrão, esse valor é selecionado. O preço do produto mostra o preço do item, conforme definido no módulo Comércio. Limpe a marca de seleção para não mostrar o preço do produto.
+* **[!UICONTROL Mostrar preço do produto]**  - por padrão, esse valor é selecionado. O preço do produto mostra o preço do item, conforme definido no módulo Comércio. Limpe a marca de seleção para não mostrar o preço do produto.
 
-* **[!UICONTROL Mostrar formulário]** do produto — Por padrão, esse valor não está selecionado. O Formulário de produto inclui quaisquer variantes de produto, como tamanho e cor. Limpe a marca de seleção para não mostrar as variantes do produto.
+* **[!UICONTROL Mostrar formulário do produto]**  - por padrão, esse valor não está selecionado. O Formulário de produto inclui quaisquer variantes de produto, como tamanho e cor. Limpe a marca de seleção para não mostrar as variantes do produto.
 
 ### Componente de mídia panorâmica {#panoramic-media-component}
 
@@ -314,7 +338,7 @@ Observe que não há suporte para a atribuição de uma predefinição do visual
 
 Você pode editar a seguinte configuração ao tocar em **[!UICONTROL Configurar]** no componente.
 
-* **[!UICONTROL Predefinição do visualizador]** — Selecione um visualizador existente no menu suspenso Predefinição do visualizador.
+* **[!UICONTROL Predefinição do visualizador]**  - Selecione um visualizador existente no menu suspenso Predefinição do visualizador.
 
 Se a predefinição do visualizador que você está procurando não estiver visível, verifique se ela foi publicada. Você deve publicar as predefinições do visualizador antes de usá-las. Consulte [Gerenciar predefinições do visualizador](/help/assets/managing-viewer-presets.md).
 
@@ -330,7 +354,7 @@ O visualizador inclui suporte nativo para a entrega de 360 ativos de vídeo. Por
 
 Você pode editar a seguinte configuração ao tocar em **[!UICONTROL Configurar]** no componente.
 
-* **[!UICONTROL Predefinição do visualizador]** — Selecione um visualizador existente no menu suspenso Predefinição do visualizador. Use o Video360VR para usuários finais que usam óculos de realidade virtual. Inclui controles básicos de reprodução de vídeo e recursos de redes sociais. Use Video360_social, que inclui controles básicos de reprodução de vídeo. A renderização do vídeo é feita no modo estéreo. O controlo manual do ponto de vista está desativado, mas o controlo giroscópico está ativado. Não há recursos de redes sociais.
+* **[!UICONTROL Predefinição do visualizador]**  - Selecione um visualizador existente no menu suspenso Predefinição do visualizador. Use o Video360VR para usuários finais que usam óculos de realidade virtual. Inclui controles básicos de reprodução de vídeo e recursos de redes sociais. Use Video360_social, que inclui controles básicos de reprodução de vídeo. A renderização do vídeo é feita no modo estéreo. O controlo manual do ponto de vista está desativado, mas o controlo giroscópico está ativado. Não há recursos de redes sociais.
 
 Se a predefinição do visualizador que você está procurando não estiver visível, verifique se ela foi publicada. Você deve publicar as predefinições do visualizador antes de usá-las. Consulte [Gerenciar predefinições do visualizador](/help/assets/managing-viewer-presets.md).
 
