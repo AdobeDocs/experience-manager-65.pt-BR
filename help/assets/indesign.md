@@ -3,15 +3,14 @@ title: Integrar [!DNL Assets] com [!DNL InDesign Server]
 description: Saiba como integrar [!DNL Adobe Experience Manager Assets] com [!DNL Adobe InDesign Server].
 contentOwner: AG
 role: Administrator
-feature: Publishing
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Publicação
+exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
+source-git-commit: 3c1a30f36222c319c354afa408555982bfe2804e
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1565'
 ht-degree: 4%
 
 ---
-
 
 # Integre [!DNL Adobe Experience Manager Assets] com [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
@@ -114,7 +113,9 @@ Argumentos de extração de mídia e caminhos de script
 
 * **Estender scripts**: Você pode especificar combinações de script diferentes aqui. Se quiser que seus próprios scripts sejam executados no [!DNL InDesign Server], salve os scripts em `/apps/settings/dam/indesign/scripts`.
 
-Para obter informações sobre [!DNL Adobe InDesign] scripts, consulte [documentação do desenvolvedor do InDesign](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+<!-- TBD: Hiding this link since ADC is not available anymore. 
+For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+-->
 
 >[!CAUTION]
 >
