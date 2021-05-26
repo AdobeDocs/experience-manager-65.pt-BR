@@ -5,18 +5,18 @@ contentOwner: AG
 role: Business Practitioner, Administrator, Leader
 feature: Ativos, usuários e grupos conectados
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
+source-git-commit: 9e99d25a15aee56721112e2afd4b570ba7854bd7
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2742'
 ht-degree: 29%
 
 ---
 
 # Use o Connected Assets para compartilhar ativos do DAM no [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-Em grandes empresa, a infraestrutura necessária para criar sites pode ser distribuída. Às vezes, os recursos de criação de sites e os ativos digitais usados para criar esses sites podem residir em diferentes implantações. Um motivo pode ser a distribuição geográfica de implantações existentes necessárias para trabalhar em conjunto. Outra razão pode ser as aquisições que levam a uma infraestrutura heterogênea que a empresa-mãe quer usar em conjunto.
+Em grandes empresa, a infraestrutura necessária para criar sites pode ser distribuída. Às vezes, os recursos de criação de sites e os ativos digitais usados para criar esses sites podem residir em diferentes implantações. Um motivo pode ser a distribuição geográfica de implantações existentes necessárias para trabalhar em conjunto. Outra razão pode ser as aquisições que levam à infraestrutura heterogênea, incluindo versões [!DNL Experience Manager] diferentes, que a empresa pai deseja usar em conjunto.
 
-Os usuários podem criar páginas da Web em [!DNL Experience Manager Sites]. [!DNL Experience Manager Assets] é o sistema de Gerenciamento de ativos digitais (DAM) que fornece os ativos necessários para sites. [!DNL Experience Manager] O agora é compatível com o caso de uso acima, integrando  [!DNL Sites] e  [!DNL Assets].
+A funcionalidade Ativos conectados oferece suporte ao caso de uso acima, integrando [!DNL Experience Manager Sites] e [!DNL Experience Manager Assets]. Os usuários podem criar páginas da Web em [!DNL Sites] que usam os ativos digitais de uma implantação [!DNL Assets] separada.
 
 ## Visão geral do Connected Assets {#overview-of-connected-assets}
 
@@ -188,8 +188,8 @@ Para visualizar e gerenciar referências na implantação [!DNL Assets], siga es
 * Os ativos locais não são sincronizados com os ativos originais na implantação remota. As edições, exclusões ou revogação de permissões na implantação do DAM não são propagadas para a jusante.
 * Os ativos locais são cópias somente leitura. [!DNL Experience Manager]Os componentes do fazem edições não destrutivas nos ativos. Nenhuma outra edição é permitida.
 * Os ativos buscados localmente estão disponíveis apenas para fins de criação. Os fluxos de trabalho de atualização de ativos não podem ser aplicados e os metadados não podem ser editados.
-* Somente as imagens e os formatos de documento listados são compatíveis. [!DNL Dynamic Media] ativos, fragmentos de conteúdo e fragmentos de experiência não são compatíveis.
-* [!DNL Experience Manager] não busca os esquemas de metadados. Significa que nem todos os metadados buscados podem ser exibidos. Se o schema for atualizado separadamente, todas as propriedades serão exibidas.
+* Somente as imagens e os formatos de documento listados são compatíveis. [!DNL Dynamic Media] ativos,  [!DNL Content Fragments] e não  [!DNL Experience Fragments] são compatíveis.
+* [!DNL Experience Manager] não busca os esquemas de metadados. Significa que nem todos os metadados buscados podem ser exibidos. Se o esquema for atualizado separadamente na implantação [!DNL Sites], todas as propriedades de metadados serão exibidas.
 * Todos os autores [!DNL Sites] têm permissões de leitura nas cópias buscadas, mesmo que os autores não possam acessar a implantação remota do DAM.
 * Não há suporte de API para personalizar a integração.
 * A funcionalidade suporta pesquisa e uso ininterruptos de ativos remotos. Para disponibilizar muitos ativos remotos em uma única implantação local, considere migrar os ativos. Consulte [guia de migração de Ativos](assets-migration-guide.md).
@@ -199,8 +199,8 @@ Para visualizar e gerenciar referências na implantação [!DNL Assets], siga es
 
 * [!DNL Assets] a implantação no  [!DNL Adobe Managed Services] é compatível.
 * [!DNL Sites] O pode se conectar a um único  [!DNL Assets] repositório de cada vez.
-* Uma licença de [!DNL Assets] funcionando como repositório remoto.
-* Uma ou mais licenças de [!DNL Sites] funcionando como implantação de criação local.
+* É necessária uma licença de [!DNL Assets] que funcione como repositório remoto.
+* Uma ou mais licenças de [!DNL Sites] funcionando como implantação de criação local são necessárias.
 
 ### Uso {#usage}
 
