@@ -11,10 +11,9 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-translation-type: tm+mt
-source-git-commit: 97182f9a7b5fa5f96106fed59eeecf866c6d34ff
+source-git-commit: 4a4ecd1304a1eed0916c3f1a51558397fa4dbc47
 workflow-type: tm+mt
-source-wordcount: '3205'
+source-wordcount: '3251'
 ht-degree: 1%
 
 ---
@@ -104,8 +103,12 @@ A Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
    <td>Nível de suporte</td>
   </tr>
   <tr>
-   <td>JDK do Java SE 12 do Oracle [1]</td>
-   <td>Z: Não suportado </td>
+   <td><strong>Azul Zulu OpenJDK 11 - 64 bits [3]</strong></td>
+   <td>A: Suportado</td>
+  </tr>
+  <tr>
+   <td>Azul Zulu OpenJDK 8 - 64 bits [3]</td>
+   <td>A: Suportado</td>
   </tr>
   <tr>
    <td><strong>JDK Java SE 11 do Oracle - 64 bits</strong></td>
@@ -137,7 +140,8 @@ A Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
 1. O Oracle migrou para um modelo de &quot;Suporte de longo prazo&quot; (LTS) dos produtos Oracle Java SE. O Java 9, o Java 10 e o Java 12 são versões não LTS do Oracle (consulte [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implantar AEM no ambiente de produção, o Adobe fornece suporte somente para as versões LTS do Java.
 
 1. O IBM JRE só é compatível com o WebSphere Application Server.
-1. O suporte e a distribuição do JDK Java SE do Oracle, incluindo todas as atualizações de manutenção de versões LTS além do fim das atualizações públicas, serão suportados pelo Adobe diretamente para todos os clientes AEM que usam a tecnologia Oracle Java SE. Consulte o [Suporte do Oracle Java para Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) para obter mais informações.
+1. O suporte e a distribuição do JDK Java SE do Oracle, incluindo todas as atualizações de manutenção de versões LTS além do fim das atualizações públicas, serão suportados pelo Adobe diretamente para todos os clientes AEM que usam a tecnologia Oracle Java SE **até dezembro de 2022**. Consulte o [Suporte do Oracle Java para Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) para obter mais informações.
+1. O suporte e a distribuição das Builds do Azul Zulu do OpenJDK, incluindo todas as atualizações de manutenção das versões LTS, serão suportados pelo Adobe diretamente para todos os clientes AEM que usam as Builds do Azul Zulu do OpenJDK, a partir do AEM 6.5 SP9.
 
 ### Armazenamento e persistência {#storage-persistence}
 
