@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Gerenciamento de ativos,Pesquisar
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
+source-git-commit: a7f8e98729dd27f6976d3289a51f22435fced585
 workflow-type: tm+mt
-source-wordcount: '9796'
+source-wordcount: '9775'
 ht-degree: 4%
 
 ---
@@ -811,10 +811,6 @@ Para imprimir as anotações e o status de revisão, clique em **[!UICONTROL Imp
    ![Selecione a posição da anotação/status de revisão a ser exibida no PDF na caixa de diálogo Imprimir](assets/Print-annotation-dialog.png)
 
    É possível escolher outras configurações, dependendo da posição em que deseja que as anotações/status apareçam no PDF impresso. Se desejar que as anotações/status apareçam em uma página separada do ativo impresso, escolha **[!UICONTROL Próxima página]**.
-
-   >[!NOTE]
-   >
-   >Anotações lentas podem não ser renderizadas adequadamente no arquivo PDF. Para renderização ideal, o Adobe recomenda que você limite as anotações a 50 palavras.
 
 1. Clique em **[!UICONTROL Imprimir]**. Dependendo da opção escolhida na etapa 2, o PDF gerado exibirá as anotações/os status na posição especificada. Por exemplo, se optar por imprimir as anotações e o status da revisão usando a configuração **Superior esquerdo**, o resultado será semelhante ao arquivo PDF mostrado aqui.
 
