@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 440aa5a2f4a020a16104f11eaf484a2cf7291e1f
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2980'
 ht-degree: 95%
 
 ---
@@ -155,7 +154,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
    ![screen_shot_2018-03-23at103615](assets/screen_shot_2018-03-23at103615.png)
 
-* [Pesquisar](/help/sites-authoring/search.md)
+* [Pesquisar  ](/help/sites-authoring/search.md)
 
    ![](do-not-localize/screen_shot_2018-03-23at103542.png)
 
@@ -271,7 +270,7 @@ Recursos e downloads do desenvolvedor
    >Para obter uma visão geral de todos os atalhos de teclado, consulte a seguinte documentação:
    >
    >    * [Atalhos de teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   >    * [Atalhos de teclado para consoles](/help/sites-authoring/keyboard-shortcuts.md)
+   * [Atalhos de teclado para os consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## Barra de ferramentas de Ações {#actions-toolbar}
@@ -288,11 +287,10 @@ A forma como você [seleciona um recurso](/help/sites-authoring/basic-handling.m
 
 Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer, opções adicionais serão exibidas. Clicar ou tocar nas reticências (três pontos ou **...**) abre um seletor suspenso que contém todas as ações restantes. Por exemplo, após selecionar uma página no console **Sites**:
 
-![bh-12](assets/bh-12.png)
+![Barra de ferramentas de Ações](assets/bh-12.png)
 
 >[!NOTE]
->
->Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
+Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
 
 ## Ações rápidas  {#quick-actions}
 
@@ -314,8 +312,7 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 * [Exibição de lista  ](#list-view)
 
 >[!NOTE]
->
->Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
+Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
 
 ### Seleção de recursos    {#selecting-resources}
 
@@ -499,8 +496,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 * Altere a ordem dos itens usando a barra vertical pontilhada na extremidade direita de cada item da lista.
 
    >[!NOTE]
-   >
-   >Alterar a ordem funciona somente em uma pasta ordenável que tenha o valor `jcr:primaryType` como `sling:OrderedFolder`.
+   Alterar a ordem funciona somente em uma pasta ordenável que tenha o valor `jcr:primaryType` como `sling:OrderedFolder`.
 
    ![bh-22](assets/bh-22.png)
 
@@ -525,8 +521,7 @@ Por exemplo, no Sites, é possível selecionar somente conteúdo (padrão), árv
 Se somente conteúdo for selecionado, apenas o ícone do painel será exibido. Se qualquer outra opção for selecionada, o nome da opção aparecerá ao lado do ícone do painel.
 
 >[!NOTE]
->
->[Atalhos de teclado](/help/sites-authoring/keyboard-shortcuts.md) estão disponíveis para alternar rapidamente entre as opções de exibição do painel.
+[Atalhos de teclado](/help/sites-authoring/keyboard-shortcuts.md) estão disponíveis para alternar rapidamente entre as opções de exibição do painel.
 
 ### Árvore de conteúdo {#content-tree}
 
@@ -537,10 +532,8 @@ Usando o painel lateral da árvore de conteúdo, juntamente com uma exibição d
 ![bh-26](assets/bh-26.png)
 
 >[!NOTE]
->
->Quando uma entrada na exibição hierárquica é selecionada, as teclas de seta podem ser usadas para navegar rapidamente pela hierarquia.
->
->Consulte os [atalhos de teclado](/help/sites-authoring/keyboard-shortcuts.md) para obter mais informações.
+Quando uma entrada na exibição hierárquica é selecionada, as teclas de seta podem ser usadas para navegar rapidamente pela hierarquia.
+Consulte os [atalhos de teclado](/help/sites-authoring/keyboard-shortcuts.md) para obter mais informações.
 
 ### Linha do tempo {#timeline}
 
