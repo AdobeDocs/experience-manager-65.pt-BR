@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] 6.5 notas de versão anteriores do Servi
 description: Notas de versão para  [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
-source-git-commit: 8c69687ef4fbc2e4ee729d98232fe56db9b1df5a
+source-git-commit: d06e60baac692c92358244944226b77d5dad4022
 workflow-type: tm+mt
 source-wordcount: '20321'
 ht-degree: 15%
@@ -1107,7 +1107,7 @@ Esta é a lista de correções fornecidas na versão [!DNL Experience Manager] 6
 
 * Ao usar um pop-up em cascata em esquemas de metadados, ao selecionar e salvar uma opção suspensa contendo um apóstrofo (do menu suspenso filho), a opção de apóstrofe selecionada desaparece após reabrir o ativo [!UICONTROL Propriedades] (NPR-32649).
 
-* [!UICONTROL O Asset Insights sincroniza ] Jobstops e falha se encontrar entradas inválidas (no lado do Analytics) em vez de passar para a próxima entrada (NPR-32674).
+* [!UICONTROL O Assets Insights sincroniza ] Jobstops e falha se encontrar entradas inválidas (no lado do Analytics) em vez de passar para a próxima entrada (NPR-32674).
 
 * O giroscópio não é funcional, pois os sensores de movimento são desativados por padrão em navegadores móveis no visualizador panorâmico (CQ-4272937).
 
