@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Gerenciamento de ativos,Pesquisar
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: a7f8e98729dd27f6976d3289a51f22435fced585
+source-git-commit: d06e60baac692c92358244944226b77d5dad4022
 workflow-type: tm+mt
 source-wordcount: '9775'
 ht-degree: 4%
@@ -113,7 +113,7 @@ Você pode optar por substituir um ativo existente, criar outra versão ou mante
 >
 >Quando você seleciona **[!UICONTROL Substituir]** na caixa de diálogo [!UICONTROL Nomear conflito], a ID do ativo é regenerada para o novo ativo. Essa ID é diferente da ID do ativo anterior.
 >
->Se o Asset Insights estiver ativado para rastrear impressões ou cliques com [!DNL Adobe Analytics], a ID de ativo regenerada invalida os dados capturados para o ativo em [!DNL Analytics].
+>Se o Assets Insights estiver ativado para rastrear impressões ou cliques com [!DNL Adobe Analytics], a ID de ativo regenerada invalida os dados capturados para o ativo em [!DNL Analytics].
 
 Se o ativo carregado existir em [!DNL Assets], a caixa de diálogo **[!UICONTROL Duplicatas Detectadas]** avisa que você está tentando fazer upload de um ativo duplicado. A caixa de diálogo será exibida somente se o valor de `SHA 1` soma de verificação do binário do ativo existente corresponder ao valor de soma de verificação do ativo que você carrega. Nesse caso, os nomes dos ativos não importam.
 
@@ -420,7 +420,7 @@ Para visualizar um ativo usando teclado, siga estas etapas:
    * Canais/dispositivos pelos quais o ativo foi usado
    * Soluções criativas nas quais o ativo foi usado recentemente
 
-   Para obter mais detalhes, consulte [Asset Insights](/help/assets/asset-insights.md).
+   Para obter mais detalhes, consulte [Insights do Assets](/help/assets/asset-insights.md).
 
 1. Clique em **[!UICONTROL Salvar e fechar]**.
 1. Navegue até a interface do usuário [!DNL Assets]. As propriedades de metadados editadas, incluindo título, descrição, classificações e assim por diante, são exibidas no cartão de ativo na exibição Cartão e em colunas relevantes na exibição Lista.
