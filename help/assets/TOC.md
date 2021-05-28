@@ -6,7 +6,7 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 42%
@@ -115,7 +115,7 @@ ht-degree: 42%
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] integração](aem-cc-integration-best-practices.md)
    + [Integrar com [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management em ativos](drm.md)
-   + [Usar o pacote de demonstração para insights do ativo](use-demo-package-for-asset-insights.md)
+   + [Usar pacote de demonstração para insights de ativos](use-demo-package-for-asset-insights.md)
    + [Práticas recomendadas de formato de arquivo de ativos](assets-file-format-best-practices.md)
    + [Práticas recomendadas para monitorar ativos](assets-monitoring-best-practices.md)
    + [Suporte Camera Raw](camera-raw.md)
