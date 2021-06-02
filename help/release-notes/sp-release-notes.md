@@ -4,9 +4,9 @@ description: Notas de versão específicas do  [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: e33a4f197c0deb2457237aac1c1e31093c89adef
+source-git-commit: 68928e251203f67faef498dc22f6d57ea141e748
 workflow-type: tm+mt
-source-wordcount: '3381'
+source-wordcount: '3389'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 ## Informações da versão {#release-information}
 
-| Produtos | [!DNL Adobe Experience Manager] 6,5 |
+| Produtos | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
 | Versão | 6.5.9.0 |
 | Tipo | Lançamento do Service Pack |
@@ -83,7 +83,7 @@ Para obter uma lista completa dos recursos e aprimoramentos introduzidos no [!DN
 >A partir do AEM Service Pack 9, [!DNL Experience Manager] os clientes podem desenvolver e operar seus aplicativos [!DNL Experience Manager] com distribuições dos [!DNL Azul Zulu] builds of OpenJDK, compatíveis com padrões do Java SE.
 >O suporte para [!DNL Azul Zulu] JDKs também é fornecido pelo Adobe aos clientes [!DNL Experience Manager].
 >Você pode baixar as versões relevantes do [!DNL Azul Zulu JDKs] de [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
->Os direitos de uso da tecnologia Oracle Java, conforme distribuídos pelo Adobe, expirarão no final de dezembro de 2022. [!DNL Experience Manager] os clientes do são incentivados a planejar e implementar o uso dos  [!DNL Azul Zulu] JDKs mais recentes até essa data. Para obter mais informações sobre o uso da tecnologia [!DNL Oracle Java] e da tecnologia [!DNL Azul Zulu], consulte as perguntas frequentes associadas.
+>Os direitos de uso da tecnologia Oracle Java, conforme distribuídos pelo Adobe, expirarão no final de dezembro de 2022. [!DNL Experience Manager] os clientes do são incentivados a planejar e implementar o uso dos  [!DNL Azul Zulu] JDKs mais recentes até essa data. Para obter mais informações sobre o uso da tecnologia [!DNL Oracle Java] e da tecnologia [!DNL Azul Zulu], consulte as [Perguntas frequentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) associadas.
 
 Esta é a lista de correções fornecidas na versão [!DNL Experience Manager] 6.5.9.0.
 
