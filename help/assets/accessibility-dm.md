@@ -4,16 +4,15 @@ description: Saiba mais sobre o suporte de acessibilidade no Dynamic Media e no 
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: Accessibility
+feature: Acessibilidade
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
+source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
-
 
 # Acessibilidade em [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
 
@@ -21,17 +20,17 @@ ht-degree: 0%
 
 ## Suporte à acessibilidade de teclado em [!DNL Dynamic Media]
 
-Como [!DNL Dynamic Media] é um plug-in para [!DNL Adobe Experience Manager Assets], a maioria do comportamento de controle do teclado é exatamente o mesmo que em [!DNL Experience Manager Assets]. Por exemplo, o botão `Cancel` em [!DNL Dynamic Media] tem o mesmo realce de foco que em [!DNL Experience Manager Assets] e reage à tecla `Spacebar` como em [!DNL Experience Manager Assets]. Consulte [Atalhos de teclado em Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Como [!DNL Dynamic Media] é um plug-in para [!DNL Adobe Experience Manager Assets], a maioria do comportamento de controle do teclado é igual ao comportamento em [!DNL Experience Manager Assets]. Por exemplo, o botão `Cancel` em [!DNL Dynamic Media] tem o mesmo realce de foco que em [!DNL Experience Manager Assets] e reage à tecla `Spacebar` como em [!DNL Experience Manager Assets]. Consulte [Atalhos de teclado em Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Os pressionamentos de tecla suportados por elementos individuais da interface do usuário em [!DNL Dynamic Media] são, na maioria dos casos, óbvios e fáceis de descobrir. O controle de teclado em [!DNL Dynamic Media] é sobre o seguinte:
 
 * Capacidade de usar `Tab` e `Shift+Tab` pressionamentos de teclas para navegar entre elementos interativos na página.
 Usar `Tab` avança o foco de entrada para o próximo elemento da interface do usuário na ordem de tabulação; usar `Shift+Tab` traz o foco de entrada de volta ao elemento anterior da interface do usuário.
 A travessia de foco segue a localização do elemento da interface de usuário natural na tela e se move de esquerda para direita e de cima para baixo. Além disso, se qualquer campo tiver um erro, você poderá pressionar `Tab` para mover o foco para ele.
-* Capacidade de usar as teclas `Spacebar` e `Enter` para ativar elementos padrão da interface do usuário, como botões, lista suspensa e assim por diante.
-* Capacidade de ver o foco do teclado realçar no elemento ativo. O elemento da interface do usuário que tem foco de entrada pode receber uma indicação de foco visual como uma borda renderizada em torno do elemento da interface do usuário.
+* Capacidade de usar as teclas `Spacebar` e `Enter` para ativar elementos padrão da interface do usuário, como botões e listas suspensas.
+* Capacidade de ver o foco do teclado realçar no elemento ativo. O elemento da interface do usuário que tem foco de entrada recebe uma indicação de foco visual como uma borda renderizada em torno do elemento da interface do usuário.
 * No editor de ponto de acesso, você pode usar alguns pressionamentos de tecla personalizados, como teclas de seta, para interagir com elementos complexos da interface do usuário e reposicionar pontos de acesso.
-* No editor de Vídeo interativo, você pode usar o `Spacebar` para selecionar uma imagem e adicioná-la a um segmento. Além disso, você pode usar a chave `Backspace` para excluir o item selecionado da guia **[!UICONTROL Content]**. Além disso, pressionar `Tab` funções conforme desejado para navegar entre elementos interativos na página.
+* No editor de Vídeo interativo, você pode usar o `Spacebar` para selecionar uma imagem e adicioná-la a um segmento. Além disso, você pode usar a tecla `Backspace` para excluir o item selecionado da guia **[!UICONTROL Content]**. Além disso, pressionar `Tab` funções conforme desejado para navegar entre elementos interativos na página.
 * No editor Recortar de imagem/Recorte inteligente, você pode fazer o seguinte:
    * Use as teclas de seta para recortar o tamanho do quadro ou reposicionar a imagem, ou ambos.
    * A primeira interrupção `Tab` destaca todo o quadro da imagem. Você pode usar as teclas de seta no teclado para reposicionar o quadro.
