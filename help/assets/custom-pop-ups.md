@@ -1,5 +1,5 @@
 ---
-title: Uso do Quickviews para criar pop-ups personalizados
+title: Criação de pop-ups personalizados usando o Quickviews
 seo-title: Uso do Quickviews para criar pop-ups personalizados
 description: O Quickview padrão é usado em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado nos pop-ups.
 seo-description: O Quickview padrão é usado em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado nos pop-ups.
@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
-feature: Viewers
+feature: Espectadores
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
+source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1090'
 ht-degree: 2%
 
 ---
 
-
 # Uso do Quickviews para criar pop-ups personalizados {#using-quickviews-to-create-custom-pop-ups}
 
-O Quickview padrão é usado em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. No entanto, você pode acionar a exibição de conteúdo personalizado nas janelas pop-ups. Dependendo do visualizador usado, essa funcionalidade permite que os usuários cliquem em um ponto de acesso ou em uma imagem em miniatura, ou em um mapa de imagem para ver informações ou conteúdo relacionado.
+O Quickview padrão é usado em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. No entanto, você pode acionar a exibição de conteúdo personalizado nas janelas pop-ups. Dependendo do visualizador, essa funcionalidade permite que os usuários toquem em um ponto de acesso ou em uma imagem em miniatura, ou em um mapa de imagem para ver informações ou conteúdo relacionado.
 
 As visualizações rápidas são compatíveis com os seguintes visualizadores no Dynamic Media:
 
@@ -32,7 +31,7 @@ As visualizações rápidas são compatíveis com os seguintes visualizadores no
 
 Embora a funcionalidade de cada visualizador seja diferente, o processo de criação de uma exibição rápida é o mesmo em todos os três visualizadores compatíveis.
 
-**Para usar o Quickviews para criar pop-ups personalizados**
+**Para usar o Quickviews para criar pop-ups personalizados:**
 
 1. Crie uma Exibição rápida para um ativo carregado.
 
@@ -42,7 +41,7 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
     <tbody>
     <tr>
     <td><strong>Visualizador que você está usando</strong></td>
-    <td><strong>Conclua essas etapas para criar o Quickview</strong></td>
+    <td><strong>Conclua essas etapas se desejar criar o Quickview</strong></td>
     </tr>
     <tr>
     <td>Imagens interativas</td>
@@ -65,7 +64,7 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
     <tbody>
     <tr>
     <td><strong>Visualizador que você está usando</strong><br /> </td>
-    <td><strong>Conclua essas etapas para integrar o visualizador ao seu site</strong></td>
+    <td><strong>Conclua essas etapas se desejar integrar o visualizador ao seu site</strong></td>
     </tr>
     <tr>
     <td>Imagem interativa</td>
@@ -82,12 +81,12 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
     </tbody>
    </table>
 
-1. O visualizador que você está usando agora precisa saber como usar o Quickview.
+1. O visualizador que você está usando agora deve saber como usar o Quickview.
 
-   Para fazer isso, o visualizador usa um manipulador chamado `QuickViewActive`.
+   O visualizador usa um manipulador chamado `QuickViewActive`.
 
    ****
-ExemploSuponha que você estava usando o seguinte código incorporado de amostra na sua página da Web para uma imagem interativa:
+Exemplo de código incorporadoSuponha que você use o seguinte exemplo de código incorporado na sua página da Web para uma imagem interativa:
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -95,7 +94,7 @@ ExemploSuponha que você estava usando o seguinte código incorporado de amostra
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **Usando o exemplo de código incorporado de amostra acima, temos o seguinte código:**
+   **Usando o exemplo de código incorporado de exemplo acima, há o seguinte código:**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -113,9 +112,9 @@ ExemploSuponha que você estava usando o seguinte código incorporado de amostra
    * Visualizador de Imagem Interativa: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * Visualizador de vídeo interativo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. Agora é necessário configurar o manipulador `quickViewActivate`.
+1. Agora você deve configurar o manipulador `quickViewActivate`.
 
-   O manipulador `quickViewActivate` controla as visualizações rápidas no visualizador. O manipulador contém a lista de variáveis e as chamadas de função para uso com o Quickview. O código incorporado fornece o mapeamento para a variável SKU definida no Quickview, bem como uma chamada de função `loadQuickView` de amostra.
+   O manipulador `quickViewActivate` controla as visualizações rápidas no visualizador. O manipulador contém a lista de variáveis e as chamadas de função para uso com o Quickview. O código incorporado fornece o mapeamento para a variável SKU definida no Quickview e uma chamada de função `loadQuickView` de amostra.
 
    **Variável**
 mappingMap variáveis para uso na sua página da Web para o valor SKU e variáveis genéricas contidas no Quickview:
@@ -154,7 +153,7 @@ Chamada de funçãoO manipulador também requer uma chamada de função para que
       * Atualize a chamada `loadQuickView(sku,*var1*,*var2*)` se você estiver adicionando variáveis adicionais.
    * Crie uma função `loadQuickView` () simples na página, fora do visualizador.
 
-      Por exemplo, o seguinte grava o valor de sku no console do navegador:
+      Por exemplo, o item a seguir grava o valor de SKU no console do navegador:
 
    ```xml
    function loadQuickView(sku){
@@ -183,7 +182,7 @@ Chamada de funçãoO manipulador também requer uma chamada de função para que
 
 1. Coloque o pop-up `DIV` no corpo da página HTML.
 
-   Um dos elementos é definido com uma ID que é atualizada com valor de sku quando o usuário chama uma Quickview. O exemplo também inclui um botão simples para ocultar a pop-up novamente depois que ela se tornar visível.
+   Um dos elementos é definido com uma ID que é atualizada com o valor SKU quando o usuário chama uma Quickview. O exemplo também inclui um botão simples para ocultar a pop-up novamente depois que ela se tornar visível.
 
    ```xml
    <div id="quickview_div" >
@@ -194,7 +193,7 @@ Chamada de funçãoO manipulador também requer uma chamada de função para que
    </div>
    ```
 
-1. Adicione uma função para atualizar o valor do sku no pop-up; torne a pop-up visível, substituindo a função simples criada na etapa 5. com o seguinte:
+1. Adicione uma função para atualizar o valor SKU no pop-up; torne a pop-up visível, substituindo a função simples criada na etapa 5. com o seguinte:
 
    ```xml
    <script type="text/javascript">
@@ -210,9 +209,9 @@ Chamada de funçãoO manipulador também requer uma chamada de função para que
 
    Alguns visualizadores, como o visualizador de Vídeo interativo, suportam a exibição no modo de tela cheia. No entanto, usar a pop-up conforme descrito nas etapas anteriores faz com que seja exibido atrás do visualizador no modo de tela cheia.
 
-   Para exibir o pop-up nos modos de tela cheia e padrão, anexe o pop-up ao contêiner do visualizador. Para fazer isso, você pode usar um segundo método de manipulador, `initComplete`.
+   Para exibir o pop-up nos modos de tela cheia e padrão, anexe o pop-up ao contêiner do visualizador. Use um segundo método de manipulador, `initComplete`.
 
-   O hander `initComplete` é chamado depois que o visualizador é inicializado.
+   O manipulador `initComplete` é chamado após a inicialização do visualizador.
 
    ```xml
    "initComplete":function() { code block }
@@ -235,14 +234,14 @@ Chamada de funçãoO manipulador também requer uma chamada de função para que
    }
    ```
 
-   No código acima, fizemos o seguinte:
+   No código acima, o seguinte foi feito:
 
-   * Identificada a pop-up personalizada.
+   * Exibição personalizada identificada.
    * Removido-o do DOM.
    * Identificado o contêiner do visualizador.
    * Anexado o pop-up ao contêiner do visualizador.
 
-1. Todo o código setHandlers agora deve ser semelhante ao seguinte (o visualizador de Vídeo interativo foi usado):
+1. Todo o código setHandlers é semelhante ao seguinte (o visualizador de Vídeo interativo foi usado):
 
    ```xml
    s7interactivevideoviewer.setHandlers({
@@ -271,4 +270,3 @@ Exemplo: este exemplo usa o visualizador de imagens interativas.
    `s7interactiveimageviewer.init()`
 
    Depois de incorporar o visualizador em sua página de host, verifique se a instância do visualizador foi criada e se os manipuladores foram carregados antes que o visualizador seja chamado usando `init()`.
-
