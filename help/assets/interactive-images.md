@@ -11,8 +11,7 @@ docset: aem65
 feature: Imagens interativas
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '4332'
 ht-degree: 2%
@@ -192,23 +191,23 @@ Ao criar uma predefinição personalizada do visualizador de Imagem interativa, 
 
 Depois de salvar a predefinição do visualizador, ela é ativada automaticamente (ativada) na página de lista Predefinição do visualizador no AEM Assets. Essa funcionalidade significa que está visível no componente Mídia interativa e sempre que você exibe um ativo. Entretanto, para *entregar *um banner interativo com essa predefinição do visualizador, você deve *publicar *sua predefinição do visualizador também (isso é verdadeiro para predefinições do visualizador personalizadas ou prontas para uso).
 
-**Para criar uma predefinição do visualizador de Imagem interativa**
+**Para criar uma predefinição do visualizador de Imagem interativa :**
 
-1. No painel à esquerda, toque em **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador.]**
-1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Criar.]**
+1. No painel à esquerda, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]**.
+1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Criar]**.
 1. Na caixa de diálogo Nova predefinição do visualizador, digite um nome para descrever a predefinição interativa do visualizador de banner.
 
    Esse é o título que aparecerá na página de lista Predefinição do visualizador depois que você salvar.
 
-1. No menu suspenso Rich Media Type (Tipo de mídia avançada), selecione **[!UICONTROL Imagem interativa.]**
-1. Toque em **[!UICONTROL Criar.]**
+1. No menu suspenso Rich Media Type (Tipo de mídia avançada), selecione **[!UICONTROL Imagem interativa]**.
+1. Toque em **[!UICONTROL Criar]**.
 1. Na página Editar predefinição do visualizador , toque na guia **[!UICONTROL Aparência]**.
 1. Faça uma das seguintes opções:
 
    * Para fazer upload de sua própria imagem de ponto de acesso que deseja usar nas imagens, toque no ícone Seletor de ativos. Na página Selecionar conteúdo , navegue até a imagem do ponto de acesso que deseja usar, selecione-a e toque no ícone Marca de seleção no canto superior direito.
    * Para selecionar uma imagem de ponto de acesso predefinida, toque no ícone Galeria de pontos de acesso . Na paleta da galeria de pontos de acesso, toque na imagem do ponto de acesso que deseja usar.
 
-1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Salvar.]**
+1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Salvar]**.
 
    Certifique-se de publicar a nova predefinição do visualizador.
 
@@ -220,7 +219,7 @@ Depois de salvar a predefinição do visualizador, ela é ativada automaticament
 
 Se você já tiver carregado as imagens que deseja usar, avance para a próxima etapa, [Adicionar pontos de acesso a um banner de imagem](#adding-hotspots-to-an-image-banner).
 
-**Para fazer upload de um banner de imagem**
+**Para fazer upload de um banner de imagem:**
 
 1. Carregue banners de imagem que você deseja tornar interativos.
 
@@ -263,32 +262,32 @@ Consulte [(Opcional) Visualização de imagens interativas](#optional-previewing
 1. Na exibição Ativos, navegue até o banner de imagem que deseja tornar interativo.
 1. Faça uma das seguintes opções:
 
-   * Passe o mouse sobre a imagem e toque em **[!UICONTROL Selecionar]** (ícone de marca de seleção). Na barra de ferramentas, toque em **[!UICONTROL Editar.]**
+   * Passe o mouse sobre a imagem e toque em **[!UICONTROL Selecionar]** (ícone de marca de seleção). Na barra de ferramentas, toque em **[!UICONTROL Editar]**.
 
-   * Passe o mouse sobre a imagem, em seguida toque em **[!UICONTROL Mais ações]** (ícone de três pontos) **[!UICONTROL > Editar.]**
+   * Passe o mouse sobre a imagem, em seguida, toque em **[!UICONTROL Mais ações]** (ícone de três pontos) **[!UICONTROL Editar]**.
 
-   * Toque na imagem para abri-la na página Exibição detalhada . Na barra de ferramentas, toque em **[!UICONTROL Editar.]**
+   * Toque na imagem para abri-la na página Exibição detalhada . Na barra de ferramentas, toque em **[!UICONTROL Editar]**.
 
 1. Próximo ao canto superior esquerdo da página, toque em **[!UICONTROL Adicionar ponto de acesso]** (ícone de toque com o dedo) para abrir a página Gerenciamento de ponto de acesso.
-1. Próximo ao canto superior esquerdo da página, toque em **[!UICONTROL Ponto de acesso.]**
+1. Próximo ao canto superior esquerdo da página, toque em **[!UICONTROL Ponto de acesso]**.
 
-1. Próximo ao canto superior esquerdo da página Gerenciamento de ponto de acesso, toque em **[!UICONTROL Ponto de acesso.]**
-1.  Na imagem, toque em um local onde deseja que o ponto de acesso apareça. Se necessário, arraste o ponto de conexão para ajustar sua localização.
-1. Adicione outros pontos de acesso, conforme necessário, repetindo as etapas a e b.
-1. (Opcional) Para excluir um ponto de acesso, selecione-o na imagem e toque em **[!UICONTROL Excluir]** (ícone da lixeira) sob o cabeçalho **[!UICONTROL Pontos de acesso]**.
+   1. Próximo ao canto superior esquerdo da página Gerenciamento de ponto de acesso, toque em **[!UICONTROL Ponto de acesso]**.
+   1.  Na imagem, toque em um local onde deseja que o ponto de acesso apareça. Se necessário, arraste o ponto de conexão para ajustar sua localização.
+   1. Adicione outros pontos de acesso, conforme necessário, repetindo as etapas a e b.
+   1. (Opcional) Para excluir um ponto de acesso, selecione-o na imagem e toque em **[!UICONTROL Excluir]** (ícone da lixeira) sob o cabeçalho **[!UICONTROL Pontos de acesso]**.
 
 1. No campo de texto Nome , digite o nome do ponto de acesso. Esse nome também aparece na lista suspensa Ponto de acesso selecionado .
 1. Faça uma das seguintes opções:
 
-   * Toque em **[!UICONTROL Quickview.]**
+   * Toque em **[!UICONTROL Quickview]**.
 
-      * Se você for um cliente do AEM Sites ou eCommerce, toque ou clique no ícone Seletor de produto (lupa) para abrir a página Selecionar produto . Toque ou clique no produto que deseja usar e toque em **Selecionar **no canto superior direito da página para retornar à página Gerenciamento de ponto de acesso.
+      * Se você for um cliente do AEM Sites ou eCommerce, toque ou clique no ícone Seletor de produto (lupa) para abrir a página Selecionar produto . Toque ou clique no produto que deseja usar e toque em **Selecionar** no canto superior direito da página para retornar à página Gerenciamento de ponto de acesso.
       * Se você for *não* um cliente do AEM Sites ou eCommerce
 
          * Consulte [Identificação de variáveis de ponto de acesso](#optional-identifying-hotspot-variables); será necessário definir essas variáveis.
          * Em seguida, insira manualmente o valor de SKU. No campo de texto Valor SKU , digite o SKU (Stock Keeping Unit) do produto, que é um identificador exclusivo para cada produto ou serviço distinto que você oferece. O valor de SKU inserido preenche automaticamente a parte variável do modelo do Quickview, de modo que o sistema saiba associar o ponto de acesso com um Quickview específico do SKU.
-         * (Opcional) Se houver outras variáveis no Quickview que você precisa usar para identificar ainda mais um produto, toque em **[!UICONTROL Adicionar variável genérica.]** No campo de texto, especifique uma variável adicional. Por exemplo, `category=Mens` é uma variável adicionada.
-   * Toque em **[!UICONTROL Hiperlink.]**
+         * (Opcional) Se houver outras variáveis no Quickview que você precisa usar para identificar ainda mais um produto, toque em **[!UICONTROL Adicionar variável genérica]**. No campo de texto, especifique uma variável adicional. Por exemplo, `category=Mens` é uma variável adicionada.
+   * Toque em **[!UICONTROL Hiperlink]**.
 
       * Se você for um cliente do AEM Sites, toque ou clique no ícone do Seletor de site (pasta) para navegar até um URL. Observe que o método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do AEM Sites.
       * Se você for um cliente independente, no campo de texto HREF, especifique o caminho do URL completo para uma página da Web vinculada.
@@ -297,7 +296,7 @@ Consulte [(Opcional) Visualização de imagens interativas](#optional-previewing
 
    Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md) para obter mais informações.
 
-   * Toque em **[!UICONTROL Fragmento de experiência.]**
+   * Toque em **[!UICONTROL Fragmento de experiência]**.
 
       * Se você for um cliente do AEM Sites, toque ou clique no ícone Pesquisar (lupa) para abrir a página Fragmento de experiência . Toque ou clique no Fragmento de experiência que deseja usar e toque em Selecionar no canto superior direito da página para retornar à página Gerenciamento de pontos de acesso .
 Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md).
@@ -332,10 +331,10 @@ Consulte [Incorporando o visualizador de vídeo ou imagem em uma página da Web]
 Consulte [Vincular URLs ao aplicativo Web](/help/assets/linking-urls-to-yourwebapplication.md). Observe que o método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do AEM Sites.
 Consulte [Adicionar ativos Dynamic Media às páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
-**Visualização de imagens interativas**
+**Para visualizar imagens interativas:**
 
 1. Na exibição Ativos, navegue até uma imagem interativa existente que você criou e toque para abri-la na Visualização.
-1. Próximo ao canto superior esquerdo da página Visualização, na lista suspensa Conteúdo, toque em **[!UICONTROL Visualizadores.]**
+1. Próximo ao canto superior esquerdo da página Visualização, na lista suspensa Conteúdo, toque em **[!UICONTROL Visualizadores]**.
 1. Na lista Visualizadores, toque em **[!UICONTROL Shoppable_Banner]** ou no nome da predefinição do visualizador de imagens interativo que você criou.
 1. Toque em pontos de acesso na imagem para testar suas ações associadas.
 
