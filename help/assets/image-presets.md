@@ -7,20 +7,19 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
-feature: Image Presets
+feature: Predefinições de imagem
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 14%
+source-wordcount: '328'
+ht-degree: 7%
 
 ---
 
-
 # Aplicação de predefinições da imagem do Dynamic Media {#applying-image-presets}
 
-As predefinições de imagens permitem que os ativos forneçam dinamicamente imagens de tamanhos diferentes, em formatos diferentes ou com outras propriedades de imagens que foram geradas dinamicamente. Você pode escolher uma predefinição ao exportar imagens, o que também reformata as imagens para as especificações especificadas pelo administrador.
+As predefinições de imagens permitem que os ativos forneçam dinamicamente imagens de tamanhos diferentes, em formatos diferentes ou com outras propriedades de imagens que foram geradas dinamicamente. Você pode escolher uma predefinição ao exportar imagens. A predefinição reformata as imagens de acordo com as especificações especificadas pelo administrador.
 
 Além disso, você pode escolher uma predefinição de imagem responsiva (designada pelo botão **[!UICONTROL RESS]** após selecioná-la).
 
@@ -36,9 +35,9 @@ Você pode aplicar uma predefinição de imagem a uma imagem sempre que visualiz
 >
 >No modo Dynamic Media - Scene7, as predefinições de imagens são suportadas somente para ativos de imagem.
 
-**Para aplicar as predefinições da imagem do Dynamic Media**
+**Para aplicar as predefinições da imagem do Dynamic Media:**
 
-1. Abra o ativo e, no painel à esquerda, toque no menu suspenso e toque em **[!UICONTROL Representações.]**
+1. Abra o ativo e, no painel à esquerda, toque no menu suspenso e toque em **[!UICONTROL Representações]**.
 
    >[!NOTE]
    >
@@ -52,12 +51,11 @@ Você pode aplicar uma predefinição de imagem a uma imagem sempre que visualiz
 
 1. Siga um destes procedimentos:
 
-   * Selecione uma representação dinâmica para visualizar a predefinição de imagem.
-   * Toque em **[!UICONTROL URL]**, **[!UICONTROL Incorporar]** ou **[!UICONTROL RESS]** para exibir o pop-up.
+   * Selecione uma representação dinâmica para poder visualizar a predefinição de imagem.
+   * Para exibir o pop-up, toque em **[!UICONTROL URL]**, **[!UICONTROL Incorporar]** ou **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >
-   >Se o ativo *e* a predefinição de imagem ainda não forem publicados, o botão **[!UICONTROL URL]** (ou os botões **[!UICONTROL URL]** e **[!UICONTROL RESS]**, se aplicável) não estarão disponíveis.
+   >Se o ativo *e* a predefinição de imagem ainda não for publicada, o botão **[!UICONTROL URL]** (ou os botões **[!UICONTROL URL]** e **[!UICONTROL RESS]**, se aplicável) não estará disponível.
    >
    >Observe também que as predefinições de imagens são publicadas automaticamente em um servidor do Dynamic Media.
-
