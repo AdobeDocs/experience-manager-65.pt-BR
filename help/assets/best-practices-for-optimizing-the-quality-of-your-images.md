@@ -10,10 +10,10 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Gerenciamento de ativos
 role: Business Practitioner, Administrator
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
 workflow-type: tm+mt
 source-wordcount: '1448'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -64,18 +64,19 @@ Existem dois métodos de nitidez de imagem que você pode usar:
       * **[!UICONTROL montante]**  (0-5, intensidade do efeito).
       * **[!UICONTROL radius]**  (0-250, largura das &quot;linhas de nitidez&quot; desenhadas ao redor do objeto com nitidez, conforme medido em pixels.)
 
-         Lembre-se de que o raio e a quantidade dos parâmetros funcionam uns contra os outros. A redução do raio pode ser compensada pelo aumento do montante. O Raio permite um controle mais fino como um valor mais baixo ajuste somente os pixels da borda, enquanto um valor mais alto aumenta a nitidez de uma faixa maior de pixels.
+      Lembre-se de que o raio e a quantidade dos parâmetros funcionam uns contra os outros. A redução do raio pode ser compensada pelo aumento do montante. O Raio permite um controle mais fino como um valor mais baixo ajuste somente os pixels da borda, enquanto um valor mais alto aumenta a nitidez de uma faixa maior de pixels.
 
       * **[!UICONTROL limiar]**  (0-255, sensibilidade do efeito.)
 
-         Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. O parâmetro **[!UICONTROL threshold]** ajuda a evitar áreas de nitidez excessiva com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
-      Para obter mais informações sobre como você define esses três parâmetros, incluindo práticas recomendadas para usar com o filtro, consulte os seguintes recursos:
+             Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. O parâmetro **[!UICONTROL limite]** ajuda a evitar áreas de nitidez excessiva com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
+         
+         Para obter mais informações sobre como você define esses três parâmetros, incluindo práticas recomendadas para usar com o filtro, consulte os seguintes recursos:
 
-      Tópico de Ajuda do Experience Manager sobre Nitidez de uma imagem.
+         Tópico de Ajuda do Experience Manager sobre Nitidez de uma imagem.
 
-      White paper de práticas recomendadas [Nitidez imagens no Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
+         White paper de práticas recomendadas [Nitidez imagens no Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
-   * O Experience Manager também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se o mascaramento com nitidez é aplicado a cada componente de cor separadamente usando o valor 0 ou o brilho/intensidade da imagem usando o valor 1.
+      * O Experience Manager também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se o mascaramento com nitidez é aplicado a cada componente de cor separadamente usando o valor 0 ou o brilho/intensidade da imagem usando o valor 1.
 
 
 Como prática recomendada, comece com o parâmetro de raio da máscara de nitidez. As configurações de Raio que você pode começar são as seguintes:
