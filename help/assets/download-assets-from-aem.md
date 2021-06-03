@@ -5,7 +5,7 @@ contentOwner: AG
 role: Business Practitioner
 feature: Gerenciamento de ativos,Distribuição de ativos
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: 92983232216a5c7c563ebddc3baf6fcd81aaa4e2
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 3%
@@ -22,13 +22,13 @@ Você pode baixar ativos, incluindo representações estáticas e dinâmicas. Co
 
 Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de mídia mista e Conjuntos de carrossel não podem ser baixados.
 
-Para baixar ativos, siga estas etapas:
+**Para baixar ativos, siga estas etapas:**
 
 1. No canto superior esquerdo, clique no logotipo . No painel à esquerda, clique em **[!UICONTROL Navigation]**.
-1. Na página [!UICONTROL Navegação], clique em **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos.]**
+1. Na página [!UICONTROL Navegação], clique em **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]**.
 1. Navegue até uma pasta que contenha ativos que você deseja baixar.
 1. Selecione a pasta ou selecione um ou mais ativos na pasta.
-1. Na barra de ferramentas, clique em **[!UICONTROL Download.]**
+1. Na barra de ferramentas, clique em **[!UICONTROL Download]**.
 
    ![Opções disponíveis ao baixar ativos do Experience Manager Assets](/help/assets/assets/asset-download1.png)
 
@@ -45,7 +45,7 @@ Para baixar ativos, siga estas etapas:
    | **[!UICONTROL Cortes inteligentes]** | Selecione esta opção para baixar todas as representações de recorte inteligente do ativo selecionado no AEM. Um arquivo zip com as representações de Recorte inteligente é criado e baixado no computador local. |
    | **[!UICONTROL Representação(ões) dinâmica(s)]** | Selecione essa opção para gerar uma série de representações alternativas em tempo real. Ao selecionar essa opção, você também seleciona as representações que deseja criar dinamicamente selecionando na lista [Predefinição de imagem](image-presets.md). <br>Além disso, é possível selecionar o tamanho e a unidade de medida, o formato, o espaço de cores, a resolução e qualquer modificador de imagem opcional, como inverter a imagem. A opção só estará disponível se você tiver [!DNL Dynamic Media] ativado. |
 
-1. Na caixa de diálogo, clique em **[!UICONTROL Download.]**.
+1. Na caixa de diálogo, clique em **[!UICONTROL Download]**.
 
 Ao selecionar uma pasta para baixar, a hierarquia completa do ativo na pasta é baixada. Para incluir cada ativo que você baixar (incluindo ativos em pastas filhas aninhadas na pasta principal) em uma pasta individual, selecione **[!UICONTROL Criar pasta separada para cada ativo]**.
 
