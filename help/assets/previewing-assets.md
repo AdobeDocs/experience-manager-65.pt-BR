@@ -8,16 +8,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
-feature: Asset Management
+feature: Gerenciamento de ativos
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1346'
 ht-degree: 3%
 
 ---
-
 
 # Visualização de ativos usando a interface de software {#previewing-assets}
 
@@ -39,7 +38,7 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
 **Visualização de ativos usando a interface de software**
 
 1. Em **[!UICONTROL Adobe Experience Manager]**, na página **[!UICONTROL Navegação]**, toque em **[!UICONTROL Ativos]** e em **[!UICONTROL Arquivos]** para acessar os ativos.
-1. Próximo ao canto superior direito da página, na lista suspensa **[!UICONTROL View]**, toque em **[!UICONTROL List View.]**
+1. Próximo ao canto superior direito da página, na lista suspensa **[!UICONTROL View]**, toque em **[!UICONTROL List View]**.
 1. (Opcional) Use a coluna **[!UICONTROL Type]** para classificar os ativos pelo tipo que deseja visualizar.
 1. Na coluna **[!UICONTROL Título]**, clique no nome do título (não na imagem em miniatura) do ativo que deseja visualizar.
 1. Dependendo do tipo de ativo que você clicou, siga um destes procedimentos:
