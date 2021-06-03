@@ -5,14 +5,13 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
+exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 52%
 
 ---
-
 
 # Adição de ativos do Dynamic Media a páginas{#adding-dynamic-media-assets-to-pages}
 
@@ -44,7 +43,7 @@ Para adicionar um componente/visualizador de mídia dinâmica a uma página:
 
 ## Componentes de mídia dinâmica {#dynamic-media-components}
 
-[!UICONTROL Dynamic ] Media e  [!UICONTROL Mídia ] interativa estão disponíveis no   Sidekickem  **[!UICONTROL Dynamic Media.]** Você usa o componente **[!UICONTROL Mídia interativa]** para quaisquer ativos interativos, como vídeo interativo, imagens interativas ou conjuntos de carrossel. Para todos os outros componentes do Dynamic Media, use o componente **[!UICONTROL Dynamic Media]**.
+[!UICONTROL Dynamic ] Media e  [!UICONTROL Mídia ] interativa estão disponíveis no   Sidekickem  **[!UICONTROL Dynamic Media]**. Você usa o componente **[!UICONTROL Mídia interativa]** para quaisquer ativos interativos, como vídeo interativo, imagens interativas ou conjuntos de carrossel. Para todos os outros componentes do Dynamic Media, use o componente **[!UICONTROL Dynamic Media]**.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
