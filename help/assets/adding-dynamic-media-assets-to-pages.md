@@ -11,7 +11,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Componentes,Publicação
-source-git-commit: 1c95217c98cdf24182eebbfea09c807318b2d514
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '3210'
 ht-degree: 22%
@@ -34,7 +34,7 @@ Adicionar um componente de mídia 3D, Dynamic Media, Mídia interativa, Mídia p
 
 1. No Experience Manager, abra a página onde deseja adicionar o componente Dynamic Media.
 1. No painel no lado esquerdo da página (se necessário, alterne a exibição do painel lateral), clique no ícone **[!UICONTROL Components]**.
-1. No cabeçalho **[!UICONTROL Componentes]**, na lista suspensa, selecione **[!UICONTROL Dynamic Media.]**
+1. No cabeçalho **[!UICONTROL Components]**, na lista suspensa, selecione **[!UICONTROL Dynamic Media]**.
 
    Se nenhuma lista de componentes do Dynamic Media estiver disponível, você deve ativar os componentes do Dynamic Media que deseja usar. Consulte [Ativar componentes do Dynamic Media](#enabling-dynamic-media-components).
 
@@ -65,7 +65,7 @@ Se nenhum componente do Dynamic Media estiver disponível para ser adicionado a 
 
    ![editar modelo](/help/assets/assets-dm/edit-template.png)
 
-1. No lado direito da barra de ferramentas, próximo à parte superior da página, na lista suspensa, toque em **[!UICONTROL Estrutura.]**
+1. No lado direito da barra de ferramentas, próximo à parte superior da página, na lista suspensa, toque em **[!UICONTROL Estrutura]**.
 
    ![Política](/help/assets/assets-dm/structure-mode.png)
 
@@ -74,7 +74,7 @@ Se nenhum componente do Dynamic Media estiver disponível para ser adicionado a 
 
    ![Componentes permitidos](/help/assets/assets-dm/allowed-components.png)
 
-1. Role até ver **[!UICONTROL Dynamic Media.]**
+1. Role até ver **[!UICONTROL Dynamic Media]**.
 1. Toque no ícone > à esquerda de **[!UICONTROL Dynamic Media]** para expandir a lista e selecione os componentes do Dynamic Media que deseja ativar.
 
    ![Lista de componentes do Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
@@ -99,7 +99,7 @@ Você pode localizar componentes do Dynamic Media de uma das duas maneiras:
 
 ## Componentes de mídia dinâmica {#dynamic-media-components}
 
-Os componentes do Dynamic Media estão disponíveis ao tocar no ícone **[!UICONTROL Componentes]** e filtrar em **[!UICONTROL Dynamic Media.]**
+Os componentes do Dynamic Media estão disponíveis ao tocar no ícone **[!UICONTROL Componentes]** e filtrar em **[!UICONTROL Dynamic Media]**.
 
 Os componentes do Dynamic Media disponíveis incluem:
 
@@ -142,13 +142,13 @@ O componente Mídia dinâmica permite adicionar imagens dinâmicas, incluindo co
 
 Você também pode configurar a predefinição do visualizador, a predefinição da imagem ou o formato da imagem diretamente no componente. Para tornar uma imagem responsiva, você pode definir os pontos de interrupção ou aplicar uma predefinição de imagem responsiva.
 
-Edite as seguintes Configurações do Dynamic Media tocando no ícone **[!UICONTROL Editar]** no componente e **[!UICONTROL Configurações do Dynamic Media.]**
+Edite as seguintes configurações do Dynamic Media ao tocar no ícone **[!UICONTROL Editar]** no componente e depois em **[!UICONTROL Configurações do Dynamic Media]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->Por padrão, o componente de imagem do Dynamic Media é adaptável. Se desejar torná-lo de um tamanho fixo, defina-o no componente na guia **[!UICONTROL Avançado]** com a **[!UICONTROL Largura]** e a **[!UICONTROL Altura.]**
+>Por padrão, o componente de imagem do Dynamic Media é adaptável. Se desejar torná-lo de um tamanho fixo, defina-o no componente na guia **[!UICONTROL Avançado]** com a **[!UICONTROL Largura]** e a **[!UICONTROL Altura]**.
 
 * **[!UICONTROL Predefinição do visualizador]**  - Selecione uma predefinição do visualizador existente no menu suspenso. Se a predefinição do visualizador que você está procurando não estiver visível, você deve torná-la visível. Consulte [Gerenciar predefinições do visualizador](/help/assets/managing-viewer-presets.md). Não é possível selecionar uma predefinição do visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 
@@ -236,7 +236,7 @@ Edite as seguintes configurações do Dynamic Media clicando em **[!UICONTROL Ed
 
 >[!NOTE]
 >
->Por padrão, o componente de imagem do Dynamic Media é adaptável. Se desejar torná-lo de um tamanho fixo, defina-o no componente na guia **[!UICONTROL Avançado]** com a **[!UICONTROL Largura]** e a **[!UICONTROL Altura.]**
+>Por padrão, o componente de imagem do Dynamic Media é adaptável. Se desejar torná-lo de um tamanho fixo, defina-o no componente na guia **[!UICONTROL Avançado]** com a **[!UICONTROL Largura]** e a **[!UICONTROL Altura]**.
 
 * **[!UICONTROL Modificadores de imagem]**  - Você pode aplicar efeitos de imagem fornecendo comandos de imagem adicionais. Esses efeitos são descritos em Predefinições de imagem e na referência do Comando de disponibilização de imagens.
 
