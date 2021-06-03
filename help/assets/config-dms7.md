@@ -9,9 +9,9 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuração,Modo Scene7
-source-git-commit: 485464350f391fca327207b78b165897fdacc2d3
+source-git-commit: 90737593086c680f0a948f5b9cab6e58767b6373
 workflow-type: tm+mt
-source-wordcount: '6156'
+source-wordcount: '6153'
 ht-degree: 5%
 
 ---
@@ -46,7 +46,7 @@ Com a nova arquitetura, o Experience Manager é responsável pelos ativos e sinc
 
 ## Ativação do Dynamic Media no modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[As mídias dinâmicas são desativadas por padrão. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Para aproveitar os recursos do Dynamic Media, você deve habilitá-lo.
+[As mídias dinâmicas são desativadas por padrão. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Para aproveitar os recursos do Dynamic Media, você deve habilitá-lo.
 
 >[!WARNING]
 Dynamic Media - O modo Scene7 é somente para a instância *Experience Manager Author somente*. Dessa forma, você deve configurar `runmode=dynamicmedia_scene7` na instância Experience Manager Author, *not* na instância Experience Manager Publish.
@@ -76,7 +76,7 @@ Para migrar qualquer predefinição e configuração do visualizador personaliza
 
 A instalação do pacote de recursos 18912 é *opcional*.
 
-O Feature pack 18912 permite assimilar ativos em massa por meio de FTP ou migrar ativos do Dynamic Media - Modo híbrido ou Dynamic Media Classic para o Dynamic Media - modo Scene7 no Experience Manager. Está disponível em [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
+O Feature pack 18912 permite assimilar ativos em massa por meio de FTP ou migrar ativos do Dynamic Media - Modo híbrido ou Dynamic Media Classic para o Dynamic Media - modo Scene7 no Experience Manager. Está disponível em [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 Consulte [Instalando o feature pack 18912 para migração de ativos em massa](/help/assets/bulk-ingest-migrate.md) para obter mais informações.
 
@@ -88,7 +88,7 @@ Consulte [Instalando o feature pack 18912 para migração de ativos em massa](/h
 
 **Para criar uma configuração do Dynamic Media no Cloud Services:**
 
-1. No modo Autor do Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e toque no ícone Ferramentas e em **[!UICONTROL Cloud Services > Configuração do Dynamic Media]**.
+1. No modo Autor do Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e toque no ícone Ferramentas e, em seguida, toque em **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração do Dynamic Media]**.
 1. Na página Navegador de configuração do Dynamic Media, no painel à esquerda, toque em **[!UICONTROL global]** (não toque ou selecione o ícone de pasta à esquerda de **[!UICONTROL global]**) e, em seguida, toque em **[!UICONTROL Criar]**.
 1. Na página **[!UICONTROL Criar configuração do Dynamic Media]**, insira um título, o endereço de email da conta do Dynamic Media, a senha e selecione sua região. Essas informações são fornecidas pelo Adobe no email de provisionamento. Entre em contato com o Atendimento ao cliente do Adobe se não tiver recebido o email.
 
@@ -109,7 +109,7 @@ Consulte [Instalando o feature pack 18912 para migração de ativos em massa](/h
 
          ![Caixa de seleção Replicar metadados após a publicação do Dynamic Media](assets-dm/replicate-metadata-setting.png)
 
-      * **** Publicação seletivaEssa opção permite controlar quais pastas são publicadas no Dynamic Media. Ele permite usar recursos como Recorte inteligente ou representações dinâmicas, ou determinar quais pastas são publicadas exclusivamente no Experience Manager para visualização. Esses mesmos ativos são *e não* publicados no Dynamic Media para entrega no domínio público.<br>Você pode definir essa opção aqui na  **[!UICONTROL Dynamic Media Cloud]** Configurationou, se preferir, você pode optar por definir essa opção no nível da pasta, em  **[!UICONTROL Propriedades]** de uma pasta.<br>Consulte [Trabalho com publicação seletiva no Dynamic Media.](/help/assets/selective-publishing.md)<br>Se posteriormente alterar essa configuração ou alterá-la no nível da pasta, essas alterações afetarão somente os novos ativos que você carregar a partir desse ponto. O estado de publicação dos ativos existentes na pasta permanece como está até que você os altere manualmente da caixa de diálogo **[!UICONTROL Publicação rápida]** ou **[!UICONTROL Gerenciar publicação]**.
+      * **** Publicação seletivaEssa opção permite controlar quais pastas são publicadas no Dynamic Media. Ele permite usar recursos como Recorte inteligente ou representações dinâmicas, ou determinar quais pastas são publicadas exclusivamente no Experience Manager para visualização. Esses mesmos ativos são *e não* publicados no Dynamic Media para entrega no domínio público.<br>Você pode definir essa opção aqui na  **[!UICONTROL Dynamic Media Cloud]** Configurationou, se preferir, você pode optar por definir essa opção no nível da pasta, em  **[!UICONTROL Propriedades]** de uma pasta.<br>Consulte [Trabalho com publicação seletiva no Dynamic Media](/help/assets/selective-publishing.md).<br>Se posteriormente alterar essa configuração ou alterá-la no nível da pasta, essas alterações afetarão somente os novos ativos que você carregar a partir desse ponto. O estado de publicação dos ativos existentes na pasta permanece como está até que você os altere manualmente da caixa de diálogo **[!UICONTROL Publicação rápida]** ou **[!UICONTROL Gerenciar publicação]**.
    * **[!UICONTROL Servidor de visualização segura]**  - permite especificar o caminho do URL para o servidor de visualização de representações seguras. Ou seja, depois que as renderizações são geradas, o Experience Manager pode acessar com segurança e visualizar as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta à instância do Experience Manager).
 A menos que você tenha um acordo especial para usar o servidor da sua empresa ou um servidor especial, o Adobe recomenda deixar essa configuração como especificado.
 
@@ -118,7 +118,7 @@ A menos que você tenha um acordo especial para usar o servidor da sua empresa o
    * **[!UICONTROL Modo de sincronização do Dynamic Media]**
       * **[!UICONTROL Ativado por padrão]**  - A configuração é aplicada a todas as pastas por padrão, a menos que você marque uma pasta especificamente para exclusão.  <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Desativado por padrão]**  - A configuração não é aplicada a nenhuma pasta até que você marque explicitamente uma pasta selecionada para sincronização com o Dynamic Media.
-Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, toque em **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Details]**, na lista suspensa **[!UICONTROL Dynamic Media sync mode]**, escolha entre as três opções a seguir. Quando terminar, toque em **[!UICONTROL Salvar]**. *Lembre-se: essas três opções não estarão disponíveis se você tiver selecionado **Sincronizar todo o**conteúdo anteriormente.* Consulte também  [Trabalhar com publicação seletiva no nível da pasta no Dynamic Media.](/help/assets/selective-publishing.md)
+Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, toque em **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Details]**, na lista suspensa **[!UICONTROL Dynamic Media sync mode]**, escolha entre as três opções a seguir. Quando terminar, toque em **[!UICONTROL Salvar]**. *Lembre-se: essas três opções não estarão disponíveis se você tiver selecionado **[!UICONTROL Sincronizar todo o]**conteúdo anteriormente.* Consulte também  [Trabalhar com publicação seletiva no nível da pasta no Dynamic Media](/help/assets/selective-publishing.md).
          * **[!UICONTROL Herdado]**  - Nenhum valor de sincronização explícito na pasta; em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão na configuração da nuvem. O status detalhado de herdado é exibido por meio de uma dica de ferramenta.
          * **[!UICONTROL Ativar para subpastas]**  - Inclua tudo nesta subárvore para sincronização com o Dynamic Media. As configurações específicas da pasta substituem o modo padrão na configuração da nuvem.
          * **[!UICONTROL Desabilitado para subpastas]**  - Exclua tudo nesta subárvore da sincronização com o Dynamic Media.
@@ -132,7 +132,7 @@ Para marcar uma pasta selecionada para sincronização com o Dynamic Media, sele
 
    * Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta. Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte Técnico.
 
-   * Na barra de navegação próxima à parte superior direita da página, toque em **[!UICONTROL Configuração > Configuração do aplicativo > Configuração de publicação > Servidor de imagem]**.
+   * Na barra de navegação próxima à parte superior direita da página, toque em **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Publicar configuração]** > **[!UICONTROL Servidor de imagem]**.
 
    * Na página Publicação do servidor de imagens, na lista suspensa Publicar contexto , selecione **[!UICONTROL Servir imagem de teste]**.
    * Para o Filtro de endereço do cliente, toque em **[!UICONTROL Adicionar]**.
@@ -172,7 +172,7 @@ As tarefas de configuração e configuração incluem:
 
 As configurações de Configuração de publicação determinam como os ativos são entregues por padrão no Dynamic Media. Se nenhuma configuração for especificada, o Dynamic Media fornece um ativo de acordo com as configurações padrão definidas na Configuração de publicação. Por exemplo, uma solicitação para fornecer uma imagem que não inclua um atributo de resolução gera uma imagem com a configuração Resolução de objeto padrão .
 
-Para configurar a Configuração de publicação: no Dynamic Media Classic, toque em **[!UICONTROL Configuração > Configuração do aplicativo > Configuração de publicação > Servidor de imagem]**.
+Para configurar a Configuração de publicação: no Dynamic Media Classic, toque em **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Publicar configuração]** > **[!UICONTROL Servidor de imagem]**.
 
 A tela Servidor de imagens estabelece as configurações padrão para entrega de imagens. Consulte a tela da interface do usuário para obter uma descrição de cada configuração.
 
@@ -182,11 +182,11 @@ A tela Servidor de imagens estabelece as configurações padrão para entrega de
 * **[!UICONTROL Padrões para campos de catálogo]** - Essas configurações pertencem à resolução e ao tipo de miniatura padrão de imagens.
 * **[!UICONTROL Atributos de gerenciamento de cores]**  - Essas configurações determinam quais perfis de cores ICC são usados.
 * **[!UICONTROL Atributos de compatibilidade]**  - Essa configuração permite que parágrafos anteriores e posteriores em camadas de texto sejam tratados como na versão 3.6 para compatibilidade com versões anteriores.
-* **[!UICONTROL Suporte à localização]**  - Essas configurações permitem gerenciar vários atributos de localidade. Ela também permite especificar uma sequência de mapa de localidade para que você possa definir quais idiomas deseja suportar para as várias dicas de ferramentas em Visualizadores. Para obter mais informações sobre como configurar o **[Suporte de localização]**, consulte [Considerações ao configurar a localização de ativos](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
+* **[!UICONTROL Suporte à localização]**  - Essas configurações permitem gerenciar vários atributos de localidade. Ela também permite especificar uma sequência de mapa de localidade para que você possa definir quais idiomas deseja suportar para as várias dicas de ferramentas em Visualizadores. Para obter mais informações sobre como configurar o **[Suporte de localização]**, consulte [Considerações ao configurar a localização de ativos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=en#considerations-when-setting-up-localization-of-assets).
 
 #### Definição das configurações gerais do aplicativo {#configuring-application-general-settings}
 
-Para abrir a página Configurações gerais do aplicativo , na barra Navegação global do Dynamic Media Classic, toque em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais]**.
+Para abrir a página Configurações gerais do aplicativo , na barra Navegação global do Dynamic Media Classic, toque em **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]**.
 
 **[!UICONTROL Servidores]**  - No provisionamento da conta, a Dynamic Media fornece automaticamente os servidores atribuídos à sua empresa. Esses servidores são usados para criar strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas da sua conta do . Não altere nenhum nome de servidor a menos que seja explicitamente instruído a fazê-lo pelo Atendimento ao Cliente do Adobe.
 
@@ -249,7 +249,7 @@ Consulte [Upload de ativos](/help/assets/manage-assets.md#uploading-assets).
 
 **Para editar tipos MIME para formatos compatíveis:**
 
-1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e toque em **[!UICONTROL Ferramentas > Geral > CRXDE Lite]**.
+1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
 1. No painel à esquerda, navegue até o seguinte:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -276,7 +276,7 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis n
 
 **Para adicionar tipos MIME para formatos não suportados:**
 
-1. No Experience Manager, toque em **[!UICONTROL Ferramentas > Operações > Console da Web]**.
+1. No Experience Manager, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -294,7 +294,7 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis n
 
 1. Digite `DWG=image/vnd.dwg` no campo de texto vazio que acabou de adicionar.
 
-   O exemplo `DWG=image/vnd.dwg` é somente para fins ilustrativos. O tipo MIME adicionado aqui pode ser qualquer outro formato não suportado.
+   O exemplo `DWG=image/vnd.dwg` é somente para fins de demonstração. O tipo MIME adicionado aqui pode ser qualquer outro formato não suportado.
 
    ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
@@ -303,7 +303,7 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis n
    Nesse ponto, você pode fechar a guia do navegador que tem a página de Configuração do Console da Web do Adobe Experience Manager aberta.
 
 1. Retorne à guia do navegador que tem seu console de Experience Manager aberto.
-1. No Experience Manager, toque em **[!UICONTROL Ferramentas > Geral > CRXDE Lite]**.
+1. No Experience Manager, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -330,7 +330,7 @@ Primeiro, defina a convenção de nomenclatura para como os ativos são agrupado
 
 Ao carregar arquivos, o Dynamic Media cria automaticamente um conjunto com todos os arquivos que correspondem à convenção de nomenclatura definida nas predefinições ativas.
 
-**Configuração da nomenclatura padrão**
+##### Configuração da nomenclatura padrão
 
 Crie uma convenção de nomenclatura padrão que seja usada em qualquer fórmula predefinida de conjunto de lotes. A convenção de nomenclatura padrão selecionada na definição predefinida do conjunto de lotes provavelmente é tudo o que é necessário para a empresa gerar conjuntos em lote. Uma predefinição de conjunto de lotes é criada para usar a convenção de nomenclatura padrão que você define. Você pode criar quantas predefinições do Conjunto de Lotes tiverem as convenções de nomenclatura alternativas e personalizadas necessárias para um conjunto específico de conteúdo, em casos em que há uma exceção na nomenclatura padrão definida pela empresa.
 
@@ -346,7 +346,7 @@ Dois elementos estão disponíveis para definição, Correspondência e Nome de 
 
    Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte Técnico.
 
-1. Na barra de navegação próxima à parte superior da página, toque em **[!UICONTROL Configuração > Configuração do aplicativo > Predefinições do conjunto de lotes > Nomeação padrão]**.
+1. Na barra de navegação próxima à parte superior da página, toque em **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Predefinições do conjunto de lotes]** > **[!UICONTROL Nomeação padrão]**.
 1. Selecione **[!UICONTROL Exibir formulário]** ou **[!UICONTROL Exibir código]** para especificar como deseja exibir e inserir informações sobre cada elemento.
 
    Você pode marcar a caixa de seleção **[!UICONTROL Exibir código]** para exibir o valor da expressão regular criado ao lado das seleções de formulário. É possível inserir ou alterar esses valores para ajudar a definir os elementos da convenção de nomenclatura, se a exibição do formulário limitar você por qualquer motivo. Se os valores não puderem ser analisados na visualização do formulário, os campos do formulário ficarão inativos.
@@ -365,7 +365,7 @@ Dois elementos estão disponíveis para definição, Correspondência e Nome de 
    * Toque em **[!UICONTROL Salvar como]** e digite um nome para a predefinição.
    * Toque em **[!UICONTROL Salvar]** se estiver editando uma predefinição existente.
 
-**Criando uma predefinição de conjunto de lotes**
+##### Criando uma predefinição de conjunto de lotes
 
 O Dynamic Media usa predefinições de conjuntos em lotes para organizar ativos em conjuntos de imagens (imagens alternativas, opções de cores, rotação 360) para exibição em visualizadores. As predefinições do conjunto de lotes são executadas automaticamente com os processos de upload de ativos no Dynamic Media.
 
@@ -379,7 +379,7 @@ Você pode usar o método de campo de formulário para definir uma predefiniçã
 
    Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte Técnico.
 
-1. Na barra de navegação próxima à parte superior da página, toque em **[!UICONTROL Configuração > Configuração do aplicativo > Predefinições do conjunto de lotes > Predefinição do conjunto de lotes]**.
+1. Na barra de navegação próxima à parte superior da página, toque em **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Predefinições do conjunto de lotes]** > **[!UICONTROL Predefinição do conjunto de lotes]**.
 
    **[!UICONTROL Exibir formulário]**, conforme definido no canto superior direito da página Detalhes, é a exibição padrão.
 
@@ -388,7 +388,7 @@ Você pode usar o método de campo de formulário para definir uma predefiniçã
 1. No menu suspenso Tipo de conjunto de lote, selecione um tipo predefinido.
 1. Faça uma das seguintes opções:
 
-   * Se você estiver usando uma convenção de nomenclatura padrão configurada anteriormente em **[!UICONTROL Configuração do aplicativo > Predefinições do conjunto de lotes > Nomeação padrão]**, expanda **[!UICONTROL Convenções de nomenclatura de ativos]** e, na lista suspensa Nomeação de arquivos, toque em **[!UICONTROL Padrão]**.
+   * Se estiver usando uma convenção de nomenclatura padrão configurada anteriormente em **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Predefinições do conjunto de lotes]** > **[!UICONTROL Nomeação padrão]**, expanda **[!UICONTROL Convenções de nomenclatura de ativos]** e, na lista suspensa Nomeação de arquivos, toque em **[!UICONTROL Padrão]**.
 
    * Para definir uma nova convenção de nomenclatura conforme configura a predefinição, expanda **[!UICONTROL Convenções de nomenclatura de ativos]** e, na lista suspensa Nomenclatura de arquivos, toque em **[!UICONTROL Personalizado]**.
 
@@ -405,7 +405,7 @@ Você pode usar o método de campo de formulário para definir uma predefiniçã
 
    Ativar a predefinição garante que, ao fazer upload de ativos no Dynamic Media, a predefinição do conjunto de lotes seja aplicada para gerar o conjunto.
 
-**Criação de uma predefinição de conjunto de lotes para a geração automática de um conjunto de rotação 2D**
+##### Criação de uma predefinição de conjunto de lotes para a geração automática de um conjunto de rotação 2D
 
 Você pode usar o Tipo de Conjunto de Lotes **[!UICONTROL Conjunto de Rotação de Vários Eixos]** para criar uma fórmula que automatiza a geração de Conjuntos de Rotação 2D. O agrupamento de imagens usa expressões regulares de Linha e Coluna para que os ativos de imagem sejam alinhados corretamente no local correspondente na matriz multidimensional. Não há um número mínimo ou máximo de linhas ou colunas que você deve ter em um conjunto de rotação de vários eixos.
 
@@ -425,9 +425,9 @@ Com essas informações, a fórmula Tipo de conjunto de lotes pode ser criada da
 
 ![chlimage_1-560](assets/chlimage_1-560.png)
 
-O agrupamento para a parte do nome do ativo compartilhado do conjunto de rotação é adicionado ao campo **Match** (como destacado). A parte variável do nome do ativo que contém a linha e a coluna é adicionada aos campos **Linha** e **Coluna**, respectivamente.
+O agrupamento para a parte do nome do ativo compartilhado do conjunto de rotação é adicionado ao campo **[!UICONTROL Match]** (como destacado). A parte variável do nome do ativo que contém a linha e a coluna é adicionada aos campos **[!UICONTROL Linha]** e **[!UICONTROL Coluna]**, respectivamente.
 
-Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome da fórmula do Conjunto de rotação 2D que está listada em **Predefinições de conjunto de lote** na caixa de diálogo **Opções de trabalho de upload**.
+Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome da fórmula do Conjunto de rotação 2D que está listada em **[!UICONTROL Predefinições de conjunto de lote]** na caixa de diálogo **[!UICONTROL Opções de trabalho de upload]**.
 
 **Para criar uma predefinição de conjunto de lotes para a geração automática de um conjunto de rotação 2D:**
 
@@ -435,7 +435,7 @@ Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome d
 
    Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte Técnico.
 
-1. Na barra de navegação próxima à parte superior da página, toque em **[!UICONTROL Configurar] > [!UICONTROL Configuração do aplicativo] > [!UICONTROL Predefinições do conjunto de lotes] > [!UICONTROL Predefinição do conjunto de lotes]**.
+1. Na barra de navegação próxima à parte superior da página, toque em **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Predefinições do conjunto de lotes]** > **[!UICONTROL Predefinição do conjunto de lotes]**.
 
    **[!UICONTROL Exibir formulário]**, conforme definido no canto superior direito da página Detalhes, é a exibição padrão.
 
@@ -470,7 +470,7 @@ Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome d
 
    `\w+-\w+-C(\d+)`
 
-   As amostras acima são apenas para fins ilustrativos. Você pode criar sua expressão regular da maneira que quiser, de acordo com suas necessidades.
+   As amostras acima são apenas para fins de demonstração. Você pode criar sua expressão regular da maneira que quiser, de acordo com suas necessidades.
 
    >[!NOTE]
    Se a combinação de expressões regulares de linha e coluna não puder determinar a posição do ativo dentro da matriz de conjunto de rotação multidimensional, o ativo não será adicionado ao conjunto. Um erro também é registrado.
@@ -592,41 +592,17 @@ Os filtros fornecem uma maneira de *excluir* ativos de serem replicados para o n
 
 Se você usa o Dynamic Media para geração de imagens, ou vídeo, ou ambos, você pode usar os filtros padrão que o Adobe fornece como estão. Os seguintes filtros estão ativos por padrão:
 
-<table>
- <tbody>
-  <tr>
-   <td> </td>
-   <td><strong>Filtro</strong></td>
-   <td><strong>Tipo Mime</strong></td>
-   <td><strong>Representações</strong></td>
-  </tr>
-  <tr>
-   <td>Entrega de imagem do Dynamic Media</td>
-   <td><p>filter-images</p> <p>conjuntos de filtros</p> <p> </p> </td>
-   <td><p>Começa com <strong>image/</strong></p> <p>Contém <strong>application/</strong> e termina com <strong>set</strong>.</p> </td>
-   <td>As "imagens-filtro" prontas para uso (aplica-se a ativos de imagens individuais, incluindo imagens interativas) e "conjuntos de filtros" (aplica-se a Conjuntos de rotação, Conjuntos de imagens, Conjuntos de mídia mista e Conjuntos de carrossel):
-    <ul>
-     <li>Excluir da replicação a imagem original e as representações de imagem estática.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Entrega de vídeo do Dynamic Media</td>
-   <td>filter-video</td>
-   <td>Começa com <strong>video/</strong></td>
-   <td>O "filter-video" pronto para uso:
-    <ul>
-     <li>Exclua da replicação o vídeo original e as representações de miniatura estáticas.<br /> <br /> </li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+|  | Filtro | Tipo Mime | Representações |
+| --- | --- | --- | --- |
+| Entrega de imagem do Dynamic Media | filter-image<br>filter-sets | Começa com **image/**<br> Contém **applications/** e termina com **set**. | As &quot;imagens-filtro&quot; prontas para uso (aplica-se a ativos de imagens únicas, incluindo imagens interativas) e &quot;conjuntos de filtros&quot; (aplica-se a Conjuntos de rotação, Conjuntos de imagens, Conjuntos de mídia mista e Conjuntos de carrossel):<br> ・ Excluir da replicação a imagem original e as representações de imagem estática. |
+| Entrega de vídeo do Dynamic Media | filter-video | Começa com **video/** | O &quot;vídeo de filtro&quot; pronto para uso:<br> ・ Excluir da replicação do vídeo original e das representações de miniatura estáticas. |
 
 >[!NOTE]
 Os filtros se aplicam aos tipos MIME e não podem ser específicos de caminho.
 
 #### Personalização de filtros de ativos para replicação {#customizing-asset-filters-for-replication}
 
-1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e toque em **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
 1. Na árvore da pasta esquerda, navegue até `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` para revisar os filtros.
 
    ![chlimage_1-17](assets/chlimage_1-2.png)
@@ -649,31 +625,16 @@ Os filtros se aplicam aos tipos MIME e não podem ser específicos de caminho.
 
    Os caracteres que você pode usar para filtrar para replicação incluem:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Caractere a ser usado</strong></td>
-   <td><strong>Como ele filtra ativos para replicação</strong></td>
-  </tr>
-  <tr>
-   <td>*</td>
-   <td>Caracteres válidos</td>
-  </tr>
-  <tr>
-   <td>+</td>
-   <td>Inclui ativos para replicação.</td>
-  </tr>
-  <tr>
-   <td>-</td>
-   <td>Exclui ativos da replicação.</td>
-  </tr>
- </tbody>
-</table>
+   | Caractere a ser usado | Como ele filtra ativos para replicação |
+   | --- | --- |
+   | * | Caracteres válidos |
+   | + | Inclui ativos para replicação |
+   | - | Exclui ativos da replicação |
 
-Vá até `content/dam/<locate your asset>/jcr:content/renditions`.
+   Vá até `content/dam/<locate your asset>/jcr:content/renditions`.
 
-O gráfico a seguir é um exemplo das representações de um ativo.
+   O gráfico a seguir é um exemplo das representações de um ativo.
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+   ![chlimage_1-4](assets/chlimage_1-4.png)
 
-Se você quiser replicar apenas o original, digite `+original`.
+   Se você quiser replicar apenas o original, digite `+original`.
