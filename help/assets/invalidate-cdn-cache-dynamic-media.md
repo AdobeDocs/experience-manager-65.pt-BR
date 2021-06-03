@@ -7,9 +7,8 @@ topic-tags: dynamic-media
 content-type: reference
 role: Business Practitioner, Administrator
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
-feature: CDN Cache
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Cache CDN
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 1%
@@ -34,7 +33,7 @@ Consulte também [Visão geral do armazenamento em cache no Dynamic Media](https
 
 *Parte 1 de 2: Criação de um modelo de Invalidação de CDN*
 
-1. No Experience Manager 6.5.6 ou posterior, toque em **[!UICONTROL Ferramentas > Ativos > Invalidação CDN.]**
+1. No Experience Manager 6.5.6 ou posterior, toque em **[!UICONTROL Ferramentas > Ativos > Invalidação CDN]**.
 
    ![Recurso de validação CDN](/help/assets/assets-dm/cdn-invalidation-template2.png)
 
@@ -47,12 +46,12 @@ Consulte também [Visão geral do armazenamento em cache no Dynamic Media](https
 
    ![Modelo de Invalidação CDN - Criar](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. No canto superior direito da página **[!UICONTROL Modelo de Invalidação CDN]**, toque em **[!UICONTROL Salvar]** e em **[!UICONTROL OK.]**<br>
+1. No canto superior direito da página **[!UICONTROL Modelo de Invalidação CDN]**, toque em **[!UICONTROL Salvar]** e em **[!UICONTROL OK]**.<br>
 
    *Parte 2 de 2: Configuração das opções de invalidação de CDN*
    <br>
 
-1. No Experience Manager como um Cloud Service, toque em **[!UICONTROL Ferramentas > Ativos > Invalidação CDN.]**
+1. No Experience Manager como Cloud Service, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Invalidação CDN]**.
 
    ![Recurso de validação CDN](/help/assets/assets-dm/cdn-invalidation-path2.png)
 
@@ -72,7 +71,7 @@ Consulte também [Visão geral do armazenamento em cache no Dynamic Media](https
    | **[!UICONTROL Adicionar ativos]** | Use o Seletor de ativos para selecionar os ativos que deseja invalidar. Você pode selecionar ativos publicados ou não publicados.<br>O armazenamento em cache na CDN é baseado em URL e não em ativos. Portanto, é necessário que você esteja ciente dos URLs completos que estão em seu site. Depois de determinar esses URLs, você pode adicioná-los ao modelo. Em seguida, você pode selecionar e adicionar esses ativos e invalidar os URLs em uma etapa. <br>Use essa opção com  **[!UICONTROL Invalidar predefinições de imagens associadas ao ativo em CDN]**, ou  **[!UICONTROL Invalidação com base no modelo]**, ou ambos. |
    | **[!UICONTROL Adicionar URL]** | Adicione ou cole manualmente caminhos de URL completos em ativos do Dynamic Media cujo cache CDN você deseja invalidar. Use esta opção se você não tiver criado um Modelo de Invalidação CDN em ***Parte 1 de 2: Criando um modelo de Invalidação CDN***, e tendo apenas alguns ativos para invalidar.<br>**Importante:** cada URL adicionado deve estar em sua própria linha.<br>Você pode invalidar até 1000 URLs em um determinado momento. Se o número de URLs no campo de texto **[!UICONTROL Adicionar URL]** for maior que 1000, você não poderá tocar em **[!UICONTROL Próximo]**. Nesses casos, você deve tocar em **[!UICONTROL X]** à direita de um ativo selecionado ou em um URL adicionado manualmente para excluí-lo da lista de invalidação.<br>Especifique URLs para recortes inteligentes de imagem no modelo de Invalidação CDN ou neste campo  **[!UICONTROL Adicionar]** URLtext. |
 
-1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Próximo.]**
+1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Próximo]**.
 1. Na página **[!UICONTROL Invalidação CDN - Confirmar]**, na caixa de listagem **[!UICONTROL URLs]**, é possível ver uma lista de um ou mais URLs gerados a partir do Modelo de Invalidação CDN criado anteriormente e os ativos que você acabou de adicionar.
 
    Por exemplo, usando o exemplo de Modelo de Invalidação CDN mostrado nas etapas anteriores, suponhamos que você tenha adicionado um único ativo chamado `spinset`. Ao tocar em **[!UICONTROL Ferramentas > Ativos > Invalidação CDN]**, isso resulta nos seguintes cinco URLs gerados na **[!UICONTROL Invalidação CDN - Confirmar]** interface do usuário:
@@ -92,7 +91,7 @@ Em todos os casos, o lote inteiro é processado para invalidação ou o lote int
 | *Falha ao recuperar URLs para ativos selecionados.* | Ocorre se qualquer um dos seguintes cenários for atendido:<br>- Uma configuração do Dynamic Media não foi encontrada.<br>- Há uma exceção ao recuperar um usuário de serviço pelo qual a configuração do Dynamic Media é lida.<br>- O servidor de publicação ou a raiz da empresa usada para formar os URLs está ausente na configuração do Dynamic Media. |
 | *Alguns URLs não estão definidos corretamente. Corrija e reenvie.* | Ocorre se a API de invalidação do cache CDN do IPS retornar um erro de que o URL se refere a uma empresa diferente. Ou, se o URL não for válido de acordo com a validação feita pela API IPS `cdnCacheInvalidation`. |
 | *Falha ao invalidar o cache CDN.* | Ocorre se a solicitação de invalidação do cache CDN falhar por qualquer outro motivo. |
-| *Nenhum URL inserido para ser invalidado.* | Ocorre se não houver URLs presentes na página **[!UICONTROL Invalidação CDN - Confirmar]** e você tocar em **[!UICONTROL Enviar.]** |
+| *Nenhum URL inserido para ser invalidado.* | Ocorre se não houver URLs presentes na página **[!UICONTROL Invalidação CDN - Confirmar]** e você tocar em **[!UICONTROL Enviar]**. |
 
 
 <!--  | I do not want to create a template. | Near the upper-right corner of the page, tap **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
