@@ -6,8 +6,7 @@ docset: aem65
 feature: Ativos 3D
 role: Business Practitioner
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-translation-type: tm+mt
-source-git-commit: 666bc5d943af371726708cb2ef157a9b3f07eb8e
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 15%
@@ -56,7 +55,7 @@ Além disso, os recursos do computador cliente, como uma estação de trabalho, 
 
 1. Certifique-se de ter carregado ativos 3D no Experience Manager.
 Consulte [Formatos compatíveis com a visualização 3D](#supported-3d-previewing-assets) e [Fazer upload de ativos](/help/assets/manage-assets.md#uploading-assets).
-1. No Experience Manager, na página **[!UICONTROL Navegação]**, toque em **[!UICONTROL Ativos > Arquivos.]**
+1. No Experience Manager, na página **[!UICONTROL Navegação]**, toque em **[!UICONTROL Ativos > Arquivos]**.
 
    ![Página de navegação](/help/assets/assets-dm/navigation-assets.png)
 
@@ -80,4 +79,4 @@ Consulte [Formatos compatíveis com a visualização 3D](#supported-3d-previewin
    | **Redefinir** | Próximo ao canto inferior direito da página, toque no ícone Redefinir para restaurar o ponto de destino da exibição para o centro do ativo 3D. A redefinição também aproxima ou afasta a câmera para mostrar o ativo inteiro e com um tamanho de visualização razoável. |  |  |
    | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, toque no ícone Tela cheia. |  |  |
 
-1. Quando terminar, próximo ao canto superior direito da página, toque em **[!UICONTROL Fechar.]**
+1. Quando terminar, próximo ao canto superior direito da página, toque em **[!UICONTROL Fechar]**.
