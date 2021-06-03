@@ -5,10 +5,9 @@ user-guide-title: Guia do Assets
 feature: Gerenciamento de ativos
 role: Business Practitioner, Architect, Administrator
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '337'
 ht-degree: 20%
 
 ---
@@ -33,14 +32,14 @@ Este guia aborda todas as [!DNL Experience Manager Assets] tarefas, como criar, 
 | [Notas de versão](/help/release-notes/home.md) | Fornece informações importantes sobre a versão mais recente, incluindo novidades, plataformas compatíveis, recursos obsoletos e removidos e problemas conhecidos |
 | [Guia do usuário do Forms](/help/forms/home.md) | Este guia descreve como criar, gerenciar, publicar e atualizar formulários digitais. |
 | [Guia do usuário do Communities](/help/communities/home.md) | Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais. |
-| [Guia de administração](/help/sites-administering/home.md) | Saiba como administrar o Experience Manager. |
+| [Guia de administração](/help/sites-administering/home.md) | Entenda como administrar o Adobe Experience Manager. |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no Experience Manager. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no Experience Manager na interface do usuário clássica. |
 | [Guia do usuário do Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
 | [Guia de implantação do usuário](/help/sites-deploying/home.md) | Este guia mostra os conceitos básicos do Experience Manager. |
 | [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar a implantação do Experience Manager. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto do Experience Manager com êxito. |
-| [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre a Commerce Integration Framework no AEM. |
+| [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre a Commerce Integration Framework no Experience Manager. |
 | [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
 | [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Este guia mostra como compartilhar conteúdo gerado pelo usuário com [!DNL Livefyre]. |
 
@@ -49,7 +48,7 @@ Este guia aborda todas as [!DNL Experience Manager Assets] tarefas, como criar, 
 * [Experience Manager Video Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
-* [Fórum da comunidade do Experience Manager Assets](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
+* [Fórum da comunidade do Experience Manager Assets](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-assets/ct-p/experience-manager-assets-community)
 * [Guia do usuário do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR)
 * [Guia do usuário do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=pt-BR)
 * [Guia do usuário dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
