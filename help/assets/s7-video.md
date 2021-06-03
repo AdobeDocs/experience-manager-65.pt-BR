@@ -9,12 +9,11 @@ content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: Business Practitioner, Administrator
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
-feature: Video
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Vídeo
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 55%
+source-wordcount: '1589'
+ht-degree: 48%
 
 ---
 
@@ -75,7 +74,7 @@ Se você não precisar de um fluxo de trabalho ou controle de versão para os at
 
 Para configurar predefinições universais:
 
-1. Em **[!UICONTROL Serviços em nuvem]**, navegue até a configuração do **[!UICONTROL Scene7]** e clique em **[!UICONTROL Editar.]**
+1. Em **[!UICONTROL Serviços em nuvem]**, navegue até a configuração do **[!UICONTROL Scene7]** e clique em **[!UICONTROL Editar]**.
 1. Selecione a guia **[!UICONTROL Vídeo]**.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -96,7 +95,7 @@ Para configurar predefinições universais:
 
 ## Atualizar as predefinições de codificação e do visualizador  {#updating-viewer-and-encoding-presets}
 
-Se você precisar atualizar as predefinições de codificação de vídeo e do visualizador no AEM porque elas foram atualizadas no Scene7, navegue até a configuração do Scene7 na configuração de nuvem e clique em **[!UICONTROL Atualizar as predefinições de codificação e do visualizador.]**
+Se você precisar atualizar as predefinições de codificação e do visualizador de vídeo no Experience Manager porque elas foram atualizadas no Scene7, navegue até a configuração do Scene7 na configuração da nuvem e clique em **[!UICONTROL Atualizar as predefinições de codificação e do visualizador]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -113,9 +112,9 @@ Se você precisar atualizar as predefinições de codificação de vídeo e do v
 
 ## Comparação do componente de vídeo de base com o componente de vídeo do Scene7 {#foundation-video-component-versus-scene-video-component}
 
-Ao usar o AEM, você tem acesso ao componente de Vídeo disponível no Sites e o componente de vídeo do Scene7. Esses componentes não são intercambiáveis.
+Ao usar o Experience Manager, você tem acesso ao componente Vídeo disponível no Sites e ao componente de vídeo do Scene7. Esses componentes não são intercambiáveis.
 
-O componente de vídeo do Scene7 funciona somente para vídeos do Scene7. O componente de base funciona com os vídeos armazenados do AEM (usando ffmpeg) e com os vídeos do Scene7.
+O componente de vídeo do Scene7 funciona somente para vídeos do Scene7. O componente de base funciona com vídeos armazenados do Experience Manager (usando ffmpeg) e vídeos do Scene7.
 
 A seguinte matriz explica quando você deve usar cada componente:
 
@@ -123,13 +122,13 @@ A seguinte matriz explica quando você deve usar cada componente:
 
 >[!NOTE]
 >
->Pronto para uso, o componente de vídeo do S7 usa o perfil de vídeo universal. No entanto, é possível obter o reprodutor de vídeo baseado em HTML5 para uso pelo AEM, seguindo um destes procedimentos no Scene7: copie o código incorporado do reprodutor de vídeo HTML5 pronto para uso e coloque-o na página AEM.
+>Pronto para uso, o componente de vídeo do S7 usa o perfil de vídeo universal. No entanto, você pode obter o reprodutor de vídeo baseado em HTML5 para uso pelo Experience Manager seguindo um destes procedimentos no Scene7: copie o código incorporado do reprodutor de vídeo HTML5 pronto para uso e coloque-o na página Experience Manager.
 
 ## Componente de vídeo do AEM {#aem-video-component}
 
-Mesmo que o uso do componente de vídeo do Scene7 seja recomendado para visualizar os vídeos do Scene7, esta seção descreve o uso dos vídeos do Scene7 com o Componente de vídeo de base do AEM, por uma questão de completude.
+Mesmo que o uso do componente de vídeo do Scene7 seja recomendado para visualizar vídeos do Scene7, esta seção descreve o uso de vídeos do Scene7 com o Componente de vídeo de base no Experience Manager, por uma questão de integridade.
 
-### Comparação entre vídeos do Scene7 e do AEM  {#aem-video-and-scene-video-comparison}
+### Comparação entre vídeos do Scene7 e do AEM {#aem-video-and-scene-video-comparison}
 
 A tabela a seguir fornece uma comparação avançada dos recursos suportados entre o Componente de vídeo de base do AEM e o Componente de vídeo do Scene7:
 
@@ -151,9 +150,9 @@ As diferentes codificações de vídeo são criadas de acordo com as predefiniç
 >
 >Os novos perfis de vídeo e as alterações a eles devem ser ativados para publicação.
 
-1. Em AEM, toque em **[!UICONTROL Ferramentas] > [!UICONTROL Console de configuração]**.
-1. No **[!UICONTROL Console de Configuração]** navegue até **[!UICONTROL Ferramentas > DAM > Perfis de Vídeo]** na árvore de navegação.
-1. Crie um novo perfil de vídeo do S7. No **[!UICONTROL Novo...]**, selecione **[!UICONTROL Criar página]** e selecione o modelo de Perfil de vídeo do Scene7. Forneça um nome para a nova página de perfil de vídeo e clique em **[!UICONTROL Criar.]**
+1. Em AEM, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Console de configuração]**.
+1. No **[!UICONTROL Console de Configuração]** navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL DAM]** > **[!UICONTROL Perfis de Vídeo]** na árvore de navegação.
+1. Crie um novo perfil de vídeo do S7. No menu **[!UICONTROL New]**., selecione **[!UICONTROL Criar página]** e selecione o modelo de Perfil de vídeo do Scene7. Forneça um nome para a nova página de perfil de vídeo e clique em **[!UICONTROL Criar]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
