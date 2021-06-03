@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuração,Modo Híbrido
-source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
+source-git-commit: c4221ede672c131aa0864438bc9fd16c73ddf10c
 workflow-type: tm+mt
 source-wordcount: '7843'
 ht-degree: 1%
@@ -259,16 +259,18 @@ Após configurar o agente de replicação, você deve [validar e testar se ele f
 O limite de memória padrão para a criação de PTIFF é de 3 GB em todos os workflows. Por exemplo, você pode processar uma imagem que requer 3 GB de memória enquanto outros fluxos de trabalho são pausados, ou pode processar 10 imagens em paralelo que exigem 300 MB de memória cada.
 O limite de memória é configurável e se encaixa na disponibilidade de recursos do sistema e no tipo de conteúdo de imagem que está sendo processado. Se você tiver muitos ativos grandes e tiver memória suficiente no sistema, é possível aumentar esse limite para garantir que as imagens sejam processadas em paralelo.
 Uma imagem que requer mais do que o limite máximo de memória é rejeitada.
-Para alterar o limite de memória para a criação de PTIFF, navegue até **[!UICONTROL Tools > Operations > Web Console > Adobe CQ Scene7 PTiffManager]** e altere o valor **[!UICONTROL maxMemory]**.
+Para alterar o limite de memória para a criação de PTIFF, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** e altere o valor **[!UICONTROL maxMemory]**.
 
 ### Configuração da autenticação {#setting-up-authentication}
 
 Configure a autenticação de replicação no autor para que você possa replicar imagens para o serviço de entrega de imagens da Dynamic Media. Primeiro, obtenha um KeyStore e depois salve-o no usuário **[!UICONTROL dynamic-media-replication]** e configure-o. O administrador da empresa recebeu um email de boas-vindas com o arquivo KeyStore e as credenciais necessárias durante o processo de provisionamento. Caso não tenha recebido essas informações, entre em contato com o Atendimento ao cliente do Adobe.
 
-**Para configurar a autenticação**
+**Para configurar a autenticação:**
 
 1. Entre em contato com o Atendimento ao cliente do Adobe para obter o arquivo KeyStore e a senha, caso ainda não tenha o arquivo e a senha. Essas informações são uma parte necessária do provisionamento. Ele associa as chaves à sua conta.
+
 1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Usuários]**.
+
 1. Na página Gerenciamento de usuários , navegue até o usuário **[!UICONTROL dynamic-media-replication]** e toque para abrir.
 
    ![dm-replication](assets/dm-replication.png)
@@ -818,7 +820,7 @@ O Dynamic Media funciona [pronto para uso depois de ser ativado](#enabling-dynam
 Para definir as configurações do Dynamic Media Image Server:
 
 1. No canto superior esquerdo do Experience Manager, toque em **[!UICONTROL Adobe Experience Manager]** para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
-1. Na página Configuração do console da Web do Adobe Experience Manager, toque em **[!UICONTROL OSGi > Configuração]** para listar todos os pacotes que estão sendo executados no Experience Manager.
+1. Na página Configuração do console da Web do Adobe Experience Manager, toque em **[!UICONTROL OSGi]** > **[!UICONTROL Configuração]** para listar todos os pacotes que estão sendo executados no Experience Manager no momento.
 
    Os Servidores de entrega da Dynamic Media podem ser encontrados com os seguintes nomes na lista:
 
