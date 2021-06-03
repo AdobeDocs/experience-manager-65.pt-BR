@@ -9,9 +9,8 @@ content-type: reference
 discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
 role: Business Practitioner, Administrator
 exl-id: 698e8bdb-9b31-49ab-8560-26b05109bb23
-feature: Configuration
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Configuração
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
@@ -26,4 +25,4 @@ O Hot linking é quando um site de terceiros usa o código HTML para exibir uma 
 
 >[!NOTE]
 >
->Esse recurso exige que você use a CDN predefinida fornecida com o Adobe Experience Manager Dynamic Media. Nenhum outro CDN personalizado é compatível com esse recurso. Para ativar a proteção de hot link, um administrador deve criar um tíquete de suporte ao Atendimento ao cliente do Adobe para solicitar a alteração da configuração na sua conta do Dynamic Media. Não há custo adicional para ativar a proteção de hot link.
+>Esse recurso exige que você use a CDN predefinida fornecida com o Adobe Experience Manager Dynamic Media. Nenhum outro CDN personalizado é compatível com esse recurso. Para ativar a proteção de hot link, um administrador deve criar um tíquete de suporte ao Atendimento ao cliente do Adobe para solicitar a alteração da configuração para sua conta do Dynamic Media. Não há custo adicional para ativar a proteção de hot link.
