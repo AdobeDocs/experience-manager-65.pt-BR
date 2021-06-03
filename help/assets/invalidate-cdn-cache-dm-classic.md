@@ -5,11 +5,10 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-feature: CDN Cache,Dynamic Media Classic
+feature: Cache CDN,Dynamic Media Classic
 role: Business Practitioner, Administrator
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
-translation-type: tm+mt
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 16%
@@ -36,7 +35,7 @@ Consulte também [Visão geral do cache no Dynamic Media Classic (Scene7)](https
 
    Suas credenciais e logon foram fornecidas pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte Técnico.
 
-1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Configuração > Configuração do aplicativo > Configurações gerais.]**
+1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]**.
 1. Na página Configurações gerais do aplicativo , no cabeçalho do grupo Servidores , localize a caixa de texto **[!UICONTROL Modelo de invalidação CDN]** .
 
 1. Especifique o modelo que é usado para invalidar o cache CDN (Content Delivery Network).
@@ -47,8 +46,8 @@ Consulte também [Visão geral do cache no Dynamic Media Classic (Scene7)](https
 
    Se o Modelo contiver apenas `<ID>`, o Dynamic Media preencherá `https://<server>/is/image`, onde `<server>` é o Nome do Servidor de Publicação definido nas Configurações Gerais e &lt;ID> será o ativo selecionado para invalidação.
 
-1. No canto inferior direito da página, clique em **[!UICONTROL Fechar.]**
-1. Na interface do usuário do Dynamic Media Classic, selecione um ou mais ativos e clique em **[!UICONTROL Arquivo > Invalidar CDN.]** Você vê uma lista de um ou mais URLs gerados a partir do modelo criado e dos ativos selecionados. Ele usa o URL do servidor listado em &quot;Nome do servidor publicado&quot; nas Configurações gerais do aplicativo.
+1. No canto inferior direito da página, clique em **[!UICONTROL Fechar]**.
+1. Na interface do usuário do Dynamic Media Classic, selecione um ou mais ativos e clique em **[!UICONTROL Arquivo]** > **[!UICONTROL Invalidar CDN]**. Você vê uma lista de um ou mais URLs gerados a partir do modelo criado e dos ativos selecionados. Ele usa o URL do servidor listado em &quot;Nome do servidor publicado&quot; nas Configurações gerais do aplicativo.
 
    Por exemplo, com o Modelo de Invalidação CDN definido na etapa anterior, suponha que você tenha selecionado uma única imagem de ativo de imagem chamada `Backpack_B`. Ao tocar em **[!UICONTROL File > Invalidate CDN]**, o resultado é o seguinte URL gerado na interface do usuário de Invalidação CDN:
 
@@ -58,7 +57,7 @@ Consulte também [Visão geral do cache no Dynamic Media Classic (Scene7)](https
 
    Depois de clicar em **[!UICONTROL Continuar]**, é exibido um indicador que fornece uma estimativa de quanto tempo levará para limpar o cache.
 
-   Se você selecionou vários ativos e tocou em **[!UICONTROL File > Invalidate CDN]**, cada ativo é referenciado no URL de modelo **[!UICONTROL salvo.]** Portanto, você pode definir um  **[!UICONTROL modelo de invalidação]** CDN referenciando cada predefinição de imagem do URL referenciada em seu site (como detalhes do produto e resultados de pesquisa). Em seguida, ao selecionar uma ou mais imagens para invalidação do cache, os URLs preenchem automaticamente a interface.
+   Se você selecionou vários ativos e tocou em **[!UICONTROL File > Invalidate CDN]**, cada ativo é referenciado no **[!UICONTROL URL de modelo]** salvo. Portanto, você pode definir um **[!UICONTROL CDN Invalidar Modelo]** referenciando cada predefinição de imagem do URL referenciada em seu site (como detalhes do produto e resultados de pesquisa). Em seguida, ao selecionar uma ou mais imagens para invalidação do cache, os URLs preenchem automaticamente a interface.
 
    >[!NOTE]
    >
