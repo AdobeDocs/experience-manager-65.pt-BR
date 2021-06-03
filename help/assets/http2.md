@@ -9,11 +9,10 @@ content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: Business Practitioner, Administrator
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
-feature: Publishing,Configuration
-translation-type: tm+mt
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+feature: Publicação,Configuração
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '732'
 ht-degree: 2%
 
 ---
@@ -32,7 +31,7 @@ O HTTP/2 melhora a forma como os navegadores e servidores se comunicam, permitin
 
 O site a seguir descreve o HTTP/2 e seus benefícios de uma maneira breve e simples:
 
-[https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
+[O que você deve saber sobre HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
 
 ## Quais são os principais benefícios da migração para HTTP/2 para a entrega de conteúdo? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
@@ -63,7 +62,7 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
 Você inicia a solicitação para alternar para HTTP/2; isso não é feito automaticamente para você.
 
-1. Para mudar para HTTP/2, inicie uma solicitação de Atendimento ao cliente do Adobe. Consulte [Acessar o portal de suporte AEM](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. Para mudar para HTTP/2, inicie uma solicitação de Atendimento ao cliente do Adobe. Consulte [Acessar o portal de suporte do Adobe Experience Manager](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Forneça as seguintes informações em sua solicitação de suporte:
 
