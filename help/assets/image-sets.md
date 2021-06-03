@@ -8,16 +8,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
-feature: Image Sets,Asset Management
+feature: Conjuntos de imagens, Gerenciamento de ativos
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '2079'
-ht-degree: 18%
+source-wordcount: '2085'
+ht-degree: 13%
 
 ---
-
 
 # Conjuntos de imagem {#image-sets}
 
@@ -25,11 +24,11 @@ Os Conjuntos de imagens fornecem aos usuários uma experiência de visualizaçã
 
 Os conjuntos de imagens são designados por um banner com a palavra `IMAGESET`. Além disso, se o Conjunto de imagens for publicado, a data de publicação, indicada pelo ícone **[!UICONTROL Mundo]**, estará no banner junto com a última data de modificação, indicada pelo ícone **[!UICONTROL Lápis]**.
 
-![chlimage_1-135](assets/chlimage_1-339.png)
+![chlimage_1-133](assets/chlimage_1-339.png)
 
 No conjunto de imagens, também é possível criar amostras criando um Conjunto de imagens e adicionando miniaturas.
 
-Esse aplicativo é particularmente útil para quando você deseja mostrar um item em uma cor, padrão ou conclusão diferente. Para criar um Conjunto de imagens com amostras de cores, você precisa de uma imagem para cada cor, padrão ou acabamento diferente que deseja apresentar aos usuários. Você também precisa de uma cor, padrão ou amostra de finalização para cada cor, padrão ou finalização.
+Esse aplicativo é útil para quando você deseja mostrar um item em uma cor, padrão ou conclusão diferente. Para criar um Conjunto de imagens com amostras de cores, você precisa de uma imagem para cada cor, padrão ou acabamento diferente que deseja apresentar aos usuários. Você também precisa de uma cor, padrão ou amostra de finalização para cada cor, padrão ou finalização.
 
 Por exemplo, suponha que você deseja apresentar imagens de maiúsculas com diferentes notas coloridas; as notas são vermelhas, verdes e azuis. Neste caso, você precisa de três tiros do mesmo boné. Você precisa de um tiro com um vermelho, um com um verde e um com uma nota azul. Você também precisa de uma amostra de cor vermelha, verde e azul. As amostras de cores servem como miniaturas que os usuários clicam no Visualizador de Conjunto de Amostras para ver a tampa vermelha, verde ou azul.
 
@@ -39,19 +38,19 @@ Por exemplo, suponha que você deseja apresentar imagens de maiúsculas com dife
 
 ## Início rápido: Conjuntos de imagens {#quick-start-image-sets}
 
-Para ativar e executar rapidamente:
+**Para ativar e executar rapidamente:**
 
 1. [Carregue suas imagens de origem primária para várias exibições.](#uploading-assets-in-image-sets)
 
-   Comece carregando as imagens dos seus Conjuntos de imagens. Como os usuários podem ampliar imagens no Visualizador do conjunto de imagens, considere o zoom ao escolher imagens. Certifique-se de que as imagens tenham pelo menos 2000 pixels na maior dimensão para obter detalhes ideais de zoom. O Dynamic Media pode renderizar imagens de até 25 megapixels cada. Por exemplo, você pode usar uma imagem de 5000 x 5000 megapixels ou qualquer outra combinação de tamanho até 25 megapixels.
+   Comece carregando as imagens dos seus Conjuntos de imagens. Ao escolher imagens, lembre-se de que seus clientes podem ampliar imagens no Visualizador de conjunto de imagens. Certifique-se de que as imagens tenham pelo menos 2000 pixels na maior dimensão para obter detalhes ideais de zoom. O Dynamic Media pode renderizar imagens de até 25 megapixels cada. Por exemplo, você pode usar uma imagem de 5000 x 5000 megapixels ou qualquer outra combinação de tamanho até 25 megapixels.
 
-   O AEM Assets suporta muitos formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS sem perdas são recomendadas.
+   O Adobe Experience Manager Assets é compatível com vários formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS sem perdas são recomendadas.
 
 1. [Criar conjuntos de imagens.](#creating-image-sets)
 
    Em Conjuntos de imagens, os usuários clicam em imagens em miniatura no Visualizador do Conjunto de imagens.
 
-   Para criar um Conjunto de imagens no Assets, toque ou clique em **[!UICONTROL Criar > Conjuntos de imagens.]** Em seguida, adicione imagens e clique em  **[!UICONTROL Salvar.]**
+   Para criar um Conjunto de imagens no Assets, toque ou clique em **[!UICONTROL Criar]** > **[!UICONTROL Conjuntos de imagens]**. Em seguida, adicione imagens e clique em **[!UICONTROL Save]**.
 
    Você também pode criar conjuntos de imagens automaticamente por meio de [predefinições do conjunto de lotes](/help/assets/config-dms7.md).
    >[!IMPORTANT]
@@ -64,9 +63,9 @@ Para ativar e executar rapidamente:
 
 1. Adicione [Predefinições do visualizador de conjunto de imagens](/help/assets/managing-viewer-presets.md), conforme necessário.
 
-   Os administradores podem criar ou modificar as Predefinições do visualizador de conjunto de imagens. Para ver seu conjunto de imagens com uma predefinição do visualizador, selecione o conjunto de imagens e, no menu suspenso do painel à esquerda, selecione **[!UICONTROL Visualizadores.]**
+   Os administradores podem criar ou modificar as Predefinições do visualizador de conjunto de imagens. Para ver seu conjunto de imagens com uma predefinição do visualizador, selecione o conjunto de imagens e, no menu suspenso do painel à esquerda, selecione **[!UICONTROL Visualizadores]**.
 
-   Consulte **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]** para criar ou editar predefinições do visualizador.
+   Consulte **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]** se desejar criar ou editar predefinições do visualizador.
 
 1. (Opcional) [Visualizando Conjuntos de Imagens](/help/assets/image-sets.md#viewing-image-sets) que foram criados usando predefinições de conjuntos de lotes.
 1. [Visualizar conjuntos de imagens.](/help/assets/previewing-assets.md)
@@ -79,9 +78,9 @@ Para ativar e executar rapidamente:
 
 1. [Vincule URLs ao seu ](/help/assets/linking-urls-to-yourwebapplication.md) aplicativo web ou  [Incorpore o visualizador](/help/assets/embed-code.md) de vídeo ou imagem.
 
-   O AEM Assets cria chamadas de URL para Conjuntos de imagens e as ativa após publicar os conjuntos de imagens. Você pode copiar esses URLs ao visualizar ativos. Como alternativa, você pode incorporá-los ao seu site.
+   Os ativos Experience Manager criam chamadas de URL para conjuntos de imagens e as ativam depois que você publica os conjuntos de imagens. Você pode copiar esses URLs ao visualizar ativos. Como alternativa, você pode incorporá-los ao seu site.
 
-   Selecione o Conjunto de imagens e, no menu suspenso do painel à esquerda, selecione **[!UICONTROL Visualizadores.]**
+   Selecione o Conjunto de imagens e, no menu suspenso do painel à esquerda, selecione **[!UICONTROL Visualizadores]**.
 
    Consulte [Vincular um conjunto de imagens a uma página da Web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incorporar o visualizador de vídeo ou imagem](/help/assets/embed-code.md).
 
@@ -91,7 +90,7 @@ Se tiver problemas ao criar conjuntos, consulte Imagens e conjuntos em [Soluçã
 
 ## Fazer upload de ativos em conjuntos de imagens {#uploading-assets-in-image-sets}
 
-Comece carregando as imagens dos seus Conjuntos de imagens. Como os usuários podem ampliar imagens no Visualizador do conjunto de imagens, considere o zoom ao escolher imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. Os Conjuntos de imagens são compatíveis com vários formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS sem perdas são recomendadas.
+Comece carregando as imagens dos seus Conjuntos de imagens. Ao escolher imagens, lembre-se de que seus clientes podem ampliar imagens no Visualizador de conjunto de imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. Os Conjuntos de imagens são compatíveis com vários formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS sem perdas são recomendadas.
 
 Você pode fazer upload de imagens para Conjuntos de imagens da mesma maneira que faria [upload de qualquer outro ativo no Assets](/help/assets/manage-assets.md#uploading-assets).
 
@@ -105,7 +104,7 @@ Como os usuários podem ampliar imagens em Conjuntos de imagens, verifique se as
 
 >[!NOTE]
 >
->Além disso, se você estiver usando miniaturas para indicar amostras de produtos, será necessário fazer o seguinte:
+>Além disso, se estiver usando miniaturas para indicar amostras de produtos, faça o seguinte:
 >
 >Você precisa de vinhetas ou fotos diferentes da mesma imagem mostrando-a em cores, padrões ou finalizações diferentes. Você também precisa de arquivos de miniatura que correspondam às diferentes cores, padrões ou finalizações. Por exemplo, para apresentar miniaturas com um Conjunto de imagens mostrando a mesma jaqueta em preto, marrom e verde, é necessário:
 >
@@ -122,7 +121,7 @@ Você pode criar Conjuntos de imagens por meio da interface do usuário ou da AP
 >Você também pode criar conjuntos de imagens automaticamente por meio de [predefinições do conjunto de lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 >**Importante:** os conjuntos em lotes são criados pelo IPS (Sistema de produção de imagem) como parte da ingestão de ativos e estão disponíveis apenas no modo Dynamic Media - Scene7 .
 
-Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em ordem alfanumérica. Você pode reordenar ou classificar ativos manualmente após a adição.
+Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em ordem alfanumérica. Você pode reorganizar ou classificar ativos manualmente após sua adição.
 
 >[!NOTE]
 >
@@ -130,7 +129,7 @@ Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em or
 
 **Para criar um conjunto de imagens**
 
-1. No AEM, toque no logotipo do AEM para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Navegação > Assets.]** Navegue até o local em que deseja criar um conjunto de imagens, em seguida, toque em **[!UICONTROL Criar > Conjunto de imagens]** para abrir a página Editor do conjunto de imagens.
+1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Navegação]** > **[!UICONTROL Ativos]**. Navegue até o local em que deseja criar um conjunto de imagens, em seguida, toque em **[!UICONTROL Criar]** > **[!UICONTROL Conjunto de imagens]** para abrir a página Editor do conjunto de imagens.
 
    Além disso, crie o conjunto de dentro de uma pasta que contenha seus ativos.
 
@@ -142,12 +141,12 @@ Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em or
 
 1. Siga um destes procedimentos:
 
-   * Próximo ao canto superior esquerdo da página Editor do conjunto de imagens, toque em **[!UICONTROL Adicionar ativo.]**
+   * Próximo ao canto superior esquerdo da página Editor do conjunto de imagens, toque em **[!UICONTROL Adicionar ativo]**.
 
-   * Próximo ao meio da página Editor do conjunto de imagens, toque em **[!UICONTROL Toque para abrir o Seletor de ativos.]**
-   Toque para selecionar os ativos que deseja incluir no Conjunto de imagens. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, toque em **[!UICONTROL Selecionar.]**
+   * Próximo ao meio da página Editor do conjunto de imagens, toque em **[!UICONTROL Toque para abrir o Seletor de ativos]**.
+   Toque para selecionar os ativos que deseja incluir no Conjunto de imagens. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, toque em **[!UICONTROL Selecionar]**.
 
-   Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar ou clicar em **[!UICONTROL Retornar.]** Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e toque no ícone **[!UICONTROL Filtro]**, na barra de ferramentas. Altere a exibição ao tocar no ícone Exibir e selecionar **[!UICONTROL Exibição em coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em lista.]**
+   Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar ou clicar em **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e toque no ícone **[!UICONTROL Filtro]**, na barra de ferramentas. Altere a exibição ao tocar no ícone Exibir e selecionar **[!UICONTROL Exibição em coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em lista]**.
 
    Consulte [Trabalhar com seletores.](/help/assets/working-with-selectors.md)
 
@@ -155,22 +154,22 @@ Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em or
 
 1. Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em ordem alfanumérica. Você pode reordenar ou classificar ativos manualmente depois de adicioná-los.
 
-   Se necessário, arraste o ícone Reordenar de um ativo à direita do nome do arquivo do ativo para reordenar as imagens para cima ou para baixo na lista definida.
+   Se necessário, arraste o ícone Reordenar de um ativo à direita do nome do arquivo do ativo para reorganizar as imagens para cima ou para baixo na lista definida.
 
    ![6_5_imageset-reorderassets](assets/6_5_imageset-reorderassets.png)
 
-   Se quiser alterar uma miniatura ou amostra, clique no ícone de **miniatura** **+** ao lado da imagem e navegue até a miniatura ou a amostra desejada. Quando terminar de selecionar todas as imagens, clique em **[!UICONTROL Salvar.]**
+   Se quiser alterar uma miniatura ou amostra, clique no ícone de **miniatura** **+** ao lado da imagem e navegue até a miniatura ou a amostra desejada. Quando terminar de selecionar todas as imagens, clique em **[!UICONTROL Salvar]**.
 
 1. (Opcional) Siga um destes procedimentos:
 
-   * Para excluir uma imagem, selecione-a e toque em **[!UICONTROL Excluir ativo.]**
+   * Para excluir uma imagem, selecione-a e toque em **[!UICONTROL Excluir ativo]**.
 
    * Para aplicar uma predefinição, próximo ao canto superior direito da página, toque em **[!UICONTROL Predefinição]** e selecione uma predefinição para aplicar a todos os ativos ao mesmo tempo.
    >[!NOTE]
    >
-   >Ao criar o conjunto de imagens, você pode alterar a miniatura do conjunto de imagens ou permitir que o AEM selecione a miniatura automaticamente com base nos ativos no conjunto de imagens. Para selecionar uma miniatura, toque em **[!UICONTROL Alterar miniatura]** acima do campo Título na página Editor do conjunto de imagens e selecione qualquer imagem (você também pode navegar para outras pastas para localizar imagens). Se tiver selecionado uma miniatura e decidir que deseja que o AEM gere uma a partir do conjunto de imagens, selecione **[!UICONTROL Alternar para]** **[!UICONTROL Miniatura automática.]**
+   >Ao criar o conjunto de imagens, você pode alterar a miniatura do conjunto de imagens ou permitir que o Experience Manager selecione a miniatura automaticamente com base nos ativos no conjunto de imagens. Para selecionar uma miniatura, toque em **[!UICONTROL Alterar miniatura]** acima do campo Título na página Editor do conjunto de imagens e selecione qualquer imagem (você também pode navegar para outras pastas para localizar imagens). Se tiver selecionado uma miniatura e decidir que deseja que o Experience Manager gere uma a partir do conjunto de imagens, selecione **[!UICONTROL Alternar para]** **[!UICONTROL Miniatura automática]**.
 
-1. Clique em **[!UICONTROL Salvar.]** O Conjunto de imagens recém-criado é exibido na pasta em que você o criou.
+1. Clique em **[!UICONTROL Salvar]**. O Conjunto de imagens recém-criado é exibido na pasta em que você o criou.
 
 ## Visualizando conjuntos de imagens {#viewing-image-sets}
 
@@ -182,7 +181,7 @@ Você pode criar conjuntos de imagens na interface do usuário ou automaticament
 
 No entanto, os conjuntos criados usando predefinições de conjunto de lotes, do *not* aparecem na interface do usuário. Você pode visualizar esses conjuntos de três maneiras diferentes. (Esses métodos estão disponíveis mesmo se você tiver criado os conjuntos de imagens na interface do usuário).
 
-* Abra as propriedades de um ativo individual. As propriedades indicam quais conjuntos o ativo selecionado é referenciado ou um membro de. Clique no nome do conjunto para ver todo o conjunto.
+* Abra as propriedades de um ativo individual. As propriedades indicam quais conjuntos o ativo selecionado é referenciado ou um membro de. Clique no nome do conjunto se desejar visualizar o conjunto inteiro.
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
@@ -190,9 +189,9 @@ No entanto, os conjuntos criados usando predefinições de conjunto de lotes, do
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* Na pesquisa, você pode selecionar **[!UICONTROL Filtro]**, expandir **[!UICONTROL Dynamic Media]** e selecionar **[!UICONTROL Conjuntos.]**
+* Na pesquisa, você pode selecionar **[!UICONTROL Filtro]**, expandir **[!UICONTROL Dynamic Media]** e selecionar **[!UICONTROL Conjuntos]**.
 
-   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjuntos em lotes. Para conjuntos automatizados, a consulta de pesquisa é realizada usando critérios de pesquisa &quot;Inicia com&quot;, que são diferentes de AEM pesquisa baseada no uso de critérios de pesquisa &quot;Contém&quot;. Definir o filtro para **[!UICONTROL Define]** é a única maneira de pesquisar conjuntos automatizados.
+   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjuntos em lotes. Para conjuntos automatizados, a consulta de pesquisa é realizada usando critérios de pesquisa &quot;Inicia com&quot;, que são diferentes da pesquisa de Experience Manager, baseada no uso de critérios de pesquisa &quot;Contém&quot;. Definir o filtro para **[!UICONTROL Define]** é a única maneira de pesquisar conjuntos automatizados.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -205,12 +204,12 @@ No entanto, os conjuntos criados usando predefinições de conjunto de lotes, do
 Você pode executar várias tarefas de edição em Conjuntos de imagens, como as seguintes:
 
 * Adicione imagens ao conjunto de imagens.
-* Reordene as imagens no Conjunto de imagens.
+* Reordene imagens no Conjunto de imagens.
 * Exclua ativos no Conjunto de imagens.
 * Aplicar predefinições do visualizador.
 * Exclua o conjunto de imagens.
 
-**Para editar conjuntos de imagens**
+**Para editar conjuntos de imagens:**
 
 1. Siga um destes procedimentos:
 
@@ -222,15 +221,15 @@ Você pode executar várias tarefas de edição em Conjuntos de imagens, como as
 
    * Para reorganizar ativos, arraste uma imagem para um novo local (selecione o ícone de reordenação para mover itens).
    * Para classificar itens em ordem crescente ou decrescente, clique no cabeçalho da coluna.
-   * Para adicionar um ativo ou atualizar um ativo existente, clique no botão **[!UICONTROL Adicionar ativo.]** Navegue até um ativo, selecione-o e toque em  **** Selecionar próximo ao canto superior direito da página.
+   * Para adicionar um ativo ou atualizar um ativo existente, clique em **[!UICONTROL Adicionar ativo]**. Navegue até um ativo, selecione-o e toque em **[!UICONTROL Selecionar]** próximo ao canto superior direito da página.
 
       >[!NOTE]
       >
-      >Se você excluir a imagem que AEM usa para a miniatura ao substituí-la por outra imagem, o ativo original ainda será exibido.
-   * Para excluir um ativo, selecione-o e toque ou clique em **[!UICONTROL Excluir ativo.]**
+      >Se você excluir a imagem que o Experience Manager usa para a miniatura ao substituí-la por outra imagem, o ativo original ainda é exibido.
+   * Para excluir um ativo, selecione-o e toque ou clique em **[!UICONTROL Excluir ativo]**.
    * Para aplicar uma predefinição, próximo ao canto superior direito da página, toque em **[!UICONTROL Predefinição]** e selecione uma predefinição do visualizador.
-   * Para adicionar ou alterar uma miniatura, selecione o ícone de miniatura ao lado direito do ativo. Navegue até a nova miniatura ou ativo de amostra, selecione-o e toque em **[!UICONTROL Selecionar.]**
-   * Para excluir um Conjunto de imagens inteiro, navegue até o Conjunto de imagens, selecione-o e toque em **[!UICONTROL Excluir.]**
+   * Para adicionar ou alterar uma miniatura, selecione o ícone de miniatura ao lado direito do ativo. Navegue até a nova miniatura ou ativo de amostra, selecione-o e toque em **[!UICONTROL Selecionar]**.
+   * Para excluir um conjunto de imagens inteiro, navegue até o conjunto de imagens, selecione-o e toque em **[!UICONTROL Excluir]**.
 
    >[!NOTE]
    >
