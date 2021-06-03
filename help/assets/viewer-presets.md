@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
-feature: Viewer Presets
+feature: Predefinições do visualizador
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 25%
+source-wordcount: '219'
+ht-degree: 26%
 
 ---
-
 
 # Aplicar predefinições do visualizador do Dynamic Media {#applying-viewer-presets}
 
@@ -31,12 +30,12 @@ Qualquer problema com as predefinições do visualizador, consulte [Solução de
 
 ## Aplicar uma predefinição do visualizador do Dynamic Media a um ativo {#applying-a-viewer-preset-to-an-asset}
 
-1. Abra o ativo e, no painel à esquerda, e toque em **[!UICONTROL Visualizadores.]**
+1. Abra o ativo e, no painel à esquerda, e toque em **[!UICONTROL Visualizadores]**.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
    * Os botões **[!UICONTROL URL]** e **[!UICONTROL Incorporar]** são exibidos ao selecionar uma predefinição do visualizador.
-   * O sistema mostra várias predefinições do visualizador ao selecionar Visualizadores na **[!UICONTROL Exibição de detalhes de um ativo.]** Você pode aumentar o número de predefinições vistas. Consulte [Aumentar o número de predefinições do visualizador exibidas](managing-viewer-presets.md).
+   * O sistema mostra várias predefinições do visualizador ao selecionar Visualizadores na **[!UICONTROL Exibição de detalhes]** de um ativo. Você pode aumentar o número de predefinições vistas. Consulte [Aumentar o número de predefinições do visualizador exibidas](managing-viewer-presets.md).
 
 1. Selecione um visualizador no painel esquerdo para aplicá-lo ao ativo, como visto no painel direito. Você também pode [copiar o URL para compartilhar](linking-urls-to-yourwebapplication.md) com outros usuários.
 
