@@ -9,16 +9,15 @@ content-type: reference
 discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
-feature: Viewer Presets
+feature: Predefinições do visualizador
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '4340'
-ht-degree: 15%
+source-wordcount: '4338'
+ht-degree: 14%
 
 ---
-
 
 # Gerenciar predefinições do visualizador{#managing-viewer-presets}
 
@@ -45,7 +44,7 @@ Consulte também [Acessibilidade do teclado e navegação](https://experiencelea
 
 ## Gerenciar predefinições do visualizador {#managing-viewer-presets-1}
 
-Adicione, edite, exclua, publique, cancele a publicação e visualize predefinições do visualizador no AEM ao tocar em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos > Predefinições do visualizador.]**
+Adicione, edite, exclua, publique, cancele a publicação e visualize predefinições do visualizador no AEM ao tocar em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]**.
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -389,9 +388,9 @@ A tabela a seguir identifica os gestos do visualizador móvel que são compatív
 
 ## Aumentar o número de predefinições do visualizador que exibem {#increasing-the-number-of-viewer-presets-that-display}
 
-AEM mostra uma grande variedade de predefinições do visualizador ao visualizar ativos de **[!UICONTROL Exibição de detalhes > Visualizadores.]** Você pode aumentar ou diminuir o número de visualizadores exibidos.
+AEM mostra uma grande variedade de predefinições do visualizador ao visualizar ativos de **[!UICONTROL Exibição de detalhes]** > **[!UICONTROL Visualizadores]**. Você pode aumentar ou diminuir o número de visualizadores exibidos.
 
-**Para aumentar o número de predefinições do visualizador exibidas**
+**Para aumentar o número de predefinições do visualizador exibidas:**
 
 1. Navegue até CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navegue até o nó da listagem de predefinições do visualizador em `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
@@ -404,7 +403,7 @@ AEM mostra uma grande variedade de predefinições do visualizador ao visualizar
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
 1. Na propriedade limit , altere o número para o número desejado, por exemplo `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Toque em **[!UICONTROL Salvar tudo.]**
+1. Toque em **[!UICONTROL Salvar tudo]**.
 
 ## Criando uma predefinição do visualizador {#creating-a-new-viewer-preset}
 
@@ -424,12 +423,12 @@ Consulte [Considerações especiais para criar uma predefinição do Visualizado
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
-1. Na página Predefinições do visualizador , na barra de ferramentas, toque em **[!UICONTROL Criar.]**
-1. Na caixa de diálogo **[!UICONTROL New Viewer Preset]**, no campo **[!UICONTROL Preset Name]**, digite o nome da nova predefinição. Escolha um nome com cuidado, eles não são editáveis depois de tocar em **[!UICONTROL Criar.]**
+1. Na página Predefinições do visualizador , na barra de ferramentas, toque em **[!UICONTROL Criar]**.
+1. Na caixa de diálogo **[!UICONTROL New Viewer Preset]**, no campo **[!UICONTROL Preset Name]**, digite o nome da nova predefinição. Escolha um nome com cuidado, eles não são editáveis depois de tocar em **[!UICONTROL Criar]**.
 
    Quando você salvar a predefinição mais tarde nessas etapas, o nome aparecerá na página Predefinições do visualizador no cabeçalho da coluna Título da predefinição .
 
-1. No menu suspenso Tipo de mídia avançada , selecione o tipo de predefinição do visualizador que deseja criar e, no canto superior direito da página, toque em **[!UICONTROL Criar.]**
+1. No menu suspenso Rich Media Type (Tipo de mídia avançada), selecione o tipo de predefinição do visualizador que deseja criar e, no canto superior direito da página, toque em **[!UICONTROL Create]**.
 
    Consulte [Tipos de mídia avançada para predefinições do visualizador](#rich-media-types-for-viewer-presets).
 
@@ -471,7 +470,7 @@ Consulte [Considerações especiais para criar uma predefinição do Visualizado
    >
    >Depois de digitar um valor no campo de texto, toque em outro lugar na interface do usuário para enviar a alteração e fechar o teclado virtual. Se você tocar em Enter, nenhuma ação ocorre.
 
-1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Salvar.]**
+1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Salvar]**.
 1. Publique sua nova predefinição do visualizador. Você deve publicar a predefinição antes de usá-la em seu site.
 
    Consulte [Predefinições do visualizador de publicação](#publishing-viewer-presets).
@@ -503,7 +502,7 @@ Ao criar ou editar uma predefinição do visualizador de Vídeo interativo, voc�
 
 O comportamento de rolagem automática das miniaturas no visualizador de Vídeo interativo funciona independentemente do modo de exibição escolhido.
 
-Ao criar ou editar uma predefinição interativa do visualizador de vídeo, você acessa a opção Rolagem automática na guia Comportamento. Na guia Comportamento, no menu suspenso **[!UICONTROL Componentes selecionados]**, toque em **[!UICONTROL InteractiveSwatches.]** A caixa de seleção Rolagem automática está listada abaixo do campo de texto Comando IS.
+Ao criar ou editar uma predefinição interativa do visualizador de vídeo, você acessa a opção Rolagem automática na guia Comportamento. Na guia Comportamento, no menu suspenso **[!UICONTROL Componentes selecionados]**, toque em **[!UICONTROL InteractiveSwatches]**. A caixa de seleção Rolagem automática está listada abaixo do campo de texto Comando IS.
 
 Se desativar a opção **[!UICONTROL Rolagem automática]** (desmarcar a caixa de seleção) na predefinição do visualizador, durante a reprodução do vídeo pelo usuário, o painel exibirá apenas a primeira imagem em miniatura em toda a duração do vídeo. Entretanto, um usuário pode rolar manualmente pelas miniaturas usando os ícones de seta para cima e para baixo, se desejar.
 
@@ -536,7 +535,7 @@ Ao criar predefinições do visualizador de banner do carrossel, a alteração d
 
 |  | **Descrição** | **Ações** |
 |---|---|---|
-| **[!UICONTROL Ícone do ponto de acesso]** | Alterar o ícone usado para ponto de acesso | Para alterar a imagem do ícone do ponto de acesso, na guia **[!UICONTROL Aparência]**, em **[!UICONTROL Componente selecionado]**, toque em **[!UICONTROL ImageMapEffect.]** Em **[!UICONTROL Ícone]**, selecione **[!UICONTROL Plano de fundo]** e, no campo **[!UICONTROL Imagem]**, navegue até a imagem de plano de fundo desejada. |
+| **[!UICONTROL Ícone do ponto de acesso]** | Alterar o ícone usado para ponto de acesso | Para alterar a imagem do ícone do ponto de acesso, na guia **[!UICONTROL Aparência]**, em **[!UICONTROL Componente selecionado]**, toque em **[!UICONTROL ImageMapEffect]**. Em **[!UICONTROL Ícone]**, selecione **[!UICONTROL Plano de fundo]** e, no campo **[!UICONTROL Imagem]**, navegue até a imagem de plano de fundo desejada. |
 
 ## Ativar ou desativar as predefinições do visualizador {#activating-or-deactivating-viewer-presets}
 
@@ -544,7 +543,7 @@ As Predefinições do visualizador disponíveis na interface do usuário depende
 
 **Para ativar ou desativar as predefinições do visualizador**
 
-1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos] > [!UICONTROL Predefinições do visualizador.]**
+1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]**.
 1. Na página Predefinição do visualizador , no cabeçalho da coluna **[!UICONTROL Estado]**, toque no botão para ativar ou desativar uma predefinição do visualizador.
 
    As predefinições do visualizador ativadas têm o botão de alternância exibido à direita, dentro de uma caixa azul; as predefinições do visualizador desativadas têm o botão de alternância exibido à esquerda, dentro de uma caixa cinza-claro.
@@ -553,32 +552,32 @@ As Predefinições do visualizador disponíveis na interface do usuário depende
 
 Ativar (ou ativar) o estado de uma predefinição do visualizador significa que ela está visível no componente Dynamic Media, no componente Mídia interativa e sempre que você exibe um ativo.
 
-Entretanto, para fornecer* *um ativo com uma predefinição do visualizador, a predefinição do visualizador também deve ser publicada. Todas as predefinições do visualizador devem ser ativadas *e *publicadas para obter o URL ou código incorporado de um ativo. Ative e publique todas as predefinições do visualizador prontas para uso que acompanham o Dynamic Media. As predefinições do visualizador personalizado criadas e adicionadas são ativadas automaticamente, mas também devem ser publicadas.
+No entanto, para *fornecer* um ativo com uma predefinição do visualizador, a predefinição do visualizador também deve ser publicada. Todas as predefinições do visualizador devem ser ativadas *e* publicadas para obter o URL ou código incorporado de um ativo. Ative e publique todas as predefinições do visualizador prontas para uso que acompanham o Dynamic Media. As predefinições do visualizador personalizado criadas e adicionadas são ativadas automaticamente, mas também devem ser publicadas.
 
 Consulte [Ativando ou desativando predefinições do visualizador](#activating-or-deactivating-viewer-presets).
 
 Consulte também [Visualização de ativos](/help/assets/previewing-assets.md).
 
-**Para publicar predefinições do visualizador**
+**Para publicar predefinições do visualizador:**
 
-1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos] > [!UICONTROL Predefinições do visualizador.]**
+1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]**.
 1. Selecione uma ou mais predefinições do visualizador que você deseja publicar.
 1. Na barra de ferramentas, toque no ícone **[!UICONTROL Publish]**.
 
 ## Classificar predefinições do visualizador {#sorting-viewer-presets}
 
-1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos] > [!UICONTROL Predefinições do visualizador.]**
+1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]**.
 1. Clique em **[!UICONTROL Título da predefinição]**, **[!UICONTROL Tipo]**, **[!UICONTROL Publicado]** ou **[!UICONTROL Estado]** para classificar pelo cabeçalho da coluna. Por exemplo, clique em **[!UICONTROL Tipo]** para classificar os tipos de predefinição do visualizador em ordem alfabética ou não.
 
 ## Editar predefinições do visualizador {#editing-viewer-presets}
 
 Observe que a edição de qualquer *predefinições predefinidas e predefinidas do visualizador* não é um cenário suportado. Se você editar uma predefinição do visualizador pronta para uso, será solicitado que ela seja salva com um novo nome.
 
-**Para editar predefinições do visualizador**
+**Para editar as predefinições do visualizador:**
 
-1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativo] > [!UICONTROL Predefinições do visualizador.]**
+1. No canto superior esquerdo do Experience Manager, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativo]** > **[!UICONTROL Predefinições do visualizador]**.
 1. Selecione uma predefinição marcando a caixa à esquerda do título da predefinição do visualizador.
-1. Na barra de ferramentas, toque em **[!UICONTROL Editar.]**
+1. Na barra de ferramentas, toque em **[!UICONTROL Editar]**.
 1. Na página do **[!UICONTROL Editor de predefinições do visualizador]**, faça as alterações desejadas na predefinição do visualizador, usando as opções encontradas nas guias **[!UICONTROL Aparência]** e **[!UICONTROL Comportamento]**.
 
    Na guia **[!UICONTROL Aparência]**, próximo ao canto superior esquerdo da página Editor de predefinições do visualizador, toque em **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** ou **[!UICONTROL Telefone]** para alterar o modo de apresentação do ativo.
@@ -594,17 +593,17 @@ Observe que a edição de qualquer *predefinições predefinidas e predefinidas 
 
 **Para excluir predefinições do visualizador personalizado**
 
-1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) **[!UICONTROL > Ativos > Predefinições do visualizador.]**
+1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, em seguida, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]**.
 1. Na página Predefinições do visualizador , marque um Título de predefinição e toque no ícone **[!UICONTROL Lixeira]**.
-1. Toque em **[!UICONTROL Excluir.]**
+1. Toque em **[!UICONTROL Excluir]**.
 
 ## Aplicar predefinições do visualizador a um ativo {#applying-a-viewer-preset-to-an-asset}
 
 Se já tiver publicado o ativo e o visualizador selecionado, os botões **[!UICONTROL URL]** e **[!UICONTROL Incorporar]** aparecerão depois de selecionar uma predefinição do visualizador.
 
-**Para aplicar uma predefinição do visualizador a um ativo**
+**Para aplicar uma predefinição do visualizador a um ativo:**
 
-1. Abra o ativo e, próximo ao canto superior esquerdo da página, toque no menu suspenso e selecione **[!UICONTROL Visualizadores.]**
+1. Abra o ativo e, próximo ao canto superior esquerdo da página, toque no menu suspenso e selecione **[!UICONTROL Visualizadores]**.
 
    >[!NOTE]
    >
