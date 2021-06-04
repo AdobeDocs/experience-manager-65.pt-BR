@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Predefinições de imagem
 role: Business Practitioner, Administrator
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '3831'
 ht-degree: 10%
@@ -61,7 +61,7 @@ Gerencie as predefinições de imagens no AEM tocando ou clicando no logotipo do
 >
 >Em *Dynamic Media - Modo híbrido*, é necessário publicar manualmente as predefinições de imagens.
 >
->Consulte [Publicar predefinições de imagens.](#publishing-image-presets)
+>Consulte [Publicar predefinições de imagens](#publishing-image-presets).
 
 >[!NOTE]
 >
