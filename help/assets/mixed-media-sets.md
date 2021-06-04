@@ -11,7 +11,7 @@ docset: aem65
 feature: Misturar conjuntos de mídia,Gerenciamento de ativos
 role: Business Practitioner, Administrator
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 28%
@@ -38,11 +38,11 @@ Para ativar e executar rapidamente com Conjuntos de mídias mistas, siga estas e
 
    Comece carregando as imagens e os vídeos dos Conjuntos de mídias mistas. Se necessário, crie seus [Conjuntos de imagens](/help/assets/image-sets.md) e [Conjuntos de rotação](/help/assets/spin-sets.md). Como os usuários podem ampliar imagens no Visualizador de conjunto de mídias mistas, considere o zoom ao escolher imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão.
 
-1. [Criar conjuntos de mídia mista.](#creating-mixed-media-sets)
+1. [Criar conjuntos de mídia mista](#creating-mixed-media-sets).
 
    Para criar um Conjunto de mídia mista, na página Assets, toque em **[!UICONTROL Criar > Conjunto de mídias mistas]** e nomeie o conjunto, selecione os ativos e escolha a ordem em que as imagens serão exibidas.
 
-   Consulte [Trabalhar com seletores.](/help/assets/working-with-selectors.md)
+   Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md).
 
 1. Configure [Mixed Media Viewer presets](/help/assets/managing-viewer-presets.md), conforme necessário.
 
@@ -50,13 +50,13 @@ Para ativar e executar rapidamente com Conjuntos de mídias mistas, siga estas e
 
    Consulte **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]** para criar ou editar predefinições do visualizador.
 
-   Consulte [Adicionar e editar predefinições do visualizador.](/help/assets/managing-viewer-presets.md)
+   Consulte [Adicionar e editar predefinições do visualizador](/help/assets/managing-viewer-presets.md).
 
-1. [Visualizar conjuntos de mídia mista.](#previewing-mixed-media-sets)
+1. [Visualizar conjuntos de mídia mista](#previewing-mixed-media-sets).
 
    Selecione o Conjunto de mídias mistas e você pode visualizá-lo. Clique nos ícones de miniatura para examinar seu Conjunto de mídias mistas no Visualizador selecionado. Você pode escolher visualizadores diferentes do menu **[!UICONTROL Visualizadores]**, disponível no menu suspenso do painel à esquerda.
 
-1. [Publicar Conjuntos de Mídias Mistas.](#publishing-mixed-media-sets)
+1. [Publicar conjuntos de mídia mista](#publishing-mixed-media-sets).
 
    A publicação de um Conjunto de mídias mistas ativa o URL e a cadeia de caracteres de inserção. Além disso, você deve [publicar a predefinição do visualizador](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -86,7 +86,7 @@ Você pode adicionar imagens, conjuntos de imagens, conjuntos de rotação e ví
 
 Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em ordem alfanumérica. Você pode reordenar ou classificar ativos manualmente após a adição.
 
-**Para criar um Conjunto de mídias mistas**
+**Para criar um Conjunto de mídias mistas:**
 
 1. No Assets, navegue até o local em que deseja criar um conjunto de mídia mista, clique em **[!UICONTROL Criar]** e selecione **[!UICONTROL Conjunto de mídia mista]**. Além disso, crie o conjunto de dentro de uma pasta que contenha seus ativos. O Editor do conjunto de mídias mistas é exibido.
 
@@ -132,7 +132,7 @@ Você pode executar uma variedade de tarefas de edição em ativos em Conjuntos 
 * Aplicar predefinições do visualizador.
 * Altere a miniatura padrão.
 
-**Para editar um conjunto de mídia mista**
+**Para editar um Conjunto de mídias mistas:**
 
 1. Siga um destes procedimentos:
 
