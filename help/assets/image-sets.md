@@ -11,7 +11,7 @@ docset: aem65
 feature: Conjuntos de imagens, Gerenciamento de ativos
 role: Business Practitioner, Administrator
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '2085'
 ht-degree: 13%
@@ -40,13 +40,13 @@ Por exemplo, suponha que você deseja apresentar imagens de maiúsculas com dife
 
 **Para ativar e executar rapidamente:**
 
-1. [Carregue suas imagens de origem primária para várias exibições.](#uploading-assets-in-image-sets)
+1. [Carregue suas imagens de origem primária para várias exibições](#uploading-assets-in-image-sets).
 
    Comece carregando as imagens dos seus Conjuntos de imagens. Ao escolher imagens, lembre-se de que seus clientes podem ampliar imagens no Visualizador de conjunto de imagens. Certifique-se de que as imagens tenham pelo menos 2000 pixels na maior dimensão para obter detalhes ideais de zoom. O Dynamic Media pode renderizar imagens de até 25 megapixels cada. Por exemplo, você pode usar uma imagem de 5000 x 5000 megapixels ou qualquer outra combinação de tamanho até 25 megapixels.
 
    O Adobe Experience Manager Assets é compatível com vários formatos de arquivo de imagem, mas as imagens TIFF, PNG e EPS sem perdas são recomendadas.
 
-1. [Criar conjuntos de imagens.](#creating-image-sets)
+1. [Criar conjuntos de imagens](#creating-image-sets).
 
    Em Conjuntos de imagens, os usuários clicam em imagens em miniatura no Visualizador do Conjunto de imagens.
 
@@ -59,7 +59,7 @@ Por exemplo, suponha que você deseja apresentar imagens de maiúsculas com dife
 
    Consulte [Preparando ativos do Conjunto de imagens para carregar e carregar seus arquivos](#uploading-assets-in-image-sets).
 
-   Consulte [Trabalhar com seletores.](/help/assets/working-with-selectors.md)
+   Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md).
 
 1. Adicione [Predefinições do visualizador de conjunto de imagens](/help/assets/managing-viewer-presets.md), conforme necessário.
 
@@ -68,11 +68,11 @@ Por exemplo, suponha que você deseja apresentar imagens de maiúsculas com dife
    Consulte **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]** se desejar criar ou editar predefinições do visualizador.
 
 1. (Opcional) [Visualizando Conjuntos de Imagens](/help/assets/image-sets.md#viewing-image-sets) que foram criados usando predefinições de conjuntos de lotes.
-1. [Visualizar conjuntos de imagens.](/help/assets/previewing-assets.md)
+1. [Visualizar conjuntos de imagens](/help/assets/previewing-assets.md).
 
    Selecione o Conjunto de imagens e você pode visualizá-lo. Clique nos ícones de miniatura para examinar seu Conjunto de imagens no Visualizador selecionado. Você pode escolher visualizadores diferentes no menu **[!UICONTROL Visualizadores]**, disponível no menu suspenso do painel à esquerda.
 
-1. [Publicar conjuntos de imagens.](/help/assets/publishing-dynamicmedia-assets.md)
+1. [Publicar conjuntos de imagens](/help/assets/publishing-dynamicmedia-assets.md).
 
    A publicação de um conjunto de imagens ativa o URL e o código incorporado. Além disso, você deve [publicar qualquer predefinição do visualizador personalizado](/help/assets/managing-viewer-presets.md) que tenha criado. As predefinições do visualizador prontas para uso já estão publicadas.
 
@@ -84,7 +84,7 @@ Por exemplo, suponha que você deseja apresentar imagens de maiúsculas com dife
 
    Consulte [Vincular um conjunto de imagens a uma página da Web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incorporar o visualizador de vídeo ou imagem](/help/assets/embed-code.md).
 
-Para editar Conjuntos de imagens, consulte [editar Conjuntos de imagens.](#editing-image-sets) Além disso, você pode exibir e editar as propriedades do Conjunto de  [imagens](/help/assets/manage-assets.md#editing-properties).
+Para editar Conjuntos de imagens, consulte [editar Conjuntos de imagens](#editing-image-sets). Além disso, você pode visualizar e editar [Propriedades do conjunto de imagens](/help/assets/manage-assets.md#editing-properties).
 
 Se tiver problemas ao criar conjuntos, consulte Imagens e conjuntos em [Solução de problemas do Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md#images-and-sets).
 
@@ -148,7 +148,7 @@ Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em or
 
    Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar ou clicar em **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e toque no ícone **[!UICONTROL Filtro]**, na barra de ferramentas. Altere a exibição ao tocar no ícone Exibir e selecionar **[!UICONTROL Exibição em coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em lista]**.
 
-   Consulte [Trabalhar com seletores.](/help/assets/working-with-selectors.md)
+   Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md).
 
    ![6_5_imagens_adicionar ativos](assets/6_5_imageset-addingassets.png)
 
