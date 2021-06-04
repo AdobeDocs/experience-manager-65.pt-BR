@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
-feature: Asset Management
+feature: Gerenciamento de ativos
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 11%
+source-wordcount: '333'
+ht-degree: 12%
 
 ---
-
 
 # Entrega de imagens otimizadas para um site responsivo {#delivering-optimized-images-for-a-responsive-site}
 
@@ -24,11 +23,11 @@ Use o recurso de código responsivo quando quiser compartilhar o código para se
 
 Esse recurso faz sentido usar se o site estiver em um WCM de terceiros. No entanto, se seu site estiver em AEM, um servidor de imagem externo renderiza a imagem e a fornece à página da Web.
 
-Consulte também [Incorporando o Visualizador de Vídeo em uma Página da Web.](embed-code.md)
+Consulte também [Incorporação do visualizador de vídeo em uma página da Web](embed-code.md).
 
-Consulte também [Vincular URLs ao seu Aplicativo Web.](linking-urls-to-yourwebapplication.md)
+Consulte também [Vincular URLs ao seu Aplicativo Web](linking-urls-to-yourwebapplication.md).
 
-**Para fornecer imagens otimizadas para um site** responsivo:
+**Para fornecer imagens otimizadas para um site responsivo:**
 
 1. Navegue até a imagem para a qual deseja fornecer o código responsivo e, no menu suspenso, toque em **[!UICONTROL Representações]**.
 
