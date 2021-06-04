@@ -4,14 +4,13 @@ description: Instalador de patches do AEM Forms JEE
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6b17472b-9226-4319-b305-4dba862d21af
+source-git-commit: ecac6269b5e12b847136f4af534016bc7b88bb2b
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 28%
+source-wordcount: '483'
+ht-degree: 29%
 
 ---
-
 
 # Instalador de patches do AEM Forms JEE {#aem-forms-jee-patch-installer}
 
@@ -53,10 +52,12 @@ LinuxNavegue até o diretório apropriado e, a partir de um prompt de comando, d
 1. Leia as informações no Resumo de pré-instalação e clique em **[!UICONTROL Instalar]**.
 1. Quando a instalação estiver concluída, clique em **[!UICONTROL Próximo]** para aplicar as atualizações de correção rápida aos arquivos instalados.
 
-1. Desmarque a opção Iniciar o Configuration Manager antes de clicar em Concluído. Antes de executar o gerenciador de configuração usando **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, navegue até o diretório *&lt;AEMForms_Install_Dir>\configurationManager\bin* e atualize **axis.jar** para **axis-1.4.1.1.1.1 .jar** nos seguintes arquivos:
+1. Desmarque a opção Iniciar o Configuration Manager antes de clicar em Concluído. Antes de executar o gerenciador de configuração usando **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, navegue até o diretório *&lt;AEMForms_Install_Dir>\configurationManager\bin* e atualize os arquivos `ConfigurationManager.lax` e `ConfigurationManager_IPv6.lax` com as seguintes operações de renomeação:
 
-   * ConfigurationManager.lax
-   * ConfigurationManager_IPv6.lax
+   * `axis.jar` para `axis-1.4.1.1.jar`
+   * `serializer-2.7.1.jar` para `serializer-2.7.2.jar`
+   * `xalan-2.7.1.jar` para `xalan-2.7.2.jar`
+   * `xercesImpl-2.9.1.jar` para `xercesImpl-2.12.0.jar`
 
 1. A caixa de seleção Iniciar o Configuration Manager é selecionada por padrão. Clique em **[!UICONTROL Concluído]** para executar o Gerenciador de configurações.
 
