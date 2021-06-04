@@ -11,7 +11,7 @@ docset: aem65
 feature: Perfis de vídeo
 role: Business Practitioner, Administrator
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '3704'
 ht-degree: 18%
@@ -42,7 +42,7 @@ Consulte também [Práticas recomendadas para organizar ativos digitais para usa
 >
 >Os metadados são úteis quando você está procurando ativos. As miniaturas são imagens de vídeo estáticas geradas durante a codificação. Eles são exigidos pelo sistema de AEM e usados na interface do usuário para ajudar você a identificar visualmente os vídeos na exibição Cartões, na exibição Resultados da pesquisa e na exibição Lista de ativos. É possível ver as miniaturas geradas ao tocar no ícone Representações (uma paleta de pintor) de um vídeo codificado.
 
-Quando terminar de criar o perfil de vídeo, aplique-o a uma pasta ou várias pastas. Consulte [Aplicar um perfil de vídeo a pastas.](#applying-a-video-profile-to-folders)
+Quando terminar de criar o perfil de vídeo, aplique-o a uma pasta ou várias pastas. Consulte [Aplicar um perfil de vídeo a pastas](#applying-a-video-profile-to-folders).
 
 Para definir parâmetros de processamento avançados para outros tipos de ativos, consulte [Configuração do processamento de ativos](/help/assets/config-dms7.md#configuring-asset-processing).
 
