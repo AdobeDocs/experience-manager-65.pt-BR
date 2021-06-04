@@ -11,7 +11,7 @@ docset: aem65
 feature: Conjuntos de rotação,Gerenciamento de ativos
 role: Business Practitioner, Administrator
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 11%
@@ -36,11 +36,11 @@ Os Conjuntos de rotação são designados por um banner com a palavra **[!UICONT
 
 Para ativar e executar rapidamente com Conjuntos de rotação, siga estas etapas:
 
-1. [Carregue suas imagens para várias exibições.](#uploading-assets-for-spin-sets)
+1. [Carregue suas imagens para várias exibições](#uploading-assets-for-spin-sets).
 
    No mínimo, você precisa de 8 a 12 capturas de um item para um Conjunto de rotação unidimensional e 16 a 24 para um Conjunto de rotação bidimensional. As fotos devem ser tiradas regularmente para dar a impressão de que o item está girando e sendo virado. Por exemplo, se um Conjunto de rotação unidimensional incluir 12 capturas, gire o item 30 graus (360/12) para cada disparo.
 
-1. [Criar Conjuntos De Rotação.](#creating-spin-sets)
+1. [Criar conjuntos de rotação](#creating-spin-sets).
 
    Para criar um Conjunto de rotação, selecione **[!UICONTROL Criar > Conjunto de rotação]** e nomeie o conjunto, escolha os ativos e escolha a ordem em que as imagens serão exibidas.
 
@@ -56,17 +56,17 @@ Para ativar e executar rapidamente com Conjuntos de rotação, siga estas etapas
 
    Consulte **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]** para criar ou editar predefinições do visualizador.
 
-   Consulte [Adicionar e editar predefinições do visualizador.](/help/assets/managing-viewer-presets.md)
+   Consulte [Adicionar e editar predefinições do visualizador](/help/assets/managing-viewer-presets.md).
 
 1. [Visualização de conjuntos de rotação](#viewing-spin-sets).
 
    Você pode exibir e acessar conjuntos criados por meio de predefinições de conjuntos em lotes de três maneiras diferentes. (Conjuntos criados usando predefinições de conjunto de lotes, faça com que *not* apareça na interface do usuário.)
 
-1. [Visualizar conjuntos de rotação.](/help/assets/previewing-assets.md)
+1. [Visualizar conjuntos de rotação](/help/assets/previewing-assets.md).
 
    Selecione o Conjunto de rotação e você pode visualizá-lo. Gire o conjunto de rotação. Você pode escolher visualizadores diferentes no menu **[!UICONTROL Visualizadores]**, disponível no menu suspenso do painel à esquerda.
 
-1. [Publicar Conjuntos De Rotação.](/help/assets/publishing-dynamicmedia-assets.md)
+1. [Publicar conjuntos de rotação](/help/assets/publishing-dynamicmedia-assets.md).
 
    A publicação de um Conjunto de rotação ativa o URL e a cadeia de caracteres de inserção. Além disso, você deve [publicar a predefinição do visualizador](/help/assets/managing-viewer-presets.md).
 
@@ -142,7 +142,7 @@ Esta seção descreve como criar Conjuntos de rotação no AEM.
 
    Se necessário, arraste o ícone Reordenar de um ativo à direita do nome do arquivo do ativo para reordenar as imagens para cima ou para baixo na lista definida.
 
-   ![Reorganizando o Quadro 11 no conjunto de rotação arrastando-o para um novo local.](assets/6_5_spinset-reorderassets.png)
+   ![Reorganizando o Quadro 11 no conjunto de rotação arrastando-o para um novo local](assets/6_5_spinset-reorderassets.png).
 
    Reorganizando o Quadro 11 no conjunto de rotação arrastando-o para um novo local.
 
@@ -162,7 +162,7 @@ Você pode criar conjuntos de rotação na interface do usuário ou automaticame
 >
 >Também é possível visualizar conjuntos por meio da interface do usuário, conforme descrito em [Editar conjuntos de rotação](#editing-spin-sets).
 
-**Para exibir Conjuntos de rotação**
+**Para exibir Conjuntos de rotação:**
 
 1. Ao abrir as propriedades de um ativo individual. As propriedades indicam o que define o ativo selecionado como membro (em **[!UICONTROL Membro de Conjuntos]**). Clique no nome do conjunto para ver todo o conjunto.
 
@@ -188,7 +188,7 @@ Você pode executar várias tarefas de edição em Conjuntos de rotação, como 
 * Aplicar predefinições do visualizador.
 * Exclua o Conjunto de rotação.
 
-**Para editar um conjunto de rotação**
+**Para editar um Conjunto de rotação:**
 
 1. Siga um destes procedimentos:
 
