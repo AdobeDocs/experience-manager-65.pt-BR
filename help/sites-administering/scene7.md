@@ -5,14 +5,13 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-translation-type: tm+mt
-source-git-commit: d700510efb340598a7931647164e22d574884569
+exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '5517'
 ht-degree: 1%
 
 ---
-
 
 # Integração com o Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
@@ -54,7 +53,7 @@ Ao trabalhar com ativos nessa solução, você executa um dos seguintes procedim
 * Faça upload de ativos diretamente no Dynamic Media Classic e acesse por meio do navegador de conteúdo **Dynamic Media Classic** para criação de página ou
 * Faça upload para o Experience Manager Assets e ative a publicação automática para o Dynamic Media Classic; você acessa o navegador de conteúdo **Assets** para criação de página
 
-Os componentes usados para essa integração são encontrados na área de componente **Dynamic Media Classic** no [Modo Design.](/help/sites-authoring/author-environment-tools.md#page-modes)
+Os componentes usados para essa integração são encontrados na área de componente **Dynamic Media Classic** em [Modo Design](/help/sites-authoring/author-environment-tools.md#page-modes).
 
 ### Experience Manager Dynamic Media {#aem-dynamic-media}
 
@@ -424,8 +423,8 @@ No entanto, se você não quiser que ativos enviados para o Dynamic Media Classi
 
 Antes de enviar ativos para o Dynamic Media Classic sem publicá-los, você deve configurar o seguinte:
 
-1. [Use o Admin Console para criar um caso de suporte.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) No seu caso de suporte, solicite a ativação de uma pré-visualização segura para sua conta do Dynamic Media Classic.
-1. Siga as instruções para [configurar visualização segura para sua conta do Dynamic Media Classic.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. [Use o Admin Console para criar um caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de suporte. No seu caso de suporte, solicite a ativação de uma pré-visualização segura para sua conta do Dynamic Media Classic.
+1. Siga as instruções para [configurar visualização segura para sua conta do Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html).
 
 Essas etapas são as mesmas que você seguiria para criar qualquer configuração de teste seguro no Dynamic Media Classic.
 
@@ -623,4 +622,3 @@ Se tiver problemas para integrar o Experience Manager com o Dynamic Media Classi
 >A importação de ativos de uma conta de empresa existente do Dynamic Media Classic pode levar muito tempo para ser exibida no Experience Manager. Certifique-se de designar uma pasta no Dynamic Media Classic que não tenha muitos ativos. Por exemplo, a pasta raiz geralmente tem muitos ativos.
 >
 >Se você quiser testar a integração, faça com que a pasta raiz aponte apenas para uma subpasta, em vez da empresa inteira.
-
