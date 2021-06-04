@@ -10,7 +10,7 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: Business Practitioner, Administrator
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuração
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 11%
@@ -21,7 +21,7 @@ ht-degree: 11%
 
 Seus sites e aplicativos acessam os serviços da Dynamic Media por meio de chamadas de URL. Após publicar um ativo, o Dynamic Media ativa uma string de URL que faz referência a ele. Você pode colar esses URLs em um navegador da Web para testes.
 
-Você vincula aos URLs somente se estiver *não* usando AEM como WCM. A vinculação/incorporação é usada quando você deseja fornecer um reprodutor de vídeo como uma janela pop-up ou modal. Se estiver usando AEM como WCM, [você adiciona os ativos diretamente na página.](adding-dynamic-media-assets-to-pages.md)
+Você vincula aos URLs somente se estiver *não* usando AEM como WCM. A vinculação/incorporação é usada quando você deseja fornecer um reprodutor de vídeo como uma janela pop-up ou modal. Se estiver usando AEM como WCM, [você adiciona os ativos diretamente na página](adding-dynamic-media-assets-to-pages.md).
 
 Para colocar essas cadeias de caracteres de URL em suas páginas da Web e aplicativos, copie-as do Dynamic Media.
 
@@ -29,13 +29,13 @@ Para colocar essas cadeias de caracteres de URL em suas páginas da Web e aplica
 >
 >As sequências de caracteres de URL só estão disponíveis para representações dinâmicas de ativos. No momento, eles não estão disponíveis para ativos estáticos que residem no DAM e não no servidor do Dynamic Media. O botão URL não é exibido para representações estáticas.
 
-Consulte também [Incorporando o Visualizador de Vídeo ou Imagem em uma Página da Web.](embed-code.md)
+Consulte também [Incorporação do visualizador de vídeo ou imagem em uma página da Web](embed-code.md).
 
-Consulte também [Vincular URLs do YouTube à sua aplicação web.](video.md)
+Consulte também [Vincular URLs do YouTube à sua aplicação web](video.md).
 
-Consulte também [Fornecer imagens otimizadas para um site responsivo.](responsive-site.md)
+Consulte também [Fornecer imagens otimizadas para um site responsivo](responsive-site.md).
 
-Consulte também [Fazer upload de ativos.](manage-assets.md#uploading-assets)
+Consulte também [Fazer upload de ativos](manage-assets.md#uploading-assets).
 
 ## Obter um URL para um ativo {#obtaining-a-url-for-an-asset}
 
@@ -59,7 +59,7 @@ Há várias maneiras diferentes de obter uma string de URL. No entanto, as etapa
 
    Lembre-se de que os URLs só estão disponíveis para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou da imagem também deve ser publicada.
 
-   Consulte [Publicar ativos.](publishing-dynamicmedia-assets.md)
+   Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 
    Consulte [Predefinições do visualizador de publicação](managing-viewer-presets.md#publishing-viewer-presets).
 
