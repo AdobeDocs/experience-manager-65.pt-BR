@@ -9,7 +9,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publicação
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 4%
@@ -38,10 +38,10 @@ Independentemente de você depender do valor **[!UICONTROL Publicar ativos]** de
 
 Depois de configurar a publicação seletiva em uma pasta, você pode executar qualquer um dos seguintes procedimentos:
 
-* [Publicar ativos no Dynamic Media ou AEM de maneira seletiva usando Gerenciar publicação.](#selective-publish-manage-publication)
-* [Cancele a publicação seletiva de ativos do Dynamic Media ou do AEM usando Gerenciar publicação.](#selective-unpublish-manage-publication)
-* [Publicar ativos no Dynamic Media ou AEM usando a Publicação rápida.](#quick-publish-aem-dm)
-* [Publicar ou cancelar a publicação seletiva de ativos por meio de resultados de pesquisa.](#selective-publish-unpublish-search-results)
+* [Publicar ativos no Dynamic Media ou AEM de maneira seletiva usando Gerenciar publicação](#selective-publish-manage-publication).
+* [Cancele a publicação seletiva de ativos do Dynamic Media ou do AEM usando Gerenciar publicação](#selective-unpublish-manage-publication).
+* [Publicar ativos no Dynamic Media ou AEM usando a Publicação rápida](#quick-publish-aem-dm).
+* [Publicar ou cancelar a publicação seletiva de ativos por meio de resultados](#selective-publish-unpublish-search-results) de pesquisa.
 
 **Para configurar a publicação seletiva no nível da pasta no Dynamic Media**
 
@@ -186,7 +186,7 @@ Você pode usar **[!UICONTROL Publicação rápida]** para casos simples de ativ
 
 Os resultados da pesquisa podem mostrar ativos de várias pastas de ativos que têm diferentes configurações de publicação do Dynamic Media. Onde você selecionou um ou mais ativos dos resultados da pesquisa e os ativos têm configurações diferentes do modo de publicação do Dynamic Media, é possível acionar **[!UICONTROL Gerenciar publicação]** na barra de ferramentas para publicar ou desfazer a publicação.
 
-Consulte também [Pesquisar ativos no AEM.](/help/assets/search-assets.md)
+Consulte também [Pesquisar ativos no AEM](/help/assets/search-assets.md).
 
 **Publicar ou cancelar a publicação seletiva de ativos por meio de resultados de pesquisa**
 
