@@ -11,7 +11,7 @@ docset: aem65
 feature: Gerenciamento de ativos
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '11748'
 ht-degree: 7%
@@ -30,7 +30,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
 >
 >Antes de trabalhar com vídeo no Dynamic Media, verifique se o administrador do AEM já ativou e configurou o Dynamic Media Cloud Services no modo Dynamic Media - Scene7 ou Dynamic Media - Modo híbrido.
 >
->* Consulte [Configuração do Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) em Configuração do Dynamic Media - Modo Scene7 e [Solução de problemas do Dynamic Media - Modo Scene7.](/help/assets/troubleshoot-dms7.md)
+>* Consulte [Configuração do Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) em Configuração do Dynamic Media - Modo Scene7 e [Solução de problemas do Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md).
    >
    >
 * Consulte [Configuração do Dynamic Media Cloud Services](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) em Configuração do Dynamic Media - Modo híbrido.
@@ -356,7 +356,7 @@ Esta tabela descreve a taxa de dados de velocidades de conexão típicas.
 
 ### Resolução {#resolution}
 
-**Resolução **descreve a altura e a largura de um arquivo de vídeo em pixels. A maioria dos vídeos de origem é armazenada em alta resolução (por exemplo, 1920 x 1080). Para fins de transmissão, o vídeo de origem é compactado em uma resolução menor (640 x 480 ou menor).
+**** A solução descreve a altura e a largura de um arquivo de vídeo em pixels. A maioria dos vídeos de origem é armazenada em alta resolução (por exemplo, 1920 x 1080). Para fins de transmissão, o vídeo de origem é compactado em uma resolução menor (640 x 480 ou menor).
 
 A resolução e a taxa de dados são dois fatores totalmente vinculados que determinam a qualidade do vídeo. Para manter a mesma qualidade de vídeo, quanto maior o número de pixels em um arquivo de vídeo (quanto maior a resolução), maior deverá ser a taxa de dados. Por exemplo, considere o número de pixels por quadro em uma resolução de 320 x 240 e um arquivo de vídeo de resolução de 640 x 480:
 
@@ -548,7 +548,7 @@ A publicação de vídeos no YouTube requer um ou mais canais. Se você já crio
 >
 >Certifique-se de que você já configurou um ou mais canais no YouTube *antes de* adicionar canais em Configurações do YouTube em AEM (consulte [Configuração do YouTube no AEM](#setting-up-youtube-in-aem) abaixo). Se você não conseguir fazer isso, não receberá nenhum aviso de nenhum canal existente. No entanto, a autenticação do Google ainda ocorre ao adicionar um canal, mas não há uma opção para escolher qual canal o vídeo será enviado.
 
-Para criar um canal YouTube:
+**Para criar um canal YouTube:**
 
 1. Vá para [https://www.youtube.com](https://www.youtube.com/) e faça logon usando suas credenciais de conta do Google.
 1. No canto superior direito da página do YouTube, clique na imagem do perfil (também pode aparecer como uma letra dentro de um círculo colorido sólido) e clique em **[!UICONTROL YouTube settings]** (ícone de engrenagem redonda).
@@ -761,7 +761,7 @@ Agora, associe as tags adicionadas anteriormente aos ativos de vídeo. Esse proc
 >
 >Para obter informações de progresso mais detalhadas, você pode monitorar o log do YouTube em replicação. Esteja ciente, no entanto, de que esse monitoramento requer acesso de administrador.
 
-Para publicar vídeos no seu canal do YouTube:
+**Para publicar vídeos no seu canal do YouTube:**
 
 1. Em AEM, navegue até um ativo de vídeo que deseja publicar no canal do YouTube.
 1. Selecione o ativo de vídeo (o conjunto de vídeos adaptáveis).
@@ -797,7 +797,7 @@ Você pode obter uma string de URL do YouTube gerada pelo Dynamic Media após pu
 >
 >O URL do YouTube não está disponível para cópia até que você tenha publicado o ativo de vídeo no YouTube.
 
-Para vincular URLs do YouTube ao seu aplicativo da Web:
+**Para vincular URLs do YouTube ao seu aplicativo da Web:**
 
 1. Navegue até o ativo de vídeo *YouTube publicado* cujo URL você deseja copiar e selecione-o.
 
@@ -821,7 +821,7 @@ Ao cancelar a publicação de um ativo de vídeo no AEM, o vídeo é removido do
 >
 >Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-Para cancelar a publicação de vídeos para removê-los do YouTube:
+**Para cancelar a publicação de vídeos para removê-los do YouTube:**
 
 1. Navegue até os ativos de vídeo que você deseja cancelar a publicação por meio do canal do YouTube.
 1. Em um modo de seleção de ativo, selecione um ou mais ativos de vídeo publicados.
@@ -836,7 +836,7 @@ Ao carregar um novo vídeo para uma pasta com codificação de vídeo aplicada o
 
 ### Monitorar o progresso {#monitoring-progress}
 
-Para monitorar o progresso (incluindo codificação com falha/publicação do YouTube):
+**Para monitorar o progresso (incluindo codificação com falha/publicação do YouTube):**
 
 1. Exibir o progresso da codificação de vídeo na pasta de ativos:
 
@@ -987,7 +987,7 @@ Por padrão, na primeira vez que você insere Relatórios de vídeo, o relatóri
 
 Para que os relatórios de vídeo funcionem corretamente, uma ID de conjunto de relatórios é criada automaticamente quando o Dynamic Media Cloud Services é configurado. Ao mesmo tempo, a ID do conjunto de relatórios é enviada para o servidor de publicação, para que fique disponível para o recurso Copiar URL ao visualizar ativos. No entanto, isso requer que o servidor de publicação já esteja configurado. Se o servidor de Publicação não estiver configurado, você ainda poderá publicar para ver o relatório de vídeo. No entanto, será necessário retornar à Configuração da Dynamic Media Cloud e tocar em **[!UICONTROL OK]**.
 
-Para exibir relatórios de vídeo:
+**Para exibir relatórios de vídeo:**
 
 1. No canto superior esquerdo do AEM, toque no logotipo do AEM e, no painel à esquerda, toque em **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Ativos]** > **[!UICONTROL Relatórios de vídeo]**.
 1. Na página Relatórios de vídeo , execute um dos seguintes procedimentos:
@@ -1008,7 +1008,7 @@ Se você estiver usando um visualizador de vídeo pronto para uso fornecido pelo
 
 Use o [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) e a [API HTML5 Viewer SDK](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para criar seus próprios visualizadores de vídeo.
 
-Para exibir os Relatórios de vídeo com base em um visualizador de vídeo criado usando a API do SDK do Visualizador de HTML5:
+**Para exibir os Relatórios de vídeo com base em um visualizador de vídeo criado usando a API do SDK do Visualizador de HTML5:**
 
 1. Navegue até qualquer ativo de vídeo publicado.
 1. Próximo ao canto superior esquerdo da página do ativo, na lista suspensa, selecione **[!UICONTROL Visualizadores]**.
@@ -1108,7 +1108,7 @@ Consulte [Serving static (non-image) content](https://experienceleague.adobe.com
 
    Lembre-se de que os URLs só estão disponíveis para cópia *depois* que você *publicou* os ativos pela primeira vez.
 
-   Consulte [Publicar ativos.](/help/assets/publishing-dynamicmedia-assets.md)
+   Consulte [Publicar ativos](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. Faça uma das seguintes opções:
 
@@ -1311,7 +1311,7 @@ Consulte [Adicionar uma miniatura de vídeo](#adding-a-video-thumbnail).
 1. Toque em **[!UICONTROL OK]** para retornar à guia Propriedades.
 1. Próximo ao canto superior esquerdo da página do CRXDE Lite, toque em **[!UICONTROL Salvar tudo]** e toque no ícone Voltar início no canto superior esquerdo para retornar ao AEM.
 
-   Consulte [Adicionar uma miniatura de vídeo.](#adding-a-video-thumbnail)
+   Consulte [Adicionar uma miniatura de vídeo](#adding-a-video-thumbnail).
 
 ### Adicionar uma miniatura de vídeo personalizada {#adding-a-custom-video-thumbnail-1}
 
