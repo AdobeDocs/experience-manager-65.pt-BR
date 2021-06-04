@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Predefinições do visualizador
 role: Business Practitioner, Administrator
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
-source-wordcount: '4338'
+source-wordcount: '4339'
 ht-degree: 14%
 
 ---
@@ -61,7 +61,7 @@ Consulte [Biblioteca de imagens responsivas](https://experienceleague.adobe.com/
 >[!NOTE]
 >
 >Observe que você deve publicar todos os visualizadores prontos para uso antes de usá-los pela primeira vez.
->Consulte [Predefinições do Visualizador de Publicação.](#publishing-viewer-presets)
+>Consulte [Predefinições do visualizador de publicação].(#publishing-viewer-presets)
 
 ### Compatibilidade do sistema de predefinições do visualizador {#viewer-preset-system-compatibility}
 
