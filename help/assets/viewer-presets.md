@@ -10,10 +10,10 @@ discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 feature: Predefinições do visualizador
 role: Business Practitioner, Administrator
 exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 26%
+source-wordcount: '220'
+ht-degree: 25%
 
 ---
 
@@ -25,7 +25,7 @@ Se você for um administrador e precisar gerenciar, criar, classificar e excluir
 
 Consulte também [Predefinições do visualizador de publicação](managing-viewer-presets.md#publishing-viewer-presets).
 
-Talvez não seja necessário publicar predefinições do visualizador, dependendo do modo de publicação usado.
+Não é necessário publicar predefinições do visualizador, dependendo do modo de publicação usado.
 Qualquer problema com as predefinições do visualizador, consulte [Solução de problemas do Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
 
 ## Aplicar uma predefinição do visualizador do Dynamic Media a um ativo {#applying-a-viewer-preset-to-an-asset}
