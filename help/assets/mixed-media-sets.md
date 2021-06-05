@@ -11,10 +11,10 @@ docset: aem65
 feature: Misturar conjuntos de mídia,Gerenciamento de ativos
 role: Business Practitioner, Administrator
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
 workflow-type: tm+mt
-source-wordcount: '1470'
-ht-degree: 28%
+source-wordcount: '1458'
+ht-degree: 23%
 
 ---
 
@@ -36,11 +36,11 @@ Para ativar e executar rapidamente com Conjuntos de mídias mistas, siga estas e
 
 1. [Faça upload dos ativos](#uploading-assets).
 
-   Comece carregando as imagens e os vídeos dos Conjuntos de mídias mistas. Se necessário, crie seus [Conjuntos de imagens](/help/assets/image-sets.md) e [Conjuntos de rotação](/help/assets/spin-sets.md). Como os usuários podem ampliar imagens no Visualizador de conjunto de mídias mistas, considere o zoom ao escolher imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão.
+   Comece carregando as imagens e os vídeos dos Conjuntos de mídias mistas. Se necessário, crie seus [Conjuntos de imagens](/help/assets/image-sets.md) e [Conjuntos de rotação](/help/assets/spin-sets.md). Como os usuários podem ampliar imagens no Visualizador de conjunto de mídias mistas, escolha as imagens com cuidado. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão.
 
 1. [Criar conjuntos de mídia mista](#creating-mixed-media-sets).
 
-   Para criar um Conjunto de mídia mista, na página Assets, toque em **[!UICONTROL Criar > Conjunto de mídias mistas]** e nomeie o conjunto, selecione os ativos e escolha a ordem em que as imagens serão exibidas.
+   Para criar um Conjunto de mídias mistas, na página Ativos, toque em **[!UICONTROL Criar]** > **[!UICONTROL Conjunto de mídias mistas]** e nomeie o conjunto, escolha os ativos e escolha a ordem em que as imagens serão exibidas.
 
    Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md).
 
@@ -48,7 +48,7 @@ Para ativar e executar rapidamente com Conjuntos de mídias mistas, siga estas e
 
    Os administradores podem criar ou modificar as Predefinições do visualizador de conjunto de mídia mista. Para ver sua mídia mista com uma predefinição do visualizador, selecione o conjunto de mídias mistas e, no menu suspenso do painel à esquerda, selecione **[!UICONTROL Visualizadores]**.
 
-   Consulte **[!UICONTROL Ferramentas > Ativos > Predefinições do visualizador]** para criar ou editar predefinições do visualizador.
+   Para criar ou editar predefinições do visualizador, consulte **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]**.
 
    Consulte [Adicionar e editar predefinições do visualizador](/help/assets/managing-viewer-presets.md).
 
@@ -62,13 +62,13 @@ Para ativar e executar rapidamente com Conjuntos de mídias mistas, siga estas e
 
 1. [Vincule URLs ao seu ](/help/assets/linking-urls-to-yourwebapplication.md) aplicativo web ou  [Incorpore o visualizador](/help/assets/embed-code.md) de vídeo ou imagem.
 
-   O AEM Assets cria chamadas de URL para Conjuntos de mídia mista e as ativa após publicar os conjuntos de mídia mista. Você pode copiar esses URLs ao visualizar ativos. Como alternativa, você pode incorporá-los ao seu site.
+   O Adobe Experience Manager Assets cria chamadas de URL para Conjuntos de mídia mista e as ativa após publicar os conjuntos de mídia mista. Você pode copiar esses URLs ao visualizar ativos. Como alternativa, você pode incorporá-los ao seu site.
 
    Selecione o Conjunto de mídias mistas e, no menu suspenso do painel à esquerda, selecione **[!UICONTROL Visualizadores]**.
 
    Consulte [Vincular um conjunto de mídias mistas a uma página da Web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incorporar o visualizador de vídeo ou imagem](/help/assets/embed-code.md).
 
-Se precisar, edite [Conjuntos de mídias mistas](#editing-mixed-media-sets). Além disso, você pode exibir e modificar [as propriedades do Conjunto de mídias mistas](/help/assets/manage-assets.md#editing-properties).
+Se necessário, você pode editar [Conjuntos de mídias mistas](#editing-mixed-media-sets). Além disso, você pode exibir e modificar [as propriedades do Conjunto de mídias mistas](/help/assets/manage-assets.md#editing-properties).
 
 >[!NOTE]
 >
@@ -76,15 +76,15 @@ Se precisar, edite [Conjuntos de mídias mistas](#editing-mixed-media-sets). Al�
 
 ## Carregar ativos {#uploading-assets}
 
-Comece carregando as imagens e os vídeos dos Conjuntos de mídias mistas. Como os usuários podem ampliar imagens no Visualizador de conjunto de mídias mistas, considere o zoom ao escolher imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão.
+Comece carregando as imagens e os vídeos dos Conjuntos de mídias mistas. Como os usuários podem ampliar imagens no Visualizador de conjunto de mídias mistas, escolha as imagens com cuidado. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão.
 
-Além disso, se você quiser adicionar conjuntos de rotação ou conjuntos de imagens ao conjunto de mídia mista, crie-os também.
+Além disso, se você quiser adicionar conjuntos de rotação ou conjuntos de imagens ao conjunto de mídia mista, crie esses conjuntos também.
 
 ## Criação de conjuntos de mídia mista {#creating-mixed-media-sets}
 
 Você pode adicionar imagens, conjuntos de imagens, conjuntos de rotação e vídeos ao seu conjunto de mídias mistas. Verifique se os arquivos, os conjuntos de imagens e os conjuntos de rotação estão prontos para publicação antes de adicioná-los ao Conjunto de mídias mistas.
 
-Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em ordem alfanumérica. Você pode reordenar ou classificar ativos manualmente após a adição.
+Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em ordem alfanumérica. Você pode reorganizar ou classificar ativos manualmente após sua adição.
 
 **Para criar um Conjunto de mídias mistas:**
 
@@ -98,9 +98,9 @@ Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em or
 
    >[!NOTE]
    >
-   >Ao criar o conjunto de mídias mistas, você pode alterar a miniatura do conjunto de mídias mistas ou permitir que AEM selecione a miniatura automaticamente com base nos ativos no conjunto de mídias mistas. Para selecionar uma miniatura, clique em **[!UICONTROL Change thumbnail]** e selecione qualquer imagem (você também pode navegar para outras pastas para localizar imagens). Se tiver selecionado uma miniatura e decidir que deseja AEM gerar uma a partir do conjunto de mídias mistas, selecione **[!UICONTROL Alternar para a miniatura automática]**.
+   >Ao criar o conjunto de mídias mistas, você pode alterar a miniatura do conjunto de mídias mistas ou permitir que o Experience Manager selecione a miniatura automaticamente com base nos ativos no conjunto de mídias mistas. Para selecionar uma miniatura, clique em **[!UICONTROL Change thumbnail]** e selecione qualquer imagem (você também pode navegar para outras pastas para localizar imagens). Se tiver selecionado uma miniatura e decidir que deseja que o Experience Manager gere uma a partir do conjunto de mídias mistas, selecione **[!UICONTROL Alternar para a miniatura automática]**.
 
-1. Toque no Seletor de ativos para selecionar os ativos que deseja incluir no seu Conjunto de mídias mistas. Selecione-os e clique em **[!UICONTROL Select]**.
+1. Toque no Seletor de ativos para selecionar os ativos que deseja incluir no Conjunto de mídias mistas. Selecione-os e clique em **[!UICONTROL Select]**.
 
    Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar em **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e toque no ícone **[!UICONTROL Filtro]**, na barra de ferramentas. Altere a exibição ao clicar no ícone **[!UICONTROL Exibição]** e selecionar **[!UICONTROL Exibição em lista]**, **[!UICONTROL Exibição em coluna]** ou **[!UICONTROL Exibição de cartão]**.
 
@@ -124,10 +124,10 @@ Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em or
 
 ## Editar conjuntos de mídia mista {#editing-mixed-media-sets}
 
-Você pode executar uma variedade de tarefas de edição em ativos em Conjuntos de mídias mistas diretamente na interface do usuário [da mesma forma que faria com qualquer ativo em Ativos](/help/assets/manage-assets.md). Você também pode executar as seguintes ações em Conjuntos de mídias mistas:
+Você pode executar várias tarefas de edição em ativos em Conjuntos de mídias mistas diretamente na interface do usuário [da mesma forma que faria com qualquer ativo em Ativos](/help/assets/manage-assets.md). Você também pode executar as seguintes ações em Conjuntos de mídias mistas:
 
 * Adicione ativos ao Conjunto de mídias mistas.
-* Reorganize os ativos no Conjunto de mídias mistas.
+* Reordenar ativos no Conjunto de mídias mistas.
 * Exclua ativos no Conjunto de mídias mistas.
 * Aplicar predefinições do visualizador.
 * Altere a miniatura padrão.
@@ -152,17 +152,17 @@ Você pode executar uma variedade de tarefas de edição em ativos em Conjuntos 
 
       >[!NOTE]
       >
-      >* Para excluir um Conjunto de mídias mistas inteiro, a partir de qualquer modo de exibição (como **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em coluna]**), navegue até o Conjunto de mídias mistas. Passe o cursor sobre o ativo e toque no ícone de marca de seleção para selecioná-lo. Pressione **[!UICONTROL Backspace]** no teclado ou clique em **[!UICONTROL Mais]** (três pontos) na barra de ferramentas e toque em **[!UICONTROL Excluir]**.
+      >* Para excluir um Conjunto de mídias mistas inteiro, a partir de qualquer modo de exibição (como **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em coluna]**), navegue até o Conjunto de mídias mistas. Passe o mouse sobre o ativo e toque no ícone de marca de seleção para selecioná-lo. Pressione **[!UICONTROL Backspace]** no teclado ou clique em **[!UICONTROL Mais]** (três pontos) na barra de ferramentas e toque em **[!UICONTROL Excluir]**.
          >
          >
-      * Edite os ativos em um Conjunto de mídias mistas ao navegar até o conjunto, clicar em **[!UICONTROL Definir membros]** no painel à esquerda e tocar no ícone **[!UICONTROL Lápis]** em um ativo individual para abrir a janela de edição.
+      * É possível editar ativos em um Conjunto de mídias mistas ao navegar até o conjunto e clicar em **[!UICONTROL Definir membros]** no painel esquerdo. Toque no ícone **[!UICONTROL Lápis]** em um ativo individual para abri-lo na janela de edição.
 
 
 1. Toque em **[!UICONTROL Salvar]** quando terminar a edição.
 
    >[!NOTE]
    >
-   >* Para editar os ativos em um Conjunto de mídias mistas - Navegue até o Conjunto de mídias mistas. Toque (não selecione) no conjunto para abri-lo na página Visualização do conjunto do AEM. No painel à esquerda, clique no sinal de seta para baixo para abrir a lista suspensa e toque em **[!UICONTROL Definir membros]**. Na página Definir membros , passe o mouse sobre um ativo e toque em **[!UICONTROL Editar]** (ícone de lápis) para abrir a página de edição.
+   >* Para editar os ativos em um Conjunto de mídias mistas - Navegue até o Conjunto de mídias mistas. Toque (não selecione) no conjunto para que ele seja aberto na página Visualização do conjunto de Experience Manager. No painel à esquerda, clique no sinal de seta para baixo para abrir a lista suspensa e toque em **[!UICONTROL Definir membros]**. Na página Definir membros , passe o mouse sobre um ativo e toque em **[!UICONTROL Editar]** (ícone de lápis) para abrir a página de edição.
       >
       >
    * Para excluir um conjunto de mídia mista inteiro - A partir de qualquer modo de exibição (como a Exibição de cartão ou em Coluna), navegue até o conjunto de mídias mistas. Passe o mouse sobre o conjunto e toque em **Selecionar** (ícone de marca de seleção). Pressione **[!UICONTROL Backspace]** no teclado ou toque em **[!UICONTROL Mais]** (linha de três pontos) e toque em **[!UICONTROL Excluir]**.
@@ -178,4 +178,4 @@ Consulte [Publicação de ativos](/help/assets/publishing-dynamicmedia-assets.md
 
 >[!NOTE]
 >
->Se o conjunto de mídia mista não terminar totalmente no serviço de delivery na primeira vez que você o publicar, talvez seja necessário publicar o conjunto de mídia mista uma segunda vez.
+>Se o conjunto de mídia mista não terminar totalmente no serviço de delivery na primeira vez que você o publicar, publique o conjunto de mídia mista uma segunda vez.
