@@ -6,9 +6,9 @@ seo-description: Uma lista das plataformas de cliente e servidor compatíveis co
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: ed10c7230557f84511dfadd6fddb6b566466a049
+source-git-commit: 5ce72a51d69e97d7e07e9f734bfd7547fccd51f1
 workflow-type: tm+mt
-source-wordcount: '3265'
+source-wordcount: '3273'
 ht-degree: 1%
 
 ---
@@ -132,7 +132,7 @@ A Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
  </tbody>
 </table>
 
-1. O suporte e a distribuição das Builds do Azul Zulu do OpenJDK, incluindo todas as atualizações de manutenção das versões LTS, serão suportados pelo Adobe diretamente para todos os clientes AEM que usam as Builds do Azul Zulu do OpenJDK, a partir do AEM 6.5 SP9. Consulte o [Suporte do Azul Java para Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) para obter mais informações.
+1. O suporte e a distribuição das Builds do Azul Zulu do OpenJDK, incluindo todas as atualizações de manutenção das versões LTS, serão suportados pelo Adobe diretamente para todos os clientes AEM que usam as Builds do Azul Zulu do OpenJDK, a partir da resp AEM 6.5 SP9. AEM 6.5 SP10 para AEM Forms Java EE. Consulte o [Suporte do Azul Java para Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) para obter mais informações.
 
 1. O Oracle migrou para um modelo de &quot;Suporte de longo prazo&quot; (LTS) dos produtos Oracle Java SE. O Java 9, o Java 10 e o Java 12 são versões não LTS do Oracle (consulte [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implantar AEM no ambiente de produção, o Adobe fornece suporte somente para as versões LTS do Java. O suporte e a distribuição do JDK Java SE do Oracle, incluindo todas as atualizações de manutenção de versões LTS além do fim das atualizações públicas, serão suportados pelo Adobe diretamente para todos os clientes AEM que usam a tecnologia Oracle Java SE **até dezembro de 2022**. Consulte o [Suporte do Oracle Java para Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) para obter mais informações.
 
