@@ -10,7 +10,7 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Gerenciamento de ativos
 role: Business Practitioner, Administrator
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 6%
@@ -81,10 +81,10 @@ Existem dois métodos de nitidez de imagem que você pode usar:
 
 Como prática recomendada, comece com o parâmetro de raio da máscara de nitidez. As configurações de Raio que você pode começar são as seguintes:
 
-* **[!UICONTROL Sítio Web]**: 0,2-0,3 pixels
-* **[!UICONTROL Impressão fotográfica (250-300 ppi)]**: 0,3-0,5 pixels
-* **[!UICONTROL Impressão offset (266-300 ppi)]**: 0,7 a 1,0 pixels
-* **[!UICONTROL Impressão de tela (150 ppi)]**: 1,5-2,0 pixels
+* **[!UICONTROL Site]**  - 0.2-0.3 pixels
+* **[!UICONTROL Impressão fotográfica (250-300 ppi)]**  - 0,3-0,5 pixels
+* **[!UICONTROL Impressão offset (266-300 ppi)]**  - 0,7-1,0 pixels
+* **[!UICONTROL Impressão de tela (150 ppi)]**  - 1,5-2,0 pixels
 
 Aumente gradualmente o montante de 1,75 para 4. Se a nitidez ainda não for a maneira desejada, aumente o raio em um ponto decimal e execute o valor novamente de 1,75 para 4. Repita conforme necessário.
 
