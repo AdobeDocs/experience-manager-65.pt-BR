@@ -11,7 +11,7 @@ docset: aem65
 feature: Vídeo 360 VR
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 0%
@@ -82,8 +82,8 @@ Por padrão, o Experience Manager detecta vídeo como &quot;360&quot; se sua pro
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **Tipo** de propriedade: Duplo
-   * **Valor**: taxa de proporção de ponto flutuante, padrão 2.0.
+   * **Tipo**  de propriedade - Duplo
+   * **Valor**  - taxa de proporção de ponto flutuante, padrão 2.0.
 
 Após definir essa propriedade, ela entrará em vigor imediatamente nos vídeos existentes e nos vídeos recém-carregados.
 
