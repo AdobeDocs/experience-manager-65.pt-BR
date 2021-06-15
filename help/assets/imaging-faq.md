@@ -9,7 +9,7 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Gerenciamento de ativos,Representações
 role: Business Practitioner, Administrator
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 1%
@@ -220,7 +220,7 @@ The release schedule for Smart Imaging DPR and network optimization is as follow
 
 1. O Atendimento ao cliente do Adobe adiciona você à Lista de espera do cliente de Smart Imaging com base na ordem em que as solicitações foram enviadas.
 1. Quando o Adobe estiver pronto para lidar com sua solicitação, o suporte entrará em contato para coordenar e definir uma data de destino.
-1. **Opcional**: Como opção, você pode testar a geração inteligente de imagens no Estágio antes de o Adobe colocar o novo recurso em produção.
+1. **Opcional**  - você pode, opcionalmente, testar a geração inteligente de imagens na Preparação antes do Adobe colocar o novo recurso em produção.
 1. Você é notificado após a conclusão pelo Atendimento ao cliente.
 1. Para maximizar os aprimoramentos de desempenho do Smart Imaging, o Adobe recomenda definir o Time To Live (TTL) para 24 horas ou mais. O TTL define quanto tempo os ativos são armazenados em cache pela CDN. Para alterar essa configuração:
 
