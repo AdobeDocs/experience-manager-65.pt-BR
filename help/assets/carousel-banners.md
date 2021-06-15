@@ -11,9 +11,9 @@ docset: aem65
 feature: Banners em carrossel
 role: Business Practitioner, Administrator
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
 workflow-type: tm+mt
-source-wordcount: '4734'
+source-wordcount: '4740'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Os banners em carrossel permitem que os profissionais de marketing determinem a 
 
 Criar e modificar o conteúdo em destaque em banners promocionais pode ser demorado, limitando sua capacidade de publicar rapidamente novo conteúdo ou torná-lo mais direcionado. Os banners em carrossel permitem que você crie ou modifique rapidamente banners giratórios. Você pode adicionar interatividade, como pontos de acesso vinculados a detalhes do produto ou recursos relacionados, e entregá-los a qualquer tela - permitindo que você coloque o novo conteúdo promocional no mercado mais rapidamente.
 
-Os banners de carrossel são designados por um banner com a palavra **[!UICONTROL CAROUSELSET]**:
+Os banners de carrossel são designados por um banner com a palavra **[!UICONTROL CAROUSELSET]**
 
 ![chlimage_1-438](assets/chlimage_1-438.png)
 
@@ -48,7 +48,7 @@ Reproduza uma apresentação em [como os banners de carrossel são criados](http
 
 ## Início rápido: Banners em carrossel {#quick-start-carousel-banners}
 
-Para ativar e executar rapidamente:
+Para colocar você em funcionamento rapidamente com os banners de carrossel:
 
 1. [Identificar hotspots e variáveis de mapa de imagem](#identifying-hotspot-and-image-map-variables)  (somente para clientes que usam Experience Manager Assets + Dynamic Media)
 
@@ -56,7 +56,7 @@ Para ativar e executar rapidamente:
 
    >[!NOTE]
    >
-   >Se você for um cliente do Experience Manager Sites ou do Ecommerce, poderá usar o recurso integrado para navegar até páginas de produto e pesquisar os SKUs existentes no catálogo de produtos. Não é necessário inserir manualmente as variáveis de ponto de acesso ou mapa de imagem. Consulte as informações sobre [como configurar o eCommerce](/help/commerce/cif-classic/administering/generic.md).
+   >Se você for um cliente do Experience Manager Sites ou do Ecommerce, poderá usar o recurso integrado para navegar até páginas de produtos e pesquisar os SKUs existentes (Stock Keeping Unit) no catálogo de produtos. Não é necessário inserir manualmente as variáveis de ponto de acesso ou mapa de imagem. Consulte as informações sobre [como configurar o eCommerce](/help/commerce/cif-classic/administering/generic.md).
    >
    >
    >Se você for um cliente do Experience Manager Assets e do Dynamic Media, insira manualmente os dados dos pontos de acesso e mapas de imagem e integre o URL publicado ou o código incorporado ao seu sistema de gerenciamento de conteúdo de terceiros.
