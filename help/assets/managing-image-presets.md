@@ -12,16 +12,16 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Predefinições de imagem
 role: Business Practitioner, Administrator
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
 workflow-type: tm+mt
-source-wordcount: '3831'
-ht-degree: 10%
+source-wordcount: '3853'
+ht-degree: 8%
 
 ---
 
 # Gerenciamento de predefinições de imagens do Dynamic Media{#managing-image-presets}
 
-As predefinições de imagens permitem que o AEM Assets forneça dinamicamente imagens de diferentes tamanhos, formatos diferentes ou com outras propriedades de imagem geradas dinamicamente. Cada predefinição de imagem representa uma coleção predefinida de comandos de tamanho e formato para a exibição de imagens. Ao criar uma Predefinição de imagem, você escolhe um tamanho para a entrega da imagem. Você também escolhe comandos de formatação para que a aparência da imagem seja otimizada quando a imagem for entregue para exibição.
+As predefinições de imagens permitem que os ativos Adobe Experience Manager forneçam dinamicamente imagens de diferentes tamanhos, formatos diferentes ou com outras propriedades de imagem geradas dinamicamente. Cada predefinição de imagem representa uma coleção predefinida de comandos de tamanho e formato para a exibição de imagens. Ao criar uma Predefinição de imagem, você escolhe um tamanho para a entrega da imagem. Você também escolhe comandos de formatação para que a aparência da imagem seja otimizada quando a imagem for entregue para exibição.
 
 Os administradores podem criar predefinições para exportar ativos. Os usuários podem escolher uma predefinição quando exportam imagens, o que também reformata as imagens para as especificações especificadas pelo administrador.
 
@@ -41,7 +41,7 @@ Como uma macro, uma Predefinição de imagem é uma coleção predefinida de com
 >
 >No modo Dynamic Media - Scene7, as predefinições de imagens são suportadas somente para ativos de imagem.
 
-Você pode criar duas predefinições de imagem: um com 500 x 500 pixels para a versão desktop e 150 x 150 pixels para a versão móvel. Você cria duas Predefinições de imagem, uma chamada `Enlarge` para exibir imagens a 500x500 pixels e outra chamada `Thumbnail` para exibir imagens a 150 x 150 pixels. Para fornecer imagens no tamanho `Enlarge` e `Thumbnail`, AEM procura a definição da Predefinição de Imagem ampliada e da Predefinição de Imagem em miniatura. Em seguida, AEM gera dinamicamente uma imagem no tamanho e nas especificações de formatação de cada Predefinição de imagem.
+Você pode criar duas predefinições de imagem: um com 500 x 500 pixels para a versão desktop e 150 x 150 pixels para a versão móvel. Você cria duas Predefinições de imagem, uma chamada `Enlarge` para exibir imagens a 500x500 pixels e outra chamada `Thumbnail` para exibir imagens a 150 x 150 pixels. Para fornecer imagens no tamanho `Enlarge` e `Thumbnail`, o Experience Manager procura a definição da Predefinição de imagem ampliada e da Predefinição de imagem em miniatura. Em seguida, o Experience Manager gera dinamicamente uma imagem no tamanho e nas especificações de formatação de cada Predefinição de imagem.
 
 As imagens que são reduzidas quando entregues dinamicamente podem perder nitidez e detalhes. Por esse motivo, cada Predefinição de imagem contém controles de formatação para otimizar uma imagem quando ela é entregue em um tamanho específico. Esses controles garantem que suas imagens sejam nítidas e claras quando forem entregues ao seu site ou aplicativo.
 
@@ -49,7 +49,7 @@ Os administradores podem criar Predefinições de imagem. Para criar uma predefi
 
 ## Gerenciamento de predefinições de imagens do Dynamic Media {#managing-image-presets-1}
 
-Gerencie as predefinições de imagens no AEM tocando ou clicando no logotipo do AEM para acessar o console de navegação global e, em seguida, tocando ou clicando no ícone Ferramentas e navegando até **[!UICONTROL Ativos > Predefinições de imagem]**.
+Gerencie as predefinições de imagens no Experience Manager ao tocar ou clicar no logotipo do Experience Manager para acessar o console de navegação global e tocar ou clicar no ícone Ferramentas e navegar até **[!UICONTROL Ativos > Predefinições de imagem]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -59,13 +59,13 @@ Gerencie as predefinições de imagens no AEM tocando ou clicando no logotipo do
 >
 >Em *Dynamic Media - Modo Scene7*, você *não* precisa publicar predefinições de imagens, pois as predefinições de imagens são publicadas automaticamente.
 >
->Em *Dynamic Media - Modo híbrido*, é necessário publicar manualmente as predefinições de imagens.
+>Em *Dynamic Media - Modo híbrido*, você deve publicar manualmente as predefinições de imagens.
 >
 >Consulte [Publicar predefinições de imagens](#publishing-image-presets).
 
 >[!NOTE]
 >
->O sistema mostra uma variedade de representações quando você seleciona **[!UICONTROL Representações]** na Exibição de detalhes de um ativo. Você pode aumentar ou diminuir o número de predefinições de imagens exibidas. Consulte [Aumentar o número de predefinições de imagens exibidas](#increasing-or-decreasing-the-number-of-image-presets-that-display).
+>O sistema mostra várias representações ao selecionar **[!UICONTROL Representações]** na Exibição de Detalhes de um ativo. Você pode aumentar ou diminuir o número de predefinições de imagens exibidas. Consulte [Aumentar o número de predefinições de imagens exibidas](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 ### Recortes inteligentes, Adobe Illustrator (AI), Postscript (EPS) e formatos de arquivo PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
@@ -73,9 +73,9 @@ Gerencie as predefinições de imagens no AEM tocando ou clicando no logotipo do
 >
 >Este tópico é aplicável somente ao Dynamic Media - Modo híbrido.
 
-Se você pretende suportar a assimilação de arquivos AI, EPS e PDF para gerar representações dinâmicas desses formatos de arquivo, poderá querer revisar as seguintes informações antes de criar predefinições de imagem.
+Se você pretende suportar a assimilação de arquivos AI, EPS e PDF para gerar representações dinâmicas desses formatos de arquivo, analise as seguintes informações antes de criar predefinições de imagem.
 
-O formato de arquivo Adobe Illustrator é uma variante do PDF. As principais diferenças, no contexto do AEM Assets, são as seguintes:
+O formato de arquivo Adobe Illustrator é uma variante do PDF. As principais diferenças, no contexto de Ativos Experience Manager, são as seguintes:
 
 * Os documentos do Adobe Illustrator consistem em uma única página com várias camadas. Cada camada é extraída como um subativo PNG no ativo principal do Illustrator.
 * Os documentos PDF consistem em uma ou mais páginas. Cada página é extraída como um subativo PDF de página única sob o documento PDF principal de várias páginas.
@@ -147,15 +147,15 @@ Usando os argumentos padrão do processo, a primeira página de um documento PDF
 
 Largura máxima e Altura máxima limitam a resolução na qual rasterizar. Por exemplo, se os máximos estiverem inalterados e a Resolução for definida como 300 ppi, um documento Carta dos EUA será rasterizado em 186 ppi. Ou seja, o documento tem 1581 x 2046 pixels.
 
-O componente de processo `Rasterize PDF/AI Image Preview Rendition` tem um máximo definido para garantir que não crie imagens excessivamente grandes na memória. Imagens tão grandes podem estender a memória fornecida para a JVM (Java Virtual Machine). Deve-se tomar cuidado para fornecer à JVM memória suficiente para gerenciar o número configurado de fluxos de trabalho paralelos, cada um com o potencial de criar uma imagem no tamanho máximo configurado.
+O componente de processo `Rasterize PDF/AI Image Preview Rendition` tem um máximo definido para garantir que não crie imagens excessivamente grandes na memória. Imagens tão grandes podem estender a memória fornecida para a JVM (Java™ Virtual Machine). Deve-se tomar cuidado para fornecer à JVM memória suficiente para gerenciar o número configurado de fluxos de trabalho paralelos, cada um com o potencial de criar uma imagem no tamanho máximo configurado.
 
 ### Formato de arquivo InDesign (INDD) {#indesign-indd-file-format}
 
 Se você pretende suportar a assimilação de arquivos INDD para gerar a representação dinâmica desse formato de arquivo, convém revisar as seguintes informações antes de criar predefinições de imagem.
 
-Para arquivos InDesign, os sub-ativos são extraídos somente se o servidor Adobe InDesign estiver integrado ao AEM. Os ativos referenciados são vinculados com base em seus metadados. O InDesign Server não é necessário para vinculação. No entanto, os ativos referenciados devem estar presentes no AEM antes que os arquivos do InDesign sejam processados para que os links sejam criados entre os arquivos do InDesign e os ativos referenciados.
+Para arquivos InDesign, os sub-ativos são extraídos somente se o Adobe InDesign Server estiver integrado ao Experience Manager. Os ativos referenciados são vinculados com base em seus metadados. O InDesign Server não é necessário para vinculação. No entanto, os ativos referenciados devem estar presentes no Experience Manager antes que os arquivos do InDesign sejam processados para que os links sejam criados entre os arquivos do InDesign e os ativos referenciados.
 
-Consulte [Integração do AEM Assets com o InDesign Server](/help/assets/indesign.md).
+Consulte [Integrando ativos do Experience Manager com o InDesign Server](/help/assets/indesign.md).
 
 O componente do processo de Extração de mídia no workflow `DAM Update Asset` executa vários Scripts de Extensão pré-configurados para processar arquivos de InDesign.
 
@@ -168,7 +168,7 @@ Os seguintes scripts são usados pela integração do Dynamic Media:
 <table>
  <tbody>
   <tr>
-   <td><strong>Estender nome do script</strong></td>
+   <td><strong>Nome do ExtendScript</strong></td>
    <td><strong>Padrão</strong></td>
    <td><strong>Descrição</strong></td>
   </tr>
@@ -192,24 +192,24 @@ Os seguintes scripts são usados pela integração do Dynamic Media:
 
 ## Configuração do tamanho da miniatura da imagem {#configuring-image-thumbnail-size}
 
-Você pode configurar o tamanho das miniaturas definindo essas configurações no fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]**. Há duas etapas no fluxo de trabalho, onde você pode configurar o tamanho da miniatura dos ativos de imagem. Embora um (**[!UICONTROL Ativos de imagem de processo do Dynamic Media]**) seja usado para ativos de imagem dinâmica e o outro (**[!UICONTROL Processar miniaturas]**) para geração de miniaturas estáticas ou quando todos os outros processos não gerarem miniaturas, *ambos* devem ter as mesmas configurações.
+Você pode configurar o tamanho das miniaturas definindo essas configurações no fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]**. Há duas etapas no fluxo de trabalho, onde você pode configurar o tamanho da miniatura dos ativos de imagem. Embora um (**[!UICONTROL Ativos de imagem de processo do Dynamic Media]**) seja usado para ativos de imagem dinâmica, e o outro (**[!UICONTROL Processar miniaturas]**) para geração de miniaturas estáticas, ou quando todos os outros processos não geram miniaturas, *ambos* devem ter as mesmas configurações.
 
 Com a etapa **[!UICONTROL Ativos de imagem de processo do Dynamic Media]**, as miniaturas são geradas pelo servidor de imagem e essa configuração é independente da configuração aplicada à etapa **[!UICONTROL Processar miniaturas]**. Gerar miniaturas por meio da etapa **[!UICONTROL Processar miniaturas]** é a maneira mais lenta e intensiva de memória para criar miniaturas.
 
-O dimensionamento de miniaturas é definido no seguinte formato: **[!UICONTROL width:height:center]**, por exemplo *80:80:false*. A largura e a altura determinam o tamanho em pixels da miniatura; o valor central é false ou true e, se definido como true, indica que a imagem em miniatura tem exatamente o tamanho fornecido na configuração. Se a imagem redimensionada for menor, ela será centralizada na miniatura.
+O dimensionamento de miniaturas é definido no seguinte formato: **[!UICONTROL width:height:center]**, por exemplo *80:80:false*. A largura e a altura determinam o tamanho em pixels da miniatura. O valor central é false ou true e, se definido como true, indica que a imagem em miniatura tem exatamente o tamanho fornecido na configuração. Se a imagem redimensionada for menor, ela será centralizada na miniatura.
 
 >[!NOTE]
 >
->* O tamanho de miniatura dos arquivos EPS é configurado na etapa **[!UICONTROL Miniaturas do EPS]**, na guia **[!UICONTROL Argumentos]**, em Miniaturas.
+>* Os tamanhos de miniatura dos arquivos EPS são configurados na etapa **[!UICONTROL Miniaturas EPS]**, na guia **[!UICONTROL Argumentos]** em Miniaturas.
    >
    >
-* O tamanho da miniatura de vídeos é configurado na etapa de **[!UICONTROL Miniaturas do FFmpeg]**, na guia **[!UICONTROL Processo]**, em **[!UICONTROL Argumentos]**.
+* Os tamanhos de miniatura de vídeos são configurados na etapa **[!UICONTROL Miniaturas do FFmpeg]**, na guia **[!UICONTROL Process]** em **[!UICONTROL Argumentos]**.
 
 >
 
 
 
-**Para configurar o tamanho** da miniatura da imagem:
+**Para configurar o tamanho da miniatura da imagem:**
 
 1. Toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL Ativo de atualização do DAM]** > **[!UICONTROL Editar]**.
 1. Toque na etapa **[!UICONTROL Ativos de imagem de processo do Dynamic Media]** e toque ou clique na guia **[!UICONTROL Miniaturas]**. Altere o tamanho da miniatura, conforme necessário, e toque em **[!UICONTROL OK]**.
@@ -226,9 +226,9 @@ O dimensionamento de miniaturas é definido no seguinte formato: **[!UICONTROL w
 
 ### Aumentar ou diminuir o número de predefinições de imagens do Dynamic Media exibidas {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-As predefinições de imagens criadas estão disponíveis como representações dinâmicas ao visualizar ativos. AEM mostra uma variedade de representações dinâmicas ao visualizar um ativo de **[!UICONTROL Exibição de detalhes > Representações]**. Você pode aumentar ou diminuir o limite de representações exibidas.
+As predefinições de imagens criadas estão disponíveis como representações dinâmicas ao visualizar ativos. O Experience Manager mostra várias representações dinâmicas ao visualizar um ativo de **[!UICONTROL Exibição de detalhes > Representações]**. Você pode aumentar ou diminuir o limite de representações exibidas.
 
-**Para aumentar ou diminuir o número de predefinições de imagens do Dynamic Media exibidas**:
+**Para aumentar ou diminuir o número de predefinições de imagens do Dynamic Media exibidas:**
 
 1. Navegue até CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navegue até o nó da listagem de predefinições de imagens em `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -251,7 +251,7 @@ Criar uma predefinição de imagem do Dynamic Media permite aplicar essas config
 >
 >Se estiver usando o Internet Explorer 9, a criação de uma predefinição não será exibida na lista predefinida imediatamente após ser salva. Para contornar esse problema, desative o cache do IE9.
 
-Se você pretende oferecer suporte à assimilação de arquivos AI, PDF e EPS para gerar a representação dinâmica desses formatos de arquivo, convém revisar as seguintes informações antes de criar predefinições de imagem.
+Se você pretende suportar a assimilação de arquivos AI, PDF e EPS para gerar a representação dinâmica desses formatos de arquivo, analise as seguintes informações antes de criar predefinições de imagem.
 Consulte [Adobe Illustrator (AI), Postscript (EPS) e formatos de arquivo PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 Se você pretende suportar a assimilação de arquivos INDD para gerar a representação dinâmica desse formato de arquivo, convém revisar as seguintes informações antes de criar predefinições de imagem.
@@ -259,11 +259,11 @@ Consulte [InDesign (INDD) file format](#indesign-indd-file-format).
 
 >[!NOTE]
 >
->Para criar predefinições de imagens da Dynamic Media, você deve ter privilégios de administrador como administrador de AEM ou Admin Console.
+>Para criar predefinições de imagens da Dynamic Media, você deve ter privilégios de administrador como administrador de Experience Manager ou administrador de Admin Console.
 
-**Para criar uma predefinição** de imagem do Dynamic Media:
+**Para criar uma predefinição de imagem do Dynamic Media:**
 
-1. Em AEM, toque no logotipo do AEM para acessar o console de navegação global e toque em **[!UICONTROL Ferramentas > Ativos > Predefinições de imagem]**.
+1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
 1. Clique em **[!UICONTROL Criar]**. A janela **[!UICONTROL Editar predefinição de imagem]** é aberta.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -282,7 +282,7 @@ Consulte [InDesign (INDD) file format](#indesign-indd-file-format).
 
 Para criar uma predefinição de imagem responsiva, execute as etapas em [Criação de predefinições de imagem](#creating-image-presets). Ao inserir a altura e a largura na janela **[!UICONTROL Editar predefinição de imagem]**, apague os valores e deixe-os em branco.
 
-Deixá-los em branco informa AEM que essa predefinição de imagem é responsiva. É possível ajustar os outros valores, conforme necessário.
+Deixá-los em branco informa ao Experience Manager que essa predefinição de imagem é responsiva. É possível ajustar os outros valores, conforme necessário.
 
 
 
@@ -316,7 +316,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
   </tr>
   <tr>
    <td><strong>Nome</strong></td>
-   <td>Digite um nome descritivo sem espaços em branco. Inclua a especificação do tamanho da imagem no nome para ajudar os usuários a identificarem esta predefinição de imagem.</td>
+   <td>Insira um nome descritivo sem espaços em branco. Inclua a especificação do tamanho da imagem no nome para ajudar os usuários a identificar essa predefinição de imagem.</td>
   </tr>
   <tr>
    <td><strong>Largura e altura</strong></td>
@@ -338,7 +338,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
     <ul>
      <li><strong>Tipo  </strong>- Selecione  <strong>Adaptável</strong>  (padrão),  <strong>Web</strong> ou  <strong>Macintosh</strong>. Se você selecionar <strong>GIF com Alpha</strong>, a opção Macintosh não estará disponível.</li>
      <li><strong>Pontilhamento</strong>  - Selecione  <strong></strong> Difusor  <strong>Off</strong>.</li>
-     <li><strong>Número de Cores  </strong>- Insira um número entre 2 e 256.</li>
+     <li><strong>Número de Cores  </strong>- Insira um número de 2 a 256.</li>
      <li><strong>Lista de cores</strong>  - digite uma lista separada por vírgulas. Por exemplo, para branco, cinza e preto, digite 00000,888888,ffff.</li>
     </ul>
     <div>
@@ -348,7 +348,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
      <strong>TIFF com alfa</strong> fornece esta opção adicional:
     </div>
     <ul>
-     <li><strong>Compactação</strong>  - Selecione um algoritmo de compactação. As opções de algoritmo para PDF são <strong>None</strong>, <strong>Zip</strong> e <strong>Jpeg</strong>; para TIFF são <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> e <strong>Zip</strong>; e para TIFF com Alfa são <strong>None</strong>, <strong>LZW</strong> e <strong>Zip</strong>.</li>
+     <li><strong>Compactação</strong>  - Selecione um algoritmo de compactação. As opções de algoritmo para PDF são <strong>None</strong>, <strong>Zip</strong> e <strong>Jpeg</strong>; para TIFF, as opções são <strong>None</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> e <strong>Zip</strong>; e para TIFF com Alfa são <strong>None</strong>, <strong>LZW</strong> e <strong>Zip</strong>.</li>
     </ul> <p>Escolher <strong>PNG</strong>, <strong>PNG com Alfa,</strong> ou <strong>EPS</strong> não fornece opções adicionais.</p> </td>
   </tr>
   <tr>
@@ -372,15 +372,15 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
   </tr>
   <tr>
    <td><strong>Perfil de cor</strong></td>
-   <td>Selecione o perfil de espaço de cores de saída para o qual o ativo deve ser convertido se for diferente do perfil de trabalho.</td>
+   <td>Selecione o perfil de espaço de cores de saída para o qual o ativo deve ser convertido se ele for diferente do perfil de trabalho.</td>
   </tr>
   <tr>
    <td><strong>Renderizar recuo</strong></td>
    <td>Você pode substituir a intenção de renderização padrão. As intenções de renderização determinam o que acontece com as cores que não podem ser reproduzidas no perfil de cores de destino (fora do gamut). A intenção de renderização é ignorada se não for compatível com o perfil ICC.
     <ul>
      <li>Selecione <strong>Perceptual</strong> para compactar a gama total de um espaço de cores em outro espaço de cores quando uma ou mais cores na imagem original estiverem fora do gamut do espaço de cores de destino.</li>
-     <li>Selecione <strong>Colorimétrica relativa</strong> quando uma cor no espaço de cores atual estiver fora do gamut no espaço de cores de destino e desejar mapeá-la para a cor mais próxima possível dentro do gamut do espaço de cores de destino sem afetar nenhuma outra cor. </li>
-     <li>Selecione <strong>Saturation</strong> para reproduzir a saturação de cor da imagem original ao converter no espaço de cores de destino. </li>
+     <li>Selecione <strong>Colorimétrica relativa</strong> quando uma cor no espaço de cores atual estiver fora do gamut no espaço de cores de destino. E você quer mapeá-lo para a cor mais próxima possível dentro do gama do espaço de cores alvo sem afetar outras cores. </li>
+     <li>Selecione <strong>Saturation</strong> se desejar reproduzir a saturação de cores da imagem original ao converter no espaço de cores de destino. </li>
      <li>Selecione <strong>Colorimétrica Absoluta</strong> para corresponder as cores exatamente sem nenhum ajuste do ponto branco ou do ponto preto que alteraria o brilho da imagem.</li>
     </ul> </td>
   </tr>
@@ -396,14 +396,14 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
    <td><strong>Tipo de nitidez</strong></td>
    <td><p>Selecione <strong>None</strong>, <strong>Nitidez</strong> ou <strong>Tirar nitidez da máscara</strong>. </p>
     <ul>
-     <li>Selecione <strong>None</strong> para desativar a nitidez.</li>
-     <li>Selecione <strong>Nitidez </strong>para aplicar um filtro de nitidez básico à imagem depois que toda a escala ocorrer. A nitidez pode ajudar a compensar a indefinição que pode resultar na exibição de uma imagem em um tamanho diferente. </li>
-     <li>Selecione<strong> Tirar nitidez da máscara</strong> para ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida. Você pode controlar a intensidade do efeito, o raio do efeito (medido em pixels) e um limite de contraste que será ignorado. Esse efeito usa as mesmas opções do filtro "Tirar nitidez da máscara" do Photoshop.</li>
+     <li>Selecione <strong>None</strong> se desejar desativar a nitidez.</li>
+     <li>Selecione <strong>Nitidez</strong> se desejar aplicar um filtro de nitidez básico à imagem depois que toda a escala ocorrer. A nitidez pode ajudar a compensar a indefinição que pode resultar na exibição de uma imagem em um tamanho diferente. </li>
+     <li>Selecione<strong> Tirar nitidez da máscara</strong> se quiser ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida. Você pode controlar a intensidade do efeito, o raio do efeito (medido em pixels) e um limite de contraste que é ignorado. Esse efeito usa as mesmas opções do filtro "Tirar nitidez da máscara" do Photoshop.</li>
     </ul> <p>Em <strong>Tirar nitidez da máscara</strong>, você tem as seguintes opções:</p>
     <ul>
      <li><strong>Quantia</strong>  - Controla a quantidade de contraste aplicado aos pixels da borda. O valor padrão do número real é 1,0. Para imagens de alta resolução, você pode aumentá-lo até 5,0. Considere Quantia como uma medida de intensidade de filtro.</li>
      <li><strong>Raio</strong>  - Determina o número de pixels ao redor dos pixels da borda que afetam a nitidez. Para imagens de alta resolução, insira um número real de 1 a 2. Um valor baixo ajuste a nitidez apenas dos pixels da borda; um valor alto ajuste a nitidez de uma faixa mais ampla de pixels. O valor correto depende do tamanho da imagem.</li>
-     <li><strong>Limite</strong>  - Determina o intervalo de contraste a ser ignorado quando o filtro de máscara de nitidez for aplicado. Em outras palavras, essa opção determina o quão diferentes os pixels com nitidez devem ser da área ao redor antes de serem considerados pixels de borda e terem nitidez. Para evitar a introdução de ruído, experimente com valores inteiros entre 2 e 20. </li>
+     <li><strong>Limite</strong>  - Determina o intervalo de contraste a ser ignorado quando o filtro de máscara de nitidez for aplicado. Em outras palavras, essa opção determina o quão diferentes os pixels com nitidez devem ser da área ao redor antes de serem considerados pixels de borda e terem nitidez. Para evitar a introdução de ruído, experimente com valores inteiros de 2 a 20. </li>
      <li><strong>Aplicar a</strong>  - Determina se a nitidez não se aplica a cada cor ou brilho.</li>
     </ul>
     <div>
@@ -451,7 +451,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
 >[!NOTE]
 >
->Alguns modificadores de imagem [não podem ser usados em AEM](#advanced-tab-options).
+>Alguns modificadores de imagem [não podem ser usados em Experience Manager](#advanced-tab-options).
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api)  - Inverte cada componente de cor para um efeito de imagem negativo.
 
@@ -495,7 +495,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
 ## Editar predefinições de imagem {#modifying-image-presets}
 
-1. Em AEM, toque no logotipo do AEM para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
+1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -508,9 +508,9 @@ Se você estiver executando o Dynamic Media - Modo híbrido, será necessário p
 
 (Se você estiver executando o modo Dynamic Media - Scene7, as predefinições de imagens serão publicadas automaticamente para você; não é necessário concluir essas etapas.)
 
-**Para publicar predefinições de imagens no Dynamic Media - Modo** híbrido:
+**Para publicar predefinições de imagens no Dynamic Media - Modo híbrido:**
 
-1. Em AEM, toque ou clique no logotipo do AEM para acessar o console de navegação global e toque ou clique no ícone Ferramentas e navegue até **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
+1. No Experience Manager, toque ou clique no logotipo do Experience Manager para acessar o console de navegação global e toque ou clique no ícone Ferramentas e navegue até **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
 1. Selecione a predefinição de imagem ou várias predefinições de imagem na lista de predefinições de imagem e clique ou toque em **[!UICONTROL Publicar]**.
 1. Após a publicação da predefinição de imagem, o status muda de não publicado para publicado.
 
@@ -518,6 +518,6 @@ Se você estiver executando o Dynamic Media - Modo híbrido, será necessário p
 
 ## Excluir predefinições de imagens do Dynamic Media {#deleting-image-presets}
 
-1. No Experience Manager, toque ou clique no logotipo do AEM para acessar o console de navegação global.
+1. No Experience Manager, toque ou clique no logotipo do Experience Manager para acessar o console de navegação global.
 1. Toque no ícone **[!UICONTROL Ferramentas]** e navegue até **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
 1. Selecione uma predefinição e clique em **[!UICONTROL Delete]**. A Dynamic Media confirma que você deseja excluí-la. Toque em **[!UICONTROL Excluir]** para excluir ou toque em **[!UICONTROL Cancelar]** para suspender.
