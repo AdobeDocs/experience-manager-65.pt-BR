@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '7913'
+source-wordcount: '7911'
 ht-degree: 0%
 
 ---
-
 
 # Conversão entre formatos de arquivo e PDF {#converting-between-file-formatsand-pdf}
 
@@ -851,7 +850,7 @@ Se você criar um script para um aplicativo nativo que não era suportado anteri
 
 >[!NOTE]
 >
->Neste contexto, o termo adicional significa o conteúdo do arquivo `appmon.[applicationname].addition.[locale]`.xml`. Esse arquivo especifica substituições e adições ao arquivo XML da caixa de diálogo.
+>Neste contexto, o termo adicional significa o conteúdo do arquivo `appmon.[applicationname].addition.[locale].xml`. Esse arquivo especifica substituições e adições ao arquivo XML da caixa de diálogo.
 
 Também é possível modificar o arquivo XML da caixa de diálogo adicional para um aplicativo nativo para esses fins:
 
@@ -1146,4 +1145,3 @@ Este exemplo especifica como o serviço Gerar PDF deve interagir com o Bloco de 
     <abortMessage msg="15078"/>
 </application>
 ```
-
