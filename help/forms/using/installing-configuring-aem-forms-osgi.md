@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1907'
 ht-degree: 4%
 
 ---
-
 
 # Instalar e configurar recursos de captura de dados{#install-and-configure-data-capture-capabilities}
 
@@ -192,7 +191,7 @@ O Dispatcher é uma ferramenta de balanceamento de carga e/ou cache de Adobe Exp
 
 1. Configure o serviço de filtro do referenciador:
 
-   Faça logon no gerenciador de configuração do Apache Felix como administrador. O URL padrão do gerenciador de configuração é `https://[server]:[port_number]/system/console/configMgr`. No menu **Configurations**, selecione a opção **Apache Sling Referrer Filter**. No campo Permitir hosts , insira o nome do host do dispatcher para permitir como referenciador e clique em **Salvar**. O formato da entrada é &#39;https://[server]:[port]&#39;.
+   Faça logon no gerenciador de configuração do Apache Felix como administrador. O URL padrão do gerenciador de configuração é `https://[server]:[port_number]/system/console/configMgr`. No menu **Configurations**, selecione a opção **Apache Sling Referrer Filter**. No campo Permitir hosts , insira o nome do host do dispatcher para permitir como referenciador e clique em **Salvar**. O formato da entrada é `https://[server]:[port]`.
 
 #### Configurar Cache {#configure-cache}
 
@@ -243,4 +242,3 @@ Você configurou um ambiente para usar os recursos de captura de dados do AEM Fo
 * [Criar o primeiro formulário adaptável](/help/forms/using/create-your-first-adaptive-form.md)
 * [Criar seu primeiro formulário PDF](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 * [Introdução ao HTML5 Forms](/help/forms/using/introduction.md)
-
