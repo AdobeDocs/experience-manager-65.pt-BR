@@ -3,10 +3,9 @@ title: Configurar os plug-ins do Editor de Rich Text
 description: Saiba como configurar os plug-ins do Editor de Rich Text do Adobe Experience Manager para ativar funcionalidades individuais.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-translation-type: tm+mt
-source-git-commit: 443115b306ff34ee98da9403222874a9700d8aed
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4395'
 ht-degree: 3%
 
 ---
@@ -21,7 +20,7 @@ Para obter detalhes sobre as outras configurações do RTE, consulte [Configurar
 >
 >Ao trabalhar com o CRXDE Lite, é recomendável salvar as alterações regularmente usando a opção [!UICONTROL Salvar tudo].
 
-## Ative um plug-in e configure a propriedade de recursos {#activateplugin}
+## Ativar um plug-in e configurar a propriedade recursos {#activateplugin}
 
 Para ativar um plug-in, siga estas etapas. Algumas etapas são necessárias apenas quando você configura um plug-in pela primeira vez, pois os nós correspondentes não existem.
 
@@ -118,7 +117,7 @@ A configuração permite os três tipos de casos de uso a seguir:
    * **Tipo** `String`
    * **** Valor: um dos modos de colagem necessários  `browser`,  `plaintext`ou  `wordhtml`.
 
-### Configure os formatos permitidos ao colar conteúdo {#pasteformats}
+### Configurar os formatos permitidos ao colar o conteúdo {#pasteformats}
 
 O modo colar como Microsoft-Word (`paste-wordhtml`) pode ser configurado mais detalhadamente para que você possa definir explicitamente quais estilos são permitidos ao colar em AEM de outro programa, como o Microsoft Word.
 
@@ -244,7 +243,7 @@ Para configurações (re)posteriores, digamos para adicionar mais estilos, siga 
 >
 >Os estilos também podem ser definidos para [tabelas ou células de tabela](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Essas configurações exigem procedimentos separados.
 
-### Ativar a lista suspensa do seletor de Estilo {#styleselectorlist}
+### Ativar a lista suspensa Seletor de estilo {#styleselectorlist}
 
 Isso é feito ativando o plug-in de estilos.
 
@@ -261,7 +260,7 @@ Isso é feito ativando o plug-in de estilos.
 >
 >Quando o plug-in Estilos estiver ativado, a lista suspensa Estilo será exibida na caixa de diálogo de edição. No entanto, a lista está vazia, pois nenhum Estilo está configurado.
 
-### Especifique o local da folha de estilos {#locationofstylesheet}
+### Especificar a localização da folha de estilos {#locationofstylesheet}
 
 Em seguida, especifique a(s) localização(ões) da(s) folha(s) de estilos que deseja referenciar:
 
@@ -298,7 +297,7 @@ Em seguida, especifique a(s) localização(ões) da(s) folha(s) de estilos que d
 > }
 >```
 
-### Especifique os Estilos disponíveis na lista pop-up {#stylesindropdown}
+### Especificar os Estilos disponíveis na lista pop-up {#stylesindropdown}
 
 1. Na definição do componente, navegue até o nó `<rtePlugins-node>/styles`, conforme criado em [Ativando o seletor suspenso de estilo](#styleselectorlist).
 1. No nó `styles`, crie um novo nó (também chamado `styles`) para manter a lista sendo disponibilizada:
@@ -339,7 +338,7 @@ Para criar o estilo que os autores podem aplicar ao texto em japonês, siga esta
 
 1. Crie um novo nó no nó estilos . Consulte [especificar um novo estilo](#stylesindropdown).
    * Nome: `jpn-word-wrap`
-   * Tipo: `nt:unstructure
+   * Tipo: `nt:unstructure`
 
 1. Adicione a propriedade `cssName` ao nó para fazer referência à classe CSS. Este nome de classe é um nome reservado para o recurso de quebra automática de texto em japonês.
    * Nome: `cssName`
@@ -384,7 +383,7 @@ Quando o plug-in Formatos de parágrafo é ativado pela primeira vez, nenhum For
 
 Para configurações (re)posteriores, digamos para adicionar mais formatos, siga apenas a parte relevante das instruções.
 
-### Ative o seletor suspenso Formato {#formatselectorlist}
+### Ativar o seletor suspenso Formato {#formatselectorlist}
 
 Primeiro habilite o plug-in paraformat:
 
@@ -407,7 +406,7 @@ Se o plug-in não for configurado mais, os seguintes formatos padrão serão ati
 >[!CAUTION]
 Ao configurar os formatos de parágrafo do RTE, não remova a tag de parágrafo &lt;p> como uma opção de formatação. Se a tag `<p>` for removida, o autor de conteúdo não poderá selecionar a opção **Formatos de parágrafo** mesmo se houver formatos adicionais configurados.
 
-### Especifique os Formatos de parágrafo disponíveis {#paraformatsindropdown}
+### Especificar os Formatos de Parágrafo disponíveis {#paraformatsindropdown}
 
 Os formatos de parágrafo podem ser disponibilizados para seleção através de:
 
@@ -600,7 +599,7 @@ Para ajudar os autores a aplicar o CSS em cabeçalhos ocultos no modo de visuali
 
 Se você especificar o CSS e a sequência de estilo no código, a classe CSS terá prioridade sobre a sequência de estilo e poderá substituir qualquer alteração de configuração feita pela sequência de estilo.
 
-## Adicionar dicionários para o verificador ortográfico {#adddict}
+## Adicionar dicionários para o verificador de ortografia {#adddict}
 
 Quando o plug-in de verificação ortográfica é ativado, o RTE usa dicionários para cada idioma apropriado. Estes são então selecionados de acordo com o idioma do site, tirando a propriedade de idioma da subárvore ou extraindo o idioma do URL; por exemplo. a ramificação `/en/` é marcada como inglesa, a ramificação `/de/` como alemã.
 
@@ -670,7 +669,7 @@ O tamanho do travessão é aplicado somente aos parágrafos (blocos) do texto; n
    * **Tipo**: `Long`
    * **Valor**: número de pixels necessários para a margem de recuo.
 
-## Configure a altura do espaço editável {#editablespace}
+## Configurar a altura do espaço editável {#editablespace}
 
 >[!NOTE]
 Isso só é aplicável ao usar o RTE em uma caixa de diálogo (não na edição no local na interface clássica).
