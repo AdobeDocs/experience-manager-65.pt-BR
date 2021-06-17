@@ -10,15 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
-feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulários para publicação de conteúdo para dispositivos móveis
+exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '647'
 ht-degree: 6%
 
 ---
-
 
 # Habilitar registro para formulários HTML5{#enable-logging-for-html-forms}
 
@@ -53,7 +52,7 @@ Você pode usar os seguintes métodos para ativar o logon no lado do cliente em 
 
 ### Ativar o registro usando o parâmetro de solicitação {#enabling-logging-using-request-parameter}
 
-Usando este método, você pode gerar logs para uma solicitação específica. O nome do parâmetro da solicitação é &quot;log&quot;. O URL de log é o seguinte:
+Usando este método, você pode gerar logs para uma solicitação específica. O nome do parâmetro da solicitação é `log`. O URL de log é o seguinte:
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
