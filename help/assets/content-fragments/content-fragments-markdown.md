@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
 docset: aem65
-feature: Content Fragments
+feature: Fragmentos de conteúdo
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: 28e1052f-62b5-47bc-9bc8-f2d92f0254f6
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '543'
 ht-degree: 4%
 
 ---
-
 
 # Markdown{#markdown}
 
@@ -175,7 +174,7 @@ Você pode negrito como segue:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Para indicar uma extensão de código, vincule-a com aspas de backtick (`). Ao contrário de um bloco de código pré-formatado, uma extensão de código indica código dentro de um parágrafo normal.
+Para indicar uma extensão de código, vincule-a com aspas invertidas (&amp;grave;). Ao contrário de um bloco de código pré-formatado, uma extensão de código indica código dentro de um parágrafo normal.
 
 Por exemplo:
 
@@ -218,4 +217,3 @@ Os escape de barra invertida estão disponíveis para os seguintes caracteres:
     ` - minus sign (hyphen)`
 
     ` . dot`
-
