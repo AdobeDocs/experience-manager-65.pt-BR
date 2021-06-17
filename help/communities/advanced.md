@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1060'
 ht-degree: 1%
 
 ---
-
 
 # Pontuação avançada e emblemas{#advanced-scoring-and-badges}
 
@@ -106,7 +105,7 @@ Consulte [Subregras de pontuação](/help/communities/implementing-scoring.md#sc
 
 ![tipo de pontuação avançada](assets/advanced-scoring-type.png)
 
-### Palavras de interrupção {#stopwords}
+### Palavras-limite {#stopwords}
 
 O pacote de pontuação avançado instala uma pasta de configuração que contém um arquivo de palavras de interrupção:
 
@@ -185,28 +184,28 @@ Incluídas na versão beta estão duas regras de pontuação avançadas para a [
 
 1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
-   * `subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
+   ```
+   subRules[] =
+   /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule
+   ```
 
 1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
-   * `subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+   ```
+   subRules[] =
+   /libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+   ```
 
 **Notas:**
 
 * Ambos os nós `rules` e `sub-rules` são do tipo `cq:Page`.
-
-* `subRules` é um atributo do tipo [] String no  `jcr:content` nó da regra.
-
+* `subRules` é um atributo do tipo `[]` String no  `jcr:content` nó da regra.
 * `sub-rules` pode ser compartilhado entre várias regras de pontuação.
-
 * `rules` deve estar localizado em um local de repositório com permissão de leitura para todos.
-
 * Os nomes das regras devem ser exclusivos, independentemente da localização.
 
 ### Regras de marcação incluídas {#included-badging-rules}
@@ -221,4 +220,3 @@ Incluídas na versão estão duas regras de classificação avançadas que corre
 * `rules` nós são do tipo cq:Page.
 * `rules` deve estar localizado em um local de repositório com permissão de leitura para todos.
 * Os nomes das regras devem ser exclusivos, independentemente da localização.
-
