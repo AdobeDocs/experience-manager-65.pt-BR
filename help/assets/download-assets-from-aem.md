@@ -5,9 +5,9 @@ contentOwner: AG
 role: Business Practitioner
 feature: Gerenciamento de ativos,Distribuição de ativos
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '875'
 ht-degree: 3%
 
 ---
@@ -29,11 +29,6 @@ Os tipos de ativos Conjuntos de imagens, Conjuntos de rotação, Conjuntos de m�
 1. Navegue até uma pasta que contenha ativos que você deseja baixar.
 1. Selecione a pasta ou selecione um ou mais ativos na pasta.
 1. Na barra de ferramentas, clique em **[!UICONTROL Download]**.
-
-   ![Opções disponíveis ao baixar ativos do Experience Manager Assets](/help/assets/assets/asset-download1.png)
-
-   *Figura: Opções disponíveis na caixa de diálogo de download.*
-
 1. Na caixa de diálogo Download, selecione as opções de download desejadas.
 
    | Opção de exportação ou download | Descrição |
