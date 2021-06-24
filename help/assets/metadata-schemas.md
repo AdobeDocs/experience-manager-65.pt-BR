@@ -5,10 +5,9 @@ contentOwner: AG
 role: Business Practitioner,Administrator
 feature: Metadados
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-translation-type: tm+mt
-source-git-commit: ae0c8bda918e2e8a7a6a32e0228d1a2410b283d9
+source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3547'
 ht-degree: 8%
 
 ---
@@ -73,10 +72,6 @@ Para adicionar um formulário de esquema de metadados, siga estas etapas:
 1. Na página [!UICONTROL Forms] do Esquema de Metadados, selecione um formulário e clique em **[!UICONTROL Editar]** na barra de ferramentas.
 
 1. Na página **[!UICONTROL Editor de formulário de esquema de metadados]** , personalize o formulário de metadados. Arraste os componentes necessários da guia **[!UICONTROL Criar formulário]** para uma das guias.
-
-   ![Editor de esquema de metadados para personalizar a página Propriedades do ativo](assets/metadata-schema-editor.png)
-
-   *Figura: Uma página  [!UICONTROL do ] Editor de formulário de esquema de metadados com guias disponíveis.*
 
 1. Para configurar um componente, selecione-o e modifique suas propriedades na guia **[!UICONTROL Settings]**.
 
@@ -149,11 +144,9 @@ Para exibir qualquer guia na página de propriedades, além da guia em que o com
 
 Em vez de especificar propriedades para as opções na guia **[!UICONTROL Configurações]**, defina as opções em um arquivo JSON especificando pares de valores chave correspondentes. Especifique o caminho do arquivo JSON no campo **[!UICONTROL Caminho JSON]**.
 
-#### Adicione ou exclua uma guia no formulário de esquema {#adding-deleting-a-tab-in-the-schema-form}
+#### Adicionar ou excluir uma guia no formulário de esquema {#adding-deleting-a-tab-in-the-schema-form}
 
 O editor de esquema permite adicionar ou excluir uma guia. O formulário de esquema padrão inclui as guias **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]** e **[!UICONTROL IPTC Extension]**.
-
-![Guias padrão no formulário Esquema de metadados](assets/metadata-schema-form-tabs.png)
 
 Clique em `+` para adicionar uma guia em um formulário de esquema. Por padrão, a nova guia tem o nome `Unnamed-1`. Você pode modificar o nome da guia **[!UICONTROL Settings]**. Clique em `X` para excluir uma guia.
 
@@ -287,7 +280,7 @@ Para excluir um formulário, selecione-o e clique em excluir.
 
 Crie um formulário no tipo de formulário apropriado. Por exemplo, para adicionar um modelo para o subtipo `image/png`, crie o formulário nos formulários &quot;image&quot;. O título do formulário de esquema é o nome do subtipo. Nesse caso, o título é `png`.
 
-#### Use um modelo de esquema existente para vários tipos MIME {#use-an-existing-schema-template-for-various-mime-types}
+#### Usar um modelo de esquema existente para vários tipos MIME {#use-an-existing-schema-template-for-various-mime-types}
 
 Você pode usar um modelo existente para um tipo MIME diferente. Por exemplo, use o formulário `image/jpeg` para ativos do tipo MIME `image/png`.
 
