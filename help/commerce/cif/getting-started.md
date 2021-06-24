@@ -1,13 +1,13 @@
 ---
 title: Introdução ao conteúdo e comércio AEM
-description: Saiba como implantar um projeto de Conteúdo e Comércio de AEM.
+description: Saiba como implantar um projeto de Conteúdo e Comércio AEM.
 topics: Commerce
 feature: Estrutura de integração de comércio
 thumbnail: 37843.jpg
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
+source-git-commit: 61b8d0bf960bd03a19d22061f3c897a56259dd24
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '721'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ A integração do conteúdo e do comércio AEM é um processo de duas etapas:
 
 2. Conectar AEM com sua solução comercial
 
-### Instale o complemento Conteúdo do AEM e Comércio para o AEM 6.5 {#install-add-on}
+### Instale o complemento Conteúdo AEM e Commerce para o AEM 6.5 {#install-add-on}
 
 Baixe e instale o AEM Commerce Add-On para AEM 6.5 no portal [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
@@ -52,7 +52,7 @@ Os Componentes principais do AEM Content and Commerce e da CIF usam conexões AE
 
 O complemento CIF fornece um servlet proxy GraphQL em `/api/graphql` que pode ser usado opcionalmente para [desenvolvimento local](develop.md). Para implantações de produção, é altamente recomendável configurar um proxy reverso para o ponto de extremidade GraphQL de comércio por meio do Dispatcher AEM ou em outras camadas de rede (como CDN).
 
-## Configuração de armazenamentos e catálogos {#catalog}
+## Configuração de lojas e catálogos {#catalog}
 
 O complemento e os [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components) podem ser usados em várias estruturas de site AEM conectadas a diferentes lojas de comércio (ou visualizações de loja, e assim por diante). Por padrão, o complemento CIF é implantado com uma configuração padrão que se conecta à loja e ao catálogo padrão do Adobe Commerce (Magento).
 
@@ -79,6 +79,9 @@ As seguintes propriedades podem ser configuradas:
    >
    > O suporte para UIDs foi introduzido no Adobe Commerce (Magento) 2.4.2. Habilite-o somente se o back-end comercial suportar um esquema GraphQL da versão 2.4.2 ou posterior.
 - Identificador de categoria raiz do catálogo - o identificador (UID ou ID) da raiz do catálogo de loja
+   >[!CAUTION]
+   >
+   > A partir da versão 2.0.0 dos Componentes principais da CIF, o suporte para `id` foi removido e substituído por `uid`. Se o seu projeto usa a versão 2.0.0 dos Componentes principais da CIF, você deve ativar o Suporte à UID de catálogo e usar uma UID de categoria válida como &quot;Identificador de categoria raiz do catálogo&quot;.
 
 A configuração mostrada acima é para referência. Os projetos devem fornecer suas próprias configurações.
 
