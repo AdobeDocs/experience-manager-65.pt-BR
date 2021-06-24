@@ -3,15 +3,14 @@ title: Adicionar mapas de imagem com hiperlinks
 description: Saiba como adicionar um mapa de imagem com hiperlinks a uma imagem.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Gerenciamento de ativos
+exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
+source-git-commit: 1cfa58bb7dcbe70906071a22fbae4a9f479a31d9
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
-
 
 # Adicionar mapas de imagem {#adding-image-maps}
 
@@ -27,8 +26,6 @@ Os Mapas de imagem permitem adicionar uma ou mais áreas hipervinculadas que fun
 
    * Na exibição **[!UICONTROL Cartão]** ou **[!UICONTROL Lista]**, selecione o ativo e clique em **[!UICONTROL Editar]** na barra de ferramentas.
    * Clique em **[!UICONTROL Editar]** na página de ativos.
-
-      ![opção de edição](assets/do-not-localize/edit_icon.png)
 
 1. Para inserir um mapa de imagem, clique em **[!UICONTROL Iniciar mapa]** ![mapa de imagem](assets/do-not-localize/image-map-icon.png) na barra de ferramentas.
 1. Selecione a forma do mapa de imagem. O ponto de acesso da forma selecionada é colocado na imagem.
