@@ -1,10 +1,11 @@
 ---
 title: Notas de versão do AEM Content and Commerce 2021
 description: Notas de versão do AEM Content and Commerce 2021
-source-git-commit: 99636664a49da3ac5d236db5a1185ad6659ee255
+exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
+source-git-commit: 71782a3caae3f74a4886c52cf9b29f9e998913fa
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 9%
+source-wordcount: '758'
+ht-degree: 8%
 
 ---
 
@@ -27,6 +28,23 @@ O conector AEM CIF antigo está em modo de manutenção e não deve mais ser usa
 | Complemento CIF | Mínimo: AEM 6.5.7, Magento 2.3.5 Esquemas GraphQL |
 | Componentes principais da CIF | [Requisitos do sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Arquétipo de projeto do AEM | [Requisitos do sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Data de lançamento: Junho de 2021
+
+| Componente | Versão | Detalhes |
+|:-------|:-----:|---------------------:|
+| Complemento CIF | 2021.6.2018 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
+| Componentes principais da CIF | 1.12.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.12.0) |
+| Site de referência CIF Venia | 2021.6.2012 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
+
+### Novidades {#what-is-new-june}
+
+* Novos tipos de dados de referência de produto e categoria da CIF para Fragmentos de conteúdo (Incl. suporte à interface do usuário do seletor de categoria/produto)
+* Novo Componente principal do fragmento de conteúdo de comércio
+* Pesquisa de comércio de texto completo compatível com AEM backend
+* Os Componentes principais do Commerce são compatíveis com a coleta de dados do Adobe Commerce Sensei Recs
+* URLs compatíveis com SEO aprimorados para páginas de categoria
+* Suporte para cabeçalhos HTTP personalizados por site/configuração
 
 ## Data de lançamento: Maio de 2021
 
@@ -102,7 +120,7 @@ O conector AEM CIF antigo está em modo de manutenção e não deve mais ser usa
 
 * Propriedades do console do produto estendido para mostrar Ativos vinculados e Fragmentos de experiência, incluindo ações para navegar rapidamente para o conteúdo associado.
 
-### O que foi melhorado {#what-is-improved-february}
+### O que foi melhorado  {#what-is-improved-february}
 
 * Camada de dados do lado do cliente aprimorada com url de imagem do produto e informações de categoria.
 
@@ -120,7 +138,7 @@ O conector AEM CIF antigo está em modo de manutenção e não deve mais ser usa
 
 * Gerenciamento de experiência do produto: Nova guia de propriedade &quot;Comércio&quot; para Ativos e Fragmentos de experiência. Esta guia permite vincular Ativos e Fragmentos de experiência a produtos e categorias. A guia também mostra dados em tempo real para objetos de comércio vinculados e um link para mostrar detalhes no console do produto.
 
-### O que foi melhorado {#what-is-improved-january}
+### O que foi melhorado  {#what-is-improved-january}
 
 * Enviar dados do usuário após a autenticação para a Camada de dados do cliente do Adobe.
 
