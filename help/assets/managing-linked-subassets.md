@@ -3,15 +3,14 @@ title: Gerenciar ativos compostos com referências e várias páginas
 description: Saiba como criar referências a ativos digitais de dentro de [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Use o recurso Visualizador de página para exibir páginas de subativos individuais de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: ad0672c345262712e51e821fa4e050b505063ac4
+feature: Gerenciamento de ativos
+exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
+source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
-
 
 # Gerenciar ativos compostos e de várias páginas {#managing-compound-assets}
 
@@ -23,7 +22,7 @@ Além de eliminar a redundância, referenciar os ativos em [!DNL Adobe Creative 
 
 As referências são resolvidas com base no caminho, na ID do documento e na ID da instância dos ativos referenciados.
 
-## [!DNL Adobe Illustrator]: Adicionar ativos digitais como referências  {#refai}
+## [!DNL Adobe Illustrator]: Adicionar ativos digitais como referências {#refai}
 
 Você pode fazer referência a ativos digitais existentes em um arquivo [!DNL Adobe Illustrator].
 
@@ -46,7 +45,7 @@ Você pode fazer referência a ativos digitais existentes em um arquivo [!DNL Ad
 
    *Figura: Referências de ativos nos detalhes do ativo.*
 
-## [!DNL Adobe InDesign]: Adicionar ativos digitais como referências  {#add-aem-assets-as-references-in-adobe-indesign}
+## [!DNL Adobe InDesign]: Adicionar ativos digitais como referências {#add-aem-assets-as-references-in-adobe-indesign}
 
 Para fazer referência a ativos digitais em um arquivo [!DNL InDesign], arraste os ativos para o arquivo [!DNL InDesign] ou exporte o arquivo [!DNL InDesign] como um arquivo ZIP.
 
@@ -70,11 +69,9 @@ Esse procedimento é semelhante a [adicionar ativos digitais como referências n
 1. Inicie o workflow `Unarchiver`.
 1. Quando o fluxo de trabalho é concluído, as referências na pasta Links são automaticamente referenciadas como subativos. Para exibir uma lista de ativos referenciados, navegue até a página de detalhes do ativo [!DNL InDesign] e feche o [Painel](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## [!DNL Adobe Photoshop]: Adicionar ativos digitais como referências  {#refps}
+## [!DNL Adobe Photoshop]: Adicionar ativos digitais como referências {#refps}
 
 1. Use o [!DNL Experience Manager] aplicativo de desktop para acessar [!DNL Experience Manager Assets]. Baixe e revele os ativos no sistema de arquivos local. Use a funcionalidade [!UICONTROL Colocar Linked] em [!DNL Adobe Photoshop]. Consulte [colocar ativos no aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
-
-   ![chlimage_1-87](assets/chlimage_1-261.png)
 
 1. Salve no arquivo [!DNL Photoshop] na unidade montada ou [carregue](/help/assets/manage-assets.md#uploading-assets) no repositório [!DNL Experience Manager].
 1. Após a conclusão do fluxo de trabalho, as referências aos ativos [!DNL Experience Manager] existentes são listadas na página de detalhes do ativo.
