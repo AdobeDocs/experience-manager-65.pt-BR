@@ -11,9 +11,9 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Componentes,Publicação
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 3221454e2d2dfd90b645a4c0303404d44f8d373d
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3252'
 ht-degree: 22%
 
 ---
@@ -83,7 +83,7 @@ Se nenhum componente do Dynamic Media estiver disponível para ser adicionado a 
 
 1. No lado direito da barra de ferramentas, próximo à parte superior da página, na lista suspensa, toque em **[!UICONTROL Conteúdo inicial]**, em seguida em [adicionar um componente Dynamic Media a uma página](#adding-a-dynamic-media-component-to-a-page), como de costume.
 
-## Localização dos componentes do Dynamic Media {#localizing-dynamic-media-components}
+## Localização de componentes do Dynamic Media {#localizing-dynamic-media-components}
 
 Você pode localizar componentes do Dynamic Media de uma das duas maneiras:
 
@@ -178,7 +178,7 @@ Edite as seguintes configurações do Dynamic Media ao tocar no ícone **[!UICON
 
    ![configuração da relação de pixels do dispositivo para predefinição de imagem](/help/assets/assets-dm/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+   Consulte também [Sobre a otimização da taxa de pixels do dispositivo](/help/assets/imaging-faq.md#dpr). Observe que qualquer valor de DPR de imagem inteligente do Adobe Experience Manager Dynamic Media é ignorado.
 
 * **[!UICONTROL Título]**  - Altere o título da imagem.
 
@@ -254,7 +254,7 @@ Edite as seguintes configurações do Dynamic Media clicando em **[!UICONTROL Ed
 
    ![configuração de proporção de pixels do dispositivo para recorte inteligente](/help/assets/assets-dm/dpr-smartcrop.png)
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+   Consulte também [Sobre a otimização da taxa de pixels do dispositivo](/help/assets/imaging-faq.md#dpr). Observe que qualquer valor de DPR de imagem inteligente do Adobe Experience Manager Dynamic Media é ignorado.
 
 * **[!UICONTROL Título]**  - Altere o título da imagem de Recorte inteligente.
 
@@ -339,7 +339,7 @@ Você pode editar a seguinte configuração ao tocar em **[!UICONTROL Configurar
 
 Se a predefinição do visualizador que você está procurando não estiver visível, verifique se ela foi publicada. Publique predefinições do visualizador antes de usá-las. Consulte [Gerenciar predefinições do visualizador](/help/assets/managing-viewer-presets.md).
 
-### Componente de mídia do Video 360 {#video-media-component}
+### Componente de mídia Video 360 {#video-media-component}
 
 Use o componente **[!UICONTROL Mídia de vídeo 360]** para renderizar o vídeo tangível em sua página da Web para obter uma experiência de visualização imersiva de uma sala, propriedade, local, paisagem ou procedimento médico.
 
