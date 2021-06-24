@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Gerenciamento de ativos,Pesquisar
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: d06e60baac692c92358244944226b77d5dad4022
+source-git-commit: 550d837c8ad86393eefecb264b69157fca312984
 workflow-type: tm+mt
-source-wordcount: '9775'
+source-wordcount: '9743'
 ht-degree: 4%
 
 ---
@@ -77,11 +77,9 @@ O tamanho acima do qual um ativo é considerado um ativo grande é configurável
 
 A opção [!UICONTROL Pause] não aparece se um arquivo maior que 1000 MB for carregado com um arquivo menor que 1000 MB. No entanto, se você cancelar o upload de arquivo com menos de 1000 MB, a opção **[!UICONTROL Pausar]** será exibida.
 
-Para modificar o limite de tamanho, configure a propriedade `chunkUploadMinFileSize` do nó `fileupload`no repositório CRX.
+Para modificar o limite de tamanho, configure a propriedade `chunkUploadMinFileSize` do nó `fileupload` no repositório CRX.
 
 Ao clicar em **[!UICONTROL Pause]**, ele alterna para a opção **[!UICONTROL Play]**. Para retomar o upload, clique em **[!UICONTROL Reproduzir]**.
-
-![Retomar o upload do ativo pausado](assets/resume-paused-upload.png)
 
 Para cancelar um upload em andamento, clique em fechar (`X`) ao lado da barra de progresso. Ao cancelar a operação de upload, [!DNL Assets] exclui a parte parcialmente carregada do ativo.
 
@@ -238,7 +236,7 @@ Ao carregar arquivos de imagem, incluindo arquivos AI, EPS e PSD, você pode rea
 | | Tolerance | Optional.<br> Controls the allowable amount of variation in pixel color matching based on the Corner location that you set.<br> Use a value of 0.0 to match pixel colors exactly or, use a value of 1.0 to allow for the greatest variation. |
 -->
 
-#### Definir as opções de upload do PostScript e do Illustrator {#setting-postscript-and-illustrator-upload-options}
+#### Definir opções de upload do PostScript e do Illustrator {#setting-postscript-and-illustrator-upload-options}
 
 Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode formatá-los de várias maneiras. Você pode rasterizar os arquivos, manter o plano de fundo transparente, escolher uma resolução e escolher um espaço de cores. As opções para formatação de arquivos PostScript e Illustrator estão disponíveis na caixa de diálogo [!UICONTROL Upload Job Options] em [!UICONTROL PostScript Options] e [!UICONTROL Illustrator Options].
 
@@ -277,7 +275,7 @@ Use as [!UICONTROL Opções de recorte] e as [!UICONTROL Opções do perfil de c
 |  | Photoshop e Nome da Camada | Nomes das imagens após o arquivo PSD seguido do nome da camada ou do número da camada. O número da camada é usado se os nomes da camada no arquivo PSD forem nomes padrão da camada do Photoshop. Por exemplo, uma camada chamada Tag de preço em um arquivo PSD chamado SpringAd é chamada Tag Ad_Price Primavera. Uma camada com o nome padrão Camada 2 é chamada de Anúncio de primavera_2. |
 | Âncora |  | Especifique como as imagens são ancoradas em modelos que são gerados a partir da composição em camadas produzida a partir do arquivo PSD. Por padrão, a âncora é o centro. Uma âncora central permite que imagens de substituição preencham melhor o mesmo espaço, independentemente da proporção da imagem de substituição. Imagens com um aspecto diferente que substituem essa imagem, ao referenciar o modelo e usar substituição de parâmetro, ocupam efetivamente o mesmo espaço. Altere para uma configuração diferente se o aplicativo exigir as imagens de substituição para preencher o espaço alocado no modelo. |
 
-#### Definir as opções de upload de PDF {#setting-pdf-upload-options}
+#### Definir opções de upload de PDF {#setting-pdf-upload-options}
 
 Ao carregar um arquivo PDF, você pode formatá-lo de várias maneiras. Você recorta suas páginas, extrai palavras de pesquisa, digita uma resolução de pixels por polegada e escolhe um espaço de cores. Os arquivos PDF geralmente contêm uma margem de corte, marcas de corte, marcas de registro e outras marcas de impressora. É possível recortar essas marcas das laterais das páginas ao carregar um arquivo PDF.
 
@@ -312,13 +310,13 @@ Para transcodificar um arquivo de vídeo, escolha dentre várias predefinições
 |  | Móvel | Crie um arquivo MP4 para entrega em dispositivos móveis iPhone ou Android.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
 |  | Tablet | Crie um arquivo MP4 para entrega em dispositivos tablet iPad ou Android.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
 
-#### Defina as predefinições do conjunto de lotes em {#setting-batch-set-presets-at-upload}
+#### Definir predefinições do conjunto de lotes no upload {#setting-batch-set-presets-at-upload}
 
 Para criar automaticamente um Conjunto de imagens ou um Conjunto de rotação a partir de imagens carregadas, clique na coluna Ativo da predefinição que deseja usar. Você pode selecionar mais de uma predefinição.
 
 Consulte [Configurando predefinições de conjunto de lotes para gerar automaticamente conjuntos de imagens e conjuntos de rotação](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) para saber mais sobre como criar predefinições de conjunto de lotes.
 
-### Uploads sequenciados {#streamed-uploads}
+### Uploads continuados {#streamed-uploads}
 
 Se você carregar muitos ativos no Adobe Experience Manager, as solicitações de E/S para o servidor aumentarão drasticamente, o que reduz a eficiência do upload e pode até fazer com que algumas tarefas de upload atinjam o tempo limite. [!DNL Experience Manager Assets] O suporta upload simplificado de ativos. O upload em fluxo reduz a E/S do disco durante a operação de upload, evitando o armazenamento de ativos em uma pasta temporária no servidor antes de copiá-lo para o repositório. Em vez disso, os dados são transferidos diretamente para o repositório. Dessa forma, o tempo para fazer upload de ativos grandes e a possibilidade de tempos limite são reduzidos. O upload sequenciado é ativado por padrão em [!DNL Assets].
 
@@ -541,7 +539,7 @@ Mover ativos arrastando-os não abre o assistente [!UICONTROL Mover ativo], port
 
    Da mesma forma, é possível personalizar a imagem da página Anotação ao sobrepor `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![Sobrepor o nó do seletor de representação no CRXDE para personalizar a imagem da página de Anotação](assets/renditionpicker-node-crxde.png)
+   ![Sobrepor o nó do seletor de representação no CRXDE para personalizar a imagem da página de Anotação](assets/renditionpicker-node.png)
 
    Para configurar dimensões de representação para um ativo de vídeo, navegue até o nó `videopicker` no repositório CRX no local `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, sobreponha o nó e edite a propriedade apropriada.
 
@@ -584,7 +582,7 @@ Para excluir um ativo ou uma pasta que contenha o ativo:
 
 Consulte [Baixar ativos do Experience Manager](/help/assets/download-assets-from-aem.md).
 
-## Publicar ou cancelar a publicação de ativos {#publish-assets}
+## Publicar ou desfazer a publicação de ativos {#publish-assets}
 
 Após fazer upload, processar ou editar seus ativos no autor de [!DNL Experience Manager], publique o ativo no servidor de publicação. A publicação torna o ativo disponível publicamente. A ação de desfazer a publicação removeu o ativo do servidor de publicação, mas não do servidor de criação.
 
@@ -655,8 +653,6 @@ Na exibição de lista e na exibição de coluna, a opção **[!UICONTROL Seleci
 
 Na exibição de cartão, a opção **[!UICONTROL Selecionar]** é exibida como uma ação rápida.
 
-![Selecionar ação rápida na exibição de cartão](assets/select_quick_action.png)
-
 Ao navegar por uma pasta ou coleção na interface do usuário [!DNL Assets] em um navegador, é possível selecionar todos os ativos exibidos ou carregados usando a opção [!UICONTROL Selecionar tudo] no canto superior direito. Inicialmente, apenas 100 ativos são carregados na exibição de cartão e 200 são carregados na exibição em lista. Mais ativos são carregados na visualização à medida que você rolar a página de resultados da pesquisa. A opção [!UICONTROL Selecionar tudo] seleciona somente os ativos carregados.
 
 Para obter mais informações, consulte [visualizar e selecionar seus recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -678,8 +674,6 @@ As ferramentas de edição na interface [!DNL Assets] permitem executar pequenos
 1. Para recortar a imagem, clique em **[!UICONTROL Recortar]** ![Opção para recortar uma imagem](assets/do-not-localize/crop.png).
 
 1. Selecione a opção desejada na lista. A área de corte aparece na imagem com base na opção escolhida. A opção **Mão livre** permite cortar a imagem sem restrições de proporção.
-
-   ![Opções de corte](assets/crop-options.png)
 
 1. Selecione a área a ser cortada e redimensione-a ou reposicione-a na imagem.
 
@@ -736,11 +730,9 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
 
 1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Como alternativa, marque uma área na imagem e adicione uma anotação na caixa de diálogo **[!UICONTROL Adicionar anotação]**.
 
-   ![Caixa Comentário na caixa de diálogo Adicionar anotação](assets/annotation-comment-box.png)
-
 1. Para notificar um usuário sobre uma anotação, especifique o endereço de email do usuário e adicione o comentário. Por exemplo, para notificar Aaron MacDonald sobre uma anotação, digite @aa. As dicas para todos os usuários correspondentes são exibidas em uma lista. Selecione o endereço de e-mail de Aaron na lista para marcá-la com o comentário. Da mesma forma, é possível marcar mais usuários em qualquer lugar dentro da anotação, antes ou depois dela.
 
-   ![Especifique o endereço de email do usuário e adicione um comentário para notificar o usuário](assets/annotation-add-user-email.png)
+   ![Especifique o endereço de email do usuário e adicione um comentário para notificar o usuário](assets/annotate-gif.gif)
 
    >[!NOTE]
    >
@@ -807,8 +799,6 @@ Para imprimir as anotações e o status de revisão, clique em **[!UICONTROL Imp
 1. Clique em **[!UICONTROL Imprimir]** na barra de ferramentas.
 
 1. Na caixa de diálogo Imprimir, escolha a posição em que deseja que o status das anotações/revisões seja exibido no PDF. Por exemplo, se você quiser que as anotações/status sejam impressas na parte superior direita da página que contém a imagem impressa, use a configuração **Parte superior esquerda**. Ele é selecionado por padrão.
-
-   ![Selecione a posição da anotação/status de revisão a ser exibida no PDF na caixa de diálogo Imprimir](assets/Print-annotation-dialog.png)
 
    É possível escolher outras configurações, dependendo da posição em que deseja que as anotações/status apareçam no PDF impresso. Se desejar que as anotações/status apareçam em uma página separada do ativo impresso, escolha **[!UICONTROL Próxima página]**.
 
