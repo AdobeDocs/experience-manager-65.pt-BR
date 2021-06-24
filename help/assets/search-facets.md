@@ -3,15 +3,14 @@ title: Pesquisar aspectos para filtrar os resultados da pesquisa
 description: Como criar, modificar e usar facetas de pesquisa em [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Administrator, Developer
-feature: Search
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: 'Pesquisar  '
+exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
+source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
 workflow-type: tm+mt
-source-wordcount: '2427'
+source-wordcount: '2397'
 ht-degree: 17%
 
 ---
-
 
 # Pesquisar aspectos {#search-facets}
 
@@ -31,8 +30,6 @@ Para pesquisas de texto completo, adicione o predicado [!UICONTROL Texto complet
 
 1. Clique no logotipo [!DNL Experience Manager] e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar Forms]**.
 1. Na página Pesquisar Forms , selecione **[!UICONTROL Painel de pesquisa do administrador de ativos]** e clique em **[!UICONTROL Editar]** ![editar ícone](assets/do-not-localize/aemassets_edit.png).
-
-   ![Localize e selecione o Painel de pesquisa de ativos ou de administração](assets/assets_admin_searchrail.png)
 
    >[!NOTE]
    >
@@ -181,7 +178,7 @@ Semelhante à forma como você adiciona um predicado de Propriedade ou um predic
 
 Por padrão, um ícone de bloqueio ![ícone de fechamento de bloqueio](assets/do-not-localize/lock_closed_icon.svg) aparece antes de **[!UICONTROL Painel de pesquisa do administrador de ativos]** na página **[!UICONTROL Pesquisar Forms]**. Ícone de cadeado em relação a uma opção na página Pesquisar Forms indica que as configurações padrão estão intactas e não são personalizadas. O ícone ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) desaparece se você adicionar facetas de pesquisa ao formulário, indicando que o formulário padrão foi modificado.
 
-![Ícone de cadeado em relação a uma opção na página Pesquisar Forms indica que as configurações padrão estão intactas e não são personalizadas.](assets/locked_admin_rail.png)
+![Ícone de cadeado](assets/locked_admin_rail.png)
 
 Para restaurar o aspecto de pesquisa padrão, execute estas etapas:
 
@@ -204,5 +201,5 @@ Se você não tiver uma função de administrador, esta é uma lista de permiss�
 >[!MORELIKETHIS]
 >
 >* [Estender o recurso de pesquisa de ativos](searchx.md)
->* [Pesquisar ativos](search-assets.md)
+* [Pesquisar ativos](search-assets.md)
 
