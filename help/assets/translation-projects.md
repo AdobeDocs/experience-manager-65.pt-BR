@@ -3,15 +3,14 @@ title: Criar projetos de tradução
 description: Saiba como criar projetos de tradução em [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Architect, Administrator
-feature: Translation
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Tradução
+exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
+source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1875'
 ht-degree: 17%
 
 ---
-
 
 # Criar projetos de tradução {#creating-translation-projects}
 
@@ -70,15 +69,9 @@ Se você usar essa opção, os ativos a serem traduzidos serão copiados para a 
 
 1. Na lista **[!UICONTROL Idiomas de destino]**, selecione os idiomas para os quais deseja criar uma estrutura de pastas.
 
-   ![chlimage_1-65](assets/chlimage_1-65.png)
-
 1. Na lista **[!UICONTROL Project]**, selecione **[!UICONTROL Create a new translation project]**.
 
-   ![chlimage_1-66](assets/chlimage_1-66.png)
-
 1. No campo **[!UICONTROL Título do projeto]**, informe um título para o projeto.
-
-   ![chlimage_1-67](assets/chlimage_1-67.png)
 
 1. Clique em **[!UICONTROL Criar]**. [!DNL Assets] da pasta de origem são copiadas para as pastas de destino das localidades selecionadas na etapa 4.
 
@@ -234,8 +227,6 @@ Se você usar essa opção, o conjunto de ativos será adicionado a um projeto d
 1. Clique em **[!UICONTROL Atualizar cópias de idioma]** na parte inferior.
 
 1. Na lista **[!UICONTROL Project]**, escolha **[!UICONTROL Adicionar ao projeto de tradução existente]**.
-
-   ![chlimage_1-97](assets/chlimage_1-97.png)
 
 1. Na lista **[!UICONTROL Projeto de tradução existente]**, selecione um projeto para adicionar o ativo para tradução.
 
