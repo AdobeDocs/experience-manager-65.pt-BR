@@ -3,17 +3,16 @@ title: Processar ativos usando manipuladores de mídia e fluxos de trabalho
 description: Saiba mais sobre os manipuladores de mídia e como usar fluxos de trabalho para executar tarefas em seus ativos digitais.
 contentOwner: AG
 role: Business Practitioner
-feature: Workflow,Renditions
+feature: Fluxo De Trabalho,Representações
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-translation-type: tm+mt
-source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
+source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2166'
 ht-degree: 4%
 
 ---
 
-# Processar ativos usando manipuladores de mídia e workflows {#processing-assets-using-media-handlers-and-workflows}
+# Processar ativos usando manipuladores de mídia e fluxos de trabalho {#processing-assets-using-media-handlers-and-workflows}
 
 [!DNL Adobe Experience Manager Assets] O vem com um conjunto de workflows padrão e manipuladores de mídia para processar ativos. Um fluxo de trabalho define as tarefas a serem executadas nos ativos e delega as tarefas específicas aos manipuladores de mídia, por exemplo, geração de miniaturas ou extração de metadados.
 
@@ -62,7 +61,7 @@ Para exibir os manipuladores de mídia ativos:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## Use manipuladores de mídia em fluxos de trabalho para executar tarefas em ativos {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Usar manipuladores de mídia em fluxos de trabalho para executar tarefas em ativos {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 Os manipuladores de mídia são serviços normalmente usados em combinação com fluxos de trabalho.
 
@@ -72,7 +71,7 @@ Os workflows existentes podem ser estendidos e novos podem ser criados para proc
 
 O exemplo a seguir mostra como aprimorar o fluxo de trabalho de **[!UICONTROL Sincronização do AEM Assets]** para que os ativos secundários sejam gerados para todos os ativos, exceto documentos PDF.
 
-### Desative ou ative um manipulador de mídia {#disabling-enabling-a-media-handler}
+### Desativar ou ativar um manipulador de mídia {#disabling-enabling-a-media-handler}
 
 Os manipuladores de mídia podem ser desativados ou ativados por meio do Console de gerenciamento da Web Apache Felix. Quando o manipulador de mídia está desativado, suas tarefas não são executadas nos ativos.
 
@@ -369,7 +368,7 @@ Após executar o procedimento a seguir, ao carregar um arquivo TXT em [!DNL Expe
      Layer watermarkLayer;
      try {
       final Session session = node.getSession();
-      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/geometrixx/icons/certificate.png");
+      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/samplesite/icons/certificate.png");
       watermarkLayer.setX(MARGIN);
       watermarkLayer.setY(MARGIN);
       layer.merge(watermarkLayer);
@@ -497,7 +496,7 @@ Para testar o fluxo de trabalho modificado, adicione um ativo a `/content/dam`.
 1. Vá para o console **[!UICONTROL CQ5 DAM]**, por exemplo `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Abra o ativo **[!UICONTROL myImage.tiff]** e verifique se a imagem invertida e as três miniaturas foram criadas.
 
-#### Configure a etapa do processo CommandLineProcess {#configuring-the-commandlineprocess-process-step}
+#### Configurar a etapa do processo CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
 Esta seção descreve como definir os [!UICONTROL Argumentos de processo] do [!UICONTROL CommandLineProcess].
 
