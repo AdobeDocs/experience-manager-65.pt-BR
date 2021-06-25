@@ -3,15 +3,14 @@ title: Entender os conceitos de metadados
 description: Saiba mais sobre a necessidade e os tipos de metadados que permitem classificar e organizar facilmente os ativos.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Metadata
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Metadados
+exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '2735'
+source-wordcount: '2730'
 ht-degree: 6%
 
 ---
-
 
 # Entender os conceitos de metadados {#why-we-need-metadata}
 
@@ -29,7 +28,7 @@ As informações acima são as propriedades básicas de metadados que [!DNL Expe
 
 Você pode adicionar mais dados de alto nível aos ativos digitais, por exemplo:
 
-* Tipo de ativo (é uma imagem, um vídeo, um clipe de áudio ou um documento?).
+* Tipo de ativo (uma imagem, um vídeo, um clipe de áudio ou um documento).
 * Proprietário do ativo.
 * Título do ativo.
 * Descrição do ativo.
@@ -265,7 +264,7 @@ XMP pode incluir propriedades de um ou mais schemas. Por exemplo, um subconjunto
 * XMP schema de gerenciamento de direitos: `xmpRights:WebStatement`, `xmpRights:Marked`.
 * XMP schema de gerenciamento de mídia: `xmpMM:DocumentID`.
 
-#### Alternativas de idioma {#language-alternatives}
+#### Alternativas linguísticas {#language-alternatives}
 
 XMP permite adicionar uma propriedade `xml:lang` às propriedades do texto para especificar o idioma do texto.
 
