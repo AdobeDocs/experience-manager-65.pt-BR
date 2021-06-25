@@ -11,17 +11,16 @@ topic-tags: deploying
 discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
 legacypath: /deploy/platform/data-store-config
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuração
+exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
+source-git-commit: e7038e9c2949cb6326470d0248b640e576c7f919
 workflow-type: tm+mt
-source-wordcount: '3424'
+source-wordcount: '3487'
 ht-degree: 1%
 
 ---
 
-
-# Configurar armazenamentos de nó e armazenamentos de dados no AEM 6{#configuring-node-stores-and-data-stores-in-aem}
+# Configuração de armazenamentos de nó e armazenamentos de dados no AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Introdução {#introduction}
 
@@ -86,7 +85,7 @@ tarmk.size=I"256"
 customBlobStore=B"true"
 ```
 
-#### Armazenamento de nós do documento {#document-node-store}
+#### Loja de nós do documento {#document-node-store}
 
 O armazenamento do nó do documento é a base AEM implementação do MongoMK. Ele usa o `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`* *PID. As seguintes opções de configuração estão disponíveis:
 
@@ -191,7 +190,7 @@ Após o download, você pode instalar e configurar o S3 Connector da seguinte ma
 1. Edite o arquivo e adicione as opções de configuração necessárias para sua configuração.
 1. Inicie o AEM.
 
-### Atualização para uma nova versão do Conector S3 1.10.x {#upgrading-to-a-new-version-of-the-s-connector}
+### Atualização para uma nova versão do S3 Connector 1.10.x {#upgrading-to-a-new-version-of-the-s-connector}
 
 Se precisar atualizar para uma nova versão do conector S3 1.10.x (por exemplo, de 1.10.0 para 1.10.4), siga estas etapas:
 
@@ -230,7 +229,7 @@ Você pode usar o arquivo de configuração com as seguintes opções:
 * stagingPurgeInterval: O intervalo em segundos para limpar os uploads concluídos do cache de preparo. O valor padrão é **300** segundos (5 minutos).
 * stagingRetryInterval: O intervalo de nova tentativa em segundos para uploads com falha. O valor padrão é **600** segundos (10 minutos).
 
-### Opções de região do bucket {#bucket-region-options}
+### Opções da região de bucket {#bucket-region-options}
 
 <table>
  <tbody>
@@ -470,6 +469,14 @@ Você pode executar a coleta de lixo do armazenamento de dados ao:
 >
 >Ao executar a coleta de lixo em uma configuração de armazenamento de dados em cluster ou compartilhado (com Mongo ou Segment Tar), o log pode exibir avisos sobre a incapacidade de excluir determinadas IDs de blob. Isso ocorre porque as IDs de blob excluídas em uma coleção de lixo anterior são referenciadas incorretamente novamente por outro cluster ou nós compartilhados que não têm informações sobre as exclusões de ID. Como resultado, quando a coleta de lixo é executada, ela registra um aviso ao tentar excluir uma ID que já foi excluída na última execução. Esse comportamento não afeta o desempenho ou a funcionalidade.
 
+>[!NOTE]
+> Se você estiver usando uma configuração compartilhada do armazenamento de dados e a coleta de lixo do armazenamento de dados estiver desativada, a execução da tarefa de limpeza do Lucene Binary poderá aumentar o espaço em disco usado. Para evitar isso, você precisa desativar o BlobTracker em todas as instâncias de autor e publicação da seguinte maneira:
+>
+> 1. Pare a instância do AEM.
+> 2. Adicione o parâmetro `blobTrackSnapshotIntervalInSecs=L"0"` no arquivo `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`. Esse parâmetro requer o Oak 1.12.0, 1.10.2 ou posterior.
+> 3. Reinicie a Instância de AEM.
+
+
 Com versões mais recentes do AEM, a coleta de lixo do armazenamento de dados também pode ser executada em armazenamentos de dados compartilhados por mais de um repositório. Para poder executar a coleta de lixo do armazenamento de dados em um armazenamento de dados compartilhado, siga estas etapas:
 
 1. Certifique-se de que todas as tarefas de manutenção configuradas para a coleta de lixo do armazenamento de dados estejam desabilitadas em todas as instâncias do repositório que compartilham o armazenamento de dados.
@@ -482,6 +489,4 @@ Com versões mais recentes do AEM, a coleta de lixo do armazenamento de dados ta
    1. Vá para o console JMX e selecione o Repository Manager Mbean.
    1. Clique no link **Clique em startDataStoreGC(boolean markOnly)**.
    1. Na caixa de diálogo a seguir, digite `false` para o parâmetro `markOnly` novamente.
-
    Isso coletará todos os arquivos encontrados usando a fase de marca usada antes e excluirá o restante não utilizado do armazenamento de dados.
-
