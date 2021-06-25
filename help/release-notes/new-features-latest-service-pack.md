@@ -4,9 +4,9 @@ description: Novidades do  [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 29e045ef3080866a94e0925bc0c176a91092c729
+source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
 workflow-type: tm+mt
-source-wordcount: '3726'
+source-wordcount: '3680'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Este artigo destaca os recursos incluídos no Service Pack mais recente, [princi
 
 >[!NOTE]
 >
->A partir do AEM Service Pack 9, [!DNL Experience Manager] os clientes podem desenvolver e operar seus aplicativos [!DNL Experience Manager] com distribuições dos [!DNL Azul Zulu] builds of OpenJDK, compatíveis com padrões do Java SE.
+>A partir do [!DNL Experience Manager] Service Pack 9, [!DNL Experience Manager] os clientes podem desenvolver e operar seus aplicativos [!DNL Experience Manager] com distribuições dos [!DNL Azul Zulu] builds of OpenJDK, compatíveis com padrões do Java SE.
 >O suporte para [!DNL Azul Zulu] JDKs também é fornecido pelo Adobe aos clientes [!DNL Experience Manager].
 >Você pode baixar as versões relevantes dos JDKs [!DNL Azul Zulu] de [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 >Os direitos de uso da tecnologia Oracle Java, conforme distribuídos pelo Adobe, expirarão no final de dezembro de 2022. [!DNL Experience Manager] os clientes do são incentivados a planejar e implementar o uso dos  [!DNL Azul Zulu] JDKs mais recentes até essa data. Para obter mais informações sobre o uso da tecnologia [!DNL Oracle Java] e da tecnologia [!DNL Azul Zulu], consulte as [Perguntas frequentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) associadas.
@@ -36,49 +36,23 @@ Agora é possível restaurar as páginas excluídas e a visualização de árvor
 
 * Atualização do nome de localidades e regiões chinesas relacionadas a Hong Kong, Macau e Taiwan, para torná-las consistentes com as visões sociais e políticas chinesas.
 
-* Uma configuração opcional é introduzida para minorar as IDs de email na resposta da api ACP de [!DNL Adobe Experience Manager].
+* Uma configuração opcional é introduzida para alterar o uso de maiúsculas e minúsculas nas IDs de email na resposta da API ACP de [!DNL Adobe Experience Manager].
 
-   ![configuração para minúsculas as IDs de email na resposta ACP do AEM](assets/email-lowcase-config.png)
+   ![configuração para alterar as IDs de email para minúsculas na resposta ACP de  [!DNL Experience Manager]](assets/email-lowcase-config.png)
 
-* O contraste (com fundo) do texto e dos ícones em vários lugares é aprimorado de acordo com a WCAG, para torná-lo acessível para usuários com visão limitada e percepção de cor. Para obter mais informações, consulte [Aprimoramentos de acessibilidade em Ativos](sp-release-notes.md#assets-accessibility-6590).
+* O contraste do texto e dos ícones em segundo plano é aprimorado para vários recursos. Essa implementação das diretrizes da WCAG torna [!DNL Assets] mais acessível para usuários com visão e percepção de cor limitadas. Consulte [melhorias de acessibilidade em [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590).
 
-### Dynamic Media {#assets-dynamic-media}
+### [!DNL Dynamic Media] {#assets-dynamic-media}
 
-* [A mídia dinâmica é mais ](sp-release-notes.md#assets-accessibility-6590) acessível em termos de:
+* [[!DNL Dynamic Media] é mais ](sp-release-notes.md#assets-accessibility-6590) acessível em termos de:
 
-   * facilidade de uso com teclas do teclado.
-   * contraste (com plano de fundo) do texto, texto de espaço reservado e controles em vários editores.
-   * acessibilidade e narração por leitores de tela.
+   * Facilidade de uso com teclas do teclado.
+   * O contraste (com fundo) do texto, do texto de espaço reservado e dos controles em vários editores.
+   * Acessibilidade e narração por leitores de tela.
 
-* O DPR de Smart Imaging (Device Pixel Ratio) e a otimização da largura de banda da rede permitem que você forneça imagens de melhor qualidade com eficiência; em dispositivos com telas de alta resolução e largura de banda de rede restrita. Para obter mais informações, consulte [Perguntas frequentes sobre imagem inteligente](/help/assets/imaging-faq.md).
+* O DPR de Smart Imaging (Device Pixel Ratio) e a otimização da largura de banda da rede permitem que você forneça imagens de melhor qualidade com eficiência; em dispositivos com telas de alta resolução e largura de banda de rede restrita. Para obter detalhes e a linha do tempo, consulte [perguntas frequentes sobre a geração inteligente de imagens](/help/assets/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >A linha do tempo da versão para os aprimoramentos de Smart Imaging acima é:
-   >
-   >* América do Norte 24 de maio de 2021 em NA,
-      >
-      >
-   * Europa, Oriente Médio e África 25 de junho de 2021,
-      >
-      >
-   * Ásia-Pacífico em 19 de julho de 2021.
-
-
-* Introdução do suporte para o formato de imagem da próxima geração AVIF na entrega do Dynamic Media (modificador de URL fmt). Para obter mais informações, consulte [image service and rendering api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
-
-   >[!NOTE]
-   >
-   >A linha do tempo da versão do suporte a AVIF é:
-   >
-   >* América do Norte, 10 de maio de 2021,
-      >
-      >
-   * Europa, Oriente Médio e África 24 de maio de 2021,
-      >
-      >
-   * Ásia-Pacífico, 24 de junho de 2021.
-
+* [!DNL Dynamic Media] O delivery (modificador de `fmt` URL) agora é compatível com o formato de imagem de próxima geração AVIF (AV1 Image format). Para obter mais detalhes e linha do tempo, consulte [image service and rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -116,11 +90,11 @@ Agora você pode usar várias páginas principais em um modelo de Documento de r
 
 Agora é possível adicionar quebras de página a um Documento de registro. Como resultado, se um painel for quebrado em páginas, você poderá adicionar uma quebra de página para mover o painel para uma nova página em um Documento de registro.
 
-## Principais recursos dos [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs} anteriores
+## Principais recursos dos [!DNL Experience Manager] 6.5 Service Packs anteriores {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
-#### Classifique as páginas da Live Copy disponíveis para implantação (6.5.8.0) {#sort-livecopy-pages}
+#### Classificar as páginas da Live Copy disponíveis para implantação (6.5.8.0) {#sort-livecopy-pages}
 
 Agora é possível classificar as páginas da Live Copy disponíveis para implantação usando as propriedades [!UICONTROL Name], [!UICONTROL Last modified date] e [!UICONTROL Last rollout date]. A [!UICONTROL Data da última implementação] de uma página é uma nova propriedade introduzida nesta versão.
 
@@ -240,7 +214,7 @@ O suporte para imagens 3D em [!DNL Dynamic Media] permite que os clientes publiq
 
 * Publique e visualize ativos 3D comuns em [!DNL Experience Manager Sites] páginas usando o componente [!DNL Sites] WCM.
 
-#### Configure [!DNL Experience Manager Assets] com [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
+#### Configurar [!DNL Experience Manager Assets] com [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
 O canal de autorização entre [!DNL Experience Manager Assets] e [!DNL Brand Portal] é alterado. Anteriormente, [!DNL Brand Portal] era configurado na interface clássica por meio do Gateway OAuth herdado, que usa a troca de token JWT para obter um token de Acesso IMS para autorização. [!DNL Experience Manager Assets] O agora é configurado com o  [!DNL Brand Portal] por meio do  [!DNL Adobe I/O], que obtém um token IMS para autorização do  [!DNL Brand Portal] locatário.
 
@@ -295,7 +269,7 @@ Recorte inteligente para vídeo - um recurso opcional disponível em Perfis de v
 
 ### Formulários do Experience Manager {#aem-forms-previous-service-packs}
 
-#### Mostrar ou ocultar o componente CAPTCHA em um formulário adaptável com base em regras (6.5.8.0) {#show-hide-captcha}
+#### Mostrar ou ocultar o componente CAPTCHA em um formulário adaptável com base nas regras (6.5.8.0) {#show-hide-captcha}
 
 Agora é possível validar CAPTCHA no envio de formulário adaptável ou na ação do usuário. Você também pode adicionar condições para validar CAPTCHA em uma ação do usuário e mostrar ou ocultar o componente CAPTCHA em um formulário adaptável com base em regras.
 
@@ -376,7 +350,7 @@ Você pode usar a interface do usuário do agente para salvar um ou mais rascunh
 
 ![Salvar como rascunho](assets/save-as-draft.gif)
 
-#### [!DNL Oracle WebLogic] suporte ao servidor de aplicativos (6.5.5.0)  {#weblogic-support}
+#### [!DNL Oracle WebLogic] suporte ao servidor de aplicativos (6.5.5.0) {#weblogic-support}
 
 A Adobe Experience Manager Forms adicionou suporte para [!DNL Oracle WebLogic 12] para Adobe Experience Manager Forms no JEE. Você pode atualizar de uma versão anterior ou configurar um novo Experience Manager 6.5 Forms no servidor JEE em [!DNL Oracle WebLogic] 12.2.1.4 e posterior. Mais tarde corresponde às alterações de versão secundária, onde x em 12.2.1.x é substituído por um número de versão.
 
@@ -443,14 +417,14 @@ Você pode compartilhar seus itens da Caixa de entrada com outro usuário. Assim
 Se você planeja estar fora do escritório, você pode especificar o que acontece com os itens que são atribuídos a você para esse período.
 Você tem a opção de especificar uma data e hora de início e uma data e hora de término para que as configurações de ausência do escritório entrem em vigor. Você pode definir uma pessoa padrão para a qual todos os itens são enviados. Consulte [Definir configurações de ausência do escritório](../forms/using/configure-out-of-office-settings.md).
 
-#### Gere várias comunicações interativas usando a API em lote para o Experience Manager Forms (6.5.3.0) {#generate-multiple-ic}
+#### Gerar várias comunicações interativas usando a API em lote para o Experience Manager Forms (6.5.3.0) {#generate-multiple-ic}
 
 Você pode usar a API em lote para produzir várias comunicações interativas de um modelo. O modelo é uma comunicação interativa sem dados. A API em lote combina dados com um modelo para produzir uma comunicação interativa. A API é útil na produção em massa de comunicações interativas. Por exemplo, contas telefônicas, demonstrativos de cartão de crédito para vários clientes. Consulte [Gerar várias comunicações interativas usando a API em lote](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
 
-## Versões de chave desde [!DNL Adobe Experience Manager] 6.5 SP8 {#key-releases-since-last-sp}
+## Versões-chave desde [!DNL Adobe Experience Manager] 6.5 SP8 {#key-releases-since-last-sp}
 
 Entre 25 de fevereiro de 2021 e 27 de maio de 2021, o Adobe lançou o seguinte, além dos Service Packs:
 
