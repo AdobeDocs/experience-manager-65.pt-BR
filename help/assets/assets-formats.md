@@ -2,16 +2,16 @@
 title: Formatos de arquivo suportados e tipos MIME
 description: Formatos de arquivo e tipos MIME suportados por [!DNL Assets] and [!DNL Dynamic Media] e os recursos suportados para cada formato.
 contentOwner: AG
+mini-toc-levels: 1
 role: Business Practitioner, Administrator
-feature: Asset Management,Renditions
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Gerenciamento de ativos,Representações
+exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1582'
 ht-degree: 10%
 
 ---
-
 
 # Formatos suportados em [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
@@ -72,7 +72,7 @@ Além das informações acima, considere o seguinte:
 
 * Para arquivos EPS, o write-back de metadados é compatível com a versão 3.0 ou posterior da Convenção de Estrutura de Documentos PostScript (PS-Adobe).
 
-## Formatos 3D compatíveis {#support-3d-formats}
+## Formatos 3D suportados {#support-3d-formats}
 
 A seguinte lista de formatos 3D é suportada.
 
@@ -118,7 +118,7 @@ The following table describes the sub-types of raster image formats that are *no
 |  | Files that have Lab color space. | Use ExifTool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
 -->
 
-## Biblioteca de rasterizador de PDF compatível {#supported-pdf-rasterizer-library}
+## Biblioteca PDF rasterizer suportada {#supported-pdf-rasterizer-library}
 
 A biblioteca Adobe PDF Rasterizer gera miniaturas e visualizações de alta qualidade para arquivos PDF e [!DNL Adobe Illustrator] grandes e com uso intenso de conteúdo. O Adobe recomenda usar a biblioteca Rasterizer de PDF para o seguinte:
 
@@ -136,7 +136,7 @@ A biblioteca de transcodificação de imagens oferece suporte a JPG/JPEG, PNG (8
 
 Consulte [Biblioteca de transcodificação de imagem](imaging-transcoding-library.md).
 
-## Câmera bruta compatível {#supported-camera-raw}
+## Câmera bruta suportada {#supported-camera-raw}
 
 A biblioteca [!DNL Adobe Camera Raw] permite [!DNL Assets] assimilar imagens brutas. Consulte [Suporte Camera Raw](camera-raw.md).
 
@@ -181,7 +181,7 @@ Além da funcionalidade acima, considere o seguinte:
 
 * Para usar o Dynamic Media para gerar representações dinâmicas para arquivos INDD, consulte [InDesign (INDD) file format](../assets/managing-image-presets.md#indesign-indd-file-format).
 
-## Formatos de multimídia compatíveis {#supported-multimedia-formats}
+## Formatos multimídia compatíveis {#supported-multimedia-formats}
 
 |  | Armazenamento | Gerenciamento de metadados | Extração de metadados | Geração de miniaturas | Transcodificação de FFmpeg |
 |:---|:---:|:---:|:---:|:---:|:---:|
@@ -204,7 +204,7 @@ Além da funcionalidade acima, considere o seguinte:
 | WMV | Instantâneo | Instantâneo | - | * | * |
 | SWF | Instantâneo | Instantâneo | - | - | - |
 
-## Formatos de vídeo de entrada compatíveis no Dynamic Media para transcodificação {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Formatos de vídeo de entrada suportados no Dynamic Media para transcodificação {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Extensão de arquivo de vídeo | Container | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
 |---|---|---|---|
@@ -253,7 +253,7 @@ A aplicabilidade das funcionalidades usuais do DAM para alguns formatos de arqui
 >
 >O upload e a distribuição de arquivos JavaScript podem ou não ser seguros. Se necessário, as sobreposições podem ser usadas para impedir que os usuários façam upload de arquivos JS.
 
-## Tipos MIME compatíveis {#supported-mime-types}
+## Tipos MIME suportados {#supported-mime-types}
 
 Por padrão, [!DNL Experience Manager] detecta o tipo de arquivo usando a extensão de arquivo. [!DNL Experience Manager] O pode detectá-lo do conteúdo dos arquivos. Para o último, selecione a opção [!UICONTROL Detectar MIME do conteúdo] em [!UICONTROL Day CQ DAM Mime Type Service] no [!DNL Experience Manager] Console da Web.
 
@@ -307,7 +307,7 @@ Uma lista de tipos MIME suportados está disponível no CRXDE Lite em `/conf/glo
 | TAR | application/x-tar |  |  |
 | TIF / TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| RTF | application/x-font-ttf |  |  |
+| TTF | application/x-font-ttf |  |  |
 | VOB | vídeo/dvd |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |
