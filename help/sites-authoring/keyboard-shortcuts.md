@@ -42,7 +42,7 @@ Os seguintes atalhos estão disponíveis para os consoles Sites, Commerce, Scree
 | Consoles | `?` | Ajuda dos atalhos de teclado |
 |  | `/` | Executar a [pesquisa](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Alternar para a opção de [seletor do painel](/help/sites-authoring/basic-handling.md#rail-selector) que deseja exibir |
-|  | ` | Ocultar painel |
+|  | &grave; | Ocultar painel |
 |  | `e` | Editar |
 |  | `p` | Propriedades |
 |  | `m` | Mover |
