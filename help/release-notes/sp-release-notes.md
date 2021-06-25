@@ -4,10 +4,10 @@ description: Notas de versão específicas do  [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
+source-git-commit: a0f47b4e0e9f38df208ed78fde63c70813fb7dcc
 workflow-type: tm+mt
-source-wordcount: '3805'
-ht-degree: 4%
+source-wordcount: '3838'
+ht-degree: 3%
 
 ---
 
@@ -44,7 +44,7 @@ Os principais recursos e aprimoramentos introduzidos no [!DNL Adobe Experience M
 
 * Aprimoramentos de acessibilidade em [!DNL Experience Manager] [[!DNL Assets]](#assets-accessibility-6590) e [[!DNL Dynamic Media]](#accessibility-dm-6590).
 
-* O DPR de Smart Imaging (Device Pixel Ratio) e a otimização da largura de banda da rede permitem que você forneça imagens de melhor qualidade com eficiência; em dispositivos com telas de alta resolução e largura de banda de rede restrita. Para obter detalhes e a linha do tempo, consulte [perguntas frequentes sobre a geração inteligente de imagens](/help/assets/imaging-faq.md).
+* O Smart Imaging DPR (Device Pixel Ratio) e a otimização da largura de banda da rede permitem fornecer imagens de melhor qualidade com eficiência; em dispositivos com telas de alta resolução e largura de banda de rede restrita. Para obter detalhes e a linha do tempo, consulte [perguntas frequentes sobre a geração inteligente de imagens](/help/assets/imaging-faq.md).
 
 * [!DNL Dynamic Media] delivery (modificador de `fmt` URL) suporta o formato de imagem de próxima geração AVIF (formato AV1 Image ). Para obter mais detalhes e linha do tempo, consulte [image service and rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
@@ -115,6 +115,29 @@ Esta é a lista de correções fornecidas na versão [!DNL Experience Manager] 6
 
 ### [!DNL Assets] {#assets-6590}
 
+Os seguintes aprimoramentos na experiência do usuário são feitos em [!DNL Assets]:
+
+* Para exibir ativos não classificados com base em qualquer um dos parâmetros [!UICONTROL Create], [!UICONTROL Modify] ou [!UICONTROL Name], [!DNL Adobe Experience Manager] oferece uma opção [!UICONTROL None] dentro das opções [!UICONTROL Sort by]. A opção [!UICONTROL None] garante que os ativos na interface do usuário do Assets (na exibição Cartão, Coluna e Insights) estejam na mesma ordem em que existem no nó JCR (NPR-36356).
+
+* Para tornar a ID de email em minúsculas na resposta da API ACP de [!DNL Adobe Experience Manager] uma configuração opcional é introduzida; como os usuários [!DNL Adobe Asset Link] não poderiam fazer check-in de ativos se a ID não tivesse todos os caracteres em minúsculas. Observe que o painel [!DNL Adobe Asset Link] consome a resposta da API ACP de [!DNL Adobe Experience Manager] (CQ-4317704).
+
+[!DNL Adobe Experience Manager] A versão 6.5.9.0  [!DNL Assets] oferece as seguintes melhorias de acessibilidade.
+
+O contraste (com o plano de fundo) do texto e dos ícones a seguir é aprimorado para que os usuários com visão e percepção de cor limitadas possam compreender:
+
+* Título do ativo na página [!UICONTROL Propriedades] (NPR-35967).
+* Ícones de classificação de estrelas nas seções [!UICONTROL Classificação] em vários lugares (NPR-36009).
+* Texto na exibição de ativo e pasta Cartão (NPR-35966).
+* Texto do espaço reservado na exibição [!UICONTROL Linha do tempo] (NPR-35965).
+* Nomes de ativos nos resultados da pesquisa de ativos (NPR-35964).
+* Texto de espaço reservado na caixa de diálogo [!UICONTROL Compartilhamento de link] (NPR-35963).
+* [!UICONTROL Metadados],  [!UICONTROL Status] e   Outro texto na opção   Listagem na caixa de diálogo  [!UICONTROL Exibir ] configurações (NPR-35910).
+*  Localização e  [!UICONTROL tipo para texto de espaço reservado para ] pesquisa na pesquisa global (NPR-35909).
+* Expanda e recolha os ícones em [!UICONTROL Árvore de conteúdo] (NPR-35908).
+* O texto [!UICONTROL Assets] na página em que as pastas de ativos são exibidas (NPR-35905).
+* Texto em [!UICONTROL Metadados do ativo], [!UICONTROL Estatísticas de uso] na opção [!UICONTROL Visão geral] na página Detalhes do ativo (NPR-35904).
+* Texto para teclas de atalho para as opções [!UICONTROL properties] e [!UICONTROL edit] na página Detalhes do ativo (NPR-35904).
+
 [!DNL Adobe Experience Manager] A versão 6.5.9.0  [!DNL Assets] corrige os seguintes problemas.
 
 * As tags criadas a partir de um elemento de seleção de tag em um formulário [!UICONTROL Folder Metadata Schema] não são salvas (NPR-36119).
@@ -141,61 +164,14 @@ Esta é a lista de correções fornecidas na versão [!DNL Experience Manager] 6
 
 * As pastas DAM não podem ser excluídas ou movidas, e uma exceção é registrada (NPR-35942).
 
-#### Aprimoramentos no Assets {#assets-enhancements}
-
-* Introdução da opção [!UICONTROL None] na exibição de cartão, coluna e insights para classificar ativos na ordem em que são armazenados no nó JCR (NPR-36356).
-
-* Uma opção é adicionada para adicionar a ID do email em letras minúsculas na resposta da API do Adobe Experience Manager (CQ-4317704).
-
-#### Aprimoramentos de acessibilidade em ativos {#assets-accessibility-6590}
-
-[!DNL Adobe Experience Manager] A versão 6.5.9.0  [!DNL Assets] oferece as seguintes melhorias de acessibilidade.
-
-O contraste (com o plano de fundo) do texto e dos ícones a seguir é aprimorado para que os usuários com visão e percepção de cor limitadas possam compreender:
-
-* título do ativo na página [!UICONTROL Propriedades] (NPR-35967).
-* ícones de classificação de estrelas nas seções [!UICONTROL Classificação] em vários lugares (NPR-36009).
-* texto na exibição de cartão de ativos e pastas (NPR-35966).
-* texto de espaço reservado na exibição [!UICONTROL Linha do tempo] (NPR-35965).
-* nomes de ativos nos resultados da pesquisa de ativos (NPR-35964).
-* texto de espaço reservado na caixa de diálogo [!UICONTROL Compartilhamento de link] (NPR-35963).
-* [!UICONTROL Metadados],  [!UICONTROL Status] e   Outro texto na opção   Listagem na caixa de diálogo  [!UICONTROL Exibir ] configurações (NPR-35910).
-*  Localização e  [!UICONTROL tipo para texto de espaço reservado para ] pesquisa na pesquisa global (NPR-35909).
-* expandir e recolher ícones em [!UICONTROL Árvore de conteúdo] (NPR-35908).
-* o texto [!UICONTROL Assets] na página em que as pastas de ativos são exibidas (NPR-35905).
-* texto em [!UICONTROL Metadados do ativo], [!UICONTROL Estatísticas de uso] na opção [!UICONTROL Visão geral] na página Detalhes do ativo (NPR-35904).
-* texto para teclas de atalho para as opções [!UICONTROL properties] e [!UICONTROL edit] na página Detalhes do ativo (NPR-35904).
-
 ### [!DNL Dynamic Media] {#dynamic-media-6590}
-
-Os ativos Adobe Experience Manager 6.5.9.0 corrigem os seguintes problemas em [!DNL Dynamic Media]:
-
-* O Custom ViewerPresets e o CSS não são replicados para [!DNL Dynamic Media] quando [!DNL Dynamic Media] é ativado seletivamente e desativado por [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
-
-* Ao tentar visualizar representações de vídeo na página de detalhes do ativo, os vídeos são lentos e carregados (CQ-4320122).
-
-* A página do navegador não responde e fica lenta ao fazer upload de mais de 200 ativos com o Detector de ativos duplicados ativado (CQ-4319633).
-
-* Quando um ativo de imagem panorâmica é adicionado ao componente de mídia panorâmica em uma página, um erro de referência não captada é registrado (CQ-4317666).
-
-* Quando o visualizador de mídia interativa é implementado com o Fragmento de experiência, o Fragmento de experiência não é aberto no publicador e um erro é registrado (CQ-4317655).
-
-* A opção Publicar no Dynamic Media não está disponível na exibição Publicação rápida no editor de metadados (CQ-4317199).
-
-* Os autores do site com permissões somente leitura podem usar a funcionalidade de recorte inteligente em ativos e editar as representações recortadas inteligentes. No entanto, os usuários com permissões somente leitura não devem poder editar propriedades de ativos na instância do Sites Dev (CQ-4316450).
-
-* As anotações de vídeo não funcionam nos caminhos de pasta [!DNL where Dynamic] A configuração de mídia não está ativada, mesmo se a instância [!DNL Experience Manager] estiver configurada no modo [!DNL Dynamic Media] (CQ-4314950).
-
-* Quando o título do ativo tem caracteres de byte duplo, byte múltiplo, ASCII alto, cirílico, par substituto, hebraico, árabe e GB18030, em seguida, ao publicar no Dynamic Media o título do ativo tem um ponto de interrogação (?) (CQ-4311872).
-
-#### Aprimoramentos de acessibilidade no Dynamic Media {#accessibility-dm-6590}
 
 [!DNL Adobe Experience Manager] A versão 6.5.9.0  [!DNL Assets] oferece as seguintes melhorias de acessibilidade em  [!DNL Dynamic Media].
 
-* Ao abrir a caixa de diálogo para adicionar ativos usando teclas do teclado no editor Conjunto de imagens:
-   * leitores de tela narram que a caixa de diálogo foi aberta.
-   * o foco do teclado é movido para a caixa de diálogo quando ele é aberto.
-   * o foco do teclado volta para a opção Adicionar ativo quando a caixa de diálogo é fechada (CQ-4312134).
+* Ao abrir a caixa de diálogo para adicionar ativos usando teclas do teclado no editor [!UICONTROL Conjunto de imagens]:
+   * Os leitores de tela registram que a caixa de diálogo está aberta.
+   * O foco do teclado é movido para a caixa de diálogo quando ele é aberto.
+   * O foco do teclado volta para a opção Adicionar ativo quando a caixa de diálogo é fechada (CQ-4312134).
 
 * Agora é possível adicionar e editar Pontos de acesso em ativos usando teclas de teclado no editor de ponto de acesso (CQ-4305965).
 
@@ -218,6 +194,26 @@ Os ativos Adobe Experience Manager 6.5.9.0 corrigem os seguintes problemas em [!
 * O asterisco visual para indicar o campo obrigatório agora é fornecido no campo Título do ativo no Editor do conjunto de imagens, e os leitores de tela anunciam as informações necessárias para o campo (CQ-4290712).
 
 * Agora, os leitores de tela podem acessar e registrar a finalidade de várias opções interativas nos Visualizadores na página Detalhes do ativo (CQ-4290708).
+
+Os ativos Adobe Experience Manager 6.5.9.0 corrigem os seguintes problemas em [!DNL Dynamic Media]:
+
+* O Custom ViewerPresets e o CSS não são replicados para [!DNL Dynamic Media] quando [!DNL Dynamic Media] é ativado seletivamente e desativado por [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
+
+* Ao tentar visualizar representações de vídeo na página de detalhes do ativo, os vídeos são lentos e carregados (CQ-4320122).
+
+* A página do navegador não responde e fica lenta ao fazer upload de mais de 200 ativos com o Detector de ativos duplicados ativado (CQ-4319633).
+
+* Quando um ativo de imagem panorâmica é adicionado ao componente de mídia panorâmica em uma página, um erro de referência não captada é registrado (CQ-4317666).
+
+* Quando o visualizador de mídia interativa é implementado com o Fragmento de experiência, o Fragmento de experiência não é aberto no publicador e um erro é registrado (CQ-4317655).
+
+* [!UICONTROL A opção Publicar no Dynamic ] Media não está disponível nas opções  [!UICONTROL de ] Publicação rápida em   Properties (CQ-4317199).
+
+* Os autores do site com permissões somente leitura podem usar a funcionalidade de recorte inteligente em ativos e editar as representações recortadas inteligentes (CQ-4316450).
+
+* As anotações de vídeo não funcionam para caminhos de pastas onde a configuração [!DNL Dynamic Media] não está ativada, mesmo se a instância [!DNL Experience Manager] estiver configurada no modo [!DNL Dynamic Media] (CQ-4314950).
+
+* Quando o título do ativo tem caracteres de byte duplo, byte múltiplo, ASCII alto, cirílico, par substituto, hebraico, árabe e GB18030, em seguida, ao publicar no Dynamic Media o título do ativo tem um ponto de interrogação (?) (CQ-4311872).
 
 ### Plataforma {#platform-6590}
 
