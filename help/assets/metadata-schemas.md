@@ -2,10 +2,11 @@
 title: 'Esquemas de metadados definem o layout da página de propriedades de metadados '
 description: O esquema de metadados define o layout da página de propriedades e as propriedades de metadados exibidas para ativos. Saiba como criar esquema de metadados personalizado, editar esquema de metadados e aplicar esquema de metadados a ativos.
 contentOwner: AG
+mini-toc-levels: 1
 role: Business Practitioner,Administrator
 feature: Metadados
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
+source-git-commit: 9ac5582b2e4859bf4f101c5caa5258fc755ebc46
 workflow-type: tm+mt
 source-wordcount: '3547'
 ht-degree: 8%
