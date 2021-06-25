@@ -1,17 +1,16 @@
 ---
-title: Estender a funcionalidade de pesquisa.
+title: Estender funcionalidade de pesquisa
 description: Estenda os recursos de pesquisa de [!DNL Adobe Experience Manager Assets] além dos padrões.
 contentOwner: AG
 role: Developer
-feature: Search
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: 'Pesquisar  '
+exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '839'
 ht-degree: 19%
 
 ---
-
 
 # Estender pesquisa de ativos {#extending-assets-search}
 
