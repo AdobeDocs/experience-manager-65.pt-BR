@@ -1,19 +1,19 @@
 ---
 title: Gerenciar metadados dos ativos digitais
-description: Saiba mais sobre os tipos de metadados e como [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] possibilita organizar e processar ativos automaticamente com base em seus metadados.
+description: Saiba mais sobre os tipos de metadados e como gerenciar metadados para ativos para organizar e processar ativos com facilidade.
 contentOwner: AG
-feature: Tagging, Metadata
+mini-toc-levels: 1
+feature: Marcação, metadados
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-translation-type: tm+mt
-source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '2341'
+source-wordcount: '2339'
 ht-degree: 11%
 
 ---
 
-# Gerenciar metadados de seus ativos digitais {#managing-metadata-for-digital-assets}
+# Gerenciar metadados dos ativos digitais {#managing-metadata-for-digital-assets}
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
@@ -117,7 +117,7 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
 
 1. Para verificar a importação correta, navegue até a página [!UICONTROL Properties] de um ativo e verifique os valores nos campos.
 
-Para adicionar data e carimbo de data e hora ao importar metadados, use o formato `YYYY-MM-DDThh:mm:ss.fff-00:00` para data e hora. Data e hora são separadas por `T`, `hh` é hora no formato de 24 horas, `fff` é nanossegundos e `-00:00` é deslocamento de fuso horário. Por exemplo, `2020-03-26T11:26:00.000-07:00` é 26 de março de 2020 às 11:26:00.000 da hora do horário PST.
+Para adicionar data e carimbo de data e hora ao importar metadados, use o formato `YYYY-MM-DDThh:mm:ss.fff-00:00` para data e hora. Data e hora são separadas por `T`, `hh` é hora no formato de 24 horas, `fff` é nanossegundos e `-00:00` é deslocamento de fuso horário. Por exemplo, `2020-03-26T11:26:00.000-07:00` é 26 de março de 2020 às 11:26:00.000 AM horário PST.
 
 >[!CAUTION]
 >
@@ -179,7 +179,7 @@ As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do n
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você alterou posteriormente. Consulte o [reprocessando de ativos em uma pasta após a edição do perfil de processamento](processing-profiles.md#reprocessing-assets).
 
-### Aplicar perfis de metadados a pastas da interface de usuário [!UICONTROL Perfis] {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Aplicar perfis de metadados a pastas da interface do usuário [!UICONTROL Perfis] {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Siga as etapas para aplicar o perfil de metadados:
 
@@ -208,7 +208,7 @@ Ao remover um perfil de metadados de uma pasta, qualquer subpasta herda automati
 
 Você pode remover um perfil de metadados de uma pasta no menu **[!UICONTROL Ferramentas]** ou nas **[!UICONTROL Propriedades]** de dentro da pasta.
 
-#### Remover perfis de metadados de pastas por meio da interface do usuário de Perfis {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+#### Remover perfis de metadados de pastas por meio da interface do usuário Perfis {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 1. Clique no logotipo [!DNL Experience Manager] e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de metadados]**.
 1. Selecione o perfil de metadados que deseja remover de uma pasta ou de várias pastas.
@@ -216,7 +216,7 @@ Você pode remover um perfil de metadados de uma pasta no menu **[!UICONTROL Fer
 
    Você pode confirmar que o perfil de metadados não é mais aplicado a uma pasta porque o nome não aparece mais abaixo do nome da pasta.
 
-#### Remover perfis de metadados das pastas por meio das Propriedades {#removing-metadata-profiles-from-folders-via-properties}
+#### Remover perfis de metadados das pastas por meio de Propriedades {#removing-metadata-profiles-from-folders-via-properties}
 
 1. Clique no logotipo [!DNL Experience Manager] e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta da qual deseja remover um perfil de metadados.
 1. Na pasta , clique na marca de seleção para selecioná-la e, em seguida, clique em **[!UICONTROL Properties]**.
@@ -234,7 +234,7 @@ Você pode remover um perfil de metadados de uma pasta no menu **[!UICONTROL Fer
 >
 >* [Conceitos e compreensão de metadados](metadata-concepts.md).
 >* [Editar propriedades de metadados de várias coleções](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
