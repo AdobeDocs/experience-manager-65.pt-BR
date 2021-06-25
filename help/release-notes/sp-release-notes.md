@@ -4,14 +4,14 @@ description: Notas de versão específicas do  [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 101cbd0d06d370da315e1579a8c2f274a6138b9a
+source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
 workflow-type: tm+mt
-source-wordcount: '3857'
-ht-degree: 3%
+source-wordcount: '3805'
+ht-degree: 4%
 
 ---
 
-# [!DNL Adobe Experience Manager] Notas de versão do service pack 6.5  {#aem-service-pack-release-notes}
+# [!DNL Adobe Experience Manager] Notas de versão do service pack 6.5 {#aem-service-pack-release-notes}
 
 ## Informações da versão {#release-information}
 
@@ -30,7 +30,7 @@ Os principais recursos e aprimoramentos introduzidos no [!DNL Adobe Experience M
 
 * [!DNL Experience Manager Sites] O componente Dynamic Media Foundation agora permite ativar ou desativar a otimização para dispositivos de resolução mais alta ao usar uma predefinição de imagem responsiva ou Recorte inteligente.
 
-* Para melhorar o desempenho, a condição hidden=false é movida da consulta JCR para o avaliador do QueryBuilder. Para verificar se um predicado oculto está funcionando após a alteração, o Experience Manager verifica se qualquer pasta oculta não é exibida na interface.
+* Para melhorar o desempenho, a condição `hidden=false` é movida da consulta JCR para o avaliador [!UICONTROL QueryBuilder]. Para verificar se um predicado oculto está funcionando após a alteração, [!DNL Experience Manager] verifica se qualquer pasta oculta não é exibida.
 
 * Capacidade de restaurar páginas e árvore excluídas em uma página [!DNL Experience Manager Sites].
 
@@ -42,37 +42,11 @@ Os principais recursos e aprimoramentos introduzidos no [!DNL Adobe Experience M
 
 * Ocorrências de nomes relacionados a Hong Kong, Macau e Taiwan são atualizadas de acordo com as novas convenções de nomenclatura para localidades e regiões chinesas.
 
-* Aprimoramentos de acessibilidade em [!DNL Experience Manager] [Assets](#assets-accessibility-6590) e [Dynamic Media](#accessibility-dm-6590).
+* Aprimoramentos de acessibilidade em [!DNL Experience Manager] [[!DNL Assets]](#assets-accessibility-6590) e [[!DNL Dynamic Media]](#accessibility-dm-6590).
 
-* O DPR de Smart Imaging (Device Pixel Ratio) e a otimização da largura de banda da rede permitem que você forneça imagens de melhor qualidade com eficiência; em dispositivos com exibições de alta resolução e largura de banda de rede restrita. Para obter mais informações, consulte [Perguntas frequentes sobre imagem inteligente](/help/assets/imaging-faq.md).
+* O DPR de Smart Imaging (Device Pixel Ratio) e a otimização da largura de banda da rede permitem que você forneça imagens de melhor qualidade com eficiência; em dispositivos com telas de alta resolução e largura de banda de rede restrita. Para obter detalhes e a linha do tempo, consulte [perguntas frequentes sobre a geração inteligente de imagens](/help/assets/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >A linha do tempo da versão para os aprimoramentos de Smart Imaging acima é:
-   >
-   >* América do Norte 24 de maio de 2021 em NA,
-      >
-      >
-   * Europa, Oriente Médio e África 25 de junho de 2021,
-      >
-      >
-   * Ásia-Pacífico em 19 de julho de 2021.
-
-
-* Introdução do suporte para o formato de imagem da próxima geração AVIF na entrega do Dynamic Media (modificador de URL fmt). Para obter mais informações, consulte [image service and rendering api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
-
-   >[!NOTE]
-   >
-   >A linha do tempo da versão do suporte a AVIF é:
-   >
-   >* América do Norte, 10 de maio de 2021,
-      >
-      >
-   * Europa, Oriente Médio e África 24 de maio de 2021,
-      >
-      >
-   * Ásia-Pacífico, 24 de junho de 2021.
-
+* [!DNL Dynamic Media] delivery (modificador de `fmt` URL) suporta o formato de imagem de próxima geração AVIF (formato AV1 Image ). Para obter mais detalhes e linha do tempo, consulte [image service and rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 * Capacidade de enviar um email de notificação para um grupo usando a etapa do fluxo de trabalho [!UICONTROL Atribuir tarefa] .
 
@@ -376,7 +350,7 @@ Para obter informações sobre atualizações de segurança, consulte a [[!DNL E
 >
 >O Adobe não recomenda remover ou desinstalar o pacote [!DNL Adobe Experience Manager] 6.5.9.0.
 
-### Instale o service pack {#install-service-pack}
+### Instalar o service pack {#install-service-pack}
 
 Para instalar o service pack em uma instância [!DNL Adobe Experience Manager] 6.5, siga estas etapas:
 
@@ -418,7 +392,7 @@ B. Use a API HTTP [do Gerenciador de Pacotes](/help/sites-administering/package-
 
 Para conhecer as plataformas certificadas para funcionar com esta versão, consulte os [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
-### Instale o pacote complementar do Adobe Experience Manager Forms {#install-aem-forms-add-on-package}
+### Instalar o pacote complementar do Adobe Experience Manager Forms {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
