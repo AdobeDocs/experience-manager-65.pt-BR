@@ -2,18 +2,18 @@
 title: Integração com as práticas recomendadas do Adobe Creative Cloud
 description: Práticas recomendadas para integrar [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] a fim de simplificar os fluxos de trabalho de transferência de ativos e alcançar alta velocidade de conteúdo.
 contentOwner: AG
+mini-toc-levels: 1
 role: Business Practitioner, Administrator
-feature: Collaboration,Adobe Asset Link,Desktop App
+feature: Colaboração, Adobe Asset Link, Aplicativo de desktop
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-translation-type: tm+mt
-source-git-commit: c4cfb709162ca8f8f6e8508516c39542347c6bc4
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
 source-wordcount: '3254'
 ht-degree: 16%
 
 ---
 
-# [!DNL Adobe Experience Manager] e práticas recomendadas  [!DNL Creative Cloud] de integração  {#aem-and-creative-cloud-integration-best-practices}
+# [!DNL Adobe Experience Manager] e práticas recomendadas  [!DNL Creative Cloud] de integração {#aem-and-creative-cloud-integration-best-practices}
 
 [!DNL Adobe Experience Manager Assets] O é uma solução de gerenciamento de ativos digitais (DAM) que pode ser integrada  [!DNL Adobe Creative Cloud] ao para ajudar usuários do DAM a trabalhar junto com equipes criativas, simplificando a colaboração no processo de criação de conteúdo.
 
@@ -25,7 +25,7 @@ Leia para saber quais integrações devem ser escolhidas entre o desktop e o DAM
 >
 >[!DNL Experience Manager] o compartilhamento de  [!DNL Creative Cloud] pastas está obsoleto e não é mais abordado neste guia. O Adobe recomenda usar recursos mais recentes, como [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) ou [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html) para fornecer ao usuário criativo acesso a ativos gerenciados em [!DNL Experience Manager].
 
-## Necessidades de colaboração de criadores, profissionais de marketing e usuários de DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
+## Necessidades de colaboração de criadores, profissionais de marketing e usuários do DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
 | Requisitos | Caso de uso | Superfícies envolvidas |
 |---|---|---|
@@ -87,7 +87,7 @@ Para suportar casos de uso de distribuição de ativos, outras soluções devem 
 * **Usuário criativo**: um profissional criativo, que cria ativos digitais usando aplicativos e serviços da Creative Cloud. Em alguns casos, um usuário criativo pode ser membro de uma equipe criativa que pode usar a Creative Cloud, mas não cria ativos digitais (como um diretor criativo ou gerente de equipe criativa).
 * **Usuário do DAM:** um usuário típico de um sistema DAM. Dependendo da organização, um usuário do DAM pode ser um usuário de marketing ou não, por exemplo, um usuário de Linha de Negócios (LOB), um bibliotecário, um vendedor e assim por diante.
 
-### Considerações ao usar [!DNL Experience Manager] e [!DNL Creative Cloud] integração {#considerations-when-using-aem-and-creative-cloud-integration}
+### Considerações ao usar a integração [!DNL Experience Manager] e [!DNL Creative Cloud] {#considerations-when-using-aem-and-creative-cloud-integration}
 
 * Consulte [práticas recomendadas do aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
 * Consulte [Integração do Adobe Stock](aem-assets-adobe-stock.md)
