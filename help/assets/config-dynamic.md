@@ -1,6 +1,7 @@
 ---
 title: Configuração do Dynamic Media - Modo híbrido
 description: Saiba como configurar o Dynamic Media - Modo híbrido.
+mini-toc-levels: 3
 uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuração,Modo Híbrido
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 48463a72108621e94f1c50cf43f911794ec759dd
 workflow-type: tm+mt
-source-wordcount: '7843'
+source-wordcount: '7838'
 ht-degree: 1%
 
 ---
@@ -139,7 +140,7 @@ Você pode optar por implementar o Dynamic Media somente para geração de image
  </tbody>
 </table>
 
-## Ativar o Dynamic Media {#enabling-dynamic-media}
+## Ativação do Dynamic Media {#enabling-dynamic-media}
 
 [As mídias dinâmicas são desativadas por padrão. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Para aproveitar os recursos do Dynamic Media, você deve ativar o Dynamic Media usando o modo de execução `dynamicmedia` como faria, por exemplo, com o modo de execução `publish`. Antes de habilitar, verifique os [requisitos técnicos](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
 
@@ -187,25 +188,25 @@ Para habilitar o Dynamic Media, você deve habilitar o modo de execução do Dyn
 
    Esses logs são usados somente quando o Dynamic Media está ativado. Eles não estão incluídos no pacote **Download Completo** gerado a partir da página `system/console/status-Bundlelist`; ao chamar o Suporte ao cliente em caso de problema com a Dynamic Media, anexe esses dois logs ao problema.
 
-### Se você instalou o Experience Manager para uma porta ou caminho de contexto diferente ... {#if-you-installed-aem-to-a-different-port-or-context-path}
+### Se você instalou o Experience Manager para uma porta ou caminho de contexto diferente... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-Se estiver implantando [Experience Manager em um servidor de aplicativos](/help/sites-deploying/application-server-install.md) e tiver o Dynamic Media ativado, você deverá configurar o domínio **self** no externalizador. Caso contrário, a geração de miniaturas de ativos não funcionará corretamente para os ativos da Dynamic Media.
+Se estiver implantando [Experience Manager em um servidor de aplicativos](/help/sites-deploying/application-server-install.md) e tiver o Dynamic Media ativado, você deverá configurar o **autodomínio** no externalizador. Caso contrário, a geração de miniaturas de ativos não funcionará corretamente para os ativos da Dynamic Media.
 
-Além disso, se você executar o início rápido em uma porta ou caminho de contexto diferente, também precisará alterar o domínio **self**.
+Além disso, se você executar o início rápido em uma porta ou caminho de contexto diferente, também precisará alterar o **autodomínio**.
 
 Quando o Dynamic Media é ativado, as representações de miniatura estáticas para ativos de imagem são geradas usando o Dynamic Media. Para que a geração de miniaturas funcione corretamente para o Dynamic Media, o Experience Manager deve executar uma solicitação de URL para si mesmo e deve saber o número da porta e o caminho do contexto.
 
 No Experience Manager:
 
-* O domínio **self** no [externalizer](/help/sites-developing/externalizer.md) é usado para recuperar o número da porta e o caminho do contexto.
-* Se nenhum domínio **self** estiver configurado, o número da porta e o caminho do contexto serão recuperados do serviço HTTP Jetty.
+* O **autodomínio** no [externalizador](/help/sites-developing/externalizer.md) é usado para recuperar o número da porta e o caminho do contexto.
+* Se nenhum **autodomínio** estiver configurado, o número da porta e o caminho do contexto serão recuperados do serviço HTTP Jetty.
 
-Em uma implantação Experience Manager QuickStart WAR, o número da porta e o caminho do contexto não podem ser derivados, portanto, você deve configurar um domínio **self**. Consulte a [documentação do externalizador](/help/sites-developing/externalizer.md) sobre como configurar o domínio **self**.
+Em uma implantação Experience Manager QuickStart WAR, o número da porta e o caminho do contexto não podem ser derivados, portanto, você deve configurar um **autodomínio**. Consulte a [documentação do externalizador](/help/sites-developing/externalizer.md) sobre como configurar o **autodomínio**.
 
 >[!NOTE]
-Em uma implantação independente [Experience Manager Quickstart](/help/sites-deploying/deploy.md), um domínio **self** geralmente não precisa ser configurado, pois o número da porta e o caminho do contexto podem ser configurados automaticamente. No entanto, se todas as interfaces de rede estiverem desativadas, você deverá configurar o domínio **self**.
+Em uma implantação independente [Experience Manager Quickstart](/help/sites-deploying/deploy.md), um **autodomínio** geralmente não precisa ser configurado, pois o número da porta e o caminho do contexto podem ser configurados automaticamente. No entanto, se todas as interfaces de rede estiverem desativadas, você deverá configurar o **autodomínio**.
 
-## Desabilitação do Dynamic Media {#disabling-dynamic-media}
+## Desabilitação do Dynamic Media  {#disabling-dynamic-media}
 
 O Dynamic Media não está habilitado por padrão. No entanto, se você ativou o Dynamic Media anteriormente, é possível desativá-lo posteriormente.
 
@@ -227,7 +228,7 @@ Para desativar o Dynamic Media depois de ativá-lo, remova o sinalizador `-r dyn
    Depois que o modo de execução Dynamic Media é desativado, a etapa do fluxo de trabalho que gera a representação `cqdam.pyramid.tiff` é ignorada automaticamente. Também desativa o suporte de representação dinâmica e outros recursos do Dynamic Media.
    Observe também que, quando o modo de execução Dynamic Media é desativado após a configuração do servidor Experience Manager, todos os ativos que foram carregados nesse modo de execução agora são inválidos.
 
-## (Opcional) Migração de predefinições e configurações do Dynamic Media de 6.3 para 6.5 Zero Down {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## (Opcional) Migração de predefinições e configurações do Dynamic Media da versão 6.3 para a 6.5 do Zero Down {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
 Se você estiver atualizando o Experience Manager - Dynamic Media de 6.3 para 6.5 (que agora inclui a capacidade de implantações de tempo de inatividade zero), deverá executar o seguinte comando curl. O comando migra todas as predefinições e configurações de `/etc` para `/conf` no CRXDE Lite.
 
@@ -261,7 +262,7 @@ O limite de memória é configurável e se encaixa na disponibilidade de recurso
 Uma imagem que requer mais do que o limite máximo de memória é rejeitada.
 Para alterar o limite de memória para a criação de PTIFF, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** e altere o valor **[!UICONTROL maxMemory]**.
 
-### Configuração da autenticação {#setting-up-authentication}
+### Configurar autenticação {#setting-up-authentication}
 
 Configure a autenticação de replicação no autor para que você possa replicar imagens para o serviço de entrega de imagens da Dynamic Media. Primeiro, obtenha um KeyStore e depois salve-o no usuário **[!UICONTROL dynamic-media-replication]** e configure-o. O administrador da empresa recebeu um email de boas-vindas com o arquivo KeyStore e as credenciais necessárias durante o processo de provisionamento. Caso não tenha recebido essas informações, entre em contato com o Atendimento ao cliente do Adobe.
 
@@ -414,7 +415,7 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
 **Solução:**
 verifique se o processo do Java™ no Autor do Experience Manager tem a propriedade do sistema  `-Djavax.net.ssl.trustStore=` definida como um truststore válido.
 
-#### Problema: O KeyStore não está configurado ou não foi inicializado {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
+#### Problema: O KeyStore não está configurado ou não está inicializado {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 Esse problema provavelmente é causado por um hotfix ou por um pacote de recursos que substitui o nó dynamic-media-user ou keystore.
 
@@ -521,7 +522,7 @@ Para configurar o Dynamic Media Cloud Services:
 1. Toque em **[!UICONTROL Salvar]** para retornar à página Navegador de configuração do Dynamic Media.
 1. Para acessar o console de navegação global, toque no logotipo Experience Manager.
 
-## Configuração dos relatórios de vídeo {#configuring-video-reporting}
+## Configuração de relatórios de vídeo {#configuring-video-reporting}
 
 Você pode configurar relatórios de vídeo em várias instalações do Experience Manager usando o Dynamic Media Hybrid.
 
@@ -547,7 +548,7 @@ Quando terminar esta tarefa, você terá um arquivo de pacote que contém as pre
 1. Crie o pacote.
 1. Baixe ou compartilhe o pacote predefinido do Video Analytics para que ele possa ser compartilhado com os novos nós subsequentes do Autor.
 
-### Instalar o pacote predefinido do Video Analytics antes de configurar mais nós do Author {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
+### Instalação do pacote predefinido do Video Analytics antes de configurar mais nós do Author {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
 Certifique-se de concluir esta tarefa ***antes de*** configurar a Configuração do Dynamic Media (Pré 6.3). Se isso não for feito, haverá a criação de outro conjunto de relatórios não utilizado. Além disso, mesmo que os relatórios de vídeo continuem a funcionar corretamente, a coleta de dados não é otimizada.
 
@@ -604,7 +605,7 @@ ManagerToque em  **[!UICONTROL Ferramentas]**  >  **[!UICONTROL Ativos]**  > Rel
 
    Esse erro também será exibido se o Relatório de vídeo for executado antes que você configure os serviços de Configuração do Dynamic Media (Pré 6.3).
 
-### Resolução de problemas na configuração de relatório de vídeo {#troubleshooting-the-video-reporting-configuration}
+### Solução de problemas de configuração de relatório de vídeo {#troubleshooting-the-video-reporting-configuration}
 
 * Durante a instalação, às vezes, as conexões com o servidor da API do Analytics expiram. A instalação repete a conexão 20 vezes, mas ainda falha. Quando essa situação ocorre, o arquivo de log registra vários erros. Pesquisar `SiteCatalystReportService`.
 * Não instalar primeiro o pacote de predefinição do Analytics pode causar a criação de um novo conjunto de relatórios.
@@ -638,7 +639,7 @@ Publique suas próprias configurações de catálogo padrão como parte do proce
 1. Toque na guia **[!UICONTROL Replication]** .
 1. Toque em **[!UICONTROL Replicar]**.
 
-## Replicando predefinições do visualizador {#replicating-viewer-presets}
+## Replicação de predefinições do visualizador {#replicating-viewer-presets}
 
 Para fornecer *um ativo com uma predefinição do visualizador, você deve replicar/publicar* a predefinição do visualizador. (Todas as predefinições do visualizador devem ser ativadas *e* replicadas para obter o URL ou código incorporado de um ativo.
 Consulte [Predefinições do visualizador de publicação](/help/assets/managing-viewer-presets.md#publishing-viewer-presets) para obter mais informações.
@@ -662,7 +663,7 @@ Os filtros fornecem uma maneira de *excluir* ativos de serem replicados para o n
 
 ### Usar filtros de ativos padrão para replicação {#using-default-asset-filters-for-replication}
 
-Se você estiver usando o Dynamic Media para (1) geração de imagens na produção **ou** (2), geração de imagens e vídeo, poderá usar os filtros padrão que o Adobe fornece como está. Os seguintes filtros estão ativos por padrão:
+Se você usar o Dynamic Media para (1) geração de imagens na produção *ou* (2) geração de imagens e vídeo, poderá usar os filtros padrão que o Adobe fornece como está. Os seguintes filtros estão ativos por padrão:
 
 <table>
  <tbody>
@@ -964,7 +965,7 @@ Tabela de configurações de Manifesto e seus valores padrão:
  </tbody>
 </table>
 
-## Configuração do gerenciamento de cores da Dynamic Media {#configuring-dynamic-media-color-management}
+## Configuração do gerenciamento de cores Dynamic Media {#configuring-dynamic-media-color-management}
 
 O gerenciamento de cores do Dynamic Media permite que você corrija os ativos para visualização.
 
@@ -984,7 +985,7 @@ Casos de uso avançados poderiam usar um modificador de configuração manual `i
 O conjunto padrão de perfis de cores do Adobe só estará disponível se você tiver o [Feature Pack 12445 da Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) instalado. Todos os pacotes de recursos e service packs estão disponíveis em [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). O Feature Pack 12445 fornece perfis coloridos Adobe.
 
 
-### Instalando o Feature Pack 12445 {#installing-feature-pack}
+### Instalação do Feature Pack 12445 {#installing-feature-pack}
 
 Para usar os recursos de gerenciamento de cores do Dynamic Media, instale o feature pack 12445.
 
@@ -1092,11 +1093,11 @@ Os seguintes perfis de cores estão instalados:
  <tbody>
   <tr>
    <th><p>Nome</p> </th>
-   <th><p>Espaço de cor</p> </th>
+   <th><p>Espaço das cores</p> </th>
    <th><p>Descrição</p> </th>
   </tr>
   <tr>
-   <td>AdobeRGB</td>
+   <td>Adobe RGB</td>
    <td>RGB</td>
    <td>Adobe RGB (1998)</td>
   </tr>
@@ -1138,12 +1139,12 @@ Os seguintes perfis de cores estão instalados:
   <tr>
    <td>EuroscaleCoated</td>
    <td>CMYK</td>
-   <td>Euroscale Coated v2</td>
+   <td>Euro scale Coated v2</td>
   </tr>
   <tr>
    <td>EuroescalaNãoRevestido</td>
    <td>CMYK</td>
-   <td>Euroscale Não Revestido v2</td>
+   <td>Escala Euro não revestida v2</td>
   </tr>
   <tr>
    <td>JapãoColorCoated</td>
