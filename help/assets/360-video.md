@@ -11,9 +11,9 @@ docset: aem65
 feature: Vídeo 360 VR
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Os ativos de vídeo 360 que são carregados no Adobe Experience Manager são rot
 ![6_5_360video-](assets/6_5_360video-selecttopreview.png)
 *selectUm ativo de vídeo 360 carregado e visualizado na exibição Cartão. O ativo é rotulado como Multimídia.*
 
-**Para fazer upload de ativos para uso com o visualizador de vídeo 360:**
+**Faça upload de ativos para usar com o visualizador de vídeo 360:**
 
 1. Criada uma pasta dedicada ao seu ativo de vídeo 360.
 1. [Aplique um perfil de vídeo adaptável à pasta](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
@@ -62,7 +62,7 @@ Os ativos de vídeo 360 que são carregados no Adobe Experience Manager são rot
    * Idealmente, seu conteúdo original de vídeo 360 é melhor para ter uma das seguintes resoluções:
 
       * 1080p - 1920 x 1080, conhecida como resolução Full HD ou FHD ou
-      * 2160p - 3840 x 2160, conhecida como resolução 4K, UHD ou Ultra HD. Essa grande resolução de exibição é encontrada com mais frequência em televisores premium e monitores de computador. A resolução 2160p geralmente é chamada de &quot;4K&quot; porque a largura é próxima a 4000 pixels. Em outras palavras, ele oferece quatro vezes mais pixels do que 1080p.
+      * 2160p - 3840 x 2160, conhecida como resolução 4k, UHD ou Ultra HD. Essa grande resolução de exibição é encontrada com mais frequência em televisores premium e monitores de computador. A resolução 2160p geralmente é chamada de &quot;4k&quot; porque a largura é próxima a 4000 pixels. Em outras palavras, ele oferece quatro vezes mais pixels do que 1080p.
    * [Crie um ](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) Perfil de vídeo adaptativo personalizado com representações de maior qualidade. Por exemplo, crie um Perfil de vídeo adaptativo que contenha as três configurações a seguir:
 
       * width=auto; height=720; bitrate=2500 kbps
@@ -74,7 +74,7 @@ Os ativos de vídeo 360 que são carregados no Adobe Experience Manager são rot
 
 1. [Faça upload do vídeo para a pasta](/help/assets/managing-video-assets.md#upload-and-preview-video-assets) .
 
-## Substituição da taxa de proporção padrão de 360 vídeos {#overriding-the-default-aspect-ratio-of-videos}
+## Substituição da taxa de proporção padrão de 360 vídeos  {#overriding-the-default-aspect-ratio-of-videos}
 
 Para que um ativo carregado seja qualificado como um vídeo 360 que você pretende usar com o visualizador de vídeo 360, o ativo deve ter uma proporção de aspecto de 2.
 
@@ -91,7 +91,7 @@ A taxa de proporção se aplica a 360 ativos de vídeo para a página de detalhe
 
 Comece carregando 360 vídeos.
 
-## Visualização do vídeo 360 {#previewing-video}
+## Visualização de vídeo 360 {#previewing-video}
 
 Você pode usar a Visualização para ver a aparência do seu vídeo 360 para os clientes e garantir que ele se comporte conforme esperado.
 
@@ -130,7 +130,7 @@ Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/adding-dynam
 
 1. Próximo ao canto superior direito da página de visualização, toque em **[!UICONTROL Fechar]**.
 
-## Publicando vídeo 360 {#publishing-video}
+## Publicação de vídeo 360 {#publishing-video}
 
 Publique o vídeo 360 para usá-lo. A publicação de um vídeo 360 ativa o URL e o código incorporado. Ele também publica o vídeo 360 na nuvem do Dynamic Media, que é integrada a uma CDN para entrega escalável e com desempenho.
 
