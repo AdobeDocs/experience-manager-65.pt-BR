@@ -2,6 +2,7 @@
 title: Gerenciamento de predefinições de imagens do Dynamic Media
 description: Entenda as predefinições de imagens do Dynamic Media e saiba como criar, modificar e gerenciar predefinições de imagens
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
+mini-toc-levels: 3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Predefinições de imagem
 role: Business Practitioner, Administrator
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3851'
 ht-degree: 8%
 
 ---
@@ -33,7 +34,7 @@ Esta seção descreve como criar, modificar e gerenciar predefinições de image
 >
 >A geração de imagens inteligentes funciona com as predefinições de imagens existentes e usa inteligência nos últimos milissegundos do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte [Imagem inteligente](/help/assets/imaging-faq.md) para obter mais informações.
 
-## Como entender as predefinições de imagens do Dynamic Media {#understanding-image-presets}
+## Noções básicas sobre predefinições de imagens do Dynamic Media {#understanding-image-presets}
 
 Como uma macro, uma Predefinição de imagem é uma coleção predefinida de comandos de dimensionamento e formatação salvos em um nome. Para entender como as Predefinições de imagem funcionam, suponha que o site exija que cada imagem do produto apareça em tamanhos diferentes, formatos diferentes e taxas de compactação para entrega de desktop e dispositivo móvel.
 
@@ -96,7 +97,7 @@ Para usar o Dynamic Media para visualizar e gerar representações dinâmicas pa
 >
 >No workflow [!UICONTROL Ativo de atualização DAM], a etapa **[!UICONTROL Miniaturas EPS]** gera miniaturas para arquivos EPS.
 
-#### Propriedades de metadados de ativos PDF/AI/EPS {#pdf-ai-eps-asset-metadata-properties}
+#### Propriedades de metadados de ativos de PDF/AI/EPS {#pdf-ai-eps-asset-metadata-properties}
 
 | **Propriedade de metadados** | **Descrição** |
 |---|---|
@@ -107,7 +108,7 @@ Você acessa `Rasterize PDF/AI Image Preview Rendition` as opções do component
 
 Toque em Adobe Experience Manager no canto superior esquerdo, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**. Na página Modelos de fluxo de trabalho , selecione **[!UICONTROL Ativo de atualização do DAM]** e, na barra de ferramentas, toque em **[!UICONTROL Editar]**. Na página [!UICONTROL Ativo de atualização do DAM] do fluxo de trabalho, toque duas vezes no componente de processo `Rasterize PDF/AI Image Preview Rendition` para abrir a caixa de diálogo Propriedades da etapa.
 
-#### Rasterizar opções de representação de visualização de imagem PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
+#### Rasterizar opções de representação de visualização de imagem em PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![Argumentos para rasterizar o fluxo de trabalho de PDF ou AI](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -149,7 +150,7 @@ Largura máxima e Altura máxima limitam a resolução na qual rasterizar. Por e
 
 O componente de processo `Rasterize PDF/AI Image Preview Rendition` tem um máximo definido para garantir que não crie imagens excessivamente grandes na memória. Imagens tão grandes podem estender a memória fornecida para a JVM (Java™ Virtual Machine). Deve-se tomar cuidado para fornecer à JVM memória suficiente para gerenciar o número configurado de fluxos de trabalho paralelos, cada um com o potencial de criar uma imagem no tamanho máximo configurado.
 
-### Formato de arquivo InDesign (INDD) {#indesign-indd-file-format}
+### Formato de arquivo INDD (InDesign) {#indesign-indd-file-format}
 
 Se você pretende suportar a assimilação de arquivos INDD para gerar a representação dinâmica desse formato de arquivo, convém revisar as seguintes informações antes de criar predefinições de imagem.
 
@@ -228,7 +229,7 @@ O dimensionamento de miniaturas é definido no seguinte formato: **[!UICONTROL w
 
 As predefinições de imagens criadas estão disponíveis como representações dinâmicas ao visualizar ativos. O Experience Manager mostra várias representações dinâmicas ao visualizar um ativo de **[!UICONTROL Exibição de detalhes > Representações]**. Você pode aumentar ou diminuir o limite de representações exibidas.
 
-**Para aumentar ou diminuir o número de predefinições de imagens do Dynamic Media exibidas:**
+**Aumente ou diminua o número de predefinições de imagens do Dynamic Media exibidas:**
 
 1. Navegue até CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navegue até o nó da listagem de predefinições de imagens em `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -358,7 +359,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
  </tbody>
 </table>
 
-#### Opções avançadas da guia {#advanced-tab-options}
+#### Opções avançadas de guia {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -408,7 +409,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
     </ul>
     <div>
       A nitidez é descrita em
-     <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/sharpening_images.pdf">Nitidez de imagens</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf">Nitidez de imagens</a>.
     </div> </td>
   </tr>
   <tr>
@@ -443,7 +444,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
  </tbody>
 </table>
 
-## Definição das opções predefinidas de imagem com os Modificadores de imagem {#defining-image-preset-options-with-image-modifiers}
+## Definição das opções de predefinição de imagem com modificadores de imagem {#defining-image-preset-options-with-image-modifiers}
 
 Além das opções disponíveis nas guias Básico e Avançado , é possível definir modificadores de imagem para fornecer mais opções ao definir predefinições de imagem. A renderização de imagem depende da API de renderização de imagem que é definida detalhadamente no [Referência do protocolo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api).
 
@@ -493,7 +494,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
    ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-## Editar predefinições de imagem {#modifying-image-presets}
+## Editar predefinições da imagem {#modifying-image-presets}
 
 1. No Experience Manager, toque no logotipo do Experience Manager para acessar o console de navegação global e, em seguida, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições de imagem]**.
 
