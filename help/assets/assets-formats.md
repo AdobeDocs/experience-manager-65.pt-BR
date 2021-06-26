@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner, Administrator
 feature: Gerenciamento de ativos,Representações
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1581'
 ht-degree: 10%
 
 ---
@@ -130,13 +130,13 @@ Consulte [Usando o PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## Biblioteca de transcodificação de imagem suportada {#supported-image-transcoding-library}
 
-A biblioteca de transcodificação de imagem do Adobe é uma solução de processamento de imagens que executa funções essenciais de manipulação de imagens, como codificação, transcodificação, reamostragem e redimensionamento.
+A biblioteca de transcodificação de imagem do Adobe é uma solução de processamento de imagens que executa funções essenciais de manipulação de imagens, como codificação, transcodificação, redefinição de amostra e redimensionamento.
 
 A biblioteca de transcodificação de imagens oferece suporte a JPG/JPEG, PNG (8 e 16 bits), GIF, BMP, TIFF/Compressed TIFF (exceto arquivos TIFF de 32 bits e arquivos PTIFF), ICO e ICN MIME.
 
 Consulte [Biblioteca de transcodificação de imagem](imaging-transcoding-library.md).
 
-## Câmera bruta suportada {#supported-camera-raw}
+## Camera Raw suportado {#supported-camera-raw}
 
 A biblioteca [!DNL Adobe Camera Raw] permite [!DNL Assets] assimilar imagens brutas. Consulte [Suporte Camera Raw](camera-raw.md).
 
@@ -211,10 +211,10 @@ Além da funcionalidade acima, considere o seguinte:
 | MP4 | MPEG-4 | H264/AVC (todos os perfis) | - |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediário, Animação da Apple |
 | FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (arquivos de animação vetorial) |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
 | M4V | Apple iTunes | H264/AVC | - |
-| AVI | Intercalação A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| AVI | Intercalação A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | WebM | WebM | VP8 do Google | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
@@ -251,7 +251,7 @@ A aplicabilidade das funcionalidades usuais do DAM para alguns formatos de arqui
 
 >[!NOTE]
 >
->O upload e a distribuição de arquivos JavaScript podem ou não ser seguros. Se necessário, as sobreposições podem ser usadas para impedir que os usuários façam upload de arquivos JS.
+>O upload e a distribuição de arquivos JavaScript podem ou não ser seguros. Se necessário, é possível usar as sobreposições para impedir que os usuários carreguem arquivos JS.
 
 ## Tipos MIME suportados {#supported-mime-types}
 
