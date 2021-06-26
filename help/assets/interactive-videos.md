@@ -11,9 +11,9 @@ docset: aem65
 feature: Vídeos interativos
 role: Business Practitioner, Administrator
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 3110c1d4424179dbc9eda9e07cf3353c4b4bb4b0
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '6014'
+source-wordcount: '6013'
 ht-degree: 3%
 
 ---
@@ -222,13 +222,13 @@ Com base nessa análise, você conclui que pode usar as duas variáveis a seguir
 
 Agora você está pronto para fazer upload de um vídeo e seus ativos de miniatura associados.
 
-## (Opcional) Criação de uma predefinição do visualizador de Vídeo interativo {#optional-creating-an-interactive-video-viewer-preset}
+## (Opcional) Criação de uma predefinição do visualizador de vídeo interativo {#optional-creating-an-interactive-video-viewer-preset}
 
 Ignore esta tarefa e continue para a próxima se pretender utilizar os tipos predefinidos predefinidos do Visualizador de Vídeo Interativo e predefinidos `Shoppable_Video_dark` ou `Shoppable_Video_light`.
 
 Quando uma miniatura é clicada no ambiente de criação, uma visualização da caixa de diálogo do Quickview é exibida.
 
-![chlimage_1-29](assets/chlimage_1-127.png)
+![chlimage_1-21](assets/chlimage_1-127.png)
 
 Opcionalmente, é possível criar sua própria predefinição personalizada do visualizador de Vídeo interativo. Você pode determinar, entre outras coisas, o estilo do reprodutor de vídeo, as miniaturas interativas e a exibição da grade de miniatura que aparece no final do vídeo.
 
@@ -475,7 +475,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
       Na linha do tempo, toque em um segmento que deseja dividir ao meio e em **[!UICONTROL Dividir segmento]** na barra de ferramentas.
 
       Selecionar dois ou mais segmentos desativa o recurso **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
    Divisão de um segmento selecionado de dez segundos em dois segmentos de cinco segundos cada.
 
@@ -503,7 +503,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
 
    Depois de adicionar segmentos de linha do tempo e publicar o vídeo interativo, você estará pronto para adicioná-lo à página de aterrissagem do site. Consulte [Integrar um vídeo interativo com seu site](#integrating-an-interactive-video-with-your-website).
 
-## Publicar ativos de vídeo interativos {#publishing-interactive-video-assets}
+## Publicação de ativos interativos de vídeo {#publishing-interactive-video-assets}
 
 Consulte [Publicação de ativos](/help/assets/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar ativos de vídeo interativos.
 
@@ -566,7 +566,7 @@ A integração é tão simples como remover o código de inserção do vídeo e 
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## Integração de um vídeo interativo com um Quickview {#integrating-an-interactive-video-with-an-existing-quickview} existente
+## Integração de um vídeo interativo com um Quickview existente {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 >
@@ -711,7 +711,7 @@ Onde `inner_container` é uma referência a um elemento `DIV` gerenciado pelo vi
 
 As etapas para localizar o elemento da caixa de diálogo modal e anexá-lo ao contêiner acima são específicas de maiúsculas e minúsculas. Novamente, você pode obter a ajuda do desenvolvedor de front-end familiarizado com a implementação do Quickview necessária.
 
-No caso do site de exemplo, a caixa de diálogo modal do Quickview é implementada como um `DIV` com a ID do quickview-modal anexada diretamente ao documento `BODY`. Portanto, o código para mover essa caixa de diálogo para o contêiner do visualizador é tão simples quanto o seguinte:
+Se usarmos o site de exemplo, a caixa de diálogo modal do Quickview será implementada como um `DIV` com a ID do quickview-modal anexada diretamente ao documento `BODY`. Portanto, o código para mover essa caixa de diálogo para o contêiner do visualizador é tão simples quanto o seguinte:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
