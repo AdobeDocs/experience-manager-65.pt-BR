@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Gerenciamento de ativos,Pesquisar
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 550d837c8ad86393eefecb264b69157fca312984
+source-git-commit: dc483b9871cebce64f7b60fec2144f1f19ef28ec
 workflow-type: tm+mt
-source-wordcount: '9743'
+source-wordcount: '9788'
 ht-degree: 4%
 
 ---
@@ -765,7 +765,17 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
 
 ### Exibir anotações salvas {#viewing-saved-annotations}
 
-1. Para exibir anotações salvas de um ativo, navegue até o local do ativo e abra a página do ativo.
+Somente uma anotação pode ser visualizada de cada vez.
+
+>[!NOTE]
+>
+>Se estiver selecionando várias anotações, a anotação mais recente ficará visível na interface do usuário.
+>
+>A seleção múltipla é suportada apenas para imprimir o ativo anotado como PDF.
+
+**Para exibir anotações salvas de um ativo:**
+
+1. Navegue até o local do ativo e abra a página do ativo.
 
 1. Na interface do Experience Manager, escolha **[!UICONTROL Linha do tempo]**.
 1. Na lista **[!UICONTROL Exibir todos]** na linha do tempo, selecione **[!UICONTROL Comentários]** para filtrar os resultados com base em anotações.
@@ -781,6 +791,10 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
 Se um ativo tiver anotações ou tiver sido sujeito a um fluxo de trabalho de revisão, é possível imprimir o ativo junto com anotações e revisar o status como um arquivo PDF para revisão offline.
 
 Você também pode optar por imprimir somente as anotações ou o status da revisão.
+
+>[!NOTE]
+>
+>É possível selecionar várias anotações ao imprimir o ativo anotado como PDF.
 
 Para imprimir as anotações e o status de revisão, clique em **[!UICONTROL Imprimir]** e siga as instruções do assistente. A opção **[!UICONTROL Imprimir]** aparece na barra de ferramentas somente quando o ativo tem pelo menos um status de anotação ou revisão atribuído a ele.
 
