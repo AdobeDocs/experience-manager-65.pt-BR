@@ -5,7 +5,7 @@ contentOwner: AG
 role: Developer
 feature: 'Pesquisar  '
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 19%
@@ -59,7 +59,7 @@ A prática recomendada é copiar um predicado existente e ajustá-lo. Os predica
 
 Para criar um predicado de propriedade:
 
-1. Crie uma pasta de componentes no diretório de projetos, por exemplo **/apps/geometrixx/components/titlepredicate**.
+1. Crie uma pasta de componentes no diretório de projetos, por exemplo **/apps/weretail/components/titlepredicate**.
 1. Adicionar **content.xml**:
 
    ```xml
@@ -152,7 +152,7 @@ Para criar um predicado de propriedade:
 
 Para criar um predicado de grupo:
 
-1. Crie uma pasta de componente no diretório de projetos, por exemplo **/apps/geometrixx/components/picspredicate.**
+1. Crie uma pasta de componentes no diretório de projetos, por exemplo **/apps/weretail/components/picspredicate**.
 1. Adicionar **content.xml**:
 
    ```xml
