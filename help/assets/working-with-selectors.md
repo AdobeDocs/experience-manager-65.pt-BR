@@ -9,12 +9,11 @@ content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 role: Business Practitioner, Administrator
 exl-id: 6d165b0d-e3e7-4115-8f2a-827679754b3b
-feature: Selectors
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Seletores
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 19%
+source-wordcount: '722'
+ht-degree: 16%
 
 ---
 
@@ -26,13 +25,13 @@ Este tópico aborda como usar os seletores Produto, Site e Ativo, incluindo a ca
 
 Você acessa os seletores ao criar conjuntos de carrossel, adicionar pontos de acesso e mapas de imagem, criar vídeos e imagens interativas.
 
-Por exemplo, neste Banner de carrossel, você usa o seletor de produto se estiver vinculando um ponto de acesso ou mapa de imagem a uma página do Quickview; use o seletor de site se estiver vinculando um ponto de acesso ou mapa de imagem a um hiperlink; use o seletor de Ativos ao criar um novo slide.
+Por exemplo, neste Banner de carrossel, você usa o seletor de produto se estiver vinculando um ponto de acesso ou mapa de imagem a uma página do Quickview. Use o seletor de site se estiver vinculando um ponto de acesso ou mapa de imagem a um hiperlink; use o seletor de Ativos ao criar um slide.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Ao selecionar (em vez de inserir manualmente) para onde os pontos de acesso ou mapas de imagem são direcionados, você está usando o seletor. O seletor de site só funcionará se você for um cliente do AEM Sites. O seletor de produto também requer AEM Commerce.
+Ao selecionar (em vez de inserir manualmente) para onde os pontos de acesso ou mapas de imagem são direcionados, você está usando o seletor. O seletor de site só funciona se você for um cliente do Experience Manager Sites. O seletor de produto também requer o Experience Manager Commerce.
 
-## Selecionar produtos {#selecting-products}
+## Seleção de produtos {#selecting-products}
 
 Use o seletor de produto para escolher um produto quando quiser um ponto de acesso ou mapa de imagem para fornecer uma exibição rápida a um produto específico em seu catálogo de produtos.
 
@@ -46,15 +45,15 @@ Use o seletor de produto para escolher um produto quando quiser um ponto de aces
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   Você também pode filtrar por palavra-chave ou tag tocando em **[!UICONTROL Filtro]** e inserindo palavras-chave, ou selecionando tags, ou ambos.
+   Filtre por palavra-chave ou tag tocando em **[!UICONTROL Filtro]** e inserindo palavras-chave, ou selecionando tags, ou ambos.
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Você pode alterar o local em que AEM procura dados do produto tocando **[!UICONTROL Procurar]** e navegando para outra pasta.
+   Altere o local em que o Experience Manager procura dados do produto ao tocar em **[!UICONTROL Procurar]** e navegar para outra pasta.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Toque em **[!UICONTROL Classificar]** para alterar se o AEM classifica por mais novo ou mais antigo até o mais recente.
+   Toque em **[!UICONTROL Classificar]** para alterar se o Experience Manager classifica por mais novo ou mais antigo até o mais recente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -70,9 +69,9 @@ Use o seletor de produto para escolher um produto quando quiser um ponto de aces
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Selecionar Sites {#selecting-sites}
+## Seleção de sites {#selecting-sites}
 
-Use o seletor de site para escolher uma página da Web quando quiser um ponto de acesso ou mapa de imagem para vincular a uma página da Web que seja gerenciada em AEM sites.
+Use o seletor de site para escolher uma página da Web quando quiser um ponto de acesso ou mapa de imagem para vincular a uma página da Web gerenciada no Experience Manager Sites.
 
 1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e toque na guia **[!UICONTROL Ações]** (disponível somente se tiver definido um ponto de acesso ou mapa de imagem).
 
@@ -80,7 +79,7 @@ Use o seletor de site para escolher uma página da Web quando quiser um ponto de
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Toque no ícone do **[!UICONTROL Seletor de sites]** (pasta com lupa) e navegue até uma página no AEM Sites a qual você deseja vincular o ponto de acesso ou mapa de imagem.
+1. Toque no ícone **[!UICONTROL Seletor de site]** (pasta com lupa) e navegue até uma página no seu Experience Manager Sites para a qual deseja vincular o ponto de acesso ou mapa de imagem.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -88,24 +87,24 @@ Use o seletor de site para escolher uma página da Web quando quiser um ponto de
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Quando estiver no modo **[!UICONTROL Visualizar]** se tocar no ponto de acesso ou mapa de imagem, você navegará até a página do site AEM que você especificou.
+1. Quando estiver no modo **[!UICONTROL Visualizar]** se tocar no ponto de acesso ou mapa de imagem, você navegará até a página de Experience Manager site especificada.
 
 ## Selecionar ativos {#selecting-assets}
 
-Use este seletor para escolher imagens para usar em um Banner de carrossel, um Vídeo interativo, conjuntos de imagens, conjuntos de mídia mista e conjuntos de rotação. Em Vídeo interativo, o seletor de ativos fica disponível ao tocar em **[!UICONTROL Selecionar ativos]** na guia **[!UICONTROL Conteúdo]**. Em Conjuntos de carrossel, o seletor de ativos fica disponível ao criar um novo slide. Em Conjuntos de imagens, Conjuntos de mídias mistas e Conjuntos de rotação, o seletor de ativo estará disponível ao criar um novo Conjunto de imagens, Conjunto de mídias mistas ou Conjunto de rotação, respectivamente.
+Use este seletor para escolher imagens para usar em um Banner de carrossel, um Vídeo interativo, conjuntos de imagens, conjuntos de mídia mista e conjuntos de rotação. Em Vídeo interativo, o seletor de ativos fica disponível ao tocar em **[!UICONTROL Selecionar ativos]** na guia **[!UICONTROL Conteúdo]**. Em Conjuntos de carrossel, o seletor de ativos fica disponível ao criar um slide. Em Conjuntos de imagens, Conjuntos de mídias mistas e Conjuntos de rotação, o seletor de ativo estará disponível ao criar um Conjunto de imagens, Conjunto de mídias mistas ou Conjunto de rotação, respectivamente.
 
 Consulte também [Seletor de ativos](search-assets.md#assetpicker) para obter mais informações.
 
-1. Navegue até o Conjunto de carrossel e crie um novo slide. Ou navegue até o Vídeo interativo, vá até a guia **[!UICONTROL Conteúdo]** e selecione ativos. Ou crie um Conjunto de mídias mistas, um Conjunto de imagens ou um Conjunto de rotação.
+1. Navegue até o Conjunto de carrossel e crie um slide. Ou navegue até o Vídeo interativo, vá para a guia **[!UICONTROL Conteúdo]** e selecione ativos. Ou crie um Conjunto de mídias mistas, um Conjunto de imagens ou um Conjunto de rotação.
 1. Toque no ícone **[!UICONTROL Seletor de ativos]** (pasta com uma lupa) e navegue até um ativo.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
-   Também é possível filtrar por palavra-chave ou tag ao tocar em **[!UICONTROL Filtro]** e inserir palavras-chave, adicionar critérios ou ambos.
+   Filtre por palavra-chave ou tag tocando em **[!UICONTROL Filtro]** e inserindo palavras-chave, ou adicionando critérios, ou ambos.
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Você pode alterar o local em que AEM procura ativos navegando até outra pasta no campo **[!UICONTROL Path]**.
+   Altere o local em que o Experience Manager procura ativos navegando até outra pasta no campo **[!UICONTROL Path]**.
 
    Toque em **[!UICONTROL Coleção]** para pesquisar apenas ativos nas coleções.
 
@@ -115,6 +114,6 @@ Consulte também [Seletor de ativos](search-assets.md#assetpicker) para obter ma
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. Toque na marca de seleção para selecionar o ativo. O ativo é exibido.
+1. Selecione o ativo tocando na marca de seleção. O ativo é exibido.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
