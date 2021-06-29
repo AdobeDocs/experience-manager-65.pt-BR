@@ -1,6 +1,6 @@
 ---
-title: Criação de pop-ups personalizados usando o Quickviews
-seo-title: Uso do Quickviews para criar pop-ups personalizados
+title: Criar pop-ups personalizados usando o Quickview
+seo-title: Usar o Quickview para criar pop-ups personalizados
 description: O Quickview padrão é usado em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado nos pop-ups.
 seo-description: O Quickview padrão é usado em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado nos pop-ups.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
@@ -12,18 +12,18 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Espectadores
 role: Business Practitioner, Administrator
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# Uso do Quickviews para criar pop-ups personalizados {#using-quickviews-to-create-custom-pop-ups}
+# Usar o Quickview para criar pop-ups personalizados {#using-quickviews-to-create-custom-pop-ups}
 
 O Quickview padrão é usado em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. No entanto, você pode acionar a exibição de conteúdo personalizado nas janelas pop-ups. Dependendo do visualizador, essa funcionalidade permite que os usuários toquem em um ponto de acesso ou em uma imagem em miniatura, ou em um mapa de imagem para ver informações ou conteúdo relacionado.
 
-As visualizações rápidas são compatíveis com os seguintes visualizadores no Dynamic Media:
+O Quickview é compatível com os seguintes visualizadores no Dynamic Media:
 
 * Imagens interativas (pontos de conexão clicáveis)
 * Vídeo interativo (imagens em miniatura clicáveis durante a reprodução do vídeo)
@@ -31,7 +31,7 @@ As visualizações rápidas são compatíveis com os seguintes visualizadores no
 
 Embora a funcionalidade de cada visualizador seja diferente, o processo de criação de uma exibição rápida é o mesmo em todos os três visualizadores compatíveis.
 
-**Para usar o Quickviews para criar pop-ups personalizados:**
+**Para usar o Quickview para criar pop-ups personalizados:**
 
 1. Crie uma Exibição rápida para um ativo carregado.
 
@@ -114,7 +114,7 @@ Exemplo de código incorporadoSuponha que você use o seguinte exemplo de códig
 
 1. Agora você deve configurar o manipulador `quickViewActivate`.
 
-   O manipulador `quickViewActivate` controla as visualizações rápidas no visualizador. O manipulador contém a lista de variáveis e as chamadas de função para uso com o Quickview. O código incorporado fornece o mapeamento para a variável SKU definida no Quickview e uma chamada de função `loadQuickView` de amostra.
+   O manipulador `quickViewActivate` controla a exibição rápida no visualizador. O manipulador contém a lista de variáveis e as chamadas de função para uso com o Quickview. O código incorporado fornece o mapeamento para a variável SKU definida no Quickview e uma chamada de função `loadQuickView` de amostra.
 
    **Variável**
 mappingMap variáveis para uso na sua página da Web para o valor SKU e variáveis genéricas contidas no Quickview:
