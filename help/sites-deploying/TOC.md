@@ -1,15 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: Guia de implementação do AEM 6.5
 breadcrumb-title: Guia de implementação
 user-guide-description: Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.5, incluindo a implantação do Adobe Managed Services na nuvem.
 feature: Implantação
 role: Architect
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 16%
@@ -17,7 +16,7 @@ ht-degree: 16%
 ---
 
 
-# AEM 6.5 Guia de implantação do usuário {#deploying}
+# Guia do usuário de implantação do AEM 6.5 {#deploying}
 
 + [Guia de implantação do usuário](home.md)
 + Introdução à plataforma de AEM {#introduction}
@@ -40,7 +39,7 @@ ht-degree: 16%
    + [Casos de uso da indexação Oak-run.jar](oak-run-indexing-usecases.md)
    + [Solução de problemas de índices do Oak](troubleshooting-oak-indexes.md)
    + [Aceitação Em Coleta De Estatísticas De Uso Agregado](opt-in-aggregated-usage-statistics.md)
-   + [Resolução de Problemas](troubleshooting.md)
+   + [Resolução de problemas](troubleshooting.md)
 + Configurar AEM {#configuring}
    + [Conceitos básicos de configuração](configuring.md)
    + [Logs](configure-logging.md)
