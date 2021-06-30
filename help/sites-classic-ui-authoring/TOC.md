@@ -1,14 +1,13 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: Guia do usuário de criação da interface clássica do AEM 6.5
 user-guide-description: Este guia aborda os conceitos de criação no AEM na interface do usuário clássica.
 feature: 'Criação  '
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 84%
@@ -26,9 +25,9 @@ ht-degree: 84%
    + [Manuseio básico](author-env-basic-handling.md)
    + [Configurar o ambiente da sua conta](author-env-user-props.md)
    + [Selecionar sua interface do usuário](author-env-select-ui.md)
-   + [Pesquisar](author-env-search.md)
-   + [Sua Caixa de entrada](author-env-inbox.md)
-   + [Atalhos de teclado para Consoles](author-env-keyboard-shortcuts.md)
+   + [Pesquisar  ](author-env-search.md)
+   + [Sua caixa de entrada](author-env-inbox.md)
+   + [Atalhos de teclado para Consoles  ](author-env-keyboard-shortcuts.md)
 + Criação {#authoring}
    + [Criar páginas](classic-page-author.md)
    + [Criação - o Ambiente e as ferramentas](classic-page-author-env-tools.md)
@@ -39,15 +38,15 @@ ht-degree: 84%
    + [Editar as propriedades da página](classic-page-author-edit-page-properties.md)
    + [Anotações ao editar uma página](classic-page-author-annotations.md)
    + [Solucionar problemas do AEM durante a criação  ](classic-page-author-troubleshooting.md)
-   + [Criação de conteúdo acessível (Conformidade com o WCAG 2.0)](classic-page-author-accessible-content.md)
-   + [Criação de uma página para dispositivos móveis   ](classic-feature-mobile.md)
+   + [Criação de conteúdo acessível (Conformidade com a WCAG 2.0)  ](classic-page-author-accessible-content.md)
+   + [Criação de uma página para dispositivos móveis  ](classic-feature-mobile.md)
    + [Componentes da autoria de página](classic-page-author-edit-mode.md)
    + [Atalhos de teclado ao editar as páginas](classic-page-author-keyboard-shortcuts.md)
 + Recursos de site e página {#siteandpage}
    + [Criação de página com fragmentos de conteúdo](classic-page-author-content-fragments.md)
-   + [Layout responsivo](classic-page-author-responsive-layout.md)
+   + [Layout responsivo  ](classic-page-author-responsive-layout.md)
    + [Trabalhar com versões de páginas](classic-page-author-work-with-versions.md)
-   + [Uso de tags](classic-feature-tags.md)
+   + [Uso de tags  ](classic-feature-tags.md)
    + [Andaime](classic-feature-scaffolding.md)
    + [Configuração dos componentes no Modo de design](classic-page-author-design-mode.md)
    + [Adicionar recursos Search&amp;Promote à sua página](classic-feature-search-promote.md)
@@ -65,20 +64,20 @@ ht-degree: 84%
    + [Noções sobre segmentação](classic-personalization-campaigns-segmentation.md)
    + [Gerenciamento de campanhas](classic-personalization-campaigns.md)
    + [Páginas de aterrissagem](classic-personalization-campaigns-landingpage.md)
-   + [Ofertas de direcionamento](classic-personalization-campaigns-target-offers.md)
+   + [Ofertas do Target](classic-personalization-campaigns-target-offers.md)
    + [Email Marketing](classic-personalization-campaigns-email.md)
-   + [Monitoramento de emails retornados](classic-personalization-campaigns-email-tracking-bounces.md)
+   + [Rastreamento de emails retornados](classic-personalization-campaigns-email-tracking-bounces.md)
    + [Teasers e estratégias](classic-personalization-campaigns-teasers-strategy.md)
    + [Configuração da sua campanha](classic-personalization-campaigns-setting-up-your.md)
    + [Publicar um email em provedores de serviços de email](classic-personalization-campaigns-email-newsletters.md)
-   + [Trabalhar com o Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
+   + [Trabalhar com o Gerenciador de campanha de marketing](classic-personalization-campaigns-mktg-manager.md)
    + [Criação de uma página de aterrissagem de informativo eficaz](classic-personalization-campaigns-email-landingpage.md)
-   + [Gerenciar assinaturas](classic-personalization-campaigns-email-subscriptions.md)
+   + [Gerenciamento de assinaturas](classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
    + [Trabalhar com o Adobe Campaign 6.1 e o Adobe Campaign Standard](classic-personalization-ac-campaign.md)
    + [Trabalhar com o Adobe Campaign](classic-personalization-ac.md)
    + [Componentes do Adobe Campaign](classic-personalization-ac-components.md)
-   + [Direcionar seu Adobe Campaign](classic-personalization-ac-target.md)
+   + [Direcionamento sua campanha do Adobe Campaign](classic-personalization-ac-target.md)
    + [Criação de formulários do Adobe Campaign no AEM](classic-personalization-ac-forms.md)
 + Criação de ativos na interface clássica {#assets}
    + [Trabalhar com ativos](classicui-assets.md)
