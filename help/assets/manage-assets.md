@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Gerenciamento de ativos,Pesquisar
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: dc483b9871cebce64f7b60fec2144f1f19ef28ec
+source-git-commit: 03b171d2af17efee73780b01058fd62bc9d45dbd
 workflow-type: tm+mt
 source-wordcount: '9788'
 ht-degree: 4%
@@ -765,7 +765,7 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
 
 ### Exibir anotações salvas {#viewing-saved-annotations}
 
-Somente uma anotação pode ser visualizada de cada vez.
+É possível exibir apenas uma anotação por vez.
 
 >[!NOTE]
 >
@@ -775,7 +775,7 @@ Somente uma anotação pode ser visualizada de cada vez.
 
 **Para exibir anotações salvas de um ativo:**
 
-1. Navegue até o local do ativo e abra a página do ativo.
+1. Vá para o local do ativo e abra a página do ativo.
 
 1. Na interface do Experience Manager, escolha **[!UICONTROL Linha do tempo]**.
 1. Na lista **[!UICONTROL Exibir todos]** na linha do tempo, selecione **[!UICONTROL Comentários]** para filtrar os resultados com base em anotações.
