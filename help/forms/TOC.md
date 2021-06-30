@@ -2,14 +2,13 @@
 cloud: Experience Cloud
 product: adobe experience manager
 sub-product: formulários
-solution: Experience Manager, Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms, Experience Manager 6.5
 audience: end-user
 user-guide-title: Guia do Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '3718'
 ht-degree: 4%
@@ -309,7 +308,7 @@ ht-degree: 4%
 + Cartas e correspondências {#letters-correspondences}
    + [Visão geral do gerenciamento de correspondência](using/cm-overview.md)
    + [Design de layout](using/layout-design-details.md)
-   + [Dicionário de dados](using/data-dictionary.md)
+   + [Dicionários de dados](using/data-dictionary.md)
    + [Fragmentos do documento](using/document-fragments.md)
    + [Criar carta](using/create-letter.md)
    + [Criar correspondência](using/create-correspondence.md)
@@ -568,7 +567,7 @@ ht-degree: 4%
    + Serviço de informação do sistema {#system-information-service}
       + [Configurar o serviço de informação do sistema](/help/forms/using/admin-help/set-system-information-service.md)
       + [APIs do Serviço de informações do sistema](/help/forms/using/admin-help/system-information-service-apis.md)
-+ Relatório de processo  {#process-reporting}
++ Relatório de processo {#process-reporting}
    + [Introdução ao Relatório de Processos](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Introdução ao Relatório de processos](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Como a geração de relatórios do processo funciona](/help/forms/using/process-reporting/process-reporting-architecture.md)
