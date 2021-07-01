@@ -12,9 +12,9 @@ docset: aem65
 feature: Gerenciamento de ativos
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 54230d68fc86c9098f7712044bc501bdc4f16502
+source-git-commit: 0c5759786a698f7c7503a56da7f472229d18f763
 workflow-type: tm+mt
-source-wordcount: '11668'
+source-wordcount: '11672'
 ht-degree: 5%
 
 ---
@@ -23,21 +23,11 @@ ht-degree: 5%
 
 Esta seção descreve como trabalhar com vídeo no Dynamic Media.
 
-Problemas de reprodução de vídeo conhecidos no Dynamic Media:
-
-* 
-
-   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
-
-* 
-
-   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
-
 ## Início rápido: Vídeos {#quick-start-videos}
 
 A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá-lo a ativar e executar rapidamente com conjuntos de vídeos adaptáveis no Dynamic Media. Após cada etapa, há referências cruzadas para os cabeçalhos de tópicos, onde você pode encontrar mais informações.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Antes de trabalhar com vídeo no Dynamic Media, verifique se o administrador do Adobe Experience Manager já ativou e configurou o Dynamic Media Cloud Services no modo Dynamic Media - Scene7 ou Dynamic Media - Modo híbrido.
 >
@@ -45,7 +35,16 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
    >
    >
 * Consulte [Configurar Dynamic Media Cloud Services](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) em Configuração do Dynamic Media - Modo híbrido.
+>
+>
+Problemas de reprodução de vídeo conhecidos no Dynamic Media *somente no Experience Manager 6.5.9.0*:
+>
+>* 
 
+   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+>* 
+
+   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
 >
 
 
@@ -419,7 +418,7 @@ Por exemplo, suponha que o vídeo de origem seja 1920 x 1080. Na tabela a seguir
 
 | Tipo de vídeo | Largura x altura | Proporção de largura | Taxa de altura |
 |--- |--- |--- |--- |
-| Origem | 1920x1080 | 1 | 3 |
+| Origem | 1920x1080 | 1 | 1 |
 | Codificado | 960 x 540 | 2 | 2 |
 | Codificado | 640 x 360 | 3 | 1 |
 | Codificado | 480 x 270 | 4 | 4 |
