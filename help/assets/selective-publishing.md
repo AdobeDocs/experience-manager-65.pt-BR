@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publicação
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2944'
 ht-degree: 4%
@@ -154,7 +154,7 @@ Consulte [Criação de uma Configuração do Dynamic Media](#configuring-dynamic
    * No canto superior direito da página **[!UICONTROL Gerenciar publicação - Escopo]**, toque em **[!UICONTROL Cancelar publicação]** ou **[!UICONTROL Cancelar publicação do Dynamic Media]**.
 1. Toque em **[!UICONTROL OK]**.
 
-## Publicar ativos no Dynamic Media ou Experience Manager usando a Publicação rápida {#quick-publish-aem-dm}
+## Publicação de ativos no Dynamic Media ou Experience Manager usando a Publicação rápida {#quick-publish-aem-dm}
 
 Você pode usar **[!UICONTROL Publicação rápida]** para casos simples de ativação de ativos. **[!UICONTROL A]** Publicação rápida publica os ativos selecionados imediatamente, sem qualquer outra interação do usuário. Por causa dessa ação, todas as referências não publicadas também são publicadas automaticamente.
 
