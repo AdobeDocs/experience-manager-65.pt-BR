@@ -2,18 +2,17 @@
 title: Digital Rights Management de ativos
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados em [!DNL Experience Manager].
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: DRM,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin
+feature: DRM,Gerenciamento de ativos
+exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1401'
 ht-degree: 5%
 
 ---
 
-
-# Digital Rights Management ativos {#digital-rights-management-in-assets}
+# Digital Rights Management por ativos {#digital-rights-management-in-assets}
 
 Os ativos digitais geralmente são associados a uma licença que especifica os termos e a duração do uso. Como [!DNL Adobe Experience Manager Assets] é totalmente integrado à plataforma [!DNL Experience Manager], você pode gerenciar com eficiência as informações de expiração de ativos e os estados de ativos. Você também pode associar informações de licenciamento a ativos.
 
