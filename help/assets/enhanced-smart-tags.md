@@ -2,18 +2,17 @@
 title: Tags inteligentes aprimoradas
 description: Tags inteligentes aprimoradas
 contentOwner: AG
-feature: Smart Tags, Search
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Tags inteligentes, pesquisa
+role: User
+exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1600'
 ht-degree: 1%
 
 ---
 
-
-# Entender, aplicar e preparar Tags inteligentes {#enhanced-smart-tags}
+# Entender, aplicar e preparar tags inteligentes {#enhanced-smart-tags}
 
 As organizações que lidam com ativos digitais cada vez mais usam um vocabulário controlado por taxonomia em metadados de ativos. Basicamente, inclui uma lista de palavras-chave que funcionários, parceiros e clientes costumam usar para consultar e pesquisar ativos digitais de uma classe específica. Marcar ativos com um vocabulário controlado por taxonomia garante que os ativos sejam facilmente identificados e recuperados.
 
@@ -118,7 +117,7 @@ Os resultados da pesquisa que correspondem a todos os termos de pesquisa nos cam
 >
 >Se a indexação do Lucene for feita a partir de [!DNL Adobe Experience Manager], a pesquisa baseada em tags inteligentes não funcionará conforme esperado.
 
-## Marcar ativos automaticamente {#tagging-assets-automatically}
+## Adicionar tags automaticamente aos ativos {#tagging-assets-automatically}
 
 Depois de ter treinado o Serviço de conteúdo inteligente, você pode acionar o fluxo de trabalho de marcação para aplicar automaticamente as tags apropriadas em um conjunto diferente de ativos semelhantes.
 
@@ -142,7 +141,7 @@ Você pode acionar o fluxo de trabalho de marcação no console do fluxo de trab
 >
 >Se você executar o fluxo de trabalho de marcação na linha do tempo, poderá aplicar tags em no máximo 15 ativos de cada vez.
 
-#### Marque ativos no console do fluxo de trabalho {#tagging-assets-from-the-workflow-console}
+#### Adicionar tags aos ativos do console do fluxo de trabalho {#tagging-assets-from-the-workflow-console}
 
 1. Na interface [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
 1. Na página **[!UICONTROL Modelos de fluxo de trabalho]**, selecione o fluxo de trabalho **[!UICONTROL Ativos de tags inteligentes do DAM]** e clique em **[!UICONTROL Iniciar fluxo de trabalho]** na barra de ferramentas.
@@ -156,7 +155,7 @@ Você pode acionar o fluxo de trabalho de marcação no console do fluxo de trab
 
    Para verificar se o Serviço de conteúdo inteligente marcou seus ativos corretamente, navegue até a pasta de ativos e revise as tags.
 
-#### Marque ativos na linha do tempo {#tagging-assets-from-the-timeline}
+#### Marcar ativos na linha do tempo {#tagging-assets-from-the-timeline}
 
 1. Na interface do usuário [!DNL Assets], selecione a pasta que contém ativos ou ativos específicos aos quais deseja aplicar tags inteligentes.
 1. No canto superior esquerdo, abra a **[!UICONTROL Linha do tempo]**.
