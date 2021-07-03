@@ -2,17 +2,16 @@
 title: '[!DNL Assets] desenvolvimento de proxy'
 description: Um proxy é um proxy [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] , operações suportadas, componentes de proxy e como desenvolver um trabalhador proxy personalizado.
 contentOwner: AG
-role: Administrator, Architect
+role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-translation-type: tm+mt
-source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
 
-# [!DNL Assets] desenvolvimento de proxy  {#assets-proxy-development}
+# [!DNL Assets] desenvolvimento de proxy {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets] O usa um proxy para distribuir o processamento de determinadas tarefas.
 
@@ -104,7 +103,7 @@ Este é um exemplo de uso da API:
  proxyJobService.removeJob(jobId);
 ```
 
-### Configurações de Cloud Service {#cloud-service-configurations}
+### Configurações do Cloud Service {#cloud-service-configurations}
 
 >[!NOTE]
 >
