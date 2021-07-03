@@ -2,11 +2,10 @@
 title: Gerenciar [!DNL Adobe Stock] ativos
 description: Pesquise, busque, licencie e gerencie [!DNL Adobe Stock] ativos de dentro de [!DNL Adobe Experience Manager]. Use os ativos licenciados como qualquer outro ativo digital.
 contentOwner: AG
-feature: Search, Adobe Stock
-role: Business Practitioner, Administrator
+feature: Pesquisar, Adobe Stock
+role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
-translation-type: tm+mt
-source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 13%
@@ -56,7 +55,7 @@ Para permitir a comunicação entre [!DNL Experience Manager] e [!DNL Adobe Stoc
 >
 >Se houver várias configurações [!DNL Adobe Stock], selecione a configuração desejada no painel [!UICONTROL Preferências do usuário]. Para acessar o painel a partir da página inicial [!DNL Experience Manager], clique no ícone do usuário e, em seguida, clique em **[!UICONTROL Preferências do usuário]** > **[!UICONTROL Configuração do Stock]**.
 
-## Use e gerencie [!DNL Adobe Stock] ativos em [!DNL Experience Manager] {#usemanage}
+## Usar e gerenciar [!DNL Adobe Stock] ativos em [!DNL Experience Manager] {#usemanage}
 
 Usando esse recurso, as organizações podem permitir que seus usuários trabalhem usando [!DNL Adobe Stock] ativos em [!DNL Experience Manager Assets]. Na interface do usuário [!DNL Experience Manager], os usuários podem pesquisar [!DNL Adobe Stock] ativos e licenciar os ativos necessários.
 
@@ -86,7 +85,7 @@ Como alternativa, comece a digitar `Location: Adobe Stock` na barra de pesquisa 
 
 *Figura: Pesquise filtros em  [!DNL Experience Manager] e  [!DNL Adobe Stock] ativos destacados nos resultados de pesquisa.*
 
-### Salve e exiba os ativos necessários {#saveassets}
+### Salvar e exibir os ativos necessários {#saveassets}
 
 Selecione um ativo que deseja salvar em [!DNL Experience Manager]. Clique em [!UICONTROL Save] na barra de ferramentas na parte superior e forneça o nome e o local do ativo. Os ativos não licenciados são salvos localmente com uma marca d&#39;água.
 
