@@ -10,16 +10,15 @@ content-type: reference
 topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de conteúdo
+role: User, Admin
+exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1861'
 ht-degree: 3%
 
 ---
-
 
 # Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets{#content-fragments-support-in-aem-assets-http-api}
 
@@ -191,7 +190,7 @@ A API REST do Assets expõe o acesso às propriedades de uma pasta; por exemplo,
 >
 >Dependendo do tipo de ativo, a lista de entidades-filho já pode conter o conjunto completo de propriedades que define a respectiva entidade-filho. Como alternativa, apenas um conjunto reduzido de propriedades pode ser exposto para uma entidade nesta lista de entidades-filho.
 
-### Assets {#assets}
+### Ativos {#assets}
 
 Se um ativo for solicitado, a resposta retornará seus metadados; como título, nome e outras informações, conforme definido pelo respectivo schema de ativos.
 
@@ -277,7 +276,7 @@ O corpo deve conter uma representação JSON do que deve ser atualizado para o f
 
 Pode ser simplesmente o título ou a descrição de um fragmento de conteúdo, um único elemento ou todos os valores e/ou metadados do elemento. Também é obrigatório fornecer uma propriedade `cq:model` válida para atualizações.
 
-### Exclua {#delete}
+### Excluir {#delete}
 
 O uso é via:
 
@@ -380,4 +379,3 @@ Para obter mais informações, consulte:
 
 * [Documentação da API HTTP de ativos](/help/assets/mac-api-assets.md)
 * [AEM sessão Gem: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
-
