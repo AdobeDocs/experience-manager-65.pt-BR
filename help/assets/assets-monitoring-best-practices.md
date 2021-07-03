@@ -2,18 +2,17 @@
 title: 'Práticas recomendadas para monitorar a implantação de  [!DNL Assets] '
 description: Práticas recomendadas para monitorar o ambiente e o desempenho da sua implantação  [!DNL Adobe Experience Manager] após a implantação.
 contentOwner: AG
-role: Administrator, Architect
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Admin, Architect
+feature: Gerenciamento de ativos
+exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '1670'
 ht-degree: 1%
 
 ---
 
-
-# Práticas recomendadas para monitorar a implantação [!DNL Adobe Experience Manager Assets] {#assets-monitoring-best-practices}
+# Práticas recomendadas para monitorar a implantação de [!DNL Adobe Experience Manager Assets] {#assets-monitoring-best-practices}
 
 Do ponto de vista [!DNL Experience Manager Assets], o monitoramento deve incluir a observação e o relatório dos seguintes processos e tecnologias:
 
@@ -54,11 +53,11 @@ Normalmente, você usa essas ferramentas em conjunto para obter uma ideia abrang
 
 ![chlimage_1-32](assets/chlimage_1-142.png)
 
-## Monitoramento a longo prazo {#long-term-monitoring}
+## Monitorização a longo prazo {#long-term-monitoring}
 
 O monitoramento de longo prazo de uma implantação [!DNL Experience Manager] envolve o monitoramento por um período mais longo das mesmas partes que são monitoradas ao vivo. Também inclui definir alertas específicos para o seu ambiente.
 
-### Agregação de log e relatórios {#log-aggregation-and-reporting}
+### Agregação de logs e relatórios {#log-aggregation-and-reporting}
 
 Há várias ferramentas disponíveis para agregar logs, por exemplo Splunk(TM) e Elastic Search, Logstash e Kabana (ELK). Para avaliar o tempo de atividade da sua implantação [!DNL Experience Manager], é importante entender os eventos de log específicos ao seu sistema e criar alertas com base neles. Um bom conhecimento das práticas de desenvolvimento e operações pode ajudá-lo a entender melhor como ajustar o processo de agregação de log para gerar alertas críticos.
 
@@ -189,7 +188,7 @@ Estas são algumas verificações de integridade prontas para uso que são útei
    * Limiar de alarme: Quando o status não estiver OK
    * Definição do alarme: Há erros nos arquivos de log. Verifique o atributo log para obter mais informações sobre a causa do problema.
 
-## Problemas e resoluções comuns {#common-issues-and-resolutions}
+## Questões comuns e resoluções  {#common-issues-and-resolutions}
 
 No processo de monitoramento, se encontrar problemas, veja algumas tarefas de solução de problemas que você pode executar para resolver problemas comuns com implantações de [!DNL Experience Manager]:
 
