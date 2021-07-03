@@ -2,16 +2,15 @@
 title: Práticas recomendadas para processar os formatos de arquivo compatíveis
 description: Práticas recomendadas para processar os vários tipos de arquivo com suporte usando [!DNL Experience Manager Assets].
 contentOwner: AG
-role: Administrator
-feature: Asset Management,Developer Tools
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Admin
+feature: Gerenciamento de ativos,Ferramentas do desenvolvedor
+exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
-
 
 # Práticas recomendadas de formato de arquivo de ativos {#assets-file-format-best-practices}
 
@@ -23,7 +22,7 @@ Para os formatos de arquivo compatíveis, consulte [Formatos compatíveis com at
 >
 >Se estiver usando [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente do Adobe se planeja processar muitos arquivos grandes de PSD ou PSB. Trabalhe com o representante do Atendimento ao cliente do Adobe para implementar essas práticas recomendadas para a implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários do Adobe. [!DNL Experience Manager] pode não processar arquivos PSB de alta resolução que tenham mais de 30000 x 23000 pixels.
 
-## [!DNL Adobe Camera Raw] biblioteca  {#adobe-camera-raw-library}
+## [!DNL Adobe Camera Raw] biblioteca {#adobe-camera-raw-library}
 
 Para obter o melhor desempenho, o Adobe recomenda usar a biblioteca [!DNL Adobe Camera Raw] para arquivos RAW e DNG.
 
@@ -31,7 +30,7 @@ Para obter o melhor desempenho, o Adobe recomenda usar a biblioteca [!DNL Adobe 
 
 Para obter mais informações, consulte [Suporte Camera Raw](/help/assets/camera-raw.md).
 
-## Biblioteca do Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
+## Biblioteca Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
 
 Para obter melhores resultados, o Adobe recomenda usar a biblioteca Adobe PDF Rasterizer para os seguintes arquivos:
 
