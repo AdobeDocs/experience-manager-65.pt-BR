@@ -4,9 +4,9 @@ description: Saiba como visualizar ativos 3D
 contentOwner: Rick Brough
 docset: aem65
 feature: Ativos 3D
-role: Business Practitioner
+role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 15%
