@@ -7,17 +7,17 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 698e8bdb-9b31-49ab-8560-26b05109bb23
 feature: Configuração
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
 
 ---
 
-# Ativação da proteção de link ativo no Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
+# Ativação da proteção de hot link no Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
 O Hot linking é quando um site de terceiros usa o código HTML para exibir uma imagem de seu site. Eles usam sua largura de banda toda vez que a imagem é solicitada, pois o navegador do visitante a está acessando diretamente do seu servidor. Hotlink *protection* é um método para impedir que outros sites vinculem diretamente a imagens, css ou JavaScript nas suas páginas da Web. Esse tipo de blindagem ajuda a reduzir o uso desnecessário da largura de banda em sua conta do Dynamic Media.
 
