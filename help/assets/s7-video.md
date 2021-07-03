@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Vídeo
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 34%
@@ -27,7 +27,7 @@ A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo ot
 * Assets: é possível incluir conjuntos de vídeos adaptáveis, em vez de somente ativos de vídeo individuais. Um conjunto de vídeos adaptáveis contém todas as representações de vídeo necessárias para reproduzir o vídeo com facilidade em várias telas. Um Conjunto de vídeos adaptáveis agrupa versões do mesmo vídeo codificadas em diferentes formatos e taxas de bits, como 400 kbps, 800 kbps e 1000 kbps. Você usa um Conjunto de vídeos adaptáveis, juntamente com o componente de vídeo do S7, para transmissão de vídeo adaptável em várias telas, incluindo dispositivos móveis de desktop, iOS, Android™, BlackBerry® e Windows.
 <!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
-## Sobre FFMPEG e Dynamic Media Classic {#about-ffmpeg-and-scene}
+## Sobre o FFMPEG e o Dynamic Media Classic {#about-ffmpeg-and-scene}
 
 O processo de codificação de vídeo padrão se baseia no uso da integração em FFMPEG com perfis de vídeo. Portanto, o fluxo de trabalho de assimilação de DAM pronto para uso contém as duas etapas de fluxo de trabalho baseadas em ffmpeg a seguir:
 
@@ -62,7 +62,7 @@ Se precisar de um fluxo de trabalho ou controle de versão para seus ativos, car
 1. No Experience Manager, acesse os ativos de vídeo no WCM na guia **[!UICONTROL Filmes]** do Localizador de conteúdo.
 1. Crie com o componente **[!UICONTROL Scene7 Video]** ou **[!UICONTROL Foundation Video]**.
 
-### Se você estiver fazendo upload de seu vídeo para o Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
+### Se você estiver fazendo upload do seu vídeo para o Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
 
 Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos, faça upload dos ativos para a Scene7. Este é o fluxo de trabalho recomendado:
 
@@ -93,13 +93,13 @@ Para configurar predefinições universais:
 
 1. Os perfis de codificação selecionados são aplicados automaticamente a todos os vídeos enviados por upload para a pasta de destino DAM CQ configurada para essa configuração de nuvem do Scene7. É possível configurar várias configurações de nuvem do Scene7 com diferentes pastas de destino para aplicar diversos perfis de codificação, conforme necessário.
 
-## Atualizar as predefinições de codificação e do visualizador  {#updating-viewer-and-encoding-presets}
+## Atualizar as predefinições de codificação e do visualizador {#updating-viewer-and-encoding-presets}
 
 Para atualizar o visualizador e as predefinições de codificação de vídeo porque as predefinições foram atualizadas no Scene7, navegue até a configuração do Scene7 na Configuração da nuvem e toque em **[!UICONTROL Atualizar as predefinições de codificação e do visualizador]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Fazer upload do vídeo de origem primária para o Scene7 a partir do Adobe DAM {#uploading-your-master-video}
+## Upload do vídeo de origem primária para o Scene7 a partir do Adobe DAM {#uploading-your-master-video}
 
 1. Navegue até a pasta de destino DAM CQ onde você definiu as configurações de nuvem com os perfis de codificação do Scene7.
 1. Clique em **[!UICONTROL Upload]** para fazer upload do vídeo de origem primária. O upload e a codificação do vídeo são concluídos depois que o workflow [!UICONTROL Ativo de atualização DAM] é concluído e **[!UICONTROL Publicar no Scene7]** tem uma marca de seleção.
@@ -140,7 +140,7 @@ A tabela a seguir fornece uma comparação de alto nível dos recursos suportado
 | Extensibilidade | Sim | Não |
 | Vídeo móvel | Sim | Sim |
 
-### Configuração  {#setting-up}
+### Configuração {#setting-up}
 
 #### Criação de perfis de vídeo {#creating-video-profiles}
 
