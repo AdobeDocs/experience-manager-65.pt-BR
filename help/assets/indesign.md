@@ -2,17 +2,17 @@
 title: Integrar [!DNL Assets] com [!DNL InDesign Server]
 description: Saiba como integrar [!DNL Adobe Experience Manager Assets] com [!DNL Adobe InDesign Server].
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Publicação
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 3c1a30f36222c319c354afa408555982bfe2804e
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 4%
 
 ---
 
-# Integre [!DNL Adobe Experience Manager Assets] com [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
+# Integrar [!DNL Adobe Experience Manager Assets] com [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] Usa o:
 
@@ -60,7 +60,7 @@ Este script de comando irá:
    * O texto e os arquivos extraídos são armazenados em [!DNL Experience Manager Assets].
    * Todas as representações são armazenadas em [!DNL Experience Manager Assets], no próprio ativo.
 
-## Integre o [!DNL InDesign Server] com o Experience Manager {#integrating-the-indesign-server-with-aem}
+## Integre o [!DNL InDesign Server] ao Experience Manager {#integrating-the-indesign-server-with-aem}
 
 Para integrar o [!DNL InDesign Server] para uso com [!DNL Experience Manager Assets] e depois de configurar seu proxy, é necessário:
 
@@ -88,7 +88,7 @@ Para instalar e iniciar o [!DNL InDesign Server] para uso com [!DNL Experience M
    >Se desejar salvar as mensagens de saída em um arquivo, use redirecionamento; por exemplo, em Windows:
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### Configurar o [!DNL Experience Manager Assets] workflow {#configuring-the-aem-assets-workflow}
+### Configurar o workflow [!DNL Experience Manager Assets] {#configuring-the-aem-assets-workflow}
 
 [!DNL Experience Manager Assets] O tem um fluxo de trabalho pré-configurado para  **[!UICONTROL Ativo de atualização do DAM]**, que tem várias etapas de processo especificamente para  [!DNL InDesign]:
 
@@ -213,7 +213,7 @@ TBD: Make updates to configurations for allow and block list after product updat
 >
 >Por padrão, após o tempo configurável (`retry.interval.to.whitelist.name`) em minutos, o trabalhador IDS é revalidado. Se o trabalhador for encontrado online, ele será removido da lista de bloqueios.
 
-## Habilite o suporte para [!DNL InDesign Server] 10.0 ou posterior {#enabling-support-for-indesign-server-or-later}
+## Ativar suporte para [!DNL InDesign Server] 10.0 ou posterior {#enabling-support-for-indesign-server-or-later}
 
 Para [!DNL InDesign Server] 10.0 ou superior, execute as etapas a seguir para ativar o suporte a várias sessões.
 
@@ -225,7 +225,7 @@ Para [!DNL InDesign Server] 10.0 ou superior, execute as etapas a seguir para at
 >
 >Para a integração [!DNL InDesign Server] com [!DNL Experience Manager Assets], use um processador multi-núcleo porque o recurso de suporte de sessão necessário para a integração não é suportado em sistemas de núcleo único.
 
-## Configurar [!DNL Experience Manager] credenciais {#configure-aem-credentials}
+## Configurar credenciais [!DNL Experience Manager] {#configure-aem-credentials}
 
 Você pode alterar as credenciais de administrador padrão (nome de usuário e senha) para acessar o [!DNL InDesign Server] de sua implantação [!DNL Experience Manager] sem interromper a integração com o [!DNL InDesign Server].
 
