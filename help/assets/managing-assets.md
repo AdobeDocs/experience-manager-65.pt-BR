@@ -7,18 +7,17 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
-feature: Asset Management
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Gerenciamento de ativos
+role: User, Admin
+exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '116'
 ht-degree: 13%
 
 ---
 
-
-# Sobre o gerenciamento de ativos do Dynamic Media {#managing-assets}
+# Sobre o gerenciamento de ativos da Dynamic Media {#managing-assets}
 
 O gerenciamento de ativos da Dynamic Media, imagens, vídeos e ativos interativos, após o upload, envolve muitas tarefas, incluindo a visualização, o download ou a publicação de ativos.
 
