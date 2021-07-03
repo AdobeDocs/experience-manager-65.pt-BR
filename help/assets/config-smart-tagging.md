@@ -2,16 +2,15 @@
 title: Configurar a marcação de ativos usando o Serviço de conteúdo inteligente
 description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada no  [!DNL Adobe Experience Manager], usando o Serviço de conteúdo inteligente.
 contentOwner: AG
-role: Administrator
-feature: Tagging,Smart Tags
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Admin
+feature: Marcação,Tags inteligentes
+exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2173'
 ht-degree: 25%
 
 ---
-
 
 # Preparar [!DNL Assets] para marcação inteligente {#configure-asset-tagging-using-the-smart-content-service}
 
@@ -95,7 +94,7 @@ Depois que um certificado expira, ele não é mais confiável. Não é possível
 
 1. Acesse [https://console.adobe.io](https://console.adobe.io) e navegue até os Serviços de conteúdo inteligente existentes na página **[!UICONTROL Integrações]**. Faça upload do novo certificado. Para obter mais informações, consulte as instruções em [Criar integração do Console do Desenvolvedor do Adobe](#create-adobe-i-o-integration).
 
-### Criar integração do Console do Desenvolvedor do Adobe {#create-adobe-i-o-integration}
+### Criar integração com o Console do desenvolvedor do Adobe {#create-adobe-i-o-integration}
 
 Para usar APIs do Serviço de conteúdo inteligente, crie uma integração no Console do desenvolvedor do Adobe para obter [!UICONTROL Chave da API] (gerada no campo [!UICONTROL ID do CLIENTE] da integração do Console do desenvolvedor do Adobe), [!UICONTROL ID DA CONTA TÉCNICA], [!UICONTROL ID DA ORGANIZAÇÃO] e [!UICONTROL CLIENT T] para [!UICONTROL Configurações do serviço de marcação inteligente de ativos] da configuração de nuvem em [!DNL Experience Manager].
 
@@ -190,7 +189,7 @@ Os resultados da validação são exibidos na mesma caixa de diálogo.
 
 1. Clique em **[!UICONTROL OK]** para fechar a etapa do processo e salve o fluxo de trabalho.
 
-## Treine o Serviço de Conteúdo Inteligente {#training-the-smart-content-service}
+## Treinar o Serviço de conteúdo inteligente {#training-the-smart-content-service}
 
 Para que o Serviço de conteúdo inteligente reconheça sua taxonomia comercial, execute-a em um conjunto de ativos que já incluem tags relevantes para sua empresa. Para marcar as imagens de sua marca com eficácia, o Serviço de conteúdo inteligente exige que as imagens de treinamento estejam em conformidade com determinadas diretrizes. Após o treinamento, o serviço pode aplicar a mesma taxonomia em um conjunto semelhante de ativos.
 
@@ -287,5 +286,5 @@ Para verificar se o Serviço de conteúdo inteligente é treinado em suas tags n
 >[!MORELIKETHIS]
 >
 >* [Visão geral e como treinar tags inteligentes](enhanced-smart-tags.md)
->* [Tutorial em vídeo sobre tags inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+* [Tutorial em vídeo sobre tags inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
 
