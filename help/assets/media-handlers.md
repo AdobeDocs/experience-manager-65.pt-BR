@@ -3,10 +3,10 @@ title: Processar ativos usando manipuladores de mídia e fluxos de trabalho
 description: Saiba mais sobre os manipuladores de mídia e como usar fluxos de trabalho para executar tarefas em seus ativos digitais.
 mini-toc-levels: 1
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: Fluxo De Trabalho,Representações
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 4%
