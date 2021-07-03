@@ -2,16 +2,15 @@
 title: Configuração e administração da funcionalidade de metadados.
 description: Configuração e administração da funcionalidade  [!DNL Experience Manager Assets] relacionada à adição e ao gerenciamento de metadados.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Metadata
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Metadados
+exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1952'
 ht-degree: 5%
 
 ---
-
 
 # Configuração e administração da funcionalidade de metadados em [!DNL Assets] {#config-metadata}
 
@@ -143,7 +142,7 @@ Use o editor do Forms do Esquema de metadados da pasta para criar e editar esque
 1. Na página [!UICONTROL Esquema de Metadados da Pasta Forms], clique em **[!UICONTROL Criar]**.
 1. Especifique um nome para o formulário e clique em **[!UICONTROL Criar]**. O novo formulário de esquema é listado na página [!UICONTROL Schema Forms].
 
-### Editar formulários de esquema de metadados da pasta {#edit-folder-metadata-schema-forms}
+### Editar formulários de esquema de metadados de pastas {#edit-folder-metadata-schema-forms}
 
 É possível editar um formulário de esquema de metadados recém-adicionado ou existente, incluindo o seguinte:
 
@@ -188,7 +187,7 @@ A guia **[!UICONTROL Criar formulário]** lista os itens de formulário que voc�
 | [!UICONTROL Tags padrão] | Adicionar uma tag. |
 | [!UICONTROL Campo oculto] | Adicione um campo oculto. Ele é enviado como um parâmetro POST quando o ativo é salvo. |
 
-#### Editar itens de formulário {#editing-form-items}
+#### Edição de itens de formulário {#editing-form-items}
 
 Para editar as propriedades dos itens de formulário, clique no componente e edite todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Settings]**.
 
@@ -226,7 +225,7 @@ Você pode atribuir um esquema de metadados de pasta a uma pasta na página Form
 
 Se um esquema de metadados for configurado para uma pasta, o caminho para o formulário de esquema será armazenado na propriedade `folderMetadataSchema` do nó da pasta em `./jcr:content`.
 
-#### Atribua a um schema a partir da página Esquema de Metadados da Pasta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
+#### Atribuir a um schema a partir da página Esquema de metadados da pasta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. Na interface [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados da pasta]**.
 1. Na página Forms do Esquema de metadados da pasta , selecione o formulário de esquema que deseja aplicar a uma pasta.
@@ -241,7 +240,7 @@ Se um esquema de metadados for configurado para uma pasta, o caminho para o form
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
-#### Atribua um esquema ao criar uma pasta {#assign-a-schema-when-creating-a-folder}
+#### Atribuir um schema ao criar uma pasta {#assign-a-schema-when-creating-a-folder}
 
 Você pode atribuir um esquema de metadados de pasta ao criar uma pasta. Se pelo menos um esquema de metadados de pasta existir no sistema, uma lista extra será exibida na caixa de diálogo **[!UICONTROL Criar pasta]**. Você pode selecionar o schema desejado. Por padrão, nenhum esquema é selecionado.
 
@@ -254,7 +253,7 @@ Você pode atribuir um esquema de metadados de pasta ao criar uma pasta. Se pelo
 1. Abra as propriedades dos metadados da pasta na qual você aplicou o esquema de metadados.
 1. Para exibir os campos de metadados da pasta, clique na guia **[!UICONTROL Metadados da pasta]** .
 
-### Use o esquema de metadados da pasta {#use-the-folder-metadata-schema}
+### Usar o esquema de metadados da pasta {#use-the-folder-metadata-schema}
 
 Abra as propriedades de uma pasta configurada com um esquema de metadados de pasta. Uma guia **[!UICONTROL Metadados da pasta]** é exibida na página [!UICONTROL Propriedades] da pasta. Para exibir o formulário de esquema de metadados da pasta, selecione essa guia.
 
