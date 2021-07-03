@@ -3,9 +3,9 @@ title: Recursos e interfaces acessíveis do  [!DNL Experience Manager Assets]
 description: Saiba como os recursos de acessibilidade em [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] ajudam usuários portadores de deficiência.
 contentOwner: AG
 feature: Gerenciamento de ativos
-role: Business Practitioner, Architect, Leader
+role: User, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 2%
@@ -45,7 +45,7 @@ Para ler um relatório com detalhes do nível de conformidade, consulte a págin
 
 Para saber como [!DNL Dynamic Media] é acessível, consulte [acessibilidade em [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
-## Tecnologias assistivas {#at-support}
+## Tecnologias de assistência {#at-support}
 
 Os usuários portadores de deficiências dependem frequentemente de hardware e software para acessar conteúdo da Web e usar produtos de software. Essas ferramentas são conhecidas como tecnologias de assistência. [!DNL Experience Manager Assets] O pode trabalhar com os seguintes tipos de tecnologias de assistência (AT) ao usar as funcionalidades principais do software:
 
@@ -55,7 +55,7 @@ Os usuários portadores de deficiências dependem frequentemente de hardware e s
 * Hardware auxiliar, incluindo controles de switch, exibições em Braille atualizáveis e outros dispositivos de entrada de computador.
 * Ferramentas de aumento da interface do usuário.
 
-## [!DNL Experience Manager Assets] casos de uso acessíveis  {#accessible-assets-use-cases}
+## [!DNL Experience Manager Assets] casos de uso acessíveis {#accessible-assets-use-cases}
 
 Em [!DNL Experience Manager], os recursos de acessibilidade atendem a dois requisitos principais de [!DNL Experience Manager] usuários e seus clientes.
 
@@ -64,7 +64,7 @@ Em [!DNL Experience Manager], os recursos de acessibilidade atendem a dois requi
 
 Os recursos principais em [!DNL Assets] são mais acessíveis do que antes e são atualizados regularmente para melhorar a conformidade com os padrões globais. As operações CRUD em [!DNL Assets] têm algum grau de acessibilidade incorporado nelas. Fluxos de trabalho do DAM como adicionar, gerenciar, pesquisar e distribuir ativos são acessíveis com a ajuda de atalhos do teclado, texto do leitor de tela, contraste de cores e assim por diante.
 
-## Suporte para uso do teclado {#keyboard-use}
+## Suporte para uso de teclado {#keyboard-use}
 
 Muitos elementos da interface do usuário que são clicáveis ou acionáveis com um ponteiro também podem ser envolvidos com o uso do teclado. Usando um teclado, os usuários podem se concentrar em elementos da interface do usuário e tomar uma ação apropriada. Os usuários podem usar os atalhos de teclado diretamente para acionar um comando ou uma ação sem precisar se concentrar nos elementos da interface do usuário e acioná-la usando o teclado. Por exemplo, os usuários podem abrir a linha do tempo de um ativo no lado esquerdo da interface do usuário navegando até o controle da interface do usuário usando um teclado, selecionando `Return` e selecionando `Alt + 2` o atalho do teclado.
 
