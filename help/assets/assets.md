@@ -2,16 +2,15 @@
 title: Introdução à [!DNL Adobe Experience Manager Assets]
 description: Saiba o que é gerenciamento de ativos digitais, seus casos de uso e a oferta  [!DNL Adobe Experience Manager Asset] .
 contentOwner: AG
-feature: Asset Management
-role: Leader, Architect, Business Practitioner
-translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+feature: Gerenciamento de ativos
+role: Leader, Architect, User
+exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '876'
 ht-degree: 38%
 
 ---
-
 
 # Sobre [!DNL Adobe Experience Manager Assets] como uma solução DAM {#administering-assets}
 
@@ -53,7 +52,7 @@ Um ativo é essencialmente um binário com metadados, além de representações 
 >
 >Fazer upload e/ou editar um grande volume de ativos (especialmente imagens) pode afetar o desempenho da sua implantação [!DNL Experience Manager].
 
-### [!DNL Experience Manager Assets] terminologia  {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] terminologia {#aem-assets-terminology}
 
 Ao trabalhar com ativos digitais em [!DNL Experience Manager], é necessário entender a seguinte terminologia:
 
@@ -86,9 +85,9 @@ As tarefas que você pode executar com esses workflows pré-configurados:
 
 E claro, é possível aplicar fluxos de trabalho manualmente. Consulte [Manipuladores de mídia do Assets](media-handlers.md) para obter uma lista de fluxos de trabalho padrão.
 
-## [!DNL Experience Manager Assets] e  [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] e [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Consulte [Assets and Media Library](medialibrary.md) para obter informações sobre as diferenças.
+Consulte [Ativos e Media Library](medialibrary.md) para obter informações sobre as diferenças.
 
 >[!MORELIKETHIS]
 >
