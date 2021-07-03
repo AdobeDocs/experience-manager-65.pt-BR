@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Resolução de problemas
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 O documento a seguir descreve a solução de problemas para o Dynamic Media que executa o modo de execução **dynamicmedia_scene7**.
 
-## Configuração {#setup-and-configuration}
+## Configuração e configuração {#setup-and-configuration}
 
 Certifique-se de que o Dynamic Media foi configurado corretamente fazendo o seguinte:
 
@@ -37,11 +37,11 @@ Certifique-se de que o Dynamic Media foi configurado corretamente fazendo o segu
 
    Esse agente de replicação é encontrado em Agentes no Autor.
 
-## Geral (todos os ativos) {#general-all-assets}
+## Geral (Todos os Ativos) {#general-all-assets}
 
 Veja a seguir algumas dicas e truques gerais para todos os ativos.
 
-### Propriedades de Status da Sincronização de Ativos {#asset-synchronization-status-properties}
+### Propriedades do Status da Sincronização de Ativos {#asset-synchronization-status-properties}
 
 As seguintes propriedades de ativos podem ser revisadas no CRXDE Lite para confirmar a sincronização bem-sucedida do ativo do AEM para o Dynamic Media:
 
