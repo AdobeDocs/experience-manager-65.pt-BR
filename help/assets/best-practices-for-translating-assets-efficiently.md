@@ -2,16 +2,15 @@
 title: Práticas recomendadas para traduzir ativos
 description: Práticas recomendadas para o gerenciamento eficiente de ativos para sincronizar várias versões traduzidas e simplificar os fluxos de trabalho de tradução.
 contentOwner: AG
-role: Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Admin
+feature: Gerenciamento de ativos
+exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '418'
 ht-degree: 1%
 
 ---
-
 
 # Práticas recomendadas para traduzir ativos {#best-practices-for-translating-assets-efficiently}
 
