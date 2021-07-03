@@ -2,16 +2,15 @@
 title: Instalar e configurar o ImageMagick
 description: Saiba mais sobre o software ImageMagick, como instalá-lo, configurar a etapa do processo da linha de comando e usá-lo para editar, compor e gerar miniaturas de imagens.
 contentOwner: AG
-role: Administrator
-feature: Renditions,Developer Tools
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Admin
+feature: Representações,Ferramentas do desenvolvedor
+exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '696'
 ht-degree: 1%
 
 ---
-
 
 # Instale e configure o ImageMagick para trabalhar com [!DNL Experience Manager Assets] {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
@@ -35,7 +34,7 @@ Várias versões dos arquivos de instalação do ImageMagic estão disponíveis 
 1. Defina a variável de caminho Ambiente para o diretório de instalação do ImageMagic.
 1. Para verificar se a instalação foi bem-sucedida, execute o comando `identify -version`.
 
-## Configure a etapa do processo da linha de comando {#set-up-the-command-line-process-step}
+## Configurar a etapa do processo da linha de comando {#set-up-the-command-line-process-step}
 
 Você pode configurar a etapa do processo da linha de comando para o caso de uso específico. Execute estas etapas para gerar uma imagem invertida e miniaturas (140x100, 48x48, 319x319 e 1280x1280) sempre que adicionar um arquivo de imagem JPEG a `/content/dam` no servidor [!DNL Experience Manager]:
 
