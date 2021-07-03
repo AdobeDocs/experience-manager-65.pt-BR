@@ -3,10 +3,10 @@ title: Integração com as práticas recomendadas do Adobe Creative Cloud
 description: Práticas recomendadas para integrar [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] a fim de simplificar os fluxos de trabalho de transferência de ativos e alcançar alta velocidade de conteúdo.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Colaboração, Adobe Asset Link, Aplicativo de desktop
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '3254'
 ht-degree: 16%
@@ -60,7 +60,7 @@ Este artigo foca principalmente nos dois primeiros aspectos das necessidades de 
 | Editar - abrir para edição | Sim - Ação de check-out | Sim - Abrir ação (no compartilhamento de rede) | [O check-out no ](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) AAL salva o ativo na conta de armazenamento da creative cloud do usuário (sincronizada pelo aplicativo do Creative Cloud) por padrão. |
 | Editar - trabalho em andamento fora do DAM | Sim - Ativo disponível na conta de armazenamento de Creative Cloud do usuário sincronizada com o desktop. | Sim |  |
 | Editar - fazer upload de alterações | Sim - [Ação de check-in](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) com comentário opcional | Sim |  |
-| Upload - arquivo único | Sim - carrega o documento ativo atual | Sim | [Fazer upload por meio da interface da Web](manage-assets.md#uploading-assets) |
+| Upload - arquivo único | Sim - carrega o documento ativo atual | Sim | [Fazer upload via interface da Web](manage-assets.md#uploading-assets) |
 | Upload - vários arquivos / estruturas hierárquicas de pastas | Não | Sim | [Faça upload via interface da Web ](manage-assets.md#uploading-assets) ou por meio de script ou ferramenta personalizada. |
 | Misc - usuário e logon | O usuário Creative Cloud conectado ao aplicativo de desktop Creative Cloud é reconhecido (SSO) | [!DNL Experience Manager] usuário e credenciais | Os usuários de ambas as soluções contam para a cota de usuário [!DNL Experience Manager]. |
 | Misc - rede e acesso | Requer acesso do desktop do usuário para [!DNL Experience Manager] implantação pela rede | Requer acesso do desktop do usuário para [!DNL Experience Manager] implantação pela rede | [!DNL Adobe Asset Link] não compartilha o ambiente proxy de rede. |
