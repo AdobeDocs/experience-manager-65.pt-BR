@@ -6,18 +6,17 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Modo Scene7, Modo híbrido
 exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
-translation-type: tm+mt
-source-git-commit: 61e703e73b831a9b4e7045e5d5fffeef5be7ed6d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 2%
 
 ---
 
-# Sobre a mudança do Dynamic Media-Hybrid para Dynamic Media-Scene7 {#about-migrating}
+# Sobre a mudança do Dynamic Media-Hybrid para o Dynamic Media-Scene7 {#about-migrating}
 
 O Dynamic Media-Hybrid é uma versão mais antiga da integração do Dynamic Media com o Adobe Experience Manager. A versão híbrida foi introduzida pela primeira vez no AEM (Adobe Experience Manager) 6.1. Embora o Adobe continue a oferecer suporte ao modo Híbrido, ele não é o modo preferido (o Dynamic Media-Scene7 é o modo preferido). Também não é compatível com novos recursos, como o Recorte inteligente e imagens panorâmicas. Enquanto o Dynamic Media-Scene7 faz isso.
 
@@ -38,7 +37,7 @@ Duas opções estão disponíveis ao migrar do Dynamic Media-Hybrid para o Dynam
 
 Considere apenas começar de novo com uma nova instância provisionada do Dynamic Media-Scene7 no Adobe Experience Manager. Além da assimilação e do processamento de ativos por meio do Dynamic Media Cloud Service, uma auditoria Adobe de uso de ativos, fluxos de trabalho e componentes é altamente recomendada. Em muitos casos, os componentes e fluxos de trabalho personalizados podem ser substituídos por recursos mais novos e prontos para uso.
 
-## Opção 2 - Migração da instância existente do Dynamic Media-Hybrid para Dynamic Media-Scene7 {#process-for-migrating}
+## Opção 2 - Migração da instância existente do Dynamic Media-Hybrid para o Dynamic Media-Scene7 {#process-for-migrating}
 
 | Etapa | Tarefa | Considerações |
 |---|---|---|
