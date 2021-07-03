@@ -9,16 +9,16 @@ content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
 feature: Gerenciamento de ativos
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 3%
 
 ---
 
-# Visualização de ativos usando a interface de software {#previewing-assets}
+# Visualização de ativos usando a interface do software {#previewing-assets}
 
 Você pode usar a Visualização para ver como um ativo digital que você carregou é exibido por um cliente em seu próprio navegador da Web. O visualizador padrão incorporado entre dispositivos atribuído ao ativo é usado para a Visualização.
 
