@@ -2,16 +2,15 @@
 title: Criar e configurar as páginas do Editor de ativos
 description: Saiba como criar páginas personalizadas do Editor de ativos e editar vários ativos simultaneamente.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Developer Tools,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin
+feature: Ferramentas para desenvolvedores, Gerenciamento de ativos
+exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2129'
 ht-degree: 1%
 
 ---
-
 
 # Criar e configurar as páginas do Editor de ativos {#creating-and-configuring-asset-editor-pages}
 
@@ -218,7 +217,7 @@ Para personalizar a página Editor de ativos, use elementos do sidekick. A pági
 
 ![assetshare6](assets/assetshare6.png)
 
-#### Definir um Editor de ativos para abrir de uma página de Compartilhamento de ativos {#setting-which-asset-editor-opens-from-an-asset-share-page}
+#### Definir um editor de ativos para abrir de uma página de Compartilhamento de ativos {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
 Depois de criar a página Editor de ativos personalizados, é necessário garantir que, ao clicar duas vezes em ativos, o Compartilhamento de ativos personalizado criado abra os ativos na página Editor personalizado.
 
@@ -387,7 +386,7 @@ As seguintes ações estão disponíveis:
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 
-## Ativos de várias edições com a página Editor de ativos {#multi-editing-assets-with-the-asset-editor-page}
+## Multieditar ativos com a página Editor de ativos {#multi-editing-assets-with-the-asset-editor-page}
 
 Com [!DNL Experience Manager Assets] você pode fazer alterações em vários ativos de uma só vez. Depois de ter selecionado ativos, é possível alterar simultaneamente seus itens:
 
