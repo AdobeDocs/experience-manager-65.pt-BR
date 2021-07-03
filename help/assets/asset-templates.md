@@ -2,16 +2,15 @@
 title: Modelos de ativos
 description: Saiba mais sobre os modelos de Ativos no [!DNL Adobe Experience Manager Assets] e como usar os modelos de ativos para criar materiais de apoio de marketing.
 contentOwner: AG
-role: Business Practitioner
-feature: Asset Management,Developer Tools
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User
+feature: Gerenciamento de ativos,Ferramentas do desenvolvedor
+exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1548'
 ht-degree: 0%
 
 ---
-
 
 # Modelos de ativos {#asset-templates}
 
@@ -37,7 +36,7 @@ Quando você escolhe um modelo para sua garantia, [!DNL Experience Manager Asset
 
 É possível exportar o arquivo atualizado dentro da pasta principal nos formatos INDD, PDF ou JPG. Também é possível baixar a saída nesses formatos para o sistema de arquivos local.
 
-## Criar um colateral {#creating-a-collateral}
+## Criar uma garantia {#creating-a-collateral}
 
 Considere um cenário em que você deseja criar materiais de apoio para impressão digitais, como folhetos, panfletos e anúncios para uma campanha futura e compartilhar com lojas de varejo globalmente. Criar ativos de garantia com base em um modelo ajuda a fornecer uma experiência unificada do cliente em todos os canais. Os designers podem criar os modelos de campanha (página única ou várias páginas) usando uma solução criativa, como [!DNL InDesign] e fazer upload dos modelos para [!DNL Experience Manager Assets] para você. Antes de criar um material adicional, faça com que um ou mais modelos INDD sejam carregados e disponibilizados com [!DNL Experience Manager] antecedência.
 
@@ -65,7 +64,7 @@ Considere um cenário em que você deseja criar materiais de apoio para impress�
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
-## Editar um colateral {#editing-a-collateral}
+## Editar uma garantia {#editing-a-collateral}
 
 Você pode editar um material adicional imediatamente depois de criá-lo. Como alternativa, você a abre na página [!UICONTROL Modelos] ou na página de ativos.
 
@@ -94,7 +93,7 @@ Você pode editar um material adicional imediatamente depois de criá-lo. Como a
 
 1. Para modificar o texto em um campo editável, clique no campo de texto da lista de campos editáveis e edite o texto no campo.
 
-   ![chlimage_1-191](assets/chlimage_1-316.png)
+   ![chlimage_1-111](assets/chlimage_1-316.png)
 
    É possível editar as propriedades do texto, por exemplo, estilo de fonte, cor e tamanho usando as opções fornecidas.
 
@@ -108,7 +107,7 @@ Você pode editar um material adicional imediatamente depois de criá-lo. Como a
 
    Também é possível pesquisar por imagens usando palavras-chave, tags e com base em seu status de publicação. Você pode navegar pelo repositório [!DNL Experience Manager Assets] e navegar até o local da imagem desejada.
 
-   ![chlimage_1-114](assets/chlimage_1-320.png)
+   ![chlimage_1-115](assets/chlimage_1-320.png)
 
 1. Clique em **[!UICONTROL Preview]** para visualizar a imagem.
 1. Para editar uma página específica em um material de apoio de várias páginas, use o navegador da página na parte inferior.
@@ -140,7 +139,7 @@ Você pode editar um material adicional imediatamente depois de criá-lo. Como a
 
    ![chlimage_1-119](assets/chlimage_1-324.png)
 
-## Mesclar ativos de garantia {#merge-collateral}
+## Colateral de fusão {#merge-collateral}
 
 1. Na interface [!DNL Experience Manager], clique em [!UICONTROL Ativos] na página Navegação.
 
