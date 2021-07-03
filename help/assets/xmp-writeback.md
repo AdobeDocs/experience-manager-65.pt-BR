@@ -2,16 +2,15 @@
 title: Write-back de XMP a execuções
 description: Saiba como o recurso de write-back de XMP propaga as alterações de metadados de um ativo para todas as representações ou representações específicas do ativo.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Metadata
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Metadados
+exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '785'
 ht-degree: 5%
 
 ---
-
 
 # Write-back de XMP a execuções {#xmp-writeback-to-renditions}
 
@@ -29,7 +28,7 @@ Nesse caso, o [!DNL Experience Manager Assets] salva as alterações na propried
 
 No entanto, [!DNL Experience Manager Assets] não propaga automaticamente quaisquer alterações de metadados nas representações de um ativo. Consulte [como ativar XMP write-back](#enable-xmp-writeback).
 
-## Habilitar XMP write-back {#enable-xmp-writeback}
+## Ativar XMP write-back {#enable-xmp-writeback}
 
 Para permitir que as alterações de metadados sejam propagadas para as representações do ativo ao carregá-lo, modifique a configuração **[!UICONTROL Adobe CQ DAM Rendition Maker]** no Configuration Manager.
 
@@ -37,9 +36,9 @@ Para permitir que as alterações de metadados sejam propagadas para as represen
 1. Abra a configuração **[!UICONTROL Adobe CQ DAM Rendition Maker]**.
 1. Selecione a opção **[!UICONTROL Propagar XMP]** e salve as alterações.
 
-   ![chlimage_1-135](assets/chlimage_1-346.png)
+   ![chlimage_1-133](assets/chlimage_1-346.png)
 
-## Ativando XMP write-back para representações específicas {#enabling-xmp-writeback-for-specific-renditions}
+## Ativar XMP write-back para representações específicas {#enabling-xmp-writeback-for-specific-renditions}
 
 Para permitir que o recurso Writeback XMP propague alterações de metadados para selecionar representações, especifique essas representações na etapa XMP do fluxo de trabalho Processo de Writeback do fluxo de trabalho [!UICONTROL DAM Metadata WriteBack] . Por padrão, essa etapa é configurada com a representação original.
 
@@ -68,7 +67,7 @@ As alterações de metadados são propagadas para a miniatura de representaçõe
 >
 >Para as plataformas compatíveis, consulte [XMP pré-requisitos de gravação de metadados](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
-## Filtrar metadados de XMP {#filtering-xmp-metadata}
+## Filtrar metadados XMP {#filtering-xmp-metadata}
 
 [!DNL Experience Manager Assets] O suporta a filtragem de lista de bloqueios e lista de permissões de propriedades/nós para metadados de XMP que são lidos de binários de ativos e armazenados no JCR quando os ativos são assimilados.
 
