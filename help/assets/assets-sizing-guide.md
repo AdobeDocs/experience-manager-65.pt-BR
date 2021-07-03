@@ -2,18 +2,17 @@
 title: '[!DNL Assets] guia de dimensionamento'
 description: Práticas recomendadas para determinar métricas eficientes para estimar a infraestrutura e os recursos necessários para implantar [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Architect, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Architect, Admin
+feature: Gerenciamento de ativos
+exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Assets] guia de dimensionamento  {#assets-sizing-guide}
+# [!DNL Assets] guia de dimensionamento {#assets-sizing-guide}
 
 Ao dimensionar o ambiente para uma implementação [!DNL Adobe Experience Manager Assets], é importante garantir que haja recursos suficientes disponíveis em termos de disco, CPU, memória, E/S e throughput da rede. Dimensionar muitos desses recursos requer uma compreensão de quantos ativos estão sendo carregados no sistema. Se uma métrica melhor não estiver disponível, você pode dividir o tamanho da biblioteca existente pela idade da biblioteca para encontrar a taxa na qual os ativos são criados.
 
@@ -87,7 +86,7 @@ Um armazenamento de dados compartilhado requer que os binários sejam armazenado
 
 A latência nas implementações S3 é introduzida pelos threads de escrita em segundo plano. Os procedimentos de backup devem levar em conta essa latência. Além disso, os índices Lucene podem permanecer incompletos ao fazer um backup. Aplica-se a qualquer arquivo com diferenciação de tempo gravado no armazenamento de dados S3 e acessado de outra instância.
 
-### Armazenamento de nó ou armazenamento de documento {#node-store-document-store}
+### Armazenamento de nós ou armazenamento de documentos {#node-store-document-store}
 
 É difícil obter números de dimensionamento precisos para um NodeStore ou DocumentStore devido aos recursos consumidos pelos seguintes:
 
@@ -122,6 +121,6 @@ Se as renderizações forem geradas incorretamente, use a biblioteca Camera Raw.
 
 É difícil estimar com precisão o tamanho do arquivo TIFF compatível imediatamente com um heap específico para [!DNL Experience Manager], pois fatores adicionais, como tamanho de pixel, influenciam o processamento. É possível que [!DNL Experience Manager] possa processar um arquivo de tamanho pronto para uso de 255 MB, mas não pode processar um tamanho de arquivo de 18 MB porque o último consiste de um número invulgarmente maior de pixels em comparação ao primeiro.
 
-## Tamanho dos ativos {#size-of-assets}
+## Dimensão dos ativos {#size-of-assets}
 
 Por padrão, [!DNL Experience Manager] permite carregar ativos de tamanho de arquivo até 2 GB. Para fazer upload de ativos muito grandes em [!DNL Experience Manager], consulte [Configuração para fazer upload de ativos muito grandes](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).
