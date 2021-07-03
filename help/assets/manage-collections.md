@@ -3,16 +3,15 @@ title: Gerenciar coleções de ativos digitais
 description: Saiba mais sobre as tarefas para gerenciar Coleções de ativos, como criar, exibir, excluir, editar e baixar coleções.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner
-feature: Collections,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User
+feature: Coleções,Gerenciamento de ativos
+exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2185'
+source-wordcount: '2183'
 ht-degree: 11%
 
 ---
-
 
 # Gerenciar coleções {#managing-collections}
 
@@ -28,7 +27,7 @@ As coleções são dos seguintes tipos, com base na maneira como coletam ativos:
 
 * Uma coleção inteligente que inclui dinamicamente ativos com base em critérios de pesquisa.
 
-## Acesse o console de coleções {#navigating-the-collections-console}
+## Acesse o console Coleções {#navigating-the-collections-console}
 
 Para abrir o **[!UICONTROL Collections]**, na interface [!DNL Experience Manager], vá para **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
@@ -181,7 +180,7 @@ Você pode pesquisar coleções no console Coleções. Ao pesquisar com palavras
 
 Se você pesquisar por coleções do nível superior, somente coleções individuais serão retornadas nos resultados da pesquisa. [!DNL Assets] As pastas ou nas coleções são excluídas. Em todos os outros casos (por exemplo, em uma coleção individual ou em uma hierarquia de pasta), todos os ativos, pastas e coleções relevantes são retornados.
 
-## Pesquisar nas coleções {#searching-within-collections}
+## Pesquisar em coleções {#searching-within-collections}
 
 No console Coleções , clique em uma coleção para abri-la.
 
@@ -272,5 +271,5 @@ Você pode executar um fluxo de trabalho para os ativos em uma coleção. Se a c
 >[!MORELIKETHIS]
 >
 >* [Configurar notificações por email do Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
->* [Criar uma tarefa de revisão para Coleções](bulk-approval.md)
+* [Criar uma tarefa de revisão para Coleções](bulk-approval.md)
 
