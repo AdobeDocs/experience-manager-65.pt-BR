@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 feature: Imagens panorâmicas,Gerenciamento de ativos
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Consulte também [Gerenciar predefinições do visualizador](/help/assets/managi
 
 ![panorâmica-imagem2](assets/panoramic-image2.png)
 
-## Fazer upload de ativos para uso com o Visualizador de imagem panorâmica {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## Fazer upload de ativos para uso com o visualizador de Imagem panorâmica {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 Para que um ativo carregado seja qualificado como uma imagem panorâmica esférica que você pretende usar com o visualizador de Imagem panorâmica, o ativo deve ter um ou ambos os itens a seguir:
 
@@ -83,6 +83,6 @@ Se você soltou uma imagem no componente Mídia panorâmica no WCM e o placehold
 
 Consulte [Visualização de ativos](/help/assets/previewing-assets.md).
 
-## Publicar imagens panorâmicas {#publishing-panoramic-images}
+## Publicação de imagens panorâmicas {#publishing-panoramic-images}
 
 Consulte [Publicar ativos](/help/assets/publishing-dynamicmedia-assets.md).
