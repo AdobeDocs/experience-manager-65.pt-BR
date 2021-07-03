@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 feature: Conjuntos de imagens, Gerenciamento de ativos
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2085'
 ht-degree: 13%
@@ -94,7 +94,7 @@ Comece carregando as imagens dos seus Conjuntos de imagens. Ao escolher imagens,
 
 Você pode fazer upload de imagens para Conjuntos de imagens da mesma maneira que faria [upload de qualquer outro ativo no Assets](/help/assets/manage-assets.md#uploading-assets).
 
-### Preparando ativos do Conjunto de imagens para carregar {#preparing-image-set-assets-for-upload}
+### Preparação de ativos do Conjunto de imagens para upload {#preparing-image-set-assets-for-upload}
 
 Antes de criar Conjuntos de imagens, verifique se as imagens têm o tamanho e o formato corretos.
 
@@ -112,7 +112,7 @@ Como os usuários podem ampliar imagens em Conjuntos de imagens, verifique se as
 >* Miniatura de cor preta, marrom e verde.
 
 
-## Criando Conjuntos de Imagens {#creating-image-sets}
+## Criação de conjuntos de imagens {#creating-image-sets}
 
 Você pode criar Conjuntos de imagens por meio da interface do usuário ou da API. Esta seção descreve como criar Conjuntos de imagens na interface do usuário do .
 
@@ -171,7 +171,7 @@ Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em or
 
 1. Clique em **[!UICONTROL Salvar]**. O Conjunto de imagens recém-criado é exibido na pasta em que você o criou.
 
-## Visualizando conjuntos de imagens {#viewing-image-sets}
+## Visualização de conjuntos de imagens {#viewing-image-sets}
 
 Você pode criar conjuntos de imagens na interface do usuário ou automaticamente usando [predefinições do conjunto de lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
@@ -241,6 +241,6 @@ Você pode executar várias tarefas de edição em Conjuntos de imagens, como as
 
 Consulte [Visualização de ativos](/help/assets/previewing-assets.md).
 
-## Publicando conjuntos de imagens {#publishing-image-sets}
+## Publicar conjuntos de imagens {#publishing-image-sets}
 
 Consulte [Publicar ativos](/help/assets/publishing-dynamicmedia-assets.md).
