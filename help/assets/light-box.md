@@ -2,16 +2,15 @@
 title: Lightbox como sua galeria de imagens pessoal
 description: Saiba mais sobre o Lightbox como sua galeria de imagens pessoal nos Ativos da Adobe Experience Manager].
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Developer Tools,Renditions
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin
+feature: Ferramentas de Desenvolvedor,Representações
+exl-id: 7652663a-11ba-4a78-9a9f-221d514fe992
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
-
 
 # Lightbox {#lightbox}
 
