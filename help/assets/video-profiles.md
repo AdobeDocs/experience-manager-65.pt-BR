@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 feature: Perfis de vídeo
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '3697'
 ht-degree: 13%
@@ -194,7 +194,7 @@ Toque no ícone de informações ao lado de cada opção para obter descrições
 
 Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Aplicar um perfil de vídeo a pastas](#applying-a-video-profile-to-folders) ou [Aplicar um perfil de vídeo globalmente](#applying-a-video-profile-globally).
 
-## Criar um perfil de vídeo para transmissão progressiva {#creating-a-video-encoding-profile-for-progressive-streaming}
+## Criação de um perfil de vídeo para streaming progressivo {#creating-a-video-encoding-profile-for-progressive-streaming}
 
 Se você optar por não usar a opção **[!UICONTROL Codificar para transmissão adaptável]**, todas as predefinições de codificação adicionadas ao perfil serão tratadas como representações de vídeo individuais para transmissão de streaming com taxa de bits única ou entrega de vídeo progressiva. Além disso, não há validação para garantir que todas as representações de vídeo tenham a mesma proporção.
 
@@ -316,7 +316,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
 
 1. No canto superior esquerdo da página CRXDE Lite, toque no ícone **[!UICONTROL Voltar ao início]** para retornar ao Experience Manager.
 
-### Editar um perfil de vídeo {#editing-a-video-encoding-profile}
+### Edição de um perfil de vídeo {#editing-a-video-encoding-profile}
 
 É possível editar qualquer perfil de vídeo criado para adicionar, editar ou excluir predefinições de vídeo nesse perfil.
 
@@ -340,7 +340,7 @@ Toque no ícone de informações para obter uma descrição da transmissão adap
 
 1. No canto superior direito da página, toque em **[!UICONTROL Salvar]**.
 
-### Copiando um perfil de vídeo {#copying-a-video-encoding-profile}
+### Cópia de um perfil de vídeo {#copying-a-video-encoding-profile}
 
 1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo]**.
 1. Na página Perfis de vídeo , verifique o nome de um perfil de vídeo.
@@ -384,14 +384,14 @@ As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do n
 
 Consulte também [Reprocessando ativos em uma pasta depois de ter editado seu perfil de processamento](processing-profiles.md#reprocessing-assets).
 
-#### Aplicar um perfil de vídeo a pastas por meio da interface do usuário de Perfis {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
+#### Aplicar um perfil de vídeo a pastas por meio da interface do usuário Perfis {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
 1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo]**.
 1. Selecione o perfil de vídeo que deseja aplicar a uma ou várias pastas.
 1. Toque em **[!UICONTROL Aplicar perfil às pastas]** e selecione uma ou várias pastas que deseja usar para receber os ativos carregados recentemente e toque em **[!UICONTROL Aplicar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta enquanto estão na **[!UICONTROL Exibição de cartão]**.
 Você pode [monitorar o progresso de um trabalho de processamento de perfil de vídeo](#monitoring-the-progress-of-an-encoding-job).
 
-#### Aplicar um perfil de vídeo a pastas a partir de Propriedades {#applying-video-profiles-to-folders-from-properties}
+#### Aplicar um perfil de vídeo a pastas em Propriedades {#applying-video-profiles-to-folders-from-properties}
 
 1. Toque ou clique no logotipo do Experience Manager e navegue até **[!UICONTROL Assets]** e até a pasta à qual deseja aplicar um perfil de vídeo.
 1. Na pasta , toque na marca de seleção para selecioná-la e toque em **[!UICONTROL Propriedades]**.
@@ -425,7 +425,7 @@ Ao remover um perfil de vídeo de uma pasta, qualquer subpasta herda automaticam
 
 Remova um perfil de vídeo de uma pasta no menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, nas **[!UICONTROL Configurações da pasta]**. Esta seção descreve como remover perfis de vídeo de pastas de ambas as maneiras.
 
-### Remover um perfil de vídeo das pastas por meio da interface do usuário de Perfis {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
+### Remover um perfil de vídeo das pastas por meio da interface do usuário Perfis {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
 1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de vídeo]**.
 1. Selecione o perfil de vídeo que deseja remover de uma pasta ou de várias pastas.
@@ -433,7 +433,7 @@ Remova um perfil de vídeo de uma pasta no menu **[!UICONTROL Ferramentas]** ou,
 
    Você pode confirmar que o perfil de vídeo não é mais aplicado a uma pasta porque o nome não aparece mais abaixo do nome da pasta.
 
-### Remover um perfil de vídeo das pastas por meio das Propriedades {#removing-video-profiles-from-folders-by-way-of-properties}
+### Remover um perfil de vídeo das pastas por meio de Propriedades {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Toque no logotipo do Experience Manager e navegue até **[!UICONTROL Assets]** e, em seguida, até a pasta da qual deseja remover um perfil de vídeo.
 1. Na pasta , toque na marca de seleção para selecioná-la e toque em **[!UICONTROL Propriedades]**.
