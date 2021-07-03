@@ -2,16 +2,15 @@
 title: Revisar ativos e coleções de pastas
 description: Configure fluxos de trabalho de revisão para ativos em uma pasta ou coleção e compartilhe-os com revisores ou parceiros criativos para buscar feedback.
 contentOwner: AG
-feature: Collaboration, Collections
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Colaboração, Coleções
+role: User
+exl-id: 23c90e10-aa03-450e-9fb0-2f5be0c5066b
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '786'
 ht-degree: 4%
 
 ---
-
 
 # Revisar ativos e coleções de pastas {#review-folder-assets-and-collections}
 
