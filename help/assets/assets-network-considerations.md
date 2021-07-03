@@ -2,18 +2,17 @@
 title: Considerações e requisitos de rede
 description: Discute considerações de rede ao projetar uma implantação  [!DNL Adobe Experience Manager Assets] .
 contentOwner: AG
-role: Architect, Administrator
-feature: Developer Tools
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Architect, Admin
+feature: Ferramentas do desenvolvedor
+exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Assets] considerações de rede  {#assets-network-considerations}
+# [!DNL Assets] considerações de rede {#assets-network-considerations}
 
 Entender sua rede é tão importante quanto entender [!DNL Adobe Experience Manager Assets]. A rede pode afetar as experiências de upload, download e usuário. Diagramando sua topologia de rede, você pode identificar pontos de estrangulamento e áreas subotimizadas na rede que você deve corrigir para melhorar o desempenho da rede e a experiência do usuário.
 
@@ -26,7 +25,7 @@ Certifique-se de incluir o seguinte no diagrama de rede:
 * Defina consumidores simultâneos da interface de rede [!DNL Experience Manager].
 * Fluxos de trabalho definidos da implantação [!DNL Experience Manager].
 
-## Conectividade do dispositivo cliente para a rede corporativa {#connectivity-from-the-client-device-to-the-corporate-network}
+## Conectividade do dispositivo cliente à rede corporativa {#connectivity-from-the-client-device-to-the-corporate-network}
 
 Comece diagramando a conectividade entre os dispositivos clientes individuais e a rede corporativa. Neste estágio, identifique recursos compartilhados, como conexões WiFi, em que vários usuários acessam o mesmo ponto ou switch ethernet para fazer upload e download de ativos.
 
@@ -48,7 +47,7 @@ O computador exibido à direita tem um upstream limitado à rede corporativa por
 
 O diagrama exibe velocidades de uplink mais altas dentro da rede corporativa do que o geralmente usado. Essas tubulações são recursos compartilhados. Se for esperado que o switch compartilhado manipule 50 clientes, ele pode ser um ponto de estrangulamento. No diagrama inicial, apenas dois computadores compartilham a conexão específica.
 
-## Faça o upload para a Internet a partir da rede corporativa e do [!DNL Experience Manager] ambiente {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Faça upload para a Internet a partir da rede corporativa e do ambiente [!DNL Experience Manager] {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
