@@ -3,20 +3,19 @@ title: Ajuste de desempenho [!DNL Assets].
 description: Sugestões e orientações sobre a configuração [!DNL Experience Manager] e alterações no hardware, software e componentes de rede para remover gargalos e otimizar o desempenho de [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
-role: Architect, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Architect, Admin
+feature: Gerenciamento de ativos
+exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2745'
+source-wordcount: '2743'
 ht-degree: 0%
 
 ---
 
-
 <!-- TBD: Get reviewed by engineering. -->
 
-# [!DNL Adobe Experience Manager Assets] guia de ajuste de desempenho  {#assets-performance-tuning-guide}
+# [!DNL Adobe Experience Manager Assets] guia de ajuste de desempenho {#assets-performance-tuning-guide}
 
 Uma configuração [!DNL Experience Manager Assets] contém vários componentes de hardware, software e rede. Dependendo do seu cenário de implantação, você pode exigir alterações específicas na configuração de hardware, software e componentes de rede para remover gargalos de desempenho.
 
@@ -51,7 +50,7 @@ Quando o volume temporário de alto desempenho estiver pronto, defina o parâmet
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
-## Configuração Java {#java-configuration}
+## Configuração do Java {#java-configuration}
 
 ### Versão do Java {#java-version}
 
@@ -76,7 +75,7 @@ Defina os seguintes parâmetros da JVM:
 
 É recomendável separar o armazenamento de dados do armazenamento de segmentos para todos os usuários [!DNL Experience Manager Assets] . Além disso, configurar os parâmetros `maxCachedBinarySize` e `cacheSizeInMB` pode ajudar a maximizar o desempenho. Defina `maxCachedBinarySize` para o menor tamanho de arquivo que pode ser mantido no cache. Especifique o tamanho do cache na memória a ser usado para o armazenamento de dados em `cacheSizeInMB`. O Adobe recomenda que você defina esse valor entre 2 e 10% do tamanho total do heap. No entanto, o teste de carga/desempenho pode ajudar a determinar a configuração ideal.
 
-### Configure o tamanho máximo do cache de imagem em buffer {#configure-the-maximum-size-of-the-buffered-image-cache}
+### Configurar o tamanho máximo do cache de imagem em buffer {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 Ao fazer upload de grandes quantidades de ativos para [!DNL Adobe Experience Manager], para permitir picos inesperados no consumo de memória e para evitar que a JVM falhe com OutOfMemoryErrors, reduza o tamanho máximo configurado do cache de imagem em buffer. Considere um exemplo de que você tem um sistema com um heap máximo (- `Xmx`param) de 5 GB, um conjunto Oak BlobCache de 1 GB e um cache de documento definido em 2 GB. Nesse caso, o cache em buffer levaria no máximo 1,25 GB e a memória, o que deixaria apenas 0,75 GB de memória para picos inesperados.
 
@@ -176,7 +175,7 @@ Normalmente, a tarefa de coleta de lixo do armazenamento de dados é executada s
 
 Se você tiver um espaço em disco limitado e executar os workflows [!UICONTROL Ativo de atualização DAM] intensamente, considere agendar a tarefa de coleta de lixo com mais frequência.
 
-#### Geração de representação em tempo de execução {#runtime-rendition-generation}
+#### Geração de renderização em tempo de execução {#runtime-rendition-generation}
 
 Os clientes usam imagens de vários tamanhos e formatos em seu site ou para distribuição a parceiros comerciais. Como cada representação adiciona ao espaço do ativo no repositório, o Adobe recomenda usar esse recurso criteriosamente. Para reduzir a quantidade de recursos necessários para processar e armazenar imagens, você pode gerar essas imagens em tempo de execução em vez de como representações durante a assimilação.
 
@@ -215,7 +214,7 @@ Além disso, defina o caminho da pasta temporária do ImageMagick no arquivo `co
 
 Se estiver usando [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Atendimento ao cliente do Adobe se planeja processar muitos arquivos grandes de PSD ou PSB. Trabalhe com o representante do Atendimento ao cliente do Adobe para implementar essas práticas recomendadas para a implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários do Adobe. [!DNL Experience Manager] pode não processar arquivos PSB de alta resolução que tenham mais de 30000 x 23000 pixels.
 
-### XMP write-back {#xmp-writeback}
+### Writeback XMP {#xmp-writeback}
 
 XMP write-back atualiza o ativo original sempre que os metadados são modificados em [!DNL Experience Manager], o que resulta no seguinte:
 
@@ -261,7 +260,7 @@ Se os usuários não precisarem fazer uma pesquisa de texto completo de ativos, 
 1. Na interface [!DNL Experience Manager], acesse [!UICONTROL Gerenciador de Pacotes].
 1. Faça upload e instale o pacote disponível em [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
-### Adivinhe o total {#guess-total}
+### Adivinhe total {#guess-total}
 
 Ao criar queries que geram grandes conjuntos de resultados, use o parâmetro `guessTotal` para evitar a utilização de memória pesada ao executá-los.
 
@@ -287,14 +286,14 @@ Para todas as preocupações de desempenho de rede do cliente, execute as seguin
 * Usando uma ferramenta de benchmark de rede
 * Testar em relação ao dispatcher
 
-### [!DNL Experience Manager] teste de implantação  {#aem-deployment-testing}
+### [!DNL Experience Manager] teste de implantação {#aem-deployment-testing}
 
 Para minimizar a latência e alcançar alta throughput por meio de utilização eficiente da CPU e compartilhamento de carga, monitore o desempenho da sua implantação [!DNL Experience Manager] regularmente. Em especial:
 
 * Execute testes de carga em relação à implantação [!DNL Experience Manager].
 * Monitore o desempenho do upload e a capacidade de resposta da interface do usuário.
 
-## [!DNL Experience Manager Assets] lista de verificação de desempenho e impacto das tarefas de gerenciamento de ativos  {#checklist}
+## [!DNL Experience Manager Assets] lista de verificação de desempenho e impacto das tarefas de gerenciamento de ativos {#checklist}
 
 * Ative o HTTPS para contornar qualquer farejador de tráfego HTTP corporativo.
 * Use uma conexão com fio para fazer upload de ativos pesados.
