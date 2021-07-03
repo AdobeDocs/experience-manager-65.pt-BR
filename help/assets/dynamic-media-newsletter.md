@@ -1,13 +1,13 @@
 ---
 title: Informativo do Dynamic Media
-description: 'O informativo do Dynamic Media disponibilizado pelo Experience League é um informativo mensal. Ela foi criada para ajudar você a usar o Dynamic Media e o Dynamic Media Classic para começar a obter valor imediatamente. Recursos valiosos para a criação de conhecimento estão disponíveis neste boletim informativo de balcão único. Ele inclui vídeos, visões gerais de soluções e introduções para alguns dos principais recursos, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais. '
+description: 'O informativo do Dynamic Media por Experience League é um informativo mensal. Ela foi criada para ajudar você a usar o Dynamic Media e o Dynamic Media Classic para começar a obter valor imediatamente. Recursos valiosos para a criação de conhecimento estão disponíveis neste boletim informativo de balcão único. Ele inclui vídeos, visões gerais de soluções e introduções para alguns dos principais recursos, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais. '
 keywords: Dynamic Media, boletim informativo, atualizações de produtos, dicas e truques, eventos, sucesso do cliente, blog, blogs, imagens, vídeos, recursos, recursos
 contentOwner: Rick Brough
 solution: Dynamic Media Classic, Experience Manager
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: Colaboração, Dynamic Media Classic
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # ![Logotipo do informativo do Dynamic Media](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
-O informativo mensal do Dynamic Media disponibilizado pela Experience League foi projetado para ajudar você a usar o Dynamic Media e o Dynamic Media Classic, de modo que você possa começar a obter valor imediatamente.
+O informativo mensal do Dynamic Media por Experience League foi projetado para ajudar você a usar o Dynamic Media e o Dynamic Media Classic, para que você possa começar a obter valor imediatamente.
 
 Recursos valiosos para a criação de conhecimento estão disponíveis neste boletim informativo de balcão único. Ele inclui vídeos, visões gerais de soluções e introduções para alguns dos principais recursos, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais.
 
@@ -48,7 +48,7 @@ Recursos valiosos para a criação de conhecimento estão disponíveis neste bol
    * Descubra três maneiras de ajudar seu investimento em mídias avançadas durante esses tempos desafiadores.
    * Cadastre-se no webinário para saber como aliviar o carregamento de sua página com o Smart Imaging.
    * Assista aos webinários on-demand do Skill Builder para Dynamic Media Classic.
-   * Veja as sessões do Dynamic Media do Online Adobe Summit 2020.
+   * Exiba as sessões do Dynamic Media do Online Adobe Summit 2020.
    * Saiba mais sobre as auditorias gratuitas do Dynamic Media Classic.
    * Conheça John Monroe, Gerente Sênior de Programa para Serviços de Sucesso do Cliente.
 
@@ -96,7 +96,7 @@ Recursos valiosos para a criação de conhecimento estão disponíveis neste bol
    * Um artigo do CMSwire que ajuda você a entender como atualizar sua estratégia de mídia avançada para atender às expectativas atuais do cliente.
    * Acesso ao webinário sob demanda no Dynamic Media a partir da série Skill Builder.
    * Conheça Nick Peters, Gerente, Engenharia de Confiabilidade do Site, Adobe Experience Manager.
-   * Atualize-se com o Dynamic Media e o Dynamic Media Classic no Experience League.
+   * Acesse o Dynamic Media e o Dynamic Media Classic no Experience League.
 
 * **[Setembro de 2019, Edição 09](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
 
@@ -107,7 +107,7 @@ Recursos valiosos para a criação de conhecimento estão disponíveis neste bol
    * Uma segunda chance de capturar dois webinars recentes do Skill Builder.
    * Assista ao webinário sob demanda sobre a proteção de seus ativos digitais contra pirataria.
    * Conheça Bridget Roman, Gerente sênior de marketing de produtos para ativos Adobe Experience Manager.
-   * Atualize-se com o Dynamic Media e o Dynamic Media Classic no Experience League.
+   * Acesse o Dynamic Media e o Dynamic Media Classic no Experience League.
 
 * **[Agosto de 2019, Edição 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
 
@@ -135,7 +135,7 @@ Recursos valiosos para a criação de conhecimento estão disponíveis neste bol
    Nesta edição:
 
    * Assista a vídeos que destacam a experiência de atualização para o Dynamic Media no Experience Manager Assets.
-   * Assista aos principais vídeos práticos no Experience League.
+   * Assista aos principais vídeos de instruções do Experience League.
    * Saiba mais sobre o Adobe Insider Tour futuro.
    * Leia sobre como você pode proteger seus ativos digitais da pirataria.
    * Saiba mais sobre o Recorte inteligente controlado por IA para imagens.
@@ -146,7 +146,7 @@ Recursos valiosos para a criação de conhecimento estão disponíveis neste bol
    Nesta edição:
 
    * Descubra os dez principais recursos ocultos do Dynamic Media Classic em uma publicação do blog.
-   * Assista aos principais vídeos práticos no Experience League.
+   * Assista aos principais vídeos de instruções do Experience League.
    * Saiba mais sobre o Adobe Insider Tour futuro.
    * Leia uma série de blogs de três partes que ajudam a atualizar sua estratégia de mídia avançada.
    * Saiba mais sobre o recorte inteligente de vídeo AI.
