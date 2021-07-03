@@ -7,17 +7,17 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Publicação
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 5%
 
 ---
 
-# Publicar ativos do Dynamic Media {#publishing-dynamic-media-assets}
+# Publicação de ativos Dynamic Media {#publishing-dynamic-media-assets}
 
 Publique seus ativos do Dynamic Media selecionando os ativos que já carregou e tocando em **[!UICONTROL Publicar]** ou **[!UICONTROL Publicação rápida]**. Depois que os ativos da Dynamic Media forem publicados, eles estarão disponíveis para inclusão em uma página da Web por meio de um URL ou ao incorporar o código na página.
 
