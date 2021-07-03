@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 feature: Ativos 3D,Gerenciamento de ativos
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 1c95217c98cdf24182eebbfea09c807318b2d514
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2306'
 ht-degree: 5%
@@ -31,7 +31,7 @@ Não há nenhuma configuração adicional necessária para usar ativos 3D no Dyn
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
-## Formatos 3D suportados no Dynamic Media {#supported-three-d-file-formats-in-dm}
+## Formatos 3D compatíveis com o Dynamic Media {#supported-three-d-file-formats-in-dm}
 
 O Dynamic Media é compatível com os seguintes formatos 3D.
 
@@ -171,7 +171,7 @@ O Dynamic Media inclui um componente de mídia 3D do Dynamic Media que pode ser 
    * [Opcional - Configuração do componente de mídia 3D](#configuring-the-three-d-component)
 * [Atribuição de um ativo 3D ao componente de mídia 3D](#assigning-a-three-d-asset-to-the-component)
 
-## Adicionar o componente de mídia 3D ao modelo de página {#adding-three-d-media-component-to-page-template}
+## Adicionar o componente de mídia 3D ao modelo da página {#adding-three-d-media-component-to-page-template}
 
 1. Navegue até **[!UICONTROL Ferramentas > Geral > Modelos]**.
 1. Navegue até o modelo de página no qual você deseja ativar o componente 3D e selecione o modelo.
@@ -240,7 +240,7 @@ Consulte [Adicionar o componente de mídia 3D a uma página da Web](#adding-the-
 >
 >Embora uma página da Web esteja no modo Experience Manager Sites **[!UICONTROL Edit]**, o componente de Mídia 3D exibe o ativo 3D, mas nenhuma interação com o ativo é possível. Para tornar o ativo interativo, você pode usar o recurso **[!UICONTROL Visualização]** para exibir a página da Web no editor de páginas com acesso total à funcionalidade do componente de mídia 3D.
 
-## Publicar ativos 3D estáticos do Dynamic Media {#publishing-three-d-assets}
+## Publicação de ativos estáticos em Dynamic Media 3D {#publishing-three-d-assets}
 
 O Dynamic Media aceita vários formatos de arquivo 3D compatíveis com *conteúdo estático* no Dynamic Media. O conteúdo estático significa que você pode fazer upload e publicar ativos 3D, mas não há suporte para *dynamic* criação de imagens ou ajuste de imagens associado ao ativo 3D. Isso ocorre porque o Dynamic Media Imaging Server não reconhece formatos 3D. Dessa forma, depois de publicar um ativo 3D no Dynamic Media, você tem um URL instantâneo que pode ser copiado. O URL para o ativo 3D segue a estrutura normal de URL do Dynamic Media. No entanto, não é possível editar nenhum parâmetro no URL do ativo, ao contrário dos ativos de imagem tradicionais na Dynamic Media.
 
