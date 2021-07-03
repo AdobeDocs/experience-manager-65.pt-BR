@@ -2,16 +2,15 @@
 title: Preparar ativos para tradução
 description: Crie pastas raiz de idioma para preparar ativos para tradução para suportar ativos multilíngues.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Projects
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Projetos
+exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '441'
 ht-degree: 1%
 
 ---
-
 
 # Preparar ativos para tradução {#preparing-assets-for-translation}
 
@@ -58,7 +57,7 @@ Por exemplo, a página raiz da cópia de idioma italiano da hierarquia de amostr
 
 1. Clique em **[!UICONTROL Criar]**. A raiz do idioma é criada no console [!DNL Assets].
 
-## Exibir raízes de idioma {#viewing-language-roots}
+## Exibir raízes do idioma {#viewing-language-roots}
 
 [!DNL Experience Manager] A interface do fornece um  **** Painel de referência que exibe uma lista de raízes de idioma que foram criadas no  [!DNL Assets].
 
