@@ -2,18 +2,17 @@
 title: Fluxo de atividades de ativos digitais na exibição de linha do tempo
 description: Este artigo descreve como exibir registros de atividades para ativos na linha do tempo.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Gerenciamento de ativos
+role: User, Admin
+exl-id: 28dc0aa5-f2be-4e27-b7d8-415569b7ecd4
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 20%
+source-wordcount: '217'
+ht-degree: 21%
 
 ---
 
-
-# Fluxo de atividade na linha do tempo {#activity-stream-in-timeline}
+# Fluxo de atividades na linha do tempo {#activity-stream-in-timeline}
 
 Esse recurso exibe registros de atividades para ativos na linha do tempo. Se você executar qualquer uma das seguintes operações relacionadas a ativos em [!DNL Adobe Experience Manager Assets], o recurso de fluxo de atividades atualizará a linha do tempo para refletir a atividade.
 
