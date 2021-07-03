@@ -2,22 +2,21 @@
 title: Processar ativos usando fluxos de trabalho
 description: Processamento de ativos para converter formatos, criar representações, gerenciar ativos, validar ativos e executar fluxos de trabalho.
 contentOwner: AG
-feature: Workflow, Renditions
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Fluxo de trabalho, representações
+role: User, Admin
+exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '963'
 ht-degree: 3%
 
 ---
-
 
 # Processar ativos digitais {#process-assets}
 
 [!DNL Adobe Experience Manager Assets] O permite trabalhar com os ativos digitais de várias maneiras para permitir um processamento de ativos robusto. Você pode usar os métodos de processamento padrão ou personalizado para garantir a conclusão, as auditorias e a conformidade completas dos processos de negócios, a detecção e distribuição e a integridade básica dos ativos digitais. Você pode realizar as tarefas de gerenciamento de ativos e, ao mesmo tempo, atingir a escala e a personalização necessárias.
 
-## Entender os workflows {#understand-workflows}
+## Entender workflows {#understand-workflows}
 
 Para processamento de ativos, [!DNL Experience Manager] usa workflows. Os fluxos de trabalho ajudam a automatizar a lógica ou as atividades de negócios. Etapas granulares para realizar tarefas específicas são fornecidas por padrão e os desenvolvedores podem criar suas próprias etapas personalizadas. Essas etapas podem ser combinadas em uma ordem lógica para criar workflows. Por exemplo, um fluxo de trabalho pode aplicar marcas d&#39;água em imagens carregadas com base em um critério específico, como a pasta para a qual é carregado, a resolução da imagem e assim por diante. Outro exemplo é um fluxo de trabalho configurado para marca d&#39;água e, simultaneamente, adicionar metadados, criar representações, adicionar tags inteligentes e publicar em um armazenamento de dados.
 
@@ -105,7 +104,7 @@ Para um modelo de fluxo de trabalho, os usuários podem criar um iniciador de fl
 >[!MORELIKETHIS]
 >
 >* [Aplicar e participar de fluxos de trabalho](/help/sites-authoring/workflows.md)
->* [Criar modelos de fluxo de trabalho e estender a funcionalidade do fluxo de trabalho](/help/sites-developing/workflows.md)
->* [Métodos para executar workflows](/help/sites-administering/workflows-starting.md)
->* [Práticas recomendadas para workflows](/help/sites-developing/workflows-best-practices.md)
+* [Criar modelos de fluxo de trabalho e estender a funcionalidade do fluxo de trabalho](/help/sites-developing/workflows.md)
+* [Métodos para executar workflows](/help/sites-administering/workflows-starting.md)
+* [Práticas recomendadas para workflows](/help/sites-developing/workflows-best-practices.md)
 
