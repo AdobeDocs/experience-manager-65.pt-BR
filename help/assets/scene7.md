@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 900a2ccbf33575644f934e5a75380d8dd3eab5d8
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2849'
 ht-degree: 18%
@@ -277,7 +277,7 @@ Se você tiver várias configurações, o Experience Manager por padrão exibe a
    >   * Vídeo F4V único
 
 
-### Navegar pelo conteúdo na interface otimizada para toque {#browsing-content-in-the-touch-optimized-ui}
+### Navegação de conteúdo na interface otimizada para toque {#browsing-content-in-the-touch-optimized-ui}
 
 Você pode acessar o navegador de conteúdo na interface otimizada para toque ou clássica. Atualmente, a interface otimizada para toque tem a seguinte limitação:
 
@@ -349,4 +349,4 @@ Por padrão, o Experience Manager pesquisa a pasta selecionada e todas as subpas
 
 **[!UICONTROL Publicar status]**  - Você pode filtrar por ativos com base no status da publicação:  **** Não publicado ou  **[!UICONTROL publicado]**. Se você não selecionar nenhum **[!UICONTROL Publicar Status]**, o Experience Manager procura todos os status de publicação por padrão.
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![chlimage_1-248](assets/chlimage_1-247.png)
