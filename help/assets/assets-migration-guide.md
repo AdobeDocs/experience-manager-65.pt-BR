@@ -2,16 +2,15 @@
 title: Migrar ativos em massa
 description: Descreve como trazer ativos para [!DNL Adobe Experience Manager], aplicar metadados, gerar representações e ativá-los para publicar instâncias.
 contentOwner: AG
-role: Architect, Administrator
-feature: Migration,Renditions,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Architect, Admin
+feature: Migração,Representações,Gerenciamento de Ativos
+exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1803'
 ht-degree: 8%
 
 ---
-
 
 # Como migrar ativos em massa {#assets-migration-guide}
 
@@ -48,7 +47,7 @@ A migração de ativos para [!DNL Experience Manager] requer várias etapas e de
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
-### Desative workflows {#disabling-workflows}
+### Desativar workflows {#disabling-workflows}
 
 Antes de iniciar a migração, desative os lançadores para o fluxo de trabalho [!UICONTROL Ativo de atualização do DAM]. É melhor assimilar todos os ativos no sistema e, em seguida, executar os workflows em lotes. Se você já estiver ao vivo enquanto a migração estiver ocorrendo, poderá agendar essas atividades para serem executadas fora do horário.
 
@@ -114,7 +113,7 @@ Depois que os ativos tiverem sido ativados, você poderá clonar sua instância 
 1. Inicie o ambiente.
 1. Atualize a configuração de qualquer agente de replicação no(s) autor(es) para apontar para as instâncias de publicação corretas ou os agentes de liberação do dispatcher na nova instância para apontar para os dispatchers corretos para o novo ambiente.
 
-### Habilitar workflows {#enabling-workflows}
+### Ativar workflows {#enabling-workflows}
 
 Depois de concluir a migração, os iniciadores dos fluxos de trabalho [!UICONTROL Ativo de atualização do DAM] devem ser reativados para suportar a geração de representação e a extração de metadados para o uso diário do sistema.
 
