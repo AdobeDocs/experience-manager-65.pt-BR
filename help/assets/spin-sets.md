@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
 feature: Conjuntos de rotação,Gerenciamento de ativos
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 11%
@@ -86,7 +86,7 @@ No mínimo, você precisa de 8 a 12 capturas de um item para um Conjunto de rota
 
 Você pode fazer upload de imagens para os Conjuntos de rotação da mesma maneira que faria [carregar qualquer outro ativo no AEM Assets](/help/assets/manage-assets.md).
 
-### Diretrizes para capturar imagens para seu Conjunto de rotação {#guidelines-for-shooting-spin-set-images}
+### Diretrizes para capturar imagens para seu conjunto de rotação {#guidelines-for-shooting-spin-set-images}
 
 Veja a seguir algumas práticas recomendadas sobre imagens de conjunto de rotação. Em geral, quanto mais imagens você tiver em um Conjunto de rotação, melhor será o efeito giratório da imagem. No entanto, incluir muitas imagens no conjunto também aumenta a quantidade de tempo que as imagens levam para serem carregadas. AEM recomenda estas diretrizes para fotografar imagens para uso em Conjuntos de rotação:
 
@@ -96,7 +96,7 @@ Veja a seguir algumas práticas recomendadas sobre imagens de conjunto de rotaç
 * Verifique se os detalhes do produto estão bem iluminados e em foco.
 * Use imagens de rotação para roupas de moda com um manequim ou modelo. Frequentemente, o manequim é completamente mascarado (utilizando um manequim de vidro) ou na imagem aparece um manequim/moldura estilizada. Você pode criar um conjunto de rotação no modelo definindo o número de ângulos. Marque cada ângulo com uma fita no chão para guiar o modelo para pisar e olhe na direção de cada tomada.
 
-## Criando Conjuntos de Rotação {#creating-spin-sets}
+## Criação de conjuntos de rotação {#creating-spin-sets}
 
 Esta seção descreve como criar Conjuntos de rotação no AEM.
 
@@ -154,7 +154,7 @@ Esta seção descreve como criar Conjuntos de rotação no AEM.
 
 1. Clique em **[!UICONTROL Salvar]**. O Conjunto de rotação recém-criado é exibido na pasta em que você o criou.
 
-## Exibindo Conjuntos de rotação {#viewing-spin-sets}
+## Visualização de conjuntos de rotação {#viewing-spin-sets}
 
 Você pode criar conjuntos de rotação na interface do usuário ou automaticamente usando [predefinições do conjunto de lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). No entanto, os conjuntos criados usando predefinições de conjunto de lotes, do *not* aparecem na interface do usuário. Você pode acessar conjuntos criados por predefinições de conjuntos em lotes de três maneiras diferentes. (Esses métodos estão disponíveis mesmo se você tiver criado os conjuntos de rotação na interface do usuário).
 
