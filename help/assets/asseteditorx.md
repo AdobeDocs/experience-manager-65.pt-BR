@@ -2,16 +2,15 @@
 title: Estender editor de ativos
 description: Saiba como estender os recursos do Editor de ativos usando componentes personalizados.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Developer Tools
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Ferramentas do desenvolvedor
+exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 13%
+source-wordcount: '690'
+ht-degree: 14%
 
 ---
-
 
 # Estender editor de ativos {#extending-asset-editor}
 
@@ -203,7 +202,7 @@ Este exemplo descreve como criar um componente que mostra e exibe os metadados d
 
 1. No modo **Editar**, o novo componente (por exemplo, **Metadados de amostra**) agora está disponível no sidekick (encontrado no grupo **Editor de ativos**). Insira o componente. Para poder armazenar os metadados, eles devem ser adicionados ao formulário de metadados.
 
-## Modifique as opções de metadados {#modifying-metadata-options}
+## Modificar opções de metadados {#modifying-metadata-options}
 
 Você pode modificar os namespaces disponíveis no [formulário de metadados](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
 
