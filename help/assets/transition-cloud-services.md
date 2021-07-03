@@ -2,16 +2,15 @@
 title: Aplicar serviços de nuvem de tradução a pastas
 description: Aplicar serviços de nuvem de tradução a pastas
 contentOwner: AG
-role: Administrator
-feature: Translation
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Admin
+feature: Tradução
+exl-id: f17a33d7-eb2f-406b-8d6c-a3bf564c8702
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '386'
 ht-degree: 44%
 
 ---
-
 
 # Aplicar serviços de nuvem de tradução a pastas {#applying-translation-cloud-services-to-folders}
 
@@ -39,7 +38,7 @@ A aplicação de serviços da nuvem de tradução diretamente à sua pasta de at
 
 1. Na barra de ferramentas, clique em **[!UICONTROL Save]** e em **[!UICONTROL OK]** para fechar a caixa de diálogo.O serviço de tradução é aplicado à pasta.
 
-## Aplicar conector de tradução personalizado {#applying-custom-translation-connector}
+## Aplicar conector de tradução personalizado  {#applying-custom-translation-connector}
 
 Se quiser aplicar um conector personalizado para os serviços de tradução que deseja usar nos fluxos de trabalho de tradução. Para aplicar um conector personalizado, primeiro instale o conector do Gerenciador de pacotes. Em seguida, configure o conector do console Serviços da nuvem. Após configurar o conector, ele estará disponível na lista de conectores na guia Serviços da nuvem descrita em [Aplicar serviços de tradução](transition-cloud-services.md#applying-the-translation-services). Depois de aplicar o conector personalizado e executar os fluxos de trabalho de tradução, o bloco **[!UICONTROL Resumo da tradução]** do projeto de tradução exibe os detalhes do conector nos cabeçalhos **[!UICONTROL Provedor]** e **[!UICONTROL Método]**.
 
