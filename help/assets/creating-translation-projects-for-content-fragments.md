@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de conteúdo
+role: User, Admin
+exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
-
 
 # Criação de projetos de tradução para fragmentos de conteúdo {#creating-translation-projects-for-content-fragments}
 
@@ -165,4 +164,3 @@ Para traduzir fragmentos de conteúdo que incluem mídia mista, primeiro edite a
    >[!NOTE]
    >
    >Os procedimentos para adicionar um fragmento de conteúdo a um projeto existente ou executar fluxos de trabalho de atualização são semelhantes aos procedimentos correspondentes para ativos. Para obter orientação sobre estes procedimentos, consulte os procedimentos descritos para os ativos.
-
