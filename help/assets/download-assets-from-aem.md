@@ -2,10 +2,10 @@
 title: Baixar ativos
 description: Saiba como baixar ativos do  [!DNL Adobe Experience Manager] e ativar ou desativar a funcionalidade de download.
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: Gerenciamento de ativos,Distribuição de ativos
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 3%
