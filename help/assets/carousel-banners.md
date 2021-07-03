@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 feature: Banners em carrossel
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '4740'
 ht-degree: 4%
@@ -38,7 +38,7 @@ Neste exemplo, um usuário tocou ou clicou em um mapa de imagem e acessou a jane
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
-## Observe como os banners de carrossel são criados {#watch-how-carousel-banners-are-created}
+## Veja como os banners em carrossel são criados {#watch-how-carousel-banners-are-created}
 
 Reproduza uma apresentação em [como os banners de carrossel são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(10 minutos e 33 segundos). Você também aprenderá a visualizar, editar e fornecer banners em carrossel.
 
@@ -95,7 +95,7 @@ Para colocar você em funcionamento rapidamente com os banners de carrossel:
 
 Para editar Conjuntos de carrossel, consulte [editar Conjuntos de carrossel](#editing-carousel-sets). Além disso, você pode visualizar e editar [Propriedades do Conjunto de carrossel](manage-assets.md#editing-properties).
 
-## Identificação das variáveis de hotspot e mapa de imagem {#identifying-hotspot-and-image-map-variables}
+## Identificação das variáveis de mapa de imagem e ponto de acesso {#identifying-hotspot-and-image-map-variables}
 
 Comece identificando as variáveis dinâmicas usadas pela implementação existente do Quickview, para que você possa inserir os pontos de acesso ou os dados do mapa de imagem corretamente durante o processo de criação do conjunto de carrossel nos Ativos Experience Manager.
 
@@ -234,7 +234,7 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
 
 1. Toque em **[!UICONTROL Salvar]** quando terminar.
 
-## Adicionar pontos de acesso ou mapas de imagem a um banner de imagem {#adding-hotspots-or-image-maps-to-an-image-banner}
+## Adição de pontos de acesso ou mapas de imagem a um banner de imagem {#adding-hotspots-or-image-maps-to-an-image-banner}
 
 Você pode adicionar pontos de acesso ou mapas de imagem a um banner usando o editor Conjunto de carrossel.
 
@@ -325,7 +325,7 @@ Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments
 
    Consulte [Adicionar um conjunto de carrossel à página de aterrissagem do site](#adding-a-carousel-banner-to-your-website-page)
 
-## Editar conjuntos de carrossel {#editing-carousel-sets}
+## Edição de conjuntos de carrossel {#editing-carousel-sets}
 
 >[!NOTE]
 Usuários não administrativos devem ser adicionados ao grupo **[!UICONTROL dam-users]** para poderem criar ou editar banners de carrossel. Se tiver problemas ao criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo **[!UICONTROL dam-users]**.
@@ -401,7 +401,7 @@ Além disso, se você modificar uma imagem interativa publicada pré-existente q
 
 Consulte [Publicação de ativos Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obter informações sobre como publicar banners de carrossel.
 
-## Adicionar um banner de carrossel à página do site {#adding-a-carousel-banner-to-your-website-page}
+## Adicionar um banner de carrossel à página do seu site {#adding-a-carousel-banner-to-your-website-page}
 
 Depois de fazer upload das imagens do banner para criar um carrossel, adicionar pontos de acesso e/ou mapas de imagem ao banner e publicar o conjunto de carrossel, você estará pronto para adicioná-lo à página do site existente.
 
