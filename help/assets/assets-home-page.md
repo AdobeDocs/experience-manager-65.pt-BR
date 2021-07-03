@@ -2,18 +2,17 @@
 title: '[!DNL Assets] Experiência da página inicial'
 description: Personalize a [!DNL Experience Manager Assets] Página inicial para obter uma experiência avançada de tela de boas-vindas, incluindo um instantâneo das atividades recentes em torno dos ativos.
 contentOwner: AG
-feature: Developer Tools, Asset Management
-role: Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Ferramentas de desenvolvedor, Gerenciamento de ativos
+role: Admin, User
+exl-id: 042bd959-256a-4794-a34d-0848a6b8840d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '564'
 ht-degree: 1%
 
 ---
 
-
-# [!DNL Adobe Experience Manager Assets] Experiência da página inicial  {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Experiência da página inicial {#aem-assets-home-page-experience}
 
 Personalize a página inicial [!DNL Adobe Experience Manager Assets] para obter uma experiência de tela de boas-vindas rica, incluindo um instantâneo das atividades recentes em torno dos ativos.
 
