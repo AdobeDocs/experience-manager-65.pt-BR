@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 08269877be5e98405474e4b1793526763cab174f
+source-git-commit: 071bc0e36ed2d8eb4ce7bd0ba46823adc0e43095
 workflow-type: tm+mt
 source-wordcount: '5252'
 ht-degree: 0%
@@ -50,34 +50,17 @@ Para os relatórios padrão entregues com AEM:
 >Nos exemplos e definições abaixo, a seguinte notação é usada :
 >
 >* Cada linha define um nó ou uma propriedade em que:
-   >
-   >  
-* `N:<name> [<nodeType>]`
-   >
-   >     
-   Descreve um nó com o nome `<*name*>` e o tipo de nó `<*nodeType*>`*.*
-   >
-   >  
-* `P:<name> [<propertyType]`
-   >
-   >     
-   Descreve uma propriedade com o nome `<*name*>` e um tipo de propriedade `<*propertyType*>`.
-   >
-   >  
-* `P:<name> = <value>`
-   >
-   >     
-   Descreve uma propriedade `<name>` que deve ser definida com o valor `<value>`.
+   >  `N:<name> [<nodeType>]` : Descreve um nó com o nome  `<*name*>` e o tipo de nó  `<*nodeType*>`*.*
+   >  `P:<name> [<propertyType]` : Descreve uma propriedade com o nome de  `<*name*>` e um tipo de propriedade de  `<*propertyType*>`.
+   >  `P:<name> = <value>` : Descreve uma propriedade  `<name>` que deve ser definida com o valor de  `<value>`.
    >
    >
 * A Recuo mostra as dependências hierárquicas entre os nós.
->* Itens separados por | indica uma lista de elementos possíveis; por exemplo, tipos ou nomes:
+>* Itens separados por | indica uma lista de elementos possíveis; por exemplo, tipos ou nomes; por exemplo `String|String[]` significa que a propriedade pode ser String ou String[].
 
->
->  
-por exemplo `String|String[]` significa que a propriedade pode ser String ou String[].
->
->* `[]` representa um array; como [] String ou uma matriz de nós como na Definição de  [Consulta](#query-definition).
+   >
+   >
+* `[]` representa um array; como [] String ou uma matriz de nós como na Definição de  [Consulta](#query-definition).
 >
 >
 Salvo indicação em contrário, os tipos padrão são:
@@ -99,7 +82,7 @@ O quadro de relatórios baseia - se nos seguintes princípios:
 
 A estrutura de relatórios (ilustrada pela estrutura de um relatório padrão) usa os seguintes blocos fundamentais, alimentados pela fila de processamento:
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![chlimage_1-247](assets/chlimage_1-248.png)
 
 ### Página Relatório {#report-page}
 
