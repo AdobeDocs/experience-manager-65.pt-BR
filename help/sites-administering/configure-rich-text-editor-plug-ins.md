@@ -3,9 +3,9 @@ title: Configurar os plug-ins do Editor de Rich Text
 description: Saiba como configurar os plug-ins do Editor de Rich Text do Adobe Experience Manager para ativar funcionalidades individuais.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 7f8263a9304ff51e08878c13115c8aeeafce3de3
+source-git-commit: 11cda989e6a28428f03a269c407a7672e6eab747
 workflow-type: tm+mt
-source-wordcount: '4405'
+source-wordcount: '4406'
 ht-degree: 3%
 
 ---
@@ -245,19 +245,11 @@ Em seguida, especifique a(s) localização(ões) da(s) folha(s) de estilos que d
 >
 >O Editor de Rich Text usa um elemento DOM de contêiner com uma ID `CQrte` que pode ser usada para fornecer estilos diferentes para visualização e edição:
 >
+>`#CQ td {`
+>` // defines the style for viewing }`
 >
-```
->#CQ td {
-> // defines the style for viewing
-> }
->```
->
->
-```
->#CQrte td {
-> // defines the style for editing
-> }
->```
+>`#CQrte td {`
+>` // defines the style for editing }`
 
 ### Especificar os Estilos disponíveis na lista pop-up {#stylesindropdown}
 
@@ -496,7 +488,7 @@ Copiar e colar tabelas no componente RTE ou dele depende do navegador. Não é c
 
    * **Nome** `features`
    * **Tipo** `String`
-   * **Valor** `*`
+   * **Valor** `*`  (asterisco)
 
    >[!NOTE]
    Se não quiser ativar todos os recursos da tabela, você pode criar a propriedade `features` como:
@@ -613,7 +605,7 @@ Para definir o tamanho da guia:
 
    * **Nome** `tabSize`
    * **Tipo** `String`
-   * **** Avalie o número de caracteres de espaço a serem usados no tabulador.
+   * **** Avalie o número de caracteres de espaço a serem usados para o tabulador
 
 1. Salve as alterações.
 
