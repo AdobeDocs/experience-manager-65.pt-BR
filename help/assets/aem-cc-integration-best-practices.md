@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Colaboração, Adobe Asset Link, Aplicativo de desktop
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '3254'
+source-wordcount: '3250'
 ht-degree: 16%
 
 ---
@@ -60,7 +60,7 @@ Este artigo foca principalmente nos dois primeiros aspectos das necessidades de 
 | Editar - abrir para edição | Sim - Ação de check-out | Sim - Abrir ação (no compartilhamento de rede) | [O check-out no ](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) AAL salva o ativo na conta de armazenamento da creative cloud do usuário (sincronizada pelo aplicativo do Creative Cloud) por padrão. |
 | Editar - trabalho em andamento fora do DAM | Sim - Ativo disponível na conta de armazenamento de Creative Cloud do usuário sincronizada com o desktop. | Sim |  |
 | Editar - fazer upload de alterações | Sim - [Ação de check-in](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) com comentário opcional | Sim |  |
-| Upload - arquivo único | Sim - carrega o documento ativo atual | Sim | [Fazer upload via interface da Web](manage-assets.md#uploading-assets) |
+| Upload - arquivo único | Sim - carrega o documento ativo atual | Sim | [Fazer upload por meio da interface da Web](manage-assets.md#uploading-assets) |
 | Upload - vários arquivos / estruturas hierárquicas de pastas | Não | Sim | [Faça upload via interface da Web ](manage-assets.md#uploading-assets) ou por meio de script ou ferramenta personalizada. |
 | Misc - usuário e logon | O usuário Creative Cloud conectado ao aplicativo de desktop Creative Cloud é reconhecido (SSO) | [!DNL Experience Manager] usuário e credenciais | Os usuários de ambas as soluções contam para a cota de usuário [!DNL Experience Manager]. |
 | Misc - rede e acesso | Requer acesso do desktop do usuário para [!DNL Experience Manager] implantação pela rede | Requer acesso do desktop do usuário para [!DNL Experience Manager] implantação pela rede | [!DNL Adobe Asset Link] não compartilha o ambiente proxy de rede. |
@@ -89,7 +89,7 @@ Para suportar casos de uso de distribuição de ativos, outras soluções devem 
 
 ### Considerações ao usar a integração [!DNL Experience Manager] e [!DNL Creative Cloud] {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* Consulte [práticas recomendadas do aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
+* Consulte [práticas recomendadas do aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * Consulte [Integração do Adobe Stock](aem-assets-adobe-stock.md)
 * Consulte o [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
@@ -209,7 +209,7 @@ A descrição se refere ao upload de arquivos operacionalmente (por exemplo, tod
 
 Você pode aproveitar os seguintes recursos de upload:
 
-* Para fazer upload de pastas grandes/hierárquicas em massa, use o [!DNL Experience Manager] aplicativo de desktop que fornece a funcionalidade [upload de pasta](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#upload-and-add-new-assets-to-aem). Também é possível fazer upload de estruturas hierárquicas de pastas. [!DNL Assets] são carregadas em segundo plano e, portanto, não estão vinculadas a uma sessão do navegador da Web
+* Para fazer upload de pastas grandes/hierárquicas em massa, use o [!DNL Experience Manager] aplicativo de desktop que fornece a funcionalidade [upload de pasta](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem). Também é possível fazer upload de estruturas hierárquicas de pastas. [!DNL Assets] são carregadas em segundo plano e, portanto, não estão vinculadas a uma sessão do navegador da Web
 * Para carregar alguns arquivos de uma única pasta, arraste os arquivos diretamente para a interface da Web ou use a opção Criar na interface da Web [!DNL Assets].
 * Dependendo dos requisitos de sua empresa, você também pode usar o carregador personalizado.
 
