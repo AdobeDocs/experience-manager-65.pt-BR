@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User
 feature: Gerenciamento de ativos,Pesquisar
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '9788'
+source-wordcount: '9784'
 ht-degree: 4%
 
 ---
@@ -168,7 +168,7 @@ O Dynamic Media permite o upload em lote de ativos por meio do servidor FTP. Se 
 
 1. Usando sua escolha de cliente FTP, faça logon no servidor FTP usando o nome de usuário FTP e a senha recebidos do email de provisionamento. No cliente FTP, faça upload de arquivos ou pastas para o servidor FTP.
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) e faça logon em sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) e faça logon em sua conta.
 
    Suas credenciais e logon foram fornecidas pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte Técnico.
 
@@ -869,7 +869,7 @@ Você pode criar versões em [!DNL Experience Manager] nos seguintes cenários:
 * Faça upload de um ativo com o mesmo nome de arquivo que existe no mesmo local. Pode ser um novo ativo ou uma versão modificada do mesmo ativo.
 * Edite uma imagem em [!DNL Experience Manager] e salve as alterações.
 * Edite os metadados de um ativo.
-* Use o [!DNL Experience Manager] aplicativo de desktop para fazer check-out de um ativo existente, editá-lo e [fazer upload de suas alterações](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#edit-assets-upload-updated-assets).
+* Use o [!DNL Experience Manager] aplicativo de desktop para fazer check-out de um ativo existente, editá-lo e [fazer upload de suas alterações](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 Você também pode ativar o controle de versão automático por meio de um fluxo de trabalho. Ao criar uma versão para um ativo, os metadados e as representações são salvos junto com a versão. As representações são alternativas renderizadas das mesmas imagens, por exemplo, uma representação PNG de um arquivo JPEG carregado.
 
