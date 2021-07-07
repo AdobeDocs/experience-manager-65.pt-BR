@@ -3,12 +3,13 @@ title: Configurar os plug-ins do Editor de Rich Text
 description: Saiba como configurar os plug-ins do Editor de Rich Text do Adobe Experience Manager para ativar funcionalidades individuais.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 7f8263a9304ff51e08878c13115c8aeeafce3de3
 workflow-type: tm+mt
-source-wordcount: '4395'
+source-wordcount: '4405'
 ht-degree: 3%
 
 ---
+
 
 # Configurar os plug-ins do Editor de Rich Text {#configure-the-rich-text-editor-plug-ins}
 
@@ -72,7 +73,7 @@ Ao usar a funcionalidade de substituição, a string de substituição a ser sub
 
 A caixa de diálogo localizar e substituir se torna transparente quando a localização é clicada e se torna opaca ao clicar em substituir. Isso permite que o autor revise o texto que será substituído. Se os usuários clicarem em substituir tudo, a caixa de diálogo será fechada e exibirá o número de substituições feitas.
 
-## Configure os modos de colagem {#paste-modes}
+## Configurar os modos de colagem {#paste-modes}
 
 Ao usar o RTE, os autores podem colar o conteúdo em um dos três modos a seguir:
 
@@ -82,7 +83,7 @@ Ao usar o RTE, os autores podem colar o conteúdo em um dos três modos a seguir
 
 * **Modo** MS Word: Cole o texto, incluindo tabelas, com formatação ao copiar do MS Word. Não há suporte para copiar e colar texto de outra fonte, como uma página da Web ou MS Excel, e manter apenas a formatação parcial.
 
-### Configure as opções de Colar disponíveis na barra de ferramentas do RTE {#configure-paste-options-available-on-the-rte-toolbar}
+### Configurar as opções de Colar disponíveis na barra de ferramentas do RTE  {#configure-paste-options-available-on-the-rte-toolbar}
 
 É possível fornecer alguns, todos ou nenhum desses três ícones aos autores na barra de ferramentas do RTE:
 
@@ -98,7 +99,7 @@ Para configurar o RTE para exibir os ícones necessários, siga essas etapas.
 1. Navegue até o nó `rtePlugins/edit`. Consulte [ativar um plug-in](#activateplugin) se o nó não existir.
 1. Crie a propriedade `features` no nó `edit` e adicione um ou mais recursos. Salve todas as alterações.
 
-### Configure o comportamento do ícone Colar (Ctrl+V) e do atalho {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
+### Configure o comportamento do ícone e do atalho Colar (Ctrl+V) {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
 Você pode pré-configurar o comportamento do ícone **[!UICONTROL Colar (Ctrl+V)]**, usando as etapas a seguir. Essa configuração também define o comportamento do atalho de teclado Ctrl+V que os Autores usam para colar o conteúdo.
 
@@ -155,53 +156,18 @@ Para configurar quais formatos são permitidos ao colar texto em AEM de outro pr
    >
    >Se não estiver definido explicitamente, o valor padrão de true será usado e o formato será aceito.
 
-1. Outros formatos também podem ser definidos usando uma variedade de outras propriedades ou nós, também aplicados ao nó `htmlPasteRules`:
+1. Outros formatos também podem ser definidos usando uma variedade de outras propriedades ou nós, também aplicados ao nó `htmlPasteRules`. Salve todas as alterações.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propriedade</strong></td>
-   <td><strong>Tipo</strong></td>
-   <td><strong>Descrição</strong></td>
-  </tr>
-  <tr>
-   <td>allowBlockTags</td>
-   <td>Sequência de caracteres[]</td>
-   <td><p>Define a lista de tags de bloco permitidas.</p> <p>Algumas tags de bloco possíveis incluem:</p>
-    <ul>
-     <li>manchetes (h1, h2, h3)</li>
-     <li>alínea p)</li>
-     <li>listas (ol, ul)</li>
-     <li>tabelas (tabela)</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>fallbackBlockTag</td>
-   <td>Sequência de caracteres</td>
-   <td><p>Define a tag de bloco usada para qualquer bloco com uma tag de bloco não incluída em allowBlockTags.</p> <p> p é suficiente na maioria dos casos.</p> </td>
-  </tr>
-  <tr>
-   <td>tabela</td>
-   <td>nt:unstructured</td>
-   <td><p>Define o comportamento ao colar tabelas.<br /> </p> <p>Este nó deve ter a propriedade <code>allow</code> (digite <code>Boolean</code>) para definir se a colagem de tabelas é permitida.</p> <p>Se <code>allow</code> estiver definido como <code>false</code>, você deverá especificar a propriedade <code>ignoreMode</code> (tipo<code> String</code>) para definir como o conteúdo da tabela colada é tratado. Valores válidos para <code>ignoreMode</code> são:</p>
-    <ul>
-     <li><code>remove</code>: Remove o conteúdo da tabela.</li>
-     <li><code>paragraph</code>: Transforma células da tabela em parágrafos.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>list</td>
-   <td>nt:unstructured</td>
-   <td><p>Define o comportamento ao colar listas.<br /> </p> <p>Deve ter a propriedade <code>allow</code> (digite <code>Boolean</code>) para definir se a colagem de listas é permitida.</p> <p>Se <code>allow</code> estiver definido como <code>false</code>, você deverá especificar a propriedade <code>ignoreMode</code> (digite <code>String</code>) para definir como lidar com qualquer conteúdo da lista colado. Valores válidos para <code>ignoreMode</code> são:</p>
-    <ul>
-     <li><code>remove</code>: Remove o conteúdo da lista.</li>
-     <li><code>paragraph</code>: Transforma itens de lista em parágrafos.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+Você pode usar as seguintes propriedades para `htmlPasteRules`.
 
-Exemplo de uma estrutura `htmlPasteRules` válida:
+| Propriedade | Tipo | Descrição |
+|---|---|---|
+| `allowBlockTags` | Sequência de caracteres | Define a lista de tags de bloco permitidas. Algumas tags de bloco possíveis incluem: <ul> <li>manchetes (h1, h2, h3)</li> <li>alínea p)</li> <li>listas (ol, ul)</li> <li>tabelas (tabela)</li> </ul> |
+| `fallbackBlockTag` | Sequência de caracteres | Define a tag de bloco usada para qualquer bloco com uma tag de bloco não incluída em `allowBlockTags`. `p` na maioria dos casos, é suficiente. |
+| tabela | nt:unstructured | Define o comportamento ao colar tabelas. Esse nó deve ter a propriedade `allow` (tipo Booleano) para definir se a colagem de tabelas é permitida. Se allow estiver definido como `false`, você deve especificar a propriedade `ignoreMode` (tipo String) para definir como o conteúdo da tabela colada é tratado. Valores válidos para `ignoreMode` são: <ul> <li>`remove`: Remove o conteúdo da tabela.</li> <li>`paragraph`: Transforma células da tabela em parágrafos.</li> </ul> |
+| list | nt:unstructured | Define o comportamento ao colar listas. Deve ter a propriedade `allow` (tipo Booleano) para definir se a colagem de listas é permitida. Se `allow` estiver definido como `false`, você deverá especificar a propriedade `ignoreMode` (tipo String) para definir como lidar com qualquer conteúdo da lista colado. Valores válidos para `ignoreMode` são: <ul><li> `remove`: Remove o conteúdo da lista.</li> <li>`paragraph`: Transforma itens de lista em parágrafos.</li> </ul> |
+
+Um exemplo de uma estrutura `htmlPasteRules` válida está abaixo.
 
 ```xml
 "htmlPasteRules": {
@@ -223,13 +189,9 @@ Exemplo de uma estrutura `htmlPasteRules` válida:
 }
 ```
 
-1. Salve todas as alterações.
-
 ## Configurar estilos de texto {#textstyles}
 
-Os autores podem aplicar Estilos para alterar a aparência de uma parte do texto. Os estilos são baseados em classes CSS predefinidas na folha de estilos CSS. O conteúdo estilizado é inserido nas tags `span` usando o atributo `class` para fazer referência à classe CSS. Por exemplo:
-
-`<span class=monospaced>Monospaced Text Here</span>`
+Os autores podem aplicar Estilos para alterar a aparência de uma parte do texto. Os estilos são baseados em classes CSS predefinidas na folha de estilos CSS. O conteúdo estilizado é inserido nas tags `span` usando o atributo `class` para fazer referência à classe CSS. Por exemplo, `<span class=monospaced>Monospaced Text Here</span>`.
 
 Quando o plug-in Estilos é ativado pela primeira vez, nenhum Estilo padrão está disponível. A lista pop-up está vazia. Para fornecer estilos aos autores, faça o seguinte:
 
@@ -237,11 +199,11 @@ Quando o plug-in Estilos é ativado pela primeira vez, nenhum Estilo padrão est
 * Especifique a(s) localização(ões) da(s) folha(s) de estilos.
 * Especifique os estilos individuais que podem ser selecionados na lista suspensa Estilo .
 
-Para configurações (re)posteriores, digamos para adicionar mais estilos, siga apenas as instruções para fazer referência a uma nova folha de estilos e especificar os estilos adicionais.
+Para configurações posteriores, digamos para adicionar mais estilos, siga apenas as instruções para fazer referência a uma nova folha de estilos e especificar os estilos adicionais.
 
 >[!NOTE]
 >
->Os estilos também podem ser definidos para [tabelas ou células de tabela](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Essas configurações exigem procedimentos separados.
+>Você pode definir Estilos para [tabelas ou células de tabela](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Essas configurações exigem procedimentos separados.
 
 ### Ativar a lista suspensa Seletor de estilo {#styleselectorlist}
 
@@ -708,10 +670,7 @@ Para configurar como os links são adicionados no AEM a partir de outro programa
    * **Tipo** `String`
    * **Valor** `richtext`
 
-   O local do nó `../items/text` pode variar, dependendo da estrutura da caixa de diálogo; dois exemplos incluem:
-   * `/apps/myProject>/components/text/dialog/items/text`
-   * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
-
+   O local do nó `../items/text` pode variar, dependendo da estrutura da caixa de diálogo; dois exemplos são `/apps/myProject>/components/text/dialog/items/text` e `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. Em `htmlRules`, crie um novo nó.
 
