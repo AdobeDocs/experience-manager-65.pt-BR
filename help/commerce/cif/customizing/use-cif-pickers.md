@@ -8,9 +8,9 @@ activity: develop
 audience: developer
 feature: Estrutura de integração de comércio
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
-source-git-commit: 61b8d0bf960bd03a19d22061f3c897a56259dd24
+source-git-commit: 2fadfa65242b208a750b0d5392fdd2c41e9ff20e
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ O seguinte trecho pode ser usado em uma configuração cq:dialog:
 
 O campo do seletor de categoria oferece suporte às seguintes propriedades opcionais:
 
-- selectionId(id, uid, lesma, idAndUrlPath, uidAndUrlPath) - permite escolher o atributo de categoria a ser retornado pelo seletor (padrão = id). idAndUrlPath &amp; uidAndUrlPath são opções especiais que armazenam id/uid de categoria e url_path separadas por um | caractere como, por exemplo, 1|masculino/tops.
+- selectionId(id, uid, lesma, urlPath, idAndUrlPath _(obsoleto)_, uidAndUrlPath _(obsoleto)_) - permite escolher o atributo de categoria a ser retornado pelo seletor (padrão = id).
 - várias (true, false) - habilita a seleção de uma ou várias categorias (padrão = false)
 
 Além disso, também há suporte para propriedades de campo de diagnóstico padrão como `name`, `fieldLabel` ou `fieldDescription`.
@@ -79,6 +79,6 @@ Além disso, também há suporte para propriedades de campo de diagnóstico padr
 >Igual ao componente `cifproductfield`, o componente `cifcategoryfield` também requer a clientlib `cif.shell.picker`. Para adicionar uma clientlib a uma caixa de diálogo, você pode usar a propriedade `extraClientlibs` . Consulte [Personalizando caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) da documentação dos Componentes principais AEM.
 >[!CAUTION]
 >
->A partir da versão 2.0.0 dos Componentes principais da CIF, o suporte para `id` foi removido e substituído por `uid`. É altamente recomendável usar `uid` ou `slug` como identificador de categoria. Continuamos a oferecer suporte somente para `id` e `idAndUrlPath` projetos que usam os Componentes principais da CIF versão 1.x.
+>A partir da versão 2.0.0 dos Componentes principais da CIF, o suporte para `id` foi removido e substituído por `uid`. É altamente recomendável usar `uid` ou `urlPath` como identificador de categoria. Continuamos a oferecer suporte somente para `id` e `idAndUrlPath` projetos que usam os Componentes principais da CIF versão 1.x.
 
 Um exemplo completo de trabalho do `cifcategoryfield` pode ser encontrado no projeto [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml).
