@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce
 user-guide-title: Conteúdo e comércio AEM
 breadcrumb-title: Guia do Commerce
 user-guide-description: Entenda como usar e administrar o AEM Content and Commerce.
-source-git-commit: 538dc7620317f86c0b3d762eaef597d0a7969ace
+source-git-commit: a5bf6a1a6e9013e44209ea865145af1557445318
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 52%
+source-wordcount: '111'
+ht-degree: 51%
 
 ---
 
@@ -26,6 +26,7 @@ ht-degree: 52%
       + [Uso de vários modelos](cif/configuring/multi-template-usage.md)
       + [Configurar URLs para SEO](cif/configuring/advanced-url-configuration.md)
       + [Opções de armazenamento em cache](cif/configuring/caching.md)
+      + [Cabeçalhos HTTP personalizados](/help/commerce/cif/configuring/custom-http-headers.md)
    + Desenvolvimento {#developing}
       + [Desenvolvimento com AEM](cif/develop.md)
       + [Alterar estilo de componentes da CIF](cif/customizing/style-cif-component.md)
