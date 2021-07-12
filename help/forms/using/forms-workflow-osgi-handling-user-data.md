@@ -6,17 +6,16 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
 
-
-# Fluxos de trabalho centrados na Forms no OSGi | Tratamento de dados do usuário {#forms-centric-workflows-on-osgi-handling-user-data}
+# Fluxos de trabalho centrados na Forms no OSGi | Tratamento de dados de utilizadores {#forms-centric-workflows-on-osgi-handling-user-data}
 
 Os fluxos de trabalho de AEM centrados no Forms permitem automatizar processos de negócios centrados no Forms. Os workflows consistem em uma série de etapas executadas em uma ordem especificada no modelo de workflow associado. Cada etapa executa uma ação específica, como atribuir uma tarefa a um usuário ou enviar uma mensagem de email. Os workflows podem interagir com ativos no repositório, contas de usuário e serviços. Portanto, os workflows podem coordenar atividades complicadas que envolvem qualquer aspecto do Experience Manager.
 
@@ -30,7 +29,7 @@ Um fluxo de trabalho centrado em formulários pode ser acionado ou iniciado por 
 
 Para obter mais informações sobre fluxos de trabalho e recursos de AEM centrados no Forms, consulte [Fluxo de trabalho centrado no Forms em OSGi](/help/forms/using/aem-forms-workflow.md).
 
-## Os dados e armazenamentos de dados do usuário {#user-data-and-data-stores}
+## Armazenamento de dados e dados do usuário {#user-data-and-data-stores}
 
 Quando um workflow é acionado, uma carga é gerada automaticamente para a instância do workflow. Cada instância do fluxo de trabalho recebe uma ID de instância exclusiva e uma ID de carga associada. A carga contém os locais do repositório para dados de usuário e formulário associados a uma instância de fluxo de trabalho. Além disso, rascunhos e dados históricos de uma instância de workflow também são armazenados no repositório AEM.
 
@@ -161,4 +160,3 @@ Também é possível usar APIs para acessar e remover nós e propriedades. Consu
 * [Como acessar programaticamente o JCR AEM](/help/sites-developing/access-jcr.md)
 * [Remover nós e propriedades](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [Referência da API](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
-
