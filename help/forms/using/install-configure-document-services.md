@@ -6,15 +6,14 @@ seo-description: Instale os serviços de documento da AEM Forms para criar, mont
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '4296'
+source-wordcount: '4295'
 ht-degree: 2%
 
 ---
-
 
 # Instalar e configurar serviços de documento {#installing-and-configuring-document-services}
 
@@ -297,7 +296,7 @@ Execute as seguintes etapas para configurar o provedor de soquete SSL da IBM:
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
-### (Somente para Windows) Configurar o Serviço de Instalação de Tinta e Manuscrito {#configure-install-ink-and-handwriting-service}
+### (Somente para Windows) Configurar o serviço Instalar Tinta e Manuscrito {#configure-install-ink-and-handwriting-service}
 
 Se você estiver executando o Microsoft Windows Server, configure o serviço de Tinta e Manuscrito. O serviço é necessário para abrir arquivos do Microsoft PowerPoint que usam recursos de vinculação do Microsoft Office:
 
@@ -305,7 +304,7 @@ Se você estiver executando o Microsoft Windows Server, configure o serviço de 
 1. Clique em **[!UICONTROL Adicionar recursos]** no menu **[!UICONTROL Recursos]**. Marque a caixa de seleção **[!UICONTROL Serviços de escrita manual e tinta]**.
 1. **[!UICONTROL Selecione a caixa]** de diálogo Recursos com os Serviços de  **[!UICONTROL Tinta e]** Escrita Manual selecionados. Clique em **[!UICONTROL Instalar]** e o serviço será instalado.
 
-### (Somente Windows) Defina as configurações de bloco de arquivos para o Microsoft Office {#configure-the-file-block-settings-for-microsoft-office}
+### (Somente Windows) Definir as configurações de bloco de arquivos para o Microsoft Office {#configure-the-file-block-settings-for-microsoft-office}
 
 Altere as configurações do centro de confiança do Microsoft Office para habilitar o serviço Gerador de PDF para converter arquivos criados com versões mais antigas do Microsoft Office.
 
@@ -315,7 +314,7 @@ Altere as configurações do centro de confiança do Microsoft Office para habil
 1. Nas **[!UICONTROL Definições da Central de Confiança]**, clique em **[!UICONTROL Definições de Bloqueio de Ficheiros]**.
 1. Na lista **[!UICONTROL Tipo de Arquivo]**, desmarque **[!UICONTROL Abrir]** para o tipo de arquivo que o serviço Gerador de PDF deve ter permissão para converter em documentos PDF.
 
-### (Somente Windows) Conceda o privilégio Substituir um token de nível de processo {#grant-the-replace-a-process-level-token-privilege}
+### (Somente Windows) Conceder o privilégio Substituir um token de nível de processo {#grant-the-replace-a-process-level-token-privilege}
 
 A conta de usuário usada para iniciar o servidor de aplicativos requer o privilégio **Substituir um token de nível de processo**. A conta de sistema local tem o privilégio **Substituir um token de nível de processo** por padrão. Para os servidores em execução com um usuário do grupo Administradores locais, o privilégio deve ser concedido explicitamente. Execute as seguintes etapas para conceder o privilégio:
 
@@ -323,7 +322,7 @@ A conta de usuário usada para iniciar o servidor de aplicativos requer o privil
 1. Navegue até **[!UICONTROL Política de Computador Local]** > **[!UICONTROL Configuração do Computador]** > **[!UICONTROL Definições do Windows]** > **[!UICONTROL Definições de Segurança]** > **[!UICONTROL Políticas Locais]** > **[!UICONTROL Atribuição de Direitos de Utilizador]** e edite o **[!UICONTROL Substitua uma política de token de nível de processo]** e inclua o grupo Administradores.
 1. Adicione o usuário à entrada Substituir um token de nível de processo .
 
-### (Somente Windows) Ative o serviço Gerador de PDF para não administradores {#enable-the-pdf-generator-service-for-non-administrators}
+### (Somente Windows) Ativar o serviço Gerador de PDF para não administradores {#enable-the-pdf-generator-service-for-non-administrators}
 
 Você pode ativar um usuário não administrador para usar o serviço Gerador de PDF. Normalmente, somente os usuários com privilégios administrativos podem usar o serviço:
 
@@ -345,13 +344,13 @@ Você pode ativar um usuário não administrador para usar o serviço Gerador de
 
 1. Reinicie o computador.
 
-### (Somente Windows) Desative o serviço de Relatório de Erros {#disable-error-reporting-service}
+### (Somente Windows) Desativar o serviço de Relatório de Erros {#disable-error-reporting-service}
 
 Ao converter um documento em PDF usando o serviço Gerador de PDF no Windows Server, ocasionalmente, o Windows Server relata que o executável encontrou um problema e precisa fechar. No entanto, isso não afeta a conversão do PDF, pois continua em segundo plano.
 
 Para evitar receber o erro, você pode desativar o relatório de erros do Windows. Para obter mais informações sobre como desativar o relatório de erros, consulte [https://technet.microsoft.com/en-us/library/cc754364.aspx](https://technet.microsoft.com/en-us/library/cc754364.aspx).
 
-### (Somente Windows) Configurar HTML para conversão de PDF {#configure-html-to-pdf-conversion}
+### (Somente Windows) Configurar conversão de HTML em PDF {#configure-html-to-pdf-conversion}
 
 O serviço Gerador de PDF fornece rotas ou métodos WebKit, WebCapture e PhantomJS para converter arquivos HTML em documentos PDF. No Windows, para ativar a conversão para rotas WebKit e Acrobat WebCapture, copie a fonte Unicode para o diretório %windir%\fonts.
 
@@ -359,7 +358,7 @@ O serviço Gerador de PDF fornece rotas ou métodos WebKit, WebCapture e Phantom
 >
 >Sempre que instalar novas fontes na pasta de fontes, reinicie a instância do AEM Forms.
 
-### (Somente plataformas baseadas em UNIX) Configurações adicionais para conversão de HTML em PDF {#extra-configurations-for-html-to-pdf-conversion}
+### (Somente plataformas baseadas em UNIX) Configurações adicionais para conversão de HTML em PDF  {#extra-configurations-for-html-to-pdf-conversion}
 
 Em plataformas baseadas em UNIX, o serviço Gerador de PDF oferece suporte às rotas WebKit e PhantomJS para converter arquivos HTML em documentos PDF. Para permitir a conversão de HTML em PDF, execute as seguintes configurações, aplicáveis à rota de conversão preferencial:
 
@@ -388,7 +387,7 @@ Copie a fonte Unicode em qualquer um dos seguintes diretórios, conforme apropri
 
 
 
-## Instale o pacote complementar do AEM Forms {#install-aem-forms-add-on-package}
+## Instalar o pacote complementar do AEM Forms {#install-aem-forms-add-on-package}
 
 O pacote do complemento AEM Forms é um aplicativo implantado em AEM. O pacote contém os Serviços de documento da AEM Forms e outros recursos da AEM Forms. Execute as seguintes etapas para instalar o pacote:
 
@@ -407,7 +406,7 @@ O pacote do complemento AEM Forms é um aplicativo implantado em AEM. O pacote c
 
 ## Configurações pós-instalação {#post-installation-configurations}
 
-### Configurar delegação de inicialização para bibliotecas RSA/BouncyCastle {#configure-boot-delegation-for-rsa-bouncycastle-libraries}
+### Configurar delegação de inicialização para bibliotecas RSA/BouncyCastle  {#configure-boot-delegation-for-rsa-bouncycastle-libraries}
 
 1. Pare a instância de AEM. Navegue até [AEM diretório de instalação]\crx-quickstart\conf\ folder. Abra o arquivo sling.properties para edição.
 
@@ -427,7 +426,7 @@ O pacote do complemento AEM Forms é um aplicativo implantado em AEM. O pacote c
 
 1. Salve e feche o arquivo.
 
-### Configurar o serviço do gerenciador de fontes {#configuring-the-font-manager-service}
+### Configuração do serviço gerenciador de fontes  {#configuring-the-font-manager-service}
 
 1. Faça logon em [AEM Configuration Manager](http://localhost:4502/system/console/configMgr) como administrador.
 1. Localize e abra o serviço **[!UICONTROL CQ-DAM-Handler-Gibson Font Managers]**. Especifique o caminho dos diretórios Fontes do sistema, Fontes do servidor do Adobe e Fontes do cliente. Clique em **[!UICONTROL Salvar]**.
@@ -437,7 +436,7 @@ O pacote do complemento AEM Forms é um aplicativo implantado em AEM. O pacote c
    >O seu direito de usar fontes fornecidas por outras partes que não o Adobe é regido pelos contratos de licença fornecidos por essas partes com essas fontes, e não é coberto pela licença de uso de software Adobe. O Adobe recomenda que você verifique e garanta que está em conformidade com todos os contratos de licença não-Adobe aplicáveis antes de usar fontes não-Adobe com o software Adobe, especialmente no que diz respeito ao uso de fontes em um ambiente de servidor.
    > Ao instalar novas fontes na pasta de fontes, reinicie a instância do AEM Forms.
 
-### Configure uma conta de usuário local para executar o serviço Gerador de PDF {#configure-a-local-user-account-to-run-the-pdf-generator-service}
+### Configurar uma conta de usuário local para executar o serviço Gerador de PDF  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
 Uma conta de usuário local é necessária para executar o serviço Gerador de PDF. Para obter etapas para criar um usuário local, consulte [Criar uma conta de usuário no Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) ou [criar uma conta de usuário em plataformas baseadas em UNIX](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html).
 
@@ -445,7 +444,7 @@ Uma conta de usuário local é necessária para executar o serviço Gerador de P
 
 1. Na guia **[!UICONTROL Contas de usuário]** , forneça as credenciais de uma conta de usuário local e clique em **[!UICONTROL Enviar]**. Se o Microsoft Windows solicitar, permita acesso ao usuário. Quando adicionado com êxito, o usuário configurado é exibido na seção **[!UICONTROL Suas contas de usuário]** na guia **[!UICONTROL Contas de usuário]**.
 
-### Defina as configurações de tempo limite {#configure-the-time-out-settings}
+### Definir as configurações de tempo limite {#configure-the-time-out-settings}
 
 1. Em [AEM gerenciador de configuração](http://localhost:4502/system/console/configMgr), localize e abra o serviço **[!UICONTROL Provedor Jacorb ORB]**.
 
@@ -482,7 +481,7 @@ Uma conta de usuário local é necessária para executar o serviço Gerador de P
  </tbody> 
 </table>
 
-### (Somente Windows) Configurar o Acrobat para o serviço Gerador de PDF {#configure-acrobat-for-the-pdf-generator-service}
+### (Somente para Windows) Configurar o Acrobat para o serviço Gerador de PDF {#configure-acrobat-for-the-pdf-generator-service}
 
 No Microsoft Windows, o serviço PDF Generator usa o Adobe Acrobat para converter formatos de arquivo compatíveis em um documento PDF. Execute as seguintes etapas para configurar o Adobe Acrobat para o serviço Gerador de PDF:
 
@@ -510,7 +509,7 @@ No Microsoft Windows, o serviço PDF Generator usa o Adobe Acrobat para converte
 
    1. Vá até `[Path_of_reports_folder]`. Abra o arquivo SystemReadinessTool.html . Verifique o relatório e corrija os problemas mencionados.
 
-### (Somente Windows) Configurar a rota primária para conversão de HTML em PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
+### (Somente para Windows) Configurar a rota primária para conversão de HTML em PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
 O serviço PDF Generator fornece várias rotas para converter arquivos HTML em documentos PDF: Webkit, Acrobat WebCapture (somente Windows) e PhantomJS. O Adobe recomenda o uso da rota PhantomJS porque ela tem a capacidade de lidar com conteúdo dinâmico e não tem dependências em bibliotecas de 32 bits, JDK de 32 bits ou não requer fontes extras. Além disso, a rota PhantomJS não requer acesso sudo ou raiz para executar a conversão.
 
@@ -528,7 +527,7 @@ Usando o Gerenciamento de armazenamento de confiança, você pode importar, edit
 1. Vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Armazenamento de Confiança]**.
 1. Clique em **[!UICONTROL Criar TrustStore]**. Defina a senha e toque em **[!UICONTROL Salvar]**.
 
-### Configurar certificados para a extensão do Reader e o serviço de criptografia {#set-up-certificates-for-reader-extension-and-encryption-service}
+### Configurar certificados para extensão Reader e serviço de criptografia {#set-up-certificates-for-reader-extension-and-encryption-service}
 
 O serviço DocAssurance pode aplicar direitos de uso a documentos PDF. Para aplicar direitos de uso a documentos PDF, configure os certificados.
 
@@ -617,4 +616,3 @@ Você tem um ambiente de serviços de documento da AEM Forms em funcionamento. V
 * [Fluxos de trabalho centrados em formulários no OSGi](/help/forms/using/aem-forms-workflow.md)
 * [Pastas monitoradas](/help/forms/using/watched-folder-in-aem-forms.md)
 * [APIs de serviços de documento](/help/forms/using/aem-document-services-programmatically.md)
-
