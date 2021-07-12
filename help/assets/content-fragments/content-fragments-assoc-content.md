@@ -10,22 +10,21 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de conteúdo
+role: User, Admin
+exl-id: ced7c902-193c-4e97-9070-2a4d958b64a3
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 21%
+source-wordcount: '243'
+ht-degree: 22%
 
 ---
-
 
 # Conteúdo associado{#associated-content}
 
 O conteúdo associado fornece a conexão para que os ativos (ou seja,) possam ser usados (opcionalmente) com o fragmento quando ele for adicionado a uma página de conteúdo. Isso proporciona flexibilidade [fornecendo um intervalo de ativos para acessar ao usar o fragmento de conteúdo em uma página](/help/sites-authoring/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado.
 
-## Adicionar Conteúdo Associado {#adding-associated-content}
+## Adicionar conteúdo associado {#adding-associated-content}
 
 >[!NOTE]
 >
@@ -48,7 +47,7 @@ Para fazer a associação, primeiro é necessário [adicionar o(s) ativo(s) de m
 
    ![cfm-6420-05](assets/cfm-6420-05.png)
 
-## Editar Conteúdo Associado {#editing-associated-content}
+## Editar conteúdo associado {#editing-associated-content}
 
 Depois de associar uma coleção, você pode:
 
@@ -56,4 +55,3 @@ Depois de associar uma coleção, você pode:
 * **Adicione** Ativos à coleção.
 * Selecione um ativo para ação adicional.
 * Edite o ativo.
-
