@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: ba6c4ad3-c393-42d8-9f1f-d59947c3e7ab
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 1%
+source-wordcount: '112'
+ht-degree: 0%
 
 ---
 
-
-# Ferramentas das comunidades {#communities-tools}
+# Ferramentas do Communities {#communities-tools}
 
 Para acessar o console de ferramentas das Comunidades, faça logon na instância do autor:
 
@@ -39,4 +38,3 @@ Para acessar o console de ferramentas das Comunidades, faça logon na instância
 * [Guia de componentes](components-guide.md)  - abre um site interativo que permite a experimentação com o funcionamento dos componentes do SCF e como eles podem ser configurados ou personalizados.
 
 * [Símbolos](badges.md)  - Console onde os rótulos personalizados podem ser adicionados para uso nas regras de  [pontuação e marcação](implementing-scoring.md)
-
