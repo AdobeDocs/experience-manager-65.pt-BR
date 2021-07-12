@@ -11,17 +11,16 @@ content-type: reference
 discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2884'
 ht-degree: 2%
 
 ---
 
-
-# Pontuação e emblema das comunidades {#communities-scoring-and-badges}
+# Pontuação e emblemas de comunidades {#communities-scoring-and-badges}
 
 ## Visão geral {#overview}
 
@@ -53,7 +52,7 @@ Se armazenados em um local diferente, eles devem ser lidos e acessíveis a todos
 
 Os emblemas são diferenciados no UGC quanto ao fato de terem sido atribuídos ou terem sido obtidos de acordo com as regras. No momento, os emblemas atribuídos são exibidos como texto e os emblemas recebidos são exibidos como uma imagem.
 
-### Interface do usuário de gerenciamento de emblema {#badge-management-ui}
+### Interface do usuário do gerenciamento de emblemas {#badge-management-ui}
 
 O console Comunidades [Badges](/help/communities/badges.md) fornece a capacidade de adicionar emblemas personalizados que podem ser exibidos para um membro quando ganhados (atribuídos) ou quando assumem uma função específica na comunidade (atribuídos).
 
@@ -79,7 +78,7 @@ Incluídos na versão, há três distintivos com base em funções:
 
    ![crachás atribuídos](assets/assigned-badges.png)
 
-### Símbolos concedidos {#awarded-badges}
+### Símbolos atribuídos {#awarded-badges}
 
 Os emblemas baseados em recompensa são concedidos pelo serviço de pontuação aos membros da comunidade com base nas regras aplicadas à sua atividade na comunidade.
 
@@ -147,7 +146,7 @@ Se o nó for do tipo `cq:Page` (recomendado), em seguida, usando o CRXDE|Lite, a
 >
 >Se uma regra de pontuação parecer não ter efeito na atribuição de emblemas, verifique se a regra de pontuação não foi bloqueada pela propriedade scoringRules da regra de marcação. Consulte a seção intitulada [Regras de emblema](#badging-rules).
 
-### Ativar emblemas para o componente {#enable-badges-for-component}
+### Ativar emblemas para componente {#enable-badges-for-component}
 
 As regras de pontuação e sombreamento estão em vigor apenas para instâncias de componentes que habilitaram a marcação ao editar a configuração do componente no [modo de criação](/help/communities/author-communities.md).
 
@@ -193,7 +192,7 @@ As pontuações são armazenadas no SRP.
 >/libs/settings/community/scoring/rules/site1/forums-scoring
 >/libs/settings/community/scoring/rules/site2/forums-scoring
 
-### Sub-regras de pontuação {#scoring-sub-rules}
+### Subregras de pontuação {#scoring-sub-rules}
 
 As sub-regras de pontuação contêm as propriedades que detalham os valores para participar da comunidade.
 
@@ -308,7 +307,7 @@ Estão incluídas na versão duas regras de pontuação para a [Função do fór
 
    * Os nomes das regras devem ser exclusivos, independentemente da localização.
 
-### Ativando regras de pontuação personalizadas {#activating-custom-scoring-rules}
+### Ativar regras de pontuação personalizadas {#activating-custom-scoring-rules}
 
 Quaisquer alterações ou adições feitas às regras de pontuação ou subregras feitas no ambiente de criação precisam ser instaladas na publicação.
 
@@ -575,7 +574,7 @@ Se as regras de pontuação e selo tiverem sido aplicadas ao conteúdo do site, 
 
 Consulte a propriedade `scoringRules` de [Regras de emblema](#badging-rules).
 
-### Digitação sensível a maiúsculas e minúsculas {#case-sensitive-typo}
+### Tipo sensível a maiúsculas e minúsculas {#case-sensitive-typo}
 
 A maioria das propriedades e valores, especialmente os verbos, diferencia maiúsculas de minúsculas. Os verbos devem ser todos MAIÚSCULAS quando usados em uma subregra de pontuação.
 
