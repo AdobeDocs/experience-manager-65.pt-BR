@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '955'
 ht-degree: 6%
 
 ---
-
 
 # Atualizar para AEM 6.5 Forms no OSGi {#upgrade-to-aem-forms-osgi}
 
@@ -110,4 +109,3 @@ Faça o seguinte para atualizar do AEM 6.3 Forms ou AEM 6.4 Forms para AEM 6.5 F
 
    >[!NOTE]
    No AEM 6.4 Forms, a estrutura do repositório crx foi alterada. Se você atualizar do 6.3 Forms para o AEM 6.5 Forms, use os caminhos alterados para a personalização que você cria novamente. Para obter a lista completa de caminhos alterados, consulte [Reestruturação do Repositório Forms em AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
-
