@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: '2490'
 ht-degree: 0%
 
 ---
 
-
-# Topologias de arquitetura e implantação para AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
+# Topologias de arquitetura e implantação do AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 
 ## Arquitetura {#architecture}
 
@@ -112,7 +111,7 @@ O armazenamento de dados de formulário é um armazenamento de dados de terceiro
 
 A topologia é recomendada para os clientes que planejam usar o AEM Forms no servidor JEE para recursos de gerenciamento de processos (HTML Workspace) sem usar nenhum pós-processamento, formulários adaptáveis, formulários HTML5 e recursos de comunicação interativa.
 
-### Topologia para usar formulários adaptáveis, formulários HTML5, recursos de comunicação interativos {#topology-for-using-adaptive-forms-html-forms-interactive-communication-capabilities}
+### Topologia para usar formulários adaptáveis, formulários HTML5, recursos de comunicação interativa {#topology-for-using-adaptive-forms-html-forms-interactive-communication-capabilities}
 
 Os clientes do AEM Forms que planejam usar os recursos de captura de dados do AEM Forms, por exemplo, formulários adaptáveis, HTML5 Forms, PDF forms, podem ter uma topologia semelhante à exibida abaixo. Essa topologia também é recomendada para usar recursos de comunicação interativos do AEM Forms.
 
@@ -125,7 +124,7 @@ Você pode fazer as seguintes alterações/personalizações na topologia sugeri
 * a interface do usuário do agente de comunicação interativa geralmente é executada na organização. Portanto, você pode manter um servidor de publicação para a interface do usuário do agente na rede privada.
 * AEM formulários na instância OSGi integrada ao AEM Forms no servidor JEE também podem executar fluxos de trabalho centrados no Forms em OSGi e Pastas vigiadas.
 
-## Amostra de topologias físicas para usar o AEM Forms em OSGi {#sample-physical-topologies-for-using-aem-forms-on-osgi}
+## Amostra de topologias físicas para usar o AEM Forms no OSGi {#sample-physical-topologies-for-using-aem-forms-on-osgi}
 
 ### Topologia para captura de dados, comunicação interativa, fluxo de trabalho centralizado em formulários nos recursos OSGi {#topology-for-data-capture-interactive-communication-form-centric-workflow-on-osgi-capabilities}
 
@@ -133,7 +132,7 @@ Os clientes do AEM Forms que planejam usar os recursos de captura de dados do AE
 
 ![interative-use-cases-af-cm-osgi-workflow](assets/interactive-use-cases-af-cm-osgi-workflow.png)
 
-### Topologia para usar recursos de pasta monitorada para processamento em lote offline {#topology-for-using-watched-folder-capabilities-for-offline-batch-processing}
+### Topologia para usar recursos de pasta monitorada para processamento de lote offline {#topology-for-using-watched-folder-capabilities-for-offline-batch-processing}
 
 Os clientes do AEM Forms que planejam usar Pastas vigiadas para o processamento em lote podem ter uma topologia semelhante à exibida abaixo. A topologia exibe um ambiente em cluster, mas você decide usar uma única instância ou um farm de servidores da AEM Forms, dependendo da carga. A fonte de dados de terceiros é seu próprio sistema de registro. Ele atua como uma fonte de entrada para Pastas vigiadas. A topologia também exibe a saída no formulário de um arquivo impresso. Você também pode armazenar o conteúdo de saída em um sistema de arquivos, enviar por email e usar outros métodos personalizados para consumir saída.
 
@@ -146,4 +145,3 @@ Os clientes da AEM Forms que planejam usar somente o recurso de serviços de doc
 Embora o AEM Forms permita configurar e executar todas as funcionalidades de um único servidor, você deve fazer o planejamento da capacidade, o balanceamento de carga e configurar servidores dedicados para recursos específicos em um ambiente de produção. Por exemplo, para um ambiente que usa o serviço Gerador de PDF para converter milhares de páginas por dia e vários formulários adaptáveis para capturar dados, configure servidores AEM Forms separados para o serviço Gerador de PDF e recursos de formulários adaptáveis. Ele ajuda a fornecer desempenho ideal e dimensionar os servidores independentemente uns dos outros.
 
 ![processamento com base em api offline](assets/offline-api-based-processing.png)
-
