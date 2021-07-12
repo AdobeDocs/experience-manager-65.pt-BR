@@ -3,9 +3,9 @@ title: Configurar a integração do AEM Assets com o Experience Cloud
 description: Saiba como configurar a integração do AEM Assets com o Experience Cloud.
 contentOwner: AG
 feature: Gerenciamento de ativos
-role: Business Practitioner, Architect, Administrator
+role: User, Architect, Admin
 exl-id: d167cf97-6829-45a7-ba46-2239d530b060
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 1%
@@ -91,7 +91,7 @@ No back-end, o servidor do AEM autentica seu perfil no gateway e, em seguida, si
 
 1. Na página de configuração, clique em **[!UICONTROL Exibir chave pública]** para exibir a chave pública gerada para sua instância. Como alternativa, clique em **[!UICONTROL Baixar chave pública para o Gateway OAuth]** para baixar o arquivo que contém a chave pública. Em seguida, abra o arquivo para exibir a chave pública.
 
-## Habilitar sincronização {#enable-synchronization}
+## Ativar sincronização {#enable-synchronization}
 
 1. Exiba a chave pública usando um dos métodos a seguir mencionados na última etapa do procedimento [adicionar uma nova configuração a Experience Cloud](#add-a-new-configuration). Clique em **[!UICONTROL Exibir chave pública]**.
 
