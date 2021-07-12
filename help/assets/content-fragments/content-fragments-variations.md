@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de conteúdo
+role: User, Admin
+exl-id: ded05f24-ab5c-4195-b5c4-704a9fd93c7e
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1746'
 ht-degree: 16%
 
 ---
-
 
 # Variações - Criação dos fragmentos de conteúdo{#variations-authoring-fragment-content}
 
@@ -46,7 +45,7 @@ Executar uma variedade de outras ações, dependendo do tipo de dados que está 
 >
 >Depois que um fragmento tiver sido publicado e/ou referenciado, AEM exibirá um aviso quando um autor abrir o fragmento para edição novamente. Isso serve para avisar que as alterações no fragmento também afetarão as páginas referenciadas.
 
-## Criação do seu conteúdo {#authoring-your-content}
+## Criação de conteúdo {#authoring-your-content}
 
 Ao abrir o fragmento de conteúdo para edição, a guia **Variations** será aberta por padrão. Aqui você pode criar o conteúdo, para Principais variações ou quaisquer variações que tenha. É possível:
 
@@ -72,7 +71,7 @@ Por exemplo:
 
    ![cfm-6420-16](assets/cfm-6420-16.png)
 
-### Editor de Tela Cheia {#full-screen-editor}
+### Editor de Tela cheia {#full-screen-editor}
 
 Ao editar um campo de texto de várias linhas, você pode abrir o editor de tela cheia:
 
@@ -165,7 +164,7 @@ Você também pode abrir o editor de tela cheia para mais [ações](#actions).
 >
 >Se você alternar entre **Rich Text** e **Marcação**, poderá ver efeitos inesperados com Cotas de bloqueio e Bloqueios de código, já que esses dois formatos podem ter diferenças na maneira como são tratados.
 
-### Exibindo as estatísticas principais {#viewing-key-statistics}
+### Exibindo Estatísticas-Chave {#viewing-key-statistics}
 
 Quando o editor de tela cheia estiver aberto, a ação **Estatísticas de texto** exibirá uma variedade de informações sobre o texto. Por exemplo:
 
@@ -238,7 +237,7 @@ Para anotar um fragmento:
 
 1. Feche o editor de tela cheia e **Salve** o fragmento.
 
-### Visualização, edição e exclusão de anotações {#viewing-editing-deleting-annotations}
+### Visualização, edição, exclusão de anotações {#viewing-editing-deleting-annotations}
 
 Anotações:
 
@@ -294,9 +293,9 @@ Eles serão adicionados à sequência de parágrafo do fragmento sem qualquer fo
    >* **Marcação**: o ativo não estará visível, mas ainda estará lá ao retornar para **Rich Text**.
 
 
-## Gerenciando variações {#managing-variations}
+## Gerenciamento de variações {#managing-variations}
 
-### Criando uma Variação {#creating-a-variation}
+### Criação de uma variação {#creating-a-variation}
 
 As variações permitem pegar o conteúdo **Principal** e variá-lo de acordo com a finalidade (se necessário).
 
@@ -312,7 +311,7 @@ Para criar uma nova variação:
    >
    >Ao criar uma nova variação, é sempre **Principal** que é copiado, não a variação que está aberta no momento.
 
-### Editar uma Variação {#editing-a-variation}
+### Editar uma variação {#editing-a-variation}
 
 Você pode fazer alterações no conteúdo de variação após:
 
@@ -321,7 +320,7 @@ Você pode fazer alterações no conteúdo de variação após:
 
 ![cfm-6420-26](assets/cfm-6420-26.png)
 
-### Renomeando uma Variação {#renaming-a-variation}
+### Renomear uma variação {#renaming-a-variation}
 
 Para renomear uma variação existente:
 
@@ -351,7 +350,7 @@ Para excluir uma variação existente:
 >
 >Não é possível excluir **Principal**.
 
-### Sincronização com {#synchronizing-with-master} Principal
+### Sincronização com Principal {#synchronizing-with-master}
 
 **** O domínio é parte integrante de um fragmento de conteúdo e, por definição, contém a cópia principal do conteúdo, enquanto as variações contêm as versões individuais atualizadas e personalizadas desse conteúdo. Quando o Principal é atualizado, é possível que essas alterações também sejam relevantes para as variações e, portanto, precisam ser propagadas para elas.
 
@@ -382,4 +381,3 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 1. Selecione **Synchronize**, a variação será atualizada e mostrada.
-
