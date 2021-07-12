@@ -8,9 +8,9 @@ topic-tags: installing
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 4%
@@ -107,7 +107,7 @@ Antes de começar a instalar e configurar o recurso de captura de dados do AEM F
 
    * libicu
 
-## Instale o pacote complementar do AEM Forms {#install-aem-forms-add-on-package}
+## Instalar o pacote complementar do AEM Forms {#install-aem-forms-add-on-package}
 
 O pacote do complemento AEM Forms é um aplicativo implantado em AEM. O pacote contém a captura de dados do AEM Forms e outros recursos. Execute as seguintes etapas para instalar o pacote complementar:
 
@@ -124,7 +124,7 @@ O pacote do complemento AEM Forms é um aplicativo implantado em AEM. O pacote c
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie imediatamente o servidor.** Antes de parar o servidor do AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no  `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` arquivo e o log seja estável.
 1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
 
-### (Somente Windows) Instalação automática do Visual Studio redistribuíveis {#automatic-installation-visual-studio-redistributables}
+### (Somente Windows) Instalação automática de redistribuíveis do Visual Studio {#automatic-installation-visual-studio-redistributables}
 
 Se você instalar uma instância de AEM no modo elevado, as redistribuíveis do Visual Studio ausentes serão instaladas automaticamente durante a instalação do pacote do complemento AEM Forms.
 
@@ -148,7 +148,7 @@ O AEM Forms tem algumas configurações obrigatórias e opcionais. As configura�
 
 ### Configurações obrigatórias pós-instalação {#mandatory-post-installation-configurations}
 
-#### Configurar bibliotecas RSA e BouncyCastle {#configure-rsa-and-bouncycastle-libraries}
+#### Configurar bibliotecas RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
 Execute as seguintes etapas em todas as instâncias de Autor e Publicação para inicializar e delegar as bibliotecas:
 
@@ -193,7 +193,7 @@ O Dispatcher é uma ferramenta de balanceamento de carga e/ou cache de Adobe Exp
 
    Faça logon no gerenciador de configuração do Apache Felix como administrador. O URL padrão do gerenciador de configuração é `https://[server]:[port_number]/system/console/configMgr`. No menu **Configurations**, selecione a opção **Apache Sling Referrer Filter**. No campo Permitir hosts , insira o nome do host do dispatcher para permitir como referenciador e clique em **Salvar**. O formato da entrada é `https://[server]:[port]`.
 
-#### Configurar Cache {#configure-cache}
+#### Configurar cache {#configure-cache}
 
 O armazenamento em cache é um mecanismo para reduzir o tempo de acesso aos dados, reduzir a latência e melhorar as velocidades de entrada/saída (I/O). O cache de formulários adaptáveis armazena somente o conteúdo HTML e a estrutura JSON de um formulário adaptável sem salvar dados pré-preenchidos. Ajuda a reduzir o tempo necessário para renderizar um formulário adaptável.
 
@@ -209,7 +209,7 @@ Execute as seguintes etapas para configurar o cache de formulários adaptáveis:
    >
    >Para desativar o cache, defina o valor no campo Number of Adaptive Forms como **0**. O cache é redefinido e todos os formulários e documentos são removidos do cache quando você desativa ou altera a configuração do cache.
 
-#### Configurar a comunicação SSL para o Modelo de dados de formulário {#configure-ssl-communcation-for-form-data-model}
+#### Configurar comunicação SSL para o Modelo de dados de formulário {#configure-ssl-communcation-for-form-data-model}
 
 Você pode ativar a comunicação SSL para o Modelo de dados de formulário. Para habilitar a comunicação SSL para o modelo de dados de Formulário, antes de iniciar qualquer instância do AEM Forms, adicione certificados ao Java Trust Store de todas as instâncias. Você pode executar o comando abaixo para adicionar os certificados: &quot;
 
@@ -229,7 +229,7 @@ O AEM Forms integra-se ao Adobe Analytics, que permite capturar e rastrear métr
 
 Para usar o Adobe Analytics com AEM Forms, consulte [Configuração de análises e relatórios](/help/forms/using/configure-analytics-forms-documents.md).
 
-#### Integrar Adobe Target {#integrate-adobe-target}
+#### Integrar o Adobe Target {#integrate-adobe-target}
 
 Seus clientes provavelmente abandonarão um formulário se a experiência que ele oferece não for envolvente. Embora seja frustrante para os clientes, também é possível aumentar o volume e o custo de suporte para sua organização. É importante e desafiador identificar e fornecer a experiência correta do cliente que aumenta a taxa de conversão. O AEM forms tem a chave para esse problema.
 
