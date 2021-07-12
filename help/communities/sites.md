@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 05a944a3-adb1-47b4-b4a5-15bac91c995e
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '463'
 ht-degree: 4%
 
 ---
-
 
 # Modelos de site {#site-templates}
 
@@ -27,7 +26,7 @@ O console Modelos de site é muito semelhante ao console [Modelos de grupo](tool
 >
 >Os consoles para a criação de [sites da comunidade](sites-console.md), [modelos de site da comunidade](sites.md), [modelos de grupo da comunidade](tools-groups.md) e [funções da comunidade](functions.md) são para uso somente no ambiente do autor.
 
-## Console de Modelos de Site {#site-templates-console}
+## Console de modelos de site {#site-templates-console}
 
 No ambiente de criação, para acessar o console de sites da comunidade:
 
@@ -87,7 +86,7 @@ A função de página fornece uma página vazia. A função de grupos fornece a 
 
 ![editor de site](assets/site-editor.png)
 
-### Modelos de Grupo para a Função de Grupos {#group-templates-for-groups-function}
+### Função Modelos de Grupo para Grupos {#group-templates-for-groups-function}
 
 Ao incluir uma função de grupos no modelo do site, a configuração requer a especificação das opções de modelo de grupo permitidas quando um novo grupo é criado no ambiente de publicação.
 
@@ -101,7 +100,7 @@ Ao selecionar dois ou mais modelos de grupo da comunidade, uma opção é fornec
 
 ![função do site](assets/site-functions1.png)
 
-## Modelo de site de edição {#edit-site-template}
+## Modelo de sites de edição {#edit-site-template}
 
 Ao visualizar modelos de site no [console Modelos de site](#site-templates-console) principal, é possível selecionar um modelo de site existente para edição.
 
