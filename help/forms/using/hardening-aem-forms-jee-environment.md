@@ -8,15 +8,14 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '7699'
+source-wordcount: '7696'
 ht-degree: 1%
 
 ---
-
 
 # Otimizar sua AEM Forms no ambiente JEE {#hardening-your-aem-forms-on-jee-environment}
 
@@ -344,7 +343,7 @@ A tabela a seguir descreve algumas técnicas para proteger seu servidor de aplic
   </tr> 
   <tr> 
    <td><p>Navegação no diretório</p> </td> 
-   <td><p>Quando alguém solicita uma página que não existe ou solicita o nome de um diretor (a cadeia de caracteres de solicitação termina com uma barra (/)), o servidor de aplicativos não deve retornar o conteúdo desse diretório. Para evitar isso, você pode desativar a navegação no diretório no servidor de aplicativos. Você deve fazer isso no aplicativo do console de administração e em outros aplicativos em execução no servidor.</p> <p>Para JBoss, defina o valor do parâmetro de inicialização de listagens da propriedade <code>DefaultServlet</code> para <code>false</code> no arquivo web.xml, como mostrado neste exemplo:</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;listagens&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;3&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>Para o WebSphere, defina a propriedade <code>directoryBrowsingEnabled</code> no arquivo ibm-web-ext.xmi para <code>false</code>.</p> <p>Para WebLogic, defina as propriedades de index-diretórios no arquivo weblogic.xml para <code>false</code>, conforme mostrado neste exemplo:</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
+   <td><p>Quando alguém solicita uma página que não existe ou solicita o nome de um diretor (a cadeia de caracteres de solicitação termina com uma barra (/)), o servidor de aplicativos não deve retornar o conteúdo desse diretório. Para evitar isso, você pode desativar a navegação no diretório no servidor de aplicativos. Você deve fazer isso no aplicativo do console de administração e em outros aplicativos em execução no servidor.</p> <p>Para JBoss, defina o valor do parâmetro de inicialização de listagens da propriedade <code>DefaultServlet</code> para <code>false</code> no arquivo web.xml, como mostrado neste exemplo:</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;listagens&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>Para o WebSphere, defina a propriedade <code>directoryBrowsingEnabled</code> no arquivo ibm-web-ext.xmi para <code>false</code>.</p> <p>Para WebLogic, defina as propriedades de index-diretórios no arquivo weblogic.xml para <code>false</code>, conforme mostrado neste exemplo:</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -355,7 +354,7 @@ Ao proteger seu banco de dados, você deve implementar as medidas descritas pelo
 
 No Oracle, a conta de banco de dados usada precisa apenas dos privilégios CONNECT, RECURSO e CRIAR EXIBIÇÃO. Para obter requisitos semelhantes em outros bancos de dados, consulte [Preparando para instalar o AEM Forms no JEE (Servidor único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
 
-#### Configurando a segurança integrada para SQL Server no Windows para JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
+#### Configuração da segurança integrada para SQL Server no Windows para JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
 1. Modifique [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} para adicionar `integratedSecurity=true` ao URL de conexão, conforme mostrado neste exemplo:
 
@@ -367,7 +366,7 @@ No Oracle, a conta de banco de dados usada precisa apenas dos privilégios CONNE
 1. Modifique a propriedade JBoss Windows service (JBoss para AEM Forms no JEE) para Logon como do sistema local para uma conta de logon que tenha o banco de dados AEM Forms e um conjunto mínimo de privilégios. Se você estiver executando o JBoss a partir da linha de comando em vez de um serviço do Windows, não será necessário executar essa etapa.
 1. Defina Segurança para o SQL Server a partir do modo **Misto** para **Autenticação do Windows apenas**.
 
-#### Configurando a segurança integrada do SQL Server no Windows para WebLogic {#configuring-integrated-security-for-sql-server-on-windows-for-weblogic}
+#### Configurando a segurança integrada para SQL Server no Windows for WebLogic {#configuring-integrated-security-for-sql-server-on-windows-for-weblogic}
 
 1. Inicie o Console de Administração do WebLogic Server digitando o seguinte URL na linha de URL de um navegador da Web:
 
@@ -383,7 +382,7 @@ No Oracle, a conta de banco de dados usada precisa apenas dos privilégios CONNE
 1. Adicione o arquivo sqljdbc_auth.dll ao caminho de sistemas do Windows no computador que está executando o servidor de aplicativos. O arquivo sqljdbc_auth.dll está localizado com a instalação do driver Microsoft SQL JDBC 6.2.1.0.
 1. Defina Segurança para o SQL Server a partir do modo **Misto** para **Autenticação do Windows apenas**.
 
-#### Configurando a segurança integrada do SQL Server no Windows para WebSphere {#configuring-integrated-security-for-sql-server-on-windows-for-websphere}
+#### Configurando a segurança integrada para SQL Server no Windows para WebSphere {#configuring-integrated-security-for-sql-server-on-windows-for-websphere}
 
 No WebSphere, você pode configurar a segurança integrada somente quando usar um driver JDBC externo do SQL Server, não o driver JDBC do SQL Server incorporado no WebSphere.
 
@@ -422,7 +421,7 @@ Um ataque comum usando o LDAP envolve um invasor deliberadamente falhando na aut
 
 Você pode definir o número de tentativas de falha e o tempo de bloqueio subsequente que o AEM Forms implementa quando um usuário falha repetidamente na autenticação no AEM Forms. No Console de administração, escolha valores baixos. Ao selecionar o número de tentativas de falha, é importante entender que, depois de todas as tentativas serem feitas, o AEM Forms bloqueia o usuário antes que o Servidor de Diretório LDAP o faça.
 
-#### Definir bloqueio automático de conta {#set-automatic-account-locking}
+#### Definir bloqueio de conta automática {#set-automatic-account-locking}
 
 1. Faça logon no Console de administração.
 1. Clique em **Configurações** > **Gerenciamento de Usuário** > **Gerenciamento de Domínio**.
@@ -703,7 +702,7 @@ O processo de Filtragem do referenciador pode ser descrito da seguinte maneira:
    1. Se um Referenciador Nulo for permitido, a solicitação será passada.
    1. Se um Referenciador Nulo não for permitido, o servidor verificará se o URI solicitado é uma exceção para o Referenciador Nulo e tratará a solicitação de acordo.
 
-### Gerenciando a filtragem de referenciador {#managing-referer-filtering}
+### Gerenciar filtros de referenciador {#managing-referer-filtering}
 
 O AEM Forms no JEE fornece um Filtro de referenciador para especificar Referenciador que tem acesso aos recursos do servidor. Por padrão, o filtro Referenciador não filtra solicitações que usam um método HTTP seguro, por exemplo, GET, a menos que *CSRF_CHECK_GETS* esteja definido como true. Se o número da porta de uma entrada de Referenciador Permitido for definido como 0, o AEM Forms no JEE permitirá todas as solicitações com Referenciador desse host, independentemente do número da porta. Se nenhum número de porta for especificado, somente as solicitações da porta padrão 80 (HTTP) ou da porta 443 (HTTPS) serão permitidas. A Filtragem de referenciador será desativada se todas as entradas na lista Referenciador permitido forem excluídas.
 
@@ -952,7 +951,7 @@ Esta seção descreve as portas padrão (e intervalos de configuração alternat
 
 Para obter informações sobre portas WebSphere que o AEM Forms no JEE requer, vá para a configuração Número da porta na interface do usuário do WebSphere Application Server.
 
-### Configurar SSL {#configuring-ssl}
+### Configuração de SSL {#configuring-ssl}
 
 Referindo-se à arquitetura física descrita na seção [AEM Forms on JEE physical architecture](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), você deve configurar o SSL para todas as conexões que planeja usar. Especificamente, todas as conexões SOAP devem ser realizadas por SSL para evitar a exposição de credenciais de usuário em uma rede.
 
@@ -960,7 +959,7 @@ Para obter instruções sobre como configurar o SSL em JBoss, WebLogic e WebSphe
 
 Para obter instruções sobre como importar certificados para a JVM (Java Virtual Machine) configurada para um servidor AEM Forms, consulte a seção Autenticação Mútua em [Ajuda do AEM Forms Workbench](http://www.adobe.com/go/learn_aemforms_workbench_65).
 
-### Configurar o redirecionamento SSL {#configuring-ssl-redirect}
+### Configuração do redirecionamento SSL {#configuring-ssl-redirect}
 
 Depois de configurar o servidor de aplicativos para suportar SSL, você deve garantir que todo o tráfego HTTP para aplicativos e serviços seja empregado para usar a porta SSL.
 
@@ -994,7 +993,7 @@ Esta seção contém recomendações de segurança específicas do Windows quand
 
 A instalação turnkey do AEM Forms em JEE configura uma conta de serviço, por padrão, usando a conta Sistema local. A conta de usuário integrada do Sistema local tem um alto nível de acessibilidade; faz parte do grupo Administradores . Se uma identidade de processo de trabalho for executada como a conta de usuário do Sistema Local, esse processo de trabalho terá acesso total ao sistema inteiro.
 
-#### Execute o servidor de aplicativos usando uma conta não administrativa {#run-the-application-server-using-a-non-administrative-account}
+#### Executar o servidor de aplicativos usando uma conta não administrativa {#run-the-application-server-using-a-non-administrative-account}
 
 1. No Console de Gerenciamento da Microsoft (MMC), crie um usuário local para que o serviço do servidor de formulários faça logon como:
 
@@ -1048,11 +1047,11 @@ Ao usar pastas vigiadas como uma maneira de enviar e receber documentos com um s
 
 Esta seção contém recomendações de configuração do servidor de aplicativos que são específicas para o JBoss 7.0.6 quando usado para executar o AEM Forms no JEE.
 
-### Desative o Console de Gerenciamento JBoss e o Console JMX {#disable-jboss-management-console-and-jmx-console}
+### Desativar o Console de Gerenciamento JBoss e o Console JMX {#disable-jboss-management-console-and-jmx-console}
 
 O acesso ao Console de Gerenciamento JBoss e ao Console JMX já está configurado (o monitoramento JMX está desativado) quando você instala o AEM Forms no JEE no JBoss usando o método de instalação turnkey. Se estiver usando seu próprio JBoss Application Server, verifique se o acesso ao JBoss Management Console e ao console de monitoramento JMX estão protegidos. O acesso ao console de monitoramento JMX é definido no arquivo de configuração JBoss chamado jmx-invoker-service.xml.
 
-### Desative a navegação no diretório {#disable-directory-browsing}
+### Desativar navegação no diretório {#disable-directory-browsing}
 
 Depois de fazer logon no Console de administração, é possível navegar na lista de diretórios do console modificando o URL. Por exemplo, se você alterar o URL para um dos URLs a seguir, uma listagem de diretório pode ser exibida:
 
@@ -1065,7 +1064,7 @@ https://<servername>:8080/um/
 
 Esta seção contém recomendações de configuração do servidor de aplicativos para proteger o WebLogic 9.1 ao executar o AEM Forms no JEE.
 
-### Desative a navegação no diretório {#disable_directory_browsing-1}
+### Desativar navegação no diretório {#disable_directory_browsing-1}
 
 Defina as propriedades dos diretórios de índice no arquivo weblogic.xml para `false`, conforme mostrado neste exemplo:
 
@@ -1084,7 +1083,7 @@ Por padrão, o WebLogic não habilita a Porta de escuta SSL padrão, 7002. Ative
 
 Esta seção contém recomendações de configuração do servidor de aplicativos para proteger o WebSphere executando o AEM Forms no JEE.
 
-### Desative a navegação no diretório {#disable_directory_browsing-2}
+### Desativar navegação no diretório {#disable_directory_browsing-2}
 
 Defina a propriedade `directoryBrowsingEnabled` no arquivo ibm-web-ext.xml para `false`.
 
