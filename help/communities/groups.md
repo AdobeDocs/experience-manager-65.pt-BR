@@ -11,15 +11,14 @@ content-type: reference
 discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1678'
 ht-degree: 2%
 
 ---
-
 
 # Console de grupos da comunidade {#community-groups-console}
 
@@ -114,7 +113,7 @@ A raiz padrão é o site principal, mas a raiz pode ser movida para qualquer loc
 
 ![communitygrouptheme](assets/communitygrouptheme.png)
 
-A estrutura usa [Bootstrap do Twitter](https://twitterbootstrap.org/) para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de grupo da comunidade selecionado ou um tema de Bootstrap pode ser carregado.
+A estrutura usa [Twitter Bootstrap](https://twitterbootstrap.org/) para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de grupo da comunidade selecionado ou um tema de Bootstrap pode ser carregado.
 
 Quando selecionado, o tema será sobreposto com uma marca de verificação azul opaca.
 
@@ -122,7 +121,7 @@ Quando selecionado, o tema será sobreposto com uma marca de verificação azul 
 
 Depois que o site da comunidade é publicado, é possível [editar as propriedades](#modifyinggroupproperties) e selecionar um tema diferente.
 
-### MARCA DO GRUPO DA COMUNIDADE {#community-group-branding}
+### MARCA DO GRUPO COMUNITÁRIO {#community-group-branding}
 
 ![associação de marcas](assets/community-group-branding.png)
 
@@ -211,7 +210,7 @@ Quando o processo é concluído, o cartão do novo site da subcomunidade (grupo)
 
 O conteúdo da página de um grupo pode ser criado com as mesmas ferramentas que qualquer outra página AEM. Para abrir o grupo para criação, selecione o ícone Abrir site que aparece ao passar o mouse sobre o cartão de grupo.
 
-## Modificar Propriedades do Grupo {#modify-group-properties}
+## Modificar propriedades do grupo {#modify-group-properties}
 
 As propriedades de um site de subcomunidade existente, especificadas durante o processo de criação do grupo da comunidade, podem ser modificadas ao selecionar o ícone Editar site, que aparece ao passar o mouse sobre o cartão de grupo:
 
@@ -266,7 +265,7 @@ Modifique a ordem das funções, conforme exibido na barra de navegação de ní
 
 ![community-group-add-calendar](assets/community-group-add-calendar.png)
 
-### Modificar Design {#modify-design}
+### Modificar design {#modify-design}
 
 O painel DESIGN permite a modificação do tema:
 
