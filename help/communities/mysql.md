@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 2d33e6ba-cd32-40d1-8983-58f636b21470
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1093'
 ht-degree: 2%
 
 ---
-
 
 # Configuração do MySQL para Recursos de Ativação {#mysql-configuration-for-enablement-features}
 
@@ -61,13 +60,13 @@ Altere o banco de dados MySQL para UTF8:
 * Na seção `[client]` , adicione: `default-character-set=utf8`
 * Na seção `[mysqld]` , adicione: `character-set-server=utf8`
 
-## Instalando o MySQL Workbench {#installing-mysql-workbench}
+## Instalar o MySQL Workbench {#installing-mysql-workbench}
 
 O MySQL Workbench fornece uma interface para executar scripts SQL que instalam o esquema e os dados iniciais.
 
 O MySQL Workbench deve ser baixado e instalado seguindo as instruções para o SO de destino.
 
-## Ativar conexão {#enablement-connection}
+## Habilitar conexão {#enablement-connection}
 
 Quando o MySQL Workbench é iniciado pela primeira vez, a menos que já esteja em uso para outros fins, ele ainda não mostrará conexões:
 
@@ -97,7 +96,7 @@ Quando o MySQL Workbench é iniciado pela primeira vez, a menos que já esteja e
 
 ![mysqlconnection2](assets/mysqlconnection2.png)
 
-## Configuração do Banco de Dados {#database-setup}
+## Configuração do banco de dados {#database-setup}
 
 Ao abrir a nova conexão de Ativação, observe que há um esquema de teste e contas de usuário padrão.
 
@@ -139,7 +138,7 @@ Certifique-se de instalar o esquema antes de instalar os dados.
 >Se o nome do banco de dados for alterado, especifique-o corretamente em:
 >
 >* [Configuração JDBC](#configure-jdbc-connections)
->* [Configuração do SCORM](#configure-scorm)
+* [Configuração do SCORM](#configure-scorm)
 
 
 #### Etapa 1: abrir arquivo SQL {#step-open-sql-file}
@@ -245,4 +244,3 @@ Para garantir que os cursos de ativação funcionem corretamente em todos os nav
 * Selecione o ícone `[+]` para adicionar um Agente de Usuário Seguro.
 * Insira `Mozilla/*`.
 * Selecione **[!UICONTROL Salvar]**.
-
