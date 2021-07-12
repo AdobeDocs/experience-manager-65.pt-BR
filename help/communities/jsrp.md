@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 1%
+source-wordcount: '462'
+ht-degree: 0%
 
 ---
-
 
 # JSRP - Provedor de recursos de armazenamento JCR {#jsrp-jcr-storage-resource-provider}
 
@@ -58,7 +57,7 @@ Embora o JSRP seja a configuração padrão, para garantir que a configuração 
 
 * Selecione **[!UICONTROL Ativar]**
 
-## Gerenciando dados do usuário {#managing-user-data}
+## Gerenciar dados do usuário {#managing-user-data}
 
 Para obter informações sobre *usuários*, *perfis de usuário* e *grupos de usuários*, normalmente inseridos no ambiente de publicação, visite:
 
