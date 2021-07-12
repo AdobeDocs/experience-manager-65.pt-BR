@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
-
 
 # Criar novas pastas para categorizar formulários {#create-new-folders-to-categorize-forms}
 
@@ -24,7 +23,7 @@ Você pode organizar seus ativos melhor usando pastas. Como o AEM Forms suporta 
 
 O AEM Forms permite alterar o título de uma pasta. O título não é o mesmo do nó sob o qual a pasta é armazenada no repositório. Em vez disso, o título é mantido como metadados para a pasta. Se você alterar o título de uma pasta, o caminho de qualquer ativo presente na pasta não será afetado.
 
-## Crie uma pasta {#create-a-folder}
+## Crie uma pasta  {#create-a-folder}
 
 Você pode criar uma pasta no AEM Forms de uma das seguintes maneiras:
 
@@ -57,4 +56,3 @@ Você pode criar uma pasta no AEM Forms de uma das seguintes maneiras:
 1. Clique no ícone editar ![aem6forms_edit](assets/aem6forms_edit.png) na barra de ferramentas.
 1. Insira o novo título. O campo de texto é pré-preenchido com o valor atual do título da pasta. Você pode alterá-lo para um novo valor.
 1. Clique em **[!UICONTROL Enviar].**
-
