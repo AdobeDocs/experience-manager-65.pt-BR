@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '934'
 ht-degree: 1%
 
 ---
-
 
 # Configurar o cache de formulários adaptáveis {#configure-adaptive-forms-cache}
 
@@ -40,7 +39,7 @@ Um cache é um mecanismo para reduzir o tempo de acesso aos dados, reduzir a lat
 Seu ambiente é configurado para usar formulários adaptáveis ao cache e ativos relacionados.
 
 
-## (Opcional) Configure o cache de formulário adaptável no dispatcher {#configure-the-cache}
+## (Opcional) Configurar o cache de formulário adaptável no dispatcher {#configure-the-cache}
 
 Você também pode configurar o armazenamento de formulários adaptáveis no dispatcher para aumentar ainda mais o desempenho.
 
