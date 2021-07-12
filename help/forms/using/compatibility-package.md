@@ -10,15 +10,14 @@ topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '343'
 ht-degree: 6%
 
 ---
-
 
 # Pacote de Compatibilidade{#compatibility-package}
 
@@ -35,7 +34,7 @@ O pacote de compatibilidade do AEMFD também permite [usar os seguintes ativos d
 
 Para obter mais informações, consulte [Ativos compatíveis com o AEM Forms 6.5 instalando o pacote de Compatibilidade](../../forms/using/compatibility-package.md#assetsmadecompatible).
 
-## Adicionar suporte para ativos AEM Forms 6.4, 6.3 e 6.2 no AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## Adicionar suporte para os ativos AEM Forms 6.4, 6.3 e 6.2 no AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Depois de executar uma atualização, faça o seguinte para instalar o pacote de compatibilidade do AEMFD e tornar seus ativos compatíveis com o 6.5:
 
@@ -50,7 +49,7 @@ Certifique-se de ter [AEM pacote de compatibilidade](https://helpx.adobe.com/aem
 
    Para obter mais informações, consulte [utilitário de migração](../../forms/using/migration-utility.md).
 
-## Ativos compatíveis com o AEM Forms 6.5 ao instalar o pacote de Compatibilidade {#assetsmadecompatible}
+## Ativos compatíveis com o AEM Forms 6.5 ao instalar o pacote Compatibilidade {#assetsmadecompatible}
 
 Ao instalar o pacote de Compatibilidade, você pode tornar os seguintes ativos e modelos compatíveis com o AEM Forms 6.5:
 
@@ -77,4 +76,3 @@ Ao instalar o pacote de Compatibilidade, você pode tornar os seguintes ativos e
    * /libs/fd/af/components/page/survey
    * /libs/fd/af/components/page/tabbedenrollment
    * /libs/fd/afaddon/components/page/advancedenrollment
-
