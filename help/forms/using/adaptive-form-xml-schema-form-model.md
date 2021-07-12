@@ -2,18 +2,17 @@
 title: Como criar um Forms adaptável usando o esquema XML?
 description: Saiba como usar o esquema XML como modelo de formulário em um formulário adaptável. Você pode aplicar modelos XSD existentes para criar formulários adaptáveis e arrastar e soltar elementos de esquema do XSD no formulário adaptável. Aprofunde-se com uma amostra de esquema XML, adicione propriedades especiais a campos usando esquema XML e limite valores aceitáveis para um componente de formulário adaptável.
 feature: Formulários adaptáveis
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 6%
 
 ---
 
-# Criar formulários adaptáveis usando o Esquema XML {#creating-adaptive-forms-using-xml-schema}
+# Criação de formulários adaptáveis usando o Esquema XML {#creating-adaptive-forms-using-xml-schema}
 
 ## Pré-requisitos {#prerequisites}
 
@@ -125,7 +124,7 @@ Aqui está um exemplo de esquema XML.
 >
 >Certifique-se de que o esquema XML tenha apenas um elemento raiz. Não há suporte para um esquema XML com mais de um elemento raiz.
 
-## Adicionar propriedades especiais a campos usando esquema XML {#adding-special-properties-to-fields-using-xml-schema}
+## Adição de propriedades especiais a campos usando esquema XML {#adding-special-properties-to-fields-using-xml-schema}
 
 Você pode adicionar os seguintes atributos aos elementos do Esquema XML para adicionar propriedades especiais aos campos do formulário adaptável associado.
 
@@ -171,7 +170,7 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
 >
 Por exemplo, se você adicionar o elemento de esquema `userFirstName`, a legenda gerada no formulário adaptável será `User First Name`.
 
-## Limitar valores aceitáveis para um componente de formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
+## Limite valores aceitáveis para um componente de formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
 
 É possível adicionar as seguintes restrições aos elementos do esquema XML para limitar os valores aceitáveis para um componente de formulário adaptável:
 
