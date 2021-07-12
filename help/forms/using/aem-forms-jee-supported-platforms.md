@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 3d6b0c696b625869bc4ed682a310399b3b6301fb
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '3323'
 ht-degree: 1%
@@ -80,7 +80,7 @@ O Adobe recomenda essas configurações e oferece suporte total ou restrito como
 >
 >Reconhecemos que os usuários existentes precisam continuar implantando o AEM Forms na pilha JEE. Nesses cenários, o Adobe requer a implantação do AEM Forms JEE na infraestrutura compatível, conforme descrito nesta documentação. Se você estiver atualizando para o AEM 6.5 Forms e estiver usando uma plataforma não compatível na versão anterior do AEM Forms, entre em contato com o Suporte do Adobe para obter ajuda sobre como atualizar para uma plataforma compatível.
 
-### Java Virtual Machines (JVM) {#java-virtual-machines-jvm}
+### Máquinas Virtuais Java (JVM) {#java-virtual-machines-jvm}
 
 A Adobe Experience Manager Forms requer uma máquina virtual Java para execução, fornecida pela distribuição do Java Development Kit (JDK). A Adobe Experience Manager opera com as seguintes versões das máquinas virtuais Java:
 
@@ -267,7 +267,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
 >
 >Os clusters IBM® WebSphere® são suportados apenas nas edições de implantação de rede.
 
-### Sistemas operacionais do servidor {#server-operating-systems}
+### Sistemas operacionais para servidores {#server-operating-systems}
 
 #### Ambientes de produção {#production-environments}
 
@@ -327,7 +327,7 @@ Você pode executar o AEM Forms no JEE em uma máquina física ou em um ambiente
  </tbody>
 </table>
 
-### Exceções às plataformas de servidor compatíveis {#exceptions-to-supported-server-platforms}
+### Exceções às plataformas de servidor suportadas {#exceptions-to-supported-server-platforms}
 
 Considere as seguintes exceções ao escolher uma plataforma para configurar seu AEM Forms no servidor JEE.
 
@@ -727,7 +727,7 @@ Clique [aqui](https://www.adobe.com/br/products/livecycle/rightsmanagement/exten
 
 O AEM Forms no JEE oferece suporte a atualizações, correções e pacotes de correções além da versão principal e secundária especificada do software suportado. No entanto, a atualização para a próxima versão principal ou secundária não é suportada, a menos que especificado.
 
-## Política de suporte a patch de terceiros {#third-party-patch-support-policy}
+## Política de suporte de patch de terceiros {#third-party-patch-support-policy}
 
 Os requisitos de software de terceiros para o AEM Forms no JEE estão documentados na seção &quot;Requisitos do sistema&quot; de seus respectivos documentos de produto. Toda a documentação pode ser acessada em [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65) .
 
