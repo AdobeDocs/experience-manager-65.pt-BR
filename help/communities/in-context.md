@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '796'
 ht-degree: 1%
 
 ---
-
 
 # Moderação no contexto {#in-context-moderation}
 
@@ -49,7 +48,7 @@ Rebekah Larsen (rebekah.larsen@trashymail.com) pode ser adicionado como membro d
 
 Para obter mais informações sobre grupos de usuários da comunidade, visite [Gerenciar usuários e grupos de usuários](users.md).
 
-### Crie as publicações do fórum {#create-the-forum-posts}
+### Criar as publicações do fórum {#create-the-forum-posts}
 
 * Faça logon como Rebekah Larsen (rebekah.larsen@trashymail.com)
 
@@ -169,4 +168,3 @@ Aviso:
 * Rebekah não pode acessar o console de moderação.
 
 ![community-forum-author](assets/community-forum-author.png)
-
