@@ -6,15 +6,14 @@ seo-description: Saiba mais sobre as recomendações e as práticas recomendadas
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
-
 
 # Otimização e proteção de formulários AEM no ambiente OSGi {#hardening-and-securing-aem-forms-on-osgi-environment}
 
@@ -39,11 +38,11 @@ O AEM Forms é altamente personalizável e pode funcionar em vários ambientes d
 
 As vulnerabilidades de segurança da camada de transporte estão entre as primeiras ameaças a qualquer servidor de aplicativos voltado para a Internet ou para a intranet. Esta seção descreve o processo de proteção de hosts na rede contra essas vulnerabilidades. Ele trata da segmentação de rede, da proteção de pilha do protocolo TCP/IP (Transmission Control Protocol/Internet Protocol) e do uso de firewalls para proteção de host.
 
-### Limitar pontos de extremidade abertos {#limit-open-endpoints}
+### Limitar pontos de extremidade abertos  {#limit-open-endpoints}
 
 Uma organização pode ter um firewall externo para restringir o acesso entre um usuário final e o AEM Forms publish Farm. A organização também pode ter um firewall interno para limitar o acesso entre um farm de publicação e outros elementos dentro da organização (por exemplo, instância de autor, instância de processamento, bancos de dados). Permita firewalls para permitir acesso a um número limitado de URLs do AEM Forms para usuários finais e dentro de elementos de organizações:
 
-#### Configurar firewall externo {#configure-external-firewall}
+#### Configurar firewall externo  {#configure-external-firewall}
 
 Você pode configurar um firewall externo para permitir que um determinado URL do AEM Forms acesse a Internet. O acesso a esses URLs é necessário para preencher ou enviar um formulário adaptável, HTML5, carta de gerenciamento de correspondência ou para fazer logon em um servidor AEM Forms:
 
@@ -97,7 +96,7 @@ Você pode configurar um firewall externo para permitir que um determinado URL d
  </tbody>
 </table>
 
-#### Configurar firewall interno {#configure-internal-firewall}
+#### Configurar firewall interno  {#configure-internal-firewall}
 
 Você pode configurar o firewall interno para permitir que determinados componentes do AEM Forms (por exemplo, instância de autor, instância de processamento, bancos de dados) se comuniquem com o farm de publicação e outros componentes internos mencionados no diagrama de topologia:
 
@@ -130,7 +129,7 @@ Por padrão, os ativos disponíveis nos nós de publicação são acessíveis a 
 * /etc.clientlibs/fd/&amp;ast;
 * /libs/fd/&amp;ast;
 
-## Lidar com dados de formulários com segurança {#securely-handle-forms-data}
+## Lidar com dados de formulários com segurança  {#securely-handle-forms-data}
 
 O AEM Forms armazena dados em locais predefinidos e pastas temporárias. Você deve proteger os dados para evitar um uso não autorizado.
 
@@ -140,7 +139,7 @@ Ao configurar formulários para anexos de arquivo, verificar ou visualizar compo
 
 Nos cenários acima mencionados, os dados são salvos somente para usuários autenticados. Além disso, os dados são protegidos com ACLs (Access Control lists, listas de controle de acesso). Portanto, modificar a limpeza de dados é uma etapa adicional para proteger as informações.
 
-### Dados seguros salvos pela ação {#secure-data-saved-by-forms-portal-submit-action} de envio do portal de formulários
+### Dados seguros salvos pela ação de envio do portal de formulários {#secure-data-saved-by-forms-portal-submit-action}
 
 Por padrão, a ação de envio do portal de formulários de formulários adaptáveis salva dados no repositório local do nó de publicação. Os dados são salvos em /content/forms/fp. **Não é recomendado armazenar dados na instância de publicação.**
 
@@ -197,6 +196,6 @@ Em geral, os clusters de processamento e o complemento Forms Workflow (AEM Forms
 
 Um cluster de processamento é executado no modo de criação, mas não o usa para atividades de desenvolvimento. Não permita que um usuário normal seja incluído em grupos de autores de conteúdo e usuários de formulário de um cluster de processamento.
 
-### USE AEM práticas recomendadas para proteger um ambiente AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
+### USAR AEM práticas recomendadas para proteger um ambiente AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
 Este documento fornece instruções específicas para o ambiente AEM Forms. Você deve tomar providências para garantir que a instalação AEM subjacente seja segura quando implantada. Para obter instruções detalhadas, consulte a documentação da [Lista de verificação de segurança AEM](/help/sites-administering/security-checklist.md).
