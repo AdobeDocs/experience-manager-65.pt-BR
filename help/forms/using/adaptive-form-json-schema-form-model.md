@@ -2,11 +2,10 @@
 title: Como criar um Forms adaptável usando o esquema JSON?
 description: Saiba como criar formulários adaptáveis usando o esquema JSON como modelo de formulário. Você pode usar esquemas JSON existentes para criar formulários adaptáveis. Aprofunde-se com uma amostra de esquema JSON, pré-configure campos na definição do esquema JSON, limite valores aceitáveis para um componente de formulário adaptável e aprenda construções não suportadas.
 feature: Formulários adaptáveis
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 6%
@@ -22,7 +21,7 @@ A criação de um formulário adaptável usando um Esquema JSON como seu modelo 
 * [Criação de um formulário adaptável](creating-adaptive-form.md)
 * [Esquema JSON](https://json-schema.org/)
 
-## Uso de um Esquema JSON como modelo de formulário {#using-a-json-schema-as-form-model}
+## Uso de um esquema JSON como modelo de formulário  {#using-a-json-schema-as-form-model}
 
 [!DNL Adobe Experience Manager Forms] O suporta a criação de um formulário adaptável usando um Esquema JSON existente como o modelo de formulário. Esse Esquema JSON representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na organização. O Esquema JSON que você usa deve ser compatível com [v4 Specification](https://json-schema.org/draft-04/schema).
 
@@ -333,7 +332,7 @@ As chaves de definição são usadas para identificar esquemas reutilizáveis. A
 
 O exemplo acima define um registro de cliente, em que cada cliente tem um endereço de envio e de faturamento. A estrutura de ambos os endereços é a mesma — os endereços têm um endereço de rua, cidade e estado — portanto, é uma boa ideia não duplicar os endereços. Também facilita a adição e exclusão de campos para qualquer alteração futura.
 
-## Pré-configuração de campos na Definição de esquema JSON {#pre-configuring-fields-in-json-schema-definition}
+## Pré-configuração de campos na definição do esquema JSON {#pre-configuring-fields-in-json-schema-definition}
 
 Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo Esquema JSON para mapear para um componente de formulário adaptável personalizado. Um exemplo é listado abaixo:
 
@@ -355,7 +354,7 @@ Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo 
 }
 ```
 
-## Configurar scripts ou expressões para objetos de formulário {#configure-scripts-or-expressions-for-form-objects}
+## Configurar scripts ou expressões para objetos de formulário  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript é a linguagem de expressão de formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Você pode pré-configurar objetos de formulário para [avaliar uma expressão](adaptive-form-expressions.md) em um evento de formulário.
 
@@ -586,7 +585,7 @@ Alguns exemplos de uso de eventos em um JSON estão ocultando um campo no evento
 
 Este é o exemplo de código JSON para exemplos mencionados anteriormente.
 
-### Ocultar um campo no evento de inicialização {#hiding-a-field-on-initialize-event}
+### Ocultar um campo no evento initialize {#hiding-a-field-on-initialize-event}
 
 ```json
 "name": {
@@ -623,7 +622,7 @@ Este é o exemplo de código JSON para exemplos mencionados anteriormente.
 }
 ```
 
-## Limitar valores aceitáveis para um componente de formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
+## Limite valores aceitáveis para um componente de formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
 
 Você pode adicionar as seguintes restrições aos elementos do Esquema JSON para limitar os valores aceitáveis para um componente de formulário adaptável:
 
@@ -721,7 +720,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
  </tbody>
 </table>
 
-## Construções não suportadas {#non-supported-constructs}
+## Construções não suportadas  {#non-supported-constructs}
 
 Os formulários adaptáveis não são compatíveis com as seguintes construções de Esquema JSON:
 
