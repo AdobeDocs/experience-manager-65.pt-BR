@@ -6,17 +6,16 @@ uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
 
-
-# Gerenciamento de correspondência | Tratamento de dados do usuário {#correspondence-management-handling-user-data}
+# Gerenciamento de correspondência | Tratamento de dados de utilizadores {#correspondence-management-handling-user-data}
 
 O AEM Forms Correspondence Management permite criar, gerenciar e simplificar correspondências seguras e personalizadas do cliente. Ela oferece uma interface de usuário intuitiva para usuários empresariais criarem correspondências usando blocos de conteúdo e elementos de mídia pré-aprovados. Para obter mais informações sobre como criar correspondências, consulte [Criar correspondência](/help/forms/using/create-correspondence.md).
 
@@ -26,7 +25,7 @@ Quando um usuário empresarial ou um agente salva uma correspondência como rasc
 >
 >No AEM 6.5 Forms, o gerenciamento de correspondência não está disponível imediatamente. Se estiver atualizando de uma versão anterior do AEM Forms, instale o pacote de compatibilidade e migre seus ativos de gerenciamento de correspondência para continuar a usá-los no AEM 6.5 Forms. Para obter mais informações, consulte [Pacote de compatibilidade](/help/forms/using/compatibility-package.md).
 
-## Os dados e armazenamentos de dados do usuário {#data}
+## Armazenamento de dados e dados do usuário {#data}
 
 O gerenciamento de correspondência armazena dados para rascunho e cartas enviadas em AEM repositório somente se a instância de publicação estiver configurada para gerenciar instâncias de carta. Para obter mais informações sobre a configuração, consulte [Propriedades de configuração do Correspondence Management](/help/forms/using/cm-configuration-properties.md).
 
