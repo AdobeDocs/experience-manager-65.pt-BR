@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 7ecc1bcf-38a9-4a59-8dd3-79cb90dec33d
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de conteúdo
+role: User, Admin
+exl-id: b204df18-2aef-4905-82f8-c777928ba828
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1975'
 ht-degree: 7%
 
 ---
-
 
 # Trabalho com fragmentos de conteúdo{#working-with-content-fragments}
 
@@ -263,7 +262,7 @@ Conteúdo intermediário:
 >
 >O conteúdo intermediário é o conteúdo da página. Não é armazenado no fragmento de conteúdo.
 
-### Necessário por Fragmentos {#required-by-fragments}
+### Necessário por fragmentos {#required-by-fragments}
 
 Para criar, editar e usar fragmentos de conteúdo, também é necessário:
 
@@ -293,7 +292,7 @@ Para criar, editar e usar fragmentos de conteúdo, também é necessário:
 
 Um fragmento, com seus elementos e variações, pode ser usado para criar conteúdo coerente para vários canais. Ao projetar o fragmento, é necessário considerar o que será usado em qualquer lugar.
 
-### Amostra We.Retail {#we-retail-sample}
+### Exemplo de We.Retail {#we-retail-sample}
 
 Um fragmento de amostra pode ser visto em:
 
