@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
-
 
 # Obter documentos XDP e PDF no AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 
@@ -89,4 +88,3 @@ Remover um modelo de formulário corrompe o formulário adaptável dependente ou
 Um sinalizador é mantido para indicar se um formulário adaptável está sujo. Essas informações estão disponíveis na página de propriedades do formulário, juntamente com os metadados do formulário. Somente para formulários adaptáveis sujos, uma propriedade de metadados `Model Refresh` exibe `Recommended` valor.
 
 ![Indicação de um formulário adaptável que está fora de sincronia com o modelo XFA](assets/model-refresh.png)
-
