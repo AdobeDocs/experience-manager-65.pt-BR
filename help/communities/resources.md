@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 15e16572-c692-41fc-86e4-c1d475afa63c
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2979'
 ht-degree: 5%
 
 ---
 
-
-# Console de ativação de recursos {#enablement-resources-console}
+# Console de recursos de ativação {#enablement-resources-console}
 
 Para o AEM Communities, o console Recursos é onde os [Gerentes de Ativação](users.md) criam, gerenciam e atribuem recursos aos membros de um site da comunidade de ativação.
 
@@ -60,7 +59,7 @@ Características de um Recurso:
 
 Um caminho de aprendizagem é um conjunto lógico de recursos de ativação agrupados para facilitar a atribuição aos membros.
 
-### Grupo de Membros {#members-group}
+### Grupo de membros {#members-group}
 
 Quando um site da comunidade é criado, o nome dado ao site para o URL é usado na criação dos [grupos de usuários específicos do site](users.md) configurados com várias permissões para várias funções. Todos esses grupos criados automaticamente recebem o prefixo `Community <site-name>`.
 
@@ -72,7 +71,7 @@ Para [comunidades de ativação](overview.md#enablement-community), é recomend�
 
 ## Acessar os recursos de ativação de um site da comunidade {#accessing-a-community-site-s-enablement-resources}
 
-### Navegue até Recursos do Communities {#navigate-to-communities-resources}
+### Navegar até os Recursos das Comunidades {#navigate-to-communities-resources}
 
 No ambiente de criação, para acessar o console Recursos
 
@@ -90,7 +89,7 @@ Depois que um site específico da comunidade é selecionado, todos os recursos d
 
 ![recursos da comunidade](assets/community-resources.png)
 
-#### Pesquisar {#search-features}
+#### Pesquisar   {#search-features}
 
 ![searchsite](assets/searchsite.png)
 
@@ -104,7 +103,7 @@ Para selecionar vários recursos de ativação, selecione o primeiro ao passar o
 
 ![modo de seleção](assets/selection-mode.png)
 
-## Criar um Recurso {#create-a-resource}
+## Criar um recurso {#create-a-resource}
 
 ![create-resource](assets/create-resource1.png)
 
@@ -295,7 +294,7 @@ Selecione `'+' icon`, no canto superior direito, para iniciar o processo de esco
 
 A criação bem-sucedida do recurso de ativação retorna ao console Recursos com o recurso recém-criado selecionado. Desse console, é possível [gerenciar o recurso](#managing-a-resource).
 
-## Criar um caminho de aprendizagem {#create-a-learning-path}
+## Criar um caminho de aprendizado {#create-a-learning-path}
 
 ![add-learning-path](assets/add-learning-path.png)
 
@@ -408,7 +407,7 @@ Para recursos de capacitação incluídos em um caminho de aprendizado, as atrib
 >
 >Se um membro estiver inscrito em um recurso de ativação e em um caminho de aprendizado que faça referência a esse recurso, suas atribuições mostrarão o recurso único e o recurso no caminho de aprendizado.
 
-## Gerenciar um Recurso {#managing-a-resource}
+## Gerenciar um recurso {#managing-a-resource}
 
 Para gerenciar um único recurso de ativação:
 
