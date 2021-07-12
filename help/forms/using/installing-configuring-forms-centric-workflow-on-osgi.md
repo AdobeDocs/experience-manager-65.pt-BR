@@ -7,17 +7,16 @@ uuid: 1ceae822-215a-4b83-a562-4609a09c3a54
 topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1643'
+source-wordcount: '1642'
 ht-degree: 5%
 
 ---
 
-
-# Instalar e configurar um fluxo de trabalho centrado no Forms no OSGi{#installing-and-configuring-forms-centric-workflow-on-osgi}
+# Instalação e configuração de fluxo de trabalho centrado no Forms no OSGi{#installing-and-configuring-forms-centric-workflow-on-osgi}
 
 ## Introdução {#introduction}
 
@@ -99,7 +98,7 @@ Antes de começar a instalar e configurar o fluxo de trabalho centrado no Forms 
  </tbody>
 </table>
 
-## Instale o pacote complementar do AEM Forms {#install-aem-forms-add-on-package}
+## Instalar o pacote complementar do AEM Forms {#install-aem-forms-add-on-package}
 
 O pacote do complemento AEM Forms é um aplicativo implantado em AEM. O pacote contém um fluxo de trabalho centrado no Forms no OSGi e outros recursos. Execute as seguintes etapas para instalar o pacote complementar:
 
@@ -123,7 +122,7 @@ O AEM Forms tem algumas configurações obrigatórias e opcionais. As configura�
 
 ### Configurações obrigatórias pós-instalação {#mandatory-post-installation-configurations}
 
-#### Configurar bibliotecas RSA e BouncyCastle {#configure-rsa-and-bouncycastle-libraries}
+#### Configurar bibliotecas RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
 Execute as seguintes etapas em todas as instâncias de Autor e Publicação para inicializar e delegar as bibliotecas:
 
@@ -168,7 +167,7 @@ O Dispatcher está armazenando em cache e na ferramenta de balanceamento de carg
 
    Faça logon no gerenciador de configuração do Apache Felix como administrador. O URL padrão do gerenciador de configuração é https://&#39;server&#39;:[port_number]/system/console/configMgr. No menu **Configurations**, selecione a opção **Apache Sling Referrer Filter**. No campo Permitir hosts , insira o nome do host do dispatcher para permitir como referenciador e clique em **Salvar**. O formato da entrada é `https://'[server]:[port]'`.
 
-#### Configurar Cache {#configure-cache}
+#### Configurar cache {#configure-cache}
 
 O armazenamento em cache é um mecanismo para reduzir o tempo de acesso aos dados, reduzir a latência e melhorar as velocidades de entrada/saída (I/O). O cache de formulários adaptáveis armazena somente o conteúdo HTML e a estrutura JSON de um formulário adaptável sem salvar dados pré-preenchidos. Ajuda a reduzir o tempo necessário para renderizar um formulário adaptável.
 
@@ -199,4 +198,3 @@ Você configurou um ambiente para usar um fluxo de trabalho centrado no Forms em
 * [Uso de fluxos de trabalho centrados no Forms no OSGi](../../forms/using/aem-forms-workflow.md)
 * [Referência da Etapa do fluxo de trabalho](/help/sites-developing/workflows-step-ref.md)
 * [Pós-processamento de cartas e comunicações interativas](../../forms/using/submit-letter-topostprocess.md)
-
