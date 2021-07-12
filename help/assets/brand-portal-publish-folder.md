@@ -1,8 +1,8 @@
 ---
 title: Publicar pastas no Brand Portal
 seo-title: Publicar pastas no Brand Portal
-description: Saiba como publicar e cancelar a publicação de pastas no Brand Portal.
-seo-description: Saiba como publicar e cancelar a publicação de pastas no Brand Portal.
+description: Saiba como publicar e desfazer a publicação de pastas no Brand Portal.
+seo-description: Saiba como publicar e desfazer a publicação de pastas no Brand Portal.
 uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,25 +11,24 @@ content-type: reference
 discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
 feature: Brand Portal
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: User
+exl-id: 92a156f0-ce2a-4c83-bd57-0c29efbf784f
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '583'
 ht-degree: 38%
 
 ---
 
-
 # Publicar pastas no Brand Portal{#publish-folders-to-brand-portal}
 
-Como administrador do Adobe Experience Manager (AEM) Assets, você pode publicar ativos e pastas na instância do AEM Assets Brand Portal (ou agendar o fluxo de trabalho de publicação para uma data/hora posterior) para sua organização. No entanto, primeiro você deve integrar o AEM Assets ao Brand Portal. Para obter detalhes, consulte [Configurar o AEM Assets com o Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
+Como administrador do Adobe Experience Manager (AEM) Assets, você pode publicar ativos e pastas na instância do AEM Assets Brand Portal (ou agendar o fluxo de trabalho de publicação para uma data/hora posterior) para sua organização. No entanto, primeiro você deve integrar o AEM Assets com o Brand Portal. Para obter detalhes, consulte [Configurar o AEM Assets com o Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
-Após publicar um ativo ou pasta, ele fica disponível para os usuários no Brand Portal.
+Após publicar um ativo ou uma pasta, ele fica disponível para os usuários no Brand Portal.
 
-Se fizer modificações subsequentes no ativo ou pasta original no AEM Assets, as alterações não serão refletidas no Brand Portal até que publique novamente o ativo ou a pasta. Esse recurso garante que as alterações de trabalho em andamento não estejam disponíveis no Brand Portal. Somente as alterações aprovadas publicadas por um administrador são disponibilizadas no Brand Portal.
+Se você fizer modificações subsequentes no ativo ou pasta original no AEM Assets, as alterações não serão refletidas no Brand Portal até que você publique novamente o ativo ou a pasta. Esse recurso garante que as alterações de trabalho em andamento não estejam disponíveis no Brand Portal. Somente as alterações aprovadas publicadas por um administrador são disponibilizadas no Brand Portal.
 
-## Publicar pastas no Brand Portal{#publish-folders-to-brand-portal-1}
+## Publicar pastas no Brand Portal {#publish-folders-to-brand-portal-1}
 
 1. Na interface do AEM Assets, passe o mouse sobre a pasta desejada e selecione a opção **Publish** nas ações rápidas.
 
@@ -41,20 +40,20 @@ Se fizer modificações subsequentes no ativo ou pasta original no AEM Assets, a
 
    Para publicar as pastas selecionadas no Brand Portal, siga um dos procedimentos a seguir:
 
-   * Na barra de ferramentas, selecione **Publicação rápida**. Em seguida, no menu, selecione **Publicar no Brand Portal**.
+   * Na barra de ferramentas, selecione **Publicação rápida**. Em seguida, no menu, selecione **Publish to Brand Portal**.
 
    * Na barra de ferramentas, selecione **Gerenciar publicação**.
-   1. Em **Ação** selecione **Publicar no Brand Portal**, em **Agendamento** selecione **Agora**, e clique em **Próximo.**
+   1. Em **Ação**, selecione **Publicar no Brand Portal**, em **Agendamento**, selecione **Agora** e clique em **Seguinte.**
    1. Confirme sua seleção no **Escopo** e clique em **Publicar no Brand Portal**.
 
    Será exibida uma mensagem informando que a pasta foi colocada na fila para publicação no Brand Portal. Faça logon na interface do Brand Portal para ver a pasta publicada.
 
    **Publicar pastas mais tarde**
 
-   Para agendar o fluxo de trabalho publicar no Brand Portal de pastas de ativos para uma data ou hora posterior:
+   Para agendar a publicação no fluxo de trabalho do Brand Portal de pastas de ativos para uma data ou hora posterior:
 
    1. Depois de selecionar os ativos/pastas para publicar, selecione **Gerenciar publicação** na barra de ferramentas na parte superior.
-   1. Em **Ação** selecione **Publicar no Brand Portal**, em **Agendamento** selecione **Mais Tarde**.
+   1. Em **Action** selecione **Publish to Brand Portal**, em **Scheduling** selecione **Later**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
@@ -78,17 +77,17 @@ Você tem a opção de cancelar a publicação de pastas do Brand Portal rapidam
 
 1. Na barra de ferramentas, clique em **Gerenciar publicação**.
 
-1. **Cancelar publicação do Brand Portal agora**
+1. **Cancelar a publicação do Brand Portal agora**
 
-   Para cancelar a publicação rápida da pasta desejada no Brand Portal:
+   Para cancelar a publicação rapidamente da pasta desejada do Brand Portal:
 
    1. Na barra de ferramentas, selecione **Gerenciar publicação**.
-   1. Em **Ação** selecione **Cancelar publicação do Brand Portal**, em **Agendamento** selecione **Agora**, e clique em **Próximo.**
+   1. Em **Ação**, selecione **Cancelar publicação do Brand Portal**, em **Agendamento**, selecione **Agora** e clique em **Próximo.**
    1. Confirme sua seleção no **Escopo** e clique em **Cancelar publicação no Brand Portal**.
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
-   **Cancelar publicação do Brand Portal mais tarde**
+   **Cancelar a publicação do Brand Portal mais tarde**
 
    Para agendar a publicação de uma pasta do Brand Portal para uma data e hora posteriores:
 
@@ -103,5 +102,4 @@ Você tem a opção de cancelar a publicação de pastas do Brand Portal rapidam
 
 >[!NOTE]
 >
->O procedimento para publicar/cancelar a publicação de um ativo no/do Brand Portal é semelhante ao procedimento correspondente para uma pasta.
-
+>O procedimento para publicar/cancelar a publicação de um ativo de/para o Brand Portal é semelhante ao procedimento correspondente para uma pasta.
