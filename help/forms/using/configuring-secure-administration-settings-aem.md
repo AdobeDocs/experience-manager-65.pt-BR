@@ -8,15 +8,14 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
-
 
 # Definição das configurações de administração segura para AEM Forms no JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
@@ -26,7 +25,7 @@ Geralmente, os desenvolvedores não usam o ambiente de produção para criar e t
 
 Este artigo descreve métodos para reduzir a superfície geral dos ataques por meio de opções de administração fornecidas pelo AEM Forms no JEE.
 
-## Desativar o acesso remoto não essencial aos serviços {#disabling-non-essential-remote-access-to-services}
+## Desabilitação do acesso remoto não essencial a serviços {#disabling-non-essential-remote-access-to-services}
 
 Depois que o AEM Forms no JEE é instalado e configurado, muitos serviços estão disponíveis para invocação remota sobre SOAP e Enterprise JavaBeans™ (EJB). O termo remoto, neste caso, refere-se a qualquer chamador que tenha acesso de rede às portas SOAP, EJB ou Formato de Mensagem de Ação (AMF) para o servidor de aplicativos.
 
@@ -67,7 +66,7 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
 
 1. Clique em **Next** e repita a etapa anterior para pontos de extremidade SOAP que não estão na lista acima. Certifique-se de que o SOAP esteja listado na coluna Provedor antes de remover pontos de extremidade.
 
-## Desativar o acesso anônimo não essencial aos serviços {#disabling-non-essential-anonymous-access-to-services}
+## Desabilitação do acesso anônimo não essencial a serviços {#disabling-non-essential-anonymous-access-to-services}
 
 Alguns serviços do servidor de formulários permitem a invocação não autenticada (anônima) para algumas operações. Isso significa que uma ou mais operações expostas pelo serviço podem ser chamadas como qualquer usuário autenticado ou como nenhum usuário autenticado.
 
@@ -130,4 +129,3 @@ Os usuários finais podem autenticar para o AEM Forms por meio do Workbench, de 
 1. No console de administração, navegue até a página Importar e exportar arquivos de configuração .
 1. Insira o caminho para o arquivo config.xml modificado ou clique em Procurar para navegar até ele.
 1. Clique em **Importar** para carregar o arquivo config.xml modificado e clique em **OK**.
-
