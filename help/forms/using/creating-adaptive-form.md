@@ -2,11 +2,10 @@
 title: Como criar um formulário adaptável
 description: 'Saiba como criar um formulário adaptável usando [!DNL Experience Manager Forms]. Os formulários adaptáveis são formulários HTML5 responsivos que simplificam a coleta e o processamento de informações. Saiba mais sobre como criar um formulário adaptável com base em um modelo de dados de formulário, modelo de formulário XFA e esquema XML ou JSON. '
 feature: Formulários adaptáveis
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 0%
@@ -148,7 +147,7 @@ Além disso, você pode usar o editor de modelos para criar seus próprios model
 >
 >Ao abrir um formulário adaptável criado usando o modelo avançado para edição, uma mensagem de erro é exibida. O modelo avançado tem um componente Etapa de assinatura e o Adobe Sign é ativado para ele por padrão. Crie e selecione uma [Configuração da nuvem Adobe Sign](adobe-sign-integration-adaptive-forms.md) e [configure um assinante](working-with-adobe-sign.md#addsignerstoanadaptiveform) para resolver o erro.
 
-## Editar as propriedades do Modelo de formulário de um formulário adaptável {#edit-form-model}
+## Editar propriedades do Modelo de formulário de um formulário adaptável {#edit-form-model}
 
 Os formulários adaptáveis são criados sem um modelo de formulário (usando a opção Nenhum para o modelo de formulário) ou usando um modelo de formulário, como um modelo de formulário, esquema XML ou esquema JSON, ou modelo de dados de formulário. É possível alterar o modelo de formulário para um formulário adaptável de Nenhum para outro modelo de formulário. Para formulários adaptáveis baseados em um modelo de formulário, é possível escolher outro modelo de formulário, esquema XML, esquema JSON ou modelo de dados de formulário para o mesmo modelo de formulário. No entanto, não é possível alterar de um modelo de formulário para outro.
 
