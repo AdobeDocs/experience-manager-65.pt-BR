@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
 docset: aem65
 feature: Fragmentos de conteúdo
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 28e1052f-62b5-47bc-9bc8-f2d92f0254f6
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 4%
@@ -188,7 +188,7 @@ Os blocos de código geralmente são usados para ilustrar o código-fonte. Você
 
         `This is a code block.`
 
-## A barra invertida evita {#backslash-escapes}
+## Escovas da barra invertida {#backslash-escapes}
 
 Você pode usar escape de barra invertida para gerar caracteres literais que têm significado especial na formatação da sintaxe. Por exemplo, se você deseja rodar uma palavra com asteriscos literais (em vez de uma tag HTML &lt;em> ), é possível usar barras invertidas antes dos asteriscos, desta forma:
 
