@@ -7,23 +7,22 @@ contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 1%
+source-wordcount: '862'
+ht-degree: 0%
 
 ---
 
-
-# Forms Portal | Tratamento de dados do usuário {#forms-portal-handling-user-data}
+# Forms Portal | Tratamento de dados de utilizadores {#forms-portal-handling-user-data}
 
 [!DNL AEM Forms] O portal fornece componentes que podem ser usados para listar formulários adaptáveis, formulários HTML5 e outros ativos do Forms na  [!DNL AEM Sites] página. Além disso, é possível configurá-lo para exibir rascunhos e formulários adaptáveis enviados e formulários HTML5 para um usuário conectado. Para obter mais informações sobre o portal de formulários, consulte [Introdução à publicação de formulários em um portal](/help/forms/using/introduction-publishing-forms.md).
 
 Quando um usuário conectado salva um formulário adaptável como rascunho ou o envia, ele é exibido nas guias Rascunhos e Envios no portal de formulários. Os dados para rascunhos ou formulários enviados são armazenados no armazenamento de dados configurado para AEM implantação. Os rascunhos e envios de usuários anônimos não são exibidos na página do portal de formulários; no entanto, os dados são armazenados no armazenamento de dados configurado. Para obter mais informações, consulte [Configuração de serviços de armazenamento para rascunhos e envios](/help/forms/using/configuring-draft-submission-storage.md).
 
-## Os dados e armazenamentos de dados do usuário {#user-data-and-data-stores}
+## Armazenamento de dados e dados do usuário {#user-data-and-data-stores}
 
 O portal do Forms armazena dados para formulários de rascunho e enviados nos seguintes cenários:
 
@@ -122,4 +121,3 @@ Para excluir rascunhos e enviar dados para um usuário conectado das tabelas do 
 ```sql
 DELETE FROM metadata, data, additionalmetadatatable USING metadata INNER JOIN data ON metadata.userdataID = data.id INNER JOIN additionalmetadatatable ON metadata.id = additionalmetadatatable.id WHERE metadata.owner = 'logged-in user'
 ```
-
