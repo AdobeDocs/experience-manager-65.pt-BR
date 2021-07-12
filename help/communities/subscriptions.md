@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '361'
 ht-degree: 2%
 
 ---
-
 
 # Assinaturas das Comunidades {#communities-subscriptions}
 
@@ -45,7 +44,7 @@ Para obter instruções sobre como configurar o email, consulte [Configuração 
 
 Os componentes devem ser configurados para ativar as assinaturas *e* a seguir. Os recursos que permitem assinaturas são [blog](blog-feature.md), [forum](forum.md) e [QnA](working-with-qna.md).
 
-## Assinaturas de {#subscriptions-from-following} a seguir
+## Assinaturas do seguinte {#subscriptions-from-following}
 
 ![subscription-following](assets/subscription-following.png)
 
@@ -59,7 +58,7 @@ O botão **Follow** incluirá a opção `Email Subscriptions` somente quando um 
 
 * Para uma entrada específica, como um tópico de fórum, pergunta de QnA ou artigo de blog Enviará um email quando houver atividade para essa entrada específica.
 
-## Responder por e-mail {#reply-by-email}
+## Responder por email {#reply-by-email}
 
 Quando o email for [configurado para responder por email](email.md#configure-polling-importer), o membro que se inscreveu receberá um email com o conteúdo postado e um link para o conteúdo online.
 
@@ -70,4 +69,3 @@ Se responderem ao email, o conteúdo inserido na resposta será exibido como con
 O tempo que leva para uma resposta ser postada é controlado pelo [intervalo de atualização do importador de pesquisa](email.md#configure-polling-importer).
 
 ![QA](assets/qa.png)
-
