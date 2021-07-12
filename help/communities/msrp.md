@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1209'
 ht-degree: 1%
 
 ---
 
-
-# MSRP - Provedor de recursos de armazenamento do MongoDB {#msrp-mongodb-storage-resource-provider}
+# MSRP - Provedor de recursos de armazenamento MongoDB {#msrp-mongodb-storage-resource-provider}
 
 ## Sobre o MSRP {#about-msrp}
 
@@ -50,7 +49,7 @@ Consulte também [Características das Opções de SRP](working-with-srp.md#char
 
 ## Configuração do MongoDB {#mongodb-configuration}
 
-### Selecione MSRP {#select-msrp}
+### Selecionar MSRP {#select-msrp}
 
 O [console Configuração de Armazenamento](srp-config.md) permite a seleção da configuração de armazenamento padrão, que identifica qual implementação do SRP usar.
 
@@ -115,7 +114,7 @@ Para saber mais sobre conjuntos de réplicas, visite a documentação [Replicati
 
 Para trabalhar com conjuntos de réplicas e aprender a definir conexões entre aplicativos e instâncias MongoDB, visite a documentação [Connection String URI Format](https://docs.mongodb.org/manual/reference/connection-string/) do MongoDB.
 
-#### Exemplo de Url para Conexão com um Conjunto de Réplicas {#example-url-for-connecting-to-a-replica-set}
+#### Exemplo de Url para Conexão com um Conjunto de Réplicas  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -158,7 +157,7 @@ Para disponibilizar a configuração idêntica no ambiente de publicação, faç
    * Navegue até `/etc/socialconfig/srpc/`
 * Selecione **[!UICONTROL Ativar]**
 
-## Gerenciando dados do usuário {#managing-user-data}
+## Gerenciar dados do usuário {#managing-user-data}
 
 Para obter informações sobre *usuários*, *perfis de usuário* e *grupos de usuários*, normalmente inseridos no ambiente de publicação, visite
 
@@ -182,7 +181,7 @@ Um padrão razoável é 5000:
 * Se a memória for um problema, especifique um número menor
 * Se a velocidade for um problema, especifique um número maior para aumentar a velocidade
 
-### Executando a ferramenta de reindexação MSRP usando o comando cURL {#running-msrp-reindex-tool-using-curl-command}
+### Execução da ferramenta de reindexação MSRP usando o comando cURL {#running-msrp-reindex-tool-using-curl-command}
 
 O seguinte comando cURL mostra o que é necessário para uma solicitação HTTP reindexar o UGC armazenado no MSRP.
 
@@ -243,7 +242,7 @@ Há uma ferramenta de código aberto disponível no GitHub para essa finalidade:
 
 A ferramenta de migração pode ser personalizada para exportar o UGC de versões anteriores de comunidades sociais AEM para importação no AEM Communities 6.1 ou posterior.
 
-### Erro - id_provedor de campo indefinido {#error-undefined-field-provider-id}
+### Erro - provider_id de campo indefinido {#error-undefined-field-provider-id}
 
 Se o seguinte erro for visto nos logs, isso indica que o arquivo de esquema Solr não está configurado corretamente.
 
@@ -262,7 +261,7 @@ Para resolver o erro, ao seguir as instruções para [Instalar o MLS padrão](so
 * Os arquivos de configuração XML foram copiados para o local correto do Solr.
 * A Solr foi reiniciada depois que os novos arquivos de configuração substituíram os existentes.
 
-### Conexão segura ao MongoDB falha {#secure-connection-to-mongodb-fails}
+### Falha na Conexão Segura ao MongoDB {#secure-connection-to-mongodb-fails}
 
 Se uma tentativa de fazer uma conexão segura com o servidor MongoDB falhar devido a uma definição de classe ausente, é necessário atualizar o pacote de driver MongoDB, `mongo-java-driver`, disponível no repositório Maven público.
 
@@ -274,4 +273,3 @@ Se uma tentativa de fazer uma conexão segura com o servidor MongoDB falhar devi
 
 * [AEM com MongoDB](../../help/sites-deploying/aem-with-mongodb.md)
 * [Documentação do MongoDB](https://docs.mongodb.org/)
-
