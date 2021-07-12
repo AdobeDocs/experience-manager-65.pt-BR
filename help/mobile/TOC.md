@@ -6,9 +6,8 @@ user-guide-title: Guia do usuário do AEM 6.5 Mobile
 breadcrumb-title: Guia do Mobile
 user-guide-description: Crie e gerencie conteúdo para aplicativos móveis.
 feature: Móvel
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+role: User
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 12%
