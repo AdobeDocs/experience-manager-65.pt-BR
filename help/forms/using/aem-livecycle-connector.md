@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
-
 
 # Conectar o AEM Forms com o LiveCycle Adobe {#connecting-aem-forms-with-adobe-livecycle}
 
@@ -45,7 +44,7 @@ Embora as propriedades sejam autoexplicativas, as mais importantes são as segui
 * **Senha** - Especifica a senha.
 * **Nome do serviço**  - Especifica os serviços que são iniciados usando as credenciais do usuário fornecidas nos campos Nome de usuário e Senha. Por padrão, nenhuma credencial é passada ao iniciar os serviços do LiveCycle.
 
-## Iniciando serviços de documento {#starting-document-services}
+## Iniciar serviços de documento {#starting-document-services}
 
 Os aplicativos clientes podem iniciar programaticamente os serviços do LiveCycle usando uma API Java, Serviços da Web, Remoção e REST. Para clientes Java, o aplicativo pode usar o SDK do LiveCycle. O SDK do LiveCycle fornece uma API Java para iniciar esses serviços remotamente. Por exemplo, para converter um Documento do Microsoft Word em PDF, o cliente inicia o GeneratePDFSService. O fluxo de invocação consiste nas seguintes etapas:
 
@@ -241,7 +240,7 @@ Os seguintes serviços estão disponíveis:
 </dependency>
 ```
 
-### Pacote do SDK do cliente do Adobe LiveCycle {#adobe-livecycle-client-sdk-bundle}
+### Pacote de SDK do cliente do Adobe LiveCycle {#adobe-livecycle-client-sdk-bundle}
 
 Os seguintes serviços estão disponíveis:
 
@@ -311,7 +310,7 @@ O seguinte serviço está disponível:
 </dependency>
 ```
 
-### Pacote do Cliente do Adobe LiveCycle Application Manager {#adobe-livecycle-application-manager-client-bundle}
+### Pacote do cliente do Adobe LiveCycle Application Manager {#adobe-livecycle-application-manager-client-bundle}
 
 Os seguintes serviços estão disponíveis:
 
@@ -409,7 +408,7 @@ O seguinte serviço está disponível:
 </dependency>
 ```
 
-### Pacote do Cliente do Adobe LiveCycle Rights Manager {#adobe-livecycle-rights-manager-client-bundle}
+### Pacote do cliente do Adobe LiveCycle Rights Manager {#adobe-livecycle-rights-manager-client-bundle}
 
 Os seguintes serviços estão disponíveis:
 
@@ -431,7 +430,7 @@ Os seguintes serviços estão disponíveis:
 </dependency>
 ```
 
-### Pacote do cliente de assinaturas do Adobe LiveCycle {#adobe-livecycle-signatures-client-bundle}
+### Pacote de clientes de assinaturas do LiveCycle Adobe {#adobe-livecycle-signatures-client-bundle}
 
 O seguinte serviço está disponível:
 
