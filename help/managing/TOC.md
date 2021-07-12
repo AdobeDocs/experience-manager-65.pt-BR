@@ -6,12 +6,11 @@ user-guide-title: Guia do usuário de gerenciamento do AEM 6.5
 breadcrumb-title: Guia de gerenciamento
 user-guide-description: Saiba como gerenciar um projeto do AEM.
 feature: Implantação
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+role: User
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '73'
-ht-degree: 61%
+ht-degree: 67%
 
 ---
 
@@ -25,11 +24,11 @@ ht-degree: 61%
    + [Glossário](best-practices-glossary.md)
    + [Lista de verificação - mais referência](best-practices-further-reference.md)
 + Gerenciamento - Mais referência {#managing-further-reference}
-   + [Diretrizes de dimensionamento do hardware](hardware-sizing-guidelines.md) 
+   + [Diretrizes de dimensionamento do hardware ](hardware-sizing-guidelines.md)
    + [DevOps empresarial](enterprise-devops.md)
    + [Práticas recomendadas de gerenciamento de SEO e URL](seo-and-url-management.md)
 + Acessibilidade {#accessibility}
    + [AEM e as diretrizes de acessibilidade da Web](web-accessibility.md)
-   + [Guia rápido para a WCAG 2.1](qg-wcag.md)
+   + [Um guia rápido para WCAG 2.1](qg-wcag.md)
 + Proteção de dados {#data-protection}
    + [Regulamentos de disponibilidade para proteção e privacidade de dados do AEM](data-protection-and-privacy.md)
