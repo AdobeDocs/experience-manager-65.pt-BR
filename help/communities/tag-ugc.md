@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 4%
+source-wordcount: '248'
+ht-degree: 3%
 
 ---
-
 
 # Marcação de conteúdo gerado pelo usuário {#tagging-user-generated-content}
 
@@ -58,4 +57,3 @@ Consulte [Definir permissões de tag](../../help/sites-administering/tags.md#set
 Veja a seguir como ele aparece no CRXDE quando um administrador aplica permissões de leitura a `/etc/tag/discussions` para o grupo `Community Engage Members`.
 
 ![permissões de tag](assets/tag-permissions.png)
-
