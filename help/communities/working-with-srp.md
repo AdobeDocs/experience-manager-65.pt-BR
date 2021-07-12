@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 6f13b21a-f4ef-4889-9b8e-4da3f846fa35
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: e29aae44-67be-43d2-8004-c986412d9e63
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
-
 
 # SRP - Armazenamento de conteúdo da comunidade {#srp-community-content-storage}
 
@@ -42,7 +41,7 @@ Para obter detalhes sobre o uso do SRP para UGC, consulte [Visão Geral do Prove
 >
 >Quando a implantação não inclui um armazenamento comum, como a topologia padrão [JSRP](/help/communities/topologies.md#jsrp), o UGC estará visível somente na instância de publicação ou autor do AEM em que foi inserido. Somente se a topologia incluir um cluster de publicação, o UGC estará visível em qualquer instância de publicação.
 
-## Características das opções do SRP {#characteristics-of-srp-options}
+## Características das opções de SRP {#characteristics-of-srp-options}
 
 [ASRP - Provedor de Recursos de Armazenamento Adobe](/help/communities/asrp.md)
 
@@ -131,7 +130,7 @@ A partir do AEM Communities 6.1, a necessidade de replicação do UGC foi elimin
 
 Embora o conteúdo do site seja replicado, o UGC nunca é replicado.
 
-### Gerenciando dados do usuário {#managing-user-data}
+### Gerenciar dados do usuário {#managing-user-data}
 
 Além disso, de interesse para o CommunitIes são [*users*, *grupos de usuários* e *perfis de usuário*](/help/communities/users.md). Esses dados relacionados ao usuário, quando criados e atualizados no ambiente de publicação, precisam ser disponibilizados para outras instâncias de publicação quando a topologia for um [farm de publicação](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
 
