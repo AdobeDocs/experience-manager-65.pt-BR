@@ -6,17 +6,16 @@ uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
 
-
-# Gerenciamento de usuários do Forms | Tratamento de dados do usuário {#forms-user-management-handling-user-data}
+# Gerenciamento de usuários do Forms | Tratamento de dados de utilizadores {#forms-user-management-handling-user-data}
 
 O gerenciamento de usuários é um componente JEE do AEM Forms que permite criar, gerenciar e autorizar usuários do AEM Forms a acessar o AEM Forms. O gerenciamento de usuários usa domínios como diretório para obter informações do usuário. Os seguintes tipos de domínio são suportados:
 
@@ -28,7 +27,7 @@ O gerenciamento de usuários é um componente JEE do AEM Forms que permite criar
 
 <!-- Fix broken links For more information about how user management works and configured, see AEM Forms JEE administration help. -->
 
-## Os dados e armazenamentos de dados do usuário {#user-data-and-data-stores}
+## Armazenamento de dados e dados do usuário {#user-data-and-data-stores}
 
 O gerenciamento de usuários armazena dados de usuários em um banco de dados, como My Sql, Oracle, MS SQL Server e IBM DB2. Além disso, qualquer usuário que tenha feito logon pelo menos uma vez nos aplicativos Forms AEM autor em `https://'[server]:[port]'lc`, o usuário será criado AEM repositório. Portanto, o gerenciamento de usuários é armazenado nos seguintes armazenamentos de dados:
 
@@ -192,4 +191,3 @@ Para excluir um usuário:
 1. Procure por um usuário e clique duas vezes no nome de usuário para abrir as propriedades do usuário. Copie a propriedade `Path` .
 1. Vá para AEM CRX DELite em `https://'[server]:[port]'/lc/crx/de/index.jsp` e navegue ou pesquise o caminho do usuário.
 1. Exclua o caminho e clique em **[!UICONTROL Salvar tudo]** para excluir permanentemente o usuário AEM repositório.
-
