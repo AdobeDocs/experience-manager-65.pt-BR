@@ -4,15 +4,14 @@ seo-title: Instalar o workbench
 description: Instale o workbench.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
-
 
 # Instalar o Workbench {#install-workbench}
 
@@ -176,7 +175,7 @@ Antes de instalar o Workbench, é necessário garantir que seu ambiente inclua o
    * **Designer**: Você pode acessar o Designer no Workbench. Para obter informações, consulte o tópico Introdução em <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Ajuda do Designer</a>.
    * **AEM Forms SDK**: Para obter mais informações sobre como usar o SDK, consulte  <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programação com o AEM Forms</a>.
 
-## Atualizar processos {#upgrading-processes}
+## Atualização de processos {#upgrading-processes}
 
 Os processos do AEM Forms em JEE podem ser atualizados para aplicativos AEM Forms usando o Assistente de atualização. Consulte Atualização da documentação de artefatos herdados na Ajuda do Workbench para obter mais informações.
 
@@ -192,7 +191,7 @@ Para usar o Workbench, é necessário ter uma instância do AEM Forms em execuç
 
 Por padrão, o Workbench expira após duas horas, independentemente da atividade ou da inatividade. Para editar a configuração de tempo limite, consulte &quot;Configuração do gerenciamento de usuários > Configurar atributos avançados do sistema&quot; na <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Ajuda do console de administração</a>.
 
-### Configurar o Workbench para se conectar por HTTPS {#configuring-workbench-to-connect-over-HTTPS}
+### Configuração do Workbench para se conectar via HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
 Para conectar o Workbench a um servidor AEM Forms por HTTPS, você deve garantir que a autoridade de certificação (CA) que emitiu a chave pública seja reconhecida como confiável pelo Workbench. Se o certificado não for reconhecido como proveniente de uma fonte confiável, você deverá atualizar o arquivo de alerta localizado no diretório [Workbench_HOME]/workbench/jre/lib/security.
 
@@ -261,7 +260,7 @@ As práticas recomendadas a seguir garantem que o cache não cresça infinitamen
 
 Use a função Adicionar ou remover programas no Painel de controle do Campaign para iniciar o Desinstalador. Os aplicativos do Workbench e do Designer têm programas de desinstalação separados.
 
-## Configurar o editor XDC do AEM Forms {#configuring-aem-forms-xdc-editor}
+## Configuração do editor AEM Forms XDC {#configuring-aem-forms-xdc-editor}
 
 Usando o XDC Editor, os administradores de impressoras de rede podem criar e modificar arquivos XML Forms Architecture Device Configuration (XDC). Os arquivos XDC descrevem os recursos das impressoras, como o idioma da impressora ou a correlação entre o tamanho do papel e o local da bandeja.
 
@@ -274,4 +273,3 @@ Antes de o administrador da impressora de rede usar o Editor XDC, localize os ar
 **Para obter a Ajuda** do XDC Editor:
 1. Acesse o site da documentação do AEM Forms.
 1. Clique na guia **Desenvolver** e navegue até Criar perfis de dispositivo usando o XDC Editor. Baixe o arquivo xdc_editor_help_web.zip e instale os arquivos de Ajuda seguindo as instruções fornecidas no arquivo Readme.
-
