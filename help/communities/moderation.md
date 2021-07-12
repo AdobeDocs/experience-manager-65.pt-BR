@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2111'
+source-wordcount: '2110'
 ht-degree: 4%
 
 ---
-
 
 # Console de moderação {#moderation-console}
 
@@ -111,7 +110,7 @@ A área de conteúdo contém informações para o UGC publicado:
 > 
 >A área de conteúdo apresenta uma *rolagem infinita*, o que significa que permitirá que você continue a rolagem até atingir o fim do conteúdo. A barra de ferramentas permanece em uma posição fixa e visível acima da área de conteúdo, mesmo durante a rolagem.
 
-### Filtrar Trilho {#ootbfilters}
+### Filtrar painel {#ootbfilters}
 
 ![open-filterrail](assets/open-filterrail.png)
 
@@ -325,7 +324,7 @@ Ao trabalhar com uma única publicação, um ícone de Resposta será exibido se
 
 Ao trabalhar com uma única publicação, o ícone Permitir será exibido quando a publicação tiver sido sinalizada ou negada. Se estiver sinalizado, selecionar Permitir apagará todos os sinalizadores.
 
-#### Negar {#deny}
+#### Negar  {#deny}
 
 ![negar ](assets/deny.png)
 
@@ -337,7 +336,7 @@ O conteúdo moderado insere inicialmente um estado Pendente e pode ser modificad
 
 O conteúdo que deixa o estado pendente nunca pode retornar a um estado pendente. O conteúdo marcado como aprovado ou negado pode ser alterado para um estado diferente a qualquer momento.
 
-#### Exclua {#delete}
+#### Excluir {#delete}
 
 ![delete](assets/delete.png)
 
@@ -374,4 +373,3 @@ Para retornar à exibição da área de conteúdo de várias publicações UGC, 
 Por exemplo:
 
 ![view1](assets/view1.png)
-
