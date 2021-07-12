@@ -11,21 +11,20 @@ content-type: reference
 discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
 feature: Brand Portal
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: User
+exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '373'
 ht-degree: 44%
 
 ---
 
-
-# Publicar ativos no Brand Portal{#publish-assets-to-brand-portal}
+# Publicar ativos no Brand Portal {#publish-assets-to-brand-portal}
 
 Como administrador do Adobe Experience Manager (AEM) Assets, você pode publicar ativos e pastas na instância do AEM Assets Brand Portal (ou agendar o fluxo de trabalho de publicação para uma data/hora posterior) para sua organização. No entanto, primeiro você deve configurar o AEM Assets com o Brand Portal. Para obter detalhes, consulte [Configurar o AEM Assets com o Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
-Depois que a replicação for bem-sucedida, você poderá publicar ativos, pastas e coleções no Brand Portal. Para publicar ativos no Brand Portal, siga estas etapas:
+Depois que a replicação for bem-sucedida, você poderá publicar ativos, pastas e Coleções no Brand Portal. Para publicar ativos no Brand Portal, siga estas etapas:
 
 >[!NOTE]
 >
@@ -45,13 +44,13 @@ Depois que a replicação for bem-sucedida, você poderá publicar ativos, pasta
 
 Para publicar os ativos selecionados no Brand Portal, siga um dos procedimentos a seguir:
 
-* Na barra de ferramentas, selecione **[!UICONTROL Publicação rápida]**. Em seguida, no menu, selecione **[!UICONTROL Publicar no Brand Portal]**.
+* Na barra de ferramentas, selecione **[!UICONTROL Publicação rápida]**. Em seguida, no menu, selecione **[!UICONTROL Publish to Brand Portal]**.
 
 * Na barra de ferramentas, selecione **[!UICONTROL Gerenciar publicação]**.
 
-   1. Em seguida, no **[!UICONTROL Action]** selecione **[!UICONTROL Publicar no Brand Portal]** e, no **[!UICONTROL Scheduling]**, selecione **[!UICONTROL Now]**. Clique em **[!UICONTROL Avançar]**.
+   1. Em seguida, no **[!UICONTROL Action]** selecione **[!UICONTROL Publish to Brand Portal]** e, em **[!UICONTROL Scheduling]**, selecione **[!UICONTROL Now]**. Clique em **[!UICONTROL Avançar]**.
 
-   2. Dentro de **[!UICONTROL Escopo]**, confirme sua seleção e clique em **[!UICONTROL Publicar no Brand Portal]**.
+   2. Dentro de **[!UICONTROL Scope]**, confirme a seleção e clique em **[!UICONTROL Publish to Brand Portal]**.
 
 Será exibida uma mensagem informando que os ativos foram enfileirados para publicação no Brand Portal. Faça logon na interface do Brand Portal para ver os ativos publicados.
 
@@ -73,7 +72,6 @@ Para agendar a publicação dos ativos no Brand Portal para uma data ou hora pos
 
    ![publishworkflow](assets/publishworkflow.png)
 
-Agora, faça logon no Brand Portal para ver se os ativos publicados estão disponíveis na interface do Brand Portal.
+Agora, faça logon no Brand Portal para ver se os ativos publicados estão disponíveis na interface da Brand Portal.
 
 ![bp_landing_page](assets/bp_landing_page.png)
-
