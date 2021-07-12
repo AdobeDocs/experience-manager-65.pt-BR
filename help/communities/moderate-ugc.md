@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1523'
 ht-degree: 2%
 
 ---
 
-
-# Moderação do conteúdo da comunidade {#moderating-community-content}
+# Moderação de conteúdo da comunidade {#moderating-community-content}
 
 ## Visão geral {#overview}
 
@@ -168,7 +167,7 @@ No outro local, quando o conteúdo está presente na área de transferência, um
 
 ![pasteugc1](assets/pasteugc1.png)
 
-### Negar {#deny}
+### Negar  {#deny}
 
 Um moderador pode impedir que o UGC permaneça visível no site publicado. Para administradores e moderadores da comunidade, a publicação ainda está disponível e é anotada como spam.
 
@@ -182,7 +181,7 @@ Para executar qualquer operação, o tópico ou comentário deve ser Reaberto.
 
 A ação Fechar/Reabrir pode ser executada pelos administradores ou moderadores da comunidade.
 
-### Sinalizar / Cancelar sinalização {#flag-unflag}
+### Sinalizar / Dessinalizar {#flag-unflag}
 
 Sinalizar é um meio para qualquer membro conectado, exceto pelo criador do conteúdo, para indicar que há um problema com o conteúdo de uma publicação. Depois de sinalizado, um ícone de cancelamento de sinalizador será exibido, permitindo que o mesmo membro desmarque o conteúdo.
 
@@ -254,7 +253,7 @@ Depois de analisado, o sentimento é armazenado com o UGC.
 
 No [console de moderação em massa](/help/communities/moderation.md), é possível filtrar e exibir o UGC com base no fato do sentimento ser negativo, neutro ou positivo.
 
-#### Palavras de observação {#watchwords}
+#### Palavras de vigia {#watchwords}
 
 AEM comunidades fornece um *watchword analyzer* como uma etapa no processo para avaliar [sentimento](#sentiment). A contribuição para o valor do sentimento fornecido pelas palavras de ordem é devido a uma comparação de palavras de observação negativas e positivas usadas no conteúdo publicado, bem como de palavras proibidas.
 
@@ -304,4 +303,3 @@ As seguintes permissões, quando atribuídas ao mesmo recurso, são coletivament
 * `Create`
 * `Delete`
 * `Replicate`
-
