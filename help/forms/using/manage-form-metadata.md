@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '1994'
 ht-degree: 1%
 
 ---
-
 
 # Gerenciar metadados do formulário{#manage-form-metadata}
 
@@ -44,7 +43,7 @@ Os seguintes tipos de ativos são compatíveis com o AEM Forms:
 * Recursos
 * XFS
 
-#### Lista extensa de metadados {#extensive-list-of-metadata}
+#### Lista abrangente de metadados {#extensive-list-of-metadata}
 
 Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o AEM Forms:
 
@@ -253,7 +252,7 @@ Uma ferramenta (Editor de esquema de metadados) é fornecida para definir o esqu
 
 O AEM Forms expõe os esquemas de metadados dos tipos de formulários suportados nesta ferramenta. Dessa forma, você pode acessar esses esquemas e usar a funcionalidade fornecida no editor de esquema de metadados para adicionar propriedades personalizadas.
 
-### Navegue pelo editor de esquema de metadados {#navigate-the-metadata-schema-editor}
+### Navegar no editor de esquema de metadados {#navigate-the-metadata-schema-editor}
 
 1. Navegue até **[!UICONTROL Ferramentas > Ativos > Esquemas de metadados]**.
 
