@@ -10,20 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: ec21237f-9186-49b4-8039-99df4db7c14a
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de conteúdo
+role: User, Admin
+exl-id: cc212f95-0be0-4705-8dfd-beda9bfb13e0
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '457'
 ht-degree: 13%
 
 ---
 
-
 # Fragmentos de conteúdo - excluir considerações{#content-fragments-delete-considerations}
 
-## Permissões - excluir ou não excluir {#permissions-delete-or-not-delete}
+## Permissões - Excluir ou não excluir {#permissions-delete-or-not-delete}
 
 A capacidade de excluir conteúdo é poderosa, mas potencialmente sensível, com muitos setores precisando restringir e controlar a distribuição desses privilégios.
 
@@ -49,7 +48,7 @@ Com relação às permissões de exclusão, os Fragmentos de conteúdo devem ser
 >
 >Consulte também [Como auditar operações de gerenciamento de usuários em AEM](/help/sites-administering/audit-user-management-operations.md).
 
-## Permissões necessárias para a funcionalidade do editor somente {#permissions-required-for-editor-functionality-only}
+## Permissões necessárias somente para a funcionalidade do editor {#permissions-required-for-editor-functionality-only}
 
 Para usuários que precisam editar/atualizar um fragmento de conteúdo, **sem permitir que excluam um fragmento inteiro**, permissões específicas devem ser atribuídas, já que a operação básica do editor de fragmentos de conteúdo requer que elementos transitórios secundários possam ser excluídos.
 
@@ -96,4 +95,3 @@ Os privilégios `add` e `modify` também podem ser administrados no CRXDE Lite, 
 Por exemplo, a definição dos privilégios `remove` para um grupo `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)
-
