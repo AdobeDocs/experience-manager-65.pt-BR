@@ -9,19 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1483'
 ht-degree: 2%
 
 ---
 
+# Configuração de Solr para SRP {#solr-configuration-for-srp}
 
-# Configuração Solr para SRP {#solr-configuration-for-srp}
-
-## Solr para AEM plataforma {#solr-for-aem-platform}
+## Solr para plataforma AEM {#solr-for-aem-platform}
 
 Uma instalação [Apache Solr](https://lucene.apache.org/solr/) pode ser compartilhada entre o [armazenamento de nó](../../help/sites-deploying/data-store-config.md) (Oak) e o [armazenamento comum](working-with-srp.md) (SRP) usando coleções diferentes.
 
@@ -68,7 +67,7 @@ JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CM
 
 Ao executar no modo SolrCloud, antes da instalação do MLS, é necessário o uso e o conhecimento dos seguintes comandos de configuração do SolrCloud.
 
-#### 1. Carregue uma configuração no ZooKeeper {#upload-a-configuration-to-zookeeper}
+#### 1. Carregar uma configuração no ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 Referência:
 [https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
@@ -81,7 +80,7 @@ sh ./scripts/cloud-scripts/zkcli.sh \
 -solrhome *solr-home-path* \
 -confdir *config-dir*
 
-#### 2. Crie uma coleção {#create-a-collection}
+#### 2. Criar uma coleção {#create-a-collection}
 
 Referência:
 [https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
@@ -95,7 +94,7 @@ Uso:
 -s *número de fragmentos* \
 -rf *número de réplicas*
 
-#### 3. Vincule uma coleção a um conjunto de configurações {#link-a-collection-to-a-configuration-set}
+#### 3. Vincular uma coleção a um conjunto de configurações {#link-a-collection-to-a-configuration-set}
 
 Vincule uma coleção a uma configuração já carregada no ZooKeeper.
 
@@ -143,13 +142,13 @@ No total, os 33 idiomas a seguir são compatíveis com o MLS avançado.
 | Finlandês | Letão | Tailandês |
 | Francês | Lituano | Turco |
 
-#### Comparação entre AEM 6.1 Pesquisa Solr, MLS Padrão e MLS Avançado {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
+#### Comparação do AEM 6.1 Solr search, MLS padrão e MLS avançado {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
 **Observação**: AEM 6.1 refere-se ao AEM 6.1 FP3 das Comunidades e anterior.
 
 ![compare-solr-mls](assets/compare-solr-mls.png)
 
-### Instalar o MLS padrão {#installing-standard-mls}
+### Instalação do MLS padrão {#installing-standard-mls}
 
 Para a coleção SRP (MSRP ou DSRP), para ser compatível com o Standard Multilingual Search (MLS), é necessário modificar dois dos arquivos de configuração do Solr:
 
@@ -217,7 +216,7 @@ Os arquivos MLS padrão são armazenados no repositório AEM.
 1. Reinicie o Solr.
 1. Para MSRP, execute [MSRP Reindex Tool](#msrpreindextool), a menos que esta seja uma nova instalação.
 
-### Instalar o MLS avançado {#installing-advanced-mls}
+### Instalação do MLS avançado {#installing-advanced-mls}
 
 Para que a coleção SRP (MSRP ou DSRP) ofereça suporte a MLS avançado, são necessários novos plug-ins Solr além de um esquema personalizado e uma configuração Solr. Todos os itens necessários são empacotados em um arquivo zip que pode ser baixado. Além disso, um script de instalação é incluído para uso quando Solr é implantado no modo independente.
 
