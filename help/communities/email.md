@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '822'
 ht-degree: 3%
 
 ---
-
 
 # Configuração de email {#configuring-email}
 
@@ -206,7 +205,7 @@ navegando até a  `postEmails`pasta e selecione  **OK**.
 
 * Selecione **[!UICONTROL OK]**.
 
-### Ajustar Protocolo para Novo Importador de Pesquisa {#adjust-protocol-for-new-polling-importer}
+### Ajustar Protocolo para Novo Importador de Polling {#adjust-protocol-for-new-polling-importer}
 
 Depois que a nova configuração de pesquisa é salva, é necessário modificar ainda mais as propriedades do importador de email de assinatura para alterar o protocolo de `POP3` para `emailreply`.
 
@@ -223,4 +222,3 @@ Usando [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 Os triângulos vermelhos indicam as propriedades modificadas. Certifique-se de salvar as alterações:
 
 * Selecione **[!UICONTROL Salvar tudo]**.
-
