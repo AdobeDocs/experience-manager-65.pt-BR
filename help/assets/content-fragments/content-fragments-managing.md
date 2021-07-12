@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de conteúdo
+role: User, Admin
+exl-id: 636daf55-2225-4780-9c57-1a2d7464fe2c
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1488'
 ht-degree: 11%
 
 ---
-
 
 # Gerenciamento dos fragmentos de conteúdo{#managing-content-fragments}
 
@@ -164,7 +163,7 @@ Para abrir o fragmento para edição:
    >
    >Tanto **Salvar** quanto **Cancelar** sairão do editor - consulte [Salvar, cancelar e versões](#save-cancel-and-versions) para obter informações completas sobre como ambas as opções operam para fragmentos de conteúdo.
 
-## Salvar, Cancelar e Versões {#save-cancel-and-versions}
+## Salvar, cancelar e versões {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -217,11 +216,11 @@ Ao editar o fragmento de conteúdo, o AEM cria automaticamente versões para gar
 3. Se o usuário selecionar para **Cancelar** a edição, a versão criada no início da sessão de edição será restaurada e o token será removido para encerrar a sessão de edição.
 4. Se o usuário selecionar para **Salvar** as edições, os elementos/variações atualizados serão mantidos e o token será removido para encerrar a sessão de edição.
 
-## Editar o conteúdo do fragmento {#editing-the-content-of-your-fragment}
+## Edição do conteúdo do fragmento {#editing-the-content-of-your-fragment}
 
 Após abrir o fragmento, você pode usar a guia [Variations](/help/assets/content-fragments/content-fragments-variations.md) para criar o conteúdo.
 
-## Criação e gerenciamento de variações no fragmento {#creating-and-managing-variations-within-your-fragment}
+## Criação e gerenciamento de variações dentro do fragmento {#creating-and-managing-variations-within-your-fragment}
 
 Depois de criar o conteúdo Principal, você pode criar e gerenciar [Variations](/help/assets/content-fragments/content-fragments-variations.md) desse conteúdo.
 
@@ -233,7 +232,7 @@ Você também pode [associar o conteúdo](/help/assets/content-fragments/content
 
 É possível exibir e editar as propriedades de um fragmento usando a guia [Metadados](/help/assets/content-fragments/content-fragments-metadata.md).
 
-## Linha do tempo para Fragmentos de conteúdo {#timeline-for-content-fragments}
+## Linha do tempo dos fragmentos de conteúdo {#timeline-for-content-fragments}
 
 Além das opções padrão, [Linha do tempo](/help/assets/manage-assets.md#timeline) fornece informações e ações específicas para fragmentos de conteúdo:
 
@@ -275,7 +274,7 @@ Por exemplo:
 
 ![cfm-6420-19-2019](assets/cfm-6420-19-2019.png)
 
-## Comparação das versões do fragmento {#comparing-fragment-versions}
+## Comparação de versões do fragmento {#comparing-fragment-versions}
 
 A ação **Comparar a Atual** está disponível na [Linha do tempo](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) depois de selecionar uma versão específica.
 
@@ -303,7 +302,7 @@ Elas serão mostradas lado a lado, onde:
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## Reverter para uma versão {#reverting-to-a-version}
+## Reverter para uma versão  {#reverting-to-a-version}
 
 Você pode reverter para uma versão específica do fragmento:
 
@@ -347,4 +346,3 @@ Para excluir um fragmento:
    >[!CAUTION]
    >
    >Se o fragmento já estiver referenciado em uma página, você verá uma mensagem de aviso e será solicitado a confirmar se deseja continuar com uma **Exclusão forçada**. O fragmento, junto com seu componente do fragmento de conteúdo, será excluído de qualquer página de conteúdo.
-
