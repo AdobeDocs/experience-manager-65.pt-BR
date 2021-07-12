@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 1%
+source-wordcount: '833'
+ht-degree: 0%
 
 ---
 
-
-# ASRP - Provedor de Recursos de Armazenamento do Adobe {#asrp-adobe-storage-resource-provider}
+# ASRP - Provedor de Recursos de Armazenamento Adobe {#asrp-adobe-storage-resource-provider}
 
 ## Sobre o ASRP {#about-asrp}
 
@@ -43,7 +42,7 @@ As chaves secretas e de consumidor são compartilhadas em todos os conjuntos de 
 
 ## Configuração {#configuration}
 
-### Selecione ASRP {#select-asrp}
+### Selecionar ASRP {#select-asrp}
 
 O [console Configuração de Armazenamento](/help/communities/srp-config.md) permite a seleção da configuração de armazenamento padrão, que identifica qual implementação do SRP usar.
 
@@ -114,7 +113,7 @@ Na instância do autor do AEM:
 
 Devido à nova estrutura de armazenamento, é necessário seguir as instruções [upgrade](/help/communities/upgrade.md#adobe-cloud-storage) ao atualizar das comunidades sociais para as Comunidades.
 
-## Gerenciando dados do usuário {#managing-user-data}
+## Gerenciar dados do usuário {#managing-user-data}
 
 Para obter informações sobre *usuários*, *perfis de usuário* e *grupos de usuários*, normalmente inseridos no ambiente de publicação, visite
 
@@ -133,7 +132,7 @@ Se estiver recebendo erros de autenticação com o URL do data center e o AEM er
 
 Use uma ferramenta como o [Network Time Protocol (NTP)](https://www.ntp.org/) para sincronizar o tempo de todos os servidores de criação e publicação AEM.
 
-### O novo conteúdo não aparece nas pesquisas {#new-content-does-not-appear-in-searches}
+### Novo conteúdo não aparece em pesquisas {#new-content-does-not-appear-in-searches}
 
 A infraestrutura de armazenamento de nuvem do Adobe usa *eventual consistência* para atingir suas metas de dimensionamento e desempenho. Por isso, o novo conteúdo não está disponível instantaneamente e leva vários segundos para aparecer nos resultados da pesquisa.
 
@@ -149,4 +148,3 @@ No JCR, se [/conf/global/settings/communities](https://localhost:4502/crx/de/ind
 
 * Não contém um nó [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp), significa que o provedor de armazenamento é JSRP.
 * Se o nó srpc existir e contiver o nó [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration), as propriedades da configuração padrão definirão ASRP para ser o provedor padrão.
-
