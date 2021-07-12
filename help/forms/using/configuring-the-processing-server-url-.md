@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: a7387bd3-8b31-4bd0-a861-daa8f7cb2d05
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
 
-
-# Definir AEM configurações do DS{#configuring-aem-ds-settings}
+# Definir configurações AEM DS{#configuring-aem-ds-settings}
 
 Este artigo descreve como configurar o **AEM Serviço de Definições do DS**. Essa configuração pode ser usada em vários cenários, por exemplo:
 
@@ -59,5 +58,6 @@ A seguir estão as etapas para configurar as **[!UICONTROL AEM Configurações d
    >    
    >    
    >    * Ao usar workflows do Forms ou AEM, antes de fazer qualquer envio do servidor de publicação, é necessário configurar o serviço de configurações do DS. Caso contrário, a apresentação do formulário não será válida.
+
 
 
