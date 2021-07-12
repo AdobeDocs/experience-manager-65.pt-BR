@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2549'
+source-wordcount: '2548'
 ht-degree: 1%
 
 ---
-
 
 # Importação e exportação de ativos para o AEM Forms{#importing-and-exporting-assets-to-aem-forms}
 
@@ -31,7 +30,7 @@ ht-degree: 1%
 
 
 
-## Baixe ou faça upload dos ativos Forms e Documents {#download-or-upload-forms-amp-documents-assets}
+## Baixar ou carregar ativos do Forms &amp; Documents {#download-or-upload-forms-amp-documents-assets}
 
 A interface do usuário do AEM Forms permite exportar ativos de uma instância do AEM baixando-os como um pacote CRX ou arquivos binários AEM. Em seguida, você pode importar o pacote AEM CRX baixado ou o arquivo binário para outra instância AEM.
 
@@ -108,11 +107,11 @@ O tema carregado está disponível na página de temas.
 1. Toque no ícone Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navegação ![ícone de bússola](assets/compass.png)> Forms> Temas.
 1. clique em **Criar** > **Upload de Arquivo**. No prompt Upload de arquivo, procure e selecione um pacote de temas no seu computador e clique em **Upload**. O tema é carregado.
 
-## Importar e exportar ativos no Gerenciamento de correspondência {#import-and-export-assets-in-correspondence-management}
+## Importar e exportar ativos no Correspondence Management {#import-and-export-assets-in-correspondence-management}
 
 Para compartilhar ativos, como dicionários de dados, cartas e fragmentos de documento, entre duas implementações diferentes do Gerenciamento de correspondência, você pode criar e compartilhar arquivos .cmp. Um arquivo .cmp pode incluir um ou mais dicionários de dados, letras, fragmentos de documento e formulários.
 
-### Exportar fragmentos de documento, letras e/ou dicionários de dados {#export-document-fragments-letters-and-or-data-dictionaries}
+### Exportar Fragmentos de Documentos, Cartas e/ou Dicionários de Dados {#export-document-fragments-letters-and-or-data-dictionaries}
 
 1. Nas letras, fragmentos de documento ou páginas de dicionário de dados, toque e selecione os ativos que deseja exportar para um único pacote e toque em Fila para download. Os ativos são alinhados para exportação.
 1. Conforme necessário, repita a etapa acima para adicionar letras, fragmentos de documento e dicionários de dados.
@@ -158,7 +157,7 @@ Para baixar todos os ativos de Gerenciamento de correspondência e dependências
 
    Para adicionar os ativos no pacote a outra instância do Correspondence Management, [importe o pacote para uma instância do AEM Forms](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
-### Importar fragmentos de documento, letras e/ou dicionários de dados para o Gerenciamento de correspondência {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
+### Importar Fragmentos de Documento, Cartas e/ou Dicionários de Dados para o Gerenciamento de Correspondência {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 
 Você pode importar ativos que são exportados para um arquivo .cmp . Um arquivo .cmp pode ter uma ou mais letras, dicionários de dados, fragmentos de documento e ativos dependentes.
 
@@ -178,7 +177,7 @@ Você pode importar ativos que são exportados para um arquivo .cmp . Um arquivo
    >
    >Para que você possa fazer upload de XDPs (como parte do arquivo cmp ou de outro modo), é necessário fazer parte do grupo forms-power-users . Para obter direitos de acesso, entre em contato com o administrador.
 
-## Exportar um aplicativo de workflow {#export-a-workflow-application}
+## Exportar um aplicativo de fluxo de trabalho {#export-a-workflow-application}
 
 Você pode usar AEM gerenciador de pacotes para exportar aplicativos de fluxo de trabalho. O procedimento está listado abaixo:
 
@@ -196,13 +195,13 @@ Você pode usar AEM gerenciador de pacotes para exportar aplicativos de fluxo de
    >
    >Para que o aplicativo de fluxo de trabalho funcione corretamente, exporte também o formulário adaptável correspondente e o modelo de fluxo de trabalho com o aplicativo de trabalho.
 
-## Pastas e organização de ativos {#folders-and-organizing-assets}
+## Pastas e ativos organizacionais {#folders-and-organizing-assets}
 
 A interface do usuário do AEM Forms usa pastas para organizar ativos. Essas pastas são usadas para organizar ativos criados na interface do usuário do AEM Forms. É possível renomear, criar subpastas e armazenar ativos e documentos nessas pastas. Organizar documentos e ativos em uma pasta permite agrupar os arquivos para fácil gerenciamento. Você pode selecionar uma pasta e optar por baixá-la ou excluí-la.
 
 Para criar uma pasta, conclua as seguintes etapas:
 
-### Crie uma pasta {#create-a-folder}
+### Crie uma pasta  {#create-a-folder}
 
 1. Faça logon na interface do usuário do AEM Forms em `https://<server>:<port>/aem/forms.html`.
 1. Navegue até o local em que deseja criar uma pasta.
@@ -239,7 +238,7 @@ Complete as etapas a seguir para criar cópias de ativos e cartas:
 1. Se necessário, edite o Título e o Nome com os quais deseja salvar a cópia do ativo/carta.
 1. Toque em Colar. Novas cópias dos ativos copiados são criadas.
 
-## Pesquisar {#search-forms}
+## Pesquisar   {#search-forms}
 
 A interface do usuário do AEM Forms permite pesquisar seu conteúdo. Usando a barra superior, você pode tocar em Pesquisar **[A]** para pesquisar seu conteúdo em busca de recursos, como ativos e documentos.
 
