@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 1%
+source-wordcount: '792'
+ht-degree: 0%
 
 ---
 
-
-# Como configurar o MongoDB para Demo {#how-to-setup-mongodb-for-demo}
+# Como configurar o MongoDB para demonstração {#how-to-setup-mongodb-for-demo}
 
 ## Introdução {#introduction}
 
@@ -63,7 +62,7 @@ Essa configuração é adequada para ambientes *não relacionados à produção*
 
 * O MongoDB pode ser executado no mesmo host que o AEM ou executado remotamente.
 
-### Inicie o MongoDB {#start-mongodb}
+### Iniciar MongoDB {#start-mongodb}
 
 * &lt;mongo-install>/bin/mongod —dbpath  &lt;mongo-dbpath>
 
@@ -109,7 +108,7 @@ Os seguintes comandos são um exemplo de configuração de um conjunto de répli
    * Nenhum serviço é necessário.
    * A pasta Solr instalada será chamada de &lt;solr-install>.
 
-### Configurar Solr para AEM Communities {#configure-solr-for-aem-communities}
+### Configurar o Solr para AEM Communities {#configure-solr-for-aem-communities}
 
 Para configurar uma coleção Solr para MSRP para demonstração, há duas decisões a serem tomadas (selecione os links para a documentação principal para obter detalhes):
 
@@ -140,7 +139,7 @@ Para executar uma configuração básica (não de produção) da solrCloud, come
 
 * `java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar`
 
-## Identifique o MongoDB como Repositório Comum {#identify-mongodb-as-common-store}
+## Identifique o MongoDB como armazenamento comum {#identify-mongodb-as-common-store}
 
 Inicie o autor e publique as instâncias de AEM, se necessário.
 
