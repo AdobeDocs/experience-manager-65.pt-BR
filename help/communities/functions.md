@@ -10,11 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2459'
+source-wordcount: '2458'
 ht-degree: 6%
 
 ---
@@ -30,7 +29,7 @@ Depois que um site da comunidade é criado, o conteúdo pode ser adicionado às 
 >
 >Os consoles para a criação de [sites da comunidade](/help/communities/sites-console.md), [modelos de site da comunidade](/help/communities/sites.md), [modelos de grupo da comunidade](/help/communities/tools-groups.md) e [funções da comunidade](/help/communities/functions.md) são para uso somente no ambiente do autor.
 
-## Console de funções da comunidade {#community-functions-console}
+## Console Funções da Comunidade {#community-functions-console}
 
 Para acessar o console de funções da comunidade no ambiente de criação:
 
