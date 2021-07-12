@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
 
-
-# Configurar mensagens {#configure-messaging}
+# Configuração de mensagens {#configure-messaging}
 
 ## Visão geral {#overview}
 
@@ -32,7 +31,7 @@ Esta página tem informações sobre a configuração padrão e possíveis ajust
 
 Para obter informações adicionais para desenvolvedores, consulte [Messaging Essentials](/help/communities/essentials-messaging.md).
 
-## Serviço de operações de mensagens {#messaging-operations-service}
+## Serviço de Operações de Mensagens {#messaging-operations-service}
 
 A configuração [AEM Communities Messaging Operations Service](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifica o ponto de extremidade que lida com solicitações relacionadas a mensagens, as pastas que o serviço deve usar para armazenar mensagens e, se as mensagens puderem incluir anexos de arquivo, quais tipos de arquivo são permitidos.
 
@@ -136,7 +135,7 @@ Para adicionar uma nova configuração, selecione o ícone de adição &#39;**+*
 >
 >Para permitir todas as extensões de nome de arquivo, exceto aquelas incluir na lista de bloqueios, use o ícone &#39;**-**&#39; para (novamente) remover a única entrada vazia antes de clicar em **Salvar**.
 
-## Mensagens de grupo {#group-messaging}
+## Mensagens em grupo {#group-messaging}
 
 Para permitir que usuários registrados enviem mensagens diretas em massa para grupos de usuários, certifique-se de **Ativar mensagens de grupo** nas duas instâncias a seguir da configuração **Serviços de Operação de Mensagens**:
 
