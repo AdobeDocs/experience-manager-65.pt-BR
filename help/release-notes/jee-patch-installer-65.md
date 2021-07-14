@@ -5,9 +5,9 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: ecac6269b5e12b847136f4af534016bc7b88bb2b
+source-git-commit: e54d8633aa3b8c1554df90d1b9650713246b95e8
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '484'
 ht-degree: 29%
 
 ---
@@ -26,7 +26,7 @@ O instalador de patches do Forms JEE AEM 6.5 inclui todos os problemas corrigido
 
 * AEM 6.5 Forms
 
-## Instalar e configurar o patch {#installing-and-configuring-the-patch}
+## Instalação e configuração do patch {#installing-and-configuring-the-patch}
 
 1. Faça um backup da pasta &lt;*AEM_forms_root*>/deploy. Isso é necessário caso você decida desinstalar a correção rápida.
 1. Interrompa o servidor de aplicativos.
@@ -58,6 +58,7 @@ LinuxNavegue até o diretório apropriado e, a partir de um prompt de comando, d
    * `serializer-2.7.1.jar` para `serializer-2.7.2.jar`
    * `xalan-2.7.1.jar` para `xalan-2.7.2.jar`
    * `xercesImpl-2.9.1.jar` para `xercesImpl-2.12.0.jar`
+   * `xml-apis-2.7.1.jar` para `xml-apis-2.7.2.jar`
 
 1. A caixa de seleção Iniciar o Configuration Manager é selecionada por padrão. Clique em **[!UICONTROL Concluído]** para executar o Gerenciador de configurações.
 
@@ -72,7 +73,7 @@ LinuxNavegue até o diretório apropriado e, a partir de um prompt de comando, d
 
 ## Configurações pós-implantação {#post-deployment-configurations}
 
-### Configurações SAML {#saml-configurations}
+### Configurações de SAML {#saml-configurations}
 
 Se tiver a autenticação SAML configurada e enfrentado problemas com metadados IDP grandes, faça o seguinte após instalar o patch:
 
