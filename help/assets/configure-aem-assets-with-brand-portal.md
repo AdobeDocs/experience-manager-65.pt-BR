@@ -12,10 +12,10 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: aed6e28d7ff228ecbaeaf0d468d1d9bcb4373f90
 workflow-type: tm+mt
-source-wordcount: '2086'
-ht-degree: 12%
+source-wordcount: '2076'
+ht-degree: 10%
 
 ---
 
@@ -70,13 +70,13 @@ Você precisa do seguinte para configurar o AEM Assets com o Brand Portal:
 
 * Se você for um parceiro de Adobe, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar AEM 6.5.
 
-Depois de baixar o AEM, para obter instruções sobre como configurar uma instância de autor de AEM, consulte [implantar e manter](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/deploy.html#default-local-install).
+Depois de baixar o AEM, para obter instruções sobre como configurar uma instância de autor de AEM, consulte [implantar e manter](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#default-local-install).
 
 ### Baixe e instale AEM Service Pack mais recente {#servicepack}
 
 Para obter instruções detalhadas, consulte
 
-* [Notas de versão do AEM 6.5 Service Pack ](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
+* [Notas de versão do AEM 6.5 Service Pack ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=pt-BR)
 
 **Entre em contato com o** Suporte se não conseguir encontrar o pacote de AEM ou o Service Pack mais recente.
 
@@ -337,18 +337,18 @@ Execute as seguintes etapas para validar a configuração:
    >
    >Evite desabilitar qualquer um dos agentes de replicação, pois isso pode causar falha na replicação dos ativos (em execução na fila).
    >
-   >Certifique-se de que todos os quatro agentes de replicação estejam configurados para evitar o erro de tempo limite. Consulte [solucionar problemas na publicação paralela no Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >Certifique-se de que todos os quatro agentes de replicação estejam configurados para evitar o erro de tempo limite. Consulte [solucionar problemas na publicação paralela no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html?lang=en#connection-timeout).
 
 Agora você pode:
 
 * [Publicar ativos do AEM Assets no Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Publicar ativos do Brand Portal no AEM Assets](https://docs.adobe.com/content/help/pt-BR/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - Origem de ativos no Brand Portal
+* [Publicar ativos do Brand Portal no AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - Origem de ativos no Brand Portal
 * [Publicar pastas do AEM Assets no Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publicar coleções do AEM Assets no Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Publicar predefinições, esquemas e aspectos no Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [Publicar marcações no Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Publicar predefinições, esquemas e aspectos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publicar marcações no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-Consulte a [documentação do Brand Portal](https://docs.adobe.com/content/help/br/experience-manager-brand-portal/using/home.html) para obter mais informações.
+Consulte a [documentação do Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) para obter mais informações.
 
 
 ## Atualizar configuração {#upgrade-integration-65}
