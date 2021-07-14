@@ -7,15 +7,14 @@ uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
-feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Comunicação interativa
+exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
+source-git-commit: b6774acc4ec32c87a5ad5f5b2ea885e1e1aa867e
 workflow-type: tm+mt
-source-wordcount: '2062'
+source-wordcount: '2041'
 ht-degree: 0%
 
 ---
-
 
 # Preparar e enviar comunicação interativa usando a interface do usuário do agente {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
@@ -23,7 +22,7 @@ A interface do usuário do agente permite que os agentes preparem e enviem comun
 
 ## Visão geral {#overview}
 
-Após a criação de uma Comunicação interativa, o Agente pode abrir a Comunicação interativa na interface do usuário do agente e preparar uma cópia específica do destinatário inserindo dados e gerenciando conteúdo e anexos. Por fim, o Agente pode enviar a Comunicação Interativa para um processo posterior.
+Após a criação de uma Comunicação interativa, o agente pode abrir a Comunicação interativa na interface do agente e preparar uma cópia específica do destinatário inserindo dados e gerenciando conteúdo e anexos. Por fim, o Agente pode enviar a Comunicação Interativa para um processo posterior.
 
 Ao preparar a Comunicação interativa usando a interface do usuário do agente, o agente gerencia os seguintes aspectos da Comunicação interativa na interface do agente antes de enviá-la para um processo de publicação:
 
@@ -89,7 +88,7 @@ Na guia Conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    Continue a gerenciar os anexos da Comunicação interativa.
 
-### Gerenciar Anexos {#manage-attachments}
+### Gerenciar anexos {#manage-attachments}
 
 1. Selecione **[!UICONTROL Attachment]**. A interface do usuário do agente exibe os anexos disponíveis como configurados ao criar a Comunicação interativa.
 
@@ -108,7 +107,7 @@ Na guia Conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
    Se você achar as visualizações satisfatórias, toque em **[!UICONTROL Enviar]** para enviar/enviar a Comunicação interativa para um processo de publicação. Ou, para fazer alterações, saia da visualização para voltar para fazer as alterações.
 
-## Formatação de texto {#formattingtext}
+## Como formatar o texto {#formattingtext}
 
 Ao editar um fragmento de texto na interface do agente, a barra de ferramentas muda de acordo com o tipo de edição que você escolher fazer: Fonte, Parágrafo ou Lista:
 
@@ -211,10 +210,6 @@ Depois de salvar uma Comunicação interativa como rascunho, você pode recuper�
 `https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
 
 [] Os rascunhos se referem ao identificador exclusivo da versão de rascunho que é gerada após salvar uma Comunicação interativa como rascunho.
-
->[!NOTE]
->
->Se você fizer alterações na Comunicação interativa depois de salvá-la como um rascunho, a versão de rascunho não será aberta.
 
 ### Exemplo de implementação de SPI ccrDocumentInstance {#sample-ccrDocumentInstance-spi}
 
