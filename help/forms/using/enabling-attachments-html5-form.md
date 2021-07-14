@@ -8,29 +8,33 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
-feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulários para publicação de conteúdo para dispositivos móveis
+exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
+source-git-commit: 6e2a0f053a1f6989524e9ae2b1dcb001b0397ac6
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 0%
+source-wordcount: '353'
+ht-degree: 1%
 
 ---
-
 
 # Ativação de anexos para um formulário HTML5 {#enabling-attachments-for-an-html-form}
 
 Você pode carregar, visualizar e enviar anexos com formulários HTML5. Por padrão, o suporte ao anexo é desativado. Para ativar o suporte ao anexo:
 
-1. Crie um [perfil personalizado](/help/forms/using/custom-profile.md) com a propriedade de sequência de caracteres de várias seleções `mfAttachmentOptions`.
-1. No perfil personalizado, especifique as propriedades `fileSizeLimit`, `multiSelect` e `buttonTex`t para configurar as opções do widget de anexo de arquivo. Conforme necessário, também é possível especificar mais propriedades personalizadas.
+1. Crie um [perfil personalizado](/help/forms/using/custom-profile.md) com uma propriedade de string de seleção múltipla `mfAttachmentOptions`. Cada string na propriedade `mfAttachmentOptions` deve ter um formato `property=value` para configurar as opções do widget de anexo de arquivo. Os `property` e `value` podem ter qualquer um dos seguintes valores:
 
-1. No perfil personalizado, use as seguintes configurações:
+   | Propriedade | Valor |
+   |--- |---|
+   | multiSelect | true ou false (true por padrão) |
+   | fileSizeLimit | Número em MBs (2 MBs por padrão). Por exemplo, 5. |
+   | buttonText | Texto do botão para a janela pop-up (&quot;Anexar&quot; por padrão) |
+   | accept | lista separada por vírgulas de tipos de arquivos a serem aceitos (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; por padrão) |
 
-   * **multiSelect** -> true ou false (true por padrão)
-   * **fileSizeLimit**  -> value_in_mb (digamos 5) (2 MBs por padrão)
-   * **buttonText**  -> Texto do botão para janela pop-up (&quot;Anexar&quot; por padrão)
-   * **aceitar** -> tipos de arquivo a serem aceitos (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; por padrão)
+   Por exemplo:
+
+   ![configurar opções](assets/mfAttachmentOptions.png)
+
+   Conforme necessário, também é possível especificar mais opções personalizadas para a propriedade `mfAttachmentOptions` .
 
    >[!NOTE]
    >
