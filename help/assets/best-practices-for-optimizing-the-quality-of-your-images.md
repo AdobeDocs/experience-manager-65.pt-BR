@@ -1,5 +1,5 @@
 ---
-title: Práticas recomendadas para otimização da qualidade de imagens
+title: Práticas recomendadas para otimização da qualidade de suas imagens no Dynamic Media
 description: Conheça as práticas recomendadas para otimizar a qualidade da imagem no Dynamic Media
 uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
@@ -10,14 +10,14 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Gerenciamento de ativos
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 6%
+source-wordcount: '1451'
+ht-degree: 4%
 
 ---
 
-# Práticas recomendadas para otimização da qualidade de imagens {#best-practices-for-optimizing-the-quality-of-your-images}
+# Práticas recomendadas para otimização da qualidade de suas imagens no Dynamic Media {#best-practices-for-optimizing-the-quality-of-your-images}
 
 A otimização da qualidade da imagem pode ser um processo demorado, pois muitos fatores contribuem para a renderização de resultados aceitáveis. O resultado é parcialmente subjetivo porque os indivíduos percebem a qualidade da imagem de forma diferente. A experimentação estruturada é fundamental.
 
@@ -59,14 +59,14 @@ Existem dois métodos de nitidez de imagem que você pode usar:
 * Nitidez simples ( `&op_sharpen`) - Semelhante ao filtro de nitidez usado no Photoshop, a nitidez simples aplica nitidez básica à exibição final da imagem após o redimensionamento dinâmico. No entanto, esse método não é configurável pelo usuário. A prática recomendada é não usar &amp;op_sharpen, a menos que seja necessário.
 * Mascaramento com nitidez ( `&op_USM`) - O mascaramento com nitidez é um filtro de nitidez padrão do setor. A prática recomendada é aprimorar as imagens com máscara nítida seguindo as diretrizes abaixo. O mascaramento de nitidez permite controlar os três parâmetros a seguir:
 
-   * `&op_sharpen=`quantia,raio,limite
+   * `&op_sharpen=amount,radius,threshold`
 
-      * **[!UICONTROL montante]**  (0-5, intensidade do efeito).
-      * **[!UICONTROL radius]**  (0-250, largura das &quot;linhas de nitidez&quot; desenhadas ao redor do objeto com nitidez, conforme medido em pixels.)
+      * **[!UICONTROL *montante *]**(0-5, intensidade do efeito).
+      * **[!UICONTROL *radius *]**(0-250, largura das &quot;linhas de nitidez&quot; desenhadas ao redor do objeto com nitidez, conforme medido em pixels.)
 
       Lembre-se de que o raio e a quantidade dos parâmetros funcionam uns contra os outros. A redução do raio pode ser compensada pelo aumento do montante. O Raio permite um controle mais fino como um valor mais baixo ajuste somente os pixels da borda, enquanto um valor mais alto aumenta a nitidez de uma faixa maior de pixels.
 
-      * **[!UICONTROL limiar]**  (0-255, sensibilidade do efeito.)
+      * **[!UICONTROL *limiar *]**(0-255, sensibilidade do efeito.)
 
              Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. O parâmetro **[!UICONTROL limite]** ajuda a evitar áreas de nitidez excessiva com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
          
@@ -122,7 +122,7 @@ Essa combinação de configurações de produtos é um excelente resultado na ma
 
 Se a imagem exigir mais otimização, ajuste gradualmente os parâmetros de nitidez (mascaramento com nitidez), começando com um raio definido como 0,2 ou 0,3. Em seguida, aumente gradualmente a quantidade de 1,75 para um máximo de 4 (equivalente a 400% no Photoshop). Verifique se o resultado desejado foi atingido.
 
-Se os resultados de nitidez ainda não forem satisfatórios, aumente o raio em incrementos decimais. Para cada incremento decimal, reinicie o valor em 1,75 e aumente-o gradualmente para 4. Repita esse processo até atingir o resultado desejado. Embora os valores acima sejam uma abordagem que os estúdios criativos validaram, lembre-se de que é possível começar com outros valores e seguir outras estratégias. Se os resultados são ou não satisfatórios para si é uma questão subjetiva, por isso a experimentação estruturada é fundamental.
+Se os resultados de nitidez ainda não forem satisfatórios, aumente o raio em incrementos decimais. Para cada incremento decimal, reinicie o valor em 1,75 e aumente-o gradualmente para 4. Repita esse processo até atingir o resultado desejado. Embora os valores acima sejam uma abordagem que os estúdios criativos validaram, lembre-se de que você pode começar com outros valores e seguir outras estratégias. Se os resultados são ou não satisfatórios para si é uma questão subjetiva, por isso a experimentação estruturada é fundamental.
 
 À medida que você experimenta, as seguintes sugestões gerais podem ser úteis para otimizar ainda mais seu fluxo de trabalho:
 
