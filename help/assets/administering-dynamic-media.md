@@ -8,14 +8,14 @@ discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
 feature: Configuração
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
 
-# Configuração do Dynamic Media {#setting-up-dynamic-media}
+# Configurar Dynamic Media {#setting-up-dynamic-media}
 
 [O Dynamic ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media ajuda você a gerenciar ativos fornecendo ativos de marketing e merchandising visual por demanda, automaticamente dimensionados para o consumo na Web, em dispositivos móveis e sites sociais. Usando um conjunto de ativos de origem primária, a Dynamic Media gera e fornece várias variações de conteúdo rico em tempo real por meio de sua rede global, escalável e otimizada para desempenho.
 
@@ -27,8 +27,8 @@ ht-degree: 0%
 
 Se você estiver administrando o Dynamic Media, os seguintes tópicos serão de interesse:
 
-* [Configuração do modo](config-dms7.md)  Dynamic Media-Scene7 — Use essa configuração se você for um novo cliente do Dynamic Media.
-* [Configuração do modo](config-dynamic.md)  Dynamic Media-Híbrido — Use essa configuração se você for um Experience Manager de atualização de cliente do Dynamic Media.
+* [Configurar o Dynamic Media - Modo Scene7](config-dms7.md)  - Use essa configuração se você for um novo cliente do Dynamic Media.
+* [Configurar o Dynamic Media - Modo híbrido](config-dynamic.md)  - Use essa configuração se você for um Experience Manager de atualização de cliente do Dynamic Media.
 * [Gerenciar predefinições de imagens](managing-image-presets.md)
 * [Gerenciar predefinições do visualizador](managing-viewer-presets.md)
 * [Solução de problemas do Dynamic Media - Modo Scene7](troubleshoot-dms7.md)
