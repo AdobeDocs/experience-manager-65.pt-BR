@@ -7,9 +7,9 @@ content-type: reference
 feature: Acessibilidade
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Como [!DNL Dynamic Media] é um plug-in para [!DNL Adobe Experience Manager Assets], a maioria do comportamento de controle do teclado é igual ao comportamento em [!DNL Experience Manager Assets]. Por exemplo, o botão `Cancel` em [!DNL Dynamic Media] tem o mesmo realce de foco que em [!DNL Experience Manager Assets] e reage à tecla `Spacebar` como em [!DNL Experience Manager Assets]. Consulte [Atalhos de teclado em Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Os pressionamentos de tecla suportados por elementos individuais da interface do usuário em [!DNL Dynamic Media] são, na maioria dos casos, óbvios e fáceis de descobrir. O controle de teclado em [!DNL Dynamic Media] é sobre o seguinte:
+Os pressionamentos de tecla suportados por elementos individuais da interface do usuário em [!DNL Dynamic Media] são claros e fáceis de descobrir. O controle de teclado em [!DNL Dynamic Media] é sobre o seguinte:
 
 * Capacidade de usar `Tab` e `Shift+Tab` pressionamentos de teclas para navegar entre elementos interativos na página.
 Usar `Tab` avança o foco de entrada para o próximo elemento da interface do usuário na ordem de tabulação; usar `Shift+Tab` traz o foco de entrada de volta ao elemento anterior da interface do usuário.
