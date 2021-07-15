@@ -1,6 +1,6 @@
 ---
-title: Instalando o feature pack 18912 para a migração de ativos em massa
-description: O Feature Pack 18912 permite assimilar ativos em massa por FTP ou migrar ativos do Dynamic Media Classic para o Dynamic Media no AEM. Este pacote de recursos opcional está disponível no suporte ao Adobe.
+title: Instale o feature pack 18912 para migração de ativos em massa
+description: O Feature Pack 18912 permite assimilar ativos em massa por FTP ou migrar ativos do Dynamic Media Classic para o Dynamic Media no Adobe Experience Manager. Este pacote de recursos opcional está disponível no suporte ao Adobe.
 uuid: 45c2f5f8-4368-4d7b-a43e-fe96cfb272fd
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -11,39 +11,39 @@ docset: aem65
 feature: Gerenciamento de ativos
 role: User, Admin
 exl-id: 53ea2cf7-d633-4ab9-a869-ce76eb1c01e5
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
-# Instalando o feature pack 18912 para a migração de ativos em massa{#installing-feature-pack-for-bulk-asset-migration}
+# Instale o feature pack 18912 para migração de ativos em massa{#installing-feature-pack-for-bulk-asset-migration}
 
 A instalação do pacote de recursos 18912 é *opcional*.
 
-O Feature Pack 18912 permite assimilar ativos em massa diretamente no modo Dynamic Media - Scene7 no AEM por meio de FTP ou migrar ativos do Dynamic Media Classic para o modo Dynamic Media - Scene7 no AEM. O pacote de recursos está disponível em [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
+O Feature Pack 18912 permite assimilar ativos em massa diretamente no modo Dynamic Media - Scene7 no Adobe Experience Manager por meio de FTP. Também permite migrar ativos do Dynamic Media Classic para o modo Dynamic Media - Scene7 no Experience Manager. O pacote de recursos está disponível em [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Embora seja possível usar o pacote de recursos para migrar ativos em massa por conta própria do Dynamic Media Classic para o Dynamic Media - Scene7 no modo AEM ou migrar ativos em massa usando o recurso FTP no Dynamic Media Classic, o Adobe *não* recomenda esse método devido à complexidade envolvida.
+>É possível usar o pacote de recursos para migrar ativos em massa por conta própria do Dynamic Media Classic para o Dynamic Media - modo Scene7 no Experience Manager. Também é possível migrar ativos em massa usando o recurso FTP no Dynamic Media Classic. No entanto, o Adobe *not* recomenda que você use qualquer um desses métodos devido à complexidade envolvida.
 >
->Dessa forma, os pacotes de recursos de migração, como este, são *compatíveis somente* como parte de um projeto de migração quando feitos por meio de [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
+>Dessa forma, esse pacote de recursos de migração é compatível *somente* como parte de um projeto de migração quando feito por meio de [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
-Antes de instalar o feature pack, primeiro crie um usuário de serviço e forneça essas informações para o suporte do Adobe.
+Antes de instalar o feature pack, crie um usuário de serviço e forneça essas informações para o suporte ao Adobe.
 
-Consulte também [Configuração do Dynamic Media - Modo Scene7](/help/assets/config-dms7.md).
+Consulte também [Configurar Dynamic Media - Modo Scene7](/help/assets/config-dms7.md).
 
-**Para instalar o feature pack 18912 para migração de ativos em massa**
+**Para instalar o feature pack 18912 para a migração de ativos em massa:**
 
-1. Na instância de AEM, navegue até **[!UICONTROL Ferramentas > Segurança > Usuários]** e selecione **[!UICONTROL Criar usuário]**. Este usuário de serviço deve ter permissões *read/write* para `/content/dam.`
-1. Nos campos **[!UICONTROL ID]** e **[!UICONTROL Senha]**, digite um nome de usuário e uma senha; por exemplo, **Usuário FTP**. Esse nome aparece na linha do tempo como o usuário que criou o ativo. Quando um ativo é carregado a partir do FTP, um ativo é considerado criado quando é carregado no servidor FTP e é enviado ao AEM.
+1. Na instância do Experience Manager, navegue até **[!UICONTROL Ferramenta]** > **[!UICONTROL Segurança]** > **[!UICONTROL Usuários]** e selecione **[!UICONTROL Criar Usuário]**. Este usuário de serviço deve ter permissões *read/write* para `/content/dam.`
+1. Nos campos **[!UICONTROL ID]** e **[!UICONTROL Senha]**, digite um nome de usuário e uma senha; por exemplo, **Usuário FTP**. Esse nome aparece na linha do tempo como o usuário que criou o ativo. Quando um ativo é carregado a partir do FTP, um ativo é considerado criado quando é carregado no servidor FTP e é enviado para o Experience Manager.
 1. Entre em contato com o [Adobe Enterprise Customer Care for Experience Manager](https://experienceleague.adobe.com/?support-solution=General#support) para solicitar acesso ao feature pack 18912 para download. Você pode precisar das seguintes informações quando entrar em contato com o suporte:
 
    * Endereço IP do servidor para a instância do Autor, incluindo o número da porta (por padrão, o número da porta é 4502.)
-   * AEM nome de usuário do serviço e senha da etapa anterior.
+   * Nome de usuário e senha do serviço Experience Manager da etapa anterior.
 
-1. O Atendimento ao cliente da Adobe Enterprise para AEM fornece as credenciais do FTP e o acesso ao feature pack 18912.
+1. O Atendimento ao cliente da Adobe Enterprise para Experience Manager fornece as credenciais de FTP e acesso ao feature pack 18912.
 1. Quando receber o feature pack 18912, instale-o.
 
-   Consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md) para obter mais informações sobre como usar a Distribuição de software e pacotes no AEM.
+   Consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md) para obter mais informações sobre como usar a Distribuição de software e os pacotes no Experience Manager.
