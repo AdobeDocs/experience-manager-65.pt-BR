@@ -3,11 +3,11 @@ title: Informativo do Dynamic Media
 description: 'O informativo do Dynamic Media por Experience League é um informativo mensal. Ela foi criada para ajudar você a usar o Dynamic Media e o Dynamic Media Classic para começar a obter valor imediatamente. Recursos valiosos para a criação de conhecimento estão disponíveis neste boletim informativo de balcão único. Ele inclui vídeos, visões gerais de soluções e introduções para alguns dos principais recursos, como predefinições de imagens, predefinições do visualizador, perfis de vídeo e muito mais. '
 keywords: Dynamic Media, boletim informativo, atualizações de produtos, dicas e truques, eventos, sucesso do cliente, blog, blogs, imagens, vídeos, recursos, recursos
 contentOwner: Rick Brough
-solution: Dynamic Media Classic, Experience Manager
+solution: Experience Manager, Dynamic Media Classic
 role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: Colaboração, Dynamic Media Classic
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: ed213692bc72ab727a5fa105796fb68aef33904e
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 0%
