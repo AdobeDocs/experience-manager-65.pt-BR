@@ -11,7 +11,7 @@ docset: aem65
 feature: Vídeo 360 VR
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Consulte também [Gerenciar predefinições do visualizador](/help/assets/managi
 
 ## 360 Vídeo em ação {#video-in-action}
 
-Toque em [Estação Espacial 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir uma janela do navegador e assistir a um vídeo de 360 graus. Durante a reprodução do vídeo, arraste o ponteiro do mouse para um novo local para alterar o ângulo de exibição.
+Selecione [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir uma janela do navegador e assistir a um vídeo de 360 graus. Durante a reprodução do vídeo, arraste o ponteiro do mouse para um novo local para alterar o ângulo de exibição.
 
 ![360 ](assets/6_5_360videoiss_simplified.png)
 *Exemplo de vídeoQuadro de vídeo da Estação Espacial 360*
@@ -43,7 +43,7 @@ Você pode usar o Adobe Premier Pro para exibir e editar imagens 360/VR. Por exe
 
 Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
-## Upload de ativos para uso com o visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
+## Fazer upload de ativos para usar com o visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
 
 Os ativos de vídeo 360 que são carregados no Adobe Experience Manager são rotulados como **Multimídia** em uma página de Ativo, de modo semelhante ao ativo de vídeo normal.
 
@@ -74,7 +74,7 @@ Os ativos de vídeo 360 que são carregados no Adobe Experience Manager são rot
 
 1. [Faça upload do vídeo para a pasta](/help/assets/managing-video-assets.md#upload-and-preview-video-assets) .
 
-## Substituição da taxa de proporção padrão de 360 vídeos  {#overriding-the-default-aspect-ratio-of-videos}
+## Substituir a proporção de aspecto padrão de 360 vídeos  {#overriding-the-default-aspect-ratio-of-videos}
 
 Para que um ativo carregado seja qualificado como um vídeo 360 que você pretende usar com o visualizador de vídeo 360, o ativo deve ter uma proporção de aspecto de 2.
 
@@ -91,7 +91,7 @@ A taxa de proporção se aplica a 360 ativos de vídeo para a página de detalhe
 
 Comece carregando 360 vídeos.
 
-## Visualização de vídeo 360 {#previewing-video}
+## Visualizar vídeo 360 {#previewing-video}
 
 Você pode usar a Visualização para ver a aparência do seu vídeo 360 para os clientes e garantir que ele se comporte conforme esperado.
 
@@ -99,42 +99,42 @@ Consulte também [Editar predefinições do visualizador](/help/assets/managing-
 
 Quando estiver satisfeito com o vídeo 360, você poderá publicá-lo.
 
-Consulte [Incorporando o visualizador de vídeo ou imagem em uma página da Web](/help/assets/embed-code.md).
-Consulte [Vincular URLs ao aplicativo Web](/help/assets/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .
+Consulte [Incorporar o visualizador de vídeo ou imagem em uma página da Web](/help/assets/embed-code.md).
+Consulte [Vincular URLs ao seu aplicativo Web](/help/assets/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .
 Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
-**Para visualizar 360 vídeos:**
+**Para visualizar o vídeo 360:**
 
-1. Em **[!UICONTROL Assets]**, navegue até um vídeo 360 existente que você criou. Toque no ativo 360 Vídeo para abri-lo no modo de visualização.
+1. Em **[!UICONTROL Assets]**, navegue até um vídeo 360 existente que você criou. Selecione o ativo de Vídeo 360 para abri-lo no modo de visualização.
 
    ![6_5_360seleção de vídeo-visualização-1](assets/6_5_360video-selecttopreview-1.png)
 
-   Toque no ativo de vídeo 360 para visualizar o vídeo.
+   Selecione o ativo de vídeo 360 para poder visualizar o vídeo.
 
-1. Na página de visualização, próximo ao canto superior esquerdo da página, toque na lista suspensa e selecione **[!UICONTROL Visualizadores]**.
+1. Na página de visualização, próximo ao canto superior esquerdo da página, selecione a lista suspensa e selecione **[!UICONTROL Visualizadores]**.
 
    ![6_5_360visualizadores de visualização de vídeo](assets/6_5_360video-preview-viewers.png)
 
-   Na lista Visualizadores, toque em **[!UICONTROL Video360_social]** e siga um destes procedimentos:
+   Na lista Visualizadores, selecione **[!UICONTROL Video360_social]** e siga um destes procedimentos:
 
    * Arraste o ponteiro do mouse sobre o vídeo se quiser alterar o ângulo de exibição da cena estática.
-   * Toque no botão **[!UICONTROL Reproduzir]** do vídeo se desejar iniciar a reprodução. Conforme o vídeo é reproduzido, arraste o ponteiro do mouse sobre o vídeo para alterar seu ângulo de visualização.
+   * Selecione o botão **[!UICONTROL Play]** do vídeo se desejar iniciar a reprodução. Conforme o vídeo é reproduzido, arraste o ponteiro do mouse sobre o vídeo para alterar seu ângulo de visualização.
 
    ![Captura de tela de vídeo 6_5_360video-preview-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360.*
 
-   * Na lista Visualizadores, toque em **[!UICONTROL Video360VR]**.
+   * Na lista Visualizadores, selecione **[!UICONTROL Video360VR]**.
 
       Vídeo VR (Virtual Reality) é um conteúdo de vídeo imersivo que é acessado usando fones de realidade virtual. Assim como em vídeos comuns, você cria vídeos VR no início quando um vídeo está sendo gravado ou capturado por meio de câmeras de vídeo de 360 graus.
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Uma captura de tela de vídeo 360 VR.*
 
-1. Próximo ao canto superior direito da página de visualização, toque em **[!UICONTROL Fechar]**.
+1. Próximo ao canto superior direito da página de visualização, selecione **[!UICONTROL Fechar]**.
 
 ## Publicação de vídeo 360 {#publishing-video}
 
 Publique o vídeo 360 para usá-lo. A publicação de um vídeo 360 ativa o URL e o código incorporado. Ele também publica o vídeo 360 na nuvem do Dynamic Media, que é integrada a uma CDN para entrega escalável e com desempenho.
 
-Consulte [Publicação de ativos Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar vídeo 360.
-Consulte também [Incorporação do visualizador de vídeo ou imagem em uma página da Web](/help/assets/embed-code.md).
+Consulte [Publicar ativos do Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar o vídeo 360.
+Consulte também [Incorporar o visualizador de vídeo ou imagem em uma página da Web](/help/assets/embed-code.md).
 Consulte também [Vincular URLs ao seu aplicativo Web](/help/assets/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .
-Consulte também [Adicionar ativos Dynamic Media às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Consulte também [Adicionar ativos do Dynamic Media às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
