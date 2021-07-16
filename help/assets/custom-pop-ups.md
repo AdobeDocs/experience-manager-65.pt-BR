@@ -12,26 +12,26 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Espectadores
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1088'
 ht-degree: 1%
 
 ---
 
-# Usar o Quickview para criar pop-ups personalizados {#using-quickviews-to-create-custom-pop-ups}
+# Criar pop-ups personalizados usando o Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-O Quickview padrão é usado em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. No entanto, você pode acionar a exibição de conteúdo personalizado nas janelas pop-ups. Dependendo do visualizador, essa funcionalidade permite que os usuários toquem em um ponto de acesso ou em uma imagem em miniatura, ou em um mapa de imagem para ver informações ou conteúdo relacionado.
+O Quickview padrão é usado em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. No entanto, você pode acionar a exibição de conteúdo personalizado nas janelas pop-ups. Dependendo do visualizador, essa funcionalidade permite que os usuários selecionem em um ponto de acesso ou uma imagem em miniatura, ou em um mapa de imagem para ver informações ou conteúdo relacionado.
 
 O Quickview é compatível com os seguintes visualizadores no Dynamic Media:
 
-* Imagens interativas (pontos de conexão clicáveis)
+* Imagem interativa (pontos de acesso clicáveis)
 * Vídeo interativo (imagens em miniatura clicáveis durante a reprodução do vídeo)
-* Banners em carrossel (pontos de conexão clicáveis ou mapas de imagens)
+* Banner de carrossel (pontos de conexão clicáveis ou mapas de imagem)
 
 Embora a funcionalidade de cada visualizador seja diferente, o processo de criação de uma exibição rápida é o mesmo em todos os três visualizadores compatíveis.
 
-**Para usar o Quickview para criar pop-ups personalizados:**
+**Para criar pop-ups personalizados usando o Quickview:**
 
 1. Crie uma Exibição rápida para um ativo carregado.
 
