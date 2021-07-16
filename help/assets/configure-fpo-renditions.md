@@ -1,39 +1,39 @@
 ---
 title: Gerar para representações somente posicionamento para o Adobe InDesign
-description: Gere representações FPO de ativos novos e existentes usando AEM fluxo de trabalho e o ImageMagick.
+description: Gere representações FPO de ativos novos e existentes usando o fluxo de trabalho de Ativos do Experience Manager e o ImageMagick.
 contentOwner: Vishabh Gupta
 role: Admin
-feature: Representações de FPO, Representações
+feature: Representações
 exl-id: null
-source-git-commit: dab3bf47fbc59abab2c8a7972653aaece2b4bcdb
+source-git-commit: 865370e38368072c39ad337eb52259c586403efb
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
 
 # Gerar para representações somente posicionamento para o Adobe InDesign {#fpo-renditions}
 
-Ao colocar ativos de grande porte do AEM em documentos do Adobe InDesign, um profissional criativo deve aguardar por um tempo substancial depois de [colocar um ativo](https://helpx.adobe.com/indesign/using/placing-graphics.html). Enquanto isso, o usuário está bloqueado de usar o InDesign. Isso interrompe o fluxo criativo e afeta negativamente a experiência do usuário. O Adobe permite colocar temporariamente representações de pequeno porte em documentos InDesign para começar. Quando a saída final é necessária, digamos, para fluxos de trabalho de impressão e publicação, os ativos originais de resolução completa substituem a representação temporária em segundo plano. Essa atualização assíncrona em segundo plano acelera o processo de design para melhorar a produtividade e não dificulta o processo criativo.
+Ao colocar ativos de grande porte do Experience Manager em documentos do Adobe InDesign, um profissional criativo deve aguardar por um tempo substancial depois de [colocar um ativo](https://helpx.adobe.com/indesign/using/placing-graphics.html). Enquanto isso, o usuário está bloqueado de usar o InDesign. Isso interrompe o fluxo criativo e afeta negativamente a experiência do usuário. O Adobe permite colocar temporariamente representações de pequeno porte em documentos InDesign para começar. Quando a saída final é necessária, digamos, para fluxos de trabalho de impressão e publicação, os ativos originais de resolução completa substituem a representação temporária em segundo plano. Essa atualização assíncrona em segundo plano acelera o processo de design para melhorar a produtividade e não dificulta o processo criativo.
 
-AEM fornece representações que são usadas somente para posicionamento (FPO). Essas renderizações de FPO têm um tamanho de arquivo pequeno, mas têm a mesma proporção. Se uma representação FPO não estiver disponível para um ativo, o Adobe InDesign usará o ativo original. Esse mecanismo de fallback garante que o fluxo de trabalho criativo continue sem interrupções.
+O Adobe Experience Manager (AEM) fornece representações que são usadas somente para posicionamento (FPO). Essas renderizações de FPO têm um tamanho de arquivo pequeno, mas têm a mesma proporção. Se uma representação FPO não estiver disponível para um ativo, o Adobe InDesign usará o ativo original. Esse mecanismo de fallback garante que o fluxo de trabalho criativo continue sem interrupções.
 
 ## Abordagem para gerar representações FPO {#approach-to-generate-fpo-renditions}
 
-AEM permite que vários métodos processem imagens que podem ser usadas para gerar as representações FPO. Os dois métodos mais comuns são usar fluxos de trabalho de AEM integrados e usar o ImageMagick. Usando esses dois métodos, você configura a geração de representação de ativos recém-carregados e dos ativos que existem no AEM.
+O Experience Manager permite que vários métodos processem imagens que podem ser usadas para gerar as representações FPO. Os dois métodos mais comuns são usar fluxos de trabalho de Experience Manager integrados e usar o ImageMagick. Usando esses dois métodos, você configura a geração de representação de ativos recém-carregados e dos ativos que existem no Experience Manager.
 
-Você pode usar o ImageMagick para processar imagens, incluindo para gerar representações de FPO. Essas representações têm resolução reduzida, ou seja, as dimensões em pixels da representação são proporcionalmente reduzidas se a imagem original tiver PPI maior que 72. Consulte [instalar e configurar o ImageMagick para trabalhar com o AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/best-practices-for-imagemagick.html).
+Você pode usar o ImageMagick para processar imagens, incluindo para gerar representações de FPO. Essas representações têm resolução reduzida, ou seja, as dimensões em pixels da representação são proporcionalmente reduzidas se a imagem original tiver PPI maior que 72. Consulte [instalar e configurar o ImageMagick para trabalhar com o Experience Manager Assets](best-practices-for-imagemagick.md).
 
-|  | Uso de AEM fluxo de trabalho integrado | Uso do fluxo de trabalho do ImageMagick | Observações |
+|  | Uso do fluxo de trabalho incorporado do Experience Manager | Uso do fluxo de trabalho do ImageMagick | Observações |
 |— |— |—|— |
-| Para novos ativos | Habilitar representação FPO ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Adicionar linha de comando ImageMagick AEM fluxo de trabalho ([help](#generate-renditions-of-new-assets-using-imagemagick)) | AEM executa o fluxo de trabalho Ativos de atualização do DAM para cada upload. |
-| Para ativos existentes | Ative a representação FPO em um novo fluxo de trabalho de AEM dedicado ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Adicionar linha de comando ImageMagick em um novo fluxo de trabalho de AEM dedicado ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | As representações de FPO dos ativos existentes podem ser criadas sob demanda ou em massa. |
+| Para novos ativos | Habilitar representação FPO ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Adicionar linha de comando ImageMagick no fluxo de trabalho do Experience Manager ([help](#generate-renditions-of-new-assets-using-imagemagick)) | O Experience Manager executa o fluxo de trabalho Ativos de atualização do DAM para cada upload. |
+| Para ativos existentes | Ative a representação FPO em um novo fluxo de trabalho dedicado do Experience Manager ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Adicionar linha de comando ImageMagick em um novo fluxo de trabalho dedicado do Experience Manager ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | As representações de FPO dos ativos existentes podem ser criadas sob demanda ou em massa. |
 
 >[!CAUTION]
 >
->Crie os workflows para gerar representações modificando uma cópia dos workflows padrão. Impede que as alterações sejam substituídas quando o AEM é atualizado, por exemplo, instalando um novo service pack.
+>Crie os workflows para gerar representações modificando uma cópia dos workflows padrão. Impede que as alterações sejam substituídas quando o Experience Manager for atualizado, por exemplo, instalando um novo service pack.
 
-## Gerar representações de novos ativos usando AEM fluxo de trabalho {#generate-renditions-of-new-assets-using-aem-workflow}
+## Gerar representações de novos ativos usando o fluxo de trabalho do Experience Manager {#generate-renditions-of-new-assets-using-aem-workflow}
 
 A seguir estão as etapas para configurar o modelo de fluxo de trabalho Ativo de atualização do DAM para ativar a geração de representação:
 
@@ -59,7 +59,7 @@ A seguir estão as etapas para configurar o modelo de fluxo de trabalho Ativo de
 
 ## Gerar representações de novos ativos usando o ImageMagick {#generate-renditions-of-new-assets-using-imagemagick}
 
-No AEM, o fluxo de trabalho do Ativo de atualização do DAM é executado quando um novo ativo é carregado. Para usar o ImageMagick para processar representações de ativos recém-carregados, adicione um novo comando ao modelo de fluxo de trabalho.
+No Experience Manager, o fluxo de trabalho Ativos de atualização do DAM é executado quando um novo ativo é carregado. Para usar o ImageMagick para processar representações de ativos recém-carregados, adicione um novo comando ao modelo de fluxo de trabalho.
 
 1. Clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**. Selecione o modelo **[!UICONTROL Ativo de atualização do DAM]** e clique em **[!UICONTROL Editar]**.
 
@@ -83,11 +83,11 @@ No AEM, o fluxo de trabalho do Ativo de atualização do DAM é executado quando
 
 1. Para ativar as alterações, clique em **[!UICONTROL Sync]**.
 
-Para obter informações detalhadas sobre os recursos da linha de comando ImageMagick, consulte https://imagemagick.org.
+Para obter informações detalhadas sobre os recursos da linha de comando ImageMagick, consulte [https://imagemagick.org](https://imagemagick.org).
 
-## Gerar representações de ativos existentes usando AEM fluxo de trabalho {#generate-renditions-of-existing-assets-using-aem-workflow}
+## Gerar representações de ativos existentes usando o fluxo de trabalho do Experience Manager {#generate-renditions-of-existing-assets-using-aem-workflow}
 
-Para usar AEM fluxo de trabalho para gerar a representação FPO dos ativos existentes, crie um modelo de fluxo de trabalho dedicado que use a opção de representação FPO integrada.
+Para usar o fluxo de trabalho do Experience Manager para gerar a renderização FPO dos ativos existentes, crie um modelo de fluxo de trabalho dedicado que use a opção de renderização FPO integrada.
 
 1. Clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**. Para criar um modelo, clique em **[!UICONTROL Create]** > **[!UICONTROL Create Model]**. Adicione um **[!UICONTROL Título]** significativo e um **[!UICONTROL Nome]**.
 
@@ -95,21 +95,21 @@ Para usar AEM fluxo de trabalho para gerar a representação FPO dos ativos exis
 
 1. Clique em **[!UICONTROL Alternar painel lateral]** no canto superior esquerdo. Procure a etapa de miniatura do processo. Arraste a etapa **[!UICONTROL Processar miniaturas]**.
 
-1. Selecione **[!UICONTROL Processar miniaturas]** e clique em **[!UICONTROL Configurar]**. Siga a configuração [para gerar a representação de novos ativos usando AEM workflow](#generate-renditions-of-new-assets-using-aem-workflow). Para ativar as alterações, clique em **[!UICONTROL Sync]**.
+1. Selecione **[!UICONTROL Processar miniaturas]** e clique em **[!UICONTROL Configurar]**. Siga a configuração [para gerar a representação de novos ativos usando o Experience Manager workflow](#generate-renditions-of-new-assets-using-aem-workflow). Para ativar as alterações, clique em **[!UICONTROL Sync]**.
 
 
 ## Gerar representações de ativos existentes usando o ImageMagick {#generate-renditions-of-existing-assets-using-imagemagick}
 
 Para usar os recursos de processamento do ImageMagick para gerar a representação FPO dos ativos existentes, crie um modelo de fluxo de trabalho dedicado que use a linha de comando ImageMagick para fazer isso.
 
-1. Siga as etapas de 1 a 3 da [configuração para gerar a representação de ativos existentes usando AEM seção workflow](#generate-renditions-of-existing-assets-using-aem-workflow).
+1. Siga as etapas de 1 a 3 da [configuração para gerar a representação de ativos existentes usando a seção Experience Manager workflow](#generate-renditions-of-existing-assets-using-aem-workflow).
 
 1. Siga as etapas 4 a 8 da [configuração para gerar a representação de novos ativos usando a seção ImageMagick](#generate-renditions-of-new-assets-using-imagemagick).
 
 
 ## Exibir representações de FPO {#view-fpo-renditions}
 
-Você pode verificar as renderizações de FPO geradas após a conclusão do workflow. Na interface do usuário do AEM Assets, clique no ativo para abrir uma visualização grande. Abra o painel à esquerda e selecione Representações. Como alternativa, use o atalho de teclado `Alt + 3` quando a visualização estiver aberta.
+Você pode verificar as renderizações de FPO geradas após a conclusão do workflow. Na interface do usuário do Experience Manager Assets, clique no ativo para abrir uma visualização grande. Abra o painel à esquerda e selecione Representações. Como alternativa, use o atalho de teclado `Alt + 3` quando a visualização estiver aberta.
 
 Clique em **[!UICONTROL representação FPO]** para carregar a visualização. Como opção, você pode clicar com o botão direito do mouse na representação e salvá-la em seu sistema de arquivos.
 
@@ -118,7 +118,7 @@ Clique em **[!UICONTROL representação FPO]** para carregar a visualização. C
 
 ## Dicas e limitações {#tips-limitations}
 
-* Para usar a configuração baseada em ImageMagick, instale o ImageMagick na mesma máquina do AEM.
-* Para gerar representações FPO de muitos ativos ou de todo o repositório, planeje e execute os workflows durante a duração do tráfego baixo. Gerar representações de FPO para um grande número de ativos é uma atividade que consome muitos recursos e os servidores de AEM devem ter capacidade de processamento e memória disponíveis suficientes.
-* Para desempenho e escalabilidade, consulte [Ajustar o ImageMagick](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html).
-* Para o tratamento de linha de comando genérico de ativos, consulte [manipulador de linha de comando para processar ativos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/media-handlers.html).
+* Para usar a configuração baseada em ImageMagick, instale o ImageMagick na mesma máquina que o Experience Manager.
+* Para gerar representações FPO de muitos ativos ou de todo o repositório, planeje e execute os workflows durante a duração do tráfego baixo. Gerar representações de FPO para um grande número de ativos é uma atividade que consome muitos recursos e os servidores de Experience Manager devem ter capacidade de processamento e memória disponíveis suficientes.
+* Para desempenho e escalabilidade, consulte [Ajustar o ImageMagick](performance-tuning-guidelines.md).
+* Para o tratamento de linha de comando genérico de ativos, consulte [manipulador de linha de comando para processar ativos](media-handlers.md).
