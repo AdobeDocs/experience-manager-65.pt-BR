@@ -1,5 +1,5 @@
 ---
-title: Entrega de ativos de Mídia dinâmica
+title: Fornecer ativos da Dynamic Media
 description: Saiba como fornecer ativos do Dynamic Media
 uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
@@ -11,14 +11,14 @@ docset: aem65
 role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Gerenciamento de ativos,Representações
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 6%
+ht-degree: 3%
 
 ---
 
-# Entrega de ativos de Mídia dinâmica{#delivering-dynamic-media-assets}
+# Fornecer ativos da Dynamic Media{#delivering-dynamic-media-assets}
 
 A maneira de fornecer os ativos da Dynamic Media - vídeo e imagens - depende de como o site está implementado.
 
@@ -37,18 +37,18 @@ Com o Dynamic Media, você tem várias opções:
 
 Para obter mais informações, consulte os seguintes tópicos:
 
-* [Adicionar ativos Dynamic Media às páginas da Web](/help/assets/adding-dynamic-media-assets-to-pages.md)
-* [Incorporação do visualizador de vídeo ou imagem em uma página da Web](/help/assets/embed-code.md)
-* [Ativação da proteção de hotlink no Dynamic Media](/help/assets/hotlink-protection.md)
-* [Vincular URLs ao seu aplicativo web](/help/assets/linking-urls-to-yourwebapplication.md)
+* [Adicionar ativos do Dynamic Media às páginas da Web](/help/assets/adding-dynamic-media-assets-to-pages.md)
+* [Incorporar o visualizador de vídeo ou imagem em uma página da Web](/help/assets/embed-code.md)
+* [Ativar a proteção de hotlink no Dynamic Media](/help/assets/hotlink-protection.md)
+* [Vincular URLs ao aplicativo da Web](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Fornecer imagens otimizadas para um site responsivo](/help/assets/responsive-site.md)
 * [Entrega de conteúdo HTTP2](/help/assets/http2.md)
 * [Invalidar o cache CDN por meio do Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
-* [Uso de conjuntos de regras para transformar URLs](/help/assets/using-rulesets-to-transform-urls.md)
+* [Usar conjuntos de regras para transformar URLs](/help/assets/using-rulesets-to-transform-urls.md)
 
 
 ## Entrega HTTP/2 de ativos do Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
 O Experience Manager agora é compatível com a entrega de todo o conteúdo do Dynamic Media (imagens e vídeo) por HTTP/2. Ou seja, um URL publicado ou código incorporado para a imagem ou vídeo está disponível para ser integrado a qualquer aplicativo que aceite um ativo hospedado. Esse ativo publicado é então entregue por meio do protocolo HTTP/2. Esse método de entrega melhora a maneira como os navegadores e servidores se comunicam, permitindo uma melhor resposta e tempos de carregamento de todos os seus ativos do Dynamic Media.
 
-Para saber mais, consulte [Perguntas frequentes sobre entrega de conteúdo HTTP/2](/help/sites-administering/scene7-http2faq.md).
+Para saber mais, consulte [Entrega HTTP/2 de conteúdo de perguntas frequentes](/help/sites-administering/scene7-http2faq.md).
