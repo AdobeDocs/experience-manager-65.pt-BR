@@ -2,17 +2,16 @@
 title: Lista de recursos de experiências fluídas do AEM
 description: Lista de recursos de experiências fluídas
 index: n
-feature: Authoring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: 'Criação  '
+exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
-
-# Lista de recursos de experiências fluídas AEM{#aem-fluid-experiences-feature-list}
+# Lista de recursos de experiências fluídas do AEM{#aem-fluid-experiences-feature-list}
 
 As experiências fluídas do Adobe Experience Manager são obtidas com os avançados conjuntos de recursos do AEM Sites, AEM Dynamic Media e AEM Assets para fornecer uma solução robusta para a entrega de conteúdo sem interface.
 
@@ -55,7 +54,7 @@ As tabelas a seguir definem os recursos de AEM Experiências fluídas e vinculam
 | API HTTP para conteúdo estruturado (leitura) |
 | API HTTP para conteúdo estruturado (CRUD) |
 | [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) |
-| [Mídia dinâmica](/help/assets/dynamic-media.md) |
+| [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## Recursos de administração e integração {#admin-and-integration-features}
 
