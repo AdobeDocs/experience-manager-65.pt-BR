@@ -9,7 +9,7 @@ docset: aem65
 role: User, Admin
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuração,Modo Scene7
-source-git-commit: 752eacca9d29b272c040b48c35e4717b13e34b12
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '6160'
 ht-degree: 4%
@@ -208,7 +208,7 @@ Por padrão, o sistema mostra 15 execuções ao selecionar **[!UICONTROL Represe
 
 #### Configurar o gerenciamento de cores {#configuring-color-management}
 
-O gerenciamento dinâmico de cores da mídia permite que você corrija os ativos. Com a correção de cores, os ativos assimilados retêm seu espaço de cores (RGB, CMYK, Cinza) e o perfil de cores incorporado. Quando você solicita uma representação dinâmica, a cor da imagem é corrigida no espaço de cores de destino usando saída CMYK, RGB ou Cinza. Consulte [Configurar predefinições de imagem](/help/assets/managing-image-presets.md).
+O gerenciamento de cores do Dynamic Media permite corrigir a cor dos ativos. Com a correção de cores, os ativos assimilados retêm seu espaço de cores (RGB, CMYK, Cinza) e o perfil de cores incorporado. Quando você solicita uma representação dinâmica, a cor da imagem é corrigida no espaço de cores de destino usando saída CMYK, RGB ou Cinza. Consulte [Configurar predefinições de imagem](/help/assets/managing-image-presets.md).
 
 Para configurar as propriedades de cores padrão, a correção de cores é ativada quando as imagens são solicitadas:
 
