@@ -1,19 +1,19 @@
 ---
-title: Adição de ativos do Dynamic Media a páginas
+title: Adicionar ativos do Dynamic Media às páginas
 description: Para adicionar a funcionalidade Dynamic Media aos ativos que você usa nos sites, é possível adicionar o componente Dynamic Media ou Mídia interativa diretamente na página.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 32%
+ht-degree: 30%
 
 ---
 
-# Adição de ativos do Dynamic Media a páginas{#adding-dynamic-media-assets-to-pages}
+# Adicionar ativos do Dynamic Media às páginas{#adding-dynamic-media-assets-to-pages}
 
 Para adicionar a funcionalidade Dynamic Media aos ativos que você usa nos sites, é possível adicionar o componente **[!UICONTROL Dynamic Media]** ou **[!UICONTROL Mídia interativa]** diretamente na página. Entre no modo **[!UICONTROL Design]** e habilite os componentes do Dynamic Media. Em seguida, adicione esses componentes à página e adicionar ativos ao componente. A Dynamic Media e os componentes de mídia interativa são inteligentes - eles sabem se você está adicionando uma imagem ou um vídeo e as opções disponíveis mudam de acordo.
 
@@ -30,7 +30,9 @@ Adicionar o componente [!UICONTROL Dynamic Media] ou [!UICONTROL Mídia interati
 Para adicionar um componente/visualizador de mídia dinâmica a uma página:
 
 1. No Experience Manager, abra a página onde deseja adicionar o componente Dynamic Media.
-1. Se nenhum componente Dynamic Media estiver disponível, clique na régua no [!UICONTROL Sidekick] para entrar no modo **[!UICONTROL Design]**, clique em **[!UICONTROL Editar]** parsys e selecione **[!UICONTROL Dynamic Media]** para disponibilizar os componentes do Dynamic Media.
+1. Se nenhum componente Dynamic Media estiver disponível, selecione a régua no [!UICONTROL Sidekick] para entrar no modo **[!UICONTROL Design]**.
+1. Selecione **[!UICONTROL Edit]** parsys.
+1. Selecione **[!UICONTROL Dynamic Media]** para que possa disponibilizar os componentes do Dynamic Media.
 
    >[!NOTE]
    >
@@ -38,8 +40,9 @@ Para adicionar um componente/visualizador de mídia dinâmica a uma página:
 
 1. Retorne ao modo **[!UICONTROL Editar]** clicando no ícone de lápis no [!UICONTROL Sidekick].
 1. Arraste o componente **[!UICONTROL Dynamic Media]** ou **[!UICONTROL Mídia interativa]** do grupo **[!UICONTROL Outro]** no sidekick para a página no local desejado.
-1. Clique em **[!UICONTROL Editar]** para que o componente seja aberto.
-1. [](#dynamic-media-component)Edite o componente conforme necessário e clique em **[!UICONTROL OK]** para salvar as alterações.
+1. Selecione **[!UICONTROL Editar]** para que o componente seja aberto.
+1. [Edite os ](#dynamic-media-component) componentes necessários.
+1. Selecione **[!UICONTROL OK]** para que as alterações sejam salvas.
 
 ## Componentes de mídia dinâmica {#dynamic-media-components}
 
@@ -132,7 +135,7 @@ Você pode editar as seguintes configurações [!UICONTROL Avançado] clicando e
 
 **[!UICONTROL Largura e altura]**  - Insira o valor em pixels se desejar que o vídeo tenha um tamanho fixo. Deixar esses valores em branco faz com ele que seja adaptável.
 
-#### Como fornecer vídeos seguros {#how-to-delivery-secure-video}
+#### Fornecer vídeo seguro {#how-to-delivery-secure-video}
 
 No Experience Manager 6.2, ao instalar [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), você pode controlar se um vídeo é entregue por uma conexão SSL segura (HTTPS) ou por uma conexão não segura (HTTP). Por padrão, o protocolo de entrega de vídeo é herdado automaticamente do protocolo da página da web de incorporação. Se a página da web for carregada via HTTPS, o vídeo também será entregue via HTTPS. E, por outro lado, se a página da Web estiver em HTTP, o vídeo será entregue via HTTP. Normalmente, esse comportamento padrão é bom e não há necessidade de fazer alterações na configuração. No entanto, você pode substituir esse comportamento padrão. Anexe `VideoPlayer.ssl=on` ao final de um caminho de URL ou à lista de outros parâmetros de configuração do visualizador em um trecho de código incorporado. A ação força a entrega segura de vídeos.
 
