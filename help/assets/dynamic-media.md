@@ -1,5 +1,5 @@
 ---
-title: Trabalhar com o Dynamic Media
+title: Trabalhar com a Dynamic Media
 description: Saiba como usar o Dynamic Media para fornecer ativos para consumo na Web, em dispositivos móveis e em sites sociais.
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
@@ -10,10 +10,10 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Colaboração,Gerenciamento de ativos
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 22%
+source-wordcount: '422'
+ht-degree: 9%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 22%
 
 O [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ajuda a fornecer ativos de marketing e merchandising visual por demanda, automaticamente dimensionados para o consumo na Web, em dispositivos móveis e sites sociais. Usando um conjunto de ativos de origem primária, a Dynamic Media gera e fornece várias variações de conteúdo rico em tempo real por meio de sua rede global, escalável e otimizada para desempenho.
 
-O Dynamic Media oferece experiências de visualização interativas, incluindo zoom, rotação de 360 graus e vídeo. O Dynamic Media incorpora de forma exclusiva os fluxos de trabalho da solução de gerenciamento de ativos digitais do Adobe Experience Manager (Assets) para simplificar e agilizar o processo de gerenciamento de campanhas digitais.
+O Dynamic Media fornece experiências de visualização interativas, incluindo zoom, rotação de 360 graus e vídeo. O Dynamic Media incorpora exclusivamente os fluxos de trabalho da solução de gerenciamento de ativos digitais (Assets) da Adobe Experience Manager para simplificar e simplificar o processo de gerenciamento de campanhas digitais.
 
 <!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
@@ -42,11 +42,11 @@ Os recursos exclusivos ao Dynamic Media incluem o seguinte:
 
 * [Conjuntos de rotação](spin-sets.md)
 * [Vídeo](video.md)
-* [Entrega de ativos de Mídia dinâmica](delivering-dynamic-media-assets.md)
+* [Fornecer ativos da Dynamic Media](delivering-dynamic-media-assets.md)
 * [Gerenciar ativos](managing-assets.md)
-* [Uso do Quickviews para criar pop-ups personalizados](custom-pop-ups.md)
+* [Criar pop-ups personalizados usando o Quickview](custom-pop-ups.md)
 
-Consulte também [Configuração do Dynamic Media](administering-dynamic-media.md).
+Consulte também [Configurar Dynamic Media](administering-dynamic-media.md).
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Consulte também [Configuração do Dynamic Media](administering-dynamic-media.m
 * Conjuntos de imagens, conjuntos de rotação, conjuntos de mídia mista estão disponíveis.
 * As representações PTIFF são criadas.
 
-Quando você clica em um ativo de imagem, a exibição do ativo é diferente com Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). O Dynamic Media usa os visualizadores HTML5 sob demanda.
+Quando você seleciona um ativo de imagem, a exibição do ativo é diferente com o Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). O Dynamic Media usa os visualizadores HTML5 sob demanda.
 
 ### Representações dinâmicas {#dynamic-renditions}
 
@@ -76,7 +76,7 @@ Conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista estarã
 
 ### Representações PTIFF {#ptiff-renditions}
 
-Os ativos habilitados para mídia dinâmica incluem `pyramid.tiffs`.
+Os ativos habilitados para Dynamic Media incluem `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
