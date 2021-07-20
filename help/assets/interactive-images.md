@@ -11,18 +11,18 @@ docset: aem65
 feature: Imagens interativas
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
-source-wordcount: '4286'
+source-wordcount: '4277'
 ht-degree: 1%
 
 ---
 
 # Imagens interativas{#interactive-images}
 
-Você pode facilmente fazer imagens estáticas avançadas e envolventes para os clientes, arrastando e soltando pontos de acesso &quot;que podem ser comprados&quot; em uma imagem. Os hotspots que podem ser comprados combinam informações adicionais sobre um produto ou serviço com um recurso direto de &quot;Adicionar ao carrinho&quot; ou &quot;Comprar&quot; no ponto de venda. Os clientes podem tocar ou clicar nesses pontos de acesso e ser vinculados diretamente ao produto ou serviço, adicioná-lo a um carrinho de compras ou ser vinculados a uma página da Web. Experiências diretas como essas aumentam os envolvimentos do cliente e as conversões no seu site.
+Você pode facilmente fazer imagens estáticas avançadas e envolventes para os clientes, arrastando e soltando pontos de acesso &quot;que podem ser comprados&quot; em uma imagem. Os hotspots que podem ser comprados combinam informações adicionais sobre um produto ou serviço com um recurso direto de &quot;Adicionar ao carrinho&quot; ou &quot;Comprar&quot; no ponto de venda. Os clientes podem selecionar esses pontos de acesso e ser vinculados diretamente ao produto ou serviço, adicioná-lo a um carrinho de compras ou ser vinculados a uma página da Web. Experiências diretas como essas aumentam os envolvimentos do cliente e as conversões no seu site.
 
-Veja a seguir um banner que pode ser comprado com um pop-up do Quickview. Um usuário ativa o Quickview, tocando o círculo ou o &quot;ponto de acesso&quot; no modelo.
+Veja a seguir um banner que pode ser comprado com um pop-up do Quickview. Um usuário ativa o Quickview selecionando o círculo ou o &quot;ponto de acesso&quot; no modelo.
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
@@ -93,7 +93,7 @@ Há diferentes maneiras de identificar um conjunto de variáveis a serem usadas 
 
 A maioria das implementações do Quickview usa o seguinte paradigma:
 
-* O usuário ativa um elemento da interface do usuário no site. Por exemplo, clicar em um botão &quot;Quickview&quot;.
+* O usuário ativa um elemento da interface do usuário no site. Por exemplo, selecionar um botão &quot;Quickview&quot;.
 * O site envia uma solicitação do Ajax para o backend para carregar os dados ou o conteúdo do Quickview, se necessário.
 * Os dados do Quickview são traduzidos para o conteúdo em preparação para renderização na página da Web.
 * Por fim, o código front-end renderiza visualmente esse conteúdo na tela.
@@ -102,11 +102,11 @@ A abordagem é então visitar diferentes áreas do site existente, onde o recurs
 
 Normalmente, não há necessidade de usar ferramentas de depuração especializadas. Os navegadores modernos da Web apresentam inspetores da Web que fazem um trabalho adequado. A seguir estão alguns exemplos de navegadores da Web que incluem inspetores da Web:
 
-* Para ver todas as solicitações HTTP de saída no Google Chrome, pressione F12 para abrir o painel Ferramentas do desenvolvedor e clique na guia Rede.
-Em um Mac, pressione Command+Option+I para abrir o painel Ferramentas do desenvolvedor e clique na guia Rede.
+* Para ver todas as solicitações HTTP de saída no Google Chrome, pressione F12 para abrir o painel Ferramentas do desenvolvedor e selecione a guia Rede.
+Em um Mac, pressione Command+Option+I para abrir o painel Ferramentas do desenvolvedor e selecione a guia Rede.
 
 * No Firefox, é possível ativar o plug-in do Firebug pressionando F12 e usar a guia Rede ou usar a ferramenta Inspetor integrada e a guia Rede.
-Em um Mac, pressione Command+Option+I para abrir o painel Ferramentas do desenvolvedor e clique na guia Inspetor .
+Em um Mac, pressione Command+Option+I para abrir o painel Ferramentas do desenvolvedor e selecione a guia Inspetor .
 
 Quando o monitoramento de rede estiver ativado no navegador, acione o Quickview na página.
 
@@ -164,7 +164,7 @@ Você pode aplicar a mesma abordagem usada nos três exemplos acima na página d
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-A página da Web de demonstração tem várias miniaturas de produto, cada uma com um botão Quickview chamado &quot;Veja mais&quot;. Com a ferramenta de depuração do navegador da Web ainda ativada, clique em cada botão e observe os URLs do Quickview registrados. Depois de ativar todos os quatro produtos do Quickview disponíveis na página, você tem a seguinte lista de solicitações do Quickview feitas ao back-end:
+A página da Web de demonstração tem várias miniaturas de produto, cada uma com um botão Quickview chamado &quot;Veja mais&quot;. Com a ferramenta de depuração do navegador da Web ainda ativada, selecione cada botão e observe os URLs do Quickview gravados. Depois de ativar todos os quatro produtos do Quickview disponíveis na página, você tem a seguinte lista de solicitações do Quickview feitas ao back-end:
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -194,21 +194,21 @@ Depois de salvar a predefinição do visualizador, ela é ativada automaticament
 
 **Para criar uma predefinição do visualizador de Imagem interativa :**
 
-1. No painel à esquerda, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]**.
-1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Criar]**.
+1. No painel à esquerda, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]**.
+1. Próximo ao canto superior direito da página, selecione **[!UICONTROL Criar]**.
 1. Na caixa de diálogo Nova predefinição do visualizador, digite um nome para descrever a predefinição interativa do visualizador de banner.
 
    O título aparece na página de lista Predefinição do visualizador depois de salvar.
 
 1. No menu suspenso Rich Media Type (Tipo de mídia avançada), selecione **[!UICONTROL Imagem interativa]**.
-1. Toque em **[!UICONTROL Criar]**.
-1. Na página Editar predefinição do visualizador , toque na guia **[!UICONTROL Aparência]**.
+1. Selecione **[!UICONTROL Criar]**.
+1. Na página Editar predefinição do visualizador , selecione a guia **[!UICONTROL Aparência]**.
 1. Faça uma das seguintes opções:
 
-   * Para fazer upload de sua própria imagem de ponto de acesso que deseja usar nas imagens, toque no ícone Seletor de ativos. Na página Selecionar conteúdo , navegue até a imagem do ponto de acesso que deseja usar, selecione-a e toque no ícone Marca de seleção no canto superior direito.
-   * Para selecionar uma imagem de ponto de acesso predefinida, toque no ícone Galeria de pontos de acesso . Na paleta galeria de ponto de acesso, toque na imagem do ponto de acesso que deseja usar.
+   * Para carregar sua própria imagem de ponto de acesso que deseja usar nas imagens, selecione o ícone Seletor de ativos. Na página Selecionar conteúdo , navegue até a imagem do ponto de acesso que deseja usar, selecione-a e selecione o ícone Marca de seleção no canto superior direito.
+   * Para selecionar uma imagem de ponto de acesso predefinida, selecione o ícone Galeria de pontos de acesso . Na paleta galeria de pontos de acesso, selecione a imagem do ponto de acesso que deseja usar.
 
-1. Próximo ao canto superior direito da página, toque em **[!UICONTROL Salvar]**.
+1. Próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 
    Certifique-se de publicar a nova predefinição do visualizador.
 
@@ -260,43 +260,43 @@ Se você estiver editando imagens interativas com pontos de acesso e recortar a 
 1. Na exibição Ativos, navegue até o banner de imagem que deseja tornar interativo.
 1. Faça uma das seguintes opções:
 
-   * Passe o mouse sobre a imagem e toque em **[!UICONTROL Selecionar]** (ícone de marca de seleção). Na barra de ferramentas, toque em **[!UICONTROL Editar]**.
+   * Passe o mouse sobre a imagem e selecione **[!UICONTROL Select]** (ícone de marca de seleção). Na barra de ferramentas, selecione **[!UICONTROL Editar]**.
 
-   * Passe o mouse sobre a imagem, em seguida, toque em **[!UICONTROL Mais ações]** (ícone de três pontos) **[!UICONTROL Editar]**.
+   * Passe o mouse sobre a imagem e selecione **[!UICONTROL Mais ações]** (ícone de três pontos) **[!UICONTROL Editar]**.
 
-   * Toque na imagem para abri-la na página Exibição detalhada . Na barra de ferramentas, toque em **[!UICONTROL Editar]**.
+   * Selecione a imagem para abri-la na página Exibição detalhada . Na barra de ferramentas, selecione **[!UICONTROL Editar]**.
 
-1. Próximo ao canto superior esquerdo da página, toque em **[!UICONTROL Adicionar ponto de acesso]** (ícone de toque com o dedo) para abrir a página Gerenciamento de ponto de acesso.
-1. Próximo ao canto superior esquerdo da página, toque em **[!UICONTROL Ponto de acesso]**.
+1. Próximo ao canto superior esquerdo da página, selecione **[!UICONTROL Adicionar ponto de acesso]** (ícone de toque com o dedo) para abrir a página Gerenciamento de ponto de acesso.
+1. Próximo ao canto superior esquerdo da página, selecione **[!UICONTROL Ponto de acesso]**.
 
-   1. Próximo ao canto superior esquerdo da página Gerenciamento de ponto de acesso, toque em **[!UICONTROL Ponto de acesso]**.
-   1.  Na imagem, toque em um local onde deseja que o ponto de acesso apareça. Se necessário, arraste o ponto de conexão para ajustar sua localização.
+   1. Próximo ao canto superior esquerdo da página Gerenciamento de ponto de acesso, selecione **[!UICONTROL Ponto de acesso]**.
+   1. Na imagem, selecione um local onde deseja que o ponto de acesso apareça. Se necessário, arraste o ponto de conexão para ajustar sua localização.
    1. Adicione outros pontos de acesso, conforme necessário, repetindo as etapas a e b.
-   1. (Opcional) Para excluir um ponto de acesso, selecione-o na imagem e toque em **[!UICONTROL Excluir]** (ícone da lixeira) sob o cabeçalho **[!UICONTROL Pontos de acesso]**.
+   1. (Opcional) Para excluir um ponto de acesso, selecione-o na imagem e, em seguida, selecione **[!UICONTROL Excluir]** (ícone da lixeira) sob o cabeçalho **[!UICONTROL Pontos de acesso]**.
 
 1. No campo de texto Nome , digite o nome do ponto de acesso. Esse nome também aparece na lista suspensa Ponto de acesso selecionado .
 1. Faça uma das seguintes opções:
 
-   * Toque em **[!UICONTROL Quickview]**.
+   * Selecione **[!UICONTROL Quickview]**.
 
-      * Se você for um cliente do Experience Manager Sites ou eCommerce, toque ou clique no ícone Seletor de produto (lupa) para abrir a página Selecionar produto . Toque ou clique no produto que deseja usar e toque em **[!UICONTROL Selecionar]** no canto superior direito da página para retornar à página Gerenciamento de pontos de acesso .
+      * Se você for um cliente do Experience Manager Sites ou eCommerce, selecione o ícone Seletor de produto (lupa) para abrir a página Selecionar produto . Selecione o produto que deseja usar e selecione **[!UICONTROL Select]** no canto superior direito da página para retornar à página de gerenciamento de Pontos de acesso.
       * Se você for *not* um cliente Experience Manager Sites ou eCommerce
 
          * Consulte [Identificar variáveis de ponto de acesso](#optional-identifying-hotspot-variables); você deve definir essas variáveis.
-         * Em seguida, insira manualmente o valor de SKU. No campo de texto Valor SKU , digite o SKU (Stock Keeping Unit) do produto, que é um identificador exclusivo para cada produto ou serviço distinto que você oferece. O valor de SKU inserido preenche automaticamente a parte variável do modelo do Quickview, de modo que o sistema saiba associar o ponto de acesso com um Quickview específico do SKU.
-         * (Opcional) Se houver outras variáveis no Quickview que você deve usar para identificar ainda mais um produto, toque em **[!UICONTROL Adicionar variável genérica]**. No campo de texto, especifique uma variável extra. Por exemplo, `category=Males` é uma variável adicionada.
-   * Toque em **[!UICONTROL Hiperlink]**.
+         * Em seguida, insira manualmente o valor de SKU. No campo de texto Valor SKU , digite o SKU (Stock Keeping Unit) do produto, que é um identificador exclusivo para cada produto ou serviço distinto que você oferece. O valor de SKU inserido preenche automaticamente a parte variável do modelo do Quickview, de modo que o sistema saiba associar o ponto de acesso selecionado a um Quickview específico do SKU.
+         * (Opcional) Se houver outras variáveis no Quickview que você deve usar para identificar ainda mais um produto, selecione **[!UICONTROL Adicionar variável genérica]**. No campo de texto, especifique uma variável extra. Por exemplo, `category=Males` é uma variável adicionada.
+   * Selecione **[!UICONTROL Hiperlink]**.
 
-      * Se você for um cliente do Experience Manager Sites , toque ou clique no ícone do Seletor de site (pasta) para navegar até um URL. O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .
+      * Se você for um cliente do Experience Manager Sites , selecione o ícone do Seletor de site (pasta) para navegar até um URL. O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .
       * Se você for um cliente independente, no campo de texto HREF, especifique o caminho do URL completo para uma página da Web vinculada.
 
    Certifique-se de especificar se deseja abrir o link em uma nova guia do navegador (padrão recomendado) ou na mesma guia.
 
    Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md) para obter mais informações.
 
-   * Toque em **[!UICONTROL Fragmento de experiência]**.
+   * Selecione **[!UICONTROL Fragmento de experiência]**.
 
-      * Se você for um cliente do Experience Manager Sites, toque ou clique no ícone Pesquisar (lupa) para abrir a página Fragmento de experiência . Toque no Fragmento de experiência que deseja usar e toque em **[!UICONTROL Selecionar]** no canto superior direito da página para retornar à página Gerenciamento de ponto de acesso.
+      * Se você for um cliente do Experience Manager Sites , selecione o ícone de Pesquisa (lupa) para abrir a página Fragmento de experiência . Selecione o Fragmento de experiência que deseja usar e selecione **[!UICONTROL Selecionar]** no canto superior direito da página para retornar à página Gerenciamento de ponto de acesso.
 Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md).
 
       * Especifique a largura e a altura do Fragmento de experiência da maneira que deseja que apareça no banner.
@@ -306,7 +306,7 @@ Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments
 
 
 
-1. Toque em **[!UICONTROL Salvar]** para salvar seu trabalho e retornar à página Procurar.
+1. Selecione **[!UICONTROL Save]** para salvar seu trabalho e retornar à página Procurar.
 1. Publique a imagem interativa. A publicação permite que o banner seja entregue por meio da nuvem e também gera código incorporado se você precisar se integrar a um site de terceiros.
 
    Consulte [Publicar ativos](/help/assets/manage-assets.md#publishing-assets).
@@ -329,10 +329,10 @@ Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/adding-dynam
 
 **Para visualizar imagens interativas:**
 
-1. Na exibição Ativos, navegue até uma imagem interativa existente que você criou e toque para abri-la na Visualização.
-1. Próximo ao canto superior esquerdo da página Visualização, na lista suspensa Conteúdo, toque em **[!UICONTROL Visualizadores]**.
-1. Na lista Visualizadores, toque em **[!UICONTROL Shoppable_Banner]** ou no nome da predefinição do visualizador de imagens interativo que você criou.
-1. Toque em pontos de acesso na imagem se desejar testar as ações associadas.
+1. Na exibição Ativos, navegue até uma imagem interativa existente que você criou e selecione para abri-la em Visualização.
+1. Próximo ao canto superior esquerdo da página Visualização, na lista suspensa Conteúdo , selecione **[!UICONTROL Visualizadores]**.
+1. Na lista Visualizadores, selecione **[!UICONTROL Shoppable_Banner]** ou o nome da predefinição do visualizador de imagens interativo que você criou.
+1. Selecione pontos de acesso na imagem se desejar testar as ações associadas.
 
 ## Publicar ativos de imagem interativos {#publishing-interactive-image-assets}
 
@@ -398,7 +398,7 @@ A implementação existente do Quickview normalmente representa uma cadeia de a�
 
 Essas chamadas não representam chamadas de API públicas independentes que podem ser chamadas pela lógica da página da Web de uma etapa arbitrária. Em vez disso, é uma chamada encadeada em que cada próxima etapa está oculta na última fase (retorno de chamada) da etapa anterior.
 
-Ao mesmo tempo em que a imagem interativa que pode ser comprada está substituindo a etapa 1 e parcialmente a etapa 2, quando um usuário clica em um ponto de acesso dentro da imagem que pode ser comprada, essa interação do usuário é tratada pelo visualizador. O visualizador retorna um evento para a página da Web que contém todos os dados de ponto de acesso adicionados anteriormente aos Ativos do Experience Manager.
+Ao mesmo tempo em que a imagem interativa que pode ser comprada está substituindo a etapa 1 e parcialmente a etapa 2, em que um usuário seleciona um ponto de acesso dentro da imagem que pode ser comprada, essa interação do usuário é tratada pelo visualizador. O visualizador retorna um evento para a página da Web que contém todos os dados de ponto de acesso adicionados anteriormente aos Ativos do Experience Manager.
 
 Nesse manipulador de evento, o código front-end faz o seguinte:
 
