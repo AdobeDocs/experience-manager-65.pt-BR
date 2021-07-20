@@ -10,7 +10,7 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Perfis de imagem
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 3411c5c4498cc45451a5874fae2bfccfaddae251
+source-git-commit: 6ac0be454a5410f55155490941cb5aa6e2d8620b
 workflow-type: tm+mt
 source-wordcount: '2755'
 ht-degree: 12%
@@ -155,7 +155,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
 #### Aplicação de perfis de imagem do Dynamic Media a pastas de Propriedades {#applying-image-profiles-to-folders-from-properties}
 
-1. Toque no logotipo do AEM e navegue até **[!UICONTROL Assets]**. Em seguida, navegue até a pasta pai da pasta na qual deseja aplicar um perfil de imagem.
+1. Toque no logotipo do AEM e navegue até **[!UICONTROL Assets]**. Em seguida, navegue até a pasta pai da pasta à qual deseja aplicar um perfil de imagem.
 1. Na pasta , toque na marca de seleção para selecioná-la e toque em **[!UICONTROL Propriedades]**.
 1. Toque na guia **[!UICONTROL Perfis de imagem]**. Na lista suspensa **[!UICONTROL Nome do perfil]**, selecione o perfil e toque em **[!UICONTROL Salvar e fechar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
