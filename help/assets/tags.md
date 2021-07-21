@@ -1,6 +1,6 @@
 ---
 title: Integrar visualizadores do Dynamic Media com tags Adobe Analytics e Experience Platform
-description: A extensão Visualizadores do Dynamic Media para Tags do Experience Platform e Visualizadores do Dynamic Media 5.13 permite que os clientes de Adobe Analytics e Tags do Experience Platform usem eventos e dados específicos para Visualizadores do Dynamic Media em sua configuração de Tags do Experience Platform.
+description: Saiba mais sobre a extensão Visualizadores do Dynamic Media para Tags do Experience Platform e Visualizadores do Dynamic Media 5.13. Ela permite que clientes de Adobe Analytics e Tags do Experience Platform usem eventos e dados específicos para Visualizadores do Dynamic Media em suas configurações de Tags do Experience Platform.
 mini-toc-levels: 3
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -10,9 +10,9 @@ docset: aem65
 feature: Espectadores
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
+source-git-commit: 997eeafa03d3148fb0754eaa27a5a99217e0d1bc
 workflow-type: tm+mt
-source-wordcount: '6630'
+source-wordcount: '6636'
 ht-degree: 6%
 
 ---
@@ -802,7 +802,7 @@ Por exemplo, `https://ims-na1.adobelogin.com/`
 
 1. Na página **[!UICONTROL Configurações de Tags do Experience Platform]**, no painel esquerdo, selecione um Experience Manager Site para o qual deseja aplicar a Configuração de Tags do Experience Platform.
 
-   Somente para fins de amostra, o `We.Retail` Site é selecionado na captura de tela abaixo.
+   Somente para fins de amostra, o site **`We.Retail`** é selecionado na captura de tela abaixo.
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
