@@ -6,7 +6,7 @@ contentOwner: AG
 role: User
 feature: Fluxo De Trabalho,Representações
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4851d61d9897ac71c6512829fdccf1895ad58bcd
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 4%
@@ -37,7 +37,7 @@ Os seguintes manipuladores de mídia estão disponíveis em [!DNL Assets] e lida
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>aplicativo/ilustrador</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Importante</b> - Ao carregar um arquivo MP3, ele é [processado usando uma biblioteca de terceiros](http://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). A biblioteca calcula um comprimento aproximado não preciso se o MP3 tiver uma taxa de bits variável (VBR). |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Importante</b> - Ao carregar um arquivo MP3, ele é [processado usando uma biblioteca de terceiros](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). A biblioteca calcula um comprimento aproximado não preciso se o MP3 tiver uma taxa de bits variável (VBR). |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>aplicativo/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -56,7 +56,7 @@ Todos os manipuladores executam as seguintes tarefas:
 
 Para exibir os manipuladores de mídia ativos:
 
-1. No navegador, navegue até `http://localhost:4502/system/console/components`.
+1. No navegador, navegue até `https://localhost:4502/system/console/components`.
 1. Clique em `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. Uma lista com todos os manipuladores de mídia ativos é exibida. Por exemplo:
 
@@ -494,7 +494,7 @@ Instale [!DNL ImageMagick] no disco que hospeda o servidor [!DNL Experience Mana
 Para testar o fluxo de trabalho modificado, adicione um ativo a `/content/dam`.
 
 1. No sistema de arquivos, obtenha uma imagem TIFF de sua escolha. Renomeie-o para `myImage.tiff` e copie-o para `/content/dam`, por exemplo, usando o WebDAV.
-1. Vá para o console **[!UICONTROL CQ5 DAM]**, por exemplo `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. Vá para o console **[!UICONTROL CQ5 DAM]**, por exemplo `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Abra o ativo **[!UICONTROL myImage.tiff]** e verifique se a imagem invertida e as três miniaturas foram criadas.
 
 #### Configurar a etapa do processo CommandLineProcess {#configuring-the-commandlineprocess-process-step}
