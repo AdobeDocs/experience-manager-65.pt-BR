@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Tags inteligentes, pesquisa
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 20442918270b484e0b3c3ce8e68df90e0f305a52
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1632'
 ht-degree: 1%
 
 ---
@@ -188,6 +188,7 @@ Também é possível atribuir uma classificação mais alta a uma tag para aumen
 
 ## Dicas e limitações {#tips-best-practices-limitations}
 
+* Para treinar o modelo, use as imagens mais apropriadas. O treinamento não pode ser revertido ou o modelo de treinamento não pode ser removido. A precisão da marcação depende do treinamento atual, portanto, faça isso com cuidado.
 * O uso dos Serviços de conteúdo inteligente é limitado a até 2 milhões de imagens marcadas por ano. Todas as imagens duplicadas que são processadas e marcadas são contadas como uma imagem marcada.
 * Se você executar o fluxo de trabalho de marcação na linha do tempo, poderá aplicar tags em no máximo 15 ativos de cada vez.
 * As Tags inteligentes funcionam somente para formatos de imagem PNG e JPG. Assim, os ativos compatíveis que têm representações criadas nesses dois formatos são marcados com Tags inteligentes.
