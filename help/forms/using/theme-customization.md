@@ -1,6 +1,6 @@
 ---
-title: Personalização do tema
-seo-title: Personalização do tema
+title: Personalização de Tema
+seo-title: Personalização de Tema
 description: Como personalizar o tema do seu aplicativo AEM Forms.
 seo-description: Como personalizar o tema do seu aplicativo AEM Forms.
 uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
@@ -9,36 +9,35 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
+source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
+# Personalização de Tema {#theme-customization}
 
-# Personalização do tema {#theme-customization}
-
-Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparência específica da organização ao aplicativo AEM Forms. Por exemplo, é possível alterar a cor e a altura do plano de fundo de tarefas ou Pontos de partida. O exemplo a seguir fornece instruções para alterar:
+Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparência distinta e específica da organização ao aplicativo AEM Forms. Por exemplo, você pode alterar a cor e a altura do plano de fundo de tarefas ou pontos de partida. O exemplo a seguir fornece instruções para a alteração:
 
 * instruções de exibição no lugar da descrição
 * número de rotas de exibição
-* cor do gradiente do plano de fundo
+* cor do gradiente de fundo
 
 ## Etapas {#steps}
 
-1. Abra seu projeto.
+1. Abra o projeto.
 
    * Para iOS, abra `Capture.xcodeproj` no Xcode
-   * Para Android, abra o projeto do Android no Eclipse.
+   * Para Android, abra o projeto Android no Eclipse.
    * Para Windows, abra `MWSWindows.sln` no Visual Studio.
 
 1. Navegue até a pasta de modelos.
 
-   * No Xcode, navegue até a pasta **Captura > www > wsmobile > js > tempo de execução > modelos**.
-   * No Eclipse, navegue até a pasta **assets > www > wsmobile > js > tempo de execução > modelos**.
-   * No Visual Studio, navegue até a pasta **MWSWwindows > www > wsmobile > js > tempo de execução > modelos**.
+   * No Xcode, navegue até a pasta **Capture > www > wsmobile > js > runtime > templates** .
+   * No Eclipse, navegue até a pasta **assets > www > wsmobile > js > runtime > templates** .
+   * No Visual Studio, navegue até a pasta **MWSWWindows > www > wsmobile > js > tempo de execução > templates** .
 
 1. Abra o arquivo `template.html` para edição.
 1. Localize a seguinte string:
@@ -51,7 +50,7 @@ Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparên
                  <%} else
    ```
 
-   Substitua-o por `<%`.
+   Substitua por `<%`.
 
 1. Localize o seguinte código no arquivo `template.html`:
 
@@ -75,9 +74,9 @@ Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparên
 
 1. Navegue até a pasta css.
 
-   * No Xcode, navegue até **Capturar > www > wsmobile > css**.
+   * No Xcode, navegue até **Capture > www > wsmobile > css**.
    * No Eclipse, navegue até **assets > www > wsmobile > css**.
-   * No Visual Studio, navegue até **MWSWwindows > www > wsmobile > css**.
+   * No Visual Studio, navegue até **MWSWWindows > www > wsmobile > css**.
 
 1. Abra o arquivo `_style.css` para edição.
 1. Para imagem de plano de fundo, altere `#323232` para `#fff`.
