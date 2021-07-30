@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Representações
 exl-id: null
-source-git-commit: 865370e38368072c39ad337eb52259c586403efb
+source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -24,10 +24,10 @@ O Experience Manager permite que vários métodos processem imagens que podem se
 
 Você pode usar o ImageMagick para processar imagens, incluindo para gerar representações de FPO. Essas representações têm resolução reduzida, ou seja, as dimensões em pixels da representação são proporcionalmente reduzidas se a imagem original tiver PPI maior que 72. Consulte [instalar e configurar o ImageMagick para trabalhar com o Experience Manager Assets](best-practices-for-imagemagick.md).
 
-|  | Uso do fluxo de trabalho incorporado do Experience Manager | Uso do fluxo de trabalho do ImageMagick | Observações |
-|— |— |—|— |
+|  | Usando o fluxo de trabalho incorporado do Experience Manager | Uso do fluxo de trabalho do ImageMagick | Observações |
+|--- |--- |---|--- |
 | Para novos ativos | Habilitar representação FPO ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Adicionar linha de comando ImageMagick no fluxo de trabalho do Experience Manager ([help](#generate-renditions-of-new-assets-using-imagemagick)) | O Experience Manager executa o fluxo de trabalho Ativos de atualização do DAM para cada upload. |
-| Para ativos existentes | Ative a representação FPO em um novo fluxo de trabalho dedicado do Experience Manager ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Adicionar linha de comando ImageMagick em um novo fluxo de trabalho dedicado do Experience Manager ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | As representações de FPO dos ativos existentes podem ser criadas sob demanda ou em massa. |
+| Para ativos existentes | Habilite a representação FPO em um novo fluxo de trabalho dedicado do Experience Manager ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Adicionar linha de comando ImageMagick em um novo fluxo de trabalho dedicado do Experience Manager ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | As representações de FPO dos ativos existentes podem ser criadas sob demanda ou em massa. |
 
 >[!CAUTION]
 >
