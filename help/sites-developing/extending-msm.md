@@ -10,41 +10,40 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 3a1d02fc1bc561b54e57cf91abc8f4406ba8c365
+exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
+source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
 workflow-type: tm+mt
 source-wordcount: '2601'
 ht-degree: 2%
 
 ---
 
+# Extensão do Gerenciador de vários sites{#extending-the-multi-site-manager}
 
-# Extensão do Multi Site Manager{#extending-the-multi-site-manager}
+Esta página ajuda a estender as funcionalidades do Gerenciador de vários sites:
 
-Esta página ajuda a estender as funcionalidades do Multi Site Manager:
-
-* Saiba mais sobre os principais membros da API Java MSM.
-* Crie uma nova ação de sincronização que pode ser usada em uma configuração de implantação.
+* Saiba mais sobre os principais membros da API Java do MSM.
+* Crie uma nova ação de sincronização que pode ser usada em uma configuração de implementação.
 * Modifique o idioma padrão e os códigos de país.
 
 <!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >
->Esta página deve ser lida juntamente com [Reutilizando conteúdo: Gerenciador de vários sites](/help/sites-administering/msm.md).
+>Esta página deve ser lida junto com [Reutilizar conteúdo: Gerenciador de vários sites](/help/sites-administering/msm.md).
 >
->As seguintes seções da reestruturação do repositório Sites no AEM 6.4 também podem ser de interesse:
->* [Configurações de Blueprint do Multi-site Manager](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html#multi-site-manager-blueprint-configurations)
->* [Configurações de implantação do Multi-site Manager](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html#multi-site-manager-rollout-configurations)
+>As seguintes seções da reestruturação do repositório de sites no AEM 6.4 também podem ser de interesse:
+>* [Configurações do Blueprint do gerenciador de vários sites](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html#multi-site-manager-blueprint-configurations)
+>* [Configurações de implementação do gerenciamento de vários sites](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html#multi-site-manager-rollout-configurations)
 
 
 >[!CAUTION]
 >
->O Multi Site Manager e sua API são usados durante a criação de um site, portanto, são destinados apenas ao uso em um ambiente do autor.
+>O Multi Site Manager e sua API são usados ao criar um site, portanto, são destinados ao uso somente em um ambiente de criação.
 
 ## Visão geral da API Java {#overview-of-the-java-api}
 
-O Gerenciamento de vários sites consiste nos seguintes pacotes:
+O gerenciamento de vários sites consiste nos seguintes pacotes:
 
 * [com.day.cq.wcm.msm.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
 * [com.day.cq.wcm.msm.commons](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
@@ -55,46 +54,52 @@ Os principais objetos de API MSM interagem da seguinte maneira (consulte também
 
 * **`Blueprint`**
 
-   Um `Blueprint` (como em [configuração do blueprint](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) especifica as páginas a partir das quais uma live copy pode herdar conteúdo.
+   Um `Blueprint` (como em [configuração do blueprint](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) especifica as páginas das quais uma live copy pode herdar conteúdo.
 
    ![chlimage_1-74](assets/chlimage_1-74.png)
 
-   * O uso de uma configuração blueprint ( `Blueprint`) é opcional, mas:
+   * O uso de uma configuração do blueprint ( `Blueprint`) é opcional, mas:
 
-      * Permite que o autor use a opção **Rollout** na origem (para modificações de envio (explicitamente) para cópias online herdadas dessa origem).
-      * Permite que o autor use **Criar Site**; isso permite que o usuário selecione facilmente os idiomas e configure a estrutura da live copy.
-      * Define a configuração padrão de implementação para qualquer cópia online resultante.
+      * Permite que o autor use a opção **Rollout** na origem (para (explicitamente) enviar modificações para live copies que herdam dessa origem).
+      * Permite que o autor use **Criar Site**; isso permite que o usuário selecione idiomas facilmente e configure a estrutura da live copy.
+      * Define a configuração de implementação padrão para quaisquer cópias ativas resultantes.
 
-* **`LiveRelationship`** O  `LiveRelationship` especifica a conexão (relação) entre um recurso na live copy branch e seu recurso equivalente de origem/blueprint.
+* **`LiveRelationship`**
 
-   * Os relacionamentos são usados ao realizar herança e implantação.
-   * `LiveRelationship` os objetos fornecem acesso (referências) às configurações de implantação (  `RolloutConfig`)  `LiveCopy`e aos  `LiveStatus` objetos relacionados ao relacionamento.
+   O `LiveRelationship` especifica a conexão (relação) entre um recurso na ramificação da live copy e seu recurso equivalente de origem/blueprint.
 
-   * Por exemplo, uma live copy é criada em `/content/copy/us` a partir da fonte/blueprint em `/content/we-retail/language-masters`. Os recursos `/content/we.retail/language-masters/en/jcr:content` e `/content/copy/us/en/jcr:content` formam uma relação.
+   * Os relacionamentos são usados ao realizar a herança e a implantação.
+   * `LiveRelationship` Os objetos fornecem acesso (referências) às configurações de implementação (  `RolloutConfig`),  `LiveCopy`e aos  `LiveStatus` objetos relacionados ao relacionamento.
 
-* **`LiveCopy`** `LiveCopy` contém os detalhes de configuração para os relacionamentos (  `LiveRelationship`) entre os recursos de live copy e seus recursos de origem/blueprint.
+   * Por exemplo, uma live copy é criada em `/content/copy/us` a partir do blueprint/fonte em `/content/we-retail/language-masters`. Os recursos `/content/we.retail/language-masters/en/jcr:content` e `/content/copy/us/en/jcr:content` formam uma relação.
 
-   * Use a classe `LiveCopy` para acessar o caminho da página, o caminho da página de origem/blueprint, as configurações de implantação e se as páginas secundárias também estão incluídas no `LiveCopy`.
+* **`LiveCopy`**
 
-   * Um nó `LiveCopy` é criado sempre que **Criar Site** ou **Criar Live Copy** é usado.
+   `LiveCopy` contém os detalhes de configuração para os relacionamentos (  `LiveRelationship`) entre os recursos de Live Copy e seus recursos de origem/blueprint.
+
+   * Use a classe `LiveCopy` para acessar o caminho da página, o caminho da página de origem/blueprint, as configurações de implementação e se as páginas filhas também estão incluídas no `LiveCopy`.
+
+   * Um nó `LiveCopy` é criado sempre que **Criar Site** ou **Criar Live Copy** for usado.
 
 * **`LiveStatus`**
 
-   `LiveStatus` objetos fornecem acesso ao status de tempo de execução de um  `LiveRelationship`. Use para query do status de sincronização de uma live copy.
+   `LiveStatus` Os objetos fornecem acesso ao status de tempo de execução de um  `LiveRelationship`. Use para consultar o status de sincronização de uma live copy.
 
 * **`LiveAction`**
 
-   Um `LiveAction` é uma ação executada em cada recurso que está envolvido na implementação.
+   Um `LiveAction` é uma ação que é executada em cada recurso envolvido na implantação.
 
    * O LiveActions é gerado somente por RolloutConfigs.
 
 * **`LiveActionFactory`**
 
-   Cria `LiveAction` objetos com uma configuração `LiveAction`. As configurações são armazenadas como recursos no repositório.
+   Cria `LiveAction` objetos considerando uma configuração `LiveAction`. As configurações são armazenadas como recursos no repositório.
 
-* **`RolloutConfig`** O  `RolloutConfig` mantém uma lista de  `LiveActions`, a ser usada quando acionada. O `LiveCopy` herda o `RolloutConfig` e o resultado está presente no `LiveRelationship`.
+* **`RolloutConfig`**
 
-   * A configuração de uma live copy pela primeira vez também usa um RolloutConfig (que aciona o LiveActions).
+   O `RolloutConfig` mantém uma lista de `LiveActions`, a ser usada quando acionada. O `LiveCopy` herda o `RolloutConfig` e o resultado está presente no `LiveRelationship`.
+
+   * Configurar uma live copy pela primeira vez também usa uma RolloutConfig (que aciona as LiveActions).
 
 ## Criando uma Nova Ação de Sincronização {#creating-a-new-synchronization-action}
 
@@ -105,26 +110,26 @@ Crie ações de sincronização personalizadas para usar com suas configuraçõe
 
 O `LiveActionFactory` cria instâncias da classe `LiveAction` para uma determinada configuração:
 
-* `LiveAction` as classes incluem os seguintes métodos:
+* `LiveAction` As classes incluem os seguintes métodos:
 
-   * `getName`: Retorna o nome da ação O nome é usado para fazer referência à ação, por exemplo, em configurações de implantação.
+   * `getName`: Retorna o nome da ação O nome é usado para fazer referência à ação, por exemplo, em configurações de implementação.
    * `execute`: Executa as tarefas da ação.
 
-* `LiveActionFactory` as classes incluem os seguintes membros:
+* `LiveActionFactory` As classes incluem os seguintes membros:
 
-   * `LIVE_ACTION_NAME`: Um campo que contém o nome do associado  `LiveAction`. Esse nome deve coincidir com o valor retornado pelo método `getName` da classe `LiveAction`.
+   * `LIVE_ACTION_NAME`: Um campo que contém o nome do  `LiveAction`associado. Esse nome deve coincidir com o valor retornado pelo método `getName` da classe `LiveAction`.
 
-   * `createAction`: Cria uma instância do  `LiveAction`. O parâmetro opcional `Resource` pode ser usado para fornecer informações de configuração.
+   * `createAction`: Cria uma instância do  `LiveAction`. O parâmetro `Resource` opcional pode ser usado para fornecer informações de configuração.
 
-   * `createsAction`: Retorna o nome do associado  `LiveAction`.
+   * `createsAction`: Retorna o nome do  `LiveAction`associado.
 
 ### Acessar o nó de configuração do LiveAction {#accessing-the-liveaction-configuration-node}
 
-Use o nó de configuração `LiveAction` no repositório para armazenar informações que afetam o comportamento do tempo de execução da instância `LiveAction`. O nó no repositório que armazena a configuração `LiveAction` está disponível para o objeto `LiveActionFactory` no tempo de execução. Portanto, você pode adicionar propriedades ao nó de configuração e usá-las na implementação `LiveActionFactory`, conforme necessário.
+Use o nó de configuração `LiveAction` no repositório para armazenar informações que afetam o comportamento em tempo de execução da instância `LiveAction`. O nó no repositório que armazena a configuração `LiveAction` está disponível para o objeto `LiveActionFactory` no tempo de execução. Portanto, você pode adicionar propriedades ao nó de configuração e usá-las na implementação `LiveActionFactory`, conforme necessário.
 
-Por exemplo, um `LiveAction` precisa armazenar o nome do autor do blueprint. Uma propriedade do nó de configuração inclui o nome da propriedade da página de blueprint que armazena as informações. No tempo de execução, `LiveAction` recupera o nome da propriedade da configuração e obtém o valor da propriedade.
+Por exemplo, um `LiveAction` precisa armazenar o nome do autor do blueprint. Uma propriedade do nó de configuração inclui o nome da propriedade da página do blueprint que armazena as informações. No tempo de execução, o `LiveAction` recupera o nome da propriedade da configuração e obtém o valor da propriedade.
 
-O parâmetro do método ` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` é um objeto `Resource`. Este objeto `Resource` representa o nó `cq:LiveSyncAction` para esta ação em tempo real na configuração de implementação; consulte [Criação de uma configuração de implantação](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Como de costume ao usar um nó de configuração, você deve adaptá-lo a um objeto `ValueMap`:
+O parâmetro do método ` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` é um objeto `Resource`. Esse objeto `Resource` representa o nó `cq:LiveSyncAction` para essa ação em tempo real na configuração de implementação; consulte [Criação de uma configuração de implementação](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Como de costume ao usar um nó de configuração, você deve adaptá-lo a um objeto `ValueMap`:
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -138,18 +143,18 @@ public LiveAction createAction(Resource resource) throws WCMException {
 }
 ```
 
-### Acessar nós de Público alvo, nós de origem e o LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
+### Acessar nós do Target, nós de origem e o LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
 
 Os seguintes objetos são fornecidos como parâmetros do método `execute` do objeto `LiveAction`:
 
-* Um objeto [ `Resource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) que representa a origem do Live Copy.
-* Um objeto `Resource` que representa o público alvo da Live Copy.
+* Um objeto [ `Resource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) que representa a origem da Live Copy.
+* Um objeto `Resource` que representa o destino da Live Copy.
 * O objeto [ `LiveRelationship`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) para a live copy.
 * O valor `autoSave` indica se `LiveAction` deve salvar as alterações feitas no repositório.
 
-* O valor reset indica o modo de redefinição de implantação.
+* O valor de redefinição indica o modo de redefinição de implementação.
 
-Desses objetos, você pode obter todas as informações sobre o `LiveCopy`. Você também pode usar os objetos `Resource` para obter os objetos `ResourceResolver`, `Session` e `Node`. Esses objetos são úteis para manipular o conteúdo do repositório:
+Nesses objetos, você pode obter todas as informações sobre o `LiveCopy`. Também é possível usar os objetos `Resource` para obter os objetos `ResourceResolver`, `Session` e `Node`. Esses objetos são úteis para manipular o conteúdo do repositório:
 
 Na primeira linha do código a seguir, source é o objeto `Resource` da página de origem:
 
@@ -161,9 +166,9 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->Os argumentos `Resource` podem ser `null` ou `Resources` objetos que não se adaptam a `Node` objetos, como [ `NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html).
+>Os argumentos `Resource` podem ser objetos `null` ou `Resources` que não se adaptam a objetos `Node`, como objetos [ `NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html).
 
-## Criando uma nova configuração de implantação {#creating-a-new-rollout-configuration}
+## Criação de uma nova configuração de implementação {#creating-a-new-rollout-configuration}
 
 Crie uma configuração de implementação quando as configurações de implementação instaladas não atenderem aos requisitos do aplicativo:
 
@@ -176,9 +181,9 @@ A nova configuração de implementação estará disponível para você quando d
 >
 >Consulte também as [práticas recomendadas para personalizar implantações](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
 
-### Criar a configuração de implantação {#create-the-rollout-configuration}
+### Criar a configuração de implementação {#create-the-rollout-configuration}
 
-Para criar uma nova configuração de implantação:
+Para criar uma nova configuração de implementação:
 
 1. CRXDE Lite aberto; por exemplo:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
@@ -187,22 +192,22 @@ Para criar uma nova configuração de implantação:
    `/apps/msm/<your-project>/rolloutconfigs`
 
    >[!NOTE]
-   >Esta é a versão personalizada do projeto de:
+   >Esta é a versão personalizada do seu projeto:
    >`/libs/msm/wcm/rolloutconfigs`
-   >Deve ser criado se esta for a sua primeira configuração.
+   >Deve ser criada se essa for a primeira configuração.
 
    >[!NOTE]
    >
    >Você não deve alterar nada no caminho /libs.
-   >Isso ocorre porque o conteúdo de /libs é substituído na próxima vez que você atualizar sua instância (e pode muito bem ser substituído quando você aplicar uma correção ou um pacote de recursos).
+   >Isso ocorre porque o conteúdo de /libs é substituído na próxima vez que você atualizar sua instância (e pode ser substituído quando você aplicar um hotfix ou pacote de recursos).
    >O método recomendado para configuração e outras alterações é:
-   >* Recrie o item necessário (isto é, como ele existe em /libs) em /apps
-   >* Faça quaisquer alterações em /apps
+   >* Recrie o item necessário (ou seja, como ele existe em /libs) em /apps
+   >* Faça alterações em /apps
 
 
-1. Em **Create** um nó com as seguintes propriedades:
+1. Sob este **Crie** um nó com as seguintes propriedades:
 
-   * **Nome**: O nome do nó da configuração de implantação. md#installed-synchronization-actions), por exemplo `contentCopy` ou `workflow`.
+   * **Nome**: O nome do nó da configuração de implementação. md#installed-synchronization-actions), por exemplo `contentCopy` ou `workflow`.
    * **Tipo**: `cq:RolloutConfig`
 
 1. Adicione as seguintes propriedades a este nó:
@@ -217,7 +222,7 @@ Para criar uma nova configuração de implantação:
    * **Nome**: `cq:trigger`
 
       **Tipo**: `String`
-      **Valor**: O  [Acionador ](/help/sites-administering/msm-sync.md#rollout-triggers) de implantação a ser usado. Selecionar de:
+      **Valor**: O  [Acionador de implantação ](/help/sites-administering/msm-sync.md#rollout-triggers) a ser usado. Selecione de:
       * `rollout`
       * `modification`
       * `publish`
@@ -225,9 +230,9 @@ Para criar uma nova configuração de implantação:
 
 1. Clique em **Salvar tudo**.
 
-### Adicionar ações de sincronização à configuração de implantação {#add-synchronization-actions-to-the-rollout-configuration}
+### Adicionar Ações de Sincronização à Configuração de Implantação {#add-synchronization-actions-to-the-rollout-configuration}
 
-As configurações de implantação são armazenadas abaixo do nó [configuração de implantação](#create-the-rollout-configuration) que você criou no nó `/apps/msm/<your-project>/rolloutconfigs`.
+As configurações de implementação são armazenadas abaixo do [nó de configuração de implementação](#create-the-rollout-configuration) que você criou no nó `/apps/msm/<your-project>/rolloutconfigs`.
 
 Adicione nós secundários do tipo `cq:LiveSyncAction` para adicionar ações de sincronização à configuração de implementação. A ordem dos nós de ação de sincronização determina a ordem em que as ações ocorrem.
 
@@ -236,21 +241,21 @@ Adicione nós secundários do tipo `cq:LiveSyncAction` para adicionar ações de
    Por exemplo:
    `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
 
-1. **Crie** um nó com as seguintes propriedades de nó:
+1. **** Crie um nó com as seguintes propriedades do nó:
 
    * **Nome**: O nome do nó da ação de sincronização.
 O nome deve ser igual ao **Nome da ação** na tabela em [Ações de sincronização](/help/sites-administering/msm-sync.md#installed-synchronization-actions), por exemplo `contentCopy` ou `workflow`.
    * **Tipo**: `cq:LiveSyncAction`
 
-1. Adicione e configure quantos nós de ação de sincronização forem necessários. Reorganize os nós de ação para que sua ordem corresponda à ordem em que você deseja que ocorram. O nó de ação mais alto ocorre primeiro.
+1. Adicione e configure quantos nós de ação de sincronização forem necessários. Reorganize os nós de ação para que sua ordem corresponda à ordem em que você deseja que ocorram. O nó de ação mais superior ocorre primeiro.
 
-## Criação e uso de uma classe Simple LiveActionFactory {#creating-and-using-a-simple-liveactionfactory-class}
+## Criação e uso de uma classe LiveActionFactory simples {#creating-and-using-a-simple-liveactionfactory-class}
 
-Siga os procedimentos desta seção para desenvolver um `LiveActionFactory` e usá-lo em uma configuração de implantação. Os procedimentos usam Maven e Eclipse para desenvolver e implantar o `LiveActionFactory`:
+Siga os procedimentos nesta seção para desenvolver um `LiveActionFactory` e usá-lo em uma configuração de implementação. Os procedimentos usam Maven e Eclipse para desenvolver e implantar o `LiveActionFactory`:
 
 1. [Crie o ](#create-the-maven-project) projeto maven e importe-o para o Eclipse.
 1. [Adicione ](#add-dependencies-to-the-pom-file) dependências ao arquivo POM.
-1. [Implemente a  `LiveActionFactory` ](#implement-liveactionfactory) interface e implante o pacote OSGi.
+1. [Implemente a interface  `LiveActionFactory` ](#implement-liveactionfactory) e implante o pacote OSGi.
 1. [Criar a configuração de implementação](#create-the-example-rollout-configuration).
 1. [Crie a live copy](#create-the-live-copy).
 
@@ -260,17 +265,17 @@ CÓDIGO NO GITHUB
 
 Você pode encontrar o código desta página no GitHub
 
-* [Abra o projeto experienceemanager-java-msmrollout no GitHub](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
+* [Abra o projeto experiencemanager-java-msmrollout no GitHub](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
 * Baixe o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout/archive/master.zip)
 
 ### Criar o projeto Maven {#create-the-maven-project}
 
-O procedimento a seguir requer que você tenha adicionado o perfil adobe-public ao arquivo de configurações Maven.
+O procedimento a seguir requer que você tenha adicionado o perfil público da adobe ao arquivo de configurações Maven.
 
-* Para obter informações sobre o perfil adobe-public, consulte [Obtenção do Plug-in Content Package Maven](/help/sites-developing/vlt-mavenplugin.md#obtaining-the-content-package-maven-plugin)
-* Para obter informações sobre o arquivo de configurações Maven, consulte a Maven [Settings Reference](https://maven.apache.org/settings.html).
+* Para obter informações sobre o perfil do adobe-public, consulte [Obter o plug-in do Maven do pacote de conteúdo](/help/sites-developing/vlt-mavenplugin.md#obtaining-the-content-package-maven-plugin)
+* Para obter informações sobre o arquivo de configurações Maven, consulte o Maven [Settings Reference](https://maven.apache.org/settings.html).
 
-1. Abra um terminal ou uma sessão de linha de comando e altere o diretório para apontar para o local onde o projeto deve ser criado.
+1. Abra um terminal ou uma sessão de linha de comando e altere o diretório para apontar para o local de criação do projeto.
 1. Digite o seguinte comando:
 
    ```xml
@@ -287,13 +292,13 @@ O procedimento a seguir requer que você tenha adicionado o perfil adobe-public 
    * `artifactName`:  `MyLiveActionFactory package`
    * `packageGroup`:  `myPackages`
 
-1. Eclipse do start e [importe o projeto Maven](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
+1. Inicie o Eclipse e [importe o projeto Maven](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
 
 ### Adicionar dependências ao arquivo POM {#add-dependencies-to-the-pom-file}
 
-Adicione dependências para que o compilador do Eclipse possa fazer referência às classes usadas no código `LiveActionFactory`.
+Adicione dependências para que o compilador Eclipse possa fazer referência às classes usadas no código `LiveActionFactory`.
 
-1. No Explorador de projetos do Eclipse, abra o arquivo:
+1. No Eclipse Project Explorer, abra o arquivo :
 
    `MyLiveActionFactory/pom.xml`
 
@@ -346,7 +351,7 @@ Adicione dependências para que o compilador do Eclipse possa fazer referência 
    ```
 
 1. Abra o arquivo POM para o pacote a partir de **Project Explorer** em `MyLiveActionFactory-bundle/pom.xml`.
-1. No editor, clique na guia `pom.xml` e localize a seção projeto/dependências. Adicione o XML a seguir dentro do elemento dependências e salve o arquivo:
+1. No editor, clique na guia `pom.xml` e localize a seção projeto/dependências. Adicione o seguinte XML dentro do elemento de dependências e salve o arquivo:
 
    ```xml
     <dependency>
@@ -379,11 +384,11 @@ Adicione dependências para que o compilador do Eclipse possa fazer referência 
     </dependency>
    ```
 
-### Implementação do LiveActionFactory {#implement-liveactionfactory}
+### Implementar o LiveActionFactory {#implement-liveactionfactory}
 
-A classe `LiveActionFactory` a seguir implementa um `LiveAction` que registra mensagens sobre as páginas de origem e de público alvo e copia a propriedade `cq:lastModifiedBy` do nó de origem para o nó de público alvo. O nome da ação live é `exampleLiveAction`.
+A classe `LiveActionFactory` a seguir implementa um `LiveAction` que registra mensagens sobre as páginas de origem e de destino e copia a propriedade `cq:lastModifiedBy` do nó de origem para o nó de destino. O nome da ação ao vivo é `exampleLiveAction`.
 
-1. No Eclipse Project Explorer, clique com o botão direito do mouse no pacote `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` e clique em **Novo** > **Classe**. Para **Nome**, digite `ExampleLiveActionFactory` e clique em **Concluir**.
+1. No Eclipse Project Explorer, clique com o botão direito do mouse no pacote `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` e clique em **New** > **Class**. Para o **Nome**, digite `ExampleLiveActionFactory` e clique em **Concluir**.
 1. Abra o arquivo `ExampleLiveActionFactory.java`, substitua o conteúdo pelo seguinte código e salve o arquivo.
 
    ```java
@@ -527,7 +532,7 @@ A classe `LiveActionFactory` a seguir implementa um `LiveAction` que registra me
    }
    ```
 
-1. Usando o terminal ou a sessão de comando, altere o diretório para o diretório `MyLiveActionFactory` (o diretório do projeto Maven). Em seguida, insira o seguinte comando:
+1. Usando o terminal ou a sessão de comando, altere o diretório para o diretório `MyLiveActionFactory` (o diretório do projeto Maven). Em seguida, digite o seguinte comando:
 
    ```shell
    mvn -PautoInstallPackage clean install
@@ -545,19 +550,19 @@ A classe `LiveActionFactory` a seguir implementa um `LiveAction` que registra me
    13.08.2013 14:34:55.454 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Started bundle com.adobe.example.msm.MyLiveActionFactory-bundle [316]
    ```
 
-### Criar a Exemplo de Configuração de Rollout {#create-the-example-rollout-configuration}
+### Criar a configuração de implantação de exemplo {#create-the-example-rollout-configuration}
 
-Crie a configuração de implantação MSM que usa o `LiveActionFactory` que você criou:
+Crie a configuração de implantação do MSM que usa o `LiveActionFactory` que você criou:
 
-1. Crie e configure uma [Configuração de implantação com o procedimento padrão](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) - e use as propriedades:
+1. Crie e configure uma [Configuração de implementação com o procedimento padrão](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) - e usando as propriedades:
 
-   * **Título**: Exemplo de configuração de implantação
+   * **Título**: Exemplo de configuração de implementação
    * **Nome**: examplerolloutconfig
    * **cq:trigger**:  `publish`
 
-### Adicione a ação em tempo real à Exemplo de configuração de implantação {#add-the-live-action-to-the-example-rollout-configuration}
+### Adicionar a ação em tempo real à configuração de implantação de exemplo {#add-the-live-action-to-the-example-rollout-configuration}
 
-Configure a configuração de implantação criada no procedimento anterior para que ela use a classe `ExampleLiveActionFactory`.
+Configure a configuração de implementação criada no procedimento anterior para que ela use a classe `ExampleLiveActionFactory`.
 
 1. CRXDE Lite aberto; por exemplo, [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
 1. Crie o seguinte nó em `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
@@ -572,17 +577,17 @@ Configure a configuração de implantação criada no procedimento anterior para
    * **Tipo**: `Boolean`
    * **Valor**:  `true`
 
-   Essa propriedade indica para a classe `ExampleLiveAction` que a propriedade `cq:LastModifiedBy` deve ser replicada da origem para o nó do público alvo.
+   Essa propriedade indica para a classe `ExampleLiveAction` que a propriedade `cq:LastModifiedBy` deve ser replicada da origem para o nó de destino.
 
 1. Clique em **Salvar tudo**.
 
 ### Criar a Live Copy {#create-the-live-copy}
 
-[Crie uma ](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) cópia ao vivo da ramificação Inglês/Produtos do Site de Referência We.Retail usando sua configuração de implementação:
+[Crie uma live ](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) copy da ramificação Inglês/Produtos do site de referência We.Retail usando sua configuração de implementação:
 
 * **Fonte**:  `/content/we-retail/language-masters/en/products`
 
-* **Configuração** de implantação: Exemplo de configuração de implantação
+* **Configuração** de implantação: Exemplo de configuração de implementação
 
 Ative a página **Products** (inglês) da ramificação de origem e observe as mensagens de log geradas pela classe `LiveAction`:
 
@@ -612,12 +617,12 @@ In some cases, the **Chapters** selection is not required in the create site wiz
     1. **Name** = `xtype`; **Type** = `String`; **Value** = `hidden`
 -->
 
-## Alteração de nomes de idiomas e países padrão {#changing-language-names-and-default-countries}
+## Alteração de nomes de idioma e países padrão {#changing-language-names-and-default-countries}
 
 AEM usa um conjunto padrão de códigos de idioma e país.
 
 * O código de idioma padrão é o código de duas letras minúsculas, conforme definido pela ISO-639-1.
-* O código padrão do país é o código de duas letras em minúsculas ou maiúsculas, conforme definido pela ISO 3166.
+* O código do país padrão é o código de duas letras em letras minúsculas ou maiúsculas, conforme definido pela ISO 3166.
 
 O MSM usa uma lista armazenada de códigos de idioma e país para determinar o nome do país associado ao nome da versão de idioma da sua página. Você pode alterar os seguintes aspectos da lista, se necessário:
 
@@ -625,20 +630,20 @@ O MSM usa uma lista armazenada de códigos de idioma e país para determinar o n
 * Nomes de países
 * Países padrão para idiomas (para códigos como `en`, `de`, entre outros)
 
-A lista de idioma é armazenada abaixo do nó `/libs/wcm/core/resources/languages`. Cada nó filho representa um idioma ou um país de idioma:
+A lista de idiomas é armazenada abaixo do nó `/libs/wcm/core/resources/languages`. Cada nó filho representa um idioma ou um país de idioma:
 
-* O nome do nó é o código do idioma (como `en` ou `de`), ou o código language_country (como `en_us` ou `de_ch`).
+* O nome do nó é o código do idioma (como `en` ou `de`) ou o código do idioma_país (como `en_us` ou `de_ch`).
 
 * A propriedade `language` do nó armazena o nome completo do idioma para o código.
 * A propriedade `country` do nó armazena o nome completo do país para o código.
-* Quando o nome do nó consiste apenas em um código de idioma (como `en`), a propriedade country é `*`, e uma propriedade adicional `defaultCountry` armazena o código do idioma-país para indicar o país a ser usado.
+* Quando o nome do nó consiste apenas em um código de idioma (como `en`), a propriedade country é `*`, e uma propriedade `defaultCountry` adicional armazena o código do país de idioma para indicar o país a ser usado.
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
 Para modificar os idiomas:
 
 1. Abra o CRXDE Lite no navegador da Web; por exemplo, [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
-1. Selecione a pasta `/apps` e clique em **Criar**, em seguida **Criar pasta.**
+1. Selecione a pasta `/apps` e clique em **Criar**, em seguida em **Criar pasta.**
 
    Nomeie a nova pasta `wcm`.
 
@@ -647,66 +652,66 @@ Para modificar os idiomas:
 1. Clique com o botão direito do mouse no nó `/libs/wcm/core/resources/languages` e clique em **Copiar**.
 1. Clique com o botão direito do mouse na pasta `/apps/wcm/core/resources` e clique em **Colar**. Modifique os nós secundários conforme necessário.
 1. Clique em **Salvar tudo**.
-1. Clique em **Ferramentas**, **Operações** em seguida **Console Web**. Nesse console, clique em **OSGi** e **Configuração**.
-1. Localize e clique em **Gerente de Idioma WCM do Day CQ**, altere o valor de **Lista de Idioma** para `/apps/wcm/core/resources/languages` e clique em **Salvar**.
+1. Clique em **Ferramentas**, **Operações** e depois em **Console da Web**. Nesse console, clique em **OSGi**, em seguida em **Configuração**.
+1. Localize e clique em **Day CQ WCM Language Manager**, altere o valor de **Language List** para `/apps/wcm/core/resources/languages` e clique em **Save**.
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-## Configuração de bloqueios MSM em propriedades da página (interface habilitada para toque) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
+## Configuração de bloqueios do MSM em propriedades de página (interface de usuário habilitada para toque) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
-Ao criar uma propriedade de página personalizada, talvez seja necessário considerar se a nova propriedade deve ser qualificada para implantação em qualquer cópia ao vivo.
+Ao criar uma propriedade de página personalizada, talvez seja necessário considerar se a nova propriedade deve ser qualificada para implantação em qualquer live copy.
 
 Por exemplo, se duas novas propriedades de página estiverem sendo adicionadas:
 
 * Email de contato:
 
-   * Esta propriedade não precisa ser distribuída, pois será diferente em cada país (ou marca, etc.).
+   * Essa propriedade não precisa ser distribuída, pois será diferente em cada país (ou marca, etc).
 
 * Estilo visual principal:
 
-   * O requisito do projeto é que essa propriedade seja distribuída como é (normalmente) comum a todos os países (ou marcas, etc.).
+   * O requisito do projeto é que essa propriedade seja distribuída como é (normalmente) comum a todos os países (ou marcas, etc).
 
 Em seguida, é necessário garantir que:
 
 * Email de contato:
 
-   * Está excluído das propriedades distribuídas; consulte [Excluindo Propriedades e Tipos de Nó da Sincronização](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization).
+   * Está excluído das propriedades implantadas; consulte [Excluir propriedades e tipos de nó da sincronização](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization).
 
 * Estilo visual principal:
 
-   * Certifique-se de que você não tem permissão para editar essa propriedade na interface habilitada para toque, a menos que a herança seja cancelada, e também de que você possa reinstalar a herança; isso é controlado ao clicar nos links de cadeia/cadeia quebrada que alternam para indicar o status da conexão.
+   * Certifique-se de que você não tem permissão para editar essa propriedade na interface habilitada para toque, a menos que a herança seja cancelada, e também que você possa restabelecer a herança; isso é controlado clicando nos links de cadeia/cadeia quebrada que são alternados para indicar o status da conexão.
 
-Se uma propriedade de página está sujeita a implantação e, portanto, sujeita a cancelamento/reinstalação da herança durante a edição, é controlada pela propriedade de diálogo:
+Se uma propriedade de página está sujeita a implantação e, portanto, sujeita a cancelamento/reintegração da herança ao editar, é controlada pela propriedade de diálogo:
 
 * `cq-msm-lockable`
 
-   * é aplicável a itens em uma caixa de diálogo de interface habilitada para toque
-   * criará o símbolo de elo de cadeia na caixa de diálogo
-   * permite a edição somente se a herança for cancelada (o link da cadeia está quebrado)
-   * aplica-se somente ao primeiro nível filho do recurso
+   * é aplicável a itens em uma caixa de diálogo da interface habilitada para toque
+   * criará o símbolo de vínculo de cadeia na caixa de diálogo
+   * permite editar somente se a herança for cancelada (o vínculo da cadeia está quebrado)
+   * se aplica somente ao primeiro nível filho do recurso
    * **Tipo**: `String`
 
    * **Valor**: seja titular do nome da propriedade em questão (e seja comparável ao valor da propriedade  `name`; por exemplo, consulte
       `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
-Quando `cq-msm-lockable` for definido, a quebra/fechamento da cadeia interagirá com a MSM da seguinte maneira:
+Quando `cq-msm-lockable` tiver sido definido, quebrar/fechar a cadeia interage com o MSM da seguinte forma:
 
 * se o valor de `cq-msm-lockable` for:
 
    * **Relativo**  (por exemplo,  `myProperty` ou  `./myProperty`)
 
-      * ela adicionará e removerá a propriedade de `cq:propertyInheritanceCancelled`.
+      * ele adicionará e removerá a propriedade de `cq:propertyInheritanceCancelled`.
    * **Absoluto**  (por exemplo,  `/image`)
 
-      * quebrar a cadeia cancelará a herança adicionando a combinação `cq:LiveSyncCancelled` a `./image` e definindo `cq:isCancelledForChildren` como `true`.
+      * quebrar a cadeia cancelará a herança adicionando a mesclagem `cq:LiveSyncCancelled` a `./image` e definindo `cq:isCancelledForChildren` como `true`.
 
       * fechar a cadeia reverterá a herança.
 
 
 >[!NOTE]
 >
->`cq-msm-lockable` aplica-se ao primeiro nível filho do recurso a ser editado e não é funcional em nenhum ancestral de nível mais profundo, independentemente do valor ser definido como absoluto ou relativo.
+>`cq-msm-lockable` se aplica ao primeiro nível filho do recurso a ser editado e não é funcional em nenhum ancestral de nível mais profundo, independentemente se o valor for definido como absoluto ou relativo.
 
 >[!NOTE]
 >
->Quando você reativa a herança, a propriedade da página de cópia ativa não é sincronizada automaticamente com a propriedade source. Você pode solicitar manualmente uma sincronização, se necessário.
+>Quando você reativa a herança, a propriedade da página de Live Copy não é sincronizada automaticamente com a propriedade de origem. Você pode solicitar manualmente uma sincronização, se necessário.
