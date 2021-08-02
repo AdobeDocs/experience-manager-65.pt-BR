@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
-source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
+source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 40%
+ht-degree: 22%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 40%
    + [Trabalhar com metadados de ativos](metadata.md)
    + [Ativos multilíngues](multilingual-assets.md)
    + [Usar [!DNL Adobe Stock] ativos em Ativos](aem-assets-adobe-stock.md)
-   + [Pré-visualização de ativos 3D](previewing-3d-assets.md)
+   + [Visualizar ativos 3D](previewing-3d-assets.md)
    + [Revisar ativos e coleções de pastas](bulk-approval.md)
    + [Tags inteligentes aprimoradas](enhanced-smart-tags.md)
    + [Fluxo de atividades na linha do tempo](activity-stream.md)
@@ -36,28 +36,28 @@ ht-degree: 40%
    + [Reutilizar ativos usando o MSM](reuse-assets-using-msm.md)
    + [Ativos conectados com [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
-   + [Informativo do Dynamic Media por Experience League](dynamic-media-newsletter.md)
-   + [Configuração do Dynamic Media](administering-dynamic-media.md)
-   + [Trabalhar com o Dynamic Media](dynamic-media.md)
-   + [Configuração do modo Dynamic Media - Scene7](config-dms7.md)
-   + [Configuração do Dynamic Media - Modo híbrido](config-dynamic.md)
+   + [Arquivo de informativo do Dynamic Media por Experience League](dynamic-media-newsletter.md)
+   + [Configurar Dynamic Media](administering-dynamic-media.md)
+   + [Trabalhar com a Dynamic Media](dynamic-media.md)
+   + [Configurar o Dynamic Media - Modo Scene7](config-dms7.md)
+   + [Configurar o Dynamic Media - Modo híbrido](config-dynamic.md)
    + [Solução de problemas do Dynamic Media - Modo Scene7](troubleshoot-dms7.md)
    + [Acessibilidade no Dynamic Media](accessibility-dm.md)
-   + [Migração do Dynamic Media - Modo híbrido para o Dynamic Media - Modo S7](migrate-from-hybrid-to-dms7.md)
-   + [Gerenciamento de ativos do Dynamic Media](managing-assets.md)
+   + [Migrar do Dynamic Media - Modo híbrido para o Dynamic Media - Modo S7](migrate-from-hybrid-to-dms7.md)
+   + [Gerenciar ativos do Dynamic Media](managing-assets.md)
    + [Práticas recomendadas para otimização da qualidade de imagens](best-practices-for-optimizing-the-quality-of-your-images.md)
-   + [Gerenciamento de predefinições do visualizador do Dynamic Media](managing-viewer-presets.md)
-   + [Aplicação de predefinições do visualizador do Dynamic Media](viewer-presets.md)
-   + [Gerenciamento de predefinições da imagem do Dynamic Media](managing-image-presets.md)
-   + [Aplicação de predefinições da imagem do Dynamic Media](image-presets.md)
+   + [Gerenciar predefinições do visualizador do Dynamic Media](managing-viewer-presets.md)
+   + [Aplicar predefinições do visualizador do Dynamic Media](viewer-presets.md)
+   + [Gerenciar predefinições da imagem do Dynamic Media](managing-image-presets.md)
+   + [Aplicar predefinições da imagem do Dynamic Media](image-presets.md)
    + [Perfis de vídeo do Dynamic Media](video-profiles.md)
    + [Perfis de imagem do Dynamic Media](image-profiles.md)
    + [Imagem inteligente](imaging-faq.md)
    + [Vídeo](s7-video.md)
    + [Adicionar recursos do Dynamic Media à sua página](scene7.md)
    + [Entrega de conteúdo HTTP2](http2.md)
-   + [Entrega de ativos do Dynamic Media](delivering-dynamic-media-assets.md)
-   + [Ativação da proteção de hotlink no Dynamic Media](hotlink-protection.md)
+   + [Fornecer ativos da Dynamic Media](delivering-dynamic-media-assets.md)
+   + [Ativar a proteção de hotlink no Dynamic Media](hotlink-protection.md)
    + [Suporte para 3D](/help/assets/assets-3d.md)
    + [Conjuntos de imagem](image-sets.md)
    + [Imagens panorâmicas](panoramic-images.md)
@@ -68,19 +68,19 @@ ht-degree: 40%
    + [Imagens interativas](interactive-images.md)
    + [Vídeos interativos](interactive-videos.md)
    + [Vídeo 360 VR](/help/assets/360-video.md)
-   + [Integração de visualizadores do Dynamic Media com tags do Adobe Analytics e do Adobe Experience Platform](/help/assets/tags.md)
-   + [Uso do Quickviews para criar pop-ups personalizados](custom-pop-ups.md)
-   + [Entrega de imagens otimizadas para um site responsivo](responsive-site.md)
-   + [Visualização de ativos do Dynamic Media](previewing-assets.md)
-   + [Adição de ativos do Dynamic Media a páginas](adding-dynamic-media-assets-to-pages.md)
-   + [Incorporação do visualizador de vídeo ou imagem do Dynamic Media em uma página da Web](embed-code.md)
-   + [Vincular URLs ao aplicativo da Web.](linking-urls-to-yourwebapplication.md)
+   + [Integrar visualizadores do Dynamic Media com tags do Adobe Analytics e do Adobe Experience Platform](/help/assets/tags.md)
+   + [Criar pop-ups personalizados usando o Quickview](custom-pop-ups.md)
+   + [Fornecer imagens otimizadas para um site responsivo](responsive-site.md)
+   + [Visualizar ativos do Dynamic Media](previewing-assets.md)
+   + [Adicionar ativos do Dynamic Media às páginas](adding-dynamic-media-assets-to-pages.md)
+   + [Incorporar o visualizador de vídeo ou imagem do Dynamic Media em uma página da Web](embed-code.md)
+   + [Vincular URLs ao aplicativo da Web](linking-urls-to-yourwebapplication.md)
    + [Uso de conjuntos de regras para transformar URLs](using-rulesets-to-transform-urls.md)
-   + [Publicação de ativos do Dynamic Media](publishing-dynamicmedia-assets.md)
-   + [Trabalho com Publicação seletiva no Dynamic Media](selective-publishing.md)
+   + [Publicar ativos do Dynamic Media](publishing-dynamicmedia-assets.md)
+   + [Trabalhar com publicação seletiva no Dynamic Media](selective-publishing.md)
    + [Invalidar o cache CDN por meio do Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
    + [Invalidar o cache CDN por meio do Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
-   + [Instalação do Feature Pack 18912 para migração de ativos em massa](bulk-ingest-migrate.md)
+   + [Instale o Feature Pack 18912 para migração de ativos em massa](bulk-ingest-migrate.md)
    + [Trabalho com seletores](working-with-selectors.md)
 + Estender ativos {#extending}
    + [Personalizar e estender [!DNL Assets]](extending-assets.md)
