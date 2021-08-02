@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Gerenciamento de ativos,Representações
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
+source-git-commit: a166ea9e56ba6b69793e9949a920a7a24b5b9b25
 workflow-type: tm+mt
-source-wordcount: '2633'
+source-wordcount: '2607'
 ht-degree: 1%
 
 ---
@@ -190,13 +190,13 @@ Você inicia a solicitação para usar a geração inteligente de imagens; ele n
 
 Por padrão, o DPR de Smart Imaging e a otimização de rede estão desativadas (desativadas) em uma conta de empresa do Dynamic Media. Se quiser ativar (ativar) um ou ambos os aprimoramentos prontos para uso, crie um caso de suporte, conforme descrito abaixo.
 
-O agendamento de lançamento do DPR de Smart Imaging e da otimização de rede é o seguinte:
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is as follows:
 
-| Região | Data de destino |
+| Region | Target date |
 |---|---|
-| América do Norte | Online |
-| Europa, Oriente Médio e África | 13 de agosto de 2021 |
-| Ásia-Pacífico | 22 de julho de 2021 |
+| North America | Live |
+| Europe, Middle East, Africa | 13 Aug 2021 |
+| Asia-Pacific | 22 Jul 2021 | -->
 
 1. [Use o Admin Console para criar um caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de suporte.
 1. Forneça as seguintes informações no caso de suporte:
