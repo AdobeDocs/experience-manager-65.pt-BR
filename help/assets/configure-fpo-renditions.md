@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Representações
 exl-id: null
-source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
+source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,11 @@ A seguir estão as etapas para configurar o modelo de fluxo de trabalho Ativo de
 
 No Experience Manager, o fluxo de trabalho Ativos de atualização do DAM é executado quando um novo ativo é carregado. Para usar o ImageMagick para processar representações de ativos recém-carregados, adicione um novo comando ao modelo de fluxo de trabalho.
 
-1. Clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**. Selecione o modelo **[!UICONTROL Ativo de atualização do DAM]** e clique em **[!UICONTROL Editar]**.
+1. Clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
 
-1. Clique em **[!UICONTROL Alternar painel lateral]** no canto superior esquerdo. Procure a etapa da linha de comando.
+1. Selecione o modelo **[!UICONTROL Ativo de atualização do DAM]** e clique em **[!UICONTROL Editar]**.
+
+1. Clique em **[!UICONTROL Alternar painel lateral]** no canto superior esquerdo e procure a etapa da linha de comando.
 
 1. Arraste a etapa **[!UICONTROL Linha de Comando]** e adicione-a antes da etapa **[!UICONTROL Processar Miniaturas]**.
 
@@ -89,13 +91,21 @@ Para obter informações detalhadas sobre os recursos da linha de comando ImageM
 
 Para usar o fluxo de trabalho do Experience Manager para gerar a renderização FPO dos ativos existentes, crie um modelo de fluxo de trabalho dedicado que use a opção de renderização FPO integrada.
 
-1. Clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**. Para criar um modelo, clique em **[!UICONTROL Create]** > **[!UICONTROL Create Model]**. Adicione um **[!UICONTROL Título]** significativo e um **[!UICONTROL Nome]**.
+1. Clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
 
-1. Selecione o modelo e clique em **[!UICONTROL Editar]**. Clique em **[!UICONTROL Informações da página]** > **[!UICONTROL Abrir propriedades]**. Selecione **[!UICONTROL Fluxo de trabalho transitório]**. Isso melhora a escalabilidade e o desempenho. Clique em ******[!UICONTROL Salvar e fechar]**.
+1. Para criar um modelo, clique em **[!UICONTROL Create]** > **[!UICONTROL Create Model]**.
 
-1. Clique em **[!UICONTROL Alternar painel lateral]** no canto superior esquerdo. Procure a etapa de miniatura do processo. Arraste a etapa **[!UICONTROL Processar miniaturas]**.
+1. Adicione um **[!UICONTROL Título]** e **[!UICONTROL Nome]** significativo.
 
-1. Selecione **[!UICONTROL Processar miniaturas]** e clique em **[!UICONTROL Configurar]**. Siga a configuração [para gerar a representação de novos ativos usando o Experience Manager workflow](#generate-renditions-of-new-assets-using-aem-workflow). Para ativar as alterações, clique em **[!UICONTROL Sync]**.
+1. Selecione o modelo e clique em **[!UICONTROL Editar]**. Clique em **[!UICONTROL Informações da página]** > **[!UICONTROL Abrir propriedades]** e selecione **[!UICONTROL Fluxo de trabalho transitório]**. Isso melhora a escalabilidade e o desempenho.
+
+1. Clique em ******[!UICONTROL Salvar e fechar]**.
+
+1. Clique em **[!UICONTROL Alternar painel lateral]** no canto superior esquerdo e procure a etapa de miniatura do processo.
+
+1. Selecione **[!UICONTROL Processar miniaturas]** e clique em **[!UICONTROL Configurar]**. Siga a configuração [para gerar a representação de novos ativos usando o Experience Manager workflow](#generate-renditions-of-new-assets-using-aem-workflow).
+
+1. Para ativar as alterações, clique em **[!UICONTROL Sync]**.
 
 
 ## Gerar representações de ativos existentes usando o ImageMagick {#generate-renditions-of-existing-assets-using-imagemagick}
