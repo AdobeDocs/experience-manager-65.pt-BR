@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
-source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
+source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 22%
+source-wordcount: '590'
+ht-degree: 21%
 
 ---
 
@@ -116,6 +116,7 @@ ht-degree: 22%
    + [Integrar com [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management em ativos](drm.md)
    + [Usar pacote de demonstração para insights de ativos](use-demo-package-for-asset-insights.md)
+   + [Gerar representações FPO para o Adobe InDesign](configure-fpo-renditions.md)
    + [Práticas recomendadas de formato de arquivo de ativos](assets-file-format-best-practices.md)
    + [Práticas recomendadas para monitorar ativos](assets-monitoring-best-practices.md)
    + [Suporte Camera Raw](camera-raw.md)
