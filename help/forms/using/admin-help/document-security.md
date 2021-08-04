@@ -12,9 +12,9 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Segurança de documentos
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: a84f9bd590193cbb8c2549b34df1bbcec618ba67
+source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
-source-wordcount: '3298'
+source-wordcount: '3310'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,7 @@ A proteção de política pode ser aplicada a um documento PDF usando o Adobe Ac
 
 As políticas contêm informações sobre os usuários autorizados e as configurações de confidencialidade a serem aplicadas aos documentos. Os usuários podem ser qualquer pessoa em sua organização, bem como pessoas externas à organização que têm uma conta. Se o administrador ativar o recurso de convite do usuário, será possível adicionar novos usuários às políticas, iniciando um processo de email de convite de registro.
 
-As configurações de confidencialidade em uma política determinam como os recipients podem usar o documento. Por exemplo, você pode especificar se os destinatários podem imprimir ou copiar texto, fazer alterações ou adicionar assinaturas e comentários a documentos protegidos. A mesma política também pode especificar configurações de confidencialidade diferentes para usuários específicos.
+As configurações de confidencialidade em uma política determinam como os destinatários podem usar o documento. Por exemplo, você pode especificar se os destinatários podem imprimir ou copiar texto, fazer alterações ou adicionar assinaturas e comentários a documentos protegidos. A mesma política também pode especificar configurações de confidencialidade diferentes para usuários específicos.
 
 >[!NOTE]
 >
@@ -182,7 +182,7 @@ Quando você aplica uma política a um documento, as informações que o documen
 
 Se o uso offline estiver ativado, os recipients também poderão usar documentos protegidos por política offline (sem uma conexão ativa de Internet ou de rede) pelo período especificado na política.
 
-### Como os documentos protegidos por política funcionam {#how-policy-protected-documents-work}
+### Como funcionam os documentos protegidos por políticas {#how-policy-protected-documents-work}
 
 Para abrir e usar documentos protegidos por políticas, a política deve incluir seu nome como destinatário e você deve ter uma conta de segurança de documento válida. Para documentos PDF, você precisa do Acrobat ou Adobe Reader®. Para outros tipos de arquivos, você precisa do aplicativo apropriado para o arquivo com as extensões do Acrobat Reader DC instaladas.
 
@@ -276,4 +276,4 @@ Adicione grupos de usuários a políticas em vez de usuários individuais. Facil
 
    >[!NOTE]
    >
-   > Você pode usar a API [getAllPolicysetnames()]((https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html)) para recuperar no máximo 1000 nomes de conjuntos de políticas. Internamente, a API recupera um máximo de 1000 políticas para as quais o chamador da API tem permissão de publicador de documentos e, em seguida, cria e retorna para você uma lista de nomes de conjuntos de políticas exclusivos associados a políticas recuperadas. Por exemplo, quando a API recupera 1000 políticas e as políticas recuperadas são associadas a 200 conjuntos de políticas no total, a API retorna apenas 200 nomes de conjuntos de políticas.
+   > Você pode usar a API [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) para recuperar no máximo 1000 nomes de conjuntos de políticas. Internamente, a API recupera um máximo de 1000 políticas para as quais o chamador da API tem permissão de publicador de documentos e, em seguida, cria e retorna para você uma lista de nomes de conjuntos de políticas exclusivos associados a políticas recuperadas. Por exemplo, quando a API recupera 1000 políticas e as políticas recuperadas são associadas a 200 conjuntos de políticas no total, a API retorna apenas 200 nomes de conjuntos de políticas.
