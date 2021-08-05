@@ -7,11 +7,12 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
+mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuração,Modo Scene7
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 9cca48f13f2e6f26961cff86d71f342cab422a78
 workflow-type: tm+mt
-source-wordcount: '6160'
+source-wordcount: '6856'
 ht-degree: 4%
 
 ---
@@ -26,7 +27,8 @@ O diagrama de arquitetura a seguir descreve como o modo Dynamic Media - Scene7 f
 
 Com a nova arquitetura, o Experience Manager é responsável pelos ativos e sincronizações de origem primária com o Dynamic Media para processamento e publicação de ativos:
 
-1. Quando o ativo de origem principal é carregado no Experience Manager, ele é replicado no Dynamic Media. Nesse momento, o Dynamic Media lida com todo o processamento de ativos e a geração de representação, como a codificação de vídeo e as variantes dinâmicas de uma imagem. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
+1. Quando o ativo de origem principal é carregado no Experience Manager, ele é replicado no Dynamic Media. Nesse momento, o Dynamic Media lida com todo o processamento de ativos e a geração de representação, como a codificação de vídeo e as variantes dinâmicas de uma imagem.
+(No modo Dynamic Media - Scene7, o tamanho padrão do arquivo de upload é de 2 GB ou menos. Para permitir o upload de tamanhos de arquivos de 2 GB até 15 GB, consulte [(Opcional) Configurar o Dynamic Media - Modo Scene7 para upload de ativos maiores que 2 GB](#optional-config-dms7-assets-larger-than-2gb).)
 1. Depois que as renderizações são geradas, o Experience Manager pode acessar com segurança e visualizar as renderizações remotas do Dynamic Media (nenhum binário é enviado de volta para a instância do Experience Manager).
 1. Depois que o conteúdo estiver pronto para ser publicado e aprovado, ele aciona o serviço da Dynamic Media para enviar o conteúdo para os servidores de entrega e armazenar em cache o conteúdo na CDN (Content Delivery Network).
 
@@ -147,11 +149,95 @@ Se você quiser personalizar ainda mais sua configuração, poderá, opcionalmen
 
 Se quiser personalizar ainda mais a configuração e configuração do Dynamic Media - modo Scene7 ou otimizar seu desempenho, poderá concluir uma ou mais das seguintes tarefas *opcionais*:
 
+* [(Opcional) Configurar o Dynamic Media - Modo Scene7 para upload de ativos com mais de 2 GB](#optional-config-dms7-assets-larger-than-2gb)
+
 * [(Opcional) Configuração e configuração do Dynamic Media - Configurações do modo Scene7](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
 
 * [(Opcional) Ajustar o desempenho do Dynamic Media - Modo Scene7](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 * [(Opcional) Filtrar ativos para replicação](#optional-filtering-assets-for-replication)
+
+### (Opcional) Configurar o Dynamic Media - Modo Scene7 para upload de ativos com mais de 2 GB {#optional-config-dms7-assets-larger-than-2gb}
+
+No modo Dynamic Media - Scene7, o tamanho padrão do arquivo de upload de ativos é de 2 GB ou menos. No entanto, opcionalmente, é possível configurar o upload de ativos com mais de 2 GB e até 15 GB.
+
+Esteja ciente dos seguintes pré-requisitos e pontos se deseja usar esse recurso:
+
+* Você deve estar executando o Experience Manager 6.5 com Service Pack 6.5.4.0 ou posterior.
+* [O ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) download do Acesso binário direto do Oak está habilitado.
+
+   Para ativar, defina a propriedade `presignedHttpDownloadURIExpirySeconds > 0` na configuração do armazenamento de dados. O valor deve ser longo o suficiente para baixar binários maiores e possivelmente tentar novamente.
+
+* Os ativos com mais de 15 GB não são carregados. (O limite de tamanho é definido na etapa 8 abaixo.)
+* Quando o workflow Scene7 Reprocess Assets é acionado em uma pasta, ele reprocessa os ativos grandes já carregados que estão na pasta. No entanto, ele faz upload de ativos grandes que não existem na empresa do Scene7.
+* Os uploads grandes funcionam somente para cargas únicas de ativos, não no caso em que o fluxo de trabalho é acionado em uma pasta.
+
+**Para configurar o Dynamic Media - Modo Scene7 para upload de ativos com mais de 2 GB:**
+
+1. No Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
+
+1. Na janela CRXDE Lite, execute um dos seguintes procedimentos:
+
+   * No painel à esquerda, navegue até o seguinte caminho:
+
+      `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+
+   * Copie e cole o caminho acima no campo CRXDE Lite path abaixo da barra de ferramentas e pressione `Enter`.
+
+1. No painel à esquerda, clique com o botão direito do mouse em `fileupload` e, no menu pop-up, selecione **[!UICONTROL Sobrepor nó]**.
+
+   ![Opção Sobrepor nó](/help/assets/assets-dm/uploadassets15gb_a.png)
+
+1. Na caixa de diálogo Sobrepor nó , marque a caixa de seleção **[!UICONTROL Corresponder tipos de nó]** para ativar (ativar) a opção e, em seguida, selecione **[!UICONTROL OK]**.
+
+   ![Caixa de diálogo Sobrepor nó](/help/assets/assets-dm/uploadassets15gb_b.png)
+
+1. Na janela CRXDE Lite, execute um dos seguintes procedimentos:
+
+   * No painel à esquerda, navegue até o seguinte caminho do nó de sobreposição:
+
+      `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+
+   * Copie e cole o caminho acima no campo CRXDE Lite path abaixo da barra de ferramentas e pressione `Enter`.
+
+1. Na guia **[!UICONTROL Properties]**, na coluna **[!UICONTROL Name]**, localize `sizeLimit`.
+1. À direita do nome `sizeLimit`, na coluna **[!UICONTROL Value]**, clique duas vezes no campo de valor.
+1. Insira o valor apropriado em bytes, para que você possa aumentar o limite de tamanho para o tamanho máximo de upload desejado. Por exemplo, para aumentar o limite de tamanho do ativo de upload para 10 GB, digite `10737418240` no campo de valor.
+Você pode inserir um valor de até 15 GB (`2013265920` bytes). Nesse caso, os ativos carregados com mais de 15 GB não são carregados.
+
+
+   ![Valor limite de tamanho](/help/assets/assets-dm/uploadassets15gb_c.png)
+
+1. Próximo ao canto superior esquerdo da janela CRXDE Lite, selecione **[!UICONTROL Salvar tudo]**.
+
+   *Agora defina o tempo limite para o Manipulador de Trabalho do Processo Externo do Fluxo de Trabalho do Adobe Granite fazendo o seguinte:*
+
+1. No Experience Manager, selecione o logotipo Experience Manager para acessar o console de navegação global.
+1. Siga um destes procedimentos:
+
+   * Navegue até o seguinte caminho de URL:
+
+      `localhost:4502/system/console/configMgr/com.adobe.granite.workflow.core.job.ExternalProcessJobHandler`
+
+   * Copie e cole o caminho acima no campo URL do seu navegador. Certifique-se de substituir `localhost:4502` por sua própria instância do Experience Manager.
+
+1. Na caixa de diálogo **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**, no campo **[!UICONTROL Tempo limite máximo]**, defina o valor para `18000` minutos (cinco horas). O padrão é 10800 minutos (três horas).
+
+   ![Valor máximo do tempo limite](/help/assets/assets-dm/uploadassets15gb_d.png)
+
+1. No canto inferior direito da caixa de diálogo, selecione **[!UICONTROL Salvar]**.
+
+   *Agora defina o tempo limite para a etapa do processo de Upload binário direto do Scene7, fazendo o seguinte:*
+
+1. No Experience Manager, selecione o logotipo Experience Manager para acessar o console de navegação global.
+1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
+1. Na página Modelos de fluxo de trabalho , selecione **[!UICONTROL Dynamic Media Encode Video]**.
+1. Na barra de ferramentas, selecione **[!UICONTROL Editar]**.
+1. Na página do fluxo de trabalho, clique duas vezes na etapa do processo **[!UICONTROL Scene7 Direct Binary Upload]** .
+1. Na caixa de diálogo **[!UICONTROL Propriedades da etapa]**, na guia **[!UICONTROL Comum]**, no cabeçalho **[!UICONTROL Configurações avançadas]**, no campo **[!UICONTROL Tempo limite]**, digite um valor de `18000` minutos (cinco horas). O padrão é `3600` minutos (uma hora).
+1. Selecione **[!UICONTROL OK]**.
+1. Selecione **[!UICONTROL Sync]**.
+1. Repita as etapas 14 a 21 para o modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]** e o modelo de fluxo de trabalho **[!UICONTROL Fluxo de trabalho de reprocessamento do Scene7]**.
 
 ### (Opcional) Configuração e configuração do Dynamic Media - Configurações do modo Scene7 {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
@@ -525,7 +611,7 @@ A fila Fluxo de trabalho de trânsito do Granite é usada para o fluxo de trabal
 
 **Para atualizar a fila de fluxo de trabalho transitório do Granite:**
 
-1. Navegue até [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) e procure por **Fila: Fila de Fluxo de Trabalho Transitório do Granite**.
+1. Navegue até [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e procure por **Fila: Fila de Fluxo de Trabalho Transitório do Granite**.
 
    >[!NOTE]
    Uma pesquisa de texto é necessária em vez de um URL direto porque o PID do OSGi é gerado dinamicamente.
