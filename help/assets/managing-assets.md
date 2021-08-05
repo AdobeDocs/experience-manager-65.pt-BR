@@ -10,16 +10,16 @@ discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 feature: Gerenciamento de ativos
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b0286341c1b643bd39a3009185c0d4c8d76ccba5
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '118'
 ht-degree: 13%
 
 ---
 
 # Sobre o gerenciamento de ativos da Dynamic Media {#managing-assets}
 
-O gerenciamento de ativos da Dynamic Media, imagens, vídeos e ativos interativos, após o upload, envolve muitas tarefas, incluindo a visualização, o download ou a publicação de ativos.
+O gerenciamento de ativos do Dynamic Media - imagens, vídeo e ativos interativos - após o upload envolve muitas tarefas, incluindo a visualização, o download ou a publicação de ativos.
 
 Ao visualizar, você também pode aplicar predefinições de imagens (somente para imagens) ou predefinições do visualizador (para vídeo e imagens). Não é possível aplicar ambos a um ativo. Consulte [Aplicar predefinições do visualizador](/help/assets/viewer-presets.md) e [Aplicar predefinições de imagens](/help/assets/image-sets.md).
 
