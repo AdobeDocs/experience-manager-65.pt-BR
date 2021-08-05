@@ -6,16 +6,16 @@ mini-toc-levels: 1
 role: User
 feature: Gerenciamento de ativos,Pesquisar
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
+source-git-commit: 9dc61a66a79004013d8cff89c4607f7aafad08df
 workflow-type: tm+mt
-source-wordcount: '9784'
-ht-degree: 4%
+source-wordcount: '9848'
+ht-degree: 3%
 
 ---
 
 # Gerenciar seus ativos digitais {#manage-digital-assets}
 
-Em [!DNL Adobe Experience Manager Assets] você pode fazer mais do que apenas armazenar e administrar seus ativos. [!DNL Experience Manager] oferece recursos de gerenciamento de ativos de nível empresarial. Você pode editar e compartilhar ativos, executar pesquisas avançadas, criar várias versões de dezenas de formatos de arquivo compatíveis, gerenciar versões e direitos digitais, automatizar o processamento de ativos, gerenciar e administrar metadados, colaborar usando anotações e muito mais.
+Em [!DNL Adobe Experience Manager Assets], você pode fazer mais do que armazenar e administrar seus ativos. [!DNL Experience Manager] oferece recursos de gerenciamento de ativos de nível empresarial. Você pode editar e compartilhar ativos, executar pesquisas avançadas e criar várias representações de dezenas de formatos de arquivo compatíveis. Você também pode gerenciar versões e direitos digitais, automatizar o processamento de ativos, gerenciar e administrar metadados, colaborar usando anotações e muito mais.
 
 Este artigo descreve as tarefas básicas de gerenciamento de ativos, como criar ou fazer upload; atualizações de metadados; copiar, mover e excluir; publicar, cancelar a publicação e pesquisar ativos. Para entender a interface do usuário, consulte [começar a usar a interface do usuário do assets](/help/sites-authoring/basic-handling.md). Para gerenciar Fragmentos de conteúdo, consulte [gerenciar os ativos dos Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md).
 
@@ -25,11 +25,11 @@ Ao organizar uma coleção de ativos, por exemplo, todas as imagens `Nature`, vo
 
 >[!NOTE]
 >
->* O compartilhamento de uma pasta [!DNL Assets] do tipo `sling:OrderedFolder` não é suportado ao compartilhar com o Marketing Cloud. Se quiser compartilhar uma pasta, não selecione [!UICONTROL Ordered] ao criar uma pasta.
->* [!DNL Experience Manager] não permite usar o  `subassets` word como nome de uma pasta. É uma palavra-chave reservada para nós que contém subativos para ativos compostos.
+>* O compartilhamento de uma pasta [!DNL Assets] do tipo `sling:OrderedFolder` não é suportado ao compartilhar com o Experience Cloud. Se quiser compartilhar uma pasta, não selecione [!UICONTROL Ordered] ao criar uma pasta.
+>* [!DNL Experience Manager] não permite usar o  `subassets` word como nome de uma pasta. É uma palavra-chave reservada para um nó que contém subativos para ativos compostos.
 
 
-1. Navegue até o local na pasta de ativos digitais onde deseja criar uma nova pasta. No menu, clique em **[!UICONTROL Create]**. Selecione **[!UICONTROL Nova Pasta]**.
+1. Navegue até o local na pasta de ativos digitais onde deseja criar uma pasta. No menu, clique em **[!UICONTROL Create]**. Selecione **[!UICONTROL Nova Pasta]**.
 1. No campo **[!UICONTROL Title]**, forneça um nome de pasta. Por padrão, o DAM usa o título fornecido como o nome da pasta. Depois que a pasta for criada, é possível substituir o padrão e especificar outro nome de pasta.
 1. Clique em **[!UICONTROL Criar]**. Sua pasta é exibida na pasta de ativos digitais.
 
@@ -51,7 +51,7 @@ Você pode fazer upload de vários tipos de ativos (incluindo imagens, arquivos 
 
 >[!NOTE]
 >
->No modo Dynamic Media - Scene7, você só pode fazer upload de ativos com tamanhos de arquivo de 2 GB ou menos.
+>No modo Dynamic Media - Scene7, o tamanho padrão do arquivo de upload de ativos é de 2 GB ou menos. Para configurar o upload de ativos com mais de 2 GB e até 15 GB, consulte [(Opcional) Configurar o Dynamic Media - Modo Scene7 para fazer upload de ativos com mais de 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 Você pode optar por fazer upload de ativos para pastas com ou sem um perfil de processamento atribuído a eles.
 
@@ -91,7 +91,7 @@ Para configurar a tarefa de limpeza para os trabalhos de upload de partes não c
 
 >[!CAUTION]
 >
->O valor padrão quando o upload de segmento é acionado é de 500 MB e o tamanho do segmento é de 50 MB. Se modificar o [Apache Jackrabbit Oak TokenConfiguration](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) para definir o `timeout configuration` para ser menor que o tempo necessário para um ativo carregar, você poderá encontrar uma situação de tempo limite de sessão enquanto o upload do ativo estiver em andamento. Portanto, é necessário alterar os `chunkUploadMinFileSize` e `chunksize`, para que cada solicitação de segmento atualize a sessão.
+>O upload de chunk é acionado quando o valor padrão é de 500 MB e o tamanho do chunk é de 50 MB. Se você editar [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) e definir o `timeout configuration` para menos do que o tempo necessário para um ativo carregar, você encontrará uma situação de tempo limite de sessão enquanto o upload do ativo estiver em andamento. Portanto, altere os `chunkUploadMinFileSize` e `chunksize` para que cada solicitação de segmento atualize a sessão.
 >
 >Dada a expiração da credencial, a latência, a largura de banda e os uploads simultâneos esperados, o valor mais alto que permite garantir que o seguinte seja escolhido:
 >
@@ -101,7 +101,7 @@ Para configurar a tarefa de limpeza para os trabalhos de upload de partes não c
 * Para garantir que cada segmento termine antes da credencial expirar.
 
 
-Se você fizer upload de um ativo com o mesmo nome de um ativo já disponível no local em que você está fazendo upload, uma caixa de diálogo de aviso será exibida.
+Se você carregar um ativo com o mesmo nome de um ativo que já está disponível no local em que você está fazendo upload, uma caixa de diálogo de aviso será exibida.
 
 Você pode optar por substituir um ativo existente, criar outra versão ou manter ambos, renomeando o novo ativo que é carregado. Se você substituir um ativo existente, os metadados do ativo e quaisquer modificações anteriores (por exemplo, anotar ou cortar) feitas no ativo existente serão excluídos. Se optar por manter ambos os ativos, o novo ativo será renomeado com o número `1` anexado ao nome.
 
@@ -156,11 +156,11 @@ O Dynamic Media permite o upload em lote de ativos por meio do servidor FTP. Se 
 
 >[!NOTE]
 >
->No modo Dynamic Media - Scene7, você só pode fazer upload de ativos com tamanhos de arquivo de 2 GB ou menos.
+>No modo Dynamic Media - Scene7, o tamanho padrão do arquivo de upload de ativos é de 2 GB ou menos. Para configurar o upload de ativos com mais de 2 GB e até 15 GB, consulte [(Opcional) Configurar o Dynamic Media - Modo Scene7 para fazer upload de ativos com mais de 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 >[!NOTE]
 >
->Para fazer upload de ativos via FTP no modo Dynamic Media - Scene7, instale o Feature Pack 18912 nas instâncias do autor [!DNL Experience Manager]. Entre em contato com o [Adobe Customer Care](https://helpx.adobe.com/br/contact/enterprise-support.ec.html) para obter acesso ao FP-18912 e concluir a configuração da sua conta FTP. Para obter mais informações, consulte [Instalar pacote de recursos 18912 para migração de ativos em massa](/help/assets/bulk-ingest-migrate.md).
+>Para fazer upload de ativos via FTP no modo Dynamic Media - Scene7, instale o Feature Pack 18912 nas instâncias do autor [!DNL Experience Manager]. Entre em contato com o [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=General#support) para obter acesso ao FP-18912 e concluir a configuração da sua conta FTP. Para obter mais informações, consulte [Instalar pacote de recursos 18912 para migração de ativos em massa](/help/assets/bulk-ingest-migrate.md).
 >
 >Se você usar o FTP para fazer upload de ativos, as configurações de upload especificadas em [!DNL Experience Manager] serão ignoradas. Em vez disso, as regras de processamento de arquivos, conforme definido no Dynamic Media Classic, são usadas.
 
@@ -200,17 +200,17 @@ Para cancelar um trabalho de upload em andamento, clique em **[!UICONTROL Cancel
 | Opções de trabalho |  | Clique em **[!UICONTROL Opções de trabalho]** para abrir a caixa de diálogo [!UICONTROL Fazer upload de opções de trabalho] e escolha as opções que afetam todo o trabalho de upload. Essas opções são as mesmas para todos os tipos de arquivos.<br>Você pode escolher as opções padrão para fazer upload de arquivos, começando na página Configurações gerais do aplicativo . Para abrir esta página, escolha **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do Aplicativo]**. Selecione a opção **[!UICONTROL Opções de Upload Padrão]** para abrir a caixa de diálogo [!UICONTROL Upload Job Options]. |
 |  | Quando | Selecione One-Time (Uma vez) ou Recurring (Recorrente). Para definir um trabalho recorrente, escolha uma opção Repetir — Diário, Semanal, Mensal ou Personalizado — para especificar quando você deseja que o trabalho de upload do FTP ocorra novamente. Em seguida, especifique as opções de agendamento, conforme necessário. |
 |  | Incluir subpastas | Faça upload de todas as subpastas dentro da pasta que deseja carregar. Os nomes da pasta e suas subpastas que você faz upload são inseridos automaticamente em [!DNL Experience Manager Assets]. |
-|  | Opções de corte | Para recortar manualmente das laterais de uma imagem, selecione o menu Recortar e escolha Manual. Em seguida, insira o número de pixels para cortar de qualquer lado ou de cada lado da imagem. A quantidade de imagens cortadas depende da configuração ppi (pixels por polegada) no arquivo de imagem. Por exemplo, se a imagem exibir 150 ppi e você digitar 75 nas caixas de texto Superior, Direito, Inferior e Esquerdo, meia polegada será cortada de cada lado.<br> Para cortar automaticamente pixels de espaço em branco de uma imagem, abra o menu Cortar, escolha Manual e insira medidas de pixel nos campos Superior, Direita, Inferior e Esquerdo para cortar das laterais. Você também pode escolher Aparar no menu Cortar e escolher estas opções:<br> **Aparar com base em** <ul><li>**Cor**  - Escolha a opção Cor. Em seguida, selecione o menu Canto e escolha o canto da imagem com a cor que melhor representa a cor do espaço em branco que deseja recortar.</li><li>**Transparência**  - Escolha a opção Transparência.<br> **Tolerância**  - Arraste o controle deslizante para especificar uma tolerância de 0 a 1. Para aparar com base na cor, especifique 0 para cortar pixels somente se corresponderem exatamente à cor selecionada no canto da imagem. Os números mais próximos de 1 permitem mais diferenças de cor.<br>Para aparar com base na transparência, especifique 0 para cortar pixels somente se forem transparentes. Os números mais próximos de 1 permitem mais transparência.</li></ul><br>Observe que essas opções de corte não são destrutivas. |
+|  | Opções de corte | Para recortar manualmente das laterais de uma imagem, selecione o menu Recortar e escolha Manual. Em seguida, insira o número de pixels para cortar de qualquer lado ou de cada lado da imagem. A quantidade de imagens cortadas depende da configuração ppi (pixels por polegada) no arquivo de imagem. Por exemplo, se a imagem exibir 150 ppi e você digitar 75 nas caixas de texto Superior, Direito, Inferior e Esquerdo, meia polegada será cortada de cada lado.<br> Para cortar automaticamente pixels de espaço em branco de uma imagem, abra o menu Cortar, escolha Manual e insira medidas de pixel nos campos Superior, Direita, Inferior e Esquerdo para cortar das laterais. Você também pode escolher Aparar no menu Cortar e escolher estas opções:<br> **Aparar com base em** <ul><li>**Cor**  - Escolha a opção Cor. Em seguida, selecione o menu Canto e escolha o canto da imagem com a cor que melhor representa a cor do espaço em branco que deseja recortar.</li><li>**Transparência**  - Escolha a opção Transparência.<br> **Tolerância**  - Arraste o controle deslizante para especificar uma tolerância de 0 a 1. Para aparar com base na cor, especifique 0 para cortar pixels somente se corresponderem exatamente à cor selecionada no canto da imagem. Os números mais próximos de 1 permitem mais diferenças de cor.<br>Para aparar com base na transparência, especifique 0 para cortar pixels somente se forem transparentes. Os números mais próximos de 1 permitem mais transparência.</li></ul><br>Essas opções de corte não são destrutivas. |
 |  | Opções de perfil de cores | Escolha uma conversão de cores ao criar arquivos otimizados usados para entrega:<ul><li>Preservação de cor padrão: Mantém as cores da imagem de origem sempre que as imagens contêm informações sobre o espaço de cores; não há conversão de cores. Quase todas as imagens atuais têm o perfil de cores apropriado já incorporado. No entanto, se uma imagem de origem CMYK não contiver um perfil de cor incorporado, as cores serão convertidas em espaço de cor sRGB (azul verde padrão). sRGB é o espaço de cores recomendado para exibir imagens nas páginas da Web.</li><li>Manter espaço de cor original: Mantém as cores originais sem qualquer conversão de cores no momento. Para imagens sem um perfil de cor incorporado, qualquer conversão de cor é feita usando os perfis de cor padrão definidos nas configurações de Publicação. Os perfis de cores podem não estar alinhados com a cor nos arquivos criados com essa opção. Portanto, é recomendável usar a opção Preservação de cor padrão.</li><li>Personalizar de > Para<br> Abre menus para que você possa escolher um espaço de cores Converter de e Converter em. Essa opção avançada substitui qualquer informação de cor incorporada no arquivo de origem. Selecione essa opção quando todas as imagens enviadas contiverem dados de perfil de cores incorretos ou ausentes.</li></ul> |
-|  | Opções de edição de imagem | É possível preservar as máscaras de recorte em imagens e escolher um perfil de cor.<br> Consulte  [Configuração das opções de edição de imagem no upload](#setting-image-editing-options-at-upload). |
+|  | Opções de edição de imagens | É possível preservar as máscaras de recorte em imagens e escolher um perfil de cor.<br> Consulte  [Opções de configuração para edições de imagem no upload](#setting-image-editing-options-at-upload). |
 |  | Opções de postscript | Você pode rasterizar arquivos do PostScript®, recortar arquivos, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cores.<br> Consulte  [Definição das opções de upload de PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
-|  | Opções do Photoshop | Você pode criar modelos a partir de arquivos Adobe® Photoshop®, manter camadas, especificar como as camadas são nomeadas, extrair texto e especificar como as imagens são ancoradas em modelos.<br> Observe que os modelos não são compatíveis com o  [!DNL Experience Manager].<br> Consulte  [Configuração das opções de upload do Photoshop](#setting-photoshop-upload-options). |
-|  | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras de pesquisa e links, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cores.<br> Observe que os catálogos eletrônicos não são compatíveis com o  [!DNL Experience Manager]. <br> Consulte  [Configuração das opções de upload de PDF](#setting-pdf-upload-options). |
+|  | Opções do Photoshop | Você pode criar modelos a partir de arquivos Adobe® Photoshop®, manter camadas, especificar como as camadas são nomeadas, extrair texto e especificar como as imagens são ancoradas em modelos.<br> Não há suporte para modelos no  [!DNL Experience Manager].<br> Consulte  [Configuração das opções de upload do Photoshop](#setting-photoshop-upload-options). |
+|  | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras de pesquisa e links, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cores.<br>Os catálogos eletrônicos não são compatíveis com o  [!DNL Experience Manager]. <br> Consulte  [Configuração das opções de upload de PDF](#setting-pdf-upload-options). |
 |  | Opções do Illustrator | Você pode rasterizar arquivos Adobe Illustrator®, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cores.<br> Consulte  [Definição das opções de upload de PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Opções de EVideo | Você pode transcodificar um arquivo de vídeo escolhendo uma Predefinição de vídeo.<br> Consulte  [Configuração das opções de upload de eVideo](#setting-evideo-upload-options). |
 |  | Predefinições de conjunto de lotes | Para criar um Conjunto de imagens ou Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. Você pode selecionar mais de uma predefinição. Você cria as predefinições na página Configuração do aplicativo/Predefinições do conjunto de lotes do Dynamic Media Classic.<br> Consulte  [Configuração de predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e ](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) configurações de rotação para saber mais sobre a criação de predefinições de conjuntos de lotes.<br> Consulte  [Definir predefinições do conjunto de lotes no upload](#setting-batch-set-presets-at-upload). |
 
-#### Definir opções de edição de imagem no upload {#setting-image-editing-options-at-upload}
+#### Definir opções para edições de imagem no upload {#setting-image-editing-options-at-upload}
 
 Ao carregar arquivos de imagem, incluindo arquivos AI, EPS e PSD, você pode realizar as seguintes ações de edição na caixa de diálogo [!UICONTROL Upload Job Options]:
 
@@ -270,7 +270,7 @@ Use as [!UICONTROL Opções de recorte] e as [!UICONTROL Opções do perfil de c
 | Extrair texto |  | Extrai o texto para que os usuários possam pesquisar por texto em um Visualizador. |
 | Estender camadas ao tamanho do plano de fundo |  | Estende o tamanho das camadas de imagem cortadas até o tamanho da camada de plano de fundo. |
 | Nomenclatura de camada |  | As camadas no arquivo PSD são carregadas como imagens separadas. |
-|  | Nome da camada | Nomes das imagens após os nomes das camadas no arquivo PSD. Por exemplo, uma camada chamada Tag de preço no arquivo PSD original se torna uma imagem chamada Tag de preço. No entanto, se os nomes de camada no arquivo PSD forem nomes de camada padrão do Photoshop (Plano de fundo, Camada 1, Camada 2 e assim por diante), as imagens serão nomeadas após seus números de camada no arquivo PSD, não seus nomes de camada padrão. |
+|  | Nome da camada | Nomes das imagens após os nomes das camadas no arquivo PSD. Por exemplo, uma camada chamada Tag de preço no arquivo PSD original se torna uma imagem chamada Tag de preço. No entanto, se os nomes de camada no arquivo PSD forem nomes de camada padrão do Photoshop (Plano de fundo, Camada 1, Camada 2 e assim por diante), as imagens serão nomeadas após seus números de camada no arquivo PSD. Eles não são nomeados após seus nomes de camada padrão. |
 |  | Photoshop e número de camada | Nomes das imagens depois de seus números de camada no arquivo PSD, ignorando os nomes da camada original. As imagens são nomeadas com o nome do arquivo Photoshop e um número de camada anexado. Por exemplo, a segunda camada de um arquivo chamado Spring Ad.psd é chamada Spring Ad_2 , mesmo que tenha um nome não padrão no Photoshop. |
 |  | Photoshop e Nome da Camada | Nomes das imagens após o arquivo PSD seguido do nome da camada ou do número da camada. O número da camada é usado se os nomes da camada no arquivo PSD forem nomes padrão da camada do Photoshop. Por exemplo, uma camada chamada Tag de preço em um arquivo PSD chamado SpringAd é chamada Tag Ad_Price Primavera. Uma camada com o nome padrão Camada 2 é chamada de Anúncio de primavera_2. |
 | Âncora |  | Especifique como as imagens são ancoradas em modelos que são gerados a partir da composição em camadas produzida a partir do arquivo PSD. Por padrão, a âncora é o centro. Uma âncora central permite que imagens de substituição preencham melhor o mesmo espaço, independentemente da proporção da imagem de substituição. Imagens com um aspecto diferente que substituem essa imagem, ao referenciar o modelo e usar substituição de parâmetro, ocupam efetivamente o mesmo espaço. Altere para uma configuração diferente se o aplicativo exigir as imagens de substituição para preencher o espaço alocado no modelo. |
@@ -287,7 +287,7 @@ Escolha entre as seguintes opções:
 
 | Opção | Subopção | Descrição |
 |---|---|---|
-| Processando | Rasterizar | (Padrão) Ripsa as páginas no arquivo PDF e converte gráficos vetoriais em imagens de bitmap. Escolha essa opção para criar um eCatalog. |
+| Processando | Rasterizar | (Padrão) Ripsa as páginas no arquivo PDF e converte gráficos vetoriais em imagens de bitmap. Escolha essa opção se quiser criar um eCatalog. |
 | Extrair | Pesquisar palavras | Extrai palavras do arquivo PDF para que o arquivo possa ser pesquisado por palavra-chave em um Visualizador de catálogo eletrônico. |
 |  | Links | Extrai links dos arquivos PDF e os converte em mapas de imagem usados em um visualizador de eCatalog. |
 | Gerar automaticamente o catálogo eletrônico a partir de PDF de várias páginas |  | Cria automaticamente um eCatalog a partir do arquivo PDF. O eCatalog é nomeado após o arquivo PDF que você carregou. (Essa opção só estará disponível se você rasterizar o arquivo PDF ao carregá-lo.) |
@@ -305,10 +305,10 @@ Para transcodificar um arquivo de vídeo, escolha dentre várias predefinições
 | Opção | Subopção | Descrição |
 |---|---|---|
 | Vídeo adaptável |  | Uma única predefinição de codificação que funciona com qualquer proporção para criar vídeos para entrega em dispositivos móveis, tablets e desktops. Os vídeos de origem carregados codificados com essa predefinição são definidos com uma altura fixa. No entanto, a largura é dimensionada automaticamente para preservar a proporção do vídeo. <br>A prática recomendada é usar a codificação Adaptive Video. |
-| Predefinições de codificação única | Ordenar predefinições de codificação | Selecione Nome ou Tamanho para classificar as predefinições de codificação listadas em Desktop, Móvel e Tablet por nome ou tamanho de resolução. |
-|  | Área de trabalho | Crie um arquivo MP4 para fornecer uma experiência de streaming ou vídeo progressivo a computadores desktop.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
-|  | Móvel | Crie um arquivo MP4 para entrega em dispositivos móveis iPhone ou Android.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
-|  | Tablet | Crie um arquivo MP4 para entrega em dispositivos tablet iPad ou Android.Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
+| Predefinições de codificação única | Ordenar predefinições de codificação | Selecione **[!UICONTROL Name]** ou **[!UICONTROL Size]** se desejar classificar as predefinições de codificação listadas em Desktop, Mobile e Tablet por nome ou por tamanho de resolução. |
+|  | Área de trabalho | Crie um arquivo MP4 para fornecer uma experiência de streaming ou vídeo progressivo aos computadores desktop. Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
+|  | Móvel | Crie um arquivo MP4 para entrega em dispositivos móveis iPhone ou Android™. Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
+|  | Tablet | Crie um arquivo MP4 para entrega em dispositivos tablet iPad ou Android™. Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
 
 #### Definir predefinições do conjunto de lotes no upload {#setting-batch-set-presets-at-upload}
 
@@ -328,7 +328,7 @@ Se você carregar muitos ativos no Adobe Experience Manager, as solicitações d
 
 Você pode fazer upload de arquivos ZIP como qualquer outro ativo suportado. As mesmas regras de nome de arquivo se aplicam aos arquivos ZIP. [!DNL Experience Manager] permite extrair um arquivo ZIP para um local DAM. Se os arquivos de arquivamento não contiverem ZIP como extensão, ative a detecção de tipo de arquivo usando conteúdo.
 
-Selecione um arquivo ZIP de cada vez, clique em **[!UICONTROL Extrair arquivo]** e selecione uma pasta de destino. Selecione uma opção para lidar com conflitos, se houver. Se os ativos no arquivo ZIP já existirem na pasta de destino, você poderá selecionar uma destas opções: ignore a extração, substitua os arquivos existentes, mantenha ambos os ativos renomeando ou crie uma nova versão.
+Selecione um arquivo ZIP de cada vez, clique em **[!UICONTROL Extrair arquivo]** e selecione uma pasta de destino. Selecione uma opção que você deseja manipular conflitos, se houver. Se os ativos no arquivo ZIP existirem na pasta de destino, você poderá selecionar uma destas opções: ignore a extração, substitua os arquivos existentes, mantenha ambos os ativos renomeando ou crie uma versão.
 
 Após a conclusão da extração, [!DNL Experience Manager] notifica você na área de notificação. Enquanto [!DNL Experience Manager] extrai o ZIP, você pode voltar ao seu trabalho sem interromper a extração.
 
@@ -358,13 +358,13 @@ Para visualizar um ativo usando teclado, siga estas etapas:
 
 1. Na interface do usuário [!DNL Assets], navegue até o ativo desejado usando `Tab` e as teclas de seta.
 
-1. Selecione a chave `Enter` no ativo desejado para abri-lo. É possível ampliar os ativos no modo de visualização.
+1. Pressione a tecla `Enter` no ativo desejado para abri-lo. É possível ampliar os ativos no modo de visualização.
 
 1. Para ampliar o ativo:
    1. Use a tecla `Tab` para mover o foco para a opção de zoom.
    1. Use a tecla `Enter` para ampliar a imagem.
 
-   Para diminuir o zoom, use a tecla `Tab` para mover o foco para a opção de zoom e selecione `Enter`.
+   Para diminuir o zoom, use a tecla `Tab` para colocar o foco na opção de zoom e pressione `Enter`.
 
 1. Use as teclas `Shift` + `Tab` para mover o foco de volta na imagem.
 
@@ -378,13 +378,13 @@ Para visualizar um ativo usando teclado, siga estas etapas:
 
 ## Editar propriedades e metadados {#editing-properties}
 
-1. Navegue até o local do ativo para editar seus metadados.
+1. Navegue até o local do ativo cujos metadados você deseja editar.
 
-1. Selecione o ativo e clique em **[!UICONTROL Propriedades]** na barra de ferramentas para exibir as propriedades do ativo. Como alternativa, escolha a ação rápida **[!UICONTROL Propriedades]** no cartão de ativos.
+1. Selecione o ativo e, na barra de ferramentas, selecione **[!UICONTROL Propriedades]** para visualizar as propriedades do ativo. Como alternativa, escolha a ação rápida **[!UICONTROL Propriedades]** no cartão de ativos.
 
    ![Ação rápida das propriedades na exibição do cartão de ativos](assets/properties_quickaction.png)
 
-1. Na página [!UICONTROL Properties], edite as propriedades dos metadados em várias guias. Por exemplo, na guia **[!UICONTROL Basic]**, edite o título, a descrição e assim por diante.
+1. Na página [!UICONTROL Properties], edite as propriedades dos metadados em várias guias. Por exemplo, na guia **[!UICONTROL Basic]**, edite o título e a descrição.
 
    >[!NOTE]
    >
@@ -421,7 +421,7 @@ Para visualizar um ativo usando teclado, siga estas etapas:
    Para obter mais detalhes, consulte [Insights do Assets](/help/assets/asset-insights.md).
 
 1. Clique em **[!UICONTROL Salvar e fechar]**.
-1. Navegue até a interface do usuário [!DNL Assets]. As propriedades de metadados editadas, incluindo título, descrição, classificações e assim por diante, são exibidas no cartão de ativo na exibição Cartão e em colunas relevantes na exibição Lista.
+1. Navegue até a interface do usuário [!DNL Assets]. As propriedades de metadados editados, incluindo título, descrição, classificações e assim por diante, são exibidas no cartão de ativo na exibição Cartão e em colunas relevantes na exibição Lista.
 
 ## Copiar ativos {#copying-assets}
 
@@ -456,7 +456,7 @@ As outras propriedades e informações de metadados são retidas. Uma cópia par
 ## Mover e renomear ativos {#moving-or-renaming-assets}
 
 Ao mover ativos (ou pastas) para outro local, os ativos (ou pastas) não são duplicados de forma diferente ao copiar o ativo. Os ativos (ou as pastas) são colocados no local de destino e são removidos do local de origem. Também é possível renomear o ativo ao movê-lo para o novo local.
-Se você estiver movendo um ativo publicado para um local diferente, então terá a opção de republicar o ativo. Por padrão, a operação de movimentação em um ativo publicado o desfaz automaticamente. Um ativo movido é republicado se o autor selecionar a opção [!UICONTROL Republicar] ao mover o ativo.
+Se você estiver movendo um ativo publicado para um local diferente, é possível republicar o ativo opcionalmente. Por padrão, a operação de movimentação em um ativo publicado o desfaz automaticamente. Um ativo movido é republicado se o autor selecionar a opção [!UICONTROL Republicar] ao mover o ativo.
 
 ![Você pode republicar um ativo já publicado ao movê-lo](assets/republish-on-move.png)
 
@@ -509,7 +509,7 @@ Mover ativos arrastando-os não abre o assistente [!UICONTROL Mover ativo], port
 
 1. Você pode adicionar ou remover representações de um ativo, exceto o original. Navegue até o local do ativo para o qual deseja adicionar ou remover representações.
 
-1. Clique no ativo para abrir a página.
+1. Clique no ativo para que sua página seja aberta.
 1. Na interface do Experience Manager, selecione **[!UICONTROL Representações]** na lista.
 1. No painel **[!UICONTROL Representações]**, visualize a lista de representações geradas para o ativo.
 
@@ -535,7 +535,7 @@ Mover ativos arrastando-os não abre o assistente [!UICONTROL Mover ativo], port
 
    Você pode configurar as dimensões para a representação que deseja exibir na página de detalhes de um ativo de imagem ou vídeo. Com base nas dimensões especificadas, [!DNL Assets] exibe a representação com as dimensões exatas ou mais próximas.
 
-   Para configurar as dimensões de representação de uma imagem no nível de detalhes do ativo, sobreponha o nó `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) e configure o valor da propriedade largura. Configure o **[!UICONTROL tamanho (Longo) em KB]** da propriedade no lugar da largura para personalizar a representação na página Detalhes do ativo com base no tamanho da imagem. Para personalização baseada em tamanho, a propriedade `preferOriginal` atribui preferência ao original se o tamanho da representação correspondente for maior que o original.
+   Para configurar as dimensões de representação de uma imagem no nível de detalhes do ativo, sobreponha o nó `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) e configure o valor da propriedade largura. Configure a propriedade **[!UICONTROL size (Long) em KB]** no lugar da largura, para que você possa personalizar a representação na página de detalhes do ativo com base no tamanho da imagem. Para personalização baseada em tamanho, a propriedade `preferOriginal` atribui preferência ao original se o tamanho da representação correspondente for maior que o original.
 
    Da mesma forma, é possível personalizar a imagem da página Anotação ao sobrepor `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
@@ -606,9 +606,9 @@ Para obter informações específicas de [!DNL Dynamic Media], consulte [publica
 Entenda as seguintes limitações e dicas relacionadas à publicação ou ao cancelamento da publicação de ativos ou pastas:
 
 * A opção para [!UICONTROL Gerenciar publicação] está disponível somente para as contas de usuário que têm permissões de replicação.
-* Ao cancelar a publicação de um ativo complexo, cancele a publicação somente do ativo. Evite desfazer a publicação das referências, pois elas podem ser referenciadas por outros ativos publicados.
+* Ao cancelar a publicação de um ativo complexo, cancele a publicação somente do ativo. Evite cancelar a publicação das referências, pois elas podem ser referenciadas por outros ativos publicados.
 * Pastas vazias não são publicadas.
-* Se você publicar um ativo que está sendo processado, somente o conteúdo original será publicado. As representações estão ausentes. Aguarde até que o processamento seja concluído e publique ou publique novamente o ativo quando o processamento for concluído.
+* Se você publicar um ativo que está sendo processado, somente o conteúdo original será publicado. As representações estão ausentes. Aguarde até que o processamento seja concluído e publique ou republique o ativo após a conclusão do processamento.
 
 ## Grupo de usuário fechado {#closed-user-group}
 
@@ -634,7 +634,7 @@ Os CUGs são uma maneira extra de restringir o acesso aos seus ativos. Você tam
 
 ## Pesquisar ativos {#assetsearch}
 
-Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte dos criadores, para o gerenciamento robusto de ativos pelos usuários e profissionais de marketing ou para administração por administradores de DAM.
+Pesquisar ativos é essencial para o uso de um sistema de gerenciamento de ativos digitais. Essa funcionalidade é importante para os criadores, para o gerenciamento robusto de ativos pelos usuários e profissionais de marketing ou para a administração por administradores do DAM.
 
 Para pesquisas simples, avançadas e personalizadas para descobrir e usar os ativos mais apropriados, consulte [pesquisar ativos no Experience Manager](search-assets.md).
 
@@ -682,7 +682,7 @@ As ferramentas de edição na interface [!DNL Assets] permitem executar pequenos
 
    ![Opções de rotação no sentido horário e anti-horário](assets/do-not-localize/rotate-options.png)
 
-1. Clique nas opções apropriadas **[!UICONTROL Flip]** para inverter a imagem horizontalmente ![refletir a opção horizontal](assets/do-not-localize/flip-horizontal.png) ou verticalmente ![refletir a opção vertical](assets/do-not-localize/flip-vertical.png).
+1. Clique nas opções apropriadas **[!UICONTROL Flip]** se desejar virar a imagem horizontalmente ![refletir a opção horizontal](assets/do-not-localize/flip-horizontal.png) ou verticalmente ![refletir a opção vertical](assets/do-not-localize/flip-vertical.png).
 
 1. Para concluir a edição de imagem, clique em **[!UICONTROL Finish]** ![Finish option](assets/do-not-localize/check-ok-done-icon.png). Clicar em **Finish** também inicia a regeneração de representações.
 
@@ -730,7 +730,7 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
 
 1. Adicione um comentário na caixa **[!UICONTROL Comentário]** na parte inferior da linha do tempo. Como alternativa, marque uma área na imagem e adicione uma anotação na caixa de diálogo **[!UICONTROL Adicionar anotação]**.
 
-1. Para notificar um usuário sobre uma anotação, especifique o endereço de email do usuário e adicione o comentário. Por exemplo, para notificar Aaron MacDonald sobre uma anotação, digite @aa. As dicas para todos os usuários correspondentes são exibidas em uma lista. Selecione o endereço de e-mail de Aaron na lista para marcá-la com o comentário. Da mesma forma, é possível marcar mais usuários em qualquer lugar dentro da anotação, antes ou depois dela.
+1. Para notificar um usuário sobre uma anotação, especifique o endereço de email do usuário e adicione o comentário. Por exemplo, para notificar Aaron MacDonald sobre uma anotação, digite @aa. As dicas para todos os usuários correspondentes são exibidas em uma lista. Selecione o endereço de email de Aaron na lista para marcar a pessoa com o comentário. Da mesma forma, é possível marcar mais usuários em qualquer lugar dentro da anotação, antes ou depois dela.
 
    ![Especifique o endereço de email do usuário e adicione um comentário para notificar o usuário](assets/annotate-gif.gif)
 
@@ -780,7 +780,7 @@ As anotações de vídeo são suportadas apenas em navegadores com formatos de v
 1. Na interface do Experience Manager, escolha **[!UICONTROL Linha do tempo]**.
 1. Na lista **[!UICONTROL Exibir todos]** na linha do tempo, selecione **[!UICONTROL Comentários]** para filtrar os resultados com base em anotações.
 
-   Clique em um comentário no painel **[!UICONTROL Linha do tempo]** para exibir a anotação correspondente na imagem.
+   Clique em um comentário no painel **[!UICONTROL Linha do tempo]** se desejar visualizar a anotação correspondente na imagem.
 
    ![Painel Linha do tempo para exibir a anotação na imagem](assets/timeline-view-annotations.png)
 
@@ -826,7 +826,7 @@ Para imprimir as anotações e o status de revisão, clique em **[!UICONTROL Imp
    >
    >Se o ativo tiver subativos, é possível imprimir todos os subativos junto com suas anotações específicas em toda a página.
 
-   Para modificar a aparência do arquivo PDF renderizado, por exemplo, a cor da fonte, o tamanho e o estilo, a cor de fundo dos comentários e status, abra a **[!UICONTROL Configuração do PDF de anotação]** no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotar](/help/assets/manage-assets.md#annotating).
+   Para editar a aparência do arquivo PDF renderizado, por exemplo, a cor, o tamanho e o estilo da fonte, abra a **[!UICONTROL Configuração do PDF de anotação]** no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotar](/help/assets/manage-assets.md#annotating).
 
    ![Configuração para imprimir anotação de ativo no documento PDF](assets/annotation-print-pdf-config.png)
 
@@ -840,12 +840,12 @@ Se um ativo incluir anotações em idiomas estrangeiros (especialmente idiomas n
    * Na opção de diretório Fontes do sistema , especifique o caminho completo para o diretório de fontes em seu sistema. Por exemplo, se você for um usuário do Mac, poderá especificar o caminho como */Library/Fonts* na opção de diretório Fontes do sistema. [!DNL Experience Manager] busca as fontes desse diretório.
    * Crie um diretório chamado `fonts` dentro da pasta `crx-quickstart`. O CQ-DAM-Handler-Gibson Font Manager Service busca automaticamente as fontes no local `crx-quickstart/fonts`. Você pode substituir esse caminho padrão de dentro da opção de diretório Fontes do Adobe Server.
 
-   * Crie uma nova pasta para fontes em seu sistema e armazene as fontes desejadas na pasta . Em seguida, especifique o caminho completo para essa pasta na opção de diretório Fontes do cliente .
+   * Crie uma pasta para fontes em seu sistema e armazene as fontes desejadas na pasta . Em seguida, especifique o caminho completo para essa pasta na opção de diretório Fontes do cliente .
 
 1. Acesse a configuração do PDF de anotação no URL `https://[aem_server]:[4502]/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig`.
 1. Configure o PDF de anotação com o conjunto correto de tipos de letra como segue:
 
-   * Inclua a string `<font_family_name_of_custom_font, sans-serif>` na opção de família de fontes. Por exemplo, se você deseja imprimir anotações no CJK (chinês, japonês e coreano), inclua a string `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` na opção família de fontes. Se quiser imprimir anotações em hindi, baixe a fonte apropriada e configure a família de fontes como Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
+   * Inclua a string `<font_family_name_of_custom_font, sans-serif>` na opção de família de fontes. Por exemplo, se você deseja imprimir anotações no CJK (chinês, japonês e coreano), inclua a string `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` na opção família de fontes. Se quiser imprimir anotações em hindi, baixe a fonte apropriada e configure a família de fontes como Arial® Unicode MS®, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
 1. Reinicie a implantação [!DNL Experience Manager].
 
