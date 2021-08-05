@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User,Admin
 feature: Metadados
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
+source-git-commit: d3fcf3e55af1c57bed1db9191aa76576d3bedb29
 workflow-type: tm+mt
-source-wordcount: '3547'
-ht-degree: 8%
+source-wordcount: '3597'
+ht-degree: 7%
 
 ---
 
@@ -28,6 +28,8 @@ Para exibir e editar a página de propriedades de um ativo, siga estas etapas:
    ![Guia Básico das Propriedades do ativo, onde o tipo de ativo não pode ser alterado](assets/asset-properties-basic-tab.png)
 
    *Figura: Guia Básico em  [!UICONTROL Propriedades] do ativo.*
+
+   Certifique-se de que apenas uma propriedade esteja mapeada para um campo enquanto você cria ou edita o esquema de metadados.
 
    Para modificar o tipo MIME de um ativo, use um formulário de esquema de metadados personalizado ou modifique um formulário existente. Consulte [Editar esquema de metadados Forms](#edit-metadata-schema-forms) para obter mais informações. Se você modificar o esquema de metadados de um tipo MIME, o layout da página de propriedades dos ativos e todos os subtipos serão modificados. Por exemplo, modificar um esquema jpeg em `default/image` modifica apenas o layout de metadados (propriedades de ativos) para ativos com o tipo MIME `image/jpeg`. No entanto, se você editar o esquema padrão, suas alterações modificarão o layout de metadados para todos os tipos de ativos.
 
@@ -99,13 +101,13 @@ A guia **[!UICONTROL Criar formulário]** lista os itens de formulário que voc�
 
 #### Editar o componente de metadados {#edit-the-metadata-component}
 
-Para editar as propriedades de um componente de metadados no formulário, clique no componente para editar todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Settings]**.
+Para editar as propriedades de um componente de metadados no formulário, clique no componente para editar todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Settings]**. É recomendável mapear apenas um campo para uma determinada propriedade no esquema de metadados. Caso contrário, o campo adicionado mais recente mapeado para a propriedade será escolhido pelo sistema.
 
 **Rótulo** do campo: O nome da propriedade de metadados exibida na página de propriedades do ativo.
 
 **Mapear para propriedade**: Essa propriedade especifica o caminho relativo ou o nome do nó do ativo, onde ele é salvo no repositório CRX. Ela começa com `./` para indicar que o caminho está no nó do ativo.
 
-A seguir estão os valores válidos para essa propriedade:
+Veja a seguir os exemplos de valores válidos para uma propriedade:
 
 * `./jcr:content/metadata/dc:title`: armazena o valor no nó de metadados do ativo como a propriedade `dc:title`.
 
