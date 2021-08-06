@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuração,Modo Scene7
-source-git-commit: 9cca48f13f2e6f26961cff86d71f342cab422a78
+source-git-commit: 5769ddeefe2d01d32bb9a0611dc06af68a848936
 workflow-type: tm+mt
-source-wordcount: '6856'
+source-wordcount: '6941'
 ht-degree: 4%
 
 ---
@@ -161,16 +161,21 @@ Se quiser personalizar ainda mais a configuração e configuração do Dynamic M
 
 No modo Dynamic Media - Scene7, o tamanho padrão do arquivo de upload de ativos é de 2 GB ou menos. No entanto, opcionalmente, é possível configurar o upload de ativos com mais de 2 GB e até 15 GB.
 
-Esteja ciente dos seguintes pré-requisitos e pontos se deseja usar esse recurso:
+Se você pretende usar esse recurso, esteja ciente dos seguintes pré-requisitos e pontos:
 
-* Você deve estar executando o Experience Manager 6.5 com Service Pack 6.5.4.0 ou posterior.
-* [O ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) download do Acesso binário direto do Oak está habilitado.
+* Você deve estar executando o Experience Manager 6.5 com Service Pack 6.5.4.0 ou posterior no modo Dynamic Media - Scene7.
+* Esse grande recurso de upload só é compatível com clientes [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html).
+* Certifique-se de que a instância do Experience Manager esteja configurada com o armazenamento Amazon S3 ou Microsoft® Azure Blob.
 
-   Para ativar, defina a propriedade `presignedHttpDownloadURIExpirySeconds > 0` na configuração do armazenamento de dados. O valor deve ser longo o suficiente para baixar binários maiores e possivelmente tentar novamente.
+   >[!NOTE]
+   Configure o armazenamento do Azure Blob com ambas as chaves de acesso (chave1 e chave2) porque esse recurso de upload grande não é compatível com o AzureSas na configuração de armazenamento do Blob.
+
+* O [Download de Acesso Binário Direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) do Oak está ativado (o *Upload de Acesso Binário Direto* do Oak não é necessário).
+
+   Para habilitar o download do Acesso binário direto, defina a propriedade `presignedHttpDownloadURIExpirySeconds > 0` na configuração do armazenamento de dados. O valor deve ser longo o suficiente para baixar binários maiores e possivelmente tentar novamente.
 
 * Os ativos com mais de 15 GB não são carregados. (O limite de tamanho é definido na etapa 8 abaixo.)
-* Quando o workflow Scene7 Reprocess Assets é acionado em uma pasta, ele reprocessa os ativos grandes já carregados que estão na pasta. No entanto, ele faz upload de ativos grandes que não existem na empresa do Scene7.
-* Os uploads grandes funcionam somente para cargas únicas de ativos, não no caso em que o fluxo de trabalho é acionado em uma pasta.
+* Quando o workflow **[!UICONTROL Dynamic Media Reprocess]** de ativos é acionado em uma pasta, ele reprocessa todos os ativos grandes que já estão sincronizados com a empresa Dynamic Media. No entanto, se algum ativo grande ainda não estiver sincronizado na pasta, ele não fará upload do ativo. Portanto, para sincronizar ativos grandes existentes no Dynamic Media, você pode executar o fluxo de trabalho de **[!UICONTROL Dynamic Media Reprocess]** ativos em ativos individuais.
 
 **Para configurar o Dynamic Media - Modo Scene7 para upload de ativos com mais de 2 GB:**
 
@@ -237,7 +242,7 @@ Você pode inserir um valor de até 15 GB (`2013265920` bytes). Nesse caso, os a
 1. Na caixa de diálogo **[!UICONTROL Propriedades da etapa]**, na guia **[!UICONTROL Comum]**, no cabeçalho **[!UICONTROL Configurações avançadas]**, no campo **[!UICONTROL Tempo limite]**, digite um valor de `18000` minutos (cinco horas). O padrão é `3600` minutos (uma hora).
 1. Selecione **[!UICONTROL OK]**.
 1. Selecione **[!UICONTROL Sync]**.
-1. Repita as etapas 14 a 21 para o modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]** e o modelo de fluxo de trabalho **[!UICONTROL Fluxo de trabalho de reprocessamento do Scene7]**.
+1. Repita as etapas 14 a 21 para o modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização DAM]** e o modelo de fluxo de trabalho **[!UICONTROL Dynamic Media Reprocess]**.
 
 ### (Opcional) Configuração e configuração do Dynamic Media - Configurações do modo Scene7 {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
