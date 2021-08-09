@@ -6,9 +6,9 @@ seo-description: Uma lista das plataformas de cliente e servidor compatíveis co
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 5ce72a51d69e97d7e07e9f734bfd7547fccd51f1
+source-git-commit: 0f0dfe8af5feed5227a091b89d65ef58d71eb299
 workflow-type: tm+mt
-source-wordcount: '3273'
+source-wordcount: '3266'
 ht-degree: 1%
 
 ---
@@ -132,7 +132,7 @@ A Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
  </tbody>
 </table>
 
-1. O suporte e a distribuição das Builds do Azul Zulu do OpenJDK, incluindo todas as atualizações de manutenção das versões LTS, serão suportados pelo Adobe diretamente para todos os clientes AEM que usam as Builds do Azul Zulu do OpenJDK, a partir da resp AEM 6.5 SP9. AEM 6.5 SP10 para AEM Forms Java EE. Consulte o [Suporte do Azul Java para Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) para obter mais informações.
+1. O suporte e a distribuição das Builds do Azul Zulu do OpenJDK, incluindo todas as atualizações de manutenção das versões LTS, serão suportados pelo Adobe diretamente para todos os clientes AEM que usam as Builds do Azul Zulu do OpenJDK, a partir da resp AEM 6.5 SP9. Consulte o [Suporte do Azul Java para Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) para obter mais informações.
 
 1. O Oracle migrou para um modelo de &quot;Suporte de longo prazo&quot; (LTS) dos produtos Oracle Java SE. O Java 9, o Java 10 e o Java 12 são versões não LTS do Oracle (consulte [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implantar AEM no ambiente de produção, o Adobe fornece suporte somente para as versões LTS do Java. O suporte e a distribuição do JDK Java SE do Oracle, incluindo todas as atualizações de manutenção de versões LTS além do fim das atualizações públicas, serão suportados pelo Adobe diretamente para todos os clientes AEM que usam a tecnologia Oracle Java SE **até dezembro de 2022**. Consulte o [Suporte do Oracle Java para Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) para obter mais informações.
 
@@ -190,7 +190,7 @@ Existem várias opções para implantar o repositório do Adobe Experience Manag
 >
 >**Atualmente, a maioria dos bancos de dados relacionais é compatível com o Nível-R no AEM 6.5, que vem com critérios de suporte e um programa de suporte, conforme indicado na descrição de Nível-R acima.**
 
-### Mecanismos de Servlet / Servidores de Aplicativos {#servlet-engines-application-servers}
+### Mecanismos de Servlet/Servidores de Aplicativos {#servlet-engines-application-servers}
 
 O Adobe Experience Manager pode ser executado como um servidor independente (o arquivo JAR de início rápido) ou como um aplicativo da Web em um servidor de aplicativos de terceiros (o arquivo WAR).
 
@@ -332,7 +332,7 @@ A interface do usuário do AEM é otimizada para telas maiores (geralmente noteb
 1. Versão de suporte estendido do Firefox [Saiba mais sobre isso em mozilla.org](https://www.mozilla.org/en-US/firefox/organizations/faq/)
 1. suporte para Apple iPad
 
-### Navegadores compatíveis com sites {#supported-browsers-for-websites}
+### Navegadores compatíveis para sites {#supported-browsers-for-websites}
 
 Geralmente, o suporte de navegador para sites renderizados pelo AEM Sites depende da implementação de modelos de página de AEM, design e saída de componente e, portanto, está sob o controle da parte que implementa essas partes.
 
@@ -374,7 +374,7 @@ por exemplo, `https://www.yourserver.com:4502`
 * o caso padrão de `localhost` será interpretado para instalações de rede IPv4 e IPv6
 por exemplo, `https://localhost:4502`
 
-### Requisitos para AEM complemento Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
+### Requisitos do AEM complemento Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
 
 AEM Dynamic Media está desativado por padrão. Consulte aqui para [ativar o Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
@@ -450,7 +450,7 @@ Para Windows x86:
 * 10.9.x e posterior
 * Somente suportado para fins de avaliação e demonstração
 
-### Requisitos do Gerador de PDF do AEM Forms {#requirements-for-aem-forms-pdf-generator}
+### Requisitos do gerador de PDF para AEM Forms {#requirements-for-aem-forms-pdf-generator}
 
 <table>
  <tbody>
@@ -510,7 +510,7 @@ Para Windows x86:
 
 
 
-### Requisitos para o AEM Forms Designer {#requirements-for-aem-forms-designer}
+### Requisitos do AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server ou Microsoft® Windows® 10
 * Processador de 1 GHz ou mais rápido com suporte para PAE, NX e SSE2.
