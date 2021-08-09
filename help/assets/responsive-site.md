@@ -10,26 +10,26 @@ discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 feature: Gerenciamento de ativos
 role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 12%
+source-wordcount: '336'
+ht-degree: 9%
 
 ---
 
-# Entrega de imagens otimizadas para um site responsivo {#delivering-optimized-images-for-a-responsive-site}
+# Fornecer imagens otimizadas para um site responsivo {#delivering-optimized-images-for-a-responsive-site}
 
 Use o recurso de código responsivo quando quiser compartilhar o código para serviço responsivo com seu desenvolvedor da Web. Você copia o código responsivo (**[!UICONTROL RESS]**) para a área de transferência para compartilhá-lo com o desenvolvedor da Web.
 
-Esse recurso faz sentido usar se o site estiver em um WCM de terceiros. No entanto, se seu site estiver em AEM, um servidor de imagem externo renderiza a imagem e a fornece à página da Web.
+Esse recurso faz sentido usar se o site estiver em um WCM de terceiros. No entanto, se seu site estiver no Adobe Experience Manager, um servidor de imagem externo renderiza a imagem e a fornece à página da Web.
 
-Consulte também [Incorporação do visualizador de vídeo em uma página da Web](embed-code.md).
+Consulte também [Incorporar o visualizador de vídeo em uma página da Web](embed-code.md).
 
 Consulte também [Vincular URLs ao seu Aplicativo Web](linking-urls-to-yourwebapplication.md).
 
 **Para fornecer imagens otimizadas para um site responsivo:**
 
-1. Navegue até a imagem para a qual deseja fornecer o código responsivo e, no menu suspenso, toque em **[!UICONTROL Representações]**.
+1. Navegue até a imagem para a qual deseja fornecer o código responsivo e, no menu suspenso, selecione **[!UICONTROL Representações]**.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -43,12 +43,12 @@ Consulte também [Vincular URLs ao seu Aplicativo Web](linking-urls-to-yourwebap
    >
    >Dynamic Media - O modo híbrido requer a publicação de predefinições de imagens; Dynamic Media - O modo Scene7 publica automaticamente predefinições de imagens.
 
-1. Toque em **[!UICONTROL RESS]**.
+1. Selecione **[!UICONTROL RESS]**.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
 1. Na caixa de diálogo **[!UICONTROL Incorporar imagem responsiva]**, selecione e copie o texto do código responsivo e o cole no site para acessar o ativo responsivo.
-1. Edite os pontos de interrupção padrão no código incorporado para corresponder aos do site responsivo diretamente no código. Além disso, teste as diferentes resoluções de imagem que estão sendo veiculadas em diferentes pontos de interrupção da página.
+1. Edite os pontos de interrupção padrão no código incorporado para corresponder aos pontos de interrupção do site responsivo, diretamente no código. Além disso, teste as diferentes resoluções de imagem que estão sendo veiculadas em diferentes pontos de interrupção da página.
 
 ## Usar HTTP/2 para fornecer ativos da Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
