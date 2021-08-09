@@ -6,7 +6,7 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
-source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 21%
@@ -81,7 +81,7 @@ ht-degree: 21%
    + [Invalidar o cache CDN por meio do Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
    + [Invalidar o cache CDN por meio do Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Instale o Feature Pack 18912 para migração de ativos em massa](bulk-ingest-migrate.md)
-   + [Trabalho com seletores](working-with-selectors.md)
+   + [Trabalhar com seletores](working-with-selectors.md)
 + Estender ativos {#extending}
    + [Personalizar e estender [!DNL Assets]](extending-assets.md)
    + [Processar ativos usando manipuladores de mídia e fluxos de trabalho](media-handlers.md)
