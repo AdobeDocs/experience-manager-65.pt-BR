@@ -10,10 +10,10 @@ discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 feature: Gerenciamento de ativos
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: b0286341c1b643bd39a3009185c0d4c8d76ccba5
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 13%
+source-wordcount: '114'
+ht-degree: 14%
 
 ---
 
@@ -25,7 +25,7 @@ Ao visualizar, você também pode aplicar predefinições de imagens (somente pa
 
 Informações gerais sobre o gerenciamento de ativos podem ser encontradas em [Gerenciar ativos](/help/assets/manage-assets.md).
 
-Os tópicos a seguir descrevem o que é necessário fazer para gerenciar os ativos do Dynamic Media:
+Os seguintes tópicos descrevem como gerenciar ativos do Dynamic Media:
 
 * [Práticas recomendadas para otimização da qualidade de imagens](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Visualização de ativos do Dynamic Media](/help/assets/previewing-assets.md)
