@@ -11,10 +11,10 @@ docset: aem65
 role: User, Admin
 feature: Fluxo De Trabalho,Gerenciamento De Ativos,Representações
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '1379'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ Ao usar estratégias consistentes e apropriadas de nomenclatura de arquivos e pa
 >
 >O mesmo é verdadeiro mesmo quando você move ativos entre duas pastas que têm o mesmo perfil atribuído a ele.
 
-## Reprocessando ativos em uma pasta {#reprocessing-assets}
+## Reprocessar ativos em uma pasta {#reprocessing-assets}
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Você pode executar o fluxo de trabalho de reprocessamento em um ativo para o qu
 
 Opcionalmente, é possível ajustar o tamanho do lote do workflow de reprocessamento a partir de um padrão de 50 ativos até 1000 ativos. Ao executar o _Scene7: Fluxo de trabalho Reprocessar ativos_ em uma pasta, os ativos são agrupados em lotes e, em seguida, enviados ao servidor da Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados no Experience Manager. Se o tamanho do lote for grande, pode ocorrer um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, pode causar muitas viagens de ida e volta para o servidor do Dynamic Media.
 
-Consulte [Ajustar o tamanho do lote do workflow de reprocessamento](#adjusting-load).
+Consulte [Ajuste o tamanho do lote do workflow de reprocessamento](#adjusting-load).
 
 >[!NOTE]
 >
@@ -77,35 +77,35 @@ Consulte [Ajustar o tamanho do lote do workflow de reprocessamento](#adjusting-l
    * Se houver uma ou mais subpastas com ativos na pasta selecionada principal, o workflow reprocessará cada ativo na hierarquia de pastas.
    * Como prática recomendada, evite executar esse workflow em uma hierarquia de pastas que tenha mais de 1000 ativos.
 
-1. Próximo ao canto superior esquerdo da página, na lista suspensa, clique em **[!UICONTROL Linha do tempo]**.
-1. Próximo ao canto inferior esquerdo da página, à direita do campo Comentário , clique no ícone do carrinho ( **^** ) .
+1. Próximo ao canto superior esquerdo da página, na lista suspensa, selecione **[!UICONTROL Linha do tempo]**.
+1. Próximo ao canto inferior esquerdo da página, à direita do campo Comentário , selecione o ícone do carrinho ( **^** ) .
 
    ![Reprocessar fluxo de trabalho de ativos 1](/help/assets/assets/reprocess-assets1.png)
 
-1. Clique em **[!UICONTROL Iniciar fluxo de trabalho]**.
+1. Selecione **[!UICONTROL Iniciar Fluxo de Trabalho]**.
 1. Na lista suspensa **[!UICONTROL Iniciar fluxo de trabalho]** , escolha **[!UICONTROL Scene7: Reprocessar Ativos]**.
 1. (Opcional) No campo de texto **Enter title of workflow** , digite um nome para o workflow. Você pode usar o nome para fazer referência à instância do workflow, se necessário.
 
    ![Reprocessar ativos 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Clique em **[!UICONTROL Iniciar]** e em **[!UICONTROL Confirmar]**.
+1. Selecione **[!UICONTROL Iniciar]** e selecione **[!UICONTROL Confirmar]**.
 
-   Para monitorar o fluxo de trabalho ou verificar seu progresso, na página do console Experience Manager, clique em **[!UICONTROL Tools]** > **[!UICONTROL Workflow]**. Na página Instâncias de fluxo de trabalho , selecione um fluxo de trabalho. Na barra de menus, clique em **[!UICONTROL Abrir Histórico]**. Você também pode encerrar, suspender ou renomear um fluxo de trabalho selecionado na mesma página Instâncias de fluxo de trabalho .
+   Para monitorar o fluxo de trabalho ou verificar seu progresso, na página do console Experience Manager, selecione **[!UICONTROL Tools]** > **[!UICONTROL Workflow]**. Na página Instâncias de fluxo de trabalho , selecione um fluxo de trabalho. Na barra de menus, selecione **[!UICONTROL Abrir Histórico]**. Você também pode encerrar, suspender ou renomear um fluxo de trabalho selecionado na mesma página Instâncias de fluxo de trabalho .
 
-### Ajustar o tamanho do lote do workflow de reprocessamento {#adjusting-load}
+### Ajuste o tamanho do lote do workflow de reprocessamento {#adjusting-load}
 
 (Opcional) O tamanho padrão do lote no fluxo de trabalho de reprocessamento é de 50 ativos por trabalho. Esse tamanho ideal do lote é regulado pelo tamanho médio do ativo e pelos tipos MIME de ativos em que o reprocessamento é executado. Um valor maior significa que você tem muitos arquivos em um único trabalho de reprocessamento. Assim, o banner de processamento permanece nos ativos do Experience Manager por um tempo maior. No entanto, se o tamanho médio do arquivo for pequeno - 1 MB ou menos - o Adobe recomenda que você aumente o valor para vários 100, mas nunca mais do que 1000. Se o tamanho médio do arquivo for grande, como centenas de megabytes, o Adobe recomenda diminuir o tamanho do lote para até 10.
 
 **Para ajustar opcionalmente o tamanho do lote do workflow de reprocessamento:**
 
-1. No Experience Manager, clique em **[!UICONTROL Adobe Experience Manager]** para acessar o console de navegação global e, em seguida, clique no ícone **[!UICONTROL Ferramentas]** (martelo) > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
+1. No Experience Manager, selecione **[!UICONTROL Adobe Experience Manager]** para acessar o console de navegação global e, em seguida, selecione o ícone **[!UICONTROL Ferramentas]** (martelo) > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
 1. Na página Modelos de fluxo de trabalho , na Exibição de cartão ou Exibição de lista, selecione **[!UICONTROL Scene7: Reprocessar Ativos]**.
 
    ![Página Modelos de fluxo de trabalho com o Scene7: Fluxo de trabalho Reprocessar ativos selecionado na Exibição de cartão](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Na barra de ferramentas, clique em **[!UICONTROL Editar]**. Uma nova guia do navegador abre o Scene7: Página de modelo de fluxo de trabalho Reprocessar ativos .
-1. Na Scene7: Reprocessar página do fluxo de trabalho Ativos , próximo ao canto superior direito, clique em **[!UICONTROL Editar]** para &quot;desbloquear&quot; o fluxo de trabalho.
-1. No fluxo de trabalho, selecione o componente Upload em lote do Scene7 para abrir a barra de ferramentas e clique em **[!UICONTROL Configurar]** na barra de ferramentas.
+1. Na barra de ferramentas, selecione **[!UICONTROL Editar]**. Uma nova guia do navegador abre o Scene7: Página de modelo de fluxo de trabalho Reprocessar ativos .
+1. Na Scene7: Reprocessar página do fluxo de trabalho Ativos , próximo ao canto superior direito, selecione **[!UICONTROL Editar]** para &quot;desbloquear&quot; o fluxo de trabalho.
+1. No fluxo de trabalho, selecione o componente Upload em lote do Scene7 para abrir a barra de ferramentas e selecione **[!UICONTROL Configurar]** na barra de ferramentas.
 
    ![Componente de upload em lote do Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
@@ -119,16 +119,16 @@ Consulte [Ajustar o tamanho do lote do workflow de reprocessamento](#adjusting-l
 
    ![Caixa de diálogo Propriedades](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. No canto superior direito da caixa de diálogo **[!UICONTROL Carregar em lote no Scene7 - Propriedades da etapa]**, clique em **[!UICONTROL Concluído]**.
+1. No canto superior direito da caixa de diálogo **[!UICONTROL Carregar em lote no Scene7 - Propriedades da etapa]**, selecione **[!UICONTROL Concluído]**.
 
-1. No canto superior direito da Scene7: Reprocessar página de modelo de fluxo de trabalho do Assets, clique em **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução do workflow é sincronizado e pronto para reprocessar ativos em uma pasta com êxito.
+1. No canto superior direito da Scene7: Reprocessar página de modelo de fluxo de trabalho do Assets, selecione **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução do workflow é sincronizado e pronto para reprocessar ativos em uma pasta com êxito.
 
-   ![Sincronização do modelo de fluxo de trabalho](/help/assets/assets-dm/reprocess-assets1.png)
+   ![Sincronizar o modelo de fluxo de trabalho](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Feche a guia do navegador que mostra a Scene7: Reprocessar modelo de fluxo de trabalho do Assets.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -139,10 +139,10 @@ Consulte [Ajustar o tamanho do lote do workflow de reprocessamento](#adjusting-l
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, select **[!UICONTROL Add]**. The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
+1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
+1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
