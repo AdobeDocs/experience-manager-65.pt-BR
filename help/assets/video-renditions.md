@@ -6,26 +6,26 @@ contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
 
 # Representações de vídeo {#video-renditions}
 
-O Adobe Experience Manager (AEM) Assets gera representações de vídeo para ativos de vídeo de vários formatos, incluindo OGG, FLV e assim por diante.
+O Adobe Experience Manager Assets gera representações de vídeo para ativos de vídeo de vários formatos, incluindo OGG, FLV e assim por diante.
 
-O AEM Assets suporta representações estáticas e dinâmicas (representações codificadas por DM) para ativos de mídia.
+O Experience Manager Assets oferece suporte a representações estáticas e dinâmicas (representações codificadas por DM) para ativos de mídia.
 
 As representações estáticas são geradas nativamente usando FFMPEG (instalado e disponível no caminho do sistema) e armazenadas no repositório de conteúdo.
 
 As representações codificadas em DM são armazenadas no servidor proxy e servidas no tempo de execução.
 
-AEM ativos fornecem suporte de reprodução para essas execuções no lado do cliente.
+Os Experience Manager Assets fornecem suporte de reprodução para essas representações no lado do cliente.
 
-Para exibir as representações de um ativo de vídeo específico, abra a página de ativos e toque no ícone Navegação global . Em seguida, escolha **[!UICONTROL Representações]** na lista.
+Para exibir as representações de um ativo de vídeo específico, abra a página de ativos e selecione o ícone Navegação global . Em seguida, escolha **[!UICONTROL Representações]** na lista.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
@@ -41,6 +41,6 @@ Após configurar o servidor proxy e criar perfis de vídeo, é possível incluir
 
 >[!NOTE]
 >
->A reprodução de áudio não funciona para arquivos OGG e WAV no Microsoft Internet Explorer 11. Um erro `Invalid Source` é exibido na página de detalhes do ativo para ativos com extensão OGG ou WAV.
+>A reprodução de áudio não funciona para arquivos OGG e WAV no Microsoft® Internet Explorer 11. Um erro `Invalid Source` é exibido na página de detalhes do ativo para ativos com extensão OGG ou WAV.
 >
->No MS Edge e no iPad, os arquivos OGG não são reproduzidos e geram um erro de formato incompatível.
+>No MS® Edge e iPad, os arquivos OGG não são reproduzidos e geram um erro de formato não suportado.
