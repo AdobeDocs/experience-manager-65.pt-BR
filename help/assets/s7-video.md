@@ -8,12 +8,13 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Vídeo
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 34%
+source-wordcount: '1564'
+ht-degree: 31%
 
 ---
 
@@ -45,7 +46,7 @@ Os seguintes formatos são compatíveis com o componente de vídeo do Scene7:
 * F4V H.264
 * MP4 H.264
 
-## Como decidir onde fazer upload de seu vídeo {#deciding-where-to-upload-your-video}
+## Decida onde fazer upload do vídeo {#deciding-where-to-upload-your-video}
 
 Para decidir onde fazer upload de seus ativos de vídeo, considere o seguinte:
 
@@ -70,11 +71,9 @@ Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos
 1. No Experience Manager, acesse os ativos de vídeo no WCM na guia **[!UICONTROL Scene7]** do Localizador de conteúdo.
 1. Crie com o componente **[!UICONTROL Scene7 Video]**.
 
-## Configurar a integração de vídeo do Scene7 {#configuring-integration-with-scene-video}
+## Configurar integração com o Scene7 Video {#configuring-integration-with-scene-video}
 
-Para configurar predefinições universais:
-
-1. Em **[!UICONTROL Serviços em nuvem]**, navegue até a configuração do **[!UICONTROL Scene7]** e clique em **[!UICONTROL Editar]**.
+1. Em **[!UICONTROL Cloud Services]**, navegue até a configuração **[!UICONTROL Scene7]** e selecione **[!UICONTROL Editar]**.
 1. Selecione a guia **[!UICONTROL Vídeo]**.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -93,16 +92,16 @@ Para configurar predefinições universais:
 
 1. Os perfis de codificação selecionados são aplicados automaticamente a todos os vídeos enviados por upload para a pasta de destino DAM CQ configurada para essa configuração de nuvem do Scene7. É possível configurar várias configurações de nuvem do Scene7 com diferentes pastas de destino para aplicar diversos perfis de codificação, conforme necessário.
 
-## Atualizar as predefinições de codificação e do visualizador {#updating-viewer-and-encoding-presets}
+## Atualizar predefinições do visualizador e de codificação {#updating-viewer-and-encoding-presets}
 
-Para atualizar o visualizador e as predefinições de codificação de vídeo porque as predefinições foram atualizadas no Scene7, navegue até a configuração do Scene7 na Configuração da nuvem e toque em **[!UICONTROL Atualizar as predefinições de codificação e do visualizador]**.
+Para atualizar o visualizador e as predefinições de codificação de vídeo porque as predefinições foram atualizadas no Scene7, navegue até a configuração do Scene7 na Configuração da nuvem e selecione **[!UICONTROL Atualizar as predefinições de codificação e do visualizador]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Upload do vídeo de origem primária para o Scene7 a partir do Adobe DAM {#uploading-your-master-video}
+## Faça upload do vídeo de origem primária para o Scene7 a partir do Adobe DAM {#uploading-your-master-video}
 
 1. Navegue até a pasta de destino DAM CQ onde você definiu as configurações de nuvem com os perfis de codificação do Scene7.
-1. Clique em **[!UICONTROL Upload]** para fazer upload do vídeo de origem primária. O upload e a codificação do vídeo são concluídos depois que o workflow [!UICONTROL Ativo de atualização DAM] é concluído e **[!UICONTROL Publicar no Scene7]** tem uma marca de seleção.
+1. Selecione **[!UICONTROL Upload]** para fazer upload do vídeo de origem primária. O upload e a codificação do vídeo são concluídos depois que o workflow [!UICONTROL Ativo de atualização DAM] é concluído e **[!UICONTROL Publicar no Scene7]** tem uma marca de seleção.
 
    >[!NOTE]
    >
@@ -140,9 +139,9 @@ A tabela a seguir fornece uma comparação de alto nível dos recursos suportado
 | Extensibilidade | Sim | Não |
 | Vídeo móvel | Sim | Sim |
 
-### Configuração {#setting-up}
+### Configurar {#setting-up}
 
-#### Criação de perfis de vídeo {#creating-video-profiles}
+#### Criar perfis de vídeo {#creating-video-profiles}
 
 As diferentes codificações de vídeo são criadas de acordo com as predefinições de codificação do S7 selecionadas na configuração de nuvem do S7. Para que o componente de vídeo de base os use, um perfil de vídeo deve ser criado para cada predefinição de codificação do S7 selecionada. Esse método permite que o componente de vídeo selecione as representações do DAM de acordo.
 
@@ -150,9 +149,9 @@ As diferentes codificações de vídeo são criadas de acordo com as predefiniç
 >
 >Os novos perfis de vídeo e as alterações a eles devem ser ativados para publicação.
 
-1. No Experience Manager, toque em **[!UICONTROL Ferramentas]** > **[!UICONTROL Console de configuração]**.
+1. No Experience Manager, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Console de Configuração]**.
 1. No **[!UICONTROL Console de Configuração]**, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL DAM]** > **[!UICONTROL Perfis de Vídeo]** na árvore de navegação.
-1. Crie um Perfil de vídeo S7. No menu **[!UICONTROL New]**., selecione **[!UICONTROL Criar página]** e selecione o modelo de Perfil de vídeo do Scene7. Forneça um nome para a nova página de perfil de vídeo e clique em **[!UICONTROL Criar]**.
+1. Crie um Perfil de vídeo S7. No menu **[!UICONTROL New]**., selecione **[!UICONTROL Criar página]** e selecione o modelo de Perfil de vídeo do Scene7. Dê um nome à nova página de perfil de vídeo e selecione **[!UICONTROL Criar]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -168,7 +167,7 @@ As diferentes codificações de vídeo são criadas de acordo com as predefiniç
 
    Repita essa etapa para todas as predefinições de codificação selecionadas na configuração de nuvem que você deseja usar no componente de vídeo.
 
-#### Configuração do design {#configuring-design}
+#### Configurar design {#configuring-design}
 
 O componente **[!UICONTROL Foundation Video]** deve saber quais perfis de vídeo usar para criar a lista de fontes de vídeo. Abra a caixa de diálogo Design dos componentes de vídeo e configure o design dos componentes para usar os novos perfis de vídeo.
 
