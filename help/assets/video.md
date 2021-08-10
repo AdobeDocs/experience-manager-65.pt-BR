@@ -12,9 +12,9 @@ docset: aem65
 feature: Gerenciamento de ativos
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '11702'
+source-wordcount: '11699'
 ht-degree: 5%
 
 ---
@@ -306,7 +306,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Ao codificar um arquivo de vídeo, use um arquivo de vídeo de origem com a maior qualidade possível. Evite usar arquivos de vídeo previamente codificados, pois esses arquivos já estão compactados, e uma codificação adicional criará um vídeo de qualidade inferior.
 
-* O Dynamic Media oferece suporte principalmente a vídeos de forma curta com uma duração máxima de 30 minutos.
+* O Dynamic Media oferece suporte a vídeos de forma curta com uma duração máxima de 30 minutos.
 * Você pode fazer upload de arquivos de vídeo de origem primária com até 15 GB cada.
 
 A tabela a seguir descreve o tamanho recomendado, a proporção e a taxa mínima de bits que seus arquivos de vídeo de origem devem ter antes de codificá-los:
@@ -572,7 +572,7 @@ A publicação de vídeos no YouTube requer um ou mais canais. Se você já crio
 
 1. Vá para [https://www.youtube.com](https://www.youtube.com/) e faça logon usando suas credenciais de conta do Google.
 1. No canto superior direito da página do YouTube, clique na imagem do perfil (também pode aparecer como uma letra dentro de um círculo colorido sólido) e clique em **[!UICONTROL YouTube settings]** (ícone de engrenagem redonda).
-1. Na página Visão geral , no cabeçalho Recursos adicionais, clique em **[!UICONTROL Ver todos os meus canais ou criar um novo canal]**.
+1. Na página Visão geral , no cabeçalho Recursos adicionais, clique em **[!UICONTROL Ver todos os meus canais ou criar um canal]**.
 1. Na página Canais , clique em **[!UICONTROL Criar um novo canal]**.
 1. Na página Conta de marca, no campo Nome da conta de marca , digite um nome de negócios ou qualquer outro nome de canal que você escolher onde deseja publicar seus ativos de vídeo e, em seguida, clique em **[!UICONTROL Criar]**.
 
@@ -1182,7 +1182,7 @@ Como você está usando um visualizador de vídeo HTML5, certifique-se de que o 
 
 Consulte [WebVTT: O formato de Rastreamento de texto do vídeo da Web](https://w3c.github.io/webvtt/)
 
-**Para adicionar marcadores de capítulo ao vídeo:**
+**Para adicionar navegação de capítulo de vídeo:**
 
 1. Salve o arquivo `.vtt` na codificação UTF8 para evitar problemas com a representação de caracteres no texto do título do capítulo.
 
@@ -1245,7 +1245,7 @@ Essas etapas se aplicam somente ao Dynamic Media em execução no modo &quot;Dyn
 1. Certifique-se de que você já fez o seguinte:
 
    * Uma pasta foi criada para os ativos de vídeo.
-   * [Aplicado um perfil de vídeo à pasta](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+   * [Aplique um perfil de vídeo à pasta](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    * [Carregou seus vídeos na pasta](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
