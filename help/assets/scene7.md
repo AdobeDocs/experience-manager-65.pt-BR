@@ -9,10 +9,11 @@ topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '2849'
+source-wordcount: '2850'
 ht-degree: 16%
 
 ---
@@ -31,7 +32,7 @@ Você pode visualizar ativos do Experience Manager publicados no Dynamic Media C
 
 Você pode publicar ativos digitais diretamente do Experience Manager para o Dynamic Media Classic e publicar ativos digitais do Dynamic Media Classic para o Experience Manager.
 
-Este documento descreve como publicar ativos digitais do Experience Manager para o Dynamic Media Classic e vice-versa. Os visualizadores também são descritos detalhadamente. Para obter informações sobre como configurar o Experience Manager para o Dynamic Media Classic, consulte [Integração do Dynamic Media Classic com o Experience Manager](/help/sites-administering/scene7.md).
+Este documento descreve como publicar ativos digitais do Experience Manager para o Dynamic Media Classic e vice-versa. Os visualizadores também são descritos detalhadamente. Para obter informações sobre como configurar o Experience Manager para o Dynamic Media Classic, consulte [Integrar o Dynamic Media Classic com Experience Manager](/help/sites-administering/scene7.md).
 
 Consulte também [Adicionar mapas de imagem](image-maps.md).
 
@@ -103,7 +104,7 @@ Adicionar um componente do Dynamic Media Classic (Scene7) a uma página é o mes
    >
    >Somente na interface de toque, você deve arrastar e soltar a imagem ou o vídeo no componente do Dynamic Media Classic que você colocou na página. Não há suporte para selecionar e editar o componente do Dynamic Media Classic e, em seguida, escolher o ativo.
 
-### Adicionar experiências de visualização interativas a um site responsivo {#adding-interactive-viewing-experiences-to-a-responsive-website}
+### Adicionar uma experiência de visualização interativa a um site responsivo {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
 Design responsivo para seus ativos significa que eles se adaptam dependendo de onde são exibidos. Com o design responsivo, os mesmos ativos podem ser exibidos de maneira eficaz em diversos dispositivos.
 
@@ -173,7 +174,7 @@ O componente **[!UICONTROL Image]** do Dynamic Media Classic permite adicionar a
 
 **[!UICONTROL Configuração do Dynamic Media Classic]**  - Selecione a configuração do Dynamic Media Classic que deseja usar para buscar predefinições de imagens ativas do SPS.
 
-**[!UICONTROL Predefinição de imagem]**  - Selecione uma predefinição de imagem existente no menu suspenso. Se a predefinição de imagem que você está procurando não estiver visível, você deve torná-la visível. Consulte [Gerenciar predefinições de imagens](/help/assets/managing-image-presets.md). Não é possível selecionar uma predefinição do visualizador se você estiver usando uma predefinição de imagem e vice-versa.
+**[!UICONTROL Predefinição de imagem]**  - Selecione uma predefinição de imagem existente no menu suspenso. Se a predefinição de imagem que você está procurando não estiver visível, você deve torná-la visível. Consulte [Gerenciar predefinições de imagem](/help/assets/managing-image-presets.md). Não é possível selecionar uma predefinição do visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 
 **[!UICONTROL Formato de saída]**  - Selecione o formato de saída da imagem, por exemplo jpeg. Dependendo do formato de saída selecionado, há opções de configuração adicionais. Consulte [Práticas recomendadas de predefinição de imagem](/help/assets/managing-image-presets.md#image-preset-options).
 
