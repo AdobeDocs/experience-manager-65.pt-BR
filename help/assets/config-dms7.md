@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuração,Modo Scene7
-source-git-commit: 5769ddeefe2d01d32bb9a0611dc06af68a848936
+source-git-commit: 6c042d2c95f18ae4a0d5fd57a048aa12761495b6
 workflow-type: tm+mt
 source-wordcount: '6941'
 ht-degree: 4%
@@ -168,7 +168,7 @@ Se você pretende usar esse recurso, esteja ciente dos seguintes pré-requisitos
 * Certifique-se de que a instância do Experience Manager esteja configurada com o armazenamento Amazon S3 ou Microsoft® Azure Blob.
 
    >[!NOTE]
-   Configure o armazenamento do Azure Blob com ambas as chaves de acesso (chave1 e chave2) porque esse recurso de upload grande não é compatível com o AzureSas na configuração de armazenamento do Blob.
+   Configure o armazenamento do Azure Blob com uma chave de acesso e uma chave secreta porque esse recurso de upload grande não é compatível com o AzureSas na configuração de armazenamento do Blob.
 
 * O [Download de Acesso Binário Direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) do Oak está ativado (o *Upload de Acesso Binário Direto* do Oak não é necessário).
 
