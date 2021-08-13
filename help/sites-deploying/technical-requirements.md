@@ -6,9 +6,9 @@ seo-description: Uma lista das plataformas de cliente e servidor compatíveis co
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 0f0dfe8af5feed5227a091b89d65ef58d71eb299
+source-git-commit: f3c99936c1bbfd8a942ffefb1fcd3c2c0b3e9094
 workflow-type: tm+mt
-source-wordcount: '3266'
+source-wordcount: '3270'
 ht-degree: 1%
 
 ---
@@ -107,7 +107,7 @@ A Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
   </tr>
   <tr>
    <td>JDK Java SE 11 do Oracle - 64 bits</td>
-   <td>A: Suportado [2]</td>
+   <td>A: Suportado [2] [4]</td>
   </tr>
   <tr>
    <td>JDK Java SE 10 do Oracle</td>
@@ -137,6 +137,8 @@ A Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
 1. O Oracle migrou para um modelo de &quot;Suporte de longo prazo&quot; (LTS) dos produtos Oracle Java SE. O Java 9, o Java 10 e o Java 12 são versões não LTS do Oracle (consulte [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implantar AEM no ambiente de produção, o Adobe fornece suporte somente para as versões LTS do Java. O suporte e a distribuição do JDK Java SE do Oracle, incluindo todas as atualizações de manutenção de versões LTS além do fim das atualizações públicas, serão suportados pelo Adobe diretamente para todos os clientes AEM que usam a tecnologia Oracle Java SE **até dezembro de 2022**. Consulte o [Suporte do Oracle Java para Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) para obter mais informações.
 
 1. O IBM JRE só é compatível com o WebSphere Application Server.
+
+1. [!DNL Oracle Java SE 11 JDK] não é compatível com o  [!DNL Experience Manager Forms].
 
 
 ### Armazenamento e persistência {#storage-persistence}
