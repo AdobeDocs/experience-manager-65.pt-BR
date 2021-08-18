@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 626ffab5cd1b5ba9c0bd6928911aa09e9450e5fc
+source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
 workflow-type: tm+mt
-source-wordcount: '1905'
+source-wordcount: '1921'
 ht-degree: 2%
 
 ---
@@ -144,11 +144,11 @@ O Shareable Content Object Reference Model (SCORM) é uma coleção de padrões 
 
 O mecanismo AEM Communities SCORM é necessário para o recurso [enablement](/help/communities/overview.md#enablement-community). Pacotes de pontuação compatíveis com AEM 6.5 Comunidades:
 
-* [cq-social-scorm-package, versão 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) que inclui o mecanismo  [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) .
+* [cq-social-scorm-package, versão 2.3.7](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg) que inclui o mecanismo  [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) .
 
 **Para instalar um pacote SCORM**
 
-1. Instale o [cq-social-scorm-package, versão 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) do Compartilhamento de pacotes.
+1. Instale o [cq-social-scorm-package, versão 2.3.7](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg) do Compartilhamento de pacotes.
 1. Baixe `/libs/social/config/scorm/database_scormengine_data.sql` da instância do cq e execute-a no servidor mysql para criar um esquema scormEngineDB atualizado.
 1. Adicione `/content/communities/scorm/RecordResults` na propriedade Caminhos excluídos no filtro CSRF de `https://<hostname>:<port>/system/console/configMgr` em editores.
 
