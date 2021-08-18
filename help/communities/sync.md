@@ -12,10 +12,10 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: f4f4be3d9885723953b1306ff25a52d27799aa93
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '2508'
-ht-degree: 1%
+source-wordcount: '2490'
+ht-degree: 2%
 
 ---
 
@@ -119,7 +119,7 @@ A instância de autor consulta o endpoint de exportador de editores. Sempre que 
 Para configurar a configuração dos agentes de sincronização do Apache Sling:
 
 1. Faça logon com privilégios de administrador na instância do autor do AEM.
-1. Acesse o [Console da Web](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html). Por exemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Acesse o [Console da Web](/help/sites-deploying/configuring-osgi.md). Por exemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Localize **Apache Sling Distribution Agent - Sync Agents Fatory**.
 
    * Selecione a configuração existente a ser aberta para edição (ícone de lápis).
@@ -165,7 +165,7 @@ Essa configuração é usada para configurar os dados que você deseja sincroniz
 Para configurar os dados (caminhos de nó) para sincronizar:
 
 1. Faça logon com privilégios de administrador na sua instância de publicação.
-1. Acesse o [Console da Web](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
+1. Acesse o [Console da Web](/help/sites-deploying/configuring-osgi.md).
 
    Por exemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
@@ -188,7 +188,7 @@ Se alterar a associação de um grupo em um editor não atualizar sua associaç�
 Para garantir a sincronização de membros:
 
 1. Faça logon com privilégios de administrador na sua instância de publicação.
-1. Acesse o [Console da Web](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
+1. Acesse o [Console da Web](/help/sites-deploying/configuring-osgi.md).
 
    Por exemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
