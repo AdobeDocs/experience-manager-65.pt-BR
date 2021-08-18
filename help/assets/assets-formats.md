@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Gerenciamento de ativos,Representações
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f0a0ea53675afa16463a3cf863257020ba5374d3
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1555'
 ht-degree: 10%
 
 ---
@@ -217,12 +217,8 @@ Além da funcionalidade acima, considere o seguinte:
 | AVI | Intercalação A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | WebM | WebM | VP8 do Google | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
-| MTS | AVCHD | H264/AVC | - |
 | MKV | Matroska | H264/AVC | - |
-| R3D, RM | Vídeo vermelho bruto | MJPEG 2000 | - |
 | RAM, RM | RealVideo | Não suportado | G2 real (RV20), Real 8 (RV30), Real 10 (RV40) |
-| FLAC | Flac nativo | Codec de áudio sem perdas gratuito | - |
 | MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 | - |
 
 ## Formatos de arquivo compatíveis {#supported-archive-formats}
