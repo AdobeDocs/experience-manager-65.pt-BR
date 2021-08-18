@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: d42057a2f8ce50332f404388fd1cfc9b6a154765
+source-git-commit: 626ffab5cd1b5ba9c0bd6928911aa09e9450e5fc
 workflow-type: tm+mt
 source-wordcount: '1905'
 ht-degree: 2%
@@ -167,8 +167,9 @@ Para que a coleção SRP (MSRP ou DSRP) ofereça suporte a pesquisa multilíngue
 
 O download MLS avançado (também conhecido como &quot;phasetwo&quot;) está disponível no repositório do Adobe :
 
-* AEM-SOLR-MLS-phasetwo(
-Para obter o pacote MLS avançado, consulte [AEM MLS avançado](deploy-communities.md#aem-advanced-mls) na seção de implantação da documentação.
+* AEM-SOLR-MLS-phasetwo
+
+   Para obter o pacote MLS avançado, consulte [AEM MLS avançado](deploy-communities.md#aem-advanced-mls) na seção de implantação da documentação.
 
    * Versão 1.2.40, 6 de abril de 2016
    * Baixar AEM-SOLR-MLS-phasetwo-1.2.40.zip
