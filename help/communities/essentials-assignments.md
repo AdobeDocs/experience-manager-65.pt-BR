@@ -1,6 +1,6 @@
 ---
-title: Essenciais de atribuições
-seo-title: Essenciais de atribuições
+title: Fundamentos das Atribuições
+seo-title: Fundamentos das Atribuições
 description: Visão geral do recurso Atribuições para comunidades de ativação
 seo-description: Visão geral do recurso Atribuições para comunidades de ativação
 uuid: e49fce26-1091-4f37-93e8-c4ec85371811
@@ -10,36 +10,35 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: 75cef5da-4f93-4721-99c0-ad44c8ab76d4
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '222'
 ht-degree: 13%
 
 ---
 
-
-# Essenciais de Atribuições {#assignments-essentials}
+# Fundamentos das Atribuições {#assignments-essentials}
 
 Leia para saber mais sobre as informações essenciais para trabalhar com o recurso de atribuições dos sites [comunidade de ativação](/help/communities/overview.md#enablement-community).
 
 O recurso de atribuições é a capacidade de atribuir recursos de ativação e caminhos de aprendizado aos membros das comunidades de ativação.
 
-## Essentials for Client-Side {#essentials-for-client-side}
+## Fundamentos para o lado do cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/capacitação/componentes/hbs/myassign</td>
+   <td>social/ativation/components/hbs/myassigned</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>inclusivo</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>incondicional</strong></a></td>
    <td>Não</td>
   </tr>
   <tr>
    <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.ativlement.hbs.breadcrumbs<br /> cq.social.ativlement.hbs.myassign<br /> cq.social.ativlement.hbs.resource<br /> cq.social.ativlement.hbs.learningpath</td>
+   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -58,7 +57,7 @@ O recurso de atribuições é a capacidade de atribuir recursos de ativação e 
 
 ### Status de conclusão e sucesso {#completion-and-success-status}
 
-O status de conclusão e sucesso é usado em relatórios e banners de status em Atribuições.
+Status de conclusão e sucesso são usados em relatórios e banners de status em Atribuições.
 
 Status de conclusão:
 
@@ -73,7 +72,7 @@ Status de sucesso:
 * Aprovado
 * Falha
 
-As únicas combinações possíveis de Conclusão e Status de sucesso são:
+As únicas combinações possíveis de Conclusão e Status de Sucesso são:
 
 | **Conclusão** | **Sucesso** |
 |---|---|
@@ -82,7 +81,7 @@ As únicas combinações possíveis de Conclusão e Status de sucesso são:
 | Concluir | Aprovado |
 | Concluir | Falha |
 
-## Essentials for Server-Side {#essentials-for-server-side}
+## Fundamentos para o lado do servidor {#essentials-for-server-side}
 
 ### Função das atribuições {#assignments-function}
 
@@ -92,7 +91,6 @@ Uma estrutura de site da comunidade que inclui a função [Atribuições](/help/
 
 * [API de ativação](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [API do relatórios](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
+* [API de relatórios](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [API do Relatórios Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
-
+* [API de relatórios do Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/model/api/package-summary.html)
