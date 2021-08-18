@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: f4f4be3d9885723953b1306ff25a52d27799aa93
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '2508'
 ht-degree: 1%
 
 ---
@@ -164,7 +164,7 @@ Essa configuração é usada para configurar os dados que você deseja sincroniz
 
 Para configurar os dados (caminhos de nó) para sincronizar:
 
-1. Faça logon com privilégios de administrador na instância do autor.
+1. Faça logon com privilégios de administrador na sua instância de publicação.
 1. Acesse o [Console da Web](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
 
    Por exemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
@@ -187,7 +187,7 @@ Se alterar a associação de um grupo em um editor não atualizar sua associaç�
 
 Para garantir a sincronização de membros:
 
-1. Faça logon com privilégios de administrador na instância do autor do AEM.
+1. Faça logon com privilégios de administrador na sua instância de publicação.
 1. Acesse o [Console da Web](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
 
    Por exemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
