@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 role: Admin
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: d42057a2f8ce50332f404388fd1cfc9b6a154765
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: '3288'
 ht-degree: 4%
 
 ---
@@ -130,7 +130,7 @@ O painel Design contém dois subpainéis para selecionar o tema e o banner de ma
 
 ![sitetheme](assets/sitetheme.png)
 
-A estrutura usa [Twitter Bootstrap](https://twitterbootstrap.org/) para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de site da comunidade selecionado ou um tema de Bootstrap pode ser carregado.
+A estrutura usa `Twitter Bootstrap` para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de site da comunidade selecionado ou um tema de Bootstrap pode ser carregado.
 
 Quando selecionado, o tema será sobreposto com uma marca de seleção azul opaca.
 
