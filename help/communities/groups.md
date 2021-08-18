@@ -13,9 +13,9 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: d42057a2f8ce50332f404388fd1cfc9b6a154765
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1674'
 ht-degree: 2%
 
 ---
@@ -113,7 +113,7 @@ A raiz padrão é o site principal, mas a raiz pode ser movida para qualquer loc
 
 ![communitygrouptheme](assets/communitygrouptheme.png)
 
-A estrutura usa [Twitter Bootstrap](https://twitterbootstrap.org/) para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de grupo da comunidade selecionado ou um tema de Bootstrap pode ser carregado.
+A estrutura usa `Twitter Bootstrap` para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar o estilo do modelo de grupo da comunidade selecionado ou um tema de Bootstrap pode ser carregado.
 
 Quando selecionado, o tema será sobreposto com uma marca de verificação azul opaca.
 
