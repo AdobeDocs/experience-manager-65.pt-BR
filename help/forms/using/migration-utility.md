@@ -13,7 +13,7 @@ discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 3%
@@ -191,7 +191,7 @@ Ao executar o Utilitário de migração pela primeira vez, um log é criado com 
 
 ### Tarefas da família após executar o utilitário de migração {#housekeepingtasks}
 
-Depois de executar o utilitário de Migração, siga as seguintes tarefas de manutenção: [](../../forms/using/import-export-forms-templates.md)
+Depois de executar o utilitário de Migração, siga as seguintes tarefas de manutenção:
 
 1. Certifique-se de que a versão XFA dos layouts e dos layouts de fragmento seja a 3.3 ou posterior. Se você estiver usando layouts e layouts de fragmento de uma versão mais antiga, poderá haver problemas na renderização da carta. Para atualizar a versão de um XFA mais antigo para a versão mais recente, execute as seguintes etapas:
 
