@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuração
+exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '3444'
+source-wordcount: '3437'
 ht-degree: 2%
 
 ---
-
 
 # Replicação{#replication}
 
@@ -36,7 +35,7 @@ As solicitações são [enfileiradas](/help/sites-deploying/osgi-configuration-s
 >
 >Para várias instâncias de publicação, os dados do usuário são distribuídos pelo Sling quando [User Synchronization](/help/sites-administering/sync.md) está ativado.
 
-## Replicação do autor para publicar {#replicating-from-author-to-publish}
+## Replicação do autor para publicação {#replicating-from-author-to-publish}
 
 A replicação para uma instância de publicação ou dispatcher ocorre em várias etapas:
 
@@ -63,7 +62,7 @@ Em outros casos, como para recursos do Communities (por exemplo, fóruns, blogs,
 
 AEM [Communities](/help/communities/overview.md) nunca usa replicação para UGC. Em vez disso, a implantação do Communities requer um armazenamento comum para UGC (consulte [Community Content Storage](/help/communities/working-with-srp.md)).
 
-### Replicação - pronto para uso {#replication-out-of-the-box}
+### Replicação - pronta para uso {#replication-out-of-the-box}
 
 O site we-retail incluído em uma instalação padrão de AEM pode ser usado para ilustrar a replicação.
 
@@ -107,7 +106,7 @@ Os detalhes disso (configuração e logs) podem ser acessados no console Ferrame
 
    `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
-#### Agentes de replicação - pronto para uso {#replication-agents-out-of-the-box}
+#### Agentes de replicação - prontos para uso {#replication-agents-out-of-the-box}
 
 Os seguintes agentes estão disponíveis em uma instalação padrão de AEM:
 
@@ -357,13 +356,13 @@ Essas configurações são usadas para definir acionadores para replicação aut
 
 Para obter informações sobre como conectar agentes de replicação à instância de publicação usando MSSL, consulte [Replicando Usando SSL Mútuo](/help/sites-deploying/mssl-replication.md).
 
-### Configurar seus agentes de replicação no ambiente de criação {#configuring-your-replication-agents-from-the-author-environment}
+### Configurar os agentes de replicação no ambiente de criação {#configuring-your-replication-agents-from-the-author-environment}
 
 Na guia Ferramentas no ambiente de criação, é possível configurar agentes de replicação que residem no ambiente de criação (**Agentes no autor**) ou no ambiente de publicação (**Agentes no publish**). Os procedimentos a seguir ilustram a configuração de um agente para o ambiente do autor, mas podem ser usados para ambos.
 
 >[!NOTE]
 >
->Quando um dispatcher lida com solicitações HTTP para instâncias de autor ou publicação, a solicitação HTTP do agente de replicação deve incluir o cabeçalho PATH. Além do procedimento a seguir, você deve adicionar o cabeçalho PATH à lista de dispatchers dos cabeçalhos do cliente. (Consulte [/clientheaders (Cabeçalhos do Cliente)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders). [](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
+>Quando um dispatcher lida com solicitações HTTP para instâncias de autor ou publicação, a solicitação HTTP do agente de replicação deve incluir o cabeçalho PATH. Além do procedimento a seguir, você deve adicionar o cabeçalho PATH à lista de dispatchers dos cabeçalhos do cliente. (Consulte [/clientheaders (Cabeçalhos do Cliente)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 
 
 1. Acesse a guia **Ferramentas** no AEM.
@@ -501,7 +500,7 @@ Os agentes padrão são incluídos na instalação. No entanto, determinada conf
 
 O agente de replicação **Dispatcher Flush** não está ativo no autor. Você pode acessar a mesma página no ambiente de publicação usando o URI equivalente; por exemplo, `https://localhost:4503/etc/replication/agents.publish/flush.html`.
 
-### Controlando o Acesso aos Agentes de Replicação {#controlling-access-to-replication-agents}
+### Controlando o acesso aos agentes de replicação {#controlling-access-to-replication-agents}
 
 O acesso às páginas usadas para configurar os agentes de replicação pode ser controlado usando permissões de página de usuário e/ou grupo no nó `etc/replication`.
 
@@ -574,7 +573,7 @@ Em seguida, ele compacta todos os itens de replicação em um pacote, que é rep
 
 O editor descompactará todos os itens, salvá-los e relatará ao autor.
 
-### Configurando a Replicação em Lote {#configuring-batch-replication}
+### Configuração da Replicação em Lote {#configuring-batch-replication}
 
 1. Ir para `http://serveraddress:serverport/siteadmin`
 1. Pressione o ícone **[!UICONTROL Ferramentas]** no lado superior da tela
