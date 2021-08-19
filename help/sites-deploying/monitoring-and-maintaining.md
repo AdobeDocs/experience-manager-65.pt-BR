@@ -10,17 +10,16 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuração
+exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
+source-git-commit: 83383d46a4200eb3d21deee15c71032314694860
 workflow-type: tm+mt
-source-wordcount: '5892'
+source-wordcount: '5878'
 ht-degree: 0%
 
 ---
 
-
-# Monitorar e manter sua instância de AEM{#monitoring-and-maintaining-your-aem-instance}
+# Monitorar e manter sua instância do AEM{#monitoring-and-maintaining-your-aem-instance}
 
 Após a implantação de suas instâncias de AEM, determinadas tarefas serão necessárias para monitorar e manter a operação, o desempenho e a integridade.
 
@@ -119,7 +118,7 @@ A ferramenta **Limpar versões** está disponível no console **[Ferramentas](/h
 
 **** PurgeLaunch a limpeza das versões no nó definido pelo Caminho de início.
 
-### Limpando Versões de um Site {#purging-versions-of-a-web-site}
+### Limpeza de versões de um site {#purging-versions-of-a-web-site}
 
 Para limpar versões de um site, proceda da seguinte maneira:
 
@@ -140,7 +139,7 @@ Para limpar versões de um site, proceda da seguinte maneira:
 >
 >Os nós removidos não podem ser revertidos sem restaurar o repositório. Você deve cuidar da sua configuração, de modo que recomendamos que você sempre execute um exercício de simulação antes de limpar.
 
-### Análise do Console {#analyzing-the-console}
+### Análise do console {#analyzing-the-console}
 
 Os processos **Execução de prática** e **Limpar** listam todos os nós que foram processados. Durante o processo, um nó pode ter um dos seguintes status:
 
@@ -189,7 +188,7 @@ A rotação do arquivo de log refere-se ao processo que limita o crescimento do 
 >
 >Se você atualizar a instalação do AEM, observe que qualquer arquivo de log existente que não for mais usado pelo AEM permanecerá no disco. Você pode removê-los sem riscos. Todas as novas entradas de log serão gravadas nos novos arquivos de log.
 
-### Encontrar os arquivos de log {#finding-the-log-files}
+### Encontrar arquivos de log {#finding-the-log-files}
 
 Vários arquivos de log são mantidos no servidor de arquivos onde você instalou o AEM:
 
@@ -510,7 +509,7 @@ Para monitorar um agente de replicação:
 
 Novamente, você pode desenvolver uma solução para detectar todos os agentes de replicação (localizados em `/etc/replication/author` ou `/etc/replication/publish`), em seguida, verificar o status do agente ( `enabled`, `disabled`) e a fila subjacente ( `active`, `idle`, `blocked`).
 
-## Monitorar o desempenho {#monitoring-performance}
+## Monitorar desempenho {#monitoring-performance}
 
 [A ](/help/sites-deploying/configuring-performance.md) Otimização de desempenho é um processo interativo que recebe foco durante o desenvolvimento. Após a implantação, geralmente é revisado após intervalos ou eventos específicos.
 
@@ -646,7 +645,7 @@ Alguns deles dependerão do seu sistema operacional.
   <tr>
    <td><a href="#information-collection">Coleta de informações</a></td>
    <td>O estado contínuo da instalação.</td>
-   <td>Saber o máximo possível sobre sua instalação também pode ajudá-lo a rastrear o que pode ter causado uma mudança no desempenho e se essas alterações são justificadas. Essas métricas precisam ser coletadas em intervalos regulares para que você possa ver facilmente as alterações significativas.</td>
+   <td>Saber o máximo possível sobre sua instalação também pode ajudá-lo a rastrear o que pode ter causado uma mudança no desempenho e se essas alterações são justificadas. Essas métricas precisam ser coletadas em intervalos regulares para que você possa ver facilmente alterações significativas.</td>
   </tr>
  </tbody>
 </table>
@@ -854,7 +853,7 @@ Os números acima são obtidos de um notebook MAcBook Pro padrão (meados de 201
 
 `apachebench` também exibe o tempo por solicitação como a média, em todas as solicitações simultâneas; consulte  `Time per request: 54.595 [ms]` (média, em todas as solicitações simultâneas). Você pode alterar o valor do parâmetro de simultaneidade `-c` (número de várias solicitações para executar de cada vez) para ver quaisquer efeitos.
 
-### Contadores de solicitação {#request-counters}
+### Contadores de solicitações {#request-counters}
 
 As informações sobre o tráfego de solicitação (número de solicitações durante um período de tempo específico) fornecem uma indicação da carga em sua instância. Essas informações podem ser extraídas de [request.log](#interpreting-the-request-log), embora o uso de contadores automatize a coleta de dados para permitir que você veja:
 
@@ -870,7 +869,7 @@ As informações recolhidas podem ser utilizadas para indicar:
 * uma instância redundante
 * qualquer reinicialização (contador redefinido para 0)
 
-### Comentários HTML {#html-comments}
+### Comentários em HTML {#html-comments}
 
 Recomenda-se que cada projeto inclua `html comments` para desempenho do servidor. É possível encontrar muitos bons exemplos públicos; selecione uma página, abra a fonte da página para visualizar e role até o final, código como o seguinte pode ser visto:
 
@@ -896,7 +895,7 @@ O comando da ferramenta `jconsole` está disponível com o JDK.
 
    Depois disso, você poderá selecionar outras opções.
 
-### Monitorar o desempenho usando (J)VisualVM {#monitoring-performance-using-j-visualvm}
+### Monitorar o desempenho usando o (J)VisualVM {#monitoring-performance-using-j-visualvm}
 
 Desde o JDK 1.6, o comando da ferramenta `jvisualvm` está disponível. Depois de instalar o JDK 1.6, você pode:
 
@@ -923,7 +922,7 @@ Você pode usar essa ferramenta para gerar despejos de encadeamento e despejos d
 
 ### Coleta de informações {#information-collection}
 
-Saber o máximo possível sobre sua instalação pode ajudá-lo a rastrear o que pode ter causado uma mudança de desempenho e se essas alterações são justificadas. Essas métricas precisam ser coletadas em intervalos regulares para que você possa ver facilmente as alterações significativas.
+Saber o máximo possível sobre sua instalação pode ajudá-lo a rastrear o que pode ter causado uma mudança de desempenho e se essas alterações são justificadas. Essas métricas precisam ser coletadas em intervalos regulares para que você possa ver facilmente alterações significativas.
 
 As seguintes informações podem ser úteis:
 
@@ -1063,7 +1062,7 @@ Para determinar as solicitações por hora que você tem no sistema de criação
 
 Repita o procedimento acima na sua instância de publicação.
 
-## Analisando Cenários Específicos {#analyzing-specific-scenarios}
+## Análise de cenários específicos {#analyzing-specific-scenarios}
 
 Veja a seguir uma lista de sugestões sobre o que verificar se você começa a enfrentar determinados problemas de desempenho. A lista não é (infelizmente) totalmente abrangente.
 
@@ -1088,7 +1087,7 @@ Se a CPU do seu sistema estiver constantemente em execução a 100%, consulte:
 
    * [Analisar processos lentos e bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
-### Memória insuficiente {#out-of-memory}
+### Sem memória {#out-of-memory}
 
 Embora tais erros devam ser detectados durante o Desenvolvimento e o Teste, alguns cenários podem escapar.
 
@@ -1114,7 +1113,7 @@ Se o sistema estiver ficando sem espaço em disco ou se você perceber que o dis
    * [Configuração de registro do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [Gerenciador da biblioteca HTML CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
    * [Filtro de depuração do CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level) [](/help/sites-deploying/configuring.md#loggersandwritersforindividualservices)
+   * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
 * Se e como você configurou [Limpeza de Versão](/help/sites-deploying/version-purging.md)
 * Base de conhecimento:
@@ -1122,7 +1121,7 @@ Se o sistema estiver ficando sem espaço em disco ou se você perceber que o dis
    * [Muitos arquivos abertos](https://helpx.adobe.com/experience-manager/kb/TooManyOpenFiles.html)
    * [O diário consome muito espaço em disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
-### Degradação regular de desempenho {#regular-performance-degradation}
+### Degradação regular do desempenho {#regular-performance-degradation}
 
 Se o desempenho da sua instância se deteriorar após cada reinicialização (às vezes uma semana ou mais tarde), o seguinte poderá ser verificado:
 
