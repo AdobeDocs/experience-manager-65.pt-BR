@@ -8,15 +8,14 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: 812d1a43176a75ff22e3a0bc07bc658cb5070a62
 workflow-type: tm+mt
-source-wordcount: '3009'
+source-wordcount: '3002'
 ht-degree: 4%
 
 ---
 
-# Administração de comércio eletrônico genérico {#administering-generic-ecommerce}
+# Administração de eCommerce genérico {#administering-generic-ecommerce}
 
 A solução genérica de AEM fornece métodos para gerenciar as informações comerciais contidas no repositório (em vez de usar um mecanismo de comércio externo). Isso inclui:
 
@@ -129,7 +128,7 @@ Um scaffold é necessário para cada tipo de produto distinto. O scaffold apropr
 
 1. Clique em **Importar Produtos**.
 
-### Criando Informações do Produto {#creating-product-information}
+### Criação de informações sobre o produto {#creating-product-information}
 
 >[!NOTE]
 >
@@ -185,7 +184,7 @@ Um scaffold é necessário para cada tipo de produto distinto. O scaffold apropr
 
 ### Mostrando as referências do produto {#showing-product-references}
 
-#### Mostrando referências de produto - IU otimizada ao toque {#showing-product-references-touch-optimized-ui}
+#### Referências de produto exibidas - IU otimizada ao toque {#showing-product-references-touch-optimized-ui}
 
 1. Usando o console **Produtos** (via **Commerce**), navegue até as informações do seu produto.
 1. Abra o trilho secundário para Referências com o ícone:
@@ -372,7 +371,7 @@ Você pode observá-los no Console da Web em eventos OSGI ( `/system/console/eve
 
 >[!NOTE]
 >
->Leia também [Manuseio de evento em AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
+>Leia também [Manuseio de evento em AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/).
 
 ### Imagem com Links para adicionar ao carrinho {#image-with-add-to-cart-links}
 
@@ -617,7 +616,7 @@ Para implantar um catálogo:
 
 ### Removendo Vouchers {#removing-vouchers}
 
-#### Remover Vouchers - Interface Clássica {#removing-vouchers-classic-ui}
+#### Remover Vouchers - Interface clássica {#removing-vouchers-classic-ui}
 
 Para tornar um comprovante indisponível para os clientes, é possível:
 
@@ -655,9 +654,9 @@ No site de demonstração (Geometrixx Outdoors - Inglês), é possível ver o fo
 >
 >As informações de pedido do cliente são mantidas em seus diretórios domésticos e são expostas pelo Histórico de pedidos de sua conta. Essas informações são publicadas junto com o resto do diretório inicial.
 
-### Criando Informações do Pedido {#creating-order-information}
+### Criando Informações de Pedido {#creating-order-information}
 
-#### Criação de informações de pedido - IU otimizada ao toque {#creating-order-information-touch-optimized-ui}
+#### Criar informações de pedido - IU otimizada ao toque {#creating-order-information-touch-optimized-ui}
 
 1. Usando o console **Orders**, navegue até o local desejado.
 1. Use o ícone **Criar** para selecionar **Criar pedido**.
