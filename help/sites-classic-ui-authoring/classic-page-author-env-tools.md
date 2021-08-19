@@ -10,20 +10,19 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 86%
 
 ---
 
-
 # Criação - o Ambiente e as ferramentas {#authoring-the-environment-and-tools}
 
 O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo. As ferramentas fornecidas são acessadas de vários consoles e editores de página.
 
-## Administração de site {#site-administration}
+## Adminsitração do site {#site-administration}
 
 O console **Sites** permite gerenciar e navegar em seu site. Usando dois painéis, a estrutura de seu site pode ser expandida e as ações executadas no elemento necessário:
 
@@ -35,11 +34,11 @@ Há um editor de página separado com a interface de usuário clássica, com o u
 
 `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-![chlimage_1-189](assets/chlimage_1-109.png)
+![chlimage_1-109](assets/chlimage_1-109.png)
 
-## Acessar ajuda {#accessing-help}
+## Acessar ajuda   {#accessing-help}
 
-Vários recursos de **Ajuda** podem ser acessados diretamente do AEM:
+Vários recursos de **Ajuda** podem ser acessados diretamente de dentro do AEM:
 
 Além de acessar a [ ajuda nas barras de ferramentas do console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), você também pode acessá-la do sidekick (usando o  ícone ?) ao editar uma página:
 
@@ -63,23 +62,23 @@ Use o Localizador de conteúdo para localizar uma gama de recursos. Quando aprop
 * [Documentos](#finding-documents)
 * [Filmes](#finding-movies)
 * [Navegador Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
-* [](#products) [Páginas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
+* [Páginas](#finding-pages)
 
 * [Parágrafos](#referencing-paragraphs-from-other-pages)
-* [Produtos](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#products)
+* [Produtos](#products)
 * Ou para [navegar pelo site através da estrutura de repositório](#the-content-finder)
 
 Com todas as opções, você pode [pesquisar itens específicos](#the-content-finder).
 
-### Finding Images {#finding-images}
+### Pesquisar imagens {#finding-images}
 
 Esta guia lista as imagens no repositório.
 
 Depois que você criar um parágrafo de Imagem na página, poderá arrastar um item e soltá-lo no parágrafo.
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-191](assets/chlimage_1-111.png)
 
-### Finding Documents {#finding-documents}
+### Pesquisar documentos {#finding-documents}
 
 Esta guia lista os documentos no repositório.
 
@@ -87,7 +86,7 @@ Depois que você criar um parágrafo de Download na página, poderá arrastar um
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
-### Finding Movies {#finding-movies}
+### Pesquisar filmes {#finding-movies}
 
 Esta guia lista os filmes (por exemplo, itens Flash) no repositório.
 
@@ -103,11 +102,11 @@ Esta guia lista os produtos. Depois que você criar um parágrafo apropriado (po
 
 ### Encontrar páginas {#finding-pages}
 
-Esta guia mostra todas as páginas. Clique em qualquer página para abri-la para edição.
+Esta guia mostra todas as páginas. Clique duas vezes em qualquer página para abri-la para edição.
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
-### Referencing Paragraphs from other Pages {#referencing-paragraphs-from-other-pages}
+### Referência a parágrafos de outras páginas {#referencing-paragraphs-from-other-pages}
 
 Esta guia permite procurar outra página. Todos os parágrafos dessa página serão listados. Em seguida, você pode arrastar um parágrafo para a página atual, isso criará uma referência para o parágrafo original.
 
@@ -145,14 +144,14 @@ os seguintes padrões de pesquisa vão encontrá-la (e qualquer outra imagem cor
 
 * `name:*nmv*`
 * `name:AD*`
-a correspondência de caracteres  ** não diferencia maiúsculas e minúsculas.
+a correspondência de caracteres  ** não diferencia maiúsculas de minúsculas.
 
 * `name:ad?nm??is.*`
 você pode usar qualquer número de curingas em um query.
 
 >[!NOTE]
 >
->Você também pode usar a pesquisa [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
+>Também é possível usar a pesquisa [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
 
 ## Exibição de referências {#showing-references}
 
@@ -187,7 +186,7 @@ O **Log de auditoria** pode ser acessado na guia **Informações** do sidekick. 
 
 O console Site também [fornece informações sobre o status atual da página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), como publicação, modificação, bloqueio, livecopy etc.
 
-## Modos de página    {#page-modes}
+## Modos de página   {#page-modes}
 
 Durante a edição de uma página com a interface de usuário clássica, há vários modos que podem ser acessados com o uso de ícones na parte inferior do sidekick:
 
@@ -206,9 +205,9 @@ Os ícones na parte inferior do Sidekick são usados para alternar os modos de t
 >Também há outras opções disponíveis:
 >
 >* [Andaime](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
->* [ClientContext](/help/sites-administering/client-context.md)
->* Websites - abrirá o console Websites.
->* Recarregar - atualizará a página.
+* [ClientContext](/help/sites-administering/client-context.md)
+* Sites - abrirá o console Websites.
+* Recarregar - atualizará a página.
 
 
 ## Atalhos de teclado {#keyboard-shortcuts}
