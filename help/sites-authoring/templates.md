@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
+exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '4901'
 ht-degree: 95%
 
 ---
-
 
 # Criação de modelos de páginas  {#creating-page-templates}
 
@@ -46,7 +45,7 @@ Para obter informações detalhadas sobre como os modelos editáveis funcionam a
 
 >[!CAUTION]
 >
->As páginas e modelos criados com o **Console de Modelos** não devem ser usados com a interface clássica, e esse uso não é suportado.
+>As páginas e os modelos criados com o **Console de Modelos** não devem ser usados com a interface do usuário clássica, e esse uso não é suportado.
 
 ## Antes de começar {#before-you-start}
 
@@ -111,11 +110,11 @@ O AEM agora oferece dois tipos básicos de modelos:
    * Eles são [fornecidos por seus desenvolvedores](/help/sites-developing/page-templates-static.md) e, portanto, não podem ser criados ou editados por autores.
    * Eles são copiados para criar a nova página, mas nenhuma conexão dinâmica existe após essa ação (embora o nome do modelo seja registrado para a informações).
    * Use o [modo Design](/help/sites-authoring/default-components-designmode.md) para continuar com as propriedades de design.
-   * Como a edição de modelos estáticos é a tarefa exclusiva de um desenvolvedor, consulte o documento do desenvolvedor [Modelos de página - Estático](/help/sites-developing/page-templates-static.md) para obter mais informações.
+   * Como editar modelos estáticos é a tarefa exclusiva de um desenvolvedor, consulte o documento do desenvolvedor [Modelos de página - Estáticos](/help/sites-developing/page-templates-static.md) para obter mais informações.
 
 Por definição, o console de modelo e o editor de modelo permitem apenas a criação e edição de modelos editáveis. Portanto, este documento foca exclusivamente nos modelos editáveis.
 
-### Usar um modelo para criar uma página  {#using-a-template-to-create-a-page}
+### Usar um modelo para criar uma página {#using-a-template-to-create-a-page}
 
 Ao usar um modelo para [criar uma nova página](/help/sites-authoring/managing-pages.md#creating-a-new-page), não há diferenças visíveis e nenhuma indicação entre os modelos estáticos e editáveis. Para o autor da página, o processo é transparente.
 
@@ -128,7 +127,7 @@ Ao criar um novo modelo editável:
    * Ou diretamente em: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * É possível [criar uma pasta para os modelos](#creating-a-template-folder-admin) se necessário
-* [Criar um novo modelo](#creatinganewtemplateauthor), inicialmente vazio   [](#templatedefinitions)
+* [Criar um novo modelo](#creatinganewtemplateauthor), inicialmente vazio 
 
 * [Definir propriedades adicionais](#definingtemplatepropertiesauthor) para o modelo, se necessário
 * [Editar o modelo](#editingtemplates) para definir:
@@ -148,7 +147,7 @@ Ao criar um novo modelo editável:
 
 >[!CAUTION]
 >
->Nunca insira qualquer informação que precise ser [internacionalizada](/help/sites-developing/i18n.md) em um modelo. Para fins de internalização, os recursos de [localização dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) são recomendados.
+>Nunca insira qualquer informação que precise ser [internacionalizada](/help/sites-developing/i18n.md) em um modelo. Para fins de internalização, os recursos de [localização dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) são recomendados.
 
 ### Criação de uma pasta de modelo - Administrador {#creating-a-template-folder-admin}
 
@@ -184,7 +183,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
    >
    >Quando um modelo novo for criado, ele será marcado como **Rascunho** no console. Isso indica que ainda não está disponível para uso por autores da página.
 
-### Definir propriedades do modelo - Autor do modelo    {#defining-template-properties-template-author}
+### Definir propriedades do modelo - Autor do modelo   {#defining-template-properties-template-author}
 
 Um modelo pode ter as seguintes propriedades:
 
@@ -235,7 +234,7 @@ Para definir a miniatura do modelo:
 
 1. Quando estiver satisfeito com a miniatura, clique ou toque em **Salvar e fechar**.
 
-### Ativar e permitir um modelo - Autor do modelo    {#enabling-and-allowing-a-template-template-author}
+### Ativar e permitir um modelo - Autor do modelo   {#enabling-and-allowing-a-template-template-author}
 
 Para poder usar um modelo ao criar uma página é necessário:
 
@@ -297,7 +296,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
 
 1. Selecione **Publicar** na barra de ferramentas para concluir a ação.
 
-## Editar modelos - Autores do modelo    {#editing-templates-template-authors}
+## Editar modelos - Autores do modelo   {#editing-templates-template-authors}
 
 Ao criar ou editar um modelo há vários aspectos que podem ser definidos. A edição modelos é semelhante à criação de página.
 
@@ -623,7 +622,7 @@ O design da página, incluindo as bibliotecas do lado do cliente e as políticas
 
 Para acessar a caixa de diálogo **Design da página**:
 
-1. No **Editor de modelos**, selecione **Informações da página** na barra de ferramentas e, em seguida, **Design da página** para abrir a caixa de diálogo.
+1. No **Editor de modelo**, selecione **Informações da página** na barra de ferramentas, em seguida **Design da página** para abrir a caixa de diálogo.
 1. A caixa de diálogo **Design da página** é aberta e dividida em duas seções:
 
    * A metade esquerda define as [políticas da página](/help/sites-authoring/templates.md#page-policies)
@@ -696,7 +695,7 @@ Usando a opção **Propriedades da página inicial**, é possível definir as [p
 
 1. Confirme suas definições em **Concluído**.
 
-## Práticas recomendadas    {#best-practices}
+## Práticas recomendadas   {#best-practices}
 
 Ao criar modelos você deve considerar:
 
