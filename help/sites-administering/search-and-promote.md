@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
 exl-id: 15f45978-a983-49a0-91cf-c7610fc37eef
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '875'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,6 @@ Configure uma ou mais conexões com o Search &amp; Promote para que suas página
    >
    >usando suas credenciais válidas do Search&amp;Promote (email/senha).
    >Em seguida, você deve examinar o url na barra de endereços do navegador, que deve ser semelhante a:
-   >[](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
    >[https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
