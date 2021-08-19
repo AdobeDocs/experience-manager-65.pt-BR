@@ -7,15 +7,15 @@ uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
+source-git-commit: 61691c300322edcdee33b121ca400e4c89256e45
 workflow-type: tm+mt
 source-wordcount: '1726'
 ht-degree: 1%
 
 ---
 
-# SAP Commerce Cloud{#sap-commerce-cloud}
+# Commerce Cloud SAP{#sap-commerce-cloud}
 
 Após a instalação, você pode configurar sua instância:
 
@@ -27,7 +27,7 @@ Após a instalação, você pode configurar sua instância:
 1. [Configure o Importador de Catálogo](#configure-the-catalog-importer).
 1. Use o importador [para importar o catálogo](#catalog-import) para um local específico no AEM.
 
-## Configurar a pesquisa por Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors} Facetada
+## Configurar a pesquisa falhada para Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
@@ -166,7 +166,7 @@ A estrutura a ser gerada ao importar pode ser configurada para:
 
 Ao trabalhar com AEM, existem vários métodos de gestão das definições de configuração para esses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos. Consulte também o console para obter uma lista completa de parâmetros configuráveis e seus padrões.
 
-## Configure os atributos do produto para carregar {#configure-the-product-attributes-to-load}
+## Configure os atributos do produto para serem carregados {#configure-the-product-attributes-to-load}
 
 O analisador de resposta pode ser configurado para definir as propriedades e os atributos a serem carregados para produtos (variante):
 
@@ -309,8 +309,6 @@ O processo de importação pode demorar muito tempo, portanto, como uma extensã
        /etc/commerce/products
    ```
 
-   ` [](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
-
 ## Configurar o Importador de Catálogo {#configure-the-catalog-importer}
 
 O catálogo de híbridos pode ser importado para o AEM, usando o importador de lote para catálogos de híbridos, categorias e produtos.
@@ -407,7 +405,7 @@ Para remover um ou mais produtos do catálogo:
       1. implementar o catálogo apropriado novamente
       1. atualizar a página de categoria apropriada
 
-## Adicionar a característica do histórico de pedidos ao contexto do cliente {#add-order-history-trait-to-the-client-context}
+## Adicionar característica do histórico de pedidos ao contexto do cliente {#add-order-history-trait-to-the-client-context}
 
 Para adicionar o histórico de pedidos ao [contexto de cliente](/help/sites-developing/client-context.md):
 
