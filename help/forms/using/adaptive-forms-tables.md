@@ -8,15 +8,14 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulários adaptáveis
+exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '2430'
 ht-degree: 0%
 
 ---
-
 
 # Tabelas em formulários adaptáveis{#tables-in-adaptive-forms}
 
@@ -130,7 +129,7 @@ Você pode ver as propriedades de estilo na barra lateral.
 
 >[!NOTE]
 >
->Você pode alterar o tema de cor para linhas de cabeçalho e de corpo alterando os valores das variáveis MENOS. Para obter mais informações, consulte [Temas no AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
+>Você pode alterar o tema de cor para linhas de cabeçalho e de corpo alterando os valores das variáveis MENOS. Para obter mais informações, consulte [Temas no AEM Forms](/help/forms/using/themes.md).
 
 ## Adicionar ou excluir uma linha dinamicamente {#add-or-delete-a-row-dynamically}
 
@@ -170,7 +169,7 @@ A expressão de visibilidade de uma tabela ou linha pode ser definida na guia Pr
 
 Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
-## Layouts móveis {#mobile-layouts}
+## Layouts para dispositivos móveis {#mobile-layouts}
 
 Tabelas em formulários adaptáveis fornecem experiência inigualável em dispositivos móveis devido a seus layouts fluidos e responsivos. O AEM Forms oferece dois tipos de layouts móveis para tabelas - Cabeçalhos à esquerda e Colapsíveis.
 
@@ -188,7 +187,7 @@ Exibição de desktop de uma tabela com Cabeçalho no layout esquerdo
 
 Exibição móvel de uma tabela com Cabeçalho no layout esquerdo
 
-### Layout de colunas recolhível {#collapsible-columns-layout}
+### Layout de colunas recolhidas {#collapsible-columns-layout}
 
 No layout Collapsible column , as colunas na tabela são recolhidas para mostrar uma ou duas colunas, dependendo do tamanho do dispositivo, enquanto outras colunas são recolhidas. Você pode clicar no ícone recolher/expandir para exibir outras colunas na tabela.
 
@@ -314,4 +313,3 @@ Além disso, você pode arrastar e soltar um grupo de elementos de tipo complexo
 * Cada célula de corpo em uma tabela padrão tem um nome de elemento predefinido associado a ela. Se outra tabela for adicionada no formulário adaptável, as células de corpo padrão na nova tabela terão o mesmo nome de elemento que na primeira tabela. Nesse cenário, os dados gerados ao enviar o formulário incluirão dados nas células de corpo padrão de apenas uma das tabelas. Portanto, renomeie os nomes de elemento das células de corpo padrão para mantê-las exclusivas nas tabelas e evitar perda de dados.
 
    Observe que isso se aplica somente às células de corpo padrão. Se você adicionar mais linhas ou colunas a uma tabela, o gerará automaticamente nomes de elemento exclusivos para células de corpo não padrão.
-
