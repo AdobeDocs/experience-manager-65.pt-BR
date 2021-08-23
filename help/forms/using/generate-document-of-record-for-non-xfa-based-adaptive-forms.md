@@ -9,17 +9,16 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formulários adaptáveis
+exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
+source-git-commit: a81367c2a07031d8c6cf549050a1445ff0c1a8dc
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 3%
+source-wordcount: '3508'
+ht-degree: 2%
 
 ---
 
-
-# Gerar Documento de Registro para formulários adaptáveis{#generate-document-of-record-for-adaptive-forms}
+# Gerar documento de registro para formulários adaptáveis{#generate-document-of-record-for-adaptive-forms}
 
 ## Visão geral {#overview}
 
@@ -49,7 +48,7 @@ Permite criar um formulário adaptável sem um modelo de formulário. O document
 
 Ao selecionar um modelo de formulário, configure o documento de registro usando as opções disponíveis em Document of Record Template Configuration. Consulte [Documento de configuração de modelo de registro](#document-of-record-template-configuration).
 
-## Documento gerado automaticamente do registro {#automatically-generated-document-of-record}
+## Documento de registro gerado automaticamente {#automatically-generated-document-of-record}
 
 Um documento de registro permite que seus clientes mantenham uma cópia do formulário enviado para fins de impressão. Quando um documento de registro é gerado automaticamente, sempre que você altera o formulário, o documento de registro é atualizado imediatamente. Por exemplo, você remove o campo de idade dos clientes que selecionam os Estados Unidos da América como seu país. Quando esses clientes geram um documento de registro, o campo idade não é visível para eles no documento de registro.
 
@@ -214,7 +213,7 @@ O modelo base fornece informações de estilo e aparência para o documento de r
 
 Siga [Convenções de modelo base](#base-template-conventions) ao criar o modelo base.
 
-## Convenções de modelo base {#base-template-conventions}
+## Convenções de modelo básico {#base-template-conventions}
 
 Um modelo base é usado para definir o cabeçalho, o rodapé, o estilo e a aparência de um documento de registro. O cabeçalho e o rodapé podem incluir informações como o logotipo da empresa e o texto de direitos autorais. A primeira página principal no modelo base é copiada e usada como uma página principal para o documento de registro, que contém cabeçalho, rodapé, número de página ou qualquer outra informação que deve aparecer em todas as páginas no documento de registro. Se você estiver usando um modelo base que não está em conformidade com as convenções do modelo base, a primeira página principal do modelo base ainda será usada no documento de modelo de registro. É altamente recomendável criar seu modelo base de acordo com suas convenções e usá-lo para a geração automática de documento de registro.
 
@@ -323,9 +322,15 @@ Para localizar as informações de marca inseridas na guia Document of Record , 
    * **Excluir campos ocultos do documento de registro**
    * **Ocultar descrição de painéis**
 
+   Se o modelo XDP personalizado selecionado incluir várias páginas principais, as propriedades dessas páginas aparecerão na seção **[!UICONTROL content]** da guia **[!UICONTROL Document of Record]**.
+
+   ![Propriedades da página principal](assets/master-page-properties.png)
+
+   As propriedades principais da página incluem Imagem do logotipo, Texto do cabeçalho, Título do formulário, Rótulo do aviso e Texto de isenção de responsabilidade. Você pode aplicar propriedades de formulário adaptável ou de modelo XDP ao Documento de registro. Por padrão, o AEM Forms aplica as propriedades do modelo ao Documento de registro. Também é possível definir valores personalizados para as propriedades principais da página. Para obter informações sobre como aplicar várias páginas principais em um Documento de registro, consulte [Aplicar várias páginas principais a um Documento de registro](#apply-multiple-master-pages-dor).
+
    >[!NOTE]
    >
-   >Se você estiver usando um modelo de formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades Cores do destaque e Família de fontes funcionem, verifique se o seguinte está presente no modelo de formulário adaptável abaixo do subformulário raiz:
+   >Se você estiver usando um modelo de formulário adaptável criado com uma versão do Designer anterior à 6.3, para que as propriedades Cores do destaque e Família de fontes funcionem, verifique se o seguinte está presente no modelo de formulário adaptável sob o subformulário raiz:
 
    ```xml
    <proto>
@@ -368,11 +373,68 @@ O documento de configurações de registro de um componente está disponível em
 * **Exibir painel como tabela:** Definir a propriedade exibe o painel como tabela no documento de registro se o painel tiver menos de 6 campos. Aplicável somente para painel.
 * **Excluir título do Documento de registro:** Definir a propriedade exclui o título do painel/tabela do documento de registro. Aplicável somente para painel e tabela.
 * **Excluir descrição do documento de registro:** definir a propriedade exclui a descrição do painel/tabela do documento de registro. Aplicável somente para painel e tabela.
+* **[!UICONTROL Paginação]**  >  **[!UICONTROL Local]**: Determina o local selecionado para posicionar o painel.
+   * **[!UICONTROL Local]**  >  **[!UICONTROL Seguinte]**: Posiciona o painel depois do objeto anterior no painel pai.
+   * **[!UICONTROL Local]**  >  **[!UICONTROL Na área de conteúdo]**  > Nome da área de conteúdo: Posiciona o painel na área de conteúdo especificada.
+   * **[!UICONTROL Local]**  >  **[!UICONTROL Parte superior da próxima área]** de conteúdo: Posiciona o painel na parte superior da próxima área de conteúdo.
+   * **[!UICONTROL Local]**  >  **[!UICONTROL Parte superior da área de conteúdo]**  > Nome da área de conteúdo: Posiciona o painel na parte superior da área de conteúdo especificada.
+   * **[!UICONTROL Local]**  >  **[!UICONTROL Na página]**  > Nome da página principal: Posiciona o painel na página especificada. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adiciona uma quebra de página.
+   * **[!UICONTROL Local]**  >  **[!UICONTROL Parte superior da próxima página]**: Posiciona o painel na parte superior da próxima página. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adiciona uma quebra de página.
+   * **[!UICONTROL Local]**  >  **[!UICONTROL Parte superior da página]**  > Nome da página principal: Posiciona o painel na parte superior da página, quando a página especificada é renderizada. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adiciona uma quebra de página.
+* **[!UICONTROL Paginação]**  >  **[!UICONTROL Depois]**: Determina qual área preencher após o posicionamento de um painel. Os seguintes campos estão disponíveis na  **** seção Depois:
+   * **[!UICONTROL Depois]**  >  **[!UICONTROL Continuar preenchendo pai]**: Continua unindo dados para todos os objetos que faltam ser preenchidos no painel pai.
+   * **[!UICONTROL Depois de]**  >  **[!UICONTROL Ir para a próxima área]** de conteúdo: Começa a preencher a área de conteúdo seguinte após colocar o painel.
+   * **[!UICONTROL Depois]**  >  **[!UICONTROL Ir para a área de conteúdo]**  > Nome da área de conteúdo: Começa a preencher a área de conteúdo especificada após colocar o painel.
+   * **[!UICONTROL Depois]**  >  **[!UICONTROL Ir para a próxima página]**: Começa a preencher a próxima página depois de colocar o painel.
+   * **[!UICONTROL Depois]**  >  **[!UICONTROL Ir para a página]**  > Nome da página: Começa a preencher a página especificada depois de colocar o painel.
+* **[!UICONTROL Paginação]**  >  **[!UICONTROL Estouro]**: Define um sobrefluxo para um painel ou tabela que se expande pelas páginas. Os seguintes campos estão disponíveis na seção **[!UICONTROL Overflow]**:
+   * **[!UICONTROL Estouro]**  >  **[!UICONTROL Nenhum]**: Começa a preencher a próxima página. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adiciona uma quebra de página.
+   * **[!UICONTROL Sobrefluxo]**  >  **[!UICONTROL Ir para a área de conteúdo]**  > Nome da área de conteúdo: Começa a preencher a área de conteúdo especificada.
+   * **[!UICONTROL Sobrefluxo]**  >  **[!UICONTROL Ir para página]**  > Nome da página: Começa a preencher a página especificada.
+
+Para obter informações sobre como aplicar quebras de página e aplicar várias páginas principais em um Documento de registro, consulte [Aplicar quebra de página em um Documento de registro](#apply-page-breaks-in-dor) e [Aplicar várias páginas principais a um Documento de registro](#apply-multiple-master-pages-dor).
 
 **Configurações de nível de formulário**
 
 * **Incluir campos não vinculados no DoR:** a configuração da propriedade inclui campos não vinculados do formulário adaptável baseado em Esquema no documento de registro. Por padrão, é verdadeiro.
 * **Excluir campos do DoR se ocultos:** a configuração da propriedade substitui o comportamento da propriedade de nível de campo &quot;Excluir do documento de registro&quot; quando não é verdadeira. Se os campos estiverem ocultos no momento do envio do formulário, eles serão excluídos do documento de registro se a propriedade estiver definida como true, desde que a propriedade &quot;Excluir do documento de registro&quot; não esteja definida.
+
+## Aplicar uma quebra de página em um documento de registro {#apply-page-breaks-in-dor}
+
+É possível aplicar quebras de página em um Documento de registro usando vários métodos.
+
+Para aplicar uma quebra de página a um Documento de registro:
+
+1. Toque no painel e selecione ![Configurar](assets/configure-icon.svg).
+
+1. Expanda **[!UICONTROL Documento de registro]** para visualizar as propriedades.
+
+1. Na seção **[!UICONTROL Paginação]**, toque em ![Pasta](assets/folder-icon.svg) no campo **[!UICONTROL Local]**.
+1. Toque em **[!UICONTROL Parte superior da próxima página]** e toque em **[!UICONTROL Selecionar]**. Você também pode tocar em **[!UICONTROL Parte superior da página]**, selecionar a página principal e tocar em **[!UICONTROL Selecionar]** para aplicar a quebra de página.
+1. Toque em ![Salvar](assets/save_icon.svg) para salvar as propriedades.
+
+O painel selecionado é movido para a próxima página.
+
+## Aplicar várias páginas principais a um documento de registro {#apply-multiple-master-pages-dor}
+
+Se o modelo XDP personalizado selecionado incluir várias páginas principais, as propriedades dessas páginas aparecerão na seção [!UICONTROL content] da guia [!UICONTROL Document of Record]. Para obter mais informações, consulte [Personalizar as informações da marca no documento de registro](#customize-the-branding-information-in-document-of-record).
+
+É possível aplicar várias páginas principais a um Documento de registro ao aplicar diferentes páginas principais aos componentes de um formulário adaptável. Use a seção [Paginação](#document-of-record-settings) das propriedades Documento de registro para aplicar várias páginas principais.
+
+Este é um exemplo de como aplicar várias páginas principais a um Documento de registro:
+Você faz upload de um modelo XDP que inclui quatro páginas principais para o servidor [!DNL AEM Forms]. [!DNL AEM Forms] aplica as propriedades do modelo ao Documento de registro por padrão. [!DNL AEM Forms] também aplica as primeiras propriedades de página principais no modelo ao Documento de registro.
+
+Para aplicar as propriedades da segunda página principal a um painel e as terceira propriedades da página principal aos painéis a seguir, execute as seguintes etapas:
+
+1. Toque no painel para aplicar a segunda página principal e selecione ![Configurar](assets/configure-icon.svg).
+1. Na seção **[!UICONTROL Paginação]**, toque em ![Pasta](assets/folder-icon.svg) no campo **[!UICONTROL Local]**.
+1. Toque em **[!UICONTROL Na página]**, selecione a segunda página principal e toque em **[!UICONTROL Selecionar]**.
+O AEM Forms aplica a segunda página principal ao painel e a todos os painéis subsequentes no formulário adaptável.
+1. Na seção **[!UICONTROL Paginação]**, toque em ![Pasta](assets/folder-icon.svg) no campo **[!UICONTROL Depois]**.
+1. Toque em **[!UICONTROL Ir para a página]**, selecione a terceira página principal e toque em **[!UICONTROL Selecionar]**.
+1. Toque em ![Salvar](assets/save_icon.svg) para salvar as propriedades.
+O AEM Forms aplica a terceira página principal ao painel e a todos os painéis subsequentes no formulário adaptável.
+
 
 ## Considerações principais ao trabalhar com o documento de registro {#key-considerations-when-working-with-document-of-record}
 
@@ -382,4 +444,3 @@ Lembre-se das considerações e limitações a seguir ao trabalhar no documento 
 * Os fragmentos de documento em um formulário adaptável não aparecem no documento de registro. No entanto, fragmentos de formulário adaptáveis são compatíveis.
 * Não há suporte para vínculo de conteúdo no documento de registro gerado para o formulário adaptável baseado no Esquema XML.
 * A versão localizada do documento de registro é criada sob demanda para uma localidade quando o usuário solicita a renderização do documento de registro. A localização do documento de registro ocorre juntamente com a localização do formulário adaptável. Para obter mais informações sobre a localização do documento de formulários de registro e adaptáveis, consulte [Usar fluxo de trabalho de tradução AEM para localizar formulários adaptáveis e documentos de registro](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
-
