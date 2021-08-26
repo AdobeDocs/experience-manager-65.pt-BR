@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
-source-git-commit: 73e53f516d8e10b548f913db079c7e9812deb907
+source-git-commit: 9e1eea90945bb77e83e15d25708e47f2f3009fd8
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '374'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Você pode ativar o suporte [!DNL Adobe Camera Raw] para processar formatos de a
 
 Para ativar o suporte a [!DNL Camera Raw] em [!DNL Experience Manager Assets], siga estas etapas:
 
-1. Baixe o [pacote Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) de [!DNL Software Distribution].
+1. Baixe o [[!DNL Camera Raw] pacote](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) de [!DNL Software Distribution].
 1. Acesso `https://[aem_server]:[port]/workflow`. Abra o workflow **[!UICONTROL Ativo de atualização do DAM]** .
 1. Edite a etapa **[!UICONTROL Processar miniaturas]** .
 1. Forneça a seguinte configuração na guia **[!UICONTROL Miniaturas]**:
