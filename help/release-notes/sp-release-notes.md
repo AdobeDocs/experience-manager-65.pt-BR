@@ -4,9 +4,9 @@ description: Notas de versão específicas do  [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 861f5f4ae87da106bc42895e03bc42c0b17bd9fc
+source-git-commit: 55b2e8d3d198857205b81b6974d9d6bfb8527fa6
 workflow-type: tm+mt
-source-wordcount: '3652'
+source-wordcount: '3648'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Os principais recursos e aprimoramentos introduzidos no [!DNL Adobe Experience M
 
 * **Modelos e  [!DNL Content Fragment] editor** aprimorados: Agora é possível criar modelos complexos e personalizados para conteúdo estruturado usando  [!DNL Content Fragment] modelos aninhados. As estruturas de conteúdo são modularizadas em elementos básicos que são modelados como subfragmentos. Os fragmentos de nível superior fazem referência a esses subfragmentos. Mais aprimoramentos de tipo de dados, como regras de validação avançadas, aprimoram ainda mais a flexibilidade da modelagem de conteúdo com [!DNL Content Fragments]. O editor [!DNL Experience Manager] [!DNL Content Fragment] oferece suporte a estruturas de fragmento aninhadas em uma sessão de editor comum, com aprimoramentos como visualização de árvore de estrutura e navegação de navegação estrutural por guias por meio de hierarquias de fragmento.
 
-* **API GraphQL para[!DNL Content Fragments]**: A nova API GraphQL é o método padrão para fornecer conteúdo estruturado no formato JSON. As consultas GraphQL permitem que os clientes solicitem apenas os itens de conteúdo relevantes para renderizar uma experiência. Essa seleção elimina a entrega excessiva de conteúdo (possibilidade com APIs REST HTTP) que requer análise de conteúdo no lado do cliente. Os esquemas GraphQL são derivados de [!DNL Content Fragment] modelos e as respostas da API são feitas no formato JSON. Em [!DNL Experience Manager] como um [!DNL Cloud Service], [as consultas GraphQL persistem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) e processam solicitações de GET amigáveis ao cache. Ainda não é possível em [!DNL Experience Manager] 6.5.10.0.
+* **API GraphQL para[!DNL Content Fragments]**: A nova API GraphQL é o método padrão para fornecer conteúdo estruturado no formato JSON. As consultas GraphQL permitem que os clientes solicitem apenas os itens de conteúdo relevantes para renderizar uma experiência. Essa seleção elimina a entrega excessiva de conteúdo (possibilidade com APIs REST HTTP) que requer análise de conteúdo no lado do cliente. Os esquemas GraphQL são derivados de [!DNL Content Fragment] modelos e as respostas da API são feitas no formato JSON. Em [!DNL Experience Manager] como um [!DNL Cloud Service], [as consultas GraphQL persistem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) e processam solicitações de GET amigáveis ao cache. Ainda não é possível em [!DNL Experience Manager] 6.5.
 
 * **Gestão de hierarquia e pré-visualização** futura: Agora, os usuários têm uma interface para acessar as estruturas de conteúdo de suas  [!DNL Experience Manager] inicializações, incluindo a capacidade de adicionar e remover páginas em um lançamento. Esse recurso melhora a flexibilidade de [!DNL Experience Manager] inicializações para criar versões de conteúdo direcionadas para publicação futura. [O recurso de ](/help/sites-authoring/working-with-page-versions.md#timewarp) distorção de tempo permite que os usuários visualizem inicializações como estados de conteúdo futuros.
 
@@ -38,7 +38,7 @@ Os principais recursos e aprimoramentos introduzidos no [!DNL Adobe Experience M
 
 * **Opções de compartilhamento de link para baixar ativos ou representações**: Ao compartilhar ativos e coleções como link, os usuários podem escolher permitir o download dos ativos originais, suas execuções ou ambos usando o link compartilhado. Além disso, os usuários que baixam os ativos compartilhados com eles por meio de um link obtêm a opção de baixar apenas os ativos originais, somente as execuções ou ambos.
 
-* **Limitar subativos gerados**: Os administradores podem limitar o número de subativos  [!DNL Experience Manager] gerados para ativos compostos, como arquivos PDF, PowerPoint, InDesign e Keynote. Consulte [Gerenciar ativos compostos](/help/assets/managing-linked-subassets.md#generate-subassets).
+* **Limitar subativos gerados**: Os administradores podem limitar o número de subativos  [!DNL Experience Manager] gerados para ativos compostos, como arquivos PDF, PowerPoint, InDesign e Keynote.
 
 * **Suporte** Camera Raw: Um novo  [!DNL Camera Raw] pacote está disponível e oferece suporte à  [!DNL Adobe Camera Raw] v10.4. Consulte  [Processar imagens usando [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
@@ -319,9 +319,7 @@ B. Use a API HTTP [do Gerenciador de Pacotes](/help/sites-administering/package-
 
 Para conhecer as plataformas certificadas para funcionar com esta versão, consulte os [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
-<!--
-
-### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+<!--### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -345,9 +343,7 @@ For information about installing the cumulative installer for Experience Manager
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
-
--->
+>After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.-->
 
 ### UberJar {#uber-jar}
 
@@ -376,7 +372,7 @@ Revise se você usa um recurso ou um recurso em uma implantação. Além disso, 
 
 | Área | Recurso | Substituição |
 |---|---|---|
-| Integrações | A tela de aceitação **[!UICONTROL AEM Cloud Services]** está obsoleta, pois a integração [!DNL Experience Manager] e [!DNL Adobe Target] é atualizada no Experience Manager 6.5. A integração oferece suporte à API Adobe Target Standard. A API usa autenticação pelo Adobe IMS e [!DNL Adobe I/O] e oferece suporte à função crescente do Adobe Launch para preparar [!DNL Experience Manager] páginas para análise e personalização, o assistente de aceitação é funcionalmente irrelevante. | Configure conexões do sistema, autenticação Adobe IMS e [!DNL Adobe I/O] integrações por meio dos respectivos serviços em nuvem [!DNL Experience Manager]. |
+| Integrações | A tela de aceitação **[!UICONTROL AEM Cloud Services]** está obsoleta, pois a integração [!DNL Experience Manager] e [!DNL Adobe Target] é atualizada no Experience Manager 6.5. A integração oferece suporte à API Adobe Target Standard. A API usa autenticação via Adobe IMS e [!DNL Adobe I/O] e oferece suporte à função crescente do Adobe Launch para preparar [!DNL Experience Manager] páginas para análise e personalização, o assistente de aceitação é funcionalmente irrelevante. | Configure conexões do sistema, autenticação Adobe IMS e [!DNL Adobe I/O] integrações por meio dos respectivos serviços em nuvem [!DNL Experience Manager]. |
 | Conectores | O Conector Adobe JCR para Microsoft® SharePoint 2010 e Microsoft® SharePoint 2013 está obsoleto para o Experience Manager 6.5. | N/A |
 
 ## Problemas conhecidos {#known-issues}
