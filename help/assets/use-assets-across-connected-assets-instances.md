@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 3e4e9ab8b3940f539228bccf759dcade03a8b015
+source-git-commit: 218e97eb31061e833f3b291a6607b2ebf4762471
 workflow-type: tm+mt
 source-wordcount: '2967'
 ht-degree: 26%
@@ -116,7 +116,7 @@ Você pode verificar a conectividade entre as implantações [!DNL Sites] config
 ![Teste de conexão do Connected Assets configurado  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *Figura: Teste de conexão do Connected Assets configurado  [!DNL Sites].*
 
-### Configurar uma conexão para ativos de mídia dinâmica{#sites-dynamic-media-connected-assets}
+### Configurar uma conexão para ativos de mídia dinâmica {#sites-dynamic-media-connected-assets}
 
 Você pode configurar uma conexão entre a implantação [!DNL Sites] e a implantação [!DNL Dynamic Media] que permite que autores de páginas da Web usem [!DNL Dynamic Media] imagens em suas páginas da Web. Ao criar páginas da Web, a experiência de usar ativos remotos e implantações [!DNL Dynamic Media] remotas permanece a mesma.
 
