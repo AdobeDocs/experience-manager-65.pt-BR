@@ -3,11 +3,11 @@ title: Compartilhar ativos usando um link
 description: Compartilhe ativos, pastas e coleções como um URL.
 contentOwner: AG
 role: User
-feature: Compartilhamento de link,Gerenciamento de ativos
+feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '998'
 ht-degree: 5%
 
 ---
@@ -24,20 +24,17 @@ ht-degree: 5%
 
 ## Compartilhar ativos {#share-assets}
 
-Para gerar o URL para ativos que você deseja compartilhar com usuários, use a caixa de diálogo Compartilhamento de links . Os usuários com privilégios de administrador ou com permissões de leitura no local `/var/dam/share` podem visualizar os links compartilhados com eles.
+Para gerar o URL para ativos que você deseja compartilhar com usuários, use a caixa de diálogo [!UICONTROL Compartilhamento de link]. Os usuários com privilégios de administrador ou com permissões de leitura no local `/var/dam/share` podem visualizar os links compartilhados com eles.
 
 1. Na interface do usuário [!DNL Assets], selecione o ativo a ser compartilhado como um link.
-1. Na barra de ferramentas, clique no ícone **[!UICONTROL Compartilhar link]** ![compartilhar ativos](assets/do-not-localize/assets_share.png). O link que será criado após clicar em **[!UICONTROL Compartilhar]** é exibido antecipadamente no campo [!UICONTROL Compartilhar link]. O link ainda não foi criado até você clicar em **[!UICONTROL Enviar]**.
 
-   ![Caixa de diálogo com o compartilhamento de links](assets/Link-sharing-dialog-box.png)
+1. Na barra de ferramentas, clique no ícone **[!UICONTROL Compartilhar link]** ![compartilhar ativos](assets/do-not-localize/assets_share.png). O link que será criado após clicar em **[!UICONTROL Compartilhar]** é exibido antecipadamente no campo [!UICONTROL Compartilhar link]. O link não é criado até que você selecione **[!UICONTROL Submit]**.
+
+   ![Caixa de diálogo com o compartilhamento de links](/help/assets/assets/share-assets-as-link.png)
 
    *Figura: A caixa de diálogo para compartilhar ativos como um link.*
 
 1. Na caixa de endereço de email da caixa de diálogo **[!UICONTROL Compartilhamento de links]**, digite a ID de email do usuário com o qual deseja compartilhar o link. Você pode adicionar um ou mais usuários.
-
-   ![Compartilhar links para ativos diretamente da caixa de diálogo Compartilhamento de links](assets/Asset-Sharing-LinkShareDialog.png)
-
-   *Figura: Compartilhe links para ativos diretamente da caixa de diálogo  [!UICONTROL Compartilhamento de ] links .*
 
    >[!NOTE]
    >
@@ -51,7 +48,7 @@ Para gerar o URL para ativos que você deseja compartilhar com usuários, use a 
 
    ![Definir a data de expiração do link compartilhado](assets/Set-shared-link-expiration.png)
 
-1. Para permitir que os usuários baixem o ativo original junto com as representações, selecione **[!UICONTROL Permitir download do arquivo original]**. Por padrão, os usuários só podem baixar as representações do ativo que você compartilha como um link.
+1. Para permitir que os usuários baixem o ativo original, selecione **[!UICONTROL Permitir download do arquivo original]**. Para permitir que os usuários baixem apenas as representações dos ativos compartilhados, selecione **[!UICONTROL Permitir download de representações do arquivo]**.
 
 1. Clique em **[!UICONTROL Compartilhar]**. Uma mensagem confirma que o link é compartilhado com os usuários por meio de um email.
 

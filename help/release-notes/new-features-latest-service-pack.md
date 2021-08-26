@@ -4,9 +4,9 @@ description: Novidades do  [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: d83f8d6e4b99ac7f287c0f091b84bbbf9d82fc75
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '3974'
+source-wordcount: '3983'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 1%
 [!DNL Adobe Experience Manager] 6.5 Os Service Packs oferecem novos recursos, melhorias solicitadas pelo cliente e melhorias de desempenho, estabilidade e segurança em intervalos trimestrais. A disponibilidade trimestral facilita o acesso e a adoção de novos recursos e inovações.
 
 Este artigo destaca os recursos incluídos no Service Pack mais recente, [principais recursos incluídos nos 6.5 Service Packs anteriores](#key-features-previous-service-packs), e as [versões de chave desde a última versão do Service Pack](#key-releases-since-last-sp).
-
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -41,13 +40,13 @@ Este artigo destaca os recursos incluídos no Service Pack mais recente, [princi
 
 * [!DNL Experience Manager] estende a funcionalidade Ativos conectados ao uso de  [!DNL Dynamic Media] imagens nos componentes principais aplicáveis. Consulte [usar Ativos conectados](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* Ao compartilhar ativos e coleções individuais como um link (usando a caixa de diálogo [!UICONTROL Compartilhamento de link]), os usuários podem escolher permitir que o destinatário baixe ativos originais, ou suas execuções ou ambos.
+* Ao compartilhar ativos e coleções individuais como um link (usando a caixa de diálogo [!UICONTROL Compartilhamento de link]), os usuários podem escolher permitir que o destinatário baixe ativos originais, ou suas execuções ou ambos. Consulte [Compartilhar ativos via link](/help/assets/link-sharing.md).
 
-   ![opção para baixar somente os ativos originais, somente as renderizações ou ambos](/help/assets/assets/share-renditions.png)
+   ![opção para permitir o download somente dos ativos originais, somente das execuções ou de ambos](/help/release-notes/assets/share-assets-as-link.png)
 
 * Quando os usuários baixam ativos compartilhados com eles como um link, eles podem optar por baixar os ativos originais, as representações ou ambos.
 
-* Os administradores podem limitar o número de sub-ativos gerados por [!DNL Experience Manager] para ativos compostos, como arquivos PDF, PowerPoint, InDesign e Keynote.
+* **Limitar subativos gerados**: Os administradores podem limitar o número de subativos  [!DNL Experience Manager] gerados para ativos compostos, como arquivos PDF, PowerPoint, InDesign e Keynote.
 
    ![limitar a geração de sub-ativos](/help/assets/assets/sub-asset-limit.png)
 

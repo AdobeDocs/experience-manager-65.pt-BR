@@ -3,11 +3,11 @@ title: Gerenciar ativos compostos com referências e várias páginas
 description: Saiba como criar referências a ativos digitais de dentro de [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Use o recurso Visualizador de página para exibir páginas de subativos individuais de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 role: User, Admin
-feature: Gerenciamento de ativos
+feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,11 @@ Para gerar os subativos, siga um destes procedimentos:
    * Selecione um ativo e clique em [!UICONTROL Linha do tempo] para abrir o painel esquerdo. Como alternativa, use o atalho de teclado `alt + 3`. Clique em [!UICONTROL Iniciar Fluxo de Trabalho], selecione [!UICONTROL Ativo de Atualização DAM], clique em [!UICONTROL Iniciar] e clique em [!UICONTROL Continuar].
    * Selecione um ativo e clique em [!UICONTROL Create] > [!UICONTROL Workflow] na barra de ferramentas. Na caixa de diálogo pop-up, selecione [!UICONTROL DAM Update Asset] fluxo de trabalho, clique em [!UICONTROL Iniciar] e clique em [!UICONTROL Continuar].
 
-Especificamente para documentos do Microsoft Word, execute o workflow **[!UICONTROL Documentos do DAM Parse Word]**. Ele gera um componente `cq:Page` do conteúdo do documento do Microsoft Word. As imagens extraídas do documento são referenciadas do componente `cq:Page`. Essas imagens são extraídas mesmo se a geração de subativos estiver desativada.
+Especificamente para documentos do Microsoft Word, execute o workflow **[!UICONTROL Documentos do DAM Parse Word]**. Ele gera um componente `cq:Page` do conteúdo do documento do Microsoft Word. As imagens extraídas do documento são referenciadas do componente `cq:Page`. Essas imagens são extraídas mesmo se a geração de sub-ativos estiver desativada.
+
+>[!NOTE]
+>
+>No [!UICONTROL Create Sub Asset Process - Step Properties] em [!UICONTROL Process Arguments], você pode especificar o número de sub-ativos gerados por [!DNL Experience Manager]. O valor padrão é 5. Para gerar todos os subativos, deixe o campo vazio. Se o campo tiver um valor negativo, nenhum subativo será gerado.
 
 ## Exibir subativos {#viewing-subassets}
 

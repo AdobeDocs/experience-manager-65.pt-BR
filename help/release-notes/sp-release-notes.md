@@ -4,9 +4,9 @@ description: Notas de versão específicas do  [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 4fca7799bf33bf90f601ab72a354f76e48ccdb04
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3652'
 ht-degree: 3%
 
 ---
@@ -38,7 +38,7 @@ Os principais recursos e aprimoramentos introduzidos no [!DNL Adobe Experience M
 
 * **Opções de compartilhamento de link para baixar ativos ou representações**: Ao compartilhar ativos e coleções como link, os usuários podem escolher permitir o download dos ativos originais, suas execuções ou ambos usando o link compartilhado. Além disso, os usuários que baixam os ativos compartilhados com eles por meio de um link obtêm a opção de baixar apenas os ativos originais, somente as execuções ou ambos.
 
-* **Limitar subativos gerados**: Os administradores podem limitar o número de subativos  [!DNL Experience Manager] gerados para ativos compostos, como arquivos PDF, PowerPoint, InDesign e Keynote.
+* **Limitar subativos gerados**: Os administradores podem limitar o número de subativos  [!DNL Experience Manager] gerados para ativos compostos, como arquivos PDF, PowerPoint, InDesign e Keynote. Consulte [Gerenciar ativos compostos](/help/assets/managing-linked-subassets.md#generate-subassets).
 
 * **Suporte** Camera Raw: Um novo  [!DNL Camera Raw] pacote está disponível e oferece suporte à  [!DNL Adobe Camera Raw] v10.4. Consulte  [Processar imagens usando [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
