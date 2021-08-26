@@ -1,17 +1,20 @@
 ---
-title: Novidades do  [!DNL Experience Manager] 6.5 Service Pack 9
-description: Novidades do  [!DNL Experience Manager] 6.5 Service Pack 9
+title: Novidades do  [!DNL Experience Manager] 6.5 Service Pack 10
+description: Novidades do  [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
+source-git-commit: 738972f73ff3af070eb6b48bff67496ab451a6a7
 workflow-type: tm+mt
-source-wordcount: '3668'
+source-wordcount: '3974'
 ht-degree: 1%
 
 ---
 
-# Novidades do [!DNL Adobe Experience Manager] 6.5 Service Pack 9 {#aem-whats-new-service-pack}
+# Novidades do [!DNL Adobe Experience Manager] 6.5 Service Pack 10 {#aem-whats-new-service-pack}
+
+<!-- TBD: Downsample this image. We do not need as big an image since customers don't use as big a screen to view. Also, having a 700+ KB decorative image is bad for page load time.
+-->
 
 ![Novidades](assets/whatsnew.jpeg)
 
@@ -19,40 +22,40 @@ ht-degree: 1%
 
 Este artigo destaca os recursos incluídos no Service Pack mais recente, [principais recursos incluídos nos 6.5 Service Packs anteriores](#key-features-previous-service-packs), e as [versões de chave desde a última versão do Service Pack](#key-releases-since-last-sp).
 
->[!NOTE]
->
->A partir do [!DNL Experience Manager] Service Pack 9, [!DNL Experience Manager] os clientes podem desenvolver e operar seus aplicativos [!DNL Experience Manager] com distribuições dos [!DNL Azul Zulu] builds of OpenJDK, compatíveis com padrões do Java SE.
->O suporte para [!DNL Azul Zulu] JDKs também é fornecido pelo Adobe aos clientes [!DNL Experience Manager].
->Você pode baixar as versões relevantes dos JDKs [!DNL Azul Zulu] de [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
->Os direitos de uso da tecnologia Oracle Java, conforme distribuídos pelo Adobe, expirarão no final de dezembro de 2022. [!DNL Experience Manager] os clientes do são incentivados a planejar e implementar o uso dos  [!DNL Azul Zulu] JDKs mais recentes até essa data. Para obter mais informações sobre o uso da tecnologia [!DNL Oracle Java] e da tecnologia [!DNL Azul Zulu], consulte as [Perguntas frequentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf) associadas.
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### Capacidade de restaurar páginas e árvore excluídas {#ability-to-restore-pages-tree}
+* **Modelos e  [!DNL Content Fragment] editor** aprimorados: Agora é possível criar modelos complexos e personalizados para conteúdo estruturado usando  [!DNL Content Fragment] modelos aninhados. As estruturas de conteúdo são modularizadas em elementos básicos que são modelados como subfragmentos. Os fragmentos de nível superior fazem referência a esses subfragmentos. Mais aprimoramentos de tipo de dados, como regras de validação avançadas, aprimoram ainda mais a flexibilidade da modelagem de conteúdo com [!DNL Content Fragments]. O editor [!DNL Experience Manager] [!DNL Content Fragment] oferece suporte a estruturas de fragmento aninhadas em uma sessão de editor comum, com aprimoramentos como visualização de árvore de estrutura e navegação de navegação estrutural por guias por meio de hierarquias de fragmento.
 
-Agora é possível restaurar as páginas excluídas e a visualização de árvore inteira em uma página [!DNL Experience Manager Sites].
+* **API GraphQL para[!DNL Content Fragments]**: A nova API GraphQL é o método padrão para fornecer conteúdo estruturado no formato JSON. As consultas GraphQL permitem que os clientes solicitem apenas os itens de conteúdo relevantes para renderizar uma experiência. Essa seleção elimina a entrega excessiva de conteúdo (possibilidade com APIs REST HTTP) que requer análise de conteúdo no lado do cliente. Os esquemas GraphQL são derivados de [!DNL Content Fragment] modelos e as respostas da API são feitas no formato JSON. Em [!DNL Experience Manager] como um [!DNL Cloud Service], [as consultas GraphQL persistem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) e processam solicitações de GET amigáveis ao cache. Ainda não é possível em [!DNL Experience Manager] 6.5.
+
+* **Gestão de hierarquia e pré-visualização** futura: Agora, os usuários têm uma interface para acessar as estruturas de conteúdo de suas  [!DNL Experience Manager] inicializações, incluindo a capacidade de adicionar e remover páginas em um lançamento. Esse recurso melhora a flexibilidade de [!DNL Experience Manager] inicializações para criar versões de conteúdo direcionadas para publicação futura. [O recurso de ](/help/sites-authoring/working-with-page-versions.md#timewarp) distorção de tempo permite que os usuários visualizem inicializações como estados de conteúdo futuros.
+
+* [!DNL Experience Manager] exibe diretamente uma lista de todos os modelos de conteúdo em uma pasta, sem que os autores de conteúdo tenham que navegar pela estrutura do arquivo. A funcionalidade agora requer menos cliques e melhora a eficiência da criação.
+
+* O campo de caminho no editor [!DNL Sites] permite que os autores arraste ativos de [!DNL Content Finder].
+
+* A Platform oferece algumas melhorias de acessibilidade. Consulte [Atualizações da plataforma](/help/release-notes/sp-release-notes.md#platform-65100).
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* Atualização do nome de localidades e regiões chinesas relacionadas a Hong Kong, Macau e Taiwan, para torná-las consistentes com as visões sociais e políticas chinesas.
+* [!DNL Experience Manager] estende a funcionalidade Ativos conectados ao uso de  [!DNL Dynamic Media] imagens nos componentes principais aplicáveis. Consulte [usar Ativos conectados](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* Uma configuração opcional é introduzida para alterar o uso de maiúsculas e minúsculas nas IDs de email na resposta da API ACP de [!DNL Adobe Experience Manager].
+* Ao compartilhar ativos e coleções individuais como um link (usando a caixa de diálogo [!UICONTROL Compartilhamento de link]), os usuários podem escolher permitir que o destinatário baixe ativos originais, ou suas execuções ou ambos.
 
-   ![configuração para alterar as IDs de email para minúsculas na resposta ACP de  [!DNL Experience Manager]](assets/email-lowcase-config.png)
+   ![opção para baixar somente os ativos originais, somente as renderizações ou ambos](/help/assets/assets/share-renditions.png)
 
-* O contraste do texto e dos ícones em segundo plano é aprimorado para vários recursos. Essa implementação das diretrizes da WCAG torna [!DNL Assets] mais acessível para usuários com visão e percepção de cor limitadas. Consulte [melhorias de acessibilidade em [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590).
+* Quando os usuários baixam ativos compartilhados com eles como um link, eles podem optar por baixar os ativos originais, as representações ou ambos.
+
+* Os administradores podem limitar o número de sub-ativos gerados por [!DNL Experience Manager] para ativos compostos, como arquivos PDF, PowerPoint, InDesign e Keynote.
+
+   ![limitar a geração de sub-ativos](/help/assets/assets/sub-asset-limit.png)
+
+* Um novo pacote [!DNL Camera Raw] está disponível e oferece suporte ao [!DNL Adobe Camera Raw] v10.4. Consulte [processar imagens usando [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
 ### [!DNL Dynamic Media] {#assets-dynamic-media}
 
-* [[!DNL Dynamic Media] é mais ](sp-release-notes.md#assets-accessibility-6590) acessível em termos de:
-
-   * Facilidade de uso com teclas do teclado.
-   * O contraste (com fundo) do texto, do texto de espaço reservado e dos controles em vários editores.
-   * Acessibilidade e narração por leitores de tela.
-
-* Fornece imagens de melhor qualidade com eficiência em dispositivos com telas de alta resolução e largura de banda de rede restrita, com DPR (Device Pixel Ratio) de imagem inteligente e otimização da largura de banda da rede. Consulte [Perguntas frequentes sobre a geração inteligente de imagens](/help/assets/imaging-faq.md).
-
-* [!DNL Dynamic Media] O delivery (modificador de `fmt` URL) agora é compatível com o formato de imagem de próxima geração AVIF (AV1 Image format). Para obter mais detalhes e linha do tempo, consulte [image service and rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
+* Muitos aprimoramentos de acessibilidade são feitos no cliente [!DNL Dynamic Media] para que um leitor de tela possa apresentar uma descrição mais apropriada e útil da ação ou interface do usuário. Consulte [[!DNL Dynamic Media] atualizações](/help/release-notes/sp-release-notes.md#dynamic-media-65100).
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -60,37 +63,11 @@ Agora é possível restaurar as páginas excluídas e a visualização de árvor
 >
 >O pacote complementar de [!DNL Experience Manager Forms] é disponibilizado uma semana após a versão agendada do [!DNL Experience Manager] Service Pack.
 
-### Suporte para [!DNL Azul Zulu OpenJDK] {#support-azul-zulu}
-
-Agora você pode desenvolver e operar aplicativos com [!DNL Azul Zulu] criações de [!DNL OpenJDK] para [!DNL Experience Manager Forms] em implantações OSGi. Para obter mais informações, consulte [Notas de versão do Experience Manager 6.5 Service Pack 9](sp-release-notes.md) e [Requisitos técnicos](../sites-deploying/technical-requirements.md).
-
-### Capacidade de enviar um email de notificação para um grupo usando [!UICONTROL Atribuir tarefa] {#group-notification-email}
-
-Agora é possível enviar um email de notificação para um endereço de email de grupo usando a etapa do fluxo de trabalho Atribuir tarefa .
-
-### Capacidade de recuperar um rascunho de Comunicação Interativa após modificar a fonte Comunicação Interativa {#retrieve-draft-after-source-modifications}
-
-Agora é possível recuperar uma comunicação interativa salva como rascunho depois de fazer alterações na origem da Comunicação Interativa.
-
-### Definir nome de domínio personalizado para carregar, renderizar e validar o serviço reCAPTCHA {#set-custom-domain-name-recaptcha}
-
-O serviço reCAPTCHA usa `https://www.recaptcha.net/` como o domínio padrão. Agora você pode modificar as configurações para definir `https://www.google.com/` ou qualquer nome de domínio personalizado para carregar, renderizar e validar o serviço reCAPTCHA.
-
-### Aprimoramentos de dados de entrada para [!UICONTROL Invoke Form Data Model Service] etapa do fluxo de trabalho {#input-data-enhancements-fdm}
-
-Ao selecionar um modelo de dados de formulário e um serviço na etapa de fluxo de trabalho [!UICONTROL Invoke Form Data Model Service], você especifica os argumentos de serviço para dados de entrada.
-
-Se você selecionar a opção [!UICONTROL Relative to Payload] para anexar um arquivo como um argumento de serviço, agora será possível especificar o caminho da pasta que contém o arquivo em vez do nome real do arquivo. Definir o nome da pasta, em vez do nome do anexo do arquivo, permite reutilizar modelos de fluxo de trabalho. Você não limita o modelo de fluxo de trabalho a um único nome de anexo de arquivo.
-
-### Capacidade de usar várias páginas principais em um modelo de Documento de registro {#use-multiple-master-pages-dor-template}
-
-Agora você pode usar várias páginas principais em um modelo de Documento de registro. Como resultado, agora você pode ter cabeçalho, rodapé, fontes, informações de logotipo diferentes na página de título e outras páginas do modelo.
-
-### Suporte a quebras de página no Documento de registro {#support-page-breaks-dor}
-
-Agora é possível adicionar quebras de página a um Documento de registro. Como resultado, se um painel for quebrado em páginas, você poderá adicionar uma quebra de página para mover o painel para uma nova página em um Documento de registro.
-
 ## Principais recursos dos [!DNL Experience Manager] 6.5 Service Packs anteriores {#key-features-previous-service-packs}
+
+### Capacidade de restaurar páginas e árvore excluídas (6.5.9.0) {#ability-to-restore-pages-tree}
+
+Agora é possível restaurar as páginas excluídas e a visualização de árvore inteira em uma página [!DNL Experience Manager Sites].
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
@@ -150,6 +127,14 @@ Agora é possível selecionar estilos na caixa de diálogo do componente usando 
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
 
+
+* Atualização do nome das localidades e regiões chinesas relacionadas a Hong Kong, Macau e Taiwan, para torná-las consistentes com as opiniões políticas e sociais chinesas (6.5.9.0).
+
+* Uma configuração opcional é introduzida para alterar a capitalização nas IDs de email na resposta da API ACP de [!DNL Adobe Experience Manager] (6.5.9.0).
+
+   ![configuração para alterar as IDs de email para minúsculas na resposta ACP de  [!DNL Experience Manager]](assets/email-lowcase-config.png)
+
+* O contraste do texto e dos ícones em segundo plano é aprimorado para vários recursos. Essa implementação das diretrizes da Web Content Accessibility Guidelines (WCAG) torna [!DNL Assets] mais acessível para usuários com visão e percepção de cor limitadas. Consulte [aprimoramentos de acessibilidade em [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590) (6.5.9.0).
 * Ao usar [a funcionalidade Ativos conectados](/help/assets/use-assets-across-connected-assets-instances.md), agora é possível visualizar uma lista de todas as páginas [!DNL Sites] que usam o ativo. Essas referências a um ativo estão disponíveis na página [!UICONTROL Propriedades] de um ativo. Isso permite que administradores, profissionais de marketing e bibliotecas tenham uma visão completa do uso dos ativos, permitindo um melhor rastreamento, gerenciamento e consistência da marca (6.5.8.0).
 
 * Ao excluir um ativo referenciado em uma página da Web, [!DNL Experience Manager] exibe um aviso. É possível forçar a exclusão de um ativo referenciado ou verificar e modificar as referências exibidas na página [!DNL Properties] do ativo. Clicar nas referências abre as páginas locais e remotas [!DNL Sites] (6.5.8.0).
@@ -245,6 +230,16 @@ Uma nova coluna classificável para a data de criação dos ativos é adicionada
 
 ### Dynamic Media {#dynamic-media-previous-service-packs}
 
+* [[!DNL Dynamic Media] é mais ](sp-release-notes.md#assets-accessibility-6590) acessível em termos de:
+
+   * Facilidade de uso com teclas do teclado.
+   * O contraste (com fundo) do texto, do texto de espaço reservado e dos controles em vários editores.
+   * Acessibilidade e narração por leitores de tela.
+
+* Fornece imagens de melhor qualidade com eficiência em dispositivos com exibições de alta resolução e largura de banda de rede restrita, com DPR (Device Pixel Ratio) de imagem inteligente e otimização da largura de banda da rede. Consulte [Perguntas frequentes sobre a geração inteligente de imagens](/help/assets/imaging-faq.md) (6.5.9.0).
+
+* [!DNL Dynamic Media] O delivery (modificador de `fmt` URL) agora é compatível com o formato de imagem de próxima geração AVIF (AV1 Image format). Para obter mais detalhes e linha do tempo, consulte [image service and rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) (6.5.9.0).
+
 #### Invalidar o conteúdo em cache do CDN (6.5.6.0) {#invalidate-cdn-cached-content}
 
 Agora você pode usar a interface do usuário [!DNL Dynamic Media] para invalidar o conteúdo em cache da Rede de entrega de conteúdo (CDN). Como resultado, os ativos atualizados estão disponíveis instantaneamente em vez de esperar que o cache expire. Você pode invalidar o CDN ao:
@@ -265,9 +260,39 @@ A geração de imagens inteligentes usa as características de visualização ex
 
 #### Recorte inteligente em perfis de vídeo para Dynamic Media (6.5.3.0) {#smart-crop-video}
 
-Recorte inteligente para vídeo - um recurso opcional disponível em Perfis de vídeo - é uma ferramenta que usa o poder da inteligência artificial no Adobe Sensei para detectar e recortar automaticamente o ponto focal em qualquer vídeo adaptável ou vídeo progressivo que você tenha carregado, independentemente do tamanho. Consulte [Sobre como usar o recorte inteligente em perfis de vídeo](../assets/video-profiles.md).
+Recorte inteligente para vídeo - um recurso opcional disponível em Perfis de vídeo - usa o Adobe Sensei para detectar e recortar automaticamente o ponto focal em qualquer vídeo adaptável ou vídeo progressivo, independentemente do tamanho. Consulte [sobre como usar o recorte inteligente em perfis de vídeo](../assets/video-profiles.md).
 
 ### Formulários do Experience Manager {#aem-forms-previous-service-packs}
+
+#### Suporte para [!DNL Azul Zulu OpenJDK] (6.5.9.0) {#support-azul-zulu}
+
+Agora você pode desenvolver e operar aplicativos com [!DNL Azul Zulu] criações de [!DNL OpenJDK] para [!DNL Experience Manager Forms] em implantações OSGi. Para obter mais informações, consulte [Notas de versão do Experience Manager 6.5 Service Pack 9](sp-release-notes.md) e [Requisitos técnicos](../sites-deploying/technical-requirements.md).
+
+#### Capacidade de enviar um email de notificação para um grupo usando [!UICONTROL Atribuir tarefa] (6.5.9.0) {#group-notification-email}
+
+Agora é possível enviar um email de notificação para um endereço de email de grupo usando a etapa do fluxo de trabalho Atribuir tarefa .
+
+#### Capacidade de recuperar um rascunho de Comunicação interativa após modificar a fonte Comunicação interativa (6.5.9.0) {#retrieve-draft-after-source-modifications}
+
+Agora é possível recuperar uma comunicação interativa salva como rascunho depois de alterar a fonte Comunicação interativa.
+
+#### Definir nome de domínio personalizado para carregar, renderizar e validar o serviço reCAPTCHA (6.5.9.0) {#set-custom-domain-name-recaptcha}
+
+O serviço reCAPTCHA usa `https://www.recaptcha.net/` como o domínio padrão. Agora você pode modificar as configurações para definir `https://www.google.com/` ou qualquer nome de domínio personalizado para carregar, renderizar e validar o serviço reCAPTCHA.
+
+#### Aprimoramentos de dados de entrada para [!UICONTROL Invoke Form Data Model Service] etapa do fluxo de trabalho (6.5.9.0) {#input-data-enhancements-fdm}
+
+Ao selecionar um modelo de dados de formulário e um serviço na etapa de fluxo de trabalho [!UICONTROL Invoke Form Data Model Service], você especifica os argumentos de serviço para dados de entrada.
+
+Se você selecionar a opção [!UICONTROL Relative to Payload] para anexar um arquivo como um argumento de serviço, agora será possível especificar o caminho da pasta que contém o arquivo em vez do nome real do arquivo. Definir o nome da pasta, em vez do nome do anexo do arquivo, permite reutilizar modelos de fluxo de trabalho. Você não limita o modelo de fluxo de trabalho a um único nome de anexo de arquivo.
+
+#### Capacidade de usar várias páginas principais em um modelo de Documento de registro (6.5.9.0) {#use-multiple-master-pages-dor-template}
+
+Agora você pode usar várias páginas principais em um modelo de Documento de registro. Como resultado, agora você pode ter cabeçalho, rodapé, fontes, informações de logotipo diferentes na página de título e outras páginas do modelo.
+
+#### Quebras de página de suporte no Documento de registro (6.5.9.0) {#support-page-breaks-dor}
+
+Agora é possível adicionar quebras de página a um Documento de registro. Como resultado, se um painel for quebrado em páginas, você poderá adicionar uma quebra de página para mover o painel para uma nova página em um Documento de registro.
 
 #### Mostrar ou ocultar o componente CAPTCHA em um formulário adaptável com base nas regras (6.5.8.0) {#show-hide-captcha}
 
@@ -428,15 +453,15 @@ Você pode usar a API em lote para produzir várias comunicações interativas d
 
 Entre 25 de fevereiro de 2021 e 27 de maio de 2021, o Adobe lançou o seguinte, além dos Service Packs:
 
-* [!DNL Adobe Experience Manager] como Cloud Service  [2021.2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-2-0.html),  [2021.3.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-3-0.html) e  [2021.4.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html#release-date).
+* [!DNL Adobe Experience Manager] como Cloud Service  [2021.6.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-6-0.html),  [2021.7.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-7-0.html) e  [2021.8.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en).
 
-* [[!DNL Experience Manager] aplicativo de desktop 2.1 (2.1.2.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+* [[!DNL Experience Manager] aplicativo de desktop 2.1 (2.1.3.3)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager Screens: Feature Pack 202103](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202103.html)
+* [Experience Manager Screens: Feature Pack 202105](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202105.html?lang=en)
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Adobe Experience Manager] Documentação 6.5](../user-guide/home.md)
-* [Notas de versão gerais para [!DNL Adobe Experience Manager] 6.5](release-notes.md)
-* [Notas de versão do Service Pack para [!DNL Adobe Experience Manager] 6.5](sp-release-notes.md)
+>* [[!DNL Experience Manager] Documentação 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR)
+>* [Notas de versão gerais de disponibilidade para [!DNL Experience Manager] 6.5](release-notes.md)
+>* [Notas de versão do Service Pack para [!DNL Experience Manager] 6.5](sp-release-notes.md)
 

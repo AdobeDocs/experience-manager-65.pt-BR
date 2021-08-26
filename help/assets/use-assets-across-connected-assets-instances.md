@@ -3,11 +3,11 @@ title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Use ativos disponíveis em uma implantação remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
 role: User, Admin, Leader
-feature: Ativos, usuários e grupos conectados
+feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 37073594b45995ade7f0e73c519feb21adf48482
 workflow-type: tm+mt
-source-wordcount: '2742'
+source-wordcount: '2732'
 ht-degree: 29%
 
 ---
@@ -41,7 +41,7 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 
 Os autores pesquisam imagens e os seguintes tipos de documentos no Localizador de conteúdo e usam os ativos pesquisados no Editor de páginas. Os documentos são adicionados ao componente `Download` e as imagens ao componente `Image`. Os autores também adicionam os ativos remotos em qualquer componente [!DNL Experience Manager] personalizado que estende os componentes padrão `Download` ou `Image`. Os formatos compatíveis são:
 
-* **Formatos** de imagem: Os formatos compatíveis com o componente  [de Imagem ](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) . [!DNL Dynamic Media] imagens não são compatíveis.
+* **Formatos** de imagem: Os formatos compatíveis com o componente  [de Imagem ](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) .
 * **Formatos** de documento: Consulte os formatos de documento  [suportados](assets-formats.md#supported-document-formats).
 
 ### Usuários e grupos envolvidos {#users-and-groups-involved}
@@ -188,7 +188,7 @@ Para visualizar e gerenciar referências na implantação [!DNL Assets], siga es
 * Os ativos locais não são sincronizados com os ativos originais na implantação remota. As edições, exclusões ou revogação de permissões na implantação do DAM não são propagadas para a jusante.
 * Os ativos locais são cópias somente leitura. [!DNL Experience Manager]Os componentes do fazem edições não destrutivas nos ativos. Nenhuma outra edição é permitida.
 * Os ativos buscados localmente estão disponíveis apenas para fins de criação. Os fluxos de trabalho de atualização de ativos não podem ser aplicados e os metadados não podem ser editados.
-* Somente as imagens e os formatos de documento listados são compatíveis. [!DNL Dynamic Media] ativos,  [!DNL Content Fragments] e não  [!DNL Experience Fragments] são compatíveis.
+* Somente as imagens e os formatos de documento listados são compatíveis. [!DNL Content Fragments] e não  [!DNL Experience Fragments] são compatíveis.
 * [!DNL Experience Manager] não busca os esquemas de metadados. Significa que nem todos os metadados buscados podem ser exibidos. Se o esquema for atualizado separadamente na implantação [!DNL Sites], todas as propriedades de metadados serão exibidas.
 * Todos os autores [!DNL Sites] têm permissões de leitura nas cópias buscadas, mesmo que os autores não possam acessar a implantação remota do DAM.
 * Não há suporte de API para personalizar a integração.
