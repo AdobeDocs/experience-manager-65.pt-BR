@@ -1,30 +1,20 @@
 ---
 title: Markdown
-seo-title: Markdown
-description: Durante a criação, o editor de fragmento de conteúdo usa a sintaxe de marcação para permitir que você grave conteúdo com facilidade.
-seo-description: Durante a criação, o editor de fragmento de conteúdo usa a sintaxe de marcação para permitir que você grave conteúdo com facilidade.
-uuid: afcbf82f-3a75-4491-9172-706188db65bb
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: content-fragments
-content-type: reference
-discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
-docset: aem65
-feature: Fragmentos de conteúdo
-role: User, Admin
-exl-id: 28e1052f-62b5-47bc-9bc8-f2d92f0254f6
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: Entenda como o editor de Fragmento de conteúdo usa a sintaxe de marcação para permitir que você crie conteúdo sem periféricos com facilidade.
+feature: Content Fragments
+role: User
+source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '522'
 ht-degree: 4%
 
 ---
 
-# Markdown{#markdown}
+# Markdown {#markdown}
 
-Quando você está [criando](content-fragments-variations.md#authoring-your-content), o editor de fragmento de conteúdo usa a sintaxe *markdown* para permitir que você grave facilmente o conteúdo:
+Quando você está [criando](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), o editor de fragmento de conteúdo usa a sintaxe *markdown* para permitir que você grave facilmente o conteúdo sem cabeçalho:
 
-![editor de marcação](/help/assets/content-fragments/assets/cfm-6420-08.png)
+![editor de marcação](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 Você pode definir:
 

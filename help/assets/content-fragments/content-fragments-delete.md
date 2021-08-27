@@ -1,44 +1,36 @@
 ---
 title: Fragmentos de conteúdo - excluir considerações
-seo-title: Fragmentos de conteúdo - excluir considerações
-description: Fragmentos de conteúdo - excluir considerações
-seo-description: Fragmentos de conteúdo - excluir considerações
-uuid: e7ac1809-159f-4d02-ad30-dc6c246e8a04
-contentOwner: aheimoz
-topic-tags: content-fragments
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-content-type: reference
-discoiquuid: ec21237f-9186-49b4-8039-99df4db7c14a
-docset: aem65
-feature: Fragmentos de conteúdo
-role: User, Admin
-exl-id: cc212f95-0be0-4705-8dfd-beda9bfb13e0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: Revise essas importantes considerações antes de definir as políticas de exclusão dos Fragmentos de conteúdo no AEM. Os Fragmentos de conteúdo são uma ferramenta poderosa para fornecer conteúdo sem interface, e as implicações de excluí-los devem ser cuidadosamente consideradas.
+feature: Content Fragments
+role: User
+source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 13%
+source-wordcount: '509'
+ht-degree: 9%
 
 ---
 
-# Fragmentos de conteúdo - excluir considerações{#content-fragments-delete-considerations}
+# Fragmentos de conteúdo - excluir considerações {#content-fragments-delete-considerations}
+
+Revise essas importantes considerações antes de definir as políticas de exclusão dos Fragmentos de conteúdo no AEM. Os Fragmentos de conteúdo são uma ferramenta poderosa para fornecer conteúdo sem interface, e as implicações de excluí-los devem ser cuidadosamente consideradas.
 
 ## Permissões - Excluir ou não excluir {#permissions-delete-or-not-delete}
 
 A capacidade de excluir conteúdo é poderosa, mas potencialmente sensível, com muitos setores precisando restringir e controlar a distribuição desses privilégios.
 
-Com relação às permissões de exclusão, os Fragmentos de conteúdo devem ser considerados em dois níveis:
+Em relação às permissões de exclusão, os Fragmentos de conteúdo devem ser considerados em dois níveis:
 
 1. **O Fragmento do conteúdo como uma única entidade.**
 
    * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo  **e excluir um fragmento** inteiro.
    * **Permissões**: A permissão  [](/help/sites-administering/security.md#actions) Excluir pode ser  [atribuída por meio do Gerenciamento de usuários e/ou grupos](/help/sites-administering/security.md#managing-permissions).
 
-1. **As várias subentidades que compõem um fragmento de conteúdo; por exemplo, variações, subnós.**
+2. **As várias subentidades que compõem um fragmento de conteúdo; por exemplo, variações, subnós.**
 
    A operação básica do editor de fragmentos de conteúdo requer que esses subelementos transitórios possam ser excluídos. Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar conteúdo associado.
 
    * **Caso** de uso: Um usuário que precisa editar/atualizar um fragmento de conteúdo -  **sem ter permissão para excluir um fragmento** inteiro.
-   * **Permissões**: Consulte  [Permissões necessárias somente para a funcionalidade do editor](/help/assets/content-fragments/content-fragments-delete.md#permissions-required-for-editor-functionality-only).
+   * **Permissões**: Consulte  [Permissões necessárias somente para a funcionalidade do editor](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >

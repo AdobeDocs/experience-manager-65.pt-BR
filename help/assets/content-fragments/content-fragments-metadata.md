@@ -1,44 +1,39 @@
 ---
 title: Metadados - propriedades dos fragmentos
-seo-title: Metadados - propriedades dos fragmentos
-description: É possível exibir e editar os metadados (propriedades) dos fragmentos de conteúdo.
-seo-description: É possível exibir e editar os metadados (propriedades) dos fragmentos de conteúdo.
-uuid: 5cd4fe03-4a24-44f2-aad7-079d7c421353
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: content-fragments
-content-type: reference
-discoiquuid: 148803f3-1e7b-4d35-99c5-e0d82f3adf24
-docset: aem65
-feature: Fragmentos de conteúdo
-role: User, Admin
-exl-id: 319cd6b0-c866-4838-96a5-eceb7edae9af
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: Veja como visualizar e editar as propriedades de metadados dos Fragmentos de conteúdo no AEM para ajustar o conteúdo sem cabeçalho.
+feature: Content Fragments
+role: User
+source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 13%
+source-wordcount: '206'
+ht-degree: 5%
 
 ---
 
-# Metadados - propriedades dos fragmentos{#metadata-fragment-properties}
+# Metadados - propriedades dos fragmentos {#metadata-fragment-properties}
+
+Veja como visualizar e editar as propriedades de metadados dos Fragmentos de conteúdo no AEM para ajustar o conteúdo sem cabeçalho.
 
 ## Editar propriedades / metadados {#editing-properties-meta-data}
 
 Você pode exibir e editar os metadados (propriedades) dos fragmentos de conteúdo:
 
 1. No console **Assets**, navegue até o local do fragmento de conteúdo.
-1. Ou:
+2. Ou:
 
    * Selecione [**Exibir propriedades** para abrir as caixas de diálogo](/help/assets/manage-assets.md#editing-properties). Depois de aberto para exibição, você também pode editar.
-   * Abra o [fragmento de conteúdo para Editar](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) e selecione **Metadados** no painel lateral.
+   * Abra o fragmento de conteúdo para edição e selecione **Metadados** no painel lateral.
 
-   ![cfm-6420-06](assets/cfm-6420-06.png)
+   ![metadados](assets/cfm-metadata-01.png)
 
-1. A guia **Básico** fornece opções que podem ser exibidas ou editadas:
+3. A guia **Básico** fornece opções que podem ser exibidas ou editadas:
 
    * Miniatura, para a qual você pode **Fazer upload da imagem**
+   * **O** modelo de fragmento de conteúdo indica o modelo usado para criar o fragmento atual
    * **Título**
    * **Descrição**
    * **Tags**
+      * [](/help/sites-authoring/tags.md) As tags são particularmente poderosas ao organizar os fragmentos, pois podem ser usadas para classificação de conteúdo e taxonomia. As tags podem ser usadas para encontrar conteúdo (por tags) e aplicar operações em massa.
+Por exemplo, você pode marcar fragmentos relevantes como &quot;lançamento de Natal&quot; para permitir a navegação somente nesses como um subconjunto ou copiá-los para uso com outro lançamento futuro em uma nova pasta.
    * Criado (somente exibição)
-   ![cfm-6420-07](assets/cfm-6420-07.png)
+   ![metadados](assets/cfm-metadata-02.png)

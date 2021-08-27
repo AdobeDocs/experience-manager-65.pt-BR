@@ -1,28 +1,19 @@
 ---
-title: Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets
-seo-title: Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets
-description: Saiba mais sobre o Suporte a fragmentos de conteúdo na API HTTP do AEM Assets.
-seo-description: Saiba mais sobre o Suporte a fragmentos de conteúdo na API HTTP do AEM Assets.
-uuid: c500d71e-ceee-493a-9e4d-7016745c544c
-contentOwner: aheimoz
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-content-type: reference
-topic-tags: extending-assets
-discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
-docset: aem65
-feature: Fragmentos de conteúdo
-role: User, Admin
-exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+title: Suporte a fragmentos de conteúdo do Adobe Experience Manager na API HTTP do Assets
+description: Saiba mais sobre o suporte para Fragmentos de conteúdo na API HTTP do Assets, uma parte importante AEM recurso de entrega sem cabeçalho.
+feature: Content Fragments,Assets HTTP API
+source-git-commit: 2f647fc640d3809dc684bce397831ab37fb94b07
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 3%
+source-wordcount: '1934'
+ht-degree: 2%
 
 ---
 
-# Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets{#content-fragments-support-in-aem-assets-http-api}
+# Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
 ## Visão geral {#overview}
+
+Saiba mais sobre o suporte para Fragmentos de conteúdo na API HTTP do Assets, uma parte importante AEM recurso de entrega sem cabeçalho.
 
 >[!NOTE]
 >
@@ -32,18 +23,23 @@ ht-degree: 3%
 >* incluindo suporte para Fragmentos de conteúdo
 
 >
->
-A implementação atual da API HTTP do AEM Assets é REST.
+>A implementação atual da API HTTP de ativos é baseada no estilo arquitetônico [REST](https://en.wikipedia.org/wiki/Representational_state_transfer).
 
-A API REST do Adobe Experience Manager (AEM) [Assets](/help/assets/mac-api-assets.md) permite que os desenvolvedores acessem o conteúdo (armazenado em AEM) diretamente pela API HTTP, por meio de operações CRUD (Criar, Ler, Atualizar, Excluir).
+A [API REST do Assets](/help/assets/mac-api-assets.md) permite que os desenvolvedores do Adobe Experience Manager acessem o conteúdo (armazenado em AEM) diretamente sobre a API HTTP, por meio de operações CRUD (Criar, Ler, Atualizar, Excluir).
 
-A API permite operar o AEM como um CMS (Content Management System) sem periféricos fornecendo serviços de conteúdo a um aplicativo front-end JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON.
+A API permite operar o Adobe Experience Manager como um CMS (Content Management System) sem periféricos fornecendo serviços de conteúdo a um aplicativo front-end JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON.
 
 Por exemplo, Aplicativos de página única (SPA), baseados em estrutura ou personalizados, exigem conteúdo fornecido através da API HTTP, geralmente no formato JSON.
 
-Embora AEM os Componentes principais forneçam uma API muito abrangente, flexível e personalizável que possa servir as operações de Leitura necessárias para essa finalidade e cuja saída JSON possa ser personalizada, eles exigem AEM saber-fazer de implementação do WCM (Web Content Management), pois devem ser hospedados em páginas (API) que são baseadas em modelos de AEM dedicados. Nem todas as organizações SPA de desenvolvimento têm acesso a esses recursos.
+Embora [AEM Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) ofereça uma API muito abrangente, flexível e personalizável que possa servir as operações de Leitura necessárias para essa finalidade e cuja saída JSON possa ser personalizada, eles exigem AEM know-how WCM (Gerenciamento de conteúdo da Web) para implementação, pois devem ser hospedados em páginas que se baseiam em modelos de AEM dedicados. Nem todas as organizações SPA de desenvolvimento têm acesso direto a esses conhecimentos.
 
-É quando a API REST do Assets pode ser usada. Ela permite que os desenvolvedores acessem ativos (por exemplo, imagens e fragmentos de conteúdo) diretamente, sem precisar primeiro incorporá-los a uma página e entregar seu conteúdo em formato JSON serializado. (Observe que não é possível personalizar a saída JSON da API REST de ativos). A API REST de ativos também permite que os desenvolvedores modifiquem o conteúdo, criando ativos novos, atualizados ou excluindo ativos, fragmentos de conteúdo e pastas existentes.
+É quando a API REST do Assets pode ser usada. Ela permite que os desenvolvedores acessem ativos (por exemplo, imagens e fragmentos de conteúdo) diretamente, sem a necessidade de primeiro incorporá-los a uma página e entregar seu conteúdo em formato JSON serializado.
+
+>[!NOTE]
+>
+>Não é possível personalizar a saída JSON da API REST de ativos.
+
+A API REST de ativos também permite que os desenvolvedores modifiquem o conteúdo, criando ativos novos, atualizados ou excluindo ativos, fragmentos de conteúdo e pastas existentes.
 
 A API REST de ativos:
 
@@ -57,7 +53,23 @@ A API REST de ativos está disponível em cada instalação pronta para uso de u
 
 ## Principais conceitos {#key-concepts}
 
-A API REST de ativos oferece acesso ao estilo [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) para ativos armazenados em uma instância de AEM. Ele usa o terminal `/api/assets` e requer o caminho do ativo para acessá-lo (sem o `/content/dam` à esquerda).
+A API REST de ativos oferece acesso ao estilo [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) para ativos armazenados em uma instância de AEM.
+
+Ele usa o terminal `/api/assets` e requer o caminho do ativo para acessá-lo (sem o `/content/dam` à esquerda).
+
+* Isso significa que para acessar o ativo em:
+   * `/content/dam/path/to/asset`
+* Você precisa solicitar:
+   * `/api/assets/path/to/asset`
+
+Por exemplo, para acessar `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+
+>[!NOTE]
+>Acesso ao:
+>
+>* `/api/assets` **não** precisa do uso do  `.model` seletor.
+>* `/content/path/to/page` **** Não requer o uso do  `.model` seletor.
+
 
 O método HTTP determina a operação a ser executada:
 
@@ -81,12 +93,14 @@ Isso significa que as solicitações subsequentes (`write`) não podem ser combi
 ### AEM (Ativos) REST API versus AEM Componentes {#aem-assets-rest-api-versus-aem-components}
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>Aspecto</td>
-   <td>API REST de ativos<br /> </td>
-   <td>Componente AEM<br /> (componentes que usam Modelos Sling)</td>
+   <td>API REST de ativos<br/> </td>
+   <td>Componente AEM<br/> (componentes que usam Modelos Sling)</td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>Casos de uso suportados</td>
    <td>Finalidade geral.</td>
@@ -99,9 +113,11 @@ Isso significa que as solicitações subsequentes (`write`) não podem ser combi
   </tr>
   <tr>
    <td>Acesso</td>
-   <td><p>Pode ser acessado diretamente.</p> <p>Usa o ponto de extremidade <code>/api/assets </code>mapeado para <code>/content/dam</code> (no repositório).</p> <p>Por exemplo, para acessar:<code class="code">
-       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> solicitação:<br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td>
-   <td><p>Precisa ser referenciado por meio de um componente de AEM em uma página de AEM.</p> <p>Usa o seletor <code>.model</code> para criar a representação JSON.</p> <p>Um exemplo de URL seria semelhante a:<br /> <code>https://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</code></p> </td>
+   <td><p>Pode ser acessado diretamente.</p> <p>Usa o ponto de extremidade <code>/api/assets </code>mapeado para <code>/content/dam</code> (no repositório).</p> 
+   <p>Um caminho de exemplo seria: <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
+   </td>
+    <td><p>Precisa ser referenciado por meio de um componente de AEM em uma página de AEM.</p> <p>Usa o seletor <code>.model</code> para criar a representação JSON.</p> <p>Um caminho de exemplo seria:<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
+   </td>
   </tr>
   <tr>
    <td>Segurança</td>
@@ -129,11 +145,10 @@ Se a API REST do Assets for usada em um ambiente sem requisitos de autenticaçã
 >
 >Para obter mais informações, consulte:
 >
->* [Explicação do CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
->* [Vídeo - Desenvolvimento do CORS com AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+>* [Explicação do CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Vídeo - Desenvolvimento do CORS com AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 
 >
-
 
 
 Em ambientes com requisitos de autenticação específicos, o OAuth é recomendado.
@@ -144,8 +159,8 @@ Fragmentos de conteúdo são um tipo específico de ativo, consulte [Trabalhar c
 
 Para obter mais informações sobre recursos disponíveis por meio da API, consulte:
 
-* [Recursos disponíveis ](/help/assets/mac-api-assets.md#assets) da API REST de ativos
-* [Tipos de entidade](/help/assets/assets-api-content-fragments.md#entity-types)
+* A [API REST de ativos](/help/assets/mac-api-assets.md)
+* [Tipos de entidade](/help/assets/assets-api-content-fragments.md#entity-types), onde os recursos específicos para cada tipo suportado (conforme relevante para Fragmentos de conteúdo) são explicados
 
 ### Paginação {#paging}
 
@@ -164,7 +179,7 @@ A resposta conterá informações de paginação como parte da seção `properti
 
 `GET /api/assets.json?offset=2&limit=3`
 
-```
+```json
 ...
 "properties": {
     ...
@@ -184,17 +199,17 @@ A resposta conterá informações de paginação como parte da seção `properti
 
 As pastas atuam como contêineres para ativos e outras pastas. Eles refletem a estrutura do repositório de conteúdo AEM.
 
-A API REST do Assets expõe o acesso às propriedades de uma pasta; por exemplo, seu nome, título etc. Os ativos são expostos como entidades filhas de pastas.
+A API REST do Assets expõe o acesso às propriedades de uma pasta; por exemplo, seu nome, título etc. Os ativos são expostos como entidades filhas de pastas e subpastas.
 
 >[!NOTE]
 >
->Dependendo do tipo de ativo, a lista de entidades-filho já pode conter o conjunto completo de propriedades que define a respectiva entidade-filho. Como alternativa, apenas um conjunto reduzido de propriedades pode ser exposto para uma entidade nesta lista de entidades-filho.
+>Dependendo do tipo de ativo dos ativos e pastas filhos, a lista de entidades filhas já pode conter o conjunto completo de propriedades que define a respectiva entidade filho. Como alternativa, apenas um conjunto reduzido de propriedades pode ser exposto para uma entidade nesta lista de entidades-filho.
 
 ### Ativos {#assets}
 
-Se um ativo for solicitado, a resposta retornará seus metadados; como título, nome e outras informações, conforme definido pelo respectivo schema de ativos.
+Se um ativo for solicitado, a resposta retornará seus metadados; como título, nome e outras informações conforme definido pelo respectivo schema de ativos.
 
-Os dados binários de um ativo são expostos como um link SIREN do tipo `content` (também conhecido como `rel attribute`).
+Os dados binários de um ativo são expostos como um link SIREN do tipo `content`.
 
 Os ativos podem ter várias representações. Normalmente, elas são expostas como entidades secundárias, sendo uma exceção uma representação em miniatura, que é exposta como um link do tipo `thumbnail` ( `rel="thumbnail"`).
 
@@ -217,7 +232,7 @@ Fragmentos de conteúdo:
 
 Atualmente, os modelos que definem a estrutura de um fragmento de conteúdo não são expostos por meio de uma API HTTP. Portanto, o *consumidor* precisa saber sobre o modelo de um fragmento (pelo menos um mínimo) - embora a maioria das informações possa ser inferida da carga; como tipos de dados, etc. fazem parte da definição.
 
-Para criar um novo fragmento de conteúdo, o caminho (repositório interno) deve ser fornecido.
+Para criar um novo fragmento de conteúdo, o caminho (repositório interno) do modelo deve ser fornecido.
 
 #### Conteúdo associado {#associated-content}
 
@@ -227,15 +242,16 @@ O conteúdo associado não está exposto no momento.
 
 O uso pode ser diferente dependendo se você está usando um autor ou um ambiente de publicação AEM, juntamente com seu caso de uso específico.
 
-* A criação é estritamente vinculada a uma instância do autor ([e atualmente não há como replicar um fragmento para publicar usando essa API](/help/assets/assets-api-content-fragments.md#limitations)).
+* É altamente recomendável que a criação seja vinculada a uma instância do autor ([e atualmente não há como replicar um fragmento para publicar usando essa API](/help/assets/assets-api-content-fragments.md#limitations)).
 * A entrega é possível de ambos, pois AEM serve o conteúdo solicitado somente no formato JSON.
 
    * O armazenamento e o delivery de uma instância de autor de AEM devem ser suficientes para aplicativos de biblioteca de mídia por trás do firewall.
+
    * Para entrega na Web ao vivo, recomenda-se uma instância de publicação de AEM.
 
 >[!CAUTION]
 >
->A configuração do dispatcher em instâncias AEM nuvem pode bloquear o acesso a `/api`.
+>A configuração do dispatcher em instâncias AEM pode bloquear o acesso a `/api`.
 
 >[!NOTE]
 >
@@ -249,7 +265,7 @@ O uso é via:
 
 Por exemplo:
 
-`https://localhost:4502/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.json`
+`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 A resposta é JSON serializado com o conteúdo estruturado como no fragmento de conteúdo. As referências são fornecidas como URLs de referência.
 
@@ -274,7 +290,7 @@ O uso é via
 
 O corpo deve conter uma representação JSON do que deve ser atualizado para o fragmento de conteúdo especificado.
 
-Pode ser simplesmente o título ou a descrição de um fragmento de conteúdo, um único elemento ou todos os valores e/ou metadados do elemento. Também é obrigatório fornecer uma propriedade `cq:model` válida para atualizações.
+Pode ser simplesmente o título ou a descrição de um fragmento de conteúdo, um único elemento ou todos os valores e/ou metadados do elemento.
 
 ### Excluir {#delete}
 
@@ -286,55 +302,44 @@ O uso é via:
 
 Existem algumas limitações:
 
-* **As variações não podem ser gravadas e atualizadas.** Se essas variações forem adicionadas a uma carga (por exemplo, para atualizações), serão ignoradas. No entanto, a variação será veiculada pelo delivery ( `GET`).
-
 * **No momento, os modelos de fragmento de conteúdo não são compatíveis**: eles não podem ser lidos ou criados. Para criar um novo fragmento de conteúdo ou atualizar um fragmento de conteúdo existente, os desenvolvedores precisam saber o caminho correto para o modelo de fragmento de conteúdo. Atualmente, o único método para obter uma visão geral desses itens é por meio da interface do usuário de administração.
-* **As referências são ignoradas**. Atualmente, não há verificações para determinar se um fragmento de conteúdo existente é referenciado. Portanto, por exemplo, excluir um fragmento de conteúdo pode resultar em problemas em uma página que contém uma referência.
+* **As referências são ignoradas**. Atualmente, não há verificações para determinar se um fragmento de conteúdo existente é referenciado. Portanto, por exemplo, excluir um fragmento de conteúdo pode resultar em problemas em uma página que contenha uma referência para o Fragmento de conteúdo excluído.
+* **Tipo de dados JSON** A saída da API REST do tipo de dados  *JSON* é atualmente baseada em  *sequência de caracteres*.
 
 ## Códigos de status e mensagens de erro {#status-codes-and-error-messages}
 
 Os seguintes códigos de status podem ser vistos nas circunstâncias relevantes:
 
-* **200 (OK)**
-
-   Retornado quando:
+* **200** (OK) Retornado quando:
 
    * solicitando um fragmento de conteúdo por meio de `GET`
-
    * atualização bem-sucedida de um fragmento de conteúdo via `PUT`
 
-* **201 (Criado)**
-
-   Retornado quando:
+* **201**  (Criado) Retornado quando:
 
    * criação com êxito de um fragmento de conteúdo via `POST`
 
-* **404 (Não encontrado)**
-
-   Retornado quando:
+* **404**  (Não encontrado) Retornado quando:
 
    * o fragmento de conteúdo solicitado não existe
 
-* **500 (Erro interno do servidor)**
+* **500**  (Erro interno do servidor)
 
    >[!NOTE]
    >
    >Este erro é retornado:
    >
-   >
-   >
-   >    * quando ocorre um erro que não pode ser identificado com um código específico
-   >    * quando a carga fornecida não era válida
+   >* quando ocorre um erro que não pode ser identificado com um código específico
+   >* quando a carga fornecida não era válida
 
 
    A seguir são apresentados cenários comuns quando esse status de erro é retornado, juntamente com a mensagem de erro (monospace) gerada:
 
    * A pasta pai não existe (ao criar um fragmento de conteúdo via `POST`)
-   * Nenhum modelo de fragmento de conteúdo é fornecido (valor nulo), o recurso é nulo (possivelmente um problema de permissão) ou o recurso não é um modelo de fragmento válido:
+   * Nenhum modelo de fragmento de conteúdo é fornecido (cq:model está ausente), não pode ser lido (devido a um caminho inválido ou a um problema de permissão) ou não há um modelo de fragmento válido:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
-      * `Cannot adapt the resource '/foo/bar/qux' to a content fragment template`
    * Não foi possível criar o fragmento de conteúdo (possivelmente um problema de permissão):
 
       * `Could not create content fragment`
