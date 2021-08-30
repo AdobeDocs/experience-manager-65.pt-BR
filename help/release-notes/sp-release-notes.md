@@ -376,7 +376,7 @@ Revise se você usa um recurso ou um recurso em uma implantação. Além disso, 
 
 | Área | Recurso | Substituição |
 |---|---|---|
-| Integrações | A tela de aceitação **[!UICONTROL AEM Cloud Services]** está obsoleta, pois a integração [!DNL Experience Manager] e [!DNL Adobe Target] é atualizada no Experience Manager 6.5. A integração oferece suporte à API Adobe Target Standard. A API usa autenticação pelo Adobe IMS e [!DNL Adobe I/O] e oferece suporte à função crescente do Adobe Launch para preparar [!DNL Experience Manager] páginas para análise e personalização, o assistente de aceitação é funcionalmente irrelevante. | Configure conexões do sistema, autenticação do Adobe IMS e [!DNL Adobe I/O] integrações por meio dos respectivos [!DNL Experience Manager] serviços em nuvem. |
+| Integrações | A tela de aceitação **[!UICONTROL AEM Cloud Services]** está obsoleta, pois a integração [!DNL Experience Manager] e [!DNL Adobe Target] é atualizada no Experience Manager 6.5. A integração oferece suporte à API Adobe Target Standard. A API usa autenticação via Adobe IMS e [!DNL Adobe I/O] e oferece suporte à função crescente do Adobe Launch para preparar [!DNL Experience Manager] páginas para análise e personalização, o assistente de aceitação é funcionalmente irrelevante. | Configure conexões do sistema, autenticação Adobe IMS e [!DNL Adobe I/O] integrações por meio dos respectivos serviços em nuvem [!DNL Experience Manager]. |
 | Conectores | O Conector Adobe JCR para Microsoft® SharePoint 2010 e Microsoft® SharePoint 2013 está obsoleto para o Experience Manager 6.5. | N/A |
 
 ## Problemas conhecidos {#known-issues}
