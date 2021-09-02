@@ -4,10 +4,10 @@ description: Notas de versão específicas do  [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: f9b53df7d235fa6be2cee8c05071790114a91da1
+source-git-commit: d107a31ff109be6ae848eef5d3102f63983fd120
 workflow-type: tm+mt
-source-wordcount: '4376'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -454,10 +454,13 @@ Revise se você usa um recurso ou um recurso em uma implantação. Além disso, 
 
 | Área | Recurso | Substituição |
 |---|---|---|
-| Integrações | A tela de aceitação **[!UICONTROL AEM Cloud Services]** está obsoleta, pois a integração [!DNL Experience Manager] e [!DNL Adobe Target] é atualizada no Experience Manager 6.5. A integração oferece suporte à API Adobe Target Standard. A API usa autenticação via Adobe IMS e [!DNL Adobe I/O] e oferece suporte à função crescente do Adobe Launch para preparar [!DNL Experience Manager] páginas para análise e personalização, o assistente de aceitação é funcionalmente irrelevante. | Configure conexões do sistema, autenticação do Adobe IMS e [!DNL Adobe I/O] integrações por meio dos respectivos [!DNL Experience Manager] serviços em nuvem. |
+| Integrações | A tela de aceitação **[!UICONTROL AEM Cloud Services]** está obsoleta, pois a integração [!DNL Experience Manager] e [!DNL Adobe Target] é atualizada no Experience Manager 6.5. A integração oferece suporte à API Adobe Target Standard. A API usa autenticação pelo Adobe IMS e [!DNL Adobe I/O] e oferece suporte à função crescente do Adobe Launch para preparar [!DNL Experience Manager] páginas para análise e personalização, o assistente de aceitação é funcionalmente irrelevante. | Configure conexões do sistema, autenticação Adobe IMS e [!DNL Adobe I/O] integrações por meio dos respectivos serviços em nuvem [!DNL Experience Manager]. |
 | Conectores | O Conector Adobe JCR para Microsoft® SharePoint 2010 e Microsoft® SharePoint 2013 está obsoleto para o Experience Manager 6.5. | N/A |
 
 ## Problemas conhecidos {#known-issues}
+
+* (Somente para JBoss no Microsoft Windows) Para continuar usando o serviço Criar PDF em [!DNL AEM Forms on JEE], baixe [omniORB_4.1.1_x86_win32_vc10.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/omniORB_4.1.1_x86_win32_vc10.zip) da Distribuição de software, extraia e copie a pasta disponível no arquivo Zip para o seguinte local:
+   `[AEM Forms Installation]\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\CommonNatives\lib`
 
 * Como [!DNL Microsoft Windows Server 2019] não suporta [!DNL MySQL 5.7] e [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] não suporta instalações chave dinâmica para [!DNL AEM Forms 6.5.10.0].
 
