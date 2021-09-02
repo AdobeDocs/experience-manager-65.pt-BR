@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: f0caaaf72a75aff3099f4a9184653353639035e4
+source-git-commit: f3ddfff1c91abf037cc5d9704596a51947322538
 workflow-type: tm+mt
-source-wordcount: '3458'
+source-wordcount: '3457'
 ht-degree: 1%
 
 ---
@@ -184,7 +184,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
    <td>R: Suporte restrito</td>
   </tr>
   <tr>
-   <td>MySQL 5.7.35 </td>
+   <td>MySQL 5.7.34 </td>
    <td>-</td>
    <td>R: Suporte restrito</td>
   </tr>  
@@ -581,7 +581,7 @@ Para obter requisitos adicionais, consulte:
    <td>Pacotes de serviços e atualizações críticas</td>
   </tr>
   <tr>
-   <td>Servidor Microsoft® Windows® 2016 (TBD)</td>
+   <td>Servidor Microsoft® Windows® 2016</td>
    <td>Pacotes de serviços e atualizações críticas</td>
   </tr>
  </tbody>
