@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 95f2268c5965ed73336da9681ae52e755cee36f4
+source-git-commit: 496516f7f4b0e59bbfdae4cbe061a793f28449d2
 workflow-type: tm+mt
-source-wordcount: '3460'
+source-wordcount: '3472'
 ht-degree: 1%
 
 ---
@@ -32,6 +32,7 @@ Este documento lista as plataformas de cliente e servidor compatíveis com o AEM
 >
 >* Para obter uma lista completa de exceções para plataformas de servidor compatíveis, consulte [Exceções para plataformas de servidor compatíveis](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >* O AEM Forms no JEE é compatível somente com as versões em inglês, francês, alemão e japonês dos sistemas operacionais e aplicativos compatíveis.
+
 >
 
 
@@ -516,6 +517,7 @@ O aplicativo AEM Forms agora é compatível com o Apache Cordova. A seguir estã
 >* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do Gerador de PDF. A versão agrupada só deve ser acessada programaticamente com o AEM Forms, durante o período da licença do AEM Forms, para uso com o Gerador de PDF do AEM Forms. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
 >* O serviço PDF Generator não é compatível com o Microsoft Windows 10.
+
 >
 
 
@@ -691,6 +693,7 @@ Para obter requisitos adicionais, consulte:
 >* O Console de administração não é compatível com o Safari.
 >* O Gerenciamento de correspondência não é compatível com o Windows® Internet Explorer 9.0 para formulários AEM 6.1.
 >* O portal Forms oferece suporte ao software de leitor de tela JAWS 14.0 no Internet Explorer 11 para acessibilidade.
+
 >
 
 
@@ -724,6 +727,7 @@ Para obter requisitos adicionais, consulte:
 >[!NOTE]
 >
 >* O Forms Portal é compatível somente com o Safari no iPad.
+
 >
 
 
@@ -806,3 +810,13 @@ As seguintes plataformas são marcadas como obsoletas na versão 6.5.10.0 do AEM
 
 * 09 de setembro de 2020
    * Alteração da versão compatível do iOS para aplicativo AEM Forms para iOS 12. A versão anterior era iOS 11.
+
+* 02 de setembro de 2021
+   * **Atualizações** da plataforma:  [!DNL Adobe Experience Manager Forms] O JEE adicionou suporte às seguintes plataformas:
+      * [!DNL Adobe Acrobat 2020]
+      * [!DNL Ubuntu 20.04]
+      * [!DNL Open Office 4.1.10]
+      * [!DNL Microsoft Office 2019]
+      * [!DNL Microsoft Windows Server 2019]
+      * [!DNL RHEL8]
+
