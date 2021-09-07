@@ -4,9 +4,9 @@ description: Novidades do  [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 5dfce89b2c03625e5f93fdcfaafd91d1ee77f476
+source-git-commit: f75c6898eee9bbd6cdf9ce5e21dacc7898b80938
 workflow-type: tm+mt
-source-wordcount: '4095'
+source-wordcount: '4106'
 ht-degree: 1%
 
 ---
@@ -68,19 +68,15 @@ Este artigo destaca os recursos incluídos no Service Pack mais recente, [princi
 
 * **Suporte para usar a opção literal para definir o valor para uma variável** do tipo JSON: Você pode usar a opção literal para definir um valor para uma variável do tipo JSON na etapa Definir variável de um fluxo de trabalho AEM. A opção literal permite especificar um JSON no formato de uma string.
 
+* [Atualizações](../forms/using/aem-forms-jee-supported-platforms.md) da plataforma:  [!DNL Adobe Experience Manager Forms] O JEE adicionou suporte às seguintes plataformas:
+   * [!DNL Adobe Acrobat 2020]
+   * [!DNL Ubuntu 20.04]
+   * [!DNL Open Office 4.1.10]
+   * [!DNL Microsoft Office 2019]
+   * [!DNL Microsoft Windows Server 2019]
+   * [!DNL RHEL8]
+
 * Adição de suporte para `GuideBridge#getGuidePath` API em [!DNL AEM Forms].
-
-<!--
-
-* [Platform Updates](../forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
-  * [!DNL Adobe Acrobat 2020]
-  * [!DNL Ubuntu 20.04]
-  * [!DNL Open Office 4.1.10]
-  * [!DNL Microsoft Office 2019]
-  * [!DNL Microsoft Windows Server 2019]
-  * [!DNL RHEL8]
-
-  -->
 
 ## Principais recursos dos [!DNL Experience Manager] 6.5 Service Packs anteriores {#key-features-previous-service-packs}
 
