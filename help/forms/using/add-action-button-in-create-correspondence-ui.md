@@ -11,14 +11,14 @@ discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 9f3ca2da0828ce5170622852220a1926df0d5150
+source-git-commit: ba2c753cfd041ccfcd6ba7a45648234290b99d25
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1881'
 ht-degree: 1%
 
 ---
 
-# Adicionar ação/botão personalizado na interface do usuário Criar correspondência {#add-custom-action-button-in-create-correspondence-ui}
+# Adicionar um botão de ação personalizado na interface do usuário Criar correspondência {#add-custom-action-button-in-create-correspondence-ui}
 
 ## Visão geral {#overview}
 
@@ -360,7 +360,7 @@ O processo LiveCycle necessário que habilita o processo de serviço de email.
 >
 >Para visualizar o que esse processo faz ou para criar um processo semelhante, você precisa do Workbench.
 
-1. Faça logon como Administrador no adminui do Livecycle Server em `https:/[lc server]/:[lc port]/adminui`.
+1. Faça logon como Administrador no adminui do LiveCycle® Server em `https:/[lc server]/:[lc port]/adminui`.
 
 1. Navegue até **Início > Serviços > Aplicativos e Serviços > Gerenciamento de Aplicativos**.
 
@@ -382,7 +382,7 @@ O processo LiveCycle necessário que habilita o processo de serviço de email.
 
 #### Adicionar ServiceName à lista Serviço de  de Lista de permissões {#adding-servicename-to-the-allowlist-service-list}
 
-Mencione no servidor de AEM os serviços do LiveCycle que você deseja acessar o servidor de AEM.
+Mencione no servidor do Experience Manager os serviços do LiveCycle que você deseja acessar o servidor do Experience Manager.
 
 1. Faça logon como Administrador em `https:/[host]:'port'/system/console/configMgr`.
 
@@ -395,7 +395,7 @@ Mencione no servidor de AEM os serviços do LiveCycle que você deseja acessar o
 
 Nesse cenário, para que o Gerenciamento de correspondência possa enviar um email, configure o serviço de email no servidor do LiveCycle.
 
-1. Faça logon com as credenciais de administrador no Livecycle Server adminui em `https:/[lc server]:[lc port]/adminui`.
+1. Faça logon com as credenciais de administrador no adminui do LiveCycle Server em `https:/[lc server]:[lc port]/adminui`.
 
 1. Navegue até **Home > Services > Applications and Services > Service Management**.
 
@@ -407,30 +407,30 @@ Nesse cenário, para que o Gerenciamento de correspondência possa enviar um ema
 
 #### Configurar o serviço DSC {#configure-the-dsc-service}
 
-Para usar a API de gerenciamento de correspondência, baixe o DSCSamplie.jar (anexado neste documento como parte de components.zip) e faça upload dele para o servidor do LiveCycle. Depois que o arquivo DSCSamplie.jar é carregado no servidor do LiveCycle, o servidor AEM usa o arquivo DSCSamplie.jar para acessar a API renderLetter.
+Para usar a API de gerenciamento de correspondência, baixe o DSCSamplie.jar (anexado neste documento como parte de components.zip) e faça upload dele para o servidor do LiveCycle. Depois que o arquivo DSCSamplie.jar é carregado no servidor do LiveCycle, o servidor do Experience Manager usa o arquivo DSCSamplie.jar para acessar a API renderLetter.
 
 Para obter mais informações, consulte [Conectando o AEM Forms com o Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
-1. Atualize o URL do servidor AEM em cmsa.properties em DSCSamplie.jar, que está no seguinte local:
+1. Atualize o URL do servidor do Experience Manager em cmsa.properties em DSCSamplie.jar, que está no seguinte local:
 
    DSCSamplie.jar\com\adobe\livecycle\cmsa.properties
 
 1. Forneça os seguintes parâmetros no arquivo de configuração:
 
    * **crx.serverUrl**=https:/host:port/[caminho de contexto]/URL [AEM]
-   * **crx.username** = nome de usuário AEM
-   * **crx.password**= senha AEM
+   * **crx.username**= nome de usuário do Experience Manager
+   * **crx.password** = Experience Manager password
    * **crx.appRoot**=/content/apps/cm
 
    >[!NOTE]
    >
-   >Toda vez que fizer alterações no lado do servidor, reinicie o LiveCycle Server.
+   >Toda vez que você fizer alterações no lado do servidor, reinicie o LiveCycle Server.
 
-   O arquivo DSCSamplie.jar usa a API renderLetter. Para obter mais informações sobre a API renderLetter, consulte [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   O arquivo DSCSamplie.jar usa a API renderLetter. Para obter mais informações sobre a API renderLetter, consulte [Interface LetterRenderService](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importar DSC para o LiveCycle {#import-dsc-to-livecyle}
 
-O arquivo DSCSamplie.jar usa a API renderLetter para renderizar a carta como bytes PDF de dados XML que C fornece como entrada. Para obter mais informações sobre o renderLetter e outras APIs, consulte [Serviço de Renderização de Carta](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+O arquivo DSCSamplie.jar usa a API renderLetter para renderizar a carta como bytes PDF de dados XML que o DSC fornece como entrada. Para obter mais informações sobre o renderLetter e outras APIs, consulte [Serviço de Renderização de Carta](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Inicie o Workbench e faça logon.
 1. Selecione **Janela > Mostrar Exibições > Componentes**. A exibição Componentes é adicionada ao Workbench ES2.
