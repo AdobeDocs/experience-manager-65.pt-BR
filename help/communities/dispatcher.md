@@ -1,50 +1,49 @@
 ---
 title: Configuração do Dispatcher para Comunidades
-seo-title: Configuração do Dispatcher para Comunidades
+seo-title: Configuring Dispatcher for Communities
 description: Configurar o dispatcher para AEM Communities
-seo-description: Configurar o dispatcher para AEM Communities
+seo-description: Configure the dispatcher for AEM Communities
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
-translation-type: tm+mt
-source-git-commit: 7f5bfce7fb9d7056e7c0848f92eac3f8c31aad24
+exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 2%
+source-wordcount: '668'
+ht-degree: 9%
 
 ---
 
-
-# Configurando o Dispatcher para Comunidades {#configuring-dispatcher-for-communities}
+# Configuração do Dispatcher para Comunidades {#configuring-dispatcher-for-communities}
 
 ## AEM Communities {#aem-communities}
 
-Para AEM Communities, é necessário configurar o Dispatcher para garantir o funcionamento correto dos [sites da comunidade](overview.md#community-sites). Configurações adicionais são necessárias ao incluir recursos como ativação de Comunidades e login social.
+Para o AEM Communities, é necessário configurar o Dispatcher para garantir o funcionamento adequado de [sites da comunidade](overview.md#community-sites). Configurações adicionais são necessárias ao incluir recursos como ativação de Comunidades e logon social.
 
-Para saber o que é necessário para sua implantação específica e o design do site
+Para saber o que é necessário para sua implantação específica e design de site
 
-* Entre em contato com [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)
+* Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)
 
-Consulte também a documentação principal [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+Consulte também a documentação principal do [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
-## Cache do Dispatcher {#dispatcher-caching}
+## Armazenamento em cache do Dispatcher {#dispatcher-caching}
 
 ### Visão geral {#overview}
 
-O armazenamento em cache do Dispatcher para AEM Communities é a capacidade do dispatcher de fornecer versões em cache completo das páginas de um site da comunidade.
+O armazenamento em cache do Dispatcher para AEM Communities é a capacidade do Dispatcher de fornecer versões em cache completo das páginas de um site da comunidade.
 
-Atualmente, ele é compatível apenas com visitantes anônimos do site, como usuários que navegam no site da comunidade ou que chegam em uma página da comunidade como resultado de uma pesquisa, bem como com mecanismos de pesquisa que indexam páginas. A vantagem é que os usuários anônimos e os mecanismos de pesquisa experimentarão um melhor desempenho.
+Atualmente, é compatível apenas com visitantes anônimos do site, como usuários que navegam no site da comunidade ou chegam em uma página da comunidade como resultado de uma pesquisa, bem como com mecanismos de pesquisa que indexam páginas. O benefício é que usuários anônimos e mecanismos de pesquisa experimentarão um desempenho aprimorado.
 
-Para membros conectados, o dispatcher ignora o cache, retransmitindo solicitações diretamente ao editor, de modo que todas as páginas sejam geradas e entregues dinamicamente.
+Para membros conectados, o dispatcher ignora o cache, retransmitindo as solicitações diretamente ao editor, de modo que todas as páginas sejam geradas e entregues dinamicamente.
 
-Quando configurado para suportar o cache do dispatcher, uma expiração de &quot;idade máxima&quot; baseada em TTL é adicionada ao cabeçalho para garantir que as páginas em cache do dispatcher estejam atualizadas.
+Quando configurada para oferecer suporte ao armazenamento em cache do dispatcher, uma expiração de &quot;idade máxima&quot; baseada em TTL é adicionada ao cabeçalho para garantir que as páginas em cache do dispatcher sejam atuais.
 
 ### Requisitos {#requirements}
 
-* Dispatcher versão 4.1.2 ou posterior (consulte [Instalação do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) para obter a versão mais recente)
+* Dispatcher versão 4.1.2 ou superior (consulte [Instalar o Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) para obter a versão mais recente)
 * [Pacote ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Versão 3.3.2 ou posterior
@@ -54,12 +53,12 @@ Quando configurado para suportar o cache do dispatcher, uma expiração de &quot
 
 A configuração do OSGi **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** define a expiração de páginas em cache que aparecem em um caminho especificado.
 
-* Do [Web Console](../../help/sites-deploying/configuring-osgi.md)
+* No [Console da Web](../../help/sites-deploying/configuring-osgi.md)
 
    * Por exemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Localizar `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
-* Selecione o ícone &#39;+&#39; para criar uma nova configuração de conexão
+* Selecione o ícone &quot;+&quot; para criar uma nova configuração de conexão
 
    ![dispatcher](assets/dispatcher.png)
 
@@ -69,38 +68,36 @@ A configuração do OSGi **ACS AEM Commons - Dispatcher Cache Control Header - M
 
 * **Idade máxima do controle de cache**
 
-   *(obrigatório)* A idade máxima (em segundos) para adicionar ao cabeçalho de Controle de cache. O valor deve ser maior que zero (0).
+   *(obrigatório)* A idade máxima (em segundos) para adicionar ao cabeçalho Controle de Cache. O valor deve ser maior que zero (0).
 
-## Cabeçalhos do Cliente Dispatcher {#dispatcher-client-headers}
+## Cabeçalhos do Cliente do Dispatcher {#dispatcher-client-headers}
 
-Na seção /clientheaders de `dispatcher.any`, se estiver listando um conjunto específico de cabeçalhos, é necessário incluir `"CSRF-Token"` para que o [recurso de Ativação](enablement.md) funcione corretamente.
+Na seção /clientheaders de `dispatcher.any`, se estiver listando um conjunto específico de cabeçalhos, é necessário incluir `"CSRF-Token"` para que o [Enablement feature](enablement.md) funcione corretamente.
 
 ## Filtros do Dispatcher {#dispatcher-filters}
 
-A seção /filter do arquivo `dispatcher.any` está documentada em [Configuração do acesso ao conteúdo - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
+A seção /filter do arquivo `dispatcher.any` está documentada em [Configuração do acesso ao conteúdo - /filter](https://helpx.adobe.com/br/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
-Esta seção descreve as entradas que são provavelmente necessárias para o correto funcionamento dos recursos das Comunidades.
+Esta seção descreve entradas que são provavelmente necessárias para o bom funcionamento dos recursos das Comunidades.
 
-Os nomes das propriedades do filtro seguem a convenção de uso de um número de quatro dígitos para indicar a ordem na qual aplicar padrões de filtro. Quando vários padrões de filtros se aplicam a uma solicitação, o último padrão de filtro aplicado é efetivo. Assim, o primeiro padrão de filtro é frequentemente usado para negar tudo, de modo que os seguintes padrões servem para restaurar o acesso de forma controlada.
+Os nomes de propriedades do filtro seguem a convenção de uso de um número de quatro dígitos para indicar a ordem na qual aplicar padrões de filtro. Quando vários padrões de filtros se aplicam a uma solicitação, o último padrão de filtro que se aplica é efetivo. Assim, o primeiro padrão de filtro é frequentemente usado para negar tudo, de modo que os padrões a seguir servem para restaurar o acesso de forma controlada.
 
-As amostras a seguir usam nomes de propriedade que provavelmente precisarão ser modificados para se ajustarem a qualquer arquivo dispatcher.any específico.
+As amostras a seguir usam nomes de propriedades que provavelmente precisarão ser modificadas para se encaixarem em qualquer arquivo dispatcher.any específico.
 
 Consulte também:
 
-* [Lista de Verificação de Segurança do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
+* [Lista de verificação de segurança do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
 
 >[!NOTE]
 >
 >**Exemplos de nome da propriedade**
->Todos os nomes de propriedade mostrados, como **/0050** e **/0170**, devem ser ajustados para se ajustarem a um dispatcher.qualquer arquivo de configuração.
-
+>Todos os nomes de propriedade mostrados, como **/0050** e **/0170**, devem ser ajustados para se ajustarem a um arquivo de configuração dispatcher.any existente.
 
 >[!CAUTION]
 >
->Consulte a [Lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en) para obter mais considerações ao restringir o acesso usando o Dispatcher. Além disso, leia a [AEM Security Cheklist](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/security-checklist.html) para obter mais detalhes sobre a sua instalação AEM.
+>Consulte a [Lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) para considerações adicionais ao restringir o acesso usando o Dispatcher. Além disso, leia a [AEM Lista de Verificação de Segurança](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) para obter detalhes de segurança adicionais relacionados à instalação da AEM.
 
-
-As seguintes entradas devem ser adicionadas ao final da seção /filter, especialmente depois de todas as entradas de negação.
+As entradas a seguir devem ser adicionadas ao final da seção /filter , especialmente depois de todas as entradas de negação.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -252,7 +249,7 @@ As seguintes entradas devem ser adicionadas ao final da seção /filter, especia
 
 ## Regras do Dispatcher {#dispatcher-rules}
 
-A seção de regras de `dispatcher.any` define quais respostas devem ser armazenadas em cache com base no URL solicitado. Para Comunidades, a seção de regras é usada para definir o que nunca deve ser armazenado em cache.
+A seção de regras de `dispatcher.any` define quais respostas devem ser armazenadas em cache com base no URL solicitado. Para Comunidades, a seção Regras é usada para definir o que nunca deve ser armazenado em cache.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -300,13 +297,13 @@ A seção de regras de `dispatcher.any` define quais respostas devem ser armazen
 
 ## Resolução de problemas {#troubleshooting}
 
-Uma fonte importante de problemas é inserir regras de filtro sem prestar atenção ao efeito em regras anteriores, especialmente ao adicionar uma regra para negar acesso.
+Uma grande fonte de problemas é inserir regras de filtro sem prestar atenção ao efeito nas regras anteriores, especialmente ao adicionar uma regra para negar acesso.
 
-O primeiro padrão de filtro é frequentemente usado para negar tudo, de modo que os filtros a seguir restaurem o acesso de forma controlada. Quando vários filtros se aplicam a uma solicitação, o último filtro que se aplica é aquele em vigor.
+O primeiro padrão de filtro é frequentemente usado para negar tudo, de modo que os seguintes filtros restaurem o acesso de maneira controlada. Quando vários filtros se aplicam a uma solicitação, o último filtro que se aplica é aquele em vigor.
 
-## Amostra do dispatcher.any {#sample-dispatcher-any}
+## Exemplo de dispatcher.any {#sample-dispatcher-any}
 
-A seguir, há um arquivo de amostra `dispatcher.any` que inclui Comunidades /filtros e /regras.
+A seguir, um exemplo de arquivo `dispatcher.any` que inclui Comunidades /filtros e /regras.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -957,4 +954,3 @@ A seguir, há um arquivo de amostra `dispatcher.any` que inclui Comunidades /fil
 ```
 
 -->
-

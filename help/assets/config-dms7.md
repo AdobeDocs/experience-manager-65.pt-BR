@@ -9,10 +9,10 @@ docset: aem65
 role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
-feature: Configuração,Modo Scene7
-source-git-commit: 6c042d2c95f18ae4a0d5fd57a048aa12761495b6
+feature: Configuration,Scene7 Mode
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '6941'
+source-wordcount: '6936'
 ht-degree: 4%
 
 ---
@@ -39,11 +39,11 @@ Com a nova arquitetura, o Experience Manager é responsável pelos ativos e sinc
 >A lista de recursos a seguir requer o uso do CDN pronto para uso fornecido com o Adobe Experience Manager - Dynamic Media. Nenhum outro CDN personalizado é compatível com esses recursos.
 >
 >* [Imagem inteligente](/help/assets/imaging-faq.md)
-* [Invalidação de cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
-* [Proteção de hotlink](/help/assets/hotlink-protection.md)
-* [Entrega de conteúdo HTTP/2](/help/assets/http2.md)
-* Redirecionamento de URL no nível CDN
-* Akamai ChinaCDN (para entrega ideal na China)
+>* [Invalidação de cache](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>* [Proteção de hotlink](/help/assets/hotlink-protection.md)
+>* [Entrega de conteúdo HTTP/2](/help/assets/http2.md)
+>* Redirecionamento de URL no nível CDN
+>* Akamai ChinaCDN (para entrega ideal na China)
 
 
 ## Ativar o Dynamic Media no modo Scene7 {#enabling-dynamic-media-in-scene-mode}
@@ -51,7 +51,8 @@ Com a nova arquitetura, o Experience Manager é responsável pelos ativos e sinc
 [As mídias dinâmicas são desativadas por padrão. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Para aproveitar os recursos do Dynamic Media, você deve habilitá-lo.
 
 >[!WARNING]
-Dynamic Media - O modo Scene7 é somente para a instância *Experience Manager Author somente*. Dessa forma, você deve configurar `runmode=dynamicmedia_scene7` na instância Experience Manager Author, *not* na instância Experience Manager Publish.
+>
+>Dynamic Media - O modo Scene7 é somente para a instância *Experience Manager Author somente*. Dessa forma, você deve configurar `runmode=dynamicmedia_scene7` na instância Experience Manager Author, *not* na instância Experience Manager Publish.
 
 Para ativar o Dynamic Media, você deve iniciar o Experience Manager usando o modo de execução `dynamicmedia_scene7` da linha de comando inserindo o seguinte em uma janela de terminal (a porta de exemplo usada é 4502):
 
@@ -64,7 +65,8 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 A atualização do Experience Manager Dynamic Media de 6.3 para 6.4 ou 6.5 agora inclui a capacidade de zero implantações de tempo de inatividade. Para migrar todas as suas predefinições e configurações de `/etc` para `/conf` no CRXDE Lite, execute o seguinte comando curl.
 
 >[!NOTE]
-Se você executar a instância do Experience Manager no modo de compatibilidade, ou seja, você tem o pacote de compatibilidade instalado, não é necessário executar esses comandos.
+>
+>Se você executar a instância do Experience Manager no modo de compatibilidade, ou seja, você tem o pacote de compatibilidade instalado, não é necessário executar esses comandos.
 
 Para todas as atualizações, com ou sem o pacote de compatibilidade, você pode copiar as predefinições padrão e prontas para uso do visualizador que vieram originalmente com o Dynamic Media executando o seguinte comando curl do Linux®:
 
@@ -273,7 +275,7 @@ A tela Servidor de imagens estabelece as configurações padrão para entrega de
 * **[!UICONTROL Padrões para campos de catálogo]** - Essas configurações pertencem à resolução e ao tipo de miniatura padrão de imagens.
 * **[!UICONTROL Atributos de gerenciamento de cores]**  - Essas configurações determinam quais perfis de cores ICC são usados.
 * **[!UICONTROL Atributos de compatibilidade]**  - Essa configuração permite que parágrafos anteriores e posteriores em camadas de texto sejam tratados como na versão 3.6 para compatibilidade com versões anteriores.
-* **[!UICONTROL Suporte à localização]**  - Essas configurações permitem gerenciar vários atributos de localidade. Ela também permite especificar uma sequência de mapa de localidade para que você possa definir quais idiomas deseja suportar para as várias dicas de ferramentas em Visualizadores. Para obter mais informações sobre como configurar o **[Suporte de localização]**, consulte [Considerações ao configurar a localização de ativos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=en#considerations-when-setting-up-localization-of-assets).
+* **[!UICONTROL Suporte à localização]**  - Essas configurações permitem gerenciar vários atributos de localidade. Ela também permite especificar uma sequência de mapa de localidade para que você possa definir quais idiomas deseja suportar para as várias dicas de ferramentas em Visualizadores. Para obter mais informações sobre como configurar o **[Suporte de localização]**, consulte [Considerações ao configurar a localização de ativos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
 
 #### Definir configurações gerais do aplicativo {#configuring-application-general-settings}
 
@@ -295,7 +297,6 @@ Para manter a consistência com o Experience Manager, sempre escolha essa config
 
 >[!NOTE]
 Por padrão, o sistema mostra 15 execuções ao selecionar **[!UICONTROL Representações]** e 15 predefinições do visualizador ao selecionar **[!UICONTROL Visualizadores]** na exibição detalhada do ativo. Você pode aumentar esse limite. Consulte [Aumente o número de predefinições de imagens que exibem](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Aumente o número de predefinições do visualizador que exibem](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
-
 
 #### Configurar o gerenciamento de cores {#configuring-color-management}
 
@@ -718,7 +719,7 @@ Os filtros se aplicam aos tipos MIME e não podem ser específicos de caminho.
 
    | Caractere a ser usado | Como ele filtra ativos para replicação |
    | --- | --- |
-   | * | Caracteres válidos |
+   | * | Caracteres curingas |
    | + | Inclui ativos para replicação |
    | - | Exclui ativos da replicação |
 

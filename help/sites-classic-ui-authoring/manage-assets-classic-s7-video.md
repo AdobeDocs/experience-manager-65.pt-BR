@@ -1,6 +1,6 @@
 ---
 title: Vídeo
-seo-title: Vídeo
+seo-title: Video
 description: Os ativos fornecem gerenciamento centralizado de ativos de vídeo, onde você pode fazer upload de vídeos diretamente para os Ativos, com o objetivo de codificar automaticamente para o Dynamic Media Classic, e acessar os vídeos do dia diretamente dos Ativos, para criação de página.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,9 +8,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1678'
 ht-degree: 26%
 
 ---
@@ -63,7 +63,7 @@ Se for necessário um fluxo de trabalho ou controle de versão para seus ativos,
 
 Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos, faça upload dos ativos para o Dynamic Media Classic. Este é o fluxo de trabalho recomendado:
 
-1. No aplicativo de desktop do Dynamic Media Classic, [configure um upload e uma codificação FTP programadas para o Dynamic Media Classic (automatizada pelo sistema)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=en#upload-options).
+1. No aplicativo de desktop do Dynamic Media Classic, [configure um upload e uma codificação FTP programadas para o Dynamic Media Classic (automatizada pelo sistema)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 1. No Experience Manager, acesse os ativos de vídeo no WCM na guia **[!UICONTROL Dynamic Media Classic]** do Localizador de conteúdo.
 1. Crie com o componente de vídeo do Dynamic Media Classic.
 
@@ -80,7 +80,7 @@ Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre o que significam as predefinições de vídeo, consulte [Predefinições de vídeo para codificação de arquivos de vídeo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=en#video-presets-for-encoding-video-files).
+   >Para obter mais informações sobre o que significam as predefinições de vídeo, consulte [Predefinições de vídeo para codificação de arquivos de vídeo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
    >A Adobe recomenda selecionar ambos os conjuntos de vídeos adaptáveis ao configurar as predefinições universais ou selecionar a opção **[!UICONTROL Codificação de vídeo adaptável]**.
 
@@ -119,7 +119,6 @@ A seguinte matriz explica quando você deve usar cada componente:
 >
 >Pronto para uso, o componente de vídeo do Dynamic Media Classic usa o perfil de vídeo universal. No entanto, você pode obter o reprodutor de vídeo baseado em HTML5 para uso pelo Experience Manager. No Dynamic Media Classic, copie o código incorporado do reprodutor de vídeo HTML5 pronto para uso e coloque-o na página Experience Manager.
 
-
 ## Componente Experience Manager Video {#aem-video-component}
 
 Mesmo que o uso do componente Vídeo do Dynamic Media Classic seja recomendado para visualizar vídeos do Dynamic Media Classic, esta seção descreve o uso de vídeos do Dynamic Media Classic com o [!UICONTROL Componente de vídeo de base] no Experience Manager para fins de integridade.
@@ -151,7 +150,7 @@ As várias codificações de vídeo são criadas de acordo com as predefiniçõe
 1. Crie um perfil de vídeo do Dynamic Media Classic. No menu **[!UICONTROL Novo]**, selecione **[!UICONTROL Criar página]**.
 1. Selecione o modelo de perfil Vídeo do Dynamic Media Classic. Dê um nome à nova página de perfil de vídeo e selecione **[!UICONTROL Criar]**.
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Edite o novo perfil de vídeo. Selecione primeiro a configuração de nuvem. Em seguida, selecione a mesma predefinição de codificação selecionada na configuração de nuvem.
 
