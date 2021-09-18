@@ -3,11 +3,11 @@ title: Digital Rights Management de ativos
 description: Saiba como gerenciar estados de expiração de ativos e informações para ativos licenciados em [!DNL Experience Manager].
 contentOwner: AG
 role: User, Admin
-feature: DRM,Gerenciamento de ativos
+feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: e87facbad559aa7e45656f621de17e6ef3109273
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1398'
 ht-degree: 5%
 
 ---
@@ -69,7 +69,7 @@ Para permitir que o console [!DNL Assets] exiba os ativos compostos de referênc
 1. Abra o [!DNL Experience Manager] Configuration Manager.
 1. Escolha **[!UICONTROL Notificação de expiração do Adobe CQ DAM]**. Por padrão, **[!UICONTROL Scheduler baseado em tempo]** é selecionado, o que agende uma tarefa para verificar em um horário específico se um ativo expirou em subativos. Após a conclusão do trabalho, os ativos que expiraram os subativos e os ativos referenciados são exibidos como expirados nos resultados da pesquisa.
 
-1. Para executar o trabalho periodicamente, desmarque o campo **[!UICONTROL Regra do agendador com base na hora]** e modifique o tempo em segundos no campo **[!UICONTROL Agendador periódico]**. Por exemplo, a expressão de exemplo `0 0 0 &ast; &ast; ?` aciona o trabalho em 00 horas.
+1. Para executar o trabalho periodicamente, desmarque o campo **[!UICONTROL Regra do agendador com base na hora]** e modifique o tempo em segundos no campo **[!UICONTROL Agendador periódico]**. Por exemplo, a expressão de exemplo `0 0 0 * * ?` aciona o trabalho em 00 horas.
 1. Selecione **[!UICONTROL enviar email]** para receber emails quando um ativo expirar.
 
    >[!NOTE]
