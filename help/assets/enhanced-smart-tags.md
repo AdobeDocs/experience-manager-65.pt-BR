@@ -2,13 +2,13 @@
 title: Tags inteligentes aprimoradas
 description: Tags inteligentes aprimoradas
 contentOwner: AG
-feature: Tags inteligentes, pesquisa
+feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: 20442918270b484e0b3c3ce8e68df90e0f305a52
+source-git-commit: fbb27348df0b9d5f93d186acbce45fcf88197c5e
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 1%
+source-wordcount: '1544'
+ht-degree: 0%
 
 ---
 
@@ -47,30 +47,30 @@ Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para cri
 
 O serviço aplica Tags inteligentes a ativos dos seguintes tipos MIME:
 
-* image/jpeg
-* image/tiff
-* image/png
-* image/bmp
-* image/gif
-* image/pjpeg
-* image/x-portable-anymap
-* image/x-portable-bitmap
-* image/x-portable-graymap
-* imagem/x-portable-pixmap
-* image/x-rgb
-* image/x-xbitmap
-* image/x-xpixmap
-* image/x-icon
-* imagem/photoshop
-* image/x-photoshop
-* image/psd
-* image/vnd.adobe.photoshop
+* `image/jpeg`
+* `image/tiff`
+* `image/png`
+* `image/bmp`
+* `image/gif`
+* `image/pjpeg`
+* `image/x-portable-anymap`
+* `image/x-portable-bitmap`
+* `image/x-portable-graymap`
+* `image/x-portable-pixmap`
+* `image/x-rgb`
+* `image/x-xbitmap`
+* `image/x-xpixmap`
+* `image/x-icon`
+* `image/photoshop`
+* `image/x-photoshop`
+* `image/psd`
+* `image/vnd.adobe.photoshop`
 
 O serviço aplica Tags inteligentes a representações de ativos dos seguintes tipos MIME:
 
-* image/jpeg
-* image/pjpeg
-* image/png
+* `image/jpeg`
+* `image/pjpeg`
+* `image/png`
 
 ## Integração {#onboarding}
 
@@ -79,10 +79,6 @@ O Serviço de conteúdo inteligente está disponível para compra como um comple
 O administrador pode seguir o link para integrar o Serviço de conteúdo inteligente com [!DNL Experience Manager]. Para integrar o serviço a [!DNL Experience Manager Assets], consulte [Configurar tags inteligentes](config-smart-tagging.md).
 
 O processo de integração é concluído quando o administrador configura o serviço e adiciona usuários em [!DNL Experience Manager].
-
->[!NOTE]
->
->Se estiver usando [!DNL Experience Manager] 6.3 ou versão anterior e exigir o serviço de marcação para seus ativos, consulte [Tags inteligentes](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). As Tags inteligentes não usam os recursos de IA mais recentes e, portanto, são menos precisas do que o serviço de marcação inteligente aprimorado.
 
 ## Revisar ativos e tags {#reviewing-assets-and-tags}
 
