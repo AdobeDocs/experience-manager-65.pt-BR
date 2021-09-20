@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
-feature: Publicação
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+feature: Publishing
+source-git-commit: a5164c0c2ef175f1bf63ef911bf92df36e413a6f
 workflow-type: tm+mt
-source-wordcount: '2945'
+source-wordcount: '2960'
 ht-degree: 4%
 
 ---
@@ -70,6 +70,8 @@ Depois de configurar a publicação seletiva em uma pasta, você pode executar q
    >[!IMPORTANT]
    >
    >Independentemente da opção do modo de Publicação do Dynamic Media que você selecionar, quaisquer atualizações que você fizer posteriormente em um ativo *já* publicado, essas atualizações serão publicadas imediatamente sem nenhuma outra ação do usuário.
+   >
+   >Se um vídeo publicado for atualizado, ele deverá ser publicado novamente para refletir as alterações no delivery.
 
    | Opção do modo de publicação do Dynamic Media | Descrição |
    | --- | --- |
@@ -182,7 +184,7 @@ Você pode usar **[!UICONTROL Publicação rápida]** para casos simples de ativ
 
 1. Selecione uma das seguintes opções na lista de menu **[!UICONTROL Publicação rápida]**.
 
-   | Opção Publicação rápida | O que ele faz |
+   | Opção Publicação rápida | O que faz |
    | --- | --- | 
    | Publicar no Experience Manager | Publica os ativos selecionados imediatamente no Experience Manager. |
    | Publicar no Brand Portal | Publica os ativos selecionados imediatamente em **[!UICONTROL Brand Portal]**.<br>Essa opção só estará disponível se a instância do Experience Manager Assets tiver o  **[!UICONTROL Brand]** Portal já configurado. |
