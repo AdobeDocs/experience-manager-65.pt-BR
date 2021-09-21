@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
-source-git-commit: baf68f43decec6631516442c3f9e319ce879696f
+source-git-commit: baacb6623757c4a7a67ae2be4232a36c4a509b69
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1538'
 ht-degree: 1%
 
 ---
@@ -245,9 +245,6 @@ A configuração agora pode ser mencionada para um Cloud Service para usar a API
    * **Configuração** IMS: selecione o nome da Configuração IMS
    * **Tipo** de API: REST
    * **Configuração** do A4T Analytics Cloud: Selecione a configuração de nuvem do Analytics usada para métricas e metas de atividade do Target. Isso é necessário se estiver usando o Adobe Analytics como fonte de relatórios ao direcionar conteúdo. Se você não vir a configuração da nuvem, consulte a observação em [Configuração do A4T Analytics Cloud](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
-
-   >[!NOTE]
-   >A Autenticação de Credenciais de Usuário (herdada) não funciona com o A4T (para Target e Analytics). Como tal, os clientes devem usar     Autenticação IMS em vez da autenticação User-Credential.
    * **Usar direcionamento** preciso: Por padrão, essa caixa de seleção está marcada. Se selecionada, a configuração do serviço de nuvem aguardará o contexto carregar antes de carregar o conteúdo. Veja a observação a seguir.
    * **Sincronizar segmentos do Adobe Target**: Selecione essa opção para baixar segmentos definidos no Target para usá-los em AEM. Você deve selecionar essa opção quando a propriedade Tipo de API for REST, pois os segmentos em linha não são compatíveis e você sempre precisa usar segmentos do Target. (Observe que o termo AEM de &quot;segmento&quot; equivale ao &quot;público-alvo&quot; do Target.)
    * **Biblioteca** do cliente: Selecione se deseja a biblioteca do cliente AT.js ou mbox.js (obsoleto).

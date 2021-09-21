@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 6850fc2e4251ad408936ee71600ab8923f54e9a3
+source-git-commit: baacb6623757c4a7a67ae2be4232a36c4a509b69
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2196'
 ht-degree: 4%
 
 ---
@@ -72,7 +72,7 @@ Você pode configurar o Adobe Target para usar o Adobe Analytics como fonte de r
 
 >[!NOTE]
 >
->A Autenticação de Credenciais de Usuário (herdada) não funciona com o A4T (para Target e Analytics). Dessa forma, os clientes devem usar [autenticação IMS](/help/sites-administering/integration-ims-adobe-io.md) em vez da autenticação User-Credential.
+>A Autenticação de Credenciais de Usuário (herdada) não funciona com o A4T (para Target e Analytics). Dessa forma, os clientes devem usar a autenticação IMS em vez da autenticação User-Credential.
 
 Para fazer isso, você precisa especificar a configuração da nuvem A4T com a qual conectar a configuração da nuvem do Adobe Target:
 
@@ -88,7 +88,7 @@ Para fazer isso, você precisa especificar a configuração da nuvem A4T com a q
    >Ao configurar o A4T com AEM, você pode ver uma entrada ausente de referência de configuração. Para selecionar a estrutura do analytics, faça o seguinte:
    >
    >1. Navegue até **Ferramentas** > **Geral** > **CRXDE Lite**.
-   1. Navegue até **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+   1. Vá até `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
    1. Defina a propriedade **disable** para **false**.
    1. Toque ou clique em **Salvar tudo**.
 
