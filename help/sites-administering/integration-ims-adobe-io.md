@@ -1,8 +1,8 @@
 ---
 title: Integração com o Adobe Target usando o Adobe I/O
-seo-title: Integração com o Adobe Target usando o Adobe I/O
+seo-title: Integration with Adobe Target using Adobe I/O
 description: Saiba mais sobre como integrar AEM com o Adobe Target usando o Adobe I/O
-seo-description: Saiba mais sobre como integrar AEM com o Adobe Target usando o Adobe I/O
+seo-description: Learn about integrating AEM with Adobe Target using Adobe I/O
 uuid: dd4ed638-e182-4d7e-9c98-282431812467
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,15 @@ content-type: reference
 topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 498896dccf80065195cc945b01cb8d037b8f6dab
+exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
+source-git-commit: baf68f43decec6631516442c3f9e319ce879696f
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1563'
 ht-degree: 1%
 
 ---
 
-
-# Integração com o Adobe Target usando Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
+# Integração com o Adobe Target usando o Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
 
 A integração do AEM com o Adobe Target por meio da API do Target Standard requer a configuração do Adobe IMS (Identity Management System) e do Adobe I/O.
 
@@ -55,7 +54,7 @@ O primeiro estágio da configuração é criar uma Configuração IMS no AEM e g
 
 1. Em AEM, abra o menu **Ferramentas**.
 1. Na seção **Security** selecione **Adobe IMS Configurations**.
-1. Selecione **Create** para abrir a **Adobe IMS Technical Account Configuration**.
+1. Selecione **Create** para abrir a **Configuração de conta técnica do Adobe IMS**.
 1. Usando o menu suspenso em **Cloud Configuration**, selecione **Adobe Target**.
 1. Ative **Create new certificate** e insira um novo alias.
 1. Confirme com **Criar certificado**.
@@ -70,7 +69,7 @@ O primeiro estágio da configuração é criar uma Configuração IMS no AEM e g
 
    ![](assets/integrate-target-io-02.png)
 
-## Configuração do Adobe I/O para integração do Adobe Target com AEM {#configuring-adobe-i-o-for-adobe-target-integration-with-aem}
+## Configuração do Adobe I/O para integração do Adobe Target com o AEM {#configuring-adobe-i-o-for-adobe-target-integration-with-aem}
 
 Você precisa criar o Adobe I/O Project (integração) com o Adobe Target que AEM usará e, em seguida, atribuir os privilégios necessários.
 
@@ -134,7 +133,7 @@ Abra o console Adobe I/O para criar um Projeto de E/S com o Adobe Target que AEM
    ![](assets/integrate-target-io-07.png)
 -->
 
-### Atribuindo privilégios à Integração {#assigning-privileges-to-the-integration}
+### Atribuir privilégios à integração {#assigning-privileges-to-the-integration}
 
 Agora, você deve atribuir os privilégios necessários à integração:
 
@@ -211,7 +210,7 @@ Para confirmar que a configuração está funcionando como esperado:
 
    ![](assets/integrate-target-io-13.png)
 
-## Configuração do Adobe Target Cloud Service {#configuring-the-adobe-target-cloud-service}
+## Configuração do Cloud Service Adobe Target {#configuring-the-adobe-target-cloud-service}
 
 A configuração agora pode ser mencionada para um Cloud Service para usar a API do Target Standard:
 
@@ -231,7 +230,7 @@ A configuração agora pode ser mencionada para um Cloud Service para usar a API
 1. Insira os detalhes na guia **Configurações do Adobe Target**:
 
    * **Autenticação**: IMS
-   * **ID** do locatário: a ID do locatário do Adobe IMS. Consulte também a seção [ID do locatário e Código do cliente](#tenant-client) .
+   * **ID** do locatário: a ID de locatário do Adobe IMS. Consulte também a seção [ID do locatário e Código do cliente](#tenant-client) .
 
       >[!NOTE]
       >
@@ -246,6 +245,9 @@ A configuração agora pode ser mencionada para um Cloud Service para usar a API
    * **Configuração** IMS: selecione o nome da Configuração IMS
    * **Tipo** de API: REST
    * **Configuração** do A4T Analytics Cloud: Selecione a configuração de nuvem do Analytics usada para métricas e metas de atividade do Target. Isso é necessário se estiver usando o Adobe Analytics como fonte de relatórios ao direcionar conteúdo. Se você não vir a configuração da nuvem, consulte a observação em [Configuração do A4T Analytics Cloud](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+
+   >[!NOTE]
+   >A Autenticação de Credenciais de Usuário (herdada) não funciona com o A4T (para Target e Analytics). Como tal, os clientes devem usar     Autenticação IMS em vez da autenticação User-Credential.
    * **Usar direcionamento** preciso: Por padrão, essa caixa de seleção está marcada. Se selecionada, a configuração do serviço de nuvem aguardará o contexto carregar antes de carregar o conteúdo. Veja a observação a seguir.
    * **Sincronizar segmentos do Adobe Target**: Selecione essa opção para baixar segmentos definidos no Target para usá-los em AEM. Você deve selecionar essa opção quando a propriedade Tipo de API for REST, pois os segmentos em linha não são compatíveis e você sempre precisa usar segmentos do Target. (Observe que o termo AEM de &quot;segmento&quot; equivale ao &quot;público-alvo&quot; do Target.)
    * **Biblioteca** do cliente: Selecione se deseja a biblioteca do cliente AT.js ou mbox.js (obsoleto).
