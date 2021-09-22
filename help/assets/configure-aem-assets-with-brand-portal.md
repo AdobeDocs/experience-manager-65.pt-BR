@@ -12,9 +12,9 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: d995173140237f34a03c8e84128ad9d657c9a026
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '2053'
 ht-degree: 10%
 
 ---
@@ -118,9 +118,9 @@ A chave pública (certificado) autentica seu perfil no Console do desenvolvedor 
 
 1. Faça logon na instância do autor do AEM Assets. O URL padrão é `http://localhost:4502/aem/start.html`.
 
-1. No painel **Ferramentas** ![Ferramentas](assets/do-not-localize/tools.png), navegue até **[!UICONTROL Segurança]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. No painel **Ferramentas** ![Ferramentas](assets/do-not-localize/tools.png), navegue até **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**.
 
-1. Na página Configurações do Adobe IMS , clique em **[!UICONTROL Criar]**. Ele redirecionará para a página **[!UICONTROL Adobe IMS Technical Account Configuration]** . Por padrão, a guia **Certificate** é aberta.
+1. Na página Configurações do Adobe IMS , clique em **[!UICONTROL Criar]**. Ele redirecionará para a página **[!UICONTROL Configuração de conta técnica do Adobe IMS]**. Por padrão, a guia **Certificate** é aberta.
 
 1. Selecione **[!UICONTROL Adobe Brand Portal]** na lista suspensa **[!UICONTROL Cloud Solution]**.
 
@@ -138,7 +138,7 @@ A chave pública (certificado) autentica seu perfil no Console do desenvolvedor 
 
 1. Clique em **[!UICONTROL Avançar]**.
 
-   Na guia **Account**, é criada a conta do Adobe IMS que requer as credenciais da conta de serviço geradas no Console do Desenvolvedor do Adobe. Mantenha esta página aberta por enquanto.
+   Na guia **Account**, é criada a conta Adobe IMS que requer as credenciais da conta de serviço geradas no Console do Desenvolvedor do Adobe. Mantenha esta página aberta por enquanto.
 
    Abra uma nova guia e [crie uma conexão de conta de serviço (JWT) no Console do Desenvolvedor do Adobe](#createnewintegration) para obter as credenciais e a carga JWT para configurar a conta IMS.
 
@@ -338,6 +338,8 @@ Execute as seguintes etapas para validar a configuração:
    >Evite desabilitar qualquer um dos agentes de replicação, pois isso pode causar falha na replicação dos ativos (em execução na fila).
    >
    >Certifique-se de que todos os quatro agentes de replicação estejam configurados para evitar o erro de tempo limite. Consulte [solucionar problemas na publicação paralela no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >
+   >Não modifique configurações geradas automaticamente.
 
 Agora você pode:
 
