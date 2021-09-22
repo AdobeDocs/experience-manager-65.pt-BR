@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 23d4f5bf02a58ebd245455b18dc6ce0116e92133
+source-git-commit: 7da4a482e709a8b6bcc5537905ce811b5363e19b
 workflow-type: tm+mt
 source-wordcount: '2196'
 ht-degree: 4%
@@ -88,7 +88,8 @@ Para fazer isso, você precisa especificar a configuração da nuvem A4T com a q
    >Ao configurar o A4T com AEM, você pode ver uma entrada ausente de referência de configuração. Para selecionar a estrutura do analytics, faça o seguinte:
    >
    >1. Navegue até **Ferramentas** > **Geral** > **CRXDE Lite**.
-   1. Vá até:`/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
+   1. Vá até:
+      `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
    1. Defina a propriedade **disable** para **false**.
    1. Toque ou clique em **Salvar tudo**.
 
