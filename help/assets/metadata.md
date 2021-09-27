@@ -3,12 +3,12 @@ title: Gerenciar metadados dos ativos digitais
 description: Saiba mais sobre os tipos de metadados e como gerenciar metadados para ativos para organizar e processar ativos com facilidade.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Marcação, metadados
+feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
 workflow-type: tm+mt
-source-wordcount: '2339'
+source-wordcount: '2336'
 ht-degree: 11%
 
 ---
@@ -110,7 +110,7 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
    | [!UICONTROL Tamanho do lote] | Número de ativos em um lote para o qual os metadados devem ser importados. O valor padrão é 50. O valor máximo é 100. |
    | [!UICONTROL Separador de campos] | O valor padrão é `,` (uma vírgula). É possível especificar qualquer outro caractere. |
    | [!UICONTROL Delimitador de múltiplo valor] | Separador para valores de metadados. O valor padrão é `|`. |
-   | [!UICONTROL Inicializar fluxos de trabalho] | False por padrão. Quando definido como `true` e as configurações padrão do Iniciador estiverem em vigor para o fluxo de trabalho [!UICONTROL DAM Metadata WriteBack] (que grava metadados nos dados binários de XMP). Ativar workflows de inicialização torna o sistema mais lento. |
+   | [!UICONTROL Inicializar fluxos de trabalho] | False por padrão. Quando definido como `true` e as configurações padrão estão em vigor para o fluxo de trabalho [!UICONTROL DAM Metadata WriteBack] (que grava metadados nos dados binários de XMP). Habilitar os workflows atrasa o sistema. |
    | [!UICONTROL Nome de coluna do caminho do ativo] | Define o nome da coluna para o arquivo CSV com ativos. |
 
 1. Clique em **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados são importados, uma notificação é exibida na caixa de entrada [!UICONTROL Notification].
@@ -234,7 +234,7 @@ Você pode remover um perfil de metadados de uma pasta no menu **[!UICONTROL Fer
 >
 >* [Conceitos e compreensão de metadados](metadata-concepts.md).
 >* [Editar propriedades de metadados de várias coleções](manage-collections.md#editing-collection-metadata-in-bulk)
-* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
