@@ -1,8 +1,8 @@
 ---
 title: Otimização de desempenho
-seo-title: Otimização de desempenho
+seo-title: Performance Optimization
 description: Saiba como configurar certos aspectos do AEM para otimizar o desempenho.
-seo-description: Saiba como configurar certos aspectos do AEM para otimizar o desempenho.
+seo-description: Learn how to configure certain aspects of AEM to optimize performance.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
+source-git-commit: 4fc42469e4b97f2f2c5d7489837012d31c63f86d
 workflow-type: tm+mt
-source-wordcount: '6659'
-ht-degree: 2%
+source-wordcount: '6645'
+ht-degree: 14%
 
 ---
-
 
 # Otimização de desempenho {#performance-optimization}
 
@@ -47,7 +46,7 @@ Esse ambiente contém conteúdo que você disponibiliza para seus usuários. Nes
 >* Consulte também [Dicas de ajuste de desempenho.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 
 
-## Metodologia de otimização de desempenho {#performance-optimization-methodology}
+## Metodologia de Otimização de Desempenho {#performance-optimization-methodology}
 
 Uma metodologia de otimização de desempenho para projetos de AEM pode ser resumida em cinco regras muito simples que podem ser seguidas para evitar problemas de desempenho desde o início:
 
@@ -310,7 +309,7 @@ A seguir, há uma abordagem padronizada para testes de desempenho de um aplicati
 
 O controle é um processo adicional e abrangente - necessário, mas não limitado a testes.
 
-### Verificação do conhecimento {#verification-of-knowledge}
+### Verificação dos conhecimentos {#verification-of-knowledge}
 
 Uma primeira etapa é documentar as informações básicas que você precisa saber antes de iniciar os testes:
 
@@ -389,10 +388,10 @@ Em ambos os casos, é possível definir o número esperado de transações por s
 
 | Componente | Tipo de teste | Não. de usuários | Tx/s (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
-| Página inicial - Usuário único | Média | 1 | 3 |  |  |
-|  | Pico | 3 | 3 |  |  |
-| Página inicial 100 usuários | Média | 100 | 3 |  |  |
-|  | Pico | 100 | 3 |  |
+| Página inicial - Usuário único | Média | 1 | 1 |  |  |
+|  | Pico | 1 | 3 |  |  |
+| Página inicial 100 usuários | Média | 100 | 1 |  |  |
+|  | Pico | 100 | 1 |  |
 
 #### Testes de componentes combinados {#combined-component-tests}
 
@@ -401,17 +400,17 @@ Testar os componentes em combinação oferece uma reflexão mais próxima do com
 | Cenário | Componente | Não. de usuários | Tx/s (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
 | Média mista | Página inicial | 10 | 1 |  |  |
-|  | Pesquisar   | 10º | 3 |  |  |
+|  | Pesquisar   | 10º | 1 |  |  |
 |  | Notícias | 10º | 2 |  |  |
-|  | Eventos | 10º | 3 |  |  |
-|  | Ativations | 10º | 3 |  | Simulação do comportamento do autor. |
+|  | Eventos | 10º | 1 |  |  |
+|  | Ativations | 10º | 1 |  | Simulação do comportamento do autor. |
 | Pico misto | Página inicial | 100 | 5 |  |  |
 |  | Pesquisar   | 50 | 5 |  |  |
 |  | Notícias | 100 | 10º |  |  |
 |  | Eventos | 100 | 10º |  |  |
 |  | Ativations | 20 | 20º |  | Simulação do comportamento do autor. |
 
-#### Indo ao vivo com testes {#going-live-tests}
+#### Indo para testes em tempo real {#going-live-tests}
 
 Durante os primeiros dias após o seu site ser disponibilizado, você pode esperar um nível maior de interesse. Isso provavelmente será ainda maior que os valores de pico que você tem testado. É altamente recomendável testar cenários do Google Live para garantir que o sistema possa atender a essa situação.
 
@@ -434,10 +433,10 @@ Ao elaborar esses testes, deve-se lembrar que nem todos os cenários ocorrerão 
 
 | Cenário de erro | Tipo de erro | Não. de usuários | Tx/s (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
-| Sobrecarga do componente de pesquisa | Pesquisar no curinga global (asterisco) | 10º | 3 |  | Somente &amp;ast;&amp;ast;&amp;ast; são pesquisados. |
+| Sobrecarga do componente de pesquisa | Pesquisar no curinga global (asterisco) | 10º | 1 |  | Somente &amp;ast;&amp;ast;&amp;ast; são pesquisados. |
 |  | Palavra de interrupção | 20º | 2 |  | Procurando uma palavra de parada. |
 |  | Sequência de caracteres vazia | 10º | 1 |  | Procurando uma string vazia. |
-|  | Caracteres especiais | 10º | 3 |  | Pesquisando caracteres especiais. |
+|  | Caracteres especiais | 10º | 1 |  | Pesquisando caracteres especiais. |
 
 #### Testes de resistência {#endurance-tests}
 
@@ -445,11 +444,11 @@ Certos problemas só serão encontrados depois de o sistema estar em funcionamen
 
 | Cenário | Tipo de teste | Não. de usuários | Tx/s (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
-| Ensaio de resistência (72 horas) | Página inicial | 10º | 3 |  |  |
-|  | Pesquisar   | 10º | 3 |  |  |
+| Ensaio de resistência (72 horas) | Página inicial | 10º | 1 |  |  |
+|  | Pesquisar   | 10º | 1 |  |  |
 |  | Notícias | 20º | 2 |  |  |
-|  | Eventos | 10º | 3 |  |  |
-|  | Ativations | 3 | 1 |  | Simulação do comportamento do autor. |
+|  | Eventos | 10º | 1 |  |  |
+|  | Ativations | 1 | 1 |  | Simulação do comportamento do autor. |
 
 ### Otimização {#optimization}
 
@@ -482,31 +481,29 @@ Depois que todos os testes forem concluídos, você deverá informar sobre:
 * Quaisquer suposições feitas durante os testes
 * Eventuais recomendações decorrentes do ensaio
 
-## Otimizando o desempenho ao usar o Dispatcher {#optimizing-performance-when-using-the-dispatcher}
+## Otimizar o desempenho ao usar o Dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
 O [Dispatcher1/> é uma ferramenta de balanceamento de carga e/ou cache Adobe0. ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) Ao usar o Dispatcher, você deve considerar a otimização do seu site para o desempenho do cache.
 
 >[!NOTE]
 >
->As versões do Dispatcher são independentes de AEM, no entanto, a documentação do Dispatcher é incorporada na documentação AEM. Sempre use a documentação do Dispatcher incorporada à documentação da versão mais recente do AEM.
+>As versões do Dispatcher são independentes do AEM, no entanto, a documentação do Dispatcher está incorporada na documentação do AEM. Sempre use a documentação do Dispatcher incorporada à documentação da versão mais recente do AEM.
 >
 >Você pode ter sido redirecionado para esta página se tiver seguido um link para a documentação do Dispatcher incorporada à documentação de uma versão anterior do AEM.
 
-O Dispatcher oferece vários mecanismos integrados que você pode usar para otimizar o desempenho se o seu site aproveitar. Esta seção informa como projetar seu site para maximizar os benefícios do armazenamento em cache.
+O Dispatcher oferece vários mecanismos integrados que você pode usar para otimizar o desempenho se o seu site aproveitar. Esta seção informa como projetar seu site para potencializar os benefícios do armazenamento em cache.
 
 >[!NOTE]
 >
->Pode ajudar você a lembrar que o Dispatcher armazena o cache em um servidor da Web padrão. Isso significa que você:
+>Pode ser útil ter em mente que o Dispatcher armazena o cache em um servidor da Web padrão. Isso significa que você:
 >
 >* Pode armazenar em cache tudo o que pode ser armazenado como uma página e solicitar usando um URL
 >* Não é possível armazenar outras coisas, como cookies, dados de sessão e dados de formulário.
 
 >
->
-Em geral, muitas estratégias de armazenamento em cache envolvem selecionar bons URLs e não depender desses dados adicionais.
+>Em geral, muitas estratégias de armazenamento em cache envolvem selecionar bons URLs e não depender desses dados adicionais.
 >
 >Com o Dispatcher versão 4.1.11, também é possível armazenar em cache os cabeçalhos de resposta, consulte [Armazenamento em cache de cabeçalhos de resposta HTTP](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
-
 
 ### Calculando a Taxa de Cache do Dispatcher {#calculating-the-dispatcher-cache-ratio}
 
@@ -528,20 +525,20 @@ Se você não tiver um emparelhamento de um para um editor/dispatcher, precisar�
 >
 >Para melhor desempenho, o Adobe recomenda uma taxa de cache de 90% a 95%.
 
-#### Usando codificação de página consistente {#using-consistent-page-encoding}
+#### Uso de codificação de página consistente {#using-consistent-page-encoding}
 
-Com o Dispatcher versão 4.1.11, é possível armazenar em cache os cabeçalhos de resposta. Se você não estiver armazenando cabeçalhos de resposta em cache no Dispatcher, poderão ocorrer problemas se você armazenar informações de codificação de página no cabeçalho. Nessa situação, quando o Dispatcher fornece uma página do cache, a codificação padrão do servidor da Web é usada para a página. Há duas maneiras de evitar esse problema:
+Com o Dispatcher versão 4.1.11, é possível armazenar em cache os cabeçalhos de resposta. Se você não estiver armazenando cabeçalhos de resposta em cache no Dispatcher, poderão ocorrer problemas se você armazenar informações de codificação de página no cabeçalho. Nessa situação, quando o Dispatcher fornece uma página do cache, a codificação padrão do servidor Web é usada para a página. Há duas maneiras de evitar esse problema:
 
-* Se você usar apenas uma codificação, verifique se a codificação usada no servidor da Web é igual à codificação padrão do site de AEM.
-* Use uma tag `<META>` na seção HTML `head` para definir a codificação, como no exemplo a seguir:
+* Se você usar apenas uma codificação, verifique se a codificação usada no servidor Web é igual à codificação padrão do site do AEM.
+* Use uma tag `<META>` na seção `head` do HTML para definir a codificação, como no exemplo a seguir:
 
 ```xml
         <META http-equiv="Content-Type" content="text/html; charset=EUC-JP">
 ```
 
-#### Evite parâmetros de URL {#avoid-url-parameters}
+#### Evitar parâmetros de URL {#avoid-url-parameters}
 
-Se possível, evite parâmetros de URL para páginas que você deseja armazenar em cache. Por exemplo, se você tiver uma galeria de imagens, o seguinte URL nunca será armazenado em cache (a menos que o Dispatcher seja [configurado adequadamente](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
+Se possível, evite parâmetros de URL para páginas que você deseja armazenar em cache. Por exemplo, se você tiver uma galeria de imagens, o URL a seguir nunca será armazenado em cache (a menos que o Dispatcher esteja [configurado adequadamente](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -577,7 +574,7 @@ www.myCompany.com/news/main.large.html
 >
 >`www.myCompany.com/news/main.print.html`
 >
->Usando a globalização do script da definição do modelo, você pode especificar um script separado que renderiza as páginas de impressão.
+>Usando o recurso de curinga de script da definição do modelo, você pode especificar um script separado que renderize as páginas de impressão.
 
 #### Invalidar arquivos de imagem usados como títulos {#invalidating-image-files-used-as-titles}
 
@@ -588,19 +585,19 @@ Se você renderizar títulos de página, ou outro texto, como imagens, é recome
 
    `<page file name>.<image file name>`
 
-Por exemplo, você pode armazenar o título da página `myPage.html` no `file myPage.title.gif`. Esse arquivo é automaticamente excluído se a página for atualizada, de modo que qualquer alteração no título da página será refletida automaticamente no cache.
+Por exemplo, você pode armazenar o título da página `myPage.html` no `file myPage.title.gif`. Esse arquivo será automaticamente excluído se a página for atualizada, de modo que qualquer alteração no título da página será refletida automaticamente no cache.
 
 >[!NOTE]
 >
->O arquivo de imagem não existe necessariamente fisicamente na instância de AEM. Você pode usar um script que cria dinamicamente o arquivo de imagem. O Dispatcher armazena o arquivo no servidor da Web.
+>O arquivo de imagem não existe necessariamente fisicamente na instância do AEM. Você pode usar um script que cria dinamicamente o arquivo de imagem. O Dispatcher armazena o arquivo no servidor Web.
 
 #### Invalidar arquivos de imagem usados para navegação {#invalidating-image-files-used-for-navigation}
 
-Se você usar imagens para as entradas de navegação, o método é basicamente o mesmo que com títulos, apenas ligeiramente mais complexos. Armazene todas as imagens de navegação com as páginas de destino. Se você usar duas imagens para o normal e o ativo, poderá usar os seguintes scripts:
+Se você usar imagens para as entradas de navegação, o método é basicamente o mesmo com títulos, apenas ligeiramente mais complexos. Armazene todas as imagens de navegação com as páginas de destino. Se você usar duas imagens para o normal e o ativo, poderá usar os seguintes scripts:
 
 * Um script que exibe a página, como de costume.
 * Um script que processa solicitações &quot;.normal&quot; e retorna a imagem normal.
-* Um script que processa solicitações &quot;.ative&quot; e retorna a imagem ativada.
+* Um script que processa solicitações &quot;.active&quot; e retorna a imagem ativada.
 
 É importante criar essas imagens com o mesmo identificador de nome da página, para garantir que uma atualização de conteúdo exclua essas imagens, bem como a página.
 
@@ -627,9 +624,9 @@ Com relação à mistura de conteúdo restrito e público em uma página, você 
 >
 >Para lidar com conteúdo público e restrito misto, consulte [Configurar o Sling Dynamic Include.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
-#### Conexões aderentes {#sticky-connections}
+#### Conexões adesivas {#sticky-connections}
 
-[As ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) conexões adesivas garantem que os documentos de um usuário sejam todos compostos no mesmo servidor. Se um usuário sair dessa pasta e posteriormente retornar a ela, a conexão ainda permanecerá. Defina uma pasta para armazenar todos os documentos que exigem conexões aderentes para o site. Tente não ter outros documentos nele. Isso afeta o balanceamento de carga se você usar páginas personalizadas e dados de sessão.
+As [conexões adesivas](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) garantem que os documentos de um usuário sejam todos compostos no mesmo servidor. Se um usuário sair dessa pasta e posteriormente retornar a ela, a conexão ainda permanecerá. Defina uma pasta para armazenar todos os documentos que exigem conexões adesivas para o site. Tente não manter outros documentos nela. Isso impactará o balanceamento de carga se você usar páginas personalizadas e dados de sessão.
 
 #### Tipos MIME {#mime-types}
 
@@ -638,7 +635,7 @@ Há duas maneiras pelas quais um navegador pode determinar o tipo de arquivo:
 1. Pela sua extensão (por exemplo, `.html`, `.gif`, `.jpg`, etc.)
 1. Pelo tipo MIME que o servidor envia com o arquivo.
 
-Para a maioria dos arquivos, o tipo MIME é implícito na extensão de arquivo. i.e.:
+Para a maioria dos arquivos, o tipo MIME está implícito na extensão de arquivo. Ou seja:
 
 1. Pela sua extensão (por exemplo, `.html`, `.gif`, `.jpg`, etc.)
 1. Pelo tipo MIME que o servidor envia com o arquivo.
@@ -652,7 +649,7 @@ Para garantir que os arquivos sejam armazenados em cache corretamente, siga esta
 * Certifique-se de que os arquivos sempre tenham a extensão adequada.
 * Evite scripts de servidor de arquivos genéricos, que tenham URLs como `download.jsp?file=2214`. Regravar o script para usar URLs contendo a especificação do arquivo. No exemplo anterior, seria `download.2214.pdf`.
 
-## Desempenho de backup {#backup-performance}
+## Desempenho do backup {#backup-performance}
 
 Esta seção apresenta uma série de benchmarks usados para avaliar o desempenho de backups AEM e os efeitos da atividade de backup no desempenho do aplicativo. AEM backups apresentam uma carga significativa no sistema enquanto ele é executado, e nós medimos isso, bem como os efeitos das configurações de atraso de backup que tentam modular esses efeitos. O objetivo é oferecer alguns dados de referência sobre o desempenho esperado dos backups em configurações realistas e quantidades de dados de produção, além de fornecer orientação sobre como estimar os tempos de backup para sistemas planejados.
 
