@@ -1,8 +1,8 @@
 ---
 title: Configuração de notificação por email
-seo-title: Configuração de notificação por email
+seo-title: Configuring Email Notification
 description: Saiba como configurar a Notificação por email no AEM.
-seo-description: Saiba como configurar a Notificação por email no AEM.
+seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 2a866e82a059184ea86f22646e4a20406ad109e8
+source-git-commit: 1ae4e3b898f1d0a27fa72a7d8db01f638d4c6f7a
 workflow-type: tm+mt
-source-wordcount: '2097'
-ht-degree: 1%
+source-wordcount: '2086'
+ht-degree: 2%
 
 ---
 
-# Configurar a notificação por email{#configuring-email-notification}
+# Configuração de notificação por email{#configuring-email-notification}
 
 O AEM envia notificações por email para usuários que:
 
@@ -82,7 +82,7 @@ Use o procedimento a seguir para definir o nó nas pastas de origem do pacote de
 
 1. Salve o arquivo.
 
-## Configuração do Serviço de Notificação por Email do Workflow {#configuring-the-workflow-email-notification-service}
+## Configuração do serviço de notificação por email do fluxo de trabalho {#configuring-the-workflow-email-notification-service}
 
 Quando você recebe notificações por email do workflow, o endereço de email de e o prefixo do URL de host são definidos como valores padrão. Você pode alterar esses valores configurando o **Day CQ Workflow Email Notification Service** no Console da Web. Se isso for feito, é recomendável manter a alteração no repositório.
 
@@ -94,7 +94,7 @@ A configuração padrão é a seguinte no Console da Web:
 
 Os modelos de email para notificações de página estão localizados abaixo:
 
-`/etc/notification/email/default/com.day.cq.wcm.core.page`
+`/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
 O modelo inglês padrão ( `en.txt`) é definido da seguinte maneira:
 
@@ -121,7 +121,7 @@ Para personalizar o modelo de email em inglês para notificação de página:
 
 1. No CRXDE, abra o arquivo :
 
-   `/etc/notification/email/default/com.day.cq.wcm.core.page/en.txt`
+   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
 
 1. Modifique o arquivo de acordo com suas necessidades.
 1. Salve as alterações.
@@ -205,7 +205,7 @@ As variáveis a seguir podem ser usadas no modelo de email para notificações d
 
 O modelo de email para notificações de workflow (inglês) está localizado em:
 
-`/etc/workflow/notification/email/default/en.txt`
+`/libs/settings/workflow/notification/email/default/en.txt`
 
 É definido da seguinte forma:
 
@@ -234,7 +234,7 @@ Para personalizar o modelo de email em inglês para notificação de evento de w
 
 1. No CRXDE, abra o arquivo :
 
-   `/etc/workflow/notification/email/default/en.txt`
+   `/libs/settings/workflow/notification/email/default/en.txt`
 
 1. Modifique o arquivo de acordo com suas necessidades.
 1. Salve as alterações.
@@ -292,9 +292,9 @@ Para adicionar um modelo para um novo idioma:
 
 1. No CRXDE, adicione um arquivo `<language-code>.txt` abaixo:
 
-   * `/etc/notification/email/default/com.day.cq.wcm.core.page` : para notificações de página
+   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : para notificações de página
    * `/etc/notification/email/default/com.day.cq.collab.forum` : para notificações do fórum
-   * `/etc/workflow/notification/email/default` : para notificações de fluxo de trabalho
+   * `/libs/settings/workflow/notification/email/default` : para notificações de fluxo de trabalho
 
 1. Adapte o arquivo ao idioma.
 1. Salve as alterações.
@@ -311,7 +311,7 @@ Quando as coleções no AEM Assets são compartilhadas ou não, os usuários pod
 1. Faça logon no AEM como administrador. Clique em **Ferramentas** > **Operações** > **Console da Web** para abrir a Configuração do Console da Web.
 1. Edite **Day CQ DAM Resource Collection Servlet**. Selecione **enviar email**. Clique em **Salvar**.
 
-## Configurando o OAuth {#setting-up-oauth}
+## Configuração do OAuth {#setting-up-oauth}
 
 O AEM oferece suporte ao OAuth2 para seu serviço de email integrado, a fim de permitir que as organizações adiram para proteger os requisitos de email.
 
