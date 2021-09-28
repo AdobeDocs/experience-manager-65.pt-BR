@@ -1,8 +1,8 @@
 ---
 title: Lista de verificação de segurança
-seo-title: Lista de verificação de segurança
+seo-title: Security Checklist
 description: Saiba mais sobre as várias considerações de segurança ao configurar e implantar AEM.
-seo-description: Saiba mais sobre as várias considerações de segurança ao configurar e implantar AEM.
+seo-description: Learn about the various security considerations when configuring and deploying AEM.
 uuid: 8e293316-4177-4271-87c6-9dc1a2e85a07
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
-feature: Segurança
-source-git-commit: 1c6ee9b547fd0870feb510e35ffdcb8e3f857f18
+feature: Security
+source-git-commit: f60d3049b10a8ec500dd0cd4b1b5d4efbe415d84
 workflow-type: tm+mt
-source-wordcount: '2873'
-ht-degree: 0%
+source-wordcount: '2859'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ Esta seção trata de várias etapas que você deve tomar para garantir que sua 
 
 ## Principais medidas de segurança {#main-security-measures}
 
-### Executar AEM no modo Pronto para Produção {#run-aem-in-production-ready-mode}
+### Executar AEM no modo Pronto para produção {#run-aem-in-production-ready-mode}
 
 Para obter mais informações, consulte [Execução de AEM no Modo de Pronto para Produção](/help/sites-administering/production-ready.md).
 
@@ -49,7 +49,7 @@ Habilitar a camada de transporte HTTPS nas instâncias de autor e publicação �
 
 Certifique-se de ter instalado os [Hotfixes de segurança mais recentes fornecidos pelo Adobe](https://helpx.adobe.com/br/experience-manager/kb/aem63-available-hotfixes.html).
 
-### Alterar senhas padrão para as contas de administração do console AEM e OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
+### Alterar senhas padrão para contas de administração do console AEM e OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
 O Adobe recomenda que, após a instalação, você altere a senha das contas privilegiadas [**AEM** `admin`](#changing-the-aem-admin-password) (em todas as instâncias).
 
@@ -65,7 +65,7 @@ Essas contas incluem:
 
 Essas duas contas usam credenciais separadas e ter uma senha forte e distinta para cada é essencial para uma implantação segura.
 
-#### Alteração da senha do administrador AEM {#changing-the-aem-admin-password}
+#### Alterar a senha do administrador AEM {#changing-the-aem-admin-password}
 
 A senha da conta de administrador AEM pode ser alterada por meio do console [Granite Operations - Users](/help/sites-administering/granite-user-group-admin.md).
 
@@ -100,7 +100,7 @@ Para fazer isso:
 
 1. Clique em **Salvar**.
 
-### Implementar o Manipulador de Erro Personalizado {#implement-custom-error-handler}
+### Implementar o Manipulador de Erros Personalizado {#implement-custom-error-handler}
 
 O Adobe recomenda definir páginas personalizadas do manipulador de erros, especialmente para os códigos de resposta HTTP 404 e 500, a fim de evitar a divulgação de informações.
 
@@ -160,7 +160,7 @@ Este pacote OSGi deve ser desinstalado nos sistemas produtivos de autor e public
 
 ### Protect contra falsificação de solicitação entre sites {#protect-against-cross-site-request-forgery}
 
-#### A estrutura de proteção do CSRF {#the-csrf-protection-framework}
+#### Quadro de proteção do QREF {#the-csrf-protection-framework}
 
 O AEM 6.1 vem com um mecanismo que ajuda a proteger contra ataques de falsificação de solicitação entre sites, chamado de **CSRF Protection Framework**. Para obter mais informações sobre como usá-lo, consulte a [documentação](/help/sites-developing/csrf-protection.md).
 
@@ -302,7 +302,7 @@ Para ajudar a evitar o uso indevido de DoS, você pode:
 
       **Máximo de resultados JSON**  (  `json.maximumresults`)
 
-      na configuração do [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Quando esse limite for excedido, a renderização será recolhida. O valor padrão para Sling em AEM é `200`.
+      na configuração do [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Quando esse limite for excedido, a renderização será recolhida. O valor padrão para Sling em AEM é `1000`.
 
    * Como medida preventiva, desative os outros renderizadores padrão (HTML, texto sem formatação, XML). Novamente, configurando o [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet).
    >[!CAUTION]
@@ -336,7 +336,7 @@ O servlet de download de ativos padrão permite que usuários autenticados emita
 
 Se você não precisar do recurso de download, desative o servlet nas implantações de criação e publicação. Se a configuração exigir que o recurso de download de ativos esteja ativado, consulte [este artigo](/help/assets/download-assets-from-aem.md) para obter mais informações. Além disso, é possível definir um limite máximo de download que sua implantação possa suportar.
 
-### Desative o WebDAV {#disable-webdav}
+### Desativar WebDAV {#disable-webdav}
 
 O WebDAV deve ser desativado nos ambientes de autor e publicação. Isso pode ser feito parando os pacotes OSGi apropriados.
 
@@ -362,7 +362,7 @@ O WebDAV deve ser desativado nos ambientes de autor e publicação. Isso pode se
    >
    >Não é necessário reiniciar o AEM.
 
-### Verifique Se Você Não Está Exibindo Informações Pessoalmente Identificáveis No Caminho Inicial Do Usuário {#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path}
+### Verifique Se Você Não Está Exibindo Informações Pessoalmente Identificáveis No Caminho Inicial Dos Usuários {#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path}
 
 É importante proteger seus usuários, certificando-se de não expor nenhuma informação pessoal identificável no caminho inicial dos usuários do repositório.
 
@@ -384,13 +384,13 @@ Embora não seja recomendado, você pode desativá-lo caso precise da implementa
 >
 >Para obter mais informações, consulte a documentação do Oak em [Geração de Nome de Nó Autorizável](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
 
-### Evitar o recurso de Clickjacking {#prevent-clickjacking}
+### Prevenção contra clickjacking {#prevent-clickjacking}
 
-Para evitar o clickjacking, recomendamos que você configure seu servidor da Web para fornecer o cabeçalho HTTP `X-FRAME-OPTIONS` definido como `SAMEORIGIN`.
+Para evitar clickjacking, recomendamos que você configure seu servidor Web para fornecer o cabeçalho HTTP `X-FRAME-OPTIONS` definido como `SAMEORIGIN`.
 
 Para obter mais [informações sobre clickjacking, consulte o site OWASP](https://www.owasp.org/index.php/Clickjacking).
 
-### Certifique-se de replicar corretamente as chaves de criptografia quando necessário {#make-sure-you-properly-replicate-encryption-keys-when-needed}
+### Certifique-Se De Replicar Corretamente As Chaves De Criptografia Quando Necessário {#make-sure-you-properly-replicate-encryption-keys-when-needed}
 
 Determinados recursos de AEM e esquemas de autenticação exigem a replicação das chaves de criptografia em todas as instâncias de AEM.
 
@@ -398,7 +398,7 @@ Antes de fazer isso, observe que a replicação de chaves é feita de forma dife
 
 Consulte abaixo para obter mais informações.
 
-#### Replicação de chaves para AEM 6.3 {#replicating-keys-for-aem}
+#### Replicação de chaves para o AEM 6.3 {#replicating-keys-for-aem}
 
 Enquanto em versões mais antigas as chaves de replicação eram armazenadas no repositório, a partir da AEM 6.3, elas são armazenadas no sistema de arquivos.
 
@@ -443,9 +443,9 @@ A maneira recomendada para replicar com segurança as chaves em suas instâncias
 1. Vá para a guia **Replication** .
 1. Pressione o botão **Replication**.
 
-### Executar um teste de Penetração {#perform-a-penetration-test}
+### Realização de teste de penetração {#perform-a-penetration-test}
 
-A Adobe recomenda que você realize um teste de penetração de sua infraestrutura de AEM antes de continuar a produção.
+A Adobe recomenda realizar um teste de penetração na infraestrutura do seu AEM antes de continuar a produção.
 
 ### Práticas recomendadas de desenvolvimento {#development-best-practices}
 
