@@ -1,8 +1,8 @@
 ---
 title: Consultas e indexação do Oak
-seo-title: Consultas e indexação do Oak
+seo-title: Oak Queries and Indexing
 description: Saiba como configurar índices no AEM.
-seo-description: Saiba como configurar índices no AEM.
+seo-description: Learn how to configure indexes in AEM.
 uuid: a1233d2e-1320-43e0-9b18-cd6d1eeaad59
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
+source-git-commit: 7cd4b6918a8b0de68f9f5c6a79ab3b49e8ef6fc1
 workflow-type: tm+mt
-source-wordcount: '2881'
+source-wordcount: '2868'
 ht-degree: 1%
 
 ---
-
 
 # Consultas e indexação do Oak{#oak-queries-and-indexing}
 
@@ -45,7 +44,7 @@ O mecanismo de consulta Oak oferece suporte para os seguintes idiomas:
 * SQL (obsoleto)
 * JQOM
 
-## Tipos de indexador e cálculo de custo {#indexer-types-and-cost-calculation}
+## Tipos de indexação e cálculo de custo {#indexer-types-and-cost-calculation}
 
 O back-end baseado no Apache Oak permite que diferentes indexadores sejam conectados ao repositório.
 
@@ -69,7 +68,7 @@ Em seguida, cada índice é consultado para estimar o custo do query. Uma vez co
 
 >[!NOTE]
 >
->Para um repositório grande, construir um índice é uma operação demorada. Isso é verdadeiro para a criação inicial de um índice e para a reindexação (recriação de um índice após a alteração da definição). Consulte também [Solucionando problemas de índices Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) e [Impedindo a reindexação lenta](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>Para um repositório grande, construir um índice é uma operação demorada. Isso é verdadeiro para a criação inicial de um índice e para a reindexação (recriação de um índice após alterar a definição). Consulte também [Solucionando problemas de índices Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) e [Impedindo a reindexação lenta](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
 Se a reindexação for necessária em repositórios muito grandes, especialmente ao usar MongoDB e para índices de texto completo, considere a pré-extração de texto e o uso de oak-run para criar o índice inicial e reindexar.
 
@@ -77,7 +76,7 @@ Os índices são configurados como nós no repositório no nó **oak:index**.
 
 O tipo do nó de índice deve ser **oak:QueryIndexDefinition.** Várias opções de configuração estão disponíveis para cada indexador como propriedades de nó. Para obter mais informações, consulte os detalhes de configuração de cada tipo de indexador abaixo.
 
-### O Índice de propriedades {#the-property-index}
+### O Índice de Propriedades {#the-property-index}
 
 O Índice de propriedades geralmente é útil para consultas que têm restrições de propriedade, mas não são de texto completo. Ele pode ser configurado seguindo o procedimento abaixo:
 
@@ -102,7 +101,7 @@ O Índice de propriedades tem as seguintes opções de configuração:
 * O sinalizador **exclusivo** que, se definido como **true** adiciona uma restrição de exclusividade no índice de propriedade.
 
 * A propriedade **declareNodeTypes** permite especificar um determinado tipo de nó ao qual o índice só será aplicado.
-* O sinalizador **reindex** que, se definido como **true**, acionará uma reindexação de conteúdo completa.
+* O sinalizador **reindex** que, se definido como **true**, acionará uma reindexação de conteúdo completo.
 
 ### O índice solicitado {#the-ordered-index}
 
@@ -158,19 +157,19 @@ Depois que o nó tiver sido criado, adicione as seguintes propriedades:
 
 * **tipo:**
 
-   ```
+   ```xml
    lucene (of type String)
    ```
 
 * **async:**
 
-   ```
+   ```xml
    async (of type String)
    ```
 
 * **fulltextEnabled:**
 
-   ```
+   ```xml
    false (of type Boolean)
    ```
 
@@ -200,7 +199,7 @@ O analisador padrão para um índice é configurado no filho `default` do nó do
 >
 >Para obter uma lista de analisadores disponíveis, consulte a documentação da API da versão do Lucene que você está usando.
 
-#### Especificar a classe do analisador diretamente {#specifying-the-analyzer-class-directly}
+#### Especificação direta da classe do analisador {#specifying-the-analyzer-class-directly}
 
 Se quiser usar qualquer analisador pronto para uso, você pode configurá-lo seguindo o procedimento abaixo:
 
@@ -229,7 +228,7 @@ Se quiser usar qualquer analisador pronto para uso, você pode configurá-lo seg
    * **Nome:** `stopwords`
    * **Tipo:** `nt:file`
 
-#### Criação de analisadores por meio da Composição {#creating-analyzers-via-composition}
+#### Criação de analistas por meio da composição {#creating-analyzers-via-composition}
 
 Os analisadores também podem ser compostos com base em `Tokenizers`, `TokenFilters` e `CharFilters`. Você pode fazer isso especificando um analisador e criando nós filhos de seus tokens e filtros opcionais que serão aplicados em ordem listada. Consulte também [https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
 
@@ -291,11 +290,11 @@ A integração no AEM ocorre no nível do repositório, de modo que o Solr seja 
 
 Ele pode ser configurado para funcionar como um servidor incorporado com a instância do AEM ou como um servidor remoto.
 
-### Configurando AEM com um servidor Solr incorporado {#configuring-aem-with-an-embedded-solr-server}
+### Configuração de AEM com um servidor Solr incorporado {#configuring-aem-with-an-embedded-solr-server}
 
 >[!CAUTION]
 >
->Não use um servidor Solr incorporado em um ambiente de produção. Ele deve ser usado somente em um ambiente de desenvolvimento.
+>Não use um servidor Solr incorporado em um ambiente de produção. Ela deve ser usada somente em um ambiente de desenvolvimento.
 
 AEM pode ser usado com um servidor Solr incorporado que pode ser configurado através do Console da Web. Nesse caso, o servidor Solr será executado na mesma JVM da instância de AEM à qual está incorporado.
 
@@ -325,7 +324,7 @@ Você pode configurar o servidor Solr incorporado:
 AEM também pode ser configurado para funcionar com uma instância remota do servidor Solr:
 
 1. Baixe e extraia a versão mais recente do Solr. Para obter mais informações sobre como fazer isso, consulte a [Documentação de instalação do Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
-1. Agora, crie dois fragmentos Solr. Você pode fazer isso criando pastas para cada compartilhamento na pasta onde Solr foi compactado:
+1. Agora, crie dois fragmentos Solr. Você pode fazer isso criando pastas para cada compartilhamento na pasta onde Solr foi descompactado:
 
    * Para o primeiro compartilhamento, crie a pasta :
 
@@ -385,7 +384,7 @@ AEM também pode ser configurado para funcionar com uma instância remota do ser
 
 #### Configuração recomendada para Solr {#recommended-configuration-for-solr}
 
-Veja abaixo um exemplo de uma configuração básica que pode ser usada com todas as três implantações Solr descritas neste artigo. Ele acomoda os índices de propriedade dedicados que já estão presentes em AEM e não devem ser usados com outras aplicações.
+Veja abaixo um exemplo de uma configuração básica que pode ser usada com todas as três implantações Solr descritas neste artigo. Ele acomoda os índices de propriedade dedicados que já estão presentes no AEM e não devem ser usados com outros aplicativos.
 
 Para usá-lo corretamente, é necessário colocar o conteúdo do arquivo diretamente no Diretório base Solr. No caso de implantações de vários nós, elas devem ir diretamente sob a pasta raiz de cada nó.
 
@@ -424,7 +423,7 @@ A maneira mais fácil de obter as informações necessárias para a consulta que
 
 Se isso não for possível por qualquer motivo, você pode coletar os logs de indexação em um único arquivo e usá-lo para solucionar seu problema específico.
 
-#### Habilitar registro {#enable-logging}
+#### Ativar registro {#enable-logging}
 
 Para ativar o registro, é necessário ativar os logs de nível **DEBUG** para as categorias relacionadas à indexação e consultas do Oak. Essas categorias são:
 
@@ -489,4 +488,3 @@ Você pode coletar detalhes adicionais para ajudar a solucionar o problema, como
 
 1. A versão do Oak em que sua instância está sendo executada. Você pode ver isso abrindo o CRXDE e observando a versão no canto inferior direito da página de boas-vindas, ou verificando a versão do pacote `org.apache.jackrabbit.oak-core`.
 1. A saída do QueryBuilder Debugger da consulta problemática. O depurador pode ser acessado em: `https://serveraddress:port/libs/cq/search/content/querydebug.html`
-
