@@ -1,24 +1,24 @@
 ---
 title: Configuração da estrutura de integração de tradução
-seo-title: Configuração da estrutura de integração de tradução
+seo-title: Configuring the Translation Integration Framework
 description: Saiba como configurar a Estrutura de integração de tradução.
-seo-description: Saiba como configurar a Estrutura de integração de tradução.
+seo-description: Learn how to configure the Translation Integration Framework.
 uuid: 5ecfe154-732f-4a13-96f8-92f55023c54d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
-feature: Cópia de idioma
+feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: bed7ffd413c7826cf0e419fa1c31e3d3c325d4b1
+source-git-commit: cadf2e240327ef52ef57f8fb2e911f36fd003852
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1550'
 ht-degree: 2%
 
 ---
 
-# Configuração da Estrutura de Integração de Tradução{#configuring-the-translation-integration-framework}
+# Configuração da estrutura de integração de tradução{#configuring-the-translation-integration-framework}
 
 A Estrutura de integração de tradução integra-se aos serviços de tradução de terceiros para orquestrar a tradução de conteúdo AEM.
 
@@ -28,7 +28,7 @@ A Estrutura de integração de tradução integra-se aos serviços de tradução
 
 Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, consulte [Tradução de conteúdo para sites multilíngues](/help/sites-administering/translation.md).
 
-## Conectar-se a um Provedor de Serviços de Tradução {#connecting-to-a-translation-service-provider}
+## Conexão com um provedor de serviços de tradução {#connecting-to-a-translation-service-provider}
 
 Crie uma configuração de nuvem que se conecta AEM seu provedor de serviços de tradução. AEM inclui a capacidade de se conectar ao Microsoft Translator por padrão.
 Os fornecedores de tradução a seguir fornecem uma implementação da nova API para os Projetos de tradução. Links para saber mais sobre a integração:
@@ -38,7 +38,6 @@ Os fornecedores de tradução a seguir fornecem uma implementação da nova API 
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memória](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
 * [Palavras-chave](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [CrossLang NV](https://exchange.adobe.com/experiencecloud.details.90049.crosslang-xtm-for-adobe-experience-manager.html)
 * [Cloud XTM](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
@@ -58,14 +57,13 @@ Os fornecedores de tradução a seguir fornecem uma implementação da nova API 
 >
 
 
-
 Depois de instalar um pacote de conectores, você pode criar uma configuração de nuvem para o conector. Normalmente, você precisa fornecer suas credenciais para autenticação com o serviço de tradução. Para obter informações sobre como adicionar uma configuração de nuvem para o conector do Microsoft Translator, consulte [Integração com o Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
 Você pode criar várias configurações de nuvem para o mesmo conector, se necessário. Por exemplo, crie uma configuração para cada conta ou projeto que você tem com o mesmo fornecedor.
 
 Após configurar uma conexão, você pode criar a configuração da estrutura de integração de tradução que a usa.
 
-## Criação de uma configuração de integração de tradução {#creating-a-translation-integration-configuration}
+## Criar uma configuração de integração de tradução {#creating-a-translation-integration-configuration}
 
 Crie uma configuração de estrutura de integração de tradução para especificar como traduzir o conteúdo. A configuração inclui as seguintes informações:
 
@@ -131,7 +129,7 @@ As propriedades do Sites controlam como a tradução do conteúdo da página é 
  </tbody>
 </table>
 
-### Propriedades de configuração de comunidades {#communities-configuration-properties}
+### Propriedades de configuração do Communities {#communities-configuration-properties}
 
 As propriedades das comunidades controlam como a tradução do conteúdo gerado pelo usuário é executada. A tradução de conteúdo gerado pelo usuário sempre usa a tradução automática. Para obter mais informações, consulte [Traduzindo conteúdo gerado pelo usuário](/help/communities/translate-ugc.md).
 
@@ -196,7 +194,7 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
 1. Digite um nome para a configuração e clique ou toque em Criar.
 1. Configure as propriedades na guia Sites, Comunidades e Ativos e clique ou toque em OK.
 
-## Configurar páginas para tradução {#configuring-pages-for-translation}
+## Configuração de páginas para tradução {#configuring-pages-for-translation}
 
 Para configurar a tradução das páginas de origem em outros idiomas, associe as páginas às seguintes configurações de nuvem:
 
