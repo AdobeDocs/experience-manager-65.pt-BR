@@ -1,8 +1,8 @@
 ---
 title: Como executar AEM com o TarMK Cold Standby
-seo-title: Como executar AEM com o TarMK Cold Standby
+seo-title: How to Run AEM with TarMK Cold Standby
 description: Saiba como criar, configurar e manter uma configuração do TarMK Cold Standby.
-seo-description: Saiba como criar, configurar e manter uma configuração do TarMK Cold Standby.
+seo-description: Learn how to create, configure and maintain a TarMK Cold Standby setup.
 uuid: 004fdf3e-517c-452b-8db1-a47d6b31d8ba
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,11 +10,11 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
-feature: Configuração
+feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: d9565be9183bd4485036d99869585a79999be54b
+source-git-commit: 687203bf418962877a63b2fe77d8bdd3791cd4d9
 workflow-type: tm+mt
-source-wordcount: '2719'
+source-wordcount: '2733'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,16 @@ O conteúdo é sincronizado linearmente entre as instâncias primárias e de sta
 >O recurso Cold Standby serve para proteger cenários em que alta disponibilidade é necessária em instâncias **author**. Para situações em que alta disponibilidade é necessária em instâncias **publish** usando o Tar Micro Kernel, o Adobe recomenda usar um farm de publicação.
 >
 >Para obter informações sobre mais implantações disponíveis, consulte a página [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md) .
+
+>[!NOTE]
+>
+>Quando a instância Standby é configurada ou derivada do nó Primary , ela só permite acesso aos dois consoles a seguir (para atividades relacionadas à administração):
+>
+>* CRXDE Lite
+>* Console da Web OSGI
+
+>
+>Outros consoles não estão acessíveis.
 
 ## Como funciona {#how-it-works}
 
@@ -74,7 +84,7 @@ Além disso, você pode especificar as instâncias de standby que podem se conec
 >
 >É recomendável adicionar um balanceador de carga entre o Dispatcher e os servidores que fazem parte da configuração do Coldy Standby. O balanceador de carga deve ser configurado para direcionar o tráfego do usuário somente para a instância **primary** para garantir a consistência e impedir que o conteúdo seja copiado na instância de standby por outros meios que não o mecanismo Cold Standby.
 
-## Criando uma configuração AEM TarMK Cold Standby {#creating-an-aem-tarmk-cold-standby-setup}
+## Criação de uma configuração AEM TarMK Cold Standby {#creating-an-aem-tarmk-cold-standby-setup}
 
 >[!CAUTION]
 >
@@ -84,8 +94,7 @@ Além disso, você pode especificar as instâncias de standby que podem se conec
 >* de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService para org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 
 >
->
-Certifique-se de fazer os ajustes de configuração necessários para refletir essa alteração.
+>Certifique-se de fazer os ajustes de configuração necessários para refletir essa alteração.
 
 Para criar uma configuração TarMK de standby frio, primeiro é necessário criar as instâncias de standby executando uma cópia do sistema de arquivos de toda a pasta de instalação do principal em um novo local. Em seguida, você pode iniciar cada instância com um modo de execução que especificará sua função ( `primary` ou `standby`).
 
@@ -214,7 +223,7 @@ O serviço também pode ser configurado por meio do Console da Web:
 >
 >Isso pode ser feito indo até *https://localhost:4502/system/console/status-slingsettings* e verificando a linha **&quot;Run Modes&quot;**.
 
-## Sincronização pela primeira vez {#first-time-synchronization}
+## Primeira sincronização {#first-time-synchronization}
 
 Depois que a preparação estiver concluída e o standby for iniciado pela primeira vez, haverá tráfego intenso de rede entre as instâncias, já que o standby chega ao primário. Você pode consultar os logs para observar o status da sincronização.
 
