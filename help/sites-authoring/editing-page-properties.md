@@ -1,8 +1,8 @@
 ---
 title: Editar as propriedades da página
-seo-title: Editar as propriedades da página
+seo-title: Editing Page Properties
 description: Defina as propriedades desejadas para uma página
-seo-description: Defina as propriedades desejadas para uma página
+seo-description: Define the required properties for a page
 uuid: d3a2183b-8082-4cfc-aeed-26facbf3f3e6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 7fed51b68c626b54565b9120f69229872946016f
+exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
+source-git-commit: 9946bfd3c2701a37d13e6eb6b4c19562ef77d24c
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 82%
+source-wordcount: '1898'
+ht-degree: 80%
 
 ---
-
 
 # Editar as propriedades da página{#editing-page-properties}
 
@@ -55,12 +54,12 @@ As propriedades são distribuídas por várias guias.
 
 * **Marcas**
 
-   Aplique uma identidade de marca consistente em todas as páginas, anexando um espaçador de marca a cada título de página. Esta funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior dos [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+   Aplique uma identidade de marca consistente em todas as páginas, anexando um arquivo de marca a cada título de página. Essa funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior dos [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 
-   * **Substituir**  - Marque para definir o espaçador da marca nesta página.
-      * O valor será herdado por qualquer página secundária, a menos que os valores **Override** também estejam definidos.
-   * **Valor**  de substituição - O texto do espaçador da marca a ser anexado ao título da página.
-      * O valor é anexado ao título da página após um caractere de barra vertical, como &quot;Ciclismo da Toscana | Sempre pronto para a WKND&quot;
+   * **Override**  - Marque a opção para definir o rastreamento da marca nesta página.
+      * O valor será herdado por qualquer página secundária, a menos que também tenha seus valores **Override** definidos.
+   * **Sobrepor valor**  - O texto do traçado da marca a ser anexado ao título da página.
+      * O valor é anexado ao título da página após um caractere de barra vertical, como &quot;Toscânia cíclica | Sempre pronto para a WKND&quot;
 * **Título da página**
 
    Um título para ser usado na página. Normalmente usado pelos componentes do título. Caso esteja vazio, o **Título** será usado.
@@ -93,7 +92,7 @@ As propriedades são distribuídas por várias guias.
 
    Permite que você insira uma vanity URL para esta página, o que pode permitir que você tenha um URL menor e/ou mais expressivo.
 
-   Por exemplo, se o URL personalizado estiver definido como `welcome`para a página identificada pelo caminho `/v1.0/startpage`para o site `http://example.com,` então `http://example.com/welcome`será o URL personalizado de `http://example.com/content/v1.0/startpage`
+   Por exemplo, se a URL personalizada estiver definida como `welcome`para a página identificada pelo caminho `/v1.0/startpage`para o site `http://example.com,`, `http://example.com/welcome`será a URL personalizada de `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -104,7 +103,7 @@ As propriedades são distribuídas por várias guias.
    >* Não deve ser definido como uma página existente.
 
 
-   Você também precisa configurar o Dispatcher para ativar o acesso a URLs personalizados. Consulte [Ativando o acesso a URLs personalizados](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obter mais detalhes.
+   Você também precisa configurar o Dispatcher para habilitar o acesso a URLs personalizadas. Consulte [Ativando o acesso a URLs personalizadas](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obter mais detalhes.
 
 * **Redirecionar URL personalizada**
 
@@ -132,13 +131,10 @@ As propriedades são distribuídas por várias guias.
 
    Especifique um alias a ser usado com esta página.
 
-   >[!NOTE]
-   >
-   >O alias ajusta a propriedade `sling:alias` para definir um nome de alias para o recurso (isso afeta apenas o recurso, não o caminho).
-   >
-   >Por exemplo: se você definir um alias de `latin-lang` para o `/content/we-retail/spanish` nó, essa página poderá ser acessada por meio de `/content/we-retail/latin-language`
-   >
-   >Para obter mais detalhes, consulte [Nomes de página localizados em SEO e URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
+   * Por exemplo, se você definir um alias de `private` para a página `/content/wknd/us/en/magazine/members-only`, essa página também poderá ser acessada por `/content/wknd/us/en/magazine/private`
+   * A criação de um alias define a propriedade `sling:alias` no nó da página, que afeta apenas o recurso, não o caminho do repositório.
+   * As páginas acessadas por aliases no editor não podem ser publicadas. [As opções ](/help/sites-authoring/publishing-pages.md) de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
+   * Para obter mais detalhes, consulte [Nomes de página localizados em SEO e Práticas recomendadas de gerenciamento de URL](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **Herdado de &lt;*path*>**
 
@@ -162,7 +158,7 @@ As propriedades são distribuídas por várias guias.
 
    >[!CAUTION]
    >
-   >A guia **[Permissões](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite a edição de configurações de CUG com base na presença da combinação `granite:AuthenticationRequired`. Se as permissões da página forem configuradas usando configurações obsoletas de CUG, com base na presença da propriedade `cq:cugEnabled`, uma mensagem de aviso será mostrada em **Requisito de autenticação** e a opção não será editável, nem as [Permissões](/help/sites-authoring/editing-page-properties.md#permissions) serão editáveis.
+   >A guia **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite a edição de configurações de CUG com base na presença do mixin `granite:AuthenticationRequired`. Se as permissões de página forem configuradas usando configurações obsoletas de CUG, com base na presença da propriedade `cq:cugEnabled`, uma mensagem de aviso será exibida em **Requisito de autenticação** e a opção não será editável, nem as [Permissões](/help/sites-authoring/editing-page-properties.md#permissions) serão editáveis.
    >
    >
    >Nesse caso, as permissões de CUG devem ser editadas na [interface do usuário clássica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -175,7 +171,7 @@ As propriedades são distribuídas por várias guias.
 
    Especifique uma configuração de exportação.
 
-### Miniatura   {#thumbnail}
+### Miniatura  {#thumbnail}
 
 Exibe a imagem de miniatura da página. É possível:
 
@@ -225,7 +221,7 @@ Define a variação do fragmento de experiência usada para gerar metadados para
    >[!NOTE]
    >Para selecionar essa opção, é necessário que a conta de usuário esteja no `Target Adminstrators`grupo.
 
-### Permissões   {#permissions}
+### Permissões  {#permissions}
 
 * **Permissões**
 
@@ -237,14 +233,14 @@ Define a variação do fragmento de experiência usada para gerar metadados para
    * Exibir as [permissões efetivas](/help/sites-administering/user-group-ac-admin.md)
    >[!CAUTION]
    >
-   >A guia **Permissões** permite a edição de configurações de CUG com base na presença da combinação `granite:AuthenticationRequired`. Se as permissões da página forem configuradas usando configurações obsoletas de CUG, com base na presença da propriedade `cq:cugEnabled`, uma mensagem de aviso será exibida e as permissões de CUG não serão editáveis, assim como o Requisito de autenticação na guia [Advanced](/help/sites-authoring/editing-page-properties.md#advanced) não será editável.
+   >A guia **Permissions** permite a edição de configurações de CUG com base na presença do mixin `granite:AuthenticationRequired`. Se as permissões de página forem configuradas usando configurações obsoletas de CUG, com base na presença da propriedade `cq:cugEnabled` , uma mensagem de aviso será exibida e as permissões de CUG não serão editáveis, assim como o Requisito de autenticação na guia [Avançado](/help/sites-authoring/editing-page-properties.md#advanced) não será editável.
    >
    >
    >Nesse caso, as permissões de CUG devem ser editadas na [interface do usuário clássica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >O guia Permissões não permite a criação de grupos vazios de CUG, que podem ser úteis como uma maneira simples de negar o acesso para cada usuário. Para fazer isso, use o CRX Explorer. Consulte o documento [Administração de direitos de usuário, grupo e acesso](/help/sites-administering/user-group-ac-admin.md) para obter mais informações.
+   >O guia Permissões não permite a criação de grupos vazios de CUG, que podem ser úteis como uma maneira simples de negar o acesso para cada usuário. Para fazer isso, use o CRX Explorer. Consulte o documento [Administração de usuário, grupo e direitos de acesso](/help/sites-administering/user-group-ac-admin.md) para obter mais informações.
 
 ### Blueprint {#blueprint}
 
@@ -252,13 +248,13 @@ Define a variação do fragmento de experiência usada para gerar metadados para
 
    Defina as propriedades para uma página do Blueprint no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
 
-### Live Copy   {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Live Copy**
 
    Defina as propriedades para uma página de Live Copy no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
-### Estrutura do site   {#site-structure}
+### Estrutura do site  {#site-structure}
 
 * Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
 
