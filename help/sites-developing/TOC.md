@@ -8,9 +8,9 @@ breadcrumb-title: Guia de desenvolvimento
 user-guide-description: Este guia aborda como criar sua instância no AEM.
 feature: Developing
 role: Developer
-source-git-commit: b82544398ca414afab867f188f33ae60989596f3
+source-git-commit: eda59d12d96ecc55bd58749985d2c15706344fe0
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '917'
 ht-degree: 16%
 
 ---
@@ -151,6 +151,7 @@ ht-degree: 16%
       + [Contexto do cliente em detalhes](client-context.md)
       + [API Javascript de contexto do cliente](ccjsapi.md)
 + Extensão de AEM{#extending-aem}
+   + [Extensão de AEM usando o Construtor de aplicativos do desenvolvedor do Adobe](app-builder.md)
    + [Personalização da criação de página](customizing-page-authoring-touch.md)
    + [Personalização dos consoles](customizing-consoles-touch.md)
    + [Personalização de exibições das propriedades da página](page-properties-views.md)
