@@ -1,8 +1,8 @@
 ---
-title: Autenticação Adobe IMS e [!DNL Admin Console] Suporte para AEM Managed Services
-seo-title: Autenticação Adobe IMS e [!DNL Admin Console] Suporte para AEM Managed Services
+title: Autenticação do Adobe IMS e [!DNL Admin Console] Suporte para AEM Managed Services
+seo-title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
 description: Saiba como usar o  [!DNL Admin Console] no AEM.
-seo-description: Saiba como usar o  [!DNL Admin Console] no AEM.
+seo-description: Learn how to use the [!DNL Admin Console] in AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 3f55ebfe3b1603a573fcb77155227c449c6c0fbb
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1688'
 ht-degree: 10%
 
 ---
@@ -25,9 +24,13 @@ ht-degree: 10%
 >
 >Observe que esse recurso está disponível somente para clientes do Adobe Managed Services.
 
+>[!NOTE]
+>
+>O login do IMS para AEM não é compatível com grupos aninhados no Admin Console.
+
 ## Introdução {#introduction}
 
-O AEM 6.4.3.0 apresenta [!DNL Admin Console] suporte para instâncias AEM e autenticação baseada em Adobe IMS (Identity Management System) para **AEM clientes Managed Services**.
+O AEM 6.4.3.0 apresenta [!DNL Admin Console] suporte para instâncias AEM e autenticação baseada no Adobe IMS (Identity Management System) para **AEM clientes Managed Services**.
 
 AEM integração ao [!DNL Admin Console] permitirá que AEM clientes do Managed Services gerenciem todos os usuários do Experience Cloud em um console. Usuários e grupos podem ser atribuídos a perfis de produto associados a instâncias de AEM, permitindo que eles façam logon em uma instância específica.
 
@@ -93,7 +96,7 @@ Os usuários também podem ser criados manualmente se o cliente já estiver usan
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
-#### Upload de arquivo na interface [!DNL Admin Console] {#file-upload-in-the-admin-console-ui}
+#### Upload de arquivo na interface do usuário [!DNL Admin Console] {#file-upload-in-the-admin-console-ui}
 
 Para facilitar a criação de usuários, um arquivo CSV pode ser carregado para adicionar usuários em massa:
 
@@ -163,7 +166,7 @@ Todos os usuários e grupos adicionados nesse perfil de produto poderão fazer l
 
 ![screen_shot_2018-09-17at105623pm](assets/screen_shot_2018-09-17at105623pm.png)
 
-### Fazer logon em AEM {#logging-into-aem}
+### Logon no AEM {#logging-into-aem}
 
 #### Logon do administrador local {#local-admin-login}
 
@@ -191,7 +194,7 @@ Após a conclusão da autenticação, o usuário será redirecionado de volta pa
 
 ![screen_shot_2018-09-18at120124am](assets/screen_shot_2018-09-18at120124am.png)
 
-### Migrar usuários existentes {#migrating-existing-users}
+### Migração de usuários existentes {#migrating-existing-users}
 
 Para instâncias de AEM existentes que estão usando outro método de Autenticação e agora estão sendo migradas para o IMS, é necessário haver uma etapa de migração.
 
@@ -199,7 +202,7 @@ Os usuários existentes no repositório de AEM (originado localmente, via LDAP o
 
 Esse utilitário será executado pela equipe do AMS como parte do provisionamento do IMS.
 
-### Gerenciando permissões e ACLs em AEM {#managing-permissions-and-acls-in-aem}
+### Gerenciando permissões e ACLs no AEM {#managing-permissions-and-acls-in-aem}
 
 O controle de acesso e as permissões continuarão a ser gerenciados no AEM, isso pode ser feito usando a separação de Grupos de usuários provenientes de IMS (por exemplo, AEM-GRP-008 no exemplo abaixo) e grupos locais onde as permissões e o controle de acesso são definidos. Os grupos de usuários sincronizados do IMS podem ser atribuídos a grupos locais e herdar as permissões.
 
