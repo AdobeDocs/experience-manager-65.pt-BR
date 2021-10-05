@@ -3,12 +3,12 @@ title: Pesquisar ativos e imagens digitais em [!DNL Adobe Experience Manager]
 description: Saiba como localizar os ativos necessários em [!DNL Adobe Experience Manager] usando o painel Filtros e como usar os ativos que aparecem na pesquisa.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Pesquisar, metadados
+feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
+source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
 workflow-type: tm+mt
-source-wordcount: '5573'
+source-wordcount: '5570'
 ht-degree: 5%
 
 ---
@@ -161,7 +161,7 @@ Você pode pesquisar ativos com base em valores exatos de campos de metadados, c
 | Criador | criador:John |
 | Local | local:NA |
 | Descrição | description: &quot;Imagem de exemplo&quot; |
-| Ferramenta Criador | criatortool: &quot;Adobe Photoshop CC 2015&quot; |
+| Ferramenta Criador | criatortool: &quot;Adobe Photoshop&quot; |
 | Proprietário de direitos autorais | copyrights towner: &quot;Adobe Systems&quot; |
 | Contribuinte | colaborador:John |
 | Termos de Uso  | usageterms:&quot;CopyRights Reserved&quot; |
@@ -206,7 +206,7 @@ Usando o Adobe Asset Link, os profissionais criativos agora podem acessar o cont
 
 ### Pesquisar ativos no aplicativo de desktop [!DNL Experience Manager] {#desktop-app}
 
-Os profissionais de criação usam o aplicativo de desktop para tornar o [!DNL Experience Manager Assets] facilmente pesquisável e disponível em seu desktop local (Win ou Mac). Os criadores podem revelar facilmente os ativos desejados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas em [!DNL Experience Manager] com uma nova versão criada no repositório. O aplicativo suporta pesquisas básicas usando uma ou mais palavras-chave, curingas `*` e `?` e operador `AND`. Consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) no aplicativo de desktop.
+Os profissionais criativos usam o aplicativo de desktop para tornar o [!DNL Experience Manager Assets] facilmente pesquisável e disponível em seu desktop local (Win ou Mac). Os criadores podem revelar facilmente os ativos desejados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas em [!DNL Experience Manager] com uma nova versão criada no repositório. O aplicativo suporta pesquisas básicas usando uma ou mais palavras-chave, curingas `*` e `?` e operador `AND`. Consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) no aplicativo de desktop.
 
 ### Pesquisar ativos em [!DNL Brand Portal] {#brand-portal}
 
