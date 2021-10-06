@@ -3,17 +3,12 @@ title: Dia difícil
 seo-title: Tough Day
 description: O teste Tough Day simula a carga diária de cerca de 1000 autores em um cenário pior, com todas as operações acontecendo ao mesmo tempo.
 seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
-uuid: 1b672182-40f5-4580-b038-2e3c8fbfb8b7
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: ea6b40fe-b6e1-495c-b34f-8815a4e2e42e
-docset: aem65
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: e1f9cf160892c2fa5c7cc7f80f998166dbc877e6
+source-git-commit: 8b72715c15a65794bb6d1497961071aaea96c35e
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1881'
 ht-degree: 2%
 
 ---
@@ -22,11 +17,11 @@ ht-degree: 2%
 
 ## O que é o Dia difícil 2 {#what-is-tough-day}
 
-&quot;Dia 2 difícil&quot; é um aplicativo que permite testar os limites da sua instância do AEM. Ele pode ser executado imediatamente com o conjunto de teste padrão ou pode ser configurado para atender às suas necessidades de teste. Você pode assistir a [esta gravação](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/) para uma apresentação do aplicativo.
+&quot;Dia 2 difícil&quot; é um aplicativo que permite testar os limites da sua instância do AEM. Ele pode ser executado imediatamente com o conjunto de teste padrão ou pode ser configurado para atender às suas necessidades de teste. Você pode assistir a [esta gravação](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-toughday2-stress-testing-benchmarking-tool.html) para uma apresentação do aplicativo.
 
 ## Como executar o Dia 2 difícil {#how-to-run-tough-day}
 
-Baixe a versão mais recente do Tough Day 2 no [Adobe Repository](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/). Depois de baixar o aplicativo, você pode executá-lo imediatamente fornecendo o parâmetro `host`. No exemplo a seguir, a instância AEM é executada localmente para que o valor `localhost` seja usado:
+Baixe a versão mais recente do Tough Day 2 no [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Depois de baixar o aplicativo, você pode executá-lo imediatamente fornecendo o parâmetro `host`. No exemplo a seguir, a instância AEM é executada localmente para que o valor `localhost` seja usado:
 
 ```xml
 java -jar toughday2.jar --host=localhost
