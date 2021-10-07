@@ -4,7 +4,7 @@ description: Notas de versão específicas do  [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
 workflow-type: tm+mt
 source-wordcount: '4392'
 ht-degree: 3%
@@ -294,13 +294,13 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 **Gerenciamento de correspondência**
 
-* Atraso na exibição de caracteres na guia [!UICONTROL Data], bem como na visualização da letra HTML (NPR-37020).
+* Atraso na exibição de caracteres na guia [!UICONTROL Data], bem como na visualização da HTML letter (NPR-37020).
 
-* Ao editar um fragmento de documento de texto, as novas palavras são exibidas como tags HTML após salvar o fragmento (NPR-36837).
+* Ao editar um fragmento de documento de texto, as novas palavras são exibidas como tags de HTML após salvar o fragmento (NPR-36837).
 
 * Não é possível exibir as letras salvas como rascunhos (NPR-36816).
 
-* Ao editar um fragmento de documento de texto e, em seguida, visualizar a carta, o AEM Forms exibe o idioma da expressão na visualização da carta HTML (CQ-4322331).
+* Ao editar um fragmento de documento de texto e, em seguida, visualizar a carta, o AEM Forms exibe o idioma da expressão na visualização da HTML de letra (CQ-4322331).
 
 * Problemas ao renderizar dados com um modelo de carta de autoatendimento (NPR-37161).
 
@@ -358,7 +358,7 @@ Para obter informações sobre atualizações de segurança, consulte a [[!DNL E
 **Requisitos de configuração e mais informações**
 
 * O Experience Manager 6.5.10.0 requer o Experience Manager 6.5. Consulte [atualizar documentação](/help/sites-deploying/upgrade.md) para obter instruções detalhadas.
-* O download do service pack está disponível no Adobe [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* O download do service pack está disponível no Adobe [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html).
 * Em uma implantação com MongoDB e várias instâncias, instale o Experience Manager 6.5.10.0 em uma das instâncias do autor usando o Gerenciador de pacotes.
 
 >[!NOTE]
@@ -499,7 +499,7 @@ Os seguintes documentos de texto listam os pacotes OSGi e os Pacotes de conteúd
 Esses sites só estão disponíveis para clientes do . Se você for um cliente e precisar de acesso, entre em contato com o gerente de contas da Adobe.
 
 * [Baixe o produto em licensing.adobe.com](https://licensing.adobe.com/)
-* Consulte [como entrar em contato com o Atendimento ao Cliente do Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* Consulte [como entrar em contato com o Suporte ao Cliente Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
 >[!MORELIKETHIS]
 >

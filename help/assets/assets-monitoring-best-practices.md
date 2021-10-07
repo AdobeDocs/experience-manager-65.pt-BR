@@ -3,11 +3,11 @@ title: 'Práticas recomendadas para monitorar a implantação de  [!DNL Assets] 
 description: Práticas recomendadas para monitorar o ambiente e o desempenho da sua implantação  [!DNL Adobe Experience Manager] após a implantação.
 contentOwner: AG
 role: Admin, Architect
-feature: Gerenciamento de ativos
+feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1668'
 ht-degree: 1%
 
 ---
@@ -199,5 +199,5 @@ No processo de monitoramento, se encontrar problemas, veja algumas tarefas de so
 * Use o console do workflow para verificar se os workflows funcionam como esperado. Se possível, condensar vários workflows em um único workflow.
 * Revise o monitoramento ao vivo e procure por gargalos adicionais ou grandes consumidores de recursos específicos.
 * Investigue os pontos de saída da rede do cliente e a entrada aponta para a rede de implantação [!DNL Experience Manager], incluindo o dispatcher. Frequentemente, essas são áreas de gargalo. Para obter mais informações, consulte [Considerações de rede do Assets](/help/assets/assets-network-considerations.md).
-* Aumente o tamanho do servidor [!DNL Experience Manager]. Você pode ter um tamanho inadequado para sua implantação [!DNL Experience Manager]. O Atendimento ao cliente do Adobe pode ajudá-lo a identificar se o servidor está abaixo do tamanho.
+* Aumente o tamanho do servidor [!DNL Experience Manager]. Você pode ter um tamanho inadequado para sua implantação [!DNL Experience Manager]. O Suporte ao cliente do Adobe pode ajudar você a identificar se o servidor está com menos tamanho.
 * Examine os arquivos `access.log` e `error.log` para entradas no momento em que algo deu errado. Procure padrões que podem indicar anomalias de código personalizado. Adicione-os à lista de eventos que você monitorar.

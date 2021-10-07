@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: d167cf97-6829-45a7-ba46-2239d530b060
-source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 1%
@@ -26,7 +26,7 @@ No back-end, o servidor do AEM autentica seu perfil no gateway e, em seguida, si
 
 >[!NOTE]
 >
->Esse recurso foi descontinuado em [!DNL Assets]. Encontre substituições em [Práticas recomendadas de integração do AEM e do Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Se você tiver qualquer query, [entre em contato com o Atendimento ao Cliente do Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
+>Esse recurso foi descontinuado em [!DNL Assets]. Encontre substituições em [Práticas recomendadas de integração do AEM e do Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Se você tiver qualquer query, [entre em contato com o Suporte ao Cliente do Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
 
 <!-- Hiding this for now via cqdoc-16834.
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-48.png)

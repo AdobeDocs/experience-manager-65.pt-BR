@@ -2,7 +2,7 @@
 title: Recursos obsoletos e removidos na versão 6.5 do Adobe Experience Manager.
 description: Notas de versão específicas de recursos obsoletos e removidos do Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
+source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 43%
@@ -57,7 +57,7 @@ Esta seção lista os recursos e funcionalidades removidos do AEM 6.5. As versõ
 
 | Área | Recurso | Substituição |
 |--- |--- |--- |
-| Integração com [!DNL Experience Cloud] | Você poderia sincronizar seus ativos com [!DNL Experience Cloud] usando uma configuração via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] era anteriormente chamada de  [!DNL Adobe Marketing Cloud]. | Se você tiver qualquer query, [entre em contato com o Atendimento ao Cliente do Adobe](https://www.adobe.com/account/sign-in.supportportal.html). |
+| Integração com [!DNL Experience Cloud] | Você poderia sincronizar seus ativos com [!DNL Experience Cloud] usando uma configuração via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] era anteriormente chamada de  [!DNL Adobe Marketing Cloud]. | Se você tiver qualquer query, [entre em contato com o Suporte ao Cliente do Adobe](https://www.adobe.com/account/sign-in.supportportal.html). |
 | Analytics Activity Map | A versão do Activity Map está inclusa no AEM. | Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM. Use o plug-in [ActivityMap fornecido pelo Adobe Analytics](https://docs.adobe.com/content/help/br/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
 | Integrações | A integração do ExactTarget foi removida da distribuição padrão (Quickstart) e não está mais disponível. | Nenhuma substituição. |
 | Integrações | A integração da API do Salesforce Force foi removida da distribuição padrão (Quickstart) e agora é um pacote extra para instalar a partir de [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html). | O recurso ainda está disponível. |

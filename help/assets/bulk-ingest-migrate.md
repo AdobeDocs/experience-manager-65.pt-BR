@@ -8,12 +8,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: User, Admin
 exl-id: 53ea2cf7-d633-4ab9-a869-ce76eb1c01e5
-source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
@@ -38,12 +38,12 @@ Consulte também [Configurar Dynamic Media - Modo Scene7](/help/assets/config-dm
 
 1. Na instância do Experience Manager, navegue até **[!UICONTROL Ferramenta]** > **[!UICONTROL Segurança]** > **[!UICONTROL Usuários]** e selecione **[!UICONTROL Criar Usuário]**. Este usuário de serviço deve ter permissões *read/write* para `/content/dam.`
 1. Nos campos **[!UICONTROL ID]** e **[!UICONTROL Senha]**, digite um nome de usuário e uma senha; por exemplo, **Usuário FTP**. Esse nome aparece na linha do tempo como o usuário que criou o ativo. Quando um ativo é carregado a partir do FTP, um ativo é considerado criado quando é carregado no servidor FTP e é enviado para o Experience Manager.
-1. Entre em contato com o [Adobe Enterprise Customer Care for Experience Manager](https://experienceleague.adobe.com/?support-solution=General#support) para solicitar acesso ao feature pack 18912 para download. Você pode precisar das seguintes informações quando entrar em contato com o suporte:
+1. Entre em contato com o [Adobe Customer Support for Experience Manager](https://experienceleague.adobe.com/?support-solution=General#support) para solicitar acesso ao feature pack 18912 para download. Você pode precisar das seguintes informações quando entrar em contato com o suporte:
 
    * Endereço IP do servidor para a instância do Autor, incluindo o número da porta (por padrão, o número da porta é 4502.)
    * Nome de usuário e senha do serviço Experience Manager da etapa anterior.
 
-1. O Atendimento ao cliente da Adobe Enterprise para Experience Manager fornece as credenciais de FTP e acesso ao feature pack 18912.
+1. O Suporte ao cliente do Adobe para Experience Manager fornece as credenciais do FTP e o acesso ao feature pack 18912.
 1. Quando receber o feature pack 18912, instale-o.
 
    Consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md) para obter mais informações sobre como usar a Distribuição de software e os pacotes no Experience Manager.

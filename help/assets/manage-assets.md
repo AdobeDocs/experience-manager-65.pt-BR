@@ -4,12 +4,12 @@ description: Saiba mais sobre as tarefas de gerenciamento de ativos, como carreg
 contentOwner: AG
 mini-toc-levels: 1
 role: User
-feature: Gerenciamento de ativos,Pesquisar
+feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 9dc61a66a79004013d8cff89c4607f7aafad08df
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '9848'
-ht-degree: 3%
+source-wordcount: '9846'
+ht-degree: 4%
 
 ---
 
@@ -47,7 +47,7 @@ Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
 
-Você pode fazer upload de vários tipos de ativos (incluindo imagens, arquivos PDF, arquivos RAW e assim por diante) da pasta local ou de uma unidade de rede para [!DNL Experience Manager Assets].
+Você pode fazer upload de vários tipos de ativos (incluindo imagens, arquivos de PDF, arquivos RAW e assim por diante) da pasta local ou de uma unidade de rede para [!DNL Experience Manager Assets].
 
 >[!NOTE]
 >
@@ -63,11 +63,11 @@ Antes de fazer upload de um ativo, verifique se ele está em um [formato](/help/
 1. Para fazer upload dos ativos, siga um destes procedimentos:
 
    * Na barra de ferramentas, clique em **[!UICONTROL Create]**. Em seguida, no menu, clique em **[!UICONTROL Files]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
-   * Em um navegador compatível com HTML5, arraste os ativos diretamente na interface do usuário [!DNL Assets]. A caixa de diálogo para renomear arquivo não é exibida.
+   * Em um navegador compatível com a HTML5, arraste os ativos diretamente na interface do usuário [!DNL Assets]. A caixa de diálogo para renomear arquivo não é exibida.
 
    ![Criar opção para fazer upload de ativos](assets/create-options.png)
 
-   Para selecionar vários arquivos, selecione a chave `Ctrl` ou `Command` e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar um iPad, você pode selecionar apenas um arquivo de cada vez.
+   Para selecionar vários arquivos, selecione a chave `Ctrl` ou `Command` e selecione os ativos na caixa de diálogo do seletor de arquivos. Ao usar uma iPad, você pode selecionar apenas um arquivo de cada vez.
 
    Você pode pausar o upload de ativos grandes (maior que 500 MB) e retomá-lo posteriormente a partir da mesma página. Clique em **[!UICONTROL Pausar]** ao lado da barra de progresso que aparece quando um upload é iniciado.
 
@@ -96,9 +96,8 @@ Para configurar a tarefa de limpeza para os trabalhos de upload de partes não c
 >Dada a expiração da credencial, a latência, a largura de banda e os uploads simultâneos esperados, o valor mais alto que permite garantir que o seguinte seja escolhido:
 >
 >* Para garantir que o upload de chunk esteja ativado para arquivos com tamanhos que possam causar a expiração da credencial enquanto o upload estiver em andamento.
-   >
-   >
-* Para garantir que cada segmento termine antes da credencial expirar.
+>
+>* Para garantir que cada segmento termine antes da credencial expirar.
 
 
 Se você carregar um ativo com o mesmo nome de um ativo que já está disponível no local em que você está fazendo upload, uma caixa de diálogo de aviso será exibida.
@@ -160,7 +159,7 @@ O Dynamic Media permite o upload em lote de ativos por meio do servidor FTP. Se 
 
 >[!NOTE]
 >
->Para fazer upload de ativos via FTP no modo Dynamic Media - Scene7, instale o Feature Pack 18912 nas instâncias do autor [!DNL Experience Manager]. Entre em contato com o [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=General#support) para obter acesso ao FP-18912 e concluir a configuração da sua conta FTP. Para obter mais informações, consulte [Instalar pacote de recursos 18912 para migração de ativos em massa](/help/assets/bulk-ingest-migrate.md).
+>Para fazer upload de ativos via FTP no modo Dynamic Media - Scene7, instale o Feature Pack 18912 nas instâncias do autor [!DNL Experience Manager]. Entre em contato com o [Suporte ao cliente do Adobe](https://experienceleague.adobe.com/?support-solution=General#support) para obter acesso ao FP-18912 e concluir a configuração da sua conta FTP. Para obter mais informações, consulte [Instalar pacote de recursos 18912 para migração de ativos em massa](/help/assets/bulk-ingest-migrate.md).
 >
 >Se você usar o FTP para fazer upload de ativos, as configurações de upload especificadas em [!DNL Experience Manager] serão ignoradas. Em vez disso, as regras de processamento de arquivos, conforme definido no Dynamic Media Classic, são usadas.
 
@@ -170,7 +169,7 @@ O Dynamic Media permite o upload em lote de ativos por meio do servidor FTP. Se 
 
 1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) e faça logon em sua conta.
 
-   Suas credenciais e logon foram fornecidas pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte Técnico.
+   Suas credenciais e logon foram fornecidas pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte ao cliente do Adobe.
 
 1. Na Barra de Navegação Global, clique em **[!UICONTROL Upload]**.
 1. Na página Upload , próximo ao canto superior esquerdo, clique na guia **[!UICONTROL Via FTP]**.
@@ -195,7 +194,7 @@ Para cancelar um trabalho de upload em andamento, clique em **[!UICONTROL Cancel
 |---|---|---|
 | Nome da tarefa |  | O nome padrão pré-preenchido no campo de texto inclui a parte do nome inserida pelo usuário e o carimbo de data e hora. Você pode usar o nome padrão ou inserir um nome de sua própria criação para este trabalho de upload. <br>O trabalho e outros trabalhos de upload e publicação são registrados na página Trabalhos, onde você pode verificar o status dos trabalhos. |
 | Publicar após o upload |  | Publica automaticamente os ativos que você carrega. |
-| Substituir em qualquer pasta, o mesmo nome do ativo base, independentemente da extensão |  | Selecione essa opção se desejar que os arquivos carregados substituam arquivos existentes com os mesmos nomes. O nome dessa opção pode ser diferente, dependendo das configurações em **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]** > **[!UICONTROL Fazer upload para aplicativo]** > **[!UICONTROL Substituir imagens]**. |
+| Substituir em qualquer pasta, mesmo nome de ativo base independentemente da extensão |  | Selecione essa opção se desejar que os arquivos carregados substituam arquivos existentes com os mesmos nomes. O nome dessa opção pode ser diferente, dependendo das configurações em **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]** > **[!UICONTROL Fazer upload para aplicativo]** > **[!UICONTROL Substituir imagens]**. |
 | Descompactar arquivos Zip ou Tar no upload |  |  |
 | Opções de trabalho |  | Clique em **[!UICONTROL Opções de trabalho]** para abrir a caixa de diálogo [!UICONTROL Fazer upload de opções de trabalho] e escolha as opções que afetam todo o trabalho de upload. Essas opções são as mesmas para todos os tipos de arquivos.<br>Você pode escolher as opções padrão para fazer upload de arquivos, começando na página Configurações gerais do aplicativo . Para abrir esta página, escolha **[!UICONTROL Configurar]** > **[!UICONTROL Configuração do Aplicativo]**. Selecione a opção **[!UICONTROL Opções de Upload Padrão]** para abrir a caixa de diálogo [!UICONTROL Upload Job Options]. |
 |  | Quando | Selecione One-Time (Uma vez) ou Recurring (Recorrente). Para definir um trabalho recorrente, escolha uma opção Repetir — Diário, Semanal, Mensal ou Personalizado — para especificar quando você deseja que o trabalho de upload do FTP ocorra novamente. Em seguida, especifique as opções de agendamento, conforme necessário. |
@@ -205,7 +204,7 @@ Para cancelar um trabalho de upload em andamento, clique em **[!UICONTROL Cancel
 |  | Opções de edição de imagens | É possível preservar as máscaras de recorte em imagens e escolher um perfil de cor.<br> Consulte  [Opções de configuração para edições de imagem no upload](#setting-image-editing-options-at-upload). |
 |  | Opções de postscript | Você pode rasterizar arquivos do PostScript®, recortar arquivos, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cores.<br> Consulte  [Definição das opções de upload de PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Opções do Photoshop | Você pode criar modelos a partir de arquivos Adobe® Photoshop®, manter camadas, especificar como as camadas são nomeadas, extrair texto e especificar como as imagens são ancoradas em modelos.<br> Não há suporte para modelos no  [!DNL Experience Manager].<br> Consulte  [Configuração das opções de upload do Photoshop](#setting-photoshop-upload-options). |
-|  | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras de pesquisa e links, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cores.<br>Os catálogos eletrônicos não são compatíveis com o  [!DNL Experience Manager]. <br> Consulte  [Configuração das opções de upload de PDF](#setting-pdf-upload-options). |
+|  | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras de pesquisa e links, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cores.<br>Os catálogos eletrônicos não são compatíveis com o  [!DNL Experience Manager]. <br> Consulte  [Configuração das opções de upload do PDF](#setting-pdf-upload-options). |
 |  | Opções do Illustrator | Você pode rasterizar arquivos Adobe Illustrator®, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cores.<br> Consulte  [Definição das opções de upload de PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Opções de EVideo | Você pode transcodificar um arquivo de vídeo escolhendo uma Predefinição de vídeo.<br> Consulte  [Configuração das opções de upload de eVideo](#setting-evideo-upload-options). |
 |  | Predefinições de conjunto de lotes | Para criar um Conjunto de imagens ou Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. Você pode selecionar mais de uma predefinição. Você cria as predefinições na página Configuração do aplicativo/Predefinições do conjunto de lotes do Dynamic Media Classic.<br> Consulte  [Configuração de predefinições de conjuntos de lotes para gerar automaticamente conjuntos de imagens e ](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) configurações de rotação para saber mais sobre a criação de predefinições de conjuntos de lotes.<br> Consulte  [Definir predefinições do conjunto de lotes no upload](#setting-batch-set-presets-at-upload). |
@@ -253,7 +252,7 @@ Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode 
 
 #### Definir as opções de upload do Photoshop {#setting-photoshop-upload-options}
 
-Os arquivos Photoshop Document (PSD) são usados com mais frequência para criar modelos de imagem. Ao carregar um arquivo PSD, você pode criar um modelo de imagem automaticamente a partir do arquivo (selecione a opção [!UICONTROL Criar modelo] na tela Upload).
+Os arquivos Photoshop Document (PSD) são usados com mais frequência para criar modelos de imagem. Ao carregar um arquivo do PSD, você pode criar um modelo de imagem automaticamente a partir do arquivo (selecione a opção [!UICONTROL Criar modelo] na tela Upload).
 
 O Dynamic Media cria várias imagens de um arquivo PSD com camadas se você usar o arquivo para criar um modelo; ele cria uma imagem para cada camada.
 
@@ -265,19 +264,19 @@ Use as [!UICONTROL Opções de recorte] e as [!UICONTROL Opções do perfil de c
 
 | Opção | Subopção | Descrição |
 |---|---|---|
-| Manter camadas |  | Remove as camadas na PSD, se houver, em ativos individuais. As camadas de ativo permanecem associadas ao PSD. Você pode visualizá-los abrindo o arquivo PSD na exibição de Detalhes e selecionando o painel de camada. |
+| Manter camadas |  | Arrasta as camadas na PSD, se houver, para ativos individuais. As camadas de ativo permanecem associadas ao PSD. É possível visualizá-los abrindo o arquivo PSD na exibição de Detalhes e selecionando o painel de camada. |
 | Criar modelo |  | Cria um modelo a partir das camadas no arquivo PSD. |
 | Extrair texto |  | Extrai o texto para que os usuários possam pesquisar por texto em um Visualizador. |
 | Estender camadas ao tamanho do plano de fundo |  | Estende o tamanho das camadas de imagem cortadas até o tamanho da camada de plano de fundo. |
 | Nomenclatura de camada |  | As camadas no arquivo PSD são carregadas como imagens separadas. |
 |  | Nome da camada | Nomes das imagens após os nomes das camadas no arquivo PSD. Por exemplo, uma camada chamada Tag de preço no arquivo PSD original se torna uma imagem chamada Tag de preço. No entanto, se os nomes de camada no arquivo PSD forem nomes de camada padrão do Photoshop (Plano de fundo, Camada 1, Camada 2 e assim por diante), as imagens serão nomeadas após seus números de camada no arquivo PSD. Eles não são nomeados após seus nomes de camada padrão. |
 |  | Photoshop e número de camada | Nomes das imagens depois de seus números de camada no arquivo PSD, ignorando os nomes da camada original. As imagens são nomeadas com o nome do arquivo Photoshop e um número de camada anexado. Por exemplo, a segunda camada de um arquivo chamado Spring Ad.psd é chamada Spring Ad_2 , mesmo que tenha um nome não padrão no Photoshop. |
-|  | Photoshop e Nome da Camada | Nomes das imagens após o arquivo PSD seguido do nome da camada ou do número da camada. O número da camada é usado se os nomes da camada no arquivo PSD forem nomes padrão da camada do Photoshop. Por exemplo, uma camada chamada Tag de preço em um arquivo PSD chamado SpringAd é chamada Tag Ad_Price Primavera. Uma camada com o nome padrão Camada 2 é chamada de Anúncio de primavera_2. |
+|  | Photoshop e Nome da Camada | Nomes das imagens após o PSD, seguido do nome da camada ou do número da camada. O número da camada é usado se os nomes da camada no arquivo PSD forem nomes padrão da camada do Photoshop. Por exemplo, uma camada chamada Tag de preço em um arquivo de PSD chamado SpringAd é chamada Tag Ad_Price de primavera. Uma camada com o nome padrão Camada 2 é chamada de Anúncio de primavera_2. |
 | Âncora |  | Especifique como as imagens são ancoradas em modelos que são gerados a partir da composição em camadas produzida a partir do arquivo PSD. Por padrão, a âncora é o centro. Uma âncora central permite que imagens de substituição preencham melhor o mesmo espaço, independentemente da proporção da imagem de substituição. Imagens com um aspecto diferente que substituem essa imagem, ao referenciar o modelo e usar substituição de parâmetro, ocupam efetivamente o mesmo espaço. Altere para uma configuração diferente se o aplicativo exigir as imagens de substituição para preencher o espaço alocado no modelo. |
 
-#### Definir opções de upload de PDF {#setting-pdf-upload-options}
+#### Definir as opções de carregamento do PDF {#setting-pdf-upload-options}
 
-Ao carregar um arquivo PDF, você pode formatá-lo de várias maneiras. Você recorta suas páginas, extrai palavras de pesquisa, digita uma resolução de pixels por polegada e escolhe um espaço de cores. Os arquivos PDF geralmente contêm uma margem de corte, marcas de corte, marcas de registro e outras marcas de impressora. É possível recortar essas marcas das laterais das páginas ao carregar um arquivo PDF.
+Ao fazer upload de um arquivo PDF, você pode formatá-lo de várias maneiras. Você recorta suas páginas, extrai palavras de pesquisa, digita uma resolução de pixels por polegada e escolhe um espaço de cores. Os arquivos PDF geralmente contêm uma margem de aparação, marcas de corte, marcas de registro e outras marcas de impressora. Você pode recortar essas marcas das laterais das páginas ao carregar um arquivo PDF.
 
 >[!NOTE]
 >
@@ -287,16 +286,16 @@ Escolha entre as seguintes opções:
 
 | Opção | Subopção | Descrição |
 |---|---|---|
-| Processando | Rasterizar | (Padrão) Ripsa as páginas no arquivo PDF e converte gráficos vetoriais em imagens de bitmap. Escolha essa opção se quiser criar um eCatalog. |
+| Processando | Rasterizar | (Padrão) Remove as páginas no arquivo PDF e converte gráficos vetoriais em imagens bitmap. Escolha essa opção se quiser criar um eCatalog. |
 | Extrair | Pesquisar palavras | Extrai palavras do arquivo PDF para que o arquivo possa ser pesquisado por palavra-chave em um Visualizador de catálogo eletrônico. |
-|  | Links | Extrai links dos arquivos PDF e os converte em mapas de imagem usados em um visualizador de eCatalog. |
-| Gerar automaticamente o catálogo eletrônico a partir de PDF de várias páginas |  | Cria automaticamente um eCatalog a partir do arquivo PDF. O eCatalog é nomeado após o arquivo PDF que você carregou. (Essa opção só estará disponível se você rasterizar o arquivo PDF ao carregá-lo.) |
-| Resolução |  | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo PDF. O padrão é 150. |
-| Espaço de cor |  | Selecione o menu Espaço de cores e escolha um espaço de cores para o arquivo PDF. A maioria dos arquivos PDF tem imagens coloridas RGB e CMYK. O espaço de cores RGB é preferível para visualização online. |
+|  | Links | Extrai links dos arquivos do PDF e os converte em mapas de imagem usados em um visualizador de eCatalog. |
+| Gerar catálogo eletrônico automaticamente a partir de PDF de várias páginas |  | Cria automaticamente um eCatalog a partir do arquivo do PDF. O eCatalog é nomeado após o arquivo PDF que você carregou. (Essa opção só estará disponível se você rasterizar o arquivo PDF à medida que fizer upload dele.) |
+| Resolução |  | Determina a configuração de resolução. Esta configuração determina quantos pixels são exibidos por polegada no arquivo PDF. O padrão é 150. |
+| Espaço de cor |  | Selecione o menu Espaço de cores e escolha um espaço de cores para o arquivo PDF. A maioria dos arquivos PDF tem imagens de cores RGB e CMYK. O espaço de cores do RGB é preferível para visualização online. |
 |  | Detectar automaticamente | Mantém o espaço de cores do arquivo PDF. |
 |  | Forçar como RGB | Converte para o espaço de cores RGB. |
 |  | Forçar como CMYK | Converte para o espaço de cores CMYK. |
-|  | Forçar como Escala de Cinza | Converte para o espaço de cores em tons de cinza. |
+|  | Forçar como escala de cinza | Converte para o espaço de cores em tons de cinza. |
 
 #### Definir as opções de upload de eVideo {#setting-evideo-upload-options}
 
@@ -642,7 +641,7 @@ Para pesquisas simples, avançadas e personalizadas para descobrir e usar os ati
 
 Os ícones de ação rápida estão disponíveis para um único ativo por vez. Dependendo do seu dispositivo, execute as seguintes ações para exibir os ícones de ação rápida:
 
-* Dispositivos de toque: Toque e segure. Por exemplo, em um iPad, é possível tocar e segurar um ativo para que as ações rápidas sejam exibidas.
+* Dispositivos de toque: Toque e segure. Por exemplo, em uma iPad, é possível tocar e segurar um ativo para que as ações rápidas sejam exibidas.
 * Dispositivos sem toque: Ponteiro do mouse. Por exemplo, em um dispositivo de desktop, a barra de ação rápida é exibida se você passar o ponteiro do mouse sobre a miniatura do ativo.
 
 ### Navegar e selecionar ativos {#navigating-and-selecting-assets}
@@ -688,7 +687,7 @@ As ferramentas de edição na interface [!DNL Assets] permitem executar pequenos
 
 >[!NOTE]
 >
->A edição de imagens é compatível com formatos de arquivos BMP, GIF, PNG e JPEG.
+>A edição de imagens é compatível com os formatos BMP, GIF, PNG e JPEG.
 
 Também é possível adicionar mapas de imagem usando o editor de imagens. Para obter detalhes, consulte [Adicionar mapas de imagem](/help/assets/image-maps.md).
 
@@ -818,9 +817,9 @@ Para imprimir as anotações e o status de revisão, clique em **[!UICONTROL Imp
 
 1. Clique em **[!UICONTROL Imprimir]**. Dependendo da opção escolhida na etapa 2, o PDF gerado exibirá as anotações/os status na posição especificada. Por exemplo, se optar por imprimir as anotações e o status da revisão usando a configuração **Superior esquerdo**, o resultado será semelhante ao arquivo PDF mostrado aqui.
 
-   ![Anotação e status de revisão no PDF gerado](assets/annotation-status-pdf.png)
+   ![Status da anotação e revisão no PDF gerado](assets/annotation-status-pdf.png)
 
-1. Baixe a opção ![Download para PDF](assets/do-not-localize/download.png) ou imprima ![opções de impressão em PDF](assets/do-not-localize/print.png) o PDF usando as opções no canto superior direito.
+1. Baixe a opção ![Download para PDF](assets/do-not-localize/download.png) ou imprima ![opções de impressão no PDF](assets/do-not-localize/print.png) PDF usando as opções no canto superior direito.
 
    >[!NOTE]
    >
@@ -843,7 +842,7 @@ Se um ativo incluir anotações em idiomas estrangeiros (especialmente idiomas n
    * Crie uma pasta para fontes em seu sistema e armazene as fontes desejadas na pasta . Em seguida, especifique o caminho completo para essa pasta na opção de diretório Fontes do cliente .
 
 1. Acesse a configuração do PDF de anotação no URL `https://[aem_server]:[4502]/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig`.
-1. Configure o PDF de anotação com o conjunto correto de tipos de letra como segue:
+1. Configure o PDF de anotação com o conjunto correto de família de fontes, da seguinte maneira:
 
    * Inclua a string `<font_family_name_of_custom_font, sans-serif>` na opção de família de fontes. Por exemplo, se você deseja imprimir anotações no CJK (chinês, japonês e coreano), inclua a string `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` na opção família de fontes. Se quiser imprimir anotações em hindi, baixe a fonte apropriada e configure a família de fontes como Arial® Unicode MS®, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
@@ -851,13 +850,13 @@ Se um ativo incluir anotações em idiomas estrangeiros (especialmente idiomas n
 
 Este é um exemplo de como você pode configurar [!DNL Experience Manager] para imprimir anotações no CJK (chinês, japonês e coreano):
 
-1. Baixe fontes do Google Noto CJK nos links a seguir e armazene-as no diretório de fontes configurado no Serviço do Gerenciador de Fontes.
+1. Baixe as fontes Google Noto CJK dos links a seguir e armazene-as no diretório de fontes configurado no Serviço do Gerenciador de Fontes.
 
    * Todas em uma fonte Super CJK: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
    * Noto Sans (para as línguas europeias): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
    * Não use fontes para um idioma de sua escolha: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
 
-1. Configure o arquivo PDF de anotação definindo o parâmetro fonte-família como `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Essa configuração está disponível por padrão e funciona para todos os idiomas europeus e CJK.
+1. Configure o arquivo PDF de anotação definindo o parâmetro font-family como `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Essa configuração está disponível por padrão e funciona para todos os idiomas europeus e CJK.
 1. Se o idioma escolhido for diferente dos idiomas mencionados na etapa 2, anexe uma entrada apropriada (separada por vírgulas) à família de fontes padrão.
 
 ## Criar, gerenciar, visualizar e reverter versões de ativos {#asset-versioning}

@@ -7,10 +7,10 @@ topic-tags: dynamic-media
 content-type: reference
 role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
-feature: Configuração,Conjuntos de Regras
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+feature: Configuration,Rulesets
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Consulte também [Solucionar problemas de conjuntos de regras](https://helpx.ado
 Além disso, certifique-se de testar primeiro seu conjunto de regras em um ambiente de preparo que não afete seu ambiente de produção ativo.
 Ambientes de produção e ambientes de preparo normalmente exigem logons diferentes.
 
-Consulte o [Adobe Dynamic Media Classic para obter informações de logon](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+Consulte o [aplicativo de desktop do Adobe Dynamic Media Classic para obter informações de logon](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
 <!-- OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -62,7 +62,7 @@ Consulte também [Use &#39;asset&#39; em vez de &#39;is&#39; imagem em um conjun
 
 1. Faça logon no [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
-   Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte Técnico.
+   Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte ao cliente do Adobe.
 
 1. Faça upload do arquivo de conjunto de regras fazendo o seguinte:
 

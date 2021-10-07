@@ -3,11 +3,11 @@ title: Instalar e configurar o ImageMagick
 description: Saiba mais sobre o software ImageMagick, como instalá-lo, configurar a etapa do processo da linha de comando e usá-lo para editar, compor e gerar miniaturas de imagens.
 contentOwner: AG
 role: Admin
-feature: Representações,Ferramentas do desenvolvedor
+feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Para processar arquivos grandes usando o ImageMagick, considere requisitos de me
 
 >[!NOTE]
 >
->Se estiver usando [!DNL Experience Manager] em [!DNL Adobe Managed Services] (AMS), entre em contato com o Atendimento ao Cliente do Adobe se planeja processar muitos arquivos PSD ou PSB de alta resolução. [!DNL Experience Manager] pode não processar arquivos PSB de alta resolução que tenham mais de 30000 x 23000 pixels.
+>Se estiver usando [!DNL Experience Manager] em [!DNL Adobe Managed Services] (AMS), entre em contato com o Suporte ao Cliente do Adobe se planeja processar muitos arquivos PSD ou PSB de alta resolução. [!DNL Experience Manager] pode não processar arquivos PSB de alta resolução que tenham mais de 30000 x 23000 pixels.
 
 ## Instalar o ImageMagick {#installing-imagemagick}
 
@@ -39,7 +39,7 @@ Várias versões dos arquivos de instalação do ImageMagic estão disponíveis 
 Você pode configurar a etapa do processo da linha de comando para o caso de uso específico. Execute estas etapas para gerar uma imagem invertida e miniaturas (140x100, 48x48, 319x319 e 1280x1280) sempre que adicionar um arquivo de imagem JPEG a `/content/dam` no servidor [!DNL Experience Manager]:
 
 1. No servidor [!DNL Experience Manager], vá para o console Fluxo de trabalho (`https://[aem_server]:[port]/workflow`) e abra o modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]**.
-1. No modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]**, abra a etapa **[!UICONTROL Miniaturas do EPS (alimentado pelo ImageMagick)]**.
+1. No modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]**, abra a etapa **[!UICONTROL Miniaturas do EPS (viabilizadas pelo ImageMagick)]**.
 1. Na guia **[!UICONTROL Argumentos]**, adicione `image/jpeg` à lista **[!UICONTROL Tipos MIME]**.
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)

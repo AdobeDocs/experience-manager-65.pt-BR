@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '6936'
+source-wordcount: '6940'
 ht-degree: 4%
 
 ---
@@ -94,7 +94,7 @@ Consulte [Instalar pacote de recursos 18912 para migração de ativos em massa](
 
 1. No modo Autor do Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global e selecione o ícone Ferramentas, em seguida, vá para **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração do Dynamic Media]**.
 1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, selecione **[!UICONTROL global]** (não selecione o ícone de pasta à esquerda de **[!UICONTROL global]**) e selecione **[!UICONTROL Criar]**.
-1. Na página **[!UICONTROL Criar configuração do Dynamic Media]**, insira um título, o endereço de email da conta do Dynamic Media, a senha e selecione sua região. Essas informações são fornecidas pelo Adobe no email de provisionamento. Entre em contato com o Atendimento ao cliente do Adobe se não tiver recebido o email.
+1. Na página **[!UICONTROL Criar configuração do Dynamic Media]**, insira um título, o endereço de email da conta do Dynamic Media, a senha e selecione sua região. Essas informações são fornecidas pelo Adobe no email de provisionamento. Entre em contato com o Suporte ao cliente do Adobe se não tiver recebido o email.
 
    Selecione **[!UICONTROL Conectar-se ao Dynamic Media]**.
 
@@ -134,7 +134,7 @@ Para marcar uma pasta selecionada para sincronização com o Dynamic Media, sele
 1. Selecione **[!UICONTROL Salvar]**.
 1. Para visualizar com segurança o conteúdo do Dynamic Media antes de ele ser publicado, é necessário &quot;lista de permissões&quot; a instância do autor do Experience Manager para se conectar ao Dynamic Media:
 
-   * Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta. Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte Técnico.
+   * Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta. Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte ao cliente do Adobe.
 
    * Na barra de navegação próxima à parte superior direita da página, navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Publicar configuração]** > **[!UICONTROL Servidor de imagem]**.
 
@@ -281,7 +281,7 @@ A tela Servidor de imagens estabelece as configurações padrão para entrega de
 
 Para abrir a página Configurações gerais do aplicativo , na barra Navegação global do Dynamic Media Classic, navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]**.
 
-**[!UICONTROL Servidores]**  - No provisionamento da conta, a Dynamic Media fornece automaticamente os servidores atribuídos à sua empresa. Esses servidores são usados para criar strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas da sua conta do . Não altere nenhum nome de servidor a menos que seja explicitamente instruído a fazê-lo pelo Atendimento ao Cliente do Adobe.
+**[!UICONTROL Servidores]**  - No provisionamento da conta, a Dynamic Media fornece automaticamente os servidores atribuídos à sua empresa. Esses servidores são usados para criar strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas da sua conta do . Não altere nenhum nome de servidor a menos que seja explicitamente instruído a fazê-lo pelo Suporte ao Cliente do Adobe.
 
 **[!UICONTROL Substituir imagens]**  - o Dynamic Media não permite que dois arquivos tenham o mesmo nome. A ID de URL de cada item (o nome do arquivo menos a extensão) deve ser exclusiva. Essas opções especificam como os ativos de substituição são carregados: se substituem o original ou se tornam duplicatas. Os ativos duplicados são renomeados com um &quot;-1&quot; (por exemplo, chair.tif é renomeado chair-1.tif). Essas opções afetam ativos carregados em uma pasta diferente do original ou ativos com uma extensão de nome de arquivo diferente do original (como JPG, TIF ou PNG).
 
@@ -300,7 +300,7 @@ Por padrão, o sistema mostra 15 execuções ao selecionar **[!UICONTROL Represe
 
 #### Configurar o gerenciamento de cores {#configuring-color-management}
 
-O gerenciamento de cores do Dynamic Media permite corrigir a cor dos ativos. Com a correção de cores, os ativos assimilados retêm seu espaço de cores (RGB, CMYK, Cinza) e o perfil de cores incorporado. Quando você solicita uma representação dinâmica, a cor da imagem é corrigida no espaço de cores de destino usando saída CMYK, RGB ou Cinza. Consulte [Configurar predefinições de imagem](/help/assets/managing-image-presets.md).
+O gerenciamento de cores do Dynamic Media permite corrigir a cor dos ativos. Com a correção de cores, os ativos assimilados retêm seu espaço de cores (RGB, CMYK, Cinza) e o perfil de cores incorporado. Quando você solicita uma representação dinâmica, a cor da imagem é corrigida no espaço de cores de destino usando CMYK, RGB ou saída Cinza. Consulte [Configurar predefinições de imagem](/help/assets/managing-image-presets.md).
 
 Para configurar as propriedades de cores padrão, a correção de cores é ativada quando as imagens são solicitadas:
 
@@ -313,7 +313,7 @@ Para configurar as propriedades de cores padrão, a correção de cores é ativa
 
    * **[!UICONTROL Espaço]**  de cores padrão CMYK - Nome do perfil de cores CMYK padrão
    * **[!UICONTROL Espaço]**  de cor padrão em escala de cinza - Nome do perfil de cor cinza padrão
-   * **[!UICONTROL Espaço]**  de cores padrão RGB - Nome do perfil de cores RGB padrão
+   * **[!UICONTROL Espaço]**  de cores padrão do RGB - Nome do perfil de cores padrão do RGB
    * **[!UICONTROL Propósito de renderização da conversão de cor]**  - Especifica o propósito de renderização. Os valores aceitáveis são: **[!UICONTROL perceptual]**, **[!UICONTROL calorimetria relativa]**, **[!UICONTROL saturação]**, **[!UICONTROL calorimetria absoluta]**. O Adobe recomenda **[!UICONTROL relative]** como padrão.
 
 1. Selecione **[!UICONTROL Salvar]**.
@@ -322,10 +322,10 @@ Por exemplo, você pode definir o **[!UICONTROL Espaço de cor padrão RGB]** co
 
 Isso faria o seguinte:
 
-* Permite a correção de cores para imagens RGB e CMYK.
+* Habilita a correção de cores para imagens RGB e CMYK.
 * Imagens RGB que não têm um perfil de cor são consideradas como estando no espaço de cores *sRGB*.
 * Imagens CMYK que não têm um perfil de cor são consideradas como estando no espaço de cores *WebCoated*.
-* As representações dinâmicas que retornam a saída RGB, retornam no espaço de cores *sRGB*.
+* As representações dinâmicas que retornam a saída do RGB, retornam no espaço de cores *sRGB*.
 * As representações dinâmicas que retornam saída CMYK, retornam no espaço de cores *WebCoated*.
 
 #### Editar tipos MIME para formatos compatíveis {#editing-mime-types-for-supported-formats}
@@ -436,7 +436,7 @@ Dois elementos estão disponíveis para definição, Correspondência e Nome de 
 
 1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
 
-   Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte Técnico.
+   Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte ao cliente do Adobe.
 
 1. Na barra de navegação próxima à parte superior da página, navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Predefinições do conjunto de lotes]** > **[!UICONTROL Nomeação padrão]**.
 1. Selecione **[!UICONTROL Exibir formulário]** ou **[!UICONTROL Exibir código]** para especificar como deseja exibir e inserir informações sobre cada elemento.
@@ -469,7 +469,7 @@ Você pode usar o método de campo de formulário para definir uma predefiniçã
 
 1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
 
-   Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte Técnico.
+   Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte ao cliente do Adobe.
 
 1. Na barra de navegação próxima à parte superior da página, navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Predefinições do conjunto de lotes]** > **[!UICONTROL Predefinição do conjunto de lotes]**.
 
@@ -525,7 +525,7 @@ Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome d
 
 1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e faça logon em sua conta.
 
-   Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte Técnico.
+   Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte ao cliente do Adobe.
 
 1. Na barra de navegação próxima à parte superior da página, navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Predefinições do conjunto de lotes]** > **[!UICONTROL Predefinição do conjunto de lotes]**.
 
@@ -655,7 +655,7 @@ A fila Fluxo de trabalho do Granite é usada para fluxos de trabalho não transi
 
 #### Atualizar a conexão de upload do Dynamic Media Classic {#updating-the-scene-upload-connection}
 
-A configuração Scene7 Upload Connection sincroniza ativos do Experience Manager para servidores do Dynamic Media Classic.
+A configuração Scene7 Upload Connection sincroniza ativos do Experience Manager para servidores da Dynamic Media Classic.
 
 **Para atualizar a conexão de upload do Dynamic Media Classic:**
 
@@ -711,7 +711,7 @@ Os filtros se aplicam aos tipos MIME e não podem ser específicos de caminho.
 
    Para que esse filtro se aplique a todas as imagens, independentemente do formato, defina o valor como `image/*`, onde `*` é uma expressão regular aplicada a todas as imagens de qualquer formato.
 
-   Para que o filtro seja aplicado somente às imagens do tipo JPEG, insira um valor `image/jpeg`.
+   Para que o filtro seja aplicado somente às imagens do JPEG de tipo, insira um valor de `image/jpeg`.
 
 1. Defina quais representações deseja incluir ou excluir da replicação.
 

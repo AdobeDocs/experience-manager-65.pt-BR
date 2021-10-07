@@ -1,6 +1,6 @@
 ---
 title: Invalidar o cache da Rede de entrega de conteúdo por meio do Dynamic Media Classic
-description: A invalidação do conteúdo em cache CDN (Content Delivery Network) permite atualizar rapidamente os ativos entregues pelo Dynamic Media Classic, em vez de esperar que o cache expire.
+description: A invalidação do conteúdo em cache CDN (Content Delivery Network) permite atualizar rapidamente os ativos entregues pela Dynamic Media Classic, em vez de esperar que o cache expire.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
@@ -8,9 +8,9 @@ content-type: reference
 feature: CDN Cache,Dynamic Media Classic
 role: User, Admin
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '733'
 ht-degree: 12%
 
 ---
@@ -33,7 +33,7 @@ Consulte também [Visão geral do cache no Dynamic Media Classic (Scene7)](https
 
 1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) e faça logon em sua conta.
 
-   Suas credenciais e logon foram fornecidas pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte Técnico.
+   Suas credenciais e logon foram fornecidas pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte ao cliente do Adobe.
 
 1. Próximo ao canto superior direito da página, navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]**.
 1. Na página Configurações gerais do aplicativo , no cabeçalho do grupo Servidores , localize a caixa de texto **[!UICONTROL Modelo de invalidação CDN]** .
@@ -63,4 +63,4 @@ Consulte também [Visão geral do cache no Dynamic Media Classic (Scene7)](https
    >
    >Ao selecionar ativos e, em seguida, ir para **[!UICONTROL File]** > **[!UICONTROL Invalidar CDN]**, o Dynamic Media usa um modelo CDN de invalidação para criar URLs automaticamente para invalidar a partir da Rede de entrega de conteúdo (CDN). Se não houver nada na caixa de texto **[!UICONTROL Invalidar modelo CDN]**, você receberá uma lista de URLs em branco. O armazenamento em cache na CDN não se baseia em ativos, ele é baseado em URL. Portanto, é necessário estar ciente de todos os URLs que estão em seu site. Depois de determinar esses URLs, você pode adicioná-los à caixa de texto **[!UICONTROL Invalidar modelo CDN]** anteriormente nas etapas. Em seguida, selecione esses ativos e invalide os URLs em uma etapa.
    >
-   >Outra opção é adicionar URLs completos à lista **[!UICONTROL Invalidar CDN]**. Se você seguir essa abordagem, não será necessário selecionar ativos no Dynamic Media Classic antes de ir para a opção **[!UICONTROL File > Invalidate CDN]** .
+   >Outra opção é adicionar URLs completos à lista **[!UICONTROL Invalidar CDN]**. Se você seguir essa abordagem, é desnecessário selecionar ativos no Dynamic Media Classic antes de ir para a opção **[!UICONTROL File > Invalidate CDN]** .
