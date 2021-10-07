@@ -2,10 +2,10 @@
 title: Notas de versão do AEM Content and Commerce 2021
 description: Notas de versão do AEM Content and Commerce 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: fd973cb3693872e4850f860a625cab70553d2754
+source-git-commit: a401955e4b163a8062a498ea897d4a3d95ae0208
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 8%
+source-wordcount: '1135'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF que você está usando ou planeja usar no futuro.
 
-**Com a versão de abril, substituímos o Conector da CIF do GitHub pelo complemento CIF** disponível na  [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). A mudança para o complemento vem com grandes benefícios para os projetos:
+**Com a versão de abril, substituímos o Conector da CIF do GitHub pelo complemento CIF** disponível na  [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html). A mudança para o complemento vem com grandes benefícios para os projetos:
 
 * A maioria dos novos recursos estará disponível imediatamente no AEM 6.5 (Não há mais espera pela porta lateral do recurso)
 * Fácil atualização para novas versões complementares
@@ -28,6 +28,34 @@ O conector AEM CIF antigo está em modo de manutenção e não deve mais ser usa
 | Complemento CIF | Mínimo: AEM 6.5.7, Magento 2.3.5 Esquemas GraphQL |
 | Componentes principais da CIF | [Requisitos do sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Arquétipo de projeto do AEM | [Requisitos do sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Data de lançamento: Setembro de 2021
+
+| Componente | Versão | Detalhes |
+|:-------|:-----:|---------------------:|
+| Complemento CIF | 2021.09.27 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
+| Componentes principais da CIF | 2.2.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
+| Site de referência CIF Venia | 2021.09.23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
+
+### Novidades {#what-is-new-september}
+
+* A nova guia &quot;conteúdo comercial associado&quot; no editor Sites aumenta a eficiência do autor ao obter rapidamente acesso ao conteúdo relevante AEM produto para o contexto atual
+
+   ![Conteúdo comercial associado](/help/assets/CIF/associated-commerce-content.png)
+
+* Interface do usuário do seletor de produto aprimorada para melhor experiência do usuário, maior eficiência e suporte para catálogos de produtos complexos
+
+   ![Novo seletor de produto](/help/assets/CIF/product-picker.png)
+
+* Respeite a propriedade &quot;include_in_menu&quot; no componente de navegação
+
+### Correções de bugs {#bug-fixes-september}
+
+* A limpeza do cache do menu não está funcionando como esperado
+
+* Erros JS durante AEM etapa de implantação do CS e quando não estiver usando componentes do cliente
+
+* Não é possível criar a configuração da nuvem CIF em pastas que têm um nó sling:configs
 
 ## Data de lançamento: Agosto de 2021
 
@@ -70,7 +98,7 @@ O conector AEM CIF antigo está em modo de manutenção e não deve mais ser usa
    * Indicador visual para dados de produto preparados no modo de criação para melhor visibilidade das alterações futuras
    * Novo componente de mapa de site para páginas de conteúdo e comércio
 
-* Suporte para [Recomendação de produto do Adobe Commerce Sensei, viabilizado pelo Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) em AEM Storefront usando recomendações predefinidas ou criadas de forma instantânea
+* Suporte para [Adobe Commerce Sensei Product Recommendation, desenvolvido pela Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) em AEM Storefront, usando recomendações predefinidas ou criadas dinamicamente
 
 ## Data de lançamento: Junho de 2021
 
