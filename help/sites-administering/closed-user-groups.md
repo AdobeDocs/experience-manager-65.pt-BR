@@ -1,8 +1,8 @@
 ---
 title: Grupos de usuários fechados em AEM
-seo-title: Grupos de usuários fechados em AEM
+seo-title: Closed User Groups in AEM
 description: Saiba mais sobre Grupos de usuários fechados no AEM.
-seo-description: Saiba mais sobre Grupos de usuários fechados no AEM.
+seo-description: Learn about Closed User Groups in AEM.
 uuid: 83396163-86ce-406b-b797-2457ed975ccd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,11 +11,10 @@ content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
-feature: Segurança
-translation-type: tm+mt
-source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
+feature: Security
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '6886'
+source-wordcount: '6872'
 ht-degree: 0%
 
 ---
@@ -39,7 +38,7 @@ O objetivo da nova implementação é cobrir a funcionalidade existente, quando 
 * Extensão de tipo de nó dedicada para marcar o requisito de autenticação;
 * Caminho de logon opcional associado ao requisito de autenticação.
 
-### A Nova Implementação Personalizada do Grupo de Usuários {#the-new-custom-user-group-implementation}
+### A nova implementação de grupo de usuários personalizado {#the-new-custom-user-group-implementation}
 
 Um CUG, como é conhecido no contexto de AEM, consiste nas seguintes etapas:
 
@@ -77,7 +76,7 @@ Nesta configuração composta, um novo CUG não substitui o conteúdo de control
 
 Ao contrário da anterior implementação, as novas políticas de CUG são sempre reconhecidas e tratadas como conteúdo de controle de acesso. Isso implica que eles sejam criados e editados usando a API de gerenciamento de controle de acesso JCR. Para obter mais informações, consulte a seção [Gerenciando Políticas de CUG](#managing-cug-policies) .
 
-#### Avaliação de Permissão das Políticas de CUG {#permission-evaluation-of-cug-policies}
+#### Avaliação de Permissão de Políticas de CUG {#permission-evaluation-of-cug-policies}
 
 Além de um gerenciamento dedicado de controle de acesso para CUGs, o novo modelo de autorização permite habilitar condicionalmente a avaliação de permissão para suas políticas. Isso permite configurar as políticas de CUG em um ambiente de preparo e ativar a avaliação das permissões efetivas somente depois de replicadas para o ambiente de produção.
 
@@ -112,7 +111,7 @@ As seguintes práticas recomendadas devem ser consideradas para definir o acesso
 * Limite os caminhos compatíveis com políticas CUG para algumas árvores no repositório para permitir desempenho otimizado. Por exemplo, permita apenas CUGs abaixo do nó /content como enviado como o valor padrão desde a AEM 6.3.
 * As políticas de CUG são projetadas para conceder acesso de leitura a um pequeno conjunto de principais. A necessidade de um grande número de entidades principais pode destacar problemas no conteúdo ou no design do aplicativo e deve ser reconsiderada.
 
-### Autenticação: Definir o requisito de autenticação {#authentication-defining-the-auth-requirement}
+### Autenticação: Definição do requisito de autenticação {#authentication-defining-the-auth-requirement}
 
 As partes relacionadas à autenticação do recurso CUG permitem marcar árvores que exigem autenticação e, opcionalmente, especificar uma página de logon dedicada. De acordo com a versão anterior, a nova implementação permite marcar árvores que exigem autenticação no repositório de conteúdo e habilitar condicionalmente a sincronização com o `Sling org.apache.sling.api.auth.Authenticator`responsável por, em última análise, impor o requisito e redirecionar para um recurso de logon.
 
@@ -128,7 +127,7 @@ O mesmo se aplica à propriedade `granite:loginPath` . Ele só será respeitado 
 >
 >A configuração da propriedade de caminho de logon é opcional e somente necessária se a árvore que requer autenticação não puder voltar para a página de logon padrão ou herdada de outra forma. Consulte a [Avaliação do caminho de logon](/help/sites-administering/closed-user-groups.md#evaluation-of-login-path) abaixo.
 
-#### Registrando o requisito de autenticação e o caminho de logon com o Sling Authenticator {#registering-the-authentication-requirement-and-login-path-with-the-sling-authenticator}
+#### Registrando o requisito de autenticação e o caminho de logon com o autenticador do Sling {#registering-the-authentication-requirement-and-login-path-with-the-sling-authenticator}
 
 Como esse tipo de requisito de autenticação deve ser limitado a determinados modos de execução e a um pequeno subconjunto de árvores no repositório de conteúdo, o rastreamento do tipo mixin de requisito e as propriedades do caminho de login é condicional e vinculado a uma configuração correspondente que define os caminhos suportados (consulte Opções de configuração abaixo). Consequentemente, somente as alterações no escopo desses caminhos compatíveis acionarão uma atualização do registro OSGi, em qualquer outro lugar, tanto o tipo mixin quanto a propriedade serão ignorados.
 
@@ -174,7 +173,7 @@ O `LoginPathProvider` conforme implementado pelo novo suporte a requisito de aut
 >
 >A avaliação é executada somente para solicitações associadas a recursos localizados nos caminhos compatíveis configurados. Para quaisquer outras solicitações, as maneiras alternativas de determinar o caminho de logon serão avaliadas.
 
-#### Práticas recomendadas      {#best-practices-1}
+#### Práticas recomendadas     {#best-practices-1}
 
 As práticas recomendadas a seguir devem ser consideradas ao definir os requisitos de autenticação:
 
@@ -204,13 +203,13 @@ A página associada ao caminho de logon pode estar localizada dentro ou fora des
       - granite:loginPath (STRING)
 ```
 
-## Gerenciando Políticas e Requisito de Autenticação de CUG {#managing-cug-policies-and-authentication-requirement}
+## Gerenciando Políticas e Requisito de Autenticação do CUG {#managing-cug-policies-and-authentication-requirement}
 
 ### Gerenciando Políticas de CUG {#managing-cug-policies}
 
-O novo tipo de políticas de controle de acesso para restringir o acesso de leitura para um CUG é gerenciado usando a API de gerenciamento de controle de acesso JCR e segue os mecanismos descritos com a [especificação JCR 2.0](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html).
+O novo tipo de políticas de controle de acesso para restringir o acesso de leitura para um CUG é gerenciado usando a API de gerenciamento de controle de acesso JCR e segue os mecanismos descritos com a [especificação JCR 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 
-#### Definir Uma Nova Política CUG {#set-a-new-cug-policy}
+#### Definir uma nova política CUG {#set-a-new-cug-policy}
 
 Código para aplicar uma nova política CUG em um nó que não tinha um CUG definido anteriormente. Observe que `getApplicablePolicies` retornará somente novas políticas que não foram definidas anteriormente. No final, a política precisa de ser reformulada e as alterações precisam de ser mantidas.
 
@@ -246,7 +245,7 @@ acMgr.setPolicy(path, cugPolicy); // as of this step the policy can be edited/re
 session.save();
 ```
 
-#### Editar Uma Política CUG Existente {#edit-an-existing-cug-policy}
+#### Editar uma Política CUG Existente {#edit-an-existing-cug-policy}
 
 As etapas a seguir são necessárias para editar uma política CUG existente. Observe que a política modificada precisa ser gravada novamente e as alterações precisam ser persistentes usando `javax.jcr.Session.save()`.
 
@@ -331,7 +330,7 @@ As extensões definidas por `JackrabbitAccessControlManager` que permitem editar
 
 Os métodos correspondentes sempre retornam um conjunto de políticas vazio, mas não lançarão exceções.
 
-### Gerenciar o requisito de autenticação {#managing-the-authentication-requirement}
+### Gerenciamento do requisito de autenticação {#managing-the-authentication-requirement}
 
 A criação, modificação ou remoção de novos requisitos de autenticação é realizada alterando o tipo de nó efetivo do nó de destino. A propriedade opcional de caminho de login pode ser gravada usando a API JCR comum.
 
@@ -467,7 +466,7 @@ while (isSupported(node)) {
 }
 ```
 
-### Combinação de políticas de CUG e do requisito de autenticação {#combining-cug-policies-and-the-authentication-requirement}
+### Combinação de políticas CUG e do requisito de autenticação {#combining-cug-policies-and-the-authentication-requirement}
 
 A tabela a seguir lista as combinações válidas de políticas CUG e o requisito de autenticação em uma instância AEM que tem ambos os módulos ativados por meio da configuração.
 
@@ -489,7 +488,7 @@ Estas seções fornecem uma visão geral dos componentes OSGi e das opções de 
 
 Consulte também a documentação de mapeamento CUG para obter um mapeamento abrangente das opções de configuração entre a implementação antiga e a nova.
 
-### Autorização: Configuração {#authorization-setup-and-configuration}
+### Autorização: Configuração e configuração {#authorization-setup-and-configuration}
 
 As novas partes relacionadas à autorização estão contidas no pacote **Oak CUG Authorization** ( `org.apache.jackrabbit.oak-authorization-cug`), que faz parte da instalação padrão AEM. O pacote define um modelo de autorização separado destinado a ser implantado como uma maneira adicional de gerenciar o acesso de leitura.
 
@@ -601,7 +600,7 @@ A exclusão do grupo &#39;administradores&#39; pode ser alterada ou expandida no
 
 Como alternativa, é possível fornecer e implantar uma implementação personalizada da interface CugExclude para ajustar o conjunto de principais excluídos em caso de necessidades especiais. Consulte a documentação em [CUG pluggability](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) para obter detalhes e um exemplo de implementação.
 
-### Autenticação: Configuração {#authentication-setup-and-configuration}
+### Autenticação: Configuração e configuração {#authentication-setup-and-configuration}
 
 As novas partes relacionadas à autenticação estão contidas no pacote **Adobe Granite Authentication Handler** ( `com.adobe.granite.auth.authhandler` versão 5.6.48). Este pacote faz parte da instalação padrão AEM.
 
@@ -681,7 +680,7 @@ As partes relacionadas à autenticação da regravação do CUG são fornecidas 
  </tbody>
 </table>
 
-## Configuração padrão desde AEM 6.3 {#default-configuration-since-aem}
+## Configuração padrão desde o AEM 6.3 {#default-configuration-since-aem}
 
 Por padrão, novas instalações de AEM usarão as novas implementações tanto para as partes relacionadas à autorização quanto à autenticação do recurso CUG. A implementação antiga &quot;Suporte a CUG (Adobe Granite Closed User Group)&quot; foi descontinuada e será desabilitada por padrão em todas as instalações de AEM. As novas implementações serão ativadas da seguinte maneira:
 
@@ -713,7 +712,7 @@ Por padrão, novas instalações de AEM usarão as novas implementações tanto 
 |---|---|
 | Caminhos compatíveis `/content` | Os requisitos de autenticação conforme definidos no repositório por meio do tipo mixin `granite:AuthenticationRequired` têm efeito abaixo de `/content` em `Session.save()`. O Sling Authenticator é atualizado. A adição do tipo mixin fora dos caminhos suportados é ignorada. |
 
-## Desativando o Requisito de Autenticação e Autorização de CUG {#disabling-cug-authorization-and-authentication-requirement}
+## Desabilitando o Requisito de Autenticação e Autorização CUG {#disabling-cug-authorization-and-authentication-requirement}
 
 A nova implementação pode ser completamente desativada caso uma determinada instalação não utilize CUGs ou utilize diferentes meios de autenticação e autorização.
 
@@ -721,7 +720,7 @@ A nova implementação pode ser completamente desativada caso uma determinada in
 
 Consulte a documentação [CUG pluggability](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) para obter detalhes sobre como remover o modelo de autorização CUG da configuração de autorização composta.
 
-### Desative o requisito de autenticação {#disable-the-authentication-requirement}
+### Desativar o requisito de autenticação {#disable-the-authentication-requirement}
 
 Para desabilitar o suporte para o requisito de autenticação, conforme fornecido pelo módulo `granite.auth.authhandler`, é suficiente remover a configuração associada ao **Requisito de autenticação Adobe Granite e Manipulador de caminho de logon**.
 
@@ -729,9 +728,9 @@ Para desabilitar o suporte para o requisito de autenticação, conforme fornecid
 >
 >Observe, no entanto, que a remoção da configuração não cancelará o registro do tipo mixin, que ainda era aplicável aos nós sem ter efeito.
 
-## Interação com outros Módulos {#interaction-with-other-modules}
+## Interação com outros módulos {#interaction-with-other-modules}
 
-### API Jackrabbit do Apache {#apache-jackrabbit-api}
+### API Apache Jackrabbit {#apache-jackrabbit-api}
 
 Para refletir o novo tipo de política de controle de acesso usada pelo modelo de autorização CUG, a API definida pelo Apache Jackrabbit foi estendida. Desde a versão 2.11.0 do módulo `jackrabbit-api` define uma nova interface chamada `org.apache.jackrabbit.api.security.authorization.PrincipalSetPolicy`, que se estende de `javax.jcr.security.AccessControlPolicy`.
 
@@ -743,7 +742,7 @@ O mecanismo de importação do Apache Jackrabbit FileVault foi ajustado para lid
 
 Consulte a seção acima [Apache Jackrabbit FileVault](/help/sites-administering/closed-user-groups.md#apache-jackrabbit-filevault).
 
-### Replicação do Adobe Granite {#adobe-granite-replication}
+### Replicação de Adobe Granite {#adobe-granite-replication}
 
 O módulo de replicação foi ligeiramente ajustado para poder replicar as políticas de CUG entre diferentes instâncias de AEM:
 
@@ -754,7 +753,7 @@ O módulo de replicação foi ligeiramente ajustado para poder replicar as polí
 
 Há uma limitação da replicação das políticas de CUG. Se uma determinada política CUG for removida sem remover o tipo de nó mixin correspondente `rep:CugMixin,`, a remoção não será refletida na replicação. Isto tem sido resolvido sempre eliminando a mistura após a remoção das políticas. A limitação pode, no entanto, aparecer se o tipo mixin for adicionado manualmente.
 
-### Manipulador de Autenticação Adobe Granite {#adobe-granite-authentication-handler}
+### Manipulador de autenticação do Adobe Granite {#adobe-granite-authentication-handler}
 
 O manipulador de autenticação **Adobe Granite HTTP Header Authentication Handler** fornecido com o pacote `com.adobe.granite.auth.authhandler` contém uma referência à interface `CugSupport` definida pelo mesmo módulo. É usado para calcular o &#39;realm&#39; em determinadas circunstâncias, voltando para o realm configurado com o manipulador.
 
@@ -783,11 +782,11 @@ O objetivo desta seção é fornecer uma visão geral das alterações feitas ao
 
 O componente OSGi obsoleto **Adobe Granite Closed User Group (CUG) Support** ( `com.day.cq.auth.impl.cug.CugSupportImpl`) foi substituído por novos componentes para poder manipular separadamente as partes relacionadas à autorização e autenticação da antiga funcionalidade CUG.
 
-## Diferenças no gerenciamento de CUGs no Conteúdo do Repositório {#differences-in-managing-cugs-in-the-repository-content}
+## Diferenças no gerenciamento de CUGs no conteúdo do repositório {#differences-in-managing-cugs-in-the-repository-content}
 
 As seções a seguir descrevem as diferenças entre as implementações antigas e novas das perspectivas de implementação e segurança. Embora a nova implementação tenha como objetivo fornecer a mesma funcionalidade, há alterações sutis que são importantes saber ao usar o novo CUG.
 
-### Diferenças Em Relação À Autorização {#differences-with-regards-to-authorization}
+### Diferenças Em Matéria De Autorização {#differences-with-regards-to-authorization}
 
 As principais diferenças do ponto de vista da autorização são resumidas na lista seguinte:
 
@@ -828,7 +827,7 @@ Como explicado acima, as políticas de controle de acesso CUG agora são sempre 
 
 As diferenças em relação à autenticação são descritas abaixo.
 
-#### Tipo de Mixin dedicado para requisito de autenticação {#dedicated-mixin-type-for-authentication-requirement}
+#### Tipo De Mistura Dedicado Para Requisitos De Autenticação {#dedicated-mixin-type-for-authentication-requirement}
 
 Na implementação anterior, tanto os aspectos de autorização quanto de autenticação de um CUG foram acionados por uma única propriedade JCR ( `cq:cugEnabled`). No que diz respeito à autenticação, isso resultou em uma lista atualizada de requisitos de autenticação como armazenados com a implementação do Apache Sling Authenticator. Com a nova implementação, o mesmo resultado é obtido ao marcar o nó do target com um tipo mixin dedicado ( `granite:AuthenticationRequired`).
 
@@ -836,7 +835,7 @@ Na implementação anterior, tanto os aspectos de autorização quanto de autent
 
 O tipo mixin define uma única propriedade opcional chamada `granite:loginPath`, que corresponde basicamente à propriedade `cq:cugLoginPage`. Em contraste com a implementação anterior, a propriedade de caminho de logon só será respeitada se o tipo de nó declarativo for o mixin mencionado. Adicionar uma propriedade com esse nome sem definir o tipo mixin não terá efeito e nem um novo requisito nem uma exclusão para o caminho de logon serão relatados ao autenticador.
 
-#### Privilégio para requisito de autenticação {#privilege-for-authentication-requirement}
+#### Requisito De Privilégio Para Autenticação {#privilege-for-authentication-requirement}
 
 Adicionar ou remover um tipo mixin requer que o privilégio `jcr:nodeTypeManagement` seja concedido. Na implementação anterior, o privilégio `jcr:modifyProperties` é usado para editar a propriedade residual.
 
@@ -850,7 +849,7 @@ Colocar a política CUG somente no nó jcr:content localizado abaixo de uma dete
 
 Esse pode ser um cenário válido e é possível com um editor de repositório que permite colocar o mixin em qualquer nó. No entanto, o comportamento contrasta a implementação anterior, onde colocar uma propriedade cq:cugEnabled ou cq:cugLoginPage no nó jcr:content foi remapeada internamente no nó da página. Esse mapeamento não é mais executado.
 
-#### Caminhos suportados configurados {#configured-supported-paths}
+#### Caminhos compatíveis configurados {#configured-supported-paths}
 
 Tanto o tipo mixin `granite:AuthenticationRequired` quanto a propriedade granite:loginPath só serão respeitados dentro do escopo definido pelo conjunto da opção de configuração **Caminhos Suportados** presente com o **Requisito de Autenticação do Adobe Granite e Manipulador de Caminho de Logon**. Se nenhum caminho for especificado, o recurso de requisito de autenticação será desativado completamente. Nesse caso, o tipo mixin ou a propriedade têm efeito ao serem adicionados ou definidos para um determinado nó JCR.
 
@@ -873,7 +872,7 @@ Para a instalação AEM atualizada, é importante garantir que apenas uma implem
 * colisões no Sling Authenticator no que diz respeito aos requisitos de autenticação
 * negado acesso de leitura quando a configuração da ACL associada ao CUG antigo colida com uma nova política CUG.
 
-### Migrando Conteúdo de CUG Existente {#migrating-existing-cug-content}
+### Migração de Conteúdo CUG Existente {#migrating-existing-cug-content}
 
 O Adobe fornece uma ferramenta para migrar para a nova implementação CUG. Para usá-lo, execute as seguintes etapas:
 

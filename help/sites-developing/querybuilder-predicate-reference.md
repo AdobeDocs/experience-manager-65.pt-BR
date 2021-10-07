@@ -1,22 +1,21 @@
 ---
 title: Referência de predicado do construtor de consultas
-seo-title: Referência de predicado do construtor de consultas
+seo-title: Query Builder Predicate Reference
 description: Referência completa do predicado para a API do Construtor de consultas.
-seo-description: Referência completa do predicado para a API do Construtor de consultas.
+seo-description: Complete predicate reference for the Query Builder API.
 uuid: af0e269e-7d52-4032-b22e-801c7b5dccfa
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
-translation-type: tm+mt
-source-git-commit: 054b49fb8aacb9e267ed23552d788f72123ed3b3
+exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2310'
 ht-degree: 3%
 
 ---
-
 
 # Referência de predicado do construtor de consultas{#query-builder-predicate-reference}
 
@@ -62,11 +61,11 @@ Oferece suporte à extração de facetas. Fornecerá buckets para cada valor `tr
 #### Propriedades {#properties}
 
 * ****
-boolpropertyrelative path to property, por exemplo 
+boolpropertyrelative path to property, por exemplo, 
 `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`
 
 * ****
-valor do valor para verificar a propriedade, &quot; 
+valor para verificar a propriedade, &quot; 
 `true`&quot; ou &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
@@ -102,7 +101,7 @@ Este é um predicado somente filtragem e não pode utilizar um índice de pesqui
 
    &quot; `equals`&quot; para correspondência exata, &quot; `!=`&quot; para comparação de desigualdade, &quot; `greater`&quot; para propriedade1 maior que propriedade2, &quot; `>=`&quot; para propriedade1 maior ou igual a propriedade2. O valor padrão é &quot; `equals`&quot;.
 
-### intervalo de datas {#daterange}
+### daterange {#daterange}
 
 Corresponde às propriedades JCR DATE em relação a um intervalo de data/hora. Isso usa a ISO8601
 formato para datas e horas ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) e também permite representações parciais, como `YYYY-MM-DD`. Como alternativa, o carimbo de data e hora pode ser fornecido como o número de milissegundos desde 1970 no fuso horário UTC, o formato de hora unix.
@@ -222,7 +221,7 @@ Isso é conceitualmente `fulltext AND ( (path AND type) OR (path AND type) )`. E
 
 ### hasPermission {#haspermission}
 
-Restringe o resultado a itens em que a sessão atual tem os privilégios [JCR especificados.](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Restringe o resultado a itens em que a sessão atual tem os privilégios [JCR especificados.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Este é um predicado somente filtragem e não pode utilizar um índice de pesquisa. Ele não oferece suporte à extração de facetas.
 
@@ -232,7 +231,7 @@ Este é um predicado somente filtragem e não pode utilizar um índice de pesqui
 
    privilégios JCR separados por vírgulas que a sessão do usuário atual TODOS devem ter para o nó em questão; por exemplo `jcr:write`, `jcr:modifyAccessControl`
 
-### language {#language}
+### idioma {#language}
 
 Encontra páginas CQ em um idioma específico. Isso observa a propriedade de idioma da página e o caminho da página que geralmente inclui o idioma ou o local em uma estrutura de site de nível superior.
 
@@ -242,11 +241,11 @@ Oferece suporte à extração de facetas. Fornecerá compartimentos para cada c�
 
 #### Propriedades {#properties-8}
 
-* **idioma**
+* **language**
 
    Código de idioma ISO, por exemplo &quot; `de`&quot;
 
-### principal {#mainasset}
+### ativo principal {#mainasset}
 
 Verifica se um nó é um ativo principal do DAM e não um subativo. Basicamente, cada nó não está dentro de um nó &quot;subassets&quot;. Observe que isso não verifica o tipo de nó `dam:Asset`. Para usar esse predicado, basta definir &quot; `mainasset=true`&quot; ou &quot; `mainasset=false`&quot;, não há mais propriedades.
 
@@ -284,7 +283,7 @@ Oferece suporte à extração de facetas. Fornecerá buckets para cada nome de n
 
    padrão de nome de nó que permite curingas: `*` = qualquer ou nenhum caractere, `?` = qualquer caractere, `[abc]` = somente caracteres entre colchetes
 
-### {#notexpired} não texturizado
+### não textuoso {#notexpired}
 
 Corresponde itens verificando se uma propriedade JCR DATE é maior ou igual ao tempo atual do servidor. Isso pode ser usado para verificar uma propriedade de data similar &quot; `expiresAt`&quot; e limitar somente àqueles que ainda não expiraram ( `notexpired=true`) ou que já expiraram ( `notexpired=false`).
 
@@ -320,7 +319,7 @@ Permite classificar o resultado. Se for necessário solicitar por várias propri
 
    se definido como &quot; `ignore`&quot; fará com que a classificação não diferencie maiúsculas de minúsculas, o que significa &quot;a&quot; vem antes de &quot;B&quot;; se estiver vazio ou não, a classificação diferencia maiúsculas de minúsculas, o que significa &quot;B&quot; vem antes de &quot;a&quot;
 
-### path {#path}
+### caminho {#path}
 
 Pesquisa em um determinado caminho.
 
@@ -328,7 +327,7 @@ Não suporta extração de facetas.
 
 #### Propriedades {#properties-14}
 
-* **caminho**
+* **path**
 
    padrão do caminho; dependendo do exato, a subárvore inteira corresponderá (como anexar `//*` no xpath, mas observe que isso não inclui o caminho base) (exato=falso, padrão) ou somente uma correspondência de caminho exata, que pode incluir curingas ( `*`); se auto for definido, a subárvore inteira, incluindo o nó base, será pesquisada
 
@@ -438,7 +437,7 @@ Oferece suporte à extração de facetas da mesma forma que o predicado de inter
 
    limite de data inferior em milissegundos ou `1s 2m 3h 4d 5w 6M 7y` (um segundo, dois minutos, três horas, quatro dias, cinco semanas, seis meses, sete anos) em relação ao tempo atual do servidor, use &quot;-&quot; para deslocamento negativo
 
-### raiz {#root}
+### root {#root}
 
 Grupo de predicado raiz. Suporta todos os recursos de um grupo e permite definir parâmetros de consulta global.
 

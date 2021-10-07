@@ -1,8 +1,8 @@
 ---
 title: AEM Conceitos principais
-seo-title: Noções básicas
+seo-title: The Basics
 description: Uma visão geral dos conceitos principais de como o AEM é estruturado e como desenvolvê-lo, incluindo a compreensão do JCR, Sling, OSGi, o dispatcher, os workflows e o MSM
-seo-description: Uma visão geral dos conceitos principais de como o AEM é estruturado e como desenvolvê-lo, incluindo a compreensão do JCR, Sling, OSGi, o dispatcher, os workflows e o MSM
+seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,11 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-translation-type: tm+mt
-source-git-commit: 78e28636eec331314c2f29c93d516215b1572f20
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '3367'
-ht-degree: 0%
+source-wordcount: '3334'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +41,7 @@ Também é recomendável ler e seguir as [Diretrizes e Práticas Recomendadas](/
 
 ## Repositório de conteúdo Java {#java-content-repository}
 
-O padrão Java Content Repository (JCR), [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), especifica uma maneira independente do fornecedor e de implementação para acessar o conteúdo de forma bidirecional em um nível granular em um repositório de conteúdo.
+O padrão Java Content Repository (JCR), [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html), especifica uma maneira independente do fornecedor e de implementação para acessar o conteúdo de forma bidirecional em um nível granular em um repositório de conteúdo.
 
 O chumbo da especificação é detido pela Adobe Research (Suíça) AG.
 
@@ -54,7 +53,7 @@ O Experience Server fornece os Experience Services, que AEM são criados e que p
 
 [Apache ](https://jackrabbit.apache.org/) Jackrabbitis é uma implementação de código aberto, em conformidade total com a API 2.0 do JCR.
 
-## Processamento de Solicitação Sling {#sling-request-processing}
+## Processamento de solicitação Sling {#sling-request-processing}
 
 ### Introdução ao Sling {#introduction-to-sling}
 
@@ -115,13 +114,13 @@ Podemos dividi-lo em suas partes compósitas:
 
 **seletor(s)** Usado(s) para métodos alternativos de renderização do conteúdo; neste exemplo, uma versão compatível com a impressora no formato A4.
 
-**** formato extensionContent; especifica também o script a ser usado para renderização.
+**** Formato extensionContent; especifica também o script a ser usado para renderização.
 
 **** suffixPode ser usado para especificar informações adicionais.
 
 **parâmetro(s)** Qualquer parâmetro necessário para o conteúdo dinâmico.
 
-#### Do URL para Conteúdo e Scripts {#from-url-to-content-and-scripts}
+#### Do URL para conteúdo e scripts {#from-url-to-content-and-scripts}
 
 Usando estes princípios:
 
@@ -162,7 +161,7 @@ Alguns outros pontos são:
 * quando o Método (GET, POST) é necessário, ele será especificado em maiúsculas de acordo com a especificação HTTP, por exemplo, jobs.POST.esp (veja abaixo)
 * vários mecanismos de script são compatíveis:
 
-   * HTL (Linguagem de modelo HTML - Sistema de modelo preferencial e recomendado do Adobe Experience Manager para HTML): `.html`
+   * HTL (Linguagem de modelo de HTML - Sistema de modelo preferencial e recomendado da Adobe Experience Manager para o HTML): `.html`
    * Páginas ECMAScript (JavaScript) (execução no lado do servidor): `.esp, .ecma`
    * Páginas do servidor Java (execução do lado do servidor): `.jsp`
    * Compilador de Servlet Java (execução do lado do servidor): `.java`
@@ -208,7 +207,7 @@ Usando o exemplo acima, se `sling:resourceType` for `hr/jobs` então para:
 
 * Se nenhum script for encontrado, o script padrão será usado.
 
-   A representação padrão é suportada atualmente como texto sem formatação (.txt), HTML (.html) e JSON (.json), todos os quais listarão as propriedades do nó (devidamente formatado). A representação padrão da extensão .res, ou solicitações sem uma extensão de solicitação, é spool do recurso (quando possível).
+   A representação padrão é suportada atualmente como texto sem formatação (.txt), HTML (.html) e JSON (.json), e todos listarão as propriedades do nó (devidamente formatado). A representação padrão da extensão .res, ou solicitações sem uma extensão de solicitação, é spool do recurso (quando possível).
 * Para tratamento de erros http (códigos 403 ou 404), o Sling procurará um script em:
 
    * o local /apps/sling/servlet/errorhandler para [scripts personalizados](/help/sites-developing/customizing-errorhandler-pages.md)
@@ -289,7 +288,7 @@ Se você chamar a representação (o script) diretamente, oculta o recurso dentr
 
 Isso usa o pacote da API do Sling, org.apache.sling.&amp;ast; e bibliotecas de tags.
 
-### Fazendo referência a elementos existentes usando sling:include {#referencing-existing-elements-using-sling-include}
+### Referência a elementos existentes usando sling:include {#referencing-existing-elements-using-sling-include}
 
 Uma consideração final é a necessidade de fazer referência a elementos existentes nos scripts.
 
@@ -356,13 +355,13 @@ Com currentNode sendo o objeto de nó atual.
 
 Para obter mais informações sobre como manipular objetos de Nó, consulte o [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
-**** WidgetEm AEM todas as entradas de usuários são gerenciadas por widgets. Geralmente, eles são usados para controlar a edição de um conteúdo.
+**** WidgetAEM todas as entradas de usuários são gerenciadas por widgets. Geralmente, eles são usados para controlar a edição de um conteúdo.
 
 As caixas de diálogo são criadas combinando widgets.
 
 AEM foi desenvolvido usando a biblioteca ExtJS de widgets.
 
-**** Caixa de diálogoUma caixa de diálogo é um tipo especial de widget.
+**** DiálogoUma caixa de diálogo é um tipo especial de widget.
 
 Para editar conteúdo, o AEM usa caixas de diálogo definidas pelo desenvolvedor do aplicativo. Eles combinam uma série de widgets para apresentar ao usuário todos os campos e ações necessários para editar o conteúdo relacionado.
 
@@ -377,7 +376,7 @@ A definição de um componente inclui:,
 * o código usado para renderizar o conteúdo
 * uma caixa de diálogo para a entrada do usuário e a configuração do conteúdo resultante.
 
-**** ModeloUm modelo é a base para um tipo específico de página. Ao criar uma página na guia Sites , o usuário precisa selecionar um modelo. A nova página é então criada copiando esse modelo.
+**** Modelo Um modelo é a base para um tipo específico de página. Ao criar uma página na guia Sites , o usuário precisa selecionar um modelo. A nova página é então criada copiando esse modelo.
 
 Um modelo é uma hierarquia de nós que tem a mesma estrutura da página a ser criada, mas sem nenhum conteúdo real.
 
@@ -393,7 +392,7 @@ Por exemplo, para obter o nome da página atual, é possível usar o seguinte c�
 
 S`tring pageName = currentPage.getName();`
 
-Com currentPage sendo o objeto de página atual. Para obter mais informações sobre como manipular objetos Page, consulte o [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
+Com currentPage sendo o objeto de página atual. Para obter mais informações sobre como manipular objetos Page, consulte o [Javadocs](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Gerenciador** de páginas O gerenciador de páginas é uma interface que fornece métodos para operações em nível de página.
 
@@ -401,7 +400,7 @@ Por exemplo, para obter a página que contém um recurso, é possível usar o se
 
 Página myPage = pageManager.getContainsPage(myResource);
 
-Com o pageManager sendo o objeto do gerenciador de páginas e myResource um objeto de recurso. Para obter mais informações sobre os métodos fornecidos pelo gerenciador de páginas, consulte o [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
+Com o pageManager sendo o objeto do gerenciador de páginas e myResource um objeto de recurso. Para obter mais informações sobre os métodos fornecidos pelo gerenciador de páginas, consulte o [Javadocs](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Estrutura no Repositório {#structure-within-the-repository}
 

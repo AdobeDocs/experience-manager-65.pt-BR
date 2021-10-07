@@ -6,10 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '4525'
+source-wordcount: '4524'
 ht-degree: 1%
 
 ---
@@ -39,7 +38,6 @@ Isso significa que:
 >* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
 
 >
-
 
 
 >[!CAUTION]
@@ -130,10 +128,9 @@ AEM comércio eletrônico é implementado com um mecanismo de comércio eletrôn
 >
 >AEM eCommerce implementado no AEM usando desenvolvimento genérico com base no JCR é:
 >
->* Um exemplo de comércio eletrônico independente e AEM nativo para ilustrar o uso da API. Isso pode ser usado para controlar dados do produto, carrinhos de compras e check-out junto com a exibição de dados e campanhas de marketing existentes. Nesse caso, o banco de dados do produto é armazenado no repositório nativo do AEM (a implementação Adobe de [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)).
+>* Um exemplo de comércio eletrônico independente e AEM nativo para ilustrar o uso da API. Isso pode ser usado para controlar dados do produto, carrinhos de compras e check-out junto com a exibição de dados e campanhas de marketing existentes. Nesse caso, o banco de dados do produto é armazenado no repositório nativo do AEM (a implementação Adobe de [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
 >
->  
-A instalação de AEM padrão contém as noções básicas da [implementação genérica do eCommerce](/help/commerce/cif-classic/administering/generic.md).
+>  A instalação de AEM padrão contém as noções básicas da [implementação genérica do eCommerce](/help/commerce/cif-classic/administering/generic.md).
 
 ### Provedores de comércio {#commerce-providers}
 
@@ -199,7 +196,7 @@ Embora a localização real possa depender da implementação; por exemplo, gen�
 
 ## Produtos {#products}
 
-### Produto Dados versus Dados de marketing {#product-data-versus-marketing-data}
+### Dados do produto versus dados de marketing {#product-data-versus-marketing-data}
 
 #### Categorias estruturais versus de marketing {#structural-versus-marketing-categories}
 
@@ -312,7 +309,7 @@ Assim como em idiomas, grandes empresas multinacionais podem precisar atender a 
 
 Tags também podem ser usadas para agrupar produtos em um catálogo. Eles podem ser usados para catálogos mais dinâmicos, como ofertas sazonais.
 
-### Configuração do catálogo (importação inicial) {#catalog-setup-initial-import}
+### Configuração do Catálogo (Importação Inicial) {#catalog-setup-initial-import}
 
 Dependendo da sua implementação, você pode importar os dados do produto necessários para o seu catálogo básico para o AEM de:
 
@@ -353,7 +350,7 @@ Há várias estratégias que você pode escolher para solucionar esses problemas
 * [Teste de desempenho](#performance-testing)
 * [Desempenho - Diversos](#performance-miscellaneous)
 
-#### Intervalo {#bucketing}
+#### Agrupamento {#bucketing}
 
 Se um nó JCR tiver muitos nós filhos diretos (por exemplo, 1000 e mais), os buckets (pastas fantasmas) serão necessários para garantir que o desempenho não seja afetado. Elas são geradas de acordo com um algoritmo ao importar.
 
@@ -447,7 +444,7 @@ Para todas as implementações, os seguintes pontos podem ser considerados:
    Por exemplo, o gerenciamento de atributos é frequentemente um bom candidato para armazenamento em cache, pois se refere a dados atualizados por meio da importação de produtos.
 * Considere o uso de [páginas proxy](#proxy-pages).
 
-### Páginas de seção do catálogo {#catalog-section-pages}
+### Páginas da seção de catálogo {#catalog-section-pages}
 
 As seções de catálogo fornecem a você, por exemplo:
 
@@ -502,7 +499,7 @@ No entanto, há uma compensação. Não será possível personalizar as informa�
 >
 >Você pode converter de uma metodologia para outra a qualquer momento. Também é possível converter uma subseção do catálogo.
 
-## Promoções e comprovantes {#promotions-and-vouchers}
+## Promoções e Vouchers {#promotions-and-vouchers}
 
 ### Vouchers {#vouchers}
 
@@ -855,7 +852,7 @@ Os detalhes do pagamento, incluindo as informações sobre cartões de crédito,
 
 A conformidade com o PCI (Payment Card Industry, setor de cartões de pagamento) pode ser alcançada.
 
-### Confirmação do pedido {#confirmation-of-order}
+### Confirmação do despacho {#confirmation-of-order}
 
 A ordem é confirmada na tela e pode ser rastreada com o [controle de pedido](#order-tracking).
 

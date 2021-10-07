@@ -1,8 +1,8 @@
 ---
 title: Tipos de nó personalizados
-seo-title: Tipos de nó personalizados
+seo-title: Custom Node Types
 description: AEM é baseado no Sling e usa um repositório JCR com tipos de nó oferecidos por ambos, mas AEM também fornece vários tipos de nó personalizados
-seo-description: AEM é baseado no Sling e usa um repositório JCR com tipos de nó oferecidos por ambos, mas AEM também fornece vários tipos de nó personalizados
+seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1877'
 ht-degree: 9%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 Como o AEM é baseado no Sling e usa um repositório JCR, os tipos de nó oferecidos por ambos estão disponíveis para uso:
 
-* [Tipos de nó JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [Tipos de nó JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Tipos de Nó Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 Além disso. AEM fornece um intervalo de tipos de nó personalizados.

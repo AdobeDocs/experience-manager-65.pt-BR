@@ -2,7 +2,7 @@
 title: OWASP Top 10
 seo-title: OWASP Top 10
 description: Saiba como o AEM lida com os 10 principais riscos de segurança da OWASP.
-seo-description: Saiba como o AEM lida com os 10 principais riscos de segurança da OWASP.
+seo-description: Learn how AEM deals with the top 10 OWASP security risks.
 uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -63,9 +62,9 @@ As senhas são armazenadas como hashes criptográficos no nó do usuário; por p
 
 Dados confidenciais, como credenciais de terceiros, são armazenados em formulários criptografados usando uma biblioteca criptográfica certificada pelo FIPS 140-2.
 
-## 8. Falha ao Restringir o Acesso ao URL {#failure-to-restrict-url-access}
+## 8. Falha ao restringir o acesso ao URL {#failure-to-restrict-url-access}
 
-O repositório permite a configuração de [privilégios finamente granulados (conforme especificado pelo JCR)](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html) para qualquer usuário ou grupo em um determinado caminho, por meio de entradas de controle de acesso. As restrições de acesso são aplicadas pelo repositório.
+O repositório permite a configuração de [privilégios finamente granulados (conforme especificado pelo JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) para qualquer usuário ou grupo em um determinado caminho, por meio de entradas de controle de acesso. As restrições de acesso são aplicadas pelo repositório.
 
 ## 9. Proteção insuficiente da camada de transporte {#insufficient-transport-layer-protection}
 

@@ -1,8 +1,8 @@
 ---
 title: Administração de usuários, grupos e direitos de acesso
-seo-title: Administração de usuários, grupos e direitos de acesso
+seo-title: User, Group and Access Rights Administration
 description: Saiba mais sobre a administração de usuários, grupos e direitos de acesso no AEM.
-seo-description: Saiba mais sobre a administração de usuários, grupos e direitos de acesso no AEM.
+seo-description: Learn about user, group and access rights administration in AEM.
 uuid: 26d7bb25-5a38-43c6-bd6a-9ddba582c60f
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -11,10 +11,9 @@ discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3120'
 ht-degree: 1%
 
 ---
@@ -63,7 +62,7 @@ O CRX permite configurar os direitos de acesso para contas de usuário e grupos.
 
 >[!NOTE]
 >
->O CRX implementa o controle de acesso [conforme definido por JSR-283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html).
+>O CRX implementa o controle de acesso [conforme definido por JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Uma instalação padrão de um repositório CRX é configurada para usar listas de controle de acesso baseadas em recursos. Essa é uma possível implementação do controle de acesso JSR-283 e uma das implementações presentes com o Jackrabbit.
 
@@ -91,7 +90,7 @@ O CRX usa dois conceitos principais ao avaliar direitos de acesso:
       Todos os direitos atribuídos a qualquer um dos grupos aos quais o usuário pertence.
    O resultado é então usado para permitir ou negar acesso ao recurso solicitado.
 
-#### Compilando a lista de direitos de acesso para um assunto {#compiling-the-list-of-access-rights-for-a-subject}
+#### Compilando a lista de direitos de acesso de um assunto {#compiling-the-list-of-access-rights-for-a-subject}
 
 No CRX, o assunto depende de:
 
@@ -112,7 +111,6 @@ A lista de direitos de acesso aplicáveis ao assunto é construída a partir de:
 >* A ordem em que você especifica os grupos não afeta os direitos de acesso.
 
 >
-
 
 
 ### Resolvendo Direitos de Solicitação e Acesso {#resolving-request-and-access-rights}
@@ -258,13 +256,13 @@ Isso permite que as contas do representante concluam tarefas como se estivessem 
 
 Se uma conta representar outra é muito difícil de ver. Os arquivos de log não contêm informações sobre o fato de que a representação ocorreu nos eventos. Portanto, se o usuário B estiver representando o usuário-A, todos os eventos parecerão ter sido executados pessoalmente pelo usuário-A.
 
-### Criando uma Conta de Usuário {#creating-a-user-account}
+### Criando uma conta de usuário {#creating-a-user-account}
 
 1. Abra a caixa de diálogo **Administração do Usuário**.
 1. Clique em **Criar Usuário**.
 1. É possível inserir as Propriedades:
 
-   * **** UserID usada como o nome da conta.
+   * **** UserIDusada como o nome da conta.
    * **** Senha necessária ao fazer logon.
    * **Nome** principal para fornecer um nome textual completo.
    * **Caminho intermediário, que pode ser usado para formar uma estrutura em árvore.** 
@@ -286,8 +284,7 @@ Se uma conta representar outra é muito difícil de ver. Os arquivos de log não
 >
 
 
-
-### Atualizando uma Conta de Usuário {#updating-a-user-account}
+### Atualizando uma conta de usuário {#updating-a-user-account}
 
 1. Com a caixa de diálogo **Administração do Usuário**, abra a exibição de lista de todas as contas.
 1. Navegue pela estrutura de árvore.
@@ -295,7 +292,7 @@ Se uma conta representar outra é muito difícil de ver. Os arquivos de log não
 1. Faça uma alteração e clique em Salvar (símbolo de marca de verificação verde) para essa entrada.
 1. Clique em **Fechar** para concluir ou **Lista...** para retornar à lista de todas as contas de usuário.
 
-### Removendo uma conta de usuário {#removing-a-user-account}
+### Remover uma conta de usuário {#removing-a-user-account}
 
 1. Com a caixa de diálogo **Administração do Usuário**, abra a exibição de lista de todas as contas.
 1. Navegue pela estrutura de árvore.
@@ -307,7 +304,7 @@ Se uma conta representar outra é muito difícil de ver. Os arquivos de log não
 >
 >As entradas de direitos de acesso não são removidas. Isso garante a integridade histórica.
 
-### Definir propriedades {#defining-properties}
+### Definição de propriedades {#defining-properties}
 
 Você pode definir **Propriedades** para contas novas ou existentes:
 
@@ -381,7 +378,7 @@ A coluna **Herdado** indica que a associação foi herdada como resultado da ass
 >
 >Quando a função Proprietário, Editor ou Visualizador é atribuída a um usuário em qualquer pasta de Ativo, um novo grupo é criado. O nome do grupo é do formato `mac-default-<foldername>` para cada pasta na qual as funções são definidas.
 
-### Criando uma Conta de Grupo {#creating-a-group-account}
+### Criando uma conta de grupo {#creating-a-group-account}
 
 1. Abra a caixa de diálogo **Administração de Grupo**.
 1. Clique em **Criar grupo**.
@@ -397,7 +394,7 @@ A coluna **Herdado** indica que a associação foi herdada como resultado da ass
    1. Consulte **Associação de Grupo**.
    1. Gerenciar **Membros**.
 
-### Atualizando uma Conta de Grupo {#updating-a-group-account}
+### Atualizando uma conta de grupo {#updating-a-group-account}
 
 1. Com a caixa de diálogo **Administração de Grupo**, abra a exibição de lista de todas as contas.
 1. Navegue pela estrutura de árvore.
@@ -405,7 +402,7 @@ A coluna **Herdado** indica que a associação foi herdada como resultado da ass
 1. Faça uma alteração e clique em Salvar (símbolo de marca de verificação verde) para essa entrada.
 1. Clique em **Fechar** para concluir ou **Lista...** para retornar à lista de todas as contas de grupo.
 
-### Removendo uma conta de grupo {#removing-a-group-account}
+### Remover uma conta de grupo {#removing-a-group-account}
 
 1. Com a caixa de diálogo **Administração de Grupo**, abra a exibição de lista de todas as contas.
 1. Navegue pela estrutura de árvore.
@@ -417,7 +414,7 @@ A coluna **Herdado** indica que a associação foi herdada como resultado da ass
 >
 >As entradas de direitos de acesso não são removidas. Isso garante a integridade histórica.
 
-### Definir propriedades {#defining-properties-1}
+### Definição de propriedades {#defining-properties-1}
 
 Você pode definir Propriedades para contas novas ou existentes:
 
@@ -594,7 +591,7 @@ Os seguintes privilégios estão disponíveis para seleção ao adicionar uma en
  </tbody>
 </table>
 
-### Registrando Novos Privilégios {#registering-new-privileges}
+### Registrar Novos Privilégios {#registering-new-privileges}
 
 Também é possível registrar novos privilégios:
 
@@ -608,7 +605,7 @@ Também é possível registrar novos privilégios:
 
 1. Clique em **OK** para salvar. O privilégio agora estará disponível para seleção.
 
-### Adicionando uma Entrada de Controle de Acesso {#adding-an-access-control-entry}
+### Adicionar uma entrada de controle de acesso {#adding-an-access-control-entry}
 
 1. Selecione o recurso e abra a guia **Controle de Acesso**.
 
@@ -652,7 +649,7 @@ A ordem na lista indica a ordem na qual as políticas são aplicadas.
 1. Na tabela de **Políticas de Controle de Acesso Local** clique no ícone vermelho (-) à direita da entrada.
 1. A entrada será removida das duas tabelas para **Local** e **Políticas de Controle de Acesso Efetivas**.
 
-### Testando uma Política de Controle de Acesso {#testing-an-access-control-policy}
+### Testando uma política de controle de acesso {#testing-an-access-control-policy}
 
 1. Na barra de ferramentas do CRXDE Lite, selecione **Ferramentas**, em seguida **Testar Controle de Acesso...**.
 1. Uma nova caixa de diálogo é aberta no painel superior direito. Selecione o **Path** e/ou **Principal** que deseja testar.
