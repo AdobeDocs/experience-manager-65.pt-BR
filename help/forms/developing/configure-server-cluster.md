@@ -1,7 +1,8 @@
 ---
 title: Como configurar e solucionar problemas de um AEM Forms no cluster de servidores JEE?
 description: Saiba como configurar e solucionar problemas de um AEM Forms no cluster de servidores JEE
-source-git-commit: 8502e0227819372db4120d3995fba51c7401d944
+exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
 source-wordcount: '4033'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 ## Conhecimento pré-requisito {#prerequisites}
 
-Familiaridade com AEM Forms nos servidores de aplicativos JEE, JBoss, WebSphere e Webogic, Red Hat Linux, SUSE Linux, Microsoft Windows, IBM AIX ou Sun Solaris, Oracle, IBM DB2 ou servidores de banco de dados SQL Server e ambientes da Web.
+Familiaridade com AEM Forms em sistemas operacionais JEE, JBoss, WebSphere e Webogic application, Red Hat Linux, SUSE Linux, Microsoft Windows, IBM AIX ou Sun Solaris, Oracle, IBM DB2 ou servidores de banco de dados SQL Server e ambientes da Web.
 
 ## Nível do usuário {#user-level}
 
@@ -266,7 +267,7 @@ Para determinar como o Quartz se configurou, você deve examinar as mensagens ge
 INFORMAÇÕES `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
 É importante localizar essa primeira linha nos logs, pois alguns servidores de aplicativos também usam o Quartz, e suas instâncias do Quartz não devem ser confundidas com a instância que está sendo usada pelo AEM Forms no serviço do Agendador JEE. Essa é a indicação de que o serviço Scheduler está sendo inicializado e as linhas que o seguem informarão se ele está ou não iniciando no modo clusterizado corretamente. Várias mensagens são exibidas nessa sequência e é a última mensagem &quot;iniciada&quot; que revela como o Quartz é configurado:
 
-Aqui está o nome da instância do Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.corp.adobe.com1312883903975`. O nome da instância Quartz do programador sempre começará com a string `IDPSchedulerService_$_`. A sequência de caracteres anexada ao final disso informa se o Quartz está ou não sendo executado no modo clusterizado. O identificador exclusivo longo gerado pelo nome do host do nó e uma longa string de dígitos, aqui `ap-hp8.ottperflab.corp.adobe.com1312883903975`, indica que ele está operando em um cluster. Se estiver operando como um único nó, o identificador será um número de dois dígitos, &quot;20&quot;:
+Aqui está o nome da instância do Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. O nome da instância Quartz do programador sempre começará com a string `IDPSchedulerService_$_`. A sequência de caracteres anexada ao final disso informa se o Quartz está ou não sendo executado no modo clusterizado. O identificador exclusivo longo gerado pelo nome do host do nó e uma longa string de dígitos, aqui `ap-hp8.ottperflab.adobe.com1312883903975`, indica que ele está operando em um cluster. Se estiver operando como um único nó, o identificador será um número de dois dígitos, &quot;20&quot;:
 
 INFO `[org.quartz.core.QuartzScheduler]` Scheduler `IDPSchedulerService_$_20` iniciado.
 Essa verificação deve ser feita em todos os nós do cluster separadamente, já que o agendador de cada nó determina independentemente se deve operar no modo de cluster.
@@ -332,19 +333,3 @@ Embora esses arquivos e caminhos possam ser compartilhados entre os nós ou loca
 O caminho do Diretório Temporário, em particular, não deve ser compartilhado entre nós. Deve ser utilizado um procedimento semelhante ao descrito para verificar o GDS para verificar se o diretório temporário não está a ser partilhado: vá para cada nó, crie um arquivo temporário no caminho indicado pela configuração de caminho e, em seguida, verifique se os outros nós não compartilham o arquivo. O caminho de diretório temporário deve se referir ao armazenamento em disco local em cada nó, se possível, e deve ser verificado.
 
 Para cada uma das configurações de caminho, verifique se o caminho realmente existe e está acessível a partir de cada nó no cluster, usando a identidade de uso efetiva sob a qual o AEM Forms no JEE é executado. O conteúdo do diretório de fontes deve ser legível. O diretório temporário deve permitir leitura, gravação e controle.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
