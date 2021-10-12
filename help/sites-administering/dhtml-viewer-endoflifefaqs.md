@@ -6,20 +6,19 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
-translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+exl-id: 06b74770-1f96-4f6b-98c0-afef7000e42b
+source-git-commit: 62544559020b0c0afd7bb31fb832b82ba3d47919
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%
 
 ---
 
-
 # Fim da vida útil do visualizador DHTML {#dhtml-viewer-end-of-life}
 
 A partir de 31 de janeiro de 2014, a plataforma do visualizador DHTML será oficialmente encerrada.
 
-Consulte o [Guia de referência de visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) para obter os visualizadores mais recentes suportados.
+Consulte o [Guia de referência de visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) para obter os visualizadores mais recentes compatíveis.
 
 <!-- OBSOLETE CONTENT **What is the change?**
 
