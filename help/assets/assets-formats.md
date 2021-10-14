@@ -4,12 +4,12 @@ description: Formatos de arquivo e tipos MIME suportados por [!DNL Assets] and [
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
-feature: Gerenciamento de ativos,Representações
+feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: f0a0ea53675afa16463a3cf863257020ba5374d3
+source-git-commit: c8e83622070572d104f2cdc20c592ac2e9d0d31b
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 10%
+source-wordcount: '1535'
+ht-degree: 11%
 
 ---
 
@@ -45,7 +45,7 @@ Os formatos de imagem rasterizada compatíveis em [!DNL Assets] são:
 | PICT | - | - | - | - | - | - | Instantâneo |
 | PSB | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | - | - |
 
-‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pela Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
+‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
 Os formatos de imagem rasterizada compatíveis em [!DNL Dynamic Media] são:
 
@@ -60,15 +60,15 @@ Os formatos de imagem rasterizada compatíveis em [!DNL Dynamic Media] são:
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
 | PICT | Instantâneo | - | - | - | - |
 
-‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pela Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
+‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
 Além das informações acima, considere o seguinte:
 
-* O suporte para arquivos EPS se aplica somente a imagens raster. Por exemplo, a geração de miniaturas para imagens vetoriais EPS não é compatível por padrão. Para adicionar suporte, [configure ImageMagick](best-practices-for-imagemagick.md). Para integrar ferramentas de terceiros para ativar recursos adicionais, consulte [Manipulador de mídia baseado na linha de comando](media-handlers.md#command-line-based-media-handler).
+* O suporte para arquivos EPS se aplica somente a imagens raster. Por exemplo, a geração de miniaturas de imagens vetoriais do EPS não é compatível por padrão. Para adicionar suporte, [configure ImageMagick](best-practices-for-imagemagick.md). Para integrar ferramentas de terceiros para ativar recursos adicionais, consulte [Manipulador de mídia baseado na linha de comando](media-handlers.md#command-line-based-media-handler).
 
 * O write-back de metadados funciona para o formato de arquivo PSB quando é adicionado ao manipulador `NComm`.
 
-* Para usar [!DNL Dynamic Media] para visualizar e gerar representações dinâmicas para arquivos EPS, consulte [Adobe Illustrator (AI), Postscript (EPS) e formatos de arquivo PDF.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Para usar [!DNL Dynamic Media] para visualizar e gerar representações dinâmicas para arquivos EPS, consulte [formatos de arquivo Adobe Illustrator (AI), Postscript (EPS) e PDF.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Para arquivos EPS, o write-back de metadados é compatível com a versão 3.0 ou posterior da Convenção de Estrutura de Documentos PostScript (PS-Adobe).
 
@@ -95,10 +95,10 @@ Consulte também [Detectar formatos de arquivo não suportados para Dynamic Medi
 
 * Arquivos PNG com um tamanho de bloco IDAT superior a 100 MB.
 * Arquivos PSB.
-* Arquivos PSD com um espaço de cor diferente de CMYK, RGB, Escala de cinza ou Bitmap não são compatíveis. Não há suporte para espaços de cores DuoTone, Lab e Indexado.
-* Arquivos PSD com uma profundidade de bits superior a 16.
+* Arquivos PSD com um espaço de cores diferente de CMYK, RGB, Escala de cinza ou Bitmap não são compatíveis. Não há suporte para espaços de cores DuoTone, Lab e Indexado.
+* Arquivos PSD com profundidade de bits superior a 16.
 * Arquivos TIFF com dados de ponto flutuante.
-* Arquivos TIFF com espaço de cor Lab.
+* Arquivos TIFF com espaço de cores Lab.
 
 <!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
 ## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
@@ -118,21 +118,21 @@ The following table describes the sub-types of raster image formats that are *no
 |  | Files that have Lab color space. | Use ExifTool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
 -->
 
-## Biblioteca PDF rasterizer suportada {#supported-pdf-rasterizer-library}
+## Biblioteca PDF Rasterizer suportada {#supported-pdf-rasterizer-library}
 
-A biblioteca Adobe PDF Rasterizer gera miniaturas e visualizações de alta qualidade para arquivos PDF e [!DNL Adobe Illustrator] grandes e com uso intenso de conteúdo. O Adobe recomenda usar a biblioteca Rasterizer de PDF para o seguinte:
+A biblioteca Adobe PDF Rasterizer gera miniaturas e visualizações de alta qualidade para arquivos grandes e com uso intenso de conteúdo [!DNL Adobe Illustrator] e PDF. O Adobe recomenda usar a biblioteca PDF Rasterizer para o seguinte:
 
-* Arquivos AI/PDF com uso intenso de conteúdo que consomem muitos recursos para serem processados.
+* Arquivos IA/PDF com uso intenso de conteúdo que consomem muitos recursos para serem processados.
 * Arquivos AI/PDF, para os quais as miniaturas não são geradas por padrão.
-* Arquivos AI com cores Pantone Matching System (PMS).
+* Arquivos AI com cores do Pantone Matching System (PMS).
 
-Consulte [Usando o PDF Rasterizer](aem-pdf-rasterizer.md).
+Consulte [Usando PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## Biblioteca de transcodificação de imagem suportada {#supported-image-transcoding-library}
 
 A biblioteca de transcodificação de imagem do Adobe é uma solução de processamento de imagens que executa funções essenciais de manipulação de imagens, como codificação, transcodificação, redefinição de amostra e redimensionamento.
 
-A biblioteca de transcodificação de imagens oferece suporte a JPG/JPEG, PNG (8 e 16 bits), GIF, BMP, TIFF/Compressed TIFF (exceto arquivos TIFF de 32 bits e arquivos PTIFF), ICO e ICN MIME.
+A biblioteca de transcodificação de imagens oferece suporte a JPG/JPEG, PNG (8 bits e 16 bits), GIF, BMP, TIFF/TIFF compactado (além dos arquivos TIFF de 32 bits e PTIFF), ICO e ICN MIME.
 
 Consulte [Biblioteca de transcodificação de imagem](imaging-transcoding-library.md).
 
@@ -163,7 +163,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
 | PS | Instantâneo | Instantâneo | - | - | - | - | - | - |
 | QXP | Instantâneo | Instantâneo | - | - | - | - | - | - |
-| EPUB | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo | - | - | - |
+| ePub | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo | - | - | - |
 
 ## Formatos de documento compatíveis no Dynamic Media {#supported-document-formats-dynamic-media}
 
@@ -206,20 +206,18 @@ Além da funcionalidade acima, considere o seguinte:
 
 ## Formatos de vídeo de entrada suportados no Dynamic Media para transcodificação {#supported-input-video-formats-for-dynamic-media-transcoding}
 
-| Extensão de arquivo de vídeo | Container | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
+| Extensão de arquivo de vídeo | Contêiner | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
 |---|---|---|---|
 | MP4 | MPEG-4 | H264/AVC (todos os perfis) | - |
-| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediário, Animação da Apple |
+| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediário, Animação do Apple |
 | FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (arquivos de animação vetorial) |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Tela Microsoft® (MSS2), Microsoft® Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
 | M4V | Apple iTunes | H264/AVC | - |
 | AVI | Intercalação A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | WebM | WebM | VP8 do Google | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MKV | Matroska | H264/AVC | - |
-| RAM, RM | RealVideo | Não suportado | G2 real (RV20), Real 8 (RV30), Real 10 (RV40) |
-| MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 | - |
 
 ## Formatos de arquivo compatíveis {#supported-archive-formats}
 
