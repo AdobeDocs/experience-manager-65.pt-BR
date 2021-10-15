@@ -3,9 +3,10 @@ title: Modelos de fragmentos do conteúdo
 description: Saiba como os Modelos de fragmentos de conteúdo servem como base para seu conteúdo headless no AEM e como criar Fragmentos de conteúdo com conteúdo estruturado.
 feature: Content Fragments
 role: User
-source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
+exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
+source-git-commit: 924b30680b189ec5061eb0bd664165793a9dbd9c
 workflow-type: tm+mt
-source-wordcount: '2256'
+source-wordcount: '2334'
 ht-degree: 7%
 
 ---
@@ -73,6 +74,9 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
       * Muitas propriedades são autoexplicativas, para obter detalhes adicionais, consulte [Propriedades](#properties).
       * A digitação de um **Rótulo do campo** preencherá automaticamente o **Nome da propriedade** - se estiver vazio, e poderá ser atualizado manualmente posteriormente.
 
+         >[!CAUTION]
+         Ao atualizar manualmente um tipo de dados **Nome da propriedade**, observe que os nomes devem conter somente caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
+         Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
       Por exemplo:
 
       ![propriedades de campo](assets/cfm-models-05.png)
@@ -133,6 +137,10 @@ No editor de fragmentos, cada instância aparecerá como uma guia.
 
 Muitas propriedades são autoexplicativas, para certas propriedades os detalhes adicionais são os seguintes:
 
+>[!CAUTION]
+Ao atualizar manualmente o **Nome da propriedade**, observe que os nomes devem conter somente caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
+Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
+
 * **Renderizar**
 comoAs várias opções para realizar/renderizar o campo em um fragmento. Geralmente, isso permite definir se o autor verá uma única instância do campo ou poderá criar várias instâncias.
 
@@ -141,7 +149,7 @@ do campoInserir um
 **O** Rótulo do campo gerará automaticamente um Nome  **de propriedade**, que pode ser atualizado manualmente se necessário.
 
 * ****
-A validação ValidationBasic está disponível por mecanismos como a propriedade  **** Required. Alguns tipos de dados têm campos de validação de adição. Consulte [Validação](#validation) para obter mais detalhes.
+A validação ValidationBasic está disponível por mecanismos como a propriedade  **** Required . Alguns tipos de dados têm campos de validação de adição. Consulte [Validação](#validation) para obter mais detalhes.
 
 * No tipo de dados **Texto de várias linhas**, é possível definir o **Tipo padrão** como:
 
