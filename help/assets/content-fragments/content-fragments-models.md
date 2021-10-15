@@ -4,9 +4,9 @@ description: Saiba como os Modelos de fragmentos de conteúdo servem como base p
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: 924b30680b189ec5061eb0bd664165793a9dbd9c
+source-git-commit: 966398715af1d9083512c4f6d4f0f81c72c898ae
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2342'
 ht-degree: 7%
 
 ---
@@ -75,7 +75,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
       * A digitação de um **Rótulo do campo** preencherá automaticamente o **Nome da propriedade** - se estiver vazio, e poderá ser atualizado manualmente posteriormente.
 
          >[!CAUTION]
-         Ao atualizar manualmente um tipo de dados **Nome da propriedade**, observe que os nomes devem conter somente caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
+         Ao atualizar manualmente a propriedade **Nome da propriedade** para um tipo de dados, observe que os nomes devem conter somente caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
          Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
       Por exemplo:
 
@@ -137,9 +137,13 @@ No editor de fragmentos, cada instância aparecerá como uma guia.
 
 Muitas propriedades são autoexplicativas, para certas propriedades os detalhes adicionais são os seguintes:
 
->[!CAUTION]
-Ao atualizar manualmente o **Nome da propriedade**, observe que os nomes devem conter somente caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
-Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
+
+* **Nome da Propriedade**
+
+   Ao atualizar manualmente essa propriedade para um tipo de dados, observe que os nomes **must** contêm *somente* caracteres latinos, dígitos numéricos e sublinhado &quot;_&quot; como caractere especial.
+
+   >[!CAUTION]
+   Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
 
 * **Renderizar**
 comoAs várias opções para realizar/renderizar o campo em um fragmento. Geralmente, isso permite definir se o autor verá uma única instância do campo ou poderá criar várias instâncias.
