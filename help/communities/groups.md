@@ -1,8 +1,8 @@
 ---
 title: Console de grupos da comunidade
-seo-title: Console de grupos da comunidade
+seo-title: Community Groups Console
 description: O console Grupos permite criar grupos da Comunidade
-seo-description: O console Grupos permite criar grupos da Comunidade
+seo-description: Groups console lets you create Community groups
 uuid: 21e2bde3-7354-4193-bcb3-c672c6342252
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,22 +13,22 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: d42057a2f8ce50332f404388fd1cfc9b6a154765
+source-git-commit: 1074843a0105df39382b64defe66fc262986b9c9
 workflow-type: tm+mt
-source-wordcount: '1674'
+source-wordcount: '1678'
 ht-degree: 2%
 
 ---
 
 # Console de grupos da comunidade {#community-groups-console}
 
-O console Grupos fornece acesso à criação de grupos da comunidade quando a [estrutura de modelo](/help/communities/sites-console.md#step1) de um site da comunidade inclui a [função de grupos](/help/communities/functions.md#groups-function).
+O console Grupos fornece acesso à criação de grupos da comunidade quando um site da comunidade [estrutura do modelo](/help/communities/sites-console.md#step1) inclui a [função de grupos](/help/communities/functions.md#groups-function).
 
-* O AEM Communities suporta o aninhamento de grupos em outros grupos. O aninhamento de grupo é possível quando a estrutura [do novo grupo](/help/communities/tools-groups.md) contém a função de grupos.
+* O AEM Communities suporta o aninhamento de grupos em outros grupos. O aninhamento de grupo é possível quando a variável [estrutura do novo grupo](/help/communities/tools-groups.md) contém a função groups .
 * Somente para o ambiente de criação, há um assistente de criação de grupo semelhante ao assistente de criação de site.
 * Se os membros podem ou não criar grupos no ambiente de publicação, é configurável ao adicionar uma função Grupos a uma estrutura de site da comunidade ou de grupo da comunidade.
 
-Dos três modelos de grupo incluídos, somente o modelo `Reference Group` inclui uma função de grupos em sua estrutura.
+Dos três modelos de grupo incluídos, somente a variável `Reference Group` O template inclui uma função de grupos em sua estrutura.
 
 As diferentes facetas dos grupos da comunidade são:
 
@@ -44,25 +44,25 @@ As diferentes facetas dos grupos da comunidade são:
 
 >[!NOTE]
 >
->Esse console Grupos, acessível apenas no console Sites de Comunidades, não deve ser confundido com o [console Grupos](/help/communities/members.md) para gerenciar grupos de membros.
+>Esse console Grupos, acessível apenas no console Sites das Comunidades, não deve ser confundido com o membro [Console Grupos](/help/communities/members.md) para gerenciar grupos de membros.
 >
->Os grupos de membros são grupos de usuários registrados no ambiente de publicação e acessados do ambiente do autor usando o [serviço de túnel](/help/communities/deploy-communities.md#tunnel-service-on-author).
+>Os grupos de membros são grupos de usuários registrados no ambiente de publicação e acessados do ambiente de criação usando o [serviço de túnel](/help/communities/deploy-communities.md#tunnel-service-on-author).
 
 ## Criação do grupo {#group-creation}
 
 Para acessar o console Grupos :
 
 * Ao criar, faça logon com privilégios de administrador.
-* Na navegação global: **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
+* Na navegação global: **[!UICONTROL Comunidades]** > **[!UICONTROL Sites]**.
 * Selecione uma pasta de site da comunidade existente para abri-la.
 * Selecione uma instância de um site da comunidade na pasta .
 
    * A estrutura do site da comunidade deve incluir uma função de grupos.
-   * Essas capturas de tela são do tutorial Introdução após [criar grupos em publicar](/help/communities/published-site.md).
+   * Essas capturas de tela são do tutorial Introdução após [criação de grupos na publicação](/help/communities/published-site.md).
 
    ![create-group](assets/create-group.png)
 
-* Selecione a pasta **Groups** para abri-la.
+* Selecione o **Pasta Grupos** para abri-lo.
 
    Quando abertas, todos os grupos existentes, sejam eles criados em autor ou publicação, serão exibidos.
 
@@ -70,7 +70,7 @@ Para acessar o console Grupos :
 
    ![create-new-group](assets/create-new-group.png)
 
-* Selecione o botão **Criar grupo**.
+* Selecione o **Criar grupo** botão.
 
 ### Etapa 1: Modelo de grupo da comunidade {#step-community-group-template}
 
@@ -90,22 +90,22 @@ O título aparece no site publicado do grupo.
    O caminho raiz para o grupo.
 A raiz padrão é o site principal, mas a raiz pode ser movida para qualquer local dentro do site. Não é recomendável alterá-la.
 
-* **Menu de Idiomas adicionais disponíveis dos grupos da comunidade** 
+* **Idiomas adicionais disponíveis para grupos da comunidade** menu
 
    Use o menu suspenso para selecionar os idiomas de grupo da comunidade disponíveis. O menu exibe todos os idiomas nos quais o site da comunidade pai é criado. Os usuários podem selecionar entre esses idiomas para criar grupos em várias localidades nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites da comunidade.
 
 * **Nome do grupo da comunidade**
 
-   O nome da página raiz do grupo que aparece no URL.
+   O nome da página raiz do grupo que aparece no URL. Evite usar caracteres sublinhados (_) e palavras-chave, como recursos e configuração no nome do grupo.
 
    * Verifique novamente o nome, pois ele não é facilmente alterado depois que o grupo é criado.
-   * O URL base será exibido abaixo de `Community Group Name`.
+   * O URL base será exibido abaixo do `Community Group Name`.
    * Para um URL válido, anexe &quot;.html&quot;
-      *por exemplo*,  `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+      *por exemplo*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
-* **Menu de** modelo do grupo da comunidade
+* **Modelo de grupo da comunidade** menu
 
-   Use o menu suspenso para escolher um [modelo de grupo da comunidade disponível](/help/communities/tools.md).
+   Use o menu suspenso para escolher um disponível [modelo de grupo da comunidade](/help/communities/tools.md).
 
 ### Etapa 2: Design {#step-design}
 
@@ -119,7 +119,7 @@ Quando selecionado, o tema será sobreposto com uma marca de verificação azul 
 
 É possível selecionar um tema que difere do tema do site pai.
 
-Depois que o site da comunidade é publicado, é possível [editar as propriedades](#modifyinggroupproperties) e selecionar um tema diferente.
+Depois que o site da comunidade é publicado, é possível [editar as propriedades](#modifyinggroupproperties) e selecione um tema diferente.
 
 ### MARCA DO GRUPO COMUNITÁRIO {#community-group-branding}
 
@@ -170,11 +170,11 @@ A configuração de associação permite a seleção de uma das três maneiras d
 
 * **Associação necessária**
 
-   Se selecionado, o grupo da comunidade será um grupo aberto. Os membros do site da comunidade podem visualizar o conteúdo do grupo, mas precisam ingressar no grupo para publicar conteúdo. Os membros se associam selecionando o botão `Join` no ambiente de publicação. O padrão não está selecionado.
+   Se selecionado, o grupo da comunidade será um grupo aberto. Os membros do site da comunidade podem visualizar o conteúdo do grupo, mas precisam ingressar no grupo para publicar conteúdo. Os membros se associam selecionando o `Join` no ambiente de publicação. O padrão não está selecionado.
 
 * **Associação restrita**
 
-   Se selecionado, o grupo da comunidade é um grupo secreto. Os membros da Comunidade devem ser convidados explicitamente. Os membros convidados são inseridos na caixa de pesquisa. Os membros podem ser adicionados posteriormente usando o [console Membros e grupos](/help/communities/members.md) ambiente do autor. O padrão não está selecionado.
+   Se selecionado, o grupo da comunidade é um grupo secreto. Os membros da Comunidade devem ser convidados explicitamente. Os membros convidados são inseridos na caixa de pesquisa. Os membros podem ser adicionados posteriormente usando o [Consoles Membros e grupos](/help/communities/members.md) o ambiente do autor. O padrão não está selecionado.
 
 **MINIATURA**
 
@@ -192,9 +192,9 @@ Se nenhuma imagem for adicionada, uma imagem padrão será exibida.
 
 ![comunidade-criar-grupo](assets/community-create-group.png)
 
-Se algum ajuste for necessário, use o botão **Voltar** para fazer isso.
+Se algum ajuste for necessário, use a variável **Voltar** para criá-las.
 
-Depois que **Create** for selecionado e iniciado, o processo de criação do grupo não poderá ser interrompido.
+Uma vez **Criar** for selecionado e iniciado, o processo de criação do grupo não poderá ser interrompido.
 
 Quando o processo é concluído, o cartão do novo site da subcomunidade (grupo) é exibido no console Grupos de sites das Comunidades , onde os autores podem adicionar conteúdo de página ou os administradores podem modificar as propriedades do site.
 
@@ -202,7 +202,7 @@ Quando o processo é concluído, o cartão do novo site da subcomunidade (grupo)
 
 >[!NOTE]
 >
->O grupo é criado em todos os idiomas, conforme especificado em [Etapa 1: Modelo de grupo da comunidade](/help/communities/groups.md#step-community-group-template) em Idiomas de grupo da comunidade adicionais disponíveis, no console Grupos da comunidade dos respectivos sites da comunidade.
+>O grupo é criado em todos os idiomas, conforme especificado em [Etapa 1: Modelo de grupo da comunidade](/help/communities/groups.md#step-community-group-template) em Idiomas de grupos comunitários adicionais disponíveis, no console Grupos da comunidade dos respectivos sites da comunidade.
 
 ## Conteúdo do grupo de autores {#author-group-content}
 
@@ -216,7 +216,7 @@ As propriedades de um site de subcomunidade existente, especificadas durante o p
 
 ![editar site](assets/edit-site.png)
 
-Os detalhes das seguintes propriedades correspondem às descrições fornecidas na seção [Criação de grupo](#group-creation). Qualquer grupo aninhado pode ser modificado, seja ele criado no ambiente de publicação ou no ambiente de criação.
+Os detalhes das seguintes propriedades correspondem às descrições fornecidas na [Criação de grupo](#group-creation) seção. Qualquer grupo aninhado pode ser modificado, seja ele criado no ambiente de publicação ou no ambiente de criação.
 
 ![comunidade-grupo-básico](assets/community-group-basic.png)
 
@@ -231,17 +231,17 @@ O Nome do Grupo da Comunidade não pode ser alterado.
 
 A escolha de um modelo de grupo da comunidade diferente não teria efeito em um site de grupo da comunidade existente, pois nenhuma conexão permanece entre modelos e sites.
 
-Em vez disso, o [STRUCTURE](#modify-structure) da subcomunidade pode ser modificado.
+Em vez disso, a variável [ESTRUTURA](#modify-structure) da subcomunidade pode ser modificada.
 
 ### Modificar estrutura {#modify-structure}
 
 O painel ESTRUTURA permite a modificação da estrutura inicialmente criada a partir do modelo de grupo da comunidade selecionado ao criar o site da subcomunidade a partir do ambiente de criação ou publicação. No painel , é possível:
 
-* Arraste e solte [funções da comunidade](/help/communities/functions.md) adicionais na estrutura do site.
+* Arrastar e soltar [funções da comunidade](/help/communities/functions.md) na estrutura do site.
 * Em uma instância de uma função da comunidade na estrutura do site:
 
    * **`Gear icon`**
-Edite as configurações, incluindo o título de exibição, o URL e os grupos de membros  [privilegiados](/help/communities/users.md#privilegedmembersgroups).
+Editar configurações, incluindo título de exibição, URL e [grupos de membros privilegiados](/help/communities/users.md#privilegedmembersgroups).
 
    * **`Trashcan icon`**
 Remover (excluir) funções da estrutura do site.
@@ -257,9 +257,9 @@ Modifique a ordem das funções, conforme exibido na barra de navegação de ní
 
 >[!CAUTION]
 >
->A função de grupos deve *não* ser a *primeira nem a única* função na estrutura do site.
+>A função de grupos deve *not* ser *primeiro nem o único* na estrutura do site.
 >
->Qualquer outra função, como [page function](/help/communities/functions.md#page-function), deve ser incluída e listada primeiro.
+>Qualquer outra função, como a [função de página](/help/communities/functions.md#page-function), deve ser incluída e listada primeiro.
 
 **Exemplo: Adicionar uma função de calendário a uma estrutura de subcomunidade (grupo)**
 
@@ -276,21 +276,21 @@ O painel DESIGN permite a modificação do tema:
 
 ### Modificar configurações {#modify-settings}
 
-O painel CONFIGURAÇÕES permite a capacidade de adicionar [moderadores](#moderation) da comunidade.
+O painel CONFIGURAÇÕES permite a capacidade de adicionar comunidade [moderadores](#moderation).
 
 ### Modificar Associação {#modify-membership}
 
-O painel [MEMBERSHIP](#membership) é apenas informativo. Não é possível alterar o tipo de membro do grupo estabelecido, seja ele opcional, obrigatório ou restrito.
+O [ASSOCIAÇÃO](#membership) O painel é apenas informativo. Não é possível alterar o tipo de membro do grupo estabelecido, seja ele opcional, obrigatório ou restrito.
 
 ### Modificar miniatura {#modify-thumbnail}
 
-O painel [THUMBNAIL](#thumbnail) permite que uma imagem seja carregada para representar o grupo da comunidade para os visitantes do site no ambiente de publicação, bem como no console Grupos do site das Comunidades no ambiente do autor.
+O [MINIATURA](#thumbnail) permite que uma imagem seja carregada para representar o grupo da comunidade para os visitantes do site no ambiente de publicação, bem como no console Grupos do site das Comunidades no ambiente de criação.
 
 ## Publicar o grupo {#publish-the-group}
 
 ![publicar site](assets/publish-site.png)
 
-Após um grupo da comunidade ter sido criado ou modificado recentemente, é possível publicar (ativar) o grupo selecionando o ícone `Publish Site`.
+Após um grupo da comunidade ter sido criado ou modificado recentemente, é possível publicar (ativar) o grupo selecionando o `Publish Site` ícone .
 
 Depois que o grupo for publicado com êxito, uma mensagem será exibida:
 
