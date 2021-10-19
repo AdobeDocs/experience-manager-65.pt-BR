@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 52c8d4c425213718678543e9e9e8e5a4c2af4f95
+source-git-commit: 9f7bd996d2ec77d29fbee3ee51ac6469f94e9bd7
 workflow-type: tm+mt
-source-wordcount: '4684'
+source-wordcount: '4679'
 ht-degree: 0%
 
 ---
@@ -215,7 +215,7 @@ Ao remover um índice em uma instância MongoDB, o custo da exclusão é proporc
 
 ### O Gabarito de Consulta JCR {#jcrquerycheatsheet}
 
-Para dar suporte à criação de consultas JCR eficientes e definições de índice, o [Folha de Consulta JCR|assets/JCR_query_cheatsheet-v1.0.pdf] está disponível para download e uso como referência durante o desenvolvimento. Ele contém consultas de amostra para o QueryBuilder, XPath e SQL-2, abrangendo vários cenários que se comportam de forma diferente em termos de desempenho de consulta. Também fornece recomendações sobre como criar ou personalizar índices do Oak. O conteúdo desta Folha de Cálculo se aplica ao AEM 6.5 e AEM as a Cloud Service.
+Para dar suporte à criação de consultas JCR eficientes e definições de índice, o [Folha de Consulta JCR](assets/JCR_query_cheatsheet-v1.0.pdf) está disponível para download e uso como referência durante o desenvolvimento. Ele contém consultas de amostra para o QueryBuilder, XPath e SQL-2, abrangendo vários cenários que se comportam de forma diferente em termos de desempenho de consulta. Também fornece recomendações sobre como criar ou personalizar índices do Oak. O conteúdo desta Folha de Cálculo se aplica ao AEM 6.5 e AEM as a Cloud Service.
 
 ## Reindexação {#re-indexing}
 
@@ -227,7 +227,7 @@ A reindexação de índices Oak deve ser evitada, a menos que seja coberta por u
 
 >[!NOTE]
 >
->Antes de consultar as tabelas abaixo para determinar se a reindexação é útil,** sempre **verifique:
+>Antes de consultar as tabelas abaixo para determinar se a reindexação é útil, **always** verificar:
 >
 >* a consulta está correta
 >* o query resolve para o índice esperado (usando [Explicar Consulta](/help/sites-administering/operations-dashboard.md#diagnosis-tools))
