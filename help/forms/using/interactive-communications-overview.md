@@ -9,9 +9,9 @@ topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
-source-git-commit: dc8e3ed70ebaf064993ef5af910430b7fc2e521d
+source-git-commit: 415744ca5c46a1495fe90369c162158c7fc2f1d4
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '486'
 ht-degree: 7%
 
 ---
@@ -42,22 +42,22 @@ Veja a seguir os principais recursos das Comunicações interativas:
 
 ### Fluxo de trabalho {#workflow}
 
-Para criar uma Comunicação Interativa, prepare os [blocos de construção](#buildingblocks) para Comunicação Interativa e conclua as seguintes etapas:
+Para criar uma comunicação interativa, faça com que [blocos de construção](#buildingblocks) para comunicação interativa pronta e depois conclua as seguintes etapas:
 
-1. Escolha [criar uma Comunicação Interativa](/help/forms/using/create-interactive-communication.md).
+1. Escolha para [criar uma comunicação interativa](/help/forms/using/create-interactive-communication.md).
 
-1. Especifique o [modelo de dados de formulário](/help/forms/using/data-integration.md), serviço de preenchimento prévio e [modelos de canal de impressão e Web](/help/forms/using/web-channel-print-channel.md). Você pode optar por gerar o canal da Web a partir do canal de impressão.
+1. Especifique a [modelo de dados de formulário](/help/forms/using/data-integration.md), serviço de preenchimento prévio e [modelos de canal de impressão e Web](/help/forms/using/web-channel-print-channel.md). Você pode optar por gerar o canal da Web a partir do canal de impressão.
 
-1. Usando a [interface de arrastar e soltar](/help/forms/using/introduction-interactive-communication-authoring.md), adicione fragmentos de documento, imagens, componentes para imprimir e canal da Web da Comunicação interativa, conforme necessário.
+1. Usar o [interface de arrastar e soltar](/help/forms/using/introduction-interactive-communication-authoring.md), adicione fragmentos de documento, imagens, componentes para imprimir e canal da Web da Comunicação interativa, conforme necessário.
 1. Configure as propriedades dos componentes inseridos, como o seguinte:
 
    1. [Imagens](/help/forms/using/create-interactive-communication.md#step2)
-   1. [Tabelas](/help/forms/using/create-interactive-communication.md#tables)  (Incluindo Fragmentos De Layout)
+   1. [Tabelas](/help/forms/using/create-interactive-communication.md#tables) (Incluindo Fragmentos de Layout)
    1. [Gráficos](/help/forms/using/chart-component-interactive-communications.md)
    1. [Fragmentos de documento](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
 1. Visualize canais de impressão e da Web e, se necessário, edite a Comunicação interativa.
-1. O agente usa a interface do agente para [preparar a comunicação interativa](/help/forms/using/prepare-send-interactive-communication.md) para enviá-la ao recipient/pós-processo.
+1. O agente usa a interface do agente para [preparar a comunicação interativa](/help/forms/using/prepare-send-interactive-communication.md) para enviá-lo ao recipient/pós-processo.
 
 ### Elementos básicos {#buildingblocks}
 
@@ -67,11 +67,11 @@ A seguir estão os blocos de construção necessários para criar uma Comunicaç
 - [Modelos de canal de impressão e Web](/help/forms/using/web-channel-print-channel.md)
 - [Fragmentos de documento](/help/forms/using/document-fragments.md)
 - Imagens
-- [](/help/forms/using/themes.md) Temas para o canal Web
+- [Temas](/help/forms/using/themes.md) para o canal Web
 
 ## Comunicações Interativas E Gerenciamento De Correspondência {#interactive-communications-vs-correspondence-management}
 
-A Comunicação interativa é a abordagem padrão e recomendada para criar comunicações com clientes. Para continuar usando as cartas que criam no AEM 6.3 Forms e no AEM 6.2 Forms, é necessário [instalar um pacote de compatibilidade](/help/forms/using/compatibility-package.md). Veja a seguir uma comparação entre os recursos de Comunicação interativa e carta.
+A Comunicação interativa é a abordagem padrão e recomendada para criar comunicações com clientes. Para continuar usando as letras que criam no AEM 6.3 Forms e no AEM 6.2 Forms, é necessário [instalar um pacote de compatibilidade](/help/forms/using/compatibility-package.md). Veja a seguir uma comparação entre os recursos de Comunicação interativa e carta.
 
 <table>
  <tbody>
@@ -124,6 +124,12 @@ A Comunicação interativa é a abordagem padrão e recomendada para criar comun
    <td>Compatível</td>
    <td>Compatível</td>
   </tr>
+   <tr>
+   <td>Submissões</td>
+   <td>Compatível</td>
+   <td>Compatível</td>
+  </tr>
+  <tr>
   <tr>
    <td>Auditoria</td>
    <td>Incompatível</td>
@@ -134,12 +140,6 @@ A Comunicação interativa é a abordagem padrão e recomendada para criar comun
    <td>Incompatível</td>
    <td>Compatível</td>
   </tr>
-   <tr>
-   <td>Rascunhos Gerenciar instâncias</td>
-   <td>Incompatível</td>
-   <td>Compatível</td>
-  </tr>
-  <tr>
    <td>Processamento em lote</td>
    <td>Compatível </td>
    <td>Compatível</td>
