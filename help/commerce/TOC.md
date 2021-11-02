@@ -1,12 +1,12 @@
 ---
 sub-product: AEM Content and Commerce
-user-guide-title: Conteúdo e comércio AEM
+user-guide-title: AEM Content and Commerce
 breadcrumb-title: Guia do Commerce
 user-guide-description: Entenda como usar e administrar o AEM Content and Commerce.
-source-git-commit: a5bf6a1a6e9013e44209ea865145af1557445318
+source-git-commit: 5678d20fa0a7e8a709b02a2f6cbbeffbd4a26cbd
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 51%
+source-wordcount: '109'
+ht-degree: 49%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 51%
 + [Alterações importantes no conteúdo e no comércio do AEM](cif/changes.md)
 + [Introdução e visão geral](cif/introduction.md)
 + Integrações {#integrations}
-   + [Comércio Adobe](cif/integrating/magento.md)
+   + [Adobe Commerce](cif/integrating/magento.md)
    + [Solução comercial de terceiros](cif/integrating/third-party.md)
-+ AEM Loja {#storefront}
++ Loja AEM {#storefront}
    + [Introdução](cif/getting-started.md)
    + Administração {#administering}
       + [Configuração de várias lojas](cif/configuring/multi-store-setup.md)
@@ -32,14 +32,15 @@ ht-degree: 51%
       + [Alterar estilo de componentes da CIF](cif/customizing/style-cif-component.md)
       + [Personalizar componentes da CIF](cif/customizing/customize-cif-components.md)
       + [Usar seletores de catálogo da CIF](cif/customizing/use-cif-pickers.md)
-+ [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
++ [PWA Studio Adobe Commerce](cif/pwa-studio/getting-started.md)
 + [Migração](cif/migration.md)
 + Notas de versão {#release-notes}
    + [2021](cif/release-notes/release-notes-2021.md)
    + [2020](cif/release-notes/release-notes-2020.md)
    + [2019](cif/release-notes/release-notes-2019.md)
 + [Perguntas frequentes](cif/faq.md)
-+ CIF clássica {#classic}
++ AEM CIF Classic {#classic}
+   + [Visão geral](/help/commerce/cif-classic/home.md)
    + Implantação {#deploying}
       + [Visão geral do eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
       + [Commerce Cloud SAP](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
