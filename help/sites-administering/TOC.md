@@ -6,12 +6,12 @@ audience: admin-user
 user-guide-title: Guia do usuário de administração do AEM 6.5
 breadcrumb-title: Guia de administração
 user-guide-description: Saiba mais sobre como administrar o AEM.
-feature: Administração
+feature: Administering
 role: Admin
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 48abd410e293a193abc34a1bd4f038a121e58490
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 18%
+source-wordcount: '623'
+ht-degree: 19%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 18%
    + [OWASP Top 10](owasp-top10.md)
    + [Executando AEM no modo Pronto para produção](production-ready.md)
    + [Gerenciamento de identidade](identity-management.md)
-   + [Autenticação Adobe IMS e suporte Admin Console para AEM Managed Services](ims-config-and-admin-console.md)
+   + [Autenticação do Adobe IMS e suporte do Admin Console para AEM Managed Services](ims-config-and-admin-console.md)
    + [Criando um grupo de usuários fechado](cug.md)
    + [Atenuando problemas de serialização no AEM](mitigating-serialization-issues.md)
    + [Sincronização de usuários](sync.md)
@@ -119,8 +119,8 @@ ht-degree: 18%
    + [Configuração do rastreamento de vídeo para Adobe Analytics](adobeanalytics-video.md)
    + [Perguntas frequentes sobre entrega de conteúdo HTTP2](scene7-http2faq.md)
    + [Solução de problemas da integração do Adobe Campaign](troubleshooting-campaignintegration.md)
-   + [Licenças do SharePoint Connector, Avisos de Direitos Autorais e Isenção de Responsabilidade](sharepoint-connector-licenses.md)
-   + [Conector do SharePoint](sharepoint-connector.md)
+   + [Licenças do conector SharePoint, avisos de direitos autorais e isenções de responsabilidade](sharepoint-connector-licenses.md)
+   + [Conector SharePoint](sharepoint-connector.md)
    + [Perguntas frequentes sobre fim de vida útil de visualizadores DHTML ](dhtml-viewer-endoflifefaqs.md)
    + [Integração com o Adobe Campaign Classic](campaignonpremise.md)
    + [Artigos relacionados da comunidade](related-community-articles.md)
@@ -157,7 +157,7 @@ ht-degree: 18%
    + [Lidar com solicitações do GDPR para a AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [Comércio AEM - Preparação para o GDPR](gdpr-compliance-commerce.md)
 + Gerenciamento de conteúdo {#contentmanagement}
-   + [Como trabalhar com pacotes](package-manager.md)
+   + [Gerenciador de pacotes](package-manager.md)
    + [Administração de tags](tags.md)
    + [O exportador de página](page-exporter.md)
    + [Console de marcação da interface clássica](classic-console.md)
