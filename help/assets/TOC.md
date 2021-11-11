@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
-source-git-commit: 85736791b7a8f518b57180b0139d6a76ebf1c6dc
+source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '637'
 ht-degree: 20%
 
 ---
@@ -21,12 +21,12 @@ ht-degree: 20%
 + [Sobre o DAM](assets.md)
 + [Práticas recomendadas para ativos](best-practices-for-assets.md)
 + [Acessibilidade em [!DNL Assets]](accessibility.md)
-+ Usar ativos Experience Manager {#using}
++ Usar o Experience Manager Assets {#using}
    + [[!DNL Assets] experiência da página inicial](assets-home-page.md)
    + [Pesquisar ativos digitais](search-assets.md)
    + [Trabalhar com metadados de ativos](metadata.md)
    + [Ativos multilíngues](multilingual-assets.md)
-   + [Usar [!DNL Adobe Stock] ativos em Ativos](aem-assets-adobe-stock.md)
+   + [Use [!DNL Adobe Stock] ativos em Ativos](aem-assets-adobe-stock.md)
    + [Visualizar ativos 3D](previewing-3d-assets.md)
    + [Revisar ativos e coleções de pastas](bulk-approval.md)
    + [Tags inteligentes aprimoradas](enhanced-smart-tags.md)
@@ -34,13 +34,15 @@ ht-degree: 20%
    + [Processar ativos](assets-workflow.md)
    + [Adicionar mapas de imagem](image-maps.md)
    + [Reutilizar ativos usando o MSM](reuse-assets-using-msm.md)
-   + [Ativos conectados com [!DNL Sites]](use-assets-across-connected-assets-instances.md)
+   + [Connected Assets com [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
-   + [Arquivo de informativo do Dynamic Media por Experience League](dynamic-media-newsletter.md)
+   + [Arquivo de informativos por Experience League](dynamic-media-newsletter.md)
    + [Configurar Dynamic Media](administering-dynamic-media.md)
    + [Trabalhar com a Dynamic Media](dynamic-media.md)
    + [Configurar o Dynamic Media - Modo Scene7](config-dms7.md)
    + [Configurar o Dynamic Media - Modo híbrido](config-dynamic.md)
+   + [Configurar a configuração geral do Dynamic Media](dm-general-settings.md)
+   + [Configurar a publicação do Dynamic Media](dm-publish-settings.md)
    + [Solução de problemas do Dynamic Media - Modo Scene7](troubleshoot-dms7.md)
    + [Acessibilidade no Dynamic Media](accessibility-dm.md)
    + [Migrar do Dynamic Media - Modo híbrido para o Dynamic Media - Modo S7](migrate-from-hybrid-to-dms7.md)
@@ -86,11 +88,11 @@ ht-degree: 20%
    + [Personalizar e estender [!DNL Assets]](extending-assets.md)
    + [Processar ativos usando manipuladores de mídia e fluxos de trabalho](media-handlers.md)
    + [Estender funcionalidade de pesquisa](searchx.md)
-   + [Instale e configure [!DNL ImageMagick] para trabalhar com [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [Instalar e configurar [!DNL ImageMagick] para trabalhar com [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Integrar ativos ao fluxo de atividades](extending-activity-stream.md)
    + [Estender editor de ativos](asseteditorx.md)
    + [[!DNL Assets] API HTTP](mac-api-assets.md)
-   + [Suporte a Fragmentos de conteúdo na API HTTP  [!DNL Assets] HTTP](assets-api-content-fragments.md)
+   + [Suporte a Fragmentos de conteúdo em [!DNL Assets] API HTTP](assets-api-content-fragments.md)
    + [API GraphQL para fragmentos de conteúdo](content-fragments/graphql-api-content-fragments.md)
    + [Autenticação para consultas GraphQL remotas em fragmentos de conteúdo](content-fragments/graphql-authentication-content-fragments.md)
    + [API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
@@ -131,8 +133,8 @@ ht-degree: 20%
 + Brand Portal {#brandportal}
    + [Configurar [!DNL Assets] com [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicar ativos em [!DNL Brand Portal]](brand-portal-publish-assets.md)
-   + [Publicar pastas para [!DNL Brand Portal]](brand-portal-publish-folder.md)
-   + [Publicar coleções em [!DNL Brand Portal]](brand-portal-publish-collection.md)
+   + [Publicar pastas em [!DNL Brand Portal]](brand-portal-publish-folder.md)
+   + [Publicar coleções no [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + Fragmentos de conteúdo {#content-fragments}
    + [Trabalho com fragmentos de conteúdo](content-fragments/content-fragments.md)
    + [Entrega sem cabeçalho com fragmentos de conteúdo e GraphQL](content-fragments/content-fragments-graphql.md)
