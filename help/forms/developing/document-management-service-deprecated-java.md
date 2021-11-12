@@ -1,6 +1,6 @@
 ---
 title: Serviço de gerenciamento de documentos (obsoleto) Início rápido da API Java (SOAP)
-seo-title: Serviço de gerenciamento de documentos (obsoleto) Início rápido da API Java (SOAP)
+seo-title: Document Management Service (Deprecated)Java API Quick Start(SOAP)
 description: Serviço de gerenciamento de documentos (obsoleto) Início rápido da API Java (SOAP)
 uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
 contentOwner: admin
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 38a90957-bdde-4f38-9edd-c59522e5f525
+source-git-commit: 5910b0e64a579998bc9cd79cf4e95f5e6f459c5a
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
-
 
 # Serviço de gerenciamento de documentos (obsoleto) Início rápido da API Java (SOAP) {#document-management-service-deprecated-java-api-quick-start-soap}
 
@@ -45,10 +44,10 @@ Os seguintes Primeiros passos estão disponíveis para o serviço de Gerenciamen
 As operações do AEM Forms podem ser executadas usando a API altamente digitada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
+>
+>As inicializações rápidas localizadas em Programação com formulários de AEM são baseadas no Forms Server que está sendo implantado no JBoss e no sistema operacional Windows. No entanto, se estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-As inicializações rápidas localizadas em Programação com AEM formulários são baseadas no Forms Server que está sendo implantado no JBoss e no sistema operacional Windows. No entanto, se estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos para janelas por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
-
-## Início rápido (modo SOAP): Criar espaços dos Serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
+## Início rápido (modo SOAP): Criar espaços dos Content Services usando a API Java (obsoleta) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
 O exemplo de código Java a seguir cria um novo espaço chamado *Diretório de teste* localizado em Página inicial da empresa. O valor de identificação do novo espaço é gravado no console.
 
@@ -144,7 +143,7 @@ O exemplo de código Java a seguir cria um novo espaço chamado *Diretório de t
  
 ```
 
-## Início rápido (modo SOAP): Excluir o conteúdo dos Serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
+## Início rápido (modo SOAP): Excluir conteúdo dos serviços de conteúdo usando a API do Java (obsoleto) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
 
 O exemplo de código Java a seguir exclui um espaço chamado /Company Home/Test Diretory.
 
@@ -244,9 +243,9 @@ O exemplo de código Java a seguir exclui um espaço chamado /Company Home/Test 
  
 ```
 
-## Início rápido (modo SOAP): Adicionar conteúdo aos serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
+## Início rápido (modo SOAP): Adicionar conteúdo aos serviços de conteúdo usando a API do Java (obsoleta) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-O exemplo de código Java a seguir adiciona um arquivo PDF chamado *MortgaugeForm.pdf* a uma pasta chamada /Company Home/Test Diretory. O criador e os atributos de descrição são definidos. O valor de identificação do novo conteúdo é gravado no console.
+O exemplo de código Java a seguir adiciona um arquivo PDF chamado *MortgaugeForm.pdf* para uma pasta chamada /Company Home/Test Diretory. O criador e os atributos de descrição são definidos. O valor de identificação do novo conteúdo é gravado no console.
 
 ```java
  /*
@@ -367,9 +366,9 @@ O exemplo de código Java a seguir adiciona um arquivo PDF chamado *MortgaugeFor
  
 ```
 
-## Início rápido (modo SOAP): Recupere conteúdo dos Serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
+## Início rápido (modo SOAP): Recuperar conteúdo dos serviços de conteúdo usando a API do Java (obsoleto) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-O seguinte exemplo de código Java recupera um arquivo PDF chamado *MortgaugeForm.pdf* do /Company Home. O arquivo PDF é salvo no sistema de arquivos local e é nomeado como *UpdatedMortgaugeForm.pdf*.
+O seguinte exemplo de código Java recupera um arquivo PDF chamado *MortgaugeForm.pdf* do /Empresa Home. O arquivo PDF é salvo no sistema de arquivos local e é nomeado como *AtualizaçãoMortgaugeForm.pdf*.
 
 ```java
  /*
@@ -473,7 +472,7 @@ O seguinte exemplo de código Java recupera um arquivo PDF chamado *MortgaugeFor
  
 ```
 
-## Início rápido (modo SOAP): Mover o conteúdo dos Serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
+## Início rápido (modo SOAP): Mover o conteúdo dos serviços de conteúdo usando a API do Java (obsoleta) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
 O seguinte exemplo de código Java move um arquivo PDF chamado *MortgaugeForm.pdf* do diretório /Company Home/Test para /Company Home. O valor de identificação do conteúdo movido é gravado no console.
 
@@ -574,7 +573,7 @@ O seguinte exemplo de código Java move um arquivo PDF chamado *MortgaugeForm.pd
  
 ```
 
-## Início rápido (modo SOAP): Listar o conteúdo dos Serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
+## Início rápido (modo SOAP): Listar o conteúdo dos serviços de conteúdo usando a API do Java (obsoleto) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
 O exemplo de código Java a seguir lista o conteúdo localizado em /Empresa inicial. Cada tipo de nó e nome de nó é exibido.
 
@@ -687,7 +686,7 @@ O exemplo de código Java a seguir lista o conteúdo localizado em /Empresa inic
  
 ```
 
-## Início rápido (modo SOAP): Pesquisar o conteúdo dos serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
+## Início rápido (modo SOAP): Pesquisar o conteúdo dos serviços de conteúdo usando a API do Java (obsoleto) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
 
 O código Java a seguir pesquisa por um documento que contém o texto MortgaugeForm /Company Home. As subpastas também são pesquisadas.
 
@@ -797,7 +796,7 @@ O código Java a seguir pesquisa por um documento que contém o texto MortgaugeF
  
 ```
 
-## Início rápido (modo SOAP): Definir permissões de serviços de conteúdo usando a API Java (obsoleta) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
+## Início rápido (modo SOAP): Configuração das permissões dos serviços de conteúdo usando a API do Java (obsoleto) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
 
 O exemplo de código Java a seguir define uma permissão para um usuário chamado tony blue. O domínio especificado é o domínio padrão. A permissão Consumidor é especificada e o nó é `/Company Home/Test Directory`.
 
@@ -907,9 +906,9 @@ O exemplo de código Java a seguir define uma permissão para um usuário chamad
  
 ```
 
-## Início rápido (Modo SOAP): Criação de associações usando a API Java (obsoleta) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
+## Início rápido (Modo SOAP): Criação de associações usando a API Java (obsoleto) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
 
-O código Java a seguir cria uma associação com um arquivo de dados XML e um formulário PDF. Esse tipo de associação é chamada de LinkedBy.O documento PDF deve ter o aspecto vinculável aplicado a ele.
+O código Java a seguir cria uma associação, um arquivo de dados XML e um formulário PDF. Esse tipo de associação é chamada de LinkedBy.O documento PDF deve ter o aspecto vinculável aplicado a ele.
 
 ```java
  /*
@@ -1023,4 +1022,3 @@ O código Java a seguir cria uma associação com um arquivo de dados XML e um f
      }
  
 ```
-
