@@ -1,5 +1,5 @@
 ---
-title: Configurar o Dynamic Media - Modo Scene7
+title: OPÇÃO A - Configurar Dynamic Media - Modo Scene7
 description: Saiba como configurar o Dynamic Media - Modo Scene7.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,20 +8,28 @@ content-type: reference
 docset: aem65
 role: User, Admin
 mini-toc-levels: 3
-exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
+hide: true
+hidefromtoc: true
 feature: Configuration,Scene7 Mode
-source-git-commit: b5835d16efb0f2112ec8a6917e8cf2529cbf19c7
+exl-id: null
+source-git-commit: b151ae21761328ac0734f192ac51ffcc8807123f
 workflow-type: tm+mt
-source-wordcount: '6940'
-ht-degree: 4%
+source-wordcount: '11558'
+ht-degree: 3%
 
 ---
 
-# Configurar o Dynamic Media - Modo Scene7{#configuring-dynamic-media-scene-mode}
+# OPÇÃO A - Configurar Dynamic Media - Modo Scene7{#configuring-dynamic-media-scene-mode}
+
+>[!NOTE]
+>
+>OPÇÃO A - OS DOIS NOVOS TÓPICOS QUE ESCREVI SÃO EXCLUÍDOS. MAS ANTES DE EXCLUIR OS TÓPICOS, TODO O CONTEÚDO FOI MOVIDO PARA ESTE TÓPICO, PARA AS RESPECTIVAS ÁREAS ONDE JÁ FALEI SOBRE CONFIGURAÇÕES GERAIS E CONFIGURAÇÃO DE PUBLICAÇÃO.
 
 Se você usar o Adobe Experience Manager configurado para ambientes diferentes, como desenvolvimento, armazenamento temporário e produção, configure os Dynamic Media Cloud Services para cada um desses ambientes.
 
 ## Diagrama de arquitetura do Dynamic Media - Modo Scene7 {#architecture-diagram-of-dynamic-media-scene-mode}
+
+**RICK: MANTER COMO ESTÁ**
 
 O diagrama de arquitetura a seguir descreve como o modo Dynamic Media - Scene7 funciona.
 
@@ -48,6 +56,8 @@ Com a nova arquitetura, o Experience Manager é responsável pelos ativos e sinc
 
 ## Ativar o Dynamic Media no modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
+**RICK: MANTER COMO ESTÁ**
+
 [As mídias dinâmicas são desativadas por padrão. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Para aproveitar os recursos do Dynamic Media, você deve habilitá-lo.
 
 >[!WARNING]
@@ -61,6 +71,8 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 ```
 
 ## (Opcional) Migrar predefinições e configurações do Dynamic Media de 6.3 para 6.5 Zero Down time {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+
+**RICK: MANTER COMO ESTÁ**
 
 A atualização do Experience Manager Dynamic Media de 6.3 para 6.4 ou 6.5 agora inclui a capacidade de zero implantações de tempo de inatividade. Para migrar todas as suas predefinições e configurações do `/etc` para `/conf` no CRXDE Lite, execute o seguinte comando curl.
 
@@ -78,6 +90,8 @@ Para migrar qualquer predefinição e configuração do visualizador personaliza
 
 ## Instale o feature pack 18912 para migração de ativos em massa {#installing-feature-pack-for-bulk-asset-migration}
 
+**RICK: MANTER COMO ESTÁ**
+
 A instalação do feature pack 18912 é *opcional*.
 
 O Feature pack 18912 permite assimilar ativos em massa por meio de FTP ou migrar ativos do Dynamic Media - Modo híbrido ou Dynamic Media Classic para o Dynamic Media - modo Scene7 no Experience Manager. Está disponível em [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
@@ -85,6 +99,8 @@ O Feature pack 18912 permite assimilar ativos em massa por meio de FTP ou migrar
 Consulte [Instale o feature pack 18912 para migração de ativos em massa](/help/assets/bulk-ingest-migrate.md) para obter mais informações.
 
 ## Criar uma configuração do Dynamic Media no Cloud Services {#configuring-dynamic-media-cloud-services}
+
+**RICK: MANTER COMO ESTÁ**
 
 **Antes de configurar o Dynamic Media** - Depois de receber seu email de provisionamento com credenciais do Dynamic Media, você deve abrir a [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta para alterar a senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
 
@@ -99,7 +115,7 @@ Consulte [Instale o feature pack 18912 para migração de ativos em massa](/help
    Selecionar **[!UICONTROL Conectar-se ao Dynamic Media]**.
 
    >[!NOTE]
-   Depois de receber seu email de provisionamento com credenciais do Dynamic Media, abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta para alterar a senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
+   **RICK: MANTER COMO ESTÁ??** Depois de receber seu email de provisionamento com credenciais do Dynamic Media, abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta para alterar a senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
 
 1. Quando a conexão for bem-sucedida, defina o seguinte. São necessários títulos com um asterisco (*):
 
@@ -134,7 +150,7 @@ Para marcar uma pasta selecionada para sincronização com o Dynamic Media, sele
 1. Selecione **[!UICONTROL Salvar]**.
 1. Para visualizar com segurança o conteúdo do Dynamic Media antes de ele ser publicado, é necessário &quot;lista de permissões&quot; a instância do autor do Experience Manager para se conectar ao Dynamic Media:
 
-   * Abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta. Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte ao cliente do Adobe.
+   * **RICK: LINK PARA NOVO TÓPICO DE CONFIGURAÇÃO DE PUBLICAÇÃO** Abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta. Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte ao cliente do Adobe.
 
    * Na barra de navegação próxima à parte superior direita da página, navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configuração de publicação]** > **[!UICONTROL Servidor de imagem]**.
 
@@ -149,6 +165,8 @@ Se você quiser personalizar ainda mais sua configuração, poderá, opcionalmen
 
 ## (Opcional) Definir configurações avançadas no modo Dynamic Media - Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
+**RICK: MANTER COMO ESTÁ**
+
 Se você quiser personalizar ainda mais a configuração e configuração do Dynamic Media - modo Scene7 ou otimizar seu desempenho, é possível concluir um ou mais dos seguintes procedimentos *opcional* tarefas:
 
 * [(Opcional) Configurar o Dynamic Media - Modo Scene7 para upload de ativos com mais de 2 GB](#optional-config-dms7-assets-larger-than-2gb)
@@ -160,6 +178,8 @@ Se você quiser personalizar ainda mais a configuração e configuração do Dyn
 * [(Opcional) Filtrar ativos para replicação](#optional-filtering-assets-for-replication)
 
 ### (Opcional) Configurar o Dynamic Media - Modo Scene7 para upload de ativos com mais de 2 GB {#optional-config-dms7-assets-larger-than-2gb}
+
+**RICK: MANTER COMO ESTÁ**
 
 No modo Dynamic Media - Scene7, o tamanho padrão do arquivo de upload de ativos é de 2 GB ou menos. No entanto, opcionalmente, é possível configurar o upload de ativos com mais de 2 GB e até 15 GB.
 
@@ -246,79 +266,110 @@ Você pode inserir um valor de até 15 GB (`2013265920` bytes). Nesse caso, os a
 1. Selecionar **[!UICONTROL Sincronizar]**.
 1. Repita as etapas 14 a 21 para a **[!UICONTROL Ativo de atualização DAM]** modelo de fluxo de trabalho e **[!UICONTROL Dynamic Media Reprocess]** modelo de fluxo de trabalho.
 
-### (Opcional) Configuração e configuração do Dynamic Media - Configurações do modo Scene7 {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
+### (Opcional) Configurar a configuração de publicação do Dynamic Media {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
-Quando você está no modo de execução `dynamicmedia_scene7`, use a interface do usuário do Dynamic Media Classic para alterar as configurações do Dynamic Media.
+**RICK: TODO O CONTEÚDO DO NOVO TÓPICO DE CONFIGURAÇÃO DE PUBLICAÇÃO ADICIONADO AQUI**
 
-Algumas das tarefas acima exigem que você abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta.
+>[!IMPORTANT]
+A Configuração de publicação do Dynamic Media só estará disponível se:
+* Você está executando o Dynamic Media no modo Scene7.
+* Você tem um *existente* **[!UICONTROL Configuração do Dynamic Media]** (em **[!UICONTROL Cloud Services]**) no Adobe Experience Manager 6.5 ou no Experience Manager as a Cloud Service.
+* Você é um administrador de sistema do Experience Manager com privilégios de administrador.
 
-As tarefas de configuração e configuração incluem:
 
-* [Configuração de publicação para o servidor de imagem](#publishing-setup-for-image-server)
-* [Definir configurações gerais do aplicativo](#configuring-application-general-settings)
-* [Configurar o gerenciamento de cores](#configuring-color-management)
-* [Editar tipos MIME para formatos compatíveis](#editing-mime-types-for-supported-formats)
-* [Adicionar tipos MIME para formatos não suportados](#adding-mime-types-for-unsupported-formats)
-* [Criar predefinições de conjunto de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
+As configurações da página Configuração de publicação do Dynamic Media determinam como os ativos são entregues por padrão dos servidores do Adobe Dynamic Media para sites ou aplicativos da Web. Se nenhuma configuração for especificada, o servidor Adobe Dynamic Media fornece um ativo de acordo com uma configuração padrão em uma página Publicar configuração . Por exemplo, uma solicitação para fornecer uma imagem que não inclua um atributo de resolução gera uma imagem com a configuração de Resolução de objeto padrão na página Servidor de imagem.
 
-#### Configuração de publicação para o servidor de imagem {#publishing-setup-for-image-server}
-
-As configurações de Configuração de publicação determinam como os ativos são entregues por padrão no Dynamic Media. Se nenhuma configuração for especificada, o Dynamic Media fornece um ativo de acordo com as configurações padrão definidas na Configuração de publicação. Por exemplo, uma solicitação para fornecer uma imagem que não inclua um atributo de resolução gera uma imagem com a configuração Resolução de objeto padrão .
-
-Para configurar a Configuração de publicação: no Dynamic Media Classic, navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configuração de publicação]** > **[!UICONTROL Servidor de imagem]**.
-
-A tela Servidor de imagens estabelece as configurações padrão para entrega de imagens. Consulte a tela da interface do usuário para obter uma descrição de cada configuração.
-
-* **[!UICONTROL Atributos da solicitação]** - Essas configurações impõem limites para imagens que podem ser entregues a partir do servidor.
-* **[!UICONTROL Atributos de solicitação padrão]** - Essas configurações pertencem à aparência padrão das imagens.
-* **[!UICONTROL Atributos de miniatura comuns]** - Essas configurações pertencem à aparência padrão de miniaturas de imagens.
-* **[!UICONTROL Padrões para campos de catálogo]**- Essas configurações pertencem à resolução e ao tipo de miniatura padrão de imagens.
-* **[!UICONTROL Atributos do gerenciamento de cores]** - Essas configurações determinam quais perfis de cores ICC serão usados.
-* **[!UICONTROL Atributos de compatibilidade]** - Essa configuração permite que os parágrafos anteriores e posteriores em camadas de texto sejam tratados como na versão 3.6 para compatibilidade com versões anteriores.
-* **[!UICONTROL Suporte à localização]** - Essas configurações permitem gerenciar vários atributos de localidade. Ela também permite especificar uma sequência de mapa de localidade para que você possa definir quais idiomas deseja suportar para as várias dicas de ferramentas em Visualizadores. Para obter mais informações sobre como configurar **[Suporte à localização]**, consulte [Considerações ao configurar a localização de ativos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
-
-#### Definir configurações gerais do aplicativo {#configuring-application-general-settings}
-
-Para abrir a página Configurações gerais do aplicativo , na barra Navegação global do Dynamic Media Classic , navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]**.
-
-**[!UICONTROL Servidores]** - Em provisionamento de conta, a Dynamic Media fornece automaticamente os servidores atribuídos para sua empresa. Esses servidores são usados para criar strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas da sua conta do . Não altere nenhum nome de servidor a menos que seja explicitamente instruído a fazê-lo pelo Suporte ao Cliente do Adobe.
-
-**[!UICONTROL Substituir imagens]** - O Dynamic Media não permite que dois arquivos tenham o mesmo nome. A ID de URL de cada item (o nome do arquivo menos a extensão) deve ser exclusiva. Essas opções especificam como os ativos de substituição são carregados: se substituem o original ou se tornam duplicatas. Os ativos duplicados são renomeados com um &quot;-1&quot; (por exemplo, chair.tif é renomeado chair-1.tif). Essas opções afetam ativos carregados em uma pasta diferente do original ou ativos com uma extensão de nome de arquivo diferente do original (como JPG, TIF ou PNG).
-
-* **[!UICONTROL Substituir na pasta atual, mesmo nome/extensão de imagem base]** - Essa opção é a regra mais estrita para substituição. Ela requer que você carregue a imagem de substituição na mesma pasta do original e que a imagem de substituição tenha a mesma extensão de nome de arquivo do original. Se esses requisitos não forem atendidos, uma duplicata será criada.
+Os administradores podem alterar as configurações padrão nas páginas Servidor de imagem, Renderizador de imagem e Vinheta para estabelecer configurações padrão para o fornecimento de ativos dos servidores.
 
 >[!NOTE]
-Para manter a consistência com o Experience Manager, sempre escolha essa configuração: **Substituir na pasta atual, mesmo nome/extensão de imagem base**
+A Configuração de publicação do Dynamic Media deve ser usada por desenvolvedores e programadores de sites experientes. O Adobe recomenda que os usuários que alteram qualquer uma dessas configurações de publicação padrão estejam familiarizados com o Adobe Dynamic Media, padrões e convenções de protocolo HTTP e tecnologia básica de geração de imagens.
 
-* **[!UICONTROL Substituir em qualquer pasta, mesmo nome/extensão do ativo base]** - Requer que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, chair.jpg deve substituir chair.jpg, não chair.tif). No entanto, é possível fazer upload da imagem de substituição para uma pasta diferente da original. A imagem atualizada reside na nova pasta; o arquivo não pode mais ser encontrado em seu local original
-* **[!UICONTROL Substituir em qualquer pasta, o mesmo nome do ativo base, independentemente da extensão]** - Essa é a regra de substituição mais inclusiva. Você pode fazer upload de uma imagem de substituição para uma pasta diferente do original, fazer upload de um arquivo com uma extensão de nome de arquivo diferente e substituir o arquivo original. Se o arquivo original estiver em uma pasta diferente, a imagem de substituição residirá na nova pasta para a qual foi carregada.
+**Para configurar a Configuração de publicação do Dynamic Media:**
 
-**[!UICONTROL Perfis de cores padrão]** - Consulte [Configurar gerenciamento de cores](#configuring-color-management) para obter mais informações.
+1. No modo Autor do Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global.
+1. No painel à esquerda, selecione o ícone Ferramentas e vá para **[!UICONTROL Ativos]** > **[!UICONTROL Configuração de publicação do Dynamic Media]**.
+1. Na página Servidor de imagens, defina o Servidor de imagens - contexto de publicação e use as cinco guias para definir as configurações de publicação padrão.
 
->[!NOTE]
-Por padrão, o sistema mostra 15 execuções ao selecionar **[!UICONTROL Representações]** e 15 predefinições do visualizador ao selecionar **[!UICONTROL Visualizadores]** na exibição detalhada do ativo. Você pode aumentar esse limite. Consulte [Aumente o número de predefinições de imagens exibidas](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Aumentar o número de predefinições do visualizador exibidas](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+   * [Servidor de imagem](#image-server)
+   * [Segurança](#security-tab) guia
+   * [Gerenciamento de catálogo](#catalog-management-tab) guia
+   * [Atributos da solicitação](#request-attributes-tab) guia
+   * [Atributos de miniatura comuns](#common-thumbnail-attributes-tab) guia
+   * [Atributos do gerenciamento de cores](#color-management-attributes-tab) guia
 
-#### Configurar o gerenciamento de cores {#configuring-color-management}
+   ![Página Configuração de publicação do Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
+   *página Configuração de publicação do Dynamic Media, com o **[!UICONTROL Atributos da solicitação]**selecionada.*<br><br>
 
-O gerenciamento de cores do Dynamic Media permite corrigir a cor dos ativos. Com a correção de cores, os ativos assimilados retêm seu espaço de cores (RGB, CMYK, Cinza) e o perfil de cores incorporado. Quando você solicita uma representação dinâmica, a cor da imagem é corrigida no espaço de cores de destino usando CMYK, RGB ou saída Cinza. Consulte [Configurar predefinições de imagens](/help/assets/managing-image-presets.md).
+1. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 
-Para configurar as propriedades de cores padrão, a correção de cores é ativada quando as imagens são solicitadas:
+#### Servidor de imagem {#image-server}
 
-1. Abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta usando as credenciais fornecidas durante o provisionamento.
-1. Navegar para **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]**.
-1. Expanda a área **[!UICONTROL Publicar configuração]** e selecione **[!UICONTROL Servidor de imagens]**. Defina **[!UICONTROL Publicar contexto]** como **[!UICONTROL Serviço de imagem]** ao definir padrões para instâncias de publicação.
-1. Role até a propriedade que deseja alterar. Por exemplo, uma propriedade no **[!UICONTROL Atributos do gerenciamento de cores]** área.
+A página Servidor de imagens estabelece as configurações padrão para o fornecimento de imagens de servidores de imagens. As configurações estão disponíveis em cinco categorias
 
-   Você pode definir as seguintes propriedades de correção de cores:
+| Contexto de publicação | Descrição |
+| --- | --- |
+| Serviço de imagem | Especifica o contexto das configurações de publicação. |
+| Servidor de imagens de teste | Especifica o contexto para testar as configurações de publicação.<br>Consulte [Testar ativos antes de torná-los públicos](#test-assets-before-making-public). |
 
-   * **[!UICONTROL Espaço de cores padrão CMYK]** - Nome do perfil de cores CMYK padrão
-   * **[!UICONTROL Espaço de cor padrão de escala de cinza]** - Nome do perfil de cor cinza padrão
-   * **[!UICONTROL Espaço de cores padrão do RGB]** - Nome do perfil de cor do RGB padrão
-   * **[!UICONTROL Propósito de renderização da conversão de cores]** - Especifica o propósito de renderização. Os valores aceitáveis são: **[!UICONTROL percepção]**, **[!UICONTROL colométrico relativo]**, **[!UICONTROL saturação]**, **[!UICONTROL Colométrico absoluto]**. Adobe recomenda **[!UICONTROL relation]** como padrão.
+#### Guia Segurança {#security-tab}
 
-1. Selecione **[!UICONTROL Salvar]**.
+**[!UICONTROL Endereço do cliente]** - Permite especificar um ou mais endereços IP ou intervalos de endereço IP. Quando especificado, as solicitações para este catálogo de imagem que se origina de um cliente em um endereço IP não listado são rejeitadas. Essa regra se aplica à entrega de imagens e imagens renderizadas.
 
-Por exemplo, você pode definir o **[!UICONTROL Espaço de cor padrão RGB]** como *sRGB* e o **[!UICONTROL Espaço de cor padrão CMYK]** como *WebCoated*.
+#### Guia Gerenciamento de catálogo {#catalog-management-tab}
+
+**[!UICONTROL Caminho do arquivo de definição do conjunto de regras]** - Especifica o arquivo que contém as definições do conjunto de regras para o catálogo de imagens.
+
+Consulte também [RuleSetFile](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-rulesetfile.html) no Guia de referência de visualizadores do Dynamic Media.
+
+#### Guia Atributos da solicitação {#request-attributes-tab}
+
+Essas configurações pertencem à aparência padrão das imagens.
+
+| Configuração | Descrição |
+| --- | --- |
+| **[!UICONTROL Limite de tamanho da imagem de resposta]** | Obrigatório.<br>Especifica a largura e a altura máximas da imagem de resposta que são retornadas ao cliente. O servidor retornará um erro se uma solicitação causar uma imagem de resposta cuja largura, altura ou ambos forem maiores que essa configuração.<br>Consulte também [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Modo de solicitação de ofuscação]** | Ative se desejar que a codificação base64 seja aplicada a solicitações válidas.<br>Consulte também [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Modo de bloqueio de solicitação]** | Ative se desejar que um simples bloqueio de hash seja incluído em solicitações.<br>Consulte também [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Atributos de solicitação padrão]** |  |
+| **[!UICONTROL Sufixo do arquivo de imagem padrão]** | Obrigatório.<br>Extensão padrão do arquivo de dados que é anexada aos valores dos campos Caminho e Máscara do catálogo se o caminho não incluir um sufixo de arquivo.<br>Consulte também [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Nome da face da fonte padrão]** | Especifica qual fonte é usada se nenhuma fonte for fornecida por uma solicitação de camada de texto. Se especificado, deve ser um valor de nome de fonte válido no mapa de fonte deste catálogo de imagem ou no mapa de fontes do catálogo padrão.<br>Consulte também [DefaultFont](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Imagem padrão]** | Fornece uma imagem padrão a ser retornada em resposta a uma solicitação na qual a imagem solicitada não é encontrada.<br>Consulte também [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Modo de imagem padrão]** | Quando a caixa de controle deslizante estiver ativada (controle deslizante à direita), a variável **[!UICONTROL Imagem padrão]** substitui cada camada ausente na imagem de origem pela imagem padrão e retorna o composto como de costume. Quando a caixa de controle deslizante está desativada (controle deslizante à esquerda), a imagem padrão substitui toda a imagem composta, mesmo que a imagem ausente seja apenas uma das várias camadas.<br>Consulte também [DefaultImageMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultimagemode.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Tamanho de exibição padrão]** | Obrigatório.<br>O servidor restringe as imagens de resposta a não serem maiores que essa largura e altura, se a solicitação não especificar o tamanho de exibição explicitamente usando `wid=`, `hei=`ou `scl=`.<br>Consulte também [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Tamanho padrão da miniatura]** | Obrigatório.<br>Usado em vez do atributo **[!UICONTROL Tamanho de exibição padrão]** para solicitações de miniatura (`req=tmb`). O servidor restringe as imagens de resposta para não serem maiores que essa largura e altura, se houver uma solicitação em miniatura (`req=tmb`) não especifica o tamanho explicitamente usando `wid=`, `hei=`ou `scl=`.<br>Consulte também [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Cor de fundo padrão]** | Especifica o valor RGB usado para preencher qualquer área de uma imagem de resposta que não contenha dados de imagem reais.<br>Consulte também [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Atributos de codificação de JPEG]** |  |
+| **[!UICONTROL Qualidade]** | Especifica os atributos padrão para imagens JPEG reply. O **[!UICONTROL Qualidade]** é definido no intervalo de 1 - 100.<br>Consulte também [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Diminuição da resolução cromática]** | Ative ou desative a redução cromaticamente da amostragem que é empregada por codificadores JPEG. |
+| **[!UICONTROL Modo de reamostragem padrão]** | Especifica a reamostragem e os atributos de interpolação padrão a serem usados para dimensionar dados de imagem. Use quando `resMode` não é especificado em uma solicitação.<br>Consulte também [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html) no Guia de referência de visualizadores do Dynamic Media. |
+
+#### Guia Atributos de miniatura comuns {#common-thumbnail-attributes-tab}
+
+Essas configurações pertencem à aparência padrão e ao alinhamento de imagens em miniatura.
+
+| Configuração | Descrição |
+| --- | --- |
+| **[!UICONTROL Cor de fundo padrão para miniatura]** | Especifica o valor de RGB usado para preencher a área de uma imagem em miniatura de saída que não contém dados de imagem reais. Usado somente para solicitações de miniatura (`req=tmb`) e quando **[!UICONTROL Tipo de miniatura padrão]** está definida como **[!UICONTROL Ajustar]** ou **[!UICONTROL Textura]**.<br>Consulte também [ThumbBkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Alinhamento horizontal]** | Especifica o alinhamento horizontal da imagem em miniatura no retângulo de imagem de resposta especificado por `wid=` e `hei=` valores.<br>Usado somente para solicitações de miniatura (`req=tmb`) e quando **[!UICONTROL Tipo de miniatura padrão]** está definida como **[!UICONTROL Ajustar]**.<br>Há três alinhamentos horizontais para escolher: **[!UICONTROL Alinhamento central]**, **[!UICONTROL Alinhamento à esquerda]** e **[!UICONTROL Alinhamento à direita]**.<br>Consulte também [MiniaturaAlinhar](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbhorizalign.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Alinhamento vertical]** | Especifica o alinhamento vertical da imagem em miniatura no retângulo de imagem de resposta especificado por `wid=` e `hei=` valores. Usado somente para solicitações de miniatura (`req=tmb`) e quando **[!UICONTROL Tipo de miniatura padrão]** está definida como **[!UICONTROL Ajustar]**.<br>Há três alinhamentos verticais a serem escolhidos: **[!UICONTROL Alinhamento superior]**, **[!UICONTROL Alinhamento central]** e **[!UICONTROL Alinhamento inferior]**.<br>Consulte também [ThumbVertAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Tempo de funcionamento padrão do cache]** | Fornece um intervalo de expiração padrão em horas, caso um registro de catálogo específico não contenha um valor de Expiração de catálogo válido. Defina como `-1` para marcar como nunca expirar. <br>Consulte também [Expiração](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Tipo de miniatura padrão]** | Fornece um padrão para o tipo de miniatura caso um registro de catálogo específico não contenha um valor ThumbType de catálogo válido. Usado somente para solicitações de miniatura (`req=tmb`).<br>Há três tipos de miniaturas para escolher: **[!UICONTROL Cortar]**, **[!UICONTROL Ajustar]** e **[!UICONTROL Textura]**.<br>Consulte também [ThumbType](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbtype.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Resolução padrão de miniatura]** | Fornece um padrão para a resolução de objeto de miniatura caso um registro de catálogo específico não contenha um valor de ThumbRes de catálogo válido. Usado somente para solicitações de miniatura (`req=tmb`) e quando a variável **[!UICONTROL Tipo de miniatura padrão]** está definida como **[!UICONTROL Textura]**.<br>Consulte também [ThumbRes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbres.html) no Guia de referência de visualizadores do Dynamic Media. |
+
+#### Guia Atributos de gerenciamento de cores {#color-management-attributes-tab}
+
+Essas configurações determinam quais perfis de cores ICC são usados para imagens.
+
+**Propósito de renderização da conversão de cores**
+Um propósito de renderização de conversão de cores permite a substituição da intenção de renderização padrão dos perfis de trabalho para determinar como as cores de origem são ajustadas. Usado quando:
+
+1. Um dos perfis ICC padrão é o espaço de cores de destino de uma conversão de cores.
+1. Um dispositivo de saída (impressora ou monitor) é caracterizado por esse perfil.
+1. E o propósito de renderização especificado é válido para este perfil.
+
+Diferentes intenções de renderização usam regras diferentes para determinar como as cores de origem são ajustadas.
+
+Como exemplo, você pode definir a variável **[!UICONTROL RGB espaço de cores padrão]** para **[!UICONTROL sRGB]** e **[!UICONTROL Espaço de cores padrão CMYK]** para **[!UICONTROL WebCoated]**.
 
 Isso faria o seguinte:
 
@@ -328,7 +379,284 @@ Isso faria o seguinte:
 * As renderizações dinâmicas que retornam a saída do RGB, retornam-na no *sRGB* espaço de cores.
 * As renderizações dinâmicas que retornam a saída CMYK, retornam-na no *WebCoated* espaço de cores.
 
+Consulte também [IccRenderIntent](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html) no Guia de referência de visualizadores do Dynamic Media.
+
+>[!NOTE]
+Em geral, é melhor usar o propósito de renderização padrão para a configuração de cor selecionada, que foi testada pelo Adobe para atender aos padrões do setor. Por exemplo, se você escolher uma configuração de cor para América do Norte ou Europa, o objetivo padrão de renderização da conversão de cores será **[!UICONTROL Colormétrica relativa]**. Se você escolher uma configuração de cor para o Japão, o objetivo padrão de renderização da conversão de cores será **[!UICONTROL Perceptivo]**.
+
+| Configuração | Características |
+| --- | --- |
+| **[!UICONTROL Espaço de cores padrão CMYK]** | Especifica o nome do perfil de cores ICC a ser usado como um perfil de trabalho para dados CMYK. If **[!UICONTROL Nenhum especificado]** for escolhida, o gerenciamento de cores será desativado para esse catálogo de imagens quando as imagens de origem CMYK estiverem envolvidas. Todos os espaços de trabalho CMYK dependem do dispositivo, o que significa que eles são baseados em combinações reais de tinta e papel. Os Adobe dos espaços de trabalho CMYK são fornecidos com base em condições de impressão comercial padrão.<br> Consulte também [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Espaço de cores padrão de escala de cinza]** | Especifica o nome do perfil de cores ICC a ser usado como um perfil de trabalho para dados em escala de cinza. If **[!UICONTROL Nenhum especificado]** for escolhido, o gerenciamento de cores será desativado para esse catálogo de imagens quando imagens de origem em escala cinza forem envolvidas.<br>Consulte também [IccProfileGray](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL RGB espaço de cores padrão]** | Especifica o nome do perfil de cores ICC a ser usado como um perfil de trabalho para dados de RGB. If **[!UICONTROL Nenhum especificado]** for escolhido, o gerenciamento de cores será desativado para esse catálogo de imagens quando as imagens de RGB forem envolvidas. Em geral, é melhor escolher **[!UICONTROL Adobe RGB]** ou **[!UICONTROL sRGB]**, em vez do perfil de um dispositivo específico (como um perfil de monitor). **[!UICONTROL sRGB]** O é recomendado ao preparar imagens para a Web ou dispositivos móveis, pois define o espaço de cores do monitor padrão usado para exibir imagens na Web. **[!UICONTROL sRGB]** O também é uma boa escolha para trabalhar com imagens de câmeras digitais de nível de consumidor, pois a maioria dessas câmeras usa o sRGB como espaço de cores padrão.<br>Consulte também [IccProfileRBG](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Objetivo de renderização da conversão de cores]** | **[!UICONTROL Perceptivo]** - Tem como objetivo preservar a relação visual entre as cores para que seja percebida como natural para o olho humano, mesmo que os próprios valores de cor possam mudar. Essa intenção é adequada para imagens fotográficas com muitas cores fora do gamut. Essa configuração é o propósito de renderização padrão para o setor de impressão japonês. |
+|  | **[!UICONTROL Colorimétrica relativa]** - Compara o realce extremo do espaço de cores de origem com o do espaço de cores de destino e alterna todas as cores de acordo. As cores fora do gamut são transferidas para a cor reprodutível mais próxima no espaço de cores de destino. Colorimétrica relativa preserva mais das cores originais em uma imagem do que Perceptual. Essa configuração é o propósito de renderização padrão para impressão na América do Norte e na Europa. |
+|  | **[!UICONTROL Saturação]** - Tenta produzir cores vivas em uma imagem, em detrimento da precisão das cores. Esse propósito de renderização é adequado para gráficos comerciais, como gráficos ou gráficos, em que cores saturadas brilhantes são mais importantes do que a relação exata entre cores. |
+|  | **[!UICONTROL Colorimétrica absoluta]** - Deixa inalteradas as cores que estão dentro da gama de destino. As cores fora do gamut são cortadas. Não é executado o dimensionamento de cores para o ponto branco de destino. Essa intenção tem como objetivo manter a precisão da cor em detrimento da preservação das relações entre cores e é adequada para a prova para simular a saída de um determinado dispositivo. Essa intenção é útil para visualizar como a cor do papel afeta as cores impressas. |
+
+### Testar ativos antes de torná-los públicos {#test-assets-before-making-public}
+
+O Teste Seguro ajuda você a definir um ambiente de teste seguro e criar uma solução empresarial para negócios robusta, com base em um conjunto configurável de endereços IP e intervalos. Essa funcionalidade permite que você corresponda suas implantações do Adobe Dynamic Media à arquitetura do seu sistema de negócios e de gerenciamento de conteúdo.
+
+Com o Teste Seguro, você pode visualizar a versão de preparo do site com conteúdo não publicado.
+
+Se desejar, crie um ambiente de preparo em vez de tornar os ativos disponíveis publicamente pelos seguintes motivos:
+
+* Visualizar sites antes do lançamento público (site de preparo).
+* Adicione ativos que exigem acesso restrito, como eCatalogs que mostrem preços em uma aplicação Web B2B.
+* Use os ativos por trás de um firewall como parte do sistema de gerenciamento de informações do produto, do aplicativo de atendimento ao cliente, do site de treinamento e assim por diante.
+
+>[!NOTE]
+O Teste Seguro não afeta o acesso ao Adobe Dynamic Media Classic. A segurança do Adobe Dynamic Media Classic permanece consistente e requer as credenciais usuais para acesso ao Adobe Dynamic Media Classic e serviços da Web relacionados.
+
+#### Como o teste seguro funciona {#how-test-assets-works}
+
+A maioria das corporações mantém a Internet por trás de um firewall. O acesso à Internet é possível através de determinadas rotas e geralmente através de uma gama limitada de endereços IP públicos.
+
+Na sua rede corporativa, você pode descobrir seu endereço IP público usando sites como [https://www.whatismyip.com](https://www.whatismyip.com/) ou solicite essas informações à sua organização de TI corporativa.
+
+Com o Teste Seguro, o Adobe Dynamic Media estabelece um Servidor de Imagem dedicado para ambientes de preparo ou aplicativos internos. Qualquer solicitação para este servidor verifica o endereço IP de origem. Se a solicitação recebida não estiver na lista aprovada de endereços IP, uma resposta de falha será retornada. O Administrador da empresa do Adobe Dynamic Media configura a lista aprovada de endereços IP para o ambiente de Teste Seguro da empresa.
+
+Como a localização da solicitação original deve ser confirmada, o tráfego do serviço de Teste Seguro não é roteado por meio de uma rede de distribuição de conteúdo como o tráfego público do Dynamic Media Image Server. As solicitações para o serviço de teste seguro têm uma latência ligeiramente maior em comparação com os servidores públicos de imagem da Dynamic Media.
+
+Os ativos não publicados ficam imediatamente disponíveis nos serviços de Teste Seguro, sem a necessidade de publicar. Dessa forma, é possível executar uma visualização antes que os ativos sejam publicados em seu servidor de imagens aberto ao público.
+
+>[!NOTE]
+Os serviços de Teste Seguro usam o Servidor de Catálogo configurado com um contexto de publicação interno. Portanto, se sua empresa estiver configurada para publicar no Teste seguro, todos os ativos carregados no Adobe Dynamic Media imediatamente se tornarão disponíveis nos serviços de Teste seguro. Essa funcionalidade é verdadeira independentemente de os ativos serem marcados para publicação no upload.
+
+Os serviços de Teste Seguro atualmente oferecem suporte aos seguintes tipos de ativos e funcionalidades:
+
+* Imagens.
+* Vinhetas (Solicitações do Servidor de Renderização).
+* Solicitações do Servidor de Renderização (suportadas, mas devem ser solicitadas explicitamente pelo cliente).
+* Conjuntos, incluindo conjuntos de imagens, eCatalog, conjuntos de renderização e conjuntos de mídia.
+* Visualizadores de mídia avançada do Adobe Standard Dynamic Media.
+* Adobe Dynamic Media OnDemand JSP pages.
+* Conteúdo estático, como arquivos PDF e vídeos fornecidos progressivamente.
+* streaming de vídeo HTTP.
+* Transmissão contínua de vídeo.
+
+Os seguintes tipos de ativos e funcionalidades não são suportados no momento:
+
+* Pesquisa de informações ou eCatalog do Adobe Dynamic Media Classic
+* Transmissão de vídeo RTMP
+* Web-to-print
+* Serviços UGC (Conteúdo gerado pelo usuário)
+
+>[!IMPORTANT]
+O suporte para ativos de imagem vetorial UGC novos ou existentes no Adobe Dynamic Media terminou em 30 de setembro de 2021.
+
+#### Testar o serviço de teste seguro {#test-secure-testing-service}
+
+Para garantir que o serviço de Teste Seguro funcione conforme o esperado, faça o seguinte:
+
+##### Prepare sua conta
+
+1. Entre em contato com o Atendimento ao cliente do Adobe e solicite que ele ative o Teste seguro em sua conta.
+1. No Adobe Experience Manager, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Configuração de publicação do Dynamic Media]**.
+1. Na página Servidor de imagem , no **[!UICONTROL Publicar contexto]** , selecione **[!UICONTROL Testar o fornecimento de imagem]**.
+1. Selecione o **[!UICONTROL Segurança]** guia .
+1. Para o **[!UICONTROL Endereço do cliente]** filtro, selecione **[!UICONTROL Adicionar]**.
+1. No **[!UICONTROL Endereço IP]** digite um endereço IP.
+1. No **[!UICONTROL Máscara]** digite uma máscara de rede.
+
+   >[!NOTE]
+   Se você adicionar mais de um endereço IP e uma máscara de rede, ela permitirá *all* Endereços IP para fazer chamadas de ativos e todos aparecem.
+
+1. Faça uma das seguintes opções:
+
+   * Para adicionar mais endereços IP, repita as três etapas anteriores.
+   * Prossiga para a próxima etapa.
+
+1. No canto superior direito da página Servidor de imagem, selecione **[!UICONTROL Salvar]**.
+1. Faça upload das imagens desejadas para sua conta do Adobe Dynamic Media.
+
+<!--    See [Upload files](uploading-files.md#uploading_files). -->
+
+1. Certifique-se de que algumas imagens estejam marcadas para publicação e outras não estejam marcadas e envie o trabalho de publicação.
+
+<!--    See [Publish files](publishing-files.md#publishing_files). -->
+
+1. Determine o nome do seu serviço de Teste Seguro acessando **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Configuração geral do Dynamic Media]**.
+1. No **[!UICONTROL Servidor]** , localize o nome do servidor à direita de **[!UICONTROL Nome do servidor publicado]**.
+
+Entre em contato com o Adobe Care se o nome do servidor estiver ausente ou se o URL para o servidor não funcionar.
+
+##### Preparar variações do site
+
+Você precisa de duas variações de um site que vincula os ativos publicados e não publicados:
+
+* Versão pública - Vincule ativos usando a sintaxe de URL tradicional do Adobe Dynamic Media.
+* Versão de armazenamento temporário - Vincule ativos usando a mesma sintaxe, mas com o nome do site Teste seguro .
+
+##### Executar os testes
+
+Execute os seguintes testes:
+
+1. Verifique se os ativos estão visíveis na rede corporativa.
+
+   Na rede corporativa identificada pelo intervalo de endereços IP definido anteriormente, a versão de preparo do site exibe todas as imagens, independentemente de serem ou não marcadas para publicação. Dessa forma, é possível testar sem disponibilizar acidentalmente as imagens antes de visualizar a aprovação ou o lançamento do produto.
+
+   Confirme se a versão pública do seu site mostra os ativos publicados como anteriormente tinham experiência com o Adobe Dynamic Media.
+
+1. De fora da rede corporativa, verifique se os ativos não publicados (ou seja, não marcados para publicação) estão protegidos do acesso de terceiros.
+
+   Acesse sua rede de fora (como de seu computador doméstico ou por uma conexão 4G/5G) e verifique se a versão pública do site mostra todos os ativos publicados, mas nenhum do conteúdo não publicado.
+
+   Confirme se a versão de armazenamento temporário não mostra nenhum ativo porque você está acessando o serviço de Teste Seguro a partir de um endereço IP não aprovado.
+
+### Definir as configurações gerais do Dynamic Media {#configuring-application-general-settings}
+
+>[!IMPORTANT]
+A Configuração geral do Dynamic Media só estará disponível se:
+* Você está executando o Dynamic Media no modo Scene7.
+* Você tem um *existente* **[!UICONTROL Configuração do Dynamic Media]** (em **[!UICONTROL Cloud Services]**) no Adobe Experience Manager 6.5 ou no Experience Manager as a Cloud Service.
+* Você é um administrador de sistema do Experience Manager com privilégios de administrador.
+
+
+Na criação da conta, o Adobe Dynamic Media fornece automaticamente os servidores atribuídos para sua empresa. Esses servidores são usados para criar strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas da sua conta do .
+
+Consulte também [Testar o serviço de teste seguro](/help/assets/dm-publish-settings.md#test-assets-before-making-public).
+
+**Para configurar a Configuração geral do Dynamic Media:**
+
+1. No modo Autor do Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global.
+1. No painel à esquerda, selecione o ícone Ferramentas e vá para **[!UICONTROL Ativos]** > **[!UICONTROL Configuração geral do Dynamic Media]**.
+1. Na página Servidor , defina seu **[!UICONTROL Nome do servidor publicado]** e **[!UICONTROL Nome do servidor de origem]** e, em seguida, use as cinco guias para definir as configurações de publicação padrão.
+
+   * [Servidor](#server-general-setting)
+   * [Carregar no aplicativo](#upload-to-application)
+   * [Edição de imagem](#image-editing-tab) guia
+   * [PostScript](#postscript-tab) guia
+   * [Photoshop](#photoshop-tab) guia
+   * [PDF](#pdf-tab) guia
+   * [Illustrator](#illustrator-tab) guia
+
+   ![Página Configurações gerais do Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
+   *página Configurações gerais do Dynamic Media , com o **[!UICONTROL Edição de imagem]**selecionada.*<br><br>
+
+1. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]**.
+
+#### Servidor {#server-general-setting}
+
+Na criação da conta, o Adobe Dynamic Media fornece automaticamente os servidores atribuídos para sua empresa. Esses servidores são usados para criar strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas da sua conta do .
+
+| Opção | Descrição |
+| --- | --- |
+| **[!UICONTROL Nome do servidor publicado]** | Obrigatório.<br>Este servidor é o servidor CDN (Content Deliver Network) ao vivo usado em todas as chamadas de URL geradas pelo sistema que são específicas da sua conta. Não altere o nome deste servidor a menos que seja instruído a fazê-lo pelo Suporte Técnico Adobe. O nome deve usar `https://` no caminho. |
+| **[!UICONTROL Nome do servidor de origem]** | Obrigatório.<br>Este servidor é usado somente para testes de controle de qualidade. Não altere o nome deste servidor a menos que seja instruído a fazê-lo pelo Suporte Técnico Adobe. |
+
+#### Carregar no aplicativo {#upload-to-application}
+
+* **[!UICONTROL Substituir imagens]**
+
+   O Adobe Dynamic Media não permite que dois arquivos tenham o mesmo nome. A Adobe Dynamic Media ID de cada item (o nome da imagem menos a extensão do nome do arquivo) deve ser exclusiva. Por causa dessa regra, **[!UICONTROL Fazer upload para o aplicativo]** tem uma substituição. O efeito exato dessa opção depende da opção de Substituição de imagens especificada que você escolheu. Essas opções especificam como as imagens de substituição são carregadas: se eles substituem as imagens originais ou se tornam imagens duplicadas. Imagens duplicadas são renomeadas com um `-1`. Por exemplo, `chair.tif` é renomeado `chair-1.tif`. Essas opções afetam as imagens carregadas em uma pasta diferente da original ou as imagens com uma extensão de nome de arquivo diferente da original, como JPG, TIF ou PNG.
+
+   | Opção Substituir imagens | Descrição |
+   | --- | --- |
+   | **[!UICONTROL Substituir na pasta atual, mesmo nome base/extensão]** | Padrão.<br>Essa opção é a regra mais rígida para substituição. Ela requer que você carregue a imagem de substituição na mesma pasta do original e que a imagem de substituição tenha a mesma extensão de nome de arquivo do original. Se esses requisitos não forem atendidos, uma duplicata será criada. |
+   | **[!UICONTROL Substituir na pasta atual, mesmo nome base independentemente da extensão]** | Requer que você carregue a imagem de substituição na mesma pasta do original, no entanto, a extensão do nome do arquivo pode ser diferente do original. Por exemplo, chair.tif substitui chair.jpg. |
+   | **[!UICONTROL Substituir em qualquer pasta, mesmo nome/extensão do ativo base]** | Requer que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, chair.jpg deve substituir chair.jpg, não chair.tif). No entanto, é possível fazer upload da imagem de substituição para uma pasta diferente da original. A imagem atualizada reside na nova pasta; o arquivo não pode mais ser encontrado em seu local original. |
+   | **[!UICONTROL Substituir em qualquer pasta, mesmo nome de ativo base independentemente da extensão]** | Essa é a regra de substituição mais inclusiva. Você pode fazer upload de uma imagem de substituição para uma pasta diferente do original, fazer upload de um arquivo com uma extensão de nome de arquivo diferente e substituir o arquivo original. Se o arquivo original estiver em uma pasta diferente, a imagem de substituição residirá na nova pasta para a qual foi carregada. |
+
+* **[!UICONTROL Preservar corte]**
+
+   Controla a preservação de qualquer definição manual de cultura existente.
+
+   Consulte também `preserveCrop` em [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) e [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), ambos no Guia de referência de visualizadores do Dynamic Media.
+
+#### Opções padrão de upload {#default-upload-options}
+
+##### Guia Edição de imagem {#image-editing-tab}
+
+Esse filtro permite ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida. Ajuda a controlar a intensidade do efeito, o raio do efeito (conforme medido em pixels) e um limite de contraste que é ignorado.
+
+O efeito Tirar nitidez da máscara usa as mesmas opções do filtro Tirar nitidez da máscara da Photoshop. Ao contrário do que o nome sugere, Tirar nitidez da máscara é um filtro de nitidez.
+
+| Tirar nitidez das opções de Máscara | Descrição |
+| --- | --- |
+| **[!UICONTROL Quantidade]** | Obrigatório.<br>Controla a quantidade de contraste que é aplicada aos pixels da borda.<br>Pense nisso como a intensidade do efeito. A principal diferença entre os valores de quantidade de Tirar nitidez da máscara no Adobe Dynamic Media e os valores de quantidade no Adobe Photoshop é que o Photoshop tem um intervalo de quantidade de 1% a 500%. Enquanto no Adobe Dynamic Media, o intervalo de valores é `0.0` para `5.0`. Um valor de 5,0 no Adobe Dynamic Media é o equivalente aproximado de 500% no Photoshop; um valor de 0,9 é o equivalente a 90%, e assim por diante. |
+| **[!UICONTROL Raio]** | Obrigatório.<br>Controla o raio do efeito.<br>O intervalo de valores é `0` para `250`. O efeito é executado em todos os pixels em uma imagem e irradia de todos os pixels em todas as direções. O raio é medido em pixels. Por exemplo, para obter um efeito de nitidez semelhante para uma imagem de 2000 x 2000 pixels e imagem de 500 x 500 pixels, você define um raio de dois pixels na imagem de 2000 x 2000 pixels. Em seguida, defina um valor de raio de um pixel na imagem de 500 x 500 pixels. Um valor maior é usado para uma imagem que tem mais pixels. |
+| **[!UICONTROL Limite]** | Obrigatório.<br>O limite é um intervalo de contraste que é ignorado quando o filtro Tirar nitidez da máscara é aplicado. Esse efeito é importante para que nenhum &quot;ruído&quot; seja introduzido em uma imagem quando esse filtro for usado. O intervalo de valores é `0` - `255`, que é o número de etapas de brilho em uma imagem em tons de cinza. `0`=black, `128`=50% cinza e `255`=branco.<br>Um valor limite de `12` O ignora pequenas variações é o brilho do tom da pele para evitar a adição de ruído, mas ainda adiciona o contraste da borda a áreas contrastantes, como onde as pálpebras tocam a pele.<br>Se você tiver uma foto do rosto de alguém, a máscara de nitidez afeta as partes contrastantes da imagem. Por exemplo, onde as pálpebras e a pele se encontram para criar uma área de contraste óbvia e a própria pele lisa. Mesmo a pele mais suave apresenta alterações sutis nos valores de brilho. Se você não usar um valor de limite, o filtro acentuará essas sutis alterações em pixels da pele. Por sua vez, um efeito ruidoso e indesejável é criado enquanto o contraste nas pálpebras aumenta, aumentando a nitidez.<br>Para evitar esse problema, é introduzido um valor limite que informa ao filtro para ignorar pixels que não alteram o contraste drasticamente, como pele lisa.<br>No gráfico zipper mostrado anteriormente, observe a textura ao lado dos zippers. O ruído da imagem é exibido porque os valores de limite eram muito baixos para suprimir o ruído. |
+| **[!UICONTROL Monocromático]** | Selecione para ativar o brilho (intensidade) da imagem da máscara de nitidez.<br>Desmarque para desfazer a nitidez de cada componente de cor separadamente. |
+
+Consulte também [Nitidez de imagens no Adobe Dynamic Media e no servidor de imagens](/help/assets/assets/sharpening_images.pdf).
+
+##### Guia PostScript {#postscript-tab}
+
+Você pode rasterizar arquivos Adobe PostScript®, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cores.
+
+Você pode usar arquivos Adobe PostScript® (EPS) no Adobe Dynamic Media. O Adobe Dynamic Media oferece comandos para configurar esses arquivos à medida que você os carrega.
+
+Ao carregar arquivos de imagem PostScript (EPS), você pode formatá-los de várias maneiras. Você pode rasterizar os arquivos, manter o plano de fundo transparente, escolher uma resolução e escolher um espaço de cores.
+
+| Opção PostScript | Descrição |
+| --- | --- |
+| **[!UICONTROL Processando]** | Escolha Rasterizar para converter gráficos vetoriais no arquivo para o formato de bitmap. |
+| **[!UICONTROL Manter plano de fundo transparente em imagens renderizadas]** | Preserva a transparência em segundo plano do arquivo. |
+| **[!UICONTROL Resolução(pixel/polegada)]** | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo. |
+| **[!UICONTROL Espaço de cores]** | ・ ・ **[!UICONTROL Detectar automaticamente]** - Mantém o espaço de cores do arquivo.<br>・ ・ **[!UICONTROL Forçar como RGB]** - Converte para o espaço de cores RGB.<br>・ ・ **[!UICONTROL Forçar como CMYK]** - Converte para o espaço de cores CMYK.<br>・ ・ **[!UICONTROL Forçar como Escala de Cinza]** - Converte para o espaço de cor Escala de Cinza. |
+
+##### Guia Photoshop {#photoshop-tab}
+
+Você pode criar modelos a partir de arquivos Adobe® Photoshop®, manter camadas, especificar como as camadas são nomeadas, extrair texto e especificar como as imagens são ancoradas em modelos.
+
+| Opção Photoshop | Descrição |
+| --- | --- |
+| **[!UICONTROL Manter camadas]** | Arrasta as camadas na PSD, se houver, para ativos individuais. As camadas de ativo permanecem associadas ao PSD. É possível visualizá-los abrindo o arquivo PSD na Exibição de detalhes e selecionando o painel de camada. Consulte Exibição e edição de camadas em um arquivo PSD. |
+| **[!UICONTROL Criar modelo]** | Cria um modelo a partir das camadas no arquivo PSD. |
+| **[!UICONTROL Extrair texto]** | Extrai o texto para que os usuários possam pesquisar por texto em um Visualizador. |
+| **[!UICONTROL Estender camadas ao tamanho do plano de fundo]** | Estende o tamanho das camadas de imagem cortadas até o tamanho da camada de plano de fundo. |
+| **[!UICONTROL Nomeação de camada]** | Estende o tamanho das camadas de imagem cortadas até o tamanho da camada de plano de fundo.<br>・ ・ **[!UICONTROL Nome da camada]** - Nomeia as imagens depois dos nomes das camadas no arquivo PSD. Por exemplo, uma camada chamada Tag de preço no arquivo PSD original se torna uma imagem chamada Tag de preço. No entanto, se os nomes de camada no arquivo PSD forem nomes de camada padrão do Photoshop (Plano de fundo, Camada 1, Camada 2 e assim por diante), as imagens serão nomeadas após seus números de camada no arquivo PSD. <br>・ ・ **[!UICONTROL Photoshop e número da camada]** - Nomes das imagens depois de seus números de camada no arquivo PSD, ignorando nomes de camada originais. As imagens são nomeadas com o nome do arquivo Photoshop e um número de camada anexado. Por exemplo, a segunda camada de um arquivo chamado `Spring Ad.psd` é nomeado `Spring Ad_2` mesmo que tivesse um nome não padrão no Photoshop.<br>・ ・ **[!UICONTROL Photoshop e nome da camada]** - Nomeia as imagens após o PSD, seguido do nome da camada ou do número da camada. O número da camada é usado se os nomes da camada no arquivo PSD forem nomes padrão da camada do Photoshop. Por exemplo, uma camada chamada `Price Tag` em um arquivo PSD `SpringAd` é nomeado `Spring Ad_Price Tag`. Uma camada com o nome padrão Camada 2 é chamada `Spring Ad_2`. |
+| **[!UICONTROL Âncora]** | Especifique como as imagens são ancoradas em modelos que são gerados a partir da composição em camadas produzida a partir do arquivo PSD. Por padrão, a âncora é o centro. Uma âncora central permite que imagens de substituição preencham melhor o mesmo espaço, independentemente da proporção da imagem de substituição. Imagens com um aspecto diferente que substituem essa imagem, ao referenciar o modelo e usar substituição de parâmetro, ocupam efetivamente o mesmo espaço. Altere para uma configuração diferente se o aplicativo exigir as imagens de substituição para preencher o espaço alocado no modelo. |
+
+##### Guia PDF {#pdf-tab}
+
+Você pode optar por rasterizar os arquivos, extrair palavras de pesquisa e links, definir a resolução e escolher um espaço de cores.
+
+| opção PDF | Descrição |
+| --- | --- |
+| **[!UICONTROL Processando]** | ・ ・ **[!UICONTROL Nenhum]** - Não é efetuado qualquer processamento do PDF.<br>・ ・ **[!UICONTROL Miniatura]** - Remove cada página do arquivo PDF e a converte em uma imagem em miniatura.<br> ・ ・ **[!UICONTROL Rasterizar]** - Remove as páginas do arquivo PDF e converte gráficos vetoriais em imagens de bitmap. Para criar um eCatalog, escolha essa opção. |
+| **[!UICONTROL Extrair]** | ・ ・ **[!UICONTROL Nenhum]** - Nenhuma palavra de pesquisa ou link é extraído do PDF.<br>・ ・ **[!UICONTROL Pesquisar palavras]** - Extrai palavras de pesquisa do arquivo PDF para que o arquivo possa ser pesquisado por palavra-chave em um visualizador de eCatalog.<br>・ ・ **[!UICONTROL Links]** - Extrai links dos arquivos do PDF e os converte em mapas de imagem usados em um visualizador de eCatalog.<br>・ ・ **[!UICONTROL Pesquisar palavras e links]** - Extrai palavras de pesquisa e links para uso em um visualizador de eCatalog. |
+| **[!UICONTROL Resolução(pixel/polegada)]** | Determina a configuração de resolução. Esta configuração determina quantos pixels são exibidos por polegada no arquivo PDF. O padrão é 150. |
+| **[!UICONTROL Espaço de cores]** | ・ ・ **[!UICONTROL Detectar automaticamente]** - Mantém o espaço de cores do arquivo PDF.<br>・ ・ **[!UICONTROL Forçar como RGB]** - Converte para o espaço de cores RGB.<br>・ ・ **[!UICONTROL Forçar como CMYK]** - Converte para o espaço de cores CMYK.<br>・ ・ **[!UICONTROL Forçar como Escala de Cinza]** - Converte para o espaço de cor Escala de Cinza. |
+
+##### Guia Illustrator {#illustrator-tab}
+
+Você pode rasterizar arquivos Adobe Illustrator®, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cores.
+
+Você pode usar arquivos Adobe® Illustrator® (AI) no Adobe Dynamic Media. O Adobe Dynamic Media oferece comandos para configurar esses arquivos à medida que você os carrega.
+
+Ao carregar arquivos de imagem do Illustrator (AI), você pode formatá-los de várias maneiras. Você pode rasterizar os arquivos, manter o plano de fundo transparente, escolher uma resolução e escolher um espaço de cores. As opções para formatar arquivos PostScript e Illustrator estão disponíveis na tela Upload em Opções de PostScript e Opções do Illustrator na caixa Opções de trabalho de upload .
+
+
+| Opção Illustrator | Descrição |
+| --- | --- |
+| **[!UICONTROL Processando]** | Escolha Rasterizar para converter gráficos vetoriais no arquivo para o formato de bitmap. |
+| **[!UICONTROL Manter plano de fundo transparente em imagens renderizadas]** | Preserva a transparência em segundo plano do arquivo. |
+| **[!UICONTROL Resolução(pixel/polegada)]** | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo. |
+| **[!UICONTROL Espaço de cores]** | ・ ・ **[!UICONTROL Detectar automaticamente]** - Mantém o espaço de cores do arquivo.<br>・ ・ **[!UICONTROL Forçar como RGB]** - Converte para o espaço de cores RGB.<br>・ ・ **[!UICONTROL Forçar como CMYK]** - Converte para o espaço de cores CMYK.<br>・ ・ **[!UICONTROL Forçar como Escala de Cinza]** - Converte para o espaço de cor Escala de Cinza. |
+
+
+**[!UICONTROL Perfis de cores padrão]** - Consulte [Configurar gerenciamento de cores](#configuring-color-management) para obter mais informações.
+
+>[!NOTE]
+Por padrão, o sistema mostra 15 execuções ao selecionar **[!UICONTROL Representações]** e 15 predefinições do visualizador ao selecionar **[!UICONTROL Visualizadores]** na exibição detalhada do ativo. Você pode aumentar esse limite. Consulte [Aumente o número de predefinições de imagens exibidas](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Aumentar o número de predefinições do visualizador exibidas](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+
+### (Opcional) Tarefas adicionais de configuração
+
+As tarefas opcionais de configuração e configuração incluem o seguinte:
+
+* [Editar tipos MIME para formatos compatíveis](#editing-mime-types-for-supported-formats) **RICK: CONTINUAR?**
+* [Adicionar tipos MIME para formatos não suportados](#adding-mime-types-for-unsupported-formats) **RICK: CONTINUAR?**
+* [Criar predefinições de conjunto de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) **RICK: CONTINUAR?**
+
+* **[!UICONTROL Atributos de compatibilidade]** - **RICK: AINDA É NECESSÁRIO? ESTAVA NO CLASSIC** Essa configuração permite que os parágrafos anteriores e posteriores em camadas de texto sejam tratados como na versão 3.6 para compatibilidade com versões anteriores.
+* **[!UICONTROL Suporte à localização]** - **RICK: AINDA É NECESSÁRIO? ESTAVA NO CLASSIC** Essas configurações permitem gerenciar vários atributos de localidade. Ela também permite especificar uma sequência de mapa de localidade para que você possa definir quais idiomas deseja suportar para as várias dicas de ferramentas em Visualizadores. Para obter mais informações sobre como configurar **[Suporte à localização]**, consulte [Considerações ao configurar a localização de ativos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
+
 #### Editar tipos MIME para formatos compatíveis {#editing-mime-types-for-supported-formats}
+
+**RICK: MANTER COMO ESTÁ??**
 
 Você pode definir quais tipos de ativos são processados pelo Dynamic Media e personalizar parâmetros avançados de processamento de ativos. Por exemplo, você pode especificar parâmetros de processamento de ativos para fazer o seguinte:
 
@@ -363,6 +691,8 @@ Consulte [Upload de ativos](/help/assets/manage-assets.md#uploading-assets).
 1. No canto superior esquerdo da página, selecione **[!UICONTROL CRXDE Lite]** para voltar ao Experience Manager.
 
 #### Adição de tipos MIME para formatos não suportados {#adding-mime-types-for-unsupported-formats}
+
+**RICK: MANTER COMO ESTÁ??**
 
 Você pode adicionar tipos MIME personalizados para formatos não compatíveis no Experience Manager Assets. Certifique-se de que qualquer novo nó adicionado no CRXDE Lite não seja excluído pelo Experience Manager movendo o tipo MIME antes de `image_`. Além disso, verifique se o valor ativado está definido como **[!UICONTROL false]**.
 
@@ -416,6 +746,8 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis n
 
 #### Criar predefinições de conjunto de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
+**RICK: MANTER COMO ESTÁ??**
+
 Use predefinições de conjuntos em lotes para automatizar a criação de conjuntos de imagens ou conjuntos de rotação enquanto os ativos são carregados no Dynamic Media.
 
 Primeiro, defina a convenção de nomenclatura de como os ativos são agrupados em um conjunto. Em seguida, crie uma predefinição de conjunto de lotes que seja um conjunto de instruções autocontido e com nome exclusivo. Ele deve definir como construir o conjunto usando imagens que correspondam às convenções de nomenclatura definidas na receita predefinida.
@@ -433,6 +765,8 @@ Como alternativa, você pode usar **[!UICONTROL Exibir código]** sem campos de 
 Dois elementos estão disponíveis para definição, Correspondência e Nome de base. Esses campos permitem definir todos os elementos de uma convenção de nomenclatura e identificar a parte da convenção usada para nomear o conjunto no qual eles estão contidos. A convenção de nomenclatura individual de uma empresa geralmente usa uma ou mais linhas de definição para cada um desses elementos. Você pode usar quantas linhas para sua definição exclusiva e agrupá-las em elementos distintos, como para Imagem principal, Elemento de cor, Elemento de exibição alternativo e Elemento de amostra.
 
 **Para configurar a nomenclatura padrão:**
+
+**RICK: MANTER COMO ESTÁ??**
 
 1. Abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta.
 
@@ -466,6 +800,8 @@ Você pode criar, editar e gerenciar as predefinições do conjunto de lotes. Ex
 Você pode usar o método de campo de formulário para definir uma predefinição de conjunto de lotes ou o método de código, que permite usar expressões regulares. Como em Nomenclatura padrão, você pode escolher Exibir código ao mesmo tempo em que está definindo na Exibição do formulário e usar expressões regulares para criar suas definições. Como alternativa, você pode desmarcar qualquer exibição para usar uma ou a outra exclusivamente.
 
 **Para criar uma predefinição de conjunto de lotes:**
+
+**RICK: MANTER COMO ESTÁ??**
 
 1. Abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta.
 
@@ -522,6 +858,8 @@ O agrupamento para a parte do nome do ativo compartilhado do conjunto de rotaç�
 Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome da fórmula do Conjunto de rotação 2D que está listada em **[!UICONTROL Predefinições de conjunto de lote]** na caixa de diálogo **[!UICONTROL Opções de trabalho de upload]**.
 
 **Para criar uma predefinição de conjunto de lotes para a geração automática de um conjunto de rotação 2D:**
+
+**RICK: MANTER COMO ESTÁ??**
 
 1. Abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta.
 
@@ -580,6 +918,8 @@ Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome d
 
 ### (Opcional) Ajustar o desempenho do Dynamic Media - Modo Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
+**RICK: MANTER COMO ESTÁ??**
+
 Para manter o Dynamic Media - modo Scene7 em execução sem problemas, o Adobe recomenda as seguintes dicas de ajuste de desempenho/escalabilidade de sincronização:
 
 * Atualização dos parâmetros de Trabalho predefinidos para processamento de diferentes formatos de arquivo.
@@ -588,6 +928,8 @@ Para manter o Dynamic Media - modo Scene7 em execução sem problemas, o Adobe r
 * Atualização das conexões máximas de upload para o servidor do Dynamic Media Classic.
 
 #### Atualizar os parâmetros de Trabalho predefinidos para o processamento de diferentes formatos de arquivo
+
+**RICK: MANTER COMO ESTÁ??**
 
 Você pode ajustar parâmetros de trabalho para processamento mais rápido ao carregar arquivos. Por exemplo, se você carregar arquivos PSD, mas não quiser processá-los como modelos, poderá definir a extração de camada como false (off). Nesse caso, o parâmetro de trabalho ajustado aparece da seguinte maneira: `process=None&createTemplate=false`.
 
@@ -613,6 +955,8 @@ Para atualizar qualquer um desses parâmetros, siga as etapas em [Ativar o supor
 
 #### Atualizar a fila de fluxo de trabalho transitório do Granite {#updating-the-granite-transient-workflow-queue}
 
+**RICK: MANTER COMO ESTÁ??**
+
 A fila Fluxo de trabalho de trânsito do Granite é usada para **[!UICONTROL Ativo de atualização DAM]** fluxo de trabalho. No Dynamic Media, é usado para assimilação e processamento de imagens.
 
 **Para atualizar a fila de fluxo de trabalho transitório do Granite:**
@@ -636,6 +980,8 @@ A fila Fluxo de trabalho de trânsito do Granite é usada para **[!UICONTROL Ati
 
 #### Atualizar a fila do fluxo de trabalho do Granite {#updating-the-granite-workflow-queue}
 
+**RICK: MANTER COMO ESTÁ??**
+
 A fila Fluxo de trabalho do Granite é usada para fluxos de trabalho não transitórios. No Dynamic Media, ele processava vídeo com a variável **[!UICONTROL Codificar vídeo no Dynamic Media]** fluxo de trabalho.
 
 **Para atualizar a fila do fluxo de trabalho do Granite:**
@@ -654,6 +1000,8 @@ A fila Fluxo de trabalho do Granite é usada para fluxos de trabalho não transi
 1. Selecione **[!UICONTROL Salvar]**.
 
 #### Atualizar a conexão de upload do Dynamic Media Classic {#updating-the-scene-upload-connection}
+
+**RICK: MANTER COMO ESTÁ??**
 
 A configuração Scene7 Upload Connection sincroniza ativos do Experience Manager para servidores da Dynamic Media Classic.
 
@@ -674,6 +1022,8 @@ A configuração Scene7 Upload Connection sincroniza ativos do Experience Manage
 
 ### (Opcional) Filtrar ativos para replicação {#optional-filtering-assets-for-replication}
 
+**RICK: MANTER COMO ESTÁ**
+
 Em implantações que não são da Dynamic Media, você replica *all* ativos (imagens e vídeo) do ambiente de criação do Experience Manager para o nó de publicação do Experience Manager. Esse workflow é necessário porque os servidores de Publicação do Experience Manager também entregam os ativos.
 
 No entanto, em implantações do Dynamic Media, como os ativos são fornecidos por meio do Cloud Service, não há necessidade de replicar esses mesmos ativos para nós de publicação do Experience Manager. Esse workflow de &quot;publicação híbrida&quot; evita custos de armazenamento extras e tempos de processamento mais longos para replicar ativos. Outros conteúdos, como páginas do Site, continuam a ser veiculados a partir dos nós de publicação do Experience Manager.
@@ -681,6 +1031,8 @@ No entanto, em implantações do Dynamic Media, como os ativos são fornecidos p
 Os filtros fornecem uma maneira de *exclude* ativos de serem replicados para o nó de publicação do Experience Manager.
 
 #### Usar filtros de ativos padrão para replicação {#using-default-asset-filters-for-replication}
+
+**RICK: MANTER COMO ESTÁ**
 
 Se você usa o Dynamic Media para geração de imagens, ou vídeo, ou ambos, você pode usar os filtros padrão que o Adobe fornece como estão. Os seguintes filtros estão ativos por padrão:
 
@@ -693,6 +1045,8 @@ Se você usa o Dynamic Media para geração de imagens, ou vídeo, ou ambos, voc
 Os filtros se aplicam aos tipos MIME e não podem ser específicos de caminho.
 
 #### Personalizar filtros de ativos para replicação {#customizing-asset-filters-for-replication}
+
+**RICK: MANTER COMO ESTÁ**
 
 1. No Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
 1. Na árvore da pasta esquerda, navegue até `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` para analisar os filtros.
