@@ -1,18 +1,18 @@
 ---
 title: Trabalhar com ativos 3D no Dynamic Media
-seo-title: Trabalhar com ativos 3D no Dynamic Media
+seo-title: Working with 3D assets in Dynamic Media
 description: Saiba como trabalhar com ativos 3D no Dynamic Media
-seo-description: Saiba como trabalhar com ativos 3D no Dynamic Media
+seo-description: Learn how to work with 3D assets in Dynamic Media
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
-feature: Ativos 3D,Gerenciamento de ativos
+feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
+source-git-commit: 9f08d529af0ec37d2bd2a4f479a172c6c950c47d
 workflow-type: tm+mt
-source-wordcount: '2330'
+source-wordcount: '2309'
 ht-degree: 4%
 
 ---
@@ -35,11 +35,11 @@ Não há nenhuma configuração adicional necessária para usar ativos 3D no Dyn
 
 O Dynamic Media é compatível com os seguintes formatos 3D.
 
-Consulte também [formatos 3D suportados](/help/assets/assets-formats.md).
+Consulte também [Formatos 3D compatíveis](/help/assets/assets-formats.md).
 
 | extensão de arquivo 3D | Formato de arquivo | Tipo MIME | Notas |
 |---|---|---|---|
-| GLB | Transmissão binária GL | model/gltf-binário | Inclui os materiais e as texturas como um único ativo. |
+| GLB | Transmissão binária GL | modelo/gltf-binário | Inclui os materiais e as texturas como um único ativo. |
 | OBJ | Arquivo de objeto 3D WaveFront | application/x-tgif |  |
 | STL | Estereolitografia | application/vnd.ms-pki.stl |  |
 | USDZ | Arquivo Zip de descrição da cena universal | model/vnd.usdz+zip | *Suporte apenas para ingestão; nenhuma visualização ou interação está disponível.* USDZ é um formato 3D proprietário que pode ser visualizado originalmente por dispositivos Safari e iOS. |
@@ -54,7 +54,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudar
 
 Antes de trabalhar com ativos 3D no Dynamic Media, verifique se o administrador do Experience Manager já ativou e configurou o Dynamic Media Cloud Services no modo Dynamic Media - Scene7.
 
-Consulte [ConfigurarE Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) em Configuração do Dynamic Media - Modo Scene7 e [Solução de problemas do Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md).
+Consulte [Configurar Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) em Configuração do Dynamic Media - Modo Scene7 e [Solução de problemas do Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md).
 
 1. **Fazer upload de ativos 3D**
 
@@ -65,16 +65,16 @@ Consulte [ConfigurarE Dynamic Media Cloud Services](/help/assets/config-dms7.md#
 
    * Organizar e pesquisar ativos 3D
 
-      * [Organizar ativos](/help/assets/organize-assets.md#organize-digital-assets) digitais.
+      * [Organizar ativos digitais](/help/assets/organize-assets.md#organize-digital-assets).
       * [Pesquisar ativos 3D](/help/assets/search-assets.md).
-      * [Use predicados personalizados para filtrar os resultados](/help/assets/search-assets.md#custompredicates) de pesquisa.
+      * [Usar predicados personalizados para filtrar os resultados da pesquisa](/help/assets/search-assets.md#custompredicates).
    * Exibir ativos 3D
 
-      * [Exibir e interagir com ativos](#viewing-three-d-assets) 3D.
-      * [Gerenciar a predefinição](/help/assets/managing-viewer-presets.md) do visualizador Dimensional.
+      * [Exibir e interagir com ativos 3D](#viewing-three-d-assets).
+      * [Gerenciar a predefinição do visualizador dimensional](/help/assets/managing-viewer-presets.md).
    * Trabalhar com metadados de ativos 3D
 
-      * [Gerenciar metadados para ativos](/help/assets/metadata.md) digitais.
+      * [Gerenciar metadados para ativos digitais](/help/assets/metadata.md).
       * [Esquemas de metadados](/help/assets/metadata-schemas.md).
 
 
@@ -106,16 +106,16 @@ Além disso, os recursos do computador cliente, como uma estação de trabalho, 
 
 ## Exibir e interagir com um ativo 3D na página de detalhes do ativo {#viewing-three-d-assets-from-asset-details-page}
 
-Consulte também [Visualizar ativos usando a interface de software](/help/assets/previewing-assets.md).
+Consulte também [Visualizar ativos usando a interface do software](/help/assets/previewing-assets.md).
 
 **Para visualizar e interagir com um ativo 3D na página de detalhes do ativo:**
 
 1. Certifique-se de ter carregado ativos 3D no Experience Manager.
 
-   Consulte [Fazer upload de seus ativos 3D para uso no Dynamic Media](/help/assets/manage-assets.md#uploading-assets).
+   Consulte [Faça upload de seus ativos 3D para usar no Dynamic Media](/help/assets/manage-assets.md#uploading-assets).
 
-1. No Experience Manager, na página **[!UICONTROL Navegação]**, vá para **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]**.
-1. Próximo ao canto superior direito da página, na lista suspensa **[!UICONTROL Exibir]**, selecione **[!UICONTROL Exibição de cartão]**.
+1. De Experience Manager, no **[!UICONTROL Navegação]** página, vá para **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]**.
+1. Próximo ao canto superior direito da página, da **[!UICONTROL Exibir]** , selecione **[!UICONTROL Exibição de cartão]**.
 1. Navegue até o ativo 3D que deseja visualizar.
 1. Selecione o cartão do ativo 3D.
 1. Na página de visualização de detalhes do ativo 3D, siga um destes procedimentos:
@@ -129,29 +129,29 @@ Consulte também [Visualizar ativos usando a interface de software](/help/assets
    | **Redefinir** | Próximo ao canto inferior direito da página, selecione o ícone Redefinir para restaurar o ponto de destino da exibição para o centro do ativo 3D. A redefinição também aproxima ou afasta a câmera para mostrar o ativo inteiro e com um tamanho de visualização razoável. |  |  |
    | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, selecione o ícone de tela cheia. |  |  |
 
-1. No canto superior direito da página, selecione **[!UICONTROL Fechar]** para retornar à página Ativos.
+1. No canto superior direito da página, selecione **[!UICONTROL Fechar]** para retornar à página Ativos .
 
 ## Visualização e interação com um ativo 3D dentro de um componente de mídia 3D {#interacting-with-asset-inside-three-d-media-component}
 
-Quando uma página da Web está no modo **[!UICONTROL Edit]**, nenhuma interação é possível com um ativo 3D. Para tornar o ativo interativo, você pode usar o recurso **[!UICONTROL Visualização]** para exibir a página da Web no editor de páginas com acesso total à funcionalidade do componente de mídia 3D.
+Quando uma página da Web está em **[!UICONTROL Editar]** , nenhuma interação é possível com um ativo 3D. Para tornar o ativo interativo, você pode usar o **[!UICONTROL Visualizar]** para exibir a página da Web no editor de páginas com acesso total à funcionalidade do componente de mídia 3D.
 
 >[!IMPORTANT]
 >
->Essa tarefa só pode ser realizada depois de ter adicionado um componente de mídia 3D a uma página da Web e atribuído um ativo 3D ao componente. Consulte [Adicionar o componente de mídia 3D a uma página da Web](#adding-the-three-d-media-component-to-a-web-page) e [Atribuir um ativo 3D a um componente de mídia 3D](#assigning-a-three-d-asset-to-the-component).
+>Essa tarefa só pode ser realizada depois de ter adicionado um componente de mídia 3D a uma página da Web e atribuído um ativo 3D ao componente. Consulte [Adicionar o componente de mídia 3D a uma página da Web](#adding-the-three-d-media-component-to-a-web-page) e [Atribuição de um ativo 3D a um componente de mídia 3D](#assigning-a-three-d-asset-to-the-component).
 
-Consulte também [Visualizar ativos usando a interface de software](/help/assets/previewing-assets.md).
+Consulte também [Visualizar ativos usando a interface do software](/help/assets/previewing-assets.md).
 
 **Para visualizar e interagir com um ativo 3D dentro de um componente de mídia 3D:**
 
-1. Embora uma página da Web esteja no modo **[!UICONTROL Edit]**, siga um destes procedimentos:
+1. Enquanto uma página da Web está em **[!UICONTROL Editar]** , execute um dos seguintes procedimentos:
 
-   * Próximo ao canto superior direito da página, selecione **[!UICONTROL Preview]** para entrar no modo **[!UICONTROL Preview]**.
-   * Exclua `/editor.html` do URL da página no navegador.
+   * Próximo ao canto superior direito da página, selecione **[!UICONTROL Visualizar]** para inserir **[!UICONTROL Visualizar]** modo.
+   * Excluir `/editor.html` no URL da página no navegador.
 
-Um ativo 3D totalmente interativo, como exibido em    ![Ativo 3D exibido no ](/help/assets/assets-dm/3d-asset-in-3d-media.png)
-componente Mídia 3Dum ativo 3D totalmente interativo, como exibido no modo  **** Visualização.
+Um ativo 3D totalmente interativo, como exibido em    ![Ativo 3D exibido dentro do componente Mídia 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
+Um ativo 3D totalmente interativo, como exibido em **[!UICONTROL Visualizar]** modo.
 
-1. Enquanto estiver no modo **[!UICONTROL Preview]** , siga um destes procedimentos:
+1. Enquanto em **[!UICONTROL Visualizar]** , execute um dos seguintes procedimentos:
 
    | Exibir | Descrição | Ação do mouse | Ação da tela de toque |
    | --- | --- | --- | --- |
@@ -168,22 +168,22 @@ O Dynamic Media inclui um componente de mídia 3D do Dynamic Media que pode ser 
 
 * [Adicionar o componente de mídia 3D ao modelo da página](#adding-three-d-media-component-to-page-template)
 * [Adicionar o componente de mídia 3D a uma página da Web](#adding-the-three-d-media-component-to-a-web-page)
-   * [Opcional - Configuração do componente de mídia 3D](#configuring-the-three-d-component)
+   * [Opcional - Configurar o componente de mídia 3D](#configuring-the-three-d-component)
 * [Atribuir um ativo 3D ao componente de mídia 3D](#assigning-a-three-d-asset-to-the-component)
 
 ## Adicionar o componente de mídia 3D ao modelo da página {#adding-three-d-media-component-to-page-template}
 
-1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Modelos]**.
+1. Navegar para **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Modelos]**.
 1. Navegue até o modelo de página no qual você deseja ativar o componente 3D e selecione o modelo.
-1. Selecione **[!UICONTROL Edit]** para poder abrir o modelo.
-1. Próximo ao canto superior direito da página, no menu suspenso, selecione o modo **[!UICONTROL Estrutura]**, se ele ainda não estiver ativo.
+1. Selecionar **[!UICONTROL Editar]** para que você possa abrir o template.
+1. Próximo ao canto superior direito da página, no menu suspenso, selecione **[!UICONTROL Estrutura]** , se ainda não estiver ativo.
 
    ![3d-media-component-structure](/help/assets/assets-dm/3d-media-component-structure.png)
 
-1. Selecione uma área vazia na região **[!UICONTROL Contêiner de layout]** para selecioná-la e abrir a barra de ferramentas associada.
-1. Na barra de ferramentas, selecione o ícone **[!UICONTROL Policy]** para abrir o **[!UICONTROL Policy Editor]**.
-1. Na seção **[!UICONTROL Properties]**, na guia **[!UICONTROL Componentes permitidos]**, role até **[!UICONTROL Dynamic Media]**, expanda a lista e marque **[!UICONTROL 3D Media]**.
-1. Selecione **[!UICONTROL Concluído]** para guardar as alterações e fechar o **[!UICONTROL Editor de Políticas]**.
+1. Selecione uma área vazia no **[!UICONTROL Contêiner de layout]** região para selecioná-la e abrir a barra de ferramentas associada.
+1. Na barra de ferramentas, selecione o **[!UICONTROL Política]** ícone para abrir o **[!UICONTROL Editor de políticas]**.
+1. No **[!UICONTROL Propriedades]** na seção **[!UICONTROL Componentes permitidos]** guia , role até **[!UICONTROL Dynamic Media]**, em seguida, expanda a lista e marque **[!UICONTROL Mídia 3D]**.
+1. Selecionar **[!UICONTROL Concluído]** para salvar as alterações e fechar o **[!UICONTROL Editor de políticas]**.
 
    Agora é possível colocar o componente de mídia 3D do Dynamic Media em todas as páginas que usam esse modelo.
 
@@ -195,18 +195,18 @@ Consulte também [Adicionar ativos do Dynamic Media nas páginas](/help/assets/a
 
 **Para adicionar o componente de mídia 3D em uma página da Web:**
 
-1. Abra Experience Manager Sites e selecione a página da Web à qual deseja adicionar o componente de mídia 3D do Dynamic Media.
-1. Selecione o ícone **[!UICONTROL Edit]** (lápis) para poder abrir a página no editor de páginas. Certifique-se de que o modo **[!UICONTROL Edit]** esteja selecionado perto do canto superior direito da página.
+1. Abra o Experience Manager Sites e selecione a página da Web à qual deseja adicionar o componente de mídia 3D do Dynamic Media.
+1. Selecione o **[!UICONTROL Editar]** (lápis) para que você possa abrir a página no editor de páginas. Certifique-se de que **[!UICONTROL Editar]** O modo é selecionado próximo ao canto superior direito da página.
 
    ![3d-media-component-add](/help/assets/assets-dm/3d-media-component-edit.png)
 
 1. Na barra de ferramentas, selecione o ícone do painel lateral para alternar ou &quot;ativar&quot; a exibição do painel.
 
-1. No painel lateral, selecione o ícone de sinal de mais para abrir a lista **[!UICONTROL Components]**.
+1. No painel lateral, selecione o ícone de sinal de mais para abrir o **[!UICONTROL Componentes]** lista.
 
    ![3d-mídia-componente-arrastar-soltar](/help/assets/assets-dm/3d-assets-filter.png)
 
-1. Arraste o componente **[!UICONTROL 3D Media]** da lista **[!UICONTROL Componentes]** para o local na página onde deseja que o visualizador 3D apareça.
+1. Arraste o **[!UICONTROL Mídia 3D]** do **[!UICONTROL Componentes]** liste para o local na página onde você deseja que o visualizador 3D apareça.
 
 Agora você está pronto para atribuir um ativo 3D ao componente.
 
@@ -214,12 +214,12 @@ Consulte [Atribuir um ativo 3D ao componente de mídia 3D](#assigning-a-three-d-
 
 ### Opcional - Configurar o componente de mídia 3D {#configuring-the-three-d-component}
 
-1. No editor de página Sites do Experience Manager, selecione o componente **[!UICONTROL Visualizador de mídia 3D]** que você adicionou anteriormente à página.
-1. Selecione o ícone **[!UICONTROL Configuração]** (chave) para abrir a caixa de diálogo de configuração do componente.
+1. No editor de páginas do Experience Manager Sites, selecione o **[!UICONTROL Visualizador de mídia 3D]** componente adicionado anteriormente à página.
+1. Selecione o **[!UICONTROL Configuração]** ícone (chave) para abrir a caixa de diálogo configuração do componente.
 
    ![3d-media-component-config](/help/assets/assets-dm/3d-media-component-config.png)
 
-1. Na caixa de diálogo Mídia 3D, na lista suspensa Predefinição do visualizador , selecione **[!UICONTROL Dimensional]** para atribuir a predefinição do visualizador dimensional ao componente.
+1. Na caixa de diálogo Mídia 3D, na lista suspensa Predefinição do visualizador , selecione **[!UICONTROL Dimensões]** para atribuir a predefinição do visualizador Dimensional ao componente.
 
    ![3d-media-component-edit-config](/help/assets/assets-dm/3d-media-component-edit-config.png)
 
@@ -233,24 +233,24 @@ Consulte [Adicionar o componente de mídia 3D a uma página da Web](#adding-the-
 
 **Para atribuir um ativo 3D ao componente de mídia 3D:**
 
-1. No editor de página Sites do Experience Manager, selecione o ícone **[!UICONTROL Ativos]** para abrir **[!UICONTROL Ativos]** no painel lateral.
-1. Na lista suspensa, selecione **[!UICONTROL 3D]** para mostrar apenas os tipos de arquivos de ativos 3D.
+1. No editor de páginas do Experience Manager Sites, selecione o **[!UICONTROL Ativos]** ícone para abrir **[!UICONTROL Ativos]** no painel lateral.
+1. Na lista suspensa, selecione **[!UICONTROL 3D]** para mostrar apenas tipos de arquivos de ativos 3D.
 1. No painel lateral, procure ou role até o ativo 3D que deseja visualizar na página que está sendo editada.
-1. Arraste o ativo 3D do painel lateral Ativos e solte-o no componente **[!UICONTROL Mídia 3D]** que você adicionou anteriormente à página.
+1. Arraste o ativo 3D do painel lateral Ativos e solte-o no **[!UICONTROL Mídia 3D]** componente adicionado anteriormente à página.
 
    ![Atribuir ativo 3D ao componente de mídia 3D](/help/assets/assets-dm/3d-asset-add.png)
 
 >[!NOTE]
 >
->Embora uma página da Web esteja no modo Experience Manager Sites **[!UICONTROL Edit]**, o componente de Mídia 3D exibe o ativo 3D, mas nenhuma interação com o ativo é possível. Para tornar o ativo interativo, você pode usar o recurso **[!UICONTROL Visualização]** para exibir a página da Web no editor de páginas com acesso total à funcionalidade do componente de mídia 3D.
+>Enquanto uma página da Web estiver na Experience Manager Sites **[!UICONTROL Editar]** modo , o componente Mídia 3D exibe o ativo 3D, mas nenhuma interação com o ativo é possível. Para tornar o ativo interativo, você pode usar o **[!UICONTROL Visualizar]** para exibir a página da Web no editor de páginas com acesso total à funcionalidade do componente de mídia 3D.
 
 ## Publicar ativos estáticos em Dynamic Media 3D {#publishing-three-d-assets}
 
-O Dynamic Media aceita vários formatos de arquivo 3D compatíveis com *conteúdo estático* no Dynamic Media. O conteúdo estático significa que você pode fazer upload e publicar ativos 3D, mas não há suporte para *imagem variável* ou ajuste de imagem associado ao ativo 3D. Isso ocorre porque o Dynamic Media Imaging Server não reconhece formatos 3D. Dessa forma, depois de publicar um ativo 3D no Dynamic Media, você tem um URL instantâneo que pode ser copiado. O URL para o ativo 3D segue a estrutura normal de URL do Dynamic Media. No entanto, não é possível editar nenhum parâmetro no URL do ativo, ao contrário dos ativos de imagem tradicionais na Dynamic Media.
+O Dynamic Media aceita vários formatos de arquivo 3D compatíveis com *conteúdo estático* no Dynamic Media. O conteúdo estático significa que você pode fazer upload e publicar ativos 3D, mas não há suporte para *imagem variável* ou reversão de imagem associada ao ativo 3D. Isso ocorre porque o Dynamic Media Imaging Server não reconhece formatos 3D. Dessa forma, depois de publicar um ativo 3D no Dynamic Media, você tem um URL instantâneo que pode ser copiado. O URL para o ativo 3D segue a estrutura normal de URL do Dynamic Media. No entanto, não é possível editar nenhum parâmetro no URL do ativo, ao contrário dos ativos de imagem tradicionais na Dynamic Media.
 
 Consulte também [Obter um URL para um ativo estático](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset).
 
-Na **[!UICONTROL Exibição de cartão]**, um pequeno ícone de globo aparece logo abaixo do nome de um ativo e à esquerda de sua data e hora para indicar que ele foi publicado. Na **[!UICONTROL Exibição em lista]**, uma coluna **[!UICONTROL Publicado]** indica quais ativos foram publicados ou não.
+No **[!UICONTROL Exibição de cartão]**, um pequeno ícone de globo aparece logo abaixo do nome de um ativo e à esquerda de sua data e hora para indicar que ele foi publicado. Na **[!UICONTROL Exibição em lista]**, uma coluna **[!UICONTROL Publicado]** indica quais ativos foram publicados ou não.
 
 Se você usa o Experience Manager como WCM, use esse método de publicação para adicionar os ativos 3D do Dynamic Media diretamente na página da Web.
 
@@ -265,28 +265,28 @@ Consulte também [Publicar páginas](/help/sites-authoring/publishing-pages.md).
 
    ![3d-asset-quick-publish](/help/assets/assets-dm/3d-asset-quick-publish.png)
 
-1. Selecione **[!UICONTROL Fechar]** para sair da caixa de diálogo e retornar à página de detalhes do ativo.
+1. Selecionar **[!UICONTROL Fechar]** para sair da caixa de diálogo e retornar à página de detalhes do ativo.
 1. Na lista suspensa à esquerda do nome de arquivo do ativo 3D, selecione **[!UICONTROL Representações]**.
 
    ![3d-representação de ativos](/help/assets/assets-dm/3d-asset-renditions.png)
 
-1. Selecione **[!UICONTROL original]**. Quando um ativo 3D é publicado (ou &quot;ativado&quot;), o botão **[!UICONTROL URL]** aparece próximo ao canto inferior esquerdo da página se todas as seguintes condições de ativo 3D forem atendidas:
+1. Selecionar **[!UICONTROL original]**. Quando um ativo 3D é publicado (ou &quot;ativado&quot;), a variável **[!UICONTROL URL]** será exibido próximo ao canto inferior esquerdo da página se todas as seguintes condições de ativos 3D forem atendidas:
    * O ativo 3D é um formato compatível (GLB, OBJ, STL e USDZ).
-   * O ativo 3D foi assimilado no Sistema de Produção de Imagens da Dynamic Media (IPS).
+   * O ativo 3D foi assimilado no Sistema de produção de imagem da Dynamic Media (IPS).
    * O ativo 3D é publicado.
 
    ![3d-asset-url](/help/assets/assets-dm/3d-asset-url.png)
 
-1. Selecione **[!UICONTROL URL]** para exibir o URL de produção direta do ativo 3D que você pode copiar e usar nas páginas da Web.
+1. Selecionar **[!UICONTROL URL]** para que você possa exibir o URL de produção direta do ativo 3D, que pode ser copiado e usado nas páginas da Web.
 
 ### Métodos alternativos para publicar ativos 3D do Dynamic Media usando o visualizador Dimensional {#alternate-publish-methods}
 
-Use os dois métodos a seguir para publicar ativos 3D do Dynamic Media se você *not* usar o Experience Manager como seu WCM.
+Use os dois métodos a seguir para publicar ativos 3D do Dynamic Media se você *not* use o Experience Manager como o WCM.
 
-* **[!UICONTROL URL]**  - Use  **** URLs se estiver usando um sistema de gerenciamento de conteúdo da Web de terceiros e quiser vincular ativos Dynamic Media 3D às suas páginas da Web usando o Visualizador de dimensões.
+* **[!UICONTROL URL]** - Uso **[!UICONTROL URL]** se você estiver usando um sistema de gerenciamento de conteúdo da Web de terceiros e quiser vincular ativos 3D do Dynamic Media às suas páginas da Web usando o visualizador Dimensional.
 
-   Consulte [Vincular URLs ao seu aplicativo Web](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+   Consulte [Vincular URLs ao aplicativo da Web](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
-* **[!UICONTROL Incorporar]**  - Use  **** Incorporar quando quiser visualizar um ativo Dynamic Media 3D incorporado em uma página da Web usando o Visualizador de dimensões. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Incorporar]**.
+* **[!UICONTROL Incorporar]** - Uso **[!UICONTROL Incorporar]** quando quiser exibir um ativo 3D do Dynamic Media incorporado em uma página da Web usando o visualizador Dimensional. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na variável **[!UICONTROL Incorporar]** caixa de diálogo.
 
-   Consulte [Incorporar o Vídeo do Dynamic Media, o Visualizador de Imagem ou o Visualizador de Dimensões em uma página da Web](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
+   Consulte [Incorporar o vídeo do Dynamic Media, o visualizador de imagens ou o visualizador dimensional em uma página da Web](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

@@ -10,9 +10,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: bbced918e67c64c0bf2f5a3de8cbcb9063fff669
+source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2216'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ Consulte também [Testar o serviço de teste seguro](/help/assets/dm-publish-set
 
 1. No modo Autor do Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global.
 1. No painel à esquerda, selecione o ícone Ferramentas e vá para **[!UICONTROL Ativos]** > **[!UICONTROL Configuração geral do Dynamic Media]**.
-1. Na página Servidor , defina seu **[!UICONTROL Nome do servidor publicado]** e **[!UICONTROL Nome do servidor de origem]** e, em seguida, use as cinco guias para definir configurações de publicação padrão.
+1. Na página Servidor , defina seu **[!UICONTROL Nome do servidor publicado]** e **[!UICONTROL Nome do servidor de origem]** e, em seguida, use as cinco guias para definir as configurações de publicação padrão.
 
    * [Servidor](#server-general-setting)
    * [Carregar no aplicativo](#upload-to-application)
@@ -46,6 +46,9 @@ Consulte também [Testar o serviço de teste seguro](/help/assets/dm-publish-set
    * [Photoshop](#photoshop-tab) guia
    * [PDF](#pdf-tab) guia
    * [Illustrator](#illustrator-tab) guia
+
+   ![Página Configurações gerais do Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
+   *página Configurações gerais do Dynamic Media , com o **[!UICONTROL Edição de imagem]**selecionada.*<br><br>
 
 1. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 

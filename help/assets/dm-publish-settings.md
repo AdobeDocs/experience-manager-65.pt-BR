@@ -10,9 +10,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: e3067a17153864babaf0243c4c3f6cf9cd8d30bc
+source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
 workflow-type: tm+mt
-source-wordcount: '3098'
+source-wordcount: '3114'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,6 @@ ht-degree: 2%
 >* Você é um administrador de sistema do Experience Manager com privilégios de administrador.
 
 
-
 As configurações da página Configuração de publicação do Dynamic Media determinam como os ativos são entregues por padrão dos servidores do Adobe Dynamic Media para sites ou aplicativos da Web. Se nenhuma configuração for especificada, o servidor Adobe Dynamic Media fornece um ativo de acordo com uma configuração padrão em uma página Publicar configuração . Por exemplo, uma solicitação para fornecer uma imagem que não inclua um atributo de resolução gera uma imagem com a configuração de Resolução de objeto padrão na página Servidor de imagem.
 
 Os administradores podem alterar as configurações padrão nas páginas Servidor de imagem, Renderizador de imagem e Vinheta para estabelecer configurações padrão para o fornecimento de ativos dos servidores.
@@ -42,7 +41,7 @@ Os administradores podem alterar as configurações padrão nas páginas Servido
 
 1. No modo Autor do Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global.
 1. No painel à esquerda, selecione o ícone Ferramentas e vá para **[!UICONTROL Ativos]** > **[!UICONTROL Configuração de publicação do Dynamic Media]**.
-1. Na página Servidor de imagens , defina o Servidor de imagens - contexto de publicação e use as cinco guias para definir as configurações de publicação padrão.
+1. Na página Servidor de imagens, defina o Servidor de imagens - contexto de publicação e use as cinco guias para definir as configurações de publicação padrão.
 
    * [Servidor de imagem](#image-server)
    * [Segurança](#security-tab) guia
@@ -50,6 +49,9 @@ Os administradores podem alterar as configurações padrão nas páginas Servido
    * [Atributos da solicitação](#request-attributes-tab) guia
    * [Atributos de miniatura comuns](#common-thumbnail-attributes-tab) guia
    * [Atributos do gerenciamento de cores](#color-management-attributes-tab) guia
+
+   ![Página Configuração de publicação do Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
+   *página Configuração de publicação do Dynamic Media, com o **[!UICONTROL Atributos da solicitação]**selecionada.*<br><br>
 
 1. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 
