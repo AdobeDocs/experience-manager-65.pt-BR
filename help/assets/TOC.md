@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
-source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
+source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '641'
 ht-degree: 20%
 
 ---
@@ -43,6 +43,8 @@ ht-degree: 20%
    + [Configurar o Dynamic Media - Modo híbrido](config-dynamic.md)
    + [Configurar a configuração geral do Dynamic Media](dm-general-settings.md)
    + [Configurar a publicação do Dynamic Media](dm-publish-settings.md)
+   + [Opção A](option-a-config-dms7.md)
+   + [Opção B](option-b-config-dms7.md)
    + [Solução de problemas do Dynamic Media - Modo Scene7](troubleshoot-dms7.md)
    + [Acessibilidade no Dynamic Media](accessibility-dm.md)
    + [Migrar do Dynamic Media - Modo híbrido para o Dynamic Media - Modo S7](migrate-from-hybrid-to-dms7.md)
@@ -162,7 +164,7 @@ ht-degree: 20%
    + [Insights de ativos](asset-insights.md)
    + [Ativar insights de ativos por meio do DTM](use-dtm-for-asset-insights.md)
    + [Configurar insights de ativos](configure-asset-insights.md)
-   + [Fazer check-in e check-out de ativos](check-out-and-submit-assets.md)
+   + [Check in and check out assets](check-out-and-submit-assets.md)
    + [Aplicar serviços de nuvem de tradução a pastas](transition-cloud-services.md)
    + [Usar o rastreador de páginas e o código incorporado em páginas da Web](use-page-tracker.md)
    + [Gerenciar ativos compostos](managing-linked-subassets.md)
