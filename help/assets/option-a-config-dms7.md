@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
+source-git-commit: b6000516b88342d6abf8072623cfece43e2ba19d
 workflow-type: tm+mt
-source-wordcount: '11558'
+source-wordcount: '11571'
 ht-degree: 3%
 
 ---
@@ -170,11 +170,11 @@ Se você quiser personalizar ainda mais sua configuração, poderá, opcionalmen
 Se você quiser personalizar ainda mais a configuração e configuração do Dynamic Media - modo Scene7 ou otimizar seu desempenho, é possível concluir um ou mais dos seguintes procedimentos *opcional* tarefas:
 
 * [(Opcional) Configurar o Dynamic Media - Modo Scene7 para upload de ativos com mais de 2 GB](#optional-config-dms7-assets-larger-than-2gb)
-
-* [(Opcional) Configuração e configuração do Dynamic Media - Configurações do modo Scene7](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
-
+* [(Opcional) Configurar a configuração de publicação do Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
+   * [(Opcional) Testar ativos antes de torná-los públicos](#test-assets-before-making-public)
+* [(Opcional) Definir as configurações gerais do Dynamic Media](#configuring-application-general-settings)
+* [(Opcional) Tarefas adicionais de configuração](#additional-configuration-tasks)
 * [(Opcional) Ajustar o desempenho do Dynamic Media - Modo Scene7](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
-
 * [(Opcional) Filtrar ativos para replicação](#optional-filtering-assets-for-replication)
 
 ### (Opcional) Configurar o Dynamic Media - Modo Scene7 para upload de ativos com mais de 2 GB {#optional-config-dms7-assets-larger-than-2gb}
@@ -643,7 +643,7 @@ Ao carregar arquivos de imagem do Illustrator (AI), você pode formatá-los de v
 >[!NOTE]
 Por padrão, o sistema mostra 15 execuções ao selecionar **[!UICONTROL Representações]** e 15 predefinições do visualizador ao selecionar **[!UICONTROL Visualizadores]** na exibição detalhada do ativo. Você pode aumentar esse limite. Consulte [Aumente o número de predefinições de imagens exibidas](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Aumentar o número de predefinições do visualizador exibidas](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-### (Opcional) Tarefas adicionais de configuração
+### (Opcional) Tarefas adicionais de configuração {#additional-configuration-tasks}
 
 As tarefas opcionais de configuração e configuração incluem o seguinte:
 
