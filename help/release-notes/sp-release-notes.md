@@ -4,9 +4,9 @@ description: Notas de versão específicas do [!DNL Adobe Experience Manager] 6.
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 14339f6a34952c00351c6dee8537b5df6f6fbcd3
+source-git-commit: 0a35b26c5f790d67db55421b8f3e98e5ddb30528
 workflow-type: tm+mt
-source-wordcount: '4436'
+source-wordcount: '4430'
 ht-degree: 3%
 
 ---
@@ -30,13 +30,13 @@ Os principais recursos e aprimoramentos introduzidos no [!DNL Adobe Experience M
 
 * **Aprimorado [!DNL Content Fragment] Modelos e editor**: Agora você pode criar modelos complexos e personalizados para conteúdo estruturado usando [!DNL Content Fragment] modelos. As estruturas de conteúdo são modularizadas em elementos básicos que são modelados como subfragmentos. Os fragmentos de nível superior fazem referência a esses subfragmentos. Mais aprimoramentos de tipo de dados, como regras de validação avançadas, aumentam ainda mais a flexibilidade da modelagem de conteúdo com [!DNL Content Fragments]. O [!DNL Experience Manager] [!DNL Content Fragment] o editor oferece suporte a estruturas de fragmento aninhadas em uma sessão de editor comum, com melhorias como visualização de árvore de estrutura e navegação de navegação estrutural por guias por meio de hierarquias de fragmentos.
 
-* **API GraphQL para[!DNL Content Fragments]**: A nova API GraphQL é o método padrão para fornecer conteúdo estruturado no formato JSON. As consultas GraphQL permitem que os clientes solicitem apenas os itens de conteúdo relevantes para renderizar uma experiência. Essa seleção elimina a entrega excessiva de conteúdo (possibilidade com APIs REST HTTP) que requer análise de conteúdo no lado do cliente. Os esquemas GraphQL são derivados de [!DNL Content Fragment] e as respostas da API são feitas no formato JSON. Em [!DNL Experience Manager] como [!DNL Cloud Service], [As consultas GraphQL persistem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) e processar solicitações de GET amigáveis ao cache. Ainda não é possível em [!DNL Experience Manager] 6.5.10.0
+* **API GraphQL para[!DNL Content Fragments]**: A nova API GraphQL é o método padrão para fornecer conteúdo estruturado no formato JSON. As consultas GraphQL permitem que os clientes solicitem apenas os itens de conteúdo relevantes para renderizar uma experiência. Essa seleção elimina a entrega excessiva de conteúdo (possibilidade com APIs REST HTTP) que requer análise de conteúdo no lado do cliente. Os esquemas GraphQL são derivados de [!DNL Content Fragment] modelos e as respostas da API são feitas no formato JSON. Em [!DNL Experience Manager] como [!DNL Cloud Service], [As consultas GraphQL persistem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) e processar solicitações de GET amigáveis ao cache. Ainda não é possível em [!DNL Experience Manager] 6.5.10.0
 
 * **Gerenciamento de hierarquia e pré-visualização futura**: Os usuários agora têm uma interface para acessar as estruturas de conteúdo de seus [!DNL Experience Manager] inicializações, incluindo a capacidade de adicionar e remover páginas em um lançamento. Esse recurso melhora a flexibilidade do [!DNL Experience Manager] inicia para criar versões de conteúdo direcionadas para publicação futura. [Recurso de distorção de tempo](/help/sites-authoring/working-with-page-versions.md#timewarp) permite que os usuários visualizem inicializações como estados de conteúdo futuros.
 
 * **Ativos conectados**: [!DNL Experience Manager] estende a [!DNL Connected Assets] para a utilização de [!DNL Dynamic Media] imagens nos componentes principais aplicáveis. Consulte [usar o Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* **Opções de compartilhamento de link para baixar ativos ou representações**: Ao compartilhar ativos e coleções como link, os usuários podem escolher permitir o download dos ativos originais, suas execuções ou ambos usando o link compartilhado. Além disso, os usuários que baixam os ativos compartilhados com eles por meio de um link obtêm a opção de baixar apenas os ativos originais, somente as execuções ou ambos.
+* **Opções de compartilhamento de link para baixar ativos ou representações**: Ao compartilhar ativos e coleções como link, os usuários podem escolher permitir o download dos ativos originais, suas execuções ou ambos usando o link compartilhado. Além disso, os usuários que baixam os ativos compartilhados com eles por meio de um link obtêm a opção de baixar apenas os ativos originais, apenas as execuções ou ambos.
 
 * **Limitar subativos gerados**: Os administradores podem limitar o número de subativos que [!DNL Experience Manager] O gera para ativos compostos, como arquivos PDF, PowerPoint, InDesign e Keynote. Consulte [Gerenciar ativos compostos](/help/assets/managing-linked-subassets.md#generate-subassets).
 
@@ -92,7 +92,7 @@ Esta é a lista de correções fornecidas em [!DNL Experience Manager] Versão 6
 * Ao promover um lançamento, as alterações no lançamento promovido são implantadas duas vezes nas outras inicializações. Se um usuário promover a inicialização dupla de roll-out, o conteúdo duplicado será refletido na página de origem (NPR-36893).
 * [!DNL Experience Manager] adiciona uma borda cinza a algumas imagens PNG com transparência se você adicionar as imagens a uma página usando o Componente principal de imagem ou se redimensionar usando o componente Imagem de base (NPR-36879).
 * [!DNL Experience Manager Sites] A interface do usuário do administrador com um alto número de modelos resulta em navegação lenta (NPR-36870).
-* A atualização para o service pack 9 impede a criação de alguns componentes. Esse problema não permite [!DNL Sites] usuários para criar novas páginas (NPR-36857).
+* As páginas da Web não são renderizadas quando seus links são modificados por pacotes de filtros de servlet personalizados (NPR-36857).
 * O `ContextHubImpl` cria um `ResourceResolver` isso não está fechado. Ele leva a mensagens de aviso sobre o longo prazo `ResourceResolver` e o serviço retorna resultados inesperados às vezes (NPR-36853).
 * Ao sincronizar uma única live copy a partir das propriedades da página do blueprint, todas as outras live copies também serão sincronizadas (NPR-36829, NPR-36522).
 * Quando apenas o tipo XLS MIME é usado, a função de upload de arquivo não funciona conforme o esperado (NPR-36785).
