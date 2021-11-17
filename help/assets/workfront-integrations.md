@@ -3,9 +3,9 @@ title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]
 description: Introdução à integração entre [!DNL Assets] e [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: 468a8d96153c67232524eea6f180c9ceb364d60a
+source-git-commit: 8d39e1c86e5185a181400f10b7822a57c9d3aeae
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '873'
 ht-degree: 2%
 
 ---
@@ -13,25 +13,25 @@ ht-degree: 2%
 
 # [!DNL Adobe Experience Manager Assets] integração com [!DNL Adobe Workfront] {#assets-integration-overview}
 
-[!DNL Adobe Workfront] é um aplicativo de gerenciamento de trabalho que ajuda você a gerenciar todo o ciclo de vida do trabalho em um único local. A integração entre [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] permite que as organizações melhorem a velocidade do conteúdo e o tempo de comercialização, conectando intrinsecamente o trabalho e o gerenciamento de ativos digitais. No contexto do gerenciamento de seu trabalho no Workfront, os usuários têm acesso aos documentos necessários e às imagens.
+[!DNL Adobe Workfront] é um aplicativo de gerenciamento de trabalho que ajuda você a gerenciar todo o ciclo de vida do trabalho em um único local. A integração entre [!DNL Workfront] e [!DNL Adobe Experience Manager Assets] permite que as organizações melhorem a velocidade do conteúdo e o tempo de comercialização, conectando intrinsecamente o trabalho e o gerenciamento de ativos digitais. No contexto do gerenciamento de seu trabalho no Workfront, os usuários têm acesso aos documentos e imagens necessários.
 
-O Adobe oferece dois conectores diferentes para integrar ambas as soluções. Os conectores permitem automação empresarial complexa, configuração e fluxos de trabalho extensíveis entre [!DNL Assets] e [!DNL Workfront]. Além disso, [!DNL Assets Essentials] está disponível como um complemento desse novo [!DNL Workfront] os clientes podem comprar separadamente. Para saber mais, consulte [[!DNL Workfront] and [!DNL Assets Essentials] integração](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/integration.html).
+O [!DNL Workfront for Experience Manager enhanced connector] permite processos de negócios aprimorados com fluxos de trabalho completos e fornece experiências personalizadas de cliente completo e armazenamento central. Para obter mais informações sobre os recursos da [!DNL enhanced connector], consulte [novidades da [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 [!DNL Workfront for Experience Manage enhanced connector] permite que sua organização:
 
-* Colabore facilmente. As equipes criativas podem se preocupar com uma coisa a menos. Agora, quando o trabalho terminar, eles poderão enviá-lo para a AEM Assets com o clique de um botão
-* Enriqueça ativos em todas as etapas. Colete novos dados em cada estágio do ciclo de vida do ativo. Da ideação à entrega, sua organização pode capturar as métricas principais para tomar decisões de negócios mais informadas sobre o desenvolvimento futuro de ativos.
-* Fazer referência a ativos existentes. Localize e reutilize facilmente os ativos existentes em produção e adicione-os a novos projetos como itens de referência.
-* Sincronize todos os seus metadados. Aprimore seus metadados, facilitando ao máximo a adição. Com o conector , os metadados são sincronizados bidirecionalmente entre o Workfront e o AEM Assets
-* Aproveitamento [!DNL Experience Manager Assets] recursos de gerenciamento digital. Acesso a todos os seus ativos digitais diretamente no seu favorito [!DNL Creative Cloud] aplicativos. Marcação e recorte inteligentes habilitados para IA, ferramentas de pesquisa, delivery dinâmico por meio de [!DNL Dynamic Media]e muito mais.
+* Crie pastas de Experience Manager vinculadas automaticamente no Workfront e organize as pastas com base em Portfolio, programas e projetos da Workfront.
+* Sincronize os metadados do projeto Workfront com as pastas de Experience Manager vinculadas.
+* Atualizações de metadados de Experience Manager com novas versões.
+* Defina os status do objeto Workfront com base nas condições configuráveis usando workflows do Experience Manager.
+* Publique ativos no ambiente de publicação do Experience Manager ou no Brand Portal.
 
-Consulte o suporte à plataforma e outros [pré-requisitos para o conector aprimorado](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+Consulte o suporte da plataforma e [pré-requisitos para o conector aprimorado](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
 >O Adobe requer implantação e configuração do [!DNL Adobe Workfront for Experience Manager enhanced connector] somente por parceiros certificados ou [!DNL Adobe Professional Services]. Se implantado e configurado sem um parceiro certificado ou [!DNL Adobe Professional Services], ele não é compatível com o Adobe.
 >
->O Adobe pode lançar atualizações para [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] que torna este conector redundante; se isso ocorrer, os clientes podem ser solicitados a fazer a transição do uso desse conector.
+>O Adobe pode lançar atualizações para [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] que tornam redundante este conector; se isso ocorrer, os clientes podem ser solicitados a fazer a transição do uso desse conector.
 
 ## Comparar diferentes integrações entre [!DNL Assets] e [!DNL Workfront] {#feature-parity-matrix}
 
