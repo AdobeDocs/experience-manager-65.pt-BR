@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
-source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
+source-git-commit: 468a8d96153c67232524eea6f180c9ceb364d60a
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '649'
 ht-degree: 20%
 
 ---
@@ -164,10 +164,14 @@ ht-degree: 20%
    + [Insights de ativos](asset-insights.md)
    + [Ativar insights de ativos por meio do DTM](use-dtm-for-asset-insights.md)
    + [Configurar insights de ativos](configure-asset-insights.md)
-   + [Check in and check out assets](check-out-and-submit-assets.md)
+   + [Fazer check-in e check-out de ativos](check-out-and-submit-assets.md)
    + [Aplicar serviços de nuvem de tradução a pastas](transition-cloud-services.md)
    + [Usar o rastreador de páginas e o código incorporado em páginas da Web](use-page-tracker.md)
    + [Gerenciar ativos compostos](managing-linked-subassets.md)
    + [Ativos relacionados](related-assets.md)
    + [Compartilhamento de pasta privada](private-folder.md)
    + [Representações de vídeo](video-renditions.md)
++ Integração com outras soluções {#integrations}
+   + [Integrações com [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Instalar [!DNL enhanced connector for [!DNL Workfront]]](workfront-connector-install.md)
+   + [Configurar [!DNL enhanced connector for [!DNL Workfront]]](workfront-connector-configure.md)
