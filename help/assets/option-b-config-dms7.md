@@ -7,29 +7,23 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
-mini-toc-levels: 3
+mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
+source-git-commit: 680c0e00a739c5e880286cb4adf33f4ea5f6a318
 workflow-type: tm+mt
-source-wordcount: '6438'
+source-wordcount: '6058'
 ht-degree: 3%
 
 ---
 
-# RICK: OPÇÃO B - Configurar Dynamic Media - Modo Scene7{#configuring-dynamic-media-scene-mode}
-
->[!NOTE]
->
->RICK: OPÇÃO B - OS DOIS NOVOS TÓPICOS QUE ESCREVI AINDA EXISTEM. NO ENTANTO, NESTE TÓPICO QUE VOCÊ ESTÁ LENDO AGORA, NAS RESPECTIVAS ÁREAS ONDE JÁ FALEI SOBRE AS OPTIONS NAS CONFIGURAÇÕES GERAIS E PUBLICAR CONFIGURAÇÕES, ADICIONEI LINKS AOS DOIS NOVOS TÓPICOS.
+# Configurar o Dynamic Media - Modo Scene7{#configuring-dynamic-media-scene-mode}
 
 Se você usar o Adobe Experience Manager configurado para ambientes diferentes, como desenvolvimento, armazenamento temporário e produção, configure os Dynamic Media Cloud Services para cada um desses ambientes.
 
 ## Diagrama de arquitetura do Dynamic Media - Modo Scene7 {#architecture-diagram-of-dynamic-media-scene-mode}
-
-**RICK: MANTER COMO ESTÁ**
 
 O diagrama de arquitetura a seguir descreve como o modo Dynamic Media - Scene7 funciona.
 
@@ -56,23 +50,19 @@ Com a nova arquitetura, o Experience Manager é responsável pelos ativos e sinc
 
 ## Ativar o Dynamic Media no modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-**RICK: MANTER COMO ESTÁ**
-
 [As mídias dinâmicas são desativadas por padrão. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Para aproveitar os recursos do Dynamic Media, você deve habilitá-lo.
 
 >[!WARNING]
 >
 >Dynamic Media - O modo Scene7 é para o *Somente instância Experience Manager Author*. Dessa forma, você deve configurar `runmode=dynamicmedia_scene7` na instância Experience Manager Author, *not* a instância Experience Manager Publish .
 
-Para ativar o Dynamic Media, você deve iniciar o Experience Manager usando o `dynamicmedia_scene7` execute o modo a partir da linha de comando inserindo o seguinte em uma janela de terminal (por exemplo, a porta usada é 4502):
+Para ativar o Dynamic Media, inicie o Experience Manager usando `dynamicmedia_scene7` execute o modo a partir da linha de comando inserindo o seguinte em uma janela de terminal (por exemplo, a porta usada é 4502):
 
 ```shell
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
 ## (Opcional) Migrar predefinições e configurações do Dynamic Media de 6.3 para 6.5 Zero Down time {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
-
-**RICK: MANTER COMO ESTÁ**
 
 A atualização do Experience Manager Dynamic Media de 6.3 para 6.4 ou 6.5 agora inclui a capacidade de zero implantações de tempo de inatividade. Para migrar todas as suas predefinições e configurações do `/etc` para `/conf` no CRXDE Lite, execute o seguinte comando curl.
 
@@ -90,8 +80,6 @@ Para migrar qualquer predefinição e configuração do visualizador personaliza
 
 ## Instale o feature pack 18912 para migração de ativos em massa {#installing-feature-pack-for-bulk-asset-migration}
 
-**RICK: MANTER COMO ESTÁ**
-
 A instalação do feature pack 18912 é *opcional*.
 
 O Feature pack 18912 permite assimilar ativos em massa por meio de FTP ou migrar ativos do Dynamic Media - Modo híbrido ou Dynamic Media Classic para o Dynamic Media - modo Scene7 no Experience Manager. Está disponível em [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
@@ -99,8 +87,6 @@ O Feature pack 18912 permite assimilar ativos em massa por meio de FTP ou migrar
 Consulte [Instale o feature pack 18912 para migração de ativos em massa](/help/assets/bulk-ingest-migrate.md) para obter mais informações.
 
 ## Criar uma configuração do Dynamic Media no Cloud Services {#configuring-dynamic-media-cloud-services}
-
-**RICK: MANTER COMO ESTÁ**
 
 **Antes de configurar o Dynamic Media** - Depois de receber seu email de provisionamento com credenciais do Dynamic Media, você deve abrir a [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta para alterar a senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
 
@@ -144,7 +130,7 @@ Para marcar uma pasta selecionada para sincronização com o Dynamic Media, sele
          * **[!UICONTROL Desabilitado para subpastas]** - Excluir de sincronização tudo nesta subárvore para o Dynamic Media.
 
    >[!NOTE]
-   Não há suporte para o controle de versão no DMS7. Além disso, a ativação atrasada se aplica somente se **[!UICONTROL Publicar ativos]** na página Editar configuração do Dynamic Media estiver definida como **[!UICONTROL Na ativação]** e, em seguida, somente até a primeira vez que o ativo for ativado.
+   Não há suporte para o controle de versão no modo Dynamic Media - Scene7. Além disso, a ativação atrasada se aplica somente se **[!UICONTROL Publicar ativos]** na página Editar configuração do Dynamic Media estiver definida como **[!UICONTROL Na ativação]** e, em seguida, somente até a primeira vez que o ativo for ativado.
    Depois que um ativo é ativado, todas as atualizações são publicadas imediatamente no S7 Delivery.
 
 1. Selecione **[!UICONTROL Salvar]**.
@@ -165,8 +151,6 @@ Se você quiser personalizar ainda mais sua configuração, poderá, opcionalmen
 
 ## (Opcional) Definir configurações avançadas no modo Dynamic Media - Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-**RICK: MANTER COMO ESTÁ**
-
 Se você quiser personalizar ainda mais a configuração e configuração do Dynamic Media - modo Scene7 ou otimizar seu desempenho, é possível concluir um ou mais dos seguintes procedimentos *opcional* tarefas:
 
 * [(Opcional) Configurar o Dynamic Media - Modo Scene7 para upload de ativos com mais de 2 GB](#optional-config-dms7-assets-larger-than-2gb)
@@ -178,8 +162,6 @@ Se você quiser personalizar ainda mais a configuração e configuração do Dyn
 * [(Opcional) Filtrar ativos para replicação](#optional-filtering-assets-for-replication)
 
 ### (Opcional) Configurar o Dynamic Media - Modo Scene7 para upload de ativos com mais de 2 GB {#optional-config-dms7-assets-larger-than-2gb}
-
-**RICK: MANTER COMO ESTÁ**
 
 No modo Dynamic Media - Scene7, o tamanho padrão do arquivo de upload de ativos é de 2 GB ou menos. No entanto, opcionalmente, é possível configurar o upload de ativos com mais de 2 GB e até 15 GB.
 
@@ -267,49 +249,39 @@ Você pode inserir um valor de até 15 GB (`2013265920` bytes). Nesse caso, os a
 
 ### (Opcional) Configuração e configuração do Dynamic Media - Configurações do modo Scene7 {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
-**RICK: LINKS PARA O NOVO TÓPICO DE CONFIGURAÇÃO DE PUBLICAÇÃO**
-
 Quando você está no modo de execução `dynamicmedia_scene7`, use a interface do usuário do Dynamic Media Classic para alterar as configurações do Dynamic Media.
 
 As tarefas de configuração e configuração incluem:
 
-* [Configuração de publicação para o servidor de imagem](#publishing-setup-for-image-server)
-* [Definir configurações gerais do aplicativo](#configuring-application-general-settings)
+* [Configurar a publicação do Dynamic Media para o servidor de imagem](/help/assets/dm-publish-settings.md)
+* [Definir as configurações gerais do Dynamic Media](/help/assets/dm-general-settings.md)
 * [Configurar o gerenciamento de cores](#configuring-color-management)
-* [Editar tipos MIME para formatos compatíveis](#editing-mime-types-for-supported-formats) **RICK: CONTINUAR?**
-* [Adicionar tipos MIME para formatos não suportados](#adding-mime-types-for-unsupported-formats) **RICK: CONTINUAR?**
-* [Criar predefinições de conjunto de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) **RICK: CONTINUAR?**
+* [Editar tipos MIME para formatos compatíveis](#editing-mime-types-for-supported-formats)
+* [Adicionar tipos MIME para formatos não suportados](#adding-mime-types-for-unsupported-formats)
+* [Criar predefinições de conjunto de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
-#### Configuração de publicação para o servidor de imagem {#publishing-setup-for-image-server}
+<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server} 
 
-As configurações de Configuração de publicação determinam como os ativos são entregues por padrão no Dynamic Media. Se nenhuma configuração for especificada, o Dynamic Media fornece um ativo de acordo com as configurações padrão definidas na Configuração de publicação. Por exemplo, uma solicitação para fornecer uma imagem que não inclua um atributo de resolução gera uma imagem com a configuração Resolução de objeto padrão .
+The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
 
-A página Servidor de imagens estabelece as configurações padrão para entrega de imagens.
+See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dm-publish-settings.md).
 
-**RICK: LINK PARA O NOVO TÓPICO DE CONFIGURAÇÃO DE PUBLICAÇÃO** Consulte [Configuração de publicação do Dynamic Media](/help/assets/dm-publish-settings.md).
+#### Configure Dynamic Media General Settings {#configuring-application-general-settings}
 
+To configure the default color properties so color correction is enabled when images are requested, see [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
 
-* **[!UICONTROL Atributos de compatibilidade]** - **RICK: AINDA É NECESSÁRIO?** Essa configuração permite que os parágrafos anteriores e posteriores em camadas de texto sejam tratados como na versão 3.6 para compatibilidade com versões anteriores. **RICK: AINDA É NECESSÁRIO?**
-* **[!UICONTROL Suporte à localização]** - **RICK: AINDA É NECESSÁRIO?** Essas configurações permitem gerenciar vários atributos de localidade. Ela também permite especificar uma sequência de mapa de localidade para que você possa definir quais idiomas deseja suportar para as várias dicas de ferramentas em Visualizadores. Para obter mais informações sobre como configurar **[Suporte à localização]**, consulte [Considerações ao configurar a localização de ativos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets). **RICK: AINDA É NECESSÁRIO?**
-
-#### Definir configurações gerais do aplicativo {#configuring-application-general-settings}
-
-**RICK: LINK PARA O NOVO TÓPICO DE CONFIGURAÇÕES GERAIS** Consulte [Definir as configurações gerais do Dynamic Media](/help/assets/dm-general-settings.md).
+See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md). -->
 
 #### Configurar o gerenciamento de cores {#configuring-color-management}
 
-**RICK: LINKS PARA O NOVO TÓPICO DE CONFIGURAÇÕES GERAIS**
+O gerenciamento de cores do Dynamic Media permite corrigir a cor dos ativos. Com a correção de cores, os ativos assimilados retêm seu espaço de cores (RGB, CMYK, Cinza) e o perfil de cores incorporado. Quando você solicita uma representação dinâmica, a cor da imagem é corrigida no espaço de cores de destino usando CMYK, RGB ou saída Cinza.
 
-O gerenciamento de cores do Dynamic Media permite corrigir a cor dos ativos. Com a correção de cores, os ativos assimilados retêm seu espaço de cores (RGB, CMYK, Cinza) e o perfil de cores incorporado. Quando você solicita uma representação dinâmica, a cor da imagem é corrigida no espaço de cores de destino usando CMYK, RGB ou saída Cinza. Consulte [Configurar predefinições de imagens](/help/assets/managing-image-presets.md).
+Consulte [Configurar predefinições de imagens](/help/assets/managing-image-presets.md).
 
 >[!NOTE]
 Por padrão, o sistema mostra 15 execuções ao selecionar **[!UICONTROL Representações]** e 15 predefinições do visualizador ao selecionar **[!UICONTROL Visualizadores]** na exibição Detalhes do ativo. Você pode aumentar esse limite. Consulte [Aumente o número de predefinições de imagens exibidas](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Aumentar o número de predefinições do visualizador exibidas](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-Para configurar as propriedades de cores padrão de modo que a correção de cores seja ativada quando as imagens forem solicitadas, **RICK: LINKS PARA O NOVO TÓPICO DE CONFIGURAÇÕES GERAIS** see [Definir as configurações gerais do Dynamic Media](/help/assets/dm-general-settings.md).
-
 #### Editar tipos MIME para formatos compatíveis {#editing-mime-types-for-supported-formats}
-
-**RICK: MANTER COMO ESTÁ**
 
 Você pode definir quais tipos de ativos são processados pelo Dynamic Media e personalizar parâmetros avançados de processamento de ativos. Por exemplo, você pode especificar parâmetros de processamento de ativos para fazer o seguinte:
 
@@ -344,8 +316,6 @@ Consulte [Upload de ativos](/help/assets/manage-assets.md#uploading-assets).
 1. No canto superior esquerdo da página, selecione **[!UICONTROL CRXDE Lite]** para voltar ao Experience Manager.
 
 #### Adição de tipos MIME para formatos não suportados {#adding-mime-types-for-unsupported-formats}
-
-**RICK: MANTER COMO ESTÁ**
 
 Você pode adicionar tipos MIME personalizados para formatos não compatíveis no Experience Manager Assets. Certifique-se de que qualquer novo nó adicionado no CRXDE Lite não seja excluído pelo Experience Manager movendo o tipo MIME antes de `image_`. Além disso, verifique se o valor ativado está definido como **[!UICONTROL false]**.
 
@@ -399,8 +369,6 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis n
 
 #### Criar predefinições de conjunto de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
-**RICK: MANTER COMO ESTÁ?**
-
 Use predefinições de conjuntos em lotes para automatizar a criação de conjuntos de imagens ou conjuntos de rotação enquanto os ativos são carregados no Dynamic Media.
 
 Primeiro, defina a convenção de nomenclatura de como os ativos são agrupados em um conjunto. Em seguida, crie uma predefinição de conjunto de lotes que seja um conjunto de instruções autocontido e com nome exclusivo. Ele deve definir como construir o conjunto usando imagens que correspondam às convenções de nomenclatura definidas na receita predefinida.
@@ -418,8 +386,6 @@ Como alternativa, você pode usar **[!UICONTROL Exibir código]** sem campos de 
 Dois elementos estão disponíveis para definição, Correspondência e Nome de base. Esses campos permitem definir todos os elementos de uma convenção de nomenclatura e identificar a parte da convenção usada para nomear o conjunto no qual eles estão contidos. A convenção de nomenclatura individual de uma empresa geralmente usa uma ou mais linhas de definição para cada um desses elementos. Você pode usar quantas linhas para sua definição exclusiva e agrupá-las em elementos distintos, como para Imagem principal, Elemento de cor, Elemento de exibição alternativo e Elemento de amostra.
 
 **Para configurar a nomenclatura padrão:**
-
-**RICK: MANTER COMO ESTÁ?**
 
 1. Abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta.
 
@@ -456,8 +422,6 @@ Você pode usar o método de campo de formulário para definir uma predefiniçã
 
 **Para criar uma predefinição de conjunto de lotes:**
 
-**RICK: MANTER COMO ESTÁ?**
-
 1. Abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta.
 
    Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte ao cliente do Adobe.
@@ -490,8 +454,6 @@ Você pode usar o método de campo de formulário para definir uma predefiniçã
 
 ##### Criar uma predefinição de conjunto de lotes para a geração automática de um conjunto de rotação 2D
 
-**RICK: MANTER COMO ESTÁ??**
-
 Você pode usar o Tipo de Conjunto de Lotes **[!UICONTROL Conjunto de rotação de vários eixos]** para criar uma receita que automatize a geração de Conjuntos de rotação 2D. O agrupamento de imagens usa expressões regulares de Linha e Coluna para que os ativos de imagem sejam alinhados corretamente no local correspondente na matriz multidimensional. Não há um número mínimo ou máximo de linhas ou colunas que você deve ter em um conjunto de rotação de vários eixos.
 
 Por exemplo, suponha que você queira criar um conjunto de rotação de vários eixos chamado `spin-2dspin`. Você tem um conjunto de imagens de conjunto de rotação que contém três linhas, com 12 imagens por linha. As imagens são nomeadas da seguinte maneira:
@@ -515,8 +477,6 @@ O agrupamento para a parte do nome do ativo compartilhado do conjunto de rotaç�
 Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome da fórmula do Conjunto de rotação 2D que está listada em **[!UICONTROL Predefinições de conjunto de lote]** na caixa de diálogo **[!UICONTROL Opções de trabalho de upload]**.
 
 **Para criar uma predefinição de conjunto de lotes para a geração automática de um conjunto de rotação 2D:**
-
-**RICK: MANTER COMO ESTÁ?**
 
 1. Abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta.
 
@@ -575,8 +535,6 @@ Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome d
 
 ### (Opcional) Ajustar o desempenho do Dynamic Media - Modo Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-**RICK: MANTER COMO ESTÁ?**
-
 Para manter o Dynamic Media - modo Scene7 em execução sem problemas, o Adobe recomenda as seguintes dicas de ajuste de desempenho/escalabilidade de sincronização:
 
 * Atualização dos parâmetros de Trabalho predefinidos para processamento de diferentes formatos de arquivo.
@@ -585,8 +543,6 @@ Para manter o Dynamic Media - modo Scene7 em execução sem problemas, o Adobe r
 * Atualização das conexões máximas de upload para o servidor do Dynamic Media Classic.
 
 #### Atualizar os parâmetros de Trabalho predefinidos para o processamento de diferentes formatos de arquivo
-
-**RICK: MANTER COMO ESTÁ?**
 
 Você pode ajustar parâmetros de trabalho para processamento mais rápido ao carregar arquivos. Por exemplo, se você carregar arquivos PSD, mas não quiser processá-los como modelos, poderá definir a extração de camada como false (off). Nesse caso, o parâmetro de trabalho ajustado aparece da seguinte maneira: `process=None&createTemplate=false`.
 
@@ -612,8 +568,6 @@ Para atualizar qualquer um desses parâmetros, siga as etapas em [Ativar o supor
 
 #### Atualizar a fila de fluxo de trabalho transitório do Granite {#updating-the-granite-transient-workflow-queue}
 
-**RICK: MANTER COMO ESTÁ?**
-
 A fila Fluxo de trabalho de trânsito do Granite é usada para **[!UICONTROL Ativo de atualização DAM]** fluxo de trabalho. No Dynamic Media, é usado para assimilação e processamento de imagens.
 
 **Para atualizar a fila de fluxo de trabalho transitório do Granite:**
@@ -637,8 +591,6 @@ A fila Fluxo de trabalho de trânsito do Granite é usada para **[!UICONTROL Ati
 
 #### Atualizar a fila do fluxo de trabalho do Granite {#updating-the-granite-workflow-queue}
 
-**RICK: MANTER COMO ESTÁ??**
-
 A fila Fluxo de trabalho do Granite é usada para fluxos de trabalho não transitórios. No Dynamic Media, ele processava vídeo com a variável **[!UICONTROL Codificar vídeo no Dynamic Media]** fluxo de trabalho.
 
 **Para atualizar a fila do fluxo de trabalho do Granite:**
@@ -657,8 +609,6 @@ A fila Fluxo de trabalho do Granite é usada para fluxos de trabalho não transi
 1. Selecione **[!UICONTROL Salvar]**.
 
 #### Atualizar a conexão de upload do Dynamic Media Classic {#updating-the-scene-upload-connection}
-
-**RICK: MANTER COMO ESTÁ?**
 
 A configuração Scene7 Upload Connection sincroniza ativos do Experience Manager para servidores da Dynamic Media Classic.
 
@@ -679,8 +629,6 @@ A configuração Scene7 Upload Connection sincroniza ativos do Experience Manage
 
 ### (Opcional) Filtrar ativos para replicação {#optional-filtering-assets-for-replication}
 
-**RICK: MANTER COMO ESTÁ**
-
 Em implantações que não são da Dynamic Media, você replica *all* ativos (imagens e vídeo) do ambiente de criação do Experience Manager para o nó de publicação do Experience Manager. Esse workflow é necessário porque os servidores de Publicação do Experience Manager também entregam os ativos.
 
 No entanto, em implantações do Dynamic Media, como os ativos são fornecidos por meio do Cloud Service, não há necessidade de replicar esses mesmos ativos para nós de publicação do Experience Manager. Esse workflow de &quot;publicação híbrida&quot; evita custos de armazenamento extras e tempos de processamento mais longos para replicar ativos. Outros conteúdos, como páginas do Site, continuam a ser veiculados a partir dos nós de publicação do Experience Manager.
@@ -688,8 +636,6 @@ No entanto, em implantações do Dynamic Media, como os ativos são fornecidos p
 Os filtros fornecem uma maneira de *exclude* ativos de serem replicados para o nó de publicação do Experience Manager.
 
 #### Usar filtros de ativos padrão para replicação {#using-default-asset-filters-for-replication}
-
-**RICK: MANTER COMO ESTÁ**
 
 Se você usa o Dynamic Media para geração de imagens, ou vídeo, ou ambos, você pode usar os filtros padrão que o Adobe fornece como estão. Os seguintes filtros estão ativos por padrão:
 
@@ -702,8 +648,6 @@ Se você usa o Dynamic Media para geração de imagens, ou vídeo, ou ambos, voc
 Os filtros se aplicam aos tipos MIME e não podem ser específicos de caminho.
 
 #### Personalizar filtros de ativos para replicação {#customizing-asset-filters-for-replication}
-
-**RICK: MANTER COMO ESTÁ**
 
 1. No Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
 1. Na árvore da pasta esquerda, navegue até `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` para analisar os filtros.

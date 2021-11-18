@@ -1,5 +1,5 @@
 ---
-title: Configurar a configuração geral do Dynamic Media
+title: Definir as configurações gerais do Dynamic Media
 description: Saiba como gerenciar configurações gerais no Dynamic Media. Você pode definir o nome do servidor de publicação e o nome do servidor de origem aqui e definir uma opção de substituição de imagem. Também há opções de upload padrão para mascarar as imagens com nitidez e opções de upload de como você deseja processar arquivos PostScript, Adobe Photoshop, PDF e Adobe Illustrator.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -7,37 +7,43 @@ topic-tags: administering
 content-type: reference
 feature: Image Profiles
 role: User, Admin
+mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
+source-git-commit: 26f521868d0b983a05579d0d4c1ef50684b721ee
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 5%
+source-wordcount: '2454'
+ht-degree: 4%
 
 ---
 
 
-# Configurar a configuração geral do Dynamic Media
+# Definir as configurações gerais do Dynamic Media
 
->[!IMPORTANT]
->
->A Configuração geral do Dynamic Media só estará disponível se:
->
->* Você está executando o Dynamic Media no modo Scene7.
->* Você tem um *existente* **[!UICONTROL Configuração do Dynamic Media]** (em **[!UICONTROL Cloud Services]**) no Adobe Experience Manager 6.5 ou no Experience Manager as a Cloud Service.
->* Você é um administrador de sistema do Experience Manager com privilégios de administrador.
+Configuração **[!UICONTROL Configurações gerais do Dynamic Media]** está disponível apenas se:
 
+* Você está executando o Dynamic Media no modo Scene7. Consulte [Ativar o Dynamic Media no modo Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)
+* Você tem um *existente* **[!UICONTROL Configuração do Dynamic Media]** (em **[!UICONTROL Cloud Services]**) no Adobe Experience Manager 6.5 ou no Experience Manager as a Cloud Service.
+* Você é um administrador de sistema do Experience Manager com privilégios de administrador.
+
+As Configurações gerais do Dynamic Media são destinadas ao uso por desenvolvedores e programadores de sites experientes. O Adobe Dynamic Media recomenda que os usuários que alteram essas configurações de publicação conheçam o Dynamic Media no Adobe Experience Manager e a tecnologia básica de geração de imagens.
 
 Na criação da conta, o Adobe Dynamic Media fornece automaticamente os servidores atribuídos para sua empresa. Esses servidores são usados para criar strings de URL para seu site e aplicativos. Essas chamadas de URL são específicas da sua conta do .
 
-Consulte também [Testar o serviço de teste seguro](/help/assets/dm-publish-settings.md#test-assets-before-making-public).
+A página Configuração de publicação do Dynamic Media estabelece as configurações padrão que determinam como os ativos são entregues dos servidores do Adobe Dynamic Media para sites ou aplicativos da Web. Se nenhuma configuração for especificada, o servidor Adobe Dynamic Media fornece um ativo de acordo com uma configuração padrão que foi configurada na página Configuração de publicação do Dynamic Media.
 
-**Para configurar a Configuração geral do Dynamic Media:**
+Consulte também [Configuração e configuração do Dynamic Media - Configurações do modo Scene7](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
+
+>[!NOTE]
+>
+>Atualização do Dynamic Media Classic para o Dynamic Media no Adobe Experience Manager? As páginas Configurações gerais e Configuração de publicação no Dynamic Media são preenchidas previamente com os valores obtidos de sua conta do Dynamic Media Classic. As exceções são todos os valores listados na variável **[!UICONTROL Opções de upload padrão]** da página Configurações gerais . Esses valores já estão no Experience Manager. Dessa forma, quaisquer alterações feitas sob **[!UICONTROL Opções de upload padrão]**, em todas as cinco guias, por meio da interface do usuário do Experience Manager são refletidas no Dynamic Media, não no Dynamic Media Classic. Todas as outras configurações e valores na página Configuração geral e Configuração de publicação são mantidos entre o Dynamic Media Classic e o Dynamic Media no Experience Manager.
+
+**Para configurar as Configurações gerais do Dynamic Media:**
 
 1. No modo Autor do Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global.
-1. No painel à esquerda, selecione o ícone Ferramentas e vá para **[!UICONTROL Ativos]** > **[!UICONTROL Configuração geral do Dynamic Media]**.
-1. Na página Servidor , defina seu **[!UICONTROL Nome do servidor publicado]** e **[!UICONTROL Nome do servidor de origem]** e, em seguida, use as cinco guias para definir as configurações de publicação padrão.
+1. No painel à esquerda, selecione o ícone Ferramentas e vá para **[!UICONTROL Ativos]** > **[!UICONTROL Configurações gerais do Dynamic Media]**.
+1. Na página Servidor , defina seu **[!UICONTROL Nome do servidor publicado]** e **[!UICONTROL Nome do servidor de origem]** e, em seguida, use as cinco guias para configurar as opções de upload padrão para Edição de imagem e para arquivos Postscript, Photoshop, PDF e Illustrator.
 
    * [Servidor](#server-general-setting)
    * [Carregar no aplicativo](#upload-to-application)
@@ -58,7 +64,7 @@ Na criação da conta, o Adobe Dynamic Media fornece automaticamente os servidor
 
 | Opção | Descrição |
 | --- | --- |
-| **[!UICONTROL Nome do servidor publicado]** | Obrigatório.<br>Este servidor é o servidor CDN (Content Deliver Network) ao vivo usado em todas as chamadas de URL geradas pelo sistema que são específicas da sua conta. Não altere o nome deste servidor a menos que seja instruído a fazê-lo pelo Suporte Técnico Adobe. O nome deve usar `https://` no caminho. |
+| **[!UICONTROL Nome do servidor publicado]** | Obrigatório.<br>O nome deve usar `https://` no caminho.<br>Este servidor é o servidor CDN (Content Deliver Network) ao vivo usado em todas as chamadas de URL geradas pelo sistema que são específicas da sua conta. Não altere o nome deste servidor a menos que seja instruído a fazê-lo pelo Suporte Técnico Adobe. |
 | **[!UICONTROL Nome do servidor de origem]** | Obrigatório.<br>Este servidor é usado somente para testes de controle de qualidade. Não altere o nome deste servidor a menos que seja instruído a fazê-lo pelo Suporte Técnico Adobe. |
 
 ## Carregar no aplicativo {#upload-to-application}
@@ -69,7 +75,7 @@ Na criação da conta, o Adobe Dynamic Media fornece automaticamente os servidor
 
    | Opção Substituir imagens | Descrição |
    | --- | --- |
-   | **[!UICONTROL Substituir na pasta atual, mesmo nome base/extensão]** | Padrão.<br>Essa opção é a regra mais rígida para substituição. Ela requer que você carregue a imagem de substituição na mesma pasta do original e que a imagem de substituição tenha a mesma extensão de nome de arquivo do original. Se esses requisitos não forem atendidos, uma duplicata será criada. |
+   | **[!UICONTROL Substituir na pasta atual, mesmo nome base/extensão]** | Padrão somente para novas contas do Dynamic Media.<br>Essa opção é a regra mais rígida para substituição. Ela requer que você carregue a imagem de substituição na mesma pasta do original e que a imagem de substituição tenha a mesma extensão de nome de arquivo do original. Se esses requisitos não forem atendidos, uma duplicata será criada. |
    | **[!UICONTROL Substituir na pasta atual, mesmo nome base independentemente da extensão]** | Requer que você carregue a imagem de substituição na mesma pasta do original, no entanto, a extensão do nome do arquivo pode ser diferente do original. Por exemplo, chair.tif substitui chair.jpg. |
    | **[!UICONTROL Substituir em qualquer pasta, mesmo nome/extensão do ativo base]** | Requer que a imagem de substituição tenha a mesma extensão de nome de arquivo que a imagem original (por exemplo, chair.jpg deve substituir chair.jpg, não chair.tif). No entanto, é possível fazer upload da imagem de substituição para uma pasta diferente da original. A imagem atualizada reside na nova pasta; o arquivo não pode mais ser encontrado em seu local original. |
    | **[!UICONTROL Substituir em qualquer pasta, mesmo nome de ativo base independentemente da extensão]** | Essa é a regra de substituição mais inclusiva. Você pode fazer upload de uma imagem de substituição para uma pasta diferente do original, fazer upload de um arquivo com uma extensão de nome de arquivo diferente e substituir o arquivo original. Se o arquivo original estiver em uma pasta diferente, a imagem de substituição residirá na nova pasta para a qual foi carregada. |

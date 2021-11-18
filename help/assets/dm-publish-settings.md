@@ -1,5 +1,5 @@
 ---
-title: Configurar a publicação do Dynamic Media
+title: Configurar a publicação do Dynamic Media para o servidor de imagem
 description: Saiba como configurar a Publicação no Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -7,43 +7,43 @@ topic-tags: administering
 content-type: reference
 feature: Image Profiles
 role: User, Admin
+mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
+source-git-commit: 26f521868d0b983a05579d0d4c1ef50684b721ee
 workflow-type: tm+mt
-source-wordcount: '3114'
-ht-degree: 2%
+source-wordcount: '3443'
+ht-degree: 3%
 
 ---
 
 
-# Configurar a publicação do Dynamic Media
+# Configurar a publicação do Dynamic Media para o servidor de imagem
 
->[!IMPORTANT]
->
->A Configuração de publicação do Dynamic Media só estará disponível se:
->
->* Você está executando o Dynamic Media no modo Scene7.
->* Você tem um *existente* **[!UICONTROL Configuração do Dynamic Media]** (em **[!UICONTROL Cloud Services]**) no Adobe Experience Manager 6.5 ou no Experience Manager as a Cloud Service.
->* Você é um administrador de sistema do Experience Manager com privilégios de administrador.
+Configurar a publicação do Dynamic Media está disponível somente se:
 
+* Você está executando o Dynamic Media no modo Scene7. Consulte [Ativar o Dynamic Media no modo Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)
+* Você tem um *existente* **[!UICONTROL Configuração do Dynamic Media]** (em **[!UICONTROL Cloud Services]**) no Adobe Experience Manager 6.5 ou no Experience Manager as a Cloud Service.
+* Você é um administrador de sistema do Experience Manager com privilégios de administrador.
 
-As configurações da página Configuração de publicação do Dynamic Media determinam como os ativos são entregues por padrão dos servidores do Adobe Dynamic Media para sites ou aplicativos da Web. Se nenhuma configuração for especificada, o servidor Adobe Dynamic Media fornece um ativo de acordo com uma configuração padrão em uma página Publicar configuração . Por exemplo, uma solicitação para fornecer uma imagem que não inclua um atributo de resolução gera uma imagem com a configuração de Resolução de objeto padrão na página Servidor de imagem.
+A Configuração de publicação do Dynamic Media deve ser usada por desenvolvedores e programadores de sites experientes. O Adobe Dynamic Media recomenda que os usuários que alteram essas configurações de publicação se familiarizem com o Adobe Dynamic Media, padrões e convenções de protocolo HTTP e tecnologia básica de geração de imagens.
 
-Os administradores podem alterar as configurações padrão nas páginas Servidor de imagem, Renderizador de imagem e Vinheta para estabelecer configurações padrão para o fornecimento de ativos dos servidores.
+A página Configuração de publicação do Dynamic Media estabelece as configurações padrão que determinam como os ativos são entregues dos servidores do Adobe Dynamic Media para sites ou aplicativos da Web. Se nenhuma configuração for especificada, o servidor Adobe Dynamic Media fornece um ativo de acordo com uma configuração padrão que foi configurada na página Configuração de publicação do Dynamic Media.
 
 >[!NOTE]
 >
->A Configuração de publicação do Dynamic Media deve ser usada por desenvolvedores e programadores de sites experientes. O Adobe Dynamic Media parte do princípio de que os usuários que alteram qualquer um desses padrões publicam configurações estão familiarizados com o Adobe Dynamic Media, padrões e convenções de protocolo HTTP e tecnologia básica de geração de imagens.
+>Atualização do Dynamic Media Classic para o Dynamic Media no Adobe Experience Manager? As páginas Configurações gerais e Configuração de publicação no Dynamic Media são preenchidas previamente com os valores obtidos de sua conta do Dynamic Media Classic. As exceções são todos os valores listados na variável **[!UICONTROL Opções de upload padrão]** da página Configurações gerais . Esses valores já estão no Experience Manager. Dessa forma, quaisquer alterações feitas sob **[!UICONTROL Opções de upload padrão]**, em todas as cinco guias, por meio da interface do usuário do Experience Manager são refletidas no Dynamic Media, não no Dynamic Media Classic. Todas as outras configurações e valores na página Configuração geral e Configuração de publicação são mantidos entre o Dynamic Media Classic e o Dynamic Media no Experience Manager.
 
-**Para configurar a Configuração de publicação do Dynamic Media:**
+Consulte também [Configuração e configuração do Dynamic Media - Configurações do modo Scene7](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
+
+**Para configurar o Servidor de imagem de configuração do Dynamic Media Publish:**
 
 1. No modo Autor do Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global.
 1. No painel à esquerda, selecione o ícone Ferramentas e vá para **[!UICONTROL Ativos]** > **[!UICONTROL Configuração de publicação do Dynamic Media]**.
 1. Na página Servidor de imagens, defina o Servidor de imagens - contexto de publicação e use as cinco guias para definir as configurações de publicação padrão.
 
-   * [Servidor de imagem](#image-server)
+   * [Servidor de imagens](#image-server)
    * [Segurança](#security-tab) guia
    * [Gerenciamento de catálogo](#catalog-management-tab) guia
    * [Atributos da solicitação](#request-attributes-tab) guia
@@ -55,14 +55,14 @@ Os administradores podem alterar as configurações padrão nas páginas Servido
 
 1. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 
-## Servidor de imagem {#image-server}
+## Servidor de imagens {#image-server}
 
 A página Servidor de imagens estabelece as configurações padrão para o fornecimento de imagens de servidores de imagens. As configurações estão disponíveis em cinco categorias
 
 | Contexto de publicação | Descrição |
 | --- | --- |
 | Serviço de imagem | Especifica o contexto das configurações de publicação. |
-| Servidor de imagens de teste | Especifica o contexto para testar as configurações de publicação.<br>Consulte [Testar ativos antes de torná-los públicos](#test-assets-before-making-public). |
+| Servidor de imagens de teste | Especifica o contexto para testar as configurações de publicação.<br>Somente para novas contas do Dynamic Media, o padrão **[!UICONTROL Endereço do cliente]** estiver definido como `127.0.0.1` automaticamente.<br>Consulte [Testar ativos antes de torná-los públicos](#test-assets-before-making-public). |
 
 ### Guia Segurança {#security-tab}
 
@@ -74,27 +74,31 @@ A página Servidor de imagens estabelece as configurações padrão para o forne
 
 Consulte também [RuleSetFile](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-rulesetfile.html) no Guia de referência de visualizadores do Dynamic Media.
 
+>[!NOTE]
+>
+>Se sua conta do Dynamic Media Classic já tiver uma **[!UICONTROL Caminho do arquivo de definição do conjunto de regras]** selecionado (conforme definido em **[!UICONTROL Configuração]** > **[!UICONTROL Aplicativo]** > **[!UICONTROL Configuração de publicação]**, sob **[!UICONTROL Gerenciamento de catálogo]** ), sua conta do Dynamic Media no Experience Manager busca o arquivo do Dynamic Media Classic. O arquivo é então armazenado e disponibilizado neste campo, ao abrir o **[!UICONTROL Configuração de publicação do Dynamic Media]** pela primeira vez.
+
 ### Guia Atributos da solicitação {#request-attributes-tab}
 
 Essas configurações pertencem à aparência padrão das imagens.
 
 | Configuração | Descrição |
 | --- | --- |
-| **[!UICONTROL Limite de tamanho da imagem de resposta]** | Obrigatório.<br>Especifica a largura e a altura máximas da imagem de resposta que são retornadas ao cliente. O servidor retornará um erro se uma solicitação causar uma imagem de resposta cuja largura, altura ou ambos forem maiores que essa configuração.<br>Consulte também [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Limite de tamanho da imagem de resposta]** | Obrigatório.<br>Somente para novas contas do Dynamic Media, o limite de tamanho padrão é automaticamente definido como Largura: `3000` e Altura: `3000` para ambos **[!UICONTROL Serviço de imagem]** e **[!UICONTROL Testar o fornecimento de imagem]**.<br>Especifica a largura e a altura máximas da imagem de resposta que são retornadas ao cliente. O servidor retornará um erro se uma solicitação causar uma imagem de resposta cuja largura, altura ou ambos forem maiores que essa configuração.<br>Consulte também [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) no Guia de referência de visualizadores do Dynamic Media. |
 | **[!UICONTROL Modo de solicitação de ofuscação]** | Ative se desejar que a codificação base64 seja aplicada a solicitações válidas.<br>Consulte também [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) no Guia de referência de visualizadores do Dynamic Media. |
 | **[!UICONTROL Modo de bloqueio de solicitação]** | Ative se desejar que um simples bloqueio de hash seja incluído em solicitações.<br>Consulte também [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html) no Guia de referência de visualizadores do Dynamic Media. |
 | **[!UICONTROL Atributos de solicitação padrão]** |  |
 | **[!UICONTROL Sufixo do arquivo de imagem padrão]** | Obrigatório.<br>Extensão padrão do arquivo de dados que é anexada aos valores dos campos Caminho e Máscara do catálogo se o caminho não incluir um sufixo de arquivo.<br>Consulte também [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) no Guia de referência de visualizadores do Dynamic Media. |
 | **[!UICONTROL Nome da face da fonte padrão]** | Especifica qual fonte é usada se nenhuma fonte for fornecida por uma solicitação de camada de texto. Se especificado, deve ser um valor de nome de fonte válido no mapa de fonte deste catálogo de imagem ou no mapa de fontes do catálogo padrão.<br>Consulte também [DefaultFont](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html) no Guia de referência de visualizadores do Dynamic Media. |
-| **[!UICONTROL Imagem padrão]** | Fornece uma imagem padrão a ser retornada em resposta a uma solicitação na qual a imagem solicitada não é encontrada.<br>Consulte também [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Imagem padrão]** | Fornece uma imagem padrão a ser retornada em resposta a uma solicitação na qual a imagem solicitada não é encontrada.<br>Consulte também [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) no Guia de referência de visualizadores do Dynamic Media.<br>**OBSERVAÇÃO**: Se sua conta do Dynamic Media Classic já tiver uma **[!UICONTROL Imagem padrão]** selecionado (conforme definido em **[!UICONTROL Configuração]** > **[!UICONTROL Aplicativo]** > **[!UICONTROL Configuração de publicação]**, sob **[!UICONTROL Atributos de solicitação padrão]** ), sua conta do Dynamic Media no Experience Manager busca o arquivo do Dynamic Media Classic. O arquivo é então armazenado e disponibilizado neste campo quando você abre o **[!UICONTROL Configuração de publicação do Dynamic Media]** pela primeira vez. |
 | **[!UICONTROL Modo de imagem padrão]** | Quando a caixa de controle deslizante estiver ativada (controle deslizante à direita), a variável **[!UICONTROL Imagem padrão]** substitui cada camada ausente na imagem de origem pela imagem padrão e retorna o composto como de costume. Quando a caixa de controle deslizante está desativada (controle deslizante à esquerda), a imagem padrão substitui toda a imagem composta, mesmo que a imagem ausente seja apenas uma das várias camadas.<br>Consulte também [DefaultImageMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultimagemode.html) no Guia de referência de visualizadores do Dynamic Media. |
-| **[!UICONTROL Tamanho de exibição padrão]** | Obrigatório.<br>O servidor restringe as imagens de resposta a não serem maiores que essa largura e altura, se a solicitação não especificar o tamanho de exibição explicitamente usando `wid=`, `hei=`ou `scl=`.<br>Consulte também [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Tamanho de exibição padrão]** | Obrigatório.<br>Somente para novas contas do Dynamic Media, o tamanho de exibição padrão é automaticamente definido como Largura: `1280` e Altura: `1280` para ambos **[!UICONTROL Serviço de imagem]** e **[!UICONTROL Testar o fornecimento de imagem]**.<br>O servidor restringe as imagens de resposta a não serem maiores que essa largura e altura, se a solicitação não especificar o tamanho de exibição explicitamente usando `wid=`, `hei=`ou `scl=`.<br>Consulte também [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html) no Guia de referência de visualizadores do Dynamic Media. |
 | **[!UICONTROL Tamanho padrão da miniatura]** | Obrigatório.<br>Usado em vez do atributo **[!UICONTROL Tamanho de exibição padrão]** para solicitações de miniatura (`req=tmb`). O servidor restringe as imagens de resposta para não serem maiores que essa largura e altura, se houver uma solicitação em miniatura (`req=tmb`) não especifica o tamanho explicitamente usando `wid=`, `hei=`ou `scl=`.<br>Consulte também [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html) no Guia de referência de visualizadores do Dynamic Media. |
 | **[!UICONTROL Cor de fundo padrão]** | Especifica o valor RGB usado para preencher qualquer área de uma imagem de resposta que não contenha dados de imagem reais.<br>Consulte também [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html) no Guia de referência de visualizadores do Dynamic Media. |
 | **[!UICONTROL Atributos de codificação de JPEG]** |  |
-| **[!UICONTROL Qualidade]** | Especifica os atributos padrão para imagens JPEG reply. O **[!UICONTROL Qualidade]** é definido no intervalo de 1 - 100.<br>Consulte também [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Qualidade]** | <br>Especifica os atributos padrão para imagens JPEG reply.<br>Somente para novas contas do Dynamic Media, a variável **[!UICONTROL Qualidade]** o valor padrão é configurado automaticamente como `80` para ambos **[!UICONTROL Serviço de imagem]** e **[!UICONTROL Testar o fornecimento de imagem]**.<br>Esse campo é definido no intervalo de 1 - 100.<br>Consulte também [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html) no Guia de referência de visualizadores do Dynamic Media. |
 | **[!UICONTROL Diminuição da resolução cromática]** | Ative ou desative a redução cromaticamente da amostragem que é empregada por codificadores JPEG. |
-| **[!UICONTROL Modo de reamostragem padrão]** | Especifica a reamostragem e os atributos de interpolação padrão a serem usados para dimensionar dados de imagem. Use quando `resMode` não é especificado em uma solicitação.<br>Consulte também [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Modo de reamostragem padrão]** | Especifica a reamostragem e os atributos de interpolação padrão a serem usados para dimensionar dados de imagem. Use quando `resMode` não é especificado em uma solicitação.<br>Somente para novas contas do Dynamic Media, o modo de reamostragem padrão é automaticamente definido como `Sharp2` para ambos **[!UICONTROL Serviço de imagem]** e **[!UICONTROL Testar o fornecimento de imagem]**.<br>Consulte também [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html) no Guia de referência de visualizadores do Dynamic Media. |
 
 ### Guia Atributos de miniatura comuns {#common-thumbnail-attributes-tab}
 
@@ -102,7 +106,7 @@ Essas configurações pertencem à aparência padrão e ao alinhamento de imagen
 
 | Configuração | Descrição |
 | --- | --- |
-| **[!UICONTROL Cor de fundo padrão para miniatura]** | Especifica o valor de RGB usado para preencher a área de uma imagem em miniatura de saída que não contém dados de imagem reais. Usado somente para solicitações de miniatura (`req=tmb`) e quando **[!UICONTROL Tipo de miniatura padrão]** está definida como **[!UICONTROL Ajustar]** ou **[!UICONTROL Textura]**.<br>Consulte também [ThumbBkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Cor de fundo padrão da miniatura]** | Especifica o valor de RGB usado para preencher a área de uma imagem em miniatura de saída que não contém dados de imagem reais. Usado somente para solicitações de miniatura (`req=tmb`) e quando **[!UICONTROL Tipo de miniatura padrão]** está definida como **[!UICONTROL Ajustar]** ou **[!UICONTROL Textura]**.<br>Consulte também [ThumbBkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor.html) no Guia de referência de visualizadores do Dynamic Media. |
 | **[!UICONTROL Alinhamento horizontal]** | Especifica o alinhamento horizontal da imagem em miniatura no retângulo de imagem de resposta especificado por `wid=` e `hei=` valores.<br>Usado somente para solicitações de miniatura (`req=tmb`) e quando **[!UICONTROL Tipo de miniatura padrão]** está definida como **[!UICONTROL Ajustar]**.<br>Há três alinhamentos horizontais para escolher: **[!UICONTROL Alinhamento central]**, **[!UICONTROL Alinhamento à esquerda]** e **[!UICONTROL Alinhamento à direita]**.<br>Consulte também [MiniaturaAlinhar](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbhorizalign.html) no Guia de referência de visualizadores do Dynamic Media. |
 | **[!UICONTROL Alinhamento vertical]** | Especifica o alinhamento vertical da imagem em miniatura no retângulo de imagem de resposta especificado por `wid=` e `hei=` valores. Usado somente para solicitações de miniatura (`req=tmb`) e quando **[!UICONTROL Tipo de miniatura padrão]** está definida como **[!UICONTROL Ajustar]**.<br>Há três alinhamentos verticais a serem escolhidos: **[!UICONTROL Alinhamento superior]**, **[!UICONTROL Alinhamento central]** e **[!UICONTROL Alinhamento inferior]**.<br>Consulte também [ThumbVertAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign.html) no Guia de referência de visualizadores do Dynamic Media. |
 | **[!UICONTROL Tempo de funcionamento padrão do cache]** | Fornece um intervalo de expiração padrão em horas, caso um registro de catálogo específico não contenha um valor de Expiração de catálogo válido. Defina como `-1` para marcar como nunca expirar. <br>Consulte também [Expiração](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) no Guia de referência de visualizadores do Dynamic Media. |
@@ -126,14 +130,14 @@ Consulte também [IccRenderIntent](https://experienceleague.adobe.com/docs/dynam
 
 >[!NOTE]
 >
->Em geral, é melhor usar o propósito de renderização padrão para a configuração de cor selecionada, que foi testada pelo Adobe para atender aos padrões do setor. Por exemplo, se você escolher uma configuração de cor para América do Norte ou Europa, o objetivo padrão de renderização da conversão de cores será **[!UICONTROL Colormétrica relativa]**. Se você escolher uma configuração de cor para o Japão, o objetivo padrão de renderização da conversão de cores será **[!UICONTROL Perceptivo]**.
+>Em geral, é melhor usar o propósito de renderização padrão para a configuração de cor selecionada, que foi testada pelo Adobe para atender aos padrões do setor. Por exemplo, se você escolher uma configuração de cor para América do Norte ou Europa, o objetivo padrão de renderização da conversão de cores será **[!UICONTROL Colorimétrica relativa]**. Se você escolher uma configuração de cor para o Japão, o objetivo padrão de renderização da conversão de cores será **[!UICONTROL Perceptivo]**.
 
 | Configuração | Características |
 | --- | --- |
-| **[!UICONTROL Espaço de cores padrão CMYK]** | Especifica o nome do perfil de cores ICC a ser usado como um perfil de trabalho para dados CMYK. If **[!UICONTROL Nenhum especificado]** for escolhida, o gerenciamento de cores será desativado para esse catálogo de imagens quando as imagens de origem CMYK estiverem envolvidas. Todos os espaços de trabalho CMYK dependem do dispositivo, o que significa que eles são baseados em combinações reais de tinta e papel. Os Adobe dos espaços de trabalho CMYK são fornecidos com base em condições de impressão comercial padrão.<br> Consulte também [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html) no Guia de referência de visualizadores do Dynamic Media. |
-| **[!UICONTROL Espaço de cores padrão de escala de cinza]** | Especifica o nome do perfil de cores ICC a ser usado como um perfil de trabalho para dados em escala de cinza. If **[!UICONTROL Nenhum especificado]** for escolhido, o gerenciamento de cores será desativado para esse catálogo de imagens quando imagens de origem em escala cinza forem envolvidas.<br>Consulte também [IccProfileGray](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html) no Guia de referência de visualizadores do Dynamic Media. |
-| **[!UICONTROL RGB espaço de cores padrão]** | Especifica o nome do perfil de cores ICC a ser usado como um perfil de trabalho para dados de RGB. If **[!UICONTROL Nenhum especificado]** for escolhido, o gerenciamento de cores será desativado para esse catálogo de imagens quando as imagens de RGB forem envolvidas. Em geral, é melhor escolher **[!UICONTROL Adobe RGB]** ou **[!UICONTROL sRGB]**, em vez do perfil de um dispositivo específico (como um perfil de monitor). **[!UICONTROL sRGB]** O é recomendado ao preparar imagens para a Web ou dispositivos móveis, pois define o espaço de cores do monitor padrão usado para exibir imagens na Web. **[!UICONTROL sRGB]** O também é uma boa escolha para trabalhar com imagens de câmeras digitais de nível de consumidor, pois a maioria dessas câmeras usa o sRGB como espaço de cores padrão.<br>Consulte também [IccProfileRBG](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html) no Guia de referência de visualizadores do Dynamic Media. |
-| **[!UICONTROL Objetivo de renderização da conversão de cores]** | **[!UICONTROL Perceptivo]** - Tem como objetivo preservar a relação visual entre as cores para que seja percebida como natural para o olho humano, mesmo que os próprios valores de cor possam mudar. Essa intenção é adequada para imagens fotográficas com muitas cores fora do gamut. Essa configuração é o propósito de renderização padrão para o setor de impressão japonês. |
+| **[!UICONTROL Espaço de cor padrão CMYK]** | Especifica o nome do perfil de cores ICC a ser usado como um perfil de trabalho para dados CMYK. If **[!UICONTROL Nenhum especificado]** for escolhida, o gerenciamento de cores será desativado para esse catálogo de imagens quando as imagens de origem CMYK estiverem envolvidas. Todos os espaços de trabalho CMYK dependem do dispositivo, o que significa que eles são baseados em combinações reais de tinta e papel. Os Adobe dos espaços de trabalho CMYK são fornecidos com base em condições de impressão comercial padrão.<br> Consulte também [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Espaço de cor padrão de escala de cinza]** | Especifica o nome do perfil de cores ICC a ser usado como um perfil de trabalho para dados em escala de cinza. If **[!UICONTROL Nenhum especificado]** for escolhido, o gerenciamento de cores será desativado para esse catálogo de imagens quando imagens de origem em escala cinza forem envolvidas.<br>Consulte também [IccProfileGray](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Espaço de cor padrão RGB]** | Especifica o nome do perfil de cores ICC a ser usado como um perfil de trabalho para dados de RGB. If **[!UICONTROL Nenhum especificado]** for escolhido, o gerenciamento de cores será desativado para esse catálogo de imagens quando as imagens de RGB forem envolvidas. Em geral, é melhor escolher **[!UICONTROL Adobe RGB]** ou **[!UICONTROL sRGB]**, em vez do perfil de um dispositivo específico (como um perfil de monitor). **[!UICONTROL sRGB]** O é recomendado ao preparar imagens para a Web ou dispositivos móveis, pois define o espaço de cores do monitor padrão usado para exibir imagens na Web. **[!UICONTROL sRGB]** O também é uma boa escolha para trabalhar com imagens de câmeras digitais de nível de consumidor, pois a maioria dessas câmeras usa o sRGB como espaço de cores padrão.<br>Consulte também [IccProfileRBG](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html) no Guia de referência de visualizadores do Dynamic Media. |
+| **[!UICONTROL Tentativa de renderização da conversão de cor]** | **[!UICONTROL Perceptivo]** - Tem como objetivo preservar a relação visual entre as cores para que seja percebida como natural para o olho humano, mesmo que os próprios valores de cor possam mudar. Essa intenção é adequada para imagens fotográficas com muitas cores fora do gamut. Essa configuração é o propósito de renderização padrão para o setor de impressão japonês. |
 |  | **[!UICONTROL Colorimétrica relativa]** - Compara o realce extremo do espaço de cores de origem com o do espaço de cores de destino e alterna todas as cores de acordo. As cores fora do gamut são transferidas para a cor reprodutível mais próxima no espaço de cores de destino. Colorimétrica relativa preserva mais das cores originais em uma imagem do que Perceptual. Essa configuração é o propósito de renderização padrão para impressão na América do Norte e na Europa. |
 |  | **[!UICONTROL Saturação]** - Tenta produzir cores vivas em uma imagem, em detrimento da precisão das cores. Esse propósito de renderização é adequado para gráficos comerciais, como gráficos ou gráficos, em que cores saturadas brilhantes são mais importantes do que a relação exata entre cores. |
 |  | **[!UICONTROL Colorimétrica absoluta]** - Deixa inalteradas as cores que estão dentro da gama de destino. As cores fora do gamut são cortadas. Não é executado o dimensionamento de cores para o ponto branco de destino. Essa intenção tem como objetivo manter a precisão da cor em detrimento da preservação das relações entre cores e é adequada para a prova para simular a saída de um determinado dispositivo. Essa intenção é útil para visualizar como a cor do papel afeta as cores impressas. |
@@ -252,6 +256,3 @@ Execute os seguintes testes:
    Acesse sua rede de fora (como de seu computador doméstico ou por uma conexão 4G/5G) e verifique se a versão pública do site mostra todos os ativos publicados, mas nenhum do conteúdo não publicado.
 
    Confirme se a versão de armazenamento temporário não mostra nenhum ativo porque você está acessando o serviço de Teste Seguro a partir de um endereço IP não aprovado.
-
-
-
