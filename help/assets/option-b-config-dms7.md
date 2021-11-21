@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: b1f2a6b8fecd9ee98f345d1de8c26c6f42a44823
+source-git-commit: 3b5e65efc9aaedbc3385cc348ead80afecae2f06
 workflow-type: tm+mt
-source-wordcount: '6107'
+source-wordcount: '6063'
 ht-degree: 3%
 
 ---
@@ -101,7 +101,7 @@ Consulte [Instale o feature pack 18912 para migração de ativos em massa](/help
    Selecionar **[!UICONTROL Conectar-se ao Dynamic Media]**.
 
    >[!NOTE]
-   **RICK: MANTER COMO ESTÁ?** Depois de receber seu email de provisionamento com credenciais do Dynamic Media, abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta para alterar a senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
+   Depois de receber seu email de provisionamento com credenciais do Dynamic Media, abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta para alterar a senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
 
 1. Quando a conexão for bem-sucedida, defina o seguinte. São necessários títulos com um asterisco (*):
 
@@ -136,14 +136,13 @@ Para marcar uma pasta selecionada para sincronização com o Dynamic Media, sele
 1. Selecione **[!UICONTROL Salvar]**.
 1. Para visualizar com segurança o conteúdo do Dynamic Media antes de ele ser publicado, é necessário &quot;lista de permissões&quot; a instância do autor do Experience Manager para se conectar ao Dynamic Media:
 
-   * **RICK: LINK PARA NOVO TÓPICO DE CONFIGURAÇÃO DE PUBLICAÇÃO** Abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta. Suas credenciais e detalhes de logon foram fornecidos pelo Adobe no momento do provisionamento. Caso não tenha essas informações, entre em contato com o Suporte ao cliente do Adobe.
-
-   * Na barra de navegação próxima à parte superior direita da página, navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configuração de publicação]** > **[!UICONTROL Servidor de imagem]**.
-
-   * Na página Publicação do servidor de imagens, na lista suspensa Publicar contexto , selecione **[!UICONTROL Testar o fornecimento de imagem]**.
-   * Para o Filtro de endereço do cliente, selecione **[!UICONTROL Adicionar]**.
-   * Para ativar (ativar) o endereço, marque a caixa de seleção . Insira o endereço IP da instância Experience Manager Author (não o IP do Dispatcher).
-   * Selecione **[!UICONTROL Salvar]**.
+   * No modo Autor do Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global.
+   * No painel à esquerda, selecione o **[!UICONTROL Ferramentas]** ícone , em seguida, vá para **[!UICONTROL Ativos]** > **[!UICONTROL Configuração de publicação do Dynamic Media]**.
+   * Na página Servidor de imagem do Dynamic Media , no **[!UICONTROL Publicar contexto]** , selecione **[!UICONTROL Testar o fornecimento de imagem]**.
+   * Selecione o **[!UICONTROL Segurança]** guia .
+   * Para o **[!UICONTROL Endereço do cliente]**, selecione **[!UICONTROL Adicionar]**.
+   * Insira o endereço IP da instância Experience Manager Author (não o IP do Dispatcher).
+   * No canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 
 Agora você terminou com a configuração básica; você está pronto para usar o modo Dynamic Media - Scene7.
 
