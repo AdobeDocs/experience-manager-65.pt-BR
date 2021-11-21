@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: 680c0e00a739c5e880286cb4adf33f4ea5f6a318
+source-git-commit: b1f2a6b8fecd9ee98f345d1de8c26c6f42a44823
 workflow-type: tm+mt
-source-wordcount: '6058'
+source-wordcount: '6107'
 ht-degree: 3%
 
 ---
@@ -249,28 +249,26 @@ Você pode inserir um valor de até 15 GB (`2013265920` bytes). Nesse caso, os a
 
 ### (Opcional) Configuração e configuração do Dynamic Media - Configurações do modo Scene7 {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
-Quando você está no modo de execução `dynamicmedia_scene7`, use a interface do usuário do Dynamic Media Classic para alterar as configurações do Dynamic Media.
-
-As tarefas de configuração e configuração incluem:
+<!-- When you are in run mode `dynamicmedia_scene7`, use the Dynamic Media Classic user interface to change your Dynamic Media settings. -->
 
 * [Configurar a publicação do Dynamic Media para o servidor de imagem](/help/assets/dm-publish-settings.md)
 * [Definir as configurações gerais do Dynamic Media](/help/assets/dm-general-settings.md)
 * [Configurar o gerenciamento de cores](#configuring-color-management)
 * [Editar tipos MIME para formatos compatíveis](#editing-mime-types-for-supported-formats)
 * [Adicionar tipos MIME para formatos não suportados](#adding-mime-types-for-unsupported-formats)
-* [Criar predefinições de conjunto de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
+* [Criar predefinições de conjunto de lotes para gerar automaticamente Conjuntos de imagens e Conjuntos de rotação](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) (feito na interface do usuário do Dynamic Media Classic)
 
-<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server} 
+#### Configurar a publicação do Dynamic Media para o servidor de imagem {#publishing-setup-for-image-server}
 
-The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
+A página Configuração de publicação do Dynamic Media estabelece as configurações padrão que determinam como os ativos são entregues dos servidores do Adobe Dynamic Media para sites ou aplicativos da Web.
 
-See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dm-publish-settings.md).
+Consulte [Configurar a publicação do Dynamic Media para o servidor de imagem](/help/assets/dm-publish-settings.md).
 
-#### Configure Dynamic Media General Settings {#configuring-application-general-settings}
+#### Definir as configurações gerais do Dynamic Media {#configuring-application-general-settings}
 
-To configure the default color properties so color correction is enabled when images are requested, see [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
+Configure as propriedades de cores padrão para que a correção de cores seja ativada quando as imagens forem solicitadas.
 
-See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md). -->
+Consulte [Definir as configurações gerais do Dynamic Media](/help/assets/dm-general-settings.md).
 
 #### Configurar o gerenciamento de cores {#configuring-color-management}
 
