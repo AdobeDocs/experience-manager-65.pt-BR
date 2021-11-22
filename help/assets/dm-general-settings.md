@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 26f521868d0b983a05579d0d4c1ef50684b721ee
+source-git-commit: f76f02f97de477af80666ea76a499578c36fb09e
 workflow-type: tm+mt
-source-wordcount: '2454'
+source-wordcount: '2461'
 ht-degree: 4%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 4%
 
 Configuração **[!UICONTROL Configurações gerais do Dynamic Media]** está disponível apenas se:
 
-* Você está executando o Dynamic Media no modo Scene7. Consulte [Ativar o Dynamic Media no modo Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)
-* Você tem um *existente* **[!UICONTROL Configuração do Dynamic Media]** (em **[!UICONTROL Cloud Services]**) no Adobe Experience Manager 6.5 ou no Experience Manager as a Cloud Service.
+* Você está executando o Dynamic Media no modo Scene7. Consulte [Ativar o Dynamic Media no modo Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
+* Você tem um *existente* **[!UICONTROL Configuração do Dynamic Media]** (em **[!UICONTROL Cloud Services]**) no Adobe Experience Manager 6.5 ou superior.
 * Você é um administrador de sistema do Experience Manager com privilégios de administrador.
 
 As Configurações gerais do Dynamic Media são destinadas ao uso por desenvolvedores e programadores de sites experientes. O Adobe Dynamic Media recomenda que os usuários que alteram essas configurações de publicação conheçam o Dynamic Media no Adobe Experience Manager e a tecnologia básica de geração de imagens.
@@ -33,11 +33,11 @@ Na criação da conta, o Adobe Dynamic Media fornece automaticamente os servidor
 
 A página Configuração de publicação do Dynamic Media estabelece as configurações padrão que determinam como os ativos são entregues dos servidores do Adobe Dynamic Media para sites ou aplicativos da Web. Se nenhuma configuração for especificada, o servidor Adobe Dynamic Media fornece um ativo de acordo com uma configuração padrão que foi configurada na página Configuração de publicação do Dynamic Media.
 
-Consulte também [Configuração e configuração do Dynamic Media - Configurações do modo Scene7](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
+Consulte também [Opcional - Configuração e configuração do Dynamic Media - Configurações do modo Scene7](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) para tarefas de configuração mais opcionais.
 
 >[!NOTE]
 >
->Atualização do Dynamic Media Classic para o Dynamic Media no Adobe Experience Manager? As páginas Configurações gerais e Configuração de publicação no Dynamic Media são preenchidas previamente com os valores obtidos de sua conta do Dynamic Media Classic. As exceções são todos os valores listados na variável **[!UICONTROL Opções de upload padrão]** da página Configurações gerais . Esses valores já estão no Experience Manager. Dessa forma, quaisquer alterações feitas sob **[!UICONTROL Opções de upload padrão]**, em todas as cinco guias, por meio da interface do usuário do Experience Manager são refletidas no Dynamic Media, não no Dynamic Media Classic. Todas as outras configurações e valores na página Configuração geral e Configuração de publicação são mantidos entre o Dynamic Media Classic e o Dynamic Media no Experience Manager.
+>Atualização do Dynamic Media Classic para o Dynamic Media no Adobe Experience Manager? A página Configurações gerais e [Configuração de publicação](/help/assets/dm-publish-settings.md) no Dynamic Media são preenchidas previamente com os valores obtidos da sua conta do Dynamic Media Classic. As exceções são todos os valores listados na variável **[!UICONTROL Opções de upload padrão]** da página Configurações gerais . Esses valores já estão no Experience Manager. Dessa forma, quaisquer alterações feitas sob **[!UICONTROL Opções de upload padrão]**, em qualquer uma das cinco guias, por meio da interface do usuário do Experience Manager, são refletidas no Dynamic Media, não no Dynamic Media Classic. Todas as outras configurações e valores na página Configurações gerais e na [Configuração de publicação](/help/assets/dm-publish-settings.md) são mantidas entre o Dynamic Media Classic e o Dynamic Media no Experience Manager.
 
 **Para configurar as Configurações gerais do Dynamic Media:**
 
