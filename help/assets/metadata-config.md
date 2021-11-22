@@ -1,18 +1,18 @@
 ---
 title: Configuração e administração da funcionalidade de metadados.
-description: Configuração e administração da funcionalidade  [!DNL Experience Manager Assets] relacionada à adição e ao gerenciamento de metadados.
+description: Configuração e administração de [!DNL Experience Manager Assets] relacionada à adição e gerenciamento de metadados.
 contentOwner: AG
 role: User, Admin
-feature: Metadados
+feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
-source-git-commit: b36448449830aa8e19f6dc29ab7fb62608bb39dd
+source-git-commit: f854960dbb35cfb0f88d209a711f623099960edc
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 5%
+source-wordcount: '1977'
+ht-degree: 3%
 
 ---
 
-# Configuração e administração da funcionalidade de metadados em [!DNL Assets] {#config-metadata}
+# Configuração e administração da funcionalidade de metadados no [!DNL Assets] {#config-metadata}
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
@@ -28,20 +28,20 @@ Para obter detalhes, consulte [editar formulários de esquema de metadados](meta
 
 ## Registre um namespace personalizado em [!DNL Experience Manager] {#registering-a-custom-namespace-within-aem}
 
-Você pode adicionar seus próprios namespaces em [!DNL Experience Manager]. Assim como há namespaces predefinidos, como `cq`, `jcr` e `sling`, você pode ter um namespace para os metadados do repositório e o processamento XML.
+Você pode adicionar seus próprios namespaces no [!DNL Experience Manager]. Assim como há namespaces predefinidos, como `cq`, `jcr`e `sling`, você pode ter um namespace para os metadados do repositório e o processamento XML.
 
 1. Acesse a página de administração do tipo de nó `https://[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
 1. Para acessar a página de administração do namespace, clique em **[!UICONTROL Namespaces]** na parte superior da página.
-1. Para adicionar um namespace, clique em **[!UICONTROL New]** na parte inferior da página.
+1. Para adicionar um namespace, clique em **[!UICONTROL Novo]** na parte inferior da página.
 1. Especifique um namespace personalizado na convenção de namespace XML. Especifique a ID no formato de um URI e um prefixo associado para a ID. Clique em **[!UICONTROL Salvar]**.
 
 ## Configurar limites para atualização de metadados em massa {#bulk-metadata-update-limit}
 
-Para evitar uma situação semelhante a negação de serviço (DOS), [!DNL Enterprise Manager] limita o número de parâmetros suportados em uma solicitação do Sling. Ao atualizar metadados de muitos ativos de uma só vez, você pode atingir o limite e os metadados não são atualizados para mais ativos. O Enterprise Manager gera o seguinte aviso nos logs:
+Para evitar uma situação semelhante à negação de serviço (DOS), [!DNL Enterprise Manager] limita o número de parâmetros suportados em uma solicitação do Sling. Ao atualizar metadados de muitos ativos de uma só vez, você pode atingir o limite e os metadados não são atualizados para mais ativos. O Enterprise Manager gera o seguinte aviso nos logs:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Para alterar o limite, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]** e altere o valor de **[!UICONTROL Parâmetros de POST máximo]** em **[!UICONTROL Manipulação de parâmetro da solicitação do Apache]** configuração OSGi.
+Para alterar o limite, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]** e alterar o valor de **[!UICONTROL Parâmetros de POST máximo]** em **[!UICONTROL Manuseio de parâmetro da solicitação do Apache Sling]** Configuração do OSGi.
 
 ## Perfis de metadados {#metadata-profiles}
 
@@ -49,66 +49,66 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
 
 ### Adicionar um perfil de metadados {#adding-a-metadata-profile}
 
-1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de metadados]** e clique em **[!UICONTROL Criar]**.
-1. Insira um título para o perfil, por exemplo `Sample Metadata`, e clique em **[!UICONTROL Criar]**. O [!UICONTROL Editar formulário] para o perfil de metadados é exibido.
+1. Navegar para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Perfis de metadados]** e clique em **[!UICONTROL Criar]**.
+1. Insira um título para o perfil, por exemplo `Sample Metadata`e clique em **[!UICONTROL Criar]**. O [!UICONTROL Editar formulário] para o perfil de metadados é exibido.
 
    ![Editar um formulário de metadados](assets/metadata-edit-form.png)
 
-1. Clique em um componente e configure suas propriedades na guia **[!UICONTROL Settings]**. Por exemplo, clique no componente **[!UICONTROL Description]** e edite suas propriedades.
+1. Clique em um componente e configure suas propriedades no **[!UICONTROL Configurações]** guia . Por exemplo, clique no botão **[!UICONTROL Descrição]** e edite suas propriedades.
 
    ![Configuração de um componente no perfil de metadados](assets/metadata-profile-component-setting.png)
 
-   Edite as seguintes propriedades para o componente **[!UICONTROL Description]**:
+   Edite as seguintes propriedades para o **[!UICONTROL Descrição]** componente:
 
-   * **[!UICONTROL Rótulo]** do campo: O nome de exibição da propriedade de metadados. É somente para a referência do usuário.
+   * **[!UICONTROL Rótulo do campo]**: O nome de exibição da propriedade de metadados. É somente para a referência do usuário.
 
-   * **[!UICONTROL Mapear para propriedade]**: O valor dessa propriedade fornece o caminho relativo ou o nome para o nó do ativo, onde é salvo no repositório. O valor deve sempre começar com `./` porque indica que o caminho está no nó do ativo.
+   * **[!UICONTROL Mapear para propriedade]**: O valor dessa propriedade fornece o caminho relativo ou o nome para o nó do ativo, onde é salvo no repositório. O valor deve sempre começar com `./` porque indica que o caminho está sob o nó do ativo.
 
    ![Mapear para configuração de propriedade no perfil de metadados](assets/metadata-profile-setting-map-property.png)
 
-   O valor especificado para **[!UICONTROL Mapear para propriedade]** é armazenado como uma propriedade no nó de metadados do ativo. Por exemplo, se você especificar `./jcr:content/metadata/dc:desc` como o nome de **[!UICONTROL Mapear para a propriedade]**, [!DNL Assets] armazenará o valor `dc:desc` no nó de metadados do ativo. É recomendável mapear apenas um campo para uma determinada propriedade no esquema de metadados. Caso contrário, o campo adicionado mais recente mapeado para a propriedade será escolhido pelo sistema.
+   O valor especificado para **[!UICONTROL Mapear para propriedade]** é armazenado como uma propriedade no nó de metadados do ativo. Por exemplo, se você especificar `./jcr:content/metadata/dc:desc` como o nome de **[!UICONTROL Mapear para propriedade]**, [!DNL Assets] armazena o valor `dc:desc` no nó de metadados do ativo. O Adobe recomenda mapear apenas um campo para uma determinada propriedade no esquema de metadados. Caso contrário, o campo adicionado mais recente mapeado para a propriedade será escolhido pelo sistema.
 
-   * **[!UICONTROL Valor]** padrão: Use essa propriedade para adicionar um valor padrão para o componente de metadados. Por exemplo, se você especificar &quot;Minha descrição&quot;, esse valor será atribuído à propriedade `dc:desc` no nó de metadados do ativo.
+   * **[!UICONTROL Valor padrão]**: Use essa propriedade para adicionar um valor padrão para o componente de metadados. Por exemplo, se você especificar &quot;Minha descrição&quot;, esse valor será atribuído à propriedade `dc:desc` no nó de metadados do ativo.
 
    ![Definir a descrição padrão no perfil de metadados](assets/metadata-profile-setting-default-value.png)
 
    >[!NOTE]
    >
-   >Adicionar um valor padrão a uma nova propriedade de metadados (que ainda não existe no . `/jcr:content/metadata` (nó ) não exibe a propriedade e seu valor na página Propriedades do ativo por padrão. Para exibir a nova propriedade na página [!UICONTROL Properties] dos ativos, modifique o formulário de esquema correspondente.
+   >Adicionar um valor padrão a uma nova propriedade de metadados (que não existe em `/jcr:content/metadata` nó ) não exibe a propriedade e seu valor no [!UICONTROL Propriedades] por padrão. Para exibir a nova propriedade nos ativos [!UICONTROL Propriedades] modifique o formulário de esquema correspondente.
 
-1. (Opcional) Adicione mais componentes ao Formulário de edição na guia **[!UICONTROL Criar formulário]** e configure as propriedades na guia **[!UICONTROL Configurações]**. As seguintes propriedades estão disponíveis na guia **[!UICONTROL Criar formulário]**:
+1. (Opcional) Na seção **[!UICONTROL Criar formulário]** , adicione mais componentes a [!UICONTROL Editar formulário]e configure suas propriedades no **[!UICONTROL Configurações]** guia . As seguintes propriedades estão disponíveis na variável **[!UICONTROL Criar formulário]** guia :
 
 | Componente | Propriedades |
 | ----------------------------- | ----------------------------------------------------------------------- |
 | [!UICONTROL Título da seção] | Rótulo do campo, <br> Descrição |
-| [!UICONTROL Texto em linha única] | Rótulo do campo, <br> Mapear para propriedade, <br> Valor padrão |
+| [!UICONTROL Texto de linha única] | Rótulo do campo, <br> Mapear para propriedade, <br> Valor padrão |
 | [!UICONTROL Texto multivalor] | Rótulo do campo, <br> Mapear para propriedade, <br> Valor padrão |
 | [!UICONTROL Número] | Rótulo do campo, <br> Mapear para propriedade, <br> Valor padrão |
 | [!UICONTROL Data] | Rótulo do campo, <br> Mapear para propriedade, <br> Valor padrão |
 | [!UICONTROL Tags padrão] | Rótulo do campo, <br> Mapear para propriedade, <br> Valor padrão, <br> Descrição |
 
-1. Clique em **[!UICONTROL Concluído]**. O Perfil de metadados é adicionado à lista de perfis na página **[!UICONTROL Perfis de metadados]**.<br>
+1. Clique em **[!UICONTROL Concluído]**. O Perfil de metadados é adicionado à lista de perfis no **[!UICONTROL Perfis de metadados]** página.<br>
 
    ![Perfil de metadados adicionado na página Perfis de metadados](assets/MetadataProfiles-page.png)
 
 ### Copiar um perfil de metadados {#copying-a-metadata-profile}
 
-1. Na página **[!UICONTROL Metadata Profiles]** , selecione um perfil de metadados para fazer uma cópia dele.
+1. No **[!UICONTROL Perfis de metadados]** selecione um perfil de metadados para fazer uma cópia dele.
 
    ![Copiar um perfil de metadados](assets/metadata-profile-edit-copy-option.png)
 
 1. Clique em **[!UICONTROL Copiar]** na barra de ferramentas.
-1. Na caixa de diálogo **[!UICONTROL Copiar Perfil de Metadados]**, insira um título para a nova cópia do Perfil de Metadados.
+1. No **[!UICONTROL Copiar perfil de metadados]** , insira um título para a nova cópia do Perfil de metadados.
 1. Clique em **[!UICONTROL Copiar]**. A cópia do Perfil de metadados aparece na lista de perfis na página **[!UICONTROL Perfis de metadados]**.
 
    ![Uma cópia do perfil de metadados adicionada na página Perfis de metadados](assets/copy-metadata-profile.png)
 
 ### Excluir um perfil de metadados {#deleting-a-metadata-profile}
 
-1. Na página **[!UICONTROL Metadata Profiles]**, selecione um perfil a ser excluído.
+1. No **[!UICONTROL Perfis de metadados]** selecione um perfil a ser excluído.
 
 1. Clique em **[!UICONTROL Excluir perfis de metadados]** na barra de ferramentas.
-1. Na caixa de diálogo, clique em **[!UICONTROL Delete]** para confirmar a operação de exclusão. O perfil de metadados é excluído da lista.
+1. Na caixa de diálogo , clique em **[!UICONTROL Excluir]** para confirmar a operação de exclusão. O perfil de metadados é excluído da lista.
 
 <!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
 These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
@@ -138,9 +138,9 @@ To apply a metadata profile globally, follow these steps:
 
 Use o editor do Forms do Esquema de metadados da pasta para criar e editar esquemas de metadados para pastas.
 
-1. Na interface [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados da pasta]**.
-1. Na página [!UICONTROL Esquema de Metadados da Pasta Forms], clique em **[!UICONTROL Criar]**.
-1. Especifique um nome para o formulário e clique em **[!UICONTROL Criar]**. O novo formulário de esquema é listado na página [!UICONTROL Schema Forms].
+1. Em [!DNL Experience Manager] interface, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados da pasta]**.
+1. No [!UICONTROL Forms do esquema de metadados da pasta] página, clique em **[!UICONTROL Criar]**.
+1. Especifique um nome para o formulário e clique em **[!UICONTROL Criar]**. O novo formulário de esquema é listado na variável [!UICONTROL Schema Forms] página.
 
 ### Editar formulários de esquema de metadados de pastas {#edit-folder-metadata-schema-forms}
 
@@ -151,30 +151,30 @@ Use o editor do Forms do Esquema de metadados da pasta para criar e editar esque
 
 Você pode mapear/configurar esses itens de formulário em um campo dentro de um nó de metadados no repositório CRX. É possível adicionar novas guias ou itens de formulário ao formulário de esquema de metadados.
 
-1. Na página Schema Forms , selecione o formulário criado e selecione a opção **[!UICONTROL Edit]** na barra de ferramentas.
-1. Na página Editor de esquema de metadados da pasta , clique em `+` para adicionar uma guia ao formulário. Para renomear a guia , clique no nome padrão e especifique o novo nome em **[!UICONTROL Settings]**.
+1. Na página Schema Forms , selecione o formulário criado e selecione o **[!UICONTROL Editar]** na barra de ferramentas.
+1. Na página Editor de esquema de metadados da pasta , clique em `+` para adicionar uma guia ao formulário. Para renomear a guia , clique no nome padrão e especifique o novo nome em **[!UICONTROL Configurações]**.
 
    ![custom_tab](assets/custom_tab.png)
 
-   Para adicionar mais guias, clique em `+`. Clique em `X` em uma guia para excluí-la.
+   Para adicionar mais guias, clique em `+`. Para excluir, clique em `X` em uma guia .
 
-1. Na guia ativa , adicione um ou mais componentes da guia **[!UICONTROL Criar formulário]**.
+1. Na guia ativa , adicione um ou mais componentes do **[!UICONTROL Criar formulário]** guia .
 
    ![adicionar_componentes](assets/adding_components.png)
 
    Se você criar várias guias, clique em uma determinada guia para adicionar componentes.
 
-1. Para configurar um componente, selecione-o e modifique suas propriedades na guia **[!UICONTROL Settings]**.
+1. Para configurar um componente, selecione-o e modifique suas propriedades no **[!UICONTROL Configurações]** guia .
 
-   Se necessário, exclua um componente da guia **[!UICONTROL Settings]**.
+   Se necessário, exclua um componente do **[!UICONTROL Configurações]** guia .
 
    ![configure_properties](assets/configure_properties.png)
 
-1. Clique em **[!UICONTROL Salvar]** na barra de ferramentas para salvar as alterações.
+1. Para salvar as alterações, selecione **[!UICONTROL Salvar]** na barra de ferramentas.
 
 #### Componentes para criar formulários {#components-to-build-forms}
 
-A guia **[!UICONTROL Criar formulário]** lista os itens de formulário que você usa no formulário de esquema de metadados da pasta. A guia **[!UICONTROL Settings]** exibe os atributos para cada item selecionado na guia **[!UICONTROL Criar formulário]**. Esta é uma lista dos itens de formulário disponíveis na guia **[!UICONTROL Criar formulário]**:
+O **[!UICONTROL Criar formulário]** lista itens de formulário que você usa no formulário de esquema de metadados da pasta. O **[!UICONTROL Configurações]** A guia exibe os atributos para cada item selecionado na variável **[!UICONTROL Criar formulário]** guia . Esta é uma lista com os itens de formulário disponíveis no **[!UICONTROL Criar formulário]** guia :
 
 | Nome do componente | Descrição |
 |---|---|
@@ -189,21 +189,21 @@ A guia **[!UICONTROL Criar formulário]** lista os itens de formulário que voc�
 
 #### Edição de itens de formulário {#editing-form-items}
 
-Para editar as propriedades dos itens de formulário, clique no componente e edite todas ou um subconjunto das seguintes propriedades na guia **[!UICONTROL Settings]**.
+Para editar as propriedades dos itens de formulário, clique no componente e edite todas ou um subconjunto das seguintes propriedades na **[!UICONTROL Configurações]** guia .
 
-**[!UICONTROL Rótulo]** do campo: O nome da propriedade de metadados exibida na página de propriedades da pasta.
+**[!UICONTROL Rótulo do campo]**: O nome da propriedade de metadados exibida na página de propriedades da pasta.
 
 **[!UICONTROL Mapear para propriedade]**: Essa propriedade especifica o caminho relativo do nó da pasta no repositório CRX, onde é salva. Começa com &quot;**./**&quot;, que indica que o caminho está sob o nó da pasta.
 
 A seguir estão os valores válidos para essa propriedade:
 
-* `./jcr:content/metadata/dc:title`: Armazena o valor no nó de metadados da pasta como a propriedade  `dc:title`.
+* `./jcr:content/metadata/dc:title`: Armazena o valor no nó de metadados da pasta como a propriedade `dc:title`.
 
-* `./jcr:created`: Exibe a propriedade JCR no nó da pasta. Se você configurar essas propriedades no CRXDE, o Adobe recomenda marcá-las como Desativar edição, pois elas estão protegidas. Caso contrário, o erro &#39; `Asset(s) failed to modify`&#39; ocorre quando você salva as propriedades do ativo.
+* `./jcr:created`: Exibe a propriedade JCR no nó da pasta. Se você configurar essas propriedades no CRXDE, o Adobe recomenda marcá-las como Desativar edição, pois elas estão protegidas. Caso contrário, o erro &#39; `Asset(s) failed to modify`&#39; ocorre ao salvar as propriedades do ativo.
 
 Para garantir que o componente seja exibido corretamente no formulário de esquema de metadados, não inclua um espaço no caminho da propriedade.
 
-**[!UICONTROL Caminho]** JSON: Use-o para especificar o caminho do arquivo JSON, onde você especifica pares de valores chave para opções.
+**[!UICONTROL Caminho JSON]**: Use-o para especificar o caminho do arquivo JSON, onde você especifica pares de valores chave para opções.
 
 **[!UICONTROL Espaço reservado]**: Use essa propriedade para especificar o texto de espaço reservado relevante em relação à propriedade de metadados.
 
@@ -223,41 +223,41 @@ Para garantir que o componente seja exibido corretamente no formulário de esque
 
 Você pode atribuir um esquema de metadados de pasta a uma pasta na página Forms do Esquema de Metadados da Pasta ou ao criar uma pasta.
 
-Se um esquema de metadados for configurado para uma pasta, o caminho para o formulário de esquema será armazenado na propriedade `folderMetadataSchema` do nó da pasta em `./jcr:content`.
+Se um esquema de metadados for configurado para uma pasta, o caminho para o formulário de esquema será armazenado no `folderMetadataSchema` propriedade do nó da pasta em `./jcr:content`.
 
 #### Atribuir a um schema a partir da página Esquema de metadados da pasta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Na interface [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados da pasta]**.
+1. Em [!DNL Experience Manager] interface, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Esquemas de metadados da pasta]**.
 1. Na página Forms do Esquema de metadados da pasta , selecione o formulário de esquema que deseja aplicar a uma pasta.
-1. Na barra de ferramentas, clique em **[!UICONTROL Aplicar à(s) pasta(s)]**.
+1. Na barra de ferramentas, clique em **[!UICONTROL Aplicar às pastas]**.
 
 1. Selecione a pasta na qual aplicar o esquema e clique em **[!UICONTROL Aplicar]**. Se um esquema de metadados já estiver aplicado na pasta, uma mensagem de aviso informará que você está prestes a substituir o esquema de metadados existente. Clique em **[!UICONTROL Substituir]**.
 1. Abra as propriedades dos metadados da pasta na qual você aplicou o esquema de metadados.
 
    ![folder_properties](assets/folder_properties.png)
 
-   Para exibir os campos de metadados da pasta, clique na guia **[!UICONTROL Metadados da pasta]** .
+   Para exibir os campos de metadados da pasta, clique no botão **[!UICONTROL Metadados da pasta]** guia .
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
 #### Atribuir um schema ao criar uma pasta {#assign-a-schema-when-creating-a-folder}
 
-Você pode atribuir um esquema de metadados de pasta ao criar uma pasta. Se pelo menos um esquema de metadados de pasta existir no sistema, uma lista extra será exibida na caixa de diálogo **[!UICONTROL Criar pasta]**. Você pode selecionar o schema desejado. Por padrão, nenhum esquema é selecionado.
+Você pode atribuir um esquema de metadados de pasta ao criar uma pasta. Se pelo menos um esquema de metadados de pasta existir no sistema, uma lista extra será exibida no **[!UICONTROL Criar pasta]** caixa de diálogo. Você pode selecionar o schema desejado. Por padrão, nenhum esquema é selecionado.
 
-1. Na interface do usuário [!DNL Experience Manager Assets], clique em **[!UICONTROL Criar]** na barra de ferramentas.
+1. No [!DNL Experience Manager Assets] interface do usuário, clique em **[!UICONTROL Criar]** na barra de ferramentas.
 1. Especifique um título e nome para a pasta.
-1. Na lista Esquema de metadados da pasta, selecione o esquema desejado. Em seguida, clique em **[!UICONTROL Create]**.
+1. Na lista Esquema de metadados da pasta, selecione o esquema desejado. Em seguida, clique em **[!UICONTROL Criar]**.
 
    ![select_schema](assets/select_schema.png)
 
 1. Abra as propriedades dos metadados da pasta na qual você aplicou o esquema de metadados.
-1. Para exibir os campos de metadados da pasta, clique na guia **[!UICONTROL Metadados da pasta]** .
+1. Para exibir os campos de metadados da pasta, clique no botão **[!UICONTROL Metadados da pasta]** guia .
 
 ### Usar o esquema de metadados da pasta {#use-the-folder-metadata-schema}
 
-Abra as propriedades de uma pasta configurada com um esquema de metadados de pasta. Uma guia **[!UICONTROL Metadados da pasta]** é exibida na página [!UICONTROL Propriedades] da pasta. Para exibir o formulário de esquema de metadados da pasta, selecione essa guia.
+Abra as propriedades de uma pasta configurada com um esquema de metadados de pasta. A **[!UICONTROL Metadados da pasta]** é exibida na pasta [!UICONTROL Propriedades] página. Para exibir o formulário de esquema de metadados da pasta, selecione essa guia.
 
-Insira valores de metadados nos vários campos e clique em **[!UICONTROL Save]** para armazenar os valores. Os valores especificados são armazenados no nó folder no repositório CRX.
+Insira os valores de metadados nos vários campos e clique em **[!UICONTROL Salvar]** para armazenar os valores. Os valores especificados são armazenados no nó folder no repositório CRX.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
 
@@ -265,14 +265,14 @@ Insira valores de metadados nos vários campos e clique em **[!UICONTROL Save]**
 
 * Para importar metadados em namespaces personalizados, primeiro registre os namespaces.
 * O Seletor de propriedades exibe propriedades que são usadas em editores de esquema e formulários de pesquisa. O Seletor de propriedades não seleciona propriedades de metadados de um ativo.
-* Você pode ter perfis de metadados pré-existentes desde antes de atualizar para [!DNL Experience Manager] 6.5. Após a atualização, se você aplicar esse perfil na pasta [!UICONTROL Propriedades] na guia [!UICONTROL Perfis de metadados], os campos de formulário de metadados não serão exibidos. No entanto, se você aplicar um perfil de metadados recém-criado, os campos do formulário serão exibidos, mas não estarão disponíveis conforme esperado. Não há perda de funcionalidade, mas se você quiser ver os campos de formulário (indisponíveis), edite e salve os perfis de metadados existentes.
+* Você pode ter perfis de metadados pré-existentes desde antes de atualizar para o [!DNL Experience Manager] 6.5. Após a atualização, aplique esse perfil na pasta [!UICONTROL Propriedades] em [!UICONTROL Perfis de metadados] , os campos de formulário de metadados não são exibidos. No entanto, se você aplicar um perfil de metadados recém-criado, os campos do formulário serão exibidos, mas não estarão disponíveis conforme esperado. Não há perda de funcionalidade, mas se você quiser ver os campos de formulário (indisponíveis), edite e salve os perfis de metadados existentes.
 
 >[!MORELIKETHIS]
 >
->* [Conceitos e compreensão de metadados](metadata-concepts.md).
->* [Edite as propriedades de metadados de várias coleções](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html).
+>* [Conceitos e noções básicas sobre metadados](metadata-concepts.md).
+>* [Editar propriedades de metadados de várias coleções](manage-collections.md#editing-collection-metadata-in-bulk).
+>* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [Perfis para processar metadados, imagens e vídeos](processing-profiles.md).
->* [Práticas recomendadas para organizar ativos digitais para usar perfis](/help/assets/organize-assets.md) de processamento.
->* [XMP write-back](/help/assets/xmp-writeback.md).
+>* [Práticas recomendadas para organizar ativos digitais para usar perfis de processamento](/help/assets/organize-assets.md).
+>* [Writeback XMP](/help/assets/xmp-writeback.md).
 
