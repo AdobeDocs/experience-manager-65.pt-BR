@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 343b48a4ec5e7124aaa48b7550465982d61fa5ab
+source-git-commit: f5989e182ee0d9075251b582fa618af5efcb9f8a
 workflow-type: tm+mt
 source-wordcount: '3450'
 ht-degree: 3%
@@ -31,7 +31,7 @@ A Configuração de publicação do Dynamic Media deve ser usada por desenvolved
 
 A página Configuração de publicação do Dynamic Media estabelece as configurações padrão que determinam como os ativos são entregues dos servidores do Adobe Dynamic Media para sites ou aplicativos da Web. Se nenhuma configuração for especificada, o servidor Adobe Dynamic Media fornece um ativo de acordo com uma configuração padrão que foi configurada na página Configuração de publicação do Dynamic Media.
 
-Consulte também [Opcional - Configuração e configuração do Dynamic Media - Configurações do modo Scene7](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) para tarefas de configuração mais opcionais.
+Consulte também [Opcional - Configuração e configuração do Dynamic Media - Configurações do modo Scene7](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) para tarefas de configuração mais opcionais.
 
 >[!NOTE]
 >
