@@ -8,12 +8,10 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
-hide: true
-hidefromtoc: true
 exl-id: null
-source-git-commit: f5989e182ee0d9075251b582fa618af5efcb9f8a
+source-git-commit: b7762a44d7b572d784dda2220530b21f9c46e7ab
 workflow-type: tm+mt
-source-wordcount: '3450'
+source-wordcount: '3459'
 ht-degree: 3%
 
 ---
@@ -24,7 +22,7 @@ ht-degree: 3%
 Configurar a publicação do Dynamic Media está disponível somente se:
 
 * Você está executando o Dynamic Media no modo Scene7. Consulte [Ativar o Dynamic Media no modo Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* Você tem um *existente* **[!UICONTROL Configuração do Dynamic Media]** (em **[!UICONTROL Cloud Services]**) no Adobe Experience Manager 6.5.11 ou superior.
+* Você tem um *existente* **[!UICONTROL Configuração do Dynamic Media]** (em **[!UICONTROL Cloud Services]**) no Adobe Experience Manager 6.5.11 ou superior. Consulte [Criar uma configuração do Dynamic Media no Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * Você é um administrador de sistema do Experience Manager com privilégios de administrador.
 
 A Configuração de publicação do Dynamic Media deve ser usada por desenvolvedores e programadores de sites experientes. O Adobe Dynamic Media recomenda que os usuários que alteram essas configurações de publicação se familiarizem com o Adobe Dynamic Media, padrões e convenções de protocolo HTTP e tecnologia básica de geração de imagens.
