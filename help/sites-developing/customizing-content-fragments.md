@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: a2b1bd5462ae1837470e31cfeb87a95af1c69be5
+source-git-commit: e68f6203d7629cab16e59778ce64908f943d5b3f
 workflow-type: tm+mt
 source-wordcount: '2789'
 ht-degree: 1%
 
 ---
+
 
 # Personalização e extensão de fragmentos de conteúdo{#customizing-and-extending-content-fragments}
 
@@ -226,9 +227,9 @@ Os fragmentos de conteúdo podem ser integrados com:
    >
    >O fluxo de trabalho de tradução de AEM funciona com `/content`:
    >
-   >    * Como os modelos de fragmento de conteúdo residem em `/conf`, elas não são incluídas nessas traduções. Você pode [internacionalizar as strings da interface do usuário](/help/sites-developing/i18n-dev.md).
+   >* Como os modelos de fragmento de conteúdo residem em `/conf`, elas não são incluídas nessas traduções. Você pode [internacionalizar as strings da interface do usuário](/help/sites-developing/i18n-dev.md).
    >
-   >    * Os modelos são copiados para criar o fragmento, de modo que isso esteja implícito.
+   >* Os modelos são copiados para criar o fragmento, de modo que isso esteja implícito.
 
 
 * **Esquemas de metadados**
