@@ -3,17 +3,13 @@ title: Personalização e extensão de fragmentos de conteúdo
 seo-title: Customizing and Extending Content Fragments
 description: Um fragmento de conteúdo estende um ativo padrão.
 seo-description: A content fragment extends a standard asset.
-uuid: f72c3a23-9b0d-4fab-a960-bb1350f01175
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: e68f6203d7629cab16e59778ce64908f943d5b3f
+source-git-commit: 9ad531738ac5e3c9d888f685b47c8b322712a89e
 workflow-type: tm+mt
-source-wordcount: '2789'
+source-wordcount: '2778'
 ht-degree: 1%
 
 ---
@@ -133,9 +129,9 @@ Para obter mais detalhes, consulte [Fragmento do conteúdo - excluir consideraç
 
 >[!CAUTION]
 >
->O [Componente principal do fragmento de conteúdo](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) agora é recomendado. Consulte [Desenvolvimento dos componentes principais](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) para obter mais detalhes.
+>O [Componente principal do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) agora é recomendado. Consulte [Desenvolvimento dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obter mais detalhes.
 
-Os fragmentos de conteúdo podem ser referenciados AEM páginas, como qualquer outro tipo de ativo. AEM fornece a [**Fragmento de conteúdo** componente principal](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) - a [componente que permite incluir fragmentos de conteúdo em suas páginas](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Você também pode estender, isso **Fragmento de conteúdo** componente principal.
+Os fragmentos de conteúdo podem ser referenciados AEM páginas, como qualquer outro tipo de ativo. AEM fornece a [**Fragmento de conteúdo** componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) - a [componente que permite incluir fragmentos de conteúdo em suas páginas](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Você também pode estender, isso **Fragmento de conteúdo** componente principal.
 
 * O componente usa o `fragmentPath` propriedade para fazer referência ao fragmento de conteúdo real. O `fragmentPath` Os bens sejam tratados da mesma forma que as propriedades similares de outros tipos de ativos; por exemplo, quando o fragmento de conteúdo é movido para outro local.
 
@@ -247,7 +243,7 @@ Os fragmentos de conteúdo podem ser integrados com:
 
 Você pode usar a API do lado do servidor para acessar os fragmentos de conteúdo; consulte:
 
-[com.adobe.cq.dam.cfm](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -257,7 +253,7 @@ Você pode usar a API do lado do servidor para acessar os fragmentos de conteúd
 
 As três interfaces a seguir podem servir como pontos de entrada:
 
-* **Modelo do fragmento** ([ModeloDeFragmento](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **Modelo do fragmento** ([ModeloDeFragmento](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
    Use `FragmentTemplate.createFragment()` para criar um novo fragmento.
 
@@ -302,7 +298,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
 
 
 
-* **Fragmento de conteúdo** ([FragmentoDeConteúdo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Fragmento de conteúdo** ([FragmentoDeConteúdo](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    Essa interface permite que você trabalhe com um fragmento de conteúdo de forma abstrata.
 
@@ -332,7 +328,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
 
    As interfaces que representam os elementos principais de um fragmento são:
 
-   * **Elemento de conteúdo** ([ContentElement](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Elemento de conteúdo** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Obter dados básicos (nome, título, descrição)
       * Obter/definir conteúdo
@@ -344,7 +340,7 @@ As três interfaces a seguir podem servir como pontos de entrada:
          * Remover variações (consulte [Avisos](#caveats))
          * Acesse os dados de variação (consulte `ContentVariation`)
       * Atalho para resolver variações (aplicando alguma lógica de fallback adicional específica da implementação se a variação especificada não estiver disponível para um elemento)
-   * **Variação de conteúdo** ([ContentVariation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Variação de conteúdo** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Obter dados básicos (nome, título, descrição)
       * Obter/definir conteúdo
@@ -542,5 +538,5 @@ Consulte [Modelos de fragmentos do conteúdo](/help/sites-developing/content-fra
 
 Para obter mais informações, consulte
 
-* [Componentes principais - Componente do fragmento de conteúdo](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) (recomendado)
+* [Componentes principais - Componente do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) (recomendado)
 * [Componentes do fragmento de conteúdo - Componentes da criação de página](/help/sites-developing/components-content-fragments.md#components-for-page-authoring)
