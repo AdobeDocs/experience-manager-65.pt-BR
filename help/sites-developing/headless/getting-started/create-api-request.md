@@ -2,7 +2,7 @@
 title: Guia de início rápido sem cabeçalho para acessar e entregar fragmentos de conteúdo
 description: Saiba como usar AEM API REST do Assets para gerenciar Fragmentos de conteúdo e a API GraphQL para entrega sem interface do conteúdo do Fragmento de conteúdo.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 8ab774b8d21dd16e4873cd39ef0175ead3f2da23
+source-git-commit: 6c75af3957c319c38177cd62c90e781a982ba91b
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 1%
@@ -18,7 +18,7 @@ Saiba como usar AEM API REST do Assets para gerenciar Fragmentos de conteúdo e 
 [Agora que você criou alguns fragmentos de conteúdo,](create-content-fragment.md) você pode usar AEM APIs para entregá-las sem periféricos.
 
 * [A API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) O permite criar solicitações para acessar e fornecer Fragmentos de conteúdo.
-   * Para usá-lo, os pontos de extremidade precisam ser definidos e ativados no AEM e, se necessário, na interface GraphiQL instalada.
+   * Para usar isso, [os endpoints precisam ser definidos e ativados no AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)e, se necessário, a variável [Interface GraphiQL instalada](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [A API REST do Assets](/help/assets/assets-api-content-fragments.md) O permite criar e modificar Fragmentos de conteúdo (e outros ativos).
 
 O restante deste guia terá como foco o acesso GraphQL e a entrega do Fragmento de conteúdo.
