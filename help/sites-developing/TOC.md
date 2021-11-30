@@ -8,9 +8,9 @@ breadcrumb-title: Guia de desenvolvimento
 user-guide-description: Este guia aborda como criar sua instância no AEM.
 feature: Developing
 role: Developer
-source-git-commit: ba6b910add6770753efeb576d9df1db42d5720b8
+source-git-commit: cf7e9061bac9004c7efd2f045b4900e4a92d67e9
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1085'
 ht-degree: 15%
 
 ---
@@ -96,6 +96,7 @@ ht-degree: 15%
       + [Uso e extensão de widgets (interface de usuário clássica)](widgets.md)
       + [Uso de xtypes (interface clássica)](xtypes.md)
       + [Desenvolvimento do Forms (interface clássica)](developing-forms.md)
++ [Cabeça e Sem Cabeça no AEM](headful-headless.md)
 + Gerenciamento de experiência headless{#headless}
    + [Sem cabeça e AEM](headless/introduction.md)
    + Guias de introdução {#getting-started}
