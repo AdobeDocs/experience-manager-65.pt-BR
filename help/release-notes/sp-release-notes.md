@@ -4,9 +4,9 @@ description: Notas de versão específicas do [!DNL Adobe Experience Manager] 6.
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 35260325b583bd047f22ffa88afb9469b2023e60
+source-git-commit: c7fdfeae785ad044437d065a8da6bdcbaf00d4c4
 workflow-type: tm+mt
-source-wordcount: '3367'
+source-wordcount: '3674'
 ht-degree: 3%
 
 ---
@@ -320,91 +320,58 @@ Need to verify with Engineering, the status is currently showing as Resolved
 >* O [!DNL Experience Manager Forms] lança os pacotes complementares uma semana após a data programada de lançamento do [!DNL Experience Manager] Service Pack.
 
 
-<!--
+**Formulários adaptáveis**
 
-[!DNL AEM 6.5.10.0 Forms] includes the following bug fixes:
+* Acessibilidade - Ao definir a variável `Wizard` no layout de um painel em um formulário adaptável, os botões de navegação não têm rótulos e função Aria (NPR-37613).
 
-* When you install [!DNL AEM 6.5 Forms], the following third-party libraries are installed automatically (CQDOC-18373):
-  * [!DNL Microsoft Visual C++ 2008 Service Pack 1 (x86)]
-  * [!DNL Microsoft Visual C++ 2010 Service Pack 1 (x86)]
+* As validações em um campo de data em um formulário adaptável não funcionam, como esperado (NPR-37556).
 
-**Adaptive Forms**
+* Quando o texto da etiqueta dos componentes Caixa de seleção e Botão de opção é longo, o texto não se encaixa adequadamente (NPR-37294).
 
-* If the validations performed on the field values in an adaptive form are successful, [!DNL AEM Forms] fails to invoke the Form Data Model (CQ-4325491).
+* Ao aplicar alterações de estilo à mensagem de agradecimento do componente Contêiner do AEM Forms, as alterações não são replicadas no formulário adaptável de origem (NPR-37284).
 
-* When you add a language dictionary to a translation project and then open the project, [!DNL AEM Forms] displays an error message (CQ-4324933):
+* Diferenças no valor da variável `Switch` na interface do usuário e no back-end (NPR-37268).
 
-   ```TXT
-   Uncaught TypeError: Cannot read property 'PROJECT_LISTING_PATH' of undefined
-   at openButtonClickHandler (clientlibs.js:245)
-   at HTMLButtonElement.onclick (clientlibs.js:258)
+* Quando você usa as teclas do teclado para navegar até o `Submit` e pressione a tecla `Enter` , é possível enviar o formulário adaptável várias vezes (CQ-4333993).
 
-   ```
+* A operação Remover do componente de Anexo de Arquivo não funciona, como esperado (NPR-37376).
 
-* Performance issues after installing [!DNL AEM Forms] Service Pack 7 (CQ-4326828).
+* Quando um rótulo de um campo excede 1000 caracteres em um formulário adaptável que traduz para vários idiomas, o dicionário não consegue recuperar a tradução do rótulo (CQ-4329290).
 
-* When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. Apple iOS 15.1 provides a fix for the issue (CQ-4325361).
+**Serviços de documento**
 
-**Correspondence Management**
-
-* Delay in the display of characters in the [!UICONTROL Data] tab as well as in the HTML letter preview (NPR-37020).
-
-* When you are editing a text document fragment, the new words display as HTML tags after saving the fragment (NPR-36837).
-
-* Unable to view the letters that are saved as drafts (NPR-36816).
-
-* When you edit a text document fragment and then preview the letter, AEM Forms displays the expression language in the HTML letter preview (CQ-4322331).
-
-* Issues while rendering data with a self-service letter template (NPR-37161).
-
-
-**Interactive Communications**
-
-* A tab character duplicates between two words each time you print preview an Interactive Communication after editing a text document fragment (NPR-37021).
-
-* [!DNL AEM Forms] displays an error when you save a text document fragment that exceeds the maximum size limit (NPR-36874).
-
-* When you add an image to an Interactive Communication, an additional empty block displays after the image (NPR-36659).
-
-* When you select all text in an editor, you cannot change the font text to Arial (NPR-36646).
-
-* When you create a URL in an editor and preview the changes, a black background displays instead of the URL text (NPR-36640).
-
-* When you copy and paste text to an editor, there are issues while changing the font to Arial for bullets available in the document (NPR-36628). 
-
-* Indentation issues for bullets in the text editor (NPR-36513).
-
-**Designer**
-
-* Screen Reader fails to read floating field data placed inside text label on the Master page or on Subform pages in a dynamic PDF (CQ-4321587).
-
-**Document Services**
-
-* When you convert XDP files to PDF files and then assemble the resultant PDF, the PDF generations fails and displays the following error message:
+* Um erro é exibido durante o uso do serviço Assembler (NPR-37606):
 
    ```TXT
-   Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
+     500 Internal Server Error
    ```
 
-**Forms Workflow**
+* Quando os anexos do documento são passados para o serviço Assembler, a seguinte exceção é exibida (NPR-37582):
 
-* Unable to submit a form to a Workbench process after upgrading to AEM Forms Service Pack 8 (CQ-4325846).
+   ```TXT
+     com.adobe.livecycle.assembler.client.ProcessingException: ⁪: Failed to execute the DDX
+   ```
 
-**HTML5 Forms**
+* Parênteses de fechamento ausente dos dados após converter um documento PDF para um documento PDF PDF-A/1B (NPR-37608).
 
-* When you set the value for the `mfAllowAttachments` property as `True` in the CRX DE repository, the `dataXml` gets corrupted on submitting the HTML5 form (NPR-37035).
+**Formulários HTML5**
 
-* When you render an XDP as HTML using `dataXml`, [!DNL AEM Forms] displays a `Page Unresponsive` error (NPR-36631).
+* Ao instalar o AEM 6.5.10.0, a visualização do HTML para um formulário XDP não funciona (NPR-37503, CQ-4331926).
 
-### Commerce {#commerce-65110}
+* Problemas de sobreposição de texto ao migrar o PDF forms para o HTML 5 em vários idiomas (NPR-37173).
 
-* The value in the **[!UICONTROL Published By]** field displayed is incorrect in the Column view (NPR-36902).
-* When a Catalog is rolled out, new products are incorrectly marked as modified products (NPR-36666).
-* When you recreate a deleted product, the product page is not recreated (NPR-36665).
-* Modified pages are updated but the corresponding linked products are not updated on Catalog rollout (CQ-4321409, NPR-36422).
-* The **[!UICONTROL Publish later]** and **[!UICONTROL Unpublish later]** workflows do not work (CQ-4327679).
+**Cartas**
 
--->
+* Ao enviar uma carta e reabri-la na visualização do HTML, a posição dos fragmentos do documento de texto não permanece a mesma (NPR-37307).
+
+**Fluxo de trabalho dos formulários**
+
+* No caso de fluxo de trabalho de contêiner incorporado, você receberá vários emails de conclusão de fluxo de trabalho mesmo depois de selecionar a variável `Notify on Complete of Container Workflow` (NPR-37280).
+
+**Foundation JEE**
+
+* Depois de instalar o AEM 6.5 Forms Service Pack 9, os URLs do repositório CRX não estarão mais disponíveis (NPR-37592).
+
 
 Para obter informações sobre atualizações de segurança, consulte [[!DNL Experience Manager] página de boletins de segurança](https://helpx.adobe.com/security/products/experience-manager.html).
 
