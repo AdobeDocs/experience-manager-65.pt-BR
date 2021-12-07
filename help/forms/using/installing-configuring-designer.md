@@ -1,8 +1,8 @@
 ---
 title: Instalar e configurar o Designer
-seo-title: Instalar e configurar o Designer
+seo-title: Installing and configuring Designer
 description: 'O Designer está disponível como um instalador independente e também é fornecido com o Workbench. Saiba como instalar o Designer independente.  '
-seo-description: 'O Designer está disponível como um instalador independente e também é fornecido com o Workbench. Saiba como instalar o Designer independente.  '
+seo-description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.
 uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,10 +12,10 @@ discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 85596d4c2204aa1dd34c409b45d25eeffdb9c046
+source-git-commit: a3cf926bde4a4b3a0810058e84ac01012a4a3a57
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 49%
+source-wordcount: '280'
+ht-degree: 30%
 
 ---
 
@@ -23,13 +23,15 @@ ht-degree: 49%
 
 ## Pré-requisitos {#pre-requisites}
 
-O instalador do AEM Forms Designer requer a versão de 32 bits do [Pacote de tempo de execução redistribuível do Visual C++ 2012](https://support.microsoft.com/pt-br/help/2977003/the-latest-supported-visual-c-downloads) e [Pacote de tempo de execução redistribuível do Visual C++ 2013](https://support.microsoft.com/pt-br/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Certifique-se de que os pacotes de tempo de execução redistribuíveis mencionados acima estão instalados antes de iniciar a instalação.
+O instalador do AEM Forms Designer requer a versão de 32 bits do [Pacote de tempo de execução redistribuível do Visual C++ 2012](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0) e [Pacote de tempo de execução redistribuível do Visual C++ 2013](https://support.microsoft.com/pt-br/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Verifique se os pacotes de tempo de execução redistribuíveis mencionados anteriormente estão instalados antes de iniciar a instalação.
+
+Você precisa de direitos de administrador para instalar ou desinstalar o Designer.
 
 ## Instalar o Designer {#install-designer}
 
 O Designer está disponível como um instalador independente e também é fornecido com o WorkBench. Se você estiver usando um instalador independente para o Designer, execute as seguintes etapas:
 
-1. Baixe o Designer do Adobe [Site de licenciamento](https://licensing.adobe.com/).
+1. Baixar o Designer no Adobe [Site de licenciamento](https://licensing.adobe.com/).
 
    >[!NOTE]
    >
@@ -41,3 +43,19 @@ O Designer está disponível como um instalador independente e também é fornec
 1. (Opcional) Altere o caminho da instalação padrão, se quiser instalar o Designer e salve-o no local desejado. Clique em Avançar.
 1. Para alterar as preferências, clique em Voltar. Para instalar o Designer, clique em Instalar.
 1. Quando a instalação for concluída, clique em Concluir.
+
+Como alternativa, você pode instalar o Designer por meio da linha de comando usando o modo passivo ou silencioso.
+
+* Instalação passiva da linha de comando: O instalador exibe uma barra de progresso que indica que a instalação está em andamento, mas nenhum prompt ou mensagem de erro é exibida. Depois de iniciado, não é possível cancelar a instalação.
+
+```shell
+msiexec /i "<absolute path>\Designer.msi" /passive SERIALNUMBER=****-****-****-****-****-****
+```
+
+* Instalação silenciosa da linha de comando: O instalador executa a instalação sem exibir uma interface de usuário. Não são exibidos prompts, mensagens ou caixas de diálogo. Depois de iniciado, não é possível cancelar a instalação.
+
+```shell
+msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-****-****-****
+```
+
+
