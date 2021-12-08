@@ -2,9 +2,9 @@
 title: Recursos obsoletos e removidos na versão 6.5 do Adobe Experience Manager.
 description: Notas de versão específicas de recursos obsoletos e removidos do Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: c9db5a1764d98bb049c08a0e6962b7ed5e1bfe5c
+source-git-commit: 6ec25e3c59a841a6734f1d0e9d4347557d89e79a
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1761'
 ht-degree: 43%
 
 ---
@@ -28,6 +28,7 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 
 | Área | Recurso | Substituição | Versão (SP) |
 |---|---|---|---|
+| [!DNL Sites] | Propriedades de fragmentos de experiência para **Status da rede social**. |  | 6.5.11.0 |
 | [!DNL Sites] | Modelos de fragmento de conteúdo, para criar fragmentos de conteúdo simples. | [Fragmentos de conteúdo estruturado com base em modelo](/help/assets/content-fragments/content-fragments-models.md) agora. | 6.5.11.0 |
 | Integração da Creative Cloud | O AEM para o Compartilhamento de pastas do Creative Cloud foi introduzido no AEM 6.2 como uma maneira de conceder aos usuários criativos acesso aos ativos do AEM, para que pudessem abri-los no [!DNL Creative Cloud] e faça upload de novos arquivos ou salve as alterações no AEM. Uma nova funcionalidade lançada no aplicativo da Creative Cloud, o Adobe Asset Link, fornece uma experiência de usuário melhor e acesso avançado a ativos do AEM diretamente do Photoshop, InDesign e Illustrator. A Adobe não planeja fazer aprimoramentos adicionais ao AEM para a integração do Compartilhamento de pastas da Creative Cloud. Embora o recurso esteja incluído no AEM, os clientes são recomendados a suar soluções de substituição. | Os clientes são aconselhados a alternar para novos recursos de integração do Creative Cloud, incluindo o Adobe Asset Link ou AEM aplicativo de desktop. |  |
 | Ativos | `AssetDownloadServlet`O é desabilitado por padrão para as instâncias de publicação. Para obter mais detalhes, consulte [Lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md). | Configuração descrita na [Lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md). |  |
