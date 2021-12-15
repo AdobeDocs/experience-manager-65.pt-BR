@@ -1,14 +1,14 @@
 ---
 title: Formatos de arquivo suportados e tipos MIME
-description: Formatos de arquivo e tipos MIME suportados por [!DNL Assets] and [!DNL Dynamic Media] e os recursos compatíveis com cada formato.
+description: Formatos de arquivo e tipos MIME suportados por [!DNL Assets] e [!DNL Dynamic Media] e os recursos compatíveis com cada formato.
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 12a8b26a402ce68ee8f61e1035b7f44531cd2825
+source-git-commit: eb7051582a51d983851c876025770668b258bff5
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1568'
 ht-degree: 10%
 
 ---
@@ -215,10 +215,12 @@ Além da funcionalidade acima, considere o seguinte:
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediário, Animação do Apple |
 | MP4 | MPEG-4 | H264/AVC (todos os perfis) | - |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
+| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | WebM | WebM | VP8 do Google | - |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Tela Microsoft® (MSS2), Microsoft® Photo Story (WVP2) |
+
+‡ Este formato de vídeo ainda não é suportado para o uso com Vídeos interativos no Dynamic Media ou para o uso com Anotações no Experience Manager Assets.
 
 ## Formatos de arquivo compatíveis {#supported-archive-formats}
 
