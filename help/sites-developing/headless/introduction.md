@@ -1,9 +1,9 @@
 ---
 title: 'Desenvolvimento sem periféricos para AEM 6.5 Sites '
 description: Saiba como os poderosos recursos headless AEM 6.5, como Modelos de conteúdo, Fragmentos de conteúdo e a API GraphQL, funcionam juntos para permitir que você gerencie suas experiências centralmente e as disponibilize entre canais.
-source-git-commit: 03285545d8cc04d97513fb5fee3b3c616551ccdc
+source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '493'
 ht-degree: 2%
 
 ---
@@ -25,11 +25,9 @@ A implementação sem cabeçalho perde o gerenciamento de página e componente, 
 
 Este documento se concentra no modelo de implementação sem periféricos de AEM. No entanto, o headful versus headless não precisam ser uma escolha binária no AEM. Os recursos headless podem ser usados para gerenciar e entregar seu conteúdo a uma variedade de endpoints, além de permitir que os autores de conteúdo editem aplicativos de página única. Tudo em AEM.
 
-<!-- HM-Links
 >[!TIP]
 >
->See the document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) for more information.
--->
+>Consulte o documento [Cabeça e Sem Cabeça no AEM](/help/sites-developing/headful-headless.md) para obter mais informações.
 
 ## AEM 6.5 e sem cabeça {#aem-headless}
 
@@ -54,12 +52,6 @@ Há vários recursos disponíveis para você começar a usar AEM recursos headle
 
 | Recurso | Descrição | Tipo | Público | Est. Hora |
 |---|---|---|---|---|
+| [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | **Para usuários novos em AEM e sem periféricos** tecnologias, comece aqui para obter uma introdução abrangente ao AEM e seus recursos sem periféricos da teoria dos sem periféricos passando a funcionar com seu primeiro projeto sem periféricos. | Guia | Desenvolvedores **novo no AEM e sem periféricos** | 1 hora |
+| [Guia de introdução sem cabeçalho](/help/sites-developing/headless/getting-started/introduction.md) | **Para usuários de AEM experientes** que precisam de um breve resumo dos principais recursos AEM sem periféricos, confira esta visão geral de início rápido. | Início rápido | Desenvolvedores, administradores **com AEM experiência** | 20 minutos |
 | [Introdução ao AEM tutorial prático](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **Se preferir uma abordagem prática e estiver familiarizado com AEM**, este tutorial mergulha diretamente na criação de um projeto sem periféricos simples. | Tutorial | Desenvolvedores | 2 horas |
-
-<!-- HM-Links
-|Resource|Description|Type|Audience|Est. Time|
-|---|---|---|---|---|
-|[Headless Developer Journey](/help/journey-headless/developer/overview.md)|**For users new to AEM and headless** technologies, start here for a comprehensive introduction to AEM and its headless features from the theory of headless through going live with your first headless project.|Guide|Developers **new to AEM and headless**|1 hour|
-|[Headless Getting Started Guide](/help/implementing/developing/headless/getting-started/introduction.md)|**For experienced AEM users** who need a short summary of the key AEM headless features, check out this quick start overview.|Quick Start|Developers, Administrators **with AEM experience**|20 minutes|
-|[Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)|**If you prefer a hands-on approach and are familiar with AEM**, this tutorial dives directly into creating a simple headless project.|Tutorial|Developers|2 hours|
--->

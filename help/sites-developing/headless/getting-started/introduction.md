@@ -2,9 +2,9 @@
 title: Guia de introdução sem cabeçalho
 description: Com este guia de início rápido, saiba mais sobre os recursos avançados do AEM 6.5, como Modelos de conteúdo, Fragmentos de conteúdo e a API GraphQL.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: 03285545d8cc04d97513fb5fee3b3c616551ccdc
+source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '301'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,8 @@ Os Guias de introdução sem cabeçalho apresentam um caminho simples para criar
 >[!TIP]
 >
 >Este guia de introdução assume conhecimento de tecnologias sem interface e AEM.
-
-<!-- HM-Links
 >
->If you are new to either AEM or headless, please refer to our [Headless Documentation Journeys](/help/journey-headless/home.md) for an end-to-end introduction to both headless and how AEM supports it.
--->
+>Se você é novo em AEM ou sem periféricos, consulte nossa [Jornadas de documentação headless](/help/journey-headless/home.md) para obter uma introdução completa ao headless e como o AEM suporta.
 
 ## Público {#audience}
 
