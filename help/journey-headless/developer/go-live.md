@@ -1,7 +1,7 @@
 ---
 title: Como ativar seu aplicativo sem periféricos
 description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba como implantar um aplicativo headless ao vivo.
-source-git-commit: ee82e8edc9cdf7fb403d54d82ced6caa2c95fdc9
+source-git-commit: 20d46a7c37663dac36e6af9582d569a7f782eab7
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 0%
@@ -224,11 +224,3 @@ Se esse tipo de flexibilidade é algo que você precisa para o seu projeto, cont
    * [Controlando um Cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
    * Configurar a [Gravador CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*pesquisar por regravador CDN*)
-
-<!--
-* [An Overview of Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
-* [The AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-* [Set Up A Local AEM Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [Use Cloud Manager to Deploy Your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [Integrate the Cloud Manager Git Repository with an External Git Repository and Deploy a Project to AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
--->
