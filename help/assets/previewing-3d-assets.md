@@ -1,14 +1,14 @@
 ---
-title: Pré-visualização de ativos 3D
-description: Saiba como visualizar ativos 3D
+title: Visualizar ativos 3D
+description: Saiba como visualizar ativos 3D no Experience Manager.
 contentOwner: Rick Brough
 docset: aem65
-feature: Ativos 3D
+feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 32e637463a2f68a48b39c5dea9cc3cc4d1596d9b
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 10%
 
 ---
@@ -27,7 +27,7 @@ A visualização 3D interativa é compatível com os seguintes formatos de arqui
 
 | extensão de arquivo 3D | Formato de arquivo | Tipo MIME | Notas |
 |---|---|---|---|
-| GLB | Transmissão binária GL | model/gltf-binário |  |
+| GLB | Transmissão binária GL | modelo/gltf-binário |  |
 | GLTF | Formato de transmissão GL | model/gltf+json | Consulte **Observação** abaixo. |
 | OBJ | Arquivo de objeto 3D WaveFront | application/x-tgif |  |
 | STL | Estereolitografia | application/vnd.ms-pki.stl |  |
@@ -36,14 +36,14 @@ A visualização 3D interativa é compatível com os seguintes formatos de arqui
 
 >[!NOTE]
 >
->Se os materiais não forem renderizados na pré-visualização de um modelo GLTF, verifique se eles estão nomeados corretamente e em uma pasta `textures` na mesma pasta raiz do modelo, semelhante ao seguinte:
+>Se os materiais não forem renderizados na visualização de um modelo GLTF, certifique-se de que eles sejam nomeados corretamente e em um `textures` na mesma pasta raiz do modelo, semelhante ao seguinte:
 
     Ativo (pasta)
-    model.
-    gltfmodel.
-    bintextures (pasta)
-    material_0_baseColor.
-    jpegmaterial_0_normal.jpeg
+    model.gltf
+    model.bin
+    texturas (pasta)
+    material_0_baseColor.jpeg
+    material_0_normal.jpeg
 
 ## Considerações de desempenho ao visualizar ativos 3D no Experience Manager{#performance-3d-previewing-assets}
 
@@ -55,11 +55,11 @@ Além disso, os recursos do computador cliente - como uma estação de trabalho,
 
 1. Certifique-se de ter carregado ativos 3D no Experience Manager.
 Consulte [Formatos compatíveis com a visualização 3D](#supported-3d-previewing-assets) e [Fazer upload de ativos](/help/assets/manage-assets.md#uploading-assets).
-1. No Experience Manager, na página **[!UICONTROL Navegação]**, selecione **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]**.
+1. De Experience Manager, no **[!UICONTROL Navegação]** página, selecione **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]**.
 
    ![Página de navegação](/help/assets/assets-dm/navigation-assets.png)
 
-1. Próximo ao canto superior direito da página, na lista suspensa Exibição, selecione **[!UICONTROL Exibição de cartão]**, em seguida, navegue até um ativo 3D que deseja visualizar.
+1. Próximo ao canto superior direito da página, na lista suspensa Exibir, selecione **[!UICONTROL Exibição de cartão]**, em seguida, navegue até um ativo 3D que deseja visualizar.
 
    ![Seleção de cartão 3D](/help/assets/assets-dm/3d-card-select.png)
    _Na Exibição de cartão, selecione o cartão do ativo 3D que deseja visualizar._
