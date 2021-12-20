@@ -4,9 +4,9 @@ description: Notas de versão específicas do [!DNL Adobe Experience Manager] 6.
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: f2ccc77393e7fc1f53f9976076ec3c66c3f74189
+source-git-commit: 5b62efe65be44416335c6dbbde23ee6a7e5a8fd7
 workflow-type: tm+mt
-source-wordcount: '3728'
+source-wordcount: '3822'
 ht-degree: 3%
 
 ---
@@ -371,6 +371,17 @@ Need to verify with Engineering, the status is currently showing as Resolved
 **Foundation JEE**
 
 * Depois de instalar o AEM 6.5 Forms Service Pack 9, os URLs do repositório CRX não estarão mais disponíveis (NPR-37592).
+
+**Problemas corrigidos no AEM Forms 6.5.11.1**
+
+>[!NOTE]
+>
+>Se você não tiver atualizado para o AEM 6.5.11.0 Forms, instale o pacote complementar do AEM Forms 6.5.11.1 diretamente. Se você instalou AEM 6.5.11.0 Forms, o Adobe recomenda atualizar para AEM 6.5.11.1 Forms.
+
+* Enviar ações, Enviar email e Chamar um fluxo de trabalho AEM param de funcionar após a instalação do pacote complementar do Forms 6.5.11.0.
+* A operação CreatePDF interrompe a conversão de documentos do Microsoft Word em documentos do PDF após instalar o pacote complementar do Forms 6.5.11.0.
+* (Somente JEE) Vulnerabilidades críticas de segurança (CVE-2021-44228 e CVE-2021-45046) relatadas para o Apache Log4j2.
+* (Somente JEE) O montador DSC no patch 6.5.11.0 contém metainfo incorreto, como a versão da especificação e a versão impl.
 
 
 Para obter informações sobre atualizações de segurança, consulte [[!DNL Experience Manager] página de boletins de segurança](https://helpx.adobe.com/security/products/experience-manager.html).
