@@ -4,9 +4,9 @@ description: Notas de versão específicas do [!DNL Adobe Experience Manager] 6.
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 5b62efe65be44416335c6dbbde23ee6a7e5a8fd7
+source-git-commit: 282f634e84b7c6c5e281d2b425953853790f225c
 workflow-type: tm+mt
-source-wordcount: '3822'
+source-wordcount: '3829'
 ht-degree: 3%
 
 ---
@@ -37,6 +37,8 @@ Os principais recursos e aprimoramentos introduzidos no [!DNL Adobe Experience M
 * As melhorias na experiência do usuário exibem o número de ativos presentes em uma pasta. Para mais de 1000 ativos em uma pasta, [!DNL Assets] exibe 1000+.
 
 * Agora é possível renderizar a opção de classificação na exibição Cartão e Coluna.
+
+* Suporte a perfis de negócios para Adobe Asset Link.
 
 * Agora você pode usar [!DNL Dynamic Media] para configurar as Configurações gerais em vez de precisar passar pelo [!DNL Dynamic Media Classic] aplicativo de desktop. Consulte [Definir as configurações gerais do Dynamic Media](/help/assets/dm-general-settings.md).
 
