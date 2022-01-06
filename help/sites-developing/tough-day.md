@@ -6,9 +6,9 @@ seo-description: The Tough Day test simulates the daily load of around 1000 auth
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 36c0728908e24a13d08c1eaed4e39542f5b61df5
+source-git-commit: 0b1f28963d9294c7aa9ae45c6b9fc9a9b8b4f6e6
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1879'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 >[!NOTE]
 >
->Embora o Dia 2 não tenha um passo de limpeza. Como resultado, é recomendável executar o Dia 2 difícil em uma instância de armazenamento temporário clonada e não na instância de produção principal. A instância de preparo deve ser removida após os testes.
+>Embora o Dia 2 não tenha um passo de limpeza. Como resultado, é recomendável executar o Dia 2 difícil em uma instância de preparo clonada e não na instância de produção principal. A instância de preparo deve ser removida após os testes.
 
 ### Obter ajuda {#getting-help}
 
@@ -403,8 +403,10 @@ O Dia 2 difícil cria uma pasta de logs no mesmo diretório em que você executo
 
 Os logs não são substituídos, as execuções subsequentes anexarão mensagens aos logs existentes. Os logs têm vários níveis. Para obter mais informações, consulte a ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
-#### Exemplo de uso {#example-usage}
+<!--
+#### Example Usage {#example-usage}
 
-#### Problemas conhecidos {#known-issues}
+#### Known Issues {#known-issues}
 
-[Obter arquivo](assets/toughday-6_1.jar)
+[Get File](assets/toughday-6_1.jar)
+-->
