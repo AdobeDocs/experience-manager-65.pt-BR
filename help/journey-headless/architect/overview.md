@@ -1,10 +1,7 @@
 ---
 title: jornada do AEM Headless Content Architect
 description: Comece aqui para obter uma jornada guiada através dos recursos avançados e flexíveis sem interface de AEM, seus recursos e como modelar seu conteúdo em seu primeiro projeto sem interface.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 99e7bb800da659fb8494eef2d9b9b87a6f263c21
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 2%
