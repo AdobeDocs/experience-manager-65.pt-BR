@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: fd973cb3693872e4850f860a625cab70553d2754
+source-git-commit: 014731aa9c5c4d7d419ff8b037142b47e7b7da01
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 41%
+source-wordcount: '910'
+ht-degree: 35%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 41%
 
 >[!NOTE]
 >
-> A Otimização do mecanismo de pesquisa (SEO) se tornou uma preocupação principal para muitos comerciantes. Por conseguinte, é necessário dar resposta às preocupações relativas às SEO em muitos projetos AEM. Leia [SEO e Práticas recomendadas de gerenciamento de URL](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) para obter mais informações.
+> A Otimização do mecanismo de pesquisa (SEO) se tornou uma preocupação principal para muitos comerciantes. Por conseguinte, é necessário dar resposta às preocupações relativas às SEO em muitos projetos AEM. Leia [Práticas recomendadas de gerenciamento de SEO e URL](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) para obter mais informações.
 
 Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) fornecem configurações avançadas para personalizar os URLs das páginas de produto e categoria. Muitas implementações personalizam esses URLs para fins de otimização de mecanismo de pesquisa (SEO). O vídeo a seguir mostra detalhes sobre como configurar o serviço `UrlProvider` e os recursos do [Mapeamento do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para personalizar os URLs das páginas de produto e categoria.
 
@@ -28,7 +28,7 @@ Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-
 
 ## Configuração {#configuration}
 
-Para configurar o serviço `UrlProvider` de acordo com os requisitos e necessidades de SEO, o projeto deve fornecer uma configuração OSGI para a &quot;Configuração do provedor de URL da CIF&quot;.
+Para configurar o `UrlProvider` de acordo com os requisitos e necessidades de SEO, um projeto deve fornecer uma configuração OSGI para a &quot;Configuração do provedor de URL da CIF&quot;.
 
 >[!NOTE]
 >
@@ -46,13 +46,15 @@ Isso configura os URLs das páginas do produto e oferece suporte às seguintes o
 
 No caso de [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` será substituída por  `/content/venia/us/en/products/product-page`
-* `{{sku}}` será substituído pelo SKU do produto, por exemplo  `VP09`
-* `{{url_key}}` será substituída pela  `url_key` propriedade do produto, por exemplo  `lenora-crochet-shorts`
-* `{{url_path}}` será substituída pelo do produto  `url_path`, por exemplo  `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` será substituída pela variante selecionada no momento, por exemplo,  `VP09-KH-S`
+* `{{page}}` será substituída por `/content/venia/us/en/products/product-page`
+* `{{sku}}` será substituído pelo SKU do produto, por exemplo `VP09`
+* `{{url_key}}` será substituído pelo `url_key` propriedade, por exemplo `lenora-crochet-shorts`
+* `{{url_path}}` será substituído pelo `url_path`, por exemplo `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` será substituída pela variante selecionada no momento, por exemplo, `VP09-KH-S`
 
-Com os dados de exemplo acima, um URL de variante de produto formatado usando o formato padrão de URL será semelhante a `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
+Como a variável `url_path` Se for descontinuado, os formatos de URL de produto predefinidos usarão `url_rewrites` e escolha aquele com os segmentos de caminho mais alternativos se a variável `url_path` não está disponível.
+
+Com os dados de exemplo acima, um URL de variante de produto formatado usando o formato de URL padrão será semelhante `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
 ### Formato de URL da página de categoria {#product-list}
 
@@ -63,26 +65,29 @@ Isso configura os URLs das páginas de categoria ou lista de produtos e oferece 
 
 No caso de [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` será substituída por  `/content/venia/us/en/products/category-page`
-* `{{url_key}}` será substituída pela  `url_key` propriedade da categoria
-* `{{url_path}}` será substituído por  `url_path`
+* `{{page}}` será substituída por `/content/venia/us/en/products/category-page`
+* `{{url_key}}` será substituído por `url_key` propriedade
+* `{{url_path}}` será substituído por `url_path`
 
-Com os dados de exemplo acima, um URL de página de categoria formatado usando o formato padrão de URL será semelhante a `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
+Com os dados de exemplo acima, um URL de página de categoria formatado usando o formato de URL padrão terá a aparência `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
 >[!NOTE]
 > 
-> O `url_path` é uma concatenação do `url_keys` dos ancestrais de um produto ou categoria e do `url_key` do produto ou categoria, separados por `/` barra.
+> O `url_path` é uma concatenação do `url_keys` dos ancestrais de um produto ou categoria e do produto ou categoria `url_key` separados por `/` barra.
+
+### Páginas específicas de categoria/produto {#specific-pages}
+
+É possível criar [várias páginas de categoria e produto](multi-template-usage.md) para apenas um subconjunto específico de categorias ou produtos de um catálogo.
+
+O `UrlProvider` é pré-configurado para gerar deep links para essas páginas em instâncias da camada de criação. Isso é útil para editores que navegam em um site usando o modo de Visualização, navegam até uma página de produto ou categoria específica e alternam de volta para o modo de Edição para editar a página.
+
+Por outro lado, em instâncias de nível de publicação, urls de página de catálogo devem ser mantidas estáveis para não perder ganhos nas classificações do mecanismo de pesquisa, por exemplo. Devido a essa situação, as instâncias de camada de publicação não renderizarão deep links para páginas de catálogo específicas por padrão. Para alterar esse comportamento, a variável _Estratégia da página específica do provedor de URL da CIF_ pode ser configurado para sempre gerar urls de página específicos.
 
 ## Formatos de URL personalizados {#custom-url-format}
 
-Para fornecer um formato de URL personalizado, um projeto pode implementar a [`UrlFormat` interface](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) e registrar a implementação como serviço OSGI, usando-a como página de categoria ou formato de url da página do produto. A propriedade de serviço `UrlFormat#PROP_USE_AS` indica qual dos formatos predefinidos configurados deve ser substituído:
+Para fornecer um formato de URL personalizado, um projeto pode implementar [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) ou [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) e registre a implementação como serviço OSGI. Essas implementações, se disponíveis, substituirão o formato configurado e predefinido. Se houver várias implementações registradas, aquela com a classificação de serviço mais alta substitui aquela(s) pela classificação de serviço mais baixa.
 
-* `useAs=productPageUrlFormat`, substituirá o formato de url da página do produto configurado
-* `useAs=categoryPageUrlFormat`, substituirá o formato de url da página da categoria configurada
-
-Se houver várias implementações do `UrlFormat` registradas como serviços OSGI, aquela com a classificação de serviço mais alta substituirá aquela(s) pela classificação de serviço mais baixa.
-
-O `UrlFormat` deve implementar um par de métodos para criar um URL a partir de um determinado Mapa de parâmetros e analisar um URL para retornar o mesmo Mapa de parâmetros. Os parâmetros são os mesmos descritos acima, somente para categorias um parâmetro `{{uid}}` adicional é fornecido para o `UrlFormat`.
+As implementações de formato de URL personalizado devem implementar um par de métodos para criar um URL a partir de determinados parâmetros e para analisar um URL para retornar os mesmos parâmetros, respectivamente.
 
 ## Combinar com Mapeamentos do Sling {#sling-mapping}
 
