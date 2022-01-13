@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: eb7051582a51d983851c876025770668b258bff5
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
 source-wordcount: '9878'
 ht-degree: 4%
@@ -338,7 +338,7 @@ Algumas limitações do recurso são:
 * Se uma pasta com o mesmo nome existir no destino, os ativos do arquivo ZIP serão extraídos na pasta existente.
 * Se você cancelar a extração, os ativos já extraídos não serão excluídos.
 * Não é possível selecionar dois arquivos ZIP ao mesmo tempo e extraí-los. Você só pode extrair um arquivo ZIP por vez.
-* Ao carregar um arquivo ZIP, se a caixa de diálogo de upload exibir um erro de servidor 500, tente novamente após instalar [o Service Pack mais recente](/help/release-notes/sp-release-notes.md).
+* Ao carregar um arquivo ZIP, se a caixa de diálogo de upload exibir um erro de servidor 500, tente novamente após instalar [o Service Pack mais recente](/help/release-notes/release-notes.md).
 
 ## Visualizar ativos {#previewing-assets}
 

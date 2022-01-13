@@ -2,11 +2,10 @@
 title: Notas de versão do Adobe Experience Manager 6.5
 description: As Notas de versão do AEM abrangem informações importantes sobre a versão mais recente do AEM, incluindo novidades, plataformas compatíveis, recursos obsoletos e removidos e problemas conhecidos.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: a2b3cb81fb15a1f03004e42cafbf92c84c9d7b89
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 41%
+source-wordcount: '391'
+ht-degree: 42%
 
 ---
 
@@ -14,10 +13,12 @@ ht-degree: 41%
 
 As Notas de versão do AEM abrangem informações importantes sobre a versão mais recente do AEM, incluindo novidades, plataformas compatíveis, recursos obsoletos e removidos e problemas conhecidos.
 
+* [Notas de versão atuais](/help/release-notes/release-notes.md)
+
 ## Artigos principais AEM
 
-* [Introdução ao AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=pt-BR)
-* [Atualizações recentes na documentação](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Introdução ao AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR)
+* [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md)
 
 ## Guias do usuário do AEM 6.5

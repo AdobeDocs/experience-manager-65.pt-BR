@@ -1,22 +1,21 @@
 ---
 title: 'Solucionar problemas do AEM durante a criação  '
-seo-title: 'Solucionar problemas do AEM durante a criação  '
+seo-title: Troubleshooting AEM when Authoring
 description: Alguns problemas que podem ocorrer quando você usa o AEM
-seo-description: Alguns problemas que podem ocorrer quando você usa o AEM
+seo-description: Some issues that you might encounter when using AEM
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '294'
 ht-degree: 100%
 
 ---
-
 
 # Solucionar problemas do AEM durante a criação  {#troubleshooting-aem-when-authoring}
 
@@ -24,7 +23,7 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 >[!NOTE]
 >
->Ao enfrentar problemas, também é válida a verificação da lista de [Problemas conhecidos](/help/release-notes/known-issues.md) para a sua instância (pacotes de versões e serviços).
+>Ao enfrentar problemas, também é válida a verificação da lista de [Problemas conhecidos](/help/release-notes/release-notes.md) para a sua instância (pacotes de versões e serviços).
 
 >[!NOTE]
 >
@@ -65,4 +64,3 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 * **Solução**:
 
    * Atualize a página.
-

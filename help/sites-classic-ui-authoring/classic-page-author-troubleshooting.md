@@ -1,22 +1,21 @@
 ---
 title: 'Solucionar problemas do AEM durante a criação  '
-seo-title: 'Solucionar problemas do AEM durante a criação  '
+seo-title: Troubleshooting AEM when Authoring
 description: A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o AEM, junto com sugestões sobre como resolvê-los.
-seo-description: A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o AEM, junto com sugestões sobre como resolvê-los.
+seo-description: The following section covers some issues that you might encounter when using AEM, together with suggestions on how to troubleshoot them.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '430'
 ht-degree: 95%
 
 ---
-
 
 # Solucionar problemas do AEM durante a criação  {#troubleshooting-aem-when-authoring}
 
@@ -24,7 +23,7 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 >[!NOTE]
 >
->Ao enfrentar problemas, também é válida a verificação da lista de [Problemas conhecidos](/help/release-notes/known-issues.md) para a sua instância (pacotes de versões e serviços).
+>Ao enfrentar problemas, também é válida a verificação da lista de [Problemas conhecidos](/help/release-notes/release-notes.md) para a sua instância (pacotes de versões e serviços).
 
 >[!NOTE]
 >
@@ -71,7 +70,7 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 * **Problema:**
 
-   * Ao usar a opção **Localizar e substituir**, pode acontecer que nem todas as instâncias do termo `find` sejam substituídas em uma página.
+   * Ao usar a variável **Localizar e Substituir** pode acontecer que nem todas as instâncias do `find` são substituídos em uma página.
 
 * **Motivo**:
 
@@ -87,4 +86,3 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
    * Essas definições podem ser alteradas com a configuração do **Servlet Localizar e substituir do Day CQ WCM** usando o **Console da Web**; por exemplo, em
 
       `http://localhost:4502/system/console/configMgr`
-
