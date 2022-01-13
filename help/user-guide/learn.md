@@ -1,36 +1,35 @@
 ---
-title: Saiba Mais Sobre Os Recursos AEM 6.5
-seo-title: Saiba Mais Sobre Os Recursos AEM 6.5
-description: Descrição das capacidades essenciais do AEM 6.5
-seo-description: Descrição das capacidades essenciais do AEM 6.5
-translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+title: Saiba Mais Sobre Os Recursos Do AEM 6.5
+seo-title: Learn About AEM 6.5 Capabilities
+description: Descrição dos recursos essenciais do AEM 6.5
+seo-description: An description of the essential capabilities of AEM 6.5
+exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 27%
+source-wordcount: '400'
+ht-degree: 29%
 
 ---
 
-
-# Saiba mais sobre os recursos AEM 6.5 {#learn-about-aem-64-capabilities}
+# Saiba Mais Sobre Os Recursos Do AEM 6.5 {#learn-about-aem-64-capabilities}
 
 ## AEM Sites {#aem-sites}
 
-A AEM Sites é um sistema de gestão de conteúdo dentro do Adeobe Experience Manager que oferece um lugar para criar, gerenciar e fornecer experiências digitais em sites, sites móveis e telas no site para torná-las globais ao alcance, mas pessoalmente relevantes e envolventes. [Saiba ](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) mais ou  [insira alguns dos nossos tutoriais em novos recursos de vídeo.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+O AEM Sites é um sistema de gerenciamento de conteúdo no Adobe Experience Manager que oferece um local para criar, gerenciar e fornecer experiências digitais em sites, sites móveis e telas no site para torná-las globais ao alcance, embora sejam relevantes e envolventes pessoalmente. [Saiba mais](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) ou [consulte alguns dos novos tutoriais em recursos de vídeo.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
 
-## Ativos AEM {#aem-assets}
+## AEM Assets {#aem-assets}
 
-O AEM Assets permite que a sua empresa crie, gerencie, entregue e otimize facilmente os ativos digitais em uma única plataforma de vários locatários. [Assista a alguns de nossos tutoriais em vídeo novos no AEM Assets.](https://helpx.adobe.com/experience-manager/kt/assets/index/aem-6-4-assets.html)
+O AEM Assets permite que a sua empresa crie, gerencie, entregue e otimize facilmente os ativos digitais em uma única plataforma de vários locatários. [Consulte alguns dos novos tutoriais em recursos de vídeo do AEM Assets.](https://helpx.adobe.com/experience-manager/kt/assets/index/aem-6-4-assets.html)
 
 * [Trabalhar com o AEM Assets](/help/assets/manage-assets.md)
 * [Trabalhar com o Dynamic Media](/help/assets/dynamic-media.md)
-* [Notas de versão do AEM Assets](/help/release-notes/assets.md)
+* [Notas de versão do AEM](/help/release-notes/release-notes.md)
 
 ## AEM Forms {#aem-forms}
 
 O AEM fornece uma solução de fácil uso para criar, gerenciar, publicar e atualizar formulários digitais complexos ao integrar com processos back-end, regras empresariais e dados.
 
-O AEM Forms combinam a criação, o gerenciamento e a publicação de formulários, bem como recursos de gerenciamento de correspondência, segurança do documento e análises integradas para criar experiências interessantes e completas. [Assista alguns de nossos tutoriais em novos recursos de vídeo para AEM Forms.](https://helpx.adobe.com/experience-manager/kt/forms/index/aem-6-5-forms.html)
+O AEM Forms combinam a criação, o gerenciamento e a publicação de formulários, bem como recursos de gerenciamento de correspondência, segurança do documento e análises integradas para criar experiências interessantes e completas. [Consulte alguns dos novos tutoriais em recursos de vídeo do AEM Forms.](https://helpx.adobe.com/experience-manager/kt/forms/index/aem-6-5-forms.html)
 
 * [Introdução ao AEM Forms](/help/forms/using/introduction-aem-forms.md)
 * [Novidades no AEM Forms](/help/forms/using/whats-new.md)
@@ -39,16 +38,16 @@ O AEM Forms combinam a criação, o gerenciamento e a publicação de formulári
 
 ## AEM Screens {#aem-screens}
 
-O Screens é um recurso da Adobe Experience Manager que permite a publicação de experiências digitais dinâmicas e interativas e interações envolvendo diferentes tipos de telas, juntamente com uma plataforma de marketing digital abrangente.  [Saiba mais.](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+O Screens é um recurso do Adobe Experience Manager que permite publicar experiências e interações digitais dinâmicas e interativas envolvendo diferentes tipos de telas, juntamente com uma plataforma abrangente de marketing digital.  [Saiba mais.](https://docs.adobe.com/content/help/br/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
-Communities é um recurso da Adobe Experience Manager que ajuda a criar experiências online da comunidade, incluindo fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais importantes para clientes, funcionários e sua marca. [Saiba mais.](http://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
+O Communities é um recurso do Adobe Experience Manager que ajuda a criar experiências de comunidade online, incluindo fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais valiosos para clientes, funcionários e sua marca. [Saiba mais.](http://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
 
 ## AEM Livefyre {#aem-livefyre}
 
-AEM Livefyre é um novo recurso do Adobe Experience Manager que permite tocar em tudo o que é compartilhado na Web para criar um fluxo constante de conteúdo novo e de alta qualidade em seus próprios sites. [Aprenda ](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) mais ou  [salte para nossos guias.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
+AEM Livefyre é um novo recurso do Adobe Experience Manager que permite tocar em tudo o que é compartilhado na Web para criar um fluxo constante de conteúdo novo e de alta qualidade em seus próprios sites. [Saiba mais](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) ou [salte para os guias.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
 
 ## AEM Foundation {#aem-foundation}
 
-Saiba mais sobre a [fundação Adobe Experience Manager 6.5](/help/sites-deploying/home.md) e nosso modelo de implantação de serviços gerenciados ou mergulhe em algumas de nossas [novas introduções de vídeo para os recursos desta versão.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+Saiba mais sobre o [Adobe Experience Manager 6.5 foundation](/help/sites-deploying/home.md) e nosso modelo de implantação de serviços gerenciados ou mergulhe em alguns de nossos [novas introduções de vídeo aos recursos desta versão.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)

@@ -5,7 +5,7 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: e54d8633aa3b8c1554df90d1b9650713246b95e8
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 29%
@@ -16,11 +16,11 @@ ht-degree: 29%
 
 >[!NOTE]
 >
->[Entre em contato com o ](https://www.adobe.com/account/sign-in.supportportal.html) Suporte para obter mais informações ou obter o patch.
+>[Entre em contato com o suporte](https://www.adobe.com/account/sign-in.supportportal.html) para mais informações ou para obter o sistema.
 
 ## Sobre o instalador de patches {#about-the-patch-installer}
 
-O instalador de patches do Forms JEE AEM 6.5 inclui todos os problemas corrigidos de todos os componentes do Forms JEE AEM 6.5 disponíveis até o lançamento deste patch. Consulte as [Notas de versão do Service Pack](sp-release-notes.md) mais recentes para obter uma lista completa de problemas corrigidos.
+O instalador de patches do Forms JEE AEM 6.5 inclui todos os problemas corrigidos de todos os componentes do Forms JEE AEM 6.5 disponíveis até o lançamento deste patch. Veja o mais recente  [Notas de versão do Service Pack](release-notes.md) para obter uma lista completa de problemas corrigidos.
 
 ## Pré-requisitos para instalar o patch {#prerequisites-to-installing-the-patch}
 
@@ -28,7 +28,7 @@ O instalador de patches do Forms JEE AEM 6.5 inclui todos os problemas corrigido
 
 ## Instalação e configuração do patch {#installing-and-configuring-the-patch}
 
-1. Faça um backup da pasta &lt;*AEM_forms_root*>/deploy. Isso é necessário caso você decida desinstalar a correção rápida.
+1. Faça um backup do &lt;*AEM_forms_root*>/implantar pasta. Isso é necessário caso você decida desinstalar a correção rápida.
 1. Interrompa o servidor de aplicativos.
 1. Extraia o arquivo do instalador de correção para o disco rígido.
 1. No diretório nomeado de acordo com o seu sistema operacional:
@@ -36,10 +36,10 @@ O instalador de patches do Forms JEE AEM 6.5 inclui todos os problemas corrigido
    * **Windows**
 Navegue até o diretório apropriado na mídia de instalação ou pasta do disco rígido em que você copiou o instalador e clique duas vezes no arquivo aemforms65_cfp_install.exe .
 
-      * (Windows 32 bits) `Windows\Disk1\InstData\VM`
-      * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
-   * ****
-LinuxNavegue até o diretório apropriado e, a partir de um prompt de comando, digite 
+      * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
+      * (Windows de 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
+   * **Linux**
+Navegue até o diretório apropriado e, a partir de um prompt de comando, digite 
 `./aem65_cfp_install.bin`.
 
       * (Linux) `Linux/Disk1/InstData/NoVM`
@@ -47,12 +47,12 @@ LinuxNavegue até o diretório apropriado e, a partir de um prompt de comando, d
    Isso inicia um assistente de instalação que o guiará durante a instalação.
 
 1. No painel de Introdução, clique em **[!UICONTROL Próximo]**.
-1. Na tela Escolher pasta de instalação, verifique se o local padrão exibido está correto para a instalação existente ou clique em **[!UICONTROL Procurar]** para selecionar a pasta alternativa onde AEM formulários estão instalados e clique em **[!UICONTROL Avançar]**.
+1. Na tela Escolher pasta de instalação, verifique se o local padrão exibido está correto para a instalação existente ou clique em **[!UICONTROL Procurar]** para selecionar a pasta alternativa onde AEM formulários está instalado e clique em **[!UICONTROL Próximo]**.
 1. Leia as informações no Resumo de correção rápida e clique em **[!UICONTROL Próximo]**.
 1. Leia as informações no Resumo de pré-instalação e clique em **[!UICONTROL Instalar]**.
 1. Quando a instalação estiver concluída, clique em **[!UICONTROL Próximo]** para aplicar as atualizações de correção rápida aos arquivos instalados.
 
-1. Desmarque a opção Iniciar o Configuration Manager antes de clicar em Concluído. Antes de executar o gerenciador de configuração usando **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, navegue até o diretório *&lt;AEMForms_Install_Dir>\configurationManager\bin* e atualize os arquivos `ConfigurationManager.lax` e `ConfigurationManager_IPv6.lax` com as seguintes operações de renomeação:
+1. Desmarque a opção Iniciar o Configuration Manager antes de clicar em Concluído. Antes de executar o gerenciador de configuração usando **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, navegue até *&lt;aemforms_install_dir>\configurationManager\bin* diretório e atualização `ConfigurationManager.lax` e `ConfigurationManager_IPv6.lax` arquivos com as seguintes operações de renomeação:
 
    * `axis.jar` para `axis-1.4.1.1.jar`
    * `serializer-2.7.1.jar` para `serializer-2.7.2.jar`
@@ -62,9 +62,9 @@ LinuxNavegue até o diretório apropriado e, a partir de um prompt de comando, d
 
 1. A caixa de seleção Iniciar o Configuration Manager é selecionada por padrão. Clique em **[!UICONTROL Concluído]** para executar o Gerenciador de configurações.
 
-1. Para executar o Gerenciador de configurações posteriormente, desmarque a opção Iniciar gerenciador de configurações antes de clicar em Concluído. Você pode iniciar o Configuration Manager posteriormente usando o script apropriado no diretório `[AEM_forms_root]/configurationManager/bin`.
+1. Para executar o Gerenciador de configurações posteriormente, desmarque a opção Iniciar gerenciador de configurações antes de clicar em Concluído. Você pode iniciar o Configuration Manager posteriormente usando o script apropriado no `[AEM_forms_root]/configurationManager/bin` diretório.
 
-1. Dependendo do servidor de aplicativos, escolha um dos seguintes documentos e siga as instruções na seção *Configuração e Implantação de formulários AEM*.
+1. Dependendo do servidor de aplicativos, escolha um dos seguintes documentos e siga as instruções em *Configuração e implantação de formulários AEM* seção.
 
    * [Instalação e implantação de formulários AEM para JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
    * [Instalar e implantar formulários de AEM para o WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)

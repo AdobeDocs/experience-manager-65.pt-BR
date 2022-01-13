@@ -7,27 +7,30 @@ breadcrumb-title: Notas de versão
 user-guide-description: Saiba mais sobre os novos recursos mais recentes da AEM 6.5 nas notas de versão.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 63b19027e5b13dfb97fd59145de75fbc6d246b93
+source-git-commit: f04822a4bd55d6bffb1766d42502b1d999eb6947
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 34%
+source-wordcount: '57'
+ht-degree: 47%
 
 ---
 
 
 # Notas de versão do Adobe Experience Manager 6.5 {#release-notes}
 
-+ [Visão geral do AEM 6.5](home.md)
-+ [Notas de versão gerais](release-notes.md)
-+ Notas de versão do Service Pack {#service-pack}
-   + [Novidades](new-features-latest-service-pack.md)
-   + [Notas de versão do Service Pack 11](sp-release-notes.md)
-   + [Notas de versão anteriores do Service Pack](previous-hotfixes-featurepacks.md)
-+ [Notas de versão do AEM Sites](sites.md)
-+ [Notas de versão do AEM Assets](assets.md)
++ [Notas de versão do AEM 6.5](home.md)
++ [Notas de versão atuais](release-notes.md)
++ Notas de versão anteriores {#service-pack}
+   + [6.5.10](previous/6.5.10.md)
+   + [6.5.9](previous/6.5.9.md)
+   + [6.5.8](previous/6.5.8.md)
+   + [6.5.7](previous/6.5.7.md)
+   + [6.5.6](previous/6.5.6.md)
+   + [6.5.5](previous/6.5.5.md)
+   + [6.5.4](previous/6.5.4.md)
+   + [6.5.3](previous/6.5.3.md)
+   + [6.5.2](previous/6.5.2.md)
+   + [6.5.1](previous/6.5.1.md)
+   + [6.5.0](previous/ga.md)
 + [Instalador de patches do AEM Forms JEE](jee-patch-installer-65.md)
-+ [Notas de versão do AEM Communities](communities-release-notes.md)
 + [Recursos obsoletos e removidos](deprecated-removed-features.md)
-+ [Problemas conhecidos](known-issues.md)
-+ [AEM Foundation e Repository](wcm-platform.md)
 + [Status do recurso da interface de toque](touch-ui-features-status.md)
