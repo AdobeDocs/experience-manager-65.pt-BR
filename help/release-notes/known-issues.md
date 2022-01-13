@@ -2,10 +2,10 @@
 title: Problemas conhecidos
 description: Notas de versão específicas dos problemas conhecidos com o Adobe Experience Manager 6.5
 exl-id: 736037cf-af8c-4ce2-969e-c100a939a038
-source-git-commit: e0f024c2e1dc9fc7908382d406844575b4b38363
+source-git-commit: d87e48070329518117f84252ea0cab0471d74a29
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 43%
+source-wordcount: '661'
+ht-degree: 42%
 
 ---
 
@@ -45,6 +45,10 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 ```
 
 1. Salve o arquivo e reinicie a instância de AEM.
+
+## Sites {#sites}
+
+* **Trabalhar com versões de página**: Se uma página tiver sido movida, você não poderá mais executar uma visualização em nenhuma versão anterior à movimentação.
 
 ## Ativos {#assets}
 
