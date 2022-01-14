@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: c1eb9fb56cf9024ff58adec644a40e3def52e62a
+source-git-commit: e8270ad3f658236184467eda9f25c2ec0e6787ba
 workflow-type: tm+mt
-source-wordcount: '11747'
+source-wordcount: '11766'
 ht-degree: 5%
 
 ---
@@ -56,7 +56,7 @@ A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudá
       * Saiba mais sobre [Organizar ativos digitais](/help/assets/organize-assets.md).
    * Faça upload dos vídeos de origem primária para as pastas. Ao adicionar vídeos à pasta, eles são codificados de acordo com o perfil de processamento de vídeo atribuído à pasta.
 
-      * O Dynamic Media oferece suporte principalmente a vídeos de forma curta com uma duração máxima de 30 minutos.
+      * O Dynamic Media oferece suporte principalmente a vídeos de forma curta, com duração máxima de 30 minutos e resolução mínima superior a 50 x 50.
       * Você pode fazer upload de arquivos de vídeo com até 15 GB cada.
       * [Fazer upload de seus vídeos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * Saiba mais sobre [Formatos de arquivo de entrada suportados](/help/assets/assets-formats.md#supported-multimedia-formats).
@@ -300,7 +300,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Ao codificar um arquivo de vídeo, use um arquivo de vídeo de origem com a maior qualidade possível. Evite usar arquivos de vídeo previamente codificados, pois esses arquivos já estão compactados, e uma codificação adicional criará um vídeo de qualidade inferior.
 
-* O Dynamic Media oferece suporte a vídeos de forma curta com uma duração máxima de 30 minutos.
+* O Dynamic Media oferece suporte principalmente a vídeos de forma curta, com duração máxima de 30 minutos e resolução mínima superior a 50 x 50.
 * Você pode fazer upload de arquivos de vídeo de origem primária com até 15 GB cada.
 
 A tabela a seguir descreve o tamanho recomendado, a proporção e a taxa mínima de bits que seus arquivos de vídeo de origem devem ter antes de codificá-los:
