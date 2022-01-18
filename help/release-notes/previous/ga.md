@@ -1,7 +1,7 @@
 ---
 title: Notas de versão gerais para [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager]As notas o 6.5 que descrevem as informações da versão, novidades, como instalar e listas detalhadas de modificação.'
-source-git-commit: 9b15215a68495a800e94a58b523e1b7baa0c0203
+source-git-commit: 37f1df9f9421ff18fff45723b6eb081f0192520a
 workflow-type: tm+mt
 source-wordcount: '4696'
 ht-degree: 56%
@@ -552,9 +552,9 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 1. Salve o arquivo e reinicie a instância de AEM.
 
-## Sites {#sites}
+### Sites {#sites}
 
-* **Trabalhar com versões de página**: Se uma página tiver sido movida, você não poderá mais executar uma visualização em nenhuma versão anterior à movimentação.
+* **Trabalhar com versões de página**: [Se uma página tiver sido movida, você não poderá mais executar uma visualização em nenhuma versão anterior à movimentação](/help/sites-authoring/working-with-page-versions.md#previewing-a-version).
 
 ### Ativos {#assets}
 
