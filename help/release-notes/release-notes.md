@@ -2,9 +2,9 @@
 title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager]As notas o 6.5 que descrevem as informações da versão, novidades, como instalar e listas detalhadas de modificação.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 13c76122a38e32783bca248597a16f0512dae44c
+source-git-commit: 1cfa01544ad8bf0adafd55e696a6844a8edf1007
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '3894'
 ht-degree: 4%
 
 ---
@@ -35,8 +35,6 @@ Os principais recursos e aprimoramentos introduzidos no [!DNL Adobe Experience M
 * As melhorias na experiência do usuário exibem o número de ativos presentes em uma pasta. Para mais de 1000 ativos em uma pasta, [!DNL Assets] exibe 1000+.
 
    ![Número de ativos em uma pasta](/help/assets/assets/browse-folder-number-of-assets.png)
-
-* Agora é possível renderizar a opção de classificação na exibição Cartão e Coluna.
 
 * Suporte a perfis de negócios para Adobe Asset Link.
 
