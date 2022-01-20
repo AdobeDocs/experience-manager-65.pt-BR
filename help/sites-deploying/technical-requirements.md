@@ -6,18 +6,18 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 610e37571df168bba91f2c2fe5b41e2f70ba748e
+source-git-commit: ab89683610a896e73c219c1fde4dde16dd8fbec6
 workflow-type: tm+mt
-source-wordcount: '3345'
+source-wordcount: '3358'
 ht-degree: 1%
 
 ---
 
 # Requisitos técnicos{#technical-requirements}
 
-O Adobe oferece suporte ao Adobe Experience Manager (AEM) nas plataformas, conforme detalhado nas seguintes informações deste documento.
+Adobe supports Adobe Experience Manager (AEM) on the platforms as detailed in the following information in this document.
 
-Para qualquer problema relacionado especificamente à plataforma, entre em contato com o fornecedor da plataforma.
+For any issues that are specifically related to the platform, contact the platform vendor.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Requisitos mínimos para instalar o Adobe Experience Manager:
 
 Requisitos mínimos para executar o Adobe Experience Manager:
 
-* 5 GB de espaço livre em disco no diretório de instalação
+* 5 GB free disk space in the installation directory
 * Memória de 2 GB
 
 >[!NOTE]
@@ -51,7 +51,7 @@ Para obter mais informações, consulte o [Diretrizes de dimensionamento do hard
 
 Este documento lista as plataformas de cliente e servidor compatíveis com o Adobe Experience Manager. O Adobe fornece vários níveis de suporte, tanto para configurações recomendadas quanto para outras configurações.
 
-### Configurações suportadas {#supported-configurations}
+### Supported Configurations {#supported-configurations}
 
 A Adobe recomenda essas configurações e oferece suporte total como parte do contrato padrão de manutenção de software.
 
@@ -88,7 +88,7 @@ A Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
 
 >[!CAUTION]
 >
->É recomendável rastrear os Boletins de segurança do fornecedor do Java para garantir a segurança dos ambientes de produção e instalar as Atualizações mais recentes do Java.
+>It is recommended to track the Security Bulletins from the Java vendor to ensure the safety and security of production environments and install the latest Java Updates.
 
 <!--- <table>
  <tbody>
@@ -139,10 +139,10 @@ A Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
 | **Plataforma** | **Nível de suporte** | **Link** |
 |---|---|---|
 | Azul Zulu OpenJDK 11 - 64 bits | A: Suportado `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24) |
-| Azul Zulu OpenJDK 8 - 64 bits | A: Suportado `[1]` | [Baixar](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18) |
-| JDK Java SE 11 do Oracle - 64 bits | A: Suportado `[2]` | [Baixar](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
+| Azul Zulu OpenJDK 8 - 64 bits | A: Supported `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18) |
+| Oracle Java SE 11 JDK - 64bit | A: Suportado `[2]` | [Baixar](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | JDK Java SE 10 do Oracle | Z: Não suportado `[2]` |
-| JDK Java SE 9 do Oracle | Z: Não suportado `[2]` |
+| JDK Java SE 9 do Oracle | Z: Not supported `[2]` |
 | JDK Java SE 8 do Oracle - 64 bits | A: Suportado `[2]` | [Baixar](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | IBM J9 VM - compilação 2.9, JRE 1.8.0 | A: Suportado `[3]` |
 | IBM J9 VM - compilação 2.8, JRE 1.8.0 | A: Suportado `[3]` |
@@ -160,24 +160,26 @@ Existem várias opções para implantar o repositório do Adobe Experience Manag
 
 | **Plataforma** | **Descrição** | **Nível de suporte** |
 |---|---|---|
-| **Sistema de arquivos com arquivos TAR** `[1]` | Repositório | A: Suportado |
-| **Sistema de arquivos com armazenamento de dados** `[1]` | Binários | A: Suportado |
+| **Sistema de arquivos com arquivos TAR** `[1]` | Repositório | A: Supported |
+| **File system with Datastore** `[1]` | Binários | A: Suportado |
 | Armazenar binários em arquivos TAR no sistema de arquivos `[1]` | Binários | Z: Não suportado para produção |
 | Amazon S3 | Binários | A: Suportado |
 | Armazenamento de blobs do Microsoft Azure | Binários | A: Suportado |
-| MongoDB Enterprise 4.0 | Repositório | A: Suportado `[2, 3]` |
+| MongoDB Enterprise 4.2 | Repositório | A: Suportado `[2, 3, 4]` |
+| MongoDB Enterprise 4.0 | Repositório | Z: Não suportado |
 | MongoDB Enterprise 3.6 | Repositório | Z: Não suportado |
 | MongoDB Enterprise 3.4 | Repositório | Z: Não suportado |
-| IBM DB2 10.5 | Banco de dados do Repositório e Forms | R: Suporte restrito `[4]` |
+| IBM DB2 10.5 | Banco de dados do Repositório e Forms | R: Restricted Support `[5]` |
 | Oracle Database 12c (12.1.x) | Banco de dados do Repositório e Forms | R: Suporte restrito |
 | Microsoft SQL Server 2016 | Banco de dados Forms | A: Suportado |
 | **Apache Lucene (Quickstart integrado)** | Serviço de pesquisa | A: Suportado |
 | Apache Solr | Serviço de pesquisa | A: Suportado |
 
-1. O &#39;Sistema de Arquivos&#39; inclui o armazenamento de blocos compatível com POSIX. Isso inclui a tecnologia de armazenamento de rede. Considere que o desempenho do sistema de arquivos pode variar e influencia o desempenho geral. É recomendável carregar AEM de teste em combinação com o sistema de arquivos remoto/de rede.
+1. O &#39;Sistema de Arquivos&#39; inclui o armazenamento de blocos compatível com POSIX. Isso inclui a tecnologia de armazenamento de rede. Mind that file system performance might vary and influences the overall performance. É recomendável carregar AEM de teste em combinação com o sistema de arquivos remoto/de rede.
+1. O MongoDB Enterprise 4.2 requer AEM 6.5 SP9 como mínimo.
 1. A Partilha de MongoDB não é suportada no AEM.
 1. O MongoDB Storage Engine WiredTiger é compatível somente.
-1. Suportado para clientes de atualização do AEM Forms. Não suportado para novas instalações.
+1. Suportado para clientes de atualização do AEM Forms. Not supported for new installations.
 
 >[!NOTE]
 >
@@ -229,9 +231,9 @@ A versão mínima necessária da API de servlet é o Servlet 3.1
 
 O Adobe Experience Manager funciona com as seguintes plataformas de servidor para ambientes de produção:
 
-| **Plataforma** | **Nível de suporte** |
+| **Plataforma** | **Support Level** |
 |---|---|
-| **Linux, baseado na distribuição Red Hat** | A: Suportado `[1]` `[3]` |
+| **Linux, based on Red Hat distribution** | A: Suportado `[1]` `[3]` |
 | Linux, baseado na distribuição Debian incl. Ubuntu | A: Suportado `[2]` |
 | Linux, baseado na distribuição SUSE | A: Suportado |
 | Microsoft Windows Server 2019 `[4]` | R: Apoio limitado a novos contratos |
@@ -299,22 +301,22 @@ A interface do usuário do AEM é otimizada para telas maiores (geralmente noteb
   <tr>
    <td><strong>Google Chrome (Evergreen)</strong></td>
    <td>A: Suportado</td>
-   <td>A: Suportado</td>
+   <td>A: Supported</td>
   </tr>
   <tr>
    <td>Microsoft Edge (Evergreen)</td>
-   <td>A: Suportado</td>
-   <td>A: Suportado</td>
+   <td>A: Supported</td>
+   <td>A: Supported</td>
   </tr>
   <tr>
    <td>Microsoft Internet Explorer 11</td>
    <td>Z: Não suportado</td>
-   <td>Z: Não suportado</td>
+   <td>Z: Not supported</td>
   </tr>
   <tr>
    <td>Mozilla Firefox (Evergreen)</td>
-   <td>A: Suportado</td>
-   <td>A: Suportado</td>
+   <td>A: Supported</td>
+   <td>A: Supported</td>
   </tr>
   <tr>
    <td>Mozilla Firefox último ESR [1]</td>
@@ -323,7 +325,7 @@ A interface do usuário do AEM é otimizada para telas maiores (geralmente noteb
   </tr>
   <tr>
    <td>Apple Safari no macOS (Evergreen)</td>
-   <td>A: Suportado</td>
+   <td>A: Supported</td>
    <td>A: Suportado</td>
   </tr>
   <tr>
@@ -409,7 +411,7 @@ Os seguintes requisitos de hardware são aplicáveis para Linux e Windows:
 Se você estiver usando o Dynamic Media no Linux, os seguintes pré-requisitos precisam ser atendidos:
 
 * RedHat Enterprise 7 ou CentOS 7 e posterior com os patches de correção mais recentes
-* Sistema operacional de 64 bits
+* 64-bit Operating System
 * Troca desabilitada (recomendada)
 * SELinux desativado (consulte a observação a seguir)
 
@@ -425,15 +427,15 @@ Se você estiver usando o Dynamic Media no Linux, os seguintes pré-requisitos p
 
 >[!NOTE]
 >
->**Arquitetura NUMA:** Os sistemas com processadores com AMD64 e Intel EM64T são normalmente configurados como plataformas de arquitetura de memória não-uniformes (NUMA), o que significa que o kernel constrói vários nós de memória no momento da inicialização em vez de construir um único nó de memória.
+>**NUMA Architecture:** Systems with processors featuring AMD64 and Intel EM64T are typically configured as non-uniform memory architecture (NUMA) platforms, which means that the kernel constructs multiple memory nodes at boot-time rather than constructing a single memory node.
 >
->A construção de vários nós pode resultar no esgotamento da memória em um ou mais nós, antes que outros nós fiquem esgotados. Quando ocorre esgotamento de memória, o kernel pode decidir interromper processos (por exemplo, o Servidor de Imagem ou o Servidor de Plataforma) mesmo que haja memória disponível.
+>A construção de vários nós pode resultar no esgotamento da memória em um ou mais nós, antes que outros nós fiquem esgotados. When memory exhaustion happens the kernel can decide to kill processes (for example, the Image Server or Platform Server) even though there is available memory.
 >
 >Portanto, o Adobe recomenda que, se você estiver executando um sistema desse tipo, você desative o NUMA usando o **numa=off** para evitar que o kernel mate esses processos.
 
 >[!NOTE]
 >
->**O nome do host do servidor deve resolver:** Certifique-se de que o nome do host do servidor possa ser resolvido para um endereço IP. Se isso não for possível, adicione o nome de host totalmente qualificado e o endereço IP a **/etc/hosts**:
+>**O nome do host do servidor deve resolver:** Certifique-se de que o nome do host do servidor possa ser resolvido para um endereço IP. If that is not possible, add the fully qualified host name and the IP address to **/etc/hosts**:
 >
 >`<ip address> <fully qualified hostname>`
 
@@ -510,7 +512,7 @@ Para Windows x86:
 >* O PDF Generator suporta apenas a versão de varejo de 32 bits do Microsoft Office Professional Plus e outros softwares necessários para a conversão.
 >* O PDF Generator não é compatível com o Microsoft Office 365.
 >* As conversões PDF Generator para OpenOffice são suportadas apenas no Windows e Linux.
->* Os recursos PDF, Optimize PDF e Export PDF do OCR são suportados apenas no Windows.
+>* The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
 >* Uma versão do Acrobat é fornecida com o AEM Forms para habilitar a funcionalidade PDF Generator. A versão agrupada só deve ser acessada programaticamente com o AEM Forms, durante o período da licença do AEM Forms, para uso com o PDF Generator da AEM Forms. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
 >* O serviço PDF Generator não suporta Microsoft Windows 10.
@@ -521,7 +523,7 @@ Para Windows x86:
 ### Requisitos do AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server ou Microsoft® Windows® 10
-* Processador de 1 GHz ou mais rápido com suporte para PAE, NX e SSE2.
+* 1 GHz or faster processor with support for PAE, NX, and SSE2.
 * 1 GB de RAM para 32 bits ou 2 GB de RAM para SO de 64 bits
 * 16 GB de espaço em disco para 32 bits ou 20 GB de espaço em disco para SO de 64 bits
 * Memória gráfica - 128 MB de GPU (256 MB recomendados)
@@ -529,20 +531,20 @@ Para Windows x86:
 * Resolução do monitor de 1024 X 768 pixels ou superior
 * Aceleração de hardware de vídeo (opcional)
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC.
-* Privilégios administrativos para instalar o Designer.
+* Administrative privileges to install Designer.
 
 ### Requisitos para o write-back de metadados do AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP gravação é suportada e ativada para as seguintes plataformas e formatos de arquivo:
 
-* **Sistemas operacionais:**
+* **Operating Systems:**
 
-   * Linux (suporte a aplicativos de 32 e 32 bits em sistemas de 64 bits). Para obter etapas para instalar bibliotecas de clientes de 32 bits, consulte [Como habilitar a extração e o write-back de XMP no RedHat Linux de 64 bits](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+   * Linux (32-bit and 32-bit application support on 64-bit systems). Para obter etapas para instalar bibliotecas de clientes de 32 bits, consulte [Como habilitar a extração e o write-back de XMP no RedHat Linux de 64 bits](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 
    * Windows Server
    * Mac OS X (64 bits)
 
-* **Formatos de arquivo**: JPEG, PNG, TIFF, PDF, INDD, AI e EPS.
+* **File Formats**: JPEG, PNG, TIFF, PDF, INDD, AI, and EPS.
 
 ### Requisitos do AEM Assets para processar ativos com metadados pesados no Linux {#assetsonlinux}
 
