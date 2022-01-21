@@ -3,9 +3,9 @@ title: AEM API GraphQL para uso com Fragmentos de conteúdo
 description: Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) com a API GraphQL AEM para entrega de conteúdo sem interface.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 6c75af3957c319c38177cd62c90e781a982ba91b
+source-git-commit: e7a2a4ad89a58e5fad0acb521adb100cf0bcd1d8
 workflow-type: tm+mt
-source-wordcount: '3919'
+source-wordcount: '3942'
 ht-degree: 1%
 
 ---
@@ -586,6 +586,10 @@ A operação básica de consultas com GraphQL para AEM adere à especificação 
 
    * use `... on`
       * Consulte [Exemplo de consulta para um fragmento de conteúdo de um modelo específico com uma referência de conteúdo](#sample-wknd-fragment-specific-model-content-reference)
+
+* Fallback ao consultar fragmentos aninhados:
+
+   * Se a variação solicitada não existir em um fragmento aninhado, a variável **Principal** será retornada.
 
 ## Consultas Persistentes (Cache) {#persisted-queries-caching}
 
