@@ -2,10 +2,10 @@
 title: Notas de versão do AEM Content and Commerce 2021
 description: Notas de versão do AEM Content and Commerce 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 98ba3edb3b9e93fa13a0f0418f1b17323d5a7233
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 9%
+source-wordcount: '1314'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 | Componente | Requisitos do sistema |
 |:-------|:-----:|
-| Complemento CIF | Mínimo: AEM 6.5.7, Magento 2.3.5 Esquemas GraphQL |
+| Complemento CIF | Mínimo: AEM 6.5.7, Esquemas GraphQL da Adobe Commerce 2.3.5 |
 | Componentes principais da CIF | [Requisitos do sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Arquétipo de projeto do AEM | [Requisitos do sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -31,13 +31,13 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 ### Novidades {#what-is-new-november}
 
-* Componentes MyAccount estendidos baseados nos componentes Peregrine extensíveis do Commerce
+* Componentes myAccount estendidos baseados nos componentes Peregrine extensíveis do Commerce
 
-![Componentes de MyAccount estendidos](/help/assets/CIF/extended-myAccount-components.png)
+![Componentes myAccount estendidos](/help/assets/CIF/extended-myAccount-components.png)
 
-* Os autores podem criar o ad-hoc Commerce Product Recommendations usando tipos de recomendações adicionais
+* Os autores podem criar Commerce Product Recommendations ad-hoc usando tipos de recomendações adicionais
 
-* Suporte a cartões-presente na Loja AEM
+* Suporte a cartões-presente na AEM Storefront
 
 ## Data de lançamento: Outubro de 2021
 
@@ -53,7 +53,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 * Os autores podem adicionar links para páginas de produtos e catálogos em campos de texto usando o editor de rich text (RTE). Um ícone da CIF foi adicionado à barra de ferramentas do RTE que abrirá os seletores para pesquisar e selecionar rapidamente o produto ou a categoria sem sair do contexto.
 
-* O carrinho de compras pop-up e o check-out existentes foram substituídos por páginas dedicadas AEM carrinho de compras e check-out. As páginas são criadas usando componentes Magento Extensible Peregrine
+* O carrinho de compras pop-up e o check-out existentes foram substituídos por páginas dedicadas AEM carrinho de compras e check-out. Os componentes nessas páginas são criados usando os componentes Peregrine extensíveis do Adobe Commerce
 
 * Os comerciantes podem ocultar determinadas categorias de catálogo de produtos na navegação usando o backend do Commerce. O Componente principal de navegação da CIF respeita a configuração de backend de comércio &quot;incluir no menu&quot; para mostrar/ocultar categorias na navegação
 
@@ -195,7 +195,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 ### Novidades
 
-* Suporte para Magento 2.4.2
+* Suporte para Adobe Commerce 2.4.2
 
 ### O que foi melhorado
 

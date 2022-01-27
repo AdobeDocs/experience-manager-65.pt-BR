@@ -1,14 +1,13 @@
 ---
 title: Notas de versão do AEM Content and Commerce 2021
 description: Notas de versão do AEM Content and Commerce 2021
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 11%
+source-wordcount: '1328'
+ht-degree: 12%
 
 ---
-
 
 # Visão geral da versão da Commerce Integration Framework do GitHub
 
@@ -46,9 +45,9 @@ ht-degree: 11%
 
 * Novo componente de carrossel de categoria adicionado para permitir que usuários corporativos arraste e soltem esse componente em páginas de conteúdo AEM para enriquecer páginas de conteúdo com dados de comércio.
 
-* Os componentes principais da CIF foram estendidos para hidratar a Camada de dados do cliente do Adobe, enviando dados comerciais. A Camada de dados do cliente do Adobe é um método padronizado para coletar dados e comunicar os dados aos servidores de análise e relatórios digitais. Para obter mais detalhes, consulte [Camada de dados do cliente do Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
+* Os componentes principais da CIF foram estendidos para hidratar a Camada de dados do cliente do Adobe, enviando dados comerciais. A Camada de dados do cliente do Adobe é um método padronizado para coletar dados e comunicar os dados aos servidores de análise e relatórios digitais. Para obter mais detalhes, consulte [Camada de dados do cliente Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
-* As páginas Detalhes do produto e Lista do produto foram estendidas para preencher automaticamente os metadados de SEO (como título, meta descrição, meta palavras-chave) configurados na interface do usuário do administrador do Magento
+* As páginas Detalhes do produto e Lista do produto foram estendidas para preencher automaticamente os metadados de SEO (como título, meta descrição, meta palavras-chave) configurados na interface do administrador do Adobe Commerce
 
 * Bug do componente de teaser de comércio corrigido.
 
@@ -62,7 +61,7 @@ ht-degree: 11%
 
 ### Novidades {#what-is-new-september}
 
-* Suporta consultas para Esquema Magento 2.4.0.
+* Suporta consultas para Esquema do Adobe Commerce 2.4.0.
 
 * Recursos de informações de conta adicionados para permitir que os compradores atualizem informações pessoais.
 
@@ -72,7 +71,7 @@ ht-degree: 11%
 
 * Suporte para tipos de produtos embutidos disponível.
 
-* Os desenvolvedores podem configurar as tags HTML para os componentes Carrossel de produtos, Produtos relacionados e Lista de categorias em destaque para seguir as práticas recomendadas da SEO.
+* Os desenvolvedores podem configurar as tags do HTML para o Carrossel de produtos, produtos relacionados e componentes da Lista de categorias em destaque para seguir as práticas recomendadas da SEO.
 
 * Foram corrigidos bugs na Minha conta.
 
@@ -114,7 +113,7 @@ ht-degree: 11%
 
 * O site de referência Venia da CIF foi extraído do repo do arquétipo da CIF e agora é um repositório GitHub independente.
 
-* O arquétipo da CIF foi mesclado com AEM Arquétipo de projeto. Para novos projetos, use [AEM Arquétipo de projeto](https://github.com/adobe/aem-project-archetype) como o ponto de partida.
+* O arquétipo da CIF foi mesclado com AEM Arquétipo de projeto. Para novos projetos, use [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype) como ponto de partida.
 
 * O gerenciamento do catálogo de endereços foi adicionado para permitir que os usuários conectados gerenciem seus endereços.
 
@@ -166,11 +165,11 @@ Esta é a primeira versão dos Componentes principais da CIF compatível com o A
 
 ### Novidades {#what-is-new-may}
 
-* Suporta consultas para Esquema Magento 2.3.5.
+* Suporta consultas para o Esquema Adobe Commerce 2.3.5.
 
 * Suporte de Pesquisa Facetada adicionado à Página de Pesquisa e à Página de Lista de Produtos para permitir que os compradores filtrem os resultados da pesquisa com base nos aspectos de Produto.
 
-* Novo serviço OSGi adicionado para personalizar URLs PDP/PLP para fins de SEO. Para obter mais detalhes, consulte esta [documentação](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
+* Novo serviço OSGi adicionado para personalizar URLs PDP/PLP para fins de SEO. Para obter mais detalhes, consulte esta seção [documentação](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
 
 * Vínculo de produto criado automaticamente quando uma Configuração da nuvem é criada.
 
@@ -214,7 +213,7 @@ Esta é a primeira versão dos Componentes principais da CIF compatível com o A
 
 ### Novidades {#what-is-new-february}
 
-* Suporta consultas para Esquema Magento 2.3.4.
+* Suporta consultas para o Esquema Adobe Commerce 2.3.4.
 
 * Adição do suporte à pesquisa no Seletor de categorias.
 

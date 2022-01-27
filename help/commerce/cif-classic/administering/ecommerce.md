@@ -4,15 +4,15 @@ description: AEM eCommerce ajuda os profissionais de marketing a fornecer experi
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# eCommerce{#ecommerce}
+# comércio eletrônico{#ecommerce}
 
 * [Conceitos ](/help/commerce/cif-classic/administering/concepts.md)
 * [Administração (genérica)](/help/commerce/cif-classic/administering/generic.md)
@@ -41,7 +41,7 @@ O Adobe fornece duas versões da Estrutura de integração de comércio:
     </ul> </td>
    <td>
     <ul>
-     <li>Magento</li>
+     <li>Adobe Commerce</li>
      <li>Java e Javascript</li>
      <li>Nenhum dado de comércio armazenado no repositório JCR</li>
     </ul> </td>
@@ -81,12 +81,12 @@ O Adobe fornece duas versões da Estrutura de integração de comércio:
   <tr>
    <td>Modelo de dados padronizado</td>
    <td>Não</td>
-   <td>Sim, esquema Magento GraphQL</td>
+   <td>Sim, esquema GraphQL da Adobe Commerce</td>
   </tr>
   <tr>
    <td>Disponibilidade</td>
    <td><p>Sim. SAP Commerce Cloud (Extensão atualizada para oferecer suporte ao AEM 6.4 e Hybris 5 (padrão) e mantém compatibilidade com Hybris 4</p> <p>Salesforce Commerce Cloud (Conector de software aberto para suporte ao AEM 6.4)</p> </td>
-   <td>Sim por meio do código aberto via GitHub. Magento Commerce (Suporta Magento 2.3.2 (padrão) e compatível com o Magento 2.3.1).</td>
+   <td>Sim por meio do código aberto via GitHub. Adobe Commerce (Suporta 2.3.2 (padrão) e compatível com 2.3.1).</td>
   </tr>
   <tr>
    <td>Quando usar</td>
@@ -122,13 +122,13 @@ A implementação permite acesso em tempo real às informações do produto. Iss
 >
 >Para usar a estrutura de integração com provedores externos de comércio eletrônico, primeiro é necessário instalar os pacotes necessários. Para obter mais informações, consulte [Implantação do comércio eletrônico](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->Para obter informações sobre como estender os recursos do eCommerce, consulte [Desenvolvendo eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
+>Para obter informações sobre como estender os recursos de comércio eletrônico, consulte [Desenvolvimento do comércio eletrônico](/help/commerce/cif-classic/developing/ecommerce.md).
 
-## Principais recursos {#main-features}
+## Recursos principais {#main-features}
 
 AEM eCommerce fornece:
 
-* Vários **componentes prontos para uso do AEM** para ilustrar o que pode ser alcançado no seu projeto:
+* Um número de **componentes de AEM prontos para uso** para ilustrar o que pode ser feito para o seu projeto:
 
    * Exibição do produto
    * Carrinho de compras
@@ -143,7 +143,7 @@ AEM eCommerce fornece:
    >
    >A estrutura de integração fornecida pelo AEM também permite que você crie componentes de AEM adicionais para recursos de comércio, independentemente do mecanismo de comércio eletrônico específico.
 
-* **Pesquisar**  - usando:
+* **Pesquisar** - utilizando:
 
    * a pesquisa de AEM
    * a pesquisa do sistema de comércio eletrônico
@@ -152,15 +152,15 @@ AEM eCommerce fornece:
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)
 
-* Usa a capacidade de AEM para **apresentar seu conteúdo em vários canais**, seja essa janela completa do navegador ou dispositivo móvel. Isso entrega seu conteúdo no formato necessário para seus visitantes.
+* Usa a capacidade AEM para **apresentar seu conteúdo em vários canais**, seja essa janela completa do navegador ou dispositivo móvel. Isso entrega seu conteúdo no formato necessário para seus visitantes.
 
    ![](/help/sites-administering/assets/chlimage_1-132.png)
 
-* A capacidade de **desenvolver sua própria implementação de integração com base no [AEM estrutura de comércio eletrônico](#the-framework)**.
+* A capacidade de **desenvolva sua própria implementação de integração com base no [Estrutura de comércio eletrônico AEM](#the-framework)**.
 
    As duas implementações atualmente disponíveis são criadas na mesma base - além da API geral (a estrutura). A implementação de uma nova integração envolve apenas a implementação dos recursos de que sua integração precisa. Os componentes de front-end podem ser usados por qualquer nova implementação, pois usam interfaces (assim, são independentes da implementação).
 
-* A possibilidade de desenvolver **comércio orientado por experiência com base em dados e atividade do comprador**. Isso permite que você perceba vários cenários:
+* A possibilidade de desenvolver **comércio orientado para a experiência com base em dados e atividade do comprador**. Isso permite que você perceba vários cenários:
 
    * Um exemplo pode ser fornecer reduções nos custos de envio quando o pedido total exceder um valor específico.
    * Outro pode permitir que você forneça ofertas sazonais que usam dados de perfil (por exemplo, localização). Estes podem ser realçados, novamente dependendo de outros fatores, quando necessário.
@@ -179,9 +179,9 @@ AEM eCommerce fornece:
    * Histórico completo do pedido
    * Atualização do catálogo expresso
 
-## A Estrutura {#the-framework}
+## Enquadramento {#the-framework}
 
-A seção [Conceitos](/help/commerce/cif-classic/administering/concepts.md) cobre a estrutura com mais detalhes, mas o seguinte fornece uma exibição de alto nível e alta velocidade da estrutura:
+O [Conceitos](/help/commerce/cif-classic/administering/concepts.md) A seção aborda a estrutura com mais detalhes, mas o seguinte fornece uma visão de alto nível e de alta velocidade da estrutura:
 
 ### O quê? {#what}
 
