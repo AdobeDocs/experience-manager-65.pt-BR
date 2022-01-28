@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
-source-git-commit: 3cf3a05afd92f2992312ecfb931ef38278c5436c
+source-git-commit: d947bd98b3a0f6fd79cde5b5b2fca23487077da3
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 19%
+source-wordcount: '658'
+ht-degree: 49%
 
 ---
 
@@ -37,8 +37,8 @@ ht-degree: 19%
    + [Connected Assets com [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
    + [Arquivo de informativos por Experience League](dynamic-media-newsletter.md)
-   + [Configurar Dynamic Media](administering-dynamic-media.md)
-   + [Trabalhar com a Dynamic Media](dynamic-media.md)
+   + [Configuração do Dynamic Media](administering-dynamic-media.md)
+   + [Trabalhar com o Dynamic Media](dynamic-media.md)
    + [Configurar o Dynamic Media - Modo Scene7](config-dms7.md)
    + [Opcional - Configurar o Dynamic Media - Modo Scene7, Configurações Gerais](dm-general-settings.md)
    + [Opcional - Configurar o Dynamic Media - Modo Scene7, Configuração de publicação](dm-publish-settings.md)
@@ -48,18 +48,17 @@ ht-degree: 19%
    + [Acessibilidade no Dynamic Media](accessibility-dm.md)
    + [Gerenciar ativos do Dynamic Media](managing-assets.md)
    + [Práticas recomendadas para otimização da qualidade de imagens](best-practices-for-optimizing-the-quality-of-your-images.md)
-   + [Gerenciar predefinições do visualizador do Dynamic Media](managing-viewer-presets.md)
-   + [Aplicar predefinições do visualizador do Dynamic Media](viewer-presets.md)
-   + [Gerenciar predefinições da imagem do Dynamic Media](managing-image-presets.md)
-   + [Aplicar predefinições da imagem do Dynamic Media](image-presets.md)
+   + [Gerenciar predefinições de visualização do Dynamic Media](managing-viewer-presets.md)
+   + [Aplicar predefinições de visualização do Dynamic Media](viewer-presets.md)
+   + [Gerenciar predefinições de imagem do Dynamic Media](managing-image-presets.md)
+   + [Aplicar predefinições de imagem do Dynamic Media](image-presets.md)
    + [Perfis de vídeo do Dynamic Media](video-profiles.md)
    + [Perfis de imagem do Dynamic Media](image-profiles.md)
    + [Imagem inteligente](imaging-faq.md)
    + [Vídeo](s7-video.md)
-   + [Adicionar recursos do Dynamic Media à sua página](scene7.md)
    + [Entrega de conteúdo HTTP2](http2.md)
-   + [Fornecer ativos da Dynamic Media](delivering-dynamic-media-assets.md)
-   + [Ativar a proteção de hotlink no Dynamic Media](hotlink-protection.md)
+   + [Entregar ativos do Dynamic Media](delivering-dynamic-media-assets.md)
+   + [Ativar proteção de hotlink no Dynamic Media](hotlink-protection.md)
    + [Suporte para 3D](/help/assets/assets-3d.md)
    + [Conjuntos de imagem](image-sets.md)
    + [Imagens panorâmicas](panoramic-images.md)
@@ -70,18 +69,19 @@ ht-degree: 19%
    + [Imagens interativas](interactive-images.md)
    + [Vídeos interativos](interactive-videos.md)
    + [Vídeo 360 VR](/help/assets/360-video.md)
-   + [Integrar visualizadores do Dynamic Media com tags do Adobe Analytics e do Adobe Experience Platform](/help/assets/tags.md)
+   + [Integrar visualizadores do Dynamic Media com tags do Adobe Analytics e da Adobe Experience Platform](/help/assets/tags.md)
    + [Criar pop-ups personalizados usando o Quickview](custom-pop-ups.md)
-   + [Fornecer imagens otimizadas para um site responsivo](responsive-site.md)
+   + [Entregar imagens otimizadas para um site responsivo](responsive-site.md)
    + [Visualizar ativos do Dynamic Media](previewing-assets.md)
-   + [Adicionar ativos do Dynamic Media às páginas](adding-dynamic-media-assets-to-pages.md)
-   + [Incorporar o visualizador de vídeo ou imagem do Dynamic Media em uma página da Web](embed-code.md)
-   + [Vincular URLs ao aplicativo da Web](linking-urls-to-yourwebapplication.md)
+   + [Adição de ativos do Dynamic Media a páginas](adding-dynamic-media-assets-to-pages.md)
+   + [Adicionar recursos do Dynamic Media Classic às páginas](scene7.md)
+   + [Incorporação do visualizador do Dynamic Video ou Image em uma página da Web](embed-code.md)
+   + [Vincular URLs ao seu aplicativo web.](linking-urls-to-yourwebapplication.md)
    + [Uso de conjuntos de regras para transformar URLs](using-rulesets-to-transform-urls.md)
    + [Publicar ativos do Dynamic Media](publishing-dynamicmedia-assets.md)
    + [Trabalhar com publicação seletiva no Dynamic Media](selective-publishing.md)
-   + [Invalidar o cache CDN por meio do Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidar o cache CDN por meio do Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
+   + [Invalidar o cache da CDN por meio do Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidar o cache da CDN por meio do Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Instale o Feature Pack 18912 para migração de ativos em massa](bulk-ingest-migrate.md)
    + [Trabalhar com seletores](working-with-selectors.md)
 + Estender ativos {#extending}
@@ -117,8 +117,8 @@ ht-degree: 19%
    + [[!DNL Assets] e MediaLibrary](medialibrary.md)
    + [Usar rasterizador de PDF](aem-pdf-rasterizer.md)
    + [Configurar restrições de upload](configuring-asset-upload-restrictions.md)
-   + [[!DNL Experience Manager] and [!DNL Creative Cloud] integração](aem-cc-integration-best-practices.md)
-   + [Integrar com [!DNL InDesign Server]](indesign.md)
+   + [[!DNL Experience Manager] e [!DNL Creative Cloud] integração](aem-cc-integration-best-practices.md)
+   + [Integrar com a [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management em ativos](drm.md)
    + [Usar pacote de demonstração para insights de ativos](use-demo-package-for-asset-insights.md)
    + [Configurar Adobe Asset Link](configure-asset-link.md)
@@ -132,13 +132,13 @@ ht-degree: 19%
    + [Marque seus ativos com água](watermarking.md)
    + [Modelos de ativos](asset-templates.md)
 + Brand Portal {#brandportal}
-   + [Configurar [!DNL Assets] com [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [Publicar ativos em [!DNL Brand Portal]](brand-portal-publish-assets.md)
+   + [Configurar o [!DNL Assets] com o [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Publicar ativos no [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Publicar pastas em [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Publicar coleções no [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + Fragmentos de conteúdo {#content-fragments}
    + [Trabalho com fragmentos de conteúdo](content-fragments/content-fragments.md)
-   + [Entrega sem cabeçalho com fragmentos de conteúdo e GraphQL](content-fragments/content-fragments-graphql.md)
+   + [Headless delivery com fragmentos de conteúdo e GraphQL](content-fragments/content-fragments-graphql.md)
    + [Ativar a funcionalidade de fragmento de conteúdo para sua instância](content-fragments/content-fragments-configuration-browser.md)
    + [Modelos de fragmentos do conteúdo](content-fragments/content-fragments-models.md)
    + [Gerenciamento dos fragmentos de conteúdo](content-fragments/content-fragments-managing.md)
@@ -172,5 +172,5 @@ ht-degree: 19%
    + [Representações de vídeo](video-renditions.md)
 + Integração com outras soluções {#integrations}
    + [Integrações com [!DNL Adobe Workfront]](workfront-integrations.md)
-   + [Instalar [!DNL enhanced connector] para [!DNL Workfront]](workfront-connector-install.md)
-   + [Configurar [!DNL enhanced connector] para [!DNL Workfront]](workfront-connector-configure.md)
+   + [Instalar o [!DNL enhanced connector] para o [!DNL Workfront]](workfront-connector-install.md)
+   + [Configurar o [!DNL enhanced connector] para o [!DNL Workfront]](workfront-connector-configure.md)
