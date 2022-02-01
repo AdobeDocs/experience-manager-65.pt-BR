@@ -11,7 +11,7 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 9fbf338b18e73fbd272af061381baf34b694239a
 workflow-type: tm+mt
 source-wordcount: '1538'
 ht-degree: 1%
@@ -175,7 +175,7 @@ Ao retornar para AEM, é possível concluir a configuração do IMS adicionando 
 1. Aqui você pode usar o [detalhes do Adobe I/O](#details-stored-for-the-adobe-io-integration-project):
 
    * **Título**: Seu texto.
-   * **Servidor de autorização**: Copie/cole no `"aud"` da **Carga** seção abaixo, por exemplo `"https://ims-na1.adobelogin.com"` no exemplo abaixo
+   * **Servidor de autorização**: Copie/cole no `aud` da **Carga** seção abaixo, por exemplo `https://ims-na1.adobelogin.com` no exemplo abaixo
    * **Chave da API**: Copie isso do [Visão geral](#details-stored-for-the-adobe-io-integration-project) seção de integração do Adobe I/O para o Target
    * **Segredo do cliente**: Gere isso no [Visão geral](#details-stored-for-the-adobe-io-integration-project) seção da integração do Adobe I/O para Target e cópia
    * **Carga**: Copie isso do [Gerar JWT](#details-stored-for-the-adobe-io-integration-project) seção de integração do Adobe I/O para o Target
@@ -230,6 +230,7 @@ A configuração agora pode ser mencionada para um Cloud Service para usar a API
 1. Insira os detalhes na **Configurações do Adobe Target** guia :
 
    * **Autenticação**: IMS
+
    * **ID do locatário**: a ID de locatário do Adobe IMS. Consulte também a [ID do locatário e código do cliente](#tenant-client) seção.
 
       >[!NOTE]
@@ -241,24 +242,34 @@ A configuração agora pode ser mencionada para um Cloud Service para usar a API
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >Em seguida, você usaria `yourtenantid`.
-   * **Código do cliente**: Consulte a [ID do locatário e código do cliente](#tenant-client) seção.
-   * **Configuração IMS**: selecione o nome da Configuração IMS
-   * **Tipo de API**: REST
-   * **Configuração do A4T Analytics Cloud**: Selecione a configuração de nuvem do Analytics usada para métricas e metas de atividade do Target. Isso é necessário se estiver usando o Adobe Analytics como fonte de relatórios ao direcionar conteúdo. Se você não vir a configuração da nuvem, consulte a observação em [Configuração do A4T Analytics Cloud](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
-   * **Usar direcionamento preciso**: Por padrão, essa caixa de seleção está marcada. Se selecionada, a configuração do serviço de nuvem aguardará o contexto carregar antes de carregar o conteúdo. Veja a observação a seguir.
-   * **Sincronizar segmentos do Adobe Target**: Selecione essa opção para baixar segmentos definidos no Target para usá-los em AEM. Você deve selecionar essa opção quando a propriedade Tipo de API for REST, pois os segmentos em linha não são compatíveis e você sempre precisa usar segmentos do Target. (Observe que o termo AEM de &quot;segmento&quot; equivale ao &quot;público-alvo&quot; do Target.)
-   * **Biblioteca do cliente**: Selecione se deseja a biblioteca do cliente AT.js ou mbox.js (obsoleto).
-   * **Usar o sistema de gerenciamento de tags para fornecer a biblioteca do cliente**: Use o DTM (obsoleto), o Adobe Launch ou qualquer outro sistema de gerenciamento de tags.
-   * **AT.js personalizada**: Deixe em branco se tiver marcado a caixa Tag Management ou para usar a AT.js padrão. Como alternativa, carregue sua AT.js personalizada. Somente será exibido se tiver selecionado AT.js.
 
+   * **Código do cliente**: Consulte a [ID do locatário e código do cliente](#tenant-client) seção.
+
+   * **Configuração IMS**: selecione o nome da Configuração IMS
+
+   * **Tipo de API**: REST
+
+   * **Configuração do A4T Analytics Cloud**: Selecione a configuração de nuvem do Analytics usada para métricas e metas de atividade do Target. Isso é necessário se estiver usando o Adobe Analytics como fonte de relatórios ao direcionar conteúdo. Se você não vir a configuração da nuvem, consulte a observação em [Configuração do A4T Analytics Cloud](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+
+   * **Usar direcionamento preciso**: Por padrão, essa caixa de seleção está marcada. Se selecionada, a configuração do serviço de nuvem aguardará o contexto carregar antes de carregar o conteúdo. Veja a observação a seguir.
+
+   * **Sincronizar segmentos do Adobe Target**: Selecione essa opção para baixar segmentos definidos no Target para usá-los em AEM. Você deve selecionar essa opção quando a propriedade Tipo de API for REST, pois os segmentos em linha não são compatíveis e você sempre precisa usar segmentos do Target. (Observe que o termo AEM de &quot;segmento&quot; equivale ao &quot;público-alvo&quot; do Target.)
+
+   * **Biblioteca do cliente**: Selecione se deseja a biblioteca do cliente AT.js ou mbox.js (obsoleto).
+
+   * **Usar o sistema de gerenciamento de tags para fornecer a biblioteca do cliente**: Use o DTM (obsoleto), o Adobe Launch ou qualquer outro sistema de gerenciamento de tags.
+
+   * **AT.js personalizada**: Deixe em branco se tiver marcado a caixa Tag Management ou para usar a AT.js padrão. Como alternativa, carregue sua AT.js personalizada. Somente será exibido se tiver selecionado AT.js.
    >[!NOTE]
    >
    >[Configuração de um Cloud Service para usar a API do Target Classic](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) foi substituída (usa a guia Configurações do Adobe Recommendations ).
+
 1. Clique em **Conectar-se ao Target** para inicializar a conexão com o Adobe Target.
 
    Se a conexão for bem-sucedida, a mensagem **Conexão bem-sucedida** é exibida.
 
 1. Selecionar **OK** na mensagem, seguida de **OK** na caixa de diálogo para confirmar a configuração.
+
 1. Agora você pode continuar com [Adicionar uma estrutura do Target](/help/sites-administering/target-configuring.md#adding-a-target-framework) para configurar parâmetros do ContextHub ou do ClientContext que serão enviados para o Target. Observe que isso pode não ser necessário para exportar AEM Fragmentos de experiência para o Target.
 
 ### ID do locatário e código do cliente {#tenant-client}
