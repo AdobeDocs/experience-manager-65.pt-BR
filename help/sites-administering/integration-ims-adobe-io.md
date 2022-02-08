@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
-source-git-commit: 9fbf338b18e73fbd272af061381baf34b694239a
+source-git-commit: bf55553f48c1eddf5dec503fb105cf35ff26677d
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1539'
 ht-degree: 1%
 
 ---
@@ -143,7 +143,7 @@ Agora, você deve atribuir os privilégios necessários à integração:
 
 1. Navegar para **Produtos** (barra de ferramentas superior), em seguida, selecione **Adobe Target - &lt;*your-tenant-id*>** (no painel esquerdo).
 1. Selecionar **Perfis de produto**, seu espaço de trabalho necessário na lista apresentada. Por exemplo, Espaço de trabalho padrão.
-1. Selecionar **Integrações**, em seguida, a configuração de integração necessária.
+1. Selecionar **Credenciais da API**, em seguida, a configuração de integração necessária.
 1. Selecionar **Editor** como **Função do produto**; em vez de **Observador**.
 
 ## Detalhes armazenados para o Projeto de integração do Adobe I/O {#details-stored-for-the-adobe-io-integration-project}
