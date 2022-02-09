@@ -8,13 +8,13 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
-source-git-commit: 1a410c7b71f0e329b327a7f7f05137fcd220fb6a
+exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
+source-git-commit: 8561eb8b4b5164188ebf387c8f0344b462b830ec
 workflow-type: tm+mt
-source-wordcount: '3459'
+source-wordcount: '3467'
 ht-degree: 3%
 
 ---
-
 
 # Configurar a publicação do Dynamic Media para o servidor de imagem
 
@@ -64,6 +64,8 @@ A página Servidor de imagens estabelece as configurações padrão para o forne
 ### Guia Segurança {#security-tab}
 
 **[!UICONTROL Endereço do cliente]** - Permite especificar um ou mais endereços IP ou intervalos de endereço IP. Quando especificado, as solicitações para este catálogo de imagem que se origina de um cliente em um endereço IP não listado são rejeitadas. Essa regra se aplica à entrega de imagens e imagens renderizadas.
+
+![Guia Segurança ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Guia Segurança mostrando o campo &quot;permitir&quot; IP.*
 
 ### Guia Gerenciamento de catálogo {#catalog-management-tab}
 
