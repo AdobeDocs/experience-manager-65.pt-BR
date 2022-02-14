@@ -8,10 +8,10 @@ breadcrumb-title: Guia de administração
 user-guide-description: Saiba mais sobre como administrar o AEM.
 feature: Administering
 role: Admin
-source-git-commit: 48abd410e293a193abc34a1bd4f038a121e58490
+source-git-commit: 7af09e73f40c2d947c9ccce000174155ef67137f
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 19%
+source-wordcount: '631'
+ht-degree: 28%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 19%
    + [Administração do site](msm-and-translation.md)
    + [Trabalhos assíncronos](asynchronous-jobs.md)
    + [Reutilizar conteúdo: gerenciador de vários sites e Live Copy](msm.md)
-   + [Console de Visão Geral da Live Copy](msm-livecopy-overview.md)
+   + [Visão geral do console da Live Copy](msm-livecopy-overview.md)
    + [Configurar a sincronização da Live Copy](msm-sync.md)
-   + [Criação e sincronização de cópias em tempo real](msm-livecopy.md)
+   + [Criação e sincronização de Live Copies](msm-livecopy.md)
    + [Conflitos de implementação do MSM](msm-rollout-conflicts.md)
    + [Práticas recomendadas do MSM](msm-best-practices.md)
    + [Tradução de conteúdo para sites multilíngues](translation.md)
@@ -33,9 +33,9 @@ ht-degree: 19%
    + [Identificação de conteúdo a ser traduzido](tc-rules.md)
    + [Preparação de conteúdo para tradução](tc-prep.md)
    + [Criar uma raiz de idioma usando a interface clássica](tc-lroot-classic.md)
-   + [Conexão com o Microsoft Translator](tc-msconf.md)
+   + [Conectar ao Microsoft Translator](tc-msconf.md)
    + [Configuração da estrutura de integração de tradução](tc-tic.md)
-   + [Assistente de Cópia de Idioma](tc-wizard.md)
+   + [Assistente de cópia de Idioma](tc-wizard.md)
    + [Aprimoramentos de tradução](tc-enhancements.md)
    + [Práticas recomendadas de tradução](tc-bp.md)
    + [Configurações e o navegador de configuração](configurations.md)
@@ -143,6 +143,7 @@ ht-degree: 19%
    + [Configuração manual da integração com o Adobe Target](target-configuring.md)
    + [Pré-requisitos para integração com o Adobe Target](target-requirements.md)
    + [Integração com o Adobe Target usando o Adobe I/O](integration-ims-adobe-io.md)
+   + [Integração com o Adobe Target usando o Adobe I/O](integration-target-ims-adobe-io.md)
    + [Classificações Adobe](adobeanalytics-classifications.md)
    + [Integração com o Adobe Search &amp; Promote](search-and-promote.md)
    + [Integração de soluções](integration.md)
