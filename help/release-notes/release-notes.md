@@ -1,15 +1,15 @@
 ---
-title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
+title: ' [!DNL Adobe Experience Manager] '
 description: '[!DNL Adobe Experience Manager]As notas o 6.5 que descrevem as informações da versão, novidades, como instalar e listas detalhadas de modificação.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 1ca3032063a148293f67c69a941b83b6aa5d48f1
+source-git-commit: b36b7b0dafbce3aa75afff60fae3cc714b6ac902
 workflow-type: tm+mt
-source-wordcount: '3884'
+source-wordcount: '3887'
 ht-degree: 4%
 
 ---
 
-# [!DNL Adobe Experience Manager] 6.5 Notas de versão mais recentes do Service Pack {#aem-service-pack-release-notes}
+# [!DNL Adobe Experience Manager] {#aem-service-pack-release-notes}
 
 ## Informações da versão {#release-information}
 
@@ -18,45 +18,45 @@ ht-degree: 4%
 | Versão | 6.5.11.0 |
 | Tipo | Lançamento do Service Pack |
 | Data | 25 de novembro de 2021 |
-| URL de download | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip) |
+| URL de download | [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip) |
 
-## O que está incluído em [!DNL Adobe Experience Manager] 6.5.11.0 {#what-is-included-in-aem}
+## [!DNL Adobe Experience Manager] {#what-is-included-in-aem}
 
-[!DNL Adobe Experience Manager] A versão 6.5.11.0 inclui novos recursos, principais melhorias solicitadas pelo cliente e melhorias de desempenho, estabilidade e segurança, lançadas desde a disponibilização da versão 6.5 em abril de 2019. O service pack está instalado em [!DNL Adobe Experience Manager] 6.5.
+[!DNL Adobe Experience Manager] [!DNL Adobe Experience Manager]
 
-Os principais recursos e aprimoramentos introduzidos no [!DNL Adobe Experience Manager] 6.5.11.0 são as seguintes:
+[!DNL Adobe Experience Manager]
 
-* Adição de suporte a vários campos para o tipo de dados de texto multilinha.
+* Added multifield support for multiline text data type.
 
-* Aprimoramento para tornar os usuários conscientes do trabalho assíncrono em execução no momento em segundo plano, para evitar que ele acione várias operações assíncronas no mesmo caminho.
+* Enhancement to make users aware of the asynchronous job currently running in the background to prevent them from triggering multiple asynchronous operations on same path.
 
-* A geração automática de mapa de site para fins de SEO é possível usando o [Pacote de índice SEO](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip). Ele é compatível com mapas de site, URLs alternativos, metatags de robô e muito mais na [!DNL Core Components].
+* [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip) [!DNL Core Components]
 
-* As melhorias na experiência do usuário exibem o número de ativos presentes em uma pasta. Para mais de 1000 ativos em uma pasta, [!DNL Assets] exibe 1000+.
+* A user experience enhancements displays the number of assets present in a folder. [!DNL Assets]
 
-   ![Número de ativos em uma pasta](/help/assets/assets/browse-folder-number-of-assets.png)
+   ![](/help/assets/assets/browse-folder-number-of-assets.png)
 
-* Suporte a perfis de negócios para Adobe Asset Link.
+* Business profiles support for Adobe Asset Link.
 
-* Agora você pode usar [!DNL Dynamic Media] para configurar as Configurações gerais em vez de precisar passar pelo [!DNL Dynamic Media Classic] aplicativo de desktop. Consulte [Definir as configurações gerais do Dynamic Media](/help/assets/dm-general-settings.md).
+* [!DNL Dynamic Media][!DNL Dynamic Media Classic] [](/help/assets/dm-general-settings.md)
 
-   ![Configurações gerais do DM](/help/assets/assets-dm/dm-general-settings.png)
+   ![](/help/assets/assets-dm/dm-general-settings.png)
 
-* Agora você pode usar [!DNL Dynamic Media] para configurar a Configuração de publicação em vez de precisar passar pelo [!DNL Dynamic Media Classic] aplicativo de desktop. Consulte [Configurar a publicação do Dynamic Media](/help/assets/dm-publish-settings.md).
+* [!DNL Dynamic Media][!DNL Dynamic Media Classic] [](/help/assets/dm-publish-settings.md)
 
-   ![Configurações de publicação do DM](/help/assets/assets-dm/dm-publish-setup.png)
+   ![](/help/assets/assets-dm/dm-publish-setup.png)
 
-* O repositório integrado (Apache Jackrabbit Oak) foi atualizado para 1.22.9.
+* The built-in repository (Apache Jackrabbit Oak) is updated to 1.22.9.
 
-Esta é a lista de correções fornecidas em [!DNL Experience Manager] Versão 6.5.11.0.
+[!DNL Experience Manager]
 
 ### [!DNL Sites] {#sites-65110}
 
 >[!WARNING]
 >
->Está a ser desenvolvida uma nova versão deste pacote. O link será publicado assim que for disponibilizado.
+>A new version of the &quot;index definition&quot; package is being developed. The link below will be published as soon as it is made available.
 
-Para acessar a entrega de conteúdo sem interface usando Fragmentos de conteúdo com GraphQL e usar os recursos aprimorados do Fragmento de conteúdo e do Editor, instale o pacote de definição de índice e reindexe as seguintes definições de índice de AEM assíncronas:
+To access headless content delivery using Content Fragments with GraphQL and use the enhanced Content Fragment Models and Editor capabilities, install the index definition package, and reindex the following asynchronous AEM index definitions:
 
 * `/oak:index/assetPrefixNodename`
 
@@ -64,245 +64,245 @@ Para acessar a entrega de conteúdo sem interface usando Fragmentos de conteúdo
 
 * `/oak:index/graphqlConfig`
 
-Os seguintes problemas foram corrigidos em [!DNL Sites]:
+[!DNL Sites]
 
-* O modelo para criar um fragmento de conteúdo não é visível ao criar um fragmento de conteúdo (SITES-3365).
+* Template to create a content fragment is not visible when creating a content fragment (SITES-3365).
 
-* Expressões regulares e [!UICONTROL Exclusivo] as opções de campo não estão funcionando no [!UICONTROL appsUrl] no editor de fragmento de conteúdo (SITES-1823).
+* 
 
-* As configurações são adicionadas em `/apps/system` nó em vez de `/libs` ao instalar o service pack anterior (SITES-3203).
+* `/apps/system``/libs`
 
-* Os recursos que usam fragmentos de conteúdo não estão funcionando normalmente na instalação do service pack anterior (SITES-3151).
+* Features making use of content fragments are not functioning as usual on installing the previous service pack (SITES-3151).
 
-* A classificação não funciona em [!UICONTROL Modelos de fragmentos do conteúdo] (SITES-2722).
+* 
 
-* O GraphiQL não está carregando modelos (esquemas) e está encontrando erro para o JSON do ponto de extremidade (SITES-2428).
+* GraphiQL is not loading models (schemas) and is encountering error for endpoint JSON (SITES-2428).
 
-* Os tipos de campo de enumeração que foram adicionados a um [!UICONTROL Modelo de fragmento de conteúdo] não estão visíveis em [!UICONTROL Editor do modelo de fragmento de conteúdo] (SITES-2391)
+* 
 
-* O tipo de dados de tags não é compatível com determinados tipos de dados (SITES-2390).
+* Tags data type does not support certain data types (SITES-2390).
 
-* [!UICONTROL API de restante do fragmento de conteúdo] O está exportando valores de tag desatualizados (SITES-2386).
+* 
 
-* A seta na navegação estrutural não está alinhada corretamente no Editor de fragmentos de conteúdo (SITES-2341).
+* Arrow in breadcrumb is not aligned properly in Content Fragments Editor (SITES-2341).
 
-* A pesquisa de referência do fragmento de conteúdo é lenta para conjuntos de dados grandes (SITES-2147).
+* Content fragment reference search is slow for large datasets (SITES-2147).
 
-* [!UICONTROL CopyUrl] é inadequada em [!UICONTROL Editor de fragmentos de conteúdo] (SITES-2007)
+* 
 
-* Nenhum aviso é exibido quando o fragmento de conteúdo é publicado junto com um modelo associado e o modelo introduz alterações de frenagem (SITES-1988).
+* No warning is displayed when content fragment is published along with an associated model and the model introduces braking changes (SITES-1988).
 
-* A edição de URL do modelo de fragmento de conteúdo é diferente para diferentes casos de uso de modelos de fragmento de conteúdo (SITES-1980).
+* URL editing of content fragment model is different for different use cases of editing content fragment models (SITES-1980).
 
-* Ao criar dois fragmentos de conteúdo com o mesmo título usando o [!UICONTROL Novo fragmento de conteúdo] , o assistente retorna o mesmo caminho de fragmento (SITES-1978).
+* 
 
-* A conclusão automática não está funcionando no [!UICONTROL Modelo de fragmento de conteúdo] aspecto de pesquisa (SITES-1976).
+* 
 
-* Se um fragmento de conteúdo contiver uma enorme hierarquia de fragmentos aninhados, a variável [!UICONTROL Editor de fragmentos de conteúdo] O fica irresponsivo ao carregar o painel lateral (SITES-1974).
+* 
 
-* A pesquisa global no caminho do seletor de fragmentos não está funcionando (SITES-1973).
+* Global search in fragment picker path is not working (SITES-1973).
 
-* As referências estão sendo atualizadas ao mover um fragmento de conteúdo (SITES-1897).
+* References are updating when moving a content fragment (SITES-1897).
 
-* A opção para criar página está ausente na exibição de Cartão e na exibição de Coluna (NPR-37549).
+* Option to create page is missing in Card view and Column view (NPR-37549).
 
-* Ao reorganizar componentes em uma página do Launch, a promoção do Launch não preserva a reordenação dos componentes (NPR-37539).
+* When reordering components on a Launch page, promoting the Launch does not preserve the reordering of components (NPR-37539).
 
-* A opção para selecionar todos os itens em uma lista não está funcionando na página de implantação (NPR-37443).
+* The option to select all the items in a list is not working on the rollout page (NPR-37443).
 
-* A ativação agendada de várias páginas resulta na abertura de uma nova sessão JCR para `wcm-workflow-service` usuário (NPR-37417).
+* `wcm-workflow-service`
 
-* A operação de movimentação em pastas no console Sites está falhando com uma mensagem de erro &quot;Falha ao recuperar informações de inicialização para o item selecionado&quot; (NPR-37340).
+* Move operation on folders in the Sites console is failing with an error message &quot;Failed to retrieve launches information for selected item”(NPR-37340).
 
-* Ao gerar uma miniatura para blueprint e lançamento em cópias ao vivo, a herança de guias após a miniatura em cópias ao vivo é quebrada (NPR-37190).
+* When generating a thumbnail for blueprint and rolling out to live copies, the inheritance for tabs after thumbnail in live copies is broken (NPR-37190).
 
-* O predicado de filtro para exibir a Live Copy não exibe todas as live copies (NPR-37126).
+* The filter predicate to display Live Copy does not display all the live copies (NPR-37126).
 
-* O evento de replicação não retorna a lista de todas as páginas pai e filho que foram marcadas para exclusão quando o manipulador de evento de replicação é chamado no autor (NPR-37123).
+* Replication event does not return the list of all the parent and children pages that were marked for deletion when the replication event handler is called on the author (NPR-37123).
 
-* Ao salvar uma propriedade de vários valores usando o Editor de itens em massa, a sequência separada por vírgulas é armazenada como o primeiro elemento da matriz (NPR-37089).
+* When saving a multi-valued property using Bulk Editor, then the comma-separated string is stored as the first element of the array (NPR-37089).
 
-* O redimensionamento do layout de componente não funciona no layout móvel (NPR-37086).
+* The component layout resizing does not work in mobile layout (NPR-37086).
 
-* Um novo nó é criado incorretamente no nível da live copy ao salvar propriedades da página após adicionar configurações de implementação (NPR-37084).
+* A new node is incorrectly created at the live copy level on saving page properties after adding rollout configurations (NPR-37084).
 
-* O usuário não pode criar cópias em tempo real ou implantar usando propriedades de página para novas páginas principais (SITES-3442).
+* User cannot create live copies or roll out using page properties for new master pages (SITES-3442).
 
-* As tags exibem os nomes das tags em vez do título e a opção Fechar não remove as tags completamente, pois a propriedade das tags funciona incorretamente quando a herança é cancelada no nível da propriedade (NPR-36831).
+* Tags display tag names instead of title and close option does not remove the tags completely due to tags property working incorrectly when inheritance is cancelled at property level (NPR-36831).
 
-* Opção para desmarcar todos os itens não está funcionando e o cabeçalho se sobrepõe com a primeira linha da tabela, da página que exibe uma lista de cópias ativas (NPR-37070).
+* Option to deselect all items is not working and header overlaps with first row in table, of the page which displays a list of live copies (NPR-37070).
 
-* Em uma caixa de diálogo personalizada usada em um workflow, ao tentar validar a caixa de diálogo, o Experience Manager falha com um erro no console do navegador (GRANITE-35049).
+* In a custom dialog used in a workflow, when trying to validate the dialog, Experience Manager fails with an error in the browser console (GRANITE-35049).
 
-Os seguintes aprimoramentos de acessibilidade estão disponíveis em [!DNL Adobe Experience Manager Sites]:
+[!DNL Adobe Experience Manager Sites]
 
-* Os leitores de tela agora anunciam a função da [!UICONTROL Referências do site] e [!UICONTROL Cópias de idioma] opções (SITES-1791).
+* 
 
-* A ordem do foco do modo de navegador agora se move sequencialmente em várias opções na interface do usuário (SITES-1791).
+* The order of browser mode focus now moves sequentially on various options on User interface (SITES-1791).
 
-* Os leitores de tela agora informam se o item de árvore selecionado está no estado selecionado e também anunciam ao usuário que a região de ação é exibida (SITES-2109).
+* Screen readers now narrate whether the selected tree item is in selected state and also announces to the user that the action region is displayed (SITES-2109).
 
-* Os leitores de tela agora anunciam quando há um indicador de carregamento ao selecionar um filtro ou pesquisar uma página (SITES-1790).
+* Screen readers now announce when there is a loading indicator on selecting filter or searching a page (SITES-1790).
 
-* Os leitores de tela agora contam quando a função [!UICONTROL Filtro] não retorna nenhum resultado de pesquisa no painel esquerdo (SITES-1599).
+* 
 
-* Ao navegar no modo de navegação, os leitores de tela narram a função da página de conteúdo e o estado selecionado de uma página quando a tecla enter é pressionada (SITES-1579).
+* When navigating in browse mode, screen readers narrate the role of the content page and selected state of a page when enter key is pressed (SITES-1579).
 
-* Os leitores de tela agora narram quando [!UICONTROL Observação Adicionar] está selecionada (SITES-1573).
+* 
 
-* Os campos de formulário agora têm rótulos visuais separados dos espaços reservados, de modo que os usuários de leitores de tela sejam guiados adequadamente ao inserir os valores de campo (SITES-1258).
+* Form fields now have visual labels apart from the placeholders, so that screen reader users are guided appropriately when entering the field values (SITES-1258).
 
 ### [!DNL Assets] {#assets-65110}
 
-Os seguintes aprimoramentos de acessibilidade estão disponíveis em [!DNL Assets]:
+[!DNL Assets]
 
-* Na exibição de cartão na [!DNL Assets] repositório, ao usar `Tab` para mover o foco para o primeiro item que abre Ações rápidas em foco, o leitor de tela anuncia o nome do item focado.
-* Em [!DNL Dynamic Media] [!UICONTROL Editor de predefinições do visualizador], quando a Cor da sombra e a Cor da borda não estão presentes, as entradas são desativadas usando a propriedade disabled . Os usuários de teclado não conseguem focalizar a entrada e os leitores de tela não anunciam o estado do controle como desativado.
-* Em [!DNL Dynamic Media], na interface do para criar um novo perfil de codificação de vídeo, a variável [!UICONTROL Proporção de corte inteligente] está rotulada para acessibilidade, de modo que os leitores de tela a anunciem adequadamente.
+* [!DNL Assets]`Tab`
+* [!DNL Dynamic Media] Keyboard users are not able to focus the input and screen readers do not announce the state for the control as disabled.
+* [!DNL Dynamic Media]
 
-* Agora você pode acessar os controles da lista de referência em [!DNL Experience Manager Assets] usando um teclado.
+* [!DNL Experience Manager Assets]
 
-Os seguintes problemas foram corrigidos em [!DNL Assets]:
+[!DNL Assets]
 
-* Quando um usuário do grupo de contribuidores navega até o repositório de ativos do DAM, um item excepcional `POST` é acionada para criar uma coleção. Essa `POST` falha e reflete um erro nos logs (NPR-37171).
+* `POST` `POST`
 
-* Ao criar uma live copy do blueprint com uma estrutura de pasta aninhada, as propriedades modificadas da pasta de origem não são atualizadas na pasta live copy (NPR-37449).
+* When creating a live copy of the blueprint having a nested folder structure, the modified properties of the source folder are not updated in the live copy folder (NPR-37449).
 
-* Ao selecionar vários ativos e modificar os valores de campo de metadados, salvar os ativos não retém os valores. Além disso, as alterações de metadados não são aplicadas (NPR-37341).
+* When selecting multiple assets and modifying the metadata field values, saving the assets does not retain the values. Also, the metadata changes are not applied (NPR-37341).
 
-* Ao selecionar vários ativos e modificar as propriedades, os valores das propriedades personalizadas (lista suspensa) são substituídos pelos valores padrão (NPR-36437).
+* When selecting multiple assets and modifying the properties, the custom properties (dropdowns) values are overridden by the default values (NPR-36437).
 
-* A representação de PDF incorreta é gerada para o folheto, panfleto e modelos de InDesign (NPR-36433).
+* Incorrect PDF rendition is generated for the brochure, flyer, and InDesign templates (NPR-36433).
 
-* Salvar um [!DNL Adobe Target] com [!DNL Experience Manager] o modo de direcionamento falha no caso de um [!DNL Adobe Analytics] métrica de relatório é referenciada (NPR-37167).
+* [!DNL Adobe Target][!DNL Experience Manager][!DNL Adobe Analytics]
 
-* Quando um usuário com email usando nome de domínio com letras maiúsculas e minúsculas faz check-out de um ativo, o ativo não fica visível nos ativos com check-out do usuário em [!DNL Asset Link] (CQ-4329266).
+* [!DNL Asset Link]
 
 <!-- Add 
 * [!DNL Adobe Asset Link] is not able to access the digital assets even when the [!DNL Creative Cloud] and [!DNL Experience Management] entitlements are provided by two different organizations. -->
 
-* Adicionar um vídeo com metadados personalizados gerados após o upload para uma página exibe um erro sobre namespace desconhecido, mesmo se o namespace estiver registrado (CQ-4331471).
+* Adding a video with custom metadata generated upon upload to a page displays an error about unknown namespace, even if the namespace is registered (CQ-4331471).
 
-* Em [!DNL Assets], se [!DNL Launcher] estiver desativado, a gravação de metadados não funcionará quando for acionada manualmente (CQ-4329082).
+* [!DNL Assets][!DNL Launcher]
 
 ### [!DNL Dynamic Media] {#dynamic-media-65110}
 
-As seguintes correções de erros estão disponíveis em [!DNL Dynamic Media]:
+[!DNL Dynamic Media]
 
-* O ativo não é atualizado em [!DNL Dynamic Media] ao restaurar uma versão de ativo em [!DNL Experience Manager] (NPR-37421).
+* [!DNL Dynamic Media][!DNL Experience Manager]
 
-* Os catálogos ECatalogs não são publicados na publicação de arquivos do PDF (CQ-4329886).
+* ECatalogs are not published on publishing PDF files (CQ-4329886).
 
-* Os ativos 3D não são carregados quando a página publicada é aberta, caso o componente esteja usando uma predefinição predefinida (CQ-4329205).
+* 3D assets do not load when the published page is opened in case the component is using out-of-the-box preset (CQ-4329205).
 
-* Problemas no processamento de PDF asset no caso de repositórios grandes (CQ-4328711).
+* Issues in PDF asset processing in case of large repositories (CQ-4328711).
 
-* O erro de processamento de PDF não se propaga para [!DNL Experience Manager] em caso de falha em [!DNL Scene7] (CQ-4331145).
+* [!DNL Experience Manager][!DNL Scene7]
 
-* Os usuários não podem ver as propriedades de metadados padrão de um ativo .MOV (CQ-4332546).
+* Users are not able to see the default metadata properties for a .MOV asset (CQ-4332546).
 
-* Não é possível carregar arquivos de vídeo .MXF para [!DNL Dynamic Media] usar [!DNL Experience Manager] (CQ-4329709).
+* [!DNL Dynamic Media][!DNL Experience Manager]
 
-* Faça upload de problemas quando a raiz personalizada da empresa estiver configurada (CQ-4332800).
+* Upload issues when custom company root is setup (CQ-4332800).
 
-* Em [!DNL Experience Manager] configurações contendo iniciador personalizado com `ActivationModel` como fluxo de trabalho, o Experience Manager falha devido a problemas de memória ao carregar arquivos PDF. (CQ-4330512).
+* [!DNL Experience Manager]`ActivationModel` (CQ-4330512).
 
-* Problemas de desempenho em `DamEventRecorder` (CQ-4334072).
+* `DamEventRecorder`
 
-* Se um hiperlink de vídeo que pode ser comprado (URL vinculado) contiver caracteres especiais, o URL de destino será codificado pelo visualizador e resultará em uma página de produto incorreta (CQ-4331639).
+* If a shoppable video hyperlink (linked-URL) contains special characters, the target URL gets encoded by the viewer and results as an incorrect product page (CQ-4331639).
 
-* Em uma página de perfil de vídeo, as opções da barra de ferramentas desaparecem se o usuário selecionar um perfil de vídeo imediatamente no carregamento da página (CQ-4308521).
+* In a video profile page, the toolbar options disappear if the user selects a video profile immediately on page load (CQ-4308521).
 
-* Falha no processamento de ativos do DM devido a gravações simultâneas do JCR (CQ-433489).
+* DM asset processing failure due to JCR concurrent writes (CQ-4333489).
 
-* O acesso à página Perfis de vídeo falha se a raiz do perfil de vídeo do usuário tiver políticas de acesso personalizadas definidas no nó raiz de perfis de vídeo (CQ-4332941).
+* Accessing the Video Profiles page fails if user&#39;s video profile root has custom access policies defined on video profiles root node (CQ-4332941).
 
-* Em uma imagem com zoom, o uso das teclas de atalho (&#39;+&#39;, &#39;-&#39;) ou &#39;Esc&#39; trava o foco dos leitores de tela (CQ-4290719).
+* In a zoomable image, using the shortcut keys (&#39;+&#39;, &#39;-&#39;) or &#39;Esc&#39; key traps the screen readers focus (CQ-4290719).
 
-* Quando um usuário clica na tecla de atalho (&#39;F&#39;) do modo de formulário, o leitor de tela não mapeia o rótulo da [!UICONTROL Incorporar tamanho] botão de menu disponível na [!UICONTROL Incorporar] caixa de diálogo do código (CQ-4290929).
+* 
 
-* Ao usar a navegação pelo teclado para abrir a janela pop-up de link de email, as sugestões de erro exibidas na interface do usuário para os campos &quot;Para&quot; e &quot;De&quot; não são descritivas (CQ-4290930).
+* When using keyboard navigation to open the email link popup window, the error suggestions displayed on the user interface for the &#39;To&#39; and &#39;From&#39; fields are not descriptive (CQ-4290930).
 
-* Ao navegar até a caixa de diálogo do link de email, o leitor de tela não narra as informações do rótulo para os campos de edição recém-adicionados ao usar a tecla de atalho (&#39;F&#39;) do modo de formulário e seta para baixo (CQ-4290934).
+* When navigating to the email link dialog box, the screen reader does not narrate the label information for the newly added edit fields on using the down arrow and form mode shortcut key (&#39;F&#39;) (CQ-4290934).
 
-* Ao navegar até a caixa de diálogo do link de email, o leitor de tela não reflete o símbolo de asterisco visual (*) para os campos obrigatórios &quot;Para&quot; e &quot;De&quot; (CQ-4290935).
+* When navigating to the email link dialog box, the screen reader does not reflect the visual asterisk (*) symbol for the &#39;To&#39; and &#39;From&#39; mandatory fields (CQ-4290935).
 
-* Os usuários não podem identificar o marco e a região usando as teclas de atalho (&#39;D&#39;, &#39;R&#39;) (CQ-4312118).
+* The users are not able to identify the landmark and region using the shortcut keys (&#39;D&#39;, &#39;R&#39;) (CQ-4312118).
 
 <!-- Anuj to check if this section is required or not. We have an enh. in CIF area that is mentioned. It is added above and not part of this bug fix section.
 -->
 
 ### Commerce {#commerce-65110}
 
-* Ao usar a variável [!UICONTROL Publicar mais tarde] , a interface do usuário não está refletindo o status como [!UICONTROL Publicação pendente] (CQ-4334229).
+* 
 
-* Desfazer a publicação de uma pasta não cancela a publicação completa dos produtos dessa pasta, os produtos são removidos do editor, mas ainda existem na instância do autor (CQ-4332731).
+* Unpublishing a folder does not unpublish the products of that folder completely, the products are removed from the publisher but still exists in the author instance (CQ-4332731).
 
 ### Plataforma {#platform-65110}
 
-* Quando um usuário clica no ícone de reordenação de uma opção de vários campos, a barra de rolagem desaparece da interface do usuário (CQ-4331100).
+* When a user clicks on the reorder icon for a multifield option, the scroll bar disappears from the user interface (CQ-4331100).
 
-* Após a atualização, quando um usuário abre o componente do contêiner de logon do local de trabalho, o cabeçalho da caixa de diálogo não fica visível na interface do usuário (CQ-4316173).
+* After upgrade, when a user opens the workplace login container component, the header of the dialog box are not visible on the user interface (CQ-4316173).
 
 ### Integrações {#integrations-65110}
 
-* Salvar um [!DNL Adobe Target] com [!DNL Experience Manager] o modo de direcionamento falha no caso de um [!DNL Adobe Analytics] métrica de relatório é referenciada (NPR-37167).
+* [!DNL Adobe Target][!DNL Experience Manager][!DNL Adobe Analytics]
 
 ### Projetos {#projects-65110}
 
-* Ao atualizar de [!DNL Experience Manager] 6.5.8.0 para a versão 6.5.9.0, a instalação substitui as propriedades em `/content/dam/projects`. Ele redefine o esquema de metadados atribuído e as propriedades da pasta como padrão (NPR-37124).
+* [!DNL Experience Manager]`/content/dam/projects` It resets the assigned metadata schema and properties of the folder to default (NPR-37124).
 
 ### Interface do usuário {#user-interface-65110}
 
-* O ícone de pasta que representa o modelo está incorreto (NPR-37176).
+* The folder icon representing the model is incorrect (NPR-37176).
 
-* Quando um usuário realiza uma pesquisa ou navega usando o navegador de campo de caminho, nós incorretos são exibidos (NPR-37175).
+* When a user performs a search or browses using the path field browser, incorrect nodes are displayed (NPR-37175).
 
-* Na instância de publicação, as solicitações recebidas são bloqueadas por vários minutos (NPR-37169).
+* On the publish instance, the incoming requests are blocked for several minutes (NPR-37169).
 
-* Ao adicionar uma propriedade de vários campos em uma caixa de diálogo para um fluxo de trabalho personalizado, a caixa de diálogo falha ao continuar e o usuário não consegue fechar a caixa de diálogo (NPR-37075).
+* When adding a multifield property in a dialog box for a custom workflow, the dialog box fails to proceed and the user is not able to close the dialog box (NPR-37075).
 
-### Projetos de tradução {#translation-65110}
+### Translation projects {#translation-65110}
 
-* A promoção automática da inicialização da tradução falha com uma exceção (NPR-37528).
+* Auto-promotion of the translation launch fails with an exception (NPR-37528).
 
-* A tradução do Fragmento de experiência não atualiza as referências para a cópia de idioma do URL (NPR-37522).
+* Translation of the Experience Fragment does not update the references for the language copy of the URL (NPR-37522).
 
-* Quando um Fragmento de experiência é criado em um caminho que não corresponde ao caminho da estrutura raiz do idioma, a adição dessa página a um projeto de tradução reflete uma mensagem de erro em branco (NPR-37425).
+* When an Experience Fragment is created in a path that does not match the path of the language root structure, adding that page to a translation project reflects a blank error message (NPR-37425).
 
-* Quando uma página (inglês) contendo Fragmentos de experiência é modificada e enviada para tradução, os Fragmentos de experiência já traduzidos são substituídos pelo conteúdo em inglês (NPR-37283).
+* When a page (English) containing Experience Fragments is modified and sent for translation, the already translated Experience Fragments are overwritten by English content (NPR-37283).
 
-* O filtro do provedor de tradução não está funcionando adequadamente (NPR-37186).
+* Translation provider filter is not working appropriately (NPR-37186).
 
-* Os componentes Fragmento de experiência e Acordo não estão sendo traduzidos imediatamente para o conteúdo do site de amostra (NPR-37170).
+* Experience Fragment and Accordion components are not getting translated out-of-the-box for the sample site content (NPR-37170).
 
-* Depois de atualizar para [!DNL Experience Manager] 6.5.9.0, adicionar uma página ao projeto de tradução reflete uma mensagem de erro vazia (NPR-37105).
+* [!DNL Experience Manager]
 
-* Ao adicionar páginas dentro do launch, as páginas de tradução com nomes semelhantes não são incluídas no projeto (NPR-37082).
+* When adding pages inside launch, the translation pages having similar names are not included in the project (NPR-37082).
 
-* Ao exportar um dicionário de formulários como um arquivo .xliff usando a interface do tradutor, a ordem de campo do arquivo exportado está incorreta (NPR-37048).
+* When exporting a forms dictionary as a .xliff file using the translator interface, the field order of the exported file is incorrect (NPR-37048).
 
-* Ao implantar uma página principal em um projeto de tradução, as páginas secundárias específicas por idioma são excluídas (NPR-36998).
+* When rolling out a parent page from a translation project, the language-specific child pages are deleted (NPR-36998).
 
-* Ao criar um projeto de tradução, a referência cíclica das páginas aciona um lançamento que resulta em um erro (CQ-4332982).
+* When creating a translation project, cyclic referencing of the pages triggers a launch which results in an error (CQ-4332982).
 
-* O link do fragmento de experiência no fragmento de experiência traduzido e na página contém a referência de lançamento (NPR-37649).
+* The experience fragment link in the translated experience fragment and page contains the launch reference (NPR-37649).
 
 ### Sling {#sling-65110}
 
-* Ao carregar um novo pacote, o alias de memória no mapa MapEntries é removido (NPR-37067).
+* When uploading a new package, the memory alias in the MapEntries map is removed (NPR-37067).
 
 ### Fluxo de trabalho {#workflow-65110}
 
-* `Deactivate` método em `InboxOmniSearchHandler` exibe uma exceção de ponteiro nulo (NPR-37533).
+* `Deactivate``InboxOmniSearchHandler`
 
 ### [!DNL Communities] {#communities-65110}
 
-* O usuário não pode adicionar comentários à página, a variável `Post` falha na operação com o código de erro 500 (NPR-37156).
+* `Post`
 
-* Ao implantar o aplicativo, uma exceção de segmento não encontrado é observada devido à longa sessão de execução do SyncManager (NPR-37351).
+* When deploying the application, a segment not found exception is observed due to the long running session of SyncManager (NPR-37351).
 
-* O usuário não pode ver as respostas do thread na publicação de discussão do fórum (NPR-37083).
+* The user is not able to see the thread replies on the forum discussion post (NPR-37083).
 
 
 
@@ -329,123 +329,123 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 **Formulários adaptáveis**
 
-* Acessibilidade - Ao definir a variável `Wizard` no layout de um painel em um formulário adaptável, os botões de navegação não têm rótulos e função Aria (NPR-37613).
+* `Wizard`
 
-* As validações em um campo de data em um formulário adaptável não funcionam, como esperado (NPR-37556).
+* Validations on a date field in an adaptive form does not work, as expected (NPR-37556).
 
-* Quando o texto da etiqueta dos componentes Caixa de seleção e Botão de opção é longo, o texto não se encaixa adequadamente (NPR-37294).
+* When the label text for the Checkbox and Radio Button components is long, the text does not fit appropriately (NPR-37294).
 
-* Ao aplicar alterações de estilo à mensagem de agradecimento do componente Contêiner do AEM Forms, as alterações não são replicadas no formulário adaptável de origem (NPR-37284).
+* When you apply styling changes to the Thank You message of the AEM Forms Container component, the changes do not replicate in the source adaptive form (NPR-37284).
 
-* Diferenças no valor da variável `Switch` na interface do usuário e no back-end (NPR-37268).
+* `Switch`
 
-* Quando você usa as teclas do teclado para navegar até o `Submit` e pressione a tecla `Enter` , é possível enviar o formulário adaptável várias vezes (CQ-4333993).
+* `Submit``Enter`
 
-* A operação Remover do componente de Anexo de Arquivo não funciona, como esperado (NPR-37376).
+* The Remove operation for the File Attachment component does not work, as expected (NPR-37376).
 
-* Quando um rótulo de um campo excede 1000 caracteres em um formulário adaptável que traduz para vários idiomas, o dicionário não consegue recuperar a tradução do rótulo (CQ-4329290).
+* When a label for a field exceeds 1000 characters in an adaptive form that translates to various languages, the dictionary fails to retrieve the translation of the label (CQ-4329290).
 
 **Serviços de documento**
 
-* Um erro é exibido durante o uso do serviço Assembler (NPR-37606):
+* An error displays while using the Assembler service (NPR-37606):
 
    ```TXT
      500 Internal Server Error
    ```
 
-* Quando os anexos do documento são passados para o serviço Assembler, a seguinte exceção é exibida (NPR-37582):
+* When the document attachments are passed to the Assembler service, the following exception displays (NPR-37582):
 
    ```TXT
      com.adobe.livecycle.assembler.client.ProcessingException: ⁪: Failed to execute the DDX
    ```
 
-* Parênteses de fechamento ausente dos dados após converter um documento PDF para um documento PDF PDF-A/1B (NPR-37608).
+* Missing closing parenthesis from data after converting a PDF document to a PDF-A/1B PDF document (NPR-37608).
 
 **Formulários HTML5**
 
-* Ao instalar o AEM 6.5.10.0, a visualização do HTML para um formulário XDP não funciona (NPR-37503, CQ-4331926).
+* When you install AEM 6.5.10.0, the HTML preview for an XDP form does not work (NPR-37503, CQ-4331926).
 
-* Problemas de sobreposição de texto ao migrar o PDF forms para o HTML 5 em vários idiomas (NPR-37173).
+* Text overlapping issues while migrating the PDF forms to HTML 5 forms in various languages (NPR-37173).
 
 **Cartas**
 
-* Ao enviar uma carta e reabri-la na visualização do HTML, a posição dos fragmentos do documento de texto não permanece a mesma (NPR-37307).
+* When you submit a letter and reopen it in HTML view, the position of text document fragments does not remain the same (NPR-37307).
 
 **Fluxo de trabalho dos formulários**
 
-* No caso de fluxo de trabalho de contêiner incorporado, você receberá vários emails de conclusão de fluxo de trabalho mesmo depois de selecionar a variável `Notify on Complete of Container Workflow` (NPR-37280).
+* `Notify on Complete of Container Workflow`
 
 **Foundation JEE**
 
-* Depois de instalar o AEM 6.5 Forms Service Pack 9, os URLs do repositório CRX não estarão mais disponíveis (NPR-37592).
+* After installing AEM 6.5 Forms Service Pack 9, the CRX repository URLs are no longer available (NPR-37592).
 
-**Problemas corrigidos no AEM Forms 6.5.11.1**
+****
 
 >[!NOTE]
 >
->Se você não tiver atualizado para o AEM 6.5.11.0 Forms, instale o pacote complementar do AEM Forms 6.5.11.1 diretamente. Se você instalou AEM 6.5.11.0 Forms, o Adobe recomenda atualizar para AEM 6.5.11.1 Forms.
+>If you have not upgraded to AEM 6.5.11.0 Forms, install the AEM Forms 6.5.11.1 add-on package directly. If you have installed AEM 6.5.11.0 Forms, Adobe recommends to upgrade to AEM 6.5.11.1 Forms.
 
-* Enviar ações, Enviar email e Chamar um fluxo de trabalho AEM param de funcionar após a instalação do pacote complementar do Forms 6.5.11.0.
-* A operação CreatePDF interrompe a conversão de documentos do Microsoft Word em documentos do PDF após instalar o pacote complementar do Forms 6.5.11.0.
+* Submit actions, Send Email and Invoke an AEM Workflow stop working after installing the Forms 6.5.11.0 add-on package.
+* CreatePDF operation stops converting Microsoft Word documents to PDF documents after installing the Forms 6.5.11.0 add-on package.
 * (Somente JEE) Vulnerabilidades críticas de segurança (CVE-2021-44228 e CVE-2021-45046) relatadas para o Apache Log4j2.
-* (Somente JEE) O montador DSC no patch 6.5.11.0 contém metainfo incorreto, como a versão da especificação e a versão impl.
+* (JEE only) Assembler DSC in 6.5.11.0 patch contains incorrect metainfo like specification version and impl version.
 
 
-Para obter informações sobre atualizações de segurança, consulte [[!DNL Experience Manager] página de boletins de segurança](https://helpx.adobe.com/security/products/experience-manager.html).
+[[!DNL Experience Manager] ](https://helpx.adobe.com/security/products/experience-manager.html)
 
 ## Instalar 6.5.11.0 {#install}
 
-**Requisitos de configuração e mais informações**
+****
 
-* O Experience Manager 6.5.11.0 requer o Experience Manager 6.5. Consulte [documentação de atualização](/help/sites-deploying/upgrade.md) para obter instruções detalhadas.
-* O download do service pack está disponível no Adobe [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html).
-* Em uma implantação com MongoDB e várias instâncias, instale o Experience Manager 6.5.11.0 em uma das instâncias do autor usando o Gerenciador de pacotes.
-
->[!NOTE]
->
->O Adobe não recomenda remover ou desinstalar o [!DNL Adobe Experience Manager] Pacote 6.5.11.0.
-
-### Instalar o service pack {#install-service-pack}
-
-Para instalar o service pack em um [!DNL Adobe Experience Manager] Na instância 6.5, siga estas etapas:
-
-1. Reinicie a instância antes da instalação se a instância estiver no modo de atualização (quando a instância foi atualizada de uma versão anterior). O Adobe recomenda uma reinicialização se o tempo de atividade atual de uma instância for alto.
-
-1. Antes de instalar, faça um instantâneo ou um novo backup de sua [!DNL Experience Manager] instância.
-
-1. Baixe o service pack de [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip).
-
-1. Abra Gerenciador de pacotes e clique em **[!UICONTROL Fazer upload de pacote]** para fazer upload do pacote. Para saber mais, consulte [Gerenciador de pacotes](/help/sites-administering/package-manager.md).
-
-1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
-
-1. Para atualizar o conector S3, pare a instância após a instalação do Service Pack, substitua o conector existente por um novo arquivo binário fornecido na pasta de instalação e reinicie a instância. Consulte [Armazenamento de dados do Amazon S3](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
+* [](/help/sites-deploying/upgrade.md)
+* [](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html)
+* On a deployment with MongoDB and multiple instances, install Experience Manager 6.5.11.0 on one of the Author instances using the Package Manager.
 
 >[!NOTE]
 >
->A caixa de diálogo na interface do usuário do Gerenciador de Pacotes às vezes sai durante a instalação do service pack. O Adobe recomenda que você aguarde a estabilização dos registros de erros antes de acessar a implantação. Aguarde os registros específicos relacionados à desinstalação do pacote do atualizador antes de ter certeza de que as instalações foram bem-sucedidas. Normalmente, esse problema ocorre em [!DNL Safari] mas pode ocorrer intermitentemente em qualquer navegador.
+>[!DNL Adobe Experience Manager]
+
+### Install the service pack {#install-service-pack}
+
+[!DNL Adobe Experience Manager]
+
+1. Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
+
+1. [!DNL Experience Manager]
+
+1. [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
+
+1. Abra Gerenciador de pacotes e clique em **[!UICONTROL Fazer upload de pacote]** para fazer upload do pacote. [](/help/sites-administering/package-manager.md)
+
+1. ****
+
+1. To update the S3 connector, stop the instance after installation of the Service Pack, replace the existing connector with a new binary file provided in the install folder, and restart the instance. [](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector)
+
+>[!NOTE]
+>
+>Dialog on Package Manager UI sometimes exits during the installation of the service pack. Adobe recommends that you wait for error logs to stabilize before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before being assured that the installations is successful. [!DNL Safari]
 
 **Instalação automática**
 
-Há duas maneiras de instalar automaticamente [!DNL Experience Manager] 6.5.11.0 em uma instância de trabalho:
+[!DNL Experience Manager]
 
-A. Coloque o pacote em `../crx-quickstart/install` quando o servidor estiver disponível online. O pacote é instalado automaticamente.
+`../crx-quickstart/install` The package is automatically installed.
 
-B. Use o [API HTTP do Gerenciador de pacotes](/help/sites-administering/package-manager.md#package-share). Use `cmd=install&recursive=true` para que os pacotes aninhados sejam instalados.
+[](/help/sites-administering/package-manager.md#package-share) `cmd=install&recursive=true`
 
 >[!NOTE]
 >
->O Adobe Experience Manager 6.5.11.0 não suporta a instalação do Bootstrap.
+>Adobe Experience Manager 6.5.11.0 does not support Bootstrap installation.
 
-**Validar a instalação**
+****
 
-1. A página de informações do produto (`/system/console/productinfo`) exibe a sequência de caracteres da versão atualizada `Adobe Experience Manager (6.5.11.0)` under [!UICONTROL Produtos instalados].
+1. `/system/console/productinfo``Adobe Experience Manager (6.5.11.0)`
 
-1. Todos os pacotes OSGi são **[!UICONTROL ATIVO]** ou **[!UICONTROL FRAGMENTO]** no console OSGi (Use o console da Web: `/system/console/bundles`).
+1. ********`/system/console/bundles`
 
-1. O pacote OSGi `org.apache.jackrabbit.oak-core` é versão 1.22.3 ou posterior (Use o Console da Web: `/system/console/bundles`).
+1. `org.apache.jackrabbit.oak-core``/system/console/bundles`
 
-Para conhecer as plataformas certificadas para funcionar com esta versão, consulte o [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
+[](/help/sites-deploying/technical-requirements.md)
 
 <!-- 
 
@@ -479,9 +479,9 @@ For information about installing the cumulative installer for Experience Manager
 
 ### UberJar {#uber-jar}
 
-O UberJar para Experience Manager 6.5.11.0 está disponível no [Repositório central Maven](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.11/).
+[](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.11/)
 
-Para usar o UberJar em um projeto Maven, consulte [como usar o UberJar](/help/sites-developing/ht-projects-maven.md) e incluir a seguinte dependência no POM do projeto:
+[](/help/sites-developing/ht-projects-maven.md)
 
 ```shell
 <dependency>
@@ -494,45 +494,45 @@ Para usar o UberJar em um projeto Maven, consulte [como usar o UberJar](/help/si
 
 >[!NOTE]
 >
->O UberJar e os outros artefatos relacionados estão disponíveis no Repositório Central Maven em vez do repositório Maven Adobe Public (`repo.adobe.com`). O arquivo UberJar principal é renomeado para `uber-jar-<version>.jar`. Portanto, não há `classifier`, com `apis` como o valor, para a variável `dependency` .
+>`repo.adobe.com` `uber-jar-<version>.jar` `classifier``apis``dependency`
 
 ## Recursos obsoletos {#removed-deprecated-features}
 
-Abaixo está uma lista de recursos e funcionalidades marcados como obsoletos [!DNL Experience Manager] 6.5.7.0. Os recursos são marcados como obsoletos inicialmente e posteriormente removidos em uma versão futura. Uma opção alternativa é fornecida.
+[!DNL Experience Manager] An alternate option is provided.
 
-Revise se você usa um recurso ou um recurso em uma implantação. Além disso, planeje alterar a implementação para usar uma opção alternativa.
+Review if you use a feature or a capability in a deployment. Also, plan to change the implementation to use an alternate option.
 
 | Área | Recurso | Substituição |
 |---|---|---|
-| Integrações | O **[!UICONTROL Aceitação dos serviços em nuvem AEM]** está obsoleta desde que o [!DNL Experience Manager] e [!DNL Adobe Target] A integração é atualizada no Experience Manager 6.5. A integração oferece suporte à API do Adobe Target Standard. A API usa autenticação via Adobe IMS e [!DNL Adobe I/O] e apoia o papel crescente do Adobe Launch como instrumento [!DNL Experience Manager] páginas para análise e personalização, o assistente de aceitação é funcionalmente irrelevante. | Configurar conexões do sistema, autenticação do Adobe IMS e [!DNL Adobe I/O] integrações por meio das respectivas [!DNL Experience Manager] serviços em nuvem. |
-| Conectores | O Conector Adobe JCR para Microsoft® SharePoint 2010 e Microsoft® SharePoint 2013 está obsoleto para o Experience Manager 6.5. | N/A |
+| Integrações | ****[!DNL Experience Manager][!DNL Adobe Target] [!DNL Adobe I/O][!DNL Experience Manager] | [!DNL Adobe I/O][!DNL Experience Manager] |
+| Conectores | The Adobe JCR Connector for Microsoft® SharePoint 2010 and Microsoft® SharePoint 2013 is deprecated for Experience Manager 6.5. | N/A |
 
 ## Problemas conhecidos {#known-issues}
 
-* Quando você instala o AEM 6.5 Service Pack 11 e tenta baixar o arquivo ZIP de status, o Experience Manager baixa um arquivo corrompido. Baixe e instale [Pacote de índice SEO do AEM Sites](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip) na instância AEM antes de baixar o arquivo ZIP para resolver o problema.
+* When you install AEM 6.5 Service Pack 11 and try to download the status ZIP file, Experience Manager downloads a corrupt file. [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip)
 
-* As [!DNL Microsoft Windows Server 2019] não suporta [!DNL MySQL 5.7] e [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] não suporta instalações turnkey para [!DNL AEM Forms 6.5.10.0].
+* [!DNL Microsoft Windows Server 2019][!DNL MySQL 5.7][!DNL JBoss EAP 7.1][!DNL Microsoft Windows Server 2019][!DNL AEM Forms 6.5.10.0]
 
-* Se estiver atualizando seu [!DNL Experience Manager] da versão 6.5 para 6.5.10.0, você pode visualizar `RRD4JReporter` exceções na `error.log` arquivo. Para resolver o problema, reinicie a instância.
+* [!DNL Experience Manager]`RRD4JReporter``error.log` To resolve the issue, restart the instance.
 
-* Se você instalar [!DNL Experience Manager] 6.5 Service Pack 10 ou service pack anterior no [!DNL Experience Manager] 6.5, a cópia em tempo de execução do modelo de fluxo de trabalho personalizado dos ativos (criado em `/var/workflow/models/dam`) é excluída.
-Para recuperar a cópia de tempo de execução, o Adobe recomenda sincronizar a cópia de tempo de design do modelo de fluxo de trabalho personalizado com a cópia de tempo de execução usando a API HTTP:
+* [!DNL Experience Manager][!DNL Experience Manager]`/var/workflow/models/dam`
+To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
    `<designModelPath>/jcr:content.generate.json`.
 
-* Os usuários podem renomear uma pasta em uma hierarquia em [!DNL Assets] e publicar uma pasta aninhada em [!DNL Brand Portal]. No entanto, o título da pasta não é atualizado em [!DNL Brand Portal] até que a pasta raiz seja republicada.
+* [!DNL Assets][!DNL Brand Portal] [!DNL Brand Portal]
 
-* Quando um usuário seleciona configurar um campo pela primeira vez em um formulário adaptável, a opção para salvar uma configuração não é exibida no Navegador de propriedades. Selecionar para configurar outro campo do formulário adaptável no mesmo editor resolve o problema.
+* When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the adaptive form in the same editor resolves the issue.
 
-* Os seguintes erros e mensagens de aviso podem ser exibidos durante a instalação do Experience Manager 6.5.x.x:
-   * &quot;Quando a integração do Adobe Target é configurada no Experience Manager usando a API do Target Standard (autenticação IMS), a exportação dos Fragmentos de experiência para o Target resulta na criação de tipos de ofertas incorretos. Em vez do tipo &quot;Fragmento de experiência&quot;/fonte &quot;Adobe Experience Manager&quot;, o Target cria várias ofertas com o tipo &quot;HTML&quot;/fonte &quot;Adobe Target Classic&quot;.
-   * `com.adobe.granite.maintenance.impl.TaskScheduler`: Nenhuma janela de manutenção encontrada em granite/operations/maintenance.
-   * A validação do lado do servidor do Adaptive Form falha quando funções agregadas, como SUM, MAX e MIN são usadas (CQ-4274424).
-   * `com.adobe.granite.maintenance.impl.TaskScheduler` - Nenhuma janela de manutenção encontrada em granite/operations/maintenance.
-   * O ponto de acesso em uma imagem interativa do Dynamic Media não é visível ao visualizar o ativo por meio do visualizador de Banner de compra.
-   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Tempo limite aguardando a conclusão da alteração de reg não registrada.
+* The following errors and warning messages may display during installation of Experience Manager 6.5.x.x:
+   * “When the Adobe Target integration is configured in Experience Manager using the Target Standard API (IMS authentication), then exporting Experience Fragments to Target results in wrong offer types getting created. Em vez do tipo &quot;Fragmento de experiência&quot;/fonte &quot;Adobe Experience Manager&quot;, o Target cria várias ofertas com o tipo &quot;HTML&quot;/fonte &quot;Adobe Target Classic&quot;.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler`
+   * Adaptive Form server-side validation fails when aggregate functions such as SUM, MAX, and MIN are used (CQ-4274424).
+   * `com.adobe.granite.maintenance.impl.TaskScheduler`
+   * Hotspot in a Dynamic Media interactive image is not visible when previewing the asset through Shoppable Banner viewer.
+   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]`
 
-* Ao tentar mover/excluir/publicar Fragmentos de conteúdo ou Sites/Páginas, há um problema quando as referências do Fragmento de conteúdo são buscadas, pois a consulta em segundo plano falhará; ou seja, a funcionalidade não funcionará.
-Para garantir a operação correta, você precisa adicionar as seguintes propriedades ao nó de definição de índice `/oak:index/damAssetLucene` (não é necessário reindexar) :
+* When trying to move/delete/publish either Content Fragments or Sites/Pages, there is an issue when Content Fragment references are fetched, as the background query will fail; i.e. the functionality will not work.
+`/oak:index/damAssetLucene`
 
    ```xml
    "tags": [
@@ -541,35 +541,35 @@ Para garantir a operação correta, você precisa adicionar as seguintes proprie
    "refresh": true
    ```
 
-## Pacotes de conteúdo e pacotes OSGi incluídos {#osgi-bundles-and-content-packages-included}
+## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
-Os seguintes documentos de texto listam os pacotes OSGi e os Pacotes de conteúdo incluídos no [!DNL Experience Manager] 6.5.11.0:
+[!DNL Experience Manager]
 
-* [Lista de pacotes OSGi incluídos no Experience Manager 6.5.11.0](assets/65110_bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.11.0](assets/65110_bundles.txt)
 
-* [Lista de pacotes de conteúdo incluídos na Experience Manager 6.5.11.0](assets/65110_packages.txt)
+* [List of Content Packages included in Experience Manager 6.5.11.0](assets/65110_packages.txt)
 
-## Sites restritos {#restricted-sites}
+## Restricted websites {#restricted-sites}
 
-Esses sites só estão disponíveis para clientes do . Se você for um cliente e precisar de acesso, entre em contato com o gerente de contas da Adobe.
+These websites are only available to customers. Se você for um cliente e precisar de acesso, entre em contato com o gerente de contas da Adobe.
 
 * [Baixe o produto em licensing.adobe.com](https://licensing.adobe.com/)
-* Consulte [como entrar em contato com o Suporte ao cliente do Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* [](https://experienceleague.adobe.com/docs/customer-one/using/home.html)
 
-## Versões principais desde [!DNL Adobe Experience Manager] 6.5 SP10{#key-releases-since-last-sp}
+## [!DNL Adobe Experience Manager]{#key-releases-since-last-sp}
 
-Entre 26 de agosto de 2021 e 25 de novembro de 2021, o Adobe lançou o seguinte, além dos Service Packs:
+Between August 26, 2021, and November 25, 2021, Adobe released the following, in addition to the Service Packs:
 
-* [!DNL Adobe Experience Manager] as a Cloud Service [2021.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-9-0.html) e [2021.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
+* [!DNL Adobe Experience Manager][](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-9-0.html)[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR)
 
-* [[!DNL Experience Manager] aplicativo de desktop 2.1 (2.1.3.4)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+* [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
 
-* [Experience Manager Screens: Feature Pack 202109](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202109.html)
+* [](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202109.html)
 
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página do produto](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR)
+>* [[!DNL Experience Manager] ](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR)
 >* [Inscreva-se em Atualizações de produtos de prioridade da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
