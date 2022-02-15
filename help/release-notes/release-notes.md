@@ -2,9 +2,9 @@
 title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager]As notas o 6.5 que descrevem as informações da versão, novidades, como instalar e listas detalhadas de modificação.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 1cfa01544ad8bf0adafd55e696a6844a8edf1007
+source-git-commit: 1ca3032063a148293f67c69a941b83b6aa5d48f1
 workflow-type: tm+mt
-source-wordcount: '3894'
+source-wordcount: '3884'
 ht-degree: 4%
 
 ---
@@ -52,14 +52,17 @@ Esta é a lista de correções fornecidas em [!DNL Experience Manager] Versão 6
 
 ### [!DNL Sites] {#sites-65110}
 
-Para acessar a entrega de conteúdo sem interface usando os Fragmentos de conteúdo com GraphQL e usar os recursos aprimorados do Editor e dos Modelos de fragmento de conteúdo, instale o [pacote de definição de índice](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.0.0.zip)e reindexe as seguintes definições de índice de AEM assíncronas:
+>[!WARNING]
+>
+>Está a ser desenvolvida uma nova versão deste pacote. O link será publicado assim que for disponibilizado.
 
-* /oak:index/assetPrefixNodename
+Para acessar a entrega de conteúdo sem interface usando Fragmentos de conteúdo com GraphQL e usar os recursos aprimorados do Fragmento de conteúdo e do Editor, instale o pacote de definição de índice e reindexe as seguintes definições de índice de AEM assíncronas:
 
-* /oak:index/fragments
+* `/oak:index/assetPrefixNodename`
 
-* /oak:index/grafqlConfig
+* `/oak:index/fragments`
 
+* `/oak:index/graphqlConfig`
 
 Os seguintes problemas foram corrigidos em [!DNL Sites]:
 
