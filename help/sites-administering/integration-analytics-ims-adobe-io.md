@@ -1,9 +1,9 @@
 ---
 title: Integração com o Adobe Analytics usando o Adobe I/O
 description: Saiba mais sobre como integrar AEM com o Adobe Analytics usando o Adobe I/O
-source-git-commit: c2c7c3f745a5f1edc1a8d2a73922f86f0b952ff7
+source-git-commit: 5a253147baf64bf1b12b3ea6387f4b377e5d421f
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1052'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Você precisa criar o Adobe I/O Project (integração) com o Adobe Analytics que
 
 ### Criação do projeto {#creating-the-project}
 
-Abra o console Adobe I/O para criar um Projeto de E/S com o Adobe Target que AEM usará:
+Abra o console Adobe I/O para criar um Projeto de E/S com o Adobe Analytics que AEM usará:
 
 <!--
 >[!NOTE]
@@ -112,23 +112,9 @@ Abra o console Adobe I/O para criar um Projeto de E/S com o Adobe Target que AEM
 
 1. Selecione os perfis de produto necessários e continue com **Salvar API configurada**:
 
-   >[!NOTE]
-   >
-   >Os perfis de produto exibidos com o dependem se você:
-   >
-   >* Adobe Target Standard - somente **Espaço de trabalho padrão** está disponível
-   >* Adobe Target Premium - todos os espaços de trabalho disponíveis são listados, conforme mostrado abaixo
-
-
    ![Selecionar perfis de produto necessários](assets/integration-analytics-io-16.png)
 
 1. A configuração será confirmada.
-
-<!--
-1. The creation will be confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
-
-   ![](assets/integrate-target-io-07.png)
--->
 
 ### Atribuir privilégios à integração {#assigning-privileges-to-the-integration}
 
@@ -164,7 +150,7 @@ Alguns deles, você precisará concluir a integração do Adobe I/O para o Adobe
 
 ## Concluir a configuração IMS no AEM {#completing-the-ims-configuration-in-aem}
 
-Ao retornar para AEM, é possível concluir a configuração do IMS adicionando valores necessários da integração do Adobe I/O para o Target:
+Ao retornar para AEM, é possível concluir a configuração do IMS adicionando valores necessários da integração do Adobe I/O para o Analytics:
 
 1. Retorne ao [Configuração IMS aberta no AEM](#configuring-an-ims-configuration-generating-a-public-key).
 1. Selecione **Próximo**.
@@ -181,7 +167,7 @@ Ao retornar para AEM, é possível concluir a configuração do IMS adicionando 
 
 1. Confirme com **Criar**.
 
-1. Sua configuração do Adobe Target será exibida no console AEM.
+1. Sua configuração do Adobe Analytics será exibida no console AEM.
 
    ![Configuração IMS](assets/integrate-analytics-io-11.png)
 
@@ -204,10 +190,6 @@ Para confirmar que a configuração está funcionando como esperado:
    ![Configuração IMS - Verificar integridade](assets/integrate-analytics-io-12.png)
 
 1. Se bem-sucedido, você verá uma mensagem de confirmação.
-
-   <!--
-   ![](assets/integrate-target-io-13.png)
-   -->
 
 ## Configuração do serviço Adobe Analytics Cloud {#configuring-the-adobe-analytics-cloud-service}
 
@@ -232,7 +214,7 @@ A configuração agora pode ser mencionada para um Cloud Service para usar a API
 
    * **Configuração IMS**: selecione o nome da Configuração IMS
 
-1. Clique em **Conectar-se ao Analytics** para inicializar a conexão com o Adobe Target.
+1. Clique em **Conectar-se ao Analytics** para inicializar a conexão com o Adobe Analytics.
 
    Se a conexão for bem-sucedida, a mensagem **Conexão bem-sucedida** é exibida.
 
