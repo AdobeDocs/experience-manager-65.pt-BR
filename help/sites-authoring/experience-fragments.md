@@ -1,8 +1,8 @@
 ---
 title: Fragmentos de experiência
-seo-title: Fragmentos de experiência
+seo-title: Experience Fragments
 description: Fragmentos de experiência
-seo-description: 'null'
+seo-description: null
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
+source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 97%
+source-wordcount: '1440'
+ht-degree: 92%
 
 ---
-
 
 # Fragmentos de experiência{#experience-fragments}
 
@@ -28,10 +27,12 @@ Um fragmento de experiência:
 * É parte de uma experiência (página).
 * Pode ser usado em várias páginas.
 * É baseado em um modelo (somente editável) para definir a estrutura e os componentes.
+* Esse modelo é usado para criar o *página raiz* do Fragmento de experiência.
 * É composto por um ou mais componentes, com layout, em um sistema de parágrafos.
 * Pode conter outros fragmentos de experiência.
 * Pode ser combinado com outros componentes (incluindo outros Fragmentos de experiência) para formar uma página completa (experiência).
-* Pode apresentar variações diferentes e pode compartilhar conteúdo e/ou componentes.
+* Uma ou mais variações podem ser criadas, com base na página raiz.
+* Essas variações podem compartilhar conteúdo e/ou componentes.
 * Pode ser dividida em blocos de construção que poderão ser usados em várias variações do fragmento.
 
 Use os Fragmentos de experiência:
@@ -176,6 +177,10 @@ Para criar um fragmento de experiência:
 
    ![xf-04](assets/xf-04.png)
 
+   >[!NOTE]
+   As tags do modelo do Fragmento de experiência não serão unidas com tags nesta página raiz do Fragmento de experiência .
+   Elas são completamente separadas.
+
 1. Clique em **Criar**.
 
    Uma mensagem será exibida. Selecionar:
@@ -280,7 +285,7 @@ Para criar um novo Bloco de construção:
 
 O bloco de construção está visível na guia **Blocos de construção**. As seguintes ações estão disponíveis para cada bloco:
 
-* Acesse o mestre: abra a variação mestre em uma nova guia
+* Vá para principal: abra a variação da página raiz em uma nova guia
 * Renomeie
 * Excluir
 
@@ -345,7 +350,7 @@ Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML 
 >[!NOTE]
 Embora isso esteja disponível diretamente no navegador, [o principal objetivo é permitir outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações móveis personalizadas) para acessar o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
-## Exportar fragmentos de experiência    {#exporting-experience-fragments}
+## Exportar fragmentos de experiência   {#exporting-experience-fragments}
 
 Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado pelo AEM e por canais de terceiros.
 

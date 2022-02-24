@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: b4c3f4c393d9b34acaadc375d20738ead42e481d
+source-git-commit: 72b39fd0263347c5bfe98fe2fdaf8999d7d40a96
 workflow-type: tm+mt
-source-wordcount: '2979'
-ht-degree: 26%
+source-wordcount: '3215'
+ht-degree: 24%
 
 ---
 
@@ -197,6 +197,22 @@ Para exibir e gerenciar referências no [!DNL Assets] , siga estas etapas:
 1. Os usuários podem mover ou excluir o ativo. Ao mover ou excluir um ativo, o número total de referências de todos os ativos/pastas selecionados é exibido em uma caixa de diálogo de aviso. Ao excluir um ativo para o qual as referências ainda não são exibidas, uma caixa de diálogo de aviso é exibida.
 
    ![forçar aviso de exclusão](assets/delete-referenced-asset.png)
+
+### Gerenciar atualizações em ativos no DAM remoto {#manage-updates-in-remote-dam}
+
+Depois [configuração de uma conexão](#configure-a-connection-between-sites-and-assets-deployments) entre DAM remoto e [!DNL Sites] implantações, os ativos no DAM remoto são disponibilizados no [!DNL Sites] implantação. Em seguida, você pode executar as operações de atualização, exclusão, renomeação e movimentação nos ativos ou pastas remotos do DAM. As atualizações, com algum atraso, estão disponíveis automaticamente no [!DNL Sites] implantação. Além disso, se um ativo no DAM remoto for usado em um [!DNL Experience Manager Sites] , as atualizações do ativo no DAM remoto são exibidas na página [!DNL Sites] página.
+
+Ao mover um ativo de um local para outro, assegure-se de [ajustar referências](/help/assets/manage-assets.md) para que o ativo seja exibido na página [!DNL Sites] página. Se você mover um ativo para um local que não está acessível a partir do local [!DNL Sites] , o ativo não é exibido na implantação do Sites.
+
+Você também pode atualizar as propriedades de metadados de um ativo no DAM remoto e as alterações estão disponíveis no local [!DNL Sites] implantação.
+
+[!DNL Sites] os autores podem visualizar as atualizações disponíveis na [!DNL Sites] e, em seguida, republique as alterações para torná-las disponíveis no [!DNL Experience Manager] instância de publicação.
+
+[!DNL Experience Manager] exibe um indicador visual de status expirado em ativos em `Remote Assets Content Finder` para impedir que os autores do site usem o ativo em um [!DNL Sites] página. Se você usar um ativo com status expirado em um [!DNL Sites] o ativo não é exibido na página [!DNL Experience Manager] instância de publicação.
+
+>[!NOTE]
+>
+>As atualizações de ativos no DAM remoto são disponibilizadas para o [!DNL Sites] implantação somente se o DAM remoto e [!DNL Sites] as implantações estão ativadas [!DNL Experience Manager].
 
 ## Limitações e práticas recomendadas {#tip-and-limitations}
 
