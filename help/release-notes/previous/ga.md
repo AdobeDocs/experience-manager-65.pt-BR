@@ -1,7 +1,7 @@
 ---
 title: Notas de versão gerais para [!DNL Adobe Experience Manager] 6,5
-description: '[!DNL Adobe Experience Manager]As notas o 6.5 que descrevem as informações da versão, novidades, como instalar e listas detalhadas de modificação.'
-source-git-commit: 37f1df9f9421ff18fff45723b6eb081f0192520a
+description: '"[!DNL Adobe Experience Manager] 6.5 notas descrevendo as informações da versão, novidades, como instalar e listas detalhadas de alterações."'
+source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
 source-wordcount: '4696'
 ht-degree: 56%
@@ -472,7 +472,7 @@ Esse processo de priorização gerou a correção de mais de 750 alterações fo
 
 * Conjunto de ferramentas de modernização do AEM, por exemplo, a ferramenta de Conversão de diálogo. ([projeto do GitHub](https://github.com/adobe/aem-modernize-tools))
 
-**Ativos**
+**Assets**
 
 * Pacote para adicionar PDF avançado ([leia mais](/help/assets/aem-pdf-rasterizer.md))
 * Pacote para adicionar suporte de imagem RAW estendido ([leia mais](/help/assets/camera-raw.md))
