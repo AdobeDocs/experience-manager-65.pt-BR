@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: a33d46bcfcf901fb774b742c0fc972265401a56e
+source-git-commit: 079b7b1e386ac2d02026ee2d8db411e517168b00
 workflow-type: tm+mt
 source-wordcount: '1223'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 0%
    >   * um espaço de trabalho nomeado, especificado na Configuração da nuvem.
    >   * **Observação:** A exportação para espaços de trabalho específicos requer o Adobe Target Premium.
 >
->* AEM deve ser [integrado ao Adobe Target usando o Adobe I/O](/help/sites-administering/integration-target-ims-adobe-io.md).
+>* AEM deve ser [integrado ao Adobe Target usando o Adobe I/O](/help/sites-administering/integration-target-ims.md).
 >
 >AEM 6.5.0.0 e 6.5.1.0:
 >
@@ -53,7 +53,7 @@ Há três opções de formato disponíveis para exportar um Fragmento de experi�
 * JSON: Suporte para entrega de conteúdo sem periféricos
 * HTML e JSON
 
-AEM Fragmentos de experiência podem ser exportados para o espaço de trabalho padrão no Adobe Target ou para espaços de trabalho definidos pelo usuário no Adobe Target. Isso é feito via Adobe I/O, para o que AEM deve ser [integrado ao Adobe Target usando o Adobe I/O](/help/sites-administering/integration-target-ims-adobe-io.md).
+AEM Fragmentos de experiência podem ser exportados para o espaço de trabalho padrão no Adobe Target ou para espaços de trabalho definidos pelo usuário no Adobe Target. Isso é feito via Adobe I/O, para o que AEM deve ser [integrado ao Adobe Target usando o Adobe I/O](/help/sites-administering/integration-target-ims.md).
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ AEM Fragmentos de experiência podem ser exportados para o espaço de trabalho p
 
 Várias ações são necessárias:
 
-1. Você tem que [integrar AEM com o Adobe Target usando o Adobe I/O](/help/sites-administering/integration-target-ims-adobe-io.md).
+1. Você tem que [integrar AEM com o Adobe Target usando o Adobe I/O](/help/sites-administering/integration-target-ims.md).
 2. Os Fragmentos de experiência são exportados da instância do autor do AEM, portanto, é necessário [Configurar o AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) na instância do autor para garantir que todas as referências no Fragmento de experiência sejam externalizadas para entrega na Web.
 
    >[!NOTE]
