@@ -1,8 +1,8 @@
 ---
 title: Atualização para o AEM 6.5 Forms
-seo-title: Atualização para o AEM 6.5 Forms
+seo-title: Upgrade to AEM 6.5 Forms
 description: Você pode fazer uma atualização direta do AEM 6.3 Forms e AEM 6.4 Forms para AEM 6.5 Forms.
-seo-description: Você pode fazer uma atualização direta do AEM 6.3 Forms e AEM 6.4 Forms para AEM 6.5 Forms.
+seo-description: You can perform a direct upgrade from AEM 6.3 Forms and AEM 6.4 Forms to AEM 6.5 Forms.
 uuid: 7a38cd72-2d01-4af7-b6a3-00dc34c4f02b
 content-type: reference
 topic-tags: installing
@@ -11,16 +11,16 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 2e6d688818e9cc337444bcda2a49485e9167a113
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Atualização para o AEM 6.5 Forms{#upgrade-to-aem-forms}
 
-AEM 6.5 O Forms inclui vários novos recursos e melhorias que simplificam a criação, o gerenciamento e as experiências do usuário com formulários e correspondências. Para saber mais sobre todos os novos recursos e aprimoramentos do AEM 6.5 Forms, consulte [Documento de resumo dos novos recursos](../../forms/using/whats-new.md).
+AEM 6.5 O Forms inclui vários novos recursos e melhorias que simplificam a criação, o gerenciamento e as experiências do usuário com formulários e correspondências. Para saber mais sobre todos os novos recursos e aprimoramentos do AEM 6.5 Forms, consulte [Novo documento de resumo de recursos](../../forms/using/whats-new.md).
 
 Você pode atualizar sua instalação existente do LiveCycle ou do AEM Forms para obter novos recursos e aprimoramentos oferecidos no AEM 6.5 Forms enquanto mantém intactos os dados, processos e ativos existentes. Na atualização, os metadados e o estado dos processos também são preservados. Você pode escolher um caminho de atualização para começar a atualização.
 
@@ -47,6 +47,7 @@ Você pode executar uma atualização direta de:
 
 * AEM 6.3 Forms no JEE
 * AEM 6.4 Forms no JEE
+* AEM 6.5.x.x no JEE
 
 Você também pode fazer uma atualização de multi-hop no
 
@@ -56,6 +57,16 @@ Você também pode fazer uma atualização de multi-hop no
 * AEM 6.0 Forms no JEE
 * AEM 6.1 Forms no JEE
 * AEM 6.2 Forms no JEE
+
+O AEM 6.5.12.0 Forms no JEE fornece dois tipos de instaladores: Instalador completo e instalador de patch.
+
+**Instalador completo**: Você pode usar o instalador completo para configurar novas instâncias do AEM Forms ou executar atualizações do AEM 6.3 Forms no JEE, AEM 6.4 no JEE e atualização fora do local do AEM 6.5.x.x no JEE para o AEM 6.5.12.0 Forms no JEE.
+
+**Instalador de patches**: O instalador de patches é para clientes que já usam as versões AEM 6.5.x.x. Você pode usar o instalador de patches para atualizar para a versão mais recente do AEM Forms.
+
+A imagem a seguir descreve os cenários para usar o instalador completo e de patch.
+
+![](assets/full-and-patch-installer.png)
 
 <!--
 [Work in Progress]
