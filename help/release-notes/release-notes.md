@@ -2,9 +2,9 @@
 title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas descrevendo as informações da versão, novidades, como instalar e listas detalhadas de alterações."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 7649b9a36fbf47ec92bd4c33cd7590d9934aa169
+source-git-commit: 23b5f83e598210f14ee20e8fa5fb01434b93faae
 workflow-type: tm+mt
-source-wordcount: '3204'
+source-wordcount: '3154'
 ht-degree: 6%
 
 ---
@@ -111,7 +111,6 @@ Os seguintes problemas foram corrigidos em [!DNL Assets]:
    * Somente a última seleção do campo pai é salva para o campo não editável dependente (NPR-37858).
    * A lista suspensa dependente (campo de vários valores) reflete o valor padrão intermitentemente para a lista suspensa pai selecionada (NPR-37791).
 
-
 ### [!DNL Dynamic Media] {#dynamic-media-65120}
 
 Os seguintes problemas foram corrigidos em [!DNL Dynamic Media]:
@@ -128,9 +127,7 @@ Os seguintes problemas foram corrigidos em [!DNL Dynamic Media]:
 
 * A rolagem não funcionará conforme o esperado se você aplicar o filtro aos itens da Caixa de entrada (CQ-433594).
 
-
 ### [!DNL Forms] {#forms-65120}
-
 
 >[!NOTE]
 >
@@ -200,7 +197,6 @@ Os seguintes problemas foram corrigidos em [!DNL Dynamic Media]:
 
 * Problemas com o navegador XPath/Dot Notation com a etapa Definir variável no fluxo de trabalho no AEM 6.5.9.0 Forms e AEM 6.5.10.0 Forms (CQ-4336582).
 
-
 Para obter informações sobre atualizações de segurança, consulte [[!DNL Experience Manager] página de boletins de segurança](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## Instalar 6.5.12.0 {#install}
@@ -266,10 +262,6 @@ Para conhecer as plataformas certificadas para funcionar com esta versão, consu
 1. Certifique-se de ter instalado o Adobe Experience Manager Service Pack.
 1. Baixe o pacote complementar do Forms correspondente listado em [Versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) para seu sistema operacional.
 1. Instale o pacote complementar do Forms conforme descrito em [Instalação de pacotes complementares do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
-
->[!NOTE]
->
->O Experience Manager 6.5.12.0 inclui uma nova versão do [Pacote de compatibilidade do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). Se você estiver usando uma versão mais antiga do Pacote de Compatibilidade do AEM Forms e estiver atualizando para o Experience Manager 6.5.10.0, instale a versão mais recente da instalação do pacote após a instalação do Pacote de Suplementos do Forms.
 
 ### Instalar o Adobe Experience Manager Forms no JEE {#install-aem-forms-jee-installer}
 
