@@ -2,10 +2,10 @@
 title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas descrevendo as informações da versão, novidades, como instalar e listas detalhadas de alterações."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
+source-git-commit: 2a6b92ecd40ae108aee019bcba939a470b66d1b5
 workflow-type: tm+mt
-source-wordcount: '3180'
-ht-degree: 6%
+source-wordcount: '3318'
+ht-degree: 5%
 
 ---
 
@@ -150,6 +150,12 @@ Os seguintes problemas foram corrigidos em [!DNL Dynamic Media]:
 * Ao ativar a propriedade Permitir rich text em uma caixa de texto, há problemas com o comprimento máximo permitido de caracteres (NPR-37825).
 
 * Problemas de CSS ao copiar qualquer componente em um formulário adaptável (NPR-37812).
+
+* Ao gerar a tradução de formulários adaptáveis, o arquivo XLIFF gerado não contém a mesma sequência de textos que no Formulário adaptável. Em alguns casos, é necessário ver o contexto dos textos. Isso não é possível se a sequência no XLIFF for alfabética. (NPR-37435).
+
+* Quando um formulário adaptável é traduzido, as tags HTML fazem parte da tradução. Se um usuário cometer um erro e as tags não forem válidas, o texto inteiro não será mostrado no documento de registro. (NPR-37499)
+
+* Quando um formulário adaptável é criado e finalizado em um idioma base e a tradução é feita por um grupo externo e importada. Se houver uma pequena alteração de texto como adição ou falta de ponto (.) for feita no para o idioma base, a tradução completa ficará ausente para todos os outros idiomas. (NPR-37189)
 
 **Modelo de dados do formulário**
 
