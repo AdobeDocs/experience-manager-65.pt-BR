@@ -1,14 +1,15 @@
 ---
 title: Use o Connected Assets para compartilhar ativos do DAM no [!DNL Sites]
 description: Usar ativos disponíveis em um local remoto [!DNL Adobe Experience Manager Assets] implantação ao criar suas páginas da Web em outra [!DNL Adobe Experience Manager Sites] implantação.
-contentOwner: AG
+contentOwner: AK
+mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 6b9f0836ae61fdaa1aaf89434d76be5925970088
+source-git-commit: 19eaabb55f11ea8080a545d994795e30817a51fb
 workflow-type: tm+mt
-source-wordcount: '3811'
-ht-degree: 21%
+source-wordcount: '3786'
+ht-degree: 18%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 21%
 
 Em grandes empresa, a infraestrutura necessária para criar sites pode ser distribuída. Às vezes, os recursos de criação de sites e os ativos digitais usados para criar esses sites podem residir em diferentes implantações. Um motivo pode ser a distribuição geográfica de implantações existentes necessárias para trabalhar em conjunto. Outra razão pode ser as aquisições que levam a infraestruturas heterogêneas, incluindo diferentes [!DNL Experience Manager] versões, que a empresa pai deseja usar em conjunto.
 
-A funcionalidade Ativos conectados oferece suporte ao caso de uso acima, integrando [!DNL Experience Manager Sites] e [!DNL Experience Manager Assets]. Os usuários podem criar páginas da Web em [!DNL Sites] que usam os ativos digitais de uma [!DNL Assets] implantações.
+A funcionalidade Ativos conectados oferece suporte aos casos de uso acima, integrando [!DNL Experience Manager Sites] e [!DNL Experience Manager Assets]. Os usuários podem criar páginas da Web em [!DNL Sites] que usam os ativos digitais de uma [!DNL Assets] implantações.
 
 >[!NOTE]
 >
@@ -26,7 +27,7 @@ A funcionalidade Ativos conectados oferece suporte ao caso de uso acima, integra
 
 Ao editar páginas em [!UICONTROL Editor de páginas] como destino, os autores podem pesquisar, navegar e incorporar facilmente ativos de um [!DNL Assets] implantação que atua como uma fonte de ativos. Os administradores criam uma integração única de uma implantação de [!DNL Experience Manager] com [!DNL Sites] com outra implantação de [!DNL Experience Manager] com [!DNL Assets] capacidade. Os autores do site também podem usar imagens do Dynamic Media nas páginas da Web de seu site por meio do Connected Assets e aproveitar as funcionalidades do Dynamic Media, como recorte inteligente e predefinições de imagens.
 
-Para o [!DNL Sites] autores, os ativos remotos estão disponíveis como ativos locais somente leitura. A funcionalidade suporta pesquisa e uso ininterruptos de alguns ativos remotos de cada vez. Para disponibilizar muitos ativos remotos em um [!DNL Sites] implantação de uma só vez, considere migrar os ativos em massa. Consulte [Guia de migração do Experience Manager Assets](/help/assets/assets-migration-guide.md).
+Para o [!DNL Sites] autores, os ativos remotos estão disponíveis como ativos locais somente leitura. A funcionalidade suporta pesquisa e acesso ininterruptos a ativos remotos no Editor de sites. Para quaisquer outros casos de uso que possam exigir que o conjunto de ativos completo esteja disponível no Sites, considere migrar os ativos em massa em vez de aproveitar os Ativos conectados. Consulte [Guia de migração do Experience Manager Assets](/help/assets/assets-migration-guide.md).
 
 ### Pré-requisitos e implantações compatíveis {#prerequisites}
 
@@ -41,9 +42,9 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
    | **[!DNL Experience Manager]6,5 [!DNL Assets] no AMS** | Compatível | Compatível | Compatível |
    | **[!DNL Experience Manager]6,5 [!DNL Assets] no local** | Incompatível | Incompatível | Incompatível |
 
-### Formatos de arquivo não suportados {#mimetypes}
+### Formatos de arquivo compatíveis {#mimetypes}
 
-Os autores pesquisam imagens e os seguintes tipos de documentos no Localizador de conteúdo e usam os ativos pesquisados no Editor de páginas. Os documentos são adicionados ao `Download` componente e imagens para o `Image` componente. Os autores também adicionam os ativos remotos em qualquer [!DNL Experience Manager] componente que estende o padrão `Download` ou `Image` componentes. Os formatos compatíveis são:
+Os autores pesquisam imagens e os seguintes tipos de documentos no Localizador de conteúdo e arrastam os ativos pesquisados no Editor de páginas. Os documentos são adicionados ao `Download` componente e imagens para o `Image` componente. Os autores também podem adicionar os ativos remotos em qualquer [!DNL Experience Manager] componente que estende o padrão `Download` ou `Image` componentes. Os formatos compatíveis são:
 
 * **Formatos de imagem**: Os formatos que a variável [Componente de imagem](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) suporta.
 * **Formatos de documento**: Consulte a [formatos de documento suportados](assets-formats.md#supported-document-formats).
@@ -52,7 +53,7 @@ Os autores pesquisam imagens e os seguintes tipos de documentos no Localizador d
 
 As várias funções envolvidas para configurar e usar o recurso e seus grupos de usuários correspondentes são descritas abaixo. O escopo local é usado para o caso de uso em que um autor cria uma página da Web. O escopo remoto é usado para a implantação do DAM que hospeda os ativos necessários. O [!DNL Sites] O autor busca esses ativos remotos.
 
-| Função | Escopo | Grupo de usuários | Nome do usuário na apresentação | Requisito |
+| Função | Escopo | Grupo de usuários | Nome do usuário na apresentação | Descrições |
 |---|---|---|---|---|
 | [!DNL Sites] administrador | Local | [!DNL Experience Manager] `administrators` | `admin` | Configurar [!DNL Experience Manager] e configurar a integração com o controle remoto [!DNL Assets] implantação. |
 | Usuário do DAM | Local | `Authors` | `ksaner` | Usado para exibir e duplicar os ativos pesquisados em `/content/DAM/connectedassets/`. |
@@ -97,7 +98,7 @@ Para configurar o Connected Assets e o local [!DNL Sites] para conectividade, si
    1. **[!UICONTROL URL de sites locais]** é a localização da variável [!DNL Sites] implantação. [!DNL Assets] a implantação usa esse valor para manter referências aos ativos digitais buscados por essa [!DNL Sites] implantação.
    1. Credenciais de [!DNL Sites] usuário técnico.
    1. O valor de **[!UICONTROL Limite de otimização da transferência do binário original]** especifica se os ativos originais (incluindo as representações) são transferidos de forma síncrona ou não. Os ativos com tamanho de arquivo menor podem ser buscados prontamente, enquanto os ativos com tamanho de arquivo relativamente maior são sincronizados melhor de forma assíncrona. O valor depende dos recursos de rede.
-   1. Selecione **[!UICONTROL Datastore compartilhado com o Connected Assets]**, se você usar um datastore para armazenar seus ativos e se o Datastore for o armazenamento comum entre as duas implantações do Nesse caso, o limite não importa, pois os binários de ativos reais estão disponíveis no armazenamento de dados e não são transferidos.
+   1. Selecionar **[!UICONTROL Armazenamento de dados compartilhado com o Connected Assets]**, se você usar um armazenamento de dados para armazenar seus ativos e o armazenamento de dados for compartilhado entre ambas as implantações. Nesse caso, o limite não importa, pois os binários de ativos reais estão disponíveis no armazenamento de dados e não são transferidos.
 
    ![Uma configuração típica para a funcionalidade Connected Assets](assets/connected-assets-typical-config.png)
 
@@ -166,7 +167,7 @@ No remoto [!DNL Assets] implantação, em [!UICONTROL Modo de sincronização Dy
 
 ## Use ativos remotos {#use-remote-assets}
 
-Os autores do site usam o Localizador de conteúdo para se conectar à implantação do DAM. Os autores podem procurar, buscar e arrastar os ativos remotos em um componente. Para autenticar no DAM remoto, mantenha acessíveis as credenciais do usuário do DAM fornecidas pelo administrador.
+Os autores do site usam o Localizador de conteúdo para se conectar à implantação do DAM. Os autores podem procurar, buscar e arrastar os ativos remotos em um componente. Para autenticar no DAM remoto, mantenha acessíveis as credenciais fornecidas pelo administrador (se houver).
 
 Os autores podem usar os ativos disponíveis no DAM local e na implantação remota do DAM, em uma única página da Web. Use o Localizador de conteúdo para alternar entre a pesquisa no DAM local ou a pesquisa no DAM remoto.
 
@@ -182,7 +183,7 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
    Clique em **[!UICONTROL Alternar painel lateral]** no canto superior esquerdo da página.
 
-1. Abra o [!UICONTROL Ativos] e clique em **[!UICONTROL Faça logon no Connected Assets]**.
+1. Abra o [!UICONTROL Ativos] (Localizador de conteúdo remoto) e clique em **[!UICONTROL Faça logon no Connected Assets]**.
 1. Forneça as credenciais - `ksaner` como nome de usuário e `password` como senha. Esse usuário tem permissões de criação em [!DNL Experience Manager] implantações.
 1. Procure o ativo que você adicionou ao DAM. Os ativos remotos são exibidos no painel esquerdo. Filtre por imagens ou documentos e filtre também por tipos de documentos compatíveis. Arraste as imagens em um componente `Image` e os documentos em um componente `Download`.
 
@@ -192,7 +193,7 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
    *Figura: opções para filtrar tipos de documentos e imagens ao pesquisar ativos no DAM remoto.*
 
-1. Um autor do site será notificado se ocorrer uma busca assíncrona de ativo e uma falha na tarefa de busca. Durante a criação ou até mesmo após a criação, os autores podem ver informações detalhadas sobre as tarefas de busca e erros no [trabalhos assíncronos](/help/sites-administering/asynchronous-jobs.md) interface do usuário.
+1. Um autor do site é notificado se o original de um ativo for buscado de forma assíncrona e se alguma tarefa de busca falhar. Durante a criação ou até mesmo após a criação, os autores podem ver informações detalhadas sobre as tarefas de busca e erros no [trabalhos assíncronos](/help/sites-administering/asynchronous-jobs.md) interface do usuário.
 
    ![Notificação sobre a busca assíncrona de ativos que ocorre em segundo plano.](assets/assets_async_transfer_fails.png)
 
@@ -202,7 +203,7 @@ Use a configuração acima para ter uma experiência de criação a fim de enten
 
    >[!NOTE]
    >
-   >Mesmo se um ou mais ativos remotos não forem buscados, a página será publicada. O componente que usa o ativo remoto é publicado vazio. O [!DNL Experience Manager] a área de notificação exibe uma notificação para erros que são mostrados na página de trabalhos assíncronos.
+   >Mesmo se um ou mais ativos remotos não forem buscados completamente, a página será publicada. O [!DNL Experience Manager] a área de notificação exibe uma notificação para erros que são mostrados na página de trabalhos assíncronos.
 
 >[!CAUTION]
 >
@@ -223,7 +224,7 @@ Para exibir e gerenciar referências no [!DNL Assets] , siga estas etapas:
 
 1. As referências para [!DNL Sites] páginas exibe a contagem total de referências para cada local [!DNL Sites]. Pode levar algum tempo para localizar todas as referências e exibir o número total de referências.
 1. A lista de referências é interativa e os usuários do DAM podem clicar em uma referência para abrir a página de referência. Se referências remotas não puderem ser buscadas por algum motivo, uma notificação será exibida informando o usuário sobre a falha.
-1. Os usuários podem mover ou excluir o ativo. Ao mover ou excluir um ativo, o número total de referências de todos os ativos/pastas selecionados é exibido em uma caixa de diálogo de aviso. Ao excluir um ativo para o qual as referências ainda não são exibidas, uma caixa de diálogo de aviso é exibida.
+1. Os usuários podem mover ou excluir o ativo. Ao mover ou excluir um ativo, o número total de referências de todos os ativos/pastas selecionados é exibido em uma caixa de diálogo de aviso. Ao excluir um ativo para o qual as referências ainda não foram recuperadas, uma caixa de diálogo de aviso é exibida.
 
    ![forçar aviso de exclusão](assets/delete-referenced-asset.png)
 
@@ -275,7 +276,7 @@ Não, não é possível usar fragmentos de conteúdo e ativos de vídeo da impla
 
 ### Você pode usar ativos do Dynamic Media a partir da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets?
 
-Sim, você pode configurar e usar os ativos do Dynamic Media na implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets. Para obter mais informações, consulte [Configurar uma conexão entre implantações do Sites e do Dynamic Media](#dynamic-media-assets).
+Sim, você pode configurar e usar ativos de imagem do Dynamic Media a partir da implantação remota do DAM no [!DNL Sites] implantação após configurar o Connected Assets. Para obter mais informações, consulte [Configurar uma conexão entre implantações do Sites e do Dynamic Media](#dynamic-media-assets).
 
 ### Após configurar o Connected Assets, é possível executar as operações de atualização, exclusão, renomeação e movimentação nos ativos ou pastas remotos do DAM?
 
@@ -291,7 +292,6 @@ Você pode adicionar ativos à [!DNL Sites] no entanto, esses ativos não podem 
 
 ### Permissões e gerenciamento de ativos {#permissions-and-managing-assets}
 
-* Os ativos locais não são sincronizados com os ativos originais na implantação remota. As edições, exclusões ou revogação de permissões na implantação do DAM não são propagadas para a jusante.
 * Os ativos locais são cópias somente leitura. [!DNL Experience Manager]Os componentes do fazem edições não destrutivas nos ativos. Nenhuma outra edição é permitida.
 * Os ativos buscados localmente estão disponíveis apenas para fins de criação. Os fluxos de trabalho de atualização de ativos não podem ser aplicados e os metadados não podem ser editados.
 * Somente as imagens e os formatos de documento listados são compatíveis. [!DNL Content Fragments] e [!DNL Experience Fragments] não são compatíveis.
@@ -304,7 +304,7 @@ Você pode adicionar ativos à [!DNL Sites] no entanto, esses ativos não podem 
 ### Configuração e licenciamento {#setup-licensing}
 
 * [!DNL Assets] implantação em [!DNL Adobe Managed Services] é compatível.
-* [!DNL Sites] pode se conectar a um único [!DNL Assets] repositório de cada vez.
+* [!DNL Sites] pode se conectar a um único [!DNL Assets] implantação de cada vez.
 * Uma licença de [!DNL Assets] é necessário trabalhar como repositório remoto.
 * Uma ou mais licenças de [!DNL Sites] é necessário trabalhar como implantação de criação local.
 
