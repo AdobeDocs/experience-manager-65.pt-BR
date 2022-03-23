@@ -2,7 +2,7 @@
 title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas descrevendo as informações da versão, novidades, como instalar e listas detalhadas de alterações."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: b654785af72bbe124f7296ae0f8ecb94e7815234
+source-git-commit: 70280ec60e8bc4cc139a44c379adca7541856997
 workflow-type: tm+mt
 source-wordcount: '3329'
 ht-degree: 5%
