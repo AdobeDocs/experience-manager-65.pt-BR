@@ -8,10 +8,10 @@ user-guide-title: Guia do Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
-source-git-commit: 7962d076135bcbac821ff85fd1831ee2c444ff00
+source-git-commit: 290ae422e1136ea28ab21c3031ab66fb5405f1d3
 workflow-type: tm+mt
-source-wordcount: '3772'
-ht-degree: 4%
+source-wordcount: '3775'
+ht-degree: 5%
 
 ---
 
@@ -168,12 +168,11 @@ ht-degree: 4%
    + [Modelos de formulário adaptável](using/template-editor.md)
    + [Expressões de formulário adaptável](using/adaptive-form-expressions.md)
    + [Gerar documento de registro para formulários adaptáveis](using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-   + [Melhore o desempenho de formulários grandes com carregamento lento](using/lazy-loading-adaptive-forms.md)
+   + [Melhorar o desempenho de formulários grandes com carregamento lento](using/lazy-loading-adaptive-forms.md)
    + [Preencher previamente campos de formulário adaptáveis](using/prepopulate-adaptive-form-fields.md)
    + [Uso de expressões SOM em formulários adaptáveis](using/using-som-expressions-adaptive-forms.md)
    + [Adicionar informações dos dados do usuário aos metadados de envio de formulário](using/form-submission-metadata.md)
    + [Suporte XFA em formulários adaptáveis baseados em XDP](using/xfa-api-supported-in-adaptive-form.md)
-   + [Alteração do conteúdo zero da página no Designer](using/changing-page-zero-content-designer.md)
    + [Conceder acesso ao editor de regras para grupos de usuários selecionados](using/rule-editor-access-user-groups.md)
    + [Uso AEM fluxo de trabalho de tradução para localizar formulários adaptáveis e documentos de registro](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
    + [Automatizar o teste de formulários adaptáveis](using/calvin.md)
@@ -194,7 +193,7 @@ ht-degree: 4%
    + [Propriedades de configuração do Interative Communications](using/interactive-communication-configuration-properties.md)
    + [Gerar várias comunicações interativas](using/generate-multiple-interactive-communication-using-batch-api.md)
    + [Usar o modo Layout para redimensionar componentes](using/resize-using-layout-mode-interactive-communication.md)
-+ Fluxos de trabalhos {#workflows}
++ Fluxos de trabalho {#workflows}
    + [Fluxo de trabalho centrado no Forms no OSGi](using/aem-forms-workflow.md)
    + [Fluxo de trabalho centrado na Forms no OSGi - Referência em etapas](using/aem-forms-workflow-step-reference.md)
    + [Selecione dinamicamente um usuário ou grupo para etapas de fluxo de trabalho centradas no AEM Forms](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
@@ -373,6 +372,7 @@ ht-degree: 4%
    + [Habilitar AEM para pesquisar documentos com segurança protegida PDF e documentos do Microsoft Office](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protect um documento em nome de outro usuário](using/protect-document-on-behalf-of-another-user.md)
 + Designer do Forms {#use-forms-designer}
+   + [Ajuda do Forms Designer](using/forms-designer-help.md)
    + [Uso do Designer](http://www.adobe.com/go/learn_aemforms_designer_65)
    + [Tutoriais de início rápido do Designer ](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
    + [Amostras do Designer ](http://www.adobe.com/go/learn_aemforms_designer_samples_65)
@@ -380,6 +380,7 @@ ht-degree: 4%
    + [Referência de scripts do Designer ](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
    + [Referência do FormCalc do Designer ](http://www.adobe.com/go/learn_aemforms_formCalc_65)
    + [Uso de assinaturas do Scribble em formulários HTML5](using/scribble-signature.md)
+   + [Alteração do conteúdo zero da página no Designer](using/changing-page-zero-content-designer.md)
 + Personalizar o AEM Forms {#customize-aem-forms}
    + [Estrutura de aparência para formulários adaptáveis e HTML5](using/introduction-widgets.md)
    + [Criação de um modelo de formulário adaptável personalizado](using/custom-adaptive-forms-templates.md)
@@ -686,4 +687,3 @@ ht-degree: 4%
          + [Configuração e solução de problemas de um AEM Forms no cluster de servidores JEE](developing/configure-server-cluster.md)
          + [Gerar e trabalhar com hash em PDF forms dinâmicas](developing/hashing-forms.md)
          + [Transmitindo credenciais usando cabeçalhos WS-Security](developing/passing-credentials.md)
-
