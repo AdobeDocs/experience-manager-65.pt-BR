@@ -1,15 +1,15 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager 6.5, Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
-source-git-commit: 2706a069bea731da1f84c15e2da02b53a9db4d28
+source-git-commit: ee6e408668a523464632e53a01ba11eddec103f6
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
@@ -20,14 +20,14 @@ ht-degree: 48%
 + [[!DNL Experience Manager] 6.5 Notas de versão do Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [Sobre o DAM](assets.md)
 + [Práticas recomendadas para ativos](best-practices-for-assets.md)
-+ [Acessibilidade em [!DNL Assets]](accessibility.md)
++ [Acessibilidade no  [!DNL Assets]](accessibility.md)
 + Usar o Experience Manager Assets {#using}
    + [[!DNL Assets] experiência da página inicial](assets-home-page.md)
    + [Pesquisar ativos digitais](search-assets.md)
    + [Trabalhar com metadados de ativos](metadata.md)
    + [Ativos multilíngues](multilingual-assets.md)
    + [Use [!DNL Adobe Stock] ativos em Ativos](aem-assets-adobe-stock.md)
-   + [Visualizar ativos 3D](previewing-3d-assets.md)
+   + [Pré-visualizar ativos 3D](previewing-3d-assets.md)
    + [Revisar ativos e coleções de pastas](bulk-approval.md)
    + [Tags inteligentes aprimoradas](enhanced-smart-tags.md)
    + [Fluxo de atividades na linha do tempo](activity-stream.md)
@@ -99,7 +99,7 @@ ht-degree: 48%
    + [API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [[!DNL Assets] desenvolvimento de proxy](proxy.md)
 + Administrar ativos {#administer}
-   + [Formatos de arquivo não suportados](assets-formats.md)
+   + [Formatos de arquivo compatíveis](assets-formats.md)
    + [Pesquisar aspectos](search-facets.md)
    + [Entender os conceitos de metadados](metadata-concepts.md)
    + [Configurar a funcionalidade de metadados](metadata-config.md)
@@ -119,7 +119,7 @@ ht-degree: 48%
    + [Usar rasterizador de PDF](aem-pdf-rasterizer.md)
    + [Configurar restrições de upload](configuring-asset-upload-restrictions.md)
    + [[!DNL Experience Manager] e [!DNL Creative Cloud] integração](aem-cc-integration-best-practices.md)
-   + [Integrar com a [!DNL InDesign Server]](indesign.md)
+   + [Integrar com a  [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management em ativos](drm.md)
    + [Usar pacote de demonstração para insights de ativos](use-demo-package-for-asset-insights.md)
    + [Configurar Adobe Asset Link](configure-asset-link.md)
@@ -133,13 +133,13 @@ ht-degree: 48%
    + [Marque seus ativos com água](watermarking.md)
    + [Modelos de ativos](asset-templates.md)
 + Brand Portal {#brandportal}
-   + [Configurar o [!DNL Assets] com o [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [Publicar ativos no [!DNL Brand Portal]](brand-portal-publish-assets.md)
+   + [Configurar o  [!DNL Assets]  com o  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Publicar ativos no  [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Publicar pastas em [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Publicar coleções no [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + Fragmentos de conteúdo {#content-fragments}
    + [Trabalho com fragmentos de conteúdo](content-fragments/content-fragments.md)
-   + [Headless delivery com fragmentos de conteúdo e GraphQL](content-fragments/content-fragments-graphql.md)
+   + [Entrega headless com fragmentos de conteúdo e GraphQL](content-fragments/content-fragments-graphql.md)
    + [Ativar a funcionalidade de fragmento de conteúdo para sua instância](content-fragments/content-fragments-configuration-browser.md)
    + [Modelos de fragmentos do conteúdo](content-fragments/content-fragments-models.md)
    + [Gerenciamento dos fragmentos de conteúdo](content-fragments/content-fragments-managing.md)
