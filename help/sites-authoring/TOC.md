@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guia do usuário de criação do AEM 6.5
 breadcrumb-title: Guia de criação
 user-guide-description: Saiba mais sobre os principais conceitos para criação de conteúdo e criação no AEM.
-feature: 'Criação  '
+feature: Authoring
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 88%
+source-wordcount: '298'
+ht-degree: 87%
 
 ---
 
@@ -25,10 +25,10 @@ ht-degree: 88%
    + [Guia rápido para a criação de páginas](qg-page-authoring.md)
    + [Conceito de criação](author.md)
    + [Manuseio básico](basic-handling.md)
-   + [Pesquisar  ](search.md)
+   + [Pesquisar](search.md)
    + [Configurar o ambiente da sua conta](user-properties.md)
    + [Sua caixa de entrada](inbox.md)
-   + [Atalhos de teclado para Consoles  ](keyboard-shortcuts.md)
+   + [Atalhos de teclado para Consoles](keyboard-shortcuts.md)
    + [Selecionar sua interface do usuário](select-ui.md)
 + Criação {#authoring}
    + [Ambiente e ferramentas de criação](author-environment-tools.md)
@@ -40,20 +40,20 @@ ht-degree: 88%
    + [Publicar páginas](publishing-pages.md)
    + [Criação de página com fragmentos de conteúdo](content-fragments.md)
    + [Fragmentos de experiência](experience-fragments.md)
-   + [Exportar para CSV  ](csv-export.md)
+   + [Exportar para CSV](csv-export.md)
    + [Componentes](default-components.md)
    + [Criação de uma página para dispositivos móveis  ](mobile.md)
    + [Solucionar problemas do AEM durante a criação  ](troubleshooting.md)
    + [Atalhos de teclado ao editar as páginas](page-authoring-keyboard-shortcuts.md)
    + [Práticas recomendadas    ](best-practices.md)
 + Recursos de site e página {#siteandpage}
-   + [Uso de tags  ](tags.md)
+   + [Uso de tags](tags.md)
    + [Criação de modelos de páginas  ](templates.md)
    + [Sistema de estilos](style-system.md)
    + [Trabalhar com versões de páginas](working-with-page-versions.md)
-   + [Diferencial de páginas  ](page-diff.md)
+   + [Diferencial de páginas](page-diff.md)
    + [Console de componentes](default-components-console.md)
-   + [Layout responsivo  ](responsive-layout.md)
+   + [Layout responsivo](responsive-layout.md)
    + [Content Insight](content-insights.md)
    + [Criação de conteúdo acessível (Conformidade com o WCAG 2.1)](creating-accessible-content.md)
    + [Configuração dos componentes no Modo de design](default-components-designmode.md)
@@ -66,12 +66,12 @@ ht-degree: 88%
    + [Trabalhar com tarefas](task-content.md)
    + [Integração com o Creative Project e o PIM](managing-product-information.md)
    + [Trabalhar com fluxos de trabalho de projeto](projects-with-workflows.md)
-+ Lançamentos {#launches}
++ Inicializações {#launches}
    + [Lançamentos](launches.md)
-   + [Criação de lançamentos](launches-creating.md)
-   + [Edição de lançamentos](launches-editing.md)
-   + [Promoção de lançamentos](launches-promoting.md)
-+ Fluxos de trabalhos {#workflows}
+   + [Criação de inicializações](launches-creating.md)
+   + [Edição de inicializações](launches-editing.md)
+   + [Promoção de inicializações](launches-promoting.md)
++ Fluxos de trabalho {#workflows}
    + [Trabalhar com fluxos de trabalho](workflows.md)
    + [Aplicação de fluxos de trabalho a páginas](workflows-applying.md)
    + [Participar de fluxos de trabalho](workflows-participating.md)

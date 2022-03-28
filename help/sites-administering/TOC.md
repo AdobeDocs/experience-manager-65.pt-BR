@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: admin-user
 user-guide-title: Guia do usuário de administração do AEM 6.5
 breadcrumb-title: Guia de administração
 user-guide-description: Saiba mais sobre como administrar o AEM.
 feature: Administering
 role: Admin
-source-git-commit: eb05fb92491932e4c2489c5adb533bbbae1d2870
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 29%
@@ -59,7 +59,7 @@ ht-degree: 29%
    + [Solução de problemas de AEM](troubleshoot.md)
    + [Gerenciamento de acesso a workflows](workflows-managing.md)
    + [Inicialização de workflows](workflows-starting.md)
-   + [Administração de workflows](workflows.md)
+   + [Administração de fluxos de trabalho](workflows.md)
    + [Administração de instâncias do fluxo de trabalho](workflows-administering.md)
    + [Uso do cURL com AEM](curl.md)
    + [Ferramenta do servidor proxy (proxy.jar)](proxy-jar.md)

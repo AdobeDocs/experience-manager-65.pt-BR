@@ -1,15 +1,15 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guia do usuário de criação da interface clássica do AEM 6.5
 user-guide-description: Este guia aborda os conceitos de criação no AEM na interface do usuário clássica.
-feature: 'Criação  '
+feature: Authoring
 role: User
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 84%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 84%
    + [Manuseio básico](author-env-basic-handling.md)
    + [Configurar o ambiente da sua conta](author-env-user-props.md)
    + [Selecionar sua interface do usuário](author-env-select-ui.md)
-   + [Pesquisar  ](author-env-search.md)
+   + [Pesquisar](author-env-search.md)
    + [Sua caixa de entrada](author-env-inbox.md)
-   + [Atalhos de teclado para Consoles  ](author-env-keyboard-shortcuts.md)
+   + [Atalhos de teclado para Consoles](author-env-keyboard-shortcuts.md)
 + Criação {#authoring}
    + [Criar páginas](classic-page-author.md)
    + [Criação - o Ambiente e as ferramentas](classic-page-author-env-tools.md)
@@ -44,22 +44,22 @@ ht-degree: 84%
    + [Atalhos de teclado ao editar as páginas](classic-page-author-keyboard-shortcuts.md)
 + Recursos de site e página {#siteandpage}
    + [Criação de página com fragmentos de conteúdo](classic-page-author-content-fragments.md)
-   + [Layout responsivo  ](classic-page-author-responsive-layout.md)
+   + [Layout responsivo](classic-page-author-responsive-layout.md)
    + [Trabalhar com versões de páginas](classic-page-author-work-with-versions.md)
-   + [Uso de tags  ](classic-feature-tags.md)
+   + [Uso de tags](classic-feature-tags.md)
    + [Andaime](classic-feature-scaffolding.md)
    + [Configuração dos componentes no Modo de design](classic-page-author-design-mode.md)
    + [Adicionar recursos Search&amp;Promote à sua página](classic-feature-search-promote.md)
    + [Componentes](classic-page-author-default-components.md)
-+ Fluxos de trabalhos {#workflows}
++ Fluxos de trabalho {#workflows}
    + [Participar de fluxos de trabalho](classic-workflows-participating.md)
    + [Trabalhar com fluxos de trabalho](classic-workflows.md)
    + [Aplicação de fluxos de trabalho a páginas](classic-workflows-applying.md)
-+ Lançamentos {#launches}
++ Inicializações {#launches}
    + [Lançamentos](classic-launches.md)
-   + [Criação de lançamentos](classic-launches-creating.md)
-   + [Edição de lançamentos](classic-launches-editing.md)
-   + [Promoção de lançamentos](classic-launches-promoting.md)
+   + [Criação de inicializações](classic-launches-creating.md)
+   + [Edição de inicializações](classic-launches-editing.md)
+   + [Promoção de inicializações](classic-launches-promoting.md)
 + Personalização {#personalization}
    + [Noções sobre segmentação](classic-personalization-campaigns-segmentation.md)
    + [Gerenciamento de campanhas](classic-personalization-campaigns.md)

@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guia de implementação do AEM 6.5
 breadcrumb-title: Guia de implementação
 user-guide-description: Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.5, incluindo a implantação do Adobe Managed Services na nuvem.
-feature: Implantação
+feature: Deploying
 role: Architect
-source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 16%
+source-wordcount: '327'
+ht-degree: 18%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 16%
    + [Solução de problemas de índices do Oak](troubleshooting-oak-indexes.md)
    + [Aceitação Em Coleta De Estatísticas De Uso Agregado](opt-in-aggregated-usage-statistics.md)
    + [Resolução de problemas](troubleshooting.md)
-+ Configurar AEM {#configuring}
++ Configuração de AEM {#configuring}
    + [Conceitos básicos de configuração](configuring.md)
    + [Logs](configure-logging.md)
    + [Configuração do OSGi](configuring-osgi.md)
@@ -63,7 +63,7 @@ ht-degree: 16%
    + [Guia de desempenho de ativos](assets-performance-sizing.md)
    + [Artigos explicativos de configuração](ht-deploy.md)
    + [Configuração do Console da Web](configuring-web-console.md)
-+ Atualização para AEM 6.5 {#upgrading}
++ Atualização para o AEM 6.5 {#upgrading}
    + [Atualização para o AEM 6.5](upgrade.md)
    + [Planejamento da atualização](upgrade-planning.md)
    + [Avaliação da complexidade da atualização com o Detector de padrões](pattern-detector.md)
@@ -80,7 +80,7 @@ ht-degree: 16%
    + [Atualização de código e personalizações](upgrading-code-and-customizations.md)
    + [Etapas de atualização para instalações do servidor de aplicativos](app-server-upgrade.md)
    + [Lista de pacotes obsoletos desinstalados após a atualização](obsolete-bundles.md)
-+ Reestruturação do Repositório {#restructuring}
++ Reestruturação do repositório {#restructuring}
    + [Reestruturação do repositório no AEM 6.5](repository-restructuring.md)
    + [Reestruturação comum de repositório no AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
    + [Restruturação do repositório de sites no AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)
