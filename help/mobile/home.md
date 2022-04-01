@@ -1,20 +1,19 @@
 ---
 title: Guia do usuário do AEM 6.5 Mobile
-seo-title: Guia do usuário do AEM 6.5 Mobile
-description: Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis.
-seo-description: Descreve como criar e gerenciar conteúdo para aplicativos móveis.
+seo-title: AEM 6.5 Mobile User Guide
+description: Aproveite AEM suporte para criar e gerenciar conteúdo para aplicativos móveis. Obtenha uma introdução e saiba como criar, desenvolver e administrar no aplicativo de serviços sob demanda e no Adobe PhoneGap Enterprise.
+seo-description: Describes how to create and manage content for mobile applications.
 exl-id: 3531d8ea-614d-465a-8b4a-e3e3f3461e94
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 34%
+source-wordcount: '391'
+ht-degree: 31%
 
 ---
 
 # Guia do usuário do AEM 6.5 Mobile
 
-Este guia aborda todas as tarefas do AEM Mobile, como criar e gerenciar conteúdo para aplicativos móveis.
+Aproveite AEM suporte para criar e gerenciar conteúdo para aplicativos móveis. Obtenha uma introdução e saiba como criar, desenvolver e administrar no aplicativo de serviços sob demanda e no Adobe PhoneGap Enterprise.
 
 ## Artigos principais AEM
 

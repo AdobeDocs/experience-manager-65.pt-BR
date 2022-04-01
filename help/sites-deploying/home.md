@@ -1,16 +1,14 @@
 ---
 title: Guia do usuário de implantação do AEM 6.5
-seo-title: Guia do usuário de implantação do AEM 6.5
-description: Este guia aborda todas as tarefas de Implantação de AEM, como instalação e implantação de AEM.
-seo-description: Abrange todas as tarefas de Implantação de AEM, como instalação e implantação de AEM.
-translation-type: tm+mt
-source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
+seo-title: AEM 6.5 Deploying User Guide
+description: Saiba mais sobre a instalação e implantação do Adobe Experience Manager 6.5 e sobre sua arquitetura, incluindo a implantação do Adobe Managed Services na nuvem.
+exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 30%
+source-wordcount: '391'
+ht-degree: 31%
 
 ---
-
 
 # Guia do usuário de implantação do AEM 6.5
 

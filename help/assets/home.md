@@ -1,25 +1,25 @@
 ---
 title: Guia do Assets
-description: Este guia aborda todas as tarefas do Experience Manager Assets, como criar, gerenciar, entregar e otimizar ativos digitais.
+description: Crie, gerencie, processe e distribua ativos digitais no Experience Manager. Esses guias descrevem as práticas recomendadas, os recursos de acessibilidade e como usar AEM ativos 6.5.
 user-guide-title: Guia do Assets
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: 883c279330b199d4e3a301e240cae02a6e04fd20
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 20%
+source-wordcount: '344'
+ht-degree: 21%
 
 ---
 
 # Guia do Assets
 
-Este guia aborda todas as [!DNL Experience Manager Assets] tarefas, como criar, gerenciar, entregar e otimizar ativos digitais.
+Crie, gerencie, processe e distribua ativos digitais no Experience Manager. Esses guias descrevem as práticas recomendadas, os recursos de acessibilidade e como usar AEM ativos 6.5.
 
-## Artigos principais [!DNL Experience Manager]
+## Chave [!DNL Experience Manager] artigos
 
 * [Notas de versão do Experience Manager 6.5](/help/release-notes/home.md)
-* [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
+* [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=pt-BR)
 * [Lista de verificação de segurança](/help/sites-administering/security-checklist.md)
 
 ## [!DNL Experience Manager] Guias 6.5
@@ -38,9 +38,9 @@ Este guia aborda todas as [!DNL Experience Manager Assets] tarefas, como criar, 
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto do Experience Manager com êxito. |
 | [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre a Commerce Integration Framework no Experience Manager. |
 | [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
-| [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Este guia mostra como compartilhar conteúdo gerado pelo usuário com [!DNL Livefyre]. |
+| [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Este guia mostra como compartilhar conteúdo gerado pelo usuário com o [!DNL Livefyre]. |
 
-## Principais recursos [!DNL Experience Manager]
+## Chave [!DNL Experience Manager] recursos
 
 * [Experience Manager Video Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
