@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 8fcbdb4d00a5ddffadf5b4a099454dc795999769
+source-git-commit: 81008366b7d5edaf1d2f83ccd2ba6237c2e96fad
 workflow-type: tm+mt
-source-wordcount: '5100'
+source-wordcount: '5107'
 ht-degree: 2%
 
 ---
@@ -677,13 +677,23 @@ Se você enfrentar problemas mesmo depois de corrigir todos os problemas relatad
 
 +++
 
-+++HTMLtoPDF
++++HTML para problemas de conversão de PDF
 
 * Certifique-se de que os diretórios de fontes sejam adicionados na interface do usuário de configuração do PDF Generator.
 
-+++
+**Linux e Solaris (rota de conversão PhantomJS)**
 
-+++Linux® e Solaris™(conversão do WebKit)
+* Certifique-se de que a biblioteca de 32 bits esteja disponível (libicudata.so.42) para conversão baseada em HTMLToPDF do Webkit e 64 bits (libicudata.so.42 libs) esteja disponível para conversão baseada em HTML baseada em PhantomJS.
+
+* Execute o seguinte comando para listar bibliotecas ausentes para phantomjs:
+
+   ```
+   ldd phantomjs | grep not
+   ```
+
+* Certifique-se de que a variável de ambiente JAVA_HOME_32 aponte para o local correto.
+
+**Linux® e Solaris™ (rota de conversão WebKit)**
 
 * Certifique-se de que os diretórios `/usr/lib/X11/fonts` e `/usr/share/fonts` existe. Se os diretórios não existirem, crie um link simbólico de `/usr/share/X11/fonts` para `/usr/lib/X11/fonts` e outro link simbólico de `/usr/share/fonts` para `/usr/share/X11/fonts`.
 
@@ -724,27 +734,13 @@ Se você enfrentar problemas mesmo depois de corrigir todos os problemas relatad
 
 +++
 
-+++Linux® e Solaris(PhantomJS)HTMLtoPDF
-
-* Certifique-se de que a biblioteca de 32 bits esteja disponível (libicudata.so.42) para conversão baseada em HTMLToPDF do Webkit e 64 bits (libicudata.so.42 libs) esteja disponível para conversão baseada em HTML baseada em PhantomJS.
-
-* Execute o seguinte comando para listar bibliotecas ausentes para phantomjs:
-
-```
-ldd phantomjs | grep not
-```
-
-* Certifique-se de que a variável de ambiente JAVA_HOME_32 aponte para o local correto.
-
-+++
-
 +++ Não é possível adicionar um usuário do Gerador de PDF (PDFG)
 
 * Verifique se o Microsoft® Visual C++ 2008 x86, Microsoft® Visual C++ 2010 x86, Microsoft® Visual C++ 2012 x86 e Microsoft® Visual C++ 2013 x86 (32 bits) redistribuíveis estão instalados no Windows.
 
 +++
 
-+++Falha nos testes de automação
++++Falhas no teste de automação
 
 * Para o Microsoft® Office e o OpenOffice, execute pelo menos uma conversão manualmente (como cada usuário) para garantir que nenhuma caixa de diálogo apareça durante a conversão. Se alguma caixa de diálogo for exibida, descarte-a. Essa caixa de diálogo não deve aparecer durante a conversão automática.
 
@@ -752,7 +748,7 @@ ldd phantomjs | grep not
 
 +++
 
-Falha de +++conversões de vários usuários
++++Várias falhas de conversão de usuário
 
 * Verifique os logs do servidor para verificar se a conversão está falhando para um usuário específico.(O Process Explorer pode ajudá-lo a verificar o processo de execução para usuários diferentes)
 
