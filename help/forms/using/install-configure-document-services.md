@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 0f4207564645ef7ba7da9064e971248b59f5a9b3
+source-git-commit: a23b3648b2687bcdbb46ea5e0bb42090822e1dd9
 workflow-type: tm+mt
-source-wordcount: '5381'
+source-wordcount: '5420'
 ht-degree: 1%
 
 ---
@@ -203,7 +203,7 @@ Se você for usar o serviço PDF Generator para converter formatos de arquivo na
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint estão disponíveis apenas para Microsoft® Windows. Se você estiver usando o sistema operacional baseado em UNIX, instale o OpenOffice para converter arquivos de rich text e arquivos Microsoft® Office suportados em documentos PDF.
 >* Ignore todas as caixas de diálogo exibidas após instalar o Adobe Acrobat e software de terceiros para todos os usuários configurados para usar o serviço Gerador de PDF.
 >* Inicie todo o software instalado pelo menos uma vez. Descarte todas as caixas de diálogo para todos os usuários configurados para usar o serviço PDF Generator.
->
+>* [Verifique a data de expiração dos números de série do Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migrar seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base no prazo de validade.
 
 
 Depois de instalar o Acrobat, abra o Microsoft® Word. No **Acrobat** clique em **Criar PDF** e converta um arquivo .doc ou .docx disponível em sua máquina em um documento do PDF. Se a conversão for bem-sucedida, o AEM Forms estará pronto para usar o Acrobat com o serviço PDF Generator.
