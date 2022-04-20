@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 81008366b7d5edaf1d2f83ccd2ba6237c2e96fad
+source-git-commit: 0f4207564645ef7ba7da9064e971248b59f5a9b3
 workflow-type: tm+mt
-source-wordcount: '5107'
-ht-degree: 2%
+source-wordcount: '5381'
+ht-degree: 1%
 
 ---
 
@@ -199,6 +199,7 @@ Se você for usar o serviço PDF Generator para converter formatos de arquivo na
 
 >[!NOTE]
 >
+>* Se o servidor AEM Forms estiver em um ambiente offline ou seguro e a Internet não estiver disponível para ativar o Adobe Acrobat, consulte [Ativação offline](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en) para obter instruções sobre como ativar essas instâncias do Adobe Acrobat.
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint estão disponíveis apenas para Microsoft® Windows. Se você estiver usando o sistema operacional baseado em UNIX, instale o OpenOffice para converter arquivos de rich text e arquivos Microsoft® Office suportados em documentos PDF.
 >* Ignore todas as caixas de diálogo exibidas após instalar o Adobe Acrobat e software de terceiros para todos os usuários configurados para usar o serviço Gerador de PDF.
 >* Inicie todo o software instalado pelo menos uma vez. Descarte todas as caixas de diálogo para todos os usuários configurados para usar o serviço PDF Generator.
@@ -389,10 +390,10 @@ O pacote do complemento AEM Forms é um aplicativo implantado em AEM. O pacote c
    1. Selecionar **[!UICONTROL Forms]** do **[!UICONTROL Solução]** lista suspensa.
    2. Selecione a versão e o tipo do pacote. Também é possível usar a variável **[!UICONTROL Pesquisar downloads]** para filtrar os resultados.
 1. Toque no nome do pacote aplicável ao seu sistema operacional e selecione **[!UICONTROL Aceitar termos do EULA]** e toque em **[!UICONTROL Baixar]**.
-1. Abra [Gerenciador de pacotes](https://docs.adobe.com/content/help/br/experience-manager-65/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Fazer upload de pacote]** para fazer upload do pacote.
+1. Abra [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Fazer upload de pacote]** para fazer upload do pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Também é possível baixar o pacote por meio do link direto listado no [Versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) artigo 10. o
+   Também é possível baixar o pacote por meio do link direto listado no [Versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) artigo 10. o
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não pare imediatamente o servidor.** Antes de parar o AEM Forms Server, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no `[AEM-Installation-Directory]/crx-quickstart/logs/error`Arquivo .log e o log é estável.
 
@@ -759,6 +760,34 @@ Se você enfrentar problemas mesmo depois de corrigir todos os problemas relatad
 * Para o Microsoft® Office e o OpenOffice, execute pelo menos uma conversão manualmente (como cada usuário) para garantir que nenhuma caixa de diálogo apareça durante a conversão. Se alguma caixa de diálogo for exibida, descarte-a. Essa caixa de diálogo não deve aparecer durante a conversão automática.
 
 * Execute uma conversão de amostra.
+
++++
+
++++A licença do Adobe Acrobat instalada no AEM Forms Server expira
+
+* Se você tiver uma licença existente do Adobe Acrobat e ela tiver expirado, [Baixe a versão mais recente do Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html)e migrando seu número de série. Antes [migrando seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
+
+   * Use os comandos a seguir para gerar vid.xml e serializar novamente a instalação existente usando o arquivo vid.xml em vez dos comandos fornecidos em [migrando seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) artigo numérico.
+
+      * Gere o vid.xml
+
+         ```
+         adobe_prtk --tool=VolumeSerialize --generate --serial=<serialnum> [--leid=<LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=<Absolute path to prov.xml>]
+         ```
+
+      * Serialize o volume do pacote (serialize novamente a instalação existente usando o arquivo vid.xml e o novo serial): Execute o seguinte comando da pasta de instalação do PRTK como administrador para serializar e ativar os pacotes implantados em computadores clientes:
+
+         ```
+         adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
+         ```
+
+* Para instalações de grande escala, use o [Customization Wizard Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para remover versões anteriores do Reader e do Acrobat. Personalize o instalador e implante-o em todos os computadores de sua organização.
+
++++
+
++++ O AEM Forms Server está em um ambiente offline ou seguro e a Internet não está disponível para ativar o Acrobat.
+
+* Você pode ficar online dentro de 7 dias da primeira inicialização do produto Adobe para concluir uma ativação e registro online ou usar um dispositivo habilitado para Internet e o número de série do seu produto para concluir este processo. Para obter instruções detalhadas, consulte [Ativação offline](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
 +++
 
