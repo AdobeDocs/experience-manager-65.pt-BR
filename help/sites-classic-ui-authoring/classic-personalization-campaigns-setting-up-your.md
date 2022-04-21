@@ -1,8 +1,8 @@
 ---
 title: Configuração da sua campanha
-seo-title: Configuração da sua campanha
+seo-title: Setting up your campaign
 description: A configuração de uma nova campanha exige a criação de uma marca para manter suas campanhas, a criação de uma campanha para manter as experiências e, finalmente, a definição das propriedades para a nova campanha.
-seo-description: A configuração de uma nova campanha exige a criação de uma marca para manter suas campanhas, a criação de uma campanha para manter as experiências e, finalmente, a definição das propriedades para a nova campanha.
+seo-description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
 uuid: 244a150e-7b5e-4eff-bd15-e3b04be6a3e9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 19ad4751-1d5d-49de-b76b-3501b3e98e62
 docset: aem65
-translation-type: tm+mt
-source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
+source-git-commit: a2623df38bcd683a6a43bdaf3483e11e40ac4a68
 workflow-type: tm+mt
-source-wordcount: '2289'
-ht-degree: 95%
+source-wordcount: '2257'
+ht-degree: 94%
 
 ---
-
 
 # Configuração da sua campanha{#setting-up-your-campaign}
 
@@ -47,7 +46,7 @@ Em seguida, dependendo do tipo de experiência que você está criando, será ne
 * Se estiver criando uma oferta do Adobe Target (anteriormente, Test&amp;Target):
 
    1. [Crie uma experiência de oferta do Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
-   1. [Integrar com o Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
+   1. [Faça a integração com o Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -140,9 +139,9 @@ Agora que você criou a estrutura básica da experiência, é necessário contin
 
 * [Oferta do Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
-   * [Integrar com o Adobe Target](/help/sites-administering/target.md)
+   * [Faça a integração com o Adobe Target](/help/sites-administering/target.md)
 
-### Adição de um novo ponto de interação  {#adding-a-new-touchpoint}
+### Adição de um novo ponto de interação {#adding-a-new-touchpoint}
 
 Se você já tiver experiências, é possível adicionar um ponto de interação diretamente da exibição Calendário do MCM:
 
@@ -150,7 +149,7 @@ Se você já tiver experiências, é possível adicionar um ponto de interação
 
 1. Clique em **Adicionar ponto de contato...** para abrir a caixa de diálogo. Especifique a experiência que você deseja adicionar:
 
-   ![chlimage_1-29](assets/chlimage_1-21.png)
+   ![chlimage_1-21](assets/chlimage_1-21.png)
 
 1. Clique em **OK** para salvar.
 
@@ -173,7 +172,7 @@ No Painel, você acessa todos os leads clicando em **Leads** no painel esquerdo.
 >
 >Para adicionar ou modificar os avatares dos usuários, abra o Clickstream Cloud (Ctrl + Alt + C), carregue o perfil e clique em **Editar**.
 
-### Criação de novos leads  {#creating-new-leads}
+### Criação de novos leads {#creating-new-leads}
 
 Depois de criar novos leads, [ative-os](#activating-or-deactivating-leads) para que você possa acompanhar a atividade deles na instância de publicação e personalizar sua experiência.
 
@@ -222,12 +221,8 @@ Para importar leads de uma lista separada por vírgulas:
    >
    >Como alternativa, você pode importar leads seguindo um destes procedimentos:
    >
-   >
-   >
-   >    * No Painel, clique em **Importar leads** no painel **Listas** 
-      >
-      >    
-   * Clique em **Listas** e, no menu **Ferramentas**, selecione **Importar leads**.
+   >* No Painel, clique em **Importar leads** no painel **Listas** 
+   >* Clique em **Listas** e, no menu **Ferramentas**, selecione **Importar leads**.
 
 
 1. No menu **Ferramentas**, selecione **Importar** **leads**.
@@ -239,7 +234,7 @@ Para importar leads de uma lista separada por vírgulas:
    >A primeira linha na lista CSV são as etiquetas predefinidas que devem ser escritas exatamente como no seguinte exemplo:
    >
    >
-   >`email,givenName,familyName` - se escrito como  `givenname`, por exemplo, o sistema não o reconhecerá.
+   >`email,givenName,familyName` - se escrito como `givenname`, por exemplo, o sistema não o reconhecerá.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
@@ -253,7 +248,7 @@ Para importar leads de uma lista separada por vírgulas:
 
    O novo lead aparece no painel Leads. Se você clicar na entrada, todas as informações inseridas aparecerão no painel direito. Depois de criar um lead, você pode adicioná-lo a uma lista.
 
-### Adição de leads a listas  {#adding-leads-to-lists}
+### Adição de leads a listas {#adding-leads-to-lists}
 
 Para adicionar leads a listas pré-existentes:
 
@@ -388,7 +383,7 @@ Para mesclar listas existentes:
 >
 >O processo de remover uma lista mesclada de sua associação é idêntico ao de remover um lead de uma lista. Abra a guia **Listas**, selecione a lista que inclui a lista mesclada e remova a associação clicando no círculo vermelho ao lado dessa lista.
 
-### Visualização de leads em listas  {#viewing-leads-in-lists}
+### Visualização de leads em listas {#viewing-leads-in-lists}
 
 A qualquer momento, você pode ver quais leads pertencem a uma lista específica navegando ou procurando membros.
 
