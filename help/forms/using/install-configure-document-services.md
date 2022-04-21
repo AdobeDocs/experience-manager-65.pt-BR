@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: a23b3648b2687bcdbb46ea5e0bb42090822e1dd9
+source-git-commit: 4b3327ed46024662813bb538f8338c59e508e10e
 workflow-type: tm+mt
-source-wordcount: '5420'
+source-wordcount: '5330'
 ht-degree: 1%
 
 ---
@@ -223,11 +223,6 @@ Defina variáveis de ambiente para o Java Development Kit de 32 e 64 bits, aplic
    <td><p><strong>JDK (64 bits)</strong></p> </td>
    <td><p>JAVA_HOME</p> </td>
    <td><p>C:\Program Files\Java\jdk1.8.0_74</p> </td>
-  </tr>
-  <tr>
-   <td><p><strong>JDK (32 bits)</strong></p> </td>
-   <td><p>JAVA_HOME_32</p> </td>
-   <td><p>C:\Program Files (x86)\Java\jdk1.8.0_74</p> </td>
   </tr>
   <tr>
    <td><p><strong>Adobe Acrobat</strong></p> </td>
@@ -596,7 +591,20 @@ O serviço Assembler depende do serviço Reader Extensions, do serviço Signatur
 
 A ferramenta System Readiness verifica se o computador está configurado corretamente para executar conversões PDF Generator. A ferramenta gera um relatório no caminho especificado. Para executar a ferramenta:
 
-1. Crie um arquivo de configuração para a ferramenta System Readiness. Por exemplo, srt_config.yaml. O formato do arquivo é:
+1. Abra o prompt de comando. Navegue até o `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` pasta.
+
+1. Execute o seguinte comando no prompt de comando:
+
+   `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
+
+   O comando gera o relatório e também cria o arquivo srt_config.yaml.
+
+   >[!NOTE]
+   >
+   > * Se a Ferramenta de disponibilidade do sistema relatar que o arquivo pdfgen.api não está disponível na pasta de plug-ins do Acrobat, copie o arquivo pdfgen.api do `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` para `[Acrobat_root]\Acrobat\plug_ins` diretório.
+   >
+   > * Você pode usar o arquivo srt_config.yaml para definir várias configurações de . O formato do arquivo é:
+
 
    ```
       # =================================================================
@@ -623,19 +631,13 @@ A ferramenta System Readiness verifica se o computador está configurado correta
       outputDir:
    ```
 
-1. Abra o prompt de comando. Navegue até o `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` pasta. Execute o seguinte comando no prompt de comando:
-
-   `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
-
-   >[!NOTE]
-   >
-   >Se a Ferramenta de disponibilidade do sistema relatar que o arquivo pdfgen.api não está disponível na pasta de plug-ins do Acrobat, copie o arquivo pdfgen.api do `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` para `[Acrobat_root]\Acrobat\plug_ins` diretório.
-
 1. Vá até `[Path_of_reports_folder]`. Abra o arquivo SystemReadinessTool.html . Verifique o relatório e corrija os problemas mencionados.
 
 ## Resolução de problemas
 
 Se você enfrentar problemas mesmo depois de corrigir todos os problemas relatados pela ferramenta SRT, execute as seguintes verificações:
+
+Antes de realizar as verificações a seguir, verifique se [Ferramenta de preparação do sistema](#SRT) não relata nenhum erro.
 
 +++ Adobe Acrobat
 
@@ -644,9 +646,7 @@ Se você enfrentar problemas mesmo depois de corrigir todos os problemas relatad
 * Certifique-se de que [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) o arquivo em lote foi executado com privilégios de administrador.
 * Verifique se um usuário PDF Generator foi adicionado na interface do usuário de configuração do PDF.
 * Certifique-se de que [Substituir um token de nível de processo](#grant-the-replace-a-process-level-token-privilege) é adicionada para o usuário PDF Generator.
-* (Para instalações baseadas em servidor de aplicativos) Verifique se o servidor de aplicativos está sendo executado como serviço.
-* Certifique-se de que os usuários tenham permissões de leitura e gravação no diretório temporário do PDF Generator e do sistema operacional. Por exemplo, `<crx-quickstart-home>\temp` e `C:\Windows\Temp`
-* Certifique-se de que o Suplemento Acrobat PDFMaker Office COM está ativado para aplicativos do Microsoft Office. Se o suplemento não estiver ativado, execute o reparo do Adobe Acrobat, execute o [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) e reinicie o AEM Forms Server.
+* Certifique-se de que o Suplemento Acrobat PDFMaker Office COM está ativado para aplicativos do Microsoft Office.
 
 +++
 
@@ -654,12 +654,9 @@ Se você enfrentar problemas mesmo depois de corrigir todos os problemas relatad
 
 **Microsoft® Windows**
 
-* Certifique-se de que [versão compatível](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) O do Open Office está instalado e as caixas de diálogo de abertura são canceladas para todos os aplicativos.
+* Certifique-se de que [versão compatível](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) O do Microsoft Office está instalado e as caixas de diálogo de abertura são canceladas para todos os aplicativos.
 * Verifique se um usuário PDF Generator foi adicionado na interface do usuário de configuração do PDF.
-* Certifique-se de que [Ferramenta de preparação do sistema](#SRT) não relata nenhum erro.
 * Certifique-se de que o usuário Gerador de PDF é membro do grupo de administradores e do [Substituir um token de nível de processo](#grant-the-replace-a-process-level-token-privilege) privilégio é definido para o usuário.
-* Certifique-se de que `\Windows\SysWOW64\config\systemprofile\Deskop` A pasta existe. Se a pasta não existir, crie-a.
-* Conceder controle total sobre `\Windows\SysWOW64\config\systemprofile`, `<crx-quickstart-home>\temp`e `\Windows\Temp` para o usuário PDF Generator.
 * Certifique-se de que o usuário esteja configurado na interface do PDF Generator e execute as seguintes ações:
    1. Faça logon no Microsoft® Windows com o usuário PDF Generator.
    1. Abra os aplicativos Microsoft® Office ou Open Office e cancele todas as caixas de diálogo.
@@ -673,7 +670,6 @@ Se você enfrentar problemas mesmo depois de corrigir todos os problemas relatad
 
 * Certifique-se de que [versão compatível](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) Se o Open Office estiver instalado, as caixas de diálogo de abertura serão canceladas para todos os aplicativos e os aplicativos do Office serão iniciados com êxito.
 * Criar uma variável de ambiente `OpenOffice_PATH` e defina-o para apontar para que a instalação do OpenOffice esteja definida no [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) ou o perfil dt (Árvore do dispositivo).
-* Use o Java™ de 32 bits para iniciar o AEM Forms Server.
 * Se houver problemas na instalação do OpenOffice, verifique se [Bibliotecas de 32 bits](#extrarequirements) são necessários para a instalação do OpenOffice.
 
 +++
@@ -709,7 +705,7 @@ Se você enfrentar problemas mesmo depois de corrigir todos os problemas relatad
 * Certifique-se de que as versões mais recentes das bibliotecas lib de 32 bits curl, libcrypto e libssl estejam instaladas no sistema. Criar também links simbólicos `/usr/lib/libcurl.so` (ou libcurl.a para AIX®), `/usr/lib/libcrypto.so` (ou libcrypto.a para AIX®) e `/usr/lib/libssl.so` (ou libssl.a para AIX®) apontando para as versões mais recentes (32 bits) das respectivas bibliotecas.
 
 * Execute as seguintes etapas para o provedor de soquete SSL IBM®:
-   1. Copie o arquivo java.security de `<WAS_Installed_JAVA>\jre\lib\security` para qualquer local no servidor do AEM Forms. O local padrão é Local padrão é = `<WAS_Installed>\Appserver\java_1.7_64\jre\lib\security`.
+   1. Copie o arquivo java.security de `<WAS_Installed_JAVA>\jre\lib\security` para qualquer local no servidor do AEM Forms. O local padrão é Local padrão é = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
 
    1. Edite o arquivo java.security no local copiado e altere as fábricas padrão de soquete SSL com fábricas JSSE2 (Use fábricas JSSE2 em vez de WebSphere®).
 
@@ -737,7 +733,7 @@ Se você enfrentar problemas mesmo depois de corrigir todos os problemas relatad
 
 +++ Não é possível adicionar um usuário do Gerador de PDF (PDFG)
 
-* Verifique se o Microsoft® Visual C++ 2008 x86, Microsoft® Visual C++ 2010 x86, Microsoft® Visual C++ 2012 x86 e Microsoft® Visual C++ 2013 x86 (32 bits) redistribuíveis estão instalados no Windows.
+* Verifique se o Microsoft® Visual C++ 2012 x86 e o Microsoft® Visual C++ 2013 x86 (32 bits) redistribuíveis estão instalados no Windows.
 
 +++
 
