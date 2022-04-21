@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /deploy/platform/data-store-config
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 9d8387934e2eab61191bd66c625a9fa52b686e37
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3471'
 ht-degree: 1%
 
 ---
@@ -206,7 +206,7 @@ Se precisar atualizar para uma nova versão do conector S3 1.10.x (por exemplo, 
    >
    >Os nomes de arquivo apresentados acima são usados somente para fins ilustrativos.
 
-1. Baixe a versão mais recente do pacote de recursos 1.8.x no [Repositório Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Baixe a versão mais recente do pacote de recursos 1.8.x no [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/com.adobe.granite.oak.s3connector).
 1. Descompacte o conteúdo em uma pasta separada e navegue até `jcr_root/libs/system/install/15`.
 1. Copie os arquivos jar para **&lt;aem-install>**/crx-quickstart/install/15 na pasta de instalação do AEM.
 1. Inicie o AEM e verifique a funcionalidade do conector.
@@ -286,7 +286,7 @@ O cache local será verificado para o registro do arquivo/blob solicitado antes 
 
 **Upload assíncrono**
 
-O cache oferece suporte a uploads assíncronos para o DataStore. Os arquivos são preparados localmente, no cache (no sistema de arquivos) e um trabalho assíncrono começa a carregar o arquivo. O número de uploads assíncronos é limitado pelo tamanho do cache de preparo. O tamanho do cache de preparo é configurado usando o `stagingSplitPercentage` parâmetro. Esse parâmetro define a porcentagem do tamanho do cache a ser usada para o cache de preparo. Além disso, a porcentagem do cache disponível para downloads é calculada como **(100 - `stagingSplitPercentage`) *`cacheSize`**.
+O cache oferece suporte a uploads assíncronos para o DataStore. Os arquivos são preparados localmente, no cache (no sistema de arquivos) e um trabalho assíncrono começa a carregar o arquivo. O número de uploads assíncronos é limitado pelo tamanho do cache de preparo. O tamanho do cache de preparo é configurado usando o `stagingSplitPercentage` parâmetro. Esse parâmetro define a porcentagem do tamanho do cache a ser usada para o cache de preparo. Além disso, a porcentagem do cache disponível para downloads é calculada como **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 
 Os uploads assíncronos são de vários segmentos e o número de threads é configurado usando a variável `uploadThreads` parâmetro.
 
