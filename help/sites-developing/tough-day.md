@@ -1,14 +1,12 @@
 ---
 title: Dia difícil
-seo-title: Tough Day
 description: O teste Tough Day simula a carga diária de cerca de 1000 autores em um cenário pior, com todas as operações acontecendo ao mesmo tempo.
-seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 0b1f28963d9294c7aa9ae45c6b9fc9a9b8b4f6e6
+source-git-commit: ca6d41740dbb24dbba7cf7691c51435cc40d3ead
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1849'
 ht-degree: 2%
 
 ---
@@ -143,7 +141,7 @@ Você pode encontrar os parâmetros relevantes na lista abaixo:
 
 A personalização pode ser alcançada de duas formas: parâmetros de linha de comando ou arquivos de configuração de yaml. **Os arquivos de configuração geralmente são usados para conjuntos personalizados grandes e substituirão os parâmetros padrão do Dia difícil 2 . Os parâmetros da linha de comando substituem os arquivos de configuração e os parâmetros padrão.**
 
-A única maneira de salvar uma configuração de teste é copiá-la em formato de email. Para obter mais detalhes, consulte esta seção [toughday.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) e os exemplos de configuração de código nas seções abaixo.
+A única maneira de salvar uma configuração de teste é copiá-la em formato de email.
 
 ### Adicionar um novo teste {#adding-a-new-test}
 
@@ -347,22 +345,22 @@ O Dia 2 difícil gera métricas de teste e registros. Para obter mais detalhes, 
 
 ### Testar métricas {#test-metrics}
 
-O Dia 2 difícil atualmente relata 9 métricas de teste que você pode avaliar. Métricas com a ***** são reportados somente após execuções bem-sucedidas:
+O Dia 2 difícil atualmente relata 9 métricas de teste que você pode avaliar. Métricas com a **&#42;** são reportados somente após execuções bem-sucedidas:
 
 | **Nome** | **Descrição** |
 |---|---|
 | Carimbo de data e hora | Carimbo de data e hora da última execução de teste concluída. |
 | Aprovado | Número de execuções bem-sucedidas. |
 | Falhou | Número de execuções com falha. |
-| Mínimo* | Duração mais baixa da execução do teste. |
-| Máximo* | Maior duração de execução de teste. |
-| Mediana* | Duração mediana calculada de todas as execuções de teste. |
-| Média* | Duração média calculada de todas as execuções de teste. |
-| StdDev* | O desvio padrão. |
-| 90p* | 90 percentil. |
-| 99p* | 99 percentil. |
-| 99,9p* | Percentil 99,9. |
-| Taxa de transferência real* | Número de execuções dividido pelo tempo de execução decorrido. |
+| Mínimo&#42; | Duração mais baixa da execução do teste. |
+| Max&#42; | Maior duração de execução de teste. |
+| Mediana&#42; | Duração mediana calculada de todas as execuções de teste. |
+| Média&#42; | Duração média calculada de todas as execuções de teste. |
+| StdDev&#42; | O desvio padrão. |
+| 90p&#42; | 90 percentil. |
+| 99p&#42; | 99 percentil. |
+| 99,9p&#42; | Percentil 99,9. |
+| Taxa de transferência real&#42; | Número de execuções dividido pelo tempo de execução decorrido. |
 
 Essas métricas são gravadas com a ajuda de editores que podem ser adicionados com a variável `add` (de forma semelhante à adição de testes). Atualmente, há duas opções:
 

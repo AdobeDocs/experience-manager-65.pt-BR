@@ -1,18 +1,11 @@
 ---
 title: Etapas de atualização para instalações do servidor de aplicativos
 description: Saiba como atualizar instâncias de AEM que são implantadas pelos Servidores de Aplicativos.
-uuid: e4020966-737c-40ea-bfaa-c63ab9a29cee
-contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: upgrading
-content-type: reference
-discoiquuid: 1876d8d6-bffa-4a1c-99c0-f6001acea825
-docset: aem65
-feature: Atualização
+feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: 69d960da90176058e8bb8b685325529e6cc10a31
+source-git-commit: 5e875e0420540ca209e7d677046e8d010ae4e145
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -21,9 +14,9 @@ ht-degree: 0%
 
 Esta seção descreve o procedimento que precisa ser seguido para atualizar AEM para instalações do Servidor de Aplicativos.
 
-Todos os exemplos neste procedimento usam o Tomcat como o Servidor de Aplicativos e implicam que você tem uma versão funcional do AEM já implantada. O procedimento destina-se a documentar atualizações realizadas de **AEM versão 6.4 para 6.5**.
+Todos os exemplos neste procedimento usam o Tomcat como o Servidor de Aplicativos e implicam que você tem uma versão funcional do AEM já implantada. O procedimento destina-se a documentar as atualizações realizadas a partir de **AEM versão 6.4 a 6.5**.
 
-1. Primeiro, comece o Tom Cat. Na maioria das situações, é possível fazer isso executando o script de inicialização `./catalina.sh` iniciando ao executar esse comando a partir do terminal:
+1. Primeiro, comece o Tom Cat. Na maioria das situações, é possível fazer isso executando o `./catalina.sh` inicie o script de inicialização executando este comando a partir do terminal:
 
    ```shell
    $CATALINA_HOME/bin/catalina.sh start
@@ -35,9 +28,9 @@ Todos os exemplos neste procedimento usam o Tomcat como o Servidor de Aplicativo
    https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Em seguida, desimplante o AEM 6.4. Isso pode ser feito no Gerenciador de aplicativos do TomCat (`http://serveraddress:serverport/manager/html`)
+1. Em seguida, desimplante o AEM 6.4. Isso pode ser feito no Gerenciador de aplicativos do Tom Cat (`http://serveraddress:serverport/manager/html`)
 
-1. Agora, migre o repositório usando a ferramenta de migração crx2oak. Para fazer isso, baixe a versão mais recente do crx2oak de [this location](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak).
+1. Agora, migre o repositório usando a ferramenta de migração crx2oak. Para fazer isso, baixe a versão mais recente do crx2oak de [esta localização](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
    SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -XX:MaxPermSize=2048M -jar crx2oak.jar --load-profile segment-fds
@@ -66,13 +59,13 @@ Todos os exemplos neste procedimento usam o Tomcat como o Servidor de Aplicativo
 
 1. Remova os arquivos e pastas que não são mais necessários. Os itens que você precisa remover especificamente são:
 
-   * A pasta **launchpad/startup**. Você pode excluí-lo executando o seguinte comando no terminal: `rm -rf crx-quickstart/launchpad/startup`
+   * O **pasta de inicialização/inicialização**. Você pode excluí-lo executando o seguinte comando no terminal: `rm -rf crx-quickstart/launchpad/startup`
 
-   * O arquivo **base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * O **arquivo base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
 
-   * O arquivo **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * O **Arquivo BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
-   * Remova **sling.options.file** executando: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
+   * Remover **sling.options.file** executando: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
 1. Agora, crie o armazenamento de nó e o armazenamento de dados que serão usados com o AEM 6.5. Você pode fazer isso criando dois arquivos com os seguintes nomes em `crx-quickstart\install`:
 
@@ -100,7 +93,7 @@ Todos os exemplos neste procedimento usam o Tomcat como o Servidor de Aplicativo
    jar xvf aem-quickstart-6.5.0.war
    ```
 
-1. Depois que o conteúdo tiver sido extraído, vá para a pasta **WEB-INF** e edite o arquivo web.xml para alterar os modos de execução. Para localizar o local onde estão definidos no XML, procure pela string `sling.run.modes`. Depois de encontrá-lo, altere os modos de execução na próxima linha de código, que por padrão é definida como author:
+1. Depois que o conteúdo tiver sido extraído, vá para a variável **WEB-INF** e edite o arquivo web.xml para alterar os modos de execução. Para localizar o local em que estão definidos no XML, procure a variável `sling.run.modes` string. Depois de encontrá-lo, altere os modos de execução na próxima linha de código, que por padrão é definida como author:
 
    ```bash
    <param-value >author</param-value>

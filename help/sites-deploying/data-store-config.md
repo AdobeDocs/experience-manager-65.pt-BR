@@ -1,21 +1,14 @@
 ---
 title: Configuração de armazenamentos de nó e armazenamentos de dados no AEM 6
-seo-title: Configuring node stores and data stores in AEM 6
 description: Saiba como configurar armazenamentos de nó e armazenamentos de dados e como executar a coleta de lixo do armazenamento de dados.
-seo-description: Learn how to configure node stores and data stores and how to perform data store garbage collection.
-uuid: 1a58c0ba-1c32-4539-ad0d-0a27c8c4ff5e
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
-legacypath: /deploy/platform/data-store-config
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 9d8387934e2eab61191bd66c625a9fa52b686e37
+source-git-commit: 0c9d436d863d55f94e16f5c0f570251e2fb3d805
 workflow-type: tm+mt
-source-wordcount: '3471'
+source-wordcount: '3467'
 ht-degree: 1%
 
 ---
@@ -146,7 +139,7 @@ Essas opções de configuração estão disponíveis:
 
 AEM pode ser configurado para armazenar dados no Amazon Simple Storage Service (S3). Ele usa a variável `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID para configuração.
 
-Para habilitar a funcionalidade do armazenamento de dados S3, um pacote de recursos contendo o S3 Datastore Connector precisa ser baixado e instalado. Vá para o [Repositório Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/) e baixe a versão mais recente das versões 1.10.x do feature pack (por exemplo, com.adobe.granite.oak.s3connector-1.10.0.zip). Além disso, também é necessário baixar e instalar o service pack AEM mais recente, conforme listado na [Notas de versão do AEM 6.5](/help/release-notes/release-notes.md) página.
+Para habilitar a funcionalidade do armazenamento de dados S3, um pacote de recursos contendo o S3 Datastore Connector precisa ser baixado e instalado. Vá para o [Repositório Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) e baixe a versão mais recente das versões 1.10.x do feature pack (por exemplo, com.adobe.granite.oak.s3connector-1.10.0.zip). Além disso, também é necessário baixar e instalar o service pack AEM mais recente, conforme listado na [Notas de versão do AEM 6.5](/help/release-notes/release-notes.md) página.
 
 >[!NOTE]
 >
@@ -382,7 +375,7 @@ Para configurar a replicação sem binários com S3, as seguintes etapas são ne
 
 AEM pode ser configurado para armazenar dados no serviço de armazenamento do Microsoft Azure. Ele usa a variável `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID para configuração.
 
-Para habilitar a funcionalidade do armazenamento de dados do Azure, um pacote de recursos contendo o Conector do Azure precisa ser baixado e instalado. Vá para o [Repositório Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) e baixe a versão mais recente das versões 1.6.x do pacote de recursos (por exemplo, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Para habilitar a funcionalidade do armazenamento de dados do Azure, um pacote de recursos contendo o Conector do Azure precisa ser baixado e instalado. Vá para o [Repositório Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) e baixe a versão mais recente das versões 1.6.x do pacote de recursos (por exemplo, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
 
 >[!NOTE]
 >
