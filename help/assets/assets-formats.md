@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: e3743b7ecbd8266abfaee36dcee94bcd2b260cac
+source-git-commit: fcbfd8b378282d908b68c61ab235e9b80fd6644c
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 9%
+source-wordcount: '1751'
+ht-degree: 10%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 9%
 
 [!DNL Experience Manager Assets] O suporta uma grande variedade de formatos de arquivo e cada funcionalidade tem suporte variado para diferentes tipos MIME. Para integrar [!DNL Assets] com outras soluções de gerenciamento de ativos digitais (DAM) compatíveis com os padrões, use o Adobe e [!DNL Extensible Metadata Platform] (XMP).
 
-Use a legenda para entender o nível de suporte.
+Use a legenda para entender o nível de compatibilidade.
 
-| Nível de suporte | Descrição |
+| Nível de compatibilidade | Descrição |
 | :-----------: | ------------------------------ |
-| Instantâneo | Compatível |
-| * | Suportado com recursos complementares |
-| - | Não aplicável |
+| ✓ | Compatível |
+| &#42; | Suportado com recursos complementares |
+| − | Não aplicável |
 
 ## Formatos de imagem raster suportados em [!DNL Experience Manager] {#supported-raster-image-formats}
 
@@ -31,19 +31,19 @@ Os formatos de imagem rasterizada aceitos em [!DNL Assets] são:
 
 | Formato | Armazenamento | Gerenciamento de metadados | Extração de metadados | Geração de miniaturas | Edição | Write-back de metadados | Insights |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
-| PNG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| GIF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo |
-| TIFF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo |
-| JPEG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| BMP | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo |
-| PNM | Instantâneo | Instantâneo | - | - | - | - | Instantâneo |
-| PGM | Instantâneo | Instantâneo | - | - | - | - | Instantâneo |
-| PBM | Instantâneo | Instantâneo | - | - | - | - | Instantâneo |
-| PPM | Instantâneo | Instantâneo | - | - | - | - | Instantâneo |
-| PSD ‡ | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | - | Instantâneo |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | - |
-| PICT | - | - | - | - | - | - | Instantâneo |
-| PSB | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| TIFF | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| BMP | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| PNM | ✓ | ✓ | - | - | - | - | ✓ |
+| PGM | ✓ | ✓ | - | - | - | - | ✓ |
+| PBM | ✓ | ✓ | - | - | - | - | ✓ |
+| PPM | ✓ | ✓ | - | - | - | - | ✓ |
+| PSD ‡ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | - | ✓ | - |
+| PICT | - | - | - | - | - | - | ✓ |
+| PSB | ✓ | ✓ | ✓ | ✓ | - | - | - |
 
 ‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
@@ -63,12 +63,12 @@ Consulte também [Trabalhar com ativos 3D no Dynamic Media.](/help/assets/assets
 
 | Formato | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Visualização de miniatura | Visualização 3D | Delivery Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | Instantâneo | Instantâneo | Instantâneo |  | Instantâneo | Instantâneo | - | - |
-| gLB | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo |
-| gLTF | Instantâneo | Instantâneo | Instantâneo |  | Instantâneo | - | Instantâneo | - |
-| OBJ | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo |
-| STL | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo |
-| USDz | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | - | Instantâneo |
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | - | - |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ | - | ✓ | - |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
 ## Biblioteca PDF Rasterizer suportada {#supported-pdf-rasterizer-library}
 
@@ -98,47 +98,47 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 
 | Formato | Armazenamento | [Gerenciamento de metadados](metadata.md) | Texto completo<br> extração | [Extração de metadados](metadata.md) | Miniatura<br> geração | [Extração de subconjunto](managing-linked-subassets.md) | [Write-back de metadados](xmp-writeback.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
-| DOC | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | - | - | Instantâneo |
-| DOCX | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | - | - | Instantâneo |
-| ODT | Instantâneo | Instantâneo | Instantâneo | - | - | - | - | Instantâneo |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| HTML | Instantâneo | Instantâneo | Instantâneo | - | - | - | - | Instantâneo |
-| RTF | Instantâneo | Instantâneo | Instantâneo | - | - | - | - | Instantâneo |
-| TXT | Instantâneo | Instantâneo | Instantâneo | - | - | - | - | Instantâneo |
-| XLS | Instantâneo | Instantâneo | Instantâneo | - | - | - | - | Instantâneo |
-| XLSX | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | - | - | Instantâneo |
-| ODS | Instantâneo | Instantâneo | Instantâneo | - | - | - | - | - |
-| PPT | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo |
-| PPTX | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - | Instantâneo |
-| ODP | Instantâneo | Instantâneo | Instantâneo | - | - | - | - | - |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
-| PS | Instantâneo | Instantâneo | - | - | - | - | - | - |
-| QXP | Instantâneo | Instantâneo | - | - | - | - | - | - |
-| ePub | Instantâneo | Instantâneo | - | Instantâneo | Instantâneo | - | - | - |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
+| DOC | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
+| ODT | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| HTML | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| RTF | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| TXT | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| XLS | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
+| ODS | ✓ | ✓ | ✓ | - | - | - | - | - |
+| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| ODP | ✓ | ✓ | ✓ | - | - | - | - | - |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
+| PS | ✓ | ✓ | - | - | - | - | - | - |
+| QXP | ✓ | ✓ | - | - | - | - | - | - |
+| ePub | ✓ | ✓ | - | ✓ | ✓ | - | - | - |
 
 ## Formatos multimídia compatíveis {#supported-multimedia-formats}
 
 |  | Armazenamento | Gerenciamento de metadados | Extração de metadados | Geração de miniaturas | Transcodificação de FFmpeg |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | Instantâneo | Instantâneo | - | - | * |
-| MIDI | Instantâneo | Instantâneo | - | - | * |
-| 3GP | Instantâneo | Instantâneo | - | - | * |
-| MP3 | Instantâneo | Instantâneo | Instantâneo | - | * |
-| MPG | Instantâneo | Instantâneo | - | - | * |
-| OGA | Instantâneo | Instantâneo | - | - | * |
-| OGG | Instantâneo | Instantâneo | - | - | * |
-| ARM | Instantâneo | Instantâneo | - | - | * |
-| WAV | Instantâneo | Instantâneo | - | - | * |
-| WMA | Instantâneo | Instantâneo | - | - | * |
-| DVI | Instantâneo | Instantâneo | - | * | * |
-| FLV | Instantâneo | Instantâneo | - | * | * |
-| M4V | Instantâneo | Instantâneo | - | * | * |
-| MPEG | Instantâneo | Instantâneo | - | * | * |
-| OGV | Instantâneo | Instantâneo | - | * | * |
-| MOV | Instantâneo | Instantâneo | - | * | * |
-| WMV | Instantâneo | Instantâneo | - | * | * |
-| SWF | Instantâneo | Instantâneo | - | - | - |
+| AAC | ✓ | ✓ | - | - | &#42; |
+| MIDI | ✓ | ✓ | - | - | &#42; |
+| 3GP | ✓ | ✓ | - | - | &#42; |
+| MP3 | ✓ | ✓ | ✓ | - | &#42; |
+| MPG | ✓ | ✓ | - | - | &#42; |
+| OGA | ✓ | ✓ | - | - | &#42; |
+| OGG | ✓ | ✓ | - | - | &#42; |
+| ARM | ✓ | ✓ | - | - | &#42; |
+| WAV | ✓ | ✓ | - | - | &#42; |
+| WMA | ✓ | ✓ | - | - | &#42; |
+| DVI | ✓ | ✓ | - | &#42; | &#42; |
+| FLV | ✓ | ✓ | - | &#42; | &#42; |
+| M4V | ✓ | ✓ | - | &#42; | &#42; |
+| MPEG | ✓ | ✓ | - | &#42; | &#42; |
+| OGV | ✓ | ✓ | - | &#42; | &#42; |
+| MOV | ✓ | ✓ | - | &#42; | &#42; |
+| WMV | ✓ | ✓ | - | &#42; | &#42; |
+| SWF | ✓ | ✓ | - | - | - |
 
 ## Formatos de arquivo compatíveis {#supported-archive-formats}
 
@@ -146,11 +146,11 @@ Os formatos de arquivamento compatíveis e a aplicabilidade dos workflows comuns
 
 | Formatos | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Entrega do Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| TGZ | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
-| JAR | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
-| RAR | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
-| TAR | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
-| ZIP | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| JAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| RAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| TAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| ZIP | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## Outros formatos compatíveis {#other-supported-formats}
 
@@ -158,11 +158,11 @@ A aplicabilidade das funcionalidades usuais do DAM para alguns formatos de arqui
 
 | Formatos | Armazenamento | Versões | Fluxo de trabalho | Publicação | Controle de acesso | Entrega do Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| SVG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
-| CSS | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| VTT | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| XML | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
-| JavaScript (quando configurado com o próprio domínio de delivery) | - | - | - | - | - | Instantâneo |
+| SVG | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| JavaScript (quando configurado com o próprio domínio de delivery) | - | - | - | - | - | ✓ |
 
 >[!NOTE]
 >
@@ -254,9 +254,13 @@ Uma lista de tipos MIME suportados está disponível no CRXDE Lite at `/conf/glo
 
 | Formato | Upload<br> (Formato de entrada) | Criar<br> imagem<br> predefinição<br> (Formato de saída) | Visualizar<br> dinâmico<br> representação | Delivery<br> dinâmico<br> representação | Baixar<br> dinâmico<br> representação |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Instantâneo | - | - | - | - |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | Instantâneo | - | - | - | - |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | - | - | - | - |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | - | - | - | - |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (Consulte a Observação abaixo) | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+>[!NOTE]
+>
+>Para PDF seguros, somente Upload é suportado.
 
 Além da funcionalidade acima, considere o seguinte:
 
@@ -270,14 +274,14 @@ Além da funcionalidade acima, considere o seguinte:
 
 | Formato | Upload<br> (Formato de entrada) | Criar<br> imagem<br> predefinição<br> (Formato de saída) | Visualizar<br> dinâmico<br> representação | Delivery<br> dinâmico<br> representação | Baixar<br> dinâmico<br> representação | Definir tipos que suportam este formato |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
-| PNG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | [Imagem](/help/assets/image-sets.md), [Mídia mista](/help/assets/mixed-media-sets.md)e [Rotação](/help/assets/spin-sets.md) |
-| GIF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
-| TIFF | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | [Imagem](/help/assets/image-sets.md), [Mídia mista](/help/assets/mixed-media-sets.md)e [Rotação](/help/assets/spin-sets.md) |
-| JPEG | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | [Imagem](/help/assets/image-sets.md), [Mídia mista](/help/assets/mixed-media-sets.md)e [Rotação](/help/assets/spin-sets.md) |
-| BMP | Instantâneo | - | - | - | - | [Imagem](/help/assets/image-sets.md), [Mídia mista](/help/assets/mixed-media-sets.md)e [Rotação](/help/assets/spin-sets.md) |
-| PSD ‡ | Instantâneo | - | - | - | - | - |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | Instantâneo | Instantâneo | Instantâneo | Instantâneo | Instantâneo | - |
-| PICT | Instantâneo | - | - | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/image-sets.md), [Mídia mista](/help/assets/mixed-media-sets.md)e [Rotação](/help/assets/spin-sets.md) |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/image-sets.md), [Mídia mista](/help/assets/mixed-media-sets.md)e [Rotação](/help/assets/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/image-sets.md), [Mídia mista](/help/assets/mixed-media-sets.md)e [Rotação](/help/assets/spin-sets.md) |
+| BMP | ✓ | - | - | - | - | [Imagem](/help/assets/image-sets.md), [Mídia mista](/help/assets/mixed-media-sets.md)e [Rotação](/help/assets/spin-sets.md) |
+| PSD ‡ | ✓ | - | - | - | - | - |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| PICT | ✓ | - | - | - | - | - |
 
 ‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada pelo Adobe Photoshop e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
