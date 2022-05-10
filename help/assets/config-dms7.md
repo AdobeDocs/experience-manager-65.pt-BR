@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: f2cfe62c561e772a10ede4f76314a5904d6d64ff
+source-git-commit: 5c29ac6b87b818e168a746827624b65c6ba3b2f7
 workflow-type: tm+mt
-source-wordcount: '6048'
+source-wordcount: '6049'
 ht-degree: 3%
 
 ---
@@ -134,7 +134,7 @@ Para marcar uma pasta selecionada para sincronização com o Dynamic Media, sele
    Depois que um ativo é ativado, todas as atualizações são publicadas imediatamente no S7 Delivery.
 
 1. Selecione **[!UICONTROL Salvar]**.
-1. Por padrão, o autor do Experience Manager não pode visualizar o conteúdo do Dynamic Media. Portanto, para visualizar com segurança o conteúdo do Dynamic Media antes que ele seja publicado, é necessário *lista de permissões* a instância Autor do Experience Manager para se conectar ao Dynamic Media. Além disso, se você quiser fornecer aos usuários acesso para visualizar com segurança o conteúdo, é possível *lista de permissões* endereços IP adicionais.
+1. Por padrão, o autor do Experience Manager não pode visualizar o conteúdo do Dynamic Media. Portanto, para visualizar com segurança o conteúdo do Dynamic Media antes de ele ser publicado, é necessário lista de permissões a instância do autor do Experience Manager para se conectar ao Dynamic Media. Além disso, se você quiser fornecer aos usuários acesso para visualizar com segurança o conteúdo, é possível lista de permissões endereços IP adicionais. <!-- CQDOC-19254 UNHIDE ON MAY 26, 2022 To securely preview Dynamic Media content before it gets published, Experience Manager Author uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can allowlist more IPs to provide users access to securely preview content. -->
 Para configurar esta ação no Experience Manager, consulte [Configurar a configuração de publicação do Dynamic Media para o servidor de imagem - guia Segurança](/help/assets/dm-publish-settings.md#security-tab).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
@@ -304,9 +304,9 @@ Consulte [Upload de ativos](/help/assets/manage-assets.md#uploading-assets).
 
    * Clique duas vezes no botão **[!UICONTROL ativado]** campo. Por padrão, todos os tipos de ativos mime estão ativados (definido como **[!UICONTROL true]**), o que significa que os ativos são sincronizados com a Dynamic Media para processamento. Se desejar excluir esse tipo de ativo MIME do processamento, altere essa configuração para **[!UICONTROL false]**.
 
-   * Toque duplo **[!UICONTROL jobParam]** para abrir o campo de texto associado. Consulte [Tipos Mime Suportados](/help/assets/assets-formats.md#supported-mime-types) para obter uma lista de valores de parâmetros de processamento permitidos, você pode usar para um determinado tipo MIME.
+   * Toque duplo **[!UICONTROL jobParam]** para abrir o campo de texto associado. Consulte [Tipos Mime Suportados](/help/assets/assets-formats.md#supported-mime-types) para obter uma lista de valores de parâmetros de processamento permitidos que você pode usar para um determinado tipo MIME.
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Repita as etapas 3 a 4 para editar mais tipos MIME.
    * Na barra de menu da página do CRXDE Lite, selecione **[!UICONTROL Salvar tudo]**.
@@ -395,7 +395,7 @@ Dois elementos estão disponíveis para definição, Correspondência e Nome de 
    Você pode selecionar a variável **[!UICONTROL Exibir código]** para exibir a criação do valor da expressão regular ao lado das seleções de formulário. É possível inserir ou alterar esses valores para ajudar a definir os elementos da convenção de nomenclatura, se a exibição do formulário limitar você por qualquer motivo. Se os valores não puderem ser analisados na visualização do formulário, os campos do formulário ficarão inativos.
 
    >[!NOTE]
-   Campos de formulário desativados não executam nenhuma validação para confirmar se as expressões regulares estão corretas. Você verá os resultados da expressão regular que está criando para cada elemento após a linha Resultado. A expressão regular completa é visível na parte inferior da página.
+   Campos de formulário desativados não executam nenhuma validação para confirmar se as expressões regulares estão corretas. Você verá os resultados da expressão regular que está sendo criada para cada elemento após a linha Resultado. A expressão regular completa é visível na parte inferior da página.
 
 1. Expanda cada elemento conforme necessário e insira as convenções de nomenclatura que deseja usar.
 1. Conforme necessário, execute um dos seguintes procedimentos:
@@ -403,14 +403,12 @@ Dois elementos estão disponíveis para definição, Correspondência e Nome de 
    * Selecionar **[!UICONTROL Adicionar]** para adicionar outra convenção de nomenclatura para um elemento.
    * Selecionar **[!UICONTROL Remover]** para excluir uma convenção de nomenclatura para um elemento.
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Selecionar **[!UICONTROL Salvar como]** e digite um nome para a predefinição.
    * Selecionar **[!UICONTROL Salvar]** se você estiver editando uma predefinição existente.
 
 ##### Criar uma predefinição de conjunto de lotes
-
-
 
 O Dynamic Media usa predefinições de conjuntos em lotes para organizar ativos em conjuntos de imagens (imagens alternativas, opções de cores, rotação 360) para exibição em visualizadores. As predefinições do conjunto de lotes são executadas automaticamente com os processos de upload de ativos no Dynamic Media.
 
@@ -431,7 +429,7 @@ Você pode usar o método de campo de formulário para definir uma predefiniçã
 1. No painel Lista de predefinições , selecione **[!UICONTROL Adicionar]** para ativar os campos de definição no painel Detalhes no lado direito da tela.
 1. No painel Detalhes, no campo Nome da predefinição , digite um nome para a predefinição.
 1. No menu suspenso Tipo de conjunto de lote, selecione um tipo predefinido.
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Se estiver usando uma convenção de nomenclatura padrão que você configurou anteriormente em **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Predefinições do conjunto de lotes]** > **[!UICONTROL Nomenclatura padrão]**, expandir **[!UICONTROL Convenções de nomenclatura de ativos]** e, na lista suspensa Nomenclatura de arquivo , selecione **[!UICONTROL Padrão]**.
 
