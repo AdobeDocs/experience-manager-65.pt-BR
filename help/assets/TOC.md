@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
-source-git-commit: ee6e408668a523464632e53a01ba11eddec103f6
+source-git-commit: 66958dc5328177d27dbdddf0c8983096e38f76b6
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '672'
 ht-degree: 49%
 
 ---
@@ -56,6 +56,7 @@ ht-degree: 49%
    + [Perfis de vídeo do Dynamic Media](video-profiles.md)
    + [Perfis de imagem do Dynamic Media](image-profiles.md)
    + [Imagem inteligente](imaging-faq.md)
+   + [Imagem inteligente com relação de pixels do dispositivo no lado do cliente](client-side-dpr.md)
    + [Vídeo](s7-video.md)
    + [Entrega de conteúdo HTTP2](http2.md)
    + [Entregar ativos do Dynamic Media](delivering-dynamic-media-assets.md)
@@ -99,7 +100,7 @@ ht-degree: 49%
    + [API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [[!DNL Assets] desenvolvimento de proxy](proxy.md)
 + Administrar ativos {#administer}
-   + [Formatos de arquivo compatíveis](assets-formats.md)
+   + [Formatos de arquivo não compatíveis](assets-formats.md)
    + [Pesquisar aspectos](search-facets.md)
    + [Entender os conceitos de metadados](metadata-concepts.md)
    + [Configurar a funcionalidade de metadados](metadata-config.md)
@@ -133,7 +134,7 @@ ht-degree: 49%
    + [Marque seus ativos com água](watermarking.md)
    + [Modelos de ativos](asset-templates.md)
 + Brand Portal {#brandportal}
-   + [Configurar o  [!DNL Assets]  com o  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configurar o [!DNL Assets]  com o [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicar ativos no  [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Publicar pastas em [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Publicar coleções no [!DNL Brand Portal]](brand-portal-publish-collection.md)
