@@ -3,9 +3,9 @@ title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas descrevendo as informações da versão, novidades, como instalar e listas detalhadas de alterações."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 6c9e8f1e62fe1a193cb9938e5f789e1e08b8339d
+source-git-commit: db94e464b130c6ca223314c3c5ffb8893a92a142
 workflow-type: tm+mt
-source-wordcount: '3546'
+source-wordcount: '3752'
 ht-degree: 6%
 
 ---
@@ -24,6 +24,22 @@ ht-degree: 6%
 ## O que está incluído em [!DNL Experience Manager] 6.5.13.0 {#what-is-included-in-aem}
 
 [!DNL Experience Manager] O 6.5.13.0 inclui novos recursos, principais melhorias solicitadas pelo cliente e melhorias de desempenho, estabilidade e segurança, lançadas desde a disponibilização inicial do 6.5 em abril de 2019. [Instalar este service pack](#install) on [!DNL Experience Manager] 6.5.
+
+Os principais recursos e aprimoramentos introduzidos no [!DNL Adobe Experience Manager] 6.5.13.0 são:
+
+* Use CAPTCHA invisível em um formulário adaptável: Agora você pode usar um CAPTCHA invisível para mostrar o desafio CAPTCHA somente no caso de uma atividade suspeita. Se não for encontrada nenhuma atividade suspeita, o desafio CAPTCHA não é apresentado. Ajuda a avaliar o preenchimento de formulários humanos sem os requisitos da caixa de seleção, reduzir os esforços de personalização e melhorar a experiência do usuário final. (NPR-38500)
+
+* Adição de suporte para buscar cabeçalhos de resposta no pós-processador do Modelo de dados de formulário para pontos de extremidade REST. (NPR-38275)
+
+* Agora, ao gerar um arquivo de tradução do Formulário adaptativo, a mesma sequência de textos que o arquivo XLIFF gerado é idêntica à sequência de componentes no Formulário adaptativo correspondente. (NPR-37700)
+
+* Quando você localiza um formulário adaptável e faz até mesmo uma pequena alteração no texto do idioma base, a tradução completa fica ausente para todos os outros idiomas. O problema é corrigido em [!DNL Experience Manager] 6.5.13.0 (NPR-37189)
+
+* Melhorias de acessibilidade para o Forms:
+
+   * Adição de suporte para leitores de tela para reconhecer o cabeçalho e o corpo de uma tabela como continua e as entidades conectadas. Isso ajuda os leitores de tela a navegarem nas tabelas corretamente. (NPR-37139)
+   * Adição de suporte para leitores de tela para parar de navegar no espaço de trabalho HTML até que uma caixa de diálogo seja aberta. (NPR-37134)
+   * Adição da capacidade de especificar o texto de Reader de tela para hiperlinks no Forms Designer.(NPR-36221)
 
 As seguintes correções de erros, principais recursos e melhorias foram introduzidas em [!DNL Experience Manager] 6.5.13.0:
 
@@ -120,20 +136,6 @@ As seguintes correções de erros, principais recursos e melhorias foram introdu
 >
 >* O [!DNL Experience Manager Forms] lança os pacotes complementares uma semana após a data programada de lançamento do [!DNL Experience Manager] Service Pack.
 
-
-<!-- **Adaptive Forms**
-
-**Form Data Model**
-
-**Interactive Communication**
-
-**Document Services**
-
-**Document Security**
-
-**Foundation JEE**
-
-**Workflow** -->
 
 ## Granite {#granite-6513}
 

@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 73d5b894dfa1bbb3ae3f2973cc4f9db1ace90ef8
+source-git-commit: dab643ffd64217018bf2f5544ae3c417963cea82
 workflow-type: tm+mt
-source-wordcount: '3515'
+source-wordcount: '3533'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ O Adobe recomenda essas configurações e oferece suporte total ou restrito como
 <table>
  <tbody>
   <tr>
-   <th>Nível de suporte</th>
+   <th>Nível de compatibilidade</th>
    <th>Descrição</th>
   </tr>
   <tr>
@@ -62,7 +62,7 @@ O Adobe recomenda essas configurações e oferece suporte total ou restrito como
 
 ### Configurações não suportadas {#unsupported-configurations}
 
-| Nível de suporte | Descrição |
+| Nível de compatibilidade | Descrição |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | E: Espera-se que funcione | Espera-se que a configuração funcione, e não há relatórios em contrário. |
 | Z: Não suportado | A configuração não é suportada. O Adobe não faz declarações sobre se a configuração funciona e não oferece suporte a ela. |
@@ -87,7 +87,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
  <tbody>
   <tr>
    <th><p><strong>Plataforma</strong></p> </th>
-   <th><p><strong>Nível de suporte</strong></p> </th>
+   <th><p><strong>Nível de compatibilidade</strong></p> </th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
   </tr>
   <tr>
@@ -136,7 +136,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
   <tr>
    <td><p><strong>Plataforma</strong></p> </td>
    <td><p><strong> Descrição</strong></p> </td>
-   <td><p><strong>Nível de suporte</strong></p> </td>
+   <td><p><strong>Nível de compatibilidade</strong></p> </td>
   </tr>
   <tr>
    <td><p>Sistema de arquivos</p> </td>
@@ -240,7 +240,7 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
  <tbody>
   <tr>
    <td><p><strong> Plataforma</strong></p> </td>
-   <td><p><strong>Nível de suporte</strong></p> </td>
+   <td><p><strong>Nível de compatibilidade</strong></p> </td>
    <td><p><strong>Definições de patch compatíveis</strong></p> </td>
   </tr>
   <tr>
@@ -334,7 +334,7 @@ Você pode executar o AEM Forms no JEE em uma máquina física ou em um ambiente
  <tbody>
   <tr>
    <th><p><strong>Plataforma (Versão básica)</strong></p> </th>
-   <th>Nível de suporte</th>
+   <th>Nível de compatibilidade</th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
   </tr>
   <tr>
@@ -419,8 +419,12 @@ Além disso, considere os seguintes pontos ao escolher o software para o Adobe A
    <td>8,5 </td>
   </tr>
   <tr>
-   <td>Microsoft Sharepoint</td>
-   <td>2016<br /> </td>
+   <td>Microsoft Sharepoint </td>
+   <td>2016 (Obsoleto)<br /> </td>
+  </tr>
+  <tr>
+   <td>Microsoft Sharepoint </td>
+   <td>2019<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -720,7 +724,7 @@ Para obter os requisitos adicionais, consulte:
 
 ### Aplicativo AEM Forms {#aem-forms-workspace-app}
 
-#### Suporte a dispositivo Mobile {#mobile-device-support}
+#### Suporte a dispositivo móvel {#mobile-device-support}
 
 O aplicativo AEM Forms está disponível nas seguintes plataformas:
 
@@ -755,6 +759,10 @@ O Adobe reserva o direito de alterar as plataformas de referência de terceiros 
 Informações adicionais sobre patches de terceiros também podem ser encontradas pesquisando artigos da base de conhecimento relacionados ao seu produto no site de Suporte Adobe Enterprise.
 
 ## Atualizações da plataforma {#platform-updates}
+
+As seguintes plataformas são marcadas como obsoletas na versão 6.5.13.0 do AEM Forms em 2 de junho de 2022:
+
+- Microsoft SharePoint 2016
 
 As seguintes plataformas são marcadas como obsoletas na versão 6.5.12.0 do AEM Forms em 3 de março de 2022:
 
