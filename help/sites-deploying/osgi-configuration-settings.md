@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
+source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
 workflow-type: tm+mt
-source-wordcount: '3558'
+source-wordcount: '3557'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ O valor recomendado é `-1` já que isso define a fila como ilimitada; se um lim
 **Servlet de GET Apache Sling** Configure alguns aspectos da renderização:
 
 * **Índice automático** para ativar/desativar a renderização do diretório para navegação.
-* **Habilitar** (ou desativar) representações padrão, como **HMTL**, **Texto sem formatação**, **JSON** ou **XML**.
+* **Habilitar** (ou desativar) representações padrão, como **HTML**, **Texto sem formatação**, **JSON** ou **XML**.
 Você não deve desativar o JSON.
 
 >[!NOTE]
@@ -109,7 +109,7 @@ Você não deve desativar o JSON.
 
 Certas configurações podem afetar o desempenho, elas devem ser desativadas sempre que possível, principalmente para uma instância de produção.
 
-* S **VM de origem** e **VM de destino**, defina a versão do JDK como a usada como JVM em tempo de execução
+* **VM de origem** e **VM de destino**, defina a versão do JDK como a usada como JVM em tempo de execução
 
 * para instâncias de produção:
 
@@ -117,7 +117,7 @@ Certas configurações podem afetar o desempenho, elas devem ser desativadas sem
 
 **Instalador do Apache Sling JCR** Esses parâmetros provavelmente não precisam de configuração, mas podem ser úteis para saber ao desenvolver ou depurar. Por exemplo, a(s) pasta(s) de instalação pode(m) ser útil para fazer check-in/out ou criar um pacote.
 
-* **Nome das pastas de instalação regexp** e **Profundidade máxima da hierarquia de pastas de instalação** - especifique onde e a que profundidade as pastas do repositório são pesquisadas para que os recursos sejam instalados. Quando um curinga é usado (como em .*/install) todas as correspondências apropriadas serão pesquisadas, por exemplo, `/libs/sling/install` e `/libs/cq/core/install`.
+* **Nome das pastas de instalação regexp** e **Profundidade máxima da hierarquia de pastas de instalação** - especifique onde e a que profundidade as pastas do repositório são pesquisadas para que os recursos sejam instalados. Quando um curinga é usado (como em .&#42;/install) todas as correspondências apropriadas serão pesquisadas, por exemplo, `/libs/sling/install` e `/libs/cq/core/install`.
 
 * **Caminho de pesquisa**, a lista de caminhos que o jcrinstall procura recursos a serem instalados, juntamente com um número que indica o fator de ponderação para esse caminho.
 
@@ -326,13 +326,13 @@ Usando AEM Mapeamento de Raiz, você pode configurar a interface que deseja ter 
 
 * Para ter a interface habilitada para toque como a interface padrão do usuário **Caminho do Target** deve indicar:
 
-   ```
+   ```shell
       /projects.html
    ```
 
 * Para ter a interface clássica como a interface padrão do usuário do **Caminho do Target** deve indicar:
 
-   ```
+   ```shell
       /welcome.html
    ```
 
@@ -366,7 +366,7 @@ Para usuários selecionados, o nome de usuário extraído da solicitação HTTP 
 `admin` for exibido em qualquer lado do mapa, o mapeamento será ignorado. Esteja ciente de que o caractere &quot;=&quot; deve ser evitado com um &quot;\&quot; à esquerda.
 
 * **Formato**
-Indica o formato em que a ID de usuário é fornecida. Uso:
+Indica o formato em que a ID de usuário é fornecida. Utilização:
 
    * `Basic` se a ID do usuário estiver codificada no formato HTTP Basic Authentication
    * `AsIs` se a ID de usuário for fornecida em texto simples ou qualquer expressão regular aplicada, o valor deve ser usado como está ou qualquer expressão regular

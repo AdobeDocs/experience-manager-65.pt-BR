@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: b6de561422bc3533eef153b13d2c65b4cb7e0387
+source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
 workflow-type: tm+mt
 source-wordcount: '1897'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 O teste de desempenho é uma parte importante de qualquer implantação de AEM. Dependendo dos requisitos do cliente, o teste de desempenho pode ser realizado nas instâncias de publicação, nas instâncias do autor ou em ambos.
 
-Esta documentação destacará estratégias e metodologias gerais de realização de testes de desempenho, bem como algumas das ferramentas disponibilizadas pelo Adobe para auxiliar no processo. Por fim, vamos analisar algumas das ferramentas disponíveis no AEM 6 para auxiliar no ajuste do desempenho, tanto de uma análise de código como da perspectiva de configuração do sistema.
+Essa documentação destacará estratégias e metodologias gerais de realização de testes de desempenho, bem como algumas das ferramentas disponibilizadas pelo Adobe para auxiliar no processo. Por fim, vamos analisar algumas das ferramentas disponíveis no AEM 6 para auxiliar no ajuste do desempenho, tanto de uma análise de código como da perspectiva de configuração do sistema.
 
 ### Simular realidade {#simulating-reality}
 
@@ -51,13 +51,13 @@ Antes de iniciar os ensaios de desempenho, é necessário definir requisitos nã
 
 ### Ferramentas {#tools}
 
-There are many commercially available performance testing tools on the market. Ao executar uma ferramenta de geração de carga, é importante garantir que os computadores que estão executando os testes tenham largura de banda de rede suficiente. Caso contrário, quando a máquina de teste atingir os limites de sua conexão, nenhuma carga adicional será gerada no ambiente em teste.
+Há muitas ferramentas de teste de desempenho disponíveis comercialmente no mercado. Ao executar uma ferramenta de geração de carga, é importante garantir que os computadores que estão executando os testes tenham largura de banda de rede suficiente. Caso contrário, quando a máquina de teste atingir os limites de sua conexão, nenhuma carga adicional será gerada no ambiente em teste.
 
 #### Ferramentas de teste {#testing-tools}
 
 * Adobe&#39;s **Dia difícil** A ferramenta pode ser usada para gerar carga em instâncias AEM e coletar dados de desempenho. A equipe de engenharia de AEM da Adobe usa a ferramenta para fazer o teste de carregamento do próprio produto AEM. Os scripts executados em Tough Day são configurados por meio de arquivos de propriedade e arquivos XML JMX. Para obter mais informações, consulte o [Documentação do Dia difícil](/help/sites-developing/tough-day.md).
 
-* AEM fornece ferramentas prontas para uso para ver rapidamente consultas, solicitações e mensagens de erro problemáticas. For more information, see the [Diagnosis Tools](/help/sites-administering/operations-dashboard.md#diagnosis-tools) section of the Operations Dashboard documentation.
+* AEM fornece ferramentas prontas para uso para ver rapidamente consultas, solicitações e mensagens de erro problemáticas. Para obter mais informações, consulte o [Ferramentas de diagnóstico](/help/sites-administering/operations-dashboard.md#diagnosis-tools) seção da documentação do Painel de operações.
 * O Apache fornece um produto chamado **JMeter** que podem ser usados para testes de desempenho e carga, bem como comportamento funcional. Ele é um software de código aberto e gratuito, mas tem um conjunto de recursos menor do que os produtos corporativos e uma curva de aprendizado mais acentuada. O JMeter pode ser encontrado no site da Apache em [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
 * **Carregar Executador** é um produto de teste de carga de nível empresarial. Uma versão de avaliação gratuita está disponível. Mais informações podem ser encontradas em [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
@@ -66,7 +66,7 @@ There are many commercially available performance testing tools on the market. A
 * Quando se trata de testar sites móveis ou responsivos, um conjunto separado de ferramentas precisa ser usado. Eles funcionam diminuindo a largura de banda da rede, simulando conexões móveis mais lentas, como 3G ou EDGE. Entre as ferramentas mais utilizadas estão:
 
    * **[Condicionador de links de rede](https://nshipster.com/network-link-conditioner/)** - fornece uma interface de usuário fácil de usar e funciona em um nível relativamente baixo na pilha de rede. Ele inclui versões para OS X e iOS;
-   * [**Charles**](https://www.charlesproxy.com/) - um aplicativo proxy de depuração da Web que, além de várias outras utilizações, fornece controle de rede. Versions are provided for Windows, OS X and Linux.
+   * [**Charles**](https://www.charlesproxy.com/) - um aplicativo proxy de depuração da Web que, além de várias outras utilizações, fornece controle de rede. As versões são fornecidas para Windows, OS X e Linux.
 
 #### Ferramentas de otimização {#optimization-tools}
 
@@ -80,7 +80,7 @@ Um dos novos recursos na interface de toque do AEM 6 é o Modo do desenvolvedor.
 
 **Usar o rlog.jar para ler os logs de solicitação**
 
-Para obter uma análise mais abrangente dos logs de solicitação em um sistema de AEM, `rlog.jar` pode ser usado para pesquisar e classificar o `request.log` arquivos que AEM gerados. This jar file is included with an AEM installation in the `/crx-quickstart/opt/helpers` folder. Para obter mais informações sobre a ferramenta de log e o log de solicitações em geral, consulte o [Monitoramento e manutenção](/help/sites-deploying/monitoring-and-maintaining.md) documentação.
+Para obter uma análise mais abrangente dos logs de solicitação em um sistema de AEM, `rlog.jar` pode ser usado para pesquisar e classificar o `request.log` arquivos que AEM gerados. Este arquivo jar é incluído com uma instalação AEM no `/crx-quickstart/opt/helpers` pasta. Para obter mais informações sobre a ferramenta de log e o log de solicitações em geral, consulte o [Monitoramento e manutenção](/help/sites-deploying/monitoring-and-maintaining.md) documentação.
 
 **A ferramenta Explain Query**
 
@@ -147,7 +147,7 @@ Após executar testes de desempenho na instância do autor, todos os problemas p
 
 * Observe a lista de erros em busca de erros ou avisos. Para obter mais informações, consulte [Registro](/help/sites-deploying/configure-logging.md)
 * Monitore recursos de hardware do sistema, como utilização de memória e CPU, E/S de disco ou E/S de rede. Esses recursos são frequentemente as causas de gargalos de desempenho
-* Optimize the architecture of the pages and how they are addressed to minimize the usage of URL parameters to allow for as much caching as possible
+* Otimize a arquitetura das páginas e como elas são endereçadas para minimizar o uso de parâmetros de URL para permitir o maior armazenamento em cache possível
 * Siga as [Otimização de desempenho](/help/sites-deploying/configuring-performance.md) e [Dicas para ajuste de desempenho](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) documentação
 
 * Se houver problemas com a edição de determinadas páginas ou componentes em instâncias do autor, use o Modo de desenvolvedor da interface sensível ao toque para inspecionar a página em questão. Isso fornecerá um detalhamento de cada área de conteúdo na página, bem como seu tempo de carregamento
@@ -155,4 +155,4 @@ Após executar testes de desempenho na instância do autor, todos os problemas p
 * Elimine o CSS e o JS incorporados dos componentes. Eles devem ser incluídos e minificados com as bibliotecas do lado do cliente para minimizar o número de solicitações necessárias para renderizar a página
 * Use ferramentas do navegador, como a guia Rede do Chrome para inspecionar as solicitações do servidor e ver quais estão demorando mais.
 
-Once problem areas are identified, application code can be inspected for performance optimizations. Qualquer recurso pronto para uso AEM que não esteja funcionando corretamente pode ser resolvido com o Suporte ao Adobe.
+Depois que as áreas com problemas são identificadas, o código do aplicativo pode ser inspecionado para obter otimizações de desempenho. Qualquer recurso pronto para uso AEM que não esteja funcionando corretamente pode ser resolvido com o Suporte ao Adobe.
