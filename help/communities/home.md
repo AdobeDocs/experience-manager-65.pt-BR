@@ -4,9 +4,9 @@ seo-title: Adobe Experience Manager 6.5 Communities Guide
 description: Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais. Navegue pelo nosso guia que explica como implantar, administrar, desenvolver e criar Comunidades.
 seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 38%
 
 ---
@@ -17,7 +17,7 @@ Crie experiências online, como fóruns, grupos de usuários, recursos de aprend
 
 ## Artigos principais AEM
 
-* [Introdução ao AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=pt-BR)
+* [Introdução ao AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR)
 * [Notas de versão do AEM 6.5](/help/release-notes/home.md)
 * [Atualizações recentes na documentação](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md)
@@ -49,5 +49,5 @@ Crie experiências online, como fóruns, grupos de usuários, recursos de aprend
 * [Guia do usuário dos Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=pt-BR#home)
+* [Fórum da comunidade AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=pt)

@@ -2,10 +2,10 @@
 title: Guia do usuário de administração do AEM 6.5
 description: Saiba mais sobre a administração do AEM 6.5. Esses guias abordam recursos do site, operações de implantação, recursos de segurança, personalização, integração e muito mais.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 34%
+source-wordcount: '359'
+ht-degree: 35%
 
 ---
 
@@ -15,7 +15,7 @@ Saiba mais sobre a administração do AEM 6.5. Esses guias abordam recursos do s
 
 ## Artigos principais
 
-* [Introdução ao AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=pt-BR)
+* [Introdução ao AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR)
 * [Notas de versão do AEM 6.5](/help/release-notes/home.md)
 * [Atualizações recentes na documentação](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md)
@@ -47,5 +47,5 @@ Saiba mais sobre a administração do AEM 6.5. Esses guias abordam recursos do s
 * [Guia do usuário dos Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=pt-BR#home)
+* [Fórum da comunidade AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=pt)

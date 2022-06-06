@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Forms Guide
 description: Use este guia do AEM 6.5 para criar, gerenciar, publicar e atualizar formulários digitais. Encontre ajuda para instalá-los, atualizá-los e configurá-los, além de saber mais sobre como criar formulários adaptáveis.
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '379'
 ht-degree: 33%
 
 ---
@@ -17,7 +17,7 @@ Use este guia do AEM 6.5 para criar, gerenciar, publicar e atualizar formulário
 
 ## Artigos principais AEM
 
-* [Introdução ao AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=pt-BR)
+* [Introdução ao AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR)
 * [Notas de versão do AEM 6.5](/help/release-notes/home.md)
 * [Atualizações recentes na documentação](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md)
@@ -49,5 +49,5 @@ Use este guia do AEM 6.5 para criar, gerenciar, publicar e atualizar formulário
 * [Guia do usuário dos Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=pt-BR#home)
+* [Fórum da comunidade AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=pt)
