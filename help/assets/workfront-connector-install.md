@@ -4,9 +4,9 @@ description: Instalar [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
-source-git-commit: 679ad8f1fec1abe97dfc90b6318c3f3c4ab85b7f
+source-git-commit: fa701a480af1d1f1860586db606f83446822f718
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,14 @@ Um usuário com acesso de administrador em [!DNL Adobe Experience Manager] insta
 
 >[!IMPORTANT]
 >
->O Adobe requer implantação e configuração do [!DNL Adobe Workfront for Experience Manager enhanced connector] somente por parceiros certificados ou [!DNL Adobe Professional Services]. Se implantado e configurado sem um parceiro certificado ou [!DNL Adobe Professional Services], ele não é compatível com o Adobe.
+>* O Adobe requer implantação e configuração do [!DNL Adobe Workfront for Experience Manager enhanced connector] somente por parceiros certificados ou [!DNL Adobe Professional Services]. Se implantado e configurado sem um parceiro certificado ou [!DNL Adobe Professional Services], ele não é compatível com o Adobe.
 >
->O Adobe pode lançar atualizações para [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] que tornam redundante este conector; se isso ocorrer, os clientes podem ser solicitados a fazer a transição do uso desse conector.
+>* O Adobe pode lançar atualizações para [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] que tornam redundante este conector; se isso ocorrer, os clientes podem ser solicitados a fazer a transição do uso desse conector.
+>
+>* O Adobe oferece suporte ao conector avançado versões 1.7.4 e superior. Não há suporte para pré-lançamento e versões personalizadas anteriores. Para verificar a versão do conector aprimorado, navegue até a `digital.hoodoo` disponível no painel esquerdo em [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR).
+>
+>* Consulte [Exame de certificação de parceiro para Workfront para conector aprimorado Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obter informações sobre o exame, consulte [Guia de exame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+
 
 Para instalar o conector, siga estas etapas:
 
@@ -57,7 +62,7 @@ Para criar uma conexão com o Workfront, siga estas etapas:
 
 1. Para verificar a conexão, acesse-a em [!DNL Workfront] e verifique se a chave da API é a mesma e se a conexão é **[!UICONTROL Ativado]**. Para fazer isso, selecione **[!UICONTROL Configuração]** > **[!UICONTROL Documentos]** > **[!UICONTROL Integrações personalizadas]** em [!DNL Workfront].
 
-## Atualizar [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
+## Atualizar o [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
 
 O Experience Manager Assets permite atualizar o [!DNL Workfront for Experience Manager enhanced connector] de uma versão anterior para a versão mais recente.
 
