@@ -1,15 +1,15 @@
 ---
-title: '"[!DNL Experience Manager Assets] integração com [!DNL Adobe Workfront]"'
+title: '''[!DNL Experience Manager Assets] integração com [!DNL Adobe Workfront]'''
 description: Introdução à integração entre [!DNL Assets] e [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
+source-git-commit: 57304cfb7706377fa5dd7cce0e5863839ffee553
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 2%
+source-wordcount: '967'
+ht-degree: 3%
 
 ---
-
 
 # [!DNL Adobe Experience Manager Assets] integração com [!DNL Adobe Workfront] {#assets-integration-overview}
 
@@ -29,9 +29,14 @@ Consulte o suporte da plataforma e [pré-requisitos para o conector aprimorado](
 
 >[!IMPORTANT]
 >
->O Adobe requer implantação e configuração do [!DNL Adobe Workfront for Experience Manager enhanced connector] somente por parceiros certificados ou [!DNL Adobe Professional Services]. Se implantado e configurado sem um parceiro certificado ou [!DNL Adobe Professional Services], ele não é compatível com o Adobe.
+>* O Adobe requer implantação e configuração do [!DNL Adobe Workfront for Experience Manager enhanced connector] somente por parceiros certificados ou [!DNL Adobe Professional Services]. Se implantado e configurado sem um parceiro certificado ou [!DNL Adobe Professional Services], ele não é compatível com o Adobe.
 >
->O Adobe pode lançar atualizações para [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] que tornam redundante este conector; se isso ocorrer, os clientes podem ser solicitados a fazer a transição do uso desse conector.
+>* O Adobe pode lançar atualizações para [!DNL Adobe Workfront] e [!DNL Adobe Experience Manager] que tornam redundante este conector; se isso ocorrer, os clientes podem ser solicitados a fazer a transição do uso desse conector.
+>
+>* O Adobe oferece suporte ao conector avançado versões 1.7.4 e superior. Não há suporte para pré-lançamento e versões personalizadas anteriores. Para verificar a versão do conector aprimorado, navegue até a `digital.hoodoo` disponível no painel esquerdo em [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR).
+>
+>* Consulte [Exame de certificação de parceiro para Workfront para conector aprimorado Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obter informações sobre o exame, consulte [Guia de exame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+
 
 ## Comparar diferentes integrações entre [!DNL Assets] e [!DNL Workfront] {#feature-parity-matrix}
 
