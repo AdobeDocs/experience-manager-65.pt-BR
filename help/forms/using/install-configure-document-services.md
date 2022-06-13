@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 4b3327ed46024662813bb538f8338c59e508e10e
+source-git-commit: 57bccab9b95d328591e6cbb1070fd9e59712c016
 workflow-type: tm+mt
-source-wordcount: '5330'
+source-wordcount: '5364'
 ht-degree: 1%
 
 ---
@@ -765,18 +765,19 @@ Antes de realizar as verificações a seguir, verifique se [Ferramenta de prepar
 
    * Use os comandos a seguir para gerar vid.xml e serializar novamente a instalação existente usando o arquivo vid.xml em vez dos comandos fornecidos em [migrando seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) artigo numérico.
 
-      * Gere o vid.xml
+          &quot;
+          
+          adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;leid>] [—regsuppress=ss] [—eulasuppress] [—locales=lista limitada de localidades no formato xx_XX ou ALL>] [—provfile=&lt;absolute path=&quot;&quot; to=&quot;&quot; prov.xml=&quot;&quot;>]
+          
+          &quot;
+      
+   * Serialize o volume do pacote (serialize novamente a instalação existente usando o arquivo vid.xml e o novo serial): Execute o seguinte comando da pasta de instalação do PRTK como administrador para serializar e ativar os pacotes implantados em computadores clientes:
 
-         ```
-         adobe_prtk --tool=VolumeSerialize --generate --serial=<serialnum> [--leid=<LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=<Absolute path to prov.xml>]
-         ```
-
-      * Serialize o volume do pacote (serialize novamente a instalação existente usando o arquivo vid.xml e o novo serial): Execute o seguinte comando da pasta de instalação do PRTK como administrador para serializar e ativar os pacotes implantados em computadores clientes:
-
-         ```
-         adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
-         ```
-
+          &quot;
+          adobe_prtk —tool=VolumeSerialize —provfile=C:\prov.xml -stream
+          
+          &quot;
+      
 * Para instalações de grande escala, use o [Customization Wizard Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para remover versões anteriores do Reader e do Acrobat. Personalize o instalador e implante-o em todos os computadores de sua organização.
 
 +++
