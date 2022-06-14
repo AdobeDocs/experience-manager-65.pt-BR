@@ -2,10 +2,10 @@
 title: Notas de versão do AEM Content and Commerce 2022
 description: Notas de versão do AEM Content and Commerce 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: aacb497b10f46be3157aae86a5973aa277fda967
+source-git-commit: f6a16e5744222600b3a1760efe3c61619160b6cd
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 45%
+source-wordcount: '573'
+ht-degree: 38%
 
 ---
 
@@ -21,6 +21,30 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 | Componentes principais da CIF | [Requisitos do sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Arquétipo de projeto do AEM | [Requisitos do sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
+## Data de lançamento: Maio de 2022
+
+| Componente | Versão | Detalhes |
+|:-------|:-----:|---------------------:|
+| Complemento CIF | 2022.05.31.00 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.05.31.00.zip) |
+| Componentes principais da CIF | 2.9.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.9.0) |
+| Site de referência CIF Venia | 2022.05.30 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.05.30) |
+
+### Novidades {#what-is-new-may}
+
+* Nova página de propriedades do cockpit de produtos para obter uma visão geral melhor e simplificada
+
+![visão geral das propriedades do cockpit de produtos](/help/assets/CIF/product_cockpit_properties_overview.png)
+
+* Aprimoramento da compatibilidade e robustez de conectores de terceiros na I/O Runtime
+
+* Melhore o suporte para substituições de configuração do cliente GQL (por exemplo, definir o comportamento de armazenamento em cache personalizado)
+
+### Correções de bugs {#bug-fixes-may}
+
+* O campo seletor de produtos de vários valores mostra o 2º e os produtos adicionais como inválidos
+
+* Ocasionalmente, o Seletor de produto fica oculto atrás dos componentes
+
 ## Data de lançamento: Abril de 2022
 
 | Componente | Versão | Detalhes |
@@ -29,7 +53,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 | Componentes principais da CIF | 2.8.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0) |
 | Site de referência CIF Venia | 2022.04.28 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.04.28) |
 
-### Novidades {#what-is-new}
+### Novidades {#what-is-new-april}
 
 * Acesso rápido ao cockpit de produtos: Acesse facilmente as informações completas e detalhadas do produto com um clique no Editor de sites
 
