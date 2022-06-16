@@ -1,8 +1,8 @@
 ---
 title: Trabalhar com versões de páginas
-seo-title: Trabalhar com versões de páginas
+seo-title: Working with Page Versions
 description: Criar, comparar e restaurar versões de uma página
-seo-description: Criar, comparar e restaurar versões de uma página
+seo-description: Create, compare, and restore versions of a page
 uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 4d5f7057178ea0a1f00ea363b76dacdfb714b5e3
+source-git-commit: b11a97b9b00e6f80fb0243e234ed1dc2c004ed3a
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 69%
+source-wordcount: '1491'
+ht-degree: 68%
 
 ---
 
@@ -68,11 +68,11 @@ O controle de versão cria um “instantâneo” de uma página em um ponto no t
 
 Depois de criar uma versão da página, há vários métodos para restabelecer uma versão anterior:
 
-* a opção **Reverter para esta versão** do painel [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline)
+* o **Reverter para esta versão** da [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) trilho
 
    Instale novamente uma versão anterior de uma página selecionada.
 
-* as opções **Restaurar** na barra de ferramentas de [ações superior](/help/sites-authoring/basic-handling.md#actions-toolbar)
+* o **Restaurar** opções na parte superior [barra de ferramentas ações](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
    * **Restaurar versão**
 
@@ -112,9 +112,9 @@ Para **Reverter** a página selecionada para uma versão anterior:
 
 Este método pode ser usado para restaurar versões de páginas especificadas na pasta atual; isso também pode incluir a restauração de páginas que foram excluídas anteriormente:
 
-1. Navegue até e [selecione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), a pasta desejada.
+1. Navegue até e [select](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), a pasta necessária.
 
-1. Selecione **Restaurar** e **Restaurar versão** na barra de ferramentas de [ações superior](/help/sites-authoring/basic-handling.md#actions-toolbar).
+1. Selecionar **Restaurar**, em seguida **Restaurar versão** na parte superior [barra de ferramentas ações](/help/sites-authoring/basic-handling.md#actions-toolbar).
 
    >[!NOTE]
    >
@@ -138,7 +138,7 @@ Este método pode ser usado para restaurar versões de páginas especificadas na
 
    ![Restaurar versão - Selecionar página](/help/sites-authoring/assets/versions-restore-version-03.png)
 
-1. Selecione **Restaurar** para a versão selecionada, da página selecionada, a ser restaurada como a versão atual.
+1. Selecionar **Restaurar** para a versão selecionada, da página selecionada, a ser restaurada como a versão atual.
 
 >[!NOTE]
 >
@@ -148,23 +148,23 @@ Este método pode ser usado para restaurar versões de páginas especificadas na
 
 Esse método pode ser usado para restaurar uma versão de uma árvore como em uma data e hora especificadas; isso pode incluir páginas que foram excluídas anteriormente:
 
-1. Navegue até e [selecione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), a pasta desejada.
+1. Navegue até e [select](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), a pasta necessária.
 
-1. Selecione **Restaurar** e **Restaurar árvore** na parte superior [barra de ferramentas de ações](/help/sites-authoring/basic-handling.md#actions-toolbar). A versão mais recente da árvore será mostrada:
+1. Selecionar **Restaurar**, em seguida **Restaurar árvore** na parte superior [barra de ferramentas ações](/help/sites-authoring/basic-handling.md#actions-toolbar). A versão mais recente da árvore será mostrada:
 
    ![Restaurar árvore](/help/sites-authoring/assets/versions-restore-tree-02.png)
 
-1. Use o seletor de data e hora em **Versões mais recentes na data** para selecionar outra versão da árvore - a que será restaurada.
+1. Use o seletor de data e hora em **Últimas versões na data** para selecionar outra versão da árvore - a que será restaurada.
 
-1. Defina o sinalizador **Páginas sem versão preservadas** conforme necessário:
+1. Definir o sinalizador **Páginas sem versão preservadas** conforme necessário:
 
    * Se estiver ativo (selecionado), quaisquer páginas sem versão serão mantidas e não serão afetadas pela restauração.
 
    * Se estiver inativo (não selecionado), quaisquer páginas sem versão serão removidas, pois não existiam na árvore com versão.
 
-1. Selecione **Restaurar** para a versão selecionada da árvore a ser restaurada como a versão *atual*.
+1. Selecionar **Restaurar** para a versão selecionada da árvore a ser restaurada como a *atual* versão.
 
-## Visualização de uma versão    {#previewing-a-version}
+## Visualização de uma versão   {#previewing-a-version}
 
 É possível visualizar uma versão específica:
 
@@ -200,6 +200,10 @@ Para comparar uma versão anterior com a página atual:
 ## Timewarp   {#timewarp}
 
 O Timewarp é um recursos criado para simular o estado *publicado* de uma página em ocasiões específicas no passado.
+
+>[!TIP]
+>
+>[O Timewarp também pode ser usado com Inicializações para visualizar o futuro](/help/sites-authoring/launches.md) ao executar o AEM 6.5.10.0 ou posterior.
 
 Como a criação de conteúdo é um processo contínuo e colaborativo, o objetivo do Timewarp é permitir que os autores rastreiem o site publicado ao longo do tempo, para entender como o conteúdo mudou. Esse recurso usa as versões de página para determinar o estado do ambiente de publicação.
 
