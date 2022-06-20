@@ -5,14 +5,20 @@ contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
-source-git-commit: bfc4aa92770b001bdf89d89fa149d8e4ceefa6c2
+source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
-source-wordcount: '2458'
+source-wordcount: '2493'
 ht-degree: 8%
 
 ---
 
 # Use [!DNL Adobe Stock] ativos em [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
+| AEM 6.5 | Este artigo |
+| AEM 6.4 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/aem-assets-adobe-stock.html?lang=en) |
 
 <!-- old content
 
@@ -48,7 +54,7 @@ A integração exige:
 
 * Um [empresa [!DNL Adobe Stock] plano](https://stockenterprise.adobe.com/)
 * Um usuário com permissões no Admin Console para o perfil de produto do Stock padrão
-* Um usuário com permissões para o perfil de Acesso ao desenvolvedor para criar integração no Console do desenvolvedor do Adobe.
+* Um usuário com permissões para o perfil de Acesso do desenvolvedor para criar integração no Adobe Developer Console
 
 Uma empresa [!DNL Adobe Stock] plano,
 
@@ -105,7 +111,7 @@ A configuração IMS inclui duas etapas:
 
 ### Obter certificado público {#public-certificate}
 
-A chave pública (certificado) autentica seu perfil de produto no Console do desenvolvedor do Adobe.
+A chave pública (certificado) autentica o perfil do produto no Adobe Developer Console.
 
 1. Faça logon no [!DNL Experience Manager Assets] instância do autor. O URL padrão é `http://localhost:4502/aem/start.html`.
 
@@ -121,7 +127,7 @@ A chave pública (certificado) autentica seu perfil de produto no Console do des
 
 1. Clique em **[!UICONTROL Criar certificado]**. Em seguida, clique em **[!UICONTROL OK]** para gerar a chave pública.
 
-1. Clique no botão **[!UICONTROL Baixar chave pública]** e salve o arquivo de chave pública (.crt) em sua máquina. A chave pública é usada posteriormente para configurar a API do locatário do Brand Portal e gerar credenciais de conta de serviço no Console do desenvolvedor do Adobe.
+1. Clique no botão **[!UICONTROL Baixar chave pública]** e salve o arquivo de chave pública (.crt) em sua máquina. A chave pública é usada posteriormente para configurar a API do locatário do Brand Portal e gerar credenciais de conta de serviço no Adobe Developer Console.
 
    Clique em **[!UICONTROL Avançar]**.
 
@@ -129,15 +135,15 @@ A chave pública (certificado) autentica seu perfil de produto no Console do des
 
 1. No **Conta** , é criada a conta do Adobe IMS que requer as credenciais da conta de serviço.
 
-   Abra uma nova guia e [criar uma conexão de conta de serviço (JWT) no Console do desenvolvedor do Adobe](#createnewintegration).
+   Abra uma nova guia e [criar uma conexão de conta de serviço (JWT) no Adobe Developer Console](#createnewintegration).
 
 ### Criar conexão de conta de serviço (JWT) {#createnewintegration}
 
-No Console do desenvolvedor do Adobe, os projetos e as APIs são configurados no nível da organização. Configurar uma API cria uma conexão de conta de serviço (JWT). Há dois métodos para configurar a API, gerando um par de chaves (chaves privadas e públicas) ou carregando uma chave pública. Neste exemplo, as credenciais da conta de serviço são geradas pelo upload da chave pública.
+No Adobe Developer Console, os projetos e as APIs são configurados no nível da organização. Configurar uma API cria uma conexão de conta de serviço (JWT). Há dois métodos para configurar a API, gerando um par de chaves (chaves privadas e públicas) ou carregando uma chave pública. Neste exemplo, as credenciais da conta de serviço são geradas pelo upload da chave pública.
 
 Para gerar as credenciais da conta de serviço e a carga JWT:
 
-1. Faça logon no Console do Desenvolvedor do Adobe com privilégios de administrador do sistema. O URL padrão é [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Faça logon no Adobe Developer Console com privilégios de administrador do sistema. O URL padrão é [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    Certifique-se de ter selecionado a organização IMS correta (direito ao estoque) na lista suspensa (organização).

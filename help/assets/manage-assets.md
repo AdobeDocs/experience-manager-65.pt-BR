@@ -1,19 +1,25 @@
 ---
-title: Gerenciar seus ativos digitais
+title: Organize seus ativos digitais
 description: Saiba mais sobre as tarefas de gerenciamento de ativos, como carregar, baixar, editar, pesquisar, excluir, anotar e transformar seus ativos digitais em versão.
 contentOwner: AG
 mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: dd1e08bee03a6c7b07b32b0fb929d02dad467744
 workflow-type: tm+mt
-source-wordcount: '9878'
+source-wordcount: '9913'
 ht-degree: 4%
 
 ---
 
-# Gerenciar seus ativos digitais {#manage-digital-assets}
+# Organize seus ativos digitais {#manage-digital-assets}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
+| AEM 6.5 | Este artigo |
+| AEM 6.4 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-assets-touch-ui.html?lang=en) |
 
 Em [!DNL Adobe Experience Manager Assets], você pode fazer mais do que armazenar e administrar seus ativos. [!DNL Experience Manager] oferece recursos de gerenciamento de ativos de nível empresarial. Você pode editar e compartilhar ativos, executar pesquisas avançadas e criar várias representações de dezenas de formatos de arquivo compatíveis. Você também pode gerenciar versões e direitos digitais, automatizar o processamento de ativos, gerenciar e administrar metadados, colaborar usando anotações e muito mais.
 
@@ -159,7 +165,7 @@ O Dynamic Media permite o upload em lote de ativos por meio do servidor FTP. Se 
 
 >[!NOTE]
 >
->Para fazer upload de ativos via FTP no modo Dynamic Media - Scene7, instale o Feature Pack 18912 no [!DNL Experience Manager] instâncias do autor. Contato [Suporte ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=General#support) para obter acesso ao FP-18912 e concluir a configuração da sua conta FTP. Para obter mais informações, consulte [Instale o feature pack 18912 para migração de ativos em massa](/help/assets/bulk-ingest-migrate.md).
+>Para fazer upload de ativos via FTP no modo Dynamic Media - Scene7, instale o Feature Pack 18912 no [!DNL Experience Manager] instâncias do autor. Contato [Suporte ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=pt-BR#support) para obter acesso ao FP-18912 e concluir a configuração da sua conta FTP. Para obter mais informações, consulte [Instale o feature pack 18912 para migração de ativos em massa](/help/assets/bulk-ingest-migrate.md).
 >
 >Se você usar o FTP para fazer upload de ativos, as configurações de upload especificadas em [!DNL Experience Manager] são ignoradas. Em vez disso, as regras de processamento de arquivos, conforme definido no Dynamic Media Classic, são usadas.
 
@@ -798,7 +804,7 @@ Você também pode optar por imprimir somente as anotações ou o status da revi
 Para imprimir as anotações e o status da revisão, clique em **[!UICONTROL Imprimir]** e siga as instruções do assistente. O **[!UICONTROL Imprimir]** aparece na barra de ferramentas somente quando o ativo tem pelo menos um status de anotação ou revisão atribuído a ele.
 
 1. No [!DNL Assets] , abra a página de visualização de um ativo.
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Para imprimir todas as anotações e o status da revisão, pule a etapa 3 e vá diretamente para a etapa 4.
    * Para imprimir anotações específicas e revisar o status, abra o [linha do tempo](/help/assets/manage-assets.md#timeline) e então vá para a etapa 3.

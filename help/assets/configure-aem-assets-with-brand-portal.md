@@ -12,14 +12,20 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: 67e145e250bbe386168ab2c0f8967f91aa9d8a36
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 10%
+source-wordcount: '2088'
+ht-degree: 11%
 
 ---
 
 # Configurar o AEM Assets com o Brand Portal {#configure-integration-65}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en) |
+| AEM 6.5 | Este artigo |
+| AEM 6.4 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=pt-BR) |
 
 O Adobe Experience Manager Assets Brand Portal permite publicar ativos de marca aprovados do Adobe Experience Manager Assets no Brand Portal e distribuí-los aos usuários do Brand Portal.
 
@@ -27,22 +33,22 @@ O AEM Assets é configurado com o Brand Portal por meio do Adobe Developer Conso
 
 >[!NOTE]
 >
->A configuração do AEM Assets com Brand Portal por meio do Console do desenvolvedor do Adobe é compatível com o AEM 6.5.4.0 e superior.
+>A configuração do AEM Assets com Brand Portal por meio do Console do Adobe Developer é compatível com a AEM 6.5.4.0 e superior.
 >
 >Anteriormente, o Brand Portal era configurado por meio do Gateway OAuth herdado, que usa a troca JSON Web Token (JWT) para obter um token de Acesso IMS para autorização.
 >
->A configuração por meio do Gateway OAuth herdado não é mais compatível a partir de 6 de abril de 2020 e é alterada para Console do desenvolvedor do Adobe.
+>A configuração por meio do Gateway OAuth herdado não é mais compatível a partir de 6 de abril de 2020 e é alterada para Adobe Developer Console.
 
 >[!TIP]
 >
 >***Somente para clientes existentes***
 >
->É recomendável continuar usando a configuração existente do Gateway OAuth. Caso encontre problemas com a configuração herdada do Gateway OAuth, exclua a configuração existente e crie uma nova configuração por meio do Console do desenvolvedor do Adobe.
+>É recomendável continuar usando a configuração existente do Gateway OAuth. Caso encontre problemas com a configuração herdada do Gateway OAuth, exclua a configuração existente e crie uma nova configuração por meio do Adobe Developer Console.
 
 Esta ajuda descreve os dois casos de uso a seguir:
 
-* [Nova configuração](#configure-new-integration-65): Se você for um novo usuário do Brand Portal e quiser configurar a instância do autor do AEM Assets com o Brand Portal, poderá criar a configuração por meio do Console do desenvolvedor do Adobe.
-* [Atualizar configuração](#upgrade-integration-65): Se você for um usuário existente do Brand Portal com configuração no Gateway OAuth herdado, exclua a configuração existente e crie uma nova configuração por meio do Console do desenvolvedor do Adobe.
+* [Nova configuração](#configure-new-integration-65): Se você for um novo usuário do Brand Portal e quiser configurar a instância do autor do AEM Assets com o Brand Portal, poderá criar a configuração por meio do Adobe Developer Console.
+* [Atualizar configuração](#upgrade-integration-65): Se você for um usuário existente do Brand Portal com configuração no Gateway OAuth herdado, exclua a configuração existente e crie uma nova configuração por meio do Adobe Developer Console.
 
 As informações fornecidas baseiam-se no pressuposto de que qualquer pessoa que leia esta Ajuda está familiarizada com as seguintes tecnologias:
 
@@ -66,11 +72,11 @@ Você precisa do seguinte para configurar o AEM Assets com o Brand Portal:
 
 É recomendável ter o AEM 6.5 para configurar uma instância de autor AEM. Se você não tiver o AEM ativado e em execução, baixe-o dos seguintes locais:
 
-* Se você for um cliente AEM existente, baixe o AEM 6.5 do [site de licenciamento do Adobe](https://licensing.adobe.com).
+* Se você for um cliente AEM existente, baixe AEM 6.5 de [Site de licenciamento de Adobe](https://licensing.adobe.com).
 
-* Se você for um parceiro de Adobe, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar AEM 6.5.
+* Se você for um parceiro de Adobe, use [Programa de treinamento para parceiros Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar AEM 6.5.
 
-Depois de baixar o AEM, para obter instruções sobre como configurar uma instância de autor de AEM, consulte [implantar e manter](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#default-local-install).
+Depois de baixar o AEM, para obter instruções sobre como configurar uma instância de autor de AEM, consulte [implantação e manutenção](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#default-local-install).
 
 ### Baixe e instale AEM Service Pack mais recente {#servicepack}
 
@@ -78,14 +84,14 @@ Para obter instruções detalhadas, consulte
 
 * [Notas de versão do AEM 6.5 Service Pack ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=pt-BR)
 
-**Entre em contato com o** Suporte se não conseguir encontrar o pacote de AEM ou o Service Pack mais recente.
+**Entre em contato com o suporte** caso não consiga encontrar o pacote AEM ou o Service Pack mais recente.
 
 ## Criar configuração {#configure-new-integration-65}
 
-A configuração do AEM Assets com Brand Portal requer configurações em ambas as instâncias, na instância de autor do AEM Assets e no Console do desenvolvedor do Adobe.
+Configurar o AEM Assets com Brand Portal requer configurações em ambas as instâncias, na instância de autor do AEM Assets e no Adobe Developer Console.
 
 1. No AEM Assets, crie uma conta IMS e gere um certificado público (chave pública).
-1. No Console do desenvolvedor do Adobe, crie um projeto para seu locatário do Brand Portal (organização).
+1. No Adobe Developer Console, crie um projeto para seu locatário do Brand Portal (organização).
 1. No projeto, configure uma API usando a chave pública para criar uma conexão de conta de serviço (JWT).
 1. Obtenha as credenciais da conta de serviço e as informações de carga JWT.
 1. No AEM Assets, configure a conta IMS usando as credenciais da conta de serviço e a carga JWT.
@@ -114,41 +120,41 @@ A configuração IMS inclui duas etapas:
 
 ### Obter certificado público {#public-certificate}
 
-A chave pública (certificado) autentica seu perfil no Console do desenvolvedor do Adobe.
+A chave pública (certificado) autentica seu perfil no Adobe Developer Console.
 
 1. Faça logon na instância do autor do AEM Assets. O URL padrão é `http://localhost:4502/aem/start.html`.
 
-1. No painel **Ferramentas** ![Ferramentas](assets/do-not-localize/tools.png), navegue até **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**.
+1. No **Ferramentas** ![Ferramentas](assets/do-not-localize/tools.png) , navegue até **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**.
 
-1. Na página Configurações do Adobe IMS , clique em **[!UICONTROL Criar]**. Ele redirecionará para a página **[!UICONTROL Configuração de conta técnica do Adobe IMS]**. Por padrão, a guia **Certificate** é aberta.
+1. Na página Configurações do Adobe IMS , clique em **[!UICONTROL Criar]**. Ele será redirecionado para o **[!UICONTROL Configuração de conta técnica do Adobe IMS]** página. Por padrão, a variável **Certificado** será aberta.
 
-1. Selecione **[!UICONTROL Adobe Brand Portal]** na lista suspensa **[!UICONTROL Cloud Solution]**.
+1. Selecionar **[!UICONTROL Adobe Brand Portal]** no **[!UICONTROL Solução da nuvem]** lista suspensa.
 
-1. Marque a caixa de seleção **[!UICONTROL Create new certificate]** e especifique um **alias** para a chave pública. O alias serve como nome da chave pública.
+1. Selecione o **[!UICONTROL Criar novo certificado]** e especifique uma **alias** para a chave pública. O alias serve como nome da chave pública.
 
 1. Clique em **[!UICONTROL Criar certificado]**. Em seguida, clique em **[!UICONTROL OK]** para gerar a chave pública.
 
    ![Criar certificado](assets/ims-config2.png)
 
-1. Clique no ícone **[!UICONTROL Baixar chave pública]** e salve o arquivo de chave pública (.crt) no computador.
+1. Clique no botão **[!UICONTROL Baixar chave pública]** e salve o arquivo de chave pública (.crt) em sua máquina.
 
-   A chave pública será usada posteriormente para configurar a API para o locatário do Brand Portal e gerar credenciais de conta de serviço no Console do desenvolvedor do Adobe.
+   A chave pública será usada posteriormente para configurar a API para o locatário do Brand Portal e gerar credenciais de conta de serviço no Adobe Developer Console.
 
    ![Baixar certificado](assets/ims-config3.png)
 
 1. Clique em **[!UICONTROL Avançar]**.
 
-   Na guia **Account**, é criada a conta do Adobe IMS que requer as credenciais da conta de serviço geradas no Console do Desenvolvedor do Adobe. Mantenha esta página aberta por enquanto.
+   No **Conta** , é criada uma conta do Adobe IMS que requer as credenciais da conta de serviço geradas no Adobe Developer Console. Mantenha esta página aberta por enquanto.
 
-   Abra uma nova guia e [crie uma conexão de conta de serviço (JWT) no Console do Desenvolvedor do Adobe](#createnewintegration) para obter as credenciais e a carga JWT para configurar a conta IMS.
+   Abra uma nova guia e [criar uma conexão de conta de serviço (JWT) no Adobe Developer Console](#createnewintegration) para obter as credenciais e a carga JWT para configurar a conta IMS.
 
 ### Criar conexão de conta de serviço (JWT) {#createnewintegration}
 
-No Console do desenvolvedor do Adobe, os projetos e as APIs são configurados no nível de locatário (organização) do Brand Portal. Configurar uma API cria uma conexão de conta de serviço (JWT). Há dois métodos para configurar a API, gerando um par de chaves (chaves privadas e públicas) ou carregando uma chave pública. Para configurar o AEM Assets com o Brand Portal, você deve gerar uma chave pública (certificado) no AEM Assets e criar credenciais no Console do desenvolvedor do Adobe fazendo upload da chave pública. Essas credenciais são necessárias para configurar a conta IMS no AEM Assets. Após configurar a conta IMS, é possível configurar o serviço de nuvem da Brand Portal no AEM Assets.
+No Adobe Developer Console, os projetos e as APIs são configurados no nível do locatário (organização) do Brand Portal. Configurar uma API cria uma conexão de conta de serviço (JWT). Há dois métodos para configurar a API, gerando um par de chaves (chaves privadas e públicas) ou carregando uma chave pública. Para configurar o AEM Assets com o Brand Portal, você deve gerar uma chave pública (certificado) no AEM Assets e criar credenciais no Adobe Developer Console fazendo upload da chave pública. Essas credenciais são necessárias para configurar a conta IMS no AEM Assets. Após configurar a conta IMS, é possível configurar o serviço de nuvem da Brand Portal no AEM Assets.
 
 Execute as seguintes etapas para gerar as credenciais da conta de serviço e a carga JWT:
 
-1. Faça logon no Console do desenvolvedor do Adobe com privilégios de administrador de sistema na organização IMS (locatário do Brand Portal). O URL padrão é [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Faça logon no Adobe Developer Console com privilégios de administrador do sistema na organização IMS (locatário do Brand Portal). O URL padrão é [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -159,21 +165,21 @@ Execute as seguintes etapas para gerar as credenciais da conta de serviço e a c
 
    Clique em **[!UICONTROL Editar projeto]** para atualizar o **[!UICONTROL Título do projeto]** e **[!UICONTROL Descrição]** e clique em **[!UICONTROL Salvar]**.
 
-1. Na guia **[!UICONTROL Visão geral do projeto]**, clique em **[!UICONTROL Adicionar API]**.
+1. No **[!UICONTROL Visão geral do projeto]** clique em **[!UICONTROL Adicionar API]**.
 
-1. Na janela **[!UICONTROL Adicionar uma API]**, selecione **[!UICONTROL AEM Brand Portal]** e clique em **[!UICONTROL Próximo]**.
+1. No **[!UICONTROL Adicionar uma janela de API]**, selecione **[!UICONTROL AEM Brand Portal]** e clique em **[!UICONTROL Próximo]**.
 
    Certifique-se de ter acesso ao serviço AEM Brand Portal.
 
-1. Na janela **[!UICONTROL Configure API]**, clique em **[!UICONTROL Upload your public key]**. Em seguida, clique em **[!UICONTROL Selecione um Arquivo]** e faça upload da chave pública (arquivo .crt) que você baixou na seção [obter certificado público](#public-certificate).
+1. No **[!UICONTROL Configurar API]** , clique em **[!UICONTROL Fazer upload de sua chave pública]**. Em seguida, clique em **[!UICONTROL Selecionar um Arquivo]** e faça upload da chave pública (arquivo .crt) que você baixou no [obter certificado público](#public-certificate) seção.
 
    Clique em **[!UICONTROL Avançar]**.
 
    ![Fazer upload da chave pública](assets/service-account3.png)
 
-1. Verifique a chave pública e clique em **[!UICONTROL Next]**.
+1. Verifique a chave pública e clique em **[!UICONTROL Próximo]**.
 
-1. Selecione **[!UICONTROL Assets Brand Portal]** como o perfil de produto padrão e clique em **[!UICONTROL Salvar API configurada]**.
+1. Selecionar **[!UICONTROL Assets Brand Portal]** como o perfil de produto padrão e clique em **[!UICONTROL Salvar API configurada]**.
 
    <!-- 
    In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
@@ -181,19 +187,19 @@ Execute as seguintes etapas para gerar as credenciais da conta de serviço e a c
 
    ![Selecionar Perfil de Produto](assets/service-account4.png)
 
-1. Depois que a API for configurada, você será redirecionado para a página de visão geral da API. Na navegação à esquerda em **[!UICONTROL Credentials]**, clique na opção **[!UICONTROL Service Account (JWT)]**.
+1. Depois que a API for configurada, você será redirecionado para a página de visão geral da API. Na navegação à esquerda em **[!UICONTROL Credenciais]**, clique no botão **[!UICONTROL Conta de serviço (JWT)]** opção.
 
    >[!NOTE]
    >
    >Você pode exibir as credenciais e executar ações como gerar tokens JWT, copiar detalhes da credencial, recuperar o segredo do cliente e assim por diante.
 
-1. Na guia **[!UICONTROL Credenciais do cliente]** , copie o **[!UICONTROL ID do cliente]**.
+1. No **[!UICONTROL Credenciais do Cliente]** , copie a **[!UICONTROL client ID]**.
 
    Clique em **[!UICONTROL Recuperar Segredo do Cliente]** e copie o **[!UICONTROL segredo do cliente]**.
 
    ![Credenciais da Conta de Serviço](assets/service-account5.png)
 
-1. Navegue até a guia **[!UICONTROL Generate JWT]** e copie as informações **[!UICONTROL JWT Payload]**.
+1. Navegue até o **[!UICONTROL Gerar JWT]** e copie a **[!UICONTROL Carga JWT]** informações.
 
 Agora você pode usar a ID do cliente (chave de API), o segredo do cliente e a carga JWT para [configurar a conta IMS](#create-ims-account-configuration) no AEM Assets.
 
@@ -250,13 +256,13 @@ Verifique se você executou as seguintes etapas:
 
 Execute as etapas a seguir para configurar a conta IMS.
 
-1. Abra a Configuração IMS e navegue até a guia **[!UICONTROL Account]**. Você manteve a página aberta enquanto [obtinha o certificado público](#public-certificate).
+1. Abra a Configuração IMS e navegue até o **[!UICONTROL Conta]** guia . Você manteve a página aberta enquanto [obtenção do certificado público](#public-certificate).
 
 1. Especifique um **[!UICONTROL Título]** para a conta IMS.
 
-   No campo **[!UICONTROL Servidor de autorização]**, especifique o URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/).
+   No **[!UICONTROL Servidor de autorização]** , especifique o URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/).
 
-   Especifique a ID do cliente no campo **[!UICONTROL Chave da API]**, **[!UICONTROL Segredo do Cliente]** e **[!UICONTROL Carga]** (Carga JWT) que copiou enquanto [cria a conexão da conta de serviço (JWT)](#createnewintegration).
+   Especifique a ID do cliente no **[!UICONTROL Chave da API]** campo , **[!UICONTROL Segredo do cliente]** e **[!UICONTROL Carga]** (Carga JWT) que você copiou enquanto [criação da conexão da conta de serviço (JWT)](#createnewintegration).
 
    Clique em **[!UICONTROL Criar]**.
 
@@ -266,7 +272,7 @@ Execute as etapas a seguir para configurar a conta IMS.
 
 1. Selecione a configuração da conta IMS e clique em **[!UICONTROL Verificar integridade]**.
 
-   Clique em **[!UICONTROL Marcar]** na caixa de diálogo. Na configuração bem-sucedida, uma mensagem é exibida informando que o token *foi recuperado com êxito*.
+   Clique em **[!UICONTROL Verificar]** na caixa de diálogo. Na configuração bem-sucedida, uma mensagem aparece informando que a variável *O token foi recuperado com êxito*.
 
    ![](assets/create-new-integration5.png)
 
@@ -282,15 +288,15 @@ Execute as seguintes etapas para configurar o serviço de nuvem do Brand Portal:
 
 1. Faça logon na instância do autor do AEM Assets.
 
-1. No painel **Ferramentas** ![Ferramentas](assets/do-not-localize/tools.png), navegue até **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. No **Ferramentas** ![Ferramentas](assets/do-not-localize/tools.png) , navegue até **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. Na página Configurações do Brand Portal , clique em **[!UICONTROL Criar]**.
 
 1. Especifique um **[!UICONTROL Título]** para a configuração.
 
-   Selecione a configuração IMS que você criou ao [configurar a conta IMS](#create-ims-account-configuration).
+   Selecione a configuração IMS que você criou ao [configuração da conta IMS](#create-ims-account-configuration).
 
-   No campo **[!UICONTROL URL do serviço]**, especifique o URL do locatário (organização) do Brand Portal.
+   No **[!UICONTROL URL de serviço]** , especifique o URL do locatário (organização) do Brand Portal.
 
    ![](assets/create-cloud-service.png)
 
@@ -304,11 +310,11 @@ Execute as seguintes etapas para validar a configuração:
 
 1. Faça logon na instância da nuvem do AEM Assets.
 
-1. No painel **Ferramentas** ![Ferramentas](assets/do-not-localize/tools.png), navegue até **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]**.
+1. No **Ferramentas** ![Ferramentas](assets/do-not-localize/tools.png) , navegue até **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]**.
 
    ![](assets/test-integration1.png)
 
-1. Na página Replicação , clique em **[!UICONTROL Agentes no autor]**.
+1. Na página Replicação , clique em **[!UICONTROL Agentes do autor]**.
 
    ![](assets/test-integration2.png)
 
@@ -322,11 +328,11 @@ Execute as seguintes etapas para validar a configuração:
    >
    >Os agentes de replicação trabalham em paralelo e compartilham a distribuição de tarefas igualmente, aumentando assim a velocidade de publicação em quatro vezes a velocidade original. Depois que o serviço de nuvem é configurado, não é necessária configuração adicional para habilitar os agentes de replicação que são ativados por padrão para habilitar a publicação paralela de vários ativos.
 
-1. Para verificar a conexão entre o AEM Assets e o Brand Portal, clique no ícone **[!UICONTROL Testar conexão]**.
+1. Para verificar a conexão entre o AEM Assets e o Brand Portal, clique no botão **[!UICONTROL Testar conexão]** ícone .
 
    ![](assets/test-integration4.png)
 
-   Aparece uma mensagem de que seu *pacote de teste foi entregue com êxito*.
+   Uma mensagem é exibida informando que *o pacote de teste foi entregue com êxito*.
 
    ![](assets/test-integration5.png)
 
@@ -344,18 +350,18 @@ Execute as seguintes etapas para validar a configuração:
 Agora você pode:
 
 * [Publicar ativos do AEM Assets no Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Publicar ativos do Brand Portal no AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - Origem de ativos no Brand Portal
+* [Publicar ativos do Brand Portal no AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR) - Origem de ativos no Brand Portal
 * [Publicar pastas do AEM Assets no Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publicar coleções do AEM Assets no Brand Portal](../assets/brand-portal-publish-collection.md)
 * [Publicar predefinições, esquemas e aspectos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Publicar marcações no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-Consulte a [documentação do Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) para obter mais informações.
+Consulte [Documentação do Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) para obter mais informações.
 
 
 ## Atualizar configuração {#upgrade-integration-65}
 
-Execute as seguintes etapas na sequência listada para atualizar suas configurações existentes para o Console do desenvolvedor do Adobe:
+Execute as seguintes etapas na sequência listada para atualizar suas configurações existentes para o Adobe Developer Console:
 1. [Verificar trabalhos em execução](#verify-jobs)
 1. [Excluir configurações existentes](#delete-existing-configuration)
 1. [Criar configuração](#configure-new-integration-65)
@@ -366,15 +372,15 @@ Certifique-se de que nenhum trabalho de publicação esteja em execução na ins
 
 1. Faça logon na instância do autor do AEM Assets.
 
-1. No painel **Ferramentas** ![Ferramentas](assets/do-not-localize/tools.png), navegue até **[!UICONTROL Implantação]** > **[!UICONTROL Replicação de Implantação]**.
+1. No **Ferramentas** ![Ferramentas](assets/do-not-localize/tools.png) , navegue até **[!UICONTROL Implantação]** > **[!UICONTROL Replicação de implantação]**.
 
-1. Na página Replicação , clique em **[!UICONTROL Agentes no autor]**.
+1. Na página Replicação , clique em **[!UICONTROL Agentes do autor]**.
 
    ![](assets/test-integration2.png)
 
 1. Localize os agentes de replicação do seu locatário do Brand Portal.
 
-   Certifique-se de que a **Fila esteja inativa** para todos os agentes de replicação, nenhum trabalho de publicação está ativo.
+   Certifique-se de que **A fila está inativa** para todos os agentes de replicação, nenhum trabalho de publicação está ativo.
 
    ![](assets/test-integration3.png)
 
@@ -383,24 +389,24 @@ Certifique-se de que nenhum trabalho de publicação esteja em execução na ins
 Você deve executar a seguinte lista de verificação ao excluir as configurações existentes:
 * Excluir todos os quatro agentes de replicação
 * Excluir o serviço em nuvem Brand Portal
-* Excluir usuário MAC
+* Excluir usuário do MAC
 
 1. Faça logon na instância de autor do AEM Assets e abra o CRX Lite como administrador. O URL padrão é `http://localhost:4502/crx/de/index.jsp`.
 
-1. Navegue até `/etc/replications/agents.author` e exclua todos os quatro agentes de replicação do seu locatário do Brand Portal.
+1. Navegar para `/etc/replications/agents.author` e exclua todos os quatro agentes de replicação do seu locatário do Brand Portal.
 
    ![](assets/delete-replication-agent.png)
 
-1. Navegue até `/etc/cloudservices/mediaportal` e exclua a configuração do serviço de nuvem do Brand Portal.
+1. Navegar para `/etc/cloudservices/mediaportal` e exclua a configuração do serviço de nuvem da Brand Portal.
 
    ![](assets/delete-cloud-service.png)
 
-1. Navegue até `/home/users/mac` e exclua o **usuário MAC** do seu locatário do Brand Portal.
+1. Navegar para `/home/users/mac` e exclua o **Usuário do Mac** do seu locatário do Brand Portal.
 
    ![](assets/delete-mac-user.png)
 
 
-Agora você pode [criar configuração](#configure-new-integration-65) por meio do Console do desenvolvedor do Adobe na instância do autor do AEM 6.5.
+Agora você pode [criar configuração](#configure-new-integration-65) por meio do Adobe Developer Console na instância do autor do AEM 6.5.
 
 
 

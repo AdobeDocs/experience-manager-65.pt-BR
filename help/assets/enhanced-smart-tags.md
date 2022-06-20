@@ -5,14 +5,20 @@ contentOwner: AG
 feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: fbb27348df0b9d5f93d186acbce45fcf88197c5e
+source-git-commit: dd1e08bee03a6c7b07b32b0fb929d02dad467744
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 0%
+source-wordcount: '1579'
+ht-degree: 1%
 
 ---
 
 # Entender, aplicar e preparar tags inteligentes {#enhanced-smart-tags}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
+| AEM 6.5 | Este artigo |
+| AEM 6.4 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html?lang=en) |
 
 As organizações que lidam com ativos digitais cada vez mais usam um vocabulário controlado por taxonomia em metadados de ativos. Basicamente, inclui uma lista de palavras-chave que funcionários, parceiros e clientes costumam usar para consultar e pesquisar ativos digitais de uma classe específica. Marcar ativos com um vocabulário controlado por taxonomia garante que os ativos sejam facilmente identificados e recuperados.
 
@@ -26,7 +32,7 @@ Depois que uma tag é treinada e pronta, o serviço agora pode aplicar essas tag
 
 Em segundo plano, o Serviço de conteúdo inteligente usa a estrutura da Adobe Sensei AI para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é então usada para aplicar tags relevantes em um conjunto diferente de ativos.
 
-O Serviço de conteúdo inteligente é um serviço em nuvem hospedado em [!DNL Adobe Developer Console]. Para usá-lo em [!DNL Adobe Experience Manager], o administrador do sistema deve integrar sua implantação [!DNL Experience Manager] com [!DNL Adobe Developer Console].
+O Serviço de Conteúdo Inteligente é um serviço em nuvem hospedado em [!DNL Adobe Developer Console]. Para usá-lo em [!DNL Adobe Experience Manager], o administrador do sistema deve integrar o [!DNL Experience Manager] implantação com [!DNL Adobe Developer Console].
 
 Em resumo, estas são as principais etapas para usar o Serviço de conteúdo inteligente:
 
@@ -43,7 +49,7 @@ Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte para cri
 
 * Uma conta da Adobe ID com privilégios de administrador para a organização.
 * Ative o serviço de Conteúdo Inteligente para sua organização.
-* Para adicionar o Pacote Base dos Serviços de Conteúdo Inteligente a uma implantação, licencie o [!DNL Adobe Experience Manager Sites] Pacote Base e o [!DNL Assets] complemento.
+* Para adicionar Pacote Base de Serviços de Conteúdo Inteligente a uma implantação, licencie [!DNL Adobe Experience Manager Sites] Pacote básico e [!DNL Assets] complemento.
 
 O serviço aplica Tags inteligentes a ativos dos seguintes tipos MIME:
 
@@ -76,15 +82,15 @@ O serviço aplica Tags inteligentes a representações de ativos dos seguintes t
 
 O Serviço de conteúdo inteligente está disponível para compra como um complemento para [!DNL Experience Manager]. Após a compra, um email é enviado ao administrador da organização com um link para [!DNL Adobe I/O].
 
-O administrador pode seguir o link para integrar o Serviço de conteúdo inteligente com [!DNL Experience Manager]. Para integrar o serviço a [!DNL Experience Manager Assets], consulte [Configurar tags inteligentes](config-smart-tagging.md).
+O administrador pode seguir o link para integrar o Serviço de conteúdo inteligente com o [!DNL Experience Manager]. Para integrar o serviço ao [!DNL Experience Manager Assets], consulte [Configurar tags inteligentes](config-smart-tagging.md).
 
-O processo de integração é concluído quando o administrador configura o serviço e adiciona usuários em [!DNL Experience Manager].
+O processo de integração é concluído quando o administrador configura o serviço e adiciona usuários no [!DNL Experience Manager].
 
 ## Revisar ativos e tags {#reviewing-assets-and-tags}
 
 Depois que estiver integrado, a primeira coisa que você deseja fazer é identificar um conjunto de tags que descreva melhor essas imagens no contexto de sua empresa.
 
-Em seguida, revise as imagens para identificar um conjunto de imagens que melhor representam seu produto para um requisito específico de negócios. Certifique-se de que os ativos em seu conjunto preparado estejam em conformidade com [Diretrizes de treinamento do Serviço de conteúdo inteligente](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
+Em seguida, revise as imagens para identificar um conjunto de imagens que melhor representam seu produto para um requisito específico de negócios. Certifique-se de que os ativos em seu conjunto preparado estejam em conformidade com o [Diretrizes de treinamento do Serviço de conteúdo inteligente](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
 
 Adicione os ativos a uma pasta e aplique as tags a cada ativo da página de propriedades. Em seguida, execute o workflow de treinamento nesta pasta. O conjunto preparado de ativos permite que o Serviço de conteúdo inteligente treine efetivamente mais ativos usando suas definições de taxonomia.
 
@@ -95,11 +101,11 @@ Adicione os ativos a uma pasta e aplique as tags a cada ativo da página de prop
 >1. Ao treinar o Serviço de conteúdo inteligente pela primeira vez, o Adobe recomenda treiná-lo em pelo menos duas tags distintas.
 
 
-## Entender os resultados da pesquisa [!DNL Experience Manager] com tags inteligentes {#understandsearch}
+## Entender [!DNL Experience Manager] resultados de pesquisa com tags inteligentes {#understandsearch}
 
-Por padrão, a pesquisa [!DNL Experience Manager] combina os termos de pesquisa com uma cláusula `AND`. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma cláusula `OR` extra para localizar qualquer um dos termos de pesquisa relacionados às tags inteligentes. Por exemplo, considere pesquisar por `woman running`. Os ativos com apenas `woman` ou apenas `running` palavra-chave nos metadados não aparecem nos resultados da pesquisa por padrão. No entanto, um ativo marcado com `woman` ou `running` usando tags inteligentes aparece em tal query de pesquisa. Então os resultados da pesquisa são uma combinação de...
+Por padrão, [!DNL Experience Manager] a pesquisa combina os termos de pesquisa com um `AND` cláusula. O uso de tags inteligentes não altera esse comportamento padrão. O uso de tags inteligentes adiciona uma `OR` para localizar qualquer um dos termos de pesquisa relacionados às tags inteligentes. Por exemplo, considere pesquisar por `woman running`. Ativos com apenas `woman` ou apenas `running` palavras-chave nos metadados não aparecem nos resultados da pesquisa por padrão. No entanto, um ativo marcado com `woman` ou `running` o uso de tags inteligentes é exibido em tal query de pesquisa. Então os resultados da pesquisa são uma combinação de...
 
-* Ativos com palavras-chave `woman` e `running` nos metadados.
+* Ativos com `woman` e `running` palavras-chave nos metadados.
 
 * Ativos marcados com tags inteligentes com qualquer uma das palavras-chave.
 
@@ -107,11 +113,11 @@ Os resultados da pesquisa que correspondem a todos os termos de pesquisa nos cam
 
 1. Corresponde a `woman running` nos vários campos de metadados.
 1. Corresponde a `woman running` em tags inteligentes.
-1. Corresponde a `woman` ou de `running` em tags inteligentes.
+1. Corresponde a `woman` ou `running` em tags inteligentes.
 
 >[!CAUTION]
 >
->Se a indexação do Lucene for feita a partir de [!DNL Adobe Experience Manager], a pesquisa baseada em tags inteligentes não funcionará conforme esperado.
+>Se a indexação do Lucene for feita fora de [!DNL Adobe Experience Manager], a pesquisa baseada em tags inteligentes não funciona conforme o esperado.
 
 ## Adicionar tags automaticamente aos ativos {#tagging-assets-automatically}
 
@@ -125,7 +131,7 @@ Você pode executar o fluxo de trabalho de marcação periodicamente ou sempre q
 
 ### Marcação periódica {#periodic-tagging}
 
-Você pode permitir que o Serviço de conteúdo inteligente marque periodicamente ativos em uma pasta. Abra a página de propriedades da pasta de ativos, selecione **[!UICONTROL Ativar tags inteligentes]** na guia **[!UICONTROL Detalhes]** e salve as alterações.
+Você pode permitir que o Serviço de conteúdo inteligente marque periodicamente ativos em uma pasta. Abra a página de propriedades da pasta de ativos, selecione **[!UICONTROL Ativar Tags inteligentes]** nos termos do **[!UICONTROL Detalhes]** e salve as alterações.
 
 Quando essa opção é selecionada para uma pasta, o Serviço de conteúdo inteligente insere tags automaticamente nos ativos da pasta. Por padrão, o fluxo de trabalho de marcação é executado todos os dias às 12:00 AM.
 
@@ -139,12 +145,12 @@ Você pode acionar o fluxo de trabalho de marcação no console do fluxo de trab
 
 #### Adicionar tags aos ativos do console do fluxo de trabalho {#tagging-assets-from-the-workflow-console}
 
-1. Na interface [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
-1. Na página **[!UICONTROL Modelos de fluxo de trabalho]**, selecione o fluxo de trabalho **[!UICONTROL Ativos de tags inteligentes do DAM]** e clique em **[!UICONTROL Iniciar fluxo de trabalho]** na barra de ferramentas.
+1. Em [!DNL Experience Manager] interface, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
+1. No **[!UICONTROL Modelos de fluxo de trabalho]** selecione o **[!UICONTROL Ativos de tags inteligentes do DAM]** e clique em **[!UICONTROL Iniciar fluxo de trabalho]** na barra de ferramentas.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. Na caixa de diálogo **[!UICONTROL Executar fluxo de trabalho]**, navegue até a pasta de carga que contém ativos nos quais você deseja aplicar suas tags automaticamente.
+1. No **[!UICONTROL Executar fluxo de trabalho]** navegue até a pasta de payload que contém ativos nos quais deseja aplicar as tags automaticamente.
 1. Especifique um título para o fluxo de trabalho e um comentário opcional. Clique em **[!UICONTROL Executar]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
@@ -153,13 +159,13 @@ Você pode acionar o fluxo de trabalho de marcação no console do fluxo de trab
 
 #### Marcar ativos na linha do tempo {#tagging-assets-from-the-timeline}
 
-1. Na interface do usuário [!DNL Assets], selecione a pasta que contém ativos ou ativos específicos aos quais deseja aplicar tags inteligentes.
-1. No canto superior esquerdo, abra a **[!UICONTROL Linha do tempo]**.
+1. No [!DNL Assets] na interface do usuário, selecione a pasta que contém ativos ou ativos específicos à qual deseja aplicar tags inteligentes.
+1. No canto superior esquerdo, abra o **[!UICONTROL Linha do tempo]**.
 1. Abra as ações na parte inferior da barra lateral esquerda e clique em **[!UICONTROL Iniciar fluxo de trabalho]**.
 
    ![start_workflow](assets/start_workflow.png)
 
-1. Selecione o fluxo de trabalho **[!UICONTROL Ativos de tags inteligentes do DAM]** e especifique um título para o fluxo de trabalho.
+1. Selecione o **[!UICONTROL Ativos de tag inteligente DAM]** e especifique um título para o fluxo de trabalho.
 1. Clique em **[!UICONTROL Iniciar]**. O fluxo de trabalho aplica tags nos ativos. para verificar se o Serviço de conteúdo inteligente marcou seus ativos corretamente, navegue até a pasta de ativos e revise as tags.
 
 >[!NOTE]
@@ -177,10 +183,10 @@ Também é possível atribuir uma classificação mais alta a uma tag para aumen
 1. Na caixa de pesquisa, procure ativos com base em uma tag como palavra-chave.
 1. Para identificar uma imagem que não seja relevante para sua pesquisa, analise os resultados da pesquisa.
 1. Selecione a imagem e clique em **[!UICONTROL Gerenciar tags]** na barra de ferramentas.
-1. Na página **[!UICONTROL Gerenciar tags]**, revise as tags. Se não quiser que a imagem seja pesquisada com base em uma tag específica, selecione a tag e clique em **[!UICONTROL Delete]** na barra de ferramentas. Como alternativa, clique no símbolo `x` que aparece ao lado de uma tag.
-1. Como opção, para atribuir uma classificação mais alta a uma tag, selecione a tag e clique em **[!UICONTROL Promover]** na barra de ferramentas. A tag promovida é movida para a seção **[!UICONTROL Tags]**.
-1. Clique em **[!UICONTROL Salvar]** e clique em **[!UICONTROL OK]**
-1. Navegue até a página **[!UICONTROL Propriedades]** da imagem. Observe que a tag promovida tem mais relevância e é exibida anteriormente nos resultados da pesquisa.
+1. No **[!UICONTROL Gerenciar tags]** consulte as tags. Se você não quiser que a imagem seja pesquisada com base em uma tag específica, selecione a tag e clique em **[!UICONTROL Excluir]** na barra de ferramentas. Como alternativa, clique em `x` símbolo que aparece ao lado de uma tag.
+1. Como opção, para atribuir uma classificação mais alta a uma tag, selecione a tag e clique em **[!UICONTROL Promover]** na barra de ferramentas. A tag promovida é movida para a variável **[!UICONTROL Tags]** seção.
+1. Clique em **[!UICONTROL Salvar]** e, em seguida, clique em **[!UICONTROL OK]**
+1. Navegue até o **[!UICONTROL Propriedades]** página da imagem. Observe que a tag promovida tem mais relevância e é exibida anteriormente nos resultados da pesquisa.
 
 ## Dicas e limitações {#tips-best-practices-limitations}
 

@@ -1,19 +1,24 @@
 ---
-title: Visualizar ativos 3D
+title: Pré-visualizar ativos 3D
 description: Saiba como visualizar ativos 3D no Experience Manager.
 contentOwner: Rick Brough
 docset: aem65
 feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: 32e637463a2f68a48b39c5dea9cc3cc4d1596d9b
+source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 10%
+source-wordcount: '580'
+ht-degree: 12%
 
 ---
 
 # Visualizar ativos 3D no Adobe Experience Manager {#previewing-3d-assets-aem}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
+| AEM 6.5 | Este artigo |
 
 O Experience Manager oferece suporte para upload, delivery e visualização interativa de ativos 3D como parte do processo de criação.
 
