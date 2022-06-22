@@ -11,10 +11,10 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 9%
+source-wordcount: '1946'
+ht-degree: 8%
 
 ---
 
@@ -31,6 +31,14 @@ Os conjuntos de rotação são designados por um banner com a palavra **[!UICONT
 >[!NOTE]
 >
 >Para obter informações sobre a interface do usuário do Assets, consulte [Gerenciar ativos](/help/assets/manage-assets.md).
+
+Quando você cria um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e aplica o seguinte limite:
+
+| Tipo de limite | Prática recomendada | Limite implementado |
+| --- | --- | --- |
+| Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |
+
+Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
 ## Início rápido: Conjuntos de rotação {#quick-start-spin-sets}
 
@@ -113,6 +121,14 @@ Esta seção descreve como criar um Conjunto de rotação no Experience Manager.
 >[!NOTE]
 >
 >A ordem em que as imagens aparecem em um conjunto de rotação é importante. Certifique-se de ordená-los para que o giro seja uma visualização suave de 360°.
+
+Quando você cria um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e aplica o seguinte limite:
+
+| Tipo de limite | Prática recomendada | Limite implementado |
+| --- | --- | --- |
+| Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |
+
+Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
 **Para criar um Conjunto de rotação:**
 

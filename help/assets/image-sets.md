@@ -11,9 +11,9 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2194'
 ht-degree: 7%
 
 ---
@@ -35,6 +35,15 @@ Por exemplo, suponha que você deseja apresentar imagens de maiúsculas com dife
 >[!NOTE]
 >
 >Para obter informações sobre a interface do usuário do Assets, consulte [Gerenciar ativos](/help/assets/manage-assets.md).
+
+Ao criar um Conjunto de imagens, o Adobe recomenda as seguintes práticas recomendadas e aplica os seguintes limites:
+
+| Ativo - Tipo de limite | Prática recomendada | Limite implementado | Alterações no limite de 31 de dezembro de 2022 |
+| --- | --- | --- | --- |
+| **Conjunto de imagens** - Número de ativos duplicados por conjunto | Sem duplicatas | 100 | 20 |
+| **Conjunto de imagens** - Número máximo de imagens por conjunto | 5 a 10 imagens por conjunto | 1000 |
+
+Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
 ## Início rápido: Conjuntos de imagens {#quick-start-image-sets}
 
@@ -130,6 +139,15 @@ Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em or
 >[!NOTE]
 >
 >Os conjuntos de imagens não são compatíveis com ativos com &quot;&quot; (vírgula) no nome do arquivo.
+
+Ao criar um Conjunto de imagens, o Adobe recomenda as seguintes práticas recomendadas e aplica os seguintes limites:
+
+| Ativo - Tipo de limite | Prática recomendada | Limite implementado | Alterações no limite de 31 de dezembro de 2022 |
+| --- | --- | --- | --- |
+| **Conjunto de imagens** - Número de ativos duplicados por conjunto | Sem duplicatas | 100 | 20º |
+| **Conjunto de imagens** - Número máximo de imagens por conjunto | 5 a 10 imagens por conjunto | 1000 |
+
+Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
 **Para criar Conjuntos de Imagens:**
 
