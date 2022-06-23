@@ -11,9 +11,9 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: '2184'
 ht-degree: 7%
 
 ---
@@ -38,10 +38,10 @@ Por exemplo, suponha que você deseja apresentar imagens de maiúsculas com dife
 
 Ao criar um Conjunto de imagens, o Adobe recomenda as seguintes práticas recomendadas e aplica os seguintes limites:
 
-| Ativo - Tipo de limite | Prática recomendada | Limite implementado | Alterações no limite de 31 de dezembro de 2022 |
-| --- | --- | --- | --- |
-| **Conjunto de imagens** - Número de ativos duplicados por conjunto | Sem duplicatas | 100 | 20 |
-| **Conjunto de imagens** - Número máximo de imagens por conjunto | 5 a 10 imagens por conjunto | 1000 |
+| Tipo de limite | Prática recomendada | Limite imposto |
+| --- | --- | --- |
+| Número de ativos duplicados por conjunto | Sem duplicatas | 20 |
+| Número máximo de imagens por conjunto | 5 a 10 imagens por conjunto | 1000 |
 
 Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
@@ -57,7 +57,7 @@ Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
 <!--    Adobe Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
-1. [Criar conjuntos de imagens](#creating-image-sets).
+1. [Criar um conjunto de imagens](#creating-image-sets).
 
    Em Conjuntos de imagens, os usuários selecionam imagens em miniatura no Visualizador do Conjunto de imagens.
 
@@ -78,12 +78,12 @@ Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
    Navegar para **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]** se desejar criar ou editar predefinições do visualizador.
 
-1. (Opcional) [Exibir conjuntos de imagens](/help/assets/image-sets.md#viewing-image-sets) que foram criadas usando predefinições de conjunto de lotes.
+1. (Opcional) [Exibir um conjunto de imagens](/help/assets/image-sets.md#viewing-image-sets) que foram criadas usando predefinições de conjunto de lotes.
 1. [Visualizar conjuntos de imagens](/help/assets/previewing-assets.md).
 
    Selecione o Conjunto de imagens e você pode visualizá-lo. Selecione os ícones de miniatura para poder examinar seu Conjunto de imagens no Visualizador selecionado. Você pode escolher visualizadores diferentes do **[!UICONTROL Visualizadores]** , disponível no menu suspenso do painel à esquerda.
 
-1. [Publicar conjuntos de imagens](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Publicar um conjunto de imagens](/help/assets/publishing-dynamicmedia-assets.md).
 
    A publicação de um conjunto de imagens ativa o URL e o código incorporado. Além disso, você deve [publicar qualquer predefinição do visualizador personalizado](/help/assets/managing-viewer-presets.md) que você criou. As predefinições do visualizador prontas para uso já estão publicadas.
 
@@ -125,7 +125,7 @@ Como os usuários podem ampliar imagens em Conjuntos de imagens, verifique se as
 >* Miniatura de cor preta, marrom e verde.
 
 
-## Criar conjuntos de imagens {#creating-image-sets}
+## Criar um conjunto de imagens {#creating-image-sets}
 
 Você pode criar Conjuntos de imagens por meio da interface do usuário ou da API. Esta seção descreve como criar Conjuntos de imagens na interface do usuário do .
 
@@ -142,14 +142,14 @@ Ao adicionar ativos ao seu conjunto, eles são automaticamente adicionados em or
 
 Ao criar um Conjunto de imagens, o Adobe recomenda as seguintes práticas recomendadas e aplica os seguintes limites:
 
-| Ativo - Tipo de limite | Prática recomendada | Limite implementado | Alterações no limite de 31 de dezembro de 2022 |
-| --- | --- | --- | --- |
-| **Conjunto de imagens** - Número de ativos duplicados por conjunto | Sem duplicatas | 100 | 20º |
-| **Conjunto de imagens** - Número máximo de imagens por conjunto | 5 a 10 imagens por conjunto | 1000 |
+| Tipo de limite | Prática recomendada | Limite imposto |
+| --- | --- | --- |
+| Número de ativos duplicados por conjunto | Sem duplicatas | 20º |
+| Número máximo de imagens por conjunto | 5 a 10 imagens por conjunto | 1000 |
 
 Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
-**Para criar Conjuntos de Imagens:**
+**Para criar um conjunto de imagens:**
 
 1. No Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global e, em seguida, acesse **[!UICONTROL Navegação]** > **[!UICONTROL Ativos]**. Navegue até o local em que deseja criar um Conjunto de imagens, em seguida, vá para **[!UICONTROL Criar]** > **[!UICONTROL Conjunto de imagens]** para abrir a página Editor do conjunto de imagens.
 
@@ -193,7 +193,7 @@ Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
 1. Selecione **[!UICONTROL Salvar]**. O Conjunto de imagens recém-criado é exibido na pasta em que você o criou.
 
-## Exibir conjuntos de imagens {#viewing-image-sets}
+## Exibir um conjunto de imagens {#viewing-image-sets}
 
 Você pode criar conjuntos de imagens na interface do usuário ou automaticamente usando [predefinições do conjunto de lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
@@ -221,7 +221,7 @@ No entanto, os conjuntos criados usando predefinições de conjunto de lotes, *n
 >
 >Você pode exibir os conjuntos por meio da interface do usuário, conforme descrito em [Editar conjuntos de imagens](#editing-image-sets).
 
-## Editar conjuntos de imagens {#editing-image-sets}
+## Editar um conjunto de imagens {#editing-image-sets}
 
 Você pode executar várias tarefas de edição em Conjuntos de imagens, como as seguintes:
 
@@ -231,7 +231,7 @@ Você pode executar várias tarefas de edição em Conjuntos de imagens, como as
 * Aplicar predefinições do visualizador.
 * Exclua o conjunto de imagens.
 
-**Para editar conjuntos de imagens:**
+**Para editar um conjunto de imagens:**
 
 1. Siga um destes procedimentos:
 
@@ -259,10 +259,10 @@ Você pode executar várias tarefas de edição em Conjuntos de imagens, como as
 
 1. Selecionar **[!UICONTROL Salvar]** quando terminar a edição.
 
-## Visualizar conjuntos de imagens {#previewing-image-sets}
+## Visualizar um conjunto de imagens {#previewing-image-sets}
 
 Consulte [Visualização de ativos](/help/assets/previewing-assets.md).
 
-## Publicar conjuntos de imagens {#publishing-image-sets}
+## Publicar um conjunto de imagens {#publishing-image-sets}
 
 Consulte [Publicar ativos](/help/assets/publishing-dynamicmedia-assets.md).

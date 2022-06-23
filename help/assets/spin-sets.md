@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1952'
 ht-degree: 8%
 
 ---
@@ -34,7 +34,7 @@ Os conjuntos de rotação são designados por um banner com a palavra **[!UICONT
 
 Quando você cria um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e aplica o seguinte limite:
 
-| Tipo de limite | Prática recomendada | Limite implementado |
+| Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
 | Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |
 
@@ -50,7 +50,7 @@ Para ativar e executar rapidamente com Conjuntos de rotação, siga estas etapas
 
    Consulte [Dynamic Media - Formatos de imagem rasterizada compatíveis](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) para obter uma lista de formatos suportados pelos Conjuntos de rotação.
 
-1. [Criar conjuntos de rotação](#creating-spin-sets).
+1. [Criar um conjunto de rotação](#creating-spin-sets).
 
    Para criar um Conjunto de rotação, selecione **[!UICONTROL Criar > Conjunto de rotação]** e nomeie o conjunto, escolha os ativos e escolha a ordem em que as imagens serão exibidas.
 
@@ -68,15 +68,15 @@ Para ativar e executar rapidamente com Conjuntos de rotação, siga estas etapas
 
    Consulte [Adicionar e editar predefinições do visualizador](/help/assets/managing-viewer-presets.md).
 
-1. [Exibir conjuntos de rotação](#viewing-spin-sets).
+1. [Exibir um conjunto de rotação](#viewing-spin-sets).
 
    Você pode exibir e acessar conjuntos criados por meio de predefinições de conjuntos em lotes de três maneiras diferentes. (Conjuntos criados usando predefinições de conjunto de lotes, *not* aparecem na interface do usuário.)
 
-1. [Visualizar conjuntos de rotação](/help/assets/previewing-assets.md).
+1. [Visualizar um conjunto de rotação](/help/assets/previewing-assets.md).
 
    Selecione o Conjunto de rotação e você pode visualizá-lo. Gire o conjunto de rotação. Você pode escolher visualizadores diferentes do **[!UICONTROL Visualizadores]** , disponível no menu suspenso do painel à esquerda.
 
-1. [Publicar conjuntos de rotação](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Publicar um conjunto de rotação](/help/assets/publishing-dynamicmedia-assets.md).
 
    A publicação de um Conjunto de rotação ativa o URL e a cadeia de caracteres de inserção. Além disso, você deve [publicar a predefinição do visualizador](/help/assets/managing-viewer-presets.md).
 
@@ -88,9 +88,9 @@ Para ativar e executar rapidamente com Conjuntos de rotação, siga estas etapas
 
    Consulte [Vincular um conjunto de rotação a uma página da Web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incorporar o visualizador de vídeo ou imagem](/help/assets/embed-code.md).
 
-Se necessário, é possível [editar Conjuntos de rotação](#editing-spin-sets). Além disso, você pode visualizar e modificar [Propriedades do conjunto de rotação](/help/assets/manage-assets.md#editing-properties).
+Se necessário, é possível [editar um conjunto de rotação](#editing-spin-sets). Além disso, você pode visualizar e modificar [Propriedades do conjunto de rotação](/help/assets/manage-assets.md#editing-properties).
 
-## Fazer upload de ativos para conjuntos de rotação {#uploading-assets-for-spin-sets}
+## Fazer upload de ativos para um conjunto de rotação {#uploading-assets-for-spin-sets}
 
 No mínimo, você precisa de 8 a 12 capturas de um item para um Conjunto de rotação unidimensional e 16 a 24 para um Conjunto de rotação bidimensional. As fotos devem ser tiradas regularmente para dar a impressão de que o item está girando e sendo virado. Por exemplo, se um Conjunto de rotação unidimensional incluir 12 capturas, gire o item 30° (360/12) para cada disparo.
 
@@ -124,7 +124,7 @@ Esta seção descreve como criar um Conjunto de rotação no Experience Manager.
 
 Quando você cria um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e aplica o seguinte limite:
 
-| Tipo de limite | Prática recomendada | Limite implementado |
+| Tipo de limite | Prática recomendada | Imposição limitada |
 | --- | --- | --- |
 | Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |
 
