@@ -4,7 +4,7 @@ description: Saiba como executar uma atualização no local.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 64c9296554c55b539145dd59a14b2255b1750e47
+source-git-commit: 6d2b7e341dcdedf3c000b9fb0ecd21722bdf2a27
 workflow-type: tm+mt
 source-wordcount: '1256'
 ht-degree: 0%
@@ -187,7 +187,7 @@ Observe que iniciar AEM a partir do script de início não iniciará a atualiza�
 1. Modifique o comando substituindo o caminho para o jar existente ( `crx-quickstart/app/aem-quickstart*.jar` neste caso) com o novo jar que é um irmão da `crx-quickstart` pasta. Usando nosso comando anterior como exemplo, nosso comando seria:
 
    ```shell
-   /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.5.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.5.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    Isso garantirá que todas as configurações de memória adequadas, modos de execução personalizados e outros parâmetros ambientais sejam aplicados para a atualização. Após a conclusão da atualização, a instância pode ser iniciada a partir do script de início em inicializações futuras.
