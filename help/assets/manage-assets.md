@@ -6,9 +6,9 @@ role: User
 feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: dabd27389c9fc5f30589d554ba4da8fce041dd4b
+source-git-commit: d43bd3ae17c81c5ed8eed2568e085c29fb924326
 workflow-type: tm+mt
-source-wordcount: '9974'
+source-wordcount: '9980'
 ht-degree: 4%
 
 ---
@@ -210,7 +210,7 @@ Para cancelar um trabalho de upload em andamento, clique em **[!UICONTROL Cancel
 |  | Opções de edição de imagens | É possível preservar as máscaras de recorte em imagens e escolher um perfil de cor.<br> Consulte [Configuração de opções para edições de imagem no upload](#setting-image-editing-options-at-upload). |
 |  | Opções de postscript | Você pode rasterizar arquivos do PostScript®, recortar arquivos, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cores.<br> Consulte [Definição das opções de upload do PostScript e do Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Opções do Photoshop | Você pode criar modelos a partir de arquivos Adobe® Photoshop®, manter camadas, especificar como as camadas são nomeadas, extrair texto e especificar como as imagens são ancoradas em modelos.<br> Não há suporte para modelos em [!DNL Experience Manager].<br> Consulte [Configuração das opções de upload do Photoshop](#setting-photoshop-upload-options). |
-|  | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras de pesquisa e links, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cores.<br>Os catálogos eletrônicos não são compatíveis com o [!DNL Experience Manager]. <br> Consulte [Configuração das opções de upload do PDF](#setting-pdf-upload-options).<br>**Observação**: O número máximo de páginas para um PDF a ser considerado para extração é de 5000 para novos uploads. Esse limite será alterado para 100 páginas em 31 de dezembro de 2022. Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md). |
+|  | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras de pesquisa e links, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cores.<br>Os catálogos eletrônicos não são compatíveis com o [!DNL Experience Manager]. <br> Consulte [Configuração das opções de upload do PDF](#setting-pdf-upload-options).<br>**Observação**: O número máximo de páginas para um PDF a ser considerado para extração é de 5000 para novos uploads. Esse limite será alterado para 100 páginas (para todos os PDF) em 31 de dezembro de 2022. Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md). |
 |  | Opções do Illustrator | Você pode rasterizar arquivos Adobe Illustrator®, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cores.<br> Consulte [Definição das opções de upload do PostScript e do Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Opções de EVideo | Você pode transcodificar um arquivo de vídeo escolhendo uma Predefinição de vídeo.<br> Consulte [Configuração das opções de upload do eVideo](#setting-evideo-upload-options). |
 |  | Predefinições de conjunto de lotes | Para criar um Conjunto de imagens ou Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. Você pode selecionar mais de uma predefinição. Você cria as predefinições na página Configuração do aplicativo/Predefinições do conjunto de lotes do Dynamic Media Classic.<br> Consulte [Configuração das predefinições do conjunto de lotes para gerar automaticamente conjuntos de imagens e conjuntos de rotação](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) para saber mais sobre a criação de predefinições de conjuntos de lotes.<br> Consulte [Definir predefinições do conjunto de lotes no upload](#setting-batch-set-presets-at-upload). |
@@ -284,7 +284,7 @@ Use o [!UICONTROL Opções de corte] e [!UICONTROL Opções de perfil de cores],
 
 Ao fazer upload de um arquivo PDF, você pode formatá-lo de várias maneiras. Você recorta suas páginas, extrai palavras de pesquisa, digita uma resolução de pixels por polegada e escolhe um espaço de cores. Os arquivos PDF geralmente contêm uma margem de aparação, marcas de corte, marcas de registro e outras marcas de impressora. Você pode recortar essas marcas das laterais das páginas ao carregar um arquivo PDF.
 
-O número máximo de páginas para um PDF a ser considerado para extração é de 5000 para novos uploads. Esse limite será alterado para 100 páginas em 31 de dezembro de 2022. Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
+O número máximo de páginas para um PDF a ser considerado para extração é de 5000 para novos uploads. Esse limite será alterado para 100 páginas (para todos os PDF) em 31 de dezembro de 2022. Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
 >[!NOTE]
 >
