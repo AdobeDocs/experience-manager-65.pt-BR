@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: e3bc820dd9bfce95cdc0c8c58c075893a1f0a625
+source-git-commit: de7b1d2d0f3863f9554b346204c18cc57d4bf814
 workflow-type: tm+mt
 source-wordcount: '7575'
 ht-degree: 0%
@@ -288,7 +288,7 @@ A etapa Assinar documento permite usar o Adobe Sign para assinar documentos. A e
 * **Selecione Caminho do anexo de entrada usando:** Caminho dos anexos. Esses anexos estão incluídos no Documento de assinatura. Você pode manter os anexos em um local relativo à carga, especificar um caminho absoluto dos anexos ou recuperar anexos armazenados em uma variável do tipo de dados Documento.
 
 
-Se você especificar o caminho de uma pasta, por exemplo, anexos, todos os arquivos diretamente disponíveis na pasta serão anexados ao Documento de assinatura. Se algum arquivo estiver disponível nas pastas diretamente disponíveis no caminho de anexo especificado, os arquivos serão incluídos no Documento de assinatura como anexos. Se houver pastas em pastas diretamente disponíveis, elas serão ignoradas.
+   Se você especificar o caminho de uma pasta, por exemplo, anexos, todos os arquivos diretamente disponíveis na pasta serão anexados ao Documento de assinatura. Se algum arquivo estiver disponível nas pastas diretamente disponíveis no caminho de anexo especificado, os arquivos serão incluídos no Documento de assinatura como anexos. Se houver pastas em pastas diretamente disponíveis, elas serão ignoradas.
 
 * **Dias até o prazo:** Um documento é marcado como vencido (prazo vencido) depois que não há atividade na tarefa para o número de dias especificado na **Dias até o final do prazo** campo. O número de dias é contado depois que o documento é atribuído a um usuário para assinatura.
 * **Frequência de email do lembrete:** Você pode enviar um email de lembrete diariamente ou semanalmente. A semana é contada a partir do dia em que o documento foi atribuído a um usuário para assinatura.
