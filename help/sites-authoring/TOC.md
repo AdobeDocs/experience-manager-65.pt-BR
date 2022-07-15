@@ -68,8 +68,8 @@ ht-degree: 87%
    + [Trabalhar com fluxos de trabalho de projeto](projects-with-workflows.md)
 + Inicializações {#launches}
    + [Lançamentos](launches.md)
-   + [Criação de inicializações](launches-creating.md)
-   + [Edição de inicializações](launches-editing.md)
+   + [Criação de Lançamentos](launches-creating.md)
+   + [Edição de Lançamentos](launches-editing.md)
    + [Promoção de inicializações](launches-promoting.md)
 + Fluxos de trabalho {#workflows}
    + [Trabalhar com fluxos de trabalho](workflows.md)

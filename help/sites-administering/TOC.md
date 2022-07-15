@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: a1821ab210b3735ca5b59b075659ff30d5872b8e
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 29%
+ht-degree: 35%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 29%
    + [Visão geral do console da Live Copy](msm-livecopy-overview.md)
    + [Configurar a sincronização da Live Copy](msm-sync.md)
    + [Criação e sincronização de Live Copies](msm-livecopy.md)
-   + [Conflitos de implementação do MSM](msm-rollout-conflicts.md)
+   + [Conflitos de implantação do MSM](msm-rollout-conflicts.md)
    + [Solução de problemas e perguntas frequentes do MSM](troubleshoot-msm.md)
    + [Práticas recomendadas do MSM](msm-best-practices.md)
    + [Tradução de conteúdo para sites multilíngues](translation.md)
@@ -84,7 +84,7 @@ ht-degree: 29%
    + [Atenuando problemas de serialização no AEM](mitigating-serialization-issues.md)
    + [Sincronização de usuários](sync.md)
    + [Suporte a token encapsulado](encapsulated-token.md)
-   + [Logon único](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html)
+   + [Logon único](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html?lang=pt-BR)
    + [Como auditar operações de gerenciamento de usuários no AEM](audit-user-management-operations.md)
    + [SSL por padrão](ssl-by-default.md)
    + [Manipulador de autenticação SAML 2.0](saml-2-0-authenticationhandler.md)
@@ -115,9 +115,9 @@ ht-degree: 29%
    + [Integração com o Adobe Target](target.md)
    + [Integração ao Adobe Analytics](adobeanalytics.md)
    + [Conectar ao Adobe Analytics e Criar Frameworks](adobeanalytics-connect.md)
-   + [Configuração do rastreamento de link para o Adobe Analytics](adobeanalytics-link.md)
+   + [Configuração do rastreamento de links para o Adobe Analytics](adobeanalytics-link.md)
    + [Mapeamento de dados do componente com propriedades do Adobe Analytics](adobeanalytics-mapping.md)
-   + [Configuração do rastreamento de vídeo para Adobe Analytics](adobeanalytics-video.md)
+   + [Configuração do rastreamento de vídeo para o Adobe Analytics](adobeanalytics-video.md)
    + [Integração com o Adobe Analytics usando IMS](integration-analytics-ims.md)
    + [Perguntas frequentes sobre entrega de conteúdo HTTP2](scene7-http2faq.md)
    + [Solução de problemas da integração do Adobe Campaign](troubleshooting-campaignintegration.md)
@@ -145,7 +145,7 @@ ht-degree: 29%
    + [Configuração manual da integração com o Adobe Target](target-configuring.md)
    + [Pré-requisitos para integração com o Adobe Target](target-requirements.md)
    + [Integração com o Adobe Target usando IMS](integration-target-ims.md)
-   + [Classificações Adobe](adobeanalytics-classifications.md)
+   + [Classificações do Adobe](adobeanalytics-classifications.md)
    + [Integração com o Adobe Search &amp; Promote](search-and-promote.md)
    + [Integração de soluções](integration.md)
    + [Exportar fragmentos de experiência para o Adobe Target](experience-fragments-target.md)

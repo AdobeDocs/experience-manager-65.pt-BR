@@ -135,7 +135,7 @@ ht-degree: 49%
    + [Marque seus ativos com água](watermarking.md)
    + [Modelos de ativos](asset-templates.md)
 + Brand Portal {#brandportal}
-   + [Configurar o [!DNL Assets]  com o [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configurar o  [!DNL Assets]  com o  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicar ativos no  [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Publicar pastas em [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Publicar coleções no [!DNL Brand Portal]](brand-portal-publish-collection.md)

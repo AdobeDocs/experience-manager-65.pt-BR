@@ -37,7 +37,7 @@ ht-degree: 70%
       + [Alterar estilo de componentes da CIF](cif/customizing/style-cif-component.md)
       + [Personalizar componentes da CIF](cif/customizing/customize-cif-components.md)
       + [Usar seletores de catálogo da CIF](cif/customizing/use-cif-pickers.md)
-+ [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
++ [PWA Studio do Adobe Commerce](cif/pwa-studio/getting-started.md)
 + [Migração](cif/migration.md)
 + Notas de versão {#release-notes}
    + [2022](cif/release-notes/release-notes-2022.md)
