@@ -8,9 +8,9 @@ user-guide-title: Guia do Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
-source-git-commit: 91b012f8024350effc19613bcecfc42dee4130d9
+source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3778'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,6 @@ ht-degree: 5%
       + [Tutorial: Aplicar regras a campos de formulário adaptáveis l](using/apply-rules-to-adaptive-form-fields.md)
       + [Tutorial: Estilo do formulário adaptável](using/style-your-adaptive-form.md)
       + [Tutorial: Publicar o formulário adaptável](/help/forms/using/publish-your-adaptive-form.md)
-      + [Tutorial: Teste do formulário adaptável](/help/forms/using/testing-your-adaptive-form.md)
    + Tutorial: Criar sua primeira comunicação interativa {#create-first-interactive-communication}
       + [Tutorial: Criar sua primeira comunicação interativa](using/create-your-first-interactive-communication.md)
       + [Tutorial: Planejar a comunicação interativa](using/planning-interactive-communications.md)
@@ -175,7 +174,6 @@ ht-degree: 5%
    + [Suporte XFA em formulários adaptáveis baseados em XDP](using/xfa-api-supported-in-adaptive-form.md)
    + [Conceder acesso ao editor de regras para grupos de usuários selecionados](using/rule-editor-access-user-groups.md)
    + [Uso AEM fluxo de trabalho de tradução para localizar formulários adaptáveis e documentos de registro](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
-   + [Automatizar o teste de formulários adaptáveis](using/calvin.md)
    + [Construção de estilo para formulários adaptáveis](using/styling-constructs-adaptive-forms.md)
    + [Sincronização do Adaptive Forms com modelos de formulário XFA](using/synchronizing-adaptive-forms-xfa.md)
    + [Integrar o Adobe Sign ao AEM Forms](using/adobe-sign-integration-adaptive-forms.md)

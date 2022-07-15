@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 64ba9b1082e39552cd27e5616de2a35f7870270b
+source-git-commit: 0f1724cbb7ef4fec366fb8b63511a981b47b5429
 workflow-type: tm+mt
-source-wordcount: '4398'
+source-wordcount: '4322'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Além disso, veja algumas leituras recomendadas para práticas recomendadas gera
 
 Uma estrutura de projeto simplificada e padronizada pode reduzir significativamente os esforços de desenvolvimento e manutenção. O Apache Maven é uma ferramenta de código aberto recomendada para criar projetos AEM.
 
-* Usar o Apache Maven `aem-project-archetype` para criar e gerenciar a estrutura para AEM projeto. Ele cria a estrutura e os modelos recomendados para o seu projeto de AEM. Além disso, ele fornece sistemas de automação de compilação e controle de alterações para ajudar a gerenciar o projeto.
+* Usar o Apache Maven `aem-project-archetype` para criar e gerenciar a estrutura para AEM projeto. Ele cria a estrutura e os modelos recomendados para o projeto do AEM. Além disso, ele fornece sistemas de automação de compilação e controle de alterações para ajudar a gerenciar o projeto.
 
    * Use o maven `archetype:generate` para gerar a estrutura inicial.
    * Use maven `eclipse:eclipse` para gerar os arquivos de projeto do eclipse e importar o projeto para o eclipse.
@@ -134,7 +134,7 @@ O editor de regras fornece um editor visual e um editor de códigos para escreve
    * Além disso, é possível usar as seguintes propriedades de campo:
 
       * `field.value` para alterar o valor de um campo.
-      * f `ield.enabled` para ativar/desativar um campo.
+      * `field.enabled` para ativar/desativar um campo.
       * `field.visible` para alterar a visibilidade de um campo.
 
 * Os autores de formulários adaptativos podem precisar gravar o código JavaScript para criar a lógica comercial em um formulário. Embora o JavaScript seja eficiente e eficaz, é provável que possa comprometer as expectativas de segurança. Portanto, é necessário garantir que o autor do formulário seja uma pessoa confiável e que haja processos para revisar e aprovar o código JavaScript antes que um formulário seja colocado em produção. O administrador pode restringir o acesso ao editor de regras para grupos de usuários com base em sua função ou função. Consulte [Conceder acesso ao editor de regras para grupos de usuários selecionados](/help/forms/using/rule-editor-access-user-groups.md).
@@ -228,17 +228,6 @@ Um documento de registro (DoR) é uma versão PDF nivelada de um formulário ada
 * Explore e saiba mais sobre APIs do guideBridge
 
 Para obter mais informações, consulte [Plug-in do AEM Chrome - Formulário adaptável](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
-
-O SDK do Calvin é uma API de utilitário para os desenvolvedores do Adaptive Forms testarem o Adaptive Forms. O SDK do Calvin é criado sobre [Estrutura de teste do Hobbes.js](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html). Você pode usar a estrutura para testar o seguinte:
-
-* Experiência de representação de um formulário adaptável
-* Experiência de preenchimento prévio de um formulário adaptável
-* Enviar experiência de um formulário adaptável
-* Regras de expressão
-* Validações
-* Carregamento lento
-
-Para obter mais informações, consulte [Automatizar o teste de formulários adaptáveis](/help/forms/using/calvin.md).
 
 ### Validação de formulários adaptáveis no servidor AEM {#validating-adaptive-forms-on-aem-server}
 
