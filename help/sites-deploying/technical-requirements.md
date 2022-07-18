@@ -6,7 +6,7 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 3643534fa0f24a1c2ea00c35853a2671b156bf9a
+source-git-commit: a1e620103290f8c704f2b8782be495ab7aec5fe2
 workflow-type: tm+mt
 source-wordcount: '3329'
 ht-degree: 1%
@@ -190,7 +190,7 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 | **Linux, baseado na distribuição Red Hat** | A: Suportado `[1]` `[3]` |
 | Linux, baseado na distribuição Debian incl. Ubuntu | A: Suportado `[2]` |
 | Linux, baseado na distribuição SUSE | A: Suportado |
-| Microsoft Windows Server 2019 `[4]` | R: Apoio limitado a novos contratos |
+| Microsoft Windows Server 2019 `[4]` | R: Apoio limitado a novos contratos `[5]` |
 | Microsoft Windows Server 2016 `[4]` | R: Apoio limitado a novos contratos `[5]` |
 | Microsoft Windows Server 2012 R2 | Z: Não suportado |
 | Oracle Solaris 11 | Z: Não suportado |
