@@ -2,10 +2,10 @@
 title: Notas de versão do AEM Content and Commerce 2022
 description: Notas de versão do AEM Content and Commerce 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: f6a16e5744222600b3a1760efe3c61619160b6cd
+source-git-commit: 600a836ff7ae0be9fde107ff2828bb41e8eed98f
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 38%
+source-wordcount: '660'
+ht-degree: 34%
 
 ---
 
@@ -20,6 +20,26 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 | Complemento CIF | Mínimo: AEM 6.5.7, Magento 2.3.5 Esquemas GraphQL |
 | Componentes principais da CIF | [Requisitos do sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Arquétipo de projeto do AEM | [Requisitos do sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Data de lançamento: Junho de 2022
+
+| Componente | Versão | Detalhes |
+|:-------|:-----:|---------------------:|
+| Complemento CIF | 2022.06.xx.00 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.07.05.00.zip) |
+| Componentes principais da CIF | 2.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) |
+| Site de referência CIF Venia | 2022.7.2004 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.07.04) |
+
+### Novidades {#what-is-new-june}
+
+* O nome do modelo agora está visível no editor de Sites ao criar o modelo de catálogo de produtos
+
+* Várias melhorias nos Componentes principais da CIF
+
+### Correções de bugs {#bug-fixes-june}
+
+* Adicionar token de logon à busca de preços no lado do cliente
+
+* Componente de página incorreto no datalayer
 
 ## Data de lançamento: Maio de 2022
 
@@ -63,7 +83,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
    ![Atalho do editor de sites para o cockpit de produtos](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
-## Data de lançamento: Março de 2022
+## Data de lançamento: Fevereiro de 2022
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
