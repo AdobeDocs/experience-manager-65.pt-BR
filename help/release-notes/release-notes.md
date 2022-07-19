@@ -3,9 +3,9 @@ title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas descrevendo as informações da versão, novidades, como instalar e listas detalhadas de alterações."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 6b75c41cf796b28409c263175cf3f3a2044422ff
+source-git-commit: 9f957175573eeb2b40d79a5087dc3034c56819cc
 workflow-type: tm+mt
-source-wordcount: '3733'
+source-wordcount: '3742'
 ht-degree: 6%
 
 ---
@@ -298,10 +298,10 @@ As seguintes correções de erros, principais recursos e melhorias foram introdu
 
 ## Interface do usuário {#ui-6513}
 
+* Atualizar para `favicon.ico` que é usado em Experience Manager. (CQ-4315324)
 * Quando estiver na página inicial > Ferramentas e clique no botão [!DNL Experience Manager] ícone , o [!DNL Experience Manager] A tela de navegação deve aparecer. (NPR-38417)
 * Habilitar ES6 para `/libs/granite/ui/references/clientlibs/coral/references`. (NPR-38303)
 * Habilitar ES6 para `/libs/granite/datavisualization/clientlibs/d3-3.x`. (NPR-38302)
-
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * AEM‑OP‑09 ‑ Persistent cross‑site scripting selecting paths in templates. (NPR-38301) -->
 * O seletor de datas na interface do usuário de toque é exibido em coreano. (NPR-38079)
 * Caixa de diálogo de criação com vários campos, após reordenar os campos que perdem o valor de seleção do botão de opção. (NPR-38063)
