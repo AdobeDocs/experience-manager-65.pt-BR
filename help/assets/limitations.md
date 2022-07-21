@@ -8,10 +8,10 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: 7a800199b0d3a9dce0a8a31d14f07326b56050ba
+source-git-commit: d4eae7774cb657713a06261deeef0fd2ad542836
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,11 +21,10 @@ As seções a seguir descrevem as limitações no Dynamic Media.
 
 Este tópico inclui as seguintes seções:
 
-* Práticas recomendadas e limites impostos pela Dynamic Media sobre os tipos de ativos
+* [Práticas recomendadas e limites impostos pela Dynamic Media sobre os tipos de ativos](#best-practice-enforced-limits)
+* [Navegador da Web não suportado e combinações de sistema operacional para Visualizadores do Dynamic Media](#unsupported-browser-os)
 
-<!-- * Unsupported web browser and operating system combinations for Dynamic Media Viewers -->
-
-## Práticas recomendadas e limites impostos pela Dynamic Media sobre os tipos de ativos
+## Práticas recomendadas e limites impostos pela Dynamic Media sobre os tipos de ativos {#best-practice-enforced-limits}
 
 Quando você cria um Conjunto de rotação ou um Conjunto de imagens, ou faz upload de PDF para extração de página, o Adobe recomenda as seguintes práticas recomendadas e impõe os seguintes limites:
 
@@ -39,16 +38,16 @@ Quando você cria um Conjunto de rotação ou um Conjunto de imagens, ou faz upl
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
-<!-- ## Unsupported web browser and operating system combinations for Dynamic Media Viewers
+## Navegador da Web não suportado e combinações de sistema operacional para Visualizadores do Dynamic Media {#unsupported-browser-os}
 
-Dynamic Media Viewers do not support following combinations of web browser and operating system.
+Os visualizadores do Dynamic Media não são compatíveis com as seguintes combinações de navegador da Web e sistema operacional.
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
 * Internet Explorer 11 + Windows Phone 8.1
-* Internet Explorer 11 + Windows Phone 8.1 Update
+* Atualização do Internet Explorer 11 + Windows Phone 8.1
 * Safari 6 + iOS 6.0.1
 * Safari 7 + iOS 7.1
-* Safari 7 + macOS X 10.9 Mavericks
+* Safari 7 + OS X 10.9 Mavericks
 * Safari 8 + iOS 8.4
-* Safari 8 + macOS X 10.10 Yosemite -->
+* Safari 8 + OS X 10.10 Yosemite
