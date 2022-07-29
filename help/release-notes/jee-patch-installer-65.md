@@ -5,9 +5,9 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: d28d78e426f1e89caa8bd28b067765d40b95cb8a
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '494'
 ht-degree: 29%
 
 ---
@@ -70,6 +70,8 @@ Navegue até o diretório apropriado e, a partir de um prompt de comando, digite
    * [Instalar e implantar formulários de AEM para o WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Somente JBoss) Após instalar o patch e configurar o servidor, exclua o tmp e os diretórios de trabalho do servidor de aplicativos JBoss.
+
+>**Observação:** Antes da inicialização **Gerenciador de configuração**, baixar e substituir [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) arquivo.
 
 ## Configurações pós-implantação {#post-deployment-configurations}
 
