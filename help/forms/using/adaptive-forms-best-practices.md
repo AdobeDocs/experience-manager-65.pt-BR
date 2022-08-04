@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 0f1724cbb7ef4fec366fb8b63511a981b47b5429
+source-git-commit: f05ddd2fb72258b7de5d361eb87f5e68e7ddd7ff
 workflow-type: tm+mt
-source-wordcount: '4322'
+source-wordcount: '4529'
 ht-degree: 0%
 
 ---
@@ -95,6 +95,19 @@ Para obter mais informações, consulte [Criar um formulário adaptável](/help/
    * Introduza interatividades personalizadas criando widgets ou aparências personalizados. Não é recomendado modificar componentes padrão. Para obter mais informações, consulte [Estrutura de aparência](/help/forms/using/introduction-widgets.md).
 
 * Consulte [Tratamento de informações pessoais identificáveis](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) para recomendações sobre o tratamento de dados de PII.
+
+### Criação de modelos de formulário
+
+Você pode criar um formulário adaptável usando os modelos de formulário habilitados em **Navegador de configuração**. Para ativar os modelos de formulário, consulte [Criação do modelo de formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
+
+Os modelos de formulário também podem ser carregados de pacotes de formulário adaptável criados em outra máquina de criação. Os modelos de formulário são disponibilizados pela instalação [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Algumas das práticas recomendadas são:
+* O **nosamplecontent** runmode é recomendado somente para o autor e não para os nós de publicação.
+* A criação de ativos, como formulários adaptáveis, temas, modelos ou configurações de nuvem, é executada somente sobre nós do Autor, que podem ser publicados nos nós de Publicação configurados.
+Para obter mais informações, consulte [Publicar e desfazer a publicação de formulários e documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
+* O pacote de addon do Forms é necessário para criação e publicação para suportar as operações do serviço de documento; portanto, pode ser considerada uma dependência.
+Se você quiser apenas modelos de amostra, temas e pacotes DOR relacionados ao Forms, poderá baixá-los de [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
+
+Para obter mais informações, consulte as práticas recomendadas em [Introdução à criação de formulários adaptáveis](/help/forms/using/introduction-forms-authoring.md).
 
 ## Formulários adaptáveis do autor {#author-adaptive-forms}
 
@@ -309,3 +322,5 @@ Um dos principais desafios para as organizações é como lidar com dados de ide
 
 * Use um armazenamento externo seguro, como banco de dados, para armazenar dados de rascunhos e formulários enviados. Consulte [Configuração do armazenamento externo para rascunhos e dados de formulários enviados](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Use o componente de formulário Termos e condições para obter consentimento explícito do usuário antes de ativar o salvamento automático. Nesse caso, ative o salvamento automático somente quando o usuário concordar com as condições no componente Termos e condições .
+
+
