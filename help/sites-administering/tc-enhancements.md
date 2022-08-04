@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 3de9f3c97b99644297a2f07344f6aebae1c5ae83
+source-git-commit: 1be3d394283493f7c282ea4c3d794458d88e1ac3
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 10%
+source-wordcount: '681'
+ht-degree: 4%
 
 ---
 
@@ -73,12 +73,20 @@ As edições manuais de conteúdo traduzido podem ser sincronizadas de volta ao 
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
-O AEM enviará as strings selecionadas de volta para o Sistema de Gerenciamento de Tradução.
+AEM atualiza a tradução das cadeias de caracteres existentes na memória de tradução do TMS configurado.
 
-* A ação atualiza a tradução das cadeias de caracteres existentes na memória de tradução do TMS (Translation Management Systems, sistema de gerenciamento de tradução configurado).
+* A ação atualiza a tradução das cadeias de caracteres existentes na memória de tradução do TMS configurado.
 * Ele não cria novos trabalhos de tradução.
-* Ele envia os pares de valores de cadeias de caracteres e suas traduções de volta para o TMS, por meio AEM API de tradução.
-* Este recurso requer que um Sistema de Gerenciamento de Tradução seja configurado para uso com o AEM.
+* Ele envia as traduções de volta para o TMS, por meio AEM API de tradução (veja abaixo).
+
+Para usar este recurso:
+
+* Um TMS deve ser configurado para uso com AEM.
+* O conector precisa implementar o método [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+   * O código nesse método determina o que acontece com a solicitação de atualização da memória de tradução.
+   * A estrutura de tradução de AEM envia os pares de valores da sequência de caracteres (tradução original e atualizada) para o TMS por meio dessa implementação de método.
+
+As atualizações da memória de tradução podem ser interceptadas e enviadas para um destino personalizado, nos casos em que uma memória de tradução proprietária é usada.
 
 ## Cópias de idioma em vários níveis {#language-copies-on-multiple-levels}
 
