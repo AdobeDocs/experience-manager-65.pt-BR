@@ -3,9 +3,9 @@ title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas descrevendo as informações da versão, novidades, como instalar e listas detalhadas de alterações."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 9f957175573eeb2b40d79a5087dc3034c56819cc
+source-git-commit: e51cf7a5b7d14bc4aed053496c7fe6685dd2b0b8
 workflow-type: tm+mt
-source-wordcount: '3742'
+source-wordcount: '3653'
 ht-degree: 6%
 
 ---
@@ -39,7 +39,12 @@ Os principais recursos e aprimoramentos introduzidos no [!DNL Adobe Experience M
 
    * Adição de suporte para leitores de tela para reconhecer o cabeçalho e o corpo de uma tabela como continua e as entidades conectadas. Isso ajuda os leitores de tela a navegarem nas tabelas corretamente. (NPR-37139)
    * Adição de suporte para leitores de tela para parar de navegar no espaço de trabalho HTML até que uma caixa de diálogo seja aberta. (NPR-37134)
-   * Adição da capacidade de especificar o texto de Reader de tela para hiperlinks no Forms Designer.(NPR-36221)
+
+   <!-- 
+
+    * Added ability to specify Screen Reader Text for Hyperlinks in Forms Designer.(NPR-36221)
+  
+  -->
 
 As seguintes correções de erros, principais recursos e melhorias foram introduzidas em [!DNL Experience Manager] 6.5.13.0:
 
@@ -123,11 +128,19 @@ As seguintes correções de erros, principais recursos e melhorias foram introdu
 * Quando um usuário adiciona tags HTML à seção de comentário ao executar um fluxo de trabalho, as tags HTML são renderizadas. (NPR-37591)
 * Ao importar e publicar uma carta que inclui um novo arquivo XDP, as letras não são visualizadas na instância de publicação. No entanto, se as cartas forem importadas e publicadas uma segunda vez usando o mesmo arquivo CMP, elas serão visualizadas com sucesso. (CQ-4343599)
 * Um formulário com o conjunto de propriedades Preparar processo de dados não é renderizado no HTML Workspace. (CQ-4343294)
-* Para PDF forms estáticos criados com o Forms 6.5 Designer, a acessibilidade do PDF falha com erro `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
+<!--
+For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility fails with error `Tab order entry in page with annotations not set to "S"`. (CQ-4343117) 
+ -->
 * Não é possível converter uma imagem no PDF usando o serviço PDFG com OCR, após aplicar o patch AEMForms-6.5.0-0038 (log4jv2.16). (CQ-4342450)
-* O valor incorreto é exibido para o código de barras SSCC-18. Os servidores da Forms omitem o valor na parte direita do código de barras. (CQ-4342400)
+
+<!-- 
+* Incorrect value is displayed for barcode SSCC-18. Forms servers omit the value on the right part of the barcode. (CQ-4342400)
+-->
 * Não é possível importar um arquivo do Microsoft® Word para o Forms Designer. Erro do usuário encontrado `Word (version XP or onwards) could not be found on the machine`. (CQ-4342146)
-* No Forms 6.5 Designer, ao abrir um formulário criado com o Forms 6.1 Designer e editar uma caixa de texto, o espaçamento entre parágrafos excede o espaço especificado. Todas as configurações anteriores ao espaço são removidas e a reformatação manual da caixa de texto é necessária. (CQ-4341899)
+
+<!-- 
+* In Forms 6.5 Designer, when you open a form created with Forms 6.1 Designer and edit a textbox, paragraph spacing exceeds the specified space. All previous settings to the space are removed and manual reformatting of the text box is required. (CQ-4341899) 
+-->
 * O usuário não pode definir horário personalizado no Agendador de limpeza de trabalhos. (CQ-4339192)
 * O usuário não pode atualizar nenhuma configuração na interface do usuário do gerenciamento de ponto de extremidade e encontrar um erro ` Uncaught ReferenceError: updateEndpoint_required is not defined`. (CQ-4331523)
 * Para tags inválidas, o tratamento correto da mensagem de erro não está funcionando como esperado. (NPR-38106 e CQ-4337173)
