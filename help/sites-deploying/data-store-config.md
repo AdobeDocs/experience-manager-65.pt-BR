@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 6257b56c61ae14889d9ecefed5030e123a415fd7
+source-git-commit: 4e68a8a8d84d0ffa1d28ab13c196731e58b4cf9a
 workflow-type: tm+mt
-source-wordcount: '3455'
+source-wordcount: '3447'
 ht-degree: 1%
 
 ---
@@ -207,8 +207,7 @@ Se precisar atualizar para uma nova versão do conector S3 1.10.x (por exemplo, 
 Você pode usar o arquivo de configuração com as seguintes opções:
 
 * accessKey: A chave de acesso do AWS.
-* secretKey: A chave de acesso secreta do AWS. **Observação:** Em alternativa, [Funções do IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) pode ser usado para autenticação. Se você estiver usando funções do IAM, não será mais necessário especificar a variável `accessKey` e `secretKey`.
-
+* secretKey: A chave de acesso secreta do AWS. **Observação:** Quando a variável `accessKey` ou `secretKey` não é especificado, então a variável [Função do IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) é usada para autenticação.
 * s3Bucket: O nome do bucket.
 * s3Região: A região do balde.
 * caminho: O caminho do armazenamento de dados. O padrão é **&lt;aem install=&quot;&quot; folder=&quot;&quot;>/repository/datastore**
