@@ -1,8 +1,8 @@
 ---
 title: Mapeamento de recursos
-seo-title: Mapeamento de recursos
+seo-title: Resource Mapping
 description: Saiba como definir redirecionamentos, URLs personalizadas e hosts virtuais para AEM usando o mapeamento de recursos.
-seo-description: Saiba como definir redirecionamentos, URLs personalizadas e hosts virtuais para AEM usando o mapeamento de recursos.
+seo-description: Learn how to define redirects, vanity URLs and virtual hosts for AEM by using resource mapping.
 uuid: 2ca2d0e4-6f90-4ecc-82db-26991f08c66f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: 3582a4d8-a47b-467a-9e25-cb45f969ec93
 docset: aem65
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
+source-git-commit: 7c24379c01f247f5ad45e3ecd40f3edef4ac3cfb
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 1%
+source-wordcount: '519'
+ht-degree: 3%
 
 ---
-
 
 # Mapeamento de recursos{#resource-mapping}
 
@@ -26,10 +25,10 @@ O mapeamento de recursos é usado para definir redirecionamentos, URLs personali
 
 Por exemplo, você pode usar esses mapeamentos para:
 
-* Coloque o prefixo `/content` em todas as solicitações para que a estrutura interna fique oculta dos visitantes do seu site.
-* Defina um redirecionamento para que todas as solicitações para a página `/content/en/gateway` do site sejam redirecionadas para `https://gbiv.com/`.
+* Prefixar todas as solicitações com `/content` para que a estrutura interna fique oculta dos visitantes do seu site.
+* Defina um redirecionamento para que todas as solicitações da variável `/content/en/gateway` página do seu site são redirecionadas para `https://gbiv.com/`.
 
-Um mapeamento HTTP possível prefixa todas as solicitações para `localhost:4503` com `/content`. Um mapeamento como esse pode ser usado para ocultar a estrutura interna dos visitantes do site, conforme permite:
+Um possível mapeamento HTTP prefixa todas as solicitações para `localhost:4503` com `/content`. Um mapeamento como esse pode ser usado para ocultar a estrutura interna dos visitantes do site, conforme permite:
 
 `localhost:4503/content/we-retail/en/products.html`
 
@@ -37,7 +36,7 @@ a ser acessado usando:
 
 `localhost:4503/we-retail/en/products.html`
 
-já que o mapeamento adicionará automaticamente o prefixo `/content` a `/we-retail/en/products.html`.
+como o mapeamento adicionará automaticamente o prefixo `/content` para `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
@@ -51,19 +50,17 @@ já que o mapeamento adicionará automaticamente o prefixo `/content` a `/we-ret
 
 Os mapeamentos de duas listas que o Resolvedor de Recursos do JCR avalia (de cima para baixo) para encontrar uma correspondência.
 
-Essas listas podem ser visualizadas (junto com informações de configuração) sob a opção **JCR ResourceResolver** do console Felix; por exemplo, `https://<*host*>:<*port*>/system/console/jcrresolver`:
+Essas listas podem ser visualizadas (junto com informações de configuração) no **JCR ResourceResolver** opção do console Felix; por exemplo, `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
-* Configuração
-Mostra a configuração atual (conforme definido para [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)).
+* Configuração Mostra a configuração atual (conforme definido para a variável [Resolvedor de Recursos do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)).
 
-* Teste de configuração
-Isso permite inserir um URL ou caminho de recurso. Clique em **Resolver** ou **Mapa** para confirmar como o sistema transformará a entrada.
+* Teste de configuração Permite inserir um URL ou caminho de recurso. Clique em **Resolver** ou **Mapa** para confirmar como o sistema transformará a entrada.
 
-* ****
-Entradas do Mapa do ResolvedorA lista de entradas usadas pelos métodos ResourceResolver.resolve para mapear URLs para Recursos.
+* **Entradas do Mapa do Resolvedor**
+A lista de entradas usadas pelos métodos ResourceResolver.resolve para mapear URLs para Recursos.
 
-* **Mapeamento de**
-entradas do mapaA lista de entradas usadas pelos métodos ResourceResolver.map para mapear caminhos de recursos para URLs.
+* **Mapeamento de entradas do mapa**
+A lista de entradas usadas pelos métodos ResourceResolver.map para mapear Caminhos de Recursos para URLs.
 
 As duas listas mostram várias entradas, incluindo as definidas como padrões pelo(s) aplicativo(s). Geralmente, o objetivo é simplificar os URLs para o usuário.
 
@@ -91,13 +88,13 @@ Novas definições de mapeamento são criadas no repositório.
 >
 >Há muitos recursos disponíveis que ajudam a explicar como definir expressões regulares; por exemplo [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
-### Criando definições de mapeamento em AEM {#creating-mapping-definitions-in-aem}
+### Criando definições de mapeamento no AEM {#creating-mapping-definitions-in-aem}
 
 Em uma instalação padrão de AEM, você pode encontrar a pasta:
 
 `/etc/map/http`
 
-Essa é a estrutura usada ao definir mapeamentos para o protocolo HTTP. Outras pastas ( `sling:Folder`) podem ser criadas em `/etc/map` para quaisquer outros protocolos que você deseja mapear.
+Essa é a estrutura usada ao definir mapeamentos para o protocolo HTTP. Outras pastas ( `sling:Folder`) pode ser criada em `/etc/map` para quaisquer outros protocolos que você queira mapear.
 
 #### Configurar um redirecionamento interno para /content {#configuring-an-internal-redirect-to-content}
 
@@ -107,13 +104,13 @@ Para criar o mapeamento que prefixa qualquer solicitação para https://localhos
 
 1. Crie um novo nó:
 
-   * **** `sling:Mapping`
-Tipo: esse tipo de nó é destinado a esses mapeamentos, embora seu uso não seja obrigatório.
+   * **Tipo** `sling:Mapping`
+Esse tipo de nó é destinado a esses mapeamentos, embora seu uso não seja obrigatório.
 
    * **Nome** `localhost_any`
 
 1. Clique em **Salvar tudo**.
-1. **** Adicione as seguintes propriedades a este nó:
+1. **Adicionar** as seguintes propriedades desse nó:
 
    * **Nome** `sling:match`
 
@@ -122,7 +119,7 @@ Tipo: esse tipo de nó é destinado a esses mapeamentos, embora seu uso não sej
       * **Valor** `localhost.4503/`
    * **Nome** `sling:internalRedirect`
 
-      * **Tipo** `String`
+      * **Tipo** `String[]`
 
       * **Valor** `/content/`
 
@@ -137,9 +134,8 @@ tinham sido solicitados.
 
 >[!NOTE]
 >
->Consulte [Resources](https://sling.apache.org/site/mappings-for-resource-resolution.html) na Documentação do Sling para obter mais informações sobre as propriedades do sling disponíveis e como elas podem ser configuradas.
+>Consulte [Recursos](https://sling.apache.org/site/mappings-for-resource-resolution.html) na Documentação do Sling para obter mais informações sobre as propriedades do sling disponíveis e como elas podem ser configuradas.
 
 >[!NOTE]
 >
->Você pode usar `/etc/map.publish` para manter as configurações do ambiente de publicação. Eles devem ser replicados e o novo local ( `/etc/map.publish`) configurado para o **Local de mapeamento** do [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) do ambiente de publicação.
-
+>Você pode usar `/etc/map.publish` para manter as configurações do ambiente de publicação. Eles devem então ser replicados e o novo local ( `/etc/map.publish`) configurado para o **Localização do mapeamento** do [Resolvedor de Recursos do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) do ambiente de publicação.
