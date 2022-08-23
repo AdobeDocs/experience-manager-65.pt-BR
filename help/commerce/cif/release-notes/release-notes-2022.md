@@ -5,7 +5,7 @@ exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
 source-git-commit: 6c5c37c1c365e1f03ea9b5c935adf63a33faba5d
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 33%
+ht-degree: 45%
 
 ---
 
@@ -46,7 +46,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 * Várias melhorias nos Componentes principais da CIF
 
-### Correções de bugs {#bug-fixes-june}
+### Correções de erros {#bug-fixes-june}
 
 * Adicionar token de logon à busca de preços no lado do cliente
 
@@ -62,19 +62,19 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 ### Novidades {#what-is-new-may}
 
-* Nova página de propriedades do cockpit de produtos para obter uma visão geral melhor e simplificada
+* Nova página de propriedades do cockpit do produto para obter uma visão geral melhor e simplificada
 
-![visão geral das propriedades do cockpit de produtos](/help/assets/CIF/product_cockpit_properties_overview.png)
+![visão geral das propriedades do cockpit do produto](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* Aprimoramento da compatibilidade e robustez de conectores de terceiros na I/O Runtime
+* Aprimoramento da compatibilidade e robustez de conectores de terceiros no I/O Runtime
 
 * Melhore o suporte para substituições de configuração do cliente GQL (por exemplo, definir o comportamento de armazenamento em cache personalizado)
 
-### Correções de bugs {#bug-fixes-may}
+### Correções de erros {#bug-fixes-may}
 
-* O campo seletor de produtos de vários valores mostra o 2º e os produtos adicionais como inválidos
+* O campo seletor de produtos de vários valores mostra o 2º produto e os demais produtos como inválidos
 
-* Ocasionalmente, o Seletor de produto fica oculto atrás dos componentes
+* Ocasionalmente, o seletor de produto fica oculto atrás dos componentes
 
 ## Data de lançamento: Abril de 2022
 
@@ -86,13 +86,13 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 ### Novidades {#what-is-new-april}
 
-* Acesso rápido ao cockpit de produtos: Acesse facilmente as informações completas e detalhadas do produto com um clique no Editor de sites
+* Acesso rápido ao cockpit de produtos: acesse facilmente as informações completas e detalhadas do produto com um clique no Editor de sites
 
-   ![Habilitar lista de desejos](/help/assets/CIF/enable-wishlist.png)
+   ![Ativar lista de desejos](/help/assets/CIF/enable-wishlist.png)
 
-* Suporte para componentes adicionais de comércio de marketing: Os componentes podem ser configurados para mostrar uma chamada para ação de adição ao carrinho e de lista de desejos
+* Compatibilidade com componentes adicionais de comércio de marketing: os componentes podem ser configurados para mostrar uma chamada para ação de adição ao carrinho e de lista de desejos
 
-   ![Atalho do editor de sites para o cockpit de produtos](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+   ![Atalho do Editor de sites para o cockpit de produtos](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## Data de lançamento: Fevereiro de 2022
 

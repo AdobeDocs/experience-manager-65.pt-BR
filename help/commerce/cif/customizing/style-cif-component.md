@@ -3,13 +3,13 @@ title: Alterar estilo dos Componentes principais da CIF do AEM
 description: Saiba como criar estilo AEM Componentes principais da CIF. O tutorial aborda como bibliotecas do lado do cliente ou clientlibs são usadas para implantar e gerenciar CSS e Javascript para uma implementação de comércio (AEM) da Adobe Experience Manager. Este tutorial também abordará a forma como o módulo ui.front-end e um projeto de webpack são integrados ao processo de criação completo.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 26%

@@ -3,7 +3,7 @@ title: Personalizar os Componentes principais da CIF
 description: Saiba como personalizar AEM Componentes principais da CIF. O tutorial aborda como estender com segurança um Componente principal da CIF para atender às necessidades específicas dos negócios. Saiba como estender uma consulta GraphQL para retornar um atributo personalizado e exibir o novo atributo em um Componente principal da CIF.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
 workflow-type: tm+mt
 source-wordcount: '2604'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
@@ -496,9 +496,9 @@ Revise a funcionalidade do **Novo** selo que já foi implementado no Teaser do p
 
 ## Recursos adicionais {#additional-resources}
 
-- [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+- [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt_BR)
 - [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components)
 - [Personalizar os Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-- [Personalizar os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+- [Personalizar os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=pt-BR)
 - [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
 - [Uso do seletor de produto e categoria da CIF](use-cif-pickers.md)
