@@ -1,12 +1,12 @@
 ---
 title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
-description: '"[!DNL Adobe Experience Manager] 6.5 notas descrevendo as informações da versão, novidades, como instalar e listas detalhadas de alterações."'
+description: '"Encontre informações sobre a versão, novidades, instruções de instalação e uma lista detalhada de alterações para [!DNL Adobe Experience Manager] 6.5."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: e51cf7a5b7d14bc4aed053496c7fe6685dd2b0b8
+source-git-commit: 3c3efe108b020d9c64e456d409f114c8969f2723
 workflow-type: tm+mt
-source-wordcount: '3653'
-ht-degree: 6%
+source-wordcount: '3652'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 6%
 
 Os principais recursos e aprimoramentos introduzidos no [!DNL Adobe Experience Manager] 6.5.13.0 são:
 
-* Use CAPTCHA invisível em um formulário adaptável: Agora você pode usar um CAPTCHA invisível para mostrar o desafio CAPTCHA somente no caso de uma atividade suspeita. Se não for encontrada nenhuma atividade suspeita, o desafio CAPTCHA não é apresentado. Ajuda a avaliar o preenchimento de formulários humanos sem os requisitos da caixa de seleção, reduzir os esforços de personalização e melhorar a experiência do usuário final. (NPR-38500)
+* Use CAPTCHA invisível em um formulário adaptável: Agora você pode usar um CAPTCHA invisível para mostrar o desafio CAPTCHA somente no caso de uma atividade suspeita. Se não for encontrada nenhuma atividade suspeita, o desafio CAPTCHA não é apresentado. Isso ajuda a avaliar o preenchimento de formulários por humanos sem requisitos de caixa de seleção, reduz os esforços de personalização e melhora a experiência do usuário final. (NPR-38500)
 
 * Adição de suporte para buscar cabeçalhos de resposta no pós-processador do Modelo de dados de formulário para pontos de extremidade REST. (NPR-38275)
 
