@@ -1,14 +1,14 @@
 ---
 title: Instalar o workbench
-seo-title: Instalar o workbench
+seo-title: Install workbench
 description: Instale o workbench.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2244'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Os recursos nesta tabela podem ajudá-lo a saber mais e começar a usar o AEM Fo
   </tr>
   <tr>
    <td><p>Atualizações de patches, notas técnicas e informações adicionais sobre esta versão do produto</p> </td>
-   <td><p>Entre em contato com o Suporte Adobe Enterprise</a><br /> <br /> </p> </td>
+   <td><p>Entre em contato com o suporte empresarial Adobe</a><br /> <br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -75,8 +75,8 @@ Esta seção descreve os requisitos de hardware e software e as plataformas comp
 
 ### Requisitos mínimos de hardware e software {#minimum-hardware-software-requirements}
 
-****
-WorkbenchOs seguintes requisitos são recomendados como mínimo: Espaço em disco para instalação:
+**Workbench**
+Recomenda-se, no mínimo, os seguintes requisitos: Espaço em disco para instalação:
 * 680 MB somente para Workbench.
 * 2,15 GB em uma única unidade para uma instalação completa do Workbench, do Designer e do conjunto de amostras.
 * 400 MB para diretórios de instalação temporários - 200 MB no diretório \temp do usuário e 200 MB no diretório temporário do Windows.
@@ -98,7 +98,7 @@ WorkbenchOs seguintes requisitos são recomendados como mínimo: Espaço em disc
 
 ### Plataformas compatíveis {#supported-platforms}
 
-Consulte a lista completa de plataformas compatíveis para o Workbench em [Plataformas compatíveis com AEM Forms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
+Consulte a lista completa de plataformas compatíveis para o Workbench em [Plataformas compatíveis com a AEM Forms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Considerações sobre a instalação do Designer {#designer-installation-considerations}
 
@@ -127,9 +127,9 @@ Diferentes versões do Designer podem coexistir no mesmo sistema, por exemplo, o
 
 ### Para desinstalar o Designer (independente) no Windows 10 {#uninstall-designer-standalone-windows10}
 
-1. Vá para **Painel de controle > Programas > Programas e recursos**
+1. Ir para **Painel de controle do Campaign > Programas > Programas e recursos**
 1. Na lista Programas instalados, selecione **Adobe Designer**.
-1. Clique em **Desinstalar** e em **Sim**.
+1. Clique em **Desinstalar** e, em seguida, clique em **Sim**.
 
 ## Instalar o Workbench {#installing-workbench}
 
@@ -161,7 +161,7 @@ Antes de instalar o Workbench, é necessário garantir que seu ambiente inclua o
    >
    >Você pode continuar usando o Designer instalado com o Acrobat 10, deixando essa opção desmarcada.
 
-1. Aceite o diretório padrão como listado ou   clique em Escolher e navegue até o diretório onde você instalará o Workbench e clique em Avançar.
+1. Aceite o diretório padrão como listado ou clique em Escolher e navegue até o diretório onde você instalará o Workbench e clique em Avançar.
 
    >[!NOTE]
    >
@@ -171,9 +171,9 @@ Antes de instalar o Workbench, é necessário garantir que seu ambiente inclua o
 1. Revise o resumo da instalação. Selecione Iniciar o AEM Forms Workbench para iniciar o Workbench e clique em Próximo.
 1. Revise as Notas de versão e clique em Concluído.
 1. Os seguintes itens foram instalados no computador:
-   * **Workbench**: Para executar o Workbench a partir do menu Iniciar, selecione Todos os programas > AEM Forms > Workbench, se optar por armazenar a pasta de atalho lá. Para obter informações,   consulte a documentação <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Using Workbench</a> .
+   * **Workbench**: Para executar o Workbench a partir do menu Iniciar, selecione Todos os programas > AEM Forms > Workbench, se optar por armazenar a pasta de atalho lá. Para obter informações, consulte o <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Uso do Workbench</a> documentação.
    * **Designer**: Você pode acessar o Designer no Workbench. Para obter informações, consulte o tópico Introdução em <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Ajuda do Designer</a>.
-   * **AEM Forms SDK**: Para obter mais informações sobre como usar o SDK, consulte  <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programação com o AEM Forms</a>.
+   * **AEM Forms SDK**: Para obter mais informações sobre como usar o SDK, consulte <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programação com o AEM Forms</a>.
 
 ## Atualização de processos {#upgrading-processes}
 
@@ -185,30 +185,30 @@ Para usar o Workbench, é necessário ter uma instância do AEM Forms em execuç
 
 >[!NOTE]
 >
->Se você configurou o AEM Forms para usar o provedor de repositório EMC Documentum ou IBM FileNet e deseja fazer logon em um repositório diferente do repositório configurado como padrão AEM console de administração de formulários, forneça o nome de usuário como username@Repository.
+>Se você configurou o AEM Forms para usar o provedor de repositório EMC Documentum ou IBM FileNet e deseja fazer logon em um repositório diferente do repositório configurado como padrão no console de administração AEM formulários, forneça o nome de usuário como username@Repository.
 
 ### Definição das configurações de tempo limite {#configuring-timeout-settings}
 
-Por padrão, o Workbench expira após duas horas, independentemente da atividade ou da inatividade. Para editar a configuração de tempo limite, consulte &quot;Configuração do gerenciamento de usuários > Configurar atributos avançados do sistema&quot; na <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Ajuda do console de administração</a>.
+Por padrão, o Workbench expira após duas horas, independentemente da atividade ou da inatividade. Para editar a configuração de tempo limite, consulte &quot;Configuração do gerenciamento de usuários > Configurar atributos avançados do sistema&quot; no <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">ajuda do console de administração</a>.
 
 ### Configuração do Workbench para se conectar via HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
-Para conectar o Workbench a um servidor AEM Forms por HTTPS, você deve garantir que a autoridade de certificação (CA) que emitiu a chave pública seja reconhecida como confiável pelo Workbench. Se o certificado não for reconhecido como proveniente de uma fonte confiável, você deverá atualizar o arquivo de alerta localizado no diretório [Workbench_HOME]/workbench/jre/lib/security.
+Para conectar o Workbench a um servidor AEM Forms por HTTPS, você deve garantir que a autoridade de certificação (CA) que emitiu a chave pública seja reconhecida como confiável pelo Workbench. Se o certificado não for reconhecido como proveniente de uma fonte confiável, você deverá atualizar o arquivo de alerta localizado na [Workbench_HOME]/workbench/jre/lib/security diretory.
 
 >[!NOTE]
 >
->[Workbench_] HOMErepresenta o diretório onde você instalou o Workbench. O local padrão é C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
+>[Workbench_HOME] representa o diretório onde você instalou o Workbench. O local padrão é C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
 
 Certifique-se de se conectar ao HTTPS usando o nome especificado no certificado. Normalmente, esse nome é o nome de host totalmente qualificado.
 
-**Para atualizar o arquivo** de alerta:
+**Para atualizar o arquivo de alerta**:
 1. Certifique-se de ter uma cópia do certificado SSL (Secure Sockets Layer). Entre em contato com o administrador que configurou o servidor SSL ou exporte o certificado usando um navegador da Web.
 
    >[!NOTE]
    >
-   >Para exportar o certificado, abra um navegador da Web e faça logon no console de administração, instale o certificado no navegador e exporte o certificado do navegador para um local de armazenamento temporário (ou diretamente para o diretório [Workbench_HOME]/workbench/jre/lib/security).
+   >Para exportar o certificado, abra um navegador da Web e faça logon no console de administração, instale o certificado no navegador e exporte o certificado do navegador para um local de armazenamento temporário (ou diretamente para o [Workbench_HOME]/workbench/jre/lib/diretory de segurança).
 
-1. Copie o certificado para o diretório [Workbench_HOME]/workbench/jre/lib/security.
+1. Copie o certificado para a [Workbench_HOME]/workbench/jre/lib/security diretory.
 
 1. Abra uma janela de prompt de comando, navegue até [Workbench_HOME]/workbench/jre/bin e digite o seguinte comando:
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
@@ -217,7 +217,7 @@ Em que:
    * certname é o certificado selecionado na etapa 1.
    * exemplo é o alias escolhido para o certificado. Este valor pode ser alterado
 
-1. Quando solicitado a confiar no certificado, digite Sim e pressione a tecla Enter. O keytool continua importando o arquivo de acerts para o diretório [Workbench_HOME]/workbench/jre/lib/security.
+1. Quando solicitado a confiar no certificado, digite Sim e pressione a tecla Enter. O keytool continua importando o arquivo de acerts para o [Workbench_HOME]/workbench/jre/lib/security diretory.
 
 1. Feche e reinicie o Workbench para aplicar as alterações.
 
@@ -227,19 +227,19 @@ Os seguintes aspectos da operação de cache devem ser considerados se seu aplic
 
 Quando o gerador ou a saída do Forms procura ou atualiza entradas no cache de um modelo de formulário específico, ele usa vários valores principais para localizar a entrada de cache específica que será acessada.
 
-* **Nome** do arquivo do modelo: O local e o nome do arquivo do modelo usado como o identificador exclusivo principal do formulário em cache.
+* **Nome do arquivo de modelo**: O local e o nome do arquivo do modelo usado como o identificador exclusivo principal do formulário em cache.
 * **Carimbo de data e hora**: O arquivo de modelo contém um carimbo de data e hora usado para determinar a hora da última atualização do formulário.
-* **UUID** do modelo: O Designer insere em cada modelo um identificador exclusivo (UUID) para o formulário e sua versão. Cada vez que o formulário é atualizado, a UUID incorporada é atualizada. Por exemplo, um modelo XDP pode mostrar o seguinte conteúdo:
+* **UUID do modelo**: O Designer insere em cada modelo um identificador exclusivo (UUID) para o formulário e sua versão. Cada vez que o formulário é atualizado, a UUID incorporada é atualizada. Por exemplo, um modelo XDP pode mostrar o seguinte conteúdo:
 
    `<?xml version="1.0" encoding="UTF-8"?>`
    `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">`
 
-* **Opções** de renderização: No cache de formulário renderizado, o conteúdo do cache é armazenado separadamente para cada conjunto de opções de renderização exclusivas.
+* **Opções de renderização**: No cache de formulário renderizado, o conteúdo do cache é armazenado separadamente para cada conjunto de opções de renderização exclusivas.
 
 
 O serviço Forms recebe modelos por referência ao nome do arquivo ou local do repositório, ou pelo valor como um objeto XML na memória.
 * **Modelos passados por referência**: Usa a raiz de conteúdo e o nome do formulário. Se modelos exclusivos com nomes de arquivo diferentes forem passados em cada solicitação usando este método, o cache de disco crescerá continuamente e nunca será reutilizado. Para evitar isso, os modelos exclusivos devem ser transmitidos com o mesmo nome de arquivo para garantir que o mesmo cache seja atualizado para todas as solicitações.
-* **Modelos passados pelo valor**: Usa bytes de modelo passados junto com os dados usando o parâmetro inDataDoc . Se modelos exclusivos com UUID diferentes forem passados usando esse método, o cache de disco crescerá continuamente e nunca será reutilizado. Para evitar isso, o atributo UUID deve ser removido de todos os modelos para garantir que nenhum cache seja criado para o modelo. Como alternativa, transmitir a mesma UUID não nula permite que os objetos de cache sejam criados, mas garante que o mesmo cache seja atualizado com cada solicitação.
+* **Modelos transmitidos por valor**: Usa bytes de modelo passados junto com os dados usando o parâmetro inDataDoc . Se modelos exclusivos com UUID diferentes forem passados usando esse método, o cache de disco crescerá continuamente e nunca será reutilizado. Para evitar isso, o atributo UUID deve ser removido de todos os modelos para garantir que nenhum cache seja criado para o modelo. Como alternativa, transmitir a mesma UUID não nula permite que os objetos de cache sejam criados, mas garante que o mesmo cache seja atualizado com cada solicitação.
 
 Para evitar que o cache cresça infinitamente, considere os seguintes fatores para renderizar modelos gerados dinamicamente usando as novas APIs do AEM Forms, que estão sendo renderizadosHTMLForm2 e renderPDFForm2.
 
@@ -266,10 +266,10 @@ Usando o XDC Editor, os administradores de impressoras de rede podem criar e mod
 
 Antes de o administrador da impressora de rede usar o Editor XDC, localize os arquivos XDC de amostra e consulte Criar perfis de dispositivo usando o Editor XDC.
 
-**Para obter os arquivos** XDC de amostra:
-1. No servidor do AEM Forms, localize a pasta XDC em [AEM Forms root]\sdk\samples\Output\IVS.
+**Para obter os arquivos XDC de amostra**:
+1. No servidor do AEM Forms, localize a pasta XDC em [Raiz do AEM Forms]\sdk\samples\Output\IVS.
 1. Copie o conteúdo dessa pasta em um diretório acessível do sistema Workbench ou Eclipse.
 
-**Para obter a Ajuda** do XDC Editor:
+**Para obter a Ajuda do XDC Editor**:
 1. Acesse o site da documentação do AEM Forms.
-1. Clique na guia **Desenvolver** e navegue até Criar perfis de dispositivo usando o XDC Editor. Baixe o arquivo xdc_editor_help_web.zip e instale os arquivos de Ajuda seguindo as instruções fornecidas no arquivo Readme.
+1. Clique no botão **Desenvolver** e navegue até Criar perfis de dispositivo usando o XDC Editor. Baixe o arquivo xdc_editor_help_web.zip e instale os arquivos de Ajuda seguindo as instruções fornecidas no arquivo Readme.

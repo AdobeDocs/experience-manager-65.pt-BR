@@ -1,8 +1,8 @@
 ---
 title: Chamar o AEM Forms usando serviços da Web
-seo-title: Chamar o AEM Forms usando serviços da Web
+seo-title: Invoking AEM Forms using Web Services
 description: Chame processos da AEM Forms usando serviços da Web com suporte total para geração de WSDL.
-seo-description: Chame processos da AEM Forms usando serviços da Web com suporte total para geração de WSDL.
+seo-description: Invoke AEM Forms processes using web services with full support for WSDL generation.
 uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 3139564f-9346-4933-8e39-2e1642bff097
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
 workflow-type: tm+mt
-source-wordcount: '10005'
+source-wordcount: '9905'
 ht-degree: 0%
 
 ---
-
 
 # Chamar o AEM Forms usando serviços da Web {#invoking-aem-forms-using-web-services}
 
@@ -25,22 +24,22 @@ ht-degree: 0%
 
 A maioria dos serviços da AEM Forms no contêiner de serviço é configurada para expor um serviço da Web, com suporte total para a geração de WSDL (Web Service Definition Language). Ou seja, você pode criar objetos proxy que consomem a pilha SOAP nativa de um serviço AEM Forms. Como resultado, os serviços da AEM Forms podem trocar e processar as seguintes mensagens SOAP:
 
-* **Solicitação** SOAP: Enviado para um serviço da Forms por um aplicativo cliente solicitando uma ação.
-* **Resposta** SOAP: Enviado para um aplicativo cliente por um serviço da Forms depois que uma solicitação SOAP é processada.
+* **solicitação SOAP**: Enviado para um serviço da Forms por um aplicativo cliente solicitando uma ação.
+* **Resposta SOAP**: Enviado para um aplicativo cliente por um serviço da Forms depois que uma solicitação SOAP é processada.
 
 Com os serviços da Web, é possível executar as mesmas operações dos serviços da AEM Forms que você pode usar a API do Java. Uma vantagem de usar serviços da Web para invocar os serviços da AEM Forms é que você pode criar um aplicativo cliente em um ambiente de desenvolvimento compatível com SOAP. Um aplicativo cliente não está vinculado a um ambiente de desenvolvimento específico ou linguagem de programação. Por exemplo, você pode criar um aplicativo cliente usando o Microsoft Visual Studio .NET e C# como a linguagem de programação.
 
-Os serviços da AEM Forms são expostos através do protocolo SOAP e são compatíveis com o Perfil básico WSI 1.1. A WSI (Web Services Interoperability, interoperabilidade de serviços da Web) é uma organização de padrões abertos que promove a interoperabilidade do serviço da Web em todas as plataformas. Para obter informações, consulte [https://www.ws-i.org/](https://www.ws-i.org).
+Os serviços da AEM Forms são expostos através do protocolo SOAP e são compatíveis com o Perfil básico WSI 1.1. A WSI (Web Services Interoperability, interoperabilidade de serviços da Web) é uma organização de padrões abertos que promove a interoperabilidade do serviço da Web em todas as plataformas. Para obter mais informações, consulte [https://www.ws-i.org/](https://www.ws-i.org).
 
 O AEM Forms oferece suporte aos seguintes padrões de serviço da Web:
 
-* **Codificação**: Suporta somente codificação de documento e literal (que é a codificação preferida de acordo com o Perfil básico WSI). (Consulte [Chamar AEM Forms usando a codificação Base64](#invoking-aem-forms-using-base64-encoding).)
+* **Codificação**: Suporta somente codificação de documento e literal (que é a codificação preferida de acordo com o Perfil básico WSI). (Consulte [Chamada de AEM Forms usando codificação Base64](#invoking-aem-forms-using-base64-encoding).)
 * **MTOM**: Representa uma maneira de codificar anexos com solicitações SOAP. (Consulte [Chamar o AEM Forms usando MTOM](#invoking-aem-forms-using-mtom).)
 * **SwaRef**: Representa outra maneira de codificar anexos com solicitações SOAP. (Consulte [Chamar o AEM Forms usando SwaRef](#invoking-aem-forms-using-swaref).)
-* **SOAP com anexos**: Suporta MIME e DIME (Direct Internet Message Encapsulation). Esses protocolos são formas padrão de enviar anexos por SOAP. Os aplicativos do Microsoft Visual Studio .NET usam DIME. (Consulte [Chamar AEM Forms usando a codificação Base64](#invoking-aem-forms-using-base64-encoding).)
-* **WS-Security**: Suporta um perfil de token de senha de nome de usuário, que é uma maneira padrão de enviar nomes de usuário e senhas como parte do cabeçalho SOAP WS Security. O AEM Forms também oferece suporte à autenticação básica HTTP. (Consulte [Passando credenciais usando cabeçalhos WS-Security](https://www.adobe.com/devnet/livecycle/articles/passing_credentials.html).)
+* **SOAP com anexos**: Suporta MIME e DIME (Direct Internet Message Encapsulation). Esses protocolos são formas padrão de enviar anexos por SOAP. Os aplicativos Microsoft Visual Studio .NET usam DIME. (Consulte [Chamada de AEM Forms usando codificação Base64](#invoking-aem-forms-using-base64-encoding).)
+* **WS-Security**: Suporta um perfil de token de senha de nome de usuário, que é uma maneira padrão de enviar nomes de usuário e senhas como parte do cabeçalho SOAP WS Security. O AEM Forms também oferece suporte à autenticação básica HTTP. s
 
-Para chamar os serviços da AEM Forms usando um serviço da Web, normalmente você cria uma biblioteca de proxy que consome o serviço WSDL. A seção *Invocar AEM Forms usando serviços da Web* usa JAX-WS para criar classes proxy Java para invocar serviços. (Consulte [Criação de classes proxy Java usando JAX-WS](#creating-java-proxy-classes-using-jax-ws).)
+Para chamar os serviços da AEM Forms usando um serviço da Web, normalmente você cria uma biblioteca de proxy que consome o serviço WSDL. O *Chamar o AEM Forms usando serviços da Web* A seção usa o JAX-WS para criar classes proxy Java para chamar serviços. (Consulte [Criando classes proxy Java usando JAX-WS](#creating-java-proxy-classes-using-jax-ws).)
 
 Você pode recuperar um WDSL de serviço especificando a seguinte definição de URL (os itens entre colchetes são opcionais):
 
@@ -50,12 +49,12 @@ Você pode recuperar um WDSL de serviço especificando a seguinte definição de
 
 em que:
 
-* *your_* serverhostrepresenta o endereço IP do servidor de aplicativos J2EE que hospeda o AEM Forms.
-* *your_* portrepresenta a porta HTTP que o servidor de aplicativos J2EE usa.
-* *service_* namereapresenta o nome do serviço.
-* *A versão* representa a versão de destino de um serviço (a versão de serviço mais recente é usada por padrão).
-* `async` especifica o valor  `true` para habilitar operações adicionais para invocação assíncrona (  `false` por padrão).
-* *lc_* versionrepresenta a versão do AEM Forms que você deseja invocar.
+* *your_serverhost* representa o endereço IP do servidor de aplicativos J2EE que hospeda o AEM Forms.
+* *your_port* representa a porta HTTP que o servidor de aplicativos J2EE usa.
+* *service_name* representa o nome do serviço.
+* *version* representa a versão de destino de um serviço (a versão de serviço mais recente é usada por padrão).
+* `async` especifica o valor `true` para habilitar operações adicionais para invocação assíncrona ( `false` por padrão).
+* *lc_version* representa a versão do AEM Forms que você deseja invocar.
 
 A tabela a seguir lista as definições de WSDL de serviço (supondo que o AEM Forms esteja implantado no host local e a publicação seja 8080).
 
@@ -148,7 +147,7 @@ A tabela a seguir lista as definições de WSDL de serviço (supondo que o AEM F
 
 **Definições de WSDL do processo AEM Forms**
 
-Você deve especificar o nome do Aplicativo e o nome do Processo na definição WSDL para acessar um WSDL que pertence a um processo criado no Workbench. Suponha que o nome do aplicativo seja `MyApplication` e o nome do processo seja `EncryptDocument`. Nessa situação, especifique a seguinte definição de WSDL:
+Você deve especificar o nome do Aplicativo e o nome do Processo na definição WSDL para acessar um WSDL que pertence a um processo criado no Workbench. Suponha que o nome do aplicativo seja `MyApplication` e o nome do processo é `EncryptDocument`. Nessa situação, especifique a seguinte definição de WSDL:
 
 ```java
  http://localhost:8080/soap/services/MyApplication/EncryptDocument?wsdl
@@ -156,7 +155,7 @@ Você deve especificar o nome do Aplicativo e o nome do Processo na definição 
 
 >[!NOTE]
 >
->Para obter informações sobre o exemplo `MyApplication/EncryptDocument` processo de curta duração, consulte [Exemplo de processo de curta duração](/help/forms/developing/aem-forms-processes.md).
+>Para obter informações sobre o exemplo `MyApplication/EncryptDocument` processo de duração curta, consulte [Exemplo de processo de duração curta](/help/forms/developing/aem-forms-processes.md).
 
 >[!NOTE]
 >
@@ -170,7 +169,7 @@ Você deve especificar o nome do Aplicativo e o nome do Processo na definição 
 
 A nova funcionalidade do serviço AEM Forms pode ser acessada usando serviços da Web. Por exemplo, no AEM Forms, é introduzida a capacidade de codificar anexos usando MTOM. (Consulte [Chamar o AEM Forms usando MTOM](#invoking-aem-forms-using-mtom).)
 
-Para acessar a nova funcionalidade introduzida no AEM Forms, especifique o atributo `lc_version` na definição WSDL. Por exemplo, para acessar a nova funcionalidade do serviço (incluindo o suporte a MTOM), especifique a seguinte definição de WSDL:
+Para acessar a nova funcionalidade introduzida no AEM Forms, especifique o `lc_version` na definição WSDL. Por exemplo, para acessar a nova funcionalidade do serviço (incluindo o suporte a MTOM), especifique a seguinte definição de WSDL:
 
 ```java
  http://localhost:8080/soap/services/MyApplication/EncryptDocument?wsdl&lc_version=9.0.1
@@ -178,13 +177,13 @@ Para acessar a nova funcionalidade introduzida no AEM Forms, especifique o atrib
 
 >[!NOTE]
 >
->Ao definir o atributo `lc_version`, certifique-se de usar três dígitos. Por exemplo, 9.0.1 é igual à versão 9.0.
+>Ao definir a variável `lc_version` , certifique-se de usar três dígitos. Por exemplo, 9.0.1 é igual à versão 9.0.
 
 **Tipo de dados BLOB do serviço da Web**
 
-As WSDLs do serviço AEM Forms definem muitos tipos de dados. Um dos tipos de dados mais importantes expostos em um serviço da Web é um tipo `BLOB` . Esse tipo de dados mapeia para a classe `com.adobe.idp.Document` ao trabalhar com APIs Java do AEM Forms. (Consulte [Passar dados para serviços da AEM Forms usando a API do Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+As WSDLs do serviço AEM Forms definem muitos tipos de dados. Um dos tipos de dados mais importantes expostos em um serviço da Web é um `BLOB` tipo . Esse tipo de dados mapeia para a `com.adobe.idp.Document` ao trabalhar com APIs Java da AEM Forms. (Consulte [Passar dados para serviços da AEM Forms usando a API do Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
-Um objeto `BLOB` envia e recupera dados binários (por exemplo, arquivos PDF, dados XML e assim por diante) de e para os serviços da AEM Forms. O tipo `BLOB` é definido em um WSDL de serviço da seguinte maneira:
+A `BLOB` O objeto envia e recupera dados binários (por exemplo, arquivos PDF, dados XML e assim por diante) de e para os serviços da AEM Forms. O `BLOB` O tipo é definido em um WSDL de serviço da seguinte maneira:
 
 ```xml
  <complexType name="BLOB">
@@ -209,35 +208,35 @@ Um objeto `BLOB` envia e recupera dados binários (por exemplo, arquivos PDF, da
  </complexType>
 ```
 
-Os campos `MTOM` e `swaRef` são compatíveis somente no AEM Forms. Você pode usar esses novos campos somente se especificar um URL que inclui a propriedade `lc_version`.
+O `MTOM` e `swaRef` são compatíveis somente com o AEM Forms. Você pode usar esses novos campos somente se especificar um URL que inclui a variável `lc_version` propriedade.
 
 **Fornecimento de objetos BLOB em solicitações de serviço**
 
-Se uma operação de serviço AEM Forms exigir um tipo `BLOB` como valor de entrada, crie uma instância do tipo `BLOB` na lógica do aplicativo. (Muitos dos inícios rápidos do serviço da Web localizados em *Programação com formulários AEM* mostram como trabalhar com um tipo de dados BLOB.)
+Se uma operação de serviço AEM Forms exigir um `BLOB` digite como um valor de entrada, crie uma instância do `BLOB` digite a lógica do aplicativo. (Muitas das inicializações rápidas do serviço da Web estão localizadas em *Programação com formulários AEM* mostrar como trabalhar com um tipo de dados BLOB.)
 
-Atribua valores a campos que pertencem à instância `BLOB` da seguinte maneira:
+Atribua valores a campos que pertencem à variável `BLOB` instância da seguinte maneira:
 
-* **Base64**: Para passar dados como texto codificado em um formato Base64, defina os dados no  `BLOB.binaryData` campo e defina o tipo de dados no formato MIME (por exemplo,  `application/pdf`) no  `BLOB.contentType` campo . (Consulte [Chamar AEM Forms usando a codificação Base64](#invoking-aem-forms-using-base64-encoding).)
-* **MTOM**: Para transmitir dados binários em um anexo MTOM, defina os dados no  `BLOB.MTOM` campo . Essa configuração anexa os dados à solicitação SOAP usando a estrutura Java JAX-WS ou a API nativa da estrutura SOAP. (Consulte [Chamar o AEM Forms usando MTOM](#invoking-aem-forms-using-mtom).)
-* **SwaRef**: Para transmitir dados binários em um anexo WS-I SwaRef, defina os dados no  `BLOB.swaRef` campo . Essa configuração anexa os dados à solicitação SOAP usando a estrutura Java JAX-WS. (Consulte [Chamar o AEM Forms usando SwaRef](#invoking-aem-forms-using-swaref).)
-* **Anexo** MIME ou DIME: Para transmitir dados em um anexo MIME ou DIME, anexe os dados à solicitação SOAP usando a API nativa da estrutura SOAP. Defina o identificador do anexo no campo `BLOB.attachmentID`. (Consulte [Chamar AEM Forms usando a codificação Base64](#invoking-aem-forms-using-base64-encoding).)
-* **URL** remoto: Se os dados forem hospedados em um servidor da Web e acessíveis por meio de um URL HTTP, defina o URL HTTP no  `BLOB.remoteURL` campo . (Consulte [Chamar o AEM Forms usando dados BLOB sobre HTTP](#invoking-aem-forms-using-blob-data-over-http).)
+* **Base64**: Para passar dados como texto codificado em um formato Base64, defina os dados no `BLOB.binaryData` e definir o tipo de dados no formato MIME (por exemplo, `application/pdf`) na `BLOB.contentType` campo. (Consulte [Chamada de AEM Forms usando codificação Base64](#invoking-aem-forms-using-base64-encoding).)
+* **MTOM**: Para transmitir dados binários em um anexo MTOM, defina os dados no `BLOB.MTOM` campo. Essa configuração anexa os dados à solicitação SOAP usando a estrutura Java JAX-WS ou a API nativa da estrutura SOAP. (Consulte [Chamar o AEM Forms usando MTOM](#invoking-aem-forms-using-mtom).)
+* **SwaRef**: Para transmitir dados binários em um anexo WS-I SwaRef, defina os dados no `BLOB.swaRef` campo. Essa configuração anexa os dados à solicitação SOAP usando a estrutura Java JAX-WS. (Consulte [Chamar o AEM Forms usando SwaRef](#invoking-aem-forms-using-swaref).)
+* **anexo MIME ou DIME**: Para transmitir dados em um anexo MIME ou DIME, anexe os dados à solicitação SOAP usando a API nativa da estrutura SOAP. Defina o identificador do anexo na função `BLOB.attachmentID` campo. (Consulte [Chamada de AEM Forms usando codificação Base64](#invoking-aem-forms-using-base64-encoding).)
+* **URL remoto**: Se os dados forem hospedados em um servidor da Web e acessíveis por meio de um URL HTTP, defina o URL HTTP no `BLOB.remoteURL` campo. (Consulte [Chamada de AEM Forms usando dados BLOB sobre HTTP](#invoking-aem-forms-using-blob-data-over-http).)
 
 **Acesso a dados em objetos BLOB retornados de serviços**
 
-O protocolo de transmissão para objetos `BLOB` retornados depende de vários fatores, que são considerados na seguinte ordem, interrompendo quando a condição principal é atendida:
+O protocolo de transmissão para retornado `BLOB` Os objetos dependem de vários fatores, que são considerados na seguinte ordem, interrompendo quando a condição principal for atendida:
 
-1. **O URL de destino especifica o protocolo** de transmissão. Se o URL de destino especificado na invocação SOAP contiver o parâmetro `blob="`*BLOB_TYPE*&quot;, então *BLOB_TYPE* determinará o protocolo de transmissão. *BLOB_* TYPEé um espaço reservado para base64, dime, mime, http, mtom ou swaref.
-1. **O ponto de extremidade SOAP do serviço é Smart**. Se as condições a seguir forem verdadeiras, os documentos de saída serão retornados usando o mesmo protocolo de transmissão que os documentos de entrada:
+1. **O URL de destino especifica o protocolo de transmissão**. Se o URL de destino especificado na invocação SOAP contiver o parâmetro `blob="`*BLOB_TYPE*&quot;, então *BLOB_TYPE* determina o protocolo de transmissão. *BLOB_TYPE* é um espaço reservado para base64, dime, mime, http, mtom ou swaref.
+1. **O ponto de extremidade SOAP do serviço é inteligente**. Se as condições a seguir forem verdadeiras, os documentos de saída serão retornados usando o mesmo protocolo de transmissão que os documentos de entrada:
 
    * O parâmetro de ponto de extremidade SOAP do serviço Protocolo Padrão para Objetos Blob de Saída está definido como Inteligente.
 
-      Para cada serviço com um terminal SOAP, o console de administração permite especificar o protocolo de transmissão para os blobs retornados. (Consulte [ajuda de administração](https://www.adobe.com/go/learn_aemforms_admin_63).)
+      Para cada serviço com um terminal SOAP, o console de administração permite especificar o protocolo de transmissão para os blobs retornados. (Consulte [ajuda administrativa](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
    * O serviço AEM Forms utiliza um ou mais documentos como entrada.
 
-1. **O ponto de extremidade SOAP de serviço não é inteligente**. O protocolo configurado determina o protocolo de transmissão do documento e os dados são retornados no campo `BLOB` correspondente. Por exemplo, se o ponto de extremidade SOAP estiver definido como DIME, o blob retornado estará no campo `blob.attachmentID` independentemente do protocolo de transmissão de qualquer documento de entrada.
-1. **Caso contrário**. Se um serviço não assumir o tipo de documento como entrada, os documentos de saída serão retornados no campo `BLOB.remoteURL` sobre o protocolo HTTP.
+1. **O ponto de extremidade SOAP de serviço não é inteligente**. O protocolo configurado determina o protocolo de transmissão do documento e os dados são retornados no protocolo correspondente `BLOB` campo. Por exemplo, se o ponto de extremidade SOAP estiver definido como DIME, o blob retornado estará no `blob.attachmentID` independentemente do protocolo de transmissão de qualquer documento de entrada.
+1. **Caso contrário**. Se um serviço não tomar o tipo de documento como entrada, os documentos de saída serão retornados na `BLOB.remoteURL` sobre o protocolo HTTP.
 
 Conforme descrito na primeira condição, é possível garantir o tipo de transmissão para quaisquer documentos retornados estendendo o URL do ponto de extremidade SOAP com um sufixo, da seguinte maneira:
 
@@ -248,26 +247,26 @@ Conforme descrito na primeira condição, é possível garantir o tipo de transm
 
 Esta é a correlação entre os tipos de transmissão e o campo a partir do qual você obtém os dados:
 
-* **Formato** Base64: Defina o  `blob` sufixo como  `base64` para retornar os dados no  `BLOB.binaryData` campo .
-* **Anexo** MIME ou DIME: Defina o  `blob` sufixo como  `DIME` ou  `MIME` para retornar os dados como um tipo de anexo correspondente com o identificador de anexo retornado no  `BLOB.attachmentID` campo . Use a API proprietária da estrutura SOAP para ler os dados do anexo.
-* **URL** remoto: Defina o  `blob` sufixo como  `http` para manter os dados no servidor de aplicativos e retorne o URL apontando para os dados no  `BLOB.remoteURL` campo .
-* **MTOM ou SwaRef**: Defina o  `blob` sufixo como  `mtom` ou  `swaref` para retornar os dados como um tipo de anexo correspondente com o identificador de anexo retornado nos campos  `BLOB.MTOM` ou  `BLOB.swaRef` . Use a API nativa da estrutura SOAP para ler os dados do anexo.
+* **Formato Base64**: Defina as `blob` sufixo para `base64` para retornar os dados no `BLOB.binaryData` campo.
+* **anexo MIME ou DIME**: Defina as `blob` sufixo para `DIME` ou `MIME` para retornar os dados como um tipo de anexo correspondente com o identificador de anexo retornado no `BLOB.attachmentID` campo. Use a API proprietária da estrutura SOAP para ler os dados do anexo.
+* **URL remoto**: Defina as `blob` sufixo para `http` para manter os dados no servidor de aplicativos e retornar o URL apontando para os dados no `BLOB.remoteURL` campo.
+* **MTOM ou SwaRef**: Defina as `blob` sufixo para `mtom` ou `swaref` para retornar os dados como um tipo de anexo correspondente com o identificador de anexo retornado no `BLOB.MTOM` ou `BLOB.swaRef` campos. Use a API nativa da estrutura SOAP para ler os dados do anexo.
 
 >[!NOTE]
 >
->É recomendável não exceder 30 MB ao preencher um objeto `BLOB` chamando seu método `setBinaryData`. Caso contrário, há a possibilidade de ocorrer uma exceção `OutOfMemory`.
+>Recomenda-se que você não exceda 30 MB quando preencher um `BLOB` ao invocar seu `setBinaryData` método . Caso contrário, há a possibilidade de que uma `OutOfMemory` ocorre exceção.
 
 >[!NOTE]
 >
->Os aplicativos baseados em WS JAX que usam o protocolo de transmissão MTOM são limitados a 25 MB de dados enviados e recebidos. Essa limitação ocorre devido a um bug no JAX-WS. Se o tamanho combinado de seus arquivos enviados e recebidos exceder 25 MB, use o protocolo de transmissão SwaRef em vez do MTOM. Caso contrário, há a possibilidade de uma exceção `OutOfMemory`.
+>Os aplicativos baseados em WS JAX que usam o protocolo de transmissão MTOM são limitados a 25 MB de dados enviados e recebidos. Essa limitação ocorre devido a um bug no JAX-WS. Se o tamanho combinado de seus arquivos enviados e recebidos exceder 25 MB, use o protocolo de transmissão SwaRef em vez do MTOM. Caso contrário, existe a possibilidade de `OutOfMemory` exceção.
 
 **Transmissão MTOM de matrizes de bytes codificadas em base64**
 
-Além do objeto `BLOB`, o protocolo MTOM suporta qualquer parâmetro de matriz de bytes ou campo de matriz de bytes de um tipo complexo. Isso significa que as estruturas SOAP do cliente que oferecem suporte ao MTOM podem enviar qualquer elemento `xsd:base64Binary` como um anexo MTOM (em vez de um texto codificado em base64). Os pontos de extremidade SOAP AEM Forms podem ler esse tipo de codificação de matriz de bytes. No entanto, o serviço AEM Forms sempre retorna um tipo de matriz de bytes como um texto codificado em base64. Os parâmetros da matriz de bytes de saída não são compatíveis com MTOM.
+Além do `BLOB` , o protocolo MTOM suporta qualquer parâmetro de matriz de bytes ou campo de matriz de bytes de um tipo complexo. Isso significa que as estruturas SOAP do cliente compatíveis com MTOM podem enviar qualquer `xsd:base64Binary` elemento como um anexo MTOM (em vez de um texto codificado em base64). Os pontos de extremidade SOAP AEM Forms podem ler esse tipo de codificação de matriz de bytes. No entanto, o serviço AEM Forms sempre retorna um tipo de matriz de bytes como um texto codificado em base64. Os parâmetros da matriz de bytes de saída não são compatíveis com MTOM.
 
 Os serviços da AEM Forms que retornam uma grande quantidade de dados binários usam o tipo Documento/BLOB em vez do tipo de matriz de bytes. O tipo de documento é muito mais eficiente para transmitir grandes quantidades de dados.
 
-## Tipos de dados de serviço da Web {#web-service-data-types}
+## Tipos de dados do serviço da Web {#web-service-data-types}
 
 A tabela a seguir lista os tipos de dados Java e mostra o tipo de dados do serviço da Web correspondente.
 
@@ -289,11 +288,11 @@ A tabela a seguir lista os tipos de dados Java e mostra o tipo de dados do servi
   </tr>
   <tr>
    <td><p><code>java.util.Date</code></p></td>
-   <td><p>O tipo <code>DATE</code>, que é definido em um WSDL de serviço como segue:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Se uma operação de serviço AEM Forms receber um valor <code>java.util.Date</code> como entrada, o aplicativo cliente SOAP deverá passar a data no campo <code>DATE.date</code>. Configurar o campo <code>DATE.calendar</code> nesse caso causa uma exceção de tempo de execução. Se o serviço retornar um <code>java.util.Date</code>, a data será retornada no campo <code>DATE.date</code>.</p></td>
+   <td><p>O <code>DATE</code> tipo , que é definido em um WSDL de serviço da seguinte maneira:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Se uma operação de serviço AEM Forms utiliza um <code>java.util.Date</code> como entrada, o aplicativo cliente SOAP deve passar a data no <code>DATE.date</code> campo. Definir a <code>DATE.calendar</code> nesse caso, causa uma exceção de tempo de execução. Se o serviço retornar um <code>java.util.Date</code>, a data é retornada na variável <code>DATE.date</code> campo.</p></td>
   </tr>
   <tr>
    <td><p><code>java.util.Calendar</code></p></td>
-   <td><p>O tipo <code>DATE</code>, que é definido em um WSDL de serviço como segue:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Se uma operação de serviço AEM Forms receber um valor <code>java.util.Calendar</code> como entrada, o aplicativo cliente SOAP deverá passar a data no campo <code>DATE.caledendar</code>. Configurar o campo <code>DATE.date</code> nesse caso causa uma exceção de tempo de execução. Se o serviço retornar um <code>java.util.Calendar</code>, a data será retornada no campo <code>DATE.calendar</code>. </p></td>
+   <td><p>O <code>DATE</code> tipo , que é definido em um WSDL de serviço da seguinte maneira:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Se uma operação de serviço AEM Forms utiliza um <code>java.util.Calendar</code> como entrada, o aplicativo cliente SOAP deve passar a data no <code>DATE.caledendar</code> campo. Definir a <code>DATE.date</code> nesse caso, causa uma exceção de tempo de execução. Se o serviço retornar um <code>java.util.Calendar</code>, a data é retornada na variável <code>DATE.calendar</code> campo. </p></td>
   </tr>
   <tr>
    <td><p><code>java.math.BigDecimal</code></p></td>
@@ -341,26 +340,14 @@ A tabela a seguir lista os tipos de dados Java e mostra o tipo de dados do servi
   </tr>
   <tr>
    <td><p><code>org.w3c.dom.Document</code></p></td>
-   <td><p>O tipo XML, que é definido em um WSDL de serviço da seguinte maneira:</p><p><code>&lt;complexType name="XML"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="document" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="element" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Se uma operação de serviço AEM Forms aceitar um valor <code>org.w3c.dom.Document</code>, passe os dados XML no campo <code>XML.document</code>.</p><p>Configurar o campo <code>XML.element</code> causa uma exceção de tempo de execução. Se o serviço retornar um <code>org.w3c.dom.Document</code>, os dados XML serão retornados no campo <code>XML.document</code>.</p></td>
+   <td><p>O tipo XML, que é definido em um WSDL de serviço da seguinte maneira:</p><p><code>&lt;complexType name="XML"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="document" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="element" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Se uma operação de serviço da AEM Forms aceitar uma <code>org.w3c.dom.Document</code> passe os dados XML no <code>XML.document</code> campo.</p><p>Definir a <code>XML.element</code> causa uma exceção de tempo de execução. Se o serviço retornar um <code>org.w3c.dom.Document</code>, os dados XML são retornados na variável <code>XML.document</code> campo.</p></td>
   </tr>
   <tr>
    <td><p><code>org.w3c.dom.Element</code></p></td>
-   <td><p>O tipo XML, que é definido em um WSDL de serviço da seguinte maneira:</p><p><code>&lt;complexType name="XML"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="document" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="element" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Se uma operação de serviço AEM Forms receber um <code>org.w3c.dom.Element</code> como entrada, passe os dados XML no campo <code>XML.element</code>.</p><p>Configurar o campo <code>XML.document</code> causa uma exceção de tempo de execução. Se o serviço retornar um <code>org.w3c.dom.Element</code>, os dados XML serão retornados no campo <code>XML.element</code>.</p></td>
+   <td><p>O tipo XML, que é definido em um WSDL de serviço da seguinte maneira:</p><p><code>&lt;complexType name="XML"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="document" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="element" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Se uma operação de serviço AEM Forms utiliza um <code>org.w3c.dom.Element</code> como entrada, passe os dados XML no <code>XML.element</code> campo.</p><p>Definir a <code>XML.document</code> causa uma exceção de tempo de execução. Se o serviço retornar um <code>org.w3c.dom.Element</code>, os dados XML são retornados na variável <code>XML.element</code> campo.</p></td>
   </tr>
  </tbody>
 </table>
-
-**Site do desenvolvedor do Adobe**
-
-O site do Desenvolvedor do Adobe contém o seguinte artigo que discute a chamada de serviços da AEM Forms usando a API do serviço da Web:
-
-[Criação de formulários de renderização de aplicativos ASP.NET](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)
-
-[Chamar serviços da Web usando componentes personalizados](https://www.adobe.com/devnet/livecycle/articles/extend_webservices.html)
-
->[!NOTE]
->
->Invocar serviços da Web usando componentes personalizados descreve como criar um componente do AEM Forms que chama serviços da Web de terceiros.
 
 ## Criando classes proxy Java usando JAX-WS {#creating-java-proxy-classes-using-jax-ws}
 
@@ -369,17 +356,17 @@ Você pode usar o JAX-WS para converter um WSDL de serviço da Forms em classes 
 1. Instale o Apache Ant no computador cliente. (Consulte [https://ant.apache.org/bindownload.cgi](https://ant.apache.org/bindownload.cgi).)
 
    * Adicione o diretório bin ao caminho da classe.
-   * Defina a variável de ambiente `ANT_HOME` no diretório em que instalou o Ant.
+   * Defina as `ANT_HOME` variável de ambiente no diretório em que você instalou o Ant.
 
 1. Instale o JDK 1.6 ou posterior.
 
    * Adicione o diretório JDK bin ao caminho da classe.
-   * Adicione o diretório JRE bin ao caminho da classe. Esse compartimento está localizado no diretório `[JDK_INSTALL_LOCATION]/jre`.
-   * Defina a variável de ambiente `JAVA_HOME` no diretório em que você instalou o JDK.
+   * Adicione o diretório JRE bin ao caminho da classe. Esse compartimento está localizado na `[JDK_INSTALL_LOCATION]/jre` diretório.
+   * Defina as `JAVA_HOME` variável de ambiente no diretório em que você instalou o JDK.
 
    O JDK 1.6 inclui o programa wsimport usado no arquivo build.xml. O JDK 1.5 não inclui esse programa.
 
-1. Instale o JAX-WS no computador cliente. (Consulte [API do Java para XML Web Services](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).)
+1. Instale o JAX-WS no computador cliente. (Consulte [API Java para serviços XML da Web](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).)
 1. Use JAX-WS e Apache Ant para gerar classes proxy Java. Crie um script de criação Ant para realizar essa tarefa. O script a seguir é um exemplo de script de compilação Ant chamado build.xml:
 
    ```xml
@@ -428,11 +415,11 @@ Você pode usar o JAX-WS para converter um WSDL de serviço da Forms em classes 
     </project>
    ```
 
-   Nesse script de criação Ant, observe que a propriedade `url` está definida para fazer referência ao WSDL do serviço de criptografia em execução no host local. As propriedades `username` e `password` devem ser definidas como um nome de usuário e senha válidos para formulários AEM. Observe que o URL contém o atributo `lc_version` . Sem especificar a opção `lc_version`, não é possível chamar novas operações do serviço AEM Forms.
+   Nesse script de criação Ant, observe que a variável `url` é definida para fazer referência ao WSDL do serviço de criptografia em execução no host local. O `username` e `password` As propriedades devem ser definidas com um nome de usuário e senha válidos para formulários AEM. Observe que o URL contém a variável `lc_version` atributo. Sem especificar o `lc_version` não é possível chamar novas operações do serviço AEM Forms.
 
    >[!NOTE]
    >
-   >Substitua `EncryptionService`pelo nome do serviço AEM Forms que você deseja invocar usando classes proxy Java. Por exemplo, para criar classes proxy Java para o serviço Rights Management, especifique:
+   >Substituir `EncryptionService`com o nome do serviço AEM Forms que você deseja invocar usando classes proxy Java. Por exemplo, para criar classes proxy Java para o serviço Rights Management, especifique:
 
    ```java
     http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1
@@ -450,20 +437,20 @@ Você pode usar o JAX-WS para converter um WSDL de serviço da Forms em classes 
 
    * Crie um novo projeto Java usado para empacotar os arquivos JAVA de proxy em um arquivo JAR.
    * Crie uma pasta de origem no projeto.
-   * Crie um pacote `com.adobe.idp.services` na pasta Origem.
-   * Selecione o pacote `com.adobe.idp.services` e depois importe os arquivos JAVA da pasta adobe/idp/services para o pacote.
-   * Se necessário, crie um pacote `org/apache/xml/xmlsoap` na pasta Origem.
+   * Crie um `com.adobe.idp.services` na pasta Origem.
+   * Selecione o `com.adobe.idp.services` e, em seguida, importe os arquivos JAVA da pasta adobe/idp/services para o pacote.
+   * Se necessário, crie uma `org/apache/xml/xmlsoap` na pasta Origem.
    * Selecione a pasta de origem e importe os arquivos JAVA da pasta org/apache/xml/xmlsoap.
    * Defina o nível de conformidade do compilador Java para 5.0 ou superior.
    * Crie o projeto.
    * Exporte o projeto como um arquivo JAR.
-   * Importe este arquivo JAR no caminho de classe de um projeto cliente. Além disso, importe todos os arquivos JAR localizados em &lt;Diretório de instalação>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty.
+   * Importe este arquivo JAR no caminho de classe de um projeto cliente. Além disso, importe todos os arquivos JAR localizados em &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty.
 
    >[!NOTE]
    >
    >Todas as inicializações rápidas do serviço da Web Java (exceto o serviço Forms) localizadas em Programação com AEM formulários criam arquivos proxy Java usando JAX-WS. Além disso, todos os serviços da Web Java são iniciados rapidamente, use SwaRef. (Consulte [Chamar o AEM Forms usando SwaRef](#invoking-aem-forms-using-swaref).)
 
-**Consulte também:**
+**Consulte também**
 
 [Criação de classes proxy Java usando o Apache Axis](#creating-java-proxy-classes-using-apache-axis)
 
@@ -486,10 +473,10 @@ Você pode gerar arquivos de biblioteca Java do Axis executando as seguintes eta
 1. Instale o Apache Ant no computador cliente. Está disponível em [https://ant.apache.org/bindownload.cgi](https://ant.apache.org/bindownload.cgi).
 
    * Adicione o diretório bin ao caminho da classe.
-   * Defina a variável de ambiente `ANT_HOME` no diretório em que instalou o Ant.
+   * Defina as `ANT_HOME` variável de ambiente no diretório em que você instalou o Ant.
 
-1. Instale o Apache Axis 1.4 no computador cliente. Está disponível em [https://ws.apache.org/axis/](https://ws.apache.org/axis/.md).
-1. Configure o caminho de classe para usar os arquivos JAR do Axis no cliente do serviço da Web, conforme descrito nas instruções de instalação do Axis em [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html).
+1. Instale o Apache Axis 1.4 no computador cliente. Está disponível em [https://ws.apache.org/axis/](https://ws.apache.org/axis/).
+1. Configure o caminho da classe para usar os arquivos JAR do Axis no cliente do serviço da Web, conforme descrito nas instruções de instalação do Axis em [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html).
 1. Use a ferramenta Apache WSDL2Java no Axis para gerar classes proxy Java. Crie um script de criação Ant para realizar essa tarefa. O script a seguir é um exemplo de script de compilação Ant chamado build.xml:
 
    ```java
@@ -519,7 +506,7 @@ Você pode gerar arquivos de biblioteca Java do Axis executando as seguintes eta
     </project>
    ```
 
-   Nesse script de criação Ant, observe que a propriedade `url` está definida para fazer referência ao WSDL do serviço de criptografia em execução no host local. As propriedades `username` e `password` devem ser definidas como um nome de usuário e senha válidos para formulários AEM.
+   Nesse script de criação Ant, observe que a variável `url` é definida para fazer referência ao WSDL do serviço de criptografia em execução no host local. O `username` e `password` As propriedades devem ser definidas com um nome de usuário e senha válidos para formulários AEM.
 
 1. Crie um arquivo BAT para executar o script de compilação Ant. O seguinte comando pode ser localizado em um arquivo BAT responsável pela execução do script de compilação Ant:
 
@@ -527,15 +514,15 @@ Você pode gerar arquivos de biblioteca Java do Axis executando as seguintes eta
     ant -buildfile "build.xml" encryption-wsdl2java-client
    ```
 
-   Os arquivos JAVA são gravados na propriedade C:\JavaFiles folder as specified by the `output` . Para chamar com êxito o serviço Forms, importe esses arquivos JAVA para o caminho da classe.
+   Os arquivos JAVA são gravados no diretório C:\JavaFiles folder as specified by the `output` propriedade. Para chamar com êxito o serviço Forms, importe esses arquivos JAVA para o caminho da classe.
 
    Por padrão, esses arquivos pertencem a um pacote Java chamado `com.adobe.idp.services`. É recomendável colocar esses arquivos JAVA em um arquivo JAR. Em seguida, importe o arquivo JAR para o caminho de classe do seu aplicativo cliente.
 
    >[!NOTE]
    >
-   >Há diferentes maneiras de colocar arquivos .JAVA em um JAR. Uma maneira é usar um Java IDE como o Eclipse. Crie um projeto Java e crie um pacote `com.adobe.idp.services`(todos os arquivos .JAVA pertencem a esse pacote). Em seguida, importe todos os arquivos .JAVA para o pacote. Por fim, exporte o projeto como um arquivo JAR.
+   >Há diferentes maneiras de colocar arquivos .JAVA em um JAR. Uma maneira é usar um Java IDE como o Eclipse. Crie um projeto Java e crie um `com.adobe.idp.services`(todos os arquivos .JAVA pertencem a esse pacote). Em seguida, importe todos os arquivos .JAVA para o pacote. Por fim, exporte o projeto como um arquivo JAR.
 
-1. Altere o URL na classe `EncryptionServiceLocator` para especificar o tipo de codificação. Por exemplo, para usar base64, especifique `?blob=base64` para garantir que o objeto `BLOB` retorne dados binários. Ou seja, na classe `EncryptionServiceLocator`, localize a seguinte linha de código:
+1. Altere o URL no `EncryptionServiceLocator` classe para especificar o tipo de codificação. Por exemplo, para usar base64, especifique `?blob=base64` para assegurar que `BLOB` retorna dados binários. Ou seja, no `EncryptionServiceLocator` localize a seguinte linha de código:
 
    ```java
     http://localhost:8080/soap/services/EncryptionService;
@@ -567,9 +554,9 @@ Você pode gerar arquivos de biblioteca Java do Axis executando as seguintes eta
    * xbean.jar
    * xercesImpl.jar
 
-   Esses arquivos JAR estão no diretório `[install directory]/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty`.
+   Esses arquivos JAR estão na `[install directory]/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty` diretório.
 
-**Consulte também:**
+**Consulte também**
 
 [Criando classes proxy Java usando JAX-WS](#creating-java-proxy-classes-using-jax-ws)
 
@@ -579,29 +566,29 @@ Você pode gerar arquivos de biblioteca Java do Axis executando as seguintes eta
 
 ## Chamada de AEM Forms usando codificação Base64 {#invoking-aem-forms-using-base64-encoding}
 
-Você pode chamar um serviço AEM Forms usando a codificação Base64. Codificação Base64 codifica anexos que são enviados com uma solicitação de invocação de serviço da Web. Ou seja, os dados `BLOB` são codificados em Base64, não na mensagem SOAP inteira.
+Você pode chamar um serviço AEM Forms usando a codificação Base64. Codificação Base64 codifica anexos que são enviados com uma solicitação de invocação de serviço da Web. Ou seja, `BLOB` Os dados são codificados em Base64, não na mensagem SOAP inteira.
 
 &quot;Chamar o AEM Forms usando a codificação Base64&quot; discute chamar o seguinte processo de curta duração do AEM Forms chamado `MyApplication/EncryptDocument` usando a codificação Base64.
 
 >[!NOTE]
 >
->Esse processo não se baseia em um processo AEM Forms existente. Para seguir junto com o exemplo de código, crie um processo chamado `MyApplication/EncryptDocument` usando o Workbench. (Consulte [Usando Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Esse processo não se baseia em um processo AEM Forms existente. Para seguir junto com o exemplo de código, crie um processo chamado `MyApplication/EncryptDocument` usando o Workbench. (Consulte [Uso do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Quando esse processo é chamado, ele executa as seguintes ações:
 
-1. Obtém o documento PDF não seguro passado para o processo. Esta ação é baseada na operação `SetValue`. O parâmetro de entrada desse processo é uma variável de processo `document` chamada `inDoc`.
-1. Criptografa o documento PDF com uma senha. Esta ação é baseada na operação `PasswordEncryptPDF`. O documento PDF criptografado por senha é retornado em uma variável de processo chamada `outDoc`.
+1. Obtém o documento PDF não seguro passado para o processo. Essa ação se baseia na variável `SetValue` operação. O parâmetro de entrada para esse processo é um `document` variável de processo nomeada `inDoc`.
+1. Criptografa o documento PDF com uma senha. Essa ação se baseia na variável `PasswordEncryptPDF` operação. O documento PDF criptografado por senha é retornado em uma variável de processo chamada `outDoc`.
 
 ### Criando um assembly de cliente .NET que usa codificação Base64 {#creating-a-net-client-assembly-that-uses-base64-encoding}
 
-Você pode criar um assembly de cliente .NET para chamar um serviço Forms de um projeto do Microsoft Visual Studio .NET. Para criar um assembly de cliente .NET que use codificação base64, execute as seguintes etapas:
+Você pode criar um assembly de cliente .NET para chamar um serviço Forms de um projeto Microsoft Visual Studio .NET. Para criar um assembly de cliente .NET que use codificação base64, execute as seguintes etapas:
 
 1. Crie uma classe proxy com base em um URL de invocação do AEM Forms.
-1. Crie um projeto do Microsoft Visual Studio .NET que produz o assembly do cliente .NET.
+1. Crie um projeto Microsoft Visual Studio .NET que produz o assembly do cliente .NET.
 
 **Criação de uma classe proxy**
 
-Você pode criar uma classe proxy usada para criar o assembly do cliente .NET usando uma ferramenta que acompanha o Microsoft Visual Studio. O nome da ferramenta é wsdl.exe e está localizado na pasta de instalação do Microsoft Visual Studio. Para criar uma classe proxy, abra o prompt de comando e navegue até a pasta que contém o arquivo wsdl.exe. Para obter mais informações sobre a ferramenta wsdl.exe, consulte a *Ajuda do MSDN*.
+Você pode criar uma classe proxy usada para criar o assembly do cliente .NET usando uma ferramenta que acompanha o Microsoft Visual Studio. O nome da ferramenta é wsdl.exe e está localizado na pasta de instalação do Microsoft Visual Studio. Para criar uma classe proxy, abra o prompt de comando e navegue até a pasta que contém o arquivo wsdl.exe. Para obter mais informações sobre a ferramenta wsdl.exe, consulte o *Ajuda do MSDN*.
 
 Digite o seguinte comando no prompt de comando:
 
@@ -611,7 +598,7 @@ Digite o seguinte comando no prompt de comando:
 
 Por padrão, essa ferramenta cria um arquivo CS na mesma pasta que se baseia no nome do WSDL. Nessa situação, ele cria um arquivo CS chamado *EncryptDocumentService.cs*. Use esse arquivo CS para criar um objeto proxy que permita chamar o serviço especificado no URL de invocação.
 
-Altere o URL na classe proxy para incluir `?blob=base64` para garantir que o objeto `BLOB` retorne dados binários. Na classe proxy, localize a seguinte linha de código:
+Alterar o URL na classe de proxy para incluir `?blob=base64` para assegurar que `BLOB` retorna dados binários. Na classe proxy, localize a seguinte linha de código:
 
 ```java
  "https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument";
@@ -623,7 +610,7 @@ e alterá-lo para:
  "https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64";
 ```
 
-A seção *Invocar AEM Forms usando Codificação Base64* usa `MyApplication/EncryptDocument` como exemplo. Se estiver criando um assembly de cliente .NET para outro serviço Forms, substitua `MyApplication/EncryptDocument` pelo nome do serviço.
+O *Chamada de AEM Forms usando codificação Base64* usos da seção `MyApplication/EncryptDocument` como exemplo. Se estiver criando um assembly de cliente .NET para outro serviço Forms, certifique-se de substituir `MyApplication/EncryptDocument` com o nome do serviço.
 
 **Desenvolvendo o assembly do cliente .NET**
 
@@ -632,78 +619,78 @@ Crie um projeto do Visual Studio Class Library que produz um assembly de cliente
 1. Inicie o Microsoft Visual Studio .NET.
 1. Crie um projeto da Biblioteca de classes e o nomeie como DocumentService.
 1. Importe o arquivo CS criado usando wsdl.exe.
-1. No menu **Project**, selecione **Adicionar referência**.
+1. No **Projeto** selecione **Adicionar referência**.
 1. Na caixa de diálogo Adicionar referência, selecione **System.Web.Services.dll**.
-1. Clique em **Selecione** e depois clique em **OK**.
+1. Clique em **Selecionar** e, em seguida, clique em **OK**.
 1. Compile e crie o projeto.
 
 >[!NOTE]
 >
->Este procedimento cria um assembly de cliente .NET chamado DocumentService.dll que pode ser usado para enviar solicitações SOAP para o serviço `MyApplication/EncryptDocument`.
+>Este procedimento cria um assembly de cliente .NET chamado DocumentService.dll que pode ser usado para enviar solicitações SOAP para o `MyApplication/EncryptDocument` serviço.
 
 >[!NOTE]
 >
->Certifique-se de ter adicionado `?blob=base64` ao URL na classe proxy usada para criar o assembly do cliente .NET. Caso contrário, você não poderá recuperar dados binários do objeto `BLOB`.
+>Certifique-se de ter adicionado `?blob=base64` ao URL na classe proxy usada para criar o assembly do cliente .NET. Caso contrário, não será possível recuperar dados binários da variável `BLOB` objeto.
 
 **Fazendo referência ao assembly do cliente .NET**
 
-Coloque o conjunto de clientes .NET recém-criado no computador onde está desenvolvendo o aplicativo cliente. Depois de colocar o assembly do cliente .NET em um diretório, você pode referenciá-lo a partir de um projeto. Consulte também a biblioteca `System.Web.Services` do seu projeto. Se não fizer referência a esta biblioteca, não poderá utilizar a assemblagem de cliente .NET para invocar um serviço.
+Coloque o conjunto de clientes .NET recém-criado no computador onde está desenvolvendo o aplicativo cliente. Depois de colocar o assembly do cliente .NET em um diretório, você pode referenciá-lo a partir de um projeto. Consulte também a `System.Web.Services` biblioteca do seu projeto. Se não fizer referência a esta biblioteca, não poderá utilizar a assemblagem de cliente .NET para invocar um serviço.
 
-1. No menu **Project**, selecione **Adicionar referência**.
-1. Clique na guia **.NET**.
+1. No **Projeto** selecione **Adicionar referência**.
+1. Clique no botão **.NET** guia .
 1. Clique em **Procurar** e localize o arquivo DocumentService.dll.
-1. Clique em **Selecione** e depois clique em **OK**.
+1. Clique em **Selecionar** e, em seguida, clique em **OK**.
 
 **Chamando um serviço usando um assembly de cliente .NET que usa codificação Base64**
 
-Você pode chamar o serviço `MyApplication/EncryptDocument` (que foi criado no Workbench) usando um assembly de cliente .NET que usa codificação Base64. Para chamar o serviço `MyApplication/EncryptDocument`, execute as seguintes etapas:
+Você pode invocar o `MyApplication/EncryptDocument` serviço (que foi criado no Workbench) usando um assembly de cliente .NET que usa codificação Base64. Para invocar o `MyApplication/EncryptDocument` execute as seguintes etapas:
 
-1. Crie um conjunto de clientes do Microsoft .NET que consuma o WSDL do serviço `MyApplication/EncryptDocument`.
-1. Crie um projeto cliente do Microsoft .NET. Faça referência ao assembly do cliente Microsoft .NET no projeto do cliente. Consulte também `System.Web.Services`.
-1. Usando o assembly do cliente Microsoft .NET, crie um objeto `MyApplication_EncryptDocumentService` chamando seu construtor padrão.
-1. Defina a propriedade `MyApplication_EncryptDocumentService` do objeto `Credentials` com um objeto `System.Net.NetworkCredential`. No construtor `System.Net.NetworkCredential`, especifique um nome de usuário para formulários AEM e a senha correspondente. Defina valores de autenticação para permitir que o aplicativo cliente .NET troque mensagens SOAP com AEM Forms com êxito.
-1. Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar um documento PDF enviado para o processo `MyApplication/EncryptDocument`.
-1. Crie um objeto `System.IO.FileStream` chamando seu construtor. Passe um valor de string que representa o local do arquivo do documento PDF e o modo no qual o arquivo deve ser aberto.
-1. Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `System.IO.FileStream` do objeto `Length`.
-1. Preencha a matriz de bytes com dados de fluxo chamando o método `System.IO.FileStream` do objeto `Read`. Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para ler.
-1. Preencha o objeto `BLOB` atribuindo sua propriedade `binaryData` ao conteúdo da matriz de bytes.
-1. Chame o processo `MyApplication/EncryptDocument` chamando o método `MyApplication_EncryptDocumentService` do objeto `invoke` e transmitindo o objeto `BLOB` que contém o documento PDF. Esse processo retorna um documento PDF criptografado dentro de um objeto `BLOB`.
-1. Crie um objeto `System.IO.FileStream` chamando seu construtor e passando um valor de string que representa o local do arquivo do documento criptografado por senha.
-1. Crie uma matriz de bytes que armazene o conteúdo de dados do objeto `BLOB` retornado pelo método `MyApplicationEncryptDocumentService` do objeto `invoke`. Preencha a matriz de bytes obtendo o valor do membro de dados `BLOB` do objeto `binaryData`.
-1. Crie um objeto `System.IO.BinaryWriter` chamando seu construtor e passando o objeto `System.IO.FileStream`.
-1. Grave o conteúdo da matriz de bytes em um arquivo PDF chamando o método `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+1. Crie um assembly de cliente Microsoft .NET que consuma o `MyApplication/EncryptDocument` WSDL de serviço.
+1. Crie um projeto cliente do Microsoft .NET. Faça referência ao assembly do cliente Microsoft .NET no projeto do cliente. Referência também `System.Web.Services`.
+1. Usando o assembly do cliente Microsoft .NET, crie um `MyApplication_EncryptDocumentService` chamando seu construtor padrão.
+1. Defina as `MyApplication_EncryptDocumentService` do objeto `Credentials` com uma `System.Net.NetworkCredential` objeto. No `System.Net.NetworkCredential` , especifique um nome de usuário dos formulários AEM e a senha correspondente. Defina valores de autenticação para permitir que o aplicativo cliente .NET troque mensagens SOAP com AEM Forms com êxito.
+1. Crie um `BLOB` usando seu construtor. O `BLOB` é usado para armazenar um documento do PDF para `MyApplication/EncryptDocument` processo.
+1. Crie um `System.IO.FileStream` chamando seu construtor. Passe um valor de string que representa o local do arquivo do documento PDF e o modo no qual o arquivo deve ser aberto.
+1. Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo a variável `System.IO.FileStream` do objeto `Length` propriedade.
+1. Preencha a matriz de bytes com dados de fluxo chamando a variável `System.IO.FileStream` do objeto `Read` método . Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para ler.
+1. Preencha o `BLOB` ao atribuir seu `binaryData` com o conteúdo da matriz de bytes.
+1. Chame o `MyApplication/EncryptDocument` processo chamando o `MyApplication_EncryptDocumentService` do objeto `invoke` e a aprovação do `BLOB` objeto que contém o documento PDF. Esse processo retorna um documento PDF criptografado em um `BLOB` objeto.
+1. Crie um `System.IO.FileStream` chamando seu construtor e passando um valor de string que representa o local do arquivo do documento criptografado por senha.
+1. Crie uma matriz de bytes que armazene o conteúdo de dados do `BLOB` objeto retornado pelo `MyApplicationEncryptDocumentService` do objeto `invoke` método . Preencha a matriz de bytes obtendo o valor da variável `BLOB` do objeto `binaryData` membro de dados.
+1. Crie um `System.IO.BinaryWriter` chamando seu construtor e passando o `System.IO.FileStream` objeto.
+1. Escreva o conteúdo da matriz de bytes em um arquivo PDF chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
 
 ### Chamada de serviço usando classes proxy Java e codificação Base64 {#invoking-a-service-using-java-proxy-classes-and-base64-encoding}
 
-Você pode chamar um serviço da AEM Forms usando classes proxy Java e Base64. Para chamar o serviço `MyApplication/EncryptDocument` usando classes proxy Java, execute as seguintes etapas:
+Você pode chamar um serviço da AEM Forms usando classes proxy Java e Base64. Para invocar o `MyApplication/EncryptDocument` serviço usando classes proxy Java, execute as seguintes etapas:
 
-1. Crie classes proxy Java usando JAX-WS que consome o serviço `MyApplication/EncryptDocument` WSDL. Use o seguinte ponto de extremidade WSDL:
+1. Crie classes proxy Java usando JAX-WS que consome a variável `MyApplication/EncryptDocument` WSDL de serviço. Use o seguinte ponto de extremidade WSDL:
 
    `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1`
 
    >[!NOTE]
    >
-   >Substitua `hiro-xp` *pelo endereço IP do servidor de aplicativos J2EE que hospeda o AEM Forms.*
+   >Substituir `hiro-xp` *com o endereço IP do servidor de aplicativos J2EE que hospeda o AEM Forms.*
 
 1. Compacte as classes proxy Java criadas usando JAX-WS em um arquivo JAR.
 1. Inclua o arquivo JAR do proxy Java e os arquivos JAR localizados no seguinte caminho:
 
-   &lt;install Directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
+   &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
    no caminho da classe do seu projeto do cliente Java.
 
-1. Crie um objeto `MyApplicationEncryptDocumentService` usando seu construtor.
-1. Crie um objeto `MyApplicationEncryptDocument` chamando o método `MyApplicationEncryptDocumentService` `getEncryptDocument` do objeto.
+1. Crie um `MyApplicationEncryptDocumentService` usando seu construtor.
+1. Crie um `MyApplicationEncryptDocument` chamando o `MyApplicationEncryptDocumentService` do objeto `getEncryptDocument` método .
 1. Defina os valores de conexão necessários para chamar o AEM Forms atribuindo valores aos seguintes membros de dados:
 
-   * Atribua o ponto de extremidade WSDL e o tipo de codificação ao campo `javax.xml.ws.BindingProvider` do objeto `ENDPOINT_ADDRESS_PROPERTY`. Para chamar o serviço `MyApplication/EncryptDocument` usando a codificação Base64, especifique o seguinte valor de URL:
+   * Atribua o ponto de extremidade WSDL e o tipo de codificação ao `javax.xml.ws.BindingProvider` do objeto `ENDPOINT_ADDRESS_PROPERTY` campo. Para invocar o `MyApplication/EncryptDocument` usando a codificação Base64, especifique o seguinte valor de URL:
 
       `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
 
-   * Atribua o usuário dos formulários AEM ao campo `javax.xml.ws.BindingProvider` do objeto `USERNAME_PROPERTY`.
-   * Atribua o valor da senha correspondente ao campo `javax.xml.ws.BindingProvider` `PASSWORD_PROPERTY` do objeto.
+   * Atribua o usuário de formulários AEM ao `javax.xml.ws.BindingProvider` do objeto `USERNAME_PROPERTY` campo.
+   * Atribua o valor da senha correspondente ao `javax.xml.ws.BindingProvider` do objeto `PASSWORD_PROPERTY` campo.
 
-   O código de exemplo a seguir mostra essa lógica do aplicativo:
+   O exemplo de código a seguir mostra essa lógica do aplicativo:
 
    ```java
     //Set connection values required to invoke AEM Forms
@@ -715,15 +702,15 @@ Você pode chamar um serviço da AEM Forms usando classes proxy Java e Base64. P
     ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, password);
    ```
 
-1. Recupere o documento PDF para enviar ao processo `MyApplication/EncryptDocument` criando um objeto `java.io.FileInputStream` usando seu construtor. Passe um valor de string que especifica o local do documento PDF.
-1. Crie uma matriz de bytes e preencha-a com o conteúdo do objeto `java.io.FileInputStream`.
-1. Crie um objeto `BLOB` usando seu construtor.
-1. Preencha o objeto `BLOB` chamando seu método `setBinaryData` e passando a matriz de bytes. O `BLOB` do objeto `setBinaryData` é o método a ser chamado ao usar a codificação Base64. Consulte Fornecimento de objetos BLOB em solicitações de serviço.
-1. Chame o processo `MyApplication/EncryptDocument` chamando o método `MyApplicationEncryptDocument` do objeto `invoke`. Passe o objeto `BLOB` que contém o documento PDF. O método invoke retorna um objeto `BLOB` que contém o documento PDF criptografado.
-1. Crie uma matriz de bytes que contenha o documento PDF criptografado chamando o método `BLOB` do objeto `getBinaryData`.
+1. Recupere o documento do PDF para enviar ao `MyApplication/EncryptDocument` criar um `java.io.FileInputStream` usando seu construtor. Passe um valor de string que especifica o local do documento PDF.
+1. Crie uma matriz de bytes e preencha-a com o conteúdo da variável `java.io.FileInputStream` objeto.
+1. Crie um `BLOB` usando seu construtor.
+1. Preencha o `BLOB` ao invocar seu `setBinaryData` e transmitindo a matriz de bytes. O `BLOB` do objeto `setBinaryData` é o método a ser chamado ao usar a codificação Base64. Consulte Fornecimento de objetos BLOB em solicitações de serviço.
+1. Chame o `MyApplication/EncryptDocument` processo chamando o `MyApplicationEncryptDocument` do objeto `invoke` método . Passe o `BLOB` objeto que contém o documento PDF. O método invoke retorna um `BLOB` objeto que contém o documento PDF criptografado.
+1. Crie uma matriz de bytes que contenha o documento PDF criptografado chamando o `BLOB` do objeto `getBinaryData` método .
 1. Salve o documento PDF criptografado como um arquivo PDF. Grave a matriz de bytes em um arquivo.
 
-**Consulte também:**
+**Consulte também**
 
 [Início rápido: Chamada de serviço usando arquivos proxy Java e codificação Base64](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-java-proxy-files-and-base64-encoding)
 
@@ -731,18 +718,18 @@ Você pode chamar um serviço da AEM Forms usando classes proxy Java e Base64. P
 
 ## Chamar o AEM Forms usando MTOM {#invoking-aem-forms-using-mtom}
 
-Você pode chamar os serviços da AEM Forms usando o MTOM padrão do serviço da Web. Esse padrão define como os dados binários, como um documento PDF, são transmitidos pela Internet ou pela intranet. Um recurso do MTOM é o uso do elemento `XOP:Include`. Esse elemento é definido na especificação XML Binary Otimized Packaging (XOP) para fazer referência aos anexos binários de uma mensagem SOAP.
+Você pode chamar os serviços da AEM Forms usando o MTOM padrão do serviço da Web. Esse padrão define como os dados binários, como um documento PDF, são transmitidos pela Internet ou pela intranet. Um recurso do MTOM é o uso do `XOP:Include` elemento. Esse elemento é definido na especificação XML Binary Otimized Packaging (XOP) para fazer referência aos anexos binários de uma mensagem SOAP.
 
 A discussão aqui é sobre o uso do MTOM para invocar o seguinte processo de curta duração do AEM Forms chamado `MyApplication/EncryptDocument`.
 
 >[!NOTE]
 >
->Esse processo não se baseia em um processo AEM Forms existente. Para seguir junto com o exemplo de código, crie um processo chamado `MyApplication/EncryptDocument` usando o Workbench. (Consulte [Usando Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Esse processo não se baseia em um processo AEM Forms existente. Para seguir junto com o exemplo de código, crie um processo chamado `MyApplication/EncryptDocument` usando o Workbench. (Consulte [Uso do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Quando esse processo é chamado, ele executa as seguintes ações:
 
-1. Obtém o documento PDF não seguro passado para o processo. Esta ação é baseada na operação `SetValue`. O parâmetro de entrada desse processo é uma variável de processo `document` chamada `inDoc`.
-1. Criptografa o documento PDF com uma senha. Esta ação é baseada na operação `PasswordEncryptPDF`. O documento PDF criptografado por senha é retornado em uma variável de processo chamada `outDoc`.
+1. Obtém o documento PDF não seguro passado para o processo. Essa ação se baseia na variável `SetValue` operação. O parâmetro de entrada para esse processo é um `document` variável de processo nomeada `inDoc`.
+1. Criptografa o documento PDF com uma senha. Essa ação se baseia na variável `PasswordEncryptPDF` operação. O documento PDF criptografado por senha é retornado em uma variável de processo chamada `outDoc`.
 
 >[!NOTE]
 >
@@ -750,62 +737,62 @@ Quando esse processo é chamado, ele executa as seguintes ações:
 
 >[!NOTE]
 >
->Os aplicativos baseados em WS JAX que usam o protocolo de transmissão MTOM são limitados a 25 MB de dados enviados e recebidos. Essa limitação ocorre devido a um bug no JAX-WS. Se o tamanho combinado de seus arquivos enviados e recebidos exceder 25 MB, use o protocolo de transmissão SwaRef em vez do MTOM. Caso contrário, há a possibilidade de uma exceção `OutOfMemory`.
+>Os aplicativos baseados em WS JAX que usam o protocolo de transmissão MTOM são limitados a 25 MB de dados enviados e recebidos. Essa limitação ocorre devido a um bug no JAX-WS. Se o tamanho combinado de seus arquivos enviados e recebidos exceder 25 MB, use o protocolo de transmissão SwaRef em vez do MTOM. Caso contrário, existe a possibilidade de `OutOfMemory` exceção.
 
-A discussão aqui é sobre o uso do MTOM dentro de um projeto do Microsoft .NET para chamar os serviços do AEM Forms. O .NET Framework usado é 3.5, e o ambiente de desenvolvimento é Visual Studio 2008. Se você tiver o WSE (Web Service Enhancements, Melhorias de serviço da Web) instalado no computador de desenvolvimento, remova-o. O .NET 3.5 Framework suporta uma estrutura SOAP chamada Windows Communication Foundation (WCF). Ao invocar o AEM Forms usando o MTOM, somente o WCF (não WSE) é compatível.
+A discussão aqui é sobre o uso do MTOM em um projeto do Microsoft .NET para chamar os serviços do AEM Forms. O .NET Framework usado é 3.5, e o ambiente de desenvolvimento é Visual Studio 2008. Se você tiver o WSE (Web Service Enhancements, Melhorias de serviço da Web) instalado no computador de desenvolvimento, remova-o. O .NET 3.5 Framework suporta uma estrutura SOAP chamada Windows Communication Foundation (WCF). Ao invocar o AEM Forms usando o MTOM, somente o WCF (não WSE) é compatível.
 
-### Criando um projeto .NET que chama um serviço usando MTOM {#creating-a-net-project-that-invokes-a-service-using-mtom}
+### Criando um projeto .NET que chame um serviço usando MTOM {#creating-a-net-project-that-invokes-a-service-using-mtom}
 
-Você pode criar um projeto do Microsoft .NET que possa chamar um serviço do AEM Forms usando serviços da Web. Primeiro, crie um projeto do Microsoft .NET usando o Visual Studio 2008. Para chamar um serviço do AEM Forms, crie uma Referência de serviço para o serviço do AEM Forms que você deseja chamar em seu projeto. Ao criar uma Referência de serviço, especifique um URL para o serviço AEM Forms:
+Você pode criar um projeto do Microsoft .NET que possa chamar um serviço do AEM Forms usando serviços da Web. Primeiro, crie um projeto Microsoft .NET usando o Visual Studio 2008. Para chamar um serviço do AEM Forms, crie uma Referência de serviço para o serviço do AEM Forms que você deseja chamar em seu projeto. Ao criar uma Referência de serviço, especifique um URL para o serviço AEM Forms:
 
 ```java
  http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
 ```
 
-Substitua `localhost` pelo endereço IP do servidor de aplicativos J2EE que hospeda o AEM Forms. Substitua `MyApplication/EncryptDocument` pelo nome do serviço AEM Forms a ser chamado. Por exemplo, para invocar uma operação de Rights Management, especifique:
+Substituir `localhost` com o endereço IP do servidor de aplicativos J2EE que hospeda o AEM Forms. Substituir `MyApplication/EncryptDocument` com o nome do serviço AEM Forms a ser chamado. Por exemplo, para invocar uma operação de Rights Management, especifique:
 
 `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`
 
-A opção `lc_version` garante que a funcionalidade do AEM Forms, como MTOM, esteja disponível. Sem especificar a opção `lc_version`, não é possível chamar o AEM Forms usando MTOM.
+O `lc_version` garante que a funcionalidade do AEM Forms, como MTOM, esteja disponível. Sem especificar o `lc_version` não é possível chamar o AEM Forms usando o MTOM.
 
 Após criar uma Referência de serviço, os tipos de dados associados ao serviço do AEM Forms estarão disponíveis para uso em seu projeto .NET. Para criar um projeto .NET que chame um serviço AEM Forms, execute as seguintes etapas:
 
 1. Crie um projeto .NET usando o Microsoft Visual Studio 2008.
-1. No menu **Project**, selecione **Adicionar Referência de Serviço**.
-1. Na caixa de diálogo **Address**, especifique o WSDL para o serviço AEM Forms. Por exemplo,
+1. No **Projeto** selecione **Adicionar referência de serviço**.
+1. No **Endereço** , especifique o WSDL para o serviço AEM Forms. Por exemplo,
 
    ```java
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
    ```
 
-1. Clique em **Vá** e clique em **OK**.
+1. Clique em **Ir** e, em seguida, clique em **OK**.
 
 ### Chamar um serviço usando MTOM em um projeto .NET {#invoking-a-service-using-mtom-in-a-net-project}
 
-Considere o processo `MyApplication/EncryptDocument` que aceita um documento PDF não seguro e retorna um documento PDF criptografado por senha. Para invocar o processo `MyApplication/EncryptDocument` (que foi criado no Workbench) usando o MTOM, execute as seguintes etapas:
+Considere a `MyApplication/EncryptDocument` processo que aceita um documento PDF não seguro e retorna um documento PDF criptografado por senha. Para invocar o `MyApplication/EncryptDocument` processo (que foi criado no Workbench) usando o MTOM, execute as seguintes etapas:
 
 1. Crie um projeto do Microsoft .NET.
-1. Crie um objeto `MyApplication_EncryptDocumentClient` usando seu construtor padrão.
-1. Crie um objeto `MyApplication_EncryptDocumentClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Passe um valor de string que especifica o WSDL para o serviço AEM Forms e o tipo de codificação:
+1. Crie um `MyApplication_EncryptDocumentClient` usando seu construtor padrão.
+1. Crie um `MyApplication_EncryptDocumentClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço AEM Forms e o tipo de codificação:
 
    ```java
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=mtom
    ```
 
-   Você não precisa usar o atributo `lc_version`. Esse atributo é usado ao criar uma referência de serviço. No entanto, especifique `?blob=mtom`.
+   Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado ao criar uma referência de serviço. No entanto, certifique-se de especificar `?blob=mtom`.
 
    >[!NOTE]
    >
-   >Substitua `hiro-xp` *pelo endereço IP do servidor de aplicativos J2EE que hospeda o AEM Forms.*
+   >Substituir `hiro-xp` *com o endereço IP do servidor de aplicativos J2EE que hospeda o AEM Forms.*
 
-1. Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do membro de dados `EncryptDocumentClient.Endpoint.Binding`. Converta o valor de retorno em `BasicHttpBinding`.
-1. Defina o membro de dados `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` para `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
+1. Crie um `System.ServiceModel.BasicHttpBinding` obtendo o valor da variável `EncryptDocumentClient.Endpoint.Binding` membro de dados. Converta o valor de retorno para `BasicHttpBinding`.
+1. Defina as `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` membro de dados para `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
 1. Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-   * Atribua o nome de usuário dos formulários AEM ao membro de dados `MyApplication_EncryptDocumentClient.ClientCredentials.UserName.UserName`.
+   * Atribuir o nome de usuário dos formulários AEM ao membro de dados `MyApplication_EncryptDocumentClient.ClientCredentials.UserName.UserName`.
    * Atribua o valor da senha correspondente ao membro de dados `MyApplication_EncryptDocumentClient.ClientCredentials.UserName.Password`.
-   * Atribua o valor constante `HttpClientCredentialType.Basic` ao membro de dados `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao membro de dados `BasicHttpBindingSecurity.Security.Mode`.
+   * Atribuir o valor constante `HttpClientCredentialType.Basic` ao membro de dados `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao membro de dados `BasicHttpBindingSecurity.Security.Mode`.
 
    O código de exemplo a seguir mostra essas tarefas.
 
@@ -820,43 +807,43 @@ Considere o processo `MyApplication/EncryptDocument` que aceita um documento PDF
     b.ReaderQuotas.MaxArrayLength = 4000000;
    ```
 
-1. Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar um documento PDF a ser passado para o processo `MyApplication/EncryptDocument`.
-1. Crie um objeto `System.IO.FileStream` chamando seu construtor. Passe um valor de string que representa o local do arquivo do documento PDF e o modo no qual o arquivo deve ser aberto.
-1. Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `System.IO.FileStream` do objeto `Length`.
-1. Preencha a matriz de bytes com dados de fluxo chamando o método `System.IO.FileStream` do objeto `Read`. Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para ler.
-1. Preencha o objeto `BLOB` atribuindo seu membro de dados `MTOM` ao conteúdo da matriz de bytes.
-1. Chame o processo `MyApplication/EncryptDocument` chamando o método `MyApplication_EncryptDocumentClient` do objeto `invoke`. Passe o objeto `BLOB` que contém o documento PDF. Esse processo retorna um documento PDF criptografado dentro de um objeto `BLOB`.
-1. Crie um objeto `System.IO.FileStream` chamando seu construtor e passando um valor de string que representa o local do arquivo do documento PDF seguro.
-1. Crie uma matriz de bytes que armazene o conteúdo de dados do objeto `BLOB` retornado pelo método `invoke`. Preencha a matriz de bytes obtendo o valor do membro de dados `BLOB` do objeto `MTOM`.
-1. Crie um objeto `System.IO.BinaryWriter` chamando seu construtor e passando o objeto `System.IO.FileStream`.
-1. Grave o conteúdo da matriz de bytes em um arquivo PDF chamando o método `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+1. Crie um `BLOB` usando seu construtor. O `BLOB` é usado para armazenar um documento PDF para passar para o `MyApplication/EncryptDocument` processo.
+1. Crie um `System.IO.FileStream` chamando seu construtor. Passe um valor de string que representa o local do arquivo do documento PDF e o modo no qual o arquivo deve ser aberto.
+1. Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo a variável `System.IO.FileStream` do objeto `Length` propriedade.
+1. Preencha a matriz de bytes com dados de fluxo chamando a variável `System.IO.FileStream` do objeto `Read` método . Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para ler.
+1. Preencha o `BLOB` ao atribuir seu `MTOM` membro de dados com o conteúdo da matriz de bytes.
+1. Chame o `MyApplication/EncryptDocument` processo chamando o `MyApplication_EncryptDocumentClient` do objeto `invoke` método . Passe o `BLOB` objeto que contém o documento PDF. Esse processo retorna um documento PDF criptografado em um `BLOB` objeto.
+1. Crie um `System.IO.FileStream` chamando seu construtor e passando um valor de string que representa o local do arquivo do documento de PDF seguro.
+1. Crie uma matriz de bytes que armazene o conteúdo de dados do `BLOB` objeto retornado pelo `invoke` método . Preencha a matriz de bytes obtendo o valor da variável `BLOB` do objeto `MTOM` membro de dados.
+1. Crie um `System.IO.BinaryWriter` chamando seu construtor e passando o `System.IO.FileStream` objeto.
+1. Escreva o conteúdo da matriz de bytes em um arquivo PDF chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
 
 >[!NOTE]
 >
->A maioria das operações do serviço AEM Forms tem uma inicialização rápida de MTOM. Você pode visualizar essas inicializações rápidas na seção de início rápido correspondente de um serviço. Por exemplo, para ver a seção Saída de início rápido, consulte [Saída da API de serviço de início rápido](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap).
+>A maioria das operações do serviço AEM Forms tem uma inicialização rápida de MTOM. Você pode visualizar essas inicializações rápidas na seção de início rápido correspondente de um serviço. Por exemplo, para ver a seção Início rápido da Saída , consulte [Início rápido da API do Serviço de Saída](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap).
 
-**Consulte também:**
+**Consulte também**
 
 [Início rápido: Chamar um serviço usando MTOM em um projeto .NET](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-mtom-in-a-net-project)
 
 [Acesso a vários serviços usando serviços da Web](#accessing-multiple-services-using-web-services)
 
-[Criando um aplicativo Web ASP.NET que invoque um processo de vida longa centrado em humanos](/help/forms/developing/invoking-human-centric-long-lived.md#creating-an-asp-net-web-application-that-invokes-a-human-centric-long-lived-process)
+[Criação de um aplicativo Web ASP.NET que invoque um processo de vida longa centrado em humanos](/help/forms/developing/invoking-human-centric-long-lived.md#creating-an-asp-net-web-application-that-invokes-a-human-centric-long-lived-process)
 
 ## Chamar o AEM Forms usando SwaRef {#invoking-aem-forms-using-swaref}
 
-Você pode chamar os serviços da AEM Forms usando SwaRef. O conteúdo do elemento XML `wsi:swaRef` é enviado como um anexo dentro de um corpo SOAP que armazena a referência ao anexo. Ao chamar um serviço Forms usando SwaRef, crie classes proxy Java usando a API Java para XML Web Services (JAX-WS). (Consulte [API do Java para XML Web Services](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).)
+Você pode chamar os serviços da AEM Forms usando SwaRef. O conteúdo da `wsi:swaRef` O elemento XML é enviado como um anexo dentro de um corpo SOAP que armazena a referência ao anexo. Ao chamar um serviço Forms usando SwaRef, crie classes proxy Java usando a API Java para XML Web Services (JAX-WS). (Consulte [API Java para serviços XML da Web](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).)
 
-A discussão aqui é sobre invocar o seguinte processo de curta duração do Forms chamado `MyApplication/EncryptDocument` usando SwaRef.
+A discussão aqui é sobre invocar o seguinte processo de curta duração do Forms chamado `MyApplication/EncryptDocument` ao utilizar SwaRef.
 
 >[!NOTE]
 >
->Esse processo não se baseia em um processo AEM Forms existente. Para seguir junto com o exemplo de código, crie um processo chamado `MyApplication/EncryptDocument` usando o Workbench. (Consulte [Usando Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Esse processo não se baseia em um processo AEM Forms existente. Para seguir junto com o exemplo de código, crie um processo chamado `MyApplication/EncryptDocument` usando o Workbench. (Consulte [Uso do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Quando esse processo é chamado, ele executa as seguintes ações:
 
-1. Obtém o documento PDF não seguro passado para o processo. Esta ação é baseada na operação `SetValue`. O parâmetro de entrada desse processo é uma variável de processo `document` chamada `inDoc`.
-1. Criptografa o documento PDF com uma senha. Esta ação é baseada na operação `PasswordEncryptPDF`. O documento PDF criptografado por senha é retornado em uma variável de processo chamada `outDoc`.
+1. Obtém o documento PDF não seguro passado para o processo. Essa ação se baseia na variável `SetValue` operação. O parâmetro de entrada para esse processo é um `document` variável de processo nomeada `inDoc`.
+1. Criptografa o documento PDF com uma senha. Essa ação se baseia na variável `PasswordEncryptPDF` operação. O documento PDF criptografado por senha é retornado em uma variável de processo chamada `outDoc`.
 
 >[!NOTE]
 >
@@ -866,39 +853,39 @@ A discussão abaixo é sobre como invocar os serviços da Forms usando SwaRef em
 
 ### Chamar um serviço usando arquivos da biblioteca JAX-WS que usam SwaRef {#invoke-a-service-using-jax-ws-library-files-that-use-swaref}
 
-Para invocar o processo `MyApplication/EncryptDocument` usando arquivos proxy Java criados usando JAX-WS e SwaRef, execute as seguintes etapas:
+Para invocar o `MyApplication/EncryptDocument` processar usando arquivos proxy Java criados com JAX-WS e SwaRef, execute as seguintes etapas:
 
-1. Crie classes proxy Java usando JAX-WS que consome o serviço `MyApplication/EncryptDocument` WSDL. Use o seguinte ponto de extremidade WSDL:
+1. Crie classes proxy Java usando JAX-WS que consome a variável `MyApplication/EncryptDocument` WSDL de serviço. Use o seguinte ponto de extremidade WSDL:
 
    ```java
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
    ```
 
-   Para obter informações, consulte [Criação de classes proxy Java usando JAX-WS](#creating-java-proxy-classes-using-jax-ws).
+   Para obter mais informações, consulte [Criando classes proxy Java usando JAX-WS](#creating-java-proxy-classes-using-jax-ws).
 
    >[!NOTE]
    >
-   >Substitua `hiro-xp` *pelo endereço IP do servidor de aplicativos J2EE que hospeda o AEM Forms.*
+   >Substituir `hiro-xp` *com o endereço IP do servidor de aplicativos J2EE que hospeda o AEM Forms.*
 
 1. Compacte as classes proxy Java criadas usando JAX-WS em um arquivo JAR.
 1. Inclua o arquivo JAR do proxy Java e os arquivos JAR localizados no seguinte caminho:
 
-   &lt;install Directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
+   &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
    no caminho da classe do seu projeto do cliente Java.
 
-1. Crie um objeto `MyApplicationEncryptDocumentService` usando seu construtor.
-1. Crie um objeto `MyApplicationEncryptDocument` chamando o método `MyApplicationEncryptDocumentService` `getEncryptDocument` do objeto.
+1. Crie um `MyApplicationEncryptDocumentService` usando seu construtor.
+1. Crie um `MyApplicationEncryptDocument` chamando o `MyApplicationEncryptDocumentService` do objeto `getEncryptDocument` método .
 1. Defina os valores de conexão necessários para chamar o AEM Forms atribuindo valores aos seguintes membros de dados:
 
-   * Atribua o ponto de extremidade WSDL e o tipo de codificação ao campo `javax.xml.ws.BindingProvider` do objeto `ENDPOINT_ADDRESS_PROPERTY`. Para chamar o serviço `MyApplication/EncryptDocument` usando a codificação SwaRef, especifique o seguinte valor de URL:
+   * Atribua o ponto de extremidade WSDL e o tipo de codificação ao `javax.xml.ws.BindingProvider` do objeto `ENDPOINT_ADDRESS_PROPERTY` campo. Para invocar o `MyApplication/EncryptDocument` usando a codificação SwaRef, especifique o seguinte valor de URL:
 
       ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
 
-   * Atribua o usuário dos formulários AEM ao campo `javax.xml.ws.BindingProvider` do objeto `USERNAME_PROPERTY`.
-   * Atribua o valor da senha correspondente ao campo `javax.xml.ws.BindingProvider` `PASSWORD_PROPERTY` do objeto.
+   * Atribua o usuário de formulários AEM ao `javax.xml.ws.BindingProvider` do objeto `USERNAME_PROPERTY` campo.
+   * Atribua o valor da senha correspondente ao `javax.xml.ws.BindingProvider` do objeto `PASSWORD_PROPERTY` campo.
 
-   O código de exemplo a seguir mostra essa lógica do aplicativo:
+   O exemplo de código a seguir mostra essa lógica do aplicativo:
 
    ```java
     //Set connection values required to invoke AEM Forms
@@ -910,38 +897,38 @@ Para invocar o processo `MyApplication/EncryptDocument` usando arquivos proxy Ja
     ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, password);
    ```
 
-1. Recupere o documento PDF para enviar ao processo `MyApplication/EncryptDocument` criando um objeto `java.io.File` usando seu construtor. Passe um valor de string que especifica o local do documento PDF.
-1. Crie um objeto `javax.activation.DataSource` usando o construtor `FileDataSource`. Passe o objeto `java.io.File`.
-1. Crie um objeto `javax.activation.DataHandler` usando seu construtor e transmitindo o objeto `javax.activation.DataSource`.
-1. Crie um objeto `BLOB` usando seu construtor.
-1. Preencha o objeto `BLOB` chamando seu método `setSwaRef` e passando o objeto `javax.activation.DataHandler`.
-1. Chame o processo `MyApplication/EncryptDocument` chamando o método `MyApplicationEncryptDocument` do objeto `invoke` e transmitindo o objeto `BLOB` que contém o documento PDF. O método invoke retorna um objeto `BLOB` que contém um documento PDF criptografado.
-1. Preencha um objeto `javax.activation.DataHandler` chamando o método `BLOB` do objeto `getSwaRef`.
-1. Converta o objeto `javax.activation.DataHandler` em uma instância `java.io.InputSteam` chamando o método `javax.activation.DataHandler` do objeto `getInputStream`.
-1. Grave a instância `java.io.InputSteam` em um arquivo PDF que represente o documento PDF criptografado.
+1. Recupere o documento do PDF para enviar ao `MyApplication/EncryptDocument` criar um `java.io.File` usando seu construtor. Passe um valor de string que especifica o local do documento PDF.
+1. Crie um `javax.activation.DataSource` usando o `FileDataSource` construtor. Passe o `java.io.File` objeto.
+1. Crie um `javax.activation.DataHandler` usando seu construtor e passando o `javax.activation.DataSource` objeto.
+1. Crie um `BLOB` usando seu construtor.
+1. Preencha o `BLOB` ao invocar seu `setSwaRef` e a aprovação do `javax.activation.DataHandler` objeto.
+1. Chame o `MyApplication/EncryptDocument` processo chamando o `MyApplicationEncryptDocument` do objeto `invoke` e a aprovação do `BLOB` objeto que contém o documento PDF. O método invoke retorna um `BLOB` objeto que contém um documento PDF criptografado.
+1. Preencha um `javax.activation.DataHandler` chamando o `BLOB` do objeto `getSwaRef` método .
+1. Converta o `javax.activation.DataHandler` para um `java.io.InputSteam` chamando a `javax.activation.DataHandler` do objeto `getInputStream` método .
+1. Escreva o `java.io.InputSteam` para um arquivo PDF que representa o documento PDF criptografado.
 
 >[!NOTE]
 >
->A maioria das operações do serviço AEM Forms tem uma inicialização rápida SwaRef. Você pode visualizar essas inicializações rápidas na seção de início rápido correspondente de um serviço. Por exemplo, para ver a seção Saída de início rápido, consulte [Saída da API de serviço de início rápido](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap).
+>A maioria das operações do serviço AEM Forms tem uma inicialização rápida SwaRef. Você pode visualizar essas inicializações rápidas na seção de início rápido correspondente de um serviço. Por exemplo, para ver a seção Início rápido da Saída , consulte [Início rápido da API do Serviço de Saída](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap).
 
-**Consulte também:**
+**Consulte também**
 
 [Início rápido: Chamar um serviço usando SwaRef em um projeto Java](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-swaref-in-a-java-project)
 
-## Chamar o AEM Forms usando dados BLOB sobre HTTP {#invoking-aem-forms-using-blob-data-over-http}
+## Chamada de AEM Forms usando dados BLOB sobre HTTP {#invoking-aem-forms-using-blob-data-over-http}
 
-Você pode chamar os serviços da AEM Forms usando serviços da Web e transmitir dados BLOB via HTTP. Passar dados BLOB por HTTP é uma técnica alternativa em vez de usar codificação base64, DIME ou MIME. Por exemplo, você pode passar dados via HTTP em um projeto do Microsoft .NET que usa o aprimoramento do serviço da Web 3.0, que não é compatível com DIME ou MIME. Ao usar dados BLOB em HTTP, os dados de entrada são carregados antes que o serviço AEM Forms seja chamado.
+Você pode chamar os serviços da AEM Forms usando serviços da Web e transmitir dados BLOB via HTTP. Passar dados BLOB por HTTP é uma técnica alternativa em vez de usar codificação base64, DIME ou MIME. Por exemplo, você pode passar dados via HTTP em um projeto do Microsoft .NET que usa o Aprimoramento do serviço da Web 3.0, que não é compatível com DIME ou MIME. Ao usar dados BLOB em HTTP, os dados de entrada são carregados antes que o serviço AEM Forms seja chamado.
 
-&quot;Chamar o AEM Forms usando dados BLOB sobre HTTP&quot; discute chamar o seguinte processo AEM Forms de curta duração chamado `MyApplication/EncryptDocument` ao passar dados BLOB sobre HTTP.
+&quot;Chamar o AEM Forms usando dados BLOB sobre HTTP&quot; discute chamar o seguinte processo de curta duração do AEM Forms chamado `MyApplication/EncryptDocument` transmitindo dados BLOB por HTTP.
 
 >[!NOTE]
 >
->Esse processo não se baseia em um processo AEM Forms existente. Para seguir junto com o exemplo de código, crie um processo chamado `MyApplication/EncryptDocument` usando o Workbench. (Consulte [Usando Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Esse processo não se baseia em um processo AEM Forms existente. Para seguir junto com o exemplo de código, crie um processo chamado `MyApplication/EncryptDocument` usando o Workbench. (Consulte [Uso do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Quando esse processo é chamado, ele executa as seguintes ações:
 
-1. Obtém o documento PDF não seguro passado para o processo. Esta ação é baseada na operação `SetValue`. O parâmetro de entrada desse processo é uma variável de processo `document` chamada `inDoc`.
-1. Criptografa o documento PDF com uma senha. Esta ação é baseada na operação `PasswordEncryptPDF`. O documento PDF criptografado por senha é retornado em uma variável de processo chamada `outDoc`.
+1. Obtém o documento PDF não seguro passado para o processo. Essa ação se baseia na variável `SetValue` operação. O parâmetro de entrada para esse processo é um `document` variável de processo nomeada `inDoc`.
+1. Criptografa o documento PDF com uma senha. Essa ação se baseia na variável `PasswordEncryptPDF` operação. O documento PDF criptografado por senha é retornado em uma variável de processo chamada `outDoc`.
 
 >[!NOTE]
 >
@@ -949,7 +936,7 @@ Quando esse processo é chamado, ele executa as seguintes ações:
 
 ### Criando um assembly de cliente .NET que usa dados em HTTP {#creating-a-net-client-assembly-that-uses-data-over-http}
 
-Para criar um assembly de cliente que use dados via HTTP, siga o processo especificado em [Chamar AEM Forms usando codificação Base64](#invoking-aem-forms-using-base64-encoding). No entanto, altere o URL na classe proxy para incluir `?blob=http` em vez de `?blob=base64`. Essa ação garante que os dados sejam transmitidos por HTTP. Na classe proxy, localize a seguinte linha de código:
+Para criar um assembly de cliente que use dados via HTTP, siga o processo especificado em [Chamada de AEM Forms usando codificação Base64](#invoking-aem-forms-using-base64-encoding). No entanto, altere o URL na classe de proxy para incluir `?blob=http` em vez de `?blob=base64`. Essa ação garante que os dados sejam transmitidos por HTTP. Na classe proxy, localize a seguinte linha de código:
 
 ```java
  "http://localhost:8080/soap/services/MyApplication/EncryptDocument";
@@ -963,65 +950,65 @@ e alterá-lo para:
 
 **Fazendo referência ao assembly .NET clienMyApplication/EncryptDocumentt**
 
-Coloque o novo assembly do cliente .NET no computador em que você está desenvolvendo seu aplicativo cliente. Depois de colocar o assembly do cliente .NET em um diretório, você pode referenciá-lo a partir de um projeto. Faça referência à biblioteca `System.Web.Services` do seu projeto. Se não fizer referência a esta biblioteca, não poderá utilizar a assemblagem de cliente .NET para invocar um serviço.
+Coloque o novo assembly do cliente .NET no computador em que você está desenvolvendo seu aplicativo cliente. Depois de colocar o assembly do cliente .NET em um diretório, você pode referenciá-lo a partir de um projeto. Faça referência ao `System.Web.Services` biblioteca do seu projeto. Se não fizer referência a esta biblioteca, não poderá utilizar a assemblagem de cliente .NET para invocar um serviço.
 
-1. No menu **Project**, selecione **Adicionar referência**.
-1. Clique na guia **.NET**.
+1. No **Projeto** selecione **Adicionar referência**.
+1. Clique no botão **.NET** guia .
 1. Clique em **Procurar** e localize o arquivo DocumentService.dll.
-1. Clique em **Selecione** e depois clique em **OK**.
+1. Clique em **Selecionar** e, em seguida, clique em **OK**.
 
 **Chamando um serviço usando um assembly de cliente .NET que usa dados BLOB via HTTP**
 
-Você pode chamar o serviço `MyApplication/EncryptDocument` (que foi criado no Workbench) usando um assembly de cliente .NET que usa dados sobre HTTP. Para chamar o serviço `MyApplication/EncryptDocument`, execute as seguintes etapas:
+Você pode invocar o `MyApplication/EncryptDocument` serviço (que foi criado no Workbench) usando um assembly de cliente .NET que usa dados via HTTP. Para invocar o `MyApplication/EncryptDocument` execute as seguintes etapas:
 
 1. Crie o assembly do cliente .NET.
-1. Faça referência ao assembly do cliente Microsoft .NET. Crie um projeto cliente do Microsoft .NET. Faça referência ao assembly do cliente Microsoft .NET no projeto do cliente. Consulte também `System.Web.Services`.
-1. Usando o assembly do cliente Microsoft .NET, crie um objeto `MyApplication_EncryptDocumentService` chamando seu construtor padrão.
-1. Defina a propriedade `MyApplication_EncryptDocumentService` do objeto `Credentials` com um objeto `System.Net.NetworkCredential`. No construtor `System.Net.NetworkCredential`, especifique um nome de usuário para formulários AEM e a senha correspondente. Defina valores de autenticação para permitir que o aplicativo cliente .NET troque mensagens SOAP com AEM Forms com êxito.
-1. Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para transmitir dados para o processo `MyApplication/EncryptDocument`.
-1. Atribua um valor de string ao membro de dados `remoteURL` do objeto que especifica o local URI de um documento PDF a ser transmitido ao serviço `MyApplication/EncryptDocument`.`BLOB`
-1. Chame o processo `MyApplication/EncryptDocument` chamando o método `MyApplication_EncryptDocumentService` do objeto `invoke` e transmitindo o objeto `BLOB`. Esse processo retorna um documento PDF criptografado dentro de um objeto `BLOB`.
-1. Crie um objeto `System.UriBuilder` usando seu construtor e transmitindo o valor do membro de dados `BLOB` do objeto retornado `remoteURL`.
-1. Converta o objeto `System.UriBuilder` em um objeto `System.IO.Stream`. (O C# Quick Start que segue esta lista ilustra como executar esta tarefa.)
-1. Crie uma matriz de bytes e preencha-a com os dados localizados no objeto `System.IO.Stream` .
-1. Crie um objeto `System.IO.BinaryWriter` chamando seu construtor e passando o objeto `System.IO.FileStream`.
-1. Grave o conteúdo da matriz de bytes em um arquivo PDF chamando o método `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+1. Faça referência ao assembly do cliente Microsoft .NET. Crie um projeto cliente do Microsoft .NET. Faça referência ao assembly do cliente Microsoft .NET no projeto do cliente. Referência também `System.Web.Services`.
+1. Usando o assembly do cliente Microsoft .NET, crie um `MyApplication_EncryptDocumentService` chamando seu construtor padrão.
+1. Defina as `MyApplication_EncryptDocumentService` do objeto `Credentials` com uma `System.Net.NetworkCredential` objeto. No `System.Net.NetworkCredential` , especifique um nome de usuário dos formulários AEM e a senha correspondente. Defina valores de autenticação para permitir que o aplicativo cliente .NET troque mensagens SOAP com AEM Forms com êxito.
+1. Crie um `BLOB` usando seu construtor. O `BLOB` é usado para transmitir dados para a variável `MyApplication/EncryptDocument` processo.
+1. Atribua um valor de string à variável `BLOB` do objeto `remoteURL` membro de dados que especifica o local do URI de um documento PDF para passar para a `MyApplication/EncryptDocument`serviço.
+1. Chame o `MyApplication/EncryptDocument` processo chamando o `MyApplication_EncryptDocumentService` do objeto `invoke` e a aprovação do `BLOB` objeto. Esse processo retorna um documento PDF criptografado em um `BLOB` objeto.
+1. Crie um `System.UriBuilder` usando seu construtor e transmitindo o valor do objeto retornado `BLOB` do objeto `remoteURL` membro de dados.
+1. Converta o `System.UriBuilder` para um `System.IO.Stream` objeto. (O C# Quick Start que segue esta lista ilustra como executar esta tarefa.)
+1. Crie uma matriz de bytes e preencha-a com os dados localizados na `System.IO.Stream` objeto.
+1. Crie um `System.IO.BinaryWriter` chamando seu construtor e passando o `System.IO.FileStream` objeto.
+1. Escreva o conteúdo da matriz de bytes em um arquivo PDF chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
 
-### Chamar um serviço usando classes proxy Java e dados BLOB por HTTP {#invoking-a-service-using-java-proxy-classes-and-blob-data-over-http}
+### Chamada de serviço usando classes proxy Java e dados BLOB por HTTP {#invoking-a-service-using-java-proxy-classes-and-blob-data-over-http}
 
-Você pode chamar um serviço da AEM Forms usando classes proxy Java e dados BLOB via HTTP. Para chamar o serviço `MyApplication/EncryptDocument` usando classes proxy Java, execute as seguintes etapas:
+Você pode chamar um serviço da AEM Forms usando classes proxy Java e dados BLOB via HTTP. Para invocar o `MyApplication/EncryptDocument` serviço usando classes proxy Java, execute as seguintes etapas:
 
-1. Crie classes proxy Java usando JAX-WS que consome o serviço `MyApplication/EncryptDocument` WSDL. Use o seguinte ponto de extremidade WSDL:
+1. Crie classes proxy Java usando JAX-WS que consome a variável `MyApplication/EncryptDocument` WSDL de serviço. Use o seguinte ponto de extremidade WSDL:
 
    ```java
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
    ```
 
-   Para obter informações, consulte [Criação de classes proxy Java usando JAX-WS](#creating-java-proxy-classes-using-jax-ws).
+   Para obter mais informações, consulte [Criando classes proxy Java usando JAX-WS](#creating-java-proxy-classes-using-jax-ws).
 
    >[!NOTE]
    >
-   >Substitua `hiro-xp` *pelo endereço IP do servidor de aplicativos J2EE que hospeda o AEM Forms.*
+   >Substituir `hiro-xp` *com o endereço IP do servidor de aplicativos J2EE que hospeda o AEM Forms.*
 
 1. Compacte as classes proxy Java criadas usando JAX-WS em um arquivo JAR.
 1. Inclua o arquivo JAR do proxy Java e os arquivos JAR localizados no seguinte caminho:
 
-   &lt;install Directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
+   &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
    no caminho da classe do seu projeto do cliente Java.
 
-1. Crie um objeto `MyApplicationEncryptDocumentService` usando seu construtor.
-1. Crie um objeto `MyApplicationEncryptDocument` chamando o método `MyApplicationEncryptDocumentService` `getEncryptDocument` do objeto.
+1. Crie um `MyApplicationEncryptDocumentService` usando seu construtor.
+1. Crie um `MyApplicationEncryptDocument` chamando o `MyApplicationEncryptDocumentService` do objeto `getEncryptDocument` método .
 1. Defina os valores de conexão necessários para chamar o AEM Forms atribuindo valores aos seguintes membros de dados:
 
-   * Atribua o ponto de extremidade WSDL e o tipo de codificação ao campo `javax.xml.ws.BindingProvider` do objeto `ENDPOINT_ADDRESS_PROPERTY`. Para chamar o serviço `MyApplication/EncryptDocument` usando BLOB sobre a codificação HTTP, especifique o seguinte valor de URL:
+   * Atribua o ponto de extremidade WSDL e o tipo de codificação ao `javax.xml.ws.BindingProvider` do objeto `ENDPOINT_ADDRESS_PROPERTY` campo. Para invocar o `MyApplication/EncryptDocument` usando BLOB sobre codificação HTTP, especifique o seguinte valor de URL:
 
       `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
 
-   * Atribua o usuário dos formulários AEM ao campo `javax.xml.ws.BindingProvider` do objeto `USERNAME_PROPERTY`.
-   * Atribua o valor da senha correspondente ao campo `javax.xml.ws.BindingProvider` `PASSWORD_PROPERTY` do objeto.
+   * Atribua o usuário de formulários AEM ao `javax.xml.ws.BindingProvider` do objeto `USERNAME_PROPERTY` campo.
+   * Atribua o valor da senha correspondente ao `javax.xml.ws.BindingProvider` do objeto `PASSWORD_PROPERTY` campo.
 
-   O código de exemplo a seguir mostra essa lógica do aplicativo:
+   O exemplo de código a seguir mostra essa lógica do aplicativo:
 
    ```java
     //Set connection values required to invoke AEM Forms
@@ -1033,24 +1020,24 @@ Você pode chamar um serviço da AEM Forms usando classes proxy Java e dados BLO
     ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, password);
    ```
 
-1. Crie um objeto `BLOB` usando seu construtor.
-1. Preencha o objeto `BLOB` chamando seu método `setRemoteURL`. Passe um valor de string que especifica o local do URI de um documento PDF a ser passado para o serviço `MyApplication/EncryptDocument`.
-1. Chame o processo `MyApplication/EncryptDocument` chamando o método `MyApplicationEncryptDocument` do objeto `invoke` e transmitindo o objeto `BLOB` que contém o documento PDF. Esse processo retorna um documento PDF criptografado dentro de um objeto `BLOB`.
-1. Crie uma matriz de bytes para armazenar o fluxo de dados que representa o documento PDF criptografado. Chame o método `BLOB` do objeto `getRemoteURL` (use o objeto `BLOB` retornado pelo método `invoke`).
-1. Crie um objeto `java.io.File` usando seu construtor. Esse objeto representa o documento PDF criptografado.
-1. Crie um objeto `java.io.FileOutputStream` usando seu construtor e transmitindo o objeto `java.io.File`.
-1. Chame o método `java.io.FileOutputStream` do objeto `write`. Passe a matriz de bytes que contém o fluxo de dados que representa o documento PDF criptografado.
+1. Crie um `BLOB` usando seu construtor.
+1. Preencha o `BLOB` ao invocar seu `setRemoteURL` método . Passe um valor de string que especifica a localização do URI de um documento PDF para passar para a `MyApplication/EncryptDocument` serviço.
+1. Chame o `MyApplication/EncryptDocument` processo chamando o `MyApplicationEncryptDocument` do objeto `invoke` e a aprovação do `BLOB` objeto que contém o documento PDF. Esse processo retorna um documento PDF criptografado em um `BLOB` objeto.
+1. Crie uma matriz de bytes para armazenar o fluxo de dados que representa o documento PDF criptografado. Chame o `BLOB` do objeto `getRemoteURL` (use o `BLOB` objeto retornado pelo `invoke` método ).
+1. Crie um `java.io.File` usando seu construtor. Este objeto representa o documento PDF criptografado.
+1. Crie um `java.io.FileOutputStream` usando seu construtor e passando o `java.io.File` objeto.
+1. Chame o `java.io.FileOutputStream` do objeto `write` método . Passe a matriz de bytes que contém o fluxo de dados que representa o documento PDF criptografado.
 
 ## Chamar o AEM Forms usando DIME {#invoking-aem-forms-using-dime}
 
-Você pode chamar os serviços da AEM Forms usando SOAP com anexos. O AEM Forms oferece suporte aos padrões de serviço da Web MIME e DIME. O DIME permite enviar anexos binários, como documentos PDF, juntamente com solicitações de invocação em vez de codificar o anexo. A seção *Chamar o AEM Forms usando DIME* discute invocar o seguinte processo de curta duração do AEM Forms chamado `MyApplication/EncryptDocument` usando DIME.
+Você pode chamar os serviços da AEM Forms usando SOAP com anexos. O AEM Forms oferece suporte aos padrões de serviço da Web MIME e DIME. O DIME permite enviar anexos binários, como documentos PDF, juntamente com solicitações de invocação em vez de codificar o anexo. O *Chamar o AEM Forms usando DIME* seção discute invocar o seguinte processo de curta duração do AEM Forms chamado `MyApplication/EncryptDocument` utilizando DIME.
 
 Quando esse processo é chamado, ele executa as seguintes ações:
 
-1. Obtém o documento PDF não seguro passado para o processo. Esta ação é baseada na operação `SetValue`. O parâmetro de entrada desse processo é uma variável de processo `document` chamada `inDoc`.
-1. Criptografa o documento PDF com uma senha. Esta ação é baseada na operação `PasswordEncryptPDF`. O documento PDF criptografado por senha é retornado em uma variável de processo chamada `outDoc`.
+1. Obtém o documento PDF não seguro passado para o processo. Essa ação se baseia na variável `SetValue` operação. O parâmetro de entrada para esse processo é um `document` variável de processo nomeada `inDoc`.
+1. Criptografa o documento PDF com uma senha. Essa ação se baseia na variável `PasswordEncryptPDF` operação. O documento PDF criptografado por senha é retornado em uma variável de processo chamada `outDoc`.
 
-Esse processo não se baseia em um processo AEM Forms existente. Para seguir junto com os exemplos de código, crie um processo chamado `MyApplication/EncryptDocument` usando o Workbench. (Consulte [Usando Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+Esse processo não se baseia em um processo AEM Forms existente. Para seguir junto com os exemplos de código, crie um processo chamado `MyApplication/EncryptDocument` usando o Workbench. (Consulte [Uso do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 >[!NOTE]
 >
@@ -1065,23 +1052,23 @@ Para criar um projeto .NET que possa invocar um serviço Forms usando DIME, exec
 
 **Instalação dos aprimoramentos de serviços da Web 2.0**
 
-Instale os Aprimoramentos de Serviços Web 2.0 em seu computador de desenvolvimento e integre-o ao Microsoft Visual Studio .NET. Você pode baixar os Aprimoramentos de Serviços Web 2.0 no [Microsoft Download Center.](https://www.microsoft.com/downloads/search.aspx)
+Instale os Aprimoramentos de Serviços Web 2.0 em seu computador de desenvolvimento e integre-o ao Microsoft Visual Studio .NET. Você pode baixar os Aprimoramentos de serviços da Web 2.0 da seção [Centro de download da Microsoft.](https://www.microsoft.com/downloads/search.aspx)
 
 Nesta página da Web, procure por Aprimoramentos de serviços da Web 2.0 e baixe-os no computador de desenvolvimento. Este download coloca um arquivo chamado Microsoft WSE 2.0 SPI.msi em seu computador. Execute o programa de instalação e siga as instruções online.
 
 >[!NOTE]
 >
->Os Aprimoramentos de serviços da Web 2.0 são compatíveis com o DIME. A versão suportada do Microsoft Visual Studio é 2003 ao trabalhar com os Aprimoramentos de Serviços Web 2.0. Os Aprimoramentos de Serviços Web 3.0 não são compatíveis com DIME; no entanto, ele suporta MTOM.
+>Os Aprimoramentos de serviços da Web 2.0 são compatíveis com o DIME. A versão compatível do Microsoft Visual Studio é 2003 ao trabalhar com os Aprimoramentos de Serviços Web 2.0. Os Aprimoramentos de Serviços Web 3.0 não são compatíveis com o DIME; no entanto, ele suporta MTOM.
 
 **Criação de uma referência da Web para um serviço AEM Forms**
 
-Depois de instalar os Aprimoramentos de Serviços Web 2.0 em seu computador de desenvolvimento e criar um projeto do Microsoft .NET, crie uma referência da Web para o serviço Forms. Por exemplo, para criar uma referência da Web para o processo `MyApplication/EncryptDocument` e supondo que o Forms esteja instalado no computador local, especifique o seguinte URL:
+Depois de instalar os Aprimoramentos de Serviços Web 2.0 no computador de desenvolvimento e criar um projeto Microsoft .NET, crie uma referência Web para o serviço Forms. Por exemplo, para criar uma referência da Web para a variável `MyApplication/EncryptDocument` e supondo que o Forms esteja instalado no computador local, especifique o seguinte URL:
 
 ```java
      http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL
 ```
 
-Após criar uma referência da Web, os dois tipos de dados proxy a seguir estão disponíveis para você usar em seu projeto .NET: `EncryptDocumentService` e `EncryptDocumentServiceWse`. Para invocar o processo `MyApplication/EncryptDocument` usando DIME, use o tipo `EncryptDocumentServiceWse`.
+Após criar uma referência da Web, os dois tipos de dados proxy a seguir estão disponíveis para você usar em seu projeto .NET: `EncryptDocumentService` e `EncryptDocumentServiceWse`. Para invocar o `MyApplication/EncryptDocument` processar usando o DIME, use o `EncryptDocumentServiceWse` tipo .
 
 >[!NOTE]
 >
@@ -1106,29 +1093,29 @@ Após criar uma referência da Web, os dois tipos de dados proxy a seguir estão
 
 **Chamando um serviço usando DIME em um projeto .NET**
 
-Você pode chamar um serviço Forms usando DIME. Considere o processo `MyApplication/EncryptDocument` que aceita um documento PDF não seguro e retorna um documento PDF criptografado por senha. Para invocar o processo `MyApplication/EncryptDocument` usando DIME, execute as seguintes etapas:
+Você pode chamar um serviço Forms usando DIME. Considere a `MyApplication/EncryptDocument` processo que aceita um documento PDF não seguro e retorna um documento PDF criptografado por senha. Para invocar o `MyApplication/EncryptDocument` para processar usando o DIME, execute as seguintes etapas:
 
-1. Crie um projeto do Microsoft .NET que permita que você chame um serviço Forms usando DIME. Certifique-se de incluir os Aprimoramentos de serviços da Web 2.0 e criar uma referência da Web para o serviço AEM Forms.
-1. Depois de definir uma referência da Web para o processo `MyApplication/EncryptDocument`, crie um objeto `EncryptDocumentServiceWse` usando seu construtor padrão.
-1. Defina o membro de dados `EncryptDocumentServiceWse` do objeto `Credentials` com um valor `System.Net.NetworkCredential` que especifique o nome de usuário e o valor de senha dos formulários AEM.
-1. Crie um objeto `Microsoft.Web.Services2.Dime.DimeAttachment` usando seu construtor e transmitindo os seguintes valores:
+1. Crie um projeto Microsoft .NET que permita que você chame um serviço Forms usando DIME. Certifique-se de incluir os Aprimoramentos de serviços da Web 2.0 e criar uma referência da Web para o serviço AEM Forms.
+1. Depois de definir uma referência da Web para a variável `MyApplication/EncryptDocument` processar, criar um `EncryptDocumentServiceWse` usando seu construtor padrão.
+1. Defina as `EncryptDocumentServiceWse` do objeto `Credentials` membro de dados com um `System.Net.NetworkCredential` que especifica o nome de usuário e o valor de senha dos formulários AEM.
+1. Crie um `Microsoft.Web.Services2.Dime.DimeAttachment` usando seu construtor e transmitindo os seguintes valores:
 
-   * Um valor de string que especifica um valor de GUID. Você pode obter um valor de GUID chamando o método `System.Guid.NewGuid.ToString`.
+   * Um valor de string que especifica um valor de GUID. Você pode obter um valor de GUID chamando a variável `System.Guid.NewGuid.ToString` método .
    * Um valor de string que especifica o tipo de conteúdo. Como esse processo requer um documento PDF, especifique `application/pdf`.
-   * Um valor de enumeração `TypeFormat`. Especifique `TypeFormat.MediaType`.
-   * Um valor da string que especifica o local do documento PDF a ser transmitido ao processo do AEM Forms.
+   * A `TypeFormat` valor de enumeração. Especifique `TypeFormat.MediaType`.
+   * Um valor de string que especifica o local do documento PDF a ser transmitido ao processo AEM Forms.
 
-1. Crie um objeto `BLOB` usando seu construtor.
-1. Adicione o anexo DIME ao objeto `BLOB` atribuindo o valor `Microsoft.Web.Services2.Dime.DimeAttachment` do membro de dados do objeto `Id` ao membro de dados `BLOB` do objeto `attachmentID`.
-1. Chame o método `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add` e passe o objeto `Microsoft.Web.Services2.Dime.DimeAttachment`.
-1. Chame o processo `MyApplication/EncryptDocument` chamando o método `EncryptDocumentServiceWse` do objeto `invoke` e transmitindo o objeto `BLOB` que contém o anexo DIME. Esse processo retorna um documento PDF criptografado dentro de um objeto `BLOB`.
-1. Obtenha o valor do identificador de anexo obtendo o valor do membro de dados `BLOB` do objeto retornado `attachmentID`.
-1. Itere pelos anexos localizados em `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` e use o valor do identificador de anexo para obter o documento PDF criptografado.
-1. Obtenha um objeto `System.IO.Stream` obtendo o valor do membro de dados `Attachment` do objeto `Stream`.
-1. Crie uma matriz de bytes e passe essa matriz de bytes para o método `System.IO.Stream` do objeto `Read`. Esse método preenche a matriz de bytes com um fluxo de dados que representa o documento PDF criptografado.
-1. Crie um objeto `System.IO.FileStream` chamando seu construtor e passando um valor de string que representa um local de arquivo PDF. Esse objeto representa o documento PDF criptografado.
-1. Crie um objeto `System.IO.BinaryWriter` chamando seu construtor e passando o objeto `System.IO.FileStream`.
-1. Grave o conteúdo da matriz de bytes no arquivo PDF chamando o método `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+1. Crie um `BLOB` usando seu construtor.
+1. Adicione o anexo DIME à `BLOB` atribuindo o `Microsoft.Web.Services2.Dime.DimeAttachment` do objeto `Id` valor do membro de dados para `BLOB` do objeto `attachmentID` membro de dados.
+1. Chame o `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add` e passe o `Microsoft.Web.Services2.Dime.DimeAttachment` objeto.
+1. Chame o `MyApplication/EncryptDocument` processo chamando o `EncryptDocumentServiceWse` do objeto `invoke` e a aprovação do `BLOB` objeto que contém o anexo DIME. Esse processo retorna um documento PDF criptografado em um `BLOB` objeto.
+1. Obtenha o valor do identificador de anexo obtendo o valor do retornado `BLOB` do objeto `attachmentID` membro de dados.
+1. Iterar através dos anexos localizados em `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` e use o valor do identificador de anexo para obter o documento PDF criptografado.
+1. Obter um `System.IO.Stream` obtendo o valor da variável `Attachment` do objeto `Stream` membro de dados.
+1. Crie uma matriz de bytes e passe essa matriz de bytes para a `System.IO.Stream` do objeto `Read` método . Esse método preenche a matriz de bytes com um fluxo de dados que representa o documento PDF criptografado.
+1. Crie um `System.IO.FileStream` chamando seu construtor e passando um valor de string que representa um local de arquivo PDF. Este objeto representa o documento PDF criptografado.
+1. Crie um `System.IO.BinaryWriter` chamando seu construtor e passando o `System.IO.FileStream` objeto.
+1. Escreva o conteúdo da matriz de bytes no arquivo PDF chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
 
 ### Criando classes proxy Java do Apache Axis que usam DIME {#creating-apache-axis-java-proxy-classes-that-use-dime}
 
@@ -1136,46 +1123,46 @@ Você pode usar a ferramenta Apache Axis WSDL2Java para converter um WSDL de ser
 
 A ferramenta Apache Axis WSDL2Java gera arquivos JAVA que contêm métodos usados para enviar solicitações SOAP a um serviço. As solicitações SOAP recebidas por um serviço são decodificadas pelas bibliotecas geradas pelo Axis e transformadas em métodos e argumentos.
 
-Para chamar o serviço `MyApplication/EncryptDocument` (que foi criado no Workbench) usando arquivos de biblioteca gerados pelo Axis e DIME, execute as seguintes etapas:
+Para invocar o `MyApplication/EncryptDocument` serviço (que foi criado no Workbench) usando arquivos de biblioteca gerados pelo Axis e DIME, execute as seguintes etapas:
 
-1. Crie classes proxy Java que consomem o WSDL do serviço `MyApplication/EncryptDocument` usando o Apache Axis. (Consulte [Criação de classes proxy Java usando o Apache Axis](#creating-java-proxy-classes-using-apache-axis).)
+1. Crie classes proxy Java que consomem o `MyApplication/EncryptDocument` serviço WSDL usando o Apache Axis. (Consulte [Criação de classes proxy Java usando o Apache Axis](#creating-java-proxy-classes-using-apache-axis).)
 1. Inclua as classes proxy Java no caminho da classe.
-1. Crie um objeto `MyApplicationEncryptDocumentServiceLocator` usando seu construtor.
-1. Crie um objeto `URL` usando seu construtor e passando um valor de string que especifica a definição WSDL do serviço AEM Forms. Certifique-se de especificar `?blob=dime` no final do URL do ponto de extremidade SOAP. Por exemplo, use
+1. Crie um `MyApplicationEncryptDocumentServiceLocator` usando seu construtor.
+1. Crie um `URL` usando seu construtor e passando um valor de string que especifica a definição de WSDL do serviço AEM Forms. Certifique-se de especificar `?blob=dime` no final do URL do ponto de extremidade SOAP. Por exemplo, use
 
    ```java
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=dime.
    ```
 
-1. Crie um objeto `EncryptDocumentSoapBindingStub` chamando seu construtor e passando o objeto `MyApplicationEncryptDocumentServiceLocator`e o objeto `URL`.
-1. Defina o nome de usuário e o valor da senha dos formulários AEM chamando os métodos `EncryptDocumentSoapBindingStub` e `setPassword` do objeto.`setUsername`
+1. Crie um `EncryptDocumentSoapBindingStub` chamando seu construtor e passando o `MyApplicationEncryptDocumentServiceLocator`e o `URL` objeto.
+1. Defina o nome de usuário e o valor da senha dos formulários de AEM chamando a função `EncryptDocumentSoapBindingStub` do objeto `setUsername` e `setPassword` métodos.
 
    ```java
     encryptionClientStub.setUsername("administrator");
     encryptionClientStub.setPassword("password");
    ```
 
-1. Recupere o documento PDF para enviar ao serviço `MyApplication/EncryptDocument` criando um objeto `java.io.File`. Passe um valor de string que especifica o local do documento PDF.
-1. Crie um objeto `javax.activation.DataHandler` usando seu construtor e transmitindo um objeto `javax.activation.FileDataSource`. O objeto `javax.activation.FileDataSource` pode ser criado usando seu construtor e passando o objeto `java.io.File` que representa o documento PDF.
-1. Crie um objeto `org.apache.axis.attachments.AttachmentPart` usando seu construtor e transmitindo o objeto `javax.activation.DataHandler`.
-1. Anexe o anexo chamando o método `EncryptDocumentSoapBindingStub` do objeto `addAttachment` e passando o objeto `org.apache.axis.attachments.AttachmentPart`.
-1. Crie um objeto `BLOB` usando seu construtor. Preencha o objeto `BLOB` com o valor do identificador de anexo chamando o método `BLOB` do objeto `setAttachmentID` e transmitindo o valor do identificador de anexo. Esse valor pode ser obtido chamando o método `org.apache.axis.attachments.AttachmentPart` do objeto `getContentId`.
-1. Chame o processo `MyApplication/EncryptDocument` chamando o método `EncryptDocumentSoapBindingStub` do objeto `invoke`. Passe o objeto `BLOB` que contém o anexo DIME. Esse processo retorna um documento PDF criptografado dentro de um objeto `BLOB`.
-1. Obtenha o valor do identificador de anexo chamando o método `BLOB` do objeto retornado `getAttachmentID`. Esse método retorna um valor de string que representa o valor identificador do anexo retornado.
-1. Recupere os anexos chamando o método `EncryptDocumentSoapBindingStub` do objeto `getAttachments`. Esse método retorna uma matriz de `Objects` que representa os anexos.
-1. Itere pelos anexos (a matriz `Object`) e use o valor do identificador de anexo para obter o documento PDF criptografado. Cada elemento é um objeto `org.apache.axis.attachments.AttachmentPart` .
-1. Obtenha o objeto `javax.activation.DataHandler` associado ao anexo chamando o método `org.apache.axis.attachments.AttachmentPart` do objeto `getDataHandler`.
-1. Obtenha um objeto `java.io.FileStream` chamando o método `javax.activation.DataHandler` do objeto `getInputStream`.
-1. Crie uma matriz de bytes e passe essa matriz de bytes para o método `java.io.FileStream` do objeto `read`. Esse método preenche a matriz de bytes com um fluxo de dados que representa o documento PDF criptografado.
-1. Crie um objeto `java.io.File` usando seu construtor. Esse objeto representa o documento PDF criptografado.
-1. Crie um objeto `java.io.FileOutputStream` usando seu construtor e transmitindo o objeto `java.io.File`.
-1. Chame o método `java.io.FileOutputStream` do objeto `write` e passe a matriz de bytes que contém o fluxo de dados que representa o documento PDF criptografado.
+1. Recupere o documento do PDF para enviar ao `MyApplication/EncryptDocument` criando um `java.io.File` objeto. Passe um valor de string que especifica o local do documento PDF.
+1. Crie um `javax.activation.DataHandler` usando seu construtor e transmitindo um `javax.activation.FileDataSource` objeto. O `javax.activation.FileDataSource` pode ser criado usando seu construtor e transmitindo o `java.io.File` objeto que representa o documento PDF.
+1. Crie um `org.apache.axis.attachments.AttachmentPart` usando seu construtor e passando o `javax.activation.DataHandler` objeto.
+1. Anexe o anexo chamando o `EncryptDocumentSoapBindingStub` do objeto `addAttachment` e a aprovação do `org.apache.axis.attachments.AttachmentPart` objeto.
+1. Crie um `BLOB` usando seu construtor. Preencha o `BLOB` objeto com o valor do identificador de anexo chamando o `BLOB` do objeto `setAttachmentID` e transmitindo o valor do identificador de anexo. Esse valor pode ser obtido chamando a função `org.apache.axis.attachments.AttachmentPart` do objeto `getContentId` método .
+1. Chame o `MyApplication/EncryptDocument` processo chamando o `EncryptDocumentSoapBindingStub` do objeto `invoke` método . Passe o `BLOB` objeto que contém o anexo DIME. Esse processo retorna um documento PDF criptografado em um `BLOB` objeto.
+1. Obtenha o valor do identificador de anexo chamando o valor retornado `BLOB` do objeto `getAttachmentID` método . Esse método retorna um valor de string que representa o valor identificador do anexo retornado.
+1. Recupere os anexos chamando o `EncryptDocumentSoapBindingStub` do objeto `getAttachments` método . Esse método retorna uma matriz de `Objects` que representam os anexos.
+1. Iterar através dos anexos (a `Object` array) e use o valor identificador de anexo para obter o documento PDF criptografado. Cada elemento é um `org.apache.axis.attachments.AttachmentPart` objeto.
+1. Obtenha o `javax.activation.DataHandler` objeto associado ao anexo chamando o `org.apache.axis.attachments.AttachmentPart` do objeto `getDataHandler` método .
+1. Obter um `java.io.FileStream` chamando o `javax.activation.DataHandler` do objeto `getInputStream` método .
+1. Crie uma matriz de bytes e passe essa matriz de bytes para a `java.io.FileStream` do objeto `read` método . Esse método preenche a matriz de bytes com um fluxo de dados que representa o documento PDF criptografado.
+1. Crie um `java.io.File` usando seu construtor. Este objeto representa o documento PDF criptografado.
+1. Crie um `java.io.FileOutputStream` usando seu construtor e passando o `java.io.File` objeto.
+1. Chame o `java.io.FileOutputStream` do objeto `write` e transmita a matriz de bytes que contém o fluxo de dados que representa o documento PDF criptografado.
 
-**Consulte também:**
+**Consulte também**
 
 [Início rápido: Chamar um serviço usando DIME em um projeto Java](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-dime-in-a-java-project)
 
-## Usar a autenticação baseada em SAML {#using-saml-based-authentication}
+## Usar autenticação baseada em SAML {#using-saml-based-authentication}
 
 O AEM Forms oferece suporte a vários modos de autenticação de serviço da Web ao chamar serviços. Um modo de autenticação está especificando um nome de usuário e um valor de senha usando um cabeçalho de autorização básico na chamada de serviço da Web. O AEM Forms também oferece suporte à autenticação baseada em asserção SAML. Quando um aplicativo cliente chama um serviço da AEM Forms usando um serviço da Web, o aplicativo cliente pode fornecer informações de autenticação de uma das seguintes maneiras:
 
@@ -1239,14 +1226,14 @@ Esta asserção de exemplo é emitida para um usuário administrador. Essa asser
 * Ele é assinado digitalmente. Então qualquer modificação feita quebraria a assinatura.
 * Ele pode ser apresentado ao AEM Forms como um token da identidade do usuário semelhante ao nome de usuário e senha.
 
-Um aplicativo cliente pode recuperar a asserção de qualquer API do AEM Forms AuthenticationManager que retorna um objeto `AuthResult`. Você pode obter uma instância `AuthResult` executando um dos dois métodos a seguir:
+Um aplicativo cliente pode recuperar a asserção de qualquer API do AEM Forms AuthenticationManager que retorne um `AuthResult` objeto. Você pode obter um `AuthResult` executando um dos dois métodos a seguir:
 
 * Autenticar o usuário usando qualquer um dos métodos de autenticação expostos pela API do AuthenticationManager. Normalmente, você usaria o nome de usuário e a senha; no entanto, também é possível usar a autenticação de certificado.
-* Uso do método `AuthenticationManager.getAuthResultOnBehalfOfUser`. Esse método permite que um aplicativo cliente obtenha um objeto `AuthResult` para qualquer usuário de formulários AEM.
+* Usar o `AuthenticationManager.getAuthResultOnBehalfOfUser` método . Esse método permite que um aplicativo cliente obtenha um `AuthResult` para qualquer usuário do AEM forms.
 
 um usuário do AEM forms pode ser autenticado usando um token SAML obtido. Essa asserção SAML (fragmento xml) pode ser enviada como parte do cabeçalho WS-Security com a chamada de serviço da Web para autenticação de usuário. Normalmente, um aplicativo cliente autentica um usuário, mas não armazenou as credenciais do usuário. (Ou o usuário fez logon nesse cliente por meio de um mecanismo diferente do uso de um nome de usuário e senha.) Nessa situação, o aplicativo cliente deve chamar o AEM Forms e representar um usuário específico que tenha permissão para invocar o AEM Forms.
 
-Para representar um usuário específico, chame o método `AuthenticationManager.getAuthResultOnBehalfOfUser` usando um serviço da Web. Esse método retorna uma instância `AuthResult` que contém a asserção SAML para esse usuário.
+Para representar um usuário específico, chame o `AuthenticationManager.getAuthResultOnBehalfOfUser` usando um serviço da Web. Esse método retorna um `AuthResult` instância que contém a asserção SAML para esse usuário.
 
 Em seguida, use essa asserção SAML para invocar qualquer serviço que exija autenticação. Essa ação envolve enviar a asserção como parte do cabeçalho SOAP. Quando uma chamada de serviço da Web é feita com essa asserção, o AEM Forms identifica o usuário como aquele representado por essa asserção. Ou seja, o usuário especificado na asserção é o usuário que está chamando o serviço.
 
@@ -1254,11 +1241,11 @@ Em seguida, use essa asserção SAML para invocar qualquer serviço que exija au
 
 Você pode chamar um serviço AEM Forms por classes proxy Java que foram criadas usando a biblioteca Eixo. (Consulte [Criação de classes proxy Java usando o Apache Axis](#creating-java-proxy-classes-using-apache-axis).)
 
-Ao usar o AXIS que usa a autenticação baseada em SAML, registre o manipulador de solicitação e resposta no Axis. O Apache Axis chama o manipulador antes de enviar uma solicitação de invocação para o AEM Forms. Para registrar um manipulador, crie uma classe Java que estenda `org.apache.axis.handlers.BasicHandler`.
+Ao usar o AXIS que usa a autenticação baseada em SAML, registre o manipulador de solicitação e resposta no Axis. O Apache Axis chama o manipulador antes de enviar uma solicitação de invocação para o AEM Forms. Para registrar um manipulador, crie uma classe Java que se estende `org.apache.axis.handlers.BasicHandler`.
 
 **Criar um AssertionHandler com Eixo**
 
-A classe Java a seguir, chamada `AssertionHandler.java`, mostra um exemplo de uma classe Java que estende `org.apache.axis.handlers.BasicHandler`.
+A seguinte classe Java, chamada de `AssertionHandler.java`, mostra um exemplo de uma classe Java que se estende `org.apache.axis.handlers.BasicHandler`.
 
 ```java
  public class AssertionHandler extends BasicHandler {
@@ -1348,7 +1335,7 @@ Você pode invocar um serviço Forms usando um assembly de cliente .NET e autent
 
 >[!NOTE]
 >
->A seção DIME usa WSE 2.0. Para usar a autenticação baseada em SAML, siga as mesmas instruções especificadas no tópico DIME. No entanto, substitua WSE 2.0 por WSE 3.0. Instale os Aprimoramentos de Serviços Web 3.0 em seu computador de desenvolvimento e integre-o ao Microsoft Visual Studio .NET. Você pode baixar os Aprimoramentos de serviços da Web 3.0 no [Microsoft Download Center](https://www.microsoft.com/downloads/search.aspx).
+>A seção DIME usa WSE 2.0. Para usar a autenticação baseada em SAML, siga as mesmas instruções especificadas no tópico DIME. No entanto, substitua WSE 2.0 por WSE 3.0. Instale os Aprimoramentos de Serviços Web 3.0 em seu computador de desenvolvimento e integre-o ao Microsoft Visual Studio .NET. Você pode baixar os Aprimoramentos de serviços da Web 3.0 da seção [Centro de download do Microsoft](https://www.microsoft.com/downloads/search.aspx).
 
 A arquitetura WSE usa tipos de dados Políticas, Asserções e SecurityToken. Resumidamente, para uma chamada de serviço da Web, especifique uma política. Uma política pode ter várias asserções. Cada asserção pode conter filtros. Um filtro é chamado em determinados estágios em uma chamada de serviço da Web e, nesse momento, pode modificar a solicitação SOAP. Para obter detalhes completos, consulte a documentação Melhorias do serviço da Web 3.0 .
 
@@ -1462,9 +1449,9 @@ O exemplo de código C# a seguir chama um serviço Forms usando a autenticação
 
 Às vezes, ocorrem problemas ao invocar determinadas operações dos serviços da AEM Forms usando serviços da Web. O objetivo desta discussão é identificar essas questões e fornecer uma solução, se disponível.
 
-### Chamada assíncrona de operações de serviço {#invoking-service-operations-asynchronously}
+### Chamada de operações de serviço de forma assíncrona {#invoking-service-operations-asynchronously}
 
-Se você tentar invocar de forma assíncrona uma operação de serviço do AEM Forms, como a operação `htmlToPDF` do Gerar PDF, um `SoapFaultException` ocorrerá. Para resolver esse problema, crie um arquivo XML de vínculo personalizado que mapeie o elemento `ExportPDF_Result` e outros elementos em classes diferentes. O XML a seguir representa um arquivo de vínculo personalizado.
+Se você tentar invocar de forma assíncrona uma operação de serviço do AEM Forms, como a variável Gerar PDF `htmlToPDF` operação, uma `SoapFaultException` ocorre. Para resolver esse problema, crie um arquivo XML de vínculo personalizado que mapeie a variável `ExportPDF_Result` elemento e outros elementos em classes diferentes. O XML a seguir representa um arquivo de vínculo personalizado.
 
 ```xml
  <bindings
@@ -1498,9 +1485,9 @@ Se você tentar invocar de forma assíncrona uma operação de serviço do AEM F
  </bindings>
 ```
 
-Use esse arquivo XML ao criar arquivos proxy Java usando JAX-WS. (Consulte [Criação de classes proxy Java usando JAX-WS](#creating-java-proxy-classes-using-jax-ws).)
+Use esse arquivo XML ao criar arquivos proxy Java usando JAX-WS. (Consulte [Criando classes proxy Java usando JAX-WS](#creating-java-proxy-classes-using-jax-ws).)
 
-Faça referência a esse arquivo XML ao executar a ferramenta JAX-WS (wsimport.exe) usando a opção de linha de comando - `b`. Atualize o elemento `wsdlLocation` no arquivo XML de vínculo para especificar o URL do AEM Forms.
+Faça referência a esse arquivo XML ao executar a ferramenta JAX-WS (wsimport.exe) usando o - `b` opção de linha de comando. Atualize o `wsdlLocation` no arquivo XML de vínculo para especificar o URL do AEM Forms.
 
 Para garantir que a invocação assíncrona funcione, modifique o valor do URL do ponto final e especifique `async=true`. Por exemplo, para arquivos proxy Java criados com JAX-WS, especifique o seguinte para o `BindingProvider.ENDPOINT_ADDRESS_PROPERTY`.
 
@@ -1520,11 +1507,11 @@ A lista a seguir especifica outros serviços que precisam de um arquivo de vínc
 
 Às vezes, uma biblioteca de proxy criada usando um servidor de aplicativos J2EE específico não chama com êxito o AEM Forms que está hospedado em um servidor de aplicativos J2EE diferente. Considere uma biblioteca de proxy que é gerada usando o AEM Forms que é implantada no WebSphere. Esta biblioteca de proxy não pode invocar com êxito os serviços da AEM Forms implantados no Servidor de Aplicativos JBoss.
 
-Alguns tipos de dados complexos do AEM Forms, como `PrincipalReference`, são definidos de forma diferente quando o AEM Forms é implantado no WebSphere, em comparação com o JBoss Application Server. As diferenças nos JDKs usados pelos diferentes serviços de aplicativos do J2EE são o motivo das diferenças nas definições de WSDL. Como resultado, use bibliotecas de proxy geradas no mesmo servidor de aplicativos J2EE.
+Alguns tipos de dados complexos do AEM Forms, como `PrincipalReference`, são definidas de forma diferente quando o AEM Forms é implantado no WebSphere, em comparação com o JBoss Application Server. As diferenças nos JDKs usados pelos diferentes serviços de aplicativos do J2EE são o motivo das diferenças nas definições de WSDL. Como resultado, use bibliotecas de proxy geradas no mesmo servidor de aplicativos J2EE.
 
 ### Acesso a vários serviços usando serviços da Web {#accessing-multiple-services-using-web-services}
 
-Devido a conflitos de namespace, objetos de dados não podem ser compartilhados entre vários WSDLs de serviço. Diferentes serviços podem compartilhar tipos de dados e, portanto, os serviços compartilham a definição desses tipos nas WSDLs. Por exemplo, não é possível adicionar dois assemblies cliente .NET que contêm um tipo de dados `BLOB` ao mesmo projeto cliente .NET. Se você tentar fazer isso, ocorrerá um erro de compilação.
+Devido a conflitos de namespace, objetos de dados não podem ser compartilhados entre vários WSDLs de serviço. Diferentes serviços podem compartilhar tipos de dados e, portanto, os serviços compartilham a definição desses tipos nas WSDLs. Por exemplo, não é possível adicionar dois assemblies cliente .NET que contêm um `BLOB` tipo de dados para o mesmo projeto de cliente .NET. Se você tentar fazer isso, ocorrerá um erro de compilação.
 
 A lista a seguir especifica os tipos de dados que não podem ser compartilhados entre vários WSDLs de serviço:
 
@@ -1535,9 +1522,9 @@ A lista a seguir especifica os tipos de dados que não podem ser compartilhados 
 * `Roles`
 * `BLOB`
 
-Para evitar esse problema, é recomendável qualificar totalmente os tipos de dados. Por exemplo, considere um aplicativo .NET que faça referência ao serviço Forms e ao serviço de assinatura usando uma referência de serviço. Ambas as referências de serviço conterão uma classe `BLOB`. Para usar uma instância `BLOB`, qualifique totalmente o objeto `BLOB` ao declará-lo. Essa abordagem é mostrada no seguinte exemplo de código. Para obter informações sobre este exemplo de código, consulte [Assinatura digital do Forms interativo](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
+Para evitar esse problema, é recomendável qualificar totalmente os tipos de dados. Por exemplo, considere um aplicativo .NET que faça referência ao serviço Forms e ao serviço de assinatura usando uma referência de serviço. Ambas as referências de serviço conterão um `BLOB` classe . Para usar um `BLOB` , qualifique totalmente a variável `BLOB` ao declará-lo. Essa abordagem é mostrada no seguinte exemplo de código. Para obter informações sobre este exemplo de código, consulte [Assinatura digital - Forms interativo](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
 
-O exemplo de código C# a seguir assina um formulário interativo renderizado pelo serviço Forms. O aplicativo cliente tem duas referências de serviço. A instância `BLOB` associada ao serviço Forms pertence ao namespace `SignInteractiveForm.ServiceReference2`. Da mesma forma, a instância `BLOB` associada ao serviço de assinatura pertence ao namespace `SignInteractiveForm.ServiceReference1`. O formulário interativo assinado é salvo como um arquivo PDF chamado *LoanXFASigned.pdf*.
+O exemplo de código C# a seguir assina um formulário interativo renderizado pelo serviço Forms. O aplicativo cliente tem duas referências de serviço. O `BLOB` A instância associada ao serviço do Forms pertence ao `SignInteractiveForm.ServiceReference2` namespace. Da mesma forma, a variável `BLOB` A instância associada ao serviço de assinatura pertence ao `SignInteractiveForm.ServiceReference1` namespace. O formulário interativo assinado é salvo como um arquivo PDF chamado *LoanXFASigned.pdf*.
 
 ```csharp
  ???/**
@@ -1750,7 +1737,6 @@ O exemplo de código C# a seguir assina um formulário interativo renderizado pe
  
 ```
 
-### Serviços que começam com a letra I produzem arquivos proxy inválidos {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
+### Os serviços que começam com a letra I produzem arquivos proxy inválidos {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
 
-O nome de algumas classes proxy geradas pelo AEM Forms está incorreto ao usar o Microsoft .Net 3.5 e o WCF. Esse problema ocorre quando as classes proxy são criadas para IBMFilenetContentRepositoryConnector, IDPSchedulerService ou qualquer outro serviço cujo nome começa com a letra I. Por exemplo, o nome do cliente gerado no caso de IBMFileNetContentRepositoryConnector é `BMFileNetContentRepositoryConnectorClient`. A letra I está ausente na classe de proxy gerada.
-
+O nome de algumas classes proxy geradas pelo AEM Forms está incorreto ao usar o Microsoft .Net 3.5 e o WCF. Esse problema ocorre quando classes proxy são criadas para IBMFilenetContentRepositoryConnector, IDPSchedulerService ou qualquer outro serviço cujo nome começa com a letra I. Por exemplo, o nome do cliente gerado no caso de IBMFileNetContentRepositoryConnector é `BMFileNetContentRepositoryConnectorClient`. A letra I está ausente na classe de proxy gerada.

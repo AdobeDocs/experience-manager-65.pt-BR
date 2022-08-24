@@ -1,10 +1,11 @@
 ---
 title: Notas de versão gerais para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas descrevendo as informações da versão, novidades, como instalar e listas detalhadas de alterações."'
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '4696'
-ht-degree: 56%
+ht-degree: 58%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 56%
 | Versão | 6.5 |
 | Tipo | Versão Principal |
 | Data de disponibilidade geral | 8 de abril de 2019 |
-| Atualizações recomendadas | Consulte [AEM atualizações recentes](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=pt-BR). |
+| Atualizações recomendadas | Consulte [AEM atualizações recentes](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html). |
 
 ### Trívia {#trivia}
 
@@ -136,7 +137,7 @@ Crie, entregue e otimize experiências com eficiência em todas as exibições d
 * Personalize por localização e configuração de dados usando espaços reservados dinâmicos.
 * Informações unificadas orientadas pela integração do Adobe Analytics sobre o reprodutor do AEM Screens
 
-Para obter mais detalhes sobre alterações no AEM Screens - consulte as Notas de versão na seção [Guia do usuário do AEM Screens](https://docs.adobe.com/content/help/br/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Para obter mais detalhes sobre alterações no AEM Screens - consulte as Notas de versão na seção [Guia do usuário do AEM Screens](https://docs.adobe.com/content/help/pt-BR/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 #### Desenvolvimento de componentes e modelos {#component-amp-template-development}
 
@@ -436,7 +437,7 @@ Consulte a [Resumo dos novos recursos e melhorias no AEM 6.5 Forms](/help/forms/
 
 A Adobe está usando um modelo de desenvolvimento focado no cliente que permite aos clientes contribuir para todos os estágios do processo de desenvolvimento, durante a especificação, o desenvolvimento e o teste. Agradecemos a todos os clientes e parceiros neste processo.
 
-A Adobe tem os procedimentos e processos estabelecidos para permitir a coleta, priorização e rastreamento de resolução de erros com foco no cliente e desenvolvimento de solicitação de melhoria. O [Portal de suporte Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) O é integrado ao Sistema de aprimoramento de Adobe e rastreamento de problemas. Sempre que possível, as perguntas do cliente são identificadas e resolvidas pela equipe de Suporte ao cliente. Ao ser dimensionada ao P&amp;D, todas as informações do cliente são coletadas e usada para fins de priorização e relatório. A prioridade é dada em desenvolvimento para suporte pago, problemas de garantia e melhorias pagas pelo cliente.
+A Adobe tem os procedimentos e processos estabelecidos para permitir a coleta, priorização e rastreamento de resolução de erros com foco no cliente e desenvolvimento de solicitação de melhoria. O [Portal de suporte Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=pt-BR#support) O é integrado ao Sistema de aprimoramento de Adobe e rastreamento de problemas. Sempre que possível, as perguntas do cliente são identificadas e resolvidas pela equipe de Suporte ao cliente. Ao ser dimensionada ao P&amp;D, todas as informações do cliente são coletadas e usada para fins de priorização e relatório. A prioridade é dada em desenvolvimento para suporte pago, problemas de garantia e melhorias pagas pelo cliente.
 
 Esse processo de priorização gerou a correção de mais de 750 alterações focadas no cliente no AEM 6.5.
 
@@ -556,7 +557,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * **Trabalhar com versões de página**: [Se uma página tiver sido movida, você não poderá mais executar uma visualização em nenhuma versão anterior à movimentação](/help/sites-authoring/working-with-page-versions.md#previewing-a-version).
 
-### Ativos {#assets}
+### Assets {#assets}
 
 * **Pesquisar:** A pesquisa não resulta em retornos se a string de pesquisa contiver espaço à esquerda ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
 * **Esquema de metadados de pasta**: depois de adicionar um botão de escolha, os campos ID e Valor não são renderizados como esperado e a funcionalidade de exclusão não funciona. (CQ-4261144)

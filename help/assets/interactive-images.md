@@ -8,12 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
-feature: Imagens interativas
+feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '4277'
+source-wordcount: '4275'
 ht-degree: 1%
 
 ---
@@ -32,13 +32,13 @@ Veja as imagens interativas em ação na página da Web acima acessando o seguin
 
 ## Veja como os banners de imagem interativos são criados {#watch-how-interactive-image-banners-are-created}
 
-Reproduza uma apresentação em [como os banners de imagem interativos são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minutos e 33 segundos). Você também aprenderá a visualizar, editar e fornecer banners de imagem interativos.
+Reproduzir uma apresentação em [como os banners de imagem interativos são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minutos e 33 segundos). Você também aprenderá a visualizar, editar e fornecer banners de imagem interativos.
 
 ## Início rápido: Imagens interativas {#quick-start-interactive-images}
 
 A seguinte descrição passo a passo do fluxo de trabalho foi criada para ajudar você a ativar e executar rapidamente com imagens interativas no Adobe Experience Manager Assets.
 
-Procure o cabeçalho **Exemplo** em algumas das tarefas de Início rápido. Ele contém um breve tutorial baseado no seguinte exemplo de página da Web que ainda não tem Imagens interativas adicionadas a ele:
+Procure o **Exemplo** em algumas das tarefas do Início rápido. Ele contém um breve tutorial baseado no seguinte exemplo de página da Web que ainda não tem Imagens interativas adicionadas a ele:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
@@ -46,25 +46,25 @@ O tutorial ajuda a ilustrar as etapas da integração de imagens interativas em 
 
 Etapas de imagens interativas:
 
-1. **(Opcional) Identificar variáveis de ponto de acesso**  - se você usar o Experience Manager Assets e o Dynamic Media de forma independente, comece identificando as variáveis dinâmicas usadas na implementação existente do Quickview. Em seguida, você pode inserir dados de ponto de acesso ao criar a imagem interativa. Consulte [(Opcional) Identificar variáveis de ponto de acesso](#optional-identifying-hotspot-variables).
+1. **(Opcional) Identificar variáveis de ponto de acesso** - Se você usa o Experience Manager Assets e o Dynamic Media de forma independente, comece identificando as variáveis dinâmicas usadas na implementação existente do Quickview. Em seguida, você pode inserir dados de ponto de acesso ao criar a imagem interativa. Consulte [(Opcional) Identificar variáveis de ponto de acesso](#optional-identifying-hotspot-variables).
 No entanto, se você usar o Adobe Experience Manager Sites, o Adobe Experience Manager eCommerce ou ambos, essa etapa não será necessária.
 Consulte [Conceitos de comércio eletrônico no Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
-1. **(Opcional) Crie uma predefinição do visualizador de Imagem interativa**  - Personalize a imagem gráfica usada para representar pontos de acesso. Não é necessário criar sua própria predefinição do visualizador de Imagem interativa se você pretende usar a predefinição do visualizador de Imagem interativa pronta para uso chamada `Shoppable_Banner`.
+1. **(Opcional) Criar uma predefinição do visualizador de Imagem interativa** - Personalize a imagem gráfica usada para representar pontos de acesso. Não é necessário criar sua própria predefinição do visualizador de Imagem interativa se você pretende usar a predefinição do visualizador de Imagem interativa pronta para uso chamada `Shoppable_Banner` em vez disso.
 Consulte [(Opcional) Criar uma predefinição do visualizador de Imagem interativa](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
-1. **Carregar um banner de imagem**  - Faça upload de banners de imagem que você deseja tornar interativos.
-Consulte [Carregar um banner de imagem](#uploading-an-image-banner).
+1. **Fazer upload de um banner de imagem** - Carregue banners de imagem que você deseja tornar interativos.
+Consulte [Fazer upload de um banner de imagem](#uploading-an-image-banner).
 
-1. **Adicionar pontos de acesso a um banner de imagem**  - Adicione um ou mais pontos de acesso a um banner de imagem e associe cada um a uma ação, como um hiperlink, uma exibição rápida ou um Fragmento de experiência. Depois de adicionar pontos de acesso, você concluirá essa tarefa publicando a imagem interativa.
+1. **Adicionar pontos de acesso a um banner de imagem** - Adicione um ou mais pontos de acesso a um banner de imagem e associe-os a uma ação, como um hiperlink, uma visualização rápida ou um fragmento de experiência. Depois de adicionar pontos de acesso, você concluirá essa tarefa publicando a imagem interativa.
 
    * Consulte [Adicionar pontos de acesso a um banner de imagem](#adding-hotspots-to-an-image-banner).
    * Consulte [Visualizar imagens interativas](#optional-previewing-interactive-images) - Opcional. Se desejar, você pode visualizar uma representação do banner que pode ser comprado e testar sua interatividade.
    * Consulte [Publicar ativos](/help/assets/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar ativos de imagem interativos.
 
-1. **Adicionar uma imagem interativa ao seu site**  - Se você usar o Experience Manager Sites ou o eCommerce, ou ambos, você poderá adicionar a imagem interativa a uma página da Web no Experience Manager. Arraste o componente Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+1. **Adicionar uma imagem interativa ao seu site** - Se você usar o Experience Manager Sites, o eCommerce ou ambos, poderá adicionar a imagem interativa a uma página da Web no Experience Manager. Arraste o componente Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
-   Se você usar o Experience Manager Assets e o Dynamic Media independente, será necessário copiar o código incorporado no site e integrá-lo ao seu Quickview existente. Consulte [Integrar uma imagem interativa ao seu site](#integrating-an-interactive-image-with-your-website).
+   Se você usar o Experience Manager Assets e o Dynamic Media de forma independente, deverá copiar o código incorporado no seu site e integrá-lo ao seu Quickview existente. Consulte [Integrar uma imagem interativa ao seu site](#integrating-an-interactive-image-with-your-website).
 
    Se estiver usando um WCM de terceiros (Web Content Manager), é necessário integrar o novo vídeo interativo com a implementação existente do Quickview, usada em seu site. Consulte [Integrar uma imagem interativa a uma Quickview existente](#integrating-an-interactive-image-with-an-existing-quickview).
 
@@ -75,15 +75,13 @@ Consulte [Carregar um banner de imagem](#uploading-an-image-banner).
 >Essa tarefa só será necessária se o seguinte for verdadeiro:
 >
 >* Você deseja adicionar interatividade à imagem, acionando para o Quickview.
->* Sua implementação do Experience Manager *not* usa uma estrutura de integração de eCommerce para inserir dados de produtos no Experience Manager a partir de qualquer solução de eCommerce, como IBM® WebSphere® Commerce, Elastic Path, hybris ou Intershop. Consulte [Conceitos de comércio eletrônico no Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
-
+>* Sua implementação do Experience Manager faz *not* use uma estrutura de integração de eCommerce para inserir dados de produtos no Experience Manager a partir de qualquer solução de eCommerce, como IBM® WebSphere® Commerce, Elastic Path, hybris ou Intershop. Consulte [Conceitos de comércio eletrônico no Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 >
->
-Se sua implementação do Experience Manager usar o eCommerce, você poderá ignorar esta tarefa e prosseguir para a próxima tarefa.
+>Se sua implementação do Experience Manager usar o eCommerce, você poderá ignorar esta tarefa e prosseguir para a próxima tarefa.
 
 Comece identificando as variáveis dinâmicas usadas pela implementação existente do Quickview, para que você possa inserir dados de pontos de acesso para criar a imagem interativa.
 
-Quando você adiciona pontos de acesso a uma imagem de banner no Experience Manager Assets, deve atribuir uma SKU (Stock Keeping Unit) e variáveis adicionais opcionais a cada ponto de acesso. Essas variáveis de ponto de acesso são usadas posteriormente para corresponder pontos de acesso com conteúdo do Quickview.
+Ao adicionar pontos de acesso a uma imagem de banner no Experience Manager Assets, você deve atribuir uma SKU (Stock Keeping Unit) e variáveis adicionais opcionais a cada ponto de acesso. Essas variáveis de ponto de acesso são usadas posteriormente para corresponder pontos de acesso com conteúdo do Quickview.
 
 É importante identificar corretamente o número e o tipo de variáveis a serem associadas aos dados do ponto de acesso. Cada ponto de acesso adicionado a uma imagem de banner deve ter informações suficientes para identificar inequivocamente o produto no sistema de back-end existente.
 
@@ -110,7 +108,7 @@ Em um Mac, pressione Command+Option+I para abrir o painel Ferramentas do desenvo
 
 Quando o monitoramento de rede estiver ativado no navegador, acione o Quickview na página.
 
-Agora, encontre o URL do Ajax do Quickview no log de rede e copie o URL registrado para análise futura. Geralmente, quando você aciona o Quickview, há várias solicitações que são enviadas ao servidor. Normalmente, o URL de Ajax do Quickview é um dos primeiros na lista. Ela tem uma parte ou um caminho complexo da sequência de consulta e seu tipo MIME de resposta é `text/html`, `text/xml` ou `text/javascript`.
+Agora, encontre o URL do Ajax do Quickview no log de rede e copie o URL registrado para análise futura. Geralmente, quando você aciona o Quickview, há várias solicitações que são enviadas ao servidor. Normalmente, o URL de Ajax do Quickview é um dos primeiros na lista. Ela tem uma parte ou um caminho complexo da sequência de consulta e seu tipo MIME de resposta é `text/html`, `text/xml`ou `text/javascript`.
 
 Durante esse processo, é importante visitar diferentes áreas de seu site, com diferentes categorias e tipos de produtos. O motivo é que os URLs do Quickview podem ter partes comuns para uma determinada categoria de site, mas podem ser alteradas somente se você visitar uma área diferente do site.
 
@@ -148,11 +146,11 @@ Considere os exemplos a seguir de URLs do Quickview e suas variáveis de ponto d
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-    </ul> <p>Nesse caso, há duas partes variáveis no URL. O SKU é armazenado no parâmetro <code>prodId</code> e a ID da categoria<code></code> é armazenada no parâmetro <code>category=</code>.</p> <p>Dessa forma, as definições de ponto de acesso são pares. Ou seja, um valor SKU e uma variável extra chamada <code>categoryId</code>. Os pares resultantes são os seguintes:</p>
+    </ul> <p>Nesse caso, há duas partes variáveis no URL. O SKU é armazenado no <code>prodId</code> e a ID da categoria<code></code> é armazenado no <code>category=</code> parâmetro.</p> <p>Dessa forma, as definições de ponto de acesso são pares. Ou seja, um valor SKU e uma variável extra chamada <code>categoryId</code>. Os pares resultantes são os seguintes:</p>
     <ul>
-      <li><p>O SKU é <strong><code>305466</code></strong> e <code>categoryId</code> é <code>1100004</code>.</p> </li>
-      <li><p>O SKU é <strong><code>310181</code></strong> e <code>categoryId</code> é <strong><code>1100004</code></strong>.</p> </li>
-      <li><p>O SKU é <strong><code>308706</code></strong> e <code>categoryId</code> é <strong><code>1740148</code></strong>.</p> </li>
+      <li><p>SKU é <strong><code>305466</code></strong> e <code>categoryId</code> é <code>1100004</code>.</p> </li>
+      <li><p>SKU é <strong><code>310181</code></strong> e <code>categoryId</code> é <strong><code>1100004</code></strong>.</p> </li>
+      <li><p>SKU é <strong><code>308706</code></strong> e <code>categoryId</code> é <strong><code>1740148</code></strong>.</p> </li>
     </ul> <p> </p> </td>
   </tr>
   </tbody>
@@ -180,35 +178,35 @@ Considerando essas informações, todo o URL do Quickview tem o seguinte padrão
 
 `/datafeed/$categoryId$-$SKU$.json`
 
-Com base nessa análise, você usaria `categoryId` e `SKU` para pontos de acesso.
+Com base nessa análise, você usaria `categoryId` e `SKU` para pontos de conexão.
 
 Agora você está pronto para fazer upload de um banner de imagem e adicionar pontos de acesso a ele usando o recurso de imagem interativa que pode ser comprado no Experience Manager Assets.
 
 ## (Opcional) Criar uma predefinição do visualizador de Imagem interativa {#optional-creating-an-interactive-image-viewer-preset}
 
-Você pode optar por usar a predefinição padrão do visualizador de Imagem interativa, pronta para uso, chamada `Shoppable_Banner`, que vem com os Ativos Experience Manager. Ou você pode criar sua própria predefinição personalizada do visualizador para uso com imagens interativas.
+Você pode optar por usar a predefinição padrão do visualizador de Imagem interativa pronta para uso chamada `Shoppable_Banner` que vem com o Experience Manager Assets. Ou você pode criar sua própria predefinição personalizada do visualizador para uso com imagens interativas.
 
 Ao criar uma predefinição personalizada do visualizador de Imagem interativa, você pode determinar a aparência dos pontos de acesso no banner de imagem. Como parte da criação da predefinição do visualizador, você pode optar por usar um gráfico de ponto de acesso de uma galeria de imagens predefinidas.
 
-Depois de salvar a predefinição do visualizador, ela é ativada automaticamente (ativada) na página de lista Predefinição do visualizador no Experience Manager Assets. Essa funcionalidade significa que está visível no componente Mídia interativa e sempre que você exibe um ativo. No entanto, para *fornecer* um banner interativo com essa predefinição do visualizador, você também deve *publicar* sua predefinição do visualizador. Essa regra é verdadeira para predefinições do visualizador personalizadas ou predefinidas.
+Depois de salvar a predefinição do visualizador, ela é ativada automaticamente (ativada) na página de lista Predefinição do visualizador no Experience Manager Assets. Essa funcionalidade significa que está visível no componente Mídia interativa e sempre que você exibe um ativo. No entanto, para *delivery* um banner interativo com essa predefinição do visualizador, você deve *publicar* sua predefinição do visualizador também. Essa regra é verdadeira para predefinições do visualizador personalizadas ou predefinidas.
 
 **Para criar uma predefinição do visualizador de Imagem interativa :**
 
 1. No painel à esquerda, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]**.
-1. Próximo ao canto superior direito da página, selecione **[!UICONTROL Criar]**.
+1. Ao lado do canto superior direito da página, selecione **[!UICONTROL Criar]**.
 1. Na caixa de diálogo Nova predefinição do visualizador, digite um nome para descrever a predefinição interativa do visualizador de banner.
 
    O título aparece na página de lista Predefinição do visualizador depois de salvar.
 
 1. No menu suspenso Rich Media Type (Tipo de mídia avançada), selecione **[!UICONTROL Imagem interativa]**.
 1. Selecione **[!UICONTROL Criar]**.
-1. Na página Editar predefinição do visualizador , selecione a guia **[!UICONTROL Aparência]**.
-1. Faça uma das seguintes opções:
+1. Na página Editar predefinição do visualizador , selecione o **[!UICONTROL Aparência]** guia .
+1. Siga uma das seguintes opções:
 
    * Para carregar sua própria imagem de ponto de acesso que deseja usar nas imagens, selecione o ícone Seletor de ativos. Na página Selecionar conteúdo , navegue até a imagem do ponto de acesso que deseja usar, selecione-a e selecione o ícone Marca de seleção no canto superior direito.
    * Para selecionar uma imagem de ponto de acesso predefinida, selecione o ícone Galeria de pontos de acesso . Na paleta galeria de pontos de acesso, selecione a imagem do ponto de acesso que deseja usar.
 
-1. Próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]**.
+1. Ao lado do canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 
    Certifique-se de publicar a nova predefinição do visualizador.
 
@@ -218,13 +216,13 @@ Depois de salvar a predefinição do visualizador, ela é ativada automaticament
 
 ## Fazer upload de um banner de imagem {#uploading-an-image-banner}
 
-Se você já tiver carregado as imagens que deseja usar, avance para a próxima etapa, [Adicionar pontos de acesso a um banner de imagem](#adding-hotspots-to-an-image-banner).
+Se você já tiver carregado as imagens que deseja usar, vá para a próxima etapa, [Adicionar pontos de acesso a um banner de imagem](#adding-hotspots-to-an-image-banner).
 
 **Para fazer upload de um banner de imagem:**
 
 1. Carregue banners de imagem que você deseja tornar interativos.
 
-   Consulte [Fazer upload de ativos](/help/assets/manage-assets.md#uploading-assets).
+   Consulte [Upload de ativos](/help/assets/manage-assets.md#uploading-assets).
 
    Agora você está pronto para adicionar pontos de acesso ao banner de imagem; consulte a próxima tarefa abaixo.
 
@@ -250,7 +248,7 @@ Consulte [(Opcional) Visualizar imagens interativas](#optional-previewing-intera
 >
 >Quando você adiciona pontos de acesso a uma imagem em uma Imagem interativa ou em um Banner de carrossel, as informações do ponto de acesso são armazenadas no mesmo local de metadados. Esse local é relativo ao local da imagem, independentemente de ser uma Imagem interativa ou um Banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem - juntamente com seus dados de ponto de acesso definidos - em qualquer um dos visualizadores.
 Os banners de carrossel são compatíveis com mapas de imagens em imagens que também podem conter pontos de acesso; Imagens interativas não. Lembre-se dessa regra se você pretende criar uma Imagem interativa ou um Banner de carrossel que use a mesma imagem. Você pode criar Imagens interativas e Banners de carrossel usando cópias separadas da mesma imagem.
-Consulte também [Banners do carrossel](/help/assets/carousel-banners.md).
+Consulte também [Banners em carrossel](/help/assets/carousel-banners.md).
 
 >[!NOTE]
 Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, seus pontos de acesso serão removidos.
@@ -258,45 +256,45 @@ Se você estiver editando imagens interativas com pontos de acesso e recortar a 
 **Para adicionar pontos de acesso a um banner de imagem:**
 
 1. Na exibição Ativos, navegue até o banner de imagem que deseja tornar interativo.
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
-   * Passe o mouse sobre a imagem e selecione **[!UICONTROL Select]** (ícone de marca de seleção). Na barra de ferramentas, selecione **[!UICONTROL Editar]**.
+   * Passe o mouse sobre a imagem, em seguida selecione **[!UICONTROL Selecionar]** (ícone de marca de seleção). Na barra de ferramentas, selecione **[!UICONTROL Editar]**.
 
-   * Passe o mouse sobre a imagem e selecione **[!UICONTROL Mais ações]** (ícone de três pontos) **[!UICONTROL Editar]**.
+   * Passe o mouse sobre a imagem, em seguida selecione **[!UICONTROL Mais ações]** (ícone de três pontos) **[!UICONTROL Editar]**.
 
    * Selecione a imagem para abri-la na página Exibição detalhada . Na barra de ferramentas, selecione **[!UICONTROL Editar]**.
 
-1. Próximo ao canto superior esquerdo da página, selecione **[!UICONTROL Adicionar ponto de acesso]** (ícone de toque com o dedo) para abrir a página Gerenciamento de ponto de acesso.
-1. Próximo ao canto superior esquerdo da página, selecione **[!UICONTROL Ponto de acesso]**.
+1. Ao lado do canto superior esquerdo da página, selecione **[!UICONTROL Adicionar ponto de acesso]** (ícone de toque com o dedo) para abrir a página Gerenciamento de pontos de acesso .
+1. Ao lado do canto superior esquerdo da página, selecione **[!UICONTROL Ponto de conexão]**.
 
-   1. Próximo ao canto superior esquerdo da página Gerenciamento de ponto de acesso, selecione **[!UICONTROL Ponto de acesso]**.
+   1. Próximo ao canto superior esquerdo da página Gerenciamento de pontos de acesso, selecione **[!UICONTROL Ponto de conexão]**.
    1. Na imagem, selecione um local onde deseja que o ponto de acesso apareça. Se necessário, arraste o ponto de conexão para ajustar sua localização.
    1. Adicione outros pontos de acesso, conforme necessário, repetindo as etapas a e b.
-   1. (Opcional) Para excluir um ponto de acesso, selecione-o na imagem e, em seguida, selecione **[!UICONTROL Excluir]** (ícone da lixeira) sob o cabeçalho **[!UICONTROL Pontos de acesso]**.
+   1. (Opcional) Para excluir um ponto de acesso, selecione-o na imagem e, em seguida, selecione **[!UICONTROL Excluir]** (ícone da lixeira) sob a **[!UICONTROL Pontos de conexão]** cabeçalho.
 
 1. No campo de texto Nome , digite o nome do ponto de acesso. Esse nome também aparece na lista suspensa Ponto de acesso selecionado .
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
-   * Selecione **[!UICONTROL Quickview]**.
+   * Selecionar **[!UICONTROL QuickView]**.
 
-      * Se você for um cliente do Experience Manager Sites ou eCommerce, selecione o ícone Seletor de produto (lupa) para abrir a página Selecionar produto . Selecione o produto que deseja usar e selecione **[!UICONTROL Select]** no canto superior direito da página para retornar à página de gerenciamento de Pontos de acesso.
-      * Se você for *not* um cliente Experience Manager Sites ou eCommerce
+      * Se você for um cliente do Experience Manager Sites ou eCommerce, selecione o ícone Seletor de produto (lupa) para abrir a página Selecionar produto . Selecione o produto que deseja usar e selecione **[!UICONTROL Selecionar]** no canto superior direito da página, para que você possa retornar à página Gerenciamento de pontos de acesso .
+      * Se você *not* um cliente Experience Manager Sites ou eCommerce
 
          * Consulte [Identificar variáveis de ponto de acesso](#optional-identifying-hotspot-variables); você deve definir essas variáveis.
          * Em seguida, insira manualmente o valor de SKU. No campo de texto Valor SKU , digite o SKU (Stock Keeping Unit) do produto, que é um identificador exclusivo para cada produto ou serviço distinto que você oferece. O valor de SKU inserido preenche automaticamente a parte variável do modelo do Quickview, de modo que o sistema saiba associar o ponto de acesso selecionado a um Quickview específico do SKU.
          * (Opcional) Se houver outras variáveis no Quickview que você deve usar para identificar ainda mais um produto, selecione **[!UICONTROL Adicionar variável genérica]**. No campo de texto, especifique uma variável extra. Por exemplo, `category=Males` é uma variável adicionada.
-   * Selecione **[!UICONTROL Hiperlink]**.
+   * Selecionar **[!UICONTROL Hiperlink]**.
 
-      * Se você for um cliente do Experience Manager Sites , selecione o ícone do Seletor de site (pasta) para navegar até um URL. O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .
+      * Se você for um cliente do Experience Manager Sites, selecione o ícone do Seletor de site (pasta) para navegar até um URL. O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do Experience Manager Sites.
       * Se você for um cliente independente, no campo de texto HREF, especifique o caminho do URL completo para uma página da Web vinculada.
 
    Certifique-se de especificar se deseja abrir o link em uma nova guia do navegador (padrão recomendado) ou na mesma guia.
 
    Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md) para obter mais informações.
 
-   * Selecione **[!UICONTROL Fragmento de experiência]**.
+   * Selecionar **[!UICONTROL Fragmento de experiência]**.
 
-      * Se você for um cliente do Experience Manager Sites , selecione o ícone de Pesquisa (lupa) para abrir a página Fragmento de experiência . Selecione o Fragmento de experiência que deseja usar e selecione **[!UICONTROL Selecionar]** no canto superior direito da página para retornar à página Gerenciamento de ponto de acesso.
+      * Se você for um cliente do Experience Manager Sites, selecione o ícone de Pesquisa (lupa) para abrir a página Fragmento de experiência . Selecione o Fragmento de experiência que deseja usar e selecione **[!UICONTROL Selecionar]** no canto superior direito da página, para que você possa retornar à página Gerenciamento de pontos de acesso .
 Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md).
 
       * Especifique a largura e a altura do Fragmento de experiência da maneira que deseja que apareça no banner.
@@ -306,7 +304,7 @@ Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments
 
 
 
-1. Selecione **[!UICONTROL Save]** para salvar seu trabalho e retornar à página Procurar.
+1. Selecionar **[!UICONTROL Salvar]** para salvar seu trabalho e retornar à página Procurar.
 1. Publique a imagem interativa. A publicação permite que o banner seja entregue por meio da nuvem e também gera código incorporado se você precisar se integrar a um site de terceiros.
 
    Consulte [Publicar ativos](/help/assets/manage-assets.md#publishing-assets).
@@ -323,15 +321,15 @@ Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments
 Você pode usar a Visualização para ver uma representação de como sua imagem interativa aparece para os clientes e testar os pontos de acesso da imagem para garantir que eles estejam se comportando conforme esperado.
 
 Quando estiver satisfeito com a imagem interativa, você poderá publicá-la.
-Consulte [Incorporar o visualizador de vídeo ou imagem em uma página da Web](/help/assets/embed-code.md).
-Consulte [Vincular URLs ao seu aplicativo Web](/help/assets/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .
+Consulte [Incorporar o visualizador de vídeo ou imagem a uma página da Web](/help/assets/embed-code.md).
+Consulte [Vincular URLs ao aplicativo da Web](/help/assets/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do Experience Manager Sites.
 Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Para visualizar imagens interativas:**
 
 1. Na exibição Ativos, navegue até uma imagem interativa existente que você criou e selecione para abri-la em Visualização.
 1. Próximo ao canto superior esquerdo da página Visualização, na lista suspensa Conteúdo , selecione **[!UICONTROL Visualizadores]**.
-1. Na lista Visualizadores, selecione **[!UICONTROL Shoppable_Banner]** ou o nome da predefinição do visualizador de imagens interativo que você criou.
+1. Na lista Visualizadores, selecione **[!UICONTROL Shoppable_Banner]** ou o nome da predefinição interativa do visualizador de imagens que você criou.
 1. Selecione pontos de acesso na imagem se desejar testar as ações associadas.
 
 ## Publicar ativos de imagem interativos {#publishing-interactive-image-assets}
@@ -342,12 +340,12 @@ Consulte [Publicar ativos](/help/assets/publishing-dynamicmedia-assets.md) para 
 
 Após carregar uma imagem de banner, adicionar pontos de acesso à imagem e publicar a imagem interativa, você estará pronto para adicioná-la à página do site.
 
-Se você for um cliente do Experience Manager Sites , é possível adicionar a imagem interativa arrastando o componente Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Se você for um cliente do Experience Manager Sites, é possível adicionar a imagem interativa, arrastando o componente Mídia interativa para a página. Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Se você for um cliente independente do Experience Manager Assets, poderá adicionar manualmente a imagem interativa ao seu site, conforme descrito nesta seção.
 
 1. Copie o código incorporado da imagem interativa publicada.
-Consulte [Incorporar o visualizador de vídeo ou imagem em uma página da Web](/help/assets/embed-code.md).
+Consulte [Incorporar o visualizador de vídeo ou imagem a uma página da Web](/help/assets/embed-code.md).
 
 1. Adicione o código incorporado copiado no local desejado na página da Web.
 O código incorporado copiado é definido para um ambiente responsivo para que ele se ajuste automaticamente à área atribuída.
@@ -358,24 +356,24 @@ Usando o site de demonstração como exemplo:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-Observe que a imagem dos três machos é uma tag `IMG` estática:
+Observe que a imagem dos três machos é estática `IMG` tag:
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-A integração é tão simples como remover a tag `IMG` e substituí-la pelo código incorporado copiado dos Ativos Experience Manager. Você pode ver o resultado no seguinte URL que mostra a imagem interativa que pode ser comprada na página com três pontos de acesso de círculo:
+A integração é tão simples quanto remover a `IMG` e substituí-la pelo código incorporado copiado do Experience Manager Assets. Você pode ver o resultado no seguinte URL que mostra a imagem interativa que pode ser comprada na página com três pontos de acesso de círculo:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
 
 >[!NOTE]
 Como este ponto, os pontos de acesso na imagem interativa que pode ser comprada do site de demonstração são somente para fins de exibição; eles ainda não estão integrados ao Quickview existente.
 
-Para aplicar um &quot;recorte&quot; a uma imagem interativa que pode ser comprada em um ambiente responsivo, você pode incluir o atributo de configuração Imagem interativa `ZoomView.iscommand` no caminho. O componente `ZoomView` é chamado e `iscommand` é o comando de veiculação de imagens &quot;cortar&quot; aplicado.
+Para aplicar um &quot;recorte&quot; a uma imagem interativa que pode ser comprada em um ambiente responsivo, você pode incluir o atributo de configuração Imagem interativa `ZoomView.iscommand` para o caminho. O componente `ZoomView` é chamado de e `iscommand` é o comando de veiculação de imagens &quot;cortar&quot; aplicado.
 
-Consulte [Atributo de configuração ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
+Consulte [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) atributo de configuração.
 
-Consulte [comando de veiculação de imagens ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html).
+Consulte [cultura](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) comando de veiculação de imagens.
 
 Agora você está pronto para integrar a imagem interativa com uma exibição rápida existente no seu site.
 
@@ -393,12 +391,12 @@ A implementação existente do Quickview normalmente representa uma cadeia de a�
 1. O código de front-end envia uma solicitação Ajax usando o URL obtido na etapa 2.
 1. A lógica de back-end retorna os dados ou o conteúdo correspondentes do Quickview de volta ao código de front-end.
 1. O código front-end carrega os dados ou o conteúdo do Quickview.
-1. Opcionalmente, o código front-end converte os dados do Quickview carregados em uma representação HTML.
-1. O código front-end exibe uma caixa de diálogo ou painel modal e renderiza o conteúdo HTML na tela do usuário final.
+1. Opcionalmente, o código front-end converte os dados do Quickview carregados em uma representação de HTML.
+1. O código front-end exibe uma caixa de diálogo ou painel modal e renderiza o conteúdo do HTML na tela do usuário final.
 
 Essas chamadas não representam chamadas de API públicas independentes que podem ser chamadas pela lógica da página da Web de uma etapa arbitrária. Em vez disso, é uma chamada encadeada em que cada próxima etapa está oculta na última fase (retorno de chamada) da etapa anterior.
 
-Ao mesmo tempo em que a imagem interativa que pode ser comprada está substituindo a etapa 1 e parcialmente a etapa 2, em que um usuário seleciona um ponto de acesso dentro da imagem que pode ser comprada, essa interação do usuário é tratada pelo visualizador. O visualizador retorna um evento para a página da Web que contém todos os dados de ponto de acesso adicionados anteriormente aos Ativos do Experience Manager.
+Ao mesmo tempo em que a imagem interativa que pode ser comprada está substituindo a etapa 1 e parcialmente a etapa 2, em que um usuário seleciona um ponto de acesso dentro da imagem que pode ser comprada, essa interação do usuário é tratada pelo visualizador. O visualizador retorna um evento para a página da Web que contém todos os dados de ponto de acesso adicionados anteriormente ao Experience Manager Assets.
 
 Nesse manipulador de evento, o código front-end faz o seguinte:
 
@@ -475,7 +473,7 @@ Você pode ver como essas etapas são aplicadas ao site de demonstração para i
 /datafeed/$categoryId$-$SKU$.json
 ```
 
-Para reconstruir esse URL dentro do manipulador `quickViewActivate`, você pode usar os campos `categoryId` e `SKU` disponíveis no objeto `inData` passado para o manipulador pelo código do visualizador:
+Para reconstruir esse URL dentro do `quickViewActivate` manipulador, você pode usar o `categoryId` e `SKU` campos disponíveis na `inData` objeto passado ao manipulador pelo código do visualizador:
 
 ```xml
 var sku=inData.sku;
@@ -483,7 +481,7 @@ var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 ```
 
-O site de demonstração está acionando a caixa de diálogo do Quickview usando uma chamada de função `loadQuickView()` simples. Essa função utiliza apenas um argumento, que é o URL dos dados do Quickview. Dessa forma, a última etapa para integrar a imagem interativa que pode ser comprada é adicionar a seguinte linha de código ao manipulador `quickViewActivate`:
+O site de demonstração está acionando a caixa de diálogo do Quickview com um `loadQuickView()` chamada de função. Essa função utiliza apenas um argumento, que é o URL dos dados do Quickview. Dessa forma, a última etapa para integrar a imagem interativa que pode ser comprada é adicionar a seguinte linha de código ao `quickViewActivate` manipulador:
 
 ```xml
 loadQuickView(quickViewUrl);

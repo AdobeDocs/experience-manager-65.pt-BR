@@ -1,24 +1,23 @@
 ---
 title: Criação de formulários adaptáveis acessíveis
-seo-title: Criação de formulários adaptáveis acessíveis
+seo-title: Creating accessible adaptive forms
 description: O AEM Forms fornece ferramentas e para criar formulários adaptáveis acessíveis, além de ajudar a estar em conformidade com os padrões de acessibilidade.
-seo-description: O AEM Forms fornece ferramentas e para criar formulários adaptáveis acessíveis, além de ajudar a estar em conformidade com os padrões de acessibilidade.
+seo-description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
 uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 7a3f54d90769708344e6751756b2a12ac6c962d7
+exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2055'
 ht-degree: 1%
 
 ---
 
-
-# Criar formulários adaptáveis acessíveis{#creating-accessible-adaptive-forms}
+# Criação de formulários adaptáveis acessíveis{#creating-accessible-adaptive-forms}
 
 ## Introdução {#introduction}
 
@@ -34,7 +33,7 @@ Ao criar um formulário adaptável, o autor deve considerar os seguintes pontos 
 
 ## Pré-requisitos
 
-Você precisa de uma ferramenta de acessibilidade, como **Accessible Name and Description Inspetor (ANDI)** e um **tema Adaptive Form desenvolvido para corrigir problemas relacionados à acessibilidade** para criar um formulário adaptável acessível.
+Você precisa de uma ferramenta de acessibilidade, como **Inspetor de Nome e Descrição Acessível (ANDI)** e um **Tema de formulário adaptável desenvolvido para corrigir problemas relacionados à acessibilidade** para criar um formulário adaptável acessível.
 
 ### Baixe e instale a ferramenta de teste de acessibilidade
 
@@ -45,15 +44,15 @@ A ferramenta ANDI (Accessible Name and Description Inspetor) ajuda a identificar
 * Detecta problemas de acessibilidade e contraste de cores do teclado
 * Identifica claramente o conteúdo do leitor de tela em conformidade com os padrões
 
-A ANDI funciona com todos os principais navegadores da Internet. Consulte a [documentação da ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) para obter instruções detalhadas sobre como configurar e usar a ferramenta.
+A ANDI funciona com todos os principais navegadores da Internet. Consulte [Documentação da ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) para obter instruções detalhadas sobre como configurar e usar a ferramenta.
 
 ### Baixe e instale o tema acessível no Ultramarine
 
 O tema do Ultramarine-Accessible é um tema de referência. Ajuda a demonstrar como corrigir o contraste de cores e outros problemas relacionados à acessibilidade em um formulário adaptável. O Adobe recomenda criar um tema personalizado para o ambiente de produção com base nos estilos aprovados por sua organização. Execute as seguintes etapas para fazer upload do tema para sua instância do AEM:
 
 1. Baixe o pacote de temas.
-1. Navegue até **[!UICONTROL Experience Manager]** > **[!UICONTROL Navegação]** ![Navegação](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** na sua instância de AEM.
-1. Toque em **[!UICONTROL Criar]** > **[!UICONTROL Carregamento de arquivo]**. Selecione e carregue o arquivo x Ultramarine-Accessible-Theme.zip. Ele faz upload do tema para sua instância do AEM.
+1. Navegar para **[!UICONTROL Experience Manager]** > **[!UICONTROL Navegação]** ![Navegação](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** na sua instância de AEM.
+1. Toque **[!UICONTROL Criar]** > **[!UICONTROL Upload de arquivo]**. Selecione e carregue o arquivo x Ultramarine-Accessible-Theme.zip. Ele faz upload do tema para sua instância do AEM.
 
 ## Tornar um formulário adaptável acessível
 
@@ -64,8 +63,8 @@ Você deve se concentrar em quatro aspectos principais: navegação pelo teclado
 Aplique o tema acessível pelo Ultramarine ao formulário adaptável existente. Para aplicar o tema:
 
 1. Abra o formulário adaptável para edição.
-1. Selecione um componente e toque no ícone principal. No menu de contexto, toque em **[!UICONTROL Contêiner de formulário adaptável]** e toque no ícone de configuração.
-1. Selecione o tema Ultramarine-Accessible no navegador de propriedades e toque no ícone **[!UICONTROL Save]**.
+1. Selecione um componente e toque no ícone principal. No menu de contexto, toque em **[!UICONTROL Contêiner de formulário adaptável]** e toque no ícone configurar .
+1. Selecione o tema acessível pelo ultramarine no navegador de propriedades e toque em **[!UICONTROL Salvar]** ícone .
 1. Atualize a janela do navegador. O tema é aplicado à forma adaptativa.
 
 Depois de aplicar um tema acessível, execute as correções adicionais listadas abaixo. As correções além das correções de acessibilidade abordadas no tema acessível:
@@ -113,15 +112,15 @@ Para usar a opção Acessibilidade , siga estas etapas:
 
 ![Opções de acessibilidade em componentes de formulário](assets/accessibility-options.png)
 
-**Os autores** de TextForm personalizados fornecem o conteúdo na opção acessibilidade Campo de texto personalizado. A tecnologia de assistência, como leitores de tela, usa esse texto personalizado. Usar a configuração de Título é a melhor opção na maioria dos cenários. Considere criar Reader de tela personalizada somente texto ao usar o Título ou uma breve descrição não é possível.
+**Texto personalizado** Os autores de formulários fornecem o conteúdo na opção acessibilidade Campo de texto personalizado. A tecnologia de assistência, como leitores de tela, usa esse texto personalizado. Usar a configuração de Título é a melhor opção na maioria dos cenários. Considere criar Reader de tela personalizada somente texto ao usar o Título ou uma breve descrição não é possível.
 
-**Breve** descriçãoPara a maioria dos componentes, a breve descrição é exibida no tempo de execução quando o usuário passa o ponteiro sobre o componente. É possível definir essa opção no campo de descrição curta, na opção de conteúdo da ajuda.
+**Descrição curta** Para a maioria dos componentes, a breve descrição é exibida no tempo de execução, quando o usuário passa o ponteiro sobre o componente. É possível definir essa opção no campo de descrição curta, na opção de conteúdo da ajuda.
 
-**** TítuloUse esta opção para permitir que o AEM Forms use o rótulo visual associado ao campo de formulário como o texto do leitor de tela.
+**Título** Use essa opção para permitir que o AEM Forms use o rótulo visual associado ao campo de formulário como o texto do leitor de tela.
 
-**** NomeVocê pode especificar um valor no campo Nome da guia Vínculo. O nome não pode conter espaços.
+**Nome** Você pode especificar um valor no campo Nome da guia Vínculo. O nome não pode conter espaços.
 
-**** NenhumSelecionar Nenhum faz com que o objeto de formulário não tenha um nome no formulário publicado. Nenhum não é uma configuração recomendada para controles de formulário.
+**Nenhum** Selecionar Nenhum faz com que o objeto de formulário não tenha um nome no formulário publicado. Nenhum não é uma configuração recomendada para controles de formulário.
 
 >[!NOTE]
 >
@@ -147,7 +146,7 @@ Os usuários portadores de deficiência visual dependem de um alto contraste ent
 
 É recomendável usar as cores padrão de fonte e plano de fundo — conteúdo em preto em um plano de fundo branco. Se você alterar as cores padrão, escolha uma cor de primeiro plano escura em uma cor de plano de fundo clara ou vice-versa.
 
-Consulte [Criação de temas personalizados para formulários adaptáveis](/help/forms/using/creating-custom-adaptive-form-themes.md), para obter mais informações sobre como alterar o contraste de cores e o tema para os formulários adaptáveis.
+Consulte [Criar temas personalizados para formulários adaptáveis](/help/forms/using/creating-custom-adaptive-form-themes.md), para obter mais informações sobre como alterar o contraste de cores e o tema dos formulários adaptáveis.
 
 ### 5. Certifique-se de que os controles de formulário sejam acessíveis pelo teclado {#ensure-that-form-controls-are-keyboard-accessible}
 
@@ -164,7 +163,7 @@ Os seguintes atalhos de teclado estão disponíveis no AEM Forms.
 | Redefinir os dados preenchidos em um formulário | Alt+R |
 | Enviar um formulário | Alt+S |
 
-Além disso, há várias teclas de atalho de teclado disponíveis para o componente **[!UICONTROL Seletor de data]** no Adaptive Forms. Para ativar as teclas de atalho, toque no componente **[!UICONTROL Seletor de data]** e toque em ![Configurar](assets/configure-icon.svg) para abrir as propriedades. Na seção **[!UICONTROL Padrões]**, selecione um padrão de exibição usando as listas suspensas **[!UICONTROL Tipo]** e **[!UICONTROL Padrão]**. Salve as propriedades para ativar o uso de teclas de atalho para o componente **[!UICONTROL Seletor de data]**.
+Além disso, há várias teclas de atalho de teclado disponíveis para a variável **[!UICONTROL Seletor de data]** no Adaptive Forms. Para ativar as teclas de atalho, toque no **[!UICONTROL Seletor de data]** componente e toque ![Configurar](assets/configure-icon.svg) para abrir as propriedades. No **[!UICONTROL Padrões]** selecione um padrão de exibição usando a **[!UICONTROL Tipo]** e **[!UICONTROL Padrão]** listas suspensas. Salve as propriedades para ativar o uso de teclas de atalho para a variável **[!UICONTROL Seletor de data]** componente.
 
 As seguintes teclas de atalho do teclado estão disponíveis para o componente Seletor de data no Adaptive Forms:
 
@@ -179,13 +178,13 @@ As seguintes teclas de atalho do teclado estão disponíveis para o componente S
 | Move o cursor para trás no calendário, disponível no componente Seletor de datas | Seta para a esquerda |
 | Move o cursor para frente no calendário disponível no componente Seletor de datas | Seta para a direita |
 | Executar a ação da legenda disponível entre as setas de navegação para a direita e para a esquerda no calendário | Shift+Seta para cima |
-| Execute a ação para o ícone de seta de navegação direita ![seta para a direita](assets/right-navigation-icon.svg) disponível no calendário | Shift+Seta para a esquerda |
-| Execute a ação para o ícone de seta de navegação à esquerda ![seta para a esquerda](assets/left-navigation-icon.svg) disponível no calendário | Shift+Seta para a direita |
+| Executar a ação para o ícone de seta de navegação direita ![seta para a direita](assets/right-navigation-icon.svg) disponível no calendário | Shift+Seta para a esquerda |
+| Executar a ação para o ícone de seta de navegação à esquerda ![seta esquerda](assets/left-navigation-icon.svg) disponível no calendário | Shift+Seta para a direita |
 
 ## Use a ferramenta de acessibilidade para encontrar problemas de acessibilidade restantes
 
 O ANDI (Accessible Name and Description Inspetor) ajuda a identificar e corrigir problemas relacionados à conformidade de acessibilidade em um formulário adaptável. Para usar a ferramenta ANDI para encontrar os problemas de acessibilidade em um formulário adaptável:
 
 1. Abra o formulário adaptável no modo de visualização.
-1. Clique no ícone de ferramenta ANDI marcado. A ferramenta ANDI analisa o formulário adaptável e exibe problemas de acessibilidade. Para obter detalhes sobre como usar a ferramenta, consulte a [documentação da ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
+1. Clique no ícone de ferramenta ANDI marcado. A ferramenta ANDI analisa o formulário adaptável e exibe problemas de acessibilidade. Para obter detalhes sobre como usar a ferramenta, consulte [Documentação da ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
 1. Revise e corrija os problemas relatados pela ANDI.

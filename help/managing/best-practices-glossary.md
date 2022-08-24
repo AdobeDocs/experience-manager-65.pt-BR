@@ -1,8 +1,8 @@
 ---
 title: Glossário
-seo-title: Glossário
+seo-title: Glossary
 description: Este glossário lista detalhes (em ordem alfabética) de todos os documentos que podem ser entregues na lista de verificação do projeto.
-seo-description: Este glossário lista detalhes (em ordem alfabética) de todos os documentos que podem ser entregues na lista de verificação do projeto.
+seo-description: This glossary lists (alphabetically) details of all Deliverable documents from the Project Checklist.
 uuid: 5f919b05-3ec5-4b18-b966-5dcf706407f4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '7050'
+source-wordcount: '7036'
 ht-degree: 0%
 
 ---
 
 # Glossário{#glossary}
 
-Este glossário lista (alfabeticamente) os detalhes de todos os documentos que podem ser entregues na [Lista de verificação do projeto](/help/managing/best-practices-checklist.md).
+Este glossário lista os detalhes (em ordem alfabética) de todos os documentos que podem ser entregues no [Lista de verificação do projeto](/help/managing/best-practices-checklist.md).
 
 ## Aceitação por parte de partes interessadas {#acceptance-from-business-stakeholders}
 
@@ -47,7 +47,7 @@ Certifique-se de que os níveis necessários de acesso ao sistema tenham sido co
 
 ### Lista de verificação de segurança do Adobe {#adobe-security-checklist}
 
-A [Lista de Verificação de Segurança do Adobe](/help/sites-administering/security-checklist.md) é a lista de verificação oficial fornecida para garantir que o AEM seja seguro na instalação. Ele contém as medidas de segurança e as etapas de verificação necessárias para garantir a integridade da sua instância.
+O [Lista de verificação de segurança do Adobe](/help/sites-administering/security-checklist.md) é a lista de controlo oficial fornecida para assegurar que a AEM é segura na instalação. Ele contém as medidas de segurança e as etapas de verificação necessárias para garantir a integridade da sua instância.
 
 ### Configuração do Projeto do Portal de Suporte do Adobe {#adobe-support-portal-project-set-up}
 
@@ -57,19 +57,19 @@ Podem ser registradas informações pormenorizadas; por exemplo, sobre as tecnol
 
 ### Treinamento do administrador do AEM {#aem-administrator-training}
 
-Formação para pessoal administrativo da solução. Consulte o [Adobe Training Services](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obter mais informações.
+Formação para pessoal administrativo da solução. Consulte a [Serviços de treinamento do Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obter mais informações.
 
 ### Treinamento de autores do AEM {#aem-author-training}
 
-Treinamento para funcionários que produzirão (criando) conteúdo para a solução. Consulte o [Adobe Training Services](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obter mais informações.
+Treinamento para funcionários que produzirão (criando) conteúdo para a solução. Consulte a [Serviços de treinamento do Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obter mais informações.
 
 ### Exame de Certificação AEM {#aem-certification-exam}
 
-Certifique-se de que as pessoas apropriadas estejam registradas para realizar os [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) relevantes.
+Certifique-se de que as pessoas apropriadas estejam registradas para receber o [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
 ### AEM certificado {#aem-certified}
 
-Certifique-se de que a pessoa apropriada tenha passado nos [exames de certificação relevantes](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Certifique-se de que a pessoa apropriada passou no [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
 ### Treinamento técnico AEM {#aem-technical-training}
 
@@ -93,7 +93,7 @@ O Roteiro do Cliente é composto por marcos de alto nível e objetivos de negóc
 
 ### Definição da arquitetura de aplicativos {#application-architecture-definition}
 
-O [application architecture](/help/managing/best-practices.md#development-preparation) deve definir claramente o comportamento dos aplicativos propostos.
+O [arquitetura de aplicativos](/help/managing/best-practices.md#development-preparation) devem definir claramente o comportamento dos pedidos propostos.
 
 Tem como foco:
 
@@ -110,8 +110,7 @@ Certifique-se de que sua equipe seja composta por funcionários com o treinament
 
 * pelo menos um líder de desenvolvedor certificado AEM
 * pelo menos um Arquiteto AEM certificado
-* pelo menos 75% dos desenvolvedores AEM certificados;
-isso permite que os desenvolvedores certificados orientem os desenvolvedores secundários e garante o compartilhamento e a transparência do conhecimento
+* pelo menos 75% dos desenvolvedores AEM certificados; isso permite que os desenvolvedores certificados orientem os desenvolvedores secundários e garante o compartilhamento e a transparência do conhecimento
 
 ### Diagrama de arquitetura {#architecture-diagram}
 
@@ -208,8 +207,7 @@ Os KPIs de negócios definem valores mensuráveis que demonstram a eficiência c
 
 Um documento de requisitos de negócios (BRD) detalha a solução de negócios de um projeto, fornecendo uma especificação clara das necessidades e expectativas de negócios do cliente. A BRD também distingue entre a solução de negócios e a solução técnica.
 
-Ao examinar a solução comercial, o BRD deve responder à pergunta:
-&quot;O que o negócio quer fazer?&quot;
+Ao examinar a solução comercial, o BRD deve responder à pergunta: &quot;O que o negócio quer fazer?&quot;
 
 ### Faça logoff nos negócios de qualquer ajuste necessário à solução ou arquitetura identificada e alinhada às expectativas de ROI e KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -559,7 +557,7 @@ Definição da estrutura de conteúdo do sistema herdado. Este modelo é utiliza
 
 ### KPIs de desempenho histórico e desempenho histórico {#historical-performance-and-historical-performance-kpis}
 
-Você precisa coletar e documentar estatísticas de desempenho e KPIs de desempenho do sistema herdado. Estes são então utilizados como ponto de referência e para avaliar a nova solução.
+Você precisa coletar e documentar estatísticas de desempenho e KPIs de desempenho do sistema herdado. Estes são então utilizados como ponto de referência e para aferir a nova solução.
 
 ### Identificar as principais soluções/funcionalidades {#identify-critical-key-solutions-functionalities}
 
@@ -904,7 +902,7 @@ Definir o plano de comunicação tanto para as partes interessadas como para a e
 
 ### Esforços do projeto - Estimativas finais {#project-efforts-final-estimates}
 
-As [estimativas iniciais](#project-efforts-initial-estimates) eram de alto nível e efetuadas de acordo com os requisitos de alto nível para a implementação.
+O [estimativas iniciais](#project-efforts-initial-estimates) foram de alto nível e efetuadas de acordo com os requisitos de alto nível para a execução.
 
 Estes são agora revistos, refinados e alargados de modo a fornecerem as estimativas finais. As estimativas devem ser fornecidas por cada chefe de projeto adequado, incluindo gestão de projeto, consultoria, arquitetura, teste e desenvolvimento.
 
@@ -969,7 +967,7 @@ Ele é usado com o Runbook para executar etapas e verificações de pré e pós 
 
 >[!NOTE]
 >
->Para obter um exemplo, consulte as [Notas de versão AEM](/help/release-notes/release-notes.md).
+>Para ver um exemplo, consulte a [Notas de versão do AEM](/help/release-notes/release-notes.md).
 
 ### Versão em execução no ambiente de produção {#release-running-on-production-environment}
 
@@ -1066,7 +1064,7 @@ Defina e documente os detalhes da configuração de segurança necessária para 
 Um outline de alto nível que cobre a configuração de segurança do:
 
 * aplicativo
-* arquitetura
+* Arquitetura do 
 * infraestrutura
 
 ### Problemas de segurança listados e avaliados {#security-issues-listed-and-assessed}
@@ -1274,7 +1272,7 @@ Note-se que:
 * Qualquer equipe de ensaio deve ser mantida neutra e apresentar os resultados dos ensaios.
 * Compete ao Gestor de Projetos avaliar as implicações dos resultados e decidir sobre as medidas adequadas.
 
-### Conjunto de teste {#test-suite}
+### Conjunto de testes {#test-suite}
 
 Seleção do conjunto de automação e ferramentas. Eles serão usados para automatizar testes, incluindo aqueles para casos de uso.
 
@@ -1288,7 +1286,7 @@ O conceito de ensaio é a definição de testes de muito alto nível para o proj
 
 ### Planos de teste {#testing-plans}
 
-Esses planos descrevem com mais detalhes a execução de testes para cada fase de desenvolvimento e se baseiam na [Estratégia de teste](#testing-strategy).
+Esses planos descrevem com mais detalhes a execução de testes para cada fase de desenvolvimento e se baseiam no [Estratégia de teste](#testing-strategy).
 
 ### Escopo de teste {#testing-scope}
 

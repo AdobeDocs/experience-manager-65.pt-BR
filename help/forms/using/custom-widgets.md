@@ -1,8 +1,8 @@
 ---
 title: Criar aparências personalizadas em formulários HTML5
-seo-title: Criar aparências personalizadas em formulários HTML5
+seo-title: Create custom appearances in HTML5 forms
 description: Você pode conectar widgets personalizados a um Forms móvel. Você pode estender widgets jQuery existentes ou desenvolver seus próprios widgets personalizados.
-seo-description: Você pode conectar widgets personalizados a um Forms móvel. Você pode estender widgets jQuery existentes ou desenvolver seus próprios widgets personalizados.
+seo-description: You can plug in custom widgets to a Mobile Forms. You can extend existing jQuery Widgets or develop your own custom widgets.
 uuid: a9013c3d-20c7-45c9-be24-8e9d4525eff8
 contentOwner: robhagat
 content-type: reference
@@ -11,14 +11,13 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
-
 
 # Criar aparências personalizadas em formulários HTML5{#create-custom-appearances-in-html-forms}
 
@@ -32,11 +31,11 @@ Um exemplo de widget padrão e personalizado
 
 ### Criar um perfil  {#create-a-profile-nbsp}
 
-Você pode criar um perfil ou escolher um perfil existente para adicionar um widget personalizado. Para obter mais informações sobre como criar perfis, consulte [Criação de perfis personalizados](/help/forms/using/custom-profile.md).
+Você pode criar um perfil ou escolher um perfil existente para adicionar um widget personalizado. Para obter mais informações sobre como criar perfis, consulte [Criar perfil personalizado](/help/forms/using/custom-profile.md).
 
 ### Criar um widget {#create-a-widget}
 
-Os formulários HTML5 fornecem uma implementação da estrutura do widget que pode ser estendida para criar novos widgets. A implementação é um widget jQuery *abstractWidget* que pode ser estendido para gravar um novo widget. O novo widget só pode ser funcional estendendo/substituindo as funções mencionadas abaixo.
+Os formulários HTML5 fornecem uma implementação da estrutura do widget que pode ser estendida para criar novos widgets. A implementação é um widget jQuery *abstractWidget* que pode ser estendida para gravar um novo widget. O novo widget só pode ser funcional estendendo/substituindo as funções mencionadas abaixo.
 
 <table>
  <tbody>
@@ -46,7 +45,7 @@ Os formulários HTML5 fornecem uma implementação da estrutura do widget que po
   </tr>
   <tr>
    <td>renderizar</td>
-   <td>A função de renderização retorna o objeto jQuery para o elemento HTML padrão do widget. O elemento HTML padrão deve ser do tipo focalizável. Por exemplo, &lt;a&gt;, &lt;input&gt; e &lt;li&gt;. O elemento retornado é usado como $userControl. Se $userControl especificar a restrição acima, as funções da classe AbstractWidget funcionarão conforme esperado, caso contrário, algumas das APIs comuns (foco, clique) exigirão alterações. </td>
+   <td>A função de renderização retorna o objeto jQuery para o elemento HTML padrão do widget. O elemento HTML padrão deve ser do tipo focalizável. Por exemplo, &lt;a&gt;, &lt;input&gt;e &lt;li&gt;. O elemento retornado é usado como $userControl. Se $userControl especificar a restrição acima, as funções da classe AbstractWidget funcionarão conforme esperado, caso contrário, algumas das APIs comuns (foco, clique) exigirão alterações. </td>
   </tr>
   <tr>
    <td>getEventMap</td>
@@ -71,7 +70,7 @@ Os formulários HTML5 fornecem uma implementação da estrutura do widget que po
  </tbody>
 </table>
 
-Para criar seu próprio widget, no perfil criado acima, inclua referências do arquivo JavaScript que contém funções substituídas e funções recém-adicionadas. Por exemplo, o *sliderNumericFieldWidget* é um widget para Campos numéricos. Para usar o widget em seu perfil na seção de cabeçalho, inclua a seguinte linha:
+Para criar seu próprio widget, no perfil criado acima, inclua referências do arquivo JavaScript que contém funções substituídas e funções recém-adicionadas. Por exemplo, a variável *sliderNumericFieldWidget* é um widget para campos numéricos. Para usar o widget em seu perfil na seção de cabeçalho, inclua a seguinte linha:
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
@@ -79,7 +78,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Registrar widget personalizado com o mecanismo de script XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Quando o código de widget personalizado estiver pronto, registre o widget com o mecanismo de scripts usando `registerConfig`API para [Form Bridge](/help/forms/using/form-bridge-apis.md). Ele utiliza o widgetConfigObject como entrada.
+Quando o código de widget personalizado estiver pronto, registre o widget com o mecanismo de script usando `registerConfig`API para [Form Bridge](/help/forms/using/form-bridge-apis.md). Ele utiliza o widgetConfigObject como entrada.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
@@ -96,8 +95,8 @@ A configuração do widget é fornecida como um objeto JSON (uma coleção de pa
 ```
 *{*
 
-*“identifier1” : “customwidgetname”,
-“identifier2” : “customwidgetname2”,
+*"identifier1" : "customwidgetname",
+"identifier2" : "customwidgetname2",
 ..
 }*
 ```

@@ -1,22 +1,21 @@
 ---
 title: Expressões de formulário adaptável
-seo-title: Expressões de formulário adaptável
+seo-title: Adaptive Form Expressions
 description: Use expressões de formulários adaptáveis para adicionar validação automática, cálculo e ativar ou desativar a visibilidade de uma seção.
-seo-description: Use expressões de formulários adaptáveis para adicionar validação automática, cálculo e ativar ou desativar a visibilidade de uma seção.
+seo-description: Use adaptive forms expressions to add automatic validation, calculation, and turn visibility of a section on or off.
 uuid: c274dce5-8b87-472f-bff5-53b246fa6584
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '2769'
+source-wordcount: '2746'
 ht-degree: 0%
 
 ---
-
 
 # Expressões de formulário adaptável{#adaptive-form-expressions}
 
@@ -32,7 +31,7 @@ JavaScript é a linguagem de expressão de formulários adaptáveis. Todas as ex
 
 ## Práticas recomendadas para expressões envolvendo painel repetitivo {#best-practices-for-expressions-involving-repeating-panel}
 
-Painéis repetitivos são instâncias de um painel que são adicionadas ou removidas dinamicamente usando a API de scripts ou dados pré-preenchidos. Para obter informações detalhadas sobre o uso do painel repetitivo, consulte [criar formulários com seções repetíveis](/help/forms/using/creating-forms-repeatable-sections.md).
+Painéis repetitivos são instâncias de um painel que são adicionadas ou removidas dinamicamente usando a API de scripts ou dados pré-preenchidos. Para obter informações detalhadas sobre o uso do painel repetitivo, consulte [criação de formulários com seções repetíveis](/help/forms/using/creating-forms-repeatable-sections.md).
 
 * Para criar um painel repetitivo, na caixa de diálogo do painel, abra as configurações e defina o valor do campo de contagem máxima como mais de 1.
 * O valor da contagem mínima das configurações de repetição do painel pode ser um ou mais, mas não pode ser maior que o valor da contagem máxima.
@@ -49,16 +48,16 @@ Painéis repetitivos são instâncias de um painel que são adicionadas ou remov
 
 Em formulários adaptáveis, você pode gravar expressões para adicionar comportamentos, como campos dinâmicos de mostrar/ocultar e painéis. Também é possível gravar expressões para adicionar campos calculados, tornar campos somente leitura, lógica de validação e muito mais. Os formulários adaptáveis suportam as seguintes expressões:
 
-* **[Expressões](#access-expression-enablement-expression)** de acesso: para ativar/desativar um campo.
+* **[Expressões de acesso](#access-expression-enablement-expression)**: para ativar/desativar um campo.
 * **[Calcular expressões](#calculate-expression)**: para calcular automaticamente o valor de um campo.
-* **[Clique na expressão](#click-expression)**: para lidar com ações no evento click de um botão.
-* **[Script de inicialização](#initialization-script):** execute uma ação na inicialização de um campo.
-* **[Expressão](#options-expression)** de opções: para preencher dinamicamente uma lista suspensa.
-* **[Expressão](#summary)** de resumo: para calcular dinamicamente o título de um acordeão.
+* **[Expressão Click](#click-expression)**: para lidar com ações no evento click de um botão.
+* **[Script de inicialização](#initialization-script):** executar uma ação na inicialização de um campo.
+* **[Expressão de opções](#options-expression)**: para preencher dinamicamente uma lista suspensa.
+* **[Expressão de resumo](#summary)**: para calcular dinamicamente o título de um acordeão.
 * **[Validar expressões](#validate-expression)**: para validar um campo.
-* **[Script de confirmação de valor](#value-commit-script):** para alterar os componentes de um formulário após o valor de um campo ser alterado.
-* **[Expressão](#visibility-expression)** de visibilidade: para controlar a visibilidade de um campo e painel.
-* **[Expressão](#step-completion-expression)** de conclusão de etapa: para impedir que um usuário vá para a próxima etapa de um assistente.
+* **[Script de confirmação de valor](#value-commit-script):** para alterar os componentes de um formulário depois que o valor de um campo é alterado.
+* **[Expressão de visibilidade](#visibility-expression)**: para controlar a visibilidade de um campo e painel.
+* **[Expressão de conclusão de etapa](#step-completion-expression)**: para impedir que um usuário vá para a próxima etapa de um assistente.
 
 ### Expressão de acesso (Expressão de ativação) {#access-expression-enablement-expression}
 
@@ -66,30 +65,30 @@ Você pode usar a expressão de acesso para ativar ou desativar um campo. Se a e
 
 **Aplica-se a**: campos
 
-**Tipo** de retorno: A expressão retorna um valor booleano, representando se o campo está ativado ou desativado. **O** representa que o campo está ativado e o  **** false apresenta o campo como desativado.
+**Tipo de retorno**: A expressão retorna um valor booleano, representando se o campo está ativado ou desativado. **true** representa que o campo está ativado e **false** representa que o campo está desativado.
 
-**Exemplo**: Para ativar um campo somente quando o valor de  **field1** estiver definido como  **X**, a expressão de acesso é:  `field1.value == "X"`
+**Exemplo**: Para ativar um campo somente quando o valor de **field1** está definida como **X**, a expressão de acesso é: `field1.value == "X"`
 
 ### Calcular expressão {#calculate-expression}
 
-A expressão calculate é usada para calcular automaticamente o valor de um campo usando uma expressão. Normalmente, essa expressão usa a propriedade value de outros campos. Por exemplo, `field2.value + field3.value`. Sempre que o valor de `field2`ou `field3`for alterado, a expressão será reacionada e o valor será recalculado.
+A expressão calculate é usada para calcular automaticamente o valor de um campo usando uma expressão. Normalmente, essa expressão usa a propriedade value de outros campos. Por exemplo, `field2.value + field3.value`. Sempre que o valor da variável `field2`ou `field3`for alterada, a expressão será reacionada e o valor será recalculado.
 
 **Aplica-se a**: campos
 
-**Tipo** de retorno: A expressão retorna um valor compatível com o campo onde o resultado da expressão é exibido (por exemplo, decimal).
+**Tipo de retorno**: A expressão retorna um valor compatível com o campo onde o resultado da expressão é exibido (por exemplo, decimal).
 
-**Exemplo**: A expressão calculate para mostrar a soma de dois campos no  **campo1** é: 
+**Exemplo**: A expressão calculate para mostrar a soma de dois campos em **field1** é:
 `field2.value + field3.value`
 
-### Clique em Expressão {#click-expression}
+### Expressão de cliques {#click-expression}
 
 A expressão click manipula as ações executadas no evento click de um botão. Pronto para uso, o GuideBridge fornece APIs para executar várias funções, como enviar, validar e serem usadas junto com a expressão de clique. Para obter uma lista completa das APIs, consulte [APIs do GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 **Aplica-se a**: Campos de botão
 
-**Tipo** de retorno: A expressão click não retorna nenhum valor. Se qualquer expressão retornar um valor, o valor será ignorado.
+**Tipo de retorno**: A expressão click não retorna nenhum valor. Se qualquer expressão retornar um valor, o valor será ignorado.
 
-**Exemplo**: Para preencher uma caixa de texto  **textbox1** na ação de clique de um botão com valor  **AEM Forms**, a expressão de clique do botão é  `textbox1.value="AEM Forms"`
+**Exemplo**: Preencher uma caixa de texto **caixa de texto1** na ação clicar de um botão com valor **AEM Forms**, a expressão click do botão é `textbox1.value="AEM Forms"`
 
 ### Script de inicialização {#initialization-script}
 
@@ -101,9 +100,9 @@ O script de inicialização é acionado quando um formulário adaptável é inic
 
 **Aplica-se a:** campos e painel
 
-**Tipo de retorno:** a expressão do script de Inicialização não retorna nenhum valor. Se qualquer expressão retornar um valor, o valor será ignorado.
+**Tipo de retorno:** A expressão do script de Inicialização não retorna nenhum valor. Se qualquer expressão retornar um valor, o valor será ignorado.
 
-**Exemplo:** em um cenário de pré-preenchimento de dados, para preencher campos com valor padrão  `'Adaptive Forms'` quando o valor for salvo como nulo, a expressão do script de inicialização é: 
+**Exemplo:** Em um cenário de pré-preenchimento de dados, para preencher campos com valor padrão `'Adaptive Forms'` quando seu valor é salvo como nulo, a expressão do script de inicialização é:
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Expressão de opções {#options-expression}
@@ -112,13 +111,13 @@ A expressão options é usada para preencher dinamicamente as opções de um cam
 
 **Aplica-se a**: campos de lista suspensa
 
-**Tipo** de retorno: A expressão options retorna uma matriz de valores de string. Cada valor pode ser uma string simples, como **Masculino**, ou em um formato de par key=value, como **1=Masculino**
+**Tipo de retorno**: A expressão options retorna uma matriz de valores de string. Cada valor pode ser uma string simples, como **Masculino** ou em um formato de par chave=valor, como **1=Masculino**
 
-**Exemplo**: Para preencher o valor de um campo, com base no valor de outro campo, forneça uma expressão de opções simples. Por exemplo, para preencher um campo, **Number of Kids**, com base no **Marital Status** expresso em outro campo, a expressão é:
+**Exemplo**: Para preencher o valor de um campo, com base no valor de outro campo, forneça uma expressão de opções simples. Por exemplo, para preencher um campo, **Número de crianças**, com base no **Estado civil** expresso em outro campo, a expressão é:
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
-Sempre que o valor do campo **marital_status** for alterado, a expressão será reacionada. Também é possível preencher a lista suspensa em um serviço REST. Para obter informações detalhadas, consulte [Preencher dinamicamente listas suspensas](../../forms/using/dynamically-populate-dropdowns.md).
+Sempre que o valor de **estado_civil** for alterado, a expressão será reacionada. Também é possível preencher a lista suspensa em um serviço REST. Para obter informações detalhadas, consulte [Preenchimento dinâmico de menus suspensos](../../forms/using/dynamically-populate-dropdowns.md).
 
 ### Expressão de resumo {#summary}
 
@@ -128,9 +127,9 @@ Normalmente, a expressão Resumo é usada para filhos repetitivos de um painel d
 
 **Aplica-se a:** Painéis que são filhos diretos de um painel cujo layout está configurado como Acordeão.
 
-**Tipo de retorno:** a expressão retorna uma string que se torna o título da opção.
+**Tipo de retorno:** A expressão retorna uma String que se torna o título da opção.
 
-**Exemplo:** &quot;Account number : &quot;+ textbox1.value
+**Exemplo:** &quot;Número da conta : &quot; + textbox1.value
 
 ### Validar expressão {#validate-expression}
 
@@ -138,7 +137,7 @@ A expressão validate é usada para validar os campos usando a expressão fornec
 
 **Aplica-se a**: campos
 
-**Tipo** de retorno: A expressão retorna um valor booleano, representando o status de validação do campo. O valor **false** representa que o campo é inválido e **true** representa que o campo é válido.
+**Tipo de retorno**: A expressão retorna um valor booleano, representando o status de validação do campo. O valor **false** representa que o campo é inválido e **true** representa que o campo é válido.
 **Exemplo**: Para um campo que representa código postal do Reino Unido, a expressão de validação é:
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -158,14 +157,14 @@ O script Value Commit é acionado quando:
 
 **Aplica-se a:** campos
 
-**Tipo de retorno:** a expressão do script de confirmação de valor não retorna nenhum valor. Se qualquer expressão retornar um valor, o valor será ignorado.
+**Tipo de retorno:** A expressão de script de confirmação de valor não retorna nenhum valor. Se qualquer expressão retornar um valor, o valor será ignorado.
 
-**Exemplo:** para converter as letras maiúsculas e minúsculas inseridas no campo em confirmar, a expressão de confirmação de valor é: 
+**Exemplo:** Para converter as letras maiúsculas e minúsculas digitadas no campo em commit, a expressão de confirmação de valor é:
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
 >
->Você pode desativar a execução do Script de confirmação de valor quando o valor de um campo é alterado programaticamente. Para fazer isso, vá para https://&#39;[server]:[port]&#39;/system/console/configMgr e altere **Adaptive Forms Version for Compatibility** para **AEM Forms 6.1**. Consequentemente, o script de confirmação de valor é executado somente quando o usuário altera o valor do campo da interface do usuário.
+>Você pode desativar a execução do Script de confirmação de valor quando o valor de um campo é alterado programaticamente. Para fazer isso, acesse https://&#39;[server]:[porta]&#39;/system/console/configMgr and change **Versão adaptável do Forms para compatibilidade** para **AEM Forms 6.1**. Consequentemente, o script de confirmação de valor é executado somente quando o usuário altera o valor do campo da interface do usuário.
 
 ### Expressão de visibilidade {#visibility-expression}
 
@@ -173,9 +172,9 @@ A expressão Visibility é usada para controlar a visibilidade do campo/painel. 
 
 **Aplica-se a**: campos e painel
 
-**Tipo** de retorno: A expressão retorna um valor booleano, representando o campo/painel que está visível ou não. **** O falso representa que o campo ou painel não está visível e o true representa que o campo ou painel está visível.
+**Tipo de retorno**: A expressão retorna um valor booleano, representando o campo/painel que está visível ou não. **false** representa que o campo ou painel não está visível e true representa que o campo ou painel está visível.
 
-**Exemplo**: Para um painel que se torna visível somente se o valor de  **field1** estiver definido como  **Masculino**, a expressão de visibilidade é:  `field1.value == "Male"`
+**Exemplo**: Para um painel que se torna visível somente se o valor de **field1** está definida como **Masculino**, a expressão de visibilidade é: `field1.value == "Male"`
 
 ### Expressão de conclusão de etapa {#step-completion-expression}
 
@@ -183,38 +182,38 @@ A expressão de conclusão de etapa é usada para impedir que um usuário vá pa
 
 **Aplica-se a**: Painéis com layout do item definido como assistente.
 
-**Tipo** de retorno: A expressão retorna um valor booleano, representando o painel atual como válido ou não. **** Representa que o painel atual é válido e que o usuário pode navegar para o próximo painel.
+**Tipo de retorno**: A expressão retorna um valor booleano, representando o painel atual como válido ou não. **Verdadeiro** representa que o painel atual é válido e o usuário pode navegar para o próximo painel.
 
 **Exemplo**: Em um formulário organizado em vários painéis, antes de navegar até o próximo painel, o painel atual é validado. Nesses casos, as expressões de conclusão de etapas são usadas. Geralmente, essas expressões usam a API de validação GuideBridge. Um exemplo de expressão de conclusão de etapa é:
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Validações no formulário adaptável {#validations-in-adaptive-form}
 
-Existem vários métodos para adicionar a validação de campo a um formulário adaptável. Se uma verificação de validação for adicionada em um campo, **True** representa que o valor inserido no campo é válido. **** Falsereapresenta que o valor é inválido. Se você inserir ou sair de um campo, a mensagem de erro não será gerada.
+Existem vários métodos para adicionar a validação de campo a um formulário adaptável. Se uma verificação de validação for adicionada em um campo, **Verdadeiro** representa que o valor inserido no campo é válido. **Falso** representa que o valor é inválido. Se você inserir ou sair de um campo, a mensagem de erro não será gerada.
 
 Os métodos para adicionar validações em um campo são:
 
 ### Obrigatório {#required}
 
-Para tornar um componente obrigatório, na caixa de diálogo **Editar** do componente, é possível selecionar a opção **Título e Texto > Obrigatório**. Você também pode adicionar a **mensagem necessária** (opcional) apropriada. .
+Para tornar um componente obrigatório, no **Editar** da caixa de diálogo do componente, é possível selecionar a opção **Título e texto > Obrigatório**. Você também pode adicionar o **mensagem obrigatória** (opcional) também. .
 
 ### Padrões de validação {#validation-patterns}
 
-Há vários padrões de validação prontos para uso disponíveis para um campo. Para selecionar um padrão de validação, na caixa de diálogo **Editar** do componente, localize a seção **Padrões** e selecione **padrões**. Você pode criar seu próprio padrão de validação personalizado em uma caixa de texto **Padrão**. O status de validação é retornado **True** somente se os dados preenchidos forem compatíveis com o padrão de validação, caso contrário **False** será retornado. Para escrever seu próprio padrão de validação personalizado, consulte [Suporte a cláusula de imagem para formulários HTML5](/help/forms/using/picture-clause-support.md).
+Há vários padrões de validação prontos para uso disponíveis para um campo. Para selecionar um padrão de validação, na **Editar** da caixa de diálogo do componente, localize o **Padrões** e selecione **padrões**. Você pode criar seu próprio padrão de validação personalizado em um **Padrão** caixa de texto. O status de validação é retornado **Verdadeiro** somente se os dados preenchidos estiverem em conformidade com o padrão de validação, ou **Falso** é retornado. Para escrever seu próprio padrão de validação personalizado, consulte [Suporte a cláusula de imagem para formulários HTML5](/help/forms/using/picture-clause-support.md).
 
 ### Expressões de validação {#validation-expressions}
 
-A validação de um campo também pode ser calculada usando expressões em campos diferentes. Essas expressões são gravadas no campo **Script de validação** da guia **Script** da caixa de diálogo **Editar** do componente. O status de validação de um campo depende do valor retornado pela expressão. Para obter informações sobre como gravar essas expressões, consulte [Validar Expressão](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p).
+A validação de um campo também pode ser calculada usando expressões em campos diferentes. Essas expressões são escritas dentro de **Script de validação** do **Script** guia de **Editar** do componente. O status de validação de um campo depende do valor retornado pela expressão. Para obter informações sobre como gravar essas expressões, consulte [Validar expressão](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p).
 
 ## Informações adicionais {#additional-information}
 
-### Usando o Formato de Exibição de Campo {#using-field-display-format}
+### Uso do formato de exibição de campo {#using-field-display-format}
 
-Formato de exibição pode ser usado para exibir os dados em diferentes formatos. Por exemplo, você pode usar o formato de exibição para exibir um número de telefone com hifens, formatar CEP ou seletor de data. Esses padrões de exibição podem ser selecionados na seção **Padrões** da caixa de diálogo Editar de um componente. Você pode gravar padrões de exibição personalizados semelhantes aos padrões de validação mencionados acima.
+Formato de exibição pode ser usado para exibir os dados em diferentes formatos. Por exemplo, você pode usar o formato de exibição para exibir um número de telefone com hifens, formatar CEP ou seletor de data. Esses padrões de exibição podem ser selecionados no **Padrões** seção da caixa de diálogo Editar de um componente. Você pode gravar padrões de exibição personalizados semelhantes aos padrões de validação mencionados acima.
 
 ### GuideBridge - APIs e eventos {#guidebridge-apis-and-events}
 
-O GuideBridge é uma coleção de APIs que podem ser usadas para interagir com formulários adaptáveis no modelo de memória em um navegador. Para obter uma introdução detalhada à API Guide Bridge, métodos de classe, eventos expostos, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/aem-forms/6/javascript-api/).
+O GuideBridge é uma coleção de APIs que podem ser usadas para interagir com formulários adaptáveis no modelo de memória em um navegador. Para obter uma introdução detalhada da API do Guide Bridge, métodos de classe, eventos expostos, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >
@@ -222,17 +221,17 @@ O GuideBridge é uma coleção de APIs que podem ser usadas para interagir com f
 
 #### Uso do GuideBridge em várias expressões {#guidebridge-usage-in-various-expressions}
 
-* Para redefinir campos de formulário, é possível acionar a API `guideBridge.reset()` na expressão click de um botão. Da mesma forma, há uma API de envio que pode ser chamada como uma expressão de clique `guideBridge.submit()`**.**
+* Para redefinir campos de formulário, é possível acionar `guideBridge.reset()` API na expressão click de um botão. Da mesma forma, há uma API de envio que pode ser chamada como uma expressão de clique `guideBridge.submit()`**.**
 
-* Você pode usar a API `setFocus()` para definir o foco em vários campos ou painéis (para que o foco do painel seja definido automaticamente para o primeiro campo). `setFocus()`O fornece uma grande variedade de opções para navegar, como navegação em painéis, travessia anterior/seguinte, definição do foco para um campo específico e muito mais. Por exemplo, para ir para o próximo painel, você pode usar: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
+* Você pode usar o `setFocus()` API para definir o foco em vários campos ou painéis (para que o foco do painel seja definido automaticamente para o primeiro campo). `setFocus()`O fornece uma grande variedade de opções para navegar, como navegação em painéis, travessia anterior/seguinte, definição do foco para um campo específico e muito mais. Por exemplo, para ir para o próximo painel, você pode usar: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
 
 * Para validar um formulário adaptável ou seus painéis específicos, use `guideBridge.validate(errorList, somExpression).`
 
 #### Uso do GuideBridge fora das expressões  {#using-guidebridge-outside-expressions-nbsp}
 
-Também é possível usar as APIs do GuideBridge fora das expressões. Por exemplo, você pode usar a API GuideBridge para definir a comunicação entre a página HTML hospedando o formulário adaptável e o Modelo de formulário. Além disso, é possível definir o valor que vem do pai do Iframe que hospeda o formulário.
+Também é possível usar as APIs do GuideBridge fora das expressões. Por exemplo, você pode usar a API GuideBridge para definir a comunicação entre a HTML de página que hospeda o formulário adaptável e o Modelo de formulário. Além disso, é possível definir o valor que vem do pai do Iframe que hospeda o formulário.
 
-Para usar a API GuideBridge para o exemplo acima mencionado, capture uma instância de GuideBridge. Para capturar a instância, ouça o evento `bridgeInitializeStart`de um objeto `window`:
+Para usar a API GuideBridge para o exemplo acima mencionado, capture uma instância de GuideBridge. Para capturar a instância, analise `bridgeInitializeStart`de um `window`objeto:
 
 ```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
@@ -256,9 +255,9 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 >
 >No AEM, é uma boa prática gravar código em um clientLib e incluí-lo em sua página (header.jsp ou footer.jsp da página)
 
-Para usar o GuideBridge após a inicialização do formulário (o evento `bridgeInitializeComplete` é despachado), obtenha a instância GuideBridge usando `window.guideBridge`. Você pode verificar o status de inicialização do GuideBridge usando a API `guideBride.isConnected`.
+Para usar o GuideBridge após a inicialização do formulário (a variável `bridgeInitializeComplete` for despachado), obtenha a instância do GuideBridge usando `window.guideBridge`. Você pode verificar o status de inicialização do GuideBridge usando o `guideBride.isConnected` API.
 
-#### Eventos do GuideBridge {#guidebridge-events}
+#### Eventos GuideBridge {#guidebridge-events}
 
 O GuideBridge também fornece determinados eventos para scripts externos na página de hospedagem. Os scripts externos podem acompanhar esses eventos e executar várias operações. Por exemplo, sempre que o nome de usuário em um formulário é alterado, o nome mostrado no cabeçalho da página também é alterado. Para obter mais detalhes sobre esses eventos, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
@@ -279,14 +278,12 @@ Como mencionado acima, formulários adaptáveis permitem que o autor forneça pa
 Execute as seguintes etapas para criar um padrão personalizado para um tipo de campo específico e reutilizá-lo para outros campos do mesmo tipo:
 
 1. Navegue até o CRXDE Lite na sua instância de criação.
-1. Crie uma pasta para manter seus padrões personalizados. No diretório /apps, crie um nó do tipo sling:folder. Por exemplo, crie um nó com o nome `customPatterns`. Nesse nó, crie outro nó do tipo `nt:unstructed` e o nomeie `textboxpatterns`. Este nó contém os vários padrões personalizados que você deseja adicionar.
-1. Abra a guia Properties do nó criado. Por exemplo, abra a guia Propriedades de `textboxpatterns`. Adicione a propriedade `guideComponentType` a este nó e defina seu valor para *fd/af/components/formatter/guideTextBox*.
+1. Crie uma pasta para manter seus padrões personalizados. No diretório /apps, crie um nó do tipo sling:folder. Por exemplo, crie um nó com o nome `customPatterns`. Nesse nó, crie outro nó do tipo `nt:unstructed` e nomeá-lo `textboxpatterns`. Este nó contém os vários padrões personalizados que você deseja adicionar.
+1. Abra a guia Properties do nó criado. Por exemplo, abra a guia Propriedades de `textboxpatterns`. Adicione o `guideComponentType` para esse nó e defina seu valor como *fd/af/components/formatter/guideTextBox*.
 
-1. O valor dessa propriedade varia dependendo do campo para o qual você deseja definir os padrões. Para campo numérico, o valor da propriedade `guideComponentType` é *fd/af/components/formatter/guideNumericBox*. O valor do campo Datepicker é *fd/af/components/formatter/guideDatepicker*.
-&quot;
-1. Você pode adicionar um padrão personalizado atribuindo uma propriedade ao nó `textboxpatterns`. Adicione uma propriedade com um nome (por exemplo `pattern1`) e defina seu valor para o padrão que deseja adicionar. Por exemplo, adicione uma propriedade `pattern1` com o valor Fax=text{99-999-999999}. O padrão está disponível para todas as caixas de texto usadas no Adaptive Forms.
+1. O valor dessa propriedade varia dependendo do campo para o qual você deseja definir os padrões. Para campos numéricos, o valor da variável `guideComponentType` a propriedade é *fd/af/components/formatter/guideNumericBox*. O valor do campo Datepicker é *fd/af/components/formatter/guideDatepicker*. &quot;
+1. Você pode adicionar um padrão personalizado atribuindo uma propriedade ao `textboxpatterns` nó . Adicionar uma propriedade com um nome (por exemplo, `pattern1`) e defina seu valor para o padrão que deseja adicionar. Por exemplo, adicione uma propriedade `pattern1` com o valor Fax=text{99-999-999999}. O padrão está disponível para todas as caixas de texto usadas no Adaptive Forms.
 
    ![Criação de padrões personalizados para campos no CrxDe](assets/creating-custom-patterns.png)
 
    Criação de padrões personalizados
-

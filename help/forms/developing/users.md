@@ -1,8 +1,8 @@
 ---
 title: Gerenciar usuários
-seo-title: Gerenciar usuários
+seo-title: Managing Users
 description: Use a API de gerenciamento de usuários para criar aplicativos clientes que possam gerenciar funções, permissões e principais (que podem ser usuários ou grupos), bem como autenticar usuários.
-seo-description: Use a API de gerenciamento de usuários para criar aplicativos clientes que possam gerenciar funções, permissões e principais (que podem ser usuários ou grupos), bem como autenticar usuários.
+seo-description: Use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), as well as authenticate users.
 uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
 workflow-type: tm+mt
-source-wordcount: '6258'
+source-wordcount: '6228'
 ht-degree: 0%
 
 ---
-
 
 # Gerenciar usuários {#managing-users}
 
@@ -33,11 +32,11 @@ Você pode usar a API de gerenciamento de usuários para criar aplicativos clien
 
 O Gerenciamento de usuários permite que você atribua, remova e determine funções e permissões. Ela também permite atribuir, remover e consultar domínios, usuários e grupos. Por fim, você pode usar o Gerenciamento de usuários para autenticar usuários.
 
-Em [Adicionar usuários](users.md#adding-users) você entenderá como adicionar usuários de forma programática. Esta seção usa a API do Serviço do Gerenciador de Diretórios.
+Em [Adicionar usuários](users.md#adding-users) você saberá como adicionar usuários de forma programática. Esta seção usa a API do Serviço do Gerenciador de Diretórios.
 
-Em [Excluindo usuários](users.md#deleting-users) você entenderá como excluir usuários por programação. Esta seção usa a API do Serviço do Gerenciador de Diretórios.
+Em [Excluir usuários](users.md#deleting-users) você saberá como excluir usuários por programação. Esta seção usa a API do Serviço do Gerenciador de Diretórios.
 
-Em [Gerenciar usuários e grupos](users.md#managing-users-and-groups) você entenderá a diferença entre um usuário local e um usuário de diretório, e verá exemplos de como usar as APIs do Java e do serviço da Web para gerenciar usuários e grupos de forma programática. Esta seção usa a API do Serviço do Gerenciador de Diretórios.
+Em [Gerenciar usuários e grupos](users.md#managing-users-and-groups) você entenderá a diferença entre um usuário local e um usuário de diretório, e verá exemplos de como usar as APIs de serviço da Web e Java para gerenciar usuários e grupos de forma programática. Esta seção usa a API do Serviço do Gerenciador de Diretórios.
 
 Em [Gerenciamento de funções e permissões](users.md#managing-roles-and-permissions) você aprenderá sobre as funções e permissões do sistema e o que poderá fazer de forma programática para aumentá-las, e verá exemplos de como usar as APIs do Java e do serviço da Web para gerenciar programaticamente funções e permissões. Esta seção utiliza a API de Serviço do Gerenciador de Diretórios e a API de Serviço do Gerenciador de Autorizações.
 
@@ -86,7 +85,7 @@ A tabela a seguir descreve cada etapa do processo de autenticação.
 
 >[!NOTE]
 >
->Se o fuso horário do servidor for diferente do fuso horário do cliente, ao consumir o WSDL para o serviço Gerar PDF do AEM Forms em uma pilha SOAP nativa usando um cliente .NET em um cluster do WebSphere Application Server, o seguinte erro de autenticação do Gerenciamento de Usuário poderá ocorrer:
+>Se o fuso horário do servidor for diferente do fuso horário do cliente, ao consumir o WSDL para o serviço Gerar PDF da AEM Forms em uma pilha SOAP nativa usando um cliente .NET em um cluster do WebSphere Application Server, o seguinte erro de autenticação do Gerenciamento de Usuário poderá ocorrer:
 
 `[com.adobe.idp.um.webservices.WSSecurityHandler] errorCode:12803 errorCodeHEX:0x3203 message:WSSecurityHandler: UM authenticate returns exception : An error was discovered processing the <wsse:Security> header. (WSSecurityEngine: Invalid timestamp The security semantics of message have expired).`
 
@@ -100,13 +99,13 @@ O provedor de serviço de diretório pode ser usado para sincronizar o banco de 
 
 Além disso, o DiretoryManagerService fornece a capacidade de criar e gerenciar domínios. Os domínios definem bases de usuários diferentes. O limite de um domínio geralmente é definido de acordo com a maneira como sua organização está estruturada ou como sua loja de usuários está configurada. Os domínios Gerenciamento de usuários fornecem configurações que provedores de autenticação e provedores de serviço de diretório usam.
 
-No XML de configuração que o Gerenciamento de usuários exporta, o nó raiz que tem o valor de atributo `Domains` contém um elemento XML para cada domínio definido para o Gerenciamento de usuários. Cada um desses elementos contém outros elementos que definem os aspectos do domínio associados a provedores de serviços específicos.
+No XML de configuração que o Gerenciamento de usuários exporta, o nó raiz que tem o valor de atributo de `Domains` contém um elemento XML para cada domínio definido para o Gerenciamento de usuários. Cada um desses elementos contém outros elementos que definem os aspectos do domínio associados a provedores de serviços específicos.
 
 **Como entender valores de objectSID**
 
-Ao usar o Ative Diretory, é importante entender que um valor `objectSID` não é um atributo exclusivo em vários domínios. Esse valor armazena o identificador de segurança de um objeto. Em um ambiente de vários domínios (por exemplo, uma árvore de domínios), o valor `objectSID` pode ser diferente.
+Ao usar o Ative Diretory, é importante entender que uma `objectSID` não é um atributo exclusivo em vários domínios. Esse valor armazena o identificador de segurança de um objeto. Em um ambiente de vários domínios (por exemplo, uma árvore de domínios), a variável `objectSID` pode ser diferente.
 
-Um valor `objectSID` seria alterado se um objeto fosse movido de um domínio do Ative Diretory para outro domínio. Alguns objetos têm o mesmo valor `objectSID` em qualquer lugar do domínio. Por exemplo, grupos como BUILTIN\Administrators, BUILTIN\Power Users e assim por diante teriam o mesmo valor `objectSID` independentemente dos domínios. Esses valores `objectSID` são bem conhecidos.
+Um `objectSID` seria alterado se um objeto fosse movido de um domínio do Ative Diretory para outro. Alguns objetos têm o mesmo `objectSID` em qualquer lugar do domínio. Por exemplo, grupos como BUILTIN\Administrators, BUILTIN\Power Users e assim por diante teriam o mesmo `objectSID` independentemente dos domínios. Esses `objectSID` são bem conhecidos.
 
 ## Adicionar usuários {#adding-users}
 
@@ -134,22 +133,22 @@ Antes de executar programaticamente uma operação de serviço do Diretory Manag
 
 Ao adicionar um novo usuário usando a API do Serviço do Gerenciador de Diretórios, defina as informações para esse usuário. Normalmente, quando você adiciona um novo usuário, você define os seguintes valores:
 
-* **Nome** do domínio: O domínio ao qual o usuário pertence (por exemplo,  `DefaultDom`).
-* **Valor** do identificador do usuário: O valor identificador do usuário (por exemplo,  `wblue`).
-* **Tipo** principal: O tipo de usuário (por exemplo, você pode especificar  `USER)`.
-* **Nome**: Um determinado nome para o usuário (por exemplo,  `Wendy`).
-* **Nome** da família: O nome da família do usuário (por exemplo,  `Blue)`.
+* **Nome do domínio**: O domínio ao qual o usuário pertence (por exemplo, `DefaultDom`).
+* **Valor do identificador do usuário**: O valor identificador do usuário (por exemplo, `wblue`).
+* **Tipo principal**: O tipo de usuário (por exemplo, você pode especificar `USER)`.
+* **Nome**: Um determinado nome para o usuário (por exemplo, `Wendy`).
+* **Nome da família**: O nome da família do usuário (por exemplo, `Blue)`.
 * **Localidade**: Informações de localidade para o usuário.
 
 **Adicionar o usuário ao AEM Forms**
 
-Após definir as informações do usuário, é possível adicioná-lo ao AEM Forms. Para adicionar um usuário, chame o método `DirectoryManagerServiceClient` do objeto `createLocalUser`.
+Após definir as informações do usuário, é possível adicioná-lo ao AEM Forms. Para adicionar um usuário, chame a função `DirectoryManagerServiceClient` do objeto `createLocalUser` método .
 
 **Verificar se o usuário foi adicionado**
 
 Você pode verificar se o usuário foi adicionado para garantir que nenhum problema ocorreu. Localize o novo usuário usando o valor do identificador do usuário.
 
-**Consulte também:**
+**Consulte também**
 
 [Adicionar usuários usando a API do Java](users.md#add-users-using-the-java-api)
 
@@ -161,7 +160,7 @@ Você pode verificar se o usuário foi adicionado para garantir que nenhum probl
 
 [Excluir usuários](users.md#deleting-users)
 
-### Adicionar usuários usando a API Java {#add-users-using-the-java-api}
+### Adicionar usuários usando a API do Java {#add-users-using-the-java-api}
 
 Adicione usuários usando a API do Serviço do Gerenciador de Diretórios (Java):
 
@@ -171,38 +170,38 @@ Adicione usuários usando a API do Serviço do Gerenciador de Diretórios (Java)
 
 1. Crie um cliente DiretoryManagerServices.
 
-   Crie um objeto `DirectoryManagerServiceClient` usando seu construtor e transmitindo um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   Crie um `DirectoryManagerServiceClient` usando seu construtor e transmitindo um `ServiceClientFactory` objeto que contém propriedades de conexão.
 
 1. Defina as informações do usuário.
 
-   * Crie um objeto `UserImpl` usando seu construtor.
-   * Defina o nome do domínio chamando o método `UserImpl` do objeto `setDomainName`. Passe um valor de string que especifica o nome de domínio.
-   * Defina o tipo principal chamando o método `UserImpl` do objeto `setPrincipalType`. Passe um valor de string que especifica o tipo de usuário. Por exemplo, você pode especificar `USER`.
-   * Defina o valor do identificador do usuário chamando o método `UserImpl` do objeto `setUserid`. Passe um valor de string que especifica o valor do identificador do usuário. Por exemplo, você pode especificar `wblue`.
-   * Defina o nome canônico chamando o método `UserImpl` do objeto `setCanonicalName`. Passe um valor de string que especifica o nome canônico do usuário. Por exemplo, você pode especificar `wblue`.
-   * Defina o nome fornecido chamando o método `UserImpl` do objeto `setGivenName`. Passe um valor de string que especifica o nome do usuário. Por exemplo, você pode especificar `Wendy`.
-   * Defina o nome da família chamando o método `UserImpl` do objeto `setFamilyName`. Passe um valor de string que especifica o nome da família do usuário. Por exemplo, você pode especificar `Blue`.
+   * Crie um `UserImpl` usando seu construtor.
+   * Defina o nome do domínio chamando a função `UserImpl` do objeto `setDomainName` método . Passe um valor de string que especifica o nome de domínio.
+   * Defina o tipo principal chamando a função `UserImpl` do objeto `setPrincipalType` método . Passe um valor de string que especifica o tipo de usuário. Por exemplo, você pode especificar `USER`.
+   * Defina o valor do identificador do usuário chamando a função `UserImpl` do objeto `setUserid` método . Passe um valor de string que especifica o valor do identificador do usuário. Por exemplo, você pode especificar `wblue`.
+   * Defina o nome canônico chamando a função `UserImpl` do objeto `setCanonicalName` método . Passe um valor de string que especifica o nome canônico do usuário. Por exemplo, você pode especificar `wblue`.
+   * Defina o nome fornecido chamando a função `UserImpl` do objeto `setGivenName` método . Passe um valor de string que especifica o nome do usuário. Por exemplo, você pode especificar `Wendy`.
+   * Defina o nome da família chamando a função `UserImpl` do objeto `setFamilyName` método . Passe um valor de string que especifica o nome da família do usuário. Por exemplo, você pode especificar `Blue`.
 
    >[!NOTE]
    >
-   >Chame um método que pertença ao objeto `UserImpl` para definir outros valores. Por exemplo, é possível definir o valor do local chamando o método `UserImpl` do objeto `setLocale`.
+   >Chame um método que pertence ao `UserImpl` para definir outros valores. Por exemplo, é possível definir o valor da localidade chamando a variável `UserImpl` do objeto `setLocale` método .
 
 1. Adicione o usuário ao AEM Forms.
 
-   Chame o método `DirectoryManagerServiceClient` do objeto `createLocalUser` e passe os seguintes valores:
+   Chame o `DirectoryManagerServiceClient` do objeto `createLocalUser` e transmita os seguintes valores:
 
-   * O objeto `UserImpl` que representa o novo usuário
+   * O `UserImpl` objeto que representa o novo usuário
    * Um valor da string que representa a senha do usuário
 
-   O método `createLocalUser` retorna um valor de string que especifica o valor do identificador de usuário local.
+   O `createLocalUser` retorna um valor de string que especifica o valor do identificador de usuário local.
 
 1. Verifique se o usuário foi adicionado.
 
-   * Crie um objeto `PrincipalSearchFilter` usando seu construtor.
-   * Defina o valor do identificador do usuário chamando o método `PrincipalSearchFilter` do objeto `setUserId`. Passe um valor de string que representa o valor do identificador do usuário.
-   * Chame o método `DirectoryManagerServiceClient` do objeto `findPrincipals` e passe o objeto `PrincipalSearchFilter`. Esse método retorna uma instância `java.util.List`, onde cada elemento é um objeto `User`. Itere pela instância `java.util.List` para localizar o usuário.
+   * Crie um `PrincipalSearchFilter` usando seu construtor.
+   * Defina o valor do identificador do usuário chamando a função `PrincipalSearchFilter` do objeto `setUserId` método . Passe um valor de string que representa o valor do identificador do usuário.
+   * Chame o `DirectoryManagerServiceClient` do objeto `findPrincipals` e passe o `PrincipalSearchFilter` objeto. Esse método retorna um `java.util.List` instância , em que cada elemento é um `User` objeto. Iterar por meio do `java.util.List` para localizar o usuário.
 
-**Consulte também:**
+**Consulte também**
 
 [Resumo das etapas](users.md#summary-of-steps)
 
@@ -212,57 +211,57 @@ Adicione usuários usando a API do Serviço do Gerenciador de Diretórios (Java)
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Adicionar usuários usando a API do serviço da Web {#add-users-using-the-web-service-api}
+### Adicionar usuários usando a API de serviço da Web {#add-users-using-the-web-service-api}
 
 Adicione usuários usando a API do Serviço do Gerenciador de Diretórios (serviço da Web):
 
 1. Inclua arquivos de projeto.
 
-   Crie um projeto do Microsoft .NET que use MTOM. Use a seguinte definição WSDL para a referência de serviço: `http://localhost:8080/soap/services/DirectoryManagerService?WSDL&lc_version=9.0.1`.
+   Crie um projeto Microsoft .NET que use MTOM. Use a seguinte definição WSDL para a referência de serviço: `http://localhost:8080/soap/services/DirectoryManagerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substituir `localhost` com o endereço IP do servidor que hospeda a AEM Forms.
 
 1. Crie um cliente DiretoryManagerService.
 
-   * Crie um objeto `DirectoryManagerServiceClient` usando seu construtor padrão.
-   * Crie um objeto `DirectoryManagerServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Passe um valor de string que especifica o WSDL para o serviço do AEM Forms (por exemplo, `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). Você não precisa usar o atributo `lc_version`. Esse atributo é usado ao criar uma referência de serviço. Certifique-se de especificar `?blob=mtom`.
-   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `DirectoryManagerServiceClient.Endpoint.Binding`. Converta o valor de retorno em `BasicHttpBinding`.
-   * Defina o campo `System.ServiceModel.BasicHttpBinding` `MessageEncoding` do objeto para `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
+   * Crie um `DirectoryManagerServiceClient` usando seu construtor padrão.
+   * Crie um `DirectoryManagerServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço do AEM Forms (por exemplo, `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado ao criar uma referência de serviço. Certifique-se de especificar `?blob=mtom`.
+   * Crie um `System.ServiceModel.BasicHttpBinding` obtendo o valor da variável `DirectoryManagerServiceClient.Endpoint.Binding` campo. Converta o valor de retorno para `BasicHttpBinding`.
+   * Defina as `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribuir o nome de usuário dos formulários AEM ao campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor correspondente da senha ao campo `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Defina as informações do usuário.
 
-   * Crie um objeto `UserImpl` usando seu construtor.
-   * Defina o nome do domínio atribuindo um valor de string ao campo `UserImpl` do objeto `domainName`.
-   * Defina o tipo principal atribuindo um valor de string ao campo `UserImpl` do objeto `principalType`. Por exemplo, você pode especificar `USER`.
-   * Defina o valor do identificador do usuário atribuindo um valor de string ao campo `UserImpl` `userid` do objeto.
-   * Defina o valor do nome canônico atribuindo um valor de string ao campo `UserImpl` `canonicalName` do objeto.
-   * Defina o valor do nome fornecido atribuindo um valor de string ao campo `UserImpl` do objeto `givenName`.
-   * Defina o valor do nome da família atribuindo um valor de string ao campo `UserImpl` do objeto `familyName`.
+   * Crie um `UserImpl` usando seu construtor.
+   * Defina o nome do domínio atribuindo um valor de string à variável `UserImpl` do objeto `domainName` campo.
+   * Defina o tipo principal atribuindo um valor de string à variável `UserImpl` do objeto `principalType` campo. Por exemplo, você pode especificar `USER`.
+   * Defina o valor do identificador do usuário atribuindo um valor de string à variável `UserImpl` do objeto `userid` campo.
+   * Defina o valor do nome canônico atribuindo um valor de string à variável `UserImpl` do objeto `canonicalName` campo.
+   * Defina o valor de nome fornecido atribuindo um valor de string à variável `UserImpl` do objeto `givenName` campo.
+   * Defina o valor do nome da família atribuindo um valor de string à variável `UserImpl` do objeto `familyName` campo.
 
 1. Adicione o usuário ao AEM Forms.
 
-   Chame o método `DirectoryManagerServiceClient` do objeto `createLocalUser` e passe os seguintes valores:
+   Chame o `DirectoryManagerServiceClient` do objeto `createLocalUser` e transmita os seguintes valores:
 
-   * O objeto `UserImpl` que representa o novo usuário
+   * O `UserImpl` objeto que representa o novo usuário
    * Um valor da string que representa a senha do usuário
 
-   O método `createLocalUser` retorna um valor de string que especifica o valor do identificador de usuário local.
+   O `createLocalUser` retorna um valor de string que especifica o valor do identificador de usuário local.
 
 1. Verifique se o usuário foi adicionado.
 
-   * Crie um objeto `PrincipalSearchFilter` usando seu construtor.
-   * Defina o valor do identificador do usuário atribuindo um valor de string que representa o valor do identificador do usuário no campo `PrincipalSearchFilter` `userId` do objeto.
-   * Chame o método `DirectoryManagerServiceClient` do objeto `findPrincipals` e passe o objeto `PrincipalSearchFilter`. Este método retorna um objeto de coleção `MyArrayOfUser`, onde cada elemento é um objeto `User`. Itere pela coleção `MyArrayOfUser` para localizar o usuário.
+   * Crie um `PrincipalSearchFilter` usando seu construtor.
+   * Defina o valor do identificador do usuário atribuindo um valor de string que represente o valor do identificador do usuário para a variável `PrincipalSearchFilter` do objeto `userId` campo.
+   * Chame o `DirectoryManagerServiceClient` do objeto `findPrincipals` e passe o `PrincipalSearchFilter` objeto. Esse método retorna um `MyArrayOfUser` objeto de coleção, em que cada elemento é um `User` objeto. Iterar por meio do `MyArrayOfUser` coleção para localizar o usuário.
 
-**Consulte também:**
+**Consulte também**
 
 [Resumo das etapas](users.md#summary-of-steps)
 
@@ -270,7 +269,7 @@ Adicione usuários usando a API do Serviço do Gerenciador de Diretórios (servi
 
 [Chamar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Excluindo usuários {#deleting-users}
+## Excluir usuários {#deleting-users}
 
 Você pode usar a API do Serviço do Gerenciador de Diretórios (Java e serviço da Web) para excluir programaticamente usuários do AEM Forms. Após excluir um usuário, ele não poderá mais ser usado para executar uma operação de serviço que requer um usuário. Por exemplo, não é possível atribuir uma tarefa a um usuário excluído.
 
@@ -297,9 +296,9 @@ Você pode especificar um usuário a ser excluído usando o valor identificador 
 
 **Excluir o usuário do AEM Forms**
 
-Para excluir um usuário, chame o método `DirectoryManagerServiceClient` do objeto `deleteLocalUser`.
+Para excluir um usuário, chame o `DirectoryManagerServiceClient` do objeto `deleteLocalUser` método .
 
-**Consulte também:**
+**Consulte também**
 
 [Excluir usuários usando a API do Java](users.md#delete-users-using-the-java-api)
 
@@ -311,7 +310,7 @@ Para excluir um usuário, chame o método `DirectoryManagerServiceClient` do obj
 
 [Adicionar usuários](users.md#adding-users)
 
-### Excluir usuários usando a API Java {#delete-users-using-the-java-api}
+### Excluir usuários usando a API do Java {#delete-users-using-the-java-api}
 
 Exclua usuários usando a API do Serviço do Gerenciador de Diretórios (Java):
 
@@ -321,19 +320,19 @@ Exclua usuários usando a API do Serviço do Gerenciador de Diretórios (Java):
 
 1. Crie um cliente DiretoryManagerService.
 
-   Crie um objeto `DirectoryManagerServiceClient` usando seu construtor e transmitindo um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   Crie um `DirectoryManagerServiceClient` usando seu construtor e transmitindo um `ServiceClientFactory` objeto que contém propriedades de conexão.
 
 1. Especifique o usuário a ser excluído.
 
-   * Crie um objeto `PrincipalSearchFilter` usando seu construtor.
-   * Defina o valor do identificador do usuário chamando o método `PrincipalSearchFilter` do objeto `setUserId`. Passe um valor de string que representa o valor do identificador do usuário.
-   * Chame o método `DirectoryManagerServiceClient` do objeto `findPrincipals` e passe o objeto `PrincipalSearchFilter`. Esse método retorna uma instância `java.util.List`, onde cada elemento é um objeto `User`. Itere pela instância `java.util.List` para localizar o usuário a ser excluído.
+   * Crie um `PrincipalSearchFilter` usando seu construtor.
+   * Defina o valor do identificador do usuário chamando a função `PrincipalSearchFilter` do objeto `setUserId` método . Passe um valor de string que representa o valor do identificador do usuário.
+   * Chame o `DirectoryManagerServiceClient` do objeto `findPrincipals` e passe o `PrincipalSearchFilter` objeto. Esse método retorna um `java.util.List` instância , em que cada elemento é um `User` objeto. Iterar por meio do `java.util.List` instância para localizar o usuário a ser excluído.
 
 1. Exclua o usuário do AEM Forms.
 
-   Chame o método `DirectoryManagerServiceClient` do objeto `deleteLocalUser` e transmita o valor do campo `User` do objeto `oid`. Chame o método `User` do objeto `getOid`. Use o objeto `User` recuperado da instância `java.util.List`.
+   Chame o `DirectoryManagerServiceClient` do objeto `deleteLocalUser` e transmita o valor da variável `User` do objeto `oid` campo. Chame o `User` do objeto `getOid` método . Use o `User` objeto recuperado do `java.util.List` instância.
 
-**Consulte também:**
+**Consulte também**
 
 [Resumo das etapas](users.md#summary-of-steps)
 
@@ -345,7 +344,7 @@ Exclua usuários usando a API do Serviço do Gerenciador de Diretórios (Java):
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Excluir usuários usando a API do serviço da Web {#delete-users-using-the-web-service-api}
+### Excluir usuários usando a API de serviço da Web {#delete-users-using-the-web-service-api}
 
 Excluir usuários usando a API do Serviço do Gerenciador de Diretórios (serviço da Web):
 
@@ -355,28 +354,28 @@ Excluir usuários usando a API do Serviço do Gerenciador de Diretórios (servi�
 
 1. Crie um cliente DiretoryManagerService.
 
-   * Crie um objeto `DirectoryManagerServiceClient` usando seu construtor padrão.
-   * Crie um objeto `DirectoryManagerServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Passe um valor de string que especifica o WSDL para o serviço do AEM Forms (por exemplo, `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). Você não precisa usar o atributo `lc_version`. Esse atributo é usado ao criar uma referência de serviço. Certifique-se de especificar `blob=mtom.`
-   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `DirectoryManagerServiceClient.Endpoint.Binding`. Converta o valor de retorno em `BasicHttpBinding`.
-   * Defina o campo `System.ServiceModel.BasicHttpBinding` `MessageEncoding` do objeto para `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
+   * Crie um `DirectoryManagerServiceClient` usando seu construtor padrão.
+   * Crie um `DirectoryManagerServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço do AEM Forms (por exemplo, `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado ao criar uma referência de serviço. Certifique-se de especificar `blob=mtom.`
+   * Crie um `System.ServiceModel.BasicHttpBinding` obtendo o valor da variável `DirectoryManagerServiceClient.Endpoint.Binding` campo. Converta o valor de retorno para `BasicHttpBinding`.
+   * Defina as `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribuir o nome de usuário dos formulários AEM ao campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor correspondente da senha ao campo `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Especifique o usuário a ser excluído.
 
-   * Crie um objeto `PrincipalSearchFilter` usando seu construtor.
-   * Defina o valor do identificador do usuário atribuindo um valor de string ao campo `PrincipalSearchFilter` `userId` do objeto.
-   * Chame o método `DirectoryManagerServiceClient` do objeto `findPrincipals` e passe o objeto `PrincipalSearchFilter`. Este método retorna um objeto de coleção `MyArrayOfUser`, onde cada elemento é um objeto `User`. Itere pela coleção `MyArrayOfUser` para localizar o usuário. O objeto `User` recuperado do objeto de coleção `MyArrayOfUser` é usado para excluir o usuário.
+   * Crie um `PrincipalSearchFilter` usando seu construtor.
+   * Defina o valor do identificador do usuário atribuindo um valor de string à variável `PrincipalSearchFilter` do objeto `userId` campo.
+   * Chame o `DirectoryManagerServiceClient` do objeto `findPrincipals` e passe o `PrincipalSearchFilter` objeto. Esse método retorna um `MyArrayOfUser` objeto de coleção, em que cada elemento é um `User` objeto. Iterar por meio do `MyArrayOfUser` coleção para localizar o usuário. O `User` objeto recuperado do `MyArrayOfUser` objeto de coleção é usado para excluir o usuário.
 
 1. Exclua o usuário do AEM Forms.
 
-   Exclua o usuário passando o valor do campo `User` do objeto `oid` para o método `DirectoryManagerServiceClient` do objeto `deleteLocalUser`.
+   Exclua o usuário transmitindo a variável `User` do objeto `oid` valor do campo para `DirectoryManagerServiceClient` do objeto `deleteLocalUser` método .
 
-**Consulte também:**
+**Consulte também**
 
 [Resumo das etapas](users.md#summary-of-steps)
 
@@ -384,7 +383,7 @@ Excluir usuários usando a API do Serviço do Gerenciador de Diretórios (servi�
 
 [Chamar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Criando Grupos {#creating-groups}
+## Criação de grupos {#creating-groups}
 
 Você pode usar a API do Serviço do Gerenciador de Diretórios (Java e serviço da Web) para criar grupos do AEM Forms de forma programática. Depois de criar um grupo, você pode usar esse grupo para executar uma operação de serviço que requer um grupo. Por exemplo, você pode atribuir um usuário ao novo grupo. (Consulte [Gerenciar usuários e grupos](users.md#managing-users-and-groups).)
 
@@ -409,7 +408,7 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-utilities.jar (obrigatório se o AEM Forms estiver implantado no JBoss)
 * jbossall-client.jar (obrigatório se o AEM Forms for implantado no JBoss)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um cliente DiretoryManagerService**
 
@@ -429,9 +428,9 @@ Depois de determinar que o grupo não existe no domínio, crie o grupo e especif
 
 **Executar uma ação com o grupo**
 
-Depois de criar um grupo, você pode executar uma ação usando o grupo . Por exemplo, você pode adicionar um usuário ao grupo. Para adicionar um usuário a um grupo, recupere o valor identificador exclusivo do usuário e do grupo. Passe esses valores para o método `addPrincipalToLocalGroup`.
+Depois de criar um grupo, você pode executar uma ação usando o grupo . Por exemplo, você pode adicionar um usuário ao grupo. Para adicionar um usuário a um grupo, recupere o valor identificador exclusivo do usuário e do grupo. Passe esses valores para a `addPrincipalToLocalGroup` método .
 
-**Consulte também:**
+**Consulte também**
 
 [Criar grupos usando a API do Java](users.md#create-groups-using-the-java-api)
 
@@ -443,7 +442,7 @@ Depois de criar um grupo, você pode executar uma ação usando o grupo . Por ex
 
 [Excluir usuários](users.md#deleting-users)
 
-### Criar grupos usando a API Java {#create-groups-using-the-java-api}
+### Criar grupos usando a API do Java {#create-groups-using-the-java-api}
 
 Crie um grupo usando a API do Serviço do Gerenciador de Diretórios (Java):
 
@@ -453,33 +452,33 @@ Crie um grupo usando a API do Serviço do Gerenciador de Diretórios (Java):
 
 1. Crie um cliente DiretoryManagerService.
 
-   Crie um objeto `DirectoryManagerServiceClient` usando seu construtor e transmitindo um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   Crie um `DirectoryManagerServiceClient` usando seu construtor e transmitindo um `ServiceClientFactory` objeto que contém propriedades de conexão.
 
 1. Determine se o grupo existe.
 
-   * Crie um objeto `PrincipalSearchFilter` usando seu construtor.
-   * Defina o tipo principal chamando o objeto `PrincipalSearchFilter` do objeto `setPrincipalType`. Passe o valor `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP`.
-   * Defina o domínio chamando o objeto `PrincipalSearchFilter` `setSpecificDomainName` do objeto. Passe um valor de string que especifica o nome de domínio.
-   * Para localizar um grupo, chame o método `DirectoryManagerServiceClient` do objeto (um principal pode ser um grupo). `findPrincipals` Passe o objeto `PrincipalSearchFilter` que especifica o tipo principal e o nome de domínio. Esse método retorna uma instância `java.util.List` em que cada elemento é uma instância `Group`. Cada instância de grupo está em conformidade com o filtro especificado usando o objeto `PrincipalSearchFilter`.
-   * Iterar pela instância `java.util.List`. Para cada elemento, recupere o nome do grupo. Certifique-se de que o nome do grupo não seja igual ao novo nome do grupo.
+   * Crie um `PrincipalSearchFilter` usando seu construtor.
+   * Defina o tipo principal chamando a função `PrincipalSearchFilter` do objeto `setPrincipalType` objeto. Transmita o valor `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP`.
+   * Defina o domínio chamando o `PrincipalSearchFilter` do objeto `setSpecificDomainName` objeto. Passe um valor de string que especifica o nome de domínio.
+   * Para localizar um grupo, chame o `DirectoryManagerServiceClient` do objeto `findPrincipals` (um principal pode ser um grupo). Passe o `PrincipalSearchFilter` que especifica o tipo principal e o nome de domínio. Esse método retorna um `java.util.List` instância em que cada elemento é um `Group` instância. Cada instância de grupo está em conformidade com o filtro especificado usando o `PrincipalSearchFilter` objeto.
+   * Iterar por meio do `java.util.List` instância. Para cada elemento, recupere o nome do grupo. Certifique-se de que o nome do grupo não seja igual ao novo nome do grupo.
 
 1. Crie o grupo.
 
-   * Se o grupo não existir, chame o método `Group` do objeto e transmita um valor de string que especifica o nome do grupo.`setCommonName`
-   * Chame o método `Group` do objeto `setDescription` e passe um valor de string que especifique a descrição do grupo.
-   * Chame o método `Group` do objeto e transmita um valor de string que especifica o nome do domínio.`setDomainName`
-   * Chame o método `DirectoryManagerServiceClient` do objeto `createLocalGroup` e passe a instância `Group`.
+   * Caso o grupo não exista, chame a função `Group` do objeto `setCommonName` e transmita um valor de string que especifica o nome do grupo.
+   * Chame o `Group` do objeto `setDescription` e transmita um valor de string que especifica a descrição do grupo.
+   * Chame o `Group` do objeto `setDomainName` e transmita um valor de string que especifica o nome do domínio.
+   * Chame o `DirectoryManagerServiceClient` do objeto `createLocalGroup` e passe o `Group` instância.
 
-   O método `createLocalUser` retorna um valor de string que especifica o valor do identificador de usuário local.
+   O `createLocalUser` retorna um valor de string que especifica o valor do identificador de usuário local.
 
 1. Execute uma ação com o grupo.
 
-   * Crie um objeto `PrincipalSearchFilter` usando seu construtor.
-   * Defina o valor do identificador do usuário chamando o método `PrincipalSearchFilter` do objeto `setUserId`. Passe um valor de string que representa o valor do identificador do usuário.
-   * Chame o método `DirectoryManagerServiceClient` do objeto `findPrincipals` e passe o objeto `PrincipalSearchFilter`. Esse método retorna uma instância `java.util.List`, onde cada elemento é um objeto `User`. Itere pela instância `java.util.List` para localizar o usuário.
-   * Adicione um usuário ao grupo, chamando o método `DirectoryManagerServiceClient` do objeto `addPrincipalToLocalGroup`. Passe o valor de retorno do método `User` do objeto `getOid`. Passe o valor de retorno do método `Group` dos objetos `getOid` (use a instância `Group` que representa o novo grupo).
+   * Crie um `PrincipalSearchFilter` usando seu construtor.
+   * Defina o valor do identificador do usuário chamando a função `PrincipalSearchFilter` do objeto `setUserId` método . Passe um valor de string que representa o valor do identificador do usuário.
+   * Chame o `DirectoryManagerServiceClient` do objeto `findPrincipals` e passe o `PrincipalSearchFilter` objeto. Esse método retorna um `java.util.List` instância , em que cada elemento é um `User` objeto. Iterar por meio do `java.util.List` para localizar o usuário.
+   * Adicione um usuário ao grupo, chamando a função `DirectoryManagerServiceClient` do objeto `addPrincipalToLocalGroup` método . Passe o valor de retorno do `User` do objeto `getOid` método . Passe o valor de retorno do `Group` dos objetos `getOid` (use o `Group` que representa o novo grupo).
 
-**Consulte também:**
+**Consulte também**
 
 [Resumo das etapas](users.md#summary-of-steps)
 
@@ -487,13 +486,13 @@ Crie um grupo usando a API do Serviço do Gerenciador de Diretórios (Java):
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Gerenciando usuários e grupos {#managing-users-and-groups}
+## Gerenciar usuários e grupos {#managing-users-and-groups}
 
 Este tópico descreve como você pode usar o (Java) para atribuir, remover e consultar domínios, usuários e grupos de forma programática.
 
 >[!NOTE]
 >
->Ao configurar um domínio, você deve definir o identificador exclusivo para grupos e usuários. O atributo que é escolhido não só deve ser exclusivo no ambiente LDAP, como também deve ser imutável e não será alterado no diretório. Este atributo também deve ser de um tipo de dados de sequência simples (a única exceção atualmente permitida para o Ative Diretory 2000/2003 é `"objectsid"`, que é um valor binário). O atributo `"GUID"` do Novell eDirectory , por exemplo, não é um tipo de dados de string simples e, portanto, não funcionará.
+>Ao configurar um domínio, você deve definir o identificador exclusivo para grupos e usuários. O atributo que é escolhido não só deve ser exclusivo no ambiente LDAP, como também deve ser imutável e não será alterado no diretório. Este atributo também deve ser de um tipo de dados de sequência simples (a única exceção atualmente permitida para o Ative Diretory 2000/2003 é `"objectsid"`, que é um valor binário). O atributo Novell eDirectory `"GUID"`, por exemplo, não é um tipo de dados de string simples e, portanto, não funcionará.
 
 * Para o Ative Diretory, use `"objectsid"`.
 * Para SunOne, use `"nsuniqueid"`.
@@ -516,13 +515,13 @@ Inclua os arquivos necessários no seu projeto de desenvolvimento. Se você esti
 
 **Criar um cliente DiretoryManagerService**
 
-Antes de executar programaticamente uma operação de serviço do Diretory Manager, você deve criar um cliente de serviço do Diretory Manager. Com a API Java, isso é feito criando um objeto `DirectoryManagerServiceClient`. Com a API do serviço da Web, isso é feito criando um objeto `DirectoryManagerServiceService`.
+Antes de executar programaticamente uma operação de serviço do Diretory Manager, você deve criar um cliente de serviço do Diretory Manager. Com a API Java, isso é feito criando uma `DirectoryManagerServiceClient` objeto. Com a API do serviço da Web, isso é feito criando um `DirectoryManagerServiceService` objeto.
 
 **Chamar as operações apropriadas do usuário ou grupo**
 
 Depois de criar o cliente de serviço, você pode invocar as operações de gerenciamento de usuários ou grupos. O cliente de serviço permite atribuir, remover e consultar domínios, usuários e grupos. Observe que é possível adicionar um principal de diretório ou um principal local a um grupo local, mas não é possível adicionar um principal local a um grupo de diretórios.
 
-**Consulte também:**
+**Consulte também**
 
 [Gerenciamento de usuários e grupos usando a API do Java](users.md#managing-users-and-groups-using-the-java-api)
 
@@ -540,25 +539,25 @@ Para gerenciar de forma programática usuários, grupos e domínios usando o (Ja
 
 1. Inclua arquivos de projeto.
 
-   Inclua arquivos JAR do cliente, como adobe-usermanager-client.jar, no caminho de classe do seu projeto Java. Para obter informações sobre a localização desses arquivos, consulte [Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+   Inclua arquivos JAR do cliente, como adobe-usermanager-client.jar, no caminho de classe do seu projeto Java. Para obter informações sobre a localização desses arquivos, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 1. Crie um cliente DiretoryManagerService.
 
-   Crie um objeto `DirectoryManagerServiceClient` usando seu construtor e transmitindo um objeto `ServiceClientFactory` que contenha propriedades de conexão. Para obter informações, consulte [Definindo propriedades de conexão ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
+   Crie um `DirectoryManagerServiceClient` usando seu construtor e transmitindo um `ServiceClientFactory` objeto que contém propriedades de conexão. Para obter mais informações, consulte [Configuração das propriedades de conexão ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
 
 1. Chame as operações apropriadas do usuário ou grupo.
 
-   Para localizar um usuário ou grupo, chame um dos métodos do objeto `DirectoryManagerServiceClient` para localizar entidades principais (já que uma entidade principal pode ser um usuário ou um grupo). No exemplo abaixo, o método `findPrincipals` é chamado usando um filtro de pesquisa (um objeto `PrincipalSearchFilter`).
+   Para localizar um usuário ou grupo, chame um dos `DirectoryManagerServiceClient` métodos do objeto para localizar entidades principais (já que uma entidade principal pode ser um usuário ou um grupo). No exemplo abaixo, a variável `findPrincipals` é chamado usando um filtro de pesquisa (um `PrincipalSearchFilter` objeto).
 
-   Como o valor de retorno, nesse caso, é um `java.util.List` contendo `Principal` objetos, repita o resultado e converta os objetos `Principal` em `User` ou `Group`.
+   Como o valor de retorno, nesse caso, é um `java.util.List` contendo `Principal` objetos, percorra o resultado e projete a variável `Principal` objetos para `User` ou `Group` objetos.
 
-   Usando o objeto `User` ou `Group` resultante (que ambos herdam da interface `Principal`), recupere as informações necessárias nos workflows. Por exemplo, o nome de domínio e os valores de nome canônico, combinados, identificam exclusivamente um principal. Eles são recuperados chamando os métodos `Principal` do objeto `getDomainName` e `getCanonicalName`, respectivamente.
+   Uso do resultante `User` ou `Group` objeto (que ambos herdam do `Principal` , recupere as informações necessárias em seus fluxos de trabalho. Por exemplo, o nome de domínio e os valores de nome canônico, combinados, identificam exclusivamente um principal. Eles são recuperados chamando o `Principal` do objeto `getDomainName` e `getCanonicalName` métodos, respectivamente.
 
-   Para excluir um usuário local, chame o método `DirectoryManagerServiceClient` do objeto e passe o identificador do usuário.`deleteLocalUser`
+   Para excluir um usuário local, chame o `DirectoryManagerServiceClient` do objeto `deleteLocalUser` e transmita o identificador do usuário.
 
-   Para excluir um grupo local, chame o método `DirectoryManagerServiceClient` do objeto e passe o identificador do grupo.`deleteLocalGroup`
+   Para excluir um grupo local, chame o `DirectoryManagerServiceClient` do objeto `deleteLocalGroup` e passe o identificador do grupo.
 
-**Consulte também:**
+**Consulte também**
 
 [Resumo das etapas](users.md#summary-of-steps)
 
@@ -566,48 +565,48 @@ Para gerenciar de forma programática usuários, grupos e domínios usando o (Ja
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Gerenciamento de usuários e grupos usando a API do serviço da Web {#managing-users-and-groups-using-the-web-service-api}
+### Gerenciamento de usuários e grupos usando a API de serviço da Web {#managing-users-and-groups-using-the-web-service-api}
 
 Para gerenciar de forma programática usuários, grupos e domínios usando a API do serviço do Diretory Manager (serviço da Web), execute as seguintes tarefas:
 
 1. Inclua arquivos de projeto.
 
-   * Crie uma assemblagem de cliente Microsoft .NET que consome o Gerenciador de Diretórios WSDL. (Consulte [Chamar AEM Forms usando a codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-   * Faça referência ao assembly do cliente Microsoft .NET. (Consulte [Criando um assembly de cliente .NET que usa a codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
+   * Crie um assembly de cliente Microsoft .NET que consuma o WSDL do Gerenciador de Diretórios. (Consulte [Chamada de AEM Forms usando codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Faça referência ao assembly do cliente Microsoft .NET. (Consulte [Criando um assembly de cliente .NET que usa codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
 
 1. Crie um cliente DiretoryManagerService.
 
-   Crie um objeto `DirectoryManagerServiceService` usando o construtor da classe proxy.
+   Crie um `DirectoryManagerServiceService` usando o construtor da classe proxy.
 
 1. Chame as operações apropriadas do usuário ou grupo.
 
-   Para localizar um usuário ou grupo, chame um dos métodos do objeto `DirectoryManagerServiceService` para localizar entidades principais (já que uma entidade principal pode ser um usuário ou um grupo). No exemplo abaixo, o método `findPrincipalsWithFilter` é chamado usando um filtro de pesquisa (um objeto `PrincipalSearchFilter`). Ao usar um objeto `PrincipalSearchFilter`, os principais locais só serão retornados se a propriedade `isLocal` estiver definida como `true`. Esse comportamento é diferente do que ocorria com a API do Java.
+   Para localizar um usuário ou grupo, chame um dos `DirectoryManagerServiceService` métodos do objeto para localizar entidades principais (já que uma entidade principal pode ser um usuário ou um grupo). No exemplo abaixo, a variável `findPrincipalsWithFilter` é chamado usando um filtro de pesquisa (um `PrincipalSearchFilter` objeto). Ao usar um `PrincipalSearchFilter` objeto, os principais locais só serão retornados se a variável `isLocal` está definida como `true`. Esse comportamento é diferente do que ocorria com a API do Java.
 
    >[!NOTE]
    >
-   >Se o número máximo de resultados não for especificado no filtro de pesquisa (por meio do campo `PrincipalSearchFilter.resultsMax` ), um máximo de 1000 resultados será retornado. Esse é um comportamento diferente do que ocorre com a API do Java, em que 10 resultados são o máximo padrão. Além disso, os métodos de pesquisa como `findGroupMembers` não produzirão resultados, a menos que o número máximo de resultados seja especificado no filtro de pesquisa (por exemplo, por meio do campo `GroupMembershipSearchFilter.resultsMax`). Isso se aplica a todos os filtros de pesquisa herdados da classe `GenericSearchFilter`. Para obter mais informações, consulte [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   >Se o número máximo de resultados não for especificado no filtro de pesquisa (por meio do `PrincipalSearchFilter.resultsMax` ), no máximo 1000 resultados serão retornados. Esse é um comportamento diferente do que ocorre com a API do Java, em que 10 resultados são o máximo padrão. Além disso, os métodos de pesquisa, como `findGroupMembers` não produzirá resultados, a menos que o número máximo de resultados seja especificado no filtro de pesquisa (por exemplo, através da variável `GroupMembershipSearchFilter.resultsMax` campo ). Isso se aplica a todos os filtros de pesquisa herdados do `GenericSearchFilter` classe . Para obter mais informações, consulte [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-   Como o valor de retorno, nesse caso, é um `object[]` contendo `Principal` objetos, repita o resultado e converta os objetos `Principal` em `User` ou `Group`.
+   Como o valor de retorno, nesse caso, é uma `object[]` contendo `Principal` objetos, percorra o resultado e projete a variável `Principal` objetos para `User` ou `Group` objetos.
 
-   Usando o objeto `User` ou `Group` resultante (que ambos herdam da interface `Principal`), recupere as informações necessárias nos workflows. Por exemplo, o nome de domínio e os valores de nome canônico, combinados, identificam exclusivamente um principal. Eles são recuperados chamando os campos `Principal` `domainName` e `canonicalName` do objeto, respectivamente.
+   Uso do resultante `User` ou `Group` objeto (que ambos herdam do `Principal` , recupere as informações necessárias em seus fluxos de trabalho. Por exemplo, o nome de domínio e os valores de nome canônico, combinados, identificam exclusivamente um principal. Eles são recuperados chamando o `Principal` do objeto `domainName` e `canonicalName` , respectivamente.
 
-   Para excluir um usuário local, chame o método `DirectoryManagerServiceService` do objeto e passe o identificador do usuário.`deleteLocalUser`
+   Para excluir um usuário local, chame o `DirectoryManagerServiceService` do objeto `deleteLocalUser` e transmita o identificador do usuário.
 
-   Para excluir um grupo local, chame o método `DirectoryManagerServiceService` do objeto e passe o identificador do grupo.`deleteLocalGroup`
+   Para excluir um grupo local, chame o `DirectoryManagerServiceService` do objeto `deleteLocalGroup` e passe o identificador do grupo.
 
-**Consulte também:**
+**Consulte também**
 
 [Resumo das etapas](users.md#summary-of-steps)
 
 [Chamar o AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-## Gerenciando funções e permissões {#managing-roles-and-permissions}
+## Gerenciamento de funções e permissões {#managing-roles-and-permissions}
 
 Este tópico descreve como você pode usar a API de serviço do Gerenciador de autorização (Java) para atribuir, remover e determinar funções e permissões de forma programática.
 
-No AEM Forms, uma *role* é um grupo de permissões para acessar um ou mais recursos no nível do sistema. Essas permissões são criadas por meio do Gerenciamento de usuários e são aplicadas pelos componentes do serviço. Por exemplo, um Administrador pode atribuir a função de &quot;Autor do conjunto de políticas&quot; a um grupo de usuários. O Rights Management permitiria que os usuários desse grupo com essa função criassem conjuntos de políticas por meio do console de administração.
+No AEM Forms, uma *função* é um grupo de permissões para acessar um ou mais recursos no nível do sistema. Essas permissões são criadas por meio do Gerenciamento de usuários e são aplicadas pelos componentes do serviço. Por exemplo, um Administrador pode atribuir a função de &quot;Autor do conjunto de políticas&quot; a um grupo de usuários. O Rights Management permitiria que os usuários desse grupo com essa função criassem conjuntos de políticas por meio do console de administração.
 
-Há dois tipos de funções: *funções padrão* e *funções personalizadas*. As funções padrão (*funções do sistema)* já estão residentes no AEM Forms. Pressupõe-se que as funções padrão não possam ser excluídas ou modificadas pelo administrador e, portanto, sejam imutáveis. As funções personalizadas criadas pelo administrador, que podem posteriormente modificá-las ou excluí-las, são mutáveis.
+Há dois tipos de funções: *funções padrão* e *funções personalizadas*. Funções padrão (*funções do sistema)* já residam no AEM Forms. Pressupõe-se que as funções padrão não possam ser excluídas ou modificadas pelo administrador e, portanto, sejam imutáveis. As funções personalizadas criadas pelo administrador, que podem posteriormente modificá-las ou excluí-las, são mutáveis.
 
 As funções facilitam o gerenciamento de permissões. Quando uma função é atribuída a um principal, um conjunto de permissões é automaticamente atribuído a esse principal e todas as decisões específicas relacionadas ao acesso do principal são baseadas nesse conjunto geral de permissões atribuídas.
 
@@ -625,13 +624,13 @@ Inclua os arquivos necessários no seu projeto de desenvolvimento. Se você esti
 
 **Criar um cliente AuthorizationManagerService**
 
-Antes de poder executar programaticamente uma operação User Management AuthorizationManagerService, tem de criar um cliente AuthorizationManagerService. Com a API Java, isso é feito criando um objeto `AuthorizationManagerServiceClient`.
+Antes de poder executar programaticamente uma operação User Management AuthorizationManagerService, tem de criar um cliente AuthorizationManagerService. Com a API Java, isso é feito criando uma `AuthorizationManagerServiceClient` objeto.
 
 **Chamar a função ou as operações de permissão apropriadas**
 
 Depois de criar o cliente de serviço, você pode invocar as operações de função ou permissão. O cliente de serviço permite atribuir, remover e determinar funções e permissões.
 
-**Consulte também:**
+**Consulte também**
 
 [Gerenciamento de funções e permissões usando a API do Java](users.md#managing-roles-and-permissions-using-the-java-api)
 
@@ -643,7 +642,7 @@ Depois de criar o cliente de serviço, você pode invocar as operações de fun�
 
 [Início rápido da API do Gerenciador de usuários](/help/forms/developing/user-manager-java-api-quick.md#user-manager-java-api-quick-start-soap)
 
-### Gerenciamento de funções e permissões usando a API Java {#managing-roles-and-permissions-using-the-java-api}
+### Gerenciamento de funções e permissões usando a API do Java {#managing-roles-and-permissions-using-the-java-api}
 
 Para gerenciar funções e permissões usando a API do Serviço do Gerenciador de Autorização (Java), execute as seguintes tarefas:
 
@@ -653,22 +652,22 @@ Para gerenciar funções e permissões usando a API do Serviço do Gerenciador d
 
 1. Crie um cliente AuthorizationManagerService.
 
-   Crie um objeto `AuthorizationManagerServiceClient` usando seu construtor e transmitindo um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   Crie um `AuthorizationManagerServiceClient` usando seu construtor e transmitindo um `ServiceClientFactory` objeto que contém propriedades de conexão.
 
 1. Chame a função ou as operações de permissão apropriadas.
 
-   Para atribuir uma função a um principal, chame o método `AuthorizationManagerServiceClient` do objeto e transmita os seguintes valores:`assignRole`
+   Para atribuir uma função a um principal, chame o `AuthorizationManagerServiceClient` do objeto `assignRole` e transmita os seguintes valores:
 
-   * Um objeto `java.lang.String` que contém o identificador da função
-   * Uma matriz de objetos `java.lang.String` contendo os identificadores principais.
+   * A `java.lang.String` objeto que contém o identificador da função
+   * Uma matriz de `java.lang.String` objetos que contêm os identificadores principais.
 
-   Para remover uma função de um principal, chame o método `AuthorizationManagerServiceClient` do objeto e transmita os seguintes valores:`unassignRole`
+   Para remover uma função de um principal, chame o `AuthorizationManagerServiceClient` do objeto `unassignRole` e transmita os seguintes valores:
 
-   * Um objeto `java.lang.String` que contém o identificador da função.
-   * Uma matriz de objetos `java.lang.String` contendo os identificadores principais.
+   * A `java.lang.String` objeto que contém o identificador da função.
+   * Uma matriz de `java.lang.String` objetos que contêm os identificadores principais.
 
 
-**Consulte também:**
+**Consulte também**
 
 [Resumo das etapas](users.md#summary-of-steps)
 
@@ -678,45 +677,45 @@ Para gerenciar funções e permissões usando a API do Serviço do Gerenciador d
 
 [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Gerenciamento de funções e permissões usando a API do serviço da Web {#managing-roles-and-permissions-using-the-web-service-api}
+### Gerenciamento de funções e permissões usando a API de serviço da Web {#managing-roles-and-permissions-using-the-web-service-api}
 
 Gerencie funções e permissões usando a API do Serviço do Gerenciador de Autorizações (serviço da Web):
 
 1. Inclua arquivos de projeto.
 
-   Crie um projeto do Microsoft .NET que use MTOM. Certifique-se de usar a seguinte definição de WSDL: `http://localhost:8080/soap/services/AuthorizationManagerService?WSDL&lc_version=9.0.1`.
+   Crie um projeto Microsoft .NET que use MTOM. Certifique-se de usar a seguinte definição de WSDL: `http://localhost:8080/soap/services/AuthorizationManagerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
+   >Substituir `localhost` com o endereço IP do servidor que hospeda a AEM Forms.
 
 1. Crie um cliente AuthorizationManagerService.
 
-   * Crie um objeto `AuthorizationManagerServiceClient` usando seu construtor padrão.
-   * Crie um objeto `AuthorizationManagerServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Passe um valor de string que especifica o WSDL para o serviço do AEM Forms (por exemplo, `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`.) Você não precisa usar o atributo `lc_version`. Esse atributo é usado ao criar uma referência de serviço.
-   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `AuthorizationManagerServiceClient.Endpoint.Binding`. Converta o valor de retorno em `BasicHttpBinding`.
-   * Defina o campo `System.ServiceModel.BasicHttpBinding` `MessageEncoding` do objeto para `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
+   * Crie um `AuthorizationManagerServiceClient` usando seu construtor padrão.
+   * Crie um `AuthorizationManagerServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço do AEM Forms (por exemplo, `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`.) Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado ao criar uma referência de serviço.
+   * Crie um `System.ServiceModel.BasicHttpBinding` obtendo o valor da variável `AuthorizationManagerServiceClient.Endpoint.Binding` campo. Converta o valor de retorno para `BasicHttpBinding`.
+   * Defina as `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribuir o nome de usuário dos formulários AEM ao campo `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor correspondente da senha ao campo `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Chame a função ou as operações de permissão apropriadas.
 
-   Para atribuir uma função a um principal, chame o método `AuthorizationManagerServiceClient` do objeto e transmita os seguintes valores:`assignRole`
+   Para atribuir uma função a um principal, chame o `AuthorizationManagerServiceClient` do objeto `assignRole` e transmita os seguintes valores:
 
-   * Um objeto `string` que contém o identificador da função
-   * Um objeto `MyArrayOf_xsd_string` que contém os identificadores principais.
+   * A `string` objeto que contém o identificador da função
+   * A `MyArrayOf_xsd_string` objeto que contém os identificadores principais.
 
-   Para remover uma função de um principal, chame o método `AuthorizationManagerServiceService` do objeto e transmita os seguintes valores:`unassignRole`
+   Para remover uma função de um principal, chame o `AuthorizationManagerServiceService` do objeto `unassignRole` e transmita os seguintes valores:
 
-   * Um objeto `string` que contém o identificador da função.
-   * Uma matriz de objetos `string` contendo os identificadores principais.
+   * A `string` objeto que contém o identificador da função.
+   * Uma matriz de `string` objetos que contêm os identificadores principais.
 
 
-**Consulte também:**
+**Consulte também**
 
 [Resumo das etapas](users.md#summary-of-steps)
 
@@ -747,7 +746,7 @@ A tabela a seguir descreve as etapas neste diagrama
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>O usuário acessa um site e especifica um nome de usuário e senha. Essas informações são enviadas para um servidor de aplicativos J2EE que hospeda a AEM Forms.</p></td>
   </tr>
   <tr>
@@ -780,7 +779,7 @@ Inclua os arquivos necessários no seu projeto de desenvolvimento. Se você esti
 
 **Criar um cliente AuthenticationManagerService**
 
-Antes de poder autenticar programaticamente um usuário, você deve criar um cliente AuthenticationManagerService . Ao usar a API do Java, crie um objeto `AuthenticationManagerServiceClient` .
+Antes de poder autenticar programaticamente um usuário, você deve criar um cliente AuthenticationManagerService . Ao usar a API do Java, crie um `AuthenticationManagerServiceClient` objeto.
 
 **Chamar a operação de autenticação**
 
@@ -788,9 +787,9 @@ Depois de criar o cliente de serviço, você pode invocar a operação de autent
 
 **Recuperar o contexto de autenticação**
 
-Depois de autenticar o usuário, você pode criar um contexto com base no usuário autenticado. Em seguida, você pode usar o conteúdo para chamar outros serviços da AEM Forms. Por exemplo, você pode usar o contexto para criar um `EncryptionServiceClient` e criptografar um documento PDF com uma senha. Certifique-se de que o usuário que foi autenticado tenha a função chamada `Services User` que é necessária para chamar um serviço do AEM Forms.
+Depois de autenticar o usuário, você pode criar um contexto com base no usuário autenticado. Em seguida, você pode usar o conteúdo para chamar outros serviços da AEM Forms. Por exemplo, você pode usar o contexto para criar um `EncryptionServiceClient` e criptografe um documento PDF com uma senha. Certifique-se de que o usuário que foi autenticado tenha a função nomeada `Services User` que é necessário para chamar um serviço AEM Forms.
 
-**Consulte também:**
+**Consulte também**
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -798,9 +797,9 @@ Depois de autenticar o usuário, você pode criar um contexto com base no usuár
 
 [Início rápido da API do Gerenciador de usuários](/help/forms/developing/user-manager-java-api-quick.md#user-manager-java-api-quick-start-soap)
 
-[Criptografar documentos PDF com uma senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
+[Criptografar documentos do PDF com uma senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
 
-### Autentique um usuário usando a API Java {#authenticate-a-user-using-the-java-api}
+### Autenticar um usuário usando a API do Java {#authenticate-a-user-using-the-java-api}
 
 Autentique um usuário usando a API do Serviço do Gerenciador de Autenticação (Java):
 
@@ -810,22 +809,22 @@ Autentique um usuário usando a API do Serviço do Gerenciador de Autenticação
 
 1. Crie um cliente AuthenticationManagerServices.
 
-   Crie um objeto `AuthenticationManagerServiceClient` usando seu construtor e transmitindo um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   Crie um `AuthenticationManagerServiceClient` usando seu construtor e transmitindo um `ServiceClientFactory` objeto que contém propriedades de conexão.
 
 1. Chame a operação de autenticação.
 
-   Chame o método `AuthenticationManagerServiceClient` do objeto `authenticate` e passe os seguintes valores:
+   Chame o `AuthenticationManagerServiceClient` do objeto `authenticate` e transmita os seguintes valores:
 
-   * Um objeto `java.lang.String` que contém o nome do usuário.
-   * Uma matriz de bytes (um objeto `byte[]`) contendo a senha do usuário. Você pode obter o objeto `byte[]` chamando o método `java.lang.String` do objeto `getBytes`.
+   * A `java.lang.String` objeto que contém o nome do usuário.
+   * Uma matriz de bytes (um `byte[]` ) contendo a senha do usuário. Você pode obter a variável `byte[]` chamando o `java.lang.String` do objeto `getBytes` método .
 
-   O método authentication retorna um objeto `AuthResult`, que contém informações sobre o usuário autenticado.
+   O método de autenticação retorna um `AuthResult` objeto , que contém informações sobre o usuário autenticado.
 
 1. Recupere o contexto de autenticação.
 
-   Chame o método `ServiceClientFactory` do objeto `getContext`, que retornará um objeto `Context`.
+   Chame o `ServiceClientFactory` do objeto `getContext` , que retornará um `Context` objeto.
 
-   Em seguida, chame o método `Context` do objeto e passe `AuthResult`.`initPrincipal`
+   Em seguida, chame o `Context` do objeto `initPrincipal` e passe o `AuthResult`.
 
 ### Autenticar um usuário usando a API do serviço da Web {#authenticate-a-user-using-the-web-service-api}
 
@@ -833,28 +832,28 @@ Autentique um usuário usando a API do Serviço do Gerenciador de Autenticação
 
 1. Inclua arquivos de projeto.
 
-   * Crie um assembly de cliente Microsoft .NET que consuma o WSDL do Gerenciador de Autenticação. (Consulte [Chamar AEM Forms usando a codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-   * Faça referência ao assembly do cliente Microsoft .NET. (Consulte &quot;Fazendo referência ao assembly do cliente .NET&quot; em [Chamando o AEM Forms usando a codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Crie um conjunto de clientes Microsoft .NET que consuma o WSDL do Gerenciador de Autenticação. (Consulte [Chamada de AEM Forms usando codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Faça referência ao assembly do cliente Microsoft .NET. (Consulte &quot;Fazendo referência ao assembly do cliente .NET&quot; em [Chamada de AEM Forms usando codificação Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
 1. Crie um cliente AuthenticationManagerService.
 
-   Crie um objeto `AuthenticationManagerServiceService` usando o construtor da classe proxy.
+   Crie um `AuthenticationManagerServiceService` usando o construtor da classe proxy.
 
 1. Chame a operação de autenticação.
 
-   Chame o método `AuthenticationManagerServiceClient` do objeto `authenticate` e passe os seguintes valores:
+   Chame o `AuthenticationManagerServiceClient` do objeto `authenticate` e transmita os seguintes valores:
 
-   * Um objeto `string` que contém o nome do usuário
-   * Uma matriz de bytes (um objeto `byte[]`) contendo a senha do usuário. Você pode obter o objeto `byte[]` convertendo um objeto `string` contendo a senha em uma matriz `byte[]` usando a lógica mostrada no exemplo abaixo.
-   * O valor retornado será um objeto `AuthResult`, que pode ser usado para recuperar informações sobre o usuário. No exemplo abaixo, as informações do usuário são recuperadas obtendo primeiro o campo `AuthResult` do objeto `authenticatedUser` e obtendo subsequentemente os campos `canonicalName` e `domainName` do objeto resultante.`User`
+   * A `string` objeto que contém o nome do usuário
+   * Uma matriz de bytes (um `byte[]` ) contendo a senha do usuário. Você pode obter a variável `byte[]` convertendo um objeto `string` objeto que contém a senha para um `byte[]` usando a lógica mostrada no exemplo abaixo.
+   * O valor retornado será um `AuthResult` objeto , que pode ser usado para recuperar informações sobre o usuário. No exemplo abaixo, as informações do usuário são recuperadas primeiro obtendo o `AuthResult` do objeto `authenticatedUser` e, posteriormente, obter o resultado `User` do objeto `canonicalName` e `domainName` campos.
 
-**Consulte também:**
+**Consulte também**
 
 [Chamar o AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 [Chamar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Sincronizando Usuários Programaticamente {#programmatically-synchronizing-users}
+## Sincronização programática de usuários {#programmatically-synchronizing-users}
 
 Você pode sincronizar usuários por programação usando a API de gerenciamento de usuários. Ao sincronizar usuários, você está atualizando o AEM Forms com dados de usuários localizados no repositório de usuários. Por exemplo, suponha que você adicione novos usuários ao repositório de usuários. Após executar uma operação de sincronização, os novos usuários se tornarão usuários AEM formulários. Além disso, os usuários que não estão mais em seu repositório de usuários são removidos do AEM Forms.
 
@@ -873,7 +872,7 @@ A tabela a seguir descreve as etapas neste diagrama
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Um aplicativo cliente solicita que o AEM Forms execute uma operação de sincronização.</p></td>
   </tr>
   <tr>
@@ -881,7 +880,7 @@ A tabela a seguir descreve as etapas neste diagrama
    <td><p>O AEM Forms executa uma operação de sincronização.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>As informações do usuário são atualizadas.</p></td>
   </tr>
   <tr>
@@ -907,11 +906,11 @@ Inclua os arquivos necessários no seu projeto de desenvolvimento. Se você esti
 
 **Criar um cliente UserManagerUtilServiceClientclient**
 
-Antes de sincronizar programaticamente os usuários, você deve criar um objeto `UserManagerUtilServiceClient`.
+Antes de sincronizar usuários programaticamente, você deve criar um `UserManagerUtilServiceClient` objeto.
 
 **Especificar o domínio empresarial**
 
-Antes de executar uma operação de sincronização usando a API de gerenciamento de usuários, especifique o domínio corporativo ao qual os usuários pertencem. Você pode especificar um ou vários domínios corporativos. Antes de executar uma operação de sincronização programaticamente, é necessário configurar um domínio corporativo usando o Console de Administração. (Consulte [ajuda de administração](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Antes de executar uma operação de sincronização usando a API de gerenciamento de usuários, especifique o domínio corporativo ao qual os usuários pertencem. Você pode especificar um ou vários domínios corporativos. Antes de executar uma operação de sincronização programaticamente, é necessário configurar um domínio corporativo usando o Console de Administração. (Consulte [ajuda administrativa](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 **Chamar a operação de sincronização**
 
@@ -921,7 +920,7 @@ Após especificar um ou mais domínios corporativos, é possível executar a ope
 
 Após executar uma operação de sincronização programaticamente, você pode determinar se a operação foi concluída.
 
-**Consulte também:**
+**Consulte também**
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -929,9 +928,9 @@ Após executar uma operação de sincronização programaticamente, você pode d
 
 [Início rápido da API do Gerenciador de usuários](/help/forms/developing/user-manager-java-api-quick.md#user-manager-java-api-quick-start-soap)
 
-[Criptografar documentos PDF com uma senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
+[Criptografar documentos do PDF com uma senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
 
-### Sincronização programática de usuários usando a API Java {#programmatically-synchronizing-users-using-the-java-api}
+### Sincronização programática de usuários usando a API do Java {#programmatically-synchronizing-users-using-the-java-api}
 
 Sincronize usuários usando a API de gerenciamento de usuários (Java):
 
@@ -941,21 +940,21 @@ Sincronize usuários usando a API de gerenciamento de usuários (Java):
 
 1. Crie um cliente UserManagerUtilServiceClient .
 
-   Crie um objeto `UserManagerUtilServiceClient` usando seu construtor e transmitindo um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   Crie um `UserManagerUtilServiceClient` usando seu construtor e transmitindo um `ServiceClientFactory` objeto que contém propriedades de conexão.
 
 1. Especifique o domínio empresarial.
 
-   * Chame o método `UserManagerUtilServiceClient` do objeto `scheduleSynchronization` para iniciar a operação de sincronização do usuário.
-   * Crie uma instância `java.util.Set` usando um construtor `HashSet`. Certifique-se de especificar `String` como o tipo de dados. Essa instância `Java.util.Set` armazena os nomes de domínio aos quais a operação de sincronização se aplica.
-   * Para cada nome de domínio a ser adicionado, chame o método de adição do objeto `java.util.Set` e passe o nome de domínio.
+   * Chame o `UserManagerUtilServiceClient` do objeto `scheduleSynchronization` para iniciar a operação de sincronização do usuário.
+   * Crie um `java.util.Set` usando uma `HashSet` construtor. Certifique-se de especificar `String` como tipo de dados. Essa `Java.util.Set` A instância armazena os nomes de domínio aos quais a operação de sincronização se aplica.
+   * Para cada nome de domínio a ser adicionado, chame o `java.util.Set` adicione o método do objeto e passe o nome do domínio.
 
 1. Chame a operação de sincronização.
 
-   Chame o método `ServiceClientFactory` do objeto `getContext`, que retornará um objeto `Context`.
+   Chame o `ServiceClientFactory` do objeto `getContext` , que retornará um `Context` objeto.
 
-   Em seguida, chame o método `Context` do objeto e passe `AuthResult`.`initPrincipal`
+   Em seguida, chame o `Context` do objeto `initPrincipal` e passe o `AuthResult`.
 
-**Consulte também:**
+**Consulte também**
 
 [Sincronização programática de usuários](users.md#programmatically-synchronizing-users)
 

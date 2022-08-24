@@ -1,8 +1,8 @@
 ---
 title: Considerações gerais de segurança para AEM Forms no JEE
-seo-title: Considerações gerais de segurança para AEM Forms no JEE
+seo-title: General Security Considerations for AEM Forms on JEE
 description: Saiba como se preparar para endurecer seu AEM Forms no ambiente JEE.
-seo-description: Saiba como se preparar para endurecer seu AEM Forms no ambiente JEE.
+seo-description: Learn how to prepare for hardening your AEM Forms on JEE environment.
 uuid: 4d098731-fc8f-41d7-98b5-5c2e31211614
 content-type: reference
 topic-tags: Security
@@ -11,9 +11,9 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1062'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ Para obter informações de segurança sobre servidores de aplicativos compatív
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p>Procure por Entendendo a segurança do WebLogic em <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
+   <td><p>Procure por Noções básicas sobre a segurança do WebLogic em <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
   </tr>
   <tr>
    <td><p>IBM WebSphere®</p> </td>
@@ -144,12 +144,12 @@ Para obter informações de segurança sobre bancos de dados compatíveis com o 
   </tr>
   <tr>
    <td><p>Oracle® 12c</p> </td>
-   <td><p>Consulte o capítulo Segurança na documentação do <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g</a></p> </td>
+   <td><p>Consulte o capítulo Segurança no <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Documentação do oracle 12g</a></p> </td>
   </tr>
  </tbody>
 </table>
 
-Esta tabela descreve as portas padrão que precisam ser abertas durante o processo de configuração do AEM Forms no JEE. Se estiver se conectando por https, ajuste as informações da porta e os endereços IP de acordo. Para obter mais informações sobre como configurar portas, consulte o documento *Instalando e Implantando AEM Forms no JEE* para seu servidor de aplicativos.
+Esta tabela descreve as portas padrão que precisam ser abertas durante o processo de configuração do AEM Forms no JEE. Se estiver se conectando por https, ajuste as informações da porta e os endereços IP de acordo. Para obter mais informações sobre como configurar portas, consulte o *Instalação e implantação do AEM Forms no JEE* documento para o servidor de aplicativos.
 
 <table>
  <thead>
@@ -212,13 +212,13 @@ O JBoss Application Server usa 8080 como a porta HTTP padrão. O JBoss também t
 
 1. Abra o seguinte arquivo para edição:
 
-   Instalação de um único servidor: [Raiz JBoss]/standalone/configuration/standalone.xml
+   Instalação de um único servidor: [Raiz do JBoss]/standalone/configuration/standalone.xml
 
-   Instalações de cluster: [Raiz JBoss]/domain/configuration/domain.xml
+   Instalações de cluster: [Raiz do JBoss]/domain/configuration/domain.xml
 
-1. Altere o valor do atributo **port** na tag **&lt;socket-binding>** para um número de porta personalizado. Por exemplo, o seguinte usa a porta 8090:
+1. Alterar o valor de **porta** no **&lt;socket-binding>** para um número de porta personalizado. Por exemplo, o seguinte usa a porta 8090:
 
-   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
+   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. Salve e feche o arquivo.
 1. Reinicie o servidor de aplicativos JBoss.
@@ -239,7 +239,7 @@ O AEM Forms no JEE usa o banco de dados AEM Forms no JEE para armazenar informa�
 
 O servidor de aplicativos usado para executar o AEM Forms no JEE requer sua própria configuração para acessar seu banco de dados por meio de uma fonte de dados configurada no servidor de aplicativos. Certifique-se de que o servidor de aplicativos não exponha a senha do banco de dados em texto nítido em seu arquivo de configuração da fonte de dados.
 
-O arquivo lc_[database].xml não deve conter senha no formato de texto limpo. Consulte o fornecedor do servidor de aplicativos sobre como criptografar essas senhas para o servidor de aplicativos.
+O lc_[banco de dados]O arquivo .xml não deve conter senha no formato de texto limpo. Consulte o fornecedor do servidor de aplicativos sobre como criptografar essas senhas para o servidor de aplicativos.
 
 >[!NOTE]
 >

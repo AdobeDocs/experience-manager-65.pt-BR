@@ -1,19 +1,18 @@
 ---
 title: AEM Mobile - Preparação para o GDPR
-seo-title: AEM Mobile - Preparação para o GDPR
+seo-title: AEM Mobile - GDPR Readiness
 description: '"AEM Mobile - Preparação para o GDPR"'
-seo-description: 'null'
+seo-description: null
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
-
 
 # AEM Mobile - Preparação para o GDPR {#aem-mobile-gdpr-readiness}
 
@@ -35,7 +34,7 @@ Para garantir que você não está confundindo o AEM Mobile com o produto Digita
 
 [https://digitalpublishing.acrobat.com/welcome.html](https://digitalpublishing.acrobat.com/welcome.html)
 
-### Iniciando uma solicitação do GDPR {#initiating-a-gdpr-request}
+### Iniciar uma solicitação do GDPR {#initiating-a-gdpr-request}
 
 Entre em contato com o Atendimento ao cliente do Adobe para iniciar uma solicitação de GDPR para o Digital Publishing Suite.
 
@@ -48,12 +47,12 @@ Obrigatório:
 Forneça pelo menos uma das seguintes opções:
 
 * A ID OAuth fornecida pelo cliente final (a ID usada no sistema de direito direto do cliente): *dpsc-directEntitlementId*
-* Para usuários de aplicativos do Windows, a ID da App Store do usuário final: *dpsc-windowsAppStoreId*
+* Para usuários de aplicativos do Windows, a App Store ID do usuário final: *dpsc-windowsAppStoreId*
 * O endereço de email que o usuário final usou para interagir com o aplicativo DPS: *email*
 
 ### Perguntas frequentes {#frequently-asked-questions-faq}
 
-**O Adobe excluirá minhas compras da App Store ao iniciar uma solicitação de DELETE?**
+**O Adobe excluirá minhas compras de App Store ao iniciar uma solicitação de DELETE?**
 
 O Adobe excluirá as informações de compras da App Store (assinaturas, etc.) mas as compras ainda estarão gravadas nas App stores. Se o aplicativo (usuário final) estiver conectado à App Store, esses recebimentos serão coletados novamente e enviados para a Adobe e, subsequentemente, serão considerados novas compras e restaurados pelo aplicativo para terem acesso novamente.
 
@@ -86,10 +85,10 @@ Veja um exemplo das entradas e saídas resultantes de uma solicitação de GDPR 
 #### Entradas: {#inputs}
 
 ```
-dpsc-contractId = “12345-1234-12416234” 
-directEntitlementId = “1234-1234-1234” 
-windowsAppStoreId = “testWinAppStoreId” 
-email = “test@what.com”
+dpsc-contractId = "12345-1234-12416234" 
+directEntitlementId = "1234-1234-1234" 
+windowsAppStoreId = "testWinAppStoreId" 
+email = "test@what.com"
 ```
 
 #### Saídas {#outputs}
@@ -303,4 +302,3 @@ email = “test@what.com”
 
 }
 ```
-

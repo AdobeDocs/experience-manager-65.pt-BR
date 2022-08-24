@@ -1,13 +1,13 @@
 ---
 title: Atualizando certificados de serviço de extensão do Reader expirados
-description: 'Reader estendido documentos não funcionando, atualizar certificados '
-source-git-commit: a26e4fb53458beae9b259e5ee5dc74a95264f9e1
+description: Reader estendido documentos não funcionando, atualizar certificados
+exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1581'
 ht-degree: 0%
 
 ---
-
 
 # Atualizando certificados de serviço de extensão do Reader expirados {#Updating-expired-Reader-Extension-service-certificates}
 
@@ -46,7 +46,7 @@ Se você obteve Extensões do Reader por meio de um parceiro ou provedor de soft
 
 Os seguintes tipos de credenciais de Direitos estão disponíveis:
 
-**Avaliação do cliente**: Uma credencial com um curto período de validade fornecido aos clientes que desejam avaliar as extensões do Reader. Os direitos de uso aplicados a documentos que usam essa credencial expiram quando a credencial expira. Esse tipo de credencial é válida somente por dois a três meses.
+**Avaliação do cliente**: Uma credencial com um curto período de validade fornecido aos clientes que desejam avaliar as extensões do Reader. Os direitos de uso aplicados a documentos que usam essa credencial expiram quando a credencial expira. Esse tipo de credencial é válido apenas por dois a três meses.
 
 **Produção**: Uma credencial com um período de validade longo, fornecida aos clientes que compraram o produto completo. As credenciais de produção são exclusivas para cada cliente, mas podem ser instaladas em vários sistemas.
 
@@ -126,7 +126,7 @@ Para aplicar direitos de uso em um ambiente AEM Forms em OSGi, crie um serviço 
 
 **Com quem devo entrar em contato se tiver perguntas adicionais?**
 
-Você pode entrar em contato [Suporte a Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) ou crie um tíquete de suporte.
+Você pode entrar em contato [Suporte a Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=pt-BR#support) ou crie um tíquete de suporte.
 
 **O que acontece se eu não atualizar meu certificado antes de 7 de janeiro de 2023?**
 
