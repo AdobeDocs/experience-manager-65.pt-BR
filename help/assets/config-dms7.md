@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b14cbc4cad15b06754db8b8c992a596d4d64c096
+source-git-commit: 6c6f67929b774492d8caa052598b8c33e9a41710
 workflow-type: tm+mt
-source-wordcount: '6037'
+source-wordcount: '6253'
 ht-degree: 3%
 
 ---
@@ -86,11 +86,11 @@ Consulte [Instale o feature pack 18912 para migração de ativos em massa](/help
 
 ## Criar uma configuração do Dynamic Media no Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Antes de configurar o Dynamic Media** - Depois de receber seu email de provisionamento com credenciais do Dynamic Media, você deve abrir a [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta para alterar a senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
+<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
-![dynamicmediaconfiguration2atualizado](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**Para criar uma configuração do Dynamic Media no Cloud Services:**
+**To create a Dynamic Media Configuration in Cloud Services:** -->
 
 1. No modo Autor do Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global e selecione o ícone Ferramentas , em seguida, vá para **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração do Dynamic Media]**.
 1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, selecione **[!UICONTROL global]** (não selecione o ícone de pasta à esquerda de **[!UICONTROL global]**) e, em seguida, selecione **[!UICONTROL Criar]**.
@@ -98,8 +98,24 @@ Consulte [Instale o feature pack 18912 para migração de ativos em massa](/help
 
    Selecionar **[!UICONTROL Conectar-se ao Dynamic Media]**.
 
-   >[!NOTE]
-   Depois de receber seu email de provisionamento com credenciais do Dynamic Media, abra o [Aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon em sua conta para alterar a senha. A senha fornecida no email de provisionamento é gerada pelo sistema e deve ser apenas uma senha temporária. É importante atualizar a senha para que o Dynamic Media Cloud Service seja configurado com as credenciais corretas.
+1. No **[!UICONTROL Alterar senha]** na caixa de diálogo , na **[!UICONTROL Nova senha]** digite uma nova senha com 8 a 25 caracteres. A senha deve conter pelo menos uma das seguintes opções:
+
+   * Letra maiúscula
+   * Letra minúscula
+   * Número
+   * Caráter especial: `# $ & . - _ : { }`
+
+   O **[!UICONTROL Senha atual]** é intencionalmente pré-preenchido e oculto da interação.
+
+   Se necessário, você pode verificar a ortografia de uma senha digitada ou digitada novamente selecionando o ícone de olho da senha para revelar a senha. Selecione o ícone novamente para ocultar a senha.
+
+1. No **[!UICONTROL Repetir senha]** , digite novamente a nova senha e selecione **[!UICONTROL Concluído]**.
+
+   A nova senha é salva ao selecionar **[!UICONTROL Salvar]** no canto superior direito do **[!UICONTROL Criar configuração do Dynamic Media]** página.
+
+   Se você selecionou **[!UICONTROL Cancelar]** no **[!UICONTROL Alterar senha]** na caixa de diálogo, ainda é necessário inserir uma nova senha ao salvar a configuração recém-criada do Dynamic Media.
+
+   Consulte também [Alterar a senha para Dynamic Media](#change-dm-password).
 
 1. Quando a conexão for bem-sucedida, defina o seguinte. São necessários títulos com um asterisco (*):
 
@@ -147,6 +163,37 @@ Para marcar uma pasta selecionada para sincronização com o Dynamic Media, sele
 Agora você terminou com a configuração básica; você está pronto para usar o modo Dynamic Media - Scene7.
 
 Se você quiser personalizar ainda mais sua configuração, poderá, opcionalmente, concluir qualquer uma das tarefas em [(Opcional) Definir configurações avançadas no modo Dynamic Media - Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+
+### Alterar a senha para Dynamic Media {#change-dm-password}
+
+A expiração da senha no Dynamic Media é definida como 100 anos a partir da data atual do sistema.
+
+A senha deve conter pelo menos uma das seguintes opções:
+
+* Letra maiúscula
+* Letra minúscula
+* Número
+* Caráter especial: `# $ & . - _ : { }`
+
+Se necessário, você pode verificar a ortografia de uma senha digitada ou digitada novamente selecionando o ícone de olho da senha para revelar a senha. Selecione o ícone novamente para ocultar a senha.
+
+A senha alterada é salva ao selecionar **[!UICONTROL Salvar]** no canto superior direito do **[!UICONTROL Editar configuração do Dynamic Media]** página.
+
+**Para alterar a senha para Dynamic Media:**
+
+1. No modo Autor do Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global.
+1. À esquerda do console, selecione o ícone Ferramentas e vá para **[!UICONTROL Cloud Services] > [!UICONTROL Configuração do Dynamic Media]**.
+1. Na página Navegador de configuração do Dynamic Media, no painel esquerdo, selecione **[!UICONTROL global]**. Não selecione o ícone de pasta à esquerda de **[!UICONTROL global]**. Em seguida, selecione **[!UICONTROL Editar]**.
+1. No **[!UICONTROL Editar configuração do Dynamic Media]** diretamente abaixo da página **[!UICONTROL Senha]** , selecione **[!UICONTROL Alterar senha]**.
+1. No **[!UICONTROL Alterar senha]** , faça o seguinte:
+
+   * No **[!UICONTROL Nova senha]** digite uma nova senha.
+
+      O **[!UICONTROL Senha atual]** é intencionalmente pré-preenchido e oculto da interação.
+
+   * No **[!UICONTROL Repetir senha]** , digite novamente a nova senha e selecione **[!UICONTROL Concluído]**.
+
+1. No canto superior direito do **[!UICONTROL Editar configuração do Dynamic Media]** página, selecione **[!UICONTROL Salvar]**, em seguida selecione **[!UICONTROL OK]**.
 
 ## (Opcional) Definir configurações avançadas no modo Dynamic Media - Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
