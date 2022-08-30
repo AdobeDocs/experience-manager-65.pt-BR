@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '3802'
+source-wordcount: '3803'
 ht-degree: 18%
 
 ---
@@ -33,14 +33,14 @@ A funcionalidade Ativos conectados oferece suporte aos casos de uso acima, integ
 
 Ao editar páginas em [!UICONTROL Editor de páginas] como destino, os autores podem pesquisar, navegar e incorporar facilmente ativos de um [!DNL Assets] implantação que atua como uma fonte de ativos. Os administradores criam uma integração única de uma implantação de [!DNL Experience Manager] com [!DNL Sites] com outra implantação de [!DNL Experience Manager] com [!DNL Assets] capacidade. Os autores do site também podem usar imagens do Dynamic Media nas páginas da Web de seu site por meio do Connected Assets e aproveitar as funcionalidades do Dynamic Media, como recorte inteligente e predefinições de imagens.
 
-Para o [!DNL Sites] autores, os ativos remotos estão disponíveis como ativos locais somente leitura. A funcionalidade suporta pesquisa e acesso ininterruptos a ativos remotos no Editor de sites. Para quaisquer outros casos de uso que possam exigir que o conjunto de ativos completo esteja disponível no Sites, considere migrar os ativos em massa em vez de aproveitar os Ativos conectados. Consulte [Guia de migração do Experience Manager Assets](/help/assets/assets-migration-guide.md).
+Para o [!DNL Sites] autores, os ativos remotos estão disponíveis como ativos locais somente leitura. A funcionalidade suporta pesquisa e acesso ininterruptos a ativos remotos no Editor de sites. Para quaisquer outros casos de uso que possam exigir que o conjunto de ativos completo esteja disponível no Sites, considere migrar os ativos em massa em vez de usar o Connected Assets. Consulte [Guia de migração do Experience Manager Assets](/help/assets/assets-migration-guide.md).
 
 ### Pré-requisitos e implantações compatíveis {#prerequisites}
 
 Antes de usar ou configurar esse recurso, verifique o seguinte:
 
 * Os usuários fazem parte dos grupos de usuários apropriados em cada implantação.
-* Para [!DNL Adobe Experience Manager] tipos de implantação, um dos critérios compatíveis é atendido. [!DNL Experience Manager] 6,5 [!DNL Assets] funciona com [!DNL Experience Manager] as a Cloud Service. Para obter mais informações sobre como essa funcionalidade funciona em [!DNL Experience Manager] como [!DNL Cloud Service], consulte [Ativos conectados no Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* Para [!DNL Adobe Experience Manager] tipos de implantação, um dos critérios compatíveis é atendido. [!DNL Experience Manager] 6,5 [!DNL Assets] funciona com [!DNL Experience Manager] as a Cloud Service. Para obter mais informações sobre como essa funcionalidade funciona em [!DNL Experience Manager] como [!DNL Cloud Service], consulte [Ativos conectados no Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6,5 [!DNL Sites] no AMS | [!DNL Experience Manager] 6,5 [!DNL Sites] no local |
    |---|---|---|---|
@@ -158,7 +158,7 @@ Para usar [!DNL Dynamic Media] com Connected Assets:
 
 Para configurar [!DNL Dynamic Media] on [!DNL Assets] e [!DNL Sites] implantações:
 
-1. Habilitar e configurar [!DNL Dynamic Media] como configuração global no remoto [!DNL Assets] implantação do autor. Para configurar o Dynamic Media, consulte [Configurar o Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).<br/>
+1. Habilitar e configurar [!DNL Dynamic Media] como configuração global no remoto [!DNL Assets] implantação do autor. Para configurar o Dynamic Media, consulte [Configurar o Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
 No remoto [!DNL Assets] implantação, em [!UICONTROL Modo de sincronização Dynamic Media], selecione **[!UICONTROL Ativado por padrão]**.
 
 1. Criar configuração do Connected Assets conforme descrito em [Configurar a conexão entre sites e implantações de ativos](#configure-a-connection-between-sites-and-assets-deployments). Além disso, selecione **[!UICONTROL Buscar representação original dos ativos conectados da Dynamic Media]** opção.
@@ -169,7 +169,7 @@ No remoto [!DNL Assets] implantação, em [!UICONTROL Modo de sincronização Dy
    * No local [!DNL Sites], em [!UICONTROL Modo de sincronização Dynamic Media], selecione **[!UICONTROL Desabilitado por padrão]**. O [!DNL Sites] a implantação deve ter acesso somente leitura ao [!DNL Dynamic Media] conta.
    * No local [!DNL Sites]no **[!UICONTROL Publicar ativos]** , selecione **[!UICONTROL Publicação seletiva]**. Não selecionar **[!UICONTROL Sincronizar todo o conteúdo]**.
 
-1. Habilitar [[!DNL Dynamic Media] suporte no Componente principal de imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Esse recurso ativa o padrão [Componente de imagem](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) para exibir [!DNL Dynamic Media] imagens ao [!DNL Dynamic Media] imagens são usadas por autores em páginas da Web locais [!DNL Sites] implantação.
+1. Habilitar [[!DNL Dynamic Media] suporte no Componente principal de imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Esse recurso ativa o padrão [Componente de imagem](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) para exibir [!DNL Dynamic Media] imagens ao [!DNL Dynamic Media] imagens são usadas por autores em páginas da Web locais [!DNL Sites] implantação.
 
 ## Use ativos remotos {#use-remote-assets}
 

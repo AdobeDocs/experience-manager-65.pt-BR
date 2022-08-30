@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: 35639a818f58923ae9ad099752d359e7795be60b
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '2741'
+source-wordcount: '2753'
 ht-degree: 0%
 
 ---
@@ -222,7 +222,7 @@ XMP write-back atualiza o ativo original sempre que os metadados são modificado
 * Uma versão do ativo é criada
 * [!UICONTROL Ativo de atualização DAM] é executado em relação ao ativo
 
-Os resultados listados consomem recursos consideráveis. Portanto, o Adobe recomenda [desabilitando XMP Writeback](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html), se não for obrigatório.
+Os resultados listados consomem recursos consideráveis. Portanto, o Adobe recomenda desativar XMP write-back se não for necessário. Para obter mais informações, consulte [Writeback XMP](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp-writeback.html).
 
 Importar uma grande quantidade de metadados pode resultar em atividade de write-back de XMP que consome muitos recursos se o sinalizador de workflows de execução estiver marcado. Planeje essa importação durante o uso do servidor simplificado para que o desempenho para outros usuários não seja afetado.
 
@@ -242,7 +242,7 @@ Ao replicar ativos para um grande número de instâncias de publicação, por ex
 
 ## Índices de pesquisa {#search-indexes}
 
-Instalar [os Service Packs mais recentes](/help/release-notes/release-notes.md) e hotfixes relacionados ao desempenho, pois frequentemente incluem atualizações nos índices do sistema. Consulte [dicas de ajuste de desempenho](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) para algumas otimizações de índice.
+Instalar [os Service Packs mais recentes](/help/release-notes/release-notes.md) e hotfixes relacionados ao desempenho, pois frequentemente incluem atualizações nos índices do sistema. Consulte [dicas de ajuste de desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html?lang=en) para algumas otimizações de índice.
 
 Crie índices personalizados para consultas executadas com frequência. Para obter detalhes, consulte [metodologia para analisar consultas lentas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [criação de índices personalizados](/help/sites-deploying/queries-and-indexing.md). Para obter informações adicionais sobre as práticas recomendadas de consulta e índice, consulte [Práticas recomendadas para consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
