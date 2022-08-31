@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: de7b1d2d0f3863f9554b346204c18cc57d4bf814
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '7575'
 ht-degree: 0%
@@ -442,9 +442,9 @@ A etapa Gerar saída impressa tem as seguintes propriedades:
 * **[!UICONTROL Selecione o arquivo XCI usando]**: Os arquivos XCI são usados para descrever fontes e outras propriedades usadas para elementos de design de formulário. Você pode manter um arquivo XCI relativo à carga, em um caminho absoluto ou usando uma variável do tipo de dados Document .
 
 * **[!UICONTROL Localidade]**: Especifica o idioma usado para gerar o documento PDF. Se você fornecer um valor literal, selecione um idioma na lista ou selecione um destes valores:
-   * **Para usar o padrão do servidor**: (Padrão) Use a configuração Local definida no AEM Forms Server. A configuração Local é configurada usando o Console de administração. (Consulte [Ajuda do Designer](http://www.adobe.com/go/learn_aemforms_designer_65).)
+   * **Para usar o padrão do servidor**: (Padrão) Use a configuração Local definida no AEM Forms Server. A configuração Local é configurada usando o Console de administração. (Consulte [Ajuda do Designer](https://www.adobe.com/go/learn_aemforms_designer_65).)
 
-   * **Para usar um valor personalizado**: Digite o Código de localidade na caixa literal ou selecione uma variável de string que contenha o código de localidade. Para obter uma lista completa dos códigos de localidade compatíveis, consulte http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+   * **Para usar um valor personalizado**: Digite o Código de localidade na caixa literal ou selecione uma variável de string que contenha o código de localidade. Para obter uma lista completa dos códigos de localidade compatíveis, consulte https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Cópias]**: Um valor inteiro que especifica o número de cópias a serem geradas para a saída. O valor padrão é 1.
 

@@ -2,7 +2,7 @@
 title: Criação de conteúdo acessível para o Adobe Experience Manager (Conformidade com o WCAG 2.1)
 description: Use AEM para ajudar a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '13956'
 ht-degree: 99%
@@ -563,7 +563,7 @@ Verifique se o texto contrasta o suficiente com o plano de fundo. As relações 
 >
 >* [Px to Em Calculater - Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: PX to EM conversion made simple](http://pxtoem.com)
+>* [PMtoEM.com: PX to EM conversion made simple](https://pxtoem.com)
 
 
 Para verificar as relações de contraste, use uma ferramenta de contraste em cores, como o [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) ou o [verificador de contraste em cores do WebAIM](https://www.webaim.org/resources/contrastchecker/). Essas ferramentas permitem que você verifique os pares de cores e informe quaisquer problemas de contraste.

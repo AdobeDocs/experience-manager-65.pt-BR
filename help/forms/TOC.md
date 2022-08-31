@@ -8,10 +8,10 @@ user-guide-title: Guia do Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
-source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '3778'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -64,24 +64,24 @@ ht-degree: 5%
       + [Instalar e configurar o serviço do Automated forms conversion](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + Instalar o AEM Forms no JEE {#jee-installation}
       + [Plataformas compatíveis para formulários AEM no JEE](using/aem-forms-jee-supported-platforms.md)
-      + [Instalação e implantação do AEM Forms no JEE usando o JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
+      + [Instalação e implantação do AEM Forms no JEE usando o JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)
       + [Instalar e configurar o servidor de segurança de documentos do AEM Forms](using/installing-and-configuring-the-document-security-server.md)
-      + [Preparação para instalar o AEM Forms (Servidor único)](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
-      + [Instalação e implantação do Adobe Experience Manager Forms no JEE para JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
-      + [Instalação e implantação de formulários Adobe Experience Manager no JEE para WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
-      + [Instalação e implantação do AEM Forms no JEE para WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_65)
+      + [Preparação para instalar o AEM Forms (Servidor único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
+      + [Instalação e implantação do Adobe Experience Manager Forms no JEE para JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+      + [Instalação e implantação de formulários Adobe Experience Manager no JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+      + [Instalação e implantação do AEM Forms no JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
       + [Instalar o AEM Forms Workbench](using/install-workbench.md)
       + [Instalar e configurar o Designer](using/installing-configuring-designer.md)
-      + [Preparando para instalar o AEM Forms (Cluster do Servidor)](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
-      + [Configuração do Adobe Experience Manager Forms no JEE no cluster JBoss](http://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
-      + [Configurando o Adobe Experience Manager Forms no JEE no Cluster do WebSphere](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
-      + [Configuração do Adobe Experience Manager Forms no JEE no Cluster do WebLogic](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
+      + [Preparando para instalar o AEM Forms (Cluster do Servidor)](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
+      + [Configuração do Adobe Experience Manager Forms no JEE no cluster JBoss](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
+      + [Configurando o Adobe Experience Manager Forms no JEE no Cluster do WebSphere](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
+      + [Configuração do Adobe Experience Manager Forms no JEE no Cluster do WebLogic](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
    + Configurar AEM Forms {#configure-aem-forms}
       + [Ajuste de desempenho do servidor do AEM Forms](using/performance-tuning-aem-forms.md)
       + [Configurar o cache de formulários adaptáveis](using/configure-adaptive-forms-cache.md)
       + [Definir configurações AEM DS](using/configuring-the-processing-server-url-.md)
       + [Configurar o agendador de sincronização](using/configure-synchronization-scheduler.md)
-      + [Configuração do conector para o Microsoft SharePoint](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
+      + [Configuração do conector para o Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
       + [Conectar o AEM Forms com o LiveCycle Adobe](using/aem-livecycle-connector.md)
       + [Configuração do AEM Forms para enviar dados de formulário para uma AEM Forms no processo JEE](using/submit-form-data-livecycle-process.md)
       + [AEM aplicativo de desktop para AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
@@ -92,13 +92,13 @@ ht-degree: 5%
       + [Instalar Pacote de Compatibilidade](using/compatibility-package.md)
       + [Migrar ativos e documentos do AEM Forms](using/migration-utility.md)
    + Atualizar o AEM Forms no JEE {#aem-forms-jee-upgrade}
-      + [Preparação para atualizar o AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
-      + [Lista de verificação e planejamento de atualização do Adobe Experience Manager Forms no JEE](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)
+      + [Preparação para atualizar o AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
+      + [Lista de verificação e planejamento de atualização do Adobe Experience Manager Forms no JEE](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)
       + [Atualizar para AEM formulários 6.5 no JEE](using/upgrade-forms-jee.md)
-      + [Atualização para o Adobe Experience Manager Forms no JEE para JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
-      + [Atualização para o AEM Forms no JEE para JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
-      + [Atualização para o Adobe Experience Manager Forms no JEE para WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
-      + [Atualização para o Adobe Experience Manager Forms no JEE para WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
+      + [Atualização para o Adobe Experience Manager Forms no JEE para JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
+      + [Atualização para o AEM Forms no JEE para JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
+      + [Atualização para o Adobe Experience Manager Forms no JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
+      + [Atualização para o Adobe Experience Manager Forms no JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
 + Gerenciar o AEM Forms {#manage-administer-aem-forms}
    + [AEM Forms em grupos e privilégios OSGi](using/forms-groups-privileges-tasks.md)
    + [Criar novas pastas para categorizar formulários](using/creating-new-folders-categorize-forms.md)
@@ -371,12 +371,12 @@ ht-degree: 5%
    + [Protect um documento em nome de outro usuário](using/protect-document-on-behalf-of-another-user.md)
 + Designer do Forms {#use-forms-designer}
    + [Ajuda do Forms Designer](using/forms-designer-help.md)
-   + [Uso do Designer](http://www.adobe.com/go/learn_aemforms_designer_65)
-   + [Tutoriais de início rápido do Designer ](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-   + [Amostras do Designer ](http://www.adobe.com/go/learn_aemforms_designer_samples_65)
-   + [Informações básicas sobre script do Designer ](http://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
-   + [Referência de scripts do Designer ](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
-   + [Referência do FormCalc do Designer ](http://www.adobe.com/go/learn_aemforms_formCalc_65)
+   + [Uso do Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
+   + [Tutoriais de início rápido do Designer ](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+   + [Amostras do Designer ](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
+   + [Informações básicas sobre script do Designer ](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
+   + [Referência de scripts do Designer ](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+   + [Referência do FormCalc do Designer ](https://www.adobe.com/go/learn_aemforms_formCalc_65)
    + [Uso de assinaturas do Scribble em formulários HTML5](using/scribble-signature.md)
    + [Alteração do conteúdo zero da página no Designer](using/changing-page-zero-content-designer.md)
 + Personalizar o AEM Forms {#customize-aem-forms}
@@ -583,8 +583,8 @@ ht-degree: 5%
    + [Referência da API do AEM Forms no JEE Java](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
    + [APIs Form Bridge para formulários HTML5](using/form-bridge-apis.md)
    + [Referência da API da biblioteca JavaScript para Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
-   + [Serviço de Assembler e Referência DDX](http://www.adobe.com/go/learn_aemforms_ddxRef_65)
-   + [Ajuda do Workbench](http://www.adobe.com/go/learn_aemforms_workbench_65)
+   + [Serviço de Assembler e Referência DDX](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
+   + [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65)
    + Programação com o AEM Forms no JEE {#programming-aem-forms-jee}
       + Introdução à programação com o AEM Forms no JEE {#introduction-programming-aem-forms-jee}
          + [Introdução ao Java API QuickStart](developing/introducing-java-api-soap-quick.md)

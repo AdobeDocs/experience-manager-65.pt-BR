@@ -5,7 +5,7 @@ contentOwner: AG
 role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1758'
 ht-degree: 2%
@@ -70,7 +70,7 @@ Pastas são como diretórios em sistemas de arquivos tradicionais. São contêin
 * `parent`: Link para a pasta principal.
 * `thumbnail`: (Opcional) link para uma imagem em miniatura de pasta.
 
-### Ativos {#assets}
+### Assets {#assets}
 
 No Experience Manager, um ativo contém os seguintes elementos:
 
@@ -289,7 +289,7 @@ Move uma pasta ou um ativo no caminho especificado para um novo destino.
 Não utilizar `/content/dam` no URL. Um exemplo de comando para mover ativos e substituir ativos existentes é:
 
 ```shell
-curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
+curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: https://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
 ```
 
 **Códigos de resposta**: Os códigos de resposta são:

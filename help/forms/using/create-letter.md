@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '3982'
 ht-degree: 2%
@@ -230,7 +230,7 @@ Primeiro, você precisa do seguinte em vigor para criar uma correspondência:
 
 * [Pacote de Compatibilidade](compatibility-package.md). Instale o Pacote de Compatibilidade para visualizar o **Letras** na **Forms** página.
 * A letra XDP ([layout](/help/forms/using/document-fragments.md)).
-* Outros XDPs ([fragmentos de layout](document-fragments.md#document-fragments)) que formam partes da carta. Os XDPs\Layouts são criados em [Designer](http://www.adobe.com/go/learn_aemforms_designer_65).
+* Outros XDPs ([fragmentos de layout](document-fragments.md#document-fragments)) que formam partes da carta. Os XDPs\Layouts são criados em [Designer](https://www.adobe.com/go/learn_aemforms_designer_65).
 * Os [dicionário de dados](/help/forms/using/data-dictionary.md) (Opcional).
 * O [módulos de dados](/help/forms/using/document-fragments.md) deseja usar na correspondência.
 * [Testar dados](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) é o arquivo XML com os dados de teste inseridos nele. Os dados de teste são necessários se você estiver usando um dicionário de dados.

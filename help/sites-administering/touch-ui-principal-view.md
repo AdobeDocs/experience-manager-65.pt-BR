@@ -11,7 +11,7 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 4ea49fe6745b23f01f46edfe07ff3dd8c8299729
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -28,7 +28,7 @@ O AEM 6.5 apresenta o Gerenciamento de permissões para usuários e grupos. A fu
 
 ### Acesso à interface do usuário {#accessing-the-ui}
 
-O novo gerenciamento de permissões baseado na interface do usuário é acessado pelo cartão de Permissões em Segurança, como mostrado abaixo:
+O novo gerenciamento de permissões baseado na interface do usuário é acessado pelo cartão Permissões em Segurança, como mostrado abaixo:
 
 ![](assets/screen_shot_2019-03-17at63333pm.png)
 
@@ -88,7 +88,7 @@ Além da lista de privilégios e do Tipo de permissão em um determinado caminho
 
 >[!NOTE]
 >
->Para obter mais informações sobre o que cada restrição significa, consulte [Documentação do Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>Para obter mais informações sobre o que cada restrição significa, consulte [Documentação do Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
 As restrições podem ser adicionadas, conforme mostrado abaixo, escolhendo o tipo de restrição, inserindo o valor e pressionando o **+** ícone .
 

@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 1%
@@ -143,9 +143,9 @@ Em essência, o JCR é um sistema de nós e propriedades, em que os nós podem h
 
 O JCR tem vários tipos de nó predefinidos e tipos de propriedade, mas em geral o sistema de digitação é bastante flexível e (na verdade) uma das forças do JCR é que ele permite que conteúdo estruturado e não estruturado sejam armazenados/gerenciados com igual facilidade. Ou seja, o JCR pode acomodar dados altamente estruturados, mas também pode acomodar estruturas de dados dinâmicos arbitrárias sem restrições de esquema.
 
-O JavaDoc para a API Java do JCR é [here](http://jackrabbit.apache.org/jcr/jcr-api.html).
+O JavaDoc para a API Java do JCR é [here](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
-Antes de tentar ler a especificação do JavaDoc ou do JCR propriamente dito, você pode consultar [esta explicação de alto nível](/help/sites-developing/the-basics.md#java-content-repository) do JCR conforme implementado pelo Adobe Experience Services.
+Antes de tentar ler a especificação do JavaDoc ou do JCR propriamente dito, verifique [esta explicação de alto nível](/help/sites-developing/the-basics.md#java-content-repository) do JCR conforme implementado pelo Adobe Experience Services.
 
 **Multi-Site Manager (MSM)** - O recurso MSM do AEM ajuda os clientes a lidar com conteúdo multilíngue multinacional, permitindo que eles equilibrem a marca centralizada com conteúdo localizado.
 

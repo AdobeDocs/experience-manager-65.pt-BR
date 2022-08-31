@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2244'
 ht-degree: 0%
@@ -36,11 +36,11 @@ Os recursos nesta tabela podem ajudá-lo a saber mais e começar a usar o AEM Fo
   </tr>
   <tr>
    <td><p>Informações gerais sobre o AEM Forms e como ele se integra a outros produtos do Adobe</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">Visão geral da AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">Visão geral da AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Toda a documentação disponível para o AEM Forms</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">Documentação do AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">Documentação do AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Atualizações de patches, notas técnicas e informações adicionais sobre esta versão do produto</p> </td>
@@ -98,7 +98,7 @@ Recomenda-se, no mínimo, os seguintes requisitos: Espaço em disco para instala
 
 ### Plataformas compatíveis {#supported-platforms}
 
-Consulte a lista completa de plataformas compatíveis para o Workbench em [Plataformas compatíveis com a AEM Forms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
+Consulte a lista completa de plataformas compatíveis para o Workbench em [Plataformas compatíveis com a AEM Forms](https://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Considerações sobre a instalação do Designer {#designer-installation-considerations}
 
@@ -173,7 +173,7 @@ Antes de instalar o Workbench, é necessário garantir que seu ambiente inclua o
 1. Os seguintes itens foram instalados no computador:
    * **Workbench**: Para executar o Workbench a partir do menu Iniciar, selecione Todos os programas > AEM Forms > Workbench, se optar por armazenar a pasta de atalho lá. Para obter informações, consulte o <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Uso do Workbench</a> documentação.
    * **Designer**: Você pode acessar o Designer no Workbench. Para obter informações, consulte o tópico Introdução em <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Ajuda do Designer</a>.
-   * **AEM Forms SDK**: Para obter mais informações sobre como usar o SDK, consulte <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programação com o AEM Forms</a>.
+   * **AEM Forms SDK**: Para obter mais informações sobre como usar o SDK, consulte <a href="https://www.adobe.com/go/learn_aemforms_programming_65">Programação com o AEM Forms</a>.
 
 ## Atualização de processos {#upgrading-processes}
 
@@ -232,7 +232,7 @@ Quando o gerador ou a saída do Forms procura ou atualiza entradas no cache de u
 * **UUID do modelo**: O Designer insere em cada modelo um identificador exclusivo (UUID) para o formulário e sua versão. Cada vez que o formulário é atualizado, a UUID incorporada é atualizada. Por exemplo, um modelo XDP pode mostrar o seguinte conteúdo:
 
    `<?xml version="1.0" encoding="UTF-8"?>`
-   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">`
+   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
 
 * **Opções de renderização**: No cache de formulário renderizado, o conteúdo do cache é armazenado separadamente para cada conjunto de opções de renderização exclusivas.
 

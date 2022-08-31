@@ -1,7 +1,8 @@
 ---
 title: Como transmitir credenciais usando cabeçalhos WS-security?
 description: Saiba como transmitir credenciais usando cabeçalhos WS-security
-source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
+exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -127,7 +128,7 @@ O arquivo component.xml é mostrado aqui:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<component xmlns="http://adobe.com/idp/dsc/component/document">
+<component xmlns="https://adobe.com/idp/dsc/component/document">
 <!-- Unique id identifying this component -->
    <component-id>ZipService</component-id>
 
@@ -214,11 +215,8 @@ Você pode usar esse Serviço ZIP nos seguintes casos de uso:
 
 * Forneça um arquivo ZIP contendo vários documentos PDF que podem ser estendidos pelo leitor após descompactá-los. Isso requer o módulo AEM Forms no JEE Reader Extensions .
 
-* Forneça um arquivo ZIP contendo um tipo heterogêneo de documento que pode ser descompactado e convertido como documento PDF usando o serviço Gerar PDF.
+* Forneça um arquivo ZIP contendo o tipo heterogêneo de documento que pode ser descompactado e convertido como documento PDF usando o serviço Gerar PDF.
 
 * A política protege uma lista de documentos e retorna como um arquivo ZIP.
 
 * Permita que os usuários baixem todos os anexos de uma instância de processo como um único arquivo ZIP.
-
-
-
