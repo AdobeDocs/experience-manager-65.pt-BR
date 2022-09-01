@@ -9,11 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
-exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
 source-wordcount: '1544'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -35,32 +34,32 @@ Antes de começar a criar e analisar testes A/B para formulários adaptáveis, �
 
 Para integrar o AEM com o Target, verifique se você tem uma conta Adobe Target válida. Ao se registrar no Adobe Target, você recebe um código de cliente. Você precisa do código de cliente, email associado à conta do Target e senha para se conectar AEM com o Target.
 
-O Código do cliente identifica a conta do cliente do Adobe Target e é usado como um subdomínio no URL ao chamar o servidor do Adobe Target. Antes de continuar, faça logon em [https://experience.adobe.com/](https://experience.adobe.com/) e, se você tiver acesso, visualize a opção [!DNL Adobe Target] na seção [!UICONTROL Acesso rápido].
+O Código do cliente identifica a conta do cliente do Adobe Target e é usado como um subdomínio no URL ao chamar o servidor do Adobe Target. Antes de continuar, faça logon no [https://experience.adobe.com/](https://experience.adobe.com/) e, se você tiver acesso, visualize o [!DNL Adobe Target] na [!UICONTROL Acesso rápido] seção.
 
 ### Integração do Target ao AEM Forms {#integrate-target-in-aem-forms}
 
 Execute as seguintes etapas para integrar um servidor Target em execução com o AEM Forms:
 
-1. No servidor AEM, vá para https://*hostname*>:&lt;*port*>/libs/cq/core/content/tools/cloudservices.html.
+1. No servidor AEM, acesse https://&lt;*hostname*>:&lt;*porta*>/libs/cq/core/content/tools/cloudservices.html.
 
-1. Na seção **Adobe Target**, clique em **Mostrar configurações** e, em seguida, no ícone **+** para adicionar uma nova configuração.
-Se você estiver configurando o target pela primeira vez, clique em **Configurar agora.**
+1. No **Adobe Target** seção , clique em **Mostrar configurações** e depois a **+** para adicionar uma nova configuração.
+Se você estiver configurando o target pela primeira vez, clique em **Configure agora.**
 
-1. Na caixa de diálogo Criar configuração, especifique um **Título** e, opcionalmente, um **Nome** para a configuração.
+1. Na caixa de diálogo Criar configuração , especifique um **Título** e opcionalmente **Nome** para a configuração.
 
 1. Clique em **Criar**. A caixa de diálogo Editar componente é aberta.
 1. Especifique os detalhes da conta do Target, como código de cliente, email e senha.
-1. Selecione **Rest** na lista suspensa Tipo de API .
+1. Selecionar **Rest** na lista suspensa Tipo de API .
 
-1. Clique em **Conectar-se ao Adobe Target** para inicializar a conexão com o Target. Se a conexão for bem-sucedida, será exibida a mensagem Connection successful (Conexão bem-sucedida). Clique em **OK** na mensagem e em **OK** na caixa de diálogo. A conta do Target está configurada.
+1. Clique em **Conectar-se ao Adobe Target** para inicializar a conexão com o Target. Se a conexão for bem-sucedida, a mensagem Conexão bem-sucedida será exibida. Clique em **OK** na mensagem e, em seguida, em **OK** na caixa de diálogo. A conta do Target está configurada.
 
 1. Crie uma estrutura do Target conforme descrito em [Adicionar uma estrutura](/help/sites-administering/target.md).
 
-1. Vá para https://&lt;*hostname*:&lt;*port*>/system/console/configMgr.
+1. Vá para https://&lt;*hostname*>:&lt;*porta*>/system/console/configMgr.
 
 1. Clique em **Configuração do AEM Forms Target**.
 1. Selecione um **Estrutura do Target**.
-1. No campo **URLs do Target** , especifique todos os URLs nos quais os testes A/B serão executados. Por exemplo, https://&lt;*hostname*:&lt;*port*>/ para servidor AEM Forms em OSGi ou https://&lt;*hostname*>:&lt;*port*>/lc/ para servidor AEM Forms no JEE.
+1. No **URLs do Target** , especifique todos os URLs nos quais os testes A/B serão executados. Por exemplo, https://&lt;*hostname*>:&lt;*porta*>/ para servidor AEM Forms em OSGi ou https://&lt;*hostname*>:&lt;*porta*>/lc/ para servidor AEM Forms no JEE.
 Considere que você deseja configurar um URL do Target para uma instância de publicação e seus clientes podem acessá-lo usando o nome do host ou o endereço IP, será necessário configurar ambos como URLs do Target - usando o nome do host e o endereço IP. Se você configurar apenas um dos URLs, o teste A/B não será executado para clientes que vêm do outro URL. Clique em **+** para especificar vários URLs.
 
 1. Clique em **Salvar**.
@@ -71,7 +70,7 @@ Se você tiver uma licença completa para utilizar o Adobe Target, inicie o serv
 
 `parameter -Dabtesting.enabled=true java -Xmx2048m -XX:MaxPermSize=512M -jar -Dabtesting.enabled=true`
 
-Se a instância AEM estiver em execução no JBoss, iniciada como um serviço de turnkey, no arquivo `jboss\bin\standalone.conf.bat`, adicione o parâmetro -Dabtesting.enabled=true na seguinte entrada:
+Se a instância do AEM estiver em execução no JBoss, iniciada como um serviço de turnkey, em `jboss\bin\standalone.conf.bat` , adicione o parâmetro -Dabtesting.enabled=true na seguinte entrada:
 
 `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
@@ -91,9 +90,9 @@ AEM permite criar um público-alvo e usá-lo para um teste A/B. O público-alvo 
 1. Na caixa de diálogo Configuração do Adobe Target, selecione uma configuração do Target e clique em **Ok**.
 1. Na página Criar novo público-alvo , crie regras. As regras permitem categorizar o público-alvo. Por exemplo, você deseja categorizar os públicos-alvo com base no sistema operacional. Seu público-alvo A vem do Windows e o público-alvo B vem do Linux.
 
-   1. Para categorizar o público-alvo com base no Windows, na Regra 1, selecione o tipo de atributo **OS**. Na lista suspensa Quando , selecione **Windows.**
+   1. Para categorizar o público-alvo com base no Windows, na Regra 1, selecione **SO** tipo de atributo. Na lista suspensa Quando , selecione **Windows.**
 
-   1. Para categorizar o público-alvo com base no Linux, na Regra nº 2, selecione o tipo de atributo **OS**. No menu suspenso **When**, selecione **Linux** e clique em **Next**.
+   1. Para categorizar o público-alvo com base no Linux, na Regra 2, selecione **SO** tipo de atributo. No **When** , selecione **Linux** e clique em **Próximo**.
 
 1. Especifique um nome para o público-alvo criado e clique em **Salvar**.
 
@@ -103,10 +102,10 @@ Você pode selecionar o público-alvo ao configurar o teste A/B para um formulá
 
 Execute as etapas a seguir para criar um teste A/B para um formulário adaptável.
 
-1. Vá para **Forms &amp; Documents** em https://&lt;*hostname*>:&lt;*port*>/aem/forms.html/content/dam/formsanddocuments.
+1. Ir para **Forms &amp; Documents** em https://&lt;*hostname*>:&lt;*porta*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Navegue até a pasta que contém o formulário adaptável.
-1. Clique na ferramenta **Selecione** na barra de ferramentas e selecione o formulário adaptável.
+1. Clique no botão **Selecionar** na barra de ferramentas e selecione o formulário adaptável.
 1. Clique em **Mais** na barra de ferramentas e selecione **Configurar testes A/B**. A página Configurar teste A/B é aberta.
 
 [ ](assets/ab-test-configure-1.png)
@@ -115,7 +114,7 @@ Execute as etapas a seguir para criar um teste A/B para um formulário adaptáve
 
 1. Na lista suspensa Público-alvo , selecione um público-alvo para o qual deseja fornecer diferentes experiências do formulário. Por exemplo, **Visitantes usando o Chrome**. A lista de públicos-alvo é preenchida no servidor do Target configurado.
 
-1. Nos campos **Experience Distribution** das experiências A e B, especifique a distribuição, em termos de porcentagem, para determinar a distribuição de experiências entre o público-alvo total. Por exemplo, se você especificar 40, 60 para as experiências A e B, respectivamente, a experiência A será veiculada em 40% do público-alvo e os 60% restantes verão a experiência B.
+1. No **Distribuição de experiência** para as experiências A e B, especifique a distribuição, em termos de porcentagem, para determinar a distribuição de experiências entre o público-alvo total. Por exemplo, se você especificar 40, 60 para as experiências A e B, respectivamente, a experiência A será veiculada em 40% do público-alvo e os 60% restantes verão a experiência B.
 1. Clique em **Configurar**. Uma caixa de diálogo é exibida para confirmar a criação do teste A/B.
 1. Clique em **Editar Experiência B** para abrir o formulário adaptável no modo de edição. Modifique o formulário para criar uma experiência diferente da experiência padrão A. As possíveis variações permitidas na Experiência B são alterações em:
 
@@ -128,7 +127,7 @@ Execute as etapas a seguir para criar um teste A/B para um formulário adaptáve
    * Validações (cliente e servidor)
    * Tema para a experiência B. (Você pode selecionar um tema alternativo para a experiência B)
 
-1. Vá para a interface Forms e Documentos, selecione o formulário adaptável, clique em **Mais** e selecione **Iniciar testes A/B**.
+1. Vá para a interface do usuário Forms e Documents , selecione o formulário adaptável e clique em **Mais** e selecione **Iniciar testes A/B**.
 
 Agora, o teste A/B está em execução e o público-alvo especificado será fornecido aleatoriamente às experiências com base na distribuição especificada.
 
@@ -138,7 +137,7 @@ Você pode atualizar as distribuições de público-alvo e experiência de um te
 
 1. Na interface do usuário de Forms e documentos, navegue até a pasta que contém o formulário adaptável no qual o teste A/B está sendo executado.
 1. Selecione o formulário adaptável.
-1. Clique em **Mais** e selecione **Editar teste A/B**. A página Atualizar teste A/B é aberta.
+1. Clique em **Mais** e depois selecione **Editar teste A/B**. A página Atualizar teste A/B é aberta.
 
 1. Atualize as distribuições de público-alvo e experiência, conforme necessário.
 1. Clique em **Atualizar**.
@@ -147,12 +146,12 @@ Você pode atualizar as distribuições de público-alvo e experiência de um te
 
 Depois de permitir que o teste A/B seja executado durante o período desejado, você pode gerar um relatório e verificar qual experiência resultou em uma melhor conversão. Você pode declarar a experiência de melhor desempenho um vencedor ou optar por executar outro teste A/B. Para fazer isso, execute as seguintes etapas:
 
-1. Selecione o formulário adaptável, clique em **Mais** e clique em **Relatório de Teste A/B**. O relatório é exibido.
+1. Selecione o formulário adaptável e clique em **Mais** e, em seguida, clique em **Relatório de testes A/B**. O relatório é exibido.
 
 [ ](assets/ab-test-report-3.png)
 
 1. Analise o relatório e veja se você tem pontos de dados suficientes para declarar uma das experiências de melhor desempenho como vencedora. Você pode optar por continuar com o mesmo teste A/B por mais tempo ou declarar um vencedor e encerrar o teste A/B.
-1. Para declarar um vencedor e encerrar o teste A/B, clique no botão **End A/B test** no painel de relatórios. Uma caixa de diálogo solicita que você declare uma das duas experiências como vencedora. Escolha um vencedor e confirme para encerrar o teste A/B.
-Como alternativa, você pode primeiro declarar um vencedor clicando no botão **Declarar vencedor** para a respectiva experiência. Ele solicita que você confirme o vencedor. Clique em **Yes** para encerrar o teste A/B.
+1. Para declarar um vencedor e encerrar o teste A/B, clique em **Teste A/B final** no painel de relatórios. Uma caixa de diálogo solicita que você declare uma das duas experiências como vencedora. Escolha um vencedor e confirme para encerrar o teste A/B.
+Como alternativa, você pode primeiro declarar um vencedor clicando no link **Declarar vencedor** para a respectiva experiência. Ele solicita que você confirme o vencedor. Clique em **Sim** para encerrar o teste A/B.
 
 Se você escolheu a experiência A como vencedora, o teste A/B será encerrado e, daqui para frente, somente a Experiência A será veiculada para todos os públicos.

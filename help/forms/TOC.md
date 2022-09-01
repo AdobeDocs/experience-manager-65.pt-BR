@@ -8,10 +8,10 @@ user-guide-title: Guia do Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
-source-wordcount: '3778'
-ht-degree: 4%
+source-wordcount: '3801'
+ht-degree: 5%
 
 ---
 
@@ -122,6 +122,7 @@ ht-degree: 4%
       + [Considerações gerais de segurança para AEM Forms no JEE](using/general-security-considerations.md)
       + [Otimizar sua AEM Forms no ambiente JEE](using/hardening-aem-forms-jee-environment.md)
       + [Definição das configurações de administração segura para AEM Forms no JEE](using/configuring-secure-administration-settings-aem.md)
+      + [Suporte OAuth2 para o serviço de email](using/oauth2-support-for-mail-service.md)
 + Modelo de dados do formulário {#form-data-model}
    + [Introdução à integração de dados do AEM Forms](using/data-integration.md)
    + [Configurar fontes de dados](using/configure-data-sources.md)
@@ -332,6 +333,7 @@ ht-degree: 4%
    + [Configuração de análises e relatórios](using/configure-analytics-forms-documents.md)
    + [Visualizar e entender os relatórios de análise do AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
    + [Criar e gerenciar o teste A/B para formulários adaptáveis](using/ab-testing-adaptive-forms.md)
+   + [Integrar ao Adobe Analytics](using/integrate-aem-forms-with-adobe-analytics.md)
 + Publicar e processar o AEM Forms {#publish-process-aem-forms}
    + [Introdução à publicação de formulários em um portal](using/introduction-publishing-forms.md)
    + [Amostra para integrar o componente de rascunhos e envios ao banco de dados](using/integrate-draft-submission-database.md)
@@ -681,6 +683,7 @@ ht-degree: 4%
          + [Validar um documento DDX usando a API do serviço da Web](developing/validate-ddx-document-using-web.md)
 + Resolução de problemas {#troubleshooting}
    + [Não é possível usar alguns recursos de formulários com determinadas versões do Oracle JDK](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
+   + [Etapas adicionais para obter o email com anexo para a versão adaptável do Forms no JEE](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
 + Documentação herdada {#legacy-documentation}
    + [Uso do serviço de script de execução no AEM Forms no JEE Workbench para criar dados XML](developing/building-xml.md)
    + [Compactar e descompactar arquivos usando uma AEM Forms no JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
