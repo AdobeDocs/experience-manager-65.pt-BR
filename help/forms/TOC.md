@@ -8,10 +8,10 @@ user-guide-title: Guia do Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: 3f7191ecdddf7325f2c1153f1ec733893cc649dc
 workflow-type: tm+mt
-source-wordcount: '3801'
-ht-degree: 5%
+source-wordcount: '3795'
+ht-degree: 4%
 
 ---
 
@@ -122,7 +122,6 @@ ht-degree: 5%
       + [Considerações gerais de segurança para AEM Forms no JEE](using/general-security-considerations.md)
       + [Otimizar sua AEM Forms no ambiente JEE](using/hardening-aem-forms-jee-environment.md)
       + [Definição das configurações de administração segura para AEM Forms no JEE](using/configuring-secure-administration-settings-aem.md)
-      + [Suporte OAuth2 para o serviço de email](using/oauth2-support-for-mail-service.md)
 + Modelo de dados do formulário {#form-data-model}
    + [Introdução à integração de dados do AEM Forms](using/data-integration.md)
    + [Configurar fontes de dados](using/configure-data-sources.md)
