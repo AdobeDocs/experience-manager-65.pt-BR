@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 966a3ea6b8cb9b42e21f8e3eb3fee1c7ca93cf51
+source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
 workflow-type: tm+mt
-source-wordcount: '3559'
+source-wordcount: '3583'
 ht-degree: 1%
 
 ---
@@ -89,6 +89,11 @@ A Adobe Experience Manager Forms requer uma máquina virtual Java para execuçã
    <th><p><strong>Plataforma</strong></p> </th>
    <th><p><strong>Nível de compatibilidade</strong></p> </th>
    <th><p><strong>Definições de patch compatíveis</strong></p> </th>
+  </tr>
+  <tr> 
+   <td><p>Oracle Java™ SE 11 (64 bits) <sup> [8] </sup> </p>  </td>
+   <td><p>A: Suportado</p> </td>
+   <td><p>Versões e atualizações secundárias </p> </td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 11 - 64 bits</td>
@@ -791,12 +796,9 @@ As seguintes plataformas são marcadas como obsoletas na versão 6.5.10.0 do AEM
 
 ## Histórico de revisão {#revision-history}
 
-<!-- 
-- Sep 01, 2022
-  
-  - Added support for Oracle Java™ SE 11 (64 bit) SDK for application server JBoss EAP 7.4.
+- 01 de setembro de 2022
 
-  -->
+   - Adição de suporte para Oracle Java™ SE 11 (64 bits) SDK para o servidor de aplicativos JBoss EAP 7.4.
 
 - 3 de março de 2022
 
