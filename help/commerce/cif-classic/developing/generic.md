@@ -1,17 +1,17 @@
 ---
 title: Desenvolvimento (genérico)
-seo-title: Desenvolvimento (genérico)
+seo-title: Developing (generic)
 description: A estrutura de integração inclui uma camada de integração com uma API, permitindo criar componentes AEM para recursos de eCommerce
-seo-description: A estrutura de integração inclui uma camada de integração com uma API, permitindo criar componentes AEM para recursos de eCommerce
+seo-description: The integration framework includes an integration layer with an API, allowing you to build AEM components for eCommerce capabilities
 uuid: 393bb28a-9744-44f4-9796-09228fcd466f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[A ](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) documentação da API também está disponível.
+>[Documentação da API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) também está disponível.
 
 A estrutura de integração inclui uma camada de integração com uma API. Isso permite criar componentes de AEM para recursos de comércio eletrônico (independentemente do mecanismo de comércio eletrônico específico). Ele também permite usar o banco de dados interno do CRX ou conectar um sistema de eCommerce e extrair dados do produto no AEM.
 
@@ -31,30 +31,30 @@ Vários componentes de AEM prontos para uso são fornecidos para usar a camada d
 * Promoções e comprovantes
 * Projetos de catálogo e seção
 * Check-out
-* Pesquisar  
+* Pesquisar
 
-Para pesquisa, é fornecido um gancho de integração que permite usar a pesquisa de AEM, uma pesquisa de terceiros (como o Search &amp; Promote) ou uma combinação dessa pesquisa.
+Para pesquisar, é fornecido um gancho de integração que permite usar a pesquisa de AEM, uma pesquisa de terceiros ou uma combinação deles.
 
 ## Seleção do mecanismo de comércio eletrônico {#ecommerce-engine-selection}
 
 A estrutura de eCommerce pode ser usada com qualquer solução de eCommerce, o mecanismo usado precisa ser identificado pelo AEM - mesmo quando o mecanismo genérico AEM é usado:
 
-* Os mecanismos de comércio eletrônico são serviços OSGi que oferecem suporte à interface `CommerceService`
+* Os mecanismos de comércio eletrônico são serviços OSGi compatíveis com o `CommerceService` interface
 
-   * Os mecanismos podem ser diferenciados por uma propriedade de serviço `commerceProvider`
+   * Os motores podem ser distinguidos por um `commerceProvider` propriedade de serviço
 
-* AEM suporta `Resource.adaptTo()` para `CommerceService` e `Product`
+* AEM compatível `Resource.adaptTo()` para `CommerceService` e `Product`
 
-   * A implementação `adaptTo` procura uma propriedade `cq:commerceProvider` na hierarquia do recurso:
+   * O `adaptTo` a implementação procura uma `cq:commerceProvider` na hierarquia do recurso:
 
       * Se for encontrado, o valor será usado para filtrar a pesquisa do serviço de comércio.
       * Se não for encontrado, o serviço de comércio de maior classificação será usado.
-   * Uma combinação `cq:Commerce` é usada para que `cq:commerceProvider` possa ser adicionada a recursos de tipagem forte.
+   * A `cq:Commerce` A mixin é usada para que a variável `cq:commerceProvider` podem ser adicionados a recursos com muitos tipos.
 
 
-* A propriedade `cq:commerceProvider` também é usada para fazer referência à definição de fábrica de comércio apropriada.
+* O `cq:commerceProvider` é também usada para fazer referência à definição de fábrica de comércio apropriada.
 
-   * Por exemplo, uma propriedade `cq:commerceProvider` com o valor geometrixx se correlacionará à configuração OSGi para **Day CQ Commerce Fatory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - onde o parâmetro `commerceProvider` também tem o valor `geometrixx`.
+   * Por exemplo, um `cq:commerceProvider` com o valor geometrixx estará correlacionado à configuração OSGi para **Day CQ Commerce Fatory for Geometrixx Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - onde o parâmetro `commerceProvider` também tem o valor `geometrixx`.
    * Aqui, outras propriedades podem ser configuradas (quando apropriado e disponível).
 
 Em uma instalação padrão AEM é necessária uma implementação específica, por exemplo:
@@ -99,19 +99,19 @@ O **CommerceSession**:
 
       `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
-* Pertence à persistência dos dados **order**:
+* Persistência dos proprietários do **pedido** dados:
 
    `CommerceSession.getUserContext()`
 
 * Pode recuperar/atualizar detalhes do delivery usando `updateOrder(Map<String, Object> delta)`
-* Também é proprietária da conexão de processamento **pagamento**
-* Também é proprietária da conexão **atendimento**
+* Também é proprietária da **pagamento** conexão de processamento
+* Também é proprietária da **cumprimento** conexão
 
 ### Arquitetura {#architecture}
 
 #### Arquitetura de produto e variantes {#architecture-of-product-and-variants}
 
-Um único produto pode apresentar variações múltiplas; por exemplo, pode variar de acordo com a cor e/ou o tamanho. Um produto deve definir as propriedades que determinam a variação; nomeamos esses *eixos de variante*.
+Um único produto pode apresentar variações múltiplas; por exemplo, pode variar de acordo com a cor e/ou o tamanho. Um produto deve definir as propriedades que determinam a variação; nós os designamos *eixos de variantes*.
 
 No entanto, nem todas as propriedades são eixos de variante. As variações também podem afetar outras propriedades; por exemplo, o preço pode depender do tamanho. Essas propriedades não podem ser selecionadas pelo comprador e, portanto, não são consideradas eixos de variante.
 
@@ -121,19 +121,17 @@ Qualquer recurso de produto pode ser representado por um `Product API`. A maiori
 
 >[!NOTE]
 >
->Na verdade, um eixo de variante é determinado pelo que `Product.getVariantAxes()` retorna:
+>Com efeito, os eixos de variantes são determinados pelo `Product.getVariantAxes()` retorna:
 >
->* para o AEM de implementação genérico, ele é lido de uma propriedade nos dados do produto ( `cq:productVariantAxes`)
+>* para a implementação genérica, o AEM o lê de uma propriedade nos dados do produto ( `cq:productVariantAxes`)
 >
->
-Embora os produtos (em geral) possam ter vários eixos de variantes, o componente de produto pronto para uso trata apenas de dois:
+>Embora os produtos (em geral) possam ter vários eixos de variantes, o componente de produto pronto para uso trata apenas de dois:
 >
 >1. `size`
 >1. mais um
 
 >
->   
-Essa variante adicional é selecionada por meio da propriedade `variationAxis` da referência do produto (normalmente `color` para Geometrixx Outdoors).
+>   Essa variante adicional é selecionada por meio da variável `variationAxis` propriedade da referência do produto (normalmente `color` para Geometrixx Outdoors).
 
 #### Referências do produto e dados do PIM {#product-references-and-pim-data}
 
@@ -192,7 +190,7 @@ public interface Product extends Adaptable {
 }
 ```
 
-#### com.adobe.cq.commerce.api.VariantFilter {#com-adobe-cq-commerce-api-variantfilter}
+#### com.adobe.cq.commerce.api.VariantFilter  {#com-adobe-cq-commerce-api-variantfilter}
 
 ```java
 /**
@@ -248,12 +246,12 @@ public class AxisFilter implements VariantFilter {
 
       * Uma referência, com os dados do produto armazenados em outro lugar:
 
-         * As referências de produto contêm uma propriedade `productData`, que aponta para os dados do produto (normalmente em `/etc/commerce/products`).
+         * As referências de produto contêm um `productData` , que aponta para os dados do produto (normalmente em `/etc/commerce/products`).
          * Os dados do produto são hierárquicos; os atributos do produto são herdados dos ancestrais de um nó de dados do produto.
          * As referências de produto também podem conter propriedades locais, que substituem as especificadas nos dados do produto.
       * Um produto em si:
 
-         * Sem uma propriedade `productData`.
+         * Sem um `productData` propriedade.
          * Um nó de produto que armazena todas as propriedades localmente (e não contém uma propriedade productData ) herda atributos de produto diretamente de seus próprios ancestrais.
 
 
@@ -310,13 +308,13 @@ public class AxisFilter implements VariantFilter {
 
 **Componentes**
 
-* O carrinho de compras pertence ao `CommerceSession:`
+* O carrinho de compras é de propriedade do `CommerceSession:`
 
-   * O `CommerceSession` executa adicionar, remover, etc.
-   * O `CommerceSession` também executa os vários cálculos no carrinho.
+   * O `CommerceSession` O executa adicionar, remover, etc.
+   * O `CommerceSession` O também executa os vários cálculos no carrinho.
    * O `CommerceSession` também aplica comprovantes e promoções que foram disparados para o carrinho.
 
-* Embora não esteja diretamente relacionado ao carrinho, o `CommerceSession` também deve fornecer informações sobre preços de catálogo (já que possui preços)
+* Embora não esteja diretamente relacionado ao carrinho, a variável `CommerceSession` também deve fornecer informações sobre preços de catálogo (já que possui preços)
 
    * Os preços podem ter vários modificadores:
 
@@ -337,10 +335,10 @@ public class AxisFilter implements VariantFilter {
 
 **Personalização**
 
-* A personalização deve sempre ser realizada pelo [ClientContext](/help/sites-administering/client-context.md).
+* A personalização deve sempre ser conduzida pelo [ClientContext](/help/sites-administering/client-context.md).
 * Um ClientContext `/version/` do carrinho é criado em todos os casos:
 
-   * Os produtos devem ser adicionados usando o método `CommerceSession.addCartEntry()`.
+   * Os produtos devem ser adicionados usando o `CommerceSession.addCartEntry()` método .
 
 * O exemplo a seguir ilustra as informações do carrinho no carrinho do ClientContext:
 
@@ -350,7 +348,7 @@ public class AxisFilter implements VariantFilter {
 
 **Dados do carrinho e pedido**
 
-O `CommerceSession` é proprietário dos três elementos:
+O `CommerceSession` é proprietária dos três elementos:
 
 1. **Conteúdo do carrinho**
 
@@ -377,7 +375,7 @@ O `CommerceSession` é proprietário dos três elementos:
 
 1. **Detalhes do pedido**
 
-   No entanto, os detalhes do pedido são *not* corrigidos pela API:
+   No entanto, os detalhes do pedido são *not* corrigido pela API:
 
    ```java
        public void updateOrderDetails(Map<String, String> orderDetails);
@@ -389,12 +387,12 @@ O `CommerceSession` é proprietário dos três elementos:
 
 * Os formulários de pedido geralmente precisam apresentar várias opções de envio (e preços).
 * Os preços podem ser baseados em itens e detalhes do pedido, como peso e/ou endereço de entrega.
-* O `CommerceSession` tem acesso a todas as dependências, portanto, pode ser tratado de maneira semelhante como o preço do produto:
+* O `CommerceSession` O tem acesso a todas as dependências, portanto, pode ser tratado de maneira semelhante como o preço do produto:
 
-   * O `CommerceSession` possui preços de envio.
+   * O `CommerceSession` é proprietária de preços de envio.
    * Use `updateOrder(Map<String, Object> delta)` para recuperar/atualizar os detalhes do delivery.
 
-### Definição de pesquisa {#search-definition}
+### Definição de Pesquisa {#search-definition}
 
 Seguindo o modelo padrão de API de serviço, o projeto de eCommerce fornece um conjunto de APIs relacionadas à pesquisa que podem ser implementadas por mecanismos de comércio individuais.
 
@@ -420,15 +418,15 @@ Há várias classes genéricas/auxiliares fornecidas pelo projeto principal:
 
 1. `CommerceQuery`
 
-   É usado para descrever uma consulta de pesquisa (contém informações sobre o texto da consulta, página atual, tamanho da página, classificação e aspectos selecionados). Todos os serviços de eCommerce que implementam a API de pesquisa receberão instâncias dessa classe para realizar sua pesquisa. Um `CommerceQuery` pode ser instanciado de um objeto de solicitação ( `HttpServletRequest`).
+   É usado para descrever uma consulta de pesquisa (contém informações sobre o texto da consulta, página atual, tamanho da página, classificação e aspectos selecionados). Todos os serviços de eCommerce que implementam a API de pesquisa receberão instâncias dessa classe para realizar sua pesquisa. A `CommerceQuery` pode ser instanciado de um objeto de solicitação ( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   É uma classe de utilitário que fornece um método estático - `toParams` - usado para gerar `GET` sequências de parâmetros de uma lista de aspectos e um valor alternado. Isso é útil na interface do usuário, onde é necessário exibir um hiperlink para cada valor de cada faceta, de modo que, quando o usuário clica no hiperlink, o respectivo valor é alternado (ou seja, se foi selecionado, ele é removido da consulta, caso contrário, é adicionado). Isso cuida de toda a lógica de lidar com várias facetas/valores únicos, substituir valores etc.
+   É uma classe de utilitário que fornece um método estático - `toParams` - que é utilizado para gerar `GET` strings de parâmetro de uma lista de facetas e um valor alternado. Isso é útil na interface do usuário, onde é necessário exibir um hiperlink para cada valor de cada faceta, de modo que, quando o usuário clica no hiperlink, o respectivo valor é alternado (ou seja, se foi selecionado, ele é removido da consulta, caso contrário, é adicionado). Isso cuida de toda a lógica de lidar com várias facetas/valores únicos, substituir valores etc.
 
-O ponto de entrada da API de pesquisa é o método `CommerceService#search` que retorna um objeto `CommerceResult`. Consulte a Documentação da API para obter mais informações sobre este tópico.
+O ponto de entrada da API de pesquisa é o `CommerceService#search` método que retorna um `CommerceResult` objeto. Consulte a Documentação da API para obter mais informações sobre este tópico.
 
-### Desenvolvimento de promoções e vendedores {#developing-promotions-and-vouchers}
+### Desenvolvendo promoções e comprovantes {#developing-promotions-and-vouchers}
 
 * Vouchers:
 
@@ -445,8 +443,8 @@ O ponto de entrada da API de pesquisa é o método `CommerceService#search` que 
    * Os motores de comércio externo podem igualmente fornecer vales; estes requisitos exigem um mínimo de:
 
       * Um código de voucher
-      * Um método `isValid()`
-   * O componente **Voucher** ( `/libs/commerce/components/voucher`) fornece:
+      * Um `isValid()` método
+   * O **Voucher** componente ( `/libs/commerce/components/voucher`) fornece:
 
       * Um renderizador para a administração de vouchers; isso mostra os comprovantes que estão no carrinho.
       * As caixas de diálogo de edição (formulário) para administrar (adicionar/remover) os comprovantes.
@@ -475,7 +473,7 @@ O ponto de entrada da API de pesquisa é o método `CommerceService#search` que 
 
       * `DiscountPromotionHandler`, que aplica um desconto absoluto ou percentual em todo o carrinho
       * `PerfectPartnerPromotionHandler`, que aplica um desconto de produto absoluto ou percentual se o produto do parceiro também estiver no carrinho
-   * O ClientContext `SegmentMgr` resolve segmentos e o ClientContext `CartMgr` resolve as promoções. Cada promoção sujeita a pelo menos um segmento resolvido será acionada.
+   * O ClientContext `SegmentMgr` resolve segmentos e o ClientContext `CartMgr` resolve promoções. Cada promoção sujeita a pelo menos um segmento resolvido será acionada.
 
       * As Promoções Acionadas são enviadas de volta ao servidor por meio de uma chamada AJAX para calcular novamente o carrinho.
       * As Promoções acionadas (e os Vouchers adicionados) também são mostrados no painel ClientContext.
@@ -483,7 +481,7 @@ O ponto de entrada da API de pesquisa é o método `CommerceService#search` que 
 
 
 
-A adição/remoção de um comprovante de um carrinho é realizada por meio da API `CommerceSession`:
+A adição/remoção de um comprovante de um carrinho é realizada por meio do `CommerceSession` API:
 
 ```java
 /**
@@ -510,9 +508,9 @@ public void removeVoucher(String code) throws CommerceException;
 public List<Voucher> getVouchers() throws CommerceException;
 ```
 
-Dessa forma, `CommerceSession` é responsável por verificar se um comprovante existe e se pode ser aplicado ou não. Pode ser o caso de vales que só podem ser aplicados se uma determinada condição for preenchida; por exemplo, quando o preço total do carrinho é maior que US$ 100). Se um comprovante não puder ser aplicado por qualquer motivo, o método `addVoucher` lançará uma exceção. Além disso, o `CommerceSession` é responsável pela atualização dos preços do carrinho após a adição / remoção de um comprovante.
+Assim, o `CommerceSession` é responsável por verificar se um comprovante existe e se pode ser aplicado ou não. Pode ser o caso de vales que só podem ser aplicados se uma determinada condição for preenchida; por exemplo, quando o preço total do carrinho é maior que US$ 100). Se um comprovante não puder ser aplicado por qualquer motivo, a variável `addVoucher` O método lançará uma exceção. Além disso, a variável `CommerceSession` é responsável por atualizar o(s) preço(s) do carrinho após a adição/remoção de um comprovante.
 
-O `Voucher` é uma classe semelhante a Bean que contém campos para:
+O `Voucher` é uma classe semelhante a bean que contém campos para:
 
 * Código do cupom
 * Uma breve descrição
@@ -520,13 +518,13 @@ O `Voucher` é uma classe semelhante a Bean que contém campos para:
 
 O `AbstractJcrCommerceSession` fornecido pode aplicar comprovantes. Os comprovantes retornados pela classe `getVouchers()` são instâncias de `cq:Page` contendo um nó jcr:content com as seguintes propriedades (entre outras):
 
-* `sling:resourceType` (String) - isso precisa ser  `commerce/components/voucher`
+* `sling:resourceType` (String) - isso precisa ser `commerce/components/voucher`
 
 * `jcr:title` (String) - para a descrição do comprovante
 * `code` (String) - o código que o usuário precisa inserir para aplicar esse comprovante
-* `promotion` (String) - a promoção a ser aplicada; por exemplo  `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (String) - a promoção a ser aplicada; por exemplo `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-Os manipuladores de promoção são serviços OSGi que modificam o carrinho de compras. O carrinho oferecerá suporte a vários ganchos que serão definidos na interface `PromotionHandler`.
+Os manipuladores de promoção são serviços OSGi que modificam o carrinho de compras. O carrinho oferecerá suporte a vários ganchos que serão definidos na variável `PromotionHandler` interface.
 
 ```java
 /**

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: 085e77b7b831d6be626a46d3de215aedb50f6178
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Use o procedimento a seguir para mapear variáveis de componente CQ com propried
 
    ![aa-13](assets/aa-13.png)
 
-   Há vários grupos de componentes padrão: **Geral**, **Comércio**, **Comunidades**, **Search &amp; Promote** e **Outras**. A instância de AEM pode ser configurada para exibir diferentes grupos e componentes.
+   Há vários grupos de componentes padrão: **Geral**, **Comércio**, **Comunidades** e **Outras**. A instância de AEM pode ser configurada para exibir diferentes grupos e componentes.
 
 1. Para mapear variáveis do Adobe Analytics com variáveis definidas no componente, arraste um **Variável do Analytics** do localizador de conteúdo para um campo no componente de rastreamento. Por exemplo, arraste `Page Name (pageName)` para `pagedata.title`.
 
@@ -121,10 +121,6 @@ A lista pode ser manipulada das seguintes maneiras:
    >[!NOTE]
    >
    >Somente um botão de filtro pode estar ativo ao mesmo tempo.
-
-   >[!NOTE]
-   >
-   >As variáveis de Search &amp; Promote também pertencem à seção Conversão .
 
    1. A lista também tem um recurso de pesquisa, que filtra os elementos de acordo com o texto inserido no campo de pesquisa.
    1. Se uma opção de filtro for ativada durante a pesquisa por elementos na lista, os resultados exibidos também serão filtrados de acordo com o botão ativo.

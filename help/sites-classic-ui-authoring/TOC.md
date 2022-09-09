@@ -7,10 +7,10 @@ user-guide-title: Guia do usuário de criação da interface clássica do AEM 6.
 user-guide-description: Este guia aborda os conceitos de criação no AEM na interface do usuário clássica.
 feature: Authoring
 role: User
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 84%
+source-wordcount: '264'
+ht-degree: 83%
 
 ---
 
@@ -49,7 +49,6 @@ ht-degree: 84%
    + [Uso de tags](classic-feature-tags.md)
    + [Andaime](classic-feature-scaffolding.md)
    + [Configuração dos componentes no Modo de design](classic-page-author-design-mode.md)
-   + [Adicionar recursos Search&amp;Promote à sua página](classic-feature-search-promote.md)
    + [Componentes](classic-page-author-default-components.md)
 + Fluxos de trabalho {#workflows}
    + [Participar de fluxos de trabalho](classic-workflows-participating.md)
@@ -57,8 +56,8 @@ ht-degree: 84%
    + [Aplicação de fluxos de trabalho a páginas](classic-workflows-applying.md)
 + Inicializações {#launches}
    + [Lançamentos](classic-launches.md)
-   + [Criação de inicializações](classic-launches-creating.md)
-   + [Edição de inicializações](classic-launches-editing.md)
+   + [Criação de Lançamentos](classic-launches-creating.md)
+   + [Edição de Lançamentos](classic-launches-editing.md)
    + [Promoção de inicializações](classic-launches-promoting.md)
 + Personalização {#personalization}
    + [Noções sobre segmentação](classic-personalization-campaigns-segmentation.md)
