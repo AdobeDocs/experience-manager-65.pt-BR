@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: ffabf5a9e3b08f60394cecfe540692b161437362
+source-git-commit: c73d39a1c88c914cd63bc08fe8daf0ff37b4bf7c
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ O [Console da Web](/help/sites-deploying/configuring-osgi.md) fornece acesso ao 
 >
 >O SAML 2.0 Authentication Handler está desativado por padrão. Você deve definir pelo menos uma das seguintes propriedades para habilitar o manipulador:
 >
->* O URL do POST do Provedor de identidade.
+>* O URL POST do provedor de identidade ou o URL do IDP.
 >* A ID da Entidade do Provedor de Serviços.
 >
 
@@ -57,7 +57,7 @@ O [Console da Web](/help/sites-deploying/configuring-osgi.md) fornece acesso ao 
 
 **Alias de certificado IDP** O alias do certificado do IdP no truststore global. Se esta propriedade estiver vazia, o manipulador de autenticação será desativado. Consulte o capítulo &quot;Adicionar o certificado IdP ao AEM TrustStore&quot; abaixo sobre como configurá-lo.
 
-**URL do provedor de identidade** URL do IDP para o qual a Solicitação de autenticação SAML deve ser enviada. Se esta propriedade estiver vazia, o manipulador de autenticação será desativado.
+**URL do IDP** URL do IDP para o qual a Solicitação de autenticação SAML deve ser enviada. Se esta propriedade estiver vazia, o manipulador de autenticação será desativado.
 
 >[!CAUTION]
 >
