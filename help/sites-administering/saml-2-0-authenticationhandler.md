@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: ffabf5a9e3b08f60394cecfe540692b161437362
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '829'
 ht-degree: 1%
 
 ---
@@ -31,8 +31,6 @@ Ele suporta:
 Esse manipulador armazena a mensagem de resposta SAML criptografada no nó do usuário ( `usernode/samlResponse`) para facilitar a comunicação com um provedor de serviços terceirizado.
 
 >[!NOTE]
->
->Consulte [uma demonstração da integração AEM e SAML](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html).
 >
 >Para ler um artigo completo da comunidade, clique em: [Integração do SAML com o Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
 
