@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
+source-git-commit: 060bfb2ed3288b0ef9fbb5ba7f6b06ee027062b6
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3624'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,14 @@ ht-degree: 1%
 # Plataformas compatíveis com AEM Forms no JEE {#supported-platforms-for-aem-forms-on-jee}
 
 ## Plataformas compatíveis {#supported-platforms}
+
+<div class="preview">
+
+O AEM 6.5 Forms Service Pack 12 (6.5.12.0) fornece o instalador completo mais recente do AEM 6.5 Forms no JEE.
+
+O Adobe recomenda usar <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html"> AEM 6.5.12.0 Forms no JEE </a> Instalador completo (lançado em 3 de março de 2022) em vez do instalador AEM 6.5 (lançado em 8 de abril de 2019).
+
+</div>
 
 ### Níveis de suporte {#support-levels}
 
