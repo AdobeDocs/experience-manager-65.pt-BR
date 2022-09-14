@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 477e3d6d7e64a86726a71a8c554593441c94d5bc
+source-git-commit: a0612d10c91cf096403dad1c50b0884feeb10ec2
 workflow-type: tm+mt
-source-wordcount: '5388'
+source-wordcount: '5461'
 ht-degree: 2%
 
 ---
@@ -605,32 +605,29 @@ A ferramenta System Readiness verifica se o computador está configurado correta
    >
    > * Você pode usar o arquivo srt_config.yaml para definir várias configurações de . O formato do arquivo é:
 
-
-   ```
-      # =================================================================
-      # SRT Configuration
-      # =================================================================
-      #Note - follow correct format to avoid parsing failures
-      #e.g. <param name>:<space><param value> 
-      #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
-      locale: en
-   
-      #aemTempDir: AEM Temp direcotry
-      aemTempDir:
-   
-      #users: provide PDFG converting users list
-      #users:
-      # - user1
-      # - user2
-      users:
-   
-      #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
-      profile:
-   
-      #outputDir: directory where output files will be saved
-      outputDir:
-   ```
-
+       #======================================================================================
+       # Configuração SRT
+       #======================================================================================
+       #Note - siga o formato correto para evitar falhas de análise
+       #e.g. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       #locale: (campo obrigatório)Local a ser usado para SRT. Localidades compatíveis [en/fr/de/ja].
+       localidade: en
+       
+       #aemTempDir: Diretório Temp AEM
+       aemTempDir:
+       
+       #users: fornecer lista de usuários de conversão do PDFG
+       #users:
+       # - user1
+       # - user2
+       usuários:
+       
+       #profile: selecione profile para executar verificações específicas. Escolha entre [LCM], mais serão adicionadas em breve
+       perfil:
+       
+       #outputDir: diretório onde os arquivos de saída serão salvos
+       outputDir:
+   >
 1. Vá até `[Path_of_reports_folder]`. Abra o arquivo SystemReadinessTool.html . Verifique o relatório e corrija os problemas mencionados.
 
 ## Resolução de problemas
