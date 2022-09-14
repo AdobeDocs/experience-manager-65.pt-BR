@@ -6,7 +6,7 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 0194abbdd9da1f89491678e0ad688d392af56423
+source-git-commit: 9a74a92262a1ee8dd651965b3a770c4c843f7980
 workflow-type: tm+mt
 source-wordcount: '3452'
 ht-degree: 1%
@@ -492,15 +492,14 @@ Para Windows x86:
 > Além disso:
 >
 > * O PDF Generator requer a versão de 32 bits do [Acrobat 2020 classic track versão 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) ou Acrobat 2017 versão 17.011.30078 para executar a conversão.
-> > * As conversões PDF Generator para OpenOffice são suportadas apenas no Windows e Linux.
-
-> * O PDF Generator suporta apenas a versão de varejo de 32 bits do Microsoft Office Professional Plus e outros softwares necessários para a conversão no sistema operacional Windows.
-> * PDF Generator suporta as versões de 32 e 64 bits do OpenOffice em sistema operacional Linux.
+> * As conversões PDF Generator para OpenOffice são suportadas apenas no Windows e Linux.
+> * O PDF Generator suporta apenas a versão de varejo de 32 bits do Microsoft Office Professional Plus e outros softwares necessários para conversão no sistema operacional Windows.
+> * O PDF Generator suporta as versões de 32 e 64 bits do OpenOffice no sistema operacional Linux.
 > * O PDF Generator não é compatível com o Microsoft Office 365.
 > * Os recursos PDF, Optimize PDF e Export PDF do OCR são suportados apenas no Windows.
 > * Uma versão do Acrobat é fornecida com o AEM Forms para habilitar a funcionalidade PDF Generator. A versão agrupada só deve ser acessada programaticamente com o AEM Forms, durante o período da licença do AEM Forms, para uso com o PDF Generator da AEM Forms. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
->
 > * O serviço PDF Generator não suporta Microsoft Windows 10.
+>
 
 
 ### Requisitos do AEM Forms Designer {#requirements-for-aem-forms-designer}
