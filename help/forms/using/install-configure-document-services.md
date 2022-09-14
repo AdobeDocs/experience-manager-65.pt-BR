@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: a0612d10c91cf096403dad1c50b0884feeb10ec2
+source-git-commit: 26fbf8629715c983ccae9dcdee1defb279849107
 workflow-type: tm+mt
 source-wordcount: '5461'
 ht-degree: 2%
@@ -605,11 +605,12 @@ A ferramenta System Readiness verifica se o computador está configurado correta
    >
    > * Você pode usar o arquivo srt_config.yaml para definir várias configurações de . O formato do arquivo é:
 
-       #======================================================================================
        # Configuração SRT
-       #======================================================================================
-       #Note - siga o formato correto para evitar falhas de análise
-       #e.g. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       
+       # Observação: siga o formato correto para evitar falhas de análise
+       
+       #, por exemplo &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       
        #locale: (campo obrigatório)Local a ser usado para SRT. Localidades compatíveis [en/fr/de/ja].
        localidade: en
        
