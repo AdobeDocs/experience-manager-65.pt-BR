@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 4789b2b5105e5a883ab816c82c9ff07ea76978ff
+source-git-commit: 684474d764ac2a2c187827382e0180e6c0d5259b
 workflow-type: tm+mt
-source-wordcount: '2848'
+source-wordcount: '2861'
 ht-degree: 2%
 
 ---
@@ -224,7 +224,7 @@ A incorporação do código é útil para fornecer acesso a bibliotecas que são
 
 #### Pastas da biblioteca de clientes específicas do aplicativo {#app-specific-client-library-folders}
 
-É uma prática recomendada manter todos os arquivos relacionados a aplicativos em sua pasta de aplicativos abaixo `/app`. Também é uma prática recomendada negar o acesso dos visitantes do site à variável `/app` pasta. Para atender às duas práticas recomendadas, crie uma pasta de biblioteca de clientes abaixo do `/etc` pasta que incorpora a biblioteca do cliente que está abaixo `/app`.
+É uma prática recomendada manter todos os arquivos relacionados a aplicativos em sua pasta de aplicativos abaixo `/apps`. Também é uma prática recomendada negar o acesso dos visitantes do site à variável `/app` pasta. Para atender às duas práticas recomendadas, crie uma pasta de biblioteca de clientes abaixo `/apps`e torná-lo acessível por meio do servlet proxy, conforme descrito em [Localizando uma pasta da biblioteca do cliente e usando o servlet de bibliotecas do cliente proxy](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
 
 Use a propriedade categories para identificar a pasta da biblioteca de clientes a ser incorporada. Para incorporar a biblioteca, adicione uma propriedade à incorporação `cq:ClientLibraryFolder` , usando os seguintes atributos de propriedade:
 
