@@ -3,9 +3,9 @@ title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: Encontre informações sobre a versão, novidades, instruções de instalação e uma lista detalhada de alterações para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 935698e6c8caabccb7bbe0aa9f45012d07163660
+source-git-commit: 48f898a774d2ddd6d2c31f6a4107c71e4032cfc2
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3281'
 ht-degree: 5%
 
 ---
@@ -118,7 +118,7 @@ ht-degree: 5%
 * Ao selecionar um link de navegação para fluxo de trabalho no HTML Workspace, ele não é indicado para a seleção do link de navegação. (NPR-37138)
 * O recurso Assinatura de rabisco não é compatível com as diretrizes de acessibilidade. (NPR-37596)
 * O AEM Forms usa o log4j 1.x. O suporte para log4j 1.x chegou ao fim da vida útil. (NPR-38273)
-* Ao usar o banco de dados MSSQL como fonte de dados em um Modelo de dados de formulário e recuperar valores, os números após o decimal nos valores de recuperação são ativados. (CQ-4346190)
+* Ao usar o banco de dados MSSQL como fonte de dados em um Modelo de dados de formulário e recuperar valores, os números após o decimal nos valores de recuperação são truncados. (CQ-4346190)
 * No Forms 6.5 Designer, ao abrir um formulário criado com o Forms 6.1 Designer e editar uma caixa de texto, o espaçamento entre parágrafos excede o espaço especificado. Todas as configurações anteriores ao espaço são removidas e a reformatação manual da caixa de texto é necessária. (CQ-4341899)
 * O valor incorreto é exibido para o código de barras SSCC-18. Os servidores da Forms omitem o valor na parte direita do código de barras. (CQ-4342400)
 * Para PDF forms estáticos criados com o Forms 6.5 Designer, a acessibilidade do PDF falha com erro `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
@@ -317,7 +317,8 @@ Revise se você usa um recurso ou um recurso em uma implantação. Além disso, 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THE LIST.
  -->
 
-* [AEM Fragmento de conteúdo com o Pacote de índice GraphQL 1.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
+* [AEM Fragmento de conteúdo com o Pacote de índice GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
+Esse pacote é necessário para clientes que usam GraphQL; isso permite que eles adicionem a definição de índice necessária com base nos recursos que realmente usam.
 
 * As [!DNL Microsoft® Windows Server 2019] não suporta [!DNL MySQL 5.7] e [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] não suporta instalações turnkey para [!DNL AEM Forms 6.5.10.0].
 
