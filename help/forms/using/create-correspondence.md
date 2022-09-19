@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 11bad847558d295d1cf38aa9e8f246fc6fc3877b
 workflow-type: tm+mt
-source-wordcount: '3695'
+source-wordcount: '3826'
 ht-degree: 0%
 
 ---
@@ -288,6 +288,22 @@ Essas instâncias só podem ser salvas quando a carta estiver sendo visualizada 
 1. Em AEM, abra a Configuração do Adobe Experience Manager Web Console para seu servidor usando o seguinte URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. Localizar **[!UICONTROL Configurações de gerenciamento de correspondência]** e clique nele.
 1. Verificar **[!UICONTROL Gerenciar instâncias de carta na publicação]** e clique em **[!UICONTROL Salvar]**.
+
+### Habilitar recurso Salvar rascunho {#enable-save-draft-feature}
+
+Antes de publicar cartas ou salvar rascunhos na instância de publicação, execute as seguintes etapas para ativar o recurso Salvar como rascunho:
+
+1. Abra a Configuração do Console da Web para seu servidor usando o seguinte URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr.
+
+1. Localize e clique no botão **Editar** ícone ao lado do *com.adobe.livecycle.content.ativate.impl.VersionRestoreManagerImpl.name* configuração.
+
+1. No *URL de Autor do VersionRestoreManager* , especifique o URL da instância do autor correspondente.
+
+1. Clique em Salvar .
+
+O *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* as propriedades não são transferidas para a instância de publicação por padrão. Para habilitar o recarregamento de rascunho na instância de publicação, essas propriedades são necessárias na instância de publicação.
+
+Para o transporte *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* propriedades para publicar instância, desative o componente como *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* na instância do autor usando o URL:`http://server:port/system/console/components`
 
 Quando o salvamento de instâncias de carta estiver ativado, você terá a opção de selecionar onde salvar as instâncias de carta. Há duas opções para salvar as instâncias de carta: Salvar local ou Salvar remotamente.
 
