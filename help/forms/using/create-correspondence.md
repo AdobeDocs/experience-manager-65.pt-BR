@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 11bad847558d295d1cf38aa9e8f246fc6fc3877b
+source-git-commit: 1a6881b29024799c44b2068ea82750c983a012e5
 workflow-type: tm+mt
-source-wordcount: '3826'
+source-wordcount: '3867'
 ht-degree: 0%
 
 ---
@@ -291,19 +291,29 @@ Essas instâncias só podem ser salvas quando a carta estiver sendo visualizada 
 
 ### Habilitar recurso Salvar rascunho {#enable-save-draft-feature}
 
-Antes de publicar cartas ou salvar rascunhos na instância de publicação, execute as seguintes etapas para ativar o recurso Salvar como rascunho:
+Antes de publicar cartas ou salvar rascunhos na instância de publicação, execute as seguintes etapas na instância de criação e publicação para ativar o recurso Salvar como rascunho:
 
-1. Abra a Configuração do Console da Web para seu servidor usando o seguinte URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr.
+O *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* as propriedades não são transferidas para a instância de publicação por padrão. Para o transporte *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* propriedades para publicar instância, desative o [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente. Para desativar o componente:
 
-1. Localize e clique no botão **Editar** ícone ao lado do *com.adobe.livecycle.content.ativate.impl.VersionRestoreManagerImpl.name* configuração.
+1. Na instância do autor, abra o console Componentes do console da Web do Adobe Experience Manager. O URL padrão é `http://author-server:port/system/console/components`
 
-1. No *URL de Autor do VersionRestoreManager* , especifique o URL da instância do autor correspondente.
+1. Procure a variável **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** componente.
 
-1. Clique em Salvar .
+1. Clique em ![Botão Desativar](/help/forms/using/assets/enablebutton.png) ícone para desativar o [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente.
 
-O *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* as propriedades não são transferidas para a instância de publicação por padrão. Para habilitar o recarregamento de rascunho na instância de publicação, essas propriedades são necessárias na instância de publicação.
+![Instância do autor](/help/forms/using/assets/replicationproperties.png)
 
-Para o transporte *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* propriedades para publicar instância, desative o componente como *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* na instância do autor usando o URL:`http://server:port/system/console/components`
+Para ativar o recurso salvar como rascunho, substitua o URL existente em [!UICONTROL URL de Autor do VersionRestoreManager] com o URL da instância do autor. Para substituir o URL:
+
+1. Na instância de publicação, abra [!UICONTROL Configuração do Console da Web do Aode Manager]. O URL padrão é `https://publish-server:port/system/console/configMgr`
+
+1. Pesquise e abra o **[!UICONTROL Gerenciamento de correspondência - Configurações de restauração de versão da instância de autor]** componente.
+
+1. Localize a variável **[!UICONTROL URL de Autor do VersionRestoreManager]** e especifique o URL da instância do autor.
+
+1. Clique em Salvar.
+
+![Instância de publicação](/help/forms/using/assets/correspondencemanagement.png)
 
 Quando o salvamento de instâncias de carta estiver ativado, você terá a opção de selecionar onde salvar as instâncias de carta. Há duas opções para salvar as instâncias de carta: Salvar local ou Salvar remotamente.
 
@@ -323,7 +333,7 @@ Essa opção existe para pessoas que têm preocupações sobre como salvar dados
 
 #### Especificar configurações do autor de processamento {#specify-processing-author-settings}
 
-1. Em AEM, abra a Configuração do Adobe Experience Manager Web Console para seu servidor usando o seguinte URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Em AEM, abra a Configuração do Adobe Experience Manager Web Console para seu servidor usando o seguinte URL: `https://<server>:<port>/system/console/configMgr`
 
    ![Configuração do Console da Web do Adobe Experience Manager](assets/2configmanager.png)
 
