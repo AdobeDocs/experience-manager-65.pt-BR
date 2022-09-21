@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 26fbf8629715c983ccae9dcdee1defb279849107
+source-git-commit: 652f2f9b55857b8962f5bfd4edb85f3700866485
 workflow-type: tm+mt
-source-wordcount: '5461'
+source-wordcount: '5535'
 ht-degree: 2%
 
 ---
@@ -786,6 +786,15 @@ Antes de realizar as verificações a seguir, verifique se [Ferramenta de prepar
 * Você pode ficar online dentro de 7 dias da primeira inicialização do produto Adobe para concluir uma ativação e registro online ou usar um dispositivo habilitado para Internet e o número de série do seu produto para concluir este processo. Para obter instruções detalhadas, consulte [Ativação offline](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
 +++
+
++++ Não é possível converter o arquivo do Word ou Excel para o PDF no Windows Server
+
+Quando o usuário tenta converter arquivos do Word ou do Excel para o PDF no Microsoft Windows Server, o seguinte erro é encontrado como:
+
+*Mensagem de erro do conversor principal: ALC-PDG-015-003-O sistema não pode abrir o arquivo de entrada. Envie seu arquivo novamente ou entre em contato com o administrador do sistema.*
+
+Para resolver o problema, consulte [Não é possível converter o arquivo do Word ou Excel para o PDF no Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+
 
 ## Próximas etapas {#next-steps}
 
