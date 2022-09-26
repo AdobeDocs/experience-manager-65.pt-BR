@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 4e68a8a8d84d0ffa1d28ab13c196731e58b4cf9a
+source-git-commit: 1a383f0e620adf6968d912a9a1759e5ee020c908
 workflow-type: tm+mt
 source-wordcount: '3447'
 ht-degree: 1%
@@ -183,7 +183,7 @@ Após o download, você pode instalar e configurar o S3 Connector da seguinte ma
 1. Edite o arquivo e adicione as opções de configuração necessárias para sua configuração.
 1. Inicie o AEM.
 
-### Atualização para uma nova versão do S3 Connector 1.10.x {#upgrading-to-a-new-version-of-the-s-connector}
+## Atualização para uma nova versão do S3 Connector 1.10.x {#upgrading-to-a-new-version-of-the-s-connector}
 
 Se precisar atualizar para uma nova versão do conector S3 1.10.x (por exemplo, de 1.10.0 para 1.10.4), siga estas etapas:
 
@@ -260,7 +260,7 @@ Você pode usar o arquivo de configuração com as seguintes opções:
  </tbody>
 </table>
 
-**Armazenamento em cache do DataStore**
+### Armazenamento em cache do DataStore {#data-store-caching}
 
 >[!NOTE]
 >
@@ -272,11 +272,11 @@ Você também pode atualizar o cache offline usando o `datastorecacheupgrade` co
 
 O cache tem um limite de tamanho e pode ser configurado usando o parâmetro cacheSize .
 
-**Downloads**
+#### Downloads {#downloads}
 
 O cache local será verificado para o registro do arquivo/blob solicitado antes de acessá-lo do DataStore. Quando o cache exceder o limite configurado (consulte o `cacheSize` ao adicionar um arquivo ao cache, alguns dos arquivos serão removidos para recuperar espaço.
 
-**Upload assíncrono**
+#### Upload assíncrono {#async-upload}
 
 O cache oferece suporte a uploads assíncronos para o DataStore. Os arquivos são preparados localmente, no cache (no sistema de arquivos) e um trabalho assíncrono começa a carregar o arquivo. O número de uploads assíncronos é limitado pelo tamanho do cache de preparo. O tamanho do cache de preparo é configurado usando o `stagingSplitPercentage` parâmetro. Esse parâmetro define a porcentagem do tamanho do cache a ser usada para o cache de preparo. Além disso, a porcentagem do cache disponível para downloads é calculada como **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 
