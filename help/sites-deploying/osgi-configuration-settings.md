@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
+source-git-commit: 4c3cc888a7590fdbee9b7d7e441602e4ae3f54b0
 workflow-type: tm+mt
-source-wordcount: '3557'
+source-wordcount: '3511'
 ht-degree: 0%
 
 ---
@@ -59,8 +59,6 @@ As seguintes configurações de configuração do OSGi (listadas de acordo com o
 
 * O **Senha do administrador** deve ser alterada após a instalação para garantir que a função [segurança](/help/sites-administering/security-checklist.md) da sua instância.
 * Outras alterações não devem ser necessárias e devem ser tomadas precauções, pois podem afetar o acesso ao repositório.
-
-**Serviço de Correio Wiki** Defina as configurações de email para emails enviados por um wiki.
 
 **Console de Gerenciamento do Apache Felix OSGi** Configurar:
 
@@ -447,10 +445,6 @@ Controla o analisador de HTML para a reescrita do CQ.
 **Pool de Conexões JDBC do Day Commons** Configure o acesso a um banco de dados externo que está sendo usado como fonte de conteúdo.
 
 Esta é uma configuração de fábrica, portanto várias instâncias podem ser configuradas.
-
-**Serviço de sessões do Adobe CQ Media DPS** Gerencie Sessões do DPS para usar com Publicações.
-
-Em particular, você pode definir a variável `dps.session.service.url.name`: o padrão está definido como [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
 **Gravador CDN** A comunicação entre AEM e uma CDN deve ser assegurada para que os ativos/binários sejam entregues ao usuário final de forma segura. Isso envolve duas tarefas:
 
