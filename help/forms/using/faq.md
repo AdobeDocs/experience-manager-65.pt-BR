@@ -12,7 +12,7 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 1e301f3991a18a594ac10a6548a0a645327dd4dd
+source-git-commit: f39102c938107b8ce01325499f29f00e287b5bcc
 workflow-type: tm+mt
 source-wordcount: '1995'
 ht-degree: 0%
@@ -99,7 +99,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 1. Por que algumas fontes são exibidas no formulário HTML são diferentes das usadas ao projetar o formulário?
 
-   Resposta: Os formulários HTML5 não incorporam fontes (em contraste com PDF forms, onde as fontes são incorporadas dentro do formulário). Para que a versão HTML do formulário seja renderizada conforme esperado, verifique se as fontes especificadas no XDP estão disponíveis no servidor e na máquina cliente. Se as fontes necessárias não estiverem disponíveis no servidor, as fontes de fallback serão usadas. Além disso, se você usar fontes no Modelo de formulário que não estão disponíveis no dispositivo cliente, as fontes padrão do navegador serão usadas para renderizar o texto.
+   Resposta: HTML5 Forms não permitem a incorporação de fontes (em contraste com PDF forms, onde as fontes são incorporadas dentro do formulário). Para que a versão HTML de um formulário seja renderizada conforme esperado, verifique se as fontes estão disponíveis no Repositório CRX (Repositório de Conteúdo AEM) do seu servidor AEM Forms e na máquina que tem AEM Designer instalado. Quando as fontes não estão disponíveis no Repositório CRX do seu servidor AEM Forms ou no local onde AEM Designer está instalado, o formulário é renderizado com fontes de fallback.
 
 1. Os atributos vAlign e hAlign são suportados nos formulários HTML?
 
