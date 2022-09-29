@@ -12,9 +12,9 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: f39102c938107b8ce01325499f29f00e287b5bcc
+source-git-commit: a90ea57142110ebd11a8a9580c29df1698b8dce1
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '2005'
 ht-degree: 0%
 
 ---
@@ -103,11 +103,11 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 1. Os atributos vAlign e hAlign são suportados nos formulários HTML?
 
-   Sim, os atributos vAlign e hAlign são compatíveis. O atributo vAlign não é compatível com o Internet Explorer e no campo de várias linhas.
+   Resposta: Sim, os atributos vAlign e hAlign são compatíveis. O atributo vAlign não é compatível com o Internet Explorer e no campo de várias linhas.
 
 1. Os formulários HTML5 oferecem suporte para caracteres hebraicos?
 
-   Os formulários HTML5 são compatíveis com caracteres hebraicos em todos os navegadores, exceto no Microsoft Internet Explorer.
+   Resposta: Os formulários HTML5 são compatíveis com caracteres hebraicos em todos os navegadores, exceto no Microsoft Internet Explorer.
 
 1. Os formulários HTML5 têm limitações no campo numérico?
 
@@ -115,7 +115,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 1. Por que os formulários HTML são maiores que os PDF forms?
 
-   Muitas estruturas de dados e objetos intermediários, como dom de formulário, dom de dados e dom de layout, são necessários para renderizar um XDP em um formulário HTML.
+   Resposta: Muitas estruturas de dados e objetos intermediários, como dom de formulário, dom de dados e dom de layout, são necessários para renderizar um XDP em um formulário HTML.
 
    Para PDF forms, a Adobe Acrobat tem um mecanismo XTG integrado para criar estruturas de dados e objetos intermediários. O Acrobat também cuida do layout e dos scripts.
 
@@ -142,12 +142,13 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 1. Qual é a ordem de leitura da dica de ferramenta e da legenda para leitores de tela?
 
+   Resposta:
    * Quando legenda e dica de ferramenta estão presentes, a única legenda é lida. Se a legenda não estiver disponível, a dica de ferramenta será lida. Também é possível especificar a precedência para a leitura em um XDP usando o designer de formulário
    * Quando você passa o mouse sobre um elemento, a dica de ferramenta é exibida. Se a dica de ferramenta não estiver disponível, o texto de fala será exibido. Se o texto da fala não estiver disponível, o nome do campo será exibido.
 
 1. Quando você passa o mouse sobre um campo, uma dica de ferramenta é exibida. Como desativá-lo?
 
-   Para desativar a dica de ferramenta ao passar o mouse, selecione nenhum no painel de acessibilidade do Designer.
+   Resposta: Para desativar a dica de ferramenta ao passar o mouse, selecione nenhum no painel de acessibilidade do Designer.
 
 1. No Designer, um usuário pode configurar propriedades de aparência personalizadas de botões de opção e caixas de seleção. Ao renderizar os formulários, os formulários HTML5 levam em consideração essas propriedades de aparência personalizadas?
 
@@ -155,7 +156,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 1. Quando um formulário HTML5 é aberto em um navegador compatível, a borda dos campos colocados adjacentemente não é alinhada corretamente ou os subformulários aparecem sobrepostos. Quando o mesmo formulário HTML5 é visualizado no Forms Designer, os campos e o layout não aparecem desalinhados e os subformulários aparecem na posição correta. Como corrigir o problema?
 
-   Quando um subformulário é definido para continuar o conteúdo e ele tem um elemento de borda oculto, a borda dos campos colocados adjacentemente não é alinhada corretamente ou os subformulários aparecem sobrepostos. Para resolver o problema, você pode remover ou comentar o oculto &lt;border> elementos do XDP correspondente. Por exemplo, o seguinte &lt;border> é marcado como um comentário:
+   Resposta: Quando um subformulário é definido para continuar o conteúdo e ele tem um elemento de borda oculto, a borda dos campos colocados adjacentemente não é alinhada corretamente ou os subformulários aparecem sobrepostos. Para resolver o problema, você pode remover ou comentar o oculto &lt;border> elementos do XDP correspondente. Por exemplo, o seguinte &lt;border> é marcado como um comentário:
 
    ```xml
                <!--<border>
@@ -166,7 +167,7 @@ Há algumas perguntas frequentes sobre layout, suporte a scripts e escopo de for
 
 1. Por que os leitores de tela não funcionam corretamente com o objeto de campo Data/hora?
 
-   Os leitores de tela não suportam campos de data/hora. No entanto, você pode inserir manualmente a data/hora no campo para fazer com que o leitor de tela o leia. Use dica de ferramenta ou texto de leitor de tela para instruir o usuário a selecionar manualmente a data/hora do campo.
+   Resposta: Os leitores de tela não suportam campos de data/hora. No entanto, você pode inserir manualmente a data/hora no campo para fazer com que o leitor de tela o leia. Use dica de ferramenta ou texto de leitor de tela para instruir o usuário a selecionar manualmente a data/hora do campo.
 
 1. Os formulários HTML5 são compatíveis com padrões de exibição para campos flutuantes?
 
@@ -192,12 +193,13 @@ Resposta: O campo Date aceita o formato ISO, AAAA-MM-DD. Se uma data for especif
 
 1. Existe alguma convenção de nomenclatura recomendada e há palavras-chave reservadas para evitar?
 
+   Resposta:
    * No AEM Forms Designer, é recomendável não iniciar o nome de um objeto (como um subformulário ou um campo de texto) com um sublinhado (_). Para usar sublinhado no início do nome, adicione um prefixo depois do sublinhado,_&lt;prefix>&lt;objectname>.
    * Todas as APIs de formulários HTML5 são palavras-chave reservadas. Para APIs/funções personalizadas, use um nome que não seja idêntico a [APIs de formulários HTML5](/help/forms/using/scripting-support.md).
 
 1. Os formulários HTML5 oferecem suporte para campos flutuantes?
 
-   Sim, o HTML5 Forms suporta campos flutuantes. Para ativar campos flutuantes, adicione a seguinte propriedade ao perfil de renderização:
+   Resposta: Sim, o HTML5 Forms suporta campos flutuantes. Para ativar campos flutuantes, adicione a seguinte propriedade ao perfil de renderização:
 
    >[!NOTE]
    >
@@ -213,7 +215,7 @@ Resposta: O campo Date aceita o formato ISO, AAAA-MM-DD. Se uma data for especif
 
 1. Os formulários do HTML5 executam o script de inicialização e o evento pronto para o formulário várias vezes?
 
-   Sim, os scripts de inicialização e os eventos prontos para o formulário são executados várias vezes, pelo menos uma vez no servidor e uma vez no lado do cliente. É sugerido gravar scripts como initialize ou form:ready com base em alguma lógica comercial (formulário ou dados de campo) para que a ação seja executada com base no estado dos dados e idempotente (se os dados forem iguais).
+   Resposta: Sim, os scripts de inicialização e os eventos prontos para o formulário são executados várias vezes, pelo menos uma vez no servidor e uma vez no lado do cliente. É sugerido gravar scripts como initialize ou form:ready com base em alguma lógica comercial (formulário ou dados de campo) para que a ação seja executada com base no estado dos dados e idempotente (se os dados forem iguais).
 
 ### Criação de XDP {#designing-xdp}
 
