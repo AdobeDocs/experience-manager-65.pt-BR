@@ -1,7 +1,7 @@
 ---
 title: Guia do usuário de gerenciamento do AEM 6.5
 seo-title: AEM 6.5 Managing User Guide
-description: 'Descubra como gerenciar um projeto de AEM com êxito, com suporte dos principais recursos e uma coleção abrangente dos guias do usuário AEM 6.5. '
+description: Descubra como gerenciar um projeto de AEM com êxito, com suporte dos principais recursos e uma coleção abrangente dos guias do usuário AEM 6.5.
 seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
 source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
@@ -33,7 +33,7 @@ Descubra como gerenciar um projeto de AEM com êxito, com suporte dos principais
 | [Guia de administração](/help/sites-administering/home.md) | Saiba mais sobre como administrar o AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no AEM. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no AEM na interface do usuário clássica. |
-| [Guia do usuário do Screens](https://docs.adobe.com/content/help/br/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
+| [Guia do usuário do Screens](https://docs.adobe.com/content/help/pt-BR/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
 | [Guia de implantação do usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do AEM. |
 | [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar a instância do AEM. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto de AEM com êxito. |

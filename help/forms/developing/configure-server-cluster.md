@@ -1,6 +1,6 @@
 ---
 title: Como configurar e solucionar problemas de um AEM Forms no cluster de servidores JEE?
-description: Saiba como configurar e solucionar problemas de um AEM Forms no cluster de servidores JEE
+description: Saiba como configurar e solucionar problemas de um cluster de servidores AEM Forms no JEE
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
 source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
@@ -35,7 +35,7 @@ Um cluster AEM Forms em JEE depende dos recursos de cluster do servidor de aplic
 
 ### Cache GemFire {#gemfire-cache}
 
-O cache GemFire é um mecanismo de cache distribuído implementado em cada nó do cluster. Os nós se encontram e criam um único cache lógico que é mantido coerente entre os nós. Os nós que se encontram se unem para manter um único cache nocional que é mostrado como uma nuvem na Figura 1. Diferentemente do GDS e do banco de dados, o cache é uma entidade meramente nocional. O conteúdo em cache real é armazenado na memória e no diretório `LC_TEMP` em cada um dos nós do cluster.
+O cache GemFire é um mecanismo de cache distribuído implementado em cada nó do cluster. Os nós se encontram e criam um único cache lógico que é mantido coerente entre os nós. Os nós que se encontram se unem para manter um único cache nocional que é mostrado como uma nuvem na Figura 1. Diferentemente do GDS e do banco de dados, o cache é uma entidade meramente nocional. O conteúdo em cache real é armazenado na memória e no `LC_TEMP` em cada um dos nós do cluster.
 
 ### Banco de dados {#database}
 
@@ -67,7 +67,7 @@ Várias coisas podem dar errado com o cache do Gemfire. Dois cenários típicos 
 
 * Os nós que não deveriam ser agrupados se encontram e compartilham um cache quando não deveriam.
 
-Se você tem nós que pretende agrupar, é essencial que eles se encontrem na rede. Por padrão, eles fazem isso por meio de mensagens UDP multicast. Cada nó envia mensagens de difusão anunciando que está presente, e qualquer nó que receba tal mensagem começa a falar com os outros nós encontrados. Esse tipo de método de autodescoberta é muito comum, e muitos tipos de software e aparelhos fazem isso.
+Se você tem nós que pretende agrupar, é essencial que eles se encontrem na rede. Por padrão, eles fazem isso por meio de mensagens UDP multicast. Cada nó envia mensagens de transmissão anunciando que está presente, e qualquer nó que receba tal mensagem começa a falar com os outros nós encontrados. Esse tipo de método de autodescoberta é muito comum, e muitos tipos de software e aparelhos fazem isso.
 
 Um problema comum com a detecção automática é que mensagens multicast podem ser filtradas pela rede como parte da política de rede ou devido a regras de firewall de software, ou simplesmente não podem ser roteadas pela rede existente entre nós. Devido à dificuldade geral em fazer com que a autodetecção UDP funcione em redes complexas, é prática comum que as implantações de produção usem um método de descoberta alternativo: Localizadores TCP. Uma discussão geral sobre localizadores TCP pode ser encontrada nas referências.
 
@@ -117,7 +117,7 @@ O GemFire produz informações de registro que podem ser usadas para diagnostica
 
 `.../LC_TEMP/adobeZZ__123456/Caching/Gemfire.log`
 
-A sequência numérica depois de `adobeZZ_` é exclusiva do nó do servidor e, portanto, você deve pesquisar o conteúdo real do diretório temporário. Os dois caracteres após `adobe` dependem do tipo de servidor do aplicativo: `wl`, `jb` ou `ws`.
+A sequência numérica após `adobeZZ_` O é exclusivo para o nó do servidor e, portanto, você deve pesquisar o conteúdo real do diretório temporário. Os dois caracteres após `adobe` dependem do tipo de servidor de aplicativos: ou `wl`, `jb`ou `ws`.
 
 Os seguintes registros de amostra mostram o que acontece quando um cluster de dois nós se encontra.
 
@@ -264,12 +264,11 @@ Observe que uma configuração usa um período entre &quot;cluster&quot; e &quot
 
 Para determinar como o Quartz se configurou, você deve examinar as mensagens geradas pelo AEM Forms no serviço JEE Scheduler durante a inicialização. Essas mensagens são geradas com gravidade INFO, e pode ser necessário ajustar o nível de log e reiniciar para obter as mensagens. Na sequência de inicialização do AEM Forms em JEE, a inicialização do Quartz começa com a seguinte linha:
 
-INFORMAÇÕES `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
-É importante localizar essa primeira linha nos logs, pois alguns servidores de aplicativos também usam o Quartz, e suas instâncias do Quartz não devem ser confundidas com a instância que está sendo usada pelo AEM Forms no serviço do Agendador JEE. Essa é a indicação de que o serviço Scheduler está sendo inicializado e as linhas que o seguem informarão se ele está ou não iniciando no modo clusterizado corretamente. Várias mensagens são exibidas nessa sequência e é a última mensagem &quot;iniciada&quot; que revela como o Quartz é configurado:
+INFO  `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad É importante localizar essa primeira linha nos logs, pois alguns servidores de aplicativos também usam o Quartz, e suas instâncias do Quartz não devem ser confundidas com a instância que está sendo usada pelo AEM Forms no serviço JEE Scheduler. Essa é a indicação de que o serviço Scheduler está sendo inicializado e as linhas que o seguem informarão se ele está ou não iniciando no modo clusterizado corretamente. Várias mensagens são exibidas nessa sequência e é a última mensagem &quot;iniciada&quot; que revela como o Quartz é configurado:
 
-Aqui está o nome da instância do Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. O nome da instância Quartz do programador sempre começará com a string `IDPSchedulerService_$_`. A sequência de caracteres anexada ao final disso informa se o Quartz está ou não sendo executado no modo clusterizado. O identificador exclusivo longo gerado pelo nome do host do nó e uma longa string de dígitos, aqui `ap-hp8.ottperflab.adobe.com1312883903975`, indica que ele está operando em um cluster. Se estiver operando como um único nó, o identificador será um número de dois dígitos, &quot;20&quot;:
+Aqui está o nome da instância do Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. O nome da instância Quartz do programador sempre começará com a string `IDPSchedulerService_$_`. A sequência de caracteres anexada ao final disso informa se o Quartz está ou não sendo executado no modo clusterizado. O identificador exclusivo longo gerado pelo nome do host do nó e uma longa string de dígitos, aqui `ap-hp8.ottperflab.adobe.com1312883903975`, indica que está operando em um cluster. Se estiver operando como um único nó, o identificador será um número de dois dígitos, &quot;20&quot;:
 
-INFO `[org.quartz.core.QuartzScheduler]` Scheduler `IDPSchedulerService_$_20` iniciado.
+INFO  `[org.quartz.core.QuartzScheduler]` Scheduler `IDPSchedulerService_$_20` iniciado.
 Essa verificação deve ser feita em todos os nós do cluster separadamente, já que o agendador de cada nó determina independentemente se deve operar no modo de cluster.
 
 ### Que tipos de problemas resultarão se o Quartz estiver sendo executado no modo errado? {#quartz-running-in-wrong-mode}
@@ -326,7 +325,7 @@ As seguintes configurações devem ser verificadas:
 1. Localização do diretório de fontes do sistema
 1. Localização do arquivo de configuração dos serviços de dados
 
-O cluster tem apenas uma configuração de caminho único para cada uma dessas configurações. Por exemplo, o local do diretório Temp pode ser `/home/project/QA2/LC_TEMP`. Em um cluster, é necessário que cada nó tenha realmente esse caminho específico acessível. Se um nó tiver o caminho de arquivo temporário esperado e outro nó não, o nó que não funcionará corretamente.
+O cluster tem apenas uma configuração de caminho único para cada uma dessas configurações. Por exemplo, seu local do diretório Temp pode ser `/home/project/QA2/LC_TEMP`. Em um cluster, é necessário que cada nó tenha realmente esse caminho específico acessível. Se um nó tiver o caminho de arquivo temporário esperado e outro nó não, o nó que não funcionará corretamente.
 
 Embora esses arquivos e caminhos possam ser compartilhados entre os nós ou localizados separadamente, ou em sistemas de arquivos remotos, geralmente é recomendável que sejam cópias locais no armazenamento em disco do nó local.
 

@@ -1,8 +1,8 @@
 ---
 title: Replicação usando SSL mútuo
-seo-title: Replicação usando SSL mútuo
+seo-title: Replicating Using Mutual SSL
 description: Saiba como configurar o AEM para que um agente de replicação na instância do autor use o SSL mútuo (MSSL) para se conectar com a instância de publicação. Usando o MSSL, o agente de replicação e o serviço HTTP na instância de publicação usam certificados para autenticar um ao outro.
-seo-description: Saiba como configurar o AEM para que um agente de replicação na instância do autor use o SSL mútuo (MSSL) para se conectar com a instância de publicação. Usando o MSSL, o agente de replicação e o serviço HTTP na instância de publicação usam certificados para autenticar um ao outro.
+seo-description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
 uuid: f4bc5e61-a58c-4fd2-9a24-b31e0c032c15
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1409'
 ht-degree: 3%
 
 ---
-
 
 # Replicação usando SSL mútuo{#replicating-using-mutual-ssl}
 
@@ -137,7 +136,7 @@ Gere uma chave privada e um certificado no formato pkcs#12. Use [openSSL](https:
    | -em | author.cer | publish.cer |
    | -name | autor | publicação |
 
-## Instale a Chave privada e o TrustStore no Autor {#install-the-private-key-and-truststore-on-author}
+## Instalar a chave privada e o TrustStore no autor {#install-the-private-key-and-truststore-on-author}
 
 Instale os seguintes itens na instância do autor:
 
@@ -165,7 +164,7 @@ Para executar o procedimento a seguir, você deve estar conectado como administr
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### Instale o Certificado de Publicação {#install-the-publish-certificate}
+### Instalar o certificado de publicação {#install-the-publish-certificate}
 
 1. Abra a página Gerenciamento de usuários da instância do autor. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Para abrir as propriedades da sua conta de usuário, clique ou toque no seu nome de usuário.
@@ -180,7 +179,7 @@ Para executar o procedimento a seguir, você deve estar conectado como administr
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-## Instale a chave privada e o TrustStore em Publicar {#install-private-key-and-truststore-on-publish}
+## Instale a chave privada e o TrustStore na publicação {#install-private-key-and-truststore-on-publish}
 
 Instale os seguintes itens na instância de publicação:
 
@@ -200,7 +199,7 @@ Para executar o procedimento a seguir, você deve estar conectado como administr
 1. Digite um alias e a senha para o armazenamento de chaves. Insira o alias e a senha da chave privada e clique em Enviar.
 1. Feche a caixa de diálogo Gerenciamento do KeyStore .
 
-### Instalar o Certificado do Autor {#install-the-author-certificate}
+### Instalar o certificado do autor {#install-the-author-certificate}
 
 1. Abra a página Gerenciamento de usuários da instância de publicação. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Localize a conta de usuário que você usa para executar solicitações de replicação e clique ou toque no nome do usuário.
@@ -210,13 +209,13 @@ Para executar o procedimento a seguir, você deve estar conectado como administr
 1. Verifique se a opção Mapear certificado para usuário está selecionada. Clique em Selecionar arquivo de certificado, selecione author.cer e clique em Abrir.
 1. Clique em Enviar e feche a caixa de diálogo Gerenciamento do TrustStore.
 
-## Configurar o serviço HTTP em Publicar {#configure-the-http-service-on-publish}
+## Configurar o serviço HTTP na publicação {#configure-the-http-service-on-publish}
 
 Configure as propriedades do Apache Felix Jetty Based HTTP Service na instância de publicação para usar HTTPS e acessar o Granite Keystore. O PID do serviço é `org.apache.felix.http`.
 
 A tabela a seguir lista as propriedades do OSGi que você precisa configurar se estiver usando o Console da Web.
 
-| Nome da propriedade no console da Web | Nome da Propriedade OSGi | Valor |
+| Nome da propriedade no console da Web | Nome da propriedade OSGi | Valor |
 |---|---|---|
 | Ativar HTTPS | org.apache.felix.https.enable | verdadeiro |
 | Habilitar HTTPS para usar o Granite KeyStore | org.apache.felix.https.use.granite.keystore | verdadeiro |
@@ -225,7 +224,7 @@ A tabela a seguir lista as propriedades do OSGi que você precisa configurar se 
 
 ## Configurar o Agente de Replicação no Autor {#configure-the-replication-agent-on-author}
 
-Configure o agente de replicação na instância do autor para usar o protocolo HTTPS ao se conectar à instância de publicação. Para obter informações completas sobre como configurar agentes de replicação, consulte [Configurando Seus Agentes de Replicação](/help/sites-deploying/replication.md#configuring-your-replication-agents).
+Configure o agente de replicação na instância do autor para usar o protocolo HTTPS ao se conectar à instância de publicação. Para obter informações completas sobre a configuração de agentes de replicação, consulte [Configurar seus agentes de replicação](/help/sites-deploying/replication.md#configuring-your-replication-agents).
 
 Para habilitar o MSSL, configure as propriedades na guia Transport de acordo com a tabela a seguir:
 
@@ -295,4 +294,3 @@ Após configurar o agente de replicação, teste a conexão para determinar se o
 29.08.2014 14:02:46 - Replication (TEST) of /content successful.
 Replication test succeeded
 ```
-

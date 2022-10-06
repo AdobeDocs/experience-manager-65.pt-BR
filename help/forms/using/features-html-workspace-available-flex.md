@@ -1,45 +1,44 @@
 ---
-title: Recursos da área de trabalho do AEM Forms não disponíveis na área de trabalho do Flex
-seo-title: Recursos da área de trabalho do AEM Forms não disponíveis na área de trabalho do Flex
-description: A área de trabalho do AEM Forms inova além da área de trabalho baseada no Flex. Leia sobre as diferenças nos recursos e capacidades.
-seo-description: A área de trabalho do AEM Forms inova além da área de trabalho baseada no Flex. Leia sobre as diferenças nos recursos e capacidades.
+title: Os recursos do AEM Forms workspace não estão disponíveis no Flex workspace
+seo-title: Features of AEM Forms workspace not available in Flex workspace
+description: A área de trabalho do AEM Forms inova além da espaço de trabalho baseada em Flex. Leia sobre as diferenças nos recursos e capacidades.
+seo-description: AEM Forms workspace innovates beyond Flex-based Workspace. Read about differences in features and capabilities.
 uuid: 2c22ce35-8383-4258-b6e3-3d823a453b27
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 66c3cdc4-0e4c-4597-a107-f457dd0cc166
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 4235e0ce-f1c4-432e-b486-2d72c390f320
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
 
+# Os recursos do AEM Forms workspace não estão disponíveis no Flex workspace {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
 
-# Recursos da área de trabalho do AEM Forms não disponíveis na área de trabalho do Flex {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
-
-A área de trabalho da AEM Forms inova muito além da área de trabalho baseada em Flex, para ofertas e recursos que ajudam a melhorar a integração comercial e a produtividade do usuário.
+A área de trabalho do AEM Forms inova além da área de trabalho baseada em Flex, para oferecer recursos e recursos que ajudam a melhorar a integração comercial e a produtividade do usuário.
 
 Veja a seguir uma rápida visão geral desses recursos. Para obter mais detalhes, consulte os artigos relacionados listados no final deste artigo.
 
-## Suporte para um painel de resumo para tarefa {#support-for-a-summary-pane-for-tasks}
+## Suporte para um painel de resumo para tarefas {#support-for-a-summary-pane-for-tasks}
 
-Quando uma tarefa é aberta, antes que o formulário seja aberto, um painel permite que você mostre informações sobre a tarefa usando um URL externo. Usando o Painel Resumo da Tarefa, informações adicionais e relevantes para uma tarefa podem ser exibidas para agregar mais valor ao usuário final da área de trabalho do AEM Forms. Consulte [Exibir página de resumo](/help/forms/using/displaying-information-task-summary-pane.md) para obter os detalhes da implementação.
+Quando uma tarefa é aberta, antes da abertura do formulário, um painel permite mostrar informações sobre a tarefa, usando um URL externo. Usando o Painel de Resumo de Tarefas, informações adicionais e relevantes de uma tarefa podem ser exibidas para adicionar mais valor ao usuário final do espaço de trabalho do AEM Forms. Consulte [Página Exibir Resumo](/help/forms/using/displaying-information-task-summary-pane.md) para obter detalhes sobre a implementação.
 
-## Suporte para a Visualização do Gerente {#support-for-manager-view}
+## Suporte para a visualização do gerenciador {#support-for-manager-view}
 
-Esse recurso permite que os gerentes acessem ou ajam em tarefas de seus relatórios. Os gerentes também podem detalhar, na hierarquia da organização, as tarefas de seus relatórios indiretos. Consulte [Gerenciar tarefas em uma hierarquia organizacional usando a Visualização do Gerenciador](/help/forms/using/tasks-organizational-hierarchy-using-manager.md) para obter mais detalhes.
+Esse recurso permite que os gerentes acessem ou ajam em tarefas de seus relatórios. Os gerentes também podem detalhar, na hierarquia da organização, as tarefas de seus relatórios indiretos. Consulte [Gerenciamento de tarefas em uma hierarquia organizacional usando a Visualização do Gerenciador](/help/forms/using/tasks-organizational-hierarchy-using-manager.md) para obter mais detalhes.
 
-## Suporte para avatars de usuário {#support-for-user-avatars}
+## Suporte para avatares do usuário {#support-for-user-avatars}
 
-As imagens, ou avatares, para usuários conectados agora podem ser exibidas no canto superior direito da área de trabalho do AEM Forms. Além disso, na Visualização Gerenciador, os avatares do usuário podem ser exibidos para mostrar as imagens dos gerentes e seus relatórios. Consulte [Exibindo o avatar do usuário](/help/forms/using/displaying-user-avatar.md) para obter mais detalhes.
+As imagens ou avatares para usuários conectados agora podem ser exibidas no canto superior direito do espaço de trabalho do AEM Forms. Além disso, na Visualização do gerenciador, os avatares do usuário podem ser exibidos para mostrar as imagens dos gerentes e seus relatórios. Consulte [Exibição do avatar do usuário](/help/forms/using/displaying-user-avatar.md) para obter mais detalhes.
 
 ## Suporte para integração de aplicativos de terceiros {#support-for-integrating-third-party-applications}
 
-A capacidade de integração com aplicativos de terceiros pode ser usada para trazer seus workflows totalmente para a área de trabalho da AEM Forms. Por exemplo, você pode renderizar os modelos de carta do Gerenciamento de correspondência como tarefas na própria janela do espaço de trabalho do AEM Forms. Assim, você pode concluir a tarefa sem sair da área de trabalho do AEM Forms. Consulte [Integrando o Gerenciamento de Correspondência no espaço de trabalho AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md) para obter instruções detalhadas.
+A capacidade de integração com aplicativos de terceiros pode ser usada para trazer seus fluxos de trabalho totalmente para a área de trabalho da AEM Forms. Por exemplo, você pode renderizar modelos de carta do Correspondence Management como tarefas dentro da própria janela do espaço de trabalho do AEM Forms. Dessa forma, é possível concluir a tarefa sem sair do espaço de trabalho do AEM Forms. Consulte [Integração do gerenciamento de correspondência na área de trabalho do AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md) para obter instruções detalhadas.
 
 ## Suporte para renderização de tarefa personalizada com base no dispositivo do usuário final {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
-A área de trabalho do AEM Forms oferece suporte para a execução em HTML de formulários XDP. Esse suporte, quando usado em um processo de renderização que roteia para diferentes execuções de XDP com base no dispositivo ou agente do usuário, permite que os usuários visualizações um formulário XDP como HTML nos dispositivos móveis e como PDF em um desktop. Isso ajuda a fornecer uma cobertura contínua do Process Management para usuários que trabalham em vários ambientes em diferentes dispositivos.
+A área de trabalho do AEM Forms oferece suporte para a representação de HTML de formulários XDP. Esse suporte, quando usado em um processo de renderização que encaminha para diferentes representações de XDP com base no dispositivo ou agente do usuário, permite que os usuários visualizem um formulário XDP como HTML nos dispositivos móveis e como PDF em um desktop. Isso ajuda a fornecer uma cobertura contínua do Process Management para usuários que trabalham em ambientes variados em diferentes dispositivos.

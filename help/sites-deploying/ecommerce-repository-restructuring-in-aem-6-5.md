@@ -1,26 +1,25 @@
 ---
 title: Reestruturação do repositório de comércio eletrônico no AEM 6.5
-seo-title: Reestruturação do repositório de comércio eletrônico no AEM 6.5
+seo-title: E-Commerce Repository Restructuring in AEM 6.5
 description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.5 for E-Commerce.
-seo-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.5 for E-Commerce.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for E-Commerce.
 uuid: 1fff1a4b-c8d0-4016-92fb-e2ea26e3a302
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 78b7c497-c474-4308-bfab-8f424b5f7268
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 3%
+source-wordcount: '202'
+ht-degree: 2%
 
 ---
 
-
 # Reestruturação do repositório de comércio eletrônico no AEM 6.5{#e-commerce-repository-restructuring-in-aem}
 
-Conforme descrito na página principal [Reestruturação do Repositório AEM 6.5](/help/sites-deploying/repository-restructuring.md), os clientes que atualizam para AEM 6.5 devem usar esta página para avaliar o esforço de trabalho associado às alterações do repositório que afetam a solução AEM de comércio eletrônico. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.5, enquanto outras podem ser adiadas até uma atualização futura.
+Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md) , os clientes que atualizam para o AEM 6.5 devem usar essa página para avaliar o esforço de trabalho associado às alterações do repositório que afetam a solução AEM de comércio eletrônico. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.5, enquanto outras podem ser adiadas até uma atualização futura.
 
 ## Com a atualização 6.5 {#with-upgrade}
 
@@ -38,7 +37,7 @@ Conforme descrito na página principal [Reestruturação do Repositório AEM 6.5
   </tr>
   <tr>
    <td><strong>Orientação relativa à reestruturação</strong></td>
-   <td><p>Você pode usar uma tarefa <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Lazy Migration</a> para migrar dados de E-Commerce.</p> <p>Ele executa as seguintes etapas:</p>
+   <td><p>Você pode usar um <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Migração preguiçosa</a> tarefa para migrar dados de Comércio Eletrônico.</p> <p>Ele executa as seguintes etapas:</p>
     <ul>
      <li>ajusta referências à localização antiga para apontar para a nova localização</li>
      <li>move o conteúdo do local antigo para o novo local</li>
@@ -58,4 +57,3 @@ Conforme descrito na página principal [Reestruturação do Repositório AEM 6.5
   </tr>
  </tbody>
 </table>
-

@@ -1,22 +1,21 @@
 ---
 title: Adicionar informações dos dados do usuário aos metadados de envio de formulário
-seo-title: Adicionar informações dos dados do usuário aos metadados de envio de formulário
-description: 'Saiba como adicionar informações aos metadados de um formulário enviado com dados fornecidos pelo usuário. '
-seo-description: 'Saiba como adicionar informações aos metadados de um formulário enviado com dados fornecidos pelo usuário. '
+seo-title: Adding information from user data to form submission metadata
+description: Saiba como adicionar informações aos metadados de um formulário enviado com dados fornecidos pelo usuário.
+seo-description: Learn how to add information to metadata of a submitted form with user provided data.
 uuid: c3eea3c0-31f8-4bf8-b5cf-34f907bdbdba
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
-
 
 # Adicionar informações dos dados do usuário aos metadados de envio de formulário{#adding-information-from-user-data-to-form-submission-metadata}
 
@@ -28,18 +27,18 @@ Por exemplo, uma empresa de seguros de saúde publica um formulário. Nesse form
 
 Considere outro exemplo de um formulário que captura a ID do email e o número de telefone. Quando um usuário visita esse formulário anonimamente e abandona o formulário, o autor pode configurar o formulário para salvar automaticamente a id do email e o número de telefone. Este formulário é salvo automaticamente e o número de telefone e a ID de email são armazenados no nó de metadados do rascunho. Um caso de uso dessa configuração é o painel de gerenciamento de clientes potenciais.
 
-## Adicionar elementos de formulário aos metadados {#adding-form-elements-to-metadata}
+## Adição de elementos de formulário aos metadados {#adding-form-elements-to-metadata}
 
 Execute as seguintes etapas para adicionar um elemento nos metadados:
 
 1. Abra o formulário adaptável no modo de edição.\
-   Para abrir seu formulário no modo de edição, no Gerenciador de formulários, selecione seu formulário e toque em **Abrir**.
+   Para abrir o formulário no modo de edição, no Gerenciador de formulários, selecione o formulário e toque em **Abrir**.
 1. No modo de edição, selecione um componente, toque em ![nível de campo](assets/field-level.png) > **Contêiner de formulário adaptável** e toque em ![cmppr](assets/cmppr.png).
 1. Na barra lateral, clique em **Metadados**.
 1. Na seção Metadados , clique em **Adicionar**.
 1. Use o campo Value da guia Metadata para adicionar scripts. Os scripts adicionados coletam dados de elementos no formulário e calculam valores alimentados aos metadados.
 
-   Por exemplo, **true** é registrado nos metadados se a idade inserida for maior que 21, e **false** for registrado se for menor que 21. Digite o seguinte script na guia Metadados:
+   Por exemplo, **true** estiver registrado nos metadados se a idade inserida for maior que 21, e **false** é registrado se for menor que 21. Digite o seguinte script na guia Metadados:
 
    `(agebox.value >= 21) ? true : false`
 
@@ -61,11 +60,10 @@ Se você adicionar um elemento de caixa de seleção nos metadados, os valores s
 
 ![Armazenamento de vários valores de uma caixa de seleção](assets/checkbox-metadata.png)
 
-Você seleciona um contêiner de formulário adaptável e, nas propriedades do formulário, adiciona uma chave de metadados `cb1` que armazena `checkbox1.value` e publica o formulário. Quando um cliente preenche o formulário, o cliente seleciona as opções Passport e Social Security Number no campo de caixa de seleção. Os valores 1 e 2 são armazenados como 1, 2 no campo cb1 dos metadados de envio.
+Você seleciona um contêiner de formulário adaptável e, nas propriedades do formulário, adiciona uma chave de metadados `cb1` que armazena `checkbox1.value`e publicar o formulário. Quando um cliente preenche o formulário, o cliente seleciona as opções Passport e Social Security Number no campo de caixa de seleção. Os valores 1 e 2 são armazenados como 1, 2 no campo cb1 dos metadados de envio.
 
 ![Entrada de metadados para vários valores selecionados em um campo de caixa de seleção](assets/metadata-entry.png)
 
 >[!NOTE]
 >
 >O exemplo acima é somente para fins de aprendizagem. Certifique-se de procurar metadados no local correto, conforme configurado na implementação do AEM Forms.
-

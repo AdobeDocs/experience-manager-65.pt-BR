@@ -1,8 +1,8 @@
 ---
-title: Criação de página com fragmentos do conteúdo
-seo-title: Criação de página com fragmentos de conteúdo
+title: Criação de página com fragmentos de conteúdo
+seo-title: Page Authoring with Content Fragments
 description: Fragmentos de conteúdo do AEM permitem que você projete, crie, prepare e use conteúdo independente de página
-seo-description: Fragmentos de conteúdo do AEM permitem que você projete, crie, prepare e use conteúdo independente de página
+seo-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
 uuid: 987de428-8354-4b23-a552-3ea415122184
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1140'
 ht-degree: 99%
 
 ---
-
 
 # Criação de página com fragmentos de conteúdo{#page-authoring-with-content-fragments}
 
@@ -33,10 +32,8 @@ Juntamente com o exportador JSON atualizado, os fragmentos de conteúdo estrutur
 >
 >* **Fragmentos de conteúdo** são conteúdos editoriais, principalmente texto e imagens relacionadas. Eles são puro conteúdo, sem design e layout.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
-
 >
->
-Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
+>Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
 
 >[!CAUTION]
 >
@@ -136,7 +133,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 
 * **Tratar cabeçalhos como seus próprios parágrafos**
 
-### Conexão rápida no editor de fragmentos     {#quick-connection-to-fragment-editor}
+### Conexão rápida no editor de fragmentos    {#quick-connection-to-fragment-editor}
 
 É possível abrir a origem do fragmento para edição (o ativo) usando o ícone **Editar** na barra de ferramentas do componente. Assim, você pode [editar e gerenciar o fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md).
 
@@ -144,7 +141,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 >
 >Como sempre, editar a origem do fragmento afetará todas as páginas que fazem referência a esse fragmento de conteúdo.
 
-### Adicionar conteúdo intermediário      {#adding-in-between-content}
+### Adicionar conteúdo intermediário     {#adding-in-between-content}
 
 Quando um fragmento de conteúdo específico for adicionado à página, há um espaço reservado para **Arrastar os componentes aqui** entre cada parágrafo HTML (e na parte superior/inferior) do fragmento.
 
@@ -176,17 +173,14 @@ Para conteúdo intermediário, você pode:
 >
 >* Os componentes intermediários têm uma posição absoluta na sequência de componentes do fluxo de fragmentos. Essa posição não muda, mesmo quando o conteúdo dos parágrafos no fragmento sofre alteração.
 >
->  
-Isso causa a impressão de que o posicionamento relativo mudou, pois os parágrafos intermediários não têm relacionamento contextual com os parágrafos (fragmento) ao lado dos quais estão posicionados.
+>  Isso causa a impressão de que o posicionamento relativo mudou, pois os parágrafos intermediários não têm relacionamento contextual com os parágrafos (fragmento) ao lado dos quais estão posicionados.
 >* A menos que as duas estruturas de parágrafo entrem em conflito; nesse caso, o conteúdo intermediário não é exibido (embora ainda esteja presente internamente).
-
 >
 
 
+### Usar conteúdo associado     {#using-associated-content}
 
-### Usar conteúdo associado      {#using-associated-content}
-
-Se você tiver [conteúdo associado ](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial de conteúdo do [conteúdo intermediário](#adding-in-between-content).
+Se você tiver [conteúdo associado](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial de conteúdo do [conteúdo intermediário](#adding-in-between-content).
 
 >[!NOTE]
 >
@@ -204,7 +198,7 @@ Aqui, é possível arrastar os ativos para o local desejado (para um componente 
 
 ### Ativos inseridos no fragmento {#assets-inserted-into-the-fragment}
 
-Se os ativos (por exemplo, imagens) tiverem sido inseridos no próprio fragmento, as opções para editar esses ativos no editor de páginas serão limitadas.  <!-- Removed link as it was a 404 on helpx -->
+Se os ativos (por exemplo, imagens) tiverem sido inseridos no próprio fragmento, as opções para editar esses ativos no editor de páginas serão limitadas. <!-- Removed link as it was a 404 on helpx -->
 
 Por exemplo, para uma imagem, é possível
 
@@ -219,6 +213,5 @@ Outras alterações, como mover, copiar ou excluir, devem ser feitas no editor d
 
 Os fragmentos precisam ser publicados para que possam ser usados em suas páginas da Web publicadas:
 
-* Um fragmento pode ser publicado depois de [ criar o fragmento no console de Ativos](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
+* Um fragmento pode ser publicado depois de [criar o fragmento no console de Ativos](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
 * Se um *fragmento não publicado* for usado em uma página que está sendo publicada, ele também poderá ser publicado neste momento.
-

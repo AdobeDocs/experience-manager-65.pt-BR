@@ -1,10 +1,11 @@
 ---
 title: Saiba mais sobre o desenvolvimento sem periféricos do CMS
 description: Nesta parte da Jornada de desenvolvedores sem periféricos AEM, saiba mais sobre a tecnologia sem periféricos e por que usá-la.
-source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
+exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1595'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -14,7 +15,7 @@ Nesta parte do [AEM Jornada de desenvolvedor sem periféricos,](overview.md) sai
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender a entrega de conteúdo sem periféricos e por que ele deve ser usado. Depois de ler, você deve:
+Este documento ajuda você a entender a entrega de conteúdo sem periféricos e por que ele deve ser usado. Depois de ler esse documento, você deverá:
 
 * Entenda os conceitos básicos e a terminologia da entrega de conteúdo sem periféricos
 * Entenda por que e quando o headless é necessário
@@ -59,7 +60,7 @@ Um servidor sem periféricos, por exemplo, provavelmente está sentado em um rac
 
 Quando falamos de um CMS sem interface, o CMS gerencia o conteúdo e continua a entregá-lo aos consumidores. No entanto, apenas entregando a variável **conteúdo** de forma padronizada, um CMS sem periféricos omita a renderização final de output, deixando o **apresentação** do conteúdo para o serviço de consumo.
 
-![CMS sem periféricos](assets/headless-cms.png)
+![CMS headless](assets/headless-cms.png)
 
 Os serviços que consomem, sejam experiências de AR, um webshop, experiências móveis, aplicativos web progressivos (PWA), etc., absorvem conteúdo do CMS sem cabeçalho e fornecem sua própria renderização. Eles cuidam de fornecer suas próprias cabeças para o seu conteúdo.
 
@@ -125,4 +126,4 @@ Aproveite esse conhecimento e prossiga com sua jornada sem periféricos AEM ao p
 
 Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento sem periféricos revisando o documento [Introdução ao AEM Headless](getting-started.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não é necessário que eles continuem na jornada sem periféricos.
 
-* [AEM Tutorials sem cabeça](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com o AEM e escolha o que é certo para você.
+* [AEM Tutorials sem cabeça](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com o AEM e escolha o que é certo para você.

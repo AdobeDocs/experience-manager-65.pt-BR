@@ -1,22 +1,21 @@
 ---
 title: Visualização de páginas usando dados do ContextHub
-seo-title: Visualização de páginas usando dados do ContextHub
+seo-title: Previewing Pages Using ContextHub Data
 description: A barra de ferramentas do ContextHub exibe os dados dos armazenamentos do ContextHub, permite alterar esses dados e é útil para visualizar o conteúdo
-seo-description: A barra de ferramentas do ContextHub exibe os dados dos armazenamentos do ContextHub, permite alterar esses dados e é útil para visualizar o conteúdo
+seo-description: The ContextHub toolbar displays data from ContextHub stores and enables you to change store data and  is useful for previewing content
 uuid: 0150555a-0a92-4692-a706-bbe59fd34d6a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 93%
+source-wordcount: '365'
+ht-degree: 96%
 
 ---
-
 
 # Visualização de páginas usando dados do ContextHub{#previewing-pages-using-contexthub-data}
 
@@ -49,9 +48,9 @@ A barra de ferramentas do ContextHub está disponível no modo de Visualização
 
 Cada módulo de interface fornece um conjunto diferente de recursos, mas os tipos de recursos a seguir são os mais comuns. Como os módulos de interface podem ser estendidos, o desenvolvedor pode implementar outros recursos, conforme necessário.
 
-### Conteúdo da barra de ferramentas  {#toolbar-content}
+### Conteúdo da barra de ferramentas {#toolbar-content}
 
-Os módulos de interface podem exibir dados de um ou mais armazenamentos do ContextHub na barra de ferramentas. Os módulos de interface usam um ícone e um título para se identificar.
+Os módulos de interface podem exibir dados de um ou mais armazenamentos do ContextHub na barra de ferramentas. Os módulos de interface usam um ícone e um título para se identificarem.
 
 ![screen_shot_2018-03-23at093936](assets/screen_shot_2018-03-23at093936.png)
 
@@ -65,9 +64,8 @@ Alguns módulos de interface exibem uma sobreposição de pop-up quando clicados
 
 A sobreposição de pop-up de um módulo pode incluir elementos de formulário que permitem alterar os dados no armazenamento do ContextHub. Se o conteúdo da página for determinado pelos dados do armazenamento, será possível usar o formulário e observar as alterações no conteúdo da página.
 
-### Modo de tela cheia  {#fullscreen-mode}
+### Modo de tela cheia {#fullscreen-mode}
 
 As sobreposições de pop-up podem incluir um ícone que você clica ou toca para expandir o conteúdo do pop-up a toda a janela do navegador ou a tela.
 
 ![](do-not-localize/chlimage_1-18.png)
-

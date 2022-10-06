@@ -1,49 +1,48 @@
 ---
-title: Configuração dos pontos finais do Gerenciador de Tarefas
-seo-title: Configuração dos pontos finais do Gerenciador de Tarefas
-description: Saiba como configurar os pontos de extremidade do Tarefa Manager.
-seo-description: Saiba como configurar os pontos de extremidade do Tarefa Manager.
+title: Configurando endpoints do Gerenciador de Tarefas
+seo-title: Configuring Task Manager endpoints
+description: Saiba como configurar endpoints do Gerenciador de tarefas.
+seo-description: Learn how to configure Task Manager endpoints.
 uuid: 07604b10-0bd7-4bce-9624-7ebac4754f56
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9c55feb9-23d8-4798-a3c5-70ec736df3ad
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 8495a3d7-6ac9-41f5-b1f9-31decaba118a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
 
+# Configurando endpoints do Gerenciador de Tarefas {#configuring-task-manager-endpoints}
 
-# Configurando pontos finais do Gerenciador de Tarefas {#configuring-task-manager-endpoints}
+Os endpoints do Gerenciador de tarefas permitem que os usuários do Workspace chamem o serviço.
 
-Os pontos de extremidade do Gerenciador de tarefas permitem que os usuários do Workspace chamem o serviço.
+**Configurações de ponto de extremidade do Gerenciador de Tarefas**
 
-**Configurações de ponto de extremidade do Gerenciador de tarefas**
+Use as seguintes configurações para configurar um ponto de extremidade do Gerenciador de Tarefas.
 
-Use as seguintes configurações para configurar um terminal do Gerenciador de Tarefas.
+**Nome:** (Obrigatório) Identifica o ponto de extremidade. O nome é exibido na exibição de cartão no Workspace. Não inclua um caractere &lt; porque ele truncará o nome exibido no Workspace. Se estiver inserindo um URL como o nome do ponto de extremidade, verifique se ele está em conformidade com as regras de sintaxe especificadas na RFC1738.
 
-**Nome:** (Obrigatório) Identifica o endpoint. O nome é exibido na visualização do cartão no Workspace. Não inclua um caractere &lt; porque ele truncará o nome exibido no Workspace. Se você estiver inserindo um URL como o nome do ponto de extremidade, verifique se ele está em conformidade com as regras de sintaxe especificadas em RFC1738.
+**Descrição:** Uma descrição do ponto de extremidade. Não inclua um caractere &lt; porque ele truncará a descrição exibida no Workspace.
 
-**Descrição:** uma descrição do ponto final. Não inclua um caractere &lt; porque ele truncará a descrição exibida no Workspace.
-
-**Instruções de tarefa:** Instruções para o usuário que start esse fluxo de trabalho.
+**Instruções da tarefa:** Instruções para o usuário que inicia esse fluxo de trabalho.
 
 **Proprietário do Processo:** O nome da pessoa responsável pelo processo.
 
-**O usuário pode encaminhar a Tarefa:** permite que o usuário encaminhe a tarefa inicial.
+**O Usuário Pode Encaminhar A Tarefa:** Permite que o usuário encaminhe a tarefa inicial.
 
-**Mostrar janela de anexo:** permite que o usuário veja a janela de anexo.
+**Mostrar janela do anexo:** Permite que o usuário veja a janela de anexo.
 
-**Permitir adição de anexo:** permite que o usuário adicione anexos e observações.
+**Permitir adição de anexo:** Permite que o usuário adicione anexos e notas.
 
-**Tarefa inicialmente travada:** trava a tarefa inicial.
+**Tarefa Inicialmente Bloqueada:** Bloqueia a tarefa inicial.
 
-**Adicionar ACLs para filas compartilhadas:** a tarefa inicial é criada com ACLs para usuários de filas compartilhadas.
+**Adicionar ACLs para filas compartilhadas:** A tarefa inicial é criada com ACLs para usuários de fila compartilhada.
 
-**Categorização:** (Obrigatória) A categoria na qual o usuário visualizará o formulário no Workspace. Selecione uma categoria na lista ou selecione Nova Categoria para adicionar uma categoria.
+**Categorização:** (Obrigatório) A categoria na qual o usuário verá o formulário no Workspace. Selecione uma categoria na lista ou selecione Nova categoria para adicionar uma categoria.
 
-**Nome da Operação:**  (Obrigatório) Uma lista de operações que podem ser atribuídas ao ponto final.
+**Nome da Operação:** (Obrigatório) Uma lista de operações que podem ser atribuídas ao endpoint.

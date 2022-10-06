@@ -46,7 +46,7 @@ Em seguida, dependendo do tipo de experiência que você está criando, será ne
 * Se estiver criando uma oferta do Adobe Target (anteriormente, Test&amp;Target):
 
    1. [Crie uma experiência de oferta do Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
-   1. [Faça a integração com o Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
+   1. [Fazer a integração com o Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Agora que você criou a estrutura básica da experiência, é necessário contin
 
 * [Oferta do Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
-   * [Faça a integração com o Adobe Target](/help/sites-administering/target.md)
+   * [Fazer a integração com o Adobe Target](/help/sites-administering/target.md)
 
 ### Adição de um novo ponto de interação {#adding-a-new-touchpoint}
 

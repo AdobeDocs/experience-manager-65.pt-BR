@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Adobe Camera Raw] suporte para processar ativos digitais"'
+title: "[!DNL Adobe Camera Raw] suporte para processar ativos digitais"
 description: Saiba como habilitar [!DNL Adobe Camera Raw] suporte no [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
 role: Admin

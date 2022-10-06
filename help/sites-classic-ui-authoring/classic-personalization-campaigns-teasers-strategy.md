@@ -1,8 +1,8 @@
 ---
 title: Teasers e estratégias
-seo-title: Teasers e estratégias
+seo-title: Teasers and Strategies
 description: Campanhas costumam usar teasers como um mecanismo para atrair um segmento específico da população visitante até o conteúdo focado em seus interesses. Um ou mais teasers são definidos para uma campanha específica.
-seo-description: Campanhas costumam usar teasers como um mecanismo para atrair um segmento específico da população visitante até o conteúdo focado em seus interesses. Um ou mais teasers são definidos para uma campanha específica.
+seo-description: Campaigns often use teasers as a mechanism to entice a specific segment of the visitor population through to content focused on their interests. One or more teasers are defined for a specific campaign.
 uuid: c78ec858-4b0a-48d5-99b2-5ddd9e15183d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 7f378b94-5233-4358-8d93-a7b3386df00b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1200'
 ht-degree: 82%
 
 ---
-
 
 # Teasers e estratégias{#teasers-and-strategies}
 
@@ -27,33 +26,33 @@ Campanhas costumam usar teasers como um mecanismo para atrair um segmento espec�
 >
 >O componente Teaser foi descontinuado no AEM 6.2. Use o [componente Target](/help/sites-authoring/content-targeting-touch.md) em vez disso.
 
-* **As** páginas de marca são armazenadas na seção Campanhas do site. Uma marca contém as campanhas individuais.
-* **As** páginas de campanha são armazenadas na seção Campanhas do site. Cada campanha tem uma página individual, na qual as definições de teaser são mantidas. A página de contêiner, ou visão geral, também inclui algumas informações e estatísticas sobre as páginas de teaser individuais.
+* **Páginas da marca** são armazenadas na seção Campanhas do site. Uma marca contém as campanhas individuais.
+* **Páginas da campanha** são armazenadas na seção Campanhas do site. Cada campanha tem uma página individual, na qual as definições de teaser são mantidas. A página de contêiner, ou visão geral, também inclui algumas informações e estatísticas sobre as páginas de teaser individuais.
 
 Os teasers no AEM são compostos por várias partes:
 
-* **As** páginas do teaser são armazenadas na página de campanha apropriada e mantêm as definições dos parágrafos do teaser disponíveis para cada campanha específica. Essas definições são usadas ao exibir os parágrafos de teaser, incluindo variações de conteúdo, o segmento a ser usado para selecionar uma variação e um fator de reforço.
-* O **componente Teaser** está disponível para uso imediato e permite que você crie uma instância do seu parágrafo de teaser específico em uma página de conteúdo. É possível arrastar o componente de teaser do sidekick e especificar sua definição para criar seu próprio parágrafo de teaser. **Observação:** o componente Teaser foi substituído no AEM 6.2. Em vez disso, use o  [componente ](/help/sites-authoring/content-targeting-touch.md) Público alvo.
+* **Páginas de Teaser** são armazenadas na página de campanha apropriada e contêm as definições dos parágrafos de teaser disponíveis para cada campanha específica. Essas definições são usadas ao exibir os parágrafos de teaser, incluindo variações de conteúdo, o segmento a ser usado para selecionar uma variação e um fator de reforço.
+* O **componente Teaser** está disponível para uso imediato e permite que você crie uma instância do seu parágrafo de teaser específico em uma página de conteúdo. É possível arrastar o componente de teaser do sidekick e especificar sua definição para criar seu próprio parágrafo de teaser. **Observação:** O componente Teaser foi descontinuado no AEM 6.2. Use o [Componente de destino](/help/sites-authoring/content-targeting-touch.md) em vez disso.
 * Os **parágrafos de Teaser** são instâncias reais do seu teaser dentro de uma página de conteúdo. Eles atraem um segmento de visitantes para um conteúdo focado em seus interesses.
 * As páginas que contêm o conteúdo da campanha focado em um segmento específico de visitantes. Geralmente, os parágrafos de teaser direcionarão o visitante a essas páginas.
 
 ## Estratégias {#strategies}
 
-Ao adicionar um parágrafo teaser a uma página, é necessário definir a **Estratégia**.
+Ao adicionar um parágrafo de teaser a uma página, é necessário definir a variável **Estratégia**.
 
 Isso é para o caso de vários teasers estarem disponíveis para seleção, pois todos os segmentos atribuídos resolvem com sucesso. A **Estratégia** especifica os critérios adicionais usados para selecionar o teaser mostrado:
 
 * A **Pontuação de sequência de cliques** baseia-se nas tags e nas ocorrências de tag relacionadas mantidas no contexto de cliente do visitante (mostram com que frequência um visitante clicou em páginas que contêm a respectiva tag). As taxas de ocorrência de tags definidas na página de teaser são comparadas.
-* **Aleatório**, para seleção &quot;aleatória&quot;; usa o fator aleatório gerado para uma página, isso pode ser visto com o contexto [ do ](/help/sites-administering/client-context.md)cliente.
-* **** Determine a lista dos segmentos resolvidos. A ordem é a dos teasers na página do contêiner da campanha.
+* **Random**, para a seleção &quot;aleatória&quot;; usa o fator aleatório gerado para uma página, isso pode ser visto com a variável [contexto do cliente](/help/sites-administering/client-context.md).
+* **First** na lista de segmentos resolvidos. A ordem é a dos teasers na página do contêiner da campanha.
 
-O [Fator de aumento](/help/sites-administering/campaign-segmentation.md#boost-factor) do segmento também tem um impacto na seleção. Este é um fator de ponderação adicionado a uma definição de segmento para aumentar/diminuir a probabilidade relativa de ser selecionado.
+O [Fator de reforço](/help/sites-administering/campaign-segmentation.md#boost-factor) do segmento também afeta a seleção. Este é um fator de ponderação adicionado a uma definição de segmento para aumentar/diminuir a probabilidade relativa de ser selecionado.
 
 O processo e as relações entre os diferentes critérios de seleção podem ser ilustrados melhor com um exemplo (um método que também pode ser usado para garantir que seus teasers atingirão o público exigido).
 
 Se os segmentos a seguir já tiverem sido criados e atribuídos com seu respectivo Fator de reforço:
 
-| Segmento | Fator de aumento |
+| Segmento | Fator de reforço |
 |---|---|
 | S1 | 0 |
 | S2 | 0 |
@@ -67,7 +66,7 @@ E usamos as seguintes definições de teaser:
 <table>
  <tbody>
   <tr>
-   <td>Campanha</td>
+   <td>Campaign</td>
    <td>Teaser</td>
    <td>Segmentos atribuídos</td>
    <td>Tags atribuídas </td>
@@ -113,7 +112,7 @@ E usamos as seguintes definições de teaser:
 
 Em seguida, se aplicarmos isso a um visitante, em que:
 
-* **S1**,  **S2** e  **S6** resolvem com êxito
+* **S1**, **S2** e **S6** resolução com êxito
 
 * a tag **marketing** tem 3 ocorrências
 * a tag **comercial** tem 6 ocorrências
@@ -134,7 +133,7 @@ que são calculados antes da aplicação da estratégia apropriada:
    <td>Segmentos atribuídos</td>
    <td>Tags </td>
    <td>Correspondência bem-sucedida?</td>
-   <td>Fator de aumento resultante</td>
+   <td>Fator de reforço resultante</td>
    <td>Pontuação de sequência de cliques resultante </td>
   </tr>
   <tr>
@@ -206,17 +205,17 @@ Esses valores são usados para determinar os teasers que o visitante verá, depe
   <tr>
    <td>Primeiro</td>
    <td>T5</td>
-   <td>Somente T5 e T6 são considerados como seus segmentos todos resolvem <i>e</i> eles têm o fator de aumento mais alto. A lista retornada está na ordem de T5, T6; assim, T5 será selecionado e exibido.</td>
+   <td>Somente T5 e T6 são considerados, pois todos os seus segmentos resolvem <i>e</i> têm o maior fator de reforço. A lista retornada está na ordem de T5, T6; assim, T5 será selecionado e exibido.</td>
   </tr>
   <tr>
    <td>Aleatório</td>
    <td>T5 ou T6</td>
-   <td>Ambos os teasers têm segmentos que todos resolvem e o mesmo fator de aumento. Portanto, os dois teasers serão mostrados em proporções iguais.</td>
+   <td>Ambos os teasers têm segmentos que são resolvidos e o mesmo fator de reforço. Portanto, os dois teasers serão mostrados em proporções iguais.</td>
   </tr>
   <tr>
    <td>Pontuação da sequência de cliques</td>
    <td>T6</td>
-   <td><p>Os segmentos para T1, T4, T5 e T6 são resolvidos para o visitante. Os maiores fatores de reforço de T5 e T6 e, portanto, T1 e T4 são excluídos. Por fim, a pontuação de sequência de cliques mais alta de T6 resulta na sua seleção.</p> </td>
+   <td><p>Segmentos para T1, T4, T5 e T6 são resolvidos para o visitante. Os maiores fatores de reforço de T5 e T6 e, portanto, T1 e T4 são excluídos. Por fim, a pontuação de sequência de cliques mais alta de T6 resulta na sua seleção.</p> </td>
   </tr>
  </tbody>
 </table>

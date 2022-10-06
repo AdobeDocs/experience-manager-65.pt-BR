@@ -1,8 +1,8 @@
 ---
 title: Anotações ao editar uma página
-seo-title: Anotações ao editar uma página
+seo-title: Annotations when Editing a Page
 description: Com frequência, a adição de conteúdo às páginas do seu website está sujeita a discussões antes da publicação efetiva. Para ajudar, muitos componentes relacionados diretamente ao conteúdo permitem adicionar uma anotação.
-seo-description: Com frequência, a adição de conteúdo às páginas do seu website está sujeita a discussões antes da publicação efetiva. Para ajudar, muitos componentes relacionados diretamente ao conteúdo permitem adicionar uma anotação.
+seo-description: Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content allow you to add an annotation.
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
-translation-type: tm+mt
-source-git-commit: c8a02ad9fc33e963d2c760840e70c40ede988054
+exl-id: d60e9601-d15b-4378-a33e-e90961f63195
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '782'
 ht-degree: 92%
 
 ---
-
 
 # Anotações ao editar uma página{#annotations-when-editing-a-page}
 
@@ -39,7 +38,7 @@ Uma anotação coloca um marcador colorido/nota adesiva na página. A anotação
 
 >[!NOTE]
 >
->Dependendo dos seus requisitos, você também pode desenvolver um fluxo de trabalho para enviar notificações quando as anotações forem adicionadas, atualizadas ou excluídas.
+>Dependendo dos seus requisitos, também é possível desenvolver um fluxo de trabalho para enviar notificações quando anotações são adicionadas, atualizadas ou excluídas.
 
 ## Anotações {#annotations}
 
@@ -79,9 +78,7 @@ Os três ícones no canto superior esquerdo permitem minimizar a anotação (jun
 >
 >* o ícone não será mostrado.
 >* os rascunhos existentes, criados em outro navegador, não serão mostrados.
-
 >
-
 
 
 Os rascunhos são um recurso de anotações que permitem criar gráficos de linhas simples em qualquer lugar na janela do navegador (porção visível):
@@ -97,7 +94,7 @@ Os rascunhos são um recurso de anotações que permitem criar gráficos de linh
 
    * reto:
 
-      mantenha pressionada a tecla `ALT` e clique no start e nos pontos finais; termine com um clique de duplo.
+      manter pressionado `ALT` e clique nos pontos de início e fim; termine com um clique duplo.
 
 * Depois que você sair do modo de rascunho, poderá clicar em uma linha de rascunho para selecionar esse rascunho.
 * Para mover um rascunho, selecione-o e depois arraste-o para a posição desejada.
@@ -106,4 +103,3 @@ Os rascunhos são um recurso de anotações que permitem criar gráficos de linh
 
 * Se você mover ou copiar um parágrafo; as anotações relacionadas e seus rascunhos também serão movidos ou copiados; sua posição em relação ao parágrafo permanecerá a mesma.
 * Se você excluir uma anotação; todos os rascunhos associados a essa anotação serão excluídos também.
-

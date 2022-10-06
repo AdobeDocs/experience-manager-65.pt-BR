@@ -1,5 +1,5 @@
 ---
-title: 'Criação de conteúdo acessível (Conformidade com a WCAG 2.0)  '
+title: Criação de conteúdo acessível (Conformidade com a WCAG 2.0)
 seo-title: Creating Accessible Content (WCAG 2.0 Conformance)
 description: A WCAG 2.0 consiste em um conjunto de diretrizes de tecnologia independentes e critérios de sucesso para ajudar a tornar o conteúdo da Web acessível e utilizável para pessoas com necessidades especiais.
 seo-description: WCAG 2.0 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.

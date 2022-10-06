@@ -1,8 +1,8 @@
 ---
 title: Emuladores
-seo-title: Emuladores
-description: AEM permite que os autores visualizações uma página em um emulador que simula o ambiente no qual um usuário final visualização a página
-seo-description: AEM permite que os autores visualizações uma página em um emulador que simula o ambiente no qual um usuário final visualização a página
+seo-title: Emulators
+description: AEM permite que os autores visualizem uma página em um emulador que simula o ambiente em que um usuário final visualizará a página
+seo-description: AEM enables authors to view a page in an emulator that simulates the environment in which an end-user will view the page
 uuid: ee1496a5-be68-4318-b5ce-b11c41e4485c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,47 +10,46 @@ topic-tags: mobile-web
 content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 0%
+source-wordcount: '631'
+ht-degree: 1%
 
 ---
-
 
 # Emuladores{#emulators}
 
 >[!NOTE]
 >
->A Adobe recomenda o uso do Editor de SPA para projetos que exigem renderização do cliente baseada em estrutura de aplicativo de página única (por exemplo, Reagir). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-O Adobe Experience Manager (AEM) permite que os autores visualizações uma página em um emulador que simula o ambiente no qual um usuário final visualização a página, como, por exemplo, em um dispositivo móvel ou em um cliente de email.
+O Adobe Experience Manager (AEM) permite que os autores visualizem uma página em um emulador que simula o ambiente em que um usuário final visualizará a página, como em um dispositivo móvel ou em um cliente de email.
 
 A estrutura do emulador de AEM:
 
-* Fornece a criação de conteúdo em uma interface de usuário (UI) simulada, por exemplo, um dispositivo móvel ou um cliente de email (usado para criar boletins informativos).
-* Adapta o conteúdo da página de acordo com a interface simulada.
+* Fornece criação de conteúdo em uma interface de usuário simulada, por exemplo, um dispositivo móvel ou um cliente de email (usado para criar informativos).
+* Adapta o conteúdo da página de acordo com a interface do usuário simulada.
 * Permite a criação de emuladores personalizados.
 
 >[!CAUTION]
 >
->Esse recurso é suportado somente na interface clássica.
+>Esse recurso é compatível somente na interface do usuário clássica.
 
 ## Características dos emuladores {#emulators-characteristics}
 
 Um emulador:
 
 * É baseado em ExtJS.
-* Opera na página DOM.
-* Sua aparência é regulamentada pelo CSS.
+* Opera no DOM da página.
+* Sua aparência é regulamentada por CSS.
 * Suporta plug-ins (por exemplo, o plug-in de rotação de dispositivos móveis).
 * Está ativo somente no autor.
-* Seu componente básico está em `/libs/wcm/emulator/components/base`.
+* Seu componente base está em `/libs/wcm/emulator/components/base`.
 
-### Como o Emulador Transforma o Conteúdo {#how-the-emulator-transforms-the-content}
+### Como o emulador transforma o conteúdo {#how-the-emulator-transforms-the-content}
 
-O emulador funciona vinculando o conteúdo do corpo HTML em DIVs do emulador. Por exemplo, o seguinte código html:
+O emulador funciona embrulhando o conteúdo do corpo de HTML em DIVs do emulador. Por exemplo, o seguinte código html:
 
 ```xml
 <body>
@@ -63,7 +62,7 @@ O emulador funciona vinculando o conteúdo do corpo HTML em DIVs do emulador. Po
 </body>
 ```
 
-é transformado no seguinte código html após o start do emulador:
+é transformado no seguinte código html após o início do emulador:
 
 ```xml
 <body>
@@ -90,45 +89,45 @@ O emulador funciona vinculando o conteúdo do corpo HTML em DIVs do emulador. Po
 
 Duas tags div foram adicionadas:
 
-* div com a id `cq-emulator` segurando o emulador como um todo e
+* o div com id `cq-emulator` manter o emulador como um todo e
 
-* a div com a id `cq-emulator-content` que representa a janela de visualização/tela/área de conteúdo do dispositivo na qual o conteúdo da página reside.
+* o div com id `cq-emulator-content` representando a janela de visualização/tela/área de conteúdo do dispositivo na qual o conteúdo da página reside.
 
-As novas classes CSS também são atribuídas aos novos divs do emulador: representam o nome do emulador atual.
+Novas classes CSS também são atribuídas aos novos mergulhadores do emulador: eles representam o nome do emulador atual.
 
-Os plug-ins de um emulador podem estender ainda mais a lista das classes CSS atribuídas, como no exemplo do plug-in de rotação, inserindo uma classe &quot;vertical&quot; ou &quot;horizontal&quot; dependendo da rotação atual do dispositivo.
+Os plug-ins de um emulador podem estender ainda mais a lista de classes CSS atribuídas, como no exemplo do plug-in de rotação, inserindo uma classe &quot;vertical&quot; ou &quot;horizontal&quot; dependendo da rotação atual do dispositivo.
 
-Dessa forma, a aparência completa do emulador pode ser controlada por ter classes CSS correspondentes às classes IDs e CSS do emulador divs.
+Dessa forma, a aparência completa do emulador pode ser controlada com classes CSS correspondentes às IDs e classes CSS dos mergulhadores.
 
 >[!NOTE]
 >
->É recomendável que o HTML do projeto envolva o conteúdo do corpo em uma única div, como no exemplo acima. Se o conteúdo do corpo contiver várias tags, pode haver resultados imprevisíveis.
+>Recomenda-se que o HTML do projeto envolva o conteúdo do corpo em uma única div, como no exemplo acima. Se o conteúdo do corpo contiver várias tags, pode haver resultados imprevisíveis.
 
 ### Emuladores móveis {#mobile-emulators}
 
 Os emuladores móveis existentes:
 
-* Estão abaixo de /libs/wcm/mobile/components/emuladores.
+* Estão abaixo de /libs/wcm/mobile/components/emulators.
 * Estão disponíveis através do servlet JSON em:
 
    http://localhost:4502/bin/wcm/mobile/emulators.json
 
 Quando o componente de página depende do componente de página móvel ( `/libs/wcm/mobile/components/page`), a funcionalidade do emulador é integrada automaticamente na página por meio do seguinte mecanismo:
 
-* O componente de página móvel `head.jsp` inclui o componente de inicialização do emulador associado do grupo de dispositivos (somente no modo do autor) e a renderização do CSS pelo grupo de dispositivos através de:
+* O componente de página móvel `head.jsp` O inclui o componente de inicialização do emulador associado do grupo de dispositivos (somente no modo de autor) e a renderização de CSS do grupo de dispositivos por meio de:
 
    `deviceGroup.drawHead(pageContext);`
 
-* O método `DeviceGroup.drawHead(pageContext)` inclui o componente de inicialização do emulador, isto é, chama `init.html.jsp` do componente do emulador. Se o componente do emulador não tiver seu próprio `init.html.jsp` e depender do emulador base móvel ( `wcm/mobile/components/emulators/base)`, o script init do emulador base móvel será chamado ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* O método `DeviceGroup.drawHead(pageContext)` inclui o componente init do emulador, ou seja, chama a função `init.html.jsp` do componente emulador. Se o componente emulador não tiver seu próprio `init.html.jsp` e depende do emulador de base móvel ( `wcm/mobile/components/emulators/base)`, o script de inicialização do emulador de base móvel é chamado de ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
-* O script init do emulador de base móvel define por meio do Javascript:
+* O script de inicialização do emulador de base móvel define por meio do Javascript:
 
-   * A configuração para todos os emuladores definidos para a página (emulatorConfigs)
-   * O gerenciador de emuladores que integra a funcionalidade do emulador na página por meio de:
+   * A configuração de todos os emuladores definidos para a página (emulatorConfigs)
+   * O gerenciador do emulador que integra a funcionalidade do emulador na página por meio de:
 
       `emulatorMgr.launch(config)`;
 
-      O gerenciador de emuladores é definido por:
+      O gerenciador do emulador é definido por:
 
       `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
@@ -136,23 +135,21 @@ Quando o componente de página depende do componente de página móvel ( `/libs/
 
 Para criar um emulador móvel personalizado:
 
-1. Abaixo `/apps/myapp/components/emulators` crie o componente `myemulator` (tipo de nó: `cq:Component`).
+1. Abaixo `/apps/myapp/components/emulators` criar o componente `myemulator` (tipo de nó: `cq:Component`).
 
-1. Defina a propriedade `sling:resourceSuperType` como `/libs/wcm/mobile/components/emulators/base`
+1. Defina a propriedade `sling:resourceSuperType` para `/libs/wcm/mobile/components/emulators/base`
 
-1. Defina uma biblioteca de cliente CSS com a categoria `cq.wcm.mobile.emulator` para a aparência do emulador: name = `css`, tipo de nó = `cq:ClientLibrary`
+1. Definir uma biblioteca de cliente CSS com categoria `cq.wcm.mobile.emulator` para a aparência do emulador: name = `css`, tipo de nó = `cq:ClientLibrary`
 
-   Como exemplo, você pode fazer referência ao nó `/libs/wcm/mobile/components/emulators/iPhone/css`
+   Como exemplo, você pode se referir ao nó `/libs/wcm/mobile/components/emulators/iPhone/css`
 
-1. Se necessário, defina uma biblioteca de cliente JS, por exemplo, para definir um plug-in específico: name = js, tipo de nó = cq:ClientLibrary
+1. Se necessário, defina uma biblioteca do cliente JS, por exemplo, para definir um plug-in específico: name = js, tipo de nó = cq:ClientLibrary
 
-   Como exemplo, você pode fazer referência ao nó `/libs/wcm/mobile/components/emulators/base/js`
+   Como exemplo, você pode se referir ao nó `/libs/wcm/mobile/components/emulators/base/js`
 
-1. Se o emulador suportar funcionalidades específicas definidas por plug-ins (como rolagem de toque), crie um nó de configuração abaixo do emulador: name = `cq:emulatorConfig`, node type = `nt:unstructured` e adicione a propriedade que define o plug-in:
+1. Se o emulador suportar funcionalidades específicas definidas por plug-ins (como a rolagem de toque), crie um nó de configuração abaixo do emulador: name = `cq:emulatorConfig`, tipo de nó = `nt:unstructured` e adicione a propriedade que define o plug-in:
 
    * Nome = `canRotate`, Tipo = `Boolean`, Valor = `true`: para incluir a funcionalidade de rotação.
 
    * Nome = `touchScrolling`, Tipo = `Boolean`, Valor = `true`: para incluir a funcionalidade de rolagem de toque.
-
-   É possível adicionar mais funcionalidades definindo seus próprios plug-ins.
-
+   Mais funcionalidades podem ser adicionadas definindo seus próprios plug-ins.

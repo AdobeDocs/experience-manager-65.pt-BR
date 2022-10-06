@@ -37,7 +37,7 @@ Para a finalidade desta discussão, suponha que o seguinte documento DDX seja us
 
 Nesse documento DDX, observe que o atributo de origem recebe o valor `inDoc`. Nas situações em que apenas um documento PDF de entrada é passado para o serviço Assembler e um documento PDF é retornado, e você chama o `invokeOneDocument` , atribua o valor `inDoc` para o atributo PDF source. Ao invocar o `invokeOneDocument` , a `inDoc` é uma chave predefinida que deve ser especificada no documento DDX.
 
-Por outro lado, ao passar dois ou mais documentos PDF de entrada para o serviço Assembler, você pode chamar o `invokeDDX` operação. Nessa situação, atribua o nome do arquivo do documento PDF de entrada ao `source` atributo.
+Por outro lado, ao passar dois ou mais documentos PDF de entrada para o serviço Assembler, você pode chamar a variável `invokeDDX` operação. Nessa situação, atribua o nome do arquivo do documento PDF de entrada ao `source` atributo.
 
 Este documento DDX contém a variável `NoXFA` , que instrui o serviço Assembler a retornar um documento PDF não interativo.
 

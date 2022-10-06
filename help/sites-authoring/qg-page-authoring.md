@@ -1,8 +1,8 @@
 ---
 title: Guia rápido para a criação de páginas
-seo-title: Guia rápido para a criação de páginas
+seo-title: Quick Guide to Authoring Pages
 description: Um guia rápido e avançado sobre as ações principais de criação de conteúdo da página
-seo-description: Um guia rápido e avançado sobre as ações principais de criação de conteúdo da página
+seo-description: A quick, high-level guide to the key actions of authoring page content
 uuid: ef7ab691-f80d-4eeb-9f4a-afbf1bc83669
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
-translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1573'
 ht-degree: 97%
 
 ---
-
 
 # Guia rápido para a criação de páginas{#quick-guide-to-authoring-pages}
 
@@ -64,9 +63,7 @@ Antes de fornecer a visão geral das especificações, veja uma pequena coleçã
 >
 >* [Atalhos de teclado ao editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Atalhos de teclado para Consoles](/help/sites-authoring/keyboard-shortcuts.md)
-
 >
-
 
 
 ### Encontrar a sua página {#finding-your-page}
@@ -79,7 +76,7 @@ Há vários aspectos para localizar uma página; você pode navegar e/ou pesquis
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. Navegue até a árvore usando a [ navegação estrutural do cabeçalho](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), o que permite retornar ao local selecionado:
+1. Navegue até a árvore usando a [navegação estrutural do cabeçalho](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), o que permite retornar ao local selecionado:
 
    ![qgtap-01](assets/qgtap-01.png)
 
@@ -200,7 +197,7 @@ Para editar sua página:
    >
    >Para navegar usando os links no conteúdo, você deve usar o [Modo de visualização](/help/sites-authoring/editing-content.md#preview-mode).
 
-### Editar as propriedades da página    {#editing-the-page-properties}
+### Editar as propriedades da página   {#editing-the-page-properties}
 
 Existem dois métodos (principais) [para editar as propriedades da página](/help/sites-authoring/editing-page-properties.md):
 
@@ -253,14 +250,14 @@ Existem dois métodos principais [para publicar a sua página](/help/sites-autho
 
    Consulte [Publicação de páginas](/help/sites-authoring/publishing-pages.md#unpublishing-pages) para obter mais informações.
 
-### Mover, copiar e colar ou excluir sua página    {#move-copy-and-paste-or-delete-your-page}
+### Mover, copiar e colar ou excluir sua página   {#move-copy-and-paste-or-delete-your-page}
 
 Essas ações podem ser acionadas por:
 
 1. [Navegue até a página](#finding-your-page) que deseja mover, copiar e colar ou excluir.
 1. Selecione o ícone copiar (e colar), mover ou excluir, conforme necessário, usando:
 
-   * As [Ações rápidas (apenas a exibição de cartão/área de trabalho) ](#quick-actions-card-view-desktop-only) do recurso desejado.
+   * As [Ações rápidas (apenas a exibição de cartão/área de trabalho)](#quick-actions-card-view-desktop-only) do recurso desejado.
    * A barra de ferramenta quando a sua [página é selecionada](#selecting-your-page-for-further-action).
 
    Em seguida, depende da sua ação:
@@ -292,7 +289,7 @@ Por exemplo, o ícone de bloqueio tem a seguinte aparência:
 
 ### Acessar as referências da página {#accessing-page-references}
 
-[O acesso rápido às referências ](/help/sites-authoring/author-environment-tools.md#references) para/de uma página estão disponíveis no Trilho de referências.
+[O acesso rápido às referências](/help/sites-authoring/author-environment-tools.md#references) para/de uma página estão disponíveis no Trilho de referências.
 
 1. Selecione a **Referências** usando o ícone da barra de ferramentas (antes ou depois de [selecionar a página](#selecting-your-page-for-further-action)): 
 
@@ -304,7 +301,7 @@ Por exemplo, o ícone de bloqueio tem a seguinte aparência:
 
 1. Toque/clique no tipo de referência desejado para mostrar mais detalhes e (conforme o caso) realizar novas ações.
 
-### Criar uma versão da sua página    {#creating-a-version-of-your-page}
+### Criar uma versão da sua página   {#creating-a-version-of-your-page}
 
 Para criar uma [versão](/help/sites-authoring/working-with-page-versions.md) da página:
 

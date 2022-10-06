@@ -1,29 +1,28 @@
 ---
-title: 'Uso de tags  '
-seo-title: 'Uso de tags  '
+title: Uso de tags
+seo-title: Using Tags
 description: Tags são um método rápido e fácil de classificar o conteúdo em um site. Tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e todo o conteúdo relacionado.
-seo-description: Tags são um método rápido e fácil de classificar o conteúdo em um site. Tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e todo o conteúdo relacionado.
+seo-description: Tags are a quick and easy method of classifying content within a website. Tags may be thought of as keywords or labels that can be attached to a page, an asset, or other content to enable searches to find that content and related content.
 uuid: 9799131f-4043-4022-a401-af8be93a1bf6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 4b6c273c-560e-4330-b886-a02825d5aaa1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 83%
+source-wordcount: '712'
+ht-degree: 84%
 
 ---
 
-
-# Uso de tags  {#using-tags}
+# Uso de tags{#using-tags}
 
 Tags são um método rápido e fácil de classificar o conteúdo em um site. Tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e todo o conteúdo relacionado.
 
-* Consulte [Administração de tags](/help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags, bem como as tags de conteúdo que foram aplicadas.
-* Consulte [Marcação para desenvolvedores](/help/sites-developing/tags.md) para obter informações sobre a estrutura de marcação, bem como sobre como incluir e estender tags em aplicativos personalizados.
+* Consulte [Administração de tags](/help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags, bem como sobre quais tags de conteúdo foram aplicadas.
+* Consulte [Marcação para desenvolvedores](/help/sites-developing/tags.md) para obter informações sobre a estrutura de marcação e sobre como incluir e estender tags em aplicativos personalizados.
 
 ## Dez razões para usar marcação {#ten-reasons-to-use-tagging}
 
@@ -44,7 +43,7 @@ Ao projetar a estrutura de conteúdo de um site e o esquema de metadados para at
 
 No ambiente de criação, os autores podem aplicar tags acessando as propriedades da página e digitando uma ou mais tags no campo **Tags/Palavras-chave**.
 
-Para aplicar [tags predefinidas](/help/sites-administering/tags.md), na janela **Propriedades da página**, utilize a lista suspensa de campo `Tags/Keywords` para selecionar a partir da lista de tags permitidas para a página. A guia **Tags padrão** é a namespace padrão, o que significa que não há um prefixo `namespace-string:` para a taxonomia.
+Aplicar [tags predefinidas](/help/sites-administering/tags.md)no **Propriedades da página** use a `Tags/Keywords` menu suspenso do campo para selecionar na lista de tags permitidas para a página. Tag **Tags padrão** é o namespace padrão, o que significa que não há `namespace-string:` prefixado à taxonomia.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -60,25 +59,24 @@ Assim como com as páginas, você pode fazer o seguinte em tags e espaços de no
 
 >[!NOTE]
 >
->Quando você ativa uma página, uma caixa de diálogo é aberta automaticamente e permite ativar tags inativadas pertencentes à página.
+>Quando você ativa uma página, uma caixa de diálogo é aberta automaticamente e permite ativar tags não ativadas pertencentes a essa página.
 
 **Desativar**
 
 * Desativar as tags selecionadas.
 
-## Nuvens de tags  {#tag-clouds}
+## Nuvens de tags {#tag-clouds}
 
 Nuvens de tags mostram uma nuvem de tags, seja para a página atual, o site inteiro ou as tags mais acessadas. Nuvens de tags são um meio de destacar os problemas que são (ou foram) de interesse do usuário. O tamanho do texto usado para exibir a tag varia em relação ao seu uso.
 
 O componente [Nuvem de tags](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) (grupo de componentes Geral) é usado para adicionar uma nuvem de tags a uma página.
 
-## Pesquisa em tags  {#searching-on-tags}
+## Pesquisa em tags {#searching-on-tags}
 
 Você pode procurar tags nos ambiente de autor e publicação.
 
-### Uso do componente de pesquisa  {#using-search-component}
+### Uso do componente de pesquisa {#using-search-component}
 
-A adição de um [componente de pesquisa](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) a uma página fornece um recurso de pesquisa que inclui tags e pode ser usado nos ambientes de autor e publicação.
+Adicionar um [Componente de pesquisa](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) para uma página fornece um recurso de pesquisa que inclui tags e pode ser usado nos ambientes de autor e publicação.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
-

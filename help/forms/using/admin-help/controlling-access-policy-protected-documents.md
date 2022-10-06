@@ -1,8 +1,8 @@
 ---
 title: Controlar o acesso a documentos protegidos por políticas
-seo-title: Controlar o acesso a documentos protegidos por políticas
+seo-title: Controlling access to policy-protected documents
 description: Veja como visualizar, gerenciar e controlar o acesso aos documentos protegidos por políticas.
-seo-description: Veja como visualizar, gerenciar e controlar o acesso aos documentos protegidos por políticas.
+seo-description: See how you can view, manage and control the access to your policy-protected documents.
 uuid: 2d9f95e9-e4ee-47e2-988e-a191d1d1d264
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2190'
+source-wordcount: '2169'
 ht-degree: 0%
 
 ---
 
-
-# Controle de acesso a documentos protegidos por políticas {#controlling-access-to-policy-protected-documents}
+# Controlar o acesso a documentos protegidos por políticas {#controlling-access-to-policy-protected-documents}
 
 Você pode controlar a maneira como os recipients usam seus documentos protegidos por políticas, independentemente de quão amplamente você os distribua.
 
@@ -43,23 +42,23 @@ Você também pode exibir mais detalhes, descritos abaixo, sobre um documento es
 
 >[!NOTE]
 >
->Você deve usar o link Nome da Política na página Detalhes do Documento para acessar as políticas geradas automaticamente no Microsoft Outlook para destinatários de um documento anexado a uma mensagem de email. Essas políticas não aparecem na página de políticas.
+>Você deve usar o link Nome da política na página Detalhes do documento para acessar as políticas geradas automaticamente no Microsoft Outlook para destinatários de um documento anexado a uma mensagem de email. Essas políticas não aparecem na página de políticas.
 
-**Nome do documento:** o nome do documento selecionado.
+**Nome do documento:** O nome do documento selecionado.
 
-**ID do documento:** um identificador exclusivo que a segurança do documento atribui quando uma política é aplicada ao documento. a segurança do documento usa esse número para rastrear o documento.
+**ID do documento:** Um identificador exclusivo que a segurança do documento atribui quando uma política é aplicada ao documento. a segurança do documento usa esse número para rastrear o documento.
 
-**Status do Documento:** Status do documento (por exemplo, ativo ou revogado).
+**Status do documento:** Status do documento (por exemplo, ativo ou revogado)
 
 **Editor:** Nome do usuário que anexou a política ao documento.
 
-**Nome da política:** o nome da política usada para proteger o documento. Você pode clicar no nome para abrir a política. Você deve usar esse link para acessar as políticas geradas pelo Acrobat para recipients de um documento anexado a uma mensagem de email no Outlook. Essas políticas não aparecem na página Políticas .
+**Nome da política:** O nome da política usada para proteger o documento. Você pode clicar no nome para abrir a política. Você deve usar esse link para acessar as políticas geradas pelo Acrobat para recipients de um documento anexado a uma mensagem de email no Outlook. Essas políticas não aparecem na página Políticas .
 
-**Tipo de política:** o tipo de política que foi aplicada ao documento.
+**Tipo de política:** O tipo de política que foi aplicada ao documento.
 
-**Data de publicação:** a data em que a política foi aplicada ao documento.
+**Data de publicação:** A data em que a política foi aplicada ao documento.
 
-**Iterações relacionadas:** se o documento tiver iterações relacionadas, esse item também aparecerá na lista. Clique no link para exibir a lista de iterações relacionadas do documento.
+**Iterações relacionadas:** Se o documento tiver iterações relacionadas, esse item também aparecerá na lista. Clique no link para exibir a lista de iterações relacionadas do documento.
 
 Os usuários podem exibir informações sobre seus documentos protegidos. Os administradores podem exibir informações sobre documentos que qualquer usuário protegeu com uma política. Os coordenadores do conjunto de políticas podem exibir informações sobre documentos protegidos por políticas a partir de seus conjuntos de políticas.
 
@@ -78,22 +77,22 @@ Se esse recurso estiver ativado, você poderá exibir as iterações relacionada
 1. Clique em Exibir iterações relacionadas. A opção só estará disponível se o recurso estiver ativado. A lista de iterações relacionadas é exibida. Para cada iteração, você pode exibir as seguintes informações:
 
    * **Iteração:** O nome do arquivo. Pode ser diferente do nome do arquivo original e tem um número de versão anexado ao final.
-   * **Editor:** o editor do documento original.
-   * **Criado por:** o usuário que salvou a iteração.
-   * **Data de criação:** a data e a hora em que a iteração foi salva.
+   * **Editor:** O editor do documento original.
+   * **Criado por:** O usuário que salvou a iteração.
+   * **Data de criação:** A data e a hora em que a iteração foi salva.
    * **Política:** A política que protege a iteração. Diferentes iterações podem ser protegidas por diferentes políticas.
 
 1. Para exibir a página Detalhes do documento para essa iteração, clique no nome do arquivo de uma iteração.
 
-## Revogando e reinstalando o acesso aos documentos {#revoking-and-reinstating-access-to-documents}
+## Revogação e reestabelecimento do acesso aos documentos {#revoking-and-reinstating-access-to-documents}
 
 Você pode revogar e restabelecer o acesso a documentos protegidos por políticas:
 
-**Usuários:** pode revogar ou restabelecer o acesso a documentos que protegem com suas próprias políticas pessoais ou com políticas compartilhadas para as quais o recurso de revogação está habilitado para o usuário que aplica a política. Os usuários que não podem revogar o acesso a um documento ou alternar uma política precisam entrar em contato com o administrador.
+**Usuários:** Pode revogar ou restabelecer o acesso a documentos que protegem com suas próprias políticas pessoais ou com políticas compartilhadas para as quais a capacidade de revogação está habilitada para o usuário que aplica a política. Os usuários que não podem revogar o acesso a um documento ou alternar uma política precisam entrar em contato com o administrador.
 
-**Administradores:** podem revogar ou restabelecer privilégios de acesso a qualquer documento protegido por políticas, incluindo aqueles protegidos por políticas pessoais ou compartilhadas. Se um administrador revogar o acesso a um documento protegido por uma política compartilhada, somente um administrador poderá restabelecer os privilégios de acesso desse documento.
+**Administradores:** Pode revogar ou restabelecer privilégios de acesso a qualquer documento protegido por políticas, incluindo aqueles protegidos por políticas pessoais ou compartilhadas. Se um administrador revogar o acesso a um documento protegido por uma política compartilhada, somente um administrador poderá restabelecer os privilégios de acesso desse documento.
 
-**Coordenadores de conjunto de políticas:** podem revogar ou restabelecer privilégios de acesso para documentos protegidos por políticas de seus conjuntos de políticas.
+**Coordenadores dos conjuntos de políticas:** Pode revogar ou restabelecer privilégios de acesso para documentos protegidos por políticas de seus conjuntos de políticas.
 
 Quando você revoga ou reinstala privilégios de acesso a documentos, a alteração entra em vigor nesses momentos:
 
@@ -107,8 +106,8 @@ Quando você revoga ou reinstala privilégios de acesso a documentos, a alteraç
 1. Marque a caixa de seleção ao lado do documento apropriado e clique em Revogar. Você pode revogar o acesso a vários documentos de cada vez.
 1. Selecione uma mensagem a ser exibida para os usuários que tentarem abrir o documento depois que ele for revogado:
 
-   * **Mensagem geral:** indica que o autor revogou o documento
-   * **Documento encerrado:** indica que o autor encerrou o documento
+   * **Mensagem geral:** Indica que o autor revogou o documento
+   * **Documento Encerrado:** Indica que o autor encerrou o documento
    * **Documento revisado**: Indica que o autor revisou o documento
 
 1. (Opcional) Se uma versão mais recente do documento estiver disponível, insira o URL e clique em Testar para verificar o URL.
@@ -147,17 +146,17 @@ Você pode pesquisar documentos na página Documentos usando uma combinação do
 
 Algumas opções de pesquisa adicionais estão disponíveis apenas para administradores:
 
-**ID do documento:** número de ID exclusivo que a segurança do documento atribui ao documento quando a política é aplicada.
+**ID do documento:** Número de ID exclusivo que a segurança do documento atribui ao documento quando a política é aplicada.
 
 **Nome do documento:** Nome do documento.
 
 **Nome do editor:** Nome do usuário que anexou a política ao documento. Você pode selecionar o usuário de todos os domínios ou de um domínio especificado.
 
-**ID da política:** número da ID da política anexada ao documento.
+**ID da política:** Número de ID da política anexada ao documento.
 
 **Nome da política:** Nome da política anexada ao documento.
 
-**Todos os documentos:** todos os documentos protegidos por administradores e usuários. O uso da opção Todos os documentos para pesquisar pode retornar uma longa lista de documentos.
+**Todos os documentos:** Todos os documentos protegidos por administradores e usuários. O uso da opção Todos os documentos para pesquisar pode retornar uma longa lista de documentos.
 
 1. Na página de segurança do documento, clique em Documentos.
 1. Na lista Localizar, selecione os critérios de pesquisa necessários.
@@ -175,7 +174,7 @@ Algumas opções de pesquisa adicionais estão disponíveis apenas para administ
 
 1. Clique em Localizar.
 
-## Classifique a lista de documentos {#sort-the-document-list}
+## Classificar a lista de documentos {#sort-the-document-list}
 
 Você pode classificar a lista de documentos por cabeçalho de coluna. Os ícones de triângulo ao lado do cabeçalho da coluna indicam qual coluna está sendo usada para classificar no momento. Um triângulo apontando para cima indica ordem crescente, enquanto um triângulo apontando para baixo indica ordem decrescente.
 
@@ -197,12 +196,12 @@ Você pode usar o suporte para Página 0 (Documento do Wrapper) para permitir qu
 
 Use os seguintes processos no workbench:
 
-**Documento Protect com página de capa:** protege um documento PDF com a política especificada e adiciona uma página de capa ao documento
+**Documento Protect com página de capa:** Protege um documento PDF com a política especificada e adiciona uma folha de rosto ao documento
 
-**Extrair documento protegido:** extrai o documento PDF protegido por política do documento PDF com a folha de rosto
+**Extrair documento protegido:** Extrai o documento PDF protegido por política do documento PDF com a folha de rosto
 
 Use as seguintes APIs de segurança de documento:
 
-**secureDocumentWithCoverPage:** protege um determinado PDF com a política especificada e retorna um documento com uma folha de rosto e o documento protegido como um anexo 
+**secureDocumentWithCoverPage:** Protege um determinado PDF com a política especificada e retorna um documento com uma folha de rosto e o documento protegido como anexo
 `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument:** Extrai o documento protegido que é um anexo no documento com a folha de rosto. O documento com a folha de rosto pode ser criado usando o método secureDocumentWithCoverPage
 `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);`

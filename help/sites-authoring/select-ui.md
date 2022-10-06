@@ -1,8 +1,8 @@
 ---
-title: Selecionar sua IU
-seo-title: Selecionar sua interface do usuário
+title: Selecionar sua interface do usuário
+seo-title: Selecting your UI
 description: Configurar qual interface você usará para trabalhar no AEM
-seo-description: Configurar qual interface você usará para trabalhar no AEM
+seo-description: Configure which interface you will use to work in AEM
 uuid: ab127f2f-2f8a-4398-90dd-c5d48eed9e53
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: e418d330-f234-411d-8cad-3fd9906dcbee
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '743'
 ht-degree: 83%
 
 ---
-
 
 # Selecionar sua interface do usuário{#selecting-your-ui}
 
@@ -42,13 +41,13 @@ Essa opção altera a sessão atual para a interface clássica.
 >
 >Várias opções para alternar para a interface do usuário clássica não estão disponíveis imediatamente, elas devem ser configuradas especificamente para sua instância.
 >
->Consulte [Ativando o acesso à interface clássica](/help/sites-administering/enable-classic-ui.md) para obter mais informações.
+>Consulte [Ativar o acesso à interface clássica](/help/sites-administering/enable-classic-ui.md) para obter mais informações.
 
 >[!NOTE]
 >
 >As instâncias atualizadas de uma versão anterior manterão a interface clássica para a criação de página.
 >
->Após a atualização, a criação de página não será alternada automaticamente para a interface habilitada para toque, mas você pode configurá-la usando a [configuração OSGi](/help/sites-deploying/configuring-osgi.md) do **Serviço de modo de interface de criação do WCM** ( `AuthoringUIMode` serviço). Consulte [Substituições da interface do usuário para o Editor](#ui-overrides-for-the-editor).
+>Após a atualização, a criação de página não será alternada automaticamente para a interface habilitada para toque, mas você pode configurá-la usando a variável [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) do **Serviço de Modo de Interface do Usuário de Criação de WCM** ( `AuthoringUIMode` serviço). Consulte [Substituições da interface do usuário para o Editor](#ui-overrides-for-the-editor).
 
 ## Configuração da interface de usuário padrão para a sua instância {#configuring-the-default-ui-for-your-instance}
 
@@ -62,7 +61,7 @@ Cada usuário pode acessar suas [preferências de usuário](/help/sites-authorin
 
 Isso pode ser substituído pelas configurações de sessão.
 
-## Alternando para interface clássica para a sessão atual  {#switching-to-classic-ui-for-the-current-session}
+## Alternando para interface clássica para a sessão atual {#switching-to-classic-ui-for-the-current-session}
 
 Usando a interface habilitada para toque, os usuários de desktop podem querer reverter para a interface clássica (somente desktop). Há vários métodos de alternar para a interface de usuário clássica na sessão atual:
 
@@ -73,7 +72,7 @@ Usando a interface habilitada para toque, os usuários de desktop podem querer r
    >Essa opção para alternar para a interface do usuário clássica não estão disponíveis imediatamente, elas devem ser configuradas especificamente para sua instância.
    >
    >
-   >Consulte [Ativando o acesso à interface clássica](/help/sites-administering/enable-classic-ui.md) para obter mais informações.
+   >Consulte [Ativar o acesso à interface clássica](/help/sites-administering/enable-classic-ui.md) para obter mais informações.
 
    Se isso for habilitado, será exibido um ícone (símbolo de monitor) sempre que você passar o mouse sobre um console aplicável. Tocar/clicar nesse link abrirá a localização apropriada na UI clássica.
 
@@ -100,13 +99,13 @@ Usando a interface habilitada para toque, os usuários de desktop podem querer r
 >
 >Essa opção para alternar para a interface do usuário clássica não estão disponíveis imediatamente, elas devem ser configuradas especificamente para sua instância.
 >
->Consulte [Ativando o acesso à interface clássica](/help/sites-administering/enable-classic-ui.md) para obter mais informações.
+>Consulte [Ativar o acesso à interface clássica](/help/sites-administering/enable-classic-ui.md) para obter mais informações.
 
 Se habilitada, a opção **Abrir a interface do usuário clássica** estará disponível na caixa de diálogo **Informações da página**:
 
 ![syui-02](assets/syui-02.png)
 
-### UI Overrides for the Editor {#ui-overrides-for-the-editor}
+### Substituições da IU para o Editor {#ui-overrides-for-the-editor}
 
 As configurações definidas por um usuário ou administrador de sistema podem ser substituídas pelo sistema, em caso de criação de página.
 
@@ -120,7 +119,7 @@ As configurações definidas por um usuário ou administrador de sistema podem s
 
 * Qualquer ação forçada é temporária e válida somente para a sessão do navegador
 
-   * Um conjunto de cookies será definido dependendo se o recurso ativado por toque ( `editor.html`) ou clássico ( `cf#`) for usado.
+   * Um conjunto de cookies será definido dependendo se ativado para toque ( `editor.html`) ou clássica ( `cf#`) é usada.
 
 * Ao abrir as páginas com o `siteadmin`, serão feitas verificações relacionadas à existência de:
 

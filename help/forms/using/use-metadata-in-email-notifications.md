@@ -1,5 +1,5 @@
 ---
-title: 'Usar metadados em uma notificação por email '
+title: Usar metadados em uma notificação por email
 seo-title: Use metadata in an email notification
 description: Use metadados para preencher informações em uma notificação de email de fluxo de trabalho de formulários
 seo-description: Use metadata to populate information in a forms workflow email notification

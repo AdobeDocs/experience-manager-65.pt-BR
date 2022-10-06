@@ -1,8 +1,8 @@
 ---
 title: Fundamentos das Atribuições
-seo-title: Fundamentos das Atribuições
+seo-title: Assignments Essentials
 description: Visão geral do recurso Atribuições para comunidades de ativação
-seo-description: Visão geral do recurso Atribuições para comunidades de ativação
+seo-description: Assignments feature overview for enablement communities
 uuid: e49fce26-1091-4f37-93e8-c4ec85371811
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 75cef5da-4f93-4721-99c0-ad44c8ab76d4
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '214'
 ht-degree: 13%
 
 ---
 
 # Fundamentos das Atribuições {#assignments-essentials}
 
-Leia para saber mais sobre as informações essenciais para trabalhar com o recurso de atribuições dos sites [comunidade de ativação](/help/communities/overview.md#enablement-community).
+Leia para saber mais sobre as informações essenciais para trabalhar com o recurso de atribuições de [comunidade de capacitação](/help/communities/overview.md#enablement-community) sites.
 
 O recurso de atribuições é a capacidade de atribuir recursos de ativação e caminhos de aprendizado aos membros das comunidades de ativação.
 
@@ -85,7 +85,7 @@ As únicas combinações possíveis de Conclusão e Status de Sucesso são:
 
 ### Função das atribuições {#assignments-function}
 
-Uma estrutura de site da comunidade que inclui a função [Atribuições](/help/communities/functions.md#assignments-function), inclui um componente ` [assignments](/help/communities/assignments.md)` configurado.
+Uma estrutura de site da comunidade que inclui a variável [Função de atribuições](/help/communities/functions.md#assignments-function), inclui um ` [assignments](/help/communities/assignments.md)` componente.
 
 ### APIs de referência {#reference-apis}
 

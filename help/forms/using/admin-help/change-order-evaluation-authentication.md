@@ -1,30 +1,29 @@
 ---
-title: Alterar a ordem de avaliação para autenticação
-seo-title: Alterar a ordem de avaliação para autenticação
-description: É possível alterar a ordem na qual AEM formulários avalia vários provedores de autenticação.
-seo-description: É possível alterar a ordem na qual AEM formulários avalia vários provedores de autenticação.
+title: Alterar a ordem da avaliação para autenticação
+seo-title: Change the order of evaluation for authentication
+description: É possível alterar a ordem em que AEM formulários avalia vários provedores de autenticação.
+seo-description: You can change the order in which AEM forms evaluates multiple authentication providers.
 uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 7e29c9d4-fb82-4308-aac7-0f5cb1f4aef2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
 
+# Alterar a ordem da avaliação para autenticação {#change-the-order-of-evaluation-for-authentication}
 
-# Alterar a ordem de avaliação para autenticação {#change-the-order-of-evaluation-for-authentication}
-
-Se você tiver configurado vários provedores de autenticação, poderá alterar a ordem em que AEM formulários os avaliam para autenticação. A ordem dos provedores de autenticação listados no arquivo config.xml determina a ordem de avaliação para autenticação.
+Se você configurou vários provedores de autenticação, é possível alterar a ordem em que AEM formulários os avalia para autenticação. A ordem dos provedores de autenticação listados no arquivo config.xml determina a ordem da avaliação para autenticação.
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos de configuração.
 1. Para exportar a configuração atual para um arquivo, clique em Exportar e salve o arquivo de configuração em outro local.
-1. Encontre o seguinte nó no arquivo:
+1. Localize o seguinte nó no arquivo :
 
    ```xml
     <node name="AuthSchemes">
@@ -48,4 +47,3 @@ Se você tiver configurado vários provedores de autenticação, poderá alterar
 
 1. Para importar o arquivo atualizado, em Gerenciamento de usuários, clique em Configuração > Importar e exportar arquivos de configuração.
 1. Clique em Procurar para localizar o arquivo, clique em Importar e em OK.
-

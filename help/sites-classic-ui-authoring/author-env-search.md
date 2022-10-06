@@ -1,8 +1,8 @@
 ---
-title: 'Pesquisar  '
-seo-title: 'Pesquisar  '
+title: Pesquisar
+seo-title: Search
 description: O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteúdo, dependendo do tipo de recurso.
-seo-description: O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteúdo, dependendo do tipo de recurso.
+seo-description: The author environment of AEM provides various mechanisms for searching for content, dependent on the resource type.
 uuid: 6dd3df4d-6040-4230-8373-fc028687b675
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '470'
 ht-degree: 85%
 
 ---
-
 
 # Pesquisar{#searching}
 
@@ -46,15 +45,11 @@ O painel de pesquisa permite pesquisar em todas as páginas do site. Ele contém
 >
 >* [Curingas](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [Operadores booleanos](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
-
-   >
-   >
-* [Expressões regulares](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
+>
+>* [Expressões regulares](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Agrupamento de campo](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
 >* [Promover](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term) 
-
 >
-
 
 
 Para executar a pesquisa, clique em **Pesquisar** na parte inferior da página. Clique em **Redefinir** para limpar os critérios de pesquisa.
@@ -82,7 +77,7 @@ No console **Sites** uma opção de menu **Localizar e substituir** permite que 
    * indica se a pesquisa deve diferenciar maiúsculas e minúsculas
    * indica se apenas palavras inteiras devem ser encontradas (caso contrário, subsequências também serão encontradas)
 
-   Clicar em **Pré-visualização** lista onde o termo foi encontrado. Você pode selecionar/apagar instâncias específicas a serem substituídas:
+   Clicar **Visualizar** lista onde o termo foi encontrado. Você pode selecionar/desmarcar as instâncias específicas que serão substituídas:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -95,7 +90,7 @@ O escopo padrão do servlet localizar e substituir abrange as seguintes propried
 * `jcr:text`
 * `text`
 
-O escopo pode ser alterado usando o Console de gerenciamento da Web Apache Felix (por exemplo, em `https://localhost:4502/system/console/configMgr`). Selecione `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` e configure o escopo conforme necessário.
+O escopo pode ser alterado usando o Console de Gerenciamento da Web Apache Felix (por exemplo, em `https://localhost:4502/system/console/configMgr`). Selecionar `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` e configure o escopo conforme necessário.
 
 >[!NOTE]
 >

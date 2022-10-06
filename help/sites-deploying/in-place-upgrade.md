@@ -178,7 +178,7 @@ Observe que iniciar AEM a partir do script de início não iniciará a atualiza�
    ps -ef | grep java
    ```
 
-1. Procure o processo de AEM. Será algo como:
+1. Procure o processo de AEM. Será algo parecido com:
 
    ```shell
    /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.2.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties

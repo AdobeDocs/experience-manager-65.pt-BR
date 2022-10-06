@@ -1,22 +1,21 @@
 ---
 title: Atalhos de teclado do AEM Forms
-seo-title: Atalhos de teclado do AEM Forms
+seo-title: AEM Forms Keyboard Shortcuts
 description: Este artigo lista os atalhos de teclado que podem ser usados com o Editor de formulário adaptável, Editor de temas, Navegador de conteúdo e Gerenciamento de correspondência para sistemas operacionais Windows e Macintosh.
-seo-description: Este artigo lista os atalhos de teclado que podem ser usados com o Editor de formulário adaptável, Editor de temas, Navegador de conteúdo e Gerenciamento de correspondência.
+seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1147'
 ht-degree: 13%
 
 ---
-
 
 # Atalhos de teclado do AEM Forms {#aem-forms-keyboard-shortcuts}
 
@@ -37,7 +36,7 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 | Copiar componente selecionado | Ctrl-C | Ctrl-C&amp;ast; |
 | Recortar componentes selecionados. O componente recortado não desaparece até ser colado no novo local. | Ctrl-X | Ctrl-X&amp;ast; |
 | Colar componentes | Ctrl+V | Ctrl+V |
-| Excluir componentes selecionados | Ctrl+Del | Ctrl+Del&amp;ast; |
+| Excluir componentes selecionados | Ctrl+Del | Ctrl+Del; |
 | Excluir componentes selecionados | Ctrl+Backspace | Ctrl+Backspace&amp;ast; |
 | Tornar o texto negrito ao usar o componente Editor de Rich Text no modo de Visualização | Ctrl+B | Ctrl+B&amp;ast; |
 | Coloque o texto em itálico ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+I | Ctrl+I&amp;ast; |
@@ -52,10 +51,8 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 >Multisseleção em um dispositivo de desktop:
 >
 >* Windows: Ctrl+Clique nos componentes necessários.
->* MAC OS: Clique com a tecla Command pressionada nos componentes necessários.
-
+>* SO Mac: Clique com a tecla Command pressionada nos componentes necessários.
 >
-
 
 
 ## Editor de temas  {#themeeditor}
@@ -72,7 +69,7 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 >
 >Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no Mac OS.
 
-## Navegador de conteúdo {#contentbrowser}
+## Navegador de conteúdo  {#contentbrowser}
 
 | **Ação** | **Atalho no Windows** | **Atalho no Mac OS** |
 |---|---|---|
@@ -83,17 +80,17 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 | Selecione o próximo item na árvore Objetos do Forms | Seta para baixo | Seta para baixo |
 | Selecione o item anterior na árvore Objetos do Forms | Seta para cima | Seta para cima |
 
-[1] Substitui Ctrl + Seta para a direita para Windows e Command + Seta para a direita para Mac OS.\
+[1] Substitui Ctrl + Seta para a direita para Windows e Command + Seta para a direita para SO Mac.\
 [2] Substitui Ctrl + Seta para a esquerda para Windows e Command + Seta para a esquerda para Mac OS.
 
 ## Gerenciamento de correspondência {#correspondence-management}
 
 Esta seção lista vários teclados e atalhos de acessibilidade que podem ser usados no editor de texto de Gerenciamento de correspondência. É possível usar esses atalhos enquanto você:
 
-* Criar ou editar um ativo [Texto](texts-interactive-communications.md)
-* Editar um módulo de texto depois de tocar no ícone Editar relevante ( ![edittextmodule](assets/edittextmodule.png)) ao [criar uma correspondência](/help/forms/using/create-correspondence.md).
+* Criar ou editar um [Texto](texts-interactive-communications.md) ativo
+* Edição de um módulo de texto depois de tocar no ícone Editar relevante ( ![edittextmodule](assets/edittextmodule.png)) quando [criação de correspondência](/help/forms/using/create-correspondence.md).
 
-### Seleção de texto e movimento do cursor em torno de {#text-selection-and-moving-the-cursor-around}
+### Seleção de texto e movimentação do cursor {#text-selection-and-moving-the-cursor-around}
 
 <table> 
  <tbody>
@@ -309,7 +306,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
  </tbody>
 </table>
 
-### Copie e cole {#copy-and-paste}
+### Copiar e colar {#copy-and-paste}
 
 <table> 
  <tbody>
@@ -362,4 +359,3 @@ Esta seção lista vários teclados e atalhos de acessibilidade que podem ser us
   </tr>
  </tbody>
 </table>
-

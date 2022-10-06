@@ -1,8 +1,8 @@
 ---
-title: Proxy do serviço de formulários HTML5
-seo-title: Proxy do serviço de formulários HTML5
+title: Proxy de serviço de formulários do HTML5
+seo-title: HTML5 forms service proxy
 description: O Proxy de Serviço de Formulários HTML5 é uma configuração para registrar um proxy para o serviço de envio. Para configurar o Proxy de Serviço, especifique o URL do serviço de envio por meio do parâmetro de solicitação submitServiceProxy.
-seo-description: O Proxy de Serviço de Formulários HTML5 é uma configuração para registrar um proxy para o serviço de envio. Para configurar o Proxy de Serviço, especifique o URL do serviço de envio por meio do parâmetro de solicitação submitServiceProxy.
+seo-description: HTML5 forms Service Proxy is a configuration to register a proxy for the submission service. To configure Service Proxy, specify the URL of submission service through request parameter submissionServiceProxy.
 uuid: 42d6c1da-3945-469d-b429-c33e563ed70c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,16 +10,15 @@ topic-tags: hTML5_forms
 discoiquuid: 081f7c17-4e5d-4c7e-a5c3-5541a29b9d55
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '697'
 ht-degree: 1%
 
 ---
 
-
-# Proxy do serviço de formulários HTML5{#html-forms-service-proxy}
+# Proxy de serviço de formulários do HTML5{#html-forms-service-proxy}
 
 O Proxy de Serviço de Formulários HTML5 é uma configuração para registrar um proxy para o serviço de envio. Para configurar o Proxy de Serviço, especifique o URL do serviço de envio por meio do parâmetro de solicitação *submitServiceProxy*.
 
@@ -27,23 +26,23 @@ O Proxy de Serviço de Formulários HTML5 é uma configuração para registrar u
 
 O proxy de serviço elimina o seguinte:
 
-* O fluxo de trabalho de formulários HTML5 requer a abertura do serviço de envio &quot;/content/xfaforms/submit/default&quot; para os usuários de formulários HTML5. Ele expõe servidores AEM a um público-alvo não intencional mais amplo.
+* O fluxo de trabalho de formulários do HTML5 requer a abertura do serviço de envio &quot;/content/xfaforms/submit/default&quot; para os usuários de formulários do HTML5. Ele expõe servidores AEM a um público-alvo não intencional mais amplo.
 * O URL de serviço é incorporado no modelo de tempo de execução do formulário. Não é possível alterar o caminho do URL do serviço.
 * O envio é um processo de duas etapas. Para enviar os dados do formulário, o envio requer pelo menos duas jornadas para o servidor. Assim, o aumenta a carga no servidor.
-* Os formulários HTML5 enviam dados na solicitação POST em vez de na solicitação PDF. Para um fluxo de trabalho que envolve formulários PDF e HTML5, são necessários dois métodos diferentes de processamento de envios.
+* Os formulários HTML5 enviam dados na solicitação POST em vez da solicitação PDF. Para um fluxo de trabalho envolvendo formulários PDF e HTML5, são necessários dois métodos diferentes de processamento de envios.
 
 ### Topologias {#topologies-br}
 
 Os formulários HTML5 podem usar as seguintes topologias para se conectar aos servidores de AEM.
 
-* Uma topologia em que formulários AEM Server ou HTML5 enviam dados via POST para o servidor.
+* Uma topologia em que AEM Server ou HTML5 forms enviam dados via POST para o servidor.
 * Uma topologia em que o servidor proxy envia dados de POST para o servidor.
 
-![Topologias de proxy do serviço de formulários HTML5](assets/topology.png)
+![Topologias de proxy do serviço de formulários do HTML5](assets/topology.png)
 
-Topologias de proxy do serviço de formulários HTML5
+Topologias de proxy do serviço de formulários do HTML5
 
-Os formulários HTML5 se conectam aos servidores do AEM para executar scripts do lado do servidor, serviços da Web e envios. O tempo de execução XFA dos formulários HTML5 usa chamadas Ajax no ponto final &quot;/bin/xfaforms/submitaction&quot; com vários parâmetros para se conectar aos servidores de AEM. Os formulários HTML5 conectam AEM servidores para executar as seguintes operações:
+Os formulários do HTML5 se conectam aos servidores do AEM para executar scripts do lado do servidor, serviços da Web e envios. O tempo de execução XFA dos formulários HTML5 usa chamadas Ajax no ponto final &quot;/bin/xfaforms/submitaction&quot; com vários parâmetros para se conectar aos servidores de AEM. Os formulários HTML5 conectam AEM servidores para executar as seguintes operações:
 
 #### Executar scripts do lado do servidor e serviços da Web {#execute-server-sided-scripts-and-web-services}
 
@@ -92,7 +91,7 @@ Os scripts marcados para execução no servidor são conhecidos como scripts do 
 
 #### Enviar dados {#submit-data}
 
-Ao clicar no botão Enviar , os formulários HTML5 enviam dados para o servidor. A tabela a seguir lista todos os parâmetros que formulários HTML5 enviam para o servidor.
+Ao clicar no botão Enviar, os formulários do HTML5 enviam dados para o servidor. A tabela a seguir lista todos os parâmetros que formulários HTML5 enviam para o servidor.
 
 <table>
  <tbody>
@@ -134,6 +133,6 @@ O proxy de serviço de envio atua como uma passagem se o envio não estiver pres
 O proxy de serviço de envio seleciona uma topologia se o submiturl estiver presente no parâmetro de solicitação.
 
 * Se os servidores de AEM publicarem os dados, o serviço de proxy atuará como uma passagem. Ele envia a solicitação para o ponto final /bin/xfaforms/submit e envia a resposta ao tempo de execução do XFA.
-* Se o proxy publicar os dados, o serviço proxy passará todos os parâmetros, exceto submitUrl para o ponto final */bin/xfaforms/submitaction* e receberá bytes xml no fluxo de resposta. Em seguida, o serviço proxy publica os bytes xml de dados no submitUrl para processamento.
+* Se o proxy publicar os dados, o serviço de proxy passará todos os parâmetros, exceto submitUrl para o */bin/xfaforms/submit* ponto final e recebe bytes xml no fluxo de resposta. Em seguida, o serviço proxy publica os bytes xml de dados no submitUrl para processamento.
 
-* Antes de enviar dados (solicitação de POST) para um servidor, os formulários HTML5 verificam a conectividade e a disponibilidade do servidor. Para verificar a conectividade e a disponibilidade, os formulários HTML enviam uma solicitação head vazia para o servidor. Se o servidor estiver disponível, o formulário HTML5 enviará dados (solicitação de POST) ao servidor. Se o servidor não estiver disponível, uma mensagem de erro *Não foi possível se conectar ao servidor,* será exibida. A detecção antecipada impede que os usuários tenham dificuldades em preencher o formulário. O servlet proxy processa a solicitação de cabeçalho e não lança exceção.
+* Antes de enviar dados (solicitação de POST) para um servidor, os formulários do HTML5 verificam a conectividade e a disponibilidade do servidor. Para verificar a conectividade e a disponibilidade, os formulários HTML enviam uma solicitação head vazia para o servidor. Se o servidor estiver disponível, o formulário HTML5 enviará dados (solicitação de POST) para o servidor. Se o servidor não estiver disponível, uma mensagem de erro, *Não foi possível conectar-se ao servidor,* é exibida. A detecção antecipada impede que os usuários tenham dificuldades em preencher o formulário. O servlet proxy processa a solicitação de cabeçalho e não lança exceção.

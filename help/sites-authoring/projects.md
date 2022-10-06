@@ -13,14 +13,14 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 source-git-commit: 85e993000c016240c0fbf398ec8192990e60eee6
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 34%
+ht-degree: 37%
 
 ---
 
 
 # Projetos {#projects}
 
-Projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento dos seus projetos. Os tipos de recursos que você pode associar a um projeto são chamados de Mosaicos no AEM. Mosaicos podem incluir informações do projeto e da equipe, ativos, fluxos de trabalho e outros tipos de informações, conforme descrito detalhadamente em [Mosaicos do projeto.](#project-tiles)
+Projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento dos seus projetos. Os tipos de recursos que você pode associar a um projeto são chamados de Mosaicos no AEM. Blocos podem incluir informações do projeto e da equipe, ativos, workflows e outros tipos de informações, conforme descrito detalhadamente em [Blocos de projeto.](#project-tiles)
 
 Como usuário, você pode:
 
@@ -88,7 +88,7 @@ Os projetos são compostos de diferentes tipos de informações que você deseja
 
 Você pode ter os seguintes blocos associados ao seu projeto.
 
-* [Ativos](#assets)
+* [Assets](#assets)
 * [Coleções de ativos](#asset-collections)
 * [Experiências](#experiences)
 * [Links](#links)
@@ -108,7 +108,7 @@ Clique no botão de reticências na parte inferior direita de qualquer bloco par
 
 No bloco **Assets**, você pode reunir todos os ativos que você usa para um projeto específico.
 
-![Mosaico de ativos](assets/project-tile-assets.png)
+![Bloco de ativos](assets/project-tile-assets.png)
 
 Você faz o upload de recursos diretamente no bloco.
 
@@ -129,7 +129,7 @@ O **Experiências** bloco permite adicionar um aplicativo móvel, site ou public
 Os ícones indicam que tipo de experiência é representada.
 
 * Site
-* aplicativo Mobile
+* Aplicativo móvel
 
 ### Links {#links}
 
@@ -149,7 +149,7 @@ O **Informações do projeto** O bloco fornece informações gerais sobre o proj
 
 O **Tarefa de tradução** é onde você inicia uma tradução e também vê o status de suas traduções.
 
-![Mosaico de trabalho de tradução](assets/project-tile-translation.png)
+![Bloco de trabalho de tradução](assets/project-tile-translation.png)
 
 Para configurar sua tradução, consulte o documento [Criar projetos de tradução.](/help/assets/translation-projects.md)
 
@@ -157,7 +157,7 @@ Para configurar sua tradução, consulte o documento [Criar projetos de traduç�
 
 Nesse bloco, você pode especificar os membros da equipe do projeto. Ao editar, você pode inserir o nome do membro da equipe e atribuir a função do usuário.
 
-![Mosaico de equipe](assets/project-tile-team.png)
+![Bloco da equipe](assets/project-tile-team.png)
 
 É possível adicionar e excluir membros da equipe. Além disso, você pode editar a [função de usuário](#userroles) atribuída ao membro da equipe.
 
@@ -181,7 +181,7 @@ Mais informações são descritas em [Fluxo de trabalho Solicitar email](/help/s
 
 Você pode iniciar fluxos de trabalho para o seu projeto. Se algum workflow estiver em execução, seu status será exibido na variável **Fluxos de trabalho** mosaico.
 
-![Bloco de fluxos de trabalho](assets/project-tile-workflows.png)
+![Mosaico de fluxos de trabalho](assets/project-tile-workflows.png)
 
 Dependendo do projeto que você criar, há diferentes fluxos de trabalho disponíveis.
 
@@ -195,7 +195,7 @@ O **Lançamentos** o mosaico mostra todas as inicializações que foram solicita
 
 ### Tarefas {#tasks}
 
-Tarefas permitem monitorar o status de qualquer tarefa relacionada ao projeto, incluindo fluxos de trabalho. As tarefas são abordadas detalhadamente em [Trabalhar com tarefas](/help/sites-authoring/task-content.md).
+Tarefas permitem monitorar o status de qualquer tarefa relacionada ao projeto, incluindo fluxos de trabalho. As tarefas são abordadas em detalhes em [Trabalhar com tarefas](/help/sites-authoring/task-content.md).
 
 ![Mosaico de tarefas](assets/project-tile-tasks.png)
 

@@ -1,33 +1,32 @@
 ---
 title: Estilo em linha de componentes de formulário adaptáveis
-seo-title: Propriedades CSS embutidas para componentes de formulário adaptáveis
+seo-title: Inline CSS properties for adaptive form components
 description: Embora seja possível aplicar estilos personalizados em um formulário adaptável, também é possível aplicar propriedades de CSS em linha em componentes individuais de um formulário adaptável.
-seo-description: Embora seja possível aplicar estilos personalizados em um formulário adaptável, também é possível aplicar propriedades de CSS em linha em componentes individuais de um formulário adaptável.
+seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
 uuid: e863780e-2250-4bea-9569-22be5638d54e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '525'
 ht-degree: 3%
 
 ---
 
-
 # Estilo em linha de componentes de formulário adaptáveis {#inline-styling-of-adaptive-form-components}
 
-Você pode definir a aparência e o estilo gerais de um formulário adaptável especificando estilos usando o [editor de temas](../../forms/using/themes.md). Além disso, você pode aplicar estilos CSS em linha a componentes de formulário adaptáveis individuais e visualizar as alterações dinamicamente. Os estilos em linha substituem o estilo fornecido no tema.
+Você pode definir a aparência e o estilo gerais de um formulário adaptável especificando estilos usando [editor de temas](../../forms/using/themes.md). Além disso, você pode aplicar estilos CSS em linha a componentes de formulário adaptáveis individuais e visualizar as alterações dinamicamente. Os estilos em linha substituem o estilo fornecido no tema.
 
 ## Aplicar propriedades CSS em linha {#apply-inline-css-properties}
 
 Para adicionar estilos em linha a um componente:
 
-1. Abra o formulário no editor de formulário e altere o modo para o modo de estilo. Para alterar o modo para o modo de estilo, na barra de ferramentas da página, toque em ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
-1. Selecione um componente na página e toque no botão de edição ![edit-button](assets/edit-button.png). Propriedades de estilo abertas na barra lateral.
+1. Abra o formulário no editor de formulário e altere o modo para o modo de estilo. Para alterar o modo para o modo de estilo, na barra de ferramentas da página, toque em ![lista suspensa de tela](assets/canvas-drop-down.png) > **Estilo**.
+1. Selecione um componente na página e toque no botão Editar ![botão editar](assets/edit-button.png). Propriedades de estilo abertas na barra lateral.
 
    Você também pode selecionar componentes da árvore de hierarquia do formulário na barra lateral. A árvore da hierarquia do formulário está disponível como Objetos de formulário na barra lateral.
 
@@ -45,7 +44,7 @@ Para adicionar estilos em linha a um componente:
    * Avançado (Permite gravar CSS personalizado para o componente)
 
 1. Da mesma forma, é possível aplicar estilos para outras partes de um componente, como Widget, Legenda e Ajuda.
-1. Toque em **Concluído** para confirmar as alterações ou em **Cancelar** para descartar as alterações.
+1. Toque **Concluído** para confirmar as alterações ou **Cancelar** para descartar as alterações.
 
 ## Exemplo: estilos em linha para um componente de campo {#example-inline-styles-for-a-field-component}
 
@@ -107,4 +106,3 @@ Após as etapas acima, você pode selecionar e criar um estilo para outros compo
 >[!NOTE]
 >
 >As propriedades de estilo variam de acordo com o componente selecionado.
-

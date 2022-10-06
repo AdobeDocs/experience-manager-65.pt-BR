@@ -1,8 +1,8 @@
 ---
 title: Suporte a scripts para formulários HTML5
-seo-title: Suporte a scripts para formulários HTML5
-description: JavaScript, propriedades FormCalc e outros métodos compatíveis com HTML5 Forms.
-seo-description: JavaScript, propriedades FormCalc e outros métodos compatíveis com HTML5 Forms.
+seo-title: Scripting support for HTML5 forms
+description: JavaScript, propriedades FormCalc e outros métodos compatíveis com o HTML5 Forms.
+seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
 uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
@@ -10,18 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3911'
+source-wordcount: '3892'
 ht-degree: 36%
 
 ---
 
-
 # Suporte a scripts para formulários HTML5 {#scripting-support-for-html-forms}
 
-As propriedades do JavaScript, do FormCalc e os métodos suportados em formulários HTML5 são os listados abaixo:
+As propriedades do JavaScript, FormCalc e os métodos suportados em formulários HTML5 são os listados abaixo:
 
 ## $event {#event}
 
@@ -37,8 +36,8 @@ As propriedades do JavaScript, do FormCalc e os métodos suportados em formulár
    <td>Especifica o conteúdo do campo antes de sua alteração em resposta a ações de um usuário. Esse valor pode ser retomado, de modo semelhante a um recurso desfazer.</td>
    <td><p>Não funciona em caixas suspensas e de listagem. <code>PrevText </code>não funciona corretamente nos seguintes casos:</p>
     <ul>
-     <li>Ao digitar algumas chaves de caractere especiais (por exemplo $, (,), &amp;, @ e mais) em campos numéricos no iPad e </li>
-     <li>Para o campo Data (quando a data é inserida por meio do calendário).<br /> </li>
+     <li>Ao digitar algumas chaves de caractere especiais (por exemplo $, (,), &amp;, @ e muito mais) em campos numéricos na iPad, e </li>
+     <li>Para o campo Date (quando a data é inserida por meio do calendário).<br /> </li>
     </ul> <p>Não há suporte para a configuração do valor por meio do script.</p> </td>
   </tr>
   <tr>
@@ -49,7 +48,7 @@ As propriedades do JavaScript, do FormCalc e os métodos suportados em formulár
   <tr>
    <td><code>newtext</code></td>
    <td>Especifica o conteúdo do campo após a sua alteração em resposta a ações de usuários.</td>
-   <td><p>A propriedade <code>newText</code> não funciona corretamente nos seguintes casos:</p>
+   <td><p>O <code>newText</code> não funciona corretamente nos seguintes casos:</p>
     <ul>
      <li>Sobre a seleção dos textos substitutos</li>
      <li>Ao excluir, copiar e colar textos.</li>
@@ -190,7 +189,7 @@ As propriedades do JavaScript, do FormCalc e os métodos suportados em formulár
   <tr>
    <td><code>name</code></td>
    <td>Um identificador usado para identificar esse elemento em expressões de script.</td>
-   <td>Os formulários HTML5 não permitem definir a propriedade name para objetos. É uma propriedade somente leitura para formulários HTML5.</td>
+   <td>Os formulários HTML5 não permitem a configuração da propriedade name para objetos. É uma propriedade somente leitura para formulários HTML5.</td>
   </tr>
   <tr>
    <td><code>value</code></td>
@@ -205,17 +204,17 @@ As propriedades do JavaScript, do FormCalc e os métodos suportados em formulár
   <tr>
    <td><code>formattedValue</code></td>
    <td>Especifica o valor formatado para esse campo.</td>
-   <td>Não há suporte para a configuração <code>formattedValue</code> por meio do script.</td>
+   <td>Configuração <code>formattedValue</code> não há suporte para o script through .</td>
   </tr>
   <tr>
    <td><code>editValue</code></td>
    <td>Especifica o valor de edição para esse campo.</td>
-   <td>Não há suporte para a configuração de <code>editValue </code>through script.</td>
+   <td>Configuração <code>editValue </code>não há suporte para o script through .</td>
   </tr>
   <tr>
    <td><code>formatMessage</code></td>
    <td>Especifica a string da mensagem de validação de formato para esse campo.</td>
-   <td>Não há suporte para a configuração de <code>formatMessage </code>through script.</td>
+   <td>Configuração <code>formatMessage </code>não há suporte para o script through .</td>
   </tr>
   <tr>
    <td><code>fillcolor</code></td>
@@ -340,7 +339,7 @@ As propriedades do JavaScript, do FormCalc e os métodos suportados em formulár
   <tr>
    <td>parentSubform</td>
    <td>Especifica o subformulário pai (página) desse campo.</td>
-   <td>Sempre retorna o subformulário pai em vez de retornar primeiro subformulário pai sem escopo.<br /> </td>
+   <td>Sempre retorna o subformulário pai em vez de retornar primeiro subformulário pai que não tem escopo.<br /> </td>
   </tr>
   <tr>
    <td>selectedIndex</td>
@@ -515,7 +514,7 @@ As propriedades do JavaScript, do FormCalc e os métodos suportados em formulár
   <tr>
    <td>name</td>
    <td>Especifica o nome deste nó.</td>
-   <td>Não é permitido definir o nome usando scripts em HTML.</td>
+   <td>Não é permitido definir o nome usando scripts no HTML.</td>
   </tr>
   <tr>
    <td>parent</td>
@@ -643,7 +642,7 @@ As propriedades do JavaScript, do FormCalc e os métodos suportados em formulár
  </tbody>
 </table>
 
-## padrão {#pattern}
+## pattern {#pattern}
 
 <table>
  <tbody>
@@ -826,7 +825,7 @@ As propriedades do JavaScript, do FormCalc e os métodos suportados em formulár
  </tbody>
 </table>
 
-## imageEdit  {#imageedit}
+## imageEdit {#imageedit}
 
 | **Propriedade** | **Descrição** | **Exceção** |
 |---|---|---|
@@ -855,7 +854,7 @@ As propriedades do JavaScript, do FormCalc e os métodos suportados em formulár
  </tbody>
 </table>
 
-## retângulo {#rectangle}
+## rectangle {#rectangle}
 
 <table>
  <tbody>
@@ -1001,7 +1000,7 @@ As propriedades do JavaScript, do FormCalc e os métodos suportados em formulár
  </tbody>
 </table>
 
-## arco {#arc}
+## arc {#arc}
 
 <table>
  <tbody>
@@ -1144,7 +1143,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de cálculo e l�
      <li>Lógica (e/ou)</li>
      <li>Comparação (maior/menor/igual)</li>
     </ul> </td>
-   <td>A ou 1<br /> 1 &lt;&gt; 2<br /> A NE B<br /> A ou 1<br /> 1 &lt;&gt; 2<br /> A NE B</td>
+   <td>A ou 1<br /> 1 &lt;&gt; 2<br /> A B<br /> A ou 1<br /> 1 &lt;&gt; 2<br /> A B</td>
   </tr>
   <tr>
    <td>Expressão If</td>
@@ -1157,7 +1156,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de cálculo e l�
    <td>while (i lt 5) do i = i + 1 endwhile</td>
   </tr>
   <tr>
-   <td>para</td>
+   <td> para </td>
    <td><br type="_moz" /> </td>
    <td>para i = 100 downto 1 <br /> do s = s + i endfor</td>
   </tr>
@@ -1183,7 +1182,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de cálculo e l�
    1. Ceil()
    1. Contagem()
    1. Floor()
-   1. Máximo()
+   1. Max()
    1. Mínimo()
    1. Mod()
    1. Round()
@@ -1197,7 +1196,7 @@ FormCalc é uma linguagem específica do XFA para criar raízes de cálculo e l�
    1. Atan2()
    1. Cos()
    1. Sin()
-   1. Tan()
+   1. Bronze()
    1. Exp()
    1. Registro()
    1. Pow()
@@ -1347,11 +1346,11 @@ Os seguintes eventos XFA do lado do cliente são suportados:
 * Validar
 * Calcular
 * Clique em
-* Enter
+* Insira
 * Sair
 * Alterar
 * EstadoValidação
 
 >[!NOTE]
 >
->Os formulários HTML5 são renderizados no lado do cliente (navegador). Recomenda-se usar scripts **validate** e **calculate** no lado do cliente, em vez de scripts no lado do servidor.
+>Os formulários HTML5 são renderizados no lado do cliente (navegador). Recomenda-se usar o lado do cliente **validate** e **calculate** scripts em vez de scripts do lado do servidor.

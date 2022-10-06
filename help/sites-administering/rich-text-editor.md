@@ -145,7 +145,6 @@ O [modo de edição do RTE (e a interface do usuário)](#editingmodes) que você
 >* **Nome**: `configPath`
 >* **Tipo**: `String`
 >* **Valor**: caminho do nó que contém a configuração real
-
 >
 >Não nomeie o nó de configuração do RTE como `config`. Caso contrário, as configurações do RTE entrarão em vigor apenas para os administradores e não para os usuários do grupo `content-author`.
 
@@ -192,7 +191,6 @@ Para obter configurações detalhadas dos plug-ins do RTE, consulte [como ativar
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >Para criar seu próprio componente de texto, copie o componente acima em vez de editar esses componentes.
 

@@ -1,8 +1,8 @@
 ---
-title: Promoção de lançamentos
-seo-title: Promoção de lançamentos
-description: 'Você precisa promover as páginas de lançamento para retornar o conteúdo à fonte (produção) antes de publicar. '
-seo-description: 'Você precisa promover as páginas de lançamento para retornar o conteúdo à fonte (produção) antes de publicar. '
+title: Promoção de inicializações
+seo-title: Promoting Launches
+description: Você precisa promover as páginas de lançamento para retornar o conteúdo à fonte (produção) antes de publicar.
+seo-description: You need to promote launch pages to move the content back into the source (production) before publishing.
 uuid: 2dc41817-fcfb-4485-a085-7b57b9fe89ec
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +11,15 @@ topic-tags: site-features
 discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 92%
+source-wordcount: '756'
+ht-degree: 98%
 
 ---
 
-
-# Promoção de lançamentos{#promoting-launches}
+# Promoção de inicializações{#promoting-launches}
 
 Você precisa promover as páginas de lançamento para retornar o conteúdo à fonte (produção) antes de publicar. Quando uma página de lançamento é promovida, a página correspondente das páginas de origem é substituída pelo conteúdo da página promovida. As seguintes opções estão disponíveis ao promover uma página de lançamento:
 
@@ -35,7 +34,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
 
 >[!CAUTION]
 >
->Um único lançamento não pode ser promovido simultaneamente. Isso significa que duas ações de promoção na mesma inicialização ao mesmo tempo podem resultar em um erro - `Launch could not be promoted` (juntamente com erros de conflito no log).
+>Um único lançamento não pode ser promovido simultaneamente. Isso significa que duas ações de promoção simultâneas em uma mesma inicialização podem resultar em um erro - `Launch could not be promoted` (juntamente com erros de conflito no log).
 
 >[!CAUTION]
 >
@@ -49,9 +48,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
 >
 >* [Promover um lançamento aninhado](#promoting-a-nested-launch) quando há mais de um lançamento na estrutura.
 >* [Lançamentos - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter mais detalhes sobre promoção e publicação automática.
-
 >
-
 
 
 É possível promover os lançamentos no console de **Sites** ou de **Lançamentos**:
@@ -60,7 +57,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
 
    * o console **Sites**:
 
-      1. Abra o painel [referências](/help/sites-authoring/author-environment-tools.md#showingpagereferences) e selecione a página de origem necessária usando [modo de seleção](/help/sites-authoring/basic-handling.md) (ou selecione e abra o painel de referências, a ordem não é importante). Todas as referências serão exibidas.
+      1. Abra o [painel de referências](/help/sites-authoring/author-environment-tools.md#showingpagereferences) e selecione a página de origem desejada usando o [modo de seleção](/help/sites-authoring/basic-handling.md) (ou selecione e abra o painel de referências; a ordem não é importante). Todas as referências serão exibidas.
 
       1. Selecione **Lançamentos** (por exemplo, Lançamentos [1]) para exibir uma lista de lançamentos específica.
       1. Selecione o lançamento específico para mostrar as ações disponíveis.
@@ -85,7 +82,7 @@ Você precisa promover as páginas de lançamento para retornar o conteúdo à f
 
    Por exemplo, ao selecionar para promover somente as páginas modificadas:
 
-   ![launch-pd-06](assets/launches-pd-06.png)
+   ![launches-pd-06](assets/launches-pd-06.png)
 
    >[!NOTE]
    >
@@ -108,7 +105,7 @@ Ao editar uma página de lançamento, a ação **Promover lançamento** também 
 >
 >Está disponível para [lançamentos aninhados](#promoting-a-nested-launch) e individuais.
 
-## Promover um lançamento aninhado  {#promoting-a-nested-launch}
+## Promover um lançamento aninhado {#promoting-a-nested-launch}
 
 Depois de criar uma inicialização aninhada, é possível promovê-la para qualquer uma das origens, incluindo a origem raiz (produção).
 
@@ -119,7 +116,7 @@ Depois de criar uma inicialização aninhada, é possível promovê-la para qual
 
 1. Insira os detalhes necessários:
 
-   * **Público alvo**
+   * **Target**
 
       * **Destino de promoção** É possível promover para qualquer uma das origens.
 
@@ -136,7 +133,7 @@ Depois de criar uma inicialização aninhada, é possível promovê-la para qual
 1. Selecione **Próximo**.
 1. Revise os detalhes da promoção antes que selecionar **Promover**:
 
-   ![chlimage_1-105](assets/chlimage_1-106.png)
+   ![chlimage_1-106](assets/chlimage_1-106.png)
 
    >[!NOTE]
    >

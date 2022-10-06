@@ -1,8 +1,8 @@
 ---
 title: JSRP - Provedor de recursos de armazenamento JCR
-seo-title: JSRP - Provedor de recursos de armazenamento JCR
+seo-title: JSRP - JCR Storage Resource Provider
 description: O JSRP geralmente é mais adequado para ambientes de demonstração ou desenvolvimento de uma instância de publicação e uma instância de autor
-seo-description: O JSRP geralmente é mais adequado para ambientes de demonstração ou desenvolvimento de uma instância de publicação e uma instância de autor
+seo-description: JSRP is generally best suited for demonstration or development environments of one publish instance and one author instance
 uuid: 358a43c1-4137-4300-8443-c0d7166968ad
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Quando o AEM Communities usa o JSRP como sua opção de armazenamento (o padrão
 
 Devido à simplicidade da implantação, o JSRP geralmente é mais adequado para ambientes de demonstração ou desenvolvimento de uma instância de publicação e uma instância de autor.
 
-Consulte também [Características das Opções de SRP](working-with-srp.md#characteristics-of-srp-options) e [Topologias recomendadas](topologies.md).
+Consulte também [Características das opções de SRP](working-with-srp.md#characteristics-of-srp-options) e [Topologias recomendadas](topologies.md).
 
 ## Configuração {#configuration}
 
@@ -34,13 +34,13 @@ Consulte também [Características das Opções de SRP](working-with-srp.md#char
 
 Por padrão, o JSRP é a opção de armazenamento para UGC.
 
-O [console Configuração de Armazenamento](srp-config.md) permite a seleção da configuração de armazenamento padrão, que identifica qual implementação do SRP usar.
+O [Console de configuração de armazenamento](srp-config.md) permite a seleção da configuração de armazenamento padrão, que identifica qual implementação do SRP usar.
 
 No ambiente de criação, para acessar o console Configuração de armazenamento
 
-* Na navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Configuração de Armazenamento]**
+* Na navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Configuração de armazenamento]**
 
-* Selecione **[!UICONTROL Provedor de Recursos de Armazenamento JCR (JSRP)]**
+* Selecionar **[!UICONTROL Provedor de recursos de armazenamento JCR (JSRP)]**
 
 * Selecione **[!UICONTROL Enviar]**
 
@@ -51,15 +51,15 @@ No ambiente de criação, para acessar o console Configuração de armazenamento
 Embora o JSRP seja a configuração padrão, para garantir que a configuração idêntica seja definida no ambiente de publicação:
 
 * Na navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]**
-* Selecione **[!UICONTROL Ativar árvore]** > **[!UICONTROL Iniciar caminho]**:
+* Selecionar **[!UICONTROL Ativar árvore]** > **[!UICONTROL Caminho de início]**:
 
    * Navegue até `/conf/global/settings/community/srpc/`
 
-* Selecione **[!UICONTROL Ativar]**
+* Selecionar **[!UICONTROL Ativar]**
 
 ## Gerenciar dados do usuário {#managing-user-data}
 
-Para obter informações sobre *usuários*, *perfis de usuário* e *grupos de usuários*, normalmente inseridos no ambiente de publicação, visite:
+Para obter informações sobre *usuários*, *perfis de usuário* e *grupos de usuários*, normalmente inserido no ambiente de publicação, visite:
 
 * [Sincronização de usuários](sync.md)
 * [Gerenciar usuários e grupos de usuários](users.md)
@@ -74,8 +74,8 @@ Em todas as instâncias de criação e publicação AEM, revise o console Config
 
 * No JCR, se [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-   * Não contém um nó [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc), significa que o provedor de armazenamento é JSRP.
-   * Se o nó srpc existir e contiver o nó [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), as propriedades da configuração padrão deverão definir o JSRP para ser o provedor padrão.
+   * Não contém um [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) , significa que o provedor de armazenamento é JSRP.
+   * Se o nó srpc existir e contiver nó [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), as propriedades da configuração padrão devem definir o JSRP para ser o provedor padrão.
 
 ### UGC não visível na instância do autor {#ugc-not-visible-on-author-instance}
 
@@ -83,7 +83,7 @@ Isso não é um erro. Uma característica do JSRP é que o conteúdo da comunida
 
 ### UGC não visível na instância de publicação {#ugc-not-visible-on-publish-instance}
 
-Se uma única instância de publicação ou se um cluster de publicação estiver implantado, siga as instruções para [UGC Not Visible in JCR](#ugc-not-visible-in-jcr).
+Se uma única instância de publicação ou se um cluster de publicação estiver implantado, siga as instruções para [UGC não visível no JCR](#ugc-not-visible-in-jcr).
 
 Se um farm de publicação for implantado, uma característica do JSRP é que o conteúdo da comunidade só será visível na instância de publicação em que foi publicado.
 

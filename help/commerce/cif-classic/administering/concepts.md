@@ -1,5 +1,5 @@
 ---
-title: 'Conceitos '
+title: Conceitos
 description: Conceitos gerais de comércio eletrônico com AEM.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
@@ -36,7 +36,6 @@ Isso significa que:
 >* [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
 >* [Commerce Cloud SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
 >* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-
 >
 
 
@@ -396,7 +395,7 @@ Observe que esse teste de desempenho requer conhecimento e análise de seu públ
 
 * Volumes de conteúdo
 
-   * Ativos
+   * Assets
    * Produtos e SKUs da I18ned localizados
 
 * Atividade do usuário:
@@ -554,7 +553,7 @@ Geralmente, as promoções não são mantidas pelos gerentes de informações do
    * renderizadores e diálogos para administração de promoção
    * subcomponentes para renderizar e editar parâmetros de configuração específicos dos manipuladores de promoção
 
-AEM as promoções também são integradas ao [Gerenciamento de campanhas](/help/sites-authoring/personalization.md):
+AEM as promoções também são integradas ao [Campaign Management](/help/sites-authoring/personalization.md):
 
 * a [campanha](/help/sites-authoring/personalization.md) especifica os tempos de ativação/desativação
 * [experiências](/help/sites-authoring/personalization.md) *within* a campanha é usada para agrupar ativos (páginas de grupo, promoções etc.) de acordo com o segmento de público-alvo ao qual elas correspondem

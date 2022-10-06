@@ -1,8 +1,8 @@
 ---
 title: Gerenciamento de contas de usuário convidadas e locais
-seo-title: Gerenciamento de contas de usuário convidadas e locais
+seo-title: Managing invited and local user accounts
 description: Usando a segurança do documento, você pode pesquisar, exibir, editar, bloquear, desbloquear e excluir contas de usuário convidadas e locais.
-seo-description: Usando a segurança do documento, você pode pesquisar, exibir, editar, bloquear, desbloquear e excluir contas de usuário convidadas e locais.
+seo-description: Using document security, you can search for, view, edit, lock, unlock, and delete invited and local user accounts.
 uuid: 0d0c717a-6e6e-4e42-96eb-3a7166e215ab
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1196'
 ht-degree: 0%
 
 ---
-
 
 # Gerenciamento de contas de usuário convidadas e locais {#managing-invited-and-local-user-accounts}
 
@@ -62,7 +61,7 @@ Quando você adiciona um usuário convidado, a segurança do documento envia aut
 1. Na lista de usuários, marque a caixa de seleção de cada usuário para enviar um email de registro e clique em Reenviar email de convite.
 1. Revise a lista de usuários selecionados e clique em OK.
 
-## Redefinir uma senha de usuário local {#reset-a-local-user-password}
+## Redefinir senha de usuário local {#reset-a-local-user-password}
 
 Você pode redefinir senhas para usuários convidados ativados que se registraram com a segurança do documento, mas esqueceram a senha. Ao redefinir uma senha, é gerado um email contendo uma senha nova e temporária para o usuário.
 
@@ -103,14 +102,14 @@ Se você excluir uma conta de usuário, somente você ou outro administrador pod
 1. No console de administração, clique em Serviços > Segurança de documentos > Usuários convidados e locais e clique na guia Usuários convidados .
 1. Marque a caixa de seleção ao lado de um ou mais usuários, clique em Excluir e em OK.
 
-## Procurar uma conta de usuário convidada {#search-for-an-invited-user-account}
+## Procurar uma conta de utilizador convidada {#search-for-an-invited-user-account}
 
 Você pode procurar contas de usuário convidadas usando um endereço de email.
 
 1. No console de administração, clique em Serviços > Segurança de documentos > Usuários convidados e locais.
 1. Na caixa Localizar e-mail, digite o endereço de e-mail do usuário e clique em Localizar.
 
-## Pesquisar por uma conta de usuário local {#search-for-a-local-user-account}
+## Procurar uma conta de utilizador local {#search-for-a-local-user-account}
 
 Você pode procurar um usuário local usando o endereço de email do usuário, o nome e o domínio.
 
@@ -134,4 +133,3 @@ Você pode encontrar usuários mais facilmente, classificando a lista de usuári
    1. No console de administração, clique em Serviços > Segurança de documentos > Usuários convidados e locais.
    1. Para classificar usuários convidados, clique na guia Usuários convidados e clique no cabeçalho apropriado da coluna.
    1. Para classificar usuários locais, clique na guia Usuários locais e clique no cabeçalho apropriado da coluna.
-

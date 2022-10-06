@@ -2,12 +2,12 @@
 title: Lista de recursos de experiências fluídas do AEM
 description: Lista de recursos de experiências fluídas
 index: n
-feature: 'Criação  '
+feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 9%
+source-wordcount: '350'
+ht-degree: 12%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 As experiências fluídas do Adobe Experience Manager são obtidas com os avançados conjuntos de recursos do AEM Sites, AEM Dynamic Media e AEM Assets para fornecer uma solução robusta para a entrega de conteúdo sem interface.
 
-AEM Experiências fluídas se diferenciam dos AEM clássicos, já que apenas o caso de uso de delivery sem interface é resolvido. A criação e entrega de conteúdo dedicado e AEM forte suporte para casos de uso híbridos estão disponíveis com as [soluções completas de AEM Sites, Assets e Dynamic Media.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM Experiências fluídas se diferenciam dos AEM clássicos, já que apenas o caso de uso de delivery sem interface é resolvido. A criação e entrega de conteúdo abrangente e AEM forte suporte para casos de uso híbrido estão disponíveis com o [soluções completas de AEM Sites, Assets e Dynamic Media.](https://docs.adobe.com/content/help/pt-BR/experience-manager-65/user-guide/home.html)
 
 As tabelas a seguir definem os recursos de AEM Experiências fluídas e vinculam à documentação de suporte relevante.
 
@@ -37,7 +37,7 @@ As tabelas a seguir definem os recursos de AEM Experiências fluídas e vinculam
 | [Representações de imagem](/help/assets/image-presets.md) |
 | [Metadados e gerenciamento de tags](/help/assets/metadata.md) |
 | [Pesquisar](/help/assets/manage-assets.md) |
-| [](/help/assets/manage-assets.md) Coleções e  [lightbox](/help/assets/light-box.md) |
+| [Coleções](/help/assets/manage-assets.md) e [lightbox](/help/assets/light-box.md) |
 | [Perfis](/help/assets/processing-profiles.md) |
 | [Controle de versão](/help/assets/manage-assets.md) |
 | [Detecção de duplicatas](/help/assets/duplicate-detection.md) |

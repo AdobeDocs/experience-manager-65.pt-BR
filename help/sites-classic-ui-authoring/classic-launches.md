@@ -1,22 +1,21 @@
 ---
 title: Lançamentos
-seo-title: Lançamentos
-description: Crie um lançamento para permitir a atualização de uma nova versão de páginas da web existentes para ativação futura. Ao criar o Lançamento, especifique um título e a página de origem.
-seo-description: Crie um lançamento para permitir a atualização de uma nova versão de páginas da web existentes para ativação futura. Ao criar o Lançamento, especifique um título e a página de origem.
+seo-title: Launches
+description: Crie um lançamento para permitir a atualização de uma nova versão de páginas da web existentes para ativação futura. Ao criar a inicialização, especifique um título e a página de origem.
+seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
 uuid: b1952b6c-fc44-4e39-80ba-9380a6c66b8c
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: e64a66cb-d56a-4504-8883-609143d0daf8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 74%
+source-wordcount: '183'
+ht-degree: 70%
 
 ---
-
 
 # Lançamentos{#launches}
 
@@ -26,12 +25,12 @@ Um lançamento é criado para permitir que você faça modificações prontas pa
 
 >[!NOTE]
 >
->A teoria por trás das inicializações é descrita em detalhes em [Inicializações](/help/sites-authoring/launches.md) na documentação de criação padrão.
+>A teoria por trás dos lançamentos é descrita em detalhes em [Lançamentos](/help/sites-authoring/launches.md) na documentação de criação padrão.
 >
->As informações específicas para o uso de inicializações na interface clássica podem ser encontradas na documentação a seguir juntamente com [Criando Inicializações](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Editando Inicializações](/help/sites-classic-ui-authoring/classic-launches-editing.md) e [Promovendo Inicializações](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>Informações específicas sobre o uso de lançamentos na interface clássica podem ser encontradas na documentação a seguir, juntamente com [Criação de lançamentos](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Edição de lançamentos](/help/sites-classic-ui-authoring/classic-launches-editing.md)e [Promoção de lançamentos](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >Não é possível ter várias ramificações de origem para um lançamento na interface clássica.
 
-O console Inicializações pode ser acessado diretamente com [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+O console Lançamentos pode ser acessado diretamente com [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)

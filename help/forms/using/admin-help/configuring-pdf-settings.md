@@ -379,7 +379,7 @@ Essas opções se aplicam se você trabalhar com documentos criados com document
 
 As funções de transferência são utilizadas para efeitos artísticos e ajustam - se às especificações de um dispositivo de saída específico. Por exemplo, um arquivo destinado à saída em uma imagem específica pode conter funções de transferência que compensam o ganho de ponto inerente a essa impressora.
 
-**Preservar Em Remoção De Cores E Geração De Preto:** Mantém essas configurações, se elas existirem no arquivo PostScript. A geração de preto calcula a quantidade de preto a ser usada quando você está tentando reproduzir uma cor específica. A remoção de subcores (UCR) reduz a quantidade de componentes ciano, magenta e amarelo para compensar a quantidade de preto que a geração de preto adicionou. Por utilizar menos tinta, o UCR é geralmente utilizado para papel de jornal e material não revestido.
+**Preservar Em Remoção De Cores E Geração De Preto:** Mantém essas configurações se elas existirem no arquivo PostScript. A geração de preto calcula a quantidade de preto a ser usada quando você está tentando reproduzir uma cor específica. A remoção de subcores (UCR) reduz a quantidade de componentes ciano, magenta e amarelo para compensar a quantidade de preto que a geração de preto adicionou. Por utilizar menos tinta, o UCR é geralmente utilizado para papel de jornal e material não revestido.
 
 **Quando Funções De Transferência São Encontradas:** Determina o que fazer quando as funções de transferência forem encontradas:
 

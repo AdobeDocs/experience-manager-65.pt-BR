@@ -1,10 +1,11 @@
 ---
 title: Saiba mais sobre o conteúdo sem periféricos e como traduzi-lo em AEM
 description: Aprenda conceitos sem interface, como eles mapeiam para AEM e a teoria AEM tradução.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -14,7 +15,7 @@ Aprenda conceitos sem interface, como eles mapeiam para AEM e a teoria AEM tradu
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender a entrega de conteúdo sem periféricos, como o AEM é compatível e como esse conteúdo pode ser traduzido. Depois de ler, você deve:
+Este documento ajuda você a entender a entrega de conteúdo sem periféricos, como o AEM é compatível e como esse conteúdo pode ser traduzido. Depois de ler esse documento, você deverá:
 
 * Entenda os conceitos básicos de entrega de conteúdo sem periféricos.
 * Familiarize-se com o modo como o AEM suporta headless e tradução.
@@ -44,7 +45,7 @@ O cabeçalho de qualquer sistema é geralmente o renderizador de saída desse si
 
 Quando falamos de um CMS sem interface, o CMS gerencia o conteúdo e continua a entregá-lo aos consumidores. No entanto, apenas entregando a variável **conteúdo** de forma padronizada, um CMS sem periféricos omita a renderização final de output, deixando o **apresentação** do conteúdo para o serviço de consumo.
 
-![CMS sem periféricos](/help/journey-headless/developer/assets/headless-cms.png)
+![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
 Os serviços que consomem, sejam experiências de AR, uma loja da Web, experiências móveis, aplicativos da Web progressivos (PWA), etc., absorvem conteúdo do CMS sem periféricos e fornecem sua própria renderização. Eles cuidam de fornecer suas próprias cabeças para o seu conteúdo.
 
@@ -58,10 +59,10 @@ O poder do AEM permite que ele forneça conteúdo sem interface, em pilha comple
 
 Além disso, na jornada, você aprenderá os detalhes sobre como o AEM traduz o conteúdo, mas em um alto nível, o conceito é simples:
 
-1. Defina uma conexão com um serviço de tradução configurando a estrutura de integração de tradução.
-1. Defina qual conteúdo deve ser traduzido usando as regras de tradução.
-1. Crie um projeto de tradução para colher o conteúdo, enviá-lo para o serviço de tradução e receber os resultados.
-1. Revise e publique o conteúdo traduzido.
+1. Definir uma conexão com um serviço de tradução, configurando a estrutura de integração de tradução.
+1. Definir qual conteúdo deve ser traduzido usando as regras de tradução.
+1. Criar um projeto de tradução para coletar o conteúdo, enviá-lo para o serviço de tradução e receber os resultados.
+1. Revisar e publicar o conteúdo traduzido.
 
 ## O que vem a seguir {#what-is-next}
 
@@ -76,4 +77,4 @@ Aproveite esse conhecimento e prossiga com sua jornada de tradução sem perifé
 
 Embora seja recomendável seguir para a próxima parte da jornada de tradução sem periféricos revisando o documento [Comece com AEM tradução sem periféricos,](getting-started.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não é necessário que eles continuem na jornada sem periféricos.
 
-* [MSM e tradução](/help/sites-administering/msm-and-translation.md) - Os detalhes do AEM Multi-Site Manager e como ele funciona com suas ferramentas de tradução
+* [MSM e tradução](/help/sites-administering/msm-and-translation.md) - Os detalhes do Gerenciamento de vários sites do AEM e como ele trabalha com ferramentas de tradução

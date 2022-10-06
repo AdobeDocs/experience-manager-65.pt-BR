@@ -1,5 +1,5 @@
 ---
-title: Estrutura de marcação de AEM
+title: Estrutura de marcação do AEM
 seo-title: AEM Tagging Framework
 description: Adicionar tags ao conteúdo e aproveitar a infraestrutura de marcação de AEM
 seo-description: Tag content and leverage the AEM Tagging infrastructure
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Estrutura de marcação de AEM {#aem-tagging-framework}
+# Estrutura de marcação do AEM {#aem-tagging-framework}
 
 Para marcar o conteúdo e aproveitar a infraestrutura de marcação de AEM :
 
@@ -183,7 +183,6 @@ O `cq:OwnerTaggable` mixin, que herda de `cq:Taggable`, destina-se a indicar que
 >* páginas ( `cq:Page`) em que `jcr:content`o nó é do tipo `cq:PageContent` que inclui `cq:Taggable` mistura.
 >
 >* ativos ( `cq:Asset`) em que `jcr:content/metadata` o nó sempre tem o `cq:Taggable` mistura.
-
 >
 
 

@@ -1,22 +1,21 @@
 ---
 title: Propriedades de configuração do gerenciamento de correspondência
-seo-title: Propriedades de configuração do gerenciamento de correspondência
+seo-title: Correspondence Management Configuration Properties
 description: Este tópico explica como você pode modificar o Asset Composer com configurações específicas da solução. Este tópico detalha as propriedades que podem ser editadas, com sua descrição, valores padrão e valores aceitáveis.
-seo-description: Este tópico explica como você pode modificar o Asset Composer com configurações específicas da solução. Este tópico detalha as propriedades que podem ser editadas, com sua descrição, valores padrão e valores aceitáveis.
+seo-description: This topic explains how you can modify Asset Composer with solution-specific configurations. This topic details the properties you can edit, with their description, default values, and acceptable values.
 uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '845'
 ht-degree: 4%
 
 ---
-
 
 # Propriedades de configuração do gerenciamento de correspondência {#correspondence-management-configuration-properties}
 
@@ -53,12 +52,12 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   <tr>
    <td>Tipo de representação</td>
    <td>O tipo de representação que o aplicativo Criar correspondência usa para renderizar a visualização da carta. </td>
-   <td>Representação HTML</td>
-   <td>Representação HTML / Representação PDF</td>
+   <td>HTML Rendition</td>
+   <td>Representação de HTML / Representação de PDF</td>
   </tr>
   <tr>
-   <td><p>Ativar o destaque do PDF CCR</p> </td>
-   <td><p>Habilita o destaque em PDF no aplicativo Criar correspondência</p> </td>
+   <td><p>Ativar o realce PDF CCR</p> </td>
+   <td><p>Habilita o destaque no PDF no aplicativo Criar correspondência</p> </td>
    <td><p>verdadeiro</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -250,13 +249,13 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   </tr>
   <tr>
    <td><p>Tamanho do Cache de Carta</p> </td>
-   <td><p>Especifique o Número máximo de letras a serem mantidas em cache.</p> <p>Alterar esse valor resultará na limpeza do cache <code>in-memory</code>.</p> </td>
+   <td><p>Especifique o Número máximo de letras a serem mantidas em cache.</p> <p>Alterar esse valor resultará na limpeza de <code>in-memory</code> cache.</p> </td>
    <td><p>100</p> </td>
    <td><p>Qualquer valor numérico</p> </td>
   </tr>
   <tr>
    <td><p>Ativar Cache de Carta</p> </td>
-   <td><p>Ative/desative o cache de letras.</p> <p>Alterar esse valor resultará na limpeza do cache <code>in-memory </code>.</p> </td>
+   <td><p>Ative/desative o cache de letras.</p> <p>Alterar esse valor resultará na limpeza de <code>in-memory </code> cache.</p> </td>
    <td><p>verdadeiro</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -292,7 +291,7 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   </tr>
   <tr>
    <td><p>Diretório de depuração </p> <p> </p> </td>
-   <td>Local da pasta do sistema de arquivos para depuração. Se o diretório não <code>exists</code>, nenhum despejo de depuração será gerado.</td>
+   <td>Local da pasta do sistema de arquivos para depuração. Se o diretório não <code>exists</code>, nenhum dumps de depuração será gerado.</td>
    <td>acm.debugDirectory</td>
    <td> </td>
   </tr>

@@ -6,14 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
-
 
 # Usar a reindexação offline para reduzir o tempo de inatividade durante uma atualização {#offline-reindexing-to-reduce-downtime-during-upgrades}
 
@@ -21,19 +20,19 @@ ht-degree: 0%
 
 Um dos principais desafios da atualização do Adobe Experience Manager é o tempo de inatividade associado ao ambiente de criação quando uma atualização no local é realizada. Os autores de conteúdo não poderão acessar o ambiente durante uma atualização. Portanto, é desejável minimizar a quantidade de tempo necessária para executar a atualização. Para repositórios grandes, especialmente projetos da AEM Assets, que normalmente têm grandes armazenamentos de dados e um alto nível de uploads de ativos por hora, a reindexação de índices do Oak leva uma porcentagem significativa do tempo de atualização.
 
-Esta seção descreve como usar a ferramenta Oak-run para reindexar o repositório **antes de** executar a atualização, reduzindo assim o tempo de inatividade durante a atualização real. As etapas apresentadas podem ser aplicadas a índices [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) para versões AEM 6.4 e superiores.
+Esta seção descreve como usar a ferramenta Oak-run para reindexar o repositório **before** executar a atualização, reduzindo assim o tempo de inatividade durante a atualização real. As etapas apresentadas podem ser aplicadas a [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) índices para versões AEM 6.4 e superior.
 
 ## Visão geral {#overview}
 
 Novas versões do AEM introduzem alterações nas definições de índice Oak à medida que o conjunto de recursos é expandido. As alterações nos índices do Oak forçam a reindexação ao atualizar a instância do AEM. A reindexação é cara para implantações de ativos, pois o texto em ativos (por exemplo, o texto no arquivo pdf) é extraído e indexado. Com repositórios MongoMK, os dados persistem na rede, aumentando ainda mais o tempo que a reindexação leva.
 
-O problema que a maioria dos clientes enfrentam durante uma atualização é reduzir a janela de tempo de inatividade. A solução é **ignorar** a atividade de reindexação durante a atualização. Isso pode ser feito criando os novos deces **anteriores** para executar a atualização e, em seguida, simplesmente importando-os durante a atualização.
+O problema que a maioria dos clientes enfrentam durante uma atualização é reduzir a janela de tempo de inatividade. A solução é **ignorar** a atividade de reindexação durante a atualização. Isso pode ser feito criando-se novos decretos **before** para executar a atualização, basta importá-los durante a atualização.
 
 ## Abordagem {#approach}
 
 ![offline-reindexing-upgrade-text-extraction](assets/offline-reindexing-upgrade-process.png)
 
-A ideia é criar o índice antes da atualização, em relação às definições de índice da versão de AEM de destino usando a ferramenta [Oak-run](/help/sites-deploying/indexing-via-the-oak-run-jar.md). O diagrama acima mostra a abordagem de reindexação offline.
+A ideia é criar o índice antes da atualização, em relação às definições de índice da versão de AEM de destino usando o [Oak-run](/help/sites-deploying/indexing-via-the-oak-run-jar.md) ferramenta. O diagrama acima mostra a abordagem de reindexação offline.
 
 Além disso, esta é a ordem das etapas conforme descrito na abordagem:
 
@@ -44,13 +43,13 @@ Além disso, esta é a ordem das etapas conforme descrito na abordagem:
 
 ### Extração de texto {#text-extraction}
 
-Para permitir a indexação completa em AEM, o texto de binários como PDF é extraído e adicionado ao índice. Geralmente, essa é uma etapa cara no processo de indexação. A extração de texto é uma etapa de otimização defendida especialmente para reindexar repositórios de ativos, pois armazena um grande número de binários.
+Para permitir a indexação completa em AEM, o texto de binários como o PDF é extraído e adicionado ao índice. Geralmente, essa é uma etapa cara no processo de indexação. A extração de texto é uma etapa de otimização defendida especialmente para reindexar repositórios de ativos, pois armazena um grande número de binários.
 
 ![offline-reindexing-upgrade-text-extraction](assets/offline-reindexing-upgrade-text-extraction.png)
 
 O texto de binários armazenados no sistema pode ser extraído usando a ferramenta oak-run com a biblioteca tika. Um clone dos sistemas de produção pode ser feito antes da atualização e pode ser usado para esse processo de extração de texto. Esse processo cria o armazenamento de texto, seguindo as seguintes etapas:
 
-**1. Percorra o repositório e colete os detalhes de binários**
+**1. Analise o repositório e colete os detalhes de binários**
 
 Essa etapa produz um arquivo CSV contendo uma tupla de binários, contendo um caminho e uma id de blob.
 
@@ -60,11 +59,11 @@ Execute o comando abaixo no diretório em que deseja criar o índice. O exemplo 
 java java -jar oak-run.jar tika <nodestore path> --fds-path <datastore path> --data-file text-extraction/oak-binary-stats.csv --generate
 ```
 
-Onde `nodestore path` é o `mongo_ur` ou `crx-quickstart/repository/segmentstore/`
+Onde `nodestore path` é `mongo_ur` ou `crx-quickstart/repository/segmentstore/`
 
-Use o parâmetro `--fake-ds-path=temp` em vez de `–fds-path` para acelerar o processo.
+Use o `--fake-ds-path=temp` em vez de `–fds-path` para acelerar o processo.
 
-**2. Reutilizar o arquivo de texto binário disponível no índice existente**
+**2. Reutilizar o armazenamento de texto binário disponível no índice existente**
 
 Despeje os dados de índice do sistema existente e extraia o armazenamento de texto.
 
@@ -74,7 +73,7 @@ Você pode despejar os dados de índice existentes usando o seguinte comando:
 java -jar oak-run.jar index <nodestore path> --fds-path=<datastore path> --index-dump
 ```
 
-Onde `nodestore path` é o `mongo_ur` ou `crx-quickstart/repository/segmentstore/`
+Onde `nodestore path` é `mongo_ur` ou `crx-quickstart/repository/segmentstore/`
 
 Em seguida, use o despejo de índice acima para preencher a loja:
 
@@ -82,9 +81,9 @@ Em seguida, use o despejo de índice acima para preencher a loja:
 java -jar oak-run.jar tika --data-file text-extraction/oak-binary-stats.csv --store-path text-extraction/store --index-dir ./indexing-result/index-dumps/<oak-index-name>/data populate
 ```
 
-Onde `oak-index-name` é o nome do índice de texto completo, por exemplo &quot;lucene&quot;.
+Onde `oak-index-name` é o nome do índice de texto completo, por exemplo, &quot;lucene&quot;.
 
-**3. Execute o processo de extração de texto usando a biblioteca de dados para os binários ignorados na etapa acima**
+**3. Execute o processo de extração de texto usando a biblioteca de dicas para os binários ignorados na etapa acima**
 
 ```
 java -cp oak-run.jar:tika-app-1.21.jar org.apache.jackrabbit.oak.run.Main tika --data-file text-extraction/oak-binary-stats.csv --store-path text-extraction/store --fds-path <datastore path> extract
@@ -94,7 +93,7 @@ Onde `datastore path` é o caminho para o armazenamento de dados binário.
 
 O armazenamento de texto criado pode ser atualizado e reutilizado para cenários de reindexação no futuro.
 
-Para obter mais detalhes sobre o processo de extração de texto, consulte a [Documentação de execução do Oak](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html).
+Para obter mais detalhes sobre o processo de extração de texto, consulte o [Documentação Oak-run](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html).
 
 ### Reindexação offline {#offline-reindexing}
 
@@ -108,19 +107,19 @@ Para criar o índice offline, siga as etapas abaixo:
 
 Despeje as definições de índice existentes. As definições de índice que sofreram alteração foram geradas usando o pacote de repositório Adobe Granite da versão de AEM de destino e oak-run.
 
-Para despejar a definição de índice da instância de AEM **source**, execute este comando:
+Para despejar a definição do índice do **source** AEM instância, execute este comando:
 
 >[!NOTE]
 >
->Para obter mais detalhes sobre definições de índice de dumping, consulte a [documentação do Oak](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#async-index-data).
+>Para mais informações sobre definições de índices de dumping, consulte o [Documentação do Oak](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#async-index-data).
 
 ```
 java -jar oak-run.jar index --fds-path <datastore path> <nodestore path> --index-definitions
 ```
 
-Onde `datastore path` e `nodestore path` são da instância de AEM **source**.
+Onde `datastore path` e `nodestore path` são da **source** AEM instância.
 
-Em seguida, gere as definições de índice da versão de AEM **target** usando o pacote de repositório Granite da versão de destino.
+Em seguida, gere definições de índice a partir da variável **target** AEM versão usando o pacote de repositório Granite da versão de destino.
 
 ```
 java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabbit.oak.index.IndexDefinitionUpdater --in indexing-definitions_source.json --out merge-index-definitions_target.json --initializer com.adobe.granite.repository.impl.GraniteContent
@@ -128,15 +127,15 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 >[!NOTE]
 >
-> O processo de criação da definição de índice acima é compatível somente a partir da versão `oak-run-1.12.0`. O direcionamento é feito usando o pacote de repositório Granite `com.adobe.granite.repository-x.x.xx.jar`.
+> O processo de criação da definição de índice acima é compatível somente com o `oak-run-1.12.0` em diante. O direcionamento é feito usando o pacote de repositório do Granite `com.adobe.granite.repository-x.x.xx.jar`.
 
 As etapas acima criam um arquivo JSON chamado `merge-index-definitions_target.json` que é a definição do índice.
 
 **2. Criar um ponto de verificação no repositório**
 
-Crie um ponto de verificação na instância de AEM de produção **source** com uma duração longa. Isso deve ser feito antes da clonagem do repositório.
+Criar um ponto de verificação na produção **source** AEM instância com uma duração longa. Isso deve ser feito antes da clonagem do repositório.
 
-Por meio do console JMX localizado em `http://serveraddress:serverport/system/console/jmx`, vá para `CheckpointMBean` e crie um ponto de verificação com duração suficiente (por exemplo, 200 dias). Para isso, chame `CheckpointMBean#createCheckpoint` com `17280000000` como o argumento para a duração do tempo de vida em milissegundos.
+Por meio do console JMX localizado em `http://serveraddress:serverport/system/console/jmx`, vá para `CheckpointMBean` e criar um ponto de verificação com duração suficiente (por exemplo, 200 dias). Para isso, chame `CheckpointMBean#createCheckpoint` com `17280000000` como o argumento para a duração da vida útil em milissegundos.
 
 Depois disso, copie a ID do ponto de verificação recém-criada e valide a vida útil usando JMX `CheckpointMBean#listCheckpoints`.
 
@@ -144,11 +143,11 @@ Depois disso, copie a ID do ponto de verificação recém-criada e valide a vida
 >
 > Esse ponto de verificação será excluído quando o índice for importado posteriormente.
 
-Para obter mais detalhes, consulte [checkpoint creation](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint) na documentação do Oak.
+Para obter mais detalhes, consulte [criação do ponto de verificação](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint) na documentação do Oak.
 
 **Executar indexação offline para as definições de índice geradas**
 
-A reindexação do Lucene pode ser feita offline usando oak-run. Esse processo cria dados de índice no disco em `indexing-result/indexes`. Ele **not** grava no repositório e, portanto, não requer parar a instância de AEM em execução. O armazenamento de texto criado é alimentado neste processo:
+A reindexação do Lucene pode ser feita offline usando oak-run. Esse processo cria dados de índice no disco em `indexing-result/indexes`. Ele faz **not** gravar no repositório e, portanto, não é necessário parar a instância AEM em execução. O armazenamento de texto criado é alimentado neste processo:
 
 ```
 java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --reindex --doc-traversal-mode --checkpoint <checkpoint> --fds-path <datastore path> --index-definitions-file merge-index-definitions_target.json --pre-extracted-text-dir text-extraction/store
@@ -159,15 +158,15 @@ Sample <checkpoint> looks like r16c85700008-0-8
 merge-index-definitions_target: JSON file having merged definitions for the target AEM instance. indexes in this file will be re-indexed.
 ```
 
-O uso do parâmetro `--doc-traversal-mode` é útil com instalações do MongoMK, pois melhora o tempo de reindexação significativamente, pois detalha o conteúdo do repositório em um arquivo simples local. No entanto, ele requer espaço em disco adicional do dobro do tamanho do repositório.
+Uso do `--doc-traversal-mode` O parâmetro é útil para instalações do MongoMK, pois melhora significativamente o tempo de reindexação, pois detalha o conteúdo do repositório em um arquivo simples local. No entanto, ele requer espaço em disco adicional do dobro do tamanho do repositório.
 
 No caso do MongoMK, esse processo poderá ser acelerado se essa etapa for executada em uma instância mais próxima da instância do MongoDB. Se executado na mesma máquina, a sobrecarga da rede pode ser evitada.
 
-Detalhes técnicos adicionais podem ser encontrados na documentação [oak-run para indexação](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
+Os detalhes técnicos adicionais podem ser encontrados na seção [documentação de oak-run para indexação](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 
-### Importar índices {#importing-indexes}
+### Importação de índices {#importing-indexes}
 
-Com AEM 6.4 e versões mais recentes, o AEM tem o recurso integrado para importar índices do disco na sequência de inicialização. A pasta `<repository>/indexing-result/indexes` é observada para a presença de dados de índice durante a inicialização. Você pode copiar o índice pré-criado para o local acima durante o [processo de atualização](in-place-upgrade.md#performing-the-upgrade) antes de começar com a nova versão do jar de AEM **target**. AEM o importa para o repositório e remove o ponto de verificação correspondente do sistema. Assim, uma reindexação é completamente evitada.
+Com AEM 6.4 e versões mais recentes, o AEM tem o recurso integrado para importar índices do disco na sequência de inicialização. A pasta `<repository>/indexing-result/indexes` O é observado para a presença de dados de índice durante a inicialização. Você pode copiar o índice pré-criado para o local acima durante a [processo de atualização](in-place-upgrade.md#performing-the-upgrade) antes de começar com a nova versão do **target** AEM jar. AEM o importa para o repositório e remove o ponto de verificação correspondente do sistema. Assim, uma reindexação é completamente evitada.
 
 ## Dicas e solução de problemas adicionais {#troubleshooting}
 
@@ -177,12 +176,12 @@ Abaixo você encontrará algumas dicas úteis e instruções para a solução de
 
 É recomendável clonar o sistema de produção e criar o índice offline usando o clone. Isso elimina qualquer impacto potencial no sistema de produção. No entanto, o ponto de verificação necessário para importar o índice precisa estar presente no sistema de produção. Portanto, criar um ponto de verificação antes de tomar o clone é essencial.
 
-### Preparar um Runbook e Executar Avaliação {#prepare-a-runbook-and-trial-run}
+### Preparar um Runbook e uma Execução de Avaliação {#prepare-a-runbook-and-trial-run}
 
-É recomendável preparar um [runbook](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) e executar alguns testes antes de executar a atualização na produção.
+Recomenda-se a preparação de uma [runbook](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) e realizar algumas tentativas antes de executar a atualização na produção.
 
 ### Modo de passagem do documento com indexação offline {#doc-traversal-mode-with-offline-indexing}
 
 A indexação offline requer várias travessias de todo o repositório. Com as instalações do MongoMK, o repositório é acessado pela rede, afetando o desempenho do processo de indexação. Uma opção é executar o processo de indexação offline na própria réplica do MongoDB, o que eliminará a sobrecarga da rede. Outra opção é o uso do modo de passagem doc.
 
-O modo de passagem do documento pode ser aplicado adicionando o parâmetro de linha de comando `—doc-traversal` ao comando oak-run para indexação offline. Esse modo armazena uma cópia de todo o repositório no disco local como um arquivo simples e a usa para executar a indexação.
+O modo de travessia do documento pode ser aplicado adicionando o parâmetro da linha de comando `—doc-traversal` para o comando oak-run para indexação offline. Esse modo armazena uma cópia de todo o repositório no disco local como um arquivo simples e a usa para executar a indexação.

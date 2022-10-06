@@ -1,22 +1,21 @@
 ---
 title: Configuração dos componentes no Modo de design
-seo-title: Configuração dos componentes no Modo de design
+seo-title: Configuring Components in Design Mode
 description: Configuração dos componentes no Modo de design
-seo-description: 'null'
+seo-description: null
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '905'
 ht-degree: 87%
 
 ---
-
 
 # Configuração dos componentes no Modo de design{#configuring-components-in-design-mode}
 
@@ -36,7 +35,7 @@ Além destes, outros componentes também estarão disponíveis. Você pode usar 
 >
 >O modo de design só está disponível para configurações de design armazenadas como conteúdo em ( `/etc`).
 >
->A partir do AEM 6.4, é recomendável armazenar designs como dados de configuração em `/apps` para oferecer suporte a cenários de implantação contínua. Os designs armazenados em `/apps` não são editáveis no tempo de execução e o modo Design não estará disponível para usuários não administradores nesses modelos.
+>A partir do AEM 6.4, é recomendável armazenar designs como dados de configuração no `/apps` para oferecer suporte a cenários de implantação contínua. Designs armazenados em `/apps` não são editáveis no tempo de execução e o modo Design não estará disponível para usuários não administradores nesses modelos.
 
 Isso envolve adicionar ou remover os componentes permitidos no sistema de parágrafos da página. O sistema de parágrafo (`parsys`) é um componente composto que contém todos os outros componentes de parágrafo. O sistema de parágrafo permite aos autores adicionar componentes de diferentes tipos em uma página, pois contêm todos os outros componentes de parágrafo. Cada tipo de parágrafo é representado como um componente.
 
@@ -57,7 +56,7 @@ Por exemplo, o conteúdo de uma página de produto pode conter um sistema de par
 >
 >A modificação de designs no CRX DE por exemplo não uma prática recomendada e a aplicação desses designs pode variar do comportamento esperado. Consulte o documento de desenvolvedor [Modelos de Página - Estático](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) para obter mais informações.
 
-## Desativar/Ativar componentes {#enable-disable-components}
+## Habilitar/desabilitar componentes {#enable-disable-components}
 
 Para ativar ou desativar um componente:
 
@@ -69,7 +68,7 @@ Para ativar ou desativar um componente:
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Clique ou toque no ícone **Pai**.
+1. Clique ou toque no **Pai** ícone .
 
    ![](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -92,7 +91,7 @@ Para ativar ou desativar um componente:
 
    **Componentes permitidos**
 
-   Na guia **Componentes permitidos**, você define quais componentes estão disponíveis para o parsys.
+   No **Componentes permitidos** , você define quais componentes estão disponíveis para o parsys.
 
    * Os componentes são agrupados por seus grupos de componentes, que podem ser expandidos e recolhidos.
    * Para selecionar um grupo inteiro, marque o nome do grupo. Para cancelar a seleção, desmarque.
@@ -110,7 +109,7 @@ Para ativar ou desativar um componente:
 
    Na guia **Configurações**, é possível definir opções adicionais como para desenhar uma âncora para cada componente e definir o preenchimento da célula de cada contêiner.
 
-1. Selecione **Concluído** para salvar sua configuração.
+1. Selecionar **Concluído** para salvar sua configuração.
 
 ## Configuração do design de um componente {#configuring-the-design-of-a-component}
 
@@ -163,4 +162,3 @@ Para ativar ou desativar um componente:
    ![](do-not-localize/screen_shot_2018-03-22at103816.png)
 
 1. Clique ou toque no ícone **Concluído** para salvar e fechar a caixa de diálogo.
-

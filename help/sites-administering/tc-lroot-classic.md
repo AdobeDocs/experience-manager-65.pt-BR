@@ -1,8 +1,8 @@
 ---
 title: Criar uma raiz de idioma usando a interface clássica
-seo-title: Criar uma raiz de idioma usando a interface clássica
+seo-title: Creating a Language Root Using the Classic UI
 description: Saiba como criar uma raiz de idioma usando a interface clássica.
-seo-description: Saiba como criar uma raiz de idioma usando a interface clássica.
+seo-description: Learn how to create a language root using the Classic UI.
 uuid: 62e40d39-2868-4d3d-9af7-c60a1a658be0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,18 +11,17 @@ content-type: reference
 discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
 feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 3%
+source-wordcount: '316'
+ht-degree: 2%
 
 ---
 
-
 # Criar uma raiz de idioma usando a interface clássica{#creating-a-language-root-using-the-classic-ui}
 
-O procedimento a seguir usa a interface clássica para criar uma raiz de idioma de um site. Para obter mais informações, consulte [Criação de uma Raiz de Idioma](/help/sites-administering/tc-prep.md#creating-a-language-root).
+O procedimento a seguir usa a interface clássica para criar uma raiz de idioma de um site. Para obter mais informações, consulte [Criar uma raiz de idioma](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
 1. No console Sites, na árvore Sites, selecione a página raiz do site. ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
 1. Adicione uma nova página secundária que represente a versão de idioma do site:
@@ -60,4 +59,3 @@ O procedimento a seguir usa a interface clássica para criar uma raiz de idioma 
 
 1. Clique em OK para fechar a caixa de diálogo.
 1. Na próxima caixa de diálogo, clique em Sim para confirmar a cópia.
-

@@ -255,7 +255,7 @@ A tabela a seguir detalha as permissões necessárias para a edição de modelo.
 <table>
  <tbody>
   <tr>
-   <th>Caminho</th>
+   <th>Caminho </th>
    <th>Função / Grupo</th>
    <th>Permissões<br /> </th>
    <th>Descrição</th>
@@ -315,7 +315,7 @@ Os modelos não devem mais ser armazenados em `/conf/global`, no entanto, para a
 <table>
  <tbody>
   <tr>
-   <th>Caminho</th>
+   <th>Caminho </th>
    <th>Função / Grupo</th>
    <th>Permissões<br /> </th>
    <th>Descrição</th>

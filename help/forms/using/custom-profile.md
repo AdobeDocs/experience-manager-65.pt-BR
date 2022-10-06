@@ -1,30 +1,29 @@
 ---
 title: Criação de um perfil personalizado para formulários HTML5
-seo-title: Criação de um perfil personalizado para formulários HTML5
-description: Um perfil de formulários HTML5 é um nó de recurso no Apache Sling. Ele representa uma versão personalizada do serviço de renderização de formulários HTML5.
-seo-description: Um perfil de formulários HTML5 é um nó de recurso no Apache Sling. Ele representa uma versão personalizada do serviço de renderização de formulários HTML5.
+seo-title: Creating a custom profile for HTML5 forms
+description: Um perfil de formulários do HTML5 é um nó de recurso no Apache Sling. Ele representa uma versão personalizada do serviço HTML5 forms Render.
+seo-description: A HTML5 forms profile is a resource node in Apache Sling. It represents a customized version of HTML5 forms Render service.
 uuid: b9938280-a92c-4dde-b465-04372db3ca8d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
 
-
 # Criação de um perfil personalizado para formulários HTML5 {#creating-a-custom-profile-for-html-forms}
 
-Um perfil é um nó de recurso em [Apache Sling](https://sling.apache.org/). Ele representa a versão personalizada do serviço de renderização de formulários HTML5. Você pode usar o serviço de Representação de formulários HTML5 para personalizar a aparência, o comportamento e as interações dos formulários HTML5. Existe um nó de perfil na pasta `/content` no repositório JCR. Você pode colocar o nó diretamente na pasta `/content` ou em qualquer subpasta da pasta `/content`.
+Um perfil é um nó de recurso em [Apache Sling](https://sling.apache.org/). Ele representa a versão personalizada do serviço de representação de formulários do HTML5. Você pode usar o serviço HTML5 forms Rendition para personalizar a aparência, o comportamento e as interações dos formulários HTML5. Existe um nó de perfil no `/content` no repositório JCR. Você pode colocar o nó diretamente sob o `/content` ou qualquer subpasta do `/content` pasta.
 
-O nó do perfil tem a propriedade **sling:resourceSuperType** e o valor padrão é **xfaforms/profile**. O script de renderização do nó está em /libs/xfaforms/profile.
+O nó do perfil tem a variável **sling:resourceSuperType** e o valor padrão é **xfaforms/profile**. O script de renderização do nó está em /libs/xfaforms/profile.
 
-Os scripts Sling são scripts JSP. Esses scripts JSP servem como contêineres para unir o HTML para o formulário solicitado e os artefatos JS / CSS necessários. Esses scripts Sling também são chamados de **Profile Renderer scripts**. O renderizador de perfil chama o serviço OSGi da Forms para renderizar o formulário solicitado.
+Os scripts Sling são scripts JSP. Esses scripts JSP servem como contêineres para unir a HTML para o formulário solicitado e os artefatos JS / CSS necessários. Esses scripts Sling também são chamados de **Scripts do renderizador de perfil**. O renderizador de perfil chama o serviço OSGi da Forms para renderizar o formulário solicitado.
 
 O script de perfil está em html.jsp e html.POST.jsp para solicitações GET e POST. Você pode copiar e modificar um ou mais arquivos para substituir e adicionar suas personalizações. Não faça alterações no local, a atualização do patch substitui essas alterações.
 
@@ -64,24 +63,24 @@ Para criar um perfil personalizado, execute as seguintes etapas:
 
 1. No painel esquerdo, navegue até o local */content/xfaforms/profiles*.
 
-1. Copie o padrão do nó e cole o nó em uma pasta diferente (*/content/profiles*) com o nome *hrform*.
+1. Copie o nó padrão e cole o nó em uma pasta diferente (*/content/profiles*) com nome *corda*.
 
-1. Selecione o novo nó, *hrform*, e adicione uma propriedade de string: *sling:resourceType* com o valor: *hrform/demo*.
+1. Selecione o novo nó , *corda* e adicionar uma propriedade de string: *sling:resourceType* com valor: *forma/demonstração*.
 
 1. Clique em Salvar tudo no menu da barra de ferramentas para salvar as alterações.
 
-### Crie o script do renderizador de perfil {#create-the-profile-renderer-script}
+### Criar o script do renderizador de perfil {#create-the-profile-renderer-script}
 
 Depois de criar um perfil personalizado, adicione as informações de renderização a esse perfil. Ao receber uma solicitação para o novo perfil, o CRX verifica a existência da pasta /apps para que a página JSP seja renderizada. Crie a página JSP na pasta /apps.
 
-1. No painel esquerdo, navegue até a pasta `/apps`.
-1. Clique com o botão direito do mouse na pasta `/apps` e escolha criar uma pasta com o nome **hrform**.
-1. Considere a pasta **hrform** e crie uma pasta chamada **demo**.
-1. Clique no botão **Salvar tudo**.
-1. Navegue até `/libs/xfaforms/profile/html.jsp` e copie o nó **html.jsp**.
-1. Cole o nó **html.jsp** na pasta `/apps/hrform/demo` criada acima com o mesmo nome **html.jsp** e clique em **Salvar**.
+1. No painel esquerdo, navegue até o `/apps` pasta.
+1. Clique com o botão direito do mouse no `/apps` e opte por criar uma pasta com nome **corda**.
+1. Considere o **corda** pasta criar uma pasta chamada **demonstração**.
+1. Clique no botão **Salvar tudo** botão.
+1. Navegar para `/libs/xfaforms/profile/html.jsp` e copie o nó **html.jsp**.
+1. Colar **html.jsp** no nó `/apps/hrform/demo` pasta criada acima com o mesmo nome **html.jsp** e clique em **Salvar**.
 1. Se você tiver outros componentes do script de perfil, siga as etapas 1 a 6 para copiar os componentes na pasta /apps/hrform/demo.
 
 1. Para verificar se o perfil foi criado, abra o URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
-Para verificar seus formulários, [Importe seus formulários](/help/forms/using/get-xdp-pdf-documents-aem.md) do seu sistema de arquivos local para o AEM Forms e [visualize o formulário](/help/forms/using/previewing-forms.md) AEM instância do autor do servidor.
+Para verificar seus formulários, [Importe seus formulários](/help/forms/using/get-xdp-pdf-documents-aem.md) do seu sistema de arquivos local para o AEM Forms e [visualizar formulário](/help/forms/using/previewing-forms.md) na instância AEM autor do servidor.

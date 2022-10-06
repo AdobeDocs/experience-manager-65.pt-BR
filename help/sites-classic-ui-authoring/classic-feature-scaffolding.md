@@ -1,8 +1,8 @@
 ---
 title: Andaime
-seo-title: Andaime
+seo-title: Scaffolding
 description: Por vezes, é necessário criar um grande conjunto de páginas que compartilham a mesma estrutura, mas têm conteúdo diferente. Com o scaffolding, é possível criar um formulário (um scaffold) com os campos que refletem a estrutura desejada para suas páginas e usar este formulário para criar facilmente as páginas com base nesta estrutura.
-seo-description: Por vezes, é necessário criar um grande conjunto de páginas que compartilham a mesma estrutura, mas têm conteúdo diferente. Com o scaffolding, é possível criar um formulário (um scaffold) com os campos que refletem a estrutura desejada para suas páginas e usar este formulário para criar facilmente as páginas com base nesta estrutura.
+seo-description: Sometimes you may need to create a large set of pages that share the same structure but have differing content. With scaffolding you can create a form (a scaffold) with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure.
 uuid: 5904abc0-b256-4da4-a7d7-3c17ea299648
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: a63e5732-b1a3-4639-9838-652af401e788
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 82%
+source-wordcount: '1448'
+ht-degree: 81%
 
 ---
-
 
 # Andaime{#scaffolding}
 
@@ -39,7 +38,7 @@ Os scaffolds são armazenados no console de **Ferramentas** do administrador do 
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
-O suporte consiste em um formulário com um campo para cada parte do conteúdo que compõe a página a ser criada e quatro parâmetros importantes que são acessados por meio de **Propriedades da página** da página do suporte.
+O scaffold consiste em um formulário com um campo para cada parte de conteúdo que compõe a página a ser criada e quatro parâmetros importantes que são acessados por meio da variável **Propriedades da página** da página de scaffold.
 
 ![pageprops](assets/pageprops.png)
 
@@ -57,17 +56,17 @@ O corpo do scaffold é o formulário. Quando um usuário desejar criar uma pági
 * **Imagem**: Esse campo corresponde a um Componente de imagem na página resultante.
 * **Imagem/avançado**: **Título:** o título da imagem.
 * **Imagem/avançado**: **Texto alternativo:** o texto alternativo da imagem.
-* **Imagem/Avançado**:  **Descrição**: A descrição da imagem.
+* **Imagem/avançado**: **Descrição**: A descrição da imagem.
 * **Imagem/avançado**: **Tamanho:** o tamanho da imagem.
 * **Tags/palavras-chave**: metadados a serem atribuídos a esta página. Este campo está sempre presente em cada scaffold.
 
 ### Criação de um scaffold {#creating-a-scaffold}
 
-Para criar um novo suporte, vá para o console **Ferramentas**, **Andaime de página padrão** e crie uma nova página. Um único tipo de modelo de página estará disponível, o *Modelo de Andaime.*
+Para criar um novo scaffold, acesse **Ferramentas** , em seguida **Andaime de página padrão** e criar uma nova página. Um tipo de modelo de página única estará disponível, a variável *Modelo de scaffolding.*
 
-Vá para **Propriedades da página** da nova página e defina *Texto do título*, *Descrição*, *Modelo do Público alvo* e *Caminho do Público alvo*, conforme descrito acima.
+Vá para o **Propriedades da página** da nova página e defina a variável *Texto do título*, *Descrição*, *Modelo de destino* e *Caminho do Target*, conforme descrito acima.
 
-Em seguida, é necessário definir a estrutura da página que este scaffold criará. Para fazer isso, vá para o **[modo de design](/help/sites-authoring/page-authoring.md#sidekick)** na página do suporte. Um link será exibido, permitindo editar o scaffold no **editor de caixas de diálogo**.
+Em seguida, é necessário definir a estrutura da página que este scaffold criará. Para fazer isso, acesse **[modo de design](/help/sites-authoring/page-authoring.md#sidekick)** na página de scaffold. Um link será exibido, permitindo editar o scaffold no **editor de caixas de diálogo**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -81,13 +80,13 @@ A definição da caixa de diálogo para um scaffold funciona de maneira semelhan
 
 É útil consultar o exemplo da caixa de diálogo de scaffold **News** no editor de caixas de diálogo para ver como isso funciona. Entre no modo de design na página de scaffold e clique no link do editor de caixas de diálogo.
 
-Agora, clique no campo de diálogo **Diálogo > Painel de guias > Texto > Texto**, desta forma:
+Agora, clique no campo de diálogo **Caixa de diálogo > Painel de guias > Texto > Texto** assim:
 
 ![textedit](assets/textedit.png)
 
 A lista de propriedades para esse campo será exibida no lado direito do editor de caixa de diálogo, da seguinte forma:
 
-![lista_of_properties](assets/list_of_properties.png)
+![list_of_properties](assets/list_of_properties.png)
 
 Observe a propriedade de nome desse campo. Ela tem o valor
 
@@ -102,13 +101,13 @@ Isso define o local de armazenamento de conteúdo para o texto que será inserid
 
 Observe que, em uma caixa de diálogo de componentes normal, não seria necessário especificar essas informações porque estão implícitas no fato de que a caixa de diálogo já está vinculada a um componente específico.
 
-Para especificar essas duas informações, use campos ocultos. Clique no primeiro campo oculto **Caixa de diálogo > Painel de guias > Texto > Oculto**, desta forma:
+Para especificar essas duas informações, use campos ocultos. Clique no primeiro campo oculto **Caixa de diálogo > Painel de guias > Texto > Oculto** assim:
 
 ![oculto](assets/hidden.png)
 
 As propriedades desse campo oculto são as seguintes:
 
-![hidden_lista_props](assets/hidden_list_props.png)
+![hidden_list_props](assets/hidden_list_props.png)
 
 A propriedade nome desse campo oculto é
 
@@ -120,7 +119,7 @@ Como sabemos que o texto deve ser interpretado como rich text, especificamos a p
 
 >[!CAUTION]
 >
->O editor de diálogo permite que o usuário altere os valores das propriedades *existentes* na definição da caixa de diálogo. Para adicionar uma nova propriedade, o usuário deve usar o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por exemplo, quando um novo campo oculto é adicionado a uma definição de caixa de diálogo com o editor de caixa de diálogo, ele não tem uma propriedade *value* (ou seja, uma propriedade com o nome “value”). Se o campo oculto na pergunta exigir a definição de uma propriedade *value* padrão, essa propriedade deverá ser adicionada manualmente com uma das ferramentas de CRX. O valor não pode ser adicionado com o próprio editor de caixas de diálogo. No entanto, quando a propriedade estiver presente, seu valor poderá ser editado com o editor de caixa de diálogo.
+>O editor de caixas de diálogo permite que o usuário altere os valores de *existente* na definição da caixa de diálogo. Para adicionar uma nova propriedade, o usuário deve usar o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por exemplo, quando um novo campo oculto é adicionado a uma definição de caixa de diálogo com o editor de caixa de diálogo, ele não tem uma propriedade *value* (ou seja, uma propriedade com o nome “value”). Se o campo oculto na pergunta exigir a definição de uma propriedade *value* padrão, essa propriedade deverá ser adicionada manualmente com uma das ferramentas de CRX. O valor não pode ser adicionado com o próprio editor de caixas de diálogo. No entanto, quando a propriedade estiver presente, seu valor poderá ser editado com o editor de caixa de diálogo.
 
 O segundo campo oculto pode ser visualizado ao clicá-lo da seguinte maneira:
 
@@ -128,7 +127,7 @@ O segundo campo oculto pode ser visualizado ao clicá-lo da seguinte maneira:
 
 As propriedades desse campo oculto são as seguintes:
 
-![hidden_lista_props2](assets/hidden_list_props2.png)
+![hidden_list_props2](assets/hidden_list_props2.png)
 
 A propriedade nome desse campo oculto é
 
@@ -138,7 +137,7 @@ e o valor fixo especificado para essa propriedade é
 
 `foundation/components/textimage`
 
-Isso especifica que o componente a ser usado para renderizar o conteúdo de texto deste parágrafo é o componente de *Imagem de texto*. Usando com o booliano `isRichText` especificado no outro campo oculto, o componente pode renderizar a string de texto real armazenada em `./jcr:content/par/text/text` da maneira desejada.
+Isso especifica que o componente a ser usado para renderizar o conteúdo de texto deste parágrafo é o componente de *Imagem de texto*. Usar com o `isRichText` booleano especificado no outro campo oculto, o componente pode renderizar a cadeia de caracteres de texto real armazenada em `./jcr:content/par/text/text` da forma desejada.
 
 ### Scaffolding com Herança MSM {#scaffolding-with-msm-inheritance}
 
@@ -168,4 +167,4 @@ Depois de desbloquear, é possível restaurar a herança, clicando no símbolo d
 
 >[!NOTE]
 >
->Se a herança for cancelada no nível da página (na guia Livecopy das Propriedades da página), todos os componentes poderão ser editados no modo **Scaffolding** (serão exibidos no estado desbloqueado).
+>Se a herança for cancelada no nível da página (na guia Livecopy das Propriedades da página), todos os componentes poderão ser editados em **Andaime** (serão exibidos no estado desbloqueado).

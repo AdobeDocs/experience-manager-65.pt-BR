@@ -2,89 +2,88 @@
 title: Configure o Editor de Rich Text para criar páginas da Web e sites acessíveis.
 description: Configure o Editor de Rich Text para criar páginas da Web e sites acessíveis.
 contentOwner: AG
-translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+exl-id: d2451710-5abf-4816-8052-57d8f04a228e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
 
 ---
 
-
 # Configurar o RTE para criar páginas da Web e sites acessíveis {#configure-rte-for-accessibility}
 
-A Adobe Experience Manager suporta muitos recursos de acessibilidade padrão de acordo com vários padrões de acessibilidade. Além disso, os desenvolvedores podem personalizar ou estender para fornecer recursos que ajudam a criar conteúdo acessível usando componentes do Experience Manager que usam o Editor de Rich Text (RTE).
+O Adobe Experience Manager suporta muitos recursos de acessibilidade padrão de acordo com vários padrões de acessibilidade. Além disso, os desenvolvedores podem personalizar ou estender para fornecer recursos que ajudam a criar conteúdo acessível usando componentes do Experience Manager que usam o Editor de Rich Text (RTE).
 
-Ao projetar páginas da Web e adicionar conteúdo às páginas, os desenvolvedores e autores de conteúdo podem usar os recursos do RTE para fornecer informações relacionadas à acessibilidade. Por exemplo, adicione informações estruturais por meio de cabeçalhos e elementos de parágrafo.
+Ao projetar páginas da Web e adicionar conteúdo às páginas, os desenvolvedores de conteúdo e autores podem usar os recursos do RTE para fornecer informações relacionadas à acessibilidade. Por exemplo, adicione informações estruturais por meio de cabeçalhos e elementos de parágrafo.
 
-Para configurar e personalizar esses recursos, [configure os plug-ins RTE](#configure-the-plugin-features) para o componente. Por exemplo, o plug-in `paraformat` permite que você adicione elementos semânticos de nível de bloco adicionais, incluindo a extensão do número de níveis de cabeçalho suportados além dos `H1` básicos, `H2` e `H3` fornecidos por padrão.
+Para configurar e personalizar esses recursos, [configurar os plug-ins do RTE](#configure-the-plugin-features) para o componente. Por exemplo, a variável `paraformat` o plug-in permite que você adicione elementos semânticos de nível de bloco adicionais, incluindo a extensão do número de níveis de cabeçalho suportados além da configuração básica `H1`, `H2`e `H3` fornecido por padrão.
 
-O RTE está disponível em diversos componentes para a interface do usuário habilitada para toque e a interface do usuário clássica. No entanto, o componente principal para usar o RTE é o componente **Text** que está disponível para ambas as interfaces. As imagens a seguir mostram o ERT com vários plug-ins ativados, incluindo `paraformat`:
+O RTE está disponível em diversos componentes para a interface habilitada para toque e a interface do usuário clássica. No entanto, o componente principal para usar o RTE é o **Texto** componente que está disponível para ambas as interfaces. As imagens a seguir mostram o RTE com um intervalo de plug-ins ativados, incluindo `paraformat`:
 
-![Componente de texto (RTE) no modo de tela cheia na interface habilitada para toque.](assets/chlimage_1-206.png)
+![Componente de texto (RTE) no modo de tela cheia na interface do usuário habilitada para toque.](assets/chlimage_1-206.png)
 
 *Figura: O componente Texto na interface do usuário habilitada para toque.*
 
-![Editar caixa de diálogo (RTE) do componente de texto na interface clássica.](assets/chlimage_1-207.png)
+![Caixa de diálogo de edição (RTE) do componente de texto na interface clássica.](assets/chlimage_1-207.png)
 
-*Figura: O componente Texto na interface do usuário do Classic.*
+*Figura: O componente de Texto na interface do usuário do Classic.*
 
 Para obter as diferenças entre os recursos do RTE disponíveis nas várias interfaces, consulte [Plug-ins e seus recursos](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 ## Configurar os recursos do plug-in {#configure-the-plugin-features}
 
-Para obter as instruções completas para configurar o RTE, consulte [configurar a página Editor de Rich Text](/help/sites-administering/rich-text-editor.md). Isso abrange todos os problemas, incluindo as etapas principais:
+Para obter as instruções completas para configurar o RTE, consulte [configurar o Editor de Rich Text](/help/sites-administering/rich-text-editor.md) página. Isso abrange todos os problemas, incluindo as principais etapas:
 
-* [Plug-ins e os recursos](/help/sites-administering/rich-text-editor.md#aboutplugins).
-* [Locais](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations) de configuração.
-* [Ative um plug-in e configure a propriedade](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins) features.
+* [Plug-ins e recursos](/help/sites-administering/rich-text-editor.md#aboutplugins).
+* [Locais de configuração](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations).
+* [Ativar um plug-in e configurar a propriedade de recursos](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 * [Configurar outras funcionalidades do RTE](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 
-Ao configurar um plug-in dentro da sub-ramificação `rtePlugins` apropriada no CRXDE Lite, você pode ativar todos os recursos ou recursos específicos desse plug-in.
+Ao configurar um plug-in no `rtePlugins` sub-ramificação no CRXDE Lite, é possível ativar todos os recursos ou recursos específicos desse plug-in.
 
 ![CRXDE Lite mostrando um exemplo de rtePlugin.](assets/chlimage_1-208.png)
 
 ### Exemplo - especifique os formatos de parágrafo disponíveis no campo de seleção RTE {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
-Podem ser disponibilizados novos formatos de blocos semânticos para seleção através de:
+Os novos formatos de bloco semântico podem ser disponibilizados para seleção através de:
 
-1. Dependendo do RTE, determine e navegue até [o local de configuração](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations).
-1. [Ativar o campo](/help/sites-administering/rich-text-editor.md) de seleção Parágrafos; ativando  [o plug-in](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
-1. [Especifique os formatos que deseja que estejam disponíveis no campo](/help/sites-administering/rich-text-editor.md) de seleção Parágrafos.
-1. Os formatos de parágrafo ficam disponíveis para o autor do conteúdo nos campos de seleção no RTE. Eles podem ser acessados:
+1. Dependendo do RTE, determine e navegue até o [local de configuração](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations).
+1. [Ativar o campo de seleção Parágrafos](/help/sites-administering/rich-text-editor.md); por [ativação do plug-in](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. [Especifique os formatos que deseja disponibilizar no campo de seleção Parágrafos](/help/sites-administering/rich-text-editor.md).
+1. Os formatos de parágrafo são então disponibilizados ao autor de conteúdo a partir dos campos de seleção no RTE. Elas podem ser acessadas:
 
-   * Usando o ícone de rolagem de parágrafo na interface habilitada para toque.
-   * Usando o campo **Format** (seletor pop-up) na interface clássica.
+   * Uso do ícone de rolagem de parágrafo na interface do usuário habilitada para toque.
+   * Usar o **Formato** (seletor pop-up) na interface do usuário clássica.
 
-Com os elementos estruturais disponíveis no RTE por meio das opções de formato de parágrafo, o AEM fornece uma boa base para o desenvolvimento de conteúdo acessível. Os autores de conteúdo não podem usar o RTE para formatar tamanho de fonte ou cores ou outros atributos relacionados, impedindo a criação de formatação em linha. Em vez disso, eles devem selecionar os elementos estruturais apropriados, como cabeçalhos e usar estilos globais escolhidos na opção Estilos. Isso garante a limpeza da marcação, maiores opções para usuários que navegam com suas próprias folhas de estilos e conteúdo estruturado corretamente.
+Com elementos estruturais disponíveis no RTE por meio das opções de formato de parágrafo, o AEM oferece uma boa base para o desenvolvimento de conteúdo acessível. Os autores de conteúdo não podem usar o RTE para formatar o tamanho da fonte, as cores ou outros atributos relacionados, impedindo a criação de formatação em linha. Em vez disso, eles devem selecionar os elementos estruturais apropriados, como cabeçalhos e usar estilos globais escolhidos na opção Estilos . Isso garante uma marcação limpa, opções maiores para usuários que navegam com suas próprias folhas de estilos e conteúdo estruturado corretamente.
 
 ## Uso do recurso de edição de origem {#use-of-the-source-edit-feature}
 
-Em alguns casos, os autores de conteúdo acharão necessário examinar e ajustar o código fonte HTML criado usando o RTE. Por exemplo, um conteúdo criado no RTE pode exigir marcação adicional para garantir a conformidade com o WCAG 2.0. Isso pode ser feito com a opção [source edit](/help/sites-administering/rich-text-editor.md#aboutplugins) do RTE. Você pode especificar o recurso [ `sourceedit` no plug-in `misctools`](/help/sites-administering/rich-text-editor.md#aboutplugins).
+Em alguns casos, os autores de conteúdo considerarão necessário examinar e ajustar o código-fonte do HTML criado usando o RTE. Por exemplo, um conteúdo criado no RTE pode exigir marcação adicional para garantir a conformidade com a WCAG 2.0. Isso pode ser feito com o [edição de origem](/help/sites-administering/rich-text-editor.md#aboutplugins) da RTE. É possível especificar a variável [ `sourceedit` no `misctools` plugin](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
->Use o recurso `sourceedit` com cuidado. Erros de digitação e/ou recursos não suportados podem causar mais problemas.
+>Use o `sourceedit` recurso com cuidado. A digitação de erros e/ou recursos não suportados pode causar mais problemas.
 
-## Adicionar suporte para mais elementos e atributos HTML {#add-support-for-more-html-elements-and-attributes}
+## Adicionar suporte para mais elementos e atributos de HTML {#add-support-for-more-html-elements-and-attributes}
 
-Para estender ainda mais os recursos de acessibilidade do AEM, é possível estender os componentes existentes com base no RTE (como os componentes **Text** e **Table**) com elementos e atributos adicionais.
+Para estender ainda mais os recursos de acessibilidade de AEM, é possível estender os componentes existentes com base no RTE (como **Texto** e **Tabela** componentes) com elementos e atributos adicionais.
 
-O procedimento a seguir ilustra como estender o componente **Table** por um elemento **Legenda** que fornece informações sobre uma tabela de dados para usuários de tecnologia assistiva:
+O procedimento a seguir ilustra como estender o **Tabela** com um **Legenda** elemento que fornece informações sobre uma tabela de dados para usuários de tecnologia assistiva:
 
 ### Exemplo - adicione a legenda à caixa de diálogo Propriedades da tabela {#example-adding-the-caption-to-the-table-properties-dialog}
 
-No construtor do `TablePropertiesDialog`, adicione um campo de entrada de texto adicional que seja usado para editar a legenda. Observe que `itemId` deve ser definido como `caption` (isto é, o nome do atributo DOM) para manipular automaticamente seu conteúdo.
+No construtor do `TablePropertiesDialog`, adicione um campo de entrada de texto adicional usado para editar a legenda. Observe que `itemId` deve ser definido como `caption` (ou seja, o nome do atributo DOM) para manipular automaticamente seu conteúdo.
 
-Em **Tabela**, defina explicitamente ou remova o atributo do elemento DOM. O valor é transmitido pela caixa de diálogo no objeto `config`. Observe que os atributos DOM devem ser definidos/removidos usando os métodos `CQ.form.rte.Common` correspondentes ( `com` é um atalho para `CQ.form.rte.Common`) para evitar armadilhas comuns com as implementações do navegador.
+Em **Tabela**, defina ou remova explicitamente o atributo para/do elemento DOM. O valor é transmitido pela caixa de diálogo no `config` objeto. Observe que os atributos DOM devem ser definidos/removidos usando o `CQ.form.rte.Common` métodos ( `com` é um atalho para `CQ.form.rte.Common`) para evitar armadilhas comuns com implementações de navegador.
 
 >[!NOTE]
 >
->Esse procedimento é adequado apenas para a interface do usuário do Classic.
+>Esse procedimento só é adequado para a interface do usuário do Classic.
 
 ### Exemplo - criar HTML acessível ao usar ênfase no texto {#create-accessible-html-for-text}
 
-O RTE pode usar as tags `strong` e `em` no lugar de `b` e `i`. Adicione o seguinte nó como um irmão aos nós `uiSettings` e `rtePlugins` na caixa de diálogo.
+O RTE pode usar `strong` e `em` tags no lugar de `b` e `i`. Adicione o seguinte nó como um irmão à variável `uiSettings` e `rtePlugins` na caixa de diálogo.
 
 ```HTML
 <htmlRules jcr:primaryType="nt:unstructured">
@@ -101,7 +100,7 @@ O RTE pode usar as tags `strong` e `em` no lugar de `b` e `i`. Adicione o seguin
 
 ### Instruções passo a passo {#step-by-step-instructions}
 
-1. CRXDE Lite de start. Por exemplo: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. Inicie o CRXDE Lite. Por exemplo: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Copiar:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
@@ -122,11 +121,11 @@ O RTE pode usar as tags `strong` e `em` no lugar de `b` e `i`. Adicione o seguin
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`.
 
-1. Abra o arquivo a seguir para edição (abra com clique no duplo):
+1. Abra o seguinte arquivo para edição (abra com um clique duplo):
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`
 
-1. No método `constructor`, antes da leitura da linha:
+1. No `constructor` , antes da leitura da linha:
 
    ```
    var dialogRef = this;
@@ -148,7 +147,7 @@ O RTE pode usar as tags `strong` e `em` no lugar de `b` e `i`. Adicione o seguin
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`.
 
-1. Adicione o seguinte código no final do método `transferConfigToTable`:
+1. Adicione o seguinte código ao final do `transferConfigToTable` método :
 
    ```
    /**
@@ -187,16 +186,16 @@ O RTE pode usar as tags `strong` e `em` no lugar de `b` e `i`. Adicione o seguin
 
 >[!NOTE]
 >
->Um campo de texto sem formatação não é o único tipo de entrada permitido para o valor do elemento de legenda. Você pode usar qualquer widget ExtJS, que fornece o valor da legenda por meio do método `getValue()`.
+>Um campo de texto simples não é o único tipo de entrada permitido para o valor do elemento de legenda. Você pode usar qualquer widget ExtJS, que fornece o valor da legenda por meio de seu `getValue()` método .
 >
->Para adicionar recursos de edição para outros elementos e atributos adicionais, verifique se ambos:
+>Para adicionar recursos de edição a outros elementos e atributos adicionais, verifique se:
 >
->* A propriedade `itemId` para cada campo correspondente está definida como o nome do atributo DOM apropriado (`TablePropertiesDialog`).
->* O atributo está definido e/ou removido no elemento DOM explicitamente (`Table`).
+>* O `itemId` para cada campo correspondente é definida com o nome do atributo DOM apropriado (`TablePropertiesDialog`).
+>* O atributo é definido e/ou removido explicitamente no elemento DOM (`Table`).
 
 
 >[!MORELIKETHIS]
 >
->* [Guia rápido para WCAG 2.0](/help/managing/qg-wcag.md)
->* [Criar conteúdo acessível (conformidade com WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
+>* [Guia rápido para a WCAG 2.0](/help/managing/qg-wcag.md)
+>* [Criar conteúdo acessível (conformidade com a WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
 

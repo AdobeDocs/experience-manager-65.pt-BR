@@ -1,22 +1,21 @@
 ---
 title: Armazenamento personalizado para rascunhos e componentes de envios
-seo-title: Armazenamento personalizado para rascunhos e componentes de envios
+seo-title: Custom storage for drafts and submissions component
 description: Consulte como personalizar o armazenamento de dados do usuário para rascunhos e envios.
-seo-description: Consulte como personalizar o armazenamento de dados do usuário para rascunhos e envios.
+seo-description: See how to customize the storage of user data for drafts and submissions.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 1%
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
-
 
 # Armazenamento personalizado para rascunhos e componentes de envios {#custom-storage-for-drafts-and-submissions-component}
 
@@ -24,18 +23,18 @@ ht-degree: 1%
 
 O AEM Forms permite salvar um formulário como rascunho. A funcionalidade de rascunho permite manter um formulário de trabalho em andamento, que pode ser preenchido e enviado posteriormente de qualquer dispositivo.
 
-Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no nó `/content/forms/fp` na instância de Publicação. Além disso, os componentes do portal do AEM Forms fornecem serviços de dados, que podem ser usados para personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar dados do usuário em um armazenamento de dados.
+Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no `/content/forms/fp` na instância de publicação. Além disso, os componentes do portal do AEM Forms fornecem serviços de dados, que podem ser usados para personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar dados do usuário em um armazenamento de dados.
 
 ## Pré-requisitos  {#prerequisites}
 
-* Ativar [componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md)
-* Criar uma [página do portal de formulários](/help/forms/using/creating-form-portal-page.md)
-* Ativar [formulários adaptáveis para o portal de formulários](/help/forms/using/draft-submission-component.md)
-* Saiba [detalhes de implementação do armazenamento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Habilitar [componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md)
+* Crie um [página do portal de formulários](/help/forms/using/creating-form-portal-page.md)
+* Habilitar [formulários adaptáveis para o portal de formulários](/help/forms/using/draft-submission-component.md)
+* Saiba mais [detalhes de implementação do armazenamento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
-## Serviço de dados de rascunho {#draft-data-service}
+## Serviço de rascunho de dados {#draft-data-service}
 
-Para personalizar o armazenamento dos dados do usuário para rascunhos, é necessário implementar todos os métodos da interface `DraftDataService`. O código de amostra a seguir descreve os métodos e argumentos.
+Para personalizar o armazenamento de dados do usuário para rascunhos, é necessário implementar todos os métodos do `DraftDataService` interface. O código de amostra a seguir descreve os métodos e argumentos.
 
 ```java
 /**
@@ -104,7 +103,7 @@ public interface DraftDataService {
 
 ## Serviço de dados de envio {#submission-data-service}
 
-Para personalizar o armazenamento dos dados do usuário para envios, você precisa implementar todos os métodos da interface `SubmitDataService`. O código de amostra a seguir descreve os métodos e argumentos.
+Para personalizar o armazenamento de dados do usuário para envios, é necessário implementar todos os métodos do `SubmitDataService` interface. O código de amostra a seguir descreve os métodos e argumentos.
 
 ```java
 /**
@@ -214,4 +213,3 @@ Para usar a anotação acima, importa o seguinte para o seu projeto:
 import org.apache.felix.scr.annotations.Properties;
 import org.apache.felix.scr.annotations.Property;
 ```
-

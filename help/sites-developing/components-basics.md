@@ -1,8 +1,8 @@
 ---
 title: Componentes AEM - Noções básicas
-seo-title: Componentes AEM - Noções básicas
+seo-title: AEM Components - The Basics
 description: Ao começar a desenvolver novos componentes, você precisa entender os conceitos básicos de sua estrutura e configuração
-seo-description: Ao começar a desenvolver novos componentes, você precisa entender os conceitos básicos de sua estrutura e configuração
+seo-description: When you start to develop new components you need to understand the basics of their structure and configuration
 uuid: 0225b34d-5ac4-40c3-b226-0c9b24bdf782
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: components
 content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
-translation-type: tm+mt
-source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
+exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '4974'
+source-wordcount: '4952'
 ht-degree: 1%
 
 ---
-
 
 # Componentes AEM - Noções básicas{#aem-components-the-basics}
 
@@ -37,11 +36,11 @@ Antes de começar a realmente configurar ou codificar seu componente, você deve
    * Uma especificação clara ajuda em todas as etapas de desenvolvimento, teste e transferência. Os detalhes podem mudar com o tempo, mas a especificação pode ser atualizada (embora as alterações também devam ser documentadas).
 * Você precisa criar seu componente do zero ou pode herdar as noções básicas de um componente existente?
    * Não há necessidade de reinventar a roda.
-   * Existem vários mecanismos fornecidos pelo AEM para permitir que você herde e estenda detalhes de outra definição de componente, incluindo sobreposição, sobreposição e [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md).
+   * Há vários mecanismos fornecidos pelo AEM para permitir herdar e estender detalhes de outra definição de componente, incluindo substituição, sobreposição e o [Fusão de Recursos Sling](/help/sites-developing/sling-resource-merger.md).
 * Seu componente precisará de lógica para selecionar/manipular o conteúdo?
    * A lógica deve ser mantida separada da camada da interface do usuário. O HTL foi projetado para ajudar a garantir que isso aconteça.
 * Seu componente precisará de formatação CSS?
-   * A formatação de CSS deve ser mantida separada das definições do componente. Defina convenções para nomear seus elementos HTML para modificá-los por meio de arquivos CSS externos.
+   * A formatação de CSS deve ser mantida separada das definições do componente. Defina as convenções para nomear seus elementos HTML para que você possa modificá-los por meio de arquivos CSS externos.
 * Que aspectos de segurança devo ter em consideração?
    * Consulte [Lista de verificação de segurança - Práticas recomendadas de desenvolvimento](/help/sites-administering/security-checklist.md#development-best-practices) para obter mais detalhes.
 
@@ -50,9 +49,9 @@ Antes de começar a realmente configurar ou codificar seu componente, você deve
 Antes de qualquer discussão séria começar sobre o desenvolvimento de componentes, você precisa saber qual interface de usuário seus autores usarão:
 
 * **Interface do usuário habilitada para toque**
-   [A ](/help/sites-developing/touch-ui-concepts.md) interface de usuário padrão é baseada na experiência unificada do usuário para o Adobe Marketing Cloud, usando as tecnologias subjacentes da  [Coral ](/help/sites-developing/touch-ui-concepts.md#coral-ui) UIe da  [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
-* **Interface**
-do usuário clássica com base na tecnologia ExtJS que foi descontinuada com o AEM 6.4.
+   [A interface de usuário padrão](/help/sites-developing/touch-ui-concepts.md) é baseado na experiência de usuário unificada da Adobe Marketing Cloud, usando as tecnologias subjacentes de [Interface do usuário do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) e [Interface do usuário do Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+* **Interface clássica**
+Interface do usuário baseada na tecnologia ExtJS que foi descontinuada com o AEM 6.4.
 
 Consulte [Interface da interface do usuário do Recommendations para clientes](/help/sites-deploying/ui-recommendations.md) para obter mais detalhes.
 
@@ -62,19 +61,19 @@ Por isso, abordaremos as noções básicas de ambas as páginas e como reconhec�
 
 >[!NOTE]
 >
->O Adobe recomenda o aproveitamento da interface habilitada para toque para se beneficiar da tecnologia mais recente. [AEM ](modernization-tools.md) Ferramentas de Modernização facilitam a migração.
+>O Adobe recomenda o aproveitamento da interface habilitada para toque para se beneficiar da tecnologia mais recente. [Ferramentas de Modernização AEM](modernization-tools.md) pode facilitar a migração.
 
-### Marcação da lógica de conteúdo e renderização {#content-logic-and-rendering-markup}
+### Lógica de conteúdo e marcação de renderização  {#content-logic-and-rendering-markup}
 
 É recomendável manter o código responsável pela marcação e renderização separadas do código que controla a lógica usada para selecionar o conteúdo do componente.
 
-Essa filosofia é suportada pelo [HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html), uma linguagem de modelo que é propositalmente limitada para garantir que uma linguagem de programação real seja usada para definir a lógica de negócios subjacente. Essa lógica (opcional) é invocada do HTL com um comando específico. Esse mecanismo destaca o código chamado para uma determinada visualização e, se necessário, permite uma lógica específica para diferentes visualizações do mesmo componente.
+Essa filosofia é apoiada por [HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html), uma linguagem de modelo que é propositalmente limitada para garantir uma linguagem de programação real é usada para definir a lógica comercial subjacente. Essa lógica (opcional) é invocada do HTL com um comando específico. Esse mecanismo destaca o código chamado para uma determinada visualização e, se necessário, permite uma lógica específica para diferentes visualizações do mesmo componente.
 
 ### HTL vs JSP {#htl-vs-jsp}
 
-HTL é uma linguagem de modelo HTML introduzida com o AEM 6.0.
+HTL é uma linguagem de modelo do HTML introduzida com o AEM 6.0.
 
-A discussão sobre usar [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) ou JSP (Java Server Pages) ao desenvolver seus próprios componentes deve ser direta, pois HTL agora é a linguagem de script recomendada para o AEM.
+A discussão sobre se usar [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) ou JSP (Java Server Pages) ao desenvolver seus próprios componentes deve ser simples, pois o HTL agora é a linguagem de script recomendada para o AEM.
 
 O HTL e o JSP podem ser usados para desenvolver componentes para a interface clássica e a interface habilitada para toque. Embora possa haver uma tendência de supor que HTL seja somente para a interface habilitada para toque e JSP para a interface clássica, isso é um equívoco e mais devido ao tempo. A interface do usuário habilitada para toque e o HTL foram incorporados ao AEM aproximadamente no mesmo período. Como o HTL agora é o idioma recomendado, ele está sendo usado para novos componentes, que tendem a ser para a interface habilitada para toque.
 
@@ -91,7 +90,7 @@ Para criar seus próprios componentes para a interface do usuário apropriada, c
 
 Uma maneira rápida de começar é copiar um componente existente e fazer as alterações desejadas. Para saber como criar seus próprios componentes e adicioná-los ao sistema de parágrafos, consulte:
 
-* [Desenvolvimento de componentes](/help/sites-developing/developing-components-samples.md)  (focados na interface habilitada para toque)
+* [Componentes de desenvolvimento](/help/sites-developing/developing-components-samples.md) (focado na interface habilitada para toque)
 
 ### Mover componentes para a instância de publicação {#moving-components-to-the-publish-instance}
 
@@ -99,18 +98,18 @@ Os componentes que renderizam o conteúdo devem ser implantados na mesma instân
 
 Use as seguintes ferramentas para mover seus componentes para a instância de publicação:
 
-* [Use o Gerenciador ](/help/sites-administering/package-manager.md) de pacotes para adicionar seus componentes a um pacote e movê-los para outra instância do AEM.
-* [Use a ](/help/sites-authoring/publishing-pages.md#manage-publication) ferramenta Ativate Tree replication para replicar os componentes.
+* [Usar o Gerenciador de Pacotes](/help/sites-administering/package-manager.md) para adicionar seus componentes a um pacote e movê-los para outra instância do AEM.
+* [Use a ferramenta Ativar replicação da árvore](/help/sites-authoring/publishing-pages.md#manage-publication) para replicar os componentes.
 
 >[!NOTE]
 >
 >Esses mecanismos também podem ser usados para transferir o componente entre outras instâncias, por exemplo, do desenvolvimento para a instância de teste.
 
-### Componentes a serem conhecidos do Iniciar {#components-to-be-aware-of-from-the-start}
+### Componentes a serem conhecidos desde o início {#components-to-be-aware-of-from-the-start}
 
 * Página:
 
-   * AEM tem o componente *page* ( `cq:Page`).
+   * AEM tem a variável *página* componente ( `cq:Page`).
    * Esse é um tipo específico de recurso, importante para o gerenciamento de conteúdo.
       * Uma página corresponde a uma página da Web que contém conteúdo para seu site.
 
@@ -119,7 +118,7 @@ Use as seguintes ferramentas para mover seus componentes para a instância de pu
    * O sistema de parágrafo é uma parte essencial de um site, pois gerencia uma lista de parágrafos. É usado para manter e estruturar os componentes individuais que contêm o conteúdo real.
    * Você pode criar, mover, copiar e excluir parágrafos no sistema de parágrafos.
    * Você também pode selecionar os componentes que estarão disponíveis para uso em um sistema de parágrafos específico.
-   * Há vários sistemas de parágrafo disponíveis em uma instância padrão (por exemplo `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
+   * Há vários sistemas de parágrafo disponíveis em uma instância padrão (por exemplo, `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
 
 ## Estrutura {#structure}
 
@@ -148,7 +147,7 @@ Essa é uma abstração que ajuda a garantir que, mesmo quando a aparência muda
 
 A definição de um componente pode ser dividida da seguinte maneira:
 
-* AEM componentes são baseados em [Sling](https://sling.apache.org/documentation.html).
+* AEM componentes se baseiam em [Sling](https://sling.apache.org/documentation.html).
 * AEM componentes estão (normalmente) localizados em:
 
    * HTL: `/libs/wcm/foundation/components`
@@ -158,11 +157,11 @@ A definição de um componente pode ser dividida da seguinte maneira:
 
    * `/apps/<myApp>/components`
 
-* AEM componentes padrão são definidos como `cq:Component` e têm os elementos principais:
+* AEM componentes padrão são definidos como `cq:Component` e ter os elementos principais:
 
    * propriedades do jcr:
 
-      Uma lista de propriedades do jcr; são variáveis e algumas podem ser opcionais por meio da estrutura básica de um nó de componente, suas propriedades e subnós são definidos pela definição `cq:Component`
+      Uma lista de propriedades do jcr; são variáveis e algumas podem ser opcionais por meio da estrutura básica de um nó de componente, suas propriedades e subnós são definidos pela variável `cq:Component` definição
 
    * Recursos:
 
@@ -176,7 +175,7 @@ A definição de um componente pode ser dividida da seguinte maneira:
 
    * `<mycomponent> (cq:Component)` - Nó de hierarquia do componente.
 
-* **Propriedades** vitais:
+* **Propriedades vitais**:
 
    * `jcr:title` - Título do componente; por exemplo, usado como um rótulo quando o componente está listado no navegador de componentes ou no sidekick.
    * `jcr:description` - Descrição do componente; pode ser usado como dica de mouse sobre o navegador de componentes ou sidekick.
@@ -186,55 +185,55 @@ A definição de um componente pode ser dividida da seguinte maneira:
       * `thumbnail.png` - Imagem exibida se esse componente estiver listado no sistema de parágrafo.
    * Interface de toque
 
-      * Consulte a seção [Ícone de componente na interface de toque](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) para obter detalhes.
+      * Consulte a seção [Ícone de componente na interface do usuário de toque](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) para obter detalhes.
 
 
-* **Nós** Secundários Vitais:
+* **Nós Secundários Vitais**:
 
    * `cq:editConfig (cq:EditConfig)` - Define as propriedades de edição do componente e permite que o componente apareça no navegador Componentes ou no Sidekick.
 
       Observação: se o componente tiver uma caixa de diálogo, ela aparecerá automaticamente no navegador Componentes ou no Sidekick, mesmo se cq:editConfig não existir.
 
-   * `cq:childEditConfig (cq:EditConfig)` - Controla os aspectos da interface do usuário do autor para componentes filhos que não definem seus próprios  `cq:editConfig`.
+   * `cq:childEditConfig (cq:EditConfig)` - Controla os aspectos da interface do usuário do autor para componentes filhos que não definem seus próprios `cq:editConfig`.
    * Interface do usuário habilitada para toque:
 
-      * `cq:dialog` (  `nt:unstructured`) - Caixa de diálogo para este componente. Define a interface que permite ao usuário configurar o componente e/ou editar conteúdo.
-      * `cq:design_dialog` (  `nt:unstructured`) - Edição de design para este componente
+      * `cq:dialog` ( `nt:unstructured`) - Caixa de diálogo desse componente. Define a interface que permite ao usuário configurar o componente e/ou editar conteúdo.
+      * `cq:design_dialog` ( `nt:unstructured`) - Edição de design para este componente
    * Interface clássica:
 
-      * `dialog` (  `cq:Dialog`) - Caixa de diálogo para este componente. Define a interface que permite ao usuário configurar o componente e/ou editar conteúdo.
-      * `design_dialog` (  `cq:Dialog`) - Edição de design para este componente.
+      * `dialog` ( `cq:Dialog`) - Caixa de diálogo desse componente. Define a interface que permite ao usuário configurar o componente e/ou editar conteúdo.
+      * `design_dialog` ( `cq:Dialog`) - Edição de design para este componente.
 
 
-#### Ícone do componente na interface de toque {#component-icon-in-touch-ui}
+#### Ícone de componente na interface do usuário de toque {#component-icon-in-touch-ui}
 
 O ícone ou a abreviação do componente é definido por meio das propriedades do JCR do componente quando ele é criado pelo desenvolvedor. Essas propriedades são avaliadas na ordem a seguir e a primeira propriedade válida encontrada é usada.
 
-1. `cq:icon` - Propriedade de string que aponta para um ícone padrão na  [biblioteca da interface do usuário do ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) Coral para exibir no navegador de componente
+1. `cq:icon` - Propriedade da string que aponta para um ícone padrão na [Biblioteca da interface do usuário do Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) para exibir no navegador de componentes
    * Use o valor do atributo HTML do ícone Coral.
 1. `abbreviation` - Propriedade String para personalizar a abreviação do nome do componente no navegador do componente
    * A abreviação deve ser limitada a dois caracteres.
-   * Fornecer uma string vazia criará a abreviação dos dois primeiros caracteres da propriedade `jcr:title` .
+   * Fornecer uma string vazia criará a abreviação dos dois primeiros caracteres do `jcr:title` propriedade.
       * Por exemplo, &quot;Im&quot; para &quot;Image&quot;
       * O título localizado será usado para criar a abreviação.
-   * A abreviação só é traduzida se o componente tiver uma propriedade `abbreviation_commentI18n` , que é usada como dica de tradução.
-1. `cq:icon.png` ou  `cq:icon.svg`  - Ícone para esse componente, que é mostrado no navegador de componentes
+   * A abreviação só é traduzida se o componente tiver uma `abbreviation_commentI18n` , que é usada como dica de tradução.
+1. `cq:icon.png` ou `cq:icon.svg` - Ícone para esse componente, que é mostrado no navegador de componentes
    * 20 x 20 pixels é o tamanho dos ícones dos componentes padrão.
       * Os ícones maiores serão baixados (no lado do cliente).
    * A cor recomendada é rgb(112, 112, 112) > #707070
    * O plano de fundo dos ícones de componentes padrão é transparente.
-   * Somente os arquivos `.png` e `.svg` são compatíveis.
-   * Ao importar do sistema de arquivos por meio do plug-in Eclipse, os nomes de arquivo precisam ser escapados como `_cq_icon.png` ou `_cq_icon.svg`, por exemplo.
-   * `.png` tem precedência sobre  `.svg` se ambos estiverem presentes
+   * Somente `.png` e `.svg` os arquivos são suportados.
+   * Ao importar do sistema de arquivos por meio do plug-in Eclipse, os nomes de arquivo precisam ser evitados como `_cq_icon.png` ou `_cq_icon.svg` por exemplo.
+   * `.png` tem precedência sobre `.svg` se ambos estiverem presentes
 
-Se nenhuma das propriedades acima ( `cq:icon`, `abbreviation`, `cq:icon.png` ou `cq:icon.svg`) for encontrada no componente:
+Se nenhuma das propriedades acima ( `cq:icon`, `abbreviation`, `cq:icon.png` ou `cq:icon.svg`) são encontradas no componente :
 
-* O sistema pesquisará as mesmas propriedades nos supercomponentes após a propriedade `sling:resourceSuperType` .
-* Se nada ou uma abreviação vazia for encontrada no nível do supercomponente, o sistema criará a abreviação das primeiras letras da propriedade `jcr:title` do componente atual.
+* O sistema pesquisará as mesmas propriedades nos supercomponentes seguindo o `sling:resourceSuperType` propriedade.
+* Se nada ou uma abreviação vazia for encontrada no nível do supercomponente, o sistema criará a abreviação das primeiras letras do `jcr:title` propriedade do componente atual.
 
-Para cancelar a herança de ícones dos supercomponentes, definir uma propriedade `abbreviation` vazia no componente reverterá para o comportamento padrão.
+Para cancelar a herança de ícones de supercomponentes, defina um valor vazio `abbreviation` no componente será revertido para o comportamento padrão.
 
-O [Console de Componentes](/help/sites-authoring/default-components-console.md#component-details) exibe como o ícone de um componente específico é definido.
+O [Console do componente](/help/sites-authoring/default-components-console.md#component-details) exibe como o ícone de um componente específico é definido.
 
 #### Exemplo de ícone SVG {#svg-icon-example}
 
@@ -271,7 +270,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
   <tr>
    <td><code>componentGroup</code></td>
    <td><code>String</code></td>
-   <td>Grupo no qual o componente pode ser selecionado no navegador Componentes (interface habilitada para toque) ou no Sidekick (interface clássica).<br /> Um valor de  <code>.hidden</code> é usado para componentes que não estão disponíveis para seleção na interface do usuário, como os sistemas de parágrafo reais.</td>
+   <td>Grupo no qual o componente pode ser selecionado no navegador Componentes (interface habilitada para toque) ou no Sidekick (interface clássica).<br /> Um valor de <code>.hidden</code> é usada para componentes que não estão disponíveis para seleção na interface do usuário, como os sistemas de parágrafo reais.</td>
   </tr>
   <tr>
    <td><code>cq:isContainer</code></td>
@@ -316,7 +315,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Se definida, essa propriedade será considerada como ID da célula. Para obter mais informações, consulte o artigo da Base de conhecimento <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">How are Design Cell IDs created</a>.<br /> </td>
+   <td>Se definida, essa propriedade será considerada como ID da célula. Para obter mais informações, consulte o artigo da Base de conhecimento <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">Como as IDs de células de design são criadas</a>.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -326,7 +325,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
   <tr>
    <td><code>cq:editConfig</code></td>
    <td><code>cq:EditConfig</code></td>
-   <td><a href="#edit-behavior">Editar a configuração do componente</a>.<br /> </td>
+   <td><a href="#edit-behavior">Editar configuração do componente</a>.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:htmlTag</code></td>
@@ -336,7 +335,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
   <tr>
    <td><code>cq:noDecoration</code></td>
    <td><code>Boolean</code></td>
-   <td>Se true, o componente não será renderizado com as classes div e css geradas automaticamente.<br /> </td>
+   <td>Se verdadeiro, o componente não é renderizado com classes div e css geradas automaticamente.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:template</code></td>
@@ -346,7 +345,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
   <tr>
    <td><code>cq:templatePath</code></td>
    <td><code>String</code></td>
-   <td>Caminho para um nó a ser usado como um modelo de conteúdo quando o componente for adicionado do navegador Componentes ou do Sidekick. Deve ser um caminho absoluto, não relativo ao nó do componente.<br /> A menos que você queira reutilizar o conteúdo já disponível em outro lugar, isso não é necessário e  <code>cq:template</code> é suficiente (veja abaixo).</td>
+   <td>Caminho para um nó a ser usado como um modelo de conteúdo quando o componente for adicionado do navegador Componentes ou do Sidekick. Deve ser um caminho absoluto, não relativo ao nó do componente.<br /> A menos que você queira reutilizar o conteúdo já disponível em outro lugar, isso não é obrigatório e <code>cq:template</code> é suficiente (ver abaixo).</td>
   </tr>
   <tr>
    <td><code>jcr:created</code></td>
@@ -366,7 +365,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
   <tr>
    <td><code>sling:resourceSuperType</code></td>
    <td><code>String</code></td>
-   <td>Quando definido, o componente herda deste componente.<br /> </td>
+   <td>Quando definido, o componente herda desse componente.<br /> </td>
   </tr>
   <tr>
    <td><code>virtual</code></td>
@@ -381,17 +380,17 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
   <tr>
    <td><code>icon.png</code></td>
    <td><code>nt:file</code></td>
-   <td>Ícone do componente, aparece ao lado do Título no Sidekick.<br /> </td>
+   <td>O ícone do componente aparece ao lado do Título no Sidekick.<br /> </td>
   </tr>
   <tr>
    <td><code>thumbnail.png</code></td>
    <td><code>nt:file</code></td>
-   <td>Miniatura opcional mostrada enquanto o componente é arrastado do Sidekick.<br /> </td>
+   <td>Miniatura opcional mostrada enquanto o componente é arrastado do Sidekick para o lugar.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-Se observarmos o componente **Text** (qualquer versão), podemos ver estes elementos:
+Se olharmos para a **Texto** componente (qualquer versão), podemos ver estes elementos:
 
 * HTL ( `/libs/wcm/foundation/components/text`)
 
@@ -409,14 +408,14 @@ As propriedades de interesses específicos incluem:
 
 Os nós filhos de interesse especial incluem:
 
-* `cq:editConfig` (  `cq:EditConfig`) - controla os aspectos visuais; por exemplo, ele pode definir a aparência de uma barra ou de um widget ou pode adicionar controles personalizados
-* `cq:childEditConfig` (  `cq:EditConfig`) - controla os aspectos visuais dos componentes filhos que não têm suas próprias definições
+* `cq:editConfig` ( `cq:EditConfig`) - controlo dos aspectos visuais; por exemplo, ele pode definir a aparência de uma barra ou de um widget ou pode adicionar controles personalizados
+* `cq:childEditConfig` ( `cq:EditConfig`) - controla os aspectos visuais dos componentes filhos que não têm as suas próprias definições
 * Interface do usuário habilitada para toque:
-   * `cq:dialog` (  `nt:unstructured`) - define a caixa de diálogo para editar o conteúdo desse componente
-   * `cq:design_dialog` (  `nt:unstructured`) - especifica as opções de edição de design para este componente
+   * `cq:dialog` ( `nt:unstructured`) - define a caixa de diálogo para editar o conteúdo desse componente
+   * `cq:design_dialog` ( `nt:unstructured`) - especifica as opções de edição de design para este componente
 * Interface clássica:
-   * `dialog` (  `cq:Dialog`) - define a caixa de diálogo para editar o conteúdo desse componente (específico da interface clássica)
-   * `design_dialog` (  `cq:Dialog`) - especifica as opções de edição de design para este componente
+   * `dialog` ( `cq:Dialog`) - define a caixa de diálogo para editar o conteúdo desse componente (específico da interface clássica)
+   * `design_dialog` ( `cq:Dialog`) - especifica as opções de edição de design para este componente
    * `icon.png` - arquivo gráfico a ser usado como ícone para o componente no Sidekick
    * `thumbnail.png` - arquivo gráfico a ser usado como miniatura do componente ao arrastá-lo do Sidekick
 
@@ -431,10 +430,8 @@ As definições de caixa de diálogo são específicas da interface do usuário:
 >[!NOTE]
 >
 >* Para fins de compatibilidade, a interface do usuário habilitada para toque pode usar a definição de uma caixa de diálogo da interface do usuário clássica, quando nenhuma caixa de diálogo tiver sido definida para a interface do usuário habilitada para toque.
->* As [Ferramentas de Modernização AEM](/help/sites-developing/modernization-tools.md) também são fornecidas para ajudá-lo a estender/converter componentes que tenham apenas caixas de diálogo definidas para a interface clássica.
-
+>* O [Ferramentas de Modernização AEM](/help/sites-developing/modernization-tools.md) também são fornecidas para ajudá-lo a estender/converter componentes que tenham apenas caixas de diálogo definidas para a interface clássica.
 >
-
 
 
 * Interface do usuário habilitada para toque
@@ -442,10 +439,10 @@ As definições de caixa de diálogo são específicas da interface do usuário:
       * definir a caixa de diálogo para editar o conteúdo deste componente
       * específico da interface habilitada para toque
       * são definidas usando componentes da interface do usuário do Granite
-      * têm uma propriedade `sling:resourceType`, como estrutura de conteúdo padrão do Sling
+      * ter uma propriedade `sling:resourceType`, como estrutura de conteúdo padrão do Sling
       * pode ter uma propriedade `helpPath` para definir o recurso de ajuda sensível ao contexto (caminho absoluto ou relativo) que é acessado quando o ícone de Ajuda (o ? ) está selecionada.
          * Para componentes prontos para uso, isso geralmente faz referência a uma página na documentação.
-         * Se nenhum `helpPath` for especificado, o URL padrão (página de visão geral da documentação) será exibido.
+         * Se não `helpPath` for especificada, o URL padrão (página de visão geral da documentação) será exibido.
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
@@ -458,10 +455,10 @@ As definições de caixa de diálogo são específicas da interface do usuário:
       * definir a caixa de diálogo para editar o conteúdo deste componente
       * específico da interface clássica
       * são definidas usando widgets ExtJS
-      * têm uma propriedade `xtype`, que se refere a ExtJS
-      * pode ter uma propriedade `helpPath` para definir o recurso de ajuda sensível ao contexto (caminho absoluto ou relativo) que é acessado quando o botão **Ajuda** é selecionado.
+      * ter uma propriedade `xtype`, que se refere a ExtJS
+      * pode ter uma propriedade `helpPath` para definir o recurso de ajuda sensível ao contexto (caminho absoluto ou relativo) que é acessado quando a variável **Ajuda** é selecionado.
          * Para componentes prontos para uso, isso geralmente faz referência a uma página na documentação.
-         * Se nenhum `helpPath` for especificado, o URL padrão (página de visão geral da documentação) será exibido.
+         * Se não `helpPath` for especificada, o URL padrão (página de visão geral da documentação) será exibido.
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
@@ -471,24 +468,24 @@ As definições de caixa de diálogo são específicas da interface do usuário:
 
    Em uma caixa de diálogo clássica:
 
-   * é possível criar a caixa de diálogo como `cq:Dialog`, que fornecerá uma única guia - como no componente de texto, ou se você precisar de várias guias, como no componente de imagem, a caixa de diálogo poderá ser definida como `cq:TabPanel`.
-   * um `cq:WidgetCollection` ( `items`) é usado para fornecer uma base para os campos de entrada ( `cq:Widget`) ou para guias adicionais ( `cq:Widget`). Essa hierarquia pode ser estendida.
+   * você pode criar a caixa de diálogo como `cq:Dialog`, que fornecerá uma única guia - como no componente de texto, ou se você precisar de várias guias, como no componente de tempo de texto, a caixa de diálogo poderá ser definida como `cq:TabPanel`.
+   * a `cq:WidgetCollection` ( `items`) é usada para fornecer uma base para qualquer campo de entrada ( `cq:Widget`) ou outras guias ( `cq:Widget`). Essa hierarquia pode ser estendida.
 
 
 ### Caixas de diálogo de design {#design-dialogs}
 
 As caixas de diálogo Design são muito semelhantes às caixas de diálogo usadas para editar e configurar o conteúdo, mas fornecem a interface para os autores configurar e fornecer detalhes de design para esse componente.
 
-[As caixas de diálogo Design estão disponíveis no Modo](/help/sites-authoring/default-components-designmode.md) Design, embora não sejam necessárias para todos os componentes, por exemplo,  **** Título e  **** Imagem, ambos têm caixas de diálogo de design, enquanto o  **** Texto não.
+[As caixas de diálogo Design estão disponíveis no Modo Design](/help/sites-authoring/default-components-designmode.md), embora não sejam necessários para todos os componentes, por exemplo **Título** e **Imagem** ambos têm diálogos de design, enquanto **Texto** não.
 
-A caixa de diálogo de design do sistema de parágrafo (por exemplo, parsys) é um caso especial, pois permite que o usuário defina outros componentes específicos para serem selecionados (do navegador de componentes ou sidekick) na página.
+A caixa de diálogo de design do sistema de parágrafo (por exemplo, parsys) é um caso especial, pois permite que o usuário defina outros componentes específicos para serem selecionados (do navegador de componentes ou do sidekick) na página.
 
-### Adicionar seu componente ao Sistema de parágrafo {#adding-your-component-to-the-paragraph-system}
+### Adicionar seu componente ao sistema de parágrafos {#adding-your-component-to-the-paragraph-system}
 
 Depois que um componente é definido, ele deve ser disponibilizado para uso. Para disponibilizar um componente para uso em um sistema de parágrafo, é possível:
 
-1. Abra [Modo Design](/help/sites-authoring/default-components-designmode.md) para uma página e ative o componente necessário.
-1. Adicione os componentes necessários à propriedade `components` da definição do modelo em:
+1. Abrir [Modo Design](/help/sites-authoring/default-components-designmode.md) para uma página e habilite o componente desejado.
+1. Adicione os componentes necessários ao `components` propriedade da definição do modelo em:
 
    `/etc/designs/<*yourProject*>/jcr:content/<*yourTemplate*>/par`
 
@@ -500,7 +497,7 @@ Depois que um componente é definido, ele deve ser disponibilizado para uso. Par
 
 ### Componentes e o conteúdo que eles criam {#components-and-the-content-they-create}
 
-Se criarmos e configurarmos uma instância do componente **Title** na página: `<content-path>/Prototype.html`
+Se criarmos e configurarmos uma instância do **Título** componente na página: `<content-path>/Prototype.html`
 
 * Interface do usuário habilitada para toque
 
@@ -514,7 +511,7 @@ Então podemos ver a estrutura do conteúdo criado no repositório:
 
 ![screen_shot_2012-02-13at61405pm](assets/screen_shot_2012-02-13at61405pm.png)
 
-Em particular, se você observar o texto real para um **Title**:
+Em particular, se você observar o texto real para uma **Título**:
 
 * a definição (para ambas as interfaces de usuário) tem a propriedade `name`= `./jcr:title`
 
@@ -523,7 +520,7 @@ Em particular, se você observar o texto real para um **Title**:
 
 * no conteúdo, isso gera a propriedade `jcr:title` mantendo o conteúdo do autor.
 
-As propriedades definidas dependem das definições individuais. Embora possam ser mais complexas do que acima, continuam a seguir os mesmos princípios básicos.
+As propriedades definidas dependem das definições individuais. Embora possam ser mais complexas do que acima, seguem ainda os mesmos princípios básicos.
 
 ## Hierarquia e herança de componentes {#component-hierarchy-and-inheritance}
 
@@ -543,7 +540,7 @@ Os componentes no AEM estão sujeitos a 3 hierarquias diferentes:
 
    Por exemplo, as configurações dos botões da barra de edição, o layout do conjunto de controle (barras de edição, rolagem), o layout da caixa de diálogo (em linha, flutuante) podem ser definidos no componente pai e propagados para os componentes filho.
 
-   As configurações (relacionadas à funcionalidade de edição) em `cq:editConfig` e `cq:childEditConfig` são propagadas.
+   Configurações (relacionadas à funcionalidade de edição) em `cq:editConfig` e `cq:childEditConfig` são propagadas.
 
 * **Incluir hierarquia**
 
@@ -557,9 +554,9 @@ Esta seção explica como configurar o comportamento de edição de um component
 
 A configuração é comum à interface habilitada para toque e clássica, embora com determinadas diferenças específicas.
 
-O comportamento de edição de um componente é configurado adicionando um nó `cq:editConfig` do tipo `cq:EditConfig` abaixo do nó do componente (do tipo `cq:Component`) e adicionando propriedades específicas e nós secundários. As seguintes propriedades e nós secundários estão disponíveis:
+O comportamento de edição de um componente é configurado ao adicionar um `cq:editConfig` nó do tipo `cq:EditConfig` abaixo do nó do componente (do tipo `cq:Component`) e adicionando propriedades específicas e nós secundários. As seguintes propriedades e nós secundários estão disponíveis:
 
-* [ `cq:editConfig` propriedades](#configuring-with-cq-editconfig-properties) do nó:
+* [ `cq:editConfig` propriedades do nó](#configuring-with-cq-editconfig-properties):
 
    * `cq:actions` ( `String array`): define as ações que podem ser executadas no componente.
    * `cq:layout` ( `String`): : define como o componente é editado na interface clássica.
@@ -571,16 +568,16 @@ O comportamento de edição de um componente é configurado adicionando um nó `
    * `dialogLayout` (String): define como a caixa de diálogo deve ser aberta.
 
 
-* [ `cq:editConfig` nós](#configuring-with-cq-editconfig-child-nodes) filhos:
+* [ `cq:editConfig` nós filhos](#configuring-with-cq-editconfig-child-nodes):
 
-   * `cq:dropTargets` (tipo de nó  `nt:unstructured`): define uma lista de destinos de soltar que podem aceitar uma queda de um ativo do localizador de conteúdo
+   * `cq:dropTargets` (tipo de nó) `nt:unstructured`): define uma lista de destinos de soltar que podem aceitar uma queda de um ativo do localizador de conteúdo
 
       * Vários destinos de soltar estão disponíveis somente na interface clássica.
       * Na interface habilitada para toque, é permitido um único destino de soltar.
-   * `cq:actionConfigs` (tipo de nó  `nt:unstructured`): define uma lista de novas ações que são anexadas à lista cq:actions.
-   * `cq:formParameters` (tipo de nó  `nt:unstructured`): O define parâmetros adicionais que são adicionados ao formulário de diálogo.
-   * `cq:inplaceEditing` (tipo de nó  `cq:InplaceEditingConfig`): define uma configuração de edição local para o componente.
-   * `cq:listeners` (tipo de nó  `cq:EditListenersConfig`): define o que acontece antes ou depois que uma ação ocorre no componente.
+   * `cq:actionConfigs` (tipo de nó) `nt:unstructured`): define uma lista de novas ações que são anexadas à lista cq:actions.
+   * `cq:formParameters` (tipo de nó) `nt:unstructured`): O define parâmetros adicionais que são adicionados ao formulário de diálogo.
+   * `cq:inplaceEditing` (tipo de nó) `cq:InplaceEditingConfig`): define uma configuração de edição local para o componente.
+   * `cq:listeners` (tipo de nó) `cq:EditListenersConfig`): define o que acontece antes ou depois que uma ação ocorre no componente.
 
 
 >[!NOTE]
@@ -601,20 +598,20 @@ O comportamento de edição de um componente é configurado adicionando um nó `
 
 Há muitas configurações existentes no repositório. Você pode pesquisar facilmente propriedades específicas ou nós secundários:
 
-* Para procurar uma propriedade do nó `cq:editConfig`, por exemplo `cq:actions`, você pode usar a ferramenta Query em **CRXDE Lite** e pesquisar com a seguinte string de consulta XPath:
+* Para procurar uma propriedade do `cq:editConfig` nó, por exemplo `cq:actions`, você pode usar a ferramenta Query no **CRXDE Lite** e pesquise com a seguinte sequência de consulta XPath:
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Para procurar por um nó filho de `cq:editConfig`, por exemplo, você pode pesquisar por `cq:dropTargets`, que é do tipo `cq:DropTargetConfig`; você pode usar a ferramenta Consulta em ** CRXDE Lite* e pesquisar com a seguinte string de consulta XPath:
+* Para procurar um nó filho de `cq:editConfig`, por exemplo, você pode pesquisar por `cq:dropTargets`, que é do tipo `cq:DropTargetConfig`; você pode usar a ferramenta Consulta em ** CRXDE Lite* e pesquisar com a seguinte string de consulta XPath:
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 
-### Espaços reservados do componente {#component-placeholders}
+### Marcadores de posição de componente {#component-placeholders}
 
-Os componentes devem sempre renderizar algum HTML que esteja visível para o autor, mesmo quando o componente não tiver conteúdo. Caso contrário, pode desaparecer visualmente da interface do editor, tornando-a tecnicamente presente, mas invisível, na página e no editor. Nesse caso, os autores não poderão selecionar e interagir com o componente vazio.
+Os componentes devem sempre renderizar algum HTML visível para o autor, mesmo quando o componente não tiver conteúdo. Caso contrário, pode desaparecer visualmente da interface do editor, tornando-a tecnicamente presente, mas invisível, na página e no editor. Nesse caso, os autores não poderão selecionar e interagir com o componente vazio.
 
-Por isso, os componentes devem renderizar um espaço reservado, desde que não renderizem nenhuma saída visível quando a página for renderizada no editor de páginas (quando o modo WCM for `edit` ou `preview`).
-A marcação HTML típica para um espaço reservado é a seguinte:
+Por isso, os componentes devem renderizar um espaço reservado, desde que não renderizem nenhuma saída visível quando a página for renderizada no editor de páginas (quando o modo WCM estiver `edit` ou `preview`).
+A marcação de HTML típica para um espaço reservado é a seguinte:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
@@ -629,7 +626,7 @@ O script HTL típico que renderiza o HTML de espaço reservado acima é o seguin
 
 No exemplo anterior, `isEmpty` é uma variável que é verdadeira somente quando o componente não tem conteúdo e é invisível para o autor.
 
-Para evitar a repetição, o Adobe recomenda que os implementadores de componentes usem um modelo HTL para esses espaços reservados, [como o fornecido pelos Componentes principais.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+Para evitar a repetição, o Adobe recomenda que os implementadores de componentes usem um template HTL para esses espaços reservados, [como o fornecido pelos Componentes principais.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
 
 O uso do template no link anterior é feito com a seguinte linha de HTL:
 
@@ -646,7 +643,7 @@ Um exemplo de uso desse modelo pode ser visto nos Componentes principais, [como 
 
 ### cq:actions {#cq-actions}
 
-A propriedade `cq:actions` ( `String array`) define uma ou várias ações que podem ser executadas no componente. Os seguintes valores estão disponíveis para configuração:
+O `cq:actions` propriedade ( `String array`) define uma ou várias ações que podem ser executadas no componente. Os seguintes valores estão disponíveis para configuração:
 
 <table>
  <tbody>
@@ -656,7 +653,7 @@ A propriedade `cq:actions` ( `String array`) define uma ou várias ações que p
   </tr>
   <tr>
    <td><code>text:&lt;some text&gt;</code></td>
-   <td>Exibe o valor do texto estático &lt;some text&gt;<br /> visível somente na interface clássica. A interface habilitada para toque não exibe ações em um menu contextual, portanto, isso não é aplicável.</td>
+   <td>Exibe o valor do texto estático &lt;some text=""&gt;<br /> Visível somente na interface clássica. A interface habilitada para toque não exibe ações em um menu contextual, portanto, isso não é aplicável.</td>
   </tr>
   <tr>
    <td>-</td>
@@ -705,7 +702,7 @@ A configuração a seguir adiciona o texto &quot;Configurações herdadas da est
 
 ### cq:layout (somente interface clássica) {#cq-layout-classic-ui-only}
 
-A propriedade `cq:layout` ( `String`) define como o componente pode ser editado na interface clássica. Os seguintes valores estão disponíveis:
+O `cq:layout` propriedade ( `String`) define como o componente pode ser editado na interface clássica. Os seguintes valores estão disponíveis:
 
 <table>
  <tbody>
@@ -715,11 +712,11 @@ A propriedade `cq:layout` ( `String`) define como o componente pode ser editado 
   </tr>
   <tr>
    <td><code>rollover</code></td>
-   <td>Valor padrão. A edição do componente pode ser acessada "ao passar o mouse" por meio de cliques e/ou do menu de contexto.<br /> Para uso avançado, observe que o objeto correspondente do lado do cliente é:  <code>CQ.wcm.EditRollover</code>.</td>
+   <td>Valor padrão. A edição do componente pode ser acessada "ao passar o mouse" por meio de cliques e/ou do menu de contexto.<br /> Para uso avançado, observe que o objeto correspondente do lado do cliente é: <code>CQ.wcm.EditRollover</code>.</td>
   </tr>
   <tr>
    <td><code>editbar</code></td>
-   <td>A edição do componente é acessível por meio de uma barra de ferramentas.<br /> Para uso avançado, observe que o objeto correspondente do lado do cliente é:  <code>CQ.wcm.EditBar</code>.</td>
+   <td>A edição do componente é acessível por meio de uma barra de ferramentas.<br /> Para uso avançado, observe que o objeto correspondente do lado do cliente é: <code>CQ.wcm.EditBar</code>.</td>
   </tr>
   <tr>
    <td><code>auto</code></td>
@@ -744,7 +741,7 @@ A configuração a seguir adiciona um botão de edição à barra de edição de
 
 ### cq:dialogMode (somente interface clássica) {#cq-dialogmode-classic-ui-only}
 
-O componente pode ser vinculado a uma caixa de diálogo de edição. A propriedade `cq:dialogMode` ( `String`) define como a caixa de diálogo do componente será aberta na interface clássica. Os seguintes valores estão disponíveis:
+O componente pode ser vinculado a uma caixa de diálogo de edição. O `cq:dialogMode` propriedade ( `String`) define como a caixa de diálogo do componente será aberta na interface clássica. Os seguintes valores estão disponíveis:
 
 <table>
  <tbody>
@@ -758,11 +755,11 @@ O componente pode ser vinculado a uma caixa de diálogo de edição. A proprieda
   </tr>
   <tr>
    <td><code>inline</code></td>
-   <td>(Valor padrão). A caixa de diálogo está ancorada sobre o componente.<br /> </td>
+   <td>(Valor padrão). A caixa de diálogo é ancorada sobre o componente.<br /> </td>
   </tr>
   <tr>
    <td><code>auto</code></td>
-   <td>Se a largura do componente for menor que o valor <code>CQ.themes.wcm.EditBase.INLINE_MINIMUM_WIDTH</code> do lado do cliente, a caixa de diálogo estará flutuando, caso contrário, estará em linha.</td>
+   <td>Se a largura do componente for menor que o lado do cliente <code>CQ.themes.wcm.EditBase.INLINE_MINIMUM_WIDTH</code> , a caixa de diálogo está flutuando, caso contrário, está em linha.</td>
   </tr>
  </tbody>
 </table>
@@ -784,26 +781,26 @@ A configuração a seguir define uma barra de edição com um botão de edição
 
 ### cq:emptyText {#cq-emptytext}
 
-A propriedade `cq:emptyText` ( `String`) define o texto que é exibido quando nenhum conteúdo visual está presente. O padrão é: `Drag components or assets here`.
+O `cq:emptyText` propriedade ( `String`) define o texto que é exibido quando nenhum conteúdo visual está presente. O padrão é: `Drag components or assets here`.
 
-### cq:herdar {#cq-inherit}
+### cq:herit {#cq-inherit}
 
-A propriedade `cq:inherit` ( `boolean`) define se os valores ausentes são herdados do componente do qual são herdados. O padrão é `false`.
+O `cq:inherit` propriedade ( `boolean`) define se os valores ausentes são herdados do componente do qual ele herda. O padrão é `false`.
 
 ### dialogLayout {#dialoglayout}
 
-A propriedade `dialogLayout` define como uma caixa de diálogo deve ser aberta por padrão.
+O `dialogLayout` define como uma caixa de diálogo deve ser aberta por padrão.
 
-* Um valor `fullscreen` abre a caixa de diálogo em tela cheia.
+* Um valor de `fullscreen` abre a caixa de diálogo em tela cheia.
 * Um valor vazio ou a ausência da propriedade assumem o padrão de abrir a caixa de diálogo normalmente.
 * Observe que o usuário sempre pode alternar o modo de tela cheia na caixa de diálogo.
 * Não se aplica à interface clássica.
 
-### Configurar com cq:EditConfig Child Nodes {#configuring-with-cq-editconfig-child-nodes}
+### Configurar com nós filho cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
 ### cq:dropTargets {#cq-droptargets}
 
-O nó `cq:dropTargets` (tipo de nó `nt:unstructured`) define uma lista de destinos de soltar que podem aceitar uma queda de um ativo arrastado do localizador de conteúdo. Ele serve como uma coleção de nós do tipo `cq:DropTargetConfig`.
+O `cq:dropTargets` nó (tipo de nó) `nt:unstructured`) define uma lista de destinos de soltar que podem aceitar uma queda de um ativo arrastado do localizador de conteúdo. Ele serve como uma coleção de nós do tipo `cq:DropTargetConfig`.
 
 >[!NOTE]
 >
@@ -822,8 +819,7 @@ O `<drag and drop prefix>` é definido pela propriedade Java:
 
 `com.day.cq.wcm.api.components.DropTarget.CSS_CLASS_PREFIX`.
 
-Por exemplo, o nome da classe é definido da seguinte maneira no JSP do componente de Download
-( `/libs/foundation/components/download/download.jsp`), onde `file` é o nome do nó do destino de soltar na configuração de edição do componente Download:
+Por exemplo, o nome da classe é definido da seguinte maneira no JSP do componente de Download ( `/libs/foundation/components/download/download.jsp`), onde `file` é o nome do nó do destino de soltar na configuração de edição do componente de Download:
 
 `String ddClassName = DropTarget.CSS_CLASS_PREFIX + "file";`
 
@@ -850,7 +846,7 @@ O nó do tipo `cq:DropTargetConfig` precisa ter as seguintes propriedades:
  </tbody>
 </table>
 
-A configuração a seguir é obtida do componente Download . Ela ativa qualquer ativo (o tipo MIME pode ser qualquer string) do grupo `media` a ser solto do localizador de conteúdo no componente. Após a queda, a propriedade do componente `fileReference` está sendo atualizada:
+A configuração a seguir é obtida do componente Download . Ela ativa qualquer ativo (o tipo MIME pode ser qualquer string) da variável `media` grupo a ser descartado do localizador de conteúdo no componente. Após a queda, a propriedade do componente `fileReference` está sendo atualizado:
 
 ```
     <cq:dropTargets jcr:primaryType="nt:unstructured">
@@ -864,7 +860,7 @@ A configuração a seguir é obtida do componente Download . Ela ativa qualquer 
 
 ### cq:actionConfigs (somente interface clássica) {#cq-actionconfigs-classic-ui-only}
 
-O nó `cq:actionConfigs` (tipo de nó `nt:unstructured`) define uma lista de novas ações que são anexadas à lista definida pela propriedade `cq:actions`. Cada nó filho de `cq:actionConfigs` define uma nova ação definindo um widget.
+O `cq:actionConfigs` nó (tipo de nó) `nt:unstructured`) define uma lista de novas ações que são anexadas à lista definida pelo `cq:actions` propriedade. Cada nó filho de `cq:actionConfigs` define uma nova ação definindo um widget.
 
 O exemplo de configuração a seguir define um novo botão (com um separador para a interface clássica):
 
@@ -893,13 +889,13 @@ O exemplo de configuração a seguir define um novo botão (com um separador par
 
 >[!NOTE]
 >
->Consulte [Adicionar nova ação a uma barra de ferramentas de componente](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar) como um exemplo para a interface de usuário habilitada para toque.
+>Consulte [Adicionar nova ação a uma barra de ferramentas de componentes](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar) como exemplo para a interface habilitada para toque.
 
 ### cq:formParameters {#cq-formparameters}
 
-O nó `cq:formParameters` (tipo de nó `nt:unstructured`) define parâmetros adicionais que são adicionados ao formulário de diálogo. Cada propriedade é mapeada para um parâmetro de formulário.
+O `cq:formParameters` nó (tipo de nó) `nt:unstructured`) define parâmetros adicionais que são adicionados ao formulário de diálogo. Cada propriedade é mapeada para um parâmetro de formulário.
 
-A configuração a seguir adiciona um parâmetro chamado `name`, definido com o valor `photos/primary` ao formulário de diálogo:
+A configuração a seguir adiciona um parâmetro chamado `name`, defina com o valor `photos/primary` ao formulário de diálogo:
 
 ```
     <cq:formParameters
@@ -909,7 +905,7 @@ A configuração a seguir adiciona um parâmetro chamado `name`, definido com o 
 
 ### cq:inplaceEditing {#cq-inplaceediting}
 
-O nó `cq:inplaceEditing` (tipo de nó `cq:InplaceEditingConfig`) define uma configuração de edição local para o componente. Pode ter as seguintes propriedades:
+O `cq:inplaceEditing` nó (tipo de nó) `cq:InplaceEditingConfig`) define uma configuração de edição local para o componente. Pode ter as seguintes propriedades:
 
 <table>
  <tbody>
@@ -919,7 +915,7 @@ O nó `cq:inplaceEditing` (tipo de nó `cq:InplaceEditingConfig`) define uma con
   </tr>
   <tr>
    <td><code>active</code></td>
-   <td>(<code>boolean</code>) True para ativar a edição local do componente.</td>
+   <td>(<code>boolean</code>) Verdadeiro para ativar a edição local do componente.</td>
   </tr>
   <tr>
    <td><code>configPath</code></td>
@@ -929,15 +925,15 @@ O nó `cq:inplaceEditing` (tipo de nó `cq:InplaceEditingConfig`) define uma con
    <td><code>editorType</code></td>
    <td><p>(<code>String</code>) Tipo de editor. Os tipos disponíveis são:</p>
     <ul>
-     <li>texto simples: para ser usado em conteúdo não HTML.<br /> </li>
+     <li>texto simples: a ser usado para conteúdo não HTML.<br /> </li>
      <li>Título: é um editor de texto simples aprimorado que converte títulos gráficos em um texto simples antes do início da edição. Usado pelo componente de título do Geometrixx.<br /> </li>
-     <li>texto: a ser usado para conteúdo HTML (usa o Editor de Rich Text).<br /> </li>
+     <li>texto: a ser usado para o conteúdo do HTML (usa o Editor de Rich Text).<br /> </li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-A configuração a seguir permite a edição local do componente e define `plaintext` como o tipo de editor:
+A configuração a seguir permite a edição local do componente e define `plaintext` como tipo de editor:
 
 ```
     <cq:inplaceEditing
@@ -948,7 +944,7 @@ A configuração a seguir permite a edição local do componente e define `plain
 
 ### cq:listeners {#cq-listeners}
 
-O nó `cq:listeners` (tipo de nó `cq:EditListenersConfig`) define o que acontece antes ou depois de uma ação no componente. A tabela a seguir define suas possíveis propriedades.
+O `cq:listeners` nó (tipo de nó) `cq:EditListenersConfig`) define o que acontece antes ou depois de uma ação no componente. A tabela a seguir define suas possíveis propriedades.
 
 <table>
  <tbody>
@@ -959,7 +955,7 @@ O nó `cq:listeners` (tipo de nó `cq:EditListenersConfig`) define o que acontec
   </tr>
   <tr>
    <td><code>beforedelete</code></td>
-   <td>O manipulador é acionado antes que o componente seja removido.<br /> </td>
+   <td>O manipulador é acionado antes da remoção do componente.<br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -1022,7 +1018,7 @@ O nó `cq:listeners` (tipo de nó `cq:EditListenersConfig`) define o que acontec
 
 >[!NOTE]
 >
->Os manipuladores `REFRESH_INSERTED` e `REFRESH_SELFMOVED` só estão disponíveis na interface clássica.
+>O `REFRESH_INSERTED` e `REFRESH_SELFMOVED` os manipuladores só estão disponíveis na interface clássica.
 
 >[!NOTE]
 >
@@ -1030,9 +1026,9 @@ O nó `cq:listeners` (tipo de nó `cq:EditListenersConfig`) define o que acontec
 
 >[!NOTE]
 >
->No caso de componentes aninhados, há certas restrições em ações definidas como propriedades no nó `cq:listeners`:
+>No caso de componentes aninhados, há certas restrições nas ações definidas como propriedades na variável `cq:listeners` nó:
 >
->* Para componentes aninhados, os valores das seguintes propriedades *devem* ser `REFRESH_PAGE`: >
+>* Para componentes aninhados, os valores das seguintes propriedades *must* be `REFRESH_PAGE`: >
 >  * `aftermove`
 >  * `aftercopy`
 
@@ -1041,13 +1037,13 @@ O manipulador de eventos pode ser implementado com uma implementação personali
 
 `afteredit = "project.customerAction"`
 
-O exemplo a seguir é equivalente à configuração `REFRESH_INSERTED` :
+O exemplo a seguir é equivalente ao `REFRESH_INSERTED` configuração:
 
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
 >
->Para a interface clássica, para ver quais parâmetros podem ser usados nos manipuladores, consulte a seção `before<action>` e `after<action>` eventos da documentação do widget [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) e [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover).
+>Para a interface clássica, para ver quais parâmetros podem ser usados nos manipuladores, consulte o `before<action>` e `after<action>` seção de eventos da [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) e [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) documentação do widget.
 
 Com a seguinte configuração, a página é atualizada após o componente ter sido excluído, editado, inserido ou movido:
 

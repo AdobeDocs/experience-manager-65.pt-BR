@@ -1,8 +1,8 @@
 ---
 title: Configuração de mensagens
-seo-title: Configuração de mensagens
+seo-title: Configuring Messaging
 description: Mensagens das comunidades
-seo-description: Mensagens das comunidades
+seo-description: Communities messaging
 uuid: 159dcf9d-7948-4a3d-9f51-a5b4d03e172b
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,7 +14,7 @@ role: Admin
 exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -25,15 +25,15 @@ ht-degree: 1%
 
 O recurso de mensagens para o AEM Communities fornece a capacidade de visitantes (membros) do site conectados enviarem mensagens para outros que sejam acessíveis quando conectados ao site.
 
-As mensagens são ativadas para um site da comunidade marcando uma caixa durante [criação do site da comunidade](/help/communities/sites-console.md).
+As mensagens são ativadas para um site da comunidade ao marcar uma caixa durante [criação de site da comunidade](/help/communities/sites-console.md).
 
 Esta página tem informações sobre a configuração padrão e possíveis ajustes.
 
-Para obter informações adicionais para desenvolvedores, consulte [Messaging Essentials](/help/communities/essentials-messaging.md).
+Para obter mais informações para desenvolvedores, consulte [Fundamentos das mensagens](/help/communities/essentials-messaging.md).
 
 ## Serviço de Operações de Mensagens {#messaging-operations-service}
 
-A configuração [AEM Communities Messaging Operations Service](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifica o ponto de extremidade que lida com solicitações relacionadas a mensagens, as pastas que o serviço deve usar para armazenar mensagens e, se as mensagens puderem incluir anexos de arquivo, quais tipos de arquivo são permitidos.
+A configuração [Serviço de operações de mensagens da AEM Communities](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifica o endpoint que lida com solicitações relacionadas a mensagens, as pastas que o serviço deve usar para armazenar mensagens e, se as mensagens podem incluir anexos de arquivo, quais tipos de arquivo são permitidos.
 
 Para sites da comunidade criados usando o `Communities Sites console`, uma instância do serviço já existe, com a caixa de entrada definida como `/mail/inbox`.
 
@@ -45,11 +45,11 @@ Como mostrado abaixo, existe uma configuração do serviço para sites criados c
 
 ### Adicionar nova configuração {#add-new-configuration}
 
-Para adicionar uma nova configuração, selecione o ícone de adição &#39;**+**&#39; ao lado do nome do serviço :
+Para adicionar uma nova configuração, selecione o sinal de mais &#39;**+**&#x200B;Ícone &#39; ao lado do nome do serviço :
 
 * **Campos de mensagem Lista de permissões**
 
-   Especifica as propriedades do componente Escrever mensagem que os usuários podem editar e persistir. Se novos elementos de formulário forem adicionados, a ID do elemento precisará ser adicionada se desejar ser armazenada no SRP. O padrão é duas entradas: *subject* e *content*.
+   Especifica as propriedades do componente Escrever mensagem que os usuários podem editar e persistir. Se novos elementos de formulário forem adicionados, a ID do elemento precisará ser adicionada se desejar ser armazenada no SRP. O padrão é duas entradas: *assunto* e *conteúdo*.
 
 * **Limite de tamanho da caixa de mensagem**
 
@@ -57,11 +57,11 @@ Para adicionar uma nova configuração, selecione o ícone de adição &#39;**+*
 
 * **Limite da contagem de mensagens**
 
-   O número total de mensagens permitidas por usuário. Um valor de -1 indica que um número ilimitado de mensagens é permitido, sujeito ao limite de tamanho da caixa de mensagem. O padrão é *10000* (10k).
+   O número total de mensagens permitidas por usuário. Um valor de -1 indica que um número ilimitado de mensagens é permitido, sujeito ao limite de tamanho da caixa de mensagem. O padrão é *10000* (10.000)
 
 * **Notificar falha de entrega**
 
-   Se marcada, notifique o remetente se o delivery da mensagem falhar para alguns recipients. O padrão é *marcado*.
+   Se marcada, notifique o remetente se o delivery da mensagem falhar para alguns recipients. O padrão é *verificado*.
 
 * **Falha na ID do remetente do delivery**
 
@@ -81,19 +81,19 @@ Para adicionar uma nova configuração, selecione o ícone de adição &#39;**+*
 
 * **Tamanho do pool de atualizações de contagem**
 
-   Número de threads simultâneos usados para atualização de contagem. O padrão é *10*.
+   Número de threads simultâneos usados para atualização de contagem. O padrão é *10º*.
 
 * **Caminho da caixa de entrada**
 
-   (*Obrigatório*) O caminho, relativo ao nó do usuário (/home/users/*nome de usuário*), a ser usado para a pasta `inbox`. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/inbox*.
+   (*Obrigatório*) O caminho, em relação ao nó do usuário (/home/users/*username*), para usar o para `inbox` pasta. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/inbox*.
 
 * **Caminho dos itens enviados**
 
-   (*Obrigatório*) O caminho, relativo ao nó do usuário (/home/users/*nome de usuário*), a ser usado para a pasta `sent items`. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/sentitems* .
+   (*Obrigatório*) O caminho, em relação ao nó do usuário (/home/users/*username*), para usar o para `sent items` pasta. O caminho NÃO deve terminar com uma barra à direita &#39;/&#39;. O padrão é */mail/sentitems* .
 
 * **Anexos de suporte**
 
-   Se marcada, os usuários poderão adicionar anexos às suas mensagens. O padrão é *marcado*.
+   Se marcada, os usuários poderão adicionar anexos às suas mensagens. O padrão é *verificado*.
 
 * **Ativar mensagens em grupo**
 
@@ -113,31 +113,31 @@ Para adicionar uma nova configuração, selecione o ícone de adição &#39;**+*
 
 * **Tipo de anexo lista de bloqueios**
 
-   Uma  lista de bloqueios de extensões de nome de arquivo, com prefixo &#39;**.**&quot;, que será rejeitado pelo sistema. Se não incluir na lista de bloqueios, a extensão será permitida. As extensões podem ser adicionadas ou removidas usando os ícones &#39;**+**&#39; e &#39;**-**&#39;.
+   Uma  lista de bloqueios das extensões de nome de arquivo, com o prefixo &#39;**.**&quot;, que será rejeitado pelo sistema. Se não incluir na lista de bloqueios, a extensão será permitida. As extensões podem ser adicionadas ou removidas usando o &quot;**+**&#39; e &#39;**-**&#x200B;Ícones &#39;.
 
 * **Tipos de anexos permitidos**
 
-   **(*Ação necessária*)** Uma  lista de permissões de extensões de nome de arquivo, o oposto da lista de bloqueios. Para permitir todas as extensões de nome de arquivo, exceto aquelas incluir na lista de bloqueios, use o ícone &#39;**-**&#39; para remover a única entrada vazia.
+   **(*Ação necessária*)** Uma  lista de permissões de extensões de nome de arquivo, o oposto da lista de bloqueios. Para permitir todas as extensões de nome de arquivo, exceto aquelas incluir na lista de bloqueios, use o &quot;**-**&#x200B;ícone &#39; para remover a única entrada vazia.
 
 * **Seletor de serviços**
 
-   (*Obrigatório*) Um caminho absoluto (ponto final) pelo qual o serviço é chamado (um recurso virtual). A raiz do caminho escolhido deve ser uma incluída na configuração *Caminhos de execução* de configuração do OSGi config [ `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), como `/bin/`, `/apps/` e `/services/`. Para selecionar essa configuração para o recurso de mensagens de um site, esse terminal é fornecido como o valor **`Service selector`** para o `Message List and Compose Message components` (consulte [Recurso de Mensagem](/help/communities/configure-messaging.md)).
+   (*Obrigatório*) Um caminho absoluto (ponto final) pelo qual o serviço é chamado (um recurso virtual). A raiz do caminho escolhido deve ser uma incluída no *Caminhos de execução* configuração da configuração da configuração OSGi [ `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), como `/bin/`, `/apps/`e `/services/`. Para selecionar essa configuração para o recurso de mensagens de um site, esse terminal é fornecido como **`Service selector`** para a variável `Message List and Compose Message components` (consulte [Recurso de mensagem](/help/communities/configure-messaging.md)).
 
    O padrão é */bin/messaging* .
 
 * **de Lista de permissões de campo**
 
-   Use **Campos de Mensagem Lista de permissões**.
+   Use **Campos de mensagem Lista de permissões**.
 
 >[!CAUTION]
 >
->Cada vez que uma configuração `Messaging Operations Service` é aberta para edição, se `allowedAttachmentTypes.name` tiver sido removida, uma entrada vazia é adicionada novamente para tornar a propriedade configurável. Uma única entrada vazia desativa os anexos do arquivo.
+>Cada vez que uma `Messaging Operations Service` a configuração é aberta para edição, se `allowedAttachmentTypes.name` tiver sido removida, uma entrada vazia será adicionada novamente para tornar a propriedade configurável. Uma única entrada vazia desativa os anexos do arquivo.
 >
->Para permitir todas as extensões de nome de arquivo, exceto aquelas incluir na lista de bloqueios, use o ícone &#39;**-**&#39; para (novamente) remover a única entrada vazia antes de clicar em **Salvar**.
+>Para permitir todas as extensões de nome de arquivo, exceto aquelas incluir na lista de bloqueios, use o &quot;**-**&#x200B;ícone &#39; para (novamente) remover a única entrada vazia antes de clicar em **Salvar**.
 
 ## Mensagens em grupo {#group-messaging}
 
-Para permitir que usuários registrados enviem mensagens diretas em massa para grupos de usuários, certifique-se de **Ativar mensagens de grupo** nas duas instâncias a seguir da configuração **Serviços de Operação de Mensagens**:
+Para permitir que usuários registrados enviem mensagens diretas em massa para grupos de usuários, certifique-se de **Ativar mensagens em grupo** nos dois casos seguintes de **Serviços de Operação de Mensagens** configuração:
 
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console`
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging`
@@ -152,8 +152,8 @@ Para permitir que usuários registrados enviem mensagens diretas em massa para g
 
 ## Resolução de problemas {#troubleshooting}
 
-Uma maneira de solucionar problemas é ativar [mensagens de depuração no log.](/help/sites-administering/troubleshooting.md)
+Uma maneira de solucionar problemas é ativar [depurar mensagens no log.](/help/sites-administering/troubleshooting.md)
 
-Consulte também [Registradores e Escritores para Serviços Individuais](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
+Consulte também [Registradores e escritores para serviços individuais](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
 
 O pacote a ser monitorado é `com.adobe.cq.social.messaging`.

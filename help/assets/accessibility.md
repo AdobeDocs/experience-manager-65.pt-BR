@@ -85,7 +85,7 @@ As seguintes ações em [!DNL Assets] trabalhe com os atalhos de teclado listado
 | Exibição de coluna em [!DNL Assets] interface do usuário | Teclas de seta para cima e para baixo | Navegue até arquivos e pastas dentro da mesma hierarquia. |
 | Exibição de coluna em [!DNL Assets] interface do usuário | Teclas de seta para a esquerda e para a direita | Navegue até arquivos e pastas acima ou abaixo da pasta atual. |
 | Procurar pastas em [!DNL Assets] | `/` | Chame a pesquisa abrindo a caixa Omnisearch. |
-| [!DNL Assets] Console | &amp;grave; | Alternar painéis laterais |
+| [!DNL Assets] Console | &grave; | Alternar painéis laterais |
 | [!DNL Assets] Console | `Alt + 1` | Abra a árvore de conteúdo. |
 | [!DNL Assets] Console | `Alt + 2` | Abrir [!UICONTROL Navegação] painel esquerdo. |
 | [!DNL Assets] Console | `Alt + 3` | Exibir [!UICONTROL Linha do tempo] de um ativo selecionado. |

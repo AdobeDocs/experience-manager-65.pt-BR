@@ -1,13 +1,13 @@
 ---
 title: Como criar um Forms adaptável usando o esquema JSON?
 description: Saiba como criar formulários adaptáveis usando o esquema JSON como modelo de formulário. Você pode usar esquemas JSON existentes para criar formulários adaptáveis. Aprofunde-se com uma amostra de esquema JSON, pré-configure campos na definição do esquema JSON, limite valores aceitáveis para um componente de formulário adaptável e aprenda construções não suportadas.
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1448'
 ht-degree: 6%
 
 ---
@@ -23,7 +23,7 @@ A criação de um formulário adaptável usando um Esquema JSON como seu modelo 
 
 ## Uso de um esquema JSON como modelo de formulário  {#using-a-json-schema-as-form-model}
 
-[!DNL Adobe Experience Manager Forms] O suporta a criação de um formulário adaptável usando um Esquema JSON existente como o modelo de formulário. Esse Esquema JSON representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na organização. O Esquema JSON que você usa deve ser compatível com [v4 Specification](https://json-schema.org/draft-04/schema).
+[!DNL Adobe Experience Manager Forms] O suporta a criação de um formulário adaptável usando um Esquema JSON existente como o modelo de formulário. Esse Esquema JSON representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na organização. O Esquema JSON que você usa deve ser compatível com [especificações v4](https://json-schema.org/draft-04/schema).
 
 Os principais recursos do uso de um Esquema JSON são:
 
@@ -82,11 +82,11 @@ Esse mapeamento de elementos JSON com componentes de formulário adaptáveis é 
   </tr>
   <tr>
    <td>propriedade number<br /> </td>
-   <td>Campo numérico com subtipo definido para float<br /> </td>
+   <td>Campo numérico com subtipo definido para flutuante<br /> </td>
   </tr>
   <tr>
    <td>propriedade integer<br /> </td>
-   <td>Campo numérico com subtipo definido como integer<br /> </td>
+   <td>Campo numérico com subtipo definido como inteiro<br /> </td>
   </tr>
   <tr>
    <td>propriedade booleana<br /> </td>
@@ -107,16 +107,16 @@ Esse mapeamento de elementos JSON com componentes de formulário adaptáveis é 
 
 O Formulário adaptável usa as informações disponíveis no Esquema JSON para mapear cada campo gerado. Em especial:
 
-* A propriedade `title` serve como rótulo para os componentes de formulário adaptáveis.
-* A propriedade `description` é definida como descrição longa para um componente de formulário adaptável.
-* A propriedade `default` serve como valor inicial de um campo de formulário adaptável.
-* A propriedade `maxLength` é definida como atributo `maxlength` do componente de campo de texto.
-* As propriedades `minimum`, `maximum`, `exclusiveMinimum` e `exclusiveMaximum` são usadas para o componente de caixa numérica.
-* Para oferecer suporte ao intervalo para `DatePicker component` propriedades adicionais do Esquema JSON `minDate` e `maxDate` são fornecidas.
-* As propriedades `minItems` e `maxItems` são usadas para restringir o número de itens/campos que podem ser adicionados ou removidos de um componente do painel.
-* A propriedade `readOnly` define o atributo `readonly` de um componente de formulário adaptável.
-* A propriedade `required` marca o campo do formulário adaptável como obrigatório, enquanto no painel (onde o tipo é objeto), os dados JSON enviados finais têm campos com valor vazio correspondente a esse objeto.
-* A propriedade `pattern` é definida como o padrão de validação (expressão regular) na forma adaptável.
+* O `title` serve como rótulo para os componentes de formulário adaptáveis.
+* O `description` é definida como descrição longa para um componente de formulário adaptável.
+* O `default` serve como valor inicial de um campo de formulário adaptável.
+* O `maxLength` a propriedade é definida como `maxlength` do componente de campo de texto.
+* O `minimum`, `maximum`, `exclusiveMinimum`e `exclusiveMaximum` As propriedades são usadas para o componente de caixa numérica.
+* Para oferecer suporte ao intervalo de `DatePicker component` propriedades adicionais do Esquema JSON `minDate` e `maxDate` são fornecidas.
+* O `minItems` e `maxItems` As propriedades são usadas para restringir o número de itens/campos que podem ser adicionados ou removidos de um componente do painel.
+* O `readOnly` a propriedade define a variável `readonly` de um componente de formulário adaptável.
+* O `required` marca o campo do formulário adaptável como obrigatório, enquanto no painel (onde o tipo é objeto), os dados JSON enviados finais têm campos com valor vazio correspondente a esse objeto.
+* O `pattern` é definida como padrão de validação (expressão regular) na forma adaptável.
 * A extensão do arquivo Esquema JSON deve ser mantida .schema.json. Por exemplo, &lt;filename>.schema.json.
 
 ## Exemplo de esquema JSON {#sample-json-schema}
@@ -334,7 +334,7 @@ O exemplo acima define um registro de cliente, em que cada cliente tem um endere
 
 ## Pré-configuração de campos na definição do esquema JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo Esquema JSON para mapear para um componente de formulário adaptável personalizado. Um exemplo é listado abaixo:
+Você pode usar o **aem:afProperties** propriedade para pré-configurar o campo Esquema JSON para mapear para um componente de formulário adaptável personalizado. Um exemplo é listado abaixo:
 
 ```json
 {
@@ -356,7 +356,7 @@ Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo 
 
 ## Configurar scripts ou expressões para objetos de formulário  {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript é a linguagem de expressão de formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Você pode pré-configurar objetos de formulário para [avaliar uma expressão](adaptive-form-expressions.md) em um evento de formulário.
+JavaScript é a linguagem de expressão de formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. É possível pré-configurar objetos de formulário para [avaliar uma expressão](adaptive-form-expressions.md) em um evento de formulário.
 
 Use a propriedade aem:afproperties para pré-configurar expressões de formulário adaptável ou scripts para componentes de formulário adaptáveis. Por exemplo, quando o evento initialize é acionado, o código abaixo define o valor do campo phone e imprime um valor no log :
 
@@ -376,7 +376,7 @@ Use a propriedade aem:afproperties para pré-configurar expressões de formulár
 }
 ```
 
-Você deve ser um membro do [forms-power-user group](forms-groups-privileges-tasks.md) para configurar scripts ou expressões para o objeto de formulário. A tabela abaixo lista todos os eventos de script compatíveis com um componente de formulário adaptável.
+Você deve ser um membro do [grupo forms-power-user](forms-groups-privileges-tasks.md) para configurar scripts ou expressões para objetos de formulário. A tabela abaixo lista todos os eventos de script compatíveis com um componente de formulário adaptável.
 
 <table>
  <tbody>
@@ -524,7 +524,7 @@ Você deve ser um membro do [forms-power-user group](forms-groups-privileges-tas
    <td> </td>
   </tr>
   <tr>
-   <td>E-mail</td>
+   <td>Email</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -581,7 +581,7 @@ Você deve ser um membro do [forms-power-user group](forms-groups-privileges-tas
  </tbody>
 </table>
 
-Alguns exemplos de uso de eventos em um JSON estão ocultando um campo no evento initialize e configuram o valor de outro campo no evento commit de valor. Para obter informações detalhadas sobre a criação de expressões para os eventos de script, consulte [Adaptive Form Expression](adaptive-form-expressions.md).
+Alguns exemplos de uso de eventos em um JSON estão ocultando um campo no evento initialize e configuram o valor de outro campo no evento commit de valor. Para obter informações detalhadas sobre a criação de expressões para os eventos de script, consulte [Expressões de formulário adaptável](adaptive-form-expressions.md).
 
 Este é o exemplo de código JSON para exemplos mencionados anteriormente.
 

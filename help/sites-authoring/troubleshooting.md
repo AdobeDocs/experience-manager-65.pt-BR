@@ -1,5 +1,5 @@
 ---
-title: 'Solucionar problemas do AEM durante a criação  '
+title: Solucionar problemas do AEM durante a criação
 seo-title: Troubleshooting AEM when Authoring
 description: Alguns problemas que podem ocorrer quando você usa o AEM
 seo-description: Some issues that you might encounter when using AEM

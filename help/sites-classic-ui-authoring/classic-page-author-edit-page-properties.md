@@ -1,22 +1,21 @@
 ---
 title: Editar as propriedades da página
-seo-title: Editar as propriedades da página
+seo-title: Editing Page Properties
 description: As propriedades de uma página podem variar dependendo da natureza da página. Por exemplo, algumas páginas podem estar conectadas a uma live copy, enquanto outras não estão, e as informações da live copy estarão disponível conforme apropriado.
-seo-description: As propriedades de uma página podem variar dependendo da natureza da página. Por exemplo, algumas páginas podem estar conectadas a uma live copy, enquanto outras não estão, e as informações da live copy estarão disponível conforme apropriado.
+seo-description: Properties of a page can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '763'
 ht-degree: 96%
 
 ---
-
 
 # Editar as propriedades da página{#editing-page-properties}
 
@@ -82,7 +81,7 @@ As propriedades são distribuídas por várias guias:
 
    Permite inserir uma URL personalizada para esta página. Permite que você tenha uma URL mais curta e mais expressiva.
 
-   Por exemplo, se o URL personalizado estiver definido como w `elcome`para a página identificada pelo caminho / `v1.0/startpage`para o site h `ttp://example.com,` então h `ttp://example.com/welcome`será o URL personalizado de h `ttp://example.com/content/v1.0/startpage`
+   Por exemplo, se o URL personalizado estiver definido como w `elcome`para a página identificada pelo caminho / `v1.0/startpage`para o site h `ttp://example.com,` então h `ttp://example.com/welcome`seria a URL personalizada de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -134,7 +133,7 @@ As propriedades são distribuídas por várias guias:
 
    Especifique uma configuração de exportação.
 
-### Miniatura   {#thumbnail}
+### Miniatura  {#thumbnail}
 
 * **Miniatura da página**
 
@@ -144,7 +143,7 @@ As propriedades são distribuídas por várias guias:
 
       Gere uma visualização da página para usar como miniatura.
 
-   * **Carregar imagem**
+   * **Fazer upload de imagem**
 
       Carregue uma imagem para usar como miniatura.
 
@@ -160,7 +159,7 @@ As propriedades são distribuídas por várias guias:
 
    Selecione uma [Marca para especificar um escopo de direcionamento](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Permissões    {#permissions}
+### Permissões   {#permissions}
 
 * **Permissões** (interface otimizada para toque)
 
@@ -172,13 +171,13 @@ As propriedades são distribuídas por várias guias:
 
    Defina as propriedades para uma página do Blueprint no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas no Live Copy.
 
-### Live Copy   {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Live Copy**
 
    Defina as propriedades para uma página de Live Copy no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
-### Estrutura do site   {#site-structure}
+### Estrutura do site  {#site-structure}
 
 * Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de inscrição**, a **Página offline**, entre outras.
 
@@ -195,4 +194,3 @@ As propriedades da página definem as várias propriedades da página, como tít
    Isso abre uma janela com várias abas.
 
 1. Faça as alterações necessárias e clique em **OK** para salvar.
-

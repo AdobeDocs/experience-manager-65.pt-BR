@@ -1,10 +1,11 @@
 ---
 title: Noções básicas sobre criação de aprendizado
 description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS sem cabeçalho usando Fragmentos de conteúdo.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1693'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -263,6 +264,6 @@ Agora que você aprendeu o básico, o próximo passo é [Saiba mais sobre refer�
 * Guias de introdução
    * [Criação de uma pasta de ativos sem cabeçalho Guia de início rápido](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
-* [jornada do AEM Headless Content Architect](/help/journey-headless/architect/overview.md)
+* [Jornada do arquiteto de conteúdo do AEM Headless](/help/journey-headless/architect/overview.md)
 
 * [jornada de tradução sem cabeçalho AEM](/help/journey-headless/translation/overview.md)

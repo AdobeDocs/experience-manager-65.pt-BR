@@ -1,8 +1,8 @@
 ---
 title: Replicação
-seo-title: Replicação
+seo-title: Replication
 description: Saiba como configurar e monitorar agentes de replicação no AEM.
-seo-description: Saiba como configurar e monitorar agentes de replicação no AEM.
+seo-description: Learn how to configure and monitor replication agents in AEM.
 uuid: 6c0bc2fe-523a-401f-8d93-e5795f2e88b9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,12 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
-feature: Configuração
+feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '3437'
-ht-degree: 2%
+source-wordcount: '3425'
+ht-degree: 4%
 
 ---
 
@@ -27,22 +27,22 @@ Os agentes de replicação são fundamentais para o Adobe Experience Manager (AE
 * Liberar explicitamente o conteúdo do cache do Dispatcher.
 * Retorne a entrada do usuário (por exemplo, a entrada de formulário) do ambiente de publicação para o ambiente do autor (sob controle do ambiente do autor).
 
-As solicitações são [enfileiradas](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler) para o agente apropriado para processamento.
+As solicitações são [em fila](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler) ao agente de transformação adequado.
 
 >[!NOTE]
 >
 >Os dados do usuário (usuários, grupos de usuários e perfis de usuário) não são replicados entre as instâncias de autor e publicação.
 >
->Para várias instâncias de publicação, os dados do usuário são distribuídos pelo Sling quando [User Synchronization](/help/sites-administering/sync.md) está ativado.
+>Para várias instâncias de publicação, os dados do usuário são distribuídos pelo Sling quando [Sincronização de usuários](/help/sites-administering/sync.md) estiver ativado.
 
 ## Replicação do autor para publicação {#replicating-from-author-to-publish}
 
 A replicação para uma instância de publicação ou dispatcher ocorre em várias etapas:
 
-* o autor solicita que certos conteúdos sejam publicados (ativados); isso pode ser iniciado por uma solicitação manual ou por acionadores automáticos pré-configurados.
+* o autor solicita que certos conteúdos sejam publicados (ativados); isso pode ser iniciado por uma solicitação manual ou por acionadores automáticos que foram pré-configurados.
 * a solicitação é passada para o agente de replicação padrão apropriado; um ambiente pode ter vários agentes padrão que sempre serão selecionados para tais ações.
 * o agente de replicação &quot;compacta&quot; o conteúdo e o coloca na fila de replicação.
-* na guia Sites , o [indicador de status colorido](/help/sites-authoring/publishing-pages.md#determiningpagepublicationstatus) é definido para as páginas individuais.
+* na guia Sites , o [indicador de status colorido](/help/sites-authoring/publishing-pages.md#determiningpagepublicationstatus) é definido para páginas individuais.
 * o conteúdo é removido da fila e transportado para o ambiente de publicação usando o protocolo configurado; geralmente, isso é HTTP.
 * um servlet no ambiente de publicação recebe a solicitação e publica o conteúdo recebido; o servlet padrão é `https://localhost:4503/bin/receive`.
 
@@ -60,16 +60,16 @@ A replicação inversa usa um agente no ambiente de publicação que faz referê
 
 Em outros casos, como para recursos do Communities (por exemplo, fóruns, blogs, comentários e revisões), a quantidade de conteúdo gerado pelo usuário (UGC) que está sendo inserida no ambiente de publicação é difícil de sincronizar com eficiência entre instâncias AEM usando replicação.
 
-AEM [Communities](/help/communities/overview.md) nunca usa replicação para UGC. Em vez disso, a implantação do Communities requer um armazenamento comum para UGC (consulte [Community Content Storage](/help/communities/working-with-srp.md)).
+AEM [Comunidades](/help/communities/overview.md) O nunca usa replicação para UGC. Em vez disso, a implantação do Communities requer um armazenamento comum para UGC (consulte [Armazenamento de conteúdo da comunidade](/help/communities/working-with-srp.md)).
 
 ### Replicação - pronta para uso {#replication-out-of-the-box}
 
 O site we-retail incluído em uma instalação padrão de AEM pode ser usado para ilustrar a replicação.
 
-Para seguir este exemplo e usar os agentes de replicação padrão, você precisa [Instalar AEM](/help/sites-deploying/deploy.md) com:
+Para seguir este exemplo e usar os agentes de replicação padrão, é necessário [Instalar AEM](/help/sites-deploying/deploy.md) com:
 
-* o ambiente do autor na porta `4502`
-* o ambiente de publicação na porta `4503`
+* o ambiente do autor no porto `4502`
+* o ambiente de publicação no porto `4503`
 
 >[!NOTE]
 >
@@ -77,31 +77,28 @@ Para seguir este exemplo e usar os agentes de replicação padrão, você precis
 >
 >* Agentes do autor : Agente padrão (publicar)
 >
->
-Eficazmente desativado por padrão (a partir do AEM 6.1) :
+>Eficazmente desativado por padrão (a partir do AEM 6.1) :
 >
 >* Agentes do autor : Agente de replicação inversa (publish_reverse)
 >* Agentes na publicação : Replicação reversa (caixa de saída)
-
 >
->
-Para verificar o status do agente ou da fila, use o console **Ferramentas**.
->Consulte [Monitorando seus agentes de replicação](#monitoring-your-replication-agents).
+>Para verificar o status do agente ou da fila, use a função **Ferramentas** console.
+>Consulte [Monitorar os agentes de replicação](#monitoring-your-replication-agents).
 
 #### Replicação (Autor para publicar) {#replication-author-to-publish}
 
 1. Navegue até a página de suporte no ambiente de criação.
    **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
 1. Edite a página para adicionar novo texto.
-1. **Ative a** página para publicar as alterações.
+1. **Ativar página** para publicar as alterações.
 1. Abra a página de suporte no ambiente de publicação:
    **https://localhost:4503/content/we-retail/us/en/experience.html**
 1. Agora é possível ver as alterações inseridas no autor.
 
 Essa replicação é acionada do ambiente de criação pelo:
 
-* **Agente padrão (publicação)**
-Esse agente replica o conteúdo na instância de publicação padrão.
+* **Agente padrão (publicar)**
+Esse agente replica conteúdo na instância de publicação padrão.
 Os detalhes disso (configuração e logs) podem ser acessados no console Ferramentas do ambiente do autor; ou:
 
    `https://localhost:4502/etc/replication/agents.author/publish.html`.
@@ -110,18 +107,16 @@ Os detalhes disso (configuração e logs) podem ser acessados no console Ferrame
 
 Os seguintes agentes estão disponíveis em uma instalação padrão de AEM:
 
-* [](#replication-author-to-publish)
-Agente padrãoUsado para replicar do autor para publicar.
+* [Agente padrão](#replication-author-to-publish)
+Usado para replicar do autor para publicar.
 
-* Liberação do Dispatcher
-Isso é usado para gerenciar o cache do Dispatcher. Consulte [Invalidar o cache do Dispatcher do ambiente de criação](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) e [Invalidar o cache do Dispatcher de uma instância de publicação](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) para obter mais informações.
+* Liberação do Dispatcher É usada para gerenciar o cache do Dispatcher. Consulte [Invalidar o cache do Dispatcher no ambiente de criação](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) e [Invalidar o cache do Dispatcher de uma Instância de Publicação](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) para obter mais informações.
 
-* [Reverse ](#reverse-replication-publish-to-author)
-ReplicationUsed for replicating from publish to author. A replicação inversa não é usada para recursos do Communities, como fóruns, blogs e comentários. Ela é efetivamente desativada, pois a caixa de saída não está ativada. O uso da replicação inversa exigiria configuração personalizada.
+* [Replicação inversa](#reverse-replication-publish-to-author)
+Usado para replicar da publicação para o autor. A replicação inversa não é usada para recursos do Communities, como fóruns, blogs e comentários. Ela é efetivamente desativada, pois a caixa de saída não está ativada. O uso da replicação inversa exigiria configuração personalizada.
 
-* Agente estático
-Este é um &quot;Agente que armazena uma representação estática de um nó no sistema de arquivos&quot;.
-Por exemplo, com as configurações padrão, as páginas de conteúdo e os ativos dam são armazenados em `/tmp`, como HTML ou no formato de ativo apropriado. Consulte as guias `Settings` e `Rules` para obter a configuração.
+* Agente estático É um &quot;Agente que armazena uma representação estática de um nó no sistema de arquivos&quot;.
+Por exemplo, com as configurações padrão, as páginas de conteúdo e os ativos dam são armazenados em `/tmp`, como HTML ou o formato de ativo apropriado. Consulte a `Settings` e `Rules` para a configuração.
 Isso foi solicitado para que, quando a página for solicitada diretamente do servidor de aplicativos, o conteúdo possa ser visualizado. Este é um agente especializado e (provavelmente) não será necessário para a maioria das instâncias.
 
 ## Agentes de Replicação - Parâmetros de Configuração {#replication-agents-configuration-parameters}
@@ -142,18 +137,18 @@ Ao configurar um agente de replicação no console Ferramentas , quatro guias es
 
    Indica se o agente de replicação está ativado no momento.
 
-   Quando o agente for **ativado** a fila será exibida como:
+   Quando o agente é **ativado** a fila será exibida como:
 
-   * **** Ativar quando os itens estão sendo processados.
-   * **** Em branco quando a fila está vazia.
-   * **** Bloqueado quando os itens estão na fila, mas não pode ser processado; por exemplo, quando a fila de recebimento está desativada.
+   * **Ativo** quando os itens estão sendo processados.
+   * **Inativo** quando a fila estiver vazia.
+   * **Bloqueio** quando os itens estão na fila, mas não podem ser processados; por exemplo, quando a fila de recebimento está desativada.
 
 * **Tipo de serialização**
 
    O tipo de serialização:
 
    * **Padrão**: Defina se o agente deve ser selecionado automaticamente.
-   * **Liberação** do Dispatcher: Selecione essa opção se o agente for usado para liberar o cache do dispatcher.
+   * **Liberação do Dispatcher**: Selecione essa opção se o agente for usado para liberar o cache do dispatcher.
 
 * **Tentar novamente o atraso**
 
@@ -168,15 +163,15 @@ Ao configurar um agente de replicação no console Ferramentas , quatro guias es
    * coletar e empacotar o conteúdo do ambiente de criação
    * criar e gravar o conteúdo no ambiente de publicação
 
-   Deixe este campo vazio para usar a conta de usuário do sistema (a conta definida no sling como o usuário administrador; por padrão, esse valor é `admin`).
+   Deixe este campo vazio para usar a conta de usuário do sistema (a conta definida no sling como o usuário administrador; por padrão, isso é `admin`).
 
    >[!CAUTION]
    >
-   >Para um agente no ambiente de autor, essa conta *must* tem acesso de leitura a todos os caminhos que você deseja replicar.
+   >Para um agente no ambiente de criação, esta conta *must* tenha acesso de leitura a todos os caminhos que deseja replicar.
 
    >[!CAUTION]
    >
-   >Para um agente no ambiente de publicação, essa conta *deve* ter o acesso de criação/gravação necessário para replicar o conteúdo.
+   >Para um agente no ambiente de publicação, essa conta *must* ter o acesso de criação/gravação necessário para replicar o conteúdo.
 
    >[!NOTE]
    >
@@ -198,7 +193,7 @@ Ao configurar um agente de replicação no console Ferramentas , quatro guias es
 
 * **Atualização do alias**
 
-   Selecionar essa opção ativa solicitações de invalidação de alias ou caminho personalizado para o Dispatcher. Além disso, consulte [Configurando um Agente de Liberação do Dispatcher](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
+   Selecionar essa opção ativa solicitações de invalidação de alias ou caminho personalizado para o Dispatcher. Além disso, consulte [Configurar um agente de limpeza do Dispatcher](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
 
 #### Transporte {#transport}
 
@@ -213,7 +208,7 @@ Ao configurar um agente de replicação no console Ferramentas , quatro guias es
 
    O protocolo especificado aqui (HTTP ou HTTPS) determinará o método de transporte.
 
-   Para agentes de Liberação do Dispatcher, a propriedade URI será usada somente se você usar entradas virtualhost baseadas em caminho para diferenciar entre farms, use esse campo para direcionar o farm para invalidar. Por exemplo, o farm nº 1 tem um host virtual de `www.mysite.com/path1/*` e o farm nº 2 tem um host virtual de `www.mysite.com/path2/*`. Você pode usar um URL de `/path1/invalidate.cache` para direcionar o primeiro farm e `/path2/invalidate.cache` para direcionar o segundo farm.
+   Para agentes de Liberação do Dispatcher, a propriedade URI será usada somente se você usar entradas virtualhost baseadas em caminho para diferenciar entre farms, use esse campo para direcionar o farm para invalidar. Por exemplo, o farm nº 1 tem um host virtual de `www.mysite.com/path1/*`, e o farm nº 2 tem um host virtual de `www.mysite.com/path2/*`. Você pode usar um URL de `/path1/invalidate.cache` para direcionar o primeiro farm, e `/path2/invalidate.cache` para direcionar o segundo farm.
 
 * **Usuário**
 
@@ -354,30 +349,29 @@ Essas configurações são usadas para definir acionadores para replicação aut
 
 ## Configurar seus agentes de replicação {#configuring-your-replication-agents}
 
-Para obter informações sobre como conectar agentes de replicação à instância de publicação usando MSSL, consulte [Replicando Usando SSL Mútuo](/help/sites-deploying/mssl-replication.md).
+Para obter informações sobre como conectar agentes de replicação à instância de publicação usando MSSL, consulte [Replicação usando SSL mútuo](/help/sites-deploying/mssl-replication.md).
 
 ### Configurar os agentes de replicação no ambiente de criação {#configuring-your-replication-agents-from-the-author-environment}
 
-Na guia Ferramentas no ambiente de criação, é possível configurar agentes de replicação que residem no ambiente de criação (**Agentes no autor**) ou no ambiente de publicação (**Agentes no publish**). Os procedimentos a seguir ilustram a configuração de um agente para o ambiente do autor, mas podem ser usados para ambos.
+Na guia Ferramentas no ambiente de criação, é possível configurar agentes de replicação que residam no ambiente de criação (**Agentes do autor**) ou o ambiente de publicação (**Agentes na publicação**). Os procedimentos a seguir ilustram a configuração de um agente para o ambiente do autor, mas podem ser usados para ambos.
 
 >[!NOTE]
 >
 >Quando um dispatcher lida com solicitações HTTP para instâncias de autor ou publicação, a solicitação HTTP do agente de replicação deve incluir o cabeçalho PATH. Além do procedimento a seguir, você deve adicionar o cabeçalho PATH à lista de dispatchers dos cabeçalhos do cliente. (Consulte [/clientheaders (Cabeçalhos do Cliente)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 
-
-1. Acesse a guia **Ferramentas** no AEM.
+1. Acesse o **Ferramentas** em AEM.
 1. Clique em **Replicação** (painel esquerdo para abrir a pasta).
-1. Clique duas vezes em **Agents on author** (no painel esquerdo ou direito).
+1. Clique duas vezes **Agentes do autor** (painel esquerdo ou direito).
 1. Clique no nome do agente apropriado (que é um link) para mostrar informações detalhadas sobre esse agente.
 1. Clique em **Editar** para abrir a caixa de diálogo de configuração:
 
    ![chlimage_1-22](assets/chlimage_1-22.png)
 
-1. Os valores fornecidos devem ser suficientes para uma instalação padrão. Se fizer alterações, clique em **OK** para salvá-las (consulte [Agentes de Replicação - Parâmetros de Configuração](#replication-agents-configuration-parameters) para obter mais detalhes sobre os parâmetros individuais).
+1. Os valores fornecidos devem ser suficientes para uma instalação padrão. Se você fizer alterações, clique em **OK** para salvá-los (consulte [Agentes de Replicação - Parâmetros de Configuração](#replication-agents-configuration-parameters) para obter mais detalhes sobre os parâmetros individuais).
 
 >[!NOTE]
 >
->Uma instalação padrão de AEM especifica `admin` como usuário para credenciais de transporte dentro dos agentes de replicação padrão.
+>Uma instalação padrão de AEM especifica `admin` como usuário para credenciais de transporte nos agentes de replicação padrão.
 >
 >Isso deve ser alterado para uma conta de usuário de replicação específica do site com os privilégios para replicar os caminhos necessários.
 
@@ -385,20 +379,20 @@ Na guia Ferramentas no ambiente de criação, é possível configurar agentes de
 
 A replicação inversa é usada para gerar o conteúdo do usuário em uma instância de publicação de volta a uma instância do autor. Isso é comumente usado para recursos como pesquisas e formulários de registro.
 
-Por motivos de segurança, a maioria das topologias de rede não permite conexões *de* a &quot;Zona desmilitarizada&quot; (uma subrede que expõe os serviços externos a uma rede não confiável, como a Internet).
+Por motivos de segurança, a maioria das topologias de rede não permite conexões *from* a &quot;Zona desmilitarizada&quot; (uma subrede que expõe os serviços externos a uma rede não confiável, como a Internet).
 
 Como o ambiente de publicação geralmente está no DMZ, para obter conteúdo de volta ao ambiente do autor, a conexão deve ser iniciada a partir da instância do autor. Isso é feito com:
 
-* uma *caixa de saída* no ambiente de publicação, onde o conteúdo é colocado.
+* um *caixa de saída* no ambiente de publicação, onde o conteúdo é colocado.
 * um agente (publicar) no ambiente de criação que consulta periodicamente a caixa de saída para novo conteúdo.
 
 >[!NOTE]
 >
->Para AEM [Communities](/help/communities/overview.md), a replicação não é usada para o conteúdo gerado pelo usuário em uma instância de publicação. Consulte [Armazenamento de conteúdo da comunidade](/help/communities/working-with-srp.md).
+>Para AEM [Comunidades](/help/communities/overview.md), a replicação não é usada para conteúdo gerado pelo usuário em uma instância de publicação. Consulte [Armazenamento de conteúdo da comunidade](/help/communities/working-with-srp.md).
 
 Para fazer isso, você precisa:
 
-**Um agente de replicação inversa no** ambiente de criação. Ele atua como o componente ativo para coletar informações da caixa de saída no ambiente de publicação:
+**Um agente de replicação inversa no ambiente de criação** Funciona como o componente ativo para coletar informações da caixa de saída no ambiente de publicação:
 
 Se quiser usar a replicação inversa, verifique se esse agente está ativado.
 
@@ -414,28 +408,28 @@ Se quiser usar a replicação inversa, verifique se esse agente está ativado.
 >
 >Somente o conteúdo é replicado - os dados do usuário não são (usuários, grupos de usuários e perfis de usuário).
 >
->Para sincronizar os dados do usuário em várias instâncias de publicação, ative [Sincronização do usuário](/help/sites-administering/sync.md).
+>Para sincronizar os dados do usuário em várias instâncias de publicação, ative [Sincronização de usuários](/help/sites-administering/sync.md).
 
 Após a instalação, um agente padrão já está configurado para replicação de conteúdo em uma instância de publicação em execução na porta 4503 do host local.
 
 Para configurar a replicação de conteúdo para uma instância de publicação adicional, você precisa criar e configurar um novo agente de replicação:
 
-1. Abra a guia **Ferramentas** no AEM.
-1. Selecione **Replicação** e **Agentes no autor** no painel esquerdo.
-1. Selecione **Novo...**.
-1. Defina o **Título** e **Nome**, em seguida selecione **Agente de Replicação**.
+1. Abra o **Ferramentas** em AEM.
+1. Selecionar **Replicação**, em seguida **Agentes do autor** no painel esquerdo.
+1. Selecionar **Novo...**.
+1. Defina as **Título** e **Nome**, em seguida selecione **Agente de replicação**.
 1. Clique em **Criar** para criar o novo agente.
 1. Clique duas vezes no novo item de agente para abrir o painel de configuração.
-1. Clique em **Editar** - a caixa de diálogo **Configurações do Agente** será aberta - o **Tipo de Serialização** já está definido como Padrão, isso deve permanecer assim.
+1. Clique em **Editar** - o **Configurações do agente** será aberta - a caixa de diálogo **Tipo de serialização** já estiver definido como Padrão, deve permanecer assim.
 
-   * Na guia **Settings**:
+   * No **Configurações** guia :
 
       * Ativar **Ativado**.
-      * Insira um **Description**.
-      * Defina o **Atraso de repetição** para `60000`.
+      * Insira um **Descrição**.
+      * Defina as **Retardo de tentativa** para `60000`.
 
-      * Deixe **Serialization Type** como `Default`.
-   * Na guia **Transporte**:
+      * Deixe o **Tipo de serialização** as `Default`.
+   * No **Transportes** guia :
 
       * Insira o URI necessário para a nova instância de publicação; por exemplo,
          `https://localhost:4504/bin/receive`.
@@ -450,38 +444,37 @@ Em seguida, você pode testar a operação atualizando e publicando uma página 
 
 As atualizações serão exibidas em todas as instâncias de publicação configuradas como acima.
 
-Se encontrar algum problema, você pode verificar os logs na instância do autor. Dependendo do nível de detalhes necessário, você também pode definir o **Nível de Log** como `Debug` usando a caixa de diálogo **Configurações do Agente** como acima.
+Se encontrar algum problema, você pode verificar os logs na instância do autor. Dependendo do nível de detalhes necessário, também é possível definir a variável **Nível de log** para `Debug` usando o **Configurações do agente** como acima.
 
 >[!NOTE]
 >
->Isso pode ser combinado com o uso do [Agent User Id](#agentuserid) para selecionar conteúdo diferente para replicação nos ambientes de publicação individuais. Para cada ambiente de publicação:
+>Isso pode ser combinado com o uso da variável [ID de usuário do agente](#agentuserid) para selecionar conteúdo diferente para replicar nos ambientes de publicação individuais. Para cada ambiente de publicação:
 >
 >1. Configure um agente de replicação para replicar para esse ambiente de publicação.
 >1. Configurar uma conta de usuário; com os direitos de acesso necessários para ler o conteúdo que será replicado para esse ambiente de publicação específico.
->1. Atribua a conta de usuário como o **Agent User Id** para o agente de replicação.
+>1. Atribua a conta de usuário como a **ID de usuário do agente** para o agente de replicação.
 
 >
-
 
 
 ### Configurar um agente de limpeza do Dispatcher {#configuring-a-dispatcher-flush-agent}
 
 Os agentes padrão são incluídos na instalação. No entanto, determinada configuração ainda é necessária e o mesmo se aplica se você estiver definindo um novo agente:
 
-1. Abra a guia **Ferramentas** no AEM.
+1. Abra o **Ferramentas** em AEM.
 1. Clique em **Implantação**.
-1. Selecione **Replication** e **Agents on publish**.
-1. Clique duas vezes no item **Dispatcher Flush** para abrir a visão geral.
-1. Clique em **Editar** - a caixa de diálogo **Configurações do Agente** abrirá:
+1. Selecionar **Replicação** e depois **Agentes na publicação**.
+1. Clique duas vezes no **Liberação do Dispatcher** para abrir a visão geral.
+1. Clique em **Editar** - o **Configurações do agente** será aberta:
 
-   * Na guia **Settings**:
+   * No **Configurações** guia :
 
       * Ativar **Ativado**.
-      * Insira um **Description**.
-      * Deixe o **Tipo de serialização** como `Dispatcher Flush`, ou defina-o como tal se estiver criando um novo agente.
+      * Insira um **Descrição**.
+      * Deixe o **Tipo de serialização** as `Dispatcher Flush`ou defina como tal se estiver criando um novo agente.
 
-      * (opcional) Selecione **Alias update** para ativar solicitações de invalidação de alias ou caminho personalizado para o Dispatcher.
-   * Na guia **Transporte**:
+      * (opcional) Selecione **Atualização de alias** para habilitar solicitações de invalidação de alias ou caminho personalizado para o Dispatcher.
+   * No **Transportes** guia :
 
       * Insira o URI necessário para a nova instância de publicação; por exemplo,
          `https://localhost:80/dispatcher/invalidate.cache`.
@@ -489,20 +482,20 @@ Os agentes padrão são incluídos na instalação. No entanto, determinada conf
       * Insira a conta de usuário específica do site usada para replicação.
       * Você pode configurar outros parâmetros, conforme necessário.
 
-   Para agentes de Liberação do Dispatcher, a propriedade URI será usada somente se você usar entradas virtualhost baseadas em caminho para diferenciar entre farms, use esse campo para direcionar o farm para invalidar. Por exemplo, o farm nº 1 tem um host virtual de `www.mysite.com/path1/*` e o farm nº 2 tem um host virtual de `www.mysite.com/path2/*`. Você pode usar um URL de `/path1/invalidate.cache` para direcionar o primeiro farm e `/path2/invalidate.cache` para direcionar o segundo farm.
+   Para agentes de Liberação do Dispatcher, a propriedade URI será usada somente se você usar entradas virtualhost baseadas em caminho para diferenciar entre farms, use esse campo para direcionar o farm para invalidar. Por exemplo, o farm nº 1 tem um host virtual de `www.mysite.com/path1/*`, e o farm nº 2 tem um host virtual de `www.mysite.com/path2/*`. Você pode usar um URL de `/path1/invalidate.cache` para direcionar o primeiro farm, e `/path2/invalidate.cache` para direcionar o segundo farm.
 
    >[!NOTE]
    >
-   >Se tiver instalado AEM em um contexto diferente do contexto padrão recomendado, será necessário configurar o [HTTP Headers](#extended) na guia **Extended**.
+   >Se tiver instalado o AEM em um contexto diferente do contexto padrão recomendado, será necessário configurar o [Cabeçalhos HTTP](#extended) no **Estendido** guia .
 
 1. Clique em **OK** para salvar as alterações.
-1. Retorne à guia **Tools**, daqui você pode **Ativar** o agente **Dispatcher Flush** (**Agentes em publicar**).
+1. Retorne ao **Ferramentas** guia , daqui você pode **Ativar** o **Liberação do Dispatcher** agente (**Agentes na publicação**).
 
-O agente de replicação **Dispatcher Flush** não está ativo no autor. Você pode acessar a mesma página no ambiente de publicação usando o URI equivalente; por exemplo, `https://localhost:4503/etc/replication/agents.publish/flush.html`.
+O **Liberação do Dispatcher** o agente de replicação não está ativo no autor. Você pode acessar a mesma página no ambiente de publicação usando o URI equivalente; por exemplo, `https://localhost:4503/etc/replication/agents.publish/flush.html`.
 
 ### Controlando o acesso aos agentes de replicação {#controlling-access-to-replication-agents}
 
-O acesso às páginas usadas para configurar os agentes de replicação pode ser controlado usando permissões de página de usuário e/ou grupo no nó `etc/replication`.
+O acesso às páginas usadas para configurar os agentes de replicação pode ser controlado usando permissões de página de usuário e/ou grupo na `etc/replication` nó .
 
 >[!NOTE]
 >
@@ -512,17 +505,17 @@ O acesso às páginas usadas para configurar os agentes de replicação pode ser
 
 >[!NOTE]
 >
->A criação de agentes de replicação só é compatível no local do repositório `/etc/replication`. Isso é necessário para que as ACLs associadas sejam manipuladas adequadamente. A criação de um agente de replicação em outro local da árvore pode levar ao acesso não autorizado.
+>A criação de agentes de replicação só é compatível com o `/etc/replication` local do repositório. Isso é necessário para que as ACLs associadas sejam manipuladas adequadamente. A criação de um agente de replicação em outro local da árvore pode levar ao acesso não autorizado.
 
 Vários parâmetros dos agentes de replicação podem ser configurados usando o CRXDE Lite.
 
-Se você navegar até `/etc/replication`, poderá ver os três nós a seguir:
+Se você navegar para `/etc/replication` você pode ver os três nós a seguir:
 
 * `agents.author`
 * `agents.publish`
 * `treeactivation`
 
-Os dois `agents` contêm informações de configuração sobre o ambiente apropriado e só estão ativos quando esse ambiente está em execução. Por exemplo, `agents.publish` só será usado no ambiente de publicação. A captura de tela a seguir mostra o agente de publicação no ambiente do autor, conforme incluído AEM WCM:
+Os dois `agents` mantenha as informações de configuração sobre o ambiente apropriado e elas só estarão ativas quando esse ambiente estiver em execução. Por exemplo, `agents.publish` serão usadas somente no ambiente de publicação. A captura de tela a seguir mostra o agente de publicação no ambiente do autor, conforme incluído AEM WCM:
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -530,9 +523,9 @@ Os dois `agents` contêm informações de configuração sobre o ambiente apropr
 
 Para monitorar um agente de replicação:
 
-1. Acesse a guia **Ferramentas** no AEM.
+1. Acesse o **Ferramentas** em AEM.
 1. Clique em **Replicação**.
-1. Clique duas vezes no link para agentes do ambiente apropriado (no painel esquerdo ou direito); por exemplo, **Agentes no autor**.
+1. Clique duas vezes no link para agentes do ambiente apropriado (no painel esquerdo ou direito); por exemplo **Agentes do autor**.
 
    A janela resultante mostra uma visão geral de todos os agentes de replicação para o ambiente do autor, incluindo o target e o status.
 
@@ -546,11 +539,11 @@ Para monitorar um agente de replicação:
    * Consulte o target de qualquer replicação.
    * Veja se a fila de replicação está ativa no momento (habilitada).
    * Veja se há algum item na fila.
-   * **** Refreshor  **** Clearto atualize a exibição de entradas da fila; isso ajuda você a ver os itens entrando e deixando a fila.
+   * **Atualizar** ou **Limpar** para atualizar a exibição de entradas da fila; isso ajuda você a ver os itens entrando e deixando a fila.
 
-   * **Exibir** Logon para acessar o log de qualquer ação pelo agente de replicação.
-   * **Testar** conexão com a instância de destino.
-   * **Forçar** Repetição em qualquer item da fila, se necessário.
+   * **Exibir registro** para acessar o log de quaisquer ações pelo agente de replicação.
+   * **Testar conexão** para a instância do target.
+   * **Forçar nova tentativa** em qualquer item da fila, se necessário.
 
    >[!CAUTION]
    >
@@ -576,11 +569,11 @@ O editor descompactará todos os itens, salvá-los e relatará ao autor.
 ### Configuração da Replicação em Lote {#configuring-batch-replication}
 
 1. Ir para `http://serveraddress:serverport/siteadmin`
-1. Pressione o ícone **[!UICONTROL Ferramentas]** no lado superior da tela
-1. No painel de navegação esquerdo, vá para **[!UICONTROL Replication - Agents on Author]** e clique duas vezes em **[!UICONTROL Default Agent]**.
+1. Pressione a tecla **[!UICONTROL Ferramentas]** ícone no lado superior do ecrã
+1. No painel de navegação esquerdo, vá para **[!UICONTROL Replicação - Agentes no Autor]** e clique duas vezes **[!UICONTROL Agente padrão]**.
    * Você também pode acessar o agente de replicação de publicação padrão indo diretamente para `http://serveraddress:serverport/etc/replication/agents.author/publish.html`
-1. Pressione o botão **[!UICONTROL Edit]** acima da fila de replicação.
-1. Na janela a seguir, vá para a guia **[!UICONTROL Batch]**:
+1. Pressione a tecla **[!UICONTROL Editar]** acima da fila de replicação.
+1. Na janela a seguir, acesse o **[!UICONTROL Em lote]** guia :
    ![batchreplication](assets/batchreplication.png)
 1. Configure o agente.
 
@@ -592,4 +585,4 @@ O editor descompactará todos os itens, salvá-los e relatará ao autor.
 
 ## Recursos adicionais {#additional-resources}
 
-Para obter detalhes sobre a solução de problemas, leia a página [Solução de problemas de replicação](/help/sites-deploying/troubleshoot-rep.md).
+Para obter detalhes sobre a solução de problemas, leia a seção [Solução de problemas de replicação](/help/sites-deploying/troubleshoot-rep.md) página.

@@ -5,7 +5,7 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: 6c75af3957c319c38177cd62c90e781a982ba91b
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 1%
+ht-degree: 77%
 
 ---
 
@@ -13,30 +13,30 @@ ht-degree: 1%
 
 Saiba como usar AEM API REST do Assets para gerenciar Fragmentos de conteúdo e a API GraphQL para entrega sem interface do conteúdo do Fragmento de conteúdo.
 
-## O que são APIs REST de GraphQL e Assets? {#what-are-the-apis}
+## O que são as APIs REST do GraphQL e do Assets? {#what-are-the-apis}
 
-[Agora que você criou alguns fragmentos de conteúdo,](create-content-fragment.md) você pode usar AEM APIs para entregá-las sem periféricos.
+[Agora que criou alguns fragmentos de conteúdo,](create-content-fragment.md) você pode usar as APIs do AEM para entregá-los de forma headless.
 
-* [A API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) O permite criar solicitações para acessar e fornecer Fragmentos de conteúdo.
-   * Para usar isso, [os endpoints precisam ser definidos e ativados no AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)e, se necessário, a variável [Interface GraphiQL instalada](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
-* [A API REST do Assets](/help/assets/assets-api-content-fragments.md) O permite criar e modificar Fragmentos de conteúdo (e outros ativos).
+* [A API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) permite criar solicitações para acessar e fornecer Fragmentos de conteúdo.
+   * Para usar isso, [os endpoints precisam ser definidos e ativados no AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) e, se necessário, a [Interface GraphiQL precisa ser instalada](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
+* [A API REST do Assets](/help/assets/assets-api-content-fragments.md) permite criar e modificar Fragmentos de conteúdo (e outros ativos).
 
-O restante deste guia terá como foco o acesso GraphQL e a entrega do Fragmento de conteúdo.
+O restante deste guia terá como foco o acesso ao GraphQL e a entrega de Fragmento de conteúdo.
 
 ## Como entregar um fragmento de conteúdo usando GraphQL {#how-to-deliver-a-content-fragment}
 
-Os arquitetos de informações precisarão projetar consultas para seus pontos de extremidade de canal para fornecer conteúdo. Geralmente, esses queries só precisarão ser considerados uma vez por endpoint por modelo. Para os fins deste guia de introdução, só será necessário criar um.
+Os arquitetos da informação precisarão projetar consultas para seus endpoints de canal para fornecer conteúdo. Geralmente, essas consultas só precisarão ser consideradas uma vez por endpoint por modelo. Para os fins deste guia de introdução, só será necessário criar uma.
 
 1. Faça logon no AEM e acesse a interface GraphiQL:
    * Por exemplo: `https://<host>:<port>/content/graphiql.html`.
 
-1. O GraphiQL é um editor de consultas do navegador para GraphQL. Você pode usá-lo para criar consultas para recuperar Fragmentos de conteúdo para entregá-los com facilidade como JSON.
-   * O painel esquerdo permite criar o query.
+1. O GraphiQL é um editor de consultas no navegador para GraphQL. Você pode usá-lo para criar consultas para recuperar Fragmentos de conteúdo e entregá-los de forma headless como JSON.
+   * O painel esquerdo permite criar a consulta.
    * O painel direito exibe os resultados.
-   * O Editor de consultas apresenta a conclusão de código e teclas de atalho para executar facilmente a consulta.
-      ![Editor GraphiQL](../assets/graphiql.png)
+   * O Editor de consultas tem recursos de autocompletar código e teclas de atalho para executar a consulta com facilidade.
+      ![Editor do GraphiQL](../assets/graphiql.png)
 
-1. Supondo que o modelo que criamos era chamado `person` com campos `firstName`, `lastName`e `position`, podemos criar uma consulta simples para recuperar o conteúdo do Fragmento de conteúdo.
+1. Supondo que o modelo que criamos era chamado `person`, com os campos `firstName`, `lastName` e `position`, podemos criar uma consulta simples para recuperar o conteúdo do Fragmento de conteúdo.
 
    ```text
    query 
@@ -52,26 +52,26 @@ Os arquitetos de informações precisarão projetar consultas para seus pontos d
    }
    ```
 
-1. Insira o query no painel esquerdo.
-   ![Consulta GraphiQL](../assets/graphiql-query.png)
+1. Insira a consulta no painel esquerdo.
+   ![Consulta do GraphiQL](../assets/graphiql-query.png)
 
-1. Clique no botão **Executar Consulta** ou use o `Ctrl-Enter` A tecla de atalho e os resultados são exibidos como JSON no painel direito.
-   ![Resultados GraphiQL](../assets/graphiql-results.png)
+1. Clique no botão **Executar Consulta** ou use a tecla de atalho `Ctrl-Enter` e os resultados serão exibidos como JSON no painel direito.
+   ![Resultados do GraphiQL](../assets/graphiql-results.png)
 
 1. Clique em:
    * **Documentação** na parte superior direita da página para mostrar a documentação contextual para ajudá-lo a criar suas consultas que se adaptam aos seus próprios modelos.
    * **Histórico** na barra de ferramentas superior para mostrar consultas anteriores.
-      ![Documentação GraphiQL](../assets/graphiql-documentation.png)
+      ![Documentação do GraphiQL](../assets/graphiql-documentation.png)
 
 O GraphQL permite consultas estruturadas que podem direcionar não apenas conjuntos de dados específicos ou objetos de dados individuais, mas também fornecer elementos específicos dos objetos, resultados aninhados, oferecer suporte para variáveis de consulta e muito mais.
 
-O GraphQL pode evitar solicitações de API iterativas, bem como entrega excessiva e, em vez disso, permite a entrega em massa do que é necessário para renderização como resposta a uma única consulta de API. O JSON resultante pode ser usado para fornecer dados a outros sites ou aplicativos.
+O GraphQL pode evitar solicitações de API iterativas, bem como a entrega excessiva e, em vez disso, permite a entrega em massa do que é necessário para renderização como resposta a uma única consulta de API. O JSON resultante pode ser usado para fornecer dados a outros sites ou aplicativos.
 
 ## Próximas etapas {#next-steps}
 
-Pronto! Agora você tem uma compreensão básica do gerenciamento de conteúdo sem periféricos no AEM. É claro que há muito mais recursos onde você pode aprofundar um entendimento abrangente dos recursos disponíveis.
+Pronto! Agora você tem uma compreensão básica do gerenciamento de conteúdo headless no AEM. É claro que há muito mais recursos onde você pode se aprofundar para obter um entendimento abrangente dos recursos disponíveis.
 
 * **[Navegador de configuração](create-configuration.md)** - Para obter detalhes sobre o Navegador de configuração de AEM
 * **[Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)** - Para obter detalhes sobre a criação e o gerenciamento dos Fragmentos de conteúdo
-* **[Suporte a fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/assets-api-content-fragments.md)** - Para obter detalhes sobre como acessar AEM conteúdo diretamente pela API HTTP, por meio de operações CRUD (Criar, Ler, Atualizar, Excluir)
-* **[API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md)** - Para obter detalhes sobre como fornecer fragmentos de conteúdo sem interrupções
+* **[Suporte a fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/assets-api-content-fragments.md)** - Para obter detalhes sobre como acessar conteúdo do AEM diretamente pela API HTTP, por meio de operações CRUD (Criar, Ler, Atualizar, Excluir)
+* **[API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md)** - Para obter detalhes sobre como fornecer Fragmentos de conteúdo de forma headless

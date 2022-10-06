@@ -4,13 +4,13 @@ description: Configure o Experience Manager Assets para uso com a extensão Adob
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
-source-git-commit: e91fa04d87c7ecacf3ad8a148227948eafe15b1e
+exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
+source-git-commit: 84b16dd1a60f731b568dd87ef89699875cb86596
 workflow-type: tm+mt
 source-wordcount: '3149'
 ht-degree: 1%
 
 ---
-
 
 # Configurar o Experience Manager Assets para Adobe Asset Link {#adobe-asset-link}
 
@@ -32,7 +32,7 @@ Certifique-se de instalar o service pack e o pacote adequados conforme necessár
 
 | Recurso de ativos | Versão Experience Manager e requisitos de suporte |
 |--- |--- |
-| O Asset Link funciona por padrão | Experience Manager 6.5 e 6.5.2 ou posterior. </br> Experience Manager 6.4.4 e 6.4.6 ou posterior. </br> O Adobe recomenda instalar a versão mais recente [Experience Manager service pack (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html) antes de utilizar AAL. |
+| O Asset Link funciona por padrão | Experience Manager 6.5 e 6.5.2 ou posterior. </br> Experience Manager 6.4.4 e 6.4.6 ou posterior. </br> O Adobe recomenda instalar a versão mais recente [Experience Manager service pack (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=pt-BR) antes de utilizar AAL. |
 | O Asset Link funciona após instalar um pacote | Para o Experience Manager 6.4.0 - 6.4.3, instale [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) pacote. |
 | Integração com o Adobe Stock | Experience Manager 6.4.2 ou posterior |
 | Pesquisa visual ou semelhante | Experience Manager 6.5.0 ou posterior |
@@ -288,12 +288,7 @@ Se tiver problemas ao configurar ou usar o Adobe Asset Link, tente o seguinte:
 
 >[!MORELIKETHIS]
 >
->* [Sobre o Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [Sobre o Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
 >* [Use o Asset Link no aplicativo de desktop do Creative Cloud e gerencie ativos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [Configurar o Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
-
-
-
-
-
+>* [Configurar o Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/br/enterprise/using/configure-aem-assets-for-asset-link.html).
 

@@ -7,25 +7,25 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
 source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 9%
+source-wordcount: '334'
+ht-degree: 11%
 
 ---
 
-# Fornecer imagens otimizadas para um site responsivo {#delivering-optimized-images-for-a-responsive-site}
+# Entregar imagens otimizadas para um site responsivo {#delivering-optimized-images-for-a-responsive-site}
 
-Use o recurso de código responsivo quando quiser compartilhar o código para serviço responsivo com seu desenvolvedor da Web. Você copia o código responsivo (**[!UICONTROL RESS]**) para a área de transferência para compartilhá-lo com o desenvolvedor da Web.
+Use o recurso de código responsivo quando quiser compartilhar o código para serviço responsivo com seu desenvolvedor da Web. Você copia a variável responsiva (**[!UICONTROL RESS]**) à área de transferência para compartilhá-la com o desenvolvedor da Web.
 
 Esse recurso faz sentido usar se o site estiver em um WCM de terceiros. No entanto, se seu site estiver no Adobe Experience Manager, um servidor de imagem externo renderiza a imagem e a fornece à página da Web.
 
 Consulte também [Incorporar o visualizador de vídeo em uma página da Web](embed-code.md).
 
-Consulte também [Vincular URLs ao seu Aplicativo Web](linking-urls-to-yourwebapplication.md).
+Consulte também [Vincular URLs ao seu aplicativo web](linking-urls-to-yourwebapplication.md).
 
 **Para fornecer imagens otimizadas para um site responsivo:**
 
@@ -43,15 +43,15 @@ Consulte também [Vincular URLs ao seu Aplicativo Web](linking-urls-to-yourwebap
    >
    >Dynamic Media - O modo híbrido requer a publicação de predefinições de imagens; Dynamic Media - O modo Scene7 publica automaticamente predefinições de imagens.
 
-1. Selecione **[!UICONTROL RESS]**.
+1. Selecionar **[!UICONTROL RESS]**.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. Na caixa de diálogo **[!UICONTROL Incorporar imagem responsiva]**, selecione e copie o texto do código responsivo e o cole no site para acessar o ativo responsivo.
+1. No **[!UICONTROL Incorporar imagem responsiva]** caixa de diálogo, selecione e copie o texto do código responsivo e o cole em seu site para acessar o ativo responsivo.
 1. Edite os pontos de interrupção padrão no código incorporado para corresponder aos pontos de interrupção do site responsivo, diretamente no código. Além disso, teste as diferentes resoluções de imagem que estão sendo veiculadas em diferentes pontos de interrupção da página.
 
 ## Usar HTTP/2 para fornecer ativos do Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
 HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Ele oferece transferência mais rápida de informações e reduz a quantidade de poder de processamento necessário. A entrega de ativos do Dynamic Media é compatível com o uso do HTTP/2, o que oferece melhor resposta e tempos de carregamento.
 
-Consulte [HTTP2 Delivery of Content](http2.md) para obter detalhes completos sobre como começar a usar HTTP/2 com sua conta Dynamic Media.
+Consulte [Entrega de conteúdo HTTP2](http2.md) para obter detalhes completos sobre a introdução ao HTTP/2 com sua conta do Dynamic Media.

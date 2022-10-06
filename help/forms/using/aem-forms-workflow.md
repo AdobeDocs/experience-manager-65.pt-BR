@@ -12,7 +12,7 @@ exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
 workflow-type: tm+mt
 source-wordcount: '3681'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -231,7 +231,7 @@ Um administrador (um membro do grupo fd-administrators ) pode configurar uma pas
    <td>Especifique o nome da Pasta assistida. Este campo suporta apenas alfanumérico.</td>
   </tr>
   <tr>
-   <td><span class="uicontrol">Caminho</code></td>
+   <td><span class="uicontrol">Caminho </code></td>
    <td>Especifique a localização física da Pasta assistida. Em um ambiente em cluster, use uma pasta de rede compartilhada que possa ser acessada AEM nó do cluster.</td>
   </tr>
   <tr>
@@ -273,7 +273,7 @@ Você pode usar as etapas Atribuir tarefa e Enviar email dos fluxos de trabalho 
 
 ### Limpar instâncias do fluxo de trabalho {#purge-workflow-instances}
 
-Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do mecanismo de fluxo de trabalho, para que você possa limpar regularmente as instâncias de fluxo de trabalho concluídas ou em execução do repositório. Para obter informações detalhadas, consulte [Limpeza regular de instâncias de fluxo de trabalho](/help/sites-administering/workflows-administering.md#regular) limpeza de instâncias de fluxo de trabalho.
+Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução. Para obter informações detalhadas, consulte [Limpeza regular de instâncias de fluxo de trabalho](/help/sites-administering/workflows-administering.md#regular) limpeza de instâncias de fluxo de trabalho.
 
 ## Parâmetros de dados confidenciais para variáveis de fluxo de trabalho e armazenamento em armazenamentos de dados externos {#externalize-wf-variables}
 

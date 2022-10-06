@@ -239,7 +239,7 @@ Em alguns casos, alternar entre a cauda e os modos de compactação completos at
   </tr>
   <tr>
    <td><strong>Por que a primeira Limpeza de Revisão Online não recupera espaço quando executada após a Limpeza de Revisão Offline?</strong></td>
-   <td><p>A Limpeza de Revisão Offline recupera tudo, menos a última geração, em comparação com as últimas duas gerações para a Limpeza de Revisão Online. No caso de um repositório novo, a Limpeza de Revisão Online não recuperará espaço quando for executada pela primeira vez após a Limpeza de Revisão Offline, pois não há geração antiga o suficiente para ser recuperada.</p> <p>Além disso, leia a seção "Executando Limpeza de Revisão Online após Limpeza de Revisão Offline" de <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">este capítulo</a>.</p> </td>
+   <td><p>A Limpeza de Revisão Offline recupera tudo, menos a geração mais recente, em comparação com as últimas duas gerações para a Limpeza de Revisão Online. No caso de um repositório novo, a Limpeza de Revisão Online não recuperará espaço quando for executada pela primeira vez após a Limpeza de Revisão Offline, pois não há geração antiga o suficiente para ser recuperada.</p> <p>Além disso, leia a seção "Executando Limpeza de Revisão Online após Limpeza de Revisão Offline" de <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">este capítulo</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>

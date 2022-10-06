@@ -1,8 +1,8 @@
 ---
 title: Assinaturas das Comunidades
-seo-title: Assinaturas das Comunidades
+seo-title: Communities Subscriptions
 description: Os membros da comunidade interagem com outros membros por email
-seo-description: Os membros da comunidade interagem com outros membros por email
+seo-description: Community members interact with other members through email
 uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,8 +13,8 @@ role: Admin
 exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 2%
+source-wordcount: '351'
+ht-degree: 1%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 2%
 
 ## Visão geral {#overview}
 
-A partir de Comunidades [FP1](deploy-communities.md#latestfeaturepack), os membros da comunidade podem interagir com a comunidade por meio de email usando um recurso chamado de assinaturas.
+Comunidades [FP1](deploy-communities.md#latestfeaturepack), os membros da comunidade podem interagir com a comunidade por email usando um recurso chamado de assinaturas.
 
-As assinaturas são semelhantes a [notificações](notifications.md), pois os membros podem se inscrever ao seguir artigos de blog, tópicos do fórum ou perguntas de QnA.
+As assinaturas são semelhantes a [notificações](notifications.md) como membros podem se inscrever ao seguir artigos de blog, tópicos do fórum ou perguntas de QnA.
 
 O que distingue as assinaturas das notificações é:
 
@@ -38,21 +38,21 @@ O que distingue as assinaturas das notificações é:
 
 O email deve ser configurado para que as assinaturas sejam funcionais e os membros respondam por email.
 
-Para obter instruções sobre como configurar o email, consulte [Configuração do email](email.md).
+Para obter instruções sobre como configurar o email, consulte [Configuração de email](email.md).
 
 **Ativar assinaturas e seguir**
 
-Os componentes devem ser configurados para ativar as assinaturas *e* a seguir. Os recursos que permitem assinaturas são [blog](blog-feature.md), [forum](forum.md) e [QnA](working-with-qna.md).
+Os componentes devem ser configurados para habilitar assinaturas *e* seguinte. Os recursos que permitem assinaturas são [blog](blog-feature.md), [fórum](forum.md) e [QnA](working-with-qna.md).
 
 ## Assinaturas do seguinte {#subscriptions-from-following}
 
 ![subscription-following](assets/subscription-following.png)
 
-O botão **Follow** fornece um meio de seguir entradas como atividades, assinaturas e/ou notificações. Sempre que o botão **Follow** é selecionado, é possível ativar ou desativar uma seleção.
+O **Seguir** fornece um meio de seguir entradas como atividades, assinaturas e/ou notificações. Sempre que a variável **Seguir** for selecionado, é possível ativar ou desativar uma seleção.
 
-Se qualquer método do seguinte for selecionado, o texto do botão será alterado para **Seguindo**. Para maior comodidade, é possível selecionar `Unfollow All` para desligar todos os métodos.
+Se qualquer método de seguir for selecionado, o texto do botão será alterado para **Seguindo**. Para maior comodidade, é possível selecionar `Unfollow All` para desativar todos os métodos.
 
-O botão **Follow** incluirá a opção `Email Subscriptions` somente quando um fórum, QnA ou blog estiver configurado para ativar assinaturas de email. Esse botão aparecerá:
+O **Seguir** incluirá o botão `Email Subscriptions` somente quando um fórum, QnA ou blog é configurado para ativar assinaturas de email. Esse botão aparecerá:
 
 * Na página de recurso principal do fórum habilitado, QnA ou blog Enviará um email para todas as atividades sob esse recurso.
 
@@ -60,12 +60,12 @@ O botão **Follow** incluirá a opção `Email Subscriptions` somente quando um 
 
 ## Responder por email {#reply-by-email}
 
-Quando o email for [configurado para responder por email](email.md#configure-polling-importer), o membro que se inscreveu receberá um email com o conteúdo postado e um link para o conteúdo online.
+Quando o email é [configurado para responder por email](email.md#configure-polling-importer), o membro que se inscreveu receberá um email com o conteúdo publicado e um link para o conteúdo online.
 
 Se responderem ao email, o conteúdo inserido na resposta será exibido como conteúdo online.
 
 ![email-reply](assets/email-reply.png)
 
-O tempo que leva para uma resposta ser postada é controlado pelo [intervalo de atualização do importador de pesquisa](email.md#configure-polling-importer).
+O tempo necessário para uma resposta ser postada é controlado pela variável [intervalo de atualização do importador de pesquisa](email.md#configure-polling-importer).
 
 ![QA](assets/qa.png)

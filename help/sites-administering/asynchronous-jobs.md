@@ -1,14 +1,13 @@
 ---
 title: Trabalhos assíncronos
 description: O Adobe Experience Manager otimiza o desempenho ao concluir de modo assíncrono algumas tarefas que consomem muitos recursos.
-translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 98%
 
 ---
-
 
 # Operações assíncronas {#asynchronous-operations}
 
@@ -144,9 +143,9 @@ Se o número de referências às páginas que serão movidas exceder o número l
 >[!MORELIKETHIS]
 >
 >* [Criar e organizar páginas](/help/sites-authoring/managing-pages.md)
->* [Criando e Sincronizando Live Copies](/help/sites-administering/msm-livecopy.md)
->* [Configure e-mail no Experience Manager](/help/sites-administering/notification.md).
->* [Importe metadados](/help/assets/metadata.md#import-metadata) do ativo.
->* [Exportar metadados](/help/assets/metadata.md#export-metadata) de ativos.
+>* [Criação e sincronização de Live Copies](/help/sites-administering/msm-livecopy.md)
+>* [Configurar email no Experience Manager](/help/sites-administering/notification.md).
+>* [Importar metadados de ativos](/help/assets/metadata.md#import-metadata).
+>* [Exportar metadados de ativos](/help/assets/metadata.md#export-metadata).
 >* [Usar ativos conectados para compartilhar ativos DAM de implantações remotas](/help/assets/use-assets-across-connected-assets-instances.md).
 

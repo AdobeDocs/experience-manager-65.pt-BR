@@ -1,8 +1,8 @@
 ---
 title: Trabalhar com versões de páginas
-seo-title: Trabalhar com versões de páginas
-description: 'O controle de versão cria um “instantâneo” de uma página em um ponto no tempo específico. '
-seo-description: 'O controle de versão cria um “instantâneo” de uma página em um ponto no tempo específico. '
+seo-title: Working with Page Versions
+description: O controle de versão cria um “instantâneo” de uma página em um ponto no tempo específico.
+seo-description: Versioning creates a "snapshot" of a page at a specific point in time.
 uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 48936115-4be2-4b0c-81ce-d61e43e4535d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1362'
 ht-degree: 92%
 
 ---
-
 
 # Trabalhar com versões de páginas{#working-with-page-versions}
 
@@ -37,14 +36,14 @@ Para criar uma nova versão de uma página:
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Insira um **Comentário** (opcional).
-1. Para definir um rótulo para a versão (opcional), clique no botão **Mais >>** e defina o **Rótulo** para nomear a versão. Se o rótulo não estiver definido, a versão será um número incrementado automaticamente.
+1. Para definir um rótulo para a versão (opcional), clique no link **Mais >>** e defina o **Rótulo** para nomear a versão. Se o rótulo não estiver definido, a versão será um número incrementado automaticamente.
 1. Clique em **Criar versão**. Uma mensagem acinzentada é exibida na página; por exemplo: Versão 1.2 criada para: Camisas.
 
 >[!NOTE]
 >
 >Uma versão é criada automaticamente quando a página é ativada.
 
-## Restaurar uma versão de página do sidekick  {#restoring-a-page-version-from-sidekick}
+## Restaurar uma versão de página do sidekick {#restoring-a-page-version-from-sidekick}
 
 Para restaurar a página para uma versão anterior:
 
@@ -70,7 +69,7 @@ Esse método pode ser usado para restaurar uma versão de página. Também pode 
 
 1. Selecione a versão que você deseja restaurar e clique em **Restaurar**. O AEM restaura as versões (ou árvores) que você selecionar.
 
-### Restaurar uma árvore a partir do console  {#restoring-a-tree-from-the-console}
+### Restaurar uma árvore a partir do console {#restoring-a-tree-from-the-console}
 
 Esse método pode ser usado para restaurar uma versão de página. Também pode ser usado para restaurar páginas que foram excluídas anteriormente:
 
@@ -82,17 +81,17 @@ Esse método pode ser usado para restaurar uma versão de página. Também pode 
 
 1. Clique em **Restaurar**. O AEM restaura a árvore selecionada.
 
-## Comparar com uma versão anterior  {#comparing-with-a-previous-version}
+## Comparar com uma versão anterior {#comparing-with-a-previous-version}
 
 Para comparar a versão atual da página com uma versão anterior:
 
 1. No seu navegador, abra a página com a qual você deseja comparar uma versão anterior.
-1. No Sidekick, selecione a guia **Controle de versão**, em seguida, a subguia **Restaurar versão** n.
+1. No Sidekick, selecione o **Controle de versão** , em seguida, a **Restaurar versão** n subguia .
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
 1. Selecione a versão que você deseja comparar e clique no botão **Diff**.
-1. As diferenças entre a versão atual e a selecionada são exibidas da seguinte forma:
+1. As diferenças entre a versão atual e a selecionada são exibidas da seguinte maneira:
 
    * O texto que foi excluído é vermelho e riscado.
    * O texto que foi adicionado é verde e destacado.
@@ -102,7 +101,7 @@ Para comparar a versão atual da página com uma versão anterior:
 
 1. No Sidekick, selecione a subguia **Restaurar versão** e clique no botão **&lt;&lt;Voltar** para exibir a versão atual.
 
-## Timewarp    {#timewarp}
+## Timewarp   {#timewarp}
 
 O Timewarp é um recursos criado para simular o estado ***publicado*** de uma página em ocasiões específicas no passado.
 
@@ -119,7 +118,7 @@ Para fazer isso:
 >
 >Se as versões forem removidas do repositório, o Timewarp não poderá mostrar a exibição correta. Além disso, se os elementos (como código, css, imagens etc) para renderização do website forem alterados, a exibição será diferente da original, pois esses itens não têm controle de versão no repositório.
 
-### Using the Timewarp Calendar  {#using-the-timewarp-calendar}
+### Using the Timewarp Calendar {#using-the-timewarp-calendar}
 
 O Timewarp está disponível no sidekick.
 
@@ -195,4 +194,4 @@ O Timewarp se esforça ao máximo para reproduzir uma página em um ponto seleci
 
 >[!CAUTION]
 >
->O Timewarp foi projetado como uma ferramenta para auxiliar autores com a compreensão e criação de conteúdo. Ele não se destina a ser um registro de auditoria ou a fins legais.
+>O Timewarp foi projetado como uma ferramenta para auxiliar os autores a compreender e criar seu conteúdo. Ele não se destina a ser um registro de auditoria ou a fins legais.

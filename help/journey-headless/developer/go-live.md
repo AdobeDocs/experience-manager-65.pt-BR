@@ -1,10 +1,11 @@
 ---
 title: Como ativar seu aplicativo sem periféricos
 description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba como implantar um aplicativo headless ao vivo.
-source-git-commit: 20d46a7c37663dac36e6af9582d569a7f782eab7
+exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1903'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 Nesta parte do [jornada do desenvolvedor sem periféricos do AEM](overview.md), saiba como implantar um aplicativo sem periféricos ao vivo.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 No documento anterior da jornada sem cabeçalho AEM, [Como atualizar seu conteúdo por meio das APIs do AEM Assets](update-your-content.md) você aprendeu a atualizar o conteúdo sem cabeçalho existente no AEM por meio da API e agora deve:
 
@@ -63,11 +64,11 @@ Em seguida, vamos dar uma olhada nas partes constituintes de um ambiente AEM.
 
 Um ambiente AEM completo é composto de um Autor, Publicação e Dispatcher. Esses mesmos componentes serão disponibilizados no tempo de execução de desenvolvimento local para facilitar a visualização do código e conteúdo antes de entrar no ar.
 
-* **O serviço Autor** é onde os usuários internos criam, gerenciam e visualizam o conteúdo.
+* **O serviço do Autor** é onde os usuários internos criam, gerenciam e visualizam conteúdo.
 
-* **O serviço de publicação** O é considerado o ambiente &quot;Live&quot; e normalmente é com o que os usuários finais interagem. O conteúdo, após ser editado e aprovado no serviço Autor, é distribuído (replicado) ao serviço de Publicação. O padrão de implantação mais comum com AEM aplicativos sem cabeçalho é ter a versão de produção do aplicativo conectada a um serviço de publicação do AEM.
+* **O serviço de Publicação** é considerado o ambiente &quot;ativo&quot; e é, normalmente, com o que os usuários finais interagem. O conteúdo, após ser editado e aprovado no serviço Autor, é distribuído (replicado) ao serviço de Publicação. O padrão de implantação mais comum com aplicativos headless do AEM é ter uma versão de produção do aplicativo conectada a um serviço de publicação do AEM.
 
-* **O Dispatcher** é um servidor Web estático aumentado com o módulo Dispatcher do AEM. Armazena em cache as páginas da Web produzidas pela instância de publicação para melhorar o desempenho.
+* **O Dispatcher** é um servidor Web estático aumentado com o módulo dispatcher do AEM. Armazena em cache as páginas da Web produzidas pela instância de publicação para melhorar o desempenho.
 
 ## O fluxo de trabalho de desenvolvimento local {#the-local-development-workflow}
 
@@ -193,7 +194,7 @@ Para registrar um bug com suporte com eficiência, caso precise de assistência 
 
 ## A Jornada Termina - Ou Será? {#journey-ends}
 
-Parabéns! Você concluiu a Jornada do desenvolvedor sem cabeçalho AEM! Agora você deve conhecer:
+Parabéns. Você concluiu a Jornada do desenvolvedor sem cabeçalho AEM! Agora você deve conhecer:
 
 * A diferença entre a entrega de conteúdo sem periféricos e com periféricos.
 * AEM recursos sem periféricos.

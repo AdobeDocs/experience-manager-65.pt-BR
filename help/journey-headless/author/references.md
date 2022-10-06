@@ -1,10 +1,11 @@
 ---
 title: Saiba mais sobre como usar referências em Fragmentos de conteúdo
 description: Saiba mais sobre como usar referências em Fragmentos de conteúdo, para conteúdo, outros fragmentos e outros ativos (mídia). Apresente a necessidade e a mecânica de fragmentos aninhados para a criação headless de CMS.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -25,7 +26,7 @@ Este artigo se baseia nesses itens para que você entenda como usar referências
 
    * Referências do conteúdo
    * Referências de ativo/mídia
-   * Referências de fragmento
+   * Referências do fragmento
    * Referências ad hoc de dentro de um bloco de texto
 
 ## O que são referências {#what-are-references}
@@ -46,7 +47,7 @@ Os ativos (por exemplo, imagens ou mídia) podem ser referenciados em um bloco d
 
 ![Fragmentos de conteúdo - Inserir ativo](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
-## Referências de fragmento {#fragment-references}
+## Referências do fragmento {#fragment-references}
 
 Novamente, as Referências de fragmento fazem exatamente isso - permitem que você faça referência a outro fragmento. Por que isso é significativo precisa de um pouco mais de explicação.
 
@@ -54,7 +55,7 @@ Por exemplo, você pode ter os seguintes Modelos de fragmento de conteúdo defin
 
 * Cidade
 * Empresa
-* Person
+* Pessoa
 * Prêmios
 
 Parece muito simples, mas é claro que uma empresa tem um CEO e funcionários....E estas são todas pessoas, cada uma definida como uma Pessoa.
@@ -91,7 +92,7 @@ Usar o **Árvore da estrutura** no Editor de fragmento do conteúdo, é possíve
 >
 >Usando a navegação estrutural no painel principal, você pode retornar ao ponto de partida.
 
-![Árvore da estrutura do fragmento do conteúdo](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![Árvore de estrutura do fragmento de conteúdo](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
 
 ## Referências ad hoc {#adhoc-references}
 
@@ -124,6 +125,6 @@ Agora que você aprendeu sobre referências e estrutura nos Fragmentos de conte�
 * Guias de introdução
    * [Criação de uma pasta de ativos sem cabeçalho Guia de início rápido](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
-* [jornada do AEM Headless Content Architect](/help/journey-headless/architect/overview.md)
+* [Jornada do arquiteto de conteúdo do AEM Headless](/help/journey-headless/architect/overview.md)
 
 * [jornada de tradução sem cabeçalho AEM](/help/journey-headless/translation/overview.md)

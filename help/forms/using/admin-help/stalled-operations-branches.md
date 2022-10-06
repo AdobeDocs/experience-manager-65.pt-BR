@@ -1,29 +1,28 @@
 ---
 title: Trabalhar com operações e ramificações paralisadas
-seo-title: Trabalhar com operações e ramificações paralisadas
-description: As páginas Operações paradas e Ramificações paradas mostram os processos que pararam.
-seo-description: As páginas Operações paradas e Ramificações paradas mostram os processos que pararam.
+seo-title: Working with stalled operations and branches
+description: A página Operações paralisadas e a página Ramificações paralisadas mostram os processos que pararam.
+seo-description: The Stalled Operations page and the Stalled Branches page show the processes that have stalled.
 uuid: 5f6202b0-79c2-4c3c-847a-236c0366e60b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '707'
 ht-degree: 0%
 
 ---
 
+# Trabalhar com operações e ramificações paralisadas {#working-with-stalled-operations-and-branches}
 
-# Trabalhar com operações e ramificações paradas {#working-with-stalled-operations-and-branches}
+A página Operações paralisadas e a página Ramificações paralisadas mostram os processos que pararam. Um processo pode ser interrompido quando ocorrer um erro durante ou após a execução de uma operação ou devido a uma operação de paralisação deliberada no processo:
 
-As páginas Operações paradas e Ramificações paradas mostram os processos que pararam. Um processo pode parar quando ocorrer um erro durante ou após a execução de uma operação ou devido a uma operação deliberada de parada no processo:
-
-* As operações podem parar devido a um erro imprevisto. No entanto, uma operação de Parar Ramificação em um processo interrompe deliberadamente a execução de um processo e requer a intervenção do administrador.
-* As ramificações podem parar entre operações durante uma avaliação de regra.
+* As operações podem parar devido a um erro imprevisto. No entanto, uma operação Stall Branch em um processo interrompe deliberadamente a execução de um processo e requer a intervenção do administrador.
+* As ramificações podem ficar entre operações durante uma avaliação de regra.
 
 Quando um processo é interrompido, nenhuma outra operação é executada até que o problema seja corrigido e a operação ou ramificação seja reiniciada.
 
@@ -31,57 +30,57 @@ Para cada item parado, a lista mostra as seguintes informações:
 
 **Nome da Operação ou Nome da Ramificação:** O nome da operação ou ramificação.
 
-**Status:** sempre parado para itens parados.
+**Status:** Sempre PARADO para itens parados.
 
-**Erro:** uma breve descrição do problema.
+**Erro:** Uma breve descrição do problema.
 
-**ID do processo:** o número inteiro positivo que o fluxo de trabalho do formulário atribui quando o processo é instanciado (ou seja, quando um usuário ou uma etapa automática inicia um processo). É possível usar esse identificador para rastrear a instância do processo por todo o ciclo de vida.
+**ID do processo:** O número inteiro positivo que o fluxo de trabalho do Forms atribui quando o processo é instanciado (ou seja, quando um usuário ou uma etapa automatizada inicia um processo). Você pode usar esse identificador para rastrear a instância do processo por meio de seu ciclo de vida.
 
-**Nome do Processo - Versão:** O nome do processo atribuído no Workbench.
+**Nome do processo - Versão:** O nome do processo atribuído no Workbench.
 
-**Data de parada:** A data e a hora em que a operação ou ramificação parou.
+**Data de paralisação:** A data e a hora em que a operação ou ramificação parou.
 
-Você pode fazer as seguintes tarefas na página Operações paradas ou Ramificações paradas:
+Você pode executar as seguintes tarefas na página Operações paralisadas ou Ramificações paralisadas :
 
-* Selecione um erro para visualização de detalhes sobre ele. Quando você seleciona um erro, a página Detalhes do erro é exibida.
-* Encerre ou tente novamente operações paradas ou tente novamente ramificações paradas.
+* Selecione um erro para exibir detalhes. Quando você seleciona um erro, a página Detalhes do erro é exibida.
+* Encerre ou tente novamente as operações paralisadas ou tente ramificações paralisadas.
 
-## Terminando ou repetindo operações ou ramificações paradas {#terminating-or-retrying-stalled-operations-or-branches}
+## Terminando ou repetindo operações ou ramificações paralisadas {#terminating-or-retrying-stalled-operations-or-branches}
 
-Na página Operações paradas, você pode encerrar as instâncias de processo exibidas.
+Na página Operações paralisadas, você pode encerrar as instâncias de processo exibidas.
 
-Quando você encerra uma instância do processo, ela para de ser executada e nenhuma outra operação acontece. Normalmente, você encerra um processo somente se ele se tornar bloqueado ou inutilizável devido a um erro e não puder ser corrigido e reiniciado.
+Quando você encerra uma instância de processo, ela para de ser executada e nenhuma outra operação acontece. Normalmente, você encerra um processo somente se ele se tornar bloqueado ou inutilizável devido a um erro e não pode ser corrigido e reiniciado.
 
-Na página Operações paradas ou na página Ramificações paradas, você pode repetir a operação ou ramificação.
+Na página Operações paralisadas ou na página Ramificações paralisadas, é possível repetir a operação ou ramificação.
 
-Quando você tenta uma operação novamente, o fluxo de trabalho da Forms recebe uma solicitação para reiniciar a operação. Se o erro que causou a paralisação do processo tiver sido corrigido e a solicitação de nova tentativa for bem-sucedida, o processo começará a ser executado novamente a partir do ponto em que havia parado e seu status mudará para EXECUÇÃO. Se a operação não puder ser reiniciada, ela permanecerá PARADA e talvez seja necessário encerrá-la.
+Quando você tenta uma operação novamente, o workflow do Forms é enviado com uma solicitação para reiniciar a operação. Se o erro que causou a paralisação do processo tiver sido corrigido e a solicitação de nova tentativa for bem-sucedida, o processo começará a ser executado novamente a partir do ponto em que havia parado e seu status será alterado para EXECUTANDO. Se a operação não puder ser reiniciada, ela permanecerá PARADA e talvez seja necessário encerrá-la.
 
-### Encerrar uma operação parada {#terminate-a-stalled-operation}
+### Encerrar uma operação paralisada {#terminate-a-stalled-operation}
 
-1. No console de administração, clique em Serviços > fluxo de trabalho de formulários > Erros de operações instaladas.
-1. Na página Operações paradas, selecione o item que deseja encerrar e clique em Encerrar.
+1. No console de administração, clique em Serviços > fluxo de trabalho de formulários > Erros de operações paralisadas.
+1. Na página Operações paralisadas , selecione o item que deseja encerrar e clique em Encerrar.
 
-### Repita uma operação ou ramificação parada {#retry-a-stalled-operation-or-branch}
+### Repetir uma operação ou ramificação paralisada {#retry-a-stalled-operation-or-branch}
 
-1. No console de administração, clique em Serviços > fluxo de trabalho de formulários e, em seguida, clique em Erros de operações paradas ou Erros de ramificação parados.
-1. Na página Operações paradas ou Ramificações paradas, selecione o item que deseja repetir e clique em Repetir.
+1. No console de administração, clique em Services > forms workflow e, em seguida, clique em Stalled Operations Errors ou Stalled Branch Errors.
+1. Na página Operações paralisadas ou Ramificações paralisadas , selecione o item que deseja repetir e clique em Repetir.
 
-## Exibindo detalhes do erro sobre operações ou ramificações paradas {#viewing-error-details-about-stalled-operations-or-branches}
+## Exibição de detalhes do erro sobre operações ou ramificações paralisadas {#viewing-error-details-about-stalled-operations-or-branches}
 
-Se você selecionar um erro na lista de itens parados na página Operações paradas ou Ramificações paradas, a página Detalhes do erro será exibida, mostrando detalhes sobre o erro que pode ajudá-lo a solucionar o problema.
+Se você selecionar um erro na lista de itens paralisados na página Operações ou Ramificações Paralisadas, a página Detalhes do Erro será exibida, mostrando detalhes sobre o erro que podem ajudar você a solucionar o problema.
 
 A caixa na parte inferior da página contém as informações do erro.
 
-Você também pode encerrar ou tentar novamente operações paradas e tentar novamente ramificações paradas, na página Detalhes do erro.
+Você também pode encerrar ou tentar novamente as operações paralisadas e tentar novamente ramificações paralisadas na página Detalhes do erro .
 
-## O processo não é parado quando o usuário de escalonamento não existe {#process-does-not-stall-when-escalation-user-does-not-exist}
+## O processo não é interrompido quando o usuário de escalonamento não existe {#process-does-not-stall-when-escalation-user-does-not-exist}
 
-Erros ocorrem quando a operação Atribuir Tarefa nos formulários AEM serviço Usuário está configurada para escalonar a tarefa a outro usuário após um período de tempo específico, e o usuário de escalonamento é excluído depois que a operação Atribuir Tarefa é executada, mas antes que o escalonamento ocorra.
+Ocorrem erros quando a operação Atribuir tarefa nos formulários AEM do serviço Usuário está configurada para encaminhar a tarefa a outro usuário após um período específico e o usuário de escalonamento é excluído depois que a operação Atribuir tarefa é executada, mas antes que o escalonamento ocorra.
 
-Quando essa situação ocorre, o estado do processo e a tarefa não são alterados no tempo de escalonamento configurado, e o escalonamento não ocorre, mas o processo não é interrompido. A seguinte mensagem é exibida no log do servidor:
+Quando essa situação ocorre, o estado do processo e da tarefa não é alterado no momento do escalonamento configurado e o escalonamento não ocorre, mas o processo não é interrompido. A seguinte mensagem é exibida no log do servidor:
 
-&quot;O principal especificado para escalonamento não é válido, para taskID: *number*, fila especificada: *number*.&quot;
+&quot;O principal especificado para escalonamento não é válido, para taskID: *número*, fila especificada: *número*.&quot;
 
-Se o usuário de escalonamento for excluído antes da geração da tarefa (antes da execução da operação Atribuir Tarefa), o processo será interrompido ou o evento de exceção InvalidPrincipal será lançado.
+Se o usuário de escalonamento for excluído antes que a tarefa seja gerada (antes da execução da operação Atribuir Tarefa), o processo será interrompido ou o evento de exceção InvalidPrincipal será lançado.
 
-Para evitar esse problema, ao excluir um usuário, procure tarefas pertencentes a esse usuário e trate-as de acordo. (Consulte [Trabalhar com tarefa](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
+Para evitar esse problema, ao excluir um usuário, procure por tarefas pertencentes a esse usuário e gerencie-as adequadamente. (Consulte [Trabalhar com tarefas](/help/forms/using/admin-help/tasks.md#working-with-tasks).)

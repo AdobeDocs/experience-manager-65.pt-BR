@@ -1,22 +1,21 @@
 ---
 title: Criar e organizar páginas
-seo-title: Criar e organizar páginas
+seo-title: Creating and Organizing Pages
 description: Esta seção descreve como criar e gerenciar páginas com o AEM para depois criar o conteúdo nessas páginas.
-seo-description: Esta seção descreve como criar e gerenciar páginas com o AEM para depois criar o conteúdo nessas páginas.
+seo-description: This section describes how to create and manage pages with AEM so that you can then create content on those pages.
 uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1910'
 ht-degree: 84%
 
 ---
-
 
 # Criar e organizar páginas{#creating-and-organizing-pages}
 
@@ -39,9 +38,9 @@ Você também pode usar [pastas](#creating-a-new-folder) para ajudar a organizar
 
 A estrutura de um site pode ser considerada como uma *estrutura em árvore* que armazena suas páginas de conteúdo. Os nomes dessas páginas de conteúdo são usadas para formar os URLs, ao passo que o título é mostrado quando o conteúdo da página é visualizado.
 
-A seguir, é apresentado um extrato do local do Geometrixx; onde, por exemplo, a página `Triangle` será acessada:
+Apresenta-se a seguir um extrato do local de Geometrixx; onde, por exemplo, a variável `Triangle` será acessada:
 
-* Ambiente do autor
+* Ambiente de criação
 
    `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
@@ -49,7 +48,7 @@ A seguir, é apresentado um extrato do local do Geometrixx; onde, por exemplo, a
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Dependendo da configuração da sua instância, o uso de `/content` pode ser opcional no ambiente publish.
+   Dependendo da configuração da sua instância, use o `/content` pode ser opcional no ambiente de publicação.
 
 ```xml
   /content
@@ -71,7 +70,7 @@ A seguir, é apresentado um extrato do local do Geometrixx; onde, por exemplo, a
     /...
 ```
 
-Essa estrutura pode ser visualizada no console Sites, que você pode usar para [navegar pela estrutura em árvore](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+Essa estrutura pode ser visualizada no console Sites, que você pode usar para [navegar pela estrutura de árvore](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -89,9 +88,9 @@ Ao criar uma nova página, existem dois campos principais:
    * Usado para gerar o URI.
    * A entrada do usuário para este campo é opcional. Se não for especificado, o nome é derivado do título.
 
-Ao criar uma nova página, AEM irá [validar o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pela AEM e JCR.
+Ao criar uma nova página, o AEM [validar o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
 
-A implementação e a lista de caracteres permitidos diferem ligeiramente de acordo com a interface do usuário (é mais extensa para a interface habilitada para toque), mas o mínimo permitido é:
+A implementação e a lista de caracteres permitidos diferem ligeiramente de acordo com a interface do usuário (é mais extensa para a interface do usuário habilitada para toque), mas o mínimo permitido é:
 
 * &#39;a&#39; a &#39;z&#39;
 * &#39;A&#39; a &#39;Z&#39;
@@ -103,7 +102,7 @@ Use apenas esses caracteres se quiser ter certeza de que eles serão aceitos/usa
 
 #### Título {#title}
 
-Caso forneça apenas um **Título** de página ao criar uma nova página, o AEM vai derivar o **Nome**[ de página desta cadeia de caracteres e validá-lo de acordo com as convenções impostas pelo AEM e JCR. ](/help/sites-developing/naming-conventions.md) Em ambas IUs, um campo de **Título** que contém caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
+Quando você fornece apenas um **Título** de página ao criar uma nova página, o AEM deriva o **Nome** de página desta cadeia de caracteres e o valida[ de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR. Em ambas IUs, um campo de **Título** que contém caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
 
 | Título | Nome derivado |
 |---|---|
@@ -112,12 +111,12 @@ Caso forneça apenas um **Título** de página ao criar uma nova página, o AEM 
 
 #### Nome {#name}
 
-Se você fornecer um **Nome**[ de página ao criar uma nova página, o AEM vai validar o nome de acordo com as convenções impostas pelo AEM e JCR.](/help/sites-developing/naming-conventions.md)
+Quando você fornece um **Nome** de página ao criar uma nova página, o AEM valida[ esse nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
 
-Na interface clássica, você **não pode inserir caracteres inválidos** no campo **Nome**.
+Na interface clássica, você **não é possível inserir caracteres inválidos** no **Nome** campo.
 
 >[!NOTE]
->Na interface habilitada para toque, você **não pode enviar caracteres inválidos** no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo será destacado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
+>Na interface habilitada para toque, você **não é possível enviar caracteres inválidos** no **Nome** campo. Quando o AEM detecta caracteres inválidos, o campo será destacado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
 
 >[!NOTE]
 >
@@ -149,7 +148,7 @@ Os componentes são os elementos fornecidos pelo AEM, desse modo, é possível a
 * Vídeo
 * e muito mais
 
-Depois de criar e abrir uma página, você pode [adicionar conteúdo usando os componentes](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponíveis no [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+Depois de criar e abrir uma página, você pode [adicionar conteúdo usando os componentes](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponíveis na [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
 ## Gerenciamento de páginas {#managing-pages}
 
@@ -195,7 +194,7 @@ A menos que todas as páginas tenham sido criadas para você com antecedência, 
 
    >[!NOTE]
    >
-   >Você também pode criar uma página quando estiver editando uma página existente. Usar **Criar página secundária **da guia **Página** do sidekick, criará uma nova página diretamente sob a página que está sendo editada.
+   >Você também pode criar uma página quando estiver editando uma página existente. Usar **Criar página secundária **do **Página** do sidekick, criará uma nova página diretamente sob a página que está sendo editada.
 
 ### Abrir uma página para edição {#opening-a-page-for-editing}
 
@@ -269,13 +268,13 @@ Para mover ou renomear uma página:
 
    * **Destino**
 
-      Use o mapa do site (disponível pelo seletor suspenso) para selecionar o local para o qual a página deve ser movida.
+      Use o mapa do site (disponível através do seletor suspenso) para selecionar o local para onde a página deve ser movida.
 
       Caso esteja apenas renomeando a página, ignore este campo.
 
    * **Mover**
 
-      Especifique a página a ser movida - isso geralmente é preenchido por padrão, dependendo de como e onde você começou a ação de mover.
+      Especifique a página que será movida - isso geralmente é preenchido por padrão, dependendo de como e onde você iniciou a ação de mover.
 
    * **Renomear para**
 
@@ -283,13 +282,13 @@ Para mover ou renomear uma página:
 
    * **Ajustar**
 
-      Atualize os links na página listada que apontam para a página movida: por exemplo, se a página A tiver links para a página B, AEM os links na página A caso você mova a página B.
+      Atualize os links na página listada que apontam para a página movida: por exemplo, se a página A tem links para a página B, o AEM ajusta os links na página A caso você mova a página B.
 
       Isso pode ser selecionado/desmarcado para cada página de referência individual.
 
    * **Publicar novamente**
 
-      Publicar novamente a página de referência; novamente, isso pode ser selecionado para cada página individual.
+      Republicar a página de referência; novamente, isso pode ser selecionado para cada página individual.
    >[!NOTE]
    >
    >Se a página já foi ativada, mover a página irá desativá-la automaticamente. Por padrão, ela será reativada quando o movimento for concluído, mas isso pode ser alterado ao desmarcar o campo **Republicar** para a página na janela **Mover.**
@@ -318,7 +317,7 @@ Para mover ou renomear uma página:
 >
 >Se uma página já estiver ativada, ela será desativada automaticamente antes da exclusão.
 
-### Bloquear uma página {#locking-a-page}
+### Bloquear uma página   {#locking-a-page}
 
 Você pode [bloquear/desbloquear uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) em um console ou ao editar uma página individual. Informações sobre se uma página está bloqueada são exibidas em ambos os locais.
 
@@ -335,4 +334,3 @@ Você pode [bloquear/desbloquear uma página](/help/sites-classic-ui-authoring/c
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
 1. Selecione **Criar** para criar a pasta.
-

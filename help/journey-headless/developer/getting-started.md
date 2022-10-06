@@ -1,10 +1,11 @@
 ---
 title: Introdução ao AEM Headless
 description: Nesta parte do AEM Headless Developer Jornada, saiba mais sobre AEM pré-requisitos headless.
-source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
+exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '3031'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -12,7 +13,7 @@ ht-degree: 1%
 
 Nesta parte do [AEM Jornada de desenvolvedor sem periféricos,](overview.md) saiba mais sobre o que é necessário para iniciar seu próprio projeto com AEM Headless.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 No documento anterior da jornada sem cabeçalho AEM, [Saiba mais sobre o desenvolvimento sem periféricos do CMS](learn-about.md) você aprendeu a teoria básica do que é um CMS sem periféricos e agora deve:
 
@@ -24,7 +25,7 @@ Este artigo se baseia nesses fundamentos para que você entenda como usar o AEM 
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender AEM headless no contexto de seu próprio projeto. Depois de ler, você deve:
+Este documento ajuda você a entender AEM headless no contexto de seu próprio projeto. Depois de ler esse documento, você deverá:
 
 * Entenda as noções básicas AEM recursos sem periféricos.
 * Conheça os pré-requisitos para usar AEM recursos headless.
@@ -65,20 +66,20 @@ Os recursos sem periféricos do AEM são baseados em alguns recursos principais.
 
 ### Modelos de fragmentos do conteúdo {#content-fragment-models}
 
-Os Modelos de fragmentos de conteúdo definem a estrutura dos dados e do conteúdo que você cria e gerencia no AEM. Eles servem como uma espécie de scaffolding para o seu conteúdo. Ao optar por criar o conteúdo, os autores selecionam entre os Modelos de fragmento de conteúdo definidos, que os orientam na criação do conteúdo.
+Os Modelos de fragmentos de conteúdo definem a estrutura dos dados e do conteúdo que você cria e gerencia no AEM. Eles servem como uma espécie de andaime para o conteúdo. Ao optar por criar o conteúdo, os autores selecionam entre os Modelos de fragmento de conteúdo definidos, que os orientam na criação do conteúdo.
 
 ### Fragmentos de conteúdo {#content-fragments}
 
-Os Fragmentos de conteúdo permitem que você crie, crie, prepare e publique conteúdo independente da página. Eles permitem que você prepare conteúdo pronto para uso em vários locais e em vários canais.
+Os fragmentos de conteúdo permitem projetar, criar, preparar e publicar conteúdo independente de página. Eles permitem que você deixe o conteúdo pronto para uso em vários locais e em vários canais.
 
-Os fragmentos de conteúdo contêm conteúdo estruturado e podem ser entregues no formato JSON.
+Fragmentos de conteúdo contêm conteúdo estruturado e podem ser entregues no formato JSON.
 
 ### APIs GraphQL e REST {#apis}
 
 Para modificar o conteúdo sem interrupções, o AEM oferece duas APIs robustas.
 
 * A API GraphQL permite criar solicitações para acessar e fornecer Fragmentos de conteúdo.
-* A API REST de ativos permite criar e modificar Fragmentos de conteúdo (e outros ativos).
+* A API REST do Assets permite criar e modificar Fragmentos de conteúdo (e outros ativos).
 
 Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada sem periféricos AEM. Ou consulte a [recursos adicionais](#additional-resources) para obter a documentação adicional.
 
@@ -147,8 +148,8 @@ A primeira pergunta que você deve fazer é &quot;O que estou tentando alcançar
 As funções de qualquer projeto individual variam, mas as importantes a serem consideradas no conteúdo AEM desenvolvimento sem periféricos são:
 
 * [Administrador](#administrator)
-* [Autor do conteúdo](#content-author)
-* [Arquitetura de conteúdo](#content-architect)
+* [Autor de conteúdo](#content-author)
+* [Arquiteto de conteúdo](#content-architect)
 * [Desenvolvedor](#developer)
 
 #### Administrador {#administrator}
@@ -159,7 +160,7 @@ Depois que os usuários são configurados pelo administrador, eles recebem as pe
 
 O administrador deve ser o usuário que configura o AEM e prepara o ambiente de tempo de execução para ativar o [autores de conteúdo](#content-author) para criar e atualizar conteúdo e [desenvolvedores](#developer) para usar APIs que buscam ou modificam o conteúdo de seus aplicativos de experiência.
 
-#### Autor do conteúdo {#content-author}
+#### Autor de conteúdo {#content-author}
 
 Os autores de conteúdo criam e gerenciam o conteúdo que é entregue sem cabeçalho pelo AEM. Os autores de conteúdo usam AEM recursos como Fragmentos de conteúdo e o Console de ativos para gerenciar seu conteúdo.
 
@@ -211,7 +212,7 @@ Consulte a [recursos adicionais](#additional-resources) para obter documentaçã
 
 Como regra geral, as referências do Fragmento de conteúdo não devem ser aninhadas além de cinco níveis.
 
-#### Arquitetura de conteúdo {#content-architect}
+#### Arquiteto de conteúdo {#content-architect}
 
 Os arquitetos de conteúdo analisam os requisitos para os dados que devem ser entregues sem periféricos e definem a estrutura desses dados. Essas estruturas são chamadas de [Modelos de fragmentos do conteúdo](#content-fragment-models) em AEM. Os Modelos de fragmentos do conteúdo são usados como a base dos Fragmentos do conteúdo criados pelos autores do conteúdo.
 
@@ -275,7 +276,7 @@ Você deve continuar sua jornada sem periféricos de AEM revisando o documento e
 Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento sem periféricos revisando o documento [Caminho para sua primeira experiência usando AEM headless,](path-to-first-experience.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não é necessário que eles continuem na jornada sem periféricos.
 
 * [jornada de tradução sem cabeçalho AEM](/help/journey-headless/translation/overview.md) - Essa jornada de documentação oferece uma ampla compreensão da tecnologia sem interface, como a AEM fornece conteúdo sem interface e como você pode traduzi-la.
-* [AEM Tutorials sem cabeça](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com o AEM e escolha o que é certo para você.
+* [AEM Tutorials sem cabeça](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com o AEM e escolha o que é certo para você.
 * [Gerenciamento de conteúdo sem cabeçalho usando APIs GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. A autenticação via AdobeID é necessária.
 * [WKND de guias de AEM - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Este projeto do GitHub inclui aplicativos de exemplo que destacam AEM APIs GraphQL.
 * [Conceitos de criação](/help/sites-authoring/author.md) - Documentação técnica do ambiente de criação de AEM, incluindo detalhes sobre a configuração de publicação do autor

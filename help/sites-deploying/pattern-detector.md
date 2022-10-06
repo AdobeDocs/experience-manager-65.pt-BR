@@ -1,8 +1,8 @@
 ---
 title: Avaliação da complexidade da atualização com o Detector de padrões
-seo-title: Avaliação da complexidade da atualização com o Detector de padrões
+seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: Saiba como usar o Detector de padrões para avaliar a complexidade de sua atualização.
-seo-description: Saiba como usar o Detector de padrões para avaliar a complexidade de sua atualização.
+seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
 uuid: 84d0add9-3123-4188-9877-758911b1899f
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '522'
 ht-degree: 1%
 
 ---
-
 
 # Avaliação da complexidade da atualização com o Detector de padrões
 
@@ -33,7 +32,7 @@ Tal poderia servir de avaliação do esforço de desenvolvimento que está envol
 
 ## Como configurar {#how-to-set-up}
 
-O Detector de padrões é lançado separadamente como um [um pacote](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) funcionando em qualquer versão de AEM de origem de 6.1 para 6.5, direcionando AEM atualização 6.5. Ele pode ser instalado usando o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md).
+O Detector de padrões é lançado separadamente como um [um pacote](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) trabalhar em qualquer versão de AEM de origem de 6.1 para 6.5, direcionando AEM atualização 6.5. Ele pode ser instalado usando o [Gerenciador de pacotes](/help/sites-administering/package-manager.md).
 
 ## Como usar {#how-to-use}
 
@@ -43,17 +42,15 @@ O Detector de padrões é lançado separadamente como um [um pacote](https://exp
 >
 >* aumentar a taxa de detecção
 >* evitar qualquer lentidão em instâncias críticas para os negócios
-
 >
->
-ao mesmo tempo, é recomendável executá-lo **em ambientes de preparo** que estejam o mais próximo possível dos de produção nas áreas de aplicativos, conteúdo e configurações do usuário.
+>ao mesmo tempo, é recomendável executá-lo **em ambientes de preparo** que estejam o mais próximo possível dos de produção nas áreas de aplicativos, conteúdo e configurações do usuário.
 
 Você pode usar vários métodos para verificar a saída do Detector de padrões:
 
 * **Através do console Felix Inventory:**
 
 1. Vá para o Console da Web AEM navegando até *https://serveraddress:serverport/system/console/configMgr*
-1. Selecione **Status - Pattern Detector** conforme mostrado na imagem abaixo:
+1. Selecionar **Status - Detector de padrões** conforme mostrado na imagem abaixo:
 
    ![captura de tela-2018-2-5detector de padrões](assets/screenshot-2018-2-5pattern-detector.png)
 
@@ -87,7 +84,7 @@ A saída terá esta aparência:
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-O progresso pode ser filtrado usando o comando `grep`:
+O progresso pode ser filtrado usando o `grep` comando:
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
@@ -103,7 +100,7 @@ O que resulta na seguinte saída:
 
 ## Manipular a interface JSON {#handling-the-json-interface}
 
-Da mesma forma, o JSON pode ser processado usando a ferramenta [jq](https://stedolan.github.io/jq/) assim que for publicado.
+Da mesma forma, o JSON pode ser processado usando o [ferramenta jq](https://stedolan.github.io/jq/) assim que for publicado.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'

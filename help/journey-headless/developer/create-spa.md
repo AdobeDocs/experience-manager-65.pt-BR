@@ -5,7 +5,7 @@ exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 source-git-commit: 7b97bc0ffb0df6641ae71fa36c459f1368052e12
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Nesta continuação opcional do [AEM Jornada de desenvolvedor sem periféricos,](overview.md) saiba como o AEM pode combinar a entrega sem periféricos com os recursos tradicionais de CMS de pilha completa e como criar SPA editáveis usando AEM estrutura SPA Editor, bem como integrar SPA externos, permitindo recursos de edição, conforme necessário.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 Nesse momento, você deve ter completado o [jornada do desenvolvedor sem periféricos do AEM](overview.md) e compreender as noções básicas de entrega sem interface no AEM incluindo uma compreensão de:
 
@@ -24,7 +24,7 @@ Nesse momento, você deve ter completado o [jornada do desenvolvedor sem perifé
 * Como recuperar e atualizar o conteúdo sem periféricos no AEM.
 * Como participar de um projeto sem cabeçalho AEM.
 
-Então agora você já foi ao vivo com seu primeiro projeto sem Cabeça de AEM ou tem todo o conhecimento que é necessário para isso. Parabéns!
+Então agora você já foi ao vivo com seu primeiro projeto sem Cabeça de AEM ou tem todo o conhecimento que é necessário para isso. Parabéns. 
 
 Então por que você está lendo essa continuação adicional e opcional da jornada? Provavelmente você se lembra disso no [Introdução](getting-started.md#integration-levels) discutimos brevemente como o AEM não só suporta o delivery sem interface e os modelos de pilha completa tradicionais, como também pode suportar modelos híbridos que combinam as vantagens de ambos. Embora não o modelo tradicional sem cabeça, esses modelos híbridos podem oferecer uma flexibilidade sem precedentes a certos projetos.
 
@@ -118,13 +118,13 @@ Veja abaixo para [recursos adicionais](#additional-resources) que pode aprofunda
 
 ## Recursos adicionais {#additional-resources}
 
-Veja a seguir alguns recursos adicionais que aprofundam alguns conceitos mencionados neste documento.
+Veja a seguir alguns recursos adicionais que explicam melhor alguns conceitos mencionados neste documento.
 
 * [Cabeça e Sem Cabeça no AEM](/help/sites-developing/headful-headless.md) - Uma descrição dos diferentes modelos de delivery disponíveis em AEM
-* [SPA Introdução e Apresentação.](/help/sites-developing/spa-walkthrough.md) - Uma boa introdução à SPA em AEM
+* [Introdução e passo a passo do SPA.](/help/sites-developing/spa-walkthrough.md) - Uma boa introdução à SPA em AEM
 * [Desenvolvimento de SPA para AEM](/help/sites-developing/spa-architecture.md) - Diretrizes sobre como desenvolver SPA para AEM
 * [Visão geral do editor de SPA](/help/sites-developing/spa-overview.md) - Detalhes de como o Editor de SPA funciona
 * [Renderização do lado do servidor](/help/sites-developing/spa-ssr.md) - Como configurar o SSR para AEM SPA
 * [Documentos de referência SPA](/help/sites-developing/spa-reference-materials.md) - Referências da API JavaScript e links para projetos de código aberto AEM SPA GitHub
 * [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) - Como criar Fragmentos de conteúdo
-* [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Modelo Maven que cria um projeto mínimo do Adobe Experience Manager (AEM) baseado em práticas recomendadas como ponto de partida para seu site
+* [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) - Modelo Maven que cria um projeto mínimo do Adobe Experience Manager (AEM) baseado em práticas recomendadas como ponto de partida para seu site

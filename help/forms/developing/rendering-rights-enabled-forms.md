@@ -1,8 +1,8 @@
 ---
 title: Forms com direitos de renderização ativados
-seo-title: Forms com direitos de renderização ativados
+seo-title: Rendering Rights-Enabled Forms
 description: Use o serviço Forms para renderizar formulários com direitos de uso aplicados a eles. É possível renderizar formulários ativados por direitos usando a API do Java e a API do serviço da Web.
-seo-description: Use o serviço Forms para renderizar formulários com direitos de uso aplicados a eles. É possível renderizar formulários ativados por direitos usando a API do Java e a API do serviço da Web.
+seo-description: Use the Forms service to render forms that have usage rights applied to them. You can render rights-enabled forms using the Java API and Web Service API.
 uuid: ce5e4be6-d9b0-4989-a0e1-a8c3b98aed77
 contentOwner: admin
 content-type: reference
@@ -11,20 +11,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
 
-
-# Forms habilitado para direitos de renderização {#rendering-rights-enabled-forms}
+# Forms com direitos de renderização ativados {#rendering-rights-enabled-forms}
 
 O serviço Forms pode renderizar formulários com direitos de uso aplicados a eles. Os direitos de uso pertencem a uma funcionalidade que está disponível por padrão no Acrobat, mas não no Adobe Reader, como a capacidade de adicionar comentários a um formulário ou de preencher campos de formulário e salvar o formulário. Forms que têm direitos de uso aplicados a eles são chamados de formulários ativados por direitos. Um usuário que abre um formulário com direitos ativados no Adobe Reader pode executar operações ativadas para esse formulário.
 
-Para aplicar direitos de uso a um formulário, o serviço de extensões do Acrobat Reader DC deve fazer parte da instalação do AEM forms. Além disso, você deve ter uma credencial válida que permita aplicar direitos de uso a documentos PDF. Ou seja, você deve configurar adequadamente o serviço de extensões do Acrobat Reader DC antes de renderizar um formulário com direitos ativados. (Consulte [Sobre o Serviço de extensões do Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
+Para aplicar direitos de uso a um formulário, o serviço de extensões do Acrobat Reader DC deve fazer parte da instalação do AEM forms. Além disso, você deve ter uma credencial válida que permita aplicar direitos de uso a documentos do PDF. Ou seja, você deve configurar adequadamente o serviço de extensões do Acrobat Reader DC antes de renderizar um formulário com direitos ativados. (Consulte [Sobre o serviço de extensões do Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
 
 >[!NOTE]
 >
@@ -32,11 +31,11 @@ Para aplicar direitos de uso a um formulário, o serviço de extensões do Acrob
 
 >[!NOTE]
 >
->Não é possível pré-preencher um formulário com dados XML ao especificar os seguintes direitos de uso: `enableComments`, `enableCommentsOnline`, `enableEmbeddedFiles` ou `enableDigitalSignatures`. (Consulte [Pré-preencher o Forms com layouts flutuantes](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+>Não é possível pré-preencher um formulário com dados XML ao especificar os seguintes direitos de uso: `enableComments`, `enableCommentsOnline`, `enableEmbeddedFiles`ou `enableDigitalSignatures`. (Consulte [Pré-preenchimento do Forms com layouts flutuantes](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Resumo das etapas {#summary-of-steps}
 
@@ -72,7 +71,7 @@ Para renderizar um formulário com direitos ativados, use a mesma lógica de apl
 
 Quando o serviço Forms renderiza um formulário habilitado para direitos, ele retorna um fluxo de dados de formulário que deve ser gravado no navegador da Web cliente. Depois de gravado no navegador da Web do cliente, o formulário fica visível para o usuário. Um usuário que exibe o formulário com direitos ativados no Adobe Reader pode executar operações ativadas para esse formulário.
 
-**Consulte também:**
+**Consulte também**
 
 [Renderizar formulários ativados por direitos usando a API Java](#render-rights-enabled-forms-using-the-java-api)
 
@@ -98,42 +97,42 @@ Renderize um formulário habilitado para direitos usando a API do Forms (Java):
 
 1. Criar um objeto de API do cliente do Forms
 
-   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
-   * Crie um objeto `FormsServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
+   * Crie um `ServiceClientFactory` objeto que contém propriedades de conexão.
+   * Crie um `FormsServiceClient` usando seu construtor e passando o `ServiceClientFactory` objeto.
 
 1. Definir opções de tempo de execução de direitos de uso
 
-   * Crie um objeto `ReaderExtensionSpec` usando seu construtor.
-   * Especifique o alias da credencial chamando o método `ReaderExtensionSpec` do objeto `setReCredentialAlias` e especifique um valor de string que represente o valor do alias.
-   * Defina cada direito de uso chamando o método correspondente que pertence ao objeto `ReaderExtensionSpec`. No entanto, você só poderá definir um direito de uso se a credencial referenciada permitir que você faça isso. Ou seja, você não poderá definir um direito de uso se a credencial não permitir que você o defina. Por exemplo. para definir o direito de uso que permite ao usuário preencher campos de formulário e salvar o formulário, chame o método `ReaderExtensionSpec` do objeto e passe `true`.`setReFillIn`
+   * Crie um `ReaderExtensionSpec` usando seu construtor.
+   * Especifique o alias da credencial chamando o `ReaderExtensionSpec` do objeto `setReCredentialAlias` e especifique um valor de string que represente o valor do alias.
+   * Defina cada direito de uso chamando o método correspondente que pertence ao `ReaderExtensionSpec` objeto. No entanto, você só poderá definir um direito de uso se a credencial referenciada permitir que você faça isso. Ou seja, você não poderá definir um direito de uso se a credencial não permitir que você o defina. Por exemplo. para definir o direito de uso que permite ao usuário preencher campos de formulário e salvar o formulário, chame a função `ReaderExtensionSpec` do objeto `setReFillIn` método e pass `true`.
 
    >[!NOTE]
    >
-   >Não é necessário invocar o método `ReaderExtensionSpec` do objeto `setReCredentialPassword`. Esse método não é usado pelo serviço Forms.
+   >Não é necessário invocar o `ReaderExtensionSpec` do objeto `setReCredentialPassword` método . Esse método não é usado pelo serviço Forms.
 
 1. Renderizar um formulário habilitado para direitos
 
-   Chame o método `FormsServiceClient` do objeto `renderPDFFormWithUsageRights` e passe os seguintes valores:
+   Chame o `FormsServiceClient` do objeto `renderPDFFormWithUsageRights` e transmita os seguintes valores:
 
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão de nome de arquivo. Se você fizer referência a um design de formulário que faz parte de um aplicativo Forms, especifique o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Um objeto `com.adobe.idp.Document` que contém dados para mesclar com o formulário. Se não quiser mesclar dados, passe um objeto `com.adobe.idp.Document` vazio.
-   * Um objeto `PDFFormRenderSpec` que armazena opções de tempo de execução.
-   * Um objeto `ReaderExtensionSpec` que armazena opções de tempo de execução de direitos de uso.
-   * Um objeto `URLSpec` que contém valores de URI exigidos pelo serviço Forms.
+   * A `com.adobe.idp.Document` objeto que contém dados para mesclar com o formulário. Se não quiser mesclar dados, passe um vazio `com.adobe.idp.Document` objeto.
+   * A `PDFFormRenderSpec` objeto que armazena opções de tempo de execução.
+   * A `ReaderExtensionSpec` objeto que armazena opções de tempo de execução de direitos de uso.
+   * A `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms.
 
-   O método `renderPDFFormWithUsageRights` retorna um objeto `FormsResult` que contém um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
+   O `renderPDFFormWithUsageRights` método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
 
 1. Gravar o fluxo de dados do formulário no navegador da Web cliente
 
-   * Crie um objeto `com.adobe.idp.Document` chamando o método `FormsResult` object &#39;s `getOutputContent`.
-   * Obtenha o tipo de conteúdo do objeto `com.adobe.idp.Document` chamando seu método `getContentType`.
-   * Defina o tipo de conteúdo do objeto `javax.servlet.http.HttpServletResponse` chamando seu método `setContentType` e passando o tipo de conteúdo do objeto `com.adobe.idp.Document`.
-   * Crie um objeto `javax.servlet.ServletOutputStream` usado para gravar o fluxo de dados do formulário no navegador da Web cliente, chamando o método `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream`.
-   * Crie um objeto `java.io.InputStream` chamando o método `com.adobe.idp.Document` `getInputStream` do objeto.
-   * Crie uma matriz de bytes para preenchê-la com o fluxo de dados do formulário, chamando o método `InputStream` do objeto e passando a matriz de bytes como um argumento.`read`
-   * Chame o método `javax.servlet.ServletOutputStream` do objeto `write` para enviar o fluxo de dados do formulário para o navegador da Web cliente. Passe a matriz de bytes para o método `write` .
+   * Crie um `com.adobe.idp.Document` chamando o `FormsResult` objeto &quot;s `getOutputContent` método .
+   * Obtenha o tipo de conteúdo da variável `com.adobe.idp.Document` ao invocar seu `getContentType` método .
+   * Defina as `javax.servlet.http.HttpServletResponse` tipo de conteúdo do objeto, chamando seu `setContentType` e a transmissão do tipo de conteúdo do `com.adobe.idp.Document` objeto.
+   * Crie um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados do formulário no navegador da Web cliente, chamando o `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream` método .
+   * Crie um `java.io.InputStream` chamando o `com.adobe.idp.Document` do objeto `getInputStream` método .
+   * Crie uma matriz de bytes para preenchê-la com o fluxo de dados do formulário, chamando o `InputStream` do objeto `read` e transmitindo a matriz de bytes como um argumento.
+   * Chame o `javax.servlet.ServletOutputStream` do objeto `write` para enviar o fluxo de dados do formulário para o navegador da Web cliente. Transmita a matriz de bytes para a `write` método .
 
-**Consulte também:**
+**Consulte também**
 
 [Início rápido (modo SOAP): Renderização de um formulário habilitado para direitos usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
@@ -152,36 +151,36 @@ Renderize um formulário habilitado para direitos usando a API do Forms (serviç
 
 1. Criar um objeto de API do cliente do Forms
 
-   Crie um objeto `FormsService` e defina os valores de autenticação.
+   Crie um `FormsService` e definir valores de autenticação.
 
 1. Definir opções de tempo de execução de direitos de uso
 
-   * Crie um objeto `ReaderExtensionSpec` usando seu construtor.
-   * Especifique o alias da credencial chamando o método `ReaderExtensionSpec` do objeto `setReCredentialAlias` e especifique um valor de string que represente o valor do alias.
-   * Defina cada direito de uso chamando o método correspondente que pertence ao objeto `ReaderExtensionSpec`. No entanto, você só poderá definir um direito de uso se a credencial referenciada permitir que você faça isso. Ou seja, você não poderá definir um direito de uso se a credencial não permitir que você o defina. Para definir o direito de uso que permite ao usuário preencher campos de formulário e salvar o formulário, chame o método `ReaderExtensionSpec` do objeto e passe `true`.`setReFillIn`
+   * Crie um `ReaderExtensionSpec` usando seu construtor.
+   * Especifique o alias da credencial chamando o `ReaderExtensionSpec` do objeto `setReCredentialAlias` e especifique um valor de string que represente o valor do alias.
+   * Defina cada direito de uso chamando o método correspondente que pertence ao `ReaderExtensionSpec` objeto. No entanto, você só poderá definir um direito de uso se a credencial referenciada permitir que você faça isso. Ou seja, você não poderá definir um direito de uso se a credencial não permitir que você o defina. Para definir o direito de uso que permite ao usuário preencher campos de formulário e salvar o formulário, chame a função `ReaderExtensionSpec` do objeto `setReFillIn` método e pass `true`.
 
 1. Renderizar um formulário habilitado para direitos
 
-   Chame o método `FormsService` do objeto `renderPDFFormWithUsageRights` e passe os seguintes valores:
+   Chame o `FormsService` do objeto `renderPDFFormWithUsageRights` e transmita os seguintes valores:
 
    * Um valor de string que especifica o nome do design de formulário, incluindo a extensão de nome de arquivo. Se você fizer referência a um design de formulário que faz parte de um aplicativo Forms, especifique o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Um objeto `BLOB` que contém dados para mesclar com o formulário. Se não quiser mesclar dados com o formulário, é necessário transmitir um objeto `BLOB` baseado em uma fonte de dados XML vazia. Não é possível passar um objeto `BLOB` nulo; caso contrário, uma exceção será lançada.
-   * Um objeto `PDFFormRenderSpec` que armazena opções de tempo de execução.
-   * Um objeto `ReaderExtensionSpec` que armazena opções de tempo de execução de direitos de uso.
-   * Um objeto `URLSpec` que contém valores de URI exigidos pelo serviço Forms.
+   * A `BLOB` objeto que contém dados para mesclar com o formulário. Se você não quiser mesclar dados com o formulário, é necessário enviar uma `BLOB` objeto baseado em uma fonte de dados XML vazia. Não é possível passar uma `BLOB` objeto nulo; caso contrário, uma exceção será lançada.
+   * A `PDFFormRenderSpec` objeto que armazena opções de tempo de execução.
+   * A `ReaderExtensionSpec` objeto que armazena opções de tempo de execução de direitos de uso.
+   * A `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms.
 
-   O método `renderPDFFormWithUsageRights` retorna um objeto `FormsResult` que contém um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
+   O `renderPDFFormWithUsageRights` método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
 
 1. Gravar o fluxo de dados do formulário no navegador da Web cliente
 
-   * Crie um objeto `BLOB` que contenha dados de formulário chamando o método `FormsResult` do objeto `getOutputContent`.
-   * Obtenha o tipo de conteúdo do objeto `BLOB` chamando seu método `getContentType`.
-   * Defina o tipo de conteúdo do objeto `javax.servlet.http.HttpServletResponse` chamando seu método `setContentType` e passando o tipo de conteúdo do objeto `BLOB`.
-   * Crie um objeto `javax.servlet.ServletOutputStream` usado para gravar o fluxo de dados do formulário no navegador da Web cliente, chamando o método `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream`.
-   * Crie uma matriz de bytes e preencha-a chamando o método `BLOB` do objeto `getBinaryData`. Essa tarefa atribui o conteúdo do objeto `FormsResult` à matriz de bytes.
-   * Chame o método `javax.servlet.http.HttpServletResponse` do objeto `write` para enviar o fluxo de dados do formulário para o navegador da Web cliente. Passe a matriz de bytes para o método `write` .
+   * Crie um `BLOB` objeto que contém dados de formulário chamando o `FormsResult` do objeto `getOutputContent` método .
+   * Obtenha o tipo de conteúdo da variável `BLOB` ao invocar seu `getContentType` método .
+   * Defina as `javax.servlet.http.HttpServletResponse` tipo de conteúdo do objeto, chamando seu `setContentType` e a transmissão do tipo de conteúdo do `BLOB` objeto.
+   * Crie um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados do formulário no navegador da Web cliente, chamando o `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream` método .
+   * Crie uma matriz de bytes e preencha-a chamando a variável `BLOB` do objeto `getBinaryData` método . Essa tarefa atribui o conteúdo da `FormsResult` para a matriz de bytes.
+   * Chame o `javax.servlet.http.HttpServletResponse` do objeto `write` para enviar o fluxo de dados do formulário para o navegador da Web cliente. Transmita a matriz de bytes para a `write` método .
 
-**Consulte também:**
+**Consulte também**
 
 [Forms com direitos de renderização ativados](#rendering-rights-enabled-forms)
 

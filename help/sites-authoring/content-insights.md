@@ -2,21 +2,20 @@
 title: Content Insight
 seo-title: Content Insight
 description: O Content Insight oferece informações sobre o desempenho da página usando análise da Web e recomendação de SEO
-seo-description: Content Insight O oferece informações sobre o desempenho da página usando análise da Web e recomendação de SEO
+seo-description: Content Insight provides information about page performance using web analytics and SEO recommendation
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '521'
 ht-degree: 96%
 
 ---
-
 
 # Content Insight{#content-insight}
 
@@ -51,7 +50,7 @@ Consulte [Alteração do período de relatório](/help/sites-authoring/ci-analyz
 
 >[!NOTE]
 >
->Os relatórios do Content Insight exigem que o administrador integre o AEM com o SiteCatalyst, o Target e o BrightEdge. Consulte [Integração com o SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integração com o Adobe Target](/help/sites-administering/target.md) e [Integração com o BrightEdge](/help/sites-administering/brightedge.md).
+>Os relatórios do Content Insight exigem que o administrador integre o AEM com o SiteCatalyst, o Target e o BrightEdge. Consulte [Integração com o SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integração com o Adobe Target](/help/sites-administering/target.md)e [Integração com o BrightEdge](/help/sites-administering/brightedge.md).
 
 ## O Relatório de exibições {#the-views-report}
 
@@ -99,4 +98,3 @@ O Relatório de recomendações de SEO contém os resultados da análise do Brig
 O relatório permite criar tarefas para a realização de melhorias na capacidade de localização da página. As recomendações indicam que as tarefas foram criadas para implementar a recomendação. Consulte [Atribuir tarefas para recomendações de SEO](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
-

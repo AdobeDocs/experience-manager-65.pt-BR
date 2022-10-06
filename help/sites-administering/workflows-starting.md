@@ -23,12 +23,12 @@ Ao administrar workflows, você pode iniciá-los usando uma variedade de método
 
 * Manualmente:
 
-   * Em um [Modelo de fluxo de trabalho](#workflow-models).
+   * De um [Modelo de fluxo de trabalho](#workflow-models).
    * Uso de um pacote de fluxo de trabalho para [processamento em lote](#workflow-packages-for-batch-processing).
 
 * Automaticamente:
 
-   * Em resposta a alterações no nó; [usando um Iniciador](#workflows-launchers).
+   * Em resposta a alterações no nó; [uso de um Iniciador](#workflows-launchers).
 
 >[!NOTE]
 >
@@ -38,19 +38,18 @@ Ao administrar workflows, você pode iniciá-los usando uma variedade de método
 >* [Como aplicar fluxos de trabalho a ativos do DAM](/help/assets/assets-workflow.md)
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Projetos de tradução](/help/sites-administering/tc-manage.md)
-
 >
 
 
 ## Modelos do fluxo de trabalho {#workflow-models}
 
-Você pode iniciar um workflow [com base em um dos modelos](/help/sites-administering/workflows.md#workflow-models-and-instances) listados no console Modelos de fluxo de trabalho. As únicas informações obrigatórias são a carga, embora um título e/ou comentário também possa ser adicionado.
+Você pode iniciar um workflow [baseado em um dos modelos](/help/sites-administering/workflows.md#workflow-models-and-instances) listado no console Modelos de fluxo de trabalho . As únicas informações obrigatórias são a carga, embora um título e/ou comentário também possa ser adicionado.
 
 ## Iniciadores de fluxos de trabalho {#workflows-launchers}
 
 O Workflow Launcher monitora as alterações no repositório de conteúdo para iniciar workflows dependendo da localização e do tipo de recurso do nó alterado.
 
-Usando o **Iniciador** você pode:
+Usar o **Iniciador** é possível:
 
 * Consulte os workflows já iniciados para nós específicos.
 * Selecione um workflow a ser iniciado quando um determinado nó/tipo de nó tiver sido criado/modificado/removido.
@@ -59,7 +58,7 @@ Usando o **Iniciador** você pode:
 Um iniciador pode ser criado para qualquer nó. No entanto, as alterações em determinados nós não iniciam workflows. As alterações nos nós abaixo dos seguintes caminhos não fazem com que os workflows sejam iniciados:
 
 * `/var/workflow/instances`
-* Qualquer nó da caixa de entrada de fluxo de trabalho localizado em qualquer lugar na ramificação `/home/users`
+* Qualquer nó da caixa de entrada do fluxo de trabalho localizado em qualquer lugar na `/home/users` ramificação
 * `/tmp`
 * `/var/audit`
 * `/var/classes`
@@ -68,7 +67,7 @@ Um iniciador pode ser criado para qualquer nó. No entanto, as alterações em d
 * `/var/mobile`
 * `/var/statistics`
 
-   * Exceção: As alterações nos nós abaixo `/var/statistics/tracking` *do* fazem com que os workflows sejam iniciados.
+   * Exceção: Alterações nos nós abaixo `/var/statistics/tracking` *do* fazer com que workflows sejam iniciados.
 
 Várias definições estão incluídas na instalação padrão. Eles são usados para tarefas de gerenciamento de ativos digitais e colaboração social:
 
@@ -88,16 +87,16 @@ Um pacote de fluxo de trabalho:
 
 ## Iniciar um fluxo de trabalho pelo console Modelos {#starting-a-workflow-from-the-models-console}
 
-1. Navegue até o console **Modelos** usando **Ferramentas**, **Fluxo de trabalho**, em seguida **Modelos**.
+1. Navegue até o **Modelos** console usando **Ferramentas**, **Fluxo de trabalho**, em seguida **Modelos**.
 1. Selecione o workflow (de acordo com a exibição do console); você também pode usar a opção Pesquisar (canto superior esquerdo), se necessário:
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >O indicador **[Transient](/help/sites-developing/workflows.md#transient-workflows)** mostra os workflows para os quais o histórico do workflow não será persistente.
+   >O **[Transitório](/help/sites-developing/workflows.md#transient-workflows)** mostra workflows para os quais o histórico do workflow não será persistente.
 
-1. Selecione **Iniciar fluxo de trabalho** na barra de ferramentas.
+1. Selecionar **Iniciar fluxo de trabalho** na barra de ferramentas.
 1. A caixa de diálogo Executar fluxo de trabalho será aberta, permitindo especificar:
 
    * **Carga**
@@ -108,15 +107,15 @@ Um pacote de fluxo de trabalho:
 
       Um título opcional para ajudar a identificar essa instância.
 
-   * **Comentário**
+   * **Comentar**
 
       Um comentário opcional para ajudar a indicar detalhes desta instância.
    ![wf-104](assets/wf-104.png)
 
 ## Criação de uma configuração do Launcher {#creating-a-launcher-configuration}
 
-1. Navegue até o console **Iniciadores de fluxo de trabalho** usando **Ferramentas**, **Fluxo de trabalho**, em seguida **Iniciadores**.
-1. Selecione **Criar** e **Adicionar Iniciador** para abrir a caixa de diálogo:
+1. Navegue até o **Iniciadores de fluxo de trabalho** console usando **Ferramentas**, **Fluxo de trabalho**, em seguida **Lançadores**.
+1. Selecionar **Criar**, em seguida **Adicionar Iniciador** para abrir a caixa de diálogo:
 
    ![wf-105](assets/wf-105.png)
 
@@ -137,7 +136,7 @@ Um pacote de fluxo de trabalho:
 
    * **Modo(s) de execução**
 
-      O tipo de servidor ao qual o iniciador do fluxo de trabalho se aplica. Selecione **Autor**, **Publicar** ou **Autor e Publicação**.
+      O tipo de servidor ao qual o iniciador do fluxo de trabalho se aplica. Selecionar **Autor**, **Publicar** ou **Autor e publicação**.
 
    * **Condições**
 
@@ -165,16 +164,16 @@ Um pacote de fluxo de trabalho:
 
       Controla se o iniciador do fluxo de trabalho está ativado:
 
-      * Selecione **Ativar** para iniciar fluxos de trabalho quando as propriedades de configuração forem satisfeitas.
-      * Selecione **Disable** quando o workflow não deve ser executado (não mesmo quando as propriedades de configuração são satisfeitas).
+      * Selecionar **Habilitar** para iniciar workflows quando as propriedades de configuração forem satisfeitas.
+      * Selecionar **Desativar** quando o workflow não deve ser executado (nem mesmo quando as propriedades de configuração são satisfeitas).
    * **Excluir lista**
 
       Isso especifica qualquer evento JCR a ser excluído (ou seja, ignorado) ao determinar se um workflow deve ser acionado.
 
       Esta propriedade do iniciador é uma lista de itens separada por vírgulas: &quot;
 
-      * `property-name` ignore qualquer  `jcr` evento que tenha sido acionado no nome da propriedade especificada. &quot;
-      * `event-user-data:<*someValue*>` ignora qualquer evento que contenha o  `*<someValue*`>  `user-data` definido por meio da  [ `ObservationManager` API] (https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+      * `property-name` ignorar qualquer `jcr` evento que foi acionado no nome da propriedade especificada. &quot;
+      * `event-user-data:<*someValue*>` ignora qualquer evento que contenha a variável `*<someValue*`> `user-data` definido pelo [ `ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
       Por exemplo:
 
@@ -188,10 +187,10 @@ Um pacote de fluxo de trabalho:
 
 
 
-1. Selecione **Create** para criar o iniciador e retornar ao console.
+1. Selecionar **Criar**, para criar o iniciador e retornar ao console.
 
    Quando o evento apropriado ocorrer, o iniciador será acionado e o fluxo de trabalho será iniciado.
 
 ## Gerenciamento de uma configuração do Launcher {#managing-a-launcher-configuration}
 
-Depois de criar a configuração do iniciador, você pode usar o mesmo console para selecionar a instância e, em seguida, **Exibir propriedades** (e editá-las) ou **Excluir**.
+Depois de criar a configuração do iniciador, você pode usar o mesmo console para selecionar a instância e, em seguida, **Propriedades da exibição** (e editá-las) ou **Excluir**.

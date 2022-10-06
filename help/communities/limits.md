@@ -1,8 +1,8 @@
 ---
 title: Limites de contribuição dos membros
-seo-title: Limites de contribuição dos membros
+seo-title: Member Contribution Limits
 description: O recurso de limites de contribuição permite limitar as contribuições para proteção contra spam
-seo-description: O recurso de limites de contribuição permite limitar as contribuições para proteção contra spam
+seo-description: Contribution limits feature lets you limit the contributions to protect against spam
 uuid: 99b2a855-3f0d-41a0-9572-517a7f29af9f
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,8 +13,8 @@ role: Admin
 exl-id: d00a8eb2-47ce-425a-a312-f043f82912be
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 0%
+source-wordcount: '434'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ O recurso de limites de contribuição oferece a capacidade de limitar as contri
 
 Quando um membro é limitado, qualquer postagem que exceda o número permitido de contribuições resultará em um alerta de que o limite foi excedido e a postagem é rejeitada. O membro da comunidade pode então ir para o centro de mensagens da comunidade e entrar em contato com um gerente da comunidade que pode remover os limites, se apropriado.
 
-Os limites de contribuição podem ser ativados individualmente a partir do [console Membros](members.md) e/ou configurados para serem ativados automaticamente quando os visitantes do site se tornam novos membros.
+Os limites de contribuição podem ser ativados individualmente a partir da variável [Console de membros](members.md) e/ou configurados para serem ativados automaticamente quando os visitantes do site se tornam novos membros.
 
 Usando o console Membros , os limites de contribuição podem ser removidos de forma proativa para um membro por um gerente de comunidade a qualquer momento ou removidos de forma reativa quando um membro envia uma mensagem para um gerente de comunidade que faz tal solicitação.
 
@@ -46,14 +46,14 @@ Para acessar essa configuração do OSGi:
 
    * Por exemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Localize `AEM Communities User Generated Content Contribution Limits Configuration`.
+* Localizar `AEM Communities User Generated Content Contribution Limits Configuration`.
 * Selecione o ícone de edição.
 
 ![configure-limits](assets/configure-limits.png)
 
 * **[!UICONTROL Aplicar automaticamente limites de contribuição de UGC]**
 
-   Se marcada, defina automaticamente os limites de contribuição para os usuários quando eles se registrarem como membros da comunidade. Isso é refletido no perfil do membro da comunidade e pode ser ativado/desativado no [console de membros](members.md). Os novos membros com um endereço de email de uma lista de permissões de domínios nunca são restritos.
+   Se marcada, defina automaticamente os limites de contribuição para os usuários quando eles se registrarem como membros da comunidade. Isso é refletido no perfil do membro da comunidade e pode ser ativado/desativado no [console membros](members.md). Os novos membros com um endereço de email de uma lista de permissões de domínios nunca são restritos.
 
    O padrão está desmarcado.
 
@@ -73,7 +73,7 @@ Para acessar essa configuração do OSGi:
 
    Uma lista de  lista de permissões de um ou mais domínios de email. Selecione o ícone + para fazer entradas adicionais.
 
-   Os usuários com endereços de email na lista de permissões de domínios não são afetados quando os limites de contribuição do UGC são aplicados automaticamente. Por exemplo, se o domínio `mycompany.com` for adicionado à lista de domínios, um membro com endereço de email `me@mycompany.com` nunca será restrito da publicação.
+   Os usuários com endereços de email na lista de permissões de domínios não são afetados quando os limites de contribuição do UGC são aplicados automaticamente. Por exemplo, se domínio `mycompany.com` é adicionado à lista de domínios e, em seguida, um membro com endereço de email `me@mycompany.com` nunca é restringido a postagem.
 
    O padrão é uma  lista de permissões vazia.
 

@@ -1,8 +1,8 @@
 ---
 title: Publicar coleções no Brand Portal
-seo-title: Publicar coleções no Brand Portal
+seo-title: Publish collections to Brand Portal
 description: Saiba como publicar e cancelar a publicação de coleções no Brand Portal.
-seo-description: Saiba como publicar e cancelar a publicação de coleções no Brand Portal.
+seo-description: Learn how to publish and unpublish collections to Brand Portal.
 uuid: 7de58548-4cfa-4a94-bac7-9e914dee9042
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -15,8 +15,8 @@ role: User
 exl-id: 8f426012-d9ec-418e-8ab6-78e4aeff7538
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 37%
+source-wordcount: '322'
+ht-degree: 36%
 
 ---
 
@@ -28,7 +28,7 @@ Se fizer modificações subsequentes na coleção original no AEM Assets, as alt
 
 >[!NOTE]
 >
->Os fragmentos de conteúdo não podem ser publicados no Brand Portal. Portanto, se você selecionar fragmentos de conteúdo no Autor do AEM, a ação **Publicar no Brand Portal** não estará disponível.
+>Os fragmentos de conteúdo não podem ser publicados no Brand Portal. Portanto, se você selecionar fragmentos de conteúdo no AEM Author, então **Publicar no Brand Portal** não está disponível.
 >
 >Se as coleções que contêm fragmentos de conteúdo forem publicadas do AEM Author para o Brand Portal, todo o conteúdo da pasta, exceto fragmentos de conteúdo, será replicado para a interface do Brand Portal.
 

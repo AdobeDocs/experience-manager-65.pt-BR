@@ -1,21 +1,20 @@
 ---
 title: Sistema de estilos
-seo-title: Sistema de estilos
+seo-title: Style System
 description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
-seo-description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
+seo-description: The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
 uuid: 0d857650-8738-49e6-b431-f69c088be74f
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
-translation-type: tm+mt
-source-git-commit: 0985ba24f7430381fccc40faf3a316d3abd85a30
+exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1365'
-ht-degree: 96%
+source-wordcount: '1314'
+ht-degree: 98%
 
 ---
-
 
 # Sistema de estilos{#style-system}
 
@@ -62,9 +61,9 @@ O diagrama a seguir ilustra a arquitetura do Sistema de estilos.
 
 ![aem-style-system](assets/aem-style-system.png)
 
-## Uso {#use}
+## Utilização {#use}
 
-Para demonstrar o recurso, usaremos como exemplo a implementação da [WKND](https://docs.adobe.com/content/help/br/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) do [componente de título](https://www.adobe.com/go/aem_cmp_title_v2) do componente principal.
+Para demonstrar o recurso, usaremos como exemplo a implementação da [WKND](https://docs.adobe.com/content/help/pt-BR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) do [componente de título](https://www.adobe.com/go/aem_cmp_title_v2) do componente principal.
 
 As seções a seguir, [Como um autor de conteúdo](#as-a-content-author) e [Como um autor de modelo](#as-a-template-author) descrevem como testar a funcionalidade do Sistema de estilos usando o Sistema de estilos da WKND.
 
@@ -74,7 +73,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 1. Configure as classes CSS que deseja disponibilizar para os autores de conteúdo, conforme descrito na seção [Como um autor de modelo](#as-a-template-author).
 1. Os autores de conteúdo podem usar os estilos conforme descrito na seção [Como um autor de conteúdo](#as-a-content-author).
 
-### Como autor de conteúdo   {#as-a-content-author}
+### Como autor de conteúdo  {#as-a-content-author}
 
 1. Depois de instalar o projeto WKND, navegue até a página inicial principal no idioma inglês da WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en` e edite a página.
 1. Selecione um componente de **Título** mais abaixo da página
@@ -89,7 +88,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
    >
    >Neste exemplo, os estilos de **Cores** (**Preto**, **Branco** e **Cinza**) são mutuamente exclusivos, enquanto as opções de **Estilo** (**Sublinhado**, **Alinhar à direita** e **Miniespaçamento**) podem ser combinadas. Isso pode ser [configurado no modelo como o autor do modelo](#as-a-template-author).
 
-### Como autor de modelo   {#as-a-template-author}
+### Como autor de modelo  {#as-a-template-author}
 
 1. Ao editar a página inicial mestre em inglês do WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite o modelo da página em **Informações da página -> Editar modelo**.
 
@@ -112,7 +111,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
 >[!CAUTION]
 >
->As classes CSS (bem como qualquer Javascript necessário) configuradas como propriedades de estilo da política de um componente devem ser implantadas como [Bibliotecas do cliente](/help/sites-developing/clientlibs.md) para funcionarem.
+>As classes CSS (bem como qualquer Javascript necessário) configuradas como propriedades de estilo da política de um componente devem ser implantadas como [Bibliotecas do cliente](/help/sites-developing/clientlibs.md) para funcionarem.
 
 ## Configurar {#setup}
 
@@ -131,7 +130,7 @@ Com o componente configurado, os estilos configurados pelos autores da página s
 
 ### Habilitar a guia Estilos na caixa de diálogo Editar {#enable-styles-tab-edit}
 
-A partir AEM versão 6.5.3.0, uma guia Estilos opcional na caixa de diálogo Editar está disponível. Diferentemente da guia da caixa de diálogo Design, a guia na caixa de diálogo Editar não é essencial para o funcionamento do Sistema de estilos, mas é uma interface alternativa opcional para um autor de conteúdo definir estilos.
+Desde AEM versão 6.5.3.0, uma guia Estilos opcional na caixa de diálogo Editar agora está disponível. Diferentemente da guia da caixa de diálogo Design, a guia na caixa de diálogo Editar não é essencial para o funcionamento do Sistema de estilos, mas é uma interface alternativa opcional para um autor de conteúdo definir estilos.
 
 A guia da caixa de diálogo Editar pode ser incluída de maneira semelhante na guia da caixa de diálogo Design:
 
@@ -142,7 +141,7 @@ A guia da caixa de diálogo Editar pode ser incluída de maneira semelhante na g
 >
 >A guia Estilos na caixa de diálogo Editar não está habilitada por padrão.
 
-### Estilos com nomes de elemento   {#styles-with-element-names}
+### Estilos com nomes de elemento  {#styles-with-element-names}
 
 Um desenvolvedor também pode configurar uma lista de nomes de elementos permitidos para os estilos no componente por meio da propriedade de matriz da sequência `cq:styleElements`. Na guia Estilos da política na caixa de diálogo de design, o autor do modelo também pode escolher um nome de elemento para definir cada estilo. Isso definirá o nome de elemento do wrapper.
 
@@ -159,7 +158,6 @@ Essa propriedade é definida no nó `cq:Component`. Por exemplo:
 >1. Por fim, a `cq:htmlTag`/ `cq:tagName` do componente será considerada um valor de fallback.
 
 >
-
 
 
 Essa capacidade de definir nomes de estilo é útil para componentes muito genéricos, como o Contêiner de layout ou o componente de Fragmento de conteúdo, para oferecer-lhes significado adicional.

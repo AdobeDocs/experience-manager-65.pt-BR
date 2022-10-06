@@ -496,7 +496,7 @@ Revise a funcionalidade do **Novo** selo que já foi implementado no Teaser do p
 
 ## Recursos adicionais {#additional-resources}
 
-- [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt_BR)
+- [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
 - [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components)
 - [Personalizar os Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [Personalizar os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=pt-BR)

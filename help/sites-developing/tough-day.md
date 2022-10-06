@@ -131,7 +131,7 @@ Você pode encontrar os parâmetros relevantes na lista abaixo:
 | `--password=<Val>` | Senha para o usuário em questão. | administrador |  |
 | `--duration=<Val>` | A duração dos testes. Pode ser expresso em (**s**)segundos, (**m**), (**h**)e (**d**). | 1d |  |
 | `--timeout=<Val>` | Por quanto tempo um teste será executado antes de ser interrompido e marcado como defeituoso. Expressa em segundos. | 180 |  |
-| `--suite=<Val>` | O valor pode ser uma lista ou uma lista (separada por vírgulas) de conjuntos de testes predefinidos. | dilema |  |
+| `--suite=<Val>` | O valor pode ser uma ou uma lista (separada por vírgulas) de conjuntos de testes predefinidos. | dilema |  |
 | `--configfile=<Val>` | O arquivo de configuração de código direcionado. |  |  |
 | `--contextpath=<Val>` | Caminho de contexto da instância. |  |  |
 | `--loglevel=<Val>` | O nível de log do mecanismo do Dia 2 Difícil. | INFO | TUDO, DEPURAR, INFORMAÇÕES, AVISO, ERRO, FATAL, DESLIGADO |

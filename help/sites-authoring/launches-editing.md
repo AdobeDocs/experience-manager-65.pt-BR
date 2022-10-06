@@ -1,8 +1,8 @@
 ---
-title: Edição de lançamentos
-seo-title: Edição de lançamentos
-description: 'Depois de criar um lançamento para a sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de lançamento da(s) página(s). '
-seo-description: 'Depois de criar um lançamento para a sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de lançamento da(s) página(s). '
+title: Edição de inicializações
+seo-title: Editing Launches
+description: Depois de criar um lançamento para a sua página (ou conjunto de páginas), você pode editar o conteúdo na cópia de lançamento da(s) página(s).
+seo-description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s).
 uuid: 1f2c2e53-73a3-4bd7-b2c7-425491bc0118
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,29 +11,28 @@ topic-tags: site-features
 discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: 6f1f4fbaf9ee4b5ab073a27a58cb040c76230ebd
+exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 93%
+source-wordcount: '525'
+ht-degree: 99%
 
 ---
 
-
-# Edição de lançamentos{#editing-launches}
+# Edição de inicializações{#editing-launches}
 
 ## Edição de páginas de lançamento {#editing-launch-pages}
 
 Quando um lançamento foi criado para uma página (ou um conjunto de páginas), é possível editar o conteúdo na cópia de lançamento da(s) página(s).
 
-1. Acesse [Lançamento a partir de Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis.
+1. Acesse [Inicialização a partir de Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar as ações disponíveis.
 1. Selecione **Vá para a página** para abrir a página para edição.
 
 >[!NOTE]
 >
 >Você não tem permissão para mover uma página em um lançamento. Tentar esta ação acionará uma mensagem de aviso:
 >
->* Aviso: Esta página é a origem de um lançamento. Não é permitido mover a página.
+>* Aviso: esta página é a origem de um lançamento. Não é permitido mover a página.
 
 
 ### Edição de páginas de lançamento sujeitas a uma live copy {#editing-launch-pages-subject-to-a-live-copy}
@@ -66,7 +65,7 @@ Para rastrear as alterações feitas, é possível exibir a inicialização em *
 
    Para obter informações completas sobre como usar esse recurso, consulte [Diferencial de página](/help/sites-authoring/page-diff.md).
 
-## Alteração nas páginas de origem usadas  {#changing-the-source-pages-used}
+## Alteração nas páginas de origem usadas {#changing-the-source-pages-used}
 
 A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de páginas de origem para um lançamento:
 
@@ -87,7 +86,7 @@ A qualquer momento, você pode adicionar ou remover páginas ao/do intervalo de 
    >
    >Para adicionar páginas a um lançamento, elas devem estar abaixo de uma raiz de linguagem comum, isto é, dentro de um único site.
 
-## Edição de configuração de lançamento  {#editing-a-launch-configuration}
+## Edição de configuração de lançamento {#editing-a-launch-configuration}
 
 A qualquer momento, você pode editar as propriedades de um lançamento:
 
@@ -104,9 +103,9 @@ A qualquer momento, você pode editar as propriedades de um lançamento:
 
 1. Faça as alterações necessárias e confirme com **Salvar**.
 
-   Consulte [Lançamentos - a ordem de eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter informações sobre o propósito e a interação dos campos **Data de lançamento** e **Pronto para produção**.
+   Consulte [Inicializações - a Ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter informações sobre a finalidade e interação dos campos **Data de inicialização** e **Pronto para produção**.
 
-## Descoberta do status de lançamento de uma página  {#discovering-the-launch-status-of-a-page}
+## Descoberta do status de lançamento de uma página {#discovering-the-launch-status-of-a-page}
 
 O status é mostrado quando você seleciona um lançamento específico na guia Referências (consulte [Lançamentos em Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 

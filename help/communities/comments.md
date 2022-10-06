@@ -1,8 +1,8 @@
 ---
 title: Uso de comentários
-seo-title: Uso de comentários
-description: Os recursos de comentários permitem que visitantes do site conectados compartilhem suas opiniões e conhecimentos
-seo-description: Os recursos de comentários permitem que visitantes do site conectados compartilhem suas opiniões e conhecimentos
+seo-title: Using Comments
+description: O recurso Comentários permite que visitantes do site que fizeram logon compartilhem suas opiniões e conhecimentos
+seo-description: Comments feature lets signed-in site visitors share their opinions and knowledge
 uuid: 40acd962-846c-483c-b789-aab3a7d2b31b
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,51 +10,50 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '980'
 ht-degree: 6%
 
 ---
 
-
-# Usando Comentários {#using-comments}
+# Uso de comentários {#using-comments}
 
 ## Introdução {#introduction}
 
-O recurso comments é usado para permitir que visitantes do site conectados (membros) compartilhem suas opiniões e conhecimentos sobre o conteúdo do site. Esse recurso geralmente já está presente em outros recursos, mas pode ser adicionado a qualquer site.
+O recurso de comentários é usado para permitir que visitantes do site que fizeram logon (membros) compartilhem suas opiniões e conhecimentos sobre o conteúdo do site. Esse recurso geralmente já está presente em outros recursos, mas pode ser adicionado a qualquer site.
 
 O documento descreve:
 
-* Adicionando `Comments` a uma página.
-* Configurações do componente `Comments`.
+* Adição de `Comments` para uma página.
+* Configurações para o `Comments` componente.
 
 >[!NOTE]
 >
->Não há suporte para a publicação anônima de um comentário. Os visitantes do site devem se registrar (tornar-se um membro) e fazer logon para participar.
+>A publicação anônima de um comentário não é suportada. Os visitantes do site devem se registrar (se tornar um membro) e fazer logon para participar.
 
 ### Adicionar comentários a uma página {#adding-comments-to-a-page}
 
-Para adicionar um componente `Comments` a uma página no modo de autor, use o navegador de componentes para localizar
+Para adicionar uma `Comments` para uma página no modo autor, use o navegador de componentes para localizar
 
 * `Communities / Comments`
 
-e arraste-o para o lugar em uma página, como uma posição relativa ao recurso no qual os usuários podem comentar ou simplesmente na parte inferior da página.
+e arraste-a para o local em uma página, como uma posição relativa ao recurso no qual os usuários devem comentar ou simplesmente na parte inferior da página.
 
-Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](/help/communities/basics.md).
+Para obter as informações necessárias, visite [Noções básicas sobre componentes do Communities](/help/communities/basics.md).
 
-Quando as [bibliotecas do lado do cliente necessárias](/help/communities/essentials-comments.md#essentials-for-client-side) forem incluídas, o componente `Comments` será exibido desta forma.
+Quando a variável [bibliotecas obrigatórias do lado do cliente](/help/communities/essentials-comments.md#essentials-for-client-side) são incluídos, é assim que a variável `Comments` componente é exibido.
 
-![comments-component](assets/comments-component.png)
+![componente comentários](assets/comments-component.png)
 
 >[!NOTE]
 >
->Somente um componente `Comments` pode existir em uma página. Esteja ciente de que vários recursos das Comunidades já incluem comentários, como um blog, calendário, fórum, QnA e revisões.
+>Somente um `Comments` pode existir em uma página. Esteja ciente de que vários recursos das Comunidades já incluem comentários, como um blog, calendário, fórum, QnA e revisões.
 
-### Configurando Comentários {#configuring-comments}
+### Configuração de comentários {#configuring-comments}
 
-Selecione o componente `Comments` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
+Selecione o `Comments` para acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
 
 ![ícone configurar](assets/configure.png)
 
@@ -62,7 +61,7 @@ Selecione o componente `Comments` inserido para acessar e selecione o ícone `Co
 
 #### Guia Comentários {#comments-tab}
 
-Na guia **Comments**, especifique como os comentários são inseridos pelos visitantes.
+Em **Comentários** , especifique como os comentários são inseridos pelos visitantes.
 
 * **Permitir respostas**
 
@@ -78,7 +77,7 @@ Na guia **Comments**, especifique como os comentários são inseridos pelos visi
 
 * **Tamanho máximo do arquivo**
 
-   Relevante somente se a opção Permitir uploads de arquivo estiver marcada. Esse valor limita o tamanho do arquivo carregado. O limite padrão é 10 MB.
+   Relevante somente se Permitir uploads de arquivo estiver marcado. Esse valor limita o tamanho do arquivo carregado. O limite padrão é de 10 MB.
 
 * **Comprimento máximo da mensagem de**
 
@@ -86,9 +85,9 @@ Na guia **Comments**, especifique como os comentários são inseridos pelos visi
 
 * **Tipos de arquivos permitidos**
 
-   Relevante somente se a opção Permitir uploads de arquivo estiver marcada. Uma lista separada por vírgulas de extensões de nome de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
+   Relevante somente se Permitir uploads de arquivo estiver marcado. Uma lista separada por vírgulas de extensões de nome de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão é nenhum especificado, de modo que todos os tipos de arquivo são permitidos.
 
-* **Editor de Rich Text**
+* **Editor de rich text**
 
    Se marcada, os comentários são inseridos com marcação. O padrão está desmarcado.
 
@@ -102,11 +101,11 @@ Na guia **Comments**, especifique como os comentários são inseridos pelos visi
 
 * **Exibir selos**
 
-   Se marcada, permita que os crachás ganhados e premiados sejam exibidos. O padrão está desmarcado.
+   Se marcada, permita que os emblemas ganhados e atribuídos sejam exibidos. O padrão está desmarcado.
 
 #### Guia Moderação do usuário {#user-moderation-tab}
 
-Na guia **Moderação do usuário**, especifique como os comentários publicados serão gerenciados. Para obter mais informações, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
+Em **Moderação do usuário** , especifique como os comentários publicados são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
 * **Pré-moderação**
 
@@ -122,7 +121,7 @@ Na guia **Moderação do usuário**, especifique como os comentários publicados
 
 * **Fechar/Reabrir comentários**
 
-   Se marcada, permita que os moderadores fechem e reabram os comentários. O padrão está desmarcado.
+   Se marcada, permita que os moderadores fechem e reabram comentários. O padrão está desmarcado.
 
 * **Sinalizar comentários**
 
@@ -130,11 +129,11 @@ Na guia **Moderação do usuário**, especifique como os comentários publicados
 
 * **Sinalizar lista de motivo**
 
-   Se marcada, permita que os membros escolham, em uma lista suspensa, seu motivo para marcar um comentário como inapropriado. O padrão está desmarcado.
+   Se marcada, permita que os membros escolham, em uma lista suspensa, o motivo para marcar um comentário como inapropriado. O padrão está desmarcado.
 
 * **Motivo personalizado de sinalização**
 
-   Se marcada, permita que os membros digitem seu próprio motivo para marcar um comentário como inapropriado. O padrão está desmarcado.
+   Se marcada, permita que os membros insiram seu próprio motivo para marcar um comentário como inapropriado. O padrão está desmarcado.
 
 * **Limite de moderação**
 
@@ -142,47 +141,47 @@ Na guia **Moderação do usuário**, especifique como os comentários publicados
 
 * **Limite de sinalização**
 
-   Insira o número de vezes que um comentário deve ser sinalizado antes de ser ocultado da visualização pública. Esse número deve ser maior ou igual ao **Limite de moderação**. O padrão é 5.
+   Insira o número de vezes que um comentário deve ser sinalizado antes de ser oculto da exibição pública. Esse número deve ser maior ou igual a **Limite de moderação**. O padrão é 5.
 
-#### guia Configurações de classificação {#sort-settings-tab}
+#### Guia Configurações de classificação {#sort-settings-tab}
 
-Na guia **Classificar configurações**, especifique como os comentários publicados são classificados quando exibidos.
+Em **Classificar configurações** , especifique como os comentários publicados são classificados quando exibidos.
 
 * **Classificar campo**
 
-   Puxe para baixo para selecionar `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed` ou `Most Liked`.
+   Puxe para baixo para selecionar um dos `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`ou `Most Liked`.
 
 * **Ordem de classificação**
 
-   Puxe para baixo para selecionar `Ascending` ou `Descending`.
+   Puxe para baixo para selecionar um dos `Ascending` ou `Descending`.
 
-### Alteração para um Tipo de Comentário Personalizado {#changing-to-a-custom-comment-type}
+### Alterar para um tipo de comentário personalizado {#changing-to-a-custom-comment-type}
 
-Ao alterar o Tipo de recurso de comentário, o sistema de comentários não gera mais uma instância de um comentário usando o padrão, mas uma que foi personalizada (estendida) pelos desenvolvedores.
+Ao alterar o Tipo de recurso do comentário, o sistema de comentários não gera mais uma instância de um comentário usando o padrão, mas uma que foi personalizada (estendida) pelos desenvolvedores.
 
-Depois que os tipos de recursos personalizados forem conhecidos, digite [Modo de design](/help/sites-authoring/default-components-designmode.md) e clique no duplo no componente `Comments` inserido para abrir uma caixa de diálogo com uma guia extra.
+Depois que os tipos de recursos personalizados forem conhecidos, insira [Modo Design](/help/sites-authoring/default-components-designmode.md) e clique duas vezes em `Comments` para abrir uma caixa de diálogo com uma guia extra.
 
-Na guia **Tipos de recurso**, especifique o resourceType personalizado para novas instâncias dos componentes `Comments or Voting`:
+Em **Tipos de recursos** , especifique o resourceType personalizado para novas instâncias do `Comments or Voting` componentes:
 
 ![tipo de recurso](assets/resource-type.png)
 
 * **Tipo de recursos de comentários**
 
-   Navegue até resourceType de um componente `comment` estendido (comentário único) em /apps. Por exemplo, `/apps/social/commons/components/hbs/comments/comment`
+   Navegue até o resourceType de um `comment` componente (comentário único) em /apps. Por exemplo, `/apps/social/commons/components/hbs/comments/comment`
 
-   Esse recurso identifica o resourceType do UGC criado quando um visitante postou um comentário.
+   Esse recurso identifica o resourceType do UGC criado quando um visitante publica um comentário.
 
 * **Tipo de recursos para pesquisa**
 
-   Navegue até resourceType de um componente `voting` estendido em /apps. Por exemplo, `/apps/social/components/hbs/voting`
+   Navegue até o resourceType de um `voting` componente em /apps. Por exemplo, `/apps/social/components/hbs/voting`
 
    Esse recurso identifica o tipo de recurso do UGC criado quando um visitante posta um voto.
 
-* **Tipo de recurso do sistema de comentários**
+* **Tipo de Recurso do Sistema de Comentários**
 
-   Navegue até resourceType de um componente `comments`estendido (Sistema de comentários) em /apps. Deixe em branco, a menos que o modelo de página [inclua dinamicamente](/help/communities/scf.md#add-or-include-a-communities-component) o Sistema de comentários no script subjacente em vez de ser adicionado à página como um recurso (nó de comentários). Saiba mais lendo sobre o auxiliar [{{include}}](/help/communities/handlebars-helpers.md#include).
+   Navegue até o resourceType de um `comments`componente (Sistema de comentários) em /apps. Deixe em branco, a menos que o modelo da página [inclui dinamicamente](/help/communities/scf.md#add-or-include-a-communities-component) o Sistema de comentários no script subjacente em vez de ser adicionado à página como um recurso (nó de comentários). Saiba mais ao ler sobre o [{{include}} auxiliar](/help/communities/handlebars-helpers.md#include).
 
-### Experiência de Visitante do site {#site-visitor-experience}
+### Experiência de visitante do site {#site-visitor-experience}
 
 #### Moderadores e administradores {#moderators-and-administrators}
 
@@ -190,21 +189,21 @@ Quando o usuário conectado tem privilégios de moderador ou administrador, ele 
 
 #### Membros {#members}
 
-Quando o visitante do site estiver conectado, dependendo da configuração, eles poderão
+Quando o visitante do site está conectado, dependendo da configuração, ele pode
 
 * Publicar um novo comentário
-* Editar seus próprios comentários
+* Editar seu próprio comentário
 * Excluir seus próprios comentários
 * Sinalizar comentários de outras pessoas
 
 #### Anônimo {#anonymous}
 
-Os visitantes do site que não estão conectados só podem ler comentários publicados, traduzi-los se houver suporte, mas não podem adicionar comentários nem sinalizar comentários de outras pessoas.
+Os visitantes do site que não estiverem conectados podem ler somente os comentários publicados, traduzi-los se houver suporte, mas não podem adicionar um comentário nem sinalizar os comentários de outras pessoas.
 
 ### Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas na página [Comments Essentials](/help/communities/essentials-comments.md) para desenvolvedores.
+Mais informações podem ser encontradas no [Observações essenciais](/help/communities/essentials-comments.md) página para desenvolvedores.
 
-Para moderação de comentários publicados, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
+Para obter a moderação dos comentários publicados, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
-Para obter a tradução de comentários postados, consulte [Traduzindo conteúdo gerado pelo usuário](/help/communities/translate-ugc.md).
+Para obter a tradução de comentários postados, consulte [Tradução de conteúdo gerado pelo usuário](/help/communities/translate-ugc.md).

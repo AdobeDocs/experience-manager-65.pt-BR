@@ -1,58 +1,57 @@
 ---
 title: Trabalhar com a área de trabalho do AEM Forms
-seo-title: Trabalhar com a área de trabalho do AEM Forms
-description: Comece com a área de trabalho da AEM Forms com esta rápida visão geral dos workflows do processo.
-seo-description: Comece com a área de trabalho da AEM Forms com esta rápida visão geral dos workflows do processo.
+seo-title: Working with AEM Forms workspace
+description: Introdução ao AEM Forms workspace com esta rápida visão geral dos fluxos de trabalho do processo.
+seo-description: Get started with AEM Forms workspace with this quick overview of the process workflows.
 uuid: 36381e7b-1533-459c-80de-92e806a49cd5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
+exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
-
 
 # Trabalhar com a área de trabalho do AEM Forms{#working-with-aem-forms-workspace}
 
 ## Introdução {#introduction}
 
-A área de trabalho do AEM Forms faz parte do AEM Forms. O Workspace facilita a execução do HTML Forms, além de PDF forms. Agora você pode envolver-se em processos comerciais de interfaces móveis e aplicativos da Web.
+A área de trabalho do AEM Forms faz parte do AEM Forms. O Workspace facilita a representação do HTML Forms, além do PDF forms. Agora você pode participar de processos de negócios de interfaces móveis e aplicativos Web.
 
-Além disso, a área de trabalho da AEM Forms é altamente personalizável usando as metodologias de desenvolvimento padrão HTML e JavaScript™. É um software baseado em componentes que se integra facilmente com seus outros aplicativos da Web.
+Além disso, a AEM Forms workspace é altamente personalizável usando as metodologias de desenvolvimento padrão do HTML e JavaScript™. É um software baseado em componentes que se integra facilmente aos outros aplicativos da Web.
 
-Para obter mais informações, consulte [Introdução ao espaço de trabalho AEM Forms](/help/forms/using/introduction-html-workspace.md).
+Para obter mais informações, consulte [Introdução à área de trabalho do AEM Forms](/help/forms/using/introduction-html-workspace.md).
 
 ## Familiarizar-se {#getting-familiar}
 
-Para se familiarizar com o processo completo de criação de um aplicativo de formulários para automatizar um processo de negócios, siga as orientações. Você pode criar, gerenciar e testar um aplicativo usando o Workbench, o Designer e a área de trabalho do AEM Forms depois de seguir a apresentação. Para obter detalhes sobre a implementação, consulte [Criando seu primeiro aplicativo AEM Forms](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
+Para se familiarizar com o processo completo de criação de um aplicativo de formulários para automatizar um processo de negócios, siga a apresentação. Você pode criar, gerenciar e testar um aplicativo usando o Workbench, o Designer e o AEM Forms workspace depois de seguir a apresentação. Para obter detalhes sobre a implementação, consulte [Criar seu primeiro aplicativo AEM Forms](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
 
 ## Visão geral funcional {#functional-overview}
 
-Você pode usar a área de trabalho do AEM Forms para executar as seguintes tarefas:
+Você pode usar o espaço de trabalho do AEM Forms para executar as seguintes tarefas:
 
-**Start de um processo de negócios:A área de trabalho** AEM Forms categoria seus processos conforme projetado e configurado pela sua organização. Você pode marcar as categorias usadas com frequência para acessar as categorias rapidamente. Quando você start um processo, normalmente preenche um formulário para start de um processo de negócios que forma controles de fluxo de trabalho. Para obter mais informações, consulte [Iniciando processos](/help/forms/using/starting-processes.md).
+**Iniciar um processo de negócios:** As categorias de espaço de trabalho da AEM Forms de seus processos foram projetadas e configuradas por sua organização. Você pode marcar as categorias usadas com frequência para acessar as categorias rapidamente. Quando você inicia um processo, normalmente preenche um formulário para iniciar um processo de negócios que forma controles de fluxo de trabalho. Para obter mais informações, consulte [Iniciando processos](/help/forms/using/starting-processes.md).
 
-**Visualização e agir de acordo com as tarefas:** ao visualização das listas de Tarefas Pendentes, você verá tarefas de um processo de negócios que são atribuídas a você ou a quaisquer grupos aos quais você pertence ou que são tarefas compartilhadas de outros usuários. Você pode abrir, trabalhar e concluir as tarefas, conforme necessário. Normalmente, preencher uma tarefa envolve fornecer informações, aprovar um formulário ou rejeitar um formulário. Para obter mais informações, consulte [Trabalhar com listas de tarefas](/help/forms/using/todo-lists.md).
+**Exibir e agir de acordo com as tarefas:** Ao exibir suas listas de itens a fazer, você vê tarefas de um processo de negócios que são atribuídas a você, a quaisquer grupos aos quais você pertence ou que são tarefas compartilhadas de outros usuários. Você pode abrir, trabalhar e concluir as tarefas conforme necessário. Normalmente, concluir uma tarefa envolve fornecer informações, aprovar um formulário ou rejeitar um formulário. Para obter mais informações, consulte [Trabalhar com listas de tarefas](/help/forms/using/todo-lists.md).
 
-**Tarefas** de rastreamento: Para rastrear suas tarefas, use a guia Rastreamento da área de trabalho do AEM Forms. Você pode pesquisar por processos ativos ou concluídos nos quais iniciou ou participou. Você pode visualização as tarefas, atribuições e formulários que faziam parte do processo. Também é possível start de novos processos usando dados de formulário de um processo iniciado anteriormente. Para obter mais informações, consulte [Processos de rastreamento](/help/forms/using/tracking-processes.md).
+**Rastrear tarefas**: Para rastrear suas tarefas, use a guia Rastreamento do espaço de trabalho do AEM Forms. Você pode procurar processos ativos ou concluídos nos quais iniciou ou participou. Você pode visualizar as tarefas, atribuições e formulários que faziam parte do processo. Também é possível iniciar novos processos usando dados de formulário de um processo iniciado anteriormente. Para obter mais informações, consulte [Processos de rastreamento](/help/forms/using/tracking-processes.md).
 
-## Nova oferta de espaço de trabalho AEM Forms {#new-offering-of-aem-forms-workspace}
+## Nova oferta do espaço de trabalho do AEM Forms {#new-offering-of-aem-forms-workspace}
 
-**Suporte para aprovação em massa de tarefas**:
+**Suporte para aprovação de tarefas em massa**:
 
-Você pode aprovar várias tarefas do mesmo tipo. Depois de selecionar uma tarefa para aprovação, somente as tarefas com o mesmo processo, com os mesmos nomes de tarefa e as mesmas opções de rota permanecem ativadas. Consulte [Trabalhar com listas de tarefas](/help/forms/using/todo-lists.md) para obter detalhes sobre a implementação.
+É possível aprovar várias tarefas do mesmo tipo. Depois de selecionar uma tarefa para aprovação, somente as tarefas com o mesmo processo, com os mesmos nomes de tarefa e as mesmas opções de rota permanecerão ativadas. Consulte [Trabalhar com listas de tarefas](/help/forms/using/todo-lists.md) para obter detalhes sobre a implementação.
 
 ## Migração do Flex Workspace para o espaço de trabalho do AEM Forms {#migrating-from-flex-workspace-to-aem-forms-workspace}
 
-O Flex Workspace não é compatível com clientes AEM Forms. Todos os clientes que usam o Flex Workspace devem mudar para o AEM Forms Workspace.
+O Flex Workspace não é compatível com clientes do AEM Forms. Todos os clientes que usam o Flex Workspace devem migrar para o AEM Forms Workspace.
 
-Na área de trabalho do AEM Forms, os serviços padrão de renderização e envio, no perfil de ação padrão, associados aos formulários XDP, foram alterados e novos serviços foram introduzidos. Para obter detalhes, consulte [Novo serviço de renderização e envio](/help/forms/using/new-render-submit-service.md). Para migrar seus processos existentes, que funcionam com formulários XDP, para usar esses serviços, você pode seguir [essas etapas](new-render-submit-service.md).
+No espaço de trabalho do AEM Forms, os serviços de renderização e envio padrão, no perfil de ação padrão, associados aos formulários XDP, foram alterados e novos serviços foram introduzidos. Para obter detalhes, consulte [Novo serviço de renderização e envio](/help/forms/using/new-render-submit-service.md). Para migrar seus processos existentes, que funcionam com formulários XDP, para usar esses serviços, você pode seguir [essas etapas](new-render-submit-service.md).
 
 **Mapeamento de personalizações do Flex Workspace com a área de trabalho do AEM Forms**
 
@@ -63,21 +62,21 @@ O mapeamento entre vários tipos de personalizações em ambos os espaços de tr
   <tr>
    <td><strong>Tipo de personalização </strong></td>
    <td><strong>Personalizações cobertas </strong></td>
-   <td><strong>Cenário de personalização do espaço de trabalho AEM Forms correspondente</strong></td>
+   <td><strong>Cenário de personalização do espaço de trabalho do AEM Forms correspondente</strong></td>
   </tr>
   <tr>
-   <td>personalização da localização</td>
+   <td>Personalização de localização</td>
    <td>
     <ol>
-     <li>Alteração da localidade da Workspace</li>
+     <li>Alteração do local do Workspace</li>
     </ol> </td>
    <td>
     <ol>
-     <li><a href="/help/forms/using/changing-locale-user-interface.md">Alteração da localidade da área de trabalho do AEM Forms</a></li>
+     <li><a href="/help/forms/using/changing-locale-user-interface.md">Alterar a localidade do espaço de trabalho do AEM Forms</a></li>
     </ol> </td>
   </tr>
   <tr>
-   <td>Personalização do tema</td>
+   <td>Personalização de tema</td>
    <td>
     <ol>
      <li>Substituição de imagens</li>
@@ -85,7 +84,7 @@ O mapeamento entre vários tipos de personalizações em ambos os espaços de tr
     </ol> </td>
    <td>
     <ol>
-     <li><a href="/help/forms/using/changing-organization-logo-branding.md">Mudando o logotipo da organização</a> </li>
+     <li><a href="/help/forms/using/changing-organization-logo-branding.md">Mudando logotipo da organização</a> </li>
      <li><a href="/help/forms/using/changing-color-scheme-interface.md">Alterar esquema de cores</a></li>
     </ol> </td>
   </tr>
@@ -93,50 +92,50 @@ O mapeamento entre vários tipos de personalizações em ambos os espaços de tr
    <td>Personalização de layout</td>
    <td>
     <ol>
-     <li>Simplificando a interface do usuário do Workspace<br /> </li>
-     <li>Criando uma nova tela de logon</li>
-     <li>Criação de um Container de aprovação personalizado</li>
+     <li>Simplificação da interface do usuário do Workspace<br /> </li>
+     <li>Criar uma nova tela de logon</li>
+     <li>Criação de um contêiner de aprovação personalizado</li>
     </ol> </td>
    <td>
     <ol>
      <li><a href="/help/forms/using/description-reusable-components.md">Trabalhar com componentes reutilizáveis</a></li>
-     <li><a href="/help/forms/using/creating-new-login-screen.md">Criação de uma nova tela de logon</a></li>
-     <li>O Container de aprovação está obsoleto.</li>
+     <li><a href="/help/forms/using/creating-new-login-screen.md">Criação de uma nova tela Logon</a></li>
+     <li>O Contêiner de aprovação está obsoleto.</li>
     </ol> </td>
   </tr>
  </tbody>
 </table>
 
-Alguns dos recursos do Flex Workspace que não estão disponíveis na área de trabalho do AEM Forms incluem: mensagens e notificação, página de boas-vindas, container de aprovação e opção para gerenciar cabeçalhos de coluna. Para obter uma lista completa, consulte [Recursos do Flex Workspace não disponíveis na área de trabalho do AEM Forms](/help/forms/using/features-flex-workspace-available-html.md).
+Alguns dos recursos do Flex Workspace que não estão disponíveis no AEM Forms workspace incluem: mensagens e notificação, página de boas-vindas, contêiner de aprovação e opção para gerenciar cabeçalhos de coluna. Para obter uma lista completa, consulte [Os recursos do Flex Workspace não estão disponíveis no AEM Forms workspace](/help/forms/using/features-flex-workspace-available-html.md).
 
-## Desenvolvimento com o espaço de trabalho AEM Forms {#developing-with-aem-forms-workspace}
+## Desenvolvimento com a área de trabalho do AEM Forms {#developing-with-aem-forms-workspace}
 
 ### Arquitetura {#architecture}
 
-O espaço de trabalho AEM Forms é um aplicativo da Web baseado em HTML e JavaScript™ hospedado no CRX™. Quando o URL da Workspace é aberto em um navegador, um recurso CRX™ é acessado e o aplicativo é renderizado como uma página HTML no navegador. As bibliotecas JavaScript e o código JavaScript personalizado gerenciam o comportamento interno e externo do aplicativo, como interface do usuário, interação do usuário e comunicação com o servidor AEM Forms. Para obter mais detalhes, consulte Espaço de trabalho AEM Forms [arquitetura](/help/forms/using/html-workspace-architecture.md).
+O AEM Forms workspace é um aplicativo Web baseado em HTML e JavaScript™ hospedado no CRX™. Quando o URL do Workspace é aberto em um navegador, um recurso CRX™ é acessado e o aplicativo é renderizado como uma HTML no navegador. As bibliotecas JavaScript e o código JavaScript personalizado gerenciam o comportamento interno e externo do aplicativo, como interface do usuário, interação do usuário e comunicação com o servidor AEM Forms. Para obter mais detalhes, consulte Espaço de trabalho do AEM Forms [arquitetura](/help/forms/using/html-workspace-architecture.md).
 
-### Personalização da área de trabalho do AEM Forms {#aem-forms-workspace-customization}
+### Personalização do espaço de trabalho do AEM Forms {#aem-forms-workspace-customization}
 
-A área de trabalho do AEM Forms oferece suporte a uma grande variedade de personalizações para atualizar o layout da interface do usuário, sua aparência, funcionalidade e muito mais. As personalizações envolvem a atualização de um ou mais dos seguintes:
+A área de trabalho do AEM Forms é compatível com uma grande variedade de personalizações para atualizar o layout da interface do usuário, sua aparência, funcionalidade e muito mais. As personalizações envolvem a atualização de um ou mais dos seguintes itens:
 
-* Aparências da interface do usuário
+* Aspectos da interface do usuário
 * Funcionalidade usando personalizações semânticas
 * Reutilização de componentes HTML em outros aplicativos da Web
 
-O artigo [customization](introduction-customizing-html-workspace.md#types-of-customizations) explica os tipos de tais personalizações.
+O [personalização](introduction-customizing-html-workspace.md#types-of-customizations) artigo explica os tipos de tais personalizações.
 
-### Configure o ambiente do desenvolvedor {#set-up-the-developer-environment}
+### Configurar o ambiente do desenvolvedor {#set-up-the-developer-environment}
 
-Os produtos do espaço de trabalho AEM Forms incluem um pacote CRX implantado no CRX, um arquivo SDK que contém o código fonte completo, bibliotecas JavaScript de terceiros e scripts de criação da área de trabalho do AEM Forms. Use-os para configurar o ambiente do desenvolvedor para executar as personalizações mencionadas acima. Para obter mais detalhes, consulte [Criação do código do espaço de trabalho AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
+Os deliveries do espaço de trabalho do AEM Forms incluem um pacote CRX implantado no CRX, um arquivo SDK que contém o código fonte completo, bibliotecas JavaScript de terceiros e scripts de criação do espaço de trabalho do AEM Forms. Use-os para configurar o ambiente do desenvolvedor para executar as personalizações mencionadas acima. Para obter mais detalhes, consulte [Criação do código do espaço de trabalho do AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
-Você pode personalizar uma parte importante da interface e da funcionalidade principal, como fontes, esquema de cores, logotipo, tela de login, caixas de diálogo de erros, integração com aplicativos de terceiros e reutilização de componentes em aplicativos de terceiros. Você também pode aprimorar o conteúdo exibido na página Resumo da Tarefa, mostrar imagens para ações de rota da tarefa e até modificar os Modelos de Backbone de baixo nível e as Visualizações que criam o aplicativo de área de trabalho da AEM Forms.
+Você pode personalizar uma parte importante da interface e das funcionalidades principais, como fontes, esquema de cores, logotipo, tela de logon, caixas de diálogo de erros, integração com aplicativos de terceiros e reutilização de componentes em aplicativos de terceiros. Também é possível aprimorar o conteúdo exibido na página Resumo de tarefas, mostrar imagens para ações de roteiro de tarefas e até mesmo modificar Modelos e Exibições de Backbone de baixo nível que criam o aplicativo AEM Forms workspace.
 
-### Renderização HTML do XDP Forms {#html-rendering-of-xdp-forms}
+### Renderização de HTML do Forms XDP {#html-rendering-of-xdp-forms}
 
-Por padrão, para um novo processo, um formulário XDP é renderizado no formato PDF em um desktop e no formato HTML em um tablet. É possível renderizar sempre um formulário XDP no formato HTML. Para obter detalhes, consulte [Novos serviços de renderização e envio](/help/forms/using/new-render-submit-service.md).
+Por padrão, para um novo processo, um formulário XDP é renderizado no formato PDF em uma área de trabalho e no formato HTML em um tablet. É possível renderizar sempre um formulário XDP no formato HTML. Para obter detalhes, consulte [Novos serviços de renderização e envio](/help/forms/using/new-render-submit-service.md).
 
-[O recurso ](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) Formulários móveis, que funciona com  [perfis](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), permite a execução HTML de formulários XDP. Por padrão, o perfil &quot;Renderizar novo formulário HTML&quot; usa `default.html`, que você pode alterar. Também é possível adicionar alterações personalizadas que ocorrem antes da renderização de um formulário XDP no formato HTML.
+[Forms móvel](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) , que funciona com [perfis](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), permite a representação de HTML de formulários XDP. Por padrão, o &quot;Renderizar novo formulário de HTML&quot; usa `default.html` , que você pode alterar. Você também pode adicionar alterações personalizadas que ocorrem antes de renderizar um formulário XDP no formato HTML.
 
-## Aplicativo do espaço de trabalho AEM Forms {#aem-forms-workspace-app}
+## Aplicativo do espaço de trabalho do AEM Forms {#aem-forms-workspace-app}
 
-Para trabalhar nos processos de sua empresa em um dispositivo móvel, você pode usar a oferta de aplicativos para área de trabalho da AEM Forms da AEM Forms. Para obter mais informações, consulte a [visão geral do aplicativo do espaço de trabalho AEM Forms](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
+Para trabalhar em seus processos comerciais em um dispositivo móvel, você pode usar a oferta de aplicativo AEM Forms workspace da AEM Forms. Para obter mais informações, consulte o [Visão geral do aplicativo do AEM Forms workspace](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).

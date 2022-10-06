@@ -7,11 +7,11 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
-feature: Modo Scene7, Modo híbrido
+feature: Scene7 Mode,Hybrid Mode
 exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
 source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '524'
 ht-degree: 2%
 
 ---
@@ -51,4 +51,4 @@ Considere apenas começar de novo com uma nova instância provisionada do Dynami
 | 8 | Migre todos os workflows personalizados que você deseja oferecer suporte ao novo modo Dynamic Media-Scene7 (atualizações manuais). |  |
 | 9 | Verifique o upload e a configuração do Gerenciamento de conteúdo da Web. |  |
 | 10 | Após a verificação, obtenha uma aprovação para desativar o Autor Híbrido do Dynamic Media (manter como fallback). |  |
-| 11º | Exclua a instância Dynamic Media-Hybrid Author após aproximadamente um mês de uso bem-sucedido do Dynamic Media-Scene7. |  |
+| 11 | Exclua a instância Dynamic Media-Hybrid Author após aproximadamente um mês de uso bem-sucedido do Dynamic Media-Scene7. |  |

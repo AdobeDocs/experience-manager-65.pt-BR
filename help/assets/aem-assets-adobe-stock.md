@@ -313,7 +313,7 @@ A tabela a seguir explica como as permissões do usuário funcionam ao acessar o
 
 | Usuário | Grupo | Permissões | Aceitar configuração do Stock nas Preferências do Usuário | Acessar ativos | Acessar o Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
-| admin | N/A | Todos os pacotes | N/D | Sim | Sim |
+| admin | N/A | Todos | N/D | Sim | Sim |
 | test-doc1 | Usuário do DAM | /conf/global /settings/stock/cloud-config | Sim | Sim | Sim |
 | test-doc1 | Usuário do DAM | /conf/global /settings/stock/cloud-config | Não | Erro: Falha ao carregar dados | Não |
 | test-doc1 | Usuário do DAM | **allow**: /conf/global /settings/stock     **negar**: /cloud-config | A configuração do estoque não está visível | Sim | Não |

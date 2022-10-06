@@ -1,8 +1,8 @@
 ---
 title: Criação - o Ambiente e as ferramentas
-seo-title: Criação - o Ambiente e as ferramentas
+seo-title: Authoring - the Environment and Tools
 description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
-seo-description: O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo
+seo-description: The authoring environment of AEM provides various mechanisms for organizing and editing your content
 uuid: 23a8aa93-b3d2-423b-b402-9e5f3f273d9a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '2239'
+source-wordcount: '2220'
 ht-degree: 97%
 
 ---
@@ -45,7 +44,7 @@ Você pode editar uma página com o editor de páginas. Por exemplo:
 >
 >Ignore o tour, se desejar, e repita-o a qualquer momento selecionando o menu **Informações da página.**
 
-## Acessar ajuda {#accessing-help}
+## Acessar ajuda   {#accessing-help}
 
 Ao editar uma página, a **Ajuda** pode ser acessada de:
 
@@ -245,7 +244,7 @@ Selecione o tipo de referência apropriado para obter mais informações. Em det
 
 * [Referências a páginas de produtos](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (disponíveis no console Comércio - Produtos)
 * [Lançamentos](/help/sites-authoring/launches.md), fornecem acesso a lançamentos relacionados
-* [](/help/sites-administering/msm.md)As Live Copies exibem os caminhos de todas as live copies que são baseadas no recurso selecionado.
+* As [Live Copies](/help/sites-administering/msm.md) exibem os caminhos de todas as live copies que são baseadas no recurso selecionado.
 * [Blueprint](/help/sites-administering/msm-best-practices.md), fornece detalhes e várias ações
 * [Cópias de idiomas](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), fornece detalhes e várias ações
 
@@ -286,11 +285,11 @@ As Informações da página (ícone de equalizador) abrem um menu que também fo
 Por exemplo, quando apropriado, **Informações da página** também terá as opções:
 
 * [Promover lançamento](/help/sites-authoring/launches-promoting.md) se a página for um lançamento.
-* [Abrir na ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interface clássica se esta opção tiver sido  [ativada por um administrador](/help/sites-administering/enable-classic-ui-editor.md)
+* [Abrir na interface clássica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) se essa opção tiver sido [habilitado por um administrador](/help/sites-administering/enable-classic-ui-editor.md)
 
 Além disso, **Informações da página** pode fornecer acesso ao Analytics e a recomendações, quando apropriado.
 
-## Modos de página    {#page-modes}
+## Modos de página   {#page-modes}
 
 Há vários modos ao editar uma página, o que permite ações diferentes:
 
@@ -321,16 +320,14 @@ Você pode acessar esses itens usando os ícones no canto superior direito. O í
 >* O acesso a alguns modos exige permissões/privilégios adequados.
 >* O modo Desenvolvedor não está disponível em dispositivos móveis devido a restrições de espaço.
 >* Existe um [atalho de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre o modo de **Visualização** e o atualmente selecionado (por exemplo, **Editar**, **Layout** etc).
-
 >
-
 
 
 ## Seleção de caminho {#path-selection}
 
 Ao criar, geralmente é necessário selecionar outro recurso, como ao definir um link para outra página ou recurso ou ao selecionar uma imagem. Para selecionar um caminho com facilidade, os [campos de caminho](/help/sites-authoring/author-environment-tools.md#path-fields) oferecem o recurso de completar automaticamente, e o [navegador de caminho](/help/sites-authoring/author-environment-tools.md#path-browser) permite uma seleção mais robusta.
 
-### Campos de caminho    {#path-fields}
+### Campos de caminho   {#path-fields}
 
 Para ilustração, o exemplo usado aqui é o componente de imagem. Para obter mais informações sobre como usar e editar componentes, consulte [Componentes para criação de página](/help/sites-authoring/default-components.md).
 

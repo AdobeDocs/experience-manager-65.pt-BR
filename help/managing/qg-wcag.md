@@ -1,18 +1,17 @@
 ---
 title: Um guia rápido para a WCAG 2.1
 description: Um guia rápido para a WCAG 2.1
-translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1770'
 ht-degree: 99%
 
 ---
 
-
 # Um guia rápido para a WCAG 2.1{#quick-guide-to-wcag}
 
-A Adobe Experience Manager (AEM) foi desenvolvida para maximizar a conformidade com as Diretrizes de acessibilidade do conteúdo da Web.
+O Adobe Experience Manager (AEM) foi desenvolvido para maximizar a conformidade com as Web Content Accessibility Guidelines.
 
 As [Web Content Accessibility Guidelines (WCAG) versão 2.1](https://www.w3.org/TR/WCAG/) são um conjunto de diretrizes reconhecidas internacionalmente, desenvolvidas pelo [World Wide Web Consortium (W3C)](https://www.w3.org/) de acordo com a [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
@@ -101,7 +100,7 @@ As diretrizes fornecem informações sobre as novidades da WCAG 2.1:
 
 ### Técnicas da WCAG 2.1 {#techniques-for-wcag}
 
-As técnicas da WCAG 2.1 estão disponíveis na página [Técnicas da WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/) .
+As técnicas da WCAG 2.1 estão disponíveis na página [Técnicas da WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/).
 
 As **técnicas** formam o nível abaixo dos critérios de sucesso na hierarquia da WCAG 2.1. Elas são classificadas pela WAI como informativas, não normativas. Em outras palavras, não é necessário seguir uma técnica específica para que um recurso esteja em conformidade com a WCAG 2.1.
 
@@ -146,7 +145,7 @@ Um exemplo pode ser encontrado em: [Noções sobre o critério de sucesso 1.1.1 
 
 ### Como cumprir a WCAG 2.1 {#how-to-meet-wcag}
 
-A seção &quot;Como cumprir&quot; está disponível na página [Como cumprir a WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) . Esta seção fornece uma apresentação alternativa da WCAG, permitindo que os leitores refinem o conteúdo das diretrizes para os mais relevantes para os próprios interesses e/ou circunstâncias do leitor. Os leitores podem filtrar as técnicas de critérios de sucesso que desejam visualização, especificando tecnologias específicas de conteúdo na Web, como folhas de estilos em cascata ou scripts, ou especificando um ou mais níveis de prioridade específicos.
+A seção &quot;Como cumprir&quot; está disponível na página [Como cumprir a WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). Esta seção fornece uma apresentação alternativa da WCAG, permitindo que os leitores refinem o conteúdo das diretrizes para os mais relevantes para os próprios interesses e/ou circunstâncias do leitor. Os leitores podem filtrar as técnicas de critérios de sucesso que desejam visualização, especificando tecnologias específicas de conteúdo na Web, como folhas de estilos em cascata ou scripts, ou especificando um ou mais níveis de prioridade específicos.
 
 Sem filtragem, esse recurso fornece todos os critérios de sucesso agrupados por diretriz. Para cada critério de sucesso, é fornecido o seguinte:
 

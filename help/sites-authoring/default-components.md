@@ -1,8 +1,8 @@
 ---
 title: Componentes
-seo-title: Componentes
+seo-title: Components
 description: O AEM é disponibilizado com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites
-seo-description: O AEM é disponibilizado com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites
+seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,17 +10,16 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '429'
 ht-degree: 97%
 
 ---
 
 # Componentes{#components}
 
-O Adobe Experience Manager (AEM) é disponibilizado com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites. Estão disponíveis ao [editar uma página](/help/sites-authoring/editing-content.md) e são agrupados por área funcional principal (chamada conjunto de componentes) para ajudar na filtragem.
+O Adobe Experience Manager (AEM) é fornecido com vários componentes prontos para uso que fornecem funcionalidade abrangente para autores de website. Estão disponíveis ao [editar uma página](/help/sites-authoring/editing-content.md) e são agrupados por área funcional principal (chamada conjunto de componentes) para ajudar na filtragem.
 
 Os componentes estão disponíveis ao [editar uma página](/help/sites-authoring/editing-content.md). Para ajudar na filtragem, os componentes são agrupados por área funcional principal (ou seja, grupo de componentes).
 
@@ -54,13 +53,13 @@ Os componentes são classificados de acordo com as várias categorias chamadas g
 
 O console [Componentes](/help/sites-authoring/default-components-console.md) fornece uma visão geral dos grupos de componentes e dos componentes, que são fornecidos por sua instalação do AEM. É possível visualizar as principais informações sobre os componentes individuais e seu uso.
 
-## Componentes - Áreas principais  {#components-major-areas}
+## Componentes - Áreas principais {#components-major-areas}
 
 As páginas a seguir fornecem links para algumas informações adicionais e importantes sobre os componentes:
 
-* [Componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/introduction.html) - Os componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
+* [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) - Os componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
 
-* [Comunidades](/help/communities/author-communities.md) - Os componentes fornecem recursos interativos para um site, como fóruns e comentários. Muitos desses componentes são incluídos quando um [Site de comunidade](/help/communities/overview.md) é criado.
+* [Comunidades](/help/communities/author-communities.md) - Os componentes fornecem recursos interativos para um site, como fóruns e comentários. Muitos desses componentes são incluídos quando uma [Site da comunidade](/help/communities/overview.md) é criada.
 
 * [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) - A funcionalidade eCommerce do AEM também inclui uma série de componentes. O uso efetivo pode depender do mecanismo de comércio utilizado.
 

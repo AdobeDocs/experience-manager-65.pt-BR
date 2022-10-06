@@ -1,14 +1,14 @@
 ---
 title: Como criar um Forms adaptável usando o esquema XML?
 description: Saiba como usar o esquema XML como modelo de formulário em um formulário adaptável. Você pode aplicar modelos XSD existentes para criar formulários adaptáveis e arrastar e soltar elementos de esquema do XSD no formulário adaptável. Aprofunde-se com uma amostra de esquema XML, adicione propriedades especiais a campos usando esquema XML e limite valores aceitáveis para um componente de formulário adaptável.
-feature: Formulários adaptáveis
+feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 6%
+source-wordcount: '1073'
+ht-degree: 5%
 
 ---
 
@@ -165,10 +165,8 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
 >
 >* Capitalizar o primeiro caractere do nome do elemento
 >* Inserindo espaço em branco nos limites da Camel Case.
-
 >
->
-Por exemplo, se você adicionar o elemento de esquema `userFirstName`, a legenda gerada no formulário adaptável será `User First Name`.
+>Por exemplo, se você adicionar a variável `userFirstName` elemento de esquema, a legenda gerada no formulário adaptável é `User First Name`.
 
 ## Limite valores aceitáveis para um componente de formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -288,15 +286,15 @@ Por exemplo, se você adicionar o elemento de esquema `userFirstName`, a legenda
 
 **Como sei qual elemento na árvore está associado a qual elemento XML?**
 
-Quando você clica duas vezes em um elemento no Localizador de conteúdo, uma janela pop-up exibe um nome de campo e uma propriedade chamada `bindRef`. Essa propriedade mapeia o elemento de árvore para o elemento ou atributo no esquema.
+Ao clicar duas vezes em um elemento no Localizador de conteúdo, uma janela pop-up exibe um nome de campo e uma propriedade chamada `bindRef`. Essa propriedade mapeia o elemento de árvore para o elemento ou atributo no esquema.
 
 ![Um campo bindref de um elemento de esquema XML](assets/dblclick.png)
 
-O campo bindRef</code> mostra a associação entre um elemento de árvore e um elemento ou atributo em um schema.
+O bindRef</code> mostra a associação entre um elemento de árvore e um elemento ou atributo em um schema.
 
 >[!NOTE]
 >
->Os atributos têm um símbolo `@` em seu valor `bindRef`para diferenciá-los dos elementos. Por exemplo, `/config/projectDetails/@duration`.
+>Os atributos têm um `@` símbolo em seus `bindRef`para diferenciá-los dos elementos. Por exemplo, `/config/projectDetails/@duration`.
 
 **Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada de qualquer tipo complexo) para subformulários repetíveis (os valores minOccours ou maxOccurs são maiores que 1)?**
 
@@ -311,4 +309,4 @@ Você tem duas opções:
 
 **O que é um bindRef?**
 
-Um `bindRef` é a conexão entre um componente de formulário adaptável e um elemento ou atributo de esquema. Determina o `XPath` onde o valor capturado desse componente ou campo está disponível no XML de saída. Um `bindRef`também é usado ao pré-preencher um valor de campo a partir de XML pré-preenchido (pré-preenchido).
+A `bindRef` é a conexão entre um componente de formulário adaptável e um elemento ou atributo de esquema. Ele determina que `XPath` onde o valor capturado desse componente ou campo está disponível no XML de saída. A `bindRef`também é usada ao pré-preencher um valor de campo a partir do XML pré-preenchido (pré-preenchido).

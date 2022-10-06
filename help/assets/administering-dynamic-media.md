@@ -11,11 +11,11 @@ feature: Configuration
 source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Configurar Dynamic Media {#setting-up-dynamic-media}
+# Configuração do Dynamic Media {#setting-up-dynamic-media}
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) O ajuda a gerenciar ativos fornecendo merchandising visual avançado e ativos de marketing sob demanda, automaticamente dimensionados para o consumo na Web, em dispositivos móveis e sites sociais. Usando um conjunto de ativos de origem primária, a Dynamic Media gera e fornece várias variações de conteúdo rico em tempo real por meio de sua rede global, escalável e otimizada para desempenho.
 

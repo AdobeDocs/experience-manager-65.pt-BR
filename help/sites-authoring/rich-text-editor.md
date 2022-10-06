@@ -1,21 +1,20 @@
 ---
 title: Uso do Editor de rich text para criar conteúdo
-seo-title: Uso do Editor de rich text para criar conteúdo
+seo-title: Using the Rich Text Editor to Author Content
 description: Uso do Editor de rich text para criar conteúdo
-seo-description: Uso do Editor de rich text para criar conteúdo
+seo-description: Using the Rich Text Editor to Author Content
 uuid: 70f4d4b2-cbc6-4fef-9262-1696804008d8
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
-translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 70%
+source-wordcount: '260'
+ht-degree: 68%
 
 ---
-
 
 # Uso do Editor de rich text para criar conteúdo {#use-rich-text-editor-to-author-content}
 
@@ -47,9 +46,9 @@ Essa barra de ferramentas fornece as seguintes opções:
 
 ## Edição em tela cheia {#full-screen-editing}
 
-Para componentes baseados em texto, tocar no modo de tela cheia na barra de ferramentas ![](do-not-localize/screen_shot_2018-03-21at163236.png) abre o editor de Rich Text e oculta o restante do conteúdo da página.
+Para componentes baseados em texto, toque no modo de tela cheia na barra de ferramentas ![](do-not-localize/screen_shot_2018-03-21at163236.png) abre o editor de rich text e oculta o restante do conteúdo da página.
 
-O modo Tela inteira exibe todas as opções configuradas que podem ser usadas para criação. A disponibilidade é opções [depende da configuração](/help/sites-administering/rich-text-editor.md).
+O modo de tela cheia exibe todas as opções configuradas que podem ser usadas para criação. A disponibilidade é opções [depende da configuração](/help/sites-administering/rich-text-editor.md).
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
@@ -66,4 +65,4 @@ Feche o modo de tela cheia clicando no ícone Minimizar.
 
 >[!NOTE]
 >
->Copiar listas aninhadas do Microsoft Word para o RTE pode gerar resultados inconsistentes e pode exigir ajuste manual após colar o texto no RTE.
+>Copiar listas aninhadas do Microsoft Word para o RTE pode gerar resultados inconsistentes e exigir ajuste manual após colar o texto no RTE.

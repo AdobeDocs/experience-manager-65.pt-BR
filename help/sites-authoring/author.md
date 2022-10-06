@@ -1,8 +1,8 @@
 ---
-title: 'Criação  '
-seo-title: 'Criação  '
+title: Criação
+seo-title: Authoring
 description: Conceitos de criação no AEM
-seo-description: Conceitos de criação no AEM
+seo-description: Concepts of authoring in AEM
 uuid: eaa5f613-a138-4215-8f84-dfc962fe7fa7
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,15 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 18dcbf04bd88f63335ef36e2ec7ea81835e11b51
+exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '538'
 ht-degree: 88%
 
 ---
 
-
-# Criação{#authoring}
+# Criação  {#authoring}
 
 ## Conceito de criação (e publicação) {#concept-of-authoring-and-publishing}
 
@@ -69,7 +68,7 @@ Além disso, há tarefas administrativas que o ajudam a gerenciar seu conteúdo:
 
 #### Ambiente de publicação {#publish-environment}
 
-Quando pronto, o conteúdo do site AEM é publicado no ambiente **publish**. Aqui, as páginas do site são disponibilizadas para o público desejado de acordo com a aparência da interface projetada.
+Quando pronto, o conteúdo do site de AEM é publicado no **ambiente de publicação**. Aqui, as páginas do site são disponibilizadas para o público desejado de acordo com a aparência da interface projetada.
 
 Normalmente, o ambiente de publicação está localizado dentro da zona desmilitarizada; em outras palavras, disponível para a Internet, mas não mais sob a proteção total da rede interna.
 
@@ -81,16 +80,13 @@ Quando o site do AEM é um [site da comunidade](/help/communities/overview.md), 
 >
 >* **Publicar/Desfazer a publicação**
    >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
-   >
-   >
-* **Ativar / Desativar**
-   >  Estes termos são sinônimos de publicar/desfazer a publicação.
-   >
-   >
-* **Replicar / Replicação**
-   >  Estes são os termos técnicos usados para indicar a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro; Ou seja, ao publicar ou reverter a replicação de comentários do usuário.
 >
-
+>* **Ativar / Desativar**
+   >  Estes termos são sinônimos de publicar/desfazer a publicação.
+>
+>* **Replicar / Replicação**
+   >  Esses são os termos técnicos usados para indicar a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro; ou seja, ao publicar ou replicar de forma reversa comentários do usuário.
+>
 
 
 #### Dispatcher {#dispatcher}

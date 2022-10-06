@@ -1,14 +1,13 @@
 ---
 title: Criar e organizar páginas
 description: Como criar e gerenciar páginas com o AEM
-translation-type: tm+mt
-source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
+exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2523'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
-
 
 # Criar e organizar páginas {#creating-and-organizing-pages}
 
@@ -35,15 +34,15 @@ Você também pode usar [pastas](#creating-a-new-folder) para ajudar a organizar
 
 A estrutura de um site pode ser considerada como uma estrutura em árvore que armazena suas páginas de conteúdo. Os nomes dessas páginas de conteúdo são usadas para formar os URLs, ao passo que o título é mostrado quando o conteúdo da página é visualizado.
 
-A seguir, é mostrado um exemplo do site We.Retail, onde uma página de shorts de caminhada ( `desert-sky-shorts`) é acessada:
+A seguir, um exemplo do site We.Retail, onde uma página de shorts de caminhada ( `desert-sky-shorts`) é acessada:
 
-* Ambiente do autor
+* Ambiente de criação
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Ambiente de publicação
    `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Dependendo da configuração da sua instância, o uso de `/content` pode ser opcional no ambiente publish.
+Dependendo da configuração da sua instância, use o `/content` pode ser opcional no ambiente de publicação.
 
 ```xml
  /content
@@ -105,7 +104,7 @@ O **Título** da página e o **Nome** podem ser criados separadamente, mas estã
 >
 >Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs de até um determinado comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
 
-Ao criar uma nova página, AEM irá [validar o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pela AEM e pelo JCR.
+Ao criar uma nova página, o AEM [validará o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
 
 Os caracteres mínimos permitidos são:
 
@@ -123,16 +122,16 @@ Detalhes completos sobre todos os caracteres permitidos podem ser encontrados na
 
 #### Título {#title}
 
-Caso forneça apenas um **Título** de página ao criar uma nova página, o AEM vai derivar o **Nome**[ de página desta cadeia de caracteres e validá-lo de acordo com as convenções impostas pelo AEM e JCR. ](/help/sites-developing/naming-conventions.md) Um campo de **Título** que contém caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
+Quando você fornece apenas um **Título** de página ao criar uma nova página, o AEM deriva o **Nome** de página desta cadeia de caracteres e o valida[ de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR. Um campo de **Título** que contém caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
 
 | Título | Nome derivado |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;*ç+ | sc—c-.html |
+| SC%&amp;&#42;ç+ | sc—c-.html |
 
 #### Nome {#name}
 
-Quando você fornecer um **Nome** de página ao criar uma nova página, o AEM vai validar o nome de acordo com as convenções impostas pelo AEM e JCR. [](/help/sites-developing/naming-conventions.md) Não é possível enviar caracteres inválidos no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo é destacado com uma mensagem explicativa.
+Quando você fornece um **Nome** de página ao criar uma nova página, o AEM valida[ o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR. Não é possível inserir caracteres inválidos no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo é destacado com uma mensagem explicativa.
 
 ![caop-02](assets/caop-02.png)
 
@@ -162,7 +161,7 @@ O AEM vem com vários modelos predefinidos. Os modelos disponíveis dependem do 
 
 ### Componentes {#components}
 
-Os componentes são os elementos fornecidos pelo AEM para que você possa adicionar tipos específicos de conteúdo. AEM vem com uma gama de [componentes prontos para uso](/help/sites-authoring/default-components-console.md) que fornecem funcionalidade abrangente. Eles incluem:
+Os componentes são os elementos fornecidos pelo AEM, para que você possa adicionar tipos específicos de conteúdo. AEM vem com uma variedade de [componentes prontos para uso](/help/sites-authoring/default-components-console.md) que fornecem funcionalidade abrangente. Isso inclui:
 
 * Texto
 * Imagem
@@ -210,7 +209,7 @@ A menos que todas as páginas tenham sido criadas para você com antecedência, 
    * **Nome**:
 
       * Usado para gerar o URI. Se não for especificado, o nome é derivado do título.
-      * Se você fornecer um **Nome**[ de página ao criar uma nova página, o AEM vai validar o nome de acordo com as convenções impostas pelo AEM e JCR.](/help/sites-developing/naming-conventions.md)
+      * Quando você fornece um **Nome** de página ao criar uma nova página, o AEM valida[ esse nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
 
       * **Não é possível enviar caracteres inválidos** no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo será destacado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
    >[!NOTE]
@@ -297,7 +296,7 @@ Após criar uma página ou navegar para uma página existente (no console), voc�
 
 >[!NOTE]
 >
->Uma página só pode ser movida para um local onde o modelo no qual a página se baseia está permitido. Consulte [Disponibilidade do modelo](/help/sites-developing/templates.md#template-availability) para obter mais informações.
+>Uma página só pode ser movida para um local onde o modelo no qual a página se baseia está permitido. Consulte [Disponibilidade de modelo](/help/sites-developing/templates.md#template-availability) para obter mais informações.
 
 O procedimento para mover ou renomear uma página é basicamente o mesmo e é realizado pelo mesmo assistente. Com este assistente você pode:
 
@@ -390,7 +389,7 @@ O status de trabalhos assíncronos pode ser verificado no painel [**Status de tr
 
 >[!NOTE]
 >
->Para obter mais informações sobre o processamento assíncrono de tarefas e como configurar o limite para ações de movimentação/renomeação de páginas, consulte o documento [Tarefas assíncronas](/help/sites-administering/asynchronous-jobs.md) no guia do usuário Administração.
+>Para obter mais informações sobre o processamento assíncrono de trabalhos e como configurar o limite para ações de movimentação/renomeação de páginas, consulte o [Trabalhos assíncronos](/help/sites-administering/asynchronous-jobs.md) no guia do usuário Administração.
 
 >[!NOTE]
 >
@@ -399,7 +398,7 @@ O status de trabalhos assíncronos pode ser verificado no painel [**Status de tr
 ### Excluir uma página {#deleting-a-page}
 
 1. Navegue até que você possa visualizar a página que deseja excluir.
-1. Use o [modo de seleção ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) para selecionar a página pretendida, em seguida, use **Excluir** na barra de ferramentas:
+1. Use o [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) para selecionar a página pretendida, em seguida, use **Excluir** na barra de ferramentas:
 
    ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
 
@@ -419,7 +418,7 @@ O status de trabalhos assíncronos pode ser verificado no painel [**Status de tr
 >
 >Se uma página já estiver publicada, sua publicação será automaticamente removida antes da exclusão.
 
-### Bloquear uma página {#locking-a-page}
+### Bloquear uma página   {#locking-a-page}
 
 Você pode [bloquear/desbloquear uma página](/help/sites-authoring/editing-content.md#locking-a-page) em um console ou ao editar uma página individual. Informações sobre se uma página está bloqueada são exibidas em ambos os locais.
 
@@ -438,9 +437,7 @@ Você pode criar pastas para ajudar a organizar seus arquivos e páginas.
 >* Pastas só podem ser criadas diretamente em **Sites** ou em outras pastas. Eles não podem ser criadas em uma página.
 >* As ações padrão de mover, copiar, colar, excluir, publicar, cancelar a publicação e exibir/editar propriedades podem ser executadas em uma pasta.
 >* As pastas não estão disponíveis para seleção em uma live copy.
-
 >
-
 
 
 1. Abra o console **Sites** e navegue até o local desejado.

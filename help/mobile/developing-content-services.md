@@ -1,23 +1,22 @@
 ---
 title: Content Services
-seo-title: Serviços de conteúdo
+seo-title: Content Services
 description: Serviços de conteúdo
-seo-description: 'null'
+seo-description: null
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '299'
 ht-degree: 3%
 
 ---
 
-
-# Content Services{#content-services}
+# Serviços de conteúdo{#content-services}
 
 >[!NOTE]
 >
@@ -43,7 +42,7 @@ Os Serviços de conteúdo podem fornecer o conteúdo como ativos, HTML empacotad
 >
 >Antes de começar a usar os Serviços de conteúdo, ative o sinalizador de Serviços de conteúdo . Para habilitar a criação e o gerenciamento de modelos em seu aplicativo, é necessário habilitar modelos de dados no Navegador de configuração.
 >
->Consulte **[Administração de serviços de conteúdo](/help/mobile/developing-content-services.md)** e a documentação do [Navegador de configuração](/help/sites-administering/configurations.md) para obter mais informações.
+>Consulte **[Administração dos serviços de conteúdo](/help/mobile/developing-content-services.md)** e [Navegador de configuração](/help/sites-administering/configurations.md) documentação para obter mais informações.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

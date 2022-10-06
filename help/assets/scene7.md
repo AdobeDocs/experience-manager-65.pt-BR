@@ -285,7 +285,6 @@ Navegue pelos ativos do Dynamic Media Classic selecionando **[!UICONTROL Dynamic
 >
 >* O navegador de conteúdo do Dynamic Media Classic carrega cerca de 100 ativos e os classifica por nome.
 >* Se você tiver um servidor de visualização seguro definido, o navegador usará esse servidor de visualização para renderizar miniaturas e ativos.
-
 >
 
 
@@ -336,7 +335,6 @@ Por padrão, o Experience Manager pesquisa a pasta selecionada e todas as subpas
 >
 >* Ao pesquisar por vídeo, você estará procurando uma única representação. Os resultados retornam a representação original (somente o &amp;ast;.mp4) e a representação codificada.
 >* Ao pesquisar um conjunto de vídeos adaptáveis, você está pesquisando a pasta e todas as subpastas, mas somente se tiver adicionado uma palavra-chave à pesquisa. Se você não tiver adicionado uma palavra-chave, o Experience Manager não pesquisará nas subpastas.
-
 >
 
 

@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ---
 
-# Backward Compatibility in AEM 6.5{#backward-compatibility-in-aem}
+# Compatibilidade com versões anteriores no AEM 6.5{#backward-compatibility-in-aem}
 
 ## Visão geral {#overview}
 
@@ -27,11 +27,11 @@ ht-degree: 1%
 >
 >Para obter uma lista de alterações de conteúdo e configuração que não estão no escopo do Pacote de Compatibilidade, consulte [Reestruturação do Repositório em AEM](/help/sites-deploying/repository-restructuring.md).
 
-In AEM 6.5, all features have been developed with backwards compatibility in mind.
+No AEM 6.5, todos os recursos foram desenvolvidos tendo em mente a compatibilidade com versões anteriores.
 
-Na maioria dos casos, os clientes que executam o AEM 6.3 não devem precisar alterar o código ou as personalizações ao fazer a atualização. For AEM 6.1 and 6.2 customers there is no additional breaking changes than would be faced during an upgrade to 6.3.
+Na maioria dos casos, os clientes que executam o AEM 6.3 não devem precisar alterar o código ou as personalizações ao fazer a atualização. Para clientes AEM 6.1 e 6.2, não há alterações adicionais de quebra que seriam enfrentadas durante uma atualização para o 6.3.
 
-Para exceções em que os recursos não podiam ser mantidos compatíveis com versões anteriores, os problemas de incompatibilidade com versões anteriores de pacotes e conteúdo podem ser atenuados pela instalação de um Pacote de Compatibilidade para a versão 6.4 (consulte como configurar abaixo para obter detalhes sobre onde baixar). This compat package will help restore compatibility in most cases for applications compliant with AEM 6.4.
+Para exceções em que os recursos não podiam ser mantidos compatíveis com versões anteriores, os problemas de incompatibilidade com versões anteriores de pacotes e conteúdo podem ser atenuados pela instalação de um Pacote de Compatibilidade para a versão 6.4 (consulte como configurar abaixo para obter detalhes sobre onde baixar). Este pacote compat ajudará a restaurar a compatibilidade na maioria dos casos para aplicativos compatíveis com o AEM 6.4.
 
 O Pacote de Compatibilidade permite executar AEM no modo de compatibilidade e adiar o desenvolvimento personalizado em relação aos novos recursos de AEM:
 
@@ -41,9 +41,9 @@ O Pacote de Compatibilidade permite executar AEM no modo de compatibilidade e ad
 
 ![senso](assets/sase.png)
 
-The Compatibility Package has two modes: **Routing Enabled** and **Routing Disabled**.
+O Pacote de Compatibilidade tem dois modos: **Roteamento Habilitado** e **Roteamento Desativado**.
 
-This allows AEM 6.5 to be run in three modes:
+Isso permite que o AEM 6.5 seja executado em três modos:
 
 **Modo nativo:**
 
@@ -51,11 +51,11 @@ O modo nativo é para clientes que desejam usar todos os novos recursos do AEM 6
 
 Isso significa que talvez seja necessário fazer ajustes em seu aplicativo imediatamente após a atualização.
 
-**Compatibility Mode: Compatibility Package Installed with Routing Enabled**
+**Modo de Compatibilidade: Pacote de Compatibilidade Instalado com Roteamento Ativado**
 
 O Modo de Compatibilidade é para clientes que têm personalizações de interfaces que não são compatíveis com versões anteriores. Isso permite que o AEM seja executado no modo de compatibilidade e adie o desenvolvimento personalizado necessário em relação aos novos recursos de AEM que não são compatíveis com alguns de seus códigos personalizados.
 
-**Legacy Mode: Compatiblity Package Installed with Routing Disabled**
+**Modo herdado: Pacote de Compatibilidade Instalado com Roteamento Desativado**
 
 O modo herdado é para clientes que têm interfaces personalizadas baseadas em código herdado ou obsoleto do AEM que foi movido para fora no pacote de compatibilidade.
 

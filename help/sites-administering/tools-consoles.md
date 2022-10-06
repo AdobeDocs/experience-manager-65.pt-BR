@@ -1,8 +1,8 @@
 ---
 title: Consoles Ferramentas
-seo-title: Consoles Ferramentas
+seo-title: Tools Consoles
 description: Saiba mais sobre os diferentes consoles Ferramentas em todo o AEM.
-seo-description: Saiba mais sobre os diferentes consoles Ferramentas em todo o AEM.
+seo-description: Learn about the different tools consoles throughout AEM.
 uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,23 +10,22 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 45%
+source-wordcount: '609'
+ht-degree: 44%
 
 ---
 
-
 # Consoles Ferramentas{#tools-consoles}
 
-Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. No momento, existem dois sabores do console **Ferramentas** dependendo da interface do usuário que você está usando:
+Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. Atualmente, existem dois sabores do **Ferramentas** console dependente da interface do usuário usada:
 
-* [Ferramentas - IU otimizada ao toque](#tools-touch-optimized-ui)
-* [Ferramentas - IU clássica](#tools-classic-ui)
+* [Ferramentas - Interface otimizada para toque](#tools-touch-optimized-ui)
+* [Ferramentas - Interface clássica](#tools-classic-ui)
 
-## Ferramentas - Interface otimizada ao toque {#tools-touch-optimized-ui}
+## Ferramentas - Interface otimizada para toque {#tools-touch-optimized-ui}
 
 >[!NOTE]
 >
@@ -34,7 +33,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
 
 >[!NOTE]
 >
->Como os cartões na interface do usuário fornecem detalhes sobre a finalidade de cada opção, esta tabela simplesmente fornece uma referência rápida sobre a localização dos recursos na árvore.
+>Como os cartões na interface do usuário fornecem detalhes sobre a finalidade de cada opção, esta tabela fornece apenas uma referência rápida sobre a localização dos recursos na árvore.
 
 <table>
  <tbody>
@@ -48,7 +47,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE LITE</td>
+   <td>CRXDE Lite</td>
   </tr>
   <tr>
    <td> </td>
@@ -260,7 +259,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td> </td>
-   <td>Permissões </td>
+   <td>Permissões</td>
   </tr>
   <tr>
    <td> </td>
@@ -375,15 +374,15 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Centro de controle MSM</td>
-   <td>Ponto centralizado para gerenciar seus vários sites.</td>
+   <td>Ponto centralizado para gerenciar vários sites.</td>
   </tr>
   <tr>
    <td>Configurações de contexto do cliente<br /> </td>
-   <td>O Contexto do cliente representa uma coleção de dados do usuário agrupados dinamicamente. As configurações padrão e da Marketing Cloud são mantidas aqui.<br /> </td>
+   <td>O Contexto do Cliente representa uma coleção dinâmica de dados do usuário. As configurações padrão e da Marketing Cloud são mantidas aqui.<br /> </td>
   </tr>
   <tr>
    <td>Configurações dos serviços em nuvem<br /> </td>
-   <td>Mantém configurações relacionadas à integração com o Adobe Marketing Cloud.</td>
+   <td>Mantém as configurações relacionadas à integração com a Adobe Marketing Cloud.</td>
   </tr>
   <tr>
    <td>Configurações da nuvem<br /> </td>
@@ -403,7 +402,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Documentação personalizada</td>
-   <td>Usado ao estender a documentação e a ajuda online.</td>
+   <td>Usada ao estender a documentação e a ajuda online.</td>
   </tr>
   <tr>
    <td>fd</td>
@@ -411,7 +410,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Envio de formulário</td>
-   <td>Retém a lista de envios de formulário recebidos.</td>
+   <td>Contém a lista de envios de formulário recebidos.</td>
   </tr>
   <tr>
    <td>Importadores </td>
@@ -419,7 +418,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Linkchecker externo</td>
-   <td>Verificador de links externo.</td>
+   <td>Linkchecker externo.</td>
   </tr>
   <tr>
    <td>Móvel</td>
@@ -431,11 +430,11 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Replicação - Agentes de Replicação</td>
-   <td>Usado para replicar dados do autor para publicar ao publicar páginas, ou com replicação reversa para retornar comentários do usuário do ambiente de publicação para o autor.</td>
+   <td>Usado para replicar dados do autor para publicar ao publicar páginas ou com replicação inversa para retornar comentários do usuário do ambiente de publicação para o autor.</td>
   </tr>
   <tr>
    <td>Relatórios</td>
-   <td>AEM fornece diversos relatórios personalizados, permite que você crie relatórios personalizados e/ou desenvolva seus próprios relatórios.</td>
+   <td>O AEM fornece diversos relatórios personalizados, permite que você crie relatórios personalizados e/ou desenvolva os seus próprios relatórios.</td>
   </tr>
   <tr>
    <td>Scaffolding da página padrão </td>
@@ -443,28 +442,27 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Segurança - Configuração de autoatendimento </td>
-   <td>Permite que você configure os emails que os usuários recebem automaticamente quando criam uma conta ou redefinem uma senha e confirme uma senha que foi redefinida.</td>
+   <td>Permite configurar os emails que os usuários recebem automaticamente ao criar uma conta ou redefinir uma senha e confirmar uma senha que foi redefinida.</td>
   </tr>
   <tr>
    <td>Segmentação</td>
-   <td>Os visitantes têm interesses e objetivos diferentes quando chegam a um site. Compreender essas metas e atender às expectativas é um fator importante para o sucesso do marketing online. A segmentação ajuda a alcançar isso ao analisar e caracterizar os detalhes de um visitante.<br /> </td>
+   <td>Os visitantes têm interesses e objetivos diferentes quando chegam a um site. Compreender essas metas e atender às expectativas é um fator importante para o sucesso do marketing online. A segmentação ajuda a conseguir isso ao analisar e caracterizar os detalhes do visitante.<br /> </td>
   </tr>
   <tr>
    <td>inquilinos</td>
    <td>Nenhuma funcionalidade ativa relacionada a esta entrada.</td>
   </tr>
   <tr>
-   <td>loja</td>
+   <td>truststore</td>
    <td>Nenhuma funcionalidade ativa relacionada a esta entrada.</td>
   </tr>
   <tr>
-   <td>Controle de versão - Expurgar versões</td>
-   <td>Permite que você expurgue as versões de página, conforme necessário.</td>
+   <td>Controle de versão - Limpar versões</td>
+   <td>Permite limpar versões de página, conforme necessário.</td>
   </tr>
   <tr>
    <td>Fluxo de trabalho</td>
-   <td>Os workflows controlam uma série de ações em páginas ou ativos digitais que suportam qualquer processo editorial.</td>
+   <td>Os fluxos de trabalho controlam uma série de ações em páginas ou ativos digitais que suportam qualquer processo editorial.</td>
   </tr>
  </tbody>
 </table>
-

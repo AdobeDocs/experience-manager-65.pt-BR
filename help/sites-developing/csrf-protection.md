@@ -1,28 +1,27 @@
 ---
 title: Quadro de proteção do QREF
-seo-title: Quadro de proteção do QREF
-description: A estrutura utiliza tokens para garantir que a solicitação do cliente seja legítima
-seo-description: A estrutura utiliza tokens para garantir que a solicitação do cliente seja legítima
+seo-title: The CSRF Protection Framework
+description: A estrutura usa tokens para garantir que a solicitação do cliente seja legítima
+seo-description: The framework makes use of tokens to guarantee that the client request is legitimate
 uuid: 7cb222ba-fc7a-46ee-8b49-a5f39a53580b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
-translation-type: tm+mt
-source-git-commit: c83c77c5c313099944dd73c8cbe63d429d84a518
+exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
+# Quadro de proteção do QREF{#the-csrf-protection-framework}
 
-# A Estrutura de Proteção CSRF{#the-csrf-protection-framework}
+Além do Apache Sling Referrer Filter, o Adobe também fornece uma nova Estrutura de Proteção do CSRF para proteger contra esse tipo de ataque.
 
-Além do Filtro de Quem indicou Apache Sling, o Adobe também oferece uma nova Estrutura de Proteção CSRF para proteção contra esse tipo de ataque.
-
-A estrutura utiliza tokens para garantir que a solicitação do cliente seja legítima. Os tokens são gerados quando o formulário é enviado ao cliente e validado quando o formulário é enviado de volta ao servidor.
+A estrutura usa tokens para garantir que a solicitação do cliente seja legítima. Os tokens são gerados quando o formulário é enviado ao cliente e validado quando o formulário é enviado de volta ao servidor.
 
 >[!NOTE]
 >
@@ -32,18 +31,18 @@ A estrutura utiliza tokens para garantir que a solicitação do cliente seja leg
 
 ### Dependências {#dependencies}
 
-Qualquer componente que dependa da dependência `granite.jquery` se beneficiará automaticamente da Estrutura de Proteção do CSRF. Se esse não for o caso de nenhum de seus componentes, você deverá declarar uma dependência de `granite.csrf.standalone` antes de poder usar a estrutura.
+Qualquer componente que dependa do `granite.jquery` a dependência se beneficiará automaticamente do CSRF Protection Framework. Se esse não for o caso de nenhum de seus componentes, você deve declarar uma dependência para `granite.csrf.standalone` antes de poder usar a estrutura.
 
-### Replicando a chave de criptografia {#replicating-crypto-keys}
+### Replicação da chave de criptografia {#replicating-crypto-keys}
 
-Para usar os tokens, é necessário replicar o binário `/etc/keys/hmac` para todas as instâncias na implantação. Uma maneira conveniente de copiar a chave HMAC para todas as instâncias é criar um pacote contendo a chave e instalá-la por meio do Gerenciador de pacotes em todas as instâncias.
-
->[!NOTE]
->
->Certifique-se de fazer as [alterações de configuração do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) necessárias para usar a Estrutura de Proteção do CSRF.
+Para usar os tokens, é necessário replicá-los `/etc/keys/hmac` binário para todas as instâncias na implantação. Uma maneira conveniente de copiar a chave HMAC para todas as instâncias é criar um pacote contendo a chave e instalá-la por meio do Gerenciador de Pacotes em todas as instâncias.
 
 >[!NOTE]
 >
->Se você usar o cache manifest com seu aplicativo da Web, certifique-se de adicionar &quot;**&amp;ast;**&quot; ao manifesto para garantir que o token não faça a chamada de geração de token CSRF off-line. Para obter mais informações, consulte este [link](https://www.w3.org/TR/offline-webapps/).
+>Certifique-se também de [Alterações na configuração do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) a fim de utilizar o Quadro de Proteção do QREF.
+
+>[!NOTE]
 >
->Para obter mais informações sobre ataques CSRF e maneiras de reduzi-los, consulte a [página OWASP de informações sobre falsificações entre sites](https://owasp.org/www-community/attacks/csrf).
+>Se você usar o cache de manifesto com seu aplicativo da Web, adicione &quot;**&amp;ast;**&quot; ao manifesto para garantir que o token não coloque a chamada de geração de token CSRF offline. Para obter mais informações, consulte esta seção [link](https://www.w3.org/TR/offline-webapps/).
+>
+>Para obter mais informações sobre ataques de CSRF e maneiras de atenuá-los, consulte o [Página OWASP de falsificação de solicitação entre sites](https://owasp.org/www-community/attacks/csrf).

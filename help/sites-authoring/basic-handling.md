@@ -1,8 +1,8 @@
 ---
 title: Manuseio básico
-seo-title: Manuseio básico
+seo-title: Basic Handling
 description: Familiarize-se com navegação pelo AEM e seu uso básico
-seo-description: Familiarize-se com navegação pelo AEM e seu uso básico
+seo-description: Get comfortable with navigating AEM and its basic usage
 uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 source-git-commit: 440aa5a2f4a020a16104f11eaf484a2cf7291e1f
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2969'
 ht-degree: 95%
 
 ---
@@ -23,13 +23,10 @@ ht-degree: 95%
 >[!NOTE]
 >
 >* Esta página foi projetada para apresentar uma visão geral do manuseio básico ao usar um ambiente de criação com o AEM. Usa o console **Sites** como base.
-   >
-   >
-* Algumas funcionalidades não estão disponíveis em todos os consoles, e funcionalidades adicionais podem estar disponíveis em alguns consoles. Informações específicas sobre os consoles individuais e o recurso relacionado serão abordadas com mais detalhes em outras páginas.
->* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar páginas de console](/help/sites-authoring/keyboard-shortcuts.md) e [edição](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
-
 >
-
+>* Algumas funcionalidades não estão disponíveis em todos os consoles, e funcionalidades adicionais podem estar disponíveis em alguns consoles. Informações específicas sobre os consoles individuais e o recurso relacionado serão abordadas com mais detalhes em outras páginas.
+>* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar páginas de console](/help/sites-authoring/keyboard-shortcuts.md) e [edição](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>
 
 
 ## Introdução {#getting-started}
@@ -81,7 +78,7 @@ A navegação global possui dois painéis, representados por ícones na margem e
 
 As opções disponíveis nesses painéis estão descritas abaixo.
 
-### Painel Navegação    {#navigation-panel}
+### Painel Navegação   {#navigation-panel}
 
 O painel Navegação fornece acesso aos consoles de AEM:
 
@@ -154,7 +151,7 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
    ![screen_shot_2018-03-23at103615](assets/screen_shot_2018-03-23at103615.png)
 
-* [Pesquisar  ](/help/sites-authoring/search.md)
+* [Pesquisar](/help/sites-authoring/search.md)
 
    ![](do-not-localize/screen_shot_2018-03-23at103542.png)
 
@@ -224,13 +221,13 @@ O cabeçalho sempre está presente na parte superior da tela. Embora a maioria d
 
 * Navegação pelo teclado
 
-   Você pode navegar por um site usando apenas o teclado. Isso usa a funcionalidade padrão do navegador da tecla **TAB** (ou **OPT+TAB**) para movê-lo entre elementos na página que são *focalizáveis*.
+   Você pode navegar por um site usando apenas o teclado. Isso usa a funcionalidade padrão do navegador da **GUIA** tecla (ou **OPT+TAB**) para movê-lo entre os elementos na página que são *focalizável*.
 
-   No console do **Sites** há a opção adicionada para **Ir para o conteúdo principal**. Isso fica visível à medida que você *tab* passa pelas opções de cabeçalho e acelera a navegação, permitindo que você ignore os elementos padrão na barra de ferramentas (produto) e o leve diretamente para o conteúdo principal.
+   No console do **Sites** há a opção adicionada para **Ir para o conteúdo principal**. Isso se torna visível à medida que você *guia* nas opções de cabeçalho e acelera a navegação, permitindo ignorar os elementos padrão na barra de ferramentas (produto) e acessar diretamente o conteúdo principal.
 
    ![bh-30](assets/bh-30.png)
 
-## Acessar ajuda {#accessing-help}
+## Acessar ajuda   {#accessing-help}
 
 Há vários recursos de ajuda disponíveis:
 
@@ -270,7 +267,7 @@ Recursos e downloads do desenvolvedor
    >Para obter uma visão geral de todos os atalhos de teclado, consulte a seguinte documentação:
    >
    >    * [Atalhos de teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   * [Atalhos de teclado para os consoles](/help/sites-authoring/keyboard-shortcuts.md)
+   >    * [Atalhos de teclado para os consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## Barra de ferramentas de Ações {#actions-toolbar}
@@ -290,9 +287,10 @@ Devido às restrições de espaço em algumas janelas, a barra de ferramentas po
 ![Barra de ferramentas de Ações](assets/bh-12.png)
 
 >[!NOTE]
-Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
+>
+>Os ícones individuais disponíveis são documentados em relação ao console/recurso/cenário apropriado.
 
-## Ações rápidas  {#quick-actions}
+## Ações rápidas {#quick-actions}
 
 Na [Exibição de cartão](#cardviewquickactions), determinadas ações estão disponíveis como ícones de ação rápida, além de estarem na barra de ferramentas. Os ícones de ação rápida estão disponíveis para um único item de cada vez e elimina a necessidade de pré-seleção.
 
@@ -309,12 +307,13 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 * [Exibição de coluna](#column-view)
 * [Exibição de cartão](#card-view)
 
-* [Exibição de lista  ](#list-view)
+* [Exibição de lista](#list-view)
 
 >[!NOTE]
-Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
+>
+>Por padrão, o AEM Assets não exibe as representações originais de ativos na interface do usuário como miniaturas em nenhuma das visualizações. Se for um administrador, você poderá usar sobreposições para configurar o AEM Assets com o objetivo de exibir representações originais como miniaturas.
 
-### Seleção de recursos    {#selecting-resources}
+### Seleção de recursos   {#selecting-resources}
 
 Selecionar um recurso específico depende de uma combinação da exibição e do dispositivo:
 
@@ -342,7 +341,7 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
    <td>Exibição de cartão<br /> </td>
    <td>
     <ul>
-     <li>Área de trabalho:<br /> Mouseover, em seguida, use a ação rápida de marca de verificação</li>
+     <li>Desktop:<br /> Passar o mouse sobre ele e usar a ação rápida de marca de verificação</li>
      <li>Dispositivo móvel:<br /> Tocar e segurar o cartão</li>
     </ul> </td>
    <td>
@@ -352,7 +351,7 @@ Selecionar um recurso específico depende de uma combinação da exibição e do
     </ul> </td>
   </tr>
   <tr>
-   <td>Exibição de lista  </td>
+   <td>Exibição de lista</td>
    <td>
     <ul>
      <li>Desktop: <br /> Clique na miniatura</li>
@@ -457,7 +456,7 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 
 * É possível navegar para baixo na árvore tocando/clicando em cartões (com cautela para evitar as ações rápidas) ou para cima novamente usando a [navegação estrutural no cabeçalho](/help/sites-authoring/basic-handling.md#the-header).
 
-### Exibição de lista    {#list-view}
+### Exibição de lista {#list-view}
 
 ![bh-19](assets/bh-19.png)
 
@@ -496,7 +495,8 @@ A seleção de um recurso na coluna mais à esquerda mostrará os recursos filho
 * Altere a ordem dos itens usando a barra vertical pontilhada na extremidade direita de cada item da lista.
 
    >[!NOTE]
-   Alterar a ordem funciona somente em uma pasta ordenável que tenha o valor `jcr:primaryType` como `sling:OrderedFolder`.
+   >
+   >Alterar a ordem funciona somente em uma pasta ordenável que tenha o valor `jcr:primaryType` como `sling:OrderedFolder`.
 
    ![bh-22](assets/bh-22.png)
 
@@ -521,7 +521,8 @@ Por exemplo, no Sites, é possível selecionar somente conteúdo (padrão), árv
 Se somente conteúdo for selecionado, apenas o ícone do painel será exibido. Se qualquer outra opção for selecionada, o nome da opção aparecerá ao lado do ícone do painel.
 
 >[!NOTE]
-[Atalhos de teclado](/help/sites-authoring/keyboard-shortcuts.md) estão disponíveis para alternar rapidamente entre as opções de exibição do painel.
+>
+>[Atalhos de teclado](/help/sites-authoring/keyboard-shortcuts.md) estão disponíveis para alternar rapidamente entre as opções de exibição do painel.
 
 ### Árvore de conteúdo {#content-tree}
 
@@ -532,8 +533,10 @@ Usando o painel lateral da árvore de conteúdo, juntamente com uma exibição d
 ![bh-26](assets/bh-26.png)
 
 >[!NOTE]
-Quando uma entrada na exibição hierárquica é selecionada, as teclas de seta podem ser usadas para navegar rapidamente pela hierarquia.
-Consulte os [atalhos de teclado](/help/sites-authoring/keyboard-shortcuts.md) para obter mais informações.
+>
+>Quando uma entrada na exibição hierárquica é selecionada, as teclas de seta podem ser usadas para navegar rapidamente pela hierarquia.
+>
+>Consulte os [atalhos de teclado](/help/sites-authoring/keyboard-shortcuts.md) para obter mais informações.
 
 ### Linha do tempo {#timeline}
 

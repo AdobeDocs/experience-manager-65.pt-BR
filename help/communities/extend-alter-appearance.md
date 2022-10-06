@@ -1,8 +1,8 @@
 ---
 title: Alterar a aparência (HBS)
-seo-title: Alterar a aparência
+seo-title: Alter the Appearance
 description: Modificar os scripts HBS
-seo-description: Modificar os scripts HBS
+seo-description: Modify the HBS scripts
 uuid: cff24505-dbb3-4312-9b1b-c1693b8d1c98
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,32 +10,31 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
-
 # Alterar a aparência (HBS) {#alter-the-appearance-hbs}
 
-Agora que os componentes do sistema de comentários personalizado no diretório do aplicativo (/apps) estão em vigor, com um resourceSuperType referenciando o sistema de comentários padrão e o Modelo/Visualização personalizado registrado, é possível modificar a implementação.
+Agora que os componentes do sistema de comentários personalizado no diretório do aplicativo (/apps) estão em vigor, com um resourceSuperType referenciando o sistema de comentários padrão e o Modelo/Exibição personalizado registrado, é possível modificar a implementação.
 
-Para uma demonstração simples, um recurso visual, o avatar mostrado pelo usuário conectado que publica um comentário, é removido.
+Para uma demonstração simples, um recurso visual, o avatar mostrado do usuário conectado que publica um comentário, é removido.
 
 >[!NOTE]
 >
->Para usar a extensão, a instância do sistema de comentários em um site a ser afetado (/content) deve definir resourceType como o sistema de comentários personalizado.
+>Para usar a extensão, a instância do sistema de comentários em um site a ser afetado (/content) deve definir resourceType para ser o sistema de comentários personalizado.
 
 ## Modificar os scripts HBS {#modify-the-hbs-scripts}
 
 Usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Abra [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Abrir [/apps/custom/components/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
-   * Comente a tag que inclui o avatar para uma postagem de comentário (~ linha 21):
+   * Comente a tag que inclui o avatar de uma postagem de comentário (~ linha 21):
 
       ```
         <!--
@@ -43,9 +42,9 @@ Usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
          -->
       ```
 
-* Abra [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Abrir [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
-   * Comente a tag que inclui o avatar para a próxima entrada de comentário (~ linha 44):
+   * Comente a tag que inclui o avatar da próxima entrada de comentário (~ linha 44):
 
       ```
         <!--
@@ -53,30 +52,30 @@ Usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
          -->
       ```
 
-* Selecione **Salvar tudo**
+* Selecionar **Salvar tudo**
 
 ### Replicar aplicativo personalizado {#replicate-custom-app}
 
-Após a modificação do aplicativo, é necessário rereplicar o componente personalizado.
+Após a modificação do aplicativo, é necessário replicar novamente o componente personalizado.
 
 Uma maneira de fazer isso é:
 
 * No menu principal
 
-   * Selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Replicação]**.
-   * Selecione **[!UICONTROL Ativar árvore]**.
-   * Defina `Start Path` como `/apps/custom`.
-   * Desmarque **[!UICONTROL Somente Modificado]**.
-   * Selecione o botão **[!UICONTROL Ativar]**.
+   * Selecionar **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Replicação]**.
+   * Selecionar **[!UICONTROL Ativar árvore]**.
+   * Definir `Start Path` para `/apps/custom`.
+   * Desmarcar **[!UICONTROL Somente modificados]**.
+   * Selecionar **[!UICONTROL Ativar]** botão.
 
-### Comentário modificado da visualização na página de amostra publicada {#view-modified-comment-on-published-sample-page}
+### Exibir Comentário Modificado na Página de Amostra Publicada {#view-modified-comment-on-published-sample-page}
 
-[Continuando a ](/help/communities/extend-sample-page.md#publish-sample-page) experiência na instância de publicação, ainda conectado como o mesmo usuário, agora é possível atualizar a página no ambiente de publicação para visualização da modificação para remover o avatar:
+[Continuar a experiência](/help/communities/extend-sample-page.md#publish-sample-page) na instância de publicação, ainda conectado como o mesmo usuário, agora é possível atualizar a página no ambiente de publicação para exibir a modificação e remover o avatar:
 
-![visualização modificada-content](assets/view-modified-content.png)
+![view-modified-content](assets/view-modified-content.png)
 
 ### Pacote de extensão de comentário de amostra {#sample-comment-extension-package}
 
-Anexado é um pacote do aplicativo de comentários personalizado criado neste tutorial.
+Anexado há um pacote de comentários personalizados criados neste tutorial.
 
 [Obter arquivo](assets/sample-comment-extension-6-1-fp3.zip)

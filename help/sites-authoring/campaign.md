@@ -1,22 +1,21 @@
 ---
 title: Trabalhar com o Adobe Campaign Classic e o Adobe Campaign Standard
-seo-title: Trabalhar com o Adobe Campaign 6.1 e o Adobe Campaign Standard
+seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: É possível criar conteúdo de email no AEM e processá-lo nos emails do Adobe Campaign
-seo-description: É possível criar conteúdo de email no AEM e processá-lo nos emails do Adobe Campaign
+seo-description: You can create email content in AEM and process it in Adobe Campaign emails
 uuid: 23195f0b-71c0-4554-8c8b-b0e7704d71d7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
-translation-type: tm+mt
-source-git-commit: 8e663a3c11523796a2bad15e9c088e484f2b573b
+exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2780'
-ht-degree: 75%
+source-wordcount: '2758'
+ht-degree: 74%
 
 ---
-
 
 # Trabalhar com o Adobe Campaign Classic e o Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
 
@@ -39,7 +38,7 @@ Consulte também [Criação de formulários do Adobe Campaign no AEM](/help/site
 
 Depois de configurar o AEM e o Adobe Campaign, é possível criar conteúdo de email diretamente no AEM e processá-lo no Adobe Campaign.
 
-Ao criar conteúdo Adobe Campaign no AEM, é necessário vincular a um serviço Adobe Campaign antes de editar o conteúdo para acessar toda a funcionalidade.
+Ao criar o conteúdo do Adobe Campaign no AEM, você deve vincular a um serviço do Adobe Campaign antes de editar o conteúdo para acessar toda a funcionalidade.
 
 Há dois casos possíveis:
 
@@ -48,15 +47,15 @@ Há dois casos possíveis:
 
 As instruções detalhadas estão descritas neste documento.
 
-### Criar novo conteúdo email  {#creating-new-email-content}
+### Criar novo conteúdo email {#creating-new-email-content}
 
 >[!NOTE]
 >
->Ao adicionar modelos de e-mail, não se esqueça de adicioná-los em **/content/campanha** para disponibilizá-los.
+>Ao adicionar modelos de email, adicione-os em **/content/campaign** para as disponibilizar.
 
 #### Criar novo conteúdo email {#creating-new-email-content-1}
 
-1. Em AEM, selecione **Sites**, em seguida **Campanha** e, em seguida, navegue até onde as campanhas de e-mail são gerenciadas. No exemplo a seguir, o caminho é **Sites** > **Campanha** > **Geometrixx Outdoors** > **Campanhas de e-mail**.
+1. Em AEM selecione **Sites** then **Campanhas**, em seguida, navegue até o local em que suas campanhas de email são gerenciadas. No exemplo a seguir, o caminho é **Sites** > **Campanhas** > **Geometrixx Outdoors** > **Campanhas de email**.
 
    >[!NOTE]
    >
@@ -67,12 +66,12 @@ As instruções detalhadas estão descritas neste documento.
 1. Selecione **Criar** e **Criar página**.
 1. Selecione um dos modelos disponíveis específico do Adobe Campaign ao qual você está se conectando e clique em **Próximo**. Há três modelos disponíveis por padrão:
 
-   * **Email** da Adobe Campaign Classic: permite que você adicione conteúdo a um modelo predefinido (duas colunas) antes de enviá-lo para a Adobe Campaign Classic para delivery.
-   * **Email** da Adobe Campaign Standard: permite que você adicione conteúdo a um modelo predefinido (duas colunas) antes de enviá-lo para a Adobe Campaign Standard para delivery.
+   * **Email do Adobe Campaign Classic**: permite adicionar conteúdo a um modelo predefinido (duas colunas) antes de enviá-lo ao Adobe Campaign Classic para entrega.
+   * **Email do Adobe Campaign Standard**: permite adicionar conteúdo a um modelo predefinido (duas colunas) antes de enviá-lo ao Adobe Campaign Standard para entrega.
 
-1. Preencha o **Título** e opcionalmente o **Descrição** e clique em **Criar**. O título é usado como o assunto do boletim informativo/email, a menos que você o substitua ao editar o email.
+1. Preencha o **Título** e, opcionalmente, **Descrição** e clique em **Criar**. O título é usado como o assunto do boletim informativo/email, a menos que você o substitua ao editar o email.
 
-### Selecionar o modelo e o serviço de nuvem do Adobe Campaign  {#selecting-the-adobe-campaign-cloud-service-and-template}
+### Selecionar o modelo e o serviço de nuvem do Adobe Campaign {#selecting-the-adobe-campaign-cloud-service-and-template}
 
 Para fazer a integração com o Adobe Campaign, é necessário adicionar um serviço de nuvem do Adobe Campaign à página. Isso fornece acesso à personalização e a outras informações do Adobe Campaign.
 
@@ -88,14 +87,14 @@ Na página **Sites**:
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
-1. Selecione **Editar** e, em seguida, a guia **Serviços em nuvem** e role para baixo até o final, clique no sinal + para adicionar uma configuração e selecione **Adobe Campaign**.
+1. Selecionar **Editar** e depois a **Serviços em nuvem** e role para baixo até a parte inferior e clique no sinal + para adicionar uma configuração e selecione **Adobe Campaign**.
 
    ![chlimage_1-17](assets/chlimage_1-17a.png)
 
 1. Selecione a configuração que corresponde à instância do Adobe Campaign na lista suspensa e confirme clicando em **Salvar**.
 1. É possível exibir o modelo aplicado ao email, clicando na guia **Adobe Campaign**. Caso deseje selecionar outro modelo, é possível acessá-lo do email ao editar.
 
-   Se você deseja aplicar um template do delivery de email específico (da Adobe Campaign), diferente do modelo de email padrão, em **Propriedades**, selecione a guia **Adobe Campaign**. Digite o nome interno do modelo de entrega de email na instância relacionada do Adobe Campaign.
+   Se quiser aplicar um template específico de delivery de email (do Adobe Campaign), diferente do template de email padrão, em **Propriedades**, selecione o **Adobe Campaign** guia . Digite o nome interno do modelo de entrega de email na instância relacionada do Adobe Campaign.
 
    O modelo selecionado determina quais campos de personalização estarão disponíveis no Adobe Campaign.
 
@@ -107,13 +106,13 @@ Na criação do boletim informativo/email, talvez não seja possível selecionar
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. Selecione **Serviços em nuvem** e clique em **+** para adicionar uma configuração. Selecione qualquer configuração visível (não importa qual). Clique ou toque no sinal de **+** para adicionar outra configuração e selecione **Adobe Campaign**.
+1. Selecionar **Serviços em nuvem** e clique em **+** para adicionar uma configuração. Selecione qualquer configuração visível (não importa qual). Clique ou toque no sinal de **+** para adicionar outra configuração e selecione **Adobe Campaign**.
 
    >[!NOTE]
    >
    >Como alternativa, é possível selecionar os serviços de nuvem em **Propriedades da exibição** na guia **Sites**.
 
-1. Selecione a configuração que corresponde à sua instância do Adobe Campaign na lista suspensa, exclua a primeira configuração que você criou que não foi para o Adobe Campaign e, em seguida, confirme clicando na marca de seleção.
+1. Selecione a configuração que corresponde à instância do Adobe Campaign na lista suspensa, exclua a primeira configuração criada que não era para o Adobe Campaign e confirme clicando na marca de seleção.
 1. Continue com a etapa 4 do procedimento anterior para selecionar modelos e adicionar texto simples.
 
 ### Edição do conteúdo de email {#editing-email-content}
@@ -124,7 +123,7 @@ Para editar o conteúdo do email:
 
    ![chlimage_1-20](assets/chlimage_1-20a.png)
 
-1. Se você quiser alterar o assunto do email ou adicionar texto sem formatação para os usuários que não visualizações o email em HTML, selecione **Email** e adicione um assunto e um texto. Selecione o ícone de página para gerar automaticamente uma versão simples do HTML. Clique na marca de seleção ao terminar.
+1. Se desejar alterar o assunto do email ou adicionar texto simples para os usuários que não visualizarão o email no HTML, selecione **Email** e adicione um assunto e texto. Selecione o ícone de página para gerar automaticamente uma versão simples do HTML. Clique na marca de seleção ao concluir.
 
    É possível personalizar o boletim informativo usando os campos de personalização do Adobe Campaign. Para adicionar um campo de personalização, abra o seletor de campo de personalização clicando no botão que exibe o logotipo do Adobe Campaign. Em seguida, será possível escolher de todos os campos disponíveis para esse boletim informativo.
 
@@ -132,9 +131,9 @@ Para editar o conteúdo do email:
    >
    >Se os campos de personalização nas propriedades do editor estiverem acinzentados, verifique sua configuração novamente.
 
-   ![chlimage_1-29](assets/chlimage_1-21a.png)
+   ![chlimage_1-21](assets/chlimage_1-21a.png)
 
-1. Abra o painel Componentes no lado esquerdo da tela e selecione **Newsletter do Adobe Campaign** no menu suspenso para localizar esses componentes.
+1. Abra o painel Componentes no lado esquerdo da tela e selecione **Informativo do Adobe Campaign** no menu suspenso para encontrar esses componentes.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
@@ -142,7 +141,7 @@ Para editar o conteúdo do email:
 
    ![chlimage_1-23](assets/chlimage_1-23a.png)
 
-   Consulte [Componentes Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) para obter uma descrição detalhada de cada componente.
+   Consulte [Componentes do Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) para obter uma descrição detalhada de cada componente.
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
@@ -150,20 +149,20 @@ Para editar o conteúdo do email:
 
 Ao editar o conteúdo, é possível inserir:
 
-* Campos de contexto do Adobe Campaign. Esses são campos que você pode inserir no texto que serão adaptados de acordo com os dados do recipient (por exemplo, nome, sobrenome ou quaisquer dados da dimensão do público alvo).
-* Blocos de personalização do Adobe Campaign. Esses são blocos de conteúdo predefinido que não estão relacionados aos dados do recipient, como o logotipo de uma marca ou o link para um mirror page.
+* Campos de contexto do Adobe Campaign. Esses são campos que você pode inserir no texto que serão adaptados de acordo com os dados do recipient (por exemplo, nome, sobrenome ou quaisquer dados da dimensão de destino).
+* Blocos de personalização do Adobe Campaign. Esses são blocos de conteúdo predefinido que não estão relacionados aos dados do recipient, como um logotipo da marca ou um link para uma mirror page.
 
 Consulte [Componentes do Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) para obter uma descrição completa dos componentes de campanha.
 
 >[!NOTE]
 >
 >* Somente os campos da dimensão de direcionamento de **Perfis** do Adobe Campaign são considerados.
->* Ao exibir Propriedades de **Sites**, você não tem acesso aos campos de contexto do Adobe Campaign. É possível acessá-los diretamente do email ao editar.
+>* Ao visualizar propriedades de **Sites**, você não tem acesso aos campos de contexto do Adobe Campaign. É possível acessá-los diretamente do email ao editar.
 
 
 Para inserir a personalização:
 
-1. Insira um novo componente **Newsletter** > **Texto e personalização (Campanha)** arrastando-o para a página.
+1. Inserir um novo **Informativo** > **Texto e personalização (Campaign)** arrastando-o para a página.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 
@@ -176,15 +175,14 @@ Para inserir a personalização:
    >**Para o Adobe Campaign Standard:**
    >
    >* Os campos de contexto disponíveis correspondem à dimensão de direcionamento **Perfis** no Adobe Campaign.
-   >* Consulte [Vincular uma página AEM a um email da Adobe Campaign](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
+   >* Consulte [Vincular uma página de AEM a um email do Adobe Campaign](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
 
    >
    >**Para o Adobe Campaign Classic:**
    >
-   >* Os campos de contexto disponíveis são recuperados dinamicamente do schema Adobe Campaign **nms:sementeMember**. Os dados da extensão de destino são recuperados dinamicamente do fluxo de trabalho que contém a entrega sincronizada com o conteúdo. (Consulte a seção [Sincronizar conteúdo criado em AEM com um delivery do Adobe Campaign](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic)).
-      >
-      >
-   * Para adicionar ou ocultar elementos de personalização, consulte [Gerenciar campos de personalização e blocos](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
+   >* Os campos de contexto disponíveis são recuperados dinamicamente da Adobe Campaign **nms:seedMember** esquema. Os dados da extensão de destino são recuperados dinamicamente do fluxo de trabalho que contém a entrega sincronizada com o conteúdo. (Consulte o [Sincronizar o conteúdo criado no AEM com um delivery do Adobe Campaign](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic) seção).
+   >
+   >* Para adicionar ou ocultar elementos de personalização, consulte [Gerenciamento de campos e blocos de personalização](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
    >* **Importante:** todos os campos da tabela de distribuição também devem estar na tabela de destinatários (ou na tabela de contatos correspondente).
 
 
@@ -192,7 +190,7 @@ Para inserir a personalização:
 
    ![chlimage_1-27](assets/chlimage_1-27a.png)
 
-   Depois de inserir os campos de contexto ou os blocos de personalização, será possível visualizar o boletim informativo e testar seus campos. Consulte [Pré-visualização de uma newsletter](#previewing-a-newsletter).
+   Depois de inserir os campos de contexto ou os blocos de personalização, será possível visualizar o boletim informativo e testar seus campos. Consulte [Visualização de um informativo](#previewing-a-newsletter).
 
 ### Visualizar um boletim informativo {#previewing-a-newsletter}
 
@@ -208,7 +206,7 @@ Para inserir a personalização:
 
 1. Para visualizar a personalização, abra o ContextHub, clicando/tocando no ícone correspondente na barra de ferramentas. As tags do campo de personalização foram substituídas pelos dados de distribuição do perfil selecionado. Veja como as variáveis se adaptam ao alternar perfis no ContextHub.
 
-   ![chlimage_1-21](assets/chlimage_1-29a.png)
+   ![chlimage_1-29](assets/chlimage_1-29a.png)
 
 1. É possível ver os dados de distribuição do Adobe Campaign que estão associados ao perfil atualmente selecionado. Para fazer isso, toque no módulo do Adobe Campaign na barra do ContextHub. Isso abre uma caixa de diálogo que exibe todos os dados de distribuição do perfil atual. Além disso, os dados ajustam-se ao alternar para um perfil diferente.
 
@@ -216,13 +214,13 @@ Para inserir a personalização:
 
 ### Aprovação de conteúdo no AEM {#approving-content-in-aem}
 
-Depois que o conteúdo estiver concluído, você pode iniciar o processo de aprovação. Vá para a guia **Fluxo de trabalho** da caixa de ferramentas e selecione **Aprovar para Adobe Campaign** fluxo de trabalho.
+Depois que o conteúdo estiver concluído, você pode iniciar o processo de aprovação. Vá para o **Fluxo de trabalho** da caixa de ferramentas e selecione o **Aprovar para Adobe Campaign** fluxo de trabalho.
 
 Esse fluxo de trabalho pronto para uso tem duas etapas: revisão e aprovação ou revisão e rejeição. No entanto, esse fluxo de trabalho pode ser estendido e adaptado a um processo mais complexo.
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
-Para aprovar conteúdo para Adobe Campaign, aplique o fluxo de trabalho selecionando **Fluxo de trabalho** e selecionando **Aprovar para Adobe Campaign** e clique em **Fluxo de trabalho do Start**. Realize as etapas e aprove o conteúdo. Também é possível descartar o conteúdo selecionando **Rejeitar** em vez de **Aprovar** na última etapa do fluxo de trabalho.
+Para aprovar o conteúdo para o Adobe Campaign, aplique o fluxo de trabalho selecionando **Fluxo de trabalho** e seleção **Aprovar para Adobe Campaign** e clique em **Iniciar fluxo de trabalho**. Realize as etapas e aprove o conteúdo. Também é possível descartar o conteúdo selecionando **Rejeitar** em vez de **Aprovar** na última etapa do fluxo de trabalho.
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
@@ -239,7 +237,7 @@ No Adobe Campaign Classic
 >[!NOTE]
 O conteúdo não aprovado pode ser sincronizado com uma entrega no Adobe Campaign, mas a entrega não pode ser realizada. Somente conteúdo aprovado pode ser enviado por meio das entregas do Campaign.
 
-## Vincular o AEM com o Adobe Campaign Standard e o Adobe Campaign Classic  {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic}
+## Vincular o AEM com o Adobe Campaign Standard e o Adobe Campaign Classic {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic}
 
 A forma como você vincula ou sincroniza o AEM com o Adobe Campaign depende da utilização do Adobe Campaign Standard baseado em assinatura ou do Adobe Campaign Classic no local.
 
@@ -260,11 +258,11 @@ Fazer isso permite entregar o conteúdo. Será possível saber se um boletim inf
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 >[!NOTE]
-Se um boletim informativo estiver vinculado a vários delivery, o número de delivery vinculados (mas nem todas as ID são exibidas).
+Se um boletim informativo estiver vinculado a várias entregas, será exibido o número de entregas vinculadas (mas não cada ID).
 
 Para vincular uma página criada no AEM com um email do Adobe Campaign:
 
-1. Crie um novo email baseado em um modelo de email específico do AEM. Consulte [Criação de emails no Adobe Campaign Standard](https://helpx.adobe.com/br/campaign/standard/channels/using/creating-an-email.html) para obter mais informações.
+1. Crie um novo email baseado em um modelo de email específico do AEM. Consulte [Criar emails no Adobe Campaign Standard](https://helpx.adobe.com/br/campaign/standard/channels/using/creating-an-email.html) para obter mais informações.
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 
@@ -272,10 +270,10 @@ Para vincular uma página criada no AEM com um email do Adobe Campaign:
 
    ![chlimage_1-37](assets/chlimage_1-37a.png)
 
-1. Selecione **Ligar a um conteúdo Adobe Experience Manager** na barra de ferramentas para aceder à lista de conteúdos disponível no AEM.
+1. Selecionar **Link com um conteúdo do Adobe Experience Manager** na barra de ferramentas para acessar a lista de conteúdos disponíveis no AEM.
 
    >[!NOTE]
-   Se a opção **Link com um Adobe Experience Manager** não aparecer na barra de ações, verifique se o **Modo de edição de conteúdo** está configurado corretamente definido como **Adobe Experience Manager** nas propriedades de e-mail.
+   Se a variável **Link com uma Adobe Experience Manager** não for exibida na barra de ações, verifique se a opção **Modo de edição de conteúdo** está configurado corretamente para **Adobe Experience Manager** nas propriedades do email.
 
    ![chlimage_1-38](assets/chlimage_1-38a.png)
 
@@ -301,7 +299,7 @@ Para vincular uma página criada no AEM com um email do Adobe Campaign:
    É possível substituir o link entre um email e o conteúdo do AEM usando **Excluir o link com o conteúdo do Adobe Experience Manager** da barra de ações do conteúdo. Este botão ficará disponível apenas se um conteúdo já estiver vinculado à entrega. Para vincular um conteúdo diferente com uma entrega, você deve excluir o link de conteúdo atual para poder estabelecer um link.
    Quando o link for excluído, o conteúdo local será mantido e poderá ser editado no Adobe Campaign. Se vincular novamente o conteúdo depois de modificá-lo, todas as alterações serão perdidas.
 
-### Sincronizar o conteúdo criado no AEM com uma entrega do Adobe Campaign Classic  {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
+### Sincronizar o conteúdo criado no AEM com uma entrega do Adobe Campaign Classic {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
 
 O Adobe Campaign permite recuperar e sincronizar o conteúdo criado no AEM com:
 
@@ -317,20 +315,20 @@ No AEM, se um boletim informativo estiver vinculado a uma única entrega, o cód
 ![chlimage_1-39](assets/chlimage_1-39a.png)
 
 >[!NOTE]
-Se o boletim informativo estiver vinculado a vários delivery, o número de delivery vinculados (mas nem todas as ID são exibidas).
+Se o boletim informativo estiver vinculado a várias entregas, será exibido o número de entregas vinculadas (mas não cada ID).
 [!NOTE]
 A etapa do fluxo de trabalho **Publicar no Adobe Campaign** foi descontinuada no AEM 6.1. Essa etapa fazia parte da integração do AEM 6.0 com o Adobe Campaign e não é mais necessária.
 
 Para sincronizar o conteúdo criado no AEM com uma entrega do Adobe Campaign:
 
-1. Crie um delivery ou adicione uma atividade a um fluxo de trabalho de campanha selecionando o template do delivery **Email com conteúdo AEM (mailAEMContent)**.
+1. Crie um delivery ou adicione uma atividade de delivery a um workflow de campanha selecionando o **Entrega de email com conteúdo AEM (mailAEMContent)** template do delivery.
 
    ![chlimage_1-40](assets/chlimage_1-40a.png)
 
-1. Selecione **Sincronizar** na barra de ferramentas para acessar a lista de conteúdo disponível no AEM.
+1. Selecionar **Sincronizar** na barra de ferramentas para acessar a lista de conteúdos disponíveis no AEM.
 
    >[!NOTE]
-   Se a opção **Sincronizar** não aparecer na barra de ferramentas do delivery, verifique se o campo **Modo de edição de conteúdo** está configurado corretamente em **AEM** selecionando **Propriedades** > **Avançado**.
+   Se a variável **Sincronizar** não for exibida na barra de ferramentas do delivery, verifique se a opção **Modo de edição de conteúdo** estiver configurado corretamente em **AEM** selecionando **Propriedades** > **Avançado**.
 
    ![chlimage_1-41](assets/chlimage_1-41a.png)
 
@@ -354,8 +352,8 @@ Para sincronizar o conteúdo criado no AEM com uma entrega do Adobe Campaign:
 
    >[!NOTE]
    * Após a sincronização da entrega e do conteúdo, o conteúdo da entrega no Adobe Campaign se tornará somente leitura. O assunto e o conteúdo do email não podem mais ser modificados.
-   * Se o conteúdo for atualizado no AEM enquanto estiver vinculado a uma entrega no Adobe Campaign, ele será atualizado automaticamente na entrega durante sua análise. A sincronização também pode ser executada manualmente usando o botão **Atualizar conteúdo agora**.
-   * Você pode cancelar a sincronização entre um delivery e AEM conteúdo usando o botão **Dessincronizar**. Isso só estará disponível se um conteúdo já estiver sincronizado com a entrega. Para sincronizar um conteúdo diferente com uma entrega, você deve cancelar a sincronização de conteúdo atual para poder estabelecer um novo link.
+   * Se o conteúdo for atualizado no AEM enquanto estiver vinculado a uma entrega no Adobe Campaign, ele será atualizado automaticamente na entrega durante sua análise. A sincronização também pode ser executada manualmente usando o **Atualizar conteúdo agora** botão.
+   * Você pode cancelar a sincronização entre um delivery e AEM conteúdo usando o **Dessincronizar** botão. Isso só estará disponível se um conteúdo já estiver sincronizado com a entrega. Para sincronizar um conteúdo diferente com uma entrega, você deve cancelar a sincronização de conteúdo atual para poder estabelecer um novo link.
    * Caso seja dessincronizado, o conteúdo local será mantido e poderá ser editado no Adobe Campaign. Se você ressincronizar o conteúdo depois de modificá-lo, perderá todas as alterações.
    * Para entregas recorrentes e contínuas, a sincronização com o conteúdo do AEM é interrompida sempre que a entrega é realizada.
 

@@ -1,22 +1,21 @@
 ---
 title: Anotações ao editar uma página
-seo-title: Anotações ao editar uma página
+seo-title: Annotations when Editing a Page
 description: Muitos componentes diretamente relacionados ao conteúdo permitem que você adicione uma anotação
-seo-description: Muitos componentes diretamente relacionados ao conteúdo permitem que você adicione uma anotação
+seo-description: Many components directly related to content allow you to add an annotation
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
-translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '634'
 ht-degree: 98%
 
 ---
-
 
 # Anotações ao editar uma página{#annotations-when-editing-a-page}
 
@@ -52,11 +51,9 @@ Um [modo](/help/sites-authoring/author-environment-tools.md#page-modes) é usado
 >
 >É possível fazer anotações em vários recursos:
 >
->* [Anotação de ativos](/help/assets/manage-assets.md#annotating)
+>* [Anotar ativos](/help/assets/manage-assets.md#annotating)
 >* [Anotação de ativos de vídeo](/help/assets/managing-video-assets.md#annotate-video-assets)
-
 >
-
 
 
 ### Anotação em componente {#annotating-a-component}
@@ -126,4 +123,3 @@ O modo Anotar permite criar, editar, mover ou excluir anotações de seu conteú
 As anotações não aparecem no modo Editar, mas o selo na parte superior direita da barra de ferramentas mostra quantas anotações existem para a página atual. O selo substitui o ícone de Anotações padrão, mas ainda funciona como um link rápido que alterna de/para o modo Anotar:
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
-

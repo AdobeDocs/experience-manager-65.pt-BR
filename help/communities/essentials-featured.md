@@ -1,31 +1,30 @@
 ---
 title: Conteúdo essencial em destaque
-seo-title: Conteúdo essencial em destaque
-description: Trabalhar com conteúdo de recursos
-seo-description: Trabalhar com conteúdo de recursos
+seo-title: Featured Content Essentials
+description: Trabalhar com conteúdo de recurso
+seo-description: Working with feature content
 uuid: b376828a-1431-4d16-ad6b-b23a3ea62a75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: 70b0ad6a-c891-4588-8515-449aed206805
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '106'
 ht-degree: 6%
 
 ---
 
-
-# Conteúdo essencial em destaque {#featured-content-essentials}
+# Conteúdo essencial em destaque  {#featured-content-essentials}
 
 Esta página fornece as informações essenciais para trabalhar com conteúdo em destaque.
 
-Ao contrário de fixar uma publicação no topo de um fórum, esse recurso permite que o conteúdo seja destacado em qualquer lugar no site da comunidade.
+Em contraste com a definição de uma publicação no topo de um fórum, esse recurso permite que o conteúdo seja destacado em qualquer lugar no site da comunidade.
 
 
-## Essentials for Client-Side {#essentials-for-client-side}
+## Fundamentos para o lado do cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -34,7 +33,7 @@ Ao contrário de fixar uma publicação no topo de um fórum, esse recurso permi
    <td>social/commons/components/hbs/featuredcontent</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusivo</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incondicional</strong></a></td>
    <td>Não</td>
   </tr>
   <tr>
@@ -56,8 +55,8 @@ Ao contrário de fixar uma publicação no topo de um fórum, esse recurso permi
  </tbody>
 </table>
 
-* [Personalizações do cliente](client-customize.md)
+* [Personalizações do lado do cliente](client-customize.md)
 
 ### Função da biblioteca de arquivo {#file-library-function}
 
-Uma estrutura de site da comunidade que inclui a [função de Conteúdo em destaque](functions.md#featured-content-function), inclui um componente `featured content` configurado.
+Uma estrutura de site da comunidade que inclui a variável [Função de conteúdo em destaque](functions.md#featured-content-function), inclui um `featured content` componente.

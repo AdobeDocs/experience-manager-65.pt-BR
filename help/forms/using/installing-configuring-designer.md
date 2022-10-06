@@ -1,7 +1,7 @@
 ---
 title: Instalar e configurar o Designer
 seo-title: Installing and configuring Designer
-description: 'O Designer está disponível como um instalador independente e também é fornecido com o Workbench. Saiba como instalar o Designer independente.  '
+description: O Designer está disponível como um instalador independente e também é fornecido com o Workbench. Saiba como instalar o Designer independente.
 seo-description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.
 uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar

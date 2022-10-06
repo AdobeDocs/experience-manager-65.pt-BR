@@ -75,7 +75,7 @@ Você pode definir um link com título e descrição.
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de imagem](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de imagem](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/image.html) em vez disso.
 
 O componente de base da Imagem adaptativa gera imagens que são dimensionadas para caber na janela na qual a página da Web está aberta. Para usar o componente, você fornece um recurso de imagem do sistema de arquivos ou DAM. Quando a página da Web está aberta, o navegador baixa uma cópia da imagem que foi redimensionada para que seja adequada à janela atual.
 

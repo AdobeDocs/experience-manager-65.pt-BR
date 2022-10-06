@@ -1,8 +1,8 @@
 ---
 title: Criação - o Ambiente e as ferramentas
-seo-title: Criação - o Ambiente e as ferramentas
+seo-title: Authoring - the Environment and Tools
 description: O console Sites permite gerenciar e navegar em seu site. Usando dois painéis, a estrutura de seu site pode ser expandida e as ações executadas nos elementos necessários.
-seo-description: O console Sites permite gerenciar e navegar em seu site. Usando dois painéis, a estrutura de seu site pode ser expandida e as ações executadas nos elementos necessários.
+seo-description: The Websites console allows you to manage and navigate your website. Using two panes, the structure of your website can be expanded and actions taken on the required elements.
 uuid: 0a9ce725-042a-4697-81fe-ac86cbab0398
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 86%
+source-wordcount: '899'
+ht-degree: 85%
 
 ---
 
@@ -76,7 +76,7 @@ Esta guia lista as imagens no repositório.
 
 Depois que você criar um parágrafo de Imagem na página, poderá arrastar um item e soltá-lo no parágrafo.
 
-![chlimage_1-191](assets/chlimage_1-111.png)
+![chlimage_1-111](assets/chlimage_1-111.png)
 
 ### Pesquisar documentos {#finding-documents}
 
@@ -144,14 +144,14 @@ os seguintes padrões de pesquisa vão encontrá-la (e qualquer outra imagem cor
 
 * `name:*nmv*`
 * `name:AD*`
-a correspondência de caracteres  ** não diferencia maiúsculas de minúsculas.
+o caractere correspondente é *not* diferencia maiúsculas de minúsculas.
 
 * `name:ad?nm??is.*`
 você pode usar qualquer número de curingas em um query.
 
 >[!NOTE]
 >
->Também é possível usar a pesquisa [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
+>Você também pode usar [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) pesquisar.
 
 ## Exibição de referências {#showing-references}
 
@@ -163,7 +163,7 @@ Para mostrar referências de página diretas:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Selecione **Mostrar referências...** AEM abre a janela Referências e exibe quais páginas se referem à página selecionada, incluindo seus caminhos.
+1. Selecionar **Mostrar referências...** AEM abre a janela Referências e exibe quais páginas se referem à página selecionada, incluindo seus caminhos.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -184,7 +184,7 @@ O **Log de auditoria** pode ser acessado na guia **Informações** do sidekick. 
 
 ## Informações da página {#page-information}
 
-O console Site também [fornece informações sobre o status atual da página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), como publicação, modificação, bloqueio, livecopy etc.
+O console Site também [fornece informações sobre o status atual da página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) como publicação, modificação, bloqueio, livecopy etc.
 
 ## Modos de página   {#page-modes}
 
@@ -205,9 +205,9 @@ Os ícones na parte inferior do Sidekick são usados para alternar os modos de t
 >Também há outras opções disponíveis:
 >
 >* [Andaime](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
-* [ClientContext](/help/sites-administering/client-context.md)
-* Sites - abrirá o console Websites.
-* Recarregar - atualizará a página.
+>* [ClientContext](/help/sites-administering/client-context.md)
+>* Websites - abrirá o console Websites.
+>* Recarregar - atualizará a página.
 
 
 ## Atalhos de teclado {#keyboard-shortcuts}

@@ -1,8 +1,8 @@
 ---
 title: Sincronização de usuários das comunidades
-seo-title: Sincronização de usuários das comunidades
+seo-title: Communities User Synchronization
 description: Como a sincronização de usuários funciona
-seo-description: Como a sincronização de usuários funciona
+seo-description: How user synchronization works
 uuid: 772b82bd-a66c-4c1d-b80b-dcff77c873a3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -14,7 +14,7 @@ role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '2490'
+source-wordcount: '2483'
 ht-degree: 2%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 2%
 
 ## Introdução {#introduction}
 
-No AEM Communities, no ambiente de publicação (dependendo das permissões configuradas), *visitantes do site* podem se tornar *membros*, criar *grupos de usuários* e editar seu *perfil de membro* .
+No AEM Communities, no ambiente de publicação (dependendo das permissões configuradas), *visitantes do site* pode tornar-se *membros*, criar *grupos de usuários* e edite seus *perfil de membro* .
 
-*Os* dados do usuário são um termo usado para se referir a  *usuários*, perfis  *de usuários e grupos* de usuários **.
+*Dados do usuário* é um termo usado para se referir a *usuários*, *perfis de usuário* e *grupos de usuários*.
 
-** Membro é um termo usado para se referir a  ** usuários registrados no ambiente de publicação, em vez de usuários registrados no ambiente de criação.
+*Membros* é um termo usado para se referir a *usuários* registrado no ambiente de publicação, em vez de usuários registrados no ambiente de criação.
 
 Para obter mais informações sobre os dados do usuário, visite [Gerenciar usuários e grupos de usuários](/help/communities/users.md).
 
@@ -37,7 +37,7 @@ Por design, os dados do usuário criados no ambiente de publicação não aparec
 
 A maioria dos dados do usuário criados no ambiente de criação tem o objetivo de permanecer no ambiente de criação e não é sincronizada nem replicada para publicar instâncias.
 
-Quando [topology](/help/communities/topologies.md) é um [farm de publicação](/help/sites-deploying/recommended-deploys.md#tarmk-farm), o registro e as modificações feitas em uma instância de publicação precisam ser sincronizadas com outras instâncias de publicação. Os membros precisam fazer logon e ver seus dados em qualquer nó de publicação.
+Quando a variável [topologia](/help/communities/topologies.md) é um [publicar farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), o registro e as modificações feitas em uma instância de publicação precisam ser sincronizadas com outras instâncias de publicação. Os membros precisam fazer logon e ver seus dados em qualquer nó de publicação.
 
 Quando a sincronização do usuário é ativada, os dados do usuário são sincronizados automaticamente entre as instâncias de publicação no farm.
 
@@ -63,13 +63,13 @@ Para obter instruções detalhadas, passo a passo, sobre como habilitar a sincro
 
 ### Publicar site a partir do console Sites das Comunidades {#publish-site-from-communities-sites-console}
 
-Na criação, quando um site da comunidade é publicado a partir do [console Sites das Comunidades](/help/communities/sites-console.md), o efeito é [replicar](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) as páginas associadas e o Sling distribuir os grupos de usuários da comunidade criados dinamicamente, incluindo sua associação.
+Na criação, quando um site da comunidade é publicado na [Console de sites das comunidades](/help/communities/sites-console.md), o efeito é [replicar](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) as páginas associadas e o Sling distribuem os grupos de usuários da comunidade criados dinamicamente, incluindo sua associação.
 
 ### O usuário é criado ou edita o perfil na publicação {#user-is-created-or-edits-profile-on-publish}
 
 Por design, os usuários e perfis criados no ambiente de publicação (como por autoregistro, logon social, autenticação LDAP) não aparecem no ambiente do autor.
 
-Quando a topologia é um [publish farm](/help/communities/topologies.md) e a sincronização do usuário foi configurada corretamente, o *user* e *user profile* são sincronizados no farm de publicação usando a distribuição do Sling.
+Quando a topologia for uma [publicar farm](/help/communities/topologies.md) e a sincronização do usuário foi configurada corretamente, a variável *usuário* e *perfil de usuário* é sincronizado no farm de publicação usando a distribuição do Sling.
 
 ### Novo grupo da comunidade é criado na publicação {#new-community-group-is-created-on-publish}
 
@@ -81,7 +81,7 @@ Como parte do processo, as novas páginas do site são replicadas para todas as 
 
 Por design, os dados do usuário criados no ambiente de publicação não aparecem no ambiente de criação e vice-versa.
 
-Quando o console [Administração e segurança do usuário](/help/sites-administering/security.md) é usado para adicionar novos usuários no ambiente de publicação, a sincronização do usuário sincronizará os novos usuários e sua associação de grupo com outras instâncias de publicação, se necessário. A sincronização de usuários também sincronizará os grupos de usuários criados pelo console de segurança.
+Quando a variável [Administração e segurança do usuário](/help/sites-administering/security.md) O console é usado para adicionar novos usuários no ambiente de publicação, a sincronização do usuário sincronizará os novos usuários e a associação do grupo a outras instâncias de publicação, se necessário. A sincronização de usuários também sincronizará os grupos de usuários criados pelo console de segurança.
 
 ### O usuário publica conteúdo na publicação {#user-posts-content-on-publish}
 
@@ -89,13 +89,13 @@ Para conteúdo gerado pelo usuário (UGC), os dados inseridos em uma instância 
 
 ## Práticas recomendadas {#bestpractices}
 
-Por padrão, a sincronização do usuário é **disabled**. A ativação da sincronização do usuário envolve a modificação das configurações *existentes* OSGi. Nenhuma nova configuração deve ser adicionada como resultado da ativação da sincronização do usuário.
+Por padrão, a sincronização do usuário é **desativado**. A habilitação da sincronização de usuários envolve modificar *existente* Configurações OSGi. Nenhuma nova configuração deve ser adicionada como resultado da ativação da sincronização do usuário.
 
 A sincronização de usuários depende do ambiente do autor para gerenciar as distribuições de dados do usuário, mesmo que os dados do usuário não sejam criados no autor .
 
 **Pré-requisitos**
 
-1. Se usuários e grupos de usuários já tiverem sido criados em um editor, é recomendável sincronizar [manualmente](/help/sites-administering/sync.md#manually-syncing-users-and-user-groups) os dados do usuário para todos os editores antes de configurar e ativar a sincronização do usuário.
+1. Se usuários e grupos de usuários já tiverem sido criados em um editor, é recomendável [sincronizar manualmente](/help/sites-administering/sync.md#manually-syncing-users-and-user-groups) os dados do usuário para todos os editores antes de configurar e ativar a sincronização do usuário.
 
    Quando a sincronização do usuário estiver ativada, somente os usuários e grupos recém-criados serão sincronizados .
 
@@ -114,21 +114,21 @@ Os valores padrão na configuração são para uma única instância de publica�
 
 **Como o conteúdo é sincronizado?**
 
-A instância de autor consulta o endpoint de exportador de editores. Sempre que um usuário é criado ou atualizado em editores específicos (n), o Autor obtém o conteúdo dos pontos de extremidade do exportador e [empurra o conteúdo](/help/communities/sync.md#main-pars-image-1413756164) para outros editores (n-1, ou seja, é diferente dos editores a partir dos quais o conteúdo é buscado).
+A instância de autor consulta o endpoint de exportador de editores. Sempre que um usuário é criado ou atualizado em editores específicos (n), o Autor obtém o conteúdo dos pontos de extremidade do exportador e [puxa o conteúdo](/help/communities/sync.md#main-pars-image-1413756164) para outros editores (n-1, ou seja, diferente dos editores a partir dos quais o conteúdo é buscado).
 
 Para configurar a configuração dos agentes de sincronização do Apache Sling:
 
 1. Faça logon com privilégios de administrador na instância do autor do AEM.
 1. Acesse o [Console da Web](/help/sites-deploying/configuring-osgi.md). Por exemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-1. Localize **Apache Sling Distribution Agent - Sync Agents Fatory**.
+1. Localizar **Apache Sling Distribution Agent - Fábrica de agentes de sincronização**.
 
    * Selecione a configuração existente a ser aberta para edição (ícone de lápis).
 
       Verificar nome: **socialpubsync.**
 
-   * Marque a caixa de seleção **Enabled**.
-   * Selecione **Usar várias filas.**
-   * Especifique **Endpoints do exportador** e **Endpoints do importador** (é possível adicionar mais endpoints de exportador e importador).
+   * Marque a caixa de seleção **Ativado**.
+   * Selecionar **Use Várias filas.**
+   * Especificar **Endpoints do exportador** e **Endpoints do importador** (é possível adicionar mais endpoints de exportador e importador).
 
       Esses endpoints definem de onde você deseja obter o conteúdo e de onde deseja enviar o conteúdo. O autor busca o conteúdo do endpoint do exportador especificado e o envia para os editores (diferente do editor do qual buscou o conteúdo).
    ![sync-agent-fact](assets/sync-agent-fact.png)
@@ -137,7 +137,7 @@ Para configurar a configuração dos agentes de sincronização do Apache Sling:
 
 Ela permite que o autor identifique o usuário autorizado, como tendo permissão para sincronizar dados do usuário do autor para publicar.
 
-O [usuário autorizado criado](/help/sites-administering/sync.md#createauthuser) em todas as instâncias de publicação ajuda os editores a se conectarem ao autor e a configurar a distribuição do Sling no autor. Este usuário autorizado tem todas as ACLs [necessárias](/help/sites-administering/sync.md#howtoaddacl).
+O [usuário autorizado criado](/help/sites-administering/sync.md#createauthuser) em todas as instâncias de publicação ajuda os editores a se conectarem ao autor e a configurar a distribuição do Sling no autor. Esse usuário autorizado tem todos os requisitos [ACLs](/help/sites-administering/sync.md#howtoaddacl).
 
 Sempre que os dados devem ser instalados ou obtidos de editores, o autor se conecta com os editores usando as credenciais (nome de usuário e senha) definidas nessa configuração.
 
@@ -147,12 +147,12 @@ Para conectar o autor com editores usando usuário autorizado:
 1. Acesse o [Console da Web](/help/sites-deploying/configuring-osgi.md).
 
    Por exemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-1. Localize **Distribuição de Adobe Granite - Provedor Secreto de Transporte de Senha Criptografado.**
+1. Localizar **Distribuição Adobe Granite - Provedor Secreto de Transporte de Senha Criptografado.**
 1. Selecione a configuração existente a ser aberta para edição (ícone de lápis).
 
-   Verifique a propriedade **socialpubsync** - **publishUser.**
+   Verificar propriedade **socialpubsync** - **publishUser.**
 
-1. Defina o nome de usuário e a senha para o [usuário autorizado](/help/sites-administering/sync.md#createauthorizeduser).
+1. Defina o nome de usuário e a senha como [usuário autorizado](/help/sites-administering/sync.md#createauthorizeduser).
 
    Por exemplo, **usersync - admin**
 
@@ -160,7 +160,7 @@ Para conectar o autor com editores usando usuário autorizado:
 
 ### Apache Sling Distribution Agent - Fábrica de agentes da fila {#apache-sling-distribution-agent-queue-agents-factory}
 
-Essa configuração é usada para configurar os dados que você deseja sincronizar entre editores. Quando os dados são criados/atualizados em caminhos especificados em **Raízes permitidas**, &quot;var/community/distribution/diff&quot; é ativado e o replicador criado obtém os dados de um editor e os instala em outros editores.
+Essa configuração é usada para configurar os dados que você deseja sincronizar entre editores. Quando os dados são criados/atualizados nos caminhos especificados em **Raízes permitidas**, o &quot;var/community/distribution/diff&quot; é ativado e o replicador criado obtém os dados de um editor e os instala em outros editores.
 
 Para configurar os dados (caminhos de nó) para sincronizar:
 
@@ -169,21 +169,21 @@ Para configurar os dados (caminhos de nó) para sincronizar:
 
    Por exemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
-1. Localize **Apache Sling Distribution Agent - Queue Agents Fatory**.
+1. Localizar **Apache Sling Distribution Agent - Fábrica de agentes da fila**.
 1. Selecione a configuração existente a ser aberta para edição (ícone de lápis).
 
    Verificar nome: **socialpubsync -reverse**
 
-1. Marque a caixa de seleção **Enabled** e salve.
-1. Especifique os caminhos de nó que devem ser replicados em **Raízes permitidas**.
-1. Repita para cada instância **publish**.
+1. Selecione o **Ativado** e salve.
+1. Especifique os caminhos do nó que devem ser replicados em **Raízes permitidas**.
+1. Repetir para cada **publicar** instância.
 
    ![queue-agents-fact](assets/queue-agents-fact.png)
 
 ### Distribuição de Adobe Granite - Fábrica de Observadores Diff {#adobe-granite-distribution-diff-observer-factory}
 
 Essa configuração sincroniza a associação de grupo entre editores.
-Se alterar a associação de um grupo em um editor não atualizar sua associação em outros editores, verifique se **ref :Members** é adicionado a **nomes de propriedades pesquisadas**.
+Se alterar a associação de um grupo em um editor não atualizar sua associação em outros editores, verifique se **ref:membros** é adicionado a **nomes de propriedades pesquisadas**.
 
 Para garantir a sincronização de membros:
 
@@ -192,13 +192,13 @@ Para garantir a sincronização de membros:
 
    Por exemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
-1. Localize **Distribuição de Granito do Adobe - Fábrica de Observador Diff**.
+1. Localizar **Distribuição de Adobe Granite - Fábrica de Observadores Diff**.
 1. Selecione a configuração existente a ser aberta para edição (ícone de lápis).
 
-   Verifique **nome do agente: socialpubsync -reverse**.
+   Verificar **nome do agente: socialpubsync -reverse**.
 
-1. Marque a caixa de seleção **Enabled**.
-1. Especifique **rep:Members** como descrição para propertyName em **nomes de propriedades pesquisadas** e Salve.
+1. Marque a caixa de seleção **Ativado**.
+1. Especificar **rep:membros** como descrição para propertyName em **nomes de propriedades pesquisadas** e Salvar.
 
    ![diff-obs](assets/diff-obs.png)
 
@@ -206,13 +206,13 @@ Para garantir a sincronização de membros:
 
 Essa configuração permite que você configure o intervalo de pesquisa (após o qual os editores são colocados em ping e as alterações são obtidas pelo autor) para sincronizar as alterações nos editores.
 
-O autor pesquisa os editores a cada 30 segundos (padrão). Se algum pacote estiver presente na pasta `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, ele buscará esses pacotes e os instalará em outros editores.
+O autor pesquisa os editores a cada 30 segundos (padrão). Se algum pacote estiver presente na pasta `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, eles buscarão esses pacotes e os instalarão em outros editores.
 
 Para alterar o intervalo de sondagem:
 
 1. Faça logon com privilégios de administrador na instância do autor do AEM.
 1. Acesse o [Console da Web](/help/sites-deploying/configuring-osgi.md), por exemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
-1. Localize **Acionador de distribuição do Apache Sling - Acionadores agendados de fábrica**
+1. Localizar **Acionador de distribuição do Apache Sling - Fábrica de acionadores agendados**
 
    * Selecione a configuração existente a ser aberta para edição (ícone de lápis).
 
@@ -224,7 +224,7 @@ Para alterar o intervalo de sondagem:
 
 ### Ouvinte de sincronização de usuários do AEM Communities {#aem-communities-user-sync-listener}
 
-Para problemas na distribuição do Sling em que há uma discrepância nas assinaturas e seguintes, verifique se as seguintes propriedades nas configurações **AEM Communities User Sync Listener** estão definidas:
+Para problemas na distribuição do Sling em que há uma discrepância nas assinaturas e seguintes, verifique se as seguintes propriedades em **Ouvinte de sincronização de usuários do AEM Communities** configurações definidas:
 
 * NodeTypes
 * IgnorableProperties
@@ -237,12 +237,12 @@ Em cada instância de publicação de AEM:
 
 1. Faça logon com privilégios de administrador.
 1. Acesse o [Console da Web](/help/sites-deploying/configuring-osgi.md). Por exemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
-1. Localize **Ouvinte de Sincronização de Usuário do AEM Communities**.
+1. Localizar **Ouvinte de sincronização de usuários do AEM Communities**.
 1. Selecione a configuração existente a ser aberta para edição (ícone de lápis)
 
    Verificar nome: **socialpubsync -scheduled-trigger**
 
-1. Defina os seguintes **NodeTypes**:
+1. Defina o seguinte **NodeTypes**:
 
    `rep:User`
 
@@ -258,7 +258,7 @@ Em cada instância de publicação de AEM:
 
    Os tipos de nó especificados nessa propriedade serão sincronizados, e as informações de notificações (blogs e configurações seguidas) serão sincronizadas entre diferentes editores.
 
-1. Adicione todas as pastas para sincronizar em **DistributedFolders**. Por exemplo,
+1. Adicionar todas as pastas para sincronizar no **Pastas Distribuídas**. Por exemplo,
 
    `segments/scoring`
 
@@ -266,7 +266,7 @@ Em cada instância de publicação de AEM:
 
    `activities`
 
-1. Defina **ignorablenodes** para:
+1. Defina as **ignorablenodes** para:
 
    `.tokens`
 
@@ -292,7 +292,7 @@ Para garantir uma ID de Sling exclusiva de editores no farm de publicação, em 
    Se a ID do Sling de uma instância de publicação corresponder à ID do Sling de qualquer outra instância de publicação, então:
 
 1. Pare uma das instâncias de publicação que tenha uma ID do Sling correspondente.
-1. No diretório `crx-quickstart/launchpad/felix`, procure e exclua o arquivo chamado *sling.id.file.*
+1. No `crx-quickstart/launchpad/felix` diretório, procure e exclua o arquivo chamado *sling.id.file.*
 
    Por exemplo, em um sistema Linux:
 
@@ -303,23 +303,23 @@ Para garantir uma ID de Sling exclusiva de editores no farm de publicação, em 
    Usar o Windows Explorer e pesquisar por `sling.id.file`
 
 1. Inicie a instância de publicação. Na inicialização, será atribuído um novo Sling ID.
-1. Valide se o **Sling ID** agora é exclusivo.
+1. Valide se a variável **Sling ID** agora é exclusiva.
 
 Repita essas etapas até que todas as instâncias de publicação tenham uma ID do Sling exclusiva.
 
 ### Compilador de pacote de cofre de fábrica {#vault-package-builder-factory}
 
 Para que as atualizações sejam sincronizadas corretamente, é necessário modificar o construtor de pacotes de cofre para sincronização do usuário.
-Em `/home/users`, um nó `*/rep:cache` é criado. É um cache usado para descobrir que, se consultarmos o nome principal de um nó, esse cache poderá ser usado diretamente.
+Em `/home/users`, a `*/rep:cache` é criado. É um cache usado para descobrir que, se consultarmos o nome principal de um nó, esse cache poderá ser usado diretamente.
 
-A sincronização do usuário pode parar se os nós `rep :cache` forem sincronizados entre os editores.
+A sincronização do usuário pode parar se `rep :cache` os nós são sincronizados entre editores.
 
 Para garantir que as atualizações sejam sincronizadas corretamente entre editores, em cada instância de publicação de AEM:
 
 1. Acesse o [Console da Web](/help/sites-deploying/configuring-osgi.md)
 
    Por exemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
-1. Localize o **Apache Sling Distribution Packaging - Compilador de pacote de cofre de fábrica**
+1. Localize a variável **Apache Sling Distribution Packaging - Compilador de pacote de cofre de fábrica**
 
    Nome do construtor: socialpubsync-vlt.
 
@@ -337,27 +337,27 @@ Para garantir que as atualizações sejam sincronizadas corretamente entre edito
 
 Se a distribuição do Sling falhar, tente as seguintes etapas de depuração:
 
-1. **Verificar configurações adicionadas  [incorretamente](/help/sites-administering/sync.md#improperconfig)**
+1. **Verificar [configurações adicionadas incorretamente](/help/sites-administering/sync.md#improperconfig)**
 
    Certifique-se de que várias configurações não sejam adicionadas ou editadas, em vez disso, as configurações padrão existentes devem ser editadas.
 1. **Verificar configurações**
 
-   Certifique-se de que todas as [configurações](/help/communities/sync.md#bestpractices) estejam definidas adequadamente na instância do autor do AEM, conforme mencionado em [Práticas recomendadas](/help/communities/sync.md#main-pars-header-863110628).
+   Certifique-se de que todas as [configurações](/help/communities/sync.md#bestpractices) são definidos adequadamente na instância do AEM Author, como mencionado no [Práticas recomendadas](/help/communities/sync.md#main-pars-header-863110628).
 
 1. **Verificar permissões de usuário autorizado**
 
-   Se os pacotes não estiverem instalados corretamente, verifique se o [usuário autorizado](/help/sites-administering/sync.md#createauthuser) criado na primeira instância de Publicação possui as ACLs corretas.
+   Se os pacotes não estiverem instalados corretamente, verifique se a variável [usuário autorizado](/help/sites-administering/sync.md#createauthuser) criado na primeira instância de publicação tem as ACLs corretas.
 
-   Para validar isso, em vez da configuração [created authorized user](/help/sites-administering/sync.md#createauthuser) altere o [Adobe Granite Distribution - Encrypted Password Transport Secret Provider](/help/sites-administering/sync.md#adobegraniteencpasswrd) na instância do autor para usar credenciais de usuário administrador. Agora tente instalar os pacotes novamente. Se a sincronização do usuário funcionar bem com credenciais de administrador, significa que o usuário de publicação criado não tinha ACLs apropriadas.
+   Para validar isso, em vez de [usuário autorizado criado](/help/sites-administering/sync.md#createauthuser) altere a [Distribuição de Adobe Granite - Provedor secreto de transporte de senha criptografado](/help/sites-administering/sync.md#adobegraniteencpasswrd) configuração na instância do autor para usar credenciais de usuário administrador. Agora tente instalar os pacotes novamente. Se a sincronização do usuário funcionar bem com credenciais de administrador, significa que o usuário de publicação criado não tinha ACLs apropriadas.
 
 1. **Verificar a configuração da Fábrica do Observador Diff**
 
-   Se apenas nós específicos não forem sincronizados no farm de publicação - por exemplo, os membros do grupo não são sincronizados - então verifique se a configuração [Adobe Granite Distribution - Diff Observer Fatory](/help/sites-administering/sync.md#diffobserver) está ativada e **rep: os membros** são definidos em **nomes de propriedades pesquisadas**.
+   Se apenas nós específicos não forem sincronizados no farm de publicação - por exemplo, os membros do grupo não serão sincronizados - em seguida, verifique se a variável [Distribuição de Adobe Granite - Fábrica de Observadores Diff](/help/sites-administering/sync.md#diffobserver) a configuração está ativada e **rep: membros** são definidos em **nomes de propriedades pesquisadas**.
 
 1. **Verifique a configuração do Ouvinte de sincronização de usuário do AEM Communities.** Se os usuários criados forem sincronizados, mas as assinaturas e seguintes não estiverem funcionando, verifique se a configuração do Ouvinte de sincronização de usuários do AEM Communities tem:
 
-   * Tipos de nó- definidos como **rep:User, nt :unstructured**, **nt :resource**, **rep:ACL**, **sling:Folder** e **sling:OrderedFolder**.
-   * Nós ignoráveis- definidos como **.tokens**, **system** e **rep :cache**.
+   * Tipos de nó - definido como **rep:User, nt:unstructured**, **nt : recurso**, **rep:ACL**, **sling:Folder** e **sling:OrderedFolder**.
+   * Nós ignoráveis - definido como **.tokens**, **sistema** e **rep :cache**.
    * Pastas distribuídas - defina para as pastas que deseja distribuir.
 
 1. **Verificar logs gerados na criação do usuário na instância de publicação**
@@ -384,16 +384,16 @@ Para depurar:
 1. Na instância AEM autor, faça logon com privilégios de administrador.
 
    1. Acesse o [Console da Web](/help/sites-deploying/configuring-osgi.md). Por exemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Localize o **Apache Sling Distribution Agent - Sync Agents Fatory** de configuração.
-   1. Desmarque a caixa de seleção **Enabled**.
+   1. Localize a configuração **Apache Sling Distribution Agent - Fábrica de agentes de sincronização**.
+   1. Desmarque a opção **Ativado** caixa de seleção.
 
-      Ao desabilitar a sincronização do usuário na instância do autor, os endpoints (exportador e importador) são desabilitados e a instância do autor é estática. Os pacotes **vlt** não são pingados nem buscados pelo autor.
+      Ao desabilitar a sincronização do usuário na instância do autor, os endpoints (exportador e importador) são desabilitados e a instância do autor é estática. O **vlt** os pacotes não são pingados ou buscados pelo autor.
 
-      Agora, se um usuário for criado na instância de publicação, o pacote **vlt** será criado no nó */var/sling/distribution/packages/ socialpubsync - vlt /data*. E se esses pacotes forem encaminhados pelo autor para outro serviço. Você pode baixar e extrair esses dados para verificar quais propriedades são enviadas para outros serviços.
+      Agora, se um usuário for criado na instância de publicação, a variável **vlt** pacote é criado em */var/sling/distribution/packages/ socialpubsync - vlt /data* nó . E se esses pacotes forem encaminhados pelo autor para outro serviço. Você pode baixar e extrair esses dados para verificar quais propriedades são enviadas para outros serviços.
 
 1. Vá para um editor e crie um usuário no editor. Como resultado, os eventos são criados.
-1. Verifique a [ordem dos logs](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities), criada na criação do usuário.
-1. Verifique se um pacote **vlt** é criado em **/var/sling/distribution/packages/socialpubsync-vlt/data**.
+1. Verifique a [ordem de logs](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities), criado na criação do usuário.
+1. Verifique se uma **vlt** pacote é criado em **/var/sling/distribution/packages/socialpubsync-vlt/data**.
 1. Agora, ative a sincronização do usuário AEM instância do autor.
-1. No editor, altere os endpoints do exportador ou importador no **Apache Sling Distribution Agent - Sync Agents Fatory**.
+1. No editor, altere os endpoints do exportador ou importador em **Apache Sling Distribution Agent - Fábrica de agentes de sincronização**.
 Podemos baixar e extrair dados do pacote para verificar quais propriedades são enviadas para outros editores e quais dados são perdidos.

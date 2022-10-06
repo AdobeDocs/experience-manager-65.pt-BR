@@ -51,7 +51,7 @@ Depois de configurar a publicação seletiva em uma pasta, você pode executar q
 **Para configurar a publicação seletiva no nível da pasta no Dynamic Media:**
 
 1. No Experience Manager, selecione o logotipo Experience Manager para acessar o console de navegação global. No lado esquerdo, selecione o ícone Navegação (logo acima do ícone Ferramentas) e selecione **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]**.
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
    * Edite as propriedades de uma pasta existente - Em **[!UICONTROL Exibição de cartão]**, **[!UICONTROL Exibição de coluna]** ou **[!UICONTROL Exibição de lista]**, navegue até uma pasta cujas propriedades deseja editar. Selecione a pasta e, na barra de ferramentas, selecione **[!UICONTROL Propriedades]**.
    * Edite as propriedades de uma nova pasta - Em **[!UICONTROL Exibição de cartão]**, **[!UICONTROL Exibição de coluna]** ou **[!UICONTROL Exibição de lista]**, próximo ao canto superior direito da página, selecione **[!UICONTROL Criar]** > **[!UICONTROL Pasta]**. No **[!UICONTROL Criar pasta]** , insira um título (obrigatório) para a pasta e selecione **[!UICONTROL Criar]**. Selecione a pasta e, na barra de ferramentas, selecione **[!UICONTROL Propriedades]**.
 
@@ -211,7 +211,7 @@ Consulte também [Pesquisar ativos no Experience Manager](/help/assets/search-as
 1. No painel esquerdo, expanda **[!UICONTROL Status]** em seguida, expanda a **[!UICONTROL Dynamic Media]** predicado de pesquisa.
 1. Use o **[!UICONTROL Publicado]** e **[!UICONTROL Não publicado]** caixas de seleção para refinar mais os resultados da pesquisa com base no estado publicado dos ativos do Dynamic Media.
 Como opção, você pode usar essas caixas de seleção com a variável **[!UICONTROL Publicar]** predicado de pesquisa para refinar os resultados de pesquisa de **[!UICONTROL Publicado]** e **[!UICONTROL Não publicado]** Experience Manager assets.
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
    * Selecione um ou mais ativos que deseja publicar ou cancelar a publicação.
    * Próximo ao canto superior direito do **[!UICONTROL Resultados da pesquisa]** página, selecione **[!UICONTROL Selecionar tudo]**.
 1. Na barra de ferramentas, selecione **[!UICONTROL Gerenciar publicação]**. Selecione o ícone de reticências na barra de ferramentas para abrir **[!UICONTROL Gerenciar publicação]**.

@@ -1,8 +1,8 @@
 ---
-title: 'Uso de tags  '
-seo-title: 'Uso de tags  '
+title: Uso de tags
+seo-title: Using Tags
 description: Tags são um método rápido e fácil de classificar o conteúdo em um site
-seo-description: Tags são um método rápido e fácil de classificar o conteúdo em um site
+seo-description: Tags are a quick and easy method of classifying content within a website
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,21 +10,20 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 52cb99353ae33c8097b6b5bd29f6c040df30b42d
+exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 84%
+source-wordcount: '569'
+ht-degree: 87%
 
 ---
-
 
 # Uso de tags  {#using-tags}
 
 Tags são um método rápido e fácil de classificar o conteúdo em um site. Tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e todo o conteúdo relacionado.
 
-* Consulte [Administração de tags](/help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags, bem como as tags de conteúdo que foram aplicadas.
-* Consulte [Marcação para desenvolvedores](/help/sites-developing/tags.md) para obter informações sobre a estrutura de marcação, bem como sobre como incluir e estender tags em aplicativos personalizados.
+* Consulte [Administração de tags](/help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags, bem como sobre quais tags de conteúdo foram aplicadas.
+* Consulte [Marcação para desenvolvedores](/help/sites-developing/tags.md) para obter informações sobre a estrutura de marcação e sobre como incluir e estender tags em aplicativos personalizados.
 
 ## Dez razões para usar marcação {#ten-reasons-to-use-tagging}
 
@@ -45,9 +44,9 @@ Ao projetar a estrutura de conteúdo de um site e o esquema de metadados para at
 
 No ambiente de criação, os autores podem aplicar tags acessando as propriedades da página e digitando uma ou mais tags no campo **Tags/Palavras-chave**.
 
-Para aplicar [tags predefinidas](/help/sites-administering/tags.md), na janela **Propriedades da página** utilize o campo **Tags** e a janela **Selecionar tags**. A guia **Tags padrão** é o namespace padrão, o que significa que não há `namespace-string:` prefixado à taxonomia.
+Aplicar [tags predefinidas](/help/sites-administering/tags.md)no **Propriedades da página** use a **Tags** e o **Selecionar Tags** janela. A guia **Tags padrão** é o namespace padrão, o que significa que não há `namespace-string:` prefixado à taxonomia.
 
-![Janela Selecionar tags; use o botão X para desmarcar as tags atualmente selecionadas](assets/chlimage_1-41.png)
+![Selecione a janela Tags; usar o botão X para desmarcar as tags atualmente selecionadas](assets/chlimage_1-41.png)
 
 ### Publicação de tags {#publishing-tags}
 
@@ -61,7 +60,7 @@ Assim como com as páginas, você pode fazer o seguinte em tags e espaços de no
 
 >[!NOTE]
 >
->Quando você ativa uma página, uma caixa de diálogo é aberta automaticamente e permite ativar tags inativadas pertencentes à página.
+>Quando você ativa uma página, uma caixa de diálogo é aberta automaticamente e permite ativar tags não ativadas pertencentes a essa página.
 
 **Desativar**
 

@@ -1,8 +1,8 @@
 ---
 title: Modelos de grupo
-seo-title: Modelos de grupo
+seo-title: Group Templates
 description: Como acessar o console Modelos de grupo
-seo-description: Como acessar o console Modelos de grupo
+seo-description: How to access the Group Templates console
 uuid: 4cf20c91-32b0-4051-a98d-44e4eb50a231
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,21 +11,21 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 role: Admin
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+exl-id: aed2c3f2-1b5e-4065-8cec-433abb738ef5
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '533'
 ht-degree: 3%
 
 ---
 
-
 # Modelos de grupo {#group-templates}
 
-O console Modelos de grupo é semelhante ao console [Modelos de site](/help/communities/sites.md). Ambos são blueprints para um conjunto de páginas e recursos pré-conectados que formam um site da comunidade. A diferença é que um modelo de site é para a comunidade principal e um modelo de grupo é para um grupo da comunidade, uma subcomunidade aninhada dentro da comunidade principal.
+O console Modelos de grupo é semelhante ao [Modelos de site](/help/communities/sites.md) console. Ambos são blueprints para um conjunto de páginas e recursos pré-conectados que formam um site da comunidade. A diferença é que um modelo de site é para a comunidade principal e um modelo de grupo é para um grupo da comunidade, uma subcomunidade aninhada dentro da comunidade principal.
 
-Um grupo da comunidade é incorporado em um modelo de site ao incluir a função [Groups](/help/communities/functions.md#groups-function) (que pode não ser a primeira nem apenas a função no modelo).
+Um grupo da comunidade é incorporado em um modelo de site ao incluir a variável [Função Grupos](/help/communities/functions.md#groups-function) (que pode não ser a primeira nem a única função no template).
 
-A partir de Communities [feature pack 1](/help/communities/deploy-communities.md#latestfeaturepack), é possível aninhar grupos incluindo a função Groups em um modelo de grupo.
+Comunidades [pacote de recursos 1](/help/communities/deploy-communities.md#latestfeaturepack), é possível aninhar grupos incluindo a função Grupos em um modelo de grupo.
 
 No momento em que uma ação é realizada para criar um novo grupo de comunidade, o modelo (estrutura) do grupo é selecionado. A seleção depende de como a função Grupos foi configurada quando adicionada ao modelo de site ou grupo.
 
@@ -37,9 +37,9 @@ No momento em que uma ação é realizada para criar um novo grupo de comunidade
 
 Para acessar o console modelos de grupos no ambiente de Autor do AEM:
 
-* Selecione **Ferramentas | Comunidades | Modelos de grupo,** da navegação global.
+* Selecionar **Ferramentas | Comunidades | Modelos de grupo,** da navegação global.
 
-Esse console exibe os modelos a partir dos quais um [site da comunidade](/help/communities/sites-console.md) pode ser criado e permite a criação de novos modelos de grupo.
+Esse console exibe os modelos a partir dos quais uma [site da comunidade](/help/communities/sites-console.md) podem ser criados e permitem a criação de novos modelos de grupo.
 
 ![Modelo de grupos da comunidade](assets/groups-template.png)
 
@@ -87,7 +87,7 @@ No painel Informações básicas , um nome, uma descrição e se o modelo está 
 
 Para adicionar funções de comunidade, arraste do lado direito para a esquerda na ordem em que os links de menu do site devem aparecer. Os estilos serão aplicados ao modelo durante a criação do site.
 
-Por exemplo, se você quiser um fórum, arraste a função de fórum da biblioteca e solte no construtor de modelo. Isso resultará na abertura da caixa de diálogo de configuração do fórum. Consulte o [console de funções](/help/communities/functions.md) para obter informações sobre as caixas de diálogo de configuração.
+Por exemplo, se você quiser um fórum, arraste a função de fórum da biblioteca e solte no construtor de modelo. Isso resultará na abertura da caixa de diálogo de configuração do fórum. Consulte a [console funções](/help/communities/functions.md) para obter informações sobre as caixas de diálogo de configuração.
 
 Continue arrastando e soltando quaisquer outras funções da comunidade desejadas para um site da subcomunidade (grupo) com base nesse modelo.
 
@@ -97,8 +97,8 @@ Depois que todas as funções desejadas forem soltas na área do construtor de m
 
 ## Editar modelo do grupo {#edit-group-template}
 
-Ao visualizar grupos de comunidade no [console Modelos de grupo](#group-templates-console) principal, é possível selecionar um modelo de grupo existente para edição.
+Ao visualizar grupos da comunidade no [Console Modelos de grupo](#group-templates-console), é possível selecionar um modelo de grupo existente para edição.
 
-Editar um modelo de grupo não afetará os sites da comunidade já criados a partir do modelo. Em vez disso, é possível editar diretamente a estrutura de um site da comunidade](/help/communities/sites-console.md#modify-structure).[
+Editar um modelo de grupo não afetará os sites da comunidade já criados a partir do modelo. É possível diretamente [editar um site da comunidade](/help/communities/sites-console.md#modify-structure)Em vez disso, a estrutura do .
 
-Esse processo fornece os mesmos painéis que [criar um modelo de grupo](#create-group-template).
+Esse processo fornece os mesmos painéis que [criação de um modelo de grupo](#create-group-template).

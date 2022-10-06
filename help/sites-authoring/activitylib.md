@@ -14,7 +14,7 @@ exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
 source-git-commit: 084e5d561e25dcbaee4489b65f423fc9166832be
 workflow-type: tm+mt
 source-wordcount: '2000'
-ht-degree: 85%
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ O console Atividades permite criar, organizar e gerenciar as [atividades](/help/
 
 No console Atividades, as atividades são organizadas por marca. É possível usar marcas e pastas para estruturar a organização das suas atividades. Navegue até o console Atividades tocando/clicando em **Personalização** e depois em **Atividades**.
 
-As atividades estão disponíveis no modo Direcionar para [criação de conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md), onde também é possível criar atividades. As atividades que você cria no modo Direcionar aparecem no console Atividades.
+As atividades estão disponíveis no modo Direcionar para a [criação de conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md), onde você também pode criar atividades. As atividades que você cria no modo Direcionar aparecem no console Atividades.
 
 As atividades são exibidas com um rótulo descrevendo o tipo de atividade definido:
 
@@ -54,7 +54,7 @@ As atividades são exibidas com um rótulo descrevendo o tipo de atividade defin
 
 >[!CAUTION]
 >
->Você deve proteger o nó de configurações da atividade **cq:ActivitySettings** na instância de publicação, para que ela fique inacessível aos usuários normais. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
+>Você deve proteger o nó de configurações de atividade **cq:ActivitySettings** na instância de publicação para que ele fique inacessível aos usuários normais. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
 >
 >Consulte [Pré-requisitos para integração com o Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) para obter informações detalhadas.
 
@@ -62,7 +62,7 @@ As atividades são exibidas com um rótulo descrevendo o tipo de atividade defin
 
 Crie uma marca cujas atividades de marketing você deseja gerenciar.
 
-Ao criar uma marca usando o console Atividades , ela também aparece na [Console de ofertas](/help/sites-authoring/offerlib.md) onde você pode criar ofertas para as experiências de suas atividades.
+Ao criar uma marca usando o console Atividades, ela também aparece no [console Ofertas](/help/sites-authoring/offerlib.md), onde é possível criar ofertas para as experiências das suas atividades.
 
 1. No console Navegação, clique ou toque em **Personalização**. Clique ou toque em **Atividades**.
 
@@ -134,7 +134,7 @@ Para adicionar uma atividade:
    * **Data e hora especificada**: um horário específico. Ao selecionar essa opção, clique ou toque no ícone de calendário, selecione uma data e especifique a hora para concluir a atividade.
 
 1. Para especificar uma prioridade para a atividade, use o controle deslizante para selecionar **Baixa**, **Normal** ou **Alta**.
-1. Se estiver usando o Adobe Target como mecanismo de direcionamento, selecione o que deseja medir com essa atividade. Consulte [Configuração da atividade e da definição de metas](/help/sites-authoring/content-targeting-touch.md) para obter mais informações sobre as métricas de sucesso disponíveis. É necessário selecionar pelo menos um objetivo.
+1. Se estiver usando o Adobe Target como mecanismo de direcionamento, selecione o que deseja medir com essa atividade. Consulte [Configuração da atividade e definição de objetivos](/help/sites-authoring/content-targeting-touch.md) para obter mais informações sobre as métricas de sucesso disponíveis. É necessário selecionar pelo menos um objetivo.
 1. Clique ou toque em **Salvar**.
 
    >[!NOTE]
@@ -171,18 +171,18 @@ Você pode ver o desempenho de qualquer atividade do Adobe Target (XT ou A/B). S
 
 Para visualizar o desempenho da atividade e converter experiências vencedoras:
 
-1. Em **Personalização**, clique ou toque em **Atividades** para navegar até o **Atividades** console.
+1. Em **Personalização**, clique ou toque em **Atividades** para navegar até o console **Atividades**.
 1. Clique ou toque na marca cujas atividades você deseja ver.
 1. Selecione a atividade e clique ou toque em **Propriedades da exibição**, clique na guia **Relatórios** e selecione a atividade na qual deseja exibir o desempenho/converter experiências vencedoras. Os dados de desempenho são exibidos.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Clique ou toque no **Empurrar vencedor** link para encaminhar essa experiência como a experiência padrão.
+1. Clique ou toque no link **Selecionar vencedor** para promover esta como a experiência padrão.
 
    A conversão do vencedor faz o seguinte:
 
    * Desativa a atividade atual
-   * Modifica todas as páginas e substitui o conteúdo segmentado pelo conteúdo real da experiência vencedora. O conteúdo da experiência vencedora torna-se parte da página normal **without** direcionamento.
+   * Modifica todas as páginas e substitui o conteúdo segmentado pelo conteúdo real da experiência vencedora. O conteúdo da experiência vencedora torna-se parte da página normal **sem** direcionamento.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -203,7 +203,7 @@ Essas condições se aplicam a atividades em instâncias de autor e publicação
 Quando uma atividade é sincronizada, uma campanha correspondente é criada no Adobe Target:
 
 * As atividades na instância de publicação têm o mesmo nome que a campanha do Adobe Target correspondente.
-* As atividades na instância do autor correspondem às campanhas do Target com o mesmo nome `_author` sufixo.
+* As atividades na instância do autor correspondem às campanhas do Target com o mesmo nome, mais o sufixo `_author`.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -213,7 +213,7 @@ Atividades de publicação são sincronizadas quando a atividade é publicada na
 
 ## Solução de problemas com a sincronização de atividades {#troubleshooting-activity-synchronization}
 
-Quando o AEM sincroniza uma atividade com o Adobe Target, o AEM inclui uma propriedade da atividade chamada `thirdPartyId`. O valor dessa propriedade se baseia no caminho da atividade no repositório do AEM. Nenhuma campanha no Adobe Target pode ter o mesmo valor para a propriedade `thirdPartyId`. Portanto, uma atividade não será sincronizada se uma campanha existente (de um tipo diferente AB, XT) no Adobe Target usar o mesmo valor para `thirdPartyId`.
+Quando o AEM sincroniza uma atividade com o Adobe Target, ele inclui uma propriedade dessa atividade denominada `thirdPartyId`. O valor dessa propriedade se baseia no caminho da atividade no repositório do AEM. Nenhuma campanha no Adobe Target pode ter o mesmo valor para a propriedade `thirdPartyId`. Portanto, uma atividade não será sincronizada se uma campanha existente (de um tipo diferente AB, XT) no Adobe Target usar o mesmo valor para `thirdPartyId`.
 
 Essa situação pode ocorrer nas seguintes circunstâncias:
 
@@ -229,7 +229,7 @@ Para evitar problemas de sincronização, use sempre nomes exclusivos para ativi
 
 >[!NOTE]
 >
->Ao criar uma campanha no Adobe Target, ela atribui uma propriedade chamada `thirdPartyId t`Para cada campanha. Quando você exclui a campanha no Adobe Target, a propriedade `thirdPartyId` não é excluída. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, nomeie cada campanha com um nome exclusivo; os nomes de campanha, portanto, não podem ser reutilizados em tipos de campanha diferentes.
+>Ao criar uma campanha no Adobe Target, ela atribui uma propriedade chamada `thirdPartyId t`Para cada campanha. Quando você exclui a campanha no Adobe Target, a propriedade `thirdPartyId` não é excluída. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, dê a cada campanha um nome exclusivo. Por isso, nomes de campanhas não podem ser reutilizados em diferentes tipos de campanha.
 >
 >Se você usar o mesmo nome no mesmo tipo de campanha, a campanha existente será substituída.
 >

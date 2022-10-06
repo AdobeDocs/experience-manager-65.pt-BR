@@ -14,7 +14,7 @@ exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 source-git-commit: eb7051582a51d983851c876025770668b258bff5
 workflow-type: tm+mt
 source-wordcount: '6036'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -104,7 +104,6 @@ Se estiver usando um WCM de terceiros (Web Content Manager), é necessário inte
 >
 >* Você deseja adicionar interatividade ao vídeo, acionando para o Quickview.
 >* Sua implementação do Experience Manager faz *not* use uma estrutura de integração de eCommerce para inserir dados de produtos no Experience Manager a partir de qualquer solução de eCommerce, como IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Consulte [Conceitos de comércio eletrônico no Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
-
 >
 >Se sua implementação do Experience Manager usar o eCommerce, você poderá ignorar esta tarefa e prosseguir para a próxima tarefa.
 
@@ -283,7 +282,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
 **Para adicionar interatividade ao vídeo:**
 
 1. Na exibição Ativos, navegue até o vídeo que você carregou e deseja tornar interativo.
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Passe o mouse sobre a imagem, em seguida selecione **[!UICONTROL Selecionar]** (ícone de marca de seleção). Na barra de ferramentas, selecione **[!UICONTROL Editar]**.
 
@@ -461,7 +460,7 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Visualizaç
 
    Um novo rótulo de texto é adicionado à imagem em miniatura.
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Repita as etapas 6 a 11 para adicionar mais imagens em miniatura a segmentos de linha do tempo no vídeo.
    * Prossiga para a etapa opcional 13.

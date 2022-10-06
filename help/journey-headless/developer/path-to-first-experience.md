@@ -1,10 +1,11 @@
 ---
 title: Caminho para sua primeira experiência usando AEM headless
 description: Nesta parte da Jornada de desenvolvedores sem cabeçalho do AEM, você entenderá as etapas para implementar sua primeira experiência sem periféricos em AEM incluindo considerações de planejamento e também aprenderá as práticas recomendadas para tornar seu caminho o mais tranquilo possível.
-source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
+exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1982'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 Nesta parte do [AEM Jornada de desenvolvedor sem periféricos,](overview.md) você entenderá as etapas para implementar sua primeira experiência headless em AEM incluindo considerações de planejamento e também aprenderá as práticas recomendadas para tornar seu caminho o mais tranquilo possível.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 No documento anterior da jornada sem cabeçalho AEM, [Introdução ao AEM Headless](getting-started.md) você aprendeu a teoria básica do que é um CMS sem periféricos e agora deve:
 
@@ -135,7 +136,7 @@ Queremos que você se baseie nesse conhecimento fundamental para entender totalm
 Não importa qual o seu estilo de aprendizagem, o Adobe quer que você tenha sucesso à medida que inicia seu projeto AEM Headless.
 
 * Se preferir continuar a **saiba mais sobre conceitos sem periféricos e AEM tecnologias sem periféricos**, você deve continuar sua jornada sem periféricos AEM ao revisar o documento [Como modelar seu conteúdo como modelos de conteúdo AEM](model-your-content.md) onde você aprende a modelar sua estrutura de conteúdo no AEM.
-* Se preferir **aprenda fazendo**, você pode pular para o [Introdução ao AEM tutorial prático](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) onde você vai participar diretamente AEM desenvolvimento sem cabeçalho implementando um projeto simples para expor AEM conteúdo sem cabeçalho.
+* Se preferir **aprenda fazendo**, você pode pular para o [Introdução ao AEM tutorial prático](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR) onde você vai participar diretamente AEM desenvolvimento sem cabeçalho implementando um projeto simples para expor AEM conteúdo sem cabeçalho.
 
 ## Recursos adicionais {#additional-resources}
 
@@ -143,7 +144,7 @@ Embora seja recomendável seguir para a próxima parte da jornada de desenvolvim
 
 * [jornada de tradução sem cabeçalho AEM](/help/journey-headless/translation/overview.md) - Essa jornada de documentação oferece uma ampla compreensão da tecnologia sem interface, como a AEM fornece conteúdo sem interface e como você pode traduzi-la.
 * [Desenvolvimento autônomo do AEM Sites](/help/sites-developing/headless/introduction.md) - Uma introdução rápida para orientar o desenvolvedor sem cabeçalho AEM com os recursos necessários
-* [AEM Tutorials sem cabeça](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com o AEM e escolha o que é certo para você.
+* [AEM Tutorials sem cabeça](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para explorar como usar as várias opções para fornecer conteúdo a endpoints sem interface com o AEM e escolha o que é certo para você.
 * [Gerenciamento de conteúdo sem cabeçalho usando APIs GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. A autenticação via AdobeID é necessária.
 * [WKND de guias de AEM - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Este projeto do GitHub inclui aplicativos de exemplo que destacam AEM APIs GraphQL.
 * [Guia de introdução sem cabeçalho](/help/sites-developing/headless/introduction.md#getting-started) - Uma rápida introdução AEM recursos sem periféricos para usuários já com conhecimento de AEM.

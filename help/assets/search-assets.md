@@ -176,7 +176,7 @@ Você pode pesquisar ativos com base em valores exatos de campos de metadados, c
 | No horário | ontime:YYYY-MM-DDTHH |
 | Hora de desligar | offtime:AAAA-MM-DDTHH |
 | Intervalo de tempo (expira o dateontime, offtime) | campo de faceta : limite inferior..upperbound |
-| Caminho | /content/dam/&lt;folder name=&quot;&quot;> |
+| Caminho  | /content/dam/&lt;folder name=&quot;&quot;> |
 | Título do PDF | pdftitle:&quot;Documento do Adobe&quot; |
 | Assunto | assunto: &quot;Formação&quot; |
 | Tags | Tags: &quot;Localização E Viagem&quot; |

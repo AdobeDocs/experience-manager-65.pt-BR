@@ -1,8 +1,8 @@
 ---
 title: Recommendations da interface do usuário para clientes
-seo-title: Recommendations da interface do usuário para clientes
+seo-title: User Interface Recommendations for Customers
 description: Uma lista de recomendações relacionadas às interfaces do usuário clássica e otimizada para toque.
-seo-description: Uma lista de recomendações relacionadas às interfaces do usuário clássica e otimizada para toque.
+seo-description: A list of recommendations related to the classic and touch-optimized user interfaces.
 uuid: 9ec2c9de-a79e-4f2c-a90f-b38ba9553e07
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
+exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '798'
 ht-degree: 2%
 
 ---
-
 
 # Recommendations da interface do usuário para clientes{#user-interface-recommendations-for-customers}
 
@@ -27,23 +26,23 @@ Este documento tem como objetivo orientar os clientes para fazerem uma escolha s
 
 Termos de interesse:
 
-* **Interface do usuário (ou interface de usuário padrão)**
+* **Interface do usuário (ou interface padrão)**
 Interface do usuário moderna que foi introduzida na versão 5.6.0 como uma visualização de tecnologia e estendida em versões subsequentes. É baseado na experiência unificada do usuário para o Adobe Experience Cloud, anteriormente conhecida como interface habilitada para toque ou interface do usuário para toque.
 
-* **Interface**
-do usuário clássica com base na tecnologia ExtJS que foi introduzida com o CQ 5.1 em 2008.
+* **Interface clássica**
+Interface do usuário baseada na tecnologia ExtJS que foi introduzida com o CQ 5.1 em 2008.
 
-* ****
-Administração do siteRecursos para gerenciar a hierarquia do site (mover, ativar, referências gerenciadas) e criar novas páginas.
+* **Administrador do site**
+Recursos para gerenciar a hierarquia do site (mover, ativar, referências gerenciadas) e criar novas páginas.
 
-* ****
-Criação de páginaRecursos para adicionar/editar o conteúdo de uma página.
+* **Criação de página**
+Recursos para adicionar/editar o conteúdo de uma página.
 
-* **DAM/Assets**
-AdminCapacidades para gerenciar ativos digitais (incluindo imagens, vídeo, documentos, downloads).
+* **Administrador de DAM/Ativos**
+Recursos para gerenciar ativos digitais (incluindo imagens, vídeo, documentos, downloads).
 
-* ****
-ContextHubCapabilities para agregar informações sobre o visitante e usá-las para vários fins. Fornece uma interface de usuário para simular pessoas que visitam o site. A partir do AEM 6.2, o ContextHub substituiu a tecnologia anterior, o ClientContext.
+* **ContextHub**
+Recursos para agregar informações sobre o visitante e usá-las para vários fins. Fornece uma interface de usuário para simular pessoas que visitam o site. A partir do AEM 6.2, o ContextHub substituiu a tecnologia anterior, o ClientContext.
 
 ## Geral {#general}
 
@@ -78,7 +77,7 @@ Veja a seguir uma lista de recomendações do Gerenciamento de produtos para o A
      <li>Configure a ação "Editar página" para abrir o Editor de página da interface clássica. Consulte <a href="#selecting-your-ui">Selecionar sua interface do usuário</a>.</li>
     </ol> <p>Em seguida, em uma segunda fase:</p>
     <ol>
-     <li>Atualize suas caixas de diálogo de componentes para usar o formato de diálogo Coral 3. O Adobe recomenda usar as <a href="/help/sites-developing/modernization-tools.md">Ferramentas de Modernização AEM</a> para atualizar os componentes.</li>
+     <li>Atualize suas caixas de diálogo de componentes para usar o formato de diálogo Coral 3. O Adobe recomenda usar a variável <a href="/help/sites-developing/modernization-tools.md">Ferramentas de Modernização AEM</a> para atualizar os componentes.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -90,7 +89,7 @@ Veja a seguir uma lista de recomendações do Gerenciamento de produtos para o A
      <li>Configure a ação "Editar página" para abrir o Editor de página da interface clássica. Consulte <a href="#selecting-your-ui">Selecionar sua interface do usuário</a>.</li>
     </ol> <p>Em seguida, em uma segunda fase:</p>
     <ol>
-     <li>Atualize suas caixas de diálogo de componentes para usar o formato de diálogo Coral 3. O Adobe recomenda usar as <a href="/help/sites-developing/modernization-tools.md">Ferramentas de Modernização AEM</a> para atualizar os componentes.</li>
+     <li>Atualize suas caixas de diálogo de componentes para usar o formato de diálogo Coral 3. O Adobe recomenda usar a variável <a href="/help/sites-developing/modernization-tools.md">Ferramentas de Modernização AEM</a> para atualizar os componentes.</li>
      <li>Configure o ContextHub (a substituição do ClientContext) e atualize os modelos de página para usar o ContextHub. Observe que o ContextHub tem um modo de compatibilidade que permite carregar ClientContexts personalizados.</li>
     </ol> </td>
   </tr>
@@ -103,7 +102,7 @@ Veja a seguir uma lista de recomendações do Gerenciamento de produtos para o A
 
 ### Perguntas frequentes {#faq}
 
-Consulte o artigo da Base de conhecimento, [Perguntas frequentes sobre a criação da interface de toque](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), para obter detalhes; incluindo quaisquer informações sobre o agendamento de descontinuação da interface clássica.
+Consulte o artigo da Base de conhecimento , [Perguntas frequentes sobre criação na interface de toque](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), para mais pormenores; incluindo quaisquer informações sobre o agendamento de descontinuação da interface clássica.
 
 ### Selecionar sua interface do usuário {#selecting-your-ui}
 
@@ -113,7 +112,7 @@ Consulte [Selecionar sua interface do usuário](/help/sites-authoring/select-ui.
 
 Para obter detalhes sobre as melhorias feitas na interface habilitada para toque no AEM 6.5, consulte [Novidades](/help/release-notes/release-notes.md#what-s-new) nas Notas de versão.
 
-Uma visão geral completa veja a página [Status do recurso da interface de toque](/help/release-notes/touch-ui-features-status.md)
+Uma visão geral completa do [Status do recurso da interface de toque](/help/release-notes/touch-ui-features-status.md) página
 
 ### Recursos para Ajuda {#resources-to-help}
 
@@ -123,15 +122,14 @@ Para informações de base sobre manipulação básica:
 
 Para informações detalhadas sobre desenvolvimento:
 
-* [Arquitetura da interface de usuário habilitada para toque](/help/sites-developing/touch-ui-concepts.md).
-* Use as [Ferramentas de Modernização AEM](/help/sites-developing/modernization-tools.md) para converter caixas de diálogo de edição de componentes da interface clássica para a interface habilitada para toque.
+* [Arquitetura da interface habilitada para toque](/help/sites-developing/touch-ui-concepts.md).
+* Use o [Ferramentas de Modernização AEM](/help/sites-developing/modernization-tools.md) para converter caixas de diálogo de edição de componentes da interface clássica para a interface habilitada para toque.
 
 * [Estrutura da interface habilitada para toque](/help/sites-developing/touch-ui-structure.md).
 
-* [Personalizar os consoles na interface habilitada para toque](/help/sites-developing/customizing-consoles-touch.md)  (inclui código de amostra).
+* [Personalização dos consoles na interface habilitada para toque](/help/sites-developing/customizing-consoles-touch.md) (inclui código de amostra).
 
-* [Personalizar a criação de páginas na interface do usuário habilitada para toque](/help/sites-developing/customizing-page-authoring-touch.md)  (inclui código de amostra).
+* [Personalização da criação de página na interface habilitada para toque](/help/sites-developing/customizing-page-authoring-touch.md) (inclui código de amostra).
 
-* [AEM Sessão do Gem na personalização habilitada para toque](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+* [Sessão Gem AEM na personalização habilitada para toque](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 * [Documentação da interface do usuário do Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
-

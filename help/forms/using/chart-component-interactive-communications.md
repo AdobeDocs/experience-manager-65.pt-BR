@@ -1,8 +1,8 @@
 ---
 title: Uso de gráficos em Comunicações interativas
-seo-title: Componente de gráfico em Comunicações interativas
+seo-title: Chart component in Interactive Communications
 description: Usando gráficos em uma Comunicação Interativa, você pode condensar grandes quantidades de informações em um formato visual fácil de analisar
-seo-description: O AEM Forms fornece um componente de gráfico que você pode usar para criar gráficos em sua Comunicação interativa. Este documento explica as configurações básicas e do agente do componente de gráfico.
+seo-description: AEM Forms provides a chart component that you can use to create charts in your Interactive Communication. This document explains basic and agent configurations of the chart component.
 uuid: 978aa431-9a5b-4964-b37c-7bfa8c3f49b9
 content-type: reference
 topic-tags: interactive-communications
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2648'
+source-wordcount: '2613'
 ht-degree: 2%
 
 ---
-
 
 # Uso de gráficos em Comunicações interativas{#using-charts-in-interactive-communications}
 
@@ -25,17 +24,17 @@ Um gráfico ou um gráfico é uma representação visual de dados. Ela condensa 
 
 Ao criar uma Comunicação interativa, é possível adicionar gráficos para representar visualmente dados bidimensionais a partir do modelo de dados de formulário da Comunicação interativa. O componente Gráfico permite adicionar e configurar os seguintes tipos de gráficos: Pizza, Coluna, Rosca, Barra, Linha, Linha e Ponto, Ponto, Área e Quadrante.
 
-## Adicionar e configurar um gráfico em uma Comunicação Interativa {#add-and-configure-chart-in-an-interactive-communication}
+## Adicionar e configurar um gráfico em uma comunicação interativa {#add-and-configure-chart-in-an-interactive-communication}
 
 Execute as seguintes etapas para adicionar e configurar um gráfico em uma Comunicação interativa:
 
-1. Toque em **Componentes** no sidekick da Comunicação interativa.
-1. Arraste e solte o componente **Chart** para um dos seguintes componentes:
+1. Toque **Componentes** do sidekick da Comunicação interativa.
+1. Arraste e solte a **Gráfico** para um dos seguintes componentes:
 
    * Canal de impressão: Área de destino ou campo de imagem
    * Canal da Web: Painel ou área de destino
 
-1. Toque no componente de gráfico no editor de Comunicação interativa e selecione **[!UICONTROL Configurar (]** ![configurar_icon](assets/configure_icon.png)) na barra de ferramentas Componente.
+1. Toque no componente de gráfico no editor de Comunicação interativa e selecione **[!UICONTROL Configurar (]** ![configure_icon](assets/configure_icon.png)) na barra de ferramentas Componente.
 
    As Propriedades do Gráfico são exibidas no painel esquerdo.
 
@@ -47,14 +46,14 @@ Execute as seguintes etapas para adicionar e configurar um gráfico em uma Comun
 
    Propriedades básicas de um gráfico de tipo de linha no canal da Web
 
-1. Configure as [propriedades do gráfico](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) com base no tipo de canal.
-1. (Somente canal de impressão) Nas **[!UICONTROL Configurações do Agente]**, especifique se é obrigatório que o agente use este gráfico. Se a opção i **[!UICONTROL t Is Mandatory To the Agent To Use This Chart]** não estiver selecionada, o agente poderá tocar no ícone de olho do gráfico na guia **[!UICONTROL Content]** da interface do usuário do agente para mostrar ou ocultar o gráfico.
+1. Configure o [propriedades do gráfico](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) com base no tipo de canal.
+1. (Somente canal de impressão) Na **[!UICONTROL Configurações do agente]**, especifique se é obrigatório que o agente use este gráfico. Se **[!UICONTROL t É Obrigatório Para O Agente Usar Este Gráfico]** não estiver selecionada, o agente pode tocar no ícone de olho do gráfico no **[!UICONTROL Conteúdo]** guia da interface do usuário do agente para mostrar ou ocultar o gráfico.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
-1. Toque em ![done_icon](assets/done_icon.png) para salvar as propriedades do gráfico.
+1. Toque ![done_icon](assets/done_icon.png) para salvar as propriedades do gráfico.
 
-   Toque em **[!UICONTROL Preview]** para exibir a aparência e os dados associados ao gráfico. Toque em **[!UICONTROL Editar]** para reconfigurar as propriedades do gráfico.
+   Toque **[!UICONTROL Visualizar]** para exibir a aparência e os dados associados ao gráfico. Toque **[!UICONTROL Editar]** para reconfigurar as propriedades do gráfico.
 
 ## Configurar propriedades do gráfico {#configure-chart-properties}
 
@@ -154,29 +153,29 @@ Configure as seguintes propriedades ao criar gráficos para canais de impressão
   </tr>
   <tr>
    <td>Dica</td>
-   <td><p>Formato no qual a dica de ferramenta aparece ao passar o mouse sobre um ponto de dados no gráfico do canal da Web. O valor padrão é ${x}(${y}). Dependendo do tipo de gráfico, quando você aponta o mouse para um ponto, barra ou fatia no gráfico, as variáveis ${x}e ${y} são substituídas dinamicamente pelos valores correspondentes no eixo X e no eixo Y e exibidas na dica de ferramenta.</p> <p>Para desativar a dica de ferramenta, deixe o campo <span class="uicontrol">Dica de ferramenta</code> em branco. Essa opção não é aplicável para gráficos de linha e de área. Por exemplo, consulte <a href="#chartoutputprintweb">Exemplo 1: Saída do gráfico em print e web</a>.</code></p> </td>
+   <td><p>Formato no qual a dica de ferramenta aparece ao passar o mouse sobre um ponto de dados no gráfico do canal da Web. O valor padrão é ${x}(${y}). Dependendo do tipo de gráfico, quando você aponta o mouse para um ponto, barra ou fatia no gráfico, as variáveis ${x}e ${y} são substituídas dinamicamente pelos valores correspondentes no eixo X e no eixo Y e exibidas na dica de ferramenta.</p> <p>Para desativar a dica de ferramenta, deixe o <span class="uicontrol">Dica de ferramenta</code> campo em branco. Essa opção não é aplicável para gráficos de linha e de área. Por exemplo, consulte <a href="#chartoutputprintweb">Exemplo 1: Saída do gráfico na impressão e na Web</a>.</code></p> </td>
    <td>Web</td>
   </tr>
   <tr>
    <td>Configurações específicas do gráfico</td>
    <td><p>Além de configurações comuns, a seguinte configuração específica do gráfico está disponível:</p>
     <ul>
-     <li><strong>Mostrar legenda:  </strong>Mostra uma legenda para o gráfico de pizza ou rosca quando ativado.</li>
-     <li><strong>Posição da legenda:  </strong>Especifica a posição da legenda em relação ao gráfico. As opções disponíveis são Direita, Esquerda, Superior e Inferior. É recomendável usar a legenda do lado direito no canal de impressão.</li>
-     <li><strong>Raio</strong> interno: Disponível para gráficos de rosca para especificar o raio (em pixels) do círculo interno no gráfico.</li>
-     <li><strong>Cor</strong> da linha: Disponível para gráficos de linha, ponto e área para especificar a cor da linha no gráfico.</li>
-     <li><strong>Cor</strong> do ponto: Disponível para gráficos de Ponto e Linha e Ponto para especificar a cor dos pontos no gráfico.<br /> </li>
-     <li><strong>Cor</strong> da área: Disponível para gráficos de área para especificar a cor da área sob a linha no gráfico.</li>
-     <li><strong>Ponto de referência &gt; Tipo de vínculo:  </strong>Disponível para gráficos do Quadrante <strong> </strong>para especificar o tipo de vínculo para o ponto de referência. Use texto estático ou propriedade de objeto de modelo de dados para definir o valor do ponto de referência.</li>
-     <li><strong>Ponto de referência &gt; Eixo X:  </strong>Disponível para gráficos de Quadrante se você selecionar  <span class="uicontrol"></code> Estático na lista suspensa Tipo de Vínculo para especificar o valor do eixo X para o ponto de referência.</code></li>
-     <li><strong>Ponto de referência &gt; Eixo Y:  </strong>Disponível para gráficos de Quadrante se você selecionar  <span class="uicontrol"></code> Estático na lista suspensa Tipo de Vínculo para especificar o valor do eixo Y para o ponto de referência.</code></li>
-     <li><strong>Ponto de referência &gt; Objeto de modelo de dados para séries:  </strong>Disponível para gráficos do Quadrante de várias séries, se você selecionar Objetos  <span class="uicontrol">do Modelo de </code> Dados na lista suspensa Tipo de Vínculo . Defina a propriedade do objeto de modelo de dados de formulário para identificar o conjunto do ponto de referência. </code></li>
-     <li><strong>Ponto de referência &gt; Valor do objeto do modelo de dados para séries:  </strong>Disponível para gráficos do Quadrante de várias séries, se você selecionar Objetos  <span class="uicontrol">do Modelo de </code> Dados na lista suspensa Tipo de Vínculo . Use a propriedade de objeto de modelo de dados de formulário para a série e o valor definido neste campo para identificar a série para o ponto de referência.</code></li>
-     <li><strong>Ponto de referência &gt; Objeto do modelo de dados para o ponto de referência:  </strong>Disponível para gráficos do Quadrante se você selecionar  <span class="uicontrol">Objeto do Modelo de </code> Dados na lista suspensa Tipo de Vínculo . Defina uma propriedade de objeto de modelo de dados de formulário que seja um irmão das propriedades plotadas no eixo X e no eixo Y. Além disso, para várias séries, defina uma propriedade de objeto de modelo de dados que seja uma entidade-filho da propriedade de objeto de modelo de dados definida para as séries.</code></li>
-     <li><strong>Ponto de referência &gt; Valor do objeto do modelo de dados para o ponto de referência:  </strong>Disponível para gráficos do Quadrante se você selecionar  <span class="uicontrol">Objeto do Modelo de </code> Dados na lista suspensa Tipo de Vínculo . Use a propriedade de objeto de modelo de dados de formulário para o ponto de referência e o valor definido neste campo para identificar o ponto de referência do gráfico.<br /> <strong>Rótulos do quadrante &gt; Superior esquerdo: </strong> Disponível para gráficos do quadrante para especificar o nome do quadrante superior esquerdo.</code></li>
-     <li><strong>Rótulos do quadrante &gt; Superior direito: </strong> disponível para gráficos do quadrante para especificar o nome do quadrante superior direito.</li>
-     <li><strong>Rótulos do quadrante &gt; Parte inferior direita:  </strong>Disponível para gráficos de Quadros para especificar o nome do quadrante Inferior Direito.</li>
-     <li><strong>Rótulos do quadrante &gt; Parte inferior esquerda:  </strong>Disponível para gráficos de Quadros para especificar o nome do quadrante Inferior Esquerdo.</li>
+     <li><strong>Mostrar legenda: </strong>Mostra uma legenda para o gráfico de pizza ou rosca quando ativado.</li>
+     <li><strong>Posição da legenda: </strong>Especifica a posição da legenda em relação ao gráfico. As opções disponíveis são Direita, Esquerda, Superior e Inferior. É recomendável usar a legenda do lado direito no canal de impressão.</li>
+     <li><strong>Raio interno</strong>: Disponível para gráficos de rosca para especificar o raio (em pixels) do círculo interno no gráfico.</li>
+     <li><strong>Cor da linha</strong>: Disponível para gráficos de linha, ponto e área para especificar a cor da linha no gráfico.</li>
+     <li><strong>Cor do ponto</strong>: Disponível para gráficos de Ponto e Linha e Ponto para especificar a cor dos pontos no gráfico.<br /> </li>
+     <li><strong>Cor da área</strong>: Disponível para gráficos de área para especificar a cor da área sob a linha no gráfico.</li>
+     <li><strong>Ponto de referência &gt; Tipo de vínculo: </strong>Disponível para gráficos do Quadrante para<strong> </strong>especifique o tipo de vínculo para o ponto de referência. Use texto estático ou propriedade de objeto de modelo de dados para definir o valor do ponto de referência.</li>
+     <li><strong>Ponto de referência &gt; Eixo X: </strong>Disponível para gráficos de Quadros se você selecionar <span class="uicontrol">Estático</code> na lista suspensa Tipo de vínculo para especificar o valor do eixo X para o ponto de referência.</code></li>
+     <li><strong>Ponto de referência &gt; Eixo Y: </strong>Disponível para gráficos de Quadros se você selecionar <span class="uicontrol">Estático</code> na lista suspensa Tipo de vínculo para especificar o valor do eixo Y para o ponto de referência.</code></li>
+     <li><strong>Ponto de referência &gt; Objeto de modelo de dados para séries: </strong>Disponível para gráficos Quadrantes de várias séries, se você selecionar <span class="uicontrol">Objeto do Modelo de Dados</code> na lista suspensa Tipo de vínculo . Defina a propriedade do objeto de modelo de dados de formulário para identificar o conjunto do ponto de referência. </code></li>
+     <li><strong>Ponto de referência &gt; Valor do objeto do modelo de dados para séries: </strong>Disponível para gráficos Quadrantes de várias séries, se você selecionar <span class="uicontrol">Objeto do Modelo de Dados</code> na lista suspensa Tipo de vínculo . Use a propriedade de objeto de modelo de dados de formulário para a série e o valor definido neste campo para identificar a série para o ponto de referência.</code></li>
+     <li><strong>Ponto de referência &gt; Objeto do modelo de dados para o ponto de referência: </strong>Disponível para gráficos de Quadros se você selecionar <span class="uicontrol">Objeto do Modelo de Dados</code> na lista suspensa Tipo de vínculo . Defina uma propriedade de objeto de modelo de dados de formulário que seja um irmão das propriedades plotadas no eixo X e no eixo Y. Além disso, para várias séries, defina uma propriedade de objeto de modelo de dados que seja uma entidade-filho da propriedade de objeto de modelo de dados definida para as séries.</code></li>
+     <li><strong>Ponto de referência &gt; Valor do objeto do modelo de dados para o ponto de referência: </strong>Disponível para gráficos de Quadros se você selecionar <span class="uicontrol">Objeto do Modelo de Dados</code> na lista suspensa Tipo de vínculo . Use a propriedade de objeto de modelo de dados de formulário para o ponto de referência e o valor definido neste campo para identificar o ponto de referência do gráfico.<br /> <strong>Rótulos do quadrante &gt; Parte superior esquerda:</strong> Disponível para gráficos de Quadros para especificar o nome do quadrante Superior Esquerdo.</code></li>
+     <li><strong>Rótulos do quadrante &gt; Parte superior direita:</strong> Disponível para gráficos de Quadros para especificar o nome do quadrante Superior direito.</li>
+     <li><strong>Rótulos do quadrante &gt; Parte inferior direita: </strong>Disponível para gráficos de Quadros para especificar o nome do quadrante Inferior Direito.</li>
+     <li><strong>Rótulos do quadrante &gt; Parte inferior esquerda: </strong>Disponível para gráficos de Quadros para especificar o nome do quadrante Inferior Esquerdo.</li>
     </ul> </td>
    <td>Impressão e Web</td>
   </tr>
@@ -189,25 +188,25 @@ Você pode configurar um gráfico para usar funções estatísticas para calcula
 
 ![Funções em gráficos](assets/functions_charts_new.png)
 
-Embora o componente Gráfico seja fornecido com algumas funções incorporadas, você pode gravar [funções personalizadas](#customfunctionsweb) e disponibilizá-las para uso na configuração do gráfico no canal da Web.
+Enquanto o componente Gráfico vem com algumas funções incorporadas, você pode gravar [funções personalizadas](#customfunctionsweb) e disponibilizá-los para uso na configuração do gráfico no canal da Web.
 
 As seguintes funções estão disponíveis por padrão com o componente Gráfico :
 
 **Média (Média)** Retorna a média dos valores no eixo X ou Y para um determinado valor no outro eixo.
 
-**** SumRetorna a soma de todos os valores no eixo X ou Y para um determinado valor no outro eixo.
+**Soma** Retorna a soma de todos os valores no eixo X ou Y para um determinado valor no outro eixo.
 
-**** MaximumRetorna o máximo dos valores no eixo X ou Y para um determinado valor no outro eixo.
+**Máximo** Retorna o máximo dos valores no eixo X ou Y para um determinado valor no outro eixo.
 
-**** FrequencyRetorna o número de valores no eixo X ou Y para um determinado valor no outro eixo.
+**Frequência** Retorna o número de valores no eixo X ou Y para um determinado valor no outro eixo.
 
-**** RangeRetorna a diferença entre o máximo e o mínimo dos valores no eixo X ou Y para um determinado valor no outro eixo.
+**Intervalo** Retorna a diferença entre o máximo e o mínimo dos valores no eixo X ou Y para um determinado valor no outro eixo.
 
-**** MedianRetorna o valor que separa valores mais altos e mais baixos na metade no eixo X ou Y para um determinado valor no outro eixo.
+**Mediana** Retorna o valor que separa valores mais altos e mais baixos em metade no eixo X ou Y para um determinado valor no outro eixo.
 
-**** MinimumRetorna o mínimo dos valores no eixo X ou Y para um determinado valor no outro eixo.
+**Mínimo** Retorna o mínimo dos valores no eixo X ou Y para um determinado valor no outro eixo.
 
-**** ModoRetorna o valor com a maioria das ocorrências no eixo X ou Y para um determinado valor no outro eixo.
+**Modo** Retorna o valor com a maioria das ocorrências no eixo X ou Y para um determinado valor no outro eixo.
 
 Para obter mais informações, consulte [Exemplo 2: Aplicação das funções Soma e Frequência em um gráfico de linhas](#applicationsumfrequency).
 
@@ -229,16 +228,16 @@ Multiply(valueArray, category) {
 
 Depois de gravar uma função personalizada, faça o seguinte para disponibilizá-la para uso na configuração do gráfico:
 
-1. Adicione a função personalizada na biblioteca do cliente associada à Comunicação interativa relevante. Para obter mais informações, consulte [Configuração da ação Enviar](/help/forms/using/configuring-submit-actions.md) e [Uso de bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md).
+1. Adicione a função personalizada na biblioteca do cliente associada à Comunicação interativa relevante. Para obter mais informações, consulte [Configuração da ação Enviar](/help/forms/using/configuring-submit-actions.md) e [Usar bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md).
 
-1. Para exibir a função personalizada no menu suspenso Função , no CRXDe Lite, crie um nó `nt:unstructured` na pasta de aplicativos com as seguintes propriedades:
+1. Para exibir a função personalizada no menu suspenso Função, no CRXDe Lite, crie um `nt:unstructured` na pasta aplicativos com as seguintes propriedades:
 
-   * Adicione a propriedade `guideComponentType` com o valor como `fd/af/reducer`. (mandatory)
+   * Adicionar propriedade `guideComponentType` com valor como `fd/af/reducer`. (mandatory)
 
-   * Adicione a propriedade `value` a um nome totalmente qualificado da função JavaScript™ personalizada. (obrigatório) e defina seu valor com o nome da função personalizada, como Multiply.
-   * Adicione a propriedade `jcr:description` com o valor que você deseja exibir como o nome da função personalizada que aparece no menu suspenso Função . Por exemplo, **Multiply**.
+   * Adicionar propriedade `value` para um nome totalmente qualificado da função personalizada do JavaScript™. (obrigatório) e defina seu valor com o nome da função personalizada, como Multiply.
+   * Adicionar propriedade `jcr:description` com o valor que você deseja exibir como o nome da função personalizada que aparece na lista suspensa Função . Por exemplo, **Multiplicar**.
 
-   * Adicione a propriedade `qtip` com o valor que será uma breve descrição da função personalizada. Ele aparece como uma dica de ferramenta ao passar o ponteiro sobre o nome da função na lista suspensa **Function**.
+   * Adicionar propriedade `qtip` com valor que será uma breve descrição da função personalizada. Ele é exibido como uma dica de ferramenta ao passar o ponteiro do mouse sobre o nome da função no **Função** lista suspensa.
 
 1. Clique em **Salvar tudo** para salvar a configuração.
 
@@ -250,14 +249,14 @@ Na guia Básico , é possível definir o tipo de gráfico, as propriedades do mo
 
 Vamos entender em detalhes as informações mínimas necessárias nas propriedades básicas, com a ajuda de uma instrução de cartão gerada por meio de uma Comunicação interativa. Considere que você deseja gerar um gráfico para descrever a quantidade de diferentes despesas na instrução. Você deseja usar diferentes tipos de gráficos para impressão e saída da Web da Comunicação interativa.
 
-### Gráfico de colunas para Imprimir {#columnchartprint}
+### Gráfico de colunas para impressão {#columnchartprint}
 
 Para fazer isso, especifique as seguintes propriedades:
 
-* **[!UICONTROL Nome]**  - Especifique o nome do gráfico.
-* **[!UICONTROL Tipo de gráfico]**  - Selecione  **** Coluna na lista suspensa.
-* **[!UICONTROL Título]**  - Especifique o Tipo de Despesa para o eixo X e a Quantia da Transação para o eixo Y.
-* **[!UICONTROL Objetos do Modelo de Dados]**  - Selecione as propriedades do objeto do modelo de dados para criar vínculos de dados para o eixo X (Tipo de Despesa) e o eixo Y (Quantia da Transação).
+* **[!UICONTROL Nome]** - Especifique o nome do gráfico.
+* **[!UICONTROL Tipo de gráfico]** - Selecionar **Coluna** na lista suspensa.
+* **[!UICONTROL Título]** - Especifique o Tipo de Despesa para o eixo X e a Quantia da Transação para o eixo Y.
+* **[!UICONTROL Objetos do modelo de dados]** - Selecione as propriedades do objeto do modelo de dados para criar vínculos de dados para o eixo X (Tipo de Despesa) e o eixo Y (Quantia da Transação).
 
 ![Gráfico de colunas no canal de impressão de uma comunicação interativa](assets/sample_chart_print_column_new.png)
 
@@ -267,11 +266,11 @@ Gráfico de colunas no canal de impressão de uma comunicação interativa
 
 Para fazer isso, especifique as seguintes propriedades:
 
-* **[!UICONTROL Nome]**  - Especifique o nome do gráfico.
-* **[!UICONTROL Tipo de gráfico]**  - Selecione  **** Não na lista suspensa.
-* **[!UICONTROL Objetos do Modelo de Dados]**  - Selecione as propriedades do objeto do modelo de dados para criar vínculos de dados para o eixo X (Tipo de Despesa) e o eixo Y (Quantia da Transação).
-* **[!UICONTROL Raio interno]**  - Especifique o valor do Raio interno como 150 para especificar o raio (em pixels) do círculo interno no gráfico.
-* **[!UICONTROL Dica de ferramenta]**  - Use o formato padrão ${x}(${y}) para exibir a dica de ferramenta. A dica de ferramenta é exibida como: Tipo de Despesa (Quantia da Transação). Exemplo: Débito para Bitcurrency(10000).
+* **[!UICONTROL Nome]** - Especifique o nome do gráfico.
+* **[!UICONTROL Tipo de gráfico]** - Selecionar **[!UICONTROL Rosca]** na lista suspensa.
+* **[!UICONTROL Objetos do modelo de dados]** - Selecione as propriedades do objeto do modelo de dados para criar vínculos de dados para o eixo X (Tipo de Despesa) e o eixo Y (Quantia da Transação).
+* **[!UICONTROL Raio interno]** - Especifique o valor do Raio interno como 150 para especificar o raio (em pixels) do círculo interno no gráfico.
+* **[!UICONTROL Dica de ferramenta]** - Use o formato padrão ${x}(${y}) para exibir a dica de ferramenta. A dica de ferramenta é exibida como: Tipo de Despesa (Quantia da Transação). Exemplo: Débito para Bitcurrency(10000).
 
 ![Gráfico de rosca no canal Web de uma Comunicação Interativa](assets/sample_chart_web_new.png)
 
@@ -285,7 +284,7 @@ Ao aplicar funções em um gráfico, é possível plotar dados que não são for
 
 Gráfico de linhas sem uma função com duas transações &quot;Débito para AirBnB&quot;
 
-### Função Sum {#sum-function}
+### Função de soma {#sum-function}
 
 É possível aplicar a função sum para adicionar valores de várias instâncias da mesma propriedade de dados e exibi-la apenas uma vez. Por exemplo, no gráfico a seguir, a função Sum é aplicada no eixo Y para somar o valor das duas transações Debit for AirBnB (2050 e 1050) e mostrar apenas uma transação (3100).
 
@@ -305,17 +304,16 @@ O gráfico representa o valor das transações executadas em um determinado inte
 
 Para fazer isso, especifique as seguintes propriedades:
 
-* **Nome:** especifique o nome do gráfico.
-* **Tipo de gráfico:** selecione  **** Quadrante na lista suspensa.
+* **Nome:** Especifique o nome do gráfico.
+* **Tipo de gráfico:** Selecionar **Quadrante** na lista suspensa.
 
-* Marque a caixa de seleção **Multiple Series**.
-* **Objeto** do Modelo de Dados: Especifique a propriedade de objeto do modelo de dados para a série. A propriedade de objeto do modelo de dados para o nome do banco é um pai das propriedades de objetos do modelo de dados plotadas no eixo X e no eixo Y.
+* Selecione o **Várias Séries** caixa de seleção.
+* **Objeto do Modelo de Dados**: Especifique a propriedade de objeto do modelo de dados para a série. A propriedade de objeto do modelo de dados para o nome do banco é um pai das propriedades de objetos do modelo de dados plotadas no eixo X e no eixo Y.
 * **Objetos do Modelo de Dados:** Selecione as propriedades do objeto do modelo de dados para criar vínculos de dados para o eixo X (Data da Transação) e o eixo Y (Quantia da Transação).
-* Na seção **Ponto de referência**, selecione **Estático** como o Tipo de Vínculo.
+* No **Ponto de referência** seção , selecione **Estático** como o Tipo de vínculo.
 
 * Especifique os valores para os pontos de referência do eixo X e do eixo Y.
 * Especifique os rótulos do quadrante para os quadrantes Superior Esquerdo, Superior Direito, Inferior Direito e Inferior Esquerdo.
-* Marque a caixa de seleção **Show legends** para exibir os códigos de cor dos nomes dos bancos.
+* Selecione o **Mostrar legendas** caixa de seleção para exibir os códigos de cor dos nomes dos bancos.
 
 ![Gráficos de quadrante](assets/charts_quadrant_example_new.png)
-

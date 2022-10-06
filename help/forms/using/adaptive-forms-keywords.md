@@ -1,21 +1,20 @@
 ---
 title: Palavras-chave de formulários adaptáveis
-seo-title: Palavras-chave de formulários adaptáveis
+seo-title: Adaptive forms keywords
 description: Não é possível usar essas palavras reservadas como identificadores em seus formulários adaptáveis.
-seo-description: Não é possível usar essas palavras reservadas como identificadores em seus formulários adaptáveis.
+seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '208'
 ht-degree: 16%
 
 ---
-
 
 # Palavras-chave de formulários adaptáveis {#adaptive-forms-keywords}
 

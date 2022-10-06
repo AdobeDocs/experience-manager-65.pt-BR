@@ -1,14 +1,15 @@
 ---
-title: Saiba mais sobre como criar modelos de fragmento de conteúdo no AEM
+title: Saiba mais sobre criação de modelos de fragmento de conteúdo no AEM
 description: Saiba mais sobre os conceitos e os mecanismos de modelagem de conteúdo para seu CMS sem interface usando Modelos de fragmentos de conteúdo.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '690'
-ht-degree: 2%
+ht-degree: 13%
 
 ---
 
-# Saiba mais sobre como criar modelos de fragmento de conteúdo no AEM {#architect-headless-content-fragment-models}
+# Saiba mais sobre criação de modelos de fragmento de conteúdo no AEM {#architect-headless-content-fragment-models}
 
 ## A história até agora {#story-so-far}
 
@@ -68,7 +69,7 @@ Depois de adicionar um tipo de dados, você deverá definir a variável **Propri
 
 Você pode adicionar quantos campos forem necessários. Por exemplo:
 
-![Modelo de fragmentos de conteúdo](/help/assets/content-fragments/assets/cfm-models-07.png)
+![Modelo de fragmentos do conteúdo](/help/assets/content-fragments/assets/cfm-models-07.png)
 
 ### Seus autores de conteúdo {#your-content-authors}
 
@@ -119,7 +120,7 @@ Agora que você aprendeu as noções básicas, o próximo passo é começar a cr
 
       * [Ativar ou desativar um modelo de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [Permitir modelos de fragmentos de conteúdo na pasta Ativos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Permitir modelos de fragmentos de conteúdo na pasta de ativos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
       * [Exclusão de um modelo de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 

@@ -1,6 +1,6 @@
 ---
 title: Suporte OAuth2 para o serviço de email
-description: 'Suporte Oauth2 para o serviço de email  '
+description: Suporte Oauth2 para o serviço de email
 source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
 workflow-type: tm+mt
 source-wordcount: '690'

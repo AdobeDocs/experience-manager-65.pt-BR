@@ -441,7 +441,7 @@ George aprova o aplicativo de Aya e, graças a um fluxo de trabalho automatizado
 
 ### Modelo de dados de formulário (Camila) {#form-data-model-camila}
 
-**Esta seção**: Camila navega até a página Fontes de Dados para validar os dados que o servidor replicou no banco de dados Derby.
+**Esta seção**: Camila navega até a página de Fontes de Dados para validar os dados que o servidor replicou no banco de dados Derby.
 
 1. Quando a experiência do usuário estiver concluída e o envio do usuário tiver sido concluído, Camila navegará até a guia Fontes de dados no AEM Forms (**Forms** > **Integrações de dados**)
 

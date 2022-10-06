@@ -1,8 +1,8 @@
 ---
 title: Execução de operações de serviço usando APIs
-seo-title: Execução de operações de serviço usando APIs
+seo-title: Performing Service Operations Using APIs
 description: Desenvolver aplicativos clientes usando as APIs do AEM Forms.
-seo-description: Desenvolver aplicativos clientes usando as APIs do AEM Forms.
+seo-description: Develop client applications using the AEM Forms APIs.
 uuid: a5697c91-d643-4265-973c-18467ca0437a
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fa1426f-f453-45c5-89b9-67038f56c70e
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 62489194-82ca-44f6-b5be-4411c95f6f80
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
-
 
 # Execução de operações de serviço usando APIs {#performing-service-operations-using-apis}
 

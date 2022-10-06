@@ -1,8 +1,8 @@
 ---
 title: Implementação de um componente de reação para SPA
-seo-title: Implementação de um componente de reação para SPA
-description: Este artigo apresenta um exemplo de como adaptar um componente React simples e existente para trabalhar com o Editor de SPA AEM.
-seo-description: Este artigo apresenta um exemplo de como adaptar um componente React simples e existente para trabalhar com o Editor de SPA AEM.
+seo-title: Implementing a React Component for SPA
+description: Este artigo apresenta um exemplo de como adaptar um componente React simples e existente para funcionar com o Editor de SPA de AEM.
+seo-description: This article presents an example of how to adapt a simple, existing React component to work with the AEM SPA Editor.
 uuid: ae6a0a6f-0c3c-4820-9b58-c2a85a9f5291
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,43 +10,42 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
+exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 2%
+source-wordcount: '548'
+ht-degree: 6%
 
 ---
 
-
 # Implementação de um componente de reação para SPA{#implementing-a-react-component-for-spa}
 
-Aplicativos de página única (SPA) podem oferta experiências interessantes para usuários de sites. Os desenvolvedores querem ser capazes de criar sites usando estruturas SPA e os autores querem editar o conteúdo no AEM para um site criado usando estruturas SPA.
+Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas SPA e os autores desejam editar com facilidade o conteúdo no AEM para um site criado usando estruturas SPA.
 
-O recurso de criação de SPA oferta uma solução abrangente para suportar SPA dentro do AEM. Este artigo apresenta um exemplo de como adaptar um componente React simples e existente para trabalhar com o Editor de SPA AEM.
+O recurso de criação de SPA oferece uma solução abrangente para oferecer suporte à SPA no AEM. Este artigo apresenta um exemplo de como adaptar um componente React simples e existente para funcionar com o Editor de SPA de AEM.
 
 >[!NOTE]
 >
->O Editor de SPA é a solução recomendada para projetos que exigem renderização do cliente baseada em SPA estrutura (por exemplo, Reagir ou Angular).
+>O Editor de SPA é a solução recomendada para projetos que exigem renderização do lado do cliente baseada em SPA estrutura (por exemplo, Reagir ou Angular).
 
 ## Introdução {#introduction}
 
-Graças ao contrato simples e leve que é exigido pela AEM e estabelecido entre o SPA e o Editor SPA, pegar um aplicativo Javascript existente e adaptá-lo para uso com um SPA em AEM é uma questão simples.
+Graças ao contrato simples e leve que é exigido pelo AEM e estabelecido entre o SPA e o Editor de SPA, tomar uma aplicação Javascript existente e adaptá-la para uso com um SPA em AEM é uma questão simples.
 
-Este artigo ilustra o exemplo do componente meteorológico no SPA de amostra de Journal We.Retail.
+Este artigo ilustra o exemplo do componente meteorológico no SPA de amostra do We.Retail Journal.
 
-Você deve estar familiarizado com a estrutura [de um aplicativo SPA para AEM](/help/sites-developing/spa-getting-started-react.md) antes de ler este artigo.
+Familiarize-se com o [estrutura de um pedido SPA para AEM](/help/sites-developing/spa-getting-started-react.md) antes de ler este artigo.
 
 >[!CAUTION]
->Este documento usa o [Aplicativo de Journal We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) apenas para fins de demonstração. Não deve ser utilizado para qualquer trabalho de projeto.
+>Este documento usa o [Aplicativo de diário We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) apenas para fins de demonstração. Não deve ser utilizado para qualquer trabalho de projeto.
 >
->Qualquer projeto AEM deve aproveitar o [AEM Project Archetype](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html), que suporta projetos SPA usando React ou Angular e aproveita o SPA SDK.
+>Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/developing/archetype/overview.html), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
 
-## O componente de tempo {#the-weather-component}
+## O Componente Tempo {#the-weather-component}
 
-O componente de tempo é encontrado no canto superior esquerdo do aplicativo de Journal We.Retail. Ele exibe o tempo atual de um local definido, puxando dados do tempo dinamicamente.
+O componente meteorológico é encontrado no canto superior esquerdo do aplicativo We.Retail Journal. Ele exibe o tempo atual de um local definido, puxando dados meteorológicos dinamicamente.
 
-### Usando o Widget de tempo {#using-the-weather-widget}
+### Uso do Widget de tempo {#using-the-weather-widget}
 
 ![screen_shot_2018-06-08at143224](assets/screen_shot_2018-06-08at143224.png)
 
@@ -62,22 +61,22 @@ A alteração é persistente e o componente é atualizado automaticamente com no
 
 ![screen_shot_2018-06-08at143524](assets/screen_shot_2018-06-08at143524.png)
 
-### Implementação do componente de tempo {#weather-component-implementation}
+### Implementação do componente meteorológico {#weather-component-implementation}
 
-O componente meteorológico é na verdade baseado em um componente React disponível ao público, chamado [Reagir Tempo Aberto](https://www.npmjs.com/package/react-open-weather), que foi adaptado para funcionar como um componente no aplicativo SPA amostra de Journal We.Retail.
+O componente meteorológico é na verdade baseado em um componente React disponível publicamente, chamado de [React Open Weather](https://www.npmjs.com/package/react-open-weather), que foi adaptado para funcionar como um componente no aplicativo SPA amostra do We.Retail Journal .
 
-A seguir estão trechos da documentação do NPM sobre o uso do componente React Open Weather.
+A seguir estão trechos da documentação do NPM do uso do componente React Open Weather.
 
 ![screen_shot_2018-06-08at144723](assets/screen_shot_2018-06-08at144723.png) ![screen_shot_2018-06-08at144215](assets/screen_shot_2018-06-08at144215.png)
 
-Revisando o código do componente meteorológico personalizado ( `Weather.js`) no aplicativo de Journal We.Retail:
+Revisar o código do componente climático personalizado ( `Weather.js`) no aplicativo We.Retail Journal :
 
 * **Linha 16**: O widget React Open Weather é carregado conforme necessário.
-* **Linha 46**: A  `MapTo` função relaciona esse componente React a um componente AEM correspondente para que possa ser editado no Editor de SPA.
+* **Linha 46**: O `MapTo` relaciona esse componente React a um componente AEM correspondente para que ele possa ser editado no Editor de SPA.
 
-* **Linhas 22-29**: O  `EditConfig` está definido, verificando se a cidade foi preenchida e definindo o valor se estiver vazio.
+* **Linhas 22-29**: O `EditConfig` for definida, verificando se a cidade foi preenchida e definindo o valor se estiver vazia.
 
-* **Linhas 31-44**: O componente de Tempo estende a  `Component` classe e fornece os dados necessários, conforme definido na documentação de uso do NPM para o componente de Tempo Reato Aberto e renderiza o componente.
+* **Linhas 31-44**: O componente Tempo estende o `Component` e fornece os dados necessários, conforme definido na documentação de uso do NPM para o componente React Open Weather e renderiza o componente.
 
 ```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -128,7 +127,7 @@ class Weather extends Component {
 MapTo('we-retail-journal/global/components/weather')(Weather, WeatherEditConfig);
 ```
 
-Embora um componente back-end já deva existir, o desenvolvedor front-end pode aproveitar o componente React Open Weather no SPA We.Retail do Journal com pouca codificação.
+Embora um componente de back-end já deva existir, o desenvolvedor de front-end pode aproveitar o componente React Open Weather no SPA We.Retail Journal com muito pouca codificação.
 
 ## Próxima etapa {#next-step}
 

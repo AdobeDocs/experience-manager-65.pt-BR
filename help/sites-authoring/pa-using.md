@@ -1,22 +1,21 @@
 ---
 title: Visualizar dados de análise de página
-seo-title: Visualizar dados de análise de página
+seo-title: Seeing Page Analytics Data
 description: Use dados de análise de página para avaliar a eficácia do conteúdo da página
-seo-description: Use dados de análise de página para avaliar a eficácia do conteúdo da página
+seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
-translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '628'
 ht-degree: 93%
 
 ---
-
 
 # Visualizar dados de análise de página{#seeing-page-analytics-data}
 
@@ -64,7 +63,7 @@ Os membros do grupo de usuários análise-administradores podem configurar o con
 >
 >Quando uma árvore de páginas contém páginas secundárias associadas a diferentes configurações de nuvem do Adobe Analytics, você não pode configurar as colunas de dados disponíveis para as páginas.
 
-1. Na Visualização da Lista, use os seletores de visualização (à direita da barra de ferramentas), selecione **Configurações de Visualização** e **Adicionar dados personalizados do Analytics**.
+1. Na Exibição de lista, use os seletores de exibição (à direita da barra de ferramentas), selecione **Exibir configurações** e depois **Adicionar dados personalizados do Analytics**.
 
    ![aa-15](assets/aa-15.png)
 
@@ -76,14 +75,14 @@ Os membros do grupo de usuários análise-administradores podem configurar o con
 
 ### Abrir Content Insight do Sites {#opening-content-insights-from-sites}
 
-Abra [Content Insight](/help/sites-authoring/content-insights.md) no console Sites para investigar a eficácia da página.
+Abrir [Content Insight](/help/sites-authoring/content-insights.md) no console Sites para investigar ainda mais a eficácia da página.
 
 1. No console Sites, selecione a página para da qual você deseja ver os Content Insights.
 1. Na barra de ferramentas, clique no ícone Analytics e Recomendações.
 
    ![](do-not-localize/chlimage_1-16a.png)
 
-## Análise visível do Editor de página (Mapa de atividades)  {#analytics-visible-from-the-page-editor-activity-map}
+## Análise visível do Editor de página (Mapa de atividades) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >
@@ -159,4 +158,3 @@ A caixa de diálogo **Configurações do Mapa de atividades** fornece uma varied
    * Exibir superiores (Ganhos ou perdas)
    * Excluir os inferiores %
    * Atualização automática (dados e período)
-

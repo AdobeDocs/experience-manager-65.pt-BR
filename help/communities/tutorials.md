@@ -1,52 +1,51 @@
 ---
 title: Tutoriais
-seo-title: Tutoriais
-description: Exemplos para ajudar a aprender e trabalhar com a estrutura de componentes sociais (SCF) da AEM Communities
-seo-description: Exemplos para ajudar a aprender e trabalhar com a estrutura de componentes sociais (SCF) da AEM Communities
+seo-title: Tutorials
+description: Exemplos para ajudar no aprendizado e no trabalho com a Estrutura de componentes sociais (SCF) do AEM Communities
+seo-description: Examples to help in learning and working with AEM Communities social component framework (SCF)
 uuid: c99a9d56-9630-4a79-bcd7-a15f01d6c13d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
-translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+exl-id: 061d3b1b-7ceb-4e57-8183-2062a76173f1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '253'
 ht-degree: 3%
 
 ---
 
-
 # Tutoriais {#tutorials}
 
-Estes são exemplos para ajudar a aprender e trabalhar com AEM 6.1 Communities [social component framework (SCF)](scf.md).
+Estes são exemplos para ajudar a aprender e trabalhar com AEM Comunidades 6.1 [quadro de componentes sociais (SCF)](scf.md).
 
-## Personalização do lado do cliente {#client-side-customization}
+## Personalização no lado do cliente {#client-side-customization}
 
 Consulte também:
 
-* [Personalização do cliente SCF](client-customize.md)
+* [Personalização do lado do cliente do SCF](client-customize.md)
 
 * [Guia de componentes da comunidade](components-guide.md)
 
-* [Componente Comentários da sobreposição](overlay-comments.md)
+* [Componente de comentários de sobreposição](overlay-comments.md)
 
 * [Componente Estender comentários](extend-comments.md)
 
 ## Personalização do lado do servidor {#server-side-customization}
 
-Consulte também [Personalização do lado do servidor SCF](server-customize.md).
+Consulte também [Personalização do lado do servidor do SCF](server-customize.md).
 
-O código de amostra está disponível no repositório [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud):
+O código de amostra está disponível na seção [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) repositório:
 
-* [Exemplo de componente SCF personalizado](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
+* [Personalizar a amostra do componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
-* [Amostra de componente do SCF de sobreposição](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
+* [Exemplo de componente SCF de sobreposição](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 
-* [Exemplo de componente estender SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
+* [Estender amostra do componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
 
-## Instruções passo a passo {#how-to-instructions}
+## Instruções de instrução {#how-to-instructions}
 
 * [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
@@ -56,19 +55,19 @@ O código de amostra está disponível no repositório [Adobe Marketing Cloud Gi
 
 * [Como configurar o MongoDB para demonstração](demo-mongo.md)
 
-* [Criar uma caixa de proteção SCF](an-scf-sandbox.md)
+* [Criar uma sandbox SCF](an-scf-sandbox.md)
 
-* [Criar uma página de amostra](create-sample-page.md)
+* [Criar uma página de exemplo](create-sample-page.md)
 
 ## Usuários de demonstração {#demo-users}
 
-O pacote de exemplos de Geometrixx inclui usuários de demonstração. Muitas vezes, há uma diferença na experiência entre ser um visitante (não conectado) ou um membro (conectado) e, desde que os pacotes de amostras do Geometrixx permaneçam instalados, você pode usar esses usuários para simular um estado conectado ao explorar o [Guia de componentes da comunidade](components-guide.md).
+O pacote Geometrixx samples inclui usuários de demonstração. Geralmente há uma diferença na experiência entre ser um visitante (não conectado) ou um membro (conectado) e, desde que os pacotes de amostras do Geometrixx permaneçam instalados, você pode usar esses usuários para simular um estado conectado ao explorar a variável [Guia de componentes da comunidade](components-guide.md).
 
-Para obter uma lista completa dos usuários da demonstração, navegue usando o painel para **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Segurança > Usuários]**. Ou use a interface clássica [console de segurança](http://localhost:4502/useradmin) para gerenciar usuários e grupos.
+Para obter uma lista completa dos usuários da demonstração, navegue usando o Trilho para **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Segurança > Usuários]**. Ou use a interface clássica [console de segurança](http://localhost:4502/useradmin) para gerenciar usuários e grupos.
 
-Se um site da comunidade [tiver sido criado](getting-started.md), será possível atribuir usuários de demonstração aos seus [grupos de usuários da comunidade](users.md).
+Se uma [o conjunto de comunidades foi criado](getting-started.md), é possível atribuir usuários de demonstração ao seu [grupos de usuários da comunidade](users.md).
 
-***id*  do usuário/  *senha***:
+***id do usuário* / *senha***:
 
 * aaron.mcdonald@mailinator.com / senha
 * emily.andrews@mailinator.com / senha

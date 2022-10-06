@@ -1,8 +1,8 @@
 ---
 title: Introdução ao AEM Forms
-seo-title: Introdução ao AEM Forms
+seo-title: Introduction to AEM Forms
 description: Com o Adobe Experience Manager Forms, os usuários empresariais podem integrar formulários envolventes, responsivos e adaptáveis a sites da Web e móveis, simplificando o processo de inscrição digital e aumentando as taxas de conversão do cliente.
-seo-description: Com o Adobe Experience Manager Forms, os usuários empresariais podem integrar formulários envolventes, responsivos e adaptáveis a sites da Web e móveis, simplificando o processo de inscrição digital e aumentando as taxas de conversão do cliente.
+seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
 uuid: a6564997-4227-4d5d-b27d-47a55a386238
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,18 +10,17 @@ topic-tags: introduction
 discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '891'
 ht-degree: 3%
 
 ---
 
-
 # Introdução ao AEM Forms{#introduction-to-aem-forms}
 
-Para obter informações sobre os recursos e aprimoramentos mais recentes no AEM Forms, consulte [Novidades no AEM Forms](../../forms/using/whats-new.md).
+Para obter informações sobre os recursos e as melhorias mais recentes no AEM Forms, consulte [Novidades no AEM Forms](../../forms/using/whats-new.md).
 
 ## Sobre o AEM Forms {#about-aem-forms}
 
@@ -60,7 +59,7 @@ O PDF forms pode ser preenchido offline, salvo localmente e os dados do formulá
 
 **Formulários HTML**
 
-Formulários baseados em navegador HTML5 podem ser exibidos em dispositivos móveis e navegadores de desktop. Você pode assinar eletronicamente formulários HTML usando os serviços Scribble ou eSign.
+Os formulários baseados no navegador HTML5 podem ser exibidos em dispositivos móveis e navegadores de desktop. Você pode assinar eletronicamente formulários HTML usando os serviços Scribble ou eSign.
 
 **Formulários adaptáveis**
 
@@ -93,7 +92,7 @@ Capturar dados offline e sincronizá-los na próxima vez que você retornar onli
 * Ambiente de design de fluxo de trabalho de arrastar e soltar
 * Conectores de gerenciamento de conteúdo corporativo (ECM)
 * Suporte a padrões abertos, incluindo XML e SOAP para conectar dados de formulários com sistemas corporativos
-* Relatórios HTML prontos para uso monitoram backlogs, filas de trabalho e KPIs (Key Performance Indicators, Indicadores-chave de desempenho)
+* Relatórios de HTML prontos para uso monitoram os backlogs, as filas de trabalho e os KPIs (indicadores-chave de desempenho)
 * Painéis personalizáveis para obter informações em tempo real sobre operações comerciais
 * API para conexão com ferramentas de relatórios de terceiros
 

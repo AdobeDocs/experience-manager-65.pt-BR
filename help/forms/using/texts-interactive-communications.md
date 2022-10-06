@@ -1,7 +1,7 @@
 ---
 title: Textos em Comunicações interativas
 seo-title: Text in Interactive Communications
-description: 'Criação e edição de fragmentos de documento de texto a serem usados em Comunicações interativas - o texto é um dos quatro tipos de fragmentos de documento usados para criar Comunicações interativas. As outras três são condições, listas e fragmentos de layout.  '
+description: Criação e edição de fragmentos de documento de texto a serem usados em Comunicações interativas - o texto é um dos quatro tipos de fragmentos de documento usados para criar Comunicações interativas. As outras três são condições, listas e fragmentos de layout.
 seo-description: Creating and editing text document fragments to be used in Interactive Communications
 uuid: fdac3dd8-c6d0-418e-b969-fc791b7bd509
 topic-tags: interactive-communications

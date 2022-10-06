@@ -10,8 +10,8 @@ feature: Administering
 role: Admin
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '630'
+ht-degree: 36%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 0%
    + [Integração com serviços de terceiros](third-party-services.md)
    + [Integração com o Salesforce](salesforce.md)
    + [Integração com o Adobe Target](target.md)
-   + [Integração com o gerenciador de aprendizado do Adobe](adobe-learningmanager.md)
+   + [Integração com o Adobe Learning Manager](adobe-learningmanager.md)
    + [Integração ao Adobe Analytics](adobeanalytics.md)
    + [Conectar ao Adobe Analytics e Criar Frameworks](adobeanalytics-connect.md)
    + [Configuração do rastreamento de links para o Adobe Analytics](adobeanalytics-link.md)

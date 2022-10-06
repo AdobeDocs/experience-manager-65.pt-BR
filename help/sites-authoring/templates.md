@@ -1,8 +1,8 @@
 ---
-title: 'Criação de modelos de páginas  '
-seo-title: 'Criação de modelos de páginas  '
+title: Criação de modelos de páginas
+seo-title: Creating Page Templates
 description: O modelo define a estrutura da página resultante e, com o editor de modelo, criar e manter modelos não é mais uma tarefa apenas do desenvolvedor
-seo-description: O modelo define a estrutura da página resultante e, com o editor de modelo, criar e manter modelos não é mais uma tarefa apenas do desenvolvedor
+seo-description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
 uuid: e14cd298-289f-43f0-aacb-314ed5d56c12
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '4901'
-ht-degree: 95%
+source-wordcount: '4874'
+ht-degree: 96%
 
 ---
 
@@ -45,7 +45,7 @@ Para obter informações detalhadas sobre como os modelos editáveis funcionam a
 
 >[!CAUTION]
 >
->As páginas e os modelos criados com o **Console de Modelos** não devem ser usados com a interface do usuário clássica, e esse uso não é suportado.
+>Páginas e modelos criados com o **Console Modelos** não se destinam a ser usados com a interface do usuário clássica e esse uso não é suportado.
 
 ## Antes de começar {#before-you-start}
 
@@ -110,7 +110,7 @@ O AEM agora oferece dois tipos básicos de modelos:
    * Eles são [fornecidos por seus desenvolvedores](/help/sites-developing/page-templates-static.md) e, portanto, não podem ser criados ou editados por autores.
    * Eles são copiados para criar a nova página, mas nenhuma conexão dinâmica existe após essa ação (embora o nome do modelo seja registrado para a informações).
    * Use o [modo Design](/help/sites-authoring/default-components-designmode.md) para continuar com as propriedades de design.
-   * Como editar modelos estáticos é a tarefa exclusiva de um desenvolvedor, consulte o documento do desenvolvedor [Modelos de página - Estáticos](/help/sites-developing/page-templates-static.md) para obter mais informações.
+   * Como editar modelos estáticos é a tarefa exclusiva de um desenvolvedor, consulte o documento do desenvolvedor [Modelos de página - Estático](/help/sites-developing/page-templates-static.md) para obter mais informações.
 
 Por definição, o console de modelo e o editor de modelo permitem apenas a criação e edição de modelos editáveis. Portanto, este documento foca exclusivamente nos modelos editáveis.
 
@@ -147,7 +147,7 @@ Ao criar um novo modelo editável:
 
 >[!CAUTION]
 >
->Nunca insira qualquer informação que precise ser [internacionalizada](/help/sites-developing/i18n.md) em um modelo. Para fins de internalização, os recursos de [localização dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) são recomendados.
+>Nunca insira qualquer informação que precise ser [internacionalizada](/help/sites-developing/i18n.md) em um modelo. Para fins de internalização, o [recursos de localização dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=pt-BR) são recomendadas.
 
 ### Criação de uma pasta de modelo - Administrador {#creating-a-template-folder-admin}
 
@@ -210,9 +210,9 @@ Para exibir e/ou editar as propriedades:
 
 >[!NOTE]
 >
->Os modelos são ferramentas poderosas para simplificar o fluxo de trabalho de criação de página. No entanto, muitos modelos podem sobrecarregar os autores e tornar a criação da página confusa. Uma boa regra é manter o número de modelos abaixo de 100.
+>Os modelos são ferramentas eficientes para simplificar o fluxo de trabalho de criação de página. No entanto, usar modelos em excesso pode sobrecarregar os autores e tornar confusa a criação da página. Uma boa regra geral é manter o número de modelos abaixo de 100.
 >
->O Adobe não recomenda ter mais de 1000 modelos devido a possíveis impactos no desempenho.
+>A Adobe não recomenda ter mais de 1000 modelos devido a possíveis impactos no desempenho.
 
 >[!NOTE]
 >
@@ -278,7 +278,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
    >Se a lista **Modelos permitidos** de for deixada em branco, a árvore será crescente até que um valor/lista seja encontrado.
    >
    >
-   >Consulte [Disponibilidade do modelo](/help/sites-developing/templates.md#template-availability) - os princípios para os modelos permitidos permanecem os mesmos.
+   >Consulte [Disponibilidade de modelos](/help/sites-developing/templates.md#template-availability) - os princípios para modelos permitidos permanecem inalterados.
 
 1. Clique em **Salvar** para salvar as alterações nas propriedades da página.
 
@@ -491,7 +491,7 @@ No modo **Estrutura** do editor de modelo:
 
    >[!NOTE]
    >
-   >[](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)As políticas de conteúdo para componentes que implementam o editor de rich text só podem ser definidas para opções disponibilizadas pelo RTE pelas configurações da interface do usuário. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+   >[As políticas de conteúdo para componentes que implementam o editor de rich text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) só podem ser definidas para opções disponibilizadas pelo RTE, por meio das configurações da interface. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Política e propriedades (contêiner de layout)**
 
@@ -515,7 +515,7 @@ No modo **Estrutura** do editor de modelo:
 
    * Componentes permitidos
    * Componentes padrão
-   * Configurações receptivas
+   * Configurações responsivas
 
    *Componentes permitidos*
 
@@ -539,9 +539,9 @@ No modo **Estrutura** do editor de modelo:
 
    ![chlimage_1-145](assets/chlimage_1-145.png)
 
-   *Configurações receptivas*
+   *Configurações responsivas*
 
-   Na guia **Configurações responsivas**, é possível configurar o número de colunas na grade resultante do contêiner de layout.
+   Na guia **Configurações responsivas**, é possível configurar o número de colunas na grade resultante do container de layout.
 
 * **Desbloquear/bloquear componentes**
 
@@ -564,7 +564,7 @@ No modo **Estrutura** do editor de modelo:
 
    Para economizar espaço, o contêiner de layout não é expandido para acomodar a lista de componentes permitidos. Em vez disso, o contêiner se torna uma lista rolável.
 
-   Os componentes configuráveis são mostrados com um ícone de **Política**, que pode ser tocado ou clicado para editar a política e as propriedades desse componente.
+   Os componentes configuráveis são mostrados com um ícone de **Política**, no qual você pode tocar ou clicar para editar a política e as propriedades desse componente.
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -604,7 +604,7 @@ Embora todo o conteúdo criado no modo **Estrutura** seja visível no **Conteúd
 >
 >O conteúdo inicial destina-se a preparar componentes e o layout de página que servem como ponto de partida para a criação do conteúdo. Não se destina a ser o conteúdo real que permaneceria intacto. Por esse motivo, o conteúdo inicial não pode ser traduzido.
 >
->Se você precisar incluir texto traduzível no modelo, como em cabeçalhos ou rodapés, poderá usar os recursos de [localização dos componentes principais](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/get-started/localization.html).
+>Se você precisar incluir texto traduzível no modelo, como em cabeçalhos ou rodapés, poderá usar os recursos de [localização dos componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/get-started/localization.html).
 
 ### Editar um modelo - Layout - Autor do modelo {#editing-a-template-layout-template-author}
 
@@ -622,7 +622,7 @@ O design da página, incluindo as bibliotecas do lado do cliente e as políticas
 
 Para acessar a caixa de diálogo **Design da página**:
 
-1. No **Editor de modelo**, selecione **Informações da página** na barra de ferramentas, em seguida **Design da página** para abrir a caixa de diálogo.
+1. No **Editor de modelos**, selecione **Informações da página** na barra de ferramentas, em seguida **Design da página** para abrir a caixa de diálogo.
 1. A caixa de diálogo **Design da página** é aberta e dividida em duas seções:
 
    * A metade esquerda define as [políticas da página](/help/sites-authoring/templates.md#page-policies)
@@ -683,7 +683,7 @@ Usando as propriedades de página, é possível definir as bibliotecas do lado d
 >
 >Como o autor do modelo pode especificar a política de página no modelo, ele precisará obter detalhes das bibliotecas do lado do cliente apropriadas do desenvolvedor.
 
-### Editar um modelo - Propriedades iniciais da página - Criação {#editing-a-template-initial-page-properties-author}
+### Editar um modelo - Propriedades da página inicial - Criação {#editing-a-template-initial-page-properties-author}
 
 Usando a opção **Propriedades da página inicial**, é possível definir as [propriedades de página](/help/sites-authoring/editing-page-properties.md) iniciais a ser usadas ao criar páginas resultantes.
 

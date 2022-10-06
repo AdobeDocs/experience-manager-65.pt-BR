@@ -1,22 +1,21 @@
 ---
 title: Criação de ajuda no contexto para campos de formulário
-seo-title: Criação de ajuda no contexto para campos de formulário
+seo-title: Authoring in-context help for form fields
 description: O AEM Forms permite adicionar ajuda em contexto a campos e painéis de formulário adaptáveis, como texto ou mídia avançada, incluindo vídeos.
-seo-description: O AEM Forms permite adicionar ajuda em contexto a campos e painéis de formulário adaptáveis, como texto ou mídia avançada, incluindo vídeos.
+seo-description: AEM Forms allows you to add in-context help to adaptive form fields and panels, as text or rich media, including videos.
 uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
-
 
 # Criação de ajuda no contexto para campos de formulário{#authoring-in-context-help-for-form-fields}
 
@@ -47,7 +46,7 @@ O campo Short description é destinado a fornecer dicas rápidas e curtas sobre 
 
 >[!NOTE]
 >
->Selecione **Sempre mostrar descrição curta** para exibir permanentemente o texto de ajuda abaixo do campo.
+>Selecionar **Sempre mostrar descrição curta** para exibir permanentemente o texto de ajuda abaixo do campo.
 
 ![Ajuda permanente curta no contexto abaixo do campo](assets/short1.png)
 
@@ -57,7 +56,7 @@ Você pode usar o campo Long description para especificar texto longo ou incorpo
 
 ![Adicionar mídia avançada como ajuda no contexto para campos de formulário](assets/long-descriptions.png)
 
-Adicionar descrição longa exibe um **?** ícone ao lado do campo . Clicar no ícone exibe o conteúdo adicionado na seção de descrição longa.
+Adicionar descrição longa exibe uma **?** ícone ao lado do campo . Clicar no ícone exibe o conteúdo adicionado na seção de descrição longa.
 
 ![Exemplo de ajuda em contexto da mídia avançada](assets/photoshop.png)
 
@@ -67,7 +66,6 @@ Além da ajuda em contexto para campos de formulário, você pode especificar a 
 
 ![Adicionar ajuda no contexto para um painel de formulário](assets/panel-level-help.png)
 
-Adicionar ajuda para o painel exibe um **?** ícone ao lado da descrição do painel. Clicar no ícone exibe o conteúdo adicionado na seção Conteúdo da Ajuda da caixa de diálogo de edição do painel.
+A adição de ajuda para o painel exibe uma **?** ícone ao lado da descrição do painel. Clicar no ícone exibe o conteúdo adicionado na seção Conteúdo da Ajuda da caixa de diálogo de edição do painel.
 
 ![Exemplo de ajuda no contexto no nível do painel de formulário](assets/photoshop-1.png)
-

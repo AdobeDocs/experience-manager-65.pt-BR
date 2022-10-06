@@ -33,7 +33,7 @@ Crie experiências online, como fóruns, grupos de usuários, recursos de aprend
 | [Guia de administração](/help/sites-administering/home.md) | Saiba mais sobre como administrar o AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no AEM. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no AEM na interface do usuário clássica. |
-| [Guia do usuário do Screens](https://docs.adobe.com/content/help/br/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
+| [Guia do usuário do Screens](https://docs.adobe.com/content/help/pt-BR/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
 | [Guia de implantação do usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do AEM. |
 | [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar a instância do AEM. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto de AEM com êxito. |

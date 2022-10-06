@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # OWASP Top 10{#owasp-top}
 
-O [Open Web Application Security Project](https://www.owasp.org) (OWASP) mantém uma lista do que considera como os [Os 10 principais riscos de segurança da aplicação web](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
+O [Abrir Projeto de Segurança da Aplicação Web](https://www.owasp.org) (OWASP) mantém uma lista do que considera ser o [Os 10 Riscos Principais de Segurança da Aplicação Web](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
 
 Elas estão listadas abaixo, juntamente com uma explicação de como o CRX lida com elas.
 
@@ -38,7 +38,7 @@ O XSS é uma prioridade máxima durante testes e desenvolvimento, e todos os pro
 
 ## 3. Autenticação quebrada e gerenciamento de sessão {#broken-authentication-and-session-management}
 
-AEM usa técnicas de autenticação comprovadas e de som, que dependem do [Apache Jackrabbit](https://jackrabbit.apache.org/) e [Apache Sling](https://sling.apache.org/). Sessões de Navegador/HTTP não são usadas em AEM.
+O AEM usa técnicas de autenticação sólidas e comprovadas, com base em [Apache Jackrabbit](https://jackrabbit.apache.org/) e [Apache Sling](https://sling.apache.org/). Sessões de Navegador/HTTP não são usadas em AEM.
 
 ## 4. Referências inseguras de objeto direto {#insecure-direct-object-references}
 
@@ -48,13 +48,13 @@ Todo o acesso a objetos de dados é mediado pelo repositório e, portanto, restr
 
 A falsificação de solicitação entre sites (CSRF) é atenuada ao injetar automaticamente um token criptográfico em todos os formulários e solicitações de AJAX e verificar esse token no servidor para cada POST.
 
-Além disso, AEM vem com um filtro baseado no cabeçalho do referenciador, que pode ser configurado para *somente* permitir solicitações de POST de hosts específicos (definido em uma lista).
+Além disso, AEM vem com um filtro baseado no cabeçalho do referenciador, que pode ser configurado para *only* permitir solicitações de POST de hosts específicos (definido em uma lista).
 
 ## 6. Configuração incorreta da segurança {#security-misconfiguration}
 
-É impossível garantir que todos os softwares estejam sempre configurados corretamente. No entanto, nos esforçamos para fornecer o máximo de orientação possível e tornar a configuração o mais simples possível. Além disso, AEM vem com [verificações de integridade de segurança integradas](/help/sites-administering/operations-dashboard.md) que ajudam a monitorar a configuração de segurança imediatamente.
+É impossível garantir que todos os softwares estejam sempre configurados corretamente. No entanto, nos esforçamos para fornecer o máximo de orientação possível e tornar a configuração o mais simples possível. Além disso, AEM navios com [verificações de integridade de segurança integradas](/help/sites-administering/operations-dashboard.md) que o ajuda a monitorar rapidamente a configuração de segurança.
 
-Revise a [Lista de verificação de segurança](/help/sites-administering/security-checklist.md) para obter mais informações, que fornecem instruções de proteção passo a passo.
+Revise o [Lista de verificação de segurança](/help/sites-administering/security-checklist.md) para obter mais informações, que fornecem instruções passo a passo de proteção.
 
 ## 7. Armazenamento Criptográfico Inseguro {#insecure-cryptographic-storage}
 
@@ -64,7 +64,7 @@ Dados confidenciais, como credenciais de terceiros, são armazenados em formulá
 
 ## 8. Falha ao restringir o acesso ao URL {#failure-to-restrict-url-access}
 
-O repositório permite a configuração de [privilégios finamente granulados (conforme especificado pelo JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) para qualquer usuário ou grupo em um determinado caminho, por meio de entradas de controle de acesso. As restrições de acesso são aplicadas pelo repositório.
+O repositório permite a configuração de [privilégios de granulação fina (conforme especificado pelo JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) para um determinado usuário ou grupo em um determinado caminho, por meio de entradas de controle de acesso. As restrições de acesso são aplicadas pelo repositório.
 
 ## 9. Proteção insuficiente da camada de transporte {#insufficient-transport-layer-protection}
 

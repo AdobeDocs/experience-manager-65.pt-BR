@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 1b57fca352457e973bd7395e060e3d0495a9d920
+source-git-commit: 8b4459c69b73159ce5afd819dfb772df5c51cd16
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 84%
+source-wordcount: '1136'
+ht-degree: 87%
 
 ---
 
@@ -54,8 +54,8 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
    * Caminho da carga: selecionar um caminho específico
    * Modelo de fluxo de trabalho: selecionar um modelo de fluxo de trabalho
    * Destinatário: selecionar um destinatário do fluxo de trabalho
-   * Tipo: Tarefa, item de fluxo de trabalho ou falha de fluxo de trabalho
-   * Status da tarefa: Ativo, concluído ou encerrado
+   * Tipo: tarefa, item do fluxo de trabalho ou falha do fluxo de trabalho
+   * Status da tarefa: ativo, concluído ou encerrado
    * Onde estou: proprietário AND destinatário, somente proprietário, somente destinatário
    * Data inicial: data inicial anterior ou posterior a uma data especificada
    * Data final: Data final anterior ou posterior a uma data especificada
@@ -104,7 +104,7 @@ Abre uma janela para mostrar a
 Mostra detalhes do histórico do fluxo de trabalho.
 
 * **Repetir etapa** Executa a instância do componente Etapa do script novamente. Use o comando Repetir etapa após corrigir a causa do erro original. Por exemplo, repita a etapa depois de corrigir um erro no script que a Etapa do processo executa.
-* **Encerrar** Encerra o fluxo de trabalho se o erro tiver gerado uma situação irreparável para o fluxo de trabalho. Por exemplo, o fluxo de trabalho pode depender de condições ambientais, como informações no repositório que não são mais válidas para a instância do fluxo de trabalho.
+* **Encerrar** Encerre o fluxo de trabalho se o erro tiver causado uma situação irreversível para o fluxo de trabalho. Por exemplo, o workflow pode depender de condições ambientais, como informações no repositório que não são mais válidas para a instância do workflow.
 * **Encerrar e repetir** Semelhante a **Encerrar**, exceto que uma nova instância de fluxo de trabalho é iniciada usando a carga, o título e a descrição originais.
 
 Para investigar falhas e, em seguida, retomar ou encerrar o fluxo de trabalho, use as seguintes etapas:
@@ -119,7 +119,7 @@ Para investigar falhas e, em seguida, retomar ou encerrar o fluxo de trabalho, u
 
 Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução.
 
-Configurar **Configuração de limpeza de fluxo de trabalho do Adobe Granite** para limpar instâncias do fluxo de trabalho de acordo com sua idade e status. Você também pode remover as instâncias de fluxo de trabalho de todos os modelos ou de um modelo específico.
+Configure a **Configuração de limpeza de fluxos de trabalho do Adobe Granite** para remover instâncias de fluxo de trabalho de acordo com sua idade e status. Você também pode remover as instâncias de fluxo de trabalho de todos os modelos ou de um modelo específico.
 
 Você também pode criar várias configurações do serviço para remover as instâncias de fluxo de trabalho que satisfaçam critérios diferentes. Por exemplo, crie uma configuração que remova as instâncias de um modelo de fluxo de trabalho específico quando elas estiverem em execução por muito mais tempo do que o esperado. Crie outra configuração que remova todos os fluxos de trabalho concluídos após um determinado número de dias para minimizar o tamanho do repositório.
 
@@ -159,7 +159,7 @@ Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deplo
   <tr>
    <td>Modelos a remover</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>A ID dos modelos de fluxo de trabalho a serem removidos. A ID é o caminho para o nó do modelo, por exemplo:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>Para especificar vários modelos, clique no botão + no console da Web. </p> <p>Não especifique nenhum valor para limpar instâncias de todos os modelos de fluxo de trabalho.</p> </td>
+   <td><p>A ID dos modelos de fluxo de trabalho a serem removidos. A ID é o caminho para o nó do modelo, por exemplo:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Não especifique nenhum valor para remover instâncias de todos os modelos de fluxo de trabalho.</p> <p>Para especificar vários modelos, clique no botão + no console da Web. </p> </td>
   </tr>
   <tr>
    <td>Idade do fluxo de trabalho</td>
@@ -193,7 +193,7 @@ No nível do modelo de fluxo de trabalho, um sinalizador é fornecido para indic
 
 A propriedade *userMetadataPersistenceEnabled* será armazenada no *nó jcr:content* do modelo de fluxo de trabalho. Esse sinalizador será mantido nos metadados do fluxo de trabalho como *cq:userMetaDataCustomPersistenceEnabled*.
 
-A ilustração abaixo mostra como definir o sinalizador em um workflow.
+A ilustração abaixo mostra como definir o sinalizador em um fluxo de trabalho.
 
 ![workflow-externalize-config](assets/workflow-externalize-config.png)
 

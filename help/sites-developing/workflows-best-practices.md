@@ -1,22 +1,21 @@
 ---
 title: Práticas recomendadas do workflow
-seo-title: Práticas recomendadas do workflow
+seo-title: Workflow Best Practices
 description: Práticas recomendadas do workflow
-seo-description: 'null'
+seo-description: null
 uuid: 79be4055-c2ef-428e-9054-103c6cfde1d2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1920'
 ht-degree: 1%
 
 ---
-
 
 # Práticas recomendadas do workflow{#workflow-best-practices}
 
@@ -32,7 +31,7 @@ Ao configurar processos de fluxo de trabalho (personalizados e/ou prontos para u
 
 ### Workflows transitórios {#transient-workflows}
 
-Para otimizar cargas altas de assimilação, você pode definir um workflow [como transitório](/help/sites-developing/workflows.md#transient-workflows).
+Para otimizar cargas altas de ingestão, você pode definir um valor de [fluxo de trabalho como transitório](/help/sites-developing/workflows.md#transient-workflows).
 
 Quando um workflow é transitório, os dados de tempo de execução relacionados às etapas de trabalho intermediárias não são persistentes no JCR quando são executados (as renderizações de saída são persistentes, é claro).
 
@@ -47,9 +46,9 @@ As vantagens podem incluir:
 >
 >Se sua empresa determinar que você persiste/arquiva dados de tempo de execução do fluxo de trabalho para fins de auditoria, não ative esse recurso.
 
-### Ajustando fluxos de trabalho do DAM {#tuning-dam-workflows}
+### Ajuste de fluxos de trabalho do DAM {#tuning-dam-workflows}
 
-Para obter as diretrizes de ajuste de desempenho para workflows do DAM, consulte o [Guia de Ajuste de Desempenho do AEM Assets](/help/assets/performance-tuning-guidelines.md).
+Para obter diretrizes de ajuste de desempenho para workflows DAM, consulte o [Guia de ajuste de desempenho do AEM Assets](/help/assets/performance-tuning-guidelines.md).
 
 ### Configurar o número máximo de fluxos de trabalho simultâneos {#configure-the-maximum-number-of-concurrent-workflows}
 
@@ -57,19 +56,19 @@ AEM pode permitir que vários threads de workflow sejam executados simultaneamen
 
 Nos casos em que os workflows que estão sendo executados são exigentes dos recursos do sistema, isso pode significar que pouco resta para AEM usar em outras tarefas, como renderizar a interface do usuário de criação. Como resultado, o sistema pode ficar lento durante atividades como o upload de imagens em massa.
 
-Para resolver esse problema, o Adobe recomenda configurar o número de **Máximo de Trabalhos Paralelos** entre meio e três quartos do número de núcleos do processador no sistema. Isso deve permitir capacidade suficiente para que o sistema continue responsivo ao processar esses workflows.
+Para resolver esse problema, o Adobe recomenda configurar o número de **Máximo de trabalhos paralelos** deve estar entre metade e três quartos do número de núcleos do processador no sistema. Isso deve permitir capacidade suficiente para que o sistema continue responsivo ao processar esses workflows.
 
-Para configurar **Máximo de Trabalhos Paralelos**, você pode:
+Para configurar **Máximo de trabalhos paralelos**, você pode:
 
-* Configure o **[Configuração do OSGi](/help/sites-deploying/configuring-osgi.md)** a partir do console da Web AEM; para **Fila: Fila de fluxo de trabalho do Granite** (uma **Configuração da fila de trabalhos do Apache Sling**).
+* Configure o **[Configuração do OSGi](/help/sites-deploying/configuring-osgi.md)** do console AEM Web; para **Fila: Fila de Fluxo de Trabalho do Granite** a) **Configuração da fila de trabalhos do Apache Sling**).
 
-* Configure a fila da opção **Sling Jobs** do console da Web AEM; para **Configuração da fila de trabalhos: Fila de fluxo de trabalho do Granite**, em `http://localhost:4502/system/console/slingevent`.
+* Configure a fila do **Trabalhos Sling** opção do console da Web AEM; para **Configuração da fila de trabalhos: Fila de Fluxo de Trabalho do Granite**, em `http://localhost:4502/system/console/slingevent`.
 
-Além disso, há uma configuração separada para a **Fila de trabalhos do processo externo do fluxo de trabalho do Granite**. Isso é usado para processos de workflow que iniciam binários externos, como **InDesign Server** ou **Image Magick**.
+Além disso, há uma configuração separada para a variável **Fila de Trabalho de Processo Externo do Fluxo de Trabalho Granite**. Isso é usado para processos de workflow que iniciam binários externos, como **InDesign Server** ou **Imagem Magick**.
 
 ### Configurar filas de trabalhos individuais {#configure-individual-job-queues}
 
-Em alguns casos, é útil configurar filas de trabalhos individuais para controlar encadeamentos simultâneos ou outras opções de fila, com base em um trabalho individual. Você pode adicionar e configurar uma fila individual no console da Web por meio da fábrica **Apache Sling Job Queue Configuration**. Para encontrar o tópico apropriado para lista, execute o modelo do seu fluxo de trabalho e procure-o no console **Sling Jobs**; por exemplo, em `http://localhost:4502/system/console/slingevent`.
+Em alguns casos, é útil configurar filas de trabalhos individuais para controlar encadeamentos simultâneos ou outras opções de fila, com base em um trabalho individual. Você pode adicionar e configurar uma fila individual no console da Web por meio do **Configuração da fila de trabalhos do Apache Sling** fábrica. Para encontrar o tópico apropriado para ser listado, execute o modelo de seu fluxo de trabalho e procure-o no **Trabalhos Sling** console; por exemplo, em `http://localhost:4502/system/console/slingevent`.
 
 As filas de trabalhos individuais também podem ser adicionadas para fluxos de trabalho transitórios.
 
@@ -79,9 +78,9 @@ Numa instalação padrão, o AEM fornece um console de manutenção, onde as ati
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
-Por padrão, a **Janela de manutenção semanal** tem uma tarefa **Expurgação do fluxo de trabalho**, mas isso precisa ser configurado antes de ser executado. Para configurar limpeza de workflow, um novo **Adobe Granite Workflow Purge Configuration** deve ser adicionado no console da Web.
+Por padrão, a variável **Janela de manutenção semanal** tem um **Limpeza de Fluxo de Trabalho** , mas isso precisa ser configurado antes de ser executado. Para configurar limpeza de workflow, um novo **Configuração de limpeza de fluxo de trabalho do Adobe Granite** deve ser adicionado no console da Web.
 
-Para obter mais detalhes sobre tarefas de manutenção no AEM, consulte o [Painel de Operações](/help/sites-administering/operations-dashboard.md).
+Para obter mais detalhes sobre tarefas de manutenção no AEM, consulte o [Painel de operações](/help/sites-administering/operations-dashboard.md).
 
 ## Personalização {#customization}
 
@@ -93,7 +92,7 @@ As definições de modelos de fluxo de trabalho, iniciadores, scripts e notifica
 
 >[!NOTE]
 >
->Consulte também [Reestruturação do Repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md).
+>Consulte também [Reestruturação do repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
 #### Locais - Modelos de fluxo de trabalho {#locations-workflow-models}
 
@@ -108,7 +107,7 @@ Os modelos de fluxo de trabalho são armazenados no repositório de acordo com o
    >Não:
    >
    >* coloque qualquer um dos seus modelos de fluxo de trabalho personalizados nesta pasta
-   >* editar qualquer item em `/libs`
+   >* edite qualquer item em `/libs`
 
    >
    >Como qualquer alteração pode ser substituída na atualização ou na instalação de hotfixes, pacotes de correções cumulativas ou service packs.
@@ -129,9 +128,9 @@ Os modelos de fluxo de trabalho são armazenados no repositório de acordo com o
 
    >[!NOTE]
    >
-   >Se esses designs forem editados *usando a interface do usuário AEM*, os detalhes serão copiados para os novos locais.
+   >Se esses designs forem editados *uso da interface do usuário do AEM*, os detalhes serão copiados para os novos locais.
 
-#### Locais - Inicializadores do fluxo de trabalho {#locations-workflow-launchers}
+#### Locais - Inicializadores de fluxo de trabalho {#locations-workflow-launchers}
 
 As definições de iniciador de fluxo de trabalho também são armazenadas no repositório de acordo com o tipo :
 
@@ -144,7 +143,7 @@ As definições de iniciador de fluxo de trabalho também são armazenadas no re
    >Não:
    >
    >* coloque qualquer um dos seus iniciadores de fluxo de trabalho personalizados nesta pasta
-   >* editar qualquer item em `/libs`
+   >* edite qualquer item em `/libs`
 
    >
    >Como qualquer alteração pode ser substituída na atualização ou na instalação de hotfixes, pacotes de correções cumulativas ou service packs.
@@ -161,7 +160,7 @@ As definições de iniciador de fluxo de trabalho também são armazenadas no re
 
    >[!NOTE]
    >
-   >Se essas definições forem editadas *usando a interface de usuário AEM*, os detalhes serão copiados para os novos locais.
+   >Se essas definições forem editadas *uso da interface do usuário do AEM*, os detalhes serão copiados para os novos locais.
 
 #### Locais - Scripts de fluxo de trabalho {#locations-workflow-scripts}
 
@@ -176,7 +175,7 @@ Os scripts de workflow também são armazenados no repositório de acordo com o 
    >Não:
    >
    >* coloque qualquer um dos scripts de fluxo de trabalho personalizados nesta pasta
-   >* editar qualquer item em `/libs`
+   >* edite qualquer item em `/libs`
 
    >
    >Como qualquer alteração pode ser substituída na atualização ou na instalação de hotfixes, pacotes de correções cumulativas ou service packs.
@@ -204,7 +203,7 @@ As notificações de workflow também são armazenadas no repositório de acordo
    >Não:
    >
    >* coloque qualquer uma das suas definições de notificação de fluxo de trabalho personalizadas nesta pasta
-   >* editar qualquer item em `/libs`
+   >* edite qualquer item em `/libs`
 
    >
    >Como qualquer alteração pode ser substituída na atualização ou na instalação de hotfixes, pacotes de correções cumulativas ou service packs.
@@ -250,10 +249,10 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 Salvar uma sessão:
 
-* Em um processo de workflow, se o `WorkflowSession` estiver sendo usado para modificar o repositório e não salvar explicitamente a sessão - o workflow salvará a sessão quando for concluído.
+* Em um processo de workflow, se a variável `WorkflowSession` está sendo usada para modificar o repositório e não salva explicitamente a sessão; o workflow salvará a sessão quando ela for concluída.
 * `Session.Save` não deve ser chamado de em uma etapa do fluxo de trabalho:
 
-   * é recomendável adaptar a sessão jcr do workflow; então `save` não é necessário, pois o mecanismo de workflow salva a sessão automaticamente após a conclusão da execução do workflow.
+   * é recomendável adaptar a sessão jcr do workflow; then `save` não é necessário, pois o mecanismo de workflow salva a sessão automaticamente após a conclusão da execução do workflow.
    * não é recomendado que uma etapa do processo crie sua própria sessão jcr.
 
 * Ao eliminar salvamentos desnecessários, é possível reduzir a sobrecarga e, portanto, tornar os workflows mais eficientes.
@@ -264,7 +263,7 @@ Salvar uma sessão:
 
 ### Minimizar o número/escopo de iniciadores {#minimize-the-number-scope-of-launchers}
 
-Há um ouvinte que é responsável por todos os [iniciadores do workflow](/help/sites-administering/workflows-starting.md#workflows-launchers) que estão registrados:
+Há um ouvinte que é responsável por todos os [inicializadores de fluxo de trabalho](/help/sites-administering/workflows-starting.md#workflows-launchers) registrados:
 
 * Ele vai acompanhar as alterações em todos os caminhos especificados nas propriedades de globalização dos outros lançadores.
 * Quando um evento é despachado, o mecanismo de workflow avaliará cada iniciador para determinar se ele deve ser executado.
@@ -275,9 +274,9 @@ Criar um caminho de globalização na raiz do repositório em um único iniciado
 
 Devido ao impacto desses lançadores no comportamento do fluxo de trabalho, também pode ser útil desativar os iniciadores prontos para uso que não estejam em uso.
 
-### Aprimoramentos de configuração para Iniciadores {#configuration-enhancements-for-launchers}
+### Aprimoramentos de configuração para inicializadores {#configuration-enhancements-for-launchers}
 
-A configuração personalizada [do iniciador](/help/sites-administering/workflows-starting.md#workflows-launchers) foi aprimorada para suportar o seguinte:
+O [configuração do iniciador](/help/sites-administering/workflows-starting.md#workflows-launchers) foi aprimorado para oferecer suporte ao seguinte:
 
 * Ter várias condições &quot;AND&quot; juntas.
 * Ter condições OU em uma única condição.
@@ -288,7 +287,7 @@ A configuração personalizada [do iniciador](/help/sites-administering/workflow
 
 Os workflows podem carregar uma quantidade significativa de sobrecarga, tanto em termos de objetos criados na memória quanto de nós rastreados no repositório. Por isso, é melhor fazer com que um workflow faça seu processamento sozinho em vez de iniciar workflows adicionais.
 
-Um exemplo disso seria um fluxo de trabalho que implementa um processo de negócios em um conjunto de conteúdo e, em seguida, ativa esse conteúdo. É melhor criar um processo de fluxo de trabalho personalizado que ative cada um desses nós, em vez de iniciar um modelo **Ativar conteúdo** para cada um dos nós de conteúdo que precisam ser publicados. Essa abordagem exigirá trabalho de desenvolvimento adicional, mas é mais eficiente quando executada do que iniciar uma instância de fluxo de trabalho separada para cada ativação.
+Um exemplo disso seria um fluxo de trabalho que implementa um processo de negócios em um conjunto de conteúdo e, em seguida, ativa esse conteúdo. É melhor criar um processo de fluxo de trabalho personalizado que ative cada um desses nós, em vez de iniciar um **Ativar conteúdo** modelo para cada um dos nós de conteúdo que precisam ser publicados. Essa abordagem exigirá trabalho de desenvolvimento adicional, mas é mais eficiente quando executada do que iniciar uma instância de fluxo de trabalho separada para cada ativação.
 
 Outro exemplo seria um fluxo de trabalho que processa vários nós, cria um pacote de fluxo de trabalho e ativa esse pacote. Em vez de criar o pacote e depois iniciar um fluxo de trabalho separado com o pacote como carga útil, você pode alterar a carga do fluxo de trabalho na etapa que cria o pacote e, em seguida, chamar a etapa para ativar o pacote no mesmo modelo de fluxo de trabalho.
 
@@ -298,15 +297,15 @@ Ao projetar um modelo de fluxo de trabalho, você tem a opção de ativar o avan
 
 Recomenda-se usar o handler advance, pois oferece melhor desempenho.
 
-### Estágios do fluxo de trabalho {#workflow-stages}
+### Estágios do Fluxo de Trabalho {#workflow-stages}
 
-Você pode definir [estágios do workflow](/help/sites-developing/workflows.md#workflow-stages), em seguida, atribuir tarefas/etapas a um estágio específico do workflow.
+Você pode definir [estágios do workflow](/help/sites-developing/workflows.md#workflow-stages), atribua tarefas/etapas a um estágio de fluxo de trabalho específico.
 
-Essas informações são usadas para exibir o progresso de um fluxo de trabalho quando você clica na guia [**Informações do fluxo de trabalho** de um item de trabalho da **Caixa de entrada**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Os modelos de fluxo de trabalho existentes podem ser editados para adição de estágios.
+Essas informações são usadas para exibir o progresso de um workflow quando você clica no [**Informações do fluxo de trabalho** guia de um item de trabalho da **Caixa de entrada**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Os modelos de fluxo de trabalho existentes podem ser editados para adição de estágios.
 
-### Ativar etapa do processo de página {#activate-page-process-step}
+### Etapa Ativar processo da página {#activate-page-process-step}
 
-A etapa **Ativar processo de página** ativará páginas para você, mas não encontrará automaticamente quaisquer ativos de DAM referenciados e os ativará também.
+O **Ativar processo de página** Essa etapa ativará páginas para você, mas não encontrará automaticamente quaisquer ativos do DAM referenciados e os ativará também.
 
 Isso é algo que deve ser lembrado se você planeja usar essa etapa como parte de um modelo de fluxo de trabalho.
 
@@ -315,17 +314,17 @@ Isso é algo que deve ser lembrado se você planeja usar essa etapa como parte d
 Ao atualizar sua instância:
 
 * certifique-se de que qualquer modelo de fluxo de trabalho personalizado tenha backup antes que uma instância seja atualizada.
-* confirme se nenhum de seus workflows personalizados é armazenado no [location](#locations):
+* confirme se nenhum de seus fluxos de trabalho personalizados é armazenado na variável [localização](#locations):
 
    * `/libs/settings/workflow/models/projects`
 
 >[!NOTE]
 >
->Consulte também [Reestruturação do Repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md).
+>Consulte também [Reestruturação do repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
 ## Ferramentas do sistema {#system-tools}
 
-Há muitas ferramentas de sistema disponíveis para ajudar com monitoramento, manutenção e solução de problemas de workflows. Todos os URLs de exemplo abaixo usam `localhost:4502`, mas devem estar disponíveis em qualquer instância do autor ( `<hostname>:<port>`).
+Há muitas ferramentas de sistema disponíveis para ajudar com monitoramento, manutenção e solução de problemas de workflows. Todos os URLs de exemplo abaixo usam `localhost:4502`, mas deve estar disponível em qualquer instância do autor ( `<hostname>:<port>`).
 
 ### Console de Manuseio de Trabalho do Sling {#sling-job-handling-console}
 
@@ -336,11 +335,11 @@ O console Sling Job Handling mostrará:
 * Estatísticas do estado dos trabalhos no sistema desde a última reinicialização.
 * Ele também mostrará as configurações para todas as filas de tarefas e fornecerá um atalho para editá-las no gerenciador de configuração.
 
-### Ferramenta de relatório de fluxo de trabalho {#workflow-report-tool}
+### Ferramenta Relatório de Fluxo de Trabalho {#workflow-report-tool}
 
 A ferramenta de relatório do workflow está sendo removida na versão 6.3 para evitar a degradação do desempenho.
 
-### Workflow Maintenance Operations MBean {#workflow-maintenance-operations-mbean}
+### MBean de operações de manutenção de fluxo de trabalho {#workflow-maintenance-operations-mbean}
 
 `http://localhost:4502/system/console/jmx/com.adobe.granite.workflow:type=Maintenance`
 
@@ -351,6 +350,6 @@ O MBean de manutenção de workflow expõe várias rotinas de manutenção útei
 Para obter mais informações, consulte:
 
 * [Trabalhar com fluxos de trabalho](/help/sites-authoring/workflows.md)
-* [Administração de workflows](/help/sites-administering/workflows.md)
+* [Administração de fluxos de trabalho](/help/sites-administering/workflows.md)
 * [Desenvolvimento e extensão de workflows](/help/sites-developing/workflows.md)
 * [Otimização de desempenho](/help/sites-deploying/configuring-performance.md)

@@ -1,39 +1,38 @@
 ---
 title: API para chamar o serviço de modelo de dados de formulário a partir de formulários adaptáveis
-seo-title: API para chamar o serviço de modelo de dados de formulário a partir de formulários adaptáveis
+seo-title: API to invoke form data model service from adaptive forms
 description: Explica a API invokeWebServices que pode ser usada para invocar serviços da Web escritos em WSDL a partir de um campo de formulário adaptável.
-seo-description: Explica a API invokeWebServices que pode ser usada para invocar serviços da Web escritos em WSDL a partir de um campo de formulário adaptável.
+seo-description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an adaptive form field.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: cf037174-3153-486f-85b1-c974cd5a1ace
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
-
 
 # API para chamar o serviço de modelo de dados de formulário a partir de formulários adaptáveis {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## Visão geral {#overview}
 
-O AEM Forms permite que os autores de formulários simplifiquem e aprimorem ainda mais a experiência de preenchimento de formulários, chamando serviços configurados em um modelo de dados de formulário de um campo de formulário adaptável. Para chamar um serviço de modelo de dados, você pode criar uma regra no editor visual ou especificar um JavaScript usando a API `guidelib.dataIntegrationUtils.executeOperation` no editor de códigos do [editor de regras](/help/forms/using/rule-editor.md).
+O AEM Forms permite que os autores de formulários simplifiquem e aprimorem ainda mais a experiência de preenchimento de formulários, chamando serviços configurados em um modelo de dados de formulário de um campo de formulário adaptável. Para chamar um serviço de modelo de dados, você pode criar uma regra no editor visual ou especificar um JavaScript usando o `guidelib.dataIntegrationUtils.executeOperation` API no editor de código do [editor de regras](/help/forms/using/rule-editor.md).
 
-Este documento foca em escrever um JavaScript usando a API `guidelib.dataIntegrationUtils.executeOperation` para chamar um serviço.
+Este documento se concentra em escrever um JavaScript usando o `guidelib.dataIntegrationUtils.executeOperation` API para chamar um serviço.
 
 ## Uso da API {#using-the-api}
 
-A API `guidelib.dataIntegrationUtils.executeOperation` chama um serviço de dentro de um campo de formulário adaptável. A sintaxe da API é a seguinte:
+O `guidelib.dataIntegrationUtils.executeOperation` A API chama um serviço de dentro de um campo de formulário adaptável. A sintaxe da API é a seguinte:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
-A estrutura da API `guidelib.dataIntegrationUtils.executeOperation` especifica detalhes sobre a operação do serviço. A sintaxe da estrutura é a seguinte.
+A estrutura do `guidelib.dataIntegrationUtils.executeOperation` A API especifica detalhes sobre a operação do serviço. A sintaxe da estrutura é a seguinte.
 
 ```javascript
 var operationInfo = {
@@ -92,9 +91,9 @@ A estrutura da API especifica os seguintes detalhes sobre a operação do servi�
 
 ## Exemplo de script para chamar um serviço {#sample-script-to-invoke-a-service}
 
-O script de amostra a seguir usa a API `guidelib.dataIntegrationUtils.executeOperation` para chamar a operação de serviço `getAccountById` configurada no modelo de dados de formulário `employeeAccount`.
+O script de amostra a seguir usa a variável `guidelib.dataIntegrationUtils.executeOperation` API para chamar a `getAccountById` operação de serviço configurada no `employeeAccount` modelo de dados de formulário.
 
-A operação `getAccountById` assume o valor no campo de formulário `employeeID` como entrada para o argumento `empId` e retorna o nome do funcionário, o número da conta e o saldo da conta do funcionário correspondente. Os valores de saída são preenchidos nos campos de formulário especificados. Por exemplo, o valor no argumento `name` é preenchido no elemento de formulário `fullName` e no valor do argumento `accountNumber` no elemento de formulário `account`.
+O `getAccountById` A operação recebe o valor na variável `employeeID` campo de formulário como entrada para a variável `empId` argumento e retorna o nome do funcionário, o número da conta e o saldo da conta do funcionário correspondente. Os valores de saída são preenchidos nos campos de formulário especificados. Por exemplo, o valor em `name` for preenchida na variável `fullName` elemento de formulário e valor para `accountNumber` argumento em `account` elemento de formulário.
 
 ```javascript
 var operationInfo = {
@@ -114,7 +113,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 ## Uso da API com função de retorno de chamada {#using-the-api-callback}
 
-Você também pode chamar o serviço de modelo de dados de formulário usando a API `guidelib.dataIntegrationUtils.executeOperation` com uma função de retorno de chamada. A sintaxe da API é a seguinte:
+Também é possível chamar o serviço de modelo de dados de formulário usando o `guidelib.dataIntegrationUtils.executeOperation` API com uma função de retorno de chamada. A sintaxe da API é a seguinte:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
@@ -124,13 +123,13 @@ A função de retorno de chamada pode ter `success` e `failure` funções de ret
 
 ### Exemplo de script com funções de retorno de chamada de sucesso e falha {#callback-function-success-failure}
 
-O script de amostra a seguir usa a API `guidelib.dataIntegrationUtils.executeOperation` para chamar a operação de serviço `GETOrder` configurada no modelo de dados de formulário `employeeOrder`.
+O script de amostra a seguir usa a variável `guidelib.dataIntegrationUtils.executeOperation` API para chamar a `GETOrder` operação de serviço configurada no `employeeOrder` modelo de dados de formulário.
 
-A operação `GETOrder` pega o valor no campo de formulário `Order ID` como entrada para o argumento `orderId` e retorna o valor da quantidade da ordem na função de retorno de chamada `success`.  Se a função de retorno de chamada `success` não retornar a quantidade do pedido, a função de retorno de chamada `failure` exibirá a mensagem `Error occured`.
+O `GETOrder` A operação recebe o valor na variável `Order ID` campo de formulário como entrada para a variável `orderId` argumento e retorna o valor da quantidade da ordem no `success` função de retorno de chamada.  Se a variável `success` a função de retorno de chamada não retorna a quantidade da ordem, a variável `failure` a função de retorno de chamada exibe a variável `Error occured` mensagem.
 
 >[!NOTE]
 >
-> Se você usar a função de retorno de chamada `success`, os valores de saída não serão preenchidos nos campos de formulário especificados.
+> Se você usar a variável `success` função de retorno de chamada, os valores de saída não são preenchidos nos campos de formulário especificados.
 
 ```javascript
 var operationInfo = {

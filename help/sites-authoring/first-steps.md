@@ -1,8 +1,8 @@
 ---
 title: Primeiros passos para autores
-seo-title: Primeiros passos para autores
+seo-title: First Steps for Authors
 description: Uma visão geral das principais tarefas que você usará ao iniciar a criação de conteúdo com o AEM
-seo-description: Uma visão geral das principais tarefas que você usará ao iniciar a criação de conteúdo com o AEM
+seo-description: An overview of the main tasks that you will be using when starting to author content with AEM
 uuid: 1a09da22-faa4-4a7a-a2c5-97a255a6a2ae
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 38ef8fc8d80009c8ca79aca9e45cf10bd70e1f1e
+exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '403'
 ht-degree: 93%
 
 ---
-
 
 # Primeiros passos para autores{#first-steps-for-authors}
 
@@ -29,7 +28,7 @@ Abrange:
    Detalhar a sequência básica de eventos que você precisa para criar e publicar sua primeira página.
 
 * [Próximas ações](#further-actions)\
-   Além das muitas outras ações que você pode usar durante a criação.
+   Além das muitas outras ações que você pode usar na criação.
 
 ## Introdução {#getting-started}
 
@@ -37,7 +36,7 @@ Isso detalha a sequência básica de eventos que você precisa para criar e publ
 
 ### Navegar até o local da página {#navigating-to-the-page-location}
 
-O conteúdo no seu site é mantido em uma estrutura em árvore. Para criar ou editar uma página, você precisa [navegar até o local](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+O conteúdo em seu site é mantido em uma estrutura de árvore. Para criar ou editar uma página, você precisa [navegar até o local](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 ### Criar uma nova página {#creating-a-new-page}
 
@@ -47,7 +46,7 @@ Antes de editar, você precisa [criar uma nova página](/help/sites-authoring/ma
 
 Para várias ações, como edição, você precisa [abrir uma página](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 
-### Editar a página  {#editing-a-page}
+### Editar a página {#editing-a-page}
 
 Se a instância já tem páginas ou você acabou de criar uma nova página, é possível [editar uma página](/help/sites-authoring/editing-content.md) seguindo estes procedimentos:
 
@@ -58,13 +57,13 @@ Se a instância já tem páginas ou você acabou de criar uma nova página, é p
 
 * [Desfazer e refazer edições de página](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Usar o modo de visualização](/help/sites-authoring/editing-content.md#preview-mode) (para verificar como ficará ao ser publicada)
-* [Bloquear uma página](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Bloquear uma página  ](/help/sites-authoring/editing-content.md#locking-a-page)
 
-### Publicar uma página  {#publishing-a-page}
+### Publicar uma página {#publishing-a-page}
 
 Quando terminar de editar sua página, você desejará [publicá-la (ou ativá-la)](/help/sites-authoring/publishing-pages.md#main-pars-title-10), para que ela esteja disponível para os visitantes do seu site.
 
-## Próximas ações  {#further-actions}
+## Próximas ações {#further-actions}
 
 Após as etapas básicas, existem muitas outras ações que você pode usar na criação.
 
@@ -76,7 +75,7 @@ Após as etapas básicas, existem muitas outras ações que você pode usar na c
 
 [Mover e renomear páginas são realizados basicamente com a mesma ação.](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page)
 
-### Desfazer publicação de uma página  {#unpublishing-a-page}
+### Desfazer publicação de uma página {#unpublishing-a-page}
 
 Para tornar o conteúdo anteriormente publicado (ou ativado) indisponível no seu site público, você [desfaz a publicação (ou desativa) a página](/help/sites-authoring/publishing-pages.md#main-pars-title-5).
 
@@ -84,14 +83,14 @@ Para tornar o conteúdo anteriormente publicado (ou ativado) indisponível no se
 
 Caso uma página não seja mais necessária, você pode [excluí-la](/help/sites-authoring/managing-pages.md#deleting-a-page).
 
-### Configurar as propriedades da página  {#setting-the-page-properties}
+### Configurar as propriedades da página {#setting-the-page-properties}
 
 Cada [página tem propriedades](/help/sites-authoring/editing-page-properties.md) que você pode definir para determinar os aspectos do seu funcionamento. Elas podem ser atualizadas com as duas interfaces do usuário do usuário.
 
-### Criar uma versão de uma página  {#creating-a-version-of-a-page}
+### Criar uma versão de uma página {#creating-a-version-of-a-page}
 
 Você pode [criar uma versão](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version) de uma página e, em seguida, [reverter essa versão](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version), se necessário.
 
-## Mais informações  {#more-information}
+## Mais informações {#more-information}
 
 O acesso a mais informações sobre a criação pode ser encontrado em [Criação de página](/help/sites-authoring/page-authoring.md).

@@ -1,22 +1,21 @@
 ---
 title: Personalização e direcionamento de conteúdo
-seo-title: Personalização e direcionamento de conteúdo
-description: Saiba como AEM criar conteúdo personalizado
-seo-description: Saiba como AEM criar conteúdo personalizado
+seo-title: Personalization and Content Targeting
+description: Saiba como o AEM pode criar conteúdo personalizado
+seo-description: Learn how AEM can create personalized content
 uuid: 3a1aaa3d-5f57-4fb7-a4be-523f0d274b79
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 850da0da-f7c3-4dd7-bb06-404c14a2a791
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 84%
+source-wordcount: '519'
+ht-degree: 87%
 
 ---
-
 
 # Personalização e direcionamento de conteúdo {#personalization}
 
@@ -32,7 +31,7 @@ O AEM fornece uma estrutura de ferramentas para criar conteúdo direcionado e ap
 
 Atividades definem e organizam seus esforços de marketing. Elas abrangem os públicos que você está direcionando e o período em que a o direcionamento é aplicado.
 
-Por exemplo, o catálogo de produtos We.Retail inclui teasers que focam a atenção em produtos sazonais. A atividade Esportes de verão define os segmentos de marketing direcionados pelos teasers durante os meses de verão.
+Por exemplo, o catálogo de produtos We.Retail inclui teasers que focalizam a atenção em produtos sazonais. A atividade Esportes de verão define os segmentos de marketing direcionados pelos teasers durante os meses de verão.
 
 Atividades também identificam o [mecanismo de direcionamento](/help/sites-authoring/personalization.md#targeting-engine) usado por suas páginas.
 
@@ -44,19 +43,19 @@ Para cada atividade, você define uma ou mais experiências que identificam os p
 
 Os públicos se baseiam em segmentos de marketing criados no AEM ou no Adobe Target. Quando um visitante abre uma página da Web, a lógica da página determina o público ao qual ele pertence e exibe o conteúdo que você criou para esse público.
 
-Por exemplo, uma atividade define experiências para dois públicos separados: mulheres com mais de 30 anos e mulheres com menos de 30 anos. A página Mulheres do site We.Retail exibe produtos diferentes para cada experiência.
+Por exemplo, uma atividade define experiências para dois públicos separados: mulheres com mais de 30 anos e mulheres com menos de 30 anos. A página Women&#39;s do site We.Retail exibe produtos diferentes para cada experiência.
 
 Você define experiências para uma atividade. É possível usar o [console Atividades](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) ou o [modo Direcionar](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) para adicionar experiências a uma atividade.
 
-## Ofertas  {#offers}
+## Ofertas {#offers}
 
 Uma oferta é um conteúdo que aparece em uma localização em uma página para uma experiência. Use ofertas diferentes para experiências diferentes para maximizar a eficácia do conteúdo para os seus públicos.
 
-Por exemplo, a página Mulheres do site de amostra We.Retail pode usar o oferta como a imagem do teaser que aparece na parte superior da página. Uma oferta diferente é usada como teaser para a experiência Mulheres acima de 30 anos e para a experiência Mulheres com menos de 30 anos.
+Por exemplo, a página Women&#39;s do site de exemplo We.Retail pode usar ofertas como a imagem de teaser que aparece na parte superior da página. Uma oferta diferente é usada como teaser para a experiência Mulheres acima de 30 anos e para a experiência Mulheres com menos de 30 anos.
 
 Use o [console Ofertas](/help/sites-authoring/offerlib.md) para criar ofertas que você possa usar em várias experiências. Crie ofertas de uso único ou adicione ofertas de uma biblioteca de ofertas ao [criar conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md).
 
-## Mecanismo de direcionamento  {#targeting-engine}
+## Mecanismo de direcionamento {#targeting-engine}
 
 O mecanismo de direcionamento é o mecanismo que orienta a lógica do conteúdo segmentado. [Atividades](/help/sites-authoring/activitylib.md) são configuradas para usar um dos dois mecanismos de segmentação disponíveis: AEM e Adobe Target.
 

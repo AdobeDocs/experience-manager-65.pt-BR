@@ -13,7 +13,7 @@ exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 21%
+ht-degree: 23%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 21%
 
 No **Projetos** , você acessa e gerencia seus projetos.
 
-![O console Projetos](assets/projects-console.png)
+![O console de projetos](assets/projects-console.png)
 
 Usando o console, você pode criar um projeto, associar recursos ao projeto e também excluir um projeto ou links de recursos.
 
@@ -43,7 +43,7 @@ Siga estas etapas para criar um novo projeto.
 
    ![Assistente para Criar projeto](assets/create-project-wizard.png)
 
-1. Defina as **Título** e **Descrição** e adicione uma **Miniatura** imagem, se necessário. Você também adiciona ou exclui os usuários e os grupos aos quais pertencem.
+1. Defina o **Título** e a **Descrição** e adicione uma imagem de **Miniatura** se necessário. Você também adiciona ou exclui os usuários e os grupos aos quais pertencem.
 
    ![Etapa Propriedades do assistente](assets/create-project-wizard-properties.png)
 
@@ -60,7 +60,7 @@ Para associar recursos ao projeto:
 1. Abra o projeto do console **Projetos**.
 1. Toque/clique em **Adicionar mosaico** e selecione o mosaico que deseja vincular ao projeto. É possível selecionar vários tipos de mosaicos.
 
-   ![Adicionar bloco](assets/project-add-tile.png)
+   ![Adicionar mosaico](assets/project-add-tile.png)
 
 1. Toque/clique em **Criar**. O recurso é vinculado ao seu projeto e a partir de agora é possível acessá-lo do próprio projeto.
 

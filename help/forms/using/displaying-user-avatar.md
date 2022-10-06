@@ -1,33 +1,32 @@
 ---
-title: Exibir o avatar do usuário
-seo-title: Exibir o avatar do usuário
-description: Como personalizar a área de trabalho do AEM Forms para exibir a imagem de um usuário conectado.
-seo-description: Como personalizar a área de trabalho do AEM Forms para exibir a imagem de um usuário conectado.
+title: Exibição do avatar do usuário
+seo-title: Displaying the user avatar
+description: Como personalizar o espaço de trabalho do AEM Forms para exibir a imagem de um usuário conectado.
+seo-description: How to customize the AEM Forms workspace to display the image of a logged-in user.
 uuid: 2961dc93-f0d0-4842-80f1-3c239a20e348
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: ee0708b0-b630-4a2b-84b6-3c0b92dd7777
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
 
-
 # Exibição do avatar do usuário {#displaying-the-user-avatar}
 
-O avatar do usuário conectado é exibido no canto superior direito da área de trabalho do AEM Forms. Além disso, os avatares dos relatórios diretos na hierarquia organizacional são exibidos na Visualização do Gerente. Você pode configurar o espaço de trabalho do AEM Forms para escolher as imagens de usuário do banco de dados, por exemplo, o servidor LDAP.
+O avatar do usuário conectado é exibido no canto superior direito do espaço de trabalho do AEM Forms. Além disso, os avatares dos relatórios diretos na hierarquia organizacional são exibidos na Exibição do Gerenciador. Você pode configurar o espaço de trabalho do AEM Forms para escolher as imagens de usuário do seu banco de dados, por exemplo, o servidor LDAP.
 
 >[!NOTE]
 >
 >A proporção de aspecto suportada das imagens do usuário é 1:1.
 
-1. Crie um DSC, usando os detalhes mencionados na próxima etapa. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para formulários AEM&quot; no guia [Programação com AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
-1. No DSC, defina um novo SPI que exponha os métodos getCurrentUserImageUrl e getUserImageUrl para obter um URL de imagem para um usuário do AEM Forms. A seguir está um exemplo de trecho de código Java™:
+1. Crie um DSC, usando os detalhes mencionados na próxima etapa. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para AEM Forms&quot; em [Programação com o AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guia.
+1. No DSC, defina um novo SPI que exponha os métodos getCurrentUserImageUrl e getUserImageUrl para obter um URL de imagem para um usuário do AEM Forms. A seguir, há um exemplo de trecho de código Java™:
 
    ```java
    public class DemoUserImageURLProviderService {
@@ -42,9 +41,9 @@ O avatar do usuário conectado é exibido no canto superior direito da área de 
    }
    ```
 
-1. Crie um arquivo component.xml. Certifique-se de que spec-id esteja conforme mostrado no trecho de código abaixo.
+1. Crie um arquivo component.xml. Certifique-se de que o spec-id seja como mostrado no trecho de código abaixo.
 
-   O trecho de código a seguir é uma amostra. Personalize-o de acordo com seus requisitos específicos.
+   O trecho de código a seguir é uma amostra. Personalize para atender às suas necessidades específicas.
 
    ```java
    <component xmlns="https://adobe.com/idp/dsc/component/document">
@@ -84,5 +83,5 @@ O avatar do usuário conectado é exibido no canto superior direito da área de 
    </component>
    ```
 
-1. Implante o DSC por meio do Workbench. Reinicie o serviço `ProcessManagementClientSessionService`.
+1. Implante o DSC por meio do Workbench. Reiniciar `ProcessManagementClientSessionService` serviço.
 1. Talvez seja necessário atualizar seu navegador ou fazer logout/login com o usuário novamente.

@@ -1,8 +1,8 @@
 ---
 title: Marcação de conteúdo gerado pelo usuário
-seo-title: Marcação de conteúdo gerado pelo usuário
+seo-title: Tagging User Generated Content
 description: A marcação do conteúdo gerado pelo usuário (UGC) é a forma como os membros da comunidade podem ajudar outros membros a pesquisar conteúdo
-seo-description: A marcação do conteúdo gerado pelo usuário (UGC) é a forma como os membros da comunidade podem ajudar outros membros a pesquisar conteúdo
+seo-description: Tagging of user generated content (UGC) is how community members can help other members search for content
 uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '227'
 ht-degree: 3%
 
 ---
@@ -40,11 +40,11 @@ Os recursos do AEM Communities que podem ser configurados para permitir a marca�
 
 ## Administração de tags {#administering-tags}
 
-Consulte [Administração de tags](../../help/sites-administering/tags.md#tagging-console) para criar e gerenciar namespaces de tags e taxonomias.
+Consulte [Administração de tags](../../help/sites-administering/tags.md#tagging-console) para criar e gerenciar namespaces e taxonomias de tags.
 
 Consulte [Tag Essentials](tag.md) para obter informações sobre desenvolvedores.
 
-Consulte [Usar a nuvem de tags sociais](tagcloud.md) para adicionar um componente da nuvem de tags sociais a uma página, a fim de facilitar a pesquisa por UGC publicado usando as tags aplicadas.
+Consulte [Uso da Nuvem de tags sociais](tagcloud.md) para adicionar um componente Nuvem de tag social a uma página, a fim de facilitar a pesquisa por UGC publicado usando as tags aplicadas.
 
 ### Permissões de tag {#tag-permissions}
 

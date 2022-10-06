@@ -10,7 +10,7 @@ ht-degree: 2%
 
 ---
 
-# Suporte a Fragmentos de conteúdo na API HTTP do AEM Assets {#content-fragments-support-in-aem-assets-http-api}
+# Compatibilidade com os Fragmentos de conteúdo na API HTTP do AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -210,7 +210,7 @@ A API REST do Assets expõe o acesso às propriedades de uma pasta; por exemplo,
 >
 >Dependendo do tipo de ativo dos ativos e pastas filhos, a lista de entidades filhas já pode conter o conjunto completo de propriedades que define a respectiva entidade filho. Como alternativa, apenas um conjunto reduzido de propriedades pode ser exposto para uma entidade nesta lista de entidades-filho.
 
-### Ativos {#assets}
+### Assets {#assets}
 
 Se um ativo for solicitado, a resposta retornará seus metadados; como título, nome e outras informações conforme definido pelo respectivo schema de ativos.
 

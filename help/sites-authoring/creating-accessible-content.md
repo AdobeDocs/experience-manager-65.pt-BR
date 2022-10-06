@@ -66,7 +66,7 @@ Um benefício adicional útil é que as alternativas em texto permitem que o con
 
 #### Como cumprir - Conteúdo não textual (1.1.1)       {#how-to-meet-non-text-content}
 
-Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser feito no campo **Texto alternativo**. Por exemplo, veja o Componente principal **[Imagem](https://docs.adobe.com/content/help/br/experience-manager-core-components/using/components/image.html)**.
+Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser feito no campo **Texto alternativo**. Por exemplo, veja o Componente principal **[Imagem](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/image.html)**.
 
 >[!NOTE]
 >

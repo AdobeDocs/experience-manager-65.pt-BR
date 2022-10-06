@@ -1,6 +1,6 @@
 ---
 title: Gerenciamento de correspondência | Tratamento de dados de utilizadores
-seo-title: Gerenciamento de correspondência | Tratamento de dados de utilizadores
+seo-title: Correspondence Management | Handling user data
 description: Gerenciamento de correspondência | Tratamento de dados de utilizadores
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
@@ -10,7 +10,7 @@ role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ Dependendo da persistência do armazenamento de dados configurada para a implant
  </tbody>
 </table>
 
-No local do repositório AEM acima especificado:
+No local de repositório AEM especificado acima:
 
 * `[yyyy]/[mm]/[dd]` é a estrutura do nó com base na data em que a instância da carta foi criada
 * `[node-id]` é o ID atribuído à pasta que contém a carta
 * `[letter-instance-name]` é o nome especificado ao salvar ou enviar uma carta
 
-No nó [letter-instance-name], a seguinte estrutura de nó é criada e os dados para cada instância de carta são armazenados no repositório AEM:
+Em [letter-instance-name] , a seguinte estrutura de nó é criada e os dados para cada instância de carta são armazenados no repositório de AEM:
 
 | Nó | Descrição |
 |---|---|
@@ -72,9 +72,9 @@ Você pode acessar dados de rascunho e enviar a correspondência nos armazenamen
 
 ### Acessar dados do usuário {#access-user-data}
 
-O gerenciamento de correspondência fornece APIs que podem ser usadas para localizar e acessar instâncias de rascunho e de carta enviada. Usando as APIs, é possível encontrar e abrir instâncias de carta usando a ID da instância de carta ou o usuário que salvou ou enviou a correspondência. Para obter mais informações, consulte [APIs para acessar instâncias de carta](/help/forms/using/cm-apis-to-access-letter-instances.md).
+O gerenciamento de correspondência fornece APIs que podem ser usadas para localizar e acessar instâncias de rascunho e de carta enviada. Usando as APIs, é possível encontrar e abrir instâncias de carta usando a ID da instância de carta ou o usuário que salvou ou enviou a correspondência. Para obter mais informações, consulte [APIs para acessar instâncias de cartas](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-Como alternativa, você pode navegar até a instância da carta AEM repositório usando o CRX DELite. Consulte [Dados do usuário e armazenamentos de dados](/help/forms/using/correspondence-management-handling-user-data.md#data) para obter informações sobre os dados armazenados e o local do repositório.
+Como alternativa, você pode navegar até a instância da carta AEM repositório usando o CRX DELite. Consulte [Armazenamento de dados e dados do usuário](/help/forms/using/correspondence-management-handling-user-data.md#data) para obter informações sobre dados armazenados e o local do repositório.
 
 ### Excluir dados do usuário {#delete-user-data}
 

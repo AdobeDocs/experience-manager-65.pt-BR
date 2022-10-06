@@ -1,6 +1,6 @@
 ---
 title: Contêiner de serviço
-seo-title: Contêiner de serviço
+seo-title: Service container
 description: Serviços AEM Forms localizados no contêiner de serviço
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6abf2401-5a87-4f72-9028-74580df5b9de
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
-
 
 # Contêiner de serviço {#service-container}
 
@@ -36,7 +35,7 @@ A tabela a seguir descreve as diferentes maneiras pelas quais você pode chamar 
  <tbody>
   <tr>
    <td><p>Integração remota</p></td>
-   <td><p>A integração remota fornece a capacidade de os clientes do Flex invocarem operações de serviço. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">Invocar o AEM Forms usando (Obsoleto para formulários AEM) AEM Forms Remoting</a>.)</p></td>
+   <td><p>A integração remota fornece a capacidade de os clientes do Flex invocarem operações de serviço. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">Chamar o AEM Forms usando (obsoleto para formulários AEM) AEM Forms Remoting</a>.)</p></td>
   </tr>
   <tr>
    <td><p>API Java</p></td>
@@ -48,7 +47,7 @@ A tabela a seguir descreve as diferentes maneiras pelas quais você pode chamar 
   </tr>
   <tr>
    <td><p>Solicitações REST</p></td>
-   <td><p>O AEM Forms suporta solicitações REST. Um serviço pode ser chamado diretamente de uma página HTML. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Chamar o AEM Forms usando solicitações REST</a>.)</p></td>
+   <td><p>O AEM Forms suporta solicitações REST. Um serviço pode ser chamado diretamente de uma página de HTML. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Chamada de AEM Forms usando solicitações REST</a>.)</p></td>
   </tr>
  </tbody>
 </table>
@@ -57,16 +56,16 @@ A ilustração a seguir fornece uma representação visual das diferentes maneir
 
 >[!NOTE]
 >
->Além de usar o AEM Forms SDK para criar aplicativos clientes que possam chamar serviços da AEM Forms, você também pode criar componentes que podem ser implantados no contêiner de serviço. Por exemplo, você pode criar um componente Banco que contenha tipos de dados personalizados que podem ser usados em processos. Ou seja, você pode criar um tipo de dados como `com.adobe.idp.BankAccount`. Em seguida, você pode criar instâncias `com.adobe.idp.BankAccount` em seus aplicativos clientes.
+>Além de usar o AEM Forms SDK para criar aplicativos clientes que possam chamar serviços da AEM Forms, você também pode criar componentes que podem ser implantados no contêiner de serviço. Por exemplo, você pode criar um componente Banco que contenha tipos de dados personalizados que podem ser usados em processos. Ou seja, você pode criar um tipo de dados como `com.adobe.idp.BankAccount`. Em seguida, você pode criar `com.adobe.idp.BankAccount` em seus aplicativos clientes.
 
 O contêiner de serviço fornece a seguinte funcionalidade:
 
-* Permite que os serviços da AEM Forms sejam chamados usando métodos diferentes. Você pode configurar um serviço definindo endpoints para que ele possa ser chamado usando todos os métodos: Remoção, a API do Java, os serviços da Web e o REST. (Consulte [Gerenciando Programaticamente Endpoints](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).)
-* Converte uma mensagem em um formato normalizado chamado solicitação de invocação. Uma solicitação de invocação é enviada de um aplicativo cliente (ou outro serviço) para um serviço localizado no contêiner de serviço. Uma solicitação de invocação contém informações como o nome do serviço a ser chamado e valores de dados necessários para executar a operação. Muitos serviços exigem um documento para executar uma operação. Portanto, uma solicitação de invocação geralmente contém um documento, que pode ser dados em PDF, dados XDP, dados XML e assim por diante.
+* Permite que os serviços da AEM Forms sejam chamados usando métodos diferentes. Você pode configurar um serviço definindo endpoints para que ele possa ser chamado usando todos os métodos: Remoção, a API do Java, os serviços da Web e o REST. (Consulte [Gerenciar endpoints de forma programática](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).)
+* Converte uma mensagem em um formato normalizado chamado solicitação de invocação. Uma solicitação de invocação é enviada de um aplicativo cliente (ou outro serviço) para um serviço localizado no contêiner de serviço. Uma solicitação de invocação contém informações como o nome do serviço a ser chamado e valores de dados necessários para executar a operação. Muitos serviços exigem um documento para executar uma operação. Portanto, uma solicitação de invocação geralmente contém um documento, que pode ser dados de PDF, dados XDP, dados XML e assim por diante.
 * Envia solicitações de invocação a serviços apropriados (o nome do serviço a ser chamado faz parte da solicitação de invocação).
 * Executa tarefas como determinar se o chamador tem permissão para invocar a operação de serviço especificada. A solicitação de invocação deve conter um nome de usuário e senha válidos para formulários AEM.
 
-   Há diferentes maneiras de enviar uma solicitação de invocação para um serviço. Além disso, há diferentes maneiras de enviar os valores de entrada necessários para o serviço. Por exemplo, suponha que você use a API do Java para chamar um serviço que exija um documento PDF. O método Java correspondente contém um parâmetro que aceita um documento PDF. Nessa situação, o tipo de dados do parâmetro é `com.adobe.idp.Document`. (Consulte [Passar dados para serviços da AEM Forms usando a API do Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+   Há diferentes maneiras de enviar uma solicitação de invocação para um serviço. Além disso, há diferentes maneiras de enviar os valores de entrada necessários para o serviço. Por exemplo, suponha que você use a API do Java para chamar um serviço que requer um documento PDF. O método Java correspondente contém um parâmetro que aceita um documento PDF. Nessa situação, o tipo de dados do parâmetro é `com.adobe.idp.Document`. (Consulte [Passar dados para serviços da AEM Forms usando a API do Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
    Se você chamar um serviço usando pastas assistidas, uma solicitação de invocação será enviada quando você colocar um arquivo em uma pasta assistida configurada. Se você chamar um serviço usando email, uma solicitação de invocação será enviada a um serviço quando uma mensagem de email chegar em uma caixa de entrada configurada.
 
@@ -74,7 +73,7 @@ O contêiner de serviço fornece a seguinte funcionalidade:
 
    Uma resposta de invocação pode ser recuperada da mesma forma em que uma solicitação de invocação é enviada. Ou seja, se a solicitação de invocação for enviada usando a API Java, uma resposta de invocação poderá ser recuperada usando a API Java. Suponha, por exemplo, que uma operação modifique um documento PDF. Você pode recuperar o documento PDF modificado obtendo o valor de retorno do método Java que invocou o serviço.
 
-   Quando um processo de longa duração é chamado, uma resposta de invocação contém um valor identificador associado à solicitação de invocação. Usando esse valor identificador, você pode verificar o status do processo posteriormente. Por exemplo, considere o serviço MortgaugeLoan de longa duração. Com o valor do identificador , é possível verificar se o processo foi concluído com êxito. (Consulte [Invocando processos de vida longa centrados em humanos](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
+   Quando um processo de longa duração é chamado, uma resposta de invocação contém um valor identificador associado à solicitação de invocação. Usando esse valor identificador, você pode verificar o status do processo posteriormente. Por exemplo, considere o serviço MortgaugeLoan de longa duração. Com o valor do identificador , é possível verificar se o processo foi concluído com êxito. (Consulte [Invocando processos de longa vida centrados em seres humanos](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
    O diagrama a seguir mostra um aplicativo cliente (que usa a API do Java) que chama um serviço.
 
@@ -84,7 +83,7 @@ O contêiner de serviço fornece a seguinte funcionalidade:
    1. O serviço executa a operação especificada na solicitação de invocação.
    1. O contêiner de serviço retorna uma resposta de invocação para o aplicativo cliente.
 
-**Consulte também:**
+**Consulte também**
 
 [Noções básicas sobre os processos do AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)
 

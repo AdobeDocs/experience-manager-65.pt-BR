@@ -1,8 +1,8 @@
 ---
 title: Início rápido da API Java do LiveCycleProcess (SOAP)
-seo-title: Início rápido da API Java do LiveCycleProcess (SOAP)
-description: 'Use o Início rápido da API Java (SOAP) do LiveCycleProcess para procurar instâncias de processo, suspender instâncias de processo, iniciar instâncias de processo suspensas, encerrar instâncias de processo, limpar dados do processo e recuperar o status de um trabalho. '
-seo-description: Use o Início rápido da API Java (SOAP) do LiveCycleProcess para procurar instâncias de processo, suspender instâncias de processo, iniciar instâncias de processo suspensas, encerrar instâncias de processo, limpar dados do processo e recuperar o status de um trabalho.
+seo-title: LiveCycleProcess Java API(SOAP)Quick Start
+description: Use o Início rápido da API Java (SOAP) do LiveCycleProcess para procurar instâncias de processo, suspender instâncias de processo, iniciar instâncias de processo suspensas, encerrar instâncias de processo, limpar dados do processo e recuperar o status de um trabalho.
+seo-description: Use the LiveCycleProcess Java API (SOAP) Quick Start to search for process instances, suspend process instances, start suspended process instances, terminate process instances, purge process data, and retrieve the status of a job.
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
 contentOwner: admin
 content-type: reference
@@ -10,18 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7b309743-10ea-4d10-adb6-be5ce9f03ce2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
-
 # Início rápido da API Java (SOAP) do LiveCycleProcess {#livecycleprocess-java-api-soap-quick-start}
 
-O Início rápido da API Java (SOAP) está disponível para processos. Uma *instância do processo* é uma ocorrência de um processo específico que foi iniciado por um método de invocação, como a API de Invocação ou de dentro do Workspace.
+O Início rápido da API Java (SOAP) está disponível para processos. A *instância de processo* é uma ocorrência de um processo específico que foi iniciado por um método de invocação, como a API de Invocação ou de dentro do Workspace.
 
 [Início rápido (modo SOAP): Pesquisando instâncias de processo usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -39,11 +38,11 @@ As operações do AEM Forms podem ser executadas usando a API altamente digitada
 
 >[!NOTE]
 >
->Os inícios rápidos localizados em Programação com o AEM Forms são baseados na Forms se você estiver usando outro sistema operacional, como o Unix, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Os inícios rápidos localizados em Programação com o AEM Forms são baseados na Forms se você estiver usando outro sistema operacional, como o Unix, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. (Consulte [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 ## Início rápido (modo SOAP): Pesquisando instâncias de processo usando a API Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-O exemplo de código Java a seguir pesquisa por instâncias de processo que são baseadas no processo *MortgaugeLoan - Pré-construído*.
+O exemplo de código Java a seguir pesquisa instâncias de processo que são baseadas no *Empréstimo hipotecário - pré-construído* processo.
 
 ```java
  /*
@@ -251,7 +250,7 @@ O exemplo de código Java a seguir suspende uma instância do processo. Para sus
  
 ```
 
-## Início rápido (Modo SOAP): Iniciando instâncias de processo suspensas usando a API Java {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
+## Início rápido (Modo SOAP): Iniciar instâncias de processo suspensas usando a API do Java {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
 
 O exemplo de código Java a seguir inicia uma instância de processo suspensa.
 
@@ -430,9 +429,9 @@ O exemplo de código Java a seguir finaliza uma instância do processo com o val
  
 ```
 
-## Início rápido (modo SOAP): Limpeza de dados de processo usando a API Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
+## Início rápido (modo SOAP): Remoção de dados do processo usando a API do Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-O código Java a seguir limpa dados de um processo chamado *SecureDocument*. É usado um filtro que especifica a limpeza de dados para as instâncias de processo em que a variável de processo chamada *inValue* é maior que 200.
+O seguinte código Java limpa dados de um processo chamado *SecureDocument*. É usado um filtro que especifica a limpeza de dados para as instâncias do processo em que a variável de processo é nomeada *inValue* for maior que 200.
 
 ```java
  /*
@@ -537,7 +536,7 @@ O código Java a seguir limpa dados de um processo chamado *SecureDocument*. É 
  
 ```
 
-## Início rápido (Modo SOAP): Recuperar o status de uma tarefa usando a API Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
+## Início rápido (Modo SOAP): Recuperação do status de um trabalho usando a API Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
 O exemplo de código a seguir recupera o status de 10 trabalhos do AEM Forms.
 
@@ -644,4 +643,3 @@ O exemplo de código a seguir recupera o status de 10 trabalhos do AEM Forms.
  
  
 ```
-

@@ -1,22 +1,21 @@
 ---
 title: Atalhos de teclado ao editar as páginas
-seo-title: Atalhos de teclado ao editar as páginas
+seo-title: Keyboard Shortcuts when Editing Pages
 description: Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplicáveis ao editar páginas, outros para o uso de consoles.
-seo-description: Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplicáveis ao editar páginas, outros para o uso de consoles.
+seo-description: Various keyboard shortcuts are available throughout AEM. Some apply when editing pages, others to the use of consoles.
 uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 91%
+source-wordcount: '313'
+ht-degree: 90%
 
 ---
-
 
 # Atalhos de teclado ao editar as páginas{#keyboard-shortcuts-when-editing-pages}
 
@@ -24,7 +23,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 >[!NOTE]
 >
->Nas tabelas a seguir, para as combinações de teclas na coluna **Atalho**, as teclas Ctrl e Command funcionam no macOS.
+>Nas tabelas a seguir, para as combinações de teclas na **Atalho** , as teclas Ctrl e Command funcionam no macOS.
 
 >[!NOTE]
 >
@@ -32,9 +31,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 >
 >* Windows: Ctrl + clique nos componentes desejados.
 >* MAC: Cmd+clicar nos componentes exigidos.
-
 >
-
 
 
 ## Edição de atalhos de teclado {#editing-keyboard-shortcuts}
@@ -108,7 +105,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
    <td>Exibe o <a href="/help/sites-administering/client-context.md">contexto de cliente</a>.</td>
   </tr>
   <tr>
-   <td>Rich Text Editor<br /> </td>
+   <td>Editor de rich text<br /> </td>
    <td><strong><code>Ctrl-B</code></strong><br /> </td>
    <td>Negrito</td>
   </tr>
@@ -175,4 +172,3 @@ Vários atalhos de teclado estão disponíveis para os desenvolvedores de deskto
   </tr>
  </tbody>
 </table>
-

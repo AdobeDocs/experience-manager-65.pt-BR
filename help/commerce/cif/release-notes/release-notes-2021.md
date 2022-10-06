@@ -79,7 +79,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 * Respeite a propriedade &quot;include_in_menu&quot; no componente de navegação
 
-### Correções de bugs {#bug-fixes-september}
+### Correções de erros {#bug-fixes-september}
 
 * A limpeza do cache do menu não está funcionando como esperado
 
@@ -103,7 +103,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 * Melhor suporte A11Y para os Componentes principais da CIF
 
-### Correções de bugs {#bug-fixes-august}
+### Correções de erros {#bug-fixes-august}
 
 * Não é possível fechar a opção de filtro de categoria depois que ela estiver aberta
 
@@ -159,7 +159,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 * Suporte à paginação para conteúdo associado nas propriedades do console do produto
 
-### Correções de bugs {#bug-fixes-may}
+### Correções de erros {#bug-fixes-may}
 
 * Miniaturas de ativos não exibidas na guia Ativo das propriedades do produto
 
@@ -181,7 +181,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 * Novo componente principal de navegação da CIF que estende o componente principal de navegação do WCM
 
-### Correções de bugs {#bug-fixes-april}
+### Correções de erros {#bug-fixes-april}
 
 * O campo categoria raiz não era exibido na guia Comércio nas propriedades de página das páginas de categoria
 

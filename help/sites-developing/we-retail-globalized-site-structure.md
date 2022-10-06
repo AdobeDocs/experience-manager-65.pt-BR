@@ -1,30 +1,29 @@
 ---
 title: Tentar a estrutura do site globalizado no We.Retail
-seo-title: Tentar a estrutura do site globalizado no We.Retail
+seo-title: Trying out the Globalized Site Structure in We.Retail
 description: Tentar a estrutura do site globalizado no We.Retail
-seo-description: 'null'
+seo-description: null
 uuid: 5e5a809d-578f-4171-8226-cb65aa995754
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
 
-
-# Tentar a estrutura do site globalizado em We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
+# Tentar a estrutura do site globalizado no We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
 O We.Retail foi criado com uma estrutura de site globalizada que oferece mestres de idioma que podem ser copiados em tempo real para sites específicos do país. Tudo está pronto para uso para permitir que você experimente essa estrutura e os recursos incorporados de tradução.
 
-## Tentando sair {#trying-it-out}
+## Tentando {#trying-it-out}
 
-1. Abra o console Sites de **Navegação global -> Sites**.
+1. Abra o console de sites de **Navegação global -> Sites**.
 1. Alterne para a exibição de coluna (se ainda não estiver ativa) e selecione We.Retail. Observe a estrutura de país de exemplo com a Suíça, os Estados Unidos, a França, etc., ao lado dos Mestrados em Idioma.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
@@ -43,11 +42,11 @@ O We.Retail foi criado com uma estrutura de site globalizada que oferece mestres
 
    ![chlimage_1-90](assets/chlimage_1-90a.png)
 
-1. Com o idioma inglês Principal selecionado, abra o painel **Referências** no console de sites e selecione **Cópias de idioma**.
+1. Com o idioma inglês Principal selecionado, abra o **Referências** no console sites e selecione **Cópias de idioma**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
-1. Marque a caixa de seleção ao lado do rótulo **Cópias de idioma** para selecionar todas as cópias de idioma. Na seção **Update language copies** do painel, selecione a opção **Create a new translation project**. Forneça um nome para o projeto e clique em **Atualizar**.
+1. Marque a caixa de seleção ao lado do **Cópias de idioma** para selecionar todas as cópias de idioma. No **Atualizar cópias de idioma** do painel, selecione a opção para **Criar um novo projeto de tradução**. Forneça um nome para o projeto e clique em **Atualizar**.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -55,21 +54,21 @@ O We.Retail foi criado com uma estrutura de site globalizada que oferece mestres
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-1. Clique em alemão para ver os detalhes do projeto de tradução. Observe que o status está em **Rascunho**. Para iniciar a tradução com o serviço de tradução da Microsoft, clique na divisa ao lado do cabeçalho **Tarefa de Tradução** e selecione **Iniciar**.
+1. Clique em alemão para ver os detalhes do projeto de tradução. Observe que o status está em **Rascunho**. Para iniciar a tradução com o serviço de tradução Microsoft, clique na divisa ao lado do **Tarefa de tradução** e selecione **Iniciar**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. O projeto de tradução é iniciado. Clique nas reticências na parte inferior do cartão denominado Tarefa de tradução para ver os detalhes. As páginas com o estado **Pronto para revisão** já foram traduzidas pelo serviço de tradução.
+1. O projeto de tradução é iniciado. Clique nas reticências na parte inferior do cartão denominado Tarefa de tradução para ver os detalhes. Páginas com o estado **Pronto para revisão** já foram traduzidas pelo serviço de tradução.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
-1. Selecionar uma das páginas na lista e, em seguida, **Visualizar nos sites** na barra de ferramentas abre a página traduzida no editor de páginas.
+1. Selecionar uma das páginas na lista e **Visualizar em sites** na barra de ferramentas, a página traduzida é aberta no editor de páginas.
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
 
 >[!NOTE]
 >
->Este procedimento demonstrou a integração interna com a tradução automática da Microsoft. Usando a [AEM Estrutura de integração de tradução](/help/sites-administering/translation.md), você pode se integrar a muitos serviços de tradução padrão para orquestrar a tradução de AEM.
+>Esse procedimento demonstrou a integração integrada com a tradução automática do Microsoft. Usar o [Estrutura de integração de tradução AEM](/help/sites-administering/translation.md), é possível integrar com muitos serviços de tradução padrão para orquestrar a tradução de AEM.
 
 ## Informações adicionais {#further-information}
 

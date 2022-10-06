@@ -6,7 +6,7 @@ exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: 6f3f88ea0f07c97fa8d7ff3bdd1c89114d12a8a1
 workflow-type: tm+mt
 source-wordcount: '3986'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -435,7 +435,7 @@ Consulte [Exemplo de consulta - todas as cidades com uma variável nomeada](/hel
 
 >[!NOTE]
 >
->Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como um padrão (fallback).
+>Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como padrão (substituta).
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -570,10 +570,10 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 
          >[!NOTE]
          >
-         >Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como um padrão (fallback).
+         >Se a variação especificada não existir para um Fragmento de conteúdo, a variação principal será retornada como padrão (substituta).
 
          * Consulte [Exemplo de consulta - Todas as cidades com uma variação nomeada](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
-   * Operações AND:
+   * E operações:
 
       * `_operator` : aplica operadores específicos; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS` e `STARTS_WITH`
          * Consulte [Exemplo de consulta - Todas as pessoas cujo nome não é “Jobs”](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-not-jobs)

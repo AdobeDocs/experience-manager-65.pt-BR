@@ -1,14 +1,13 @@
 ---
 title: Guia do usuário dos recursos do AEM 6.5
-seo-title: Guia do usuário dos recursos do AEM 6.5
+seo-title: AEM 6.5 Capabilities User Guide
 description: Uma visão geral dos recursos essenciais do AEM 6.5
-seo-description: Uma visão geral dos recursos essenciais do AEM 6.5
+seo-description: An overview of the essential capabilities of AEM 6.5
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 44%
+source-wordcount: '145'
+ht-degree: 52%
 
 ---
 
@@ -16,7 +15,7 @@ ht-degree: 44%
 
 ## AEM Foundation {#aem-foundation}
 
-[Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluindo a implantação do Adobe Managed Services na nuvem.
+[Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluindo a implantação da nuvem do Adobe Managed Services.
 
 [Saiba como gerenciar um projeto do AEM](/help/managing/home.md).
 
@@ -36,7 +35,7 @@ ht-degree: 44%
 
 ## AEM Screens {#aem-screens}
 
-[Saiba mais sobre a solução de sinalização digital para publicar experiências dinâmicas e interativas.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+[Saiba mais sobre a solução de sinalização digital para publicar experiências dinâmicas e interativas.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=pt-BR)
 
 ## Comércio AEM {#aem-commerce}
 

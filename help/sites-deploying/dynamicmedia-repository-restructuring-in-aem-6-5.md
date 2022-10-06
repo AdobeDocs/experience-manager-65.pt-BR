@@ -6,18 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
-feature: Atualização
+feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '413'
 ht-degree: 4%
 
 ---
 
 # Restruturação de repositório do Dynamic Media no Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Conforme descrito na página principal [Reestruturação do Repositório no Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md), os clientes que atualizam para o Experience Manager 6.5 devem usar esta página para avaliar o esforço de trabalho associado às alterações do repositório que afetam o Dynamic Media. Algumas alterações exigem esforço de trabalho durante o processo de atualização do Experience Manager 6.5, enquanto outras podem ser adiadas até uma atualização futura.
+Conforme descrito no pai [Reestruturação do repositório no Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , os clientes que atualizam para o Experience Manager 6.5 devem usar esta página para avaliar o esforço de trabalho associado às alterações do repositório que afetam o Dynamic Media. Algumas alterações exigem esforço de trabalho durante o processo de atualização do Experience Manager 6.5, enquanto outras podem ser adiadas até uma atualização futura.
 
 **Antes da atualização futura**
 
@@ -97,7 +97,7 @@ Conforme descrito na página principal [Reestruturação do Repositório no Adob
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/A<br /> </td>
+   <td>N/D<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -116,11 +116,11 @@ Conforme descrito na página principal [Reestruturação do Repositório no Adob
   </tr>
   <tr>
    <td><strong>Orientação relativa à reestruturação</strong></td>
-   <td><p>1. Cancele a publicação de todos os vídeos do YouTube<br /> 2. Crie a configuração do YouTube usando a nova interface TouchUI (de <code>/conf</code>) incluindo a cópia de todos os Canais do local antigo<br /> 3. Publique todos os vídeos de volta no YouTube.</p> <p>Esse workflow resulta em novos URLs do YouTube. Se você não cancelar a publicação antes de criar uma configuração do TouchUI YouTube, então você tem vários URLs do YouTube listados em Propriedades, pois os Canais recriados são publicados novamente, se tiver a chance. Essa funcionalidade significa que você tem URLs inúteis listados em Propriedades.</p> </td>
+   <td><p>1. Cancele a publicação de todos os vídeos do YouTube<br /> 2. Crie a configuração do YouTube usando a nova interface sensível ao toque (de <code>/conf</code>) incluindo copiar todos os Canais do local antigo<br /> 3. Publique todos os vídeos de volta no YouTube.</p> <p>Esse workflow resulta em novos URLs do YouTube. Se você não cancelar a publicação antes de criar uma configuração do TouchUI YouTube, então você tem vários URLs do YouTube listados em Propriedades, pois os Canais recriados são publicados novamente, se tiver a chance. Essa funcionalidade significa que você tem URLs inúteis listados em Propriedades.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/A<br /> </td>
+   <td>N/D<br /> </td>
   </tr>
  </tbody>
 </table>

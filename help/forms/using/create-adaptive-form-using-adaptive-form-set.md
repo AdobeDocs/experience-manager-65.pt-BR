@@ -1,24 +1,23 @@
 ---
 title: Criar um formulário adaptável usando um conjunto de formulários adaptáveis
-seo-title: Criar um formulário adaptável usando um conjunto de formulários adaptáveis
-description: 'Com o AEM Forms, reúna formulários adaptáveis para criar um único formulário adaptável grande e entender seus recursos. '
-seo-description: 'Com o AEM Forms, reúna formulários adaptáveis para criar um único formulário adaptável grande e entender seus recursos. '
+seo-title: Create an adaptive form using a set of adaptive forms
+description: Com o AEM Forms, reúna formulários adaptáveis para criar um único formulário adaptável grande e entender seus recursos.
+seo-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features.
 uuid: e52e4f90-8821-49ec-89ff-fbf07db69bd2
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 264aa8c0-ba64-4768-b3d1-1b9baa6b4d72
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
 
-
-# Crie um formulário adaptável usando um conjunto de formulários adaptáveis{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
+# Criar um formulário adaptável usando um conjunto de formulários adaptáveis{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
 ## Visão geral {#overview}
 
@@ -36,9 +35,9 @@ Recursos como criação independente e carregamento lento proporcionam aprimoram
 >
 >Não é possível usar formulários/fragmentos adaptáveis baseados em XFA como formulários filhos ou pais.
 
-## Nos bastidores {#behind-the-scenes}
+## Por trás das cenas {#behind-the-scenes}
 
-É possível adicionar fragmentos e formulários adaptáveis baseados em XSD no formulário pai. A estrutura do formulário pai é igual a [qualquer formulário adaptável](../../forms/using/prepopulate-adaptive-form-fields.md). Ao adicionar um formulário adaptável como um formulário filho, ele é adicionado como um painel no formulário pai. Os dados de um formulário filho vinculado são armazenados na raiz `data`da seção `afBoundData` do esquema XML do formulário pai.
+É possível adicionar fragmentos e formulários adaptáveis baseados em XSD no formulário pai. A estrutura do formulário pai é igual a [qualquer formulário adaptável](../../forms/using/prepopulate-adaptive-form-fields.md). Ao adicionar um formulário adaptável como um formulário filho, ele é adicionado como um painel no formulário pai. Os dados de um formulário filho vinculado são armazenados no campo `data`raiz do `afBoundData` seção do esquema XML do formulário pai.
 
 Por exemplo, seus clientes preenchem um formulário de aplicativo. Os dois primeiros campos do formulário são nome e identidade. Seu XML é:
 
@@ -56,7 +55,7 @@ Por exemplo, seus clientes preenchem um formulário de aplicativo. Os dois prime
 </afData>
 ```
 
-Você adiciona outro formulário no aplicativo que permite que seus clientes preencham o endereço do escritório. A raiz do esquema do formulário filho é `officeAddress`. Aplique `bindref` `/application/officeAddress` ou `/officeAddress`. Se `bindref`não for fornecido, o formulário filho será adicionado como a subárvore `officeAddress`. Consulte o XML do formulário abaixo:
+Você adiciona outro formulário no aplicativo que permite que seus clientes preencham o endereço do escritório. A raiz do esquema do formulário filho é `officeAddress`. Aplicar `bindref` `/application/officeAddress` ou `/officeAddress`. If `bindref`não for fornecido, o formulário filho será adicionado como `officeAddress` subárvore. Consulte o XML do formulário abaixo:
 
 ```xml
 <afData>
@@ -76,7 +75,7 @@ Você adiciona outro formulário no aplicativo que permite que seus clientes pre
 </afData>
 ```
 
-Se você inserir outro formulário que permite aos clientes fornecer endereço residencial, aplique `bindref` `/application/houseAddress or /houseAddress.`O XML tem a seguinte aparência:
+Se você inserir outro formulário que permita aos clientes fornecer endereço residencial, aplique `bindref` `/application/houseAddress or /houseAddress.`O XML tem a seguinte aparência:
 
 ```xml
 <afData>
@@ -100,7 +99,7 @@ Se você inserir outro formulário que permite aos clientes fornecer endereço r
 </afData>
 ```
 
-Se quiser manter o mesmo nome de subraiz que a raiz do esquema ( `Address`neste exemplo), use bindrefs indexados.
+Se desejar manter o mesmo nome de subraiz que a raiz do esquema ( `Address`neste exemplo), use bindrefs indexados.
 
 Por exemplo, aplique bindrefs `/application/address[1]` ou `/address[1]` e `/application/address[2]` ou `/address[2]`. O XML do formulário é:
 
@@ -126,11 +125,11 @@ Por exemplo, aplique bindrefs `/application/address[1]` ou `/address[1]` e `/app
 </afData>
 ```
 
-É possível alterar a subárvore padrão do formulário/fragmento adaptável usando a propriedade `bindRef`. A propriedade `bindRef` permite especificar o caminho que aponta para um local na estrutura de árvore do esquema XML.
+É possível alterar a subárvore padrão do formulário/fragmento adaptável usando o `bindRef` propriedade. O `bindRef` permite especificar o caminho que aponta para um local na estrutura de árvore do esquema XML.
 
-Se o formulário filho estiver desvinculado, seus dados serão armazenados na raiz `data`da seção `afUnboundData` do esquema XML do formulário pai.
+Se o formulário filho não estiver vinculado, seus dados serão armazenados no campo `data`raiz do `afUnboundData` seção do esquema XML do formulário pai.
 
-É possível adicionar um formulário adaptável como um formulário secundário várias vezes. Certifique-se de que `bindRef` seja modificado corretamente para que cada instância usada do formulário adaptável aponte para uma subraiz diferente sob a raiz de dados.
+É possível adicionar um formulário adaptável como um formulário secundário várias vezes. Certifique-se de que `bindRef` é modificado corretamente para que cada instância usada do formulário adaptável aponte para uma subraiz diferente na raiz dos dados.
 
 >[!NOTE]
 >
@@ -141,9 +140,8 @@ Se o formulário filho estiver desvinculado, seus dados serão armazenados na ra
 Execute as etapas a seguir para adicionar um formulário adaptável como um formulário filho usando o navegador de ativos.
 
 1. Abra o formulário pai no modo de edição.
-1. Na barra lateral, clique em **Assets** ![assets-browser](assets/assets-browser.png). Em Ativos, selecione **Formulário adaptável** no menu suspenso.
+1. Na barra lateral, clique em **Ativos** ![navegador de ativos](assets/assets-browser.png). Em Ativos, selecione **Formulário adaptável** no menu suspenso .
    [ ![Seleção de formulário adaptável em Ativos](assets/asset.png)](assets/asset-1.png)
 
 1. Arraste e solte o formulário adaptável que deseja adicionar como um formulário filho.
-   [ ![Arraste e solte o formulário adaptável em seu ](assets/drag-drop.png)](assets/drag-drop-1.png)site. O formulário adaptável solto é adicionado como um formulário filho.
-
+   [ ![Arraste e solte o formulário adaptável em seu site](assets/drag-drop.png)](assets/drag-drop-1.png)O formulário adaptável solto é adicionado como um formulário filho.

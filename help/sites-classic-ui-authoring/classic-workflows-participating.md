@@ -1,22 +1,21 @@
 ---
 title: Participar de fluxos de trabalho
-seo-title: Participar de fluxos de trabalho
+seo-title: Participating in Workflows
 description: Fluxos de trabalho geralmente incluem etapas que exigem que uma pessoa realize uma atividade em uma página ou ativo. O fluxo de trabalho seleciona um usuário ou grupo para realizar a atividade e atribui um item de trabalho a essa pessoa ou grupo.
-seo-description: Fluxos de trabalho geralmente incluem etapas que exigem que uma pessoa realize uma atividade em uma página ou ativo. O fluxo de trabalho seleciona um usuário ou grupo para realizar a atividade e atribui um item de trabalho a essa pessoa ou grupo.
+seo-description: Workflows typically include steps that require a person to perform an activity on a page or asset. The workflow selects a user or group to perform the activity and assigns a work item to that person or group.
 uuid: 04dcc8f2-dc11-430f-b0ae-47ef2cb069a2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '543'
 ht-degree: 98%
 
 ---
-
 
 # Participar de fluxos de trabalho{#participating-in-workflows}
 
@@ -52,11 +51,11 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
 
 * A coluna **Status** do console Sites indica quando uma página está em um fluxo de trabalho:
 
-   ![workflow status-1](assets/workflowstatus-1.png)
+   ![workflowstatus-1](assets/workflowstatus-1.png)
 
 * Quando você, ou um grupo ao qual você pertence, recebe um item de trabalho como parte de um fluxo de trabalho, esse item é exibido na Caixa de entrada do fluxo de trabalho do AEM.
 
-   ![caixa de trabalho](assets/workflowinbox.png)
+   ![caixa de fluxo de trabalho](assets/workflowinbox.png)
 
 ### Conclusão de uma etapa do participante {#completing-a-participant-step}
 
@@ -65,24 +64,24 @@ Depois de realizar a ação indicada, você pode concluir o item de trabalho, pe
 1. Selecione a etapa do fluxo de trabalho e clique no botão **Concluído** na barra de navegação superior.
 1. Na caixa de diálogo resultante, selecione a **Próxima etapa**, isto é, a etapa que deve ser executada em seguida. Uma lista suspensa mostra todos os destinos apropriados. Um **Comentário** também pode ser inserido.
 
-   ![fluxo de trabalho](assets/workflowcomplete.png)
+   ![workflow](assets/workflowcomplete.png)
 
    O número de etapas listadas depende do design do modelo de fluxo de trabalho.
 
 1. Clique em **OK** para confirmar a ação.
 
-### Delegação de uma etapa do participante  {#delegating-a-participant-step}
+### Delegação de uma etapa do participante {#delegating-a-participant-step}
 
 Use o procedimento a seguir para delegar um item de trabalho.
 
 1. Clique no botão **Delegar** na barra de navegação superior.
 1. Na caixa de diálogo, use a lista suspensa para selecionar o **Usuário** a quem você vai delegar o item de trabalho. Você também pode adicionar um **Comentário**.
 
-   ![workfluxdelegate](assets/workflowdelegate.png)
+   ![workflowdelegate](assets/workflowdelegate.png)
 
 1. Clique em **OK** para confirmar a ação.
 
-### Retroceder em uma etapa do participante  {#performing-step-back-on-a-participant-step}
+### Retroceder em uma etapa do participante {#performing-step-back-on-a-participant-step}
 
 Use o procedimento a seguir para retroceder.
 
@@ -92,4 +91,3 @@ Use o procedimento a seguir para retroceder.
    ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
 
 1. Clique em OK para confirmar a ação.
-

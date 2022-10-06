@@ -1,5 +1,5 @@
 ---
-title: Introdução SPA e Apresentação
+title: Introdução e passo a passo do SPA
 seo-title: SPA Introduction and Walkthrough
 description: Este artigo apresenta os conceitos de um SPA e aborda o uso de um aplicativo SPA básico para criação, mostrando como ele está relacionado ao Editor de SPA subjacente do AEM.
 seo-description: This article introduces the concepts of a SPA and walks through using a basic SPA application for authoring, showing how it relates to the underlying AEM SPA Editor.
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ---
 
-# Introdução SPA e Apresentação{#spa-introduction-and-walkthrough}
+# Introdução e passo a passo do SPA{#spa-introduction-and-walkthrough}
 
 Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas SPA e os autores desejam editar o conteúdo com facilidade no AEM para um site criado usando essas estruturas.
 
@@ -104,7 +104,6 @@ Quando uma SPA é criada para aproveitar o Editor de SPA de AEM, o autor de cont
 >
 >* [AEM versão 6.4 com service pack 2](/help/release-notes/release-notes.md)
 >* [Instale o aplicativo We.Retail Journal de amostra disponível no GitHub aqui.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
-
 >
 
 

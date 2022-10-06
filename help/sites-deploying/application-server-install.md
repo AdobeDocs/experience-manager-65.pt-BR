@@ -1,31 +1,29 @@
 ---
 title: Instalação do servidor de aplicativos
-seo-title: Instalação do servidor de aplicativos
+seo-title: Application Server Install
 description: Saiba como instalar o AEM com um servidor de aplicativos.
-seo-description: Saiba como instalar o AEM com um servidor de aplicativos.
+seo-description: Learn how to install AEM with an application server.
 uuid: c9571f80-6ed1-46fe-b7c3-946658dfc3f4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
-translation-type: tm+mt
-source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
+exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 1%
+source-wordcount: '1163'
+ht-degree: 0%
 
 ---
-
 
 # Instalação do servidor de aplicativos{#application-server-install}
 
 >[!NOTE]
 >
->`JAR` e  `WAR` são os tipos de arquivo AEM é lançado em. Estes formatos estão a ser objeto de garantia de qualidade para acomodar os níveis de suporte a que o Adobe se comprometeu.
+>`JAR` e `WAR` são os tipos de arquivo AEM é lançado em. Estes formatos estão a ser objeto de garantia de qualidade para acomodar os níveis de suporte a que o Adobe se comprometeu.
 
-
-Esta seção informa como instalar o Adobe Experience Manager (AEM) com um servidor de aplicativos. Consulte a seção [Plataformas compatíveis](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) para ver os níveis de suporte específicos fornecidos para os servidores de aplicativos individuais.
+Esta seção informa como instalar o Adobe Experience Manager (AEM) com um servidor de aplicativos. Consulte o [Plataformas compatíveis](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) para ver os níveis de suporte específicos fornecidos para os servidores de aplicativos individuais.
 
 As etapas de instalação dos seguintes Servidores de Aplicativos estão descritas:
 
@@ -38,9 +36,9 @@ Consulte a documentação apropriada do servidor de aplicativos para obter mais 
 
 >[!NOTE]
 >
->Se você estiver usando o Dynamic Media em uma implantação WAR, consulte a [documentação do Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>Se você estiver usando o Dynamic Media em uma implantação WAR, consulte o [Documentação do Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
-## Descrição Geral {#general-description}
+## Descrição geral {#general-description}
 
 ### Comportamento padrão ao instalar AEM em um Servidor de Aplicativos {#default-behaviour-when-installing-aem-in-an-application-server}
 
@@ -49,7 +47,7 @@ AEM vem como um único arquivo war para implantar.
 Se implantado, o seguinte ocorrerá por padrão:
 
 * o modo de execução é `author`
-* a instância (Repositório, ambiente Felix OSGI, pacotes etc.) está instalado em `${user.dir}/crx-quickstart`onde `${user.dir}` é o diretório de trabalho atual, esse caminho para crx-quickstart é chamado `sling.home`
+* a instância (Repositório, ambiente Felix OSGI, pacotes etc.) está instalado no `${user.dir}/crx-quickstart`em que `${user.dir}` é o diretório de trabalho atual, esse caminho para crx-quickstart é chamado `sling.home`
 
 * a raiz de contexto é o nome do arquivo war, por exemplo : `aem-6`
 
@@ -57,27 +55,27 @@ Se implantado, o seguinte ocorrerá por padrão:
 
 Você pode alterar o comportamento padrão da seguinte maneira:
 
-* modo de execução : configure o parâmetro `sling.run.modes` no arquivo `WEB-INF/web.xml` do arquivo war AEM antes da implantação
+* modo de execução : configure o `sling.run.modes` no `WEB-INF/web.xml` arquivo do arquivo war AEM antes da implantação
 
-* sling.home: configure o parâmetro `sling.home` no arquivo `WEB-INF/web.xml`do arquivo war AEM antes da implantação
+* sling.home: configure o `sling.home` no `WEB-INF/web.xml`arquivo do arquivo war AEM antes da implantação
 
 * raiz de contexto: renomeie o arquivo AEM war
 
 #### Publicar instalação {#publish-installation}
 
-Para implantar uma instância de publicação, é necessário definir o modo de execução para publicar:
+Para obter uma instância de publicação implantada, é necessário definir o modo de execução para publicar:
 
 * Descompacte o WEB-INF/web.xml do arquivo AEM war
 * Alterar o parâmetro sling.run.modes para publicação
 * Recompacte o arquivo web.xml em AEM arquivo war
 * Implantar AEM arquivo war
 
-#### Verificação de instalação {#installation-check}
+#### Verificação da instalação {#installation-check}
 
 Para verificar se tudo está instalado, é possível:
 
-* siga o `error.log`arquivo para ver que todo o conteúdo está instalado
-* verifique `/system/console` se todos os pacotes estão instalados
+* tail `error.log`para ver que todo o conteúdo está instalado
+* examinar `/system/console` que todos os pacotes estão instalados
 
 #### Duas instâncias no mesmo servidor de aplicativos {#two-instances-on-the-same-application-server}
 
@@ -99,7 +97,7 @@ Para fins de demonstração, pode ser apropriado instalar a instância de criaç
 
 ### WebSphere 8.5 {#websphere}
 
-Antes de uma implantação, leia a [Descrição Geral](#general-description) acima.
+Antes de ler a implantação [Descrição geral](#general-description) acima.
 
 **Preparação do servidor**
 
@@ -128,7 +126,7 @@ Antes de uma implantação, leia a [Descrição Geral](#general-description) aci
 
 #### JBoss EAP 6.3.0/6.4.0 {#jboss-eap}
 
-Antes de uma implantação, leia a [Descrição Geral](#general-description) acima.
+Antes de ler a implantação [Descrição geral](#general-description) acima.
 
 **Preparar o servidor JBoss**
 
@@ -136,7 +134,7 @@ Defina argumentos de memória no seu arquivo conf (por exemplo, `standalone.conf
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-se você usar o mecanismo de implantação para instalar o aplicativo web AEM, talvez seja bom aumentar o `deployment-timeout,` para esse conjunto de um atributo `deployment-timeout` no arquivo xml da sua instância (por exemplo, `configuration/standalone.xml)`:
+se você usar o scanner de implantação para instalar o aplicativo web AEM, talvez seja bom aumentar a variável `deployment-timeout,` para esse conjunto de `deployment-timeout` no arquivo xml da sua instância (por exemplo, `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -152,22 +150,22 @@ se você usar o mecanismo de implantação para instalar o aplicativo web AEM, t
 
 #### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
 
-Antes de uma implantação, leia a [Descrição Geral](#general-description) acima.
+Antes de ler a implantação [Descrição geral](#general-description) acima.
 
 Ele usa um layout de servidor simples com apenas um servidor de administração.
 
 **Preparação do WebLogic Server**
 
-* Em `${myDomain}/config/config.xml`adicione à seção de configuração de segurança:
+* Em `${myDomain}/config/config.xml`adicione à seção configuração de segurança:
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` consulte em  [https://xmlns.oracle.com/weblogic/domain/1.0/domain.](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) xsdpara obter a posição correta (por padrão, para posicioná-la no final da seção está ok)
+   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` ver em [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) para a posição correta (por padrão, posicioná-la no final da seção está ok)
 
 * Aumente as configurações de memória da VM:
 
-   * abra `${myDomain}/bin/setDomainEnv.cmd` (resp.sh)pesquise WLS_MEM_ARGS, defina, por exemplo, definir `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+   * open `${myDomain}/bin/setDomainEnv.cmd` (resp.sh)pesquisar WLS_MEM_ARGS, definir, por exemplo, definir `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
    * reiniciar o WebLogic Server
 
-* Crie em `${myDomain}` uma pasta de pacotes e dentro de uma pasta cq e nela uma pasta Plan
+* Criar em `${myDomain}` uma pasta de pacotes e dentro de uma pasta cq e nela uma pasta Plan
 
 **Implantar AEM aplicação web**
 
@@ -175,7 +173,7 @@ Ele usa um layout de servidor simples com apenas um servidor de administração.
 * Coloque o arquivo war AEM na pasta ${myDomain}/packages/cq
 * Faça suas configurações em `WEB-INF/web.xml` se necessário (veja acima na Descrição geral)
 
-   * Descompacte o arquivo `WEB-INF/web.xml`
+   * Descompactar `WEB-INF/web.xml`arquivo
    * alterar o parâmetro sling.run.modes para publicar
    * exclua o parâmetro inicial sling.home e defina esse caminho conforme necessário (consulte Descrição geral)
    * Recompacte o arquivo web.xml
@@ -187,7 +185,7 @@ Ele usa um layout de servidor simples com apenas um servidor de administração.
 
 #### Tomcat 8/8.5 {#tomcat}
 
-Antes de uma implantação, leia a [Descrição Geral](#general-description) acima.
+Antes de ler a implantação [Descrição geral](#general-description) acima.
 
 * **Preparar o servidor Tomcat**
 
@@ -195,9 +193,9 @@ Antes de uma implantação, leia a [Descrição Geral](#general-description) aci
 
       * Em `bin/catalina.bat` (resp `catalina.sh` no unix) adicione a seguinte configuração:
       * `set "JAVA_OPTS= -Xmx2048m`
-   * O Tomcat não ativa o acesso do administrador nem do gerente na instalação. Portanto, é necessário editar manualmente `tomcat-users.xml` para permitir o acesso a essas contas:
+   * O Tomcat não ativa o acesso do administrador nem do gerente na instalação. Portanto, é necessário editar manualmente `tomcat-users.xml` para permitir o acesso a estas contas:
 
-      * Edite `tomcat-users.xml` para incluir o acesso de administrador e gerente. A configuração deve ser semelhante ao seguinte exemplo:
+      * Editar `tomcat-users.xml` para incluir o acesso do administrador e do gerente. A configuração deve ser semelhante ao seguinte exemplo:
 
          ```xml
          <?xml version='1.0' encoding='utf-8'?>
@@ -222,7 +220,7 @@ Antes de uma implantação, leia a [Descrição Geral](#general-description) aci
 
       `webapps/manager/WEB-INF/web.xml`
 
-      e aumente o tamanho máximo do arquivo e o tamanho máximo da solicitação para pelo menos 500 MB, consulte o seguinte exemplo `multipart-config` de um arquivo `web.xml` desse tipo.
+      e aumente o tamanho máximo do arquivo e o tamanho máximo da solicitação para pelo menos 500 MB, consulte o seguinte `multipart-config` exemplo de uma `web.xml` arquivo.
 
       ```xml
       <multipart-config>
@@ -254,4 +252,4 @@ Antes de uma implantação, leia a [Descrição Geral](#general-description) aci
 
 Para obter informações sobre como lidar com problemas que podem surgir durante a instalação, consulte:
 
-* [Resolução de Problemas](/help/sites-deploying/troubleshooting.md)
+* [Resolução de problemas](/help/sites-deploying/troubleshooting.md)

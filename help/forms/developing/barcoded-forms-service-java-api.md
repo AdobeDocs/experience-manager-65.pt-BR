@@ -1,6 +1,6 @@
 ---
 title: Início rápido (SOAP) do Java do serviço Forms com código de barras
-seo-title: Início rápido (SOAP) do Java do serviço Forms com código de barras
+seo-title: Barcoded Forms Service Java APIQuick Start(SOAP)
 description: Início rápido (SOAP) do Java do serviço Forms com código de barras
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
 contentOwner: admin
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
 
-
-# Início rápido da API Java (SOAP) do serviço Forms com código de barras {#barcoded-forms-service-java-apiquick-start-soap}
+# Início rápido da API Java do serviço de Forms com código de barras (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
 
 O Java API Quick Start (SOAP) está disponível para o serviço Forms com códigos de barras:
 
@@ -28,11 +27,11 @@ As operações do AEM Forms podem ser executadas usando a API altamente digitada
 
 >[!NOTE]
 >
->Os Inícios Rápidos localizados em Programação com o AEM Forms são baseados no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Os Inícios rápidos localizados em Programação com o AEM Forms são baseados no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se estiver usando outro sistema operacional, como UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Início rápido (modo SOAP): Decodificação de dados de formulário com código de barras usando a API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-O código Java a seguir decodifica dados de formulário localizados em um formulário PDF salvo como Loan.pdf. Os dados decodificados são salvos como um arquivo XML chamado extratedData.xml. Este exemplo de código converte um objeto `org.w3c.dom.Document` em um objeto `com.adobe.idp.Document`. (Consulte [Decodificando dados de formulário com código de barras](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
+O código Java a seguir decodifica dados de formulário localizados em um formulário PDF salvo como Loan.pdf. Os dados decodificados são salvos como um arquivo XML chamado extratedData.xml. Este exemplo de código converte um `org.w3c.dom.Document` em um `com.adobe.idp.Document` objeto. (Consulte [Decodificação de dados de formulário com código de barras](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 
 ```java
  /*
@@ -221,5 +220,4 @@ O código Java a seguir decodifica dados de formulário localizados em um formul
 
 >[!NOTE]
 >
->Ao usar um objeto `org.w3c.dom.Document` e um objeto `com.adobe.idp.Document` na mesma lógica de aplicativo, é uma boa prática qualificar totalmente ambos os objetos.
-
+>Ao usar a `org.w3c.dom.Document` e um `com.adobe.idp.Document` na mesma lógica de aplicativo, é uma boa prática qualificar totalmente ambos os objetos.

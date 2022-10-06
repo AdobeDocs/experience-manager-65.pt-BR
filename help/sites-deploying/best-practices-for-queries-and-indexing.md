@@ -13,7 +13,7 @@ exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '4679'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -25,27 +25,27 @@ Este artigo destacará quando criar índices e quando eles não forem necessári
 
 Além disso, leia a [Documentação do Oak sobre gravação de queries e índices](/help/sites-deploying/queries-and-indexing.md). Além de os índices serem um novo conceito no AEM 6, há diferenças sintáticas em consultas do Oak que precisam ser consideradas ao migrar código de uma instalação AEM anterior.
 
-## Quando utilizar queries {#when-to-use-queries}
+## Quando utilizar consultas {#when-to-use-queries}
 
 ### Design de repositório e taxonomia {#repository-and-taxonomy-design}
 
 Ao projetar a taxonomia de um repositório, vários fatores precisam ser considerados. Isso inclui controles de acesso, localização, herança de componentes e propriedades da página, entre outros.
 
-Ao projetar uma taxonomia que atenda a essas preocupações, também é importante considerar a &quot;versabilidade&quot; do design de indexação. Nesse contexto, a navegabilidade é a capacidade de uma taxonomia que permite que o conteúdo seja acessado previsivelmente com base em seu caminho. Isso tornará um sistema mais eficiente, mais fácil de manter do que um, que exigirá a execução de muitas consultas.
+Ao projetar uma taxonomia que atenda a essas questões, também é importante considerar a flexibilidade do design de indexação. Nesse contexto, a navegabilidade é a capacidade de uma taxonomia que permite que o conteúdo seja acessado previsivelmente com base em seu caminho. Isso tornará um sistema mais eficiente, mais fácil de manter do que um, que exigirá a execução de muitas consultas.
 
-Além disso, ao projetar uma taxonomia, é importante considerar se a ordem é importante. Nos casos em que a ordenação explícita não é necessária e um grande número de nós irmãos é esperado, é preferível usar um tipo de nó não ordenado, como `sling:Folder` ou `oak:Unstructured`. Nos casos em que a encomenda é obrigatória, `nt:unstructured` e `sling:OrderedFolder` seria mais adequado.
+Além disso, ao projetar uma taxonomia, é importante considerar se a ordenação é importante. Nos casos em que a ordenação explícita não é obrigatória e um grande número de nós semelhantes é esperado, é preferível usar um tipo de nó não ordenado, como `sling:Folder` ou `oak:Unstructured`. Nos casos em que a ordenação é obrigatória, `nt:unstructured` e `sling:OrderedFolder` seriam mais adequados.
 
-### Consultas nos componentes {#queries-in-components}
+### Consultas em componentes {#queries-in-components}
 
-Como as consultas podem ser uma das operações de taxação mais realizadas em um sistema de AEM, é recomendável evitá-las em seus componentes. Ter várias consultas executadas sempre que uma página é renderizada pode, com frequência, degradar o desempenho do sistema. Há duas estratégias que podem ser usadas para evitar a execução de consultas ao renderizar componentes: **nós de percurso** e **resultados da busca prévia**.
+Como as consultas podem ser uma das operações mais exigentes realizadas em um sistema AEM, é recomendável evitá-las em seus componentes. A execução de várias consultas cada vez que uma página é renderizada pode prejudicar o desempenho do sistema. Há duas estratégias que podem ser usadas para evitar a execução de consultas ao renderizar componentes: **nós de passagem** e **resultados de busca prévia**.
 
 #### Nós de passagem {#traversing-nodes}
 
-Se o repositório for projetado de forma que permita o conhecimento prévio da localização dos dados necessários, o código que recupera esses dados dos caminhos necessários poderá ser implantado sem a necessidade de executar consultas para encontrá-los.
+Se o repositório for projetado de forma que permita o conhecimento prévio da localização dos dados necessários, o código que recupera esses dados nos caminhos necessários poderá ser implantado sem a necessidade de executar consultas para encontrá-los.
 
-Um exemplo disso seria renderizar o conteúdo que se encaixe em uma determinada categoria. Uma abordagem seria organizar o conteúdo com uma propriedade de categoria que possa ser consultada para preencher um componente que mostre itens em uma categoria.
+Um exemplo disso seria a renderização de um conteúdo que se encaixe em uma determinada categoria. Uma abordagem seria organizar o conteúdo com uma propriedade de categoria que possa ser consultada para preencher um componente que mostre itens em uma categoria.
 
-Uma melhor abordagem seria estruturar esse conteúdo em uma taxonomia por categoria para que possa ser recuperado manualmente.
+No entanto, uma melhor abordagem seria estruturar esse conteúdo em uma taxonomia por categoria para que ele possa ser recuperado manualmente.
 
 Por exemplo, se o conteúdo for armazenado em uma taxonomia semelhante a:
 
@@ -53,17 +53,17 @@ Por exemplo, se o conteúdo for armazenado em uma taxonomia semelhante a:
 /content/myUnstructuredContent/parentCategory/childCategory/contentPiece
 ```
 
-o `/content/myUnstructuredContent/parentCategory/childCategory` simplesmente pode ser recuperado, seus filhos podem ser analisados e usados para renderizar o componente.
+o nó `/content/myUnstructuredContent/parentCategory/childCategory` pode simplesmente ser recuperado e seus secundários podem ser analisados e usados para renderizar o componente.
 
-Além disso, ao lidar com um conjunto de resultados pequeno ou homogêneo, pode ser mais rápido atravessar o repositório e coletar os nós necessários, em vez de criar um query para retornar o mesmo conjunto de resultados. De um modo geral, devem ser evitadas questões sempre que possível.
+Além disso, ao lidar com um conjunto de resultados pequeno ou homogêneo, pode ser mais rápido percorrer o repositório e coletar os nós necessários, em vez de criar uma consulta para retornar o mesmo conjunto de resultados. Como consideração geral, as consultas devem ser evitadas sempre que possível.
 
-#### Resultados da pré-busca {#prefetching-results}
+#### Resultados de busca prévia {#prefetching-results}
 
 Às vezes, o conteúdo ou os requisitos em torno do componente não permitirão o uso da travessia do nó como um método de recuperação dos dados necessários. Nesses casos, as consultas necessárias precisam ser executadas antes que o componente seja renderizado para garantir o desempenho ideal para o usuário final.
 
 Se os resultados necessários para o componente puderem ser calculados no momento da criação e não houver expectativa de que o conteúdo será alterado, a consulta poderá ser executada quando o autor aplicar as configurações na caixa de diálogo.
 
-Se os dados ou o conteúdo forem alterados regularmente, a consulta poderá ser executada de acordo com uma programação ou por meio de um ouvinte para obter atualizações sobre os dados subjacentes. Em seguida, os resultados podem ser gravados em um local compartilhado no repositório. Qualquer componente que precise desses dados pode extrair os valores desse único nó sem precisar executar um query no tempo de execução.
+Se os dados ou o conteúdo forem alterados regularmente, a consulta poderá ser executada de acordo com uma programação ou por meio de um ouvinte para obter atualizações sobre os dados subjacentes. Em seguida, os resultados podem ser gravados em um local compartilhado no repositório. Qualquer componente que precise desses dados pode extrair os valores desse único nó, sem precisar executar uma consulta em tempo de execução.
 
 ## Otimização de consulta {#query-optimization}
 
@@ -215,7 +215,7 @@ Ao remover um índice em uma instância MongoDB, o custo da exclusão é proporc
 
 ### O Gabarito de Consulta JCR {#jcrquerycheatsheet}
 
-Para dar suporte à criação de consultas JCR eficientes e definições de índice, o [Folha de Consulta JCR](assets/JCR_query_cheatsheet-v1.1.pdf) está disponível para download e uso como referência durante o desenvolvimento. Ele contém consultas de amostra para o QueryBuilder, XPath e SQL-2, abrangendo vários cenários que se comportam de forma diferente em termos de desempenho de consulta. Também fornece recomendações sobre como criar ou personalizar índices do Oak. O conteúdo desta Folha de Cálculo se aplica ao AEM 6.5 e AEM as a Cloud Service.
+Para auxiliar na criação de consultas JCR e definições de índice eficientes, a [Folha de características de consulta JCR](assets/JCR_query_cheatsheet-v1.1.pdf) está disponível para download e uso como referência durante o desenvolvimento. Ele contém consultas de amostra para o QueryBuilder, XPath e SQL-2, abrangendo vários cenários que se comportam de forma diferente em termos de desempenho de consulta. Ela também fornece recomendações sobre como criar ou personalizar índices do Oak. O conteúdo desta Folha de Cálculo se aplica ao AEM 6.5 e AEM as a Cloud Service.
 
 ## Reindexação {#re-indexing}
 

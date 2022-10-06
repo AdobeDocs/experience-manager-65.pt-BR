@@ -1,8 +1,8 @@
 ---
-title: Promoção de lançamentos
-seo-title: Promoção de lançamentos
+title: Promoção de inicializações
+seo-title: Promoting Launches
 description: Você precisa promover as páginas de lançamento para retornar o conteúdo à fonte (produção) antes de publicar. Quando uma página de lançamento é promovida, a página correspondente das páginas de origem é substituída pelo conteúdo da página promovida.
-seo-description: Você precisa promover as páginas de lançamento para retornar o conteúdo à fonte (produção) antes de publicar. Quando uma página de lançamento é promovida, a página correspondente das páginas de origem é substituída pelo conteúdo da página promovida.
+seo-description: You need to promote launch pages to move the content back into the source (production) before publishing. When a launch page is promoted, the corresponding page of the source pages is replaced with the content of the promoted page.
 uuid: 91f1c6ac-8c4e-4459-aaab-feaa32befc45
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,15 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 3013adc3-bec6-4ecc-aefd-f8df2b86dfef
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 91%
+source-wordcount: '314'
+ht-degree: 90%
 
 ---
 
-
-# Promoção de lançamentos{#promoting-launches}
+# Promoção de inicializações{#promoting-launches}
 
 Você precisa promover as páginas de lançamento para retornar o conteúdo à fonte (produção) antes de publicar. Quando uma página de lançamento é promovida, a página correspondente das páginas de origem é substituída pelo conteúdo da página promovida. As seguintes opções estão disponíveis ao promover uma página de lançamento:
 
@@ -34,7 +33,7 @@ Para promover páginas, realize as etapas a seguir ao editar a página de lança
 1. Na guia **Página** no Sidekick, clique em **Promover lançamento**.
 1. Especifique as páginas que serão promovidas:
 
-   * (Padrão) Para promover somente a página atual, selecione **Promover alterações na página para a versão de produção**.
+   * (Padrão) Para promover somente a página atual, selecione **Promover Alterações Na Página Para Versão De Produção**.
    * Para também promover as páginas secundárias da página atual, selecione **Incluir subpáginas**.
    * Para promover todas as páginas do lançamento, selecione **Promover o lançamento completo para a versão de produção**.
 
@@ -54,4 +53,3 @@ Para iniciar um fluxo de trabalho automaticamente quando as páginas forem promo
 Por exemplo, você pode gerar automaticamente solicitações de ativação de página quando os autores promovem páginas de Lançamentos. Configure um ativador de fluxo de trabalho para iniciar o fluxo de trabalho Solicitar ativação quando o nó do pacote for modificado.
 
 ![chlimage_1-136](assets/chlimage_1-136.png)
-

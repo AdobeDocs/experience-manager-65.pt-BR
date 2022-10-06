@@ -1,7 +1,7 @@
 ---
 title: Criar carta
 seo-title: Create Letter
-description: 'Este tópico fornece as etapas para criar uma carta, adicionar módulos de dados e anexos a ela e visualizá-la no Gerenciamento de correspondência. '
+description: Este tópico fornece as etapas para criar uma carta, adicionar módulos de dados e anexos a ela e visualizá-la no Gerenciamento de correspondência.
 seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
 uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS

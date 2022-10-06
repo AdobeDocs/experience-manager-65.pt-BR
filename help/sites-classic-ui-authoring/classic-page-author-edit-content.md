@@ -1,8 +1,8 @@
 ---
 title: Editar conteúdo da página
-seo-title: Editar conteúdo da página
+seo-title: Editing Page Content
 description: O conteúdo é adicionado usando os componentes que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos. 
-seo-description: O conteúdo é adicionado usando os componentes que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos. 
+seo-description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
 uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
+exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 98%
+source-wordcount: '1755'
+ht-degree: 97%
 
 ---
-
 
 # Editar conteúdo da página{#editing-page-content}
 
@@ -61,7 +60,7 @@ Fornecem acesso a uma ampla seleção de funcionalidade; incluindo:
 
 * [edição das propriedades da página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
-* [scaffolding](/help/sites-authoring/scaffolding.md)
+* [andaime](/help/sites-authoring/scaffolding.md)
 
 * [contexto de cliente](/help/sites-administering/client-context.md)
 
@@ -88,7 +87,7 @@ Para inserir um novo componente:
 
 1. Insira o componente que deseja na página. Em seguida, clique duas vezes no parágrafo, uma janela é aberta e permite que você configure o parágrafo e adicione conteúdo.
 
-### Inserir um componente usando o localizador de conteúdo  {#inserting-a-component-using-the-content-finder}
+### Inserir um componente usando o localizador de conteúdo {#inserting-a-component-using-the-content-finder}
 
 Você também pode adicionar um novo componente à página, arrastando um ativo do [Localizador de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Isto criará automaticamente um novo componente do tipo apropriado que contém o ativo.
 
@@ -115,7 +114,7 @@ Para criar um componente arrastando um dos tipos de ativos acima:
 
 1. [Edite](#editmovecopypastedelete) o componente, se necessário.
 
-## Edição de um componente (conteúdo e propriedades)  {#editing-a-component-content-and-properties}
+## Edição de um componente (conteúdo e propriedades) {#editing-a-component-content-and-properties}
 
 Para editar um parágrafo existente, faça o seguinte:
 
@@ -206,7 +205,7 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, es
 
 [As anotações](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permitem que outros autores forneçam feedback sobre o seu conteúdo. Isso é usado frequentemente para fins de análise e validação.
 
-## Visualizar páginas    {#previewing-pages}
+## Visualizar páginas   {#previewing-pages}
 
 Há dois ícones na borda inferior do sidekick que são importantes para a visualização das páginas:
 
@@ -228,7 +227,7 @@ Há dois ícones na borda inferior do sidekick que são importantes para a visua
 
 Para edições de maior escala de uma mesma frase, uma opção de menu **[Encontrar e substituir](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** permite que você procure e substitua várias instâncias de uma sequência em uma seção do site.
 
-## Bloquear uma página {#locking-a-page}
+## Bloquear uma página   {#locking-a-page}
 
 O AEM permite bloquear uma página, de modo que ninguém mais possa modificar o conteúdo. Isso é útil quando você está fazendo diversas edições para uma página específica ou quando precisa congelar uma página por pouco tempo.
 
@@ -288,9 +287,7 @@ O comportamento dos comandos desfazer e refazer é semelhante à de outros progr
 >* refazer ações, contanto que não tenha feito uma edição de página desde que usou o comando desfazer.
 >* desfazer um máximo de 20 ações de edição (configuração padrão).
 >* use também os [atalhos de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para desfazer e refazer.
-
 >
-
 
 
 Você pode usar os comandos desfazer e refazer para os seguintes tipos de alterações de páginas:
@@ -298,7 +295,7 @@ Você pode usar os comandos desfazer e refazer para os seguintes tipos de altera
 * Adicionar, editar, remover e mover parágrafos
 * Edição no local do conteúdo do parágrafo
 * Copiar, recortar e colar itens dentro de uma página
-* Copiar, recortar e colar itens nas páginas
+* Copiar, recortar e colar itens entre páginas
 * Adicionar, remover e alterar arquivos e imagens
 * Adicionar, remover e alterar anotações e rascunhos
 * Alterações para o Scaffold

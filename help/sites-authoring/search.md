@@ -1,8 +1,8 @@
 ---
-title: 'Pesquisar  '
-seo-title: 'Pesquisar  '
+title: Pesquisar
+seo-title: Search
 description: Localize seu conteúdo mais com mais rapidez usando uma pesquisa abrangente
-seo-description: Localize seu conteúdo mais com mais rapidez usando uma pesquisa abrangente
+seo-description: Find your content faster with comprehensive search
 uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,15 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+exl-id: dd65b308-c449-4f64-9f46-0797b922910f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '503'
 ht-degree: 96%
 
 ---
 
-
-# Pesquisar{#searching}
+# Pesquisar  {#searching}
 
 O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteúdo, dependendo do tipo de recurso.
 

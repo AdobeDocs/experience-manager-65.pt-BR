@@ -1,21 +1,20 @@
 ---
 title: Lidar com solicitações do GDPR para a AEM Foundation
-seo-title: Lidar com solicitações do GDPR para a AEM Foundation
+seo-title: Handling GDPR Requests for the AEM Foundation
 description: Lidar com solicitações do GDPR para a AEM Foundation
-seo-description: 'null'
+seo-description: null
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 6%
+source-wordcount: '435'
+ht-degree: 55%
 
 ---
 
-
-# Lidando com solicitações de GDPR para a AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
+# Lidar com solicitações do GDPR para a AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
@@ -27,23 +26,23 @@ No nível da AEM Foundation, os dados pessoais armazenados são o Perfil de usu�
 
 ## Acessar um perfil de usuário {#accessing-a-user-profile}
 
-### Etapas Manuais {#manual-steps}
+### Etapas manuais {#manual-steps}
 
 1. Abra o console de Administração do Usuário, navegando até **[!UICONTROL Configurações - Segurança - Usuários]** ou navegando diretamente para `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
-1. Em seguida, procure o usuário em questão digitando o nome na barra de pesquisa na parte superior da página:
+1. Em seguida, pesquise pelo usuário em questão digitando o nome na barra de pesquisa na parte superior da página:
 
    ![usersearch](assets/usersearch.png)
 
-1. Finalmente, abra o perfil do usuário clicando nele e marque na guia **[!UICONTROL Details]**.
+1. Por fim, clique para abrir o perfil do usuário, e verifique na guia **[!UICONTROL Detalhes]**.
 
    ![userprofile_small](assets/userprofile_small.png)
 
 ### API HTTP {#http-api}
 
-Como mencionado, o Adobe fornece APIs para acessar dados do usuário, a fim de facilitar a automação. Há vários tipos de APIs que você pode usar:
+Como mencionado, a Adobe fornece APIs para acessar dados do usuário, a fim de facilitar a automação. Há vários tipos de APIs que você pode usar:
 
 **API UserProperties**
 
@@ -53,14 +52,14 @@ curl -u user:password http://localhost:4502/libs/granite/security/search/profile
 
 **API Sling**
 
-*Descobrindo a página inicial do usuário:*
+*Descobrir a página inicial do usuário:*
 
 ```xml
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-*Recuperação de dados do usuário*
+*Recuperar dados do usuário*
 
 Usando o caminho do nó da propriedade home da carga JSON retornada do comando acima:
 
@@ -72,14 +71,14 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profiles.-1.json'
 ```
 
-## Desabilitando um usuário e Excluindo os Perfis Associados {#disabling-a-user-and-deleting-the-associated-profiles}
+## Desativar um usuário e excluir os perfis associados {#disabling-a-user-and-deleting-the-associated-profiles}
 
-### Desabilitar Usuário {#disable-user}
+### Desativar usuário {#disable-user}
 
-1. Abra o console de Administração do Usuário e procure o usuário em questão, conforme descrito acima.
+1. Abra o console Administração do usuário e procure o usuário em questão, conforme descrito acima.
 1. Passe o mouse sobre o usuário e clique no ícone de seleção. O perfil ficará cinza, indicando que está selecionado.
 
-1. Pressione o botão Disable (Desativar) no menu superior para desativar o usuário:
+1. Pressione o botão Desativar no menu superior para desativar o usuário:
 
    ![userdisable](assets/userdisable.png)
 
@@ -93,7 +92,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### Excluir informações do perfil do usuário {#delete-user-profile-information}
 
-1. Faça logon no CRXDE Lite e procure pelo `[!UICONTROL userId]`:
+1. Faça logon no CRXDE Lite e, em seguida, procure a variável `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
@@ -112,14 +111,14 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 Os procedimentos a seguir usam a ferramenta de linha de comando `curl` para ilustrar como desativar o usuário com a **[!UICONTROL cavery]** `userId` e excluir seus perfis disponíveis no local padrão.
 
-* *Descobrindo a página inicial do usuário*
+* *Descobrir a página inicial do usuário*
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-* *Desativar o usuário*
+* *Desabilitar o usuário*
 
 Usando o caminho do nó da propriedade home da carga JSON retornada do comando acima:
 
@@ -127,15 +126,14 @@ Usando o caminho do nó da propriedade home da carga JSON retornada do comando a
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (GDPR in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
 ```
 
-* *Excluindo perfis de usuário*
+* *Excluir perfil(s) de usuário*
 
-Usando o caminho de nó da propriedade home da carga JSON retornada do comando de descoberta de conta e os locais conhecidos do nó de perfil prontos para uso:
-
-```shell
-curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
-```
+Usando o caminho do nó da propriedade home da carga JSON retornada do comando de descoberta de conta e os locais dos nós de perfil, conhecidos e prontos para uso:
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
 ```
 
+```shell
+curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
+```

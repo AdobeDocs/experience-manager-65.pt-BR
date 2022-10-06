@@ -606,7 +606,7 @@ Também é possível especificar como os formulários são enviados. As opções
 * HTML
 * XML
 
-**PDF com tags**: Permite a criação de PDF marcado a partir de documentos OpenOffice. O PDF marcado contém informações sobre a estrutura do conteúdo do documento. Isso pode ajudar ao exibir o documento em dispositivos com telas diferentes e ao usar o software leitor de tela. Também ajuda o software de acessibilidade a executar várias operações úteis com o documento PDF, como ler em voz alta o conteúdo do documento PDF.
+**PDF com tags**: Permite a criação de PDF marcado a partir de documentos OpenOffice. O PDF marcado contém informações sobre a estrutura do conteúdo do documento. Isso pode ajudar ao exibir o documento em dispositivos com telas diferentes e ao usar software de leitor de tela. Também ajuda o software de acessibilidade a executar várias operações úteis com o documento PDF, como ler em voz alta o conteúdo do documento PDF.
 
 **Exportar notas**: Converte as notas em documentos OpenOffice em notas no documento PDF gerado.
 

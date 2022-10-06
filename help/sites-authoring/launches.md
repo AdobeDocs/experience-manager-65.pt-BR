@@ -1,8 +1,8 @@
 ---
 title: Lançamentos
-seo-title: Lançamentos
+seo-title: Launches
 description: Lançamentos permitem que você desenvolva com eficiência o conteúdo para uma versão futura. Eles permitem que você faça alterações prontas para publicação futura, mantendo ao mesmo tempo suas páginas atuais
-seo-description: Lançamentos permitem que você desenvolva com eficiência o conteúdo para uma versão futura. Eles permitem que você faça alterações prontas para publicação futura, mantendo ao mesmo tempo suas páginas atuais
+seo-description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
 uuid: 4bbd9865-735d-4232-b69c-b64193ac5d83
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,11 +11,10 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-translation-type: tm+mt
 source-git-commit: 47870c05d231bacc424cfbf308f78bc1eaeb907b
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 92%
+source-wordcount: '827'
+ht-degree: 94%
 
 ---
 
@@ -39,9 +38,9 @@ Lançamentos também podem ser:
 
 Esta seção descreve como criar, editar e promover (e, se necessário, [excluir](/help/sites-authoring/launches-creating.md#deleting-a-launch)) as páginas de lançamento de dentro do console Sites ou [do console Lançamentos](#the-launches-console):
 
-* [Criação de lançamentos](/help/sites-authoring/launches-creating.md)
-* [Edição de lançamentos](/help/sites-authoring/launches-editing.md)
-* [Promoção de lançamentos](/help/sites-authoring/launches-promoting.md)
+* [Criação de Lançamentos](/help/sites-authoring/launches-creating.md)
+* [Edição de Lançamentos](/help/sites-authoring/launches-editing.md)
+* [Promoção de Lançamentos](/help/sites-authoring/launches-promoting.md)
 
 ## Lançamentos - a ordem dos eventos {#launches-the-order-of-events}
 
@@ -58,10 +57,10 @@ Lançamentos permitem que você:
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-* Edite a configuração de inicialização:
+* Edite a configuração do lançamento:
 
    * Adicione ou remova páginas e/ou ramificações ao/do lançamento.
-   * Edite as propriedades de inicialização; como **Título**, **Data de inicialização**, sinalizador **Pronto para produção**.
+   * Edite as propriedades do lançamento; como **Título**, **Data de Lançameto**, sinalizador **Pronto para produção**.
 
 * Você pode promover e publicar o conteúdo manual ou automaticamente:
 
@@ -99,7 +98,7 @@ Lançamentos permitem que você:
 
 >[!NOTE]
 >
->Criar e editar lançamentos requer direitos de acesso a `/content/launches` - como no grupo padrão `content-authors`.
+>Criar e editar lançamentos requer direitos de acesso a `/content/launches`, bem como ao grupo padrão `content-authors`.
 >
 >Entre em contato com o administrador do sistema se você tiver algum problema.
 
@@ -114,7 +113,7 @@ Lançamentos permitem que você:
 
 O console Lançamentos fornece uma visão geral dos seus lançamentos e permite que você realize ações naqueles listados. O console pode ser acessado das seguintes maneiras:
 
-* No console **Ferramentas**: **Ferramentas**, **Sites**, **Lançamentos**.
+* No console de **Ferramentas**: **Ferramentas**, **Sites**, **Lançamentos**.
 
 * Ou diretamente com [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
 

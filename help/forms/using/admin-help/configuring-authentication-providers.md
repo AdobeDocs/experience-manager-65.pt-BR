@@ -26,7 +26,7 @@ Se você habilitar o SSO usando o SPNEGO, adicione um provedor de autenticação
 ## Adicionar um provedor de autenticação {#add-an-authentication-provider}
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuário > Gerenciamento de domínio.
-1. Clique em um domínio existente na lista. Se estiver adicionando autenticação para um novo domínio, consulte [Adicionar um domínio corporativo](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) ou [Adicionar um domínio híbrido](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain).
+1. Clique em um domínio existente na lista. Se estiver adicionando autenticação para um novo domínio, consulte [Adicionar um domínio empresarial](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) ou [Adicionar um domínio híbrido](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain).
 1. Clique em Adicionar autenticação e, na lista Provedor de autenticação , selecione um provedor, dependendo do mecanismo de autenticação que sua organização usa.
 1. Forneça quaisquer informações adicionais necessárias na página. (Consulte [Configurações de autenticação](configuring-authentication-providers.md#authentication-settings).)
 1. (Opcional) Clique em Testar para testar a configuração.
@@ -58,53 +58,53 @@ Para usar o servidor LDAP especificado na configuração de diretório, selecion
 
 Para usar um servidor LDAP diferente para executar autenticação, selecione LDAP como o provedor de autenticação e marque a caixa de seleção Autenticação LDAP personalizada. As configurações a seguir são exibidas.
 
-**Servidor:**  (Obrigatório) Nome de domínio totalmente qualificado (FQDN) do servidor de diretório. Por exemplo, para um computador chamado x na rede example.com, o FQDN é x.example.com. Um endereço IP pode ser usado no lugar do nome do servidor FQDN.
+**Servidor:** (Obrigatório) Nome de domínio totalmente qualificado (FQDN) do servidor de diretório. Por exemplo, para um computador chamado x na rede example.com, o FQDN é x.example.com. Um endereço IP pode ser usado no lugar do nome do servidor FQDN.
 
 **Porta:** (Obrigatório) A porta que o servidor de diretório usa. Normalmente, 389 ou 636 se o protocolo SSL for usado para enviar informações de autenticação pela rede.
 
 **SSL:** (Obrigatório) Especifica se o servidor de diretório usa SSL ao enviar dados pela rede. O padrão é Não. Quando definido como Sim, o certificado do servidor LDAP correspondente deve ser confiável pelo JRE (Java™ runtime environment) do servidor de aplicativos.
 
-**Vínculo**  (Obrigatório) Especifica como acessar o diretório.
+**Vínculo** (Obrigatório) Especifica como acessar o diretório.
 
-**Anônimo:** não é necessário nenhum nome de usuário ou senha.
+**Anônimo:** Nenhum nome de usuário ou senha é necessário.
 
-**Usuário:** a autenticação é necessária. Na caixa Nome, especifique o nome do registro do usuário que pode acessar o diretório. É melhor inserir o DN (nome distinto completo) da conta de usuário, como cn=Jane Doe, ou=user, dc=can, dc=com. Na caixa Senha, especifique a senha associada. Essas configurações são necessárias quando você seleciona Usuário como a opção Vínculo.
+**Usuário:** A autenticação é necessária. Na caixa Nome, especifique o nome do registro do usuário que pode acessar o diretório. É melhor inserir o DN (nome distinto completo) da conta de usuário, como cn=Jane Doe, ou=user, dc=can, dc=com. Na caixa Senha, especifique a senha associada. Essas configurações são necessárias quando você seleciona Usuário como a opção Vínculo.
 
-**Recuperar DNs de Base:**  (Não obrigatório) Recupera os DNs de Base e os exibe na lista suspensa. Essa configuração é útil quando você tem vários DNs de base e precisa selecionar um valor.
+**Recuperar DNs de Base:** (Não obrigatório) Recupera os DNs base e os exibe na lista suspensa. Essa configuração é útil quando você tem vários DNs de base e precisa selecionar um valor.
 
-**DN de base:** (Obrigatório) usado como ponto de partida para sincronizar usuários e grupos da hierarquia LDAP. É melhor especificar um DN básico no nível mais baixo da hierarquia que abrange todos os usuários e grupos que precisam ser sincronizados para serviços. Não inclua o DN do usuário nessa configuração. Para sincronizar um usuário específico, use a configuração Filtro de pesquisa .
+**DN de base:** (Obrigatório) Usado como ponto de partida para sincronizar usuários e grupos da hierarquia LDAP. É melhor especificar um DN básico no nível mais baixo da hierarquia que abrange todos os usuários e grupos que precisam ser sincronizados para serviços. Não inclua o DN do usuário nessa configuração. Para sincronizar um usuário específico, use a configuração Filtro de pesquisa .
 
-**Preencha a página com:**  (Não obrigatório) Quando selecionada, preenche os atributos nas páginas de configurações de Usuário e Grupo com os valores LDAP padrão correspondentes.
+**Preencha a página com:** (Não obrigatório) Quando selecionado, preenche atributos nas páginas de configurações de Usuário e Grupo com os valores LDAP padrão correspondentes.
 
-**Filtro de pesquisa:** (Obrigatório) o filtro de pesquisa a ser usado para localizar o registro associado ao usuário. Consulte Sintaxe de filtro de pesquisa.
+**Filtro de pesquisa:** (Obrigatório) O filtro de pesquisa a ser usado para localizar o registro associado ao usuário. Consulte Sintaxe de filtro de pesquisa.
 
 ### Configurações de Kerberos {#kerberos-settings}
 
 Se você estiver configurando a autenticação para um domínio corporativo ou híbrido e selecionar a autenticação Kerberos, as configurações a seguir estarão disponíveis.
 
-**DNS IP:** O endereço IP DNS do servidor em que AEM formulários está em execução. No Windows, você pode determinar esse endereço IP executando ipconfig /all na linha de comando.
+**IP DNS:** O endereço IP DNS do servidor em que AEM formulários está em execução. No Windows, você pode determinar esse endereço IP executando ipconfig /all na linha de comando.
 
-**Host KDC:** nome de host totalmente qualificado ou endereço IP do servidor Ative Diretory usado para autenticação.
+**Host KDC:** Nome do host totalmente qualificado ou endereço IP do servidor do Ative Diretory usado para autenticação.
 
-**Usuário do Serviço:** Se estiver usando o Ative Diretory 2003, esse valor será o mapeamento criado para o principal de serviço no formulário  `HTTP/<server name>`. Se estiver usando o Ative Diretory 2008, esse valor será a ID de logon da entidade de serviço. Por exemplo, suponha que a entidade de serviço seja chamada de um spnego, a ID de usuário é spnegodemo e o mapeamento é HTTP/example.yourcompany.com. Com o Ative Diretory 2003, você define Usuário do Serviço como HTTP/example.yourcompany.com. Com o Ative Diretory 2008, você define Usuário de Serviço como spnegodemo. (Consulte Ativar SSO usando SPNEGO.)
+**Usuário do Serviço:** Se estiver usando o Ative Diretory 2003, esse valor será o mapeamento criado para o principal de serviço no formulário `HTTP/<server name>`. Se estiver usando o Ative Diretory 2008, esse valor será a ID de logon da entidade de serviço. Por exemplo, suponha que a entidade de serviço seja chamada de um spnego, a ID de usuário é spnegodemo e o mapeamento é HTTP/example.yourcompany.com. Com o Ative Diretory 2003, você define Usuário do Serviço como HTTP/example.yourcompany.com. Com o Ative Diretory 2008, você define Usuário de Serviço como spnegodemo. (Consulte Ativar SSO usando SPNEGO.)
 
-**Realm de Serviço:** Nome de domínio do Ative Diretory
+**Domínio de Serviço:** Nome de domínio do Ative Diretory
 
 **Senha do serviço:** Senha do usuário do serviço
 
-**Habilitar SPNEGO:** Habilita o uso de SPNEGO para logon único (SSO). (Consulte Ativar SSO usando SPNEGO.)
+**Habilite o SPNEGO:** Permite o uso de SPNEGO para logon único (SSO). (Consulte Ativar SSO usando SPNEGO.)
 
 ### Configurações SAML {#saml-settings}
 
-Se você estiver configurando a autenticação para um domínio corporativo ou híbrido e selecionar a autenticação SAML, as configurações a seguir estarão disponíveis. Para obter informações sobre configurações SAML adicionais, consulte [Definir configurações do provedor de serviço SAML](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings).
+Se você estiver configurando a autenticação para um domínio corporativo ou híbrido e selecionar a autenticação SAML, as configurações a seguir estarão disponíveis. Para obter informações sobre configurações SAML adicionais, consulte [Definir configurações do provedor de serviços SAML](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings).
 
 **Selecione um arquivo de metadados do provedor de identidade SAML a ser importado:** Clique em Procurar para selecionar um arquivo de metadados do provedor de identidade SAML gerado pelo IDP e clique em Importar. Detalhes do IDP são exibidos.
 
-**Título:** alias para o URL denotado pela EntityID. O título também é exibido na página de logon para usuários empresariais e locais.
+**Título:** Alias da URL indicada pela EntityID. O título também é exibido na página de logon para usuários empresariais e locais.
 
-**O Provedor de Identidade Suporta Autenticação Básica do Cliente:** A Autenticação Básica do Cliente é usada quando o IDP usa um perfil SAML Artifact Resolution. Nesse perfil, o Gerenciamento de usuários se conecta a um serviço da Web em execução no IDP para recuperar a asserção de SAML real. O IDP pode exigir autenticação. Se o IDP exigir autenticação, selecione essa opção e especifique um nome de usuário e senha nas caixas fornecidas.
+**O Provedor De Identidade Oferece Suporte À Autenticação Básica Do Cliente:** A Autenticação básica do cliente é usada quando o IDP usa um perfil de Resolução de artefato SAML. Nesse perfil, o Gerenciamento de usuários se conecta a um serviço da Web em execução no IDP para recuperar a asserção de SAML real. O IDP pode exigir autenticação. Se o IDP exigir autenticação, selecione essa opção e especifique um nome de usuário e senha nas caixas fornecidas.
 
-**Propriedades personalizadas:** permite especificar propriedades adicionais. As propriedades adicionais são pares name=value separados por novas linhas.
+**Propriedades personalizadas:** Permite especificar propriedades adicionais. As propriedades adicionais são pares name=value separados por novas linhas.
 
 As seguintes propriedades personalizadas são necessárias se a vinculação de artefato for usada.
 
@@ -123,7 +123,7 @@ Se você estiver configurando a autenticação para um domínio corporativo ou h
 
 ## Provisionamento just-in-time de usuários {#just-in-time-provisioning-of-users}
 
-O provisionamento just-in-time cria um usuário no banco de dados do Gerenciamento de usuários automaticamente depois que o usuário é autenticado com êxito por meio de um provedor de autenticação. As funções e os grupos relevantes também são atribuídos dinamicamente ao novo usuário. Você pode ativar o provisionamento just-in-time para domínios corporativos e híbridos.
+O provisionamento just-in-time cria um usuário no banco de dados do Gerenciamento de usuários automaticamente depois que o usuário é autenticado com êxito por meio de um provedor de autenticação. As funções e grupos relevantes também são atribuídos dinamicamente ao novo usuário. Você pode ativar o provisionamento just-in-time para domínios corporativos e híbridos.
 
 Este procedimento descreve como a autenticação tradicional funciona em formulários AEM:
 
@@ -131,11 +131,11 @@ Este procedimento descreve como a autenticação tradicional funciona em formul�
 1. O provedor de autenticação valida as credenciais.
 1. O provedor de autenticação verifica se o usuário existe no banco de dados do Gerenciamento de usuários. Os seguintes status são possíveis:
 
-   **** ExisteSe o usuário estiver atual e desbloqueado, o Gerenciamento de usuários retornará a autenticação bem-sucedida. No entanto, se o usuário não for atual ou estiver bloqueado, o Gerenciamento de usuários retornará a falha de autenticação.
+   **Existe** Se o usuário estiver atual e desbloqueado, o Gerenciamento de usuários retornará a autenticação bem-sucedida. No entanto, se o usuário não for atual ou estiver bloqueado, o Gerenciamento de usuários retornará a falha de autenticação.
 
-   **Não** existe. O Gerenciamento de Usuário retorna a falha de autenticação.
+   **Não existe** O Gerenciamento de usuários retorna a falha de autenticação.
 
-   **** InvalidUser Management retorna a falha de autenticação.
+   **Inválido** O Gerenciamento de usuários retorna a falha de autenticação.
 
 1. O resultado retornado pelo provedor de autenticação é avaliado. Se o provedor de autenticação retornar a autenticação bem-sucedido, o usuário poderá fazer logon. Caso contrário, o Gerenciamento de usuários verificará o próximo provedor de autenticação (etapas 2 a 3).
 1. A falha de autenticação é retornada se nenhum provedor de autenticação disponível validar as credenciais do usuário.

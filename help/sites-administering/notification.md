@@ -13,7 +13,7 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
 workflow-type: tm+mt
 source-wordcount: '2116'
-ht-degree: 2%
+ht-degree: 12%
 
 ---
 
@@ -390,15 +390,15 @@ Finalmente, confirme a configuração ao:
 
 ### Microsoft Outlook {#microsoft-outlook}
 
-1. Ir para [https://portal.azure.com/](https://portal.azure.com/) e faça logon.
-1. Procurar por **Ative Diretory do Azure** na barra de pesquisa e clique no resultado. Como alternativa, você pode navegar diretamente para [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+1. Acesse [https://portal.azure.com/](https://portal.azure.com/) e faça logon.
+1. Pesquise por **Azure Active Directory** na barra de pesquisa e clique no resultado. Como alternativa, você pode navegar diretamente para [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Clique em **Registro do aplicativo** - **Novo registro**
 
    ![](assets/oauth-outlook1.png)
 
 1. Preencha as informações de acordo com suas necessidades e clique em **Registrar**
 1. Acesse o aplicativo recém-criado e selecione **Permissões de API**
-1. Ir para **Adicionar permissão** - **Permissão de gráfico** - **Permissões delegadas**
+1. Vá em **Adicionar permissão** - **Permissão de gráfico** - **Permissões delegadas**
 1. Selecione as permissões abaixo para seu aplicativo e clique em **Adicionar permissão**:
    * `SMTP.Send`
    * `Mail.Read`
@@ -409,16 +409,16 @@ Finalmente, confirme a configuração ao:
    * `http://localhost:4503/services/mailer/oauth2/token`
 1. Repita o procedimento acima para cada instância de publicação
 1. Defina as configurações de acordo com seus requisitos
-1. Em seguida, acesse **Certificados e Segredos**, clique em **Novo segredo de cliente** e siga as etapas na tela para criar um segredo. Anote este segredo para uso posterior
-1. Press **Visão geral** no painel esquerdo e copie os valores para **ID do aplicativo (cliente)** e **ID do diretório (locatário)** para uso posterior
+1. Em seguida, vá em **Certificados e segredos**, clique em **Novo segredo de cliente** e siga as etapas na tela para criar um segredo. Anote este segredo para uso posterior
+1. Pressione **Visão geral** no painel esquerdo e copie os valores de **ID do aplicativo (cliente)** e **ID do diretório (locatário)** para uso posterior
 
 Para recapitular, você precisará das seguintes informações para configurar o OAuth2 para o serviço de Mailer no lado do AEM:
 
-* O URL de autenticação, que será construído com a ID do locatário. Ele terá este formulário: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
-* O URL do token, que será construído com a ID do locatário. Ele terá este formulário: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* O URL de atualização, que será construído com a ID do locatário. Ele terá este formulário: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* O URL de autenticação, que será construído com a ID do locatário. Ele terá este formato: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* O URL do token, que será construído com a ID do locatário. Ele terá este formato: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* O URL de atualização, que será construído com a ID do locatário. Ele terá este formato: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * A ID do cliente
-* O Segredo Do Cliente
+* O segredo do cliente
 
 **Configurações AEM Lado**
 

@@ -8,12 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
-feature: Banners em carrossel
+feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
-source-wordcount: '4732'
+source-wordcount: '4730'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Os banners em carrossel permitem que os profissionais de marketing determinem a 
 
 Criar e modificar o conteúdo em destaque em banners promocionais pode ser demorado, limitando sua capacidade de publicar rapidamente novo conteúdo ou torná-lo mais direcionado. Os banners em carrossel permitem criar ou modificar rapidamente banners giratórios. Você pode adicionar interatividade, como pontos de acesso vinculados a detalhes do produto ou recursos relacionados, e entregá-los a qualquer tela - permitindo que você coloque o novo conteúdo promocional no mercado mais rapidamente.
 
-Os banners de carrossel são designados por um banner com a palavra **[!UICONTROL CAROUSELSET]**
+Os banners em carrossel são designados por um banner com a palavra **[!UICONTROL CAROUSELSET]**
 
 ![chlimage_1-438](assets/chlimage_1-438.png)
 
@@ -40,26 +40,26 @@ Neste exemplo, um usuário tocou ou clicou em um mapa de imagem e acessou a jane
 
 ## Veja como os banners em carrossel são criados {#watch-how-carousel-banners-are-created}
 
-Reproduza uma apresentação em [como os banners de carrossel são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(10 minutos e 33 segundos). Você também aprenderá a visualizar, editar e fornecer banners em carrossel.
+Reproduzir uma apresentação em [como os banners em carrossel são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(10 minutos e 33 segundos). Você também aprenderá a visualizar, editar e fornecer banners em carrossel.
 
 >[!NOTE]
 >
->Usuários não administrativos devem ser adicionados ao grupo **[!UICONTROL dam-users]** para poderem criar ou editar banners de carrossel. Se tiver problemas ao criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo **[!UICONTROL dam-users]**.
+>Usuários não administrativos devem ser adicionados ao **[!UICONTROL dam-users]** para criar ou editar banners de carrossel. Se tiver problemas ao criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL dam-users]** grupo.
 
 ## Início rápido: Banners em carrossel {#quick-start-carousel-banners}
 
 Para colocá-lo em funcionamento rapidamente com banners em carrossel:
 
-1. [Identificar hotspots e variáveis de mapa de imagem](#identifying-hotspot-and-image-map-variables)  (somente para clientes que usam Experience Manager Assets + Dynamic Media)
+1. [Identificar pontos de acesso e variáveis de mapa de imagem](#identifying-hotspot-and-image-map-variables) (somente para clientes que usam o Experience Manager Assets + Dynamic Media)
 
    Comece identificando as variáveis dinâmicas usadas pela implementação existente do Quickview, para que você possa inserir os pontos de acesso e os dados do mapa de imagem corretamente durante o processo de criação do banner de carrossel nos Ativos da Adobe Experience Manager.
 
    >[!NOTE]
    >
-   >Se você for um cliente do Experience Manager Sites ou do Ecommerce, poderá usar o recurso integrado para navegar até páginas de produtos e pesquisar os SKUs existentes (Stock Keeping Unit) no catálogo de produtos. Não é necessário inserir manualmente as variáveis de ponto de acesso ou mapa de imagem. Consulte as informações sobre [como configurar o eCommerce](/help/commerce/cif-classic/administering/generic.md).
+   >Se você for um cliente do Experience Manager Sites ou do Ecommerce, poderá usar o recurso integrado para navegar até páginas de produtos e pesquisar as SKUs (Stock Keeping Unit) existentes no catálogo de produtos. Não é necessário inserir manualmente as variáveis de ponto de acesso ou mapa de imagem. Veja informações sobre [configuração do comércio eletrônico](/help/commerce/cif-classic/administering/generic.md).
    >
    >
-   >Se você for um cliente do Experience Manager Assets e do Dynamic Media, insira manualmente os dados dos pontos de acesso e mapas de imagem e integre o URL publicado ou o código incorporado ao seu sistema de gerenciamento de conteúdo de terceiros.
+   >Se você for um cliente do Experience Manager Assets e Dynamic Media, insira manualmente os dados dos pontos de acesso e mapas de imagem e integre o URL publicado ou o código Incorporado ao seu sistema de gerenciamento de conteúdo de terceiros.
 
 1. Opcional: [crie uma predefinição do visualizador Conjunto de carrossel](/help/assets/managing-viewer-presets.md), conforme necessário.
 
@@ -73,39 +73,39 @@ Para colocá-lo em funcionamento rapidamente com banners em carrossel:
 
    Em Conjuntos de carrosséis, os usuários navegam por imagens de banner e selecionam pontos de acesso ou mapas de imagem para acessar conteúdo relevante.
 
-   Para criar um Conjunto de carrossel no Assets, selecione **[!UICONTROL Criar]** e selecione **[!UICONTROL Conjuntos de carrossel]**. Adicione ativos a slides e selecione **[!UICONTROL Salvar]**. Além disso, edite a aparência e o comportamento do carrossel diretamente no editor.
+   Para criar um Conjunto de carrossel no Assets, selecione **[!UICONTROL Criar]**, em seguida selecione **[!UICONTROL Conjuntos de carrossel]**. Adicione ativos a slides e selecione **[!UICONTROL Salvar]**. Além disso, edite a aparência e o comportamento do carrossel diretamente no editor.
 
-1. [Adicione pontos de acesso ou mapas de imagem a um banner](#adding-hotspots-or-image-maps-to-an-image-banner) de imagem.
+1. [Adicionar pontos de acesso ou mapas de imagem a um banner de imagem](#adding-hotspots-or-image-maps-to-an-image-banner).
 
    Adicione um ou mais pontos de acesso ou mapas de imagem a um banner de imagem e associe cada um a uma ação, como um link, uma visualização rápida ou um fragmento de experiência. Após adicionar pontos de acesso ou mapas de imagem, conclua esta tarefa publicando o conjunto de carrossel. A publicação cria o código incorporado que pode ser usado para copiar e aplicar à página de aterrissagem do site.
 
    Consulte [(Opcional) Visualizar banners do carrossel](#optional-previewing-carousel-banners) - Opcional. Se desejar, é possível visualizar uma representação do conjunto de carrossel e testar sua interatividade.
 
-1. [Publique banners em carrossel](#publishing-carousel-banners).
+1. [Publicar banners em carrossel](#publishing-carousel-banners).
 
-   Você publica um Conjunto de carrossel como faria com qualquer ativo. No Assets, navegue até o Conjunto de carrossel, selecione-o e selecione **[!UICONTROL Publicar]**. A publicação de um Conjunto de carrossel ativa o URL e a cadeia de caracteres de inserção.
+   Você publica um Conjunto de carrossel como faria com qualquer ativo. Em Ativos, navegue até o Conjunto de carrossel , selecione-o e selecione-o **[!UICONTROL Publicar]**. A publicação de um Conjunto de carrossel ativa o URL e a cadeia de caracteres de inserção.
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
-   * [Adicionar um banner de carrossel à ](#adding-a-carousel-banner-to-your-website-page) página do site. Você pode adicionar a URL do banner de carrossel ou incorporar o código que você copiou na página do site.
+   * [Adicionar um banner de carrossel à página do site](#adding-a-carousel-banner-to-your-website-page) Você pode adicionar a URL do banner do carrossel ou incorporar o código que você copiou na página do site.
 
-      * [Integre o banner do carrossel a um Quickview](#integrating-the-carousel-banner-with-an-existing-quickview) existente. Se você usar um sistema de gerenciamento de conteúdo da Web de terceiros, é necessário integrar o novo banner de carrossel com a implementação existente do Quickview em seu site.
-   * [Adicione um banner de carrossel ao seu site no Experience ](/help/assets/adding-dynamic-media-assets-to-pages.md) Manager. Se você for um cliente do Experience Manager Sites, poderá adicionar o conjunto de carrossel diretamente à página no Experience Manager, usando o componente Mídia interativa .
+      * [Integre o banner do carrossel a um Quickview existente](#integrating-the-carousel-banner-with-an-existing-quickview). Se você usar um sistema de gerenciamento de conteúdo da Web de terceiros, é necessário integrar o novo banner de carrossel com a implementação existente do Quickview em seu site.
+   * [Adicione um banner de carrossel ao seu site na Experience Manager](/help/assets/adding-dynamic-media-assets-to-pages.md) Se você for um cliente do Experience Manager Sites, é possível adicionar o conjunto de carrossel diretamente à página no Experience Manager, usando o componente Mídia interativa .
 
 
-Para editar Conjuntos de carrossel, consulte [editar Conjuntos de carrossel](#editing-carousel-sets). Além disso, você pode visualizar e editar [Propriedades do Conjunto de carrossel](manage-assets.md#editing-properties).
+Para editar Conjuntos de carrossel, consulte [editar conjuntos de carrossel](#editing-carousel-sets). Além disso, é possível visualizar e editar [Propriedades do conjunto de carrossel](manage-assets.md#editing-properties).
 
 ## Identificar os pontos de acesso e as variáveis do mapa de imagem {#identifying-hotspot-and-image-map-variables}
 
-Comece identificando as variáveis dinâmicas usadas pela implementação existente do Quickview, para que você possa inserir os pontos de acesso ou os dados do mapa de imagem corretamente durante o processo de criação do conjunto de carrossel nos Ativos Experience Manager.
+Comece identificando variáveis dinâmicas usadas pela implementação existente do Quickview, para que você possa inserir pontos de acesso ou dados de mapa de imagem corretamente durante o processo de criação do conjunto de carrossel no Experience Manager Assets.
 
-Quando você adiciona pontos de acesso ou mapas de imagem a uma imagem de banner no Experience Manager Assets, atribua um SKU e variáveis adicionais opcionais a cada ponto de acesso ou mapa de imagem. Essas variáveis são usadas posteriormente para corresponder pontos de acesso ou mapas de imagem com conteúdo do Quickview.
+Ao adicionar pontos de acesso ou mapas de imagem a uma imagem de banner no Experience Manager Assets, atribua um SKU e variáveis adicionais opcionais a cada ponto de acesso ou mapa de imagem. Essas variáveis são usadas posteriormente para corresponder pontos de acesso ou mapas de imagem com conteúdo do Quickview.
 
 >[!NOTE]
 >
->Se você for um cliente do Experience Manager Sites e/ou Experience Manager Ecommerce, pule esta etapa. Não é necessário identificar manualmente os pontos de acesso ou as variáveis do mapa de imagem; você pode usar a integração com o Ecommerce para integração de produto. Consulte as informações sobre [como configurar o eCommerce](/help/commerce/cif-classic/administering/generic.md). Além disso, você pode usar o componente Interativo e adicioná-lo à sua página da Web.
+>Se você for um cliente do Experience Manager Sites e/ou Experience Manager Ecommerce, pule esta etapa. Não é necessário identificar manualmente os pontos de acesso ou as variáveis do mapa de imagem; você pode usar a integração com o Ecommerce para integração de produto. Veja informações sobre [configuração do comércio eletrônico](/help/commerce/cif-classic/administering/generic.md). Além disso, você pode usar o componente Interativo e adicioná-lo à sua página da Web.
 >
->Se você for um cliente do Experience Manager Assets ou Media , publique o URL ou o código Incorporado e faça a integração com seu sistema de gerenciamento de conteúdo de terceiros e identifique pontos de acesso e mapas de imagem manualmente.
+>Se você for um cliente de Experience Manager Assets ou Mídia, publique o URL ou código Incorporado e faça a integração com seu sistema de gerenciamento de conteúdo de terceiros e identifique pontos de acesso e mapas de imagem manualmente.
 
 É importante identificar corretamente o número e o tipo de variáveis a serem associadas ao ponto de acesso ou aos dados do mapa de imagem. Cada ponto de acesso ou mapa de imagem adicionado a uma imagem de banner deve ter informações suficientes para identificar inequivocamente o produto no sistema de back-end existente. Ao mesmo tempo, cada ponto de acesso ou mapa de imagem não deve incluir mais dados do que o necessário. O motivo é que isso tornaria o processo de entrada de dados excessivamente complexo e o gerenciamento contínuo de hotspots ou mapas de imagem mais propenso a erros.
 
@@ -115,7 +115,7 @@ Há diferentes maneiras de identificar um conjunto de variáveis a serem usadas 
 
 A maioria das implementações do Quickview usa o seguinte paradigma:
 
-* O usuário ativa um elemento da interface do usuário no site. Por exemplo, tocar em um botão **[!UICONTROL Quickview]**.
+* O usuário ativa um elemento da interface do usuário no site. Por exemplo, tocar em uma **[!UICONTROL QuickView]** botão.
 * O site envia uma solicitação do Ajax para o backend para carregar os dados ou o conteúdo do Quickview, se necessário.
 * Os dados do Quickview são traduzidos para o conteúdo em preparação para renderização na página da Web.
 * Por fim, o código front-end renderiza visualmente esse conteúdo na tela.
@@ -125,11 +125,11 @@ A abordagem é então visitar diferentes áreas do site existente, onde o recurs
 Normalmente, não há necessidade de usar ferramentas de depuração especializadas. Os navegadores modernos da Web apresentam inspetores da Web que fazem um trabalho adequado. A seguir estão alguns exemplos de navegadores da Web que incluem inspetores da Web:
 
 * Para ver todas as solicitações HTTP de saída no Google Chrome, pressione F12 (Windows) ou Command-Option-I (Mac) para abrir o painel Ferramentas do Desenvolvedor e selecione a guia Rede.
-* No Firefox, é possível ativar o plug-in do Firebug pressionando F12 (Windows) ou Command-Option-I (Mac) e usar a guia Net ou usar a ferramenta Inspetor integrada e a guia Rede.
+* No Firefox, você pode ativar o plug-in do Firebug pressionando F12 (Windows) ou Command-Option-I (Mac) e usar a guia Net ou usar a ferramenta Inspetor integrada e a guia Rede.
 
 Quando o monitoramento de rede estiver ativado no navegador, acione o Quickview na página.
 
-Agora, encontre o URL do Ajax do Quickview no log de rede e copie o URL registrado para análise futura. Geralmente, quando você aciona o Quickview, há várias solicitações que são enviadas ao servidor. Normalmente, o URL de Ajax do Quickview é um dos primeiros na lista. Ela tem uma parte ou um caminho complexo da sequência de consulta e seu tipo MIME de resposta é `text/html`, `text/xml` ou `text/javascript`.
+Agora, encontre o URL do Ajax do Quickview no log de rede e copie o URL registrado para análise futura. Geralmente, quando você aciona o Quickview, há várias solicitações que são enviadas ao servidor. Normalmente, o URL de Ajax do Quickview é um dos primeiros na lista. Ela tem uma parte ou um caminho complexo da sequência de consulta e seu tipo MIME de resposta é `text/html`, `text/xml`ou `text/javascript`.
 
 Durante esse processo, é importante visitar diferentes áreas de seu site, com diferentes categorias e tipos de produtos. O motivo é que os URLs do Quickview têm partes comuns para uma determinada categoria de site, mas são alteradas somente se você visitar uma área diferente do site.
 
@@ -149,7 +149,7 @@ Considere os exemplos a seguir de URLs do Quickview e seus pontos de acesso ou v
      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-    </ul> <p>A única parte variável no URL é o valor do parâmetro da string de consulta <code>productId=</code> e é claramente um valor SKU. Portanto, os pontos de acesso ou mapas de imagem precisam apenas de campos SKU preenchidos com valores como <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
+    </ul> <p>A única parte variável no URL é o valor da variável <code>productId=</code> parâmetro da string de consulta e claramente é um valor SKU. Portanto, os pontos de acesso ou mapas de imagem precisam apenas de campos SKU preenchidos com valores como <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
    <td>SKU único, encontrado no caminho do URL.</td>
@@ -167,11 +167,11 @@ Considere os exemplos a seguir de URLs do Quickview e seus pontos de acesso ou v
      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-    </ul> <p>Nesse caso, há duas partes variáveis no URL. O SKU é armazenado no parâmetro <code>prodId</code> e a ID da categoria é armazenada no parâmetro <code>category=</code>.</p> <p>Dessa forma, as definições de ponto de acesso/mapa de imagem são pares. Ou seja, um valor SKU e uma variável extra chamada <code>categoryId</code>. Os pares resultantes são os seguintes:</p>
+    </ul> <p>Nesse caso, há duas partes variáveis no URL. O SKU é armazenado no <code>prodId</code> e a ID da categoria é armazenada no <code>category=</code>parâmetro.</p> <p>Dessa forma, as definições de ponto de acesso/mapa de imagem são pares. Ou seja, um valor SKU e uma variável extra chamada <code>categoryId</code>. Os pares resultantes são os seguintes:</p>
     <ul>
-     <li><p>O SKU é <strong><code>305466</code></strong> e <code>categoryId</code> é <code>1100004</code>.</p> </li>
-     <li><p>O SKU é <strong><code>310181</code></strong> e <code>categoryId</code> é <strong><code>1100004</code></strong>.</p> </li>
-     <li><p>O SKU é <strong><code>308706</code></strong> e <code>categoryId</code> é <strong><code>1740148</code></strong>.</p> </li>
+     <li><p>SKU é <strong><code>305466</code></strong> e <code>categoryId</code> é <code>1100004</code>.</p> </li>
+     <li><p>SKU é <strong><code>310181</code></strong> e <code>categoryId</code> é <strong><code>1100004</code></strong>.</p> </li>
+     <li><p>SKU é <strong><code>308706</code></strong> e <code>categoryId</code> é <strong><code>1740148</code></strong>.</p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -179,7 +179,7 @@ Considere os exemplos a seguir de URLs do Quickview e seus pontos de acesso ou v
 
 ## Fazer upload de banners de imagem {#uploading-image-banners}
 
-Se você já tiver carregado as imagens que deseja usar, avance para a próxima etapa, [Criar conjuntos de carrossel](#creating-carousel-sets). Observe que as imagens usadas no carrossel devem ser carregadas após a ativação do Dynamic Media.
+Se você já tiver carregado as imagens que deseja usar, vá para a próxima etapa, [Criar conjuntos de carrossel](#creating-carousel-sets). Observe que as imagens usadas no carrossel devem ser carregadas após a ativação do Dynamic Media.
 
 Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/assets/manage-assets.md).
 
@@ -187,21 +187,21 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
 
 >[!NOTE]
 >
->Usuários não administrativos devem ser adicionados ao grupo **[!UICONTROL dam-users]** para poderem criar ou editar banners de carrossel. Se tiver problemas ao criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo **[!UICONTROL dam-users]**.
+>Usuários não administrativos devem ser adicionados ao **[!UICONTROL dam-users]** para criar ou editar banners de carrossel. Se tiver problemas ao criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL dam-users]** grupo.
 
 **Para criar Conjuntos de carrossel:**
 
 1. No Assets, navegue até a pasta onde deseja criar o Conjunto de carrossel e vá para **[!UICONTROL Criar]** > **[!UICONTROL Conjunto de carrossel]**.
-1. Na página do editor de banner de carrossel, selecione **[!UICONTROL Toque para abrir o Seletor de ativo]** para selecionar a imagem para o primeiro slide.
+1. Na página do editor de banner do carrossel, selecione **[!UICONTROL Toque para abrir o Seletor de ativos]** para selecionar a imagem para o seu primeiro slide.
 
    Na página do editor de banner de carrossel, siga um destes procedimentos:
 
-   * Próximo ao canto superior esquerdo da página, selecione o ícone **[!UICONTROL Adicionar slide]**.
+   * Ao lado do canto superior esquerdo da página, selecione **[!UICONTROL Adicionar Slide]** ícone .
 
    * Próximo ao meio da página, selecione **[!UICONTROL Toque para abrir o Seletor de ativos]**.
-   Selecione para selecionar os ativos que deseja incluir no Conjunto de carrossel. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Select]**.
+   Selecione para selecionar os ativos que deseja incluir no Conjunto de carrossel. Os ativos selecionados têm um ícone de marca de seleção sobre eles. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Selecionar]**.
 
-   Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar ou clicar em **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e depois selecione o ícone **[!UICONTROL Filter]** na barra de ferramentas. Altere a exibição ao tocar no ícone Exibir e selecionar **[!UICONTROL Exibição em coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em lista]**.
+   Com o Seletor de ativos, procure por ativos ao digitar uma palavra-chave e tocar ou clicar em **[!UICONTROL Retornar]**. Aplique filtros para refinar os resultados da pesquisa. Filtre por caminho, coleção, tipo de arquivo e tag. Selecione o filtro e depois selecione o **[!UICONTROL Filtro]** na barra de ferramentas. Altere a exibição ao tocar no ícone Exibir e selecionar **[!UICONTROL Exibição em coluna]**, **[!UICONTROL Exibição de cartão]** ou **[!UICONTROL Exibição em lista]**.
 
    Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md) para obter mais informações.
 
@@ -209,13 +209,13 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
 1. (Opcional) Siga um destes procedimentos:
 
    * Se necessário, arraste os slides para reorganizar as imagens na lista de conjuntos.
-   * Para excluir uma imagem, selecione a imagem e selecione **[!UICONTROL Excluir slide]** na barra de ferramentas.
+   * Para excluir uma imagem, selecione-a e, em seguida, selecione **[!UICONTROL Excluir Slide]** na barra de ferramentas.
 
    * Para aplicar uma predefinição, próximo ao canto superior direito da página, selecione a lista suspensa predefinição e selecione uma predefinição para aplicar ao conjunto ao mesmo tempo.
-   Para excluir um slide, selecione o slide e, na barra de ferramentas, selecione **[!UICONTROL Excluir slide]**. Para mover um slide, selecione o ícone de reordenação e segure e mova-o para o local desejado.
+   Para excluir um slide, selecione o slide e, em seguida, na barra de ferramentas, selecione **[!UICONTROL Excluir Slide]**. Para mover um slide, selecione o ícone de reordenação e segure e mova-o para o local desejado.
 
-1. Depois de ter adicionado as imagens nos slides, você pode adicionar um ponto de acesso, mapa de imagem ou ambos à sua imagem. Consulte [Adicionar pontos de acesso ou mapas de imagem a um Banner de imagem](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. Você pode alterar o design visual e o comportamento dos conjuntos de carrossel. Selecione as guias **[!UICONTROL Comportamento]** e **[!UICONTROL Aparência]** e ajuste como o banner do carrossel aparece ou como os componentes específicos se comportam. Consulte [Gerenciar predefinições do visualizador](/help/assets/viewer-presets.md) para obter mais informações sobre como usar o editor do visualizador.
+1. Depois de ter adicionado as imagens nos slides, você pode adicionar um ponto de acesso, mapa de imagem ou ambos à sua imagem. Consulte [Adicionar pontos de acesso ou mapas de imagem a um banner de imagem](#adding-hotspots-or-image-maps-to-an-image-banner).
+1. Você pode alterar o design visual e o comportamento dos conjuntos de carrossel. Selecione o **[!UICONTROL Comportamento]** e **[!UICONTROL Aparência]** e ajuste como o banner do carrossel é exibido ou como os componentes específicos se comportam. Consulte [Gerenciar predefinições do visualizador](/help/assets/viewer-presets.md) para obter mais informações sobre como usar o editor do visualizador.
 
    >[!NOTE]
    >
@@ -228,11 +228,11 @@ Para fazer upload de banners de imagem, consulte [Fazer upload de ativos](/help/
    >    * Antes de editar uma predefinição do visualizador, escolha o estilo no qual deseja que a predefinição seja baseada. Se você não escolher um estilo, ao começar a editar a predefinição do visualizador, perderá todas as suas alterações se decidir alterar para uma predefinição diferente.
 
    >
-   >Consulte [Considerações especiais para banners de carrossel](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) para obter instruções detalhadas e mais informações sobre o editor do visualizador.
+   >Consulte [Considerações especiais para banners em carrossel](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) para obter instruções detalhadas e mais informações sobre o editor do visualizador.
 
    Você também pode visualizar como o banner do carrossel aparece. Consulte [(Opcional) Visualizar banners do carrossel](#optional-previewing-carousel-banners).
 
-1. Selecione **[!UICONTROL Salvar]** quando terminar.
+1. Selecionar **[!UICONTROL Salvar]** quando terminar.
 
 ## Adicionar pontos de acesso ou mapas de imagem a um banner de imagem {#adding-hotspots-or-image-maps-to-an-image-banner}
 
@@ -256,7 +256,7 @@ Consulte [(Opcional) Visualizar banners do carrossel](#optional-previewing-carou
 
 >[!NOTE]
 >
->Quando você adiciona pontos de acesso a uma imagem em um [Imagem interativa](/help/assets/interactive-images.md) ou um banner de carrossel, as informações do ponto de acesso são armazenadas no mesmo local de metadados. Esse local é relativo ao local da imagem, independentemente de ser uma Imagem interativa ou um banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem - juntamente com seus dados de ponto de acesso definidos - em qualquer um dos visualizadores.
+>Quando você adiciona pontos de acesso a uma imagem em uma [Imagem interativa](/help/assets/interactive-images.md) Para um banner de carrossel, as informações do ponto de acesso são armazenadas no mesmo local de metadados. Esse local é relativo ao local da imagem, independentemente de ser uma Imagem interativa ou um banner de carrossel. Essa funcionalidade significa que você pode reutilizar facilmente a mesma imagem - juntamente com seus dados de ponto de acesso definidos - em qualquer um dos visualizadores.
 Esteja ciente, no entanto, de que os banners de carrossel suportam mapas de imagens em imagens que também podem conter pontos de acesso; uma Imagem interativa não. Lembre-se dessa regra se você pretende criar uma Imagem interativa ou um banner de carrossel que use a mesma imagem. Considere a criação de Imagens interativas e banners de carrossel usando cópias separadas da mesma imagem.
 
 >[!NOTE]
@@ -269,34 +269,34 @@ Consulte também [Adicionar mapas de imagem](/help/assets/image-maps.md).
 1. Em Ativos, navegue até o conjunto de carrossel que deseja tornar interativo.
 1. Selecione o conjunto de carrossel e selecione **[!UICONTROL Editar]**. O Editor do visualizador de carrossel é aberto.
 1. Selecione o slide que deseja tornar interativo.
-1. Próximo ao canto superior esquerdo da página, selecione **[!UICONTROL Ponto de acesso]** ou **[!UICONTROL Mapa de imagem]**.
+1. Ao lado do canto superior esquerdo da página, selecione **[!UICONTROL Ponto de conexão]** ou **[!UICONTROL Mapa de imagem]**.
 1. Siga um destes procedimentos:
 
    * Para pontos de conexão: Na imagem, selecione um local onde deseja que o ponto de acesso apareça.
-   * Para mapas de imagem: Na imagem, selecione e arraste de cima para a esquerda e de baixo para a direita para criar a área do mapa de imagem. É possível ajustar o tamanho do mapa de imagem arrastando os cantos.
+   * Para mapas de imagem: Na imagem, selecione e arraste de cima para a esquerda e para baixo para criar a área do mapa de imagem. É possível ajustar o tamanho do mapa de imagem arrastando os cantos.
 
    Se necessário, arraste o ponto de acesso ou o mapa de imagem para um novo local. Adicione pontos de acesso adicionais ou mapas de imagem, conforme necessário.
 
-   Para excluir um ponto de acesso ou mapa de imagem, selecione a guia **[!UICONTROL Actions]**. No cabeçalho **[!UICONTROL Mapas e pontos de acesso]**, no menu suspenso **[!UICONTROL Tipo selecionado]**, selecione o nome do ponto de acesso ou mapa de imagem que deseja remover. Selecione o ícone **[!UICONTROL Lixeira]** ao lado do menu e selecione **[!UICONTROL Excluir]**.
+   Para excluir um ponto de acesso ou mapa de imagem, selecione o **[!UICONTROL Ações]** guia . No cabeçalho **[!UICONTROL Mapas e pontos de acesso]**, no menu suspenso **[!UICONTROL Tipo selecionado]**, selecione o nome do ponto de acesso ou mapa de imagem que deseja remover. Selecione o **[!UICONTROL Lixeira]** ícone ao lado do menu e selecione **[!UICONTROL Excluir]**.
 
-1. No campo de texto Nome , digite o nome do ponto de acesso ou do mapa de imagem. Esse nome também aparece na lista suspensa **[!UICONTROL Mapas e hotspot]**. Fornecer um nome facilita a identificação do ponto de acesso ou mapa de imagem se você decidir alterá-lo no futuro.
-1. Siga um destes procedimentos na guia **[!UICONTROL Actions]**:
+1. No campo de texto Nome , digite o nome do ponto de acesso ou do mapa de imagem. Esse nome também aparece no **[!UICONTROL Mapas e pontos de conexão]** lista suspensa. Fornecer um nome facilita a identificação do ponto de acesso ou mapa de imagem se você decidir alterá-lo no futuro.
+1. Siga um destes procedimentos em **[!UICONTROL Ações]** guia :
 
-   * Selecione **[!UICONTROL Quickview]**.
+   * Selecionar **[!UICONTROL QuickView]**.
 
       * Se você for um cliente do Experience Manager Sites e do Ecommerce, selecione o ícone Seletor de produto (lupa) para abrir a página Selecionar produto . Selecione o produto que deseja usar e selecione a marca de seleção no canto superior direito da página para retornar ao editor de banner de carrossel.
-      * Se você não for um cliente do Experience Manager Sites ou Ecommerce
+      * Se você não for um cliente do Experience Manager Sites ou do Ecommerce
 
-         * Consulte [Identifique as variáveis de ponto de acesso](#identifying-hotspot-and-image-map-variables) se desejar definir essas variáveis.
+         * Consulte [Identificar variáveis de ponto de acesso](#identifying-hotspot-and-image-map-variables) se desejar definir essas variáveis.
          * Em seguida, insira manualmente o valor de SKU. No campo de texto Valor SKU , digite o SKU (Stock Keeping Unit) do produto, que é um identificador exclusivo para cada produto ou serviço distinto que você oferece. O valor de SKU inserido preenche automaticamente a parte variável do modelo do Quickview, de modo que o sistema saiba associar o ponto de acesso com um Quickview específico do SKU.
          * (Opcional) Se houver outras variáveis no Quickview que você deve usar para identificar ainda mais um produto, selecione **[!UICONTROL Adicionar variável genérica]**. No campo de texto, especifique uma variável extra. Por exemplo, category=Mens é uma variável adicionada.
 
          * Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md) para obter mais informações.
-   * Selecione **[!UICONTROL Hiperlink]**.
+   * Selecionar **[!UICONTROL Hiperlink]**.
 
-      * Se você for um cliente do Experience Manager Sites , selecione o ícone do Seletor de site (pasta) para navegar até um URL.
+      * Se você for um cliente do Experience Manager Sites, selecione o ícone do Seletor de site (pasta) para navegar até um URL.
          >[!NOTE]
-         O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .
+         O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do Experience Manager Sites.
 
       * Se você for um cliente independente, no campo de texto HREF, especifique o caminho do URL completo para uma página da Web vinculada.
 
@@ -304,9 +304,9 @@ Consulte também [Adicionar mapas de imagem](/help/assets/image-maps.md).
 
    Consulte [Trabalhar com seletores](/help/assets/working-with-selectors.md) para obter mais informações.
 
-   * Selecione **[!UICONTROL Fragmento de experiência]**.
+   * Selecionar **[!UICONTROL Fragmento de experiência]**.
 
-      * Se você for um cliente do Experience Manager Sites , selecione o ícone de Pesquisa (lupa) para abrir a página Fragmento de experiência . Selecione o Fragmento de experiência que deseja usar e selecione **[!UICONTROL Selecionar]** no canto superior direito da página para retornar à página de gerenciamento de ponto de acesso.
+      * Se você for um cliente do Experience Manager Sites, selecione o ícone de Pesquisa (lupa) para abrir a página Fragmento de experiência . Selecione o Fragmento de experiência que deseja usar e selecione **[!UICONTROL Selecionar]** no canto superior direito da página, para que você possa retornar à página de gerenciamento de pontos de acesso.
 Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md).
 
       * Especifique a largura e a altura do Fragmento de experiência como ele aparece no banner.
@@ -316,10 +316,10 @@ Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments
          Para contornar esse problema, crie predefinições do visualizador que não tenham ferramentas de compartilhamento de redes sociais. Essas predefinições do visualizador permitem que você as incorpore com êxito aos Fragmentos de experiência.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   Você também pode visualizar como o banner do carrossel aparece. Consulte [(Opcional) Visualização de banners de carrossel](#optional-previewing-carousel-banners).
+   Você também pode visualizar como o banner do carrossel aparece. Consulte [(Opcional) Visualização de banners em carrossel](#optional-previewing-carousel-banners).
 
 1. Selecione **[!UICONTROL Salvar]**.
-1. Publique o conjunto de carrossel. A publicação cria o código incorporado ou URL que você pode usar na página do site. Se você for um cliente do Experience Manager Sites , é possível adicionar o conjunto de carrossel diretamente à sua página da Web.
+1. Publique o conjunto de carrossel. A publicação cria o código incorporado ou URL que você pode usar na página do site. Se você for um cliente do Experience Manager Sites, poderá adicionar o conjunto de carrossel diretamente à sua página da Web.
 
    Consulte [Publicação de ativos](/help/assets/publishing-dynamicmedia-assets.md).
 
@@ -328,7 +328,7 @@ Consulte [Fragmentos de experiência](/help/sites-authoring/experience-fragments
 ## Editar conjuntos de carrossel {#editing-carousel-sets}
 
 >[!NOTE]
-Usuários não administrativos devem ser adicionados ao grupo **[!UICONTROL dam-users]** para poderem criar ou editar banners de carrossel. Se tiver problemas ao criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao grupo **[!UICONTROL dam-users]**.
+Usuários não administrativos devem ser adicionados ao **[!UICONTROL dam-users]** para criar ou editar banners de carrossel. Se tiver problemas ao criar ou editar, consulte o administrador do sistema que pode adicioná-lo ao **[!UICONTROL dam-users]** grupo.
 
 Você pode executar várias tarefas de edição em Conjuntos de carrossel, como as seguintes:
 
@@ -344,20 +344,20 @@ Você pode executar várias tarefas de edição em Conjuntos de carrossel, como 
 1. Siga um destes procedimentos:
 
    * Passe o mouse sobre um ativo Conjunto de carrossel e selecione **[!UICONTROL Editar]** (ícone de lápis).
-   * Passe o mouse sobre um ativo Conjunto de carrossel, selecione **[!UICONTROL Selecionar]** (ícone de marca de seleção) e selecione **[!UICONTROL Editar]** na barra de ferramentas.
+   * Passe o mouse sobre um ativo Conjunto de carrossel, selecione **[!UICONTROL Selecionar]** (ícone de marca de seleção), em seguida selecione **[!UICONTROL Editar]** na barra de ferramentas.
 
    * Selecione um ativo Conjunto de carrossel e, no canto superior esquerdo da página, selecione **[!UICONTROL Editar]** (ícone de lápis).
 
 1. Para editar o Conjunto de carrossel, siga um destes procedimentos:
 
-   * Para adicionar um slide, selecione o ícone **[!UICONTROL Adicionar slide]** e navegue até o ativo que deseja adicionar ao slide e selecione a marca de seleção.
+   * Para adicionar um slide, selecione o **[!UICONTROL Adicionar Slide]** em seguida, navegue até o ativo que deseja adicionar ao slide e selecione a marca de seleção.
    * Para reorganizar os slides, arraste um slide para um novo local (selecione o ícone de reordenação para mover itens).
-   * Para adicionar um ponto de acesso ou mapa de imagem, selecione os ícones de ponto de acesso ou mapa de imagem e consulte [adicionar pontos de acesso e mapas de imagem](#adding-hotspots-or-image-maps-to-an-image-banner).
-   * Para editar a aparência ou o comportamento do conjunto de carrossel, selecione a guia **[!UICONTROL Aparência]** ou a guia **[!UICONTROL Comportamento]** e defina as opções desejadas.
-   * Para editar pontos de acesso ou mapas de imagem, no slide apropriado, selecione um ponto de acesso ou mapa de imagem e altere conforme necessário na guia **[!UICONTROL Actions]**.
-   * Para excluir um slide, selecione-o e, em seguida, selecione **[!UICONTROL Excluir Slide]** na barra de ferramentas.
-   * Para aplicar uma predefinição, próximo ao canto superior direito da página, selecione a lista suspensa **[!UICONTROL Predefinição]** e selecione uma predefinição do visualizador.
-   * Para excluir um Conjunto de carrossel inteiro, navegue até o Conjunto de carrossel, selecione-o e depois selecione **[!UICONTROL Excluir]**.
+   * Para adicionar um ponto de acesso ou mapa de imagem, selecione os ícones de ponto de acesso ou mapa de imagem e consulte [adição de pontos de acesso e mapas de imagens](#adding-hotspots-or-image-maps-to-an-image-banner).
+   * Para editar a aparência ou o comportamento do conjunto de carrossel, selecione o **[!UICONTROL Aparência]** ou **[!UICONTROL Comportamento]** e defina as opções desejadas.
+   * Para editar pontos de acesso ou mapas de imagem, no slide apropriado, selecione um ponto de acesso ou mapa de imagem e altere conforme necessário sob o **[!UICONTROL Ações]** guia .
+   * Para excluir um slide, selecione-o e, em seguida, **[!UICONTROL Excluir Slide]** na barra de ferramentas.
+   * Para aplicar uma predefinição, próximo ao canto superior direito da página, selecione o **[!UICONTROL Predefinição]** lista suspensa e selecione uma predefinição do visualizador.
+   * Para excluir um conjunto de carrossel inteiro, navegue até o conjunto de carrossel, selecione-o e depois selecione **[!UICONTROL Excluir]**.
 
    >[!NOTE]
    Se você estiver editando imagens interativas com pontos de acesso e recortar a imagem, seus pontos de acesso serão removidos.
@@ -367,15 +367,15 @@ Você pode executar várias tarefas de edição em Conjuntos de carrossel, como 
 Você pode usar a Visualização para ver como o banner do carrossel aparece para os clientes e testar os pontos de acesso e mapas de imagem dos banners de carrossel para garantir que eles estejam se comportando conforme esperado.
 
 Quando estiver satisfeito com o banner do carrossel, você pode publicá-lo.
-Consulte [Incorporando o visualizador de vídeo ou imagem em uma página da Web](/help/assets/embed-code.md).
-Consulte [Vincular URLs ao aplicativo Web](/help/assets/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas de Experience Manager Sites .
+Consulte [Incorporação do visualizador de vídeo ou imagem em uma página da Web](/help/assets/embed-code.md).
+Consulte [Vincular URLs ao aplicativo da Web](/help/assets/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do Experience Manager Sites.
 Consulte [Adicionar ativos Dynamic Media às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
-Você pode visualizar banners de carrossel no Editor de carrossel (método preferencial) ou na lista **[!UICONTROL Visualizadores]**.
+Você pode visualizar banners de carrossel no Editor de carrossel (método preferencial) ou no **[!UICONTROL Visualizadores]** lista.
 
 **Para visualizar os banners de carrossel:**
 
-1. Em **[!UICONTROL Assets]**, navegue até um banner de carrossel existente que você criou e selecione para abri-lo.
+1. Em **[!UICONTROL Ativos]**, navegue até um banner de carrossel existente que você criou e selecione para abri-lo.
 1. Selecione **[!UICONTROL Editar]**.
 1. Na lista de predefinições do visualizador, no canto direito da barra de ferramentas, selecione um visualizador para visualizar o banner do carrossel.
 
@@ -386,9 +386,9 @@ Você pode visualizar banners de carrossel no Editor de carrossel (método prefe
 
 **Para visualizar banners de carrossel na lista Visualizadores:**
 
-1. Em **[!UICONTROL Assets]**, navegue até um banner de carrossel existente que você criou e selecione para abri-lo.
+1. Em **[!UICONTROL Ativos]**, navegue até um banner de carrossel existente que você criou e selecione para abri-lo.
 1. Próximo ao canto superior esquerdo da página Visualização, selecione o ícone Conteúdo.
-1. Na lista **[!UICONTROL Visualizadores]** no painel no lado esquerdo da página, selecione o nome da predefinição do visualizador do banner de carrossel que deseja usar.
+1. No **[!UICONTROL Visualizadores]** no painel no lado esquerdo da página, selecione o nome da predefinição do visualizador do banner de carrossel que deseja usar.
 1. Selecione os pontos de acesso ou mapas de imagem na imagem para que você possa testar suas ações associadas.
 
 ## Publicar banners em carrossel {#publishing-carousel-banners}
@@ -399,27 +399,27 @@ Publique o carrossel para usá-lo. A publicação de um Conjunto de carrossel at
 Se você usar uma imagem interativa existente com pontos de acesso para o seu banner de carrossel, deverá publicar a imagem interativa separadamente depois de publicar o banner de carrossel.
 Além disso, se você modificar uma imagem interativa publicada pré-existente que esteja usando em um banner de carrossel, deverá publicar a imagem interativa antes que essas alterações sejam refletidas no banner de carrossel.
 
-Consulte [Publicar ativos Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obter informações sobre como publicar banners de carrossel.
+Consulte [Publicar ativos do Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obter informações sobre como publicar banners em carrossel.
 
 ## Adicionar um banner de carrossel à página do site {#adding-a-carousel-banner-to-your-website-page}
 
 Depois de fazer upload das imagens do banner para criar um carrossel, adicionar pontos de acesso e/ou mapas de imagem ao banner e publicar o conjunto de carrossel, você estará pronto para adicioná-lo à página do site existente.
 
 >[!NOTE]
-Se você for um cliente do Experience Manager Sites , é possível adicionar o banner do carrossel diretamente à página, arrastando o componente Mídia interativa para a página. Consulte [Adicionar ativos do Dynamic Media às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Se você for um cliente do Experience Manager Sites, poderá adicionar o banner do carrossel diretamente à sua página, arrastando o componente Mídia interativa para a página. Consulte [Adicionar ativos do Dynamic Media às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 No entanto, se você for um cliente independente de Experience Manager assets , poderá adicionar manualmente o banner do carrossel à página de aterrissagem do site, conforme descrito nesta seção.
 
 1. Copie o código incorporado do conjunto de carrossel publicado.
-Consulte [Incorporar o visualizador de vídeo ou imagem em uma página da Web](/help/assets/embed-code.md).
+Consulte [Incorporar o vídeo ou o visualizador de imagens em uma página da Web](/help/assets/embed-code.md).
 
-1. Adicione o código incorporado que você copiou dos Ativos do Experience Manager na sua página da Web.
+1. Adicione o código incorporado que você copiou do Experience Manager Assets para sua página da Web.
 O código incorporado copiado é responsivo, portanto, deve se ajustar automaticamente à área de incorporação da página.
 
 ## Integre o banner do carrossel a um Quickview existente {#integrating-the-carousel-banner-with-an-existing-quickview}
 
 >[!NOTE]
-Esta etapa se aplica somente se você for um cliente independente do Experience Manager Assets.
+Essa etapa se aplica somente se você for um cliente independente do Experience Manager Assets.
 
 A última etapa desse processo é integrar o banner do carrossel a uma implementação existente do Quickview em seu site. Cada implementação do Quickview é única e é necessária uma abordagem específica que envolva a assistência de uma pessoa de TI front-end.
 
@@ -430,8 +430,8 @@ A implementação existente do Quickview normalmente representa uma cadeia de a�
 1. O código de front-end envia uma solicitação Ajax usando o URL obtido na etapa 2.
 1. A lógica de back-end retorna os dados ou o conteúdo correspondentes do Quickview de volta ao código de front-end.
 1. O código front-end carrega os dados ou o conteúdo do Quickview.
-1. Opcionalmente, o código front-end converte os dados do Quickview carregados em uma representação HTML.
-1. O código front-end exibe uma caixa de diálogo ou painel modal e renderiza o conteúdo HTML na tela do usuário final.
+1. Opcionalmente, o código front-end converte os dados do Quickview carregados em uma representação de HTML.
+1. O código front-end exibe uma caixa de diálogo ou painel modal e renderiza o conteúdo do HTML na tela do usuário final.
 
 Essas chamadas não representam chamadas de API públicas independentes que podem ser chamadas pela lógica da página da Web de uma etapa arbitrária. Em vez disso, é uma chamada encadeada em que cada próxima etapa está oculta na última fase (retorno de chamada) da etapa anterior.
 
@@ -443,13 +443,13 @@ Nesse manipulador de evento, o código front-end faz o seguinte:
 * Constrói um URL do Quickview com base no ponto de acesso ou nos dados do mapa de imagem.
 * Aciona o processo de carregamento do Quickview a partir do back-end e renderização na tela para exibição.
 
-O código incorporado retornado pelo Experience Manager Assets já tem um manipulador de eventos pronto para uso em vigor, que é comentado.
+O código incorporado retornado pelo Experience Manager Assets já tem um manipulador de eventos pronto para uso no local, que é comentado.
 
 Portanto, é necessário remover o comentário do código e substituir o corpo do manipulador de teste pelo código específico da página da Web em particular.
 
 O processo de construção do URL do Quickview é oposto do processo usado para identificar o ponto de acesso e as variáveis de mapa de imagem abordadas anteriormente.
 
-Consulte [Identificar variáveis de hotspot e mapa de imagem](#identifying-hotspot-and-image-map-variables).
+Consulte [Identificar os pontos de acesso e as variáveis do mapa de imagem](#identifying-hotspot-and-image-map-variables).
 
 A última etapa para acionar o URL do Quickview e ativar o painel do Quickview provavelmente requer a assistência de uma pessoa de TI front-end do seu departamento de TI. Eles têm o conhecimento de saber mais sobre como acionar com precisão a implementação do Quickview a partir da etapa adequada, tendo um URL Quickview pronto para uso.
 

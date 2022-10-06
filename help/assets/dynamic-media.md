@@ -1,5 +1,5 @@
 ---
-title: Trabalhar com a Dynamic Media
+title: Trabalhar com o Dynamic Media
 description: Saiba como usar o Dynamic Media para fornecer ativos para consumo na Web, em dispositivos móveis e em sites sociais.
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
@@ -9,11 +9,11 @@ content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
-feature: Colaboração,Gerenciamento de ativos
+feature: Collaboration,Asset Management
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 9%
+source-wordcount: '419'
+ht-degree: 13%
 
 ---
 
@@ -42,7 +42,7 @@ Os recursos exclusivos ao Dynamic Media incluem o seguinte:
 
 * [Conjuntos de rotação](spin-sets.md)
 * [Vídeo](video.md)
-* [Fornecer ativos da Dynamic Media](delivering-dynamic-media-assets.md)
+* [Entregar ativos do Dynamic Media](delivering-dynamic-media-assets.md)
 * [Gerenciar ativos](managing-assets.md)
 * [Criar pop-ups personalizados usando o Quickview](custom-pop-ups.md)
 
@@ -50,7 +50,7 @@ Consulte também [Configurar Dynamic Media](administering-dynamic-media.md).
 
 >[!NOTE]
 >
->Para compreender as diferenças entre o uso do Dynamic Media e a integração do Dynamic Media Classic com o Adobe Experience Manager, consulte [Integração do Dynamic Media Classic versus Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
+>Para entender as diferenças entre usar o Dynamic Media e integrar o Dynamic Media Classic ao Adobe Experience Manager, consulte [Integração do Dynamic Media Classic versus Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
 
 ## Dynamic Media ativado versus Dynamic Media desativado {#dynamic-media-on-versus-dynamic-media-off}
 
@@ -60,11 +60,11 @@ Consulte também [Configurar Dynamic Media](administering-dynamic-media.md).
 * Conjuntos de imagens, conjuntos de rotação, conjuntos de mídia mista estão disponíveis.
 * As representações PTIFF são criadas.
 
-Quando você seleciona um ativo de imagem, a exibição do ativo é diferente com o Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). O Dynamic Media usa os visualizadores HTML5 sob demanda.
+Quando você seleciona um ativo de imagem, a exibição do ativo é diferente com a Dynamic Media [ativado](config-dynamic.md#enabling-dynamic-media). O Dynamic Media usa os visualizadores HTML5 sob demanda.
 
 ### Representações dinâmicas {#dynamic-renditions}
 
-As representações dinâmicas, como predefinições de imagem e do visualizador (em **[!UICONTROL Dinâmico]**), estão disponíveis quando o Dynamic Media está ativado.
+Representações dinâmicas, como predefinições de imagem e do visualizador (em **[!UICONTROL Dinâmico]**) estão disponíveis quando o Dynamic Media está ativado.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
@@ -76,13 +76,13 @@ Conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista estarã
 
 ### Representações PTIFF {#ptiff-renditions}
 
-Os ativos habilitados para Dynamic Media incluem `pyramid.tiffs`.
+Os ativos habilitados para a Dynamic Media incluem `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
 ### Alteração nas exibições de ativos {#asset-views-change}
 
-Com o Dynamic Media ativado, é possível ampliar e diminuir o zoom clicando nos botões `+` e `-`. Também é possível clicar/tocar para ampliar determinadas áreas. Reverter o traz para a versão original e você pode fazer a imagem em tela cheia clicando nas setas diagonais. O Dynamic Media ativado tem esta aparência:
+Com o Dynamic Media ativado, é possível ampliar e diminuir o zoom clicando no botão `+` e `-` botões. Também é possível clicar/tocar para ampliar determinadas áreas. Reverter o traz para a versão original e você pode fazer a imagem em tela cheia clicando nas setas diagonais. O Dynamic Media ativado tem esta aparência:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

@@ -1,22 +1,21 @@
 ---
 title: Sua caixa de entrada
-seo-title: Sua caixa de entrada
+seo-title: Your Inbox
 description: Gerenciar suas tarefas com a caixa de entrada
-seo-description: Gerenciar suas tarefas com a caixa de entrada
+seo-description: Managing your tasks with the inbox
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
-translation-type: tm+mt
-source-git-commit: 530b1c3c1922eb10622888804a603cc82b3eb3aa
+exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 76%
+source-wordcount: '1140'
+ht-degree: 77%
 
 ---
-
 
 # Sua caixa de entrada{#your-inbox}
 
@@ -49,9 +48,7 @@ Você recebe essas notificações em sua própria caixa de entrada, onde você p
 >* [Projetos - trabalhar com tarefas](/help/sites-authoring/task-content.md)
 >* [Fluxos de trabalhos](/help/sites-authoring/workflows.md)
 >* [Forms](/help/forms/home.md)
-
 >
-
 
 
 ## Caixa de entrada no cabeçalho {#inbox-in-the-header}
@@ -113,7 +110,7 @@ Essa exibição apresenta itens de acordo com sua posição no calendário e a e
 
 ![wf-91](assets/wf-91.png)
 
-### Caixa de entrada - Configurações {#inbox-view-settings}
+### Caixa de entrada - configurações {#inbox-view-settings}
 
 Para ambas as exibições (Lista e Calendário), você pode definir configurações:
 
@@ -136,34 +133,34 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
    ![wf-83](assets/inbox-settings.png)
 
-### Caixa de entrada - Controle admin {#inbox-admin-control}
+### Caixa de entrada - Controle de administração {#inbox-admin-control}
 
 A opção Controle de administrador permite que os administradores:
 
-* Personalizar as colunas AEM Caixa de entrada
+* Personalizar as colunas da Caixa de entrada de AEM
 
-* Personalizar o texto e o logotipo do cabeçalho
+* Personalizar texto e logotipo do cabeçalho
 
 * Controlar a exibição de links de navegação disponíveis no cabeçalho
 
-A opção Controle de administrador está visível somente para os membros do grupo `administrators` ou `workflow-administrators`.
+A opção Controle de administrador está visível somente para os membros do `administrators` ou `workflow-administrators` grupo.
 
-* **Personalização** da coluna: Personalize uma Caixa de entrada AEM para alterar o título padrão de uma coluna, reordene a posição de uma coluna e exiba colunas adicionais com base nos dados de um fluxo de trabalho.
-   * **Adicionar Coluna**: Selecione uma coluna para adicionar AEM Caixa de entrada.
-   * **Editar coluna**: Passe o mouse sobre o título da coluna e toque em  ![](assets/edit.svg) editicon para inserir o nome de exibição da coluna.
-   * **Excluir coluna**: Toque no ícone de  ![](assets/delete_updated.svg) exclusão para excluir a coluna AEM Caixa de entrada.
-   * **Mover coluna**: Arraste o  ![](assets/move_updated.svg) ícone de movimento para mover uma coluna para uma nova posição AEM Caixa de entrada.
+* **Personalização de coluna**: Personalize uma Caixa de entrada de AEM para alterar o título padrão de uma coluna, reorganizar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho.
+   * **Adicionar coluna**: Selecione uma coluna para adicionar AEM Caixa de entrada.
+   * **Editar Coluna**: Passe o mouse sobre o título da coluna e toque em ![editar](assets/edit.svg) ícone para inserir um nome de exibição de coluna.
+   * **Excluir coluna**: Toque no ![excluir](assets/delete_updated.svg) ícone para excluir a coluna AEM Caixa de entrada.
+   * **Mover coluna**: Arraste o ![mover](assets/move_updated.svg) ícone para mover uma coluna para uma nova posição em AEM Caixa de entrada.
 
-   ![controle admin](assets/admin-control-column-customize.png)
+   ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personalização da marca**
 
-   * **Personalizar texto do cabeçalho:** Especifique o texto a ser exibido no cabeçalho para substituir o texto padrão do  **Adobe Experience** Manager.
+   * **Personalizar texto do cabeçalho:** Especifique o texto a ser exibido no cabeçalho para substituir o padrão **Adobe Experience Manager** texto.
 
-   * **Personalizar logotipo:** Especifique a imagem a ser exibida no cabeçalho como logotipo. Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte-a no campo.
+   * **Personalizar logotipo:** Especifique a imagem a ser exibida no cabeçalho como logotipo. Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte-a no campo .
 
 * **Navegação do usuário**
-   * **Ocultar opções de navegação:** Selecione essa opção para ocultar as opções de navegação disponíveis no cabeçalho. As opções de navegação incluem links para outras soluções, link Ajuda e as opções de criação disponíveis ao tocar no logotipo ou texto da Adobe Experience Manager.
+   * **Ocultar opções de navegação:** Selecione essa opção para ocultar as opções de navegação disponíveis no cabeçalho. As opções de navegação incluem links para outras soluções, link de Ajuda e as opções de criação disponíveis ao tocar no logotipo ou texto do Adobe Experience Manager.
 * **Salvar:** Toque/clique nessa opção para salvar as configurações.
 
 ## Realizar ação em um item {#taking-action-on-an-item}
@@ -179,7 +176,7 @@ A opção Controle de administrador está visível somente para os membros do gr
 
    As ações são apropriadas ao item e incluem:
 
-   * **Concluir** ação; por exemplo, uma tarefa ou um item de fluxo de trabalho.
+   * **Concluir** ação; por exemplo, uma tarefa ou item de fluxo de trabalho.
    * **Atribuir novamente**/**Delegar** um item.
    * **Abrir** um item; dependendo do tipo de item, essa ação pode:
 
@@ -194,7 +191,7 @@ A opção Controle de administrador está visível somente para os membros do gr
    >
    >Para obter mais informações, consulte:
    >
-   >* Itens de fluxo de trabalho - [ participar de fluxos de trabalho](/help/sites-authoring/workflows-participating.md)
+   >* Itens de fluxo de trabalho - [participar de fluxos de trabalho](/help/sites-authoring/workflows-participating.md)
 
 
 1. Dependendo do item selecionado, uma ação será iniciada; por exemplo:
@@ -236,13 +233,13 @@ Na caixa de entrada, você pode criar tarefas:
 
    * **Avançado**
 
-      * **Nome**: isso será usado para formar o URL; se estiver em branco, será baseado no **Title**.
+      * **Nome**: isso será usado para formar o URL; se estiver em branco, será baseado na variável **Título**.
 
    ![wf-87](assets/wf-87.png)
 
 1. Selecione **Enviar**.
 
-## Criação de um projeto    {#creating-a-project}
+## Criação de um projeto   {#creating-a-project}
 
 Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/projects.md) com base nessa tarefa:
 
@@ -291,4 +288,3 @@ Você pode filtrar os itens listados:
    >[!NOTE]
    >
    >Com [Configurações de exibição](#inbox-view-settings) você também pode configurar a ordem de classificação ao usar a [Exibição de lista](#inbox-list-view).
-

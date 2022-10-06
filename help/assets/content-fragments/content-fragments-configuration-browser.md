@@ -1,5 +1,5 @@
 ---
-title: Fragmentos de conteúdo - Navegador de configuração
+title: Fragmentos de conteúdo — Navegador de configuração
 description: Saiba como ativar determinadas funcionalidades de Fragmento de conteúdo no Navegador de configuração para aproveitar AEM poderosos recursos de entrega sem cabeçalho.
 feature: Content Fragments
 role: User
@@ -7,37 +7,37 @@ exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
 source-git-commit: 8dc8eff86ff25534a578dd227033aa185853d930
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 21%
+ht-degree: 70%
 
 ---
 
-# Fragmentos de conteúdo - Navegador de configuração{#content-fragments-configuration-browser}
+# Fragmentos de conteúdo — Navegador de configuração{#content-fragments-configuration-browser}
 
 Saiba como ativar determinadas funcionalidades de Fragmento de conteúdo no Navegador de configuração para aproveitar AEM poderosos recursos de entrega sem cabeçalho.
 
 ## Ativar a funcionalidade de fragmento de conteúdo para sua instância {#enable-content-fragment-functionality-instance}
 
-Antes de usar Fragmentos de conteúdo, você precisa usar o **Navegador de configuração** para ativar:
+Antes de usar fragmentos de conteúdo, você precisa usar o **navegador de configuração** para ativar:
 
-* **Modelos de fragmentos do conteúdo** - obrigatório
-* **Consultas Persistentes GraphQL** - opcional
+* **Modelos de fragmentos de conteúdo** (obrigatório)
+* **Consultas persistentes de GraphQL** (opcional)
 
 >[!CAUTION]
 >
->Se você não ativar **Modelos de fragmentos do conteúdo**:
+>Se você não ativar os **modelos de fragmentos de conteúdo**:
 >
->* o **Criar** não estará disponível para criar novos modelos.
->* você não poderá [selecione a configuração Sites para criar o ponto final relacionado](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+>* a opção **Criar** não estará disponível para criar novos modelos.
+>* você não poderá [selecionar a configuração de sites para criar o ponto de acesso relacionado](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
 
 
 Para ativar a funcionalidade do fragmento de conteúdo, é necessário:
 
 * Ativar o uso da funcionalidade de fragmento de conteúdo por meio do navegador de configuração
-* Aplicar a configuração à sua pasta Ativos
+* Aplicar a configuração à sua pasta de ativos
 
 ### Ativar a funcionalidade de fragmento de conteúdo no navegador de configuração {#enable-content-fragment-functionality-in-configuration-browser}
 
-Para [usar determinada funcionalidade de Fragmento de conteúdo](#creating-a-content-fragment-model) you **must** primeiro habilite-os por meio da **Navegador de configuração**:
+Para [usar determinadas funcionalidades do fragmento de conteúdo](#creating-a-content-fragment-model), primeiro é **necessário** habilitá-las por meio do **navegador de configuração**:
 
 >[!NOTE]
 >
@@ -47,11 +47,11 @@ Para [usar determinada funcionalidade de Fragmento de conteúdo](#creating-a-con
 >
 >Subconfigurações (uma configuração aninhada em uma configuração) são suportadas para uso com Fragmentos de conteúdo, mas não podem ser usadas para consultas GraphQL.
 
-1. Navegue até **Ferramentas**, **Gerale** abra o **Navegador de configuração**.
+1. Navegue até **Ferramentas**, **Geral**, e abra o **Navegador de configuração**.
 
-1. Use **Criar** para abrir a caixa de diálogo, onde você:
+1. Selecione **Criar** para abrir a caixa de diálogo, onde você:
 
-   1. Especifique um **Título**.
+   1. Especifica um **Título**.
    1. Para permitir seu uso, selecione
       * **Modelos de fragmentos do conteúdo**
       * **Consultas persistentes de GraphQL**
@@ -59,7 +59,7 @@ Para [usar determinada funcionalidade de Fragmento de conteúdo](#creating-a-con
       ![Definir configuração](assets/cfm-conf-01.png)
 
 
-1. Selecionar **Criar** para salvar a definição.
+1. Selecione **Criar** para salvar a definição.
 
 <!-- 1. Select the location appropriate to your website. -->
 

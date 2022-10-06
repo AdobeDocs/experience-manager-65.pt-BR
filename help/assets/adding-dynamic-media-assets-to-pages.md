@@ -128,7 +128,6 @@ O componente Dynamic Media é inteligente. Se você adicionar uma imagem ou um v
 >
 >* Várias instâncias do componente Dynamic Media sendo usado na mesma página.
 >* Cada instância usa o mesmo tipo de ativo.
-
 >
 >Não há suporte para a atribuição de uma predefinição do visualizador diferente para cada componente do Dynamic Media nessa página.
 >
@@ -284,7 +283,6 @@ O componente Mídia interativa é inteligente. Se você adicionar uma imagem ou 
 >
 >* Várias instâncias do componente Mídia interativa sendo usado na mesma página.
 >* Cada instância usa o mesmo tipo de ativo.
-
 >
 >Não há suporte para a atribuição de uma predefinição do visualizador diferente para cada componente de Mídia interativa nessa página.
 >
@@ -325,7 +323,6 @@ Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos 
 >
 >* Várias instâncias da **[!UICONTROL Mídia panorâmica]** componente sendo usado na mesma página.
 >* Cada instância usa o mesmo tipo de ativo.
-
 >
 >Atribuição de uma predefinição de visualizador diferente para cada **[!UICONTROL Mídia panorâmica]** não é compatível com o componente nessa página.
 >

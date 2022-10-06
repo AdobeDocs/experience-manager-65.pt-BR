@@ -1,8 +1,8 @@
 ---
 title: Console de componentes
-seo-title: Console de componentes
+seo-title: Components Console
 description: Console de componentes
-seo-description: 'null'
+seo-description: null
 uuid: a4e34d81-7875-4e26-8b48-4473e2905c37
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '262'
 ht-degree: 96%
 
 ---
-
 
 # Console de componentes{#components-console}
 
@@ -75,4 +74,3 @@ Para exibir detalhes sobre um componente específico, toque/clique no recurso de
    Se o desenvolvedor tiver fornecido a [documentação referente ao componente](/help/sites-developing/developing-components.md#documenting-your-component), ela aparecerá na guia **Documentação**. Se não houver documentação disponível, a guia **Documentação** não será exibida.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
-

@@ -1,8 +1,8 @@
 ---
 title: Integração da interface Criar correspondência com o portal personalizado
-seo-title: Integração da interface Criar correspondência com o portal personalizado
+seo-title: Integrating Create Correspondence UI with your custom portal
 description: Saiba como integrar criar interface de usuário de correspondência com seu portal personalizado
-seo-description: Saiba como integrar criar interface de usuário de correspondência com seu portal personalizado
+seo-description: Learn how to integrate create correspondence UI with your custom portal
 uuid: 68ef5bf2-b271-4c44-8840-6c495069164d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,13 @@ topic-tags: correspondence-management
 discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c3b6ee31-ccbb-4446-86c8-f618226fefc4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '413'
 ht-degree: 4%
 
 ---
-
 
 # Integração da interface Criar correspondência com o portal personalizado{#integrating-create-correspondence-ui-with-your-custom-portal}
 
@@ -44,11 +43,11 @@ Por exemplo, o portal personalizado prepararia o URL como\
 >
 >Antes de chamar o aplicativo Criar correspondência , salve e faça upload dos dados para chamar a interface do usuário Criar correspondência no dataURL fornecido. Isso pode ser feito pelo próprio portal personalizado ou por outro processo back-end.
 
-## Invocação baseada em dados em linha {#inline-data-based-invocation}
+## Invocação embutida baseada em dados {#inline-data-based-invocation}
 
-Outra maneira (e mais segura) de chamar o aplicativo Criar correspondência pode ser simplesmente pressionar o URL em https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, enquanto envia os parâmetros e dados para chamar o aplicativo Criar correspondência como uma solicitação POST (ocultando-os do usuário final). Isso também significa que agora é possível transmitir os dados XML para o aplicativo Create Correspondence em linha (como parte da mesma solicitação, usando o parâmetro cmData ), que não era possível/ideal na abordagem anterior.
+Outra maneira (e mais segura) de chamar o aplicativo Create Correspondence pode ser simplesmente pressionar o URL em https://&#39;[server]:[porta]&#39;/[contextPath]/aem/forms/createcorrespondence.html, ao enviar os parâmetros e dados para chamar o aplicativo Create Correspondence como uma solicitação do POST (ocultando-os do usuário final). Isso também significa que agora é possível transmitir os dados XML para o aplicativo Create Correspondence em linha (como parte da mesma solicitação, usando o parâmetro cmData ), que não era possível/ideal na abordagem anterior.
 
-### Parâmetros para especificar a letra {#parameters-for-specifying-letter}
+### Parâmetros para especificação de carta {#parameters-for-specifying-letter}
 
 | **Nome** | **Tipo** | **Descrição** |
 |---|---|---|

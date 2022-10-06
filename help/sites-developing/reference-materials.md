@@ -15,7 +15,7 @@ exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
 source-git-commit: d6c875e85d553b8ef557b811c9fa43f46824f297
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -42,7 +42,7 @@ AEM APIs de entrega e gerenciamento de conteúdo:
 * Componentes principais (JSON)
 
    * [Exportador JSON](/help/sites-developing/json-exporter.md)
-   * [Ativando a exportação JSON para um componente](/help/sites-developing/json-exporter-components.md)
+   * [Ativação de exportação em JSON para um componente](/help/sites-developing/json-exporter-components.md)
    * Consulte a [Seção Componentes no Guia do usuário de desenvolvimento](/help/sites-developing/home.md) para obter mais informações
 
 * **Ativos**: A API HTTP do Assets permite criar-ler-atualizar-excluir (CRUD) operações em Ativos, incluindo binários, metadados, representações e comentários. Consulte [API HTTP AEM Assets](/help/assets/mac-api-assets.md)

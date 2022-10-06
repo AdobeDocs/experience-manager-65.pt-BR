@@ -1,49 +1,48 @@
 ---
 title: Criação de componentes de layout personalizados para formulários adaptáveis
-seo-title: Criação de componentes de layout personalizados para formulários adaptáveis
+seo-title: Creating custom layout components for adaptive forms
 description: Procedimento para criar componentes de layout personalizados para formulários adaptáveis.
-seo-description: Procedimento para criar componentes de layout personalizados para formulários adaptáveis.
+seo-description: Procedure to create custom layout components for adaptive forms.
 uuid: f0bb5fcd-3938-4804-ad0c-d96d3083fd01
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: d4ae432d-557d-4e89-92b8-dca5f37cb6f8
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 544b06f9-2456-4c05-88c2-b5349947742d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 0%
+source-wordcount: '270'
+ht-degree: 1%
 
 ---
-
 
 # Criação de componentes de layout personalizados para formulários adaptáveis{#creating-custom-layout-components-for-adaptive-forms}
 
 ## Pré-requisitos {#prerequisite}
 
-Conhecimento de layouts, que permite criar/usar um layout personalizado. Consulte [Alteração do layout do painel](../../forms/using/layout-capabilities-adaptive-forms.md).
+Conhecimento sobre layouts, que permite criar/usar um layout personalizado. Consulte [Alterar o layout do painel](../../forms/using/layout-capabilities-adaptive-forms.md).
 
 ## Componente de layout do painel de formulário adaptável {#adaptive-form-panel-layout-component}
 
-O componente Layout do painel de formulário adaptável controla a maneira como os componentes de formulário adaptáveis são posicionados em um painel relativo à interface do usuário.
+O componente Layout do painel de formulário adaptável controla a maneira como os componentes de formulário adaptáveis são posicionados em um painel em relação à interface do usuário.
 
 ## Criação de um layout de painel personalizado {#creating-a-custom-panel-layout}
 
-1. Navegue até o local `/crx/de`.
-1. Copie um layout de painel do local `/libs/fd/af/layouts/panel` (por exemplo, `tabbedPanelLayout`) para `/apps` (por exemplo, `/apps/af-custom-layout`).
-1. Renomeie o layout copiado para `customPanelLayout`. Altere as propriedades dos nós `qtip` e `jcr:description`. Por exemplo, altere-os para `Custom layout - Toggle tabs`.
+1. Navegar até o local `/crx/de`.
+1. Copiar um layout de painel do local `/libs/fd/af/layouts/panel` (por exemplo, `tabbedPanelLayout`) a `/apps` (por exemplo, `/apps/af-custom-layout`).
+1. Renomeie o layout copiado para o `customPanelLayout`. Alterar as propriedades dos nós `qtip` e `jcr:description`. Por exemplo, altere para `Custom layout - Toggle tabs`.
 
-qtip
+qdica
 
 ![Instantâneo CRX DE Layout do Painel Personalizado](assets/custom_layout_new.png)
 
 >[!NOTE]
 >
->Definir a propriedade `guideComponentType`como o valor `fd/af/layouts/panel` determina que o layout é um layout de painel.
+>Configuração da propriedade `guideComponentType`ao valor `fd/af/layouts/panel` determina que o layout é um layout de painel.
 
-1. Renomeie o arquivo `tabbedPanelLayout.jsp` sob o novo layout para customPanelLayout.jsp.
-1. Para introduzir novos estilos e comportamentos, crie uma biblioteca de cliente no nó `etc`. Por exemplo, no local /etc/af-custom-layout-clientlib, crie o nó client-library. Deixe que o nó tenha a propriedade categoria af.panel.custom. Ele tem os seguintes arquivos .css e .js:
+1. Renomear o arquivo `tabbedPanelLayout.jsp` no novo layout para customPanelLayout.jsp.
+1. Para introduzir novos estilos e comportamentos, crie uma biblioteca de clientes no `etc` nó . Por exemplo, no local /etc/af-custom-layout-clientlib, crie o nó client-library. Deixe o nó ter a propriedade de categorias af.panel.custom. Ele tem os seguintes arquivos .css e .js:
 
    ```css
    /** CSS defining new styles used by custom layout **/
@@ -115,9 +114,9 @@ qtip
    });
    ```
 
-1. Para aprimorar a aparência e o comportamento, você pode incluir um `client library`.
+1. Para aprimorar a aparência e o comportamento, é possível incluir uma `client library`.
 
-   Além disso, atualize os caminhos dos scripts incluídos em arquivos .jsp. Por exemplo, atualize o arquivo `customPanelLayout.jsp` da seguinte maneira:
+   Além disso, atualize os caminhos dos scripts incluídos em arquivos .jsp. Por exemplo, atualize o `customPanelLayout.jsp` como segue:
 
    ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
@@ -146,7 +145,7 @@ qtip
    </div>
    ```
 
-   O arquivo `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp`:
+   O `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` arquivo:
 
    ```html
    <%-- jsp governing the navigation part --%>
@@ -175,7 +174,7 @@ qtip
    </ul>
    ```
 
-   O `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp` atualizado:
+   O arquivo `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
 
    ```html
    <%-- jsp governing the panel content --%>
@@ -204,8 +203,8 @@ qtip
 
 1. Abra um formulário adaptável no modo Criação. O layout do painel definido é adicionado à lista para configurar layouts de painel.
 
-   ![O layout do Painel personalizado é exibido na ](assets/auth-layt.png) ![lista de layout do painelCaptura de tela do formulário adaptativo, usando o ](assets/s1.png) ![layout personalizado do painelCaptura de tela que demonstra a funcionalidade de alternância do layout personalizado](assets/s2.png)
+   ![O layout do Painel personalizado é exibido na lista de layout do painel](assets/auth-layt.png) ![Captura de tela do formulário adaptável, usando o layout personalizado do painel](assets/s1.png) ![Captura de tela demonstrando a funcionalidade de alternância do layout personalizado](assets/s2.png)
 
-Amostra de ZIP para um layout de painel personalizado e um formulário adaptável usando-o.
+ZIP de amostra para um layout de painel personalizado e um formulário adaptável usando-o.
 
 [Obter arquivo](assets/af-custom-layout.zip)

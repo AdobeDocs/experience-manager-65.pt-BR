@@ -1,10 +1,11 @@
 ---
 title: Como atualizar seu conteúdo por meio das APIs do AEM Assets
 description: Nesta parte da Jornada do desenvolvedor sem cabeçalho AEM, saiba como usar a REST API para acessar e atualizar o conteúdo dos Fragmentos de conteúdo.
-source-git-commit: 7f43d9d6b631b26f7b9293aa109498d0c8040436
+exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -12,7 +13,7 @@ ht-degree: 2%
 
 Nesta parte do [AEM Jornada de desenvolvedor sem periféricos,](overview.md) saiba como usar a REST API para acessar e atualizar o conteúdo dos Fragmentos de conteúdo.
 
-## A História Até Agora {#story-so-far}
+## A história até agora {#story-so-far}
 
 No documento anterior da jornada sem cabeçalho AEM, [Como acessar seu conteúdo por meio AEM APIs de entrega](access-your-content.md) você aprendeu a acessar seu conteúdo headless no AEM por meio da API GraphQL AEM e agora deve:
 
@@ -281,7 +282,7 @@ O uso é via:
 
 O corpo deve conter uma representação JSON do fragmento de conteúdo a ser criado, incluindo qualquer conteúdo inicial que deve ser definido nos elementos do fragmento de conteúdo. É obrigatório definir a variável `cq:model` e deve apontar para um modelo de fragmento de conteúdo válido. Se isso não for feito, haverá um erro. Também é necessário adicionar um cabeçalho `Content-Type` que está definida como `application/json`.
 
-### Atualizar {#update}
+### Atualizar o {#update}
 
 O uso é via
 

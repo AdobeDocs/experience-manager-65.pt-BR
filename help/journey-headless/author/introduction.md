@@ -1,10 +1,11 @@
 ---
 title: jornada do autor de conteúdo sem cabeçalho do AEM
 description: Uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager e como criar conteúdo para o seu projeto.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -23,7 +24,7 @@ O que é um sistema de gerenciamento de conteúdo?
 
 Um Sistema de Gerenciamento de Conteúdo (CMS) é exatamente o que diz ser - um sistema de computador usado para gerenciar conteúdo. Isso é um pouco geral, portanto, para ser mais preciso, ele é (normalmente) usado para gerenciar conteúdo que você deseja disponibilizar em seu(s) site(s).
 
-## CMS sem periféricos {#headless-cms}
+## CMS headless {#headless-cms}
 
 Headless é um termo usado para descrever sistemas que efetivamente desconectam o conteúdo da maneira de exibir esse conteúdo na Web.
 
@@ -45,7 +46,7 @@ Em primeiro lugar, AEM é um sistema de gerenciamento de conteúdo com uma grand
 
 Isso significa que ele pode ser usado como um:
 
-* CMS sem periféricos
+* CMS headless
    * Para ser headless, seu conteúdo pode ser criado como **Fragmentos de conteúdo**.
 Esses são itens autônomos de conteúdo que podem ser acessados diretamente por uma variedade de aplicativos, pois têm uma estrutura predefinida, com base em **Modelos de fragmentos do conteúdo**.
 Isso significa que o conteúdo pode atingir uma grande variedade de dispositivos, em uma grande variedade de formatos e com uma ampla seleção de funcionalidade.
@@ -77,6 +78,6 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sai
 * jornada do desenvolvedor sem periféricos do AEM
    * [Saiba mais sobre o desenvolvimento sem periféricos do CMS](/help/journey-headless/developer/learn-about.md)
 
-* [jornada do AEM Headless Content Architect](/help/journey-headless/architect/overview.md)
+* [Jornada do arquiteto de conteúdo do AEM Headless](/help/journey-headless/architect/overview.md)
 
 * [jornada de tradução de conteúdo sem cabeçalho do AEM](/help/journey-headless/translation/overview.md)

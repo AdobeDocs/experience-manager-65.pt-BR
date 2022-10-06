@@ -8,7 +8,7 @@ exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
 source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 21%
+ht-degree: 23%
 
 ---
 
@@ -32,7 +32,7 @@ Crie, gerencie, processe e distribua ativos digitais no Experience Manager. Esse
 | [Guia de administração](/help/sites-administering/home.md) | Entenda como administrar o Adobe Experience Manager. |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no Experience Manager. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no Experience Manager na interface do usuário clássica. |
-| [Guia do usuário do Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
+| [Guia do usuário do Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=pt-BR) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
 | [Guia de implantação do usuário](/help/sites-deploying/home.md) | Este guia mostra os conceitos básicos do Experience Manager. |
 | [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar a implantação do Experience Manager. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto do Experience Manager com êxito. |

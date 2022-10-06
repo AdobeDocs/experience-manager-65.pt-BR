@@ -1,8 +1,8 @@
 ---
 title: Modelos de site
-seo-title: Modelos de site
+seo-title: Site Templates
 description: Como acessar o console Modelos de site
-seo-description: Como acessar o console Modelos de site
+seo-description: How to access the Site Templates console
 uuid: d2f7556e-7e43-424e-82f1-41790aeb2d98
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ role: Admin
 exl-id: 05a944a3-adb1-47b4-b4a5-15bac91c995e
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '454'
 ht-degree: 4%
 
 ---
 
 # Modelos de site {#site-templates}
 
-O console Modelos de site é muito semelhante ao console [Modelos de grupo](tools-groups.md), que está focado em funções de interesse para grupos da Comunidade.
+O console Modelos de site é muito semelhante ao [Modelos de grupo](tools-groups.md) , centrada em funções de interesse para grupos da Comunidade.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ No ambiente de criação, para acessar o console de sites da comunidade:
 
 * Na navegação global: **[!UICONTROL Ferramentas > Comunidades > Modelos do site]**
 
-Esse console exibe os modelos a partir dos quais um [site da comunidade](sites-console.md) pode ser criado e permite a criação de novos modelos de site.
+Esse console exibe os modelos a partir dos quais uma [site da comunidade](sites-console.md) podem ser criados e permitem a criação de novos modelos de site.
 
 ![modelo de site](assets/site-template.png)
 
@@ -72,7 +72,7 @@ No painel Informações básicas , um nome, uma descrição e se o modelo está 
 
 Para adicionar funções de comunidade, arraste do lado direito para a esquerda na ordem em que os links de menu do site devem aparecer. Os estilos serão aplicados ao modelo durante a criação do site.
 
-Por exemplo, se você deseja uma página inicial, arraste a função Página da biblioteca e solte no construtor de modelos. Isso resultará na abertura da caixa de diálogo de configuração da página. Consulte o [console de funções](functions.md) para obter informações sobre as caixas de diálogo de configuração.
+Por exemplo, se você deseja uma página inicial, arraste a função Página da biblioteca e solte no construtor de modelos. Isso resultará na abertura da caixa de diálogo de configuração da página. Consulte a [console funções](functions.md) para obter informações sobre as caixas de diálogo de configuração.
 
 Continue arrastando e soltando quaisquer outras funções da comunidade desejadas para um site da comunidade com base neste modelo.
 
@@ -80,9 +80,9 @@ A função de página fornece uma página vazia. A função de grupos fornece a 
 
 >[!CAUTION]
 >
->A função de grupos deve *não* ser a *primeira nem a única* função na estrutura do site.
+>A função de grupos deve *not* ser *primeiro nem o único* na estrutura do site.
 >
->Qualquer outra função, como [page function](functions.md#page-function), deve ser incluída e listada primeiro.
+>Qualquer outra função, como a [função de página](functions.md#page-function), deve ser incluída e listada primeiro.
 
 ![editor de site](assets/site-editor.png)
 
@@ -92,7 +92,7 @@ Ao incluir uma função de grupos no modelo do site, a configuração requer a e
 
 >[!CAUTION]
 >
->A função Grupos deve *não* ser a *primeira nem a única* função na estrutura do site.
+>A função Grupos deve *not* ser *primeiro nem o único* na estrutura do site.
 
 ![funções do site](assets/site-functions.png)
 
@@ -102,6 +102,6 @@ Ao selecionar dois ou mais modelos de grupo da comunidade, uma opção é fornec
 
 ## Modelo de sites de edição {#edit-site-template}
 
-Ao visualizar modelos de site no [console Modelos de site](#site-templates-console) principal, é possível selecionar um modelo de site existente para edição.
+Ao visualizar modelos de site no [Console de modelos de site](#site-templates-console), é possível selecionar um modelo de site existente para edição.
 
-Esse processo fornece os mesmos painéis que [criar um modelo de site](#create-site-template).
+Esse processo fornece os mesmos painéis que [criação de um modelo de site](#create-site-template).

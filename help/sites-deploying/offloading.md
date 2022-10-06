@@ -1,8 +1,8 @@
 ---
 title: Descarregamento de Tarefas
-seo-title: Descarregamento de Tarefas
+seo-title: Offloading Jobs
 description: Saiba como configurar e usar instâncias AEM em uma topologia para executar tipos específicos de processamento.
-seo-description: Saiba como configurar e usar instâncias AEM em uma topologia para executar tipos específicos de processamento.
+seo-description: Learn how to configure and use AEM instances in a topology in order to perform specific types of processing.
 uuid: e971d403-dfd2-471f-b23d-a67e35f1ed88
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2404'
+source-wordcount: '2382'
 ht-degree: 1%
 
 ---
-
 
 # Descarregamento de Tarefas{#offloading-jobs}
 
@@ -25,7 +24,7 @@ ht-degree: 1%
 
 A descarga distribui tarefas de processamento entre instâncias de Experience Manager em uma topologia. Com a descarga, você pode usar instâncias Experience Manager específicas para executar tipos específicos de processamento. O processamento especializado permite maximizar o uso dos recursos disponíveis do servidor.
 
-A descarga é baseada nos recursos [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling JobManager. Para usar a descarga, você adiciona Experience Manager clusters a uma topologia e identifica os tópicos de trabalho que o cluster processa. Os clusters são compostos de uma ou mais instâncias de Experience Manager, de modo que uma única instância é considerada um cluster.
+A descarga é baseada na variável [Descoberta do Apache Sling](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e recursos do Sling JobManager. Para usar a descarga, você adiciona Experience Manager clusters a uma topologia e identifica os tópicos de trabalho que o cluster processa. Os clusters são compostos de uma ou mais instâncias de Experience Manager, de modo que uma única instância é considerada um cluster.
 
 Para obter informações sobre como adicionar instâncias a uma topologia, consulte [Administração de topologias](/help/sites-deploying/offloading.md#administering-topologies).
 
@@ -41,7 +40,7 @@ Quando o JobManager cria um trabalho, a estrutura Offloading seleciona um cluste
 * O cluster deve incluir uma ou mais instâncias que estejam executando um JobConsumer que esteja registrado para o tópico de trabalho.
 * O tópico deve ser ativado para pelo menos uma instância no cluster.
 
-Consulte [Configurando o Consumo de Tópico](/help/sites-deploying/offloading.md#configuring-topic-consumption) para obter informações sobre como refinar a distribuição de tarefas.
+Consulte [Configurar o consumo de tópico](/help/sites-deploying/offloading.md#configuring-topic-consumption) para obter informações sobre como refinar a distribuição de tarefas.
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
@@ -68,7 +67,7 @@ O Serviço de Descoberta de todos os membros da topologia aponta para o Conector
 
 Cada cluster na topologia contém uma instância reconhecida como líder. O líder do cluster interage com a topologia em nome dos outros membros do cluster. Quando o pontilhado deixa o cluster, um novo pontilhado do cluster é automaticamente escolhido.
 
-### Exibição da Topologia {#viewing-the-topology}
+### Exibição da topologia {#viewing-the-topology}
 
 Use o Navegador de topologia para explorar o estado da topologia em que a instância do Experience Manager está participando. O Navegador de topologia mostra os clusters e instâncias da topologia.
 
@@ -81,7 +80,7 @@ Para cada instância no cluster, você pode ver várias propriedades relacionada
 * Os tópicos da tarefa para os quais a instância está registrada para descarregamento.
 * Os tópicos da tarefa que a instância processa.
 
-1. Usando a interface de toque, clique na guia Ferramentas . ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
+1. Usando a interface de toque, clique na guia Ferramentas. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
 1. Na área Operações de Granite, clique em Descarregar navegador.
 1. No painel de navegação, clique em Navegador de topologia.
 
@@ -105,7 +104,7 @@ Use o procedimento a seguir para abrir a página Gerenciamento de Topologia do C
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
-### Configurando a Associação de Topologia {#configuring-topology-membership}
+### Configuração da Associação de Topologia {#configuring-topology-membership}
 
 O Apache Sling Resource-Based Discovery Service é executado em cada instância para controlar como as instâncias do Experience Manager interagem com uma topologia.
 
@@ -177,13 +176,13 @@ Execute o procedimento a seguir no membro raiz da topologia. O procedimento adic
 1. Clique em Configurar serviço de descoberta.
 1. Para cada membro da topologia, adicione um item à propriedade de lista de permissões Topology Connector e especifique o nome do host ou endereço IP do membro da topologia.
 
-## Configuração do Consumo de Tópico {#configuring-topic-consumption}
+## Configurar o consumo de tópico {#configuring-topic-consumption}
 
 Use o Navegador de descarga para configurar o consumo de tópico para as instâncias de Experience Manager na topologia. Para cada instância, é possível especificar os tópicos que ela consome. Por exemplo, para configurar sua topologia de forma que somente uma instância consuma tópicos de um tipo específico, desative o tópico em todas as instâncias, exceto uma.
 
 As tarefas são distribuídas entre instâncias que têm o tópico associado habilitado usando a lógica de round robin.
 
-1. Usando a interface de toque, clique na guia Ferramentas . ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
+1. Usando a interface de toque, clique na guia Ferramentas. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
 1. Na área Operações de Granite, clique em Descarregar navegador.
 1. No painel de navegação, clique em Descarregar navegador.
 
@@ -202,9 +201,9 @@ As tarefas são distribuídas entre instâncias que têm o tópico associado hab
    * Desativado: Essa instância não consome trabalhos desse tópico.
    * Exclusivo: Essa instância consome trabalhos somente desse tópico.
 
-   **Observação:** ao selecionar Exclusivo para um tópico, todos os outros tópicos são automaticamente definidos como Desativado.
+   **Observação:** Quando você seleciona Exclusivo para um tópico, todos os outros tópicos são automaticamente definidos como Desativado.
 
-### Consumidores de trabalho instalados {#installed-job-consumers}
+### Consumidores de Trabalho Instalados {#installed-job-consumers}
 
 Várias implementações do JobConsumer são instaladas com o Experience Manager. Os tópicos para os quais esses JobConsumers estão registrados são exibidos no Navegador de Descarregamento. Os tópicos adicionais que aparecem são aqueles que JobConsumers personalizados registraram. A tabela a seguir descreve o JobConsumers padrão.
 
@@ -221,15 +220,15 @@ Várias implementações do JobConsumer são instaladas com o Experience Manager
 
 O serviço Apache Sling Job Consumer Manager fornece propriedades de lista de permissões e lista de bloqueios de tópicos. Configure essas propriedades para ativar ou desativar o processamento de tópicos específicos em uma instância do Experience Manager.
 
-**Observação:** se a instância pertencer a uma topologia, você também poderá usar o Navegador de descarga em qualquer computador na topologia para ativar ou desativar os tópicos.
+**Observação:** Se a instância pertencer a uma topologia, você também poderá usar o Navegador de descarga em qualquer computador na topologia para ativar ou desativar os tópicos.
 
-A lógica que cria a lista de tópicos ativados primeiro permite todos os tópicos que estão na lista de permissões e, em seguida, remove os tópicos que estão na lista de bloqueios. Por padrão, todos os tópicos são ativados (o valor da lista de permissões é `*`) e nenhum tópico é desativado (a lista de bloqueios não tem valor).
+A lógica que cria a lista de tópicos ativados primeiro permite todos os tópicos que estão na lista de permissões e, em seguida, remove os tópicos que estão na lista de bloqueios. Por padrão, todos os tópicos são ativados (o valor da lista de permissões é `*`) e nenhum tópico estiver desativado (a lista de bloqueios não tem valor).
 
-Use o Console da Web ou um nó `sling:OsgiConfig` para configurar as seguintes propriedades. Para nós `sling:OsgiConfig`, o PID do serviço Gerenciador de Consumidores de Trabalho é org.apache.sling.event.impl.jobs.JobConsumerManager.
+Use o Console da Web ou um `sling:OsgiConfig` para configurar as seguintes propriedades. Para `sling:OsgiConfig` , o PID do serviço Gerenciador de Consumidores de Trabalho é org.apache.sling.event.impl.jobs.JobConsumerManager.
 
 | Nome da propriedade no Console da Web | ID do OSGi | Descrição |
 |---|---|---|
-| Lista de permissões de tópico | job.consumermanager.whitelist | Uma lista de tópicos que o serviço local do JobManager processa. O valor padrão de &amp;ast; faz com que todos os tópicos sejam enviados para o serviço TopicConsumer registrado. |
+| Lista de permissões de tópico | job.consumermanager.whitelist | Uma lista de tópicos que o serviço local do JobManager processa. O valor padrão do &amp;ast; faz com que todos os tópicos sejam enviados para o serviço TopicConsumer registrado. |
 | Lista de bloqueios de tópico | job.consumermanager.blacklist | Uma lista de tópicos que o serviço local do JobManager não processa. |
 
 ## Criando Agentes De Replicação Para Descarregamento {#creating-replication-agents-for-offloading}
@@ -238,11 +237,11 @@ A estrutura de descarregamento usa a replicação para transportar recursos entr
 
 >[!CAUTION]
 >
->Um problema conhecido com os agentes de replicação gerados automaticamente requer a criação manual de novos agentes de replicação. Siga o procedimento em [Problems Using the Automatically Generated Replication Agents](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) antes de criar os agentes para descarga.
+>Um problema conhecido com os agentes de replicação gerados automaticamente requer a criação manual de novos agentes de replicação. Siga o procedimento em [Problemas ao usar os agentes de replicação gerados automaticamente](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) antes de criar os agentes para Descarregamento.
 
 Crie os agentes de replicação que transportam cargas de trabalho entre instâncias para descarregamento. A ilustração a seguir mostra os agentes necessários para descarregar do autor para uma instância de trabalho. O autor tem uma ID do Sling de 1 e a instância do trabalhador tem uma ID do Sling de 2:
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 Essa configuração requer os três agentes a seguir:
 
@@ -256,19 +255,19 @@ Esse esquema de replicação é semelhante ao usado entre instâncias de autor e
 >
 >A estrutura Descarregamento usa a topologia para obter os endereços IP das instâncias de descarregamento. A estrutura então cria automaticamente os agentes de replicação com base nesses endereços IP. Se os endereços IP das instâncias de descarregamento forem alterados posteriormente, a alteração será propagada automaticamente na topologia depois que a instância for reiniciada. No entanto, a estrutura de Descarregamento não atualiza automaticamente os agentes de replicação para refletir os novos endereços IP. Para evitar essa situação, use endereços IP fixos para todas as instâncias na topologia.
 
-### Como nomear os agentes de replicação para descarregar {#naming-the-replication-agents-for-offloading}
+### Como nomear os agentes de replicação para descarregamento {#naming-the-replication-agents-for-offloading}
 
-Use um formato específico para a propriedade ***Name*** dos agentes de replicação para que a estrutura de descarregamento use automaticamente o agente correto para instâncias de trabalho específicas.
+Use um formato específico para a variável ***Nome*** propriedade dos agentes de replicação para que a estrutura de descarregamento use automaticamente o agente correto para instâncias de trabalho específicas.
 
 **Nomear o agente de saída na instância do autor:**
 
-`offloading_<slingid>`, onde  `<slingid>` é a ID do Sling da instância do trabalhador.
+`offloading_<slingid>`, onde `<slingid>` é a ID do Sling da instância do trabalhador.
 
 Exemplo: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Nomear o agente reverso na instância do autor:**
 
-`offloading_reverse_<slingid>`, onde  `<slingid>` é a ID do Sling da instância do trabalhador.
+`offloading_reverse_<slingid>`, onde `<slingid>` é a ID do Sling da instância do trabalhador.
 
 Exemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
@@ -276,9 +275,9 @@ Exemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 `offloading_outbox`
 
-### Criando o agente de saída {#creating-the-outgoing-agent}
+### Criação do agente de saída {#creating-the-outgoing-agent}
 
-1. Crie um **Agente de Replicação** no autor. (Consulte a documentação [para agentes de replicação](/help/sites-deploying/replication.md)). Especifique qualquer **Título**. O **Nome** deve seguir a convenção de nomenclatura.
+1. Crie um **Agente de replicação** sobre o autor. (Consulte o [documentação para agentes de replicação](/help/sites-deploying/replication.md)). Especifique qualquer **Título**. O **Nome** deve seguir a convenção de nomenclatura.
 1. Crie o agente usando as seguintes propriedades:
 
    | Propriedade | Valor |
@@ -292,7 +291,7 @@ Exemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Criação do agente reverso {#creating-the-reverse-agent}
 
-1. Crie um **Agente de Replicação Inverso** no autor. (Consulte a documentação [para agentes de replicação](/help/sites-deploying/replication.md).) Especifique qualquer **Título**. O **Nome** deve seguir a convenção de nomenclatura.
+1. Crie um **Agente de replicação inversa** sobre o autor. (Consulte o [documentação para agentes de replicação](/help/sites-deploying/replication.md).) Especifique qualquer **Título**. O **Nome** deve seguir a convenção de nomenclatura.
 1. Crie o agente usando as seguintes propriedades:
 
    | Propriedade | Valor |
@@ -305,7 +304,7 @@ Exemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Criação do agente de caixa de saída {#creating-the-outbox-agent}
 
-1. Crie um **Agente de Replicação** na instância do trabalhador. (Consulte a documentação [para agentes de replicação](/help/sites-deploying/replication.md).) Especifique qualquer **Título**. O **Nome** deve ser `offloading_outbox`.
+1. Crie um **Agente de replicação** na instância do trabalhador. (Consulte o [documentação para agentes de replicação](/help/sites-deploying/replication.md).) Especifique qualquer **Título**. O **Nome** deve ser `offloading_outbox`.
 1. Crie o agente usando as seguintes propriedades.
 
    | Propriedade | Valor |
@@ -357,4 +356,4 @@ The following procedure assumes the following characteristics for the offloading
 
 Além dos detalhes apresentados nesta página, você também pode ler o seguinte:
 
-* Para obter informações sobre como usar APIs do Java para criar tarefas e consumidores de trabalho, consulte [Criação e consumo de trabalhos para descarregamento](/help/sites-developing/dev-offloading.md).
+* Para obter informações sobre o uso de APIs Java para criar tarefas e consumidores de tarefas, consulte [Criação e consumo de trabalhos para descarregamento](/help/sites-developing/dev-offloading.md).

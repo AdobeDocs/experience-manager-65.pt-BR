@@ -14,7 +14,7 @@ exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 source-git-commit: 9946bfd3c2701a37d13e6eb6b4c19562ef77d24c
 workflow-type: tm+mt
 source-wordcount: '1898'
-ht-degree: 80%
+ht-degree: 88%
 
 ---
 
@@ -54,12 +54,12 @@ As propriedades são distribuídas por várias guias.
 
 * **Marcas**
 
-   Aplique uma identidade de marca consistente em todas as páginas, anexando um arquivo de marca a cada título de página. Essa funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior dos [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
+   Aplique uma identidade de marca consistente em todas as páginas, anexando uma descrição da marca a cada título de página. Essa funcionalidade requer o uso do Componente de página da versão 2.14.0 ou posterior do [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 
-   * **Override**  - Marque a opção para definir o rastreamento da marca nesta página.
-      * O valor será herdado por qualquer página secundária, a menos que também tenha seus valores **Override** definidos.
-   * **Sobrepor valor**  - O texto do traçado da marca a ser anexado ao título da página.
-      * O valor é anexado ao título da página após um caractere de barra vertical, como &quot;Toscânia cíclica | Sempre pronto para a WKND&quot;
+   * **Substituir** - marque essa opção para definir a descrição da marca nesta página.
+      * O valor será herdado por qualquer página secundária, a menos que também tenha definidos seus valores para **Substituir**.
+   * **Substituir valor** - o texto da descrição da marca a ser anexado ao título da página.
+      * O valor é anexado ao título da página após um caractere de barra vertical, como &quot;Cycling Tuscany | Sempre pronto para a WKND&quot;
 * **Título da página**
 
    Um título para ser usado na página. Normalmente usado pelos componentes do título. Caso esteja vazio, o **Título** será usado.
@@ -92,7 +92,7 @@ As propriedades são distribuídas por várias guias.
 
    Permite que você insira uma vanity URL para esta página, o que pode permitir que você tenha um URL menor e/ou mais expressivo.
 
-   Por exemplo, se a URL personalizada estiver definida como `welcome`para a página identificada pelo caminho `/v1.0/startpage`para o site `http://example.com,`, `http://example.com/welcome`será a URL personalizada de `http://example.com/content/v1.0/startpage`
+   Por exemplo, se o URL personalizado estiver definido como `welcome`para a página identificada pelo caminho `/v1.0/startpage`para o site `http://example.com,` then `http://example.com/welcome`será a URL personalizada de `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -131,9 +131,9 @@ As propriedades são distribuídas por várias guias.
 
    Especifique um alias a ser usado com esta página.
 
-   * Por exemplo, se você definir um alias de `private` para a página `/content/wknd/us/en/magazine/members-only`, essa página também poderá ser acessada por `/content/wknd/us/en/magazine/private`
-   * A criação de um alias define a propriedade `sling:alias` no nó da página, que afeta apenas o recurso, não o caminho do repositório.
-   * As páginas acessadas por aliases no editor não podem ser publicadas. [As opções ](/help/sites-authoring/publishing-pages.md) de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
+   * Por exemplo: se você definir um pseudônimo de `private` para a página `/content/wknd/us/en/magazine/members-only`, essa página poderá ser acessada por meio de `/content/wknd/us/en/magazine/private`
+   * A criação de um pseudônimo define a propriedade de `sling:alias` no nó da página, que afeta apenas o recurso, não o caminho do repositório.
+   * As páginas acessadas por pseudônimos no editor não podem ser publicadas. As [Opções de publicação](/help/sites-authoring/publishing-pages.md) no editor só estão disponíveis para páginas acessadas por meio de seus caminhos de fato.
    * Para obter mais detalhes, consulte [Nomes de página localizados em SEO e Práticas recomendadas de gerenciamento de URL](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **Herdado de &lt;*path*>**
@@ -158,7 +158,7 @@ As propriedades são distribuídas por várias guias.
 
    >[!CAUTION]
    >
-   >A guia **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite a edição de configurações de CUG com base na presença do mixin `granite:AuthenticationRequired`. Se as permissões de página forem configuradas usando configurações obsoletas de CUG, com base na presença da propriedade `cq:cugEnabled`, uma mensagem de aviso será exibida em **Requisito de autenticação** e a opção não será editável, nem as [Permissões](/help/sites-authoring/editing-page-properties.md#permissions) serão editáveis.
+   >O **[Permissões](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite a edição de configurações CUG com base na presença do `granite:AuthenticationRequired` mistura. Se as permissões de página forem configuradas usando configurações obsoletas de CUG, com base na presença de `cq:cugEnabled` , uma mensagem de aviso será exibida em **Requisito de autenticação** e a opção não será editável, nem a variável [Permissões](/help/sites-authoring/editing-page-properties.md#permissions) ser editável.
    >
    >
    >Nesse caso, as permissões de CUG devem ser editadas na [interface do usuário clássica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -179,7 +179,7 @@ Exibe a imagem de miniatura da página. É possível:
 
    Gere uma visualização da página para usar como miniatura.
 
-* **Carregar imagem**
+* **Fazer upload de imagem**
 
    Carregue uma imagem para usar como miniatura.
 
@@ -233,14 +233,14 @@ Define a variação do fragmento de experiência usada para gerar metadados para
    * Exibir as [permissões efetivas](/help/sites-administering/user-group-ac-admin.md)
    >[!CAUTION]
    >
-   >A guia **Permissions** permite a edição de configurações de CUG com base na presença do mixin `granite:AuthenticationRequired`. Se as permissões de página forem configuradas usando configurações obsoletas de CUG, com base na presença da propriedade `cq:cugEnabled` , uma mensagem de aviso será exibida e as permissões de CUG não serão editáveis, assim como o Requisito de autenticação na guia [Avançado](/help/sites-authoring/editing-page-properties.md#advanced) não será editável.
+   >O **Permissões** permite a edição de configurações CUG com base na presença do `granite:AuthenticationRequired` mistura. Se as permissões de página forem configuradas usando configurações obsoletas de CUG, com base na presença de `cq:cugEnabled` , uma mensagem de aviso será exibida e as permissões de CUG não serão editáveis, assim como o Requisito de autenticação na [Avançado](/help/sites-authoring/editing-page-properties.md#advanced) poderá ser editada.
    >
    >
    >Nesse caso, as permissões de CUG devem ser editadas na [interface do usuário clássica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >O guia Permissões não permite a criação de grupos vazios de CUG, que podem ser úteis como uma maneira simples de negar o acesso para cada usuário. Para fazer isso, use o CRX Explorer. Consulte o documento [Administração de usuário, grupo e direitos de acesso](/help/sites-administering/user-group-ac-admin.md) para obter mais informações.
+   >O guia Permissões não permite a criação de grupos vazios de CUG, que podem ser úteis como uma maneira simples de negar o acesso para cada usuário. Para fazer isso, use o CRX Explorer. Consulte o documento [Administração de usuários, grupos e direitos de acesso](/help/sites-administering/user-group-ac-admin.md) para obter mais informações.
 
 ### Blueprint {#blueprint}
 
@@ -302,7 +302,7 @@ Ao editar uma página, você pode usar as **Informações da página** para defi
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Selecione **Abrir propriedades** e uma caixa de diálogo será aberta permitindo que você edite as propriedades, classificadas pela guia apropriada. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
+1. Selecionar **Abrir propriedades** e uma caixa de diálogo será aberta permitindo que você edite as propriedades, escolhidas através da guia apropriada. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
 
    * **Cancelar**
    * **Salvar e fechar**

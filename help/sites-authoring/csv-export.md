@@ -1,8 +1,8 @@
 ---
-title: 'Exportar para CSV  '
-seo-title: 'Exportar para CSV  '
+title: Exportar para CSV
+seo-title: Export to CSV
 description: Exportar informações sobre suas páginas em um arquivo CSV em seu sistema local
-seo-description: Exportar informações sobre suas páginas em um arquivo CSV em seu sistema local
+seo-description: Export information about your pages to a CSV file on your local system
 uuid: 6eee607b-3510-4f6a-ba82-b27480a4fbe1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
+exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 86%
+source-wordcount: '191'
+ht-degree: 85%
 
 ---
-
 
 # Exportar para CSV  {#export-to-csv}
 
@@ -42,7 +41,7 @@ O assistente **Criar exportação de arquivos CSV** permite selecionar:
       * Fluxo de trabalho
    * Tradução
       * Traduzido
-   * Análise
+   * Analytics
       * Exibições da página
       * Visitantes únicos
       * Tempo na página
@@ -56,7 +55,7 @@ O arquivo `export.csv` resultante pode ser aberto no Excel ou qualquer outro apl
 
 ![etc-01](assets/etc-01.png)
 
-A opção criar **Relatório CSV** está disponível ao navegar pelo console **Sites** (na visualização da Lista): é uma opção do menu suspenso **Criar**:
+A criação **Relatório CSV** está disponível ao navegar pelo **Sites** console (na exibição de Lista): é uma opção do **Criar** menu suspenso:
 
 ![etc-02](assets/etc-02.png)
 

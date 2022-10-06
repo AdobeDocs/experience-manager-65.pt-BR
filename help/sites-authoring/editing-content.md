@@ -1,8 +1,8 @@
 ---
 title: Editar conteúdo da página
-seo-title: Editar conteúdo da página
+seo-title: Editing Page Content
 description: Uma vez que a sua página é criada, você poderá editar o conteúdo para fazer atualizações necessárias
-seo-description: Uma vez que a sua página é criada, você poderá editar o conteúdo para fazer atualizações necessárias
+seo-description: Once your page is created you can edit the content to make the updates you require
 uuid: 5b4f0a8f-5196-42ea-8413-203783a0b77b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3064'
+source-wordcount: '3045'
 ht-degree: 94%
 
 ---
-
 
 # Editar conteúdo da página{#editing-page-content}
 
@@ -43,7 +42,7 @@ O conteúdo é adicionado usando [componentes](/help/sites-authoring/default-com
 
 A barra de ferramentas da página oferece acesso à funcionalidade adequada, dependendo da configuração da página.
 
-![screen_shot_2018-03-22at111338](assets/screen_shot_2018-03-22at111338.png)
+![screen_shot_2018-03-22at11338](assets/screen_shot_2018-03-22at111338.png)
 
 A barra de ferramentas oferece acesso a várias opções. Dependendo do contexto e das configurações atuais, algumas opções podem não estar disponíveis.
 
@@ -69,7 +68,7 @@ A barra de ferramentas oferece acesso a várias opções. Dependendo do contexto
 
    Abre o [hub de contexto](/help/sites-authoring/ch-previewing.md). Disponível somente no modo de Visualização.
 
-   ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
+   ![screen_shot_2018-03-22at11543](assets/screen_shot_2018-03-22at111543.png)
 
 * **Título da página**
 
@@ -107,9 +106,9 @@ Se uma página é parte de um [fluxo de trabalho](/help/sites-authoring/workflow
 
 A notificação lista o fluxo de trabalho que está sendo executado em relação à página. Se o usuário estiver envolvido na etapa atual do fluxo de trabalho, opções para [afetar o status do fluxo de trabalho](/help/sites-authoring/workflows-participating.md) e para obter mais informações sobre o fluxo de trabalho também ficarão disponíveis, como:
 
-* **Concluir** - Abre a caixa de diálogo  **Concluir** tempo de trabalho
+* **Concluído** - Abre o **Concluir item de trabalho** diálogo
 
-* **Delegar**  - abre a caixa de diálogo  **Concluir** tempo de trabalho
+* **Delegar** - Abre o **Concluir item de trabalho** diálogo
 
 * **Exibir detalhes** - abre a janela **Detalhes** do fluxo de trabalho
 
@@ -125,7 +124,7 @@ O placeholder do componente indica onde um componente será posicionado quando v
 
 * Ao adicionar um novo componente à página (arrastando a partir do navegador do componente):
 
-   ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
+   ![screen_shot_2018-03-22at11928](assets/screen_shot_2018-03-22at111928.png)
 
 * Ao mover um componente existente:
 
@@ -312,7 +311,7 @@ Existem dois métodos de adição e/ou edição do conteúdo dos componentes:
 * Abra a caixa de diálogo de [componentes para editar](#component-edit-dialog).
 * [Arraste e solte um ativo](#draganddropintocomponent) do navegador de ativos para adicionar diretamente o conteúdo.
 
-### Caixa de diálogo de edição de componente    {#component-edit-dialog}
+### Caixa de diálogo de edição de componente   {#component-edit-dialog}
 
 Você pode abrir um componente para editar o conteúdo usando o [ícone Editar (lápis) na barra de ferramentas do componente](#edit-configure-copy-cut-delete-paste).
 
@@ -350,12 +349,12 @@ Para tipos de componentes específicos, você pode arrastar e soltar os ativos d
 | **Tipo de ativo** | **Tipo de componente** |
 |---|---|
 | Imagem | Imagem |
-| Documento | Download |
+| Documento | Baixar |
 | Produto | Produto |
 | Vídeo | Flash |
-| Fragmento de conteúdo | Fragmento do conteúdo |
+| Fragmento de conteúdo | Fragmento de conteúdo |
 
-## Editar (conteúdo) Modo de tela cheia  {#edit-content-full-screen-mode}
+## Editar (conteúdo) Modo de tela cheia {#edit-content-full-screen-mode}
 
 Para todos os componentes, o modo de tela cheia pode ser acessado com (e fechado de):
 
@@ -412,7 +411,7 @@ Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/
 
 >[!NOTE]
 >
->O escopo da ação Layout é limitada ao componente selecionado. Por exemplo, se você estiver editando o layout de um componente e clicar em outro componente, a barra de ferramentas de edição padrão (não a barra de ferramentas do layout) será exibida para o componente recém-selecionado e as alças de redimensionamento, bem como a barra de ferramentas do emulador, desaparecerão.
+>O escopo da ação Layout é limitada ao componente selecionado. Por exemplo, se você estiver editando o layout de um componente e, em seguida, clicar em outro componente, a barra de ferramentas de edição padrão (não a barra de ferramentas do layout) será exibida para o componente recentemente selecionado e as alças de redimensionamento, bem como a barra de ferramentas do emulador desaparecerão.
 >
 >Se precisar editar o layout geral da página, afetando vários componentes, alterne para o [modo de layout](/help/sites-authoring/responsive-layout.md).
 
@@ -454,11 +453,11 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, es
 
 Se a página for baseada em um [modelo editável](/help/sites-authoring/templates.md#editable-and-static-templates), você pode facilmente alternar para o [editor de modelo](/help/sites-authoring/templates.md#editing-templates-template-authors), selecionando **Editar modelo** no [menu de Informações de página](/help/sites-authoring/author-environment-tools.md#page-information).
 
-Se a página for baseada em um [modelo estático](/help/sites-authoring/templates.md#editable-and-static-templates), você poderá alternar para [Modo de design](/help/sites-authoring/default-components-designmode.md) usando o [seletor de modo de página](/help/sites-authoring/author-environment-tools.md#page-modes) na barra de ferramentas para habilitar/desabilitar componentes para uso na página.
+Se a página for baseada em um [modelo estático](/help/sites-authoring/templates.md#editable-and-static-templates), você pode alternar para [Modo de design](/help/sites-authoring/default-components-designmode.md) usando o [seletor de modo de página](/help/sites-authoring/author-environment-tools.md#page-modes) na barra de ferramentas para ativar/desativar componentes para uso na página.
 
 É possível ver em qual modelo a página é baseada ao selecionar a página na [Exibição de coluna](/help/sites-authoring/basic-handling.md#column-view) ou na [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view).
 
-## Status da Live Copy    {#live-copy-status}
+## Status da Live Copy   {#live-copy-status}
 
 O modo de página [Status da Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) permite ter uma visão geral rápida do status da live copy e quais componentes são/não são herdados:
 
@@ -471,9 +470,9 @@ Por exemplo:
 
 ## Adicionar anotações {#adding-annotations}
 
-As [anotações ](/help/sites-authoring/annotations.md) permitem que revisores e outros autores forneçam feedback sobre o seu conteúdo. Isso é usado frequentemente para fins de análise e validação.
+As [anotações](/help/sites-authoring/annotations.md) permitem que revisores e outros autores forneçam feedback sobre o seu conteúdo. Isso é usado frequentemente para fins de análise e validação.
 
-## Visualizar páginas    {#previewing-pages}
+## Visualizar páginas   {#previewing-pages}
 
 Existem duas opções para a visualização de uma página:
 
@@ -486,9 +485,7 @@ Existem duas opções para a visualização de uma página:
 >* Os links no conteúdo são visíveis, mas não são acessíveis no modo Editar.
 >* Use qualquer uma das opções de visualização, caso deseje navegar usando os links.
 >* Use o [atalho de teclado](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` para alternar entre a visualização e o último modo selecionado.
-
 >
-
 
 
 >[!NOTE]
@@ -511,7 +508,7 @@ Ao criar, o modo de visualização estará disponível utilizando o ícone no ca
 
 A opção **Exibir como publicada** está disponível no menu [Informações da página](/help/sites-authoring/author-environment-tools.md#page-information). Isto abre a página em uma nova guia, atualiza o conteúdo e mostra as páginas exatamente como elas aparecerão no ambiente de publicação.
 
-## Bloquear uma página {#locking-a-page}
+## Bloquear uma página   {#locking-a-page}
 
 O AEM permite bloquear uma página, de modo que ninguém mais possa modificar o conteúdo. Isso é útil quando você está fazendo diversas edições para uma página específica ou quando precisa congelar uma página por pouco tempo.
 
@@ -563,7 +560,7 @@ Os ícones a seguir permitem desfazer ou refazer uma ação. Os seguintes itens 
 >
 >O [atalho de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` também pode ser usado para desfazer ações de edições em páginas.
 >
->O atalho de teclado `Ctrl-Y` também está disponível para refazer ações de edição de página.
+>O atalho do teclado `Ctrl-Y` também está disponível para refazer ações de edições em páginas.
 
 >[!NOTE]
 >
@@ -588,9 +585,7 @@ O comportamento dos comandos desfazer e refazer é semelhante à de outros progr
 >* Refazer ações, contanto que não tenha feito uma edição de página desde que usou o comando desfazer.
 >* Desfazer um máximo de 20 ações de edição (configuração padrão).
 >* Usar também os [Atalhos de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para desfazer e refazer.
-
 >
-
 
 
 Você pode usar os comandos desfazer e refazer para os seguintes tipos de alterações de páginas:
@@ -608,4 +603,3 @@ Os campos do formulário que formam a renderização dos componentes não são d
 >[!NOTE]
 >
 >O histórico de alterações em arquivos e imagens dura um mínimo de dez horas. Entretanto, além desse tempo, desfazer as alterações não é garantido. O administrador pode alterar a duração padrão de dez horas.
-

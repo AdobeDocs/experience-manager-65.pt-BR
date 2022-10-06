@@ -1,8 +1,8 @@
 ---
 title: Gerenciamento programático de PreferênciasNodes
-seo-title: Gerenciamento programático de PreferênciasNodes
+seo-title: Programmatically managing the PreferencesNodes
 description: Use a API de serviço do Gerenciador de preferências (Java) para gerenciar programaticamente os nós de preferências.
-seo-description: Use a API de serviço do Gerenciador de preferências (Java) para gerenciar programaticamente os nós de preferências.
+seo-description: Use the Preferences Manager Service API (Java) to programmatically manage the Preferences Nodes.
 uuid: f0cb117a-a6cc-4ca5-8511-b3bc9f6738e9
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9d4dba7f-49d8-4112-bc8a-04dafc99a936
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 108eb249-879b-4e4f-b431-8118b8656e62
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
-
 
 # Gerenciar programaticamente os nós de preferências {#programmatically-managing-the-preferencesnodes}
 
@@ -25,9 +24,9 @@ ht-degree: 0%
 
 Este tópico descreve como você pode usar a API de serviço do Gerenciador de preferências (Java) para gerenciar programaticamente os nós de preferências.
 
-Você pode alterar manualmente as configurações da interface do usuário do administrador. Para alterar as opções, navegue até `Home>Settings>User Management> Configuration>Manual Configuration`. Importe `config.xml` depois de fazer as alterações, você perceberá que todas as alterações, exceto as feitas no nó `/Adobe/Adobe Experience Manager Forms/Config/UM persist` são perdidas. A visualização da Importação e exportação do Gerenciamento de Usuário não suporta a alteração das configurações de outros componentes. Agora, essas alterações podem ser feitas usando `PreferencesManagerServiceClient` APIs.
+Você pode alterar manualmente as configurações da interface do usuário do administrador. Para alterar as opções, navegue até `Home>Settings>User Management> Configuration>Manual Configuration`. Importar `config.xml` depois de fazer as alterações, você notará que todas as alterações, exceto as feitas no nó `/Adobe/Adobe Experience Manager Forms/Config/UM persist` estão perdidos. A visualização da Importação e exportação do Gerenciamento de Usuário não suporta a alteração das configurações de outros componentes. Agora, essas alterações podem ser feitas usando `PreferencesManagerServiceClient` APIs.
 
-**Resumo das** etapasPara gerenciar programaticamente os nós de preferências, execute as seguintes etapas:
+**Resumo das etapas** Para gerenciar programaticamente os nós de preferências, execute as seguintes etapas:
 
 1. Inclua arquivos de projeto.
 1. Criar um cliente PreferencesManagerService

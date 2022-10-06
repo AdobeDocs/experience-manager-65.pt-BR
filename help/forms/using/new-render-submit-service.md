@@ -1,28 +1,27 @@
 ---
 title: Novo serviço de renderização e envio
-seo-title: Novo serviço de renderização e envio
+seo-title: New render and submit service
 description: Defina os serviços de renderização e envio no Workbench para renderizar o formulário XDP como HTML ou PDF, dependendo do dispositivo do qual ele é acessado.
-seo-description: Defina os serviços de renderização e envio no Workbench para renderizar o formulário XDP como HTML ou PDF, dependendo do dispositivo do qual ele é acessado.
+seo-description: Define render and submit services in Workbench to render XDP form as HTML or PDF depending on the device it is accessed from.
 uuid: 7f8348a1-753c-4dab-87d5-4a4a301198dd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 46de0101-9607-4429-84c3-7c1f34d2da27
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
-
 
 # Novo serviço de renderização e envio{#new-render-and-submit-service}
 
 ## Introdução {#introduction}
 
-No Workbench, ao definir uma operação `AssignTask`, especifique um formulário específico (formulário XDP ou PDF). Além disso, especifique um conjunto de serviços Renderizar e Enviar, por meio do perfil de ação.
+No Workbench, ao definir uma variável `AssignTask` , especifique um formulário específico (formulário XDP ou PDF). Além disso, especifique um conjunto de serviços de Renderização e Envio, por meio do perfil de ação.
 
 Um XDP pode ser renderizado como um formulário PDF ou HTML. Os novos recursos incluem a capacidade de:
 
@@ -58,13 +57,13 @@ public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profi
 
 Mais informações sobre perfis de formulário móvel podem ser encontradas em [Criação de um perfil personalizado](/help/forms/using/custom-profile.md).
 
-## Novos processos de renderização e envio de formulários HTML {#new-html-form-render-amp-submit-processes}
+## Novos processos de renderização e envio de formulário HTML {#new-html-form-render-amp-submit-processes}
 
-Para cada operação &#39;AssignTask&#39;, especifique um processo de Renderização e de envio com o formulário. Esses processos são chamados pelas APIs `renderForm`e `submitForm`do Gerenciador de tarefas para permitir a manipulação personalizada. Semântica desses processos para o Novo formulário HTML:
+Para cada operação &#39;AssignTask&#39;, especifique um Renderizador e um processo Enviar com o formulário. Esses processos são chamados pelo TaskManager `renderForm`e `submitForm`APIs para permitir manuseio personalizado. Semântica desses processos para o Novo formulário de HTML:
 
 ### Renderizar um novo formulário HTML {#render-a-new-html-form}
 
-O novo processo para renderizar HTML, como todo processo de renderização, tem os seguintes parâmetros de E/S -
+O novo processo para renderizar o HTML, como todo processo de renderização, tem os seguintes parâmetros de E/S -
 
 Entrada - `taskContext`
 
@@ -72,11 +71,11 @@ Saída - `runtimeMap`
 
 Saída - `outFormDoc`
 
-Este método simula o comportamento exato da API `renderHTMLForm` do NewHTMLFormsService. Ele chama a API `generateFormURL` para obter o URL para a execução HTML do formulário. Em seguida, preenche o runtimeMap com as seguintes chaves ou valores:
+Esse método simula o comportamento exato de `renderHTMLForm` API de NewHTMLFormsService. Ele chama o `generateFormURL` API para obter o URL para a representação de HTML do formulário. Em seguida, ele preenche o runtimeMap com a seguinte chave ou valores:
 
 novo formulário html = true
 
-newHTMLFormURL = o URL retornado após chamar a API `generateFormURL`.
+newHTMLFormURL = o URL retornado após chamar `generateFormURL` API.
 
 ### Enviar um novo formulário HTML {#submit-a-new-html-form}
 
@@ -88,79 +87,79 @@ Saída - `runtimeMap`
 
 Saída - `outputDocument`
 
-O processo define `outputDocument`como `inputDocument`recuperado de `taskContext`.
+O processo define o `outputDocument`para `inputDocument`recuperada de `taskContext`.
 
-## Processos de renderização ou envio padrão e perfis de ação {#default-render-or-submit-processes-and-action-profiles}
+## Renderizar ou enviar processos padrão e perfis de ação {#default-render-or-submit-processes-and-action-profiles}
 
-Os serviços padrão de renderização e envio permitem que o suporte renderize PDFs em um desktop e HTML em dispositivos móveis (iPad).
+Os serviços padrão Renderizar e Enviar permitem que o suporte renderize PDF em um desktop e HTML em dispositivos móveis (iPad).
 
 ### Formulário de renderização padrão {#default-render-form}
 
-Esse processo renderiza um formulário XDP em várias plataformas, sem problemas. O processo recupera o agente do usuário de `taskContext` e usa os dados para chamar o processo para renderizar HTML ou PDF.
+Esse processo renderiza um formulário XDP em várias plataformas, perfeitamente. O processo recupera o agente do usuário do `taskContext`e usa os dados para chamar o processo para renderizar o HTML ou o PDF.
 
-![default-render-form](assets/default-render-form.png)
+![formulário de renderização padrão](assets/default-render-form.png)
 
 ### Formulário de envio padrão {#default-submit-form}
 
-Esse processo envia um formulário XDP em várias plataformas sem problemas. Ele recupera o agente do usuário de `taskContext`e usa os dados para chamar o processo para enviar HTML ou PDF.
+Esse processo envia um formulário XDP em várias plataformas de maneira simples. Ele recupera o agente do usuário do `taskContext`e usa os dados para chamar o processo para enviar HTML ou PDF.
 
-![padrão-submit-form](assets/default-submit-form.png)
+![padrão-enviar-formulário](assets/default-submit-form.png)
 
-## Alternar a renderização de formulários móveis de PDF para HTML {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
+## Mudar a renderização de formulários móveis do PDF para o HTML {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
 
-Os navegadores estão retirando gradualmente o suporte para plug-ins baseados em NPAPI, incluindo plug-ins para Adobe Acrobat e Adobe Acrobat Reader. É possível alterar a renderização de formulários móveis de PDF para HTML usando as seguintes etapas:
+Os navegadores estão removendo gradualmente o suporte para plug-ins com base NPAPI, incluindo plug-ins para Adobe Acrobat e Adobe Acrobat Reader. Você pode alterar a renderização de formulários móveis de PDF para HTML usando as seguintes etapas:
 
 1. Faça logon no Workbench como um usuário válido.
-1. Selecione **Arquivo** > **Obter Aplicativos**.
+1. Selecionar **Arquivo** > **Obter aplicativos**.
 
    A caixa de diálogo Obter aplicativos é exibida.
 
 1. Selecione os aplicativos para os quais deseja alterar a renderização do formulário móvel e clique em **OK**.
 1. Abra o processo para o qual deseja alterar a renderização.
-1. Abra o ponto de partida/tarefa de destino, navegue até a seção Apresentação e dados e clique em **Gerenciar Perfis de ação**.
+1. Abra o ponto de partida/tarefa direcionado, navegue até a seção Apresentação e dados e clique em **Gerenciar perfis de ação**.
 
-   A caixa de diálogo Gerenciar Perfis de ação é exibida.
+   A caixa de diálogo Gerenciar perfis de ação é exibida.
 1. Altere as configurações de perfil de renderização padrão de PDF para HTML e clique em **OK**.
 1. Verifique o processo.
 1. Repita as etapas para alterar a renderização para outros processos.
 1. Implante o aplicativo relevante para os processos que você alterou.
 
-### Perfil de Ação Padrão {#default-action-profile}
+### Perfil de ação padrão {#default-action-profile}
 
-O Perfil de Ação padrão renderizou o Formulário XDP como PDF. Esse comportamento agora foi alterado para usar os processos Formulário de renderização padrão e Formulário de envio padrão.
+O Perfil de ação padrão renderizou o Formulário XDP como PDF. Esse comportamento foi alterado para usar os processos Formulário de renderização padrão e Formulário de envio padrão .
 
 Algumas perguntas frequentes sobre perfis de ação são as seguintes:
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Quais processos de renderização/envio estarão disponíveis imediatamente?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Quais processos de Renderização/Envio estarão disponíveis para uso imediato?**
 
 * Guia de renderização (as guias estão obsoletas)
 * Guia de formulário de renderização
 * Renderizar formulário PDF
 * Renderizar formulário HTML
-* Renderizar novo formulário HTML (novo)
-* Formulário Renderização padrão (novo)
+* Renderizar novo formulário de HTML (novo)
+* Formulário de renderização padrão (novo)
 
-E, processos de envio equivalentes.
+E processos de Envio equivalentes.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Que Perfis de ação estarão disponíveis imediatamente?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Quais perfis de ação estarão disponíveis para uso imediato?**
 
 Para XDP Forms:
 
-* Padrão (renderizar/enviar usando os novos processos &#39;Renderização padrão/Enviar&#39;)
+* Padrão (renderizar/enviar usando os novos processos &quot;Renderizar/Enviar Padrão&quot;)
 
-![gen_question_b_20](assets/gen_question_b_20.png) **O que precisa ser feito pelo designer do processo para permitir que o formulário seja renderizado em HTML em um dispositivo e em PDF em um desktop?**
+![gen_question_b_20](assets/gen_question_b_20.png) **O que precisa ser feito pelo designer de processos para permitir que o formulário seja renderizado no HTML em um dispositivo e no PDF em um desktop?**
 
-Nada. O Perfil de Ação padrão é escolhido automaticamente e o modo de renderização também é feito automaticamente.
+Nada. O Perfil de ação padrão é escolhido automaticamente e o modo de renderização também é atendido automaticamente.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **O que precisa ser feito para permitir que o formulário seja renderizado em HTML em um desktop?**
+![gen_question_b_20](assets/gen_question_b_20.png) **O que precisa ser feito para habilitar a renderização do formulário no HTML em um desktop?**
 
 O usuário deve selecionar o botão de opção HTML para o perfil padrão.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Haverá algum impacto de atualização na alteração do comportamento padrão do perfil de ação?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Haverá algum impacto de atualização na alteração do comportamento do perfil de ação padrão?**
 
-Sim, como os serviços de renderização e envio anteriores associados ao perfil de ação padrão eram diferentes, eles são tratados como uma personalização dos formulários existentes. Ao clicar em **Restaurar padrões**, os serviços padrão de renderização e envio são definidos.
+Sim, como os serviços de renderização e envio anteriores associados ao perfil de ação padrão eram diferentes, eles são tratados como uma personalização dos formulários existentes. Ao clicar **Restaurar padrões**, os serviços padrão de renderização e envio são definidos.
 
-Se você modificou os serviços de Renderização ou Enviar formulário PDF existentes ou criou serviços personalizados (por exemplo, custom1) e agora deseja usar a mesma funcionalidade para renderização HTML. É necessário replicar o novo serviço de renderização ou envio (como por exemplo, custom2) e aplicar personalizações semelhantes a essas personalizações. Agora, modifique o perfil de ação para seu XDP para start usando serviços custom2, em vez do custom1 para renderização ou envio.
+Se você modificou os serviços Renderizar ou Enviar formulário PDF ou criou serviços personalizados (digamos, personalizado1) e agora deseja usar a mesma funcionalidade para renderização de HTML. Você precisa replicar o novo renderizador ou enviar serviço (como o custom2) e aplicar personalizações semelhantes a eles. Agora, modifique o perfil de ação do seu XDP para começar a usar serviços personalizados2, em vez do custom1 para renderização ou envio.
 
-O que precisa ser feito pelo designer de processos para permitir que o formulário seja renderizado em HTML em um dispositivo e em PDF em um desktop?
-O que precisa ser feito pelo designer de processos para permitir que o formulário seja renderizado em HTML em um dispositivo e em PDF em um desktop?
+O que precisa ser feito pelo designer de processos para permitir que o formulário seja renderizado no HTML em um dispositivo e no PDF em um desktop?
+O que precisa ser feito pelo designer de processos para permitir que o formulário seja renderizado no HTML em um dispositivo e no PDF em um desktop?

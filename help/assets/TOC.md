@@ -9,7 +9,7 @@ user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
 source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
 source-wordcount: '675'
-ht-degree: 49%
+ht-degree: 50%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 49%
    + [Perfis de vídeo do Dynamic Media](video-profiles.md)
    + [Perfis de imagem do Dynamic Media](image-profiles.md)
    + [Imagem inteligente](imaging-faq.md)
-   + [Imagem inteligente com relação de pixels do dispositivo no lado do cliente](client-side-dpr.md)
+   + [Imagem inteligente com proporção de pixels do dispositivo no lado do cliente](client-side-dpr.md)
    + [Vídeo](s7-video.md)
    + [Entrega de conteúdo HTTP2](http2.md)
    + [Entregar ativos do Dynamic Media](delivering-dynamic-media-assets.md)

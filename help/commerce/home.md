@@ -33,7 +33,7 @@ Entenda como usar e administrar AEM conteúdo e comércio, com nossos artigos ú
 | [Guia de administração](/help/sites-administering/home.md) | Saiba mais sobre como administrar o AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no AEM. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no AEM na interface do usuário clássica. |
-| [Guia do usuário do Screens](https://docs.adobe.com/content/help/br/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
+| [Guia do usuário do Screens](https://docs.adobe.com/content/help/pt-BR/experience-manager-screens/user-guide/aem-screens-introduction.html) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
 | [Guia de implantação do usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do AEM. |
 | [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar a instância do AEM. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto de AEM com êxito. |
@@ -48,5 +48,5 @@ Entenda como usar e administrar AEM conteúdo e comércio, com nossos artigos ú
 * [Guia do usuário dos Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/pt-BR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Fórum da comunidade AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=pt-BR#home)
+* [Fórum da comunidade AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=pt)

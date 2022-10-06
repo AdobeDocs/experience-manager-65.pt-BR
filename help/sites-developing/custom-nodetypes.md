@@ -54,7 +54,7 @@ Define o tipo de nó de um nó de evento de auditoria.
 * `- cq:category (string)`
 * `- cq:properties (binary)`
 
-## Comentário {#comment}
+## Comentar {#comment}
 
 ### cq:Comment {#cq-comment}
 
@@ -79,7 +79,7 @@ Define o tipo de nó de um nó de comentário.
 
 **Descrição**
 
-Define o tipo de nó de um nó `commentattachment`
+Define o tipo de nó de um `commentattachment` nó
 
 **Definição**
 
@@ -165,7 +165,7 @@ Define o nó padrão para o conteúdo da página, com as propriedades mínimas c
 * `@prop jcr:description` - Descrição desta página.
 * `@prop cq:template` - Caminho para o modelo usado para criar a página.
 * `@prop cq:allowedTemplates` - Lista de expressões regulares usadas para determinar os caminhos para o modelo permitido.
-* `@prop pageTitle` - Título normalmente exibido na  `<title>` tag .
+* `@prop pageTitle` - Título normalmente exibido no `<title>` .
 * `@prop navTitle` - Título usado geralmente na navegação.
 * `@prop hideInNav` - Especifica se a página deve estar oculta na navegação.
 * `@prop onTime` - Hora em que esta página se torna válida.
@@ -236,18 +236,18 @@ Define um componente CQ.
 * `@prop dialogPath` - Caminho da caixa de diálogo primária (alternativo à caixa de diálogo).
 * `@node design_dialog` - Caixa de diálogo Design.
 * `@prop cq:cellName` - Nome da célula de projeto.
-* `@prop cq:isContainer` - Indica se é um componente de contêiner. Isso força os nomes de célula dos componentes filho a serem usados em vez de nomes de caminho. Por exemplo, `parsys` é um componente de contêiner. Se esse valor não estiver definido, a verificação será feita com base na existência de um `cq:childEditConfig`.
-* `@prop cq:noDecoration` - Se verdadeiro, nenhuma  `div` tag de decoração é desenhada ao incluir esse componente.
+* `@prop cq:isContainer` - Indica se é um componente de contêiner. Isso força os nomes de célula dos componentes filho a serem usados em vez de nomes de caminho. Por exemplo, a variável `parsys` é um componente de contêiner. Se esse valor não estiver definido, a verificação será feita com base na existência de um `cq:childEditConfig`.
+* `@prop cq:noDecoration` - Se verdadeiro, sem decoração `div` As tags são desenhadas ao incluir este componente.
 * `@node cq:editConfig` - A configuração que define os parâmetros da barra de edição.
 * `@node cq:childEditConfig` - A configuração de edição herdada pelos componentes secundários.
-* `@node cq:htmlTag` - Define atributos de tag adicionais que são adicionados à  `div` tag &quot;ao redor&quot; quando o componente é incluído.
+* `@node cq:htmlTag` - Define atributos de tag adicionais que são adicionados ao &quot;entorno&quot; `div` quando o componente é incluído.
 * `@node icon.png`- Um arquivo que contém um ícone característico.
 * `@node thumbnail.png` - Um arquivo que contém uma imagem em miniatura característica.
 * `@prop allowedParents` - Padrões de expressão regular para determinar os caminhos dos componentes permitidos como componentes principais.
 * `@prop allowedChildren` - Padrões de expressão regular para determinar os caminhos dos componentes permitidos como componentes filhos.
 * `@node virtual` - Contém subnós que refletem componentes virtuais usados para arrastar e soltar componentes.
 * `@prop componentGroup` - Nome do grupo de componentes, usado para arrastar e soltar componentes.
-* `@node cq:infoProviders` - Contém subnós, cada um com uma propriedade  `className` que se refere a um  `PageInfoProvider`.
+* `@node cq:infoProviders` - Contém subnós, cada um com uma propriedade `className` que se refere a uma `PageInfoProvider`.
 
 **Definição**
 
@@ -301,7 +301,7 @@ Define a configuração da &quot;barra de edição&quot;.
 * `@prop cq:actions`- Lista de ações (botões da barra de edição ou itens de menu).
 * `@node cq:actionConfigs` - Configurações de widget para barra de edição ou itens de menu.
 * `@prop cq:emptyText` - Texto a ser exibido se nenhum conteúdo visual estiver presente.
-* `@node cq:dropTargets` - Coleta de  `{@link cq:DropTargetConfig}` nós.
+* `@node cq:dropTargets` - Recolha de `{@link cq:DropTargetConfig}` nós.
 
 **Definição**
 
@@ -320,7 +320,7 @@ Define a configuração da &quot;barra de edição&quot;.
 
 Configura um destino de soltar de um componente. O nome desse nó será usado como uma ID para arrastar e soltar.
 
-* `@prop accept` - Lista de tipos MIME aceites por este objetivo final; por exemplo  `["image/*"]`
+* `@prop accept` - Lista de tipos MIME aceites por este objetivo final; por exemplo `["image/*"]`
 * `@prop groups` - Lista de grupos de arrastar e soltar que aceitam uma fonte.
 * `@prop propertyName` - Nome da propriedade usada para armazenar a referência.
 
@@ -467,13 +467,13 @@ Lista de contêineres.
 
 **Descrição**
 
-O tipo de nó `cq:contentPage` contém as definições de propriedade e nó filho para as páginas de conteúdo de ContentBus. Somente quando esse tipo mixin é adicionado a um nó do tipo `cq:page`, um nó se torna uma página de conteúdo de ContentBus.
+O tipo de nó `cq:contentPage` contém as definições de propriedade e nó filho para páginas de conteúdo de ContentBus. Somente quando esse tipo mixin é adicionado a um nó do tipo `cq:page`, um nó se torna uma página de conteúdo de ContentBus.
 
-Os itens em um `cq:Cq4ContentPage` são:
+Os itens em uma `cq:Cq4ContentPage` são:
 
 * `@prop cq:csd` - O CSD do ContentBus da página.
 * `@node cq:content` - O conteúdo da página. Esse nó filho não existe se o nó da página estiver no estado &quot;Existente sem conteúdo&quot; ou &quot;Excluído&quot;.
-* `@node cq:attributes` - A lista de atributos da página, anteriormente conhecidos como tags de versão. Esse nó é obrigatório para o tipo cq:contentPage . O nó attributes tem controle de versão quando a página é um nó com controle de versão.
+* `@node cq:attributes` - A lista de atributos da página, que antes eram conhecidos como tags de versão. Esse nó é obrigatório para o tipo cq:contentPage . O nó attributes tem controle de versão quando a página é um nó com controle de versão.
 
 **Definição**
 
@@ -818,7 +818,7 @@ Qualquer site público/usuário pode marcar o conteúdo (estilo Web2.0), usado d
 
 **Descrição**
 
-Adiciona um subnó `cq:userContent` que pode ser modificado pelos usuários. Cada usuário terá seu próprio subnó `cq:userContent/<userid>`, que normalmente tem o mixin `cq:UserTaggable`.
+Adiciona um `cq:userContent` subnó que pode ser modificado pelos usuários. Cada usuário terá seu próprio `cq:userContent/<userid>` subnó, que normalmente tem o mixin `cq:UserTaggable`.
 
 **Definição**
 
@@ -826,7 +826,7 @@ Adiciona um subnó `cq:userContent` que pode ser modificado pelos usuários. Cad
    * `mixin`
    * `+ cq:userContent (nt:unstructured)`
 
-Variante estendida, definindo mais explicitamente a árvore `cq:userContent`
+Variante estendida, definindo mais explicitamente a variável `cq:userContent` árvore
 
 * `[cq:AllowsUserContent]`
    * `mixin`

@@ -134,7 +134,6 @@ Entre em contato com o representante de conta para obter informações sobre as 
 >* **`evar1`** a **`evar11`**
 >
 >* **`event1`** a **`event7`**
-
 >
 >**Em seguida, antes de o site da comunidade ser publicado,** é importante restaurar o mapeamento preexistente movendo as variáveis de AEM que foram mapeadas automaticamente para as variáveis do Analytics quando o Analytics foi ativado para um site da comunidade.
 >
@@ -578,7 +577,6 @@ Consulte as seções:
 >* **`evar1`** a **`evar11`**
 >
 >* **`event1`** a **`event7`**
-
 >
 >**Em seguida, antes de o site da comunidade ser publicado,** é importante restaurar o mapeamento preexistente e mover as variáveis de AEM Comunidades que foram mapeadas automaticamente (quando o Analytics foi ativado para o site da comunidade) para outras variáveis do Analytics. Esse remapeamento deve ser consistente em todos os componentes das Comunidades.
 >

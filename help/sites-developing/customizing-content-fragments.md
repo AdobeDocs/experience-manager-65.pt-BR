@@ -10,7 +10,7 @@ exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
 source-git-commit: 9ad531738ac5e3c9d888f685b47c8b322712a89e
 workflow-type: tm+mt
 source-wordcount: '2778'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -129,7 +129,7 @@ Para obter mais detalhes, consulte [Fragmento do conteúdo - excluir consideraç
 
 >[!CAUTION]
 >
->O [Componente principal do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) agora é recomendado. Consulte [Desenvolvimento dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obter mais detalhes.
+>O [Componente principal do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR) agora é recomendado. Consulte [Desenvolvimento dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR) para obter mais detalhes.
 
 Os fragmentos de conteúdo podem ser referenciados AEM páginas, como qualquer outro tipo de ativo. AEM fornece a [**Fragmento de conteúdo** componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) - a [componente que permite incluir fragmentos de conteúdo em suas páginas](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Você também pode estender, isso **Fragmento de conteúdo** componente principal.
 
@@ -147,7 +147,7 @@ Os fragmentos de conteúdo podem ser referenciados AEM páginas, como qualquer o
 
 >[!NOTE]
 >
->**Modelo de fragmentos de conteúdo:**
+>**Modelo de fragmentos do conteúdo:**
 >
 >Ao usar um fragmento de conteúdo que foi baseado em um modelo de fragmento de conteúdo em uma página, o modelo é referenciado. Isso significa que, se o modelo não tiver sido publicado no momento em que você publicar a página, ela será sinalizada e o modelo será adicionado aos recursos a serem publicados com a página.
 >
@@ -392,7 +392,7 @@ Note-se que:
 * Tarefas que podem exigir esforço adicional:
 
    * Criar/remover novos elementos não atualizará a estrutura de dados de fragmentos simples (com base em um modelo de fragmento).
-   * Criar novas variações de `ContentElement` não atualizará a estrutura de dados (mas as criará globalmente a partir de `ContentFragment` ).
+   * Criar novas variações de `ContentElement` não atualizará a estrutura de dados (mas os criará globalmente a partir de `ContentFragment` ).
 
    * Remover variações existentes não atualizará a estrutura de dados.
 

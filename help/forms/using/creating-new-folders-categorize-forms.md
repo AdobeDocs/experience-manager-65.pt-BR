@@ -1,8 +1,8 @@
 ---
 title: Criar novas pastas para categorizar formulários
-seo-title: Criar novas pastas para categorizar formulários
-description: Use pastas para organizar modelos de formulário, PDFs, recursos e formulários adaptáveis.
-seo-description: Use pastas para organizar modelos de formulário, PDFs, recursos e formulários adaptáveis.
+seo-title: Create new folders to categorize forms
+description: Use pastas para organizar modelos de formulário, PDF, recursos e formulários adaptáveis.
+seo-description: Use folders to organize your form templates, PDFs, resources, and adaptive forms.
 uuid: 63fcb807-c9cf-49ae-ad69-6b1187543470
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,14 +12,14 @@ role: Admin
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
 
 # Criar novas pastas para categorizar formulários {#create-new-folders-to-categorize-forms}
 
-Você pode organizar seus ativos melhor usando pastas. Como o AEM Forms suporta vários tipos de ativos, como modelos de formulário, PDFs, documentos, recursos e formulários adaptáveis, com vários metadados, você pode usar pastas para categorizar seus formulários com base nos critérios desejados.
+Você pode organizar seus ativos melhor usando pastas. Como o AEM Forms suporta vários tipos de ativos, como modelos de formulário, PDF, documentos, recursos e formulários adaptáveis, com vários metadados, você pode usar pastas para categorizar seus formulários com base nos critérios desejados.
 
 O AEM Forms permite alterar o título de uma pasta. O título não é o mesmo do nó sob o qual a pasta é armazenada no repositório. Em vez disso, o título é mantido como metadados para a pasta. Se você alterar o título de uma pasta, o caminho de qualquer ativo presente na pasta não será afetado.
 
@@ -27,17 +27,17 @@ O AEM Forms permite alterar o título de uma pasta. O título não é o mesmo do
 
 Você pode criar uma pasta no AEM Forms de uma das seguintes maneiras:
 
-* Carregue um arquivo ZIP contendo ativos na estrutura de pastas desejada (Consulte [Obter documentos XDP e PDF no AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
+* Faça upload de um arquivo ZIP contendo ativos na estrutura de pastas desejada (consulte [Obter documentos XDP e PDF no AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
 
 * Criar uma nova pasta vazia
 
 1. Faça logon na interface do usuário do AEM Forms em `https://<server>:<port>/aem/forms.html`.
 1. Navegue até o local em que deseja criar uma pasta.
-1. Clique no ícone ![aem6forms_add](assets/aem6forms_add.png) na barra de ferramentas e selecione **[!UICONTROL Criar pasta]**.
+1. Clique no botão ![aem6forms_add](assets/aem6forms_add.png) na barra de ferramentas e selecione **[!UICONTROL Criar pasta]**.
 
 1. Insira os seguintes detalhes:
 
-   * **Título:** Exibir nome da pasta
+   * **Título:** Nome de exibição para a pasta
    * **Nome:** *(Obrigatório)* O nome do nó no qual você deseja armazenar a pasta no repositório
 
    >[!NOTE]
@@ -48,11 +48,11 @@ Você pode criar uma pasta no AEM Forms de uma das seguintes maneiras:
 
    Uma nova pasta com o título definido é exibida no local atual na lista de ativos.
 
-   Se existir uma pasta com o nome especificado, o envio falhará com um erro. Você pode exibir a mensagem de erro passando o mouse sobre o ícone de erro ![aem6forms_error_alert](assets/aem6forms_error_alert.png) que aparece ao lado do campo de nome.
+   Se existir uma pasta com o nome especificado, o envio falhará com um erro. Você pode exibir a mensagem de erro passando o mouse sobre o erro ![aem6forms_error_alert](assets/aem6forms_error_alert.png) ícone que aparece ao lado do campo de nome.
 
 ### Editar o título da pasta {#edit-the-folder-title-br}
 
 1. Selecione a pasta cujo título você deseja editar.
-1. Clique no ícone editar ![aem6forms_edit](assets/aem6forms_edit.png) na barra de ferramentas.
+1. Clique na edição ![aem6forms_edit](assets/aem6forms_edit.png) na barra de ferramentas.
 1. Insira o novo título. O campo de texto é pré-preenchido com o valor atual do título da pasta. Você pode alterá-lo para um novo valor.
 1. Clique em **[!UICONTROL Enviar].**

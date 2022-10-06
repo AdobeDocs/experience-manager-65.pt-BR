@@ -1,8 +1,8 @@
 ---
 title: SRP - Armazenamento de conteúdo da comunidade
-seo-title: SRP - Armazenamento de conteúdo da comunidade
+seo-title: SRP - Community Content Storage
 description: A partir do AEM Communities 6.1, o conteúdo gerado pelo usuário (UGC) é armazenado em um único armazenamento comum fornecido por um provedor de recursos de armazenamento (SRP)
-seo-description: A partir do AEM Communities 6.1, o conteúdo gerado pelo usuário (UGC) é armazenado em um único armazenamento comum fornecido por um provedor de recursos de armazenamento (SRP)
+seo-description: As of AEM Communities 6.1, user generated content (UGC) is stored in a single, common store provided by a storage resource provider (SRP)
 uuid: d45e03c4-378b-4510-a6a0-d48c8cb879d9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,7 +14,7 @@ role: Admin
 exl-id: e29aae44-67be-43d2-8004-c986412d9e63
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -27,19 +27,19 @@ A partir do AEM Communities 6.1, o conteúdo gerado pelo usuário (UGC) é armaz
 
 Ao contrário de versões anteriores, não há replicação inversa/direta do UGC em instâncias AEM. Em vez disso, o SRP torna o UGC diretamente acessível para operações de criação, leitura, atualização e exclusão (CRUD) de todas as instâncias de criação e publicação, com uma exceção para o JSRP.
 
-Veja a seguir as [características de cada opção SRP](#characteristics-of-srp-options), que são informações cruciais para o processo de decisão ao escolher o SRP apropriado e [implantação subjacente](/help/communities/topologies.md).
+Veja a seguir [características de cada opção SRP](#characteristics-of-srp-options), que é uma informação crucial para o processo de decisão ao escolher o SRP adequado e [implantação subjacente](/help/communities/topologies.md).
 
-Para obter detalhes sobre o uso do SRP para UGC, consulte [Visão Geral do Provedor de Recursos de Armazenamento](/help/communities/srp.md).
+Para obter detalhes sobre o uso do SRP para UGC, consulte [Visão geral do provedor de recursos de armazenamento](/help/communities/srp.md).
 
 >[!NOTE]
 >
->O SRP se aplica somente ao conteúdo da comunidade. Isso não afeta o local onde o conteúdo do site é armazenado ([node store](/help/sites-deploying/data-store-config.md)) e não afeta a manipulação segura do registro de usuários, perfis de usuários e grupos de usuários entre AEM instâncias (consulte também [Gerenciando Dados do Usuário](#managing-user-data)).
+>O SRP se aplica somente ao conteúdo da comunidade. Não afeta o local onde o conteúdo do site é armazenado ([armazenamento de nó](/help/sites-deploying/data-store-config.md)) e não afeta a manipulação segura do registro de usuários, perfis de usuários e grupos de usuários entre AEM instâncias (consulte também [Gerenciar dados do usuário](#managing-user-data)).
 
 >[!CAUTION]
 >
->A partir AEM 6.1, [UGC nunca será replicado](#ugc-never-replicated).
+>A partir do AEM 6.1, [O UGC nunca é replicado](#ugc-never-replicated).
 >
->Quando a implantação não inclui um armazenamento comum, como a topologia padrão [JSRP](/help/communities/topologies.md#jsrp), o UGC estará visível somente na instância de publicação ou autor do AEM em que foi inserido. Somente se a topologia incluir um cluster de publicação, o UGC estará visível em qualquer instância de publicação.
+>Quando a implantação não inclui um armazenamento comum, como o padrão [JSRP](/help/communities/topologies.md#jsrp) topologia, o UGC estará visível somente na instância de publicação ou autor do AEM em que foi inserido. Somente se a topologia incluir um cluster de publicação, o UGC estará visível em qualquer instância de publicação.
 
 ## Características das opções de SRP {#characteristics-of-srp-options}
 
@@ -107,7 +107,7 @@ JSRP:
 
 ## Configuração do SRP {#configuring-srp}
 
-A especificação da opção de armazenamento padrão, com base na implantação subjacente, é feita por meio do [Storage Configuration console](/help/communities/srp-config.md).
+A especificação da opção de armazenamento padrão, com base na implantação subjacente, é feita por meio do [Console de configuração de armazenamento](/help/communities/srp-config.md).
 
 Para obter detalhes de configuração de cada opção, consulte:
 
@@ -132,12 +132,12 @@ Embora o conteúdo do site seja replicado, o UGC nunca é replicado.
 
 ### Gerenciar dados do usuário {#managing-user-data}
 
-Além disso, de interesse para o CommunitIes são [*users*, *grupos de usuários* e *perfis de usuário*](/help/communities/users.md). Esses dados relacionados ao usuário, quando criados e atualizados no ambiente de publicação, precisam ser disponibilizados para outras instâncias de publicação quando a topologia for um [farm de publicação](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
+Também de interesse para os Comunistas [*usuários*, *grupos de usuários* e *perfis de usuário*](/help/communities/users.md). Esses dados relacionados ao usuário, quando criados e atualizados no ambiente de publicação, precisam ser disponibilizados para outras instâncias de publicação quando a topologia for uma [publicar farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
 
-A partir do AEM Communities 6.1, os dados relacionados ao usuário são sincronizados usando a distribuição do Sling em vez da replicação. Para obter mais informações, visite [Sincronização de Usuário](/help/communities/sync.md).
+A partir do AEM Communities 6.1, os dados relacionados ao usuário são sincronizados usando a distribuição do Sling em vez da replicação. Para obter mais informações, visite [Sincronização de usuários](/help/communities/sync.md).
 
 ### Atualização para o AEM Communities 6.5 {#upgrading-to-aem-communities}
 
 Ao atualizar para AEM 6.5 Comunidades, se o UGC pré-existente precisar ser retido, as etapas devem ser tomadas, dependendo se a comunidade AEM 5.6.1 ou AEM 6.0 usou o armazenamento Adobe on Demand ou o armazenamento local do UGC.
 
-Para obter detalhes, visite [Atualizando para o AEM Communities 6.5](/help/communities/upgrade.md).
+Para obter detalhes, visite [Atualização para o AEM Communities 6.5](/help/communities/upgrade.md).

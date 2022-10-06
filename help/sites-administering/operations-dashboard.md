@@ -46,7 +46,7 @@ Ela tem vários recursos, descritos abaixo.
 
 ## Verificações de integridade {#health-checks}
 
-O **Relatórios de integridade** são um sistema de cartões que indica uma boa ou má saúde em relação a uma área de produto específica. Esses cartões são visualizações das Verificações de integridade do Sling, que agregam dados do JMX e de outras fontes e expõem as informações processadas novamente como MBeans. Esses MBeans também podem ser inspecionados no [Console da Web JMX](/help/sites-administering/jmx-console.md)nos termos do **org.apache.sling.health.check** domínio.
+O **Relatórios de integridade** são um sistema de cartões que indica uma boa ou má saúde em relação a uma determinada área de produtos. Esses cartões são visualizações das Verificações de integridade do Sling, que agregam dados do JMX e de outras fontes e expõem as informações processadas novamente como MBeans. Esses MBeans também podem ser inspecionados no [Console da Web JMX](/help/sites-administering/jmx-console.md)nos termos do **org.apache.sling.health.check** domínio.
 
 A interface dos Relatórios de integridade pode ser acessada por meio do **Ferramentas** - **Operações** - **Relatórios de integridade** na tela de Boas-vindas AEM ou diretamente pelo seguinte URL:
 
@@ -159,7 +159,7 @@ A função de uma verificação de integridade composta é agregar várias verif
    >
    >Um novo Mbean JMX é criado para cada nova configuração da Verificação de integridade composta do Apache Sling.**
 
-1. Finalmente, a entrada da verificação de integridade composta que acabou de ser criada precisa ser adicionada nos nós de configuração do Painel de Operações . O procedimento para o efeito é o mesmo que para os controlos sanitários individuais: um nó do tipo **nt:unstructured** precisa ser criada em `/apps/settings/granite/operations/hc`. A propriedade resource do nó será definida pelo valor de **hc.average.name** na configuração OSGI.
+1. Finalmente, a entrada da verificação de integridade composta que acabou de ser criada precisa ser adicionada nos nós de configuração do Painel de Operações . O procedimento para o efeito é o mesmo que os controlos sanitários individuais: um nó do tipo **nt:unstructured** precisa ser criada em `/apps/settings/granite/operations/hc`. A propriedade resource do nó será definida pelo valor de **hc.average.name** na configuração OSGI.
 
    Se, por exemplo, você criou uma configuração e definiu a variável **hc.mbean.name** para **diskusage**, os nós de configuração terão esta aparência:
 
@@ -259,7 +259,7 @@ A função de uma verificação de integridade composta é agregar várias verif
    <td><p>Essa verificação repete os agentes de replicação e observa suas filas. Para o item na parte superior da fila, a verificação verifica quantas vezes o agente tentou novamente a replicação. Se o agente tiver tentado novamente a replicação mais do que o valor da <code>numberOfRetriesAllowed</code> , retorna um aviso. O <code>numberOfRetriesAllowed</code> é configurável. </p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DreplicationQueue%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=replicationQueue,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
-   <td>Tarefas de arremesso</td>
+   <td>Sling Jobs</td>
    <td>
     <div>
       O Sling Jobs verifica o número de tarefas enfileiradas no JobManager, o compara ao
@@ -860,7 +860,7 @@ Também é possível baixar uma `JSON` arquivo que resume as informações do pa
    <td>Página Falhas do fluxo de trabalho</td>
   </tr>
   <tr>
-   <td>Tarefas de arremesso</td>
+   <td>Trabalhos Sling</td>
    <td><p>Contagens de tarefas Sling - número de tarefas em um determinado status (se houver):</p>
     <ul>
      <li>Falha</li>

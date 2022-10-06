@@ -1,8 +1,8 @@
 ---
 title: Fornecimento de informações seguras de alto volume
-seo-title: Fornecimento de informações seguras de alto volume
+seo-title: High-volume secure information delivery
 description: A segurança de documentos oferece suporte à associação de licenças aos usuários, em vez de aos documentos em ambientes de produção em massa.
-seo-description: A segurança de documentos oferece suporte à associação de licenças aos usuários, em vez de aos documentos em ambientes de produção em massa.
+seo-description: Document security supports the association of licenses to users, rather than to the documents in mass production environments.
 uuid: 9747d283-506c-434e-9850-e50b95290cc8
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 616e8821-ca96-4471-9120-0e1076a06178
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-
-# Entrega de informações seguras de alto volume {#high-volume-secure-information-delivery}
+# Fornecimento de informações seguras de alto volume {#high-volume-secure-information-delivery}
 
 Em um ambiente de produção em massa, como o que gera faturas mensais seguras para uma empresa de telecomunicações, criar licenças específicas para cada documento pode se tornar um processo que consome muitos recursos. Nesses casos, a segurança dos documentos é compatível com a associação de licenças aos usuários, e não com os documentos. A licença gerada para um usuário é usada para todos os documentos protegidos para esse usuário.
 

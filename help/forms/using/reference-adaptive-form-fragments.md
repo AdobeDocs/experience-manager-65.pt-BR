@@ -1,7 +1,7 @@
 ---
 title: Referência de fragmentos de formulário adaptáveis
 seo-title: Reference adaptive form fragments
-description: 'O AEM Forms fornece fragmentos de formulário adaptáveis que podem ser usados como ativos para criar um formulário rapidamente. '
+description: O AEM Forms fornece fragmentos de formulário adaptáveis que podem ser usados como ativos para criar um formulário rapidamente.
 seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Referência de fragmentos de formulário adaptáveis{#reference-adaptive-form-fragments}
 
-[Os ](../../forms/using/adaptive-form-fragments.md) fragmentos de formulário adaptável são um grupo de campos ou um painel que contém um grupo de campos que podem ser usados ao criar um formulário. Ele permite criar um formulário de maneira fácil e rápida. Você pode arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e pode editá-lo no editor de formulário.
+[Fragmento de formulário adaptável](../../forms/using/adaptive-form-fragments.md) é um grupo de campos ou um painel que contém um grupo de campos que podem ser usados ao criar um formulário. Ele permite criar um formulário de maneira fácil e rápida. Você pode arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e pode editá-lo no editor de formulário.
 
 Para autores de formulários adaptáveis, os fragmentos de referência são fornecidos no [Pacote do complemento AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Inclui os seguintes fragmentos:
 

@@ -1,14 +1,15 @@
 ---
-title: Cabeça e Sem Cabeça no AEM
+title: Headful e Headless no AEM
 description: AEM projetos podem ser implementados em um modelo headful e sem interface, mas a escolha não é binária. AEM oferece a flexibilidade para explorar as vantagens de ambos os modelos em um projeto.
-source-git-commit: cf7e9061bac9004c7efd2f045b4900e4a92d67e9
+exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1011'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Cabeça e Sem Cabeça no AEM {#headful-headless}
+# Headful e Headless no AEM {#headful-headless}
 
 Os projetos do Adobe Experience Manager podem ser implementados em modelos headful e sem periféricos, mas a escolha não é binária. AEM oferece a flexibilidade para explorar as vantagens de ambos os modelos em um projeto. Este documento fornece uma visão geral dos diferentes modelos e descreve os níveis de integração SPA.
 
@@ -20,7 +21,7 @@ AEM também pode ser usado para simplesmente gerenciar o conteúdo, permitindo q
 
 Mas isso não precisa ser uma escolha binária. AEM oferece flexibilidade sem precedentes, permitindo explorar as vantagens de ambos os modelos para o seu projeto.
 
-![Modelos de implementação de AEM](headless/assets/aem-implementation-models.png)
+![Modelos de implementação do AEM](headless/assets/aem-implementation-models.png)
 
 Em um modelo com pilha completa ou headful, o conteúdo é gerenciado no repositório AEM e AEM componentes com base em Java, HTL etc. são usados para renderizar o conteúdo da experiência do usuário. Neste modelo, a criação de conteúdo, o estilo, a apresentação e o delivery tudo acontece em AEM.
 

@@ -1,22 +1,21 @@
 ---
 title: Suporte a criptografia para propriedades de configuração
-seo-title: Suporte a criptografia para propriedades de configuração
+seo-title: Encryption Support for Configuration Properties
 description: Suporte a criptografia para propriedades de configuração
-seo-description: 'null'
+seo-description: null
 uuid: 26dc5e46-9332-4d9b-8874-895b90391e8c
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 3c3db1c8-5b22-45dd-aeaf-5cf830a9486b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
-
 
 # Suporte a criptografia para propriedades de configuração{#encryption-support-for-configuration-properties}
 
@@ -30,7 +29,7 @@ O suporte ao plug-in de configuração OSGi foi adicionado para descriptografar 
 >
 >Os serviços que esperam um valor criptografado precisam usar a verificação IsProtected para ver se o valor está criptografado antes de tentar descriptografá-lo, pois ele já pode ter sido descriptografado.
 
-## Ativação do suporte a criptografia {#enabling-encryption-support}
+## Ativação do suporte à criptografia {#enabling-encryption-support}
 
 Essas etapas mostram como criptografar a senha SMTP para o serviço de email. Você pode concluir essas etapas para uma propriedade OSGI que deseja criptografar.
 
@@ -39,16 +38,16 @@ Essas etapas mostram como criptografar a senha SMTP para o serviço de email. Vo
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. A página **Adobe Experience Manager Web Console Crypto Support** é exibida.
+1. O **Suporte de criptografia do console da Web Adobe Experience Manager** será exibida.
 
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
-1. No campo **Plain Text**, insira o texto dos dados confidenciais que deseja proteger.
-1. Selecione **Protect**. O texto protegido é exibido como texto criptografado.
+1. No **Texto sem formatação** , insira o texto dos dados confidenciais que deseja proteger.
+1. Selecionar **Protect**. O texto protegido é exibido como texto criptografado.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
-1. Copie o texto protegido da etapa 5 e cole-o no valor do formulário OSGI. Neste exemplo, a **senha SMTP criptografada** é adicionada ao *Day CQ Mail Service*.
+1. Copie o texto protegido da etapa 5 e cole-o no valor do formulário OSGI. Neste exemplo, o arquivo **Senha SMTP** é adicionado ao *Day CQ Mail Service*.
 
    ![screen_shot_2016-12-18at105809pm](assets/screen_shot_2016-12-18at105809pm.png)
 

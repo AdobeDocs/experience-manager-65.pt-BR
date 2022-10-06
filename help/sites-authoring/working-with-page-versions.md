@@ -14,7 +14,7 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 source-git-commit: b11a97b9b00e6f80fb0243e234ed1dc2c004ed3a
 workflow-type: tm+mt
 source-wordcount: '1491'
-ht-degree: 68%
+ht-degree: 96%
 
 ---
 
@@ -64,33 +64,33 @@ O controle de versão cria um “instantâneo” de uma página em um ponto no t
 
    A linha do tempo será aberta com as informações atualizadas para indicar a nova versão.
 
-## Reposição de versões {#reinstating-versions}
+## Restaurar versões {#reinstating-versions}
 
-Depois de criar uma versão da página, há vários métodos para restabelecer uma versão anterior:
+Depois de criar uma versão da página, há vários métodos para restaurar uma versão anterior:
 
-* o **Reverter para esta versão** da [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) trilho
+* a opção **Reverter para esta versão** do painel [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline)
 
-   Instale novamente uma versão anterior de uma página selecionada.
+   Restaure uma versão anterior de uma página selecionada.
 
-* o **Restaurar** opções na parte superior [barra de ferramentas ações](/help/sites-authoring/basic-handling.md#actions-toolbar)
+* a opção **Restaurar** na parte superior da [barra de ferramentas Ações](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
    * **Restaurar versão**
 
-      Instale novamente as versões das páginas especificadas na pasta atualmente selecionada; isso também pode incluir a restauração de páginas que foram excluídas anteriormente.
+      Restaure as versões das páginas especificadas na pasta atualmente selecionada; isso também pode incluir a restauração de páginas que foram excluídas anteriormente.
 
    * **Restaurar árvore**
 
-      Retomar uma versão de uma árvore inteira em uma data e hora especificadas; isso pode incluir páginas que foram excluídas anteriormente.
+      Restaure uma versão de uma árvore inteira em uma data e hora especificadas; isso pode incluir páginas que foram excluídas anteriormente.
 
 >[!NOTE]
 >
->Ao reinstalar uma página, a versão criada fará parte de uma nova ramificação.
+>Ao restaurar uma página, a versão criada será parte da nova ramificação.
 >
 >Para ilustrar:
 >
 >1. Crie versões de qualquer página.
 >1. Os nomes dos rótulos iniciais e do nó da versão serão 1.0, 1.1, 1.2 e assim por diante.
->1. Reinstale a primeira versão; ou seja, 1.0.
+>1. Restaure a primeira versão; isto é, a versão 1.0.
 >1. Crie novas versões novamente.
 >1. Os rótulos e os nomes de nó gerados agora serão 1.0.0, 1.0.1, 1.0.2 etc.
 
@@ -112,19 +112,19 @@ Para **Reverter** a página selecionada para uma versão anterior:
 
 Este método pode ser usado para restaurar versões de páginas especificadas na pasta atual; isso também pode incluir a restauração de páginas que foram excluídas anteriormente:
 
-1. Navegue até e [select](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), a pasta necessária.
+1. Navegue até a pasta necessária e [selecione-a](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
-1. Selecionar **Restaurar**, em seguida **Restaurar versão** na parte superior [barra de ferramentas ações](/help/sites-authoring/basic-handling.md#actions-toolbar).
+1. Selecione **Restaurar** e, em seguida, **Restaurar versão** na [barra de ferramentas de ações](/help/sites-authoring/basic-handling.md#actions-toolbar) localizada na parte superior.
 
    >[!NOTE]
    >
-   >Se, você:
+   >Se você:
    >
-   >* você selecionou uma única página que nunca teve páginas secundárias,
+   >* selecionou uma página única que nunca teve páginas secundárias,
    >* ou nenhuma das páginas na pasta tem versões,
 
    >
-   >Em seguida, a exibição estará vazia, pois não há versões aplicáveis.
+   >Então, a exibição estará vazia, pois não há versões aplicáveis.
 
 1. As versões disponíveis serão listadas:
 
@@ -134,35 +134,35 @@ Este método pode ser usado para restaurar versões de páginas especificadas na
 
    ![Restaurar versão - Selecionar versão](/help/sites-authoring/assets/versions-restore-version-02.png)
 
-1. Na exibição principal, selecione a página desejada a ser restaurada:
+1. Na exibição principal, selecione a página que deseja restaurar:
 
    ![Restaurar versão - Selecionar página](/help/sites-authoring/assets/versions-restore-version-03.png)
 
-1. Selecionar **Restaurar** para a versão selecionada, da página selecionada, a ser restaurada como a versão atual.
+1. Selecione **Restaurar** para que a versão selecionada da página seja restaurada como a versão atual.
 
 >[!NOTE]
 >
->A ordem em que você seleciona uma página obrigatória e a versão relacionada é intercambiável.
+>A ordem em que você seleciona uma página desejada e a versão relacionada é intercambiável.
 
 ### Restaurar árvore {#restore-tree}
 
-Esse método pode ser usado para restaurar uma versão de uma árvore como em uma data e hora especificadas; isso pode incluir páginas que foram excluídas anteriormente:
+Esse método pode ser usado para restaurar uma versão de uma árvore, por exemplo, para uma data e hora especificadas. Isso pode incluir páginas que foram excluídas anteriormente:
 
-1. Navegue até e [select](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), a pasta necessária.
+1. Navegue até a pasta desejada e [selecione-a](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
-1. Selecionar **Restaurar**, em seguida **Restaurar árvore** na parte superior [barra de ferramentas ações](/help/sites-authoring/basic-handling.md#actions-toolbar). A versão mais recente da árvore será mostrada:
+1. Selecione **Restaurar** e, em seguida, **Restaurar árvore** na [barra de ferramentas de ações](/help/sites-authoring/basic-handling.md#actions-toolbar) localizada na parte superior. A versão mais recente da árvore será mostrada:
 
    ![Restaurar árvore](/help/sites-authoring/assets/versions-restore-tree-02.png)
 
-1. Use o seletor de data e hora em **Últimas versões na data** para selecionar outra versão da árvore - a que será restaurada.
+1. Use o seletor de data e hora em **Últimas versões na data** para selecionar outra versão da árvore, ou seja, a que será restaurada.
 
-1. Definir o sinalizador **Páginas sem versão preservadas** conforme necessário:
+1. Defina o sinalizador **Páginas sem controle de versão preservadas** conforme necessário:
 
-   * Se estiver ativo (selecionado), quaisquer páginas sem versão serão mantidas e não serão afetadas pela restauração.
+   * Se estiver ativo (selecionado), quaisquer páginas sem controle de versão serão mantidas e não serão afetadas pela restauração.
 
-   * Se estiver inativo (não selecionado), quaisquer páginas sem versão serão removidas, pois não existiam na árvore com versão.
+   * Se estiver inativo (não selecionado), quaisquer páginas sem controle de versão serão removidas, pois não existiam na árvore com controle de versões.
 
-1. Selecionar **Restaurar** para a versão selecionada da árvore a ser restaurada como a *atual* versão.
+1. Selecione **Restaurar** para que a versão selecionada da árvore seja restaurada como a versão *atual*.
 
 ## Visualização de uma versão   {#previewing-a-version}
 

@@ -1,8 +1,8 @@
 ---
 title: Componentes do Communities
-seo-title: Componentes do Communities
+seo-title: Communities Components
 description: Adicionar recursos da comunidade a qualquer site AEM
-seo-description: Adicionar recursos da comunidade a qualquer site AEM
+seo-description: Adding community features to any AEM site
 uuid: 76824820-81e9-4192-8df3-dff55eaf144e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,14 +10,13 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '286'
 ht-degree: 44%
 
 ---
-
 
 # Componentes do Communities {#communities-components}
 
@@ -25,25 +24,25 @@ ht-degree: 44%
 
 Quando o AEM Communities está licenciado, além de criar sites de comunidade, é possível adicionar recursos do Communities a qualquer site do AEM usando ferramentas de criação padrão do AEM.
 
-Para saber mais sobre como criar um site da comunidade, visite:
+Para saber mais sobre como criar uma visita ao site da comunidade:
 
-* [Visão geral do AEM Communities](/help/communities/overview.md)
+* [Visão geral da AEM Communities](/help/communities/overview.md)
 * [Introdução ao AEM Communities](/help/communities/getting-started.md)
 * [Introdução ao AEM Communities para ativação](/help/communities/getting-started-enablement.md)
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o ambiente de criação, visualização a documentação em [manuseio básico](/help/sites-authoring/basic-handling.md) e um [guia rápido para as páginas de criação](/help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o ambiente de criação, visualize a documentação em [tratamento básico](/help/sites-authoring/basic-handling.md) e [guia rápido para a criação de páginas](/help/sites-authoring/qg-page-authoring.md).
 
 ## Componentes de comunidades disponíveis {#available-communities-components}
 
 A tabela a seguir lista os componentes Comunidades visíveis aos autores quando ativados no navegador de componentes (sidekick).
 
-Consulte também o guia interativo [Componentes da comunidade](/help/communities/components-guide.md).
+Veja também o [Guia de componentes da comunidade](/help/communities/components-guide.md).
 
 >[!NOTE]
 >
->Leia [Communities Components Basics](/help/communities/basics.md), pois contém as informações necessárias para a criação com componentes Communities.
+>Ler [Noções básicas sobre componentes do Communities](/help/communities/basics.md) pois contém as informações necessárias para a criação com os componentes do Communities.
 
 | **Título do componente** | **Recurso** |
 |---|---|
@@ -52,7 +51,7 @@ Consulte também o guia interativo [Componentes da comunidade](/help/communities
 | Barra lateral do blog | [Blog](/help/communities/blog-feature.md) |
 | Calendário | [Calendário](/help/communities/calendar.md) |
 | Comentários | [Comentários](/help/communities/comments.md) |
-| Lista de atividades da comunidade | [Tendências de atividade](/help/communities/trends.md) |
+| Lista de atividades da comunidade | [Tendências da atividade](/help/communities/trends.md) |
 | Lista de membros do grupo da comunidade | [Grupos de comunidades](/help/communities/creating-groups.md) |
 | Escrever mensagem | [Mensagens](/help/communities/configure-messaging.md) |
 | Atribuições da ativação | [Atribuições](/help/communities/assignments.md) |
@@ -73,20 +72,19 @@ Consulte também o guia interativo [Componentes da comunidade](/help/communities
 | Perguntas relacionadas | [Perguntas e respostas](/help/communities/working-with-qna.md) |
 | Revisões | [Revisões](/help/communities/reviews.md) |
 | Resumo das revisões (Exibição) | [Revisões](/help/communities/reviews.md) |
-| Pesquisar   | [Pesquisar](/help/communities/search.md) |
+| Pesquisar | [Pesquisar](/help/communities/search.md) |
 | Resultados da pesquisa | [Pesquisar](/help/communities/search.md) |
 | Nuvem de tags sociais | [Nuvem de tags sociais](/help/communities/tagcloud.md) |
 | Votação | [Votação](/help/communities/voting.md) |
 
 >[!NOTE]
 >
->O componente de pesquisa não está mais disponível e é suportado no Experience Manager Communities.
+>O componente de pesquisa não está mais disponível e é compatível com o Experience Manager Communities.
 
 ## Documentação de comunidades relacionadas {#related-communities-documentation}
 
-* Visite [Implantação de comunidades](/help/communities/deploy-communities.md) para saber mais sobre implantações recomendadas.
+* Visita [Implantação de comunidades](/help/communities/deploy-communities.md) para saber mais sobre implantações recomendadas.
 
-* Visite [Administrando sites de comunidades](/help/communities/administer-landing.md) para saber mais sobre como criar um site da comunidade, configurar modelos de site da comunidade, moderar conteúdo da comunidade, gerenciar membros e configurar mensagens.
+* Visita [Administrar sites das comunidades](/help/communities/administer-landing.md) para saber mais sobre como criar um site da comunidade, configurar modelos de site da comunidade, moderar conteúdo da comunidade, gerenciar membros e configurar mensagens.
 
-* Visite [Comunidades em desenvolvimento](/help/communities/communities.md) para saber mais sobre a estrutura de componentes sociais (SCF) e como personalizar componentes e recursos das Comunidades.
-
+* Visita [Desenvolvimento de comunidades](/help/communities/communities.md) para saber mais sobre a estrutura de componentes sociais (SCF) e personalizar os componentes e recursos das Comunidades.

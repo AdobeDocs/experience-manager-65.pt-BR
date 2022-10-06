@@ -1,8 +1,8 @@
 ---
 title: Sua caixa de entrada
-seo-title: Sua caixa de entrada
+seo-title: Your Inbox
 description: Você pode receber notificações de várias áreas do AEM, como notificações sobre itens de trabalho ou tarefas que representam ações que você precisa executar no conteúdo da página.
-seo-description: Você pode receber notificações de várias áreas do AEM, como notificações sobre itens de trabalho ou tarefas que representam ações que você precisa executar no conteúdo da página.
+seo-description: You can receive notifications from various areas of AEM such as notification about work items or tasks that represent actions that you need to perform on page content.
 uuid: e7ba9150-957d-4f84-a570-2f3d83792472
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '581'
 ht-degree: 93%
 
 ---
-
 
 # Sua caixa de entrada{#your-inbox}
 
@@ -26,9 +25,9 @@ Você pode receber notificações de várias áreas do AEM, como notificações 
 Você recebe essas notificações em duas caixas de entrada, que são separadas pelo tipo de notificações:
 
 * Uma caixa de entrada onde é possível visualizar as notificações recebidas como resultado das assinaturas está descrita na próxima seção.
-* Uma caixa de entrada especializada para itens de fluxo de trabalho está descrita no documento [Participação em Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md).
+* Uma caixa de entrada especializada para itens de fluxo de trabalho é descrita na seção [Participar de fluxos de trabalho](/help/sites-classic-ui-authoring/classic-workflows-participating.md) documento.
 
-## Viewing Your Notifications {#viewing-your-notifications}
+## Visualizar suas notificações {#viewing-your-notifications}
 
 Para exibir suas notificações:
 
@@ -92,7 +91,7 @@ Para assinar notificações:
 1. Defina os caminhos das páginas sobre as quais você será notificado:
 
    * Clique em **Adicionar** para adicionar uma nova linha à tabela.
-   * Clique na célula da tabela **Caminho** e insira o caminho, por exemplo, `/content/docs`.
+   * Clique no botão **Caminho** célula da tabela e insira o caminho, por exemplo `/content/docs`.
 
    * Para ser notificado sobre todas as páginas pertencentes à subárvore, defina **Exata?** como **Não**.
 Para ser notificado somente sobre ações na página definidas pelo caminho, defina **Exata?** como **Sim**.

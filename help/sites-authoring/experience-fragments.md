@@ -14,7 +14,7 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Um fragmento de experiência:
 * É parte de uma experiência (página).
 * Pode ser usado em várias páginas.
 * É baseado em um modelo (somente editável) para definir a estrutura e os componentes.
-* Esse modelo é usado para criar o *página raiz* do Fragmento de experiência.
+* Esse modelo é usado para criar a *página raiz* do Fragmento de experiência.
 * É composto por um ou mais componentes, com layout, em um sistema de parágrafos.
 * Pode conter outros fragmentos de experiência.
 * Pode ser combinado com outros componentes (incluindo outros Fragmentos de experiência) para formar uma página completa (experiência).
@@ -178,7 +178,7 @@ Para criar um fragmento de experiência:
    ![xf-04](assets/xf-04.png)
 
    >[!NOTE]
-   As tags do modelo do Fragmento de experiência não serão unidas com tags nesta página raiz do Fragmento de experiência .
+   As tags do modelo do fragmento de experiência não serão unidas com tags nesta página raiz do fragmento de experiência.
    Elas são completamente separadas.
 
 1. Clique em **Criar**.
@@ -285,8 +285,8 @@ Para criar um novo Bloco de construção:
 
 O bloco de construção está visível na guia **Blocos de construção**. As seguintes ações estão disponíveis para cada bloco:
 
-* Vá para principal: abra a variação da página raiz em uma nova guia
-* Renomeie
+* Acesse o mestre: abra a variação da página raiz em uma nova guia
+* Renomear
 * Excluir
 
 ![xf-13](assets/xf-13.png)
@@ -299,7 +299,7 @@ Arraste o bloco de construção para o sistema de parágrafo de qualquer fragmen
 
 Os detalhes do fragmento podem ser vistos:
 
-1. Os detalhes são mostrados em todas as exibições do console **Fragmentos de experiência**, com a **de Exibição em lista**[, incluindo detalhes de uma exportação para o Target](/help/sites-administering/experience-fragments-target.md):
+1. Os detalhes são mostrados em todas as exibições do console **Fragmentos de experiência**, com a de **Exibição em lista**[, incluindo detalhes de uma exportação para o Target](/help/sites-administering/experience-fragments-target.md):
 
    ![ef-03](assets/ef-03.png)
 
@@ -348,9 +348,9 @@ Os detalhes do fragmento podem ser vistos:
 Usando o seletor `.plain.` no URL, você poderá acessar a representação HTML simples do navegador.
 
 >[!NOTE]
-Embora isso esteja disponível diretamente no navegador, [o principal objetivo é permitir outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações móveis personalizadas) para acessar o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
+Embora isso esteja disponível diretamente no navegador, [o principal objetivo é permitir que outros aplicativos (por exemplo, aplicativos Web de terceiros, implementações personalizadas de publicações de conteúdo para dispositivos móveis) acessem o conteúdo do Fragmento de experiência diretamente, usando apenas o URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
-## Exportar fragmentos de experiência   {#exporting-experience-fragments}
+## Exportar fragmentos de experiência {#exporting-experience-fragments}
 
 Por padrão, os fragmentos de experiência são entregues no formato HTML. Isso pode ser usado pelo AEM e por canais de terceiros.
 

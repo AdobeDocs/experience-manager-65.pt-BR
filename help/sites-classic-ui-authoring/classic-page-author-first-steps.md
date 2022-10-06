@@ -1,22 +1,21 @@
 ---
 title: Primeiros passos para autores
-seo-title: Primeiros passos para autores
+seo-title: First Steps for Authors
 description: Essa seção fornece uma visão geral das principais tarefas que você usará ao iniciar a criação de conteúdo com o Adobe Experience Manager (AEM).
-seo-description: Essa seção fornece uma visão geral das principais tarefas que você usará ao iniciar a criação de conteúdo com o Adobe Experience Manager (AEM).
+seo-description: This section gives you an overview of the main tasks that you will be using when starting to author content with Adobe Experience Manager (AEM).
 uuid: 1343acf9-b104-40f3-a3f2-df42060cb4fd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: page-authoring, introduction
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
-translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+exl-id: b41aa7e5-1a5f-4e5e-be79-637d9f71ad72
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 93%
+source-wordcount: '416'
+ht-degree: 92%
 
 ---
-
 
 # Primeiros passos para autores{#first-steps-for-authors}
 
@@ -26,7 +25,7 @@ Abrange:
 
 * [Introdução](#getting-started): Detalhar a sequência básica de eventos que você precisa para criar e publicar sua primeira página.
 
-* [Outras ações](#further-actions): Além das muitas outras ações que você pode usar durante a criação.
+* [Outras ações](#further-actions): Além das muitas outras ações que você pode usar na criação.
 
 ## Introdução {#getting-started}
 
@@ -34,7 +33,7 @@ Isso detalha a sequência básica de eventos que você precisa para criar e publ
 
 ### Navegar até o local da página {#navigating-to-the-page-location}
 
-O conteúdo no seu site é mantido em uma estrutura em árvore. Para criar ou editar uma página você precisa navegar até o local com o [console Site](/help/sites-classic-ui-authoring/author-env-basic-handling.md#navigating-with-the-websites-console).
+O conteúdo em seu site é mantido em uma estrutura de árvore. Para criar ou editar uma página você precisa navegar até o local com o [console Site](/help/sites-classic-ui-authoring/author-env-basic-handling.md#navigating-with-the-websites-console).
 
 ### Criar uma nova página {#creating-a-new-page}
 
@@ -44,7 +43,7 @@ Antes de editar, você precisa [criar uma nova página](/help/sites-classic-ui-a
 
 Para várias ações, como edição, você precisa [abrir uma página](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#opening-a-page-for-editing).
 
-### Editar a página  {#editing-a-page}
+### Editar a página {#editing-a-page}
 
 Se a instância já tem páginas ou você acabou de criar uma nova página, é possível [editar uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) seguindo estes procedimentos:
 
@@ -58,11 +57,11 @@ Se a instância já tem páginas ou você acabou de criar uma nova página, é p
 * [Bloquear uma página  ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Desbloquear uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
-### Publicar uma página  {#publishing-a-page}
+### Publicar uma página {#publishing-a-page}
 
 Quando terminar de editar sua página, você desejará [publicá-la (ou ativá-la)](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10), para que ela esteja disponível para os visitantes do seu site.
 
-## Próximas ações  {#further-actions}
+## Próximas ações {#further-actions}
 
 Além das etapas básicas há muitas outras ações disponíveis durante a criação.
 
@@ -74,7 +73,7 @@ Além das etapas básicas há muitas outras ações disponíveis durante a cria�
 
 [Mover e renomear páginas são realizados basicamente com a mesma ação.](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#moving-or-renaming-page)
 
-### Desfazer publicação de uma página  {#unpublishing-a-page}
+### Desfazer publicação de uma página {#unpublishing-a-page}
 
 Para tornar o conteúdo anteriormente publicado (ou ativado) indisponível no seu site público, você [desfaz a publicação (ou desativa) a página](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page).
 
@@ -82,14 +81,14 @@ Para tornar o conteúdo anteriormente publicado (ou ativado) indisponível no se
 
 Caso uma página não seja mais necessária, você pode [excluí-la](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#deleting-a-page).
 
-### Configurar as propriedades da página  {#setting-the-page-properties}
+### Configurar as propriedades da página {#setting-the-page-properties}
 
 Cada [página tem propriedades](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) que você pode definir para determinar os aspectos do seu funcionamento.
 
-### Criar uma versão de uma página  {#creating-a-version-of-a-page}
+### Criar uma versão de uma página {#creating-a-version-of-a-page}
 
 Você pode [criar uma versão de uma página](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version) e, em seguida, [reverter para uma versão,](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) se necessário.
 
-## Mais informações  {#more-information}
+## Mais informações {#more-information}
 
 O acesso a mais informações sobre a criação pode ser encontrado nas seções [Criação de página](/help/sites-classic-ui-authoring/classic-page-author.md) e [Trabalhar com o ambiente de criação](/help/sites-classic-ui-authoring/author-env.md).

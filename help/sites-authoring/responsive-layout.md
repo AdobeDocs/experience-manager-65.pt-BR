@@ -1,22 +1,21 @@
 ---
-title: 'Layout responsivo  '
-seo-title: 'Layout responsivo  '
+title: Layout responsivo
+seo-title: Responsive Layout
 description: O AEM permite que você crie um layout responsivo para suas páginas
-seo-description: O AEM permite que você crie um layout responsivo para suas páginas
+seo-description: AEM allows you to realize a responsive layout for your pages
 uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
-translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 92%
+source-wordcount: '1782'
+ht-degree: 93%
 
 ---
-
 
 # Layout responsivo  {#responsive-layout}
 
@@ -68,7 +67,7 @@ Dependendo do projeto, o Contêiner de layout pode ser usado como o sistema de p
 
 >[!NOTE]
 >
->O uso dos mecanismos acima é habilitado pela configuração no modelo. Consulte [Configurando o layout responsivo](/help/sites-administering/configuring-responsive-layout.md) para obter mais informações.
+>O uso dos mecanismos acima é habilitado pela configuração no modelo. Consulte [Configuração de layout responsivo](/help/sites-administering/configuring-responsive-layout.md) para obter mais informações.
 
 ## Definições de layout, emulação de dispositivo e pontos de interrupção {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -225,7 +224,7 @@ No modo de layout, é possível executar várias ações em uma grade:
 
    * **Pai**
 
-      Permite que você selecione o componente de container de layout inteiro para executar ações em todo o processo.
+      Permite que você selecione o componente do contêiner de layout inteiro para executar uma ação em tudo.
 
    * **Flutuar até a nova linha**
 
@@ -233,7 +232,7 @@ No modo de layout, é possível executar várias ações em uma grade:
 
    * **Ocultar componente**
 
-      O componente ficará invisível (pode ser restaurado da barra de ferramentas do container de layout).
+      O componente ficará invisível (ele pode ser restaurado na barra de ferramentas do contêiner de layout).
    ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * No modo **Layout**, você pode tocar/clicar em **Arrastar componentes aqui** para selecionar o componente inteiro. Isso mostrará a barra de ferramentas para este modo.
@@ -244,7 +243,7 @@ No modo de layout, é possível executar várias ações em uma grade:
 
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Mostrar componentes**  ocultos - revelar todos os componentes ou os individuais. O número indica quantos componentes ocultos existem atualmente.o contador mostra quantos componentes estão ocultos.
+   * **Mostrar componentes ocultos** - Revelar todos os componentes ou componentes individuais. O número indica quantos componentes ocultos há atualmente.o contador mostra quantos componentes estão ocultos.
 
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 
@@ -264,9 +263,8 @@ No modo de layout, é possível executar várias ações em uma grade:
    >
    >No exemplo acima, as ações flutuar e ocultar estão disponíveis porque este Contêiner de layout está aninhado em um Contêiner de layout pai.
 
-   * **Mostrar**
-componentesSelecione os componentes principais para mostrar a barra de ferramentas de ação com o 
-**Mostrar** opção de componentes ocultos. Neste exemplo, dois componentes estão ocultos.
+   * **Revelar componentes** Selecione os componentes principais para mostrar a barra de ferramentas de ação com a 
+opção **Mostrar componentes ocultos**. Neste exemplo, dois componentes estão ocultos.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Selecionar a opção **Mostrar componentes ocultos** exibirá em azul os componentes que estão ocultos no momento em suas posições originais.
@@ -274,4 +272,3 @@ componentesSelecione os componentes principais para mostrar a barra de ferrament
    ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
 
    Selecionar **Restaurar tudo** revelará todos os componentes ocultos.
-

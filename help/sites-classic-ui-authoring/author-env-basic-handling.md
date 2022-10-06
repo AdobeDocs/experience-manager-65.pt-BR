@@ -1,35 +1,31 @@
 ---
 title: Manuseio básico
-seo-title: Manuseio básico
+seo-title: Basic Handling
 description: Uma visão geral de uso básico ao usar o ambiente e criação do AEM. Usa o console Sites como base.
-seo-description: Uma visão geral de uso básico ao usar o ambiente e criação do AEM. Usa o console Sites como base.
+seo-description: An overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
 uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1194'
 ht-degree: 93%
 
 ---
-
 
 # Manuseio básico{#basic-handling}
 
 >[!NOTE]
 >
 >* Esta página foi projetada para apresentar uma visão geral do manuseio básico ao usar um ambiente de criação com o AEM. Usa o console **Sites** como base.
-   >
-   >
-* Algumas funcionalidades não estão disponíveis em todos os consoles, e/ou a funcionalidade adicional está disponível em alguns consoles. Informações específicas sobre os consoles individuais e o recurso relacionado serão abordadas com mais detalhes em outras páginas.
->* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar páginas de console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [edição](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
-
 >
-
+>* Algumas funcionalidades não estão disponíveis em todos os consoles, e/ou a funcionalidade adicional está disponível em alguns consoles. Informações específicas sobre os consoles individuais e o recurso relacionado serão abordadas com mais detalhes em outras páginas.
+>* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar páginas de console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [edição](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>
 
 
 ## A tela de boas-vindas {#the-welcome-screen}
@@ -60,7 +56,7 @@ Os consoles principais são:
   </tr>
   <tr>
    <td><strong>Lançamentos</strong></td>
-   <td>Ajuda a gerenciar suas <a href="/help/sites-classic-ui-authoring/classic-launches.md">inicializações</a>; esses itens permitem desenvolver o conteúdo de uma versão futura de uma ou mais páginas ativadas pela Web.<br /> <i>Observação: Na interface habilitada para toque, grande parte da mesma funcionalidade está disponível no console Sites, junto com o painel Referências.</i> <i>Se necessário, esse console estará disponível no console Ferramentas; selecione Operações, em seguida, Inicializações.</i></td>
+   <td>Ajuda a gerenciar suas <a href="/help/sites-classic-ui-authoring/classic-launches.md">inicializações</a>; esses itens permitem desenvolver o conteúdo de uma versão futura de uma ou mais páginas ativadas pela Web.<br /> <i>Observação: Na interface habilitada para toque, grande parte da mesma funcionalidade está disponível no console Sites, juntamente com o painel Referências .</i> <i>Se necessário, esse console estará disponível no console Ferramentas; selecione Operações, em seguida, Inicializações.</i></td>
   </tr>
   <tr>
    <td><strong>Caixa de entrada </strong></td>
@@ -109,7 +105,7 @@ Desse ponto, você pode [gerenciar suas páginas](/help/sites-authoring/managing
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
-## Acessar ajuda {#accessing-help}
+## Acessar ajuda   {#accessing-help}
 
 Em vários consoles (por exemplo, Sites) também há um botão **Ajuda** disponível, que abrirá o Compartilhamento de pacotes ou o site da documentação.
 
@@ -151,7 +147,7 @@ O console **Websites** lista suas páginas de conteúdo em uma estrutura em árv
 
 ## Informações da página no console do website {#page-information-on-the-websites-console}
 
-O painel direito do console **Sites** fornece uma exibição de lista com informações sobre as páginas:
+O painel direito do console **Websites** fornece uma exibição de lista com informações sobre páginas:
 
 ![page-info](assets/page-info.png)
 
@@ -229,9 +225,8 @@ As cores ao lado das páginas nas colunas **Publicado** e **Modificado** indicam
 | Modificado | Azul | A página foi modificada desde a última publicação. |
 | Modificado | *blank* | Essa página nunca foi modificada ou não foi modificada desde a última publicação. |
 
-## Context Menus {#context-menus}
+## Menus de contexto {#context-menus}
 
 A interface de usuário clássica usa mecanismos bem conhecidos para navegação e inicialização de ações, incluindo clique e duplo clique. Dependendo da situação atual, uma gama de menus de contexto (geralmente abertos com o botão direito do mouse) também estará disponível:
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
-

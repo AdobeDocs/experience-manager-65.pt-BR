@@ -1,18 +1,19 @@
 ---
-title: jornada do AEM Headless Content Architect
+title: Jornada do arquiteto de conteúdo do AEM Headless
 description: Uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager e como modelar o conteúdo para seu projeto.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# Modelagem de conteúdo para headless com AEM - uma introdução {#architect-headless-introduction}
+# Modelagem de conteúdo para headless com o AEM - uma introdução {#architect-headless-introduction}
 
 Nesta parte do [jornada do AEM Headless Content Architect](overview.md), você pode aprender os conceitos e a terminologia (básica) necessários para entender a modelagem de conteúdo para entrega de conteúdo sem periféricos com o Adobe Experience Manager (AEM).
 
-Este documento ajuda você a entender a entrega sem periféricos, como o AEM suporta periféricos e como o conteúdo é modelado para ficar sem periféricos. Depois de ler, você deve:
+Este documento ajuda você a entender a entrega sem periféricos, como o AEM suporta periféricos e como o conteúdo é modelado para ficar sem periféricos. Depois de ler esse documento, você deverá:
 
 * Entenda os conceitos básicos de entrega de conteúdo sem periféricos.
 * Familiarize-se com o modo como o AEM suporta modelagem sem periféricos e de conteúdo.
@@ -47,7 +48,7 @@ O cabeçalho de qualquer sistema é geralmente o renderizador de saída desse si
 
 Quando falamos de um CMS sem interface, o CMS gerencia o conteúdo e continua a entregá-lo aos consumidores. No entanto, apenas entregando a variável **conteúdo** de forma padronizada, um CMS sem periféricos omita a renderização final de output, deixando o **apresentação** do conteúdo para o serviço de consumo.
 
-![CMS sem periféricos](/help/journey-headless/developer/assets/headless-cms.png)
+![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
 Os serviços que consomem, sejam experiências de AR, um webshop, experiências móveis, aplicativos web progressivos (PWA), etc., absorvem conteúdo do CMS sem cabeçalho e fornecem sua própria renderização. Eles cuidam de fornecer suas próprias cabeças para o seu conteúdo.
 

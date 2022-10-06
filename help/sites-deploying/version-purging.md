@@ -1,8 +1,8 @@
 ---
 title: Limpeza de versão
-seo-title: Limpeza de versão
+seo-title: Version Purging
 description: Este artigo descreve as opções disponíveis para limpeza de versão.
-seo-description: Este artigo descreve as opções disponíveis para limpeza de versão.
+seo-description: This article describes the available options for version purging.
 uuid: a9fa25c7-e60e-4665-a726-99af9aac8f70
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: fb4d7337-7b94-430b-80d2-f1754f823c2b
 docset: aem65
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 2%
+source-wordcount: '728'
+ht-degree: 1%
 
 ---
-
 
 # Limpeza de versão{#version-purging}
 
@@ -28,7 +27,7 @@ Em uma instalação padrão, o AEM cria uma nova versão de uma página ou nó q
 >
 >Se nenhuma alteração de conteúdo for feita, você verá a mensagem informando que a página foi ativada, mas nenhuma nova versão será criada
 
-Você pode criar versões adicionais sob solicitação usando a guia **Controle de versão** do sidekick. Essas versões são armazenadas no repositório e podem ser restauradas, se necessário.
+Você pode criar versões adicionais mediante solicitação usando o **Controle de versão** guia do sidekick. Essas versões são armazenadas no repositório e podem ser restauradas, se necessário.
 
 Essas versões nunca são removidas, portanto, o tamanho do repositório aumentará com o tempo e, portanto, precisará ser gerenciado.
 
@@ -37,8 +36,7 @@ AEM é enviado com vários mecanismos para ajudá-lo a gerenciar seu repositóri
 * o [Gerenciador de versão](#version-manager)
 Isso pode ser configurado para limpar versões antigas quando novas versões forem criadas.
 
-* a ferramenta [Limpar Versões](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
-Isso é usado como parte do monitoramento e da manutenção do repositório.
+* o [Limpar versões](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) ferramenta Isso é usado como parte do monitoramento e da manutenção do repositório.
 Ela permite intervir para remover versões antigas de um nó ou uma hierarquia de nós, de acordo com estes parâmetros:
 
    * O número máximo de versões a serem mantidas no repositório.
@@ -47,7 +45,7 @@ Quando esse número é excedido, a versão mais antiga é removida.
    * A idade máxima de qualquer versão mantida no repositório.
 Quando a idade de uma versão exceder esse valor, ela será removida do repositório.
 
-* a [tarefa de manutenção da limpeza de versão](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Você pode agendar a tarefa de manutenção da limpeza de versão para excluir automaticamente as versões antigas. Como resultado, isso minimiza a necessidade de usar manualmente as ferramentas de limpeza de versão.
+* o [Tarefa de manutenção de limpeza de versão](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Você pode agendar a tarefa de manutenção da limpeza de versão para excluir automaticamente as versões antigas. Como resultado, isso minimiza a necessidade de usar manualmente as ferramentas de limpeza de versão.
 
 >[!CAUTION]
 >
@@ -57,7 +55,7 @@ Quando a idade de uma versão exceder esse valor, ela será removida do reposit�
 
 Além da limpeza explícita usando a ferramenta de limpeza, o Gerenciador de versões pode ser configurado para limpar versões antigas quando novas versões são criadas.
 
-Para configurar o Gerenciador de versões, [crie uma configuração](/help/sites-deploying/configuring-osgi.md) para:
+Para configurar o Gerenciador de versões, [criar uma configuração](/help/sites-deploying/configuring-osgi.md) a favor:
 
 `PID com.day.cq.wcm.core.impl.VersionManagerImpl`
 
@@ -67,7 +65,7 @@ As opções disponíveis são as seguintes:
 Uma versão é criada a menos que o agente de replicação esteja configurado para suprimir a criação de versões, que é respeitada pelo Gerenciador de versões.
 Uma versão é criada somente se a ativação ocorrer em um caminho contido em `versionmanager.ivPaths` (veja abaixo).
 
-* `versionmanager.ivPaths`(String[], padrão:  `{"/"}`) Especifica os caminhos nos quais as versões são criadas implicitamente na ativação, se  `versionmanager.createVersionOnActivation` estiver definido como verdadeiro.
+* `versionmanager.ivPaths`(String[], padrão: `{"/"}`) Especifica os caminhos nos quais as versões são criadas implicitamente na ativação se `versionmanager.createVersionOnActivation` está definida como true.
 
 * `versionmanager.purgingEnabled` (Booleano, padrão: falso) Define se a limpeza deve ser ativada ou não quando novas versões são criadas.
 
@@ -83,9 +81,9 @@ Uma versão é criada somente se a ativação ocorrer em um caminho contido em `
 >
 >Não é recomendável manter um grande número de versões no repositório. Portanto, ao configurar a operação de limpeza de versão, tenha cuidado para não excluir muitas versões da limpeza; caso contrário, o tamanho do repositório não será otimizado corretamente. Se você mantém um grande número de versões devido a requisitos comerciais, entre em contato com o suporte do Adobe para encontrar maneiras alternativas de otimizar o tamanho do repositório.
 
-### Combinando opções de retenção {#combining-retention-options}
+### Combinação de opções de retenção {#combining-retention-options}
 
-As opções que definem como quais versões devem ser retidas ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`) podem ser combinadas, dependendo de seus requisitos.
+As opções que definem como quais versões devem ser retidas ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), podem ser combinadas dependendo das suas necessidades.
 
 Por exemplo, ao definir o número máximo de versões a serem retidas E a versão mais antiga a ser retida:
 
@@ -120,6 +118,6 @@ Por exemplo, ao definir o número mínimo e máximo de versões a serem retidas 
 
    * 3 versões serão retidas
 
-## Ferramenta Limpar Versões {#purge-versions-tool}
+## Ferramenta Limpar versões {#purge-versions-tool}
 
-A ferramenta [Purge Versions](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) destina-se a limpar as versões de um nó ou uma hierarquia de nós no seu repositório. Seu objetivo principal é ajudar você a reduzir o tamanho do repositório, removendo versões antigas dos nós.
+O [Limpar versões](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) A ferramenta destina-se a limpar as versões de um nó ou uma hierarquia de nós em seu repositório. Seu objetivo principal é ajudar você a reduzir o tamanho do repositório, removendo versões antigas dos nós.

@@ -10,11 +10,11 @@ exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
 source-git-commit: 01de1d5064f5ebf00acd2fe9f138d852f41f7273
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Acessibilidade em [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
+# Acessibilidade no [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
 
 [!DNL Dynamic Media] O suporta o controle de teclado e tecnologias de assistência, como leitores de tela JAWS e NVDA, na interface do usuário de criação.
 
@@ -69,5 +69,5 @@ Consulte [Vídeo no Dynamic Media - Adicionar legendas ou legendas ocultas ao v�
 >[!MORELIKETHIS]
 >
 >* [Acessibilidade para soluções Adobe](https://www.adobe.com/accessibility.html)
->* [Acessibilidade em [!DNL Experience Manager Assets]](/help/assets/accessibility.md)
+>* [Acessibilidade no  [!DNL Experience Manager Assets]](/help/assets/accessibility.md)
 

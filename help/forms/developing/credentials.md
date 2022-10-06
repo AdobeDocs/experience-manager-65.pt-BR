@@ -1,8 +1,8 @@
 ---
 title: Trabalhando com credenciais
-seo-title: Trabalhando com credenciais
+seo-title: Working with Credentials
 description: Importe credenciais no AEM Forms usando a API do Gerenciador de Confiança e a API do Java. Além disso, saiba como excluir credenciais usando a API do Trust Manager e a API do Java.
-seo-description: Importe credenciais no AEM Forms usando a API do Gerenciador de Confiança e a API do Java. Além disso, saiba como excluir credenciais usando a API do Trust Manager e a API do Java.
+seo-description: Import credentials into AEM Forms using the Trust Manager API and Java API. In addition, learn how to delete credentials using the Trust Manager API and Java API.
 uuid: b794428f-49bf-4a91-bc5f-d855881f4f38
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
-
 
 # Trabalhando com credenciais {#working-with-credentials}
 
@@ -27,8 +26,8 @@ ht-degree: 0%
 
 Uma credencial contém suas informações de chave privada necessárias para assinar ou identificar documentos. Um certificado são informações de chave pública configuradas para confiança. A AEM Forms usa certificados e credenciais para várias finalidades:
 
-* O Acrobat Reader DC Extensions usa uma credencial para habilitar os direitos de uso do Adobe Reader em documentos PDF. (Consulte [Aplicar direitos de uso a documentos PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
-* O serviço de assinatura acessa certificados e credenciais ao executar operações como assinar digitalmente documentos PDF. (Consulte [Assinando documentos PDF digitalmente](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+* As extensões do Acrobat Reader DC usam uma credencial para habilitar os direitos de uso do Adobe Reader em documentos do PDF. (Consulte [Aplicação de direitos de uso a documentos do PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
+* O serviço de assinatura acessa certificados e credenciais ao executar operações como assinar digitalmente documentos PDF. (Consulte [Assinar documentos do PDF digitalmente](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 Você pode interagir programaticamente com o serviço de Credencial usando a API Java do Gerenciador de Confiança. Você pode executar as seguintes tarefas:
 
@@ -37,11 +36,11 @@ Você pode interagir programaticamente com o serviço de Credencial usando a API
 
 >[!NOTE]
 >
->Também é possível importar e excluir certificados usando o console de administração. (Consulte [ajuda de administração.](https://www.adobe.com/go/learn_aemforms_admin_63))
+>Também é possível importar e excluir certificados usando o console de administração. (Consulte [ajuda administrativa.](https://www.adobe.com/go/learn_aemforms_admin_63))
 
 ## Importando credenciais usando a API do Gerenciador de Confiança {#importing-credentials-by-using-the-trust-manager-api}
 
-Você pode importar uma credencial para o AEM Forms por programação usando a API do Gerenciador de Confiança. Por exemplo, você pode importar uma credencial usada para assinar um documento PDF. (Consulte [Assinando documentos PDF digitalmente](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
+Você pode importar uma credencial para o AEM Forms por programação usando a API do Gerenciador de Confiança. Por exemplo, você pode importar uma credencial usada para assinar um documento PDF. (Consulte [Assinar documentos do PDF digitalmente](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
 
 Ao importar uma credencial, especifique um alias para a credencial. O alias é usado para executar uma operação do Forms que requer uma credencial. Depois de importada, uma credencial pode ser visualizada no console de administração, conforme mostrado na ilustração a seguir. Observe que o alias da credencial é *Seguro*.
 
@@ -72,11 +71,11 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do seu projeto:
 * adobe-utilities.jar (obrigatório se o AEM Forms estiver implantado no JBoss)
 * jbossall-client.jar (obrigatório se o AEM Forms for implantado no JBoss)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um cliente de serviço de credencial**
 
-Antes de poder importar uma credencial programaticamente para o AEM Forms, crie um cliente de serviço de credenciais. Para obter informações, consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+Antes de poder importar uma credencial programaticamente para o AEM Forms, crie um cliente de serviço de credenciais. Para obter mais informações, consulte [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **Referência da credencial**
 
@@ -86,7 +85,7 @@ Faça referência a uma credencial que você deseja importar para o AEM Forms. O
 
 Depois de fazer referência à credencial, importe a credencial para o AEM Forms. Se a credencial não for importada com êxito, uma exceção será lançada. Ao importar uma credencial, especifique um alias para a credencial.
 
-**Consulte também:**
+**Consulte também**
 
 [Importar credenciais usando a API do Java](credentials.md#import-credentials-using-the-java-api)
 
@@ -108,25 +107,25 @@ Importe uma credencial para o AEM Forms usando a API do Gerenciador de Confianç
 
 1. Criar um cliente de serviço de credencial
 
-   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
-   * Crie um objeto `CredentialServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
+   * Crie um `ServiceClientFactory` objeto que contém propriedades de conexão.
+   * Crie um `CredentialServiceClient` usando seu construtor e passando o `ServiceClientFactory` objeto.
 
 1. Referência da credencial
 
-   * Crie um objeto `java.io.FileInputStream` usando seu construtor. Passe um valor de string que especifica o local da credencial.
-   * Crie um objeto `com.adobe.idp.Document` que armazene a credencial usando o construtor `com.adobe.idp.Document`. Passe o objeto `java.io.FileInputStream` que contém a credencial para o construtor.
+   * Crie um `java.io.FileInputStream` usando seu construtor. Passe um valor de string que especifica o local da credencial.
+   * Crie um `com.adobe.idp.Document` que armazena a credencial usando o `com.adobe.idp.Document` construtor. Passe o `java.io.FileInputStream` objeto que contém a credencial para o construtor.
 
 1. Executar a operação de importação
 
-   * Crie uma matriz de sequência de caracteres que contenha um elemento. Atribua o valor `truststore.usage.type.sign` ao elemento.
-   * Chame o método `CredentialServiceClient` do objeto `importCredential` e passe os seguintes valores:
+   * Crie uma matriz de sequência de caracteres que contenha um elemento. Atribua o valor `truststore.usage.type.sign` ao elemento .
+   * Chame o `CredentialServiceClient` do objeto `importCredential` e transmita os seguintes valores:
 
       * Um valor de string que especifica o valor do alias para a credencial.
-      * A instância `com.adobe.idp.Document` que armazena a credencial.
+      * O `com.adobe.idp.Document` que armazena a credencial.
       * Um valor da string que especifica a senha associada à credencial.
-      * A matriz da string que contém o valor de uso. Por exemplo, você pode especificar esse valor `truststore.usage.type.sign`. Para importar uma credencial de Extensão do Reader, especifique `truststore.usage.type.lcre`.
+      * A matriz da string que contém o valor de uso. Por exemplo, é possível especificar esse valor `truststore.usage.type.sign`. Para importar uma credencial de Extensão do Reader, especifique `truststore.usage.type.lcre`.
 
-**Consulte também:**
+**Consulte também**
 
 [Importando credenciais usando a API do Gerenciador de Confiança](credentials.md#importing-credentials-by-using-the-trust-manager-api)
 
@@ -162,17 +161,17 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 * adobe-utilities.jar (obrigatório se o AEM Forms estiver implantado no JBoss)
 * jbossall-client.jar (obrigatório se o AEM Forms for implantado no JBoss)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um cliente de serviço de credencial**
 
-Antes de excluir uma credencial por programação, crie um cliente do serviço de Integração de dados . Ao criar um cliente de serviço, você define as configurações de conexão necessárias para chamar um serviço. Para obter informações, consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+Antes de excluir uma credencial por programação, crie um cliente do serviço de Integração de dados . Ao criar um cliente de serviço, você define as configurações de conexão necessárias para chamar um serviço. Para obter mais informações, consulte [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **Executar a operação de exclusão**
 
 Para excluir uma credencial, especifique o alias que corresponde à credencial. Se você especificar um alias que não existe, uma exceção é lançada.
 
-**Consulte também:**
+**Consulte também**
 
 [Importar credenciais usando a API do Java](credentials.md#import-credentials-using-the-java-api)
 
@@ -182,7 +181,7 @@ Para excluir uma credencial, especifique o alias que corresponde à credencial. 
 
 [Importar credenciais usando a API do Java](credentials.md#import-credentials-using-the-java-api)
 
-### Excluindo credenciais usando a API do Java {#deleting-credentials-using-the-java-api}
+### Exclusão de credenciais usando a API do Java {#deleting-credentials-using-the-java-api}
 
 Exclua uma credencial do AEM Forms usando a API do Gerenciador de confiança (Java):
 
@@ -192,14 +191,14 @@ Exclua uma credencial do AEM Forms usando a API do Gerenciador de confiança (Ja
 
 1. Criar um cliente de serviço de credencial
 
-   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
-   * Crie um objeto `CredentialServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
+   * Crie um `ServiceClientFactory` objeto que contém propriedades de conexão.
+   * Crie um `CredentialServiceClient` usando seu construtor e passando o `ServiceClientFactory` objeto.
 
 1. Executar a operação de exclusão
 
-   Chame o método `CredentialServiceClient` do objeto e transmita um valor de string que especifica o valor do alias.`deleteCredential`
+   Chame o `CredentialServiceClient` do objeto `deleteCredential` e transmita um valor de string que especifica o valor do alias.
 
-**Consulte também:**
+**Consulte também**
 
 [Excluindo Credenciais usando a API do Gerenciador de Confiança](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 

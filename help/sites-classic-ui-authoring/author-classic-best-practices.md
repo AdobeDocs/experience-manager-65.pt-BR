@@ -1,19 +1,18 @@
 ---
-title: 'Práticas recomendadas    '
-seo-title: 'Práticas recomendadas    '
+title: Práticas recomendadas
+seo-title: Best Practices
 description: As práticas recomendadas de criação descrevem como usar o AEM da forma mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
-seo-description: As práticas recomendadas de criação descrevem como usar o AEM da forma mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
+seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
-translation-type: tm+mt
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 65%
+source-wordcount: '282'
+ht-degree: 62%
 
 ---
 
@@ -36,9 +35,9 @@ Para conhecer as práticas recomendadas de administração, implantação e manu
 
 Documentos específicos estão descritos e vinculados nas tabelas a seguir.
 
-## Assets {#assets}
+## Ativos {#assets}
 
-As práticas recomendadas do Assets, incluindo a capacidade de Dynamic Media e a integração do Dynamic Media Classic, estão descritas nos seguintes tópicos:
+As práticas recomendadas referentes ao Assets, incluindo o recurso Dynamic Media e a integração com o Dynamic Media Classic, estão descritas nos seguintes tópicos:
 
 <table>
  <tbody>
@@ -55,7 +54,7 @@ As práticas recomendadas do Assets, incluindo a capacidade de Dynamic Media e a
   <tr>
    <td>Imagem dinâmica</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Práticas recomendadas de imagem dinâmica</a></td>
-   <td><p>Descreve como aumentar a nitidez de uma imagem para obter melhores resultados e a melhor maneira de otimizar a qualidade de suas imagens se você estiver usando a funcionalidade Mídia dinâmica ou estiver fazendo a integração com o Dynamic Media Classic. </p> </td>
+   <td><p>Descreve como ajustar a nitidez de uma imagem para obter melhores resultados e a melhor maneira de otimizar a qualidade de suas imagens se você estiver usando a funcionalidade do Dynamic Media ou estiver integrando com o Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
    <td>Ativos multilíngues</td>
@@ -69,10 +68,10 @@ As práticas recomendadas do Assets, incluindo a capacidade de Dynamic Media e a
 
 O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas recomendadas descritas a seguir:
 
-Criação: [ambiente e ferramentas do autor](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fornece uma visão geral sobre como criar páginas.
+Criação: [Ambiente e ferramentas do autor](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fornece uma visão geral sobre como criar páginas.
 
 ## Forms {#forms}
 
-Formulários adaptativos: [Práticas recomendadas para trabalhar com formulários adaptáveis](/help/forms/using/adaptive-forms-best-practices.md) - Descreve as práticas recomendadas para configurar, criar e personalizar formulários adaptativos.
+Formulários adaptáveis: [Práticas recomendadas para trabalhar com formulários adaptáveis](/help/forms/using/adaptive-forms-best-practices.md) - Descreve as práticas recomendadas para configurar, criar e personalizar formulários adaptáveis.
 
-Formulários HTML5: [Práticas recomendadas para criar formulários HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Descreve as práticas recomendadas para trabalhar no layout e no design de formulários HTML5.
+Formulários HTML5: [Práticas recomendadas para projetar formulários HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Descreve as práticas recomendadas para trabalhar no layout e no design de formulários HTML5.

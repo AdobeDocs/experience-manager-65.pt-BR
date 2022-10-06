@@ -1,8 +1,8 @@
 ---
-title: 'Diferencial de páginas  '
-seo-title: 'Diferencial de páginas  '
+title: Diferencial de páginas
+seo-title: Page Diff
 description: O recurso de diferencial de página permite a comparação lado a lado conveniente de duas páginas com suas diferenças realçadas.
-seo-description: O recurso de diferencial de página permite a comparação lado a lado conveniente de duas páginas com suas diferenças realçadas.
+seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c51ba167d9b3d37de649c59526e74d9728c677c6
+exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 97%
+source-wordcount: '560'
+ht-degree: 99%
 
 ---
-
 
 # Diferencial de páginas  {#page-diff}
 
@@ -31,14 +30,14 @@ O recurso de diferencial de página permite a comparação lado a lado convenien
 >
 >Consulte [Desenvolvimento e diff de página](/help/sites-developing/pagediff.md#operation-details) para obter mais detalhes técnicos sobre este recurso.
 
-## Uso {#use}
+## Utilização {#use}
 
 O diferencial lado a lado pode comparar o seguinte:
 
 * [Versões](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - versão anterior de uma página com seu estado atual
-* [](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copies - Live Copy com blueprint
+* [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy com blueprint
 * [Lançamentos](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - lançamento com sua origem
-* [](/help/sites-administering/tc-manage.md#comparing-language-copies)Cópias de idioma - uma página antes e depois da (nova) tradução
+* [Cópias de idioma](/help/sites-administering/tc-manage.md#comparing-language-copies) - uma página antes e depois da (nova) tradução
 
 Consulte os respectivos tópicos sobre como iniciar o diferencial nesses contextos.
 
@@ -71,7 +70,7 @@ O diferencial detecta alterações no componente e no nível do HTML. Itens que 
 >
 >Ao comparar cópias de idiomas, o realce é desativado, pois, em uma tradução, tudo muda, e não seria benéfico realçar.
 
-### Tela cheia e ao sair    {#fullscreen-and-exiting}
+### Tela cheia e ao sair   {#fullscreen-and-exiting}
 
 Para se concentrar em um conteúdo específico, você pode clicar no ícone de tela inteira para qualquer &quot;lado&quot; da comparação lado a lado, ampliando o conteúdo até o tamanho da janela do navegador.
 
@@ -87,12 +86,12 @@ Você também pode optar por fechar a visualização em tela cheia clicando no �
 
 Você pode sair do diferencial lado a lado a qualquer momento clicando no botão Fechar do cabeçalho.
 
-## Limitações    {#limitations}
+## Limitações   {#limitations}
 
 Existem algumas situações em que o recurso de diferencial de páginas pode não detectar uma diferença conforme o esperado.
 
 * Ao diferenciar versões e lançamentos, o recurso de diferencial não leva em consideração os componentes dinâmicos, como navegação estrutural, menus, listas de produtos ou logotipos (componentes que dependem da estrutura do site para renderizar seu conteúdo).
-* Para versões, o diff não recria a política de controles de acesso e as relações de live copy.
+* Para versões, o diferencial não recria a política de controle de acesso e as relações com a Live Copy.
 * Se uma página for movida, você não poderá mais executar um diff com versões feitas antes do movimento.
 
    * Se você tiver problemas com um diff, verifique a [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) da página para ver se a página foi movida.

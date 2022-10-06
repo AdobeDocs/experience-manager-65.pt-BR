@@ -1,8 +1,8 @@
 ---
-title: Recurso Biblioteca de arquivos
-seo-title: Recurso Biblioteca de arquivos
-description: O recurso Biblioteca de arquivos permite que visitantes do site com logon façam upload, gerenciem e baixem arquivos
-seo-description: O recurso Biblioteca de arquivos permite que visitantes do site com logon façam upload, gerenciem e baixem arquivos
+title: Recurso da biblioteca de arquivos
+seo-title: File Library Feature
+description: O recurso Biblioteca de arquivos permite que visitantes do site que fizeram logon façam upload, gerenciem e baixem arquivos
+seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,43 +10,42 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cdbe098ada0b6c50952284f92cc2063435034a38
+exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '735'
 ht-degree: 9%
 
 ---
-
 
 # Recurso da biblioteca de arquivos{#file-library-feature}
 
 ## Introdução {#introduction}
 
-O recurso de biblioteca de arquivos fornece um local para visitantes do site com logon (membros da comunidade) carregarem, gerenciarem e baixarem arquivos no site da comunidade.
+O recurso biblioteca de arquivos fornece um local para visitantes do site com logon (membros da comunidade) fazerem upload, gerenciamento e download de arquivos no site da comunidade.
 
 Esta seção da documentação descreve:
 
 * Adicionar o recurso da biblioteca de arquivos a um site AEM.
-* Configurações do componente `File Library`.
+* Configurações para o `File Library` componente.
 
 ### Adicionar uma biblioteca de arquivos a uma página {#adding-a-file-library-to-a-page}
 
-Para adicionar um componente `File Library` a uma página no modo de autor, localize o componente:
+Para adicionar uma `File Library` para uma página no modo de criação, localize o componente:
 
 * `Communities / File Library`
 
-e arraste-o para o lugar em uma página.
+e arraste-a para o local em uma página.
 
-Para obter as informações necessárias, visite [Informações básicas sobre componentes das comunidades](/help/communities/basics.md).
+Para obter as informações necessárias, visite [Noções básicas sobre componentes do Communities](/help/communities/basics.md).
 
-Quando as [bibliotecas obrigatórias do lado do cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) forem incluídas, o componente `File Library` aparecerá desta forma:
+Quando a variável [bibliotecas obrigatórias do lado do cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) são incluídos, é assim que a variável `File Library` componente será exibido:
 
-![file-library1](assets/file-library1.png)
+![biblioteca de arquivos1](assets/file-library1.png)
 
-### Configurando a biblioteca de arquivos {#configuring-file-library}
+### Configuração da biblioteca de arquivos {#configuring-file-library}
 
-Selecione o componente `File Library` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
+Selecione o `File Library` para acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
 
 ![configure-new](assets/configure-new.png)
 
@@ -54,7 +53,7 @@ Selecione o componente `File Library` inserido para acessar e selecione o ícone
 
 #### Guia Comentários {#comments-tab}
 
-Na guia **Comments**, especifique se e como os comentários dos arquivos carregados serão exibidos:
+Em **Comentários** , especifique se e como os comentários dos arquivos carregados são exibidos:
 
 * **Permitir comentários em arquivos**
 
@@ -62,7 +61,7 @@ Na guia **Comments**, especifique se e como os comentários dos arquivos carrega
 
 * **Comentários por página**
 
-   Limita o número de comentários exibidos por página, bem como o número de respostas exibidas. O padrão é **10**.
+   Limita o número de comentários exibidos por página, bem como o número de respostas exibidas. O padrão é **10º**.
 
 * **Tamanho máximo do arquivo**
 
@@ -74,15 +73,15 @@ Na guia **Comments**, especifique se e como os comentários dos arquivos carrega
 
 * **Tipos de arquivos permitidos**
 
-   Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão não é especificado de modo que todos os tipos de arquivos sejam permitidos.
+   Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo : .jpg, .jpeg, .png, .doc, .docx, .pdf. Se qualquer tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão não é especificado de modo que todos os tipos de arquivo sejam permitidos.
 
-* **Editor de Rich Text**
+* **Editor de rich text**
 
    Se marcada, os comentários podem ser inseridos com marcação. O padrão está desmarcado.
 
 * **Excluir comentários**
 
-   Se marcada, os usuários podem excluir seus próprios comentários. O padrão está marcado.
+   Se marcada, os usuários poderão excluir seus próprios comentários. O padrão está marcado.
 
 * **Permitir marcação**
 
@@ -90,7 +89,7 @@ Na guia **Comments**, especifique se e como os comentários dos arquivos carrega
 
 * **Espaços de nomes permitidos**
 
-   Se a opção Permitir marcação estiver marcada, as tags disponíveis serão limitadas às namespaces verificadas. Se nenhum estiver marcado, então todos são permitidos. O padrão é todas as namespaces.
+   Se a opção Permitir marcação estiver marcada, as tags disponíveis serão limitadas aos namespaces marcados. Se nenhum estiver marcado, então todos são permitidos. O padrão é todos os namespaces.
 
 * **Limite sugerido**
 
@@ -102,11 +101,11 @@ Na guia **Comments**, especifique se e como os comentários dos arquivos carrega
 
 * **Permitir monitoramento**
 
-   Se marcada, inclua o seguinte recurso para artigos de blog, que permite que os membros sejam [notificados](/help/communities/notifications.md) de novas publicações. O padrão está desmarcado.
+   Se marcada, inclua o seguinte recurso para artigos do blog, que permite que os membros sejam [notificado](/help/communities/notifications.md) de novos posts. O padrão está desmarcado.
 
 * **Ativar a menção**
 
-   Se ativada, permite que os usuários da comunidade registrados identifiquem outros membros registrados (usando o nome, sobrenome, nome de usuário) e os rotulem usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas menções.
+   Se estiver habilitado, o permite que usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e os marque usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas menções.
 
 * **Quantidade máxima de menções**
 
@@ -114,7 +113,7 @@ Na guia **Comments**, especifique se e como os comentários dos arquivos carrega
 
 * **Padrão de menção da interface do usuário**
 
-   Especifique a string de padrão permitida para marcar (@menção) o usuário registrado em uma publicação. Por exemplo, ~{{familyName}}{{specifiedName}}.
+   Especifique a string de padrão permitida para marcar (@menção) o usuário registrado em uma publicação. Por exemplo ~{{familyName}}{{givenName}}.
 
 * **Permitir respostas encadeadas**
 
@@ -122,7 +121,7 @@ Na guia **Comments**, especifique se e como os comentários dos arquivos carrega
 
 #### Guia Moderação do usuário {#user-moderation-tab}
 
-Na guia **Moderação do usuário**, configure a moderação dos comentários, se os comentários forem permitidos:
+Em **Moderação do usuário** , configure a moderação de comentários, se os comentários forem permitidos:
 
 * **Pré-moderação**
 
@@ -130,7 +129,7 @@ Na guia **Moderação do usuário**, configure a moderação dos comentários, s
 
 * **Excluir comentários**
 
-   Se marcada, o visitante que postou o comentário terá a capacidade de excluí-lo. O padrão está marcado.
+   Se marcada, o visitante que postou o comentário tem a capacidade de excluí-lo. O padrão está marcado.
 
 * **Negar comentários**
 
@@ -146,7 +145,7 @@ Na guia **Moderação do usuário**, configure a moderação dos comentários, s
 
 * **Sinalizar lista de motivo**
 
-   Se marcada, permita que os visitantes escolham, em uma lista suspensa, seu motivo para marcar um comentário como inapropriado. O padrão está desmarcado.
+   Se marcada, permita que os visitantes escolham, em uma lista suspensa, o motivo para marcar um comentário como inapropriado. O padrão está desmarcado.
 
 * **Motivo personalizado de sinalização**
 
@@ -154,13 +153,13 @@ Na guia **Moderação do usuário**, configure a moderação dos comentários, s
 
 * **Limite de moderação**
 
-   Insira o número de vezes que um comentário deve ser sinalizado por visitantes antes que os moderadores sejam notificados. O padrão é uma vez (**1**).
+   Insira o número de vezes que um comentário deve ser sinalizado por visitantes antes de os moderadores serem notificados. O padrão é uma vez (**1**).
 
 * **Limite de sinalização**
 
-   Insira o número de vezes que um comentário deve ser sinalizado antes de ser ocultado da visualização pública. Esse número deve ser maior ou igual ao **Limite de moderação**. O padrão é 5.
+   Insira o número de vezes que um comentário deve ser sinalizado antes de ser oculto da exibição pública. Esse número deve ser maior ou igual a **Limite de moderação**. O padrão é 5.
 
-### guia Configurações de classificação {#sort-settings-tab}
+### Guia Configurações de classificação {#sort-settings-tab}
 
 Ordenar por
 
@@ -168,8 +167,8 @@ Definir como padrão
 
 ### Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas na página [File Library Essentials](/help/communities/essentials-file-library.md) para desenvolvedores.
+Mais informações podem ser encontradas no [Fundamentos da biblioteca de arquivos](/help/communities/essentials-file-library.md) página para desenvolvedores.
 
-Para moderação de tópicos e comentários publicados, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
+Para obter moderação de tópicos e comentários publicados, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
 Para marcar tópicos e comentários publicados, consulte [Marcação de conteúdo gerado pelo usuário](/help/communities/tag-ugc.md).

@@ -1,8 +1,8 @@
 ---
 title: Configuração dos recursos de ativação
-seo-title: Configuração dos recursos de ativação
+seo-title: Configuring Enablement Features
 description: Configurar recursos de ativação em Comunidades
-seo-description: Configurar recursos de ativação em Comunidades
+seo-description: Configure enablement features in Communities
 uuid: 27be3128-1a7d-412e-99a9-6e3b3b0aec1c
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: b635e2ed-4637-4b2f-a746-ec8dc7541bab
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-Os recursos de ativação fornecem a capacidade de criar [comunidades de ativação](overview.md#enablement-community).
+Os recursos de ativação oferecem a capacidade de criar [comunidades de capacitação](overview.md#enablement-community).
 
 * Esse recurso requer licenciamento adicional para uso em um ambiente de produção.
 
@@ -40,13 +40,13 @@ Instalação de:
 
 * **FFmpeg**
 
-   FFmpeg é uma solução para converter e transmitir áudio e vídeo e, quando instalado, é usado para a transcodificação adequada do [Video Assets](../../help/sites-authoring/default-components-foundation.md#video). Para comunidades de ativação, ele é usado no ambiente de criação para obter metadados para recursos carregados, bem como gerar uma miniatura para exibição ao listar o recurso.
+   FFmpeg é uma solução para conversão e transmissão de áudio e vídeo e, quando instalado, é usado para a transcodificação adequada de [Ativos de vídeo](../../help/sites-authoring/default-components-foundation.md#video). Para comunidades de ativação, ele é usado no ambiente de criação para obter metadados para recursos carregados, bem como gerar uma miniatura para exibição ao listar o recurso.
 
 Configuração de:
 
 * **Gerentes da comunidade**
 
-   Para comunidades de ativação, somente os membros do grupo de usuários `Community Enablement Managers` podem receber a função de `Community Site Enablement Manager`, cujas permissões podem incluir criação de conteúdo, atribuições e gerenciamento de membros no ambiente de publicação.
+   Para comunidades ativadas, somente membros do `Community Enablement Managers` o grupo de usuários pode receber a função de `Community Site Enablement Manager`, cujas permissões podem incluir criação de conteúdo, atribuições e gerenciamento de membros no ambiente de publicação.
 
 Configuração opcional de:
 
@@ -68,7 +68,7 @@ Cada etapa vincula-se à documentação que fornece os detalhes necessários.
 
    Use o Console da Web (pacotes): *http://localhost:4502/system/console/bundles*
 
-   Instale *antes de* instalar o pacote SCORM
+   Instalar *before* instalando o pacote SCORM
 
 1. **[Instalar pacote SCORM](deploy-communities.md#scorm-package)**
 
@@ -130,4 +130,4 @@ Cada etapa vincula-se à documentação que fornece os detalhes necessários.
 
 ## Dispatcher {#dispatcher}
 
-Quando a implantação inclui [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), para que os recursos de ativação funcionem corretamente, as seções `clientheader` e `filter` precisam de modificação. Consulte [Configuração do Dispatcher para Comunidades](dispatcher.md#enablement).
+Quando a implantação inclui [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), para que os recursos de ativação funcionem corretamente, a variável `clientheader` e `filter` seções precisam ser modificadas. Consulte [Configuração do Dispatcher para Comunidades](dispatcher.md#enablement).

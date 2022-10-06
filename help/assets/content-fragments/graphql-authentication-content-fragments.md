@@ -1,22 +1,22 @@
 ---
-title: Autenticação para consultas GraphQL de AEM Remotas em Fragmentos de Conteúdo
-description: Entenda a autenticação necessária para consultas GraphQL de AEM Remotas para proteger sua entrega de conteúdo sem periféricos.
+title: Autenticação para consultas remotas de GraphQL do AEM em fragmentos de conteúdo
+description: Entenda a autenticação necessária para consultas de GraphQL remotas do AEM, para proteger sua entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: 167f3318-7bc7-48fc-aaa9-73da43433f2f
 source-git-commit: 9278ba4fe85edca4ab5741f89c0fc0ef2cf2764d
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 0%
+ht-degree: 61%
 
 ---
 
-# Autenticação para consultas GraphQL de AEM Remotas em Fragmentos de Conteúdo {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
+# Autenticação para consultas remotas de GraphQL do AEM em fragmentos de conteúdo {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Um caso de uso principal para A [API GraphQL da Adobe Experience Manager (AEM) para entrega de fragmento de conteúdo](/help/assets/content-fragments/graphql-api-content-fragments.md) O é aceitar consultas remotas de aplicativos ou serviços de terceiros. Essas consultas remotas podem exigir acesso à API autenticada para proteger a entrega de conteúdo sem cabeçalho.
+Um caso de uso principal para A [API GraphQL da Adobe Experience Manager (AEM) para entrega de fragmento de conteúdo](/help/assets/content-fragments/graphql-api-content-fragments.md) O é aceitar consultas remotas de aplicativos ou serviços de terceiros. Essas consultas remotas podem exigir acesso à API autenticada para garantir a entrega de conteúdo headless.
 
 >[!NOTE]
 >
->Para testes e desenvolvimento, você também pode acessar a API GraphQL da AEM diretamente usando o [Interface GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) interface.
+>Para testes e desenvolvimento, também é possível acessar a API GraphQL do AEM diretamente, usando a [interface GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface).
 
 Para autenticação, o serviço de terceiros precisa ser autenticado usando o nome de usuário e a senha da conta AEM.
 

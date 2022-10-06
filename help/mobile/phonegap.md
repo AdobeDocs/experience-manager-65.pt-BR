@@ -2,20 +2,19 @@
 title: PhoneGap
 seo-title: PhoneGap
 description: PhoneGap
-seo-description: Siga esta página para começar a criar o Adobe PhoneGap Enterprise no AEM.
+seo-description: Follow this page to get started with authoring for Adobe PhoneGap Enterprise in AEM.
 uuid: 256a9f66-4c66-434c-be79-01be3c02d688
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 930a6950-150a-4670-ab48-250b655132fb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 5%
+source-wordcount: '201'
+ht-degree: 4%
 
 ---
-
 
 # PhoneGap{#phonegap}
 
@@ -33,7 +32,7 @@ Iniciar uma nova experiência com o aplicativo AEM Mobile requer uma coesão de 
 
 ## Criação de aplicativos PhoneGap {#authoring-phonegap-applications}
 
-Um ***AEM Author* (ou *Marketer*)**é capaz de usar os modelos e componentes prontos para uso para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos do DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo).
+Um ***Autor do AEM* ou *Profissional de marketing*)**O é capaz de usar os modelos e componentes prontos para uso para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos do DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo).
 
 Consulte os seguintes recursos para começar:
 
@@ -53,4 +52,3 @@ Para saber mais sobre as funções e responsabilidades de um Administrador e Des
 
 * [Desenvolvimento para Adobe PhoneGap Enterprise com AEM](/help/mobile/developing-in-phonegap.md)
 * [Administração de conteúdo para Adobe PhoneGap Enterprise com AEM](/help/mobile/administer-phonegap.md)
-

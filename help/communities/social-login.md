@@ -1,8 +1,8 @@
 ---
 title: Logon no Social com Facebook e Twitter
-seo-title: Logon no Social com Facebook e Twitter
+seo-title: Social Login with Facebook and Twitter
 description: O logon social permite que os visitantes do site façam logon com sua conta da Facebook ou Twitter.
-seo-description: O logon social permite que os visitantes do site façam logon com sua conta da Facebook ou Twitter.
+seo-description: Social login lets site visitors to sign in with their Facebook or Twitter account.
 uuid: f70e346e-0d8c-41a0-a100-206a420088dc
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2783'
 ht-degree: 1%
 
 ---
@@ -26,53 +26,52 @@ O logon social é a capacidade de apresentar a um visitante do site a opção de
 
 ## Visão geral de logon do Social {#social-login-overview}
 
-Para incluir logon social, é *necessário* criar aplicativos Facebook e Twitter personalizados.
+Para incluir logon social, é *obrigatório* para criar aplicativos Facebook e Twitter personalizados.
 
-Embora a amostra do we-retail forneça aplicativos de amostra e serviços em nuvem da Facebook e Twitter, eles não estão disponíveis em um [site de produção](../../help/sites-administering/production-ready.md).
+Embora a amostra de varejo forneça aplicativos de amostra do Facebook e Twitter e serviços em nuvem, eles não estão disponíveis em um [site de produção](../../help/sites-administering/production-ready.md).
 
 As etapas necessárias são:
 
-1. [Habilite a ](#adobe-granite-oauth-authentication-handler) autenticação OAuth em todas as instâncias de publicação AEM.
+1. [Habilitar autenticação OAuth](#adobe-granite-oauth-authentication-handler) em todas as instâncias de publicação AEM.
 
    Sem o OAuth habilitado, as tentativas de fazer logon falham.
 
-1. **** Crie um aplicativo social e um serviço em nuvem.
+1. **Criar** um aplicativo social e um serviço em nuvem.
 
    * Para oferecer suporte ao logon com o Facebook:
 
-      * Crie um [aplicativo Facebook](#create-a-facebook-app).
-      * Crie e publique um [serviço em nuvem do Facebook Connect](#create-a-facebook-connect-cloud-service).
+      * Crie um [Aplicativo facebook](#create-a-facebook-app).
+      * Crie e publique um [Serviço em nuvem facebook Connect](#create-a-facebook-connect-cloud-service).
    * Para oferecer suporte ao logon com o Twitter:
 
-      * Crie um [aplicativo Twitter](#create-a-twitter-app).
-      * Crie e publique um [serviço em nuvem do Twitter Connect](#create-a-twitter-connect-cloud-service).
+      * Crie um [Aplicativo twitter](#create-a-twitter-app).
+      * Crie e publique um [Serviço em nuvem twitter Connect](#create-a-twitter-connect-cloud-service).
 
 
-1. [**** Habilite o ](#enable-social-login) logon social para um site da comunidade.
+1. [**Habilitar** logon social](#enable-social-login) para um site da comunidade.
 
 Há dois conceitos básicos:
 
-1. **O escopo**  (permissões) especifica os dados que o aplicativo pode solicitar.
+1. **Escopo** (permissões) especifica os dados que o aplicativo tem permissão para solicitar.
 
-   * Por padrão, as instâncias do Aplicativo e Provedor OAuth Facebook e Twitter [Adobe Granite e ](#adobe-granite-oauth-application-and-provider) incluem as permissões básicas do aplicativo no escopo.
+   * A Facebook e a Twitter [Aplicativo e provedor OAuth do Adobe Granite](#adobe-granite-oauth-application-and-provider) por padrão, as instâncias incluem as permissões básicas do aplicativo no escopo.
 
-1. **Fields**  (params) especifica os dados reais solicitados usando parâmetros de URL.
+1. **Campos** (params) especifica os dados reais solicitados usando parâmetros de URL.
 
-   * Esses campos são especificados em [AEM Communities Facebook OAuth Provider](#aem-communities-facebook-oauth-provider) e [AEM Communities Twitter OAuth Provider](#aem-communities-twitter-oauth-provider).
+   * Esses campos são especificados em [Provedor AEM Communities Facebook OAuth](#aem-communities-facebook-oauth-provider) e [Provedor AEM Communities Twitter OAuth](#aem-communities-twitter-oauth-provider).
    * Os campos padrão são suficientes para a maioria dos casos de uso, mas podem ser modificados.
 
 ## Logon do facebook {#facebook-login}
 
 ### Versão da API do facebook {#facebook-api-version}
 
-O logon social e a amostra do Facebook de varejo foram desenvolvidos quando a API do Facebook Graph era a versão 1.0.
-A partir AEM 6.4 GA e AEM 6.3 SP1 o login social foi atualizado para funcionar com a versão mais recente da API 2.5 do Facebook Graph.
+O login social e a amostra de Facebook de varejo foram desenvolvidos quando a API do Gráfico Facebook era a versão 1.0. A partir AEM 6.4 GA e AEM 6.3 SP1 o login social foi atualizado para funcionar com a versão mais recente da API de Gráfico Facebook 2.5.
 
 >[!NOTE]
 >
->Para versões de AEM mais antigas, se estiver enfrentando uma exceção em logs **Não é possível extrair um token desse**, atualize para o CFP mais recente para essa versão AEM.
+>Para versões de AEM mais antigas, se você estiver enfrentando uma exceção nos logs **Não é possível extrair um token deste**, atualize para o CFP mais recente para essa versão de AEM.
 
-Para obter informações sobre a versão da API do Facebook Graph, consulte o [Log de alterações da API do Facebook](https://developers.facebook.com/docs/apps/changelog).
+Para obter informações sobre a versão da API do Facebook Graph, consulte [Log de alterações da API do facebook](https://developers.facebook.com/docs/apps/changelog).
 
 ### Criar um aplicativo Facebook {#create-a-facebook-app}
 
@@ -84,61 +83,60 @@ Em geral, a partir da API do Facebook v2.7:
 
 * *Adicionar um novo aplicativo Facebook*
    * Para *Plataforma*, escolha Site:
-      * Para *URL do Site*, digite `  https://<server>:<port>.`
-      * Para *Nome de Exibição*, insira um título para uso como o Título do serviço de conexão do Facebook.
-      * Para *Categoria*, é recomendável escolher *Aplicativos para páginas*, mas pode ser qualquer coisa.
+      * Para *URL do site*, insira `  https://<server>:<port>.`
+      * Para *Nome de exibição*, insira um título para usar como o Título do serviço de conexão do Facebook.
+      * Para *Categoria*, escolha recomendada *Aplicativos para páginas*, mas pode ser qualquer coisa.
       * *Adicionar produto: Logon do facebook*
-      * Para *URIs de redirecionamento OAuth válidos*, digite `  https://<server>:<port>.`
+      * Para *URIs de redirecionamento OAuth válidos*, insira `  https://<server>:<port>.`
 
 >[!NOTE]
 >
 >Para desenvolvimento, http://localhost:4503 funcionará.
 
-Depois que o aplicativo for criado, localize as configurações **[!UICONTROL ID do aplicativo]** e **[!UICONTROL Segredo do aplicativo]**. Essas informações são necessárias para configurar o [Facebook cloud service](#createafacebookcloudservice).
+Depois que o aplicativo for criado, localize a variável **[!UICONTROL ID do aplicativo]** e **[!UICONTROL Segredo do aplicativo]** configurações. Essas informações são necessárias para configurar o [Serviço em nuvem facebook](#createafacebookcloudservice).
 
 ### Criar um Cloud Service Facebook Connect {#create-a-facebook-connect-cloud-service}
 
-A instância [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider), instanciada ao criar uma configuração de serviço de nuvem, identifica o aplicativo Facebook e os grupos de membros aos quais os novos usuários são adicionados.
+O [Aplicativo e provedor OAuth do Adobe Granite](#adobe-granite-oauth-application-and-provider) , instanciada ao criar uma configuração do serviço de nuvem, identifica o aplicativo do Facebook e os grupos de membros aos quais os novos usuários são adicionados.
 
 1. Na instância do autor do AEM, faça logon com privilégios de administrador.
-1. Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração de logon do Facebook Social]**.
-1. Selecione o **[!UICONTROL caminho de contexto]** da configuração.
+1. Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração de logon do facebook Social]**.
+1. Selecione a configuração **[!UICONTROL caminho do contexto]**.
 
-   **[!UICONTROL O]** caminho de contexto deve ser o mesmo do caminho de configuração de nuvem que você selecionou ao criar/editar um site de comunidade.
+   **[!UICONTROL Caminho do contexto]** deve ser o mesmo caminho de configuração de nuvem selecionado ao criar/editar um site da comunidade.
 
 1. Verifique se o caminho do contexto está habilitado para criar serviços em nuvem abaixo dele.
-1. Vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Navegador de configuração]**. Selecione o contexto e edite as propriedades. Ative as Configurações da nuvem se ainda não estiverem ativadas.
+1. Ir para **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Navegador de configuração]**. Selecione o contexto e edite as propriedades. Ative as Configurações da nuvem se ainda não estiverem ativadas.
 
    ![config-propertiespng](assets/config-propertiespng.png)
 
-   * Consulte a documentação do [Navegador de configuração](/help/sites-administering/configurations.md) para obter mais informações.
+   * Consulte a [Navegador de configuração](/help/sites-administering/configurations.md) documentação para obter mais informações.
 
-1. **Criar/** editar a configuração do serviço de nuvem do Facebook.
+1. **Criar/Editar** Configuração do serviço em nuvem facebook.
 
    ![fbsocialloginconfigpng](assets/fbsocialloginconfigpng.png)
 
-   * **[!UICONTROL Título]**  (*Obrigatório*) Insira um título de exibição que identifique o aplicativo do Facebook. É recomendável usar o mesmo nome inserido como *Nome de exibição* para o aplicativo Facebook.
-   * **[!UICONTROL ID do aplicativo/Chave da API]**  (*Obrigatório*) Digite a  ***ID do*** aplicativo para o aplicativo Facebook. Isso identifica a instância [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) criada a partir da caixa de diálogo.
-   * **[!UICONTROL Segredo do aplicativo]**  (*Obrigatório*) Insira a  ***Secretaria do*** aplicativo para o aplicativo Facebook.
-   * **[!UICONTROL Criar]** usuáriosSe marcada, o logon com uma conta do Facebook criará uma entrada de usuário AEM e a adicionará como membro ao(s) grupo(s) de usuários selecionado(s).  O padrão está marcado (altamente recomendado).
+   * **[!UICONTROL Título]** (*Obrigatório*) Insira um título de exibição que identifique o aplicativo do Facebook. É recomendável usar o mesmo nome digitado como o *Nome de exibição* para o aplicativo Facebook.
+   * **[!UICONTROL Chave da ID/API do aplicativo]** (*Obrigatório*) Insira o ***ID do aplicativo*** para o aplicativo Facebook. Isso identifica a variável [Aplicativo e provedor OAuth do Adobe Granite](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) instância criada a partir da caixa de diálogo.
+   * **[!UICONTROL Segredo do aplicativo]** (*Obrigatório*) Insira o ***Segredo do aplicativo*** para o aplicativo Facebook.
+   * **[!UICONTROL Criar usuários]** Se marcada, fazer logon com uma conta do Facebook criará uma entrada de usuário AEM e a adicionará como membro ao(s) grupo(s) de usuários selecionado(s).  O padrão está marcado (altamente recomendado).
    * **[!UICONTROL Mascarar IDs de usuário]**: Deixe desmarcada.
-   * **[!UICONTROL Email]** do escopo: a id de email do usuário deve ser obtida do Facebook.
-   * **[!UICONTROL Adicionar a]** grupos de usuários selecione Adicionar grupo de usuários para escolher um ou mais grupos de  [membros ](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) para o site da comunidade ao qual os usuários serão adicionados.
+   * **[!UICONTROL Email do escopo]**: a id de email do usuário deve ser obtida do Facebook.
+   * **[!UICONTROL Adicionar a grupos de usuários]** selecione Adicionar grupo de usuários para escolher um ou mais [grupos de membros](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) para o site da comunidade ao qual os usuários serão adicionados.
 
    >[!NOTE]
    >
    >Os grupos podem ser adicionados ou removidos a qualquer momento. Mas as associações de usuários existentes não serão afetadas. A associação automática se aplica somente a novos usuários que estão sendo criados após essa atualização de campo. Para Sites onde usuários anônimos estão desativados, escolha adicionar usuários ao grupo correspondente de membros da comunidade criado para esse site fechado da comunidade.
 
-   * Selecione **[!UICONTROL SAVE]**.
+   * Selecionar **[!UICONTROL SALVAR]**.
    * **[!UICONTROL Publicação]**.
 
 
-
-O resultado é uma instância [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) que não requer mais modificação a menos que seja adicionado um escopo adicional (permissões). O escopo padrão são as permissões padrão para logon no Facebook. Se desejar um escopo adicional, é necessário editar a configuração do OSGI diretamente. Se houver modificações feitas diretamente pelo sistema/console, evite editar as configurações do serviço de nuvem da interface do usuário de toque para evitar sobreposição.
+O resultado é um [Aplicativo e provedor OAuth do Adobe Granite](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) instância que não requer mais modificação, a menos que adicione escopo adicional (permissões). O escopo padrão são as permissões padrão para logon no Facebook. Se desejar um escopo adicional, é necessário editar a configuração do OSGI diretamente. Se houver modificações feitas diretamente pelo sistema/console, evite editar as configurações do serviço de nuvem da interface do usuário de toque para evitar sobreposição.
 
 ### Provedor AEM Communities Facebook OAuth {#aem-communities-facebook-oauth-provider}
 
-O provedor AEM Communities estende a instância [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider).
+O provedor AEM Communities estende o [Aplicativo e provedor OAuth do Adobe Granite](#adobe-granite-oauth-application-and-provider) instância.
 
 Este provedor precisará ser editado para:
 
@@ -150,7 +148,7 @@ Este provedor precisará ser editado para:
 Se a edição for necessária, em cada instância de publicação de AEM:
 
 1. Faça logon com privilégios de administrador.
-1. Navegue até [Console da Web](../../help/sites-deploying/configuring-osgi.md). Por exemplo, http://localhost:4503/system/console/configMgr.
+1. Navegue até o [Console da Web](../../help/sites-deploying/configuring-osgi.md). Por exemplo, http://localhost:4503/system/console/configMgr.
 1. Localize AEM Communities Facebook OAuth Provider.
 1. Selecione o ícone de lápis para abrir para edição.
 
@@ -158,7 +156,7 @@ Se a edição for necessária, em cada instância de publicação de AEM:
 
    * **[!UICONTROL ID do provedor OAuth]**
 
-      (*Obrigatório*) O valor padrão é *soco -facebook*. Não edite.
+      (*Obrigatório*) O valor padrão é *soco - facebook*. Não edite.
 
    * **[!UICONTROL Cloud Service Config]**
 
@@ -174,13 +172,13 @@ Se a edição for necessária, em cada instância de publicação de AEM:
 
    * **[!UICONTROL Caminho do usuário]**
 
-      Localização no repositório onde os dados do usuário são armazenados. Para um site da comunidade, para garantir que os membros visualizem o perfil um do outro, o caminho deve ser o padrão */home/users/community*.
+      Localização no repositório onde os dados do usuário são armazenados. Para um site da comunidade, para garantir que os membros tenham permissões para visualizar o perfil um do outro, o caminho deve ser o padrão */home/users/community*.
 
    * **[!UICONTROL Ativar campos]**
 
       Se marcada, os Campos listados são especificados na solicitação para a Facebook para autenticação e informações do usuário. O padrão é desmarcado.
 
-   * **[!UICONTROL Fields]**
+   * **[!UICONTROL Campos]**
 
       Quando os Campos são ativados, os seguintes campos são incluídos ao chamar a API do Gráfico Facebook. Os campos devem ser permitidos dentro do escopo definido na configuração do serviço de nuvem. Campos adicionais podem exigir aprovação da Facebook. Consulte a seção Permissões de logon do Facebook da documentação da Facebook . Os campos padrão adicionados como parâmetros são:
 
@@ -220,10 +218,10 @@ Siga as instruções mais recentes para criar um novo aplicativo Twitter em [htt
 
 Em geral:
 
-1. Insira um *Name* que identificará seu aplicativo do Twitter para os usuários do seu site.
-1. Insira um *Description*.
-1. Para *site* - digite `https://<server>`.
-1. Para *Callback URL* - digite `https://server`.
+1. Insira um *Nome* que identificará o aplicativo Twitter para os usuários do site.
+1. Insira um *Descrição*.
+1. Para *site* - enter `https://<server>`.
+1. Para *URL de retorno* - enter `https://server`.
 
    >[!NOTE]
    >
@@ -231,39 +229,39 @@ Em geral:
    >
    >Para desenvolvimento, https://127.0.0.1/ funcionará.
 
-1. Depois que o aplicativo for criado, localize a **[!UICONTROL Chave do consumidor (API)]** e **[!UICONTROL Segredo do consumidor (API)]**. Essas informações serão necessárias para configurar o [Twitter cloud service](#createatwittercloudservice).
+1. Depois que o aplicativo for criado, localize a variável **[!UICONTROL Chave do consumidor (API)]** e **[!UICONTROL Segredo do consumidor (API)]**. Essas informações serão necessárias para configurar o [Serviço em nuvem twitter](#createatwittercloudservice).
 
 #### Permissões {#permissions}
 
 Na seção de permissões do gerenciamento de aplicativos do Twitter :
 
-* **[!UICONTROL Acesso]**: Selecione  `Read only`.
+* **[!UICONTROL Acesso]**: Selecionar `Read only`.
 
    * Outras opções não são compatíveis
 
-* **[!UICONTROL Permissões]** adicionais: Opcionalmente, escolha  `Request email addresses from users`.
+* **[!UICONTROL Permissões adicionais]**: Opcionalmente, escolha `Request email addresses from users`.
 
    * Se não estiver selecionado, o perfil do usuário no AEM não incluirá seu endereço de email.
    * As instruções da twitter apontam para etapas adicionais a serem seguidas.
 
-A única solicitação REST feita para logon social é para *[GET account/verify credentials](https://dev.twitter.com/rest/reference/get/account/verify_credentials)*.
+A única solicitação REST feita para logon social é para *[Credenciais de verificação/conta do GET](https://dev.twitter.com/rest/reference/get/account/verify_credentials)*.
 
 ### Criar um Cloud Service Twitter Connect {#create-a-twitter-connect-cloud-service}
 
-A instância [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider), instanciada ao criar uma configuração de serviço de nuvem, identifica o aplicativo Twitter e os grupos de membros aos quais os novos usuários são adicionados.
+O [Aplicativo e provedor OAuth do Adobe Granite](#adobe-granite-oauth-application-and-provider) , instanciada ao criar uma configuração do serviço de nuvem, identifica o aplicativo do Twitter e os grupos de membros aos quais os novos usuários são adicionados.
 
 1. Na instância do autor, faça logon com privilégios de administrador.
-1. Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração de logon do Twitter Social]**.
-1. Escolha a configuração **[!UICONTROL context path]**.
+1. Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuração de logon do twitter Social]**.
+1. Escolha a **[!UICONTROL caminho do contexto]** configuração.
 
    O Caminho do contexto deve ser o mesmo do caminho de configuração da nuvem selecionado ao criar/editar um site da comunidade.
 
 1. Verifique se o caminho do contexto está habilitado para criar serviços em nuvem abaixo dele.
-1. Vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Navegador de configuração]**. Selecione o contexto e edite as propriedades. Ative as Configurações da nuvem se ainda não estiverem ativadas.
+1. Ir para **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Navegador de configuração]**. Selecione o contexto e edite as propriedades. Ative as Configurações da nuvem se ainda não estiverem ativadas.
 
    ![twitterconfigpropng](assets/twitterconfigproppng.png)
 
-   * Consulte a documentação do [Navegador de configuração](/help/sites-administering/configurations.md) para obter mais informações.
+   * Consulte a [Navegador de configuração](/help/sites-administering/configurations.md) documentação para obter mais informações.
 
 1. Criar/editar a configuração do serviço de nuvem da Twitter.
 
@@ -271,15 +269,15 @@ A instância [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth
 
    * **[!UICONTROL Título]**
 
-      (*Obrigatório*) Insira um título de exibição que identifique o aplicativo do Twitter. É recomendável usar o mesmo nome inserido como *Nome de exibição* para o aplicativo Twitter.
+      (*Obrigatório*) Insira um título de exibição que identifique o aplicativo do Twitter. É recomendável usar o mesmo nome digitado como o *Nome de exibição* para o aplicativo Twitter.
 
    * **[!UICONTROL Chave do consumidor]**
 
-      (*Obrigatório*) Insira a **Chave do consumidor (API)** para o aplicativo Twitter. Isso identifica a instância [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) criada a partir da caixa de diálogo.
+      (*Obrigatório*) Insira o **Chave do consumidor (API)** para o aplicativo Twitter. Isso identifica a variável [Aplicativo e provedor OAuth do Adobe Granite](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) instância criada a partir da caixa de diálogo.
 
    * **[!UICONTROL Segredo do consumidor]**
 
-      (*Obrigatório*) Insira o ***Segredo do Consumidor(API)*** para o Aplicativo Twitter.
+      (*Obrigatório*) Insira o ***Segredo do consumidor (API)*** para o aplicativo Twitter.
 
    * **[!UICONTROL Criar usuários]**
 
@@ -296,18 +294,18 @@ A instância [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth
    >
    >Os grupos podem ser adicionados ou removidos a qualquer momento. Mas as associações de usuários existentes não serão afetadas. A associação automática se aplica somente a novos usuários que estão sendo criados após essa atualização de campo. Para Sites onde usuários anônimos estão desativados, adicione usuários ao grupo de membros da comunidade correspondente criado para esse site fechado da comunidade.
 
-1. Selecione **[!UICONTROL SAVE]** e **[!UICONTROL Publish]**.
+1. Selecionar **[!UICONTROL SALVAR]** e **[!UICONTROL Publicar]**.
 
-O resultado é uma instância [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) que não requer modificação adicional. O escopo padrão são as permissões padrão para logon no Twitter.
+O resultado é um [Aplicativo e provedor OAuth do Adobe Granite](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) instância que não requer modificações adicionais. O escopo padrão são as permissões padrão para logon no Twitter.
 
 ### Provedor AEM Communities Twitter OAuth {#aem-communities-twitter-oauth-provider}
 
-A configuração do AEM Communities estende a instância [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider). Este provedor precisará de edição para permitir atualizações de usuário.
+A configuração do AEM Communities estende o [Aplicativo e provedor OAuth do Adobe Granite](#adobe-granite-oauth-application-and-provider) instância. Este provedor precisará de edição para permitir atualizações de usuário.
 
 Se a edição for necessária, em cada instância de publicação de AEM:
 
 1. Faça logon com privilégios de administrador.
-1. Navegue até [Console da Web](../../help/sites-deploying/configuring-osgi.md).
+1. Navegue até o [Console da Web](../../help/sites-deploying/configuring-osgi.md).
 
    Por exemplo, http://localhost:4503/system/console/configMgr.
 
@@ -318,7 +316,7 @@ Se a edição for necessária, em cada instância de publicação de AEM:
 
    * **[!UICONTROL ID do provedor OAuth]**
 
-   (*Obrigatório*) O valor padrão é *soco -twitter*. Não edite.
+   (*Obrigatório*) O valor padrão é *soco - twitter*. Não edite.
 
    * **[!UICONTROL Cloud Service Config]**
 
@@ -330,10 +328,10 @@ Se a edição for necessária, em cada instância de publicação de AEM:
 
    * **[!UICONTROL Caminho do usuário]**
 
-      Localização no repositório onde os dados do usuário são armazenados. Para um site da comunidade, para garantir permissões para os membros visualizarem o perfil um do outro, o caminho deve ser o `/home/users/community` padrão.
+      Localização no repositório onde os dados do usuário são armazenados. Para um site da comunidade, para garantir que os membros tenham permissões para visualizar o perfil um do outro, o caminho deve ser o padrão `/home/users/community`.
 
-   * **[!UICONTROL Ativar]** parâmetros não editar
-   * **[!UICONTROL Parâmetros]** de URL não editam
+   * **[!UICONTROL Ativar params]** não editar
+   * **[!UICONTROL Parâmetros de URL]** não editar
    * **[!UICONTROL Atualizar usuário]**
 
       Se marcada, atualiza os dados do usuário no repositório em cada logon para refletir as alterações de perfil ou os dados adicionais solicitados. O padrão é desmarcado.
@@ -350,7 +348,7 @@ As próximas etapas são as mesmas para Facebook e Twitter:
 
 ### Console de sites da AEM Communities {#aem-communities-sites-console}
 
-Depois que um serviço em nuvem é configurado, ele pode ser ativado para a configuração relevante de Logon social de um site da comunidade usando o subpainel [Gerenciamento de usuários](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) Configurações durante o site da comunidade [criação](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) ou [gerenciamento](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).
+Depois que um serviço em nuvem é configurado, ele pode ser ativado para a configuração relevante de Logon social de um site da comunidade usando a variável [Gerenciamento de usuários](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) Subpainel Configurações durante o site da comunidade [criação](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) ou [gerenciamento](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).
 
 1. Escolha o contexto de configuração do site em que você salvou as configurações de logon social.
 
@@ -358,36 +356,36 @@ Depois que um serviço em nuvem é configurado, ele pode ser ativado para a conf
 
    ![managesites_png](assets/managesites_png.png)
 
-1. Na guia Configurações , ative **[!UICONTROL Logons sociais]** e Salvar.
+1. Na guia Configurações , ative **[!UICONTROL Logons do Social]** e Salvar.
 
    ![usermgmt_png](assets/usermgmt_png.png)
 
 ## Testar logon social {#test-social-login}
 
-* Verifique se [Adobe Granite OAuth Authentication Handler](#adobe-granite-oauth-authentication-handler) foi ativado em todas as instâncias de publicação.
+* Garantir [Manipulador de Autenticação OAuth do Adobe Granite](#adobe-granite-oauth-authentication-handler) foi ativada em todas as instâncias de publicação.
 * Verifique se os serviços de nuvem foram publicados.
 * Certifique-se de que o site da comunidade foi publicado.
 * Inicie o site publicado em um navegador.
 Por exemplo, http://localhost:4503/content/sites/engage/en.html
-* Selecione **[!UICONTROL Iniciar Sessão]**.
-* Selecione **[!UICONTROL Fazer logon com Facebook]** ou **[!UICONTROL Fazer logon com Twitter]**.
+* Selecionar **[!UICONTROL Logon]**.
+* Selecione um **[!UICONTROL Fazer logon com o Facebook]** ou **[!UICONTROL Fazer logon com o Twitter]**.
 * Se ainda não tiver feito logon no Facebook ou Twitter, faça logon com as credenciais apropriadas.
 * Pode ser necessário conceder permissão dependendo da caixa de diálogo exibida pelo aplicativo Facebook ou Twitter.
 * Observe que a barra de ferramentas na parte superior da página é atualizada para refletir o logon bem-sucedido.
-* Selecione **[!UICONTROL Perfil]**: a página Perfil exibe a imagem de avatar, o nome e o sobrenome do usuário. Também exibe as informações do perfil do Facebook ou Twitter de acordo com os campos/parâmetros permitidos.
+* Selecionar **[!UICONTROL Perfil]**: a página Perfil exibe a imagem de avatar, o nome e o sobrenome do usuário. Também exibe as informações do perfil do Facebook ou Twitter de acordo com os campos/parâmetros permitidos.
 
 ## Configurações do AEM Platform OAuth {#aem-platform-oauth-configurations}
 
 ### Manipulador de Autenticação OAuth do Adobe Granite {#adobe-granite-oauth-authentication-handler}
 
-O `Adobe Granite OAuth Authentication Handler` não está habilitado por padrão e ***deve estar habilitado em todas as instâncias de publicação AEM.***
+O `Adobe Granite OAuth Authentication Handler` não está ativado por padrão e ***deve ser ativado em todas as instâncias de publicação AEM.***
 
 Para ativar o manipulador de autenticação na publicação, basta abrir a configuração do OSGi e salvá-la:
 
 * Faça logon com privilégios de administrador.
-* Navegue até [Console da Web](../../help/sites-deploying/configuring-osgi.md).
+* Navegue até o [Console da Web](../../help/sites-deploying/configuring-osgi.md).
 Por exemplo, http://localhost:4503/system/console/configMgr
-* Localize `Adobe Granite OAuth Authentication Handler`.
+* Localizar `Adobe Granite OAuth Authentication Handler`.
 * Selecione para abrir a configuração para edição.
 * Selecione **[!UICONTROL Salvar]**.
 
@@ -395,18 +393,18 @@ Por exemplo, http://localhost:4503/system/console/configMgr
 
 >[!CAUTION]
 >
->Tenha cuidado para não confundir o manipulador de autenticação com uma instância Facebook ou Twitter de *Adobe Granite OAuth Application and Provider*.
+>Tenha cuidado para não confundir o manipulador de autenticação com uma instância do Facebook ou Twitter de *Aplicativo e provedor OAuth do Adobe Granite*.
 
 ![graniteoauth1](assets/graniteoauth1.png)
 
 ### Aplicativo e provedor OAuth do Adobe Granite {#adobe-granite-oauth-application-and-provider}
 
-Quando um serviço de nuvem para Facebook ou Twitter é criado, uma instância de `Adobe Granite OAuth Authentication Handler` é criada.
+Quando um serviço em nuvem para Facebook ou Twitter é criado, uma instância de `Adobe Granite OAuth Authentication Handler` é criada.
 
 Para localizar a instância criada para um aplicativo Facebook ou Twitter:
 
 1. Faça logon com privilégios de administrador.
-1. Navegue até [Console da Web](../../help/sites-deploying/configuring-osgi.md).
+1. Navegue até o [Console da Web](../../help/sites-deploying/configuring-osgi.md).
 
    Por exemplo, http://localhost:4503/system/console/configMgr.
 
@@ -420,7 +418,7 @@ Para localizar a instância criada para um aplicativo Facebook ou Twitter:
 
    * **[!UICONTROL ID de configuração]**
 
-      (*As IDs de configuração OAuth necessárias*) devem ser exclusivas. Gerado automaticamente quando o serviço de nuvem é criado.
+      (*Obrigatório*) As IDs de configuração OAuth devem ser exclusivas. Gerado automaticamente quando o serviço de nuvem é criado.
 
    * **[!UICONTROL ID do cliente]**
 
@@ -436,7 +434,7 @@ Para localizar a instância criada para um aplicativo Facebook ou Twitter:
 
    * **[!UICONTROL ID do provedor]**
 
-      (*Obrigatório*) A ID do provedor do AEM Communities é definida quando o serviço de nuvem é criado. Não edite. Para o Facebook Connect, o valor é *soco -facebook*. Para o Twitter Connect, o valor é *soco -twitter*.
+      (*Obrigatório*) A ID do provedor do AEM Communities é definida quando o serviço de nuvem é criado. Não edite. Para o Facebook Connect, o valor é *soco - facebook*. Para o Twitter Connect, o valor é *soco - twitter*.
 
    * **[!UICONTROL Grupos]**
 
@@ -454,7 +452,7 @@ Para cada configuração do manipulador de autenticação OAuth, há duas config
 * Manipulador de sincronização padrão do Apache Jackrabbit Oak (org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler) - Nenhuma edição é necessária, mas você pode observar o campo de usuário mapeia como os campos do Facebook são mapeados para um nó de perfil de usuário do CQ. Observe também que &quot;Sync Handler Name&quot; corresponde à ID de configuração da configuração do provedor OAuth.
 * Módulo de logon externo do Apache Jackrabbit Oak (org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory) - Nenhuma edição é necessária lá, mas você pode notar que &#39;Nome do provedor de identidade&#39; e &#39;Nome do manipulador de sincronização&#39; são iguais e apontam para configurações do manipulador de sincronização e OAuth correspondentes, respectivamente.
 
-Para obter mais informações, consulte [Autenticação com o Apache Oak External Login Module](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html).
+Para obter mais informações, consulte [Autenticação com o módulo de logon externo do Apache Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html).
 
 ## Desempenho de passagem do usuário do OAuth {#oauth-user-traversal-performance}
 
@@ -464,38 +462,38 @@ Se avisos transversais forem vistos nos logs, é recomendável adicionar esse í
 
 Em uma instância de autor, conectado com privilégios administrativos:
 
-1. Na navegação global: selecione **Ferramentas, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
+1. Na navegação global: select **Ferramentas, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
 1. Crie um índice chamado ntBaseLucene-oauth a partir de uma cópia de ntBaseLucene:
 
    * No nó `/oak:index`
-   * Selecione o nó `ntBaseLucene`
-   * Selecione **[!UICONTROL Copiar]**
+   * Selecionar nó `ntBaseLucene`
+   * Selecionar **[!UICONTROL Copiar]**
    * Selecionar `/oak:index`
-   * Selecione **[!UICONTROL Colar]**
+   * Selecionar **[!UICONTROL Colar]**
    * Renomear cópia de ntBaseLucene para `ntBaseLucene-oauth`
 
 1. Modifique as propriedades do nó ntBaseLucene-oauth:
 
-   * **[!UICONTROL indexPath]**:  `/oak:index/ntBaseLucene-oauth`
+   * **[!UICONTROL indexPath]**: `/oak:index/ntBaseLucene-oauth`
    * **[!UICONTROL name]**: `oauthid-123****`
-   * **[!UICONTROL reindexar]**:  `true`
-   * **[!UICONTROL reindexCount]**:  `1`
+   * **[!UICONTROL reindexar]**: `true`
+   * **[!UICONTROL reindexCount]**: `1`
 
 1. Em node /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 
    * Exclua todos os nós secundários, exceto cqTags.
    * Renomeie cqTags para `oauthid-123****`
-   * Modifique as propriedades do nó `oauthid-123****`
+   * Modificar as propriedades do nó `oauthid-123****`
 
-      * **[!UICONTROL name]**:  `oauthid-123****`
-   * Selecione **[!UICONTROL Salvar tudo]**.
+      * **[!UICONTROL name]**: `oauthid-123****`
+   * Selecionar **[!UICONTROL Salvar tudo]**.
 
 
-* Para o **nome** `oauthid-123`, substitua *123* pelo Facebook ***App ID*** ou Twitter ***Consumer (API) Key*** que é o valor do **Client ID** no [Adobe Configuração do Granite OAuth Application e Provider](social-login.md#adobe-granite-oauth-application-and-provider).
+* Para o **name** `oauthid-123`, substituir *123º* com a Facebook ***ID do aplicativo*** ou Twitter ***Chave do consumidor (API)*** esse é o valor da variável **ID do cliente** no [Aplicativo e provedor OAuth do Adobe Granite](social-login.md#adobe-granite-oauth-application-and-provider) configuração.
 
    ![graniteoauth-crxde](assets/graniteoauth-crxde.png)
 
-Para obter informações e ferramentas adicionais, consulte [Consultas e Indexação do Oak](../../help/sites-deploying/queries-and-indexing.md).
+Para obter mais informações e ferramentas, consulte [Consultas e indexação do Oak](../../help/sites-deploying/queries-and-indexing.md).
 
 ## Configuração do Dispatcher {#dispatcher-configuration}
 

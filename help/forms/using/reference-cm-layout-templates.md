@@ -1,7 +1,7 @@
 ---
 title: Modelos de carta de referência
 seo-title: Reference letter templates
-description: 'O AEM Forms fornece modelos de layout de cartas para o Gerenciamento de correspondência que você pode usar para criar cartas rapidamente. '
+description: O AEM Forms fornece modelos de layout de cartas para o Gerenciamento de correspondência que você pode usar para criar cartas rapidamente.
 seo-description: AEM Forms provides Correspondence Management letter layout templates that you can use to create letters quickly.
 uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 No Gerenciamento de correspondência, um modelo de carta contém campos de formulário típicos, recursos de layout como um cabeçalho e rodapé e &quot;áreas de destino&quot; vazias para o posicionamento do conteúdo.
 
-O Gerenciamento de correspondência fornece modelos de carta no [pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Você pode personalizar os modelos no Designer de acordo com suas necessidades comerciais e de marcas. O pacote inclui os seguintes modelos:
+O Gerenciamento de correspondência fornece modelos de carta no [Pacote do complemento AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Você pode personalizar os modelos no Designer de acordo com suas necessidades comerciais e de marcas. O pacote inclui os seguintes modelos:
 
 * Clássico
 * Simples clássico
@@ -51,7 +51,7 @@ Com um logotipo no topo, o modelo Clássico é adequado para uma carta profissio
 
 ![clássica](assets/classic.png)
 
-Visualização em PDF de uma carta criada com o modelo Clássico
+Visualização de PDF de uma carta criada com o modelo Clássico
 
 ## Simples clássico {#classic-simple}
 
@@ -59,7 +59,7 @@ Inclui campos para capturar o número de telefone e o endereço de email. Um mod
 
 ![Fragmento de informações de contato](assets/classicsimple.png)
 
-Visualização em PDF de uma carta criada usando o modelo Simples clássico
+Visualização de PDF de uma carta criada com o modelo Simples clássico
 
 ## Balanceado à Esquerda {#balanced-left}
 
@@ -67,7 +67,7 @@ O modelo Esquerda Equilibrada inclui o logotipo à esquerda da carta.
 
 ![balancecedleft](assets/balancedleft.png)
 
-Visualização em PDF de uma carta criada usando o modelo Esquerda Equilibrada
+Visualização de PDF de uma carta criada com o modelo Esquerda Equilibrada
 
 ## Equilibrado à Direita {#balanced-right}
 
@@ -75,7 +75,7 @@ O modelo Equilibrado à Direita tem o logotipo da empresa à esquerda e fornece 
 
 ![direito equilibrado](assets/balancedright.png)
 
-Visualização em PDF de uma carta criada usando o modelo Direito Equilibrado
+Visualização de PDF de uma carta criada usando o modelo Direito Equilibrado
 
 ## Visual Esquerda {#visual-left}
 
@@ -91,7 +91,7 @@ O modelo do Visual Top tem margem visual no topo. O modelo do Visual Top tem um 
 
 ![visualização](assets/visualtop.png)
 
-Visualização em PDF de uma carta criada usando o modelo Parte superior visual
+Visualização de PDF de uma carta criada usando o modelo Visual Top
 
 ## Visual Top - Classic {#visual-top-classic}
 
@@ -99,4 +99,4 @@ O modelo Visual Top - Classic tem um cabeçalho na parte superior da página com
 
 ![visual altopclassic](assets/visualtopclassic.png)
 
-Visualização em PDF de uma carta criada usando o modelo Visual Top - Classic
+Visualização de PDF de uma carta criada usando o modelo Visual Top - Classic

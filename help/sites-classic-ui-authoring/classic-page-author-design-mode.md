@@ -1,8 +1,8 @@
 ---
 title: Configuração dos componentes no Modo de design
-seo-title: Configuração dos componentes no Modo de design
+seo-title: Configuring Components in Design Mode
 description: Quando a instância do AEM é instalada prontamente, uma seleção de componentes é disponibilizada imediatamente no sidekick. Além destes, outros componentes também estarão disponíveis. Você pode usar o Modo de design para Ativar/Desativar tais componentes.
-seo-description: Quando a instância do AEM é instalada prontamente, uma seleção de componentes é disponibilizada imediatamente no sidekick. Além destes, outros componentes também estarão disponíveis. Você pode usar o Modo de design para Ativar/Desativar tais componentes.
+seo-description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components.
 uuid: 2cd5dad0-2f9c-4f34-aae8-1638d1445eb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '500'
 ht-degree: 92%
 
 ---
-
 
 # Configuração dos componentes no Modo de design{#configuring-components-in-design-mode}
 
@@ -50,7 +49,7 @@ No modo de Design, o sidekick é minimizado e você tem a possibilidade de confi
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Clique em **Editar** no sistema Parágrafo (**Design de par**).
+1. Clique em **Editar** sobre o sistema de parágrafo (**Concepção do par**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -74,7 +73,7 @@ No modo Design, também é possível configurar os atributos para os componentes
 
 1. É possível configurar o design dos componentes.
 
-   Por exemplo, se você clicar em **Editar** no componente de Imagem (**Design de imagem**), poderá configurar os parâmetros específicos do componente:
+   Por exemplo, se você clicar em **Editar** no componente Imagem (**Design da imagem**) você pode configurar os parâmetros específicos do componente:
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 

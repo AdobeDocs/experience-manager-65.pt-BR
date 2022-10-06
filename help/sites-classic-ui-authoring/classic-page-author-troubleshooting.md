@@ -1,5 +1,5 @@
 ---
-title: 'Solucionar problemas do AEM durante a criação  '
+title: Solucionar problemas do AEM durante a criação
 seo-title: Troubleshooting AEM when Authoring
 description: A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o AEM, junto com sugestões sobre como resolvê-los.
 seo-description: The following section covers some issues that you might encounter when using AEM, together with suggestions on how to troubleshoot them.

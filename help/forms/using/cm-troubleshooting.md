@@ -1,26 +1,25 @@
 ---
-title: '"Gerenciamento de correspondência: Solução de problemas"'
-seo-title: Solução de problemas do gerenciamento de correspondência
+title: "Gerenciamento de correspondência: Solução de problemas"
+seo-title: Correspondence Management Troubleshooting
 description: Solução de problemas do gerenciamento de correspondência
-seo-description: Solução de problemas do gerenciamento de correspondência
+seo-description: Correspondence Management Troubleshooting
 uuid: 25828cdd-110e-4a84-8f31-d82cd610a54f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: cf06796b-bb8c-4a65-8f42-02fb0cfa3ebd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '199'
 ht-degree: 6%
 
 ---
 
-
 # Gerenciamento de correspondência: Solução de problemas {#correspondence-management-troubleshooting}
 
-## Erros ao salvar uma letra {#errors-when-saving-a-letter}
+## Erros ao salvar uma carta {#errors-when-saving-a-letter}
 
 ### Problema {#issue}
 
@@ -50,9 +49,8 @@ Ao visualizar uma carta, o erro &quot;Erro na carta de carregamento: Não foi po
 
 Redefina o cache de letras na instância de publicação usando as seguintes etapas e tente visualizar novamente a carta:
 
-1. Vá para **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e faça logon como Administrador.
-1. Selecione **Configurações de gerenciamento de correspondência**.
-1. Em **Configurações de Gerenciamento de Correspondência**, desative **Ativar Cache de Carta** e clique em **Salvar.**
-1. Ative **Ativar Cache de Carta** e clique em **Salvar**.
+1. Ir para **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e faça logon como Administrador.
+1. Selecionar **Configurações de gerenciamento de correspondência**.
+1. Em **Configurações de gerenciamento de correspondência**, desativar **Ativar Cache de Carta** e, em seguida, clique em **Salvar.**
+1. Habilitar **Ativar Cache de Carta** e, em seguida, clique em **Salvar**.
 1. Tente novamente visualizar a carta.
-

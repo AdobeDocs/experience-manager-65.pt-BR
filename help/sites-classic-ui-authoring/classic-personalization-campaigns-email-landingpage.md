@@ -1,8 +1,8 @@
 ---
 title: Criação de uma página de aterrissagem de informativo eficaz
-seo-title: Criação de uma página de aterrissagem de informativo eficaz
+seo-title: Creating an Effective Newsletter Landing Page
 description: Uma página de aterrissagem de informativo eficaz ajuda você a obter o maior número possível de pessoas para se inscreverem no seu informativo (ou outra campanha de email marketing). É possível usar as informações coletadas nas inscrições dos seus informativos para obter leads.
-seo-description: Uma página de aterrissagem de informativo eficaz ajuda você a obter o maior número possível de pessoas para se inscreverem no seu informativo (ou outra campanha de email marketing). É possível usar as informações coletadas nas inscrições dos seus informativos para obter leads.
+seo-description: An effective newsletter landing page helps you get as many people as possible to sign up for your newsletter (or other email marketing campaign). You can use the information you gather from your newsletter sign ups to get leads.
 uuid: 0799b954-076b-4e95-8724-3661ae8fddb6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b41de64a-7d27-4633-a8d5-ac91d47eb1bb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 93%
+source-wordcount: '613'
+ht-degree: 92%
 
 ---
-
 
 # Criação de uma página de aterrissagem de informativo eficaz{#creating-an-effective-newsletter-landing-page}
 
@@ -33,7 +32,7 @@ Para criar uma página de aterrissagem de informativo eficaz, você precisa faze
 >[!NOTE]
 >
 >A Adobe não planeja aprimorar mais esse recurso (Gerenciamento de leads e listas).
->A recomendação é aproveitar [Adobe Campaign e a integração para AEM](/help/sites-administering/campaign.md).
+>A recomendação é aproveitar [Adobe Campaign e a integração ao AEM](/help/sites-administering/campaign.md).
 
 ## Criação de uma lista para o informativo {#creating-a-list-for-the-newsletter}
 

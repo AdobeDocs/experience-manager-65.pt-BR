@@ -1,22 +1,21 @@
 ---
 title: Verificações de consistência e passagem
-seo-title: Verificações de consistência e passagem
+seo-title: Consistency and Traversal Checks
 description: Saiba como executar verificações de consistência e travessia.
-seo-description: Saiba como executar verificações de consistência e travessia.
+seo-description: Learn how to perform consistency and traversal checks.
 uuid: 0304e378-7c60-4bf5-9052-d01149d2a6df
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 10dde29b-5dc7-4d4e-80ae-3d4fd0397f7e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---
-
 
 # Verificações de consistência e passagem{#consistency-and-traversal-checks}
 
@@ -40,7 +39,6 @@ Para executar uma verificação de consistência, navegue até a página de admi
 
 Em uma instalação padrão, ela é encontrada aqui:  **[|Mostrar-me|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
-Na seção **Operations** da página, você encontrará dois métodos: **`traversalCheck`** e **`consistencyCheck`**. Para executar uma verificação, clique na operação e insira os parâmetros desejados.
+No **Operações** na seção da página você encontrará dois métodos: **`traversalCheck`** e **`consistencyCheck`**. Para executar uma verificação, clique na operação e insira os parâmetros desejados.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
-

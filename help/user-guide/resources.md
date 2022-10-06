@@ -1,16 +1,15 @@
 ---
 title: AEM 6.5 Recursos adicionais
-seo-title: AEM 6.5 Recursos adicionais
+seo-title: AEM 6.5 Additional Resources
 description: Notas de versão, certificações e recursos adicionais do AEM 6.5
-seo-description: Notas de versão, certificações e recursos adicionais do AEM 6.5
-translation-type: tm+mt
-source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
+seo-description: AEM 6.5 release notes, certifications, and additional resources
+exl-id: d254d976-f547-4074-b8ad-fe4814184f30
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 8%
+source-wordcount: '91'
+ht-degree: 9%
 
 ---
-
 
 # AEM 6.5 Recursos adicionais {#aem-64-additional-resources}
 
@@ -18,19 +17,19 @@ ht-degree: 8%
 
 [Saiba mais sobre os novos recursos mais recentes da AEM 6.5 nas notas de versão.](/help/release-notes/home.md)
 
-## AEM 6.5 Tutorial Vídeos {#aem-64-tutorial-videos}
+## Vídeos tutoriais do AEM 6.5 {#aem-64-tutorial-videos}
 
 * [Vídeos de treinamento do AEM 6.5](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Tutoriais do AEM](https://helpx.adobe.com/experience-manager/tutorials.html)
 
 ## Classes e Certificação {#classes-and-certification}
 
-[Expanda seu aprendizado com ofertas presenciais e virtuais.](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)
+[Expanda seu aprendizado com ofertas presenciais e de classe virtual.](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)
 
 ## Disponibilidade do GDPR {#gdpr-readiness}
 
-[Cumpra os padrões de privacidade do RGPD.](/help/managing/data-protection-and-privacy.md)
+[Siga os padrões de privacidade do GDPR.](/help/managing/data-protection-and-privacy.md)
 
 ## Experience League {#experience-leauge}
 
-[Recursos de aprendizado de visualização para AEM no Experience League.](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#dashboard)
+[Visualize os recursos de aprendizagem do AEM no Experience League.](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#dashboard)

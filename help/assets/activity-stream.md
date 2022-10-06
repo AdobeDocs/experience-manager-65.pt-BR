@@ -2,19 +2,19 @@
 title: Fluxo de atividades de ativos digitais na exibição de linha do tempo
 description: Este artigo descreve como exibir registros de atividades para ativos na linha do tempo.
 contentOwner: AG
-feature: Gerenciamento de ativos
+feature: Asset Management
 role: User, Admin
 exl-id: 28dc0aa5-f2be-4e27-b7d8-415569b7ecd4
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '215'
 ht-degree: 21%
 
 ---
 
 # Fluxo de atividades na linha do tempo {#activity-stream-in-timeline}
 
-Esse recurso exibe registros de atividades para ativos na linha do tempo. Se você executar qualquer uma das seguintes operações relacionadas a ativos em [!DNL Adobe Experience Manager Assets], o recurso de fluxo de atividades atualizará a linha do tempo para refletir a atividade.
+Esse recurso exibe registros de atividades para ativos na linha do tempo. Se você executar qualquer uma das seguintes operações relacionadas a ativos em [!DNL Adobe Experience Manager Assets], o recurso de fluxo de atividades atualiza a linha do tempo para refletir a atividade.
 
 As seguintes operações são registradas no fluxo de atividade:
 
@@ -27,13 +27,13 @@ As seguintes operações são registradas no fluxo de atividade:
 * Rejeitar
 * Mover
 
-Os registros de atividades a serem exibidos na linha do tempo são obtidos do local `/var/audit/com.day.cq.dam/content/dam` no CRX, onde os arquivos de registro são armazenados. Além disso, a atividade da linha do tempo é registrada quando novos ativos são carregados ou os existentes são modificados e verificados em [!DNL Experience Manager] por meio de [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) ou [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+Os registros de atividades a serem exibidos na linha do tempo são obtidos do local `/var/audit/com.day.cq.dam/content/dam` no CRX, onde os arquivos de registro são armazenados. Além disso, a atividade da linha do tempo é registrada quando novos ativos são carregados ou os existentes são modificados e verificados [!DNL Experience Manager] via [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) ou [Aplicativo de desktop do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >
 >Fluxos de trabalho transitórios não são exibidos na linha do tempo, pois nenhuma informação de histórico é salva para esses fluxos de trabalho.
 
-Para exibir o fluxo de atividades, execute uma ou mais das operações no ativo, selecione o ativo e escolha **[!UICONTROL Linha do tempo]** na lista GlobalNavigation.
+Para exibir o fluxo de atividades, execute uma ou mais operações no ativo, selecione o ativo e escolha **[!UICONTROL Linha do tempo]** na lista GlobalNavigation.
 
 ![linha do tempo 2](assets/timeline-2.png)
 

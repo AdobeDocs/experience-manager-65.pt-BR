@@ -214,7 +214,7 @@ Para garantir que o serviço de Teste Seguro funcione conforme o esperado, faça
    >
    >Se você adicionar mais de um endereço IP e uma máscara de rede, ela permitirá *all* Endereços IP para fazer chamadas de ativos e todos aparecem.
 
-1. Faça uma das seguintes opções:
+1. Siga uma das seguintes opções:
 
    * Para adicionar mais endereços IP, repita as três etapas anteriores.
    * Prossiga para a próxima etapa.

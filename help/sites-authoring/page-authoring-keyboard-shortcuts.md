@@ -1,22 +1,21 @@
 ---
 title: Atalhos de teclado ao editar as páginas
-seo-title: Atalhos de teclado ao editar as páginas
+seo-title: Keyboard Shortcuts when Editing Pages
 description: Vários atalhos do teclado estão disponíveis em todo o AEM, inclusive alguns para edição de páginas
-seo-description: Vários atalhos do teclado estão disponíveis em todo o AEM, inclusive alguns para edição de páginas
+seo-description: Various keyboard shortcuts are available throughout AEM, including some for page editing
 uuid: bf9428fc-73b5-499f-b9ed-62fa72272126
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
-translation-type: tm+mt
-source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 91%
+source-wordcount: '221'
+ht-degree: 90%
 
 ---
-
 
 # Atalhos de teclado ao editar as páginas{#keyboard-shortcuts-when-editing-pages}
 
@@ -44,7 +43,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 >[!NOTE]
 >
->&amp;ast; Quando o usuário start para interagir com a página no Modo de Pré-visualização, o atalho `Ctrl-Shift-m` não estará mais disponível. O usuário deve clicar na barra superior do editor ou voltar para o modo Edição para que o atalho fique disponível novamente.
+>&amp;ast; Quando o usuário começar a interagir com a página no modo Visualização, a variável `Ctrl-Shift-m` O atalho não está mais disponível. O usuário deve clicar na barra superior do editor ou voltar para o modo Edição para que o atalho fique disponível novamente.
 
 Vários atalhos de teclado também estão disponíveis para os usuários de desktop ao usar os [consoles](/help/sites-authoring/keyboard-shortcuts.md).
 

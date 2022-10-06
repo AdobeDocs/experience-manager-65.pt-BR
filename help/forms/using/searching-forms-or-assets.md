@@ -1,8 +1,8 @@
 ---
 title: Pesquisar formulários e ativos
-seo-title: Pesquisar formulários e ativos
+seo-title: Searching for forms and assets
 description: Você pode pesquisar formulários e ativos na sua instância do AEM usando AEM pesquisa. A pesquisa básica e avançada permite localizar rapidamente seus ativos.
-seo-description: Você pode pesquisar formulários e ativos na sua instância do AEM usando AEM pesquisa. A pesquisa básica e avançada permite localizar rapidamente seus ativos.
+seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search allows you to quickly locate your assets.
 uuid: 0928a453-3dc4-448b-9320-dcbf20606dd9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '692'
 ht-degree: 4%
 
 ---
@@ -24,13 +24,13 @@ Você pode pesquisar seus formulários ou ativos de formulário usando uma sequ�
 
 Ao selecionar um ou mais critérios e também especificar uma string de texto, a interseção do texto e dos critérios são retornadas como resultados de pesquisa. Os resultados da pesquisa são tão bons quanto os metadados de formulário e ativo fornecidos.
 
-Clique em ![aem6forms_search](assets/aem6forms_search.png) para mostrar ou ocultar o painel de pesquisa.
+Clique em ![aem6forms_search](assets/aem6forms_search.png), para mostrar ou ocultar o painel de pesquisa.
 
 ## Pesquisa básica {#basic-search}
 
 Uma pesquisa básica é a pesquisa padrão, executada sem especificar filtros. A AEM Forms realiza uma pesquisa de texto completo nas propriedades dos metadados.
 
-Para executar uma pesquisa básica, insira a consulta de pesquisa no campo de texto e pressione return. Também é possível inserir o caractere curinga (*) para corresponder a qualquer número de caracteres.
+Para executar uma pesquisa básica, insira a consulta de pesquisa no campo de texto e pressione return. Também é possível inserir o caractere curinga (&#42;) para corresponder a qualquer número de caracteres.
 
 O Adobe Experience Manager pesquisa o texto inserido nas propriedades de metadados e retorna os resultados correspondentes. Se você digitar mais de uma palavra, a operação de pesquisa corresponderá ao texto completo para pesquisa.
 
@@ -38,9 +38,9 @@ Observe os seguintes pontos sobre a pesquisa básica:
 
 * A pesquisa é realizada usando as propriedades de formulário e metadados do ativo.
 * Se você digitar mais de uma palavra, a operação de pesquisa corresponderá ao texto completo para pesquisa.
-* A pesquisa não diferencia maiúsculas de minúsculas. Por exemplo, quando você digita `geometrixx`, os ativos com títulos `Geometrixx`, `GEOMETRIXX` e `GeoMetRixx` são exibidos nos resultados da pesquisa.
+* A pesquisa não diferencia maiúsculas de minúsculas. Por exemplo, ao digitar `geometrixx`, ativos com títulos `Geometrixx`, `GEOMETRIXX`e `GeoMetRixx` são exibidos nos resultados da pesquisa.
 
-* Correspondências parciais de uma palavra não são suportadas. Para pesquisar usando strings parciais, use * curinga. No entanto, se a consulta de pesquisa corresponder a uma palavra completa, o formulário ou ativo correspondente será exibido.
+* Correspondências parciais de uma palavra não são suportadas. Para pesquisar usando strings parciais, use &#42; curinga. No entanto, se a consulta de pesquisa corresponder a uma palavra completa, o formulário ou ativo correspondente será exibido.
 * Espaços extras são respeitados e não são aparados durante a pesquisa. Por exemplo, `My form` não é a mesma consulta de pesquisa que `My form`.
 
 * Se os dados e os valores de exibição dos campos nas propriedades de metadados forem diferentes, não será possível usar os valores de exibição como parâmetros de pesquisa. Por exemplo, não é possível pesquisar com base em um status, como Modificado ou Publicado, pois essas propriedades são armazenadas em um formato diferente.
@@ -94,7 +94,7 @@ Você pode pesquisar ativos usando um dos seguintes status:
   </tr>
   <tr>
    <td>Formulário PDF</td> 
-   <td>Pesquise em todos os documentos PDF.</td> 
+   <td>Pesquise em todos os documentos do PDF.</td> 
   </tr>
   <tr>
    <td>Documento</td> 

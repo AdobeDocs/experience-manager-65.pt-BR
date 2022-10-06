@@ -1,22 +1,21 @@
 ---
-title: 'Práticas recomendadas    '
-seo-title: 'Práticas recomendadas    '
+title: Práticas recomendadas
+seo-title: Best Practices
 description: Como usar o AEM da maneira mais eficiente e efetiva possível
-seo-description: Como usar o AEM da maneira mais eficiente e efetiva possível
+seo-description: How to use AEM in the most efficient and most effective way possible
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 72%
+source-wordcount: '287'
+ht-degree: 70%
 
 ---
-
 
 # Práticas recomendadas    {#best-practices}
 
@@ -36,9 +35,9 @@ Para conhecer as práticas recomendadas de administração, implantação e manu
 
 Documentos específicos estão descritos e vinculados nas tabelas a seguir.
 
-## Assets {#assets}
+## Ativos {#assets}
 
-As práticas recomendadas sobre o Assets, incluindo a capacidade do Dynamic Media e a integração do Dynamic Media Classic, estão descritas nos seguintes tópicos:
+As práticas recomendadas referentes ao Assets, incluindo o recurso Dynamic Media e a integração com o Dynamic Media Classic, estão descritas nos seguintes tópicos:
 
 <table>
  <tbody>
@@ -55,7 +54,7 @@ As práticas recomendadas sobre o Assets, incluindo a capacidade do Dynamic Medi
   <tr>
    <td>Imagem dinâmica</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Práticas recomendadas de imagem dinâmica</a></td>
-   <td><p>Descreve como aumentar a nitidez de uma imagem para obter melhores resultados e a melhor maneira de otimizar a qualidade de suas imagens se você estiver usando a funcionalidade do Dynamic Media ou estiver fazendo uma integração com o Dynamic Media Classic. </p> </td>
+   <td><p>Descreve como ajustar a nitidez de uma imagem para obter melhores resultados e a melhor maneira de otimizar a qualidade de suas imagens se você estiver usando a funcionalidade do Dynamic Media ou estiver integrando com o Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
    <td>Ativos multilíngues</td>
@@ -72,7 +71,7 @@ O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas
 |  |  |  |
 |---|---|---|
 | Ferramentas de criação | [Ambiente e ferramentas do autor](/help/sites-authoring/author-environment-tools.md) | Fornece uma visão geral das ferramentas usadas para criar páginas. |
-| Organizar páginas | [Criar e organizar páginas](/help/sites-authoring/managing-pages.md) | Fornece uma visão geral sobre como melhor organizar suas páginas, incluindo convenções de nomenclatura. |
+| Organizar páginas | [Criar e organizar páginas](/help/sites-authoring/managing-pages.md) | Fornece uma visão geral sobre como organizar melhor suas páginas, incluindo convenções de nomenclatura. |
 
 ## Forms {#forms}
 

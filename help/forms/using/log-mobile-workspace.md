@@ -1,41 +1,40 @@
 ---
 title: Fazer logon no aplicativo AEM Forms
-seo-title: Fazer logon no aplicativo AEM Forms
-description: Etapas para acessar o aplicativo AEM Forms.
-seo-description: Etapas para acessar o aplicativo AEM Forms.
+seo-title: Logging in to AEM Forms app
+description: Etapas para fazer logon no aplicativo AEM Forms.
+seo-description: Steps to log into the AEM Forms app.
 uuid: da8cb0b2-6333-4ead-95f2-fb753149dc5e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: fb2b7ff6-6b29-425b-a86e-d1f80faab9e0
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: d19cba33-0646-40d4-b4a3-b28d6db4a1f3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
-
 # Fazer logon no aplicativo AEM Forms{#logging-in-to-aem-forms-app}
 
-Ao start do aplicativo AEM Forms, você precisa primeiro fornecer suas credenciais de logon e um URL do servidor AEM Forms.
+Ao iniciar o aplicativo AEM Forms, primeiro é necessário fornecer suas credenciais de logon e um URL do servidor do AEM Forms.
 
-## Para start do aplicativo {#to-start-the-app}
+## Para iniciar o aplicativo {#to-start-the-app}
 
-1. Toque no ícone do aplicativo AEM Forms em seu dispositivo móvel.
-1. Para fazer logon no aplicativo, insira o nome de usuário, a senha e o URL do servidor AEM Forms.
+1. Toque no ícone do aplicativo AEM Forms no dispositivo móvel.
+1. Para fazer logon no aplicativo, digite um nome de usuário, senha e URL do servidor do AEM Forms.
 
    >[!NOTE]
    >
-   >O aplicativo Mobile armazena em cache todos os URLs de servidor AEM Forms inseridos.
+   >O aplicativo móvel armazena em cache todos os URLs do servidor do AEM Forms inseridos.
    >
-   >    * Para exibir a lista dos URLs do servidor, clique na seta de lista no canto direito da caixa de texto URL do servidor.
-   >    * Você pode selecionar um URL de servidor AEM Forms para fazer logon pelo aplicativo.
+   >    * Para exibir a lista de URLs de servidor, clique na seta da lista no canto direito da caixa de texto URL do servidor .
+   >    * Você pode selecionar um URL de servidor do AEM Forms para fazer logon por meio do aplicativo.
 
 
-Ao fazer logon no aplicativo, você é direcionado para a tela [**Início**](../../forms/using/home-screen.md).
+Ao fazer logon no aplicativo, você é direcionado para a função [**Início** tela](../../forms/using/home-screen.md).
 
 >[!NOTE]
 >

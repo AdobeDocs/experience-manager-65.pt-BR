@@ -1,8 +1,8 @@
 ---
 title: Publicar pastas no Brand Portal
-seo-title: Publicar pastas no Brand Portal
+seo-title: Publish folders to Brand Portal
 description: Saiba como publicar e desfazer a publicação de pastas no Brand Portal.
-seo-description: Saiba como publicar e desfazer a publicação de pastas no Brand Portal.
+seo-description: Learn how to publish and unpublish folders to Brand Portal.
 uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -15,7 +15,7 @@ role: User
 exl-id: 92a156f0-ce2a-4c83-bd57-0c29efbf784f
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '566'
 ht-degree: 38%
 
 ---
@@ -30,7 +30,7 @@ Se você fizer modificações subsequentes no ativo ou pasta original no AEM Ass
 
 ## Publicar pastas no Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Na interface do AEM Assets, passe o mouse sobre a pasta desejada e selecione a opção **Publish** nas ações rápidas.
+1. Na interface do AEM Assets, passe o mouse sobre a pasta desejada e selecione **Publicar** nas ações rápidas.
 
    Como alternativa, selecione a pasta desejada e siga as etapas adicionais.
 
@@ -40,10 +40,10 @@ Se você fizer modificações subsequentes no ativo ou pasta original no AEM Ass
 
    Para publicar as pastas selecionadas no Brand Portal, siga um dos procedimentos a seguir:
 
-   * Na barra de ferramentas, selecione **Publicação rápida**. Em seguida, no menu, selecione **Publish to Brand Portal**.
+   * Na barra de ferramentas, selecione **Publicação rápida**. Em seguida, no menu, selecione **Publicar no Brand Portal**.
 
    * Na barra de ferramentas, selecione **Gerenciar publicação**.
-   1. Em **Ação**, selecione **Publicar no Brand Portal**, em **Agendamento**, selecione **Agora** e clique em **Seguinte.**
+   1. De **Ação** select **Publicar no Brand Portal**, de **Agendamento** select **Agora** e clique em **Próximo.**
    1. Confirme sua seleção no **Escopo** e clique em **Publicar no Brand Portal**.
 
    Será exibida uma mensagem informando que a pasta foi colocada na fila para publicação no Brand Portal. Faça logon na interface do Brand Portal para ver a pasta publicada.
@@ -52,8 +52,8 @@ Se você fizer modificações subsequentes no ativo ou pasta original no AEM Ass
 
    Para agendar a publicação no fluxo de trabalho do Brand Portal de pastas de ativos para uma data ou hora posterior:
 
-   1. Depois de selecionar os ativos/pastas para publicar, selecione **Gerenciar publicação** na barra de ferramentas na parte superior.
-   1. Em **Action** selecione **Publish to Brand Portal**, em **Scheduling** selecione **Later**.
+   1. Depois de selecionar os ativos/pastas para publicar, selecione **Gerenciar publicação** na barra de ferramentas, na parte superior.
+   1. De **Ação** select **Publicar no Brand Portal**, de **Agendamento** select **Mais tarde**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
@@ -82,7 +82,7 @@ Você tem a opção de cancelar a publicação de pastas do Brand Portal rapidam
    Para cancelar a publicação rapidamente da pasta desejada do Brand Portal:
 
    1. Na barra de ferramentas, selecione **Gerenciar publicação**.
-   1. Em **Ação**, selecione **Cancelar publicação do Brand Portal**, em **Agendamento**, selecione **Agora** e clique em **Próximo.**
+   1. De **Ação** select **Cancelar publicação do Brand Portal**, de **Agendamento** select **Agora** e clique em **Próximo.**
    1. Confirme sua seleção no **Escopo** e clique em **Cancelar publicação no Brand Portal**.
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
@@ -92,7 +92,7 @@ Você tem a opção de cancelar a publicação de pastas do Brand Portal rapidam
    Para agendar a publicação de uma pasta do Brand Portal para uma data e hora posteriores:
 
    1. Na barra de ferramentas, selecione **Gerenciar publicação**.
-   1. Em **Action** selecione **Cancelar publicação do Brand Portal**, e em **Scheduling** selecione **Mais Tarde**.
+   1. De **Ação** select **Cancelar publicação do Brand Portal** e de **Agendamento** select **Mais tarde**.
    1. Selecione uma **Data de ativação** e especifique a hora. Clique em **Avançar**.
    1. Confirme a seleção no **Escopo** e clique em **Avançar**.
    1. Especifique um **Título de fluxo de trabalho** em **Fluxos de trabalho**. Clique em **Cancelar publicação mais tarde.**
