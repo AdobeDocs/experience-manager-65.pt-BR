@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: ad0f5f536657a90a8b2476b43576060f3dc85868
 workflow-type: tm+mt
-source-wordcount: '5866'
+source-wordcount: '5868'
 ht-degree: 0%
 
 ---
@@ -100,48 +100,68 @@ Esta seção trata das operações de manutenção relacionadas ao recurso de co
 
 ### Visão geral {#overview}
 
-O **Limpar versões** está disponível na **[Ferramentas](/help/sites-administering/tools-consoles.md) console** under **Controle de versão** ou diretamente em:
-
-`https://<server>:<port>/etc/versioning/purge.html`
-
-![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
-
-**Caminho de início** Um caminho absoluto no qual a limpeza deve ser feita. Você pode selecionar Iniciar caminho clicando no navegador da árvore do repositório.
-
-**Recursivo** Ao limpar dados, você pode escolher entre executar a operação em um nó ou em uma hierarquia inteira selecionando Recursivo. No último caso, o caminho especificado define o nó raiz da hierarquia.
-
-**Máximo de versões para manter** O número máximo de versões a serem mantidas para um nó. Quando esse número excede esse valor, as versões mais antigas são removidas.
-
-**Idade máxima da versão** A idade máxima da versão de um nó. Quando a idade de uma versão exceder esse valor, ela será removida.
-
-**Execução de prática** Como a remoção de versões do seu conteúdo é definitiva e não pode ser revertida sem restaurar um backup, a ferramenta Limpar versões fornece um modo de execução seca que permite que você visualize as versões eliminadas. Para iniciar uma execução seca do processo de limpeza, clique em Execução de prática.
-
-**Limpar** Inicie a limpeza das versões no nó definido pelo Caminho de início.
+O **Limpar versões** A ferramenta está disponível como uma tarefa de manutenção semanal. Antes de usar pela primeira vez, ele precisa ser adicionado e configurado. Depois disso, poderá ser executado mediante solicitação ou semanalmente.
 
 ### Limpeza de versões de um site {#purging-versions-of-a-web-site}
 
 Para limpar versões de um site, proceda da seguinte maneira:
 
-1. Navegue até o **[Ferramentas](/help/sites-administering/tools-consoles.md)** **console**, selecione **Controle de versão** e clique duas vezes **Limpar versões.**
-1. Defina o caminho de início do conteúdo a ser removido (por exemplo, `/content/geometrixx-outdoors`).
+1. Navegue até o **[Ferramentas](/help/sites-administering/tools-consoles.md)** **console**, selecione **Operação**, **Manutenção**, em seguida **Janela de manutenção semanal**.
 
-   * Se desejar limpar apenas o nó definido pelo seu caminho, desmarque **Recursivo**.
-   * Se desejar limpar o nó definido pelo seu caminho e seus descendentes, selecione **Recursivo**.
+1. Selecionar **+ Adicionar** na barra de ferramentas superior.
 
-1. Defina o número máximo de versões (para cada nó) que deseja manter. Deixe em branco para não usar essa configuração.
+   ![Adicionar limpeza de versão](assets/version-purge-add.png)
 
-1. Defina a idade máxima da versão em dias (para cada nó) que deseja manter. Deixe em branco para não usar essa configuração.
+1. Selecionar **Limpeza de versão** na lista suspensa no **Adicionar nova tarefa** caixa de diálogo. Então **Salvar**.
 
-1. Clique em **Execução de prática** para visualizar o que o processo de limpeza faria.
-1. Clique em **Limpar** para iniciar o processo.
+   ![Adicionar limpeza de versão](assets/version-purge-add-new-task.png)
+
+1. O **Limpeza de versão** tarefa será adicionada. Use as ações do cartão para:
+   * Selecionar - revelará ações adicionais na barra de ferramentas superior
+   * Executar - para executar a limpeza configurada imediatamente
+   * Configurar - para configurar a tarefa de limpeza semanal
+
+   ![Ações de limpeza de versão](assets/version-purge-actions.png)
+
+1. Selecione o **Configurar** ação para abrir o Console da Web para **Tarefa de limpeza de versão do WCM CQ do dia**, onde você pode configurar:
+
+   ![Configuração de limpeza de versão](assets/version-purge-configuration.png)
+
+   * **Eliminar caminhos**
+Defina o caminho de início do conteúdo a ser removido (por exemplo, 
+`/content/geometrixx-outdoors`).
+
+   * **Limpar versões recursivamente**
+
+      * Desmarque se quiser apenas limpar o nó definido pelo seu caminho.
+      * Selecione se deseja limpar o nó definido pelo seu caminho e seus descendentes.
+   * **Número máximo de versões**
+Defina o número máximo de versões (para cada nó) que deseja manter. Deixe em branco para não usar essa configuração.
+
+   * **Número mínimo de versões**
+Defina o número mínimo de versões (para cada nó) que deseja manter. Deixe em branco para não usar essa configuração.
+
+   * **Idade máxima da versão**
+Defina a idade máxima da versão em dias (para cada nó) que deseja manter. Deixe em branco para não usar essa configuração.
+   Então **Salvar**.
+
+1. Navegue/volte para a **Janela de manutenção semanal** e selecione **Executar** para iniciar o processo imediatamente.
 
 >[!CAUTION]
 >
+>Você pode usar a caixa de diálogo Interface do usuário clássica para executar uma [Execução de prática](#analyzing-the-console) da sua configuração:
+>
+>* http://localhost:4502/etc/versioning/purge.html
+>
 >Os nós removidos não podem ser revertidos sem restaurar o repositório. Você deve cuidar da sua configuração, de modo que recomendamos que você sempre execute um exercício de simulação antes de limpar.
 
-### Análise do console {#analyzing-the-console}
+#### Execução de prática - Análise do console {#analyzing-the-console}
 
-O **Execução de prática** e **Limpar** Os processos listam todos os nós que foram processados. Durante o processo, um nó pode ter um dos seguintes status:
+A interface clássica fornece um **Execução de prática** de:
+
+* http://localhost:4502/etc/versioning/purge.html
+
+O processo lista todos os nós que foram processados. Durante o processo, um nó pode ter um dos seguintes status:
 
 * `ignore (not versionnable)`: o nó não oferece suporte ao controle de versão e é ignorado durante o processo.
 
@@ -650,7 +670,7 @@ Alguns deles dependerão do seu sistema operacional.
 
 ### Interpretação do request.log {#interpreting-the-request-log}
 
-Esse arquivo registra as informações básicas sobre cada solicitação feita ao AEM. A partir destas valiosas conclusões, podemos extrair.
+Esse arquivo registra as informações básicas sobre cada solicitação feita ao AEM. A partir daí, podem extrair-se conclusões valiosas.
 
 O `request.log` O oferece uma maneira integrada de obter uma visão de quanto tempo as solicitações levam. Para fins de desenvolvimento, é útil `tail -f` o `request.log` e observe os tempos de resposta lentos. Para analisar um `request.log` recomendamos que [utilização de `rlog.jar` o que permite classificar e filtrar por tempos de resposta](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
@@ -665,7 +685,7 @@ O log de solicitações registra cada solicitação feita, juntamente com a resp
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Ao totalizar todas as entradas de GET em um período específico (por exemplo, durante vários períodos de 24 horas), você pode fazer declarações sobre o tráfego médio em seu site.
+Ao totalizar todas as entradas de GET em períodos específicos (por exemplo, durante vários períodos de 24 horas), você pode fazer declarações sobre o tráfego médio em seu site.
 
 #### Monitoramento dos tempos de resposta com o request.log {#monitoring-response-times-with-the-request-log}
 
