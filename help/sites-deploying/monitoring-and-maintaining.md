@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: fd9661ee94edf8f88a93ae35ba2563b3021add4d
+source-git-commit: 85987222e8b216f22ae1fec4e080488d01f23063
 workflow-type: tm+mt
-source-wordcount: '5901'
+source-wordcount: '5905'
 ht-degree: 0%
 
 ---
@@ -128,14 +128,14 @@ Para limpar versões de um site, proceda da seguinte maneira:
    ![Configuração de limpeza de versão](assets/version-purge-configuration.png)
 
    * **Eliminar caminhos**
-Defina o caminho de início do conteúdo a ser removido (por exemplo, 
-`/content/wknd`).
+Defina o caminho de início do conteúdo a ser eliminado; por exemplo, 
+`/content/wknd`.
 
       >[!CAUTION]
       >
-      >É altamente recomendável definir vários caminhos para cada um dos sites.
+      >É altamente recomendável definir vários caminhos, para cada um dos sites.
       >
-      >Definir um caminho com muitas crianças aumenta o tempo para executar a limpeza.
+      >Definir um caminho com muitas crianças pode aumentar significativamente o tempo necessário para executar a limpeza.
 
    * **Limpar versões recursivamente**
 
