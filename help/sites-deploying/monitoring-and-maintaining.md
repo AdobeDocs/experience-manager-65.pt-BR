@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: ad0f5f536657a90a8b2476b43576060f3dc85868
+source-git-commit: a6067ebb1b5be67515cd3567f56c72463c5f7123
 workflow-type: tm+mt
-source-wordcount: '5868'
+source-wordcount: '5901'
 ht-degree: 0%
 
 ---
@@ -131,6 +131,12 @@ Para limpar versões de um site, proceda da seguinte maneira:
 Defina o caminho de início do conteúdo a ser removido (por exemplo, 
 `/content/geometrixx-outdoors`).
 
+      >[!CAUTION]
+      >
+      >É altamente recomendável definir vários caminhos para cada um dos sites.
+      >
+      >Definir um caminho com muitas crianças aumenta o tempo para executar a limpeza.
+
    * **Limpar versões recursivamente**
 
       * Desmarque se quiser apenas limpar o nó definido pelo seu caminho.
@@ -173,7 +179,7 @@ O processo lista todos os nós que foram processados. Durante o processo, um nó
 Além disso, o console fornece informações úteis sobre as versões:
 
 * `V 1.0`: o número da versão.
-* `V 1.0.1`&#42;: a estrela indica que a versão é a atual.
+* `V 1.0.1`&#42;: a estrela indica que a versão é a versão atual (base) e não pode ser removida.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: a data da versão.
 
