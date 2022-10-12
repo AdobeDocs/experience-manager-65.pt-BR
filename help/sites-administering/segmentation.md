@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d546462b4b78a743e047dcfea5fc2dc92d131bb5
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 81%
+source-wordcount: '1787'
+ht-degree: 79%
 
 ---
 
@@ -35,9 +35,13 @@ O AEM permite personalizar facilmente a experiência dos usuários. Também perm
 
 O [Públicos-alvo](/help/sites-authoring/managing-audiences.md) O console é usado para gerenciar segmentos do ContextHub ou do ClientContext, bem como públicos-alvo da sua conta Adobe Target. Esta documentação abrange o gerenciamento de segmentos para o ContextHub. Para [Segmentos de contexto do cliente](/help/sites-administering/campaign-segmentation.md) e segmentos do Adobe Target, consulte a documentação relevante.
 
-Para acessar seus segmentos, na navegação global, selecione **Navegação > Personalização > Públicos-alvo**.
+Para acessar seus segmentos, você precisa selecionar sua configuração. Na navegação global, selecione **Navegação > Personalização > Públicos-alvo**. Você verá as configurações disponíveis:
 
-![chlimage_1-310](assets/chlimage_1-310.png)
+![Públicos-alvo - Configurações](assets/segmentation-access-confs.png)
+
+Selecione sua configuração para ver os segmentos, por exemplo, Site WKND:
+
+![Públicos-alvo - Segmentos](assets/segmentation-access-segments.png)
 
 ## Editor do segmento  {#segment-editor}
 
@@ -130,7 +134,7 @@ As seguintes referências estão disponíveis prontas para uso para vincular dir
 
 Para definir seu novo segmento:
 
-1. Depois de [acessar os segmentos](/help/sites-administering/segmentation.md#accessing-segments), [navegue até a pasta](#organizing-segments) onde deseja criar o segmento ou deixe-o na raiz.
+1. Depois [acesso aos segmentos](/help/sites-administering/segmentation.md#accessing-segments), [navegue até a pasta](#organizing-segments) onde deseja criar o segmento.
 
 1. clique ou toque no botão Criar e selecione **Criar segmento do ContextHub**.
 
