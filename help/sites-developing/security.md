@@ -3,14 +3,8 @@ title: Segurança
 seo-title: Security
 description: A segurança do aplicativo é iniciada durante a fase de desenvolvimento
 seo-description: Application Security starts during the development phase
-uuid: efd5f3bc-da07-4fc8-a6ce-f1e6f5084c9e
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c55b70ec11842d3f7d82adbf552b2624c1dcc599
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -23,7 +17,7 @@ A segurança do aplicativo é iniciada durante a fase de desenvolvimento. O Adob
 
 ## Usar sessão de solicitação {#use-request-session}
 
-Seguindo o princípio de menos privilégios, o Adobe recomenda que cada acesso ao repositório seja feito usando a sessão vinculada à solicitação do usuário e o controle de acesso apropriado.
+Seguindo o princípio de menos privilégio, o Adobe recomenda que cada acesso ao repositório seja feito usando a sessão vinculada à solicitação do usuário e o controle de acesso apropriado.
 
 ## Protect contra script entre sites (XSS) {#protect-against-cross-site-scripting-xss}
 
@@ -63,4 +57,4 @@ Com as permissões padrão:
 
 ## Protect contra ataques de falsificação de solicitação entre sites {#protect-against-cross-site-request-forgery-attacks}
 
-Para obter mais informações sobre os mecanismos de segurança AEM empregados para mitigar ataques de CSRF, consulte o [Filtro de referenciador do Sling](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) seção da lista de verificação de segurança e do [Documentação do Quadro de proteção CSRF](/help/sites-developing/csrf-protection.md).
+Para obter mais informações sobre os mecanismos de segurança AEM empregados para mitigar ataques de CSRF, consulte o [Filtro de referenciador do Sling](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) seção da lista de verificação de segurança e do [Documentação da Estrutura de proteção do CSRF](/help/sites-developing/csrf-protection.md).
