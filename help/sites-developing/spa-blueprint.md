@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e13953bed73481738832a00a7563a07149c2d3bd
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2079'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ módulo npm: [@adobe/aem-response-editable-components](https://www.npmjs.com/pac
 
 #### Angular {#angular}
 
-módulo npm: em breve
+módulo npm: [@adobe/aem-angular-edititable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Principais serviços e componentes {#main-services-and-components}
 
@@ -166,8 +166,6 @@ O componente Grade responsiva deve vir pré-mapeado para sua AEM contraparte, po
 
 * `gridClassNames:` Nomes de classe fornecidos para a grade responsiva
 * `columnClassNames:` Nomes de classe fornecidos para a coluna responsiva
-
-Veja também o recurso npm [@adobe/aem-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### Espaço reservado da grade responsiva {#placeholder-of-the-reponsive-grid}
 
