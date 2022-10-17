@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3c691a9e8673f3229368abbd550982d207eb8ac6
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,15 @@ Para sincronizar o formulário no aplicativo AEM Forms:
 
 Para sincronizar vários formulários, na instância de autor, selecione vários formulários no Gerenciador de formulários e toque em **Sincronizar com o aplicativo AEM Forms**. Quando o formulário é publicado, o aplicativo AEM Forms pode se conectar ao servidor de publicação e buscar os formulários.
 
+Se o aplicativo Android AFA (Aplicativo de formulário AEM) não for sincronizado, execute as seguintes etapas para corrigir o problema de sincronização:
+
+1. Vá para o **https://&#39;[server]:[porta]&quot;system/console/configMgr**.
+1. Procure a variável **[!UICONTROL Manipulador de Autenticação de Token do Adobe Granite]** e clique em **[!UICONTROL Editar]**.
+1. Selecione o **[!UICONTROL Nenhum]** no menu suspenso da **[!UICONTROL Atributo SameSite para o cookie de token de logon]** atributo.
+1. Clique em **[!UICONTROL Salvar]**.
+
+![Sincronizar imagem com o aplicativo AFA Android](/help/forms/using/assets/afaandroid.png)
+
 >[!NOTE]
 >
 >Formulários compatíveis:
@@ -39,7 +48,8 @@ Para sincronizar vários formulários, na instância de autor, selecione vários
 >
 >Os anexos no nível do formulário não são suportados nos formulários adaptáveis buscados no aplicativo AEM Forms sincronizado com o servidor OSGi da AEM Forms. Os usuários podem anexar arquivos em um campo, se o autor tiver ativado anexos em nível de campo no momento da criação do formulário.
 
+
 **Para abrir e atualizar um formulário**
 
-1. Para abrir um formulário, toque no formulário na tela inicial.
+1. Para abrir um formulário, toque no **[!UICONTROL Formulário]** na tela inicial.
 1. É possível atualizar os campos do formulário, adicionar anexos, salvar como rascunho e enviá-lo.
