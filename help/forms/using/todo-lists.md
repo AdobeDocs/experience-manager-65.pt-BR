@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 51e36e874fe84eab8558271b5c84b1c2e2f58ef0
+source-git-commit: e961ce67e5b1a71e3af6dded304d99cd9e6896bc
 workflow-type: tm+mt
-source-wordcount: '4034'
+source-wordcount: '4033'
 ht-degree: 0%
 
 ---
@@ -40,16 +40,16 @@ Você pode executar algumas ações sem abrir a tarefa clicando nos ícones que 
 
 Ao abrir e trabalhar em uma tarefa, as ferramentas que estão disponíveis dependem da tarefa. Tarefas diferentes exigem ações diferentes e, por isso, algumas ferramentas podem ou não estar disponíveis para você. As tarefas típicas que você pode receber são descritas abaixo.
 
-**Fornecer informações**: Você recebe uma tarefa que requer o preenchimento e envio de um formulário.
+* **Fornecer informações**: Você recebe uma tarefa que requer o preenchimento e envio de um formulário.
 
-**Revisar informações**: Você recebe uma tarefa que requer que você revise as informações e faça logoff no conteúdo.
+* **Revisar informações**: Você recebe uma tarefa que requer que você revise as informações e faça logoff no conteúdo.
 
-**Revisão multiusuário**: Você recebe uma tarefa ao mesmo tempo que outros usuários recebem a tarefa. Você e os outros usuários devem fornecer informações ou revisar o conteúdo, ou ambos. As seguintes ferramentas podem estar disponíveis com esse tipo de tarefa:
+* **Revisão multiusuário**: Você recebe uma tarefa ao mesmo tempo que outros usuários recebem a tarefa. Você e os outros usuários devem fornecer informações ou revisar o conteúdo, ou ambos. As seguintes ferramentas podem estar disponíveis com esse tipo de tarefa:
 
-* Exibir as instruções para a tarefa
-* Exibindo o status de conclusão de todos os usuários que recebem a tarefa
-* Exibindo os comentários de todos os usuários que recebem a tarefa
-* Adicionar comentários à tarefa por conta própria
+   * Exibir as instruções para a tarefa
+   * Exibindo o status de conclusão de todos os usuários que recebem a tarefa
+   * Exibindo os comentários de todos os usuários que recebem a tarefa
+   * Adicionar comentários à tarefa por conta própria
 
 As ferramentas adicionais que podem estar disponíveis com qualquer uma das tarefas acima incluem:
 
@@ -106,17 +106,17 @@ Quando você abre e reivindica uma tarefa de um grupo ou lista compartilhada, a 
 
 Depois de abrir uma tarefa, as guias que são exibidas no painel principal e as ferramentas disponíveis dependem da tarefa. As guias que podem ser exibidas são descritas abaixo:
 
-**Resumo da tarefa**: Quando uma tarefa é aberta, o painel Resumo da tarefa permite que você mostre informações sobre a tarefa, se ela existir, usando um URL especificado no processo na etapa Atribuir tarefa . Usando o Painel de Resumo de Tarefas, informações adicionais e relevantes de uma tarefa podem ser exibidas para adicionar mais valor ao usuário final do espaço de trabalho do AEM Forms. Essa guia não estará disponível, se o URL do Resumo de tarefas não existir.
+* **Resumo da tarefa**: Quando uma tarefa é aberta, o painel Resumo da tarefa permite que você mostre informações sobre a tarefa, se ela existir, usando um URL especificado no processo na etapa Atribuir tarefa . Usando o Painel de Resumo de Tarefas, informações adicionais e relevantes de uma tarefa podem ser exibidas para adicionar mais valor ao usuário final do espaço de trabalho do AEM Forms. Essa guia não estará disponível, se o URL do Resumo de tarefas não existir.
 
-**Detalhes**: Fornece algumas informações sobre a tarefa atual e o processo ao qual ela pertence.
+* **Detalhes**: Fornece algumas informações sobre a tarefa atual e o processo ao qual ela pertence.
 
-**Formulário**: Exibe o formulário associado à tarefa. O formulário pode ser de vários tipos de arquivos, incluindo PDF, HTML, Guia e SWF. O formulário pode ter a aparência de um formulário normal impresso ou baseado na Web ou guiá-lo por uma série de painéis no estilo de assistente para coletar informações.
+* **Formulário**: Exibe o formulário associado à tarefa. O formulário pode ser de vários tipos de arquivos, incluindo PDF, HTML, Guia e SWF. O formulário pode ter a aparência de um formulário normal impresso ou baseado na Web ou guiá-lo por uma série de painéis no estilo de assistente para coletar informações.
 
-**Histórico**: Lista as tarefas que fazem parte da instância do processo e o formulário, atribuições de tarefa e anexos associados para cada tarefa.
+* **Histórico**: Lista as tarefas que fazem parte da instância do processo e o formulário, atribuições de tarefa e anexos associados para cada tarefa.
 
-**Anexos**: Exibe anexos existentes que estão associados à tarefa e adiciona anexos, se necessário.
+* **Anexos**: Exibe anexos existentes que estão associados à tarefa e adiciona anexos, se necessário.
 
-**Notas**: Exibe as notas existentes associadas à tarefa e adiciona notas, se necessário.
+* **Notas**: Exibe as notas existentes associadas à tarefa e adiciona notas, se necessário.
 
 Ao trabalhar em uma tarefa, as ferramentas que você pode ver e as ações que você pode realizar são descritas abaixo.
 
