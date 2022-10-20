@@ -21,7 +21,7 @@ ht-degree: 4%
 + Notas de versão {#release-notes-new-features}
    + [Notas de versão](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=pt-BR)
    + [Resumo dos novos recursos](using/whats-new.md)
-   + [Recursos obsoletos](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
+   + [Recursos obsoletos](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html?lang=pt-BR)
 + Introdução {#getting-started}
    + [Introdução ao AEM Forms](using/introduction-aem-forms.md)
    + [Introdução à criação de formulários adaptáveis](using/introduction-forms-authoring.md)
