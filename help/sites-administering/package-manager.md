@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: d303a374fd4ab8e398fd909dec4ce6155a2163f5
+source-git-commit: b48b7631c501cea7e4ef1133a452fb6984e4547f
 workflow-type: tm+mt
 source-wordcount: '3573'
 ht-degree: 1%
@@ -489,6 +489,16 @@ Fazer upload de um pacote apenas adiciona o conteúdo do pacote ao repositório,
 
 Antes da instalação do seu pacote, o Gerenciador de pacotes cria automaticamente um pacote de instantâneos que contém o conteúdo que será substituído. Esse instantâneo será reinstalado se você desinstalar o pacote.
 
+>[!CAUTION]
+>
+>* Se você estiver instalando ativos digitais, deverá:
+   >  Primeiro, desative o WorkflowLauncher.
+   >  Use a opção de menu Componentes do console OSGi para desativar
+   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>* Em seguida, quando a instalação for concluída, reative o WorkflowLauncher.
+>
+>Desativar o WorkflowLauncher garante que a estrutura do importador de Ativos não manipule (involuntariamente) os ativos na instalação.
+
 1. [Acesse o Gerenciador de Pacotes.](#accessing)
 
 1. Abra os detalhes do pacote que deseja instalar na lista de pacotes clicando no nome do pacote.
@@ -506,16 +516,6 @@ Antes da instalação do seu pacote, o Gerenciador de pacotes cria automaticamen
 1. Clique em **Instalar**.
 
 1. O registro de atividades detalha o progresso da instalação.
-
->[!CAUTION]
->
->* Se você estiver instalando ativos digitais, deverá:
-   >  Primeiro, desative o WorkflowLauncher.
-   >  Use a opção de menu Componentes do console OSGi para desativar
-   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
->* Em seguida, quando a instalação for concluída, reative o WorkflowLauncher.
->
->Desativar o WorkflowLauncher garante que a estrutura do importador de Ativos não manipule (involuntariamente) os ativos na instalação.
 
 Quando a instalação for concluída e bem-sucedida, a lista de pacotes será atualizada e a palavra **Instalado** aparece no status do pacote.
 
