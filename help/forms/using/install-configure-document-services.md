@@ -8,12 +8,13 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 652f2f9b55857b8962f5bfd4edb85f3700866485
+source-git-commit: b80886f1e45e0ed65ce2309ef6ea43bfa373a52b
 workflow-type: tm+mt
-source-wordcount: '5535'
+source-wordcount: '5529'
 ht-degree: 2%
 
 ---
+
 
 # Instalar e configurar serviços de documento {#installing-and-configuring-document-services}
 
@@ -286,14 +287,6 @@ Execute as seguintes etapas para configurar o provedor de soquete SSL IBM®:
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
-### (Somente para Windows) Configurar o serviço Instalar Tinta e Manuscrito {#configure-install-ink-and-handwriting-service}
-
-Se você estiver executando o Microsoft® Windows Server, configure o serviço de Tinta e Manuscrito. O serviço é necessário para abrir arquivos Microsoft® PowerPoint que usam recursos de vinculação do Microsoft® Office:
-
-1. Abra o Gerenciador de Servidores. Clique no botão **[!UICONTROL Gerenciador do servidor]** ícone na bandeja do Quick Launch.
-1. Clique em **[!UICONTROL Adicionar recursos]** no **[!UICONTROL Recursos]** menu. Selecione o **[!UICONTROL Serviços de escrita manual e de tinta]** caixa de seleção.
-1. **[!UICONTROL Selecionar recursos]** caixa de diálogo com **[!UICONTROL Serviços de escrita manual e de tinta]** selecionado. Clique em **[!UICONTROL Instalar]** e o serviço está instalado.
-
 ### (Somente Windows) Definir as configurações de bloco de arquivos para o Microsoft® Office {#configure-the-file-block-settings-for-microsoft-office}
 
 Altere as configurações do centro de confiança do Microsoft® Office para habilitar o serviço Gerador de PDF para converter arquivos criados com versões mais antigas do Microsoft® Office.
@@ -479,7 +472,9 @@ No Microsoft® Windows, o serviço Gerador de PDF usa o Adobe Acrobat para conve
 
    1. Abrir [Gerenciador de pacotes de AEM](http://localhost:4502/crx/packmgr/index.jsp) e faça o download do `adobe-aemfd-pdfg-common-pkg-[version].zip` do Gerenciador de Pacotes.
    1. Descompacte o arquivo .zip baixado. Abra o prompt de comando com privilégios administrativos.
-   1. Navegue até o [arquivo zip extraído]`\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\adobe-aemfd-pdfg-common-pkg-[version]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` diretório. Execute o seguinte arquivo em lote:
+   1. Navegue até o `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
+   1. Descompacte o `adobe-aemfd-pdfg-common-pkg-[version]`.
+   1. Navegue até o `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` diretório. Execute o seguinte arquivo em lote:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -589,7 +584,7 @@ O serviço Assembler depende do serviço Reader Extensions, do serviço Signatur
 
 ## Ferramenta de disponibilidade do sistema (SRT) {#SRT}
 
-A ferramenta System Readiness verifica se o computador está configurado corretamente para executar conversões PDF Generator. A ferramenta gera um relatório no caminho especificado. Para executar a ferramenta:
+O [Ferramenta de preparação do sistema](#srt-configuration) verifica se o computador está configurado corretamente para executar conversões PDF Generator. A ferramenta gera um relatório no caminho especificado. Para executar a ferramenta:
 
 1. Abra o prompt de comando. Navegue até o `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` pasta.
 
@@ -597,45 +592,53 @@ A ferramenta System Readiness verifica se o computador está configurado correta
 
    `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
 
-   O comando gera o relatório e também cria o arquivo srt_config.yaml.
+   O comando gera o relatório e também cria o arquivo srt_config.yaml. Você pode usá-lo para configurar opções para a ferramenta SRT. É opcional configurar opções para a ferramenta SRT.
 
    >[!NOTE]
    >
    > * Se a Ferramenta de disponibilidade do sistema relatar que o arquivo pdfgen.api não está disponível na pasta de plug-ins do Acrobat, copie o arquivo pdfgen.api do `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` para `[Acrobat_root]\Acrobat\plug_ins` diretório.
-   >
-   > * Você pode usar o arquivo srt_config.yaml para definir várias configurações de . O formato do arquivo é:
 
-       # Configuração SRT
-       
-       # Observação: siga o formato correto para evitar falhas de análise
-       
-       #, por exemplo &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
-       
-       #locale: (campo obrigatório)Local a ser usado para SRT. Localidades compatíveis [en/fr/de/ja].
-       localidade: en
-       
-       #aemTempDir: Diretório Temp AEM
-       aemTempDir:
-       
-       #users: fornecer lista de usuários de conversão do PDFG
-       #users:
-       # - user1
-       # - user2
-       usuários:
-       
-       #profile: selecione profile para executar verificações específicas. Escolha entre [LCM], mais serão adicionadas em breve
-       perfil:
-       
-       #outputDir: diretório onde os arquivos de saída serão salvos
-       outputDir:
-   >
 1. Vá até `[Path_of_reports_folder]`. Abra o arquivo SystemReadinessTool.html . Verifique o relatório e corrija os problemas mencionados.
+
+### Configuração de opções para a ferramenta SRT {#srt-configuration}
+
+Você pode usar o arquivo srt_config.yaml para definir várias configurações para a ferramenta SRT. O formato do arquivo é:
+
+```shell
+   # =================================================================
+   # SRT Configuration
+   # =================================================================
+   #Note - follow correct format to avoid parsing failures
+   #e.g. <param name>:<space><param value> 
+   #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
+   locale: en
+   
+   #aemTempDir: AEM Temp direcotry
+   aemTempDir:
+   
+   #users: provide PDFG converting users list
+   #users:
+   # - user1
+   # - user2
+   users:
+   
+   #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
+   profile:
+   
+   #outputDir: directory where output files will be saved
+   outputDir:
+```
+
+* **Localidade:** É um parâmetro obrigatório. Suporta inglês(en), alemão (de), francês (fr) e japonês(ja). O valor padrão é en. Não afeta os serviços PDF Generator em execução no AEM Forms no OSGi.
+* **aemTempDir:** É um parâmetro opcional. Especifica o local de armazenamento temporário do Adobe Experience Manager.
+* **usuários:** É um parâmetro opcional. Você pode especificar um usuário para verificar se ele possui permissões necessárias e acesso de leitura/gravação em diretórios necessários para executar o PDF Generator. Se nenhum usuário for especificado, as verificações específicas do usuário serão ignoradas e exibidas como falha no relatório.
+* **outputDir:** Especifique o local para salvar o relatório de SRT. O local padrão é o diretório de trabalho atual da ferramenta SRT.
 
 ## Resolução de problemas
 
 Se você enfrentar problemas mesmo depois de corrigir todos os problemas relatados pela ferramenta SRT, execute as seguintes verificações:
 
-Antes de realizar as verificações a seguir, verifique se [Ferramenta de preparação do sistema](#SRT) não relata nenhum erro.
+Antes de executar as seguintes verificações, verifique se [Ferramenta de preparação do sistema](#SRT) não relata nenhum erro.
 
 +++ Adobe Acrobat
 
@@ -762,7 +765,7 @@ Antes de realizar as verificações a seguir, verifique se [Ferramenta de prepar
 
 * Se você tiver uma licença existente do Adobe Acrobat e ela tiver expirado, [Baixe a versão mais recente do Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html)e migrando seu número de série. Antes [migrando seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-   * Use os comandos a seguir para gerar vid.xml e serializar novamente a instalação existente usando o arquivo vid.xml em vez dos comandos fornecidos em [migrando seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) artigo numérico.
+   * Use os comandos a seguir para gerar prov.xml e reserializar a instalação existente usando o arquivo prov.xml em vez dos comandos fornecidos em [migrando seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) artigo numérico.
 
           &quot;
           
