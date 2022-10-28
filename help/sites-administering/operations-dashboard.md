@@ -12,9 +12,9 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 891cb5bb8cc9b7114d23617c9164fd428718b302
+source-git-commit: ee45113daee495d9b56a0f6e2c463d9cca006540
 workflow-type: tm+mt
-source-wordcount: '6200'
+source-wordcount: '6230'
 ht-degree: 2%
 
 ---
@@ -324,6 +324,12 @@ A função de uma verificação de integridade composta é agregar várias verif
   </tr>
  </tbody>
 </table>
+
+### Configuração da Verificação de Integridade {#health-check-configuration}
+
+Por padrão, para uma instância AEM predefinida, as verificações de integridade são executadas a cada 60 segundos.
+
+Você pode configurar o **Período** com o [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) **Configuração da Verificação de Integridade da Consulta** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics).
 
 ## Monitoramento com o Nagios {#monitoring-with-nagios}
 
