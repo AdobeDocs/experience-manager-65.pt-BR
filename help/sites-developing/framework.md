@@ -12,7 +12,7 @@ discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 4db9279f2d15f2e08939ba453ae8ddbbc3c3d69f
+source-git-commit: efb4f9f8a97baf8d3d02160226e4f4d3f8f64c89
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 0%
@@ -230,8 +230,9 @@ Um valor especial para a variável `cq:movedTo` a propriedade é `nirvana`: ela 
    >[!NOTE]
    >
    >O `cq:movedTo` só será adicionada à tag movida ou unida se uma dessas condições for atendida:
-   > 1. A tag é usada no conteúdo (o que significa que tem uma referência) OU
-   > 1. A tag tem filhos que já foram movidos.
+   >
+   >1. A tag é usada no conteúdo (o que significa que tem uma referência) OU
+   >1. A tag tem filhos que já foram movidos.
 
 
 * `cq:backlinks` mantém as referências na outra direção, ou seja, mantém uma lista de todas as tags que foram movidas para ou mescladas com a tag B. Isso é necessário principalmente para manter `cq:movedTo`propriedades atualizadas quando a tag B for movida/mesclada/excluída também ou quando a tag B for ativada, nesse caso todas as tags de backlinks também deverão ser ativadas.
@@ -240,8 +241,8 @@ Um valor especial para a variável `cq:movedTo` a propriedade é `nirvana`: ela 
    >
    >O `cq:backlinks` só será adicionada à tag movida ou unida se uma dessas condições for atendida:
    >
-   > 1. A tag é usada no conteúdo (o que significa que tem uma referência) OU >
-   > 1. A tag tem filhos que já foram movidos.
+   >1. A tag é usada no conteúdo (o que significa que tem uma referência) OU
+   >1. A tag tem filhos que já foram movidos.
 
 
 * Ler um `cq:tags` a propriedade de um nó de conteúdo envolve a seguinte resolução:

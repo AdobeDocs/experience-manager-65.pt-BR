@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 1%
@@ -161,9 +161,8 @@ página em https://[*host*]:[*porta*]/system/console/configMgr.
 
 >[!NOTE]
 >
-> * O driver JDBC para MySQL não é fornecido com a amostra. Certifique-se de ter provisionado para ele e forneça as informações necessárias para configurar o pool de conexão JDBC.
-> * Aponte suas instâncias de autor e publicação para usar o mesmo banco de dados. O valor do campo URI de conexão JDBC deve ser o mesmo para todas as instâncias de autor e publicação.
-   >
+>* O driver JDBC para MySQL não é fornecido com a amostra. Certifique-se de ter provisionado para ele e forneça as informações necessárias para configurar o pool de conexão JDBC.
+>* Aponte suas instâncias de autor e publicação para usar o mesmo banco de dados. O valor do campo URI de conexão JDBC deve ser o mesmo para todas as instâncias de autor e publicação.
 
 
 1. Deixe outras configurações como estão e clique em **[!UICONTROL Salvar]**.

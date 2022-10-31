@@ -9,7 +9,7 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 44%
@@ -46,7 +46,7 @@ Para conectar um site AEM e AEM os Componentes principais da CIF a uma visualiza
 
    >[!TIP]
    >
-   > Os catálogos de comércio podem ser abordados usando IDs ou UIDs. As UIDs foram introduzidas no Adobe Commerce 2.4.2. Habilite-a somente se o back-end de comércio suportar um esquema GraphQL da versão 2.4.2 ou posterior.
+   >Os catálogos de comércio podem ser abordados usando IDs ou UIDs. As UIDs foram introduzidas no Adobe Commerce 2.4.2. Habilite-a somente se o back-end de comércio suportar um esquema GraphQL da versão 2.4.2 ou posterior.
 
 4. Atribua a configuração secundária a um site do AEM
 

@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 12%
@@ -331,9 +331,8 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
 >* Os predicados de pesquisa comuns são definidos em:
    >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->
 >* Os predicados de pesquisa relacionados somente ao siteadmin (interface clássica) estão localizados em:
-   > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+   >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
    >   * Eles estão obsoletos e disponíveis apenas para compatibilidade com versões anteriores.
 >
 >Essas informações são apenas para referência, você não deve fazer alterações em `/libs`.

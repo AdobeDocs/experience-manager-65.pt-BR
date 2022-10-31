@@ -7,10 +7,10 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1343'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -127,7 +127,7 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 >[!NOTE]
 >
-> O processo de criação da definição de índice acima é compatível somente com o `oak-run-1.12.0` em diante. O direcionamento é feito usando o pacote de repositório do Granite `com.adobe.granite.repository-x.x.xx.jar`.
+>O processo de criação da definição de índice acima é compatível somente com o `oak-run-1.12.0` em diante. O direcionamento é feito usando o pacote de repositório do Granite `com.adobe.granite.repository-x.x.xx.jar`.
 
 As etapas acima criam um arquivo JSON chamado `merge-index-definitions_target.json` que é a definição do índice.
 
@@ -141,7 +141,7 @@ Depois disso, copie a ID do ponto de verificação recém-criada e valide a vida
 
 >[!NOTE]
 >
-> Esse ponto de verificação será excluído quando o índice for importado posteriormente.
+>Esse ponto de verificação será excluído quando o índice for importado posteriormente.
 
 Para obter mais detalhes, consulte [criação do ponto de verificação](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint) na documentação do Oak.
 

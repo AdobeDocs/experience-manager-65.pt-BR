@@ -2,7 +2,7 @@
 title: Integração com o Adobe Target usando IMS
 description: Saiba mais sobre como integrar AEM com o Adobe Target usando o IMS
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: eb05fb92491932e4c2489c5adb533bbbae1d2870
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 55%
@@ -278,9 +278,9 @@ Como dito anteriormente, o primeiro caso é o mais comum para o AEM 6.5. De qual
 
 >[!NOTE]
 >
-> Se quiser alterar uma Configuração do Target existente:
+>Se quiser alterar uma Configuração do Target existente:
 >
-> 1. Insira novamente a ID do locatário.
-> 2. Conecte-se novamente ao Target.
-> 3. Salve a configuração.
+>1. Insira novamente a ID do locatário.
+>2. Conecte-se novamente ao Target.
+>3. Salve a configuração.
 

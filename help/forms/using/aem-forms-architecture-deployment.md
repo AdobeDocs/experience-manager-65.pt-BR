@@ -11,7 +11,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2460'
 ht-degree: 0%
@@ -76,7 +76,7 @@ A imagem a seguir exibe várias configurações AEM do servidor do Formulário e
 
    >[!NOTE]
    >
-   > O Adobe recomenda usar um armazenamento de dados de terceiros para salvar os dados processados finais em vez de usar AEM repositório.
+   >O Adobe recomenda usar um armazenamento de dados de terceiros para salvar os dados processados finais em vez de usar AEM repositório.
 
 * **Armazenamento e pós-processamento de dados de correspondência provenientes de uma instância de publicação:** AEM workflows executam o pós-processamento opcional das definições de letras correspondentes. Esses workflows podem salvar os dados processados finais em um armazenamento de dados externo adequado.
 

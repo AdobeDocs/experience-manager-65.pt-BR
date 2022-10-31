@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3583'
 ht-degree: 2%
@@ -493,11 +493,12 @@ Você pode executar a coleta de lixo do armazenamento de dados ao:
 >Ao executar a coleta de lixo em uma configuração de armazenamento de dados em cluster ou compartilhado (com Mongo ou Segment Tar), o log pode exibir avisos sobre a incapacidade de excluir determinadas IDs de blob. Isso ocorre porque as IDs de blob excluídas em uma coleção de lixo anterior são referenciadas incorretamente novamente por outro cluster ou nós compartilhados que não têm informações sobre as exclusões de ID. Como resultado, quando a coleta de lixo é executada, ela registra um aviso ao tentar excluir uma ID que já foi excluída na última execução. Esse comportamento não afeta o desempenho ou a funcionalidade.
 
 >[!NOTE]
-> Se você estiver usando uma configuração compartilhada do armazenamento de dados e a coleta de lixo do armazenamento de dados estiver desativada, a execução da tarefa de limpeza do Lucene Binary poderá aumentar o espaço em disco usado. Para evitar isso, você precisa desativar o BlobTracker em todas as instâncias de autor e publicação da seguinte maneira:
 >
-> 1. Pare a instância do AEM.
-> 2. Adicione o `blobTrackSnapshotIntervalInSecs=L"0"` no `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` arquivo. Esse parâmetro requer o Oak 1.12.0, 1.10.2 ou posterior.
-> 3. Reinicie a Instância de AEM.
+>Se você estiver usando uma configuração compartilhada do armazenamento de dados e a coleta de lixo do armazenamento de dados estiver desativada, a execução da tarefa de limpeza do Lucene Binary poderá aumentar o espaço em disco usado. Para evitar isso, você precisa desativar o BlobTracker em todas as instâncias de autor e publicação da seguinte maneira:
+>
+>1. Pare a instância do AEM.
+>2. Adicione o `blobTrackSnapshotIntervalInSecs=L"0"` no `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` arquivo. Esse parâmetro requer o Oak 1.12.0, 1.10.2 ou posterior.
+>3. Reinicie a Instância de AEM.
 
 
 Com versões mais recentes do AEM, a coleta de lixo do armazenamento de dados também pode ser executada em armazenamentos de dados compartilhados por mais de um repositório. Para poder executar a coleta de lixo do armazenamento de dados em um armazenamento de dados compartilhado, siga estas etapas:

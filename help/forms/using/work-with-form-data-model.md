@@ -10,7 +10,7 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '4128'
 ht-degree: 0%
@@ -199,10 +199,10 @@ Use o atributo de solicitação para recuperar as propriedades associadas da fon
 
    >[!NOTE]
    >
-   > * Se você usar um modelo estático, sobreponha o head.jsp em:
-      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
-   > * Se você usar um modelo editável, sobreponha o aftemplatedpage.jsp em:
-      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
+   >* Se você usar um modelo estático, sobreponha o head.jsp em:
+      >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >* Se você usar um modelo editável, sobreponha o aftemplatedpage.jsp em:
+      >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Definir [!DNL paramMap] para o atributo de solicitação. Por exemplo, inclua o seguinte código no arquivo .jsp na pasta de aplicativos:

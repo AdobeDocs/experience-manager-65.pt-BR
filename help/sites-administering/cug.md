@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 4%
+source-wordcount: '794'
+ht-degree: 3%
 
 ---
 
@@ -82,11 +82,11 @@ Para aplicar o CUG a uma página:
 
    ![captura de tela_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
-   >[OBSERVAÇÃO!]
+   >[!NOTE]
    >
-   > Observe que os CUGs na guia Permissões não podem ser implantados em Live Copies de blueprints. Planeje isso ao configurar a Live Copy.
+   >Observe que os CUGs na guia Permissões não podem ser implantados em Live Copies de blueprints. Planeje isso ao configurar a Live Copy.
    >
-   > Para obter mais informações, consulte [esta página](closed-user-groups.md#aem-livecopy).
+   >Para obter mais informações, consulte [esta página](closed-user-groups.md#aem-livecopy).
 
 1. Procure e adicione seu CUG na seguinte janela - neste caso, adicione o grupo chamado **cug_access**. Por fim, prima **Salvar**.
 1. Clique em **Ativado** para definir que esta página (e quaisquer páginas filhas) pertença a um CUG.

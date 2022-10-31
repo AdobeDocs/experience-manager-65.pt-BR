@@ -9,7 +9,7 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 26%
@@ -22,7 +22,7 @@ O [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base
 
 >[!TIP]
 >
-> Use o [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype) ao iniciar sua própria implementação de comércio.
+>Use o [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype) ao iniciar sua própria implementação de comércio.
 
 ## O que você vai criar
 
@@ -40,7 +40,7 @@ Nós vamos clonar o [Projeto Venia](https://github.com/adobe/aem-cif-guides-veni
 
 >[!NOTE]
 >
-> **Você pode usar um projeto existente** (com base no AEM Project Archetype com a CIF incluída) e ignore esta seção.
+>**Você pode usar um projeto existente** (com base no AEM Project Archetype com a CIF incluída) e ignore esta seção.
 
 1. Execute o seguinte comando git para clonar o projeto:
 
@@ -137,7 +137,7 @@ Em seguida, faça uma pequena alteração no estilo do Teaser para ver como a fu
 
    >[!NOTE]
    >
-   > Arquivos como este são ignorados do controle de origem, pois devem ser gerados durante o tempo de criação.
+   >Arquivos como este são ignorados do controle de origem, pois devem ser gerados durante o tempo de criação.
 
 1. Inspect o arquivo `ui.frontend/clientlib.config.js`.
 
@@ -168,7 +168,7 @@ Em seguida, faça uma pequena alteração no estilo do Teaser para ver como a fu
 
    >[!NOTE]
    >
-   > Arquivos como este também são ignorados do controle de origem, pois devem ser gerados durante o tempo de criação.
+   >Arquivos como este também são ignorados do controle de origem, pois devem ser gerados durante o tempo de criação.
 
 1. Em seguida, inspecione as outras bibliotecas de clientes geradas pelo projeto:
 
@@ -190,7 +190,7 @@ Em seguida, faça uma pequena alteração no estilo do Teaser para ver como a fu
 
    >[!NOTE]
    >
-   > Somente as bibliotecas base são &quot;codificadas&quot; como parte dos scripts de página. `venia.site` não está incluído nesses arquivos e, em vez disso, é incluído como parte do modelo de página para maior flexibilidade. Isso será inspecionado posteriormente.
+   >Somente as bibliotecas base são &quot;codificadas&quot; como parte dos scripts de página. `venia.site` não está incluído nesses arquivos e, em vez disso, é incluído como parte do modelo de página para maior flexibilidade. Isso será inspecionado posteriormente.
 
 1. No terminal, crie e implante o projeto inteiro em uma instância local de AEM:
 
@@ -265,7 +265,7 @@ Há várias opções para incluir uma biblioteca do lado do cliente. Em seguida,
 
    >[!NOTE]
    >
-   > Para exibir todos os modelos disponíveis na tela inicial AEM, navegue até **Ferramentas** > **Geral** > **Modelos**.
+   >Para exibir todos os modelos disponíveis na tela inicial AEM, navegue até **Ferramentas** > **Geral** > **Modelos**.
 
 1. No canto superior esquerdo, selecione o ícone **Informações da página** e clique em **Política da página**.
 
@@ -328,7 +328,7 @@ O webpack-dev-server proxies imagens e alguns dos CSS/JavaScript da instância l
 
    >[!CAUTION]
    >
-   > Se você receber um erro relacionado ao Sass, pare o servidor e execute o comando `npm rebuild node-sass` e repita as etapas acima. Isso pode ocorrer se você tiver uma versão diferente de `npm` e `node` em seguida, especificado no projeto `aem-cif-guides-venia/pom.xml`.
+   >Se você receber um erro relacionado ao Sass, pare o servidor e execute o comando `npm rebuild node-sass` e repita as etapas acima. Isso pode ocorrer se você tiver uma versão diferente de `npm` e `node` em seguida, especificado no projeto `aem-cif-guides-venia/pom.xml`.
 
 1. Navegue até o [http://localhost:8080/](http://localhost:8080/) em uma nova guia com o mesmo navegador que uma instância de AEM logada. Você deve ver a página inicial Venia através do webpack-dev-server:
 

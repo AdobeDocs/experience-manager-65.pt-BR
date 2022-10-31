@@ -2,7 +2,7 @@
 title: Criação de experiências comerciais
 description: Experiências comerciais de trabalho
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -71,7 +71,7 @@ As páginas do catálogo de produtos da CIF são páginas virtuais renderizadas 
 
     >[!OBSERVAÇÃO]
     >
-    > Se a categoria e o produto forem selecionados, o produto será obtido.
+    >Se a categoria e o produto forem selecionados, o produto será obtido.
 
 Isso cria um link de espaço reservado que é substituído por um link real quando a página é renderizada.
 
@@ -101,4 +101,4 @@ O resultado é agrupado por tipo.
 
     >[!OBSERVAÇÃO]
     >
-    > Pesquisa de texto completo no Omnisearch não oferece suporte aos Fragmentos de conteúdo associados. Use SKU ou UID para localizar Fragmentos de conteúdo associados.
+    >Pesquisa de texto completo no Omnisearch não suporta Fragmentos de conteúdo associados. Use SKU ou UID para localizar Fragmentos de conteúdo associados.

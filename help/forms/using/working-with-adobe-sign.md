@@ -11,7 +11,7 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 28d092a7713438c27213766f0bb702b699305b88
+source-git-commit: 4714554609a10e58b1c7141696d694fac46887a6
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 0%
@@ -295,15 +295,17 @@ Execute as seguintes etapas para configurar o componente Etapa de assinatura:
 
    >[!NOTE]
    >
-   > * Quando você arrasta e solta a variável **[!UICONTROL Etapa de assinatura]** componente do formulário, a variável **[!UICONTROL O signatário e o preenchedor do formulário são os mesmos?]** é automaticamente definida como **Sim**. É necessário manter o funcionamento do formulário.
+   >* Quando você arrasta e solta a variável **[!UICONTROL Etapa de assinatura]** componente do formulário, a variável **[!UICONTROL O signatário e o preenchedor do formulário são os mesmos?]** é automaticamente definida como **Sim**. É necessário manter o funcionamento do formulário.
+   >* Use o componente Etapa de resumo após o componente Etapa de assinatura para obter a melhor experiência. A etapa Resumo envia automaticamente e imediatamente o formulário após a conclusão da assinatura de um formulário no componente Etapa de assinatura. Se você não usar a etapa de resumo, um envio automático será acionado somente após o intervalo definido usando o [Serviço de configuração do Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
+
    >
-   > * Use o componente Etapa de resumo após o componente Etapa de assinatura para obter a melhor experiência. A etapa Resumo envia automaticamente e imediatamente o formulário após a conclusão da assinatura de um formulário no componente Etapa de assinatura. Se você não usar a etapa de resumo, um envio automático será acionado somente após o intervalo definido usando o [Serviço de configuração do Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
-      > Algumas práticas recomendadas são:
-   > * O painel de formulário adaptável que contém a etapa Assinatura está sempre no último ou no segundo painel de um formulário adaptável. Ele só pode ser o segundo último painel quando o último painel contiver a etapa Resumo .
-   > * O painel que contém o componente da etapa Assinatura ou Resumo não pode conter nenhum outro componente.
-   > * Os formulários adaptáveis que contêm a Etapa de assinatura não podem ter o botão Enviar.
-   > * O envio dos formulários adaptáveis contendo a etapa Assinatura é feito por meio de um serviço em segundo plano ou da etapa Resumo. Se houver um assinante configurado que também esteja preenchendo o formulário, a vantagem de manipular o envio do formulário adaptável usando a etapa Resumo é que ele imediatamente avalia que o assinante assinou o formulário e chama a ação de envio. Um serviço em segundo plano leva mais tempo para avaliar se todos os signatários configurados assinaram o formulário e atrasam o envio do formulário adaptável.
-   > * Projete o formulário para não permitir que um usuário navegue de volta de um painel que contém a etapa Assinatura ou Resumo.
+   >Algumas práticas recomendadas são:
+   >
+   >* O painel de formulário adaptável que contém a etapa Assinatura está sempre no último ou no segundo painel de um formulário adaptável. Ele só pode ser o segundo último painel quando o último painel contiver a etapa Resumo .
+   >* O painel que contém o componente da etapa Assinatura ou Resumo não pode conter nenhum outro componente.
+   >* Os formulários adaptáveis que contêm a Etapa de assinatura não podem ter o botão Enviar.
+   >* O envio dos formulários adaptáveis contendo a etapa Assinatura é feito por meio de um serviço em segundo plano ou da etapa Resumo. Se houver um assinante configurado que também esteja preenchendo o formulário, a vantagem de manipular o envio do formulário adaptável usando a etapa Resumo é que ele imediatamente avalia que o assinante assinou o formulário e chama a ação de envio. Um serviço em segundo plano leva mais tempo para avaliar se todos os signatários configurados assinaram o formulário e atrasam o envio do formulário adaptável.
+   >* Projete o formulário para não permitir que um usuário navegue de volta de um painel que contém a etapa Assinatura ou Resumo.
 
 
 

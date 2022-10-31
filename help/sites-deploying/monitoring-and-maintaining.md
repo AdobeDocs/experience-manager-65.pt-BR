@@ -12,7 +12,7 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: b9a3db4144a571291bdf1c9a9f0e841f284df0c8
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '5972'
 ht-degree: 0%
@@ -448,11 +448,12 @@ Em determinadas circunstâncias, você pode criar um arquivo de log personalizad
    >| `'.'yyyy-MM-dd-HH-mm` | Rotação no início de cada minuto. |
    >
    >Observação: Ao especificar uma hora/data:
-   > 1. O texto literal &quot;escape&quot; deve estar dentro de um par de aspas simples (&#39; &#39;);
-      >
-      >     isso evita que determinados caracteres sejam interpretados como letras padrão.
    >
-   >  1. Use somente caracteres permitidos para um nome de arquivo válido em qualquer lugar na opção .
+   >1. O texto literal &quot;escape&quot; deve estar dentro de um par de aspas simples (&#39; &#39;);
+      >
+      >    isso evita que determinados caracteres sejam interpretados como letras padrão.
+   >
+   >1. Use somente caracteres permitidos para um nome de arquivo válido em qualquer lugar na opção .
 
 
 1. Leia seu novo arquivo de log com a ferramenta escolhida.
