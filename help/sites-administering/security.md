@@ -12,9 +12,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: bc3dd7d229a75323b98a96d60dcbb3ae2b8c09ab
 workflow-type: tm+mt
-source-wordcount: '5475'
+source-wordcount: '5469'
 ht-degree: 2%
 
 ---
@@ -87,7 +87,7 @@ As tabelas a seguir listam cada item junto com:
    <td>administradores</td>
    <td>Grupo</td>
    <td><p>Grupo que concede direitos de administrador a todos os seus membros. Somente o administrador tem permissão para editar este grupo.</p> <p>Tem direitos de acesso totais.</p> </td>
-   <td>Se você definir um "negar todos" em um nó, os administradores só terão acesso se ele for ativado novamente para esse grupo.</td>
+   <td>Mesmo que você defina um "negar todos" em um nó, os administradores ainda poderão acessar o nó</td>
   </tr>
   <tr>
    <td>autores de conteúdo</td>
