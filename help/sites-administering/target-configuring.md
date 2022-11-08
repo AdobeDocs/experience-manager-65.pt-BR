@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 813441a61baa560c9d317a5519b9e0c0d1da7a6e
+source-git-commit: f64319e88687ba1f53c98d4768492a0b4f4b08b8
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2210'
 ht-degree: 43%
 
 ---
@@ -126,9 +126,9 @@ Você precisa criar a configuração da nuvem do Target apenas uma vez, pois é 
 
 Use o procedimento a seguir para criar uma configuração da nuvem do Target no AEM:
 
-1. Navegar para **Cloud Services** através da **Logotipo AEM** > **Ferramentas** > **Implantação** > **Cloud Services**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Navegar para **Cloud Services** através da **Logotipo AEM** > **Ferramentas** > **Cloud Services** > **Cloud Services herdados**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
-   O **Adobe Marketing Cloud** a página de visão geral é aberta.
+   O **Cloud Services** a página de visão geral é aberta.
 
 1. Na seção **Adobe Target**, clique em **Configurar agora**.
 1. Na caixa de diálogo **Criar configuração**:
