@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b60278940f48731ee9085635c0d4a3d7da24ebc8
 workflow-type: tm+mt
-source-wordcount: '4679'
-ht-degree: 9%
+source-wordcount: '4664'
+ht-degree: 10%
 
 ---
 
@@ -176,7 +176,7 @@ Os índices solr podem ser configurados para serem executados no servidor AEM pa
 
 >[!NOTE]
 >
->Ao utilizar a abordagem de pesquisa integrada do Solr, permitiria descarregar a indexação em um servidor Solr. Se os recursos mais avançados do servidor Solr forem usados por meio de uma abordagem baseada em crawler, será necessário um trabalho de configuração adicional. O Headwire criou uma [conector de fonte aberta](https://www.aemsolrsearch.com/#/) para acelerar esses tipos de implementações.
+>Ao utilizar a abordagem de pesquisa integrada do Solr, permitiria descarregar a indexação em um servidor Solr. Se os recursos mais avançados do servidor Solr forem usados por meio de uma abordagem baseada em crawler, será necessário um trabalho de configuração adicional.
 
 O lado negativo para adotar essa abordagem é que, embora por padrão, as consultas AEM respeitarão as ACLs e, portanto, ocultarão resultados aos quais um usuário não tem acesso, a externalização da pesquisa para um servidor Solr não oferecerá suporte a esse recurso. Para que a pesquisa seja externalizada dessa forma, é necessário ter cuidado para garantir que os usuários não sejam apresentados com resultados que não devem ver.
 
