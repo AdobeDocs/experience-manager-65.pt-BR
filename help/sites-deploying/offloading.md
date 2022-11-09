@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 08a6777bf1ff3abf62f45fe1e164ef2027996848
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2364'
 ht-degree: 1%
 
 ---
@@ -237,7 +237,7 @@ A estrutura de descarregamento usa a replicação para transportar recursos entr
 
 >[!CAUTION]
 >
->Um problema conhecido com os agentes de replicação gerados automaticamente requer a criação manual de novos agentes de replicação. Siga o procedimento em [Problemas ao usar os agentes de replicação gerados automaticamente](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) antes de criar os agentes para Descarregamento.
+>Um problema conhecido com os agentes de replicação gerados automaticamente requer a criação manual de novos agentes de replicação.
 
 Crie os agentes de replicação que transportam cargas de trabalho entre instâncias para descarregamento. A ilustração a seguir mostra os agentes necessários para descarregar do autor para uma instância de trabalho. O autor tem uma ID do Sling de 1 e a instância do trabalhador tem uma ID do Sling de 2:
 
