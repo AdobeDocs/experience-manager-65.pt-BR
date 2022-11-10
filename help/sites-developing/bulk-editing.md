@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '414'
 ht-degree: 7%
 
 ---
@@ -65,7 +65,7 @@ Os campos são ativados no componente página (*not* no modelo):
 
    >[!NOTE]
    >
-   >Esse exemplo assume que os Componentes principais foram instalados na instância, o que é o caso se a instância estiver em execução com conteúdo de amostra We.Retail. Consulte a [Documentação dos Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) para obter mais informações.
+   >Esse exemplo assume que os Componentes principais foram instalados na instância, o que é o caso se a instância estiver em execução com conteúdo de amostra We.Retail. Consulte a [Documentação dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) para obter mais informações.
 
 1. Navegue até o campo desejado dentro da variável `cq:dialog` definição.
 1. Defina a seguinte propriedade no nó field :

@@ -13,10 +13,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '7362'
-ht-degree: 83%
+source-wordcount: '7272'
+ht-degree: 80%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 83%
 >
 >A maioria dos componentes fundamentais agora está obsoleta com o AEM 6.5. Consulte o [notas de versão](/help/release-notes/deprecated-removed-features.md) para obter mais informações.
 >
->A Adobe recomenda aproveitar os [componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) mais modernos e extensíveis em projetos do AEM. Eles fazem parte do [Conteúdo de amostra We.Retail](/help/sites-developing/we-retail.md) e também pode [instalados separadamente e utilizados para o desenvolvimento](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/get-started/using.html) pelo administrador.
+>A Adobe recomenda aproveitar os [componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) mais modernos e extensíveis em projetos do AEM. Eles fazem parte do [Conteúdo de amostra We.Retail](/help/sites-developing/we-retail.md) e também pode [instalados separadamente e utilizados para o desenvolvimento](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html) pelo administrador.
 >
 >Você pode usar o [Conjunto de ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/) para redefinir o site baseado em componentes básicos para usar os Componentes principais.
 
@@ -65,7 +65,7 @@ Os componentes Gerais são os componentes básicos usados na criação de conte�
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 Você pode definir um link com título e descrição.
 
@@ -75,7 +75,7 @@ Você pode definir um link com título e descrição.
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de imagem](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/image.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR) em vez disso.
 
 O componente de base da Imagem adaptativa gera imagens que são dimensionadas para caber na janela na qual a página da Web está aberta. Para usar o componente, você fornece um recurso de imagem do sistema de arquivos ou DAM. Quando a página da Web está aberta, o navegador baixa uma cópia da imagem que foi redimensionada para que seja adequada à janela atual.
 
@@ -152,7 +152,7 @@ Para obter informações sobre como personalizar o componente Imagem adaptativa,
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [componente principal do carrossel](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/carousel.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [componente principal do carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt_BR) em vez disso.
 
 O componente Carrossel permite exibir imagens associadas a páginas individuais:
 
@@ -213,7 +213,7 @@ Selecionar
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 O componente Gráfico permite que você adicione um gráfico de barras, de linhas o de pizza. O AEM cria um gráfico a partir dos dados fornecidos. Você fornece os dados, digitando diretamente na guia de Dados ou copiando e colando em uma planilha.
 
@@ -244,7 +244,7 @@ O exemplo a seguir mostra um gráfico de dados seguido pelo gráfico de barras r
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de fragmento de conteúdo](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/content-fragment-component.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR) em vez disso.
 
 Os [Fragmentos de conteúdo](/help/sites-authoring/content-fragments.md) são criados e gerenciados como ativos independentes da página. Em seguida, é possível usar estes fragmentos e suas variações ao criar suas páginas de conteúdo.
 
@@ -252,7 +252,7 @@ Os [Fragmentos de conteúdo](/help/sites-authoring/content-fragments.md) são cr
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 Isso permite fazer upload de um arquivo zip com um pacote de design.
 
@@ -260,7 +260,7 @@ Isso permite fazer upload de um arquivo zip com um pacote de design.
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 O componente de download cria um link na página da Web selecionada para baixar um arquivo específico. Você pode arrastar um ativo do Localizador de conteúdo ou fazer o upload de um arquivo.
 
@@ -279,7 +279,7 @@ O exemplo a seguir mostra o componente de Download no Geometrixx:
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 O componente externo de integração do aplicativo (**Externo**) permite que você incorpore aplicativos externos na página do AEM usando um iframe.
 
@@ -308,7 +308,7 @@ O aplicativo externo é integrado ao sistema de parágrafo da página de AEM; po
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 >[!CAUTION]
 >
@@ -356,7 +356,7 @@ O componente Flash permite que você carregue um filme em Flash. Você pode arra
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de imagem](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) em vez disso.
 
 O componente de imagem exibe uma imagem e texto respectivo de acordo com os parâmetros especificados.
 
@@ -442,13 +442,13 @@ Este componente fornece um sistema de parágrafo que usa grades, para que você 
 
 >[!NOTE]
 >
->Este componente foi implementado com [Linguagem do modelo HTML (HTL)](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html).
+>Este componente foi implementado com [Linguagem do modelo HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
 
 ### Lista {#list}
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de lista](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/list.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) em vez disso.
 
 O componente de Lista permite que você configure os critérios de pesquisa para a exibição de uma lista:
 
@@ -522,7 +522,7 @@ O exemplo a seguir mostra um componente de **Lista** da forma que ele poderá ex
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 >[!CAUTION]
 >
@@ -588,7 +588,7 @@ Fornece os campos Nome de usuário e Senha.
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de fragmento de conteúdo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) em vez disso.
 
 O componente de **referência** permite referenciar o texto em outra página do site AEM (dentro da ocorrência atual). O conteúdo do parágrafo referenciado aparecerá como se fosse na página atual. O conteúdo será atualizado quando o parágrafo de origem for alterado (pode ser necessário uma atualização de página).
 
@@ -622,7 +622,7 @@ Uma vez configurado, o conteúdo será exibido exatamente como na página de ori
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de pesquisa rápida](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/quick-search.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de pesquisa rápida](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/quick-search.html) em vez disso.
 
 O componente de pesquisa adiciona o recurso de pesquisa à sua página.
 
@@ -691,7 +691,7 @@ O exemplo a seguir mostra um termo de pesquisa escrito incorretamente e não est
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da variável [Navegação](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/navigation.html), [Navegação de idiomas](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/language-navigation.html)e [Componentes principais da navegação estrutural](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/breadcrumb.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da variável [Navegação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html), [Navegação de idiomas](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/language-navigation.html)e [Componentes principais da navegação estrutural](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/breadcrumb.html) em vez disso.
 
 Uma lista de mapa do site automático, que (com as configurações padrão) lista todas as páginas (como links ativos) no site atual. Por exemplo, uma extração mostra:
 
@@ -709,7 +709,7 @@ Se necessário, é possível configurar:
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [componente principal do carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt_BR) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [componente principal do carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html) em vez disso.
 
 >[!CAUTION]
 >
@@ -743,7 +743,7 @@ O componente de slideshow exibe repetidamente em cada sequência, durante um cur
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de Texto](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/text.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) em vez disso.
 
 >[!NOTE]
 >
@@ -792,7 +792,7 @@ Para obter mais informações sobre como aplicar tags, acesse [Usando tags ](/he
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de Texto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) em vez disso.
 
 >[!NOTE]
 >
@@ -821,7 +821,7 @@ Além do texto da caixa de diálogo baseada no modo de edição de Rich Text, o 
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da [Imagem](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) e do [Componente principal de Texto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento da [Imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) e do [Componente principal de Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) em vez disso.
 
 O componente de Texto e Imagem adiciona um bloco de texto e uma imagem. Você também pode adicionar e editar texto e imagens separadamente. Consulte os componentes [Texto](#text) e [Imagem](#image) para obter detalhes.
 
@@ -869,7 +869,7 @@ O exemplo a seguir mostra um componente de Imagem de texto exibindo a imagem ali
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o uso do [Componente principal de título](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o uso do [Componente principal de título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=en) em vez disso.
 
 O componente de título pode:
 
@@ -959,7 +959,7 @@ O componente de Controle de coluna permite que os usuários escolham como dividi
 
 >[!CAUTION]
 >
->O componente fundamental dos componentes foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>O componente fundamental dos componentes foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 Os componentes do formulário são usados &#x200B;&#x200B;para criar formulários para os visitantes enviarem informações. Os formulários e os componentes do formulário podem ser usado para coletar informações, incluindo o feedback do usuário (por exemplo, um questionário de satisfação do cliente) e as informações do usuário (por exemplo, o registro do usuário).
 
@@ -1079,7 +1079,7 @@ Este é um campo obrigatório e deve conter apenas os seguintes caracteres:
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal do Contêiner de formulário](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/forms/form-container.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal do Contêiner de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html) em vez disso.
 
 O componente Formulário define o início e o final de um formulário usando os elementos **Início do formulário** e **Fim do formulário**. São sempre pareados para garantir que o formulário esteja definido corretamente.
 
@@ -1089,7 +1089,7 @@ Entre o início e o fim de um formulário, você pode adicionar componentes do f
 
 >[!NOTE]
 >
->O componente de formulário dos componentes fundamentais suporta somente o uso de outros componentes de formulário dos componente fundamentais (botão, texto, oculto etc.). Não há suporte para o uso de componentes de formulário dos [componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em um formulário de componente fundamental (e vice-versa).
+>O componente de formulário dos componentes fundamentais suporta somente o uso de outros componentes de formulário dos componente fundamentais (botão, texto, oculto etc.). Não há suporte para o uso de componentes de formulário dos [componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em um formulário de componente fundamental (e vice-versa).
 
 #### Início do formulário {#start-of-form}
 
@@ -1307,7 +1307,7 @@ Isso marca o fim do formulário. É possível configurar:
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal do Texto de formulário](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/forms/form-text.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal do Texto de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html) em vez disso.
 
 Isso permite que você insira um nome de conta:
 
@@ -1317,7 +1317,7 @@ Isso permite que você insira um nome de conta:
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal do Texto de formulário](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal do Texto de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html) em vez disso.
 
 Isso permite que você adicione um campo de endereço internacional, com o seguinte formato:
 
@@ -1329,7 +1329,7 @@ O componente está configurado para uso imediato, mas é possível alterar a con
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 >[!CAUTION]
 >
@@ -1345,7 +1345,7 @@ Você pode configurar vários parâmetros para este componente, incluindo uma me
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de opções de formulário](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/forms/form-options.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de opções de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-options.html) em vez disso.
 
 Uma caixa de seleção permite que você crie uma lista de uma ou mais caixas de seleção, algumas das quais, podem ser selecionadas ao mesmo tempo.
 
@@ -1363,7 +1363,7 @@ Uma caixa de seleção permite que você crie uma lista de uma ou mais caixas de
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 Isso permite fornecer os campos necessários para inserir os detalhes do cartão de crédito. Você pode configurá-lo para especificar os tipos de cartão aceitos e as informações necessárias (por exemplo, código de segurança).
 
@@ -1373,7 +1373,7 @@ Isso permite fornecer os campos necessários para inserir os detalhes do cartão
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de opções de formulário](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de opções de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-options.html) em vez disso.
 
 Uma lista suspensa pode ser configurada para fornecer ao usuário um intervalo de valores para a seleção:
 
@@ -1391,7 +1391,7 @@ Uma lista suspensa pode ser configurada para fornecer ao usuário um intervalo d
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 O componente de upload de arquivos fornece ao usuário um mecanismo para selecionar e enviar um arquivo.
 
@@ -1405,7 +1405,7 @@ O componente de upload de arquivos fornece ao usuário um mecanismo para selecio
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente Principal do Formulário oculto](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/forms/form-hidden.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente Principal do Formulário oculto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-hidden.html) em vez disso.
 
 Esse componente permite a criação de um campo oculto. Estes podem ser utilizados para diversos fins; por exemplo, quando você precisa executar uma ação após enviar o formulário ou quando dados ocultos são necessários no processamento posterior. 
 
@@ -1421,7 +1421,7 @@ Esse componente permite a criação de um campo oculto. Estes podem ser utilizad
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal do botão de formulário](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/forms/form-button.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal do botão de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html) em vez disso.
 
 Um botão de imagem permite que você crie um botão com seu próprio texto e imagem:
 
@@ -1431,7 +1431,7 @@ Um botão de imagem permite que você crie um botão com seu próprio texto e im
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 O componente de upload da imagem fornece ao usuário um mecanismo para selecionar e enviar um arquivo de imagem.
 
@@ -1441,7 +1441,7 @@ O componente de upload da imagem fornece ao usuário um mecanismo para seleciona
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 O campo do link permite que o usuário especifique um URL:
 
@@ -1453,7 +1453,7 @@ Mais usado para o formulário de evento do calendário, onde é usado para o cam
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 Isso é usado para permitir ao usuário inserir a senha:
 
@@ -1463,7 +1463,7 @@ Isso é usado para permitir ao usuário inserir a senha:
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 Esse componente fornece ao usuário dois campos para:
 
@@ -1478,7 +1478,7 @@ Com as configurações padrão, o componente será exibido como:
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de opções de formulário](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal de opções de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-options.html) em vez disso.
 
 Um grupo radial fornece uma lista de uma ou mais caixas de seleção radial, onde apenas uma poderá ser selecionada em um determinado momento.
 
@@ -1496,7 +1496,7 @@ Um grupo radial fornece uma lista de uma ou mais caixas de seleção radial, ond
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal do botão de formulário](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal do botão de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html) em vez disso.
 
 Esse componente permite que você crie um botão de envio, com o texto padrão:
 
@@ -1510,7 +1510,7 @@ Ou o seu próprio texto:
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento dos [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) em vez disso.
 
 Esse campo permite que você selecione as tags:
 
@@ -1537,7 +1537,7 @@ Você pode especificar diversos parâmetros, incluindo os espaços de nomes que 
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal do Texto de formulário](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal do Texto de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html) em vez disso.
 
 O campo de texto padrão pode ser configurado no tamanho necessário e com o seu próprio lead na mensagem:
 
@@ -1547,7 +1547,7 @@ O campo de texto padrão pode ser configurado no tamanho necessário e com o seu
 
 >[!CAUTION]
 >
->Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal do botão de formulário](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html) em vez disso.
+>Este componente fundamental foi descontinuado. A Adobe recomenda o aproveitamento do [Componente principal do botão de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html) em vez disso.
 
 Esse componente permite que você crie um botão de envio para usar em um fluxo de trabalho.
 

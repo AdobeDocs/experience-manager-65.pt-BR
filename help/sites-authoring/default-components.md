@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '427'
 ht-degree: 97%
 
 ---
@@ -57,7 +57,7 @@ O console [Componentes](/help/sites-authoring/default-components-console.md) for
 
 As páginas a seguir fornecem links para algumas informações adicionais e importantes sobre os componentes:
 
-* [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) - Os componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
+* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) - Os componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
 
 * [Comunidades](/help/communities/author-communities.md) - Os componentes fornecem recursos interativos para um site, como fóruns e comentários. Muitos desses componentes são incluídos quando uma [Site da comunidade](/help/communities/overview.md) é criada.
 

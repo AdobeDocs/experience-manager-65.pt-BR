@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1528'
 ht-degree: 8%
 
 ---
@@ -87,7 +87,7 @@ Use o [Console da Web para configurar o pacote OSGi](/help/sites-deploying/confi
 >
 >Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM.
 >
->O [Plug-in do Activity Map fornecido pelo Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) deve ser usada.
+>O [Plug-in do Activity Map fornecido pelo Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=pt-BR) deve ser usada.
 
 ## Configuração para o Activity Map {#configuring-for-the-activity-map}
 
@@ -95,7 +95,7 @@ Use o [Console da Web para configurar o pacote OSGi](/help/sites-deploying/confi
 >
 >Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM.
 >
->O [Plug-in do Activity Map fornecido pelo Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) deve ser usada.
+>O [Plug-in do Activity Map fornecido pelo Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) deve ser usada.
 
 ## Criação de uma estrutura do Adobe Analytics {#creating-a-adobe-analytics-framework}
 
@@ -184,7 +184,7 @@ Os descendentes da página herdam a associação com a estrutura. Por exemplo, a
 1. Selecionar **Salvar e fechar**.
 1. **[Publicar](/help/sites-authoring/publishing-pages.md)** a página para ativar a página e quaisquer configurações/arquivos conectados.
 1. A etapa final é visitar a página na instância de publicação e procurar uma palavra-chave (por exemplo, beringela) usando a **Pesquisar** componente.
-1. Você pode verificar as chamadas feitas para o Adobe Analytics usando uma ferramenta apropriada; por exemplo, [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
+1. Você pode verificar as chamadas feitas para o Adobe Analytics usando uma ferramenta apropriada; por exemplo, [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 1. Usando o exemplo fornecido, a chamada deve conter o valor inserido (ou seja, beringela) no eVar 7 e a lista de eventos deve conter event3.
 
 ### Exibições da página {#page-views}

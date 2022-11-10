@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2234'
+source-wordcount: '2228'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Você combina um registro com um template de comunicação interativo para produ
 
 Para criar comunicação interativa a partir de registros salvos em um arquivo JSON:
 
-1. Crie um [Pasta assistida](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) e configure-a para usar a API em lote:
+1. Crie um [Pasta assistida](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) e configure-a para usar a API em lote:
    1. Faça logon na instância do autor do AEM Forms.
    1. Navegar para **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar pasta assistida]**. Toque **[!UICONTROL Novo]**.
    1. Especifique a **[!UICONTROL Nome]** e físico **[!UICONTROL Caminho]** da pasta. Por exemplo, `c:\batchprocessing`.
@@ -109,7 +109,7 @@ Para criar comunicação interativa a partir de registros salvos em um arquivo J
 
 #### Use dados de entrada salvos em uma fonte de dados externa e acessados pelo modelo de dados de formulário para produzir uma comunicação interativa {#use-fdm-as-data-source}
 
-Você combina dados (registros) salvos em uma fonte de dados externa com um template de comunicação interativo para produzir uma comunicação interativa. Ao criar uma comunicação interativa, você a conecta a uma fonte de dados externa por meio de um FDM (Form Data Model) para acessar os dados. Você pode configurar o serviço de processo em lote de pastas vigiadas para buscar dados usando o mesmo Modelo de dados de formulário de uma fonte de dados externa. Para [criar uma comunicação interativa a partir de registros salvos em uma fonte de dados externa](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
+Você combina dados (registros) salvos em uma fonte de dados externa com um template de comunicação interativo para produzir uma comunicação interativa. Ao criar uma comunicação interativa, você a conecta a uma fonte de dados externa por meio de um FDM (Form Data Model) para acessar os dados. Você pode configurar o serviço de processo em lote de pastas vigiadas para buscar dados usando o mesmo Modelo de dados de formulário de uma fonte de dados externa. Para [criar uma comunicação interativa a partir de registros salvos em uma fonte de dados externa](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
 
 1. Configure o Modelo de dados de formulário do modelo:
    1. Abra o Modelo de dados de formulário associado ao modelo de comunicação interativo.
@@ -141,7 +141,7 @@ Você combina dados (registros) salvos em uma fonte de dados externa com um temp
 
    1. Salve e feche o arquivo.
 
-1. Crie um [Pasta assistida](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) e configure-a para usar o serviço de API em lote:
+1. Crie um [Pasta assistida](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) e configure-a para usar o serviço de API em lote:
    1. Faça logon na instância do autor do AEM Forms.
    1. Navegar para **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar pasta assistida]**. Toque **[!UICONTROL Novo]**.
    1. Especifique a **[!UICONTROL Nome]** e físico **[!UICONTROL Caminho]** da pasta. Por exemplo, `c:\batchprocessing`.

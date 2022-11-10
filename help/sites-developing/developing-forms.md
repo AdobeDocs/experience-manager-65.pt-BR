@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: 4df14f837569997c3e4da8161ac2b099c39d89a6
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1940'
 ht-degree: 5%
 
 ---
@@ -40,7 +40,7 @@ Além de [desenvolvimento de novos componentes](/help/sites-developing/developin
 
 >[!NOTE]
 >
->Este documento se concentra no desenvolvimento de formulários usando o [Componentes básicos](/help/sites-authoring/default-components-foundation.md) na interface clássica. A Adobe recomenda o aproveitamento do novo [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) e [Ocultar Condições](/help/sites-developing/hide-conditions.md) para desenvolvimento de formulário na interface habilitada para toque.
+>Este documento se concentra no desenvolvimento de formulários usando o [Componentes básicos](/help/sites-authoring/default-components-foundation.md) na interface clássica. A Adobe recomenda o aproveitamento do novo [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Ocultar Condições](/help/sites-developing/hide-conditions.md) para desenvolvimento de formulário na interface habilitada para toque.
 
 ## Pré-carregar valores do formulário {#preloading-form-values}
 

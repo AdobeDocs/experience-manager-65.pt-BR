@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1751'
+source-wordcount: '1743'
 ht-degree: 2%
 
 ---
@@ -140,7 +140,7 @@ A tabela a seguir descreve as variáveis CQ padrão fornecidas para o método de
 
 1. Para mapear as variáveis CQ para as propriedades do Adobe Analytics, arraste as propriedades do Adobe Analytics do ContentFinder ao lado da variável CQ no componente.
 
-   Para obter informações sobre otimização de mapeamentos, consulte o [Avaliação de vídeo no Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guia.
+   Para obter informações sobre otimização de mapeamentos, consulte o [Avaliação de vídeo no Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) guia.
 
 1. [Adicionar a estrutura](/help/sites-administering/adobeanalytics.md) à página.
 1. Para testar a configuração em **Modo de visualização**, reproduza o vídeo para acionar chamadas do Adobe Analytics.
@@ -275,7 +275,7 @@ eventdata.events.milestoneXX
 
 1. Para mapear as variáveis CQ para as propriedades do Adobe Analytics, arraste as propriedades do Adobe Analytics do ContentFinder ao lado da variável CQ no componente.
 
-   Para obter informações sobre otimização de mapeamentos, consulte o [Avaliação de vídeo no Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guia.
+   Para obter informações sobre otimização de mapeamentos, consulte o [Avaliação de vídeo no Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) guia.
 
 1. [Adicionar a estrutura](/help/sites-administering/adobeanalytics.md) à página.
 1. Para testar a configuração em **Modo de visualização**, reproduza o vídeo para acionar chamadas do Adobe Analytics.
@@ -383,4 +383,4 @@ Ao usar o método** herdado seconds**, as chamadas do Adobe Analytics são acion
 
 **Referências usadas neste tutorial:**
 
-[0] [https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)

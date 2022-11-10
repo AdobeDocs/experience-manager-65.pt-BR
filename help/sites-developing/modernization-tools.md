@@ -6,9 +6,9 @@ seo-description: AEM Modernization Tools help you easily convert your legacy AEM
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 8865a641-fdac-43ab-b1c3-722f120cd749
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '87'
 ht-degree: 87%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 87%
 
 * [](page-templates-static.md)Modelos estáticos em modelos editáveis[](page-templates-editable.md)
 * [](page-templates-static.md)Configurações de design em políticas[](page-templates-editable.md)
-* [](/help/sites-authoring/default-components-foundation.md)Componentes de base para Componentes principais[](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
+* [](/help/sites-authoring/default-components-foundation.md)Componentes de base para Componentes principais[](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 * [](website.md)IU Clássica em IU ativada por toque[](touch-ui-concepts.md)
 
 Para mais informações sobre o uso dessas ferramentas, [consulte a documentação](https://opensource.adobe.com/aem-modernize-tools/).

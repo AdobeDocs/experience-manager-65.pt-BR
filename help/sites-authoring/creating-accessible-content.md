@@ -2,9 +2,9 @@
 title: Criação de conteúdo acessível para o Adobe Experience Manager (Conformidade com o WCAG 2.1)
 description: Use AEM para ajudar a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '13956'
+source-wordcount: '13950'
 ht-degree: 99%
 
 ---
@@ -66,11 +66,11 @@ Um benefício adicional útil é que as alternativas em texto permitem que o con
 
 #### Como cumprir - Conteúdo não textual (1.1.1)       {#how-to-meet-non-text-content}
 
-Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser feito no campo **Texto alternativo**. Por exemplo, veja o Componente principal **[Imagem](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/components/image.html)**.
+Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser feito no campo **Texto alternativo**. Por exemplo, veja o Componente principal **[Imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR)**.
 
 >[!NOTE]
 >
->Alguns Componentes principais predefinidos, como **[Carrossel](https://docs.adobe.com/content/help/pt/experience-manager-core-components/using/components/carousel.html)**, não fornecem um campo **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) para o componente inteiro.
+>Alguns Componentes principais predefinidos, como **[Carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt_BR)**, não fornecem um campo **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt_BR#accessibility-tab)**) para o componente inteiro.
 >
 >Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento precisará configurá-los para suportar o atributo `alt`, para que os autores possam adicioná-lo ao conteúdo (consulte [Adicionar suporte para elementos HTML e atributos adicionais](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 

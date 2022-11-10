@@ -11,10 +11,10 @@ topic-tags: introduction
 discoiquuid: 95346ce1-84b7-4bd1-a1e2-6a803139dc69
 docset: aem65
 exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 22%
+source-wordcount: '259'
+ht-degree: 18%
 
 ---
 
@@ -30,16 +30,16 @@ O objetivo deste tutorial de várias partes é ensinar um desenvolvedor novo a A
 
 ![WKND](assets/screen_shot_2018-11-23at152453.png)
 
-[O Tutorial do desenvolvedor da WKND está disponível aqui](https://docs.adobe.com/content/help/pt-BR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) e orienta você na criação de um projeto AEM usando as tecnologias e práticas recomendadas mais recentes.
+[O Tutorial do desenvolvedor da WKND está disponível aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) e orienta você na criação de um projeto AEM usando as tecnologias e práticas recomendadas mais recentes.
 
 ## Conceitos principais {#core-concepts}
 
 A implementação do tutorial aproveita muitos recursos avançados do AEM. O site será implementado usando:
 
-* [HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Modelos sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Interface de toque](/help/sites-developing/touch-ui-concepts.md)
-* [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
+* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 * [Modelos editáveis](/help/sites-developing/page-templates-editable.md)
 
 Prossiga com o tutorial antes de mergulhar detalhadamente nos conceitos acima.

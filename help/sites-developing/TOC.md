@@ -8,9 +8,9 @@ breadcrumb-title: Guia de desenvolvimento
 user-guide-description: Este guia aborda como criar sua instância no AEM.
 feature: Developing
 role: Developer
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1297'
 ht-degree: 37%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 37%
    + [Desenvolvimento do editor em massa](dev-bulk-editor.md)
    + [Desenvolvimento de relatórios](dev-reports.md)
 + Componentes{#components}
-   + [Componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html)
+   + [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
    + [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
    + [Visão geral dos componentes](components.md)
    + [Componentes AEM - Noções básicas](components-basics.md)

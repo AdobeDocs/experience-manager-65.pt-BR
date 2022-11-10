@@ -2,10 +2,10 @@
 title: Tag de decoração
 description: Quando um componente em uma página da Web é renderizado, um elemento HTML pode ser gerado, vinculando o componente renderizado dentro de si mesmo. Para desenvolvedores, o AEM oferece lógica simples e clara controlando as tags de decoração que envolvem componentes incluídos.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 10%
+source-wordcount: '876'
+ht-degree: 9%
 
 ---
 
@@ -62,7 +62,7 @@ O comportamento do invólucro também pode ser totalmente controlado.
 
 É possível controlar totalmente o comportamento das tags wrapper a partir de scripts HTL e sua lógica associada.
 
-Para obter mais informações sobre o desenvolvimento no HTL, consulte [Documentação do HTL](https://docs.adobe.com/content/help/pt-BR/experience-manager-htl/using/overview.html).
+Para obter mais informações sobre o desenvolvimento no HTL, consulte [Documentação do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
 
 #### Árvore de decisão {#decision-tree}
 

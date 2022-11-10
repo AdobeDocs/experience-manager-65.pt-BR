@@ -4,9 +4,9 @@ seo-title: Learn About AEM 6.5 Capabilities
 description: Descrição dos recursos essenciais do AEM 6.5
 seo-description: An description of the essential capabilities of AEM 6.5
 exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
-source-git-commit: 52385af23b04cda33a88ec42bb150650eb58fe4e
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '398'
 ht-degree: 29%
 
 ---
@@ -38,7 +38,7 @@ O AEM Forms combinam a criação, o gerenciamento e a publicação de formulári
 
 ## AEM Screens {#aem-screens}
 
-O Screens é um recurso do Adobe Experience Manager que permite publicar experiências e interações digitais dinâmicas e interativas envolvendo diferentes tipos de telas, juntamente com uma plataforma abrangente de marketing digital.  [Saiba mais.](https://docs.adobe.com/content/help/pt-BR/experience-manager-screens/user-guide/aem-screens-introduction.html)
+O Screens é um recurso do Adobe Experience Manager que permite publicar experiências e interações digitais dinâmicas e interativas envolvendo diferentes tipos de telas, juntamente com uma plataforma abrangente de marketing digital.  [Saiba mais.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=pt-BR)
 
 ## AEM Communities {#aem-communities}
 

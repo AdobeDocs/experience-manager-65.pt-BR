@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: bff078cd-c390-4870-ad1d-192807c67ca4
 docset: aem65
 exl-id: 92b62532-4f79-410d-903e-d2bca6d0fd1c
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1266'
 ht-degree: 3%
 
 ---
@@ -199,7 +199,7 @@ O script JSP desse componente gera chamadas para a API javascript do Target e im
 
 O arquivo mbox.js padrão usado para criar mboxes está localizado em /etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js. Para usar um arquivo mbox.js do cliente, adicione o arquivo à configuração de nuvem do Target. Para adicionar o arquivo, o arquivo mbox.js deve estar disponível no sistema de arquivos.
 
-Por exemplo, se você quiser usar a variável [Serviço de ID de Marketing Cloud](https://docs.adobe.com/content/help/en/id-service/using/home.html) você precisa baixar a mbox.js para que ela contenha o valor correto da variável `imsOrgID` , que é baseada no seu locatário. Essa variável é necessária para integrar com o serviço de ID do Marketing Cloud. Para obter mais informações, consulte [Adobe Analytics como fonte de relatórios do Adobe Target](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) e [Antes de implementar](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html).
+Por exemplo, se você quiser usar a variável [Serviço de ID de Marketing Cloud](https://experienceleague.adobe.com/docs/id-service/using/home.html) você precisa baixar a mbox.js para que ela contenha o valor correto da variável `imsOrgID` , que é baseada no seu locatário. Essa variável é necessária para integrar com o serviço de ID do Marketing Cloud. Para obter mais informações, consulte [Adobe Analytics como fonte de relatórios do Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) e [Antes de implementar](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html).
 
 >[!NOTE]
 >
@@ -235,7 +235,7 @@ Por exemplo, para desativar o direcionamento para os componentes de título das 
 >
 >Se você não estiver usando o DTM, envie a confirmação do pedido para a Adobe Target.
 
-Para rastrear o desempenho do seu site, envie informações de compra da página de confirmação de pedido para a Adobe Target. (Consulte [Criar uma mbox orderConfirmPage](https://docs.adobe.com/content/help/en/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) na documentação do Adobe Target.) A Adobe Target reconhece os dados da mbox como dados de confirmação de pedido quando o nome da MBox é `orderConfirmPage` e usa os seguintes nomes de parâmetro específicos:
+Para rastrear o desempenho do seu site, envie informações de compra da página de confirmação de pedido para a Adobe Target. (Consulte [Criar uma mbox orderConfirmPage](https://experienceleague.adobe.com/docs/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) na documentação do Adobe Target.) A Adobe Target reconhece os dados da mbox como dados de confirmação de pedido quando o nome da MBox é `orderConfirmPage` e usa os seguintes nomes de parâmetro específicos:
 
 * productPurchasedId: Uma lista de IDs que identificam os produtos comprados.
 * orderId: A ID do pedido.

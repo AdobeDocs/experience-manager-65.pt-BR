@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '4874'
+source-wordcount: '4872'
 ht-degree: 96%
 
 ---
@@ -604,7 +604,7 @@ Embora todo o conteúdo criado no modo **Estrutura** seja visível no **Conteúd
 >
 >O conteúdo inicial destina-se a preparar componentes e o layout de página que servem como ponto de partida para a criação do conteúdo. Não se destina a ser o conteúdo real que permaneceria intacto. Por esse motivo, o conteúdo inicial não pode ser traduzido.
 >
->Se você precisar incluir texto traduzível no modelo, como em cabeçalhos ou rodapés, poderá usar os recursos de [localização dos componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/get-started/localization.html).
+>Se você precisar incluir texto traduzível no modelo, como em cabeçalhos ou rodapés, poderá usar os recursos de [localização dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Editar um modelo - Layout - Autor do modelo {#editing-a-template-layout-template-author}
 

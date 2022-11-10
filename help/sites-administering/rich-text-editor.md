@@ -3,9 +3,9 @@ title: Configure o Editor de rich text para criar conteúdo no Adobe Experience 
 description: Saiba como configurar o Editor de Rich Text do Adobe Experience Manager para criar conteúdo no Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '3022'
+source-wordcount: '3020'
 ht-degree: 1%
 
 ---
@@ -181,9 +181,9 @@ Para obter configurações detalhadas dos plug-ins do RTE, consulte [como ativar
 
 >[!NOTE]
 >
->O [Componente de texto Componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) O permite que os editores de modelo configurem muitos plug-ins RTE em uma GUI como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário do RTE conforme descrito neste documento.
+>O [Componente de texto Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) O permite que os editores de modelo configurem muitos plug-ins RTE em uma GUI como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário do RTE conforme descrito neste documento.
 >
->Para obter mais informações, consulte o [Configurações da interface do usuário do RTE e políticas de conteúdo](/help/sites-administering/rich-text-editor.md) seção deste documento, bem como [Criação de modelos de página](/help/sites-authoring/templates.md) e [Documentação do desenvolvedor dos Componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html).
+>Para obter mais informações, consulte o [Configurações da interface do usuário do RTE e políticas de conteúdo](/help/sites-administering/rich-text-editor.md) seção deste documento, bem como [Criação de modelos de página](/help/sites-authoring/templates.md) e [Documentação do desenvolvedor dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >

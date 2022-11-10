@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Após executar essas etapas, seu aplicativo será ativado para relatar todas as 
 
 ### Instrumente seu código para o rastreamento completo do aplicativo {#instrument-your-code-for-full-app-tracking}
 
-Há várias APIs de rastreamento fornecidas no [API de plug-in do Phonegap do AMS.](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
+Há várias APIs de rastreamento fornecidas no [API de plug-in do Phonegap do AMS.](https://experienceleague.adobe.com/docs/mobile-services/ios/phonegap-ios/phonegap-methods.html)
 
 Isso permitirá rastrear estados e ações, como onde páginas os usuários estão navegando no aplicativo, quais controles estão sendo mais usados. A maneira mais fácil de instruir seu aplicativo para rastreamento é usar as APIs do Analytics fornecidas pelo plug-in do AMS.
 

@@ -10,10 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 9%
+source-wordcount: '536'
+ht-degree: 8%
 
 ---
 
@@ -78,7 +78,7 @@ A interface Modelo precisa ser anotada corretamente para definir quais métodos 
 
 ## Exemplo {#example}
 
-Os Componentes principais têm suporte para exportação JSON desde a versão [1.1.0 dos componentes principais](https://docs.adobe.com/content/help/pt-BR/experience-manager-core-components/using/introduction.html) e podem ser usadas como referência.
+Os Componentes principais têm suporte para exportação JSON desde a versão [1.1.0 dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e podem ser usadas como referência.
 
 Para obter um exemplo, consulte a implementação do Modelo do Sling do Componente principal de imagem e sua interface anotada.
 
@@ -98,4 +98,4 @@ Para obter mais detalhes, consulte:
 * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 * [Criação com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md)
 * [Exportador JSON para serviços de conteúdo](/help/sites-developing/json-exporter.md)
-* [Componentes principais](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) e [Componente do fragmento de conteúdo](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) e [Componente do fragmento de conteúdo](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
