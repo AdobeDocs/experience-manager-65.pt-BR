@@ -10,9 +10,9 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
 workflow-type: tm+mt
-source-wordcount: '4128'
+source-wordcount: '4165'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,10 @@ Para adicionar objetos e serviços do modelo de dados:
    ![objetos selecionados](assets/selected-objects.png)
 
    Objetos e serviços do modelo de dados selecionado
+
+   >[!NOTE]
+   >
+   > Se o Forms Data Model contiver um objeto que é uma palavra-chave reservada para seu banco de dados relacional, ele poderá levar a problemas de adição, atualização ou recuperação de dados. Portanto, evite usar esses objetos em seu Modelo de dados de formulário.
 
    A guia Modelo exibe uma representação gráfica de todos os objetos do modelo de dados e suas propriedades adicionadas ao modelo de dados do formulário. Cada objeto de modelo de dados é representado por uma caixa no modelo de dados de formulário.
 

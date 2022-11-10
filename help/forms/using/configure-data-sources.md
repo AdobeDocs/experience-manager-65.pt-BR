@@ -10,16 +10,16 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
 workflow-type: tm+mt
-source-wordcount: '2011'
+source-wordcount: '2042'
 ht-degree: 1%
 
 ---
 
 # Configurar fontes de dados{#configure-data-sources}
 
-![](do-not-localize/data-integeration.png)
+![Integração de dados](do-not-localize/data-integeration.png)
 
 A Integração de dados do AEM Forms permite configurar e se conectar a fontes de dados diferentes. Os seguintes tipos são suportados prontos para uso. No entanto, com pouca personalização, também é possível integrar outras fontes de dados.
 
@@ -35,7 +35,7 @@ A integração de dados oferece suporte aos tipos de autenticação OAuth2.0, Ba
 
 Você pode configurar bancos de dados relacionais usando AEM Configuração do Console da Web. Faça o seguinte:
 
-1. Vá para AEM console da Web em https://server:host/system/console/configMgr.
+1. Vá para AEM console da Web em `https://server:host/system/console/configMgr`.
 1. Procure por **[!UICONTROL Fonte de dados agrupada da conexão Apache Sling]** configuração. Toque em para abrir a configuração no modo de edição.
 1. Na caixa de diálogo de configuração, especifique os detalhes do banco de dados que deseja configurar, como:
 
@@ -49,14 +49,10 @@ Você pode configurar bancos de dados relacionais usando AEM Configuração do C
    >
    >Certifique-se de criptografar informações confidenciais como senhas antes de configurar a fonte de dados. Para criptografar:
    >
-   >    
-   >    
-   >    1. Vá para https://&#39;[server]:[porta]&#39;/system/console/crypto.
-   >    1. No **[!UICONTROL Texto sem formatação]** , especifique a senha ou qualquer string a ser criptografada e toque em **[!UICONTROL Protect]**.
+   > 1. Vá para https://&#39;[server]:[porta]&#39;/system/console/crypto.
+   > 1. No **[!UICONTROL Texto sem formatação]** , especifique a senha ou qualquer string a ser criptografada e toque em **[!UICONTROL Protect]**.
 
-   >    
-   >    
-   >    
+   >
    >O texto criptografado aparece no campo Texto protegido que pode ser especificado na configuração.
 
 1. Habilitar **[!UICONTROL Teste em linha de crédito]** ou **[!UICONTROL Testar no retorno]** para especificar que os objetos sejam validados antes de serem emprestados ou retornados de e para o pool, respectivamente.
@@ -67,13 +63,17 @@ Você pode configurar bancos de dados relacionais usando AEM Configuração do C
 
 1. Toque **[!UICONTROL Salvar]** para salvar a configuração.
 
+   >[!NOTE]
+   >
+   > Se o Forms Data Model contiver um objeto que é uma palavra-chave reservada para seu banco de dados relacional, ele poderá levar a problemas de adição, atualização ou recuperação de dados. Portanto, evite usar esses objetos em seu Modelo de dados de formulário.
+
 ## Configurar AEM perfil de usuário {#configure-aem-user-profile}
 
 Você pode configurar AEM perfil de usuário usando a configuração do Conector de perfil de usuário AEM console da Web. Faça o seguinte:
 
 1. Vá para AEM console da Web em https://&#39;[server]:[porta]&#39;system/console/configMgr.
 1. Procure por **[!UICONTROL Integrações de dados do AEM Forms - Configuração do conector do perfil de usuário]** e toque para abrir a configuração no modo de edição.
-1. Na caixa de diálogo Configuração do conector do perfil do usuário, é possível adicionar, remover ou atualizar as propriedades do perfil do usuário. As propriedades especificadas estarão disponíveis para uso no modelo de dados de formulário. Use o seguinte formato para especificar as propriedades do perfil de usuário:
+1. Na caixa de diálogo Configuração do conector do perfil do usuário, é possível adicionar, remover ou atualizar as propriedades do perfil do usuário. As propriedades especificadas estão disponíveis para uso no modelo de dados de formulário. Use o seguinte formato para especificar as propriedades do perfil de usuário:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -161,7 +161,6 @@ Execute as seguintes etapas para configurar o cliente HTTP do modelo de dados de
 
    * Especifique o período máximo de tempo para a inatividade entre dois pacotes de dados no **[!UICONTROL Tempo limite do soquete]** campo. O valor padrão é de 30 segundos.
 
-
 ## Configurar serviços Web SOAP {#configure-soap-web-services}
 
 Os serviços da Web baseados em SOAP são descritos usando [Especificações de WSDL (Web Services Description Language)](https://www.w3.org/TR/wsdl). Para configurar o serviço da Web baseado em SOAP nos serviços em nuvem do AEM, verifique se você tem o URL WSDL para o serviço da Web e faça o seguinte:
@@ -224,4 +223,4 @@ Ao habilitar a autenticação mútua para o modelo de dados de formulário, a fo
 
 ## Próximas etapas {#next-steps}
 
-As fontes de dados foram configuradas. Em seguida, é possível criar um modelo de dados de formulário ou, se já tiver criado um modelo de dados de formulário sem uma fonte de dados, associá-lo às fontes de dados recém-configuradas. Consulte [Criar modelo de dados de formulário](/help/forms/using/create-form-data-models.md) para obter detalhes.
+As fontes de dados foram configuradas. Em seguida, é possível criar um modelo de dados de formulário ou, se já tiver criado um modelo de dados de formulário sem uma fonte de dados, associá-lo às fontes de dados configuradas. Consulte [Criar modelo de dados de formulário](/help/forms/using/create-form-data-models.md) para obter detalhes.
