@@ -10,7 +10,7 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
+source-git-commit: 3b869153e0fdee08df2a4aaf73fe3ce9fbebaad7
 workflow-type: tm+mt
 source-wordcount: '2831'
 ht-degree: 10%
@@ -21,13 +21,10 @@ ht-degree: 10%
 
 Ao carregar imagens, você pode cortar automaticamente a imagem ao carregá-la aplicando um perfil de imagem à pasta.
 
->[!NOTE]
->
->O Recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
-
 >[!IMPORTANT]
 >
->Os perfis de imagem não se aplicam a arquivos PDF, GIF animado ou INDD (Adobe InDesign).
+>・ O recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
+・ Os perfis de imagem não se aplicam a arquivos PDF, GIF animado ou INDD (Adobe InDesign).
 
 ## Opções de corte {#crop-options}
 
@@ -58,8 +55,7 @@ Você tem duas opções de recorte de imagem que podem ser escolhidas. Você tam
 Use a **[!UICONTROL Tirar nitidez da máscara]** para ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida. Você pode controlar a intensidade do efeito, o raio do efeito (medido em pixels) e um limite de contraste que é ignorado. Esse efeito usa as mesmas opções da Adobe Photoshop *Tirar nitidez da máscara* filtro.
 
 >[!NOTE]
->
->A Tirar nitidez da máscara é aplicada apenas a representações baixadas dentro do PTIFF (tiff de pirâmide) que têm uma resolução reduzida de mais de 50%. Isso significa que as representações de maior tamanho dentro do ptiff não são afetadas pela máscara de nitidez, enquanto representações de menor tamanho, como miniaturas, são alteradas (e mostram a máscara de nitidez).
+A Tirar nitidez da máscara é aplicada apenas a representações baixadas dentro do PTIFF (tiff de pirâmide) que têm uma resolução reduzida de mais de 50%. Isso significa que as representações de maior tamanho dentro do ptiff não são afetadas pela máscara de nitidez, enquanto representações de menor tamanho, como miniaturas, são alteradas (e mostram a máscara de nitidez).
 
 Em **[!UICONTROL Tirar nitidez da máscara]**, você tem as seguintes opções de filtragem:
 
@@ -163,9 +159,8 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
 ## Editar o recorte inteligente ou a amostra inteligente de uma única imagem {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
->[!NOTE]
->
->O Recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
+>[!IMPORTANT]
+O recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
 
 Você pode realinhar ou redimensionar manualmente a janela de recorte inteligente de uma imagem para refinar ainda mais seu ponto focal.
 
