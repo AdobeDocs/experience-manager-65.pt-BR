@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 3b869153e0fdee08df2a4aaf73fe3ce9fbebaad7
+source-git-commit: 008a27c6a1c818a96a24dfcc7f5650409d31e7c2
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2835'
 ht-degree: 10%
 
 ---
@@ -23,16 +23,16 @@ Ao carregar imagens, você pode cortar automaticamente a imagem ao carregá-la a
 
 >[!IMPORTANT]
 >
->・ O recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
+>・ O Recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
 ・ Os perfis de imagem não se aplicam a arquivos PDF, GIF animado ou INDD (Adobe InDesign).
 
 ## Opções de corte {#crop-options}
 
 Quando você implementa o Recorte inteligente em imagens, o Adobe recomenda a seguinte prática recomendada e aplica o seguinte limite:
 
-| Tipo de limite | Prática recomendada | Limite imposto | Alteração do limite em 31 de dezembro de 2022 |
-| --- | --- | --- | --- |
-| Número de Recortes Inteligentes por imagem | 5 | 100 | 20 |
+| Tipo de limite | Prática recomendada | Limite imposto |
+| --- | --- | --- |
+| Número de Recortes Inteligentes por imagem | 5 | 100 |
 
 Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).
 
@@ -160,7 +160,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 ## Editar o recorte inteligente ou a amostra inteligente de uma única imagem {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-O recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
+・ O recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
 
 Você pode realinhar ou redimensionar manualmente a janela de recorte inteligente de uma imagem para refinar ainda mais seu ponto focal.
 
@@ -188,6 +188,9 @@ Consulte também [Editar o recorte inteligente ou a amostra inteligente de vári
 1. Ao lado do canto superior direito da página, selecione **[!UICONTROL Salvar]**, em seguida selecione **[!UICONTROL Fechar]** para retornar à pasta de ativos.
 
 ## Editar o recorte inteligente ou a amostra inteligente de várias imagens {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+・ O recorte inteligente está disponível somente no modo Dynamic Media - Scene7.
 
 Depois de aplicar um perfil de imagem - contendo o Recorte inteligente - a uma pasta, todas as imagens nessa pasta terão um recorte aplicado a elas. Se desejar, é possível *manualmente* realinhar ou redimensionar a janela de recorte inteligente em várias imagens para refinar ainda mais seu ponto focal.
 
