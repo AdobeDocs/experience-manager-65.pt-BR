@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 3a745e8255580778e30abaa72d7d0453e574f341
+source-git-commit: 420b7f83939aef548501b4676ddca1ec9fc2aa03
 workflow-type: tm+mt
-source-wordcount: '5531'
+source-wordcount: '5530'
 ht-degree: 2%
 
 ---
@@ -89,8 +89,7 @@ Antes de começar a instalar e configurar os serviços de documento da AEM Forms
 
 ### Requisitos adicionais para o sistema operacional baseado em UNIX {#extrarequirements}
 
-Se você estiver usando um sistema operacional baseado em UNIX, instale os seguintes pacotes de versão de 32 bits da mídia de instalação do respectivo sistema operacional:
-
+Se você estiver usando um sistema operacional baseado em UNIX, instale os seguintes pacotes de 32 bits da mídia de instalação do respectivo sistema operacional:
 <table>
  <tbody>
   <tr>
