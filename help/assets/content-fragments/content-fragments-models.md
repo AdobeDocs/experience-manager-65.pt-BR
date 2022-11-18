@@ -4,9 +4,9 @@ description: Saiba como os Modelos de fragmentos de conteúdo servem como base p
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: 9b3e30f7523ff86fd1ed1b5fc55ce22b8e9f3429
+source-git-commit: 6b9eb1a6df7cc4a8afab1c83d93d8a53bd94f6f5
 workflow-type: tm+mt
-source-wordcount: '2338'
+source-wordcount: '2332'
 ht-degree: 95%
 
 ---
@@ -19,7 +19,7 @@ Para usar modelos de fragmento de conteúdo, você pode:
 
 1. [Ativar a funcionalidade de modelo de fragmento de conteúdo para sua instância](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Criar](#creating-a-content-fragment-model) e [configurar](#defining-your-content-fragment-model) os modelos de fragmento de conteúdo
-1. [Ativar os modelos de fragmento de conteúdo](#enabling-disabling-a-content-fragment-model) para uso ao criar fragmentos de conteúdo
+1. [Ativar os modelos de fragmento de conteúdo](#enabling-disabling-a-content-fragment-model) para uso ao criar Fragmentos de conteúdo
 1. [Autorizar os modelos de fragmento de conteúdo nas pastas de ativos necessárias](#allowing-content-fragment-models-assets-folder) ao configurar as **Políticas**.
 
 ## Criação de um modelo de fragmento de conteúdo {#creating-a-content-fragment-model}
