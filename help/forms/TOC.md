@@ -8,9 +8,9 @@ user-guide-title: Guia do Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
-source-git-commit: 55e9344c088a38bc4c9f916a13c310a029b3b2f4
+source-git-commit: 43a1cff0d7c2fe1d25e41cff3d02d1a55e6792c5
 workflow-type: tm+mt
-source-wordcount: '3819'
+source-wordcount: '3824'
 ht-degree: 4%
 
 ---
@@ -686,6 +686,7 @@ ht-degree: 4%
    + [Etapas adicionais para obter o email com anexo para a versão adaptável do Forms no JEE](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
    + [Não é possível converter o arquivo do Word ou Excel para o PDF no Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
    + [Não é possível abrir o PDF forms baseado em XFA no Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer ou Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
+   + [Não é possível restaurar o Repositório CRX](/help/forms/using/restore-crx-repository.md)
 + Documentação herdada {#legacy-documentation}
    + [Uso do serviço de script de execução no AEM Forms no JEE Workbench para criar dados XML](developing/building-xml.md)
    + [Compactar e descompactar arquivos usando uma AEM Forms no JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
