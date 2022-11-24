@@ -4,10 +4,10 @@ description: Saiba como visualizar facilmente a representação em JSON dos frag
 feature: Content Fragments
 role: User
 exl-id: c58a3cfd-6348-4a2e-996a-5fdb96415adb
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 88%
+source-wordcount: '113'
+ht-degree: 100%
 
 ---
 
@@ -23,4 +23,6 @@ Ao usar o ícone **Visualizar**:
 
 ![Editor de fragmento do conteúdo — Visualização de um fragmento](assets/cfm-preview-02.png)
 
-**Copiar URL** permite copiar para a área de transferência o URL do autor ou da publicação.
+<!--
+**Copy URL** allows you to copy to clipboard the URL for either author or publish.
+-->

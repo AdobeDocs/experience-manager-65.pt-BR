@@ -4,10 +4,10 @@ description: Entenda como as variações podem tornar o conteúdo sem interface 
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '2256'
-ht-degree: 95%
+source-wordcount: '2426'
+ht-degree: 87%
 
 ---
 
@@ -45,19 +45,32 @@ Ao abrir o fragmento de conteúdo para edição, a guia **Variações** será ab
 Por exemplo:
 
 ![editor de tela cheia](assets/cfm-variations-02.png)
+
 É possível:
 
-* fazer edições diretamente na guia **Variações**
+* Faça edições no seu conteúdo diretamente no **Variações** Guia; cada tipo de dados fornece opções de edição diferentes, por exemplo:
 
-   * cada tipo de dados fornece opções de edição diferentes
+   * para campos de **Texto multilinha**, também é possível abrir o [editor de tela cheia](#full-screen-editor) para:
 
-* para campos de **Texto multilinha**, também é possível abrir o [editor de tela cheia](#full-screen-editor) para:
+      * selecionar o [Formato](#formats)
+      * ver mais opções de edição (para formato [Rich text](#rich-text))
+      * acessar uma variedade de [ações](#actions)
+   * Para campos de **Referência do fragmento**, a opção [Editar fragmento de conteúdo](#fragment-references-edit-content-fragment) pode estar disponível, dependendo da definição do modelo.
 
-   * selecionar o [Formato](#formats)
-   * ver mais opções de edição (para formato [Rich text](#rich-text))
-   * acessar uma variedade de [ações](#actions)
 
-* Para campos de **Referência do fragmento**, a opção **[Editar fragmento de conteúdo](#fragment-references-edit-content-fragment)** pode estar disponível, dependendo da definição do modelo.
+* Atribuir **Tags** à variação atual; as tags podem ser adicionadas, atualizadas e removidas
+
+   * As [Tags](/help/sites-authoring/tags.md) são particularmente eficientes ao organizar os fragmentos, pois podem ser usadas para a classificação de conteúdo e taxonomia. As tags podem ser usadas para encontrar conteúdo (por tags) e aplicar operações em massa.
+
+      * As pesquisas por uma tag retornarão o fragmento, com a variação marcada realçada.
+      * Tags de variação também podem ser usadas para agrupar variações de um perfil específico da Rede de entrega de conteúdo (CDN) (para armazenamento em cache CDN), em vez de usar o nome da variação.
+
+      Por exemplo, você pode marcar fragmentos relevantes como &quot;lançamento de Natal&quot; para permitir a navegação somente nesses como um subconjunto ou copiá-los para uso com outro lançamento futuro em uma nova pasta.
+   >[!NOTE]
+   >
+   >**Tags** também pode ser adicionado (para a função **Principal** como parte da [Metadados](/help/assets/content-fragments/content-fragments-metadata.md)
+
+* [Criar e gerenciar variações](#managing-variations) do conteúdo **Principal.**
 
 ### Editor de tela cheia {#full-screen-editor}
 
@@ -389,6 +402,9 @@ Para criar uma nova variação:
    >[!NOTE]
    Ao criar uma nova variação, é sempre o **Principal** que é copiado, não a variação que está aberta no momento.
 
+   >[!NOTE]
+   Ao criar uma nova variação, todas as variáveis **Tags** atualmente atribuído ao **Principal** são copiadas para sua nova variação.
+
 ### Editar uma variação {#editing-a-variation}
 
 Você pode fazer alterações no conteúdo de variação após:
@@ -435,7 +451,7 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 >[!CAUTION]
 A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
 Somente o elemento atual da variação será sincronizado.
-A sincronização só funciona no tipo de dados **Texto de várias linhas**.
+A sincronização só funciona na variável **Texto de várias linhas** tipo de dados.
 A transferência de alterações *de uma variação para o **Principal*** não está disponível como uma opção.
 
 <!-- needs new screenshot for synchronize effect -->
@@ -460,4 +476,4 @@ A transferência de alterações *de uma variação para o **Principal*** não e
 
    ![sincronização com o Principal](assets/cfm-variations-11c.png)
 
-1. Selecione **Sincronizar**. A variação será atualizada e mostrada.
+1. Selecionar **Sincronizar**, a variação será atualizada e exibida.
