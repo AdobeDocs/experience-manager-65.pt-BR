@@ -2,7 +2,7 @@
 title: Expiração dos certificados de extensões Reader e seu impacto
 description: Expiração dos certificados de extensões Reader e seu impacto
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: f35a35577f06686558bb1277b0d9bb17f6f0b7bf
+source-git-commit: bcbfdcd305b7319506a11677909895c38f92a6cf
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 2%
@@ -27,7 +27,9 @@ Todos os documentos do PDF, Reader estendidos usando os certificados mais antigo
 A. CA raiz Adobe é a autoridade de certificação da qual um certificado de extensões Acrobat Reader é emitido. Em 7 de janeiro de 2023, &quot;Adobe Root CA&quot; e todos os certificados emitidos a partir dele estão expirando.
 
 **P. Houve uma comunicação anterior do Adobe sobre a expiração dos certificados e o impacto na utilização/abertura de documentos do PDF. Essa comunicação deveria ser ignorada?**
-A. Com base na reavaliação da situação, todos os documentos de PDF estendidos por meio de certificados de produção emitidos pela antiga &quot;Adobe Root CA&quot; antes de 7 de janeiro de 2023 continuam a funcionar sem qualquer alteração após 7 de janeiro de 2023. Se você já atualizou suas PDF, não haverá mudança na experiência
+
+A. Com base na reavaliação da situação, todos os documentos de PDF estendidos por meio de certificados de produção emitidos pela antiga &quot;Adobe Root CA&quot; antes de 7 de janeiro de 2023 continuam a funcionar sem qualquer alteração após 7 de janeiro de 2023. Se você já atualizou suas PDF, não haverá alteração na experiência.
+
 
 **P. Com quem devo entrar em contato se tiver perguntas adicionais?**
 
