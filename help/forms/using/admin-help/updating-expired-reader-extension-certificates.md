@@ -2,9 +2,9 @@
 title: Expiração dos certificados de extensões Reader e seu impacto
 description: Expiração dos certificados de extensões Reader e seu impacto
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: bbc8fdf2eb7dd35600e2e2a87550e9de557f0eb0
+source-git-commit: f35a35577f06686558bb1277b0d9bb17f6f0b7bf
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1114'
 ht-degree: 2%
 
 ---
@@ -26,9 +26,8 @@ Todos os documentos do PDF, Reader estendidos usando os certificados mais antigo
 
 A. CA raiz Adobe é a autoridade de certificação da qual um certificado de extensões Acrobat Reader é emitido. Em 7 de janeiro de 2023, &quot;Adobe Root CA&quot; e todos os certificados emitidos a partir dele estão expirando.
 
-**P. Houve uma comunicação anterior do Adobe sobre a expiração dos certificados e o impacto sobre o uso/abertura de PDF? Essa comunicação deveria ser ignorada?**
-A. Com base na reavaliação da situação, todos os documentos de PDF estendidos por meio de certificados de produção emitidos pela antiga &quot;CA Adobe Root&quot; antes de 7 de janeiro de 2023 continuam a funcionar sem qualquer alteração após 7 de janeiro de 2023. Se você já atualizou suas PDF, não haverá mudança na experiência
-
+**P. Houve uma comunicação anterior do Adobe sobre a expiração dos certificados e o impacto na utilização/abertura de documentos do PDF. Essa comunicação deveria ser ignorada?**
+A. Com base na reavaliação da situação, todos os documentos de PDF estendidos por meio de certificados de produção emitidos pela antiga &quot;Adobe Root CA&quot; antes de 7 de janeiro de 2023 continuam a funcionar sem qualquer alteração após 7 de janeiro de 2023. Se você já atualizou suas PDF, não haverá mudança na experiência
 
 **P. Com quem devo entrar em contato se tiver perguntas adicionais?**
 
@@ -46,9 +45,9 @@ A. A descrição dos novos certificados de Extensões do Acrobat Reader menciona
 
 A. Todos os clientes da Forms qualificados (com licença ativa) podem baixar os novos certificados (certificados baseados em &quot;Adobe Root CA G2&quot;) da [Site de licenciamento de Adobe](https://licensing.adobe.com/). Se você não conseguir encontrar o certificado no site de licenciamento do Adobe, entre em contato com [Suporte a Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support) ou crie um tíquete de suporte.
 
-**P. Meus documentos de PDF estendidos usando certificados emitidos do &#39;Adobe Root CA&#39; (antiga autoridade de certificação) continuam a funcionar após 7 de janeiro de 2023?**
+**P. Meus documentos de PDF estendidos usando certificados emitidos do &quot;Adobe Root CA&quot; (a antiga autoridade de certificação) continuam a funcionar após 7 de janeiro de 2023?**
 
-R. Sim, todos os documentos de PDF estendidos usando certificados de produção emitidos a partir do &#39;Adobe Root CA&#39; (antiga autoridade de certificação) antes de 7 de janeiro de 2023 continuam a funcionar sem qualquer alteração após 7 de janeiro de 2023. Os documentos de PDF estendidos com certificados de avaliação não funcionam após a data de expiração.
+R. Sim, todos os documentos de PDF estendidos usando certificados de produção emitidos da &quot;autoridade de certificação Adobe Root&quot; (antiga autoridade de certificação) antes de 7 de janeiro de 2023 continuam a funcionar sem qualquer alteração após 7 de janeiro de 2023. Os documentos de PDF estendidos com certificados de avaliação não funcionam após a data de expiração.
 
 **P. Qual versão do Adobe Acrobat Reader é necessária para continuar usando documentos PDF estendidos com certificados emitidos de &quot;Adobe Root CA&quot; (a antiga autoridade de certificação)?**
 
@@ -70,7 +69,7 @@ R. Sim, você pode manter ambos os certificados, mas com aliases diferentes, em 
 
 R. Sim, o mesmo certificado de extensões do Acrobat Reader pode ser usado em vários ambientes.
 
-**P. Como faço para verificar os direitos de uso aplicados em um documento do PDF?**
+**P. Como faço para verificar os direitos de uso aplicados a um documento do PDF?**
 
 A. Você pode usar o [getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) API para recuperar as informações sobre os direitos de uso aplicados a um documento do PDF.
 
