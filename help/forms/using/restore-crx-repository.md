@@ -2,9 +2,9 @@
 title: Não é possível restaurar o repositório CRX corrompido aplicável ao servidor de cluster JEE
 description: Etapas para restaurar o repositório CRX corrompido
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
-source-git-commit: cf034e8765317ee022aad4693ced37c3fa793ff2
+source-git-commit: c4f776b08cb8cc8c6eea78a3757735e063bec20c
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '179'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Execute as seguintes etapas para resolver o problema:
 
 1. Localize a variável `oak-core` e verifique se está em execução.
 
-1. Reinicie o `oak-core` pacote se não estiver em execução. If  ![Botão Pausar](/help/forms/using/assets/stop.png) está presente na frente do `oak-core` , então indica que o pacote está no estado de execução.
+1. Reinicie o `oak-core` pacote se não estiver em execução. If  ![Botão Pausar](/help/forms/using/assets/stop.png) está presente na frente do `oak-core` , então indica que o pacote está em estado de execução.
 
 1. Se o problema ainda não for resolvido, restaure a partir do repositório CRX a partir do backup ou recrie o repositório CRX se o backup não estiver disponível.
 
@@ -35,4 +35,4 @@ Execute as seguintes etapas para resolver o problema:
 
 Esta solução se aplica a:
 
-* AEM Forms no ambiente de cluster JEE
+* AEM Forms no cluster JEE
