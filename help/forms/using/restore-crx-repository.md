@@ -1,10 +1,11 @@
 ---
 title: Não é possível restaurar o repositório CRX corrompido aplicável ao servidor de cluster JEE
 description: Etapas para restaurar o repositório CRX corrompido
-source-git-commit: a7d125503b0bd3c52cb3a959e2f0dde1a69cbe2b
+exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
+source-git-commit: cf034e8765317ee022aad4693ced37c3fa793ff2
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 1%
+source-wordcount: '182'
+ht-degree: 2%
 
 ---
 
@@ -12,27 +13,26 @@ ht-degree: 1%
 
 ## Problema {#issue}
 
-Para o AEM Forms implantado no JEE com persistência de RDB, é necessário que as máquinas de host e máquinas de banco de dados do AEM Forms estejam em sincronização de tempo absoluto. No entanto, se por algum motivo os relógios saírem da sincronização, o repositório CRX será corrompido e seus URLs ficarão inacessíveis. O erro como `AuthenticationsupportService missing` ocorre em arquivos de log.
+Para o AEM Forms no JEE que usa um banco de dados relacional, o tempo no computador que hospeda o AEM Forms e o banco de dados relacional sempre devem estar em sincronização absoluta. Se o tempo nessas máquinas ficar fora de sincronia, o repositório CRX do AEM Forms no servidor JEE pode se tornar inacessível. Ele pode parecer corrompido e se tornar inacessível via URL. O `AuthenticationsupportService missing` está registrado.
+
+## Pré-requisitos {#prerequisites}
+
+Faça o backup do seu repositório CRX antes de executar as etapas abaixo mencionadas.
 
 ## Solução {#solution}
 
 Execute as seguintes etapas para resolver o problema:
-1. Ir para  [https://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
+1. Ir para  `https://[AEM Forms Server]:[port]/system/console/bundles`.
 
 1. Localize a variável `oak-core` e verifique se está em execução.
 
-1. Reinicie o `oak-core` pacote se não estiver em execução. Se o botão pausar estiver presente na frente do `oak-core` , então indica que o pacote está em estado de execução.
+1. Reinicie o `oak-core` pacote se não estiver em execução. If  ![Botão Pausar](/help/forms/using/assets/stop.png) está presente na frente do `oak-core` , então indica que o pacote está no estado de execução.
 
 1. Se o problema ainda não for resolvido, restaure a partir do repositório CRX a partir do backup ou recrie o repositório CRX se o backup não estiver disponível.
 
-   >[!NOTE]
-   >
-   >Faça o backup do seu repositório CRX antes de executar as etapas acima.
 
 ## Aplica-se a {#applies-to}
 
 Esta solução se aplica a:
 
-* AEM Forms no servidor de cluster JEE
-
-
+* AEM Forms no ambiente de cluster JEE
