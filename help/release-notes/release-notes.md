@@ -2,9 +2,9 @@
 title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: Encontre informações sobre a versão, novidades, instruções de instalação e uma lista detalhada de alterações para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 937af2df46b93aab6c9010814175d72a9bd583db
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3176'
+source-wordcount: '3853'
 ht-degree: 3%
 
 ---
@@ -105,9 +105,44 @@ ht-degree: 3%
 
 ## [!DNL Forms] {#forms-6515}
 
->[!NOTE]
->
->Correções na [!DNL Experience Manager] O Forms é fornecido por meio de um pacote complementar separado uma semana após o agendamento [!DNL Experience Manager] Data de lançamento do Service Pack. Nesse caso, os pacotes complementares serão lançados na quinta-feira, 1° de dezembro de 2022. Além disso, uma lista de correções e aprimoramentos do Forms também será adicionada a esta seção.
+### Principais recursos {#keyfeatures}
+
+* O AEM Forms Designer agora está disponível no idioma espanhol. (LC-3920051)
+* Agora é possível usar o OAuth2 para autenticar com protocolos de servidor de e-mail do Microsoft Office 365 (SMTP e IMAP). (NPR-35177)
+* Você pode definir [Revalidar no servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) para true para identificar os campos ocultos para exclusão de um Documento de registro no lado do servidor. (NPR-38149)
+* O AEM Forms Designer requer a versão de 32 bits do Visual C++ 2019 Redistribuível (x86).  (NPR-36690)
+
+### Correções {#fixes}
+
+* Quando a propriedade data-disabled de um formulário adaptável é alternada, a aparência dos grupos de botões de opção e caixas de seleção não muda. (NPR-39368)
+* Quando um formulário adaptável é traduzido, algumas traduções são perdidas e não são exibidas corretamente. (NPR-39367)
+* Quando a propriedade de uma página é definida como oculta, a página não é removida do conjunto de formulários. (NPR-39325)
+* Em um Documento de registro, a seção de nota de rodapé dinâmica no final da página não está presente. (NPR-39322)
+* Quando um Documento de registro é gerado para um formulário adaptável, somente o alinhamento vertical é permitido para botões de opção e caixas de seleção. O usuário não pode definir o alinhamento horizontal de botões de opção e caixas de seleção. (NPR-39321)
+* Depois de implantar o Gerenciamento de correspondência, se vários usuários tentarem acessar um formulário, org.apache.sling.i18n.impl.JcrResourceBundle.loadPotentialLanguageRoots se tornará um gargalo e a maioria dos threads será atingida. Muitas vezes, várias solicitações de página de formulários demoravam mais de 1 minuto para carregar cada, mesmo quando o servidor tinha uma carga muito baixa. (NPR-39176, CQ-4347710)
+* Em um formulário adaptável, quando você usa um campo Rich Text em um fragmento de formulário adaptável carregado lentamente, alguns dos seguintes erros são sentidos:
+   * Não é possível editar o conteúdo nem anexar nada ao campo Rich Text .
+   * O padrão de exibição aplicado ao rich text não é respeitado. 
+   * A mensagem de erro para o comprimento mínimo do campo não é exibida ao enviar o formulário.
+   * O conteúdo desse campo rich text é incluído várias vezes no submit-XML produzido. (NPR-39168)
+* Quando a opção Seletor de data é usada em um formulário adaptável, ele falha ao converter o valor no formato correto. (NPR-39156)
+* Ao visualizar um formulário adaptável como um formulário HTML, ele não é renderizado corretamente, pois alguns dos subformulários se sobrepõem ao formulário pai. (NPR-39046)
+* Se o painel tiver uma tabela oculta e o formulário adaptável for renderizado usando a exibição em tabelas, os campos na primeira guia não serão exibidos corretamente. (NPR-39025)
+* O `Body` está ausente para o modelo OOTB (pronto para uso). (NPR-39022)
+* O Documento de registro não é gerado no idioma do Formulário adaptável. É sempre gerada em inglês. (NPR-39020)
+* Quando um formulário adaptável tem vários painéis e alguns desses painéis usam o formulário pronto para uso **Anexo de arquivo** componente, o `Error occurred while draft saving` ocorre . (NPR-38978)
+* When `=` o sinal é usado nos campos caixa de seleção, lista suspensa ou botão de opção de um formulário adaptável e o documento de registro é gerado, então `=` não está visível no Documento de registro gerado.(NPR-38859)
+* Há um aumento múltiplo no número de erros de processamento em lote de avisos após a atualização do service pack 6.5.11.0. (NPR-39636)
+* Quando você não fornece dados de teste, as cartas de Gerenciamento de correspondência não são carregadas na interface do usuário do agente. (CQ-4348702)
+* Quando o usuário aplica o AEM Forms Service Pack 14 (SP14) do AEM Forms implantado com o IBM® WebSphere®, o bootstrapping falha ao inicializar um banco de dados e o `java.lang.NoClassDefFoundError:org/apache/log4j/Logger` ocorre.(NPR-39414)
+* Em um Formulário AEM no servidor OSGi, ao usar a API do Serviço de documento para certificar o PDF, ele falha com o erro: com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311-003. (NPR-38855)
+* Quando o usuário tenta usar o serviço wrapper para renderizar cartas com o AEM 6.3 Forms, a variável `java.lang.reflect.UndeclaredThrowableException` ocorre. (CQ-4347259)
+* Quando um XDP é renderizado como formulário HTML5, o conteúdo da página principal é renderizado primeiro, independentemente do posicionamento dos objetos em um formulário adaptável. (CQ-4345218)
+* A configuração do aplicativo no servidor de destino muda para as configurações definidas no servidor de origem, mesmo que a variável **Substituir configuração quando a importação estiver concluída** não está marcada no momento da importação do aplicativo. (NPR-39044)
+* Quando um usuário tenta atualizar a configuração do conector usando o Configuration Manager, ele falha.(CQ-4347077)
+* Quando o usuário tenta executar um patch AEM Forms no JEE após alterar a senha padrão do usuário administrador, uma exceção `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` ocorre. (CQ-4348277)
+* No AEM Designer, campos de formulário sem legendas são colocados em células de tabela, incluindo caixas de seleção.(LC-3920410)
+* Quando o usuário tenta abrir a Ajuda no AEM Forms Designer, ela não é exibida corretamente. (CQ-4341996)
 
 ## [!DNL Sites] {#sites-6515}
 
@@ -130,7 +165,7 @@ ht-degree: 3%
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
-* GraphQL gera uma exceção. Por exemplo, não é possível obter tags de variação de um fragmento de conteúdo. Não há variação com o nome &quot;elétrico&quot;. Esse problema é devido à chamada de `getVariationTags` para uma variação não existente que suscite uma exceção. (SITES-8898)
+* O GraphQL gera uma exceção. Por exemplo, não é possível obter tags de variação de um fragmento de conteúdo. Não há variação com o nome &quot;elétrico&quot;. Esse problema é devido à chamada de `getVariationTags` para uma variação não existente que suscite uma exceção. (SITES-8898)
 * Classificação de ordens de título na exibição em Lista, ascendentes e decrescentes, como os títulos com a ordem A, C, B. (SITES-7585)
 * Adição do suporte à marcação para variações de fragmento de conteúdo. (SITES-8168)
 * Identificado e removido o código específico do Odin do Experience Manager 6.5 que era desnecessário. (SITES-3574)
@@ -285,7 +320,7 @@ Revise se você usa um recurso ou um recurso em uma implantação. Além disso, 
  -->
 
 * [AEM Fragmento de conteúdo com o Pacote de índice GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
-Esse pacote é necessário para clientes que usam GraphQL; isso permite que eles adicionem a definição de índice necessária com base nos recursos que realmente usam.
+Esse pacote é necessário para clientes que usam o GraphQL; isso permite que eles adicionem a definição de índice necessária com base nos recursos que realmente usam.
 
 * As [!DNL Microsoft® Windows Server 2019] não suporta [!DNL MySQL 5.7] e [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] não suporta instalações turnkey para [!DNL AEM Forms 6.5.10.0].
 

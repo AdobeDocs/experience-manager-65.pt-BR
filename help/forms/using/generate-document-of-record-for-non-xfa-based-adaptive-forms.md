@@ -11,9 +11,9 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3466'
 ht-degree: 2%
 
 ---
@@ -298,10 +298,10 @@ Ao gerar um documento de registro, você pode alterar as informações de marca 
 Para localizar as informações de marca inseridas na guia Document of Record , verifique se a localidade do navegador está definida adequadamente. Para personalizar as informações de marca do documento de registro, execute as seguintes etapas:
 
 1. Selecione um painel (painel raiz) no documento de registro e toque em ![configure](assets/configure.png).
-1. Toque ![dortab](assets/dortab.png). A guia Document of Record é exibida.
+1. Toque ![dortab](/help/forms/using/assets/dortab.png). A guia Document of Record é exibida.
 1. Selecione o modelo padrão ou um modelo personalizado para renderizar o documento de registro. Se você selecionar o modelo padrão, uma visualização em miniatura do documento de registro será exibida abaixo da lista suspensa Modelo .
 
-   ![modelo de marca](assets/brandingtemplate.png)
+   ![modelo de marca](/help/forms/using/assets/brandingtemplate.png)
 
    Se você optar por selecionar um modelo personalizado, navegue por um XDP selecionado no servidor do AEM Forms. Se você quiser usar um modelo que ainda não esteja no servidor do AEM Forms, primeiro carregue o XDP no servidor do AEM Forms.
 
@@ -396,7 +396,7 @@ Para obter informações sobre como aplicar quebras de página e aplicar várias
 **Configurações de nível de formulário**
 
 * **Incluir campos não vinculados em DoR:** A configuração da propriedade inclui campos não vinculados do formulário adaptável baseado em esquema no documento de registro. Por padrão, é verdadeiro.
-* **Excluir campos de DoR se ocultos:** A configuração da propriedade substitui o comportamento da propriedade de nível de campo &quot;Excluir do documento de registro&quot; quando não é verdadeira. Se os campos estiverem ocultos no momento do envio do formulário, eles serão excluídos do documento de registro se a propriedade estiver definida como true, desde que a propriedade &quot;Excluir do documento de registro&quot; não esteja definida.
+* **Excluir campos de DoR se ocultos:** Defina a propriedade para excluir os campos ocultos do [!UICONTROL Documento de registro] no envio do formulário. Ao ativar [Revalidar no servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), o servidor recalcula os campos ocultos antes de excluí-los do [!UICONTROL Documento de registro].
 
 ## Aplicar uma quebra de página em um documento de registro {#apply-page-breaks-in-dor}
 
@@ -404,13 +404,12 @@ Para obter informações sobre como aplicar quebras de página e aplicar várias
 
 Para aplicar uma quebra de página a um Documento de registro:
 
-1. Toque no painel e selecione ![Configurar](assets/configure-icon.svg).
-
+1. Toque no painel e selecione ![Configurar](/help/forms/using/assets/configure.png)
 1. Expandir **[!UICONTROL Documento de registro]** para exibir as propriedades.
 
-1. No **[!UICONTROL Paginação]** seção, toque em ![Pasta](assets/folder-icon.svg) no **[!UICONTROL Local]** campo.
+1. No **[!UICONTROL Paginação]** seção, toque em ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Local]** campo.
 1. Toque **[!UICONTROL Parte superior da próxima página]** e tocar **[!UICONTROL Selecionar]**. Também é possível tocar em **[!UICONTROL Parte superior da página]**, selecione a página principal e toque em **[!UICONTROL Selecionar]** para aplicar a quebra de página.
-1. Toque ![Salvar](assets/save_icon.svg) para salvar as propriedades.
+1. Toque ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
 
 O painel selecionado é movido para a próxima página.
 
@@ -424,13 +423,13 @@ Este é um exemplo de como aplicar várias páginas principais a um Documento de
 
 Para aplicar as propriedades da segunda página principal a um painel e as terceira propriedades da página principal aos painéis a seguir, execute as seguintes etapas:
 
-1. Toque no painel para aplicar a segunda página principal e selecione ![Configurar](assets/configure-icon.svg).
-1. No **[!UICONTROL Paginação]** seção, toque em ![Pasta](assets/folder-icon.svg) no **[!UICONTROL Local]** campo.
+1. Toque no painel para aplicar a segunda página principal e selecione ![Configurar](assets/cmppr.png).
+1. No **[!UICONTROL Paginação]** seção, toque em ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Local]** campo.
 1. Toque **[!UICONTROL Na página]**, selecione a segunda página principal e toque em **[!UICONTROL Selecionar]**.
 O AEM Forms aplica a segunda página principal ao painel e a todos os painéis subsequentes no formulário adaptável.
-1. No **[!UICONTROL Paginação]** seção, toque em ![Pasta](assets/folder-icon.svg) no **[!UICONTROL Depois]** campo.
+1. No **[!UICONTROL Paginação]** seção, toque em ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Depois]** campo.
 1. Toque **[!UICONTROL Ir para página]**, selecione a terceira página principal e toque em **[!UICONTROL Selecionar]**.
-1. Toque ![Salvar](assets/save_icon.svg) para salvar as propriedades.
+1. Toque ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
 O AEM Forms aplica a terceira página principal ao painel e a todos os painéis subsequentes no formulário adaptável.
 
 

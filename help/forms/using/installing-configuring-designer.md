@@ -12,10 +12,10 @@ discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: a3cf926bde4a4b3a0810058e84ac01012a4a3a57
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 30%
+source-wordcount: '290'
+ht-degree: 26%
 
 ---
 
@@ -23,19 +23,20 @@ ht-degree: 30%
 
 ## Pré-requisitos {#pre-requisites}
 
-O instalador do AEM Forms Designer requer a versão de 32 bits do [Pacote de tempo de execução redistribuível do Visual C++ 2012](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0) e [Pacote de tempo de execução redistribuível do Visual C++ 2013](https://support.microsoft.com/pt-br/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Verifique se os pacotes de tempo de execução redistribuíveis mencionados anteriormente estão instalados antes de iniciar a instalação.
-
-Você precisa de direitos de administrador para instalar ou desinstalar o Designer.
+* Instale a versão de 32 bits do  [Visual C++ 2019 Redistribuível (x86)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). Verifique se os pacotes de tempo de execução redistribuíveis mencionados anteriormente estão instalados antes de iniciar a instalação.
+* Um usuário com direitos de administrador para instalar ou desinstalar o Designer.
 
 ## Instalar o Designer {#install-designer}
 
 O Designer está disponível como um instalador independente e também é fornecido com o WorkBench. Se você estiver usando um instalador independente para o Designer, execute as seguintes etapas:
 
-1. Baixar o Designer no Adobe [Site de licenciamento](https://licensing.adobe.com/).
+1. Desinstale a versão anterior do AEM Forms Designer, se ela já estiver instalada.
+1. Baixar o Designer a partir de [Site de licenciamento de Adobe](https://licensing.adobe.com/).
 
    >[!NOTE]
    >
-   >Se você tiver uma versão anterior do Designer instalada, desinstale a versão anterior antes de continuar.
+   > * A versão do Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) em diante do Forms Designer também inclui a versão do Service Pack. Por exemplo, para o Service Pack 15, o número da versão é 6.5.15.20221112.1.0. Neste exemplo, 6.5.15 é a versão do service pack.
+
 
 1. Inicie o instalador do Designer, clicando duas vezes em setup.exe.
 1. Continue e forneça os detalhes e o número de série na tela Personalização.
@@ -57,5 +58,3 @@ msiexec /i "<absolute path>\Designer.msi" /passive SERIALNUMBER=****-****-****-*
 ```shell
 msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-****-****-****
 ```
-
-
