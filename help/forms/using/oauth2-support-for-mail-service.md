@@ -1,18 +1,16 @@
 ---
-title: Suporte OAuth2 para protocolos de servidor de e-mail Microsoft® Office 365
-description: Suporte Oauth2 para protocolos de servidor de e-mail Microsoft® Office 365
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+title: Configurar a autenticação baseada em OAuth2 para os protocolos de servidor de e-mail do Microsoft® Office 365
+description: Configurar a autenticação baseada em OAuth2 para os protocolos de servidor de e-mail do Microsoft® Office 365
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '938'
 ht-degree: 3%
 
 ---
 
-# Suporte OAuth 2.0 para os protocolos do servidor de e-mail Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
+# Integrar com os protocolos de servidor de e-mail do Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
-A AEM Forms oferece suporte ao OAuth 2.0 para integração com protocolos de servidor de e-mail Microsoft® Office 365, para permitir que as organizações adiram para proteger os requisitos de e-mail. O Azure Ative Diretory (Azure AD) oferece o serviço de autenticação OAuth 2.0, que permite que o aplicativo se conecte a vários protocolos, como IMAP, POP ou SMTP, e acesse dados de email para usuários do Office 365.
-
-Abaixo estão as instruções passo a passo para configurar os protocolos do servidor de e-mail do Microsoft® Office 365 para autenticar via serviço OAuth 2.0:
+Para permitir que as organizações adiram aos requisitos de email seguros, a AEM Forms oferece suporte ao OAuth 2.0 para integração com os protocolos de servidor de email Microsoft® Office 365. Você pode usar o serviço de autenticação OAuth 2.0 do Azure Ative Diretory (Azure AD) para se conectar com vários protocolos, como IMAP, POP ou SMTP, e acessar dados de email para usuários do Office 365. Abaixo estão as instruções passo a passo para configurar os protocolos do servidor de e-mail do Microsoft® Office 365 para autenticar via serviço OAuth 2.0:
 
 1. Logon [https://portal.azure.com/](https://portal.azure.com/) e procurar **Ative Diretory do Azure** na barra de pesquisa e clique no resultado.
 Como alternativa, você pode navegar diretamente para [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
@@ -22,9 +20,8 @@ Como alternativa, você pode navegar diretamente para [https://portal.azure.com/
 
 1. Preencha as informações de acordo com seus requisitos e clique em **Registrar**.
    ![Conta Suportada](/help/forms/using/assets/azure_suuportedaccountype.png)
-
-
-   No caso acima, **Contas em qualquer diretório organizacional (Qualquer diretório do Azure AD - Multilocatário) e contas pessoais do Microsoft® (por exemplo, Skype, Xbox)** está selecionada.
+No caso acima, 
+**Contas em qualquer diretório organizacional (Qualquer diretório do Azure AD - Multilocatário) e contas pessoais do Microsoft® (por exemplo, Skype, Xbox)** está selecionada.
 
    >[!NOTE]
    >
@@ -88,7 +85,9 @@ Em seguida, você precisa gerar o código de autorização, explicado nas seguin
 ## Geração do token de atualização {#generating-the-refresh-token}
 
 Em seguida, você precisa gerar o token de atualização, explicado nas seguintes etapas:
+
 1. Abra o prompt de comando e use o seguinte comando cURL para obter o refreshToken.
+
 1. Substitua o `clientID`, `client_secret` e `redirect_uri` com os valores para seu aplicativo, juntamente com o valor de `<code>`:
 
    `curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/common/oauth2/v2.0/token`
@@ -163,9 +162,4 @@ Agora, é necessário configurar o serviço de email no servidor JEE mais recent
 * Se o serviço de email não estiver funcionando corretamente. Tente gerar novamente o `Refresh Token` conforme descrito acima. Leva alguns minutos para o novo valor ser implantado.
 
 * Erro ao configurar os detalhes do servidor de email no ponto de extremidade do email usando o Workbench.Tente configurar o ponto de extremidade por meio da interface do usuário do administrador em vez do Workbench.
-
-
-
-
-
 

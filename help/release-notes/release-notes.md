@@ -2,9 +2,9 @@
 title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: Encontre informações sobre a versão, novidades, instruções de instalação e uma lista detalhada de alterações para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3858'
 ht-degree: 3%
 
 ---
@@ -107,9 +107,9 @@ ht-degree: 3%
 
 ### Principais recursos {#keyfeatures}
 
-* O AEM Forms Designer agora está disponível no idioma espanhol. (LC-3920051)
-* Agora é possível usar o OAuth2 para autenticar com protocolos de servidor de e-mail do Microsoft Office 365 (SMTP e IMAP). (NPR-35177)
-* Você pode definir [Revalidar no servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) para true para identificar os campos ocultos para exclusão de um Documento de registro no lado do servidor. (NPR-38149)
+* O AEM Forms Designer agora está disponível em [Localidade espanhola](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). (LC-3920051)
+* Agora você pode usar [OAuth2 para autenticar com protocolos de servidor de e-mail do Microsoft Office 365 (SMTP e IMAP)](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
+* Você pode definir [Revalidar no servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br) para true para identificar os campos ocultos para exclusão de um Documento de registro no lado do servidor. (NPR-38149)
 * O AEM Forms Designer requer a versão de 32 bits do Visual C++ 2019 Redistribuível (x86).  (NPR-36690)
 
 ### Correções {#fixes}
@@ -320,7 +320,7 @@ Revise se você usa um recurso ou um recurso em uma implantação. Além disso, 
  -->
 
 * [AEM Fragmento de conteúdo com o Pacote de índice GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
-Esse pacote é necessário para clientes que usam o GraphQL; isso permite que eles adicionem a definição de índice necessária com base nos recursos que realmente usam.
+Esse pacote é necessário para clientes que usam GraphQL; isso permite que eles adicionem a definição de índice necessária com base nos recursos que realmente usam.
 
 * As [!DNL Microsoft® Windows Server 2019] não suporta [!DNL MySQL 5.7] e [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] não suporta instalações turnkey para [!DNL AEM Forms 6.5.10.0].
 

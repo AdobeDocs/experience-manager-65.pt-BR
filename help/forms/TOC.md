@@ -8,9 +8,9 @@ user-guide-title: Guia do Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '3830'
+source-wordcount: '3827'
 ht-degree: 4%
 
 ---
@@ -371,7 +371,6 @@ ht-degree: 4%
    + [Reader estendendo documentos PDF protegidos por política usando a Biblioteca Portable Protection](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
    + [Habilitar AEM para pesquisar documentos com segurança protegida PDF e documentos do Microsoft Office](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protect um documento em nome de outro usuário](using/protect-document-on-behalf-of-another-user.md)
-   + [Suporte para oAuth2.0 para o Microsoft Mail Service](/help/forms/using/oauth2-support-for-mail-service.md)
 + Designer do Forms {#use-forms-designer}
    + [Ajuda do Forms Designer](using/forms-designer-help.md)
    + [Uso do Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
@@ -453,6 +452,7 @@ ht-degree: 4%
    + Gerenciamento de endpoints {#manage-endpoints}
       + [Adicionar, ativar, modificar ou remover pontos de extremidade](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
       + [Configuração de pontos de extremidade de email](/help/forms/using/admin-help/configuring-email-endpoints.md)
+      + [Configurar a autenticação oAuth2.0](/help/forms/using/oauth2-support-for-mail-service.md)
       + [Configuração de endpoints remotos](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
       + [Configuração de endpoints de pasta observados](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [Configurando endpoints do Gerenciador de Tarefas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
