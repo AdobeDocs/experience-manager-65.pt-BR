@@ -12,9 +12,9 @@ discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 002b9035f37a1379556378686b64d26bbbc30288
 workflow-type: tm+mt
-source-wordcount: '2427'
+source-wordcount: '2445'
 ht-degree: 5%
 
 ---
@@ -47,13 +47,13 @@ Os benefícios da sincronização de usuários usando a distribuição do Sling,
 
 >[!NOTE]
 >
->Se as sessões forem necessárias, é recomendável usar uma solução de SSO ou usar uma sessão fixa e fazer com que os clientes façam logon se mudarem para outro editor.
+>Se as sessões forem necessárias, é recomendável usar uma solução SSO ou usar uma sessão fixa e fazer com que os clientes façam logon se mudarem para outra instância de publicação.
 
 >[!CAUTION]
 >
->Sincronização da ***administradores*** não é suportado, mesmo quando a sincronização do usuário está ativada. Em vez disso, uma falha em &#39;importar o diff&#39; será registrada no log de erros.
+>Sincronização da **administradores** não é suportado, mesmo quando a sincronização do usuário está ativada. Em vez disso, uma falha em &#39;importar o diff&#39; será registrada no log de erros.
 >
->Portanto, quando a implantação é um farm de publicação, se um usuário for adicionado ou removido do ***administradores** , a modificação deve ser feita manualmente em cada instância de publicação.
+>Portanto, quando a implantação é um farm de publicação, se um usuário for adicionado ou removido do **administradores** , a modificação deve ser feita manualmente em cada instância de publicação.
 
 ## Ativar sincronização de usuários {#enable-user-sync}
 
@@ -71,7 +71,7 @@ A seguir estão as etapas necessárias para habilitar a sincronização do usuá
 
 ### Pré-requisitos {#prerequisites}
 
-1. Se usuários e grupos de usuários já tiverem sido criados em um editor, é recomendável [sincronizar manualmente](#manually-syncing-users-and-user-groups) os dados do usuário para todos os editores antes de configurar e ativar a sincronização do usuário.
+1. Se usuários e grupos de usuários já tiverem sido criados em uma instância de publicação, é recomendável [sincronizar manualmente](#manually-syncing-users-and-user-groups) os dados do usuário para todas as instâncias de publicação antes de configurar e ativar a sincronização do usuário.
 
 Quando a sincronização do usuário estiver ativada, somente os usuários e grupos recém-criados serão sincronizados.
 
@@ -159,7 +159,7 @@ Consulte também:
 
 **Configurar permissões**
 
-Depois de um usuário autorizado, um membro do **`administrators`**grupo de usuários, foi criado em todas as instâncias de publicação, e o usuário autorizado deve ser identificado no autor como tendo permissão para sincronizar os dados do usuário do autor para publicação.
+Uma vez que um usuário autorizado, um membro da **`administrators`** grupo de usuários, criado em todas as instâncias de publicação, que o usuário autorizado deve ser identificado no autor como tendo permissão para sincronizar os dados do usuário do autor para publicar.
 
 * **sobre o autor**
 
@@ -181,7 +181,7 @@ Depois de um usuário autorizado, um membro do **`administrators`**grupo de usu�
 
 **Ativar sincronização de usuários**
 
-* **ao publicar**:
+* **em cada instância de publicação**:
 
    * fazer logon com privilégios de administrador
    * acesse o [Console da Web](/help/sites-deploying/configuring-osgi.md)
@@ -193,7 +193,7 @@ Depois de um usuário autorizado, um membro do **`administrators`**grupo de usu�
 
       * selecione o `Enabled` caixa de seleção
       * select `Save`
-   * **repetir **para cada instância de publicação
+   * **repetição** para cada instância de publicação
 
 
 
@@ -267,13 +267,13 @@ A configuração padrão é para uma única instância de publicação. Como o m
 ![](assets/chlimage_1-25.png)
 
 * **Endpoints do exportador**
-Deve haver um terminal de exportador para cada editor. Por exemplo, se houver 2 editores, localhost:4503 e 4504, deverá haver 2 entradas:
+Deve haver um ponto de extremidade de exportador para cada instância de publicação. Por exemplo, se houver 2 instâncias de publicação, localhost:4503 e 4504, deverá haver 2 entradas:
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **Endpoints do importador**
-Deve haver um ponto de extremidade de importador para cada editor. Por exemplo, se houver 2 editores, localhost:4503 e 4504, deverá haver 2 entradas:
+Deve haver um ponto de extremidade de importador para cada instância de publicação. Por exemplo, se houver 2 instâncias de publicação, localhost:4503 e 4504, deverá haver 2 entradas:
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
@@ -400,7 +400,7 @@ Para que as atualizações sejam sincronizadas corretamente, é necessário modi
 
 Por design, usuários e perfis criados no ambiente de publicação (autoregistro) não aparecem no ambiente do autor.
 
-Quando a topologia for uma [publicar farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm) e a sincronização do usuário foi configurada corretamente, o *usuário *e *perfil de usuário* é sincronizado no farm de publicação usando a distribuição do Sling.
+Quando a topologia for uma [publicar farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm) e a sincronização do usuário foi configurada corretamente, a variável *usuário* e *perfil de usuário* é sincronizado no farm de publicação usando a distribuição do Sling.
 
 ### Usuários ou grupos de usuários são criados usando o Console de segurança {#users-or-user-groups-are-created-using-security-console}
 
@@ -412,7 +412,7 @@ Quando a variável [Administração e segurança do usuário](/help/sites-admini
 
 ### Como colocar a sincronização do usuário offline {#how-to-take-user-sync-offline}
 
-Para colocar a sincronização do usuário offline, para [remover um editor](#how-to-remove-a-publisher) ou [sincronizar dados manualmente](#manually-syncing-users-and-user-groups), a fila de distribuição deve estar vazia e quieta.
+Para colocar a sincronização do usuário offline, para [remover uma instância de publicação](#how-to-remove-a-publish-instance) ou [sincronizar dados manualmente](#manually-syncing-users-and-user-groups), a fila de distribuição deve estar vazia e quieta.
 
 Para verificar o estado da fila de distribuição:
 
@@ -455,7 +455,7 @@ O que é exibido quando a Sincronização de usuários não foi habilitada:
 
 ![](assets/chlimage_1-28.png)
 
-#### Como executar diagnósticos para editores {#how-to-run-diagnostics-for-publishers}
+#### Como executar diagnósticos para instâncias de publicação {#how-to-run-diagnostics-for-publish-instances}
 
 Quando o diagnóstico é executado a partir do ambiente do autor, os resultados de aprovação/falha incluirão um [INFO] exibindo a lista de instâncias de publicação configuradas para confirmação.
 
@@ -531,7 +531,7 @@ Consulte a seção [9. ID exclusiva do Sling](#unique-sling-id)
 
 ### Sincronização manual de usuários e grupos de usuários {#manually-syncing-users-and-user-groups}
 
-* no editor em que existem usuários e grupos de usuários:
+* em instâncias de publicação nas quais os usuários e grupos de usuários existem:
 
    * [se ativado, desabilitar a sincronização do usuário](#how-to-take-user-sync-offline)
    * [criar um pacote](/help/sites-administering/package-manager.md#creating-a-new-package) de `/home`
@@ -549,13 +549,13 @@ Consulte a seção [9. ID exclusiva do Sling](#unique-sling-id)
 
 Para configurar ou habilitar a sincronização do usuário, vá para a etapa 1: [Apache Sling Distribution Agent - Fábrica de agentes de sincronização](#apache-sling-distribution-agent-sync-agents-factory)
 
-### Quando um editor fica indisponível {#when-a-publisher-becomes-unavailable}
+### Quando uma instância de publicação fica indisponível {#when-a-publish-instance-becomes-unavailable}
 
-Quando uma instância de publicação se tornar indisponível, ela não deverá ser removida se estiver novamente online no futuro. As alterações serão colocadas em fila para o editor e, uma vez online novamente, as alterações serão processadas.
+Quando uma instância de publicação se tornar indisponível, ela não deverá ser removida se estiver novamente online no futuro. As alterações serão colocadas em fila para a instância de publicação e, uma vez que elas estiverem novamente online, as alterações serão processadas.
 
 Se a instância de publicação nunca voltar a ficar online, se estiver offline permanentemente, ela deverá ser removida, pois a construção de fila resultará no uso notável do espaço em disco no ambiente do autor.
 
-Quando um editor estiver inativo, o log de autor terá exceções semelhantes a:
+Quando uma instância de publicação estiver inativa, o log do autor terá exceções semelhantes a:
 
 ```
 28.01.2016 15:57:48.475 ERROR
@@ -565,14 +565,14 @@ Quando um editor estiver inativo, o log de autor terá exceções semelhantes a:
  org.apache.sling.distribution.packaging.DistributionPackageImportException: failed in importing package ...
 ```
 
-### Como remover um editor {#how-to-remove-a-publisher}
+### Como remover uma instância de publicação {#how-to-remove-a-publish-instance}
 
-Para remover um editor da [Apache Sling Distribution Agent - Fábrica de agentes de sincronização](#apache-sling-distribution-agent-sync-agents-factory), a fila de distribuição deve estar vazia e quieta.
+Para remover uma instância de publicação do [Apache Sling Distribution Agent - Fábrica de agentes de sincronização](#apache-sling-distribution-agent-sync-agents-factory), a fila de distribuição deve estar vazia e quieta.
 
 * sobre o autor:
 
    * [Colocar a sincronização de utilizador offline](#how-to-take-user-sync-offline)
-   * seguir [etapa 7](#apache-sling-distribution-agent-sync-agents-factory) para remover o editor de ambas as listas de servidores:
+   * seguir [etapa 7](#apache-sling-distribution-agent-sync-agents-factory) para remover a instância de publicação de ambas as listas de servidores:
 
       * `Exporter Endpoints`
       * `Importer Endpoints`
