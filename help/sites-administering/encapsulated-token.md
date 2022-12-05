@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: 32e2a30d9f3327d26b81a07730ace04e4e68b0d1
+source-git-commit: f8d249f5d3fac243b4989c3eca4be2730dcf16ec
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -68,16 +68,12 @@ Há algumas coisas que você precisa considerar ao configurar o Token encapsulad
 
 ### Replicação da chave HMAC {#replicating-the-hmac-key}
 
-A chave HMAC está presente como uma propriedade binária de `/etc/key` no repositório. Você pode baixá-lo separadamente pressionando a tecla **exibir** link ao lado dele:
-
-![chlimage_1-35](assets/chlimage_1-35a.png)
-
 Para replicar a chave entre instâncias, é necessário:
 
 1. Acesse a instância AEM, normalmente uma instância de autor, que contém o material principal a ser copiado;
 1. Localize a variável `com.adobe.granite.crypto.file` no sistema de arquivos local. Por exemplo, neste caminho:
 
-   * &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
 
    O `bundle.info` o arquivo dentro de cada pasta identificará o nome do pacote.
 
