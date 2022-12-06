@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 6e54073a0c1d67218283b096db3f2e5597f10376
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1784'
 ht-degree: 3%
 
 ---
@@ -57,6 +57,19 @@ Por exemplo:
 O seletor de representação simples usa um transformador em vez de scripts adicionais; o [Reescrita Sling](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) é usado como o transformador. Isso é configurado em
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
+
+### Configuração da geração de representação de HTML {#configuring-html-rendition-generation}
+
+A representação de HTML é gerada usando os Pipelines de regravação do Sling. O pipeline é definido em `/libs/experience-fragments/config/rewriter/experiencefragments`. O Transformador de HTML suporta as seguintes opções:
+
+* `allowedCssClasses`
+   * Uma expressão RegEx que corresponde às classes CSS que devem ser deixadas na representação final.
+   * Isso é útil se o cliente quiser eliminar algumas classes CSS específicas
+* `allowedTags`
+   * Uma lista de tags HTML a serem permitidas na representação final.
+   * Por padrão, as seguintes tags são permitidas (nenhuma configuração é necessária): html, cabeçalho, título, corpo, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link e script
+
+É recomendável configurar o regravador usando uma sobreposição. Consulte [Sobreposições em AEM as a Cloud Service](/help/sites-developing/overlays.md)
 
 ## Variações sociais {#social-variations}
 
