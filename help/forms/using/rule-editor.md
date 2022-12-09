@@ -10,9 +10,9 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 84ae92f889661a639e931b2a7ba9a999d5258841
+source-git-commit: 26403941129f3a80fdb3e9b964cb943a04b3bfa1
 workflow-type: tm+mt
-source-wordcount: '6794'
+source-wordcount: '6888'
 ht-degree: 0%
 
 ---
@@ -572,6 +572,9 @@ Mostra os parâmetros usados pela função. Uma função pode ter várias tags d
    1. sequência de caracteres
    1. número
    1. booleano
+   1. scope
+
+   O escopo é usado para campos de referência de um formulário adaptável. Quando um formulário usa carregamento lento, você pode usar `scope` para acessar os campos. Você pode acessar campos quando os campos são carregados ou se os campos são marcados como global.
 
    Todos os outros tipos de parâmetros são categorizados em um dos acima. Nenhum é suportado. Certifique-se de selecionar um dos tipos acima. Os tipos não fazem distinção entre maiúsculas e minúsculas. Espaços não são permitidos no parâmetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
@@ -586,6 +589,29 @@ Adiciona informações sobre a função, como seu objetivo.
    1. booleano
 
    Todos os outros tipos de retorno são classificados em um dos acima. Nenhum é suportado. Certifique-se de selecionar um dos tipos acima. Os tipos de retorno não distinguem maiúsculas de minúsculas.
+
+* **Essa**
+Sintaxe: 
+`@this currentComponent`
+
+   Use @this para se referir ao componente Formulário adaptativo no qual a regra é gravada.
+
+   O exemplo a seguir é baseado no valor do campo. No exemplo a seguir, a regra oculta um campo no formulário. O `this` porção de `this.value` refere-se ao componente subjacente do Formulário adaptativo, no qual a regra é gravada.
+
+   ```
+      /**
+      * @function myTestFunction
+      * @this currentComponent
+      * @param {scope} scope in which code inside function will be executed.
+      */
+      myTestFunction = function (scope) {
+         if(this.value == "O"){
+               scope.age.visible = true;
+         } else {
+            scope.age.visible = false;
+         }
+      }
+   ```
 
 >[!NOTE]
 >
