@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 02afc4eb78acaacc40d3ba1830ccb1e9c3907d0f
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1877'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->O Contexto do Cliente foi substituído pelo ContextHub. Para obter mais detalhes, consulte os [configuração]ch-configuring.md) e [desenvolvedor](/help/sites-developing/contexthub.md) documentação.
+>O Contexto do Cliente foi substituído pelo ContextHub. Para obter mais detalhes, consulte os [configuração](/help/sites-developing/ch-configuring.md) e [desenvolvedor](/help/sites-developing/contexthub.md) documentação.
 
 O Contexto do Cliente é um mecanismo que fornece determinadas informações sobre a página atual e o visitante. Ele pode ser aberto usando **Ctrl-Alt-c** (janelas) ou **control-option-c** (Mac):
 
