@@ -2,9 +2,9 @@
 title: Edição de um SPA externo no AEM
 description: Este documento descreve as etapas recomendadas para carregar um SPA independente em uma instância de AEM, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 237de641ba02705f8171b1526946a4dc1b60b6a3
+source-git-commit: 90f3fb05581820167ea0dcf50fb23048609af31d
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2446'
 ht-degree: 1%
 
 ---
@@ -359,11 +359,15 @@ Para habilitar a edição no AEM para este SPA de exemplo, as etapas a seguir s�
 
    * Implante o projeto para AEM e navegue até o `test` página. O conteúdo da página agora é renderizado e AEM componentes podem ser editados.
 
+## Limitações da estrutura {#framework-limitations}
+
+O componente RemotePage espera que a implementação forneça um manifesto de ativo como aquele [encontrado aqui.](https://github.com/shellscape/webpack-manifest-plugin) No entanto, o componente RemotePage só foi testado para funcionar com a estrutura React (e Next.js através do componente página remota seguinte) e, portanto, não suporta o carregamento remoto de aplicativos de outras estruturas, como o Angular.
+
 ## Recursos adicionais {#additional-resources}
 
 O seguinte material de referência pode ser útil para entender SPA no contexto da AEM.
 
-* [O Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [O Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
 * [O projeto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
 * [Introdução ao SPA no AEM usando o React](spa-getting-started-react.md)
 * [Materiais de referência SPA (referências de API)](spa-reference-materials.md)
