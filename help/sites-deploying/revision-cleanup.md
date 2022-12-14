@@ -1,8 +1,8 @@
 ---
 title: Limpeza de revisão
 seo-title: Revision Cleanup
-description: Saiba como usar a funcionalidade Revisão de limpeza no AEM 6.3.
-seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.3.
+description: Saiba como usar a funcionalidade Revisão de limpeza no AEM 6.5.
+seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.5.
 uuid: 321f5038-44b0-4f1e-a1aa-2d29074eed70
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 550e7993f88367ec4b5c1d024dc742c087c1a9eb
+source-git-commit: b7f9b5256e07d4bfbc0c3454e8d2fe112ea650e8
 workflow-type: tm+mt
-source-wordcount: '5912'
+source-wordcount: '5918'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Cada atualização no repositório cria uma nova revisão de conteúdo. Como resultado, a cada atualização o tamanho do repositório aumenta. Para evitar o crescimento descontrolado do repositório, as revisões antigas precisam ser limpas para liberar recursos de disco. Essa funcionalidade de manutenção é chamada de Revisão de limpeza. Ele está disponível como uma rotina offline desde o AEM 6.0.
 
-Com o AEM 6.3, uma versão online dessa funcionalidade chamada Limpeza de Revisão Online foi introduzida. Comparada à Limpeza de Revisão Offline, onde a instância de AEM deve ser encerrada, a Limpeza de Revisão Online pode ser executada enquanto a instância de AEM estiver online. A Limpeza de Revisão Online é ativada por padrão e é a maneira recomendada de executar uma limpeza de revisão.
+Com o AEM 6.3 e superior, uma versão online dessa funcionalidade chamada Limpeza de Revisão Online foi introduzida. Comparada à Limpeza de Revisão Offline, onde a instância de AEM deve ser encerrada, a Limpeza de Revisão Online pode ser executada enquanto a instância de AEM estiver online. A Limpeza de Revisão Online é ativada por padrão e é a maneira recomendada de executar uma limpeza de revisão.
 
 **Observação**: [Ver o vídeo](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/revision-cleanup-technical-video-use.html) para obter uma introdução e como usar a Limpeza de revisão online.
 
@@ -162,7 +162,7 @@ Em alguns casos, alternar entre a cauda e os modos de compactação completos at
   </tr>
   <tr>
    <td><strong>O formato Tar anterior ainda é compatível?</strong></td>
-   <td>Somente o novo Oak Segment Tar é compatível com o AEM 6.3.</td>
+   <td>Somente o novo Oak Segment Tar é compatível com o AEM 6.3 ou superior.</td>
    <td> </td>
   </tr>
   <tr>
@@ -171,7 +171,7 @@ Em alguns casos, alternar entre a cauda e os modos de compactação completos at
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Posso atualizar para a versão 6.3 e fazer a migração posteriormente (por exemplo, usando outra janela de manutenção)?</strong></td>
+   <td><strong>Posso atualizar para 6.3 ou superior e fazer a migração posteriormente (por exemplo, usando outra janela de manutenção)?</strong></td>
    <td>Não, como explicado acima, a migração de conteúdo é obrigatória.</td>
    <td> </td>
   </tr>
@@ -239,7 +239,7 @@ Em alguns casos, alternar entre a cauda e os modos de compactação completos at
   </tr>
   <tr>
    <td><strong>Por que a primeira Limpeza de Revisão Online não recupera espaço quando executada após a Limpeza de Revisão Offline?</strong></td>
-   <td><p>A Limpeza de Revisão Offline recupera tudo, menos a geração mais recente, em comparação com as últimas duas gerações para a Limpeza de Revisão Online. No caso de um repositório novo, a Limpeza de Revisão Online não recuperará espaço quando for executada pela primeira vez após a Limpeza de Revisão Offline, pois não há geração antiga o suficiente para ser recuperada.</p> <p>Além disso, leia a seção "Executando Limpeza de Revisão Online após Limpeza de Revisão Offline" de <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">este capítulo</a>.</p> </td>
+   <td><p>A Limpeza de Revisão Offline recupera tudo, menos a última geração, em comparação com as últimas duas gerações para a Limpeza de Revisão Online. No caso de um repositório novo, a Limpeza de Revisão Online não recuperará espaço quando for executada pela primeira vez após a Limpeza de Revisão Offline, pois não há geração antiga o suficiente para ser recuperada.</p> <p>Além disso, leia a seção "Executando Limpeza de Revisão Online após Limpeza de Revisão Offline" de <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">este capítulo</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
