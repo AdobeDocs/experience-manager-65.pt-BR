@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 2801ef5ec5ed7b01f4eb046baa439f6d5de56b75
+source-git-commit: d30bfb9e67d0a2a0e870ee0841ed14060def7756
 workflow-type: tm+mt
-source-wordcount: '3249'
+source-wordcount: '3252'
 ht-degree: 10%
 
 ---
@@ -435,7 +435,7 @@ Se você criou um template que pode servir como base de outros templates, é pos
 1. Criar um modelo como você faria com qualquer modelo editável [conforme documentado aqui](/help/sites-authoring/templates.md#creating-a-new-template-template-author), que servirá de base para o seu tipo de modelo.
 1. Usando o CRXDE Lite, copie o modelo recém-criado da `templates` para `template-types` nó sob o [pasta de modelos](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Excluir o modelo do `templates` nó sob o [pasta de modelos](/help/sites-developing/page-templates-editable.md#template-folders).
-1. Na cópia do modelo que está sob o `template-types` nó, excluir tudo `cq:template` e `cq:templateType` `jcr:content` propriedades.
+1. Na cópia do modelo que está sob o `template-types` nó, excluir tudo `cq:template` e `cq:templateType` propriedades de todas `jcr:content` nós.
 
 Você também pode desenvolver seu próprio tipo de modelo usando um modelo editável de exemplo como base, disponível no GitHub.
 
