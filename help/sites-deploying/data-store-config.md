@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 461424de9158e14e251037004ea3590ed35bb4a0
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3584'
 ht-degree: 2%
 
 ---
@@ -121,7 +121,7 @@ Os detalhes sobre os diferentes armazenamentos de dados e configurações estão
 
 ### Armazenamento de dados do arquivo {#file-data-store}
 
-Esta é a implementação da [FileDataStore](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/core/data/FileDataStore.html) presente em Jackrabbit 2. Ele fornece uma maneira de armazenar os dados binários como arquivos normais no sistema de arquivos. Ele usa a variável `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID.
+Esta é a implementação da [FileDataStore](https://jackrabbit.apache.org/api/trunk/org/apache/jackrabbit/core/data/FileDataStore.html) presente em Jackrabbit 2. Ele fornece uma maneira de armazenar os dados binários como arquivos normais no sistema de arquivos. Ele usa a variável `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID.
 
 Essas opções de configuração estão disponíveis:
 
