@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 41de0aab537ae227fc6da20941502d155b45f65d
+source-git-commit: 33b8cf60e2a6ae13c103040d96b0e2db487ddd99
 workflow-type: tm+mt
-source-wordcount: '3453'
+source-wordcount: '3452'
 ht-degree: 1%
 
 ---
@@ -94,7 +94,7 @@ A Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
 | JDK Java SE 11 do Oracle - 64 bits | A: Suportado `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | JDK Java SE 10 do Oracle | Z: Não suportado `[1]` |
 | JDK Java SE 9 do Oracle | Z: Não suportado `[1]` |
-| JDK Java SE 8 do Oracle - 64 bits | A: Suportado `[1]` | [Baixar](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
+| JDK Java SE 8 do Oracle - 64 bits | A: Suportado `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | IBM J9 VM - compilação 2.9, JRE 1.8.0 | A: Suportado `[2]` |
 | IBM J9 VM - compilação 2.8, JRE 1.8.0 | A: Suportado `[2]` |
 | Azul Zulu OpenJDK 11 - 64 bits | A: Suportado `[3]` |  |
@@ -197,8 +197,8 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 | IBM AIX 7.2 | Z: Não suportado |
 
 1. O Linux Kernel 2.6, 3.x, 4.x e 5.x inclui derivados da distribuição Red Hat, incluindo Red Hat Enterprise Linux, CentOS, Oracle Linux e Amazon Linux. Os recursos do complemento AEM Forms só são compatíveis com CentOS 7, Red Hat Enterprise Linux 7 e Red Hat Enterprise Linux 8.
-1. O AEM Forms é compatível somente com o Ubuntu 16.04 LTS
-1. Distribuição Linux suportada pelos Adobe Managed Services
+1. O AEM Forms é compatível com o Ubuntu 20.04 LTS.
+1. Distribuição Linux suportada pelo Adobe Managed Services.
 1. As implantações de produção do Microsoft Windows são compatíveis com clientes que atualizam para 6.5 e para uso não relacionado à produção. Novas implantações são por solicitação do AEM Sites e do Assets.
 1. O AEM Forms é compatível com o Microsoft Window Server sem as restrições do Nível de Suporte R.
 
