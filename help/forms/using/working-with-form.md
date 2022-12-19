@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: 3c691a9e8673f3229368abbd550982d207eb8ac6
+source-git-commit: eb71119474f03a969a721c792b6f1ac330f9dbf3
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Para sincronizar vários formulários, na instância de autor, selecione vários
 
 Se o aplicativo Android AFA (Aplicativo de formulário AEM) não for sincronizado, execute as seguintes etapas para corrigir o problema de sincronização:
 
-1. Vá para o **https://&#39;[server]:[porta]&quot;system/console/configMgr**.
+1. Vá para o **https://[server]:[porta]/system/console/configMgr**.
 1. Procure a variável **[!UICONTROL Manipulador de Autenticação de Token do Adobe Granite]** e clique em **[!UICONTROL Editar]**.
 1. Selecione o **[!UICONTROL Nenhum]** no menu suspenso da **[!UICONTROL Atributo SameSite para o cookie de token de logon]** atributo.
 1. Clique em **[!UICONTROL Salvar]**.
