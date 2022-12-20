@@ -1,7 +1,7 @@
 ---
 title: CRX/bundle e Start page service unavailable errors depois que o service pack 6.5.15.0 mais recente for instalado
 description: CRX/bundle e Start page service unavailable errors depois que o service pack 6.5.15.0 mais recente for instalado
-source-git-commit: 4e4dca8ae8ed49c5b81934f22572c84938f4f676
+source-git-commit: be7a9cfc226537ab4b360064220fa03bf2045310
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 2%
@@ -31,9 +31,9 @@ Depois de instalar [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/do
 1. Localize a variável `bundle.info` arquivo.
 1. Abra o `bundle.info` no editor de texto de ant e procure pelo nome do pacote como `org.apache.felix.http.bridge`.
 
->[!NOTE]
->
->Caso a variável `bundle.info` under `bundle52` não contém o `org.apache.felix.http.bridge` pacote, verifique o número do pacote entre colchetes ao lado do `org.apache.felix.http.bridge`. Em seguida, navegue até [raiz do aem-forms]\crx-repository\launchpad\felix\bundle[x] e execute as próximas etapas neste local.
+   >[!NOTE]
+   >
+   >Caso a variável `bundle.info` under `bundle52` não contém o `org.apache.felix.http.bridge` pacote, verifique o número do pacote entre colchetes ao lado do `org.apache.felix.http.bridge`. Em seguida, navegue até [raiz do aem-forms]\crx-repository\launchpad\felix\bundle[x] e execute as próximas etapas neste local.
 
 1. Vá até o URL: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. Procurar por `bundle.jar` e renomeie o `bundle.jar` para `bundle.jar.bak`.
