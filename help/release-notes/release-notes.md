@@ -3,7 +3,7 @@ title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: Encontre informações sobre a versão, novidades, instruções de instalação e uma lista detalhada de alterações para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: e73a65569963a5f60f7a4670998ada29deeb26b8
+source-git-commit: a27e460a19d3f986ee87b33263b8db1e45897497
 workflow-type: tm+mt
 source-wordcount: '4036'
 ht-degree: 3%
@@ -166,7 +166,7 @@ ht-degree: 3%
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
-* O GraphQL gera uma exceção. Por exemplo, não é possível obter tags de variação de um fragmento de conteúdo. Não há variação com o nome &quot;elétrico&quot;. Esse problema é devido à chamada de `getVariationTags` para uma variação não existente que suscite uma exceção. (SITES-8898)
+* GraphQL gera uma exceção. Por exemplo, não é possível obter tags de variação de um fragmento de conteúdo. Não há variação com o nome &quot;elétrico&quot;. Esse problema é devido à chamada de `getVariationTags` para uma variação não existente que suscite uma exceção. (SITES-8898)
 * Classificação de ordens de título na exibição em Lista, ascendentes e decrescentes, como os títulos com a ordem A, C, B. (SITES-7585)
 * Adição do suporte à marcação para variações de fragmento de conteúdo. (SITES-8168)
 * Identificado e removido o código específico do Odin do Experience Manager 6.5 que era desnecessário. (SITES-3574)
@@ -288,6 +288,7 @@ Execute as etapas a seguir para todos os ambientes AEM Forms em JEE usando qualq
    >[!NOTE]
    >
    >Se você instalar o [AEM service pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), antes de instalar o [Fragmento para AEM 6.5 Forms no JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) no ambiente AEM 6.5 Forms no JEE, o CRX/bundle e a página inicial podem parar de funcionar e você encontra o erro de serviço indisponível. Para resolver o problema, execute as ações [listado aqui](/help/forms/using/aem-service-pack-installation-solution.md).
+
 1. Instale o [pacote complementar mais recente do Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), exclua o pacote do complemento Forms do `crx-repository\install` e reinicie o servidor.
 
 ### UberJar {#uber-jar}
