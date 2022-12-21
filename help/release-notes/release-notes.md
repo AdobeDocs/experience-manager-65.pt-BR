@@ -3,9 +3,9 @@ title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: Encontre informações sobre a versão, novidades, instruções de instalação e uma lista detalhada de alterações para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: c98ca7cafd559aaf0b0b889f8f03690de880e944
+source-git-commit: e73a65569963a5f60f7a4670998ada29deeb26b8
 workflow-type: tm+mt
-source-wordcount: '3975'
+source-wordcount: '4036'
 ht-degree: 3%
 
 ---
@@ -280,16 +280,14 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 >Pule se você não estiver usando o AEM Forms no JEE. Correções na [!DNL Experience Manager] O Forms no JEE é fornecido por meio de um instalador separado.
 
 Execute as etapas a seguir para todos os ambientes AEM Forms em JEE usando qualquer servidor de aplicativos que não seja JBoss EAP 7.4.0.
-
-1. Instale o instalador cumulativo para [!DNL Experience Manager] Forms no JEE e configuração pós-implantação, consulte o [notas de versão](jee-patch-installer-65.md).
-
-1. Instale o [Fragmento para AEM 6.5 Forms no JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) fragmento de servlet e aguarde a estabilização do servidor de aplicativos.
-1. Instale o [AEM 6.5.15.0 service pack](#install-service-pack).
+1. Instalar [Patch do AEM Forms JEE](jee-patch-installer-65.md). O inclui todos os problemas corrigidos para todos os componentes do AEM 6.5 Forms no JEE.
+1. Instale o [Fragmento para AEM 6.5 Forms no JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar). O fragmento adiciona as dependências necessárias para instalar AEM Service Pack 15 (6.5.15.0).
+1. Depois de instalar o fragmento, aguarde a estabilização do servidor de aplicativos.
+1. [Instale o service pack no Experience Manager 6.5](#install-service-pack).
 
    >[!NOTE]
    >
-   >Se você instalar o [AEM service pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), antes da `Fragment for AEM 6.5 Forms on JEE Service Pack 15` no ambiente JEE, o CRX/bundle e a página de início mostram erros de serviço indisponíveis, [clique aqui](/help/forms/using/aem-service-pack-installation-solution.md) para conhecer as etapas de solução de problemas.
-
+   >Se você instalar o [AEM service pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), antes de instalar o [Fragmento para AEM 6.5 Forms no JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) no ambiente AEM 6.5 Forms no JEE, o CRX/bundle e a página inicial podem parar de funcionar e você encontra o erro de serviço indisponível. Para resolver o problema, execute as ações [listado aqui](/help/forms/using/aem-service-pack-installation-solution.md).
 1. Instale o [pacote complementar mais recente do Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), exclua o pacote do complemento Forms do `crx-repository\install` e reinicie o servidor.
 
 ### UberJar {#uber-jar}
