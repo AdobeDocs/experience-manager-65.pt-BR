@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 33b8cf60e2a6ae13c103040d96b0e2db487ddd99
+source-git-commit: e8026cb0c7de3b1c903bf95dc31e567076e837eb
 workflow-type: tm+mt
-source-wordcount: '3452'
+source-wordcount: '3488'
 ht-degree: 1%
 
 ---
@@ -451,10 +451,6 @@ Para Windows x86:
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2019<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office Visio 2016 (Obsoleto)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
@@ -465,10 +461,6 @@ Para Windows x86:
   <tr>
    <td>Microsoft® Publisher 2016 (Obsoleto)<br /> </td>
    <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Projeto Microsoft® 2019<br /> </td>
-   <td>MPP</td>
   </tr>
   <tr>
    <td>Microsoft® Project 2016 (Obsoleto)<br /> </td>
@@ -499,6 +491,8 @@ Para Windows x86:
 >* Os recursos PDF, Optimize PDF e Export PDF do OCR são suportados apenas no Windows.
 >* Uma versão do Acrobat é fornecida com o AEM Forms para habilitar a funcionalidade PDF Generator. A versão agrupada só deve ser acessada programaticamente com o AEM Forms, durante o período da licença do AEM Forms, para uso com o PDF Generator da AEM Forms. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* O serviço PDF Generator não suporta Microsoft Windows 10.
+>* O PDF Generator não consegue converter arquivos usando o Microsoft Visio 2019. Você pode continuar usando o Microsoft Visio 2016 para converter arquivos .VSD e .VSDX.
+>* O PDF Generator não consegue converter arquivos usando o Microsoft Project 2019. Você pode continuar usando o Microsoft Project 2016 para converter arquivos .VSD e .VSDX.
 >
 
 

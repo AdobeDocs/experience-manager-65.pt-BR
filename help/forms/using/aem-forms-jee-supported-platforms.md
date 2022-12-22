@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e8026cb0c7de3b1c903bf95dc31e567076e837eb
 workflow-type: tm+mt
-source-wordcount: '3683'
+source-wordcount: '3720'
 ht-degree: 1%
 
 ---
@@ -419,7 +419,7 @@ Além disso, considere os seguintes pontos ao escolher o software para o Adobe A
   </tr>
   <tr>
    <td>EMC Documentum</td>
-   <td>7,3</td>
+   <td>7.3</td>
   </tr>
   <tr>
    <td>IBM Filenet</td>
@@ -431,7 +431,7 @@ Além disso, considere os seguintes pontos ao escolher o software para o Adobe A
   </tr>
   <tr>
    <td> Cliente do IBM Content Manager (obsoleto)</td>
-   <td>8,5 </td>
+   <td>8.5 </td>
   </tr>
   <tr>
    <td>Microsoft Sharepoint </td>
@@ -482,10 +482,6 @@ O aplicativo AEM Forms agora é compatível com o Apache Cordova. A seguir estã
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2019<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office Visio 2016 (Obsoleto)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
@@ -530,6 +526,9 @@ O aplicativo AEM Forms agora é compatível com o Apache Cordova. A seguir estã
 >- Uma versão do Acrobat é fornecida com o AEM Forms para habilitar a funcionalidade PDF Generator. A versão agrupada só deve ser acessada programaticamente com o AEM Forms, durante o período da licença do AEM Forms, para uso com o PDF Generator da AEM Forms. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
 >- O serviço PDF Generator não suporta Microsoft Windows 10.
+>- O PDF Generator não consegue converter arquivos usando o Microsoft Visio 2019. Você pode continuar usando o Microsoft Visio 2016 para converter arquivos .VSD e .VSDX.
+>- O PDF Generator não consegue converter arquivos usando o Microsoft Project 2019. Você pode continuar usando o Microsoft Project 2016 para converter arquivos .MPP.
+>
 
 
 ### Exceções ao suporte de acessibilidade {#exceptions-to-accessibility-support}
@@ -801,7 +800,7 @@ As seguintes plataformas são marcadas como obsoletas na versão 6.5.10.0 do AEM
 
 >[!NOTE]
 >
->As plataformas marcadas como [obsoleto no AEM Forms 6.5.12.0 e 6.5.10.0 permanece em suporte até a versão AEM Forms 6.5 Service Pack 18 (6.5.18.0)](https://helpx.adobe.com/support/programs/eol-matrix.html).
+>As plataformas marcadas como [obsoleto no AEM Forms 6.5.12.0 e 6.5.10.0 permanece em suporte até a versão AEM Forms 6.5 Service Pack 18 (6.5.18.0)](https://helpx.adobe.com/br/support/programs/eol-matrix.html).
 
 ## Histórico de revisão {#revision-history}
 
