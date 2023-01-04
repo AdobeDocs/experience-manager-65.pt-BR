@@ -3,9 +3,9 @@ title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: Encontre informações sobre a versão, novidades, instruções de instalação e uma lista detalhada de alterações para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: a27e460a19d3f986ee87b33263b8db1e45897497
+source-git-commit: d3b830730ef06fb9968a46d6f26a275417cf36f0
 workflow-type: tm+mt
-source-wordcount: '4036'
+source-wordcount: '4046'
 ht-degree: 3%
 
 ---
@@ -144,6 +144,7 @@ ht-degree: 3%
 * Quando o usuário tenta executar um Formulário AEM no patch JEE após alterar a senha padrão do usuário administrador, uma exceção `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` ocorre. (CQ-4348277)
 * No AEM Designer, campos de formulário sem legendas são colocados em células de tabela, incluindo caixas de seleção.(LC-3920410)
 * Quando o usuário tenta abrir a Ajuda no AEM Forms Designer, ela não é exibida corretamente. (CQ-4341996)
+* O Forms adaptável com várias localidades é lento para carregar. (NPR-39176)
 
 ## [!DNL Sites] {#sites-6515}
 
@@ -166,7 +167,7 @@ ht-degree: 3%
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
-* GraphQL gera uma exceção. Por exemplo, não é possível obter tags de variação de um fragmento de conteúdo. Não há variação com o nome &quot;elétrico&quot;. Esse problema é devido à chamada de `getVariationTags` para uma variação não existente que suscite uma exceção. (SITES-8898)
+* O GraphQL gera uma exceção. Por exemplo, não é possível obter tags de variação de um fragmento de conteúdo. Não há variação com o nome &quot;elétrico&quot;. Esse problema é devido à chamada de `getVariationTags` para uma variação não existente que suscite uma exceção. (SITES-8898)
 * Classificação de ordens de título na exibição em Lista, ascendentes e decrescentes, como os títulos com a ordem A, C, B. (SITES-7585)
 * Adição do suporte à marcação para variações de fragmento de conteúdo. (SITES-8168)
 * Identificado e removido o código específico do Odin do Experience Manager 6.5 que era desnecessário. (SITES-3574)
@@ -327,7 +328,7 @@ Revise se você usa um recurso ou um recurso em uma implantação. Além disso, 
  -->
 
 * [AEM Fragmento de conteúdo com o Pacote de índice GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
-Esse pacote é necessário para clientes que usam o GraphQL; isso permite que eles adicionem a definição de índice necessária com base nos recursos que realmente usam.
+Esse pacote é necessário para clientes que usam GraphQL; isso permite que eles adicionem a definição de índice necessária com base nos recursos que realmente usam.
 
 * As [!DNL Microsoft® Windows Server 2019] não suporta [!DNL MySQL 5.7] e [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] não suporta instalações turnkey para [!DNL AEM Forms 6.5.10.0].
 
