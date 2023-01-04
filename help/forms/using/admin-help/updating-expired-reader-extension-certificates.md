@@ -2,9 +2,9 @@
 title: Expiração dos certificados de extensões Reader e seu impacto
 description: Expiração dos certificados de extensões Reader e seu impacto
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: 5f8061ebd2143f11567ac5b78162bdd02106d2e3
+source-git-commit: 6e9a7f3307ed05f887d60c7c7310100cd4596b23
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1121'
 ht-degree: 2%
 
 ---
@@ -14,11 +14,9 @@ ht-degree: 2%
 
 Os clientes da Adobe Experience Manager Forms (AEM Forms) com o Adobe Managed Services ou licenças no local da Enterprise Base têm direito de usar o serviço de extensões da Acrobat Reader DC. O serviço permite que uma organização compartilhe facilmente documentos interativos do PDF, estendendo a funcionalidade do Acrobat Reader com direitos de uso adicionais. O serviço adiciona direitos de uso a um documento do PDF e ativa recursos que não estão disponíveis quando um documento do PDF é aberto usando o Adobe Acrobat Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento. Usuários de terceiros não exigem software ou plug-ins adicionais para trabalhar com documentos ativados por direitos. Os documentos do PDF com direitos de uso adicionados são chamados de documentos ativados por direitos. Um usuário que abre um documento do PDF habilitado para direitos no Acrobat Reader pode executar as operações ativadas para esse documento.
 
-O Adobe utiliza uma PKI (infraestrutura de chave pública) para emitir certificados digitais para uso em licenciamento e ativação de recursos. A Adobe está emitindo certificados sob a autoridade de certificação &quot;Adobe Root CA&quot;, que expira em 7 de janeiro de 2023. Uma nova autoridade de certificação, &quot;Adobe Root CA G2&quot;, e certificados baseados na nova autoridade de certificação estão disponíveis.
+O Adobe utiliza uma PKI (infraestrutura de chave pública) para emitir certificados digitais para uso em licenciamento e ativação de recursos. A Adobe emitiu certificados sob a autoridade de certificação **CA raiz Adobe**, que expira em 7 de janeiro de 2023. A expiração do certificado não afeta documentos PDF estendidos por meio de certificados de produção emitidos do **CA raiz Adobe** certificados baseados (certificados antigos). Todos os documentos do PDF, Reader estendido usando os certificados antigos antes de 7 de janeiro de 2023, incluindo os baixados pelos clientes, continuariam a funcionar com todos os direitos de uso aplicados a eles e não exigiriam atualizações.
 
-Certificados antigos (certificados baseados em &quot;CA Adobe&quot;) não funcionam mais após 7 de janeiro de 2023. A Adobe recomenda que você comece a usar os novos certificados — aqueles baseados em &quot;Adobe Root CA G2&quot; — para Reader estender seus documentos do PDF em ou antes de 7 de janeiro de 2023.  Você pode [obter novos certificados do site de licenciamento de Adobe](https://licensing.adobe.com/) ou Suporte ao Adobe.
-
-Todos os documentos do PDF, Reader estendidos usando os certificados mais antigos antes de 7 de janeiro de 2023, incluindo os baixados pelos clientes, continuariam a funcionar com todos os direitos de uso que são aplicados a eles e não exigiriam atualizações.
+Uma nova autoridade de certificação, **CA raiz Adobe G2** e os certificados baseados na nova autoridade de certificação agora estão disponíveis. Em ou antes de 7 de janeiro de 2023, comece a usar os novos certificados — aqueles baseados em **CA raiz Adobe G2** — para estender seus novos documentos de PDF.  Você pode [obter novos certificados do site de licenciamento de Adobe](https://licensing.adobe.com/) ou Suporte ao Adobe.
 
 ## Perguntas frequentes
 
@@ -56,7 +54,7 @@ A. O Adobe Acrobat Reader 2020 ou posterior é necessário para usar documentos 
 
 **P. Qual versão do Adobe Acrobat Reader é necessária para continuar usando documentos PDF estendidos com certificados emitidos de &quot;Adobe Root CA 2&quot; (a nova autoridade de certificação)?**
 
-A. O Adobe Acrobat Reader 2020 ou posterior é necessário para usar documentos PDF estendidos com &quot;Adobe Root CA 2&quot; (a nova autoridade de certificação). Se estiver usando um [versão não compatível do Adobe Acrobat Reader](https://helpx.adobe.com/support/programs/eol-matrix.html), o Adobe recomenda que você [baixar e instalar a versão mais recente do Adobe Acrobat Reader](https://get.adobe.com/reader/).
+A. O Adobe Acrobat Reader 2020 ou posterior é necessário para usar documentos PDF estendidos com &quot;Adobe Root CA 2&quot; (a nova autoridade de certificação). Se estiver usando um [versão não compatível do Adobe Acrobat Reader](https://helpx.adobe.com/br/support/programs/eol-matrix.html), o Adobe recomenda que você [baixar e instalar a versão mais recente do Adobe Acrobat Reader](https://get.adobe.com/reader/).
 
 **P. Posso excluir um certificado antigo de extensões do Acrobat Reader e adicionar um novo em um Servidor Adobe Experience Manager Forms enquanto continuo usando o alias existente?**
 
