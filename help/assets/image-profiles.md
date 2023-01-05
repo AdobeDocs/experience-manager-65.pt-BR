@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 008a27c6a1c818a96a24dfcc7f5650409d31e7c2
+source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
 workflow-type: tm+mt
-source-wordcount: '2835'
-ht-degree: 10%
+source-wordcount: '3005'
+ht-degree: 9%
 
 ---
 
@@ -42,7 +42,20 @@ As coordenadas de recorte inteligente dependem da taxa de proporção. Para as v
 
 Cada geração de Corte inteligente que você cria requer processamento extra. Por exemplo, adicionar mais de cinco taxas de proporção de Corte inteligente pode resultar em uma taxa lenta de ingestão de ativos. Também causa um aumento da carga nos sistemas. Como você pode aplicar o Recorte inteligente no nível da pasta, o Adobe recomenda usá-lo nas pastas *only* quando necessário.
 
-Você tem duas opções de recorte de imagem que podem ser escolhidas. Você também tem uma opção para automatizar a criação de amostras de cores e imagens.
+**Diretrizes para definir o Recorte inteligente em um perfil de imagem**
+Para manter o uso do Smart Crop sob controle e otimizar o tempo de processamento e o armazenamento de colheitas, o Adobe recomenda as seguintes diretrizes e dicas:
+
+* Evite criar perfis de recorte inteligente duplicados que tenham os mesmos valores de largura e altura.
+* Nomeie as culturas inteligentes com base em dimensões de corte, não no uso final. Isso ajuda a otimizar para duplicatas, onde uma única dimensão é usada em várias páginas.
+* Crie perfis de imagem em toda a página/no tipo de ativo para pastas e subpastas específicas em vez de um perfil de recorte inteligente comum aplicado a todas as pastas ou a todos os ativos.
+* Um perfil de Imagem aplicado às subpastas substitui um perfil de Imagem aplicado à pasta.
+* Idealmente, tenha 10 a 15 recortes inteligentes por imagem para otimizar as taxas de tela e o tempo de processamento.
+
+Você tem duas opções de recorte de imagem para escolher. Você também pode optar por automatizar a criação de amostras de cores e imagens ou preservar o conteúdo de corte nas resoluções do target.
+
+>[!IMPORTANT]
+・ O Adobe recomenda que você analise todas as culturas e amostras geradas para garantir que elas sejam apropriadas e relevantes para sua marca e valores.
+・ O formato de imagem CMYK não é compatível com o recorte inteligente.
 
 | Opção | Quando usar | Descrição |
 | --- | --- | --- |
@@ -52,7 +65,7 @@ Você tem duas opções de recorte de imagem que podem ser escolhidas. Você tam
 
 ## Tirar nitidez da máscara {#unsharp-mask}
 
-Use a **[!UICONTROL Tirar nitidez da máscara]** para ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida. Você pode controlar a intensidade do efeito, o raio do efeito (medido em pixels) e um limite de contraste que é ignorado. Esse efeito usa as mesmas opções da Adobe Photoshop *Tirar nitidez da máscara* filtro.
+Use a **[!UICONTROL Tirar nitidez da máscara]** para ajustar um efeito de filtro de nitidez na imagem final com resolução reduzida. Você pode controlar a intensidade do efeito, o raio do efeito (medido em pixels) e um limite de contraste que é ignorado. Esse efeito usa as mesmas opções do Adobe Photoshop *Tirar nitidez da máscara* filtro.
 
 >[!NOTE]
 A Tirar nitidez da máscara é aplicada apenas a representações baixadas dentro do PTIFF (tiff de pirâmide) que têm uma resolução reduzida de mais de 50%. Isso significa que as representações de maior tamanho dentro do ptiff não são afetadas pela máscara de nitidez, enquanto representações de menor tamanho, como miniaturas, são alteradas (e mostram a máscara de nitidez).

@@ -8,10 +8,10 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: 9604d950d33e1b5d32ba8141a35059c6e5787aeb
+source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 6%
+source-wordcount: '235'
+ht-degree: 3%
 
 ---
 
@@ -28,13 +28,13 @@ Este tópico inclui as seguintes seções:
 
 Quando você cria um Conjunto de rotação ou um Conjunto de imagens, ou faz upload de PDF para extração de página, o Adobe recomenda as seguintes práticas recomendadas e impõe os seguintes limites:
 
-| Ativo - Tipo de limite | Prática recomendada | Limite imposto | Alteração do limite em 31 de dezembro de 2022 |
-| --- | --- | --- | --- |
-| **Imagem** - Número de Smart Crops por imagem | 5 | 100 | Não aplicável |
-| **Todos os conjuntos** - Número de ativos duplicados por conjunto | Sem duplicatas | 20 | Não aplicável |
-| **Todos os conjuntos** - Número máximo de ativos por conjunto | 5 a 10 imagens por conjunto | 1000 | Não aplicável |
-| **Conjunto de rotação** - Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 | Não aplicável |
-| **PDF** - Número máximo de páginas para um PDF a ser considerado para extração |  | 5000 (para novos uploads) | 100 (para todos os PDF) |
+| Ativo - Tipo de limite | Prática recomendada | Limite imposto |
+| --- | --- | --- |
+| **Imagem** - Número de Smart Crops por imagem | 5 | 100 |
+| **Todos os conjuntos** - Número de ativos duplicados por conjunto | Sem duplicatas | 20 |
+| **Todos os conjuntos** - Número máximo de ativos por conjunto | 5 a 10 imagens por conjunto | 1000 |
+| **Conjunto de rotação** - Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |
+| **PDF** - Número máximo de páginas para um PDF a ser considerado para extração |  | 100 (para todos os PDF) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
