@@ -92,7 +92,7 @@ ht-degree: 87%
    + [Noções sobre segmentação](segmentation-overview.md)
 + AEM e Adobe Campaign {#aem-adobe-campaign}
    + [Trabalhar com o Adobe Campaign](adobe-campaign.md)
-   + [Trabalhar com o Adobe Campaign Classic e o Adobe Campaign Standard](campaign.md)
+   + [Trabalho com o Adobe Campaign Classic e Adobe Campaign Standard](campaign.md)
    + [Direcionamento sua campanha do Adobe Campaign](target-adobe-campaign.md)
    + [Criação de formulários do Adobe Campaign no AEM](adobe-campaign-forms.md)
    + [Componentes do Adobe Campaign](adobe-campaign-components.md)
