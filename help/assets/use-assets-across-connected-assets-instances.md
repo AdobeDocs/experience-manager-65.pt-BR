@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 0df4bce6651517c6049578d0a1434726ab04e240
+source-git-commit: cd7800546ec4ebc950c5ebca4d7c80779cb2632c
 workflow-type: tm+mt
-source-wordcount: '3837'
+source-wordcount: '3877'
 ht-degree: 18%
 
 ---
@@ -44,7 +44,7 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6,5 [!DNL Sites] no AMS | [!DNL Experience Manager] 6,5 [!DNL Sites] no local |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]como[!DNL Cloud Service]** | Compatível | Compatível | Compatível |
+   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Compatível | Compatível | Compatível |
    | **[!DNL Experience Manager]6,5 [!DNL Assets] no AMS** | Compatível | Compatível | Compatível |
    | **[!DNL Experience Manager]6,5 [!DNL Assets] no local** | Incompatível | Incompatível | Incompatível |
 
@@ -252,7 +252,7 @@ Você também pode atualizar as propriedades de metadados de um ativo no DAM rem
 >
 >As atualizações de ativos no DAM remoto são disponibilizadas para o [!DNL Sites] implantação somente se o DAM remoto e [!DNL Sites] as implantações estão ativadas [!DNL Experience Manager].
 
-## Perguntas frequentes  {#frequently-asked-questions}
+## Perguntas frequentes {#frequently-asked-questions}
 
 +++**Você deve configurar o Connected Assets se precisar usar os ativos disponíveis no [!DNL Sites] implantação?**
 
@@ -356,6 +356,13 @@ Para solucionar erros comuns, siga estas etapas:
 * Se você não conseguir acessar a implantação remota do DAM a partir do local [!DNL Sites] , garanta que os cookies entre sites sejam permitidos e [mesmo suporte a cookies do site](/help/sites-administering/same-site-cookie-support.md) está configurado. Se os cookies entre sites estiverem bloqueados, as implantações de [!DNL Experience Manager] não pode autenticar. Por exemplo, [!DNL Google Chrome] no modo Incógnito pode bloquear cookies de terceiros. Para permitir cookies no [!DNL Chrome] no navegador, clique no ícone &quot;olho&quot; na barra de endereços, navegue até **Site não está funcionando** > **Bloqueio**, selecione a URL do DAM remoto e permita o cookie do token de login. Como alternativa, consulte [como ativar cookies de terceiros](https://support.google.com/chrome/answer/95647).
 
    ![Erro de cookie no navegador Chrome no modo Incógnito](assets/chrome-cookies-incognito-dialog.png)
+
+* Se você não conseguir acessar a implantação remota do DAM do Adobe Managed Services a partir da implantação do Experience Manager Sites as a Cloud Service Sites, atualize o `aem_author.vhost` , disponível em `"/etc/httpd/conf.d/available_vhosts`, para que o DAM remoto inclua os seguintes cabeçalhos na configuração do Dispatcher:
+
+   ```xml
+   Header Set Access-Control-Allow-Origin <Local Sites instance host>
+   Header Set Access-Control-Allow-Credentials true
+   ```
 
 * Se referências remotas não forem recuperadas e resultarem em uma mensagem de erro, verifique se [!DNL Sites] a implantação está disponível e verifique se há problemas de conectividade de rede. Tente novamente mais tarde para verificar. [!DNL Assets] a implantação tenta duas vezes estabelecer a conexão com o [!DNL Sites] e, em seguida, relata uma falha.
 
