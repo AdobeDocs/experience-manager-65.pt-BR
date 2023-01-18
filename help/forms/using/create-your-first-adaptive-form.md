@@ -9,10 +9,10 @@ discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
+source-git-commit: 318347178fd626dea8e5a15caa7cdad8fe353eba
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 0%
+source-wordcount: '965'
+ht-degree: 9%
 
 ---
 
@@ -41,7 +41,7 @@ O site é executado no Adobe Experience Manager (AEM) e usa AEM [!DNL Forms] par
 
 ### Pré-requisitos {#prerequisite}
 
-* Configure uma instância do autor de AEM.
+* Configure um [Instância do autor AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#author-and-publish-installs)
 * Instalar [Complemento do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) na instância do autor.
 * Obtenha o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Os exemplos no tutorial são baseados em [!DNL MySQL] banco de dados e uso [!DNL Oracle's] [Driver de banco de dados JDBC do MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
@@ -62,7 +62,7 @@ Metas:
 * Criar ação de envio para enviar um email contendo conteúdo de formulário
 * Visualizar e enviar um formulário adaptável
 
-[![Consulte o Guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
+[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## Etapa 2: Criar Modelo de Dados de Formulário {#step-create-form-data-model}
 
@@ -78,7 +78,7 @@ Metas:
 * Configurar serviços de leitura e gravação para o modelo de dados de formulário
 * Testar modelo de dados de formulário e serviços configurados com dados de teste
 
-[![Consulte o Guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
+[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## Etapa 3: Aplicar regras a campos de formulário adaptáveis {#step-apply-rules-to-adaptive-form-fields}
 
@@ -91,7 +91,7 @@ Metas:
 * Criar e aplicar regras a campos de formulário adaptáveis
 * Usar regras para acionar serviços de modelo de dados de formulário para atualizar dados para o banco de dados
 
-[![Consulte o Guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## Etapa 4: Estilo do formulário adaptável {#step-style-your-adaptive-form}
 
@@ -105,7 +105,7 @@ Metas:
 * Criar um tema para um formulário adaptável usando o editor de temas
 * Usar fontes da Web em um tema personalizado
 
-[![Consulte o Guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
 ## Etapa 5: Publicar o formulário adaptável {#step-publish-your-adaptive-form}
 
@@ -119,4 +119,4 @@ Metas:
 * Incorporar o formulário adaptável em um AEM [!DNL Sites] Página
 * Incorporar o formulário adaptável em uma página da Web externa (uma página da Web que não seja AEM hospedada fora do AEM)
 
-[![Consulte o Guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)
