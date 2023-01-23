@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 88763b318e25efb16f61bc16530082877392c588
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 83%
+source-wordcount: '1553'
+ht-degree: 65%
 
 ---
 
@@ -118,7 +118,7 @@ As opções necessárias podem ser selecionadas nas **Propriedades de página** 
    >
    >Consulte o componente principal:
    >
-   >[Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
+   >[Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=pt-BR)
 
    Em **Adobe Target**, selecione:
 
@@ -210,3 +210,85 @@ Para evitar essas situações:
       * A oferta provavelmente ainda será renderizada, pois o HTML do fragmento de experiência foi enviado para o Target
       * Qualquer referência no fragmento de experiência pode não funcionar corretamente se os ativos referenciados também tiverem sido excluídos no AEM.
    * É impossível realizar qualquer alteração adicional no fragmento de experiência, pois ele não existe mais no AEM.
+
+
+
+## Remoção de bibliotecas de clientes dos fragmentos de experiência exportados para o Target {#removing-clientlibs-from-fragments-exported-target}
+
+Os Fragmentos de experiência contêm tags html completas e todas as bibliotecas de clientes necessárias (CSS/JS) para renderizar o fragmento exatamente como ele foi criado pelo autor de conteúdo do fragmento de experiência. Isso é por design.
+
+Ao usar uma oferta de fragmento de experiência com o Adobe Target em uma página que está sendo entregue pelo AEM, a página Direcionado já contém todas as bibliotecas de clientes necessárias. Além disso, o html externo na oferta do fragmento de experiência também não é necessário (consulte [Considerações](#considerations)).
+
+Este é um pseudo-exemplo do html em uma oferta do fragmento de experiência:
+
+```html
+<!DOCTYPE>
+<html>
+   <head>
+      <title>…</title>
+      <!-- all of the client libraries (css/js) -->
+      …
+   </head>
+   <body>
+        <!--/* Actual XF Offer content would appear here... */-->
+   </body>
+</html>
+```
+
+Em um alto nível, quando o AEM exporta um Fragmento de experiência para o Adobe Target, ele faz isso usando vários Seletores de sling adicionais. Por exemplo, o URL do Fragmento de experiência exportado pode ter a seguinte aparência (aviso `nocloudconfigs.atoffer`):
+
+* http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
+
+O `nocloudconfigs` O seletor é definido por meio do uso de HTL e pode ser sobreposto copiando-o de:
+
+* /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
+
+O `atoffer` na verdade, o seletor é aplicado após o processamento usando [Reescrita Sling](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Qualquer um pode ser usado para remover as bibliotecas de clientes.
+
+### Exemplo {#example}
+
+Para este fim, ilustraremos como fazer isso com `nocloudconfigs`.
+
+>[!NOTE]
+>
+>Consulte [Modelos editáveis](/help/sites-developing/templates.md#editable-templates) para obter mais detalhes.
+
+#### Sobreposições {#overlays}
+
+Neste exemplo específico, a variável [sobreposições](/help/sites-developing/overlays.md) ser incluído removerá as bibliotecas de clientes *e* o html externo. Pressupõe-se que você já tenha criado o Tipo de modelo do fragmento de experiência. Os arquivos necessários que precisarão ser copiados de `/libs/cq/experience-fragments/components/xfpage/` incluem:
+
+* `nocloudconfigs.html`
+* `head.nocloudconfigs.html`
+* `body.nocloudconfigs.html`
+
+#### Sobreposições de tipo de modelo {#template-type-overlays}
+
+Para o propósito deste exemplo, usaremos a seguinte estrutura:
+
+![Sobreposições de tipo de modelo](assets/xf-target-integration-02.png "Sobreposições de tipo de modelo")
+
+O conteúdo desses arquivos é o seguinte:
+
+* `body.nocloudconfigs.html`
+
+   ![body.nocloudconfigs.html](assets/xf-target-integration-03.png "body.nocloudconfigs.html")
+
+* `head.nocloudconfigs.html`
+
+   ![head.nocloudconfigs.html](assets/xf-target-integration-04.png "head.nocloudconfigs.html")
+
+* `nocloudconfigs.html`
+
+   ![nocloudconfigs.html](assets/xf-target-integration-05.png "nocloudconfigs.html")
+
+>[!NOTE]
+>
+>Para usar `data-sly-unwrap` para remover a tag body necessária `nocloudconfigs.html`.
+
+### Considerações {#considerations}
+
+Se você precisar oferecer suporte a sites AEM e não AEM usando as Ofertas de fragmento de experiência no Adobe Target, será necessário criar dois Fragmentos de experiência (dois tipos de modelo diferentes):
+
+* Um com a sobreposição para remover clientlibs/html extra
+
+* Uma que não tem a sobreposição e, portanto, inclui as clientlibs necessárias
