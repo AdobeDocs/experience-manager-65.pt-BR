@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: d30bfb9e67d0a2a0e870ee0841ed14060def7756
+source-git-commit: ae56ffafff38fe60530a8850732de58ba8c8f8f9
 workflow-type: tm+mt
 source-wordcount: '3252'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -539,7 +539,7 @@ When [editar um modelo, você pode definir o layout](/help/sites-authoring/templ
 
 ### Políticas de conteúdo {#content-policies}
 
-As políticas do conteúdo (ou design) definem as propriedades do design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínimas/máximas. Eles são aplicáveis ao modelo (e às páginas criadas com o modelo). As políticas de conteúdo podem ser criadas e selecionadas no editor de modelo.
+As políticas de conteúdo (ou design) definem as propriedades de design de um componente, como a disponibilidade do componente ou as dimensões mínimas/máximas. Eles são aplicáveis ao modelo (e às páginas criadas com o modelo). As políticas de conteúdo podem ser criadas e selecionadas no editor de modelo.
 
 * A propriedade `cq:policy`, no `root` nó
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`

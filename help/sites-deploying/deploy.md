@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 85a0c578a2cf57e2b4d65123cffe3816624211c8
 workflow-type: tm+mt
 source-wordcount: '1802'
 ht-degree: 8%
@@ -165,7 +165,7 @@ Na seção a seguir, descrevemos a variável **instalação autônoma**. Para ob
 
    *Observe que o caminho do diretório de arquivos deve consistir apenas em caracteres ASCII dos EUA.*
 
-1. Coloque o **jarro** e **licença **arquivos neste diretório:
+1. Coloque o **jarro** e **licença** arquivos neste diretório:
 
    ```shell
    <aem-install>/
@@ -304,7 +304,7 @@ A seção acima deve fornecer uma boa compreensão das noções básicas AEM ins
 * [Início e interrupção da linha de comando](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configuração](/help/sites-deploying/configuring.md)
 * [Atualização para o AEM 6.5](/help/sites-deploying/upgrade.md)
-* [comércio eletrônico](/help/commerce/cif-classic/deploying/ecommerce.md)
+* [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [Artigos explicativos de configuração](/help/sites-deploying/ht-deploy.md)
 * [Console da Web](/help/sites-deploying/web-console.md)
 * [Solução de problemas de replicação](/help/sites-deploying/troubleshoot-rep.md)
@@ -313,4 +313,4 @@ A seção acima deve fornecer uma boa compreensão das noções básicas AEM ins
 * [Introdução à plataforma de AEM](/help/sites-deploying/platform.md)
 * [Diretrizes de desempenho](/help/sites-deploying/performance-guidelines.md)
 * [Introdução ao AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [O que é o AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [O que é o AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=pt-BR)
