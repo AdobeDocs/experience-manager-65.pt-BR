@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: e13953bed73481738832a00a7563a07149c2d3bd
+source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 1%
@@ -150,7 +150,7 @@ Cada componente deve ser estendido com uma funcionalidade que decorará o elemen
 
 Um contêiner é um componente destinado a conter e renderizar componentes filhos. Para fazer isso, o contêiner repete a `:itemsOrder`, `:items` e `:children` propriedades do modelo.
 
-O contêiner obtém dinamicamente os componentes filhos do armazenamento do ` [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping)` biblioteca. Em seguida, o contêiner estende o componente filho com os recursos do Provedor de modelo e, por fim, instanciá-lo.
+O contêiner obtém dinamicamente os componentes filhos do armazenamento do [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) biblioteca. Em seguida, o contêiner estende o componente filho com os recursos do Provedor de modelo e, por fim, instanciá-lo.
 
 ### Página {#page}
 

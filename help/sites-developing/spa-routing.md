@@ -10,9 +10,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 509ea0945e6c80e50f6f5bffd4c68282d586504a
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ O `ModelRouter` automatiza a busca de fragmentos do modelo. Mas como qualquer fe
 
 >[!NOTE]
 >
->Atualmente, o projeto React da amostra de diário We.Retail ilustra a abordagem automatizada, enquanto o projeto do Angular ilustra a abordagem manual. Uma abordagem semiautomatizada seria também um caso de uso válido.
+>O [We.Retail Journal](https://github.com/adobe/aem-sample-we-retail-journal) o projeto React de amostra ilustra a abordagem automatizada, enquanto o projeto do Angular ilustra a abordagem manual. Uma abordagem semiautomatizada seria também um caso de uso válido.
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ O `ModelRouter` suporta o conceito de roteamento de modelo como ele escuta `push
 Por padrão, esse comportamento é ativado automaticamente. Para desativá-lo, o SPA deve renderizar a seguinte meta propriedade:
 
 ```
-<meta property="cq:pagemodel_router" content="disable"\>
+<meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
 Observe que cada rota do SPA deve corresponder a um recurso acessível em AEM (por exemplo, &quot; `/content/mysite/mypage"`) desde a `PageModelManager` O tentará carregar automaticamente o modelo de página correspondente depois que a rota for selecionada. Embora, se necessário, o SPA também possa definir uma &quot;lista de bloqueios&quot; de rotas que devem ser ignoradas pelo `PageModelManager`:
