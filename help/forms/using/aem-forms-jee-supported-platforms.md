@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: b2c8cf2fbc4db1d9f1b013fb93d71ed5c08eab59
+source-git-commit: 26e71c5f09eb9fa3f3eda01deb871ac63e348a30
 workflow-type: tm+mt
-source-wordcount: '3717'
+source-wordcount: '3699'
 ht-degree: 1%
 
 ---
@@ -366,7 +366,7 @@ Considere as seguintes exceções ao escolher uma plataforma para configurar seu
 1. O AEM Forms no JEE não oferece suporte ao IBM® WebSphere® com MySQL.
 1. O AEM Forms no JEE não é compatível com e o JBoss no SUSE Linux Enterprise Server 12. Somente o IBM WebSphere é compatível com o SUSE Linux Enterprise Server 12.
 1. O AEM Forms no JEE não é compatível com nenhum JDK com JBoss® que não seja o Oracle Java™ SE.
-1. O AEM Forms no JEE não é compatível com nenhum JDK com IBM® WebSphere® que não seja o IBM® JDK.
+1. O AEM Forms no JEE não suporta nenhum JDK com IBM® WebSphere® que não seja o IBM® JDK.
 1. O CRX-repository suporta persistência de tipo TarMK, MongoDB e bancos de dados relacionais (RDBMK). Não é possível ter dois sistemas de banco de dados diferentes entre o servidor de aplicativos e o repositório CRX. No entanto, em um ambiente AEM Forms no JEE, você pode usar o MongoMK com o repositório CRX e um banco de dados relacional compatível com o servidor de aplicativos.
 1. O AEM Forms no JEE não é compatível com o servidor de aplicativos WebSphere no CentOS.
 1. O AEM Forms no JEE não oferece suporte ao RBAC (controle de acesso baseado em função JBoss).
@@ -509,21 +509,17 @@ O aplicativo AEM Forms agora é compatível com o Apache Cordova. A seguir estã
 </table>
 
 >[!NOTE]
->
->O PDF Generator suporta apenas versões em inglês, francês, alemão e japonês dos sistemas operacionais e aplicativos compatíveis.
->
->Além disso:
->
->- O PDF Generator requer a versão de 32 bits do [Acrobat 2020 classic track versão 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) ou Acrobat 2017 versão 17.011.30078 para executar a conversão.
->- O PDF Generator suporta apenas a versão de varejo de 32 bits do Microsoft Office Professional Plus e outros softwares necessários para a conversão.
->- O PDF Generator não é compatível com o Microsoft Office 365.
->- As conversões PDF Generator para OpenOffice são suportadas apenas no Windows e Linux.
->- Os recursos PDF, Optimize PDF e Export PDF do OCR são suportados apenas no Windows.
->- Uma versão do Acrobat é fornecida com o AEM Forms para habilitar a funcionalidade PDF Generator. A versão agrupada só deve ser acessada programaticamente com o AEM Forms, durante o período da licença do AEM Forms, para uso com o PDF Generator da AEM Forms. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
->
->- O serviço PDF Generator não suporta Microsoft Windows 10.
->- O PDF Generator não consegue converter arquivos usando o Microsoft Visio 2019. Você pode continuar usando o Microsoft Visio 2016 para converter arquivos .VSD e .VSDX.
->- O PDF Generator não consegue converter arquivos usando o Microsoft Project 2019. Você pode continuar usando o Microsoft Project 2016 para converter arquivos .MPP.
+O PDF Generator suporta apenas versões em inglês, francês, alemão e japonês dos sistemas operacionais e aplicativos compatíveis.
+Além disso:
+- O PDF Generator requer a versão de 32 bits do [Acrobat 2020 classic track versão 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) ou Acrobat 2017 versão 17.011.30078 para executar a conversão.
+- O PDF Generator suporta apenas a versão de varejo de 32 bits do Microsoft Office Professional Plus e outros softwares necessários para a conversão.
+- O PDF Generator não é compatível com o Microsoft Office 365.
+- As conversões PDF Generator para OpenOffice são suportadas apenas no Windows e Linux.
+- Os recursos PDF, Optimize PDF e Export PDF do OCR são suportados apenas no Windows.
+- Uma versão do Acrobat é fornecida com o AEM Forms para habilitar a funcionalidade PDF Generator. A versão agrupada só deve ser acessada programaticamente com o AEM Forms, durante o período da licença do AEM Forms, para uso com o PDF Generator da AEM Forms. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+- O serviço PDF Generator não suporta Microsoft Windows 10.
+- O PDF Generator não consegue converter arquivos usando o Microsoft Visio 2019. Você pode continuar usando o Microsoft Visio 2016 para converter arquivos .VSD e .VSDX.
+- O PDF Generator não consegue converter arquivos usando o Microsoft Project 2019. Você pode continuar usando o Microsoft Project 2016 para converter arquivos .MPP.
 >
 
 
@@ -637,8 +633,7 @@ Para obter os requisitos adicionais, consulte:
 </table>
 
 >[!NOTE]
->
->A família de produtos Acrobat DC apresenta duas trilhas para Acrobat e Reader, que são produtos essencialmente diferentes: &quot;Classic&quot; e &quot;Continuous.&quot; Para obter detalhes e uma comparação das duas faixas, consulte [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
+A família de produtos Acrobat DC apresenta duas trilhas para Acrobat e Reader, que são produtos essencialmente diferentes: &quot;Classic&quot; e &quot;Continuous.&quot; Para obter detalhes e uma comparação das duas faixas, consulte [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
 
 ### Navegadores {#browsers}
 
@@ -672,17 +667,7 @@ Para obter os requisitos adicionais, consulte:
    <td>Todas as atualizações</td>
   </tr>
   <tr>
-   <td>Google Chrome e Firefox no MAC OS X</td>
-   <td>A: Suportado<br /> <br /> </td>
-   <td>Todas as atualizações</td>
-  </tr>
-  <tr>
-   <td>Apple Safari 11.x</td>
-   <td>A: Suportado</td>
-   <td>Todas as atualizações</td>
-  </tr>
-  <tr>
-   <td>Apple Safari 12.x<br /> <br /> </td>
+   <td>Apple Safari no macOS</td>
    <td>A: Suportado</td>
    <td>Todas as atualizações</td>
   </tr>
@@ -690,14 +675,12 @@ Para obter os requisitos adicionais, consulte:
 </table>
 
 >[!NOTE]
->
->Algumas exceções relacionadas ao navegador para desktops são as seguintes:
->
->- O Safari é compatível somente no Macintosh OS X.
->- O Workspace é compatível com o Safari 5.1 no Macintosh OS X 10.6 e 10.7 com o Acrobat DC ou versões posteriores. Para obter mais informações sobre a compatibilidade do Safari 5.1 com o Adobe Reader, Acrobat, consulte [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
->- O Console de administração não é compatível com o Safari.
->- O Gerenciamento de correspondência não é compatível com o Windows® Internet Explorer 9.0 para formulários AEM 6.1.
->- O portal Forms oferece suporte ao software de leitor de tela JAWS 14.0 no Internet Explorer 11 para acessibilidade.
+Algumas exceções relacionadas ao navegador para desktops são as seguintes:
+- O Safari é compatível somente no Macintosh OS X.
+- O Workspace é compatível com o Safari 5.1 no Macintosh OS X 10.6 e 10.7 com o Acrobat DC ou versões posteriores. Para obter mais informações sobre a compatibilidade do Safari 5.1 com o Adobe Reader, Acrobat, consulte [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
+- O Console de administração não é compatível com o Safari.
+- O Gerenciamento de correspondência não é compatível com o Windows® Internet Explorer 9.0 para formulários AEM 6.1.
+- O portal Forms oferece suporte ao software de leitor de tela JAWS 14.0 no Internet Explorer 11 para acessibilidade.
 
 
 #### Clientes móveis {#mobile-clients}
@@ -728,8 +711,7 @@ Para obter os requisitos adicionais, consulte:
 </table>
 
 >[!NOTE]
->
->- O Forms Portal é compatível somente com o Safari no iPad.
+- O Forms Portal é compatível somente com o Safari no iPad.
 
 
 ### Aplicativo AEM Forms {#aem-forms-workspace-app}
@@ -756,13 +738,13 @@ O AEM Forms no JEE oferece suporte a atualizações, correções e pacotes de co
 
 Os requisitos de software de terceiros para o AEM Forms no JEE estão documentados na seção &quot;Requisitos do sistema&quot; de seus respectivos documentos de produto. Toda a documentação pode ser acessada em [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65) .
 
-As plataformas de referência de terceiros da AEM Forms no JEE indicam o nível de patch específico da infraestrutura de terceiros que estava atual durante o desenvolvimento e o lançamento do AEM Forms no JEE e a partir do nível mínimo de patch/service pack da infraestrutura compatível com essa versão do AEM Forms no JEE.
+As plataformas de referência de terceiros da AEM Forms no JEE indicam o nível de patch específico da infraestrutura de terceiros atual durante o desenvolvimento e o lançamento do AEM Forms no JEE e a partir do nível mínimo de patch/service pack da infraestrutura compatível com essa versão do AEM Forms no JEE.
 
 O Adobe oferece suporte a patches urgentes ou recomendados emitidos por fornecedores terceirizados após sua liberação, supondo que fornecedores terceirizados garantam compatibilidade retroativa com as versões compatíveis com o AEM Forms no JEE. O Adobe só oferecerá suporte a patches lançados após o nível mínimo de patch indicado na documentação AEM Forms no JEE.
 
 Em alguns casos, o Adobe não oferece suporte a atualizações de terceiros que alteram funcionalidades importantes e, portanto, não oferecem suporte para compatibilidade com versões anteriores. Para obter detalhes sobre as atualizações compatíveis, consulte [Definições de patch compatíveis](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) para produtos de fornecedor específicos e os tipos de patch suportados pelo Adobe.
 
-Sob circunstâncias fora do controle do Adobe, os patches de terceiros que reivindicam compatibilidade com versões anteriores podem ter impacto negativo nos produtos do Adobe ou nos ambientes do cliente. Nesses casos, a Adobe recomenda que os clientes avaliem o impacto de qualquer patch urgente de terceiros antes de aplicá-los a sistemas críticos. A Adobe trabalhará com terceiros usando esforços comerciais razoáveis para resolver esses problemas, seja por meio de programas normais de suporte a Adobe ou por terceiros corrigindo o problema em seu patch. Isso não garante que um patch de terceiros recém-lançado que será suportado pelo Adobe funcione conforme documentado pelo fornecedor ou com o AEM Forms no JEE.
+Em circunstâncias além do controle Adobe, patches de terceiros podem ter impacto negativo nos ambientes do Adobe ou cliente. Nesses casos, a Adobe recomenda que os clientes avaliem o impacto de qualquer patch urgente de terceiros antes de aplicá-los a sistemas críticos. A Adobe trabalhará com terceiros usando esforços comerciais razoáveis para resolver esses problemas, seja por meio de programas normais de suporte a Adobe ou por terceiros corrigindo o problema em seu patch. Isso não garante que um patch de terceiros recém-lançado que será suportado pelo Adobe funcione conforme documentado pelo fornecedor ou com o AEM Forms no JEE.
 
 O Adobe reserva o direito de alterar as plataformas de referência de terceiros compatíveis com uma versão do AEM Forms no JEE e suas definições de patch compatíveis em qualquer ponto determinado.
 
@@ -795,8 +777,7 @@ As seguintes plataformas são marcadas como obsoletas na versão 6.5.10.0 do AEM
 - OpenOffice 4.1.2
 
 >[!NOTE]
->
->As plataformas marcadas como [obsoleto no AEM Forms 6.5.12.0 e 6.5.10.0 permanece em suporte até a versão AEM Forms 6.5 Service Pack 18 (6.5.18.0)](https://helpx.adobe.com/br/support/programs/eol-matrix.html).
+As plataformas marcadas como [obsoleto no AEM Forms 6.5.12.0 e 6.5.10.0 permanece em suporte até a versão AEM Forms 6.5 Service Pack 18 (6.5.18.0)](https://helpx.adobe.com/br/support/programs/eol-matrix.html).
 
 ## Histórico de revisão {#revision-history}
 

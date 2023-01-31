@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 72ed4ceee560839c6573461cb5d4d6cbccfd696f
+source-git-commit: 26e71c5f09eb9fa3f3eda01deb871ac63e348a30
 workflow-type: tm+mt
-source-wordcount: '3525'
+source-wordcount: '3529'
 ht-degree: 1%
 
 ---
@@ -196,7 +196,7 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 | Oracle Solaris 11 | Z: Não suportado |
 | IBM AIX 7.2 | Z: Não suportado |
 
-1. O Linux Kernel 2.6, 3.x, 4.x e 5.x inclui derivados da distribuição Red Hat, incluindo Red Hat Enterprise Linux, CentOS, Oracle Linux e Amazon Linux. Os recursos do complemento AEM Forms só são compatíveis com CentOS 7, Red Hat Enterprise Linux 7 e Red Hat Enterprise Linux 8.
+1. Linux Kernel 2.6, 3. x, 4. x e 5. x inclui derivados da distribuição Red Hat, incluindo Red Hat Enterprise Linux, CentOS, Oracle Linux e Amazon Linux. Os recursos do complemento AEM Forms só são compatíveis com CentOS 7, Red Hat Enterprise Linux 7, Red Hat Enterprise Linux 8 e Red Hat Enterprise Linux 9.
 1. O AEM Forms é compatível com o Ubuntu 20.04 LTS.
 1. Distribuição Linux suportada pelo Adobe Managed Services.
 1. As implantações de produção do Microsoft Windows são compatíveis com clientes que atualizam para 6.5 e para uso não relacionado à produção. Novas implantações são por solicitação do AEM Sites e do Assets.
@@ -215,7 +215,7 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 
 ### Ambientes de computação em nuvem e virtual {#virtual-cloud-computing-environments}
 
-O Adobe Experience Manager é compatível com a execução em uma máquina virtual em ambientes de computação em nuvem, como o Microsoft Azure e o Amazon Web Services (AWS), em conformidade com os requisitos técnicos listados nesta página e de acordo com os termos de suporte padrão do Adobe.
+O Adobe Experience Manager é compatível com a execução em uma máquina virtual em ambientes de computação em nuvem, como o Microsoft Azure e o Amazon Web Services (AWS), em conformidade com os requisitos técnicos listados nesta página e de acordo com os termos de suporte padrão Adobe.
 
 Para um ambiente nativo em nuvem, analise a oferta mais recente da linha de produtos AEM: Adobe Experience Manager as a Cloud Service. Consulte [Documentação do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) para obter detalhes.
 
@@ -534,4 +534,4 @@ XMP gravação é suportada e ativada para as seguintes plataformas e formatos d
 
 ### Requisitos do AEM Assets para processar ativos com metadados pesados no Linux {#assetsonlinux}
 
-O processo XMPFilesProcessor requer a biblioteca GLIBC_2.14 para funcionar. Use um kernel Linux que contenha GLIBC_2.14, por exemplo, o kernel Linux versão 3.1.x. Melhora o desempenho para processar ativos que contêm uma grande quantidade de metadados, como arquivos PSD. Usar uma versão anterior do GLIBC leva a erros em logs que começam com `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+O processo XMPFilesProcessor requer a biblioteca GLIBC_2.14 para funcionar. Use um kernel Linux que contenha GLIBC_2.14, por exemplo, kernel Linux versão 3.1.x. Melhora o desempenho para processar ativos que contêm uma grande quantidade de metadados, como arquivos PSD. Usar uma versão anterior do GLIBC leva a erros em logs que começam com `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
