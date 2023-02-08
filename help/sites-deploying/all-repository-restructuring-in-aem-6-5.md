@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3f64bd7f5b4eb43aeefb9277a94e10ef1f0df59c
 workflow-type: tm+mt
 source-wordcount: '2693'
 ht-degree: 3%
@@ -99,7 +99,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
       <ol>
        <li>Por exemplo, exportar:
         <ul>
-         <li><code>/config/settings/workflow/models/dam/my_workflow_model</code> e </li>
+         <li><code>/conf/global/settings/workflow/models/dam/my_workflow_model</code> e </li>
          <li><code>/var/workflow/models/dam/my_workflow_model</code></li>
         </ul> </li>
       </ol> </li>
@@ -274,7 +274,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
@@ -313,7 +313,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
@@ -352,7 +352,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
@@ -391,7 +391,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
@@ -414,7 +414,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
@@ -437,7 +437,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
@@ -491,7 +491,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
@@ -734,7 +734,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
