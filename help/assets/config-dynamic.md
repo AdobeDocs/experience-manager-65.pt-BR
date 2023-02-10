@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
+source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
 workflow-type: tm+mt
 source-wordcount: '7792'
 ht-degree: 2%
@@ -161,13 +161,13 @@ Para habilitar o Dynamic Media, você deve habilitar o modo de execução do Dyn
 
    * Adicionar `-r dynamicmedia` ao final da linha de comando ao iniciar o arquivo jar.
 
-   ```shell
+   ```shellsession {.line-numbers}
    java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -r dynamicmedia
    ```
 
    Se você estiver publicando no s7delivery, também deverá incluir os seguintes argumentos trustStore:
 
-   ```
+   ```shellsession {.line-numbers}
    -Djavax.net.ssl.trustStore=<absoluteFilePath>/customerTrustStoreFileName>
    
     -Djavax.net.ssl.trustStorePassword=<passwordForTrustStoreFile>
@@ -216,7 +216,7 @@ Para desativar o Dynamic Media depois de ativá-lo, remova a variável `-r dynam
 
    * Não adicionar `-r dynamicmedia` para a linha de comando ao iniciar o arquivo jar.
 
-   ```shell
+   ```shellsession {.line-numbers}
    java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar
    ```
 
@@ -837,7 +837,7 @@ Para definir as configurações do Dynamic Media Image Server:
    |---|---|---|
    | Cache ativado | Marcado | Se o cache de resposta está ativado |
    | Raízes de cache | cache | Um ou mais caminhos para as pastas do cache de resposta. Os caminhos relativos são resolvidos em relação à pasta interna do pacote s7imaging. |
-   | Tamanho máx. do cache | 20000000 | Tamanho máximo do cache de resposta em bytes. |
+   | Tamanho máx. do cache | 200000000 | Tamanho máximo do cache de resposta em bytes. |
    | Máximo de inscrições em cache | 100000 | Número máximo de entradas permitidas no cache. |
 
 ### Configurações de Manifesto padrão {#default-manifest-settings}
@@ -898,7 +898,7 @@ Para usar os recursos de gerenciamento de cores do Dynamic Media, instale o feat
 
 **Para instalar o feature pack 12445:**
 
-1. Navegar para [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) e faça o download de `cq-6.3.0-featurepack-12445`.
+1. Navegar para [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html) e faça o download de `cq-6.3.0-featurepack-12445`.
 
    Consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md) para obter mais informações sobre o uso de pacotes em [!DNL Adobe Experience Manager].
 
@@ -1129,7 +1129,7 @@ Os seguintes perfis de cores estão instalados:
    <td>sRGB IEC61966-2.1</td>
   </tr>
   <tr>
-   <td>Fogra29 Não Revestido</td>
+   <td>UncoatedFogra29</td>
    <td>CMYK</td>
    <td>FOGRA29 não revestida (ISO 12647-2:2004)</td>
   </tr>

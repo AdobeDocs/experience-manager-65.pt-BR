@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: d3045e1a68d05eb257a6444f75a30faae4950db1
+source-git-commit: a8db862b4a90ee6679de44df9508caf75a4c3eec
 workflow-type: tm+mt
 source-wordcount: '6489'
 ht-degree: 3%
@@ -56,7 +56,7 @@ Com a nova arquitetura, o Experience Manager é responsável pelos ativos e sinc
 
 Para ativar o Dynamic Media, inicie o Experience Manager usando `dynamicmedia_scene7` execute o modo a partir da linha de comando inserindo o seguinte em uma janela de terminal (por exemplo, a porta usada é 4502):
 
-```shell
+```shell {.line-numbers}
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
@@ -533,7 +533,7 @@ Você pode usar o Tipo de Conjunto de Lotes **[!UICONTROL Conjunto de rotação 
 
 Por exemplo, suponha que você queira criar um conjunto de rotação de vários eixos chamado `spin-2dspin`. Você tem um conjunto de imagens de conjunto de rotação que contém três linhas, com 12 imagens por linha. As imagens são nomeadas da seguinte maneira:
 
-```
+```xml {.line-numbers}
 spin-01-01
  spin-01-02
  …

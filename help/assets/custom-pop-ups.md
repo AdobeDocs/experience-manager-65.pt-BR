@@ -1,9 +1,6 @@
 ---
 title: Criar pop-ups personalizados usando o Quickview
-seo-title: Use Quickview to create custom pop-ups
 description: O Quickview padrão é usado em experiências de comércio eletrônico, onde uma pop-up é exibida com informações do produto para impulsionar uma compra. Você pode acionar a exibição de conteúdo personalizado nos pop-ups.
-seo-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
-uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,9 +9,9 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1052'
 ht-degree: 1%
 
 ---
