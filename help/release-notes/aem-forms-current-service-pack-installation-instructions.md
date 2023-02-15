@@ -2,9 +2,9 @@
 title: Instruções de instalação de patches do AEM Forms para AEM Forms
 description: Instruções de instalação do service pack do AEM Forms para o ambiente OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 72e4d6372a013acde1c2cf7e46cc36e3525e53bf
+source-git-commit: 0083de8ba459662d04ba80d8c63f21735d82ac82
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1797'
 ht-degree: 9%
 
 ---
@@ -91,7 +91,8 @@ Navegue até o diretório apropriado e a partir de um shell e digite
 
       >[!NOTE]
       >
-      > Usar o **ConfigurationManager.bat** ajuda a evitar a atualização manual do nome dos arquivos .lax.
+      >* Atualização ou substituição do **ConfigurationManager.bat** ajuda a evitar a atualização manual do nome dos arquivos .lax.
+
 
 1. **[Somente para baseado em Unix]:** O **Iniciar o Configuration Manager** é selecionada por padrão. Clique em **[!UICONTROL Concluído]** para executar o Configuration Manager instantaneamente ou para executar **Gerenciador de configuração** depois, desmarque a opção **Iniciar o Configuration Manager** antes de clicar **[!UICONTROL Concluído]**. Você pode começar **Gerenciador de configuração** mais tarde, usando o script apropriado na `[AEM_forms_root]/configurationManager/bin` diretório.
 
@@ -104,7 +105,6 @@ Navegue até o diretório apropriado e a partir de um shell e digite
    * [Instalar e implantar formulários de AEM para o WebSphere® Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
    * [Instalar e implantar o AEM Forms para o cluster do WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
 
-É
 
 >[!NOTE]
 >
@@ -245,8 +245,6 @@ Para conhecer as plataformas certificadas para funcionar com esta versão, consu
 +++
 
 ## Resolução de problemas
-
-* Reinstale os service packs do AEM Forms se ocorrer um erro durante a instalação. Se o problema persistir, entre em contato com o Suporte ao Adobe.
 
 * If **Caixa de diálogo na interface do usuário do Gerenciador de pacotes** sai durante a instalação do service pack, aguarde a estabilização dos registros de erros antes de acessar a implantação. Aguarde os registros específicos relacionados à desinstalação do pacote do atualizador antes de ter certeza de que as instalações foram bem-sucedidas. Normalmente, esse problema ocorre no navegador Safari, mas pode ocorrer intermitentemente em qualquer navegador.
 
