@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: f578a3c5dee24bbb9995329777eea02bb8f1b654
 workflow-type: tm+mt
-source-wordcount: '4332'
+source-wordcount: '4507'
 ht-degree: 9%
 
 ---
@@ -198,7 +198,7 @@ Consulte as &quot;Notas de versão dos visualizadores&quot; no índice do [Guia 
   </tr>
   <tr>
    <td>Dimensional</td>
-   <td>Dimensões</td>
+   <td>Dimensional</td>
    <td><code>html5_dimensionalviewer.css</code></td>
   </tr>
   <tr>
@@ -337,7 +337,7 @@ A tabela a seguir identifica os gestos do visualizador móvel que são compatív
  <tbody>
   <tr>
    <td><strong>Gesto</strong></td>
-   <td><strong>Zoom do Flyout</strong></td>
+   <td><strong>Flyout Zoom</strong></td>
    <td><strong>Zoom</strong></td>
    <td><strong>Rotação</strong></td>
   </tr>
@@ -459,6 +459,19 @@ Consulte [Considerações especiais para criar uma predefinição de Visualizado
 
 1. (Opcional) Próximo à parte superior da página Editar predefinição do visualizador, selecione **[!UICONTROL Desktop]**, **[!UICONTROL Comprimido]** ou **[!UICONTROL Telefone]** para definir estilos visuais de forma exclusiva para diferentes tipos de dispositivos e telas.
 1. Na página Editor de predefinições do visualizador , selecione o **[!UICONTROL Comportamento]** guia . Como alternativa, você pode selecionar qualquer elemento visual no visualizador para selecioná-lo para configuração.
+Por exemplo, para a variável *VideoPlayer* tipo, em **[!UICONTROL Modificadores]** > **[!UICONTROL Reprodução]**, você pode selecionar uma das três opções de transmissão adaptável:
+
+   * **[!UICONTROL traço]** - Vídeos são transmitidos somente como traço.
+   * **[!UICONTROL hls]** - Vídeos são transmitidos somente como hls.
+   * **[!UICONTROL auto]** - Melhores práticas. A criação de fluxos DASH e HLS é otimizada para armazenamento. Portanto, o Adobe recomenda que você sempre selecione **[!UICONTROL auto]** como o tipo de reprodução. Os vídeos são transmitidos como traço, hls ou progressivo, como no seguinte:
+      * Se o navegador suportar DASH, então a transmissão DASH é usada primeiro.
+      * Se o navegador não suporta DASH, então o streaming de HLS é usado, segundo.
+      * Se o navegador não suportar DASH ou HLS, a reprodução progressiva será usada, por fim.
+
+   >[!NOTE]
+   >
+   >Para ver e usar o **[!UICONTROL traço]** deve ser ativada primeiro pelo Suporte Técnico do Adobe em sua conta. Consulte [Habilitar o DASH em sua conta](/help/assets/video.md#enable-dash).
+
 1. No menu suspenso **[!UICONTROL Tipo selecionado]**, selecione um componente cujos comportamentos você deseja alterar.
 
    Muitos componentes no editor visual têm uma descrição detalhada associada a ela. Essas descrições são exibidas em caixas azuis quando você expande um componente para revelar seus parâmetros associados.
@@ -476,6 +489,10 @@ Consulte [Considerações especiais para criar uma predefinição de Visualizado
 1. Publique sua nova predefinição do visualizador para usá-la em seu site.
 
    Consulte [Predefinições do visualizador de publicação](#publishing-viewer-presets).
+
+   >[!IMPORTANT]
+   >
+   >Para vídeos antigos que usam um perfil de transmissão adaptável, o URL continua sendo reproduzido como de costume — com transmissão HLS — até que você [reprocessar os ativos de vídeo](/help/assets/processing-profiles.md#reprocessing-assets). Após o reprocessamento, o mesmo URL continuará a funcionar, mas agora com *both* Transmissão DASH e HLS ativada.
 
 ### Considerações especiais para criar uma predefinição do Visualizador interativo {#special-considerations-for-creating-an-interactive-viewer-preset}
 
@@ -597,7 +614,7 @@ Editar qualquer *predefinições predefinidas e prontas para uso do visualizador
 
 1. No canto superior esquerdo do Experience Manager, selecione o logotipo Experience Manager e, em seguida, no painel à esquerda, selecione **[!UICONTROL Ferramentas]** (ícone de martelo) **[!UICONTROL Ativos]** > **[!UICONTROL Predefinições do visualizador]**.
 1. Na página Predefinições do visualizador , marque um Título de predefinição e selecione o **[!UICONTROL Lixeira]** ícone .
-1. Selecionar **[!UICONTROL Excluir]**.
+1. Selecione **[!UICONTROL Excluir]**.
 
 ## Aplicar uma predefinição do visualizador a um ativo {#applying-a-viewer-preset-to-an-asset}
 

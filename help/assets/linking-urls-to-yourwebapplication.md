@@ -10,9 +10,9 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: User, Admin
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuration
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: dacbfbc8b4677ac7b63b92c45602e030031de3a1
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1278'
 ht-degree: 6%
 
 ---
@@ -158,7 +158,7 @@ O Dynamic Media oferece suporte à entrega de ativos estáticos, que são ativos
 
    Este exemplo é o URL completo do vídeo para uma representação de vídeo publicada.
 
-## Obter um URL de vídeo para transmissão adaptável (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Obter um URL de vídeo para transmissão adaptável (DASH ou HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. No Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. No **[!UICONTROL Cloud Services]** página, role para baixo até a página **[!UICONTROL Dynamic Media Cloud Services]** e selecione **[!UICONTROL Mostrar configurações]**.

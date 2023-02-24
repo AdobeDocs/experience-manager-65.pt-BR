@@ -4,10 +4,10 @@ description: Saiba como ativar determinadas funcionalidades de Fragmento de cont
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: 8dc8eff86ff25534a578dd227033aa185853d930
+source-git-commit: da41f48d08b7629a734e2f60077af6190a7fee8f
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 70%
+source-wordcount: '271'
+ht-degree: 76%
 
 ---
 
@@ -42,10 +42,6 @@ Para [usar determinadas funcionalidades do fragmento de conteúdo](#creating-a-c
 >[!NOTE]
 >
 >Para obter mais detalhes, consulte também [Navegador de configuração:](/help/sites-administering/configurations.md#using-configuration-browser).
-
->[!CAUTION]
->
->Subconfigurações (uma configuração aninhada em uma configuração) são suportadas para uso com Fragmentos de conteúdo, mas não podem ser usadas para consultas GraphQL.
 
 1. Navegue até **Ferramentas**, **Geral**, e abra o **Navegador de configuração**.
 

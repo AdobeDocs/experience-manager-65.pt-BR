@@ -12,9 +12,9 @@ feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: dacbfbc8b4677ac7b63b92c45602e030031de3a1
 workflow-type: tm+mt
-source-wordcount: '3689'
+source-wordcount: '3727'
 ht-degree: 9%
 
 ---
@@ -81,7 +81,7 @@ A tabela a seguir identifica perfis de codificação de práticas recomendadas p
    <td>540</td>
    <td>Sim</td>
    <td>2000<br /> </td>
-   <td>30º</td>
+   <td>30</td>
    <td>Dolby HE-AAC</td>
    <td>128</td>
   </tr>
@@ -91,7 +91,7 @@ A tabela a seguir identifica perfis de codificação de práticas recomendadas p
    <td>720<br /> </td>
    <td>Sim</td>
    <td>3000<br /> </td>
-   <td>30º</td>
+   <td>30</td>
    <td>Dolby HE-AAC</td>
    <td>128</td>
   </tr>
@@ -284,7 +284,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
    <td><code>keyframe</code></td>
    <td>O número alvo de quadros entre quadros-chave. Calcule esse valor para que ele possa gerar um quadro-chave a cada 2-10 segundos. Por exemplo, a 30 quadros por segundo, o intervalo do quadro-chave deve ser de 60 a 300.<br /> <br /> Intervalos de quadro-chave menores melhoram o comportamento de busca de fluxo e troca de fluxo para codificações de vídeo adaptáveis e também podem melhorar a qualidade de vídeos que têm muito movimento. No entanto, como os quadros-chave aumentam o tamanho de um arquivo, um intervalo de quadros-chave mais baixo normalmente resulta em uma menor qualidade geral do vídeo em uma determinada taxa de bits.</td>
    <td><code>String</code></td>
-   <td><p>Número positivo.</p> <p>O padrão é 300.</p> <p>O valor recomendado para HLS (HTTP Live Streaming) é 60-90.</p> </td>
+   <td><p>Número positivo.</p> <p>O padrão é 300.</p> <p>O valor recomendado para DASH ou HLS é de 60-90. (Para usar o DASH em seus vídeos, ele deve primeiro ser ativado em sua conta. Consulte <a href="/help/assets/video.md#enable-dash">Habilitar o DASH em sua conta</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -302,7 +302,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
    <td><code>audioBitrateCustom</code></td>
    <td>Defina o valor como <code>true</code> para forçar uma taxa de bits constante para o fluxo de áudio, se suportado pelo codec de áudio.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>O padrão é <code>false</code>.</p> <p>O valor recomendado para HLS (HTTP Live Streaming) é <code>false</code>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>O padrão é <code>false</code>.</p> <p>O valor recomendado para DASH ou HLS é <code>false</code>. (Para usar o DASH em seus vídeos, ele deve primeiro ser ativado em sua conta. Consulte <a href="/help/assets/video.md#enable-dash">Habilitar o DASH em sua conta</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

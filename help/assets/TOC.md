@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '681'
 ht-degree: 50%
 
 ---
@@ -97,6 +97,8 @@ ht-degree: 50%
    + [[!DNL Assets] API HTTP](mac-api-assets.md)
    + [Suporte a Fragmentos de conteúdo em [!DNL Assets] API HTTP](assets-api-content-fragments.md)
    + [API GraphQL para fragmentos de conteúdo](content-fragments/graphql-api-content-fragments.md)
+   + [Uso do GraphiQL IDE](content-fragments/graphiql-ide.md)
+   + [Consultas Persistentes](content-fragments/persisted-queries.md)
    + [Autenticação para consultas GraphQL remotas em fragmentos de conteúdo](content-fragments/graphql-authentication-content-fragments.md)
    + [API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [[!DNL Assets] desenvolvimento de proxy](proxy.md)
