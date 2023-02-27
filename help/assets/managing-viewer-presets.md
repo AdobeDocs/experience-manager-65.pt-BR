@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 40ae6c06f3296bfd4affe3e862d57df747d9bb82
+source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
 workflow-type: tm+mt
-source-wordcount: '4520'
+source-wordcount: '4522'
 ht-degree: 9%
 
 ---
@@ -459,7 +459,7 @@ Consulte [Considerações especiais para criar uma predefinição de Visualizado
 
 1. (Opcional) Próximo à parte superior da página Editar predefinição do visualizador, selecione **[!UICONTROL Desktop]**, **[!UICONTROL Comprimido]** ou **[!UICONTROL Telefone]** para definir estilos visuais de forma exclusiva para diferentes tipos de dispositivos e telas.
 1. Na página Editor de predefinições do visualizador , selecione o **[!UICONTROL Comportamento]** guia . Como alternativa, você pode selecionar qualquer elemento visual no visualizador para selecioná-lo para configuração.
-Por exemplo, para a variável *VideoPlayer* tipo, em **[!UICONTROL Modificadores]** > **[!UICONTROL Reprodução]**, você pode selecionar uma das três opções de transmissão adaptável:
+Por exemplo, para a variável *VideoPlayer* tipo, em **[!UICONTROL Modificadores]** > **[!UICONTROL Reprodução]**, você pode selecionar uma das três opções de transmissão da taxa de bits adaptável:
 
    * **[!UICONTROL traço]** - Vídeos são transmitidos somente como traço. No entanto, em dispositivos Safari/iOS, é necessário selecionar **[!UICONTROL hls]** como tipo, em vez disso.
    * **[!UICONTROL hls]** - Vídeos são transmitidos somente como hls.
@@ -492,7 +492,7 @@ Por exemplo, para a variável *VideoPlayer* tipo, em **[!UICONTROL Modificadores
 
    >[!IMPORTANT]
    >
-   >Para vídeos antigos que usam um perfil de transmissão adaptável, o URL continua sendo reproduzido como de costume — com transmissão HLS — até que você [reprocessar os ativos de vídeo](/help/assets/processing-profiles.md#reprocessing-assets). Após o reprocessamento, o mesmo URL continuará a funcionar, mas agora com *both* Transmissão DASH e HLS ativada.
+   >Para vídeos antigos que usam um perfil de transmissão com taxa de bits adaptável, o URL continua a ser reproduzido como de costume — com transmissão HLS — até você [reprocessar os ativos de vídeo](/help/assets/processing-profiles.md#reprocessing-assets). Após o reprocessamento, o mesmo URL continuará a funcionar, mas agora com *both* Transmissão DASH e HLS ativada.
 
 ### Considerações especiais para criar uma predefinição do Visualizador interativo {#special-considerations-for-creating-an-interactive-viewer-preset}
 

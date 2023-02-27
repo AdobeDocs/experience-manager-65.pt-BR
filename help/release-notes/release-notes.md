@@ -2,9 +2,9 @@
 title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: Encontre informações sobre a versão, novidades, instruções de instalação e uma lista detalhada de alterações para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 156e83ad9f73e200da70f824b598a713c0e2e97f
+source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
 workflow-type: tm+mt
-source-wordcount: '2195'
+source-wordcount: '2196'
 ht-degree: 4%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 4%
 
 Um aprimoramento importante no Dynamic Media é o seguinte:
 
-Novo suporte de protocolo DASH (Dynamic Adaptive Streaming over HTTP) lançado para transmissão adaptável em vídeo fornecido pelo Dynamic Media (com CMAF [Formato de aplicativo de mídia comum] ativado).
+Novo suporte de protocolo DASH (Dynamic Adaptive Streaming over HTTP) lançado para o streaming adaptável de taxa de bits na entrega de vídeo do Dynamic Media (com CMAF [Formato de aplicativo de mídia comum] ativado).
 
 * O streaming adaptativo (DASH/HLS) garante uma melhor experiência de visualização do usuário final para vídeos.
 * DASH é o protocolo padrão internacional para transmissão de vídeo adaptável e é amplamente adotado no setor.
