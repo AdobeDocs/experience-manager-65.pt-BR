@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 28046104e75a833736f53b0e9d1edf4c8fbe6249
+source-git-commit: 5c26a043d735921d91044156f2749dc761dbb566
 workflow-type: tm+mt
-source-wordcount: '5898'
+source-wordcount: '5901'
 ht-degree: 0%
 
 ---
@@ -574,7 +574,7 @@ O error.log será detalhado se houver incidentes durante o processo de limpeza d
 
 >[!CAUTION]
 >
->Use uma versão da ferramenta Oak-run que tenha um número de versão (principal e secundária) que corresponda à versão principal Oak da instalação do AEM. Por exemplo, se a instância do AEM tiver a versão principal 1.22.x do Oak, você deverá usar a ferramenta Oak-run versão 1.22.x.
+>Use uma versão da ferramenta Oak-run que tenha um número de versão (principal e secundária) que corresponda à versão principal Oak da instalação do AEM. Por exemplo, se a instância do AEM tiver a versão principal do Oak 1.22.x, você deverá usar a versão mais recente da ferramenta Oak-run 1.22.x.
 
 O Adobe fornece uma ferramenta chamada **Oak-run** para executar a limpeza de revisão. Ele pode ser baixado no seguinte local:
 
