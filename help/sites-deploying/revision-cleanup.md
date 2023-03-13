@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 5c26a043d735921d91044156f2749dc761dbb566
+source-git-commit: 24a64e603d460c659467c7679934bbdfd381aaa8
 workflow-type: tm+mt
-source-wordcount: '5901'
+source-wordcount: '5903'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-Cada atualização no repositório cria uma nova revisão de conteúdo. Como resultado, a cada atualização o tamanho do repositório aumenta. Para evitar o crescimento descontrolado do repositório, as revisões antigas precisam ser removidas para liberar recursos de disco. Essa funcionalidade de manutenção é chamada de Limpeza de revisão. Ele está disponível como uma rotina offline desde o AEM 6.0.
+Cada atualização no repositório cria uma nova revisão de conteúdo. Como resultado, a cada atualização, o tamanho do repositório aumenta. As revisões antigas precisam ser limpas para liberar recursos de disco - isso é importante para evitar o crescimento descontrolado do repositório. Essa funcionalidade de manutenção é chamada de Limpeza de revisão. Ele está disponível como uma rotina offline desde o AEM 6.0.
 
 Com o AEM 6.3 e superior, uma versão online dessa funcionalidade chamada Limpeza de revisão online foi introduzida. Comparada à Limpeza de revisão offline, em que a instância de AEM precisa ser desligada, a Limpeza de revisão online pode ser executada enquanto a instância de AEM está online. A Limpeza de revisão online está ativada por padrão e é a maneira recomendada de executar uma limpeza de revisão.
 
