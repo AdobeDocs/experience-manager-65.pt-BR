@@ -114,8 +114,8 @@ ht-degree: 37%
       + Jornada do arquiteto de conteúdo do Headless {#architect}
          + [Visão geral da jornada do Arquiteto de conteúdo do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/overview.html)
          + [Modelagem de conteúdo para headless com o AEM - uma introdução](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html)
-         + [Saiba o básico sobre a modelagem de conteúdo para headless com AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html)
-         + [Saiba mais sobre criação de modelos de fragmento de conteúdo no AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
+         + [Saiba o básico sobre a modelagem de conteúdo para headless com o AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html)
+         + [Saiba mais sobre criação de Modelos de fragmento de conteúdo no AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
    + Guias de introdução {#getting-started}
       + [Introdução](headless/getting-started/introduction.md)
       + [Criação de uma configuração](headless/getting-started/create-configuration.md)

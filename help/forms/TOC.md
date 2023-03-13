@@ -145,7 +145,7 @@ ht-degree: 4%
    + [Incorpore um formulário adaptável ou comunicação interativa na página de sites AEM](using/embed-adaptive-form-aem-sites.md)
    + [Incorporar formulário adaptável na página externa da Web](using/embed-adaptive-form-external-web-page.md)
    + [Estilo em linha de componentes de formulário adaptáveis](using/inline-style-adaptive-forms.md)
-   + [Introdução à sequência de formulários de várias etapas](using/introduction-form-sequence.md)
+   + [Introdução à sequência de formulários em várias etapas](using/introduction-form-sequence.md)
    + [Recursos de layout de formulários adaptáveis](using/layout-capabilities-adaptive-forms.md)
    + [Texto para espaço reservado no AEM Forms](using/placeholder-text-in-aem-forms-.md)
    + [Pré-visualização de um formulário](using/previewing-forms.md)
