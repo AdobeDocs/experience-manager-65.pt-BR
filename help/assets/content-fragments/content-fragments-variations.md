@@ -111,7 +111,7 @@ As opções para editar texto de várias linhas dependem do formato selecionado:
 
 O formato pode ser selecionado no editor de tela cheia.
 
-### Texto formatado {#rich-text}
+### Rich Text {#rich-text}
 
 A edição de rich text permite formatar:
 

@@ -145,7 +145,7 @@ O JCR tem vários tipos de nó predefinidos e tipos de propriedade, mas em geral
 
 O JavaDoc para a API Java do JCR é [here](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
-Antes de tentar ler a especificação do JavaDoc ou do JCR propriamente dito, você pode consultar [esta explicação de alto nível](/help/sites-developing/the-basics.md#java-content-repository) do JCR conforme implementado pelo Adobe Experience Services.
+Antes de tentar ler a especificação do JavaDoc ou do JCR propriamente dito, verifique [esta explicação de alto nível](/help/sites-developing/the-basics.md#java-content-repository) do JCR conforme implementado pelo Adobe Experience Services.
 
 **Multi-Site Manager (MSM)** - O recurso MSM do AEM ajuda os clientes a lidar com conteúdo multilíngue multinacional, permitindo que eles equilibrem a marca centralizada com conteúdo localizado.
 

@@ -289,6 +289,6 @@ Se tiver problemas ao configurar ou usar o Adobe Asset Link, tente o seguinte:
 >[!MORELIKETHIS]
 >
 >* [Sobre o Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
->* [Use o Asset Link no aplicativo de desktop do Creative Cloud e gerencie ativos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Use o Asset Link no aplicativo de desktop do Creative Cloud e gerencie ativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)
 >* [Configurar o Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/br/enterprise/using/configure-aem-assets-for-asset-link.html).
 

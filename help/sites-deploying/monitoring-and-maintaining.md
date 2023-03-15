@@ -15,7 +15,7 @@ exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '5972'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -991,7 +991,7 @@ Para ver o número total de ativações de página desde que a instalação do s
 
 * **Caminho** `/`
 
-* **Query** `//element(*, cq:AuditEvent)[@cq:type='Activate']`
+* **Consulta** `//element(*, cq:AuditEvent)[@cq:type='Activate']`
 
 Em seguida, calcule o número de dias decorridos desde a instalação para calcular a média.
 
@@ -1003,7 +1003,7 @@ Para ver o número de páginas atualmente no servidor, use uma consulta de repos
 
 * **Caminho** `/`
 
-* **Query** `//element(*, cq:Page)`
+* **Consulta** `//element(*, cq:Page)`
 
 #### Se você usa o MSM, qual é o número médio de implantações por mês? {#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month}
 
@@ -1013,7 +1013,7 @@ Para determinar o número total de implantações desde a instalação, use uma 
 
 * **Caminho** `/`
 
-* **Query** `//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
+* **Consulta** `//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
 
 Calcule o número de meses decorridos desde a instalação para calcular a média.
 
@@ -1025,7 +1025,7 @@ Para determinar o número total de Live Copies feitas desde a instalação, use 
 
 * **Caminho** `/`
 
-* **Query** `//element(*, cq:LiveSyncConfig)`
+* **Consulta** `//element(*, cq:LiveSyncConfig)`
 
 Use novamente o número de meses decorridos desde a instalação para calcular a média.
 
@@ -1035,7 +1035,7 @@ Para ver quantos ativos do DAM você mantém atualmente, use uma consulta de rep
 
 * **Tipo** `XPath`
 * **Caminho** `/`
-* **Query** `/jcr:root/content/dam//element(*, dam:Asset)`
+* **Consulta** `/jcr:root/content/dam//element(*, dam:Asset)`
 
 #### Qual é o tamanho médio dos ativos? {#what-is-the-average-size-of-the-assets}
 
@@ -1058,7 +1058,7 @@ Para ver o número de modelos atualmente no servidor, use uma consulta de reposi
 
 * **Tipo** `XPath`
 * **Caminho** `/`
-* **Query** `//element(*, cq:Template)`
+* **Consulta** `//element(*, cq:Template)`
 
 #### Quantos componentes são usados atualmente? {#how-many-components-are-currently-used}
 
@@ -1066,7 +1066,7 @@ Para ver o número de componentes atualmente no servidor, use uma consulta de re
 
 * **Tipo** `XPath`
 * **Caminho** `/`
-* **Query** `//element(*, cq:Component)`
+* **Consulta** `//element(*, cq:Component)`
 
 #### Quantas solicitações por hora você tem no sistema de criação em horário de pico? {#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
 

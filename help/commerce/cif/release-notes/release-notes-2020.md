@@ -17,7 +17,7 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | Conector da CIF | 1.6.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principais da CIF | 1.6.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Site de referência CIF Venia | 2020.12.2001 | [Notas de versão](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| Site de referência CIF Venia | 2020.12.01 | [Notas de versão](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novidades {#what-is-new-november}
 
@@ -132,8 +132,8 @@ ht-degree: 12%
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
 | Conector da CIF | 1.1.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais da CIF | 1.1.1. | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo da CIF | 0,11.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Componentes principais da CIF | 1.1.1 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Arquétipo da CIF | 0.11.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-june}
 
@@ -161,7 +161,7 @@ Esta é a primeira versão dos Componentes principais da CIF compatível com o A
 |:-------|:-----:|---------------------:|
 | Conector da CIF | 1.0.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principais da CIF | 1.0.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo da CIF | 0,11.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Arquétipo da CIF | 0.11.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-may}
 
@@ -183,9 +183,9 @@ Esta é a primeira versão dos Componentes principais da CIF compatível com o A
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector da CIF | 0,10,0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais da CIF | 0,10,0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo da CIF | 0,10,0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Conector da CIF | 0.10.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principais da CIF | 0.10.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Arquétipo da CIF | 0.10.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-april}
 
@@ -207,9 +207,9 @@ Esta é a primeira versão dos Componentes principais da CIF compatível com o A
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector da CIF | 0,9.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais da CIF | 0,9.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo da CIF | 0,9.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Conector da CIF | 0.9.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principais da CIF | 0.9.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Arquétipo da CIF | 0.9.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-february}
 
@@ -235,7 +235,7 @@ Esta é a primeira versão dos Componentes principais da CIF compatível com o A
 |:-------|:-----:|---------------------:|
 | Conector da CIF | 0.8.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principais da CIF | 0.8.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo da CIF | 0,7.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Arquétipo da CIF | 0.7.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-january}
 

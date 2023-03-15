@@ -59,7 +59,7 @@ Se o ambiente de publicação for um farm de editores, será necessário configu
 
    (*Obrigatório*) O nome do selo. É o padrão `Display Name` assim como o nome do nó do repositório. Se a variável `Name` não é um nome de nó de repositório válido, ele será modificado.
 
-* **Nome para exibição**
+* **Nome de exibição**
 
    (*Opcional*) O nome a ser exibido para o símbolo na interface do usuário. O padrão é o texto inalterado inserido para a variável `Name`.
 

@@ -287,7 +287,7 @@ Para verificar se o Serviço de conteúdo inteligente é treinado em suas tags n
 
 1. Para baixar o relatório, selecione-o na lista e clique em **[!UICONTROL Baixar]** na barra de ferramentas. O relatório é baixado como uma planilha do Excel do Microsoft.
 
-## Limitações           {#limitations}
+## Limitações {#limitations}
 
 * As tags inteligentes aprimoradas são baseadas em modelos de aprendizagem de imagens e suas tags. Esses modelos nem sempre são perfeitos na identificação de tags. A versão atual do Serviço de conteúdo inteligente tem as seguintes limitações:
 

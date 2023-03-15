@@ -12,8 +12,8 @@ discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
 source-git-commit: 3f64bd7f5b4eb43aeefb9277a94e10ef1f0df59c
 workflow-type: tm+mt
-source-wordcount: '2693'
-ht-degree: 3%
+source-wordcount: '2690'
+ht-degree: 2%
 
 ---
 
@@ -747,7 +747,7 @@ Ou seja, o `sling:resourceType` da configuração do ContextHub deve ser relativ
 | **Orientação relativa à reestruturação** | Nenhuma ação necessária. |
 | **Notas** | O Console da Web de Ativação em Árvore agora está disponível por meio do **Ferramentas > Implantação > Replicação > Ativar árvore**. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Cloud Services do conector de tradução do fornecedor {#vendor-translation-connector-cloud-services}
 

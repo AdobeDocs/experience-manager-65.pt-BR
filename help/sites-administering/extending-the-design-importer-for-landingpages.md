@@ -111,7 +111,7 @@ A seção a seguir descreve como editar seu arquivo HTML para que você converta
 >
 >A marcação de HTML para converter partes da landing page em componentes AEM tem uma declaração de tag longa e curta. Ambos estão descritos para cada componente.
 
-### Limitações           {#limitations}
+### Limitações {#limitations}
 
 Antes de importar, observe as seguintes limitações:
 
@@ -160,8 +160,8 @@ A inclusão da marcação acima no HTML faz o seguinte:
 
 Para adicionar um texto com uma lista:
 
-* 1º
-* 2º
+* 1st
+* 2nd
 
 que pode ser editado no editor de RTE:
 

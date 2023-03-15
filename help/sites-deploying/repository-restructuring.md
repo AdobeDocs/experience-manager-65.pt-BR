@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-Antes do AEM 6.4, o código do cliente era implantado em áreas imprevisíveis do JCR que estavam sujeitas a alterações nas atualizações. Por causa disso, era comum que as versões formais do AEM substituíssem o código, a configuração ou o conteúdo personalizados. Além disso, as alterações no cliente às vezes substituíam AEM código de produto ou conteúdo, quebrando a funcionalidade do produto.
+Antes do AEM 6.4, o código do cliente era implantado em áreas imprevisíveis do JCR que estavam sujeitas a alterações nas atualizações. Por causa disso, era comum que as versões formais do AEM substituíssem o código, a configuração ou o conteúdo personalizados. Além disso, às vezes, as alterações no cliente se sobrepunham AEM código de produto ou conteúdo, quebrando a funcionalidade do produto.
 
 Ao definir claramente hierarquias para AEM código de produto e código de cliente, esses conflitos podem ser evitados.
 
@@ -50,6 +50,6 @@ Ao planejar uma atualização para o AEM 6.5, as seguintes páginas por soluçã
 * [reestruturação de repositório AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
 * [AEM reestruturação do repositório do Commerce](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
 
-Cada página contém duas seções correspondentes à urgência das alterações necessárias. Qualquer coisa na seção &quot;Atualização 6.5&quot; deve ser abordada como parte do projeto de atualização do AEM 6.5. Qualquer coisa em &quot;Antes da atualização futura&quot; pode ser adiada opcionalmente até a posterior atualização.
+Cada página contém duas seções correspondentes à urgência das alterações necessárias. Qualquer coisa na seção &quot;Atualização 6.5&quot; deve ser abordada como parte do projeto de atualização AEM 6.5. Qualquer coisa em &quot;Antes da atualização futura&quot; pode ser adiada opcionalmente até a posterior atualização.
 
 Cada entrada na página inclui um campo &quot;Orientação sobre reestruturação&quot;, que detalha a estratégia técnica recomendada para alinhar com o novo modelo de repositório 6.5 para que os novos locais sejam referenciados para o conteúdo localizado anteriormente na pasta /etc. Um campo &quot;Observações&quot; adicional fornece qualquer contexto útil adicional.

@@ -69,9 +69,9 @@ Selecione o estilo desejado para aplicar ao modelo. Quando selecionado, o tema s
 
 (Opcional) Faça upload de uma imagem de banner para exibição nas páginas do site. O banner é fixado à borda esquerda do navegador, entre o cabeçalho do site da comunidade e o menu (links de navegação). A altura do banner é cortada para 120 pixels. Não há redimensionamento do banner para ajustar a largura do navegador e a altura de 120 pixels.
 
-![marca de site1](assets/site-branding1.png)
+![site-branding1](assets/site-branding1.png)
 
-![marcas de site2](assets/site-branding2.png)
+![site-branding2](assets/site-branding2.png)
 
 Selecione **Próximo**.
 
@@ -129,7 +129,7 @@ Por exemplo,
 
 Aceite as configurações globais padrão para [moderação](/help/communities/sites-console.md#moderation) conteúdo gerado pelo usuário (UGC).
 
-![moderação1](assets/moderation1.png)
+![moderation1](assets/moderation1.png)
 
 #### ANALYTICS {#analytics}
 

@@ -773,7 +773,7 @@ Também é possível baixar uma `JSON` arquivo que resume as informações do pa
      <li>heap máximo, como retornado por <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
     </ul> </td>
    <td>N/A</td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Instância</td>
@@ -783,8 +783,8 @@ Também é possível baixar uma `JSON` arquivo que resume as informações do pa
      <li>lista de modos de execução</li>
      <li>a data em que a instância foi iniciada</li>
     </ul> </td>
-   <td>N/D</td>
-   <td>N/D</td>
+   <td>N/A</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Repositório</td>
@@ -804,8 +804,8 @@ Também é possível baixar uma `JSON` arquivo que resume as informações do pa
       </ul> </li>
      <li>se não houver um armazenamento de dados externo personalizado, uma mensagem indicando esse fato será exibida</li>
     </ul> </td>
-   <td>N/D</td>
-   <td>N/D</td>
+   <td>N/A</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Agentes de distribuição</td>
@@ -866,7 +866,7 @@ Também é possível baixar uma `JSON` arquivo que resume as informações do pa
    <td>Página Falhas do fluxo de trabalho</td>
   </tr>
   <tr>
-   <td>Trabalhos Sling</td>
+   <td>Sling Jobs</td>
    <td><p>Contagens de tarefas Sling - número de tarefas em um determinado status (se houver):</p>
     <ul>
      <li>Falha</li>
@@ -878,7 +878,7 @@ Também é possível baixar uma `JSON` arquivo que resume as informações do pa
     <ul>
      <li>o usuário deve investigar quando houver trabalhos em status inesperado ou com contagens altas.</li>
     </ul> </td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Contagens estimadas de nós</td>
@@ -890,14 +890,14 @@ Também é possível baixar uma `JSON` arquivo que resume as informações do pa
      <li>autorizáveis</li>
      <li>número total de nós<br /> </li>
     </ul> <p>O número total de nós é obtido a partir do nodeCounterMBean, enquanto o resto das estatísticas são obtidas a partir de IndexInfoService.</p> </td>
-   <td>N/D</td>
-   <td>N/D</td>
+   <td>N/A</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Backup</td>
    <td>Exibe "Backup online em andamento", se for o caso.</td>
-   <td>N/D</td>
-   <td>N/D</td>
+   <td>N/A</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Indexação</td>
@@ -906,8 +906,8 @@ Também é possível baixar uma `JSON` arquivo que resume as informações do pa
      <li>"Indexação em andamento"</li>
      <li>"Consulta em andamento"</li>
     </ul> <p>Se um encadeamento de indexação ou consulta estiver presente no despejo de encadeamento.</p> </td>
-   <td>N/D</td>
-   <td>N/D</td>
+   <td>N/A</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>

@@ -151,7 +151,7 @@ A topologia presumida para esta seção consiste em um cluster de Autores MongoM
 
 A topologia presumida para esta seção consiste em duas instâncias de publicação do TarMK, encaminhadas por Dispatchers que, por sua vez, são encaminhados por um balanceador de carga. A replicação ocorre do servidor Autor para o farm de publicação do TarMK.
 
-![tarmk-pub-farm5](assets/tarmk-pub-farmv5.png)
+![tarmk-pub-farmv5](assets/tarmk-pub-farmv5.png)
 
 ### Execução de atualização {#upgrade-execution-2}
 

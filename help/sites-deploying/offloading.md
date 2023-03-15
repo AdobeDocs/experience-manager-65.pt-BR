@@ -133,7 +133,7 @@ Use o Console da Web ou um nó sling:OsgiConfig para configurar as seguintes pro
    <td>Intervalo do Heartbeat (segundos)</td>
    <td>heartbeatInterval</td>
    <td>O tempo em segundos entre as pulsações.</td>
-   <td>15.</td>
+   <td>15</td>
   </tr>
   <tr>
    <td>Atraso mínimo de evento (segundos)</td>

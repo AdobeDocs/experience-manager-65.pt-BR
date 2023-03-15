@@ -1,8 +1,8 @@
 ---
 title: Guia de introdução do Headless
-description: Com este guia de início rápido, saiba mais sobre os recursos avançados do AEM 6.5, como Modelos de conteúdo, Fragmentos de conteúdo e a API GraphQL.
-exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
+description: Com este guia de início rápido, saiba mais sobre os recursos avançados do AEM 6.5, como Modelos de conteúdo, Fragmentos de conteúdo e a API do GraphQL.
+exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 54%

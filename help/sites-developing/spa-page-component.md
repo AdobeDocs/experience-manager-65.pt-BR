@@ -14,7 +14,7 @@ exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
 source-git-commit: 17c198c744111753ffffcc0758f98859524c964e
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
@@ -28,7 +28,7 @@ Em um SPA, o componente de página não fornece os elementos HTML de seus compon
 
 ## Introdução {#introduction}
 
-O componente de página de um SPA não fornece os elementos HTML de seus componentes filho por meio de um arquivo JSP ou HTL e objetos de recurso. Esta operação é delegada no quadro de SPA. A representação de componentes filho é buscada como uma estrutura de dados JSON (ou seja, o modelo). Os componentes de SPA são adicionados à página de acordo com o modelo JSON fornecido. Dessa forma, a composição do corpo inicial do componente de página difere de suas contrapartidas de HTML pré-renderizadas.
+O componente de página de um SPA não fornece os elementos HTML de seus componentes filho por meio de um arquivo JSP ou HTL e objetos de recurso. Esta operação é delegada na estrutura de SPA. A representação de componentes filho é buscada como uma estrutura de dados JSON (ou seja, o modelo). Os componentes de SPA são adicionados à página de acordo com o modelo JSON fornecido. Dessa forma, a composição do corpo inicial do componente de página difere de suas contrapartidas de HTML pré-renderizadas.
 
 ## Gerenciamento do modelo de página {#page-model-management}
 
@@ -91,7 +91,7 @@ As propriedades do meta resource que descrevem o conteúdo SPA:
 
 >[!CAUTION]
 >
->Este documento usa o aplicativo do diário We.Retail somente para fins de demonstração. Não deve ser utilizado para qualquer trabalho de projeto.
+>Este documento usa o aplicativo do diário We.Retail somente para fins de demonstração. Ele não deve ser utilizado ao trabalhar em projetos.
 >
 >Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.Todos os projetos SPA em AEM devem ser baseados no Arquétipo Maven para SPA Starter Kit.
 

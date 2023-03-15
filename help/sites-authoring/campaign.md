@@ -1,5 +1,5 @@
 ---
-title: Trabalhar com o Adobe Campaign Classic e o Adobe Campaign Standard
+title: Trabalho com o Adobe Campaign Classic e Adobe Campaign Standard
 seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: É possível criar conteúdo de email no AEM e processá-lo nos emails do Adobe Campaign
 seo-description: You can create email content in AEM and process it in Adobe Campaign emails
@@ -17,7 +17,7 @@ ht-degree: 74%
 
 ---
 
-# Trabalhar com o Adobe Campaign Classic e o Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
+# Trabalho com o Adobe Campaign Classic e Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
 
 É possível criar conteúdo de email no AEM e processá-lo em emails do Adobe Campaign. Para fazer isso, é preciso:
 

@@ -1,6 +1,6 @@
 ---
 title: Desenvolvimento sem periféricos para AEM 6.5 Sites
-description: Saiba como os poderosos recursos headless AEM 6.5, como Modelos de conteúdo, Fragmentos de conteúdo e a API GraphQL, funcionam juntos para permitir que você gerencie suas experiências centralmente e as disponibilize entre canais.
+description: Saiba como os poderosos recursos headless do AEM 6.5, como Modelos de conteúdo, Fragmentos de conteúdo e a API do GraphQL, funcionam juntos para permitir que você gerencie suas experiências centralmente e as disponibilize em todos os canais.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 38%
 
 # Desenvolvimento sem periféricos para AEM 6.5 Sites {#headless-development}
 
-Saiba como os poderosos recursos headless AEM 6.5, como Modelos de conteúdo, Fragmentos de conteúdo e a API GraphQL, funcionam juntos para permitir que você gerencie suas experiências centralmente e as disponibilize entre canais.
+Saiba como os poderosos recursos headless do AEM 6.5, como Modelos de conteúdo, Fragmentos de conteúdo e a API do GraphQL, funcionam juntos para permitir que você gerencie suas experiências centralmente e as disponibilize em todos os canais.
 
 ## Visão geral {#overview}
 

@@ -84,7 +84,7 @@ Execute as seguintes etapas para liberar um item:
 1. Faça logon na instância do AEM. Toque na Caixa de entrada ![Caixa de entrada](assets/bell.svg) ícone e toque **[!UICONTROL Exibir todos]**. Uma lista dos itens da caixa de entrada é exibida.
 1. Selecione o item a ser lançado e toque em **[!UICONTROL Cancelar solicitação]**. O item é adicionado de volta ao pool. Outros podem agora reclamar o item.
 
-## Limitações           {#limitations}
+## Limitações {#limitations}
 
 * O compartilhamento de itens com um grupo não é suportado.
 * Não há suporte para o compartilhamento de tarefas do projeto.

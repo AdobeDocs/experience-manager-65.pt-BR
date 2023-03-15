@@ -415,9 +415,9 @@ Veja a seguir um exemplo de mapeamentos padrão após seguir o [tutorial de intr
    <td><strong>eVar1</strong></td>
    <td><strong>eVar2</strong></td>
    <td><strong>eVar3</strong></td>
-   <td><strong>eVar 4</strong></td>
-   <td><strong>eVar 5</strong></td>
-   <td><strong>eVar 6</strong></td>
+   <td><strong>eVar4</strong></td>
+   <td><strong>eVar5</strong></td>
+   <td><strong>eVar6</strong></td>
    <td><strong>eVar7</strong></td>
    <td><strong>eVar8</strong></td>
    <td><strong>eVar9</strong></td>
@@ -425,7 +425,7 @@ Veja a seguir um exemplo de mapeamentos padrão após seguir o [tutorial de intr
   </tr>
   <tr>
    <td><strong>event1<br /> Reprodução do recurso</strong></td>
-   <td><em>(uma sessão gerenciada no quadro branco)</em></td>
+   <td><em>(a)</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
@@ -438,8 +438,8 @@ Veja a seguir um exemplo de mapeamentos padrão após seguir o [tutorial de intr
   </tr>
   <tr>
    <td><strong>event2<br /> SCFView</strong></td>
-   <td><em>(uma sessão gerenciada no quadro branco)</em></td>
-   <td><em>b)</em></td>
+   <td><em>(a)</em></td>
+   <td><em>(b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
    <td><em>(e)</em></td>
@@ -452,65 +452,65 @@ Veja a seguir um exemplo de mapeamentos padrão após seguir o [tutorial de intr
   <tr>
    <td><strong>event3<br /> SCFCreate (Post)</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
+   <td><em>(b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>(e)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event4<br /> SCFFollow</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
+   <td><em>(b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>(e)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event5<br /> SCFVoteUp</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
+   <td><em>(b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>(e)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event6<br /> SCFVoteDown</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
+   <td><em>(b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>(e)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event7<br /> SCFRate</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
+   <td><em>(b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>(e)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>

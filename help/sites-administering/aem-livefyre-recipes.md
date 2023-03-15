@@ -73,8 +73,8 @@ Como cliente AEM, desejo preparar o UGC usando os componentes prontos para uso d
 
 Etapas para implementar:
 
-1. [Introdução](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
-1. [Configurar AEM para usar o Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
+1. [Introdução](https://helpx.adobe.com/br/experience-manager/6-3/sites/administering/using/livefyre.html)
+1. [Configurar AEM para usar o Livefyre](https://helpx.adobe.com/br/experience-manager/6-3/sites/administering/using/livefyre.html)
 1. [Arraste e solte AEM componente Mural de mídia em sua página](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
 1. [Configurar fluxos e adicionar regras para preparar o UGC e exibir o componente Mural de mídia](https://experienceleague.adobe.com/docs/livefyre/using/streams/c-streams.html)
 
@@ -96,7 +96,7 @@ Para aplicativos Livefyre que exigem autenticação, consulte [Integração de i
 
 ### Integração de AEM {#aem-integration-1}
 
-O Pacote Livefyre Adobe Experience Manager está disponível para AEM 6.1, 6.2SP1, 6.3, 6.4 e 6.4 SP1. AEM 5.x e 6.0 não são compatíveis. Para obter instruções detalhadas, consulte [Integração com o Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
+O Pacote Livefyre Adobe Experience Manager está disponível para AEM 6.1, 6.2SP1, 6.3, 6.4 e 6.4 SP1. AEM 5.x e 6.0 não são compatíveis. Para obter instruções detalhadas, consulte [Integração com o Livefyre](https://helpx.adobe.com/br/experience-manager/6-4/sites/administering/using/livefyre.html).
 
 ### Implementação tradicional (para componentes de AEM personalizados) {#traditional-implementation-for-customized-aem-components-1}
 
@@ -161,7 +161,7 @@ Para personalizações avançadas usando o SDK, consulte [SDKs do StreamHub](htt
 
 ### Integração de AEM {#aem-integration-2}
 
-O Pacote Livefyre Adobe Experience Manager está disponível para AEM 6.1, 6.2SP1, 6.3, 6.4 e 6.4 SP1. AEM 5.x e 6.0 não são compatíveis. Para obter instruções detalhadas, consulte [Integração com o Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
+O Pacote Livefyre Adobe Experience Manager está disponível para AEM 6.1, 6.2SP1, 6.3, 6.4 e 6.4 SP1. AEM 5.x e 6.0 não são compatíveis. Para obter instruções detalhadas, consulte [Integração com o Livefyre](https://helpx.adobe.com/br/experience-manager/6-4/sites/administering/using/livefyre.html).
 
 O Componente de revisões não é um componente suportado para o AEM 6.1. Verifique a [AEM matriz de suporte para todos os aplicativos Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
 

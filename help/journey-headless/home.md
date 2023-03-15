@@ -5,7 +5,7 @@ exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 47%
+ht-degree: 65%
 
 ---
 
@@ -15,9 +15,9 @@ Comece aqui para obter uma visão geral das jornadas guiadas disponíveis para c
 
 ## Introdução {#introduction}
 
-A implementação sem periféricos está se tornando cada vez mais importante para fornecer experiências ao seu público-alvo, onde quer que estejam e independentemente do canal.
+A implementação headless está se tornando cada vez mais importante para fornecer experiências ao seu público, onde quer que ele esteja e independentemente do canal.
 
-A implementação sem cabeçalho perde o gerenciamento de página e componente, como é tradicional em soluções de pilha completa, e se concentra na criação de fragmentos de conteúdo reutilizáveis e neutros em canais e em sua entrega entre canais. É um padrão de desenvolvimento moderno e dinâmico para a implementação de experiências digitais.
+A implementação headless dispensa o gerenciamento de páginas e componentes tradicional utilizado em soluções de pilha completa e se concentra na criação de fragmentos de conteúdo reutilizáveis e neutros em relação ao canal, assim como na entrega entre canais. É um padrão de desenvolvimento moderno e dinâmico para implementação de experiências digitais.
 
 Se você é novo em AEM e/ou sem interface, AEM Jornadas sem interface são um ótimo lugar para começar a entender a teoria e a tecnologia através de uma narrativa para resolver vários problemas de negócios sem interface.
 
@@ -27,7 +27,7 @@ Se você é novo em AEM e/ou sem interface, AEM Jornadas sem interface são um �
 
 As Jornadas de documentação foram projetadas com princípios de práticas recomendadas, informadas pela última pesquisa da Adobe, experiência comprovada de implementação dos consultores da Adobe e feedback de projetos de clientes.
 
-Se você quiser saber como o Adobe recomenda como resolver casos de negócios sem periféricos com AEM, AEM Jornadas sem periféricos são o ponto de partida.
+Se quiser saber como a Adobe recomenda resolver casos de negócios headless com o AEM, inicie com as Jornadas headless do AEM.
 
 ## Públicos-alvo {#audiences}
 

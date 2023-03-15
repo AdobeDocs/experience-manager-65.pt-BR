@@ -86,7 +86,7 @@ Por exemplo, a variável **Surfe no Ártico em Lofoten** o fragmento de conteúd
 
 Para obter mais detalhes, consulte:
 
-* [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
+* [Trabalho com Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
 
    * Saiba como criar, editar e gerenciar os ativos do Fragmento de conteúdo.
 

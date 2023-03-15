@@ -321,7 +321,7 @@ Esse método é semelhante ao método Marcos com a diferença de que os marcos e
 
    **Exemplos de chamadas** para o Adobe Analytics usando o exemplo fornecido deve ser semelhante a este quando exibido com o DigitalPulse Debugger:
 
-   ![marcos1](assets/lmilestones1.png)
+   ![lmilestones1](assets/lmilestones1.png)
 
    *O **pev3**enviada na chamada contém as seguintes informações:*
 
@@ -335,7 +335,7 @@ Esse método é semelhante ao método Marcos com a diferença de que os marcos e
 
    * *Iniciar carimbo de data e hora* - Carimbo de data e hora que identifica quando a reprodução do vídeo foi iniciada (*1331035567*)
 
-   * *Reproduzir sessão* - Os detalhes da sessão de reprodução. Este campo indica como o usuário interagiu com o vídeo. Isso pode incluir dados como onde eles começaram a reproduzir o vídeo, se eles usaram o controle deslizante do vídeo para avançar o vídeo e onde pararam de reproduzir o vídeo (*L10E24S58L58 - vídeo parado em s. 25 da seção L10, em seguida, ignoradas. 48º*)
+   * *Reproduzir sessão* - Os detalhes da sessão de reprodução. Este campo indica como o usuário interagiu com o vídeo. Isso pode incluir dados como onde eles começaram a reproduzir o vídeo, se eles usaram o controle deslizante do vídeo para avançar o vídeo e onde pararam de reproduzir o vídeo (*L10E24S58L58 - vídeo parado em s. 25 da seção L10, em seguida, ignoradas. 48*)
 
 ## Segundos herdados {#legacy-seconds}
 

@@ -110,7 +110,7 @@ Os scripts SQL são obtidos usando o CRXDE Lite na instância do autor. O [Pacot
    * Por exemplo, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 1. Expanda o `/libs/social/config/scorm/` pasta
 1. Download `database_scormengine.sql`
-1. Baixar `database_scorm_integration.sql`
+1. Download `database_scorm_integration.sql`
 
 ![sqlscripts](assets/sqlscripts.png)
 

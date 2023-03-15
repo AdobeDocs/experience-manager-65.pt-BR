@@ -28,7 +28,7 @@ Esta documentação descreve como trabalhar com o Adobe Campaign:
 
 Consulte o link a seguir:
 
-* [Trabalhar com o Adobe Campaign Classic e o Adobe Campaign Standard](/help/sites-authoring/campaign.md)
+* [Trabalho com o Adobe Campaign Classic e Adobe Campaign Standard](/help/sites-authoring/campaign.md)
 * [Componentes do Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md)
 * [Criação de formulários do Adobe Campaign no AEM](/help/sites-authoring/adobe-campaign-forms.md)
 * [Direcionamento sua campanha do Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md)

@@ -1,5 +1,5 @@
 ---
-title: Integração com o Adobe Campaign
+title: Integração ao Adobe Campaign
 seo-title: Integrating with Adobe Campaign
 description: Saiba como integrar o AEM com o Adobe Campaign.
 seo-description: Learn how to integrate AEM with Adobe Campaign.
@@ -13,11 +13,11 @@ exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 26%
+ht-degree: 32%
 
 ---
 
-# Integração com o Adobe Campaign{#integrating-with-adobe-campaign}
+# Integração ao Adobe Campaign{#integrating-with-adobe-campaign}
 
 O Adobe Campaign é um conjunto de soluções que permite a você personalizar e entregar campanhas em todos os seus canais online e offline.
 

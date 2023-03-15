@@ -8,7 +8,7 @@ role: Developer, Architect
 source-git-commit: 2523d9dcdbbfd9107e43ca53e2bb586452be1cb8
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 94%
 # Jornadas do AEM Headless {#headless-journey}
 
 + [Jornadas do AEM Headless](/help/journey-headless/home.md)
-+ jornada do desenvolvedor sem periféricos do AEM {#developer}
++ Jornada do desenvolvedor AEM headless {#developer}
    + [Compreender o headless no AEM](developer/overview.md)
    + [Saiba mais sobre o desenvolvimento headless CMS](developer/learn-about.md)
    + [Introdução ao AEM Headless](developer/getting-started.md)
@@ -32,13 +32,13 @@ ht-degree: 94%
    + [Modelagem de conteúdo para headless com o AEM - uma introdução](architect/introduction.md)
    + [Saiba o básico sobre a modelagem de conteúdo para headless com AEM](architect/basics.md)
    + [Saiba mais sobre criação de modelos de fragmento de conteúdo no AEM](architect/model-structure.md)
-+ jornada do autor de conteúdo sem cabeçalho do AEM {#author}
++ Jornada do autor de conteúdo headless do AEM {#author}
    + [Jornada do autor de conteúdo headless do AEM - Visão geral](author/overview.md)
    + [Criação para headless com AEM - uma introdução](author/introduction.md)
    + [Noções básicas de criação para headless com AEM](author/basics.md)
    + [Saiba mais sobre como usar referências em Fragmentos de conteúdo](author/references.md)
    + [Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo](author/metadata-tagging.md)
-+ jornada de tradução sem cabeçalho AEM {#translation}
++ Jornada de tradução headless do AEM {#translation}
    + [Entender a tradução headless no AEM](translation/overview.md)
    + [Introdução à tradução do AEM headless](translation/getting-started.md)
    + [Saiba mais sobre o conteúdo headless e como traduzir no AEM](translation/learn-about.md)

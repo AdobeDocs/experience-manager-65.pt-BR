@@ -5,7 +5,7 @@ exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1378'
-ht-degree: 82%
+ht-degree: 97%
 
 ---
 
@@ -15,17 +15,17 @@ Saiba como publicar seu conteúdo traduzido e atualizar as traduções como atua
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de tradução AEM sem cabeçalho, [Traduzir conteúdo,](configure-connector.md) você aprendeu a usar AEM Projetos de tradução para traduzir seu conteúdo sem periféricos. Agora você deve:
+No documento anterior da jornada de tradução headless do AEM, [Traduzir conteúdo,](configure-connector.md) você aprendeu a usar os projetos de tradução do AEM para traduzir conteúdo headless. Agora você deve:
 
 * Entender o que é um projeto de tradução.
 * Ser capaz de criar novos projetos de tradução.
-* Use projetos de tradução para traduzir o conteúdo sem periféricos.
+* Usar os projetos de tradução para traduzir o conteúdo headless.
 
 Agora que sua tradução inicial foi concluída, este artigo o orienta pela próxima etapa da publicação desse conteúdo e o que fazer para atualizar suas traduções como o conteúdo subjacente nas alterações de raiz do idioma.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como publicar conteúdo sem periféricos no AEM e como criar um fluxo de trabalho contínuo para manter suas traduções atualizadas. Após ler este documento, você deve:
+Este documento ajuda você a entender como publicar conteúdo headless no AEM e criar um fluxo de trabalho contínuo para manter suas traduções atualizadas. Após ler este documento, você deve:
 
 * Entender o modelo de publicação do autor do AEM.
 * Saber como publicar seu conteúdo traduzido.
@@ -47,7 +47,7 @@ Depois que o conteúdo é criado na instância do autor, ele deve ser transferid
 
 ## Publicar seu conteúdo traduzido {#publishing}
 
-Quando estiver satisfeito com o estado do seu conteúdo traduzido, ele deverá ser publicado para que os serviços sem periféricos possam consumi-lo. Normalmente, essa tarefa não é de responsabilidade do especialista em tradução, mas está documentada aqui para ilustrar o fluxo de trabalho completo.
+Quando estiver satisfeito com o estado do seu conteúdo traduzido, ele deve ser publicado para que os serviços headless possam consumi-lo. Normalmente, essa tarefa não é de responsabilidade do especialista em tradução, mas está documentada aqui para ilustrar o fluxo de trabalho completo.
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ A maneira mais simples de publicar as traduções é navegar até a pasta de ati
 
 Nesse caminho, você tem subpastas para cada idioma de tradução e pode escolher qual publicar.
 
-1. Ir para **Navegação** -> **Ativos** -> **Arquivos** e abra a pasta do projeto.
+1. Vá até **Navegação** -> **Ativos** -> **Arquivos** e abra a pasta do projeto.
 1. Aqui você vê a pasta raiz do idioma e todas as outras pastas de idioma. Selecione o idioma ou idiomas localizados que deseja publicar.
    ![Selecionar pasta de idioma](assets/select-language-folder.png)
 1. Toque ou clique em **Gerenciar publicação**.
@@ -74,7 +74,7 @@ Nesse caminho, você tem subpastas para cada idioma de tradução e pode escolhe
 1. AEM confirma a ação de publicação com uma mensagem pop-up na parte superior da tela.
    ![Banner de recursos publicados](assets/resources-published-message.png)
 
-Seu conteúdo traduzido sem cabeçalho foi publicado! Agora ele pode ser acessado e consumido pelos serviços sem periféricos.
+Seu conteúdo headless traduzido foi publicado. Agora ele pode ser acessado e consumido pelos seus serviços headless.
 
 >[!TIP]
 >
@@ -92,7 +92,7 @@ No entanto, assim como antes, o processo é um pouco diferente se você opta por
 
 ### Atualizar um projeto de tradução criado automaticamente {#updating-automatic-project}
 
-1. Navegue até **Navegação** -> **Ativos** -> **Arquivos**. Lembre-se de que o conteúdo sem periféricos no AEM é armazenado como ativos conhecidos como Fragmentos de conteúdo.
+1. Navegue até **Navegação** -> **Ativos** -> **Arquivos**. Lembre-se de que o conteúdo headless no AEM é armazenado como ativos conhecidos como Fragmentos de conteúdo.
 1. Selecione a raiz do idioma do projeto. Nesse caso, selecionamos `/content/dam/wknd/en`.
 1. Toque ou clique no seletor do painel e exiba o painel **Referências**.
 1. Toque ou clique em **Cópias de idioma**.
@@ -100,7 +100,7 @@ No entanto, assim como antes, o processo é um pouco diferente se você opta por
 1. Expanda a seção **Atualizar cópias de idioma** na parte inferior do painel de referências.
 1. Na lista suspensa **Projeto**, selecione **Adicionar a um projeto de tradução existente**.
 1. Na lista suspensa **Projeto de tradução existente**, selecione o projeto criado para a tradução inicial.
-1. Toque ou clique **Iniciar**.
+1. Toque ou clique em **Iniciar**.
 
 ![Adicionar itens ao projeto de tradução existente](assets/add-to-existing-project.png)
 
@@ -154,14 +154,14 @@ A partir deste ponto, [inicie e gerencie seu trabalho de tradução da mesma for
 
 ## Fim da jornada? {#end-of-journey}
 
-Parabéns. Você concluiu a jornada de tradução sem cabeçalho! Agora você deve:
+Parabéns! Você concluiu a jornada de tradução headless. Agora você deve:
 
-* Ter uma visão geral do que é a entrega de conteúdo sem periféricos.
-* Tenha um Compreensão básica AEM recursos headless.
-* Entenda AEM recursos de tradução e como eles estão relacionados ao conteúdo sem periféricos.
-* Tenha a capacidade de começar a traduzir seu próprio conteúdo sem periféricos.
+* Tenha uma visão geral do que é a entrega de conteúdo headless.
+* Tenha uma compreensão básica dos recursos headless do AEM.
+* Entenda os recursos de tradução do AEM e como eles estão relacionados ao conteúdo headless.
+* Tenha a capacidade de começar a traduzir seu próprio conteúdo headless.
 
-Agora você está pronto para traduzir seu próprio conteúdo sem periféricos em AEM. No entanto, o AEM é uma ferramenta poderosa e há muitas opções adicionais disponíveis. Confira alguns dos recursos adicionais disponíveis na [seção Recursos adicionais](#additional-resources) para saber mais sobre os recursos que você viu nesta jornada.
+Agora você está pronto para traduzir seu próprio conteúdo headless no AEM. No entanto, o AEM é uma ferramenta poderosa e há muitas opções adicionais disponíveis. Confira alguns dos recursos adicionais disponíveis na [seção Recursos adicionais](#additional-resources) para saber mais sobre os recursos que você viu nesta jornada.
 
 ## Recursos adicionais {#additional-resources}
 

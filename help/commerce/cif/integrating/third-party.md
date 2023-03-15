@@ -20,7 +20,7 @@ Esta é a arquitetura geral:
 
 ![Visão geral da arquitetura AEM que não seja Magento/de terceiros](../assets//AEM_nonMagento_Architecture.png)
 
-A finalidade dessa camada de integração é mapear APIs e esquemas de terceiros em relação às APIs GraphQL da Adobe Commerce e aos esquemas compatíveis fora do Experience Manager. Graças a esse encapsulamento, a lógica e os sistemas de integração podem ser atualizados sem alterar o código dentro do Experience Manager.
+A finalidade dessa camada de integração é mapear APIs e esquemas de terceiros em relação às APIs e esquemas do Adobe Commerce GraphQL compatíveis fora do Experience Manager. Graças a esse encapsulamento, a lógica e os sistemas de integração podem ser atualizados sem alterar o código dentro do Experience Manager.
 
 ## Requisitos da solução para uma integração
 
@@ -30,7 +30,7 @@ Como o Experience Manager recupera dados sob demanda, são necessárias APIs em 
 >
 >Se nenhuma API em tempo real estiver disponível, um cache de produto externo com APIs deverá ser usado para a integração. Exemplo [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
 
-Não há necessidade de implementar o esquema GraphQL completo, apenas os objetos do esquema para permitir os casos de uso desejados.
+Não há necessidade de implementar o schema GraphQL completo, apenas os objetos do schema para ativar os casos de uso desejados.
 
 ## Casos de uso de backend
 
@@ -48,7 +48,7 @@ A recomendação para componentes críticos de desempenho do lado do cliente é 
 
 Recomendamos usar [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) para a camada de integração. Ele está incluído no complemento CIF para terceiros. Como funciona com uma abordagem semelhante a um microsserviço, é adequado integrar facilmente várias soluções.
 
-O [implementação de referência](https://github.com/adobe/commerce-cif-graphql-integration-reference) O é um excelente ponto de partida para criar a integração com sua solução comercial. Embora seja compatível com GraphQL, também pode ser integrado a qualquer outro tipo de API, como REST.
+O [implementação de referência](https://github.com/adobe/commerce-cif-graphql-integration-reference) O é um excelente ponto de partida para criar a integração com sua solução comercial. Embora seja compatível com o GraphQL, também pode ser integrado a qualquer outro tipo de API, como REST.
 
 Essa camada de integração não é necessária se uma camada de terceiros estiver disponível (como Mulesoft) ou se a integração for criada sobre a solução de terceiros.
 
@@ -61,4 +61,4 @@ Os conectores fornecem um bom começo para os projetos. Eles vêm com uma conex�
 
 >[!TIP]
 >
->Embora os conectores ajudem os projetos a acelerar a integração comercial, eles não são plug-in-play. Geralmente, as soluções de comércio empresarial são altamente personalizadas e exigem uma integração personalizada. É necessário um bom conhecimento da plataforma de comércio, dos esquemas Adobe Commerce GraphQL e do Adobe I/O Runtime.
+>Embora os conectores ajudem os projetos a acelerar a integração comercial, eles não são plug-in-play. Geralmente, as soluções de comércio empresarial são altamente personalizadas e exigem uma integração personalizada. É necessário um bom conhecimento da plataforma de comércio, dos esquemas do Adobe Commerce GraphQL e do Adobe I/O Runtime.

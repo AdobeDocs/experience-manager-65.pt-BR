@@ -1,7 +1,8 @@
 ---
 title: Desative o UAC para a configuração PDFG aplicável ao JEE e OSGI
 description: Etapas para desativar o UAC para configuração PDFG
-source-git-commit: f6dcb488c64dad2d65facc0e8e1d6685b7375a08
+exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
+source-git-commit: 2e9b9c40f54aa54a946e4320341ed4a760c56fd1
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 3%

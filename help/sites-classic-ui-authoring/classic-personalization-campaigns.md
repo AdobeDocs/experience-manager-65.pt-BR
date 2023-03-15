@@ -13,7 +13,7 @@ exl-id: d1741525-a475-4a76-bd16-55318023495e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
@@ -45,7 +45,7 @@ Uma campanha é uma coleção de indivíduos
 
 * **Experiências**
 O conteúdo focalizado forma as várias experiências, apresentadas ao visitante em 
-**Pontos de contato**. Existem vários tipos de experiências disponíveis:
+**Touchpoints**. Existem vários tipos de experiências disponíveis:
 
    * **Teasers**
       [Página de teaser/Parágrafos](#teasers) são usados para direcionar **Segmentos** específicos de visitantes para conteúdos concentrados em seus interesses.
@@ -66,7 +66,7 @@ O conteúdo focalizado forma as várias experiências, apresentadas ao visitante
       Permite a integração com o Adobe Target (o antigo Test&amp;Target), que fornece aos profissionais de marketing uma ferramenta de otimização para a conversão de sites com os recursos necessários para tornar o conteúdo online mais relevante aos clientes — gerando uma conversão maior. O Adobe Target fornece uma interface intuitiva para projetar e executar testes, criar segmentos de públicos-alvo e direcionar conteúdo, tudo isso em um único aplicativo.
 
 
-* **Pontos de contato**
+* **Touchpoints**
 
    Esses são os pontos de contato entre o visitante e sua campanha. Os pontos de interação estão conectados às experiências que você criou.
 

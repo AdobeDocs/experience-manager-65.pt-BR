@@ -459,7 +459,7 @@ Agora, ative os componentes do OAuth. Você pode fazer isso ao:
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Pressione o ícone Reproduzir à esquerda dos componentes
 
-![componentes2](assets/oauth-components-play.png)
+![components2](assets/oauth-components-play.png)
 
 Finalmente, confirme a configuração ao:
 

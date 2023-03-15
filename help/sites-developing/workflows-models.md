@@ -247,7 +247,7 @@ Para definir **Estágios** para seu fluxo de trabalho:
 
    Um estágio pode ser atribuído a mais de uma etapa. Por exemplo:
 
-   | **Etapa** | **Estágio** |
+   | **Etapa** | **Fase** |
    |---|---|
    | Etapa 1 | Criar |
    | Etapa 2 | Criar |

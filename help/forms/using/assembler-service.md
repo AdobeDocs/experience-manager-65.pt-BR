@@ -13,7 +13,7 @@ exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2121'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ Você pode usar o serviço de montagem para as seguintes operações:
 
 ## Montar documentos PDF {#assemble-pdf-documents}
 
-Você pode usar o serviço Assembler para montar dois ou mais documentos PDF em um único documento PDF ou Portfolio PDF. Também é possível aplicar recursos ao documento do PDF que auxilia a navegação ou aprimora a segurança. Estas são algumas das maneiras de montar documentos do PDF:
+Você pode usar o serviço Assembler para montar dois ou mais documentos PDF em um único documento PDF ou Portfolio PDF. Também é possível aplicar recursos ao documento do PDF que auxilia a navegação ou aprimora a segurança. Estas são algumas das maneiras de montar documentos PDF:
 
 ### Montar um documento PDF simples {#assemble-a-simple-pdf-document}
 
@@ -53,7 +53,7 @@ características:
 * Outras características adotadas pelo documento base (Doc1), incluindo metadados, rótulos de página e tamanho da página
 * Opcionalmente, o documento resultante inclui um índice construído a partir dos marcadores nos documentos de origem
 
-### Criar um Portfolio de PDF {#create-a-pdf-portfolio}
+### Criar um Portifolio de PDF {#create-a-pdf-portfolio}
 
 O serviço Assembler pode criar Portfolio PDF que contenham uma coleção de documentos e uma interface de usuário autônoma. A interface é chamada de PDF Portfolio Layout ou PDF Portfolio (navegador). O PDF Portfolio estende a capacidade dos pacotes PDF, adicionando um navegador, pastas e páginas de boas-vindas. A interface pode aprimorar a experiência do usuário aproveitando as vantagens de sequências de texto localizadas, esquemas de cores personalizados e recursos gráficos. O PDF também pode incluir pastas para organizar os arquivos no portfólio.
 

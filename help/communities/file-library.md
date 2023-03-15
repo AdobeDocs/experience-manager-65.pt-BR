@@ -41,7 +41,7 @@ Para obter as informações necessárias, visite [Noções básicas sobre compon
 
 Quando a variável [bibliotecas obrigatórias do lado do cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) são incluídos, é assim que a variável `File Library` componente será exibido:
 
-![biblioteca de arquivos1](assets/file-library1.png)
+![file-library1](assets/file-library1.png)
 
 ### Configuração da biblioteca de arquivos {#configuring-file-library}
 
@@ -49,7 +49,7 @@ Selecione o `File Library` para acessar e selecionar o `Configure` ícone que ab
 
 ![configure-new](assets/configure-new.png)
 
-![biblioteca de arquivos2](assets/file-library2.png)
+![file-library2](assets/file-library2.png)
 
 #### Guia Comentários {#comments-tab}
 

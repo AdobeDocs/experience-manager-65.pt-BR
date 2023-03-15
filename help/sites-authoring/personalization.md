@@ -13,7 +13,7 @@ exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -70,4 +70,4 @@ O mecanismo de direcionamento do Adobe Target faz com que as informações colet
 * Ao usar esse mecanismo de direcionamento, você usa segmentos importados do Adobe Target para definir os públicos das suas experiências.
 * As atividades que usam o mecanismo do Adobe Target são [sincronizadas com o Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
-Você pode usar esse mecanismo quando tiver [integrado ao Adobe Target](/help/sites-administering/opt-in.md).
+Você pode usar esse mecanismo quando tiver [integrado com o Adobe Target](/help/sites-administering/opt-in.md).

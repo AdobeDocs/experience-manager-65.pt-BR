@@ -134,7 +134,7 @@ Esse componente é usado para definir a estrutura e o design do conteúdo quando
 
 ### O conteúdo produzido por um Modelo {#the-content-produced-by-a-template}
 
-Os modelos são usados para criar páginas do tipo `cq:Page` (como mencionado anteriormente, uma página é um tipo especial de componente). Cada Página AEM tem um nó estruturado `jcr:content`. Isso:
+Os modelos são usados para criar páginas do tipo `cq:Page` (como mencionado anteriormente, uma página é um tipo especial de componente). Cada Página AEM tem um nó estruturado `jcr:content`. Isto:
 
 * é do tipo cq:PageContent
 * é um tipo de nó estruturado com uma definição de conteúdo definida

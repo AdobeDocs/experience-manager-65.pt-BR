@@ -31,7 +31,7 @@ Se estiver usando IPv6, insira o URL básico como o nome do computador ou o nome
 
 >[!NOTE]
 >
->O URL base é incorporado em arquivos protegidos por políticas. Os aplicativos clientes usam o URL básico para se conectar novamente ao servidor. Os arquivos protegidos continuarão a conter o URL base, mesmo se for alterado posteriormente. Se você alterar o URL base, as informações de configuração precisarão ser atualizadas para todos os clientes conectados.
+>O URL base é incorporado em arquivos protegidos por políticas. Os aplicativos clientes usam o URL básico para se conectar novamente ao servidor. Os arquivos protegidos continuarão a conter o URL base, mesmo se forem alterados posteriormente. Se você alterar o URL base, as informações de configuração precisarão ser atualizadas para todos os clientes conectados.
 
 **Período de Leasing Offline Padrão:** O tempo padrão em que um usuário pode usar um documento protegido offline. Essa configuração determina o valor inicial da configuração do período de concessão automática offline ao criar uma política. (Consulte Criação e edição de políticas.) Quando o período de concessão expira, o recipient deve sincronizar o documento novamente para continuar usando-o.
 
@@ -178,7 +178,7 @@ Para manter a confidencialidade de documentos offline, é possível reverter man
 >
 >Evite usar frequentemente a sobreposição manual, pois isso faz com que todas as chaves principais sejam sobrepostas, não apenas uma, e pode impedir temporariamente que os usuários visualizem novos documentos offline.
 
-As chaves principais devem ser submetidas a rollover duas vezes antes de as chaves existentes anteriormente nos computadores clientes serem invalidadas. Os computadores clientes que têm chaves principais invalidadas devem sincronizar novamente com o serviço de segurança de documentos para adquirir as novas chaves principais.
+As chaves principais devem ser submetidas a rollover duas vezes antes de as chaves existentes anteriormente em computadores clientes serem invalidadas. Os computadores clientes que têm chaves principais invalidadas devem sincronizar novamente com o serviço de segurança de documentos para adquirir as novas chaves principais.
 
 1. Na página segurança do documento, clique em Configuração > Gerenciamento de chaves.
 1. Clique em Chaves de rolagem agora e em OK.

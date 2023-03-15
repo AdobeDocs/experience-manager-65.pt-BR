@@ -301,7 +301,7 @@ No modo de seleção único, é possível:
 * [Excluir](#delete)
 * [Fechar](#close)
 * Exibir [Histórico de moderação](#moderation-history)
-* [Visualizar Detalhes](#viewdetails)
+* [Exibir Detalhes](#viewdetails)
 
 Apresentado na exibição de cartão acima dos ícones de ação de moderação está o texto da publicação e abaixo estão os dados que indicam:
 

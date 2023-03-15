@@ -1,8 +1,8 @@
 ---
 title: Guia de início rápido para Criação de fragmentos de conteúdo sem cabeçalho
 description: Saiba como usar fragmentos de conteúdo do AEM para projetar, criar, preparar e usar conteúdo independente de página para entrega headless.
-exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: 8ab774b8d21dd16e4873cd39ef0175ead3f2da23
+exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 91%

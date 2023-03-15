@@ -526,7 +526,7 @@ Ela tem os seguintes atributos:
 
 * O objeto de recurso a ser incluído no processamento de solicitação atual. É necessário especificar o recurso ou o caminho. Se ambos forem especificados, o recurso terá prioridade.
 
-**caminho**
+**path**
 
 * O caminho para o objeto de recurso a ser incluído no processamento de solicitação atual. Se esse caminho for relativo, ele será anexado ao caminho do recurso atual cujo script está incluindo o recurso em questão. É necessário especificar o recurso ou o caminho. Se ambos forem especificados, o recurso terá prioridade.
 
@@ -599,7 +599,7 @@ O `<sling:defineObjects>` A tag expõe os seguintes objetos de script, usados re
 
 * Um objeto SlingScriptHelper, contendo métodos de conveniência para scripts, principalmente sling.include(&#39;/some/other/resource&#39;) para incluir as respostas de outros recursos dentro dessa resposta (por exemplo, incorporar os snippets html do cabeçalho (embutido) e sling.getService (foo.bar.Service.class) para recuperar os serviços OSGi disponíveis no Sling (notação de classe dependendo da linguagem de script).
 
-**recurso**
+**resource**
 
 * o objeto de Recurso atual a ser tratado, dependendo do URL da solicitação. É igual a slingRequest.getResource().
 

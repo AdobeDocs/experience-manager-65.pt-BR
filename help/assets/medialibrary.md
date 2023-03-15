@@ -69,7 +69,7 @@ Para usar a funcionalidade do Media Library, é possível usar o [!DNL Experienc
 * Anotar ativos.
 * Adicionar ativos a [!DNL Sites] nas páginas do Localizador de conteúdo.
 * Uso [!DNL Content Fragments].
-* Usar REST HTTP e APIs GraphQL para [!DNL Content Fragments] e ativos de mídia referenciados, sob licença Sites.
+* Usar HTTP REST e APIs do GraphQL para [!DNL Content Fragments] e ativos de mídia referenciados, sob licença Sites.
 * Integração do Marketing Cloud.
 * Personalize e estenda a interface do usuário do gerenciamento de ativos.
 * Acesse o Query Builder (API) para estender a funcionalidade de pesquisa.

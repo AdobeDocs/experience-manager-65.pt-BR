@@ -141,7 +141,7 @@ Para obter detalhes completos, consulte:
 
    * Fornece uma interface do usuário consistente em todas as soluções de nuvem
    * [Conceitos da interface de usuário habilitada para toque do AEM - Interface do usuário do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guia da interface do usuário do Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Guia da interface do usuário do Coral](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Interface do usuário do Granite
 
@@ -269,7 +269,7 @@ Para inserir lógica em seu campo, você deve:
 1. Tenha seu campo marcado com uma determinada classe CSS (a variável *gancho*).
 1. Defina, na biblioteca do cliente, um ouvinte JS vinculado ao nome da classe CSS (isso garante que a lógica personalizada tenha escopo somente para o campo e não afete outros campos do mesmo tipo).
 
-Para isso, você precisa saber sobre a biblioteca de widgets subjacente com a qual deseja interagir. Consulte a [Documentação da interface do usuário do Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) para identificar a qual evento você deseja reagir. Isso é muito semelhante ao processo que você tinha que executar com ExtJS no passado: encontre a página de documentação de um determinado widget e verifique os detalhes de sua API de evento.
+Para isso, você precisa saber sobre a biblioteca de widgets subjacente com a qual deseja interagir. Consulte a [Documentação da interface do usuário do Coral](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) para identificar a qual evento você deseja reagir. Isso é muito semelhante ao processo que você tinha que executar com ExtJS no passado: encontre a página de documentação de um determinado widget e verifique os detalhes de sua API de evento.
 
 Para ver um exemplo, consulte:
 

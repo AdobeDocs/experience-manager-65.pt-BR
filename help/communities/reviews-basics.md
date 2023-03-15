@@ -64,7 +64,7 @@ A publicação anônima de uma revisão não é suportada. Os visitantes do site
 |---|---|
 | [**incondicional**](scf.md#add-or-include-a-communities-component) | Sim - as propriedades podem ser editadas no modo *design* |
 | [**clientllibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
-| **modelos** | /libs/social/reviews/components/hbs/summary/summary.hbs |
+| **templates** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
 | **propriedades** | Consulte [Uso de revisões](reviews.md) |
 

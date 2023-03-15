@@ -57,7 +57,7 @@ Selecione o `Leaderboard` para acessar e selecionar o `Configure` ícone que abr
 
 Em **[!UICONTROL Configurações]** , especifique quais informações relacionadas ao membro são exibidas :
 
-* **Nome para exibição**
+* **Nome de exibição**
 
    Um nome descritivo a ser exibido para o quadro, refletindo as regras selecionadas para a exibição de emblemas e pontuações.
 O padrão é `Leaderboard`, se nada tiver sido inserido.
@@ -105,7 +105,7 @@ Configuração do componente do Quadro de líderes:
 
 * Guia Configurações :
 
-   * Nome para exibição = `Participation Board`
+   * Nome de exibição = `Participation Board`
    * `checked`:
 
       * Insígnia
@@ -129,7 +129,7 @@ Configuração do componente do Quadro de líderes:
 
 * Guia Configurações :
 
-   * Nome para exibição = `Expertise Board`
+   * Nome de exibição = `Expertise Board`
    * `checked`:
 
       * Insígnia

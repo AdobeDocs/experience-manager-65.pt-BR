@@ -6,7 +6,7 @@ exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
 source-wordcount: '1957'
-ht-degree: 2%
+ht-degree: 23%
 
 ---
 
@@ -27,7 +27,7 @@ Saiba mais sobre o suporte para Fragmentos de conteúdo na API HTTP do Assets, u
 >O [API HTTP de ativos](/help/assets/mac-api-assets.md) abrange:
 >
 >* API REST de ativos
->* incluindo suporte para Fragmentos de conteúdo
+>* incluindo suporte para fragmentos de conteúdo
 >
 >A implementação atual da API HTTP de ativos é baseada no [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) estilo arquitetônico.
 
@@ -68,25 +68,25 @@ Ele usa a variável `/api/assets` endpoint e requer o caminho do ativo para aces
 * Você precisa solicitar:
    * `/api/assets/path/to/asset`
 
-Por exemplo, para acessar `/content/dam/wknd/en/adventures/cycling-tuscany`, solicitação `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+Por exemplo, para acessar `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
->Acesso ao:
+>O acesso por:
 >
->* `/api/assets` **não** a utilização da `.model` seletor.
->* `/content/path/to/page` **does** exigir a utilização da `.model` seletor.
+>* `/api/assets` **não** precisa da utilização do seletor `.model`.
+>* `/content/path/to/page` **precisa** da utilização do seletor `.model`.
 
 
 O método HTTP determina a operação a ser executada:
 
-* **GET** - para recuperar uma representação JSON de um ativo ou uma pasta
-* **POST** - para criar novos ativos ou pastas
-* **PUT** - para atualizar as propriedades de um ativo ou pasta
-* **DELETE** - para excluir um ativo ou pasta
+* **GET**: para recuperar uma representação JSON de um ativo ou uma pasta
+* **POST**: para criar novos ativos ou pastas
+* **PUT**: para atualizar as propriedades de um ativo ou pasta
+* **DELETE**: para excluir um ativo ou pasta
 
 >[!NOTE]
 >
->O corpo da solicitação e/ou os parâmetros de URL podem ser usados para configurar algumas dessas operações; por exemplo, defina que uma pasta ou um ativo deve ser criado por um **POST** solicitação.
+>O corpo da solicitação e/ou os parâmetros de URL podem ser usados para configurar algumas dessas operações; por exemplo, definir que uma pasta ou um ativo deve ser criado por uma solicitação **POST**.
 
 O formato exato das solicitações compatíveis é definido na variável [Referência da API](/help/assets/assets-api-content-fragments.md#api-reference) documentação.
 
@@ -151,8 +151,8 @@ Se a API REST do Assets for usada em um ambiente sem requisitos de autenticaçã
 >
 >Para obter mais informações, consulte:
 >
->* [Explicação do CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
->* [Vídeo - Desenvolvimento do CORS com AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
+>* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Vídeo - Desenvolvimento do CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 
@@ -245,14 +245,14 @@ O conteúdo associado não está exposto no momento.
 
 ## Usar {#using}
 
-O uso pode ser diferente dependendo se você está usando um autor ou um ambiente de publicação AEM, juntamente com seu caso de uso específico.
+O uso pode ser diferente dependendo se você está usando um ambiente de autor ou de publicação no AEM, juntamente com seu caso de uso específico.
 
 * É altamente recomendável que a criação seja vinculada a uma instância do autor ([e atualmente não há como replicar um fragmento para publicar usando essa API](/help/assets/assets-api-content-fragments.md#limitations)).
-* A entrega é possível de ambos, pois AEM serve o conteúdo solicitado somente no formato JSON.
+* A entrega é possível de ambos os ambientes, pois o AEM apresenta o conteúdo solicitado somente no formato JSON.
 
-   * O armazenamento e o delivery de uma instância de autor de AEM devem ser suficientes para aplicativos de biblioteca de mídia por trás do firewall.
+   * Armazenar e entregar a partir de uma instância de autor do AEM deve ser o suficiente para aplicativos de biblioteca de mídia por trás do firewall.
 
-   * Para entrega na Web ao vivo, recomenda-se uma instância de publicação de AEM.
+   * Para entrega em tempo real na web, recomenda-se uma instância de publicação do AEM.
 
 >[!CAUTION]
 >
@@ -260,11 +260,11 @@ O uso pode ser diferente dependendo se você está usando um autor ou um ambient
 
 >[!NOTE]
 >
->Para obter mais detalhes, consulte o [Referência da API](/help/assets/assets-api-content-fragments.md#api-reference). Em especial, [API Adobe Experience Manager Assets - Fragmentos de conteúdo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
+>Para obter mais detalhes, consulte o [Referência da API](/help/assets/assets-api-content-fragments.md#api-reference). Em especial, a seção [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
 
 ### Leitura/entrega {#read-delivery}
 
-O uso é via:
+O uso é feito via:
 
 `GET /{cfParentPath}/{cfName}.json`
 
@@ -272,38 +272,38 @@ Por exemplo:
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
-A resposta é JSON serializado com o conteúdo estruturado como no fragmento de conteúdo. As referências são fornecidas como URLs de referência.
+A resposta é em JSON serializado e o conteúdo é estruturado de acordo com o fragmento de conteúdo. As referências são fornecidas como URLs de referência.
 
 Dois tipos de operações de leitura são possíveis:
 
 * Ao ler um fragmento de conteúdo específico por caminho, a representação JSON do fragmento de conteúdo é retornada.
-* Leitura de uma pasta de fragmentos de conteúdo por caminho: isso retorna as representações JSON de todos os fragmentos de conteúdo dentro da pasta.
+* Leitura de uma pasta de fragmentos de conteúdo por caminho: retorna as representações JSON de todos os fragmentos de conteúdo contidos na pasta.
 
 ### Criar {#create}
 
-O uso é via:
+O uso é feito via:
 
 `POST /{cfParentPath}/{cfName}`
 
-O corpo deve conter uma representação JSON do fragmento de conteúdo a ser criado, incluindo qualquer conteúdo inicial que deve ser definido nos elementos do fragmento de conteúdo. É obrigatório definir a variável `cq:model` e deve apontar para um modelo de fragmento de conteúdo válido. Se isso não for feito, haverá um erro. Também é necessário adicionar um cabeçalho `Content-Type` que está definida como `application/json`.
+O corpo deve conter uma representação JSON do fragmento de conteúdo a ser criado, incluindo qualquer conteúdo inicial que deve ser definido nos elementos do fragmento de conteúdo. É obrigatório definir a propriedade `cq:model` e ela deve apontar para um modelo de fragmento de conteúdo válido. Se isso não for feito, haverá um erro. Também é necessário adicionar um cabeçalho `Content-Type` definido como `application/json`.
 
 ### Atualizar o {#update}
 
-O uso é via
+O uso é feito via
 
 `PUT /{cfParentPath}/{cfName}`
 
-O corpo deve conter uma representação JSON do que deve ser atualizado para o fragmento de conteúdo especificado.
+O corpo deve conter uma representação JSON referente ao que deve ser atualizado para o fragmento de conteúdo especificado.
 
-Pode ser simplesmente o título ou a descrição de um fragmento de conteúdo, um único elemento ou todos os valores e/ou metadados do elemento.
+Isso pode ser simplesmente o título ou a descrição de um fragmento de conteúdo, um único elemento ou todos os valores e/ou metadados do elemento.
 
 ### Excluir {#delete}
 
-O uso é via:
+O uso é feito via:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Limitações           {#limitations}
+## Limitações {#limitations}
 
 Existem algumas limitações:
 
@@ -374,11 +374,11 @@ Os seguintes códigos de status podem ser vistos nas circunstâncias relevantes:
    }
    ```
 
-## Referência da API {#api-reference}
+## Referência da API  {#api-reference}
 
 Consulte aqui para obter referências detalhadas da API:
 
-* [API Adobe Experience Manager Assets - Fragmentos de conteúdo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [API HTTP de ativos](/help/assets/mac-api-assets.md)
 
    * [Recursos disponíveis](/help/assets/mac-api-assets.md#assets)

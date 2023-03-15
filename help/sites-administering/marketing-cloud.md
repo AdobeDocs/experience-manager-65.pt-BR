@@ -95,7 +95,7 @@ A integração do Audience Manager foi removida no AEM 6.3.
 
 <!-- Search&Promote is end of life as of September 1, 2022 For information about integrating AEM and Search&Promote, see [Integrating with Adobe Search&Promote](/help/sites-administering/search-and-promote.md). -->
 
-## Integração com o Adobe Campaign {#integrating-with-adobe-campaign}
+## Integração ao Adobe Campaign {#integrating-with-adobe-campaign}
 
 [Adobe Campaign](https://www.adobe.com/solutions/campaign-management.html) permite gerenciar conteúdo de delivery de email diretamente no Adobe Experience Manager.
 

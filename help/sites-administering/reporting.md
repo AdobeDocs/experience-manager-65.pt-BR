@@ -354,7 +354,7 @@ Para gerar o relatório, você pode especificar:
 
    Padrão: `50`
 
-* **máx. Solicitações**
+* **max. Solicitações**
 
    Número máximo de solicitações a serem analisadas.
 

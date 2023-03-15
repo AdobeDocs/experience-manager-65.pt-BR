@@ -142,7 +142,7 @@ O CRXDE Lite oferece a seguinte funcionalidade:
  </tbody>
 </table>
 
-## Criação de uma pasta {#creating-a-folder}
+## Criação de pastas {#creating-a-folder}
 
 Para criar uma pasta com o CRXDE Lite:
 

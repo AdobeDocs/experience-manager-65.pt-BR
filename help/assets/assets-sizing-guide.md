@@ -105,7 +105,7 @@ Para o repositório, use SSDs ou discos com um nível de IOPS superior a 3000. P
 
 [!DNL Assets] O tem vários casos de uso que tornam o desempenho da rede mais importante do que em muitos de nossos [!DNL Experience Manager] projetos. Um cliente pode ter um servidor rápido, mas se a conexão de rede não for grande o suficiente para suportar a carga dos usuários que estão carregando e baixando ativos do sistema, ele ainda parecerá estar lento. Há uma boa metodologia para determinar o ponto de estrangulamento na conexão de rede de um usuário para [!DNL Experience Manager] at [Considerações de ativos para experiência do usuário, dimensionamento de instâncias, avaliação de fluxos de trabalho e topologia de rede](/help/assets/assets-network-considerations.md).
 
-## Limitações           {#limitations}
+## Limitações {#limitations}
 
 Ao dimensionar uma implementação, é importante manter as limitações do sistema em mente. Se a implementação proposta exceder essas limitações, utilize estratégias criativas, como a divisão dos ativos em vários [!DNL Assets] implementações.
 

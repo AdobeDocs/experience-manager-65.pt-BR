@@ -128,7 +128,7 @@ que são calculados antes da aplicação da estratégia apropriada:
 <table>
  <tbody>
   <tr>
-   <td>Campanha</td>
+   <td>Campaign</td>
    <td>Teaser</td>
    <td>Segmentos atribuídos</td>
    <td>Tags </td>

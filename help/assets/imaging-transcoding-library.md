@@ -58,8 +58,8 @@ Você pode configurar as seguintes opções para a variável `-resize` parâmetr
 
 * `X`: Trabalhos semelhantes a [!DNL Experience Manager]. Por exemplo, -resize 319.
 * `WxH`: A taxa de proporção não é mantida, por exemplo `-resize 319x319`.
-* `Wx`: Corrige a largura e calcula a altura mantendo a proporção. Por exemplo `-resize 319x`.
-* `xH`: Corrige a altura e calcula a largura mantendo a proporção. Por exemplo `-resize x319`.
+* `Wx`: Corrige a largura e calcula a altura mantendo a proporção. Por exemplo, `-resize 319x`.
+* `xH`: Corrige a altura e calcula a largura mantendo a proporção. Por exemplo, `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)

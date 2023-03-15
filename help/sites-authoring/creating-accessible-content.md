@@ -52,7 +52,7 @@ A seção a seguir apresenta as [camadas das Diretrizes da WCAG 2.1](https://www
 
 [Diretriz 1.1 Alternativas em texto: fornecer alternativas em texto para qualquer conteúdo não textual, para que seja possível alterá-lo para outras formas mais adequadas à necessidade do indivíduo, como impressão em caracteres ampliados, braille, fala, símbolos ou linguagem mais simples.](https://www.w3.org/TR/WCAG/#text-alternatives)
 
-### Conteúdo não textual (1.1.1)       {#non-text-content}
+### Conteúdo não textual (1.1.1) {#non-text-content}
 
 * Critério de Sucesso 1.1.1
 * Nível A
@@ -64,13 +64,13 @@ As informações em uma página da Web podem ser fornecidas em vários formatos 
 
 Um benefício adicional útil é que as alternativas em texto permitem que o conteúdo não textual seja indexado pela tecnologia do mecanismo de pesquisa.
 
-#### Como cumprir - Conteúdo não textual (1.1.1)       {#how-to-meet-non-text-content}
+#### Como cumprir - Conteúdo não textual (1.1.1) {#how-to-meet-non-text-content}
 
 Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser feito no campo **Texto alternativo**. Por exemplo, veja o Componente principal **[Imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR)**.
 
 >[!NOTE]
 >
->Alguns Componentes principais predefinidos, como **[Carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt_BR)**, não fornecem um campo **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt_BR#accessibility-tab)**) para o componente inteiro.
+>Alguns Componentes principais predefinidos, como **[Carrossel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt-BR)**, não fornecem um campo **Texto alternativo** para adicionar descrições de texto alternativo a imagens individuais, embora exista o campo **Rótulo** (guia **[Acessibilidade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=pt-BR#accessibility-tab)**) para o componente inteiro.
 >
 >Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento precisará configurá-los para suportar o atributo `alt`, para que os autores possam adicioná-lo ao conteúdo (consulte [Adicionar suporte para elementos HTML e atributos adicionais](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
@@ -113,7 +113,7 @@ O W3C fornece uma série de sugestões, como: cada uma dessas abordagens tem sua
 >
 >Deve haver um nível adequado de contraste entre o plano de fundo e o texto de primeiro plano; isso é abordado com mais detalhes na seção [Contraste (Mínimo) (1.4.3)](#contrast-minimum).
 
-#### Mais informações - Conteúdo não contextual (1.1.1)       {#more-information-non-text-content}
+#### Mais informações - Conteúdo não contextual (1.1.1) {#more-information-non-text-content}
 
 * [Noções sobre o Critério de sucesso 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [Como cumprir o Critério de sucesso 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
@@ -536,7 +536,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 1.4.2](https://www
 
 Os indivíduos com certas deficiências visuais podem não conseguir distinguir entre determinados pares de cores com baixo contraste. Problemas de acessibilidade podem ocorrer para esses indivíduos, se:
 
-*  O texto contrasta mal com a cor de fundo.
+* O texto contrasta mal com a cor de fundo.
 * A codificação de cores do texto (como o texto do link e texto comum) for importante para diferenciar as informações.
 
 >[!NOTE]
@@ -944,7 +944,7 @@ O propósito deste Critério de sucesso é ajudar uma pessoa a saber qual elemen
 
 Uma pessoa deve ser capaz de saber qual elemento entre vários elementos tem o foco do teclado. Se houver apenas um controle acionável pelo teclado na tela, o critério de sucesso será atendido porque o design visual apresenta apenas um item acionável do teclado.
 
-Sempre que o critério de sucesso indicar &quot;modo de operação&quot;, deve ter em conta plataformas que nem sempre apresentam um indicador de foco. Na maioria dos casos, há apenas um modo de operação, então este critério de sucesso se aplica.
+Quando o critério de sucesso indica “modo de operação”, é com o objetivo de levar em conta as plataformas que nem sempre apresentam um indicador de foco. Na maioria dos casos, há apenas um modo de operação, então este critério de sucesso se aplica.
 
 #### Como cumprir - Foco visível (2.4.7) {#how-to-meet-focus-visible}
 
@@ -1013,7 +1013,7 @@ As páginas que aplicam este critério de sucesso:
 
 #### Como Cumprir - Idioma de Partes (3.1.2)       {#how-to-meet-language-of-parts}
 
-O atributo `lang` pode ser utilizado para identificar alterações no idioma do conteúdo. Por exemplo, uma citação em alemão (ISO 639-1 código &quot;de&quot;) pode ser mostrada da seguinte maneira:
+O atributo `lang` pode ser utilizado para identificar alterações no idioma do conteúdo. Por exemplo, uma citação em alemão (ISO 639-1, código “de”) pode ser apresentada da seguinte maneira:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">

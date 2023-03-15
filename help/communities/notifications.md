@@ -94,7 +94,7 @@ Ao selecionar o link Configurações de notificação na página Notificações 
 
 O canal da Web é sempre ativado.
 
-![notificações14](assets/notifications1.png)
+![notifications14](assets/notifications1.png)
 
 O canal de email, que depende do [configuração do email](/help/communities/email.md), fornece as mesmas configurações do canal da Web.
 
@@ -114,13 +114,13 @@ A [site de comunidade criado pelo assistente](/help/communities/sites-console.md
 
 Ao visitar o site publicado, selecione o `Notifications` exibirá todas as notificações do membro.
 
-![notificações4](assets/notifications4.png)
+![notifications4](assets/notifications4.png)
 
 ### Notificações por email {#email-notifications}
 
 Quando o canal de email está ativado, o membro recebe um email que contém um link para o conteúdo na Web.
 
-![notificações5](assets/notifications5.png)
+![notifications5](assets/notifications5.png)
 
 ## Personalizar notificações por email {#customize-email-notifications}
 

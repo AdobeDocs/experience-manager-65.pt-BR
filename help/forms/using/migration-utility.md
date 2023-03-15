@@ -45,7 +45,7 @@ Em seguida, é necessário atualizar os ativos e documentos por [executando o ut
 
 **Em caso de instalação fora do local**
 
-Se for uma instalação fora do local (nova), antes de poder usar os ativos e documentos, será necessário instalar [Pacote de compatibilidade AEMFD](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (inclui o pacote Compatibilidade do gerenciamento de correspondência).
+Se for uma instalação fora do local (nova), antes de poder usar os ativos e documentos, será necessário instalar [Pacote de compatibilidade AEMFD](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) (inclui o pacote Compatibilidade do gerenciamento de correspondência).
 
 Em seguida, é necessário importar o pacote de ativos (zip ou cmp) na nova configuração e, em seguida, atualizar os ativos e documentos por [executando o utilitário Migração](#runningmigrationutility). O Adobe recomenda criar novos ativos na nova configuração somente após a execução do utilitário de migração.
 

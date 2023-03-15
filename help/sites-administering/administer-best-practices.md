@@ -34,7 +34,7 @@ Para obter as práticas recomendadas de criação, implantação e manutenção 
 
 Documentos específicos estão descritos e vinculados nas tabelas a seguir.
 
-## Ativos {#assets}
+## Assets {#assets}
 
 As práticas recomendadas referentes ao Assets, incluindo o recurso Dynamic Media e a integração com o Dynamic Media Classic, estão descritas nos seguintes tópicos:
 

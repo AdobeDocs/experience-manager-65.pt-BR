@@ -7,7 +7,7 @@ exl-id: 1cf8d3a3-1d9a-42fc-9da0-a20c65f021e4
 source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -23,6 +23,6 @@ Isso abrirá uma representação da estrutura do fragmento no painel esquerdo. C
 
 >[!NOTE]
 >
->Usando a navegação estrutural no painel principal, você pode retornar ao ponto de partida.
+>Com a utilização da navegação estrutural no painel principal, é possível navegar de volta ao ponto inicial.
 
 ![Árvore de estrutura do fragmento de conteúdo](assets/cfm-structuretree-02.png)

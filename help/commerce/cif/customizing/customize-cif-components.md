@@ -1,6 +1,6 @@
 ---
 title: Personalizar os Componentes principais da CIF
-description: Saiba como personalizar AEM Componentes principais da CIF. O tutorial aborda como estender com segurança um Componente principal da CIF para atender às necessidades específicas dos negócios. Saiba como estender uma consulta GraphQL para retornar um atributo personalizado e exibir o novo atributo em um Componente principal da CIF.
+description: Saiba como personalizar AEM Componentes principais da CIF. O tutorial aborda como estender com segurança um Componente principal da CIF para atender às necessidades específicas dos negócios. Saiba como estender um query do GraphQL para retornar um atributo personalizado e exibir o novo atributo em um Componente principal da CIF.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -20,7 +20,7 @@ ht-degree: 24%
 
 # Personalizar os Componentes principais da CIF do AEM {#customize-cif-components}
 
-O [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para usar [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components). Neste tutorial, você estenderá ainda mais o [Teaser do produto](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) componente para exibir um atributo personalizado do Adobe Commerce. Você também aprenderá mais sobre a integração GraphQL entre o AEM e a Adobe Commerce e os ganchos de extensão fornecidos pelos Componentes principais da CIF.
+O [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para usar [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components). Neste tutorial, você estenderá ainda mais o [Teaser do produto](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) componente para exibir um atributo personalizado do Adobe Commerce. Você também aprenderá mais sobre a integração do GraphQL entre o AEM e o Adobe Commerce e os ganchos de extensão fornecidos pelos Componentes principais da CIF.
 
 >[!TIP]
 >
@@ -28,7 +28,7 @@ O [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base
 
 ## O que você vai criar
 
-A marca Venia começou recentemente a fabricar alguns produtos usando materiais sustentáveis e a empresa gostaria de exibir um **Econômica** emblema como parte do Teaser do produto. Um novo atributo personalizado será criado no Adobe Commerce para indicar se um produto usa a variável **Ecológico** material. Esse atributo personalizado será adicionado como parte da consulta GraphQL e exibido no Teaser do produto para produtos especificados.
+A marca Venia começou recentemente a fabricar alguns produtos usando materiais sustentáveis e a empresa gostaria de exibir um **Econômica** emblema como parte do Teaser do produto. Um novo atributo personalizado será criado no Adobe Commerce para indicar se um produto usa a variável **Ecológico** material. Esse atributo personalizado será adicionado como parte da consulta do GraphQL e exibido no Teaser do produto para produtos especificados.
 
 ![Implementação Final do Símbolo Ecológico](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -36,7 +36,7 @@ A marca Venia começou recentemente a fabricar alguns produtos usando materiais 
 
 Um ambiente de desenvolvimento local é necessário para concluir este tutorial. Isso inclui uma instância em execução de AEM que é configurada e conectada a uma instância do Adobe Commerce. Revise os requisitos e as etapas para [configuração de um desenvolvimento local com AEM](../develop.md). Para seguir o tutorial completamente, você precisará de permissões para adicionar [Atributos a um produto](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) no Adobe Commerce.
 
-Você também precisará do GraphQL IDE como [GraphiQL](https://github.com/graphql/graphiql) ou uma extensão do navegador para executar amostras de código e tutoriais. Se você instalar uma extensão do navegador, verifique se ela tem a capacidade de definir cabeçalhos de solicitação. No Google Chrome, [Cliente GraphQL Altair](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) é uma extensão que pode fazer o trabalho.
+Você também precisará do GraphQL IDE, como [GraphiQL](https://github.com/graphql/graphiql) ou uma extensão do navegador para executar amostras de código e tutoriais. Se você instalar uma extensão do navegador, verifique se ela tem a capacidade de definir cabeçalhos de solicitação. No Google Chrome, [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) é uma extensão que pode fazer o trabalho.
 
 ## Clonar o projeto Venia {#clone-venia-project}
 
@@ -137,9 +137,9 @@ Os produtos e os dados do produto exibidos no AEM são armazenados no Adobe Comm
 
 ## Usar um GraphQL IDE para verificar o atributo {#use-graphql-ide}
 
-Antes de entrar em AEM código, é útil explorar a variável [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) usando um GraphQL IDE. A integração do Adobe Commerce com o AEM é feita principalmente por meio de uma série de consultas GraphQL. Entender e modificar as consultas GraphQL é uma das principais maneiras de estender os Componentes principais da CIF.
+Antes de entrar em AEM código, é útil explorar a variável [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) usando um GraphQL IDE. A integração do Adobe Commerce com o AEM é feita principalmente por meio de uma série de consultas do GraphQL. Compreender e modificar as consultas do GraphQL é uma das principais maneiras de estender os Componentes principais da CIF.
 
-Em seguida, use um GraphQL IDE para verificar se a variável `eco_friendly` foi adicionado ao conjunto de atributos do produto. As capturas de tela deste tutorial estão usando o [Cliente GraphQL Altair](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
+Em seguida, use um GraphQL IDE para verificar se a variável `eco_friendly` foi adicionado ao conjunto de atributos do produto. As capturas de tela deste tutorial estão usando o [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
 
 1. Abra o GraphQL IDE e insira o URL `http://<server>/graphql` na barra de URL do IDE ou da extensão.
 2. Adicione o seguinte [consulta de produtos](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) em que `YOUR_SKU` é **SKU** do produto utilizado no exercício anterior:
@@ -176,9 +176,9 @@ Em seguida, use um GraphQL IDE para verificar se a variável `eco_friendly` foi 
    }
    ```
 
-   ![Resposta GraphQL de exemplo](../assets/customize-cif-components/sample-graphql-query.png)
+   ![Resposta de exemplo do GraphQL](../assets/customize-cif-components/sample-graphql-query.png)
 
-   Observe que o valor de **Sim** é um número inteiro de **1**. Isso será útil quando gravarmos a consulta GraphQL no Java.
+   Observe que o valor de **Sim** é um número inteiro de **1**. Isso será útil quando gravarmos a consulta do GraphQL em Java.
 
    >[!TIP]
    >
@@ -261,9 +261,9 @@ Use [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-ma
 
    O `@PostConstruct` A anotação garante que esse método seja chamado assim que o Modelo do Sling for inicializado.
 
-   Observe que a consulta GraphQL do produto já foi estendida com o uso da variável `extendProductQueryWith` para recuperar o método adicional `created_at` atributo. Esse atributo é usado posteriormente como parte do `isShowBadge()` método .
+   Observe que o query de GraphQL do produto já foi estendido usando o `extendProductQueryWith` para recuperar o método adicional `created_at` atributo. Esse atributo é usado posteriormente como parte do `isShowBadge()` método .
 
-1. Atualize a consulta GraphQL para incluir a variável `eco_friendly` na consulta parcial:
+1. Atualize a consulta do GraphQL para incluir a variável `eco_friendly` na consulta parcial:
 
    ```java
    //MyProductTeaserImpl.java
@@ -324,7 +324,7 @@ Use [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-ma
    }
    ```
 
-   No método acima, a variável `productRetriever` é usada para buscar o produto e a variável `getAsInteger()` é usado para obter o valor da variável `eco_friendly` atributo. Com base nas consultas GraphQL executadas anteriormente, sabemos que o valor esperado quando a variável `eco_friendly` está definido como &quot;**Sim**&quot; é, na verdade, um número inteiro de **1**.
+   No método acima, a variável `productRetriever` é usada para buscar o produto e a variável `getAsInteger()` é usado para obter o valor da variável `eco_friendly` atributo. Com base nas consultas do GraphQL executadas anteriormente, sabemos que o valor esperado quando a variável `eco_friendly` está definido como &quot;**Sim**&quot; é, na verdade, um número inteiro de **1**.
 
    Agora que o Modelo do Sling foi atualizado, a marcação de componente precisa ser atualizada para realmente exibir um indicador de **Econômica** baseado no Modelo do Sling.
 
@@ -496,9 +496,9 @@ Revise a funcionalidade do **Novo** selo que já foi implementado no Teaser do p
 
 ## Recursos adicionais {#additional-resources}
 
-- [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+- [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
 - [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components)
 - [Personalizar os Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-- [Personalizar os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+- [Personalizar os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=pt-BR)
 - [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
 - [Uso do seletor de produto e categoria da CIF](use-cif-pickers.md)

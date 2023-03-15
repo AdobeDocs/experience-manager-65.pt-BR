@@ -14,7 +14,7 @@ exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
 source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
 workflow-type: tm+mt
 source-wordcount: '546'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -37,9 +37,9 @@ Este artigo ilustra o exemplo do componente meteorológico no SPA de amostra do 
 Familiarize-se com o [estrutura de um pedido SPA para AEM](/help/sites-developing/spa-getting-started-react.md) antes de ler este artigo.
 
 >[!CAUTION]
->Este documento usa o [Aplicativo de diário We.Retail](https://github.com/adobe/aem-sample-we-retail-journal) apenas para fins de demonstração. Não deve ser utilizado para qualquer trabalho de projeto.
+>Este documento usa o [Aplicativo de diário We.Retail](https://github.com/adobe/aem-sample-we-retail-journal) apenas para fins de demonstração. Ele não deve ser utilizado ao trabalhar em projetos.
 >
->Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
+>Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou Angular e utiliza o SDK do SPA.
 
 ## O Componente Tempo {#the-weather-component}
 

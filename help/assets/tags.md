@@ -854,4 +854,4 @@ No entanto, ele é compatível com o nó de publicação do Experience Manager. 
 
 É possível contornar essa limitação. Especifique o URL de desenvolvimento ou armazenamento temporário da biblioteca de Tags de plataforma na configuração da nuvem de Tags do Experience Platform para o nó de publicação do Experience Manager acima. Isso faz com que o nó de publicação do Experience Manager use a versão de Desenvolvimento ou Armazenamento temporário da biblioteca de Tags do Experience Platform.
 
-Consulte [Integre o Experience Manager com Tags de Experience Platform por meio de [!DNL Adobe I/O]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) para obter mais informações sobre como configurar a Configuração da nuvem de tags do Experience Platform.
+Consulte [Integre o Experience Manager com Tags de Experience Platform por meio de [!DNL Adobe I/O]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=pt-BR) para obter mais informações sobre como configurar a Configuração da nuvem de tags do Experience Platform.

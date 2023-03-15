@@ -7,7 +7,7 @@ exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
 source-git-commit: da41f48d08b7629a734e2f60077af6190a7fee8f
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 76%
+ht-degree: 78%
 
 ---
 
@@ -59,7 +59,7 @@ Para [usar determinadas funcionalidades do fragmento de conteúdo](#creating-a-c
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### Aplicar a configuração à sua pasta de ativos {#apply-the-configuration-to-your-assets-folder}
+### Aplique a configuração à sua pasta de ativos {#apply-the-configuration-to-your-assets-folder}
 
 Quando a configuração **global** estiver ativado para a funcionalidade de fragmento de conteúdo, então se aplica a qualquer pasta de Ativos.
 

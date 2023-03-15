@@ -65,7 +65,7 @@ Comunidades [pacote de recursos 1](deploy-communities.md#latestfeaturepack), é 
    <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
-   <td> <strong>modelos</strong></td>
+   <td> <strong>templates</strong></td>
    <td> /libs/social/group/components/hbs/communitygroups/communitygroups.hbs<br /> </td>
   </tr>
   <tr>

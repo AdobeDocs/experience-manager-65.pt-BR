@@ -98,7 +98,7 @@ Na implementação padrão SAINTDefaultTransformer, os recursos secundários da 
 
 | **Chave** | **Produto** | **Preço** | **Tamanho** | **Cor** | **Cor^Código** |
 |---|---|---|---|---|---|
-| 1 | Meu nome de produto | 120,90 | M | black | 101 |
+| 1 | Meu nome de produto | 120.90 | M | black | 101 |
 
 As propriedades incluem:
 

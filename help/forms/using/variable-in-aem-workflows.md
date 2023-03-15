@@ -202,7 +202,7 @@ Use as seguintes APIs no script ECMA para recuperar valores para variáveis exis
 | Modelo de dados do formulário | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Você precisa [Pacote do complemento AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) para tipos de dados de variáveis Document and Form Data Model.
+Você precisa [Pacote do complemento AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) para tipos de dados de variáveis Document and Form Data Model.
 
 **Exemplo**
 

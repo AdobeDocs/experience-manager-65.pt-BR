@@ -414,7 +414,7 @@ Você deve ser um membro do [grupo forms-power-user](forms-groups-privileges-tas
    <td> </td>
   </tr>
   <tr>
-   <td>Escalonador Numérico</td>
+   <td>Escalonador numérico</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -491,7 +491,7 @@ Você deve ser um membro do [grupo forms-power-user](forms-groups-privileges-tas
    <td><img alt="" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
-   <td>Opção de Imagem</td>
+   <td>Opção de imagem</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -502,7 +502,7 @@ Você deve ser um membro do [grupo forms-power-user](forms-groups-privileges-tas
    <td><img alt="" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
-   <td>Campo de Entrada de Data</td>
+   <td>Campo de entrada de data</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -641,7 +641,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
    <td>
     <ul>
      <li>Caixa numérica</li>
-     <li>Escalonador Numérico<br /> </li>
+     <li>Escalonador numérico<br /> </li>
      <li>Seletor de datas</li>
     </ul> </td>
   </tr>
@@ -652,7 +652,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
    <td>
     <ul>
      <li>Caixa numérica</li>
-     <li>Escalonador Numérico</li>
+     <li>Escalonador numérico</li>
      <li>Seletor de datas</li>
     </ul> </td>
   </tr>
@@ -663,7 +663,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
    <td>
     <ul>
      <li>Caixa numérica</li>
-     <li>Escalonador Numérico</li>
+     <li>Escalonador numérico</li>
      <li>Seletor de datas</li>
     </ul> </td>
   </tr>
@@ -674,7 +674,7 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
    <td>
     <ul>
      <li>Caixa numérica</li>
-     <li>Escalonador Numérico</li>
+     <li>Escalonador numérico</li>
      <li>Seletor de datas</li>
     </ul> </td>
   </tr>

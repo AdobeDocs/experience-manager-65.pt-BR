@@ -14,7 +14,7 @@ exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 3%
+ht-degree: 14%
 
 ---
 
@@ -99,9 +99,9 @@ Os pontos principais ao trabalhar com componentes de comunicação interativos s
 
 ![Rótulos da barra de ferramentas do componente](do-not-localize/component_toolbar_labels_new.png)
 
-Ao selecionar um componente, você verá uma barra de ferramentas que permite trabalhar com ele. Você tem opções para recortar, colar, mover e especificar as propriedades dos componentes. Suas opções são:
+Ao selecionar um componente, você verá uma barra de ferramentas que permite trabalhar com ele. Há opções para recortar, colar, mover e especificar as propriedades dos componentes. As opções são:
 
-A.**Configurar**: Ao tocar **Configurar**, as propriedades do componente são visíveis na barra lateral.
+A.**Configurar**: ao tocar em **Configurar**, as propriedades do componente ficam visíveis na barra lateral.
 
 B.**Editar regras**: Ao tocar em Editar regras, o Editor de regras é exibido, onde você pode editar e criar regras para o componente selecionado. No Editor de regras, também é possível selecionar outros objetos de formulário (componentes) e editar/criar regras para esses objetos de formulário.
 
@@ -115,9 +115,9 @@ F. **Inserir componente**: Permite inserir um componente acima do componente sel
 
 G. **Colar**: Permite colar o componente cortado ou copiado usando as opções descritas acima.
 
-H. **Grupo**: Permite selecionar vários componentes se você deseja cortar, copiar ou colar mais de um componente.
+H. **Grupo**: permite selecionar vários componentes se você deseja cortar, copiar ou colar mais de um componente.
 
-I. **Pai**: Permite selecionar o pai de um componente.
+I. **Página principal**: permite selecionar a página principal de um componente.
 
 J. **Exibir expressão SOM:** Permite que você visualize a variável [Expressão SOM](../../forms/using/using-som-expressions-adaptive-forms.md) para o componente.
 
@@ -131,19 +131,19 @@ Além disso, a variável **Substituir** na barra de ferramentas permite substitu
 
 ## Barra de ferramentas da página {#page-toolbar}
 
-A barra de ferramentas Página na parte superior fornece opções que permitem que você visualize a Comunicação interativa e altere suas propriedades. Você pode visualizar a Comunicação interativa ao criá-la e fazer alterações de acordo. Na barra de ferramentas da página, você vê:
+A barra de ferramentas Página na parte superior fornece opções que permitem que você visualize a Comunicação interativa e altere suas propriedades. Você pode visualizar a Comunicação interativa ao criá-la e fazer alterações de acordo. Na barra de ferramentas da página, você observa:
 
-* Alternar painel lateral ![painel lateral de alternância](assets/toggle-side-panel.png): Permite mostrar ou ocultar a Barra Lateral.
+* Alternar painel lateral![ alternar-painel-lateral](assets/toggle-side-panel.png): Permite exibir ou ocultar a Barra Lateral.
 * Informações da página ![pageinformationad](assets/pageinformationad.png): Permite visualizar as propriedades da página.
 * Emulador ![régua](assets/ruler.png): Permite que você emule a aparência de sua Comunicação interativa para diferentes tamanhos de exibição, como tablets e telefones.
-* Editar: Permite selecionar outros modos, como: Editar, Estilo, Desenvolvedor e Design.
+* Editar: permite selecionar outros modos, como: Editar, Estilo, Desenvolvedor e Design.
 
    * Editar: Permite editar as propriedades da Comunicação interativa e seus componentes. Por exemplo, adicionar um componente, soltar uma imagem e especificar campos obrigatórios.
    * Estilo: Permite estilizar a aparência dos componentes da Comunicação interativa. Por exemplo, no modo de estilo, é possível selecionar um painel e especificar a cor do plano de fundo.
-   * Desenvolvedor: Permite que um desenvolvedor:
+   * Desenvolvedor: permite que um desenvolvedor:
 
       * Descubra o componente de Comunicação interativa.
-      * Depurar o que está acontecendo onde e quando, o que, por sua vez, ajuda a resolver problemas.
+      * Depure onde e quando está acontecendo, o que, por vezes, ajuda a resolver problemas.
    * Target: Permite ativar ou desativar componentes personalizados ou componentes prontos para uso que não estejam listados na Barra lateral.
 
 

@@ -38,7 +38,7 @@ O complemento AEM Commerce para AEM 6.5 também conhecido. O complemento CIF tam
 Devem ser instalados:
 
 - AEM local 6.5
-- [AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 7 ou posterior
+- [AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html) 7 ou posterior
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 ou mais recente)
 - [Nó LTS](https://nodejs.org/en/)
@@ -47,7 +47,7 @@ Devem ser instalados:
 
 ### Acesso ao complemento CIF
 
-É possível baixar o complemento CIF no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), procure por &quot;complemento AEM Commerce&quot;.
+É possível baixar o complemento CIF no [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html), procure por &quot;complemento AEM Commerce&quot;.
 
 >[!TIP]
 >
@@ -150,17 +150,17 @@ Para começar a usar a loja de referência Venia, basta clonar a variável [Repo
 
 ### Conecte AEM ao sistema de comércio
 
-Para conectar seu projeto ao sistema de comércio, AEM deve ser configurado com o ponto de extremidade GraphQL do sistema de comércio.
+Para conectar seu projeto ao sistema de comércio, AEM deve ser configurado com o terminal GraphQL do seu sistema de comércio.
 
 Ambos, um projeto gerado pelo [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype) ou [Loja de referência Venia AEM](https://github.com/adobe/aem-cif-guides-venia)já inclua um [configuração padrão](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) que deve ser adaptado.
 
-Substitua o valor da variável `url` em `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` com o ponto de extremidade GraphQL do sistema de comércio usado pelo projeto.
+Substitua o valor da variável `url` em `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` com o terminal GraphQL do sistema de comércio usado pelo projeto.
 
-O complemento AEM Commerce e os Componentes principais da CIF se conectam ao ponto de extremidade GraphQL de comércio por meio do servidor AEM e diretamente pelo navegador. Por padrão, os Componentes principais da CIF do lado do cliente e as ferramentas de criação do complemento CIF conectam-se ao `/api/graphql`. Se necessário, isso pode ser ajustado através da configuração do Cloud Service da CIF (veja abaixo).
+O complemento AEM Commerce e os Componentes principais da CIF se conectam ao endpoint comercial do GraphQL por meio do servidor AEM e diretamente pelo navegador. Por padrão, os Componentes principais da CIF do lado do cliente e as ferramentas de criação do complemento CIF conectam-se ao `/api/graphql`. Se necessário, isso pode ser ajustado através da configuração do Cloud Service da CIF (veja abaixo).
 
-O complemento CIF fornece um servlet proxy GraphQL em `/api/graphql`. Se você não planeja usar um Dispatcher de AEM local, é recomendável configurar também o servlet proxy GraphQL.
+O complemento CIF fornece um servlet proxy da GraphQL em `/api/graphql`. Se você não planeja usar um Dispatcher de AEM local, é recomendável configurar também o servlet proxy do GraphQL.
 
-Navegue até http://localhost:4502/system/console/configMgr e crie uma configuração OSGI para a variável `Adobe CIF GraphQL Proxy Configuration` serviço. Use o mesmo ponto de extremidade GraphQL do sistema de comércio usado para o cliente GraphQL acima.
+Navegue até http://localhost:4502/system/console/configMgr e crie uma configuração OSGI para a variável `Adobe CIF GraphQL Proxy Configuration` serviço. Use o mesmo terminal GraphQL do seu sistema de comércio usado para o cliente GraphQL acima.
 
 ## Recursos adicionais
 

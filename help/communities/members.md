@@ -49,7 +49,7 @@ No ambiente de criação, para acessar o console Membros para gerenciar membros 
 >
 >Não será possível usar o console Membros se a variável [serviço de túnel](deploy-communities.md#tunnel-service-on-author) não está ativado.
 
-![membro-console1](assets/member-console1.png)
+![member-console1](assets/member-console1.png)
 
 ### Pesquisar {#search-features}
 
@@ -58,7 +58,7 @@ Selecione o ícone do painel lateral no lado esquerdo do `Members` para alternar
 ![](assets/leftpanel-icon.png)
 
 
-![membro-console2](assets/member-console2.png)
+![member-console2](assets/member-console2.png)
 
 Selecione o ícone de pesquisa no lado esquerdo do `Members` para ativar o painel lateral de pesquisa fechado.
 

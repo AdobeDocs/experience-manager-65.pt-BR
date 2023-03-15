@@ -94,7 +94,7 @@ A tabela a seguir ilustra a fonte de dados para cada campo na anatomia da comuni
      <li>Código do Estado</li>
      <li>Número de Conexões</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Resumo da Lista</td>
@@ -108,7 +108,7 @@ A tabela a seguir ilustra a fonte de dados para cada campo na anatomia da comuni
      <li>Valor devido</li>
      <li>Data de vencimento</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Resumo dos encargos</td>
@@ -126,7 +126,7 @@ A tabela a seguir ilustra a fonte de dados para cada campo na anatomia da comuni
      <li>TOTAL PAGÁVEL (taxas de utilização calculadas, campo)</li>
     </ul> <p>Tabela - faturas</p> </td>
    <td>Nenhum campo</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Chamadas discriminadas - Saída</td>
@@ -140,20 +140,20 @@ A tabela a seguir ilustra a fonte de dados para cada campo na anatomia da comuni
     </ul> </td>
    <td><p>Todos os valores</p> <p>Tabela - chamadas</p> </td>
    <td>Nenhum campo</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Pagar Agora</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>PagarAgora</td>
   </tr>
   <tr>
    <td>Serviços de valor agregado</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>ValueAddedServices</td>
   </tr>
  </tbody>

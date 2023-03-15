@@ -127,7 +127,7 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
-   <td><p>Ativos</p> </td>
+   <td><p>Assets</p> </td>
   </tr>
   <tr>
    <td><p>Commerce</p> </td>
@@ -242,7 +242,7 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>Aplicativo de desktop do </p> </td>
+   <td><p>Aplicativo de desktop do  </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -497,10 +497,10 @@ Os testes de benchmark foram realizados com as seguintes especificações:
 | Servidor | Hardware de metal nu (HP) |
 | Sistema Operacional | RedHat Linux |
 | CPU / núcleos | CPU Intel(R) Xeon(R) CPU E5-2407 @2,40GHz, 8 núcleos |
-| RAM | 32 GB |
+| RAM | 32GB |
 | Disco | Magnético |
 | Java | Oracle JRE versão 8 |
-| Heap da JVM | 16 GB |
+| Heap da JVM | 16GB |
 | Produto | AEM 6.2 |
 | Nodestore | TarMK |
 | Armazenamento de dados | DS de arquivo |
@@ -607,13 +607,13 @@ Os testes de benchmark foram realizados com as seguintes especificações:
 | Servidor | Hardware de metal nu (HP) | Hardware de metal nu (HP) |
 | Sistema Operacional | RedHat Linux | RedHat Linux |
 | CPU / núcleos | CPU Intel(R) Xeon(R) CPU E5-2407 @2,40GHz, 8 núcleos | CPU Intel(R) Xeon(R) CPU E5-2407 @2,40GHz, 8 núcleos |
-| RAM | 32 GB | 32 GB |
+| RAM | 32GB | 32GB |
 | Disco | Magnético - >IOPS de 1k | Magnético - >IOPS de 1k |
 | Java | Oracle JRE versão 8 | N/A |
-| Heap da JVM | 16 GB | N/D |
+| Heap da JVM | 16GB | N/A |
 | Produto | AEM 6.2 | MongoDB 3.2 WiredTiger |
-| Nodestore | MongoMK | N/D |
-| Armazenamento de dados | DS de arquivo | N/D |
+| Nodestore | MongoMK | N/A |
+| Armazenamento de dados | DS de arquivo | N/A |
 | Cenário | Produto único: Ativos / 30 threads simultâneos | Produto único: Ativos / 30 threads simultâneos |
 
 ### Resultados do benchmark de desempenho {#performance-benchmark-results-1}
@@ -686,8 +686,8 @@ Para obter mais detalhes sobre TarMK vs MongoMK, consulte [Implantações recome
   </tr>
   <tr>
    <td>RAM</td>
-   <td>32 GB</td>
-   <td>32 GB</td>
+   <td>32GB</td>
+   <td>32GB</td>
    <td> </td>
   </tr>
   <tr>
@@ -699,13 +699,13 @@ Para obter mais detalhes sobre TarMK vs MongoMK, consulte [Implantações recome
   <tr>
    <td>Java</td>
    <td>Oracle JRE versão 8</td>
-   <td>N/D</td>
+   <td>N/A</td>
    <td> </td>
   </tr>
   <tr>
    <td>JVM Heap16GB</td>
-   <td>16 GB</td>
-   <td>N/D</td>
+   <td>16GB</td>
+   <td>N/A</td>
    <td> </td>
   </tr>
   <tr>
@@ -717,13 +717,13 @@ Para obter mais detalhes sobre TarMK vs MongoMK, consulte [Implantações recome
   <tr>
    <td>Nodestore</td>
    <td>TarMK ou MongoMK</td>
-   <td>N/D</td>
+   <td>N/A</td>
    <td> </td>
   </tr>
   <tr>
    <td>Armazenamento de dados</td>
    <td>DS de arquivo </td>
-   <td>N/D</td>
+   <td>N/A</td>
    <td> </td>
   </tr>
   <tr>
@@ -768,14 +768,14 @@ Para obter mais detalhes sobre TarMK vs MongoMK, consulte [Implantações recome
   <tr>
    <td>CPU / núcleos</td>
    <td>32</td>
-   <td>32º</td>
-   <td>32º</td>
+   <td>32</td>
+   <td>32</td>
   </tr>
   <tr>
    <td>RAM</td>
-   <td>60 GB</td>
-   <td>60 GB</td>
-   <td>60 GB</td>
+   <td>60GB</td>
+   <td>60GB</td>
+   <td>60GB</td>
   </tr>
   <tr>
    <td>Disco</td>
@@ -787,13 +787,13 @@ Para obter mais detalhes sobre TarMK vs MongoMK, consulte [Implantações recome
    <td>Java</td>
    <td>Oracle JRE versão 8</td>
    <td><br /> Oracle JRE versão 8</td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>JVM Heap16GB</td>
-   <td>30 GB</td>
-   <td>30 GB</td>
-   <td>N/D</td>
+   <td>30GB</td>
+   <td>30GB</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>Produto </td>
@@ -805,13 +805,13 @@ Para obter mais detalhes sobre TarMK vs MongoMK, consulte [Implantações recome
    <td>Nodestore</td>
    <td>TarMK </td>
    <td>MongoMK</td>
-   <td><br /> N/D</td>
+   <td><br /> N/A</td>
   </tr>
   <tr>
    <td>Armazenamento de dados</td>
    <td>DS de arquivo </td>
    <td><br /> DS de arquivo</td>
-   <td><br /> N/D</td>
+   <td><br /> N/A</td>
   </tr>
   <tr>
    <td>Cenário</td>

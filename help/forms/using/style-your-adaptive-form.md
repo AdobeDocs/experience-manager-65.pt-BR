@@ -165,7 +165,7 @@ O cabeçalho e o rodapé fornecem uma aparência consistente e distinta para um 
      </tr> 
      <tr> 
       <td>Altura</td> 
-      <td>4,75rem</td> 
+      <td>4.75rem</td> 
      </tr> 
     </tbody> 
    </table>
@@ -251,7 +251,7 @@ Você pode usar um tema personalizado para aplicar um estilo idêntico a todos o
      </tr> 
      <tr> 
       <td>Segundo plano</td> 
-      <td>Cor do Plano de fundo</td> 
+      <td>Cor do plano de fundo</td> 
       <td>F6921E</td> 
      </tr> 
      <tr> 
@@ -351,7 +351,7 @@ Alguns estilos se aplicam somente a um componente específico. Esses componentes
      </tr> 
      <tr> 
       <td>Segundo plano</td> 
-      <td>Cor do Plano de fundo</td> 
+      <td>Cor do plano de fundo</td> 
       <td>FFFFFF</td> 
      </tr> 
      <tr> 
@@ -372,7 +372,7 @@ Alguns estilos se aplicam somente a um componente específico. Esses componentes
      <tr> 
       <td>Borda</td> 
       <td>Raio da Borda</td> 
-      <td>7 px</td> 
+      <td>7px</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
@@ -425,7 +425,7 @@ Alguns estilos se aplicam somente a um componente específico. Esses componentes
      </tr> 
      <tr> 
       <td>Segundo plano</td> 
-      <td>Cor do Plano de fundo</td> 
+      <td>Cor do plano de fundo</td> 
       <td>F6921E</td> 
      </tr> 
      <tr> 

@@ -44,67 +44,67 @@ Os seguintes Quick Starts estão disponíveis para invocar programaticamente os 
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api">Chamada de um processo de duração curta usando a API de chamada</a></p></td>
    <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">Início rápido: Chamada de um processo de duração curta usando a API de chamada</a></p></td>
-   <td><p>N/D</p></td>
+   <td><p>N/A</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">Chamada de AEM Forms usando codificação Base64</a> (proxy do serviço Web Java)</p></td>
-   <td><p>N/D</p></td>
-   <td><p>N/D</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_java_proxy_files_and_base64_encoding">Início rápido: Chamada de serviço usando arquivos proxy Java e codificação Base64</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">Chamada de AEM Forms usando codificação Base64</a> (proxy do serviço Web do .NET)</p></td>
-   <td><p>N/D</p></td>
-   <td><p>N/D</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_base64_in_a_microsoft_net_project">Início rápido: Chamando um serviço usando base64 em um projeto Microsoft .NET</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom">Chamar o AEM Forms usando MTOM</a> (exemplo do serviço Web .NET)</p></td>
-   <td><p>N/D</p></td>
-   <td><p>N/D</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_mtom_in_a_net_project">Início rápido: Chamar um serviço usando MTOM em um projeto .NET</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref">Chamar o AEM Forms usando SwaRef</a> (exemplo de serviço da Web Java)</p></td>
-   <td><p>N/D</p></td>
-   <td><p>N/D</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_swaref_in_a_java_project">Início rápido: Chamar um serviço usando SwaRef em um projeto Java</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">Chamada de AEM Forms usando dados BLOB sobre HTTP</a> (exemplo de serviço da Web Java)</p></td>
-   <td><p>N/D</p></td>
-   <td><p>N/D</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_net_project">Início rápido: Chamar um serviço usando dados BLOB por HTTP em um projeto .NET</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">Chamada de AEM Forms usando dados BLOB sobre HTTP</a> (exemplo do serviço Web .NET)</p></td>
-   <td><p>N/D</p></td>
-   <td><p>N/D</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_java_project">Início rápido: Chamar um serviço usando dados BLOB sobre HTTP em um projeto Java</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime">Chamar o AEM Forms usando DIME</a> (exemplo de serviço da Web Java)</p></td>
-   <td><p>N/D</p></td>
-   <td><p>N/D</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_dime_in_a_java_project">Início rápido: Chamar um serviço usando DIME em um projeto Java</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">Invocar o AEM Forms usando (obsoleto para formulários AEM) AEM Forms Remoting</a></p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting">Início rápido: Invocar um processo de duração curta transmitindo um documento inseguro usando (obsoleto para formulários AEM) Remota do AEM Forms</a></p></td>
-   <td><p>N/D</p></td>
-   <td><p>N/D</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#passing_secure_documents_to_invoke_processes_using_remoting">Passar documentos seguros para invocar processos usando Remota</a></p></td>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting">Início rápido: Invocar um processo de duração curta transmitindo um documento seguro usando (obsoleto para formulários AEM) Remota do AEM Forms</a></p></td>
-   <td><p>N/D</p></td>
-   <td><p>N/D</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking_custom_component_services_using_remoting">Invocar serviços de componentes personalizados usando Remota</a></p></td>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-the-customer-custom-service-using-remoting">Início rápido: Chamar o serviço personalizado do Cliente usando (obsoleto para formulários AEM) AEM Forms Remoting</a></p></td>
-   <td><p>N/D</p></td>
-   <td><p>N/D</p></td>
+   <td><p>N/A</p></td>
+   <td><p>N/A</p></td>
   </tr>
  </tbody>
 </table>

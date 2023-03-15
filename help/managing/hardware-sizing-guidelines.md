@@ -207,7 +207,7 @@ A eficiência do cache é fundamental para a velocidade do site. A tabela a segu
 | 100% | 1000-2000 | 35-70 |
 | 99% | 910 | 32 |
 | 95% | 690 | 25 |
-| 90% | 520 | 18º |
+| 90% | 520 | 18 |
 | 60% | 220 | 8 |
 | 0% | 100 | 3.5 |
 

@@ -202,7 +202,7 @@ Se você não tiver uma função de administrador, esta é uma lista de permiss�
 | ------------------- | ---------------------------------------------------------------- |
 | [!UICONTROL Editar] | Permissões de leitura e gravação no `/apps` nó no CRXDE |
 | [!UICONTROL Excluir] | Permissões de Leitura, Gravação e Exclusão no `/apps` nó no CRXDE |
-| [!UICONTROL Visualizar] | Permissões de Leitura, Gravação e Exclusão no `/var/dam/content` no CRXDE. Além disso, permissões de leitura e gravação em `/apps` nó . |
+| [!UICONTROL Visualização] | Permissões de Leitura, Gravação e Exclusão no `/var/dam/content` no CRXDE. Além disso, permissões de leitura e gravação em `/apps` nó . |
 
 >[!MORELIKETHIS]
 >

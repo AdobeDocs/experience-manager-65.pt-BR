@@ -76,7 +76,7 @@ O `following` lista os membros que estão seguindo o membro atual ou que estão 
 | **resourceType** | `social/socialgraph/components/hbs/following` |
 |---|---|
 | [**incondicional**](scf.md#add-or-include-a-communities-component) | Não |
-| **modelos** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
+| **templates** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
 | **css** | `/libs/social/socialgraph/components/hbs/following/clientlibs/following.css` |
 
 * [Personalizações do lado do cliente](client-customize.md)

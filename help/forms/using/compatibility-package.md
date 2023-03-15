@@ -38,9 +38,9 @@ Para obter mais informações, consulte [Ativos compatíveis com o AEM Forms 6.5
 
 Depois de executar uma atualização, faça o seguinte para instalar o pacote de compatibilidade do AEMFD e tornar seus ativos compatíveis com o 6.5:
 
-Certifique-se de que [Pacote de compatibilidade AEM](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) pré-instalado.
+Certifique-se de que [Pacote de compatibilidade AEM](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) pré-instalado.
 
-1. Instale o 6.5 mais recente [Pacote de compatibilidade](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+1. Instale o 6.5 mais recente [Pacote de compatibilidade](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html).
 
    Para obter mais informações sobre como fazer upload e instalar o pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 

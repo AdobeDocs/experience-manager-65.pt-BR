@@ -232,7 +232,7 @@ Você pode usar o arquivo de configuração com as opções detalhadas abaixo.
 | --- | --- | --- | --- |
 | accessKey | ID da chave de acesso para o usuário do IAM com acesso ao bucket. |  | Sim, quando não estiver usando funções IAM. |
 | secretKey | Chave de acesso secreta para o usuário do IAM com acesso ao bucket. |  | Sim, quando não estiver usando funções IAM. |
-| cacheSize | O tamanho (em bytes) do cache local. | 64 GB | Não. |
+| cacheSize | O tamanho (em bytes) do cache local. | 64GB | Não. |
 | connectionTimeout | Defina o tempo de espera (em milissegundos) antes de expirar ao estabelecer uma conexão inicialmente. | 10000 | Não. |
 | maxCachedBinarySize | Os binários com tamanho menor ou igual a esse valor (em bytes) serão armazenados no cache de memória. | 17408 (17 KB) | Não. |
 | maxConnections | Defina o número máximo de conexões HTTP abertas permitidas. | 50 | Não. |
@@ -248,8 +248,8 @@ Você pode usar o arquivo de configuração com as opções detalhadas abaixo.
 | stagingPurgeInterval | O intervalo (em segundos) para limpar os uploads concluídos do cache de preparo. | 300 | Não. |
 | stagingRetryInterval | O intervalo (em segundos) para tentar novamente os uploads com falha. | 600 | Não. |
 | stagingSplitPercentage | A porcentagem de `cacheSize` a ser usado para fazer uploads assíncronos. | 10 | Não. |
-| uploadThreads | O número de threads de upload usados para uploads assíncronos. | 10º | Não. |
-| writeThreads | O número de threads simultâneos usados para gravar via S3 Transfer Manager. | 10º | Não. |
+| uploadThreads | O número de threads de upload usados para uploads assíncronos. | 10 | Não. |
+| writeThreads | O número de threads simultâneos usados para gravar via S3 Transfer Manager. | 10 | Não. |
 
 <!---
 ### Bucket region options {#bucket-region-options}
@@ -345,7 +345,7 @@ Para configurar a replicação sem binários com S3, as seguintes etapas são ne
 
    * *org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService*.*config*
 
-   * *org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore*.*configuração*
+   * *org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore*.*config*
 
    Depois que os arquivos tiverem sido criados, adicione as opções de configuração conforme necessário.
 

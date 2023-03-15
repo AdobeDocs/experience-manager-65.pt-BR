@@ -545,7 +545,7 @@ A tabela a seguir lista os controles que fazem parte deste aplicativo ASP.NET.
    <td><p>Especifica o valor do empréstimo.</p></td>
   </tr>
   <tr>
-   <td><p>Botão1</p></td>
+   <td><p>Button1</p></td>
    <td><p>Representa o botão Enviar Aplicativo.</p></td>
   </tr>
   <tr>

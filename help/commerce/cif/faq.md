@@ -1,8 +1,8 @@
 ---
 title: AEM - Perguntas frequentes sobre a integração com o Commerce usando a Commerce Integration Framework
 description: AEM - Perguntas frequentes sobre a integração com o Commerce usando a Commerce Integration Framework
-exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+exl-id: d541607f-c4c9-4dd5-aadf-64d4cb5f9f2a
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 38%
@@ -11,9 +11,9 @@ ht-degree: 38%
 
 # AEM - Perguntas frequentes sobre a integração com o Commerce usando a Commerce Integration Framework
 
-## 1. O GraphQL da CIF é usado apenas para comércio ou será disponibilizado para consultar conteúdo criado AEM JCR?
+## 1. O CIF GraphQL é usado apenas para comércio ou será disponibilizado para consultar conteúdo criado AEM JCR?
 
-O Adobe adotou APIs GraphQL da Adobe Commerce como a API oficial para todos os dados relacionados ao comércio. Portanto, o AEM usa GraphQL para trocar dados de comércio com a Adobe Commerce e com qualquer mecanismo de comércio por meio da I/O Runtime. Essa API GraphQL é independente AEM API GraphQL para acessar os Fragmentos de conteúdo.
+O Adobe adotou as APIs do Adobe Commerce GraphQL como a API oficial de comércio para todos os dados relacionados ao comércio. Portanto, o AEM usa o GraphQL para trocar dados de comércio com o Adobe Commerce e com qualquer mecanismo de comércio por meio da I/O Runtime. Essa API do GraphQL é independente AEM API do GraphQL para acessar Fragmentos de conteúdo.
 
 ## 2. Os ativos do produto (imagens) podem ser armazenados e referenciados AEM por meio do administrador do Adobe Commerce? Como os ativos do Dynamic Media podem ser consumidos?
 
@@ -55,7 +55,7 @@ Recomendamos configurar a invalidação do cache com base em TTL para páginas a
 
 ## 11. Como a pesquisa funciona com AEM e comércio usando a CIF?
 
-A CIF fornece os componentes Barra de pesquisa e Resultado da pesquisa. O componente Barra de pesquisa envia uma solicitação GraphQL com o termo de pesquisa para a solução de comércio, que retorna uma lista de produtos que inclui nome do produto, preço, SLUG, etc. O componente Resultado da pesquisa exibe os resultados da pesquisa em uma visualização de galeria em uma página de resultados da pesquisa criada no AEM. A Pesquisa aceita pesquisa básica de texto completo. Usamos a chave SLUG/URL para criar uma referência ao PDP.
+A CIF fornece os componentes Barra de pesquisa e Resultado da pesquisa. O componente Barra de pesquisa envia uma solicitação do GraphQL com o termo de pesquisa para a solução de comércio, que retorna uma lista de produtos que inclui nome do produto, preço, SLUG, etc. O componente Resultado da pesquisa exibe os resultados da pesquisa em uma visualização de galeria em uma página de resultados da pesquisa criada no AEM. A Pesquisa aceita pesquisa básica de texto completo. Usamos a chave SLUG/URL para criar uma referência ao PDP.
 
 ## 12. Como os dados do produto podem ser usados em MSM ou traduções?
 

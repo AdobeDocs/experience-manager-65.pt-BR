@@ -577,7 +577,7 @@ Se estiver usando Imprimir como Principal para Canal da Web e fizer alterações
 
 Depois de ter o conteúdo gerado automaticamente no canal da Web usando a opção Sincronizar, você pode executar mais ações nos componentes sem cancelar a herança.
 
-![Barra de ferramentas do componente](assets/component_toolbar_inherited_web_new.png)
+![Component Toolbar](assets/component_toolbar_inherited_web_new.png)
 
 Toque no componente para exibir as seguintes opções:
 

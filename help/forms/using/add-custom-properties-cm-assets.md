@@ -803,7 +803,7 @@ Para permitir a indexação de propriedades personalizadas, conclua as seguintes
            <td><strong>Valor</strong></td>
          </tr>
          <tr>
-           <td>caminho</td>
+           <td>path</td>
            <td>Sequência de caracteres</td>
            <td>extendedProperties<br /> </td>
          </tr>

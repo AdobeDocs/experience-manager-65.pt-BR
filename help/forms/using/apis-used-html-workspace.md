@@ -109,7 +109,7 @@ As APIs a seguir são usadas na área de trabalho do AEM Forms.
   <tr>
    <td>save</td>
    <td>ProcessManagementTaskService</td>
-   <td>salvar</td>
+   <td>save</td>
    <td>Salva uma tarefa no servidor.</td>
   </tr>
   <tr>

@@ -63,7 +63,7 @@ Para acomodar isso, as alterações foram feitas na maneira como os logs são ge
 
 Este é um exemplo de relatório que não mostra erros durante a atualização:
 
-![148788743006](assets/1487887443006.png)
+![1487887443006](assets/1487887443006.png)
 
 Este é um exemplo de relatório que mostra um pacote que não foi instalado durante o processo de atualização:
 
@@ -201,6 +201,6 @@ ou
 
 Em alguns casos, também é possível encontrar erros nas mensagens AVISO, pois pode haver casos válidos que levam a esse estado e o aplicativo nem sempre pode decidir se esse é um erro real. Consulte essas mensagens também.
 
-### Entrar em contato com o suporte ao Adobe {#contacting-adobe-support}
+### Contato com o suporte da Adobe {#contacting-adobe-support}
 
 Se você tiver passado pelos conselhos nesta página e ainda estiver vendo problemas, entre em contato com o Suporte do Adobe. Para fornecer o máximo possível de informações ao engenheiro de suporte que trabalha no seu caso, inclua o arquivo upgrade.log da sua atualização.

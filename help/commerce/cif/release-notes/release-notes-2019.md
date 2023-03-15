@@ -35,15 +35,15 @@ ht-degree: 9%
 
 * Componentes baseados em reação disponíveis como um pacote npm. Isso permite que os desenvolvedores usem o pacote Componentes React como uma dependência para um novo projeto React para permitir a personalização de componentes existentes ou desenvolver novos componentes baseados no React.
 
-* Personalização de consulta GraphQL simplificada. Isso permite que os desenvolvedores personalizem os componentes principais da CIF com menos código.
+* A personalização de consultas do GraphQL foi simplificada. Isso permite que os desenvolvedores personalizem os componentes principais da CIF com menos código.
 
 ## Data de lançamento: Outubro de 2019
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
 | Conector da CIF | 0.6.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais da CIF | 0,5.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo da CIF | 0,5.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Componentes principais da CIF | 0.5.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Arquétipo da CIF | 0.5.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-october}
 
@@ -63,7 +63,7 @@ ht-degree: 9%
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector da CIF | 0,5.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| Conector da CIF | 0.5.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principais da CIF | 0.4.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
 | Arquétipo da CIF | 0.4.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
@@ -73,7 +73,7 @@ ht-degree: 9%
 
 * Vínculo de vários catálogos para permitir que os autores vinculem vários catálogos no console de produto AEM. Os autores também podem editar e exibir as propriedades de vínculo do catálogo após criar o vínculo.
 
-* Check-out do lado do cliente com base em reação e minicarrinho usando GraphQL para oferecer suporte a uma jornada de compras básica completa.
+* Check-out do lado do cliente com base em reação e minicarrinho usando o GraphQL para suportar uma jornada de compras básica completa.
 
 * O componente de check-out inclui formulários de endereço, seleção de pagamento e seleção de método de entrega.
 
@@ -97,7 +97,7 @@ ht-degree: 9%
 
 * Recurso de várias lojas/sites para permitir o uso dos Componentes principais da CIF em várias estruturas de site AEM e permitir que a implementação de cliente GraphQL subjacente se conecte a diferentes visualizações de loja/loja da Adobe Commerce.
 
-* Cache GraphQL habilitado para determinadas consultas GraphQL via HTTP GET para reduzir o tempo de resposta.
+* O armazenamento em cache do GraphQL foi habilitado para determinadas consultas do GraphQL por meio do HTTP GET para reduzir o tempo de resposta.
 
 * Exibição da descrição do produto ativada no console Produtos AEM.
 

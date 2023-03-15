@@ -29,7 +29,7 @@ A integração do conteúdo e do comércio AEM é um processo de duas etapas:
 
 ### Instale o complemento Conteúdo AEM e Commerce para o AEM 6.5 {#install-add-on}
 
-Baixe e instale o AEM Commerce Add-On para AEM 6.5 no [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.
+Baixe e instale o AEM Commerce Add-On para AEM 6.5 no [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html) portal.
 
 Inicie e instale o AEM 6.5 Service Pack necessário. Recomendamos instalar o último service pack disponível.
 
@@ -39,17 +39,17 @@ Inicie e instale o AEM 6.5 Service Pack necessário. Recomendamos instalar o úl
 
 ### Conecte AEM ao seu sistema de comércio {#connect}
 
-AEM pode ser conectado a qualquer sistema de comércio que tenha um ponto de extremidade GraphQL acessível para AEM. Normalmente, esses pontos de extremidade estão disponíveis publicamente ou podem ser conectados via VPN privada ou conexões locais, dependendo da configuração individual do projeto.
+AEM pode ser conectado a qualquer sistema de comércio que tenha um terminal GraphQL acessível para AEM. Normalmente, esses pontos de extremidade estão disponíveis publicamente ou podem ser conectados via VPN privada ou conexões locais, dependendo da configuração individual do projeto.
 
 Opcionalmente, é possível fornecer o cabeçalho de autenticação para usar recursos adicionais da CIF que exigem autenticação.
 
 Projetos gerados pela [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype)e o [Loja de referência Venia AEM](https://github.com/adobe/aem-cif-guides-venia) que já está incluída no [configuração padrão](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) deve ser ajustado.
 
-Substitua o valor da variável `url` em `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` com o ponto de extremidade GraphQL do sistema de comércio. Essa configuração pode ser feita por meio do console OSGI ou da implantação da configuração OSGI por meio do projeto. Diferentes configurações para sistemas de armazenamento temporário e de produção são suportadas usando diferentes modos de execução de AEM.
+Substitua o valor da variável `url` em `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` com o terminal GraphQL do seu sistema de comércio. Essa configuração pode ser feita por meio do console OSGI ou da implantação da configuração OSGI por meio do projeto. Diferentes configurações para sistemas de armazenamento temporário e de produção são suportadas usando diferentes modos de execução de AEM.
 
 Os Componentes principais do AEM Content and Commerce e da CIF usam conexões AEM lado do servidor e do cliente. Os Componentes principais da CIF do lado do cliente e as ferramentas de criação do complemento CIF se conectam por padrão ao `/api/graphql`. Isso pode ser ajustado através da configuração do Cloud Service da CIF, se necessário (veja abaixo).
 
-O complemento CIF fornece um servlet proxy GraphQL em `/api/graphql` que podem, opcionalmente, ser utilizadas para [desenvolvimento local](develop.md). Para implantações de produção, é altamente recomendável configurar um proxy reverso para o ponto de extremidade GraphQL de comércio por meio do Dispatcher AEM ou em outras camadas de rede (como CDN).
+O complemento CIF fornece um servlet proxy da GraphQL em `/api/graphql` que podem, opcionalmente, ser utilizadas para [desenvolvimento local](develop.md). Para implantações de produção, é altamente recomendável configurar um proxy reverso para o terminal comercial do GraphQL por meio do Dispatcher de AEM ou em outras camadas de rede (como CDN).
 
 ## Configuração de lojas e catálogos {#catalog}
 
@@ -67,15 +67,15 @@ Essa configuração pode ser ajustada para o projeto por meio da configuração 
 
 As seguintes propriedades podem ser configuradas:
 
-- Cliente GraphQL - selecione o cliente GraphQL configurado para comunicação de back-end de comércio. Normalmente, isso deve permanecer no padrão.
+- GraphQL Client - selecione o cliente GraphQL configurado para comunicação de backend de comércio. Normalmente, isso deve permanecer no padrão.
 - Exibição da loja - o identificador de exibição da loja. Se estiver vazia, a exibição de loja padrão será usada.
-- Caminho do proxy GraphQL - o caminho do URL Proxy GraphQL no AEM usado para solicitações de proxy no ponto de extremidade GraphQL de back-end do comércio.
+- GraphQL Proxy Path - o caminho do URL Proxy GraphQL em AEM usado para solicitações de proxy para o terminal de comércio back-end do GraphQL.
 
    >[!NOTE]
    >
    >Na maioria das configurações, o valor padrão `/api/graphql` não deve ser alterado. Somente a configuração avançada que não usa o proxy GraphQL fornecido deve alterar essa configuração.
 
-- Ativar o suporte à UID do catálogo - ative o suporte para UID em vez da ID nas chamadas GraphQL de back-end de comércio.
+- Ativar o suporte à UID do catálogo - ative o suporte para UID em vez da ID nas chamadas de GraphQL de back-end de comércio.
 
    >[!NOTE]
    >

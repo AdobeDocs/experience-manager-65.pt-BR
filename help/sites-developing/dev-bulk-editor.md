@@ -13,7 +13,7 @@ exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1837'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -518,7 +518,7 @@ No exemplo anterior, a coluna de seleção contém apenas caixas de seleção co
 
 **Posição forçada**
 
-Os metadados de posição forçada forcedPosition permitem especificar onde a coluna é colocada na grade: 0 é o primeiro lugar e &lt;number of=&quot;&quot; columns=&quot;&quot;>-1 é a última posição. Qualquer outro valor é ignorado.
+Os metadados de posição forçada forcedPosition permitem especificar onde a coluna é colocada na grade: 0 é o primeiro lugar e &lt;number of=&quot;&quot; columns=&quot;&quot;>-1 é a última posição. Qualquer outro valor será ignorado.
 
 No exemplo anterior, a coluna de seleção é a primeira coluna como forcedPosition=&quot;0&quot;.
 

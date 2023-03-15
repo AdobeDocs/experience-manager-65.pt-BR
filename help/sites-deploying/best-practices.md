@@ -70,7 +70,7 @@ Documentos específicos estão descritos e vinculados nas tabelas a seguir.
  </tbody>
 </table>
 
-## Comunidades {#communities}
+## Communities {#communities}
 
 O AEM Communities simplifica a criação e o gerenciamento de comunidades locais. As práticas recomendadas para o AEM Communities estão descritas aqui:
 

@@ -128,10 +128,10 @@ Você pode encontrar os parâmetros relevantes na lista abaixo:
 | `--host=<Val>` | O nome do host ou IP que será direcionado. |  |  |
 | `--port=<Val>` | A porta do host. | 4502 |  |
 | `--user=<Val>` | O nome de usuário da instância. | admin |  |
-| `--password=<Val>` | Senha para o usuário em questão. | administrador |  |
+| `--password=<Val>` | Senha para o usuário em questão. | admin |  |
 | `--duration=<Val>` | A duração dos testes. Pode ser expresso em (**s**)segundos, (**m**), (**h**)e (**d**). | 1d |  |
 | `--timeout=<Val>` | Por quanto tempo um teste será executado antes de ser interrompido e marcado como defeituoso. Expressa em segundos. | 180 |  |
-| `--suite=<Val>` | O valor pode ser uma ou uma lista (separada por vírgulas) de conjuntos de testes predefinidos. | dilema |  |
+| `--suite=<Val>` | O valor pode ser uma lista ou uma lista (separada por vírgulas) de conjuntos de testes predefinidos. | dilema |  |
 | `--configfile=<Val>` | O arquivo de configuração de código direcionado. |  |  |
 | `--contextpath=<Val>` | Caminho de contexto da instância. |  |  |
 | `--loglevel=<Val>` | O nível de log do mecanismo do Dia 2 Difícil. | INFO | TUDO, DEPURAR, INFORMAÇÕES, AVISO, ERRO, FATAL, DESLIGADO |
@@ -359,7 +359,7 @@ O Dia 2 difícil atualmente relata 9 métricas de teste que você pode avaliar. 
 | StdDev&#42; | O desvio padrão. |
 | 90p&#42; | 90 percentil. |
 | 99p&#42; | 99 percentil. |
-| 99,9p&#42; | Percentil 99,9. |
+| 99.9p&#42; | Percentil 99,9. |
 | Taxa de transferência real&#42; | Número de execuções dividido pelo tempo de execução decorrido. |
 
 Essas métricas são gravadas com a ajuda de editores que podem ser adicionados com a variável `add` (de forma semelhante à adição de testes). Atualmente, há duas opções:

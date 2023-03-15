@@ -35,7 +35,7 @@ Você pode modificar programaticamente os nós e propriedades localizados no rep
 
 ## Criar uma instância do Repositório {#create-a-repository-instance}
 
-Embora existam diferentes maneiras de se conectar a um repositório e estabelecer uma conexão, este artigo de desenvolvimento usa um método estático que pertence ao `org.apache.jackrabbit.commons.JcrUtils` classe . O nome do método é `getRepository`. Esse método usa um parâmetro de string que representa o URL do servidor do Adobe CQ. Por exemplo `http://localhost:4503/crx/server`.
+Embora existam diferentes maneiras de se conectar a um repositório e estabelecer uma conexão, este artigo de desenvolvimento usa um método estático que pertence ao `org.apache.jackrabbit.commons.JcrUtils` classe . O nome do método é `getRepository`. Esse método usa um parâmetro de string que representa o URL do servidor do Adobe CQ. Por exemplo, `http://localhost:4503/crx/server`.
 
 O `getRepository`método retorna um `Repository`, conforme mostrado no exemplo de código a seguir.
 

@@ -165,7 +165,7 @@ Para usar o Dynamic Media e o Dynamic Media Classic simultaneamente:
    1. (Opcional) Configurar vídeo na configuração do Dynamic Media Classic. Você pode ativar a codificação de vídeo para Dynamic Media e Dynamic Media Classic simultaneamente. As representações dinâmicas são usadas para visualização e reprodução local na instância do Experience Manager, enquanto as representações de vídeo do Dynamic Media Classic são geradas e armazenadas nos servidores do Dynamic Media Classic. Ao configurar serviços de codificação de vídeo para Dynamic Media e Dynamic Media Classic, aplique uma [perfil de processamento de vídeo](/help/assets/video-profiles.md) para a pasta de ativos do Dynamic Media Classic.
    1. (Opcional) [Configurar visualização segura no Dynamic Media Classic](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene).
 
-#### Limitações           {#limitations}
+#### Limitações {#limitations}
 
 Quando o Dynamic Media Classic e o Dynamic Media estão habilitados, há as seguintes limitações:
 
@@ -420,7 +420,7 @@ No entanto, se você não quiser que ativos enviados para o Dynamic Media Classi
 
 Antes de enviar ativos para o Dynamic Media Classic sem publicá-los, você deve configurar o seguinte:
 
-1. [Use o Admin Console para criar um caso de suporte](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). No caso de suporte, solicite a ativação de uma pré-visualização segura para sua conta do Dynamic Media Classic.
+1. [Use o Admin Console para criar um caso de suporte](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). No caso de suporte, solicite a ativação de uma pré-visualização segura para sua conta do Dynamic Media Classic.
 1. [Configurar pré-visualização segura para sua conta do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en).
 
 Essas etapas são as mesmas que você seguiria para criar qualquer configuração de teste seguro no Dynamic Media Classic.

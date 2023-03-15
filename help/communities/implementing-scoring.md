@@ -218,7 +218,7 @@ Sub-regras são nós do tipo `cq:Page` com propriedades em `jcr:content`nó que 
   <tr>
    <th>Propriedade</th>
    <th>Tipo</th>
-   <th> Descrição do valor</th>
+   <th> Valor Descrição</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -341,7 +341,7 @@ O `scoringRules` em uma regra de marcação, o simplesmente restringe quais regr
   <tr>
    <th>Propriedade</th>
    <th>Tipo</th>
-   <th>Descrição do valor</th>
+   <th>Valor Descrição</th>
   </tr>
   <tr>
    <td>limites</td>

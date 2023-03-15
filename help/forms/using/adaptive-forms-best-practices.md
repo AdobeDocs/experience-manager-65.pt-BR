@@ -37,7 +37,7 @@ Além disso, veja algumas leituras recomendadas para práticas recomendadas gera
 
 Uma estrutura de projeto simplificada e padronizada pode reduzir significativamente os esforços de desenvolvimento e manutenção. O Apache Maven é uma ferramenta de código aberto recomendada para criar projetos AEM.
 
-* Usar o Apache Maven `aem-project-archetype` para criar e gerenciar a estrutura para AEM projeto. Ele cria a estrutura e os modelos recomendados para o seu projeto de AEM. Além disso, ele fornece sistemas de automação de compilação e controle de alterações para ajudar a gerenciar o projeto.
+* Usar o Apache Maven `aem-project-archetype` para criar e gerenciar a estrutura para AEM projeto. Ele cria a estrutura e os modelos recomendados para o projeto do AEM. Além disso, ele fornece sistemas de automação de compilação e controle de alterações para ajudar a gerenciar o projeto.
 
    * Use o maven `archetype:generate` para gerar a estrutura inicial.
    * Use maven `eclipse:eclipse` para gerar os arquivos de projeto do eclipse e importar o projeto para o eclipse.

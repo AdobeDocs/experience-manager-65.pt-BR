@@ -23,7 +23,7 @@ ht-degree: 0%
 
 O aplicativo AEM Forms permite anexar imagens, notas rabiscadas e notas de texto ao seu formulário sincronizado com o servidor AEM Forms JEE. Se o formulário for carregado a partir de um servidor de fluxo de trabalho do AEM Forms, os anexos serão adicionados ao formulário. Toque no botão anexo ![anexos-aplicativo](assets/attachments-app.png) para ver todos os anexos em um formulário juntos. A notificação vermelha especifica o número de anexos no formulário. Se não houver anexos no formulário, você não poderá ver o botão de notificações vermelhas. Se não houver anexos no formulário, ao tocar no botão anexos ![trava](assets/attch.png), você terá opções para anexar fotos ou scripts.
 
-Suas opções são:
+As opções são:
 
 * **Galeria**: Permite adicionar uma imagem das imagens salvas em seu dispositivo.
 

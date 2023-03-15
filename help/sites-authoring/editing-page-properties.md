@@ -199,8 +199,7 @@ Exibe a imagem de miniatura da página. É possível:
 
    * **Permitir o compartilhamento de usuário para Facebook**
    * **Permitir o compartilhamento de usuário para Pinterest**
-   * **Variação preferida de XF**
-Define a variação do fragmento de experiência usada para gerar metadados para a página
+   * **Variação preferida de XF** define a variação do fragmento de experiência usada para gerar metadados para a página
 
 ### Cloud Services {#cloud-services}
 

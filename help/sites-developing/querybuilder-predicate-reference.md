@@ -10,14 +10,26 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: f97eb2e028263016131b0c86be5a0508ae4def9b
 workflow-type: tm+mt
-source-wordcount: '2310'
+source-wordcount: '2371'
 ht-degree: 3%
 
 ---
 
 # Referência de predicado do construtor de consultas{#query-builder-predicate-reference}
+
+>[!CAUTION]
+>
+>As informações nesta página não são exaustivas.
+>
+>Para obter informações completas, consulte a lista em **predicados disponíveis** no console do Query Builder Debugger; por exemplo, em:
+>* [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+>
+>Por exemplo, consulte:
+>
+>* [http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+
 
 ## Geral {#general}
 
@@ -230,7 +242,7 @@ Este é um predicado somente filtragem e não pode utilizar um índice de pesqui
 
    privilégios JCR separados por vírgulas que a sessão do usuário atual TODOS devem ter para o nó em questão; por exemplo `jcr:write`, `jcr:modifyAccessControl`
 
-### idioma {#language}
+### language {#language}
 
 Encontra páginas CQ em um idioma específico. Isso observa a propriedade de idioma da página e o caminho da página que geralmente inclui o idioma ou o local em uma estrutura de site de nível superior.
 
@@ -318,7 +330,7 @@ Permite classificar o resultado. Se for necessário solicitar por várias propri
 
    se definido como &quot; `ignore`&quot; tornará a classificação não sensível a maiúsculas e minúsculas, o que significa que &quot;a&quot; vem antes de &quot;B&quot;; se estiver vazio ou não, a classificação diferencia maiúsculas de minúsculas, o que significa &quot;B&quot; vem antes de &quot;a&quot;
 
-### caminho {#path}
+### path {#path}
 
 Pesquisa em um determinado caminho.
 

@@ -62,19 +62,19 @@ Toque **Configuração dos Fragmentos de documento** no **Configuração do Cons
   <tr> 
    <td>Recuo</td> 
    <td>A largura de uma única unidade de recuo aplicada ao texto em fragmentos de documento de lista.</td> 
-   <td>12,7 mm</td> 
+   <td>12.7mm</td> 
    <td>Número</td> 
   </tr> 
   <tr> 
    <td>Largura mínima dos números romanos</td> 
    <td>Largura mínima a ser aplicada ao campo de marcador ou número, ao usar números romanos em fragmentos de documento de lista. </td> 
-   <td>12,7 mm</td> 
+   <td>12.7mm</td> 
    <td>Número</td> 
   </tr> 
   <tr> 
    <td>Largura mínima do número</td> 
    <td>Largura mínima a ser aplicada ao campo de marcador ou número, ao usar listas numeradas além de números romanos em fragmentos de documento de lista.</td> 
-   <td>8,0 mm</td> 
+   <td>8.0mm</td> 
    <td>Número</td> 
   </tr> 
  </tbody> 

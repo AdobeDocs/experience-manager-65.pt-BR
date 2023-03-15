@@ -124,7 +124,7 @@ Para gerar relatórios, faça o seguinte:
 Você pode adicionar colunas personalizadas aos seguintes relatórios para exibir mais dados para seus requisitos personalizados:
 
 * Upload
-* Baixar
+* Download
 * Expiração
 * Modificação
 * Publicação

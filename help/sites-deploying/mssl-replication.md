@@ -80,7 +80,7 @@ Use o procedimento a seguir para criar uma chave privada e um certificado autoas
 
    | Opção | Autor | Publicação |
    |---|---|---|
-   | -alias | autor | publicação |
+   | -alias | author | publicação |
    | -file | author.cer | publish.cer |
    | keystore | author.keystore | publish.keystore |
 
@@ -134,7 +134,7 @@ Gere uma chave privada e um certificado no formato pkcs#12. Use [openSSL](https:
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
    | -em | author.cer | publish.cer |
-   | -name | autor | publicação |
+   | -name | author | publicação |
 
 ## Instalar a chave privada e o TrustStore no autor {#install-the-private-key-and-truststore-on-author}
 

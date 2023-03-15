@@ -79,7 +79,7 @@ O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas
  </tbody>
 </table>
 
-## Comunidades {#communities}
+## Communities {#communities}
 
 [AEM Communities](/help/communities/overview.md) simplifica a criação e o gerenciamento de comunidades locais.
 

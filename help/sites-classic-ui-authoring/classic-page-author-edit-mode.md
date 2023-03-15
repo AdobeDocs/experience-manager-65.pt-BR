@@ -1275,7 +1275,7 @@ Um grupo radial fornece uma lista de uma ou mais caixas de seleção radial, ond
 >
 >Consulte [Pré-carregar campos de formulário com vários valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Botão enviar {#submit-button}
+### Botão Enviar {#submit-button}
 
 Esse componente permite que você crie um botão de envio, com o texto padrão:
 

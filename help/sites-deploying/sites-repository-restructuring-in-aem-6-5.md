@@ -313,7 +313,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D<br /> </td>
+   <td>N/A<br /> </td>
   </tr>
  </tbody>
 </table>

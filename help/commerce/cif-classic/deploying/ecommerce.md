@@ -29,7 +29,7 @@ O Adobe fornece duas versões da Estrutura de integração de comércio:
 | Front-end | AEM páginas renderizadas do lado do servidor | Aplicativo de página mista (renderização híbrida) |
 | Catálogo de produtos | - Importador de produto, editor, armazenamento em cache em AEM <br>- Catálogos regulares com páginas de AEM ou proxy | - Nenhuma importação de produto <br>- Modelos genéricos <br>- Dados sob demanda via conector |
 | Escalabilidade | - Pode suportar até alguns milhões de produtos (depende do caso de uso) <br> - Armazenamento em cache no Dispatcher | - Sem limitação de volume <br>- Armazenamento em cache no Dispatcher ou CDN |
-| Modelo de dados padronizado | Não | Sim, esquema GraphQL da Adobe Commerce |
+| Modelo de dados padronizado | Não | Sim, esquema Adobe Commerce GraphQL |
 | Disponibilidade | Sim:<br> - SAP Commerce Cloud (Extensão atualizada para oferecer suporte ao AEM 6.4 e Hybris 5 (padrão) e mantém compatibilidade com Hybris 4 <br>- Salesforce Commerce Cloud (Conector de software aberto para suporte ao AEM 6.4) | Sim por meio do código aberto via GitHub. <br> Adobe Commerce (Suporta 2.3.2 (padrão) e compatível com 2.3.1). |
 | Quando usar | Casos de uso limitados: Para cenários em que catálogos pequenos e estáticos podem precisar ser importados | Solução preferencial na maioria dos casos de uso |
 

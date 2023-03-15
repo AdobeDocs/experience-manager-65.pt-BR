@@ -1,7 +1,7 @@
 ---
 title: Noções sobre segmentação
 seo-title: Understanding Segmentation
-description: A segmentação é uma preocupação chave ao criar uma campanha
+description: A segmentação é uma consideração importante ao criar uma campanha
 seo-description: Segmentation is a key consideration when creating a campaign
 uuid: 900da068-5dda-4b6b-8be3-4b7ad614126d
 contentOwner: Guillaume Carlino

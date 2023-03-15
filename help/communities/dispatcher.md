@@ -86,7 +86,7 @@ As amostras a seguir usam nomes de propriedades que provavelmente precisarão se
 
 Consulte também:
 
-* [Lista de verificação de segurança do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
+* [Lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=pt-BR#getting-started)
 
 >[!NOTE]
 >

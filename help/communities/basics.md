@@ -49,7 +49,7 @@ A seguir estão imagens de selecionar alguns componentes do Communities e exibi-
 
 Os componentes selecionados agora estão disponíveis no navegador de componentes:
 
-![componente-design1](assets/component-design1.png)
+![component-design1](assets/component-design1.png)
 
 ## Clientlibs necessários {#required-clientlibs}
 

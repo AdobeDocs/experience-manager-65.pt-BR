@@ -259,7 +259,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
   <tr>
    <td><strong>Etapa 35</strong></td>
    <td>Configurar dispatcher</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">Configuração do Dispatcher</a><br /> </td>
+   <td><a href="https://helpx.adobe.com/pt/experience-manager/dispatcher/using/dispatcher-configuration.html">Configuração do Dispatcher</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Etapa 36</strong></td>

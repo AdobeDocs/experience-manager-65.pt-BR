@@ -121,7 +121,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D<br /> </td>
+   <td>N/A<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -164,8 +164,8 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
 | **Localização anterior** | `/etc/dam/drm/licenses/` |
 |---|---|
 | **Novas localizações** | `/libs/settings/dam/drm` |
-| **Orientação relativa à reestruturação** | N/D |
-| **Notas** | N/D |
+| **Orientação relativa à reestruturação** | N/A |
+| **Notas** | N/A |
 
 ### Modelo de Notificação por Correio Eletrônico de Partilha de Ligações {#link-share-e-mail-notification-template}
 
@@ -256,7 +256,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
@@ -283,7 +283,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
@@ -306,7 +306,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D<br /> </td>
+   <td>N/A<br /> </td>
   </tr>
  </tbody>
 </table>

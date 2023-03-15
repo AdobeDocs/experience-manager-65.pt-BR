@@ -130,7 +130,7 @@ Em vez de associar pontos a uma imagem de selo, é necessário identificar o nú
   <tr>
    <th>Propriedade</th>
    <th>Tipo</th>
-   <th>Descrição do valor</th>
+   <th>Valor Descrição</th>
   </tr>
   <tr>
    <td>badgingPath</td>

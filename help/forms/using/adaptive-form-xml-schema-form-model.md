@@ -187,7 +187,7 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
    <td>
     <ul>
      <li>Caixa numérica</li>
-     <li>Escalonador Numérico</li>
+     <li>Escalonador numérico</li>
     </ul> </td>
   </tr>
   <tr>
@@ -197,7 +197,7 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
    <td>
     <ul>
      <li>Caixa numérica</li>
-     <li>Escalonador Numérico<br /> </li>
+     <li>Escalonador numérico<br /> </li>
      <li>Seletor de datas</li>
     </ul> </td>
   </tr>
@@ -208,7 +208,7 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
    <td>
     <ul>
      <li>Caixa numérica</li>
-     <li>Escalonador Numérico</li>
+     <li>Escalonador numérico</li>
      <li>Seletor de datas</li>
     </ul> </td>
   </tr>
@@ -219,7 +219,7 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
    <td>
     <ul>
      <li>Caixa numérica</li>
-     <li>Escalonador Numérico</li>
+     <li>Escalonador numérico</li>
      <li>Seletor de datas</li>
     </ul> </td>
   </tr>
@@ -230,7 +230,7 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
    <td>
     <ul>
      <li>Caixa numérica</li>
-     <li>Escalonador Numérico</li>
+     <li>Escalonador numérico</li>
      <li>Seletor de datas</li>
     </ul> </td>
   </tr>

@@ -13,7 +13,7 @@ exl-id: 2e02db9f-294d-4d4a-92da-3ab1d38416ab
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -68,7 +68,7 @@ A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS pa
 1. Expanda o nó recém-criado: `/apps/custom/components/comments`
 1. Selecionar **[!UICONTROL Salvar tudo]**
 1. Clique com o botão direito do mouse `comments.jsp`
-1. Selecionar **[!UICONTROL Excluir]**
+1. Selecione **[!UICONTROL Excluir]**
 1. Selecionar **[!UICONTROL Salvar tudo]**
 
 ![criar-componente](assets/create-component.png)
@@ -98,7 +98,7 @@ A exclusão do arquivo JSP criado automaticamente ocorre porque o arquivo HBS pa
 1. Expanda o nó recém-criado: `/apps/custom/components/comments/comment`
 1. Selecionar **[!UICONTROL Salvar tudo]**
 1. Clique com o botão direito do mouse `comment.jsp`
-1. Selecionar **[!UICONTROL Excluir]**
+1. Selecione **[!UICONTROL Excluir]**
 1. Selecionar **[!UICONTROL Salvar tudo]**
 
 ![create-child-component](assets/create-child-component.png)

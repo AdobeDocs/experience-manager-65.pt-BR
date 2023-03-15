@@ -654,7 +654,7 @@ N:definitions
 
          Define o caminho a ser anexado.
 
-      * `propertyName` (obrigatório)
+      * `propertyName` (mandatory)
 
          Define a propriedade no caminho resolvido, onde o valor real está localizado.
 

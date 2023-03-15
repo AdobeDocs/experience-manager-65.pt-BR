@@ -143,7 +143,7 @@ Mais detalhes sobre os nós e suas propriedades são:
     </tr>
     <tr>
      <td><code>version</code></td>
-     <td><p><code>Long</code></p> <p>obrigatório</p> </td>
+     <td><p><code>Long</code></p> <p>required</p> </td>
      <td><p>Versão da estrutura de conteúdo; atualmente suportado:</p> <p><strong>Observação</strong>: atualmente, esse parâmetro deve ser definido como <code>2</code>.<br /> </p> </td>
     </tr>
    </tbody>
@@ -160,7 +160,7 @@ Mais detalhes sobre os nós e suas propriedades são:
     </tr>
     <tr>
      <td><code>elements</code> </td>
-     <td><p><code>nt:unstructured</code></p> <p>obrigatório</p> </td>
+     <td><p><code>nt:unstructured</code></p> <p>required</p> </td>
      <td><p>Nó que contém a definição dos elementos do fragmento de conteúdo. É obrigatório e precisa conter pelo menos um nó filho para a variável <strong>Principal</strong> , mas pode conter [1..n] nós filho.</p> <p>Quando o modelo é usado, a subramificação de elementos é copiada para a subramificação de modelo do fragmento.</p> <p>O primeiro elemento (como exibido no CRXDE Lite) é automaticamente considerado como sendo o <i>main</i> elemento; O nome do nó é irrelevante e o nó em si não tem um significado especial, além do fato de ser representado pelo ativo principal; os outros elementos são tratados como subativos.</p> </td>
     </tr>
    </tbody>
@@ -182,7 +182,7 @@ Mais detalhes sobre os nós e suas propriedades são:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>obrigatório</p> </td>
+     <td><p><code>String</code></p> <p>required</p> </td>
      <td>O título do elemento (exibido no seletor de elemento do editor de fragmentos).</td>
     </tr>
     <tr>
@@ -202,7 +202,7 @@ Mais detalhes sobre os nós e suas propriedades são:
     </tr>
     <tr>
      <td><code>name</code></td>
-     <td><p><code>String</code></p> <p>obrigatório</p> </td>
+     <td><p><code>String</code></p> <p>required</p> </td>
      <td>O nome interno do elemento; deve ser exclusivo para o tipo de fragmento.</td>
     </tr>
    </tbody>
@@ -242,12 +242,12 @@ Mais detalhes sobre os nós e suas propriedades são:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>obrigatório</p> </td>
+     <td><p><code>String</code></p> <p>required</p> </td>
      <td>O título da variação (exibido no editor de fragmentos <strong>Variação</strong> guia (painel esquerdo).</td>
     </tr>
     <tr>
      <td><code>jcr:desciption</code></td>
-     <td><p><code>String</code></p> <p>opcional</p> <p>padrão: ""</p> </td>
+     <td><p><code>String</code></p> <p>opcional</p> <p>default: ""</p> </td>
      <td>Um texto que fornece uma descrição da variação <span>(exibido no editor de fragmentos <strong>Variação</strong> guia (painel esquerdo).</code></td>
     </tr>
    </tbody>

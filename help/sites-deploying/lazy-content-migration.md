@@ -41,25 +41,25 @@ Abaixo está a lista completa de `CodeUpgradeTasks` introduzido no ponto 6.5:
 |---|---|---|---|
 | `Cq561ProjectContentUpgrade` | &lt; 5.6.1 | Imediato |  |
 | `Cq60MSMContentUpgrade` | &lt; 6.0 | Imediato | Detecta tudo `LiveRelationShips` from `VersionStorage` que foram excluídas e adicionar propriedade de exclusão ao pai |
-| `Cq61CloudServicesContentUpgrade` | &lt; 6,1 | Imediato | Reestrutura serviços de nuvem para seguro por configuração padrão |
+| `Cq61CloudServicesContentUpgrade` | &lt; 6.1 | Imediato | Reestrutura serviços de nuvem para seguro por configuração padrão |
 | `Cq62ConfContentUpgrade` | &lt; 6.2 | Imediato | Remove a vinculação baseada em propriedade do **/conteúdo** para **/conf** (substituído pelo mecanismo OSGi), gera a configuração OSGi correspondente |
-| `Cq62FormsContentUpgrade` | &lt; 6,2 | Imediato | Devido a merge_preserve, manipulando as substituições da regra de negação segura por padrão, dadas permissões, resultando na necessidade de reordenar na atualização |
-| `CQ62Html5SmartFileUpgrade` | &lt; 6,2 | Imediato | Detecta componentes utilizando o widget Html5SmartFile, pesquisa por usos do componente na persistência de conteúdo e reestruturações, movendo efetivamente o nível binário para baixo e não o armazenando no nível do componente. |
-| `Cq62ProjectsCodeUpgrade` | &lt; 6,2 | Imediato | Move projetos de estilo antigos de **/etc/projects** para **/content/projects** |
-| `Cq62TargetCampaignsContentUpgrade` | &lt; 6,2 | Imediato | Introduz uma camada de contêiner na hierarquia (Áreas) e ajusta referências. |
-| `Cq62TargetContentUpgrade` | &lt; 6,2 | Imediato | Define nomes de localização fixos para componentes de destino. |
-| `Cq62WorkflowContentUpgrade` | &lt; 6,2 | Imediato | Transformação complexa de modelos de fluxo de trabalho que pré-datam estruturas, instâncias, notificações do 6.2 e depois mesclam do local de backup de **/var/backup** |
+| `Cq62FormsContentUpgrade` | &lt; 6.2 | Imediato | Devido a merge_preserve, manipulando as substituições da regra de negação segura por padrão, dadas permissões, resultando na necessidade de reordenar na atualização |
+| `CQ62Html5SmartFileUpgrade` | &lt; 6.2 | Imediato | Detecta componentes utilizando o widget Html5SmartFile, pesquisa por usos do componente na persistência de conteúdo e reestruturações, movendo efetivamente o nível binário para baixo e não o armazenando no nível do componente. |
+| `Cq62ProjectsCodeUpgrade` | &lt; 6.2 | Imediato | Move projetos de estilo antigos de **/etc/projects** para **/content/projects** |
+| `Cq62TargetCampaignsContentUpgrade` | &lt; 6.2 | Imediato | Introduz uma camada de contêiner na hierarquia (Áreas) e ajusta referências. |
+| `Cq62TargetContentUpgrade` | &lt; 6.2 | Imediato | Define nomes de localização fixos para componentes de destino. |
+| `Cq62WorkflowContentUpgrade` | &lt; 6.2 | Imediato | Transformação complexa de modelos de fluxo de trabalho que pré-datam estruturas, instâncias, notificações do 6.2 e depois mesclam do local de backup de **/var/backup** |
 | `CQ63AssetsMetadataFormsUpdate` | &lt; 6.3 | Imediato | Move ativos, esquemas de metadados personalizados e perfis de processamento de **/apps** para **/conf** e converte o esquema de metadados e os formulários de perfis de metadados do coral2 para o coral3. |
-| `CQ63AssetsSearchFacetsUpdate` | &lt; 6,3 | Imediato | Move ativos e aspectos de pesquisa personalizados de **/apps** para **/conf** e converte o esquema de metadados e os formulários de perfis de metadados do coral2 para o coral3. |
-| `CQ63InboxItemsUpgrade` | &lt; 6,3 | Imediato | Atualiza InboxItems para ordenar os itens da caixa de entrada (ajustando metadados para classificação eficiente) |
-| `CQ63MetadataSchemaConfigUpdate` | &lt; 6,3 | Imediato | Ajusta a propriedade metadataSchema na pasta, substituindo os caminhos relativos para **/conf** em vez de **/apps** |
-| `CQ63MobileAppsNavUpgrade` | &lt; 6,3 | Imediato | Ajustar a estrutura de navegação |
-| `CQ63MonitoringDashboardsConfigUpdate` | &lt; 6,3 | Imediato | Move as configurações personalizadas para os painéis de monitoramento de **/libs** e **/apps** |
-| `CQ63ProcessingProfileConfigUpdate` | &lt; 6,3 | Imediato | Traduz a propriedade processingProfile (usada até 6.1) no Assets para corresponder à estrutura 6.3 e posterior. Ajusta também os caminhos relativos do perfil para **/conf** em vez de **/apps**. |
-| `CQ63ToolsMenuEntriesContentUpgrade` | &lt; 6,3 | Imediato | Atualizar tarefa que remove entradas de menu obsoletas do CRXDE Lite e do Console da Web no caso de uma atualização. |
-| `CQ64CommunitiesConfigsCleanupTask` | &lt; 6,3 | Atrasado | Mover configurações de nuvem SRP, configurações de palavras de observação da comunidade, limpa **/etc/social** e **/etc/enablement** (quaisquer referências e dados precisam ser ajustados quando a migração lenta for executada - nenhuma parte do aplicativo deve depender mais dessa estrutura). |
+| `CQ63AssetsSearchFacetsUpdate` | &lt; 6.3 | Imediato | Move ativos e aspectos de pesquisa personalizados de **/apps** para **/conf** e converte o esquema de metadados e os formulários de perfis de metadados do coral2 para o coral3. |
+| `CQ63InboxItemsUpgrade` | &lt; 6.3 | Imediato | Atualiza InboxItems para ordenar os itens da caixa de entrada (ajustando metadados para classificação eficiente) |
+| `CQ63MetadataSchemaConfigUpdate` | &lt; 6.3 | Imediato | Ajusta a propriedade metadataSchema na pasta, substituindo os caminhos relativos para **/conf** em vez de **/apps** |
+| `CQ63MobileAppsNavUpgrade` | &lt; 6.3 | Imediato | Ajustar a estrutura de navegação |
+| `CQ63MonitoringDashboardsConfigUpdate` | &lt; 6.3 | Imediato | Move as configurações personalizadas para os painéis de monitoramento de **/libs** e **/apps** |
+| `CQ63ProcessingProfileConfigUpdate` | &lt; 6.3 | Imediato | Traduz a propriedade processingProfile (usada até 6.1) no Assets para corresponder à estrutura 6.3 e posterior. Ajusta também os caminhos relativos do perfil para **/conf** em vez de **/apps**. |
+| `CQ63ToolsMenuEntriesContentUpgrade` | &lt; 6.3 | Imediato | Atualizar tarefa que remove entradas de menu obsoletas do CRXDE Lite e do Console da Web no caso de uma atualização. |
+| `CQ64CommunitiesConfigsCleanupTask` | &lt; 6.3 | Atrasado | Mover configurações de nuvem SRP, configurações de palavras de observação da comunidade, limpa **/etc/social** e **/etc/enablement** (quaisquer referências e dados precisam ser ajustados quando a migração lenta for executada - nenhuma parte do aplicativo deve depender mais dessa estrutura). |
 | `CQ64LegacyCloudSettingsCleanupTask` | &lt; 6.4 | Atrasado | Limpa **/etc/cloudsettings** (contendo Configuração do ContextHub). A configuração é migrada automaticamente no primeiro acesso. No caso de a migração de conteúdo lento ser iniciada juntamente com a atualização desse conteúdo em **/etc/cloudsettings** deve ser preservado via pacote antes da atualização e reinstalado para que a transformação implícita seja iniciada, juntamente com uma desinstalação subsequente do pacote após a conclusão. |
-| `CQ64UsersTitleFixTask` | &lt; 6,4 | Atrasado | Ajusta a estrutura de título herdada para o título no nó do perfil do usuário. |
-| `CQ64CommerceMigrationTask` | &lt; 6,4 | Atrasado | Migrar conteúdo de comércio de **/etc/commerce** para **/var/commerce**. Durante a migração, o conteúdo é movido e as referências ao conteúdo movido são atualizadas para refletir o novo local. |
+| `CQ64UsersTitleFixTask` | &lt; 6.4 | Atrasado | Ajusta a estrutura de título herdada para o título no nó do perfil do usuário. |
+| `CQ64CommerceMigrationTask` | &lt; 6.4 | Atrasado | Migrar conteúdo de comércio de **/etc/commerce** para **/var/commerce**. Durante a migração, o conteúdo é movido e as referências ao conteúdo movido são atualizadas para refletir o novo local. |
 | `CQ65DMMigrationTask` | &lt; 6,5 | Atrasado | Migrar configurações de catálogo herdado e configurações do Dynamic Media Cloud Services de **/etc** para **/conf** |
 | `CQ65LegacyClientlibsCleanupTask` | &lt; 6,5 | Atrasado | Limpar clientlibs herdados existentes em **/etc/clientlibs** |

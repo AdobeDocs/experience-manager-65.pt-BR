@@ -14,7 +14,7 @@ exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
 source-git-commit: 1ee82589ca9284a8ad5ecf3ca156fe10f314846a
 workflow-type: tm+mt
 source-wordcount: '1754'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -180,7 +180,7 @@ Para obter um exemplo simplista, consulte o [Aplicativo de diário We.Retail](ht
 
 >[!NOTE]
 >
->Qualquer projeto AEM deve aproveitar [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que suporta projetos SPA usando o React ou Angular e aproveita o SDK SPA.
+>Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou Angular e utiliza o SDK do SPA.
 
 ## Uso de Node.js {#using-node-js}
 

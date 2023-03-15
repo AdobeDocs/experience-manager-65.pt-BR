@@ -168,7 +168,7 @@ Relevante somente se Permitir uploads de arquivo estiver marcado. Número máxim
 
 * **Padrão de menção da interface do usuário**
 
-   Especifique a string de padrão permitida para marcar (@menção) o usuário registrado em uma publicação. Por exemplo `~{{familyName}}{{givenName}}`.
+   Especifique a string de padrão permitida para marcar (@menção) o usuário registrado em uma publicação. Por exemplo, `~{{familyName}}{{givenName}}`.
 
 >[!NOTE]
 >

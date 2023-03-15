@@ -182,11 +182,11 @@ Sarah Rose recebe um email notificando que informações adicionais são necess�
 
 Sarah clica no link Fornecer detalhes no email. Um formulário é exibido. Sarah preenche os detalhes de educação e emprego exigidos, conforme solicitado por John Doe e clica em Enviar.
 
-![informações adicionais1](assets/additionalinformation1.png)
+![additionalinformation1](assets/additionalinformation1.png)
 
 Sarah abre o formulário de informações adicionais clicando no link no email
 
-![informações adicionais2](assets/additionalinformation2.png)
+![additionalinformation2](assets/additionalinformation2.png)
 
 Sarah preenche as informações adicionais solicitadas por John Doe e clica em Enviar
 

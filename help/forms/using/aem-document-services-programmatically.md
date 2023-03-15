@@ -30,7 +30,7 @@ Exemplos e exemplos neste documento ajudam você a entender e usar AEM Document 
 
 * Antes de usar as APIs do serviço DocAssurance, [configurar o serviço DocAssurance](/help/forms/using/install-configure-document-services.md).
 
-* Baixar e configurar [SDK do cliente da AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) com você AEM projeto maven. As classes de cliente necessárias para criar Projetos Maven usando AEM Document Services estão disponíveis no [SDK do cliente da AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* Baixar e configurar [SDK do cliente da AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) com você AEM projeto maven. As classes de cliente necessárias para criar Projetos Maven usando AEM Document Services estão disponíveis no [SDK do cliente da AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html)
 
 * Saiba mais [como criar seu projeto do AEM usando o Maven](/help/sites-developing/ht-projects-maven.md)
 
@@ -3771,7 +3771,7 @@ A API generatePDFOutput gera um documento PDF ao mesclar um design de formulári
    <td>Especifica o caminho e o nome do arquivo de entrada. O arquivo pode ser do tipo PDF ou XDP. Se somente o nome do arquivo for especificado, o arquivo será lido em relação a contentRoot especificado nas opções. <br /> </td>
   </tr>
   <tr>
-   <td>dados</td>
+   <td>data</td>
    <td>Um arquivo XML que contém os dados que são unidos ao documento PDF.<br /> </td>
   </tr>
   <tr>
@@ -3881,7 +3881,7 @@ Une um design de formulário aos dados para criar um documento PDF. Como opção
    <td>Especifica o mapa do nome de arquivo da chave e do modelo.<br /> </td>
   </tr>
   <tr>
-   <td>dados</td>
+   <td>data</td>
    <td>Especifica o Mapa de chave e documento de dados. Se a chave não for nula, o documento de dados será renderizado com o modelo para a chave correspondente especificada no Mapa de modelos. </td>
   </tr>
   <tr>
@@ -3998,7 +3998,7 @@ Gera uma saída PCL, PostScript e ZPL de um design de formulário e arquivo de d
    <td>Especifica o caminho e o nome do arquivo de entrada. Se somente o nome do arquivo for especificado, o arquivo será lido em relação a contentRoot especificado nas opções. O arquivo pode ser do tipo PDF ou XDP.<br /> </td>
   </tr>
   <tr>
-   <td>dados</td>
+   <td>data</td>
    <td>Um arquivo XML que contém dados mesclados com documentos PDF.<br /> </td>
   </tr>
   <tr>
@@ -4089,7 +4089,7 @@ Gera uma saída PCL, PostScript e ZPL considerando um design de formulário e um
    <td>Especifica o caminho e o nome do arquivo de entrada. Se somente o nome do arquivo for especificado, o arquivo será lido em relação a contentRoot especificado nas opções. O arquivo pode ser do tipo XDP. </td>
   </tr>
   <tr>
-   <td>dados</td>
+   <td>data</td>
    <td>Um arquivo XML que contém dados mesclados com documentos PDF.<br /> </td>
   </tr>
   <tr>
@@ -4170,11 +4170,11 @@ Gera um documento do formato PS, PCL e ZPL ao mesclar um design de formulário c
    <th>Descrição</th>
   </tr>
   <tr>
-   <td>modelos<br /> </td>
+   <td>templates<br /> </td>
    <td>Especifica o mapa do nome de arquivo da chave e do modelo.<br /> </td>
   </tr>
   <tr>
-   <td>dados</td>
+   <td>data</td>
    <td>Especifica o mapa da chave e do documento de dados. Se a chave não for nula, o documento de dados será renderizado com o modelo para a chave correspondente no Mapa de modelos.<br /> </td>
   </tr>
   <tr>

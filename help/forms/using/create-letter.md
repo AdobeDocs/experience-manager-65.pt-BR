@@ -219,7 +219,7 @@ Esta tabela fornece algumas diretrizes que podem ser usadas para classificar sua
 
 ## Visão geral da criação de uma carta {#overview-of-creating-a-letter}
 
-1. Selecione o layout apropriado que serve como a base da carta e crie uma carta.
+1. Selecione o layout apropriado que serve como base da carta e crie uma carta.
 1. Adicione módulos de dados ou fragmentos de layout à letra e configure-os.
 1. Escolha visualizar a correspondência.
 1. Edite e configure os campos, variáveis, conteúdo e anexos.
@@ -383,7 +383,7 @@ Os seguintes valores na tabela
    <td>Sim</td> 
    <td>Sim</td> 
    <td>N/A</td> 
-   <td>N/D</td> 
+   <td>N/A</td> 
   </tr> 
   <tr> 
    <td><strong>time</strong></td> 
@@ -392,8 +392,8 @@ Os seguintes valores na tabela
    <td>Sim</td> 
    <td>Sim</td> 
    <td>Sim</td> 
-   <td>N/D</td> 
-   <td>N/D</td> 
+   <td>N/A</td> 
+   <td>N/A</td> 
   </tr> 
   <tr> 
    <td><strong>datetime</strong></td> 
@@ -402,8 +402,8 @@ Os seguintes valores na tabela
    <td>Sim</td> 
    <td>Sim</td> 
    <td>Sim</td> 
-   <td>N/D</td> 
-   <td>N/D</td> 
+   <td>N/A</td> 
+   <td>N/A</td> 
   </tr> 
   <tr> 
    <td><strong>integer</strong></td> 
@@ -412,8 +412,8 @@ Os seguintes valores na tabela
    <td>Sim</td> 
    <td>Sim</td> 
    <td>Sim<br /> </td> 
-   <td>N/D</td> 
-   <td>N/D</td> 
+   <td>N/A</td> 
+   <td>N/A</td> 
   </tr> 
   <tr> 
    <td><strong>float</strong></td> 
@@ -422,7 +422,7 @@ Os seguintes valores na tabela
    <td>Sim</td> 
    <td>Sim</td> 
    <td>Sim<br /> </td> 
-   <td>N/D</td> 
+   <td>N/A</td> 
    <td>N/A<br /> </td> 
   </tr> 
   <tr> 
@@ -432,8 +432,8 @@ Os seguintes valores na tabela
    <td>Sim</td> 
    <td>Sim</td> 
    <td>Sim</td> 
-   <td>N/D</td> 
-   <td>N/D</td> 
+   <td>N/A</td> 
+   <td>N/A</td> 
   </tr> 
   <tr> 
    <td><strong>plain</strong> <strong>texto</strong></td> 
@@ -442,8 +442,8 @@ Os seguintes valores na tabela
    <td>Sim</td> 
    <td>Sim</td> 
    <td>Sim</td> 
-   <td>N/D</td> 
-   <td>N/D</td> 
+   <td>N/A</td> 
+   <td>N/A</td> 
   </tr> 
   <tr> 
    <td><strong>imagem</strong></td> 
@@ -452,8 +452,8 @@ Os seguintes valores na tabela
    <td>Não</td> 
    <td>Sim</td> 
    <td>Não</td> 
-   <td>N/D</td> 
-   <td>N/D</td> 
+   <td>N/A</td> 
+   <td>N/A</td> 
   </tr> 
   <tr> 
    <td><strong>signature</strong></td> 
@@ -462,8 +462,8 @@ Os seguintes valores na tabela
    <td>Não<br /> </td> 
    <td>Sim</td> 
    <td>Não</td> 
-   <td>N/D</td> 
-   <td>N/D<br /> </td> 
+   <td>N/A</td> 
+   <td>N/A<br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -13,7 +13,7 @@ exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1787'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
@@ -134,7 +134,7 @@ As seguintes referências estão disponíveis prontas para uso para vincular dir
 
 Para definir seu novo segmento:
 
-1. Depois [acesso aos segmentos](/help/sites-administering/segmentation.md#accessing-segments), [navegue até a pasta](#organizing-segments) onde deseja criar o segmento.
+1. Depois de [acessar os segmentos](/help/sites-administering/segmentation.md#accessing-segments), [navegue até a pasta](#organizing-segments) onde deseja criar o segmento.
 
 1. clique ou toque no botão Criar e selecione **Criar segmento do ContextHub**.
 

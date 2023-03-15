@@ -1,6 +1,6 @@
 ---
 title: Entrega de conteúdo headless usando fragmentos de conteúdo com GraphQL
-description: Saiba como usar AEM Fragmentos de conteúdo com GraphQL para a entrega de conteúdo sem interface.
+description: Saiba como usar AEM Fragmentos de conteúdo com o GraphQL para entrega de conteúdo sem periféricos.
 feature: Content Fragments
 role: User
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
@@ -13,7 +13,7 @@ ht-degree: 89%
 
 # Entrega de conteúdo headless usando fragmentos de conteúdo com GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Com o Adobe Experience Manager (AEM), é possível usar os Fragmentos de conteúdo, juntamente com a API GraphQL AEM (uma implementação personalizada, com base no GraphQL padrão), para fornecer conteúdo estruturado de maneira headless para uso em seus aplicativos. A capacidade de personalizar uma única consulta de API permite recuperar e entregar o conteúdo específico que você deseja/precisa renderizar (como resposta à consulta de API).
+Com o Adobe Experience Manager (AEM), é possível usar os Fragmentos de conteúdo, juntamente com a AEM API do GraphQL (uma implementação personalizada, com base no GraphQL padrão), para fornecer conteúdo estruturado de maneira headless para uso em seus aplicativos. A capacidade de personalizar uma única consulta de API permite recuperar e entregar o conteúdo específico que você deseja/precisa renderizar (como resposta à consulta de API).
 
 <!--
 >[!NOTE]
@@ -55,7 +55,7 @@ A [API GraphQL do AEM](#aem-graphql-api) permite realizar consultas (complexas) 
 
 ## API GraphQL do AEM {#aem-graphql-api}
 
-Para a Adobe Experience Cloud, uma implementação personalizada da API GraphQL padrão foi desenvolvida. Consulte [API GraphQL do AEM para uso com fragmentos de conteúdo](/help/assets/content-fragments/graphql-api-content-fragments.md) para obter detalhes.
+Para o Adobe Experience, uma implementação personalizada da API padrão do GraphQL foi desenvolvida. Consulte [API GraphQL do AEM para uso com fragmentos de conteúdo](/help/assets/content-fragments/graphql-api-content-fragments.md) para obter detalhes.
 
 A implementação da API GraphQL do AEM é baseada nas [bibliotecas GraphQL do Java](https://graphql.org/code/#java).
 

@@ -78,7 +78,7 @@ No AEM 6.1, o predicado de texto completo padrão era parte do formulário de pe
  <tbody>
   <tr>
    <td>Nó/s na pesquisa padrão de em 6.1</td>
-   <td>n/d</td>
+   <td>n/a</td>
   </tr>
   <tr>
    <td><p>Tipo de recurso na 6.1</p> </td>
@@ -149,7 +149,7 @@ No AEM 6.1, o predicado de texto completo padrão era parte do formulário de pe
   </tr>
   <tr>
    <td>Tipo de recurso na 6.2</td>
-   <td>n/d</td>
+   <td>n/a</td>
   </tr>
  </tbody>
 </table>
@@ -240,7 +240,7 @@ O Status da página foi substituído por dois Predicados de propriedade de opç�
  <tbody>
   <tr>
    <td>Nó/s no Formulário de pesquisa padrão no 6.1<br /> <br /> </td>
-   <td>n/d</td>
+   <td>n/a</td>
   </tr>
   <tr>
    <td><p>Tipo de recurso na 6.1</p> </td>
@@ -265,7 +265,7 @@ O Status da página foi substituído por dois Predicados de propriedade de opç�
  <tbody>
   <tr>
    <td>Nó/s no Formulário de pesquisa padrão no 6.1<br /> <br /> </td>
-   <td>n/d</td>
+   <td>n/a</td>
   </tr>
   <tr>
    <td><p>Tipo de recurso na 6.1</p> </td>
@@ -286,7 +286,7 @@ O Status da página foi substituído por dois Predicados de propriedade de opç�
  <tbody>
   <tr>
    <td>Nó/s no Formulário de pesquisa padrão no 6.1<br /> <br /> </td>
-   <td>n/d</td>
+   <td>n/a</td>
   </tr>
   <tr>
    <td><p>Tipo de recurso na 6.1</p> </td>
@@ -307,7 +307,7 @@ O Status da página foi substituído por dois Predicados de propriedade de opç�
  <tbody>
   <tr>
    <td>Nó/s no Formulário de pesquisa padrão no 6.1<br /> <br /> </td>
-   <td>n/d</td>
+   <td>n/a</td>
   </tr>
   <tr>
    <td><p>Tipo de recurso na 6.1</p> </td>
@@ -328,7 +328,7 @@ O Status da página foi substituído por dois Predicados de propriedade de opç�
  <tbody>
   <tr>
    <td>Nó/s no Formulário de pesquisa padrão no 6.1<br /> <br /> </td>
-   <td>n/d</td>
+   <td>n/a</td>
   </tr>
   <tr>
    <td><p>Tipo de recurso na 6.1</p> </td>
@@ -349,7 +349,7 @@ O Status da página foi substituído por dois Predicados de propriedade de opç�
  <tbody>
   <tr>
    <td>Nó/s no Formulário de pesquisa padrão no 6.1<br /> <br /> </td>
-   <td>n/d</td>
+   <td>n/a</td>
   </tr>
   <tr>
    <td><p>Tipo de recurso na 6.1</p> </td>
@@ -373,7 +373,7 @@ Os nós abaixo se referem aos nomes em `/conf/global/settings/dam/search/facets/
 | Nó/s no Formulário de pesquisa padrão no 6.1 | texto completo |
 |---|---|
 | Tipo de recurso na 6.1 | dam/gui/components/admin/customsearch/searchpredicates/fulltextpredicate |
-| Tipo de recurso na 6.2 | n/d |
+| Tipo de recurso na 6.2 | n/a |
 
 No 6.1, o predicado de texto completo padrão fazia parte do formulário de pesquisa. No 6.2, o campo de texto completo foi substituído por OmniSearch. Esse predicado é ignorado programaticamente e pode ser removido.
 

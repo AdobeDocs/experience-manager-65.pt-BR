@@ -60,7 +60,7 @@ Com os dados de exemplo acima, um URL de variante de produto formatado usando o 
 
 Isso configura os URLs das páginas de categoria ou lista de produtos e oferece suporte às seguintes opções:
 
-* `{{page}}.html/{{url_path}}.html` (padrão)
+* `{{page}}.html/{{url_path}}.html` (default)
 * `{{page}}.html/{{url_key}}.html`
 
 No caso de [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia):

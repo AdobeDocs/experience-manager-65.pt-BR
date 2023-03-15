@@ -68,7 +68,7 @@ O guia fornece uma lista de componentes SCF disponíveis para pré-visualizaçã
 
 O Guia de componentes é exibido em uma instância do autor no modo de Edição:
 
-![componente da comunidade1](assets/community-component1.png)
+![community-component1](assets/community-component1.png)
 
 ## Páginas de componentes {#component-pages}
 
@@ -98,11 +98,11 @@ Ao usar o guia em uma instância de autor, é possível experimentar a configura
 
 Para o guia Componentes da comunidade , algumas configurações de diálogo de componentes são sobrepostas com o [Inclusive](scf.md#add-or-include-a-communities-component) alternar estado. Para alternar entre o uso do recurso existente ou de um recurso incluído dinamicamente, no modo de edição, selecione o componente e o texto incluível e clique duas vezes para abrir a caixa de diálogo de edição:
 
-![componente da comunidade3](assets/community-component3.png)
+![community-component3](assets/community-component3.png)
 
 Em **Modelos** guia :
 
-![componente da comunidade4](assets/community-component4.png)
+![community-component4](assets/community-component4.png)
 
 * **Incluir o componente-filho com sling:include**
 
@@ -171,9 +171,9 @@ Usando o componente comments como exemplo, na instância de autor ou publicaçã
 
 1. Observe que agora há 3 guias para Modelos, CSS e Dados.
 
-![componente da comunidade5](assets/community-component5.png)
+![community-component5](assets/community-component5.png)
 
-![componente da comunidade6](assets/community-component6.png)
+![community-component6](assets/community-component6.png)
 
 ### Guia Modelos {#templates-tab}
 

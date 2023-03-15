@@ -63,7 +63,7 @@ Por exemplo, para excluir o UGC de um usuário que tenha uma ID autorizável wes
 
 ### Excluir UGC do Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
-Para excluir dados do usuário da Adobe Analytics, siga as [Fluxo de trabalho do GDPR Analytics](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html); já que a API não exclui dados do usuário do Adobe Analytics.
+Para excluir dados do usuário da Adobe Analytics, siga as [Fluxo de trabalho do GDPR Analytics](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=pt-BR); já que a API não exclui dados do usuário do Adobe Analytics.
 
 Para mapeamentos de variáveis Adobe Analytics usados pelo AEM Communities, consulte a seguinte imagem:
 

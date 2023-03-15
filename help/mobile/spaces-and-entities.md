@@ -85,7 +85,7 @@ Depois de criar um espaço, clique em à esquerda para gerenciar o espaço na li
 
 Os espaços podem incluir pastas para ajudar a organizar ainda mais o conteúdo e os ativos do espaço. Os usuários podem criar sua própria hierarquia em um espaço.
 
-### Criação de uma pasta {#creating-a-folder}
+### Criação de pastas {#creating-a-folder}
 
 1. Clique no espaço na lista no console de espaço e clique em **Criar pasta**
 

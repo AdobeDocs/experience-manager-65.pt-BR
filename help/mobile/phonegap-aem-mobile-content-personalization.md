@@ -123,7 +123,7 @@ Os desenvolvedores de AEM que criam aplicativos móveis devem continuar a seguir
 
 Para fornecer conteúdo ao conteúdo do dispositivo do usuário, é gerado renderizando as ofertas criadas por AEM autores de conteúdo. Para lidar com a renderização das ofertas de destino, há um novo manipulador de sincronização de conteúdo que processará as ofertas. Usando o Aplicativo de referência híbrido como nossa amostra, o pacote de conteúdo en (inglês) contém ContentSyncConfig com um [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) manipulador. A próxima etapa é crucial para renderizar ofertas para o dispositivo. O manipulador mobileappoffers tem uma propriedade path que identifica o caminho para a atividade de personalização que deve ser usada para o aplicativo.
 
-Por exemplo, se houver uma atividade localizada em */content/campanhas/hybridref* copie esse caminho e o cole como o valor para a variável *caminho* propriedade do manipulador mobileappoffers.
+Por exemplo, se houver uma atividade localizada em */content/campanhas/hybridref* copie esse caminho e cole-o como o valor na *caminho* propriedade do manipulador mobileappoffers.
 
 >[!NOTE]
 >

@@ -1,8 +1,8 @@
 ---
 title: Criação de um Guia de início rápido sem cabeçalho de configuração
 description: Crie uma configuração como uma primeira etapa para começar a usar o headless no AEM 6.5.
-exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 8ab774b8d21dd16e4873cd39ef0175ead3f2da23
+exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 69%

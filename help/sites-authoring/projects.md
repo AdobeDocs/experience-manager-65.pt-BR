@@ -181,7 +181,7 @@ Mais informações são descritas em [Fluxo de trabalho Solicitar email](/help/s
 
 Você pode iniciar fluxos de trabalho para o seu projeto. Se algum workflow estiver em execução, seu status será exibido na variável **Fluxos de trabalho** mosaico.
 
-![Mosaico de fluxos de trabalho](assets/project-tile-workflows.png)
+![Bloco de fluxos de trabalho](assets/project-tile-workflows.png)
 
 Dependendo do projeto que você criar, há diferentes fluxos de trabalho disponíveis.
 

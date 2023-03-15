@@ -64,7 +64,7 @@ Selecione o `Featured Content` para acessar e selecionar o `Configure` ícone qu
 
 Em **[!UICONTROL Configurações]** , identifique o conteúdo a ser exibido:
 
-* **[!UICONTROL Nome para exibição]**
+* **[!UICONTROL Nome de exibição]**
 
    O título da lista de conteúdos em destaque. Por exemplo `Featured Questions` ou `Featured Ideas`. O padrão é `Featured Content` se deixado em branco.
 

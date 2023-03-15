@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4472da2e9aa0b45e0d5f03bfdc53a2748d82cdb3
 workflow-type: tm+mt
-source-wordcount: '5317'
+source-wordcount: '5351'
 ht-degree: 1%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 1%
 >[!NOTE]
 >
 >O Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (como _Reagir_). [Saiba mais](/help/sites-developing/spa-overview.md).
+
+>[!NOTE]
+>
+>Vários exemplos são baseados no conteúdo de amostra do Geometrixx, que não é mais enviado com o AEM, tendo sido substituído por We.Retail. Consulte o documento [Implementação de referência We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx) para saber como baixar e instalar o Geometrixx.
 
 Projete suas páginas da Web para que elas se adaptem à janela de visualização do cliente em que são exibidas. Com o design responsivo, as mesmas páginas podem ser exibidas efetivamente em vários dispositivos em ambas as orientações. A imagem a seguir demonstra algumas maneiras pelas quais uma página pode responder às alterações no tamanho da janela de visualização:
 
@@ -100,7 +104,7 @@ A tabela a seguir lista os arquivos na pasta filho css.
   <tr>
    <td>bootstrap.css</td>
    <td>Estilos comuns, definidos pelo Twitter Bootstrap.</td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
   <tr>
    <td>responsive-1200px.css</td>

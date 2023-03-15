@@ -134,7 +134,7 @@ página em https://[*host*]:[*porta*]/system/console/configMgr.
   </tr>
   <tr>
    <td>Tamanho inicial</td>
-   <td>10º</td>
+   <td>10</td>
   </tr>
   <tr>
    <td>Espera máx.</td>

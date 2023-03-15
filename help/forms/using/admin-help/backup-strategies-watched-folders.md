@@ -24,7 +24,7 @@ Este conteúdo descreve como as pastas assistidas são afetadas por diferentes c
 *Pasta assistida* é um aplicativo baseado em sistema de arquivos que chama operações de serviço configuradas que manipulam o arquivo em uma das seguintes pastas na hierarquia de pasta assistida:
 
 * Entrada
-* Estágio
+* Fase
 * Saída
 * Falha
 * Preservar
@@ -62,20 +62,20 @@ A tabela a seguir descreve a manipulação de arquivo de cinco arquivos de amost
    <td><p>arquivo1, arquivo2, arquivo3, arquivo4</p></td>
    <td><p>arquivo2, arquivo3, arquivo4</p></td>
    <td><p>arquivo3, arquivo4</p></td>
-   <td><p>arquivo4</p></td>
+   <td><p>file4</p></td>
    <td><p>empty</p></td>
-   <td><p>arquivo5</p></td>
+   <td><p>file5</p></td>
    <td><p>empty</p></td>
   </tr>
   <tr>
-   <td><p>Estágio</p></td>
+   <td><p>Fase</p></td>
    <td><p>empty</p></td>
    <td><p>file1</p></td>
    <td><p>file2</p></td>
    <td><p>file3</p></td>
-   <td><p>arquivo4</p></td>
+   <td><p>file4</p></td>
    <td><p>empty</p></td>
-   <td><p>arquivo5</p></td>
+   <td><p>file5</p></td>
   </tr>
   <tr>
    <td><p>Saída</p></td>

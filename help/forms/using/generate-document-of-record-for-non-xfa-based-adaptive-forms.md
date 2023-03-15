@@ -14,7 +14,7 @@ exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
 source-wordcount: '3466'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -32,7 +32,7 @@ Este artigo explica como gerar um documento de registro para formulários adapt�
 
 ## Tipos de formulário adaptável e seus documentos de registro {#adaptive-form-types-and-their-documents-of-record}
 
-Ao criar um formulário adaptável, é possível selecionar um modelo de formulário. Suas opções são:
+Ao criar um formulário adaptável, é possível selecionar um modelo de formulário. As opções são:
 
 * [Modelos de formulário](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
 Permite selecionar um modelo XFA para o formulário adaptável. Ao selecionar um modelo XFA, você pode usar o arquivo XDP associado para o documento de registro, conforme descrito acima.

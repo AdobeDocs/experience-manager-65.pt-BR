@@ -328,11 +328,11 @@ A lógica é implementada por meio de ouvintes de eventos e código javascript d
 Para usar o **Arbitrário** caixa de diálogo:
 
 1. Substitua a caixa de diálogo do **Caixa de diálogo dinâmica** com o **Arbitrário** caixa de diálogo: siga as etapas descritas para a [Exemplo 2: Caixa de diálogo de painel único](#example-single-panel-dialog)
-1. Editar o componente: a caixa de diálogo é exibida da seguinte maneira:
+1. Edit the component: the dialog displays as follows:
 
-![screen_shot_2012-02-01at115300am](assets/screen_shot_2012-02-01at115300am.png)
+![](assets/screen_shot_2012-02-01at115300am.png)
 
-#### Exemplo 3: Caixa de diálogo Alternar campos {#example-toggle-fields-dialog}
+#### Example 3: Toggle Fields Dialog {#example-toggle-fields-dialog}
 
 O **Alternar campos** exibe uma janela com uma guia. A guia tem uma caixa de seleção: quando essa opção é marcada, um conjunto de campos com dois campos de texto é exibido.
 
@@ -340,8 +340,8 @@ As suas principais características são:
 
 * É definido por um nó (tipo de nó = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
 * Exibe 1 widget do painel de guias (tipo de nó = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#textpanel)`) com 1 painel (tipo de nó = `cq:Panel`).
-* O painel tem um widget de seleção/caixa de seleção (tipo de nó = `cq:Widget`, xtype = ` [selection](/help/sites-developing/xtypes.md#selection)`, tipo = ` [checkbox](/help/sites-developing/xtypes.md#checkbox)`) e um widget de conjunto de diálogo que pode ser recolhido (tipo de nó = `cq:Widget`, xtype = ` [dialogfieldset](/help/sites-developing/xtypes.md#dialogfieldset)`) que está oculta por padrão, com 2 widgets de campo de texto (tipo de nó = `cq:Widget`, xtype = ` [textfield](/help/sites-developing/xtypes.md#textfield)`).
-* É definido pela variável `togglefields` nó em:
+* `cq:Widget`` [selection](/help/sites-developing/xtypes.md#selection)`` [checkbox](/help/sites-developing/xtypes.md#checkbox)``cq:Widget`` [dialogfieldset](/help/sites-developing/xtypes.md#dialogfieldset)``cq:Widget`` [textfield](/help/sites-developing/xtypes.md#textfield)`
+* `togglefields`
    `/apps/extjstraining/components/dynamicdialogs/togglefields`
 * É renderizado no formato json solicitando:
    `https://localhost:4502/apps/extjstraining/components/dynamicdialogs/togglefields.-1.json`
@@ -414,10 +414,10 @@ O widget de vários campos personalizado (xtype = `ejstcustom`):
    * `otherField` é um [CQ.Ext.form.TextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField) objeto
 * Substitui os métodos `setValue`, `getValue` e `getRawValue` de [CQ.form.CompositeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField) para definir e recuperar o valor de CustomWidget com o formato:
    `<allowField value>/<otherField value>, e.g.: 'Bla1/hello'`.
-* Registra-se como &#39; `ejstcustom`&#39; xtype:
+* `ejstcustom`
    `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
 
-O **Multifield personalizado** a caixa de diálogo baseada em widget é exibida da seguinte maneira:
+****
 
 ![screen_shot_2012-02-01at115840am](assets/screen_shot_2012-02-01at115840am.png)
 
@@ -425,10 +425,10 @@ O **Multifield personalizado** a caixa de diálogo baseada em widget é exibida 
 
 O **Treebrowse** a caixa de diálogo baseada em widget exibe uma janela com uma guia contendo um widget de navegação de caminho personalizado: ao clicar na seta, uma janela é aberta e você pode navegar por uma hierarquia e selecionar um item. O caminho do item é então adicionado ao campo de caminho e é mantido quando a caixa de diálogo é fechada.
 
-A caixa de diálogo de navegação da árvore personalizada:
+The custom treebrowse dialog:
 
-* É definido por um nó (tipo de nó = `cq:Dialog`, xtype = ` [dialog](/help/sites-developing/xtypes.md#dialog)`).
-* Exibe 1 widget do painel de guias (tipo de nó = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`) contendo um painel (tipo de nó = `cq:Widget`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`).
+* `cq:Dialog`` [dialog](/help/sites-developing/xtypes.md#dialog)`
+* `cq:Widget`` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)``cq:Widget`` [panel](/help/sites-developing/xtypes.md#panel)`
 * O painel tem um widget personalizado (tipo de nó = `cq:Widget`, xtype = `ejstbrowse`)
 * É definido pela variável `treebrowse` nó em:
    `/apps/extjstraining/components/customwidgets/treebrowse`
@@ -499,21 +499,21 @@ Para usar o **Plug-in do Editor de Rich Text (RTE)** caixa de diálogo baseada:
 
 O **Plug-in do Editor de Rich Text (RTE)** a caixa de diálogo baseada é exibida da seguinte maneira:
 
-![screen_shot_2012-02-01at120254pm](assets/screen_shot_2012-02-01at120254pm.png)
+![](assets/screen_shot_2012-02-01at120254pm.png)
 
 >[!NOTE]
 >
->Este exemplo mostra apenas como implementar a parte do lado do cliente da lógica: os espaços reservados (*[texto]*) devem ser analisados explicitamente no lado do servidor (por exemplo, no componente JSP).
+>*[]*
 
-### Visão geral da árvore {#tree-overview}
+### Tree Overview {#tree-overview}
 
-O pronto para uso ` [CQ.Ext.tree.TreePanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)` O objeto fornece representação de interface de usuário estruturada em árvore de dados estruturados em árvore. O componente Visão geral da árvore incluído na **Uso de widgets ExtJS** mostra como usar o `TreePanel` para exibir uma árvore JCR abaixo de um determinado caminho. A janela propriamente dita pode ser encaixada/desencaixada. Neste exemplo, a lógica da janela é incorporada no componente jsp entre &lt;script>&lt;/script> tags.
+` [CQ.Ext.tree.TreePanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)` ****`TreePanel` A janela propriamente dita pode ser encaixada/desencaixada. Neste exemplo, a lógica da janela é incorporada no componente jsp entre &lt;script>&lt;/script> tags.
 
 Para incluir a **Visão geral da árvore** componente para a página de exemplo:
 
 1. Adicione o **4. Visão geral da árvore** para a página de exemplo do **Uso de widgets ExtJS** na guia no **Sidekick**.
-1. O componente exibe:
-   * um título, com texto
+1. The component displays:
+   * a title, with some text
    * a **PROPRIEDADES** link: clique em para exibir as propriedades do parágrafo armazenado no repositório. Clique em novamente para ocultar as propriedades.
    * uma janela flutuante com uma representação em árvore do repositório, que pode ser expandida.
 
@@ -592,23 +592,23 @@ O componente é exibido da seguinte maneira:
 
 Em sua versão inicial, a variável **Visão geral da grade** componente exibe uma janela com dados estáticos em um formato tabular. Neste exemplo, a lógica é incorporada no componente jsp de duas maneiras:
 
-* a lógica genérica é definida entre &lt;script>&lt;/script> tags
-* a lógica específica está disponível em um arquivo .js separado e é vinculada ao jsp. This setup enables to easily switch between the two logic (static/dynamic) by commenting the desired &lt;script> tags.
+* the generic logic is defined between &lt;script>&lt;/script> tags
+* the specific logic is available in a separate .js file and is linked to in the jsp. This setup enables to easily switch between the two logic (static/dynamic) by commenting the desired &lt;script> tags.
 
-O componente Visão geral da grade:
+The Grid Overview component:
 
-* Está definido em:
+* Is defined at:
    `/apps/extjstraining/components/gridoverview`
 * Sua caixa de diálogo permite definir o tamanho da janela e ancorar/desancorar a janela.
 
 O componente jsp:
 
 * Recupera a largura, a altura e as propriedades ancoradas do repositório.
-* Exibe algum texto como introdução ao formato de dados de visão geral da grade.
-* Faz referência ao código javascript que define o objeto GridPanel:
+* Displays some text as introduction to the grid overview data format.
+* References javascript code that defines the GridPanel object:
    `<script type="text/javascript" src="/apps/extjstraining/components/gridoverview/defaultgrid.js"></script>`
 
-   `defaultgrid.js` define alguns dados estáticos como base para o objeto GridPanel.
+   `defaultgrid.js`
 * Incorpora código javascript entre tags javascript que define o objeto Window consumindo o objeto GridPanel.
 * Está definido em:
    `apps/extjstraining/components/gridoverview/content.jsp`

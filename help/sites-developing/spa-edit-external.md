@@ -368,8 +368,8 @@ O componente RemotePage espera que a implementação forneça um manifesto de at
 O seguinte material de referência pode ser útil para entender SPA no contexto da AEM.
 
 * [O Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
-* [O projeto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
-* [Introdução ao SPA no AEM usando o React](spa-getting-started-react.md)
+* [O projeto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=pt-BR)
+* [Introdução a SPAs no AEM usando o React](spa-getting-started-react.md)
 * [Materiais de referência SPA (referências de API)](spa-reference-materials.md)
 * [SPA Blueprint e PageModelManager](spa-blueprint.md#pagemodelmanager)
 * [Roteamento do Modelo de SPA](spa-routing.md)

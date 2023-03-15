@@ -13,7 +13,7 @@ exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 source-git-commit: b48b7631c501cea7e4ef1133a452fb6984e4547f
 workflow-type: tm+mt
 source-wordcount: '3573'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -89,7 +89,7 @@ Há várias ações que podem ser executadas em um pacote por meio dos botões d
 Outras ações estão disponíveis abaixo da variável **Mais** botão.
 
 * [Excluir](#deleting-packages)
-* [Cobertura](#package-coverage)
+* [Abrangência](#package-coverage)
 * [Conteúdo](#viewing-package-contents-and-testing-installation)
 * [Reajustar](#rewrapping-a-package)
 * [Outras versões](#other-versions)
@@ -372,7 +372,7 @@ Todas as dependências com versão que não possam ser atendidas pela instância
 
 Se as dependências não forem atendidas, os pacotes OSGi no pacote com essas dependências não serão iniciados. Isso resulta em uma implantação de aplicativo interrompida, pois qualquer coisa que dependa do pacote OSGi não iniciado, por sua vez, não funcionará corretamente.
 
-**Resolução de Erro**
+**Resolução de erro**
 
 Para resolver erros devido a pacotes OSGi insatisfeitos, a versão de dependência no pacote com importações insatisfeitas deve ser ajustada.
 
@@ -392,7 +392,7 @@ Essas sobreposições são descritas no Log de atividades do Gerenciador de paco
 
 Um estado de erro significa que o pacote está tentando implantar um arquivo que já está sobreposto, portanto, as alterações no pacote serão sobrepostas (e, portanto, &quot;ocultas&quot;) pela sobreposição e não terão efeito.
 
-**Resolução de Erro**
+**Resolução de erro**
 
 Para resolver esse problema, o mantenedor do arquivo de sobreposição em `/apps` deve revisar as alterações no arquivo sobreposto em `/libs` e incorpore as alterações conforme necessário na sobreposição ( `/apps`) e reimplante o arquivo sobreposto.
 
@@ -414,7 +414,7 @@ As permissões são descritas no Log de atividades do Gerenciador de pacotes.
 
 Não é possível fornecer erros explícitos. A validação simplesmente indica se qualquer nova permissão ACL será adicionada ou afetada pela instalação do pacote.
 
-**Resolução de Erro**
+**Resolução de erro**
 
 Usando as informações fornecidas pela validação, os nós afetados podem ser revisados no CRXDE e as ACLs podem estar ajustando no pacote conforme necessário.
 

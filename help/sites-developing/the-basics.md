@@ -244,7 +244,7 @@ Por exemplo:
 
 * /
 
-   * uma sessão gerenciada no quadro branco
+   * a
    * b
 
       * sling:resourceSuperType = a

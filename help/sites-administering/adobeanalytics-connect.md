@@ -95,7 +95,7 @@ Use o [Console da Web para configurar o pacote OSGi](/help/sites-deploying/confi
 >
 >Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM.
 >
->O [Plug-in do Activity Map fornecido pelo Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) deve ser usada.
+>O [Plug-in do Activity Map fornecido pelo Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=pt-BR) deve ser usada.
 
 ## Criação de uma estrutura do Adobe Analytics {#creating-a-adobe-analytics-framework}
 

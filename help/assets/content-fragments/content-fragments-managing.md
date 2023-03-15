@@ -1,5 +1,5 @@
 ---
-title: Gerenciamento dos fragmentos de conteúdo
+title: Gerenciamento dos Fragmentos de conteúdo
 description: Saiba como usar o console Assets para gerenciar os Fragmentos de conteúdo AEM, a base do seu conteúdo sem periféricos.
 feature: Content Fragments
 role: User
@@ -11,7 +11,7 @@ ht-degree: 81%
 
 ---
 
-# Gerenciamento dos fragmentos de conteúdo {#managing-content-fragments}
+# Gerenciamento dos Fragmentos de conteúdo {#managing-content-fragments}
 
 Saiba como usar o console Assets para gerenciar os Fragmentos de conteúdo AEM, a base do seu conteúdo sem periféricos.
 

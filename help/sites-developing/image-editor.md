@@ -50,7 +50,7 @@ Exemplo:
 
 Os Gráficos de vetor dimensionáveis (SVG) são compatíveis com o Editor de imagens.
 
-* O arrastar e soltar um ativo SVG do DAM e fazer upload de um arquivo SVG de um sistema de arquivos local são suportados.
+* Tanto o processo de arrastar e soltar um ativo SVG do DAM quanto o de fazer upload de um arquivo SVG de um sistema de arquivos local são compatíveis.
 
 ## Ativar plug-ins por tipo MIME {#enabling-plugins-by-mime-type}
 

@@ -389,7 +389,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
    <td>Configurações do gerenciador de configurações.</td>
   </tr>
   <tr>
-   <td>Comércio</td>
+   <td>Commerce</td>
    <td>Fornece acesso aos importadores e a vários dados do produto.</td>
   </tr>
   <tr>

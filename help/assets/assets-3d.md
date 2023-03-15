@@ -206,7 +206,7 @@ Consulte também [Adicionar ativos do Dynamic Media nas páginas](/help/assets/a
 
 1. No painel lateral, selecione o ícone de sinal de mais para abrir o **[!UICONTROL Componentes]** lista.
 
-   ![3d-mídia-componente-arrastar-soltar](/help/assets/assets-dm/3d-assets-filter.png)
+   ![3d-media-component-drag-drop](/help/assets/assets-dm/3d-assets-filter.png)
 
 1. Arraste o **[!UICONTROL Mídia 3D]** do **[!UICONTROL Componentes]** liste para o local na página onde você deseja que o visualizador 3D apareça.
 
@@ -270,7 +270,7 @@ Consulte também [Publicar páginas](/help/sites-authoring/publishing-pages.md).
 1. Selecionar **[!UICONTROL Fechar]** para sair da caixa de diálogo e retornar à página de detalhes do ativo.
 1. Na lista suspensa à esquerda do nome de arquivo do ativo 3D, selecione **[!UICONTROL Representações]**.
 
-   ![3d-representação de ativos](/help/assets/assets-dm/3d-asset-renditions.png)
+   ![3d-asset-renditions](/help/assets/assets-dm/3d-asset-renditions.png)
 
 1. Selecionar **[!UICONTROL original]**. Quando um ativo 3D é publicado (ou &quot;ativado&quot;), a variável **[!UICONTROL URL]** será exibido próximo ao canto inferior esquerdo da página se todas as seguintes condições de ativos 3D forem atendidas:
    * O ativo 3D é um formato compatível (GLB, OBJ, STL e USDZ).

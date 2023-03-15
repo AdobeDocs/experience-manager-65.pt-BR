@@ -18,7 +18,7 @@ ht-degree: 44%
 
 # Configuração de várias lojas do Commerce {#multi-store}
 
-Os Componentes principais da CIF do AEM podem ser usados em várias estruturas de site do AEM e a implementação de cliente GraphQL subjacente pode se conectar a diferentes lojas/visualizações de loja da Adobe Commerce. Assim, os projetos podem implementar configurações complexas de várias lojas/vários sites.
+Os Componentes principais da CIF do AEM podem ser usados em várias estruturas de site do AEM e a implementação de cliente do GraphQL subjacente pode se conectar a diferentes lojas/visualizações de loja da Adobe Commerce. Assim, os projetos podem implementar configurações complexas de várias lojas/vários sites.
 
 Um vídeo que detalha detalhadamente as opções para integrar várias visualizações da Adobe Commerce Store ao Adobe Experience Manager Sites.
 
@@ -46,7 +46,7 @@ Para conectar um site AEM e AEM os Componentes principais da CIF a uma visualiza
 
    >[!TIP]
    >
-   >Os catálogos de comércio podem ser abordados usando IDs ou UIDs. As UIDs foram introduzidas no Adobe Commerce 2.4.2. Habilite-a somente se o back-end de comércio suportar um esquema GraphQL da versão 2.4.2 ou posterior.
+   >Os catálogos de comércio podem ser abordados usando IDs ou UIDs. Os UIDs foram introduzidos no Adobe Commerce 2.4.2. Habilite-os somente se o back-end de comércio suportar um esquema GraphQL da versão 2.4.2 ou posterior.
 
 4. Atribua a configuração secundária a um site do AEM
 

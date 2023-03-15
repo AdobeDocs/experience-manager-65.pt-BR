@@ -7,7 +7,7 @@ exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 33%
+ht-degree: 35%
 
 ---
 
@@ -26,7 +26,7 @@ Os clientes com um contrato válido de manutenção e suporte devem ter recebido
 
 [Mais informações sobre a implantação do software AEM.](/help/sites-deploying/home.md)
 
-Visite nossa [Hub de AEM](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) para obter informações sobre AEM versões.
+Visite nossa [Hub de AEM](https://helpx.adobe.com/br/experience-manager/aem-releases-updates.html) para obter informações sobre AEM versões.
 
 ## Como posso obter suporte oficial para o AEM? {#official-support}
 

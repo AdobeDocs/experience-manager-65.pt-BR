@@ -144,7 +144,7 @@ Ao criar um Conjunto de imagens, o Adobe recomenda as seguintes práticas recome
 
 | Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
-| Número de ativos duplicados por conjunto | Sem duplicatas | 20º |
+| Número de ativos duplicados por conjunto | Sem duplicatas | 20 |
 | Número máximo de imagens por conjunto | 5 a 10 imagens por conjunto | 1000 |
 
 Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md).

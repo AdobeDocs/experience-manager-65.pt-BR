@@ -13,7 +13,7 @@ exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
@@ -62,16 +62,16 @@ Alguns nós no caminho são pastas e alguns são componentes.
       * Inserir Rótulo: `comment`
       * Inserir Título: `Comment`
       * Inserir descrição: `A comment instance without avatars`
-      * Supertipo: `social/commons/components/comments/comment`
+      * Super Type: `social/commons/components/comments/comment`
       * Inserir Grupo: `.hidden`
       * Clique em **[!UICONTROL Próximo]** until **[!UICONTROL OK]**
    * Selecionar **[!UICONTROL Salvar tudo]**
 1. Excluir o padrão `comments.jsp`
    * Selecionar nó `/apps/social/commons/components/hbs/comments/comments.jsp`
-   * Selecionar **[!UICONTROL Excluir]**
+   * Selecione **[!UICONTROL Excluir]**
 1. Exclua o arquivo comment.jsp padrão
    * selecionar nó `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
-   * Selecionar **[!UICONTROL Excluir]**
+   * Selecione **[!UICONTROL Excluir]**
    * Selecionar **[!UICONTROL Salvar tudo]**
 
 >[!NOTE]

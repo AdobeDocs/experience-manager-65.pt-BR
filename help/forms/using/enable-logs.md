@@ -133,7 +133,7 @@ A configuração do log é composta pelo nível do log e pela categoria do logge
    <th>Descrição</th>
   </tr>
   <tr>
-   <td>uma sessão gerenciada no quadro branco</td>
+   <td>a</td>
    <td>xfa (registros relacionados ao mecanismo de scripts)</td>
   </tr>
   <tr>

@@ -349,7 +349,7 @@ Para tipos de componentes específicos, você pode arrastar e soltar os ativos d
 | **Tipo de ativo** | **Tipo de componente** |
 |---|---|
 | Imagem | Imagem |
-| Documento | Baixar |
+| Documento | Download |
 | Produto | Produto |
 | Vídeo | Flash |
 | Fragmento de conteúdo | Fragmento de conteúdo |

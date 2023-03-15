@@ -3,13 +3,13 @@ title: Não é possível abrir o PDF forms baseado em XFA no Google Chrome, Fire
 description: Não é possível abrir o PDF forms baseado em XFA no Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer ou Apple Safari
 seo-title: Unable to open XFA-based PDF forms in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer, or Apple Safari
 feature: Adaptive Forms
-source-git-commit: f2b76ce0c2f296f81c3748794bf2ab74ccd5bb95
+exl-id: fdd15315-e0d6-4d80-acb4-2e0ecec716c4
+source-git-commit: 2f1e6eb5451e76b9688401b32d4866ed74cca84e
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
 
 ---
-
 
 # Não é possível abrir o PDF forms baseado em XFA no Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer ou Apple Safari{#unable-to-open-XFA-based-PDF-forms-in-Google-Chrome-Firefox-Microsoft-Edge-Microsoft-Internet-Explorer-or-Apple-Safari}
 

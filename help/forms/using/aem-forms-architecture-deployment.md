@@ -122,7 +122,7 @@ Você pode fazer as seguintes alterações/personalizações na topologia sugeri
 * O uso do HTML Workspace e do aplicativo AEM Forms requer um autor ou uma instância de processamento de AEM. Você pode usar a instância do autor de AEM incorporada ao AEM Forms no servidor JEE em vez de configurar um servidor de autor de AEM externo adicional.
 * Uma instância de Autor ou Processamento do AEM é necessária apenas para fluxos de trabalho centrados no Forms no OSGi, formulários adaptáveis, portal de formulários e comunicação interativa.
 * a interface do usuário do agente de comunicação interativa geralmente é executada na organização. Portanto, você pode manter um servidor de publicação para a interface do usuário do agente na rede privada.
-* AEM formulários na instância OSGi integrada ao AEM Forms no servidor JEE também podem executar fluxos de trabalho centrados no Forms em OSGi e Pastas vigiadas.
+* Os formulários AEM na instância OSGi integrada ao AEM Forms no servidor JEE também podem executar fluxos de trabalho centrados no Forms em OSGi e Pastas vigiadas.
 
 ## Amostra de topologias físicas para usar o AEM Forms no OSGi {#sample-physical-topologies-for-using-aem-forms-on-osgi}
 

@@ -17,7 +17,7 @@ ht-degree: 4%
 
 ---
 
-# comércio eletrônico{#ecommerce}
+# eCommerce{#ecommerce}
 
 A estrutura de integração inclui uma camada de integração com uma API. Isso permite:
 

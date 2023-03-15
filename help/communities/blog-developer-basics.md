@@ -71,7 +71,7 @@ O recurso de blog é composto de dois componentes principais que estão disponí
 |---|---|
 | [**incondicional**](/help/communities/scf.md#add-or-include-a-communities-component) | Não |
 | [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
-| **modelos** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
+| **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **propriedades** | see [Recurso de blog](/help/communities/blog-feature.md) |
 

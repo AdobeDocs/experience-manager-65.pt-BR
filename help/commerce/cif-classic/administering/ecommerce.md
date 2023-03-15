@@ -12,7 +12,7 @@ ht-degree: 2%
 
 ---
 
-# comércio eletrônico{#ecommerce}
+# eCommerce{#ecommerce}
 
 * [Conceitos ](/help/commerce/cif-classic/administering/concepts.md)
 * [Administração (genérica)](/help/commerce/cif-classic/administering/generic.md)
@@ -81,7 +81,7 @@ O Adobe fornece duas versões da Estrutura de integração de comércio:
   <tr>
    <td>Modelo de dados padronizado</td>
    <td>Não</td>
-   <td>Sim, esquema GraphQL da Adobe Commerce</td>
+   <td>Sim, esquema Adobe Commerce GraphQL</td>
   </tr>
   <tr>
    <td>Disponibilidade</td>

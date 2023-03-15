@@ -6,7 +6,7 @@ exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: 42ef4694a3301ae1cd34766ce4c19f4b0e2f2c38
 workflow-type: tm+mt
 source-wordcount: '3695'
-ht-degree: 87%
+ht-degree: 91%
 
 ---
 
@@ -100,22 +100,22 @@ Com o GraphQL, é possível executar consultas para retornar:
 
 * Uma **[lista de entradas](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM fornece recursos para converter consultas (ambos os tipos) em [Consultas Persistentes](/help/assets/content-fragments/persisted-queries.md), que pode ser armazenado em cache pelo Dispatcher e pelo CDN.
+O AEM fornece recursos para converter consultas (de ambos os tipos) em [](/help/assets/content-fragments/persisted-queries.md)consultas persistentes, que podem ser armazenadas em cache pelo Dispatcher e CDN.
 
-### Práticas recomendadas de consulta do GraphQL (Dispatcher e CDN) {#graphql-query-best-practices}
+### Práticas recomendadas de consulta GraphQL (Dispatcher e CDN) {#graphql-query-best-practices}
 
-O [Consultas Persistentes](/help/assets/content-fragments/persisted-queries.md) são o método recomendado a ser usado em instâncias de publicação como:
+As [consultas persistentes](/help/assets/content-fragments/persisted-queries.md) são o método recomendado a ser usado em instâncias de publicação, como:
 
 * são armazenadas em cache
 * são gerenciados centralmente pelo AEM
 
 >[!NOTE]
 >
->Geralmente, não há dispatcher/CDN no autor, portanto, não há mais vantagem em usar consultas persistentes lá; além de testá-los.
+>Geralmente, uma instância de autor não contém o Dispatcher/CDN, portanto, não há vantagem em usar consultas persistentes nesse caso, a menos que seja para testá-las.
 
-As consultas do GraphQL que usam solicitações POST não são recomendadas, pois não são armazenadas em cache. Portanto, em uma instância padrão, o Dispatcher é configurado para bloquear essas consultas.
+As consultas GraphQL que utilizam solicitações POST não são recomendadas, pois não são armazenadas em cache. Portanto, em uma instância padrão, o Dispatcher é configurado para bloquear essas consultas.
 
-Embora o GraphQL também ofereça suporte a solicitações do GET, elas podem atingir limites (por exemplo, o comprimento do URL) que podem ser evitados usando Consultas Persistentes.
+Embora o GraphQL também seja compatível com solicitações GET, elas podem atingir limites (por exemplo, o comprimento do URL) que poderiam ser evitados usando consultas persistentes.
 
 >[!NOTE]
 >
@@ -245,9 +245,9 @@ Os casos de uso podem depender do tipo de ambiente de AEM:
 
 As permissões são as necessárias para acessar o Assets.
 
-As consultas do GraphQL são executadas com a permissão do usuário AEM da solicitação subjacente. Se o usuário não tiver acesso de leitura a alguns fragmentos (armazenados como Ativos), ele não fará parte do conjunto de resultados.
+As consultas GraphQL são executadas com a permissão do usuário do AEM da solicitação subjacente. Se o usuário não tiver acesso de leitura a alguns fragmentos (armazenados como ativos), eles não farão parte do conjunto de resultados.
 
-Além disso, o usuário precisa ter acesso a um terminal GraphQL para poder executar consultas do GraphQL.
+Além disso, o usuário precisa ter acesso a um ponto de acesso GraphQL para poder executar consultas GraphQL.
 
 ## Geração de esquemas {#schema-generation}
 

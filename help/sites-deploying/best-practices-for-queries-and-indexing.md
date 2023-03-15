@@ -458,9 +458,9 @@ Em operação normal do AEM, por exemplo, o upload de Ativos por meio da interfa
 
 *Execute a Etapa 1(a-b) durante uma janela de manutenção/período de baixo uso, pois o armazenamento de nós é atravessado durante essa operação, o que pode causar carga significativa no sistema.*
 
-1 bis. Executar `oak-run.jar --generate` para criar uma lista de nós que terá seu texto pré-extraído.
+1a. Executar `oak-run.jar --generate` para criar uma lista de nós que terá seu texto pré-extraído.
 
-1-B. A lista de nós (1a) é armazenada no sistema de arquivos como um arquivo CSV
+1b. A lista de nós (1a) é armazenada no sistema de arquivos como um arquivo CSV
 
 Observe que todo o armazenamento de nós é percorrido (conforme especificado pelos caminhos no comando oak-run) sempre `--generate` é executada, e uma **novo** O arquivo CSV é criado. O arquivo CSV é **not** reutilizado entre execuções discretas do processo de pré-extração de texto (Etapas 1 - 2).
 
@@ -468,9 +468,9 @@ Observe que todo o armazenamento de nós é percorrido (conforme especificado pe
 
 *A etapa 2(a-c) pode ser executada durante a operação normal de AEM, pois só interage com o Data Store.*
 
-2 bis. Executar `oak-run.jar --tika` para pré-extrair texto para os nós binários enumerados no arquivo CSV gerado em (1b)
+2a. Executar `oak-run.jar --tika` para pré-extrair texto para os nós binários enumerados no arquivo CSV gerado em (1b)
 
-2 ter. O processo iniciado em (2a) acessa diretamente os nós binários definidos no CSV no Data Store e extrai texto.
+2b. O processo iniciado em (2a) acessa diretamente os nós binários definidos no CSV no Data Store e extrai texto.
 
 2-C.  O texto extraído é armazenado no sistema de arquivos em um formato assimilável pelo processo de reindexação do Oak (3a)
 
@@ -482,6 +482,6 @@ O texto pré-extraído pode ser adicionado de forma incremental ao longo do temp
 
 *Execute a reindexação (Etapas 3a-b) durante um período de manutenção/baixo uso, pois o armazenamento de nós é atravessado durante essa operação, o que pode causar carga significativa no sistema.*
 
-3 bis. [Re-indexação](#how-to-re-index) de índices Lucene é chamado em AEM
+3a. [Re-indexação](#how-to-re-index) de índices Lucene é chamado em AEM
 
-3 ter. A configuração OSGi do Apache Jackrabbit Oak DataStore PreExtractedTextProvider (configurada para apontar para o texto extraído via caminho do sistema de arquivos) instrui o Oak a obter o texto completo dos arquivos extraídos e evita acessar e processar diretamente os dados armazenados no repositório.
+3b. A configuração OSGi do Apache Jackrabbit Oak DataStore PreExtractedTextProvider (configurada para apontar para o texto extraído via caminho do sistema de arquivos) instrui o Oak a obter o texto completo dos arquivos extraídos e evita acessar e processar diretamente os dados armazenados no repositório.

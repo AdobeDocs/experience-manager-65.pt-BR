@@ -62,7 +62,7 @@ Agora, os itens atribuídos a você durante o período Fora do Escritório são 
 >
 >(Somente para itens de fluxo de trabalho centrados no Forms) Ative o **Permitir que o destinatário delegue usando configurações &#39;Fora do Escritório&#39;** da **Atribuir tarefa** no fluxo de trabalho. Somente os itens que têm a opção acima habilitada são delegados a outros usuários.
 
-## Limitações           {#limitations}
+## Limitações {#limitations}
 
 * Não há suporte para a atribuição de itens a um grupo.
 * Atualmente, não há suporte para habilitar tarefas fora do escritório para tarefas do projeto.

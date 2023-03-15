@@ -32,7 +32,7 @@ Para um formulário adaptável, a opção de salvamento automático não é ativ
 1. Para acessar a seção de salvamento automático nas propriedades, selecione um componente e toque em ![nível de campo](assets/field-level.png) > **[!UICONTROL Contêiner de formulário adaptável]** e toque em ![cmppr](assets/cmppr.png).
 1. No **[!UICONTROL Salvar automaticamente]** seção, **[!UICONTROL Habilitar]** a opção salvar automaticamente.
 1. No **[!UICONTROL Evento de formulário adaptável]** , especifique 1 ou TRUE para iniciar automaticamente o salvamento do formulário quando o formulário for carregado no navegador. Também é possível especificar uma expressão condicional para um evento, que, quando acionada e retorna true, começa a salvar o conteúdo do formulário.
-1. Especifique o Acionador. O salvamento automático é acionado com base em sua configuração. Suas opções são:
+1. Especifique o Acionador. O salvamento automático é acionado com base em sua configuração. As opções são:
 
    * **[!UICONTROL Baseado em tempo:]** Selecione a opção para começar a salvar o conteúdo com base em um intervalo de tempo específico.
    * **[!UICONTROL Baseado em evento:]** Selecione a opção para começar a salvar o conteúdo com base em quando um evento for acionado.

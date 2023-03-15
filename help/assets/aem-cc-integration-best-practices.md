@@ -43,7 +43,7 @@ Leia para saber quais integrações devem ser escolhidas entre o desktop e o DAM
 
 | Proposta de valor para as personas envolvidas | oferta de Adobe | Superfícies envolvidas |
 |---|---|---|
-| Usuários criativos descobrem ativos de [!DNL Experience Manager], abra-as e use-as, edite e faça upload das alterações em [!DNL Experience Manager], bem como fazer upload de novos arquivos no [!DNL Experience Manager], sem sair [!DNL Creative Cloud] aplicativos. | [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], e [!DNL Adobe InDesign]. |
+| Usuários criativos descobrem ativos de [!DNL Experience Manager], abra-as e use-as, edite e faça upload das alterações em [!DNL Experience Manager], bem como fazer upload de novos arquivos no [!DNL Experience Manager], sem sair [!DNL Creative Cloud] aplicativos. | [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | .[!DNL Adobe Photoshop], [!DNL Adobe Illustrator], e [!DNL Adobe InDesign]. |
 | Usuários empresariais simplificam a abertura e o uso de ativos, a edição e o upload de alterações em [!DNL Experience Manager]e fazer upload de novos arquivos no [!DNL Experience Manager] no ambiente de desktop. Eles usam uma integração genérica para abrir qualquer tipo de ativo no aplicativo de desktop nativo, incluindo os não-Adobe. | [Aplicativo de desktop do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] aplicativo de desktop no desktop Win e Mac |
 | Profissionais de marketing e usuários empresariais descobrem, visualizam, licenciam e salvam e gerenciam o [!DNL Adobe Stock] ativos de dentro [!DNL Experience Manager]. Os ativos licenciados e salvos fornecem seleção [!DNL Adobe Stock] metadados para melhor governança. | [Integração do Experience Manager e Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interface da Web |
 
@@ -65,7 +65,7 @@ Este artigo foca principalmente nos dois primeiros aspectos das necessidades de 
 | Usar - colocar ativo do DAM em um documento | Sim - incorporação | Sim - vinculação ou incorporação | [!DNL Experience Manager] o aplicativo de desktop fornece acesso a ativos como arquivos no sistema de arquivos local. Esses links nos aplicativos nativos são representados por caminhos locais. |
 | Editar - abrir para edição | Sim - Ação de check-out | Sim - Abrir ação (no compartilhamento de rede) | [Check-out no AAL](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) salva o ativo na conta de armazenamento da creative cloud do usuário (sincronizada pelo aplicativo do Creative Cloud) por padrão. |
 | Editar - trabalho em andamento fora do DAM | Sim - Ativo disponível na conta de armazenamento de Creative Cloud do usuário sincronizada com o desktop. | Sim |  |
-| Editar - fazer upload de alterações | Sim - [Ação de check-in](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) com comentário opcional | Sim |  |
+| Editar - fazer upload de alterações | Sim - [Ação de check-in](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) com comentário opcional | Sim |  |
 | Upload - arquivo único | Sim - carrega o documento ativo atual | Sim | [Fazer upload por meio da interface da Web](manage-assets.md#uploading-assets) |
 | Upload - vários arquivos / estruturas hierárquicas de pastas | Não | Sim | [Fazer upload por meio da interface da Web](manage-assets.md#uploading-assets) ou por meio de scripts ou ferramentas personalizados. |
 | Misc - usuário e logon | O usuário Creative Cloud conectado ao aplicativo de desktop Creative Cloud é reconhecido (SSO) | [!DNL Experience Manager] usuário e credenciais | Os usuários de ambas as soluções contam para a [!DNL Experience Manager] cota de usuário. |
@@ -97,7 +97,7 @@ Para suportar casos de uso de distribuição de ativos, outras soluções devem 
 
 * Consulte [práticas recomendadas do aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * Consulte [Integração do Adobe Stock](aem-assets-adobe-stock.md)
-* Consulte o [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+* Consulte o [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
 
 Este é um breve resumo das práticas recomendadas para [!DNL Experience Manager] e [!DNL Creative Cloud] integração. Leia o resto deste documento para obter a compreensão detalhada sobre eles.
 
@@ -231,7 +231,7 @@ Para planejar e executar as migrações de ativos do sistema existente para um n
 
 >[!MORELIKETHIS]
 >
->* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html)
 >* [Práticas recomendadas para aplicativos de desktop do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
 >* [Experience Manager Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 >* [Integração do Experience Manager e Adobe Stock](aem-assets-adobe-stock.md)

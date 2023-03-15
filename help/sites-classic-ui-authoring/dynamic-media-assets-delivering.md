@@ -1,6 +1,6 @@
 ---
-title: Entregar ativos do Dynamic Media na criação clássica do Sites
-description: Com o Dynamic Media, você tem várias opções para entregar seus ativos do Dynamic Media — de vídeo e imagens — ao seu site.
+title: Fornecer ativos do Dynamic Media na criação do Sites Classic
+description: Com o Dynamic Media, você tem várias opções para fornecer seus ativos do Dynamic Media - vídeo e imagens - ao seu site.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
@@ -15,12 +15,12 @@ ht-degree: 15%
 
 # Entregar ativos do Dynamic Media{#delivering-dynamic-media-assets}
 
-A maneira de fornecer os ativos do Dynamic Media — vídeo e imagens — depende de como o site é implementado.
+A maneira de fornecer os ativos da Dynamic Media - vídeo e imagens - depende de como o site está implementado.
 
 Com o Dynamic Media, você tem várias opções:
 
-* Se o seu site estiver hospedado no Adobe Experience Manager, será necessário adicionar os ativos do Dynamic Media diretamente à sua página.
-* Se o site não estiver no Experience Manager, consulte [Entregar ativos do Dynamic Media](/help/assets/delivering-dynamic-media-assets.md) na interface habilitada para toque.
+* Se seu site estiver hospedado no Adobe Experience Manager, você deseja adicionar os ativos do Dynamic Media diretamente à sua página.
+* Se o seu site não estiver no Experience Manager, consulte [Fornecer ativos da Dynamic Media](/help/assets/delivering-dynamic-media-assets.md) na interface de usuário habilitada para toque.
 
 Para obter mais informações, consulte os seguintes tópicos:
 

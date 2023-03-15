@@ -48,12 +48,12 @@ Please note that all links to other guides need to be absolute references with l
       + [Criação para headless com AEM - uma introdução](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/author/introduction.html)
       + [Noções básicas de criação para headless com AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/author/basics.html)
       + [Saiba mais sobre como usar referências em Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/author/references.html)
-      + [Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/author/metadata-tagging.html)
+      + [Saiba mais sobre como definir metadados e marcação para Fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/author/metadata-tagging.html)
    + Jornada do arquiteto de conteúdo do Headless {#architect}
       + [Visão geral da jornada do Arquiteto de conteúdo do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/overview.html)
       + [Modelagem de conteúdo para headless com o AEM - uma introdução](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html)
-      + [Saiba o básico sobre a modelagem de conteúdo para headless com AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html)
-      + [Saiba mais sobre criação de modelos de fragmento de conteúdo no AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
+      + [Saiba o básico sobre a modelagem de conteúdo para headless com o AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html)
+      + [Saiba mais sobre criação de Modelos de fragmento de conteúdo no AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
    + Jornada de tradução headless {#translation}
       + [Entender a tradução headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/overview.html)
       + [Introdução à tradução do AEM headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/getting-started.html)

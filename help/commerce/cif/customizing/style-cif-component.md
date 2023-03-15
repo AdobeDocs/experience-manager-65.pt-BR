@@ -479,7 +479,7 @@ Utilize o [Sistema de estilo do AEM](/help/sites-authoring/style-system.md) para
 
 * [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype)
 * [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components)
-* [Configurar um Ambiente de desenvolvimento do AEM local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [Configurar um Ambiente de desenvolvimento do AEM local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR)
 * [Bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md)
 * [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
-* [Desenvolvimento com o sistema de estilo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html)
+* [Desenvolvimento com o sistema de estilo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=pt-BR)

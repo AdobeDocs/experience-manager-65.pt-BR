@@ -1,7 +1,7 @@
 ---
 title: Ferramentas de Modernização do AEM
 seo-title: AEM Modernization Tools
-description: Ferramentas de Modernização do AEM ajuda a converter os recursos de AEM herdados para a tecnologia mais recente
+description: AEM Ferramentas de Modernização ajudam a converter seus recursos AEM herdados para a tecnologia mais recente
 seo-description: AEM Modernization Tools help you easily convert your legacy AEM features to the latest technology
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,7 +9,7 @@ exl-id: 8865a641-fdac-43ab-b1c3-722f120cd749
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 87%
+ht-degree: 83%
 
 ---
 

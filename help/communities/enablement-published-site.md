@@ -104,11 +104,11 @@ Cada atribuição fornece informações básicas sobre:
 
 O tipo de Atribuição é indicado por um ícone no canto superior esquerdo do cartão. A imagem de uma estrada é para um caminho de aprendizagem com o número de recursos de capacitação incluídos.
 
-![atribuição1](assets/assignment1.png)
+![assignment1](assets/assignment1.png)
 
 Selecionar *Lições de Esqui* exibirá os dois recursos de habilitação referenciados pelo caminho de aprendizado.
 
-![atribuição2](assets/assignment2.png)
+![assignment2](assets/assignment2.png)
 
 Selecionar *Lição de Esqui 1* abrirá a página de detalhes do recurso de ativação.
 
@@ -116,7 +116,7 @@ Na página de detalhes, o membro pode aprender, [rate](rating.md) a lição e ad
 
 As interações com o recurso de ativação serão anotadas na seção Relatório , acessível no ambiente do autor.
 
-![atribuição3](assets/assignment3.png)
+![assignment3](assets/assignment3.png)
 
 ### Catálogo de esqui {#ski-catalog}
 

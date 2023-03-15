@@ -236,7 +236,7 @@ Quando você [criou um template de delivery de email específico de AEM,](#aem-e
 
 1. Certifique-se de que **Ativado** estiver marcada e, em seguida, clicar em **Salvar** para salvar as alterações.
 
-Parabéns. Você concluiu a integração entre o AEM e o Adobe Campaign Standard!
+Parabéns! Você concluiu a integração entre o AEM e o Adobe Campaign Standard!
 
 ## Próximas etapas {#next-steps}
 

@@ -129,7 +129,7 @@ A maneira como um repositório de conteúdo é estruturado também pode afetar o
 
 Seus melhores amigos durante um exercício normal de otimização de desempenho são:
 
-* As ações `request.log`
+* O `request.log`
 * Tempo baseado em componentes
 * Por último, mas não menos importante, um profiler java.
 
@@ -400,15 +400,15 @@ Testar os componentes em combinação oferece uma reflexão mais próxima do com
 | Cenário | Componente | Não. de usuários | Tx/s (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
 | Média mista | Página inicial | 10 | 1 |  |  |
-|  | Pesquisar | 10º | 1 |  |  |
-|  | Notícias | 10º | 2 |  |  |
-|  | Eventos | 10º | 1 |  |  |
-|  | Ativations | 10º | 3 |  | Simulação do comportamento do autor. |
+|  | Pesquisar | 10 | 1 |  |  |
+|  | Notícias | 10 | 2 |  |  |
+|  | Eventos | 10 | 1 |  |  |
+|  | Ativations | 10 | 3 |  | Simulação do comportamento do autor. |
 | Pico misto | Página inicial | 100 | 5 |  |  |
 |  | Pesquisar | 50 | 5 |  |  |
-|  | Notícias | 100 | 10º |  |  |
-|  | Eventos | 100 | 10º |  |  |
-|  | Ativations | 20 | 20º |  | Simulação do comportamento do autor. |
+|  | Notícias | 100 | 10 |  |  |
+|  | Eventos | 100 | 10 |  |  |
+|  | Ativations | 20 | 20 |  | Simulação do comportamento do autor. |
 
 #### Indo para testes em tempo real {#going-live-tests}
 
@@ -416,11 +416,11 @@ Durante os primeiros dias após o seu site ser disponibilizado, você pode esper
 
 | Cenário | Tipo de teste | Não. de usuários | Tx/s (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
-| Pico em tempo real | Página inicial | 200 | 20º |  |  |
-|  | Pesquisar | 100 | 10º |  |  |
-|  | Notícias | 200 | 20º |  |  |
-|  | Eventos | 200 | 20º |  |  |
-|  | Ativations | 20º | 20º |  | Simulação do comportamento do autor. |
+| Pico em tempo real | Página inicial | 200 | 20 |  |  |
+|  | Pesquisar | 100 | 10 |  |  |
+|  | Notícias | 200 | 20 |  |  |
+|  | Eventos | 200 | 20 |  |  |
+|  | Ativations | 20 | 20 |  | Simulação do comportamento do autor. |
 
 #### Testes de cenário de erro {#error-scenario-tests}
 
@@ -433,10 +433,10 @@ Ao elaborar esses testes, deve-se lembrar que nem todos os cenários ocorrerão 
 
 | Cenário de erro | Tipo de erro | Não. de usuários | Tx/s (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
-| Sobrecarga do componente de pesquisa | Pesquisar no curinga global (asterisco) | 10º | 1 |  | Apenas &amp;ast;&amp;ast;&amp;ast; são pesquisados. |
-|  | Palavra de interrupção | 20º | 2 |  | Procurando uma palavra de parada. |
-|  | Sequência de caracteres vazia | 10º | 1 |  | Procurando uma string vazia. |
-|  | Caracteres especiais | 10º | 1 |  | Pesquisando caracteres especiais. |
+| Sobrecarga do componente de pesquisa | Pesquisar no curinga global (asterisco) | 10 | 1 |  | Apenas &amp;ast;&amp;ast;&amp;ast; são pesquisados. |
+|  | Palavra de interrupção | 20 | 2 |  | Procurando uma palavra de parada. |
+|  | Sequência de caracteres vazia | 10 | 1 |  | Procurando uma string vazia. |
+|  | Caracteres especiais | 10 | 1 |  | Pesquisando caracteres especiais. |
 
 #### Testes de resistência {#endurance-tests}
 
@@ -444,10 +444,10 @@ Certos problemas só serão encontrados depois de o sistema estar em funcionamen
 
 | Cenário | Tipo de teste | Não. de usuários | Tx/s (Esperado) | Tx/s (Testado) | Descrição |
 |---|---|---|---|---|---|
-| Ensaio de resistência (72 horas) | Página inicial | 10º | 1 |  |  |
-|  | Pesquisar | 10º | 1 |  |  |
-|  | Notícias | 20º | 2 |  |  |
-|  | Eventos | 10º | 1 |  |  |
+| Ensaio de resistência (72 horas) | Página inicial | 10 | 1 |  |  |
+|  | Pesquisar | 10 | 1 |  |  |
+|  | Notícias | 20 | 2 |  |  |
+|  | Eventos | 10 | 1 |  |  |
 |  | Ativations | 1 | 3 |  | Simulação do comportamento do autor. |
 
 ### Otimização {#optimization}
@@ -615,7 +615,7 @@ Para páginas que não são modificadas, as imagens ainda permanecem no cache, e
 Se você personalizar cada página (por exemplo, colocando o nome do usuário na barra de título), isso pode afetar o desempenho.
 
 >[!TIP]
->Para armazenar conteúdo protegido em cache, consulte [Armazenamento em cache de conteúdo protegido](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) no guia do Dispatcher.
+>Para armazenar conteúdo protegido em cache, consulte [Armazenamento em cache de conteúdo protegido](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=pt-BR) no guia do Dispatcher.
 
 Com relação à mistura de conteúdo restrito e público em uma página, você pode considerar uma estratégia que aproveita as inclusões do lado do servidor no Dispatcher ou as inclusões do lado do cliente por meio do Ajax no navegador.
 
@@ -675,7 +675,7 @@ A tabela a seguir ilustra o tamanho dos volumes de dados usados nos benchmarks d
 
 | Conteúdo | Nós | Páginas | Imagens | Tags |
 |---|---|---|---|---|
-| Instalação base | 69.610 | 562 | 256 | 237 |
+| Instalação base | 69 610 | 562 | 256 | 237 |
 | Conteúdo pequeno para backup incremental |  | +100 | +2 | +2 |
 | Conteúdo grande para backup completo |  | +10 000 | +100 | +100 |
 

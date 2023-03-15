@@ -296,7 +296,7 @@ Para a variação do Fragmento de experiência afetada pelo processo de regrava�
 Como entrada, o método recebe os parâmetros:
 
 * `link`
-As ações 
+O 
 `String` representação do link que está sendo processado no momento. Normalmente, é um URL relativo que aponta para o recurso na instância do autor.
 
 * `tag`

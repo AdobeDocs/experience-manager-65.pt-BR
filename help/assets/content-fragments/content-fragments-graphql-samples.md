@@ -1630,7 +1630,7 @@ Para o exemplo de consultas, usaremos os seguintes Modelos de conteúdo e suas i
 
 * [Empresa](#model-company)
 -> [Pessoa](#model-person)
-    -> [Prêmio](#model-award)
+-> [Prêmio](#model-award)
 
 * [Cidade](#model-city)
 
@@ -1641,7 +1641,7 @@ Os campos básicos que definem a empresa são:
 | Nome do campo | Tipo de dados | Referência |
 |--- |--- |--- |
 | Nome da empresa | Texto em linha única |  |
-| CEO | Referência do fragmento (único) | [Person](#model-person) |
+| CEO | Referência do fragmento (único) | [Pessoa](#model-person) |
 | Empregados | Referência do fragmento (vários campos) | [Pessoa](#model-person) |
 
 #### Pessoa {#model-person}
@@ -1717,4 +1717,4 @@ Os fragmentos a seguir são usados para o modelo apropriado.
 | São Francisco |  EUA |  883306 |  city:beach<br>city:na |
 | San Jose |  EUA |  102635 |  city:na |
 | Stuttgart |  Alemanha |  634830 |  city:emea |
-|  Zurique |  Suíça |  415367 |  cidade:capital<br>cidade:emea |
+|  Zurique |  Suíça |  415367 |  city:capital<br>city:emea |

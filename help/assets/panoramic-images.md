@@ -24,7 +24,7 @@ Esta seção descreve como trabalhar com o visualizador de Imagem panorâmica pa
 
 Consulte também [Gerenciar predefinições do visualizador](/help/assets/managing-viewer-presets.md).
 
-![panorâmica-imagem2](assets/panoramic-image2.png)
+![panoramic-image2](assets/panoramic-image2.png)
 
 ## Fazer upload de ativos para usar com o visualizador de Imagem panorâmica {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 

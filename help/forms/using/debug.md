@@ -163,7 +163,7 @@ Verifique os seguintes parâmetros:
    <td><strong>Descrição</strong></td>
   </tr>
   <tr>
-   <td>modelo</td>
+   <td>template</td>
    <td>O nome do arquivo do modelo</td>
   </tr>
   <tr>
@@ -175,7 +175,7 @@ Verifique os seguintes parâmetros:
    <td>Caminho absoluto do arquivo de dados que é unido ao modelo.<br /> Observação: Path define o caminho absoluto do arquivo de dados.</td>
   </tr>
   <tr>
-   <td>dados</td>
+   <td>data</td>
    <td>Bytes de dados codificados UTF-8 que são mesclados com o modelo.</td>
   </tr>
  </tbody>

@@ -8,7 +8,7 @@ exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
 source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
@@ -22,7 +22,7 @@ Também é possível adicionar outras guias à [!DNL Assets] painel administrado
 
 >[!CAUTION]
 >
->Em [!DNL Experience Manager] 6.4, a interface do usuário clássica está obsoleta. Para o anúncio, consulte [recursos obsoletos e removidos](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). O Adobe recomenda usar a interface habilitada para toque. Para personalização, consulte [aspectos de pesquisa](/help/assets/search-facets.md).
+>Em [!DNL Experience Manager] 6.4, a interface do usuário clássica está obsoleta. Para o anúncio, consulte [recursos obsoletos e removidos](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=pt-BR). O Adobe recomenda usar a interface habilitada para toque. Para personalização, consulte [aspectos de pesquisa](/help/assets/search-facets.md).
 
 ## Sobreposição {#overlaying}
 

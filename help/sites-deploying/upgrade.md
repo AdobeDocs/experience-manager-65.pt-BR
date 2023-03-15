@@ -25,7 +25,7 @@ Nesta seção, cobrimos a atualização de uma instalação AEM para AEM 6.5:
 * [Avaliação da complexidade da atualização com o Detector de padrões](/help/sites-deploying/pattern-detector.md)
 * [Compatibilidade com versões anteriores no AEM 6.5](/help/sites-deploying/backward-compatibility.md)
 
-<!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+   <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 * [Procedimento de atualização](/help/sites-deploying/upgrade-procedure.md)
 * [Atualização de código e personalizações](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [Tarefas de manutenção de pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)

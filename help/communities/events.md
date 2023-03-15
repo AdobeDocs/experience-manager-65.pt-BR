@@ -25,7 +25,7 @@ Quando os membros interagem com os recursos das Comunidades, os eventos OSGi sã
 
 Um componente [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) A instância registra os eventos como `actions` que ocorrem para um `topic`. O SocialEvent inclui um método para retornar um `verb` associada à ação. Existe um *n-1* relação entre `actions` e `verbs`.
 
-Para os componentes das Comunidades entregues na versão, as tabelas a seguir descrevem o `verbs` definido para cada `topic` disponível para uso.
+Para os componentes Comunidades entregues na versão, as tabelas a seguir descrevem a `verbs` definido para cada `topic` disponível para uso.
 
 ## Tópicos e verbos {#topics-and-verbs}
 

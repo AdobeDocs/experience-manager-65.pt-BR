@@ -52,43 +52,43 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
 |---|---|
 | **Novas localizações** | `/libs/fd/af/authoring/clientlibs` |
 | **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas de clientes que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em novos ativos. |
-| **Notas** | N/D |
+| **Notas** | N/A |
 
 | **Localização anterior** | `/etc/clientlibs/fd/xfaforms` |
 |---|---|
 | **Novas localizações** | `/libs/fd/xfaforms/clientlibs/` |
 | **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas de clientes que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em novos ativos. |
-| **Notas** | N/D |
+| **Notas** | N/A |
 
 | **Localização anterior** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **Novas localizações** | `/libs/fd/af/runtime/clientlibs` |
 | **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas de clientes que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em novos ativos. |
-| **Notas** | N/D |
+| **Notas** | N/A |
 
 | **Localização anterior** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **Novas localizações** | `/libs/fd/af/runtime/clientlibs` |
 | **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas de clientes que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em novos ativos. |
-| **Notas** | N/D |
+| **Notas** | N/A |
 
 | **Localização anterior** | `/etc/clientlibs/fd/expeditor` |
 |---|---|
 | **Novas localizações** | `/libs/fd/expeditor/clientlibs` |
 | **Orientação relativa à reestruturação** | Para os recursos nas bibliotecas de clientes que podem ser referenciados por caminhos absolutos, é necessário usar caminhos mais recentes em novos ativos. |
-| **Notas** | N/D |
+| **Notas** | N/A |
 
 | **Localização anterior** | `/etc/clientlibs/fd/fmaddon` |
 |---|---|
 | **Novas localizações** | `/libs/fd/fmaddon` |
 | **Orientação relativa à reestruturação** | A alteração dessas clientlibs nunca foi recomendada ou suportada. Se as modificações tiverem sido feitas nessas clientlibs, elas deverão ser revertidas para usar o código fornecido pelo AEM. |
-| **Notas** | N/D |
+| **Notas** | N/A |
 
 | **Localização anterior** | `/etc/aep` |
 |---|---|
 | **Novas localizações** | `/var/fd/content/annotations` |
 | **Orientação relativa à reestruturação** | A alteração dessas clientlibs nunca foi recomendada ou suportada. Se as modificações tiverem sido feitas nessas clientlibs, elas deverão ser revertidas para usar o código fornecido pelo AEM. |
-| **Notas** | N/D |
+| **Notas** | N/A |
 
 ## Antes da atualização futura {#prior-to-upgrade}
 
@@ -98,7 +98,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
 |---|---|
 | **Novas localizações** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
 | **Orientação relativa à reestruturação** | O [Migração de conteúdo ocioso](/help/sites-deploying/lazy-content-migration.md) para ser acionado na interface do usuário de migração do Forms. |
-| **Notas** | N/D |
+| **Notas** | N/A |
 
 ### Configurações de Cloud Service Recaptcha {#recaptcha-cloud-service-configurations}
 
@@ -106,7 +106,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
 |---|---|
 | **Novas localizações** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
 | **Orientação relativa à reestruturação** | O [Migração de conteúdo ocioso](/help/sites-deploying/lazy-content-migration.md) para ser acionado na interface do usuário de migração do Forms. |
-| **Notas** | N/D |
+| **Notas** | N/A |
 
 ### Configurações do Cloud Service do Typekit {#typekit-cloud-service-configurations}
 
@@ -114,7 +114,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
 |---|---|
 | **Novas localizações** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
 | **Orientação relativa à reestruturação** | O [Migração de conteúdo ocioso](/help/sites-deploying/lazy-content-migration.md) para ser acionado na interface do usuário de migração do Forms. |
-| **Notas** | N/D |
+| **Notas** | N/A |
 
 ### Misc {#misc-1}
 
@@ -122,10 +122,10 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
 |---|---|
 | **Novas localizações** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
 | **Orientação relativa à reestruturação** | O [Migração de conteúdo ocioso](/help/sites-deploying/lazy-content-migration.md) para ser acionado na interface do usuário de migração do Forms. |
-| **Notas** | N/D |
+| **Notas** | N/A |
 
 | **Localização anterior** | `/etc/designs/fd/fp` |
 |---|---|
 | **Novas localizações** | `/libs/fd/fp` |
 | **Orientação relativa à reestruturação** | Quaisquer referências aos modelos /etc devem eventualmente ser atualizadas para apontar para seus `/libs` Contrapartes. |
-| **Notas** | N/D |
+| **Notas** | N/A |

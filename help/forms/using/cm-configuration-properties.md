@@ -34,19 +34,19 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   <tr>
    <td><p>Recuo</p> </td>
    <td>Recuo em módulos<p> </p> </td>
-   <td><p>12,7 mm</p> </td>
+   <td><p>12.7mm</p> </td>
    <td><p>Qualquer número</p> </td>
   </tr>
   <tr>
    <td>Largura mínima do número</td>
    <td>Largura mínima a ser aplicada no campo marcador/número, ao usar Listas numeradas além de números romanos</td>
-   <td>8,0 mm</td>
+   <td>8.0mm</td>
    <td>Qualquer número</td>
   </tr>
   <tr>
    <td><p>Largura mínima dos números romanos</p> </td>
    <td><p>Largura mínima a ser aplicada no campo marcador/número, ao usar números romanos</p> </td>
-   <td><p>12,7 mm</p> </td>
+   <td><p>12.7mm</p> </td>
    <td><p>Qualquer número</p> </td>
   </tr>
   <tr>
@@ -161,7 +161,7 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
    <td><p>Formato de edição de dados</p> </td>
    <td><p>Editar formato para dados. Isso é usado ao gravar dados como String ou analisar dados de String</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>—<p> </p> </td>
+   <td>--<p> </p> </td>
   </tr>
   <tr>
    <td><p>Gerenciar instâncias de carta na publicação</p> </td>
@@ -244,7 +244,7 @@ O Gerenciamento de correspondência tem as seguintes propriedades de configuraç
   <tr>
    <td><p>Raiz do usuário do CM</p> </td>
    <td><p>URL da pasta que contém todos os ativos de usuário do Gerenciamento de correspondência</p> </td>
-   <td><p>—</p> </td>
+   <td><p>--</p> </td>
    <td><p>Local de pasta válido</p> </td>
   </tr>
   <tr>

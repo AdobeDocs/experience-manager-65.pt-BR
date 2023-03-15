@@ -262,7 +262,7 @@ Para acessar a interface do seletor de ativos, acesse `https://[aem_server]:[por
 
 *Figura: Procure e selecione ativo no seletor de ativos.*
 
-## Limitações           {#limitations}
+## Limitações {#limitations}
 
 O recurso de pesquisa em [!DNL Experience Manager Assets] tem as seguintes limitações:
 

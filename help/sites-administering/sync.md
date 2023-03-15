@@ -515,7 +515,7 @@ O usuário autorizado deve ter explicitamente os seguintes privilégios e restri
 
 Como membro do `administrators` , o usuário autorizado deve ter os seguintes privilégios em todas as instâncias de publicação:
 
-| **caminho** | **jcr:all** | **jcr:read** | **rep:write** |
+| **path** | **jcr:all** | **jcr:read** | **rep:write** |
 |---|---|---|---|
 | /etc/packages/sling/distribution |  |  | X |
 | /libs/sling/distribution |  | X |  |
