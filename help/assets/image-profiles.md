@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 32ff13dbf8fbf17258a3df21b86575fa65c4ceeb
+source-git-commit: bbb64f44c80e96bafcd53277f6d753d84acf5189
 workflow-type: tm+mt
-source-wordcount: '3008'
-ht-degree: 7%
+source-wordcount: '3047'
+ht-degree: 6%
 
 ---
 
@@ -45,12 +45,21 @@ Cada geração de Corte inteligente que você cria requer processamento extra. P
 **Diretrizes para definir o Recorte inteligente em um perfil de imagem**
 Para manter o uso do Smart Crop sob controle e otimizar o tempo de processamento e o armazenamento de colheitas, o Adobe recomenda as seguintes diretrizes e dicas:
 
-* Os ativos de imagem que terão um recorte inteligente aplicado a eles devem ter no mínimo 50 x 50 pixels ou mais. <!-- CQDOC-20087 -->
-* Não é permitido um Perfil de imagem que contenha dimensões de recorte inteligente duplicadas. <!-- CQDOC-20087 -->
-* Não são permitidos perfis de imagem com nome duplicado que tenham opções de recorte inteligente definidas. <!-- CQDOC-20087 -->
+* Evite criar perfis de recorte inteligente duplicados que tenham os mesmos valores de largura e altura.
+* Nomeie as culturas inteligentes com base em dimensões de corte, não no uso final. Isso ajuda a otimizar para duplicatas, onde uma única dimensão é usada em várias páginas.
+* Crie perfis de imagem em toda a página/no tipo de ativo para pastas e subpastas específicas em vez de um perfil de recorte inteligente comum aplicado a todas as pastas ou a todos os ativos.
+* Um perfil de Imagem aplicado às subpastas substitui um perfil de Imagem aplicado à pasta.
 * Crie Perfis de imagem em toda a página/no tipo de ativo para pastas e subpastas específicas, em vez de um perfil de recorte inteligente comum que é aplicado a todas as pastas ou a todos os ativos.
 * Um Perfil de imagem aplicado às subpastas substitui um Perfil de imagem que é aplicado à pasta.
 * Idealmente, tenha 10 a 15 recortes inteligentes por imagem para otimizar as taxas de tela e o tempo de processamento.
+
+<!--
+* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger. CQDOC-20087
+* An Image Profile that contains duplicate smart crop dimensions is not permitted. CQDOC-20087
+* Duplicate named Image Profiles that have smart crop options set are not permitted. CQDOC-20087
+* Create page-wise/asset type-wise Image Profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
+* An Image Profile that you apply to subfolders overrides an Image Profile that is applied to the folder.
+* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time. -->
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
@@ -101,7 +110,7 @@ Consulte também [Práticas recomendadas para organizar ativos digitais para usa
 
    Consulte também [Opções de recorte inteligente e amostra inteligente](#crop-options) e [Tirar nitidez da máscara](#unsharp-mask).
 
-   ![cortar](assets/crop.png)
+   ![cultura](assets/crop.png)
 
 1. Selecione **[!UICONTROL Salvar]**. O perfil recém-criado aparece na lista de perfis disponíveis.
 
@@ -157,7 +166,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
 Além de aplicar um perfil a uma pasta, também é possível aplicar um globalmente para que qualquer conteúdo carregado nos ativos do Experience Manager em qualquer pasta tenha o perfil selecionado aplicado.
 
-Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você alterou posteriormente. Consulte o [reprocessando de ativos em uma pasta após a edição do perfil de processamento](processing-profiles.md#reprocessing-assets).
+Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você alterou posteriormente. Consulte [Reprocessando ativos em uma pasta depois de ter editado seu perfil de processamento](processing-profiles.md#reprocessing-assets).
 
 **Para aplicar um Perfil de imagem do Dynamic Media globalmente:**
 
