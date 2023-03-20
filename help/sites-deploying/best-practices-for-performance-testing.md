@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
@@ -55,10 +55,10 @@ Há muitas ferramentas de teste de desempenho disponíveis comercialmente no mer
 
 #### Ferramentas de teste {#testing-tools}
 
-* Adobe&#39;s **Dia difícil** A ferramenta pode ser usada para gerar carga em instâncias AEM e coletar dados de desempenho. A equipe de engenharia de AEM da Adobe usa a ferramenta para fazer o teste de carregamento do próprio produto AEM. Os scripts executados em Tough Day são configurados por meio de arquivos de propriedade e arquivos XML JMX. Para obter mais informações, consulte o [Documentação do Dia difícil](/help/sites-developing/tough-day.md).
+* Adobe **Dia difícil** A ferramenta pode ser usada para gerar carga em instâncias AEM e coletar dados de desempenho. A equipe de engenharia do Adobe usa o teste de carga do próprio produto. Os scripts executados em Tough Day são configurados por meio de arquivos de propriedade e arquivos XML JMX. Para obter mais informações, consulte o [Documentação do Dia difícil](/help/sites-developing/tough-day.md).
 
 * AEM fornece ferramentas prontas para uso para ver rapidamente consultas, solicitações e mensagens de erro problemáticas. Para obter mais informações, consulte o [Ferramentas de diagnóstico](/help/sites-administering/operations-dashboard.md#diagnosis-tools) seção da documentação do Painel de operações.
-* O Apache fornece um produto chamado **JMeter** que podem ser usados para testes de desempenho e carga, bem como comportamento funcional. Ele é um software de código aberto e gratuito, mas tem um conjunto de recursos menor do que os produtos corporativos e uma curva de aprendizado mais acentuada. O JMeter pode ser encontrado no site da Apache em [https://jmeter.apache.org/](https://jmeter.apache.org/)
+* O Apache fornece um produto chamado **JMeter** que podem ser usados para testes de desempenho e carga, bem como comportamento funcional. Ele é um software de código aberto e gratuito, mas tem um conjunto de recursos menor do que os produtos corporativos e uma curva de aprendizado mais acentuada. O JMeter pode ser encontrado no site do Apache em [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
 * **Carregar Executador** é um produto de teste de carga de nível empresarial. Uma versão de avaliação gratuita está disponível. Mais informações podem ser encontradas em [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
 
@@ -76,7 +76,7 @@ O [Monitorar desempenho](/help/sites-deploying/monitoring-and-maintaining.md#mon
 
 **Modo de desenvolvedor na interface do usuário de toque**
 
-Um dos novos recursos na interface de toque do AEM 6 é o Modo do desenvolvedor. Da mesma forma que os autores podem alternar entre os modos de edição e visualização, os desenvolvedores podem alternar para o modo desenvolvedor na interface do autor para ver o tempo de renderização de cada um dos componentes na página e ver rastreamentos de pilha de quaisquer erros. Para obter mais informações sobre o modo de desenvolvedor, consulte este [Apresentação de Gems CQ](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+Um dos novos recursos na interface de toque do AEM 6 é o Modo de desenvolvedor. Da mesma forma que os autores podem alternar entre os modos de edição e visualização, os desenvolvedores podem alternar para o modo desenvolvedor na interface do autor para ver o tempo de renderização de cada um dos componentes na página e ver rastreamentos de pilha de quaisquer erros. Para obter mais informações sobre o modo de desenvolvedor, consulte este [Apresentação de Gems CQ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
 
 **Usar o rlog.jar para ler os logs de solicitação**
 
@@ -88,7 +88,7 @@ O [Explique a ferramenta Query](/help/sites-administering/operations-dashboard.m
 
 **Ferramentas PageSpeed**
 
-As ferramentas PageSpeed da Google oferecem análise do site para seguir as práticas recomendadas para o desempenho da página, bem como um plug-in que pode ser instalado junto com o dispatcher em uma instância do Apache para obter otimizações adicionais. Para obter mais informações, consulte o [Site de ferramentas do PageSpeed](https://developers.google.com/speed/pagespeed/).
+As ferramentas Google PageSpeed oferecem análise do site para seguir as práticas recomendadas de desempenho da página, bem como um plug-in que pode ser instalado junto com o dispatcher em uma instância do Apache para obter otimizações adicionais. Para obter mais informações, consulte o [Site de ferramentas do PageSpeed](https://developers.google.com/speed/pagespeed/).
 
 ## Ambiente de criação {#author-environment}
 

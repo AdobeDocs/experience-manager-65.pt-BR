@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1200'
 ht-degree: 5%
 
 ---
@@ -273,7 +273,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
   <tr>
    <td><strong>Etapas 37 e 38</strong></td>
    <td>Carregamento lento</td>
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Consulte a Sessão Gem em Desempenho AEM Web.</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">Consulte a Sessão Gem em Desempenho AEM Web.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Etapa 39</strong></td>
@@ -293,7 +293,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
   <tr>
    <td><strong>Etapa 49</strong></td>
    <td>Reduzir tamanho da carga</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Ativar o Gzip</a> e <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">reduzir o tamanho da imagem</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Ativar o Gzip</a> e <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">reduzir o tamanho da imagem</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Etapas 42 e 43</strong></td>
@@ -325,7 +325,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (dispatche
   <tr>
    <td><strong>Etapas 50 e 51</strong></td>
    <td>Bloqueio de código JS</td>
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">https://docs.adobe.com/ddc/en/gems/aem-web-performance.html</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en</a></td>
   </tr>
  </tbody>
 </table>

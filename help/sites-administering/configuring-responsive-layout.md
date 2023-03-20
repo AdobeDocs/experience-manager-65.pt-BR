@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 9%
+source-wordcount: '1288'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ O AEM permite um layout responsivo para suas páginas usando uma combinação de
 
 * Componente [**Contêiner de layout**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
-   Este componente fornece um sistema de parágrafo que usa grades, para que você possa adicionar e posicionar componentes dentro de uma grade responsiva . Ele pode ser usado como o parsys padrão para sua página e/ou disponibilizado para autores no navegador de componentes.
+   Este componente fornece um sistema de parágrafo de grade para que você possa adicionar e posicionar componentes em uma grade responsiva. Ele pode ser usado como o parsys padrão para sua página e/ou disponibilizado para autores no navegador de componentes.
 
    * O padrão **Contêiner de layout** O componente é definido em:
 
@@ -49,13 +49,13 @@ Depois que o contêiner de layout é posicionado na página, você pode usar a v
 **Layout** modo para posicionar conteúdo na grade responsiva.
 
 * [**Emulador**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
-Permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. O usuário pode observar como o conteúdo será renderizado utilizando o Emulador.
+Isso permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. O usuário pode então ver como o conteúdo é renderizado usando o Emulador.
 
 >[!CAUTION]
 >
 >Embora a variável **Contêiner de layout** estiver disponível na interface clássica, a funcionalidade completa só estará disponível na interface habilitada para toque.
 
-Com estes mecanismos de grade responsivos você pode:
+Com esses mecanismos de grade responsivos você pode:
 
 * Use pontos de interrupção (que indicam agrupamento de dispositivos) para definir um comportamento de conteúdo diferente com base no layout do dispositivo.
 * Ocultar componentes com base no grupo de dispositivos (definir em qual ponto de interrupção um componente ficará oculto).
@@ -80,7 +80,7 @@ Para especificar os grupos de dispositivos que aparecem na lista Dispositivos do
 
 ### Vincule seu site aos grupos de dispositivos especificados {#link-your-site-to-the-specified-device-groups}
 
-Para incluir o emulador, você precisa vincular seu site aos grupos de dispositivos. Consulte [Adicionar a lista de dispositivos](/help/sites-developing/responsive.md#adding-the-devices-list) (para a interface clássica e a interface otimizada para toque).
+Para incluir o emulador, vincule seu site aos grupos de dispositivos. Consulte [Adicionar a lista de dispositivos](/help/sites-developing/responsive.md#adding-the-devices-list) (para a interface clássica e a interface otimizada para toque).
 
 ## Ativar o modo de layout para seu site {#activate-layout-mode-for-your-site}
 
@@ -93,8 +93,8 @@ Esses procedimentos são usados para ativar a variável **Layout** no seu site.
 * São usadas em design responsivo.
 * Pode ser definido:
 
-   * No modelo da página, de onde as configurações serão copiadas para qualquer página criada com esse modelo.
-   * No nó da página, de onde as configurações serão herdadas por qualquer página secundária.
+   * No modelo da página, de onde as configurações são copiadas para qualquer página criada com esse modelo.
+   * No nó da página, de onde as configurações são herdadas por qualquer página secundária.
 
 * Defina um título e uma largura:
 
@@ -111,7 +111,7 @@ Eles podem ser definidos usando CRXDE Lite ou XML.
 >
 >Se você estiver configurando um novo projeto:
 >
->* é necessário adicionar pontos de interrupção aos modelos.
+>* adicionar pontos de interrupção aos modelos.
 >
 >Se você estiver migrando um projeto existente (com conteúdo existente), será necessário:
 >
@@ -175,7 +175,7 @@ Esses procedimentos são necessários para que você possa redimensionar os comp
 
 ### Definir Contêiner de Layout como Parsys Principal {#set-layout-container-as-main-parsys}
 
-Para definir o parsys principal de sua página como um contêiner de layout, você precisa definir o parsys como:
+Para definir o parsys principal de sua página como um contêiner de layout, defina o parsys como:
 
 `wcm/foundation/components/responsivegrid`
 
@@ -204,7 +204,7 @@ Os dois exemplos a seguir ilustram a definição:
 
 AEM usa MENOS para gerar partes do CSS necessário, que precisam ser incluídas em seus projetos.
 
-Você também precisará criar um [biblioteca do cliente](https://docs.adobe.com/content/docs/en/aem/6-0/develop/the-basics/clientlibs.html) para fornecer configuração e chamadas de função adicionais. A seguinte extração MENOS é um exemplo do mínimo que você precisa adicionar ao seu projeto:
+Você também deverá criar um [biblioteca do cliente](https://experienceleague.adobe.com/docs/) para fornecer configuração e chamadas de função adicionais. A seguinte extração MENOS é um exemplo do mínimo que deve ser adicionado ao projeto:
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -238,7 +238,7 @@ A definição da grade base pode ser encontrada em:
 
 #### Considerações sobre estilo {#styling-considerations}
 
-Os componentes mantidos em um contêiner responsivo serão redimensionados (junto com seus respectivos elementos HTML DOM) de acordo com o tamanho da grade responsiva. Portanto, nessas circunstâncias, é recomendável evitar (ou atualizar) definições de elementos DOM de largura fixa (contidos).
+Os componentes mantidos em um contêiner responsivo são redimensionados (junto com seus respectivos elementos HTML DOM) de acordo com o tamanho da grade responsiva. Portanto, nessas circunstâncias, é recomendável evitar (ou atualizar) definições de elementos DOM de largura fixa (contidos).
 
 Por exemplo:
 

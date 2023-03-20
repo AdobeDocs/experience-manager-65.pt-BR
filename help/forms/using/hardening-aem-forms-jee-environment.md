@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: d2661ee6614261179b5e8d2d9ffb7c240ce676dc
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 1%
@@ -519,7 +519,7 @@ Determinados URLs são destacados como aplicativos da Web voltados para o usuár
    <td><p>Sim</p> </td> 
   </tr> 
   <tr> 
-   <td><p>/espaço de trabalho/*</p> </td> 
+   <td><p>/workspace/*</p> </td> 
    <td><p>Aplicativo Web do usuário final do Workspace</p> </td> 
    <td><p>Sim</p> </td> 
    <td><p>Sim</p> </td> 
@@ -958,7 +958,7 @@ Referência à arquitetura física descrita na seção [AEM Forms na arquitetura
 
 Para obter instruções sobre como configurar o SSL no JBoss, WebLogic e WebSphere, consulte &quot;Configuração do SSL&quot; na [ajuda administrativa](https://www.adobe.com/go/learn_aemforms_admin_64).
 
-Para obter instruções sobre como importar certificados para a JVM (Java Virtual Machine) configurada para um servidor AEM Forms, consulte a seção Autenticação Mútua em [Ajuda do AEM Forms Workbench](http://www.adobe.com/go/learn_aemforms_workbench_65).
+Para obter instruções sobre como importar certificados para a JVM (Java Virtual Machine) configurada para um servidor AEM Forms, consulte a seção Autenticação Mútua em [Ajuda do AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ### Configuração do redirecionamento SSL {#configuring-ssl-redirect}
 

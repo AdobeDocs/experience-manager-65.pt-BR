@@ -11,7 +11,7 @@ discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
 source-wordcount: '3120'
 ht-degree: 1%
@@ -494,7 +494,7 @@ As políticas podem ser selecionadas para:
 
 ### Privilégios {#privileges}
 
-Os seguintes privilégios estão disponíveis para seleção ao adicionar uma entrada de controle de acesso (consulte [API de segurança](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) para mais informações):
+Os seguintes privilégios estão disponíveis para seleção ao adicionar uma entrada de controle de acesso (consulte [API de segurança](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) para mais informações):
 
 <table>
  <tbody>
