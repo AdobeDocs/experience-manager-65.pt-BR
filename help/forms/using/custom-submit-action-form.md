@@ -10,10 +10,10 @@ topic-tags: customization
 discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 0%
+source-wordcount: '1616'
+ht-degree: 1%
 
 ---
 
@@ -53,11 +53,11 @@ Os dados XML são enviados para o servlet usando o **`jcr:data`** parâmetro de 
 
 ### Campos de ação {#action-fields}
 
-Uma ação Enviar pode adicionar campos de entrada ocultos (usando o HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) tag) para o HTML de formulário renderizado. Esses campos ocultos podem conter valores necessários durante o processamento do envio do formulário. Ao enviar o formulário, esses valores de campo são postados como parâmetros de solicitação que a ação Enviar pode usar durante o manuseio de envio. Os campos de entrada são chamados de campos de ação.
+Uma ação Enviar pode adicionar campos de entrada ocultos (usando o HTML [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input) tag) para o HTML de formulário renderizado. Esses campos ocultos podem conter valores necessários durante o processamento do envio do formulário. Ao enviar o formulário, esses valores de campo são postados como parâmetros de solicitação que a ação Enviar pode usar durante o manuseio de envio. Os campos de entrada são chamados de campos de ação.
 
 Por exemplo, uma ação Enviar que também captura o tempo gasto para preencher um formulário pode adicionar os campos de entrada ocultos `startTime` e `endTime`.
 
-Um script pode fornecer os valores da variável `startTime` e `endTime` campos quando o formulário é renderizado e antes do envio do formulário, respectivamente. O script de ação Enviar `post.jsp` O pode então acessar esses campos usando parâmetros de solicitação e calcular o tempo total necessário para preencher o formulário.
+Um script pode fornecer os valores da variável `startTime` e `endTime` campos quando o formulário é renderizado e antes do envio do formulário, respectivamente. O ActionScript Enviar `post.jsp` O pode então acessar esses campos usando parâmetros de solicitação e calcular o tempo total necessário para preencher o formulário.
 
 ### Anexos de arquivo {#file-attachments}
 
@@ -102,7 +102,7 @@ Uma ação Enviar é uma sling:Folder que inclui o seguinte:
 
 ## Criação de uma ação de envio personalizada {#creating-a-custom-submit-action}
 
-Execute as etapas a seguir para criar uma ação de Enviar personalizada que salve os dados no repositório CRX e, em seguida, envie um email para você. O formulário adaptável contém a ação OOTB Submit Store Content (obsoleto) que salva os dados no repositório CRX. Além disso, o CQ fornece uma [Email](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/mailer/package-summary.html) API que pode ser usada para enviar emails. Antes de usar a API de email, [configure](https://docs.adobe.com/docs/en/cq/current/administering/notification.html?wcmmode=disabled#Configuring o serviço de email) o serviço Day CQ Mail por meio do console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (obsoleto) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório CRX.
+Execute as etapas a seguir para criar uma ação de Enviar personalizada que salve os dados no repositório CRX e, em seguida, envie um email para você. O formulário adaptável contém a ação OOTB Submit Store Content (obsoleto) que salva os dados no repositório CRX. Além disso, o CQ fornece uma [Email](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) API que pode ser usada para enviar emails. Antes de usar a API de email, [configure](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR&amp;wcmmode=disabled) o serviço Day CQ Mail através do console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (obsoleto) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório CRX.
 
 1. Faça logon no CRXDE Lite no URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Crie um nó com a propriedade sling:Folder e name store_and_mail na pasta /apps/custom_submit_action. Crie a pasta custom_submit_action se ela ainda não existir.
 
@@ -138,7 +138,7 @@ Execute as etapas a seguir para criar uma ação de Enviar personalizada que sal
 
    Adicione o script post.POST.jsp à sua ação. (/apps/custom_submit_action/store_and_mail/).
 
-   Execute a ação Loja OOTB (script post.POST.jsp). Use o [FormsHelper.runAction](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API que o CQ fornece em seu código para executar a ação Loja. Adicione o seguinte código em seu arquivo JSP:
+   Execute a ação Loja OOTB (script post.POST.jsp). Use o [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API que o CQ fornece em seu código para executar a ação Loja. Adicione o seguinte código em seu arquivo JSP:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 

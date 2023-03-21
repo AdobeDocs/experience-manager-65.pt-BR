@@ -8,9 +8,9 @@ contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1735'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Limite o nome para menos de 53 caracteres. Um nome mais curto ajuda a evitar pro
 
 **ID de usuário:** (Obrigatório) ID de usuário que o usuário usa para fazer logon. A ID de usuário não diferencia maiúsculas e minúsculas e deve ser exclusiva no domínio.
 
-Em domínios corporativos, use um atributo que não seja DN como ID de usuário, pois o DN de um usuário pode ser alterado se for movido para outra parte da organização. Essa configuração depende do servidor de diretório. O valor é `objectGUID` para o Ative Diretory 2003, `nsuniqueID` Sun™ One e `guid` para eDirectory.
+Em domínios corporativos, use um atributo que não seja DN como ID de usuário, pois o DN de um usuário pode ser alterado caso se mova para outra parte da organização. Essa configuração depende do servidor de diretório. O valor é `objectGUID` para o Ative Diretory 2003, `nsuniqueID` Sun™ One e `guid` para eDirectory.
 
 Certifique-se de que a ID do usuário seja exclusiva. Não use um que tenha sido atribuído a um usuário excluído.
 
@@ -90,7 +90,7 @@ AEM formulários não podem diferenciar entre contas de usuário com IDs de usu�
 
 Ao usar o SQL Server como banco de dados, não é possível criar uma ID de usuário que exceda 255 caracteres.
 
-Ao usar o MySQL, a ID do usuário pode conter caracteres estendidos. No entanto, quando uma comparação é feita entre duas strings, como abcde e âbcdè, elas são consideradas iguais. Por exemplo, ao sincronizar, se um novo usuário foi adicionado ao banco de dados, é feita uma comparação para verificar se um usuário com a mesma ID de usuário existe no banco de dados. Se usuário *abcde* já existe no banco de dados quando o novo usuário *âbcdè* for adicionada, a comparação não poderá distinguir entre os dois nomes. Pressupõe-se que o usuário já existe no banco de dados e que o novo usuário seja ignorado e não adicionado.
+Ao usar o MySQL, a ID do usuário pode conter caracteres estendidos. No entanto, quando uma comparação é feita entre duas strings, como abcde e âbcdè, elas são consideradas iguais. Por exemplo, ao sincronizar, se um novo usuário foi adicionado ao banco de dados, é feita uma comparação para verificar se um usuário com a mesma ID de usuário existe no banco de dados. Se usuário *abcde* existe no banco de dados quando o novo usuário *âbcdè* for adicionada, a comparação não poderá distinguir entre os dois nomes. Pressupõe-se que o usuário exista no banco de dados e que o novo usuário seja ignorado e não adicionado.
 
 Evite criar nomes de usuário que comecem com um sinal de número (#). Realizar pesquisas de tarefa não retorna resultados para esses nomes de usuário. (Consulte [Trabalhar com tarefas](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
 
@@ -173,4 +173,4 @@ Se um usuário sem os formulários de AEM necessários e as permissões do CQ, t
 
 O CQ fornece um mecanismo para substituir o manipulador padrão 404 jsp.
 
-Para obter detalhes sobre como personalizar a página de tratamento de erros, consulte [Personalização de páginas mostradas pelo Manipulador de erros](https://docs.adobe.com/docs/en/cq/current/developing/customizing_error_handler_pages.html) na Documentação do Adobe Experience Manager.
+Para obter detalhes sobre como personalizar a página de tratamento de erros, consulte [Personalização de páginas mostradas pelo Manipulador de erros](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=en) na documentação do Adobe Experience Manager.

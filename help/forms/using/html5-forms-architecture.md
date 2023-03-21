@@ -12,10 +12,10 @@ discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 feature: Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
 source-wordcount: '2011'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -33,9 +33,9 @@ A funcionalidade de formulários do HTML5 é implantada como um pacote dentro da
 
 Para obter detalhes sobre o endpoint REST e os parâmetros de solicitação suportados, consulte [Renderizar modelo de formulário](/help/forms/using/rendering-form-template.md).
 
-Quando um usuário faz uma solicitação de um dispositivo cliente, como um navegador iOS ou Android, o Sling primeiro resolve o Nó de perfil com base no URL da solicitação. Neste nó do perfil, ele lê **sling:resourceSuperType** e **sling:resourceType** para determinar todos os scripts disponíveis que podem lidar com essa solicitação de Renderização de formulário. Em seguida, ele usa seletores de solicitação do Sling junto com o método de solicitação para identificar o script mais adequado para lidar com essa solicitação. Quando a solicitação atinge um JSP do renderizador de perfil, o JSP chama o serviço OSGi da Forms.
+Quando um usuário faz uma solicitação de um dispositivo cliente, como um navegador iOS ou Android™, o Sling primeiro resolve o Nó de perfil com base no URL da solicitação. Neste nó do perfil, ele lê **sling:resourceSuperType** e **sling:resourceType** para determinar todos os scripts disponíveis que podem lidar com essa solicitação de Renderização de formulário. Em seguida, ele usa seletores de solicitação do Sling junto com o método de solicitação para identificar o script mais adequado para lidar com essa solicitação. Quando a solicitação atinge um JSP do renderizador de perfil, o JSP chama o serviço OSGi da Forms.
 
-Para obter mais detalhes sobre a resolução do script sling, consulte [Folha de Corte de AEM](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) ou [Composição do Url do Apache Sling](https://sling.apache.org/site/url-decomposition.html).
+Para obter mais detalhes sobre a resolução do script sling, consulte [Folha de Corte de AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) ou [Composição do Url do Apache Sling](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 
 #### Fluxo de chamada de processamento de formulário típico {#typical-form-processing-call-flow}
 
@@ -179,8 +179,8 @@ O nó Perfil tem uma propriedade **sling:resourceSuperType** com valor **xfaform
 * **xfaforms.I18N.&lt;locale>**: Esta biblioteca contém dados localizados.
 * **xfaforms.profile**: Esta biblioteca contém implementação para scripts XFA e mecanismo de layout.
 
-Essas bibliotecas são modeladas como Bibliotecas do cliente CQ, o que tira vantagens dos recursos de concatenação automática, minificação e compactação das bibliotecas JavaScript da estrutura do CQ.
-Para obter mais informações sobre as bibliotecas do cliente CQ, consulte [Documentação da Clientlib CQ](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html).
+Essas bibliotecas são modeladas como Bibliotecas do cliente CQ, que têm vantagens com os recursos de concatenação automática, minificação e compactação das bibliotecas JavaScript da estrutura do CQ.
+Para obter mais informações sobre as bibliotecas do cliente CQ, consulte [Documentação da Clientlib CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR).
 
 Como descrito acima, o renderizador de perfil JSP chama o Forms Service por meio de uma inclusão de sling. Esse JSP também define várias opções de depuração com base na configuração do administrador ou nos parâmetros de solicitação.
 

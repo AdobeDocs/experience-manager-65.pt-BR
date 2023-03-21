@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1180'
 ht-degree: 0%
 
 ---
@@ -54,13 +54,13 @@ Se um único nó de um cluster de vários nós falhar e os nós restantes do clu
 1. Pare os serviços de formulários AEM e o servidor de aplicativos se estiver em execução.
 1. Se necessário, recrie o sistema físico a partir de uma imagem do sistema. Por exemplo, essa etapa pode não ser necessária se o motivo da recuperação for um servidor de banco de dados com falha.
 1. Aplique patches ou atualizações AEM formulários que foram aplicados desde que a imagem foi feita. Essas informações foram registradas no procedimento de backup. AEM formulários devem ser corrigidos no mesmo nível de patch que no momento em que o backup do sistema foi feito.
-1. (WebSphere Application Server) Se estiver se recuperando para uma nova instância do WebSphere Application Server, execute o comando restoreConfig.bat/sh.
+1. (WebSphere® Application Server) Se estiver se recuperando para uma nova instância do WebSphere® Application Server, execute o comando restoreConfig.bat/sh.
 1. Recupere o banco de dados de formulários de AEM executando primeiro uma operação de restauração de banco de dados usando os arquivos de backup do banco de dados e aplicando os redo logs de transação ao banco de dados recuperado. (Consulte [Banco de dados de formulários AEM](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Para obter mais informações, consulte um destes artigos da base de conhecimento:
 
-   * [Backup e recuperação do Oracle para formulários AEM](https://www.adobe.com/go/kb403624)
-   * [Backup e recuperação do MySQL para formulários AEM](https://www.adobe.com/go/kb403625)
-   * [Backup e recuperação do Microsoft SQL Server para formulários AEM](https://www.adobe.com/go/kb403623)
-   * [Backup e recuperação do DB2 para formulários AEM](https://www.adobe.com/go/kb403626)
+   * [Backup e recuperação DB2® para formulários AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#db2)
+   * [Backup e recuperação do Oracle para formulários AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#oracle)
+   * [Microsoft® SQL Server Backup and Recovery for AEM forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#sql-server)
+   * [Backup e recuperação do MySQL para formulários AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#mysql)
 
 1. Recupere o diretório GDS primeiro excluindo o conteúdo do diretório GDS na instalação existente de formulários AEM e copiando o conteúdo do diretório GDS do GDS com backup. Se você alterou o local do diretório GDS, consulte [Alteração da localização do GDS durante a recuperação](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
 1. Renomeie o diretório de backup GDS a ser restaurado, conforme mostrado nestes exemplos:
@@ -69,7 +69,7 @@ Se um único nó de um cluster de vários nós falhar e os nós restantes do clu
    >
    >Se o diretório /restore já existir, faça o backup e depois o exclua antes de renomear o diretório /backup que contém os dados mais recentes.
 
-   * (JBoss) Renomear `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` para:
+   * (JBoss®) Renomear `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` para:
 
       `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
@@ -77,7 +77,7 @@ Se um único nó de um cluster de vários nós falhar e os nós restantes do clu
 
       `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
-   * (WebSphere) Renomear `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` para:
+   * (WebSphere®) Renomear `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` para:
 
       `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
@@ -99,7 +99,7 @@ Se um único nó de um cluster de vários nós falhar e os nós restantes do clu
 
    * **Independente**
 
-      *Restaurar instâncias de autor e publicação*: Se ocorrer um desastre, é possível restaurar o repositório para o último estado do backup executando as etapas descritas em [Backup e restauração.](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html)
+      *Restaurar instâncias de autor e publicação*: Se ocorrer um desastre, é possível restaurar o repositório para o último estado do backup executando as etapas descritas em [Backup e restauração.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
 
       A restauração completa do nó Autor também verifica a restauração dos dados do Forms Manager e do AEM Forms Workspace.
 

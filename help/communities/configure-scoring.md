@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 0%
+source-wordcount: '934'
+ht-degree: 2%
 
 ---
 
 # Fundamentos de pontuação e emblemas {#scoring-and-badges-essentials}
 
-O recurso de pontuação e selo do AEM Communities oferece a capacidade de identificar e recompensar membros da comunidade.
+O recurso de pontuação e selo do AEM Communities identifica e retribui os membros da comunidade.
 
 Os detalhes da configuração do recurso estão descritos em
 
@@ -70,7 +70,7 @@ Por exemplo, pesquise por `this.isAssigned` em `/libs/social/forum/components/hb
 
 Se verdadeiro, isAssigned indica que o símbolo foi atribuído para uma função e o símbolo deve ser exibido como texto.
 
-Se falso, is Assigned indica que o selo foi atribuído por uma pontuação ganha e o selo deve ser exibido como uma imagem.
+Se falso, isAssigned indica que o selo foi concedido para uma pontuação ganha e o selo deve ser exibido como uma imagem.
 
 Quaisquer alterações nesse comportamento devem ser feitas em um script personalizado (substituição ou sobreposição). Consulte [Personalização do lado do cliente](/help/communities/client-customize.md).
 
@@ -127,7 +127,7 @@ As descrições para acessar dados de pontuação e marcação usam o JSRP, pois
 
 **JSRP no autor**: a experimentação no ambiente de criação resulta em UGC que é visível somente no ambiente de criação.
 
-**JSRP na publicação**: da mesma forma, se estiver testando no ambiente de publicação, será necessário acessar o CRXDE Lite com privilégios administrativos em uma instância de publicação. Se a instância de publicação estiver em execução em [modo de produção](/help/sites-administering/production-ready.md) (nosamplecontent runmode), será necessário [habilitar o CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP na publicação**: da mesma forma, se estiver testando no ambiente de publicação, será necessário acessar o CRXDE Lite com privilégios administrativos em uma instância de publicação. Se a instância de publicação estiver em execução em [modo de produção](/help/sites-administering/production-ready.md) (nosamplecontent runmode), é necessário [habilitar o CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 A localização base do UGC no JSRP é `/content/usergenerated/asi/jcr/`.
 
@@ -135,8 +135,8 @@ A localização base do UGC no JSRP é `/content/usergenerated/asi/jcr/`.
 
 As seguintes APIs estão disponíveis para uso :
 
-* [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
-* [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
+* [com.adobe.cq.social.scoring.api na 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR)
+* [com.adobe.cq.social.badging.api na 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR)
 
 Os Javadocs mais recentes para o pacote de recursos instalados estão disponíveis para os desenvolvedores do repositório do Adobe. Consulte [Usando o Maven para Comunidades : Javadocs](/help/communities/maven.md#javadocs).
 
@@ -170,7 +170,7 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
       `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Adicionar propriedade para exibir emblemas
+   * Para exibir emblemas, adicione a propriedade
 
       `allowBadges = true`
 
@@ -201,7 +201,7 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
       `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Adicionar propriedade para exibir emblemas
+   * Para exibir emblemas, adicione a propriedade
 
       `allowBadges = true`
 
@@ -214,7 +214,7 @@ As capturas de tela dos dados do repositório vêm da configuração da pontuaç
    curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
    ```
 
-   Como um usuário ganhou dois emblemas de bronze e recebeu um selo de moderador, é assim que o usuário aparece com a entrada do fórum.
+   Como um usuário ganhou dois emblemas de bronze e recebeu um selo de moderador, o usuário aparece com a entrada do fórum da seguinte maneira:
 
    ![moderador](assets/moderator.png)
 
@@ -246,11 +246,11 @@ Para o site Geometrixx Engage, o usuário e sua pontuação estão em um caminho
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
-Para o site do guia Componentes da comunidade, o usuário e sua pontuação estão em um caminho construído com o nome da regra de pontuação, uma ID padrão ( `default-site`), uma id exclusiva e a id do usuário :
+Para o site de guia Componentes da comunidade, o usuário e sua pontuação estão em um caminho construído com o nome da regra de pontuação, uma ID padrão ( `default-site`), uma id exclusiva e a id do usuário :
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 
-A pontuação é armazenada na propriedade `scoreValue_tl` que podem conter somente um valor ou indiretamente se referir a um atomicCounter.
+A pontuação é armazenada na propriedade `scoreValue_tl` que só podem conter um valor ou indiretamente se referem a um atomicCounter.
 
 ![pontuação de acesso-ugc](assets/access-scoring-ugc.png)
 

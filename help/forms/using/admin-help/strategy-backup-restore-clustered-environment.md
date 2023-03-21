@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c332985b-4556-4056-961a-fce2356da88d
 exl-id: 98c96349-f253-475f-b646-352269814a38
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -46,13 +46,13 @@ Este tópico discute as seguintes estratégias para fazer backup de qualquer amb
 
 1. Encerre todo o cluster e serviços relacionados. (consulte [Iniciar e parar serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Em qualquer nó, faça backup do banco de dados, GDS e Connectors. (consulte [Arquivos para backup e recuperação](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
-1. Execute as seguintes etapas para fazer backup AEM repositório offline:
+1. Para fazer backup AEM repositório offline, execute as seguintes etapas:
 
    1. Para cada nó do cluster, faça backup do arquivo que contém o ID do nó do cluster.
    1. Faça backup de todos os arquivos de qualquer nó do cluster secundário, incluindo subdiretórios.
    1. Faça backup do repositório/ID do sistema de cada nó do cluster separadamente.
 
-   Para obter etapas detalhadas, consulte [Backup e restauração](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+   Para obter etapas detalhadas, consulte [Backup e restauração](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 1. Faça o backup de quaisquer outros dados, como fontes do cliente.
 1. Inicie o cluster novamente.
@@ -61,17 +61,17 @@ Este tópico discute as seguintes estratégias para fazer backup de qualquer amb
 
 1. Entre no modo de backup em andamento. (consulte [Inserir os modos de backup](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
 
-   Observe que precisamos sair do modo de backup contínuo após uma recuperação.
+   Deixe o modo de backup em andamento após uma recuperação.
 
-1. Desligue qualquer um dos nós secundários do cluster em relação ao AEM. (consulte [Iniciar e parar serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Encerre qualquer um dos nós secundários do cluster em relação ao AEM. (consulte [Iniciar e parar serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Em qualquer nó, faça backup do banco de dados, GDS e Connectors. (consulte [Arquivos para backup e recuperação](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
-1. Execute as seguintes etapas para fazer backup AEM repositório offline:
+1. Para fazer backup AEM repositório offline, execute as seguintes etapas:
 
    1. Para cada nó do cluster, faça backup do arquivo que contém o ID do nó do cluster.
    1. Faça backup de todos os arquivos de qualquer nó do cluster secundário, incluindo subdiretórios.
    1. Faça backup repository/system.id de cada nó do cluster separadamente.
 
-   Para obter etapas detalhadas, consulte [Backup e restauração](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+   Para obter etapas detalhadas, consulte [Backup e restauração](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 1. Faça o backup de quaisquer outros dados, como fontes do cliente.
 1. Inicie o cluster novamente.
@@ -80,11 +80,11 @@ Este tópico discute as seguintes estratégias para fazer backup de qualquer amb
 
 1. Entre no modo de backup em andamento. (consulte [Inserir os modos de backup](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
 
-   Observe que é necessário deixar o modo de backup contínuo após uma recuperação.
+   Deixe o modo de backup em andamento após uma recuperação.
 
-1. Desligue qualquer um dos nós secundários do cluster em relação ao AEM. (consulte [Iniciar e parar serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Encerre qualquer um dos nós secundários do cluster em relação ao AEM. (consulte [Iniciar e parar serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Em qualquer nó, faça backup do banco de dados, GDS e Connectors. (consulte [Arquivos para backup e recuperação](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
-1. Execute as seguintes etapas para fazer backup AEM repositório online:
+1. Para fazer backup AEM repositório on-line, execute as seguintes etapas:
 
    1. Para cada nó do cluster, faça backup do arquivo que contém o cluster_node.id.
    1. Faça backup repository/system.id de cada nó do cluster separadamente.
@@ -97,19 +97,19 @@ Este tópico discute as seguintes estratégias para fazer backup de qualquer amb
 
 Quando criamos um cluster AEM, um arquivo de propriedades é criado no servidor de aplicativos para todos os nós secundários. É recomendável fazer o backup do arquivo de propriedades do Bootstrap. Você pode encontrar o arquivo no seguinte local no servidor de aplicativos:
 
-* JBoss: no diretório BIN
+* JBoss®: no diretório BIN
 * WebLogic: no diretório de domínio
-* WebSphere: no diretório do perfil
+* WebSphere®: no diretório do perfil
 
-Você precisa fazer o backup do arquivo para o cenário de recuperação de desastres AEM nó secundário e substituí-lo no local especificado no servidor de aplicativos, se restaurado.
+Faça backup do arquivo para o cenário de recuperação de desastres AEM nó secundário e substitua-o no local especificado no servidor de aplicativos, se restaurado.
 
 ## Recuperação em um ambiente em cluster {#recovery-in-a-clustered-environment}
 
-Em caso de falha de todo o cluster ou de um único nó, é necessário restaurá-lo usando o backup.
+Se houver uma falha de todo o cluster ou de um único nó, restaure-o usando o backup.
 
-Para uma recuperação de nó único, basta encerrar o nó único e executar o procedimento de recuperação de nó único.
+Para uma recuperação de um único nó, encerre o nó único e execute o procedimento de recuperação de nó único.
 
-Caso todo o cluster falhe devido a falhas como falha do banco de dados, é necessário executar as seguintes etapas. A restauração depende do método de backup usado.
+Se todo o cluster falhar devido a falhas como falha do banco de dados, execute as seguintes etapas. A restauração depende do método de backup usado.
 
 ### Restaurar um único nó {#restoring-a-single-node}
 
@@ -143,7 +143,7 @@ Caso todo o cluster falhe devido a falhas como falha do banco de dados, é neces
 
 * Se o nó com falha foi um nó primário AEM, copie todo o conteúdo da pasta do repositório secundário (crx-repository\crx.0000 onde 0000 pode ser qualquer dígito) para a pasta crx-repository\ repository e exclua a pasta do repositório secundário.
 * Antes de reiniciar qualquer nó do cluster, certifique-se de excluir o repositório /clustered.txt do nó principal.
-* Certifique-se de que o nó principal seja iniciado primeiro e, uma vez completamente ativado, inicie outros nós.
+* Certifique-se de que o nó primário seja iniciado primeiro e, depois que ele estiver ativo, inicie outros nós.
 
 ### Restaurar todo o cluster {#restoring-the-entire-cluster}
 
@@ -173,19 +173,19 @@ Caso todo o cluster falhe devido a falhas como falha do banco de dados, é neces
 
 * Se o nó com falha foi um nó primário AEM, copie todo o conteúdo da pasta do repositório secundário (parece crx-repository\crx.0000, onde 0000 pode ser qualquer dígito) para a pasta crx-repository\ repository.
 * Antes de reiniciar qualquer nó do cluster, certifique-se de excluir o repositório /clustered.txt do nó principal.
-* Certifique-se de que o nó principal seja iniciado primeiro e, uma vez completamente ativado, inicie outros nós.
+* Certifique-se de que o nó primário seja iniciado primeiro e, depois que ele estiver ativo, inicie outros nós.
 
 ## Fazer backup e restaurar o nó de publicação da Solução de gerenciamento de correspondência {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-O nó do editor não tem nenhuma relação primária-secundária em um ambiente em cluster. Você pode fazer backup de qualquer nó do Editor seguindo [Backup e restauração](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+O nó do editor não tem nenhuma relação primária-secundária em um ambiente em cluster. Você pode fazer backup de qualquer nó do Editor seguindo [Backup e restauração](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 ### Recuperar um único nó do editor {#recover-a-single-publisher-node}
 
-1. Desligue o nó que precisa ser recuperado e não faça nenhuma atividade de publicação até que o nó esteja ativo novamente.
-1. Restaure o nó Publicar usando [Restaurar o Backup](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring o backup).
+1. Desligue o nó que deve ser recuperado e não faça nenhuma atividade de publicação até que o nó esteja ativo novamente.
+1. Restaure o nó Publicar usando [Restaurar o Backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 ### Recuperar um cluster {#recover-a-cluster}
 
 1. Desligue o cluster.
-1. Restaure o nó Publicar usando [Restaurar o Backup](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring o backup).
+1. Restaure o nó Publicar usando [Restaurar o Backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 1. Inicie o nó principal seguido pelo nó secundário do cluster de criação.

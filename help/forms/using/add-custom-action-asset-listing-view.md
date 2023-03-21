@@ -11,10 +11,10 @@ discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 2%
+source-wordcount: '1355'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Para concluir o seguinte cenário ou semelhante, você precisa de conhecimento d
 
 * CRX
 * JavaScript
-* Java
+* Java™
 
 ## Cenário: Adicione um comando à interface do usuário da lista de letras para baixar a versão de PDF simples de uma letra {#addcommandtoletters}
 
@@ -55,7 +55,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
 
       >[!NOTE]
       >
-      >Esse caminho é específico para criar uma ação que funcione com a seleção de um ou mais ativos/letras. Se você quiser criar uma ação que funcione sem a seleção, será necessário criar um nó de sobreposição para o seguinte caminho e concluir as etapas restantes adequadamente:
+      >Esse caminho é específico para criar uma ação que funcione com a seleção de um ou mais ativos/letras. Se você quiser criar uma ação que funcione sem seleção, crie um nó de sobreposição para o seguinte caminho e complete as etapas restantes de acordo:
       >
       >
       >`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/default/items`
@@ -110,7 +110,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
         <tr>
         <td>ícone</td>
         <td>Sequência de caracteres</td>
-        <td>icon-download<br /> <br /> O ícone que o Gerenciamento de correspondência exibe no lado esquerdo do seu comando/menu. Para obter diferentes ícones e configurações disponíveis, consulte <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">Documentação de Ícones do CoralUI</a>.<br /> </td>
+        <td>icon-download<br /> <br /> O ícone que o Gerenciamento de correspondência exibe no lado esquerdo do seu comando/menu. Para obter diferentes ícones e configurações disponíveis, consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR" target="_blank">Documentação de Ícones do CoralUI</a>.<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -279,7 +279,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que os usuá
    1. Clique duas vezes no botão **POST.jsp** para abri-lo no CRX.
    1. Adicione o seguinte código ao arquivo POST.jsp e clique em **Salvar tudo**:
 
-      Esse código é específico para o serviço de renderização de letras. Para qualquer outro ativo, adicione as bibliotecas java desse ativo a este código. Para obter mais informações sobre APIs do AEM Forms, consulte [API do AEM Forms](https://adobe.com/go/learn_aemforms_javadocs_63_en).
+      Esse código é específico para o serviço de renderização de letras. Para qualquer outro ativo, adicione as bibliotecas Java™ desse ativo a esse código. Para obter mais informações sobre APIs do AEM Forms, consulte [API do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR).
 
       Para obter mais informações sobre AEM bibliotecas, consulte AEM [Componentes](/help/sites-developing/components.md).
 
