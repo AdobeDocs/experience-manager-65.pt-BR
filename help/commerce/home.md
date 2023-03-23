@@ -2,10 +2,10 @@
 title: AEM Content and Commerce
 description: Entenda como usar e administrar AEM conteúdo e comércio, com nossos artigos úteis sobre integrações e como começar a usar AEM Storefront.
 exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
-source-git-commit: 3ac32e5a2a1b2b266e2fc9f4ba8c7393a0566ff4
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 28%
+source-wordcount: '336'
+ht-degree: 27%
 
 ---
 
@@ -30,7 +30,7 @@ Entenda como usar e administrar AEM conteúdo e comércio, com nossos artigos ú
 | [Guia do usuário do Assets](/help/assets/home.md) | Saiba como criar, gerenciar, fornecer e otimizar ativos digitais. |
 | [Guia do usuário do Forms](/help/forms/home.md) | Este guia descreve como criar, gerenciar, publicar e atualizar formulários digitais. |
 | [Guia do usuário do Communities](/help/communities/home.md) | Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais. |
-| [Guia de administração](/help/sites-administering/home.md) | Saiba mais sobre como administrar o AEM |
+| [Guia de administração](/help/sites-administering/home.md) | Saiba como administrar AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no AEM. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no AEM na interface do usuário clássica. |
 | [Guia do usuário do Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=pt-BR) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
@@ -38,7 +38,6 @@ Entenda como usar e administrar AEM conteúdo e comércio, com nossos artigos ú
 | [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar a instância do AEM. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto de AEM com êxito. |
 | [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html) | Este guia mostra como compartilhar conteúdo gerado pelo usuário com o Livefyre. |
 
 ## Principais recursos AEM
 

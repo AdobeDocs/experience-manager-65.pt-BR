@@ -10,10 +10,10 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '3755'
-ht-degree: 2%
+source-wordcount: '3699'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Esta página fornece mais detalhes para elaborar e/ou aumentar os documentos e princípios cobertos pela [Gerenciamento de projetos - Lista de verificação de práticas recomendadas](/help/managing/best-practices.md).
 
-## AEM - O que você usará? {#aem-what-will-you-be-using}
+## AEM - O que você vai usar? {#aem-what-will-you-be-using}
 
 >[!CAUTION]
 >
@@ -29,9 +29,9 @@ Esta página fornece mais detalhes para elaborar e/ou aumentar os documentos e p
 
 ### Recursos no AEM {#features-within-aem}
 
-Ao implementar AEM (especialmente pela primeira vez), será necessário revisar a variável [recursos e fluxos de trabalho de AEM](https://www.adobe.com/br/marketing/experience-manager.html) para ter certeza de quais áreas você deseja/precisa.
+Ao implementar AEM (especialmente pela primeira vez), analise a [recursos e fluxos de trabalho de AEM](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html) para ter certeza de quais áreas você deseja ou precisa.
 
-Considere os recursos de AEM que você usará e o impacto em seu design; por exemplo:
+Considere os recursos de AEM que você está usando e o impacto em seu design; por exemplo:
 
 * [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
 * [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=pt-BR)
@@ -40,13 +40,12 @@ Considere os recursos de AEM que você usará e o impacto em seu design; por exe
 * [Gerenciamento e tradução de vários sites](/help/sites-administering/msm-and-translation.md)
 * [Forms](/help/forms/home.md)
 * [Communities](/help/communities/deploy-communities.md)
-* [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
 Além disso, verifique o [Notas de versão](/help/release-notes/release-notes.md), para as várias versões do AEM, para ver quando novos recursos foram adicionados.
 
 ### Integrações {#integrations}
 
-AEM pode ser integrado a outros produtos de Adobe e/ou serviços de terceiros. Isso pode aumentar a potência e a funcionalidade à sua disposição.
+AEM pode ser integrado a outros produtos de Adobe, serviços de terceiros ou ambos. Esses fluxos de trabalho podem aumentar a potência e a funcionalidade à sua disposição.
 
 Consulte [Integração de soluções](/help/sites-administering/integration.md) para obter informações completas.
 
@@ -60,11 +59,11 @@ Uma consideração importante é se você deseja:
 Ao migrar de uma versão anterior para a atual, há duas opções:
 
 * Use o [Gerenciador de pacotes](/help/sites-administering/package-manager.md) para exportar todo o conteúdo e o código do aplicativo do sistema antigo para o novo.
-* [Atualizar](/help/sites-deploying/upgrade.md) o sistema antigo no local. Essa é a opção recomendada na maioria dos casos.
+* [Atualizar](/help/sites-deploying/upgrade.md) o sistema antigo no local. Esse método geralmente é a opção recomendada.
 
 ## Regras básicas de base {#basic-ground-rules}
 
-Tal como acontece com qualquer projeto, é fundamental estabelecer regras básicas o mais rapidamente possível. Dentre elas:
+Tal como acontece com qualquer projeto, é fundamental estabelecer regras básicas o mais rapidamente possível. Essas regras incluem:
 
 >[!NOTE]
 >
@@ -72,7 +71,7 @@ Tal como acontece com qualquer projeto, é fundamental estabelecer regras básic
 
 * **Funções**
 
-   Estes devem ser claramente definidos e comunicados a todos os participantes no projeto. Além disso, é conveniente destacar:
+   As funções devem ser claramente definidas e divulgadas a todos os participantes no projeto. Além disso, é conveniente destacar:
 
    * Tomadores de decisão
    * Pontos de Contato
@@ -83,27 +82,27 @@ Tal como acontece com qualquer projeto, é fundamental estabelecer regras básic
 
 * **Envolvimento**
 
-   Ao envolver as partes interessadas o mais rapidamente possível, pode incentivá-las a *partes interessadas* no projeto, aumentando assim o seu compromisso para com o seu sucesso.
+   Ao envolver as partes interessadas o mais rápido possível, você pode incentivá-las a se tornarem *partes interessadas* no projeto. Isso aumenta o seu compromisso com o seu sucesso.
 
-   * No lado do cliente, isso inclui os autores - que terão de trabalhar com o sistema diariamente.
-   * No âmbito da sua equipe de projeto, esta incluirá também as pessoas responsáveis pelo controlo de qualidade. Quanto mais eles entenderem as necessidades do cliente, melhor poderão planejar os testes.
+   * No lado do cliente, essa função inclui os autores que trabalham com o sistema diariamente
+   * No âmbito da sua equipe de projetos, este envolvimento inclui também as pessoas responsáveis pelo controlo de qualidade. Quanto mais eles entenderem as necessidades do cliente, melhor poderão planejar os testes.
 
 * **Caminhos de comunicação**
 
-   * Embora estas não devam ser excessivamente formalizadas, as definições específicas devem assegurar que as pessoas-chave sejam sempre informadas e, por conseguinte, atualizadas. Deve ser dada especial atenção à comunicação com as partes externas.
+   * Embora os caminhos da comunicação não devam ser excessivamente formalizados, definições específicas devem assegurar que as pessoas-chave sejam sempre informadas e, por conseguinte, atualizadas. Deve ser dada especial atenção à comunicação com as partes externas.
 
 * **Processos**
 
-   Os processos a serem definidos dependerão do projeto individual. Mais uma vez, tente manter esses itens simples, considerando:
+   Os processos definidos dependem do projeto individual. Novamente, tente manter esses processos simples, considerando:
 
-   * Definir processos (e vias de comunicação) para interagir com terceiros; Por exemplo, agências de concepção e fornecedores de software de terceiros, entre outros.
-   * Geralmente, o cliente terá seus próprios procedimentos e ferramentas de Gerenciamento de projetos e Relatórios .
+   * Definir processos (e vias de comunicação) para interagir com terceiros; por exemplo, agências de design e fornecedores de software de terceiros, entre outros.
+   * Geralmente, o cliente tem seus próprios procedimentos e ferramentas de Gerenciamento de projetos e Relatórios .
 
 * **Ferramentas de rastreamento**
 
    Há muitas ferramentas disponíveis para rastrear informações sobre bugs, tarefas e outros aspectos do seu projeto - consulte [Visão geral de ferramentas potenciais](#overview-of-potential-tools) para obter mais detalhes.
 
-   * O ponto principal a ser observado aqui é manter apenas uma cópia das informações e compartilhar as informações (e, portanto, acessar a ferramenta usada). Isso facilitará a manutenção e ajudará a evitar discrepâncias.
+   * O ponto principal a ser observado aqui é manter apenas uma cópia das informações e compartilhar as informações (e, portanto, acessar a ferramenta usada). Esse workflow facilita a manutenção e ajuda a evitar discrepâncias.
 
 * **Escopo**
 
@@ -112,11 +111,11 @@ Tal como acontece com qualquer projeto, é fundamental estabelecer regras básic
    * as versões individuais (se um processo de versão iterativa for usado e independentemente de serem entregues aos clientes ou à sua equipe de teste interna).
    * o projeto AEM.
    * todo o projeto; incluindo qualquer software de terceiros, seu impacto em testes, problemas organizacionais e muitos outros.
-   * Em certos aspectos, também pode ser útil indicar o que é *not* no âmbito do projeto. Tal pode contribuir para evitar confusões e pressupostos incorretos, embora deva limitar-se a questões essenciais.
+   * Para certos aspectos, pode também ser útil indicar o que é *not* no âmbito do projeto. Esta ideia pode ajudar a evitar confusões e pressupostos incorretos, embora deva limitar-se a questões essenciais.
 
 * **Relatório**
 
-   Defina claramente quais informações você reportará, de que forma, com que frequência e para quem.
+   Defina claramente quais informações você deseja reportar, de que forma, com que frequência e para quem.
 
 * **Terminologia**
 
@@ -126,11 +125,11 @@ Tal como acontece com qualquer projeto, é fundamental estabelecer regras básic
 
    * Defina as suposições que estão sendo feitas.
 
-Estas informações podem ser definidas no Manual do Projeto; o uso de um Wiki também pode ajudar a garantir que as mudanças em curso sejam tratadas com eficiência. Sempre que estes forem definidos, os principais fatores são os seguintes:
+Estas informações podem ser definidas no Manual do Projeto; o uso de um Wiki também pode ajudar a garantir que as mudanças em curso sejam tratadas com eficiência. Sempre que estes pressupostos sejam definidos, os principais fatores são os seguintes:
 
 * As informações são definidas e mantidas
-* As informações são claramente comunicadas a todas as pessoas em causa. Embora a prática padrão do Gerenciamento de projetos não possa ser repetida com frequência suficiente para que uma definição clara de função e uma boa comunicação possam tornar ou quebrar um projeto.
-* Apenas é conservada uma versão das informações que são objeto de acompanhamento; por exemplo, rastreamento de erros, rastreamento de problemas etc.
+* As informações são claramente comunicadas a todas as pessoas envolvidas. Embora a prática padrão do Gerenciamento de projetos não possa ser repetida com frequência suficiente para que uma definição clara de função e uma boa comunicação possam tornar ou quebrar um projeto.
+* Apenas é conservada uma versão das informações que são objeto de acompanhamento; por exemplo, rastreamento de erros e rastreamento de problemas.
 
 ## Principais indicadores de desempenho e métricas de meta {#key-performance-indicators-and-target-metrics}
 
@@ -141,111 +140,111 @@ Esses indicadores podem ser:
 * Negócios:
 
    * Usado para medir objetivos-chave de negócios.
-   * É importante escolher os KPIs apropriados para sua empresa/cenário com definições claras do que são, como serão medidos, como serão usados e por quem.
+   * É importante escolher os KPIs apropriados para sua empresa/cenário com definições claras do que são, como são medidos, como são usados e por quem.
 
-* Show:
+* Desempenho:
 
    * Defina como medir o desempenho do sistema.
-   * Alguns exemplos incluem tempo de carregamento de página, tempo de resposta do servidor e desempenho de consulta do banco de dados.
+   * Alguns exemplos incluem tempo de carregamento de página, tempo de resposta do servidor e desempenho de consulta de banco de dados.
 
 Alguns indicadores, mas não todos, podem se basear nas métricas de meta que você identificar e definir.
 
 ### Métricas de meta {#target-metrics}
 
-As métricas são usadas para definir medidas quantitativas para a qualidade de seu site - são basicamente uma definição das metas de desempenho que você deseja alcançar e que podem ser usadas para definir sua [KPIs (Principais indicadores de desempenho)](#key-performance-indicators-and-target-metrics).
+As métricas são usadas para definir medidas quantitativas para a qualidade de seu site. Eles são basicamente uma definição das metas de desempenho que você deseja alcançar e que podem ser usadas para definir seus [KPIs (Principais indicadores de desempenho)](#key-performance-indicators-and-target-metrics).
 
 Muitas métricas podem ser definidas, mas muitas vezes as que você define cobrem suas metas de desempenho e simultaneidade. Em especial, fatores que podem ser difíceis de quantificar e que são frequentemente susceptíveis de *emocional* avaliação:
 
-* &quot;nosso site é *muito lento* hoje&quot; - quando *lento* qualificar?
+* &quot;o site é *muito lento* hoje&quot; - quando *lento* qualificar?
 
 * &quot;tudo *parada* quando meu colega faz logon&quot; - quantos usuários simultâneos o sistema pode suportar?
-* &quot;quando pesquisar, o sistema *parada* &quot; - que tipo de solicitações de pesquisa estão afetando o sistema?
+* &quot;quando pesquisar, o sistema *parada* &quot; - quais solicitações de pesquisa estão afetando o sistema?
 * &quot;é necessário *ages* para baixar o arquivo&quot; - quais são os tempos de download aceitáveis (em condições normais de rede)?
 
 As Métricas de destino são definidas no início de um projeto para:
 
-* indicar as dimensões esperadas do site que você oferecerá
+* indicar as dimensões esperadas do site que você pode oferecer
 * indica a qualidade mínima que deseja alcançar
-* definir como esses fatores serão realmente medidos
+* definir como esses fatores são medidos
 * como base para a [Principais indicadores de desempenho](#key-performance-indicators-and-target-metrics)
 
 Como sempre, é necessário ter cuidado ao definir as métricas de destino:
 
-* se estiver definido como muito alto, pode ser completamente inatingível
+* se estiver definido como muito alto, pode ser inatingível
 * se definido como flutuações muito baixas, pode não ser realçado
 * para garantir que possam ser medidos de forma repetida e consistente
 * proporcionar um equilíbrio entre os diferentes fatores que estão a ser medidos
-* determinadas métricas se relacionarão a um ambiente de teste, mas algumas devem refletir os cenários da vida real, pois devem ser mensuráveis e reprodutíveis, no seu site em produção
+* determinadas métricas estão relacionadas a um ambiente de teste, mas algumas devem refletir os cenários da vida real, pois devem ser mensuráveis e reproduzíveis no seu site em produção
 * priorizar as métricas de acordo com sua significância para o site
-* limitar as métricas a um conjunto que possa ser realisticamente monitorado
+* limitar as métricas a um conjunto que pode ser monitorado
 
 Durante o desenvolvimento do projeto, podem ser atualizadas e ajustadas conforme adequado. Depois que o projeto for implementado com êxito, eles poderão ser usados para ajudá-lo a controlar sua instalação e monitorar/manter os níveis de serviço necessários para a operação contínua.
 
-Quando usadas adequadamente, essas métricas podem fornecer uma ferramenta útil; quando utilizados de forma irresponsável, podem ser uma distração que desperdiça tempo. Como sempre, você precisa entender o que está medindo, como está medindo e por quê.
+Quando usadas adequadamente, essas métricas podem fornecer uma ferramenta útil; quando utilizados de forma irresponsável, podem ser uma distração que desperdiça tempo. Como sempre, entenda o que você está medindo, como está medindo e por quê.
 
 >[!NOTE]
 >
->A presente seção aborda os princípios básicos e as questões a considerar. Cada instalação é diferente, então os valores reais a serem medidos serão diferentes.
+>Esta seção discute os princípios básicos e as questões a serem analisadas. Cada instalação é diferente, portanto, os valores reais para medição tendem a ser diferentes.
 
 ### Tudo depende do design do projeto {#everything-rests-on-your-project-design}
 
-Todas as métricas a serem medidas serão, de alguma forma, afetadas pelo design do seu projeto. Por outro lado, muitos problemas serão melhor resolvidos por meio de alterações de design.
+Todas as métricas medidas são afetadas pelo design do seu projeto. Por outro lado, muitos problemas são melhor resolvidos por alterações de design.
 
-Portanto, você deve definir suas métricas de meta *before* decisão sobre seu design. Isso permite otimizar seu design com base nesses fatores. Uma vez desenvolvido o seu projeto, será difícil introduzir alterações nos princípios básicos de concepção.
+Portanto, defina suas métricas de meta *before* decisão sobre seu design. Isso permite otimizar seu design com base nesses fatores. Depois que o projeto é desenvolvido, os princípios básicos de design são desafiadores.
 
 Ao criar a estrutura para o site, siga a estrutura recomendada para AEM sites. Certifique-se de entender os seguintes problemas e/ou princípios:
 
 * Como estruturar o conteúdo do site.
 * Como os modelos e componentes funcionam.
-* Como o armazenamento em cache funciona.
+* Como funciona o armazenamento em cache?
 * Os impactos do conteúdo personalizado.
 * Como a função de pesquisa funciona.
 * Como você pode usar o CSS e as tecnologias relacionadas para criar um código de HTML compacto e não redundante.
 
-Se você achar que o seu design não segue as diretrizes ou se não tiver certeza sobre algumas das implicações, clarifique essas questões antes de iniciar a fase de programação ou de preencher o conteúdo.
+Se você achar que seu design não segue as diretrizes, ou se não tiver certeza sobre algumas das implicações, clarifique esses problemas. Faça isso antes de iniciar a fase de programação ou de preencher o conteúdo.
 
 ### Infraestrutura {#infrastructure}
 
-Para definir ou avaliar a infraestrutura, ajudará a definir valores-alvo, como:
+Para definir ou avaliar a infraestrutura, ajuda a definir valores como:
 
 * visitantes/dia; média e pico
 * ocorrências/dia; média e pico
 * número de páginas web que estão sendo disponibilizadas
 * volume de conteúdo da Web
 
-Dependendo da sua situação e do significado estratégico do site, isso ajudará você a avaliar e escolher sua infraestrutura:
+Dependendo da sua situação e do significado estratégico do site, definir a infraestrutura pode ajudá-lo a avaliar e escolher sua infraestrutura:
 
 * número de servidores
 * número de instâncias AEM (autor e publicação)
 
-### Show {#performance}
+### Desempenho {#performance}
 
 Há vários fatores de desempenho que podem ser avaliados:
 
-* tempos de resposta para páginas individuais, levando em conta:
+* tempos de resposta para páginas individuais, considerando:
 
    * tempos de resposta em um ambiente do autor
    * tempos de resposta no ambiente de publicação
 
 * tempos de resposta para solicitações de pesquisa
 
-Esta seção pode ser lida juntamente com [Otimização de desempenho](/help/sites-deploying/configuring-performance.md) que amplia os detalhes técnicos de realmente medir o desempenho.
+Esta seção pode ser lida com [Otimização de desempenho](/help/sites-deploying/configuring-performance.md) que amplia os detalhes técnicos de realmente medir o desempenho.
 
 #### Tempos de resposta para páginas individuais {#response-times-for-individual-pages}
 
 Um problema importante é o tempo que seu site leva para responder às solicitações do visitante.
 
-Embora esse valor varie para cada solicitação, um valor médio de público-alvo pode ser definido. Uma vez que esse valor seja comprovadamente alcançável e sustentável, ele poderá ser usado para monitorar o desempenho do site e indicar o desenvolvimento de possíveis problemas
+Embora esse valor varie para cada solicitação, um valor médio de target pode ser definido. Uma vez que esse valor seja comprovadamente alcançável e sustentável, ele poderá ser usado para monitorar o desempenho do site e indicar o desenvolvimento de possíveis problemas
 
 Diferentes metas em ambientes de criação e publicação
 
-Os tempos de resposta que você desejará serão diferentes nos ambientes de criação e publicação, refletindo o público-alvo:
+Os tempos de resposta almejados são diferentes nos ambientes de criação e publicação, refletindo o público-alvo:
 
 * **Ambiente de criação**
 
    Esse ambiente é usado pelos autores que inserem e atualizam o conteúdo, portanto, deve:
 
-   * atenda a um pequeno número de usuários que geram um alto número de solicitações ao atualizar páginas de conteúdo e os elementos individuais nessas páginas
+   * atenda a alguns usuários que geram um alto número de solicitações ao atualizar páginas de conteúdo e os elementos individuais nessas páginas
    * seja o mais rápido possível para maximizar a produtividade para obter o conteúdo em seu site
 
 * **Ambiente de publicação**
@@ -260,13 +259,13 @@ Os tempos de resposta que você desejará serão diferentes nos ambientes de cri
 
 #### Definição dos tempos de resposta do target {#setting-target-response-times}
 
-Então, como você pode decidir sobre tempos de resposta (médios) alcançáveis? Geralmente, isso é uma questão de experiência:
+Como você pode decidir sobre tempos de resposta (médios) alcançáveis? A pergunta e a resposta são muitas vezes uma questão de experiência:
 
-* experiência passada no seu site
+* experiência no seu site
 * experiência com AEM
-* reconhecer páginas complexas que têm tempos de resposta acima da média (elas devem ser otimizadas individualmente, se possível)
+* reconhecer páginas complexas que têm tempos de resposta acima da média (essas páginas devem ser otimizadas individualmente, se possível)
 
-Contudo, (em circunstâncias controladas), podem ser aplicadas as seguintes orientações:
+No entanto, em circunstâncias controladas, podem ser aplicadas as seguintes orientações:
 
 * 70% das solicitações de páginas devem responder em menos de 100 ms.
 * 25% das solicitações de páginas devem responder em menos de 100 ms a 300 ms.
@@ -286,7 +285,7 @@ Há vários mecanismos que você pode usar para monitorar os tempos de resposta:
 
 * **Monitoramento dos tempos de resposta com o AEM request.log**
 
-   Um bom ponto de partida para análise de desempenho é o log de solicitação. Entre outras informações, você pode usar isso para ver os tempos de resposta de solicitações individuais. Consulte [Otimização de desempenho](/help/sites-deploying/configuring-performance.md) para obter mais detalhes.
+   Um bom ponto de partida para análise de desempenho é o log de solicitação. Entre outras informações, é possível ver os tempos de resposta de solicitações individuais. Consulte [Otimização de desempenho](/help/sites-deploying/configuring-performance.md) para obter mais detalhes.
 
 * **Monitoramento dos tempos de resposta com comentários do HTML**
 
@@ -304,17 +303,17 @@ As solicitações de pesquisa podem ter um impacto significativo no seu site, em
 
 * Impacto no desempenho geral
 
-   * Como uma função de pesquisa deve verificar (potencialmente grande) seções do conteúdo ou um índice extraído especialmente, isso pode afetar o desempenho de todo o sistema se não for otimizado
+   * Como uma função de pesquisa deve verificar (potencialmente grande) seções do conteúdo ou um índice extraído especialmente, essa capacidade pode afetar o desempenho de todo o sistema, se não for otimizada
 
 Definir alvos para solicitações de pesquisa é, novamente, uma questão de experiência, dependendo de:
 
 * experiência de AEM
-* uma avaliação da frequência com que a pesquisa será usada em comparação com outros objetivos
+* uma avaliação da frequência com que a pesquisa é usada em comparação com outros objetivos
 * seu gerenciador de persistência
 * seu índice de pesquisa
-* a complexidade da sua função de pesquisa; uma função de pesquisa básica que permite que somente um termo de pesquisa seja inserido será mais rápida que uma pesquisa avançada, permitindo que o usuário crie instruções de pesquisa complexas usando AND/OR/NOT.
+* a complexidade da sua função de pesquisa; uma função de pesquisa básica que permite a entrada de um termo de pesquisa é mais rápida que uma pesquisa avançada que permite ao usuário criar instruções de pesquisa complexas usando E/OU/NÃO.
 
-Eles devem ser planejados e integrados desde o início do seu projeto. Os mecanismos disponíveis para a monitorização incluem:
+Essas solicitações de pesquisa devem ser planejadas e integradas desde o início do projeto. Os mecanismos disponíveis para a monitorização incluem:
 
 * **Monitorar os tempos de resposta da pesquisa com o AEM request.log**
 
@@ -326,18 +325,18 @@ Eles devem ser planejados e integrados desde o início do seu projeto. Os mecani
 
 ### Simultaneidade {#concurrency}
 
-Seu site será disponibilizado para vários usuários/visitantes, nos ambientes de criação e publicação. Geralmente, os números são mais altos do que você usou no teste, mas também flutuantes e difíceis de prever. Seu site precisará ser projetado para um número médio de usuários/visitantes simultâneos sem notar um impacto negativo no desempenho. Novamente, a variável `request.log` podem ser utilizados para efetuar testes de simultaneidade; see [Otimização de desempenho](/help/sites-deploying/configuring-performance.md) para obter mais detalhes.
+Disponibilize seu site para alguns usuários e visitantes, nos ambientes de criação e publicação. Geralmente, os números são mais altos do que você usou no teste, mas também flutuantes e difíceis de prever. Projete seu site para obter um número médio de usuários e visitantes simultâneos sem notar um impacto negativo no desempenho. Novamente, use o `request.log` para fazer testes de simultaneidade. Consulte [Otimização de desempenho](/help/sites-deploying/configuring-performance.md) para obter mais detalhes.
 
 As metas para o número de usuários simultâneos dependem do tipo de ambiente:
 
 * **Ambiente de criação**
 
-   * Geralmente, o número de usuários simultâneos pode ser estimado com precisão. Você saberá quantos autores tem no total, no entanto (provavelmente) nem todos estarão ativos ao mesmo tempo.
+   * Geralmente, o número de usuários simultâneos pode ser estimado com precisão. Você pode saber quantos autores tem no total, no entanto (provavelmente) nem todos estão ativos ao mesmo tempo.
 
 * **Ambiente de publicação**
 
-   * Isso é mais difícil de prever, portanto, você deve selecionar um valor de meta. Novamente, isso deve se basear na experiência do seu site atual, juntamente com expectativas realistas do seu novo site.
-   * Eventos especiais (por exemplo, quando você publica conteúdo novo e muito popular) podem exceder as expectativas, ou até mesmo os recursos (como por vezes reportado na imprensa quando ingressos para determinados eventos são disponibilizados para venda).
+   * O ambiente de publicação é mais desafiador de prever, portanto, você deve selecionar um valor de meta. Mais uma vez, ele deve se basear na experiência do seu site atual, juntamente com expectativas realistas do seu novo site.
+   * Eventos especiais (por exemplo, quando você publica conteúdo novo e popular) podem exceder as expectativas - ou até mesmo os recursos (como às vezes reportado na imprensa quando ingressos para determinados eventos são disponibilizados para venda).
 
 ### Capacidade e volume {#capacity-and-volume}
 
@@ -356,11 +355,11 @@ Antes de discutir as métricas relacionadas, uma definição rápida dos termos:
 
    | O que / Onde | Capacidade | Volume |
    |---|---|---|
-   | Cliente | Potência computacional do computador do usuário. | Complexidade do layout da página. |
+   | Client | Potência computacional do computador do usuário. | Complexidade do layout da página. |
    | Rede | Largura de banda de rede. | Tamanho da página (código, imagens e assim por diante). |
    | Cache do Dispatcher | Memória do servidor Web (memória principal e disco rígido). | Servidor Web (memória principal e disco rígido). Número e tamanho das páginas em cache. |
-   | Cache de saída | Memória do servidor AEM (memória principal e disco rígido). | Número e tamanho das páginas no cache de saída, o número de dependências por página. O cache do dispatcher baixa esse volume. |
-   | Servidor Web | Potência computacional do servidor Web. | Quantidade de solicitações. O armazenamento em cache reduz esse volume. |
+   | Cache de saída | Memória do servidor AEM (memória principal e disco rígido). | Número e tamanho das páginas no cache de saída, o número de dependências por página. O cache do Dispatcher baixa esse volume. |
+   | Servidor Web | Potência computacional do servidor Web. | Número de solicitações. O armazenamento em cache reduz esse volume. |
    | Modelo | Potência computacional do servidor Web. | Complexidade dos modelos. |
    | Repositório | Desempenho do repositório. | Número de páginas carregadas do repositório. |
 
@@ -368,9 +367,9 @@ Antes de discutir as métricas relacionadas, uma definição rápida dos termos:
 
 As seções anteriores detalham as métricas principais a serem definidas.
 
-Dependendo das suas necessidades específicas, pode ser útil definir métricas adicionais, isoladamente ou levando em conta as classificações acima.
+Dependendo de suas necessidades específicas, pode ser útil definir métricas adicionais, isoladamente ou considerando as classificações acima.
 
-No entanto, é preferível ter um pequeno conjunto de métricas principais e precisas que funcionam de forma fácil e confiável, em vez de tentar medir e definir cada aspecto do seu site. Por sua natureza, seu site começará a mudar e evoluir assim que for entregue aos usuários.
+No entanto, é preferível ter um pequeno conjunto de métricas principais e precisas que funcionam de forma fácil e confiável, em vez de tentar medir e definir cada aspecto do seu site. Por sua natureza, seu site começa a mudar e evoluir quando é entregue a seus usuários.
 
 ## Segurança {#security}
 
@@ -384,13 +383,13 @@ O [Lista de verificação de segurança](/help/sites-administering/security-chec
 >
 >O seguinte:
 >
->* Oferece uma visão geral relacionada ao *first* Implementação de um projeto AEM.
+>* Oferece uma visão geral relacionada ao *first* implementação de um projeto AEM.
 >* Destina-se a uma visão geral abstrata; consulte o [Lista de verificação do projeto](/help/managing/best-practices.md) para fases/etapas/tarefas específicas.
 >* Qualquer escala de tempo é teórica.
 >
 
 
-Para uma nova implementação de um projeto de AEM padrão, você precisará considerar tarefas como:
+Para uma nova implementação de um projeto de AEM padrão, considere tarefas como:
 
 * Transferir do processo de vendas.
 * Implementação do aplicativo do cliente (**Desenvolvimento**).
@@ -407,7 +406,7 @@ Para todos os aspectos, é recomendável usar uma abordagem iterativa:
 
 >[!NOTE]
 >
->Divida o lançamento do projeto em **Lançamento(s) suave(s)** (disponibilidade reduzida, várias iterações) e **Inicialização forçada** (disponibilidade total - ao vivo) para permitir o ajuste, a otimização e a formação dos utilizadores em condições realistas no ambiente de produção.
+>Para permitir o ajuste, otimização e treinamento do usuário em condições realistas no ambiente de produção, divida o lançamento do projeto em **Lançamento suave** (disponibilidade reduzida, várias iterações) e **Inicialização forçada** (disponibilidade total - ao vivo).
 
 >[!NOTE]
 >
@@ -462,7 +461,7 @@ Alguns pontos a serem observados para cada categoria são:
       * Ajuda a definir o conceito de conteúdo.
       * Define o uso e o layout do MSM.
       * Define funções, grupos, fluxos de trabalho e permissões.
-   * Considere se a criação de página offline será útil.
+   * Considere se a criação de página offline é útil.
    * Plano para a criação antecipada de primeiras páginas e conteúdo (para uso em testes e feedback).
    * Plano de migração de conteúdo existente.
    * Plano de &quot;migração automática&quot; após a refatoração.
@@ -470,7 +469,7 @@ Alguns pontos a serem observados para cada categoria são:
 
 ## Estimando o tempo e o esforço {#estimating-time-and-effort}
 
-Dependendo da lista de tarefas resultante, é possível fazer estimativas iniciais de tempo e esforço para definições de tarefas (de alto nível). Isso deve incluir uma indicação de quem (cliente ou parceiro) fará o que e quando.
+Dependendo da lista de tarefas resultante, é possível fazer estimativas iniciais de tempo e esforço para definições de tarefas (de alto nível). Essas estimativas devem incluir uma indicação de quem (cliente ou parceiro) faz o que e quando.
 
 A lista a seguir mostra aproximações padrão e inter-relações de esforço envolvidas e, portanto, custos:
 
@@ -480,7 +479,7 @@ A lista a seguir mostra aproximações padrão e inter-relações de esforço en
 
 | Fase | Esforço |
 |---|---|
-| Desenvolvimento | Uma estimativa aproximada de 2 a 4 horas para cada nó do componente cobrirá todos os requisitos de desenvolvimento. |
+| Desenvolvimento | Uma estimativa aproximada de 2 a 4 horas para cada nó do componente que abrange todos os requisitos de desenvolvimento. |
 | Teste do desenvolvedor | 15% do Desenvolvimento |
 | Acompanhamento | 10% do Desenvolvimento |
 | Documentação | 15% do Desenvolvimento |
@@ -514,7 +513,7 @@ As seguintes métricas do site devem ser definidas:
 
 ## Visão geral de ferramentas potenciais {#overview-of-potential-tools}
 
-A lista a seguir é fornecida para informá-lo sobre as ferramentas que podem ser usadas. Trata-se de uma introdução, não de uma lista de recomendações extensa, e certamente não deve dissuadi-lo de utilizar quaisquer outros instrumentos que preferir.
+A lista a seguir é fornecida para informá-lo sobre as ferramentas que podem ser usadas. Ela é uma introdução, não uma lista de recomendações extensa, e não deve impedir o uso de outras ferramentas.
 
 <table>
  <tbody>
@@ -539,10 +538,10 @@ A lista a seguir é fornecida para informá-lo sobre as ferramentas que podem se
   </tr>
   <tr>
    <td>Selênio</td>
-   <td><a href="https://docs.seleniumhq.org/">Selênio</a> O é uma ferramenta de teste Open Source. Os testes são executados diretamente no navegador, emulando o funcionamento dos usuários.</td>
+   <td><a href="https://www.selenium.dev/">Selênio</a> O é uma ferramenta de teste Open Source. Os testes são executados diretamente no navegador, emulando o funcionamento dos usuários.</td>
   </tr>
   <tr>
-   <td>Projeto Microsoft</td>
+   <td>Projeto Microsoft®</td>
    <td>Uma ferramenta de gerenciamento de projeto comumente usada.</td>
   </tr>
   <tr>
@@ -555,7 +554,7 @@ A lista a seguir é fornecida para informá-lo sobre as ferramentas que podem se
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>O Eclipse é um IDE de código aberto, composto de vários projetos. Eles se concentram na criação de uma plataforma de desenvolvimento aberta composta de estruturas, ferramentas e tempos de execução extensíveis para a criação, implantação e gerenciamento de software durante todo o ciclo de vida.</p> <p>Consulte <a href="/help/sites-developing/howto-projects-eclipse.md">Como desenvolver projetos AEM usando o Eclipse</a> para obter mais informações.</p> </td>
+   <td><p>O Eclipse é um IDE de código aberto, composto de vários projetos. Tem como foco a criação de uma plataforma de desenvolvimento aberta composta de estruturas, ferramentas e tempos de execução extensíveis para a criação, implantação e gerenciamento de software durante todo o ciclo de vida.</p> <p>Consulte <a href="/help/sites-developing/howto-projects-eclipse.md">Como desenvolver projetos AEM usando o Eclipse</a> para obter mais informações.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>

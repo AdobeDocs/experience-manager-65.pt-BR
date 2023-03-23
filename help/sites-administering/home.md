@@ -2,10 +2,10 @@
 title: Guia do usuário de administração do AEM 6.5
 description: Saiba mais sobre a administração do AEM 6.5. Esses guias abordam recursos do site, operações de implantação, recursos de segurança, personalização, integração e muito mais.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 29%
+source-wordcount: '328'
+ht-degree: 26%
 
 ---
 
@@ -18,7 +18,7 @@ Saiba mais sobre a administração do AEM 6.5. Esses guias abordam recursos do s
 * [Introdução ao AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR)
 * [Notas de versão do AEM 6.5](/help/release-notes/home.md)
 * [Atualizações recentes na documentação](https://helpx.adobe.com/experience-manager/documentation-updates.html)
-* [Lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md)
+* [Lista de verificação de segurança AEM](/help/sites-administering/security-checklist.md)
 
 ## Guias do usuário do AEM 6.5
 
@@ -28,7 +28,7 @@ Saiba mais sobre a administração do AEM 6.5. Esses guias abordam recursos do s
 | [Guia do usuário do Assets](/help/assets/home.md) | Saiba como criar, gerenciar, fornecer e otimizar ativos digitais. |
 | [Guia do usuário do Forms](/help/forms/home.md) | Este guia descreve como criar, gerenciar, publicar e atualizar formulários digitais. |
 | [Guia do usuário do Communities](/help/communities/home.md) | Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais. |
-| [Guia de administração](/help/sites-administering/home.md) | Saiba mais sobre como administrar o AEM |
+| [Guia de administração](/help/sites-administering/home.md) | Saiba como administrar AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no AEM. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no AEM na interface do usuário clássica. |
 | [Guia do usuário do Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=pt-BR) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
@@ -37,7 +37,6 @@ Saiba mais sobre a administração do AEM 6.5. Esses guias abordam recursos do s
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto de AEM com êxito. |
 | [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre a Commerce Integration Framework no AEM. |
 | [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Este guia mostra como compartilhar conteúdo gerado pelo usuário com o Livefyre. |
 
 ## Principais recursos AEM
 

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 44%
+source-wordcount: '607'
+ht-degree: 33%
 
 ---
 
@@ -238,10 +238,6 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
    <td>Descarregamento</td>
   </tr>
   <tr>
-   <td> </td>
-   <td>Configuração do Livefyre</td>
-  </tr>
-  <tr>
    <td>Segurança</td>
    <td> </td>
   </tr>
@@ -438,7 +434,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Scaffolding da página padrão </td>
-   <td>Com o scaffolding, é possível criar um formulário (um scaffold) com os campos que refletem a estrutura desejada para suas páginas e usar este formulário para criar facilmente as páginas com base nesta estrutura.</td>
+   <td>Com o scaffolding, você pode criar um formulário (um scaffold) com os campos que refletem a estrutura desejada para suas páginas e usar esse formulário para criar facilmente páginas com base nessa estrutura.</td>
   </tr>
   <tr>
    <td>Segurança - Configuração de autoatendimento </td>
@@ -446,7 +442,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Segmentação</td>
-   <td>Os visitantes têm interesses e objetivos diferentes quando chegam a um site. Compreender essas metas e atender às expectativas é um fator importante para o sucesso do marketing online. A segmentação ajuda a conseguir isso ao analisar e caracterizar os detalhes do visitante.<br /> </td>
+   <td>Os visitantes têm interesses e objetivos diferentes quando chegam a um site. Entender essas metas e atender às expectativas é um fator importante de sucesso para o marketing online. A segmentação ajuda a conseguir isso ao analisar e caracterizar os detalhes do visitante.<br /> </td>
   </tr>
   <tr>
    <td>inquilinos</td>
