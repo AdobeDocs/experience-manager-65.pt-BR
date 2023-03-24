@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 0caaa4b5de519567df4a527f62a2583abd7ed937
 workflow-type: tm+mt
-source-wordcount: '2582'
-ht-degree: 3%
+source-wordcount: '2593'
+ht-degree: 2%
 
 ---
 
@@ -173,9 +173,9 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 Crie uma configuração de implementação quando as configurações de implementação instaladas não atenderem aos requisitos do aplicativo:
 
 * [Criar a configuração de implementação](#create-the-rollout-configuration).
-* [Adicionar ações de sincronização à configuração de implementação](#add-synchronization-actions-to-the-rollout-configuration).
+* [Adicionar ações de sincronização à configuração de implantação](#add-synchronization-actions-to-the-rollout-configuration).
 
-A nova configuração de implementação estará disponível para você quando definir configurações de implementação em um blueprint ou página de Live Copy.
+A nova configuração de implementação estará disponível para você ao definir configurações de implementação em um blueprint ou página de Live Copy.
 
 >[!NOTE]
 >
@@ -194,13 +194,14 @@ Para criar uma nova configuração de implementação:
    >[!NOTE]
    >Esta é a versão personalizada do seu projeto:
    >`/libs/msm/wcm/rolloutconfigs`
-   >Deve ser criada se essa for a primeira configuração.
+   >Se esta for a sua primeira configuração, esta `/libs` ramificação deve ser usada como um modelo para criar a nova ramificação em `/apps`.
 
    >[!NOTE]
    >
    >Você não deve alterar nada no caminho /libs.
    >Isso ocorre porque o conteúdo de /libs é substituído na próxima vez que você atualizar sua instância (e pode ser substituído quando você aplicar um hotfix ou pacote de recursos).
    >O método recomendado para configuração e outras alterações é:
+   >
    >* Recrie o item necessário (ou seja, como ele existe em /libs) em /apps
    >* Faça alterações em /apps
 
@@ -675,11 +676,11 @@ Em seguida, é necessário garantir que:
 
 * Email de contato:
 
-   * Está excluído das propriedades implantadas; see [Excluindo propriedades e tipos de nó da sincronização](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization).
+* Está excluído das propriedades implantadas; see [Excluindo propriedades e tipos de nó da sincronização](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization).
 
 * Estilo visual principal:
 
-   * Certifique-se de que você não tem permissão para editar essa propriedade na interface habilitada para toque, a menos que a herança seja cancelada, e também que você possa restabelecer a herança; isso é controlado clicando nos links de cadeia/cadeia quebrada que são alternados para indicar o status da conexão.
+* Certifique-se de que você não tem permissão para editar essa propriedade na interface habilitada para toque, a menos que a herança seja cancelada, e também que você possa restabelecer a herança; isso é controlado clicando nos links de cadeia/cadeia quebrada que são alternados para indicar o status da conexão.
 
 Se uma propriedade de página está sujeita a implantação e, portanto, sujeita a cancelamento/reintegração da herança ao editar, é controlada pela propriedade de diálogo:
 
@@ -689,10 +690,10 @@ Se uma propriedade de página está sujeita a implantação e, portanto, sujeita
    * criará o símbolo de vínculo de cadeia na caixa de diálogo
    * permite editar somente se a herança for cancelada (o vínculo da cadeia está quebrado)
    * se aplica somente ao primeiro nível filho do recurso
-   * **Tipo**: `String`
+      * **Tipo**: `String`
 
-   * **Valor**: detém o nome da propriedade em consideração (e é comparável ao valor da propriedade `name`; por exemplo, consulte
-      `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
+      * **Valor**: detém o nome da propriedade em consideração (e é comparável ao valor da propriedade `name`; por exemplo, consulte
+         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 When `cq-msm-lockable` tiver sido definida, a quebra/fechamento da cadeia interagirá com o MSM da seguinte forma:
 
