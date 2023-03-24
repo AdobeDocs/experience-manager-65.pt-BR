@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 0caaa4b5de519567df4a527f62a2583abd7ed937
+source-git-commit: 7bed185be14938f1165d56f9b758961ae0f5c479
 workflow-type: tm+mt
-source-wordcount: '2593'
-ht-degree: 2%
+source-wordcount: '2579'
+ht-degree: 1%
 
 ---
 
@@ -45,8 +45,8 @@ Esta página ajuda a estender as funcionalidades do Gerenciador de vários sites
 
 O gerenciamento de vários sites consiste nos seguintes pacotes:
 
-* [com.day.cq.wcm.msm.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 Os principais objetos de API MSM interagem da seguinte maneira (consulte também [Termos usados](/help/sites-administering/msm.md#terms-used)):
 
@@ -105,8 +105,8 @@ Os principais objetos de API MSM interagem da seguinte maneira (consulte também
 
 Crie ações de sincronização personalizadas para usar com suas configurações de implementação. Crie uma ação de sincronização quando a variável [ações instaladas](/help/sites-administering/msm-sync.md#installed-synchronization-actions) não atenda aos requisitos específicos de seu aplicativo. Para fazer isso, crie duas classes:
 
-* A implementação da [ `com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface que executa a ação.
-* Um componente OSGI que implementa o [ `com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) e cria instâncias de `LiveAction` classe .
+* A implementação da [ `com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface que executa a ação.
+* Um componente OSGI que implementa o [ `com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) e cria instâncias de `LiveAction` classe .
 
 O `LiveActionFactory` cria instâncias do `LiveAction` classe para uma determinada configuração:
 
@@ -129,7 +129,7 @@ Use o `LiveAction` nó de configuração no repositório para armazenar informa�
 
 Por exemplo, um `LiveAction` precisa armazenar o nome do autor do blueprint. Uma propriedade do nó de configuração inclui o nome da propriedade da página do blueprint que armazena as informações. No tempo de execução, a variável `LiveAction` recupera o nome da propriedade da configuração e obtém o valor da propriedade.
 
-O parâmetro da variável ` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` é um método `Resource` objeto. Essa `Resource` o objeto representa a variável `cq:LiveSyncAction` nó para essa ação em tempo real na configuração de implementação; see [Criação de uma configuração de implementação](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Como de costume, ao usar um nó de configuração, você deve adaptá-lo a um `ValueMap` objeto:
+O parâmetro da variável [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) é um método `Resource` objeto. Essa `Resource` o objeto representa a variável `cq:LiveSyncAction` nó para essa ação em tempo real na configuração de implementação; see [Criação de uma configuração de implementação](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Como de costume, ao usar um nó de configuração, você deve adaptá-lo a um `ValueMap` objeto:
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -147,9 +147,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 Os seguintes objetos são fornecidos como parâmetros da variável `execute` do método `LiveAction` objeto:
 
-* A [ `Resource`](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) objeto que representa a origem da Live Copy.
+* A [ `Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) objeto que representa a origem da Live Copy.
 * A `Resource` objeto que representa o destino da Live Copy.
-* O [ `LiveRelationship`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) objeto para a live copy.
+* O [ `LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) objeto para a live copy.
 * O `autoSave` indica se sua `LiveAction` O deve salvar as alterações feitas no repositório.
 
 * O valor de redefinição indica o modo de redefinição de implementação.
@@ -166,7 +166,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->O `Resource` argumentos podem ser `null` ou `Resources` objetos que não se adaptam a `Node` objetos, como [ `NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) objetos.
+>O `Resource` argumentos podem ser `null` ou `Resources` objetos que não se adaptam a `Node` objetos, como [ `NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) objetos.
 
 ## Criação de uma nova configuração de implementação {#creating-a-new-rollout-configuration}
 
@@ -198,12 +198,12 @@ Para criar uma nova configuração de implementação:
 
    >[!NOTE]
    >
-   >Você não deve alterar nada no caminho /libs.
-   >Isso ocorre porque o conteúdo de /libs é substituído na próxima vez que você atualizar sua instância (e pode ser substituído quando você aplicar um hotfix ou pacote de recursos).
+   >Você não deve alterar nada na variável `/libs` caminho.
+   >Isso ocorre porque o conteúdo da variável `/libs` O é substituído na próxima vez que você atualizar sua instância (e pode ser substituído quando você aplicar um hotfix ou pacote de recursos).
    >O método recomendado para configuração e outras alterações é:
    >
-   >* Recrie o item necessário (ou seja, como ele existe em /libs) em /apps
-   >* Faça alterações em /apps
+   >* Recrie o item necessário (ou seja, como ele existe em `/libs`) `/apps`
+   >* Faça quaisquer alterações no `/apps`
 
 
 1. Nos termos do **Criar** um nó com as seguintes propriedades:
