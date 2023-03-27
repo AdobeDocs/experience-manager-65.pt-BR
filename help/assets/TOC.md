@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
-source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
+source-git-commit: 0c6c269e9f0cbdcc0c5e3b925ef09b9923cbb2b3
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 50%
+source-wordcount: '683'
+ht-degree: 49%
 
 ---
 
@@ -108,7 +108,7 @@ ht-degree: 50%
    + [Entender os conceitos de metadados](metadata-concepts.md)
    + [Configurar a funcionalidade de metadados](metadata-config.md)
    + [Esquemas de metadados](metadata-schemas.md)
-   + [Write-back de XMP a execuções](xmp-writeback.md)
+   + [XMP gravação em representações](xmp-writeback.md)
    + [Compartilhamento de link de ativos](link-sharing.md)
    + [Relatórios de ativos](asset-reports.md)
    + [Configurar o Serviço de conteúdo inteligente para marcação](config-smart-tagging.md)
@@ -158,6 +158,7 @@ ht-degree: 50%
 + Gerenciar ativos {#managing}
    + [Gerenciar ativos digitais](manage-assets.md)
    + [Gerenciar coleções](manage-collections.md)
+   + [Seletor de ativos](asset-selector.md)
    + [Habilitar detecção de duplicatas](duplicate-detection.md)
    + [Organizar ativos digitais](organize-assets.md)
    + [Gerenciar ativos de vídeo](managing-video-assets.md)
