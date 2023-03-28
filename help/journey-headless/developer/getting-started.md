@@ -2,7 +2,7 @@
 title: Introdução ao AEM Headless
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais sobre pré-requisitos do AEM headless.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 40e81b63e28a75c769507654d7f1d75da82f0bd6
 workflow-type: tm+mt
 source-wordcount: '3031'
 ht-degree: 100%
@@ -289,5 +289,5 @@ Mesmo sendo recomendado que você siga para a próxima parte da jornada de desen
 * [Documentação Técnica do GraphQL](https://graphql.org) - A definição do GraphQL (link externo)
 * [API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) - Documentação técnica que explica como criar solicitações para acessar e fornecer Fragmentos de Conteúdo
 * [API REST do Assets](/help/assets/assets-api-content-fragments.md) - Documentação técnica que explica como criar e modificar Fragmentos de Conteúdo (e outros ativos)
-* [Consultas Persistentes](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching) - Documentação técnica sobre consultas persistentes no AEM
+* [Consultas Persistentes](/help/assets/content-fragments/persisted-queries.md) - Documentação técnica sobre consultas persistentes no AEM
 * [Headful e Headless no AEM](/help/sites-developing/headful-headless.md) - Uma discussão completa dos níveis de integração headless disponíveis no AEM
