@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
 workflow-type: tm+mt
-source-wordcount: '4689'
+source-wordcount: '4677'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Este pacote foi criado para **Autor do OSGI do AEM Forms 6.4**, foi testada e, p
 | VERSÃO AEM | VERSÃO DO PACOTE AEM Forms | STATUS |
 |---|---|---|
 | 6.4 | 5.0.86 | **Compatível** |
-| 6,5 | 6.0.80 | **Compatível** |
+| 6.5 | 6.0.80 | **Compatível** |
 | 6.5.3 | 6.0.122 | **Compatível** |
 
 Este pacote contém a configuração de nuvem que suporta as seguintes versões de plataforma:
@@ -348,7 +348,7 @@ Esta seção contém detalhes e instruções sobre a configuração do Adobe Ana
 
 * [Conectar ao Adobe Analytics e Criar Frameworks](../../sites-administering/adobeanalytics-connect.md)
 
-* [Visualizar dados de análise de página](../../sites-authoring/pa-using.md)
+* [Visualizar dados de análise da página](../../sites-authoring/pa-using.md)
 
 * [Configuração de análises e relatórios](configure-analytics-forms-documents.md)
 
@@ -748,12 +748,12 @@ Esta seção contém informações sobre recursos de demonstração e decisões 
 
 ### Ativação do complemento Chrome para teste de acessibilidade {#enable-chrome-add-on}
 
-Para executar o teste de acessibilidade primeiro, é necessário instalar o plug-in do Chrome, isso pode ser encontrado [here](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en).
+Para executar o teste de acessibilidade, instale o plug-in do Chrome encontrado [here](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en). <!-- This URL is a 404. Please fix and update this topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
-Depois de instalá-la, carregue a página que deseja testar no Chrome Browser (Observação: Ter várias guias abertas pode afetar sua pontuação, é preferível ter apenas uma guia aberta). Depois que a página é carregada
-**clique com o botão direito** na página e selecione **Auditorias** guia . Lá os desenvolvedores podem selecionar o tipo de auditoria a ser executada pelo plug-in de Acessibilidade. Depois que todas as opções desejadas forem selecionadas, o usuário poderá selecionar o botão Gerar relatório . Isso gerará um documento PDF que mostra a classificação de acessibilidade geral e o que pode ser usado para aumentar a classificação de acessibilidade em geral.
+Após a instalação, carregue a página que deseja testar no navegador Chrome (Observação: Ter várias guias abertas pode afetar sua pontuação, é preferível ter apenas uma guia aberta). Depois que a página é carregada
+**clique com o botão direito** na página e selecione **Auditorias** guia . Lá os desenvolvedores podem selecionar o tipo de auditoria a ser executada pelo plug-in de Acessibilidade. Depois que todas as opções desejadas forem selecionadas, o usuário poderá clicar no botão Gerar relatório . Isso gerará um documento PDF que mostra a classificação de acessibilidade geral e o que pode ser usado para aumentar a classificação de acessibilidade em geral.
 
-Depois que o relatório for executado, os usuários poderão esperar o seguinte:
+Após a execução do relatório, os usuários podem esperar o seguinte:
 
 ![Relatório de acessibilidade](assets/aftia-accessibility.jpg)
 

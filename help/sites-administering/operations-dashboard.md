@@ -12,9 +12,9 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: dd8f24ce412a8ca6c44224a7602533dae0898e92
+source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
 workflow-type: tm+mt
-source-wordcount: '6230'
+source-wordcount: '6065'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Introdução {#introduction}
 
-O Painel de Operações no AEM 6 ajuda os operadores do sistema a monitorar AEM integridade do sistema imediatamente. Ele também fornece informações de diagnóstico geradas automaticamente sobre aspectos relevantes do AEM e permite configurar e executar automação de manutenção independente para reduzir significativamente as operações do projeto e os casos de suporte. O Painel de Operações pode ser estendido com verificações de integridade personalizadas e tarefas de manutenção. Além disso, os dados do Painel de operações podem ser acessados a partir de ferramentas de monitoramento externas via JMX.
+O Painel de Operações no AEM 6 ajuda os operadores do sistema a monitorar AEM integridade do sistema imediatamente. Ele também fornece informações de diagnóstico geradas automaticamente sobre aspectos relevantes do AEM e permite configurar e executar a automação de manutenção independente para reduzir significativamente as operações do projeto e os casos de suporte. O Painel de Operações pode ser estendido com verificações de integridade personalizadas e tarefas de manutenção. Além disso, os dados do Painel de operações podem ser acessados a partir de ferramentas de monitoramento externas via JMX.
 
 **O Painel de Operações:**
 
@@ -36,17 +36,17 @@ Ele pode ser acessado indo até **Ferramentas** - **Operações** na tela AEM We
 
 >[!NOTE]
 >
->Para poder acessar o Painel de Operações, o usuário conectado deve fazer parte do grupo de usuários &quot;Operadores&quot;. Para obter mais informações, consulte a documentação em [Administração de usuário, grupo e direito de acesso](/help/sites-administering/user-group-ac-admin.md).
+>Para acessar o Painel de Operações, o usuário conectado deve fazer parte do grupo de usuários &quot;Operadores&quot;. Para obter mais informações, consulte a documentação em [Administração de usuário, grupo e direito de acesso](/help/sites-administering/user-group-ac-admin.md).
 
 ## Relatórios de integridade {#health-reports}
 
-O sistema de Relatório de Integridade fornece informações sobre a integridade de uma instância de AEM por meio de Sling Health Checks. Isso pode ser feito por meio de solicitações OSGI, JMX, HTTP (via JSON) ou pela interface de toque. Ele oferece medidas e o limite de determinados contadores configuráveis e, em alguns casos, oferecerá informações sobre como resolver o problema.
+O sistema de Relatório de Integridade fornece informações sobre a integridade de uma instância de AEM por meio de Sling Health Checks. Você realiza essa operação por meio de solicitações OSGI, JMX, HTTP (por meio de JSON) ou pela interface de toque. Ele oferece medidas e o limite de determinados contadores configuráveis e, às vezes, oferece informações sobre como resolver o problema.
 
 Ela tem vários recursos, descritos abaixo.
 
 ## Verificações de integridade {#health-checks}
 
-O **Relatórios de integridade** são um sistema de cartões que indica uma boa ou má saúde em relação a uma determinada área de produtos. Esses cartões são visualizações das Verificações de integridade do Sling, que agregam dados do JMX e de outras fontes e expõem as informações processadas novamente como MBeans. Esses MBeans também podem ser inspecionados no [Console da Web JMX](/help/sites-administering/jmx-console.md)nos termos do **org.apache.sling.health.check** domínio.
+O **Relatórios de integridade** são um sistema de cartões que indica uma integridade boa ou ruim em uma área específica do produto. Esses cartões são visualizações das Verificações de integridade do Sling, que agregam dados do JMX e de outras fontes e expõem as informações processadas novamente como MBeans. Esses MBeans também podem ser inspecionados no [Console da Web JMX](/help/sites-administering/jmx-console.md)nos termos do **org.apache.sling.health.check** domínio.
 
 A interface dos Relatórios de integridade pode ser acessada por meio do **Ferramentas** - **Operações** - **Relatórios de integridade** na tela de Boas-vindas AEM ou diretamente pelo seguinte URL:
 
@@ -65,21 +65,21 @@ Existem dois tipos de controlos sanitários no AEM 6:
 1. Verificações de integridade individual
 1. Verificações de integridade composta
 
-Um **Verificação de integridade individual** é uma única verificação de integridade que corresponde a um cartão de status. As Verificações de Integridade Individual podem ser configuradas com regras ou limites e podem fornecer uma ou mais dicas e links para resolver problemas de integridade identificados. Vamos considerar a verificação &quot;Erros de registro&quot; como um exemplo: se houver entradas ERROR nos logs da instância, você as encontrará na página de detalhes da verificação de integridade. Na parte superior da página, você verá um link para o analisador de &quot;Mensagem de log&quot; na seção Ferramentas de diagnóstico, que permitirá que você analise esses erros com mais detalhes e reconfigure os registradores.
+Um **Verificação de integridade individual** é uma única verificação de integridade que corresponde a um cartão de status. As Verificações de Integridade Individual podem ser configuradas com regras ou limites e podem fornecer uma ou mais dicas e links para resolver problemas de integridade identificados. Vamos considerar a verificação &quot;Erros de registro&quot; como um exemplo: se houver entradas ERROR nos logs da instância, localize-as na página de detalhes da verificação de integridade. Na parte superior da página, você pode ver um link para o analisador de &quot;Mensagem de log&quot; na seção Ferramentas de diagnóstico, que permite analisar esses erros com mais detalhes e reconfigurar os registradores.
 
 A **Verificação de integridade composta** é uma verificação que agrega informações de várias verificações individuais.
 
-Os controlos sanitários compostos são configurados com o auxílio de **filtrar tags**. Em essência, todas as verificações únicas que têm a mesma tag de filtro serão agrupadas como uma verificação de integridade composta. Uma Verificação de integridade composta terá um status OK somente se todas as verificações únicas que ela agregar tiverem status OK também.
+Os controlos sanitários compostos são configurados com o auxílio de **filtrar tags**. Essencialmente, todas as verificações únicas que têm a mesma tag de filtro são agrupadas como uma verificação de integridade composta. Uma Verificação de Integridade Composta tem um status OK somente se todas as verificações únicas de que ela agrega também tiverem status OK.
 
 ### Como criar verificações de integridade {#how-to-create-health-checks}
 
-No Painel de Operações, é possível visualizar o resultado de Verificações de Integridade individuais e compostas.
+No Painel de Operações, você pode visualizar o resultado de Verificações de Integridade individuais e compostas.
 
 ### Criação de uma verificação de integridade individual {#creating-an-individual-health-check}
 
 A criação de uma Verificação de Integridade individual envolve duas etapas: implementando uma Verificação de Integridade do Sling e adicionando uma entrada para a Verificação de Integridade nos nós de configuração do Dashboard.
 
-1. Para criar uma Verificação de Integridade do Sling, é necessário criar um componente OSGI implementando a interface do Sling HealthCheck. Você adicionará esse componente dentro de um pacote. As propriedades do componente identificarão totalmente a Verificação de integridade. Quando o componente estiver instalado, um MBean JMX será criado automaticamente para a verificação de integridade. Consulte a [Documentação de verificação de integridade do Sling](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) para obter mais informações.
+1. Para criar uma Verificação de Integridade do Sling, crie um componente OSGI implementando a interface do Sling HealthCheck. Adicione este componente dentro de um pacote. As propriedades do componente identificam totalmente a Verificação de integridade. Depois que o componente é instalado, um MBean JMX é criado automaticamente para a Verificação de integridade. Consulte a [Documentação de verificação de integridade do Sling](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) para obter mais informações.
 
    Exemplo de um componente de Verificação de integridade do Sling, gravado com anotações do componente de serviço OSGI:
 
@@ -101,9 +101,9 @@ A criação de uma Verificação de Integridade individual envolve duas etapas: 
 
    >[!NOTE]
    >
-   >O `MBEAN_NAME` define o nome do mbean que será gerado para esta verificação de integridade.
+   >O `MBEAN_NAME` define o nome do mbean gerado para esta verificação de integridade.
 
-1. Depois de criar uma Verificação de integridade, um novo nó de configuração precisa ser criado para torná-lo acessível na interface do Painel de operações. Para esta etapa, é necessário conhecer o nome do Feijão JMX da Verificação de Integridade (o `MBEAN_NAME` propriedade). Para criar uma configuração para a Verificação de integridade, abra o CRXDE e adicione um novo nó (do tipo **nt:unstructured**) no seguinte caminho: `/apps/settings/granite/operations/hc`
+1. Depois de criar uma Verificação de integridade, um novo nó de configuração deve ser criado para torná-lo acessível na interface do Painel de operações. Para esta etapa, é necessário conhecer o nome do Feijão JMX da Verificação de Integridade (o `MBEAN_NAME` propriedade). Para criar uma configuração para a Verificação de integridade, abra o CRXDE e adicione um nó (do tipo **nt:unstructured**) no seguinte caminho: `/apps/settings/granite/operations/hc`
 
    As seguintes propriedades devem ser definidas no novo nó:
 
@@ -120,7 +120,7 @@ A criação de uma Verificação de Integridade individual envolve duas etapas: 
    >
    >O caminho do recurso acima é criado da seguinte maneira: se o nome do bean da sua verificação de integridade for &quot;teste&quot;, adicione &quot;teste&quot; ao final do caminho `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
    >
-   >Assim, o caminho final será:
+   >Portanto, o caminho final é o seguinte:
    >
    >`/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/test`
 
@@ -134,34 +134,34 @@ A criação de uma Verificação de Integridade individual envolve duas etapas: 
    >`sling:configPropertyInherit`
    >
    >
-   >Isso instruirá o gerenciador de configuração a mesclar as novas configurações com as existentes de `/libs`.
+   >Esse processo instrui o gerenciador de configuração a mesclar as novas configurações com as existentes de `/libs`.
 
 ### Criando uma Verificação de Integridade Composta {#creating-a-composite-health-check}
 
-A função de uma verificação de integridade composta é agregar várias verificações de integridade individuais que compartilham um conjunto de recursos comuns. Por exemplo, a Verificação de Integridade Composta de Segurança agrupa todas as verificações de integridade individuais que realizam verificações relacionadas com a segurança. A primeira etapa para criar uma verificação composta é adicionar uma nova configuração OSGI. Para ser exibido no Painel de operações, um novo nó de configuração precisa ser adicionado, da mesma forma que fizemos para uma verificação simples.
+A função de uma verificação de integridade composta é agregar várias verificações de integridade individuais que compartilham um conjunto de recursos comuns. Por exemplo, a Verificação de integridade composta de segurança agrupa todas as verificações de integridade individuais que realizam verificações relacionadas à segurança. A primeira etapa para criar uma verificação composta é adicionar uma configuração OSGI. Para ser exibido no Painel de operações, um novo nó de configuração deve ser adicionado, da mesma forma que fizemos para uma verificação simples.
 
 1. Vá para o Web Configuration Manager no console OSGI. Você pode fazer isso acessando `https://serveraddress:port/system/console/configMgr`
 1. Procure a entrada chamada **Verificação de integridade composta do Apache Sling**. Depois de encontrá-lo, observe que há duas configurações já disponíveis: um para as verificações do sistema e outro para as verificações de segurança.
-1. Crie uma nova configuração pressionando o botão &quot;+&quot; no lado direito da configuração. Uma nova janela será exibida, conforme mostrado abaixo:
+1. Crie uma configuração pressionando o botão &quot;+&quot; no lado direito da configuração. Uma nova janela é exibida, conforme mostrado abaixo:
 
    ![chlimage_1-23](assets/chlimage_1-23.jpeg)
 
-1. Crie uma configuração e salve-a. Um Mbean será criado com a nova configuração.
+1. Crie uma configuração e salve-a. Um Mbean é criado com a nova configuração.
 
    A finalidade de cada propriedade de configuração é a seguinte:
 
    * **Nome (hc.name):** O nome da verificação de integridade composta. Recomenda-se um nome significativo.
    * **Tags (hc.tags):** As tags para esta Verificação de Integridade. Se esta verificação de integridade composta se destinar a ser parte de outra verificação de integridade composta (como em uma hierarquia de verificações de integridade), adicione as tags às quais esse composto está relacionado.
-   * **Nome do MBean (hc.mbean.name):** O nome do Mbean que será fornecido ao MBean JMX dessa verificação de integridade composta.
-   * **Tags de filtro (filter.tags):** Esta é uma propriedade específica para verificações de integridade compostas. Essas são as tags que o compósito deve agregar. A verificação de integridade composta agregará sob seu grupo todas as verificações de integridade que tenham qualquer tag correspondente a qualquer uma das tags de filtro desse composto. Por exemplo, uma verificação de integridade composta com as tags de filtro **teste** e **check** agregará todos os controlos de saúde individuais e compostos que tenham qualquer um dos **teste** e **check** tags em sua propriedade de tags ( `hc.tags`).
+   * **Nome do MBean (hc.mbean.name):** O nome do Mbean fornecido ao MBean JMX dessa verificação de integridade composta.
+   * **Tags de filtro (filter.tags):** A propriedade específica para verificações de integridade compostas. Essas são as tags que o compósito deve agregar. A verificação de integridade composta agrega sob seu grupo todas as verificações de integridade que têm qualquer tag correspondente a qualquer uma das tags de filtro desse composto. Por exemplo, uma verificação de integridade composta com as tags de filtro **teste** e **check**, agrega todos os controlos de saúde individuais e compostos que tenham qualquer um dos **teste** e **check** tags em sua propriedade de tags ( `hc.tags`).
 
    >[!NOTE]
    >
    >Um novo Mbean JMX é criado para cada nova configuração da Verificação de integridade composta do Apache Sling.**
 
-1. Finalmente, a entrada da verificação de integridade composta que acabou de ser criada precisa ser adicionada nos nós de configuração do Painel de Operações . O procedimento para o efeito é o mesmo que os controlos sanitários individuais: um nó do tipo **nt:unstructured** precisa ser criada em `/apps/settings/granite/operations/hc`. A propriedade resource do nó será definida pelo valor de **hc.average.name** na configuração OSGI.
+1. Finalmente, a entrada da verificação de integridade composta que foi criada deve ser adicionada nos nós de configuração do Painel de Operações . O procedimento é o mesmo que os controlos sanitários individuais: um nó do tipo **nt:unstructured** deve ser criado em `/apps/settings/granite/operations/hc`. A propriedade resource do nó é definida pelo valor de **hc.average.name** na configuração OSGI.
 
-   Se, por exemplo, você criou uma configuração e definiu a variável **hc.mbean.name** para **diskusage**, os nós de configuração terão esta aparência:
+   Por exemplo, se você criou uma configuração e definiu a variável **hc.mbean.name** para **diskusage**, os nós de configuração têm a seguinte aparência:
 
    * **Nome:** `Composite Health Check`
 
@@ -180,9 +180,9 @@ A função de uma verificação de integridade composta é agregar várias verif
 
    >[!NOTE]
    >
-   >Se você criar verificações de integridade individuais que logicamente pertencem a uma verificação composta que já está presente no Painel por padrão, elas serão automaticamente capturadas e agrupadas na respectiva verificação composta. Por causa disso, não há necessidade de criar um novo nó de configuração para essas verificações.
+   >Se você criar verificações de integridade individuais que logicamente pertencem a uma verificação composta que já está presente no Painel por padrão, elas são automaticamente capturadas e agrupadas na respectiva verificação composta. Por causa disso, não há necessidade de criar um nó de configuração para essas verificações.
    >
-   >Por exemplo, se você criar uma verificação de integridade de segurança individual, tudo o que precisa fazer é atribuir a ela o &quot;**segurança**&quot; e estiver instalado, ele aparecerá automaticamente na verificação composta de Verificações de Segurança no Painel de Operações.
+   >Por exemplo, se você criar uma verificação de integridade de segurança individual, atribua a ela o &quot;**segurança**&quot; e está instalado. Ele aparece automaticamente na verificação composta de Verificações de Segurança no Painel de Operações.
 
 ### Verificações de integridade fornecidas com AEM {#health-checks-provided-with-aem}
 
@@ -194,7 +194,7 @@ A função de uma verificação de integridade composta é agregar várias verif
   </tr>
   <tr>
    <td>Desempenho da consulta</td>
-   <td><p>Este exame de saúde foi simplificado <strong>no AEM 6.4</strong>e agora verifica a função recém-refatorada <code>Oak QueryStats</code> MBean, mais especificamente o <code>SlowQueries </code>atributo. Se as estatísticas contiverem queries lentos, a verificação de integridade retornará um aviso. Caso contrário, retorna o status OK.<br /> </p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.health check:name=queriesStatus,type=HealthCheck</a>.</p> </td>
+   <td><p>Este exame de saúde foi simplificado <strong>no AEM 6.4</strong>e agora verifica o arquivo refatorado recentemente <code>Oak QueryStats</code> MBean, mais especificamente o <code>SlowQueries </code>atributo. Se as estatísticas contiverem queries lentos, a verificação de integridade retornará um aviso. Caso contrário, retorna o status OK.<br /> </p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.health check:name=queriesStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Comprimento da fila de observação</td>
@@ -249,7 +249,7 @@ A função de uma verificação de integridade composta é agregar várias verif
     <ul>
      <li>cada tarefa de manutenção é acompanhada de um exame de saúde associado</li>
      <li>se uma tarefa não for adicionada a uma janela de manutenção, sua verificação de integridade retornará Crítico</li>
-     <li>é necessário configurar as tarefas de manutenção Log de auditoria e Expurgação do fluxo de trabalho ou removê-las das janelas de manutenção. Se deixadas não configuradas, essas tarefas falharão na primeira execução tentada, de modo que a verificação de Manutenção do Sistema retornará o status Crítico.</li>
+     <li>configure as tarefas de manutenção Log de auditoria e Expurgação do fluxo de trabalho ou remova-as das janelas de manutenção. Se deixadas não configuradas, essas tarefas falharão na primeira execução tentada, então a verificação de Manutenção do Sistema retornará o status Crítico.</li>
      <li><strong>Com AEM 6.4</strong>, também há uma verificação para o <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Manutenção de binários Lucene</a> tarefa</li>
      <li>em AEM 6.2 e inferior, a verificação de manutenção do sistema retorna um status Warning logo após a inicialização, pois as tarefas nunca são executadas. A partir da versão 6.3, eles retornarão OK se a primeira janela de manutenção ainda não tiver sido atingida.</li>
     </ul> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.health check:name=systemcontrols,type=HealthCheck</a>.</p> </td>
@@ -313,7 +313,7 @@ A função de uma verificação de integridade composta é agregar várias verif
     <ul>
      <li>retorna Avisar se a instância estiver sendo executada no Java 7, com a limpeza do Cache de Código ativada</li>
      <li>retorna Avisar se a instância estiver sendo executada no Java 7 e o tamanho do Cache de Código Reservado for menor que um limite mínimo (o valor padrão é 90 MB)</li>
-    </ul> <p>O <code>minimum.code.cache.size</code> limite é configurável. Para obter mais informações sobre o erro, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">check</a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"> esta página</a>.</p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
+    </ul> <p>O <code>minimum.code.cache.size</code> limite é configurável. Para obter mais informações sobre o erro, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">verificar esta página</a>.</p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Recurso Buscar erros de caminho</td>
@@ -340,9 +340,9 @@ O Painel de verificação de integridade pode se integrar ao Nagios por meio do 
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre como instalar Nagios e NRPE em seu sistema, consulte o [Documentação do Nagios](https://library.nagios.com/library/products/nagioscore/manuals/).
+   >Para obter mais informações sobre como instalar Nagios e NRPE em seu sistema, consulte o [Documentação do Nagios](https://library.nagios.com/library/products/nagios-core/manuals//).
 
-1. Adicione uma definição de host para o servidor AEM. Isso pode ser feito por meio da Interface Web Nagios XI, usando o Gerenciador de configuração:
+1. Adicione uma definição de host para o servidor AEM. Você pode realizar essa tarefa por meio da Interface Web Nagios XI, usando o Gerenciador de configuração:
 
    1. Abra um navegador e aponte para o servidor Nagios.
    1. Pressione a tecla **Configurar** no menu superior.
@@ -402,9 +402,9 @@ O Painel de verificação de integridade pode se integrar ao Nagios por meio do 
 
 ## Ferramentas de diagnóstico {#diagnosis-tools}
 
-O Painel de Operações também fornece acesso às Ferramentas de Diagnóstico, que podem ajudar a encontrar e solucionar problemas de causas raiz dos avisos provenientes do Painel de Verificação de Integridade, além de fornecer informações importantes de depuração para operadores do sistema.
+O Painel de Operações também fornece acesso às Ferramentas de Diagnóstico, que podem ajudar a encontrar e solucionar problemas de causas raiz dos avisos provenientes do Painel de Verificação de Integridade e fornecer informações importantes de depuração para operadores do sistema.
 
-Entre as suas características mais importantes estão:
+Entre seus recursos mais importantes estão:
 
 * Um analisador de mensagens de log
 * A capacidade de acessar despejos de heap e thread
@@ -416,18 +416,18 @@ Você pode acessar a tela Ferramentas de diagnóstico acessando **Ferramentas - 
 
 ### Mensagens de registro {#log-messages}
 
-Por padrão, a Interface do usuário das mensagens de log exibirá todas as mensagens de ERRO. Se desejar que mais mensagens de log sejam exibidas, será necessário configurar um agente de log com o nível de log apropriado.
+A Interface do usuário das mensagens de log exibe todas as mensagens ERROR por padrão. Se desejar que mais mensagens de log sejam exibidas, configure um agente de log com o nível de log apropriado.
 
-As mensagens de log usam um appender no log de memória e, portanto, não estão relacionadas aos arquivos de log. Outra consequência é que alterar os níveis de log nessa interface não alterará as informações que são registradas nos arquivos de log tradicionais. Adicionar e remover loggers nesta interface do usuário afetará somente o logger da memória. Além disso, observe que a alteração das configurações do agente de log será refletida no futuro do agente de log da memória - as entradas que já estão registradas e não são mais relevantes não são excluídas, mas entradas semelhantes não serão registradas no futuro.
+As mensagens de log usam um appender no log de memória e, portanto, não estão relacionadas aos arquivos de log. Outra consequência é que alterar os níveis de log nessa interface não altera as informações que são registradas nos arquivos de log tradicionais. Adicionar e remover loggers nesta interface do usuário afeta apenas o logger da memória. Além disso, alterar as configurações do logger é refletido no futuro do logger da memória. As entradas que já estão registradas e não são mais relevantes não são excluídas, mas entradas semelhantes não são registradas no futuro.
 
-Você pode configurar o que é registrado fornecendo configurações de logger do botão de engrenagem superior esquerdo na interface do usuário. Lá, você pode adicionar, remover ou atualizar configurações do agente de log. Uma configuração de logger é composta por um **nível de log** (AVISO / INFORMAÇÕES / DEBUG) e um **nome do filtro**. O **nome do filtro** tem a função de filtrar a fonte das mensagens de log que são registradas. Como alternativa, se um agente de log deve capturar todas as mensagens de log do nível especificado, o nome do filtro deve ser &quot;**root**&quot;. Definir o nível de um agente de log acionará a captura de todas as mensagens com um nível igual ou superior ao especificado.
+Você pode configurar o que é registrado fornecendo configurações de logger do botão de engrenagem superior esquerdo na interface do usuário. Lá, você pode adicionar, remover ou atualizar configurações do agente de log. Uma configuração de logger é composta por um **nível de log** (AVISO / INFORMAÇÕES / DEBUG) e um **nome do filtro**. O **nome do filtro** tem a função de filtrar a fonte das mensagens de log que são registradas. Como alternativa, se um agente de log deve capturar todas as mensagens de log do nível especificado, o nome do filtro deve ser &quot;**root**&quot;. Definir o nível de um agente de log aciona a captura de todas as mensagens com um nível igual ou superior ao especificado.
 
 Exemplos:
 
 * Se você planeja capturar todas as **ERRO** messages - nenhuma configuração é necessária. Todas as mensagens de ERRO são capturadas por padrão.
 * Se você planeja capturar todas as **ERRO**, **AVISO** e **INFO** messages - o nome do logger deve ser definido como: &quot;**root**&quot; e o nível do logger para: **INFO**.
 
-* Se você planeja capturar todas as mensagens provenientes de um determinado pacote (por exemplo, com.adobe.granite), o nome do logger deve ser definido como: &quot;com.adobe.granite&quot; e o nível do agente de log para: **DEPURAR** (isso capturará todas as **ERRO**, **AVISO**, **INFO** e **DEPURAR** mensagens), conforme mostrado na imagem abaixo.
+* Se você planeja capturar todas as mensagens provenientes de um determinado pacote (por exemplo, com.adobe.granite), o nome do logger deve ser definido como: &quot;com.adobe.granite&quot;. E, o nível do logger definido como: **DEPURAR** (isso captura todos os **ERRO**, **AVISO**, **INFO** e **DEPURAR** mensagens), conforme mostrado na imagem abaixo.
 
 ![chlimage_1-121](assets/chlimage_1-121.png)
 
@@ -437,15 +437,15 @@ Exemplos:
 
 >[!NOTE]
 >
->A interface do usuário das mensagens de log não reflete o log de erros real. A menos que esteja configurando outros tipos de mensagens de log na interface do usuário, você verá apenas mensagens de ERRO. Para saber como exibir mensagens de log específicas, consulte as instruções acima.
+>A interface do usuário das mensagens de log não reflete o log de erros real. A menos que você esteja configurando outros tipos de mensagens de log na interface do usuário, verá apenas mensagens de ERRO. Para saber como exibir mensagens de log específicas, consulte as instruções acima.
 
 >[!NOTE]
 >
->As configurações na página de diagnóstico não influenciam o que está registrado nos arquivos de log e vice-versa. Portanto, embora o log de erros possa capturar mensagens INFO, talvez você não as veja na interface do usuário de mensagens de log. Além disso, por meio da interface do usuário, é possível capturar mensagens DEBUG de determinados pacotes sem afetar o log de erros. Para obter mais informações sobre como configurar os arquivos de log, consulte [Registro](/help/sites-deploying/configure-logging.md).
+>As configurações na página de diagnóstico não influenciam o que é registrado nos arquivos de log e, inversamente. Portanto, embora o log de erros possa capturar mensagens INFO, talvez você não as veja na interface do usuário de mensagens de log. Além disso, por meio da interface do usuário, é possível capturar mensagens DEBUG de determinados pacotes sem afetar o log de erros. Para obter mais informações sobre como configurar os arquivos de log, consulte [Registro](/help/sites-deploying/configure-logging.md).
 
 >[!NOTE]
 >
->**Com AEM 6.4**, as tarefas de manutenção são desconectadas da caixa em um formato mais avançado de informações no nível INFO. Isso permite uma melhor visibilidade do estado das tarefas de manutenção.
+>**Com AEM 6.4**, as tarefas de manutenção são desconectadas da caixa em um formato mais avançado de informações no nível INFO. Esse workflow permite melhor visibilidade do estado das tarefas de manutenção.
 >
 >Caso esteja usando ferramentas de terceiros (como o Splunk) para monitorar e reagir à atividade de tarefa de manutenção, você pode usar as seguintes instruções de log:
 
@@ -456,7 +456,7 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 ### Solicitar desempenho {#request-performance}
 
-A página Desempenho da solicitação permite a análise das solicitações de página mais lentas processadas. Somente solicitações de conteúdo serão registradas nesta página. Mais especificamente, as seguintes solicitações serão capturadas:
+A página Desempenho da solicitação permite a análise das solicitações de página mais lentas processadas. Somente as solicitações de conteúdo são registradas nesta página. Mais especificamente, as seguintes solicitações são capturadas:
 
 1. Solicitações de acesso a recursos em `/content`
 1. Solicitações de acesso a recursos em `/etc/design`
@@ -490,7 +490,7 @@ A página é exibida:
 
 Para qualquer query, o Oak tenta descobrir a melhor maneira de executar com base nos índices do Oak definidos no repositório no **oak:index** nó . Dependendo da query, índices diferentes podem ser escolhidos pelo Oak. Entender como o Oak está executando um query é a primeira etapa para otimizar o query.
 
-O Explain Query é uma ferramenta que explica como o Oak está executando um query. Ele pode ser acessado indo até **Ferramentas - Operações - Diagnóstico** na tela de boas-vindas AEM, em seguida, clicando em **Desempenho da consulta** e alternando para o **Explicar Consulta** guia .
+O Explain Query é uma ferramenta que explica como o Oak está executando um query. Ele pode ser acessado indo até **Ferramentas - Operações - Diagnóstico** na tela de boas-vindas AEM. Em seguida, clique em **Desempenho da consulta** e alterne para a **Explicar Consulta** guia .
 
 **Recursos**
 
@@ -501,15 +501,15 @@ O Explain Query é uma ferramenta que explica como o Oak está executando um que
 * Exibe a explicação real do mecanismo Oak Query
 * Fornece uma lista click-to-load de consultas lentas e populares
 
-Quando estiver na interface do usuário do Explain Query, tudo o que você precisa fazer para usá-la é inserir o query e pressionar o **Explicar** botão:
+Depois que estiver na interface do usuário Explain Query, digite a consulta e pressione a tecla **Explicar** botão:
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
-A primeira entrada na seção Explicação da Consulta é a explicação real. A explicação mostrará o tipo de índice usado para executar a query.
+A primeira entrada na seção Explicação da Consulta é a explicação real. A explicação mostra o tipo de índice usado para executar a query.
 
 A segunda entrada é o plano de execução.
 
-Marcar o **Incluir tempo de execução** antes de executar o query, também mostrará a quantidade de tempo em que o query foi executado. O **Incluir contagem de nós** reportará a contagem de nós. Isso permite obter mais informações, que podem ser usadas para otimizar os índices para seu aplicativo ou implantação.
+Marcar o **Incluir tempo de execução** antes de executar o query, também mostra a quantidade de tempo em que o query foi executado. O **Incluir contagem de nós** informa a contagem de nós. O relatório permite obter mais informações que podem ser usadas para otimizar os índices para seu aplicativo ou implantação.
 
 ![chlimage_1-125](assets/chlimage_1-125.png)
 
@@ -527,7 +527,7 @@ A interface do usuário pode ser usada para filtrar índices na tabela, digitand
 
 ### Baixar o ZIP de status {#download-status-zip}
 
-Isso acionará o download de um zip contendo informações úteis sobre o status e a configuração do sistema. O arquivo contém configurações de instância, uma lista de pacotes, OSGI, métricas e estatísticas de Sling e isso pode resultar em um arquivo grande. Você pode reduzir o impacto de arquivos de status grandes usando o **ZIP de status de download** janela. A janela pode ser acessada de:**AEM > Ferramentas > Operações > Diagnóstico > Baixar ZIP de status.**
+Essa ação aciona o download de um zip contendo informações úteis sobre o status e a configuração do sistema. O arquivo contém configurações de instância, uma lista de pacotes, OSGI, métricas e estatísticas de Sling, que podem resultar em um arquivo grande. Você pode reduzir o impacto de arquivos de status grandes usando o **ZIP de status de download** janela. A janela pode ser acessada de:**AEM > Ferramentas > Operações > Diagnóstico > Baixar ZIP de status.**
 
 Nessa janela, você pode selecionar o que exportar (arquivos de log e/ou despejos de thread) e o número de dias de logs incluídos no download em relação à data atual.
 
@@ -535,17 +535,17 @@ Nessa janela, você pode selecionar o que exportar (arquivos de log e/ou despejo
 
 ### Baixar o despejo de encadeamento {#download-thread-dump}
 
-Isso acionará o download de um zip contendo informações sobre os threads presentes no sistema. Informações sobre cada thread são fornecidas, como seu status, o carregador de classe e o rastreamento de pilha.
+Essa ação aciona o download de um zip contendo informações sobre os threads presentes no sistema. Informações sobre cada thread são fornecidas, como seu status, o carregador de classe e o rastreamento de pilha.
 
 ### Baixar o despejo da pilha {#download-heap-dump}
 
-Você também pode baixar um instantâneo do heap para analisá-lo posteriormente. Observe que isso acionará o download de um arquivo grande, da ordem de centenas de megabytes.
+Você pode baixar um instantâneo do heap para analisá-lo posteriormente. Essa ação aciona o download de um arquivo grande (centenas de megabytes).
 
 ## Tarefas de manutenção automatizada {#automated-maintenance-tasks}
 
 A página Tarefas de manutenção automatizada é um local onde você pode visualizar e rastrear tarefas de manutenção recomendadas programadas para execução periódica. As tarefas são integradas ao sistema de verificação de integridade. As tarefas também podem ser executadas manualmente na interface.
 
-Para acessar a página Manutenção no Painel de Operações, você precisa acessar **Ferramentas - Operações - Painel - Manutenção** na tela AEM Welcome ou siga diretamente este link:
+Para acessar a página Manutenção no Painel de Operações, na tela AEM Boas-vindas, acesse **Ferramentas - Operações - Painel - Manutenção** ou siga diretamente este link:
 
 `https://serveraddress:port/libs/granite/operations/content/maintenance.html`
 
@@ -558,7 +558,7 @@ As seguintes tarefas estão disponíveis no Painel de Operações:
 1. O **Manutenção do log de auditoria** tarefa, localizada na **Janela de manutenção semanal** menu.
 1. O **Manutenção da limpeza de versão** tarefa, localizada na **Janela de manutenção semanal** menu.
 
-O tempo padrão para a janela de manutenção diária é de 2 a 5 horas. As tarefas configuradas para serem executadas na janela de manutenção semanal serão executadas entre 1 e 2 AM aos sábados.
+O tempo padrão para a janela de manutenção diária é de 2:00 da manhã às 5:00 da manhã. As tarefas configuradas para serem executadas na janela de manutenção semanal são executadas entre 1:00 da manhã e 2:00 da manhã aos sábados.
 
 Você também pode configurar os tempos pressionando o ícone de engrenagem em qualquer uma das duas placas de manutenção:
 
@@ -574,12 +574,12 @@ Para obter mais informações sobre como executar a Revisão de limpeza, [consul
 
 ### Limpeza de binários do Lucene {#lucene-binaries-cleanup}
 
-Ao usar a tarefa Limpeza de binários do Lucene, é possível limpar binários do lucene e reduzir o requisito de tamanho do armazenamento de dados em execução. Isso ocorre porque o churn binário do lucene será reivindicado diariamente em vez da dependência anterior em um [coleta de lixo do armazenamento de dados](/help/sites-administering/data-store-garbage-collection.md) executar.
+Ao usar a tarefa Limpeza de binários do Lucene, é possível limpar binários do lucene e reduzir o requisito de tamanho do armazenamento de dados em execução. O churn binário de Lucene é recuperado diariamente em vez da dependência anterior em um [coleta de lixo do armazenamento de dados](/help/sites-administering/data-store-garbage-collection.md) executar.
 
 Embora a tarefa de manutenção tenha sido desenvolvida para reduzir o lixo de revisão relacionado ao Lucene, há ganhos gerais de eficiência ao executar a tarefa:
 
-* A execução semanal da tarefa de coleta de lixo do armazenamento de dados será concluída mais rapidamente
-* Também pode melhorar ligeiramente o desempenho geral do AEM
+* A execução semanal da tarefa de coleta de lixo do armazenamento de dados pode ser concluída mais rapidamente.
+* Também pode melhorar ligeiramente o desempenho geral da AEM.
 
 Você pode acessar a tarefa Limpeza de binários Lucene a partir de: **AEM > Ferramentas > Operações > Manutenção > Janela de manutenção diária > Limpeza de binários do Lucene**.
 
@@ -589,10 +589,10 @@ Para obter detalhes sobre a Coleta de lixo do Data Store, consulte o [página de
 
 ### Limpeza de fluxo de trabalho {#workflow-purge}
 
-Os fluxos de trabalho também podem ser removidos do Painel de manutenção. Para executar a tarefa Expurgação de Fluxo de Trabalho, é necessário:
+Os fluxos de trabalho também podem ser removidos do Painel de manutenção. Para executar a tarefa Limpeza de Fluxo de Trabalho, faça o seguinte:
 
 1. Clique no botão **Janela de manutenção semanal** página.
-1. Na página a seguir, clique no link **Reproduzir** no botão **Limpeza de fluxo de trabalho** cartão.
+1. Na página a seguir, clique em **Reproduzir** no **Limpeza de fluxo de trabalho** cartão.
 
 >[!NOTE]
 >
@@ -604,9 +604,9 @@ Para a Manutenção do Log de Auditoria, consulte o [página de documentação s
 
 ### Remoção da versão {#version-purge}
 
-Você pode agendar a tarefa de manutenção da limpeza de versão para excluir automaticamente as versões antigas. Como resultado, isso minimiza a necessidade de usar manualmente a variável [Ferramentas de limpeza de versão](/help/sites-deploying/version-purging.md). Você pode agendar e configurar a tarefa de limpeza de versão acessando **Ferramentas > Operações > Manutenção > Janela de manutenção semanal** e seguindo estas etapas:
+Você pode agendar a tarefa de manutenção da limpeza de versão para excluir automaticamente as versões antigas. Essa ação minimiza a necessidade de usar manualmente a variável [Ferramentas de limpeza de versão](/help/sites-deploying/version-purging.md). Você pode agendar e configurar a tarefa de limpeza de versão acessando **Ferramentas > Operações > Manutenção > Janela de manutenção semanal** e seguindo estas etapas:
 
-1. Clique no botão **Adicionar** botão.
+1. Clique em **Adicionar**.
 1. Choose **Limpeza de versão** no menu suspenso.
 
    ![version_purge_maintenanceask](assets/version_purge_maintenancetask.png)
@@ -642,19 +642,19 @@ As tarefas de manutenção personalizadas podem ser implementadas como serviços
   </tr>
   <tr>
    <td>granite.maintenance.isStoppable</td>
-   <td>Atributo booleano que define se a tarefa pode ser interrompida pelo usuário. Se uma tarefa declarar que é parável, ela deverá verificar, durante sua execução, se foi interrompida e agir de acordo. O padrão é false.</td>
+   <td>Atributo booleano que define se a tarefa pode ser interrompida pelo usuário. Se uma tarefa declarar que é parável, ela deverá verificar durante sua execução se está parada e agir de acordo. O padrão é false.</td>
    <td>verdadeiro</td>
    <td>Opcional</td>
   </tr>
   <tr>
    <td>granite.maintenance.mandatory</td>
-   <td>Atributo booleano que define se uma tarefa é obrigatória e deve ser executada periodicamente. Se uma tarefa for obrigatória, mas não estiver em nenhuma janela de programação ativa, uma Verificação de integridade relatará isso como um erro. O padrão é false.</td>
+   <td>Atributo booleano que define se uma tarefa é obrigatória e deve ser executada periodicamente. Se uma tarefa for obrigatória, mas não estiver em nenhuma janela de programação ativa, uma Verificação de integridade reportará esse erro. O padrão é false.</td>
    <td>verdadeiro</td>
    <td>Opcional</td>
   </tr>
   <tr>
    <td>granite.maintenance.name</td>
-   <td>Um nome exclusivo para a tarefa - é usado para fazer referência à tarefa. Esse geralmente é um nome simples.</td>
+   <td>Um nome exclusivo para a tarefa - o nome é usado para referenciar a tarefa e é apenas um nome simples.</td>
    <td>MyMaintenanceTask</td>
    <td>Obrigatório</td>
   </tr>
@@ -666,16 +666,16 @@ As tarefas de manutenção personalizadas podem ser implementadas como serviços
   </tr>
   <tr>
    <td>job.topics</td>
-   <td>Este é um tópico exclusivo da tarefa de manutenção.<br /> A manipulação do trabalho do Apache Sling iniciará um trabalho com exatamente este tópico para executar a tarefa de manutenção e, à medida que a tarefa for registrada para este tópico, ele será executado.<br /> O tópico deve começar com <i>com/adobe/granite/maintenance/job/</i></td>
+   <td>Um tópico exclusivo da tarefa de manutenção.<br /> A manipulação do trabalho do Apache Sling inicia um trabalho com exatamente este tópico para executar a tarefa de manutenção e, como a tarefa é registrada para este tópico, ela é executada.<br /> O tópico deve começar com <i>com/adobe/granite/maintenance/job/</i></td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
    <td>Obrigatório</td>
   </tr>
  </tbody>
 </table>
 
-Além das propriedades de serviço acima, a função `process()` do método `JobConsumer` A interface precisa ser implementada adicionando o código que deve ser executado para a tarefa de manutenção. O `JobExecutionContext` pode ser usado para gerar informações de status, verificar se o trabalho foi interrompido pelo usuário e criar um resultado (sucesso ou falha).
+Além das propriedades de serviço acima, a função `process()` do método `JobConsumer` A interface deve ser implementada adicionando o código que deve ser executado para a tarefa de manutenção. O `JobExecutionContext` pode ser usado para gerar informações de status, verificar se o trabalho foi interrompido pelo usuário e criar um resultado (sucesso ou falha).
 
-Para situações em que uma tarefa de manutenção não deve ser executada em todas as instalações (por exemplo, executar somente na instância de publicação), é possível fazer com que o serviço exija uma configuração para estar ativo, adicionando `@Component(policy=ConfigurationPolicy.REQUIRE)`. Em seguida, você pode marcar a configuração de acordo como sendo o modo de execução dependente no repositório. Para obter mais informações, consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
+Para situações em que uma tarefa de manutenção não deve ser executada em todas as instalações (por exemplo, executar somente na instância de publicação), é possível fazer com que o serviço exija uma configuração para estar ativa, adicionando `@Component(policy=ConfigurationPolicy.REQUIRE)`. Em seguida, você pode marcar a configuração de acordo como sendo o modo de execução dependente no repositório. Para obter mais informações, consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
 
 Veja abaixo um exemplo de uma tarefa de manutenção personalizada que exclui arquivos de um diretório temporário configurável que foi modificado nas últimas 24 horas:
 
@@ -695,11 +695,11 @@ Após a implantação do serviço, ele é exposto à interface do usuário do Pa
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Isso adicionará um recurso correspondente em /apps/granite/operations/config/maintenance/`schedule`/`taskname`. Se a tarefa for dependente do modo de execução, a propriedade granite.operations.conditions.runmode precisará ser definida nesse nó com os valores dos runmodes que precisam estar ativos para esta tarefa de manutenção.
+Esta ação adiciona um recurso correspondente em /apps/granite/operations/config/maintenance/`schedule`/`taskname`. Se a tarefa for dependente do modo de execução, a propriedade granite.operations.conditions.runmode deverá ser definida nesse nó com os valores dos modos de execução que devem estar ativos para esta tarefa de manutenção.
 
 ## Visão geral do sistema {#system-overview}
 
-O **Painel Visão geral do sistema** exibe uma visão geral de alto nível da configuração, hardware e integridade da instância do AEM. Isso significa que o status de integridade do sistema é transparente e todas as informações são agregadas em um único painel.
+O **Painel Visão geral do sistema** exibe uma visão geral de alto nível da configuração, hardware e integridade da instância de AEM. O status de integridade do sistema é transparente e todas as informações são agregadas em um único painel.
 
 >[!NOTE]
 >
@@ -713,9 +713,9 @@ Para acessar o Painel Visão geral do sistema, navegue até **Ferramentas > Oper
 
 ### Explicação do painel Visão geral do sistema {#system-overview-dashboard-explained}
 
-A tabela abaixo descreve todas as informações exibidas no Painel de visão geral do sistema. Lembre-se de que quando não houver informações relevantes para mostrar (por exemplo, o backup não está em andamento, não há verificações de integridade críticas) a respectiva seção exibirá a mensagem &quot;Nenhuma entrada&quot;.
+A tabela abaixo descreve todas as informações exibidas no Painel de visão geral do sistema. Quando não há informações relevantes para mostrar (por exemplo, o backup não está em andamento, não há verificações de integridade críticas), a respectiva seção exibe a mensagem &quot;Nenhuma entrada&quot;.
 
-Também é possível baixar uma `JSON` arquivo que resume as informações do painel clicando no **Baixar** no canto superior direito do painel. `JSON` endpoint é `/libs/granite/operations/content/systemoverview/export.json` e pode ser usado em um `curl` script para monitoramento externo.
+Também é possível baixar uma `JSON` arquivo que resume as informações do painel clicando no **Baixar** no canto superior direito do painel. O `JSON` endpoint é `/libs/granite/operations/content/systemoverview/export.json` e pode ser usado em um `curl` script para monitoramento externo.
 
 <table>
  <tbody>
@@ -821,7 +821,7 @@ Também é possível baixar uma `JSON` arquivo que resume as informações do pa
     <ul>
      <li>uma tag vermelha para agentes bloqueados ou erros de configuração</li>
      <li>uma tag laranja para agentes pausados</li>
-     <li>uma tag cinza para agentes pausados, ociosos ou em execução<br /> </li>
+     <li>uma tag cinza para agentes em pausa, ociosos ou em execução<br /> </li>
     </ul> </td>
    <td>Página Distribuição<br /> </td>
   </tr>
@@ -895,7 +895,7 @@ Também é possível baixar uma `JSON` arquivo que resume as informações do pa
   </tr>
   <tr>
    <td>Backup</td>
-   <td>Exibe "Backup online em andamento", se for o caso.</td>
+   <td>Exibe "Backup online em andamento", se houver.</td>
    <td>N/A</td>
    <td>N/A</td>
   </tr>
