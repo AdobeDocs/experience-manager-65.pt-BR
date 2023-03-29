@@ -4,10 +4,10 @@ description: Saiba como os Fragmentos de conteúdo no Adobe Experience Manager (
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1989'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -53,7 +53,7 @@ Esta e as seguintes páginas abordam as tarefas de criação, configuração, ma
 >* [Personalização e extensão de fragmentos de conteúdo](/help/sites-developing/customizing-content-fragments.md)
 >* [Fragmentos de conteúdo configuram componentes para renderização](/help/sites-developing/content-fragments-config-components-rendering.md)
 >* [Compatibilidade com os Fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/assets-api-content-fragments.md)
->* [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
 
 O número de canais de comunicação aumenta anualmente. Normalmente, os canais se referem ao mecanismo de entrega, como:
@@ -133,7 +133,7 @@ Os fragmentos de conteúdo são:
 
    * O componente **Fragmento de conteúdo** está disponível para autores de página. Ele permite referenciar e entregar o fragmento de conteúdo necessário nos formatos HTML ou JSON.
 
-* Acessíveis por meio da [API GraphQL do AEM](/help/assets/content-fragments/graphql-api-content-fragments.md).
+* Acessíveis por meio da [API GraphQL do AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
 Fragmentos de conteúdo são uma estrutura de conteúdo que:
 
@@ -269,7 +269,7 @@ Conteúdo intermediário:
 
 >[!CAUTION]
 >
->O conteúdo intermediário é o conteúdo da página. Não é armazenado no fragmento de conteúdo.
+>O conteúdo intermediário é o conteúdo da página. Ele não é armazenado no fragmento de conteúdo.
 
 ### Exigido por fragmentos {#required-by-fragments}
 

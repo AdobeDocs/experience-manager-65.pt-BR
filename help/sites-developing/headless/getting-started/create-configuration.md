@@ -2,7 +2,7 @@
 title: Criação de um Guia de início rápido sem cabeçalho de configuração
 description: Crie uma configuração como uma primeira etapa para começar a usar o headless no AEM 6.5.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 69%
@@ -34,7 +34,7 @@ Um administrador só precisaria criar uma configuração uma vez ou, muito raram
    * **Modelos de fragmentos do conteúdo**
    * **Consultas persistentes de GraphQL**
 
-   ![Criar configuração](../assets/create-configuration.png)
+   ![Criar configuração](assets/create-configuration.png)
 
 1. Toque ou clique em **Criar**
 

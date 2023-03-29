@@ -2,7 +2,7 @@
 title: Desenvolvimento sem periféricos para AEM 6.5 Sites
 description: Saiba como os poderosos recursos headless do AEM 6.5, como Modelos de conteúdo, Fragmentos de conteúdo e a API do GraphQL, funcionam juntos para permitir que você gerencie suas experiências centralmente e as disponibilize em todos os canais.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 38%
@@ -19,7 +19,7 @@ A implementação sem periféricos está se tornando cada vez mais importante pa
 
 A implementação headless deixa de lado o gerenciamento de páginas e componentes, como é tradicional em soluções de pilha completa e híbridas, e se concentra na criação de fragmentos de conteúdo reutilizáveis e neutros em relação à canais, assim como na entrega desses fragmentos entre canais. É um padrão de desenvolvimento moderno e dinâmico para implementar experiências na web.
 
-![Modelos de implementação do AEM](assets/aem-implementation-models.png)
+![Modelos de implementação do AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
 ## Comparação entre headful e headless {#headful-headless}
 

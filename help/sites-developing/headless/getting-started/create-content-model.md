@@ -2,7 +2,7 @@
 title: Criação dos modelos de fragmento de conteúdo sem cabeçalho Guia de início rápido
 description: Defina a estrutura do conteúdo que será criado e veiculado usando os recursos headless do AEM, através de modelos de fragmento de conteúdo.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 93%
@@ -26,21 +26,21 @@ Um arquiteto de informações executaria essas tarefas apenas esporadicamente, �
 1. Faça logon em AEM e, no menu principal, selecione **Ferramentas -> Ativos -> Modelos de fragmento de conteúdo**.
 1. Toque ou clique na pasta que foi criada com sua configuração.
 
-   ![A pasta de modelos](../assets/models-folder.png)
+   ![A pasta de modelos](assets/models-folder.png)
 1. Toque ou clique em **Criar**.
 1. Forneça o **Título do modelo**, as **Tags** e a **Descrição**. Também é possível marcar/desmarcar a opção **Ativar modelo** para controlar se o modelo é habilitado imediatamente após a criação.
 
-   ![Criar um modelo](../assets/models-create.png)
+   ![Criar um modelo](assets/models-create.png)
 1. Na janela de confirmação, toque ou clique em **Abrir** para configurar o modelo.
 
-   ![Janela de confirmação](../assets/models-confirmation.png)
+   ![Janela de confirmação](assets/models-confirmation.png)
 1. Usando o **Editor de modelos de fragmentos de conteúdo**, crie o modelo de fragmento de conteúdo arrastando e soltando campos da coluna **Tipos de dados**.
 
-   ![Arrastar e soltar campos](../assets/models-drag-and-drop.png)
+   ![Arrastar e soltar campos](assets/models-drag-and-drop.png)
 
 1. Depois de colocar um campo, você deve configurar suas propriedades. O editor alternará automaticamente para a guia **Propriedades** do campo adicionado, onde é possível fornecer os campos obrigatórios.
 
-   ![Configurar propriedades](../assets/models-configure-properties.png)
+   ![Configurar propriedades](assets/models-configure-properties.png)
 1. Quando terminar de criar o modelo, toque ou clique em **Salvar**.
 
 1. O modo do modelo recém-criado depende de se a opção **Ativar modelo** foi selecionada ao criar o modelo:
@@ -50,13 +50,13 @@ Um arquiteto de informações executaria essas tarefas apenas esporadicamente, �
 1. Se ainda não estiver, o modelo deve ser **Habilitado** para ser usado.
    1. Selecione o modelo que acabou de criar e toque ou clique em **Habilitar**.
 
-      ![Habilitação do modelo](../assets/models-enable.png)
+      ![Habilitação do modelo](assets/models-enable.png)
    1. Confirme a habilitação do modelo tocando ou clicando em **Habilitar** na caixa de diálogo de confirmação.
 
-      ![Caixa de diálogo de confirmação de habilitação](../assets/models-enabling.png)
+      ![Caixa de diálogo de confirmação de habilitação](assets/models-enabling.png)
 1. O modelo agora está habilitado e pronto para uso.
 
-   ![Modelo habilitado](../assets/models-enabled.png)
+   ![Modelo habilitado](assets/models-enabled.png)
 
 O **Editor de Modelos de fragmentos de conteúdo** é compatível com vários tipos de dados diferentes, como campos de texto simples, referências de ativos, referências a outros modelos e dados JSON.
 

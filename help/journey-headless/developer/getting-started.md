@@ -2,7 +2,7 @@
 title: Introdução ao AEM Headless
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais sobre pré-requisitos do AEM headless.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 40e81b63e28a75c769507654d7f1d75da82f0bd6
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '3031'
 ht-degree: 100%
@@ -287,7 +287,7 @@ Mesmo sendo recomendado que você siga para a próxima parte da jornada de desen
 * [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) - Documentação técnica dos Fragmentos de Conteúdo.
 * [Modelos de Fragmentos de Conteúdo](/help/assets/content-fragments/content-fragments-models.md) - Documentação técnica dos Modelos de Fragmento de Conteúdo.
 * [Documentação Técnica do GraphQL](https://graphql.org) - A definição do GraphQL (link externo)
-* [API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) - Documentação técnica que explica como criar solicitações para acessar e fornecer Fragmentos de Conteúdo
+* [API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - Documentação técnica que explica como criar solicitações para acessar e fornecer Fragmentos de Conteúdo
 * [API REST do Assets](/help/assets/assets-api-content-fragments.md) - Documentação técnica que explica como criar e modificar Fragmentos de Conteúdo (e outros ativos)
-* [Consultas Persistentes](/help/assets/content-fragments/persisted-queries.md) - Documentação técnica sobre consultas persistentes no AEM
+* [Consultas Persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md) - Documentação técnica sobre consultas persistentes no AEM
 * [Headful e Headless no AEM](/help/sites-developing/headful-headless.md) - Uma discussão completa dos níveis de integração headless disponíveis no AEM

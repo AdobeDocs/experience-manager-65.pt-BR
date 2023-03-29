@@ -8,9 +8,9 @@ breadcrumb-title: Guia de desenvolvimento
 user-guide-description: Este guia aborda como criar sua instância no AEM.
 feature: Developing
 role: Developer
-source-git-commit: c5bc743f845281bdbad522053c0e57791921ffd2
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1285'
 ht-degree: 37%
 
 ---
@@ -138,11 +138,12 @@ ht-degree: 37%
    + API de entrega{#delivery-api}
       + [API HTTP de ativos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
       + [API REST de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
-      + [API GraphQL de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)
-      + [Uso do GraphiQL IDE](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphiql-ide.html)
-      + [Consultas Persistentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/persisted-queries.html)
-      + [Autenticação para consultas remotas de GraphQL do AEM em fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html)
-      + [API GraphQL do AEM com fragmentos de conteúdo - Amostras de conteúdo e consultas](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
+      + [API GraphQL de fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
+      + [Gerenciamento de endpoints do GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
+      + [Uso do GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
+      + [Consultas Persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md)
+      + [Autenticação para consultas remotas de GraphQL do AEM em fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
+      + [API GraphQL do AEM com fragmentos de conteúdo - Amostras de conteúdo e consultas](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 + Desenvolvimento híbrido e SPA AEM{#spas}
    + [Híbrido e SPA com o AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Introdução e passo a passo do SPA](spa-walkthrough.md)

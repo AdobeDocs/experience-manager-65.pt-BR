@@ -2,7 +2,7 @@
 title: Criação de uma pasta de ativos sem cabeçalho Guia de início rápido
 description: Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fragmentos de conteúdo, a base do seu conteúdo headless.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 87%
@@ -33,16 +33,16 @@ Um administrador só precisaria criar pastas ocasionalmente para organizar o con
       * Ele será gerado automaticamente com base no título e ajustado de acordo com as [convenções de nomenclatura do AEM.](/help/sites-developing/naming-conventions.md)
       * Ele pode ser ajustado, se necessário.
 
-   ![Criar pasta](../assets/assets-folder-create.png)
+   ![Criar pasta](assets/assets-folder-create.png)
 1. Selecione a pasta que acabou de criar e selecione **Propriedades** na barra de ferramentas (ou use o `p` [atalho do teclado.](/help/sites-authoring/keyboard-shortcuts.md))
 1. Na janela **Propriedades**, selecione a guia **Serviços em nuvem**.
 1. Para a **Configuração na nuvem**, selecione a [configuração criada anteriormente.](create-configuration.md)
 
-   ![Configurar pasta de ativos](../assets/assets-folder-configure.png)
+   ![Configurar pasta de ativos](assets/assets-folder-configure.png)
 1. Toque ou clique em **Salvar e fechar**.
 1. Toque ou clique em **OK** na janela de confirmação.
 
-   ![Janela de confirmação](../assets/assets-folder-confirmation.png)
+   ![Janela de confirmação](assets/assets-folder-confirmation.png)
 
 É possível criar subpastas adicionais dentro da pasta que acabou de criar. As subpastas herdarão a **Configuração na nuvem** da pasta principal. Isso pode ser alterado, no entanto, se você quiser usar modelos de outra configuração.
 

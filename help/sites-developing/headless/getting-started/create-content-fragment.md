@@ -2,7 +2,7 @@
 title: Guia de início rápido para Criação de fragmentos de conteúdo sem cabeçalho
 description: Saiba como usar fragmentos de conteúdo do AEM para projetar, criar, preparar e usar conteúdo independente de página para entrega headless.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 91%
@@ -32,16 +32,16 @@ Os autores de conteúdo criarão qualquer quantidade de fragmentos de conteúdo 
    * Os modelos disponíveis dependem da [**Configuração na nuvem** que foi definida para a pasta de ativos](create-assets-folder.md) na qual você está criando o fragmento de conteúdo.
    * Se você receber a mensagem `We could not find any models`, verifique a configuração da pasta de ativos.
 
-   ![Selecionar modelo de fragmento de conteúdo](../assets/content-fragment-model-select.png)
+   ![Selecionar modelo de fragmento de conteúdo](assets/content-fragment-model-select.png)
 1. Forneça o **Título**, a **Descrição** e as **Tags** conforme necessário, e toque ou clique em **Criar**.
 
-   ![Criar fragmento do conteúdo](../assets/content-fragment-create.png)
+   ![Criar fragmento do conteúdo](assets/content-fragment-create.png)
 1. Toque ou clique em **Abrir** na janela de confirmação.
 
-   ![Confirmação da criação do fragmento de conteúdo](../assets/content-fragment-confirmation.png)
+   ![Confirmação da criação do fragmento de conteúdo](assets/content-fragment-confirmation.png)
 1. Forneça os detalhes do fragmento de conteúdo no Editor de fragmento de conteúdo.
 
-   ![Editor de fragmento de conteúdo](../assets/content-fragment-edit.png)
+   ![Editor de fragmento de conteúdo](assets/content-fragment-edit.png)
 1. Toque ou clique em **Salvar** ou **Salvar e fechar**.
 
 Os fragmentos de conteúdo podem fazer referência a outros fragmentos de conteúdo, permitindo uma estrutura de conteúdo aninhada, se necessário.

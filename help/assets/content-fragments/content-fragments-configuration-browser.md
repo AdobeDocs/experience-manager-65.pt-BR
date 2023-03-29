@@ -4,7 +4,7 @@ description: Saiba como ativar determinadas funcionalidades de Fragmento de cont
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: da41f48d08b7629a734e2f60077af6190a7fee8f
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 78%
@@ -27,7 +27,7 @@ Antes de usar fragmentos de conteúdo, você precisa usar o **navegador de confi
 >Se você não ativar os **modelos de fragmentos de conteúdo**:
 >
 >* a opção **Criar** não estará disponível para criar novos modelos.
->* você não poderá [selecionar a configuração de sites para criar o ponto de acesso relacionado](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+>* você não poderá [selecionar a configuração de sites para criar o ponto de acesso relacionado](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
 
 
 Para ativar a funcionalidade do fragmento de conteúdo, é necessário:
