@@ -12,9 +12,9 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
 workflow-type: tm+mt
-source-wordcount: '6065'
+source-wordcount: '6053'
 ht-degree: 2%
 
 ---
@@ -138,9 +138,9 @@ A criação de uma Verificação de Integridade individual envolve duas etapas: 
 
 ### Criando uma Verificação de Integridade Composta {#creating-a-composite-health-check}
 
-A função de uma verificação de integridade composta é agregar várias verificações de integridade individuais que compartilham um conjunto de recursos comuns. Por exemplo, a Verificação de integridade composta de segurança agrupa todas as verificações de integridade individuais que realizam verificações relacionadas à segurança. A primeira etapa para criar uma verificação composta é adicionar uma configuração OSGI. Para ser exibido no Painel de operações, um novo nó de configuração deve ser adicionado, da mesma forma que fizemos para uma verificação simples.
+A função de uma verificação de integridade composta é agregar várias verificações de integridade individuais que compartilham um conjunto de recursos comuns. Por exemplo, a Verificação de integridade composta de segurança agrupa todas as verificações de integridade individuais que realizam verificações relacionadas à segurança. A primeira etapa para criar uma verificação composta é adicionar uma configuração OSGI. Para ser exibido no Painel de operações, um novo nó de configuração deve ser adicionado da mesma forma que uma simples verificação.
 
-1. Vá para o Web Configuration Manager no console OSGI. Você pode fazer isso acessando `https://serveraddress:port/system/console/configMgr`
+1. Vá para o Web Configuration Manager no console OSGI. Acesso `https://serveraddress:port/system/console/configMgr`
 1. Procure a entrada chamada **Verificação de integridade composta do Apache Sling**. Depois de encontrá-lo, observe que há duas configurações já disponíveis: um para as verificações do sistema e outro para as verificações de segurança.
 1. Crie uma configuração pressionando o botão &quot;+&quot; no lado direito da configuração. Uma nova janela é exibida, conforme mostrado abaixo:
 
@@ -153,7 +153,7 @@ A função de uma verificação de integridade composta é agregar várias verif
    * **Nome (hc.name):** O nome da verificação de integridade composta. Recomenda-se um nome significativo.
    * **Tags (hc.tags):** As tags para esta Verificação de Integridade. Se esta verificação de integridade composta se destinar a ser parte de outra verificação de integridade composta (como em uma hierarquia de verificações de integridade), adicione as tags às quais esse composto está relacionado.
    * **Nome do MBean (hc.mbean.name):** O nome do Mbean fornecido ao MBean JMX dessa verificação de integridade composta.
-   * **Tags de filtro (filter.tags):** A propriedade específica para verificações de integridade compostas. Essas são as tags que o compósito deve agregar. A verificação de integridade composta agrega sob seu grupo todas as verificações de integridade que têm qualquer tag correspondente a qualquer uma das tags de filtro desse composto. Por exemplo, uma verificação de integridade composta com as tags de filtro **teste** e **check**, agrega todos os controlos de saúde individuais e compostos que tenham qualquer um dos **teste** e **check** tags em sua propriedade de tags ( `hc.tags`).
+   * **Tags de filtro (filter.tags):** A propriedade específica para verificações de integridade compostas. Essas tags são agregadas pelo composto. A verificação de integridade composta agrega sob seu grupo todas as verificações de integridade que têm qualquer tag correspondente a qualquer uma das tags de filtro desse composto. Por exemplo, uma verificação de integridade composta com as tags de filtro **teste** e **check**, agrega todos os controlos de saúde individuais e compostos que tenham qualquer um dos **teste** e **check** tags em sua propriedade de tags ( `hc.tags`).
 
    >[!NOTE]
    >
@@ -180,7 +180,7 @@ A função de uma verificação de integridade composta é agregar várias verif
 
    >[!NOTE]
    >
-   >Se você criar verificações de integridade individuais que logicamente pertencem a uma verificação composta que já está presente no Painel por padrão, elas são automaticamente capturadas e agrupadas na respectiva verificação composta. Por causa disso, não há necessidade de criar um nó de configuração para essas verificações.
+   >Se você criar verificações de integridade individuais que logicamente pertencem a uma verificação composta que já está presente no Painel por padrão, elas são automaticamente capturadas e agrupadas na respectiva verificação composta. Dessa forma, não há necessidade de criar um nó de configuração para essas verificações.
    >
    >Por exemplo, se você criar uma verificação de integridade de segurança individual, atribua a ela o &quot;**segurança**&quot; e está instalado. Ele aparece automaticamente na verificação composta de Verificações de Segurança no Painel de Operações.
 
@@ -309,11 +309,11 @@ A função de uma verificação de integridade composta é agregar várias verif
   </tr>
   <tr>
    <td>Verificação do Cache de Código</td>
-   <td><p>Esta é uma Verificação de integridade que verifica várias condições da JVM que podem acionar um bug do CodeCache presente no Java 7:</p>
+   <td><p>Uma Verificação de integridade que verifica várias condições da JVM que podem acionar um bug do CodeCache presente no Java™ 7:</p>
     <ul>
-     <li>retorna Avisar se a instância estiver sendo executada no Java 7, com a limpeza do Cache de Código ativada</li>
-     <li>retorna Avisar se a instância estiver sendo executada no Java 7 e o tamanho do Cache de Código Reservado for menor que um limite mínimo (o valor padrão é 90 MB)</li>
-    </ul> <p>O <code>minimum.code.cache.size</code> limite é configurável. Para obter mais informações sobre o erro, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">verificar esta página</a>.</p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
+     <li>retorna Avisar se a instância estiver sendo executada no Java™ 7, com a limpeza do cache de código ativada</li>
+     <li>retorna Avisar se a instância estiver sendo executada no Java™ 7 e o tamanho do Cache de Código Reservado for menor que um limite mínimo (o valor padrão é 90 MB)</li>
+    </ul> <p>O <code>minimum.code.cache.size</code> limite é configurável. Para obter mais informações sobre o erro, consulte <a href="https://bugs.java.com/bugdatabase/"> e, em seguida, pesquise a ID do bug 8012547</a>.</p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Recurso Buscar erros de caminho</td>
@@ -630,7 +630,7 @@ Você pode agendar a tarefa de manutenção da limpeza de versão para excluir a
 
 ## Tarefas de manutenção personalizadas {#custom-maintenance-tasks}
 
-As tarefas de manutenção personalizadas podem ser implementadas como serviços OSGi. Como a infraestrutura da tarefa de manutenção se baseia no manuseio de tarefas do Apache Sling, uma tarefa de manutenção deve implementar a interface java ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Além disso, deve declarar várias propriedades de registro de serviço a serem detectadas como uma tarefa de manutenção, conforme listado abaixo:
+As tarefas de manutenção personalizadas podem ser implementadas como serviços OSGi. Como a infraestrutura da tarefa de manutenção se baseia no manuseio de tarefas do Apache Sling, uma tarefa de manutenção deve implementar a interface Java™ ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Além disso, deve declarar várias propriedades de registro de serviço a serem detectadas como uma tarefa de manutenção, conforme listado abaixo:
 
 <table>
  <tbody>
@@ -767,7 +767,7 @@ Também é possível baixar uma `JSON` arquivo que resume as informações do pa
    <td>Sistema</td>
    <td>
     <ul>
-     <li>sistema operacional e versão do sistema operacional (por exemplo, Mac OS X)</li>
+     <li>sistema operacional e versão do sistema operacional (por exemplo, macOS X)</li>
      <li>média de carga do sistema, conforme recuperado de <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeable</a></li>
      <li>espaço em disco (na partição onde o diretório inicial está localizado)</li>
      <li>heap máximo, como retornado por <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
