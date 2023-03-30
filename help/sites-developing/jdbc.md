@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e147605ff4d5c3d2403632285956559db235c084
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Acesse um banco de dados SQL externo para que seus aplicativos CQ possam interag
 
 ## Pacote do driver de banco de dados JDBC {#bundling-the-jdbc-database-driver}
 
-Alguns fornecedores de banco de dados fornecem drivers JDBC em um pacote OSGi, por exemplo [MySQL](https://www.mysql.com/downloads/connector/j/). Se o driver JDBC do seu banco de dados não estiver disponível como um pacote OSGi, obtenha o JAR do driver e coloque-o em um pacote OSGi. O pacote deve exportar os pacotes necessários para interagir com o servidor de banco de dados. O pacote também deve importar os pacotes que ele faz referência.
+Alguns fornecedores de banco de dados fornecem drivers JDBC em um pacote OSGi, por exemplo [MySQL](https://dev.mysql.com/downloads/connector/j/). Se o driver JDBC do seu banco de dados não estiver disponível como um pacote OSGi, obtenha o JAR do driver e coloque-o em um pacote OSGi. O pacote deve exportar os pacotes necessários para interagir com o servidor de banco de dados. O pacote também deve importar os pacotes que ele faz referência.
 
-O exemplo a seguir usa a variável [Plug-in do pacote para Maven](https://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html) para embrulhar o driver HSQLDB em um pacote OSGi. O POM instrui o plug-in a incorporar o arquivo hsqldb.jar identificado como uma dependência. Todos os pacotes org.hsqldb são exportados.
+O exemplo a seguir usa a variável [Plug-in do pacote para Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html) para embrulhar o driver HSQLDB em um pacote OSGi. O POM instrui o plug-in a incorporar o arquivo hsqldb.jar identificado como uma dependência. Todos os pacotes org.hsqldb são exportados.
 
-O plug-in determina automaticamente quais pacotes serão importados e os lista no arquivo MANIFEST.MF do pacote. Se algum dos pacotes não estiver disponível no servidor CQ, o pacote não será iniciado após a instalação. Duas soluções possíveis são as seguintes:
+O plug-in determina automaticamente quais pacotes serão importados e os lista no arquivo MANIFEST.MF do pacote. Se algum dos pacotes não estiver disponível no servidor CQ, o pacote não será iniciado na instalação. Duas soluções possíveis são as seguintes:
 
 * Indique no POM que os pacotes são opcionais. Use essa solução quando a conexão JDBC não exigir os membros do pacote. Use o elemento Importar-Pacote para indicar pacotes opcionais, como no exemplo a seguir:
 
@@ -86,9 +86,9 @@ O conhecimento do código-fonte permite que você decida qual solução usar. Vo
 
 Os links a seguir abrem as páginas de download de alguns produtos de banco de dados populares:
 
-* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
-* [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
-* [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
+* [Microsoft® SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
+* [Oracle](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
+* [IBM® DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 
 ### Configuração do Serviço de Pool de Conexões JDBC {#configuring-the-jdbc-connection-pool-service}
 
@@ -100,7 +100,7 @@ Ao trabalhar com o CQ, há vários métodos de gerenciamento das configurações
 
 As seguintes propriedades estão disponíveis para configurar um serviço de conexão agrupado. Os nomes das propriedades são listados conforme aparecem no Console da Web. O nome correspondente de um `sling:OsgiConfig` é exibido entre parênteses. Os valores de exemplo são mostrados para um servidor HSQLDB e um banco de dados que tem um alias de `mydb`:
 
-* Classe de Driver JDBC ( `jdbc.driver.class`): A classe Java a ser usada que implementa a interface java.sql.Driver, por exemplo `org.hsqldb.jdbc.JDBCDriver`. O tipo de dados é `String`.
+* Classe de Driver JDBC ( `jdbc.driver.class`): A classe Java™ a ser usada que implementa a interface java.sql.Driver, por exemplo `org.hsqldb.jdbc.JDBCDriver`. O tipo de dados é `String`.
 
 * URI de Conexão JDBC ( `jdbc.connection.uri`): O URL do banco de dados a ser usado para criar a conexão, por exemplo `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. O formato do URL deve ser válido para uso com o método getConnection da classe java.sql.DriverManager. O tipo de dados é `String`.
 
@@ -127,7 +127,7 @@ O serviço Pool de Conexões JDBC é de fábrica. Portanto, se você usar um `sl
 
 ### Conexão com o banco de dados {#connecting-to-the-database}
 
-No seu código Java, use o serviço DataSourcePool para obter um `javax.sql.DataSource` objeto para a configuração criada. O serviço DataSourcePool fornece a variável `getDataSource` que retorna um método `DataSource` para um determinado nome da fonte de dados. Como argumento do método, use o valor do Nome da Fonte de Dados (ou `datasource.name`) que você especificou para a configuração do Pool de Conexões JDBC.
+No seu código Java™, use o serviço DataSourcePool para obter um `javax.sql.DataSource` objeto para a configuração criada. O serviço DataSourcePool fornece a variável `getDataSource` que retorna um método `DataSource` para um determinado nome da fonte de dados. Como argumento do método, use o valor do Nome da Fonte de Dados (ou `datasource.name`) que você especificou para a configuração do Pool de Conexões JDBC.
 
 O exemplo de código JSP a seguir obtém uma instância da fonte de dados hsqldbds, executa uma consulta SQL simples e exibe o número de resultados que são retornados.
 
@@ -169,8 +169,9 @@ O exemplo de código JSP a seguir obtém uma instância da fonte de dados hsqldb
 
 >[!NOTE]
 >
->Se o método getDataSource lançar uma exceção porque a fonte de dados não foi encontrada, verifique se a configuração do serviço Pool de Conexões está correta. Verifique os nomes, valores e tipos de dados da propriedade.
+>Se o método getDataSource gerar uma exceção porque a fonte de dados não foi encontrada, verifique se a configuração do serviço Pool de Conexões está correta. Verifique os nomes, valores e tipos de dados da propriedade.
 
+<!-- Link below redirects to the "Get started with AEM Sites - WKND tutorial"
 >[!NOTE]
 >
->Para saber como injetar um DataSourcePool em um pacote OSGi, consulte [Injetando um serviço DataSourcePool em um pacote OSGi do Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
+>To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html). -->

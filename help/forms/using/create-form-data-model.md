@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: c3178eefb5aca3afea2f3df8381b52461247d6f3
+source-git-commit: e147605ff4d5c3d2403632285956559db235c084
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1512'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Faça o seguinte para configurar [!DNL MySQL] banco de dados:
 
 1. Instale o driver JDBC para [!DNL MySQL] banco de dados como um pacote OSGi:
 
-   1. Baixar [[!DNL MySQL] Pacote OSGi do driver JDBC](http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html).
+   1. Baixar [!DNL MySQL] Pacote OSGi do driver JDBC de `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
    1. Faça logon no AEM [!DNL Forms] Instância do autor como administrador e vá para AEM pacotes do console da Web. O URL padrão é [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Toque **[!UICONTROL Instalar/atualizar]**. Um [!UICONTROL Fazer upload / instalar pacotes] será exibida.
