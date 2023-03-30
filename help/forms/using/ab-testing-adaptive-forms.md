@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Criar e gerenciar o teste A/B para formulários adaptáveis{#create-and-manage-a-b-test-for-adaptive-forms}
 
-|Negativo|[!BADGE Descontinuação]{type=negative tooltip="Esse recurso agora está no fim da vida útil"}
+|Negativo|[!BADGE Descontinuação]{type=negative tooltip="Esse recurso agora está no fim da vida útil"}|
 <div class="preview"> O teste A/B para o recurso de formulários adaptáveis chegou ao fim da vida útil e não é mais suportado. </div>
 
 ## Visão geral {#overview-br}
