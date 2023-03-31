@@ -1,5 +1,5 @@
 ---
-title: Atualização para o AEM 6.5 Communities
+title: Atualização para AEM Comunidades 6.5
 seo-title: Upgrading to AEM 6.5 Communities
 description: Como atualizar de uma versão anterior para AEM Comunidades 6.5
 seo-description: How to upgrade from an earlier version to AEM 6.5 Communities
@@ -11,14 +11,14 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
+source-git-commit: 066a61a332aa620078740d36bd7f8689282fbf14
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 2%
+source-wordcount: '624'
+ht-degree: 1%
 
 ---
 
-# Atualização para o AEM 6.5 Communities {#upgrading-to-aem-communities}
+# Atualização para AEM Comunidades 6.5 {#upgrading-to-aem-communities}
 
 Dependendo da topologia e dos recursos de cada site, as seguintes ações podem ser necessárias ao atualizar para o AEM Communities 6.5 ou instalar o pacote de recursos mais recente.
 
@@ -33,12 +33,6 @@ Ao instalar um novo pacote de recursos das Comunidades em uma implantação conf
 1. Instale o [pacote de recursos mais recente](/help/communities/deploy-communities.md#latestfeaturepack).
 1. Instale o [Arquivos de configuração Solr mais recentes](/help/communities/msrp.md#upgrading).
 1. Reindexe o MSRP consulte a seção [Ferramenta de reindexação MSRP](/help/communities/msrp.md#msrp-reindex-tool).
-
-### Ativação 2.0 {#enablement}
-
-A partir do AEM 6.3, os recursos de ativação não armazenarão mais informações de relatórios no MySQL. A dependência MySQL está lá apenas para rastrear conteúdo SCORM.
-
-Entre em contato [atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html) para obter ajuda na migração de conteúdo do Enablement 1.0.
 
 ## Atualização do AEM 6.0 {#upgrading-from-aem}
 

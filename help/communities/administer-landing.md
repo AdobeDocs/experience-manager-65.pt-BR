@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 5%
+source-wordcount: '430'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,6 @@ Para obter uma visão geral e tutoriais de introdução, visite:
 
 * [Visão geral da AEM Communities](overview.md)
 * [Introdução ao AEM Communities](getting-started.md)
-* [Introdução ao AEM Communities para ativação](getting-started-enablement.md)
 
 ## Tópicos de administração e configuração {#administration-and-configuration-topics}
 
@@ -41,7 +40,6 @@ Para obter uma visão geral e tutoriais de introdução, visite:
       * [Grupos (subcomunidades)](groups.md)
    * [Moderação](moderation.md)
    * [Gerenciamento de membros e grupos](members.md)
-   * [Recursos de habilitação](resources.md)
    * [Relatórios](reports.md)
 
 
@@ -77,12 +75,6 @@ Um recurso importante do AEM Communities é a geração de conteúdo gerado pelo
 * [Notificações](notifications.md): capacidade de notificação de atividades por parte dos membros.
 * [Subscrições](subscriptions.md): capacidade de os membros interagirem com a comunidade usando email externo.
 * [Mensagens](messaging.md): capacidade de membros interagirem com a comunidade usando mensagens internas.
-
-### Recursos de habilitação {#enablement-features}
-
-* [Configurar habilitação](enablement.md): as informações necessárias para configurar corretamente os recursos de ativação.
-* [Configuração do Analytics](analytics.md): informações necessárias para ativar os recursos do Adobe Analytics for Communities.
-* [Marcar recursos de ativação](tag-resources.md): necessário para criar catálogos de ativação.
 
 ### Implantação {#deployment}
 

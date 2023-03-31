@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '252'
 ht-degree: 3%
 
 ---
@@ -29,19 +29,17 @@ A infraestrutura subjacente para as tags aplicadas no ambiente de publicação �
 
 * Consulte [Uso da Nuvem de tags sociais](tagcloud.md) para obter informações para autores sobre como adicionar um `social tag cloud` em uma página para realçar as tags aplicadas ao UGC no ambiente de publicação.
 
-* Consulte [Marcar recursos de ativação](tag-resources.md) para obter informações sobre como marcar recursos de catálogos.
-
 A marcação do UGC pode ser ativada ao configurar um [site da comunidade](sites-console.md#tagging) ou um dos seguintes recursos:
 
 * [Blog](blog-feature.md)
 * [Calendário](calendar.md)
 * [Biblioteca de arquivos](file-library.md)
 * [Fórum](forum.md)
-* [Perguntas e respostas](working-with-qna.md)
+* [QnA](working-with-qna.md)
 
 ## Fundamentos para o lado do cliente {#essentials-for-client-side}
 
-### Nuvem de tags sociais {#social-tag-cloud}
+### Tags em nuvem do Social {#social-tag-cloud}
 
 <table>
  <tbody>
@@ -58,7 +56,7 @@ A marcação do UGC pode ser ativada ao configurar um [site da comunidade](sites
    <td>cq.social.hbs.tagcloud</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelos</strong></td>
    <td> /libs/social/commons/components/hbs/tagcloud/tagcloud.hbs<br /> </td>
   </tr>
   <tr>

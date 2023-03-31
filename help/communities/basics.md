@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '361'
 ht-degree: 2%
 
 ---
@@ -73,7 +73,7 @@ Se a marcação for permitida, a configuração do site da comunidade poderá se
 
 Recursos que permitem marcação: [blog](blog-feature.md), [calendário](calendar.md), [biblioteca de arquivos](file-library.md), [fórum](forum.md)
 
-Recursos que usam tags: [catálogo](catalog.md), [pesquisa](search.md), [nuvem de tags sociais](tagcloud.md)
+Recursos que usam tags: [pesquisa](search.md), [nuvem de tags sociais](tagcloud.md)
 
 Para obter informações de criação:
 
@@ -84,7 +84,6 @@ Para informações administrativas:
 * Criação de namespaces de tags (taxonomia): [Administração de tags](../../help/sites-administering/tags.md)
 * Configuração do site da comunidade: see [MARCAÇÃO](sites-console.md#tagging)
 * [Marcação de conteúdo gerado pelo usuário](../../help/sites-authoring/tags.md)
-* [Marcar recursos de ativação](tag-resources.md)
 
 Para informações do desenvolvedor:
 

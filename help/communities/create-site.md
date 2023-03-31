@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1601'
 ht-degree: 2%
 
 ---
@@ -78,9 +78,7 @@ Selecione **Próximo**.
 
 ### Etapa 3: Configurações {#step-settings}
 
-Na etapa Configurações , antes de selecionar `Next`, observe que há sete seções que fornecem acesso a configurações envolvendo gerenciamento de usuários, marcação, moderação, gerenciamento de grupos, análise, tradução e ativação.
-
-Visite o [Introdução ao AEM Communities para ativação](/help/communities/getting-started-enablement.md) tutorial para experimentar o trabalho com os recursos de ativação.
+Na etapa Configurações , antes de selecionar `Next`, observe que há sete seções fornecendo acesso às configurações que envolvem gerenciamento de usuários, marcação, moderação, gerenciamento de grupos, análise e tradução.
 
 #### Gerenciamento de usuários {#user-management}
 
@@ -118,7 +116,7 @@ Para permitir que um membro da comunidade (ou grupo de membros) experiencie o si
 Por exemplo,
 
 * Tipo `q`
-* Selecionar [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
+* Selecione Quinn Harper
 
 >[!NOTE]
 >
@@ -152,16 +150,6 @@ O [Configurações de tradução](/help/communities/sites-console.md#translation
 * Deixe a opção de persistência padrão
 
 ![configurações de tradução](assets/translation-settings.png)
-
-#### ATIVAÇÃO {#enablement}
-
-Deixe em branco ao criar uma comunidade de envolvimento.
-
-Para obter um tutorial semelhante, crie rapidamente um [comunidade de capacitação](/help/communities/overview.md#enablement-community), consulte [Introdução ao AEM Communities para ativação](/help/communities/getting-started-enablement.md).
-
-Selecione **Próximo**.
-
-![ativação](assets/enablement.png)
 
 ### Etapa 4: Criar Site de Comunidades {#step-create-communities-site}
 
@@ -226,7 +214,7 @@ Observe que o UGC não está incluído no pacote do site.
 >1. (Opcional) Selecione **[!UICONTROL Limpar]** ou **[!UICONTROL Forçar nova tentativa]** para redefinir a fila de replicação.
 
 
-### Selecione Publicar {#select-publish}
+### Selecionar publicação {#select-publish}
 
 Depois de garantir que o servidor de publicação está em execução, selecione o ícone do mundo para publicar o site da comunidade.
 

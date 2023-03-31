@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 2%
+source-wordcount: '311'
+ht-degree: 1%
 
 ---
 
@@ -66,10 +66,6 @@ Para acessar os vários consoles Comunidades, na navegação global, selecione *
 * [Relatórios](reports.md)
 
    O console Relatórios é onde os relatórios sobre atribuições, exibições de página e conteúdo publicado (UGC) podem ser gerados quando um site da comunidade [Adobe Analytics habilitado](sites-console.md#analytics). O console só está disponível no ambiente do autor.
-
-* [Recursos](resources.md)
-
-   O console Recursos é onde [gerentes de capacitação](enablement.md#communitymanagers) criar, gerenciar e atribuir recursos aos membros de um [site da comunidade de ativação](overview.md#enablement-community). O console só está disponível no ambiente do autor.
 
 ## Console Ferramentas {#tools-console}
 

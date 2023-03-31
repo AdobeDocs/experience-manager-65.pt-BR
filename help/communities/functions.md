@@ -12,9 +12,9 @@ discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '2448'
+source-wordcount: '2224'
 ht-degree: 6%
 
 ---
@@ -96,14 +96,6 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
    Se selecionada, as páginas Atividades incluem uma guia que filtra as atividades com base nas atividades que o membro atual está seguindo. O padrão é selecionado.
 
-### Função das atribuições {#assignments-function}
-
-A função de atribuições é o recurso básico que define uma [site da comunidade para ativação](/help/communities/overview.md#enablement-community). Ela permite a atribuição de recursos de ativação a membros da comunidade. Consulte também [Fundamentos das Atribuições](/help/communities/essentials-assignments.md) para desenvolvedores.
-
-Essa função está disponível como um recurso do [complemento de ativação](/help/communities/enablement.md). O complemento de ativação requer licenciamento adicional para uso em um ambiente de produção.
-
-Quando adicionada a um template, a única configuração é para a variável [Configurações de título e URL](#title-and-url-settings).
-
 ### Função do blog {#blog-function}
 
 A função do blog é uma página com um [Componente de blog](/help/communities/blog-feature.md) configurado para marcação, uploads de arquivo, a seguir, membros para autoeditar, votar e moderar. Consulte também [Blog Essentials](/help/communities/blog-developer-basics.md) para desenvolvedores.
@@ -159,25 +151,6 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 * **Ativar conteúdo em destaque**
 
    Se selecionada, seu conteúdo será identificado como [conteúdo em destaque](/help/communities/featured.md). O padrão é selecionado.
-
-### Função do catálogo {#catalog-function}
-
-A função de catálogo fornece a capacidade de [comunidade de capacitação](/help/communities/overview.md#enablement-community) membros para navegar pelos recursos de ativação que não estão atribuídos a eles. Consulte [Marcar recursos de ativação](/help/communities/tag-resources.md) e [Fundamentos do catálogo](/help/communities/catalog-developer-essentials.md) para desenvolvedores.
-
-Todos os recursos de ativação e caminhos de aprendizado para o site da comunidade são exibidos em todos os catálogos se sua propriedade, ` [Show in Catalog](/help/communities/resources.md)`, está definido como verdadeiro. Para incluir explicitamente os recursos e os caminhos de aprendizado, é necessário aplicar uma [pré-filtro](/help/communities/catalog-developer-essentials.md#pre-filters) ao catálogo.
-
-Quando adicionada a um modelo, a configuração permite especificar namespace de tag usado para configurar o filtro de tag apresentado aos visitantes do site:
-
-![Função de catálogo](assets/catalog-function.png)
-
-* [Configurações de título e URL](#title-and-url-settings)
-
-* **Selecionar todos os namespaces**
-
-   Os namespaces de tags selecionados definem quais tags podem ser selecionadas pelos visitantes para filtrar a lista de recursos de ativação listados no catálogo.
-Se selecionado, todos os namespaces de tags permitidos para o site da comunidade estarão disponíveis.
-Se estiver desmarcado, é possível selecionar um ou mais namespaces permitidos para o site da comunidade.
-O padrão é selecionado.
 
 ### Função de conteúdo em destaque {#featured-content-function}
 
