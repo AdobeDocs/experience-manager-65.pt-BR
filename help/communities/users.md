@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '1920'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,6 @@ No AEM Communities, no ambiente de publicação, os usuários podem se registrar
 * Crie subcomunidades no site da comunidade (consulte [grupos da comunidade](creating-groups.md)).
 
 * [Moderar](moderation.md) conteúdo gerado pelo usuário (UGC).
-
-* Be [recurso de ativação](resources.md) contatos.
 
 * Be [privilegiado](#privileged-members-group) para criar entradas para blogs, calendários, QnA e fóruns.
 
@@ -79,8 +77,6 @@ Para gerenciar usuários e grupos de usuários registrados no ambiente de criaç
 | administradores | O grupo de administradores consiste em administradores de sistema que têm todas as capacidades de um Administrador da Comunidade, bem como a capacidade de gerenciar o grupo Administradores da Comunidade. |
 | Administradores da comunidade | O grupo Administradores da comunidade torna-se automaticamente membro de todos os sites da comunidade e de quaisquer grupos da comunidade criados no site. Um membro inicial do grupo Administradores da Comunidade é o grupo de administradores. No ambiente de criação, os administradores da comunidade podem criar sites da comunidade, gerenciar sites, gerenciar membros (eles podem banir membros da comunidade) e moderar conteúdo. |
 | Comunidade &lt;*nome do site*> Sitecontentmanager | O Gerente de conteúdo do site da comunidade pode executar a criação tradicional de AEM, a criação de conteúdo e a modificação de páginas para um site da comunidade. |
-| Gerentes de ativação da comunidade | O grupo Gerentes de ativação da comunidade consiste em usuários que estão disponíveis para atribuição para gerenciar o grupo Gerentes de ativação de um site da comunidade. |
-| Comunidade &lt;*nome do site* > Siteenablementmanager | O grupo Gerentes de ativação de site da comunidade consiste em usuários que foram atribuídos para gerenciar a ativação de um site da comunidade [recursos](resources.md). |
 | Nenhum | Um visitante anônimo do site pode não acessar o ambiente do autor. |
 
 ### Administradores do sistema {#system-administrators}
@@ -196,43 +192,11 @@ Há quatro consoles separados disponíveis apenas no ambiente do autor:
 | gerenciadores | usuários no autor | grupos de usuários no autor | membros ao publicar | grupos de membros ao publicar |
 | exige | permissão de administrador | permissão de administrador | permissão de administrador, serviço de túnel, sincronização de usuário para o farm de publicação | permissão de administrador, serviço de túnel, sincronização de usuário para o farm de publicação |
 
-### Função do gerenciador de ativação da comunidade {#community-enablement-manager-role}
-
-A capacidade de um visitante do site se registrar automaticamente normalmente não é permitida para um [comunidade de capacitação](overview.md#enablement-community) já que há custos associados a cada membro. Os aprendentes e os recursos de habilitação são gerenciados por um usuário atribuído à função [função](#author-group-roles) de `enablement manager` [durante a criação do site](sites-console.md#enablement) em autor (adicionado como membro do grupo `Community <site-name> Siteenablementmanagers`). O `enablement manager` é também responsável por [atribuição de recursos de aprendizagem](resources.md) aos membros da comunidade no autor.
-
-Somente usuários que são membros do `Community Enablement Managers` pode ser selecionado como um `enablement manager` para um site específico da comunidade.
-
-Para criar um usuário que possa receber a função de `Community Site Enablement Manager`, use o console de segurança da interface clássica para especificar o caminho:
-
-Em uma instância do autor:
-
-1. Conectado com privilégios de administrador, navegue até o console de segurança da interface clássica.
-
-   Por exemplo, [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
-
-2. No menu Editar, selecione **[!UICONTROL Criar usuário]**.
-3. Preencha o `Create User` caixa de diálogo.
-   * O caminho deve ser `/home/users/community`.
-4. Selecione **[!UICONTROL Criar]**.
-
-   ![create-community-user](assets/create-community-user.png)
-
-* No painel esquerdo, pesquise pelo usuário recém-criado e selecione para exibir no painel direito.
-
-   ![usuário comunitário](assets/view-community-user.png)
-
-No painel esquerdo:
-
-1. Desmarque a caixa de pesquisa e selecione **[!UICONTROL Ocultar usuários]**.
-2. Localizar e arrastar `community-enablementmanagers` para **[!UICONTROL Grupos]** guia do novo usuário exibido no painel direito.
-
-   ![grupo de atribuição](assets/assign-group.png)
-
 ### Função de administradores da comunidade {#community-administrators-role}
 
 Conforme declarado na [Funções do Grupo de Autores](#author-group-roles) no gráfico, os membros do grupo Administradores da Comunidade podem criar sites da comunidade, gerenciar sites, gerenciar membros (eles podem banir membros da comunidade) e moderar conteúdo.
 
-Siga as mesmas etapas que criar e atribuir um usuário à função de [gerenciador de ativação](#communitysiteenablementmanagerrole), mas adicione c `ommunity-administrators` na guia Grupos do usuário.
+Siga as mesmas etapas que criar e atribuir um usuário à função de gerenciador de ativação, mas adicione c `ommunity-administrators` na guia Grupos do usuário.
 
 ### Integração LDAP {#ldap-integration}
 

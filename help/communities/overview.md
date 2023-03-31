@@ -11,20 +11,16 @@ content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 exl-id: d6243dff-a067-455c-a326-5f451f225efd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 4%
+source-wordcount: '1273'
+ht-degree: 1%
 
 ---
 
 # Visão geral da AEM Communities {#aem-communities-overview}
 
-O Adobe Experience Manager (AEM) Communities oferece a capacidade de criar rapidamente um site local da comunidade com o melhor desempenho, gerenciamento de site, e estimula a conversão de visitantes do site em membros de alto valor da Comunidade.
-
-<!--
-Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
--->
+O Adobe Experience Manager (AEM) Communities fornece a capacidade de criar rapidamente um site local da comunidade que melhorou o desempenho, melhorou o gerenciamento do site e incentiva a conversão de visitantes do site em membros valiosos da comunidade.
 
 ## Recursos das comunidades {#communities-features}
 
@@ -40,7 +36,6 @@ O AEM Communities permite o desenvolvimento de uma relação com visitantes do s
 * **Compartilhamento de arquivos**,
 * **Notificações** e **fluxos de atividades**,
 * Permite **marcação** (@mention) outros membros registrados em Conteúdo gerado pelo usuário, para chamar a atenção deles.
-* Suporta **navegação pelo teclado** sobre componentes de ativação (por exemplo, Catálogo e reprodução do curso, atribuições, biblioteca de arquivos) .
 
 Os recursos das comunidades podem ser demonstrados usando o [Máquina de demonstração AEM](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) disponível publicamente em GitHub.com ou com a nova implementação de referência We.Retail.
 
@@ -98,7 +93,7 @@ Para saber mais sobre a persistência do conteúdo da comunidade e as implantaç
 
 No ambiente de criação, o console de navegação global fornece acesso ao [Console de comunidades](/help/communities/consoles.md), que contém:
 
-* [Console de sites](/help/communities/sites-console.md)
+* [Sites](/help/communities/sites-console.md) console
 
    * Criação do site
    * Edição do site
@@ -119,11 +114,6 @@ No ambiente de criação, o console de navegação global fornece acesso ao [Con
 * [Relatórios](/help/communities/reports.md) console
 
    * Fornece a capacidade de gerar relatórios sobre atribuições, postagens e visualizações.
-
-* [Recursos](/help/communities/resources.md) console
-
-   * Fornece a capacidade de criar recursos de capacitação e caminhos de aprendizado.
-   * Fornece acesso a relatórios sobre recursos de ativação e caminhos de aprendizado.
 
 O console de ferramentas globais fornece acesso às seguintes ferramentas do Communities:
 
@@ -183,9 +173,7 @@ O [componentes da comunidade](/help/communities/author-communities.md) do qual u
 
 O [guia de componentes da comunidade](/help/communities/components-guide.md) está disponível para exploração interativa dos componentes.
 
-## Tipos de comunidades {#types-of-communities}
-
-### Comunidade de envolvimento {#engagement-community}
+## Comunidade de envolvimento {#engagement-community}
 
 Uma comunidade de engajamento é um site da comunidade com foco em envolver os clientes para informar, solicitar feedback e permitir que eles interajam como membros da comunidade.
 
@@ -208,23 +196,6 @@ Os recursos de uma comunidade de envolvimento podem incluir:
 * Relatórios do Analytics
 
 Para experimentar a facilidade de criar rapidamente uma nova comunidade de envolvimento, visite [Introdução ao AEM Communities](/help/communities/getting-started.md).
-
-### Comunidade de ativação {#enablement-community}
-
-Uma comunidade de capacitação é um site da comunidade que inclui recursos para aprendizado online.
-
-Os recursos de uma comunidade de ativação podem incluir:
-
-* Todos os recursos de um [comunidade de engajamento](#engagement-community).
-* capacidade de atribuir conteúdo e aprendizado. recursos para membros e grupos de membros.
-* Suporta conteúdo SCORM, como testes e testes.
-* Rastreamento da conclusão das atribuições.
-* Acesso a relatórios e análises.
-* A capacidade de conversar sobre um recurso de aprendizado através de fóruns, mensagens, comentários e classificações.
-
-Uma comunidade de ativação pode ser criada quando a variável [O complemento de ativação está configurado](/help/communities/enablement.md), que requer licenciamento adicional para uso em um ambiente de produção. Um site da comunidade de ativação incluirá a variável [função atribuições](#community-functions).
-
-Para experimentar a facilidade de criar uma nova comunidade de ativação, visite [Introdução ao AEM Communities para ativação](/help/communities/getting-started-enablement.md).
 
 ## Máquina de demonstração AEM {#aem-demo-machine}
 

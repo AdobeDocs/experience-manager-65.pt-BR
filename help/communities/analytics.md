@@ -12,10 +12,10 @@ discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 0f7d4aba0b8c79039918e1338007a4277a5030f2
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '2731'
-ht-degree: 4%
+source-wordcount: '2694'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ A Adobe Analytics e a Adobe Experience Manager (AEM) são soluções da Adobe Ma
 
 O Adobe Analytics pode ser configurado para o AEM Communities de forma que, à medida que um membro interage com os recursos das Comunidades compatíveis, os eventos sejam enviados para o Adobe Analytics a partir do qual os relatórios são gerados.
 
-Por exemplo, quando um membro de um site da comunidade de ativação exibir um recurso de vídeo atribuído a ele, o reprodutor de recursos enviará eventos para o Analytics, incluindo dados de pulsação de vídeo. No site da comunidade, os administradores podem visualizar vários relatórios sobre a reprodução do vídeo.
+Por exemplo, no site da comunidade, os administradores podem visualizar vários relatórios sobre a reprodução do vídeo.
 
 Além disso, o analytics é necessário para:
 
@@ -44,9 +44,8 @@ Além disso, o analytics é necessário para:
 
 Os recursos suportados das Comunidades incluem:
 
-* [Recursos de habilitação](/help/communities/resources.md)
 * [Fórum](/help/communities/forum.md)
-* [Perguntas e respostas](/help/communities/working-with-qna.md)
+* [QnA](/help/communities/working-with-qna.md)
 * [Blog](/help/communities/blog-feature.md)
 * [Biblioteca de arquivos](/help/communities/file-library.md)
 * [Calendário](/help/communities/calendar.md)
@@ -105,7 +104,7 @@ Ao fazer logon em [Adobe Experience Cloud](https://experienceleague.adobe.com/do
 
    * tipo **`Counter`**
 
-      * not **`Counter (no subrelations)`**
+      * não **`Counter (no subrelations)`**
    * Pode redefinir (renomear) os eventos existentes ou criar novos eventos para usar nos recursos das Comunidades
 
 
@@ -151,7 +150,7 @@ Para ativar o relatório do Video Heartbeat após [configuração do conjunto de
 * Habilitar [Analytics para um site da comunidade](#enable-analytics-for-a-community-site)
 * Associe o `Marketing Cloud Org Id` com o site da comunidade
 
-O `Marketing Cloud Org Id` podem ser inseridas no momento da [criação de site da comunidade](/help/communities/sites-console.md#enablement) ou mais tarde [modificação](/help/communities/sites-console.md#modifying-site-properties) as propriedades do site da comunidade.
+O `Marketing Cloud Org Id` podem ser inseridas no momento da [criação de site da comunidade](/help/communities/sites-console.md) ou mais tarde [modificação](/help/communities/sites-console.md#modifying-site-properties) as propriedades do site da comunidade.
 
 ![marketing-org-id](assets/marketing-org-id.png)
 
@@ -180,7 +179,7 @@ Na caixa de diálogo Criar configuração , os valores a serem inseridos identif
 * **Título**
 
    (Obrigatório) Um título de exibição para a configuração.
-Por exemplo, insira *Ativar o Community Analytics*
+Por exemplo, insira *Comunidade do Analytics*
 
 * **Nome**
 
@@ -244,7 +243,7 @@ Para salvar as configurações:
 
 * Selecionar **OK**.
 
-   ![analytics-enablement-settings](assets/analytics-settings1.png)
+   ![analytics-settings](assets/analytics-settings1.png)
 
 ### Criar estrutura {#create-framework}
 
@@ -256,7 +255,7 @@ Após a configuração bem-sucedida da conexão básica com o Adobe Analytics, �
 
 * **Título**
 
-   (Obrigatório) Um título de exibição para a estrutura. Por exemplo, insira *Ativação do quadro comunitário*.
+   (Obrigatório) Um título de exibição para a estrutura. Por exemplo, insira *Quadro comunitário*.
 
 * **Nome**
 
@@ -275,7 +274,7 @@ A criação da Estrutura do Analytics abre a estrutura para configuração.
 
 A finalidade da estrutura é mapear variáveis AEM para variáveis do Analytics (eVars e eventos). As variáveis do Analytics disponíveis para mapeamento são [definido no conjunto de relatórios](#adobe-analytics-report-suite-for-video-reporting).
 
-![analytics-enablement-framework](assets/analytics-framework1.png)
+![analytics-framework](assets/analytics-framework1.png)
 
 ### Selecionar Conjunto de relatórios {#select-report-suite}
 
@@ -307,7 +306,7 @@ O Sidekick não é necessário e pode ser minimizado para que não obstrua o ace
 
 1. Escolha um `Run Mode`.
 
-1. Selecione **Publicar**.
+1. Selecionar **Publicar**.
 
 ![analytics-framework2](assets/analytics-framework2.png)
 
@@ -389,7 +388,7 @@ Depois que o site da comunidade é salvo com o Analytics ativado e a estrutura d
 
 Se estiver usando um conjunto de relatórios existente que mapeou qualquer uma das variáveis dentro de evar1 até evar11 e event1 até event7, será necessário [remapear as variáveis de AEM](#modifying-analytics-variable-mapping) e restaure o mapeamento original.
 
-Veja a seguir um exemplo de mapeamentos padrão após seguir o [tutorial de introdução](/help/communities/getting-started-enablement.md):
+A seguir, um exemplo de mapeamentos padrão:
 
 ![map-analytics](assets/map-analytics1.png)
 
@@ -442,9 +441,9 @@ Veja a seguir um exemplo de mapeamentos padrão após seguir o [tutorial de intr
    <td><em>(b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
+   <td><em>e)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -455,9 +454,9 @@ Veja a seguir um exemplo de mapeamentos padrão após seguir o [tutorial de intr
    <td><em>(b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
+   <td><em>e)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -468,9 +467,9 @@ Veja a seguir um exemplo de mapeamentos padrão após seguir o [tutorial de intr
    <td><em>(b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
+   <td><em>e)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -481,9 +480,9 @@ Veja a seguir um exemplo de mapeamentos padrão após seguir o [tutorial de intr
    <td><em>(b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
+   <td><em>e)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -494,9 +493,9 @@ Veja a seguir um exemplo de mapeamentos padrão após seguir o [tutorial de intr
    <td><em>(b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
+   <td><em>e)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -507,9 +506,9 @@ Veja a seguir um exemplo de mapeamentos padrão após seguir o [tutorial de intr
    <td><em>(b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>(e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
+   <td><em>e)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>

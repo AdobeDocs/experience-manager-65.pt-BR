@@ -7,10 +7,10 @@ breadcrumb-title: Guia do Communities
 user-guide-description: Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais.
 feature: Communities
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 12%
+source-wordcount: '451'
+ht-degree: 10%
 
 ---
 
@@ -21,20 +21,15 @@ ht-degree: 12%
 + Introdução ao AEM Communities {#introduction}
    + [Sites das comunidades](administer-landing.md)
    + [Visão geral da AEM Communities](overview.md)
-   + [Notas de versão do AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
+   + [Notas de versão da AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [Introdução ao AEM Communities](getting-started.md)
-   + [Introdução ao AEM Communities para ativação](getting-started-enablement.md)
    + [Configuração inicial](setup.md)
    + [Criar um novo site da comunidade](create-site.md)
    + [Experimente o site publicado](published-site.md)
    + [Criação de grupos aninhados](nested-groups.md)
-   + [Configuração inicial para ativação](enablement-setup.md)
-   + [Crie um novo site da comunidade para ativação](enablement-create-site.md)
-   + [Criar e atribuir recursos de habilitação](resource.md)
-   + [Experimente o site de ativação publicado](enablement-published-site.md)
 + Implantação {#deploy}
    + [Implantação de comunidades](deploy-communities.md)
-   + [Atualização para o AEM 6.5 Communities](upgrade.md)
+   + [Atualização para AEM Comunidades 6.5](upgrade.md)
    + [Topologias recomendadas para comunidades](topologies.md)
    + [Configuração do Dispatcher para Comunidades](dispatcher.md)
 + Administração {#administer}
@@ -42,7 +37,6 @@ ht-degree: 12%
    + [Sites das comunidades](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [Consoles de comunidades](consoles.md)
    + [Configuração do Analytics para recursos das Comunidades](analytics.md)
-   + [Configuração dos recursos de ativação](enablement.md)
    + [Configuração de mensagens](messaging.md)
    + [Moderação de conteúdo da comunidade](moderate-ugc.md)
    + [Configuração de email](email.md)
@@ -62,9 +56,7 @@ ht-degree: 12%
    + [Funções da comunidade](functions.md)
    + [Configuração de armazenamento](srp-config.md)
    + [Console de emblemas](badges.md)
-   + [Console de recursos de ativação](resources.md)
    + [Console de relatórios](reports.md)
-   + [Configuração do MySQL para Recursos de Ativação](mysql.md)
    + [FFmpeg para comunidades](ffmpeg.md)
    + [Moderação no contexto](in-context.md)
    + [Pontuação avançada e emblemas](advanced.md)
@@ -75,7 +67,6 @@ ht-degree: 12%
    + [Configuração do MySQL para DSRP](dsrp-mysql.md)
    + [JSRP - Provedor de recursos de armazenamento JCR](jsrp.md)
    + [Configuração de Solr para SRP](solr.md)
-   + [Marcar recursos de ativação](tag-resources.md)
    + [Marcação de conteúdo gerado pelo usuário](tag-ugc.md)
    + [Tradução de conteúdo gerado pelo usuário](translate-ugc.md)
    + [Sincronização de usuários das comunidades](sync.md)
@@ -94,10 +85,8 @@ ht-degree: 12%
    + [Visão geral do provedor de recursos de armazenamento](srp.md)
    + [Fundamentos do site da comunidade](sites-for-developers.md)
    + [Fundamentos do fluxo de atividade](essentials-activities.md)
-   + [Fundamentos das Atribuições](essentials-assignments.md)
    + [Blog Essentials](blog-developer-basics.md)
    + [Fundamentos do calendário](calendar-basics-for-developers.md)
-   + [Fundamentos do catálogo](catalog-developer-essentials.md)
    + [Clientlibs para componentes do Communities](clientlibs.md)
    + [Observações essenciais](essentials-comments.md)
    + [Eventos OSGi para componentes das Comunidades](events.md)
@@ -142,13 +131,11 @@ ht-degree: 12%
    + [Convenções de nomenclatura](naming-conventions.md)
    + [Refatoração do SocialUtils](socialutils.md)
 + Criação {#authoring}
-   + [Componentes do Communities](author-communities.md)
+   + [Componentes das comunidades](author-communities.md)
    + [Noções básicas sobre componentes do Communities](basics.md)
    + [Recurso Fluxos de atividade](activities.md)
-   + [Recurso Atribuições](assignments.md)
    + [Recurso de blog](blog-feature.md)
    + [Recurso de calendário](calendar.md)
-   + [Recurso de catálogo](catalog.md)
    + [Uso de comentários](comments.md)
    + [Recurso de conteúdo em destaque](featured.md)
    + [Recurso da biblioteca de arquivos](file-library.md)

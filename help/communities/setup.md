@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '673'
 ht-degree: 2%
 
 ---
@@ -51,8 +51,6 @@ Este tutorial cria um [site da comunidade de engajamento](overview.md#engagement
 Para garantir que o pacote de recursos mais recente esteja instalado, visite:
 
 * [Versões mais recentes](deploy-communities.md#latest-releases)
-
-Para um tutorial que cria um [site da comunidade de ativação](overview.md#enablement-community), visita [Introdução ao AEM Communities para ativação](getting-started-enablement.md).
 
 ## Configurar Analytics {#configure-analytics}
 
@@ -130,7 +128,7 @@ Consulte [Logon no Social com Facebook e Twitter](social-login.md).
 
 ## Criar tags tutoriais {#create-tutorial-tags}
 
-Crie tags para usar nos tutoriais de engajamento e ativação, usando o namespace de tag de `Tutorial`.
+Crie tags para usar nos tutoriais de engajamento, usando o namespace de tag de `Tutorial`.
 
 Use o [Console de marcação](../../help/sites-administering/tags.md#tagging-console) para criar as seguintes tags:
 

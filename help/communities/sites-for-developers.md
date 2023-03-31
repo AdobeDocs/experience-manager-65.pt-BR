@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 1%
+source-wordcount: '500'
+ht-degree: 2%
 
 ---
 
@@ -93,7 +93,6 @@ A partir do AEM Communities 6.3 Service Pack 1, o ícone Excluir site é exibido
 
 * [UGC](#user-generated-content)
 * [Grupos de usuários](#community-user-groups)
-* [Assets](#enablement-assets)
 * [Registros do banco de dados](#database-records)
 
 ### ID exclusiva do site da comunidade {#community-unique-site-id}
@@ -134,18 +133,3 @@ Em todas as instâncias de autor e publicação, no [console de segurança](../.
 * Seguido de [id de site exclusiva](#community-unique-site-id)
 
 Por exemplo, `community-engage-x0e11-members`.
-
-### Ativar ativos {#enablement-assets}
-
-No console principal:
-
-* Selecionar **[!UICONTROL Ativos]**.
-* Enter **[!UICONTROL Selecionar]** modo.
-* Selecione a pasta nomeada com o [identificador exclusivo do site](#community-unique-site-id).
-* Selecionar **[!UICONTROL Excluir]** (pode ser necessário selecionar de **[!UICONTROL Mais...]**).
-
-### Registros do banco de dados {#database-records}
-
-Não há ferramenta para excluir seletivamente entradas de banco de dados de um site específico da comunidade de ativação.
-
-Quando todos os sites da comunidade estiverem sendo excluídos, solte o enablementdb e o scormenginedb usando o MySQL Workbench.

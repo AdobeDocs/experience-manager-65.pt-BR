@@ -12,10 +12,10 @@ discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
 role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 7%
+source-wordcount: '381'
+ht-degree: 9%
 
 ---
 
@@ -27,10 +27,6 @@ Para o AEM Communities, há vários relatórios que podem ser acessados de vári
 
 Em geral, os diversos relatórios são:
 
-* [Relatório de atribuições](#assignments-report)
-
-   Para um [comunidade de capacitação](/help/communities/overview.md#enablement-community), fornece uma visão geral do progresso dos alunos em suas atribuições, incluindo uma pontuação associada ao implementar o padrão SCORM.
-
 * [Relatório de exibições](#views-report)
 
    Fornece um gráfico de visualizações de conteúdo por membros da comunidade e visitantes do site para qualquer site da comunidade.
@@ -38,8 +34,6 @@ Em geral, os diversos relatórios são:
 * [Relatório de publicações](#posts-report)
 
    Fornece um gráfico de vários tipos de postagens por membros da comunidade para qualquer site da comunidade.
-
-When [O Adobe Analytics está ativado](/help/communities/sites-console.md#analytics), os relatórios incluirão o número de exibições, reproduções, comentários e classificações para cada recurso de ativação ao longo do tempo.
 
 Os relatórios tabulares podem ser exportados no formato .csv para processamento subsequente.
 
@@ -64,59 +58,6 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
 
 
 ![relatórios](assets/reports1.png)
-
-### Relatórios para recursos de ativação e caminhos de aprendizado {#reports-for-enablement-resources-and-learning-paths}
-
-* Na navegação global: **[!UICONTROL Navegação]** > **[!UICONTROL Comunidades]** >  **[!UICONTROL Recursos]**
-
-* Selecione um site da comunidade de ativação existente:
-
-   * Selecionar **Relatório** ícone para gerar relatórios que abrangem todos os recursos de ativação.
-   * Selecione um caminho de aprendizagem de ativação.
-   * Selecionar **Relatório** ícone para gerar relatórios para:
-
-      * Os recursos de ativação incluídos.
-      * Os alunos atribuídos ao caminho de aprendizado.
-
-* Esses relatórios fornecem:
-
-   * Dados da tabela, baixáveis como CSV:
-
-      * Identificando o aluno
-      * Seu status
-      * Se atribuído ou acessado pelo catálogo
-      * Número de comentários feitos
-      * Classificação de estrelas fornecida
-
-Para obter mais detalhes, consulte [Seção Relatórios](/help/communities/resources.md#report) do console Recursos.
-
-## Relatório de atribuições {#assignments-report}
-
-O console Atribuições permite que os relatórios sejam filtrados por ativação do site da comunidade, usuários ou grupos e atribuição.
-
-O relatório fornece informações sobre o seu progresso, bem como quaisquer comentários ou notações fornecidas.
-
-![relatório de atribuição](assets/assignment-report.png)
-
-Selecione os critérios do relatório :
-
-* **Site**
-
-   Selecione um site da comunidade de ativação.
-
-* **Usuário ou grupo**
-   * Selecione Usuário para gerar um relatório para um aluno.
-   * Selecione Grupo para gerar um relatório para um grupo de alunos.
-
-   O serviço de túnel acessará membros e grupos de membros do ambiente de publicação.
-
-* **Atribuição**
-
-   Escolha entre os recursos de ativação atribuídos ao(s) aluno(s) selecionado(s).
-
-Selecionar **Gerar** para criar o relatório:
-
-![gerar relatório](assets/generate-assignment-report.png)
 
 ## Relatório de exibições {#views-report}
 

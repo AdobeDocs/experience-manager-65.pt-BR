@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 role: Admin
 exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '269'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,9 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-FFmpeg é uma solução para conversão e transmissão de áudio e vídeo e, quando instalado, é usado para a transcodificação adequada de [ativos de vídeo](../../help/sites-authoring/default-components-foundation.md#video) assim como para o recurso de habilitação do AEM Communities.
+FFmpeg é uma solução para conversão e transmissão de áudio e vídeo e, quando instalado, é usado para a transcodificação adequada de [ativos de vídeo](../../help/sites-authoring/default-components-foundation.md#video).
 
-FFmpeg é usado no ambiente de criação para obter metadados para recursos de ativação carregados, bem como gerar uma miniatura para exibição ao listar o recurso de ativação.
-
-## Instalar FFmpeg {#installing-ffmpeg}
+## Instalação do FFmpeg {#installing-ffmpeg}
 
 O FFmpeg deve ser instalado no(s) servidor(es) que hospeda o AEM *autor* instância(s).
 

@@ -12,9 +12,9 @@ discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '3278'
+source-wordcount: '3106'
 ht-degree: 4%
 
 ---
@@ -62,10 +62,6 @@ O console Sites das Comunidades exibe os sites existentes da comunidade. Deste c
 Para criar um novo site da comunidade, selecione o **Criar** ícone .
 
 Para acessar um site da comunidade existente, com o objetivo de criar, modificar, publicar, exportar ou adicionar um grupo aninhado, selecione o ícone de pasta do site.
-
-Por exemplo, a imagem a seguir mostra o console Sites das Comunidades principais exibindo as pastas de dois sites da comunidade : [habilitar](/help/communities/getting-started-enablement.md) e [engajamento](/help/communities/getting-started.md):
-
-![console do site](assets/site-console.png)
 
 ## Criação do site {#site-creation}
 
@@ -165,7 +161,6 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 * [MODERAÇÃO](#moderation)
 * [ANALYTICS](#analytics)
 * [TRADUÇÃO](#translation)
-* [ATIVAÇÃO](#enablement)
 
 >[!NOTE]
 >
@@ -182,12 +177,6 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 #### GERENCIAMENTO DE USUÁRIOS {#user-management}
 
 ![createsitesetsettings](assets/createsitesettings.png)
-
->[!NOTE]
->
->Recomenda-se que [ativar sites da comunidade](/help/communities/overview.md#enablement-community) ser privado (entre em contato com seu representante de conta para obter mais informações).
->
->Um site da comunidade é privado quando visitantes anônimos do site têm acesso negado, podem não se registrar e podem não usar logon social.
 
 * **Permitir registro do usuário**
 
@@ -231,7 +220,7 @@ Deixe desmarcada para uma *private* site da comunidade. O padrão está desmarca
 
 As tags que podem ser aplicadas ao conteúdo da comunidade são controladas selecionando Namespaces de tag definidos anteriormente por meio da variável [Console de marcação](/help/sites-administering/tags.md#tagging-console).
 
-Além disso, selecionar namespaces de tags para o site da comunidade limita a seleção apresentada ao definir catálogos e recursos. Consulte [Marcar recursos de ativação](/help/communities/tag-resources.md) para obter informações importantes.
+Além disso, selecionar namespaces de tags para o site da comunidade limita a seleção apresentada ao definir catálogos e recursos.
 
 * caixa de pesquisa de texto : Comece a digitar para identificar as tags que podem ser usadas no site.
 
@@ -350,21 +339,6 @@ Se selecionada, o conteúdo não é traduzido até que uma solicitação seja fe
    * `Always show contributions in the original language` (default)
    * `Always show contributions in user preferred language`
    * `Show contributions in user preferred language for only logged-in users`
-
-#### ATIVAÇÃO {#enablement}
-
-![ativação do site](assets/site-enablement.png)
-
-O `ENABLEMENT`as configurações são aplicáveis quando o modelo de site de comunidade escolhido inclui a variável [função atribuições](/help/communities/functions.md#assignments-function), que está disponível quando os recursos de ativação são licenciados e [configurado](/help/communities/enablement.md). O modelo do site de referência que inclui a função de atribuições é `Reference Structured Learning Site Template.`
-
-* **Gerentes de ativação**
-(Obrigatório) Somente membros da `Community Enablementmanagers` estão disponíveis para serem selecionadas para gerenciar essa comunidade de ativação. Os gerentes de habilitação são responsáveis por atribuir membros aos recursos. Consulte também [Gerenciar usuários e grupos de usuários](/help/communities/users.md).
-
-* **ID da organização da Marketing Cloud**
-
-   (opcional) A ID de um [Análise do Video Heartbeat](/help/communities/analytics.md#video-heartbeat-analytics) licença.
-
-* Selecione **Próximo**.
 
 ### Etapa 4 : Criar Site de Comunidades {#step-create-communities-site}
 
@@ -486,12 +460,6 @@ O painel CONFIGURAÇÕES permite acesso à maioria das configurações nos subpa
 ### Modificar miniatura {#modify-thumbnail}
 
 O painel MINIATURA permite que uma imagem seja carregada para representar o site no console Sites das Comunidades.
-
-### Modificar ativação {#modify-enablement}
-
-O painel ATIVAÇÃO permite o acesso às configurações fornecidas durante a criação do site da comunidade.
-
-Consulte a [ATIVAÇÃO](#enablement) descrição.
 
 ## Publicar o site {#publishing-the-site}
 
