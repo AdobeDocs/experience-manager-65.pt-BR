@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
 workflow-type: tm+mt
-source-wordcount: '1198'
-ht-degree: 6%
+source-wordcount: '1178'
+ht-degree: 7%
 
 ---
 
@@ -62,7 +62,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
   <tr>
    <td><strong>Etapa 0</strong></td>
    <td>Analisar fluxo de solicitação</td>
-   <td><p>Você pode usar a análise de solicitação HTTP padrão no navegador para analisar o fluxo de solicitação. Para obter mais informações sobre como fazer essa análise no Chrome, consulte:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
+   <td><p>Você pode usar a análise de solicitação HTTP padrão no navegador para analisar o fluxo de solicitação. Para obter mais informações sobre como fazer essa análise no Chrome, consulte:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Etapa 2</strong></td>
@@ -97,7 +97,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
   <tr>
    <td><strong>Etapa 8</strong></td>
    <td>A lentidão é reprodutível com uma instância local?</td>
-   <td><br /> <p>Use <a href="/help/sites-developing/tough-day.md">Dia difícil</a> para replicar condições de "mundo real" das instâncias de produção. Se esse cenário não for realista para o espaço de seu desenvolvimento, teste a instância de produção (ou uma de preparo idêntica) em um contexto de rede diferente.<br /> </p> </td>
+   <td><br /> <p>Use <a href="/help/sites-developing/tough-day.md">Dia difícil</a> para replicar condições "reais" das instâncias de produção. Se esse cenário não for realista para o espaço de seu desenvolvimento, teste a instância de produção (ou uma de preparo idêntica) em um contexto de rede diferente.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Etapa 9</strong></td>
@@ -212,7 +212,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Serviço de sincronização de ativos</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Várias instâncias do DAM</a></li>
-     <li>Artigos sobre dicas de ajuste de desempenho <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">here</a> e <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">here</a>.<br /> </li>
+     <li>Artigo sobre dicas de ajuste de desempenho <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">here</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -228,7 +228,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
   <tr>
    <td><strong>Etapa 31</strong></td>
    <td>Usar CDN na frente do Dispatcher</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#using-dispatcher-with-a-cdn">Uso do Dispatcher com um CDN</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR#using-dispatcher-with-a-cdn">Uso do Dispatcher com um CDN</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Etapa 32</strong></td>
@@ -240,11 +240,11 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
    <td>Tornar solicitações armazenáveis em cache</td>
    <td>
     <ol>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en">Configuração geral do Dispatcher</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR">Configuração geral do Dispatcher</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache">Configuração do Cache do Dispatcher</a></li>
     </ol> <p>Como melhorar a taxa de cache; fazer solicitações com capacidade de cache (práticas recomendadas do Dispatcher)</p> <p>Além disso, considere as configurações abaixo para otimizar suas configurações de cache<br /> </p>
     <ol>
-     <li>Definir uma regra sem cache para solicitação HTTP que não são GET</li>
+     <li>Definir uma regra sem cache para solicitação HTTP que não é GET</li>
      <li>Configurar cadeias de consulta para não poder ser armazenadas em cache</li>
      <li>Não armazene URLs em cache com extensões ausentes</li>
      <li>Cabeçalhos de autenticação de cache (possível desde a versão 4.1.10 do Dispatcher)</li>
@@ -277,7 +277,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
   <tr>
    <td><strong>Etapa 39</strong></td>
    <td>Usar pré-conexão para reduzir a sobrecarga da conexão</td>
-   <td>Consulte a Sessão Gem acima. Além disso, pré-conexão de documentação adicional no W3c:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
+   <td>Consulte a Sessão Gem acima. Além disso, documentação adicional de pré-conexão no W3c:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
   </tr>
   <tr>
    <td><strong>Etapas 40 e 41</strong><br /> </td>

@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 73fba5249a05b0bdb9871a6e19c6bed10a7e7e4b
+source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
 workflow-type: tm+mt
-source-wordcount: '3476'
+source-wordcount: '3429'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 OSGi &quot;*O fornece os primitivos padronizados que permitem que os aplicativos sejam construídos a partir de componentes pequenos, reutilizáveis e colaborativos. Esses componentes podem ser compostos em um aplicativo e implantados*&quot;.
 
-Isso permite o gerenciamento fácil de pacotes, pois eles podem ser interrompidos, instalados e iniciados individualmente. As interdependências são manipuladas automaticamente. Cada componente OSGi (consulte o [Especificação OSGi](https://www.osgi.org/Specifications/HomePage)) está contido em um dos vários pacotes. Ao trabalhar com AEM, há vários métodos de gerenciamento das configurações desses pacotes; see [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
+Essa funcionalidade permite o gerenciamento fácil de pacotes, pois eles podem ser interrompidos, instalados e iniciados individualmente. As interdependências são manipuladas automaticamente. Cada componente OSGi (consulte o [Especificação OSGi](https://www.osgi.org/Specifications/HomePage)) está contido em um dos vários pacotes. Ao trabalhar com AEM, há vários métodos de gerenciamento das configurações desses pacotes; see [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
 As seguintes configurações de configuração do OSGi (listadas de acordo com o pacote) são relevantes para a implementação do projeto. Nem todas as configurações listadas precisam de ajuste, algumas são mencionadas para ajudar você a entender como o AEM opera.
 
@@ -39,7 +39,7 @@ As seguintes configurações de configuração do OSGi (listadas de acordo com o
 
 >[!NOTE]
 >
->A ferramenta Diff de configuração do OSGi, parte da [Ferramentas AEM](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html), pode ser usado para listar as configurações padrão do OSGi.
+>A ferramenta Diff de configuração do OSGi, parte da [Ferramentas AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=en), pode ser usado para listar as configurações padrão do OSGi.
 
 >[!NOTE]
 >
@@ -47,9 +47,9 @@ As seguintes configurações de configuração do OSGi (listadas de acordo com o
 
 **Ouvinte de Evento de Replicação de AEM** Configurar:
 
-* O **Modos de Execução**, em que os eventos de replicação serão distribuídos aos ouvintes. Por exemplo, se definido como autor, esse é o sistema que &quot;iniciará&quot; a replicação.
+* O **Modos de Execução**, em que os eventos de replicação são distribuídos aos ouvintes. Por exemplo, se definido como autor, é o sistema que &quot;inicia&quot; a replicação.
 
-* O modo de execução **publicar** precisa ser adicionado se o código do projeto processar eventos de replicação (replicação inversa) em um ambiente de publicação. Por exemplo, quando o dispatcher é usado para liberar do ambiente de publicação ou quando ocorre a replicação padrão para outras instâncias de publicação.
+* Adicionar o modo de execução **publicar** se o código do projeto processar eventos de replicação (replicação inversa) em um ambiente de publicação. Por exemplo, quando o Dispatcher é usado para liberar do ambiente de publicação ou quando ocorre a replicação padrão para outras instâncias de publicação.
 
 **AEM Ouvinte de alteração do repositório** Configurar:
 
@@ -77,19 +77,18 @@ As seguintes configurações de configuração do OSGi (listadas de acordo com o
 
 **Apache Sling Customizable Request Data Logger** Configurar:
 
-* **Nome do logger** e **Formato de registro** para configurar o local e o formato do registro de solicitação e acesso (padrão: `request.log`). Esse arquivo de log é essencial ao analisar o desempenho ou a funcionalidade de depuração relacionada à cadeia da Web.
-Isso é emparelhado com a variável [Logon de solicitação do Apache Sling](#apacheslingrequestlogger).
+* **Nome do logger** e **Formato de registro** para configurar o local e o formato do registro de solicitação e acesso (padrão: `request.log`). Esse arquivo de log é essencial ao analisar o desempenho ou a funcionalidade de depuração relacionada à cadeia da Web. Ele é emparelhado com a variável [Logon de solicitação do Apache Sling](#apacheslingrequestlogger).
 
-Para obter mais informações, consulte [Registro de AEM](/help/sites-deploying/configure-logging.md) e [Registro do Sling](https://sling.apache.org/site/logging.html).
+Consulte [Registro de AEM](/help/sites-deploying/configure-logging.md) e [Registro do Sling](https://sling.apache.org/documentation/development/logging.html).
 
 **Pool de Thread de Eventos do Apache Sling** Configurar:
 
 * **Tamanho Mín. do Pool** e **Tamanho máximo do pool**, o tamanho do pool usado para armazenar threads de evento.
 
 * **Tamanho da fila**, o tamanho máximo da fila de thread se o pool estiver esgotado.
-O valor recomendado é `-1` já que isso define a fila como ilimitada; se um limite for definido, as perdas podem ocorrer quando ele for excedido.
+O valor recomendado é `-1` porque define a fila como ilimitada. Se um limite for definido, as perdas podem ocorrer quando ele for excedido.
 
-* Alterar essas configurações pode ajudar no desempenho em cenários com um alto número de eventos; por exemplo, uso intenso de DAM ou Fluxo de trabalho AEM.
+* Alterar essas configurações pode ajudar no desempenho em cenários com um alto número de eventos. Por exemplo, uso intenso de DAM ou Fluxo de trabalho AEM.
 * Os valores específicos do seu cenário devem ser estabelecidos usando testes.
 * Essas configurações podem afetar o desempenho da sua instância, portanto, não as altere sem motivo e consideração.
 
@@ -97,25 +96,25 @@ O valor recomendado é `-1` já que isso define a fila como ilimitada; se um lim
 
 * **Índice automático** para ativar/desativar a renderização do diretório para navegação.
 * **Habilitar** (ou desativar) representações padrão, como **HTML**, **Texto sem formatação**, **JSON** ou **XML**.
-Você não deve desativar o JSON.
+Não desative o JSON.
 
 >[!NOTE]
 >
 >Essa configuração é configurada automaticamente para instâncias de produção se você executar AEM em [Modo Pronto para produção](/help/sites-administering/production-ready.md).
 
-**Manipulador de script Java do Apache Sling** Defina as configurações para a compilação de arquivos .java como scripts (servlets).
+**Manipulador de JavaScript do Apache Sling** Defina as configurações para a compilação de arquivos .java como scripts (servlets).
 
-Certas configurações podem afetar o desempenho, elas devem ser desativadas sempre que possível, principalmente para uma instância de produção.
+Certas configurações podem afetar o desempenho. Desative essas configurações sempre que possível, especialmente para uma instância de produção.
 
-* **VM de origem** e **VM de destino**, defina a versão do JDK como a usada como JVM em tempo de execução
+* **VM de origem** e **VM de destino**, defina a versão do JDK usada como a JVM do tempo de execução
 
 * para instâncias de produção:
 
    * disable **Gerar informações de depuração**
 
-**Instalador do Apache Sling JCR** Esses parâmetros provavelmente não precisam de configuração, mas podem ser úteis para saber ao desenvolver ou depurar. Por exemplo, a(s) pasta(s) de instalação pode(m) ser útil para fazer check-in/out ou criar um pacote.
+**Instalador do Apache Sling JCR** Esses parâmetros provavelmente não precisam de configuração, mas podem ser úteis para saber ao desenvolver ou depurar. Por exemplo, as pastas de instalação podem ser úteis para fazer check-in, check-out ou criar um pacote.
 
-* **Nome das pastas de instalação regexp** e **Profundidade máxima da hierarquia de pastas de instalação** - especifique onde e a que profundidade as pastas do repositório são pesquisadas para que os recursos sejam instalados. Quando um curinga é usado (como em .&#42;/install) todas as correspondências apropriadas serão pesquisadas, por exemplo, `/libs/sling/install` e `/libs/cq/core/install`.
+* **Nome das pastas de instalação regexp** e **Profundidade máxima da hierarquia de pastas de instalação** - especifique onde e a que profundidade as pastas do repositório são pesquisadas para que os recursos sejam instalados. Quando um curinga é usado (como em .&#42;/install) todas as correspondências apropriadas são pesquisadas, por exemplo, `/libs/sling/install` e `/libs/cq/core/install`.
 
 * **Caminho de pesquisa**, a lista de caminhos que o jcrinstall procura recursos a serem instalados, juntamente com um número que indica o fator de ponderação para esse caminho.
 
@@ -132,7 +131,7 @@ Certas configurações podem afetar o desempenho, elas devem ser desativadas sem
 Em especial para instâncias de produção:
 
 * disable **Gerar informações de depuração**
-* disable **Manter Java gerado**
+* disable **Manter Java™ gerado**
 * disable **Conteúdo mapeado**
 * disable **Exibir fragmentos de origem**
 
@@ -142,13 +141,13 @@ Em especial para instâncias de produção:
 
 **Configuração de registro do Apache Sling** Configurar:
 
-* **Nível de log** e **Arquivo de log**, para definir o local e o nível de log da configuração de log central (error.log). O nível pode ser definido como um dos `DEBUG`, `INFO`, `WARN`, `ERROR` e `FATAL`.
+* **Nível de log** e **Arquivo de log**, para definir o local e o nível de log da configuração de log central (error.log). O nível pode ser definido como um dos `DEBUG`, `INFO`, `WARN`, `ERROR`e `FATAL`.
 
 * **Número de arquivos de log** e **Limite do arquivo de log** para definir o tamanho e a rotação da versão do arquivo de log.
 
 * **Padrão de mensagem** define o formato das mensagens de log.
 
-Para obter mais informações, consulte [Registro de AEM](/help/sites-deploying/configure-logging.md#global-logging) e [Registro do Sling](https://sling.apache.org/site/logging.html).
+Consulte [Registro de AEM](/help/sites-deploying/configure-logging.md#global-logging) e [Registro do Sling](https://sling.apache.org/documentation/development/logging.html).
 
 **Configuração do Apache Sling Logging Logger (Configuração de Fábrica)** Configurar:
 
@@ -160,7 +159,7 @@ Para obter mais informações, consulte [Registro de AEM](/help/sites-deploying/
 * Essas configurações são úteis durante o desenvolvimento; por exemplo, para registrar mensagens de TRACE para um serviço específico em um arquivo de log específico.
 * Essas configurações são úteis em um ambiente de produção; por exemplo, ter mensagens sobre um serviço específico registradas em um arquivo de log individual para facilitar o monitoramento.
 
-Para obter mais informações, consulte [Registro de AEM](/help/sites-deploying/configure-logging.md) e [Registro do Sling](https://sling.apache.org/site/logging.html).
+Consulte [Registro de AEM](/help/sites-deploying/configure-logging.md) e [Registro do Sling](https://sling.apache.org/documentation/development/logging.html).
 
 **Configuração do Apache Sling Logging Writer (Configuração de Fábrica)** Configurar:
 
@@ -172,7 +171,7 @@ Para obter mais informações, consulte [Registro de AEM](/help/sites-deploying/
 * Essas configurações são úteis durante o desenvolvimento; por exemplo, para registrar mensagens de TRACE para um serviço específico em um arquivo de log específico.
 * Essas configurações são úteis em um ambiente de produção; por exemplo, ter mensagens sobre um serviço específico registradas em um arquivo de log individual para facilitar o monitoramento.
 
-Para obter mais informações, consulte [Registro de AEM](/help/sites-deploying/configure-logging.md) e [Registro do Sling](https://sling.apache.org/site/logging.html).
+Consulte [Registro de AEM](/help/sites-deploying/configure-logging.md) e [Registro do Sling](https://sling.apache.org/documentation/development/logging.html).
 
 **Servlet principal Apache Sling** Configurar:
 
@@ -180,7 +179,7 @@ Para obter mais informações, consulte [Registro de AEM](/help/sites-deploying/
 
 **Apache Sling MIME Type Service** Configurar:
 
-* **Tipos MIME** para adicionar os requisitos exigidos pelo seu projeto ao sistema. Isso permite que uma `GET` em um arquivo para definir o cabeçalho de tipo de conteúdo correto para vincular o tipo de arquivo e o aplicativo.
+* **Tipos MIME** para adicionar tipos exigidos pelo seu projeto ao sistema. Isso permite `GET` em um arquivo para definir o cabeçalho de tipo de conteúdo correto para vincular o tipo de arquivo e o aplicativo.
 
 **Filtro de referenciador do Apache Sling** Para solucionar problemas de segurança conhecidos com a falsificação de solicitação entre sites (CSRF) no CRX WebDAV e no Apache Sling, é necessário configurar o filtro Referenciador .
 
@@ -194,7 +193,7 @@ Consulte a [Lista de verificação de segurança - Problemas com a falsificaçã
 
 >[!NOTE]
 >
->O Apache Sling Referrer Filter depende da instalação de um pacote de correção rápida.
+>O Filtro de referenciador do Apache Sling depende da instalação de um pacote de correção rápida.
 
 **Logon de solicitação do Apache Sling** Configurar:
 
@@ -203,29 +202,29 @@ Consulte a [Lista de verificação de segurança - Problemas com a falsificaçã
 
 * **Ativar registro de acesso**, para ativar ou desativar.
 
-Isso é emparelhado com a variável [Apache Sling Customizable Request Data Logger](#apacheslingcustomizablerequestdatalogger).
+Emparelhado com o [Apache Sling Customizable Request Data Logger](#apacheslingcustomizablerequestdatalogger).
 
-Para obter mais informações, consulte [Registro de AEM](/help/sites-deploying/configure-logging.md) e [Registro do Sling](https://sling.apache.org/site/logging.html).
+Consulte [Registro de AEM](/help/sites-deploying/configure-logging.md) e [Registro do Sling](https://sling.apache.org/documentation/development/logging.html).
 
 **Fábrica do Resolvedor de Recursos do Apache Sling** Configure os aspectos centrais da resolução de recursos do Sling:
 
-* **Caminho de pesquisa de recursos**(s), adicione caminhos específicos do projeto (mas não remova `/libs` ou `/apps`).
+* **Caminhos de pesquisa de recursos**, adicione caminhos específicos ao projeto (mas não remova `/libs` ou `/apps`).
 
 * **URLs virtuais** para definir os mapeamentos de URL personalizados.
 
-* **Mapeamentos de URL** definir quaisquer aliases; por exemplo, de `/content` para `/`.
+* **Mapeamentos de URL** para definir quaisquer aliases. Por exemplo, de `/content` para `/`.
 
 * **Localização do mapeamento**, a configuração do mapeador externalizada em `/etc/map`.
 
 * Use sua instalação local (por exemplo, use `https://localhost:4502/system/console/jcrresolver`) para determinar qual Resolvedor de Recursos está ativo.
 
-Para obter mais informações, consulte: [https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution](https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution).
+Consulte: [https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution](https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution).
 
 >[!CAUTION]
 >
->Especificamente, essas opções devem ser configuradas no repositório.
+>Configure essas opções no repositório.
 >
->Alterações feitas de outra forma em **Mapeamentos de URL** o uso do console Felix pode ser substituído pelo AEM na próxima inicialização.
+>Caso contrário, as alterações feitas em **Mapeamentos de URL** o uso do console Felix pode ser substituído pelo AEM na próxima inicialização.
 
 **Apache Sling Servlet/Script Resolver e Manipulador de Erros** O Sling Servlet e o Script Resolver têm várias tarefas:
 
@@ -237,28 +236,28 @@ Para obter mais informações, consulte: [https://cwiki.apache.org/confluence/di
 
 Vários parâmetros podem ser definidos, incluindo:
 
-* **Caminhos de execução** lista os caminhos para procurar scripts executáveis; ao configurar caminhos específicos, você pode limitar quais scripts podem ser executados. Se nenhum caminho estiver configurado, o padrão será usado ( `/` = root), isso permite a execução de todos os scripts.
+* **Caminhos de execução** - Lista os caminhos para procurar scripts executáveis. Ao configurar caminhos específicos, você pode limitar quais scripts podem ser executados. Se nenhum caminho estiver configurado, o padrão será usado ( `/` = root), permitindo a execução de todos os scripts.
 Se um valor de caminho configurado terminar com uma barra, a subárvore inteira será pesquisada. Sem essa barra à direita, o script só será executado se for uma correspondência exata.
 
-* **Usuário do script** - essa propriedade opcional pode especificar a conta de usuário do repositório usada para ler os scripts. Se nenhuma conta for especificada, a variável `admin` O usuário é usado por padrão.
+* **Usuário do script** - Essa propriedade opcional pode especificar a conta de usuário do repositório usada para ler os scripts. Se nenhuma conta for especificada, a variável `admin` O usuário é usado por padrão.
 
-* **Extensões padrão** A lista de extensões para as quais o comportamento padrão será usado. Isso significa que o último segmento de caminho do tipo de recurso pode ser usado como o nome do script.
+* **Extensões padrão** - A lista de extensões para as quais o comportamento padrão é usado. O último segmento de caminho do tipo de recurso pode ser usado como o nome do script.
 
-**Configuração de proxy de componentes HTTP do Apache** Configuração de proxy para todos os códigos usando o cliente HTTP Apache, usado quando um HTTP é feito; por exemplo, na replicação.
+**Configuração de proxy de componentes HTTP do Apache** - A configuração de proxy para todos os códigos que usam o cliente HTTP Apache, usada quando um HTTP é feito. Por exemplo, na replicação.
 
-Ao criar uma nova configuração, não faça alterações na configuração de fábrica, mas crie uma nova configuração de fábrica para este componente usando o gerenciador de configuração disponível aqui: **https://localhost:4502/system/console/configMgr/**. A configuração de proxy está disponível em **org.apache.http.proxyconfigurator.**
+Ao criar uma configuração, não altere a configuração de fábrica. Em vez disso, crie uma configuração de fábrica para este componente usando o gerenciador de configuração disponível aqui: **https://localhost:4502/system/console/configMgr/**. A configuração de proxy está disponível em **org.apache.http.proxyconfigurator.**
 
 >[!NOTE]
 >
->No AEM 6.0 e versões anteriores, o proxy foi configurado no Day Commons HTTP Client. A partir AEM 6.1 e versões posteriores, a configuração de proxy foi movida para a &quot;Configuração de proxy de componentes HTTP do Apache&quot; em vez da configuração &quot;Cliente HTTP do Day Commons&quot;.
+>Em AEM 6.0 e versões anteriores, o proxy foi configurado no Day Commons HTTP Client. A partir AEM 6.1 e versões posteriores, a configuração de proxy foi movida para a &quot;Configuração de proxy de componentes HTTP do Apache&quot; em vez da configuração &quot;Cliente HTTP do Day Commons&quot;.
 
-**Day CQ Antispam** Configure o serviço antisspam (Akismet) usado. Isso requer que você registre o:
+**Day CQ Antispam** Configure o serviço antisspam (Akismet) usado. Esse recurso exige que você registre o seguinte:
 
 * **Provedor**
 * **Chave da API**
 * **URL registrado**
 
-**Gerenciador de biblioteca de HTML do Adobe Granite** Configure isso para controlar o manuseio de bibliotecas de clientes (css ou js); incluindo, por exemplo, como a estrutura subjacente é vista.
+**Gerenciador de biblioteca de HTML do Adobe Granite** Configure para controlar o manuseio de bibliotecas de clientes (css ou js), incluindo, por exemplo, como a estrutura subjacente é vista.
 
 * Para instâncias de produção:
 
@@ -271,12 +270,12 @@ Ao criar uma nova configuração, não faça alterações na configuração de f
 
    * disable **Minimizar**
    * habilitar **Depurar** para separar os arquivos para depuração e uso com firebug.
-   * habilitar **Tempo** no caso de interesse em tempo oportuno.
+   * habilitar **Tempo** se estiver interessado em tempo.
    * habilitar **Depurar** para ver as mensagens de log do console JS.
 
 >[!CAUTION]
 >
->Ao alterar a configuração de **Minimizar** ou **Gzip** também será necessário excluir o conteúdo do cache clientlibs. Consulte esta [Artigo da Base de conhecimento](https://helpx.adobe.com/ca/experience-manager/kb/How-to-force-a-recompilation-of-all-Sling-scripts-jsps-java-sightly-on-AEM-6-4.html) para obter detalhes.
+>Ao alterar a configuração de **Minimizar** ou **Gzip**, exclua o conteúdo do cache clientlibs. Consulte [Artigo da Base de conhecimento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en) para obter detalhes.
 
 >[!NOTE]
 >
@@ -284,7 +283,7 @@ Ao criar uma nova configuração, não faça alterações na configuração de f
 
 **Manipulador de autenticação de cabeçalho HTTP CQ do dia** Configurações do sistema para o método de autenticação básico da solicitação HTTP.
 
-Ao usar [grupos de usuários fechados](/help/sites-administering/cug.md) você pode configurar (entre outros):
+Ao usar [grupos de usuários fechados](/help/sites-administering/cug.md), você pode configurar, entre outros, o seguinte:
 
 * **Realm HTTP**
 * O **Página de logon padrão**
@@ -308,7 +307,7 @@ Ao usar [grupos de usuários fechados](/help/sites-administering/cug.md) você p
 
 **Mapeamento raiz do CQ do dia** Configurar:
 
-* **Caminho do Target** para definir onde uma solicitação para &quot; `/`&quot; será redirecionado para.
+* **Caminho do Target** para definir onde uma solicitação para &quot; `/`&quot; é redirecionado para.
 
 Há duas interfaces de usuário disponíveis no AEM:
 
@@ -317,13 +316,13 @@ Há duas interfaces de usuário disponíveis no AEM:
 
 Usando AEM Mapeamento de Raiz, você pode configurar a interface que deseja ter como padrão para sua instância:
 
-* Para ter a interface habilitada para toque como a interface padrão do usuário **Caminho do Target** deve indicar:
+* Para ter a interface habilitada para toque como a interface padrão, a variável **Caminho do Target** deve apontar para o seguinte:
 
    ```shell
       /projects.html
    ```
 
-* Para ter a interface clássica como a interface padrão do usuário do **Caminho do Target** deve indicar:
+* Para ter a interface clássica como a interface padrão, o **Caminho do Target** deve apontar para o seguinte:
 
    ```shell
       /welcome.html
@@ -333,30 +332,30 @@ Usando AEM Mapeamento de Raiz, você pode configurar a interface que deseja ter 
 >
 >Em uma instalação padrão, a interface otimizada para toque é a interface padrão.
 
-**Manipulador de Autenticação SSO do Adobe Granite** Configurar detalhes do Logon único (SSO); geralmente, elas são necessárias em configurações de autor corporativo, geralmente em conjunto com o LDAP.
+**Manipulador de Autenticação SSO do Adobe Granite** - Configurar detalhes do SSO (Logon único). Geralmente, esses detalhes são necessários nas configurações do autor corporativo, geralmente com o LDAP.
 
 Várias propriedades de configuração estão disponíveis:
 
 * **Caminho**
-Caminho para o qual este manipulador de autenticação está ativo. Se este parâmetro for deixado em branco, o manipulador de autenticação será desativado. Por exemplo, o caminho / faz com que o manipulador de autenticação seja usado para todo o repositório.
+O caminho para o qual o manipulador de autenticação está ativo. Se esse parâmetro for deixado em branco, o manipulador de autenticação será desativado. Por exemplo, o caminho / faz com que o manipulador de autenticação seja usado para todo o repositório.
 
 * **Classificação do serviço**
-O valor de Classificação do Serviço de Estrutura OSGi é usado para indicar a ordem usada para chamar este serviço. Isso é uma 
+O valor de Classificação do Serviço de Estrutura OSGi é usado para indicar a ordem usada para chamar este serviço. Esse valor é uma 
 `int` , sempre que valores mais elevados designem uma precedência mais elevada.
 O valor padrão é `0`.
 
 * **Nomes de Cabeçalho**
-O(s) nome(s) dos cabeçalhos que podem conter uma ID de usuário.
+Os nomes dos cabeçalhos que podem conter uma ID de usuário.
 
 * **Nomes de cookies**
 Os nomes dos cookies que podem conter uma ID de usuário.
 
 * **Nomes de Parâmetros**
-O(s) nome(s) dos parâmetros de solicitação que podem fornecer a ID do usuário.
+Os nomes dos parâmetros da solicitação que podem fornecer a ID do usuário.
 
 * **Mapa do usuário**
 Para usuários selecionados, o nome de usuário extraído da solicitação HTTP pode ser substituído por um diferente no objeto de credenciais. O mapeamento é definido aqui. Se o nome do usuário 
-`admin` for exibido em qualquer lado do mapa, o mapeamento será ignorado. Esteja ciente de que o caractere &quot;=&quot; deve ser evitado com um &quot;\&quot; à esquerda.
+`admin` for exibido em qualquer lado do mapa, o mapeamento será ignorado. O caractere &quot;=&quot; deve ser evitado com um &quot;\&quot; à esquerda.
 
 * **Formato**
 Indica o formato em que a ID de usuário é fornecida. Utilização:
@@ -364,17 +363,17 @@ Indica o formato em que a ID de usuário é fornecida. Utilização:
    * `Basic` se a ID do usuário estiver codificada no formato HTTP Basic Authentication
    * `AsIs` se a ID de usuário for fornecida em texto simples ou qualquer expressão regular aplicada, o valor deve ser usado como está ou qualquer expressão regular
 
-**Filtro de depuração do Day CQ WCM** Isso é útil ao desenvolver, pois permite o uso de sufixos como ?debug=layout ao acessar uma página. Por exemplo, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout fornecerá informações de layout que podem ser de interesse do desenvolvedor.
+**Filtro de depuração do Day CQ WCM** Isso é útil ao desenvolver, pois permite o uso de sufixos como ?debug=layout ao acessar uma página. Por exemplo, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout fornece informações de layout que podem ser de interesse do desenvolvedor.
 
-* Desative isso em instâncias de produção para garantir desempenho e segurança.
+* Para garantir desempenho e segurança, desative em instâncias de produção.
 
 **Filtro Day CQ WCM** Configurar:
 
-* **Modo WCM **para definir o modo padrão.
-* Em uma instância do autor, pode ser que `edit`, `disable,preview` ou `analytics`.
+* **Modo WCM** para definir o modo padrão.
+* Em uma instância do autor, esse modo pode ser `edit`, `disable,preview`ou `analytics`.
 Os outros modos podem ser acessados do sidekick ou do sufixo `?wcmmode=disabled` pode ser usada para emular um ambiente de produção.
 
-* Em uma instância de publicação, isso deve ser definido como `disabled` para garantir que nenhum outro modo seja acessível.
+* Em uma instância de publicação, esse modo deve ser definido como `disabled` para garantir que nenhum outro modo seja acessível.
 
 >[!NOTE]
 >
@@ -382,7 +381,7 @@ Os outros modos podem ser acessados do sidekick ou do sufixo `?wcmmode=disabled`
 
 **Configurador do Verificador de Links WCM CQ do Dia** Configurar:
 
-* **Lista de configurações de reescrita** para especificar uma lista de locais para configurações do linkchecker baseadas em conteúdo. As configurações podem ser baseadas no modo de execução; isso é importante para distinguir entre ambientes de autor e publicação, pois as configurações do linkchecker podem ser diferentes.
+* **Lista de configurações de reescrita** para especificar uma lista de locais para configurações do linkchecker baseadas em conteúdo. As configurações podem ser baseadas no modo de execução. Esse fato é importante para distinguir entre ambientes de autor e publicação, pois as configurações do linkchecker podem ser diferentes.
 
 **Fábrica do gerenciador de página do Day CQ WCM** Configurar:
 
@@ -392,13 +391,13 @@ Os outros modos podem ser acessados do sidekick ou do sufixo `?wcmmode=disabled`
 
 * **Caminhos**, uma lista de locais em que o sistema escuta modificações de página antes de acionar uma `jcr:Event`.
 
-**Rastreador de impressões de página do Adobe** Para uma instância de autor, configure:
+**Rastreador de impressões de página do Adobe** Para uma instância de autor, configure como o seguinte:
 
 * **sling.auth.requirements**: defina o valor dessa propriedade como `-/libs/wcm/stats/tracker`
 
 >[!CAUTION]
 >
->Essa configuração permitirá solicitações anônimas para o serviço de rastreamento.
+>Essa configuração permite solicitações anônimas para o serviço de rastreamento.
 
 >[!NOTE]
 >
@@ -406,7 +405,7 @@ Os outros modos podem ser acessados do sidekick ou do sufixo `?wcmmode=disabled`
 
 **Estatísticas de página do WCM CQ do dia** Para uma instância de publicação, configure:
 
-* **URL para enviar dados** configurar o URL usado para rastrear as estatísticas da página (é essencial se uma solicitação do rastreador passar pelo dispatcher); por exemplo, o padrão é `https://localhost:4502/libs/wcm/stats/tracker`.
+* **URL para enviar dados** configurar o URL usado para rastrear as estatísticas da página (é vital se uma solicitação do rastreador passar pelo Dispatcher); por exemplo, o padrão é `https://localhost:4502/libs/wcm/stats/tracker`.
 
 * **Script de rastreamento ativado** para ativar ( `true`) ou desativar ( `false`) a inclusão do script de rastreamento nas páginas. O valor padrão é `false`.
 
@@ -419,7 +418,7 @@ Os outros modos podem ser acessados do sidekick ou do sufixo `?wcmmode=disabled`
 * **Criar versão na ativação**, ativada em uma instalação padrão
 * **Habilitar limpeza**
 
-* **Eliminar caminhos**, os caminhos que uma ação de pesquisa pesquisará
+* **Eliminar caminhos**, os caminhos que uma ação de pesquisa procura.
 * **Caminhos de controle de versão implícitos**, os caminhos onde o controle de versão implícito está ativo.
 
 * **Idade máxima da versão**, a idade máxima (em dias) de uma versão
@@ -435,16 +434,16 @@ Consulte [Limpeza de versão](/help/sites-deploying/version-purging.md) para obt
 Controla o analisador de HTML para a reescrita do CQ.
 
 * **Tags adicionais a serem processadas** - Você pode adicionar ou remover tags HTML para serem processadas pelo analisador. Por padrão, as seguintes tags são processadas: A,IMG,ÁREA,FORMULÁRIO,BASE,LINK,SCRIPT,CORPO,HEAD.
-* **Preservar Camel Case** - Por padrão, o analisador de HTML converte atributos em camel case (por exemplo, eBay) em minúsculas (por exemplo, ebay). Você pode desativar o para preservar os atributos de maiúsculas e minúsculas do camel. Isso é útil ao usar estruturas de primeiro plano, como o Angular 2.
+* **Preservar Camel Case** - Por padrão, o analisador de HTML converte atributos em camel case (por exemplo, `eBay`) para letras minúsculas (por exemplo, `ebay`). É possível desativar essa configuração para preservar os atributos de maiúsculas e minúsculas do camel. Essa configuração é útil ao usar estruturas de primeiro plano, como o Angular 2.
 
 **Pool de Conexões JDBC do Day Commons** Configure o acesso a um banco de dados externo que está sendo usado como fonte de conteúdo.
 
-Esta é uma configuração de fábrica, portanto várias instâncias podem ser configuradas.
+Uma configuração de fábrica, para que várias instâncias possam ser configuradas.
 
-**Gravador CDN** A comunicação entre AEM e uma CDN deve ser assegurada para que os ativos/binários sejam entregues ao usuário final de forma segura. Isso envolve duas tarefas:
+**Gravador CDN** A comunicação entre AEM e uma CDN deve ser assegurada para que os ativos/binários sejam entregues a um usuário final de forma segura. Esse processo envolve as duas tarefas a seguir:
 
 * Acessar o recurso do AEM por meio da CDN na primeira vez (ou após expirar no cache).
-* Acessar o recurso armazenado em cache no CDN com segurança, pois uma vez que o recurso é armazenado em cache no CDN, a solicitação não irá para o AEM e todos os usuários que têm acesso a esse recurso no devem ser fornecidos do CDN.
+* Acessar o recurso armazenado em cache no CDN com segurança porque depois que o recurso é armazenado em cache no CDN, a solicitação não vai para o AEM e todos os usuários que têm acesso a esse recurso no devem ser fornecidos do CDN.
 
 AEM fornece um regravador para regravar URLs de ativos internos em URLs CDN externos. Ele reescreve links a serem passados para a CDN, incluindo uma assinatura JWS e expira o tempo para permitir que o ativo seja acessado com segurança. Esse recurso deve ser usado em instâncias do autor.
 
@@ -465,7 +464,7 @@ O fluxo entre o navegador do usuário, o CDN e o AEM pode ser visualizado da seg
 
 >[!NOTE]
 >
->No momento, esse recurso é ativado apenas para instâncias AEM autor.
+>Esse recurso é ativado somente para instâncias AEM autor.
 
 **CDNConfigServiceImpl** Fornece configurações de CDN
 
