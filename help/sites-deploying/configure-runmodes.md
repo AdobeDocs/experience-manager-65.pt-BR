@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7d91fbdaae7ade27e9d6bf42bbcd5b16d3f6e358
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 1%
@@ -122,10 +122,9 @@ Essas pastas são do tipo `nt:folder` e devem conter o pacote apropriado.
 
 Se você tiver definido configurações para vários modos de execução, precisará definir qual deve ser usada na inicialização. Existem vários métodos para especificar qual modo de execução usar; a ordem da resolução é:
 
+1. [propriedades do sistema (](#using-a-system-property-in-the-start-script)
 1. [ ](#using-the-sling-properties-file)
 1. [ ](#using-the-r-option)
-1. [propriedades do sistema (](#using-a-system-property-in-the-start-script)
-
 1. [Detecção de nome de arquivo](#filename-detection-renaming-the-jar-file)
 
 Ao usar um servidor de aplicativos, você também pode [definir o modo de execução em web.xml](#defining-the-run-mode-in-web-xml-with-application-server).
@@ -163,7 +162,7 @@ Uma propriedade do sistema no script de início pode ser usada para especificar 
 Os dois modos de execução de instalação a seguir podem ser ativados renomeando o arquivo jar de instalação antes da instalação:
 
 * publicação
-* author
+* autor
 
 O arquivo jar deve usar a convenção de nomenclatura:
 
