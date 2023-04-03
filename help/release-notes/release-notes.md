@@ -2,9 +2,9 @@
 title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: Encontre informações sobre a versão, novidades, instruções de instalação e uma lista detalhada de alterações para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 676472125cf472d42b792fae87dffe263e499014
+source-git-commit: 72b3eaea279911569dbd6b9acf41527111e9e53c
 workflow-type: tm+mt
-source-wordcount: '2605'
+source-wordcount: '2665'
 ht-degree: 3%
 
 ---
@@ -254,7 +254,7 @@ Abaixo está uma lista de recursos e funcionalidades marcados como obsoletos [!D
 
 Revise se você usa um recurso ou um recurso em uma implantação. Além disso, planeje alterar a implementação para usar uma opção alternativa.
 
-| Área | Recurso | Substituição |
+| Área | Destaque | Substituição |
 |---|---|---|
 | Integrações | O **[!UICONTROL Aceitação dos serviços em nuvem AEM]** está obsoleta desde que o [!DNL Experience Manager] e [!DNL Adobe Target] a integração do é atualizada em [!DNL Experience Manager] 6.5. A integração é compatível com a API do Adobe Target Standard. A API usa autenticação por meio do Adobe IMS e [!DNL Adobe I/O Runtime]. Ele suporta o papel crescente do Adobe Launch como instrumento [!DNL Experience Manager] páginas para análise e personalização, o assistente de aceitação é funcionalmente irrelevante. | Configurar conexões do sistema, autenticação do Adobe IMS e [!DNL Adobe I/O Runtime] integrações por meio das respectivas [!DNL Experience Manager] serviços em nuvem. |
 | Conectores | O Conector Adobe JCR para Microsoft® SharePoint 2010 e Microsoft® SharePoint 2013 está obsoleto para [!DNL Experience Manager] 6.5. | N/A |
@@ -271,6 +271,17 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 Esse pacote é necessário para clientes que usam o GraphQL; isso permite que eles adicionem a definição de índice necessária com base nos recursos que realmente usam.
 
 * Atualize suas consultas do GraphQL que podem ter usado um nome de API personalizado para seu modelo de conteúdo para usar o nome padrão do modelo de conteúdo.
+
+* Um query GraphQL pode usar a variável `damAssetLucene` em vez de `fragments` índice. Isso pode resultar em queries GraphQL que falham ou levam muito tempo para serem executados.
+
+   Para corrigir o problema, `damAssetLucene` precisa ser configurado para incluir as duas propriedades a seguir:
+
+   * `contentFragment`
+   * `model`
+
+   Após a definição do índice ser alterada, é necessária uma reindexação (`reindex` = `true`).
+
+   Após essas etapas, as consultas do GraphQL devem ser executadas mais rapidamente.
 
 * As [!DNL Microsoft®® Windows Server 2019] não suporta [!DNL MySQL 5.7] e [!DNL JBoss®® EAP 7.1], [!DNL Microsoft®® Windows Server 2019] não suporta instalações turnkey para [!DNL AEM Forms 6.5.10.0].
 
@@ -310,7 +321,7 @@ Os seguintes documentos de texto listam os pacotes OSGi e os Pacotes de conteúd
 
 ## Sites restritos {#restricted-sites}
 
-Esses sites só estão disponíveis para clientes do . Se você for um cliente e precisar de acesso, entre em contato com o gerente de contas da Adobe.
+Esses sites só estão disponíveis para clientes do . Se você for um cliente do e precisar de acesso, entre em contato com o gerente de conta do Adobe.
 
 * [Baixe o produto em licensing.adobe.com](https://licensing.adobe.com/)
 * [Entre em contato com o Suporte ao Cliente Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
