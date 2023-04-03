@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 78ec31362f3aceb5cfc9cc0735bccb88082b8e2d
 workflow-type: tm+mt
-source-wordcount: '1842'
-ht-degree: 2%
+source-wordcount: '1787'
+ht-degree: 1%
 
 ---
 
@@ -24,18 +24,22 @@ Configure o [ContextHub](/help/sites-developing/contexthub.md) barra de ferramen
 
 ## Desativação do ContextHub {#disabling-contexthub}
 
-Por padrão, o ContextHub é ativado em uma instalação AEM. O ContextHub pode ser desativado para impedir o carregamento de js/css e a inicialização. Há duas opções para desativar o ContextHub:
+Por padrão, o ContextHub é ativado em uma instalação AEM. O ContextHub pode ser desativado para impedir o carregamento de js/css e a inicialização.
 
-* Edite a configuração do ContextHub e marque a opção **Desativar o ContextHub**
+<!--
+There are two options to disable ContextHub:
 
-   1. No painel, clique ou toque em **Ferramentas > Sites > ContextHub**
-   1. Clique ou toque no padrão **Contêiner de configuração**
-   1. Selecione o **Configuração do ContextHub** e clique ou toque em **Editar elemento selecionado**
-   1. Clique ou toque em **Desativar o ContextHub** e clique ou toque em **Salvar**
+* Edit the ContextHub's configuration and check the option **Disable ContextHub**
 
-ou
+    1. In the rail click or tap **Tools &gt; Sites &gt; ContextHub**
+    1. Click or tap the appropriate **Configuration Container**
+    1. Select the **ContextHub Configuration** and click or tap **Edit Selected Element**
+    1. Click or tap **Disable ContextHub** and click or tap **Save**
 
-* Use o CRXDE Lite para definir a propriedade `disabled` para **true** under `/libs/settings/cloudsettings`
+or
+-->
+
+* Use o CRXDE Lite para definir a propriedade `disabled` para **true** under `/libs/settings/cloudsettings/legacy/contexthub`
 
 >[!NOTE]
 >
@@ -106,7 +110,7 @@ As propriedades do módulo da interface do usuário incluem uma configuração d
 | [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Exibe a latitude e a longitude do cliente, bem como o local em um mapa. Permite alterar o local. | geolocalização |
 | [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) | Exibe a orientação da tela do dispositivo (paisagem ou retrato) | emuladores |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Exibe estatísticas sobre tags de página | tagcloud |
-| [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Exibe as informações de perfil para o usuário atual, incluindo authorizableID, displayName e familyName. Você pode alterar o valor de displayName e familyName. | o perfil do visitante |
+| [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Exibe as informações de perfil para o usuário atual, incluindo authorizableID, displayName e familyName. Você pode alterar o valor de displayName e familyName. | perfil |
 
 1. No trilho Experience Manager, clique ou toque em Ferramentas > Sites > ContextHub.
 1. Clique ou toque no Contêiner de configuração ao qual deseja adicionar um módulo de interface do usuário.
