@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: cd7800546ec4ebc950c5ebca4d7c80779cb2632c
+source-git-commit: b10b7d957ef3a28b5eeb05383a7504c6516f7aa7
 workflow-type: tm+mt
-source-wordcount: '3877'
+source-wordcount: '3856'
 ht-degree: 18%
 
 ---
@@ -63,7 +63,7 @@ As várias funções envolvidas para configurar e usar o recurso e seus grupos d
 |---|---|---|---|---|
 | [!DNL Sites] administrador | Local | [!DNL Experience Manager] `administrators` | `admin` | Configurar [!DNL Experience Manager] e configurar a integração com o controle remoto [!DNL Assets] implantação. |
 | Usuário do DAM | Local | `Authors` | `ksaner` | Usado para exibir e duplicar os ativos pesquisados em `/content/DAM/connectedassets/`. |
-| [!DNL Sites] author | Local | <ul><li>`Authors` (com acesso de leitura no DAM remoto e acesso de autor no local [!DNL Sites]) </li> <li>`dam-users` no local [!DNL Sites]</li></ul> | `ksaner` | Os usuários finais são [!DNL Sites] autores que usam essa integração para melhorar a velocidade do conteúdo. Os autores pesquisam e procuram ativos no DAM remoto usando [!UICONTROL Localizador de conteúdo] e usando as imagens necessárias em páginas da Web locais. As credenciais do usuário do DAM `ksaner` são usadas. |
+| [!DNL Sites] autor | Local | <ul><li>`Authors` (com acesso de leitura no DAM remoto e acesso de autor no local [!DNL Sites]) </li> <li>`dam-users` no local [!DNL Sites]</li></ul> | `ksaner` | Os usuários finais são [!DNL Sites] autores que usam essa integração para melhorar a velocidade do conteúdo. Os autores pesquisam e procuram ativos no DAM remoto usando [!UICONTROL Localizador de conteúdo] e usando as imagens necessárias em páginas da Web locais. As credenciais do usuário do DAM `ksaner` são usadas. |
 | [!DNL Assets] administrador | Remoto | [!DNL Experience Manager] `administrators` | `admin` no modo remoto [!DNL Experience Manager] | Configure o CORS (Cross-Origin Resource Sharing). |
 | Usuário do DAM | Remoto | `Authors` | `ksaner` no modo remoto [!DNL Experience Manager] | Função de autor no controle remoto [!DNL Experience Manager] implantação. Pesquise e procure ativos no Connected Assets usando o [!UICONTROL Localizador de conteúdo]. |
 | Distribuidor do DAM (usuário técnico) | Remoto | [!DNL Sites] `Authors` | `ksaner` no modo remoto [!DNL Experience Manager] | Esse usuário presente na implantação remota é usado por [!DNL Experience Manager] servidor local (não o [!DNL Sites] função de autor) para buscar os ativos remotos, em nome de [!DNL Sites] autor. Essa função não é igual às duas funções `ksaner` acima e pertence a um grupo de usuários diferente. |
@@ -247,10 +247,6 @@ Você também pode atualizar as propriedades de metadados de um ativo no DAM rem
 [!DNL Sites] os autores podem visualizar as atualizações disponíveis na [!DNL Sites] e, em seguida, republique as alterações para torná-las disponíveis no [!DNL Experience Manager] instância de publicação.
 
 [!DNL Experience Manager] exibe um indicador visual de status expirado em ativos em `Remote Assets Content Finder` para impedir que os autores do site usem o ativo em um [!DNL Sites] página. Se você usar um ativo com status expirado em um [!DNL Sites] o ativo não é exibido na página [!DNL Experience Manager] instância de publicação.
-
->[!NOTE]
->
->As atualizações de ativos no DAM remoto são disponibilizadas para o [!DNL Sites] implantação somente se o DAM remoto e [!DNL Sites] as implantações estão ativadas [!DNL Experience Manager].
 
 ## Perguntas frequentes {#frequently-asked-questions}
 
