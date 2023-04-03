@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 74535a6ad78abf795f55f1ba4e1123b58802aefe
+source-git-commit: 64a15e970bc72114c14ed60e4bec3e694584eb16
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3546'
 ht-degree: 1%
 
 ---
@@ -89,7 +89,7 @@ A Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
 >
 >É recomendável rastrear os Boletins de segurança do fornecedor do Java para garantir a segurança dos ambientes de produção e instalar as Atualizações mais recentes do Java.
 
-| **Plataforma** | **Nível de compatibilidade** | **Link** |
+| **Platform** | **Nível de compatibilidade** | **Link** |
 |---|---|---|
 | JDK Java SE 11 do Oracle - 64 bits | A: Suportado `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | JDK Java SE 10 do Oracle | Z: Não suportado `[1]` |
@@ -100,8 +100,8 @@ A Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
 | Azul Zulu OpenJDK 11 - 64 bits | A: Suportado `[3]` |  |
 | Azul Zulu OpenJDK 8 - 64 bits | A: Suportado `[3]` |  |
 
-1. O Oracle migrou para um modelo de &quot;Suporte de longo prazo&quot; (LTS) dos produtos Oracle Java SE. O Java 9, o Java 10 e o Java 12 são versões não LTS do Oracle (consulte [Roteiro de suporte do Oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implantar AEM no ambiente de produção, o Adobe fornece suporte somente para as versões LTS do Java. O suporte e a distribuição do JDK Java SE do Oracle, incluindo todas as atualizações de manutenção de versões LTS além do fim das atualizações públicas, serão suportados pelo Adobe diretamente para todos os clientes AEM que usam a tecnologia Oracle Java SE. Consulte a [Política de suporte Java para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) para obter mais informações.
-
+1. O Oracle migrou para um modelo de &quot;Suporte a longo prazo&quot; (LTS) para produtos Oracle Java SE. O Java 9, o Java 10 e o Java 12 são versões não LTS do Oracle (consulte [Roteiro de suporte do Oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implantar AEM no ambiente de produção, o Adobe fornece suporte somente para as versões LTS do Java. O suporte e a distribuição do JDK Java SE do Oracle, incluindo todas as atualizações de manutenção de versões LTS além do fim das atualizações públicas, serão suportados pelo Adobe diretamente para todos os clientes AEM que usam a tecnologia Oracle Java SE. Consulte a [Política de suporte Java para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) para obter mais informações.
+   **Importante: O Java 11 permanecerá compatível até setembro de 2026, no mínimo.**
 
 1. O IBM JRE só é compatível com o WebSphere Application Server.
 
@@ -112,7 +112,7 @@ A Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
 
 Existem várias opções para implantar o repositório do Adobe Experience Manager. Consulte a lista a seguir para conhecer as tecnologias e opções de armazenamento suportadas.
 
-| **Plataforma** | **Descrição** | **Nível de compatibilidade** |
+| **Platform** | **Descrição** | **Nível de compatibilidade** |
 |---|---|---|
 | **Sistema de arquivos com arquivos TAR** `[1]` | Repositório | A: Suportado |
 | **Sistema de arquivos com armazenamento de dados** `[1]` | Binários | A: Suportado |
@@ -168,7 +168,7 @@ O Adobe Experience Manager pode ser executado como um servidor independente (o a
 
 A versão mínima necessária da API de servlet é o Servlet 3.1
 
-| Plataforma | Nível de compatibilidade |
+| Platform | Nível de compatibilidade |
 |---|---|
 | **Mecanismo de Servlet integrado do Quickstart (Jetty 9.4)** | A: Suportado |
 | Oracle WebLogic Server 12.2 (12cR2) | Z: Não suportado |
@@ -186,7 +186,7 @@ A versão mínima necessária da API de servlet é o Servlet 3.1
 
 O Adobe Experience Manager funciona com as seguintes plataformas de servidor para ambientes de produção:
 
-| **Plataforma** | **Nível de compatibilidade** |
+| **Platform** | **Nível de compatibilidade** |
 |---|---|
 | **Linux, baseado na distribuição Red Hat** | A: Suportado `[1]` `[3]` |
 | Linux, baseado na distribuição Debian incl. Ubuntu | A: Suportado `[1]` `[2]` |
@@ -232,7 +232,7 @@ O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão
 
 Os seguintes servidores da Web são compatíveis com o Dispatcher versão 4.3.2:
 
-| Plataforma | Nível de compatibilidade |
+| Platform | Nível de compatibilidade |
 |---|---|
 | **Apache httpd 2.4.x** `[1,2]` | A: Suportado |
 | Microsoft IIS 10 (Servidor de Informações da Internet) | A: Suportado |
