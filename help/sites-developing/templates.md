@@ -1,8 +1,6 @@
 ---
 title: Modelos
-seo-title: Templates
-description: Os modelos são usados ao criar uma página que será usada como a base para a nova página
-seo-description: Templates are used when creating a page which will be used as the base for the new page
+description: Os modelos são usados ao criar uma página que é usada como base para a nova página.
 uuid: 6fa3dafc-dfa1-42d8-b296-d4be57449411
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '931'
 ht-degree: 1%
 
 ---
@@ -22,9 +20,9 @@ ht-degree: 1%
 
 Os modelos são usados em vários pontos do AEM:
 
-* When [criação de uma página que você precisa selecionar um template](#templates-pages); isso será usado como a base para a nova página. O modelo define a estrutura da página resultante, qualquer conteúdo inicial e a variável [componentes](/help/sites-authoring/default-components.md) que podem ser usadas (propriedades de design).
+* [Ao criar uma página, você seleciona um modelo](#templates-pages). Esse modelo é usado como a base para a nova página. O modelo define a estrutura da página, qualquer conteúdo inicial e a variável [componentes](/help/sites-authoring/default-components.md) que podem ser usadas (propriedades de design).
 
-* When [criar um Fragmento do conteúdo, você também precisa selecionar um modelo](#templates-content-fragments). Esse template define a estrutura, os elementos iniciais e as variações.
+* [Ao criar um Fragmento do conteúdo, você também seleciona um modelo](#templates-content-fragments). Esse template define a estrutura, os elementos iniciais e as variações.
 
 Os seguintes modelos são abordados detalhadamente:
 
@@ -39,7 +37,7 @@ O AEM agora oferece dois tipos básicos de modelos para a criação de páginas:
 
 >[!NOTE]
 >
->Ao usar um modelo para [criar uma nova página](/help/sites-authoring/managing-pages.md#creating-a-new-page) não há diferença visível (para o autor da página) e nenhuma indicação do tipo de modelo que está sendo usado.
+>Ao usar um modelo para [criar uma página](/help/sites-authoring/managing-pages.md#creating-a-new-page), não há diferença visível (para o autor da página) e nenhuma indicação do tipo de modelo que está sendo usado.
 
 ### Modelos editáveis {#editable-templates}
 
@@ -55,23 +53,23 @@ As vantagens dos Modelos editáveis:
    * o conteúdo inicial
    * políticas de conteúdo
 
-* Após a criação da nova página, uma conexão dinâmica é mantida entre a página e o modelo; isso significa que as alterações na estrutura do modelo serão refletidas em qualquer página criada com esse modelo (as alterações no conteúdo inicial não serão refletidas).
+* Após a criação da nova página, uma conexão dinâmica é mantida entre a página e o modelo. Essa conexão significa que as alterações na estrutura do modelo são refletidas em qualquer página criada com esse modelo; as alterações no conteúdo inicial não são refletidas.
 * Usa as políticas de conteúdo (editadas no editor de modelos) para manter as propriedades de design (não usa o modo Design no editor de páginas).
 * São armazenadas em `/conf`
 * Consulte [Modelos editáveis](/help/sites-developing/page-templates-editable.md) para obter mais informações.
 
 >[!NOTE]
 >
->Um AEM Community Article está disponível para explicar como desenvolver um site Experience Manager com Modelos editáveis, consulte [Criação de um site do Adobe Experience Manager 6.5 usando modelos editáveis](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html).
+>Consulte [Usar modelos de página editáveis para desenvolver um site de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en).
 
 ### Modelos estáticos {#static-templates}
 
 Modelos estáticos:
 
 * Deve ser definido e configurado pelos desenvolvedores.
-* Esse era o sistema de modelos original de AEM e estava disponível para muitas versões.
+* O sistema de modelos original de AEM que está disponível para muitas versões.
 * Um modelo estático é uma hierarquia de nós que tem a mesma estrutura que a página a ser criada, mas sem nenhum conteúdo real.
-* São copiados para criar a nova página, não existe nenhuma conexão dinâmica depois disso.
+* São copiados para criar a página; nenhuma conexão dinâmica existe posteriormente.
 * Usos [Modo Design](/help/sites-authoring/default-components-designmode.md) para manter as propriedades de design.
 * São armazenadas em `/apps`
 * Consulte [Modelos estáticos](/help/sites-developing/page-templates-static.md) para obter mais informações.
@@ -86,7 +84,7 @@ Modelos estáticos:
 
 >[!CAUTION]
 >
->AEM oferece várias propriedades para controlar os modelos permitidos em **Sites**. No entanto, combiná-las pode levar a regras muito complexas, que são difíceis de rastrear e gerenciar.
+>AEM oferece várias propriedades para controlar os modelos permitidos em **Sites**. No entanto, combiná-las pode levar a regras complexas que são difíceis de rastrear e gerenciar.
 >
 >Portanto, o Adobe recomenda que você comece de forma simples, definindo:
 >
@@ -96,13 +94,13 @@ Modelos estáticos:
 >
 >Para obter um exemplo, consulte We.Retail: `/content/we-retail/jcr:content`
 >
->As propriedades `allowedPaths`, `allowedParents`e `allowedChildren` também pode ser colocado nos templates para definir regras mais sofisticadas. No entanto, quando possível, é *many* mais simples de definir `cq:allowedTemplates` propriedades nas subseções do site se houver a necessidade de restringir ainda mais os modelos permitidos.
+>As propriedades `allowedPaths`, `allowedParents`e `allowedChildren` também pode ser colocado nos templates para definir regras mais sofisticadas. No entanto, quando possível, é *many* mais simples de definir `cq:allowedTemplates` propriedades em subseções do site se houver a necessidade de restringir ainda mais os modelos permitidos.
 >
->Uma vantagem adicional é que a variável `cq:allowedTemplates` As propriedades podem ser atualizadas por um autor na função **Avançado** da guia **Propriedades da página**. As outras propriedades do modelo não podem ser atualizadas usando a interface do usuário (padrão), portanto, seria necessário um desenvolvedor para manter as regras e uma implantação de código para cada alteração.
+>Uma vantagem extra é que a variável `cq:allowedTemplates` As propriedades podem ser atualizadas por um autor na função **Avançado** da guia **Propriedades da página**. As outras propriedades do modelo não podem ser atualizadas usando a interface do usuário (padrão), portanto, seria necessário um desenvolvedor para manter as regras e uma implantação de código para cada alteração.
 
-Ao criar uma nova página na interface de administração do site, a lista de modelos disponíveis depende do local da nova página e das restrições de posicionamento especificadas em cada modelo.
+Ao criar uma página na interface de administração do site, a lista de modelos disponíveis depende do local da nova página e das restrições de posicionamento especificadas em cada modelo.
 
-As seguintes propriedades determinam se um modelo `T` pode ser usada para que uma nova página seja colocada como filho de página `P`. Cada uma dessas propriedades é uma string com vários valores, contendo zero ou mais Expressões Regulares, usadas para correspondência com caminhos:
+As seguintes propriedades determinam se um modelo `T` é usada para que uma nova página seja colocada como filho de página `P`. Cada uma dessas propriedades é uma string com vários valores, contendo zero ou mais Expressões Regulares, usadas para correspondência com caminhos:
 
 * O `cq:allowedTemplates` da `jcr:content` subnó de `P` ou um antepassado de `P`.
 
@@ -140,4 +138,4 @@ Se quiser adicionar mais restrições, por exemplo, em relação à hierarquia d
 
 ## Modelos - Fragmentos de conteúdo {#templates-content-fragments}
 
-Consulte [Modelos de fragmentos do conteúdo](/help/sites-developing/content-fragment-templates.md) para obter informações completas.
+Consulte [Modelos de fragmentos do conteúdo](/help/sites-developing/content-fragment-templates.md).
