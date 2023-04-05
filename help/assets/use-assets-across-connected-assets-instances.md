@@ -6,10 +6,10 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: b10b7d957ef3a28b5eeb05383a7504c6516f7aa7
+source-git-commit: 8d4ff8bcb7df4770bc1ed7e7c2cad27befe3d175
 workflow-type: tm+mt
-source-wordcount: '3856'
-ht-degree: 18%
+source-wordcount: '3909'
+ht-degree: 17%
 
 ---
 
@@ -364,5 +364,5 @@ Para solucionar erros comuns, siga estas etapas:
 
    ![falha ao recuperar referências remotas do ativo](assets/reference-report-failure.png)
 
-
+* Se os cookies não forem enviados do servidor Sites para o servidor Assets no Google Chrome, isso ocorre porque a conexão do Assets não é HTTPS. Se você não usar HTTPS na instância do Assets, a variável `SameSite=None` não pode ser adicionado à resposta após a autenticação com o servidor do Assets.
 
