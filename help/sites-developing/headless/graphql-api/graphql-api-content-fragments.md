@@ -3,9 +3,9 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) com a API do GraphQL AEM para entrega de conteúdo sem periféricos.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: ea90bd913b437a564fb50e01af7719510fa22e74
+source-git-commit: cee709161100db6597bdb18ca03b3130d9e242f1
 workflow-type: tm+mt
-source-wordcount: '3224'
+source-wordcount: '3225'
 ht-degree: 89%
 
 ---
@@ -22,12 +22,6 @@ Usar a API GraphQL no AEM permite a entrega eficiente dos Fragmentos de conteúd
 * Garantindo que a entrega se limite aos requisitos específicos,
 * Permitindo a entrega em massa exatamente daquilo que é necessário para a renderização, como resposta a uma única consulta de API.
 
->[!CAUTION]
->
->Os clientes que usam o GraphQL devem instalar o Fragmento de conteúdo AEM com o Pacote de índice GraphQL 1.0.5.
->
->Consulte a [Notas de versão](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) para obter mais detalhes.
-
 >[!NOTE]
 >
 >O GraphQL é usado atualmente em dois cenários (separados) no Adobe Experience Manager (AEM):
@@ -35,6 +29,10 @@ Usar a API GraphQL no AEM permite a entrega eficiente dos Fragmentos de conteúd
 >* [O AEM Commerce consome dados de uma plataforma do Commerce por meio do GraphQL](/help/commerce/cif/integrating/magento.md).
 >* Fragmentos de conteúdo do AEM trabalham em conjunto com a API GraphQL do AEM (uma implementação personalizada, com base no GraphQL padrão), para fornecer conteúdo estruturado para uso em seus aplicativos.
 
+
+## Pré-requisitos {#prerequisites}
+
+Os clientes que usam o GraphQL devem instalar o Fragmento de conteúdo AEM com o Pacote de índice GraphQL 1.0.5. Consulte o [Notas de versão](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) para obter mais detalhes.
 
 ## A API GraphQL {#graphql-api}
 
