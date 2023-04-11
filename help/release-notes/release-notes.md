@@ -2,9 +2,9 @@
 title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: Encontre informações sobre a versão, novidades, instruções de instalação e uma lista detalhada de alterações para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: a2fa4eacf1b39f185fdf46581ca7c5dcc8083969
+source-git-commit: f53dbe7d51ff976f8d79702a86527f984aa00997
 workflow-type: tm+mt
-source-wordcount: '2967'
+source-wordcount: '2983'
 ht-degree: 2%
 
 ---
@@ -111,7 +111,7 @@ Consulte [Habilitar o DASH em sua conta](/help/assets/video.md#enable-dash).
 * Quando um usuário visualiza um Formulário adaptável como HTML no navegador Microsoft Edge com o modo de compatibilidade do IE, ele não é exibido corretamente.(CQ-4352216)
 * O dicionário precisa incluir novas localidades com caracteres especiais, como sublinhados ou hifens, para permitir a tradução. (NPR-40088)
 
-Após instalar o AEM 6.5.16.0 Forms Add-on service pack, os clientes enfrentavam o seguinte problema. Portanto, uma versão atualizada do AEM 6.5.16.0 Forms Add-on service pack é lançada:
+Após instalar o AEM 6.5.16.0 Forms Add-on Service Pack, os clientes enfrentavam os problemas listados abaixo. Assim, uma versão atualizada do [AEM 6.5.16.0 Pacote de serviço complementar do Forms - 6.0.914](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) for liberado. O Adobe recomenda usar o service pack atualizado:
 * Quando um usuário tenta criar um formulário adaptável com um usuário no grupo forms-users , a opção para selecionar qualquer modelo não está presente e o erro semelhante ao seguinte ocorre: erro interno do servidor: java.lang.NullPointerException em com.adobe.aem.formsndocuments.servlet.ThemeClientLibraryDataSourceServlet.lambda$getThemeClientLibCategoryList$3(ThemeClientLibraryDataSourceServlet.java:76) em java.base/java.util.stream.ReferencePipeline$2 1.accept(ReferencePipeline.java:176) at java.base/java.util.Iterator.foreachRemaining(Iterator.java:133) (FORMS-7629)
 * As alterações feitas nas regras do editor de códigos não estão sendo salvas.(FORMS-7532)
 
