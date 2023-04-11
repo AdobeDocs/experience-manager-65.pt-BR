@@ -1,8 +1,6 @@
 ---
 title: Administração e segurança do usuário
-seo-title: User Administration and Security
 description: Saiba mais sobre Administração e segurança do usuário no AEM.
-seo-description: Learn about User Administration and Security in AEM.
 uuid: 4512c0bf-71bf-4f64-99f6-f4fa5a61d572
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,10 +10,10 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 97b0cec1c8091bbc5736bd68bdee257ca423f93e
+source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
 workflow-type: tm+mt
-source-wordcount: '5454'
-ht-degree: 2%
+source-wordcount: '5398'
+ht-degree: 1%
 
 ---
 
@@ -29,13 +27,13 @@ Esta seção trata das várias entidades e conceitos relacionados com mais detal
 
 ### Usuários {#users}
 
-Os usuários farão logon no AEM com a conta. Cada conta de usuário é exclusiva e contém os detalhes básicos da conta, juntamente com os privilégios atribuídos.
+Os usuários fazem logon no AEM com a conta. Cada conta de usuário é exclusiva e contém os detalhes básicos da conta, juntamente com os privilégios atribuídos.
 
 Geralmente, os usuários são membros de Grupos, o que simplifica a alocação dessas permissões e/ou privilégios.
 
 ### Grupos {#groups}
 
-Grupos são coleções de usuários e/ou outros grupos; todos eles se chamam membros de um grupo.
+Grupos são coleções de usuários, ou outros grupos, ou ambos. Todas essas coleções são chamadas de Membros de um grupo.
 
 O seu principal objetivo é simplificar o processo de manutenção, reduzindo o número de entidades a atualizar, uma vez que uma alteração efetuada num grupo é aplicada a todos os membros do grupo. Os grupos geralmente refletem:
 
@@ -48,14 +46,14 @@ Com o planejamento e uma estrutura limpa, o uso de grupos pode refletir sua estr
 
 ### Usuários e grupos incorporados {#built-in-users-and-groups}
 
-AEM WCM instala vários usuários e grupos. Estes podem ser vistos quando você acessa o Console de Segurança pela primeira vez após a instalação.
+AEM WCM instala vários usuários e grupos. Essas coleções são vistas quando você acessa o Console de segurança pela primeira vez após a instalação.
 
 As tabelas a seguir listam cada item junto com:
 
 * uma breve descrição
 * quaisquer recomendações sobre as alterações necessárias
 
-*Altere todas as senhas padrão* (se você não excluir a conta em determinadas circunstâncias).
+*Alterar todas as senhas padrão* (se você não excluir a conta em determinadas circunstâncias).
 
 <table>
  <tbody>
@@ -69,19 +67,19 @@ As tabelas a seguir listam cada item junto com:
    <td><p>admin</p> <p>Senha padrão: administrador</p> </td>
    <td>Usuário</td>
    <td><p>Conta de administração do sistema com direitos de acesso totais.</p> <p>Essa conta é usada para a conexão entre AEM WCM e CRX.</p> <p>Se você excluir acidentalmente essa conta, ela será recriada após a reinicialização do repositório (na configuração padrão).</p> <p>A conta de administrador é um requisito da plataforma de AEM. Como consequência, essa conta não pode ser excluída.</p> </td>
-   <td><p>O Adobe recomenda que a senha desta conta de usuário seja alterada a partir do padrão.</p> <p>Preferencialmente após a instalação, embora possa ser feito posteriormente.</p> <p>Observação: Essa conta não deve ser confundida com a conta de administrador do CQ Servlet Engine.</p> </td>
+   <td><p>O Adobe recomenda alterar a senha padrão desta conta de usuário.</p> <p>Preferencialmente na instalação, embora possa ser feito posteriormente.</p> <p>Observação: Não confunda essa conta com a conta de administrador do CQ Servlet Engine.</p> </td>
   </tr>
   <tr>
    <td><p>anônimo</p> <p> </p> </td>
    <td>Usuário</td>
-   <td><p>Retém os direitos padrão para acesso não autenticado a uma instância. Por padrão, isso mantém os direitos mínimos de acesso.</p> <p>Se você excluir acidentalmente essa conta, ela será recriada na inicialização. Ele não pode ser excluído permanentemente, mas pode ser desativado.</p> </td>
-   <td>Evite excluir ou desabilitar essa conta, pois isso afetará negativamente o funcionamento das instâncias do autor. Se houver requisitos de segurança que o obriguem a excluí-lo, certifique-se de testar corretamente os efeitos que ele tem em seus sistemas primeiro.</td>
+   <td><p>Retém os direitos padrão para acesso não autenticado a uma instância. Por padrão, essa conta tem os direitos mínimos de acesso.</p> <p>Se você excluir acidentalmente essa conta, ela será recriada na inicialização. Ele não pode ser excluído permanentemente, mas pode ser desativado.</p> </td>
+   <td>Evite excluir ou desabilitar essa conta, pois afeta negativamente o funcionamento das instâncias do autor. Se houver requisitos de segurança que o obriguem a excluí-lo, certifique-se de testar corretamente os efeitos que ele tem em seus sistemas primeiro.</td>
   </tr>
   <tr>
-   <td><p>author</p> <p>Senha padrão: autor</p> </td>
+   <td><p>autor</p> <p>Senha padrão: autor</p> </td>
    <td>Usuário</td>
-   <td><p>Uma conta de autor com permissão para gravar em /content. Engloba privilégios de colaborador e surfista.</p> <p>Pode ser usado como um webmaster, pois tem acesso a toda a árvore de conteúdo /content.</p> <p>Este não é um usuário integrado, mas outro usuário de demonstração do geometrixx</p> </td>
-   <td><p>O Adobe recomenda que a conta seja totalmente excluída ou que a senha seja alterada do padrão.</p> <p>Preferencialmente após a instalação, embora possa ser feito posteriormente.</p> </td>
+   <td><p>Uma conta de autor com permissão para gravar em /content. Engloba privilégios de colaborador e surfista.</p> <p>Pode ser usado como um webmaster, pois tem acesso a toda a árvore de conteúdo /content.</p> <p>Esta conta não é um usuário integrado, mas outro usuário de demonstração do Geometrixx</p> </td>
+   <td><p>O Adobe recomenda que a conta seja totalmente excluída ou que a senha padrão seja alterada.</p> <p>Preferencialmente na instalação, embora possa ser feito posteriormente.</p> </td>
   </tr>
   <tr>
    <td>administradores</td>
@@ -92,13 +90,13 @@ As tabelas a seguir listam cada item junto com:
   <tr>
    <td>autores de conteúdo</td>
    <td>Grupo</td>
-   <td><p>Grupo responsável pela edição de conteúdo. Requer permissões de leitura, modificação, criação e exclusão.</p> </td>
+   <td><p>Grupo responsável pela edição de conteúdo. Requer permissões para ler, modificar, criar e excluir.</p> </td>
    <td>Você pode criar seus próprios grupos de autores de conteúdo com direitos de acesso específicos do projeto, desde que adicione permissões de leitura, modificação, criação e exclusão.</td>
   </tr>
   <tr>
    <td>colaborador</td>
    <td>Grupo</td>
-   <td><p>Privilégios básicos que permitem que o usuário grave conteúdo (como somente na funcionalidade).</p> <p>Não aloca privilégios à árvore de conteúdo / - eles devem ser alocados especificamente para grupos ou usuários individuais.</p> </td>
+   <td><p>Privilégios básicos que permitem que o usuário grave conteúdo (como em, apenas funcionalidade).</p> <p>Não atribui privilégios à árvore de conteúdo /content. Deve ser alocado para grupos ou usuários individuais.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -134,7 +132,7 @@ As tabelas a seguir listam cada item junto com:
   <tr>
    <td>usuários de fluxo de trabalho</td>
    <td>Grupo</td>
-   <td><p>Um usuário que participa de um fluxo de trabalho deve ser membro de usuários de fluxo de trabalho de grupo. Este fato dá-lhe pleno acesso: /etc/workflow/instances para que ele possa atualizar a instância do workflow.</p> <p>O grupo está incluído na instalação padrão, mas você deve adicionar manualmente os usuários ao grupo.</p> </td>
+   <td><p>Um usuário que participa de um fluxo de trabalho deve ser membro de usuários de fluxo de trabalho de grupo. Concede ao usuário acesso total a: /etc/workflow/instances para que possam atualizar a instância do workflow.</p> <p>O grupo está incluído na instalação padrão, mas você deve adicionar manualmente os usuários ao grupo.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -145,11 +143,11 @@ O AEM usa ACLs para determinar quais ações um usuário ou grupo pode realizar 
 
 ### Permissões e ACLs {#permissions-and-acls}
 
-As permissões definem quem tem permissão para executar quais ações em um recurso. As permissões são o resultado de [controle de acesso](#access-control-lists-and-how-they-are-evaluated) avaliações.
+As permissões definem quem pode executar quais ações em um recurso. As permissões são o resultado de [controle de acesso](#access-control-lists-and-how-they-are-evaluated) avaliações.
 
 Você pode alterar as permissões concedidas/negadas para um determinado usuário selecionando ou desmarcando as caixas de seleção do AEM individual [ações](security.md#actions). Uma marca de seleção indica que uma ação é permitida. Nenhuma marca de seleção indica que uma ação foi negada.
 
-Onde a marca de seleção está localizada na grade também indica quais permissões os usuários têm em quais locais no AEM (ou seja, quais caminhos).
+Onde a marca de seleção está na grade também indica quais permissões os usuários têm em quais locais no AEM (ou seja, quais caminhos).
 
 ### Ações {#actions}
 
@@ -162,7 +160,7 @@ As ações podem ser executadas em uma página (recurso). Para cada página na h
    <td><strong>Descrição </strong></td>
   </tr>
   <tr>
-   <td>Leitura</td>
+   <td>Ler</td>
    <td>O usuário tem permissão para ler a página e quaisquer páginas filhas.</td>
   </tr>
   <tr>
@@ -170,15 +168,15 @@ As ações podem ser executadas em uma página (recurso). Para cada página na h
    <td><p>O usuário pode:</p>
     <ul>
      <li>modifique o conteúdo existente na página e em qualquer página secundária.</li>
-     <li>criar novos parágrafos na página ou em qualquer página secundária.</li>
-    </ul> <p>No nível do JCR, os usuários podem modificar um recurso modificando suas propriedades, bloqueio, controle de versão, nt-modify e têm permissão de gravação completa em nós que definem um nó filho jcr:content, por exemplo, cq:Page, nt:file, cq:Asset.</p> </td>
+     <li>criar parágrafos na página ou em qualquer página secundária.</li>
+    </ul> <p>No nível do JCR, os usuários podem editar um recurso editando suas propriedades, bloqueando, versionando, não-modificações e têm permissão de gravação completa em nós que definem um nó filho jcr:content. Por exemplo, cq:Page, nt:file, cq:Asset.</p> </td>
   </tr>
   <tr>
    <td>Criar</td>
    <td><p>O usuário pode:</p>
     <ul>
-     <li>criar uma nova página ou página secundária.</li>
-    </ul> <p>If <strong>modificar</strong> é negado que as subárvores abaixo de jcr:content são excluídas especificamente porque a criação de jcr:content e seus nós filho são considerados uma modificação de página. Isso se aplica somente aos nós que definem um nó filho jcr:content.</p> </td>
+     <li>criar uma página ou página filho.</li>
+    </ul> <p>If <strong>modificar</strong> for negada, as subárvores abaixo de jcr:content são excluídas porque a criação de jcr:content e seus nós filho são considerados uma modificação de página. Essa regra se aplica somente a nós que definem um nó filho jcr:content.</p> </td>
   </tr>
   <tr>
    <td>Excluir</td>
@@ -186,7 +184,7 @@ As ações podem ser executadas em uma página (recurso). Para cada página na h
     <ul>
      <li>excluir parágrafos existentes da página ou de qualquer página secundária.</li>
      <li>excluir uma página ou página filho.</li>
-    </ul> <p>If <strong>modificar</strong> é negada a qualquer subárvore abaixo de jcr:content são especificamente excluídas, pois a remoção de jcr:content e seus nós filho são considerados uma modificação de página. Isso se aplica somente aos nós que definem um nó filho jcr:content.</p> </td>
+    </ul> <p>If <strong>modificar</strong> é negada a qualquer subárvore abaixo de jcr:content são excluídas como remoção de jcr:content e seus nós filho são considerados uma modificação de página. Essa regra se aplica somente a nós que definem um nó filho jcr:content.</p> </td>
   </tr>
   <tr>
    <td>Ler ACL</td>
@@ -211,7 +209,7 @@ As ações podem ser executadas em uma página (recurso). Para cada página na h
 
 AEM WCM usa Listas de Controle de Acesso (ACLs) para organizar as permissões que estão sendo aplicadas às várias páginas.
 
-Listas de Controle de Acesso são compostas por permissões individuais e são usadas para determinar a ordem na qual essas permissões são realmente aplicadas. A lista é formada de acordo com a hierarquia das páginas em consideração. Essa lista é digitalizada de baixo para cima até que a primeira permissão apropriada para aplicar a uma página seja encontrada.
+Listas de controle de acesso são compostas por permissões individuais e são usadas para determinar a ordem na qual essas permissões são aplicadas. A lista é formada de acordo com a hierarquia das páginas em consideração. Essa lista é digitalizada de baixo para cima até que a primeira permissão apropriada para aplicar a uma página seja encontrada.
 
 >[!NOTE]
 >
@@ -225,7 +223,7 @@ Listas de Controle de Acesso são compostas por permissões individuais e são u
 >* `*/social/relationships/friend/*`
 >* ou `*/social/relationships/pending-following/*`.
 >
->Quando você cria ACLs específicas para comunidades, os membros que ingressam nessas comunidades podem receber permissões adicionais. Por exemplo, esse pode ser o caso quando os usuários ingressam nas comunidades em: `/content/we-retail/us/en/community`
+>Quando você cria ACLs específicas para comunidades, os membros que ingressam nessas comunidades podem receber permissões adicionais. Por exemplo, quando os usuários ingressam nas comunidades em: `/content/we-retail/us/en/community`
 
 ### Estados de permissão {#permission-states}
 
@@ -233,7 +231,7 @@ Listas de Controle de Acesso são compostas por permissões individuais e são u
 >
 >Para usuários do CQ 5.3:
 >
->Em contraste com as versões anteriores do CQ, **criar** e **excluir** O não deve mais ser concedido se um usuário precisar apenas modificar páginas. Em vez disso, conceda a **modificar** somente se você deseja que os usuários possam criar, modificar ou excluir componentes em páginas existentes.
+>Em contraste com as versões anteriores do CQ, **criar** e **excluir** O não deve mais ser concedido se um usuário só precisar modificar páginas. Em vez disso, conceda a **modificar** somente se você deseja que os usuários possam criar, modificar ou excluir componentes em páginas existentes.
 >
 >Por motivos de compatibilidade com versões anteriores, os testes de ações não fazem o tratamento especial dos nós que definem **jcr:content** em consideração.
 
@@ -271,7 +269,7 @@ Quando você passa o mouse sobre o asterisco ou ponto de exclamação, uma dica 
   </tr>
   <tr>
    <td>Parte inferior</td>
-   <td>Lista as entradas não efetivas que podem ter um efeito em outro lugar na árvore (conforme indicado por um atributo especial presente na ACE correspondente, limitando o escopo da entrada). Como alternativa, essa é uma entrada cujo efeito foi revogado por outra entrada definida no caminho especificado ou em um nó ancestral.</td>
+   <td>Lista as entradas não efetivas que podem afetar outro lugar na árvore (conforme indicado por um atributo especial presente na ACE correspondente, limitando o escopo da entrada). Como alternativa, é uma entrada cujo efeito é revogado por outra entrada definida no caminho especificado, ou em um nó ancestral.</td>
   </tr>
  </tbody>
 </table>
@@ -280,22 +278,22 @@ Quando você passa o mouse sobre o asterisco ou ponto de exclamação, uma dica 
 
 >[!NOTE]
 >
->Se nenhuma permissão for definida para uma página, todas as ações serão negadas.
+>Se nenhuma permissão for definida para uma página, então todas as ações serão negadas.
 
 Estas são as recomendações sobre o gerenciamento de listas de controle de acesso:
 
 * Não atribua permissões diretamente aos usuários. Atribuí-los somente a grupos.
 
-   Isso simplificará a manutenção, pois o número de grupos é muito menor do que o número de usuários, e também menos volátil.
+   Isso simplifica a manutenção, pois o número de grupos é muito menor do que o número de usuários, e também menos volátil.
 
 * Se você quiser que um grupo/usuário possa apenas modificar páginas, não conceda a ele direitos de criar ou negar. Conceda somente direitos de modificação e leitura.
 * Use Negar com moderação. Na medida do possível, use apenas Permitir.
 
-   O uso de negação pode causar efeitos inesperados se as permissões forem aplicadas em uma ordem diferente da esperada. Se um usuário for membro de mais de um grupo, as instruções Negar de um grupo poderão cancelar a instrução Permitir de outro grupo ou vice-versa. É difícil manter uma visão geral quando isso acontece e pode facilmente levar a resultados imprevistos, enquanto Permitir atribuições não causa tais conflitos.
+   O uso de negação pode causar efeitos inesperados se as permissões forem aplicadas em uma ordem diferente da esperada. Se um usuário for membro de mais de um grupo, as declarações Negar de um grupo poderão cancelar a instrução Permitir de outro grupo ou da maneira oposta. É difícil manter uma visão geral quando tal coisa acontece e pode facilmente levar a resultados imprevistos, enquanto Permitir atribuições não causa tais conflitos.
 
    O Adobe recomenda que você trabalhe com Permitir em vez de Negar ver [Práticas recomendadas](#best-practices).
 
-Antes de modificar qualquer permissão, certifique-se de entender como elas funcionam e se relacionam. Consulte a documentação do CRX para ilustrar como AEM WCM [avalia direitos de acesso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) e exemplos sobre como configurar listas de controle de acesso.
+Antes de modificar qualquer permissão, certifique-se de entender como elas funcionam e se relacionam. Consulte a documentação do CRX que ilustra AEM WCM [avalia direitos de acesso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated)e exemplos sobre como configurar listas de controle de acesso.
 
 ### Permissões {#permissions}
 
@@ -343,21 +341,21 @@ Os detalhes são divididos em duas partes:
 
 ### Representando outro usuário {#impersonating-another-user}
 
-Com o [Representar funcionalidade](/help/sites-authoring/user-properties.md#user-settings) um usuário pode trabalhar em nome de outro usuário.
+Com o [Representar funcionalidade](/help/sites-authoring/user-properties.md#user-settings), um usuário pode trabalhar em nome de outro usuário.
 
-Isso significa que uma conta de usuário pode especificar outras contas que podem operar com sua conta. Em outras palavras, se o usuário B tiver permissão para representar o usuário A, o usuário B poderá realizar ações usando os detalhes completos da conta do usuário A.
+Ou seja, uma conta de usuário pode especificar outras contas que podem operar com sua conta. Por exemplo, se o usuário B tem permissão para representar o usuário A, o usuário B pode agir usando os detalhes completos da conta do usuário A.
 
-Isso permite que as contas do representante concluam tarefas como se estivessem usando a conta que representam; por exemplo, durante uma ausência ou para compartilhar uma carga excessiva em curto prazo.
+Essa funcionalidade permite que as contas do representante concluam as tarefas como se estivessem usando a conta que estão representando. Por exemplo, durante uma ausência ou para compartilhar uma carga excessiva em curto prazo.
 
 >[!NOTE]
 >
->Para que a representação funcione para usuários não administradores, o representante (no caso acima, usuário-B) deve ter permissões de LEITURA no `/home/users` caminho.
+>Para representar para trabalhar para usuários não administradores, o representante (no caso acima, usuário-B) deve ter permissões de LEITURA no `/home/users` caminho.
 >
->Para obter mais informações sobre como fazer isso, consulte [Permissões no AEM](/help/sites-administering/security.md#permissions-in-aem).
+>Consulte [Permissões no AEM](/help/sites-administering/security.md#permissions-in-aem).
 
 >[!CAUTION]
 >
->Se uma conta representa outra é muito difícil de ver. Uma entrada é feita no log de auditoria quando a representação começa e termina, mas os outros arquivos de log (como o log de acesso) não contêm informações sobre o fato de que a representação ocorreu nos eventos. Portanto, se o usuário B estiver representando o usuário-A, todos os eventos parecerão ter sido executados pessoalmente pelo usuário-A.
+>Se uma conta representar outra, é difícil visualizar. Uma entrada é feita no log de auditoria quando a representação começa e termina, mas os outros arquivos de log (como o log de acesso) não contêm informações de que uma representação ocorreu nos eventos. Portanto, se o usuário B representa o usuário A, todos os eventos parecem ter sido executados pelo usuário A.
 
 >[!CAUTION]
 >
@@ -371,9 +369,9 @@ A seguir, a descrição das práticas recomendadas ao trabalhar com permissões 
 
 | Regra | Motivo |
 |--- |--- |
-| *Usar grupos* | Evite atribuir direitos de acesso a cada usuário. Há várias razões para isso:<ul><li>Você tem muito mais usuários do que grupos, então os grupos simplificam a estrutura.</li><li>Os grupos ajudam a fornecer uma visão geral de todas as contas.</li> <li>A herança é mais simples com os grupos.</li><li>Os usuários vêm e vão. Grupos são de longo prazo.</li></ul> |
-| *Seja positivo* | Sempre use as instruções Permitir para especificar os direitos do grupo (sempre que possível). Evite usar uma instrução Negar . Os grupos são avaliados em ordem e a ordem pode ser definida de forma diferente por usuário. Por outras palavras: Você pode ter pouco controle sobre a ordem em que as declarações são implementadas e avaliadas. Se você usar somente as instruções Permitir , a ordem não será importante. |
-| *Mantenha simples* | Investir algum tempo e pensar ao configurar uma nova instalação será bem reembolsado. A aplicação de uma estrutura clara simplificará a manutenção e a administração em curso, assegurando que tanto os seus atuais colegas como os futuros sucessores possam compreender facilmente o que está a ser implementado. |
+| *Usar grupos* | Evite atribuir direitos de acesso a cada usuário. Existem várias razões para este parecer:<ul><li>Você tem muito mais usuários do que grupos, então os grupos simplificam a estrutura.</li><li>Os grupos ajudam a fornecer uma visão geral de todas as contas.</li> <li>A herança é mais simples com os grupos.</li><li>Os usuários vêm e vão. Grupos são de longo prazo.</li></ul> |
+| *Seja positivo* | Use sempre Permitir instruções para especificar os direitos do grupo (sempre que possível). Evite usar uma instrução Negar . Os grupos são avaliados em ordem e a ordem pode ser definida de forma diferente por usuário. Por outras palavras: Você pode ter pouco controle sobre a ordem em que as declarações são implementadas e avaliadas. Se você usar somente as instruções Permitir , a ordem não será importante. |
+| *Mantenha simples* | Investir algum tempo e pensar ao configurar uma nova instalação vale a pena. A aplicação de uma estrutura clara simplifica a manutenção e a administração contínuas, garantindo que tanto os seus colegas atuais como os futuros sucessores possam compreender facilmente o que é implementado. |
 | *Testar* | Use uma instalação de teste para praticar e garantir que você entenda as relações entre os vários usuários e grupos. |
 | *Usuários/grupos padrão* | Sempre atualize os Usuários e grupos padrão imediatamente após a instalação para ajudar a evitar problemas de segurança. |
 
@@ -411,9 +409,9 @@ As guias fornecem acesso a várias configurações:
 
 | Guia | Descrição |
 |--- |--- |
-| Caixa Filtro | Um mecanismo para filtrar os usuários e/ou grupos listados. Consulte [Filtrar usuários e grupos](#filtering-users-and-groups). |
-| Ocultar usuários | Um switch de alternância que ocultará todos os usuários listados, deixando somente grupos. Consulte [Ocultar usuários e grupos](#hiding-users-and-groups). |
-| Ocultar grupos | Uma opção de alternância que ocultará todos os grupos listados, deixando somente os usuários. Consulte [Ocultar usuários e grupos](#hiding-users-and-groups). |
+| Caixa Filtro | Um mecanismo para filtrar os usuários listados, grupos ou ambos. Consulte [Filtrar usuários e grupos](#filtering-users-and-groups). |
+| Ocultar usuários | Uma opção de alternância que oculta todos os usuários listados, deixando somente grupos. Consulte [Ocultar usuários e grupos](#hiding-users-and-groups). |
+| Ocultar grupos | Uma opção de alternância que oculta todos os grupos listados, deixando somente usuários. Consulte [Ocultar usuários e grupos](#hiding-users-and-groups). |
 | Editar | Um menu que permite criar e excluir, além de ativar e desativar usuários ou grupos. Consulte [Criação de usuários e grupos](#creating-users-and-groups) e [Excluindo usuários e grupos](#deleting-users-and-groups). |
 | Propriedades | Lista informações sobre o usuário ou grupo que podem incluir informações de email, uma descrição e informações de nome. Também permite alterar a senha de um usuário. Consulte [Criação de usuários e grupos](#creating-users-and-groups), [Modificando propriedades de usuários e grupos](#modifying-user-and-group-properties) e [Alterar uma senha de usuário](#changing-a-user-password). |
 | Grupos | Lista todos os grupos aos quais o usuário ou grupo selecionado pertence. Você pode atribuir o usuário ou grupos selecionados a grupos adicionais ou removê-los de grupos. Consulte [Grupos](#adding-users-or-groups-to-a-group). |
@@ -449,7 +447,7 @@ Para ocultar usuários e grupos:
 
 ### Criação de usuários e grupos {#creating-users-and-groups}
 
-Para criar um novo usuário ou grupo:
+Para criar um usuário ou grupo:
 
 1. No **Segurança** lista de árvore do console, clique em **Editar** e depois **Criar usuário** ou **Criar grupo**.
 
@@ -473,7 +471,7 @@ Para excluir um usuário ou grupo:
 
 1. No **Segurança** selecione o usuário ou grupo que deseja excluir. Se quiser excluir vários itens, pressione Shift ou Control e clique para selecioná-los.
 1. Clique em **Editar,** em seguida, selecione Excluir. AEM WCM pergunta se você deseja excluir o usuário ou grupo.
-1. Clique em **OK** para confirmar ou Cancelar para cancelar a ação.
+1. Clique em **OK** para confirmar ou Cancelar.
 
 ### Modificando propriedades de usuários e grupos {#modifying-user-and-group-properties}
 
@@ -497,7 +495,7 @@ Use o procedimento a seguir para modificar a senha de um usuário.
 >
 >Não é possível usar o console Segurança para alterar a senha do administrador. Para alterar a senha da conta de administrador, use o [Console Usuários](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) que as operações do Granite fornecem.
 >
->Se você estiver usando o AEM Forms no JEE, não use as instruções abaixo para alterar a senha, em vez de usar o AEM Forms no Admin Console do JEE (/adminui) para alterar a senha.
+>Se você estiver usando o AEM Forms no JEE, não use as instruções abaixo para alterar a senha, em vez de usar o AEM Forms no JEE Admin Console (/adminui) para alterar a senha.
 
 1. No **Segurança** clique duas vezes no nome de usuário para o qual deseja alterar a senha.
 1. Clique no botão **Propriedades** (se ainda não estiver ativa).
@@ -505,7 +503,7 @@ Use o procedimento a seguir para modificar a senha de um usuário.
 
    ![cqsecurityuserpassword](assets/cqsecurityuserpassword.png)
 
-1. Introduza a nova senha duas vezes; como elas não são exibidas em texto claro, isso é para confirmação - se não corresponderem, o sistema exibirá um erro.
+1. Introduza a nova senha duas vezes; como não são exibidos em texto claro, essa ação é para confirmação - se não corresponderem, o sistema exibirá um erro.
 1. Clique em **Definir** para ativar a nova senha da conta.
 
 ### Adicionar usuários ou grupos a um grupo {#adding-users-or-groups-to-a-group}
@@ -552,8 +550,8 @@ Para adicionar membros a um grupo em um determinado caminho:
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-1. Marque a caixa de seleção no **membro** para os membros que você deseja que tenham permissões para esse caminho. Desmarque a caixa de seleção do membro para o qual deseja remover permissões. Um triângulo vermelho aparece na célula na qual você fez alterações.
-1. Clique em **OK** para salvar suas alterações.
+1. Marque a caixa de seleção no **membro** para os membros que você deseja que tenham permissões para esse caminho. Desmarque a caixa de seleção do membro para o qual deseja remover permissões. Um triângulo vermelho aparece na célula que você alterou.
+1. Clique em **OK** para salvar as alterações.
 
 ### Remover usuários ou grupos de grupos {#removing-users-or-groups-from-groups}
 
@@ -581,7 +579,7 @@ Para remover contas de um grupo:
 
 1. Clique duas vezes no nome do grupo do qual deseja remover membros.
 1. Clique no botão **Membros** guia . Você verá uma lista de membros que já pertencem a esse grupo.
-1. No **Membros** , clique no nome do membro que deseja remover do grupo e clique em **Remover**. (Se você deseja remover vários usuários, pressione Shift ou Control e clique nesses nomes e em **Remover**.)
+1. No **Membros** , clique no nome do membro que deseja remover do grupo e clique em **Remover**. (Se você deseja remover vários usuários, pressione Shift ou Control e clique nesses nomes e **Remover**.)
 
    ![cqsecurityremovemember](assets/cqsecurityremovemember.png)
 
@@ -595,16 +593,16 @@ Para remover membros de um grupo em um determinado caminho:
 
 1. Clique no botão **Permissões** guia .
 
-1. Navegue até o caminho para o qual deseja remover permissões e clique em **Detalhes**. A parte inferior da janela de detalhes fornece informações sobre quem tem permissões para essa página.
+1. Navegue até o caminho para o qual você deseja remover permissões e clique em **Detalhes**. A parte inferior da janela de detalhes fornece informações sobre quem tem permissões para essa página.
 
    ![chlimage_1-114](assets/chlimage_1-114.png)
 
-1. Marque a caixa de seleção no **membro** para os membros que você deseja que tenham permissões para esse caminho. Desmarque a caixa de seleção do membro para o qual deseja remover permissões. Um triângulo vermelho aparece na célula na qual você fez alterações.
-1. Clique em **OK** para salvar suas alterações.
+1. Marque a caixa de seleção no **membro** para os membros que você deseja que tenham permissões para esse caminho. Desmarque a caixa de seleção do membro para o qual deseja remover permissões. Um triângulo vermelho aparece na célula que você alterou.
+1. Clique em **OK** para salvar as alterações.
 
 ### Sincronização de usuários {#user-synchronization}
 
-Quando a implantação é uma [publicar farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), usuários e grupos precisam ser sincronizados entre todos os nós de publicação.
+Quando a implantação é uma [publicar farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), usuários e grupos devem ser sincronizados entre todos os nós de publicação.
 
 Para saber mais sobre a sincronização de usuários e como ativá-la, consulte [Sincronização de usuários](/help/sites-administering/sync.md).
 
@@ -661,7 +659,7 @@ Ao adicionar ou remover permissões, você pode procurar ou procurar o nó.
 
 Há dois tipos diferentes de pesquisa de caminho:
 
-* Pesquisa de caminho - Se a cadeia de caracteres de pesquisa começar com um &quot;/&quot;, a pesquisa pesquisará os subnós diretos do caminho especificado:
+* Pesquisa de caminho - Se a cadeia de caracteres de pesquisa começar com um &quot;/&quot;, ela pesquisará os subnós diretos do caminho especificado:
 
 ![cqsecuritypathsearch](assets/cqsecuritypathsearch.png)
 
@@ -671,7 +669,7 @@ Na caixa de pesquisa, é possível fazer o seguinte:
 |--- |--- |
 | Tecla de seta para a direita | Seleciona um subnó no resultado da pesquisa |
 | Tecla de seta para baixo | Inicia a pesquisa novamente. |
-| Tecla Enter (Return) | Seleciona um subnó e o carrega na árvore |
+| Tecla Enter (Return) | Seleciona um subnó e o carrega na grade da árvore |
 
 * Pesquisa FullText - Se a cadeia de caracteres de pesquisa não começar com um &quot;/&quot;, uma pesquisa de texto completo será executada em todos os nós sob o caminho &quot;/content&quot;.
 
@@ -685,7 +683,7 @@ Para realizar uma pesquisa em caminhos ou texto completo:
 
 ### Representando usuários {#impersonating-users}
 
-Você pode especificar um ou mais usuários com permissão para representar o usuário atual. Isso significa que eles podem mudar suas configurações de conta para as do usuário atual e agir em nome desse usuário.
+Você pode especificar um ou mais usuários com permissão para representar o usuário atual. Essa capacidade significa que eles podem mudar suas configurações de conta para o usuário atual e agir em nome desse usuário.
 
 Use essa função com cautela, pois pode permitir que os usuários executem ações que não podem ser executadas por seu próprio usuário. Ao representar um usuário, os usuários são notificados de que não estão conectados como si mesmos.
 
@@ -698,7 +696,7 @@ Para representar um usuário existente:
 
 1. Na lista de árvore, selecione o nome da pessoa que deseja atribuir a outros usuários para representar. Clique duas vezes para abrir.
 1. Clique no botão **Representadores** guia .
-1. Clique no usuário que deseja representar o usuário selecionado. Arraste o usuário (que representará) da lista para o painel Representar . O nome aparece na lista.
+1. Clique no usuário que deseja representar o usuário selecionado. Arraste o usuário (o representante) da lista para o painel Representar . O nome aparece na lista.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
@@ -719,7 +717,7 @@ Para definir as preferências do usuário e do grupo, incluindo idioma, gerencia
 
 Para definir usuários ou administradores para terem privilégios para excluir/ativar/desativar outros usuários:
 
-1. Adicione o usuário que você deseja conceder privilégios para gerenciar outros usuários no grupo de administradores e salvar suas alterações.
+1. Adicione o usuário ao qual você deseja conceder privilégios para gerenciar outros usuários no grupo de administradores e salve suas alterações.
 
    ![cqsecurityaddmembertoadmin](assets/cqsecurityaddmembertoadmin.png)
 
@@ -727,19 +725,19 @@ Para definir usuários ou administradores para terem privilégios para excluir/a
 
    ![cqsecurityreplicatepermissions](assets/cqsecurityreplicatepermissions.png)
 
-   O usuário selecionado agora tem a capacidade de desativar, ativar, excluir e criar usuários.
+   O usuário selecionado agora pode desativar, ativar, excluir e criar usuários.
 
 ### Estendendo privilégios em um nível de projeto {#extending-privileges-on-a-project-level}
 
-Se você planeja implementar privilégios específicos ao aplicativo, as informações a seguir descrevem o que você precisa saber para implementar um privilégio personalizado e como aplicá-lo em todo o CQ:
+Se você planeja implementar privilégios específicos ao aplicativo, as informações a seguir descrevem o que você deve saber para implementar um privilégio personalizado e como aplicá-lo em todo o CQ:
 
 O privilégio de modificação da hierarquia é coberto por uma combinação de privilégios de jcr. O privilégio de replicação é nomeado **crx:replicate** que é armazenado/avaliado juntamente com outros privilégios no repositório jcr. No entanto, ela não é aplicada no nível do jcr.
 
-A definição e o registro dos privilégios personalizados fazem oficialmente parte da [API Jackrabbit](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/authorization/PrivilegeManager.html) a partir da versão 2.4 (consulte também [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). Outras utilizações são cobertas pelo Gerenciamento de Controle de Acesso JCR, como definido por [JSR 283](https://jcp.org/en/jsr/detail?id=283) (seção 16). Além disso, a API Jackrabbit define algumas extensões.
+A definição e o registro dos privilégios personalizados fazem oficialmente parte da [API Jackrabbit](https://jackrabbit.apache.org/oak/docs/security/privilege.html) a partir da versão 2.4 (consulte também [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). Outras utilizações são cobertas pelo Gerenciamento de Controle de Acesso JCR, como definido por [JSR 283](https://jcp.org/en/jsr/detail?id=283) (seção 16). Além disso, a API Jackrabbit define algumas extensões.
 
 O mecanismo de registro de privilégios é refletido na interface do usuário em **Configuração do Repositório**.
 
-O registro de novos privilégios (personalizados) é protegido por um privilégio integrado que deve ser concedido no nível do repositório (no JCR: transmitindo &#39;null&#39; como o parâmetro &#39;absPath&#39; na api mgt ac, consulte jsr 333 para obter detalhes). Por padrão, **administrador** e todos os membros dos administradores têm esse privilégio concedido.
+O registro de novos privilégios (personalizados) é protegido por um privilégio integrado que deve ser concedido no nível do repositório. No JCR: transmitindo &#39;null&#39; como o parâmetro &#39;absPath&#39; na api mgt ac, consulte jsr 333 para obter detalhes. Por padrão, **administrador** e todos os membros dos administradores têm esse privilégio concedido.
 
 >[!NOTE]
 >

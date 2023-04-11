@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 5ac1b0a343c3742f27fecbfb0de577d65c2607d0
+source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
 workflow-type: tm+mt
-source-wordcount: '8091'
+source-wordcount: '8098'
 ht-degree: 3%
 
 ---
@@ -278,7 +278,7 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
 
 >[!IMPORTANT]
 >
->*Para usar o DASH em seus vídeos, primeiro ele deve ser ativado pelo Suporte técnico do Adobe em sua conta. Consulte [Habilitar o DASH em sua conta](#enable-dash).)
+>*Para usar o DASH em seus vídeos, primeiro ele deve ser ativado pelo Suporte técnico do Adobe em sua conta. Consulte [Habilitar o DASH em sua conta](#enable-dash).
 
 ## Arquitetura da solução de vídeo Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
@@ -445,7 +445,7 @@ Alguns dos principais benefícios de habilitar o DASH em sua conta incluem o seg
 
    >[!IMPORTANT]
    >
-   >Habilitar o DASH em sua conta está disponível apenas na América do Norte.
+   >Habilitar o DASH em sua conta está disponível atualmente apenas na Ásia-Pacífico e na América do Norte; em breve na Europa-Oriente Médio-África.
 
 Habilitar o DASH em sua conta requer duas etapas:
 
@@ -476,7 +476,7 @@ Habilitar o DASH em sua conta requer duas etapas:
 >
 >Os relatórios de vídeo só estão disponíveis quando você executa o Dynamic Media - Modo híbrido.
 
-Os Relatórios de vídeo exibem várias métricas agregadas em um período especificado para ajudar você a monitorar o desempenho *publicado *individual e de vídeos agregados conforme o esperado. Os seguintes dados de métricas principais são agregados para todos os vídeos publicados em todo o seu site:
+Os Relatórios de vídeo exibem diversas métricas agregadas em um período especificado para ajudá-lo a monitorar *publicado* vídeos individuais e agregados estão funcionando como esperado. Os seguintes dados de métricas principais são agregados para todos os vídeos publicados em todo o seu site:
 
 * Vídeos iniciados
 * Taxa de Conclusão

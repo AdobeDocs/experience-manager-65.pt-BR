@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
+source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4523'
 ht-degree: 9%
 
 ---
@@ -463,7 +463,7 @@ Por exemplo, para a variável *VideoPlayer* tipo, em **[!UICONTROL Modificadores
 
    * **[!UICONTROL traço]** - Vídeos são transmitidos somente como traço. No entanto, em dispositivos Safari/iOS, é necessário selecionar **[!UICONTROL hls]** como tipo, em vez disso.
    * **[!UICONTROL hls]** - Vídeos são transmitidos somente como hls.
-   * **[!UICONTROL auto]** - Melhores práticas. A criação de fluxos DASH e HLS é otimizada para armazenamento. Portanto, o Adobe recomenda que você sempre selecione **[!UICONTROL auto]** como o tipo de reprodução. Os vídeos são transmitidos como traço, hls ou progressivo, como no seguinte:
+   * **[!UICONTROL auto]** - Melhores práticas. A criação de fluxos DASH e HLS é otimizada para armazenamento. Portanto, o Adobe recomenda que você sempre selecione **[!UICONTROL auto]** como o tipo de reprodução. Os vídeos são transmitidos como traço, hls ou progressivo, conforme a seguinte ordem de reprodução:
       * Se o navegador suportar DASH, então a transmissão DASH é usada primeiro.
       * Se o navegador não suporta DASH, então o streaming de HLS é usado, segundo.
       * Se o navegador não suportar DASH ou HLS, a reprodução progressiva será usada, por fim.
@@ -492,7 +492,7 @@ Por exemplo, para a variável *VideoPlayer* tipo, em **[!UICONTROL Modificadores
 
    >[!IMPORTANT]
    >
-   >Para vídeos antigos que usam um perfil de transmissão com taxa de bits adaptável, o URL continua a ser reproduzido como de costume — com transmissão HLS — até você [reprocessar os ativos de vídeo](/help/assets/processing-profiles.md#reprocessing-assets). Após o reprocessamento, o mesmo URL continuará a funcionar, mas agora com *both* Transmissão DASH e HLS ativada.
+   >Para vídeos antigos que usam um perfil de transmissão com taxa de bits adaptável, o URL continua a ser reproduzido como de costume — com transmissão HLS — até você [reprocessar os ativos de vídeo](/help/assets/processing-profiles.md#reprocessing-assets). Após o reprocessamento, o mesmo URL continua a funcionar, mas agora com *both* Transmissão DASH e HLS ativada.
 
 ### Considerações especiais para criar uma predefinição do Visualizador interativo {#special-considerations-for-creating-an-interactive-viewer-preset}
 
