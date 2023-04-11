@@ -2,9 +2,9 @@
 title: Notas de versão para [!DNL Adobe Experience Manager] 6,5
 description: Encontre informações sobre a versão, novidades, instruções de instalação e uma lista detalhada de alterações para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
+source-git-commit: a2fa4eacf1b39f185fdf46581ca7c5dcc8083969
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2967'
 ht-degree: 2%
 
 ---
@@ -88,7 +88,7 @@ Consulte [Habilitar o DASH em sua conta](/help/assets/video.md#enable-dash).
 
 ### [!DNL Forms] Correções {#forms-fixes-6516}
 
-* Ao usar uma etapa Atribuir tarefa** para enviar uma notificação para uma tarefa atribuída, dois emails são enviados em vez de um para o indivíduo atribuído. (NPR-40078)
+* Ao usar um **Atribuir tarefa** para enviar uma notificação para uma tarefa atribuída, dois emails são enviados em vez de um para o indivíduo atribuído. (NPR-40078)
 * Quando um usuário oculta os cabeçalhos da tabela, a largura da coluna definida anteriormente fica indefinida e todas as colunas retêm a mesma largura. (NPR-40063)
 * Caso você altere a senha padrão do usuário administrador de `admin`ao executar a `Prepare Adobe Experience Manager Server For DSC deployment` verifique se o service pack do AEM Forms JEE falha. (NPR-40062), (NPR-39387)
 * As APIs OutputService e AssemblerService não convertem o Formulário PDF para PDF/A. (NPR-39990)
@@ -102,6 +102,18 @@ Consulte [Habilitar o DASH em sua conta](/help/assets/video.md#enable-dash).
 * Depois que um usuário atualiza para o AEM 6.5.15.0 Service Pack, a conversão de PostScript para Pdf não está funcionando. (NPR-39765), (NPR-39764)
 * Quando o usuário tenta abrir a tela turnê após abrir um Formulário adaptável, ele falha com uma exceção de NullPointer:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:"` (NPR-39654)
 * No Windows, quando o usuário ativa configurações em preto de alto contraste, o conteúdo do HTML5 Forms fica indefinido quando renderizado como uma visualização de HTML no navegador. (NPR-39018)
+* Quando o usuário tenta adicionar metadados, o botão Salvar fica inoperante para os componentes Rascunho e Submissão .(CQ-4349601)
+* Após a atualização para o AEM 6.5.15.0 Service Pack, o redirecionamento de URLs relativos não funciona mais no Visual Editor. (NPR-39947)
+* Quando um usuário atualiza para o AEM 6.5.15.0 Service Pack, o redirecionamento para não funcionar com o Internet Explorer. (CQ-4351745)
+* Depois que um usuário atualiza para o AEM 6.5.15.0 Service Pack, a tag do cabeçalho do HTML não é reconhecida. O código de HTML para a tag de cabeçalho é exibido como texto no formulário de HTML. (NPR-39915)
+* Quando o usuário tenta enviar um formulário adaptável, ocorre um erro de tipecast: `ERROR [10.207.64.167 [1668589530607] POST /app/LS4/content/forms/af/revalidate/jcr:content/guideContainer.af.submit.jsp HTTP/1.1]`(NPR-39809)
+* Quando um usuário visualiza um Documento de registro usando o **Enviar Email** enviar ação, ela não é exibida corretamente. O modelo de email é incorporado na pré-visualização do Documento de registro. (CQ-4352155)
+* Quando um usuário visualiza um Formulário adaptável como HTML no navegador Microsoft Edge com o modo de compatibilidade do IE, ele não é exibido corretamente.(CQ-4352216)
+* O dicionário precisa incluir novas localidades com caracteres especiais, como sublinhados ou hifens, para permitir a tradução. (NPR-40088)
+
+Após instalar o AEM 6.5.16.0 Forms Add-on service pack, os clientes enfrentavam o seguinte problema. Portanto, uma versão atualizada do AEM 6.5.16.0 Forms Add-on service pack é lançada:
+* Quando um usuário tenta criar um formulário adaptável com um usuário no grupo forms-users , a opção para selecionar qualquer modelo não está presente e o erro semelhante ao seguinte ocorre: erro interno do servidor: java.lang.NullPointerException em com.adobe.aem.formsndocuments.servlet.ThemeClientLibraryDataSourceServlet.lambda$getThemeClientLibCategoryList$3(ThemeClientLibraryDataSourceServlet.java:76) em java.base/java.util.stream.ReferencePipeline$2 1.accept(ReferencePipeline.java:176) at java.base/java.util.Iterator.foreachRemaining(Iterator.java:133) (FORMS-7629)
+* As alterações feitas nas regras do editor de códigos não estão sendo salvas.(FORMS-7532)
 
 ## Integrações {#integrations-6516}
 
