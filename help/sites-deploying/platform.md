@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: fccf9a0f-ebab-45ab-8460-84c86b3c4192
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Ele é o sucessor do Jackrabbit 2 e é usado pelo AEM 6 como o back-end padrão 
 
 ## Princípios e objetivos do projeto {#design-principles-and-goals}
 
-O Oak implementa o [JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html) (JCR 2.0). Os seus principais objetivos de concepção são:
+O Oak implementa o [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0). Os seus principais objetivos de concepção são:
 
 * Melhor suporte para repositórios grandes
 * Vários nós de cluster distribuídos para alta disponibilidade
@@ -74,17 +74,17 @@ Atualmente, há duas implementações de armazenamento disponíveis no AEM6: **A
 
 O armazenamento Tar usa arquivos tar. Ele armazena o conteúdo como vários tipos de registros em segmentos maiores. Os diários são usados para rastrear o estado mais recente do repositório.
 
-Há vários princípios-chave de design que ele foi criado em torno:
+Há vários princípios-chave de design que foram criados em torno:
 
 * **Segmentos imutáveis**
 
-O conteúdo é armazenado em segmentos que podem ter até 256 KiB. Eles são imutáveis, o que facilita o cache de segmentos acessados com frequência e reduz erros do sistema que podem corromper o repositório.
+O conteúdo é armazenado em segmentos que podem ter até 256 KB. Eles são imutáveis, o que facilita o cache de segmentos acessados com frequência e reduz erros do sistema que podem corromper o repositório.
 
 Cada segmento é identificado por um identificador exclusivo (UUID) e contém um subconjunto contínuo da árvore de conteúdo. Além disso, os segmentos podem fazer referência a outro conteúdo. Cada segmento mantém uma lista de UUIDs de outros segmentos referenciados.
 
 * **Localidade**
 
-Os registros relacionados, como um nó e seus filhos imediatos, geralmente são armazenados no mesmo segmento. Isso torna a pesquisa no repositório muito rápida e evita a maioria das falhas de cache para clientes típicos que acessam mais de um nó relacionado por sessão.
+Os registros relacionados, como um nó e seus filhos imediatos, são armazenados no mesmo segmento. Isso torna a pesquisa no repositório rápida e evita a maioria das falhas de cache para clientes típicos que acessam mais de um nó relacionado por sessão.
 
 * **Compactação**
 
@@ -92,7 +92,7 @@ A formatação de registros é otimizada para tamanho para reduzir custos de E/S
 
 ### Armazenamento Mongo {#mongo-storage}
 
-O armazenamento MongoDB aproveita o MongoDB para compartilhamento e clustering. A árvore do repositório é mantida em um banco de dados MongoDB, onde cada nó é um documento separado.
+O armazenamento MongoDB usa MongoDB para compartilhamento e clustering. A árvore do repositório é mantida em um banco de dados MongoDB, onde cada nó é um documento separado.
 
 Ela tem várias particularidades:
 
@@ -122,10 +122,10 @@ Uma configuração típica de cluster AEM com o armazenamento MongoDB:
 
 ## O que é diferente do Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
-Como o Oak foi projetado para ser compatível com versões anteriores do JCR 1.0 padrão, quase não haverá alterações no nível do usuário. No entanto, há algumas diferenças notáveis que você precisa levar em conta ao configurar uma instalação de AEM baseada no Oak:
+Como o Oak é compatível com o JCR 1.0 padrão, quase não há alterações no nível do usuário. No entanto, há algumas diferenças notáveis que você deve considerar ao configurar uma instalação de AEM baseada no Oak:
 
-* O Oak não cria índices automaticamente. Por causa disso, os índices personalizados precisarão ser criados quando necessário.
-* Ao contrário do Jackrabbit 2, onde as sessões sempre refletem o estado mais recente do repositório, com o Oak uma sessão reflete uma exibição estável do repositório a partir do momento em que a sessão foi adquirida. Isso se deve ao modelo MVCC no qual o Oak se baseia.
+* O Oak não cria índices automaticamente. Dessa forma, os índices personalizados devem ser criados quando necessário.
+* Ao contrário do Jackrabbit 2, onde as sessões sempre refletem o estado mais recente do repositório, com o Oak uma sessão reflete uma exibição estável do repositório a partir do momento em que a sessão foi adquirida. O motivo é devido ao modelo MVCC no qual o Oak se baseia.
 * Os irmãos com mesmo nome (SNS) não são suportados no Oak.
 
 ## Outra documentação relacionada à plataforma {#other-platform-related-documentation}

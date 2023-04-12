@@ -12,16 +12,16 @@ discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '478'
 ht-degree: 1%
 
 ---
 
 # Mapeamento de grupo de usuários personalizado no AEM 6.5 {#custom-user-group-mapping-in-aem}
 
-## Comparação do conteúdo do JCR relacionado ao CUG {#comparison-of-jcr-content-related-to-cug}
+## Comparação do conteúdo JCR relacionado ao CUG (Grupo de usuários personalizado) {#comparison-of-jcr-content-related-to-cug}
 
 <table>
  <tbody>
@@ -38,7 +38,7 @@ ht-degree: 1%
   <tr>
    <td><p>Propriedade: cq:cugPrincipals</p> <p>Declarando tipo de nó: NA, propriedade residual</p> </td>
    <td><p>Propriedade: rep:principalNames</p> <p>Declarando tipo de nó: rep:CugPolicy</p> </td>
-   <td><p>A propriedade que contém os nomes dos principais que têm permissão para ler o conteúdo abaixo do CUG restrito está protegida e não pode ser gravada usando chamadas de API JCR regulares; em vez disso, use o gerenciamento de controle de acesso JCR.</p> <p>Consulte <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">esta página</a> para obter mais detalhes sobre a implementação.</p> </td>
+   <td><p>A propriedade que contém os nomes dos principais que têm permissão para ler o conteúdo abaixo do CUG restrito está protegida e não pode ser gravada usando chamadas de API JCR regulares; em vez disso, use o gerenciamento de controle de acesso JCR.</p> <p>Consulte <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">esta página</a> para obter mais detalhes sobre a implementação.</p> </td>
   </tr>
   <tr>
    <td><p>Propriedade: cq:cugLoginPage</p> <p>Declarando tipo de nó: NA, propriedade residual</p> </td>
@@ -89,16 +89,16 @@ Serviço para configurar a lista de exclusão de entidades principais que não d
 
    >[!NOTE]
    > 
-   >Se a variável `CugExcludeImpl` não estiver configurado, a variável `CugConfiguration` voltará ao padrão.
+   >Se a variável `CugExcludeImpl` não estiver configurado, a variável `CugConfiguration` retorna ao padrão.
 
-   É possível plug-in de uma implementação CugExclude personalizada em caso de necessidades especiais.
+   É possível plug-in de uma implementação CugExclude personalizada se houver necessidades especiais.
 
 * Componente OSGi implementando LoginPathProvider que expõe um caminho de logon correspondente para LoginSelectorHandler. Ela tem uma referência obrigatória a um RequerHandler, que é usada para registrar o observador que escuta os requisitos de autenticação alterados armazenados no conteúdo por meio do tipo mixin granite:AuthenticationRequired .
 * Componente OSGi implementando o RequirementsHandler que notifica o SlingAuthenticator sobre alterações a requisitos autorais.
 
    Como a política de configuração para este componente é REQUIRE, ela só será ativada se um conjunto de caminhos suportados for especificado.
 
-   Habilitar o serviço iniciará o RequerimentoService.
+   Habilitar o serviço inicia o RequisitoService.
 
 <!-- nested tables not supported - text above is the table>
 <table>

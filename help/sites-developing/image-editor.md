@@ -1,8 +1,6 @@
 ---
 title: Editor de imagem
-seo-title: Image Editor
-description: O Editor de imagens é uma peça central de AEM e pode ser aproveitada por componentes para facilitar a manipulação de imagens por autores de conteúdo.
-seo-description: The Image Editor is a core piece of AEM and can be leveraged by components to facilitate the manipulation of images by content authors.
+description: O Editor de imagens é uma peça central de AEM e pode ser usado por componentes para facilitar a manipulação de imagens por autores de conteúdo.
 uuid: de6ac71b-380a-4b67-b697-ac34a79a9cc4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +8,20 @@ content-type: reference
 topic-tags: components
 discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
 exl-id: af6cf1e0-8901-4621-9f72-e791cb8d68ae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 14%
+source-wordcount: '312'
+ht-degree: 16%
 
 ---
 
 # Editor de imagem {#image-editor}
 
-O Editor de imagens é uma peça central de AEM e pode ser aproveitada por componentes para facilitar a manipulação de imagens por autores de conteúdo.
+O Editor de imagens é uma peça central de AEM e pode ser usado por componentes para facilitar a manipulação de imagens por autores de conteúdo.
 
 >[!CAUTION]
 >
->Para usar os recursos do Editor de imagens descritos neste artigo, [feature pack 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) deve ser instalado.
+>Para usar os recursos do Editor de imagens descritos neste artigo, [feature pack 24267](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) deve ser instalado.
 
 ## Unidades relativas do mapa de imagem {#relative-units-for-image-map}
 
