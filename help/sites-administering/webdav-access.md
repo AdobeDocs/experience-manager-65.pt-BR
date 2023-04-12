@@ -10,9 +10,9 @@ topic-tags: content
 content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Para se conectar ao AEM via WebDAV com o KDE:
 
-AEM oferece suporte ao WebDAV, que permite exibir e editar o conteúdo do repositório. A conexão via WebDAV fornece acesso direto ao repositório de conteúdo por meio da área de trabalho. Os arquivos de texto e PDF adicionados ao repositório por meio da conexão WebDAV são automaticamente indexados por texto completo e podem ser pesquisados com as interfaces de pesquisa padrão e por meio das APIs Java padrão.
+AEM oferece suporte ao WebDAV, que permite exibir e editar o conteúdo do repositório. A conexão via WebDAV fornece acesso direto ao repositório de conteúdo por meio da área de trabalho. Os arquivos de texto e PDF adicionados ao repositório por meio da conexão WebDAV são automaticamente indexados por texto completo e podem ser pesquisados com as interfaces de pesquisa padrão e por meio das APIs Java™ padrão.
 
 ## Geral {#general}
 
@@ -98,7 +98,7 @@ http://localhost:4502/crx/repository/staging
 
 ## Conexão via WebDAV {#connecting-via-webdav}
 
-[Tal como acima mencionado](/help/sites-administering/webdav-access.md#general), para se conectar ao seu repositório usando o protocolo WebDAV, você aponta seu cliente WebDAV para o local do seu repositório. No entanto, dependendo do sistema operacional, as etapas envolvidas para conectar seu cliente são diferentes e pode haver configuração do sistema operacional necessária.
+[Tal como acima mencionado](/help/sites-administering/webdav-access.md#general), para se conectar ao seu repositório usando o protocolo WebDAV, você aponta seu cliente WebDAV para o local do seu repositório. No entanto, dependendo do sistema operacional, as etapas envolvidas na conexão do cliente são diferentes e pode haver uma configuração necessária do sistema operacional.
 
 São fornecidas instruções sobre como conectar os seguintes sistemas operacionais:
 
@@ -108,7 +108,7 @@ São fornecidas instruções sobre como conectar os seguintes sistemas operacion
 
 ### Windows {#windows}
 
-Para conectar com êxito um sistema Microsoft Windows 7 (e superior) a uma instância AEM que não esteja protegida com SSL, a opção para estabelecer a autenticação básica por uma rede não segura deve estar habilitada explicitamente no Windows. Isso requer uma alteração no Registro do Windows do WebClient.
+Para conectar com êxito um sistema Microsoft® Windows 7 (e superior) a uma instância AEM que não esteja protegida com SSL, a opção para estabelecer a autenticação básica por uma rede não segura deve ser explicitamente habilitada no Windows. Essa capacidade requer uma alteração no Registro do Windows do WebClient.
 
 Depois que o registro é atualizado, a instância de AEM pode ser mapeada como uma unidade.
 
@@ -126,11 +126,7 @@ Para atualizar o registro para permitir a autenticação básica através de uma
 
    Se não estiver presente, adicione a subchave.
 
-1. Você deve reiniciar o sistema para que a alteração no registro entre em vigor.
-
-Consulte [Suporte Microsoft KB 841215](https://support.microsoft.com/default.aspx/kb/841215) para obter mais informações sobre esta alteração de registro.
-
-Consulte [Suporte Microsoft KB 2445570](https://support.microsoft.com/kb/2445570) para obter informações sobre como melhorar a capacidade de resposta do WebDav Client no Windows.
+1. Reinicie o sistema para que a alteração no registro entre em vigor.
 
 >[!NOTE]
 >
@@ -138,11 +134,11 @@ Consulte [Suporte Microsoft KB 2445570](https://support.microsoft.com/kb/2445570
 
 #### Configuração do Windows 8 {#windows-configuration}
 
-No Windows 8, também é necessário alterar a entrada do Registro [conforme descrito para o Windows 7 e posterior](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). No entanto, antes que você possa fazer isso, a Experiência do Desktop deve estar ativada para ver a entrada do Registro.
+No Windows 8, altere a entrada do Registro [conforme descrito para o Windows 7 e posterior](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). No entanto, antes que você faça essa tarefa, a Experiência do Desktop deve estar habilitada para ver a entrada do Registro.
 
 Para ativar a Experiência do desktop, abra **Gerenciador do servidor**, em seguida **Recursos**, em seguida **Adicionar recursos**, em seguida **Experiência desktop**.
 
-Após a reinicialização, a entrada do Registro descrita para o Windows 7 e superior está disponível. Modifique-o conforme descrito para o Windows 7 e superior.
+Após a reinicialização, a entrada de registro descrita para o Windows 7 e superior está disponível. Modifique-o conforme descrito para o Windows 7 e superior.
 
 #### Conexão no Windows {#connecting-in-windows}
 
@@ -152,7 +148,7 @@ Para se conectar ao AEM via WebDAV em um ambiente Windows:
 
    ![chlimage_1-112](assets/chlimage_1-112a.png)
 
-1. Clique em **Mapear unidade de rede** para iniciar o assistente.
+1. Para iniciar o assistente, clique em **Mapear unidade de rede**.
 1. Insira os detalhes do mapeamento:
 
    * **Unidade**: Escolha qualquer letra disponível
@@ -179,7 +175,7 @@ O Windows agora mapeou AEM como uma unidade via WebDAV e você pode usá-la como
 
 ### macOS {#macos}
 
-Não há etapas de configuração necessárias para se conectar via WebDAV no macOS. Basta se conectar ao servidor WebDAV.
+Não há etapas de configuração necessárias para se conectar por meio do WebDAV no macOS. Você pode se conectar ao servidor WebDAV.
 
 1. Navegue até qualquer **Localizador** e clique em **Ir** e **Conectar ao Servidor** ou pressione **Command+k**.
 1. No **Conectar ao Servidor** , insira o local AEM:
@@ -193,9 +189,9 @@ Não há etapas de configuração necessárias para se conectar via WebDAV no ma
 
 A macOS agora se conectou ao AEM via WebDAV e você pode usá-lo como qualquer outra pasta em seu Mac.
 
-### Linux {#linux}
+### Linux® {#linux}
 
-A conexão via WebDAV no Linux não requer configuração, mas envolve algumas etapas para fazer a conexão que variam de acordo com o ambiente de desktop.
+A conexão via WebDAV no Linux® não requer configuração, mas envolve algumas etapas para fazer a conexão que varia de acordo com o seu ambiente de desktop.
 
 #### NOME {#gnome}
 

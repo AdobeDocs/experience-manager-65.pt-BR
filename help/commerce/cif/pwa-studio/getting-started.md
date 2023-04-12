@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Imediatamente, o PWA Studio integra-se perfeitamente com o Adobe Commerce por meio do GraphQL, fornecendo opções ilimitadas para criar vitrines inovadoras e envolventes e outras experiências digitais.
 
-Fragmentos de conteúdo são partes de conteúdo com uma estrutura predefinida que permite que sejam consumidas de maneira headless usando o GraphQL como API em diferentes formatos (por exemplo, JSON, Markdown) e renderizadas independentemente. Os fragmentos de conteúdo incluem todos os tipos de dados e campos necessários para que o GraphQL garanta que seu aplicativo somente solicite o que está disponível e receba o que é esperado. A flexibilidade que eles oferecem em termos de como são estruturados os torna perfeitos para uso em vários locais e em vários canais.
+Fragmentos de conteúdo são partes de conteúdo com uma estrutura predefinida que permite que sejam consumidas de maneira headless usando o GraphQL como API em diferentes formatos (por exemplo, JSON, Markdown) e renderizadas de maneira independente. Os fragmentos de conteúdo incluem todos os tipos de dados e campos necessários para que o GraphQL garanta que seu aplicativo somente solicite o que está disponível e receba o que é esperado. A flexibilidade que eles oferecem em termos de como são estruturados os torna perfeitos para uso em vários locais e em vários canais.
 
-Projetar a estrutura necessária é fácil com o Editor do modelo de fragmento de conteúdo no Adobe Experience Manager. O principal desafio para integrar os Fragmentos de conteúdo do Adobe Experience Manager (ou quaisquer outros dados) ao seu aplicativo PWA Studio é buscar dados de vários endpoints do GraphQL. Isso ocorre porque o PWA Studio funciona imediatamente com um único terminal Adobe Commerce GraphQL.
+Projetar a estrutura necessária é fácil com o Editor do modelo de fragmento de conteúdo no Adobe Experience Manager. O principal desafio para integrar os Fragmentos de conteúdo do Adobe Experience Manager (ou quaisquer outros dados) ao seu aplicativo PWA Studio é buscar dados de vários endpoints do GraphQL. O motivo é que, pronto para uso, o PWA Studio funciona com um único terminal Adobe Commerce GraphQL.
 
 ## Arquitetura {#architecture}
 
@@ -26,7 +26,7 @@ Projetar a estrutura necessária é fácil com o Editor do modelo de fragmento d
 
 ## PWA Studio de configuração {#setup-pwa}
 
-Siga a Adobe Commerce [Documentação do PWA Studio](https://developer.adobe.com/commerce/pwa-studio/tutorials/) para configurar seu aplicativo PWA Studio.
+Para configurar seu aplicativo do PWA Studio, siga o guia Adobe Commerce [Documentação do PWA Studio](https://developer.adobe.com/commerce/pwa-studio/tutorials/).
 
 Para conectar o PWA Studio ao terminal de AEM da GraphQL, você pode usar o [AEM extensão para PWA Studio](https://github.com/adobe/aem-pwa-studio-extensions).
 
@@ -62,7 +62,7 @@ Para conectar o PWA Studio ao terminal de AEM da GraphQL, você pode usar o [AEM
 
    Você pode encontrar mais detalhes sobre a personalização do componente Navegação no [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) e na [Estrutura de extensibilidade](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) documentação do PWA Studio.
 
-1. O cliente Apollo esperará o terminal AEM GraphQL em <https://pwa-studio/endpoint.js>. Para mapear o terminal para esse local, você precisará personalizar a configuração UPWARD do aplicativo PWA Studio: a. Adicione a variável AEM_CFM_GRAPHQL ao pwa-root/.env e adapte-a ao ponto de extremidade AEM do GraphQL de Fragmentos de conteúdo .
+1. O cliente Apollo espera o terminal AEM GraphQL em `<https://pwa-studio/endpoint.js>`. Para mapear o ponto de extremidade para esse local, personalize a configuração UPWARD do aplicativo PWA Studio: a. Para `pwa-root/.env`, adicione a variável AEM_CFM_GRAPHQL e adapte-a ao ponto de extremidade AEM do GraphQL de Fragmentos de conteúdo .
 
    Exemplo: AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
 
@@ -89,13 +89,13 @@ Para conectar o PWA Studio ao terminal de AEM da GraphQL, você pode usar o [AEM
 
 ## AEM de configuração {#setup-aem}
 
-Siga a documentação AEM Fragmentos do conteúdo para configurar um terminal GraphQL para o seu projeto AEM. Além disso, em seu projeto de AEM, adicione as seguintes configurações para permitir que o aplicativo PWA Studio acesse o terminal GraphQL:
+Siga a documentação AEM Fragmentos do conteúdo para configurar um terminal GraphQL para o seu projeto AEM. Além disso, no projeto do AEM, adicione as seguintes configurações para permitir que o aplicativo PWA Studio acesse o terminal GraphQL:
 
 * Política de compartilhamento de recursos entre origens do Adobe Granite (com.adobe.granite.cors.impl.CORSPolicyImpl)
 
-   Defina a propriedade allowedorigin como o nome de host completo do seu aplicativo PWA.
+   Defina as `allowedorigin` propriedade para o nome de host completo do aplicativo PWA.
 
-   Exemplo:  <https://pwa-studio-test-vflyn.local.pwadev:9366>
+   Exemplo:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Filtro de referenciador do Apache Sling (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
@@ -105,7 +105,7 @@ Siga a documentação AEM Fragmentos do conteúdo para configurar um terminal Gr
 
 Você pode encontrar exemplos completos de ambas as configurações aqui: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-Para mostrar o terminal GraphQL, preparamos alguns modelos e dados de fragmento de conteúdo de amostra por meio de um pacote de conteúdo. Eles funcionam bem junto com os Componentes React fornecidos com a extensão PWA Studio.
+Para mostrar o terminal GraphQL, o Adobe preparou algumas amostras de modelos e dados do Fragmento de conteúdo por meio de um pacote de conteúdo. Essas peças funcionam junto com os Componentes de reação fornecidos com a extensão PWA Studio.
 
 ## Como usar {#how-to-use}
 
@@ -117,7 +117,7 @@ As configurações de produção podem variar em vários aspectos.
 
 * Você pode ter um único terminal GraphQL federado que combina dados AEM e Adobe Commerce GraphQL em vez de personalizar o cliente Apollo.
 * Seu aplicativo PWA Studio pode usar o URL do ponto de extremidade AEM GraphQL diretamente, sem um proxy com UPWARD. O proxy também pode ser movido para uma camada diferente (por exemplo, CDN).
-* A abordagem mais adequada para você também depende muito de como você entrega o aplicativo PWA Studio para o usuário final.
+* A abordagem adequada para você também depende muito de como você entrega o aplicativo PWA Studio para o usuário final.
 
 Essa extensão vem com dois exemplos.
 
@@ -127,4 +127,4 @@ Exiba postagens do blog com base em alguns modelos de Fragmento de conteúdo . A
 
 ### Enriquecimento PDP {#pdp-enrichment}
 
-Permite que os profissionais de marketing enriqueçam facilmente as PDPs com conteúdo adicional, gerenciado como Fragmentos de conteúdo.  Consulte [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension) para obter mais detalhes.
+Permite que os profissionais de marketing enriqueçam facilmente as PDPs com conteúdo adicional, gerenciado como Fragmentos de conteúdo. Consulte [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension) para obter mais detalhes.

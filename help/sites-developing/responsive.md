@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 4472da2e9aa0b45e0d5f03bfdc53a2748d82cdb3
+source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
 workflow-type: tm+mt
-source-wordcount: '5351'
-ht-degree: 1%
+source-wordcount: '5336'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Vários exemplos são baseados no conteúdo de amostra do Geometrixx, que não é mais enviado com o AEM, tendo sido substituído por We.Retail. Consulte o documento [Implementação de referência We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx) para saber como baixar e instalar o Geometrixx.
+>Vários exemplos são baseados no conteúdo de amostra do Geometrixx, que não é mais enviado com o AEM (Adobe Experience Manager), tendo sido substituído por We.Retail. Consulte o documento [Implementação de referência We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx) para saber como baixar e instalar o Geometrixx.
 
 Projete suas páginas da Web para que elas se adaptem à janela de visualização do cliente em que são exibidas. Com o design responsivo, as mesmas páginas podem ser exibidas efetivamente em vários dispositivos em ambas as orientações. A imagem a seguir demonstra algumas maneiras pelas quais uma página pode responder às alterações no tamanho da janela de visualização:
 
@@ -44,7 +44,7 @@ Desenvolva aplicativos Adobe Experience Manager (AEM) que geram páginas HTML5 q
 * Largura máxima de 767 pixels (telefone, paisagem)
 * Largura entre 768 pixels e 979 pixels (tablet, retrato)
 * Largura entre 980 pixels e 1199 pixels (tablet, paisagem)
-* Largura de 1200px ou superior (desktop)
+* Largura de 1.200 pixels ou superior (desktop)
 
 Consulte os tópicos a seguir para obter informações sobre como implementar o comportamento de design responsivo:
 
@@ -56,7 +56,7 @@ Conforme você projeta, use **[!UICONTROL Sidekick]** para visualizar suas pági
 
 ## Antes de desenvolver {#before-you-develop}
 
-Antes de desenvolver o aplicativo AEM que suporta suas páginas da Web, várias decisões de design devem ser tomadas. Por exemplo, você precisa ter as seguintes informações:
+Antes de desenvolver o aplicativo AEM que suporta suas páginas da Web, várias decisões de design devem ser tomadas. Por exemplo, você deve ter as seguintes informações:
 
 * Os dispositivos que você está direcionando.
 * Os tamanhos do visor de destino.
@@ -74,7 +74,7 @@ A estrutura típica do aplicativo de AEM suporta todas as implementações de de
 
 As consultas de mídia permitem o uso seletivo de estilos CSS para renderização de página. AEM ferramentas e recursos de desenvolvimento permitem que você implemente consultas de mídia de maneira eficaz e eficiente em seus aplicativos.
 
-O grupo W3C fornece a variável [Consultas de mídia](https://www.w3.org/TR/css3-mediaqueries/) recomendação que descreve esse recurso CSS3 e a sintaxe.
+O grupo W3C fornece a variável [Consultas de mídia](https://www.w3.org/TR/mediaqueries-3/) recomendação que descreve esse recurso CSS3 e a sintaxe.
 
 ### Criação do arquivo CSS {#creating-the-css-file}
 
@@ -85,7 +85,7 @@ No arquivo CSS, defina consultas de mídia com base nas propriedades dos disposi
 * Defina estilos comuns a todos os dispositivos em um arquivo CSS separado.
 * No arquivo css.txt de ClientLibraryFolder, ordene os arquivos CSS da lista, conforme necessário no arquivo CSS montado.
 
-A amostra de mídia We.Retail usa essa estratégia para definir estilos no design do site. O arquivo CSS usado pelo We.Retail está localizado em `*/apps/weretail/clientlibs/clientlib-site/less/grid.less`.
+O `We.Retail` O exemplo de mídia usa essa estratégia para definir estilos no design do site. O arquivo CSS usado por `We.Retail` está em `*/apps/weretail/clientlibs/clientlib-site/less/grid.less`.
 
 A tabela a seguir lista os arquivos na pasta filho css.
 
@@ -109,27 +109,27 @@ A tabela a seguir lista os arquivos na pasta filho css.
   <tr>
    <td>responsive-1200px.css</td>
    <td>Estilos para todas as mídias com 1200 pixels de largura ou mais larga.</td>
-   <td><p>@media (largura mínima: 1200px) {<br /> ...<br /> }</p> </td>
+   <td><p>@media (largura mínima: 1200 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-980px-1199px.css</td>
    <td>Estilos para mídia com 980 pixels e 1199 pixels de largura.</td>
-   <td><p>@media (largura mínima: 980px) e (largura máxima: 1199px) {<br /> ...<br /> }</p> </td>
+   <td><p>@media (largura mínima: 980 px) e (largura máxima: 1199 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-768px-979px.css</td>
    <td>Estilos para mídia com largura entre 768 pixels e 979 pixels. </td>
-   <td><p>@media (largura mínima: 768px) e (largura máxima: 979px) {<br /> ...<br /> }</p> </td>
+   <td><p>@media (largura mínima: 768 px) e (largura máxima: 979 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-767px-max.css</td>
    <td>Estilos para todas as mídias com menos de 768 pixels de largura.</td>
-   <td><p>@media (largura máxima: 767px) {<br /> ...<br /> }</p> </td>
+   <td><p>@media (largura máxima: 767 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-480px.css</td>
    <td>Estilos para todas as mídias com menos de 481 pixels de largura.</td>
-   <td>@media (largura máxima: 480) {<br /> ...<br /> }</td>
+   <td>@media (largura máxima: 480 px) {<br /> ...<br /> }</td>
   </tr>
  </tbody>
 </table>
@@ -155,7 +155,7 @@ responsive-1200px.css
 
 ### Uso de consultas de mídia com páginas de AEM {#using-media-queries-with-aem-pages}
 
-Inclua a pasta da biblioteca do cliente no script JSP do seu componente de página para gerar o arquivo CSS que inclui as consultas de mídia e para fazer referência ao arquivo.
+Inclua a pasta da biblioteca do cliente no script JSP do seu componente de página. Isso ajuda a gerar o arquivo CSS que inclui as consultas de mídia e faz referência ao arquivo.
 
 ```xml
 <ui:includeClientLib categories="apps.weretail.all"/>
@@ -222,7 +222,7 @@ Adicione a seguinte propriedade de nó:
 
 Para especificar os grupos de dispositivos que aparecem na lista Dispositivos, adicione um `cq:deviceGroups` para a `jcr:content` nó da página raiz do site. O valor da propriedade é uma matriz de caminhos para os nós do grupo de dispositivos.
 
-Os nós do grupo de dispositivos estão localizados na `/etc/mobile/groups` pasta.
+Os nós do grupo de dispositivos estão na `/etc/mobile/groups` pasta.
 
 Por exemplo, a página raiz do site Geometrixx Media é `/content/geometrixx-media`. O `/content/geometrixx-media/jcr:content` O nó inclui a seguinte propriedade:
 
@@ -240,29 +240,29 @@ Use o console Ferramentas para [criar e editar grupos de dispositivos](/help/sit
 
 Você pode usar consultas de mídia para selecionar um recurso de imagem a ser exibido na página. No entanto, todos os recursos que usam um query de mídia para condicionar seu uso são baixados para o cliente. O query de mídia determina apenas se o recurso baixado é exibido.
 
-Para recursos grandes, como imagens, baixar todos os recursos não é um uso eficiente do pipeline de dados do cliente. Para baixar seletivamente os recursos, use o javascript para iniciar a solicitação de recursos depois que as consultas de mídia executarem a seleção.
+Para recursos grandes, como imagens, baixar todos os recursos não é um uso eficiente do pipeline de dados do cliente. Para baixar seletivamente os recursos, use o JavaScript para iniciar a solicitação de recurso depois que as consultas de mídia executarem a seleção.
 
 A estratégia a seguir carrega um único recurso escolhido por meio de consultas de mídia:
 
 1. Adicione um elemento DIV para cada versão do recurso. Inclua o URI do recurso como o valor de um valor de atributo. O navegador não interpreta o atributo como um recurso.
 1. Adicione uma consulta de mídia a cada elemento DIV apropriado para o recurso.
-1. Quando o documento é carregado ou a janela é redimensionada, o código javascript testa a consulta de mídia de cada elemento DIV.
+1. Quando o documento é carregado ou a janela é redimensionada, o código JavaScript testa a consulta de mídia de cada elemento DIV.
 1. Com base nos resultados das consultas, determine qual recurso incluir.
 1. Insira um elemento HTML no DOM que faça referência ao recurso.
 
-### Avaliação de consultas de mídia usando Javascript {#evaluating-media-queries-using-javascript}
+### Avaliação de consultas de mídia usando JavaScript {#evaluating-media-queries-using-javascript}
 
-Implementação do [Interface MediaQueryList](https://dev.w3.org/csswg/cssom-view/#the-mediaquerylist-interface) que o W3C define permite avaliar consultas de mídia usando javascript. Você pode aplicar lógica aos resultados da consulta de mídia e executar scripts direcionados para a janela atual:
+Implementação do [Interface MediaQueryList](https://drafts.csswg.org/cssom-view/#the-mediaquerylist-interface) que o W3C define permite avaliar consultas de mídia usando o JavaScript. Você pode aplicar lógica aos resultados da consulta de mídia e executar scripts direcionados para a janela atual:
 
 * Os navegadores que implementam a interface MediaQueryList são compatíveis com o `window.matchMedia()` . Essa função testa consultas de mídia em relação a uma determinada string. A função retorna um `MediaQueryList` que fornece acesso aos resultados da consulta.
 
-* Em navegadores que não implementam a interface, você pode usar um `matchMedia()` polienchimento, como [matchMedia.js](https://github.com/paulirish/matchMedia.js), uma biblioteca javascript disponível gratuitamente.
+* Em navegadores que não implementam a interface, você pode usar um `matchMedia()` polienchimento, como [matchMedia.js](https://github.com/paulirish/matchMedia.js), uma biblioteca JavaScript disponível gratuitamente.
 
 #### Seleção de recursos específicos de mídia {#selecting-media-specific-resources}
 
-O W3C proposto [elemento de imagem](https://picture.responsiveimages.org/) O usa consultas de mídia para determinar a fonte a ser usada para elementos de imagem. O elemento picture usa atributos de elemento para associar consultas de mídia a caminhos de imagem.
+O W3C [elemento de imagem](https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element) O usa consultas de mídia para determinar a fonte a ser usada para elementos de imagem. O elemento picture usa atributos de elemento para associar consultas de mídia a caminhos de imagem.
 
-Disponível livremente [biblioteca picturefill.js](https://github.com/scottjehl/picturefill) O oferece funcionalidade semelhante à `picture` e usa uma estratégia semelhante. As chamadas da biblioteca picturefill.js `window.matchMedia` para avaliar as consultas de mídia definidas para um conjunto de `div` elementos. Cada `div` O elemento também especifica uma fonte de imagem. A fonte é usada quando a consulta de mídia do `div` retorno do elemento `true`.
+Disponibilidade livre [biblioteca picturefill.js](https://github.com/scottjehl/picturefill) O oferece funcionalidade semelhante à `picture` e usa uma estratégia semelhante. As chamadas da biblioteca picturefill.js `window.matchMedia` para avaliar as consultas de mídia definidas para um conjunto de `div` elementos. Cada `div` O elemento também especifica uma fonte de imagem. A fonte é usada quando a consulta de mídia do `div` retorno do elemento `true`.
 
 O `picturefill.js` A biblioteca requer código HTML semelhante ao seguinte exemplo:
 
@@ -291,11 +291,11 @@ Em uma página AEM, o valor da variável `data-src` é o caminho para um recurso
 
 ### Implementação de imagens adaptáveis no AEM {#implementing-adaptive-images-in-aem}
 
-Para implementar imagens adaptáveis no aplicativo AEM, é necessário adicionar as bibliotecas javascript necessárias e incluir a marcação de HTML necessária nas páginas.
+Para implementar imagens adaptáveis no aplicativo AEM, você deve adicionar as bibliotecas JavaScript necessárias e incluir a marcação de HTML necessária nas páginas.
 
 **Bibliotecas**
 
-Obtenha as seguintes bibliotecas javascript e inclua-as em uma pasta da biblioteca de clientes:
+Obtenha as seguintes bibliotecas JavaScript e inclua-as em uma pasta da biblioteca do cliente:
 
 * [matchMedia.js](https://github.com/paulirish/matchMedia.js) (para navegadores que não implementam a interface MediaQueryList)
 * [picturefill.js](https://github.com/scottjehl/picturefill)
@@ -329,7 +329,7 @@ O exemplo a seguir HTML seleciona a partir de duas representações DAM da mesma
 
 ### Como entender a renderização de imagem no AEM {#understanding-image-rendering-in-aem}
 
-Para personalizar a renderização da imagem, você deve entender a implementação padrão AEM da renderização da imagem estática. AEM fornece o componente de Imagem e um servlet de renderização de imagem que trabalham juntos para renderizar imagens para a página da Web. A seguinte sequência de eventos ocorre quando o componente Imagem é incluído no sistema de parágrafo da página:
+Para personalizar a renderização da imagem, você deve entender a implementação padrão AEM da renderização da imagem estática. AEM fornece o componente de Imagem e um servlet de renderização de imagem que trabalham juntos para renderizar imagens para a página da Web. As seguintes sequências de eventos ocorrem quando o componente Imagem é incluído no sistema de parágrafo da página:
 
 1. Criação: Os autores editam o componente Imagem para especificar o arquivo de imagem a ser incluído em uma página HTML. O caminho do arquivo é armazenado como um valor de propriedade do nó do componente Imagem .
 1. Solicitação de página: O JSP do componente de página gera o código HTML. O JSP do componente de Imagem gera e adiciona um elemento img à página.
@@ -358,16 +358,16 @@ arquivo.
 
 Dimensione imagens em tempo de execução de acordo com as características da janela de visualização do cliente para fornecer imagens que estejam em conformidade com os princípios do design responsivo. Use o mesmo padrão de design que a renderização de imagem estática, usando um servlet e um componente de criação.
 
-O componente precisa executar as seguintes tarefas:
+O componente deve executar as seguintes tarefas:
 
 * Armazene o caminho e as dimensões desejadas do recurso de imagem como valores de propriedade.
 * Gerar `div` elementos que contêm seletores de mídia e chamadas de serviço para renderizar a imagem.
 
 >[!NOTE]
 >
->O cliente da Web usa as bibliotecas javascript matchMedia e Picturefill (ou bibliotecas semelhantes) para avaliar os seletores de mídia.
+>O cliente da Web usa as bibliotecas JavaScript matchMedia e Picturefill (ou bibliotecas semelhantes) para avaliar os seletores de mídia.
 
-O servlet que processa a solicitação de imagem precisa executar as seguintes tarefas:
+O servlet que processa a solicitação de imagem deve executar as seguintes tarefas:
 
 * Recupere o caminho e as dimensões da imagem das propriedades do componente.
 * Dimensione a imagem de acordo com as propriedades e retorne a imagem.
@@ -384,7 +384,7 @@ AEM instala as seguintes implementações que você pode usar ou estender.
 O componente de Imagem adaptativa gera chamadas para o Servlet do componente de imagem adaptativa para renderizar uma imagem que é dimensionada de acordo com a tela do dispositivo. O componente inclui os seguintes recursos:
 
 * JSP: Adiciona elementos div que associam consultas de mídia às chamadas para o Servlet do componente de imagem adaptativa.
-* Bibliotecas do cliente: A pasta clientlibs é uma `cq:ClientLibraryFolder` que monta a biblioteca de javascript matchMedia polyfill e uma biblioteca de javascript modificada Picturefill.
+* Bibliotecas do cliente: A pasta clientlibs é uma `cq:ClientLibraryFolder` que monta a biblioteca de JavaScript matchMedia polyfill e uma biblioteca modificada de JavaScript Picturefill.
 * Caixa de diálogo Editar: O `cq:editConfig` O nó substitui o componente de imagem de base do CQ para que o destino de soltar crie um componente de imagem adaptável em vez de um componente de imagem de base.
 
 #### Adicionar os elementos DIV {#adding-the-div-elements}
@@ -438,7 +438,7 @@ O Servlet do Componente de Imagem Adaptativa é vinculado ao servlet Sling padr�
 
 >[!CAUTION]
 >
->Arquivos .gif animados não são suportados no AEM para renderizações adaptativas.
+>Arquivos .gif animados não são aceitos no AEM para representações adaptáveis.
 
 Portanto, o Sling resolve URLs de solicitação HTTP do seguinte formato para este servlet:
 
@@ -506,7 +506,7 @@ Para obter informações sobre como configurar AEM serviços, consulte [Configur
 
 #### Detalhes da implementação {#implementation-details}
 
-O `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` estende a [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) classe . O código-fonte AdaptiveImageComponentServlet está localizado no `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl` pasta.
+O `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` estende a [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) classe . O código-fonte AdaptiveImageComponentServlet está no `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl` pasta.
 
 A classe usa anotações Felix SCR para configurar o tipo de recurso e a extensão de arquivo à qual o servlet está associado e o nome do primeiro seletor.
 
@@ -539,11 +539,11 @@ O servlet usa a anotação SCR de propriedade para definir a qualidade e as dime
             description = "List of widths this component is permitted to generate.")
 ```
 
-O `AbstractImageServlet` A classe fornece `doGet` que processa a solicitação HTTP. Esse método determina o recurso associado à solicitação, recupera as propriedades do recurso do repositório e as retorna em um [ImageContext](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) objeto.
+O `AbstractImageServlet` A classe fornece `doGet` que processa a solicitação HTTP. Esse método determina o recurso associado à solicitação, recupera as propriedades do recurso do repositório e as retorna em um [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) objeto.
 
 >[!NOTE]
 >
->O [com.day.cq.commons.DownloadResource](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/DownloadResource.html) A classe fornece `getFileReference method`, que recupera o valor do recurso `fileReference` propriedade.
+>O [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) A classe fornece `getFileReference method`, que recupera o valor do recurso `fileReference` propriedade.
 
 O `AdaptiveImageComponentServlet` substitui a `createLayer` método . O método obtém o caminho do recurso de imagem e a largura da imagem solicitada do `ImageContext` objeto. Em seguida, chama os métodos do `info.geometrixx.commons.impl.AdaptiveImageHelper` classe , que executa a escala de imagem real.
 
@@ -588,9 +588,9 @@ Os seguintes valores são suportados por padrão (widthxheight):
 
 Os seguintes valores para qualidade de imagem são suportados:
 
-* low
+* baixa
 * médio
-* alto
+* alta
 
 Ao trabalhar com AEM, existem vários métodos de gestão das definições de configuração para esses serviços; see [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
 
@@ -611,7 +611,7 @@ Ao criar uma página, use **Sidekick** para especificar a imagem e adicionar o `
 
 #### Detalhes da implementação {#implementation-details-1}
 
-A classe info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet estende o [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) classe . Se o pacote cq-geometrixx-commons-pkg estiver instalado, o código-fonte ImageReferenceModificationServlet estará localizado na seção `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` pasta.
+A classe info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet estende o [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) classe . Se o pacote cq-geometrixx-commons-pkg estiver instalado, o código de origem ImageReferenceModificationServlet estará no `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` pasta.
 
 A classe usa anotações Felix SCR para configurar o tipo de recurso e a extensão de arquivo à qual o servlet está associado e o nome do primeiro seletor.
 
@@ -651,16 +651,16 @@ O servlet usa a anotação SCR de propriedade para definir a qualidade e as dime
             description = "List of resolutions this component is permitted to generate.")
 ```
 
-O `AbstractImageServlet` A classe fornece `doGet` que processa a solicitação HTTP. Esse método determina o recurso associado à chamada, recupera as propriedades do recurso do repositório e as salva em um [ImageContext](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) objeto.
+O `AbstractImageServlet` A classe fornece `doGet` que processa a solicitação HTTP. Esse método determina o recurso associado à chamada, recupera as propriedades do recurso do repositório e as salva em um [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) objeto.
 
-O `ImageReferenceModificationServlet` substitui a `createLayer` e implementa a lógica que determina o recurso de imagem a ser renderizado. O método recupera um nó filho do `jcr:content` nome do nó `image`. Um [Imagem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/Image.html) é criado a partir desta `image` e o `getFileReference` retorna o caminho para o arquivo de imagem do `fileReference` propriedade do nó da imagem.
+O `ImageReferenceModificationServlet` substitui a `createLayer` e implementa a lógica que determina o recurso de imagem a ser renderizado. O método recupera um nó filho do `jcr:content` nome do nó `image`. Um [Imagem](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) é criado a partir desta `image` e o `getFileReference` retorna o caminho para o arquivo de imagem do `fileReference` propriedade do nó da imagem.
 
 >[!NOTE]
->O [com.day.cq.commons.DownloadResource](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/DownloadResource.html) A classe fornece o método getFileReferencemod.
+>O [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) A classe fornece o método getFileReferencemod.
 
 ## Desenvolvimento de uma grade de fluidos {#developing-a-fluid-grid}
 
-AEM permite implementar grades fluidas de maneira eficiente e eficaz. Esta página explica como você pode integrar sua grade fluida ou uma implementação de grade existente (como [Bootstrap](https://twitter.github.com/bootstrap/)) no aplicativo AEM.
+AEM permite implementar grades fluidas de maneira eficiente e eficaz. Esta página explica como você pode integrar sua grade fluida ou uma implementação de grade existente (como [Bootstrap](https://github.com/topics/twitter-bootstrap?l=css)) no aplicativo AEM.
 
 Se você não estiver familiarizado com grades de fluidos, consulte o [Introdução às grades fluídas](/help/sites-developing/responsive.md#developing-a-fluid-grid) na parte inferior desta página. Essa introdução fornece uma visão geral das grades de fluidos e orientação para projetá-las.
 
@@ -706,12 +706,12 @@ O design associado ao componente página geometrixx-media (`/etc/designs/geometr
 O exemplo de CSS a seguir é um subconjunto desses estilos. Esse subconjunto se concentra em `span12`, `span8`e `span4` classes e consultas de mídia para dois tamanhos de visor. Observe as seguintes características do CSS:
 
 * O `.span` os estilos definem as larguras do elemento usando números absolutos.
-* O `.row-fluid .span*` os estilos definem a largura do elemento como porcentagens do pai. As porcentagens são calculadas a partir das larguras absolutas.
+* O `.row-fluid .span*` os estilos definem larguras de elemento como porcentagens do pai. As porcentagens são calculadas a partir das larguras absolutas.
 * Consultas de mídia para visores maiores atribuem larguras absolutas maiores.
 
 >[!NOTE]
 >
->A amostra Geometrixx Media integra o [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) estrutura javascript em sua implementação de grade fluida. A estrutura do Bootstrap fornece o arquivo bootstrap.css.
+>A amostra Geometrixx Media integra o [Bootstrap](https://getbootstrap.com/2.0.2/) Estrutura do JavaScript na implementação da grade fluida. A estrutura do Bootstrap fornece o arquivo bootstrap.css.
 
 ```xml
 /* default styles (no media queries) */
@@ -766,7 +766,7 @@ As páginas do aplicativo Geometrixx Media de amostra distribuem linhas de bloco
 
 #### Modularizar os componentes da página {#tip-modularize-your-page-components}
 
-Modularize seus componentes para fazer uso eficiente do código. Seu site provavelmente usa vários tipos diferentes de páginas, como uma página de boas-vindas, uma página de artigo ou uma página de produto. Cada tipo de página contém tipos diferentes de conteúdo e provavelmente usa layouts diferentes. No entanto, quando certos elementos de cada layout são comuns em várias páginas, é possível reutilizar o código que implementa essa parte do layout.
+Modularize seus componentes para que você possa usar o código de forma eficiente. Seu site provavelmente usa vários tipos diferentes de páginas, como uma página de boas-vindas, uma página de artigo ou uma página de produto. Cada tipo de página contém tipos diferentes de conteúdo e provavelmente usa layouts diferentes. No entanto, quando certos elementos de cada layout são comuns em várias páginas, é possível reutilizar o código que implementa essa parte do layout.
 
 **Usar as sobreposições de componentes da página**
 
@@ -788,15 +788,15 @@ Inclua estilos CSS e consultas de mídia para diferentes tamanhos de visor em ar
 
 Quando os componentes geram um único bloco de conteúdo, geralmente a grade que o componente da página estabelece controla a posição do conteúdo.
 
-Os autores devem estar cientes de que o bloco de conteúdo pode ser renderizado em vários tamanhos e posições relativas. O texto do conteúdo não deve usar direções relativas para se referir a outros blocos de conteúdo.
+Como autor, o bloco de conteúdo pode ser renderizado em vários tamanhos e posições relativas. O texto do conteúdo não deve usar direções relativas para se referir a outros blocos de conteúdo.
 
-Se necessário, o componente deve fornecer qualquer biblioteca de CSS ou javascript necessária para o código HTML gerado. Use uma pasta da biblioteca do cliente dentro do componente para gerar os arquivos CSS e JS. Para expor os arquivos, [criar uma dependência ou incorporar a biblioteca](/help/sites-developing/clientlibs.md#creating-client-library-folders) em outra pasta da biblioteca do cliente abaixo da pasta /etc.
+Se necessário, o componente deve fornecer qualquer biblioteca de CSS ou JavaScript necessária para o código HTML gerado. Use uma pasta da biblioteca do cliente dentro do componente para que os arquivos CSS e JS sejam gerados. Para expor os arquivos, [criar uma dependência ou incorporar a biblioteca](/help/sites-developing/clientlibs.md#creating-client-library-folders) em outra pasta da biblioteca do cliente abaixo da pasta /etc.
 
 **Sub-grades**
 
 Se o componente contiver vários blocos de conteúdo, adicione os blocos de conteúdo dentro de uma linha para estabelecer uma subgrade na página:
 
-* Use os mesmos nomes de classe do componente de página contêiner para expressar elementos div como linhas e blocos de conteúdo.
+* Use os mesmos nomes de classe do componente de página contêiner para que você possa expressar elementos div como linhas e blocos de conteúdo.
 * Para substituir o comportamento que o CSS do design da página implementa, use um nome de segunda classe para o elemento div da linha e forneça o CSS associado em uma pasta da biblioteca do cliente.
 
 Por exemplo, a variável `/apps/geometrixx-media/components/2-col-article-summary` O componente gera duas colunas de conteúdo. O HTML gerado tem a seguinte estrutura:
@@ -851,16 +851,16 @@ As grades de fluxo permitem que os layouts de página se adaptem às dimensões 
 
 Com a tecnologia HTML5, você pode implementar a grade e manipulá-la para adaptar layouts de página a diferentes tamanhos de visor:
 
-* HTML `div` Os elementos contêm blocos de conteúdo que abrangem um determinado número de colunas.
-* Um ou mais desses elementos div compõem uma linha quando compartilham um elemento pai comum.
+* HTML `div` Os elementos contêm blocos de conteúdo que abrangem algumas colunas.
+* Um ou mais desses elementos div compõem uma linha quando compartilham um elemento div pai comum.
 
 ### Uso de larguras discretas {#using-discrete-widths}
 
-Para cada faixa de larguras de visor que você está direcionando, use uma largura de página estática e blocos de conteúdo de largura constante. Ao redimensionar manualmente uma janela do navegador, as alterações no tamanho do conteúdo ocorrem em larguras de janela discretas (também conhecidas como pontos de interrupção). Consequentemente, os designs de página são mais seguidos, maximizando a experiência do usuário.
+Para cada faixa de larguras de visor que você está direcionando, use uma largura de página estática e blocos de conteúdo de largura constante. Ao redimensionar manualmente uma janela do navegador, as alterações no tamanho do conteúdo ocorrem em larguras de janela discretas (também conhecidas como pontos de interrupção). Portanto, os designs de página são mais seguidos, maximizando a experiência do usuário.
 
 #### Dimensionamento da grade {#scaling-the-grid}
 
-Use grades para dimensionar blocos de conteúdo para adaptar-se a diferentes tamanhos de visor. Os blocos de conteúdo abrangem um número específico de colunas. À medida que as larguras de coluna aumentam ou diminuem para se ajustarem a diferentes tamanhos de visor, a largura dos blocos de conteúdo aumenta ou diminui de acordo. O dimensionamento pode suportar visores de grande e médio porte que são amplos o suficiente para acomodar o posicionamento lado a lado dos blocos de conteúdo.
+Use grades para dimensionar blocos de conteúdo para adaptar-se a diferentes tamanhos de visor. Os blocos de conteúdo abrangem um número específico de colunas. À medida que as larguras de coluna aumentam ou diminuem para se ajustarem a diferentes tamanhos de visor, as larguras dos blocos de conteúdo aumentam ou diminuem de acordo. O dimensionamento pode suportar visores de grande e médio porte que são amplos o suficiente para acomodar o posicionamento lado a lado dos blocos de conteúdo.
 
 ![](do-not-localize/chlimage_1-1a.png)
 
@@ -872,11 +872,11 @@ O tamanho dos blocos de conteúdo pode ser restrito por uma largura mínima, al�
 
 ### Criação da grade {#designing-the-grid}
 
-Determine as colunas e linhas necessárias para posicionar os blocos de conteúdo nas páginas. Os layouts de página determinam o número de colunas e linhas que abrangem a grade.
+Determine as colunas e linhas que devem ser posicionadas nos blocos de conteúdo nas páginas. Os layouts de página determinam o número de colunas e linhas que abrangem a grade.
 
 **Número de colunas**
 
-Inclua colunas suficientes para posicionar horizontalmente os blocos de conteúdo em todos os layouts, para todos os tamanhos das janelas de visualização. Você deve usar mais colunas do que o necessário para acomodar designs de página futuros.
+Inclua colunas suficientes para posicionar horizontalmente os blocos de conteúdo em todos os layouts, para todos os tamanhos das janelas de visualização. Use mais colunas do que o necessário para acomodar designs de página futuros.
 
 **Conteúdo da linha**
 
@@ -887,7 +887,7 @@ Use linhas para controlar o posicionamento vertical dos blocos de conteúdo. Det
 
 ### Implementações de grade {#grid-implementations}
 
-Crie classes e estilos de CSS para controlar o layout dos blocos de conteúdo em uma página. Os designs de página geralmente se baseiam no tamanho e na posição relativa dos blocos de conteúdo no visor. A janela de visualização determina o tamanho real dos blocos de conteúdo. Seu CSS precisa levar em conta os tamanhos relativo e absoluto. Você pode implementar uma grade fluida usando três tipos de classes CSS:
+Crie classes e estilos de CSS para controlar o layout dos blocos de conteúdo em uma página. Os designs de página geralmente se baseiam no tamanho e na posição relativa dos blocos de conteúdo no visor. A janela de visualização determina o tamanho real dos blocos de conteúdo. Seu CSS deve levar em conta os tamanhos relativo e absoluto. Você pode implementar uma grade fluida usando três tipos de classes CSS:
 
 * Uma classe para um `div` elemento que é um contêiner para todas as linhas. Essa classe define a largura absoluta da grade.
 * Uma classe para `div` elementos que representam uma linha. Essa classe controla o posicionamento horizontal ou vertical dos blocos de conteúdo que ela contém.
@@ -897,9 +897,9 @@ As larguras do visor direcionadas (e as consultas de mídia associadas) demarcam
 
 #### Larguras dos blocos de conteúdo {#widths-of-content-blocks}
 
-Geralmente, a variável `width` o estilo das classes de bloco de conteúdo é baseado nas seguintes características da página e da grade:
+Geralmente, a variável `width` os estilos de classes de bloco de conteúdo são baseados nas seguintes características da página e da grade:
 
-* A largura absoluta da página que você está usando para cada tamanho de visor direcionado. Esses são valores conhecidos.
+* A largura absoluta da página que você está usando para cada tamanho de visor direcionado. Valores conhecidos.
 * A largura absoluta das colunas de grade para cada largura de página. Esses valores são determinados.
 * A largura relativa de cada coluna como uma porcentagem da largura total da página. Esses valores são calculados.
 
@@ -927,7 +927,7 @@ Use o seguinte algoritmo como ponto de partida para desenvolver as classes de el
 
 1. Defina um nome de classe para o elemento div que contenha todas as linhas, por exemplo `content.`
 1. Defina uma classe CSS para elementos div que representem linhas, como `row-fluid`.
-1. Defina nomes de classe para elementos de bloco de conteúdo. Uma classe é necessária para todas as larguras possíveis, em termos de extensões de coluna. Por exemplo, use a variável `span3` classe para `div` elementos que abrangem 3 colunas, use `span4` classes para extensões de 4 colunas. Defina quantas classes houver colunas em sua grade.
+1. Defina nomes de classe para elementos de bloco de conteúdo. Uma classe é necessária para todas as larguras possíveis, em termos de extensões de coluna. Por exemplo, use a variável `span3` classe para `div` elementos que abrangem três colunas, use `span4` classes para extensões de quatro colunas. Defina quantas classes houver colunas em sua grade.
 
 1. Para cada tamanho do visor que você está direcionando, adicione a consulta de mídia correspondente ao arquivo CSS. Adicione os seguintes itens em cada query de mídia:
 
@@ -945,7 +945,7 @@ Use o seguinte algoritmo como ponto de partida para desenvolver as classes de el
 
 #### Posicionamento de blocos de conteúdo em linhas {#positioning-content-blocks-in-rows}
 
-Use o estilo flutuante do `.row-fluid` classe para controlar se os blocos de conteúdo em uma linha são organizados horizontal ou verticalmente.
+Use o estilo flutuante do `.row-fluid` para que seja possível controlar se os blocos de conteúdo em uma linha estão organizados horizontal ou verticalmente.
 
 * O `float:left` ou `float:right` style causa a distribuição horizontal de elementos secundários (blocos de conteúdo).
 
