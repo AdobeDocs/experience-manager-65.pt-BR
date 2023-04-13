@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: f23adcf200b625e2ab2a766460c41fd7e38fae83
+source-git-commit: 41752e40f2bceae98d4a9ff8bf130476339fe324
 workflow-type: tm+mt
-source-wordcount: '2986'
+source-wordcount: '3025'
 ht-degree: 1%
 
 ---
@@ -396,7 +396,17 @@ Por padrão, o AEM armazena metadados do sistema, como `jcr:createdBy` ou `jcr:l
 
 Como todos os dados do repositório, essas propriedades são mediadas pela pilha de autorização do Oak. O seu acesso deve ser restringido de acordo com o princípio do menor privilégio.
 
-Para dar suporte a isso, o Adobe fornece um pacote de proteção de permissão como base para os clientes se desenvolverem. Funciona instalando uma entrada de controle de acesso &quot;negar&quot; na raiz do repositório, restringindo o acesso anônimo às propriedades do sistema comumente usadas. O pacote está disponível para download [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) e pode ser instalado em todas as versões compatíveis do AEM. Consulte as notas de versão para obter mais informações.
+Para dar suporte a isso, o Adobe fornece um pacote de proteção de permissão como base para os clientes se desenvolverem. Funciona instalando uma entrada de controle de acesso &quot;negar&quot; na raiz do repositório, restringindo o acesso anônimo às propriedades do sistema comumente usadas. O pacote está disponível para download [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) e pode ser instalado em todas as versões compatíveis do AEM.
+
+Para ilustrar as alterações, podemos comparar as propriedades do nó que podem ser exibidas anonimamente antes de instalar o pacote:
+
+![Antes de instalar o pacote](/help/sites-administering/assets/before_resized.png)
+
+com os que podem ser visualizados após a instalação do pacote, em que `jcr:createdBy` e `jcr:lastModifiedBy` não estão visíveis:
+
+![Após instalar o pacote](/help/sites-administering/assets/after_resized.png)
+
+Para obter mais informações, consulte as notas de versão do pacote.
 
 ### Prevenção contra clickjacking {#prevent-clickjacking}
 
