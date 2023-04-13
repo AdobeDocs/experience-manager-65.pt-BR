@@ -12,10 +12,10 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 70c2d7c910f61169869aab9fdcbff4c4564ea9bd
+source-git-commit: e44480535ea7058dc41fc747351446b670d03b7f
 workflow-type: tm+mt
-source-wordcount: '2818'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -389,6 +389,14 @@ Embora não seja recomendado, você pode desativá-lo caso precise da implementa
 >[!NOTE]
 >
 >Para obter mais informações, consulte a documentação do Oak em [Geração de Nome de Nó Autorizável](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
+
+**Pacote Anônimo de Otimização de Permissões**
+
+Por padrão, o AEM armazena metadados do sistema, como `jcr:createdBy` ou `jcr:lastModifiedBy` como propriedades do nó, ao lado do conteúdo regular, no repositório. Dependendo da configuração e da configuração do controle de acesso, em alguns casos isso pode levar à exposição de informações de identificação pessoal (PII), por exemplo, quando esses nós são renderizados como JSON bruto ou XML.
+
+Como todos os dados do repositório, essas propriedades são mediadas pela pilha de autorização do Oak. O seu acesso deve ser restringido de acordo com o princípio do menor privilégio.
+
+Para dar suporte a isso, o Adobe fornece um pacote de proteção de permissão como base para os clientes se desenvolverem. Funciona instalando uma entrada de controle de acesso &quot;negar&quot; na raiz do repositório, restringindo o acesso anônimo às propriedades do sistema comumente usadas. O pacote está disponível para download [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) e pode ser instalado em todas as versões compatíveis do AEM. Consulte as notas de versão para obter mais informações.
 
 ### Prevenção contra clickjacking {#prevent-clickjacking}
 
