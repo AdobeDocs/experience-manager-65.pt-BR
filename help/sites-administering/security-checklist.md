@@ -12,10 +12,10 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: e44480535ea7058dc41fc747351446b670d03b7f
+source-git-commit: f23adcf200b625e2ab2a766460c41fd7e38fae83
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2986'
+ht-degree: 1%
 
 ---
 
@@ -390,7 +390,7 @@ Embora não seja recomendado, você pode desativá-lo caso precise da implementa
 >
 >Para obter mais informações, consulte a documentação do Oak em [Geração de Nome de Nó Autorizável](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
 
-**Pacote Anônimo de Otimização de Permissões**
+### Pacote Anônimo de Otimização de Permissões {#anonymous-permission-hardening-package}
 
 Por padrão, o AEM armazena metadados do sistema, como `jcr:createdBy` ou `jcr:lastModifiedBy` como propriedades do nó, ao lado do conteúdo regular, no repositório. Dependendo da configuração e da configuração do controle de acesso, em alguns casos isso pode levar à exposição de informações de identificação pessoal (PII), por exemplo, quando esses nós são renderizados como JSON bruto ou XML.
 
