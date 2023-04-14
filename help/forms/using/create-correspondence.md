@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 1a6881b29024799c44b2068ea82750c983a012e5
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '3867'
+source-wordcount: '3855'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Selecione a carta para pré-visualizar usando as seguintes etapas:
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre como alternar entre o modo HTML ou PDF de representação de visualização de letra, consulte [Alterar modo de representação da letra](#changerenditionmode). Para obter mais informações sobre o suporte ao PDF no Gerenciamento de correspondência e AEM, consulte [Descontinuação dos plug-ins do navegador NPAPI e seu impacto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) e [PDF forms para HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html).
+   >Para obter mais informações sobre como alternar entre o modo HTML ou PDF de representação de visualização de letra, consulte [Alterar modo de representação da letra](#changerenditionmode). Para obter mais informações sobre o suporte ao PDF no Gerenciamento de correspondência e AEM, consulte [Descontinuação dos plug-ins do navegador NPAPI e seu impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### Inserir dados {#enterdata}
 
@@ -379,7 +379,7 @@ Para obter mais informações sobre o suporte a scripts em formulários HTML5, c
 
 Por padrão, a interface do usuário Criar correspondência usa o HTML ou formulários móveis para renderizar a visualização da carta. A visualização de formulários móveis não apresenta problemas de renderização em nenhum navegador, pois usa o plug-in nativo do navegador e não requer plug-ins adicionais. Você pode alterar o modo de visualização de letra para PDF. No entanto, as restrições do navegador podem criar problemas para diferentes recursos da visualização interativa do PDF da carta.
 
-Para obter mais informações sobre a compatibilidade do navegador com a visualização de carta, consulte [Descontinuação dos plug-ins do navegador NPAPI e seu impacto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+Para obter mais informações sobre a compatibilidade do navegador com a visualização de carta, consulte [Descontinuação dos plug-ins do navegador NPAPI e seu impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Para alterar o modo de visualização da carta, conclua as seguintes etapas:
 

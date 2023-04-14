@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '4628'
+source-wordcount: '4599'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Quando esse processo é chamado, ele executa as seguintes ações:
 
 [Criação de aplicativos Flash Builder que executam autenticação SSO usando tokens HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
 
-Para obter informações sobre como exibir os dados do processo em um controle de gráfico do Flex, consulte [Exibição de dados de processo do AEM Forms em gráficos do Flex](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html).
+<!-- For information on how to display process data in a Flex graph control, see [Displaying AEM Forms process data in Flex graphs](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ Para obter informações sobre como exibir os dados do processo em um controle d
 
 ## Inclusão do arquivo de biblioteca Flex do AEM Forms {#including-the-aem-forms-flex-library-file}
 
-Para chamar programaticamente os processos do AEM Forms usando o Remoting, adicione o arquivo adobe-remoting-provider.swc ao caminho de classe do seu projeto Flex. Esse arquivo SWC está localizado no seguinte local:
+Para invocar de forma programática os processos do AEM Forms usando o Remoting, adicione o arquivo adobe-remoting-provider.swc ao caminho de classe do seu projeto Flex. Esse arquivo SWC está localizado no seguinte local:
 
 * *&lt;install_directory>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
@@ -98,9 +98,9 @@ Para chamar programaticamente os processos do AEM Forms usando o Remoting, adici
 
 ## Manuseio de documentos com Remoting {#handling-documents-with-remoting}
 
-Um dos tipos de Java não primitivos mais importantes usados no AEM Forms é o `com.adobe.idp.Document` classe . Um documento geralmente é necessário para chamar uma operação do AEM Forms. É principalmente um documento PDF, mas pode conter outros tipos de documento, como SWF, HTML, XML ou um arquivo DOC. (Consulte [Passar dados para serviços da AEM Forms usando a API do Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+Um dos mais importantes tipos de Java™ não primitivo usados no AEM Forms é o `com.adobe.idp.Document` classe . Um documento geralmente é necessário para chamar uma operação do AEM Forms. É principalmente um documento PDF, mas pode conter outros tipos de documento, como SWF, HTML, XML ou um arquivo DOC. (Consulte [Passar dados para serviços da AEM Forms usando a API do Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
-Um aplicativo cliente criado com o Flex não pode solicitar diretamente um documento. Por exemplo, não é possível iniciar o Adobe Reader para solicitar um URL que produza um arquivo PDF. Solicitações para tipos de documentos, como documentos do PDF e do Microsoft Word, retornam um resultado que é um URL. É responsabilidade do cliente exibir o conteúdo do URL. O serviço Gerenciamento de documentos ajuda a gerar a URL e as informações de tipo de conteúdo. As solicitações de documentos XML retornam o documento XML completo no resultado.
+Um aplicativo cliente criado com o Flex não pode solicitar diretamente um documento. Por exemplo, não é possível iniciar o Adobe Reader para solicitar um URL que produza um arquivo PDF. Solicitações para tipos de documentos, como documentos do PDF e Microsoft® Word, retornam um resultado que é um URL. É responsabilidade do cliente exibir o conteúdo do URL. O serviço Gerenciamento de documentos ajuda a gerar a URL e as informações de tipo de conteúdo. As solicitações de documentos XML retornam o documento XML completo no resultado.
 
 ### Enviar um documento como um parâmetro de entrada {#passing-a-document-as-an-input-parameter}
 
@@ -127,7 +127,7 @@ docRef.url = "https://companyserver:8080/DocumentManager/116/7855"; ...
 ```java
 ... var docRef: DocumentReference = new DocumentReference(); 
 docRef.referenceType = DocumentReference.REF_TYPE_INLINE; 
-docRef.text = "Text for my document";  // Optionally, you can override the server’s default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
+docRef.text = "Text for my document";  // Optionally, you can override the server's default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
 ```
 
 * Quando o documento não estiver no servidor, use o servlet de upload Remoto para carregar um documento no AEM Forms. A novidade no AEM Forms é a capacidade de carregar documentos seguros. Ao fazer upload de um documento seguro, é necessário usar um usuário que tenha a variável *Usuário do Aplicativo de Upload de Documento* função. Sem essa função, o usuário não pode fazer upload de um documento seguro. É recomendável usar o logon único para carregar um documento seguro. (Consulte [Passar documentos seguros para invocar processos usando Remota](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
@@ -286,7 +286,7 @@ Você pode invocar o `MyApplication/EncryptDocument` execute as seguintes etapas
 
 1. Crie um `mx:RemoteObject` por meio do ActionScript ou MXML. Consulte Criação de uma instância mx:RemoteObject .
 1. Configure um `ChannelSet` instância para se comunicar com o AEM Forms e associá-la à `mx:RemoteObject` instância. Consulte Criar um canal no AEM Forms.
-1. Chame o do ChannelSet `login` para o método do serviço `setCredentials` para especificar o valor do identificador de usuário e a senha. (Consulte [Uso de logon único](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
+1. Chame o do ChannelSet `login` ou o método do serviço `setCredentials` para especificar o valor do identificador de usuário e a senha. (Consulte [Uso de logon único](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
 1. Preencha um `mx.rpc.livecycle.DocumentReference` instância com um documento PDF não seguro a ser enviado para o `MyApplication/EncryptDocument` processo. (Consulte [Enviar um documento como um parâmetro de entrada](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
 1. Criptografe o documento do PDF chamando a função `mx:RemoteObject` da instância `invoke` método . Passe o `Object` que contém o parâmetro de entrada (que é o documento PDF não seguro). Consulte Passagem de valores de entrada.
 1. Recupere o documento PDF criptografado por senha retornado do processo. Consulte Tratamento de valores de retorno.
@@ -732,7 +732,7 @@ se o AEM Forms estiver configurado para permitir que somente documentos protegid
       // Called once the file is completely uploaded.
       private function completeHandler(event:DataEvent):void {
  
-        // Set the docRef’s url and referenceType parameters
+        // Set the docRef's url and referenceType parameters
         docRef.url = event.data as String;
         docRef.referenceType=DocumentReference.REF_TYPE_URL;
         executeInvokeProcess();
@@ -977,7 +977,7 @@ A classe Customer ActionScript pertence a um pacote chamado customer. É recomen
 
 ### Início rápido: Chamar o serviço personalizado do cliente usando Remoção {#quick-start-invoking-the-customer-custom-service-using-remoting}
 
-O exemplo de código a seguir chama o serviço de Cliente e cria um novo cliente. Ao executar esse exemplo de código, certifique-se de preencher todas as caixas de texto. Além disso, certifique-se de criar o arquivo Customer.as que mapeia para o `com.adobe.livecycle.sample.customer.Customer`.
+O exemplo de código a seguir chama o serviço de Cliente e cria um cliente. Ao executar esse exemplo de código, certifique-se de preencher todas as caixas de texto. Além disso, certifique-se de criar o arquivo Customer.as que mapeia para o `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
 Antes de executar esse início rápido, é necessário criar e implantar o componente personalizado do Banco.

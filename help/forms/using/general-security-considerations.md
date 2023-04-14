@@ -11,9 +11,9 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1059'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Para obter informações de segurança sobre sistemas operacionais compatíveis 
   </tr>
   <tr>
    <td>Oracle Linux® 7 Update 3</td>
-   <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Guia de segurança para a versão 7</a><br /> </td>
+   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">Guia de segurança para a versão 7</a><br /> </td>
   </tr>
   <tr>
    <td>CentOS 7<sup> </sup></td>
@@ -212,7 +212,7 @@ O JBoss® Application Server usa 8080 como a porta HTTP padrão. O JBoss® tamb�
 
 1. Abra o seguinte arquivo para edição:
 
-   Instalação de um único servidor: [Raiz JBoss®]/standalone/configuration/standalone.xml
+   Instalação de servidor único: [Raiz JBoss®]/standalone/configuration/standalone.xml
 
    Instalações de cluster: [Raiz JBoss®]/domain/configuration/domain.xml
 
@@ -245,8 +245,8 @@ O lc_[banco de dados]O arquivo .xml não deve conter senha no formato de texto l
 >
 >O instalador turnkey do AEM Forms em JEE JBoss® criptografa a senha do banco de dados.
 
-O IBM® WebSphere® Application Server e o Oracle WebLogic Server podem criptografar senhas de fonte de dados por padrão. No entanto, confirme com a documentação do servidor de aplicativos para garantir que isso aconteça.
+O IBM® WebSphere® Application Server e o Oracle WebLogic Server podem criptografar senhas de fonte de dados por padrão. No entanto, você deve confirmar com a documentação do servidor de aplicativos para garantir que isso aconteça.
 
 ### Proteção da chave privada armazenada no Armazenamento de confiança {#protecting-the-private-key-stored-in-trust-store}
 
-As chaves privadas ou credenciais importadas no Armazenamento de Confiança são armazenadas no AEM Forms no banco de dados JEE. Tome as precauções apropriadas para proteger o banco de dados e restringir o acesso somente a administradores designados.
+As chaves privadas ou credenciais importadas no Armazenamento de Confiança são armazenadas no AEM Forms no banco de dados JEE. Para proteger o banco de dados e restringir o acesso apenas a administradores designados, tome as precauções apropriadas.
