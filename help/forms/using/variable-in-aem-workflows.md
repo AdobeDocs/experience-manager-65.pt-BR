@@ -1,7 +1,7 @@
 ---
 title: Variáveis em workflows do AEM Forms
 seo-title: Variables in AEM Forms Workflows
-description: Crie uma variável, defina um valor para a variável e use-a nas etapas do fluxo de trabalho do AEM Forms.
+description: Crie uma variável, defina um valor para a variável e use-a nas etapas do Fluxo de trabalho do AEM Forms.
 seo-description: Create a variable, set a value for the variable, and use it in AEM Forms workflow steps.
 uuid: 634a75c4-4899-478f-9e5d-a870f5efa583
 contentOwner: khsingh
@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 3d0eb55eb35fcf5da1212b8be7c0aeee11307bb6
+source-git-commit: 936b636819eaef595fcdf9f1f3446d4ac0c28b2f
 workflow-type: tm+mt
 source-wordcount: '2208'
 ht-degree: 0%
@@ -25,9 +25,11 @@ Em AEM modelos de fluxo de trabalho, você pode:
 
 * [Criar uma variável](../../forms/using/variable-in-aem-workflows.md#create-a-variable) de um tipo de dados com base no tipo de informação que você deseja armazenar nele.
 * [Defina um valor para a variável](../../forms/using/variable-in-aem-workflows.md#set-a-variable) usando a etapa de fluxo de trabalho Definir variável .
-* [Usar a variável](../../forms/using/variable-in-aem-workflows.md#use-a-variable) em todas as etapas do fluxo de trabalho do AEM Forms para recuperar o valor armazenado e nas etapas OR Split e Goto para definir uma expressão de roteamento.
+* [Usar a variável](../../forms/using/variable-in-aem-workflows.md#use-a-variable) em todas as etapas do AEM Forms Workflow para recuperar o valor armazenado e nas etapas OR Split e Goto para definir uma expressão de roteamento.
 
 O vídeo a seguir demonstra como você pode criar, definir e usar variáveis em AEM modelos de fluxo de trabalho:
+
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
 
@@ -44,7 +46,7 @@ Você cria variáveis usando a seção Variáveis disponível no sidekick do mod
 >
 >Os fluxos de trabalho suportam apenas o formato ISO8601 para variáveis do tipo Data .
 
-Você precisa [Pacote do complemento AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) para tipos de dados Documento e Modelo de dados de formulário.  Use o tipo de dados ArrayList para criar coleções de variáveis. É possível criar uma variável ArrayList para todos os tipos de dados primitivos e complexos. Por exemplo, crie uma variável ArrayList e selecione String como subtipo para armazenar vários valores de string usando a variável .
+Você precisa [Pacote do complemento AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) para tipos de dados Documento e Modelo de dados de formulário.  Use o tipo de dados ArrayList para criar coleções de variáveis. É possível criar uma variável ArrayList para todos os tipos de dados primitivos e complexos. Por exemplo, crie uma variável ArrayList e selecione String como subtipo para armazenar vários valores de string usando a variável .
 
 Execute as seguintes etapas para criar uma variável:
 
@@ -115,6 +117,8 @@ Use uma expressão para calcular a soma das variáveis e armazenar o resultado e
 
 Neste exemplo, use o editor de expressão para definir uma expressão para calcular a soma de **custo dos ativos** e **valor do saldo** e armazene o resultado em **valor total** variável.
 
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
+
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## Usar editor de expressão {#use-expression-editor}
@@ -150,7 +154,7 @@ Você pode usar variáveis para recuperar entradas e saídas ou salvar o resulta
 
 ### Etapas de fluxo de trabalho com suporte para variáveis {#workflow-steps-with-support-for-variables}
 
-A etapa Ir para ou Split e todas as etapas do fluxo de trabalho do AEM Forms suportam variáveis.
+A etapa Ir para ou Split e todas as etapas do Fluxo de trabalho do AEM Forms suportam variáveis.
 
 #### OU Split step {#or-split-step}
 
@@ -161,6 +165,8 @@ Você pode definir uma expressão de roteamento para uma ramificação usando um
 Você pode usar variáveis para definir a expressão de roteamento usando o editor de expressão. Para obter mais informações sobre o uso de expressões de roteamento para a etapa OU Dividir , consulte [OU Split step](/help/sites-developing/workflows-step-ref.md#or-split).
 
 Neste exemplo, antes de definir a expressão de roteamento, use [exemplo 2](../../forms/using/variable-in-aem-workflows.md#example2) para definir o valor da variável **valor total** variável. A Ramificação 1 estará ativa se o valor da variável **valor total** for maior que 50000. Da mesma forma, é possível definir uma regra para tornar a Ramificação 2 ativa se o valor da variável **valor total** é menor que 50000.
+
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
@@ -202,7 +208,7 @@ Use as seguintes APIs no script ECMA para recuperar valores para variáveis exis
 | Modelo de dados do formulário | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Você precisa [Pacote do complemento AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) para tipos de dados de variáveis Document and Form Data Model.
+Você precisa [Pacote do complemento AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) para tipos de dados de variáveis Document and Form Data Model.
 
 **Exemplo**
 
@@ -271,7 +277,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### Armazenar dados confidenciais do usuário fora do JCR usando variáveis de fluxo de trabalho {#jcr-independent-persistance}
 
-Os dados processados por meio do fluxo de trabalho de formulários podem conter dados confidenciais do usuário, como Informações pessoais identificáveis e Informações pessoais confidenciais. As empresas podem optar por armazenar os dados, que são processados por várias etapas do fluxo de trabalho (e transmitidos usando variáveis de fluxo de trabalho), do armazenamento JCR em um armazenamento de dados externo pertencente e gerenciado por elas. Para saber mais sobre a persistência de dados de workflow em um armazenamento externo, consulte [Uso de variáveis de fluxo de trabalho para armazenamentos de dados de propriedade do cliente](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+Os dados processados usando o Forms Workflow podem conter dados confidenciais do usuário, como Informações pessoais identificáveis e Informações pessoais confidenciais. As empresas podem optar por armazenar os dados, que são processados por várias etapas do fluxo de trabalho (e transmitidos usando variáveis de fluxo de trabalho), do armazenamento JCR em um armazenamento de dados externo pertencente e gerenciado por elas. Para saber mais sobre a persistência de dados de workflow em um armazenamento externo, consulte [Uso de variáveis de fluxo de trabalho para armazenamentos de dados de propriedade do cliente](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe Experience Manager] fornece API de fluxo de trabalho [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) para armazenar variáveis de fluxo de trabalho em armazenamentos de blob externos do Azure. Para obter detalhes sobre o uso da API, consulte [Use variáveis de fluxo de trabalho para parametrizar dados confidenciais e armazenar em armazenamentos de dados externos](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Editar uma variável {#edit-a-variable}
@@ -292,4 +298,4 @@ Execute as seguintes etapas para excluir uma variável:
 
 ## Referências {#references}
 
-Para obter mais exemplos sobre como usar variáveis em etapas de fluxo de trabalho do AEM Forms, consulte [Variáveis em workflows AEM](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).
+Para obter mais exemplos sobre como usar variáveis nas etapas do fluxo de trabalho do AEM Forms, consulte [Variáveis em workflows AEM](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).

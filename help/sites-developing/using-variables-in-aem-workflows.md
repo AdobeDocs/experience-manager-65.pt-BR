@@ -1,8 +1,6 @@
 ---
 title: Variáveis em workflows AEM
-seo-title: Variables in AEM Workflows
 description: Crie uma variável, defina um valor para a variável e use-a em OU Dividir e Ir para AEM etapas do fluxo de trabalho.
-seo-description: Create a variable, set a value for the variable, and use it in OR Split and  Goto AEM workflow steps.
 uuid: cc62ff11-51d4-4db4-9c6d-5dc2caa1da52
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -10,9 +8,9 @@ content-type: reference
 discoiquuid: bbb9936e-ecd2-44b3-b4ae-dd62a3160641
 docset: aem65
 exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 936b636819eaef595fcdf9f1f3446d4ac0c28b2f
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2048'
 ht-degree: 0%
 
 ---
@@ -25,28 +23,30 @@ Em AEM modelos de fluxo de trabalho, você pode:
 
 * [Criar uma variável](/help/sites-developing/using-variables-in-aem-workflows.md#create-a-variable) de um tipo de dados com base no tipo de informação que você deseja armazenar nele.
 * [Defina um valor para a variável](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable) usando a etapa de fluxo de trabalho Definir variável .
-* [Usar a variável](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) em OR Split e Goto AEM etapas do fluxo de trabalho para definir uma expressão para tomar decisões de roteamento. Também é possível usar variáveis em todas as etapas do fluxo de trabalho do AEM Forms.
+* [Usar a variável](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) em OU Dividir e Ir para AEM etapas do fluxo de trabalho, para que você possa definir uma expressão para tomar decisões de roteamento. Também é possível usar variáveis em todas as etapas do fluxo de trabalho do AEM Forms.
 
 O vídeo a seguir demonstra como você pode criar, definir e usar variáveis em AEM modelos de fluxo de trabalho:
 
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
+
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
 
-As variáveis são uma extensão do [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface. Você pode usar [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) no ECMAScript para acessar metadados salvos usando variáveis.
+As variáveis são uma extensão do [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) interface. Você pode usar [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) no ECMAScript para acessar metadados salvos usando variáveis.
 
 ## Criar uma variável {#create-a-variable}
 
 Você cria variáveis usando a seção Variáveis disponível no sidekick do modelo de fluxo de trabalho. AEM variáveis de fluxo de trabalho são compatíveis com os seguintes tipos de dados:
 
 * **Tipos de dados primitivos**: Longo, duplo, booleano, data e string
-* **Tipos de dados complexos**: [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html) e [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)
+* **Tipos de dados complexos**: [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html) e [JSON](https://www.javadoc.io/doc/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)
 
 >[!NOTE]
 >
 >Os fluxos de trabalho suportam apenas o formato ISO8601 para variáveis do tipo Data .
 
-Para obter tipos de dados complexos adicionais disponíveis nos fluxos de trabalho do AEM Forms, consulte [Variáveis em workflows do AEM Forms](/help/forms/using/variable-in-aem-workflows.md).  Use o tipo de dados ArrayList para criar coleções de variáveis. É possível criar uma variável ArrayList para todos os tipos de dados primitivos e complexos. Por exemplo, crie uma variável ArrayList e selecione String como subtipo para armazenar vários valores de string usando a variável .
+Para obter tipos de dados complexos adicionais disponíveis nos fluxos de trabalho do AEM Forms, consulte [Variáveis em workflows do AEM Forms](/help/forms/using/variable-in-aem-workflows.md). Use o tipo de dados ArrayList para criar coleções de variáveis. É possível criar uma variável ArrayList para todos os tipos de dados primitivos e complexos. Por exemplo, crie uma variável ArrayList e selecione String como subtipo para armazenar vários valores de string usando a variável .
 
-Execute as seguintes etapas para criar uma variável:
+Para criar uma variável,
 
 1. Em uma instância AEM, navegue até Ferramentas > Fluxo de trabalho > Modelos.
 1. Toque **[!UICONTROL Criar]** e especifique o título e um nome opcional para o modelo de fluxo de trabalho. Selecione o modelo e toque em **[!UICONTROL Editar]**.
@@ -74,7 +74,7 @@ Ao criar variáveis, considere as seguintes práticas:
 
 Você pode usar a etapa Definir variável para definir o valor de uma variável e a ordem em que os valores são definidos. A variável é definida na ordem em que os mapeamentos de variável são listados na etapa Definir variável .
 
-As alterações nos valores da variável afetam apenas a instância do processo em que a alteração ocorre. Por exemplo, quando um workflow é iniciado e os dados variáveis são alterados, as alterações afetam somente essa instância do workflow. As alterações não afetam outras instâncias do fluxo de trabalho que foram iniciadas anteriormente ou são iniciadas subsequentemente.
+As alterações nos valores da variável afetam apenas a instância do processo em que a alteração ocorre. Por exemplo, quando um workflow é iniciado e os dados variáveis são alterados, as alterações afetam somente essa instância do workflow. As alterações não afetam outras instâncias do fluxo de trabalho que foram iniciadas anteriormente ou são iniciadas posteriormente.
 
 Dependendo do tipo de dados da variável, você pode usar as seguintes opções para definir o valor de uma variável:
 
@@ -89,19 +89,19 @@ Você também pode atualizar elementos específicos de uma variável do tipo JSO
 
 ### Adicionar mapeamento entre variáveis {#add-mapping-between-variables}
 
-Execute as seguintes etapas para adicionar o mapeamento entre as variáveis:
+Para adicionar o mapeamento entre as variáveis, faça o seguinte:
 
 1. Na página de edição do fluxo de trabalho, toque no ícone Etapas disponível no sidekick do modelo de fluxo de trabalho.
 1. Arraste e solte a **Definir variável** para acessar o editor de fluxo de trabalho, toque na etapa e selecione ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurar).
 1. Na caixa de diálogo Definir variável , selecione **[!UICONTROL Mapeamento]** > **[!UICONTROL Adicionar mapeamento]**.
 1. No **Variável de mapa** selecione a variável para armazenar dados, selecione o modo de mapeamento e especifique um valor a ser armazenado na variável . Os modos de mapeamento variam de acordo com o tipo de variável.
-1. Mapeie mais variáveis para fazer uma expressão significativa. Toque ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para salvar as alterações.
+1. Mapeie mais variáveis para que você possa fazer uma expressão significativa. Toque ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para salvar as alterações.
 
 ### Exemplo 1: Consulte uma variável XML para definir o valor de uma variável de string {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
-Selecione uma variável do tipo XML para armazenar um arquivo XML. Consulte a variável XML para definir o valor de uma variável de string para a propriedade disponível no arquivo XML. Use **Especificar XPATH para a variável XML** para definir a propriedade a ser armazenada na variável da string.
+Selecione uma variável do tipo XML que você deseja armazenar um arquivo XML. Consulte a variável XML para definir o valor de uma variável de string para a propriedade disponível no arquivo XML. Use **Especificar XPATH para a variável XML** para definir a propriedade a ser armazenada na variável da string.
 
-Neste exemplo, selecione um **formdata** Variável XML para armazenar a variável **cc-app.xml** arquivo. Consulte o **formdata** para definir o valor da variável **email address** variável de string para armazenar o valor da variável **emailAddress** propriedade disponível na **cc-app.xml** arquivo.
+Neste exemplo, selecione um **formdata** Variável XML para armazenar a variável **cc-app.xml** arquivo. Consulte o **formdata** para que você possa definir o valor para a variável **email address** variável de string para armazenar o valor da variável **emailAddress** propriedade disponível na **cc-app.xml** arquivo.
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "Definir valor de uma variável")
 
@@ -110,6 +110,8 @@ Neste exemplo, selecione um **formdata** Variável XML para armazenar a variáve
 Use uma expressão para calcular a soma das variáveis e armazenar o resultado em uma variável.
 
 Neste exemplo, use o editor de expressão para definir uma expressão para calcular a soma de **custo dos ativos** e **valor do saldo** e armazene o resultado em **valor total** variável.
+
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
@@ -121,7 +123,7 @@ Use o editor de expressão para:
 
 * Defina o valor das variáveis usando outras variáveis, números ou expressões matemáticas do fluxo de trabalho.
 * Use variáveis de fluxo de trabalho, string, número ou uma expressão em uma expressão matemática
-* Adicione condições para definir valores de variáveis.
+* Adicione condições para que você possa definir valores de variáveis.
 * Adicione operadores entre condições.
 
 ![Editor de expressão](assets/variables_expression_editor_new.png)
@@ -146,7 +148,7 @@ Você pode usar variáveis para recuperar entradas e saídas ou salvar o resulta
 
 ### Etapas de fluxo de trabalho com suporte para variáveis {#workflow-steps-with-support-for-variables}
 
-A etapa Ir para ou Split e todas as etapas do fluxo de trabalho do AEM Forms suportam variáveis.
+A etapa Ir para ou Split e todas as etapas do Fluxo de trabalho do AEM Forms suportam variáveis.
 
 #### OU Split step {#or-split-step}
 
@@ -158,6 +160,8 @@ Você pode usar variáveis para definir a expressão de roteamento usando o edit
 
 Neste exemplo, antes de definir a expressão de roteamento, use [exemplo 2](/help/sites-developing/using-variables-in-aem-workflows.md#example2) para definir o valor da variável **valor total** variável. A Ramificação 1 estará ativa se o valor da variável **valor total** for maior que 50000. Da mesma forma, é possível definir uma regra para tornar a Ramificação 2 ativa se o valor da variável **valor total** é menor que 50000.
 
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
+
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 Da mesma forma, selecione um caminho de script externo ou especifique o script ECMA para expressões de roteamento para avaliar a ramificação ativa. Toque **[!UICONTROL Renomear Ramificação]** para especificar um nome alternativo para a ramificação.
@@ -166,7 +170,7 @@ Para obter mais exemplos, consulte [Criar um modelo de fluxo de trabalho](/help/
 
 #### Etapa Ir para {#go-to-step}
 
-O **Etapa Ir para** permite especificar a próxima etapa no modelo de fluxo de trabalho a ser executado, dependendo do resultado de uma expressão de roteamento.
+O **Etapa Ir para** permite especificar a próxima etapa a ser executada no modelo de workflow, dependendo do resultado de uma expressão de roteamento.
 
 Semelhante à etapa OU Dividir , é possível definir a expressão de roteamento para a etapa Ir para usando uma definição de regra, um script ECMA ou um script externo.
 
@@ -184,11 +188,11 @@ Todas as etapas do fluxo de trabalho do AEM Forms suportam variáveis. Para obte
 
 ### Etapas de fluxo de trabalho sem suporte para variáveis {#workflow-steps-without-support-for-variables}
 
-Você pode usar [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) para acessar variáveis em etapas de fluxo de trabalho que não suportam variáveis.
+Você pode usar [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) para acessar variáveis em etapas de fluxo de trabalho que não suportam variáveis.
 
 #### Recuperar o valor da variável {#retrieve-the-variable-value}
 
-Use as seguintes APIs no script ECMA para recuperar valores para variáveis existentes com base no tipo de dados:
+Para recuperar valores para variáveis existentes com base no tipo de dados, use as seguintes APIs no script ECMA.
 
 | Tipo de dados da variável | API |
 |---|---|
@@ -208,7 +212,7 @@ workItem.getWorkflowData().getMetaDataMap().get(accname, Packages.java.lang.Stri
 
 #### Atualizar o valor da variável {#update-the-variable-value}
 
-Use a seguinte API no script ECMA para atualizar o valor de uma variável:
+Para atualizar o valor de uma variável, use a seguinte API no script ECMA.
 
 ```
 workItem.getWorkflowData().getMetaDataMap().put(variableName, value)
@@ -220,13 +224,13 @@ workItem.getWorkflowData().getMetaDataMap().put(variableName, value)
 workItem.getWorkflowData().getMetaDataMap().put(salary, 50000)
 ```
 
-atualiza o valor da variável **salário** para 50000.
+Atualiza o valor da variável **salário** para 50000.
 
 ### Definir variáveis para invocar workflows {#apiinvokeworkflow}
 
 Você pode usar uma API para definir variáveis e passá-las para chamar instâncias de fluxo de trabalho.
 
-[workflowSession.startWorkflow](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) O usa modelo, wfData e metaData como argumentos. Use o MetaDataMap para definir o valor da variável.
+[workflowSession.startWorkflow](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) O usa modelo, wfData e metaData como argumentos. Use o MetaDataMap para definir o valor da variável.
 
 Nessa API, a variável **variableName** estiver definida como **value** utilização de metaData.put(variableName, value);
 
@@ -253,7 +257,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 Antes de excluir a variável , remova todas as referências da variável do fluxo de trabalho. Certifique-se de que a variável não seja usada no workflow.
 
-Execute as seguintes etapas para excluir uma variável:
+Para excluir uma variável,
 
 1. Na página Editar fluxo de trabalho , toque no ícone Variáveis disponível no sidekick do modelo de fluxo de trabalho. A seção Variáveis no painel esquerdo exibe todas as variáveis existentes.
 1. Toque no ícone Excluir ao lado do nome da variável que você deseja excluir.
