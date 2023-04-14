@@ -11,9 +11,9 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1060'
 ht-degree: 1%
 
 ---
@@ -49,18 +49,18 @@ Para obter informações de segurança sobre sistemas operacionais compatíveis 
  <tbody>
   <tr>
    <td><p>IBM® AIX® 7.2</p> </td>
-   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">Benefícios de segurança do IBM AIX</a></p> </td>
+   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">Benefícios de segurança do IBM® AIX®</a></p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft Windows Server® 2016 </p> </td>
+   <td><p>Microsoft® Windows Server® 2016 </p> </td>
    <td><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Guia de segurança do Windows Server 2016</a></p> </td>
   </tr>
   <tr>
    <td><p>Red Hat® Linux® AP ou ES</p> </td>
-   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Guia de segurança Red Hat Enterprise Linux</a></p> </td>
+   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Guia de segurança Red Hat® Enterprise Linux®</a></p> </td>
   </tr>
   <tr>
-   <td><p>Sun Solaris 11</p> </td>
+   <td><p>Sun Solaris™ 11</p> </td>
    <td><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">Diretrizes de segurança e proteção</a></p> </td>
   </tr>
   <tr>
@@ -98,15 +98,15 @@ Para obter informações de segurança sobre servidores de aplicativos compatív
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p>Procure por Noções básicas sobre a segurança do WebLogic em <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
+   <td><p>Procure por Noções básicas sobre a segurança do WebLogic em <a href="https://docs.oracle.com/">https://docs.oracle.com/</a>.</p> </td>
   </tr>
   <tr>
-   <td><p>IBM WebSphere®</p> </td>
+   <td><p>IBM® WebSphere®</p> </td>
    <td><p><a href="https://www.ibm.com/developerworks/websphere/zones/was/security/" target="_blank">Proteção de aplicativos e seu ambiente</a></p> </td>
   </tr>
   <tr>
    <td><p>Red Hat® JBoss®</p> </td>
-   <td><p><a href="https://docs.jboss.org/author/display/AS7/Security+subsystem+configuration">Configuração do subsistema de segurança</a></p> </td>
+   <td><p><a href="https://docs.jboss.org/author/display/AS7/Security%20subsystem%20configuration.html">Configuração do subsistema de segurança</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -131,11 +131,11 @@ Para obter informações de segurança sobre bancos de dados compatíveis com o 
  </thead>
  <tbody>
   <tr>
-   <td><p>IBM DB2® 11.1</p> </td>
-   <td><p><a href="https://www-01.ibm.com/software/data/db2/library/">Biblioteca da família de produtos DB2</a></p> </td>
+   <td><p>IBM® DB2® 11.1</p> </td>
+   <td><p><a href="https://www-01.ibm.com/software/data/db2/library/">Biblioteca da família de produtos DB2®</a></p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft SQL Server 2016</p> </td>
+   <td><p>Microsoft® SQL Server 2016</p> </td>
    <td>Pesquise na Web por "SQL Server 2016: Segurança"</td>
   </tr>
   <tr>
@@ -160,7 +160,7 @@ Esta tabela descreve as portas padrão que precisam ser abertas durante o proces
  </thead>
  <tbody>
   <tr>
-   <td><p>JBoss</p> </td>
+   <td><p>JBoss®</p> </td>
    <td><p>8080</p> </td>
   </tr>
   <tr>
@@ -172,7 +172,7 @@ Esta tabela descreve as portas padrão que precisam ser abertas durante o proces
    <td><p>Definir pelo administrador durante a configuração</p> </td>
   </tr>
   <tr>
-   <td>&gt;<p>WebSphere</p> </td>
+   <td>&gt;<p>WebSphere®</p> </td>
    <td><p>9060, se a Segurança Global estiver ativada, o valor padrão da porta SSL será 9043.</p> <p>9080</p> </td>
   </tr>
   <tr>
@@ -192,7 +192,7 @@ Esta tabela descreve as portas padrão que precisam ser abertas durante o proces
    <td><p>1521</p> </td>
   </tr>
   <tr>
-   <td>&gt;<p>DB2</p> </td>
+   <td>&gt;<p>DB2®</p> </td>
    <td><p>50000</p> </td>
   </tr>
   <tr>
@@ -206,22 +206,22 @@ Esta tabela descreve as portas padrão que precisam ser abertas durante o proces
  </tbody>
 </table>
 
-### Configuração do JBoss para usar uma porta HTTP não padrão {#configuring-jboss-to-use-a-non-default-http-port}
+### Configuração do JBoss® para usar uma porta HTTP não padrão {#configuring-jboss-to-use-a-non-default-http-port}
 
-O JBoss Application Server usa 8080 como a porta HTTP padrão. O JBoss também tem portas pré-configuradas 8180, 8280 e 8380, que são comentadas no arquivo jboss-service.xml. Se você tiver um aplicativo em seu computador que já use essa porta, altere a porta que o AEM Forms no JEE usa seguindo estas etapas:
+O JBoss® Application Server usa 8080 como a porta HTTP padrão. O JBoss® também tem portas pré-configuradas 8180, 8280 e 8380, que são comentadas no arquivo jboss-service.xml. Se você tiver um aplicativo em seu computador que já use essa porta, altere a porta que o AEM Forms no JEE usa seguindo estas etapas:
 
 1. Abra o seguinte arquivo para edição:
 
-   Instalação de um único servidor: [Raiz do JBoss]/standalone/configuration/standalone.xml
+   Instalação de um único servidor: [Raiz JBoss®]/standalone/configuration/standalone.xml
 
-   Instalações de cluster: [Raiz do JBoss]/domain/configuration/domain.xml
+   Instalações de cluster: [Raiz JBoss®]/domain/configuration/domain.xml
 
-1. Alterar o valor de **porta** no **&lt;socket-binding>** para um número de porta personalizado. Por exemplo, o seguinte usa a porta 8090:
+1. Altere o valor de **porta** no **&lt;socket-binding>** para um número de porta personalizado. Por exemplo, o seguinte usa a porta 8090:
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. Salve e feche o arquivo.
-1. Reinicie o servidor de aplicativos JBoss.
+1. Reinicie o servidor de aplicativos JBoss®.
 
 ## AEM Forms em considerações de segurança do JEE {#aem-forms-on-jee-security-considerations}
 
@@ -243,9 +243,9 @@ O lc_[banco de dados]O arquivo .xml não deve conter senha no formato de texto l
 
 >[!NOTE]
 >
->O instalador turnkey do AEM Forms no JEE JBoss criptografa a senha do banco de dados.
+>O instalador turnkey do AEM Forms em JEE JBoss® criptografa a senha do banco de dados.
 
-O IBM WebSphere Application Server e o Oracle WebLogic Server podem criptografar senhas de fonte de dados por padrão. No entanto, confirme com a documentação do servidor de aplicativos para garantir que isso aconteça.
+O IBM® WebSphere® Application Server e o Oracle WebLogic Server podem criptografar senhas de fonte de dados por padrão. No entanto, confirme com a documentação do servidor de aplicativos para garantir que isso aconteça.
 
 ### Proteção da chave privada armazenada no Armazenamento de confiança {#protecting-the-private-key-stored-in-trust-store}
 
