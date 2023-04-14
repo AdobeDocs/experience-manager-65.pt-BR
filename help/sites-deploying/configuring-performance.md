@@ -1,8 +1,6 @@
 ---
 title: Otimização de desempenho
-seo-title: Performance Optimization
 description: Saiba como configurar certos aspectos do AEM para otimizar o desempenho.
-seo-description: Learn how to configure certain aspects of AEM to optimize performance.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +9,7 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
 source-wordcount: '6503'
 ht-degree: 12%
@@ -26,7 +24,7 @@ ht-degree: 12%
 >
 >Para obter mais informações sobre solução de problemas e correção de problemas de desempenho, consulte também a seção [Árvore de desempenho](/help/sites-deploying/performance-tree.md).
 >
->Além disso, você pode revisar um artigo da Base de conhecimento em [Dicas para ajuste de desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>Além disso, você pode revisar um artigo da Base de conhecimento em [Dicas para ajuste de desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR).
 
 Um problema importante é o tempo que seu site leva para responder às solicitações do visitante. Embora esse valor varie para cada solicitação, um valor médio de target pode ser definido. Uma vez que esse valor seja comprovadamente alcançável e sustentável, ele poderá ser usado para monitorar o desempenho do site e indicar o desenvolvimento de possíveis problemas.
 
@@ -43,7 +41,7 @@ Esse ambiente contém conteúdo que você disponibiliza para seus usuários. Nes
 >[!NOTE]
 >
 >* Após configurar para otimização de desempenho, siga os procedimentos em [Dia difícil](/help/sites-developing/tough-day.md) testar o ambiente sob carga pesada.
->* Consulte também [Dicas para melhorar o desempenho.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+>* Consulte também [Dicas para melhorar o desempenho.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR)
 
 
 ## Metodologia de Otimização de Desempenho {#performance-optimization-methodology}
@@ -102,12 +100,12 @@ Esse foco significa que o desenvolvedor que implementa a otimização deve ter u
 
 ## Diretrizes básicas de desempenho {#basic-performance-guidelines}
 
-Geralmente, mantenha suas solicitações html não armazenadas em cache para menos de 100 ms. Mais especificamente, os seguintes podem servir como diretriz:
+Geralmente, mantenha suas solicitações html não armazenadas em cache para menos de 100 milissegundos. Mais especificamente, os seguintes podem servir como diretriz:
 
-* 70% das solicitações de páginas devem ser respondidas em menos de 100 ms.
-* 25% das solicitações de páginas devem receber uma resposta dentro de 100 ms - 300 ms.
-* 4% das solicitações de páginas devem receber uma resposta dentro de 300 ms - 500 ms.
-* 1% das solicitações de páginas devem receber uma resposta dentro de 500 ms - 1000 ms.
+* 70% das solicitações de páginas devem ser respondidas em menos de 100 milissegundos.
+* 25% das solicitações de páginas devem receber uma resposta em 100 milissegundos - 300 milissegundos.
+* 4% das solicitações de páginas devem receber uma resposta em 300 milissegundos - 500 milissegundos.
+* 1% das solicitações de páginas devem receber uma resposta em 500 milissegundos - 1000 milissegundos.
 * Nenhuma página deve responder mais lentamente do que 1 segundo.
 
 Os números acima assumem as seguintes condições:
@@ -206,7 +204,7 @@ Determinados aspectos do AEM (e/ou do repositório subjacente) podem ser configu
 
 >[!NOTE]
 >
->Consulte [Otimização de desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>Consulte [Otimização de desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR).
 
 ### Indexação de Pesquisa {#search-indexing}
 
@@ -459,14 +457,12 @@ Todas as otimizações feitas devem ser testadas para garantir que elas tenham:
 * Não afetado pela funcionalidade
 * Foi verificado com os testes de carga antes de ser liberado
 
-Uma seleção de ferramentas está disponível para ajudá-lo com a geração de carga, monitoramento de desempenho e/ou análise de resultados:
+Uma seleção de ferramentas está disponível para ajudá-lo com a geração de carga, monitoramento de desempenho e análise de resultados. Algumas dessas ferramentas incluem:
 
 * [JMeter](https://jmeter.apache.org/)
 * [Carregar Executador](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
-* [Determyne](https://www.determyne.com/) InsideApps
 * [InfraRED](https://www.infraredsoftware.com/)
 * [Perfil interativo Java™](https://jiprof.sourceforge.net/)
-* muito mais...
 
 Após a otimização, teste novamente para confirmar o impacto.
 
@@ -691,7 +687,7 @@ O carregamento consiste em páginas criadas, páginas excluídas, travessias e c
 
 O impacto da carga no desempenho do backup pode ser estimado pela diferença entre o desempenho com e sem essa carga de aplicativo. O impacto do backup na taxa de transferência do aplicativo é encontrado comparando a taxa de transferência de cenário em transações por hora com e sem um backup simultâneo em andamento e com backups operando com diferentes configurações de &quot;atraso de backup&quot;.
 
-* **Configuração de atraso** - Para vários cenários, a configuração de atraso de backup também foi variada, usando valores de 10 ms (padrão), 1 ms e 0 ms, para explorar como essa configuração afetou o desempenho dos backups.
+* **Configuração de atraso** - Para vários cenários, a configuração de atraso de backup também foi variada, usando valores de 10 milissegundos (padrão), 1 milissegundos e 0 milissegundos, para explorar como essa configuração afetou o desempenho dos backups.
 * **Tipo de backup** - Todos os backups eram backups externos do repositório feitos em um diretório de backup sem criar um zip, exceto em um caso para comparação, onde o comando tar era usado diretamente. Como os backups incrementais não podem ser criados em um arquivo zip ou quando o backup completo anterior é um arquivo zip, o método de diretório de backup é o mais usado em situações de produção.
 
 ### Resumo dos resultados {#summary-of-results}
@@ -720,7 +716,7 @@ O parâmetro de atraso de backup é fornecido para limitar até que ponto os bac
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
-Para comparar, a taxa de transferência obtida usando um backup do sistema de arquivos (&#39;tar&#39;) para fazer backup dos mesmos arquivos do repositório. O desempenho do tar é comparável, mas ligeiramente maior que o backup com atraso definido como zero. A configuração de até mesmo um pequeno atraso reduz bastante a taxa de transferência de backup e o atraso padrão de 10 ms resulta em uma taxa de transferência muito reduzida. Em situações em que os backups podem ser programados quando o uso geral do aplicativo é baixo ou o aplicativo pode ficar inativo, reduza o atraso abaixo do valor padrão para permitir que o backup continue mais rapidamente.
+Para comparar, a taxa de transferência obtida usando um backup do sistema de arquivos (&#39;tar&#39;) para fazer backup dos mesmos arquivos do repositório. O desempenho do tar é comparável, mas ligeiramente maior que o backup com atraso definido como zero. A configuração de até mesmo um pequeno atraso reduz bastante a taxa de transferência do backup e o atraso padrão de 10 milissegundos resulta em uma taxa de transferência muito reduzida. Em situações em que os backups podem ser programados quando o uso geral do aplicativo é baixo ou o aplicativo pode ficar inativo, reduza o atraso abaixo do valor padrão para permitir que o backup continue mais rapidamente.
 
 O impacto real do throughput do aplicativo de um backup contínuo depende dos detalhes do aplicativo e da infraestrutura. A escolha do valor de atraso deve ser feita por análise empírica do aplicativo, mas deve ser escolhida o mais pequeno possível, para que os backups possam ser concluídos o mais rápido possível. Como há apenas uma correlação fraca entre a escolha do valor de atraso e o impacto na taxa de transferência do aplicativo, a escolha do atraso deve favorecer tempos de backup gerais mais curtos para minimizar o impacto geral dos backups. Um backup que leva oito horas para ser concluído, mas afeta a taxa de transferência em -20% provavelmente terá um impacto geral maior do que um, o que leva duas horas para ser concluído, mas afeta a taxa de transferência em -30%.
 

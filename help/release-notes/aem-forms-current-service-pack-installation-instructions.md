@@ -2,7 +2,7 @@
 title: Instruções de instalação de patches do AEM Forms para AEM Forms
 description: Instruções de instalação do service pack do AEM Forms para o ambiente OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: b15581701aaff72db2fc0030b0062d2f12150d8f
+source-git-commit: 01bf12ec46966ab2c78e2e825840230ea1bd3395
 workflow-type: tm+mt
 source-wordcount: '1726'
 ht-degree: 9%
@@ -153,16 +153,15 @@ O pacote é instalado automaticamente.
 * Use o [API HTTP do Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR). Use  `cmd=install&recursive=true` para que os pacotes aninhados sejam instalados.
 
    >[!NOTE]
-   >
-   >O service pack do Experience Manager não suporta a instalação do Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+   O service pack do Experience Manager não suporta a instalação do Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-**Validar a instalação**
+   **Validar a instalação**
 
-Para conhecer as plataformas certificadas para funcionar com esta versão, consulte o [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
+   Para conhecer as plataformas certificadas para funcionar com esta versão, consulte o [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
-1. A página de informações do produto (`/system/console/productinfo`) exibe a sequência de caracteres da versão atualizada `Adobe Experience Manager (spversion)` under [!UICONTROL Produtos instalados].<!-- UPDATE FOR EACH NEW RELEASE -->
-1. Todos os pacotes OSGi são **[!UICONTROL ATIVO]** ou **[!UICONTROL FRAGMENTO]** no console OSGi (Use o console da Web: `/system/console/bundles`).
-1. O pacote OSGi `org.apache.jackrabbit.oak-core` é versão 1.22.14 ou posterior (Use o WebConsole: `/system/console/     bundles`).
+   1. A página de informações do produto (`/system/console/productinfo`) exibe a sequência de caracteres da versão atualizada `Adobe Experience Manager (spversion)` under [!UICONTROL Produtos instalados].<!-- UPDATE FOR EACH NEW RELEASE -->
+   1. Todos os pacotes OSGi são **[!UICONTROL ATIVO]** ou **[!UICONTROL FRAGMENTO]** no console OSGi (Use o console da Web: `/system/console/bundles`).
+   1. O pacote OSGi `org.apache.jackrabbit.oak-core` é versão 1.22.14 ou posterior (Use o WebConsole: `/system/console/     bundles`).
 
 +++
 
@@ -185,8 +184,7 @@ Para conhecer as plataformas certificadas para funcionar com esta versão, consu
 1. Faça backup do seu [Repositório CRX e esquema de banco de dados](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
 
 >[!NOTE]
->
-> Se você instalar o service pack do AEM Forms para o banco de dados relacional, é obrigatório fazer backup do DB_schema.
+Se você instalar o service pack do AEM Forms para o banco de dados relacional, é obrigatório fazer backup do DB_schema.
 
 +++
 
@@ -213,18 +211,17 @@ Há dois métodos diferentes que podem ser usados para instalar automaticamente 
 * Use o [API HTTP do Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR). Use `cmd=install&recursive=true` para que os pacotes aninhados sejam instalados.
 
    >[!NOTE]
-   >
-   >O service pack do Experience Manager não suporta a instalação do Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+   O service pack do Experience Manager não suporta a instalação do Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-**Validar a instalação**
+   **Validar a instalação**
 
-Para conhecer as plataformas certificadas para funcionar com esta versão, consulte o [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
+   Para conhecer as plataformas certificadas para funcionar com esta versão, consulte o [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
-1. A página de informações do produto (`/system/console/productinfo`) exibe a sequência de caracteres da versão atualizada `Adobe Experience Manager (spversion)` under [!UICONTROL Produtos instalados]. <!-- UPDATE FOR EACH NEW RELEASE -->
+   1. A página de informações do produto (`/system/console/productinfo`) exibe a sequência de caracteres da versão atualizada `Adobe Experience Manager (spversion)` under [!UICONTROL Produtos instalados]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-1. Todos os pacotes OSGi são **[!UICONTROL ATIVO]** ou **[!UICONTROL FRAGMENTO]** no console OSGi (Use o console da Web: `/system/console/bundles`).
+   1. Todos os pacotes OSGi são **[!UICONTROL ATIVO]** ou **[!UICONTROL FRAGMENTO]** no console OSGi (Use o console da Web: `/system/console/bundles`).
 
-   1. O pacote OSGi `org.apache.jackrabbit.oak-core` é a versão 1.22.14 ou posterior (Use o Console da Web: `/system/console/bundles`).
+      1. O pacote OSGi `org.apache.jackrabbit.oak-core` é a versão 1.22.14 ou posterior (Use o Console da Web: `/system/console/bundles`).
 
 +++
 

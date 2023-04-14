@@ -1,8 +1,6 @@
 ---
 title: Como desenvolver projetos AEM usando o IntelliJ IDEA
-seo-title: How to Develop AEM Projects using IntelliJ IDEA
 description: Usar o IntelliJ IDEA para desenvolver projetos AEM
-seo-description: Using IntelliJ IDEA to develop AEM projects
 uuid: 382b5008-2aed-4e08-95be-03c48f2b549e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +8,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 0%
 
 Para começar a usar AEM desenvolvimento no IntelliJ, as etapas a seguir são necessárias.
 
-Cada um deles é explicado mais detalhadamente no restante deste &quot;Como&quot;.
+Cada etapa é explicada com mais detalhes no restante deste tópico.
 
 * Instalar o IntelliJ
 * Configure seu projeto de AEM com base em Maven
@@ -36,7 +34,7 @@ Cada um deles é explicado mais detalhadamente no restante deste &quot;Como&quot
 
 ### Instalar o IntelliJ IDEA {#install-intellij-idea}
 
-Baixe o IntelliJ IDEA a partir de [a página Downloads no JetBrains](https://www.jetbrains.com/idea/download/index.html).
+Baixe o IntelliJ IDEA a partir de [a página Downloads no JetBrains](https://www.jetbrains.com/idea/download/).
 
 Em seguida, siga as instruções de instalação nessa página.
 
@@ -44,11 +42,11 @@ Em seguida, siga as instruções de instalação nessa página.
 
 Em seguida, configure o seu projeto usando o Maven, conforme descrito em [Como criar projetos AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
-Para começar a trabalhar com projetos AEM no IntelliJ IDEA, a configuração básica em [Introdução em 5 minutos](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) for suficiente.
+Para começar a trabalhar com AEM Projetos no IntelliJ IDEA, a configuração básica em [Introdução em 5 minutos](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) for suficiente.
 
 ### Preparar suporte JSP para IntelliJ IDEA {#prepare-jsp-support-for-intellij-idea}
 
-O IntelliJ IDEA também pode fornecer suporte ao trabalhar com o JSP, por exemplo
+O IntelliJ IDEA também pode fornecer suporte ao trabalhar com o JSP, por exemplo:
 
 * preenchimento automático de bibliotecas de tags
 * conhecimento dos objetos definidos pelo `<cq:defineObjects />` e `<sling:defineObjects />`
@@ -86,7 +84,7 @@ As etapas a seguir são necessárias para depurar JSPs com IntelliJ IDEA
 
 #### Configurar uma faceta da Web no projeto {#set-up-a-web-facet-in-the-project}
 
-O IntelliJ IDEA precisa entender onde encontrar os JSPs para depuração. Como o IDEA não pode interpretar o `content-package-maven-plugin` , isso precisa ser configurado manualmente.
+O IntelliJ IDEA deve entender onde encontrar os JSPs para depuração. Porque o IDEA não pode interpretar o `content-package-maven-plugin` , deve ser configurado manualmente.
 
 1. Ir para **Arquivo -> Estrutura do projeto**
 1. Selecione o **Conteúdo** módulo
@@ -120,7 +118,7 @@ O IntelliJ IDEA precisa entender onde encontrar os JSPs para depuração. Como o
 
 A última etapa necessária é iniciar o AEM com as opções da JVM propostas pelo IntelliJ IDEA.
 
-Você pode fazer isso iniciando o arquivo jar AEM diretamente e adicionando essas opções, por exemplo, com a seguinte linha de comando:
+Inicie o arquivo jar AEM diretamente e adicione essas opções, por exemplo, com a seguinte linha de comando:
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 
@@ -151,4 +149,4 @@ Agora, todos os usuários estão configurados para depurar os JSPs no AEM.
 
 ### Depuração de pacotes com IntelliJ IDEA {#debugging-bundles-with-intellij-idea}
 
-O código em pacotes pode ser depurado usando uma conexão de depuração remota genérica padrão. Você pode seguir o [Documentação do Jetrain sobre depuração remota](https://www.jetbrains.com/idea/webhelp/run-debug-configuration-remote.html).
+O código em pacotes pode ser depurado usando uma conexão de depuração remota genérica padrão. Você pode seguir o [Documentação do Jetrain sobre depuração remota](https://www.jetbrains.com/help/idea/remote-debugging-with-product.html#remote-interpreter).

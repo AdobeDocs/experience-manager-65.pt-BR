@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3431'
 ht-degree: 0%
 
 ---
@@ -269,7 +269,7 @@ Ao criar uma configuração, não altere a configuração de fábrica. Em vez di
 * Para desenvolvimento de JS (especialmente quando firebugging/debugging):
 
    * disable **Minimizar**
-   * habilitar **Depurar** para separar os arquivos para depuração e uso com firebug.
+   * habilitar **Depurar** para separar os arquivos para depuração e uso com o bug fire.
    * habilitar **Tempo** se estiver interessado em tempo.
    * habilitar **Depurar** para ver as mensagens de log do console JS.
 
@@ -381,7 +381,7 @@ Os outros modos podem ser acessados do sidekick ou do sufixo `?wcmmode=disabled`
 
 **Configurador do Verificador de Links WCM CQ do Dia** Configurar:
 
-* **Lista de configurações de reescrita** para especificar uma lista de locais para configurações do linkchecker baseadas em conteúdo. As configurações podem ser baseadas no modo de execução. Esse fato é importante para distinguir entre ambientes de autor e publicação, pois as configurações do linkchecker podem ser diferentes.
+* **Lista de configurações de reescrita** para especificar uma lista de locais para configurações do verificador de links baseado em conteúdo. As configurações podem ser baseadas no modo de execução. Esse fato é importante para distinguir entre ambientes de autor e publicação, pois as configurações do verificador de links podem ser diferentes.
 
 **Fábrica do gerenciador de página do Day CQ WCM** Configurar:
 
@@ -443,7 +443,7 @@ Uma configuração de fábrica, para que várias instâncias possam ser configur
 **Gravador CDN** A comunicação entre AEM e uma CDN deve ser assegurada para que os ativos/binários sejam entregues a um usuário final de forma segura. Esse processo envolve as duas tarefas a seguir:
 
 * Acessar o recurso do AEM por meio da CDN na primeira vez (ou após expirar no cache).
-* Acessar o recurso armazenado em cache no CDN com segurança porque depois que o recurso é armazenado em cache no CDN, a solicitação não vai para o AEM e todos os usuários que têm acesso a esse recurso no devem ser fornecidos do CDN.
+* Acesso ao recurso em cache no CDN com segurança. Depois que o recurso é armazenado em cache no CDN, a solicitação não vai para o AEM e todos os usuários que têm acesso a esse recurso devem ser fornecidos do CDN.
 
 AEM fornece um regravador para regravar URLs de ativos internos em URLs CDN externos. Ele reescreve links a serem passados para a CDN, incluindo uma assinatura JWS e expira o tempo para permitir que o ativo seja acessado com segurança. Esse recurso deve ser usado em instâncias do autor.
 
