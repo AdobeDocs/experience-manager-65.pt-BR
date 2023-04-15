@@ -9,9 +9,9 @@ discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1382'
 ht-degree: 7%
 
 ---
@@ -52,7 +52,7 @@ Antes de começar a instalar e configurar os recursos interativos de comunicaç�
 
 * Os requisitos de memória são cumpridos. O pacote do complemento AEM Forms requer:
 
-   * 15 GB de espaço temporário para instalações baseadas no Microsoft Windows.
+   * 15 GB de espaço temporário para instalações baseadas no Microsoft® Windows.
    * 6 GB de espaço temporário para instalações baseadas em UNIX.
 
 * Requisitos adicionais para sistemas baseados em UNIX: Se você estiver usando o sistema operacional baseado em UNIX, instale os seguintes pacotes da mídia de instalação do respectivo sistema operacional.
@@ -99,14 +99,14 @@ O pacote do complemento AEM Forms é um aplicativo implantado em AEM. O pacote c
 1. Abra [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Fazer upload de pacote]** para fazer upload do pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Também é possível baixar o pacote por meio do link direto listado no [Versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) artigo 10. o
+   Também é possível baixar o pacote por meio do link direto listado no [Versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR) artigo 10. o
 
-1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie imediatamente o servidor.** Antes de parar o servidor do AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no [AEM-Installation-Diretory]/crx-quickstart/logs/error.log e o log é estável.
+1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie imediatamente o servidor.** Antes de parar o AEM Forms Server, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no [AEM-Installation-Diretory]/crx-quickstart/logs/error.log e o log é estável.
 1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
 
 ## Configurações pós-instalação {#post-installation-configurations}
 
-O AEM Forms tem algumas configurações obrigatórias e opcionais. As configurações obrigatórias incluem a configuração de bibliotecas BouncyCastle e o agente de serialização. As configurações opcionais incluem a configuração do dispatcher e do Adobe Target.
+O AEM Forms tem algumas configurações obrigatórias e opcionais. As configurações obrigatórias incluem a configuração de bibliotecas BouncyCastle e o agente de serialização. As configurações opcionais incluem a configuração do Dispatcher e do Adobe Target.
 
 ### Configurações obrigatórias pós-instalação {#mandatory-post-installation-configurations}
 
@@ -117,7 +117,7 @@ Execute as seguintes etapas em todas as instâncias de Autor e Publicação para
 1. Pare a instância AEM subjacente.
 1. Abra o [AEM diretório de instalação]\crx-quickstart\conf\sling.properties para edição.
 
-   Se você usou [AEM diretório de instalação]\crx-quickstart\bin\start.bat para iniciar o AEM, em seguida, edite o sling.properties localizado em [AEM_root]\crx-quickstart\.
+   Se você usou [AEM diretório de instalação]\crx-quickstart\bin\start.bat para iniciar o AEM, em seguida, edite o sling.properties em [AEM_root]\crx-quickstart\.
 
 1. Adicione as seguintes propriedades ao arquivo sling.properties :
 
@@ -141,7 +141,7 @@ Execute as seguintes etapas em todas as instâncias de Autor e Publicação para
 
 #### Instalar Pacote de Compatibilidade {#install-compatibility-package}
 
-A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com clientes no AEM 6.5 Forms. Se você atualizou ou migrou de uma versão anterior e planeja continuar usando cartas (Gerenciamento de correspondência), instale o [Pacote de compatibilidade AEMFD](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
+A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com clientes no AEM 6.5 Forms. Se você atualizou ou migrou de uma versão anterior e planeja continuar usando cartas (Gerenciamento de correspondência), instale o [Pacote de compatibilidade AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
 O pacote de compatibilidade do AEMFD permite usar os seguintes ativos do AEM 6.4 Forms, AEM 6.3 Forms e AEM 6.2 Forms no AEM 6.5 Forms:
 
@@ -152,7 +152,7 @@ O pacote de compatibilidade do AEMFD permite usar os seguintes ativos do AEM 6.4
 
 #### Configurar o Dispatcher {#configure-dispatcher}
 
-O Dispatcher é uma ferramenta de armazenamento em cache e/ou balanceamento de carga do Adobe Experience Manager, que pode ser usado em conjunto com um servidor Web de classe empresarial. Se você usar [Dispatcher](https://helpx.adobe.com/pt/experience-manager/dispatcher/using/dispatcher-configuration.html)e, em seguida, execute as seguintes configurações para o AEM Forms:
+O Dispatcher é a ferramenta de armazenamento em cache e balanceamento de carga do Adobe Experience Manager, e ele é usado em conjunto com um servidor da web de classe empresarial. Se você usar [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR)e, em seguida, execute as seguintes configurações para o AEM Forms:
 
 1. Configuração do acesso para AEM Forms:
 
@@ -160,21 +160,21 @@ O Dispatcher é uma ferramenta de armazenamento em cache e/ou balanceamento de c
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Salve e feche o arquivo. Para obter informações detalhadas sobre filtros, consulte [Documentação do Dispatcher](https://helpx.adobe.com/pt/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Salve e feche o arquivo. Para obter informações detalhadas sobre filtros, consulte [Documentação do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR).
 
 1. Configure o serviço de filtro do referenciador:
 
-   Faça logon no gerenciador de configuração do Apache Felix como administrador. O URL padrão do gerenciador de configuração é https://&#39;server&#39;:[port_number]/system/console/configMgr. No **Configurações** selecione o **Filtro de referenciador do Apache Sling** opção. No campo Permitir hosts , insira o nome do host do dispatcher para permitir como referenciador e clique em **Salvar**. O formato da entrada é https://&#39;[server]:[porta]&quot;.
+   Faça logon no gerenciador de configuração do Apache Felix como administrador. O URL padrão do gerenciador de configuração é https://&#39;server&#39;:[port_number]/system/console/configMgr. No **Configurações** selecione o **Filtro de referenciador do Apache Sling** opção. No campo Permitir hosts , insira o nome do host do Dispatcher para permitir como referenciador e clique em **Salvar**. O formato da entrada é https://&#39;[server]:[porta]&quot;.
 
 #### Integrar o Adobe Target {#integrate-adobe-target}
 
-Seus clientes provavelmente abandonarão uma comunicação interativa se a experiência que ela oferece não for envolvente. Embora seja frustrante para os clientes, também é possível aumentar o volume e o custo de suporte para sua organização. É essencial e desafiador identificar e fornecer a experiência correta do cliente que aumenta a taxa de conversão. O AEM forms tem a chave para esse problema.
+Seus clientes provavelmente abandonarão uma comunicação interativa se a experiência que ela oferece não for envolvente. Embora seja frustrante para os clientes, também aumenta o volume de suporte e o custo para sua organização. É essencial e desafiador identificar e fornecer a experiência correta do cliente que aumenta a taxa de conversão. O AEM forms tem a chave para esse problema.
 
-AEM formulários é integrado ao Adobe Target, uma solução da Adobe Marketing Cloud, para fornecer experiências personalizadas e envolventes para o cliente em vários canais digitais. Para usar o Adobe Target para personalizar uma comunicação interativa, [Integrar o Adobe Target ao AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM formulários é integrado ao Adobe Target, uma solução da Adobe Experience Cloud, para fornecer experiências personalizadas e envolventes para o cliente em vários canais digitais. Para usar o Adobe Target para personalizar uma comunicação interativa, [Integrar o Adobe Target ao AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
 #### Configurar comunicação SSL para o Modelo de dados de formulário  {#configure-ssl-communcation-for-form-data-model}
 
-Você pode ativar a comunicação SSL para o Modelo de dados de formulário. Para habilitar a comunicação SSL para o modelo de dados de Formulário, antes de iniciar qualquer instância do AEM Forms, adicione certificados ao Java Trust Store de todas as instâncias. Você pode executar o comando abaixo para adicionar os certificados:
+Você pode ativar a comunicação SSL para o Modelo de dados de formulário. Para habilitar a comunicação SSL para o modelo de dados de formulário, antes de iniciar qualquer instância do AEM Forms, adicione certificados ao Java™ Trust Store de todas as instâncias. Você pode executar o comando abaixo para adicionar os certificados:
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 

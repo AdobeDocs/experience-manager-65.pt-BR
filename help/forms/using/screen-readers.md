@@ -10,9 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
 exl-id: 07d20c2f-7d13-48ac-8d58-b367eb194558
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,12 @@ Os formulários HTML5 usam construções HTML padrão que permitem o uso de ferr
 
 ## Padrões de acessibilidade {#accessibility-standards}
 
-Os formulários HTML5 estão em conformidade com a seção 508 para acessibilidade com exceções conhecidas. Consulte [VPAT para formulários HTML5](https://wwwimages.adobe.com/content/dam/acom/en/accessibility/compliance/pdfs/livecycle-mobile-forms-es4-section-508-vpat.pdf) para obter detalhes.
+Os formulários HTML5 estão em conformidade com a seção 508 para acessibilidade com exceções conhecidas. Consulte [VPAT para formulários HTML5](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf) para obter detalhes.
 
 ## Leitores de tela certificados para formulários HTML5 {#certified-screen-readers-for-html-forms}
 
-* JAWS 14.0 no Microsoft Windows
-* VoiceOver no Mac OS X e iPad
+* JAWS 14.0 no Microsoft® Windows
+* VoiceOver no macOS X e iPad
 
 ### JAWS {#jaws}
 
@@ -38,11 +38,11 @@ Todos os pressionamentos de teclas e atalhos padrão funcionam para formulários
 
 ### VoiceOver {#voiceover}
 
-Os formulários HTML5 suportam todos os pressionamentos de teclas e gestos padrão do Voice over. Para obter mais informações sobre como configurar e usar o VoiceOver, consulte [https://www.apple.com/accessibility/voiceover/](https://www.apple.com/accessibility/voiceover/).
+Os formulários HTML5 suportam todos os pressionamentos de teclas e gestos padrão do Voice over. Para obter mais informações sobre como configurar e usar o VoiceOver, consulte [https://www.apple.com/accessibility/vision/](https://www.apple.com/accessibility/vision/).
 
 ## Problemas conhecidos {#known-issues}
 
-* **(Somente no Internet Explorer 9)** Nos formulários HTML5, as páginas são carregadas sob demanda (dinamicamente). O carregamento de página sob demanda causa problemas com o funcionamento dos leitores de tela. Quando o foco do leitor de tela estiver no último campo da página e o usuário pressionar a tecla tab, em vez de definir o foco no primeiro campo da próxima página, o leitor de tela retornará o foco para o primeiro campo da primeira página do formulário.
+* **(Somente no Internet Explorer 9)** Nos formulários HTML5, as páginas são carregadas sob demanda (dinamicamente). O carregamento de página sob demanda causa problemas com o funcionamento dos leitores de tela. Quando o foco do leitor de tela estiver no último campo da página e o usuário pressionar a tecla tab, o leitor de tela retornará o foco para o primeiro campo da primeira página no formulário.
 * **(Somente no Internet Explorer 9)** O controle do Seletor de data em formulários HTML5 não é totalmente acessível com teclado. No controle do Seletor de datas, se você pressionar várias vezes as teclas Para cima/Para baixo, o controle do Seletor de datas será fechado e o foco será movido para o campo seguinte/último.
 
 * O VoiceOver não consegue detectar as teclas de seta no widget de data no iPad safari.
