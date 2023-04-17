@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
+source-git-commit: c704397f08e163a58ee6ac1dbaefc3171298864e
 workflow-type: tm+mt
-source-wordcount: '8098'
+source-wordcount: '8086'
 ht-degree: 3%
 
 ---
@@ -115,7 +115,6 @@ Saiba mais sobre [Práticas recomendadas para organizar ativos digitais para usa
 
       * Integre o vídeo usando o código incorporado na página da Web:
          [Incorporar o visualizador de vídeo em uma página da Web](embed-code.md).
-   * [Publicar vídeos no YouTube](#publishing-videos-to-youtube).
    * [Gerar relatórios de vídeo](#viewing-video-reports).
 
    * [Adicionar legendas ao vídeo](#adding-captions-to-video).
@@ -292,7 +291,7 @@ O gráfico a seguir mostra o fluxo de trabalho de criação geral de vídeos que
 
 ## Práticas recomendadas para codificação de vídeos {#best-practices-for-encoding-videos}
 
-O **Codificar vídeo no Dynamic Media** O fluxo de trabalho codifica o vídeo se você tiver ativado o Dynamic Media e configurado os serviços da nuvem de vídeo. Esse fluxo de trabalho captura o histórico do processo de fluxo de trabalho e as informações de falha. Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Se você ativou o Dynamic Media e configurou os serviços da nuvem de vídeo, a variável **[!UICONTROL Codificar vídeo no Dynamic Media]** O fluxo de trabalho entra em vigor automaticamente ao carregar um vídeo. (Se você não estiver usando o Dynamic Media, a variável **[!UICONTROL Ativo de atualização DAM]** O fluxo de trabalho entra em vigor.)
+O **Codificar vídeo no Dynamic Media** O fluxo de trabalho codifica o vídeo se você tiver ativado o Dynamic Media e configurado os serviços da nuvem de vídeo. Esse fluxo de trabalho captura o histórico do processo de fluxo de trabalho e as informações de falha. Se você ativou o Dynamic Media e configurou os serviços da nuvem de vídeo, a variável **[!UICONTROL Codificar vídeo no Dynamic Media]** O fluxo de trabalho entra em vigor automaticamente ao carregar um vídeo. (Se você não estiver usando o Dynamic Media, a variável **[!UICONTROL Ativo de atualização DAM]** O fluxo de trabalho entra em vigor.)
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
