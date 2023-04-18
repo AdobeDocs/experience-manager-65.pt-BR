@@ -1,6 +1,6 @@
 ---
-title: SSL por padrão
-seo-title: SSL By Default
+title: SSL/TLS por padrão
+seo-title: SSL/TLS By Default
 description: Saiba como usar SSL por padrão no AEM.
 seo-description: Learn how to use SSL by Default in AEM.
 uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
@@ -11,20 +11,20 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 252924afb70dd311a27d04278fbe363db15e9519
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
-# SSL por padrão{#ssl-by-default}
+# SSL/TLS por padrão{#ssl-tls-by-default}
 
 Em um esforço para melhorar continuamente a segurança do AEM, o Adobe introduziu um recurso chamado SSL por padrão. O objetivo é incentivar o uso de HTTPS para se conectar a instâncias AEM.
 
-## Ativar SSL por padrão {#enabling-ssl-by-default}
+## Ativar SSL/TLS por padrão {#enabling-ssl-tls-by-default}
 
-Você pode começar a configurar o SSL por padrão clicando na mensagem da Caixa de entrada relevante na tela inicial do AEM. Para acessar a Caixa de entrada, pressione o ícone do sino no canto superior direito da tela. Em seguida, clique em **Exibir todos**. Isso exibirá uma lista de todos os alertas pedidos em uma exibição de lista.
+Você pode começar a configurar SSL/TLS por padrão clicando na mensagem da Caixa de entrada relevante na tela inicial do AEM. Para acessar a Caixa de entrada, pressione o ícone do sino no canto superior direito da tela. Em seguida, clique em **Exibir todos**. Isso exibirá uma lista de todos os alertas pedidos em uma exibição de lista.
 
 Na lista, selecione e abra o **Configurar HTTPS** alerta:
 
@@ -52,9 +52,9 @@ Um usuário de serviço chamado **ssl-service** O foi criado para este recurso. 
 
    ![screen_shot_2018-07-25at31658pm](assets/screen_shot_2018-07-25at31658pm.png)
 
-## Automatizando SSL por padrão {#automating-ssl-by-default}
+## Automatização de SSL/TLS por padrão {#automating-ssl-tls-by-default}
 
-Há três maneiras de automatizar o SSL por padrão.
+Há três maneiras de automatizar SSL/TLS por padrão.
 
 ### Via HTTP POST {#via-http-post}
 
@@ -159,7 +159,7 @@ Como alternativa, você pode automatizar a configuração do SSL carregando um p
 
 ### Gerar um par de chave privada/certificado para usar com o assistente {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-Abaixo você encontrará um exemplo para criar um certificado autoassinado no formato DER que o Assistente SSL pode usar. Instale o OpenSSL com base no sistema operacional, abra o prompt de comando OpenSSL e altere o diretório para a pasta onde deseja gerar a Chave/Certificado Privado.
+Abaixo você encontrará um exemplo para criar um certificado autoassinado no formato DER que o Assistente SSL/TLS pode usar. Instale o OpenSSL com base no sistema operacional, abra o prompt de comando OpenSSL e altere o diretório para a pasta onde deseja gerar a Chave/Certificado Privado.
 
 >[!NOTE]
 >
@@ -190,15 +190,15 @@ Converta a Chave privada no formato DER. Isso ocorre porque o assistente SSL req
 openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
 ```
 
-Finalmente, faça upload do **localhostprivate.der** como a Chave privada e **localhost.crt** como o certificado SSL na etapa 2 do assistente gráfico SSL descrito no início desta página.
+Finalmente, faça upload do **localhostprivate.der** como a Chave privada e **localhost.crt** como o certificado SSL/TLS na etapa 2 do assistente gráfico SSL/TLS descrito no início desta página.
 
-### Atualização da configuração SSL via cURL {#updating-the-ssl-configuration-via-curl}
+### Atualização da configuração SSL/TLS via cURL {#updating-the-ssl-tls-configuration-via-curl}
 
 >[!NOTE]
 >
 >Consulte [Uso do cURL com AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) para obter uma lista centralizada de comandos cURL úteis no AEM.
 
-Você também pode automatizar a configuração SSL usando a ferramenta cURL. Você pode fazer isso ao postar os parâmetros de configuração neste URL:
+Você também pode automatizar a configuração SSL/TLS usando a ferramenta cURL. Você pode fazer isso ao postar os parâmetros de configuração neste URL:
 
 *https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
 
@@ -221,7 +221,7 @@ Abaixo estão os parâmetros que você pode usar para alterar as várias configu
 
 >[!NOTE]
 >
->A maneira mais rápida de executar o cURL para automatizar a configuração SSL é a partir da pasta onde estão os arquivos DER e CRT. Como alternativa, você pode especificar o caminho completo na variável `privatekeyFile` e argumentos certificateFile.
+>A maneira mais rápida de executar o cURL para automatizar a configuração SSL/TLS é a partir da pasta onde estão os arquivos DER e CRT. Como alternativa, você pode especificar o caminho completo na variável `privatekeyFile` e argumentos certificateFile.
 >
 >Também é necessário ser autenticado para executar a atualização. Portanto, anexe o comando cURL com a função `-u user:passeword` parâmetro.
 >
@@ -239,3 +239,15 @@ Você pode enviar ao servlet uma cadeia de certificados repetindo o parâmetro c
 
 Depois de executar o comando, verifique se todos os certificados foram feitos no keystore. Verifique o armazenamento de chaves de:
 [http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)
+
+### Habilitar uma conexão TLS 1.3 {#enabling-tls-connection}
+
+1. Vá para o Console da Web
+1. Em seguida, navegue até **OSGi** - **Configuração** - **Fábrica do conector SSL do Adobe Granite**
+1. Vá para o **Conjuntos de cifras incluídos** e adicione as seguintes entradas. Confirme cada adição pressionando a tecla **+**&quot; à esquerda do campo, depois de adicionar cada um em:
+
+   * `TLS_AES_256_GCM_SHA384`
+   * `TLS_AES_128_GCM_SHA256`
+   * `TLS_CHACHA20_POLY1305_SHA256`
+   * `TLS_AES_128_CCM_SHA256`
+   * `TLS_AES_128_CCM_8_SHA256`
