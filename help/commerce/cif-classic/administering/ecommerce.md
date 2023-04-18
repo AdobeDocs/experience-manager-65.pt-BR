@@ -1,13 +1,13 @@
 ---
-title: eCommerce
+title: Estrutura de integração do comércio eletrônico
 description: AEM eCommerce ajuda os profissionais de marketing a fornecer experiências de compras personalizadas e com marca em todos os pontos de contato da Web, móveis e sociais.
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '731'
 ht-degree: 2%
 
 ---

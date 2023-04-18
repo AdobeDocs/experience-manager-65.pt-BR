@@ -1,8 +1,6 @@
 ---
-title: Editar as propriedades da página
-seo-title: Editing Page Properties
-description: As propriedades de uma página podem variar dependendo da natureza da página. Por exemplo, algumas páginas podem estar conectadas a uma live copy, enquanto outras não estão, e as informações da live copy estarão disponível conforme apropriado.
-seo-description: Properties of a page can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.
+title: Edição de propriedades da página
+description: As propriedades de uma página podem variar dependendo da natureza da página. Por exemplo, algumas páginas podem estar conectadas a uma live copy, enquanto outras não estão, e as informações da live copy estarão disponíveis conforme apropriado.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +8,16 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 96%
+ht-degree: 31%
 
 ---
 
 # Editar as propriedades da página{#editing-page-properties}
 
-Você pode definir as propriedades desejadas para uma página. Eles podem variar dependendo da natureza da página. Por exemplo, algumas páginas podem estar conectadas a uma live copy, enquanto outras não estão, e as informações da live copy estarão disponível conforme apropriado.
+Você pode definir as propriedades desejadas para uma página. Isso pode variar dependendo da natureza da página. Por exemplo, algumas páginas podem estar conectadas a uma Live Copy, enquanto outras não estão, e as informações da Live Copy estarão disponíveis conforme apropriado.
 
 ## Propriedades da página {#page-properties}
 
@@ -29,33 +27,33 @@ As propriedades são distribuídas por várias guias:
 
 * **Título**
 
-   O título da página é exibido em vários locais. Por exemplo, a lista da guia **Sites** e as visualizações de cartão/lista dos **Sites**.
+   O título da página é exibido em vários locais. Por exemplo, a variável **Sites** e a **Sites** exibições de cartão/lista.
 
-   Este é um campo obrigatório.
+   Este campo é obrigatório.
 
 * **Tags**
 
    Aqui você pode adicionar ou remover as tags da página, atualizando a lista na caixa de seleção:
 
-   * Após selecionar uma tag, ela é listada abaixo da caixa de seleção. Você pode remover uma tag dessa lista usando o x.
-   * Uma tag totalmente nova pode ser inserida, digitando o nome em uma caixa de seleção vazia.
+   * Após selecionar uma tag, ela é listada abaixo da caixa de seleção. Você pode remover uma tag dessa lista usando o ícone “x”.
+   * Uma tag totalmente nova pode ser inserida digitando o nome em uma caixa de seleção vazia.
 
-      A nova tag será realmente criada ao apertar a tecla enter. A nova tag será então exibida em uma caixa com uma pequena estrela à direita, indicando que é uma nova tag.
+      A nova tag será realmente criada ao apertar a tecla enter. A nova tag será então exibida em uma caixa, com uma pequena estrela à direita, indicando que é uma nova tag.
 
-   * Com a funcionalidade suspensa, você pode selecionar a partir das tags existentes.
-   * Um x será exibido ao passar o mouse em cima de uma entrada de tag na caixa de seleção; isso pode ser usado para remover a tag desta página.
+   * Com a funcionalidade de menu suspenso, é possível selecionar tags existentes.
+   * Um x é exibido ao passar o mouse sobre uma entrada de tag na caixa de seleção; isso pode ser usado para remover a tag desta página.
 
 * **Ocultar na navegação**
 
-   Um interruptor para indicar se a página é exibida ou ocultada na navegação da página.
+   Uma opção de alternância para indicar se a página é exibida ou oculta na navegação da página.
 
 * **Título da página**
 
-   Um título para ser usado na página.
+   Um título a ser usado na página.
 
-* **Titulo da Navegação**
+* **Titulo da navegação**
 
-   Você pode especificar um título separado para uso na navegação (por exemplo, caso deseje algo mais conciso). Caso esteja vazio, o **Título** será usado.
+   Você pode especificar um título separado para usar na navegação (por exemplo, se desejar algo mais conciso). Se estiver vazio, a variável **Título** será usada.
 
 * **Legenda**
 
@@ -63,23 +61,23 @@ As propriedades são distribuídas por várias guias:
 
 * **Descrição**
 
-   A sua descrição da página, finalidade ou qualquer outro detalhe que desejar adicionar.
+   Sua descrição da página, finalidade ou qualquer outro detalhe que desejar adicionar.
 
-* **Hora de ligar**
+* **Em tempo**
 
-   A data e a hora em que a página publicada será ativada. Caso seja publicada, esta página será mantida inativa até o tempo especificado.
+   A data e a hora em que a página publicada será ativada. Quando publicada, esta página será mantida inativa até o tempo especificado.
 
-   Deixe estes campos vazios para as páginas que deseja publicar imediatamente (o cenário normal).
+   Deixe esses campos vazios para as páginas que deseja publicar imediatamente (o cenário normal).
 
-* **Hora de desligar**
+* **Tempo desligado**
 
    A hora em que a página publicada será desativada.
 
-   Deixe novamente estes campos vazios para as páginas que desejar publicar imediatamente.
+   Deixe novamente esses campos vazios para as páginas que deseja publicar imediatamente.
 
 * **URL personalizada**
 
-   Permite inserir uma URL personalizada para esta página. Permite que você tenha uma URL mais curta e mais expressiva.
+   Permite inserir uma URL personalizada para esta página. Isso permite que você tenha um URL mais curto e mais expressivo.
 
    Por exemplo, se o URL personalizado estiver definido como w `elcome`para a página identificada pelo caminho / `v1.0/startpage`para o site h `ttp://example.com,` então h `ttp://example.com/welcome`seria a URL personalizada de h `ttp://example.com/content/v1.0/startpage`
 
@@ -88,10 +86,10 @@ As propriedades são distribuídas por várias guias:
    >URLs personalizadas:
    >
    >* deve ser exclusiva, dessa forma, é necessário tomar cuidado para que o valor não seja utilizado por outra página.
-   >* não é compatível com padrões do regex.
+   >* não são compatíveis com padrões regex.
 
 
-* **Redirecionar URL personalizada**
+* **Redirecionar URL do Vanity**
 
    Indica se você deseja que a página use a URL personalizada.
 
@@ -103,27 +101,27 @@ As propriedades são distribuídas por várias guias:
 
 * **Redirecionar**
 
-   Indique a página de redirecionamento automático.
+   Indique a página para a qual essa página deve ser redirecionada automaticamente.
 
 * **Design**
 
-   Indique o [design](/help/sites-developing/designer.md) a ser usado para esta página.
+   Indique o [projeto](/help/sites-developing/designer.md) para ser usado nesta página.
 
 * **Alias**
 
-   Especifique um alias a ser usado com esta página.
+   Especifique um alias para ser usado com esta página.
 
 * **Ativar grupo de usuários fechado**
 
-   Ativa (ou desativa) o uso de [grupos de usuários fechados](/help/sites-administering/cug.md) (CUGs, Closed user groups).
+   Ativa (ou desativa) o uso de [grupos de usuários fechados](/help/sites-administering/cug.md) (CUGs).
 
 * **Página de logon**
 
-   A página para ser usada para logon.
+   A página a ser usada para logon.
 
 * **Grupos aceitos**
 
-   Grupos elegíveis para o logon no CUG.
+   Grupos elegíveis para logon no CUG.
 
 * **Território**
 
@@ -137,11 +135,11 @@ As propriedades são distribuídas por várias guias:
 
 * **Miniatura da página**
 
-   Exibe a imagem de miniatura da página. É possível:
+   Mostra a imagem de miniatura da página. É possível:
 
    * **Gerar pré-visualização**
 
-      Gere uma visualização da página para usar como miniatura.
+      Gere uma pré-visualização da página para usar como miniatura.
 
    * **Fazer upload de imagem**
 
@@ -151,7 +149,7 @@ As propriedades são distribuídas por várias guias:
 
 * **Cloud Services**
 
-   Defina as propriedades para os [serviços em nuvem](/help/sites-developing/extending-cloud-config.md).
+   Defina as propriedades para [serviços em nuvem](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalização {#personalization}
 
@@ -163,7 +161,7 @@ As propriedades são distribuídas por várias guias:
 
 * **Permissões** (interface otimizada para toque)
 
-   Exiba as [permissões efetivas e adicione novas permissões](/help/sites-administering/user-group-ac-admin.md).
+   Visualize o [permissões efetivas e adicionar novas permissões](/help/sites-administering/user-group-ac-admin.md).
 
 ### Blueprint {#blueprint}
 
@@ -175,7 +173,7 @@ As propriedades são distribuídas por várias guias:
 
 * **Live Copy**
 
-   Defina as propriedades para uma página de Live Copy no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
+   Defina as propriedades para uma página de Live Copy em [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
 ### Estrutura do site  {#site-structure}
 
@@ -183,14 +181,14 @@ As propriedades são distribuídas por várias guias:
 
 ## Editar as propriedades da página {#editing-page-properties-2}
 
-### Edição das Propriedades de página para uma página específica {#editing-page-properties-for-a-specific-page}
+### Editar as propriedades da página para uma página específica {#editing-page-properties-for-a-specific-page}
 
-As propriedades da página definem as várias propriedades da página, como títulos, quando aparecem no site e outros.
+As Propriedades da página definem as várias propriedades da página, como títulos, quando aparecem no site e outros.
 
 1. Abra a página que deseja editar.
 
-1. No sidekick, abra a guia **Página** em seguida, selecione **Propriedades da página...**
+1. No sidekick, abra o **Página** e selecione **Propriedades da Página...**
 
-   Isso abre uma janela com várias abas.
+   Isso abre uma caixa de diálogo com várias guias.
 
 1. Faça as alterações necessárias e clique em **OK** para salvar.

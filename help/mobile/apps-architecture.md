@@ -1,8 +1,6 @@
 ---
 title: Modelos de página para aplicativos móveis
-seo-title: Page Templates for Mobile Apps
 description: Siga esta página para saber mais sobre templates de página. Os componentes de página criados para seu aplicativo são baseados no componente /libs/mobileapps/components/angular/ng-page.
-seo-description: Follow this page to learn more about page templates. Page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component.
 uuid: c53901c9-5974-4c6b-ac61-1c094a93c9d6
 contentOwner: User
 content-type: reference
@@ -10,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: cfc7ad16-965e-4075-bc4d-5630abeaba55
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
 source-wordcount: '2666'
 ht-degree: 0%

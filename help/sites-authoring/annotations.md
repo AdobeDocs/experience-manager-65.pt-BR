@@ -1,8 +1,6 @@
 ---
-title: Anotações ao editar uma página
-seo-title: Annotations when Editing a Page
-description: Muitos componentes diretamente relacionados ao conteúdo permitem que você adicione uma anotação
-seo-description: Many components directly related to content allow you to add an annotation
+title: Anotações ao editar uma página de conteúdo
+description: Muitos componentes diretamente relacionados ao conteúdo permitem que você adicione uma anotação.
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +8,16 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 98%
+ht-degree: 40%
 
 ---
 
 # Anotações ao editar uma página{#annotations-when-editing-a-page}
 
-Com frequência, a adição de conteúdo às páginas do seu website está sujeita a discussões antes da publicação efetiva. Para auxiliar nesse processo, muitos componentes diretamente relacionados ao conteúdo (em oposição, por exemplo, ao layout) permitem a adição de uma anotação.
+Com frequência, a adição de conteúdo às páginas do seu site está sujeita a discussões antes da publicação efetiva. Para auxiliar nesse processo, muitos componentes diretamente relacionados ao conteúdo (em oposição, por exemplo, ao layout) permitem adicionar uma anotação.
 
 Uma anotação coloca um marcador colorido/nota adesiva na página. A anotação permite a você (ou outros usuários) deixar comentários e/ou perguntas para outros autores/revisores.
 
@@ -29,7 +27,7 @@ Uma anotação coloca um marcador colorido/nota adesiva na página. A anotação
 
 >[!NOTE]
 >
->As anotações criadas na interface do usuário clássica serão exibidas na interface do usuário habilitada para toque. No entanto, rascunhos são específicos da interface do usuário e são exibidos apenas na interface do usuário na qual foram criados.
+>As anotações criadas na interface clássica serão exibidas na interface habilitada para toque. No entanto, os rascunhos são específicos da interface do usuário e são mostrados somente na interface do usuário na qual foram criados.
 
 >[!CAUTION]
 >
@@ -58,7 +56,7 @@ Um [modo](/help/sites-authoring/author-environment-tools.md#page-modes) é usado
 
 ### Anotação em componente {#annotating-a-component}
 
-O modo Anotar permite criar, editar, mover ou excluir anotações de seu conteúdo:
+O modo Anotar permite criar, editar, mover ou excluir anotações em seu conteúdo:
 
 1. Você pode entrar no modo Anotar usando o ícone na barra de ferramentas (canto superior direito) ao editar uma página:
 
@@ -74,7 +72,7 @@ O modo Anotar permite criar, editar, mover ou excluir anotações de seu conteú
 
    >[!NOTE]
    >
-   >Para parar de adicionar as anotações (e voltar à exibição), toque/clique no ícone Cancelar (símbolo x em um círculo branco) à esquerda da barra de ferramentas superior.
+   >Para interromper a adição de anotações (e retornar à exibição), toque/clique no ícone Cancelar (símbolo x em um círculo branco) à esquerda da barra de ferramentas superior.
 
 1. Clique/toque no componente desejado (os componentes que podem ser anotados serão destacados com uma borda azul) para adicionar a anotação e abrir a caixa de diálogo:
 
@@ -82,7 +80,7 @@ O modo Anotar permite criar, editar, mover ou excluir anotações de seu conteú
 
    Aqui, você pode usar o campo e/ou ícone apropriado para:
 
-   * Inserir o texto da anotação.
+   * Insira o texto da anotação.
    * Criar um rascunho (linhas e formas) para realçar uma área do componente.
 
       O cursor se transformará em uma cruz durante a criação de um rascunho. Você pode desenhar várias linhas distintas. A linha de rascunho reflete a cor da anotação e pode ser uma seta, círculo ou forma oval.
@@ -112,7 +110,7 @@ O modo Anotar permite criar, editar, mover ou excluir anotações de seu conteú
       * As anotações relacionadas e seus rascunhos também serão movidos ou copiados, e sua posição em relação ao parágrafo permanecerá a mesma.
 
 
-1. Para sair do modo de Anotação e voltar ao modo usado anteriormente, toque/clique no ícone Anotar (símbolo x) à direita da barra de ferramentas superior.
+1. Para sair do modo Anotar e retornar ao modo usado anteriormente, toque/clique no ícone Anotar (símbolo x) à direita da barra de ferramentas superior.
 
 >[!NOTE]
 >

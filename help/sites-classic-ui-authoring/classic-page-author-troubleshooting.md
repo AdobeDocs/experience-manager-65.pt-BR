@@ -1,8 +1,6 @@
 ---
-title: Solucionar problemas do AEM durante a criação
-seo-title: Troubleshooting AEM when Authoring
+title: Solução de problemas AEM durante a criação
 description: A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o AEM, junto com sugestões sobre como resolvê-los.
-seo-description: The following section covers some issues that you might encounter when using AEM, together with suggestions on how to troubleshoot them.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 95%
+ht-degree: 29%
 
 ---
 
@@ -23,26 +21,26 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 >[!NOTE]
 >
->Ao enfrentar problemas, também é válida a verificação da lista de [Problemas conhecidos](/help/release-notes/release-notes.md) para a sua instância (pacotes de versões e serviços).
+>Ao enfrentar problemas, também vale a pena verificar a lista de [Problemas conhecidos](/help/release-notes/release-notes.md) para sua instância (pacotes de versões e serviços).
 
 >[!NOTE]
 >
->Os usuários que tiverem privilégios de administrador e quiserem resolver os problemas com o AEM, poderão utilizar os métodos de resolução de problemas descritos em [Resolução de problemas do AEM (para administradores)](/help/sites-administering/troubleshoot.md). Se você não tiver privilégios suficientes, consulte o administrador do sistema sobre como resolver os problemas do AEM.
+>Os usuários que tiverem privilégios de administrador e quiserem resolver problemas com o AEM, poderão utilizar os métodos de resolução de problemas descritos em [AEM de solução de problemas (para administradores)](/help/sites-administering/troubleshoot.md). Se você não tiver privilégios suficientes, consulte o administrador do sistema sobre AEM de solução de problemas.
 
 ## A versão antiga da página ainda está no site publicado {#old-page-version-still-on-published-site}
 
 * **Problema**:
 
-   * Você fez alterações em uma página e a replicou para o site de publicação, mas a *versão antiga* da página está sendo mostrada no site de publicação.
+   * Você fez alterações em uma página e replicou a página para o site de publicação, mas a variável *old* A versão da página ainda está sendo exibida no site de publicação.
 
 * **Motivo**:
 
-   * Isso pode ter várias causas, a mais frequente é o cache (o navegador local ou o Dispatcher), embora, às vezes, possa haver um problema com a fila de replicação.
+   * Isso pode ter várias causas, na maioria das vezes o cache (seu navegador local ou o Dispatcher), embora, às vezes, possa ser um problema com a fila de replicação.
 
 * **Soluções**:
 
    * Há várias possibilidades aqui:
-   * Confirmar se a página foi replicada corretamente. Verificar o status da página e, se necessário, o estado da fila de replicação.
+   * Confirme se a página foi replicada corretamente. Verifique o status da página e, se necessário, o estado da fila de replicação.
    * Limpar o cache no seu navegador local e acessar a página novamente.
    * Adicionar `?` ao final do URL da página. Por exemplo:
 
@@ -56,15 +54,15 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 * **Problema**:
 
-   * O sidekick não está visível durante a edição de uma página de conteúdo no ambiente de criação.
+   * O Sidekick não está visível ao editar uma página de conteúdo no ambiente do autor.
 
 * **Motivo**:
 
-   * Em casos raros, pode ser que você tenha posicionado o cabeçalho do sidekick fora do escopo da janela atual. Isso significa que não é possível reposicioná-lo novamente.
+   * Em casos raros, você pode ter posicionado o cabeçalho do sidekick fora do escopo da janela atual. Isso significa que não é possível reposicioná-lo novamente.
 
 * **Solução**:
 
-   * Faça logout da sessão atual e logon novamente. O sidekick retornará para a posição padrão.
+   * Faça logout da sessão atual e login novamente. O sidekick retornará à posição padrão.
 
 ## Localizar e substituir - nem todas as instâncias são substituídas {#find-replace-not-all-instances-are-replaced}
 
@@ -74,7 +72,7 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 * **Motivo**:
 
-   * A capacidade de **Localizar e substituir** depende de como o conteúdo é salvo e se ele pode ser pesquisado. Por exemplo, o texto de um blog é armazenado na propriedade `jcr:text` , que não está configurada para ser pesquisada. O escopo padrão do servlet localizar e substituir abrange as seguintes propriedades:
+   * A capacidade de **Localizar e Substituir** depende de como o conteúdo é salvo e se ele pode ser pesquisado. Por exemplo, um texto de blog é armazenado em `jcr:text` propriedade que não está configurada para ser pesquisada. O escopo padrão do servlet localizar e substituir abrange as seguintes propriedades:
 
       * `jcr:title`
       * `jcr:description`
@@ -83,6 +81,6 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 * **Solução**:
 
-   * Essas definições podem ser alteradas com a configuração do **Servlet Localizar e substituir do Day CQ WCM** usando o **Console da Web**; por exemplo, em
+   * Essas definições podem ser alteradas com a configuração de **Servlet Localizar e substituir do Day CQ WCM** usando o **Console da Web**; por exemplo, em
 
       `http://localhost:4502/system/console/configMgr`

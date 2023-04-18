@@ -1,8 +1,6 @@
 ---
-title: Uso de tags
-seo-title: Using Tags
-description: Tags são um método rápido e fácil de classificar o conteúdo em um site
-seo-description: Tags are a quick and easy method of classifying content within a website
+title: Uso de tags para classificar o conteúdo em um site
+description: Tags são um método rápido e fácil de classificar o conteúdo em um site.
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +9,16 @@ topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 87%
+source-wordcount: '575'
+ht-degree: 66%
 
 ---
 
-# Uso de tags  {#using-tags}
+# Uso de tags{#using-tags}
 
-Tags são um método rápido e fácil de classificar o conteúdo em um site. Tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e todo o conteúdo relacionado.
+Tags são um método rápido e fácil de classificar o conteúdo em um site. As tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e conteúdo relacionado.
 
 * Consulte [Administração de tags](/help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags, bem como sobre quais tags de conteúdo foram aplicadas.
 * Consulte [Marcação para desenvolvedores](/help/sites-developing/tags.md) para obter informações sobre a estrutura de marcação e sobre como incluir e estender tags em aplicativos personalizados.
@@ -36,9 +34,9 @@ Tags são um método rápido e fácil de classificar o conteúdo em um site. Tag
 1. **Habilitação de SEO** - aplicadas como propriedades de página aparecerão automaticamente nas metatags da página, tornando-a visível para os mecanismos de pesquisa.
 1. **Sofisticação simples** - tags podem ser criadas simplesmente a partir de uma palavra e com o toque de um botão. Posteriormente, um título, uma descrição e um número ilimitado de etiquetas podem ser adicionadas para fornecer mais semântica à tag.
 1. **Consistência básica** - o sistema de marcação é um componente central do AEM e é usado por todos os recursos do AEM para categorizar o conteúdo. Além disso, a API de marcação está disponível para os desenvolvedores criarem aplicativos ativados para marcação com acesso às mesmas taxonomias.
-1. **Combina estrutura e flexibilidade** - AEM é ideal para trabalhar com informações estruturadas, devido ao aninhamento de páginas e caminhos. Ele é igualmente eficiente quando se trabalha com informações não estruturadas, devido à pesquisa de texto completo integrada. A marcação combina os pontos fortes de estrutura e flexibilidade.
+1. **Combina estrutura e flexibilidade** - AEM é ideal para trabalhar com informações estruturadas, devido ao aninhamento de páginas e caminhos. Ele é igualmente poderoso ao trabalhar com informações não estruturadas, devido à pesquisa de texto completo integrada. A marcação combina os pontos fortes de estrutura e flexibilidade.
 
-Ao projetar a estrutura de conteúdo de um site e o esquema de metadados para ativos, considere a abordagem leve e acessível de tags.
+Ao projetar a estrutura de conteúdo para um site e o esquema de metadados para ativos, considere a abordagem leve e acessível que a marcação oferece.
 
 ## Aplicação de tags   {#applying-tags}
 
@@ -50,7 +48,7 @@ Aplicar [tags predefinidas](/help/sites-administering/tags.md)no **Propriedades 
 
 ### Publicação de tags {#publishing-tags}
 
-Assim como com as páginas, você pode fazer o seguinte em tags e espaços de nome:
+Assim como com as páginas, você pode executar o seguinte em tags e namespaces:
 
 **Ativar**
 

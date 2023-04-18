@@ -1,8 +1,6 @@
 ---
-title: Aplicativos móveis
-seo-title: Mobile Apps
+title: Administração de aplicativos móveis
 description: Esta página serve como página de aterrissagem para começar a criar, desenvolver e administrar aplicativos móveis.
-seo-description: This page serves as a landing page to get started with authoring, developing, and administering mobile apps.
 uuid: 0cc9e6d6-c6ea-48f9-9b7f-9ead0f2d199e
 contentOwner: msm-service
 content-type: reference
@@ -10,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 discoiquuid: f73bfa98-df2d-4b0f-93a2-1337f783e4bc
 exl-id: ffd2d029-b81a-4768-8e58-66aa5cf3772d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 4%
+source-wordcount: '137'
+ht-degree: 2%
 
 ---
 

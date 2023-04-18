@@ -1,8 +1,6 @@
 ---
-title: Móvel com sincronização de conteúdo
-seo-title: Mobile with Content Sync
+title: Sincronização de conteúdo para Adobe PhoneGap Enterprise com AEM
 description: Siga esta página para saber mais sobre a Sincronização de conteúdo para Adobe PhoneGap Enterprise com o AEM.
-seo-description: Follow this page to learn about Content Sync for Adobe PhoneGap Enterprise with AEM.
 uuid: c3a82171-e070-4e32-b1ef-26e65ae23d99
 contentOwner: User
 content-type: reference
@@ -11,9 +9,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 923fc031-1a06-4a9d-94da-a2a4e82c54ee
 docset: aem65
 exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '2971'
+source-wordcount: '2975'
 ht-degree: 0%
 
 ---

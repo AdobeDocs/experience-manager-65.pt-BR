@@ -1,8 +1,6 @@
 ---
-title: Atalhos de teclado para Consoles
-seo-title: Keyboard Shortcuts for Consoles
+title: Atalhos de teclado para os consoles
 description: Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se ao uso dos consoles, outros à edição de página.
-seo-description: Various keyboard shortcuts are available throughout AEM. Some apply to the use of consoles, others to page editing.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 exl-id: 8cc9200e-981d-468f-b2bd-cd44e9a02bb5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 97%
+ht-degree: 33%
 
 ---
 
@@ -25,9 +23,9 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se 
 >
 >Multisseleção em um dispositivo de desktop:
 >
->* Windows: **Ctrl**+**clique** nos componentes necessários.
+>* Windows: **Ctrl**+**click** nos componentes necessários.
 >
->* Mac: **Cmd**+**clique** nos componentes necessários.
+>* Mac: **Cmd**+**click** nos componentes necessários.
 >
 
 
@@ -43,10 +41,9 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se 
   <tr>
    <td>Console</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> (na página desejada)</td>
-   <td>Abrir a página em uma nova janela.<br />
-<strong>Observação:</strong> isso funcionará se as <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propriedades do usuário</a> estiverem definidas como Janela única, caso sejam Janelas múltiplas, esse comportamento é padrão.</td>
+   <td>Abra a página em uma nova janela.<br /> <strong>Observação:</strong> é operacional se a variável <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propriedades do usuário</a> são definidas como Janela única; se Várias janelas, esse é o comportamento padrão.</td>
   </tr>
  </tbody>
 </table>
 
-Vários atalhos de teclado também estão disponíveis para usuários de desktops ao usar o [editor de páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para criar páginas.
+Vários atalhos de teclado também estão disponíveis para os usuários da área de trabalho ao usar a variável [editor de páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para criar páginas.

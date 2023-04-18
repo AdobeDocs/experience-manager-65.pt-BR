@@ -1,15 +1,13 @@
 ---
-title: Commerce Cloud SAP
-seo-title: SAP Commerce Cloud
+title: Implantar o eCommerce com o SAP Commerce Cloud
 description: Saiba como implantar o eCommerce com o SAP Commerce Cloud.
-seo-description: Learn how to deploy eCommerce with SAP Commerce Cloud.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '724'
 ht-degree: 2%
 
 ---

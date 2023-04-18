@@ -1,8 +1,6 @@
 ---
-title: Aplicativos móveis
-seo-title: Mobile Apps
+title: Administração de aplicativos móveis
 description: Siga esta página para começar a administrar conteúdo em aplicativos móveis.
-seo-description: Follow this page to get started with administering content for mobile apps.
 uuid: 0ef31513-b720-46cb-b162-35883ae48912
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -10,10 +8,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 302d1bd9-fdb3-4db6-a446-6ed85ad9fba5
 exl-id: dc7ba6ad-9df9-4312-a82f-5f3405dea684
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 4%
+source-wordcount: '132'
+ht-degree: 3%
 
 ---
 

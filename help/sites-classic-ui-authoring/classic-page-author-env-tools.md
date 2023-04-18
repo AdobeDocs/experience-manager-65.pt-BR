@@ -1,8 +1,6 @@
 ---
-title: Criação - o Ambiente e as ferramentas
-seo-title: Authoring - the Environment and Tools
-description: O console Sites permite gerenciar e navegar em seu site. Usando dois painéis, a estrutura de seu site pode ser expandida e as ações executadas nos elementos necessários.
-seo-description: The Websites console allows you to manage and navigate your website. Using two panes, the structure of your website can be expanded and actions taken on the required elements.
+title: Criação - o ambiente e as ferramentas
+description: O console Sites permite gerenciar e navegar em seu site. Usando dois painéis, a estrutura do site pode ser expandida e as ações executadas nos elementos necessários.
 uuid: 0a9ce725-042a-4697-81fe-ac86cbab0398
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,26 +9,26 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 85%
+source-wordcount: '898'
+ht-degree: 6%
 
 ---
 
-# Criação - o Ambiente e as ferramentas {#authoring-the-environment-and-tools}
+# Criação - o ambiente e as ferramentas {#authoring-the-environment-and-tools}
 
 O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo. As ferramentas fornecidas são acessadas de vários consoles e editores de página.
 
-## Adminsitração do site {#site-administration}
+## Administração do site {#site-administration}
 
-O console **Sites** permite gerenciar e navegar em seu site. Usando dois painéis, a estrutura de seu site pode ser expandida e as ações executadas no elemento necessário:
+O **Sites** O console permite gerenciar e navegar em seu site. Usando os dois painéis, a estrutura do seu site pode ser expandida e as ações executadas no elemento necessário:
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
 ## Editar o seu conteúdo da página {#editing-your-page-content}
 
-Há um editor de página separado com a interface de usuário clássica, com o uso do Localizador de conteúdo e do sidekick:
+Há um editor de página separado com a interface clássica, usando o localizador de conteúdo e o sidekick:
 
 `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
@@ -38,25 +36,25 @@ Há um editor de página separado com a interface de usuário clássica, com o u
 
 ## Acessar ajuda   {#accessing-help}
 
-Vários recursos de **Ajuda** podem ser acessados diretamente de dentro do AEM:
+Vários **Ajuda** os recursos podem ser acessados diretamente do AEM:
 
-Além de acessar a [ ajuda nas barras de ferramentas do console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), você também pode acessá-la do sidekick (usando o  ícone ?) ao editar uma página:
+Além de acessar [ajuda das barras de ferramentas do console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), você também pode acessar a ajuda do sidekick (usando o ícone ) ao editar uma página:
 
 ![](do-not-localize/sidekick-collapsed-2.png)
 
-Ou usando o botão **Ajuda**, na caixa de diálogo Editar, de componentes específicos; isso mostrará a ajuda sensível ao contexto.
+Ou usando o **Ajuda** na caixa de diálogo Editar de componentes específicos; isso mostrará a ajuda sensível ao contexto.
 
 ## Sidekick {#sidekick}
 
-A guia **Componentes** do sidekick permite navegar nos componentes disponíveis para adição à página atual. O grupo necessário pode ser expandido e, em seguida, um componente pode ser arrastado para o local necessário na página.
+O **Componentes** da guia do sidekick permite navegar pelos componentes disponíveis para adicioná-los à página atual. O grupo necessário pode ser expandido e, em seguida, um componente pode ser arrastado para o local desejado na página.
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
 ## O Localizador de conteúdo {#the-content-finder}
 
-O Localizador de conteúdo é uma forma rápida e fácil de localizar ativos e/ou conteúdo no repositório durante a edição de uma página.
+O Localizador de conteúdo é uma maneira rápida e fácil de localizar ativos e/ou conteúdo no repositório ao editar uma página.
 
-Use o Localizador de conteúdo para localizar uma gama de recursos. Quando apropriado, você pode arrastar um item e soltá-lo em um parágrafo na página:
+Você pode usar o localizador de conteúdo para localizar uma gama de recursos. Quando apropriado, você pode arrastar um item e soltá-lo em um parágrafo na página:
 
 * [Imagens](#finding-images)
 * [Documentos](#finding-documents)
@@ -66,41 +64,41 @@ Use o Localizador de conteúdo para localizar uma gama de recursos. Quando aprop
 
 * [Parágrafos](#referencing-paragraphs-from-other-pages)
 * [Produtos](#products)
-* Ou para [navegar pelo site através da estrutura de repositório](#the-content-finder)
+* Ou para [navegar pelo site por estrutura de repositório](#the-content-finder)
 
-Com todas as opções, você pode [pesquisar itens específicos](#the-content-finder).
+Com todas as opções é possível [procurar itens específicos](#the-content-finder).
 
-### Pesquisar imagens {#finding-images}
+### Encontrar imagens {#finding-images}
 
 Esta guia lista as imagens no repositório.
 
-Depois que você criar um parágrafo de Imagem na página, poderá arrastar um item e soltá-lo no parágrafo.
+Após criar um parágrafo de Imagem na página, você pode arrastar um item e soltá-lo no parágrafo.
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
-### Pesquisar documentos {#finding-documents}
+### Encontrar documentos {#finding-documents}
 
 Esta guia lista os documentos no repositório.
 
-Depois que você criar um parágrafo de Download na página, poderá arrastar um item e soltá-lo no parágrafo.
+Após criar um parágrafo de Download na página, você pode arrastar um item e soltá-lo no parágrafo.
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
-### Pesquisar filmes {#finding-movies}
+### Encontrar filmes {#finding-movies}
 
-Esta guia lista os filmes (por exemplo, itens Flash) no repositório.
+Esta guia lista todos os filmes (por exemplo, itens de Flash) no repositório.
 
-Depois que você criar um parágrafo apropriado (por exemplo, Flash) na página, poderá arrastar um item e soltá-lo no parágrafo.
+Após criar um parágrafo apropriado (por exemplo, Flash) na página, você pode arrastar um item e soltá-lo no parágrafo.
 
 ![chlimage_1-113](assets/chlimage_1-113.png)
 
 ### Produtos {#products}
 
-Esta guia lista os produtos. Depois que você criar um parágrafo apropriado (por exemplo, Produto) na página, poderá arrastar um item e soltá-lo no parágrafo.
+Esta guia lista os produtos. Após criar um parágrafo apropriado (por exemplo, Produto) na página, você pode arrastar um item e soltá-lo no parágrafo.
 
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
-### Encontrar páginas {#finding-pages}
+### Encontrando páginas {#finding-pages}
 
 Esta guia mostra todas as páginas. Clique duas vezes em qualquer página para abri-la para edição.
 
@@ -108,11 +106,11 @@ Esta guia mostra todas as páginas. Clique duas vezes em qualquer página para a
 
 ### Referência a parágrafos de outras páginas {#referencing-paragraphs-from-other-pages}
 
-Esta guia permite procurar outra página. Todos os parágrafos dessa página serão listados. Em seguida, você pode arrastar um parágrafo para a página atual, isso criará uma referência para o parágrafo original.
+Essa guia permite procurar outra página. Todos os parágrafos dessa página serão listados. Em seguida, você pode arrastar um parágrafo para a página atual, isso criará uma referência para o parágrafo original.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-### Usar a visão completa de repositório {#using-the-full-repository-view}
+### Uso da visualização completa do repositório {#using-the-full-repository-view}
 
 Esta guia mostra todos os recursos no repositório.
 
@@ -124,7 +122,7 @@ Em todas as opções, você pode procurar itens específicos. As tags e os recur
 
 ![screen_shot_2012-02-08at100746am](assets/screen_shot_2012-02-08at100746am.png)
 
-Também é possível usar curingas para a pesquisa. Caracteres com suporte:
+Também é possível usar curingas para pesquisa. Os curingas compatíveis são:
 
 * `*`
 corresponde a uma sequência de zero ou mais caracteres.
@@ -134,13 +132,13 @@ corresponde a um único caractere.
 
 >[!NOTE]
 >
->Existe um “nome” de pseudopropriedade que deve ser usado para realizar uma pesquisa de curinga.
+>Há uma pseudopropriedade &quot;name&quot; que deve ser usada para executar uma pesquisa curinga.
 
 Por exemplo, se houver uma imagem disponível com o nome:
 
 `ad-nmvtis.jpg`
 
-os seguintes padrões de pesquisa vão encontrá-la (e qualquer outra imagem correspondente ao padrão):
+os seguintes padrões de pesquisa o encontrarão (e qualquer outra imagem correspondente ao padrão):
 
 * `name:*nmv*`
 * `name:AD*`
@@ -153,13 +151,13 @@ você pode usar qualquer número de curingas em um query.
 >
 >Você também pode usar [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) pesquisar.
 
-## Exibição de referências {#showing-references}
+## Mostrando referências {#showing-references}
 
-O AEM permite exibir quais páginas estão vinculadas à página em que você está trabalhando no momento.
+AEM permite visualizar quais páginas estão vinculadas à página em que você está trabalhando no momento.
 
 Para mostrar referências de página diretas:
 
-1. No sidekick, selecione o ícone de guia **Página.**
+1. No sidekick, selecione o **Página** ícone de guia.
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
@@ -167,18 +165,18 @@ Para mostrar referências de página diretas:
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
-Em determinadas situações outras ações estão disponíveis no Sidekick, incluindo:
+Em determinadas situações, outras ações estão disponíveis no Sidekick, incluindo:
 
 * [Lançamentos](/help/sites-classic-ui-authoring/classic-launches.md)
 * [Live Copies](/help/sites-administering/msm.md)
 
 * [Blueprint](/help/sites-administering/msm-best-practices.md)
 
-Outros [relacionamentos entre páginas podem ser vistos no console Sites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
+Outras [relacionamentos entre páginas podem ser vistos no console Sites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
 ## Log de auditoria {#audit-log}
 
-O **Log de auditoria** pode ser acessado na guia **Informações** do sidekick. Ele lista as ações recentes executadas na página atual; por exemplo:
+O **Log de auditoria** pode ser acessada do **Informações** guia do sidekick. Ele lista as ações recentes executadas na página atual; por exemplo:
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -188,25 +186,28 @@ O console Site também [fornece informações sobre o status atual da página](/
 
 ## Modos de página   {#page-modes}
 
-Durante a edição de uma página com a interface de usuário clássica, há vários modos que podem ser acessados com o uso de ícones na parte inferior do sidekick:
+Ao editar uma página com a interface clássica, há vários modos que podem ser acessados usando os ícones na parte inferior do sidekick:
 
 ![](do-not-localize/chlimage_1-12.png)
 
-Os ícones na parte inferior do Sidekick são usados para alternar os modos de trabalho com as páginas:
+A linha de ícones na parte inferior do Sidekick são usados para alternar os modos de trabalho com as páginas:
 
-* [Edição](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md) Esse é o modo padrão e permite a você editar a página, adicionando ou excluindo componentes e fazendo outras alterações.
+* [Editar](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
+Esse é o modo padrão e permite que você edite a página, adicionando ou excluindo componentes e fazendo outras alterações.
 
-* [Visualização](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) Esse modo permite visualizar a página como se ela estivesse aparecendo no site em sua forma final.
+* [Visualizar](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
+Esse modo permite visualizar a página como se ela estivesse aparecendo no site em sua forma final.
 
-* [Design](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0) Nesse modo, você tem a possibilidade de editar o design da página configurando os componentes acessíveis.
+* [Design](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
+Nesse modo, você tem a possibilidade de editar o design da página configurando os componentes acessíveis.
 
 >[!NOTE]
 >
->Também há outras opções disponíveis:
+>Outras opções também estão disponíveis:
 >
 >* [Andaime](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
 >* [ClientContext](/help/sites-administering/client-context.md)
->* Websites - abrirá o console Websites.
+>* Sites - abrirá o console Sites.
 >* Recarregar - atualizará a página.
 
 

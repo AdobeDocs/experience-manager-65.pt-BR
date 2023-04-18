@@ -1,8 +1,6 @@
 ---
-title: Sua caixa de entrada
-seo-title: Your Inbox
-description: Gerenciar suas tarefas com a caixa de entrada
-seo-description: Managing your tasks with the inbox
+title: Sua Caixa de entrada para gerenciar tarefas
+description: Gerenciando suas tarefas com a caixa de entrada.
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,35 +8,35 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '1140'
-ht-degree: 77%
+source-wordcount: '1143'
+ht-degree: 28%
 
 ---
 
 # Sua caixa de entrada{#your-inbox}
 
-Você pode receber notificações de diversas áreas do AEM, incluindo fluxos de trabalho e projetos; por exemplo, sobre:
+Você pode receber notificações de várias áreas de AEM, incluindo fluxos de trabalho e projetos; por exemplo, sobre:
 
 * Tarefas:
 
-   * elas também podem ser criadas em vários pontos da interface do usuário do AEM, por exemplo, em **Projetos**,
-   * podem ser o produto de uma etapa de fluxo de trabalho **Criar tarefa** ou **Criar tarefa do projeto**.
+   * eles também podem ser criados em vários pontos da interface do usuário do AEM, por exemplo, em **Projetos**,
+   * podem ser o produto de um fluxo de trabalho **Criar tarefa** ou **Criar tarefa do projeto** etapa.
 
 * Fluxos de trabalhos:
 
-   * itens de trabalho que representam as ações que devem ser executadas no conteúdo da página;
+   * itens de trabalho que representam as ações que você precisa executar no conteúdo da página;
 
-      * estes são o produto de etapas do fluxo de trabalho **Participante**
+      * estes são o produto do fluxo de trabalho **Participante** etapas
    * itens de falha, para permitir que os administradores tentem novamente a etapa que falhou.
 
 
-Você recebe essas notificações em sua própria caixa de entrada, onde você pode visualizá-las e executar a ação necessária.
+Você recebe essas notificações em sua própria Caixa de entrada, onde pode visualizá-las e tomar medidas.
 
 >[!NOTE]
 >
->O AEM pronto para uso vem pré-carregado com tarefas administrativas atribuídas ao grupo de usuários administradores. Para obter detalhes, consulte [Tarefas administrativas prontas para uso](#out-of-the-box-administrative-tasks).
+>O AEM pronto para uso vem pré-carregado com tarefas administrativas atribuídas ao grupo de usuários administradores. Consulte [Tarefas administrativas prontas para uso](#out-of-the-box-administrative-tasks) para obter detalhes.
 
 >[!NOTE]
 >
@@ -53,7 +51,7 @@ Você recebe essas notificações em sua própria caixa de entrada, onde você p
 
 ## Caixa de entrada no cabeçalho {#inbox-in-the-header}
 
-De qualquer um dos consoles, o número atual de itens em sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que requerem ações ou acesso à caixa de entrada:
+De qualquer um dos consoles, o número atual de itens na sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que exigem ações ou acesso à caixa de entrada:
 
 ![wf-80](assets/wf-80.png)
 
@@ -63,7 +61,7 @@ De qualquer um dos consoles, o número atual de itens em sua caixa de entrada é
 
 ## Tarefas administrativas prontas para uso  {#out-of-the-box-administrative-tasks}
 
-O AEM pronto para uso vem pré-carregado com quatro tarefas atribuídas ao grupo de usuários do administrador.
+O AEM pronto para uso vem pré-carregado com quatro tarefas atribuídas ao grupo de usuários administradores.
 
 * [Configurar Analytics e Targeting](/help/sites-administering/opt-in.md)
 * [Aplicar a lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md)
@@ -79,7 +77,7 @@ Para abrir a caixa de entrada de notificação do AEM:
 1. Selecione **Exibir todos**. A **Caixa de entrada do AEM** será aberta. A caixa de entrada mostra itens de fluxos de trabalho, projetos e tarefas.
 1. A exibição padrão é [Exibição em lista](#inbox-list-view), mas você também pode alternar para [Exibição de calendário](#inbox-calendar-view). Isso é feito com o seletor de visualização (barra de ferramentas, parte superior direita).
 
-   Para ambas as exibições você também pode definir [Configurações de exibição](#inbox-view-settings); as opções disponíveis dependem da exibição atual.
+   Para ambas as exibições você também pode definir [Exibir configurações](#inbox-view-settings); as opções disponíveis dependem da exibição atual.
 
    ![wf-79](assets/inbox-list-view.png)
 
@@ -89,7 +87,7 @@ Para abrir a caixa de entrada de notificação do AEM:
 
 ### Caixa de entrada - exibição de lista {#inbox-list-view}
 
-Essa exibição lista todos os itens, juntamente com informações principais relevantes:
+Esta exibição lista todos os itens, juntamente com as principais informações relevantes:
 
 ![wf-82](assets/wf-82.png)
 
@@ -103,9 +101,9 @@ Essa exibição apresenta itens de acordo com sua posição no calendário e a e
 
 * selecionar uma exibição específica; **Linha do tempo**, **Coluna**, **Lista**
 
-* especificar as tarefas a serem exibidas de acordo com **Agendamento**; **Todos**, **Planejado**, **Em andamento**, **Vencimento em breve**, **Vencido**
+* especifique as tarefas a serem exibidas de acordo com **Agendar**; **Todos**, **Planejado**, **Em Andamento**, **Em breve**, **Vencimento Anterior**
 
-* abra o detalhamento para obter mais informações sobre um item
+* detalhar para obter informações mais detalhadas sobre um item
 * selecione um intervalo de datas para focalizar na exibição:
 
 ![wf-91](assets/wf-91.png)
@@ -116,7 +114,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
 * **Exibição de calendário**
 
-   Para a **Exibição de calendário** é possível configurar:
+   Para **Exibição de calendário** você pode configurar:
 
    * **Agrupar por**
    * **Agendamento** ou **Nenhum**
@@ -126,7 +124,7 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
 * **Exibição de lista**
 
-   Para a **Exibição de lista**, você pode configurar o mecanismo de classificação:
+   Para **Exibição de lista** você pode configurar o mecanismo de classificação:
 
    * **Classificar campo**
    * **Ordem de classificação**
@@ -170,7 +168,7 @@ A opção Controle de administrador está visível somente para os membros do `a
 >Embora seja possível selecionar mais de um item, ações só podem ser executadas em um item de cada vez.
 
 
-1. Para executar uma ação em um item, selecione a miniatura do item apropriado. Os ícones de ações aplicáveis a esse item serão mostrados na barra de ferramentas:
+1. Para executar uma ação em um item, selecione a miniatura do item apropriado. Os ícones das ações aplicáveis a esse item serão mostrados na barra de ferramentas:
 
    ![wf-84](assets/wf-84.png)
 
@@ -178,11 +176,11 @@ A opção Controle de administrador está visível somente para os membros do `a
 
    * **Concluir** ação; por exemplo, uma tarefa ou item de fluxo de trabalho.
    * **Atribuir novamente**/**Delegar** um item.
-   * **Abrir** um item; dependendo do tipo de item, essa ação pode:
+   * **Abrir** Um artigo; dependendo do tipo de item, essa ação pode:
 
       * mostrar as propriedades do item
-      * abrir um painel ou um assistente apropriado para uma futura ação
-      * abrir a documentação relacionada
+      * abrir um painel ou assistente apropriado para uma nova ação
+      * abrir documentação relacionada
    * **Recuar** para uma etapa anterior.
    * Visualizar a carga de um fluxo de trabalho.
    * Criar um projeto a partir do item.
@@ -206,24 +204,24 @@ A opção Controle de administrador está visível somente para os membros do `a
 
    Se uma caixa de diálogo, um assistente ou uma página de documentação tiver sido aberta, é possível:
 
-   * Confirmar a ação apropriada; por exemplo Atribuir novamente.
+   * Confirmar a ação adequada; Por exemplo, Atribuir novamente.
    * Cancelar a ação.
-   * Voltar usando a tecla Backspace; por exemplo, se um assistente de ação ou uma página de documentação tiverem sido abertos, você poderá retornar à Caixa de entrada.
+   * Seta para trás; por exemplo, se um assistente de ação ou uma página de documentação tiver sido aberta, você poderá retornar à Caixa de entrada.
 
 
 ## Criação de uma tarefa {#creating-a-task}
 
-Na caixa de entrada, você pode criar tarefas:
+Na caixa de entrada, é possível criar tarefas:
 
-1. Selecione **Criar**, **Tarefa**.
-1. Preencha os campos necessários nas guias **Básicas** e **Avançadas**. Somente o **Título** é obrigatório, todos os demais são opcionais:
+1. Selecionar **Criar**, em seguida **Tarefa**.
+1. Preencha os campos necessários no **Básico** e **Avançado** guias; somente a variável **Título** é obrigatório, todas as outras são opcionais:
 
    * **Básico**:
 
       * **Título**
       * **Projeto**
       * **Destinatário**
-      * **Conteúdo;** semelhante a Carga, essa é uma referência da tarefa a um local no repositório
+      * **Conteúdo**; semelhante a Carga, essa é uma referência da tarefa a um local no repositório
       * **Descrição**
       * **Prioridade da tarefa**
       * **Data inicial**
@@ -243,16 +241,16 @@ Na caixa de entrada, você pode criar tarefas:
 
 Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/projects.md) com base nessa tarefa:
 
-1. Toque ou clique na miniatura para selecionar a tarefa apropriada.
+1. Selecione a tarefa apropriada tocando/clicando na miniatura.
 
    >[!NOTE]
    >
    >Somente tarefas criadas usando a opção **Criar** da **Caixa de entrada** podem ser usadas para criar um projeto.
    >
-   >Itens de trabalho (de um fluxo de trabalho) não podem ser usado para criar um projeto.
+   >Itens de trabalho (de um fluxo de trabalho) não podem ser usados para criar um projeto.
 
 1. Selecione **Criar projeto** na barra de ferramentas para abrir o assistente.
-1. Selecione o modelo apropriado e, em seguida, clique em **Avançar**.
+1. Selecione o modelo apropriado e **Próximo**.
 1. Especifique as propriedades necessárias:
 
    * **Básico**
@@ -261,15 +259,15 @@ Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/p
       * **Descrição**
       * **Data inicial**
       * **Data de vencimento**
-      * **Usuário** e função
+      * **Usuário** e papel
    * **Avançado**
 
       * **Nome**
    >[!NOTE]
    >
-   >Consulte [Criação de um projeto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) para obter as informações completas.
+   >Consulte [Criação de um projeto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) para obter informações completas.
 
-1. Selecione **Criar** para confirmar a ação.
+1. Selecionar **Criar** para confirmar a ação.
 
 ## Filtrar itens na Caixa de entrada do AEM {#filtering-items-in-the-aem-inbox}
 
@@ -281,7 +279,7 @@ Você pode filtrar os itens listados:
 
    ![wf-88](assets/wf-88.png)
 
-1. É possível filtrar os itens listados de acordo com uma variedade de critérios, muitos dos quais pode ser refinados; por exemplo:
+1. Você pode filtrar os itens listados de acordo com uma variedade de critérios, muitos dos quais podem ser refinados; por exemplo:
 
    ![wf-89](assets/wf-89.png)
 

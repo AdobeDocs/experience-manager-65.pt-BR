@@ -1,8 +1,6 @@
 ---
-title: AEM Mobile On-Demand
-seo-title: AEM Mobile On-Demand
-description: Siga esta página para começar a administrar AEM aplicativo móvel On-Demand Services. Ele fornece uma visão geral das funções e responsabilidades de um administrador de AEM para serviços sob demanda.
-seo-description: Follow this page to get started with administering AEM mobile On-Demand services app. It provides an overview of the roles and responsibilities of an AEM administrator for On-Demand services.
+title: Introdução aos serviços móveis sob demanda da Adobe Experience Manager
+description: Introdução à administração AEM aplicativo móvel On-Demand Services. Ele fornece uma visão geral das funções e responsabilidades de um administrador de AEM para serviços sob demanda.
 uuid: fd99c032-287a-489b-9690-b18980c55c29
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -10,9 +8,9 @@ content-type: reference
 topic-tags: administering-on-demand-services-app
 discoiquuid: 5e1e6a51-67e1-42e3-bcb0-e16bc92c9cb3
 exl-id: 95cbedaf-9a94-45fa-8ddb-15be7a09f86d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ff7e37f24990a94510331a33cb05b7b44b3bfe85
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '296'
 ht-degree: 2%
 
 ---

@@ -1,8 +1,6 @@
 ---
-title: Pesquisar
-seo-title: Search
-description: Localize seu conteúdo mais com mais rapidez usando uma pesquisa abrangente
-seo-description: Find your content faster with comprehensive search
+title: Pesquisa abrangente
+description: Encontre seu conteúdo mais rapidamente com uma pesquisa abrangente.
 uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,20 +9,20 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 96%
+source-wordcount: '504'
+ht-degree: 57%
 
 ---
 
-# Pesquisar  {#searching}
+# Pesquisar{#searching}
 
 O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteúdo, dependendo do tipo de recurso.
 
 >[!NOTE]
 >
->Fora do ambiente de criação, outros mecanismos também estão disponíveis para a pesquisa, como o [Construtor de consultas](/help/sites-developing/querybuilder-api.md) e o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Fora do ambiente de criação, outros mecanismos também estão disponíveis para pesquisa, como o [Query Builder](/help/sites-developing/querybuilder-api.md) e [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Noções básicas de pesquisa {#search-basics}
 
@@ -46,7 +44,7 @@ Com o painel de pesquisa, você pode:
 
 Para pesquisar e filtrar os recursos:
 
-1. Abra **Pesquisar** (com a lupa na barra de ferramentas) e insira o termo de pesquisa. Serão feitas sugestões que poderão ser selecionadas:
+1. Abrir **Pesquisar** (com a lupa na barra de ferramentas) e insira o termo de pesquisa. As sugestões serão feitas e poderão ser selecionadas:
 
    ![s-01](assets/s-01.png)
 
@@ -72,16 +70,16 @@ Para pesquisar e filtrar os recursos:
    * Pesquisas salvas
    * Diretório de pesquisa
    * Tags
-   * Critérios de pesquisa; por exemplo, datas modificadas, status de publicação, status da Live Copy. 
+   * Critérios de pesquisa; por exemplo, datas modificadas, status de publicação, status da Live Copy.
 
    >[!NOTE]
    >
-   >O critério de pesquisa pode variar:
+   >Os critérios de pesquisa podem variar:
    >
    >
    >
    >    * Dependendo do tipo de recurso selecionado; por exemplo, os critérios de Ativos e comunidades são compreensivelmente especializados.
-   >    * Sua instância, como os [Formulários de pesquisa,](/help/sites-administering/search-forms.md) pode ser personalizada (adequada ao local no AEM).
+   >    * Sua instância como a [Pesquisar Forms](/help/sites-administering/search-forms.md) pode ser personalizada (adequada ao local no AEM).
 
 
    ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
@@ -94,7 +92,7 @@ Para pesquisar e filtrar os recursos:
 
 >[!NOTE]
 >
->Os critérios de pesquisa persistem ao selecionar um item nos resultados de pesquisa.
+>Os critérios de pesquisa persistem ao selecionar um item nos resultados da pesquisa.
 >
 >Quando você seleciona um item na página de resultados da pesquisa e retorna à página de pesquisa após usar o botão Voltar do navegador, os critérios de pesquisa permanecem.
 
@@ -102,7 +100,7 @@ Para pesquisar e filtrar os recursos:
 
 Além de pesquisar por uma grande variedade de aspectos, também é possível salvar uma configuração de pesquisa específica para recuperar e usar em um estágio posterior:
 
-1. Defina o seu critério de pesquisa e selecione **Salvar**.
+1. Defina seus critérios de pesquisa e selecione **Salvar**.
 
    ![screen-shot_2019-03-05at102613-1](assets/screen-shot_2019-03-05at102613-1.png)
 
@@ -114,10 +112,10 @@ Além de pesquisar por uma grande variedade de aspectos, também é possível sa
 
    ![screen-shot_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
 
-1. Depois de salvo é possível:
+1. Depois de salvo, você pode:
 
-   * Use **X** (em comparação ao nome da pesquisa salva) para iniciar uma nova consulta (a própria pesquisa salva não será excluída).
-   * **Edite a pesquisa salva**, altere as condições de pesquisa e, em seguida, **Salve** novamente.
+   * Use **x** (em comparação ao nome da pesquisa salva) para iniciar uma nova consulta (a própria pesquisa salva não será excluída).
+   * **Editar pesquisa salva**, altere as condições de pesquisa e **Salvar** novamente.
 
 As pesquisas salvas podem ser modificadas ao selecionar a pesquisa salva e clicar em **Editar pesquisa salva** na parte inferior do painel de pesquisa.
 

@@ -1,8 +1,6 @@
 ---
-title: Atalhos de teclado ao editar as páginas
-seo-title: Keyboard Shortcuts when Editing Pages
+title: Atalhos de teclado ao editar páginas de conteúdo
 description: Vários atalhos do teclado estão disponíveis em todo o AEM, inclusive alguns para edição de páginas
-seo-description: Various keyboard shortcuts are available throughout AEM, including some for page editing
 uuid: bf9428fc-73b5-499f-b9ed-62fa72272126
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +8,14 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 90%
+source-wordcount: '222'
+ht-degree: 80%
 
 ---
 
-# Atalhos de teclado ao editar as páginas{#keyboard-shortcuts-when-editing-pages}
+# Atalhos de teclado ao editar páginas{#keyboard-shortcuts-when-editing-pages}
 
 Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplicáveis ao editar páginas, outros para o [uso de consoles](/help/sites-authoring/keyboard-shortcuts.md).
 
