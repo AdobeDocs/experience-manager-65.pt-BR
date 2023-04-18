@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 252924afb70dd311a27d04278fbe363db15e9519
+source-git-commit: 9273282b26aeab5f65f0f05aa8ad754962dc59ec
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Um usuário de serviço chamado **ssl-service** O foi criado para este recurso. 
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Depois de inserir as credenciais, clique em **Próximo** no canto superior direito da página. Em seguida, carregue a chave privada associada e o certificado para a conexão SSL.
+1. Depois de inserir as credenciais, clique em **Próximo** no canto superior direito da página. Em seguida, carregue a chave privada associada e o certificado para a conexão SSL/TLS.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -152,7 +152,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 ### Via Pacote {#via-package}
 
-Como alternativa, você pode automatizar a configuração do SSL carregando um pacote que já contém estes itens necessários:
+Como alternativa, você pode automatizar a configuração do SSL/TLS carregando um pacote que já contém estes itens necessários:
 
 * O repositório de chaves do usuário do serviço ssl. Está localizado em */home/users/system/security/ssl-service/keystore* no repositório.
 * O `GraniteSslConnectorFactory` configuração
@@ -178,7 +178,7 @@ Abaixo você encontrará um exemplo para criar um certificado autoassinado no fo
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
-1. Gere o certificado SSL e assine-o com a chave privada. Neste exemplo, expirará um ano a partir de agora:
+1. Gere o certificado SSL/TLS e assine-o com a chave privada. Neste exemplo, expirará um ano a partir de agora:
 
    ```shell
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
