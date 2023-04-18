@@ -3,10 +3,10 @@ title: Configure o Editor de rich text para criar conteúdo no Adobe Experience 
 description: Saiba como configurar o Editor de Rich Text do Adobe Experience Manager para criar conteúdo no Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
 workflow-type: tm+mt
-source-wordcount: '3020'
-ht-degree: 1%
+source-wordcount: '3021'
+ht-degree: 0%
 
 ---
 
@@ -44,12 +44,12 @@ A interface habilitada para toque é a interface de usuário padrão do Experien
 
 Os autores podem criar e editar conteúdo textual no Experience Manager usando os diferentes modos de componentes. As opções da barra de ferramentas para criação e formatação de conteúdo e a experiência do usuário de componentes habilitados para RTE em diferentes modos de edição variam com base nas configurações de RTE.
 
-| Modo de edição | Área de edição | Recursos recomendados a serem ativados | Interface de toque | Interface do usuário clássica |
+| Modo de edição | Área de edição | Recursos recomendados a serem ativados | Interface de toque | IU Clássica |
 |--- |--- |--- |--- |--- |
-| Inline | Edição no local para edições rápidas e secundárias; Formatar sem abrir uma caixa de diálogo | Recursos mínimos do RTE | S | S |
-| Tela cheia do RTE | Capa a página inteira | Todos os recursos RTE necessários | S | N |
-| Caixa de diálogo | Caixa de diálogo na parte superior do conteúdo da página, mas não cobre a página inteira | Todos os recursos de RTE necessários na interface clássica; Habilite criteriosamente os recursos na interface do usuário de toque | S | S |
-| Tela cheia da caixa de diálogo | Igual ao modo de tela cheia; contém campos da caixa de diálogo ao lado do RTE | Todos os recursos RTE necessários | S | N |
+| Inline | Edição no local para edições rápidas e secundárias; Formatar sem abrir uma caixa de diálogo | Recursos mínimos do RTE | Y | Y |
+| Tela cheia do RTE | Capa a página inteira | Todos os recursos RTE necessários | Y | N |
+| Caixa de diálogo | Caixa de diálogo na parte superior do conteúdo da página, mas não cobre a página inteira | Todos os recursos de RTE necessários na interface clássica; Habilite criteriosamente os recursos na interface do usuário de toque | Y | Y |
+| Tela cheia da caixa de diálogo | Igual ao modo de tela cheia; contém campos da caixa de diálogo ao lado do RTE | Todos os recursos RTE necessários | Y | N |
 
 >[!NOTE]
 >
@@ -259,7 +259,7 @@ As opções disponíveis no RTE fluem downstream das configurações da interfac
 * Se a configuração da interface do usuário do RTE tiver sido removida ou não ativar um item, a política de conteúdo não poderá configurá-la.
 * Um autor tem acesso somente à funcionalidade disponibilizada pelas configurações da interface do usuário e pelas políticas de conteúdo.
 
-Como exemplo, você pode ver a variável [Documentação do componente principal de texto](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+Como exemplo, você pode ver a variável [Documentação do componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=en#the-text-component-and-the-rich-text-editor).
 
 ## Personalizar mapeamento entre ícones e comandos da barra de ferramentas {#iconstoolbar}
 
