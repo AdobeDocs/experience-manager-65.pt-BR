@@ -1,10 +1,10 @@
 ---
-title: Como transmitir credenciais usando cabeçalhos WS-security?
-description: Saiba como transmitir credenciais usando cabeçalhos WS-security
+title: Compactar e descompactar arquivos usando uma AEM Forms no JEE Custom DSC
+description: Saiba como compactar e descompactar arquivos usando um AEM Forms no JEE Custom DSC
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---

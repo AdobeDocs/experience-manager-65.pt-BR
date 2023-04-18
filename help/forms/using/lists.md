@@ -1,8 +1,6 @@
 ---
-title: Fragmentos do documento
-seo-title: Document Fragments
+title: Fragmentos de documento em AEM
 description: Fragmentos de documento, como texto, listas, condições e fragmentos de layout, no Gerenciamento de correspondência permitem que você forme os componentes estáticos, dinâmicos e repetíveis da correspondência do cliente.
-seo-description: Document Fragments, such as Text, lists, conditions, and layout fragments, in Correspondence Management let you form the static, dynamic, and repeatable components of customer correspondence.
 uuid: 4273323d-14f5-4b3b-8fed-80beef641efe
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +8,9 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '6906'
+source-wordcount: '6908'
 ht-degree: 0%
 
 ---
@@ -298,9 +296,12 @@ Com base nas opções escolhidas, somente a primeira expressão que é encontrad
 
 O Editor de condições vem com um [Construtor de expressões](/help/forms/using/expression-builder.md) interface do usuário que suporta a criação de expressões usando vários espaços reservados e elementos do Dicionário de dados. Você pode usar operandos comuns e funções locais / globais nessas expressões. Cada expressão pode ser associada a algum conteúdo e, opcionalmente, pode haver uma seção padrão se nenhuma das expressões for avaliada como true. Todas as expressões são avaliadas na sequência em que são definidas e as primeiras expressões que retornam true são selecionadas e seu conteúdo associado é retornado por esse módulo condicional.
 
-Por exemplo, se o texto dos termos e condições em uma carta for diferente dependendo do estado em que o cliente está e o dicionário de dados contiver um elemento chamado &quot;estado&quot;, você poderá adicionar a condição da seguinte maneira: ・ estado = NY, selecione T&amp;C_NY text parágrafo ・ estado = NC, selecione T&amp;C_NC text parágrafo
+Por exemplo, se o texto dos termos e condições em uma carta for diferente dependendo do estado em que o cliente está e o dicionário de dados contiver um elemento chamado &quot;estado&quot;, você poderá adicionar a condição da seguinte maneira:
+* state = NY, selecione T&amp;C_NY parágrafo de texto
+* state = NC, selecione T&amp;C_NC parágrafo de texto
 
-O Editor de condições permite que você especifique uma condição padrão. Se o valor das variáveis de controle não corresponder a nenhuma das condições, o conteúdo associado à condição padrão será usado. Após o exemplo anterior, é possível adicionar esta linha de condição: ・ Padrão, selecione T&amp;C_Rest
+O Editor de condições permite que você especifique uma condição padrão. Se o valor das variáveis de controle não corresponder a nenhuma das condições, o conteúdo associado à condição padrão será usado. Após o exemplo anterior, é possível adicionar esta linha de condição:
+* Padrão, selecione T&amp;C_Rest
 
 ### Criar uma condição {#create-a-condition}
 

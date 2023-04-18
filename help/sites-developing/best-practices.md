@@ -1,8 +1,6 @@
 ---
-title: Práticas recomendadas
-seo-title: Best Practices
-description: As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM
-seo-description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers
+title: Práticas recomendadas para desenvolvedores de AEM
+description: As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM.
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 19%
+source-wordcount: '466'
+ht-degree: 13%
 
 ---
 
@@ -42,7 +40,7 @@ As seguintes áreas têm documentação disponível específica para o desenvolv
 * [Communities](/help/sites-developing/best-practices.md#communities)
 * [Ferramentas/HTL](/help/sites-developing/best-practices.md#tooling-htl)
 
-Documentos específicos estão descritos e vinculados nas tabelas a seguir.
+Documentos específicos são descritos e vinculados nas tabelas a seguir.
 
 Para obter as práticas recomendadas de administração, implantação e manutenção ou criação, consulte um dos seguintes:
 
@@ -52,7 +50,7 @@ Para obter as práticas recomendadas de administração, implantação e manuten
 
 ## Sites {#sites}
 
-O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas recomendadas descritas a seguir:
+O gerenciamento e a criação do conteúdo do seu site têm algumas práticas recomendadas descritas a seguir:
 
 <table>
  <tbody>
@@ -96,7 +94,7 @@ A Linguagem de modelo de HTML (HTL) é um novo sistema de modelo de HTML, introd
 
 |  |  |  |
 |---|---|---|
-| Visão geral do HTL | [Visão geral e sintaxe do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | Este documento descreve o que é HTL, como mover para HTL, um projeto de amostra, sintaxe, expressões e instruções |
+| Visão geral do HTL | [Visão geral e sintaxe do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) | Este documento descreve o que é HTL, como mover para HTL, um projeto de amostra, sintaxe, expressões e instruções |
 | Uso da API no java | [API de uso do Java do HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | A API de uso do Java do HTL habilita um arquivo HTL para acessar métodos de ajuda em uma classe Java personalizada. |
 
 >[!NOTE]

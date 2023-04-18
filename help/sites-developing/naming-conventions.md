@@ -1,8 +1,6 @@
 ---
-title: Convenções de nomenclatura
-seo-title: Naming Conventions
+title: Como nomear convenções de nós no repositório de conteúdo Jave
 description: Os nós no repositório estão sujeitos às convenções de nomenclatura do Java Content Repository
-seo-description: Nodes in the repository are subject to naming conventions of the Java Content Repository
 uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 21%
+source-wordcount: '308'
+ht-degree: 7%
 
 ---
 
@@ -30,7 +28,7 @@ Essas convenções de nomenclatura são implementadas em vários níveis:
 * De acordo com a interface do usuário que está sendo usada:
 
    * [Interface do usuário padrão e habilitada para toque](#standard-ui)
-   * [Interface do usuário clássica](#classic-ui)
+   * [IU Clássica](#classic-ui)
 
 ### Utilitários JCR {#jcr-utilities}
 
@@ -57,21 +55,21 @@ A interface de usuário padrão habilitada para toque:
 * Valida o nome de acordo com as restrições impostas pelo PageManager quando:
 
    * um título de página é fornecido para conversão no nome do nó
-   * um nome de nó explícito é fornecido
+   * é fornecido um nome de nó explícito
 
-### Interface do usuário clássica {#classic-ui}
+### IU Clássica {#classic-ui}
 
-A interface do usuário clássica impõe restrições mais severas:
+A interface clássica impõe restrições mais severas:
 
 * Valida o nome quando um nome de nó explícito é:
 
    * um título de página é fornecido para conversão no nome do nó
-   * um nome de nó explícito é fornecido
+   * é fornecido um nome de nó explícito
 
 * Caracteres válidos (somente esses caracteres são válidos quando uma página é criada na interface clássica, mesmo que `PageManagerImpl` permitiria caracteres adicionais):
 
-   * “a” a “z”
-   * “A” a “Z”
-   * “0” a “9”
+   * &#39;a&#39; a &#39;z&#39;
+   * &#39;A&#39; a &#39;Z&#39;
+   * &#39;0&#39; a &#39;9&#39;
    * _ (sublinhado)
-   * `-` (traço/subtração)
+   * `-` (traço/menos)

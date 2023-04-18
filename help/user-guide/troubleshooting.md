@@ -1,19 +1,17 @@
 ---
 title: Solução de problemas de AEM
-seo-title: Troubleshooting AEM
 description: Solução de problemas de AEM
-seo-description: Troubleshooting AEM
 exl-id: f7a220bf-0b0c-4d16-824d-dad7d86c01c9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
 source-wordcount: '59'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
 # Solução de problemas de AEM {#troubleshooting-aem}
 
-## Solução de problemas de desempenho da instância do Editor {#performance}
+## Solução de problemas de desempenho da instância do autor {#performance}
 
 [Consulte este guia e dicas para solucionar problemas na instância do autor do AEM.](/help/sites-authoring/troubleshooting.md)
 

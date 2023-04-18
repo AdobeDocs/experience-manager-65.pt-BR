@@ -1,8 +1,6 @@
 ---
-title: Resolução de problemas
-seo-title: Troubleshooting
+title: Solução de problemas da comunidade
 description: Solução de problemas da comunidade, incluindo problemas conhecidos
-seo-description: Troubleshooting Community including Known Issues
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,16 +8,16 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '359'
 ht-degree: 1%
 
 ---
 
-# Resolução de problemas {#troubleshooting}
+# Solução de problemas da comunidade {#troubleshooting}
 
-Esta seção contém preocupações comuns e problemas conhecidos.
+Esta seção contém problemas comuns e problemas conhecidos ao solucionar problemas da Comunidade.
 
 ## Problemas conhecidos {#known-issues}
 

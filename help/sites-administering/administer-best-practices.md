@@ -1,8 +1,6 @@
 ---
-title: Práticas recomendadas
-seo-title: Best Practices
+title: Práticas recomendadas para ajudar os administradores a começar a trabalhar
 description: Descubra as práticas recomendadas compiladas pelas equipes de engenharia e consultoria de Adobe para ajudar os administradores a ativar e executar o processo.
-seo-description: Find best practices compiled by Adobe engineering and consulting teams to help administrators get up and running.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +8,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 17%
+source-wordcount: '531'
+ht-degree: 7%
 
 ---
 
 # Práticas recomendadas    {#best-practices}
 
-As práticas recomendadas descrevem como desenvolver, administrar ou usar AEM da maneira mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
+As práticas recomendadas descrevem como desenvolver, administrar ou usar AEM da maneira mais eficiente e eficaz possível. Esta lista crescente de tópicos inclui uma variedade de áreas em AEM.
 
-As áreas a seguir têm a documentação disponível a respeito das práticas recomendadas:
+As seguintes áreas têm documentação disponível sobre práticas recomendadas:
 
 * [Assets](#assets)
 * [Sites](#sites)
@@ -32,7 +30,7 @@ Para obter as práticas recomendadas de criação, implantação e manutenção 
 * [Práticas recomendadas de desenvolvimento](/help/sites-developing/best-practices.md)
 * [Práticas recomendadas de implantação](/help/sites-deploying/best-practices.md)
 
-Documentos específicos estão descritos e vinculados nas tabelas a seguir.
+Documentos específicos são descritos e vinculados nas tabelas a seguir.
 
 ## Assets {#assets}
 
@@ -70,7 +68,7 @@ As práticas recomendadas referentes ao Assets, incluindo o recurso Dynamic Medi
 
 ## Sites {#sites}
 
-O gerenciamento e a criação do conteúdo do seu site incluem algumas práticas recomendadas descritas a seguir:
+O gerenciamento e a criação do conteúdo do seu site têm algumas práticas recomendadas descritas a seguir:
 
 <table>
  <tbody>

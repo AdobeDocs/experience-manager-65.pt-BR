@@ -1,11 +1,11 @@
 ---
-title: Jornada do arquiteto de conteúdo do AEM Headless
+title: jornada do Adobe Experience Manager Headless Content Architect
 description: Uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager e como modelar o conteúdo para seu projeto.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 89%
+source-wordcount: '704'
+ht-degree: 88%
 
 ---
 
