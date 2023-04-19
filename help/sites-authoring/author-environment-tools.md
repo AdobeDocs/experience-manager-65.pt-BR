@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: bc1f0bd20804bbae78c7ea9a5209e183d6bbaaf3
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 41%
+source-wordcount: '2230'
+ht-degree: 40%
 
 ---
 
@@ -264,7 +264,7 @@ Abra o console e navegue até o recurso desejado, e abra **Linha do tempo** usan
 
 ## Informações da página {#page-information}
 
-As Informações da página (ícone de equalizador) abrem um menu que também fornece os detalhes sobre a última edição e a última publicação. Dependendo das características da página, de seu site e instância, mais ou menos opções podem estar disponíveis:
+O botão Informações da página (ícone de equalizador) abre um menu que também fornece detalhes sobre a última edição e a última publicação. Dependendo das características da página, de seu site e instância, mais ou menos opções podem estar disponíveis:
 
 ![ateat-17](assets/ateat-17.png)
 
@@ -277,7 +277,7 @@ As Informações da página (ícone de equalizador) abrem um menu que também fo
 * [Editar modelo](/help/sites-authoring/templates.md); quando a página for baseada em um [modelo editável](/help/sites-authoring/templates.md#editable-and-static-templates)
 
 * [Exibir como publicado](/help/sites-authoring/editing-content.md#view-as-published)
-* [Exibir no admin](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+* Exibir no Admin; abre a página no [console sites](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Ajuda](/help/sites-authoring/basic-handling.md#accessing-help)
 
 Por exemplo, quando apropriado, **Informações da página** tem também as opções:
