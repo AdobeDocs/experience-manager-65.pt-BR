@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
+source-git-commit: e803fde42cfb7b7c9d3fb6483ca661ce386d6464
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 12%
@@ -464,6 +464,6 @@ Agora, ative os componentes do OAuth. Você pode fazer isso ao:
 Finalmente, confirme a configuração ao:
 
 1. Vá para o endereço da instância de publicação e faça logon como administrador.
-1. Abra uma nova guia no navegador e acesse `http://serveraddress:serverport/services/mailer/oauth2/authorize`. Isso o redirecionará para a página do seu provedor SMTP, neste caso Gmail.
+1. Abra uma nova guia no navegador e acesse `http://serveraddress:serverport/services/mailer/oauth2/authorize`. Isso o redirecionará para a página do provedor SMTP, neste caso o Outlook.
 1. Logon e consentimento para fornecer as permissões necessárias
 1. Após o consentimento, o token será armazenado no repositório. Você pode acessá-lo em `accessToken` acessando diretamente esse URL na sua instância de publicação: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`
