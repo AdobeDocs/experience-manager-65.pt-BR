@@ -4,9 +4,9 @@ description: Uma lista das plataformas de cliente e servidor compatíveis com o 
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: 32af8ee1680bb0a357e64d614f22234ed331d314
 workflow-type: tm+mt
-source-wordcount: '3498'
+source-wordcount: '3513'
 ht-degree: 1%
 
 ---
@@ -89,6 +89,7 @@ A Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
 
 | **Platform** | **Nível de compatibilidade** | **Link** |
 |---|---|---|
+| JDK do Oracle Java™ SE 17 | Z: Não suportado `[1]` |
 | JDK do Oracle Java™ SE 11 - 64 bits | A: Suportado `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | JDK do Oracle Java™ SE 10 | Z: Não suportado `[1]` |
 | JDK do Oracle Java™ SE 9 | Z: Não suportado `[1]` |
@@ -99,7 +100,7 @@ A Adobe Experience Manager opera com as seguintes versões das máquinas virtuai
 | Azul Zulu OpenJDK 8 - 64 bits | A: Suportado `[3]` |  |
 
 1. O Oracle foi transferido para um modelo de &quot;Suporte a longo prazo&quot; (LTS) para produtos Oracle Java™ SE. Java™ 9, Java™ 10 e Java™ 12 são versões não LTS do Oracle (consulte [Roteiro de suporte do Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implantar AEM no ambiente de produção, o Adobe fornece suporte somente para as versões LTS do Java™. O suporte e a distribuição do JDK Java™ SE do Oracle, incluindo todas as atualizações de manutenção de versões LTS além do fim das atualizações públicas, são suportados pelo Adobe diretamente para todos os clientes AEM que usam a tecnologia Oracle Java™ SE. Consulte a [Política de suporte do Java™ para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Importante: O Java™ 11 é compatível, no mínimo, até setembro de 2026.**
+**Importante: O Oracle Java™ 11 é compatível, no mínimo, até setembro de 2026. O suporte para Oracle Java™ 17 está em preparação. **
 
 1. O IBM® JRE só é compatível com o WebSphere® Application Server.
 
