@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: b60278940f48731ee9085635c0d4a3d7da24ebc8
+source-git-commit: d8ae63edd71c7d27fe93d24b30fb00a29332658d
 workflow-type: tm+mt
-source-wordcount: '4664'
+source-wordcount: '4663'
 ht-degree: 10%
 
 ---
@@ -113,7 +113,7 @@ Depois de fazer logon no console JMX, execute uma pesquisa por **Estatísticas d
 
 Para obter estatísticas de query, consulte o MBean nomeado **Estatísticas de Consulta Oak**.
 
-Se você deseja pesquisar nos índices usando uma ferramenta como [Luke](https://code.google.com/p/luke/), será necessário usar o console Oak para despejar o índice do `NodeStore` para um diretório de sistema de arquivos. Para obter instruções sobre como fazer isso, leia o [Documentação do Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Se você deseja pesquisar nos índices usando uma ferramenta como [Luke](https://code.google.com/archive/p/luke/), você deve usar o console Oak para despejar o índice do `NodeStore` para um diretório de sistema de arquivos. Para obter instruções sobre como fazer isso, leia o [Documentação do Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 Você também pode extrair os índices em seu sistema no formato JSON. Para fazer isso, você precisa acessar o `https://server:port/oak:index.tidy.-1.json`
 
