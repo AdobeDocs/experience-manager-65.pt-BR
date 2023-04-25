@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: c96f83b84ed1473aee0ddcca08a0e585ec088aa1
 workflow-type: tm+mt
-source-wordcount: '2204'
-ht-degree: 44%
+source-wordcount: '2192'
+ht-degree: 30%
 
 ---
 
@@ -42,20 +42,22 @@ Os seguintes valores de propriedade são usados na configuração da nuvem Confi
 * **Biblioteca do cliente:** mbox.js.
 * **Use o DTM para fornecer a biblioteca do cliente:** Não selecionado. Selecione esta opção se você [usar o DTM](/help/sites-administering/dtm.md) ou outro sistema de gerenciamento de tags para hospedar o arquivo mbox.js ou AT.js. O Adobe recomenda usar o DTM em vez de AEM para entregar a biblioteca do .
 
-* **Mbox.js personalizada:** Nenhum especificado para que o arquivo mbox.js padrão seja usado. Especifique um arquivo mbox.js personalizado para usar, conforme necessário. Somente será exibido se tiver selecionado mbox.js.
-* **AT.js personalizada:** Nenhum especificado para que o arquivo AT.js padrão seja usado. Especifique um arquivo AT.js personalizado para usar, conforme necessário. Somente será exibido se tiver selecionado AT.js.
+* **Mbox.js personalizada:** Nenhum especificado para que o arquivo mbox.js padrão seja usado. Especifique um arquivo mbox.js personalizado que deseja usar, conforme necessário. Somente será exibido se tiver selecionado mbox.js.
+* **AT.js personalizada:** Nenhum especificado para que o arquivo AT.js padrão seja usado. Especifique um arquivo AT.js personalizado que deseja usar, conforme necessário. Somente será exibido se tiver selecionado AT.js.
 
 >[!NOTE]
 >
->No AEM 6.3, é possível selecionar o arquivo da Biblioteca do Target, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html), que é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única.
+>No AEM 6.3, é possível selecionar o arquivo da Biblioteca do Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), que é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única.
 >
 >A AT.js oferece várias melhorias em relação à biblioteca mbox.js:
 >
 >* Tempos de carregamento de página aprimorados para implementações da Web
 >* Segurança aprimorada
 >* Melhores opções de implementação para aplicativos de página única
->* A AT.js contém os componentes que foram incluídos na target.js, portanto, a target.js não é mais chamada
+>* A AT.js contém os componentes que foram incluídos na target.js, portanto, não há mais chamadas para o target.
 
+
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Propriedades da Estrutura do Target Provisionada {#provisioned-target-framework-properties}
 
@@ -73,7 +75,7 @@ Você pode configurar o Adobe Target para usar o Adobe Analytics como fonte de r
 >
 >A Autenticação de Credenciais de Usuário (herdada) não funciona com o A4T (para Target e Analytics). Dessa forma, os clientes devem usar a autenticação IMS em vez da autenticação User-Credential.
 
-Para fazer isso, você precisa especificar a configuração da nuvem A4T com a qual conectar a configuração da nuvem do Adobe Target:
+Para fazer isso, especifique a configuração da nuvem A4T com a qual conectar a configuração da nuvem do Adobe Target:
 
 1. Navegar para **Cloud Services** através da **Logotipo AEM** > **Ferramentas** > **Implantação** > **Cloud Services**.
 1. Na seção **Adobe Target**, clique em **Configurar agora**.
@@ -107,7 +109,7 @@ Clique em **OK**. Ao direcionar conteúdo com o Adobe Target, você pode [seleci
 Integre manualmente o ao Adobe Target em vez de usar o assistente de aceitação.
 
 >[!NOTE]
-O arquivo da biblioteca do Target, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única. A Adobe recomenda usar a AT.js como a biblioteca de cliente, em vez da mbox.js.
+O arquivo da biblioteca do Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única. A Adobe recomenda usar a AT.js como a biblioteca de cliente, em vez da mbox.js.
 A AT.js oferece várias melhorias em relação à biblioteca mbox.js:
 * Tempos de carregamento de página aprimorados para implementações da Web
 * Segurança aprimorada
@@ -116,13 +118,15 @@ A AT.js oferece várias melhorias em relação à biblioteca mbox.js:
 >
 É possível selecionar AT.js ou mbox.js no menu suspenso **Biblioteca do cliente**.
 
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+
 ### Criação de uma configuração da nuvem do Target {#creating-a-target-cloud-configuration}
 
 Para permitir que o AEM interaja com o Adobe Target, crie uma configuração da nuvem do Target. Para criar a configuração, forneça o código de cliente do Adobe Target e as credenciais do usuário.
 
 Você precisa criar a configuração da nuvem do Target apenas uma vez, pois é possível associá-la a várias campanhas do AEM. Se você tiver vários códigos de cliente do Adobe Target, crie uma configuração para cada código de cliente.
 
-É possível definir a configuração da nuvem para sincronizar segmentos do Adobe Target. Se você habilitar a sincronização, os segmentos serão importados do Target em segundo plano assim que a configuração da nuvem for salva.
+É possível definir a configuração da nuvem para sincronizar segmentos do Adobe Target. Se você habilitar a sincronização, os segmentos serão importados do Target em segundo plano quando a configuração da nuvem for salva.
 
 Use o procedimento a seguir para criar uma configuração da nuvem do Target no AEM:
 
@@ -155,12 +159,12 @@ Use o procedimento a seguir para criar uma configuração da nuvem do Target no 
    * **E-mail**: o email da conta do Target.
    * **Senha**: a senha da conta do Target.
    * **Tipo de API**: REST ou XML
-   * **Configuração da nuvem do A4T Analytics**: selecione a configuração da nuvem do Analytics usada para métricas e metas de atividade do Target. Isso é necessário se estiver usando o Adobe Analytics como fonte de relatórios ao direcionar conteúdo. Se você não vir a configuração da nuvem, consulte a observação em [Configuração do A4T Analytics Cloud](#configuring-a-t-analytics-cloud-configuration).
+   * **Configuração do A4T Analytics Cloud**: Selecione a configuração do Analytics Cloud usada para métricas e metas de atividade do target. É necessário essa configuração se estiver usando o Adobe Analytics como fonte de relatórios ao direcionar conteúdo. Se você não vir a configuração da nuvem, consulte a observação em [Configuração do A4T Analytics Cloud](#configuring-a-t-analytics-cloud-configuration).
 
-   * **Usar direcionamento preciso:** por padrão, essa caixa de seleção está marcada. Se selecionada, a configuração do Cloud Service aguardará o carregamento do contexto antes de carregar o conteúdo. Veja a observação a seguir.
-   * **Sincronizar segmentos do Adobe Target:** selecione essa opção para baixar segmentos definidos no Target e usá-los no AEM. Você deve selecionar essa opção quando a propriedade Tipo de API for REST, pois os segmentos em linha não são compatíveis e você sempre precisa usar segmentos do Target. (Observe que o termo “segmento” do AEM equivale ao termo “público-alvo” do Target.)
+   * **Usar direcionamento preciso:** por padrão, essa caixa de seleção está marcada. Se selecionada, a configuração do serviço de nuvem aguarda o contexto ser carregado antes de carregar o conteúdo. Veja a observação a seguir.
+   * **Sincronizar segmentos do Adobe Target:** Selecione essa opção para baixar segmentos definidos no Target e usá-los em AEM. Selecione essa opção quando a propriedade Tipo de API for REST, pois os segmentos em linha não são compatíveis e você deve usar os segmentos do Target. (O termo AEM de &quot;segmento&quot; equivale ao &quot;público-alvo&quot; do Target.)
    * **Biblioteca do cliente:** Selecione se deseja a biblioteca do cliente mbox.js ou AT.js.
-   * **Usar o DTM para fornecer a biblioteca do cliente** - Selecione essa opção para usar AT.js ou mbox.js do DTM ou de outro sistema de gerenciamento de tags. Você deve [configurar a integração do DTM](/help/sites-administering/dtm.md) para usar essa opção. O Adobe recomenda usar o DTM em vez de AEM para entregar a biblioteca do .
+   * **Usar o DTM para fornecer a biblioteca do cliente** - Selecione essa opção para usar AT.js ou mbox.js do DTM ou de outro sistema de gerenciamento de tags. Configurar [a integração do DTM](/help/sites-administering/dtm.md) para usar essa opção. O Adobe recomenda usar o DTM em vez de AEM para entregar a biblioteca do .
    * **Mbox.js personalizada**: Deixe em branco caso tenha marcado a caixa do DTM ou para usar a mbox.js padrão. Como alternativa, carregue seu mbox.js personalizado. Somente será exibido se tiver selecionado mbox.js.
    * **AT.js personalizada**: Deixe em branco se tiver marcado a caixa do DTM ou para usar o AT.js padrão. Como alternativa, carregue sua AT.js personalizada. Somente será exibido se tiver selecionado AT.js.
 
@@ -168,7 +172,7 @@ Use o procedimento a seguir para criar uma configuração da nuvem do Target no 
    Por padrão, quando você opta pelo assistente de configuração do Adobe Target, o Direcionamento preciso é ativado.
    Direcionamento preciso significa que a configuração do Cloud Service aguarda o contexto ser carregado antes de carregar o conteúdo. Como resultado, em termos de desempenho, o direcionamento preciso pode criar um atraso de alguns milissegundos antes de carregar o conteúdo.
    O direcionamento preciso é sempre ativado na instância do autor. No entanto, na instância de publicação, é possível desativar o direcionamento preciso globalmente, limpando a marca de seleção ao lado de Direcionamento preciso na configuração do Cloud Service (**http://localhost:4502/etc/cloudservices.html**). Você também pode ativar e desativar o direcionamento preciso para componentes individuais, independentemente das suas definições na configuração do Cloud Service.
-   Se você ***já*** tiver criado componentes direcionados e alterar essa configuração, suas alterações não afetarão esses componentes. Você deve alterar esses componentes diretamente.
+   Se você ***já*** tiver criado componentes direcionados e alterar essa configuração, suas alterações não afetarão esses componentes. Altere esses componentes diretamente.
 
 1. Clique em **Conectar-se ao Target** para inicializar a conexão com o Target. Se a conexão for bem-sucedida, a mensagem **Conexão bem-sucedida** será exibida. Clique em **OK** na mensagem e, em seguida, em **OK** na caixa de diálogo.
 
@@ -178,7 +182,7 @@ Use o procedimento a seguir para criar uma configuração da nuvem do Target no 
 
 Após definir a configuração da nuvem do Target, adicione uma estrutura do Target. A estrutura identifica os parâmetros padrão enviados para o Adobe Target a partir do [Contexto do cliente](/help/sites-administering/client-context.md) ou [ContextHub](/help/sites-developing/ch-configuring.md) componentes. O Target usa os parâmetros para determinar os segmentos que se aplicam ao contexto atual.
 
-Você pode criar várias estruturas para uma única configuração do Target. Várias estruturas são úteis quando você precisa enviar um conjunto de parâmetros diferentes ao Target para diferentes seções do seu site. Crie uma estrutura para cada conjunto de parâmetros que você precisa enviar. Associe cada seção do site à estrutura apropriada. Observe que uma página da Web pode usar somente uma estrutura de cada vez.
+Você pode criar várias estruturas para uma única configuração do Target. Várias estruturas são úteis quando você deve enviar um conjunto diferente de parâmetros para o Target para diferentes seções do seu site. Crie uma estrutura para cada conjunto de parâmetros que você enviar. Associe cada seção do site à estrutura apropriada. Uma página da Web pode usar somente uma estrutura de cada vez.
 
 1. Na página Configuração do Target , clique no botão **+** (sinal de mais) ao lado de Frameworks disponíveis.
 1. Na caixa de diálogo Criar estrutura, especifique um **Título**, selecione a **estrutura do Adobe Target** e clique em **Criar**.
@@ -194,7 +198,7 @@ Você pode criar várias estruturas para uma única configuração do Target. V�
    >[!NOTE]
    Ao mapear, os parâmetros são enviados para uma mbox por meio de sequências de caracteres simples. Não é possível mapear matrizes do ContextHub.
 
-   Por exemplo, para usar os **dados de perfil** dos visitantes do seu site para controlar sua campanha do Target, arraste o componente **Dados de perfil** para a página. As variáveis de dados de perfil disponíveis para mapeamento para parâmetros do Target são exibidas.
+   Por exemplo, para usar **Dados do perfil** sobre os visitantes do seu site para controlar sua campanha do Target, arraste o **Dados do perfil** para a página. As variáveis de dados de perfil disponíveis para mapeamento para parâmetros do Target são exibidas.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -213,10 +217,10 @@ Associe seu [Atividades AEM](/help/sites-authoring/activitylib.md) com a configu
 
 >[!NOTE]
 Os tipos de atividades disponíveis são determinados pelo seguinte:
-* Se a opção **xt_only** estiver ativada no inquilino do Adobe Target (clientcode) usado no lado do AEM para se conectar ao Adobe Target, você poderá criar **apenas** atividades XT no AEM.
-* Se a opção **xt_only** **não** estiver ativada no inquilino do Adobe Target (clientcode), você poderá criar **** atividades XT e A/B no AEM.
+* Se a variável **xt_only** estiver ativada no locatário do Adobe Target (clientcode) usado no AEM para se conectar ao Adobe Target, você poderá criar **only** Atividades XT no AEM.
+* Se a variável **xt_only** é **not** habilitado no locatário do Adobe Target (clientcode), você poderá criar **both** Atividades XT e A/B no AEM.
 >
-**Observação adicional:** a opção **xt_only** é uma configuração aplicada em um determinado inquilino do Target (clientcode) e só pode ser modificada diretamente no Adobe Target. Não é possível ativar ou desativar essa opção no AEM.
+**Nota adicional:** **xt_only** é uma configuração aplicada em um determinado locatário do Target (clientcode) e só pode ser modificada diretamente no Adobe Target. Não é possível ativar ou desativar essa opção no AEM.
 
 ### Associar a estrutura do Target ao seu site {#associating-the-target-framework-with-your-site}
 
@@ -245,9 +249,9 @@ Quando você associa uma página à estrutura, as páginas filhas herdam a assoc
 
 ## Solução de problemas de conexão do Target {#troubleshooting-target-connection-problems}
 
-Execute as seguintes tarefas para solucionar problemas que ocorrem ao se conectar ao Target:
+Para solucionar problemas que ocorrem ao se conectar ao Target, você pode executar as seguintes tarefas:
 
 * Certifique-se de que as credenciais de usuário fornecidas estejam corretas.
 * Certifique-se de que a instância de AEM possa se conectar ao servidor do Target. Por exemplo, verifique se as regras de firewall não estão bloqueando as conexões de AEM de saída ou se AEM configurado para usar os proxies necessários.
-* Procure mensagens úteis no log de erros do AEM. O arquivo error.log está localizado na variável **crx-quickstart/logs** diretório onde o AEM está instalado.
-* Ao editar a atividade no Adobe Target, o URL aponta para localhost. Solucione isso definindo o AEM externalizador para o URL correto.
+* Procure mensagens úteis no log de erros do AEM. O arquivo error.log está no **crx-quickstart/logs** diretório onde o AEM está instalado.
+* Ao editar a atividade no Adobe Target, o URL aponta para localhost. Resolva essa compreensão definindo o AEM Externalizador para o URL correto.
