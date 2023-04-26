@@ -3,10 +3,10 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) com a API do GraphQL AEM para entrega de conteúdo sem periféricos.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: cee709161100db6597bdb18ca03b3130d9e242f1
+source-git-commit: cf78742614fd2d35f59905895dfacb83190140cd
 workflow-type: tm+mt
-source-wordcount: '3225'
-ht-degree: 89%
+source-wordcount: '3250'
+ht-degree: 88%
 
 ---
 
@@ -239,7 +239,7 @@ Dentro do esquema há campos individuais de duas categorias básicas:
 
 * Campos gerados.
 
-   Uma seleção de [Tipos de campos](#field-types) é usada para criar campos com base em como você configura o modelo de fragmento de conteúdo. Os nomes de campo são retirados do campo **Nome da propriedade** do **Tipo de dados**.
+   Uma seleção de [Tipos de dados](#data-types) é usada para criar campos com base em como você configura o modelo de fragmento de conteúdo. Os nomes de campo são retirados do campo **Nome da propriedade** do **Tipo de dados**.
 
    * A propriedade **Renderizar como** também precisa ser considerada, pois os usuários podem configurar determinados tipos de dados; por exemplo, como um texto de linha única ou como um multicampo.
 
@@ -247,21 +247,23 @@ Dentro do esquema há campos individuais de duas categorias básicas:
 
    Eles são usados para identificar um fragmento de conteúdo ou obter mais informações sobre ele.
 
-### Tipos de campos {#field-types}
+### Tipos de dados {#data-types}
 
 O GraphQL do AEM oferece suporte a uma lista de tipos. Todos os tipos de dados do modelo de fragmento de conteúdo compatíveis e os tipos de GraphQL correspondentes são representados:
 
 | Modelo de fragmento de conteúdo - Tipo de dados | Tipo de GraphQL | Descrição |
 |--- |--- |--- |
-| Texto em linha única | Sequência de caracteres, [Sequência de caracteres] |  Usado para sequências de caracteres simples, como nomes de autor, nomes de localização etc. |
-| Texto multilinha | Sequência de caracteres |  Usado para saída de texto, como o corpo de um artigo |
-| Número |  Flutuante, [Flutuante] | Usado para exibir números de ponto flutuantes e números regulares |
-| Booleano |  Booleano |  Usado para exibir caixas de seleção → declarações simples de verdadeiro/falso |
-| Data e hora | Calendário |  Usado para exibir data e hora em um formato ISO 8086. Dependendo do tipo selecionado, há três opções disponíveis para uso no GraphQL do AEM: `onlyDate`, `onlyTime` e `dateTime` |
-| Enumeração |  Sequência de caracteres |  Usado para exibir uma opção de uma lista de opções definidas na criação do modelo |
-|  Tags |  [Sequência de caracteres] |  Usado para exibir uma lista de sequências de caracteres que representam tags usadas no AEM |
-| Referência de conteúdo |  Sequência de caracteres |  Usado para exibir o caminho para outro ativo no AEM |
-| Referência do fragmento |  *Um tipo de modelo* |  Usado para fazer referência a outro Fragmento de conteúdo de um determinado Tipo de modelo, definido quando o modelo foi criado |
+| Texto em linha única | `String`, `[String]` |  Usado para sequências de caracteres simples, como nomes de autor, nomes de localização etc. |
+| Texto multilinha | `String` |  Usado para saída de texto, como o corpo de um artigo |
+| Número |  `Float`, `[Float]` | Usado para exibir números de ponto flutuantes e números regulares |
+| Booleano |  `Boolean` |  Usado para exibir caixas de seleção → declarações simples de verdadeiro/falso |
+| Data e hora | `Calendar` |  Usado para exibir data e hora em um formato ISO 8086. Dependendo do tipo selecionado, há três opções disponíveis para uso no GraphQL do AEM: `onlyDate`, `onlyTime` e `dateTime` |
+| Enumeração |  `String` |  Usado para exibir uma opção de uma lista de opções definidas na criação do modelo |
+|  Tags |  `[String]` |  Usado para exibir uma lista de sequências de caracteres que representam tags usadas no AEM |
+| Referência de conteúdo |  `String` |  Usado para exibir o caminho para outro ativo no AEM |
+| Referência do fragmento |  *Um tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado diretamente <br><br>Vários campos, com um tipo referenciado: `[Model]` - Matriz de tipo `Model`referenciado diretamente do array <br><br>Vários campos, com vários tipos referenciados: `[AllFragmentModels]` - Matriz de todos os tipos de modelo, referenciada a partir de array com tipo de união |  Usado para fazer referência a um ou mais Fragmentos de conteúdo de determinados Tipos de modelo, definidos quando o modelo foi criado |
+
+{style="table-layout:auto"}
 
 ### Campos auxiliares {#helper-fields}
 
