@@ -6,14 +6,14 @@ mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
+source-git-commit: 9406dc74887d29e93461e1015a8f52fa7ee196f6
 workflow-type: tm+mt
-source-wordcount: '5605'
+source-wordcount: '5613'
 ht-degree: 6%
 
 ---
 
-# Pesquisar ativos no [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Pesquisar ativos digitais no [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -38,7 +38,7 @@ ht-degree: 6%
 | [Limitações](#limitations) e [Dicas](#tips) |  |  |
 | [Exemplos ilustrados](#samples) |  |  |
 
-Pesquise ativos usando o campo Omnisearch na parte superior do [!DNL Experience Manager] interface da Web. Ir para **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]** em [!DNL Experience Manager], clique em ![search_icon](assets/do-not-localize/search_icon.png) na barra superior, digite palavra-chave de pesquisa e selecione `Return`. Como alternativa, use o atalho de palavra-chave `/` (barra) para abrir o campo Omnisearch . `Location:Assets` O é pré-selecionado para limitar as pesquisas a ativos do DAM. [!DNL Experience Manager] O fornece sugestões para começar a digitar uma palavra-chave de pesquisa.
+Pesquise ativos digitais usando o campo Omnisearch na parte superior do [!DNL Experience Manager] interface da Web. Ir para **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]** em [!DNL Experience Manager], clique em ![search_icon](assets/do-not-localize/search_icon.png) na barra superior, digite palavra-chave de pesquisa e selecione `Return`. Como alternativa, use o atalho de palavra-chave `/` (barra) para abrir o campo Omnisearch . `Location:Assets` O é pré-selecionado para limitar as pesquisas a ativos do DAM. [!DNL Experience Manager] O fornece sugestões para começar a digitar uma palavra-chave de pesquisa.
 
 Use o **[!UICONTROL Filtros]** painel para pesquisar ativos, pastas, tags e metadados. Você pode filtrar os resultados da pesquisa com base em várias opções (predicados), como tipo de arquivo, tamanho do arquivo, data da última modificação, status do ativo, dados do insights e licenciamento do Adobe Stock. Você pode personalizar o painel Filtros e adicionar ou remover predicados de pesquisa usando [aspectos de pesquisa](/help/assets/search-facets.md). O [!UICONTROL Tipo de arquivo] no [!UICONTROL Filtros] O painel tem caixas de seleção de estado misto. Portanto, a menos que você selecione todos os predicados aninhados (ou formatos), as caixas de seleção de primeiro nível estarão parcialmente marcadas.
 
@@ -159,7 +159,7 @@ Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynam
 
 ### Pesquisa GQL usando valores específicos nos campos de metadados {#gql-search}
 
-Você pode pesquisar ativos com base em valores exatos de campos de metadados, como título, descrição e criador. O recurso de pesquisa de texto completo do GQL busca apenas os ativos cujo valor de metadados corresponda exatamente à sua consulta de pesquisa. Os nomes das propriedades (Criador, Título e assim por diante) e os valores distinguem maiúsculas de minúsculas.
+Você pode pesquisar ativos digitais com base em valores exatos de campos de metadados, como título, descrição e criador. O recurso de pesquisa de texto completo do GQL busca apenas os ativos cujo valor de metadados corresponda exatamente à sua consulta de pesquisa. Os nomes das propriedades (Criador, Título e assim por diante) e os valores distinguem maiúsculas de minúsculas.
 
 | Campo de metadados | Valor e uso da faceta |
 |---|---|
@@ -202,19 +202,19 @@ Estes são alguns exemplos de formatos de pesquisa para consultas complexas:
 * Para exibir ativos com um valor de propriedade que contenha uma string específica (por exemplo: título = Sala de Reunião de Basileia): `title:*Meeting*`
 * Para exibir ativos que contêm uma string específica e têm um valor de propriedade específico (por exemplo: procure por Adobe de sequência em ativos com title=John Doe): `*Adobe* title:"John Doe"`
 
-## Pesquisar ativos de outros [!DNL Experience Manager] ofertas ou interfaces {#search-assets-other-surfaces}
+## Pesquisar ativos digitais de outros [!DNL Experience Manager] ofertas ou interfaces {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] conecta o repositório DAM a vários outros [!DNL Experience Manager] soluções para fornecer acesso mais rápido aos ativos digitais e simplificar os fluxos de trabalho criativos. Qualquer descoberta de ativo começa com navegação ou pesquisa. O comportamento de pesquisa permanece basicamente o mesmo em várias superfícies e soluções. Alguns métodos de pesquisa mudam à medida que o público-alvo, os casos de uso e a interface do usuário variam na [!DNL Experience Manager] soluções. Os métodos específicos estão documentados para as soluções individuais nos links abaixo. As dicas e comportamentos universalmente aplicáveis estão documentados neste artigo.
 
-### Pesquisar ativos no painel Adobe Asset Link {#aal}
+### Pesquisar ativos digitais no painel Adobe Asset Link {#aal}
 
 Com o Adobe Asset Link, os profissionais criativos agora podem acessar o conteúdo armazenado em [!DNL Experience Manager Assets], sem sair dos aplicativos Adobe Creative Cloud compatíveis. Os criadores podem navegar, pesquisar, sair e fazer check-in de ativos com facilidade usando o painel no aplicativo no [!DNL Adobe Creative Cloud] aplicativos: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]e [!DNL Adobe InDesign]. O Asset Link também permite que os usuários pesquisem resultados visualmente semelhantes. Os resultados da exibição de pesquisa visual são fornecidos por algoritmos de aprendizado de máquina da Adobe Sensei e ajudam os usuários a encontrar imagens esteticamente semelhantes. Consulte [pesquisar e procurar ativos](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) usando o Adobe Asset Link.
 
-### Pesquisar ativos em [!DNL Experience Manager] aplicativo de desktop {#desktop-app}
+### Pesquisar ativos digitais no [!DNL Experience Manager] aplicativo de desktop {#desktop-app}
 
 Os profissionais de criação usam o aplicativo de desktop para fazer a variável [!DNL Experience Manager Assets] facilmente pesquisável e disponível em seu desktop local (Win ou Mac). Os criadores podem revelar facilmente os ativos desejados no Mac Finder ou no Windows Explorer, abertos em aplicativos de desktop e alterados localmente - as alterações são salvas de volta para [!DNL Experience Manager] com uma nova versão criada no repositório. O aplicativo oferece suporte a pesquisas básicas usando uma ou mais palavras-chave, `*` e `?` curingas e `AND` operador. Consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) no aplicativo de desktop.
 
-### Pesquisar ativos no [!DNL Brand Portal] {#brand-portal}
+### Pesquisar ativos digitais no [!DNL Brand Portal] {#brand-portal}
 
 Usuários de linha de negócios e profissionais de marketing usam o Brand Portal para compartilhar com eficiência e segurança os ativos digitais aprovados com suas equipes internas estendidas, parceiros e revendedores. Consulte [pesquisar ativos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
@@ -226,7 +226,7 @@ No [!DNL Experience Manager] na interface do usuário, os usuários podem pesqui
 
 Você pode filtrar por imagens do Dynamic Media selecionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** no painel **[!UICONTROL Filtros]**. Isso filtra e exibe ativos como conjuntos de imagens, carrosséis, conjuntos de mídia mista e conjuntos de rotação. Ao criar páginas da Web, os autores podem pesquisar por conjuntos no Localizador de conteúdo. Há um filtro para conjuntos disponível em um menu pop-up.
 
-### Pesquisar ativos no Localizador de conteúdo ao criar páginas da Web {#content-finder}
+### Pesquisar ativos digitais no Localizador de conteúdo ao criar páginas da Web {#content-finder}
 
 Os autores podem usar o Localizador de conteúdo para pesquisar o repositório DAM para os ativos relevantes e usar os ativos nas páginas da Web que eles criam. Os autores também podem usar a funcionalidade Ativos conectados para procurar ativos que estão disponíveis em um local remoto [!DNL Experience Manager] implantação. Os autores podem usar esses ativos em páginas da Web em um local [!DNL Experience Manager] implantação. Consulte [usar ativos remotos](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
@@ -252,7 +252,7 @@ Passe os seguintes parâmetros de solicitação em um URL para iniciar o seletor
 | `mode` | único, múltiplo | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | No modo múltiplo, é possível selecionar vários ativos simultaneamente usando o seletor de ativos. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use esses parâmetros para abrir o seletor de ativos como Caixa de diálogo do Granite. Essa opção só é aplicável quando você inicia o seletor de ativos por meio do Campo de caminho do Granite e o configura como URL pickerSrc. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Use essa opção para especificar a pasta raiz do seletor de ativos. Nesse caso, o seletor de ativos permite selecionar apenas ativos secundários (diretos/indiretos) na pasta raiz. |
-| `viewmode` | pesquisa |  | Para iniciar o seletor de ativos no modo de pesquisa, com `assettype` e `mimetype` parâmetros. |
+| `viewmode` | pesquisar |  | Para iniciar o seletor de ativos no modo de pesquisa, com `assettype` e `mimetype` parâmetros. |
 | `assettype` | Imagens, documentos, multimídia, arquivos. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Use a opção para filtrar tipos de ativos com base no valor fornecido. |
 | `mimetype` | Tipo MIME (`/jcr:content/metadata/dc:format`) de um ativo (curinga também compatível). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Use-o para filtrar ativos com base no tipo MIME. |
 
@@ -406,7 +406,7 @@ Você pode pesquisar ativos digitais com base em uma ou mais das seguintes propr
 | Altura do vídeo | Especificado como valor mínimo e máximo. O valor é armazenado somente nos metadados de representações de vídeo. |
 | Largura do vídeo | Especificado como valor mínimo e máximo. O valor é armazenado somente nos metadados de representações de vídeo. |
 | Formato de vídeo | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. O valor é armazenado nos metadados do vídeo de origem e de qualquer representação. |
-| Codec de vídeo | x264. O valor é armazenado somente nos metadados de representações de vídeo. |
+| Codec de vídeo | x 264. O valor é armazenado somente nos metadados de representações de vídeo. |
 | Taxa de bits do vídeo | Especificado como valor mínimo e máximo. O valor é armazenado somente nos metadados de representações de vídeo. |
 | Codec de áudio | Libvorbis, Lame MP3, Codificação AAC. O valor é armazenado somente nos metadados de representações de vídeo. |
 | Taxa de áudio | Especificado como valor mínimo e máximo. O valor é armazenado somente nos metadados de representações de vídeo. |
