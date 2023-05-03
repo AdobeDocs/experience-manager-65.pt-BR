@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 778987e69a23f81584f7a86db2fe24df64035919
+source-git-commit: 11db7c44853f95380fa5200efaf5691ad08b3729
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1677'
 ht-degree: 10%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 10%
 
 AEM 6.4.3.0 apresenta [!DNL Admin Console] suporte para instâncias de AEM e autenticação baseada no Adobe IMS (Identity Management System) para **AEM Managed Services** clientes.
 
-AEM integração ao [!DNL Admin Console] O permitirá que AEM clientes do Managed Services gerenciem todos os usuários do Experience Cloud em um único console. Usuários e grupos podem ser atribuídos a perfis de produto associados a instâncias de AEM, permitindo que eles façam logon em uma instância específica.
+AEM integração ao [!DNL Admin Console] O permitirá que AEM clientes do Managed Services gerenciem todos os usuários do Experience Cloud em um único console. Os usuários podem ser atribuídos a perfis de produto associados a instâncias de AEM, permitindo que façam logon em uma instância específica.
 
 ## Destaques principais {#key-highlights}
 
@@ -158,11 +158,11 @@ Os detalhes da instância podem ser verificados para identificar a instância:
 
 ![screen_shot_2018-09-17at105601pm](assets/screen_shot_2018-09-17at105601pm.png)
 
-Em cada instância do Contexto do Produto, haverá um Perfil de Produto associado. Esse perfil de produto é usado para atribuir acesso a usuários e grupos.
+Em cada instância do Contexto do Produto, haverá um Perfil de Produto associado. Esse perfil de produto é usado para atribuir acesso aos usuários.
 
 ![image2018-9-18_7-48-50](assets/image2018-9-18_7-48-50.png)
 
-Todos os usuários e grupos adicionados nesse perfil de produto poderão fazer logon nessa instância, como mostrado no exemplo abaixo:
+Qualquer usuário adicionado sob esse perfil de produto poderá fazer logon nessa instância, como mostrado no exemplo abaixo:
 
 ![screen_shot_2018-09-17at105623pm](assets/screen_shot_2018-09-17at105623pm.png)
 
