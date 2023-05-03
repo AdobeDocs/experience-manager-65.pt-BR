@@ -5,7 +5,7 @@ exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 36%
+ht-degree: 41%
 
 ---
 
@@ -31,7 +31,7 @@ As Notas de versão do AEM abrangem informações importantes sobre a versão ma
 | [Guia de administração](/help/sites-administering/home.md) | Saiba como administrar AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no AEM. |
 | [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no AEM na interface do usuário clássica. |
-| [Guia do usuário do Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
+| [Guia do usuário do Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=pt-BR) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
 | [Guia de implantação do usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do AEM. |
 | [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar a instância do AEM. |
 | [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto de AEM com êxito. |
@@ -42,9 +42,9 @@ As Notas de versão do AEM abrangem informações importantes sobre a versão ma
 
 * [AEM tutoriais](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Guia do usuário do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR)
-* [Guia do usuário do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [Guia do usuário do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
 * [Guia do usuário dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other)
 * [Fórum da comunidade AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
