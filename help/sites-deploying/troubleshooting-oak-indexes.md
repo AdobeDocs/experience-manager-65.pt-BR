@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1465'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ Se muitas alterações e compromissos forem feitas no repositório em um curto p
 1. Para evitar exceder os limites aceitáveis da fila de observação, recomenda-se:
 
    * Diminua a taxa constante de commits. Picos curtos em compromissos são aceitáveis, mas a taxa constante deve ser reduzida.
-   * Aumente o tamanho da variável `DiffCache` conforme descrito em [Dicas para ajuste de desempenho > Ajuste de armazenamento do Mongo > Tamanho do cache do documento](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/configuring-performance.html?lang=en).
+   * Aumente o tamanho da variável `DiffCache` conforme descrito em [Dicas para ajuste de desempenho > Ajuste de armazenamento do Mongo > Tamanho do cache do documento](/help/sites-deploying/configuring-performance.md).
 
 ## Identificação e correção de um processo de reindexação travado {#identifying-and-remediating-a-stuck-re-indexing-process}
 

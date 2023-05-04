@@ -1,24 +1,23 @@
 ---
-title: Write-back de XMP a execuções
+title: XMP gravação em representações
 description: Saiba como o recurso de write-back de XMP propaga as alterações de metadados de um ativo para todas as representações ou representações específicas do ativo.
 contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 6%
+source-wordcount: '807'
+ht-degree: 5%
 
 ---
 
-# Write-back de XMP a execuções {#xmp-writeback-to-renditions}
+# XMP gravação em representações {#xmp-writeback-to-renditions}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
 | AEM 6.5 | Este artigo |
-| AEM 6.4 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp-writeback.html?lang=en) |
 
 Este recurso de write-back de XMP em [!DNL Adobe Experience Manager Assets] replica as alterações de metadados nas representações do ativo original. Ao alterar os metadados de um ativo de dentro do Assets ou ao fazer upload do ativo, as alterações são armazenadas inicialmente no nó de metadados na hierarquia de ativos.
 

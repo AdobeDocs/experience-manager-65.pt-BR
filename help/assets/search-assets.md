@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: 9406dc74887d29e93461e1015a8f52fa7ee196f6
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '5613'
+source-wordcount: '5601'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 6%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
-| AEM 6.4 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/search-assets.html?lang=pt-BR) |
 
 [!DNL Adobe Experience Manager Assets] O oferece métodos robustos de detecção de ativos que ajudam a alcançar uma velocidade de conteúdo maior. Suas equipes podem reduzir o tempo de comercialização com uma experiência de pesquisa inteligente e contínua usando recursos prontos para uso e métodos personalizados. Pesquisar ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por parte dos criadores, para o gerenciamento robusto de ativos pelos usuários e profissionais de marketing ou para administração por administradores de DAM. Pesquisas simples, avançadas e personalizadas que você pode realizar por meio de [!DNL Assets] a interface do usuário ou outros aplicativos e superfícies ajudam a atender a esses casos de uso.
 

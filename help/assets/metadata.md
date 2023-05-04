@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 12%
+source-wordcount: '2359'
+ht-degree: 11%
 
 ---
 
@@ -19,7 +19,6 @@ ht-degree: 12%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
 | AEM 6.5 | Este artigo |
-| AEM 6.4 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/metadata.html?lang=en) |
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
@@ -177,13 +176,13 @@ As pastas que têm um perfil atribuído a elas são indicadas na interface do us
 
 Você pode aplicar perfis de metadados a pastas específicas ou globalmente a todos os ativos.
 
-Você pode reprocessar ativos em uma pasta que já tenha um perfil de metadados existente que você alterou posteriormente. Consulte o [reprocessando de ativos em uma pasta após a edição do perfil de processamento](processing-profiles.md#reprocessing-assets).
+Você pode reprocessar ativos em uma pasta que já tenha um perfil de metadados existente que você alterou posteriormente. Consulte [Reprocessando ativos em uma pasta depois de ter editado seu perfil de processamento](processing-profiles.md#reprocessing-assets).
 
 Aplique um perfil de metadados a uma pasta no menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, em **[!UICONTROL Propriedades]**. Esta seção descreve como aplicar perfis de metadados a pastas de ambas as maneiras.
 
 As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
-Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você alterou posteriormente. Consulte o [reprocessando de ativos em uma pasta após a edição do perfil de processamento](processing-profiles.md#reprocessing-assets).
+Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você alterou posteriormente. Consulte [Reprocessando ativos em uma pasta depois de ter editado seu perfil de processamento](processing-profiles.md#reprocessing-assets).
 
 ### Aplicar perfis de metadados a pastas de [!UICONTROL Perfis] interface do usuário {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 

@@ -8,9 +8,9 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1673'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Se você estiver usando o Forms Workflow no momento, o banco de dados do AEM For
 
 Os serviços de publicação do Process Reporting publicam todos os dados do AEM Forms disponíveis no banco de dados. Isso implica que, se o banco de dados contiver dados herdados nos quais você não deseja executar relatórios e queries, todos esses dados também serão publicados no repositório, mesmo que não sejam necessários para os relatórios. É recomendável limpar esses dados antes de executar os serviços para publicar os dados no repositório do Process Reporting. Isso melhora o desempenho do serviço do editor e do serviço que consulta os dados para relatórios.
 
-Para obter detalhes sobre como limpar dados de processo do AEM Forms, consulte [Limpeza de dados do processo](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+Para obter detalhes sobre como limpar dados de processo do AEM Forms, consulte [Limpeza de dados do processo](/help/forms/using/admin-help/purging-process-data.md).
 
 >[!NOTE]
 >
->Para obter as dicas e truques do Utilitário de limpeza, consulte o artigo da Adobe Developer Connection sobre [Limpeza de processos e trabalhos](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+>Para obter as dicas e truques do Utilitário de limpeza, consulte o artigo da Adobe Developer Connection sobre [Limpeza de processos e trabalhos](/help/forms/using/admin-help/purging-process-data.md).
 
 ## Configuração dos serviços de Relatório de Processos {#configuring-process-reporting-services}
 

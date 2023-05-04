@@ -10,10 +10,10 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
-source-git-commit: 02fc145d5ec1458d1f71a2f353b56b944a267f3e
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 2%
+source-wordcount: '681'
+ht-degree: 0%
 
 ---
 
@@ -70,7 +70,6 @@ AEM apresenta recentemente a [Detector de padrões](/help/sites-deploying/patter
 
 Para obter mais detalhes sobre o que foi alterado em versões recentes do AEM, consulte as notas de versão completas:
 
-* [Notas de versão gerais do Adobe Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/release-notes.html?lang=pt-BR)
 * [Notas de versão mais recentes do Adobe Experience Manager 6.5 Service Pack](/help/release-notes/release-notes.md)
 
 ## Visão geral da atualização {#upgrade-overview}

@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 10%
+source-wordcount: '1162'
+ht-degree: 9%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 10%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
 | AEM 6.5 | Este artigo |
-| AEM 6.4 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/asset-reports.html?lang=en) |
 
 O relatório de ativos permite avaliar a utilidade da [!DNL Adobe Experience Manager Assets] implantação. Com [!DNL Assets], você pode gerar vários relatórios para seus ativos digitais. Os relatórios fornecem informações úteis sobre o uso do sistema, como os usuários interagem com ativos e quais ativos são baixados e compartilhados.
 
@@ -48,7 +47,7 @@ Para gerar relatórios, faça o seguinte:
 * Expiração
 * Modificação
 * Publicação
-* [!DNL Brand Portal] Publicar
+* [!DNL Brand Portal] publicação
 * Uso do disco
 * Arquivos
 * Compartilhamento de link
@@ -128,7 +127,7 @@ Você pode adicionar colunas personalizadas aos seguintes relatórios para exibi
 * Expiração
 * Modificação
 * Publicação
-* [!DNL Brand Portal] Publicar
+* [!DNL Brand Portal] publicação
 * Arquivos
 
 Para adicionar colunas personalizadas a esses relatórios, siga estas etapas:

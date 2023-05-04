@@ -6,10 +6,10 @@ role: User
 feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: eb60913e125d89c7494c21cfd6432b659695670a
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '9982'
-ht-degree: 4%
+source-wordcount: '9970'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,6 @@ ht-degree: 4%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
-| AEM 6.4 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-assets-touch-ui.html?lang=en) |
 
 Em [!DNL Adobe Experience Manager Assets], você pode fazer mais do que armazenar e administrar seus ativos. [!DNL Experience Manager] oferece recursos de gerenciamento de ativos de nível empresarial. Você pode editar e compartilhar ativos, executar pesquisas avançadas e criar várias representações de dezenas de formatos de arquivo compatíveis. Você também pode gerenciar versões e direitos digitais, automatizar o processamento de ativos, gerenciar e administrar metadados, colaborar usando anotações e muito mais.
 
@@ -313,7 +312,7 @@ Para transcodificar um arquivo de vídeo, escolha dentre várias predefinições
 |---|---|---|
 | Vídeo adaptável |  | Uma única predefinição de codificação que funciona com qualquer proporção para criar vídeos para entrega em dispositivos móveis, tablets e desktops. Os vídeos de origem carregados codificados com essa predefinição são definidos com uma altura fixa. No entanto, a largura é dimensionada automaticamente para preservar a proporção do vídeo. <br>A prática recomendada é usar a codificação Adaptive Video. |
 | Predefinições de codificação única | Ordenar predefinições de codificação | Selecionar **[!UICONTROL Nome]** ou **[!UICONTROL Tamanho]** se desejar classificar as predefinições de codificação listadas em Desktop, Móvel e Tablet por nome ou por tamanho de resolução. |
-|  | Área de trabalho | Crie um arquivo MP4 para fornecer uma experiência de streaming ou vídeo progressivo aos computadores desktop. Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
+|  | Desktop | Crie um arquivo MP4 para fornecer uma experiência de streaming ou vídeo progressivo aos computadores desktop. Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
 |  | Móvel | Crie um arquivo MP4 para entrega em dispositivos móveis iPhone ou Android™. Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
 |  | Tablet | Crie um arquivo MP4 para entrega em dispositivos tablet iPad ou Android™. Selecione uma ou mais proporções com o tamanho da resolução e a taxa de dados de destino desejados. |
 
@@ -608,7 +607,7 @@ Para obter informações específicas de [!DNL Dynamic Media], consulte [publica
 
 1. Ao publicar, se um ativo fizer referência a outros ativos, suas referências serão listadas no assistente. Somente as referências são exibidas, que não são publicadas ou modificadas desde a última publicação. Escolha as referências que deseja publicar.
 
-1. Ao cancelar a publicação, se um ativo fizer referência a outros ativos, escolha as referências que deseja cancelar a publicação. Clique em **[!UICONTROL Cancelar publicação]**. Na caixa de diálogo de confirmação, clique em **[!UICONTROL Cancelar]** para interromper a ação ou clique em **[!UICONTROL Cancelar publicação]** para confirmar que a publicação dos ativos deve ser cancelada na data especificada.
+1. Ao cancelar a publicação, se um ativo fizer referência a outros ativos, escolha as referências que deseja cancelar a publicação. Clique em **[!UICONTROL Desfazer a publicação]**. Na caixa de diálogo de confirmação, clique em **[!UICONTROL Cancelar]** para interromper a ação ou clique em **[!UICONTROL Cancelar publicação]** para confirmar que a publicação dos ativos deve ser cancelada na data especificada.
 
 Entenda as seguintes limitações e dicas relacionadas à publicação ou ao cancelamento da publicação de ativos ou pastas:
 
@@ -647,7 +646,7 @@ Para pesquisas simples, avançadas e personalizadas para descobrir e usar os ati
 
 ## Ações rápidas {#quick-actions}
 
-Os ícones de ação rápida estão disponíveis para um único ativo por vez. Dependendo do seu dispositivo, execute as seguintes ações para exibir os ícones de ação rápida:
+Os ícones de ação rápida estão disponíveis para um único ativo de cada vez. Dependendo do seu dispositivo, execute as seguintes ações para exibir os ícones de ação rápida:
 
 * Dispositivos de toque: Toque e segure. Por exemplo, em uma iPad, é possível tocar e segurar um ativo para que as ações rápidas sejam exibidas.
 * Dispositivos sem toque: Ponteiro do mouse. Por exemplo, em um dispositivo de desktop, a barra de ação rápida é exibida se você passar o ponteiro do mouse sobre a miniatura do ativo.

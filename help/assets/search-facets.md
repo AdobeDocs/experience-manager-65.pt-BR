@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2429'
+source-wordcount: '2417'
 ht-degree: 18%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 18%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
 | AEM 6.5 | Este artigo |
-| AEM 6.4 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/search-facets.html?lang=en) |
 
 Uma implantação de toda a empresa [!DNL Adobe Experience Manager Assets] O tem a capacidade de armazenar muitos ativos. Às vezes, encontrar o ativo certo pode ser árduo e demorado se você usar apenas os recursos de pesquisa genéricos de [!DNL Experience Manager].
 
@@ -176,7 +175,7 @@ Semelhante à forma como você adiciona um predicado de Propriedade ou um predic
 | [!UICONTROL Tamanho do arquivo] | Predicado de pesquisa para pesquisar ativos com base em seu tamanho. É um predicado baseado em silder onde você seleciona as opções de controle deslizante de um nó configurável. As opções padrão são definidas em /libs/dam/options/predicates/filesize no repositório CRXDE. O tamanho do arquivo é fornecido em bytes. | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Caminho </li><li>Descrição</li></ul> |
 | [!UICONTROL Última modificação do ativo] | Pesquisar predicado para pesquisar ativos modificados recentemente | <ul><li>Nome da propriedade</li><li>Valor da propriedade</li><li>Descrição</li></ul> |
 | [!UICONTROL Publicar status] | Pesquisar predicado para procurar ativos com base em seu status de publicação | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
-| [!UICONTROL Classificação] | Predicado de pesquisa para pesquisar ativos com base em sua classificação média | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Caminho da opção</li><li>Descrição</li></ul> |
+| [!UICONTROL Avaliação] | Predicado de pesquisa para pesquisar ativos com base em sua classificação média | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Caminho da opção</li><li>Descrição</li></ul> |
 | [!UICONTROL Status da expiração] | Pesquisar predicado para procurar ativos com base em seu status de expiração | <ul><li>Etiqueta</li><li>Nome da propriedade</li><li>Descrição</li></ul> |
 | [!UICONTROL Oculto] | Procura predicado que define uma propriedade de campo oculto para procurar ativos | <ul><li>Nome da propriedade</li><li>Valor da propriedade</li><li>Descrição</li></ul> |
 

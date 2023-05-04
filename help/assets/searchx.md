@@ -5,10 +5,10 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 20%
+source-wordcount: '825'
+ht-degree: 19%
 
 ---
 
@@ -22,7 +22,7 @@ Também é possível adicionar outras guias à [!DNL Assets] painel administrado
 
 >[!CAUTION]
 >
->Em [!DNL Experience Manager] 6.4, a interface do usuário clássica está obsoleta. Para o anúncio, consulte [recursos obsoletos e removidos](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=pt-BR). O Adobe recomenda usar a interface habilitada para toque. Para personalização, consulte [aspectos de pesquisa](/help/assets/search-facets.md).
+>Em [!DNL Experience Manager] 6.4, a interface do usuário clássica está obsoleta. O Adobe recomenda usar a interface habilitada para toque. Para personalização, consulte [aspectos de pesquisa](/help/assets/search-facets.md).
 
 ## Sobreposição {#overlaying}
 
@@ -255,42 +255,42 @@ Os predicados a seguir estão disponíveis como widgets ExtJS pré-configurados.
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
-| predicateName | Sequência de caracteres | Nome do predicado. O padrão é `fulltext` |
+| predicateName | String | Nome do predicado. O padrão é `fulltext` |
 | searchCallback | Função | Retorno de chamada para acionar a pesquisa no evento `keyup`. O padrão é `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
-| predicateName | Sequência de caracteres | Nome do predicado. O padrão é `property` |
-| propertyName | Sequência de caracteres | Nome da propriedade JCR. O padrão é `jcr:title` |
-| defaultValue | Sequência de caracteres | Valor padrão pré-preenchido. |
+| predicateName | String | Nome do predicado. O padrão é `property` |
+| propertyName | String | Nome da propriedade JCR. O padrão é `jcr:title` |
+| defaultValue | String | Valor padrão pré-preenchido. |
 
 ### PathPredicate {#pathpredicate}
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
-| predicateName | Sequência de caracteres | Nome do predicado. O padrão é `path` |
-| rootPath | Sequência de caracteres | Caminho raiz do predicado. O padrão é `/content/dam` |
-| pathFieldPredicateName | Sequência de caracteres | O padrão é `folder` |
+| predicateName | String | Nome do predicado. O padrão é `path` |
+| rootPath | String | Caminho raiz do predicado. O padrão é `/content/dam` |
+| pathFieldPredicateName | String | O padrão é `folder` |
 | showFlatOption | Booleano | Sinalizador para mostrar caixa de seleção `search in subfolders`. O padrão é true. |
 
 ### DatePredicate {#datepredicate}
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
-| predicateName | Sequência de caracteres | Nome do predicado. O padrão é `daterange` |
-| propertyname | Sequência de caracteres | Nome da propriedade JCR. O padrão é `jcr:content/jcr:lastModified` |
-| defaultValue | Sequência de caracteres | Valor padrão pré-preenchido |
+| predicateName | String | Nome do predicado. O padrão é `daterange` |
+| propertyname | String | Nome da propriedade JCR. O padrão é `jcr:content/jcr:lastModified` |
+| defaultValue | String | Valor padrão pré-preenchido |
 
 ### OptionsPredicate {#optionspredicate}
 
 | Propriedade | Tipo | Descrição |
 |---|---|---|
-| título | Sequência de caracteres | Adiciona um título superior adicional |
-| predicateName | Sequência de caracteres | Nome do predicado. O padrão é `daterange` |
-| propertyname | Sequência de caracteres | Nome da propriedade JCR. O padrão é `jcr:content/metadata/cq:tags` |
-| colapso | Sequência de caracteres | Recolher nível. O padrão é `level1` |
+| título | String | Adiciona um título superior adicional |
+| predicateName | String | Nome do predicado. O padrão é `daterange` |
+| propertyname | String | Nome da propriedade JCR. O padrão é `jcr:content/metadata/cq:tags` |
+| colapso | String | Recolher nível. O padrão é `level1` |
 | triggerSearch | Booleano | Sinalizador para acionar a pesquisa ao verificar. O padrão é false |
 | searchCallback | Função | Retorno de chamada para acionar a pesquisa. O padrão é `CQ.wcm.SiteAdmin.doSearch` |
 | searchTimeoutTime | Número | Tempo limite antes do acionamento de searchCallback. O padrão é 800 ms |

@@ -10,9 +10,9 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 exl-id: 30720061-d0e5-453b-a334-6a3aa9ca4c87
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: bd33c0884be55b76ef526c8c938236e743dc3dc6
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '953'
 ht-degree: 8%
 
 ---
@@ -632,7 +632,7 @@ response.setCharacterEncoding("utf-8");
 
 ## Integração da interface do usuário do relatório na interface do usuário existente do Process Reporting  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-Os pré-requisitos para criar uma interface de usuário separada para exibir resultados são [Noções básicas do Sling](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Criação de um nó CRX](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html?lang=en#creating-a-node) e [privilégios de acesso](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html?lang=en#access-control).
+Os pré-requisitos para criar uma interface de usuário separada para exibir resultados são [Noções básicas do Sling](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Criação de um nó CRX](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node) e [privilégios de acesso](/help/sites-developing/developing-with-crxde-lite.md#access-control).
 
 1. Crie uma interface de usuário separada.
 1. Criar um filho `nt:unstructured` no `/content/process-reporting-runtime/custom-reports` nó para cada relatório que pode ser conectado.

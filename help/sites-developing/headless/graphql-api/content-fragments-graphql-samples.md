@@ -3,7 +3,7 @@ title: Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas
 description: Saiba como usar o GraphQL com o AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: e773990c6bd32df65c7f62060f7eca5547b7b614
+source-git-commit: 85f8da2a30e1bb5b78cbb36cd9b79939dd913251
 workflow-type: tm+mt
 source-wordcount: '1586'
 ht-degree: 91%
@@ -1328,7 +1328,7 @@ Esta consulta interroga:
 Esta consulta interroga:
 
 * por vários Fragmentos de conteúdo do tipo `bookmark`
-   * com referências de fragmento a outros fragmentos do tipo de modelo específico `article`
+   * com referências de fragmento a outros fragmentos do tipo de modelo específico `Article`
 
 >[!NOTE]
 >

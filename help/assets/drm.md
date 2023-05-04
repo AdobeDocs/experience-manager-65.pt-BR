@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1421'
 ht-degree: 6%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 6%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
 | AEM 6.5 | Este artigo |
-| AEM 6.4 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/drm.html?lang=en) |
 
 Os ativos digitais geralmente são associados a uma licença que especifica os termos e a duração do uso. Porque [!DNL Adobe Experience Manager Assets] é totalmente integrado ao [!DNL Experience Manager] , você pode gerenciar com eficiência as informações de expiração de ativos e os estados de ativos. Você também pode associar informações de licenciamento a ativos.
 

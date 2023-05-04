@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '779'
 ht-degree: 7%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 7%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
 | AEM 6.5 | Este artigo |
-| AEM 6.4 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/touch-ui-configuring-asset-insights.html?lang=en) |
 
 O Assets Insights permite que você rastreie as estatísticas de classificação e uso de imagens usadas em campanhas de marketing de terceiros e nas soluções criativas de sites do Adobe. Ajuda a obter insights sobre seu desempenho e sua popularidade.
 

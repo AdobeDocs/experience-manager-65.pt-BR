@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 83e9ab570fac686fd53c9c2594cbfb2c05a89a0c
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2262'
+source-wordcount: '2245'
 ht-degree: 24%
 
 ---
@@ -293,7 +293,7 @@ Para verificar se o Serviço de conteúdo inteligente é treinado em suas tags n
 
    * Incapacidade de reconhecer sutis diferenças em imagens. Por exemplo, camisas finas versus camisas fixas regulares.
    * Incapacidade de identificar tags com base em pequenos padrões/partes de uma imagem. Por exemplo, logotipos em T-shirts.
-   * A marcação é compatível com as localidades que [!DNL Experience Manager] O é compatível com o . Para obter uma lista de idiomas, consulte [Notas de versão dos Serviços de conteúdo inteligente](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+   * A marcação é compatível com as localidades que [!DNL Experience Manager] O é compatível com o .
 
 * Para pesquisar ativos com tags inteligentes (regulares ou aprimoradas), use o [!DNL Assets] Omnisearch (pesquisa de texto completo). Não há predicado de pesquisa separado para tags inteligentes.
 

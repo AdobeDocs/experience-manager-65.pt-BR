@@ -12,9 +12,9 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2076'
 ht-degree: 11%
 
 ---
@@ -23,9 +23,8 @@ ht-degree: 11%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
-| AEM 6.4 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=pt-BR) |
 
 O Adobe Experience Manager Assets Brand Portal permite publicar ativos de marca aprovados do Adobe Experience Manager Assets no Brand Portal e distribuí-los aos usuários do Brand Portal.
 
@@ -82,7 +81,7 @@ Depois de baixar o AEM, para obter instruções sobre como configurar uma instâ
 
 Para obter instruções detalhadas, consulte
 
-* [Notas de versão do AEM 6.5 Service Pack ](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=pt-BR)
+* [Notas de versão do AEM 6.5 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=pt-BR)
 
 **Entre em contato com o suporte** caso não consiga encontrar o pacote AEM ou o Service Pack mais recente.
 

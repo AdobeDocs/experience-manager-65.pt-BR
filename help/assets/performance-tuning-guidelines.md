@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2753'
+source-wordcount: '2746'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Na verdade, a otimização de desempenho é uma tarefa fundamental que você exe
 
 Estas são algumas das principais áreas de foco sobre as quais você descobre e corrige problemas de desempenho antes que eles tenham impacto nos usuários.
 
-## Plataforma {#platform}
+## Platform {#platform}
 
 Embora o Experience Manager seja compatível com várias plataformas, o Adobe encontrou o maior suporte para ferramentas nativas no Linux e no Windows, o que contribui para um desempenho ideal e para a facilidade de implementação. Idealmente, você deve implantar um sistema operacional de 64 bits para atender aos altos requisitos de memória de um [!DNL Experience Manager Assets] implantação. Assim como em qualquer implantação do Experience Manager, você deve implementar o TarMK sempre que possível. Embora o TarMK não possa ser dimensionado além de uma única instância de autor, ele tem um desempenho melhor do que o MongoMK. Você pode adicionar instâncias de descarregamento do TarMK para aumentar o poder de processamento do workflow de sua [!DNL Experience Manager Assets] implantação.
 
@@ -212,7 +212,7 @@ Além disso, defina o caminho da pasta temporária do ImageMagick no `configure.
 >
 >O ImageMagick `policy.xml` e `configure.xml` os arquivos estão disponíveis em `/usr/lib64/ImageMagick-&#42;/config/` em vez de `/etc/ImageMagick/`.Consulte [Documentação do ImageMagick](https://www.imagemagick.org/script/resources.php) para o local dos arquivos de configuração.
 
-Se estiver usando [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Suporte ao cliente do Adobe se você planeja processar muitos arquivos grandes do PSD ou PSB. Trabalhe com o representante de Suporte ao cliente do Adobe para implementar essas práticas recomendadas para a implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários do Adobe. [!DNL Experience Manager] pode não processar arquivos PSB de alta resolução que tenham mais de 30000 x 23000 pixels.
+Se estiver usando [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Suporte ao cliente do Adobe se você planeja processar muitos arquivos grandes do PSD ou PSB. Trabalhe com o representante de Suporte ao cliente do Adobe para implementar essas práticas recomendadas para a implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários do Adobe. [!DNL Experience Manager]O pode não processar arquivos PSB de resolução muito alta com mais de 30.000 x 23.000 pixels. 
 
 ### Writeback XMP {#xmp-writeback}
 
@@ -222,7 +222,7 @@ XMP write-back atualiza o ativo original sempre que os metadados são modificado
 * Uma versão do ativo é criada
 * [!UICONTROL Ativo de atualização DAM] é executado em relação ao ativo
 
-Os resultados listados consomem recursos consideráveis. Portanto, o Adobe recomenda desativar XMP write-back se não for necessário. Para obter mais informações, consulte [Writeback XMP](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp-writeback.html).
+Os resultados listados consomem recursos consideráveis. Portanto, o Adobe recomenda desativar XMP write-back se não for necessário. Para obter mais informações, consulte [Writeback XMP](/help/assets/xmp-writeback.md).
 
 Importar uma grande quantidade de metadados pode resultar em atividade de write-back de XMP que consome muitos recursos se o sinalizador de workflows de execução estiver marcado. Planeje essa importação durante o uso do servidor simplificado para que o desempenho para outros usuários não seja afetado.
 

@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '3630'
+source-wordcount: '3618'
 ht-degree: 8%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 8%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | Este artigo |
-| AEM 6.4 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/metadata-schemas.html?lang=en) |
 
 As organizações vêm com um modelo de metadados que melhora a detecção de ativos, o uso, a interoperabilidade e assim por diante. A aplicação correta de metadados é sacrossanta para manter fluxos de trabalho e processos orientados por metadados. Para aderir à estratégia e aos padrões de metadados de toda a organização, você pode usar esquemas de metadados que ajudam os usuários do DAM a se alinhar. [!DNL Adobe Experience Manager] O permite que métodos fáceis e flexíveis criem, mantenham e apliquem esquemas de metadados.
 
@@ -53,7 +52,7 @@ Para exibir uma lista de formulários ou modelos, em [!DNL Experience Manager] n
 |  | <ul><li>[!UICONTROL imagem]</li></ul> | Formulário de esquema para imagens com o tipo MIME, como `image/jpeg` e `image/png`. <br> O [!UICONTROL imagem] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: Formulário de esquema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Formulário de esquema dos ativos com TIFF de subtipo.</li></ul> |
 |  | <ul><li>[!UICONTROL aplicativo]</li></ul> | Formulário de esquema para ativos com tipo MIME, como `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: Formulário de esquema para ativos com PDF de subtipo. |
 |  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulário de esquema para ativos de vídeo com tipo MIME, como `video/avi` e `video/mp4`. |
-| [!UICONTROL collection] |  | Formulário de esquema para coleções. |
+| [!UICONTROL coleção] |  | Formulário de esquema para coleções. |
 | [!UICONTROL contentfragment] |  | [Formulário de esquema para fragmentos de conteúdo](/help/sites-developing/customizing-content-fragments.md). |
 | [!UICONTROL formulários] |  | Este formulário de esquema está relacionado a [Adobe Experience Manager Forms](/help/forms/home.md). |
 | [!UICONTROL ugc_contentfragment] |  | Formulário de esquema para partes de conteúdo geradas pelo usuário e ativos integrados no Experience Manager a partir de redes sociais. |
@@ -90,7 +89,7 @@ O **[!UICONTROL Criar formulário]** lista itens de formulário que você usa no
 
 | Nome do componente | Descrição |
 | -------------------------------- | ----------------------------------------------------------------------------------- |
-| [!UICONTROL Título da seção] | Adicione um cabeçalho de seção para obter uma lista de componentes comuns. |
+| [!UICONTROL Cabeçalho da seção] | Adicione um cabeçalho de seção para obter uma lista de componentes comuns. |
 | [!UICONTROL Texto em linha única] | Adicione uma propriedade de texto de linha única. Ele é armazenado como uma string. |
 | [!UICONTROL Texto multivalor] | Adicione uma propriedade de texto de vários valores. Ele é armazenado como uma matriz de sequência de caracteres. |
 | [!UICONTROL Número] | Adicione um componente de número. |
