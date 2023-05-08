@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5b2f624d-e5b8-4484-a773-7784ebce58bd
 docset: aem65
 exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Para criar uma configuração ExactTarget no Cloud Services:
 
    O ExactTarget foi configurado. Você pode editar a configuração clicando em **Editar**. Você pode acessar o ExactTarget clicando em **Ir para ExactTarget**.
 
-1. AEM agora fornece um recurso de Extensão de dados. É possível importar colunas de extensão de dados do ExactTarget. Isso pode ser configurado clicando no sinal &quot;+&quot; que aparece além da configuração ExactTarget criada com êxito. Qualquer extensão de dados existente pode ser selecionada na lista suspensa. Para obter mais informações sobre como configurar extensões de dados, consulte [Documentação do ExactTarget](https://help.exacttarget.com/en/documentation/exacttarget/subscribers/data_extensions_and_data_relationships).
+1. AEM agora fornece um recurso de Extensão de dados. É possível importar colunas de extensão de dados do ExactTarget. Ele pode ser configurado clicando no sinal &quot;+&quot; que aparece além da configuração ExactTarget criada com êxito. Qualquer extensão de dados existente pode ser selecionada na lista suspensa. Para obter mais informações sobre como configurar extensões de dados, consulte [Documentação do ExactTarget](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&amp;type=5).
 
    Colunas de extensão de dados importadas podem ser usadas posteriormente por meio do **Texto e personalização** componente.
 

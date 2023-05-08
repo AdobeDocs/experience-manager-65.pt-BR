@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Siga estas etapas para acessar a página de aterrissagem do catálogo de aplicat
 
 ## O painel do aplicativo AEM Mobile {#the-aem-mobile-app-dashboard}
 
-Selecionar um aplicativo AEM Mobile no catálogo exibirá seu painel. Aqui você pode gerenciar seu aplicativo, visualizar estatísticas, criar, implantar e gerenciar o conteúdo do aplicativo móvel.
+Selecionar um aplicativo AEM Mobile no catálogo exibe seu painel. Aqui você pode gerenciar seu aplicativo, visualizar estatísticas, criar, implantar e gerenciar o conteúdo do aplicativo móvel.
 
 Você pode expandir em cada bloco no Painel do AEM Mobile para exibir ou editar detalhes clicando no botão &#39;..&#39; no canto inferior direito.
 
@@ -73,13 +73,13 @@ O Pacote de conteúdo permite que o Autor do aplicativo AEM gerencie o conteúdo
 
 O Pacote de conteúdo cria um arquivo ZIP, considerado um Pacote de versão de conteúdo, para cada atualização. Esses pacotes contêm recursos html e páginas html que são geradas durante a renderização do aplicativo e são inteligentes o suficiente para empacotar apenas os arquivos que foram modificados desde a última atualização.
 
-O mosaico Gerenciar pacote de conteúdo **Tipo** será exibida como &quot;Aplicativo&quot; para indicar o conteúdo do Application Shell, por exemplo, a estrutura ou a infraestrutura do aplicativo gerenciado por um desenvolvedor ou como &quot;Conteúdo&quot;, que representa o conteúdo da página gerenciado pelo autor de conteúdo.
+O mosaico Gerenciar pacote de conteúdo **Tipo** exibe &quot;Aplicativo&quot; para indicar conteúdo do Application Shell, por exemplo, estrutura ou infraestrutura do aplicativo gerenciado por um desenvolvedor ou &quot;Conteúdo&quot; que representa o conteúdo da página gerenciado pelo autor de conteúdo.
 
-O conteúdo pode ser representado como um idioma ou como uma parte específica do aplicativo, onde vários pacotes de versão de conteúdo são consumidos pelo aplicativo. A escolha de como agrupar seu conteúdo foi criada para ser flexível e estar totalmente à altura de como você deseja gerenciar o conteúdo para seu aplicativo.
+O conteúdo pode ser representado como um idioma ou como uma parte específica do aplicativo, onde vários pacotes de versão de conteúdo são consumidos pelo aplicativo. A escolha de como agrupar o conteúdo é flexível e totalmente compatível com a maneira como você deseja gerenciar o conteúdo do seu aplicativo.
 
 O **Modificado** indica quando as páginas foram modificadas mais recentemente.
 
-O **Preparado** mostra quando a última atualização de conteúdo foi criada. Para criar uma nova atualização de conteúdo e preparar as alterações, abra qualquer registro no bloco e crie uma nova atualização.
+O **Preparado** mostra quando a última atualização de conteúdo foi criada. Para criar uma atualização de conteúdo e preparar as alterações, abra qualquer registro no bloco e crie uma atualização.
 
 O **Publicado** mostra quando a última atualização de conteúdo foi publicada e disponibilizada para consumo pelos clientes. Para publicar o conteúdo, primeiro estágio desse conteúdo e, em seguida, publique a atualização neste bloco e publique no console Detalhes da versão do conteúdo .
 
@@ -107,7 +107,7 @@ Como alternativa, você pode baixar a fonte do dispositivo para criar localmente
 >
 >Consulte [Configurar o Cloud Service do Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md) para obter detalhes.
 
-AEM Mobile integra-se ao Adobe Analytics por meio de [SDK do Adobe Mobile Services](https://www.adobe.com/ca/solutions/digital-marketing/mobile-services/app-sdk.html) (AMS).
+O AEM Mobile integra-se ao Adobe Analytics por meio de [SDK do Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile.html?lang=en) (AMS).
 
 Centro de Controle **Mosaico de métricas** exibe análises de resumo extraídas do AMS para seu aplicativo. Você pode detalhar o painel de análise clicando no botão &#39;..&#39; no canto inferior direito.
 
@@ -115,7 +115,7 @@ Centro de Controle **Mosaico de métricas** exibe análises de resumo extraídas
 
 ### O Bloco Gerenciar Conteúdo da Entidade {#the-manage-entity-content-tile}
 
-O Bloco Gerenciar conteúdo da entidade permite adicionar e gerenciar definições de aplicativos. As definições do aplicativo são uma maneira de identificar quais espaços (e outras configurações) são apropriados para o aplicativo. Dessa forma, um novo espaço pode ser adicionado, sem precisar recompilar o aplicativo. A definição do aplicativo é atualizada e incluirá as informações de quaisquer novos espaços.
+O Bloco Gerenciar conteúdo da entidade permite adicionar e gerenciar definições de aplicativos. As definições do aplicativo são uma maneira de identificar quais espaços (e outras configurações) são apropriados para o aplicativo. Dessa forma, um novo espaço pode ser adicionado, sem precisar recompilar o aplicativo. A definição do aplicativo é atualizada e inclui as informações de quaisquer novos espaços.
 
 Clique em [here](/help/mobile/phonegap-app-definitions.md) para criar e gerenciar as definições do aplicativo.
 

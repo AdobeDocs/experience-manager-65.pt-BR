@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Cada plataforma requer que ADBMobileConfig seja copiado para um local específic
 
 Se estiver criando com a CLI do PhoneGap, isso pode ser feito com um script de gancho de compilação do cordova. Isso pode ser visto no aplicativo Geometrixx Outdoors em:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-Para o iOS, o arquivo precisará ser copiado para o **Recursos** diretório (por exemplo, &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Se o aplicativo for direcionado para Android, o caminho para o qual copiar será &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Para obter mais detalhes sobre o uso de ganchos durante a build da CLI do PhoneGap, consulte [Três ganchos que seu projeto Cordova/PhoneGap precisa](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/).
+Para o iOS, o arquivo precisará ser copiado para o **Recursos** diretório (por exemplo, &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Se o aplicativo for direcionado para Android, o caminho para o qual copiar será &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Para obter mais detalhes sobre o uso de ganchos durante a build da CLI do PhoneGap, consulte [Três ganchos que seu projeto Cordova/PhoneGap precisa](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////

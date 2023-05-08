@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1036'
 ht-degree: 1%
 
 ---
@@ -164,7 +164,7 @@ Envie os recursos do aplicativo para o PhoneGap Build para compilação nas vár
 
 1. Na caixa de diálogo Êxito, clique em PhoneGap Build para abrir a página do Adobe PhoneGap Build em [https://build.phonegap.com/apps](https://build.phonegap.com/apps). Se você estiver esperando que seu aplicativo apareça, é possível verificar a variável [Status do PhoneGap Build](https://status.build.phonegap.com/) página.
 
-   Para obter informações sobre como instalar a build, consulte o [Documentação do PhoneGap Build](https://docs.build.phonegap.com/en_US/3.1.0/#googtrans%28en%29).
+   Para obter informações sobre como instalar a build, consulte o [Documentação do PhoneGap Build](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 
    >[!NOTE]
    >

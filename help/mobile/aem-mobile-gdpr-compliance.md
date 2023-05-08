@@ -1,15 +1,13 @@
 ---
-title: AEM Mobile - Preparação para o GDPR
-seo-title: AEM Mobile - GDPR Readiness
-description: "AEM Mobile - Preparação para o GDPR"
-seo-description: null
+title: Adobe Experience Manager Mobile - Preparação para o GDPR
+description: Adobe Experience Manager Mobile - Preparação para o GDPR
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '691'
 ht-degree: 1%
 
 ---
@@ -24,15 +22,15 @@ ht-degree: 1%
 
 A AEM Mobile está pronta para ajudar os clientes com suas obrigações de conformidade com o GDPR. Nenhum dado pessoal é armazenado no AEM Mobile. Se você estiver provisionado, poderá fazer logon no Adobe Experience Mobile com sua Adobe ID.
 
-[https://aemmobile.adobe.com/signin/index.html](https://aemmobile.adobe.com/signin/index.html)
+<!-- [https://aemmobile.adobe.com/signin/index.html](https://aemmobile.adobe.com/signin/index.html) -->
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-O produto de publicação digital do Adobe (que precede o AEM Mobile) é compatível com as iniciativas de preparação para o GDPR do Adobe. Consulte [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). Os itens a seguir fornecerão especificações sobre o suporte para funções relevantes do GDPR no produto Digital Publishing Suite, incluindo como trabalhar com o Adobe para iniciar solicitações do GDPR.
+Adobe (produto de publicação digital AEM Mobile) que suporta iniciativas de preparação para o GDPR. Consulte [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). Os itens a seguir fornecerão especificações sobre o suporte para funções relevantes do GDPR no produto Digital Publishing Suite, incluindo como trabalhar com o Adobe para iniciar solicitações do GDPR.
 
 Para garantir que você não está confundindo o AEM Mobile com o produto Digital Publishing Suite mais antigo, faça logon no produto Digital Publishing Suite aqui:
 
-[https://digitalpublishing.acrobat.com/welcome.html](https://digitalpublishing.acrobat.com/welcome.html)
+[https://acrobat.adobe.com/us/en/](https://acrobat.adobe.com/us/en/)
 
 ### Iniciar uma solicitação do GDPR {#initiating-a-gdpr-request}
 

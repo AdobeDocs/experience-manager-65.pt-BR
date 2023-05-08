@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 55667e62-a61b-4794-b292-8d54929c41ac
 exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2691'
 ht-degree: 0%
 
 ---
@@ -309,7 +309,7 @@ Esse é um diretório oculto que você pode não ver, dependendo das configuraç
 
 #### .cordova/hooks/ {#cordova-hooks}
 
-Esse diretório contém o [Ganchos da CLI](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/). As pastas no diretório hooks contêm scripts node.js que são executados em pontos exatos durante a criação.
+Esse diretório contém o [Ganchos da CLI](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). As pastas no diretório hooks contêm scripts node.js que são executados em pontos exatos durante a criação.
 
 #### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 

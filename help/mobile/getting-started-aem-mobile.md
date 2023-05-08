@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 724e09c2-3df3-4080-a0d4-ee2ede483791
 exl-id: a2bc9a50-6455-4703-8829-964fab313e96
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 5%
+source-wordcount: '193'
+ht-degree: 1%
 
 ---
 
@@ -25,14 +25,14 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->Os clientes existentes de aplicativos AEM Mobile que migram do AEM 6.2 ou 6.3 para o AEM 6.5 podem continuar usando os aplicativos AEM Mobile baixando um [pacote do PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package). No entanto, novas instalações do AEM 6.5 não serão compatíveis com a funcionalidade Aplicativos AEM Mobile.
+>Os clientes existentes de aplicativos AEM Mobile que migram do AEM 6.2 ou 6.3 para o AEM 6.5 podem continuar usando os aplicativos AEM Mobile baixando um pacote do PackageShare. No entanto, as novas instalações do AEM 6.5 não são compatíveis com a funcionalidade Aplicativos AEM Mobile.
 
 O Adobe Experience Manager (AEM) Mobile faz parte da plataforma digital de vários canais da Adobe Experience Manager que também utiliza AEM Assets, Sites, Screens, Fluxo de trabalho, Gerenciador de usuários, Commerce e Forms. O AEM Mobile oferece uma flexibilidade notável de implantação, permitindo que as empresas usem uma variedade de fontes de conteúdo.
 
 A AEM Mobile oferece vários métodos para criar aplicativos. As três diferentes maneiras de criar aplicativos são:
 
 * **[Uso de serviços sob demanda com AEM](/help/mobile/getting-started-aem-mobile-on-demand.md)**
-* **[Uso de serviços sob demanda sem AEM](https://helpx.adobe.com/digital-publishing-solution/topics.html)**
+* **[Uso de serviços sob demanda sem AEM](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
 * **[Uso da Adobe PhoneGap Enterprise com AEM](/help/mobile/getting-started-aem-mobile-phonegap.md)**
 
 >[!NOTE]
