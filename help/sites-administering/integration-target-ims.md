@@ -2,9 +2,9 @@
 title: Integração com o Adobe Target usando IMS
 description: Saiba mais sobre como integrar AEM com o Adobe Target usando o IMS
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 5c3de9c272030b3e258aea95899a58553c3b33db
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1503'
 ht-degree: 55%
 
 ---
@@ -167,7 +167,7 @@ Ao retornar ao AEM, é possível concluir a configuração do IMS adicionando os
    * **Segredo do cliente**: Gere isso no [Visão geral](#details-stored-for-the-ims-integration-project) seção e cópia
    * **Carga**: copie isso da seção [Gerar JWT](#details-stored-for-the-ims-integration-project) 
 
-   ![](assets/integrate-target-io-10.png)
+   ![Configuração de conta técnica](assets/integrate-target-io-10.png)
 
 1. Confirme com **Criar**.
 
