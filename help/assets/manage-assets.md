@@ -6,10 +6,11 @@ role: User
 feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+hide: true
+source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
 workflow-type: tm+mt
 source-wordcount: '9970'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -96,7 +97,7 @@ Para configurar a tarefa de limpeza para trabalhos de upload de partes não conc
 
 >[!CAUTION]
 >
->O upload de chunk é acionado quando o valor padrão é de 500 MB e o tamanho do chunk é de 50 MB. Se você editar [Configuração do token do Apache Jackrabbit Oak](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) e defina a `timeout configuration` para menos do que o tempo necessário para um ativo carregar, você encontra uma situação de tempo limite de sessão enquanto o upload do ativo está em andamento. Portanto, altere a `chunkUploadMinFileSize` e `chunksize` para que cada solicitação de segmento atualize a sessão.
+>O upload de chunk é acionado quando o valor padrão é de 500 MB e o tamanho do chunk é de 50 MB. Se você editar [Configuração do token do Apache Jackrabbit Oak](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=pt-BR) e defina a `timeout configuration` para menos do que o tempo necessário para um ativo carregar, você encontra uma situação de tempo limite de sessão enquanto o upload do ativo está em andamento. Portanto, altere a `chunkUploadMinFileSize` e `chunksize` para que cada solicitação de segmento atualize a sessão.
 >
 >Dada a expiração da credencial, a latência, a largura de banda e os uploads simultâneos esperados, o valor mais alto que permite garantir que o seguinte seja escolhido:
 >

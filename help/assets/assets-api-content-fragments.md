@@ -3,10 +3,11 @@ title: Suporte a fragmentos de conteúdo do Adobe Experience Manager na API HTTP
 description: Saiba mais sobre o suporte para Fragmentos de conteúdo na API HTTP do Assets, uma parte importante AEM recurso de entrega sem cabeçalho.
 feature: Content Fragments,Assets HTTP API
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+hide: true
+source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
 workflow-type: tm+mt
 source-wordcount: '1957'
-ht-degree: 23%
+ht-degree: 24%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 23%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=en) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 
