@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 1b57fca352457e973bd7395e060e3d0495a9d920
+source-git-commit: 25f7218355b7715949273c84eb72ddde3d6a0a65
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '994'
 ht-degree: 84%
 
 ---
@@ -41,26 +41,27 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 
    ![wf-96](assets/wf-96.png)
 
+<!--
+## Search Workflow Instances {#search-workflow-instances}
 
-## Pesquisar instâncias de fluxo de trabalho {#search-workflow-instances}
-
-1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
-1. Selecione **Instâncias** para exibir a lista de instâncias de fluxo de trabalho em andamento. No painel superior, no canto esquerdo, selecione **Filtros**. Como alternativa, você pode pressionar as teclas Alt+1. A seguinte caixa de diálogo é exibida:
+1. Using Navigation select **Tools**, then **Workflow**.
+1. Select **Instances** to display the list of workflow instances currently in progress. On the top rail, in the left corner, select **Filters**. Alternatively, you can use the keystrokes alt+1. The following dialog is displayed:
 
    ![wf-99-1](assets/wf-99-1.png)
 
-1. Na caixa de diálogo Filtro, selecione os critérios de pesquisa do fluxo de trabalho. Você pode pesquisar com base nessas entradas:
+1. In the Filter dialog, select the workflow search criteria. You can search based on these inputs:
 
-   * Caminho da carga: selecionar um caminho específico
-   * Modelo de fluxo de trabalho: selecionar um modelo de fluxo de trabalho
-   * Destinatário: selecionar um destinatário do fluxo de trabalho
-   * Tipo: Tarefa, item de fluxo de trabalho ou falha de fluxo de trabalho
-   * Status da tarefa: Ativo, concluído ou encerrado
-   * Onde estou: proprietário AND destinatário, somente proprietário, somente destinatário
-   * Data inicial: data inicial anterior ou posterior a uma data especificada
-   * Data final: Data final anterior ou posterior a uma data especificada
-   * Data de vencimento: data de vencimento anterior ou posterior a uma data especificada
-   * Data atualizada: data atualizada anterior ou posterior a uma data especificada
+   * Payload path: Select a specific path
+   * Workflow model: Select a workflow model
+   * Assignee: Select a workflow Assignee
+   * Type: Task, Workflow item, or Workflow Failure
+   * Task Status: Active, Complete, or Terminated
+   * Where I Am: Owner AND Assignee, Owner only, Assignee only
+   * Start Date: Start date before or after a specified date
+   * End Date: End date before or after a specified date
+   * Due Date: Due date before or after a specified date
+   * Updated Date: Updated date before or after a specified date
+-->
 
 ## Suspensão, retomada e encerramento de uma instância de fluxo de trabalho {#suspending-resuming-and-terminating-a-workflow-instance}
 
