@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: bb42b5990993b0f8cea95cf1f6c033aed2713c1c
+source-git-commit: 164b3745c5bddf6ec77f9ac2ada19cfa10c6d266
 workflow-type: tm+mt
-source-wordcount: '3519'
+source-wordcount: '3624'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,18 @@ E agora, obtenha uma melhor pontuação Google Core Web Vital para LCP (Grande P
 >
 >A Smart Imaging requer o uso da CDN (Content Delivery Network) pronta para uso que é fornecida com o Adobe Experience Manager - Dynamic Media. Nenhum outro CDN personalizado é compatível com esse recurso.
 
-O Smart Imaging se beneficia do aumento de desempenho adicional de ser totalmente integrado ao melhor serviço premium CDN (Content Delivery Network) do Adobe. Esse serviço encontra a rota ideal da Internet entre servidores, redes e pontos de peering. Ele encontra uma rota que tem a latência mais baixa e a menor taxa de perda de pacotes em vez de usar a rota padrão na Internet.
+>[!TIP]
+>
+>Experimente e descubra os benefícios dos modificadores de imagem da Dynamic Media e do Smart Imaging, usando o Dynamic Media [_Instantâneo_](https://snapshot.scene7.com/).
+>
+> O Snapshot é uma ferramenta de demonstração visual, projetada para ilustrar o poder do Dynamic Media para a entrega de imagens otimizada e dinâmica. Experimente imagens de teste ou URLs do Dynamic Media para observar visualmente a saída de vários modificadores de imagem do Dynamic Media e otimizações de Smart Imaging para o seguinte:
+>* Tamanho do arquivo (com entrega de WebP e AVIF)
+>* Largura de banda de rede
+>* DPR (Proporção de pixels do dispositivo)
+>
+>Para saber como é fácil usar o Snapshot, reproduza o [Vídeo de treinamento de instantâneo](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=en) (3 minutos e 17 segundos).
+
+O Smart Imaging beneficia do aumento de desempenho adicional de ser totalmente integrado ao serviço premium CDN (Adobe Best-in-class Content Delivery Network). Esse serviço encontra a rota ideal da Internet entre servidores, redes e pontos de peering. Ele encontra uma rota que tem a latência mais baixa e a menor taxa de perda de pacotes em vez de usar a rota padrão na Internet.
 
 Os seguintes exemplos de ativos de imagem representam a otimização adicionada da imagem inteligente:
 
@@ -43,7 +54,7 @@ Semelhante ao acima, o Adobe também executou um teste com um conjunto de amostr
 
 Compare WebP e AVIF com PNG, você pode observar uma redução de 84% no tamanho com WebP e 87% com AVIF. E, como os formatos WebP e AVIF são compatíveis com transparência e várias animações de imagem, é uma boa substituição para arquivos PNG e GIF transparentes.
 
-Consulte também [Otimização de imagem com formatos de imagem de próxima geração (WebP e AVIF)](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+Consulte também [Otimização de imagem com formatos de imagem de próxima geração (WebP e AVIF)](https://blog.developer.adobe.com/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
 <!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
@@ -76,7 +87,7 @@ Consulte também [bfc](https://experienceleague.adobe.com/docs/dynamic-media-dev
 
 Proporção de pixels do dispositivo (DPR) - também conhecida como proporção de pixels CSS - é a relação entre os pixels físicos e os pixels lógicos de um dispositivo. Especialmente com o advento das telas de retina, a resolução de pixels dos dispositivos móveis modernos está crescendo a um ritmo rápido.
 
-Ativar a otimização da taxa de pixels do dispositivo renderiza a imagem na resolução nativa da tela, o que a faz parecer nítida.
+Ativar a otimização da taxa de pixels do dispositivo renderiza a imagem na resolução nativa da tela, o que a torna nítida.
 
 Atualmente, a densidade de pixels da exibição vem dos valores do cabeçalho Akamai CDN.
 
@@ -155,7 +166,7 @@ Para formatos de arquivo de imagem que oferecem suporte à transparência como P
 
 O Smart Imaging funciona com suas predefinições de imagem existentes e observa todas as suas configurações de imagem. O que muda é o formato da imagem, ou a configuração de qualidade, ou ambos. Para conversão de formato, o Smart Imaging mantém a fidelidade visual completa conforme definido pelas configurações predefinidas da imagem, mas em um tamanho de arquivo menor.
 
-Por exemplo, suponha que uma predefinição de imagem seja definida com formato JPEG, tamanho 500 x 500, qualidade=85 e máscara de nitidez=0,1,1,5. Quando a Smart Imaging detecta que um usuário está em um navegador Chrome, a imagem é convertida para o formato WebP, com tamanho 500 x 500, e a nitidez da máscara=0,1,1,5 em uma qualidade WebP que corresponde a uma qualidade de JPEG de 85 o mais próximo possível. O impacto dessa conversão da WebP é comparado ao JPEG, e o menor dos dois é retornado.
+Por exemplo, suponha que uma predefinição de imagem seja definida com formato JPEG, tamanho 500 x 500, qualidade=85 e máscara de nitidez=0,1,1,5. Quando o Smart Imaging detecta que um usuário está em um navegador Chrome, a imagem é convertida para o formato WebP, com tamanho 500 x 500. E, unsharmask=0.1,1,5 está em uma qualidade WebP que corresponde a uma qualidade de JPEG de 85 o mais próximo possível. O impacto dessa conversão da WebP é comparado ao JPEG, e o menor dos dois é retornado.
 
 ## Preciso alterar quaisquer URLs, predefinições de imagens ou implantar qualquer novo código no meu site para Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
