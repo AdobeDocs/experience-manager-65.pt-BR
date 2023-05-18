@@ -11,9 +11,9 @@ discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4edfc51227607b4fb3ee4b97443d2040015b6a65
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,6 @@ Esta seção descreve o que acontece quando uma revisão é criada ou configurad
    * **Prazo de revisão**: Disponível para edição. É possível modificar o prazo para qualquer data e hora além da data e hora atuais.
 
    * **Revisores**: Disponível para edição. Você pode adicionar ou remover revisores. Se uma tarefa estiver vencida, você poderá adicionar revisores somente após estender o prazo além da data atual.
-
-1. Edite os campos necessários e clique em Atualizar.
-
-   ![Rever o estado atualizado no Gerenciador de Tarefas](assets/tskmgr.png)
-
-   Rever o estado atualizado no Gerenciador de Tarefas
 
 1. Para encerrar a revisão, clique em Finalizar.
 
