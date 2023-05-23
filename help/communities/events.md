@@ -1,7 +1,7 @@
 ---
-title: Eventos OSGi para componentes das Comunidades
+title: Eventos OSGi para componentes das comunidades
 seo-title: OSGi Events for Communities Components
-description: Eventos OSGi são enviados que podem acionar ouvintes assíncronos
+description: Eventos OSGi enviados para acionar ouvintes assíncronos
 seo-description: OSGi events are sent that can trigger asynchronous listeners
 uuid: 317e2add-689d-4c99-ae38-0703b6649cb7
 contentOwner: msm-service
@@ -17,15 +17,15 @@ ht-degree: 4%
 
 ---
 
-# Eventos OSGi para componentes das Comunidades  {#osgi-events-for-communities-components}
+# Eventos OSGi para componentes das comunidades  {#osgi-events-for-communities-components}
 
 ## Visão geral {#overview}
 
-Quando os membros interagem com os recursos das Comunidades, os eventos OSGi são enviados e podem acionar ouvintes assíncronos, como notificações ou gamificação (pontuação e selo).
+Quando os membros interagem com os recursos do Communities, são enviados eventos OSGi que podem acionar ouvintes assíncronos, como notificações ou gamificação (pontuação e marcação).
 
-Um componente [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) A instância registra os eventos como `actions` que ocorrem para um `topic`. O SocialEvent inclui um método para retornar um `verb` associada à ação. Existe um *n-1* relação entre `actions` e `verbs`.
+De um componente [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) a instância registra os eventos como `actions` que ocorrem por um `topic`. O SocialEvent inclui um método para retornar um `verb` associada à ação. Existe uma *n-1* relação entre `actions` e `verbs`.
 
-Para os componentes Comunidades entregues na versão, as tabelas a seguir descrevem a `verbs` definido para cada `topic` disponível para uso.
+Para os componentes das Comunidades entregues na versão, as tabelas a seguir descrevem os `verbs` definido para cada `topic` disponíveis para uso.
 
 ## Tópicos e verbos {#topics-and-verbs}
 
@@ -34,111 +34,111 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POST | Membro cria um evento de calendário |
+| POST | O membro cria um evento de calendário |
 | ADICIONAR | Comentários do membro em um evento de calendário |
-| ATUALIZAR | O evento ou comentário do calendário do membro é editado |
-| EXCLUIR | O evento ou comentário do calendário do membro é excluído |
+| ATUALIZAR | O evento ou comentário do calendário do membro foi editado |
+| EXCLUIR | O evento ou comentário do calendário do membro foi excluído |
 
-[Componente Comentários](essentials-comments.md)
+[Componente de comentários](essentials-comments.md)
 SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verbo** | **Descrição** |
 |---|---|
 | POST | Membro cria um comentário |
-| ADICIONAR | Membro responde à observação |
-| ATUALIZAR | O comentário do membro é editado |
-| EXCLUIR | O comentário do deputado é suprimido |
+| ADICIONAR | Respostas dos membros aos comentários |
+| ATUALIZAR | Comentário do membro editado |
+| EXCLUIR | O comentário do membro foi excluído |
 
-[Componente Biblioteca de arquivos](essentials-file-library.md)
+[Componente da biblioteca de arquivos](essentials-file-library.md)
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descrição** |
 |---|---|
 | POST | Membro cria uma pasta |
-| ANEXAR | Membro faz upload de um arquivo |
+| ANEXE | O membro carrega um arquivo |
 | ATUALIZAR | Membro atualiza uma pasta ou arquivo |
-| EXCLUIR | Membro exclui uma pasta ou arquivo |
+| EXCLUIR | O membro exclui uma pasta ou arquivo |
 
-[Componente de fórum](essentials-forum.md)
+[Componente do fórum](essentials-forum.md)
 SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POST | Membro cria tópico do fórum |
-| ADICIONAR | Membro responde ao tópico do fórum |
+| POST | Membro cria tópico de fórum |
+| ADICIONAR | Respostas dos membros ao tópico do fórum |
 | ATUALIZAR | O tópico ou a resposta do fórum do membro é editado |
 | EXCLUIR | O tópico ou a resposta do fórum do membro é excluído |
 
-[Componente Diário](blog-developer-basics.md)
+[Componente do diário](blog-developer-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbo** | **Descrição** |
 |---|---|
 | POST | Membro cria um artigo de blog |
-| ADICIONAR | Membro comenta em um artigo do blog |
-| ATUALIZAR | O artigo ou comentário do blog do membro é editado |
-| EXCLUIR | O artigo ou comentário do blog do membro é excluído |
+| ADICIONAR | Comentários do membro em um artigo do blog |
+| ATUALIZAR | Artigo ou comentário do blog do membro editado |
+| EXCLUIR | O artigo ou comentário do blog do membro foi excluído |
 
-[Componente QnA](qna-essentials.md)
+[Componente de QnA](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descrição** |
 |---|---|
-| POST | Membro cria uma pergunta QnA |
+| POST | O membro cria uma pergunta QnA |
 | ADICIONAR | Membro cria uma resposta QnA |
 | ATUALIZAR | A pergunta ou resposta QnA do membro é editada |
-| SELECIONAR | A resposta do membro é selecionada |
-| CANCELAR SELEÇÃO | A resposta do membro é desmarcada |
-| EXCLUIR | A pergunta ou resposta do Membro é eliminada |
+| SELECIONE | A resposta do membro está selecionada |
+| DESMARCAR | A resposta do membro foi desmarcada |
+| EXCLUIR | A pergunta ou resposta QnA do membro foi excluída |
 
-[Componente de revisões](reviews-basics.md)
+[Componente de análises](reviews-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbo** | **Descrição** |
 |---|---|
 | POST | Membro cria revisão |
-| ATUALIZAR | A revisão do membro é editada |
-| EXCLUIR | A revisão do Membro é suprimida |
+| ATUALIZAR | Revisão do membro editada |
+| EXCLUIR | Revisão do membro excluída |
 
 [Componente de classificação](rating-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbo** | **Descrição** |
 |---|---|
-| ADICIONAR CLASSIFICAÇÃO | O conteúdo dos membros foi avaliado |
-| REMOVER CLASSIFICAÇÃO | O conteúdo dos membros foi reduzido |
+| ADICIONAR CLASSIFICAÇÃO | O conteúdo do membro foi avaliado em alta |
+| REMOVER CLASSIFICAÇÃO | O conteúdo do membro foi classificado como inativo |
 
 [Componente de votação](essentials-voting.md)
 SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbo** | **Descrição** |
 |---|---|
-| ADICIONAR VOTAÇÃO | O conteúdo do deputado foi votado |
-| REMOVER VOTAÇÃO | O conteúdo dos deputados foi rejeitado |
+| ADICIONAR VOTAÇÃO | O conteúdo do membro foi aprovado |
+| REMOVER VOTAÇÃO | O conteúdo do membro foi rejeitado |
 
 **Componentes habilitados para moderação**
-SocialEvent `topic`= com/adobe/cq/social/moderação
+SocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **Verbo** | **Descrição** |
 |---|---|
-| NEGAR | O conteúdo do membro é negado |
-| SINALIZADOR COMO INADEQUADO | O conteúdo do membro é sinalizado |
-| INADEQUADO | O conteúdo do membro não está sinalizado |
-| ACEITAR | O conteúdo do membro é aprovado pelo moderador |
-| FECHAR | Membro fecha comentário a edições e respostas |
-| ABRIR | Comentário reaberto pelo membro |
+| NEGAR | Conteúdo do membro negado |
+| SINALIZAR COMO INADEQUADO | O conteúdo do membro está sinalizado |
+| NÃO SINALIZAR COMO INAPROPRIADO | O conteúdo do membro não está sinalizado |
+| ACCEPT | O conteúdo do membro é aprovado pelo moderador |
+| FECHAR | Membro fecha comentário para edições e respostas |
+| ABRIR | Membro reabre comentário |
 
-## Eventos para componentes personalizados {#events-for-custom-components}
+## Eventos para Componentes personalizados {#events-for-custom-components}
 
-Para um componente personalizado, a variável [Classe abstrata do SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) deve ser estendido d para registrar os eventos do componente como `actions`que ocorrem para um `topic`.
+Para um componente personalizado, a variável [Classe abstrata de SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) deve ser estendido para registrar os eventos do componente como `actions`que ocorrem por um `topic`.
 
-O evento personalizado substituiria o método `getVerb()` de forma a que `verb`é retornado para cada `action`. O `verb` retornado para uma ação pode ser usado normalmente (como `POST`) ou uma especializada para o componente (como `ADD RATING`). Existe um *n-1* relação entre `actions`e `verbs`.
+O evento personalizado substituiria o método `getVerb()` de modo a que um `verb`é retornado para cada `action`. A variável `verb` retornados para uma ação podem ser aqueles normalmente usados (como `POST`) ou uma especializada para o componente (como `ADD RATING`). Existe uma *n-1* relação entre `actions`e `verbs`.
 
 >[!NOTE]
 >
->Certifique-se de que uma extensão personalizada esteja registrada com uma classificação inferior a qualquer implementação existente no produto.
+>Verifique se uma extensão personalizada está registrada com uma classificação inferior a qualquer implementação existente no produto.
 
-### Pseudo-código para o evento de componente personalizado {#pseudo-code-for-custom-component-event}
+### Pseudo-código para evento de componente personalizado {#pseudo-code-for-custom-component-event}
 
 [org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
 [com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);
@@ -241,9 +241,9 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 
 ## Exemplo de EventListener para filtrar dados de fluxo de atividade {#sample-eventlistener-to-filter-activity-stream-data}
 
-É possível ouvir eventos com o objetivo de modificar o que aparece no fluxo de atividades.
+É possível ouvir eventos com a finalidade de modificar o que aparece no fluxo de atividade.
 
-A amostra de pseudo-código a seguir removerá DELETE events para o componente Comentários do fluxo de atividades.
+A amostra de pseudo-código a seguir removerá os eventos de DELETE para o componente Comentários do fluxo de atividade.
 
 ### Pseudo-código para EventListener {#pseudo-code-for-eventlistener}
 

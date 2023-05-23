@@ -20,13 +20,13 @@ ht-degree: 2%
 
 # Admin Console{#admin-consoles}
 
-Por padrão, a capacidade de alternar para a interface clássica por meio dos consoles de administrador foi desativada. Portanto, os ícones pop-up que foram vistos ao passar o mouse sobre determinados ícones do console, permitindo o acesso à interface clássica, não são mais exibidos.
+Por padrão, a capacidade de alternar para a interface clássica por meio dos consoles de administração foi desativada. Portanto, os ícones pop-up que eram vistos ao passar o mouse sobre determinados ícones do console, permitindo acesso à interface clássica, não são mais exibidos.
 
-Cada console que tem uma versão da interface clássica em `/libs/cq/core/content/nav` pode ser reativado individualmente para que a função **Interface clássica** nova opção aparece sobre o ícone do console ao passar o mouse.
+Todo console que tenha uma versão da interface clássica no `/libs/cq/core/content/nav` podem ser reativados individualmente para que a variável **Interface clássica** A opção aparece novamente sobre o ícone do console quando é tocada com o mouse.
 
-Neste exemplo, estamos reativando a interface clássica para o console Sites .
+Neste exemplo, estamos reativando a IU Clássica para o console Sites.
 
-1. Usando o CRXDE Lite, encontre o nó correspondente ao Admin Console para o qual você deseja reativar a interface do usuário clássica. Encontram-se em:
+1. Usando o CRXDE Lite, localize o nó correspondente ao Admin Console para o qual você deseja reativar a interface clássica. Eles são encontrados em:
 
    `/libs/cq/core/content/nav`
 
@@ -34,21 +34,21 @@ Neste exemplo, estamos reativando a interface clássica para o console Sites .
 
    [ `https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
-1. Selecione o nó correspondente ao console para o qual você deseja reativar a interface do usuário clássica. No nosso exemplo, reativaremos a interface clássica para o console Sites .
+1. Selecione o nó correspondente ao console para o qual você deseja reativar a interface clássica. Para nosso exemplo, reativaremos a interface clássica para o console Sites.
 
    `/libs/cq/core/content/nav/sites`
 
-1. Crie uma sobreposição usando o **Nó de sobreposição** opção; por exemplo:
+1. Criar uma sobreposição usando o **Sobrepor nó** opção; por exemplo:
 
    * **Caminho**: `/apps/cq/core/content/nav/sites`
    * **Local de sobreposição**: `/apps/`
-   * **Corresponder tipos de nó**: ativo (marque a caixa de seleção)
+   * **Corresponder tipos de nós**: ativo (marque a caixa de seleção)
 
 1. Adicione a seguinte propriedade booleana ao nó sobreposto:
 
    `enableDesktopOnly = {Boolean}true`
 
-1. O **Interface clássica** está novamente disponível como uma opção de oferta no admin console.
+1. A variável **Interface clássica** A opção está disponível novamente como uma opção de popover no admin console.
 
    ![](assets/syui-01-2019-02-27-15-16-55.png)
 

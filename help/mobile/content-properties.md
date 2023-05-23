@@ -1,7 +1,7 @@
 ---
-title: Propriedades e nós do conteúdo
+title: Nós e propriedades de conteúdo
 seo-title: Content Properties and Nodes
-description: Siga esta página para saber mais sobre propriedades e nós de conteúdo.
+description: Siga esta página para saber mais sobre propriedades de conteúdo e nós.
 seo-description: Follow this page to learn about content properties and nodes.
 uuid: 2dad52c8-5b6c-4b90-8498-62217a9a27fc
 contentOwner: User
@@ -17,73 +17,73 @@ ht-degree: 21%
 
 ---
 
-# Propriedades e nós do conteúdo {#content-properties-and-nodes}
+# Nós e propriedades de conteúdo {#content-properties-and-nodes}
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-Artigos, banners e coleções são representados como cq:Pages em AEM.
+Artigos, Banners e Coleções são representados como cq:Pages no AEM.
 
-Eles compartilham as mesmas propriedades comuns encontradas em qualquer cq:Page, além de várias outras mostradas abaixo que representam os metadados do Adobe Experience Manager (AEM) Mobile On-Demand Services e as propriedades de suporte da integração.
+Eles compartilham as mesmas propriedades comuns encontradas em qualquer cq:Page, além de várias outras mostradas abaixo que representam os metadados dos serviços por demanda do Adobe Experience Manager (AEM) Mobile e as propriedades de suporte à integração.
 
-As tabelas a seguir descrevem as propriedades e os nós do conteúdo.
+As tabelas a seguir descrevem as propriedades de conteúdo e os nós.
 
-## Propriedades comuns da integração {#common-integration-properties}
+## Propriedades comuns de integração {#common-integration-properties}
 
 | **Nome da Propriedade** | **Tipo** | **Padrões ou valores esperados** | **Descrição** |
 |---|---|---|---|
-| dps-id | Sequência de caracteres |  | atribuído pelo AEM Mobile e armazenado pelo AEM uma vez carregado no AEM Mobile ou importado do AEM Mobile |
-| dps-resourceType | Sequência de caracteres | dps:Article | dps:Banner | dps:Collection | propriedade de tipo de entidade |
-| dps-version | Sequência de caracteres |  | versão da entidade do AEM Mobile (também contida no aemm-id completo) |
+| dps-id | String |  | atribuído pelo AEM Mobile e armazenado pelo AEM depois de carregado no AEM Mobile ou importado do AEM Mobile |
+| dps-resourceType | String | dps:Article | dps:Banner | dps:Collection | propriedade de tipo de entidade |
+| dps-version | String |  | versão da entidade AEM Mobile (também contida na aemm-id completa) |
 | dps-lastSynced | Data |  | data da última sincronização/importação do AEM Mobile para o AEM |
 | dps-lastUploaded | Data |  | data do último upload do AEM para o AEM Mobile |
-| dps-lastUploadedBy | String:userid |  | usuário de id que executou a última solicitação de upload do AEM para o AEM Mobile |
+| dps-lastUploadedBy | Cadeia de caracteres:ID do usuário |  | usuário da id que executou a última solicitação de upload do AEM para o AEM Mobile |
 
 ## Propriedades dos metadados principais {#core-metadata-properties}
 
 | Nome da Propriedade | Tipo | Padrões ou valores esperados |
 |--- |--- |--- |
-| dps-title | Sequência de caracteres |  |
-| dps-shortTitle | Sequência de caracteres |  |
-| dps-abstract | Sequência de caracteres |  |
-| dps-shortAbstract | Sequência de caracteres |  |
-| dps-departamental | Sequência de caracteres |  |
-| dps-category | Sequência de caracteres |  |
-| dps-keywords | Sequência de caracteres[] |  |
-| dps-internalKeywords | Sequência de caracteres[] |  |
-| dps-importance | Sequência de caracteres[] | Importância de {&quot;baixo&quot;, &quot;normal&quot;, &quot;alto&quot;} |
+| dps-title | String |  |
+| dps-shortTitle | String |  |
+| dps-abstract | String |  |
+| dps-shortAbstract | String |  |
+| dps-department | String |  |
+| dps-category | String |  |
+| dps-keywords | String[] |  |
+| dps-internalKeywords | String[] |  |
+| dps-importance | String[] | Importância de {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
 
 ### Artigos {#articles}
 
 | **Nome da Propriedade** | **Tipo** | **Padrões ou valores esperados** |
 |---|---|---|
-| dps-author | Sequência de caracteres |  |
-| dps-authorURL | Sequência de caracteres |  |
+| dps-author | String |  |
+| dps-authorURL | String |  |
 | dps-hideFromBrowsePage | Booleano |  |
-| dps-access | Sequência de caracteres | ProtectedAccess de {&quot;protegido&quot;, &quot;medido&quot;, &quot;livre&quot;} |
+| dps-access | String | ProtectedAccess de {&quot;protected&quot;, &quot;metered&quot;, &quot;free&quot;} |
 | **Social** |  |  |
-| dps-socialShareURL | Sequência de caracteres |  |
-| dps-articleText | Sequência de caracteres |  |
-| dps-url | Sequência de caracteres |  |
+| dps-socialShareURL | String |  |
+| dps-articleText | String |  |
+| dps-url | String |  |
 
 ### Banners {#banners}
 
 | **Nome da Propriedade** | **Tipo** | **Padrões ou valores esperados** |
 |---|---|---|
-| dps-tapAction |  | ToqueAction de {webLink} |
+| dps-tapAction |  | TapAction do {webLink} |
 | dps-tapActionUrl |  |  |
 
 ### Coleções {#collections}
 
 | Nome da Propriedade | Tipo | Padrões ou valores esperados |
 |--- |--- |--- |
-| dps-productId | Sequência de caracteres |  |
-| dps-readingPosition | Sequência de caracteres | de {&quot;reset&quot;,&quot;keep&quot;} |
+| dps-productId | String |  |
+| dps-readingPosition | String | de {&quot;reset&quot;,&quot;keep&quot;} |
 | dps-horizontalSwipe | Booleano |  |
 | dps-allowDownload | Booleano |  |
-| dps-openDefault | Sequência de caracteres | de {&quot;browsePage&quot;,&quot;contentView&quot;} |
-| dps-layout | Sequência de caracteres |  |
+| dps-openDefault | String | de {&quot;browsePage&quot;,&quot;contentView&quot;} |
+| dps-layout | String |  |
 
 ## Nós de conteúdo {#content-nodes}
 
@@ -111,4 +111,4 @@ As tabelas a seguir descrevem as propriedades e os nós do conteúdo.
 
 | Nome do nó | Tipo | Padrões de valores esperados | Descrição |
 |--- |--- |--- |--- |
-| imagem de fundo | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |
+| background-image | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |

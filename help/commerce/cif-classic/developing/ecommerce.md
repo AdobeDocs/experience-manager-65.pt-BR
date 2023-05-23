@@ -1,5 +1,5 @@
 ---
-title: Camada de integração do eCommerce com uma API
+title: Camada de integração de comércio eletrônico com uma API
 description: A estrutura de integração inclui uma camada de integração com uma API.
 uuid: 48e01bbb-8f9e-489c-bbe4-24563e84ff35
 contentOwner: Guillaume Carlino
@@ -19,27 +19,27 @@ ht-degree: 0%
 
 A estrutura de integração inclui uma camada de integração com uma API. Isso permite:
 
-* conecte um sistema de eCommerce e extraia os dados do produto no AEM
-* criar componentes de AEM para recursos de comércio, independentemente do mecanismo de comércio eletrônico específico
+* conectar um sistema de comércio eletrônico e extrair dados do produto no AEM
+* criar componentes do AEM para recursos de comércio, independentemente do mecanismo de comércio eletrônico específico
 
 Para obter mais informações, consulte:
 
 * [Desenvolvimento (genérico)](/help/commerce/cif-classic/developing/generic.md)
-* [Desenvolvimento com o SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
+* [Desenvolvimento com Commerce Cloud SAP](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
 
 >[!NOTE]
 >
->Como a estrutura de comércio eletrônico pode ser usada com qualquer solução de comércio eletrônico, consulte [Desenvolvimento (genérico)](/help/commerce/cif-classic/developing/generic.md) para obter mais informações sobre o desenvolvimento de possibilidades.
+>Como a estrutura de comércio eletrônico pode ser usada com qualquer solução de comércio eletrônico, consulte [Desenvolvimento (genérico)](/help/commerce/cif-classic/developing/generic.md) para obter mais informações sobre as possibilidades de desenvolvimento.
 
 >[!NOTE]
 >
 >Para usar a estrutura de integração com provedores externos de comércio eletrônico, primeiro é necessário instalar os pacotes necessários. Para obter mais informações, consulte [Implantação do comércio eletrônico](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->Para obter informações sobre conceitos e como administrar implementações de comércio eletrônico, consulte [Administração de comércio eletrônico](/help/commerce/cif-classic/administering/ecommerce.md).
+>Para obter informações sobre conceitos e administração de implementações de comércio eletrônico, consulte [Administração de comércio eletrônico](/help/commerce/cif-classic/administering/ecommerce.md).
 
 ## Documentação da API {#api-documentation}
 
-A API do eCommerce é fornecida pelos pacotes:
+A API de comércio eletrônico é fornecida pelos pacotes:
 
 `com.adobe.cq.commerce.*`
 

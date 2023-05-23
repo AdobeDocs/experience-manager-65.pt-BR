@@ -1,6 +1,6 @@
 ---
 title: Modelos de fragmentos do conteúdo
-description: Saiba como os Modelos de fragmentos de conteúdo servem como base para seu conteúdo headless no AEM e como criar Fragmentos de conteúdo com conteúdo estruturado.
+description: Saiba como os modelos de fragmento de conteúdo servem como base para o conteúdo headless no AEM e como criar fragmentos de conteúdo com conteúdo estruturado.
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
@@ -13,7 +13,7 @@ ht-degree: 95%
 
 # Modelos de fragmentos do conteúdo {#content-fragment-models}
 
-Modelos de fragmentos do conteúdo no AEM definem a estrutura do conteúdo para o [fragmentos de conteúdo,](/help/assets/content-fragments/content-fragments.md) servir como base do seu conteúdo sem periféricos.
+Os modelos de fragmento de conteúdo no AEM definem a estrutura do conteúdo para o seu [fragmentos de conteúdo,](/help/assets/content-fragments/content-fragments.md) como base do seu conteúdo headless.
 
 Para usar modelos de fragmento de conteúdo, você pode:
 
@@ -24,8 +24,8 @@ Para usar modelos de fragmento de conteúdo, você pode:
 
 ## Criação de um modelo de fragmento de conteúdo {#creating-a-content-fragment-model}
 
-1. Navegar para **Ferramentas**, **Ativos**, depois abra **Modelos de fragmentos do conteúdo**.
-1. Navegue até a pasta apropriada para sua [configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. Navegue até **Ferramentas**, **Assets**, em seguida, abrir **Modelos de fragmentos do conteúdo**.
+1. Navegue até a pasta apropriada ao seu [configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Use **Criar** para abrir o assistente.
 
    >[!CAUTION]
@@ -46,7 +46,7 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 >
 >A edição de um modelo de fragmento de conteúdo existente pode afetar fragmentos dependentes.
 
-1. Navegar para **Ferramentas**, **Ativos**, depois abra **Modelos de fragmentos do conteúdo**.
+1. Navegue até **Ferramentas**, **Assets**, em seguida, abrir **Modelos de fragmentos do conteúdo**.
 
 1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
 
@@ -393,7 +393,7 @@ Os modelos de fragmento de conteúdo permitidos para uma pasta são resolvidos d
 
 Para excluir um modelo de fragmento de conteúdo:
 
-1. Navegar para **Ferramentas**, **Ativos**, depois abra **Modelos de fragmentos do conteúdo**.
+1. Navegue até **Ferramentas**, **Assets**, em seguida, abrir **Modelos de fragmentos do conteúdo**.
 
 1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
 1. Selecione seu modelo e, em seguida, **Excluir** na barra de ferramentas.
@@ -408,7 +408,7 @@ Os modelos de fragmento de conteúdo precisam ser publicados quando/antes de qua
 
 Para publicar um modelo de fragmento de conteúdo:
 
-1. Navegar para **Ferramentas**, **Ativos**, depois abra **Modelos de fragmentos do conteúdo**.
+1. Navegue até **Ferramentas**, **Assets**, em seguida, abrir **Modelos de fragmentos do conteúdo**.
 
 1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
 1. Selecione seu modelo e, em seguida, **Publicar** na barra de ferramentas.
@@ -424,7 +424,7 @@ Os modelos de fragmento de conteúdo podem ter sua publicação desfeita se não
 
 Para desfazer a publicação de um modelo de fragmento de conteúdo:
 
-1. Navegar para **Ferramentas**, **Ativos**, depois abra **Modelos de fragmentos do conteúdo**.
+1. Navegue até **Ferramentas**, **Assets**, em seguida, abrir **Modelos de fragmentos do conteúdo**.
 
 1. Navegue até a pasta que contém o modelo de fragmento de conteúdo.
 1. Selecione seu modelo e, em seguida, **Desfazer publicação** na barra de ferramentas.

@@ -1,5 +1,5 @@
 ---
-title: Trabalhar com versões de página de conteúdo
+title: Trabalhar com versões de páginas de conteúdo
 description: Criar, comparar e restaurar versões de uma página
 uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
@@ -18,17 +18,17 @@ ht-degree: 69%
 
 # Trabalhar com versões de páginas{#working-with-page-versions}
 
-O controle de versão cria um &quot;instantâneo&quot; de uma página em um ponto específico do tempo. Com o controle de versão, você pode executar as seguintes ações:
+O controle de versão cria um &quot;instantâneo&quot; de uma página em um momento específico. Com o controle de versão, você pode executar as seguintes ações:
 
-* Crie uma versão de uma página.
-* Restaure uma página para uma versão anterior para desfazer uma alteração feita em uma página, por exemplo.
-* Compare a versão atual de uma página com uma versão anterior, com diferenças no texto e nas imagens realçadas.
+* Criar uma versão de uma página.
+* Restaure uma página para uma versão anterior para desfazer uma alteração que você fez em uma página, por exemplo.
+* Comparar a versão atual de uma página com uma versão anterior com diferenças no texto e nas imagens destacadas.
 
 ## Criar uma nova versão   {#creating-a-new-version}
 
 É possível criar uma versão do recurso usando:
 
-* o [Painel Linha do tempo](#creating-a-new-version-timeline)
+* o [Painel da linha do tempo](#creating-a-new-version-timeline)
 * o [Criar](#creating-a-new-version-create-with-a-selected-resource) opção (quando um recurso é selecionado)
 
 ### Criar uma nova versão - Linha do tempo {#creating-a-new-version-timeline}
@@ -36,7 +36,7 @@ O controle de versão cria um &quot;instantâneo&quot; de uma página em um pont
 1. Navegue para mostrar a página para a qual você deseja criar uma versão.
 1. Selecione a página no [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Abra o **Linha do tempo** coluna.
-1. Clique/toque na seta ao lado do campo de comentário para revelar as opções:
+1. Clique/toque na ponta da seta ao lado do campo de comentário para revelar as opções:
 
    ![screen-shot_2019-03-05at112335](assets/screen-shot_2019-03-05at112335.png)
 
@@ -90,7 +90,7 @@ Depois de criar uma versão da página, há vários métodos para restaurar uma 
 >1. Os nomes dos rótulos iniciais e do nó da versão serão 1.0, 1.1, 1.2 e assim por diante.
 >1. Restaure a primeira versão; isto é, a versão 1.0.
 >1. Crie novas versões novamente.
->1. Os rótulos e os nomes de nó gerados agora serão 1.0.0, 1.0.1, 1.0.2, etc.
+>1. Os rótulos e nomes de nó gerados agora serão 1.0.0, 1.0.1, 1.0.2, etc.
 
 
 ### Reverter para uma versão {#revert-to-a-version}
@@ -164,12 +164,12 @@ Esse método pode ser usado para restaurar uma versão de uma árvore, por exemp
 
 ## Visualização de uma versão   {#previewing-a-version}
 
-Você pode visualizar uma versão específica:
+É possível visualizar uma versão específica:
 
-1. Navegue para mostrar a página que deseja comparar.
+1. Navegue para mostrar a página que você deseja comparar.
 1. Selecione a página no [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**.
-1. As versões de página serão listadas. Selecione a versão que deseja visualizar:
+1. As versões da página serão listadas. Selecione a versão que deseja visualizar:
 
    ![screen-shot_2019-03-05at112505-1](assets/screen-shot_2019-03-05at112505-1.png)
 
@@ -177,23 +177,23 @@ Você pode visualizar uma versão específica:
 
    >[!CAUTION]
    >
-   >Se uma página tiver sido movida, você não poderá mais executar uma visualização em nenhuma versão anterior à movimentação.
+   >Se uma página tiver sido movida, não será mais possível executar uma pré-visualização em nenhuma versão feita antes da movimentação.
    >
-   >* Em caso de problemas com uma visualização, marque a opção [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) para que a página veja se a página foi movida.
+   >* Se tiver problemas com uma visualização, verifique a [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) para ver se a página foi movida.
 
 
 ## Comparar uma versão com a página atual {#comparing-a-version-with-current-page}
 
 Para comparar uma versão anterior com a página atual:
 
-1. Navegue para mostrar a página que deseja comparar.
+1. Navegue para mostrar a página que você deseja comparar.
 1. Selecione a página no [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**.
-1. As versões de página serão listadas. Selecione a versão que deseja comparar:
+1. As versões da página serão listadas. Selecione a versão que deseja comparar:
 
    ![screen-shot_2019-03-05at112505-2](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Selecionar **Comparar com Atual**. O [diff de página](/help/sites-authoring/page-diff.md) abrirá e exibirá as diferenças.
+1. Selecionar **Comparar ao atual**. A variável [diff de página](/help/sites-authoring/page-diff.md) abrirá e exibirá as diferenças.
 
 ## Timewarp   {#timewarp}
 
@@ -207,26 +207,26 @@ Como a criação de conteúdo é um processo contínuo e colaborativo, o objetiv
 
 Para fazer isso:
 
-* O sistema procura a versão da página que estava ativa no horário selecionado.
-* Isso significa que a versão mostrada foi criada/ativada *before* o ponto no tempo selecionado no Timewarp.
+* O sistema procura a versão da página que estava ativa no momento selecionado.
+* Isso significa que a versão mostrada foi criada/ativada *antes* o ponto no tempo selecionado no Timewarp.
 * Durante a navegação para uma página que foi excluída, isso também será renderizado - desde que as versões antigas da página ainda estejam disponíveis no repositório.
 * Se nenhuma versão publicada for encontrada, o Timewarp reverterá para o estado atual da página no ambiente de criação (o objetivo é evitar um erro de página/404, que poderia impedir a navegação).
 
 ### Uso do Timewarp {#using-timewarp}
 
-O Timewarp é um [modo](/help/sites-authoring/author-environment-tools.md#page-modes) do editor de páginas. Para iniciá-lo, basta alterá-lo como você faria com qualquer outro modo.
+O Timewarp é um [modo](/help/sites-authoring/author-environment-tools.md#page-modes) do editor de páginas. Para iniciá-lo, basta alterná-lo como faria com qualquer outro modo.
 
 1. Inicie o editor da página em que deseja iniciar o Timewarp e selecione **Timewarp** na seleção de modo.
 
-   ![wpv-01](assets/wwpv-01.png)
+   ![wwpv-01](assets/wwpv-01.png)
 
 1. Na caixa de diálogo, defina uma data e hora de destino e clique ou toque em **Definir data**. Se você não selecionar uma hora, a hora atual será padrão.
 
-   ![wpv-02](assets/wwpv-02.png)
+   ![wwpv-02](assets/wwpv-02.png)
 
-1. A página é exibida com base na data definida. O modo Timewarp é indicado por meio da barra de status azul na parte superior da janela. Use os links na barra de status para selecionar uma nova data de destino ou sair do modo Timewarp.
+1. A página é exibida com base no conjunto de datas. O modo Timewarp é indicado por meio da barra de status azul na parte superior da janela. Use os links na barra de status para selecionar uma nova data de destino ou sair do modo Timewarp.
 
-   ![wpv-03](assets/wwpv-03.png)
+   ![wwpv-03](assets/wwpv-03.png)
 
 ### Limitações do Timewarp {#timewarp-limitations}
 
@@ -242,4 +242,4 @@ O Timewarp se esforça ao máximo para reproduzir uma página em um ponto seleci
 
 >[!CAUTION]
 >
->O Timewarp foi projetado como uma ferramenta para auxiliar os autores a compreender e criar seu conteúdo. Ele não se destina a ser um registro de auditoria ou a fins legais.
+>O Timewarp foi projetado como uma ferramenta para ajudar os autores a entender e criar conteúdo. Ele não se destina a ser um registro de auditoria ou a fins legais.

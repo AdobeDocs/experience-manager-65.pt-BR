@@ -1,7 +1,7 @@
 ---
 title: Alteração da fonte na interface
 seo-title: Changing the font on the interface
-description: Como alterar as fontes na interface do usuário seletivamente.
+description: Como alterar as fontes na interface do usuário de forma seletiva.
 seo-description: How to change the fonts on the user interface selectively.
 uuid: 421fdd24-441a-4092-8c52-f3ed3d5d5671
 contentOwner: robhagat
@@ -20,15 +20,15 @@ ht-degree: 1%
 
 # Alteração da fonte na interface{#changing-the-font-on-the-interface}
 
-Você pode alterar a fonte exibida no espaço de trabalho do AEM Forms. As fontes usadas em uma seção específica da interface do usuário são definidas na seção correspondente da folha de estilos. Você pode alterar as fontes na interface do usuário seletivamente.
+Você pode alterar a fonte exibida no espaço de trabalho do AEM Forms. As fontes usadas em uma seção específica da interface do usuário são definidas na seção correspondente da folha de estilos. É possível alterar as fontes na interface do usuário seletivamente.
 
-Siga as [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) e dependendo de suas necessidades, siga as etapas para personalizar o CSS, o HTML ou ambos.
+Siga as [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) e, dependendo das suas necessidades, siga as etapas para personalizar CSS, HTML ou ambos.
 
-1. Altere ou adicione a família de fontes em um estilo existente.
-1. Altere ou adicione a família de fontes em linha para o elemento HTML.
+1. Alterar ou adicionar a família de fontes em um estilo existente.
+1. Altere ou adicione a família de fontes integrada para o elemento HTML.
 1. Adicione um estilo e use-o para o elemento HTML.
 
-Como exemplo, para alterar a fonte do texto da âncora da barra de navegação superior para Courier New, siga estas etapas:
+Por exemplo, para alterar a fonte do texto de âncora da barra de navegação superior para Courier New, siga estas etapas:
 
 1. Faça logon no CRXDE Lite acessando `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Siga uma das seguintes opções:
@@ -41,7 +41,7 @@ Como exemplo, para alterar a fonte do texto da âncora da barra de navegação s
       }
       ```
 
-   1. Para adicionar a família de fontes em linha para o elemento HTML, copie a variável `/libs/ws/js/runtime/templates/appnavigation.html` para `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Para adicionar a família de fontes em linha para o elemento HTML, copie a variável `/libs/ws/js/runtime/templates/appnavigation.html` arquivo para `/apps/ws/js/runtime/templates/appnavigation.html`.
 
       Atualize o arquivo /apps/ws/js/runtime/templates/appnavigation.html da seguinte maneira:
 
@@ -54,7 +54,7 @@ Como exemplo, para alterar a fonte do texto da âncora da barra de navegação s
 
       Abra o arquivo /apps/ws/js/registry.js para edição e substituição `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` com `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
 
-   1. Para adicionar um estilo definindo a família de fontes, adicione o seguinte no arquivo newStyle.css em /apps/ws/css.
+   1. Para adicionar um estilo que defina a família de fontes, adicione o seguinte no arquivo newStyle.css em /apps/ws/css.
 
       ```css
       .myNewFontStyle a {
@@ -79,8 +79,8 @@ Como exemplo, para alterar a fonte do texto da âncora da barra de navegação s
 
 ![change_font_before](assets/change_font_before.png)
 
-Barra de navegação superior antes da personalização de fontes
+Barra de navegação superior antes da personalização da fonte
 
 ![change_font_after](assets/change_font_after.png)
 
-Barra de navegação superior após personalização de fonte da primeira guia
+Barra de navegação superior após a personalização da primeira guia

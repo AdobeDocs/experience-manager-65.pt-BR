@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager Mobile - Preparação para o GDPR
-description: Adobe Experience Manager Mobile - Preparação para o GDPR
+title: Adobe Experience Manager Mobile - Disponibilidade do GDPR
+description: Adobe Experience Manager Mobile - Disponibilidade do GDPR
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
@@ -12,73 +12,73 @@ ht-degree: 1%
 
 ---
 
-# AEM Mobile - Preparação para o GDPR {#aem-mobile-gdpr-readiness}
+# AEM Mobile - Disponibilidade do GDPR {#aem-mobile-gdpr-readiness}
 
 >[!IMPORTANT]
 >
->O GDPR é usado como exemplo nas seções abaixo, mas os detalhes cobertos são aplicáveis a todas as regulamentações de proteção e privacidade de dados; como GDPR, CCPA etc.
+>O GDPR é usado como exemplo nas seções abaixo, mas os detalhes abordados se aplicam a todas as regulamentações de proteção e privacidade de dados; como o GDPR, CCPA etc.
 
 ## Suporte ao GDPR da AEM Mobile {#aem-mobile-gdpr-support}
 
-A AEM Mobile está pronta para ajudar os clientes com suas obrigações de conformidade com o GDPR. Nenhum dado pessoal é armazenado no AEM Mobile. Se você estiver provisionado, poderá fazer logon no Adobe Experience Mobile com sua Adobe ID.
+A AEM Mobile está pronta para ajudar os clientes com suas obrigações de conformidade com o GDPR. Nenhum dado pessoal é armazenado no AEM Mobile. Se você tiver sido provisionado, poderá fazer logon no Adobe Experience Mobile com sua Adobe ID.
 
 <!-- [https://aemmobile.adobe.com/signin/index.html](https://aemmobile.adobe.com/signin/index.html) -->
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Adobe (produto de publicação digital AEM Mobile) que suporta iniciativas de preparação para o GDPR. Consulte [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). Os itens a seguir fornecerão especificações sobre o suporte para funções relevantes do GDPR no produto Digital Publishing Suite, incluindo como trabalhar com o Adobe para iniciar solicitações do GDPR.
+O produto de publicação digital do Adobe (que precede o AEM Mobile) é compatível com as iniciativas de preparação do GDPR do Adobe. Consulte [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). A seguir são apresentados detalhes específicos sobre o suporte a funções relevantes do GDPR no produto Digital Publishing Suite, incluindo como trabalhar com o Adobe para iniciar solicitações do GDPR.
 
-Para garantir que você não está confundindo o AEM Mobile com o produto Digital Publishing Suite mais antigo, faça logon no produto Digital Publishing Suite aqui:
+Para não confundir o AEM Mobile com o produto mais antigo do Digital Publishing Suite, faça logon nesse produto:
 
 [https://acrobat.adobe.com/us/en/](https://acrobat.adobe.com/us/en/)
 
-### Iniciar uma solicitação do GDPR {#initiating-a-gdpr-request}
+### Iniciando uma solicitação do GDPR {#initiating-a-gdpr-request}
 
-Entre em contato com o Atendimento ao cliente do Adobe para iniciar uma solicitação de GDPR para o Digital Publishing Suite.
+Entre em contato com o Atendimento ao cliente da Adobe para iniciar uma solicitação de GDPR para o Digital Publishing Suite.
 
-As seguintes IDs são necessárias para localizar os dados do cliente. Qualquer subconjunto recebido incluirá as outras IDs que não se aplicam a este usuário.
+As seguintes IDs são necessárias para localizar dados do cliente. Qualquer subconjunto recebido implicará que as outras IDs não se aplicam a este usuário.
 
 Obrigatório:
 
-* ID do contrato do cliente: *dpsc-ContractId*
+* ID do contrato do cliente: *dpsc-contractId*
 
-Forneça pelo menos uma das seguintes opções:
+Forneça pelo menos 1 dos seguintes itens:
 
-* A ID OAuth fornecida pelo cliente final (a ID usada no sistema de direito direto do cliente): *dpsc-directEntitlementId*
-* Para usuários de aplicativos do Windows, a App Store ID do usuário final: *dpsc-windowsAppStoreId*
-* O endereço de email que o usuário final usou para interagir com o aplicativo DPS: *email*
+* ID do OAuth fornecida pelo cliente do usuário final (a ID usada no sistema de direito direto do cliente): *dpsc-directEntitlementId*
+* Para usuários de aplicativos Windows, a App Store ID do usuário final: *dpsc-windowsAppStoreId*
+* O endereço de email que o usuário final usou para interagir com o aplicativo da DPS: *email*
 
 ### Perguntas frequentes {#frequently-asked-questions-faq}
 
-**O Adobe excluirá minhas compras de App Store ao iniciar uma solicitação de DELETE?**
+**O Adobe excluirá minhas compras do App Store ao iniciar uma solicitação DELETE?**
 
-O Adobe excluirá as informações de compras da App Store (assinaturas, etc.) mas as compras ainda estarão gravadas nas App stores. Se o aplicativo (usuário final) estiver conectado à App Store, esses recebimentos serão coletados novamente e enviados para a Adobe e, subsequentemente, serão considerados novas compras e restaurados pelo aplicativo para terem acesso novamente.
+O Adobe excluirá as informações que possui sobre compras da App Store (assinaturas, etc.) mas as compras ainda estarão registradas nas App stores. Se o aplicativo (usuário final) estiver conectado à App Store, esses recibos serão coletados novamente e enviados ao Adobe e, posteriormente, serão considerados como novas compras e serão restaurados pelo aplicativo para terem acesso novamente.
 
-**O Adobe excluirá os direitos fornecidos pelo cliente ao iniciar uma solicitação de DELETE?**
+**O Adobe excluirá os direitos fornecidos pelo cliente ao iniciar uma solicitação DELETE?**
 
-O Adobe excluirá as informações que possui sobre as licenças de direito direto adicionais do cliente. Se o aplicativo (usuário final) fizer logon no mecanismo OAuth usado pelo cliente, ele enviará informações para o Adobe e os serviços coletarão os direitos extras novamente.
+O Adobe excluirá as informações que possui sobre as concessões adicionais de direito direto do cliente. Se o aplicativo (usuário final) fizer logon no mecanismo OAuth usado pelo cliente, ele enviará informações para o Adobe e os serviços coletarão os direitos adicionais novamente.
 
-**O que é esperado do usuário final?**
+**O que se espera do usuário final?**
 
-Como a chave para atribuir direitos ao aplicativo reside no dispositivo como parte do software do visualizador, o usuário final deve desinstalar o aplicativo. O usuário final deve perceber que, se reinstalar o aplicativo, as compras existentes (associadas ao usuário da App Store) e as licenças diretas (associadas ao usuário OAuth do cliente) ainda serão restauradas.
+Como a chave para atribuir direitos ao aplicativo reside no dispositivo como parte do software do visualizador, o usuário final deve desinstalar o aplicativo. O usuário final deve perceber que, se reinstalar o aplicativo, as compras existentes (associadas ao usuário da App Store) e os subsídios de direito direto (associados ao usuário OAuth do cliente) ainda serão restaurados.
 
 **O que acontece quando um aplicativo é compartilhado entre pessoas em um dispositivo?**
 
-O Adobe tem pouquíssimas informações que associam diretamente a um usuário específico. Ele associa os dados usando uma UUID criada aleatoriamente, mantida nos dados do aplicativo e transmitida em cada solicitação que o aplicativo inicia. Isso significa que os usuários finais que compartilham o aplicativo no mesmo dispositivo usarão a mesma UUID e todos os dados serão considerados de propriedade da pessoa que faz a solicitação do GDPR. Para solicitações de acesso e exclusão, o DPSC considerará as pessoas que compartilham um aplicativo como uma pessoa.
+O Adobe tem pouquíssima informação que se associa diretamente a um usuário específico. Ele associa os dados usando uma UUID criada aleatoriamente que é mantida nos dados do aplicativo e é transmitida em cada solicitação iniciada pelo aplicativo. Isso significa que os usuários finais que compartilham o aplicativo no mesmo dispositivo usarão a mesma UUID e todos os dados serão considerados de propriedade da pessoa que faz a solicitação de GDPR. Tanto para as solicitações de acesso quanto para as de exclusão, o DPSC considerará as pessoas que compartilham um aplicativo como uma única pessoa.
 
 **Quais dados pessoais são rastreados com o Analytics?**
 
-Nenhum. Há dados sendo rastreados, mas eles estão no nível do aplicativo (não pessoais). Isso inclui eventos como inicializações, falhas, fechamento, atividades, compras ou sobreposições de fólio. Locais geográficos, nomes, IDs de dispositivo ou endereços IP não são rastreados.
+Nenhum. Há dados sendo rastreados, mas no nível do aplicativo (não pessoal). Isso inclui eventos como inicializações, falhas, fechamentos, atividades, compras ou sobreposições de fólio. As localizações geográficas, nomes, IDs de dispositivos ou endereços IP não são rastreados.
 
 **O usuário final forneceu suas informações, mas nada foi encontrado. Por que não?**
 
-À medida que o produto Digital Publishing Suite evoluía, as implementações do serviço eram alteradas e mais dados eram ofuscados. Se nenhum dado foi encontrado usando os dados fornecidos pelo usuário, significa que os dados dele não podem ser rastreados até essa pessoa.
+À medida que o produto Digital Publishing Suite evoluía, as implementações de serviço eram alteradas e mais dados eram ofuscados. Se nenhum dado for encontrado usando os dados fornecidos pelo usuário, significa que os dados do usuário não poderão ser rastreados até essa pessoa.
 
 ### Exemplo {#example}
 
-Entre em contato com o Atendimento ao cliente do Adobe para iniciar uma solicitação do GDPR.
+Entre em contato com o Atendimento ao cliente da Adobe para iniciar uma solicitação de GDPR.
 
-Veja um exemplo das entradas e saídas resultantes de uma solicitação de GDPR do Digital Publishing Suite:
+Este é um exemplo das entradas e saídas resultantes de uma solicitação do GDPR do Digital Publishing Suite:
 
 #### Entradas: {#inputs}
 

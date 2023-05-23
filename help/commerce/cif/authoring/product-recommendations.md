@@ -1,6 +1,6 @@
 ---
 title: Recomendações do produto
-description: O Adobe Commerce tem um mecanismo de recomendação desenvolvido pela Adobe Sensei. Saiba como inserir dinamicamente essas recomendações de produto em uma loja da Adobe Experience Manager (AEM).
+description: O Adobe Commerce apresenta um mecanismo de recomendação desenvolvido pela Adobe Sensei. Saiba como inserir dinamicamente essas recomendações de produto em uma vitrine do Adobe Experience Manager (AEM).
 sub-product: Commerce
 version: 6.5
 doc-type: feature-video
@@ -19,6 +19,6 @@ ht-degree: 7%
 
 # Recomendações do produto
 
-O Adobe Commerce tem um mecanismo de recomendação desenvolvido pela Adobe Sensei. Saiba como inserir dinamicamente essas recomendações de produto em uma loja da Adobe Experience Manager (AEM).
+O Adobe Commerce apresenta um mecanismo de recomendação desenvolvido pela Adobe Sensei. Saiba como inserir dinamicamente essas recomendações de produto em uma vitrine do Adobe Experience Manager (AEM).
 
 >[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)

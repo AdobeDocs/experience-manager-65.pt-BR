@@ -21,26 +21,26 @@ ht-degree: 0%
 
 ## Usar controle de versão semântico {#use-semantic-versioning}
 
-É possível encontrar as práticas recomendadas para a numeração semântica de versões acordadas em [https://semver.org/](https://semver.org/).
+As práticas recomendadas acordadas para a numeração semântica de versão podem ser encontradas em [https://semver.org/](https://semver.org/).
 
 ## Não incorpore mais classes e jars do que o estritamente necessário em pacotes OSGi {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-As bibliotecas comuns devem ser transformadas em pacotes separados. Isso permitirá que elas sejam reutilizadas em seus pacotes. Quando quebrar uma *JAR* em um pacote OSGI, verifique as fontes online para ver se alguém já fez isso antes. Alguns locais comuns para encontrar os invólucros de pacote existentes são: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes e o SpringSource Enterprise Bundle Repository.
+Bibliotecas comuns devem ser fatoradas em pacotes separados. Isso permitirá que eles sejam reutilizados em seus pacotes. Ao envolver um *JAR* em um pacote OSGI, verifique as fontes online para ver se alguém já fez isso antes. Alguns locais comuns para encontrar wrappers de pacote existentes são: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes e SpringSource Enterprise Bundle Repository.
 
-## Depende das versões de pacote mais baixas necessárias {#depend-on-the-lowest-needed-bundle-versions}
+## Depende das versões mais baixas necessárias do pacote {#depend-on-the-lowest-needed-bundle-versions}
 
-Para compilar dependências de tempo em arquivos POM, sempre dependa da versão mais baixa necessária que expõe a API necessária. Isso permitirá maior compatibilidade com versões anteriores e facilitará as correções de backporting para versões mais antigas.
+Para dependências de tempo de compilação em arquivos POM, sempre dependa da versão mais baixa necessária que expõe a API necessária. Isso permitirá maior compatibilidade com versões anteriores e facilita as correções para versões anteriores.
 
 ## Exportar um conjunto mínimo de pacotes de pacotes OSGi {#export-a-minimal-set-of-packages-from-osgi-bundles}
 
-Assim que um pacote for exportado, criamos uma API para que outros dependam. Certifique-se de exportar o mínimo possível e verifique se o que está sendo exportado é uma API. É muito mais fácil usar um método/classe privado e torná-lo público do que pegar algo que já foi exportado e torná-lo privado.
+Assim que um pacote é exportado, criamos uma API da qual outros podem depender. Exporte o mínimo possível e verifique se o que está sendo exportado é uma API. É muito mais fácil pegar um método/classe privado e torná-lo público do que pegar algo que foi exportado anteriormente e torná-lo privado.
 
-As implementações devem sempre ser colocadas em um *impl* pacote. Por padrão, a variável *maven-bundle-plugin* exportará qualquer item no projeto que não tenha um *impl* em seu nome.
+As implementações devem sempre ser colocadas em uma *impl* pacote. Por padrão, a variável *maven-bundle-plugin* exportará qualquer item do projeto que não tenha uma *impl* em seu nome.
 
 ## Sempre defina explicitamente uma versão semântica para cada pacote exportado {#always-explicitly-define-a-semantic-version-for-each-package-exported}
 
-Isso permitirá que os consumidores de sua API evoluam junto com você. Ao fazer isso, sempre siga as práticas recomendadas semânticas de controle de versão. Isso permitirá que os consumidores de sua API saibam quais tipos de alterações esperar em uma nova versão.
+Isso permitirá que os consumidores da sua API evoluam junto com você. Ao fazer isso, sempre siga as práticas recomendadas de controle de versão semântico. Isso permitirá que os consumidores da API saibam quais tipos de alterações esperar em uma nova versão.
 
-## Incluir informações de tipo de métrica quando expostas {#include-metatype-information-where-exposed}
+## Incluir informações de metatipo quando expostas {#include-metatype-information-where-exposed}
 
-Ao especificar informações de metattipo significativas, seus serviços e componentes serão mais fáceis de entender no console Felix. Uma lista de anotações e atributos SCR pode ser encontrada em: [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
+Especificando informações significativas do metatipo, os seus serviços e componentes serão mais fáceis de entender no console Felix. Uma lista de anotações e atributos de SCR pode ser encontrada em: [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).

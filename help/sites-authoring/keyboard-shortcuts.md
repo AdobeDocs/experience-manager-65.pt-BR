@@ -1,6 +1,6 @@
 ---
-title: Atalhos de teclado para consoles em AEM
-description: Economize tempo durante a criação usando esses atalhos de teclado.
+title: Atalhos de teclado para os consoles no AEM
+description: Economize tempo ao criar usando esses atalhos de teclado.
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -29,7 +29,7 @@ Os seguintes atalhos estão disponíveis para os consoles Sites, Comércio, Tela
 
 | Local | Atalho | Descrição |
 |---|---|---|
-| Geral | `Ctrl+Click` | Multisseleção em um dispositivo de desktop |
+| Geral | `Ctrl+Click` | Seleção múltipla em um dispositivo de desktop |
 | Console - Exibição de coluna e exibição de conteúdo | `Right Arrow` | Navegar para baixo na estrutura do site / expandir o nó da árvore |
 |  | `Left Arrow` | Navegar para cima na estrutura de árvore / recolher o nó de árvore |
 |  | `Down Arrow` | Mova para baixo uma lista de páginas no mesmo nível |
@@ -50,7 +50,7 @@ Os seguintes atalhos estão disponíveis para os consoles Sites, Comércio, Tela
 
 As combinações de teclas são listadas com as [teclas modificadoras](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) do Windows.
 
-Vários atalhos de teclado também estão disponíveis para os usuários da área de trabalho ao usar a variável [editor de páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para criar páginas.
+Vários atalhos de teclado também estão disponíveis para os usuários de desktop ao usar o [editor de página](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para criar páginas.
 
 ## Teclas modificadoras específicas do sistema operacional {#os-specific-modifier-keys}
 
@@ -63,19 +63,19 @@ As teclas modificadoras usadas para os atalhos de teclado variam de acordo com o
 
 ## Atalhos de teclado e dos navegadores {#browsers-and-keyboard-shortcuts}
 
-AEM evita atalhos comuns já usados por navegadores populares, no entanto, o comportamento padrão do navegador não é substituído por AEM atalhos.
+O AEM evita atalhos comuns já usados por navegadores populares, no entanto, o comportamento padrão do navegador não é substituído por atalhos AEM.
 
-Além disso, os atalhos de teclado são os mesmos para todas as localidades e layouts de teclado.
+Além disso, os atalhos de teclado são os mesmos para todos os locais e layouts de teclado.
 
 >[!NOTE]
 >
->AEM atalhos não substituem o comportamento padrão do navegador.
+>Os atalhos do AEM não substituem o comportamento padrão do navegador.
 >
->Caso ocorra conflitos entre AEM e atalhos do navegador, AEM atalhos não funcionarão, resultando na funcionalidade do navegador.
+>Caso ocorram conflitos entre os atalhos do AEM e do navegador, os atalhos do AEM não funcionarão, resultando na funcionalidade do navegador.
 
 >[!CAUTION]
 >
->AEM atalhos de teclado podem interferir com leitores de tela, alguns recursos do navegador e outras ferramentas de acessibilidade.
+>Atalhos de teclado do AEM podem interferir com leitores de tela, alguns recursos do navegador e outras ferramentas de acessibilidade.
 >
 >A Adobe recomenda [desabilitar os atalhos de teclado do AEM](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) ao usar um leitor de tela.
 
@@ -85,7 +85,7 @@ O AEM fornece atalhos de teclado para alguns dos recursos de uso geral (editar, 
 
 Para usuários que não usam atalhos de teclado ou que têm determinados requisitos de acessibilidade, todos os atalhos de teclado podem ser desativados.
 
-É possível desativar os atalhos de teclado em dois locais:
+Você pode desativar atalhos de teclado em dois locais:
 
 * [Minhas preferências](/help/sites-authoring/user-properties.md#my-preferences)
 * No [menu de ajuda](/help/sites-authoring/basic-handling.md#accessing-help)

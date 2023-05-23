@@ -18,28 +18,28 @@ ht-degree: 0%
 
 # Personalização de mensagens de erro para formulários HTML5 {#customizing-error-messages-for-html-forms}
 
-Nos formulários HTML5, prontos para uso, as mensagens e avisos de erro têm uma posição e aparência fixas (fonte e cor), o erro é exibido somente para um campo selecionado e apenas um erro é exibido.
+Nos formulários de HTML5, prontos para uso, as mensagens e os avisos de erro têm uma posição e aparência fixas (fonte e cor), o erro é exibido somente para um campo selecionado e apenas um erro é exibido.
 
-O artigo fornece as etapas para personalizar mensagens de erro de formulários do HTML5 para o,
+O artigo fornece as etapas para personalizar mensagens de erro de formulários HTML5 para,
 
-* alterar a aparência e a posição das mensagens de erro. Você pode fazer um erro para aparecer na parte superior, inferior e à direita de qualquer campo.
+* alterar a aparência e a posição das mensagens de erro. Você pode cometer um erro ao aparecer na parte superior, inferior e direita de qualquer campo.
 * exibir mensagens de erro para vários campos em um determinado momento.
-* exiba o erro independentemente de um campo estar selecionado ou não.
+* exibir o erro independentemente de um campo estar selecionado ou não.
 
 ## Personalização de mensagens de erro  {#customizing-error-messages-nbsp}
 
 Antes de personalizar as mensagens de erro, baixe e extraia o pacote anexado (CustomErrorManager-1.0-SNAPSHOT.zip).
 
-Após extrair o pacote, abra a pasta CustomErrorManager-1.0-SNAPSHOT . Ele contém pastas jcr_root e META-INF. Essas pastas contêm os arquivos CSS e .JS necessários para personalizar a mensagem de erro.
+Após extrair o pacote, abra a pasta CustomErrorManager-1.0-SNAPSHOT. Ele contém as pastas jcr_root e META-INF. Essas pastas contêm os arquivos CSS e .JS necessários para personalizar a mensagem de erro.
 
 [Obter arquivo](assets/customerrormanager-1.0-snapshot.zip)
 
 ### Personalização da posição das mensagens de erro  {#customizing-the-position-of-error-messages-nbsp}
 
-Para personalizar a posição da mensagem de erro, adicione &lt;div> para cada campo de erro e aviso, posicione a variável &lt;div> à esquerda ou à direita e aplique estilos de css na &lt;div> . Para obter etapas detalhadas, consulte o procedimento listado abaixo:
+Para personalizar a posição da mensagem de erro, adicione &lt;div> para cada campo de erro e aviso, posicione a tag &lt;div> à esquerda ou à direita e aplique estilos de CSS à &lt;div> tag. Para obter etapas detalhadas, consulte o procedimento listado abaixo:
 
-1. Navegue até o `CustomErrorManager-1.0-SNAPSHOT`e abra o `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` pasta.
-1. Abra o `customErrorManager.js` para edição. O `markError` no arquivo aceita os seguintes parâmetros:
+1. Navegue até a `CustomErrorManager-1.0-SNAPSHOT`e abra a `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` pasta.
+1. Abra o `customErrorManager.js` arquivo para edição. A variável `markError` A função no arquivo aceita os seguintes parâmetros:
 
    |  |  |
    |---|---|
@@ -47,7 +47,7 @@ Para personalizar a posição da mensagem de erro, adicione &lt;div> para cada c
    | msg | contém a mensagem de erro |
    | tipo | indica se é um erro ou aviso |
 
-1. Na implementação predefinida, mensagens de erro são exibidas à direita do campo . Para que as mensagens de erro apareçam na parte superior, use o seguinte código.
+1. Na implementação pronta para uso, as mensagens de erro são exibidas à direita do campo. Para fazer com que as mensagens de erro apareçam na parte superior, use o código a seguir.
 
    ```javascript
    markError: function (jqWidget, msg, type) {
@@ -76,19 +76,19 @@ Para personalizar a posição da mensagem de erro, adicione &lt;div> para cada c
            },
    ```
 
-1. Salve e feche o arquivo.
-1. Navegue até o `CustomErrorManager-1.0-SNAPSHOT` e crie um arquivo de pastas jcr_root e META-INF . Renomeie o arquivo para CustomErrorManager-1.0-SNAPSHOT.zip.
+1. Salvar e fechar o arquivo.
+1. Navegue até a `CustomErrorManager-1.0-SNAPSHOT` e crie um arquivo das pastas jcr_root e META-INF. Renomeie o arquivo para CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Use o gerenciador de pacotes para fazer upload e instalar o pacote.
 
 ## Exibir mensagens de erro para vários campos  {#display-error-messages-for-multiple-fields-nbsp}
 
 Use o pacote anexado para exibir simultaneamente mensagens de erro para todos os campos. Para exibir uma única mensagem de erro, use o perfil padrão.
 
-### Personalização da aparência das mensagens de erro.  {#customizing-the-appearance-of-error-messages-nbsp}
+### Personalizar a aparência de mensagens de erro.  {#customizing-the-appearance-of-error-messages-nbsp}
 
-1. Navegue até etc\clientlibs\mf-custom-error-manager\CustomErrorManager\css folder.
+1. Navegue até a pasta etc\clientlibs\mf-custom-error-manager\CustomErrorManager\css.
 
-1. Abra o arquivo sample.css para edição. O arquivo css contém 2 ids- #customError, #customWarning. É possível usar essas IDs para alterar várias propriedades, como cor, tamanho da fonte etc.
+1. Abra o arquivo sample.css para edição. O arquivo css contém 2 ids- #customError, #customWarning. Você pode usar essas IDs para alterar várias propriedades, como cor, tamanho da fonte, etc.
 
    Use o código a seguir para alterar o tamanho da fonte e a cor das mensagens de erro/aviso.
 
@@ -114,15 +114,15 @@ Use o pacote anexado para exibir simultaneamente mensagens de erro para todos os
    Save the changes.
    ```
 
-1. Salve e feche o arquivo.
-1. Navegue até a pasta CustomErrorManager-1.0-SNAPSHOT e crie um arquivo de pastas jcr_root e META-INF. Renomeie o arquivo para CustomErrorManager-1.0-SNAPSHOT.zip.
+1. Salvar e fechar o arquivo.
+1. Navegue até a pasta CustomErrorManager-1.0-SNAPSHOT e crie um arquivo das pastas jcr_root e META-INF. Renomeie o arquivo para CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Use o gerenciador de pacotes para fazer upload e instalar o pacote.
 
 ## Renderize o formulário com o novo perfil.  {#render-the-form-with-the-new-profile-nbsp}
 
-Imediatamente, os formulários html5 usam um perfil padrão: https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
+Pronto para uso, os formulários html5 usam um perfil padrão: https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;modelo=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
 
-Para exibir um formulário com mensagens de erro personalizadas, renderize o formulário com um perfil de erro: https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
+Para exibir um formulário com as mensagens de erro personalizadas, renderize o formulário com o perfil de erro: https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;modelo=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
 
 >[!NOTE]
 >

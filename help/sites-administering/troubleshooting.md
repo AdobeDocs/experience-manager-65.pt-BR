@@ -20,9 +20,9 @@ ht-degree: 3%
 
 # Trabalhar com logs{#working-with-logs}
 
-Esta seção inclui informações detalhadas sobre logs disponíveis para ajudar você a solucionar problemas.
+Esta seção inclui informações detalhadas sobre logs disponíveis para ajudar a solucionar problemas.
 
-O CRX registra registros detalhados. Depois de descompactar e iniciar o Quickstart, você poderá encontrar logs nos seguintes locais:
+O CRX registra logs detalhados. Depois de descompactar e iniciar o Quickstart, você pode encontrar logs nos seguintes locais:
 
 * crx-quickstart/launchpad/logs
 * crx-quickstart/server/logs
@@ -32,7 +32,7 @@ O CRX registra registros detalhados. Depois de descompactar e iniciar o Quicksta
 
 O nível de log padrão é INFO, ou seja, as mensagens DEBUG não são registradas.
 
-Para ativar o nível de log DEBUG, use o explorador CRX para definir a variável
+Para ativar o nível de log DEBUG, use o CRX Explorer para definir o
 
 ```xml
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level
@@ -50,14 +50,14 @@ Os níveis de log são os seguintes:
 
 | 0 | Erro fatal | A ação falhou e o instalador não pode continuar. |
 |---|---|---|
-| 1 | Erro | A ação falhou. A instalação continua, mas uma parte do CRX não foi instalada corretamente e não funcionará. |
+| 1 | Erro | Falha na ação. A instalação continua, mas uma parte do CRX não foi instalada corretamente e não funcionará. |
 | 2 | Aviso | A ação foi bem-sucedida, mas encontrou problemas. O CRX pode ou não funcionar corretamente. |
-| 3 | Info | A ação foi bem sucedida. |
+| 3 | Info | A ação foi bem-sucedida. |
 
 ## Opção detalhada usada para solução de problemas {#verbose-option-used-for-troubleshooting}
 
-Ao iniciar o CRX, é possível adicionar a opção -v (verboso) à linha de comando como em:
+Ao iniciar o CRX, você pode adicionar a opção -v (detalhada) à linha de comando como em:
 
 ` java -jar crx-<*version*>-<*edition*>.jar -v`
 
-Use a opção detalhada para solução de problemas, pois essa opção exibe parte da saída do log de início rápido no console.
+Use a opção detalhada para solução de problemas, pois essa opção exibe parte da saída de registro de início rápido no console.

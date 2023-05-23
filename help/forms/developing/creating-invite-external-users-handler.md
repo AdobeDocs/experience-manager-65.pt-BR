@@ -1,6 +1,6 @@
 ---
-title: Criando um Manipulador de Usuários Externos de Convite
-description: Criando um Manipulador de Usuários Externos de Convite
+title: Criando um Manipulador de Usuários Externos para Convidar
+description: Criando um Manipulador de Usuários Externos para Convidar
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
@@ -10,51 +10,51 @@ ht-degree: 0%
 
 ---
 
-# Criando um Manipulador de Usuários Externos de Convite {#create-invite-external-users-handler}
+# Criando um Manipulador de Usuários Externos para Convidar {#create-invite-external-users-handler}
 
-**Exemplos e exemplos neste documento são apenas para o AEM Forms no ambiente JEE.**
+**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
 
-Você pode criar um Manipulador de Usuários Externos de Convite para o serviço Rights Management. Um Manipulador de Usuários Externos de Convite permite que o serviço Rights Management convide usuários externos a se tornarem usuários do Rights Management. Depois que um usuário se torna Rights Management, ele é capaz de executar tarefas, como abrir um documento PDF protegido por política. Depois que o Manipulador de usuários externos do Convite for implantado no AEM Forms, você poderá usar o console de administração para interagir com ele.
+Você pode criar um Manipulador de usuários externos para o serviço Rights Management. Rights Management Um Manipulador de usuários externos para convidar usuários externos para se tornarem usuários Rights Management. Depois que um usuário se torna um usuário Rights Management, ele pode executar tarefas, como abrir um documento PDF protegido por política. Depois que o Manipulador para usuários externos do Convite é implantado no AEM Forms, você pode usar o console de administração para interagir com ele.
 
 >[!NOTE]
 >
->Um Manipulador de Usuários Externos de Convite é um componente do AEM Forms. Antes de criar um Manipulador de Usuários Externos do Convite, recomenda-se familiarizar-se com a criação de componentes.
+>Um Manipulador de usuários externos para convite é um componente do AEM Forms. Antes de criar um Manipulador de usuários externos, é recomendável que você se familiarize com a criação de componentes.
 
 **Resumo das etapas**
 
-Para desenvolver um Manipulador de Usuários Externos de Convite, você deve executar as seguintes etapas:
+Para desenvolver um Handler de Usuários Externos do Convite, você deve executar as seguintes etapas:
 
 1. Configure seu ambiente de desenvolvimento.
-1. Defina a implementação do Manipulador de Usuários Externos do Convite.
+1. Defina a implementação do Manipulador de usuários externos do Convite.
 1. Defina o arquivo XML do componente.
-1. Implante o Manipulador de Convidar Usuários Externos.
-1. Teste o Manipulador de Usuários Externos do Convite.
+1. Implante o Manipulador de Usuários Externos do Convite.
+1. Testar o Manipulador de usuários externos para convite.
 
 ## Configurar o ambiente de desenvolvimento {#setting-up-development-environment}
 
-Para configurar seu ambiente de desenvolvimento, você deve criar um novo projeto Java, como um projeto Eclipse. A versão do Eclipse compatível é `3.2.1` ou posterior.
+Para configurar seu ambiente de desenvolvimento, você deve criar um novo projeto Java, como um projeto Eclipse. A versão do Eclipse compatível é `3.2.1` ou posteriormente.
 
-A SPI Rights Management requer o `edc-server-spi.jar` arquivo a ser definido no caminho da classe do seu projeto. Se você não fizer referência a esse arquivo JAR, não poderá usar o SPI do Rights Management em seu projeto Java. Esse arquivo JAR é instalado com o SDK da AEM Forms no `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` pasta.
+O Rights Management SPI exige o `edc-server-spi.jar` arquivo a ser definido no caminho de classe do projeto. Se você não fizer referência a esse arquivo JAR, não poderá usar o SPI do Rights Management no projeto Java. Esse arquivo JAR é instalado com o SDK do AEM Forms no `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` pasta.
 
-Além de adicionar o `edc-server-spi.jar` para o caminho de classe do seu projeto, você também deve adicionar os arquivos JAR necessários para usar a API do serviço do Rights Management. Esses arquivos são necessários para usar a API do Rights Management Service no Manipulador de Usuários Externos do Convite.
+Além de adicionar a variável `edc-server-spi.jar` ao caminho de classe do seu projeto, você também deve adicionar os arquivos JAR necessários para usar a API do serviço Rights Management. Esses arquivos são necessários para usar a API do Serviço Rights Management no Manipulador de usuários externos do convite.
 
-## Definir a implementação do manipulador de usuários externos do convite {#define-invite-external-users-handler}
+## Definição da implementação do manipulador de convidar usuários externos {#define-invite-external-users-handler}
 
-Para desenvolver um manipulador de usuários externos do convite, você deve criar uma classe Java que implemente a variável `com.adobe.edc.server.spi.ersp.InvitedUserProvider` interface. Esta classe contém um método chamado `invitedUser`, que o serviço Rights Management chama quando endereços de email são enviados usando o **Adicionar usuários convidados** página acessível por meio do console de administração.
+Para desenvolver um manipulador de convidar usuários externos, você deve criar uma classe Java que implemente a `com.adobe.edc.server.spi.ersp.InvitedUserProvider` interface. Esta classe contém um método chamado `invitedUser`, que o serviço Rights Management chama quando endereços de email são enviados usando o **Adicionar Usuários Convidados** página acessível por meio do console de administração.
 
-O `invitedUser` aceita um método `java.util.List` , que contém endereços de email do tipo string que são enviados da **Adicionar usuários convidados** página. O `invitedUser` retorna uma matriz de `InvitedUserProviderResult` objetos , que geralmente é um mapeamento de endereços de email para objetos do usuário (não retornam nulo).
+A variável `invitedUser` o método aceita um `java.util.List` instância, que contém endereços de email do tipo string enviados do **Adicionar Usuários Convidados** página. A variável `invitedUser` o método retorna uma matriz de `InvitedUserProviderResult` objetos, que geralmente é um mapeamento de endereços de email para objetos do Usuário (não retorne nulo).
 
 >[!NOTE]
 >
->Além de demonstrar como criar um manipulador de usuários externos do convite, esta seção também usa a API do AEM Forms.
+>Além de demonstrar como criar um manipulador para convidar usuários externos, esta seção também usa a API do AEM Forms.
 
-A implementação do manipulador de usuários externos do convite contém um método definido pelo usuário chamado `createLocalPrincipalAccount`. Esse método aceita um valor de string que especifica um endereço de email como valor de parâmetro. O `createLocalPrincipalAccount` O método assume a pré-existência de um domínio local chamado `EDC_EXTERNAL_REGISTERED`. Você pode configurar esse nome de domínio para ser o que desejar; no entanto, para um aplicativo de produção, você pode querer integrar com um domínio empresarial.
+A implementação do manipulador convidar usuários externos contém um método definido pelo usuário chamado `createLocalPrincipalAccount`. Este método aceita um valor de string que especifica um endereço de email como um valor de parâmetro. A variável `createLocalPrincipalAccount` O método assume a pré-existência de um domínio local chamado `EDC_EXTERNAL_REGISTERED`. Você pode configurar esse nome de domínio como o que desejar; no entanto, para um aplicativo de produção, convém integrar a um domínio corporativo.
 
-O `createUsers` O método repete cada endereço de email e cria um objeto de Usuário correspondente (um usuário local no `EDC_EXTERNAL_REGISTERED` domínio). Finalmente, o `doEmails` é chamado. Este método é intencionalmente deixado como um stub na amostra. Em uma implementação de produção, ela conteria a lógica do aplicativo para enviar mensagens de email de convite para os usuários recém-criados. É deixado na amostra para demonstrar o fluxo lógico do aplicativo de um aplicativo real.
+A variável `createUsers` repete cada endereço de email e cria um objeto User correspondente (um usuário local na variável `EDC_EXTERNAL_REGISTERED` domínio). Por último, a `doEmails` é chamado. Esse método é intencionalmente deixado como um stub na amostra. Em uma implementação de produção, ela conteria a lógica do aplicativo para enviar mensagens de email de convite para os usuários recém-criados. Ele é deixado na amostra para demonstrar o fluxo lógico da aplicação de uma aplicação real.
 
-### Definir a implementação do manipulador de usuários externos do convite {#user-handler-implementation}
+### Definição da implementação do manipulador de convidar usuários externos {#user-handler-implementation}
 
-A implementação do manipulador de usuários externos do convite a seguir aceita endereços de email enviados da página Adicionar usuários convidados acessível por meio do console de administração.
+A seguinte implementação do manipulador para convidar usuários externos aceita endereços de email enviados da página Adicionar usuários convidados acessível pelo console de administração.
 
 ```as3
 package com.adobe.livecycle.samples.inviteexternalusers.provider; 
@@ -168,13 +168,13 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 >
 >Essa classe Java é salva como um arquivo JAVA chamado InviteExternalUsersSample.java.
 
-## Definição do arquivo XML de componente para o manipulador de autorização {#define-component-xml-authorization-handler}
+## Definição do arquivo XML do componente para o manipulador de autorização {#define-component-xml-authorization-handler}
 
-Você deve definir um arquivo XML de componente para implantar o componente manipulador de usuários externos do convite. Um arquivo XML de componente existe para cada componente e fornece metadados sobre o componente.
+Você deve definir um arquivo XML do componente para implantar o componente do manipulador de usuários externos do convite. Existe um arquivo XML componente para cada componente e ele fornece metadados sobre o componente.
 
-O seguinte `component.xml` é usado para o manipulador de usuários externos do convite. Observe que o nome do serviço é `InviteExternalUsersSample` e a operação que este serviço expõe é chamada de `invitedUser`. O parâmetro de entrada é um `java.util.List` e o valor de saída é uma matriz de `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` instâncias.
+As seguintes `component.xml` arquivo é usado para o manipulador convidar usuários externos. Observe que o nome do serviço é `InviteExternalUsersSample` e a operação que este serviço expõe é nomeada `invitedUser`. O parâmetro de entrada é um `java.util.List` e o valor de saída é uma matriz de `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` instâncias.
 
-### Como definir o arquivo XML do componente para o manipulador de usuários externos do convite {#component-xml-invite-external-users-handler}
+### Definindo o arquivo XML do componente para o manipulador de convidar usuários externos {#component-xml-invite-external-users-handler}
 
 ```as3
 <component xmlns="https://adobe.com/idp/dsc/component/document"> 
@@ -201,48 +201,48 @@ O seguinte `component.xml` é usado para o manipulador de usuários externos do 
 </component> 
 ```
 
-## Empacotando o manipulador de usuários externos do convite {#packaging-invite-external-users-handler}
+## Empacotamento do manipulador de usuários externos do convite {#packaging-invite-external-users-handler}
 
-Para implantar o manipulador de usuários externos do convite no AEM Forms, é necessário disponibilizar o projeto Java em um arquivo JAR. Você deve garantir que os arquivos JAR externos dos quais depende a lógica comercial do manipulador de usuários externos de convite, como o `edc-server-spi.jar` e `adobe-rightsmanagement-client.jar` os arquivos também são incluídos no arquivo JAR. Além disso, o arquivo XML do componente deve estar presente. O `component.xml` Os arquivos JAR e externos devem estar localizados na raiz do arquivo JAR.
+Para implantar o manipulador convidar usuários externos para o AEM Forms, você deve empacotar o projeto Java em um arquivo JAR. Você deve garantir que os arquivos JAR externos dos quais depende a lógica de negócios do manipulador de usuários externos do convite, como a `edc-server-spi.jar` e `adobe-rightsmanagement-client.jar` Os arquivos também estão incluídos no arquivo JAR. Além disso, o componente XML file deve estar presente. A variável `component.xml` O arquivo JAR e os arquivos JAR externos devem estar localizados na raiz do arquivo JAR.
 
 >[!NOTE]
 >
->Na ilustração abaixo, um `BootstrapImpl` é mostrada. Esta seção não discute como criar uma `BootstrapImpl` classe .
+>Na ilustração abaixo, uma `BootstrapImpl` é exibida. Esta seção não discute como criar um `BootstrapImpl` classe.
 
-A ilustração a seguir mostra o conteúdo do projeto Java empacotado no arquivo JAR do manipulador de usuários externos do convite.
+A ilustração a seguir mostra o conteúdo do projeto Java que é empacotado no arquivo JAR do manipulador do usuário externo do convite.
 
 ![Convidar usuários](assets/ci_ci_InviteUsers.png)
 
-A. Arquivos JAR externos exigidos pelo componente B. Arquivo JAVA
+A. Arquivos JAR externos necessários para o componente B. Arquivo JAVA
 
-Você deve empacotar o manipulador de usuários externos do convite em um arquivo JAR. No diagrama anterior, observe que os arquivos .JAVA estão listados. Depois de compactados em um arquivo JAR, os arquivos .CLASS correspondentes também devem ser especificados. Sem os arquivos .CLASS, o manipulador de autorização não funciona.
-
->[!NOTE]
->
->Depois de empacotar o manipulador de autorização externo em um arquivo JAR, é possível implantar o componente no AEM Forms. Somente um manipulador de usuários externos do convite pode ser implantado em um determinado momento.
+Você deve criar um pacote do manipulador convidar usuários externos em um arquivo JAR. No diagrama anterior, observe que os arquivos .JAVA estão listados. Uma vez empacotado em um arquivo JAR, os arquivos .CLASS correspondentes também devem ser especificados. Sem os arquivos .CLASS, o manipulador de autorização não funciona.
 
 >[!NOTE]
 >
->Você também pode implantar um componente de forma programática.
+>Depois de criar um pacote do manipulador de autorização externa em um arquivo JAR, você pode implantar o componente no AEM Forms. Somente um manipulador de usuários externos convidados pode ser implantado em um determinado momento.
 
-## Teste do manipulador de usuários externos do convite {#testing-invite-external-users-handler}
+>[!NOTE]
+>
+>Você também pode implantar programaticamente um componente.
 
-Para testar o manipulador de usuários externos do convite, é possível adicionar usuários externos para convidar usando o console de administração.
+## Teste do manipulador para usuários externos convidados {#testing-invite-external-users-handler}
 
-Para adicionar usuários externos para convidar usando o console de administração:
+Para testar o manipulador convidar usuários externos, é possível adicionar usuários externos ao convite usando o console de administração.
+
+Para adicionar usuários externos a convidar usando o console de administração:
 
 1. Implante o arquivo JAR do manipulador de usuários externos do convite usando o Workbench.
 1. Reinicie o servidor de aplicativos.
 1. Faça logon no console de administração.
 1. Clique em **[!UICONTROL Serviços]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuração]** > Convidado **[!UICONTROL Registro do usuário]**.
-1. Habilite o registro de usuário convidado marcando **[!UICONTROL Habilitar registro de usuário convidado]** caixa. Em **[!UICONTROL Usar o sistema de registro integrado]**, clique em **[!UICONTROL Não]**. Salve as configurações.
-1. Na página inicial do console de administração, clique em **[!UICONTROL Configurações]** > **[!UICONTROL Gerenciamento de usuários]** > **[!UICONTROL Gerenciamento de domínio]**.
+1. Habilite o registro de usuários convidados marcando a **[!UICONTROL Habilitar registro de usuário convidado]** caixa. Em **[!UICONTROL Usar sistema de registro incorporado]**, clique em **[!UICONTROL Não]**. Salve suas configurações.
+1. Na página inicial do console de administração, clique em **[!UICONTROL Configurações]** > **[!UICONTROL User Management]** > **[!UICONTROL Gerenciamento de domínio]**.
 1. Clique em **[!UICONTROL Novo Domínio Local]**. Na página a seguir, crie um domínio com o nome e o valor do identificador de `EDC_EXTERNAL_REGISTERED`. Salve as alterações.
-1. Na página inicial do console de administração, clique em **[!UICONTROL Serviços]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Usuários locais e convidados]**. O **[!UICONTROL Adicionar usuário convidado]** será exibida.
+1. Na página inicial do console de administração, clique em **[!UICONTROL Serviços]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Usuários convidados e locais]**. A variável **[!UICONTROL Adicionar usuário convidado]** é exibida.
 1. Insira endereços de email (como o manipulador de usuários externos do convite atual não envia mensagens de email, o email endereçado não precisa ser válido). Clique em **[!UICONTROL OK]**. Os usuários são convidados para o sistema.
-1. Na página inicial do console de administração, clique em **[!UICONTROL Configurações]** > **[!UICONTROL Gerenciamento de usuários]** > **[!UICONTROL Usuários e grupos]**.
-1. No **[!UICONTROL Localizar]** , insira um endereço de email especificado. Clique em **[!UICONTROL Localizar]**. O usuário convidado aparece como um usuário no local `EDC_EXTERNAL_REGISTERED` domínio.
+1. Na página inicial do console de administração, clique em **[!UICONTROL Configurações]** > **[!UICONTROL User Management]** > **[!UICONTROL Usuários e grupos]**.
+1. No **[!UICONTROL Localizar]** insira um endereço de email especificado. Clique em **[!UICONTROL Localizar]**. O usuário que você convidou aparece como um usuário no local `EDC_EXTERNAL_REGISTERED` domínio.
 
 >[!NOTE]
 >
->O manipulador de usuários externos do convite falhará se o componente for interrompido ou desinstalado.
+>O manipulador de convidar usuários externos falhará se o componente for interrompido ou desinstalado.

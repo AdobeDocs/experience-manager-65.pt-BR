@@ -1,7 +1,7 @@
 ---
-title: Ativar comentários online para o plug-in do navegador da Web Adobe Reader
+title: Ativação de comentários on-line para o plug-in do navegador da Web do Adobe Reader
 seo-title: Enabling online commenting for Adobe Reader web browser plug-in
-description: Saiba como ativar comentários online para o plug-in do navegador da Web Adobe Reader.
+description: Saiba como ativar os comentários online para o plug-in do navegador da Web do Adobe Reader.
 seo-description: Learn how to enable online commenting for Adobe Reader web browser plug-in.
 uuid: 3ac5270f-2b8a-47b1-b0ca-a5607476923f
 contentOwner: admin
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Ativar comentários online para o plug-in do navegador da Web Adobe Reader {#enabling-online-commenting-for-adobe-reader-web-browser-plug-in}
+# Ativação de comentários on-line para o plug-in do navegador da Web do Adobe Reader {#enabling-online-commenting-for-adobe-reader-web-browser-plug-in}
 
-Para ativar a barra de ferramentas Comentário e Marcação em um arquivo do PDF exibido usando o plug-in do navegador da Web Adobe Reader, um back-end de colaboração deve estar em vigor, como um servidor de revisão. Se um back-end de colaboração não estiver disponível, você deve salvar o arquivo PDF no seu computador, revisar e marcar o arquivo no Adobe Reader e enviá-lo de volta ao originador.
+Para ativar a barra de ferramentas Comentário e Marcação em um arquivo PDF que é visualizado usando o plug-in do navegador da Web Adobe Reader, um back-end de colaboração deve estar em vigor, como um servidor de revisão. Se um back-end de colaboração não estiver disponível, você deverá salvar o arquivo PDF no computador, revisar e marcar o arquivo no Adobe Reader e enviá-lo de volta ao originador.
 
-Se for necessário fazer comentários online em um ambiente não colaborativo, entre em contato com o Suporte ao Adobe para obter mais informações.
+Se for necessário fazer comentários on-line em um ambiente não colaborativo, entre em contato com o Suporte da Adobe para obter mais informações.

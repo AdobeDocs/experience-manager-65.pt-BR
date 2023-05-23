@@ -1,7 +1,7 @@
 ---
-title: Configuração de valores de tempo limite para uso com as extensões do Acrobat Reader DC
+title: Configuração de valores de tempo limite para uso com extensões do Acrobat Reader DC
 seo-title: Setting timeout values for use with Acrobat Reader DC extensions
-description: Saiba como definir valores de tempo limite para uso com extensões do Acrobat Reader DC.
+description: Saiba como definir valores de tempo limite para usar com extensões do Acrobat Reader DC.
 seo-description: Learn how to set timeout values for use with Acrobat Reader DC extensions.
 uuid: d6d072a0-0a30-417a-98b1-df8b4ff8f911
 contentOwner: admin
@@ -17,15 +17,15 @@ ht-degree: 0%
 
 ---
 
-# Configuração de valores de tempo limite para uso com as extensões do Acrobat Reader DC  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
+# Configuração de valores de tempo limite para uso com extensões do Acrobat Reader DC  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
 
-Ao trabalhar em muitos arquivos PDF nas extensões do Acrobat Reader DC, verifique se os valores de tempo limite a seguir estão definidos adequadamente para evitar que as tarefas atinjam o tempo limite e falhem:
+Ao trabalhar em muitos arquivos PDF nas extensões do Acrobat Reader DC, certifique-se de que os seguintes valores de tempo limite estejam definidos adequadamente para evitar que os processos atinjam o tempo limite e falhem:
 
-**Tempo Limite de Eliminação do Documento**
+**Tempo Limite de Descarte de Documento**
 
-Esse valor pode ser definido no console de administração. Clique em Configurações > Configurações principais do sistema > Configurações e especifique um valor para o Tempo limite padrão de eliminação de documentos.
+Esse valor pode ser definido no console de administração. Clique em Configurações > Configurações principais do sistema > Configurações e especifique um valor para Tempo limite padrão de descarte de documentos.
 
-**O Gerenciador de usuários AEM o tempo limite dos formulários:** Esse valor pode ser definido editando o arquivo config.xml. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos de configuração e, em seguida, clique em Exportar. Abra o arquivo config.xml exportado e edite as seguintes linhas:
+**Tempo limite de formulários AEM do Gerenciador de usuários:** Esse valor pode ser definido ao editar o arquivo config.xml. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos de configuração e clique em Exportar. Abra o arquivo config.xml exportado e edite as seguintes linhas:
 
 &lt;entry key=&quot;assertionValidityInMinutes&quot; value=&quot;600&quot;/>
 
@@ -33,4 +33,4 @@ Esse valor pode ser definido no console de administração. Clique em Configura�
 
 Salve e importe o arquivo config.xml de volta para o console de administração.
 
-**Tempo limite da sessão do servidor de aplicativos:** Esse valor pode ser definido no servidor de aplicativos. Para obter mais informações, consulte a documentação fornecida com o servidor de aplicativos.
+**Tempo Limite de Sessão do Servidor de Aplicativos:** Esse valor pode ser definido no servidor de aplicativos. Para obter mais informações, consulte a documentação fornecida com o servidor de aplicativos.

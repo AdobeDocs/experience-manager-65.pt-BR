@@ -22,26 +22,26 @@ ht-degree: 30%
 
 ## Introdução {#introduction}
 
-Quando o AEM Communities é licenciado, além de criar sites de comunidade, é possível adicionar recursos do Communities a qualquer site AEM usando ferramentas de criação AEM padrão.
+Quando o AEM Communities é licenciado, além de criar sites da comunidade, é possível adicionar recursos do Communities a qualquer site AEM usando ferramentas de criação padrão do AEM.
 
-Para saber mais sobre como criar uma visita ao site da comunidade:
+Para saber mais sobre como criar uma visita a um site da comunidade:
 
-* [Visão geral da AEM Communities](/help/communities/overview.md)
+* [Visão geral do AEM Communities](/help/communities/overview.md)
 * [Introdução ao AEM Communities](/help/communities/getting-started.md)
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o ambiente de criação, visualize a documentação em [tratamento básico](/help/sites-authoring/basic-handling.md) e [guia rápido para a criação de páginas](/help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o ambiente de criação, exiba a documentação em [manuseio básico](/help/sites-authoring/basic-handling.md) e uma [guia rápido para a criação de páginas](/help/sites-authoring/qg-page-authoring.md).
 
-## Componentes de comunidades disponíveis {#available-communities-components}
+## Componentes disponíveis das comunidades {#available-communities-components}
 
-A tabela a seguir lista os componentes Comunidades visíveis aos autores quando ativados no navegador de componentes (sidekick).
+A tabela a seguir lista os componentes das Comunidades visíveis para os autores quando ativados no navegador de componentes (sidekick).
 
-Veja também o [Guia de componentes da comunidade](/help/communities/components-guide.md).
+Consulte também a seção [Guia de componentes da comunidade](/help/communities/components-guide.md).
 
 >[!NOTE]
 >
->Ler [Noções básicas sobre componentes do Communities](/help/communities/basics.md) pois contém as informações necessárias para a criação com os componentes do Communities.
+>Ler [Noções básicas sobre componentes das comunidades](/help/communities/basics.md) pois contém informações necessárias para a criação com componentes do Communities.
 
 | **Título do componente** | **Destaque** |
 |---|---|
@@ -52,14 +52,14 @@ Veja também o [Guia de componentes da comunidade](/help/communities/components-
 | Comentários | [Comentários](/help/communities/comments.md) |
 | Lista de atividades da comunidade | [Tendências da atividade](/help/communities/trends.md) |
 | Lista de membros do grupo da comunidade | [Grupos de comunidades](/help/communities/creating-groups.md) |
-| Escrever mensagem | [Mensagens](/help/communities/configure-messaging.md) |
+| Compor mensagem | [Mensagens](/help/communities/configure-messaging.md) |
 | Conteúdo incluso | [Conteúdo incluso](/help/communities/featured.md) |
 | Biblioteca de arquivo | [Biblioteca de arquivo](/help/communities/file-library.md) |
 | Seguir | [Gráfico social](/help/communities/socialgraph.md) |
 | Seguindo | [Gráfico social](/help/communities/socialgraph.md) |
 | Fórum | [Fórum](/help/communities/forum.md) |
 | Ideação | [Ideação](/help/communities/ideation-feature.md) |
-| Placar de líderes | [Pontuação e emblemas](/help/communities/enabling-leaderboard.md) |
+| Placar de líderes | [Pontuação e medalhas](/help/communities/enabling-leaderboard.md) |
 | Curtir | [Curtir](/help/communities/liking.md) |
 | Mensagem | [Mensagens](/help/communities/configure-messaging.md) |
 | Lista de mensagens | [Mensagens](/help/communities/configure-messaging.md) |
@@ -76,12 +76,12 @@ Veja também o [Guia de componentes da comunidade](/help/communities/components-
 
 >[!NOTE]
 >
->O componente de pesquisa não está mais disponível e é compatível com o Experience Manager Communities.
+>O componente de pesquisa não está mais disponível e não é mais compatível com o Experience Manager Communities.
 
 ## Documentação de comunidades relacionadas {#related-communities-documentation}
 
 * Visita [Implantação de comunidades](/help/communities/deploy-communities.md) para saber mais sobre implantações recomendadas.
 
-* Visita [Administrar sites das comunidades](/help/communities/administer-landing.md) para saber mais sobre como criar um site da comunidade, configurar modelos de site da comunidade, moderar conteúdo da comunidade, gerenciar membros e configurar mensagens.
+* Visita [Administração dos sites das comunidades](/help/communities/administer-landing.md) para saber mais sobre como criar um site da comunidade, configurar modelos de site da comunidade, moderar o conteúdo da comunidade, gerenciar membros e configurar mensagens.
 
-* Visita [Desenvolvimento de comunidades](/help/communities/communities.md) para saber mais sobre a estrutura de componentes sociais (SCF) e personalizar os componentes e recursos das Comunidades.
+* Visita [Comunidades de desenvolvimento](/help/communities/communities.md) para saber mais sobre a estrutura de componente social (SCF) e a personalização de componentes e recursos do Communities.

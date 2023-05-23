@@ -1,7 +1,7 @@
 ---
-title: Condição em linha e repetição em Comunicações interativas e cartas
+title: Condição em linha e repetição em comunicações interativas e cartas
 seo-title: Inline condition and repeat in Interactive Communications and letters
-description: Usando a condição em linha e a repetição em Comunicações interativas e cartas, você pode criar comunicações que são altamente contextuais e bem estruturadas.
+description: Usando a condição em linha e repetir em Comunicações interativas e cartas, você pode criar comunicações que são altamente contextuais e bem estruturadas.
 seo-description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured.
 uuid: 32b48a8b-431d-4f9c-9f51-8e7e9ac624a0
 content-type: reference
@@ -18,61 +18,61 @@ ht-degree: 0%
 
 ---
 
-# Condição em linha e repetição em Comunicações interativas e cartas{#inline-condition-and-repeat-in-interactive-communications-and-letters}
+# Condição em linha e repetição em comunicações interativas e cartas{#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
 ## Condições em linha {#inline-conditions}
 
-O AEM Forms permite usar condições em linha em módulos de texto para automatizar a renderização do texto que depende do contexto ou dos dados associados ao modelo de dados de formulário (em Comunicação interativa) ou ao dicionário de dados (em letras). A condição em linha exibe o conteúdo específico com base na avaliação da condição ser verdadeiro ou falso.
+O AEM Forms permite usar condições em linha em módulos de texto para automatizar a renderização de texto que depende do contexto ou dos dados associados ao modelo de dados de formulário (na Comunicação interativa) ou ao dicionário de dados (em letras). A condição em linha exibe um conteúdo específico com base na avaliação da condição como verdadeiro ou falso.
 
-As condições executam cálculos em valores de dados fornecidos pelo modelo de dados de formulário/Dicionário de dados ou pelos usuários finais. Usando condições em linha, você pode economizar tempo e reduzir erros humanos, enquanto cria comunicações/cartas altamente contextuais e personalizadas interativas.
+As condições executam cálculos nos valores de dados fornecidos pelo modelo/dicionário de dados do formulário ou pelos usuários finais. Usando condições em linha, você pode economizar tempo e reduzir erros humanos, enquanto cria comunicações/cartas interativas altamente contextuais e personalizadas.
 
 Para obter mais informações, consulte:
 
 * [Criar uma comunicação interativa](../../forms/using/create-interactive-communication.md)
 * [Visão geral do gerenciamento de correspondência](/help/forms/using/cm-overview.md)
-* [Texto em Comunicações interativas](../../forms/using/texts-interactive-communications.md)
+* [Texto em comunicações interativas](../../forms/using/texts-interactive-communications.md)
 
-### Exemplo: Uso de regras para condicionar texto em linha no Interative Communication {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
+### Exemplo: usar regras para condicionar o texto em linha na Comunicação interativa {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
 
-Para condicionalizar uma frase, parágrafo ou string de texto em uma Comunicação interativa, é possível criar uma regra no fragmento de documento de texto apropriado. O exemplo a seguir usa uma regra para exibir um número gratuito somente para os recipients dos EUA da Comunicação interativa.
+Para condicionalizar uma frase, parágrafo ou string de texto em uma Comunicação interativa, você pode criar uma regra no fragmento de documento de texto apropriado. O exemplo a seguir usa uma regra para exibir um número de chamada gratuita somente para os recipients dos EUA da Comunicação interativa.
 
-Para obter mais informações, consulte Criar regra no texto em [Textos em Comunicações interativas](../../forms/using/texts-interactive-communications.md).
+Para obter mais informações, consulte Criar regra no texto em [Textos em comunicações interativas](../../forms/using/texts-interactive-communications.md).
 
-Depois de incluir o fragmento de texto em uma Comunicação interativa e o Agente usar a interface do usuário do agente para preparar uma Comunicação interativa, os dados (modelo de dados de formulário) para os recipients são avaliados e o texto é mostrado somente para os recipients nos EUA.
+Depois de incluir o fragmento de texto em uma comunicação interativa e o agente usar a interface do usuário do agente para preparar uma comunicação interativa, os dados (modelo de dados de formulário) dos recipients serão avaliados e o texto será exibido apenas para os recipients nos EUA.
 
-### Exemplo: Uso de uma condição em linha em uma carta para renderizar o endereço apropriado  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
+### Exemplo: usar a condição em linha em uma correspondência para renderizar o endereço apropriado  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
-Você pode inserir uma condição em linha em uma carta inserindo a condição em linha no módulo de texto apropriado. O exemplo a seguir usa duas condições para avaliar e exibir o endereço apropriado, Senhor ou Senhora, em uma carta baseada no elemento DD Gênero. Usando etapas semelhantes, você pode criar outras condições.
+Você pode inserir a condição em linha em uma correspondência inserindo a condição em linha no módulo de texto apropriado. O exemplo a seguir usa duas condições para avaliar e exibir o endereço apropriado, Senhor ou Senhora, em uma carta com base no elemento DD Gênero. Usando etapas semelhantes, você pode criar outras condições.
 
 >[!NOTE]
 >
->Se os ativos existentes incluírem expressões de condição antiga/repetição (pré 6.2 SP1 CFP 4), os ativos exibirão a sintaxe antiga de condição e repetição. No entanto, a condição antiga/repetição funciona. As expressões condição nova e antiga/repetição são compatíveis entre si para criar uma combinação aninhada de expressões antigas e novas de condição/repetição.
+>Se os ativos existentes incluírem expressões antigas de condição/repetição (pré 6.2 SP1 CFP 4), os ativos exibirão uma sintaxe antiga de condição e serão repetidos. No entanto, a condição/repetição antiga funciona. As expressões nova e antiga condição/repetição são compatíveis entre si para criar uma combinação aninhada de expressões antigas e novas condição/repetição.
 
-1. No módulo de texto relevante, selecione a parte de texto que deseja condicionar e toque em **Condição**.
+1. No módulo de texto relevante, selecione a parte do texto que deseja condicionar e toque em **Condição**.
 
-   ![1_select_text](assets/1_selecttext.png)
+   ![1_selecttext](assets/1_selecttext.png)
 
    A caixa de diálogo Condição é exibida com uma condição vazia.
 
-   ![Caixa de diálogo 2_condições](assets/2_conditiondialog.png)
+   ![2_conditiondialog](assets/2_conditiondialog.png)
 
    >[!NOTE]
    >
    >Não é possível salvar uma expressão condicional vazia ou inválida. Deve haver uma expressão condicional válida dentro de `${}` para salvar a expressão.
 
-1. Faça o seguinte para criar uma condição para avaliar se o texto selecionado/condicionado aparece na letra e toque na marca de seleção para salvar a expressão:
+1. Faça o seguinte para construir uma condição para avaliar se o texto selecionado/condicionado aparece na correspondência e toque na marca de seleção para salvar a expressão:
 
-   Toque duas vezes em um elemento DD para inseri-lo na condição. Insira o operador apropriado e construa a seguinte condição na caixa de diálogo.
+   Toque duas vezes em um elemento DD para inseri-lo na condição. Insira o operador apropriado e crie a seguinte condição na caixa de diálogo.
 
    ```javascript
    ${DD_creditcard_Gender=="Male"}
    ```
 
-   Para obter mais informações sobre como criar a expressão, consulte **Criação de expressões e funções remotas com o Construtor de expressões** em [Construtor de expressões](../../forms/using/expression-builder.md). O valor especificado na expressão deve ser suportado para o elemento no dicionário de dados. Para obter mais informações, consulte [Dicionário de dados](../../forms/using/data-dictionary.md).
+   Para obter mais informações sobre como criar a expressão, consulte **Criar expressões e funções remotas com o construtor de expressões** in [Construtor de expressões](../../forms/using/expression-builder.md). O valor especificado na expressão deve ser suportado para o elemento no dicionário de dados. Para obter mais informações, consulte [Dicionário de dados](../../forms/using/data-dictionary.md).
 
-   Depois que a condição é inserida, você pode passar o mouse sobre a alça à esquerda da condição para visualizá-la. Toque na alça para exibir o menu pop-up da condição, que permite editar ou remover a condição.
+   Depois que a condição for inserida, você poderá passar o mouse sobre a alça à esquerda da condição para visualizá-la. Toque na alça para exibir o menu pop-up da condição, o que permite editar ou remover a condição.
 
-   ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
+   ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpop-up](assets/4_editconditionremoveconditionpopup.png)
 
 1. Inserir condição semelhante selecionando o texto `Ma'am`.
 
@@ -80,9 +80,9 @@ Você pode inserir uma condição em linha em uma carta inserindo a condição e
    ${DD_creditcard_Gender == "Female"}
    ```
 
-1. Pré-visualize a letra relevante e observe que o texto é renderizado de acordo com a condição em linha. Você pode inserir o valor do elemento DD Gênero usando:
+1. Pré-visualize a correspondência relevante e observe que o texto é renderizado de acordo com a condição em linha. Você pode inserir o valor do elemento DD Gênero usando:
 
-   * Um arquivo de dados XML de amostra criado com base no dicionário de dados relevante ao visualizar a carta com dados de amostra.
+   * Um arquivo de dados XML de amostra criado com base no dicionário de dados relevante ao visualizar a correspondência com dados de amostra.
    * Um arquivo de dados XML anexado ao dicionário de dados relevante.
 
    Para obter mais informações, consulte [Dicionário de dados](../../forms/using/data-dictionary.md).
@@ -91,15 +91,15 @@ Você pode inserir uma condição em linha em uma carta inserindo a condição e
 
 ## Repetir {#repeat}
 
-Você pode ter informações dinâmicas em sua Comunicação/carta interativa, como transações em uma declaração de cartão de crédito, cuja instância ou ocorrência pode continuar mudando com cada carta gerada. Usando a repetição, você pode formatar e estruturar essas informações dinâmicas no fragmento do documento de texto.
+Você pode ter informações dinâmicas em sua Comunicação/carta interativa, como transações em um demonstrativo de cartão de crédito, cuja instância ou ocorrência pode continuar mudando com cada carta gerada. Usando a opção repetir, é possível formatar e estruturar essas informações dinâmicas no fragmento de documento de texto.
 
-Além disso, você pode especificar a regra/condição na construção de repetição para condicionar as informações/entradas renderizadas na Comunicação/letra interativa.
+Além disso, você pode especificar a regra/condição na construção de repetição para condicionar as informações/entradas renderizadas na Comunicação/correspondência interativa.
 
-### Exemplo: Uso de repetição em uma Comunicação Interativa para formatar, estruturar e exibir uma lista de transações de cartão de crédito {#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
+### Exemplo: usar repetir em uma Comunicação Interativa para formatar, estruturar e exibir uma lista de transações de cartão de crédito {#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
-O exemplo a seguir fornece as etapas para usar repetição para estruturar e renderizar as transações de cartão de crédito em uma Comunicação Interativa.
+O exemplo a seguir fornece as etapas para usar repetir para estruturar e renderizar as transações de cartão de crédito em uma Comunicação Interativa.
 
-1. Em um fragmento de documento de texto baseado no modelo de dados de formulário, insira os objetos de modelo de dados de formulário relevantes (e o texto incorporado necessário para os rótulos, como neste exemplo):
+1. Em um fragmento de documento de texto baseado em modelo de dados de formulário, insira os objetos de modelo de dados de formulário relevantes (e o texto incorporado necessário para os rótulos, como neste exemplo):
 
    ![1_elementstext](assets/1_elementstext.png)
 
@@ -107,7 +107,7 @@ O exemplo a seguir fornece as etapas para usar repetição para estruturar e ren
    >
    >O conteúdo repetível deve incluir pelo menos uma propriedade do tipo Collection.
 
-1. Selecione o conteúdo no qual aplicar repetição.
+1. Selecione o conteúdo no qual aplicar a repetição.
 
    ![2_selection](assets/2_selection.png)
 
@@ -115,35 +115,35 @@ O exemplo a seguir fornece as etapas para usar repetição para estruturar e ren
 
    A caixa de diálogo Repetir é exibida.
 
-   ![Caixa de diálogo 3_repetições](assets/3_repeatdialog.png)
+   ![3_repeat_dialog](assets/3_repeatdialog.png)
 
 1. Selecione Quebra de linha como separador e, se necessário, toque em Adicionar condição para criar uma regra. Também é possível usar o texto como separador e especificar os caracteres de texto a serem usados como separador.
 
    A caixa de diálogo Criar regra é exibida.
 
-1. Crie uma regra para exibir transações datadas de 28 de fevereiro de 2018 para incluir as transações somente para o mês de março na Comunicação interativa.
+1. Crie uma regra para exibir transações com data posterior a 28 de fevereiro de 2018 para incluir as transações somente para o mês de março na Comunicação interativa.
 
    >[!NOTE]
    >
-   >Este exemplo assume que o Agente criará a declaração no final de março de 2018. Caso contrário, você poderá criar outra regra para incluir transações antes de 2018-04-01 para excluir transações após março de 2018.
+   >Este exemplo pressupõe que o agente criará a instrução no final de março de 2018. Caso contrário, você poderá criar outra regra para incluir transações anteriores a 04/2018 para excluir transações após março de 2018.
 
    ![4_createrule](assets/4_createrule.png)
 
 1. Salve a condição/regra e salve a repetição. A repetição condicional é aplicada ao conteúdo selecionado.
 
-   ![5_onmouseoverConditionrule](assets/5_onmouseoverconditionrule.png)
+   ![5_onmouseoverconditionrule](assets/5_onmouseoverconditionrule.png)
 
-   Ao passar o mouse sobre ele, o fragmento do documento de texto exibe a Condição e o separador usado na repetição aplicada ao conteúdo.
+   Ao passar o mouse, o fragmento do documento de texto exibe a Condição e o separador usados na repetição aplicada ao conteúdo.
 
-1. Salve o fragmento do documento de texto e visualize a Comunicação interativa relevante. Dependendo dos dados no modelo de dados de formulário, a repetição aplicada nos elementos renderiza os detalhes da transação da seguinte maneira na visualização:
+1. Salve o fragmento do documento de texto e visualize a comunicação interativa relevante. Dependendo dos dados no modelo de dados de formulário, a repetição aplicada nos elementos renderiza os detalhes da transação semelhantes aos seguintes na visualização:
 
    ![screen_shot_2018-03-09at155516copy](assets/screen_shot_2018-03-09at155516copy.png)
 
-### Exemplo: Usar a repetição em uma carta para formatar, estruturar e exibir uma lista de transações de cartão de crédito {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
+### Exemplo: usando repetir em uma correspondência para formatar, estruturar e exibir uma lista de transações de cartão de crédito {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
-O exemplo a seguir fornece as etapas para usar a repetição para estruturar e renderizar as transações com cartão de crédito em uma carta. Usando etapas semelhantes, você pode usar a repetição em um cenário diferente.
+O exemplo a seguir fornece as etapas para usar repetir para estruturar e renderizar as transações de cartão de crédito em uma correspondência. Usando etapas semelhantes, você pode usar a repetição em um cenário diferente.
 
-1. Abra (ao editar ou criar) um módulo de texto que tenha elementos de DD que renderizem dados repetidos/dinâmicos e incorporem o texto necessário ao redor dos elementos de DD. Por exemplo, um módulo de texto tem os seguintes elementos de DD para criar um demonstrativo de transações em um cartão de crédito:
+1. Abra (ao editar ou criar) um módulo de texto que tenha elementos de DD que renderizam dados repetidos/dinâmicos e incorporam o texto necessário ao redor dos elementos de DD. Por exemplo, um módulo de texto tem os seguintes elementos de DD para criar um demonstrativo de transações em um cartão de crédito:
 
    ```javascript
    {^DD_creditcard_TransactionDate^} {^DD_creditcard_TransactionAmount^}
@@ -152,88 +152,88 @@ O exemplo a seguir fornece as etapas para usar a repetição para estruturar e r
 
    Esses elementos de DD renderizam uma lista das transações feitas no cartão de crédito com as seguintes informações:
 
-   Data da transação, Valor da transação e Tipo de transação (Débito ou Crédito)
+   Data da transação, Quantia da transação e Tipo de transação (Débito ou Crédito)
 
-1. Incorpore o texto dentro dos elementos de DD para tornar a declaração mais legível, como a seguir:
+1. Incorpore o texto nos elementos DD para tornar a declaração mais legível, como a seguir:
 
-   ![1_repetir](assets/1_repeat.png)
+   ![1_repeat](assets/1_repeat.png)
 
    ```javascript
    Date: {^DD_creditcard_TransactionDate^} Amount (USD): {^DD_creditcard_TransactionAmount^} Transaction Type: {^DD_creditcard_TransactionType^}
    ```
 
-   O trabalho de renderização de uma declaração bem formatada, no entanto, ainda não foi feito. Se você renderizar uma carta com base no trabalho feito até o momento, ela aparecerá da seguinte maneira:
+   No entanto, o trabalho de renderizar uma instrução bem formatada ainda não foi feito. Se você renderizar uma carta com base no trabalho feito até agora, ela será exibida da seguinte forma:
 
    ![1_1renderwithoutrepeat](assets/1_1renderwithoutrepeat.png)
 
-   Para repetir o texto estático junto com os elementos DD, é necessário aplicar a repetição conforme explicado nas etapas adicionais.
+   Para repetir o texto estático junto com os elementos DD, é necessário aplicar repetir conforme explicado nas etapas seguintes.
 
-1. Selecione o texto estático, bem como os elementos de DD que deseja repetir, conforme mostrado abaixo:
+1. Selecione o texto estático e os elementos de DD que deseja repetir, conforme mostrado abaixo:
 
-   ![2_repeat_select](assets/2_repeat_selecttext.png)
+   ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
 1. Toque **Repetir**. A caixa de diálogo Repetir é exibida com uma condição em linha vazia.
 
-   ![3_Caixa_de_diálogo](assets/3_repeat_dialog.png)
+   ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
-1. Se necessário, insira uma condição para renderizar seletivamente as transações, por exemplo, para renderizar valores de transação maiores que 50 centavos:
+1. Se necessário, insira uma condição para renderizar seletivamente as transações, como para renderizar valores de transação maiores que 50 centavos:
 
    ```javascript
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   Caso contrário, se você não precisar renderizar as informações (aqui as transações) seletivamente, mantenha a condição vazia, excluindo o seguinte na caixa de diálogo: `${}`. Salvar uma expressão de repetição é ativado quando a janela de expressão de repetição está vazia (sem ${} quando nenhuma repetição é necessária) ou quando contém uma condição válida para repetição.
+   Caso contrário, se você não precisar renderizar as informações (aqui, transações) seletivamente, mantenha a condição vazia ao excluir o seguinte na caixa de diálogo: `${}`. Salvar uma expressão de repetição é ativado quando a janela de expressão de repetição está vazia (sem ${} quando nenhuma repetição é necessária) ou quando contém uma condição válida para repetição.
 
-1. Selecione um separador para formatar o texto dinâmico e toque na marca de seleção para guardar:
+1. Selecione um separador para formatar o texto dinâmico e toque na marca de seleção para salvar:
 
-   * **Quebra de linha**: Insere quebra de linha após cada entrada de transação na carta de saída.
-   * **Texto**: Insere o caractere de texto especificado após cada entrada de transação na letra de saída.
+   * **Quebra de linha**: insere quebra de linha após cada entrada de transação na carta de saída.
+   * **Texto**: insere o caractere de texto especificado após cada entrada de transação na letra de saída.
 
-   Depois que a condição é inserida, o texto com repetição é realçado em vermelho e uma alça é exibida à esquerda. Você pode passar o mouse sobre a alça à esquerda da repetição para exibir a construção repetida.
+   Depois que a condição for inserida, o texto com repeat será realçado em vermelho e um identificador será exibido à esquerda. Você pode passar o mouse sobre a alça à esquerda da repetição para visualizar a construção de repetição.
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
 
-   Toque no identificador para exibir o menu pop-up da repetição, o que permite editar ou remover a construção repetida.
+   Toque na alça para exibir o menu pop-up da repetição, que permite editar ou remover a construção de repetição.
 
-   ![5_repetieditremove](assets/5_repeateditremove.png)
+   ![5_repeteditremove](assets/5_repeateditremove.png)
 
-1. Visualize a carta relevante e observe que o texto é renderizado de acordo com a repetição. Você pode inserir o valor de elementos DD usando:
+1. Visualize a correspondência relevante e observe que o texto é renderizado de acordo com a repetição. Você pode inserir o valor de elementos DD usando:
 
-   * Um arquivo de dados XML de amostra criado com base no dicionário de dados relevante ao visualizar a carta com dados de amostra.
+   * Um arquivo de dados XML de amostra criado com base no dicionário de dados relevante ao visualizar a correspondência com dados de amostra.
    * Um arquivo de dados XML anexado ao dicionário de dados relevante.
 
    Para obter mais informações, consulte [Dicionário de dados](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
 
-   ![6_repetioutputpreview](assets/6_repeatoutputpreview.png)
+   ![6_repetoutputpreview](assets/6_repeatoutputpreview.png)
 
-   O texto estático se repete com os detalhes da transação. O texto estático repetido é facilitado pela repetição aplicada ao texto no presente procedimento. A condição, ${DD_creditcard_TransactionAmount > 0.5}, garante que as transações abaixo de USD.5 não sejam renderizadas na carta.
+   O texto estático se repete com os detalhes da transação. A repetição de texto estático é facilitada pela repetição aplicada ao texto neste procedimento. A condição ${DD_creditcard_TransactionAmount > 0.5} garante que as transações abaixo de USD .5 não sejam renderizadas na carta.
 
    >[!NOTE]
    >
-   >Você pode inserir uma condição e repetir somente ao criar ou editar o módulo de texto relevante. Ao visualizar a carta, embora seja possível fazer edições no módulo de texto, não é possível inserir uma condição ou repetir.
+   >Você pode inserir uma condição e repetir apenas ao criar ou editar o módulo de texto relevante. Ao visualizar a correspondência, embora você possa fazer edições no módulo de texto, não é possível inserir uma condição ou repetir.
 
-## Uso de condição em linha e repetição - alguns casos de uso  {#using-inline-condition-and-repeat-some-use-cases}
+## Uso da condição em linha e repetição - alguns casos de uso  {#using-inline-condition-and-repeat-some-use-cases}
 
-### Repetir dentro da condição {#repeat-within-condition}
+### Repetir na condição {#repeat-within-condition}
 
-Pode ser necessário usar a repetição em uma condição. O Gerenciamento de correspondência permite usar repetições em uma construção de condição em linha.
+Talvez seja necessário usar a repetição em uma condição. O Gerenciamento de correspondência permite usar a repetição em uma construção de condição em linha.
 
-Por exemplo, a seguir é repetida (formatada em vermelho) em uma condição (formatada em verde).
+Por exemplo, o seguinte é repetido (formatado em vermelho) em uma condição (formatado em verde).
 
-Enquanto a repetição renderiza as transações do cartão de crédito, a condição ${DD_creditcard_nooftransactions > 0} garante que a construção repetida seja renderizada somente se houver pelo menos uma transação.
+Enquanto a repetição renderiza as transações de cartão de crédito, a condição ${DD_creditcard_nooftransactions > 0} garante que a construção de repetição seja renderizada somente se houver pelo menos uma transação.
 
-![repetiwitincondition](assets/repeatwitincondition.png)
+![repetindocondição](assets/repeatwitincondition.png)
 
-Da mesma forma, de acordo com seu requisito, é possível criar:
+Da mesma forma, de acordo com sua necessidade, você pode criar:
 
 * Uma ou mais condições em uma condição
 * Uma ou mais condições em uma repetição
-* Uma combinação de condições e repetição de uma situação ou repetição
+* Uma combinação de condições e repetir dentro de uma condição ou repetição
 
-### Condição em linha vazia {#empty-inline-condition}
+### Condição embutida vazia {#empty-inline-condition}
 
-Talvez seja necessário inserir condições em linha vazias e incorporar texto e elementos DD posteriormente. O Gerenciamento de correspondência permite fazer isso.
+Talvez seja necessário inserir condições em linha vazias e incorporar texto e elementos de DD posteriormente. O Gerenciamento de correspondência permite fazer isso.
 
 ![emptycondition](assets/emptycondition.png)
 
-No entanto, é recomendável que, se possível, você insira os elementos text e DD primeiro no módulo de texto com a formatação pretendida, como marcadores, e aplique uma condição em linha depois.
+No entanto, é recomendável que, se possível, você insira o texto e os elementos de DD primeiro no módulo de texto com a formatação desejada, como marcadores, e aplique uma condição em linha posteriormente.

@@ -1,7 +1,7 @@
 ---
-title: Princípios básicos do painel de líderes
+title: Fundamentos do Placar de líderes
 seo-title: Leaderboard Essentials
-description: Visão geral de recursos do Painel de líderes
+description: Visão geral do recurso de quadro de classificação
 seo-description: Leaderboard feature overview
 uuid: 815a6928-b147-496d-9751-13159ad1304d
 contentOwner: msm-service
@@ -13,28 +13,28 @@ exl-id: fd1b1749-13f9-4079-ae39-348676105852
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
-# Princípios básicos do painel de líderes {#leaderboard-essentials}
+# Fundamentos do Placar de líderes {#leaderboard-essentials}
 
-Esta página fornece as informações essenciais para trabalhar com o recurso de quadro de líderes.
+Esta página fornece as informações essenciais para trabalhar com o recurso de quadro de classificação.
 
-Antes de incluir o componente de quadro de liderança em uma página, é necessário configurar [Pontuação e emblemas de comunidades](implementing-scoring.md).
+Antes de incluir o componente de quadro de classificação em uma página, é necessário configurar [Pontuação e medalhas das comunidades](implementing-scoring.md).
 
-Consulte [Fundamentos de pontuação e emblemas](configure-scoring.md).
+Consulte [Fundamentos de pontuação e medalhas](configure-scoring.md).
 
-## Fundamentos para o lado do cliente {#essentials-for-client-side}
+## Essentials para o lado do cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/gama/componentes/hbs/liderança</td>
+   <td>social/gamification/components/hbs/leaderboard</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incondicional</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluível</strong></a></td>
    <td>Não</td>
   </tr>
   <tr>
@@ -42,7 +42,7 @@ Consulte [Fundamentos de pontuação e emblemas](configure-scoring.md).
    <td>cq.social.gamification.hbs.leaderboard</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelos</strong></td>
    <td> /libs/social/gamification/components/hbs/leaderboard/leaderboard.hbs<br /> </td>
   </tr>
   <tr>
@@ -51,7 +51,7 @@ Consulte [Fundamentos de pontuação e emblemas](configure-scoring.md).
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>Consulte <a href="enabling-leaderboard.md">Recurso de quadro de líderes</a></td>
+   <td>Consulte <a href="enabling-leaderboard.md">Recurso de quadro de classificação</a></td>
   </tr>
  </tbody>
 </table>
@@ -60,4 +60,4 @@ Consulte [Fundamentos de pontuação e emblemas](configure-scoring.md).
 
 ### Função da biblioteca de arquivo {#file-library-function}
 
-Uma estrutura de site da comunidade que inclui a variável [Função de quadro de líderes](functions.md#leaderboard-function), inclui um `leaderboard` componente.
+Uma estrutura de site da comunidade que inclui o [Função de placar de líderes](functions.md#leaderboard-function), inclui um configurado `leaderboard` componente.

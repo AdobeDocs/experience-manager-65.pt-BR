@@ -11,7 +11,7 @@ role: User
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 87%
+ht-degree: 64%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 87%
 # Guia do usuário de criação do AEM 6.5 {#authoring}
 
 + [Visão geral do Guia do usuário de criação](home.md)
-+ Tarefas essenciais, ferramentas e conceitos para criação de AEM {#essentials}
-   + [Primeiros passos para autores](first-steps.md)
++ Tarefas, ferramentas e conceitos essenciais para a criação de AEM {#essentials}
+   + [Primeiras etapas para autores](first-steps.md)
    + [Criação de página](page-authoring.md)
    + [Guia rápido para a criação de páginas](qg-page-authoring.md)
    + [Conceito de criação](author.md)
@@ -29,7 +29,7 @@ ht-degree: 87%
    + [Configurar o ambiente da sua conta](user-properties.md)
    + [Sua caixa de entrada](inbox.md)
    + [Atalhos de teclado para Consoles](keyboard-shortcuts.md)
-   + [Selecionar sua interface do usuário](select-ui.md)
+   + [Seleção da interface](select-ui.md)
 + Criação {#authoring}
    + [Ambiente e ferramentas de criação](author-environment-tools.md)
    + [Anotações ao editar uma página](annotations.md)
@@ -44,9 +44,9 @@ ht-degree: 87%
    + [Componentes](default-components.md)
    + [Criação de uma página para dispositivos móveis  ](mobile.md)
    + [Solucionar problemas do AEM durante a criação  ](troubleshooting.md)
-   + [Atalhos de teclado ao editar as páginas](page-authoring-keyboard-shortcuts.md)
+   + [Atalhos de teclado ao editar páginas](page-authoring-keyboard-shortcuts.md)
    + [Práticas recomendadas    ](best-practices.md)
-+ Recursos de site e página {#siteandpage}
++ Recursos do site e da página {#siteandpage}
    + [Uso de tags](tags.md)
    + [Criação de modelos de páginas  ](templates.md)
    + [Sistema de estilos](style-system.md)
@@ -56,15 +56,15 @@ ht-degree: 87%
    + [Layout responsivo](responsive-layout.md)
    + [Content Insight](content-insights.md)
    + [Criação de conteúdo acessível (Conformidade com o WCAG 2.1)](creating-accessible-content.md)
-   + [Configuração dos componentes no Modo de design](default-components-designmode.md)
-   + [Componentes fundamentais](default-components-foundation.md)
+   + [Configuração de componentes no modo de design](default-components-designmode.md)
+   + [Componentes de base](default-components-foundation.md)
    + [Andaime](scaffolding.md)
-   + [Visualizar dados de análise de página](page-analytics-using.md)
+   + [Visualização de dados de análise de página](page-analytics-using.md)
 + Projetos {#projects}
    + [Projetos](projects.md)
    + [Gerenciamento de projetos](touch-ui-managing-projects.md)
    + [Trabalhar com tarefas](task-content.md)
-   + [Integração com o Creative Project e o PIM](managing-product-information.md)
+   + [Integração do Creative Project e do PIM](managing-product-information.md)
    + [Trabalhar com fluxos de trabalho de projeto](projects-with-workflows.md)
 + Inicializações {#launches}
    + [Lançamentos](launches.md)
@@ -78,8 +78,8 @@ ht-degree: 87%
    + [Trabalhar com fluxos de trabalho de projeto](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
 + Desempenho da página {#page-performance}
    + [Content Insight](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html)
-   + [Análise do desempenho das páginas](ci-analyze.md)
-   + [Visualizar dados de análise de página](pa-using.md)
+   + [Análise do desempenho da página](ci-analyze.md)
+   + [Visualização de dados de análise de página](pa-using.md)
 + Personalização {#personalization}
    + [Personalização](personalization.md)
    + [Visualização de páginas usando dados do ContextHub](ch-previewing.md)
@@ -90,9 +90,9 @@ ht-degree: 87%
    + [Gerenciamento de públicos](managing-audiences.md)
    + [Criação e gerenciamento de ofertas](offerlib.md)
    + [Noções sobre segmentação](segmentation-overview.md)
-+ AEM e Adobe Campaign {#aem-adobe-campaign}
++ AEM e ADOBE CAMPAIGN {#aem-adobe-campaign}
    + [Trabalhar com o Adobe Campaign](adobe-campaign.md)
    + [Trabalho com o Adobe Campaign Classic e Adobe Campaign Standard](campaign.md)
-   + [Direcionamento sua campanha do Adobe Campaign](target-adobe-campaign.md)
-   + [Criação de formulários do Adobe Campaign no AEM](adobe-campaign-forms.md)
+   + [Direcionamento do seu Adobe Campaign](target-adobe-campaign.md)
+   + [Criação do Adobe Campaign Forms no AEM](adobe-campaign-forms.md)
    + [Componentes do Adobe Campaign](adobe-campaign-components.md)

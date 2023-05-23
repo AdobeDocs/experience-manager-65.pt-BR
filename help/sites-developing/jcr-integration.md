@@ -19,18 +19,18 @@ ht-degree: 0%
 
 # Integração JCR{#jcr-integration}
 
-## Preferir a API do recurso Sling para a API JCR {#prefer-the-sling-resource-api-to-jcr-api}
+## Prefira a API de recursos do Sling à API JCR {#prefer-the-sling-resource-api-to-jcr-api}
 
-A API do Sling funciona em um nível mais alto e mais abstrato que a API do JCR. Isso permite que seu código seja mais reutilizável e independente do armazenamento subjacente. Isso facilita a inclusão de dados virtuais externos por meio do mecanismo ResourceProvider, se necessário.
+A API do Sling funciona em um nível mais alto e mais abstrato do que a API JCR. Isso permite que o código seja mais reutilizável e independente do armazenamento subjacente. Isso facilita a inclusão de dados virtuais externos por meio do mecanismo ResourceProvider, se necessário.
 
-## Evite consultas sempre que possível {#avoid-queries-wherever-possible}
+## Evitar consultas sempre que possível {#avoid-queries-wherever-possible}
 
-É sempre mais rápido navegar no repositório para recuperar dados do que executar um query. Há casos em que as consultas serão necessárias, como uma consulta de usuário final ou a necessidade de localizar conteúdo estruturado em todo o repositório, mas para todos os outros casos, é preferível navegar até os nós necessários. As consultas devem ser sempre evitadas na lógica de renderização, como componentes de navegação, uma &quot;lista de itens recentes&quot;, contagens de itens e assim por diante. Nesses casos, é melhor percorrer a hierarquia ou pré-armazenar o resultado em cache para que ele possa ser usado diretamente quando renderizado.
+É sempre mais rápido navegar pelo repositório para recuperar dados do que executar uma consulta. Há casos em que as consultas serão necessárias, como uma consulta de usuário final ou a necessidade de encontrar conteúdo estruturado em todo o repositório, mas, para todos os outros casos, é preferível navegar até os nós necessários. As consultas sempre devem ser evitadas na lógica de renderização, como componentes de navegação, uma &quot;lista de itens recentes&quot;, contagens de itens e assim por diante. Nesses casos, é melhor percorrer a hierarquia ou pré-armazenar o resultado em cache para que ele possa ser usado diretamente quando renderizado.
 
-## Restringir o escopo da observação do JCR {#restrict-the-scope-of-jcr-observation}
+## Restringir o escopo de observação do JCR {#restrict-the-scope-of-jcr-observation}
 
-Ao acompanhar eventos no repositório, é importante restringir o escopo o máximo possível. Por exemplo, é muito melhor ouvir um evento em `/etc/mycompany` do que ouvir `/etc`. Nunca acompanhe eventos na raiz do repositório. Além disso, certifique-se de que os métodos de retorno de chamada sejam executados o mais rápido possível quando não houver nada para eles fazerem.
+Ao acompanhar eventos no repositório, é importante restringir o escopo o máximo possível. Por exemplo, é muito melhor ouvir um evento em `/etc/mycompany` do que escutar em `/etc`. Nunca escute eventos na raiz do repositório. Além disso, certifique-se de que os métodos de retorno de chamada sejam executados o mais rápido possível quando não houver nada para eles fazerem.
 
-## Eliminar o uso do acesso do administrador do JCR {#eliminate-use-of-jcr-admin-access}
+## Eliminar o uso do acesso do administrador de JCR {#eliminate-use-of-jcr-admin-access}
 
-A partir do AEM 6, o login administrativo foi descontinuado, pois recebeu uma sessão administrativa do ResourceResolverFactory. Em vez disso, devem ser criadas contas de serviço para as operações de back office que exigiriam esse tipo de acesso e o ResourceResolverFactory pode ser usado para obter um ResourceResolver para esta conta.
+A partir do AEM 6, o logon Administrativo foi descontinuado, pois o obteve uma sessão administrativa do ResourceResolverFactory. Em vez disso, contas de serviço devem ser criadas para as operações de back-office que exigiriam esse tipo de acesso, e o ResourceResolverFactory pode ser usado para obter um ResourceResolver para essa conta.

@@ -29,30 +29,30 @@ Ao aplicar o fluxo de trabalho, especifique as seguintes informações:
 
 >[!NOTE]
 >
->Os administradores de AEM podem iniciar fluxos de trabalho usando [vários outros métodos](/help/sites-administering/workflows-starting.md).
+>Os administradores do AEM podem iniciar fluxos de trabalho usando [vários outros métodos](/help/sites-administering/workflows-starting.md).
 
 ## Aplicação de fluxos de trabalho {#applying-workflows}
 
 Os fluxos de trabalho podem ser iniciados no console Sites ou, ao editar uma página, no Sidekick.
 
-O **Status** na coluna **Sites** O console indica se um fluxo de trabalho foi aplicado a uma página:
+A variável **Status** na **Sites** console indica se um fluxo de trabalho foi aplicado a uma página:
 
-![workflowstatus](assets/workflowstatus.png)
+![status do fluxo de trabalho](assets/workflowstatus.png)
 
-### Iniciar um fluxo de trabalho pelo console Sites {#starting-a-workflow-from-the-websites-console}
+### Iniciar um fluxo de trabalho a partir do console Sites {#starting-a-workflow-from-the-websites-console}
 
-1. Abra o console Sites . ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin))
-1. Na árvore Sites, selecione o pai da página à qual deseja aplicar o fluxo de trabalho.
-1. Na lista de páginas, selecione a página e clique em Fluxo de trabalho.
+1. Abra o console Sites. ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin))
+1. Na árvore Sites, selecione a página principal à qual deseja aplicar o fluxo de trabalho.
+1. Na lista da página, selecione a página e clique em Fluxo de trabalho.
 1. Na caixa de diálogo Iniciar fluxo de trabalho, selecione o fluxo de trabalho a ser aplicado. Opcionalmente, insira um comentário e um título. Em seguida, clique em Start.
 
 ### Iniciar um fluxo de trabalho usando o Sidekick {#starting-a-workflow-using-sidekick}
 
-1. Abra o console Sites .
+1. Abra o console Sites.
 1. Abra a página desejada.
 1. Selecione a guia Fluxo de trabalho no Sidekick.
-1. Expanda o **Fluxo de trabalho** , permitindo que você selecione o **Fluxo de trabalho** e, opcionalmente, insira **Título do fluxo de trabalho** e **Comentário**.
+1. Expanda a **Fluxo de trabalho** , permitindo que você selecione a **Fluxo de trabalho** e, opcionalmente, informar **Título do fluxo de trabalho** e **Comentário**.
 
    ![workflowstartsidekick](assets/workflowstartsidekick.png)
 
-1. Clique em **Iniciar fluxo de trabalho** para iniciar uma nova instância de workflow com as propriedades configuradas e a página atual como carga útil. Agora, o workflow está em execução.
+1. Clique em **Iniciar fluxo de trabalho** para iniciar uma nova instância de fluxo de trabalho com as propriedades configuradas e a página atual como a carga. Agora, o workflow está em execução.

@@ -1,5 +1,5 @@
 ---
-title: Exteriorização de URLs
+title: Externalizar URLs
 seo-title: Externalizing URLs
 description: O Externalizador é um serviço OSGI que permite transformar programaticamente um caminho de recurso em um URL externo e absoluto
 seo-description: The Externalizer is an OSGI service that allows you to programmatically transform a resource path into an external and absolute URL
@@ -18,25 +18,25 @@ ht-degree: 0%
 
 ---
 
-# Exteriorização de URLs{#externalizing-urls}
+# Externalizar URLs{#externalizing-urls}
 
-Em AEM, a variável **Externalizador** é um serviço OSGI que permite transformar programaticamente um caminho de recurso (por exemplo, `/path/to/my/page`) em um URL externo e absoluto (por exemplo, `https://www.mycompany.com/path/to/my/page`) ao prefixar o caminho com um DNS pré-configurado.
+No caso do AEM, a **Externalizador** é um serviço OSGI que permite transformar programaticamente um caminho de recurso (por exemplo, `/path/to/my/page`) em um URL externo e absoluto (por exemplo, `https://www.mycompany.com/path/to/my/page`) ao prefixar o caminho com um DNS pré-configurado.
 
-Como uma instância não pode saber seu URL externamente visível se estiver em execução atrás de uma camada da Web e porque, às vezes, um link precisa ser criado fora do escopo da solicitação, esse serviço fornece um local central para configurar esses URLs externos e criá-los.
+Como uma instância não pode saber seu URL visível externamente se estiver sendo executada por trás de uma camada da Web e porque, às vezes, um link precisa ser criado fora do escopo de solicitação, esse serviço fornece um local central para configurar esses URLs externos e criá-los.
 
-Esta página explica como configurar a variável **Externalizador** e como usá-lo. Para obter mais detalhes, consulte o [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+Esta página explica como configurar o **Externalizador** e como usá-lo. Para obter mais detalhes, consulte [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configurar o serviço Externalizador {#configuring-the-externalizer-service}
 
-O **Externalizador** permite definir centralmente vários domínios que podem ser usados para prefixar programaticamente caminhos de recursos. Cada domínio é identificado por um nome exclusivo usado para fazer referência programaticamente ao domínio.
+A variável **Externalizador** O serviço de permite definir centralmente vários domínios que podem ser usados para prefixar programaticamente caminhos de recursos. Cada domínio é identificado por um nome exclusivo usado para fazer referência programaticamente ao domínio.
 
-Para definir um mapeamento de domínio para a variável **Externalizador** serviço:
+Para definir um mapeamento de domínio para o **Externalizador** serviço:
 
-1. Navegue até o gerenciador de configuração por meio de **Ferramentas**, em seguida **Console da Web** ou digite:
+1. Navegue até o gerenciador de configurações via **Ferramentas**, depois **Console da Web** ou insira:
 
    `https://<host>:<port>/system/console/configMgr`
 
-1. Clique em **Externalizador de links CQ do dia** para abrir a caixa de diálogo de configuração.
+1. Clique em **Day CQ Link Externalizer** para abrir a caixa de diálogo de configuração.
 
    >[!NOTE]
    >
@@ -44,31 +44,31 @@ Para definir um mapeamento de domínio para a variável **Externalizador** servi
 
    ![aem-externalizer-01](assets/aem-externalizer-01.png)
 
-1. Defina um **Domínios** mapeamento: um mapeamento consiste em um nome exclusivo que pode ser usado no código para fazer referência ao domínio, a um espaço e ao domínio:
+1. Definir um **Domínios** mapping: um mapeamento consiste em um nome exclusivo que pode ser usado no código para fazer referência ao domínio, a um espaço e ao domínio:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
-   Em que:
+   Onde:
 
-   * **esquema** geralmente é http ou https, mas também pode ser ftp, etc.
+   * **esquema** geralmente é http ou https, mas também pode ser ftp etc.
 
-      * usar https para aplicar links https, se desejado
+      * use https para aplicar links https, se desejado
       * ele será usado se o código do cliente não substituir o esquema ao solicitar a externalização de um URL.
    * **server** é o nome do host (pode ser um nome de domínio ou endereço ip).
    * **porta** (opcional) é o número da porta.
-   * **contextpath** (opcional) só será definido se AEM for instalado como um aplicativo web em um caminho de contexto diferente.
+   * **contextpath** (opcional) só é definido se o AEM estiver instalado como um aplicativo web em um caminho de contexto diferente.
 
    Por exemplo: `production https://my.production.instance`
 
-   Os seguintes nomes de mapeamento são predefinidos e devem sempre ser definidos conforme AEM dependem deles:
+   Os seguintes nomes de mapeamento são predefinidos e sempre devem ser definidos, pois o AEM depende deles:
 
    * `local` - a instância local
-   * `author` - DNS do sistema de criação
-   * `publish` - DNS, o sítio web público
+   * `author` - o DNS do sistema de criação
+   * `publish` - o DNS do site voltado para o público
 
    >[!NOTE]
    >
-   >Uma configuração personalizada permite adicionar uma nova categoria, como `production`, `staging` ou mesmo sistemas externos não AEM como `my-internal-webservice`. É útil evitar a codificação rígida desses URLs em diferentes locais na base de código de um projeto.
+   >Uma configuração personalizada permite adicionar uma nova categoria, como `production`, `staging` ou mesmo sistemas externos não-AEM, como `my-internal-webservice`. É útil evitar a codificação rígida desses URLs em diferentes locais na base de código de um projeto.
 
 1. Clique em **Salvar** para salvar as alterações.
 
@@ -76,9 +76,9 @@ Para definir um mapeamento de domínio para a variável **Externalizador** servi
 >
 >O Adobe recomenda que você [adicionar a configuração ao repositório](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository).
 
-### Uso do serviço Externalizador {#using-the-externalizer-service}
+### Usar o serviço Externalizador {#using-the-externalizer-service}
 
-Esta seção mostra alguns exemplos de como a variável **Externalizador** pode ser usado:
+Esta seção mostra alguns exemplos de como a **Externalizador** serviço pode ser usado:
 
 1. **Para obter o serviço Externalizador em um JSP:**
 
@@ -86,7 +86,7 @@ Esta seção mostra alguns exemplos de como a variável **Externalizador** pode 
    Externalizer externalizer = resourceResolver.adaptTo(Externalizer.class);
    ```
 
-1. **Para exteriorizar um caminho com o domínio &quot;publicar&quot;:**
+1. **Para externalizar um caminho com o domínio &quot;publicar&quot;:**
 
    ```java
    String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
@@ -96,12 +96,12 @@ Esta seção mostra alguns exemplos de como a variável **Externalizador** pode 
 
    * `publish https://www.website.com`
 
-   `myExternalizedUrl` termina com o valor :
+   `myExternalizedUrl` termina com o valor:
 
    * `https://www.website.com/contextpath/my/page.html`
 
 
-1. **Para exteriorizar um caminho com o domínio &quot;autor&quot;:**
+1. **Para externalizar um caminho com o domínio &quot;author&quot;:**
 
    ```java
    String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
@@ -111,12 +111,12 @@ Esta seção mostra alguns exemplos de como a variável **Externalizador** pode 
 
    * `author https://author.website.com`
 
-   `myExternalizedUrl` termina com o valor :
+   `myExternalizedUrl` termina com o valor:
 
    * `https://author.website.com/contextpath/my/page.html`
 
 
-1. **Para exteriorizar um caminho com o domínio &quot;local&quot;:**
+1. **Para externalizar um caminho com o domínio &quot;local&quot;:**
 
    ```java
    String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
@@ -126,7 +126,7 @@ Esta seção mostra alguns exemplos de como a variável **Externalizador** pode 
 
    * `local https://publish-3.internal`
 
-   `myExternalizedUrl` termina com o valor :
+   `myExternalizedUrl` termina com o valor:
 
    * `https://publish-3.internal/contextpath/my/page.html`
 

@@ -1,7 +1,7 @@
 ---
-title: Componentes, funções e recursos essenciais
+title: Fundamentos de componentes, funções e recursos
 seo-title: Component, Function and Feature Essentials
-description: Como funcionam os sites, modelos e grupos da comunidade
+description: Como os sites, modelos e grupos da comunidade funcionam
 seo-description: How community sites, templates, and groups function
 uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
@@ -17,15 +17,15 @@ ht-degree: 17%
 
 ---
 
-# Componentes, funções e recursos essenciais  {#component-function-and-feature-essentials}
+# Fundamentos de componentes, funções e recursos  {#component-function-and-feature-essentials}
 
-Os recursos do AEM Communities exigem que os visitantes do site se tornem membros e faça logon no [site da comunidade](overview.md#communitiessites) antes de poder postar conteúdo. Assim, [modelos de site da comunidade](sites.md), do qual um site de comunidade é [criado](sites-console.md), foram projetadas para incluir um recurso de logon, bem como perfis de usuário, mensagens, pesquisa, moderação e tradução.
+Os recursos do AEM Communities exigem que os visitantes do site se tornem membros e façam logon na [site da comunidade](overview.md#communitiessites) antes de poder publicar conteúdo. Assim, [modelos de site da comunidade](sites.md), a partir do qual um site da comunidade é [criado](sites-console.md), foram projetados para incluir um recurso de logon, bem como perfis de usuário, mensagens, pesquisa, moderação e tradução.
 
-Um site da comunidade dará suporte a membros criando grupos da comunidade quando a variável [função de grupos da comunidade](functions.md#groups-function) está incluído no modelo de site da comunidade selecionado.
+Um site da comunidade apoiará os membros que criam grupos da comunidade quando o [função de grupos da comunidade](functions.md#groups-function) está incluído no modelo de site de comunidade selecionado.
 
-A seguir estão links para informações essenciais de componentes, funções e recursos do Communities.
+A seguir estão links para informações essenciais para componentes, funções e recursos das Comunidades.
 
-## Componentes básicos {#base-components}
+## Componentes de base {#base-components}
 
 * [Comentários](essentials-comments.md)
 * [Revisões](reviews-basics.md)
@@ -34,7 +34,7 @@ A seguir estão links para informações essenciais de componentes, funções e 
    * [Curtir](essentials-liking.md)
    * [Avaliação](rating-basics.md)
    * [Votação](essentials-voting.md)
-   * *Pesquisa (não está mais disponível)*
+   * *Enquete (não está mais disponível)*
 
 ## Componentes com funções {#components-with-functions}
 
@@ -54,27 +54,27 @@ A seguir estão links para informações essenciais de componentes, funções e 
 
 * [Bibliotecas do cliente](clientlibs.md)
 * [Sites da comunidade](sites-for-developers.md)
-* [Eventos OSGi do componente](events.md)
-* [Sideload de Componente](sideloading.md)
+* [Eventos OSGi de componente](events.md)
+* [Sideload do componente](sideloading.md)
 * [Mensagens](essentials-messaging.md)
 * [Editor de rich text](rte.md)
-* [Pontuação e emblemas](configure-scoring.md)
+* [Pontuação e medalhas](configure-scoring.md)
 * [Pesquisar](search-implementation.md)
 * [Gráfico social](essentials-socialgraph.md)
-* [Provedor de recursos de armazenamento](srp-and-ugc.md) `(SRP)`
+* [Provedor de recurso de armazenamento](srp-and-ugc.md) `(SRP)`
 
 * [Marcação com tags](tag.md)
 
 ## Javadocs {#javadocs}
 
-O [javadocs online](../../help/sites-developing/reference-materials.md) reflete as APIs disponíveis na versão AEM 6.3.
-As APIs do Communities estão em `com.adobe.cq.social.*` pacotes.
+A variável [javadocs online](../../help/sites-developing/reference-materials.md) reflete as APIs disponíveis na versão AEM 6.3.
+As APIs das comunidades estão em `com.adobe.cq.social.*` pacotes.
 
 Para cada [pacote de recursos](deploy-communities.md#latestfeaturepack), um jar javadoc é disponibilizado. Para obter mais informações, visite [Uso do Maven para comunidades](maven.md#javadocs).
 
 ## Informações adicionais {#additional-information}
 
-* [Estrutura de componentes sociais (SCF)](scf.md)
+* [Estrutura de componente social (SCF)](scf.md)
 
    * [Personalizações do lado do cliente](client-customize.md)
    * [Personalizações do lado do servidor](server-customize.md)

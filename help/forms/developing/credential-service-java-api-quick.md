@@ -1,7 +1,7 @@
 ---
-title: Início rápido da API Java do Serviço de Credenciais (SOAP)
+title: QuickStart(SOAP) da API Java do Serviço de Credenciais
 seo-title: Credential Service Java API QuickStart(SOAP)
-description: Início rápido da API Java do Serviço de Credenciais (SOAP)
+description: QuickStart(SOAP) da API Java do Serviço de Credenciais
 uuid: a00eabfa-3a52-41dd-bcba-c60d00394384
 contentOwner: admin
 content-type: reference
@@ -17,27 +17,27 @@ ht-degree: 0%
 
 ---
 
-# Início rápido da API Java (SOAP) do Serviço de Credenciais {#credential-service-java-api-quickstart-soap}
+# Início Rápido da API Java (SOAP) do Serviço de Credenciais {#credential-service-java-api-quickstart-soap}
 
-O Java API Quick Start (SOAP) está disponível para o serviço de Credencial.
+O Java API Quick Start (SOAP) está disponível para o serviço de credencial.
 
-[Início rápido (modo SOAP): Como importar credenciais usando a API do Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Início rápido (modo SOAP): importação de credenciais usando a API Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[Início rápido (modo SOAP): Exclusão de credenciais usando a API do Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Início rápido (modo SOAP): exclusão de credenciais usando a API Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
-As operações do AEM Forms podem ser executadas usando a API altamente digitada do AEM Forms e o modo de conexão deve ser definido como SOAP.
-
->[!NOTE]
->
->As inicializações rápidas localizadas em Programação com formulários de AEM são baseadas no FormsServer que está sendo implantado no JBoss e no sistema operacional Windows. No entanto, se estiver usando outro sistema operacional, como o Unix, substitua caminhos específicos do Windows por caminhos suportados pelo sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicativos J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->Não é possível executar operações do Serviço de Credenciais usando serviços da Web.
+>As inicializações rápidas localizadas em Programação com formulários AEM são baseadas no FormsServer que está sendo implantado no JBoss e no sistema operacional Windows. No entanto, se você estiver usando outro sistema operacional, como Unix, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Início rápido (modo SOAP): Como importar credenciais usando a API do Java {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+>[!NOTE]
+>
+>Não é possível executar operações do Serviço de credencial usando serviços Web.
 
-O exemplo de código a seguir importa uma credencial com base em um arquivo chamado *cred.p12*. O valor do alias usado para importar a credencial é `Secure`. (Consulte [Importando credenciais usando a API do Gerenciador de Confiança](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+## Início rápido (modo SOAP): importação de credenciais usando a API Java {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+
+O exemplo de código a seguir importa uma credencial com base em um arquivo chamado *cred.p12*. O valor de alias usado para importar a credencial é `Secure`. (Consulte [Importando Credenciais usando a API do Gerenciador de Confiança](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
@@ -136,9 +136,9 @@ O exemplo de código a seguir importa uma credencial com base em um arquivo cham
  
 ```
 
-## Início rápido (modo SOAP): Exclusão de credenciais usando a API do Java {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## Início rápido (modo SOAP): exclusão de credenciais usando a API Java {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-O exemplo de código a seguir exclui uma credencial com base em um valor de alias *seguro*. (Consulte [Excluindo Credenciais usando a API do Gerenciador de Confiança](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
+O código de exemplo a seguir exclui uma credencial baseada em um valor de alias *seguro*. (Consulte [Excluindo Credenciais usando a API do Gerenciador de Confiança](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*

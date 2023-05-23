@@ -19,14 +19,14 @@ ht-degree: 15%
 
 # Aplicar predefinições do visualizador do Dynamic Media {#applying-viewer-presets}
 
-Uma predefinição do visualizador é uma coleção de configurações que determinam como os usuários visualizam ativos de mídia avançada em suas telas de computadores e dispositivos móveis. Você pode aplicar predefinições do visualizador criadas pelo administrador a um ativo.
+Uma predefinição do visualizador é uma coleção de configurações que determinam como os usuários visualizam ativos de mídia avançada nas telas dos computadores e nos dispositivos móveis. É possível aplicar qualquer predefinição do visualizador criada pelo administrador a um ativo.
 
 Se você for um administrador e precisar gerenciar, criar, classificar e excluir predefinições do visualizador, consulte [Gerenciar predefinições do visualizador](managing-viewer-presets.md).
 
 Consulte também [Publicar predefinições do visualizador](managing-viewer-presets.md#publishing-viewer-presets).
 
-Não é necessário publicar predefinições do visualizador, dependendo do modo de publicação usado.
-Qualquer problema com as predefinições do visualizador, consulte [Solução de problemas do Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
+Não é necessário publicar predefinições do visualizador, dependendo do modo de publicação em uso.
+Quaisquer problemas com as predefinições do visualizador, consulte [Solução de problemas do Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
 
 ## Aplicar uma predefinição do visualizador do Dynamic Media a um ativo {#applying-a-viewer-preset-to-an-asset}
 
@@ -37,7 +37,7 @@ Qualquer problema com as predefinições do visualizador, consulte [Solução de
    * Os botões **[!UICONTROL URL]** e **[!UICONTROL Incorporar]** são exibidos ao selecionar uma predefinição do visualizador.
    * O sistema mostra várias predefinições do visualizador ao selecionar Visualizadores na **[!UICONTROL Exibição de detalhes]** de um ativo. Você pode aumentar o número de predefinições vistas. Consulte [Aumentar o número de predefinições do visualizador exibidas](managing-viewer-presets.md).
 
-1. Selecione um visualizador no painel esquerdo para aplicá-lo ao ativo, como visto no painel direito. Você também pode [copie o URL para compartilhar](linking-urls-to-yourwebapplication.md) com outros usuários.
+1. Selecione um visualizador no painel esquerdo para que você possa aplicá-lo ao ativo como visto no painel direito. Também é possível [copiar o URL para compartilhar](linking-urls-to-yourwebapplication.md) com outros usuários.
 
 ## Obter URLs predefinidos do visualizador {#obtaining-viewer-preset-urls}
 

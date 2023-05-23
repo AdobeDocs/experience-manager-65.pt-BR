@@ -130,7 +130,7 @@ Agora que você concluiu esta parte da jornada de tradução headless, você dev
 * Compreender os parâmetros fundamentais da estrutura de integração de tradução no AEM.
 * Ser capaz de configurar sua própria conexão com o serviço de tradução.
 
-Aproveite esse conhecimento e prossiga com sua jornada de tradução sem periféricos de AEM ao próximo revisar o documento [Configurar regras de tradução,](translation-rules.md) onde você aprenderá a definir qual conteúdo traduzir.
+Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando o documento a seguir [Configurar regras de tradução,](translation-rules.md) onde você aprenderá a definir qual conteúdo traduzir.
 
 ## Recursos adicionais {#additional-resources}
 

@@ -1,6 +1,6 @@
 ---
 title: Headful e Headless no AEM
-description: AEM projetos podem ser implementados em um modelo headful e sem interface, mas a escolha não é binária. O AEM oferece a flexibilidade para explorar as vantagens de ambos os modelos em um projeto.
+description: Projetos AEM podem ser implementados em um modelo headful e headless, mas a escolha não é binária. O AEM oferece a flexibilidade para explorar as vantagens de ambos os modelos em um projeto.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
 source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 94%
 
 # Headful e Headless no AEM {#headful-headless}
 
-Os projetos do Adobe Experience Manager podem ser implementados em modelos headful e sem periféricos, mas a escolha não é binária. O AEM oferece a flexibilidade para explorar as vantagens de ambos os modelos em um projeto. Este documento fornece uma visão geral dos diferentes modelos e descreve os níveis de integração SPA.
+Os projetos do Adobe Experience Manager podem ser implementados em modelos headful e headless, mas a escolha não é binária. O AEM oferece a flexibilidade para explorar as vantagens de ambos os modelos em um projeto. Este documento fornece uma visão geral dos diferentes modelos e descreve os níveis de integração do SPA.
 
 ## Visão geral {#overview}
 

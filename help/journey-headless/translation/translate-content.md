@@ -15,12 +15,12 @@ Use o conector e as regras de tradução para traduzir o seu conteúdo headless.
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de tradução AEM sem cabeçalho, [Configurar regras de tradução](translation-rules.md) você aprendeu a usar AEM regras de tradução para identificar seu conteúdo de tradução. Agora você deve:
+No documento anterior da jornada de tradução AEM headless, [Configurar regras de tradução](translation-rules.md) você aprendeu a usar as regras de tradução do AEM para identificar seu conteúdo de tradução. Agora você deve:
 
 * Entenda o que as regras de tradução fazem.
 * Ser capaz de definir suas próprias regras de tradução.
 
-Agora que seu conector e as regras de tradução estão configurados, este artigo o orienta pela próxima etapa da tradução do conteúdo sem periféricos.
+Agora que seu conector e regras de tradução estão configurados, este artigo o orienta pela próxima etapa da tradução de conteúdo headless.
 
 ## Objetivo {#objective}
 
@@ -79,7 +79,7 @@ Para gerentes de projeto de tradução, geralmente é necessário selecionar man
 1. Navegaue até **Navegação** -> **Projetos**.
 1. Toque ou clique em **Criar** -> **Pasta** para criar uma pasta de projetos.
    * Isso é opcional, mas útil para organizar seus esforços de tradução.
-1. No **Criar pasta** , adicione uma **Título** para a pasta e toque ou clique em **Criar**.
+1. No **Criar pasta** adicionar uma **Título** para a pasta e toque ou clique **Criar**.
 
    ![Criar pasta de projeto](assets/create-project-folder.png)
 
@@ -125,7 +125,7 @@ A forma como você usa um projeto de tradução depende de como ele foi criado: 
 
 ### Usar um projeto de tradução criado automaticamente {#using-automatic-project}
 
-Ao criar automaticamente o projeto de tradução, o AEM avalia o conteúdo sem cabeçalho no caminho selecionado com base nas regras de tradução definidas anteriormente. Com base nessa avaliação, ele extrai o conteúdo que requer tradução para um novo projeto de tradução.
+Ao criar automaticamente o projeto de tradução, o AEM avalia o conteúdo headless no caminho selecionado com base nas regras de tradução definidas anteriormente. Com base nessa avaliação, ele extrai o conteúdo que requer tradução para um novo projeto de tradução.
 
 Para ver os detalhes do conteúdo headless incluído neste projeto:
 
@@ -217,7 +217,7 @@ O objetivo do projeto é coletar todos os recursos relacionados a uma tradução
 /content/dam/wknd/es
 ```
 
-Se você navegar para essa pasta por meio de **Navegação** -> **Ativos** -> **Arquivos**, você verá o conteúdo traduzido.
+Se você navegar até esta pasta por meio de **Navegação** -> **Assets** -> **Arquivos**, você verá o conteúdo traduzido.
 
 ![Estrutura da pasta de conteúdo traduzido](assets/translated-file-content.png)
 

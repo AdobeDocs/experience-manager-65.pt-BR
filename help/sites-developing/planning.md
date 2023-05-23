@@ -1,7 +1,7 @@
 ---
 title: Planejamento
 seo-title: Planning
-description: O que você precisa saber para planejar para seu teste
+description: O que você precisa saber para planejar seu teste
 seo-description: What you need to know to plan for your test
 uuid: 29b1127a-da85-46ed-98e7-1c983eb40cfe
 contentOwner: Guillaume Carlino
@@ -19,107 +19,107 @@ ht-degree: 0%
 
 # Planejamento{#planning}
 
-Este documento descreve o que você precisa saber para planejar seu teste. Além disso, você deve responder a essas perguntas antes de realizar seus testes:
+Este documento descreve o que você precisa saber para planejar o teste. Além disso, você deve responder a estas perguntas antes de realizar seus testes:
 
 * [Quais ambientes de teste serão necessários?](/help/sites-developing/test-environments.md)
 * [Definição dos casos de teste](/help/sites-developing/test-cases.md)
-* [Teste - quando e com quem?](/help/sites-developing/when-who.md)
+* [Testes - quando e com quem?](/help/sites-developing/when-who.md)
 
 ## Antes de começar {#before-you-start}
 
-Antes de começar com a análise real e a definição de testes, analise as seguintes informações:
+Antes de começar com a análise e definição reais de testes, analise as seguintes informações:
 
-**Arquitetura AEM** - Consulte Conceitos básicos para se apresentar à arquitetura e aos princípios básicos da AEM.
+**Arquitetura do AEM** - Veja Conceitos básicos para se apresentar à arquitetura e aos princípios básicos do AEM.
 
-**Documentação** - Consulte qualquer uma das seções de documentação, ou artigos de Como, para obter mais informações.
+**Documentação** - Consulte qualquer uma das seções de documentação ou os artigos de instruções para obter mais informações.
 
-**Princípios básicos dos testes** - Você deve estar ciente dos princípios básicos de teste de software e controle de qualidade. De preferência, você deve ter experiência em testar projetos.
+**Princípios básicos de teste** - Você deve estar ciente dos princípios básicos de Teste de Software e Garantia de Qualidade. De preferência, você deve ter experiência em testes de projetos.
 
-Existem muitos sítios Web, livros e cursos que tratam desses princípios, pelo que não serão tratados em pormenor neste documento.
+Há muitos sites, livros e cursos que lidam com esses princípios e, portanto, não serão tratados em detalhes neste documento.
 
-**Pressupostos para evitar** - A maior suposição (feita regularmente) é que o seu site precisará atender milhões de pedidos todos os dias. Em determinadas circunstâncias, isso pode ser verdade, mas não pode ser assumido.
+**Suposições a serem evitadas** - A maior suposição (feita regularmente) é que seu site precisará atender a milhões de solicitações todos os dias. Em certas circunstâncias, isso pode ser verdade, mas não pode ser presumido.
 
-Embora os números futuros não possam ser previstos com 100% de precisão, observar seu site existente e o tráfego experiente darão uma boa indicação. É possível tornar as estimativas dependentes do fator pelo qual você espera/espera que o tráfego aumente.
+Embora os números futuros não possam ser previstos com 100% de precisão, observar o site existente e o tráfego experimentado fornecerá uma boa indicação. É possível fazer estimativas dependentes do fator pelo qual você espera/espera que o tráfego aumente.
 
-**Compromisso para a qualidade** - É de primordial importância que qualquer pessoa que faça testes permaneça neutra e que se limite a comunicar os resultados dos testes efetuados.
+**Compromisso com a qualidade** - É extremamente importante que qualquer pessoa que realize testes permaneça neutra e que comunique simplesmente os resultados dos testes realizados.
 
-É da responsabilidade do gerente de projetos decidir e iniciar ações dependentes dos resultados.
+É responsabilidade do Gerente de projetos decidir e iniciar ações dependendo dos resultados.
 
-**Tornar-se envolvido** - Embora seja da responsabilidade do Gestor de Projetos garantir que todas as partes estejam plenamente envolvidas em quaisquer reuniões (estatuto, workshops, etc.), deverá também tentar participar o mais cedo possível no ciclo do projeto, incluindo a recolha de informações e os processos de análise de requisitos.
+**Envolva-se** - Embora seja responsabilidade do gerente de projeto garantir que todas as partes estejam totalmente envolvidas em qualquer reunião (status, workshops etc.), você também deve tentar se envolver o mais rápido possível no ciclo do projeto, incluindo os processos de coleta de informações e análise de requisitos.
 
-**Envolva o cliente** - Em um tema semelhante, tente envolver o cliente (sempre que possível) ao definir seus casos de teste e plano.
+**Envolver o cliente** - Em um tema semelhante, tente envolver o cliente (quando possível) ao definir seus casos de teste e planejar.
 
 ## Tipos de testes {#types-of-tests}
 
-Existem várias classificações-padrão de testes que são adequadas para serem usadas no teste de um projeto AEM. Familiarize-se com esses itens para decidir qual usará:
+Existem várias classificações padrão de testes que são apropriados para uso ao testar um projeto de AEM. Familiarize-se com isso para decidir qual usará:
 
 >[!NOTE]
 >
->Estes estão enumerados na ordem cronológica de aplicação.
+>Eles são listados em sua ordem cronológica de aplicação.
 
-**Testes de Unidades** - Testes (geralmente) feitos pela equipe de desenvolvimento para garantir que os elementos individuais se comportem corretamente - ainda que isoladamente.
+**Testes de unidades** - Testes (geralmente) feitos pela equipe de desenvolvimento para garantir que os elementos individuais se comportem corretamente - embora isoladamente.
 
-**Testes de integração** - Testa os módulos quando combinados. Esses testes são feitos após o teste de unidade, mas antes do teste do sistema.
+**Testes de integração** - Testa os módulos quando combinados. Esses testes são feitos após o Teste de unidade, mas antes do Teste do sistema.
 
-**Testes de fumaça** - São testes rápidos e sujos usados para provar que o software está em execução e que a funcionalidade de alto nível está disponível. Os detalhes não são testados.
+**Testes de fumaça** - São testes rápidos e sujos usados para provar que o software está em execução e que a funcionalidade de alto nível está disponível. Os detalhes não foram testados.
 
-**Testes funcionais** - Elas são usadas para testar a funcionalidade do software. Será concebida uma série de ensaios para abranger todos os detalhes funcionais, com dados esperados e inesperados e/ou errôneos.
+**Testes funcionais** - Eles são usados para testar a funcionalidade do software. Uma série de testes será projetada para abranger todos os detalhes funcionais, com entrada esperada e/ou incorreta.
 
-Os testes de caixa preta são testes funcionais de uma unidade/componente/módulo completo, realizados sem conhecimento do funcionamento interno do elemento em questão.
+Os testes de caixa preta são testes funcionais de uma unidade/componente/módulo completos, realizados sem o conhecimento do funcionamento interno do elemento em questão.
 
-**Testes do sistema** - Teste todo o sistema assim que ele tiver sido totalmente integrado e instalado em uma plataforma adequada.
+**Testes do sistema** - Eles testam o sistema inteiro depois que ele estiver totalmente integrado e instalado em uma plataforma adequada.
 
-Eles testam a funcionalidade de caixa preta.
+Eles testam a funcionalidade com base em uma caixa preta.
 
-**Testes de desempenho** - Os testes de desempenho são cruciais para os testes de AEM.
+**Testes de desempenho** - Os testes de desempenho são cruciais ao testar o AEM.
 
-Elas são usadas para ilustrar o desempenho em condições diferentes:
+Eles são usados para ilustrar o desempenho em condições diferentes:
 
 * Normal
 
-   Condições que o site experimentará por 90% das vezes. Por exemplo, quando apenas uma proporção dos autores está usando o sistema.
+   Condições que o site experimentará por, digamos, 90% do tempo. Por exemplo, quando apenas uma proporção dos autores está usando o sistema.
 
 * Pico
 
-   Condições que serão experimentadas durante um período proporcionalmente curto devido a circunstâncias especiais; por exemplo, quando todos os autores usam o sistema simultaneamente ou quando novo conteúdo é publicado e um número maior de visitantes visualizam seu site.
+   Condições que serão enfrentadas por um tempo proporcionalmente curto devido a circunstâncias especiais; por exemplo, quando todos os autores usam o sistema simultaneamente ou quando o novo conteúdo é publicado e um número maior de visitantes visualizam o site.
 
 * Extreme
 
-   Pode ser usado para emular a previsão de desempenho quando um novo conteúdo extremamente interessante é publicado em seu site. Então pode-se observar um pico extremo - embora isto nem sempre seja totalmente previsível.
+   Pode ser usado para emular a previsão de desempenho quando um novo conteúdo extremamente interessante é publicado em seu site. Então, um pico extremo pode ser visto - embora isso nem sempre seja totalmente previsível.
 
-   Essas circunstâncias são, às vezes, vistas quando ingressos para eventos específicos são disponibilizados ou um site muito aguardado é publicado pela primeira vez.
+   Essas circunstâncias são às vezes vistas quando ingressos para eventos específicos são disponibilizados ou um site muito aguardado é publicado pela primeira vez.
 
-Os resultados são então usados para ajustar o aplicativo.
+Os resultados são usados para ajustar o aplicativo.
 
-**Testes de estresse** - São efetuados testes de esforço para confirmar o comportamento de um componente ou aplicativo em condições extremas. Em particular, esses testes são usados para mostrar como o comportamento se deteriora, quando o elemento falhará - e como.
+**Testes de esforço** - São feitos testes de esforço para confirmar como um componente ou aplicativo se comporta em condições extremas. Esses testes são usados para mostrar como o comportamento se deteriora, quando o elemento falha e como.
 
 **Testes de regressão** - Os testes de regressão são são usados para confirmar que a funcionalidade já comprovada em uma versão anterior do software ainda está funcionando corretamente.
 
-Testes de regressão são são bons candidatos para automação (se possível) para garantir que possam ser repetidos de forma rápida e consistente.
+Os testes de regressão são são bons candidatos para automação (se possível) a fim de garantir que possam ser repetidos de forma rápida e consistente.
 
-**Testes de aceitação** - Os testes de aceitação são uma categoria especial, pois são usados para indicar a aceitação do projeto pelo cliente.
+**Testes de aceitação** - Os Testes de aceitação são uma categoria especial, pois são usados para indicar a aceitação do projeto pelo cliente.
 
-A lista de testes de aceitação pode conter uma combinação de testes das várias categorias acima e é selecionada para verificar se o projeto satisfaz os requisitos do cliente
+A lista de testes de aceitação pode conter uma combinação de testes das várias categorias acima e é selecionada para verificar se o projeto atende aos requisitos do cliente
 
-Consulte [Aceitação e logoff](/help/sites-developing/acceptance-signoff.md) para obter mais detalhes.
+Consulte [Aceitação e aprovação](/help/sites-developing/acceptance-signoff.md) para obter mais detalhes.
 
 ## Introdução {#getting-started}
 
-Antes de começar em seus Casos de teste e Plano de teste detalhados, você pode:
+Antes de iniciar os Casos de teste detalhados e o Plano de teste, você pode:
 
-**Definir as metas** - Defina suas metas de alto nível para atuar como ponto de partida para o ajuste fino à medida que o teste prossegue. Você desejará:
+**Definir as metas** - Defina suas metas de alto nível para agir como ponto de partida para o ajuste à medida que o teste continua. Você deverá:
 
-* Teste a funcionalidade de acordo com a Especificação detalhada do requisito.
-* Teste o desempenho de acordo com a [Métricas de meta](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics).
+* Teste a funcionalidade de acordo com a Especificação de requisitos detalhada.
+* Desempenho do teste de acordo com a [Métricas do Target](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics).
 
 entre outros.
 
 **Coletar estatísticas de tráfego do site existente** - Essas informações podem ser extraídas dos arquivos de log - consulte Monitoramento de desempenho para obter mais detalhes.
 
-Estes números fornecerão uma indicação do tráfego (volume e difusão) atual no sítio Web existente e poderão ser utilizados para constituir um ponto de base para o novo sítio web.
+Estes números darão uma indicação do tráfego atual (volume e propagação) no site existente e podem ser usados na formação de um ponto de base para o novo site.
 
-**Coletar estatísticas de tráfego de sites externos** - Se possível, você pode tentar coletar estatísticas de tráfego de outros sites para comparação, mas esses números nem sempre são publicados.
+**Coletar estatísticas de tráfego de sites externos** - Se possível, pode tentar recolher estatísticas de tráfego de outros sítios Web para comparação, mas estes números nem sempre são publicados.
 
-**Confirmar métricas de meta** - As métricas são usadas para definir medidas quantitativas para a qualidade do site, pois representam os objetivos de desempenho a serem alcançados.
+**Confirmar métricas de direcionamento** - As métricas são utilizadas para definir medidas quantitativas para a qualidade do sítio Web, uma vez que representam os objetivos de desempenho a atingir.
 
-Devem ser definidas no início do projeto, juntamente com o cliente. Consulte [Métricas de meta](/help/sites-developing/planning.md) para obter mais informações.
+Eles devem ser definidos no início do projeto, juntamente com o cliente. Consulte [Métricas do Target](/help/sites-developing/planning.md) para obter mais informações.

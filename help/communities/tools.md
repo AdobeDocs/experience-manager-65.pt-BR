@@ -1,5 +1,5 @@
 ---
-title: Ferramentas do Communities
+title: Ferramentas das comunidades
 seo-title: Communities Tools
 description: Como acessar o console Ferramentas do Communities
 seo-description: How to access Communities Tools console
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ---
 
-# Ferramentas do Communities {#communities-tools}
+# Ferramentas das comunidades {#communities-tools}
 
 Para acessar o console de ferramentas das Comunidades, faça logon na instância do autor:
 
-* Na navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]**.
+* Na navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Communities]**.
 
    ![comunidades](assets/communities-home.png)
 
@@ -35,6 +35,6 @@ Para acessar o console de ferramentas das Comunidades, faça logon na instância
 
 * [Configuração de armazenamento](srp-config.md) - Console para configuração e seleção do [SRP padrão](working-with-srp.md).
 
-* [Guia de componentes](components-guide.md) - Abre um site interativo que permite a experimentação com o funcionamento dos componentes do Quadro SEPA para os Pagamentos com Cartões e como eles podem ser configurados ou personalizados.
+* [Guia do componente](components-guide.md) - Abre um site interativo que permite a experimentação de como os componentes do SCF funcionam e como eles podem ser configurados ou personalizados.
 
-* [Etiquetas](badges.md) - Console onde os rótulos personalizados podem ser adicionados para uso no [regras de pontuação e marcação](implementing-scoring.md)
+* [Medalhas](badges.md) - Console no qual é possível adicionar selos personalizados para uso no [regras de pontuação e medalha](implementing-scoring.md)

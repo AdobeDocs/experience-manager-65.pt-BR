@@ -26,9 +26,9 @@ As marcas podem integrar o Experience Manager com o Adobe Commerce, parte da Ado
 * Enriquecer e diferenciar as experiências para clientes
 * Simplificar a criação com acesso a dados comerciais
 
-## Introdução à Estrutura de Integração do Commerce (CIF) do AEM {#cif-intro}
+## Introdução à Estrutura de Integração (CIF) do AEM Commerce {#cif-intro}
 
-Como esses projetos têm de lidar com a complexidade da integração de uma solução comercial. Uma solução comercial pode ser qualquer coisa, de uma solução comercial, como o Adobe Commerce, a um conjunto de serviços comerciais personalizados. A integração é altamente dependente dos casos de uso e do ecossistema. Ela costuma tocar em vários lugares e vem em vários tipos diferentes:
+Como esses projetos têm de lidar com a complexidade da integração de uma solução comercial. Uma solução comercial pode ser qualquer coisa, desde uma solução comercial, como o Adobe Commerce, até um conjunto de serviços comerciais personalizados. A integração é altamente dependente dos casos de uso e do ecossistema. Ela costuma tocar em vários lugares e vem em vários tipos diferentes:
 
 * Integração de um ecossistema complexo e dinâmico (por exemplo, catálogos de produtos)
 * As necessidades da empresa de gerenciar o conteúdo do produto com seu próprio ciclo de vida de forma eficiente e omnicanal
@@ -58,13 +58,13 @@ Ferramentas eficientes da CIF no AEM permitem que os criadores de conteúdo crie
 
 ### Tempo de retorno (TTV)
 
-Acelera o desenvolvimento de projetos com [Componentes principais do AEM](https://www.aemcomponents.dev/), [Loja de referência Venia AEM](https://github.com/adobe/aem-cif-guides-venia), [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)e padrões de integração para PWA (conteúdo e comércio sem cabeçalho).
+Acelera o desenvolvimento de projetos com [Componentes principais do AEM](https://www.aemcomponents.dev/), [Loja de referência AEM Venia](https://github.com/adobe/aem-cif-guides-venia), [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)e padrões de integração para PWA (Conteúdo e Comércio Headless).
 
 A CIF foi criada para inovação contínua com um complemento sempre atualizado, permitindo que os clientes acessem recursos novos e aprimorados.
 
 ### Integrações
 
-Conecte seu ecossistema (por exemplo, solução comercial) com o Experience Cloud usando  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), um PaaS sem servidor baseado em microsserviços e [Implementação de referência da CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Conecte seu ecossistema (por exemplo, solução comercial) ao Experience Cloud usando  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), um PaaS sem servidor baseado em microsserviço, e [Implementação de referência da CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## Padrões comprovados e práticas recomendadas
 

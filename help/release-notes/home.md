@@ -15,11 +15,11 @@ As Notas de versão do AEM abrangem informações importantes sobre a versão ma
 
 * [Notas de versão atuais](/help/release-notes/release-notes.md)
 
-## Artigos principais AEM
+## Artigos principais sobre AEM
 
 * [Introdução ao AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR)
 * [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=pt-BR)
-* [Lista de verificação de segurança AEM](/help/sites-administering/security-checklist.md)
+* [Lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md)
 
 ## Guias do usuário do AEM 6.5
 
@@ -28,19 +28,19 @@ As Notas de versão do AEM abrangem informações importantes sobre a versão ma
 | [Guia do usuário do Assets](/help/assets/home.md) | Crie, gerencie, entregue e otimize ativos digitais. |
 | [Guia do usuário do Forms](/help/forms/home.md) | Este guia descreve como criar, gerenciar, publicar e atualizar formulários digitais. |
 | [Guia do usuário do Communities](/help/communities/home.md) | Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais. |
-| [Guia de administração](/help/sites-administering/home.md) | Saiba como administrar AEM |
+| [Guia de administração](/help/sites-administering/home.md) | Entender como administrar AEM |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no AEM. |
-| [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no AEM na interface do usuário clássica. |
+| [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no AEM na interface clássica do usuário. |
 | [Guia do usuário do Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=pt-BR) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
-| [Guia de implantação do usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do AEM. |
-| [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar a instância do AEM. |
-| [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto de AEM com êxito. |
+| [Guia de implementação do usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do AEM. |
+| [Guia do usuário para desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua instância de AEM. |
+| [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto AEM com sucesso. |
 | [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre a Commerce Integration Framework no AEM. |
 | [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
 
-## Principais recursos AEM
+## Principais recursos do AEM
 
-* [AEM tutoriais](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
+* [Tutoriais do AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Guia do usuário do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR)
 * [Guia do usuário do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
 * [Guia do usuário dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
@@ -49,7 +49,7 @@ As Notas de versão do AEM abrangem informações importantes sobre a versão ma
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other)
 * [Fórum da comunidade AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
 
-## Direitos autorais, licenças e isenções de responsabilidade {#copyright-licenses-and-disclaimers}
+## Copyright, licenças e isenções de responsabilidade {#copyright-licenses-and-disclaimers}
 
 Para obter mais informações, consulte [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 

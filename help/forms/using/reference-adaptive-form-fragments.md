@@ -1,7 +1,7 @@
 ---
-title: Referência de fragmentos de formulário adaptáveis
+title: Referenciar fragmentos de formulário adaptáveis
 seo-title: Reference adaptive form fragments
-description: O AEM Forms fornece fragmentos de formulário adaptáveis que podem ser usados como ativos para criar um formulário rapidamente.
+description: O AEM Forms fornece fragmentos de formulário adaptáveis que você pode usar como ativos para criar um formulário rapidamente.
 seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,36 +12,36 @@ exl-id: 933c164e-7c39-4d2e-834b-53a3c2b4ec90
 source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# Referência de fragmentos de formulário adaptáveis{#reference-adaptive-form-fragments}
+# Referenciar fragmentos de formulário adaptáveis{#reference-adaptive-form-fragments}
 
-[Fragmento de formulário adaptável](../../forms/using/adaptive-form-fragments.md) é um grupo de campos ou um painel que contém um grupo de campos que podem ser usados ao criar um formulário. Ele permite criar um formulário de maneira fácil e rápida. Você pode arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e pode editá-lo no editor de formulário.
+[Fragmento de formulário adaptável](../../forms/using/adaptive-form-fragments.md) é um grupo de campos ou um painel que contém um grupo de campos que você pode usar ao criar um formulário. Ele permite criar um formulário de maneira fácil e rápida. Você pode arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e editá-lo no editor de formulários.
 
-Para autores de formulários adaptáveis, os fragmentos de referência são fornecidos no [Pacote do complemento AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Inclui os seguintes fragmentos:
+Para autores de formulários adaptáveis, os fragmentos de referência são fornecidos na [Pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR). Inclui os seguintes fragmentos:
 
 * Endereço
 * Informações de contato
-* Informações do cartão de crédito
+* Informações de cartão de crédito
 * Emprego Atual
 * Informações de Dependentes
 * Histórico de Emprego
-* Receitas e despesas
+* Receita e Despesas
 * Nome
 * Termos e condições
-* Termos e condições com rabisco
+* Termos e condições com assinatura
 
-Ao instalar o pacote, uma pasta Fragmentos de referência contendo fragmentos de referência é criada no Forms &amp; Documents. Para instalar um pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
+Quando você instala o pacote, uma pasta Fragmentos de referência contendo fragmentos de referência é criada em Forms e documentos. Para instalar um pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 
 ![Todos os fragmentos listados](assets/ootb-frags.png)
 
 ## Endereço {#address}
 
-Inclui campos para especificar o endereço de correspondência. Os campos disponíveis são endereço, código postal, cidade, estado e país. Também inclui um serviço da Web pré-configurado que preenche a cidade e o estado de um CEP dos EUA especificado.
+Inclui campos para especificar o endereço para correspondência. Os campos disponíveis são endereço, CEP, cidade, estado e país. Ele também inclui um serviço Web pré-configurado que preenche a cidade e o estado de um CEP específico dos EUA.
 
-![Fragmento de endereço](assets/address.png)
+![Fragmento do endereço](assets/address.png)
 
 <!--[Click to enlarge
 
@@ -49,7 +49,7 @@ Inclui campos para especificar o endereço de correspondência. Os campos dispon
 
 ## Informações de contato {#contact-information}
 
-Inclui campos para capturar o número de telefone e o endereço de email.
+Inclui campos para capturar número de telefone e endereço de email.
 
 ![Fragmento de informações de contato](assets/contact-info.png)
 
@@ -57,14 +57,14 @@ Inclui campos para capturar o número de telefone e o endereço de email.
 
 ](assets/contact-info-1.png)-->
 
-## Informações do cartão de crédito {#credit-card-information}
+## Informações de cartão de crédito {#credit-card-information}
 
-Inclui campos para capturar informações de cartão de crédito que podem ser usadas para processar pagamentos.
+Inclui campos para registrar informações de cartão de crédito que podem ser usadas para processar pagamentos.
 [ ![Fragmento de informações do cartão de crédito](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Emprego Atual {#current-employment}
 
-Inclui campos para capturar detalhes atuais do emprego, como status do emprego, campo de emprego, designação, organização e data de associação.
+Inclui campos para capturar detalhes do emprego atual, como status do emprego, campo de emprego, designação, organização e data de ingresso.
 
 ![Fragmento de emprego atual](assets/current-emp.png)
 
@@ -74,7 +74,7 @@ Inclui campos para capturar detalhes atuais do emprego, como status do emprego, 
 
 ## Informações de Dependentes {#dependents-information}
 
-Inclui campos para especificar informações sobre um ou mais dependentes, como seu nome, relacionamento e idade em um formato tabular.
+Inclui campos para especificar informações sobre um ou mais dependentes, como nome, relacionamento e idade, em formato tabular.
 
 ![Fragmento de informações de dependentes](assets/dependents-info.png)
 
@@ -86,17 +86,17 @@ Inclui campos para especificar informações sobre um ou mais dependentes, como 
 
 Inclui campos para capturar o histórico de emprego. Permite adicionar várias organizações.
 
-![Fragmento Histórico do Emprego](assets/emp-history.png)
+![Fragmento do Histórico de Emprego](assets/emp-history.png)
 
 <!--[Click to enlarge
 
 ](assets/emp-history-1.png)-->
 
-## Receitas e despesas {#income-expenditure}
+## Receita e Despesas {#income-expenditure}
 
-Inclui campos para capturar o fluxo de caixa e as despesas mensais. A Forms que requer que os usuários forneçam detalhes financeiros pode usar esse fragmento para capturar receita e dispêndio.
+Inclui campos para registrar fluxo de caixa e despesas mensais. O Forms que exige que os usuários forneçam detalhes financeiros pode usar esse fragmento para capturar receita e despesa.
 
-![Frasco de receitas e despesas](assets/income.png)
+![Fragmento de receita e despesa](assets/income.png)
 
 <!--[Click to enlarge
 
@@ -104,7 +104,7 @@ Inclui campos para capturar o fluxo de caixa e as despesas mensais. A Forms que 
 
 ## Nome {#name}
 
-Inclui campos para especificar o título, o nome, o nome do meio e o sobrenome.
+Inclui campos para especificar título, nome, nome do meio e sobrenome.
 
 ![Nomear fragmento](assets/name.png)
 
@@ -116,17 +116,17 @@ Inclui campos para especificar o título, o nome, o nome do meio e o sobrenome.
 
 Especifica os termos e condições que os usuários devem aceitar antes de enviar um formulário.
 
-![Fragmento Termos e condições](assets/tnc.png)
+![Fragmento dos Termos e condições](assets/tnc.png)
 
 <!--[Click to enlarge
 
 ](assets/tnc-1.png)-->
 
-## Termos e condições com rabisco {#terms-conditions-with-scribble}
+## Termos e condições com assinatura {#terms-conditions-with-scribble}
 
 Especifica os termos e condições que os usuários devem aceitar e assinar antes de enviar um formulário.
 
-![Termos e condições com rabisco](assets/tnc-scribble.png)
+![Termos e condições com assinatura](assets/tnc-scribble.png)
 
 <!--[Click to enlarge
 

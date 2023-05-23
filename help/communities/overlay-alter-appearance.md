@@ -26,25 +26,25 @@ O script comment.hbs é responsável pela criação do HTML geral para cada come
 
 Para não exibir o avatar ao lado de cada comentário publicado:
 
-1. Copiar `comment.hbs`from `libs`para `apps`
+1. Copiar `comment.hbs`de `libs`para `apps`
 
    1. Selecionar `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
    1. Selecionar **[!UICONTROL Copiar]**
    1. Selecionar `/apps/social/commons/components/hbs/comments/comment`
    1. Selecionar **[!UICONTROL Colar]**
 
-1. Abra a sobreposição `comment.hbs`
+1. Abrir a sobreposta `comment.hbs`
 
-   * Clique duas vezes no nó `comment.hbs` em `/apps/social/commons/components/hbs/comments/comment folder`
+   * Clique duas vezes no nó `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
 
-1. Encontre as seguintes linhas e exclua-as ou comente-as:
+1. Localize as linhas a seguir e exclua-as ou comente-as:
 
 ```xml
   <aside class="scf-comment-author">
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Exclua as linhas ou rode-as com `<!--` e `-->` para comentá-las. Além disso, os caracteres &#39;xxx&#39; estão sendo adicionados como um indicador visual de onde o avatar estaria.
+Exclua as linhas ou coloque-as em volta `<!--` e `-->` para comentá-los. Além disso, os caracteres &quot;xxx&quot; estão sendo adicionados como um indicador visual de onde o avatar estaria.
 
 ```xml
    xxx
@@ -55,15 +55,15 @@ Exclua as linhas ou rode-as com `<!--` e `-->` para comentá-las. Além disso, o
 
 ### Replicar a sobreposição {#replicate-the-overlay}
 
-Encaminhe o componente comentários sobrepostos para a instância de publicação usando a Ferramenta Replicação.
+Envie o componente de comentários sobrepostos para a instância de publicação usando a Ferramenta de replicação.
 
 >[!NOTE]
 >
->Uma forma mais robusta de replicação seria criar um pacote no Gerenciador de Pacotes e [ativar](/help/sites-administering/package-manager.md#replicating-packages) sim. Um pacote pode ser exportado e arquivado.
+>Uma forma mais robusta de replicação seria criar um pacote no Gerenciador de pacotes e [ativar](/help/sites-administering/package-manager.md#replicating-packages) o mesmo. Um pacote pode ser exportado e arquivado.
 
 Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]** e clique em **[!UICONTROL Ativar árvore]**.
 
-Para o Caminho de início, insira `/apps/social/commons` e selecione **[!UICONTROL Ativar]**.
+No Caminho inicial, digite `/apps/social/commons` e selecione **[!UICONTROL Ativar]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 
@@ -71,6 +71,6 @@ Para o Caminho de início, insira `/apps/social/commons` e selecione **[!UICONTR
 
 Se você fizer logon na instância de publicação como administrador, por exemplo, https://localhost:4503/crx/de como administrador/administrador, poderá verificar se os componentes sobrepostos estão lá.
 
-Se você fizer logoff e fizer logon novamente como `aaron.mcdonald@mailinator.com/password` e atualize a página, você observará que o comentário publicado não é mais exibido com um avatar, em vez disso, um simples &#39;xxx&#39; é exibido.
+Se você fizer logout e fizer logon novamente como `aaron.mcdonald@mailinator.com/password` e, ao atualizar a página, você observará que o comentário publicado não é mais exibido com um avatar, em vez de um simples &quot;xxx&quot; ser exibido.
 
 ![create-template-component](assets/create-template-component.png)

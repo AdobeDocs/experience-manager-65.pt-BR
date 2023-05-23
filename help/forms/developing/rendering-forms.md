@@ -1,7 +1,7 @@
 ---
 title: Renderização do Forms
 seo-title: Rendering Forms
-description: Use o serviço Forms para criar aplicativos clientes interativos de captura de dados que validam, processam, transformam e entregam formulários normalmente criados no Designer. Os autores de formulários podem desenvolver um design de formulário único que o serviço Forms renderiza no PDF, SWF ou HTML em vários ambientes de navegador.
+description: Use o serviço Forms para criar aplicativos cliente de captura de dados interativos que validam, processam, transformam e fornecem formulários normalmente criados no Designer. Os autores de formulários podem desenvolver um único design de formulário que o serviço Forms renderiza em PDF, SWF ou HTML em vários ambientes do navegador.
 seo-description: Use the Forms service to create interactive data capture client applications that validate, process, transform, and deliver forms typically created in Designer. Form authors can develop a single form design that the Forms service renders in PDF, SWF, or HTML in various browser environments.
 uuid: 68d7b7bc-7730-4a83-b7b9-ebe2a29d6c51
 contentOwner: admin
@@ -21,40 +21,40 @@ ht-degree: 0%
 
 # Renderização do Forms {#rendering-forms}
 
-**Exemplos e exemplos neste documento são apenas para o AEM Forms no ambiente JEE.**
+**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
 
 **Sobre o serviço Forms**
 
-O serviço Forms permite criar aplicativos clientes interativos de captura de dados que validam, processam, transformam e entregam formulários normalmente criados no Designer. Os autores de formulários podem desenvolver um design de formulário único que o serviço Forms renderiza no PDF, SWF ou HTML em vários ambientes de navegador.
+O serviço Forms permite criar aplicativos cliente de captura de dados interativos que validam, processam, transformam e fornecem formulários normalmente criados no Designer. Os autores de formulários podem desenvolver um único design de formulário que o serviço Forms renderiza em PDF, SWF ou HTML em vários ambientes do navegador.
 
-Quando um usuário final solicita um formulário, um aplicativo cliente envia a solicitação para o serviço da Forms, que retorna o formulário em um formato apropriado. Assim que o serviço Forms receber uma solicitação, ele mesclará os dados com um design de formulário e, em seguida, fornecerá o formulário no formato desejado. A saída do serviço de Formulário é um formulário interativo, geralmente um documento PDF. Um formulário interativo permite que os usuários preencham campos localizados nele.
+Quando um usuário final solicita um formulário, um aplicativo cliente envia a solicitação ao serviço do Forms, que retorna o formulário em um formato apropriado. Assim que o serviço Forms recebe uma solicitação, ele mescla dados com um design de formulário e entrega o formulário no formato desejado. A saída do serviço de formulário é um formulário interativo, geralmente um documento PDF. Um formulário interativo permite que os usuários preencham os campos localizados no formulário.
 
-Dependendo do tipo de aplicativo cliente, é possível gravar o formulário em um navegador da Web cliente ou salvar o formulário como um arquivo PDF. Um aplicativo baseado na Web pode gravar o formulário no navegador da Web. Um aplicativo de desktop pode salvar o formulário como um arquivo PDF. Para demonstrar como gravar em um navegador da Web e em um arquivo PDF, o início rápido localizado na *Renderização do Forms* são organizadas da seguinte maneira:
+Dependendo do tipo de aplicativo cliente, você pode gravar o formulário em um navegador da Web cliente ou salvá-lo como um arquivo PDF. Um aplicativo baseado na Web pode gravar o formulário no navegador da Web. Um aplicativo de desktop pode salvar o formulário como um arquivo PDF. Para demonstrar como gravar em um navegador da Web e em um arquivo PDF, os inícios rápidos localizados na *Renderização do Forms* estão organizados da seguinte maneira:
 
-* Os exemplos de API Java altamente digitados (modo SOAP) são um servlet Java.
-* Os exemplos do serviço da Web (Java Base64) são um servlet Java.
-* Os exemplos de serviço da Web (MTOM) são um aplicativo de console (nem todos os inícios rápidos têm um exemplo MTOM).
+* Os exemplos fortemente tipados da API Java (modo SOAP) são um servlet Java.
+* Os exemplos de serviço Web (Java Base64) são um servlet Java.
+* Os exemplos de serviço Web (MTOM) são um aplicativo de console (nem todos os inícios rápidos têm um exemplo de MTOM).
 
 >[!NOTE]
 >
->Para obter informações sobre como criar uma aplicação Web que usa servlets java para chamar o serviço Forms, consulte [Criação de aplicativos Web que renderizam o Forms](/help/forms/developing/creating-web-applications-renders-forms.md).
+>Para obter informações sobre como criar uma aplicação Web que use servlets java para chamar o serviço Forms, consulte [Criação de aplicações Web que renderizam o Forms](/help/forms/developing/creating-web-applications-renders-forms.md).
 
-Você pode passar um design de formulário (um arquivo XDP) ou um documento PDF para o serviço da Forms usando uma das duas formas a seguir:
+Você pode passar um design de formulário (um arquivo XDP) ou um documento PDF para o serviço Forms usando uma das duas formas a seguir:
 
-* É possível referenciar o design de formulário usando um valor de URL. Essa abordagem envolve usar um `URLSpec` objeto. A raiz de conteúdo é passada para o serviço Forms usando o `URLSpec` do objeto `setContentRootURI` método . O nome do design de formulário ( `formQuery`) é passado como um parâmetro separado. Os dois valores são concatenados para obter a referência absoluta para o design de formulário. (A maioria dos ícones rápidos está localizada na seção *Renderização do Forms* use essa abordagem.)
-* Você pode passar uma `com.adobe.idp.Document` que contém o design de formulário para o serviço Forms. Dois novos métodos nomeados `renderPDFForm2` e `renderHTMLForm2` aceite um `com.adobe.idp.Document` objeto que contém um design de formulário. (Consulte [Enviar documentos para o serviço do Forms](/help/forms/developing/passing-documents-forms-service.md)
+* Você pode fazer referência ao design do formulário usando um valor de URL. Esta abordagem envolve a utilização de uma `URLSpec` objeto. A raiz do conteúdo é passada para o serviço Forms usando o `URLSpec` do objeto `setContentRootURI` método. O nome do design do formulário ( `formQuery`) é passado como um parâmetro separado. Os dois valores são concatenados para obter a referência absoluta para o design do formulário. (A maioria das inicializações rápidas está localizada no *Renderização do Forms* use esta abordagem.)
+* Você pode passar um `com.adobe.idp.Document` que contém o design do formulário para o serviço Forms. Dois novos métodos chamados `renderPDFForm2` e `renderHTMLForm2` aceitar um `com.adobe.idp.Document` objeto que contém um design de formulário. (Consulte [Passar documentos para o serviço da Forms](/help/forms/developing/passing-documents-forms-service.md)
 
-Você pode realizar essas tarefas usando o serviço Forms:
+É possível realizar essas tarefas usando o serviço Forms:
 
 * Renderizar PDF forms interativos. (Consulte [Renderização de PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 * Renderizar formulários no cliente. (Consulte [Renderização do Forms no cliente](/help/forms/developing/rendering-forms-client.md).)
 * Renderizar formulários com base em fragmentos. (Consulte [Renderização do Forms com base em fragmentos](/help/forms/developing/rendering-forms-based-fragments.md).)
-* Renderizar formulários ativados por direitos. (Consulte [Forms com direitos de renderização ativados](/help/forms/developing/rendering-rights-enabled-forms.md).)
-* Renderizar formulários como HTML. (Consulte [Renderizar o Forms como HTML](/help/forms/developing/rendering-forms-html.md).)
+* Renderizar formulários habilitados por direitos. (Consulte [Renderização do Forms com direitos ativados](/help/forms/developing/rendering-rights-enabled-forms.md).)
+* Renderizar formulários como HTML. (Consulte [Renderização do Forms como HTML](/help/forms/developing/rendering-forms-html.md).)
 * Renderização do HTML Forms usando arquivos CSS personalizados ([Renderização do HTML Forms usando arquivos CSS personalizados](/help/forms/developing/rendering-html-forms-using-custom.md).)
-* Manipule formulários enviados. (Consulte [Manuseio de Forms Enviado](/help/forms/developing/handling-submitted-forms.md).)
-* Criação de documentos PDF com dados XML enviados. (Consulte [Criação de documentos PDF com dados XML enviados](/help/forms/developing/creating-pdf-documents-submitted-xml.md).)
-* Preencha os formulários previamente. (Consulte [Pré-preenchimento do Forms com layouts flutuantes](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
-* Enviar documentos. (Consulte [Enviar documentos para o serviço do Forms](/help/forms/developing/passing-documents-forms-service.md)
-* Calcule os dados do formulário. (Consulte [Cálculo dos dados de formulário](/help/forms/developing/calculating-form-data.md).)
-* Otimizar um aplicativo. (Consulte [Otimizar o desempenho do serviço Forms](/help/forms/developing/optimizing-performance-forms-service.md).)
+* Manipular formulários enviados. (Consulte [Manuseio de Forms enviado](/help/forms/developing/handling-submitted-forms.md).)
+* Criação de Documentos PDF com Dados XML Enviados. (Consulte [Criação de documentos PDF com dados XML enviados](/help/forms/developing/creating-pdf-documents-submitted-xml.md).)
+* Preencher formulários previamente. (Consulte [Pré-preenchimento do Forms com layouts fluíveis](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+* Envio de documentos. (Consulte [Passar documentos para o serviço da Forms](/help/forms/developing/passing-documents-forms-service.md)
+* Calcular dados do formulário. (Consulte [Cálculo de dados de formulário](/help/forms/developing/calculating-form-data.md).)
+* Otimizar um aplicativo. (Consulte [Otimização do desempenho do serviço Forms](/help/forms/developing/optimizing-performance-forms-service.md).)

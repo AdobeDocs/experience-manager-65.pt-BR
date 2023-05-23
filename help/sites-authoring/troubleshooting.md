@@ -1,6 +1,6 @@
 ---
 title: Solução de problemas ao criar no AEM
-description: Alguns problemas que podem ocorrer ao usar o AEM.
+description: Alguns problemas que você pode encontrar ao usar o AEM.
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -21,21 +21,21 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 >[!NOTE]
 >
->Ao enfrentar problemas, também vale a pena verificar a lista de [Problemas conhecidos](/help/release-notes/release-notes.md) para sua instância (pacotes de versões e serviços).
+>Em caso de problemas, vale a pena também verificar a lista de [Problemas conhecidos](/help/release-notes/release-notes.md) para sua instância (versão e service packs).
 
 >[!NOTE]
 >
->Os usuários que tiverem privilégios de administrador e quiserem resolver problemas com o AEM, poderão utilizar os métodos de resolução de problemas descritos em [AEM de solução de problemas (para administradores)](/help/sites-administering/troubleshoot.md). Se você não tiver privilégios suficientes, consulte o administrador do sistema sobre AEM de solução de problemas.
+>Os usuários que têm privilégios de administrador e desejam solucionar problemas com AEM podem usar os métodos de solução de problemas descritos em [Solução de problemas do AEM (para administradores)](/help/sites-administering/troubleshoot.md). Se você não tiver privilégios suficientes, consulte o administrador do sistema para obter informações sobre como solucionar problemas de AEM.
 
 ## A versão antiga da página ainda está no site publicado {#old-page-version-still-on-published-site}
 
 * **Problema**:
 
-   * Você fez alterações em uma página e replicou a página para o site de publicação, mas a variável *old* A versão da página ainda está sendo exibida no site de publicação.
+   * Você fez alterações em uma página e a replicou para o site de publicação, mas a variável *antigo* A versão da página ainda está sendo exibida no site de publicação.
 
 * **Motivo**:
 
-   * Isso pode ter várias causas, na maioria das vezes o cache (seu navegador local ou o Dispatcher), embora, às vezes, possa ser um problema com a fila de replicação.
+   * Isso pode ter várias causas, mais frequentemente o cache (seu navegador local ou o Dispatcher), embora possa, às vezes, ser um problema com a fila de replicação.
 
 * **Soluções**:
 

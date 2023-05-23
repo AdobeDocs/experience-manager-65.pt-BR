@@ -1,7 +1,7 @@
 ---
-title: Modificação das configurações de conversão de Exportação de PDF
+title: Modificação das configurações de conversão da exportação de PDF
 seo-title: Modifying the PDF Export conversion settings
-description: Saiba como modificar as configurações de conversão de exportação do PDF.
+description: Saiba como modificar as configurações de conversão da Exportação de PDF.
 seo-description: Learn how to modify the PDF Export conversion settings.
 uuid: 7bade010-f422-4a76-a876-705e3cf346e6
 contentOwner: admin
@@ -18,15 +18,15 @@ ht-degree: 0%
 
 ---
 
-# Modificação das configurações de conversão de Exportação de PDF {#modifying-the-pdf-export-conversion-settings}
+# Modificação das configurações de conversão da exportação de PDF {#modifying-the-pdf-export-conversion-settings}
 
-Use o procedimento abaixo para modificar as configurações de conversão para exportar um PDF, um EPS, um DOC, um TXT, um RTF, um XML ou um arquivo HTML. Por padrão, o arquivo PDF usa as configurações padrão Salvar como configuradas no Adobe Acrobat Professional ou Acrobat Standard. Por exemplo, as configurações padrão Salvar como no Acrobat para converter um arquivo PDF para o EPS resultarão em apenas uma página do arquivo PDF convertido para o EPS.
+Use o procedimento abaixo para modificar as configurações de conversão para exportar um arquivo de PDF, EPS, DOC, TXT, RTF, XML ou HTML. Por padrão, o arquivo PDF usa as configurações padrão Salvar como definidas no Adobe Acrobat Professional ou Acrobat Standard. Por exemplo, as configurações padrão Salvar como no Acrobat para converter um arquivo de PDF para o EPS resultarão em apenas uma página do arquivo de PDF convertida para o EPS.
 
 >[!NOTE]
 >
->Depois de modificar a configuração Salvar como em um formato de arquivo, ela será aplicada a todas as conversões do mesmo tipo quando forem exportadas do Gerador de PDF.
+>Depois de modificar a configuração Salvar como para um formato de arquivo, ela será aplicada a todas as conversões do mesmo tipo quando elas forem exportadas do Gerador de PDF.
 
-1. Com o arquivo do PDF aberto no Acrobat, selecione Arquivo > Salvar como.
+1. Com o arquivo PDF aberto no Acrobat, selecione Arquivo > Salvar como.
 1. Na lista Salvar como tipo, selecione o formato apropriado.
-1. Clique em Configurações e defina as configurações de formato de arquivo, conforme necessário.
-1. Clique em OK e em Save para exportar o arquivo PDF.
+1. Clique em Configurações e defina as configurações de formato de arquivo conforme necessário.
+1. Clique em OK e, em seguida, clique em Salvar para exportar o arquivo de PDF.

@@ -1,7 +1,7 @@
 ---
-title: Configuração da mensagem do dia
+title: Definir a mensagem do dia
 seo-title: Setting the message of the day
-description: A mensagem do dia permite definir uma mensagem a ser exibida na página de boas-vindas na interface do usuário do Workspace.
+description: A mensagem do dia permite definir uma mensagem para ser exibida na página de Boas-vindas na interface do usuário do Workspace.
 seo-description: The message of the day let you set a message to be displayed on the Welcome page in the Workspace user interface.
 uuid: 9c664438-6fc0-498e-bb3f-4c6bcb9414a7
 contentOwner: admin
@@ -17,32 +17,32 @@ ht-degree: 1%
 
 ---
 
-# Configuração da mensagem do dia {#setting-the-message-of-the-day}
+# Definir a mensagem do dia {#setting-the-message-of-the-day}
 
-Você pode definir uma mensagem a ser exibida na página de Boas-vindas na interface do usuário do Workspace.
+É possível definir uma mensagem para ser exibida na página de Boas-vindas na interface do usuário do Workspace.
 
-Se necessário, você pode usar as tags HTML compatíveis com o Flash® Player do Adobe para formatar a aparência do texto:
+Se necessário, você pode usar as tags HTML suportadas pelo Adobe Flash® Player para formatar a aparência do texto:
 
-* &lt;a> Tag de âncora
-* &lt;b> Tag Negrito
-* &lt;br> Tag Break
+* &lt;a> Ancorar tag
+* &lt;b> Tag em Negrito
+* &lt;br> Quebrar tag
 * &lt;font> Tag de fonte
 * &lt;img> Tag de imagem
 * &lt;i> Tag em itálico
-* &lt;li> Etiqueta de item de lista
+* &lt;li> Marca de item de lista
 * &lt;p> Tag de parágrafo
-* &lt;span> Tag de extensão
+* &lt;span> Marca de extensão
 * &lt;textformat> Tag de formato de texto
-* &lt;u> Tag sublinhada
+* &lt;u> Sublinhar tag
 
-Para obter mais informações sobre as tags compatíveis, consulte a definição da variável `htmlText` propriedade para a classe TextField na [Referência de idioma do Flex](https://flex.apache.org/).
+Para obter mais informações sobre as tags compatíveis, consulte a definição da variável `htmlText` para a classe TextField na variável [Referência de idioma do Flex](https://flex.apache.org/).
 
 ## Definir a mensagem do dia {#set-the-message-of-the-day}
 
 1. No console de administração, clique em Serviços > Espaço de trabalho > Mensagem do dia.
-1. Na caixa Mensagem do dia , forneça o texto a ser exibido na tela de boas-vindas.
+1. Na caixa Mensagem do dia, forneça o texto a ser exibido na tela de boas-vindas.
 1. Clique em Salvar.
 
 >[!NOTE]
 >
->O espaço de trabalho do Flex foi descontinuado para AEM versão dos formulários.
+>O Flex Workspace está obsoleto para a versão do AEM forms.

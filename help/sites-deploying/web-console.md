@@ -20,21 +20,21 @@ ht-degree: 1%
 
 # Console da Web{#web-console}
 
-O console da Web no AEM é baseado no [Console de Gerenciamento da Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). O Apache Felix é um esforço da comunidade para implementar a Plataforma de Serviço OSGi R4, que inclui a estrutura OSGi e os serviços padrão.
+O console da Web no AEM é baseado na variável [Console de gerenciamento Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). O Apache Felix é um esforço da comunidade para implementar a Plataforma de serviço OSGi R4, que inclui a estrutura OSGi e os serviços padrão.
 
 >[!NOTE]
 >
->No console da Web, qualquer descrição que mencione as configurações padrão está relacionada aos padrões do Sling.
+>No console da Web, todas as descrições que mencionam as configurações padrão estão relacionadas aos padrões do Sling.
 >
->AEM tem seus próprios padrões e, portanto, os padrões definidos podem ser diferentes daqueles documentados no console.
+>O AEM tem seus próprios padrões, portanto, os padrões definidos podem ser diferentes daqueles documentados no console.
 
 O console da Web oferece uma seleção de guias para manter os pacotes OSGi, incluindo:
 
-* [Configuração](#configuration): usado para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar AEM parâmetros do sistema
+* [Configuração](#configuration): usado para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar parâmetros do sistema AEM
 * [Pacotes](#bundles): usado para instalar pacotes
 * [Componentes](#components): usado para controlar o status dos componentes necessários para o AEM
 
-Todas as alterações feitas são aplicadas imediatamente ao sistema em execução. Não é necessário reiniciar.
+Quaisquer alterações feitas são aplicadas imediatamente ao sistema em execução. Não é necessário reiniciar.
 
 O console pode ser acessado de `../system/console`; por exemplo:
 
@@ -42,13 +42,13 @@ O console pode ser acessado de `../system/console`; por exemplo:
 
 ## Configuração {#configuration}
 
-O **Configuração** A guia é usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar AEM parâmetros do sistema.
+A variável **Configuração** é usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar os parâmetros do sistema AEM.
 
 >[!NOTE]
 >
 >Consulte [Configuração do OSGi com o console da Web](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes.
 
-O **Configuração** Essa guia pode ser acessada por:
+A variável **Configuração** A guia pode ser acessada das seguintes maneiras:
 
 * O menu suspenso:
 
@@ -62,18 +62,18 @@ Uma lista de configurações será exibida:
 
 ![screen_shot_2012-02-15at52308pm](assets/screen_shot_2012-02-15at52308pm.png)
 
-Há dois tipos de configurações disponíveis nas listas suspensas nesta tela:
+Há dois tipos de configurações disponíveis nas listas suspensas desta tela:
 
 * **Configurações**
-Permite atualizar as configurações existentes. Eles têm uma Identidade Persistente (PID) e podem ser:
+Permite atualizar as configurações existentes. Eles têm uma Identidade persistente (PID) e podem ser:
 
-   * Norma e integral em AEM; são obrigatórios, se excluídos, os valores retornam às configurações padrão.
-   * instâncias criadas a partir de configurações de fábrica; essas instâncias são criadas pelo usuário, a exclusão remove a instância .
+   * padrão e integral para AEM; são necessários, se excluídos, os valores retornam às configurações padrão.
+   * instâncias criadas em Configurações de fábrica; essas instâncias são criadas pelo usuário, a exclusão remove a instância.
 
 * **Configurações de fábrica**
 Permite criar uma instância do objeto de funcionalidade necessário.
 
-   Isso receberá uma Identidade Persistente, listada na lista suspensa Configurações .
+   Isso receberá uma Identidade persistente e será listado na lista suspensa Configurações.
 
 Selecionar qualquer entrada nas listas exibirá os parâmetros relacionados a essa configuração:
 
@@ -85,27 +85,27 @@ Em seguida, você pode atualizar os parâmetros conforme necessário e:
 
    Salve as alterações feitas.
 
-   Para uma Configuração de fábrica, isso criará uma nova instância com uma Identidade Persistente. A nova instância será listada em Configurações.
+   Para uma Configuração de fábrica, isso criará uma nova instância com uma Identidade persistente. A nova instância será listada em Configurações.
 
 * **Redefinir**
 
-   Redefina os parâmetros mostrados na tela para os que foram salvos por último.
+   Reinicializa os parâmetros mostrados na tela para os que foram salvos por último.
 
 * **Excluir**
 
-   Exclua a configuração atual. Se padrão, os parâmetros são retornados às configurações padrão. Se criada a partir de uma configuração de fábrica, a instância específica será excluída.
+   Exclua a configuração atual. Se for padrão, os parâmetros são retornados às configurações padrão. Se criada a partir de uma Configuração de fábrica, a instância específica é excluída.
 
 * **Desvincular**
 
-   Desvincule a configuração atual do pacote.
+   Desvincular a configuração atual do pacote.
 
 * **Cancelar**
 
-   Cancelar quaisquer alterações atuais.
+   Cancelar as alterações atuais.
 
 ## Pacotes {#bundles}
 
-O **Pacotes** é o mecanismo para instalar os pacotes OSGi necessários para o AEM. A guia pode ser acessada por um dos métodos a seguir:
+A variável **Pacotes** é o mecanismo para instalar os pacotes OSGi necessários para o AEM. A guia pode ser acessada por um dos seguintes métodos:
 
 * O menu suspenso:
 
@@ -115,15 +115,15 @@ O **Pacotes** é o mecanismo para instalar os pacotes OSGi necessários para o A
 
    `http://localhost:4502/system/console/bundles`
 
-Uma lista de pacotes será mostrada:
+Uma lista de pacotes será exibida:
 
 ![screen_shot_2012-02-15at44740pm](assets/screen_shot_2012-02-15at44740pm.png)
 
-Com essa guia, é possível:
+Usando essa guia, você pode:
 
 * **Instalar ou atualizar**
 
-   Você pode **Procurar** para localizar o arquivo que contém seu pacote e especificar se ele deve **Iniciar** imediatamente e em que **Nível inicial**.
+   Você pode **Procurar** para localizar o arquivo que contém o pacote e especificar se ele deve **Início** imediatamente e em que **Nível inicial**.
 
 * **Recarregar**
 
@@ -133,7 +133,7 @@ Com essa guia, é possível:
 
    Isso verificará as referências de todos os pacotes e atualizará conforme necessário.
 
-   Por exemplo, após uma atualização, a versão antiga e a nova ainda podem estar em execução devido a referências anteriores. Essa opção marcará e moverá todas as referências para a nova versão, permitindo que a versão antiga pare.
+   Por exemplo, após uma atualização, a versão antiga e a nova ainda podem estar em execução devido a referências anteriores. Essa opção verificará e moverá todas as referências para a nova versão, permitindo que a versão antiga seja interrompida.
 
 * **Início**
 
@@ -141,23 +141,23 @@ Com essa guia, é possível:
 
 * **Parar**
 
-   Interrompe o pacote.
+   Para o pacote.
 
 * **Desinstalar**
 
    Desinstala o pacote do sistema.
 
-* **consulte o status**
+* **ver o status**
 
-   A lista especifica o status atual do pacote; clicar no nome de um pacote específico com mostrar mais informações.
+   A lista especifica o status atual do pacote; clicando no nome de um pacote específico com informações adicionais.
 
 >[!NOTE]
 >
->Depois **Atualizar** é recomendável executar uma **Atualizar pacotes**.
+>Depois **Atualizar** é recomendável executar um **Atualizar pacotes**.
 
 ## Componentes {#components}
 
-O **Componentes** permite ativar e/ou desativar os vários componentes. Ele pode ser acessado por:
+A variável **Componentes** permite Ativar e/ou Desativar os vários componentes. Ele pode ser acessado das seguintes maneiras:
 
 * O menu suspenso:
 
@@ -167,16 +167,16 @@ O **Componentes** permite ativar e/ou desativar os vários componentes. Ele pode
 
    `http://localhost:4502/system/console/components`
 
-Uma lista de componentes será exibida. Vários ícones estão disponíveis para habilitar, desabilitar ou (quando apropriado) abrir detalhes de configuração de um componente específico.
+Uma lista de componentes será exibida. Vários ícones estão disponíveis para permitir que você ative, desative ou (quando apropriado) abra os detalhes de configuração de um componente específico.
 
 ![screen_shot_2012-02-15at52144pm](assets/screen_shot_2012-02-15at52144pm.png)
 
-Clicar no nome de um componente específico exibirá mais informações sobre seu status. Aqui você também pode ativar, desativar ou recarregar o componente.
+Clicar no nome de um componente específico exibirá mais informações sobre o status. Aqui você também pode ativar, desativar ou recarregar o componente.
 
 ![chlimage_1-22](assets/chlimage_1-22a.png)
 
 >[!NOTE]
 >
->Habilitar ou desabilitar um componente só será aplicado até que AEM/CRX seja reiniciado.
+>Ativar ou desativar um componente só será aplicado até que o AEM/CRX seja reiniciado.
 >
 >O estado inicial é definido no descritor do componente, que é gerado durante o desenvolvimento e armazenado no pacote no momento da criação do pacote.

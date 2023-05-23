@@ -1,7 +1,7 @@
 ---
 title: Fundamentos de QnA
 seo-title: QnA Essentials
-description: Recurso do fórum de perguntas e respostas
+description: Recurso de fórum de perguntas e respostas
 seo-description: Questions and answers forum feature
 uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
 contentOwner: Guillaume Carlino
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Esta página fornece as informações essenciais para trabalhar com o recurso de fórum de perguntas e respostas (QnA).
 
-## Fundamentos para o lado do cliente {#essentials-for-client-side}
+## Essentials para o lado do cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -30,15 +30,15 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
    <td>social/qna/components/hbs/qnaforum</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component">incondicional</a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component">incluível</a></td>
    <td>Não</td>
   </tr>
   <tr>
    <td> <a href="clientlibs.md">clientllibs</a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.vote<br /> cq.social.hbs.qna</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.voting<br /> cq.social.hbs.qna</td>
   </tr>
   <tr>
-   <td> templates</td>
+   <td> modelos</td>
    <td> /libs/social/qna/components/hbs/qnaforum/qnaforum.hbs<br /> /libs/social/qna/components/hbs/qnaforum/activity-title.hbs</td>
   </tr>
   <tr>
@@ -47,37 +47,37 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
   </tr>
   <tr>
    <td> propriedades</td>
-   <td>Consulte <a href="working-with-qna.md">Recurso do Fórum de Perguntas e Respostas</a></td>
+   <td>Consulte <a href="working-with-qna.md">Recurso do fórum de perguntas e respostas</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizações do lado do cliente](client-customize.md)
 
-## Fundamentos para o lado do servidor {#essentials-for-server-side}
+## Essentials para o lado do servidor {#essentials-for-server-side}
 
 * [API QnA](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [Endpoints de QnA](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [Pontos finais de QnA](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
 ### Função QnA {#qna-function}
 
-Uma estrutura de site da comunidade que inclui a variável [Função QnA](functions.md#qna-function) terá um `QnA` , bem como configurações que afetam a moderação e a marcação. A função QnA suporta a identificação de um [grupo de usuários membro privilegiado](users.md#privileged-members-group).
+Uma estrutura de site da comunidade que inclui o [Função QnA](functions.md#qna-function) terá um configurado `QnA` componente, bem como configurações que afetam a moderação e a marcação. A função QnA é compatível com a identificação de um [grupo de usuários membro privilegiado](users.md#privileged-members-group).
 
-### Acesso às publicações do Fórum QnA (UGC) {#accessing-qna-forum-posts-ugc}
+### Acessar publicações do fórum QnA (UGC) {#accessing-qna-forum-posts-ugc}
 
-O UGC deve ser moderado usando um dos métodos padrão de moderação.
+A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir AEM 6.1 Comunidades, uso de um [loja comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
-**A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
+**A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 
 Consulte:
 
 * [Visão geral do provedor de recursos de armazenamento](srp.md) - introdução e visão geral do uso do repositório.
-* [Princípios básicos de SRP e UGC](srp-and-ugc.md) - métodos e exemplos de utilitários SRP.
+* [Fundamentos de SRP e UGC](srp-and-ugc.md) - Métodos e exemplos do utilitário SRP.
 * [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação.
-* [Refatoração do SocialUtils](socialutils.md) - mapeamento de métodos de utilitário obsoletos para os métodos de utilitário SRP atuais.
+* [Refatoração de SocialUtils](socialutils.md) - mapeamento de métodos de utilitário obsoletos para métodos de utilitário SRP atuais.

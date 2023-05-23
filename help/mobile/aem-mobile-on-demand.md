@@ -1,6 +1,6 @@
 ---
 title: AEM Mobile On-Demand
-description: Siga esta página como ponto de partida para desenvolver o aplicativo de serviços sob demanda com o AEM (Adobe Experience Manager). A página aborda os tópicos que são relevantes para um desenvolvedor de um aplicativo.
+description: Siga esta página como ponto de partida para desenvolver um aplicativo de Serviços por demanda com AEM (Adobe Experience Manager). A página aborda os tópicos relevantes para um desenvolvedor de um aplicativo.
 uuid: 35b64823-9451-44bf-b254-3b6767f0d109
 contentOwner: JYOTIKA SYAL
 content-type: reference
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -26,23 +26,23 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Antes de trabalhar com o AEM Mobile e seguir as etapas deste guia de introdução, os usuários devem estar familiarizados com [AEM](/help/sites-deploying/deploy.md).
+>Antes de trabalhar com o AEM Mobile e seguir as etapas deste guia de introdução, os usuários devem se familiarizar com o [AEM](/help/sites-deploying/deploy.md).
 >
->Para configurar seu ambiente para o AEM Mobile On-demand Services, consulte [AEM Mobile Application Dashboard ou Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Para configurar o ambiente para o AEM Mobile On-demand Services, consulte [AEM Mobile Application Dashboard ou o Centro de Controle](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Um **Desenvolvedor de AEM** estende e cria modelos e componentes da Web personalizados para ativar a variável *Autor do AEM* para criar experiências móveis bonitas e envolventes. Esses modelos e componentes não são otimizados apenas para o mundo do aplicativo móvel; mas comunique-se com o dispositivo e com o servidor AEM (qualquer servidor remoto) aos pontos finais do serviço omnicanal. AEM editor de conteúdo integrado é usado por *Autores do AEM* para criar experiências avançadas e relevantes no aplicativo, incluindo integração com o resto da Adobe Marketing Cloud.
+Um **Desenvolvedor de AEM** estende e cria modelos e componentes personalizados da web para habilitar a *AEM Author* para criar experiências móveis belas e envolventes. Esses modelos e componentes não são apenas otimizados para o mundo do aplicativo móvel, mas também se comunicam com o dispositivo e com o servidor AEM (qualquer servidor remoto) para pontos finais de serviço omnicanal. O editor de conteúdo integrado AEM é usado pelo *Autores do AEM* para criar experiências ricas e relevantes no aplicativo, incluindo a integração com o restante da Adobe Marketing Cloud.
 
-Um desenvolvedor de AEM é responsável pelas seguintes tarefas ao criar um aplicativo usando o AEM Mobile On-demand Services:
+Um desenvolvedor do AEM é responsável pelas seguintes tarefas ao criar um aplicativo usando o AEM Mobile On-demand Services:
 
 * [Modelos e componentes do aplicativo](/help/mobile/app-templates-and-components1.md)
-* [Móvel com sincronização de conteúdo](/help/mobile/mobile-ondemand-contentsync.md)
+* [Dispositivo móvel com sincronização de conteúdo](/help/mobile/mobile-ondemand-contentsync.md)
 * [Propriedades de conteúdo e exportação de conteúdo](/help/mobile/on-demand-content-properties-exporting.md)
 
-Consulte [Desenvolvimento dos serviços de conteúdo da AEM Mobile](/help/mobile/developing-content-services.md) para desenvolver os serviços de conteúdo.
+Consulte [Desenvolvimento dos serviços de conteúdo do AEM Mobile](/help/mobile/developing-content-services.md) para desenvolver serviços de conteúdo.
 
 >[!NOTE]
 >
->Um *do desenvolvedor de AEM* não inicia e termina com o desenvolvimento de modelos e componentes. Um *Desenvolvedor de AEM* O pode criar um aplicativo totalmente novo em vez de simplesmente estender a amostra de implementação de referência predefinida.
+>Um *Desenvolvedor de AEM* A função do não começa e termina com o desenvolvimento de modelos e componentes. Um *Desenvolvedor de AEM* O pode criar um aplicativo totalmente novo em vez de simplesmente estender a amostra de implementação de referência pronta para uso.
 
 ## Recursos adicionais {#additional-resources}
 

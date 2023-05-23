@@ -1,5 +1,5 @@
 ---
-title: Configurar sua página para a edição de itens em massa das propriedades da página
+title: Configurar sua página para edição em massa das propriedades da página
 seo-title: Configuring your Page for Bulk Editing of Page Properties
 description: A edição em massa das propriedades da página permite editar as propriedades de várias páginas de uma só vez
 seo-description: Bulk editing of page properties allows you to edit the properties of multiple pages at once
@@ -13,20 +13,20 @@ exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
-# Configurar sua página para a edição de itens em massa das propriedades da página {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Configurar sua página para edição em massa das propriedades da página {#configuring-your-page-for-bulk-editing-of-page-properties}
 
-[Edição em massa das propriedades da página](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) O permite editar as propriedades de várias páginas de uma só vez.
+[Edição em massa das propriedades da página](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) permite editar as propriedades de várias páginas de uma só vez.
 
-Devido à possibilidade de valores diferentes, as propriedades da página não são habilitadas para edição em massa como padrão. Eles devem ser explicitamente permitidos (ativados). Ao definir as propriedades da página que estarão disponíveis para a edição de itens em massa, você precisa considerar algumas implicações, como:
+Devido à possibilidade de valores diferentes, as propriedades de página não são ativadas para edição em massa como padrão. Eles devem ser explicitamente permitidos (ativados). Ao definir as propriedades de página para que estejam disponíveis para edição de itens em massa, você precisa considerar certas implicações, como:
 
-* Certos campos geralmente são únicos; por exemplo, um título de página. Você deve decidir se é significativo ativar esses campos para edição de itens em massa, quando um valor será aplicado.
-* Determinados campos podem ter vários valores; isso precisa de representação significativa ao renderizar.
+* Determinados campos normalmente são exclusivos; por exemplo, um título de página. Você deve decidir se é significativo ativar esses campos para edição de itens em massa, quando um valor será aplicado.
+* Determinados campos podem ter vários valores - isso precisa de representação significativa ao renderizar.
 
-   Por exemplo, uma caixa de seleção que indica &quot;Pronto para publicação&quot;. Isso pode ter vários valores antes da edição em massa (por exemplo, pronto, em revisão, em andamento).
+   Por exemplo, uma caixa de seleção indicando &quot;Pronto para publicação&quot;. Isso pode ter vários valores antes da edição em massa (por exemplo, pronto, em revisão, em andamento).
 
 >[!CAUTION]
 >
@@ -40,13 +40,13 @@ Devido à possibilidade de valores diferentes, as propriedades da página não s
 
 >[!NOTE]
 >
->A edição em massa também está disponível para Ativos. É muito semelhante, mas difere em alguns pontos. Consulte [Editar propriedades de vários ativos](/help/assets/metadata.md) para obter as informações completas. Você pode personalizar os campos no editor de Metadados em massa do Assets usando o [Editor de esquema](/help/assets/metadata-schemas.md).
+>A edição em massa também está disponível para o Assets. É muito semelhante, mas difere em alguns pontos. Consulte [Edição de propriedades de vários ativos](/help/assets/metadata.md) para obter informações completas. Você pode personalizar os campos no editor de metadados em massa para Ativos usando o [Editor de esquema](/help/assets/metadata-schemas.md).
 
 ## Ativar um campo {#enabling-a-field}
 
 >[!NOTE]
 >
->Determinados campos podem ter vários valores; isso precisa de representação significativa ao renderizar. Por isso, você deve ativar apenas os seguintes tipos de campo:
+>Determinados campos podem ter vários valores - isso precisa de representação significativa ao renderizar. Por esse motivo, você deve ativar apenas os seguintes tipos de campo:
 >
 >* `/libs/granite/ui/components/foundation/form/textfield`
 >* `/libs/granite/ui/components/foundation/form/textarea`
@@ -57,24 +57,24 @@ Devido à possibilidade de valores diferentes, as propriedades da página não s
 >
 
 
-Os campos são ativados no componente página (*not* no modelo):
+Os campos são ativados no componente de página (*não* no modelo):
 
-1. Usar o CRXDE Lite (ou um método equivalente) para abrir o componente da página.
+1. Usando o CRXDE Lite (ou um método equivalente), abra o componente de página.
 
    Por exemplo: `/apps/core/wcm/components/page/v1/page`
 
    >[!NOTE]
    >
-   >Esse exemplo assume que os Componentes principais foram instalados na instância, o que é o caso se a instância estiver em execução com conteúdo de amostra We.Retail. Consulte a [Documentação dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) para obter mais informações.
+   >Este exemplo pressupõe que os Componentes principais foram instalados na instância, que é o caso se a instância estiver em execução com conteúdo de amostra We.Retail. Consulte a [Documentação dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) para obter mais informações.
 
-1. Navegue até o campo desejado dentro da variável `cq:dialog` definição.
-1. Defina a seguinte propriedade no nó field :
+1. Navegue até o campo obrigatório na `cq:dialog` definição.
+1. Defina a seguinte propriedade no nó do campo:
 
    * **Nome**: `allowBulkEdit`
    * **Tipo**: `Boolean`
    * **Valor**: `true`
 
-   Por exemplo, para a página padrão [componente base](/help/sites-authoring/default-components-foundation.md):
+   Por exemplo, para a página padrão [componente de fundação](/help/sites-authoring/default-components-foundation.md):
 
    `/libs/foundation/components/page`
 
@@ -84,14 +84,14 @@ Os campos são ativados no componente página (*not* no modelo):
 
    >[!CAUTION]
    >
-   >Você ***must*** não altere nada no `/libs` caminho.
+   >Você ***deve*** não alterar nada no `/libs` caminho.
    >
-   >Isso ocorre porque o conteúdo da variável `/libs` O é substituído na próxima vez que você atualizar sua instância (e pode ser substituído quando você aplicar um hotfix ou pacote de recursos).
+   >Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
    >
    >O método recomendado para configuração e outras alterações é:
    >
-   >    1. Recrie o item necessário (ou seja, como ele existe em `/libs`) `/apps`
-   >    1. Faça quaisquer alterações no `/apps`
+   >    1. Recriar o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
+   >    1. Fazer alterações em `/apps`
 
 
-1. Selecionar **Salvar tudo** para continuar suas atualizações.
+1. Selecionar **Salvar tudo** para continuar com suas atualizações.

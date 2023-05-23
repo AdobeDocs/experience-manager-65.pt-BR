@@ -1,7 +1,7 @@
 ---
 title: Integração com o Livefyre
 seo-title: Integrating with Livefyre
-description: Saiba como integrar os recursos de curadoria líderes do setor do Livefyre à sua instância do AEM 6.5, permitindo que você publique conteúdo valioso gerado pelo usuário (UGC) nas redes sociais em seu site em minutos.
+description: Saiba como integrar os recursos de curadoria líderes do setor do Livefyre à sua instância do AEM 6.5, permitindo a publicação de conteúdo valioso gerado pelo usuário (UGC) de redes sociais em seu site em minutos.
 seo-description: Learn how to integrate and use Livefyre with AEM 6.5.
 uuid: c355705d-6e0f-4a33-aa1f-d2d1c818aac0
 contentOwner: ind14750
@@ -21,7 +21,7 @@ ht-degree: 12%
 
 >[!IMPORTANT]
 >
->[A Adobe Livefyre é oficialmente encerrada em 30 de novembro de 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
+>[O Adobe Livefyre será oficialmente encerrado em 30 de novembro de 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
 
 <!-- Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
 

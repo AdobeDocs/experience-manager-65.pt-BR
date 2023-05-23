@@ -24,10 +24,10 @@ Ao aplicar o fluxo de trabalho, especifique as seguintes informações:
 
 * O fluxo de trabalho a ser aplicado.
 É possível aplicar qualquer fluxo de trabalho (ao qual você tenha acesso, conforme atribuído pelo administrador do AEM).
-* Opcionalmente, um título que ajuda a identificar a instância do fluxo de trabalho na Caixa de entrada de um usuário.
-* A carga do workflow; pode ser uma ou mais páginas.
+* Opcionalmente, um título que ajude a identificar a instância do fluxo de trabalho na Caixa de entrada de um usuário.
+* A carga do fluxo de trabalho; pode ser uma ou mais páginas.
 
-Os fluxos de trabalho podem ser iniciados de:
+Os workflows podem ser iniciados de:
 
 * [o console Sites.](#starting-a-workflow-from-the-sites-console)
 * [ao editar uma página, em Informações da página](#starting-a-workflow-from-the-page-editor).
@@ -43,20 +43,20 @@ Os fluxos de trabalho podem ser iniciados de:
 
 >[!NOTE]
 >
->Os administradores de AEM podem [iniciar workflows usando vários outros métodos](/help/sites-administering/workflows-starting.md).
+>Os administradores do AEM podem [iniciar workflows usando vários outros métodos](/help/sites-administering/workflows-starting.md).
 
-## Iniciar um fluxo de trabalho pelo console Sites {#starting-a-workflow-from-the-sites-console}
+## Iniciar um fluxo de trabalho a partir do console Sites {#starting-a-workflow-from-the-sites-console}
 
-Você pode iniciar um workflow com:
+É possível iniciar um fluxo de trabalho a partir:
 
 * [a opção Criar da barra de ferramentas Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [o painel Linha do tempo do console Sites](#starting-a-workflow-from-the-timeline).
 
-Em ambos os casos, é necessário:
+Em ambos os casos, será necessário:
 
-* [Especifique os detalhes do fluxo de trabalho no assistente Criar fluxo de trabalho](#specifying-workflow-details-in-the-create-workflow-wizard).
+* [Especificar os Detalhes do Fluxo de Trabalho no Assistente de Criação de Fluxo de Trabalho](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Iniciar um fluxo de trabalho na barra de ferramentas de sites {#starting-a-workflow-from-the-sites-toolbar}
+### Iniciar um fluxo de trabalho a partir da barra de ferramentas Sites {#starting-a-workflow-from-the-sites-toolbar}
 
 É possível iniciar um fluxo de trabalho na barra de ferramentas do console do **Sites**:
 
@@ -66,9 +66,9 @@ Em ambos os casos, é necessário:
 
    ![screen_shot_2019-03-06at121237pm](assets/screen_shot_2019-03-06at121237pm.png)
 
-1. O **Criar fluxo de trabalho** o assistente o ajudará [especificar os detalhes do workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
+1. A variável **Criar fluxo de trabalho** o assistente o ajudará [especificar os detalhes do fluxo de trabalho](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Iniciar um fluxo de trabalho na linha do tempo {#starting-a-workflow-from-the-timeline}
+### Iniciar um fluxo de trabalho a partir da linha do tempo {#starting-a-workflow-from-the-timeline}
 
 No **Linha do tempo** é possível iniciar um fluxo de trabalho a ser aplicado ao recurso selecionado.
 
@@ -77,13 +77,13 @@ No **Linha do tempo** é possível iniciar um fluxo de trabalho a ser aplicado a
 
    ![screen-shot_2019-03-05at120026](assets/screen-shot_2019-03-05at120026.png)
 
-1. O **Criar fluxo de trabalho** o assistente o ajudará [especificar os detalhes do workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
+1. A variável **Criar fluxo de trabalho** o assistente o ajudará [especificar os detalhes do fluxo de trabalho](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Especificação de detalhes do fluxo de trabalho no assistente Criar fluxo de trabalho {#specifying-workflow-details-in-the-create-workflow-wizard}
+### Especificação de Detalhes do Workflow no Assistente de Criação de Workflow {#specifying-workflow-details-in-the-create-workflow-wizard}
 
-O **Criar fluxo de trabalho** O assistente o ajudará a selecionar o fluxo de trabalho e especificar os detalhes necessários.
+A variável **Criar fluxo de trabalho** O assistente o ajudará a selecionar o fluxo de trabalho e especificar os detalhes necessários.
 
-Após abrir o **Criar fluxo de trabalho** assistente de:
+Depois de abrir o **Criar fluxo de trabalho** assistente de:
 
 * [a opção Criar da barra de ferramentas Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [o painel Linha do tempo do console Sites](#starting-a-workflow-from-the-timeline).
@@ -95,9 +95,9 @@ Você pode especificar detalhes:
    * **Modelo de fluxo de trabalho**
    * **Título do fluxo de trabalho**
 
-      * Você pode especificar um título para essa instância, para ajudá-lo a identificá-la em um estágio posterior.
+      * Você pode especificar um título para essa instância para ajudá-lo a identificá-la posteriormente.
 
-   Dependendo do modelo de fluxo de trabalho, as seguintes opções também estarão disponíveis. Isso permite que o pacote criado como carga seja mantido após a conclusão do workflow.
+   Dependendo do modelo de fluxo de trabalho, as seguintes opções também estão disponíveis. Isso permite que o pacote criado como carga seja mantido após a conclusão do fluxo de trabalho.
 
    * **Manter o pacote do fluxo de trabalho**
    * **Título do pacote**
@@ -126,7 +126,7 @@ Uma caixa de diálogo será aberta, permitindo que você refine a seleção de a
 
          Quaisquer filhos especificados são adicionados à lista de recursos aos quais o fluxo de trabalho será aplicado.
 
-      * **Remover seleção** para remover esse recurso do fluxo de trabalho.
+      * **Remover seleção** para remover esse recurso do workflow.
 
    ![wf-53](assets/wf-53.png)
 
@@ -134,10 +134,10 @@ Uma caixa de diálogo será aberta, permitindo que você refine a seleção de a
    >
    >Se você adicionar recursos extras, poderá usar **Voltar** para ajustar a configuração **Manter fluxo de trabalho do pacote** na etapa **Propriedades**.
 
-1. Use **Criar** para fechar o assistente e criar a instância do fluxo de trabalho. Uma notificação é exibida no console Sites .
+1. Use **Criar** para fechar o assistente e criar a instância do fluxo de trabalho. Uma notificação é exibida no console Sites.
 
-## Iniciar um fluxo de trabalho pelo Editor de páginas {#starting-a-workflow-from-the-page-editor}
+## Iniciar um fluxo de trabalho a partir do editor de páginas {#starting-a-workflow-from-the-page-editor}
 
-Ao editar uma página, você pode selecionar **Informações da página** na barra de ferramentas. O menu suspenso tem a opção **Iniciar no fluxo de trabalho**. Isso abrirá uma caixa de diálogo na qual você pode especificar o fluxo de trabalho necessário, juntamente com um título, se necessário:
+Ao editar uma página, você pode selecionar **Informações da página** na barra de ferramentas. O menu suspenso tem a opção **Iniciar em Fluxo de Trabalho**. Isso abrirá uma caixa de diálogo na qual você pode especificar o fluxo de trabalho necessário, juntamente com um título, se necessário:
 
 ![wf-54](assets/wf-54.png)

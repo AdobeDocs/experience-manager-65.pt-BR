@@ -1,7 +1,7 @@
 ---
-title: Personalização de páginas mostradas pelo Manipulador de erros
+title: Personalizar páginas mostradas pelo Manipulador de erros
 seo-title: Customizing Pages shown by the Error Handler
-description: AEM vem com um manipulador de erros padrão para lidar com erros HTTP
+description: O AEM vem com um manipulador de erros padrão para lidar com erros HTTP
 seo-description: AEM comes with a standard error handler for handling HTTP errors
 uuid: aaf940fd-e428-4c7c-af7f-88b1d02c17c6
 contentOwner: Guillaume Carlino
@@ -17,26 +17,26 @@ ht-degree: 2%
 
 ---
 
-# Personalização de páginas mostradas pelo Manipulador de erros{#customizing-pages-shown-by-the-error-handler}
+# Personalizar páginas mostradas pelo Manipulador de erros{#customizing-pages-shown-by-the-error-handler}
 
-AEM vem com um manipulador de erros padrão para lidar com erros HTTP; por exemplo, mostrando:
+O AEM vem com um manipulador de erros padrão para lidar com erros HTTP; por exemplo, mostrando:
 
 ![chlimage_1-67](assets/chlimage_1-67a.png)
 
-Existem scripts fornecidos pelo sistema (em `/libs/sling/servlet/errorhandler`) para responder a códigos de erro, por padrão, as seguintes informações estão disponíveis com uma instância padrão do CQ:
+Existem scripts fornecidos pelo sistema (em `/libs/sling/servlet/errorhandler`) para responder a códigos de erro, por padrão, os itens a seguir estão disponíveis com uma instância CQ padrão:
 
 * 403.jsp
 * 404.jsp
 
 >[!NOTE]
 >
->AEM é baseado no Apache Sling, portanto, consulte [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) para obter informações detalhadas sobre o Tratamento de erros do Sling.
+>O AEM é baseado no Apache Sling, portanto, consulte [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) para obter informações detalhadas sobre o Tratamento de erros do Sling.
 
 >[!NOTE]
 >
->Em uma instância do autor, [Filtro de depuração do CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) está ativada por padrão. Isso sempre resulta no código de resposta 200. O manipulador de erros padrão responde gravando o rastreamento completo da pilha na resposta.
+>Em uma instância de autor, [Filtro de depuração CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) é ativado por padrão. Isso sempre resulta no código de resposta 200. O manipulador de erros padrão responde gravando o rastreamento de pilha completa na resposta.
 >
->Em uma instância de publicação, o Filtro de depuração do CQ WCM é *always* desativado (mesmo se configurado como ativado).
+>Em uma instância de publicação, o Filtro de depuração WCM do CQ é *sempre* desativado (mesmo se configurado como ativado).
 
 ## Como personalizar páginas mostradas pelo manipulador de erros {#how-to-customize-pages-shown-by-the-error-handler}
 
@@ -46,14 +46,14 @@ Você pode desenvolver seus próprios scripts para personalizar as páginas most
 >
 >Consulte [Uso de sobreposições](/help/sites-developing/overlays.md) para obter mais detalhes.
 
-1. No repositório, copie os scripts padrão:
+1. No repositório, copie o(s) script(s) padrão:
 
    * de `/libs/sling/servlet/errorhandler/`
    * para `/apps/sling/servlet/errorhandler/`
 
-   Como o caminho de destino não existe por padrão, você precisará criá-lo ao fazer isso pela primeira vez.
+   Como o caminho de destino não existe por padrão, será necessário criá-lo ao fazer isso pela primeira vez.
 
-1. Vá até `/apps/sling/servlet/errorhandler`. Aqui você pode:
+1. Vá até `/apps/sling/servlet/errorhandler`. Aqui é possível:
 
    * edite o script existente apropriado para fornecer as informações necessárias.
    * crie e edite um novo script para o código necessário.
@@ -62,37 +62,37 @@ Você pode desenvolver seus próprios scripts para personalizar as páginas most
 
 >[!CAUTION]
 >
->Os manipuladores 404.jsp e 403.jsp foram projetados especificamente para atender à autenticação CQ5; em particular, para permitir o login do sistema no caso desses erros.
+>Os manipuladores 404.jsp e 403.jsp foram projetados especificamente para atender à autenticação CQ5; em particular, para permitir o logon do sistema no caso desses erros.
 >
->Por conseguinte, a substituição destes dois manipuladores deve ser feita com grande cuidado.
+>Portanto, a substituição desses dois manipuladores deve ser feita com muito cuidado.
 
 ### Personalização da resposta a erros HTTP 500 {#customizing-the-response-to-http-errors}
 
 Os erros HTTP 500 são causados por exceções do lado do servidor.
 
-* **[Erro interno do servidor 500](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
-O servidor encontrou uma condição inesperada que o impedia de atender à solicitação.
+* **[Erro interno de servidor 500](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
+O servidor encontrou uma condição inesperada que o impediu de atender à solicitação.
 
-Quando o processamento da solicitação resulta em uma exceção, a estrutura do Apache Sling (que AEM é criada):
+Quando o processamento de solicitações resulta em uma exceção, a estrutura do Apache Sling (em que o AEM está integrado):
 
 * registra a exceção
-* retorna:
+* devoluções:
 
    * o código de resposta HTTP 500
-   * o rastreamento da pilha de exceções
+   * o rastreamento de pilha de exceção
 
    no corpo da resposta.
 
-Por [personalização das páginas mostradas pelo manipulador de erros](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` é possível criar um script. No entanto, ele só será usado se `HttpServletResponse.sendError(500)` é executado explicitamente; ou seja, de um apanhador de exceções.
+Por [personalização das páginas mostradas pelo manipulador de erros](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` pode ser criado. No entanto, só é utilizado se `HttpServletResponse.sendError(500)` é executado explicitamente; ou seja, de um capturador de exceção.
 
-Caso contrário, o código de resposta será definido como 500, mas a variável `500.jsp` script não é executado.
+Caso contrário, o código de resposta será definido como 500, mas a variável `500.jsp` não é executado.
 
-Para lidar com erros 500, o nome do arquivo do script do manipulador de erros deve ser igual à classe de exceção (ou superclasse). Para lidar com todas essas exceções, é possível criar um script `/apps/sling/servlet/errorhandler/Throwable.js`p ou `/apps/sling/servlet/errorhandler/Exception.jsp`.
+Para tratar erros 500, o nome de arquivo do script do manipulador de erros deve ser igual à classe de exceção (ou superclasse). Para lidar com todas essas exceções, você pode criar um script `/apps/sling/servlet/errorhandler/Throwable.js`p ou `/apps/sling/servlet/errorhandler/Exception.jsp`.
 
 >[!CAUTION]
 >
->Em uma instância do autor, [Filtro de depuração do CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) está ativada por padrão. Isso sempre resulta no código de resposta 200. O manipulador de erros padrão responde gravando o rastreamento completo da pilha na resposta.
+>Em uma instância de autor, [Filtro de depuração CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) é ativado por padrão. Isso sempre resulta no código de resposta 200. O manipulador de erros padrão responde gravando o rastreamento de pilha completa na resposta.
 >
->Para um manipulador de erros personalizado, as respostas com código 500 são necessárias, portanto, a variável [O filtro de depuração do CQ WCM precisa ser desativado](/help/sites-deploying/osgi-configuration-settings.md). Isso garante que o código de resposta 500 seja retornado, o que, por sua vez, aciona o manipulador de erros do Sling correto.
+>Para um manipulador de erros personalizado, são necessárias respostas com o código 500 - para que o [O Filtro de Depuração CQ WCM precisa ser desabilitado](/help/sites-deploying/osgi-configuration-settings.md). Isso garante que o código de resposta 500 seja retornado, o que, por sua vez, aciona o manipulador de erros Sling correto.
 >
->Em uma instância de publicação, o Filtro de depuração do CQ WCM é *always* desativado (mesmo se configurado como ativado).
+>Em uma instância de publicação, o Filtro de depuração WCM do CQ é *sempre* desativado (mesmo se configurado como ativado).

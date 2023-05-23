@@ -1,5 +1,5 @@
 ---
-title: Desenvolver conteúdo do Sandbox
+title: Desenvolver conteúdo da sandbox
 seo-title: Develop Sandbox Content
 description: Desenvolver conteúdo
 seo-description: Develop content
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Desenvolver conteúdo do Sandbox  {#develop-sandbox-content}
+# Desenvolver conteúdo da sandbox  {#develop-sandbox-content}
 
 **[Adicionar Clientlibs](add-clientlibs.md)**
 
-Neste ponto, é possível explorar os recursos da comunidade no sandbox ao mesmo tempo em que usa o [Comunidade We-Retail](../../help/sites-developing/we-retail.md), o [Guia de componentes da comunidade](components-guide.md) e [essências do recurso](essentials.md) para referência.
+Nesse ponto, é possível explorar os recursos da comunidade na sandbox usando o [Comunidade We-Retail](../../help/sites-developing/we-retail.md), o [Guia de componentes da comunidade](components-guide.md) e [recursos essenciais](essentials.md) para referência.

@@ -87,7 +87,7 @@ Há várias jornadas de documentação disponíveis para você. Como cada jornad
 |---|---|
 | [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Comece aqui para ver como o AEM oferece suporte a modelos de desenvolvimento headless e como começar a planejar, implementar e ativar seu projeto. |
 | [Jornada de criação headless](/help/journey-headless/author/overview.md) | Comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e aprenda a modelar o conteúdo em seu primeiro projeto headless. |
-| [Jornada do arquiteto headless](/help/journey-headless/architect/overview.md) | Comece aqui para obter uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager e como modelar o conteúdo para seu projeto. |
+| [Jornada do arquiteto headless](/help/journey-headless/architect/overview.md) | Comece aqui para obter uma introdução aos recursos headless avançados e flexíveis do Adobe Experience Manager e aprender como modelar o conteúdo para o seu projeto. |
 | [Jornada de tradução headless](/help/journey-headless/translation/overview.md) | Comece aqui para saber como configurar e gerenciar seus projetos de tradução headless no AEM. |
 
 <!--

@@ -1,7 +1,7 @@
 ---
-title: Configurar o cache de formulários adaptáveis
+title: Configurar cache de formulários adaptáveis
 seo-title: Configure adaptive forms cache
-description: O cache de formulários adaptáveis foi projetado especificamente para formulários e documentos adaptáveis. Armazena em cache formulários adaptáveis e documentos adaptáveis com o objetivo de reduzir o tempo necessário para renderizar um formulário ou documento adaptável no cliente.
+description: O cache de formulários adaptáveis foi projetado especificamente para formulários e documentos adaptáveis. Ele armazena em cache formulários adaptáveis e documentos adaptáveis com o objetivo de reduzir o tempo necessário para renderizar um formulário ou documento adaptável no cliente.
 seo-description: The adaptive forms cache is designed specifically for adaptive forms and documents. It caches adaptive forms and adaptive documents with the objective of reducing the time required to render an adaptive form or document on the client.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
@@ -18,51 +18,51 @@ ht-degree: 1%
 
 ---
 
-# Configurar o cache de formulários adaptáveis {#configure-adaptive-forms-cache}
+# Configurar cache de formulários adaptáveis {#configure-adaptive-forms-cache}
 
-Um cache é um mecanismo para reduzir o tempo de acesso aos dados, reduzir a latência e melhorar as velocidades de entrada/saída (I/O). O cache de formulários adaptáveis armazena somente o conteúdo de HTML e a estrutura JSON de um formulário adaptável sem salvar dados pré-preenchidos. Ajuda a reduzir o tempo necessário para renderizar um formulário adaptável no cliente. Ele foi projetado especificamente para formulários adaptáveis.
+Um cache é um mecanismo para reduzir os tempos de acesso aos dados, reduzir a latência e melhorar as velocidades de entrada/saída (E/S). O cache de formulários adaptáveis armazena somente o conteúdo em HTML e a estrutura JSON de um formulário adaptável sem salvar os dados pré-preenchidos. Ajuda a reduzir o tempo necessário para renderizar um formulário adaptável no cliente. Ele foi projetado especificamente para formulários adaptáveis.
 
 ## Configurar o cache de formulários adaptáveis nas instâncias de criação e publicação {#configure-adaptive-forms-caching-at-author-and-publish-instances}
 
-1. Vá para AEM gerenciador de configuração do console da Web em `https://[server]:[port]/system/console/configMgr`.
-1. Clique em **[!UICONTROL Configuração do canal Web de comunicação interativa e formulário adaptável]** para editar seus valores de configuração.
-1. No [!UICONTROL editar valores de configuração] , especifique o número máximo de formulários ou documentos que uma instância do AEM [!DNL Forms] O servidor pode armazenar em cache no **[!UICONTROL Número de Forms adaptáveis]** campo. O valor padrão é 100.
+1. Vá para o gerenciador de configuração do console da Web do AEM em `https://[server]:[port]/system/console/configMgr`.
+1. Clique em **[!UICONTROL Configuração do canal da Web do formulário adaptável e da comunicação interativa]** para editar os valores de configuração.
+1. No [!UICONTROL editar valores de configuração] especificar o número máximo de formulários ou documentos que uma instância do AEM [!DNL Forms] o servidor pode armazenar em cache no **[!UICONTROL Número de Forms adaptáveis]** campo. O valor padrão é 100.
 
    >[!NOTE]
    >
-   >Para desativar o cache, defina o valor no campo Number of Adaptive Forms como **0**. O cache é redefinido e todos os formulários e documentos são removidos do cache quando você desativa ou altera a configuração do cache.
+   >Para desativar o cache, defina o valor no campo Número de Forms adaptáveis como **0**. O cache é redefinido e todos os formulários e documentos são removidos do cache quando você desativa ou altera a configuração do cache.
 
-   ![Caixa de diálogo Configuração para cache HTML de formulários adaptáveis](assets/cache-configuration-edit.png)
+   ![Caixa de diálogo de configuração para cache de HTML de formulários adaptáveis](assets/cache-configuration-edit.png)
 
 1. Clique em **[!UICONTROL Salvar]** para salvar a configuração.
 
-Seu ambiente é configurado para usar formulários adaptáveis ao cache e ativos relacionados.
+Seu ambiente está configurado para usar formulários adaptáveis em cache e ativos relacionados.
 
 
-## (Opcional) Configurar o cache de formulário adaptável no dispatcher {#configure-the-cache}
+## (Opcional) Configurar o cache de formulários adaptáveis no dispatcher {#configure-the-cache}
 
-Você também pode configurar o armazenamento de formulários adaptáveis no dispatcher para aumentar ainda mais o desempenho.
+Você também pode configurar o armazenamento em cache de formulários adaptáveis no Dispatcher para aumentar ainda mais o desempenho.
 
 ### Pré-requisitos {#pre-requisites}
 
-* Ative o [mesclagem ou preenchimento prévio de dados no cliente](prepopulate-adaptive-form-fields.md#prefill-at-client) opção. Ajuda a unir dados exclusivos para cada instância de um formulário pré-preenchido.
+* Ativar o [mesclar ou preencher previamente os dados no cliente](prepopulate-adaptive-form-fields.md#prefill-at-client) opção. Ele ajuda a mesclar dados exclusivos para cada instância de um formulário pré-preenchido.
 
-### Considerações para armazenar formulários adaptáveis em cache em um dispatcher {#considerations}
+### Considerações para armazenamento em cache de formulários adaptáveis em um dispatcher {#considerations}
 
 * Ao usar o cache de formulários adaptáveis, use o AEM [!DNL Dispatcher] para armazenar em cache bibliotecas de clientes (CSS e JavaScript) de um formulário adaptável.
 * Ao desenvolver componentes personalizados, no servidor usado para desenvolvimento, mantenha o cache de formulários adaptáveis desativado.
-* URLs sem extensão não são armazenados em cache. Por exemplo, URL com padrão`/content/forms/[folder-structure]/[form-name].html` são armazenadas em cache e o armazenamento em cache ignora URLs com padrão `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Portanto, use URLs com extensões para aproveitar os benefícios do armazenamento em cache.
+* Os URLs sem extensão não são armazenados em cache. Por exemplo, URL com padrão`/content/forms/[folder-structure]/[form-name].html` são armazenados em cache e o armazenamento em cache ignora URLs com padrão `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Portanto, use URLs com extensões para aproveitar os benefícios do armazenamento em cache.
 * Considerações para formulários adaptáveis localizados:
    * Usar formato de URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar uma versão localizada de um formulário adaptável em vez de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
-   * [Desabilitar usando a localidade do navegador](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) para URLs com formato `http://host:port/content/forms/af/<adaptivefName>.html`.
-   * Ao usar o Formato de URL `http://host:port/content/forms/af/<adaptivefName>.html`e **[!UICONTROL Usar a localidade do navegador]** no gerenciador de configuração estiver desativado, a versão não localizada do formulário adaptável será fornecida. O idioma não localizado é o idioma usado durante o desenvolvimento do formulário adaptável. O local configurado para seu navegador (localidade do navegador) não é considerado e uma versão não localizada do formulário adaptável é disponibilizada.
-   * Ao usar o Formato de URL `http://host:port/content/forms/af/<adaptivefName>.html`e **[!UICONTROL Usar a localidade do navegador]** no gerenciador de configuração estiver ativado, uma versão localizada do formulário adaptável será disponibilizada, se disponível. O idioma do formulário adaptável localizado é baseado na localidade configurada para seu navegador (localidade do navegador). Pode levar a [armazenamento em cache somente da primeira instância de um formulário adaptável]. Para evitar que o problema ocorra em sua instância, consulte [solução de problemas](#only-first-insatnce-of-adptive-forms-is-cached).
+   * [Desativar usando localidade do navegador](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) para URLs com formato `http://host:port/content/forms/af/<adaptivefName>.html`.
+   * Quando você usa o formato de URL `http://host:port/content/forms/af/<adaptivefName>.html`, e **[!UICONTROL Usar localidade do navegador]** no gerenciador de configurações estiver desativado, a versão não localizada do formulário adaptável será fornecida. O idioma não localizado é o idioma usado no desenvolvimento do formulário adaptável. A localidade configurada para seu navegador (localidade do navegador) não é levada em consideração e uma versão não localizada do formulário adaptável é fornecida.
+   * Quando você usa o formato de URL `http://host:port/content/forms/af/<adaptivefName>.html`, e **[!UICONTROL Usar localidade do navegador]** no gerenciador de configurações ativado, uma versão localizada do formulário adaptável é fornecida, se disponível. O idioma do formulário adaptável localizado se baseia no local configurado para seu navegador (local do navegador). Pode levar a [armazenamento em cache somente da primeira instância de um formulário adaptável]. Para evitar que o problema ocorra na sua instância, consulte [solução de problemas](#only-first-insatnce-of-adptive-forms-is-cached).
 
-### Habilitar o armazenamento em cache no dispatcher
+### Ativar o armazenamento em cache no dispatcher
 
-Execute as etapas listadas abaixo para habilitar e configurar o armazenamento em cache de formulários adaptáveis no dispatcher:
+Execute as etapas listadas abaixo para ativar e configurar o armazenamento em cache de formulários adaptáveis no dispatcher:
 
-1. Abra o seguinte URL para cada instância de publicação do seu ambiente e [ativar o agente de limpeza para publicar instâncias do seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. Abra o seguinte URL para cada instância de publicação de seu ambiente e [ativar agente de limpeza para instâncias de publicação do seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [Adicione o seguinte ao arquivo dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
@@ -91,10 +91,10 @@ Execute as etapas listadas abaixo para habilitar e configurar o armazenamento em
 
    Ao adicionar o acima:
 
-   * Um formulário adaptável permanece em cache até que uma versão atualizada do formulário não seja publicada.
+   * Um formulário adaptável permanece no cache até que uma versão atualizada do formulário não seja publicada.
 
-   * Quando uma versão mais recente do recurso referenciado em um formulário adaptável é publicada, os formulários adaptáveis afetados são automaticamente invalidados. Há algumas exceções para a invalidação automática dos recursos referenciados. Para obter uma solução alternativa para exceções, consulte [solução de problemas](#troubleshooting) seção.
-1. [Adicione o arquivo de regras abaixo dispatcher.any ou personalizado](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). Ela exclui os URLs que não oferecem suporte ao armazenamento em cache. Por exemplo, Comunicação interativa.
+   * Quando uma versão mais recente do recurso referenciado em um formulário adaptável é publicada, os formulários adaptáveis afetados são invalidados automaticamente. Há algumas exceções à invalidação automática de recursos referenciados. Para obter uma solução alternativa para exceções, consulte [solução de problemas](#troubleshooting) seção.
+1. [Adicione o arquivo de regras dispatcher.any abaixo ou um arquivo de regras personalizado](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). Ela exclui os URLs que não oferecem suporte ao armazenamento em cache. Por exemplo, Comunicação interativa.
 
    ```JSON
       /0000 {
@@ -118,7 +118,7 @@ Execute as etapas listadas abaixo para habilitar e configurar o armazenamento em
       }
    ```
 
-1. [Adicione os seguintes parâmetros à lista ignorar parâmetros de URL](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
+1. [Adicionar os seguintes parâmetros à lista para ignorar parâmetros de URL](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
 
    ```JSON
       /ignoreUrlParams {
@@ -128,7 +128,7 @@ Execute as etapas listadas abaixo para habilitar e configurar o armazenamento em
       }
    ```
 
-Seu ambiente de AEM é configurado para armazenar formulários adaptáveis em cache. Armazena em cache todos os tipos de formulários adaptáveis. Se você tiver um requisito para verificar as permissões de acesso do usuário para uma página antes de entregar a página em cache, consulte [armazenamento em cache de conteúdo protegido](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=pt-BR).
+Seu ambiente AEM está configurado para armazenar formulários adaptáveis em cache. Armazena em cache todos os tipos de formulários adaptáveis. Se você tiver um requisito para verificar as permissões de acesso do usuário para uma página antes de entregar a página em cache, consulte [armazenamento em cache de conteúdo protegido](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=pt-BR).
 
 ## Resolução de problemas {#troubleshooting}
 
@@ -136,25 +136,25 @@ Seu ambiente de AEM é configurado para armazenar formulários adaptáveis em ca
 
 #### Problema {#issue1}
 
-Ao selecionar e adicionar imagens ou vídeos por meio do navegador de ativos a um formulário adaptável e essas imagens e vídeos forem editados no editor de Ativos, os formulários adaptáveis contendo essas imagens não serão invalidados do cache do dispatcher automaticamente.
+Quando você seleciona e adiciona imagens ou vídeos por meio do navegador de ativos a um formulário adaptável e essas imagens e vídeos são editados no editor de ativos, os formulários adaptáveis que contêm essas imagens não são invalidados do cache do dispatcher automaticamente.
 
 #### Solução {#Solution1}
 
-Após publicar as imagens e o vídeo, desfaça a publicação e publique explicitamente os formulários adaptáveis que fazem referência a esses ativos.
+Após a publicação das imagens e do vídeo, cancele explicitamente a publicação e publique os formulários adaptáveis que fazem referência a esses ativos.
 
 ### Somente a primeira instância de um formulário adaptável é armazenada em cache {#only-first-instance-of-adaptive-forms-is-cached}
 
 #### Problema {#issue3}
 
-Quando a URL do formulário adaptável não tiver informações de localização, e **[!UICONTROL Usar a localidade do navegador]** no gerenciador de configuração estiver ativado, uma versão localizada do formulário adaptável será disponibilizada e somente a primeira instância do formulário adaptável será armazenada em cache e entregue a cada usuário subsequente.
+Quando a URL do formulário adaptável não tiver informações de localização e **[!UICONTROL Usar localidade do navegador]** no gerenciador de configurações estiver ativado, uma versão localizada do formulário adaptável será fornecida e somente a primeira instância do formulário adaptável será armazenada em cache e entregue a cada usuário subsequente.
 
 #### Solução {#Solution3}
 
 Execute as seguintes etapas para resolver o problema:
 
-1. Abra o conf.d/httpd-dispatcher.conf ou qualquer outro arquivo de configuração configurado para carregar no tempo de execução.
+1. Abra o arquivo conf.d/httpd-dispatcher.conf ou qualquer outro arquivo de configuração configurado para ser carregado no tempo de execução.
 
-1. Adicione o seguinte código ao arquivo e salve-o. É um código de amostra para modificá-lo de acordo com seu ambiente.
+1. Adicione o código a seguir ao arquivo e salve-o. É uma amostra de código, modifique-a para atender ao seu ambiente.
 
 ```XML
    <VirtualHost *:80>

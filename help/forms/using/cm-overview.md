@@ -1,7 +1,7 @@
 ---
 title: Visão geral do gerenciamento de correspondência
 seo-title: Correspondence Management
-description: Este tópico oferece uma visão geral do Gerenciamento de correspondência.
+description: Este tópico fornece uma visão geral do Gerenciamento de correspondência.
 seo-description: This topic gives you an overview of Correspondence Management.
 uuid: fa230c7e-fef1-4996-bdda-1637b36dac68
 content-type: reference
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-O Gerenciamento de correspondência centraliza e gerencia a criação, montagem e delivery de correspondências seguras, personalizadas e interativas. Ele permite reunir rapidamente correspondência de conteúdo pré-aprovado e de autoria personalizada em um processo simplificado, da criação ao arquivamento. Como resultado, seus clientes obtêm a comunicação correta na hora certa da maneira correta: oportuna, precisa, conveniente, segura e relevante. Sua empresa maximiza o valor das interações do cliente e minimiza o custo e o risco com um processo simplificado para facilidade, velocidade e produtividade.
+O Gerenciamento de correspondências centraliza e gerencia a criação, a montagem e o delivery de correspondências seguras, personalizadas e interativas. Ele permite reunir rapidamente a correspondência de conteúdo pré-aprovado e criado de forma personalizada em um processo simplificado, da criação ao arquivamento. Como resultado, seus clientes obtêm a comunicação certa no momento certo e da maneira certa: oportuna, precisa, conveniente, segura e relevante. Sua empresa maximiza o valor das interações com o cliente e minimiza o custo e o risco com um processo simplificado para facilidade, velocidade e produtividade.
 
 ## Benefícios {#benefits}
 
@@ -30,21 +30,21 @@ O Gerenciamento de correspondência centraliza e gerencia a criação, montagem 
 Ele simplifica o processamento, permitindo:
 
 * Implante e gerencie modelos e conteúdo em uma interface intuitiva projetada para usuários empresariais
-* Colete rapidamente correspondência de conteúdo pré-aprovado e de autoria personalizada
+* Montar rapidamente a correspondência de conteúdo pré-aprovado e criado de forma personalizada
 
 ### Gerenciado {#managed}
 
-Ele fornece comunicações de maior qualidade, permitindo:
+Ele fornece comunicações de maior qualidade, permitindo que você:
 
-* Gerencie regras de negócios e conteúdo aprovado em um repositório de conteúdo centralizado
-* Use AEM DAM para gerenciar imagens
+* Gerenciar regras de negócios e conteúdo aprovado em um repositório de conteúdo centralizado
+* Usar o DAM do AEM para gerenciamento de imagens
 * Criar arquivos Adobe PDF para arquivamento e auditoria
-* Crie mensagens em conformidade organizacional usando conteúdo pré-aprovado por meio de regras de negócios incorporadas.
+* Crie mensagens em conformidade com a organização usando conteúdo pré-aprovado por meio de regras de negócios incorporadas.
 
 ### Extensivo {#extensive}
 
-Melhora a participação do cliente, permitindo:
+Isso melhora o engajamento do cliente, permitindo que você:
 
-* Adicione tecnologias interativas para permitir um canal bidirecional, reduzindo os envios de papel
-* Informações confidenciais da Protect com segurança de documentos integrada e completa
-* Envie correspondência por meio do canal de comunicação preferencial do cliente, seja por email, celular ou fax.
+* Adicione tecnologias interativas para habilitar um canal bidirecional, reduzindo o envio de papel
+* Informações confidenciais do Protect com segurança de documentos integrada e completa
+* Envie correspondência pelo canal de comunicação preferido do cliente, seja eletrônico, por correio, celular ou fax.

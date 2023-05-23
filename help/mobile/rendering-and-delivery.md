@@ -12,7 +12,7 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -20,23 +20,23 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-AEM conteúdo pode ser facilmente renderizado via [Servlets Padrão Sling](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para renderizar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e outros formatos.
+O conteúdo do AEM pode ser facilmente renderizado via [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para renderizar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e outros formatos.
 
-Essas renderizações prontas para uso normalmente caminham pelo repositório e retornam o conteúdo como está.
+Essas renderizações prontas para uso normalmente orientam o repositório e retornam o conteúdo como está.
 
-AEM, por meio do Sling, também oferece suporte ao desenvolvimento e implantação de renderizadores de sling personalizados para assumir o controle total do esquema renderizado e do conteúdo.
+O AEM, por meio do Sling, também oferece suporte ao desenvolvimento e à implantação de renderizadores de sling personalizados para assumir o controle total do esquema e do conteúdo renderizados.
 
-Os renderizadores padrão dos serviços de conteúdo preenchem a lacuna entre os padrões de sling predefinidos e o desenvolvimento personalizado, permitindo a personalização e o controle de muitos aspectos do conteúdo renderizado sem desenvolvimento.
+Os Renderizadores padrão dos serviços de conteúdo preenchem a lacuna entre Padrões do Sling prontos para uso e Desenvolvimento personalizado, permitindo a personalização e o controle de vários aspectos do conteúdo renderizado sem desenvolvimento.
 
 O diagrama a seguir mostra a renderização dos serviços de conteúdo.
 
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
-## Solicitar JSON {#requesting-json}
+## Solicitação de JSON {#requesting-json}
 
-Use **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />.[&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.][&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.json** para solicitar JSON.]
+Uso **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />.[&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.][&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.json** para solicitar JSON.]
 
 <table>
  <tbody>
@@ -46,26 +46,26 @@ Use **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&qu
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>OPCIONAL</strong><br /> </p> <p>uma configuração de exportação encontrada em /apps/mobileapps/caas/exportConfig/EXPORT-CONFIG<br /> <br /> Se omitida, a configuração de exportação padrão será aplicada </p> </td>
+   <td><p><strong>OPCIONAL</strong><br /> </p> <p>uma configuração de exportação foi encontrada em /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Se omitido, a configuração de exportação padrão será aplicada </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong>OPCIONAL</strong><br /> <br /> recursão de profundidade para renderização de filhos como usado na renderização do Sling</td>
+   <td><strong>OPCIONAL</strong><br /> <br /> recursão de profundidade para renderização de filhos, conforme usado na renderização de Sling</td>
   </tr>
  </tbody>
 </table>
 
 ## Criação de configurações de exportação {#creating-export-configs}
 
-As configurações de exportação podem ser criadas para personalizar a renderização JSON.
+Configurações de exportação podem ser criadas para personalizar a renderização JSON.
 
-Você pode criar um nó de configuração em */apps/mobileapps/caas/exportConfig.*
+Você pode criar um nó de configuração em */apps/mobileapps/caas/exportConfigs.*
 
-| Nome do nó | Nome da configuração (para seletor de renderização) |
+| Nome do nó | Nome da configuração (para renderização do seletor) |
 |---|---|
 | jcr:primaryType | nt:unstructured |
 
-A tabela a seguir mostra as propriedades das Configurações de exportação:
+A tabela a seguir mostra as propriedades das Configurações de Exportação:
 
 <table>
  <tbody>
@@ -78,66 +78,66 @@ A tabela a seguir mostra as propriedades das Configurações de exportação:
   </tr>
   <tr>
    <td>includeComponents</td>
-   <td>Sequência de caracteres[]</td>
+   <td>String[]</td>
    <td>incluir tudo</td>
    <td>sling:resourceType</td>
    <td>excluir detalhes de nós com sling:resourceType especificado da exportação JSON</td>
   </tr>
   <tr>
    <td>excludeComponents</td>
-   <td>Sequência de caracteres[]</td>
-   <td>excluir nada</td>
+   <td>String[]</td>
+   <td>não excluir nada</td>
    <td>sling:resourceType</td>
-   <td>incluir detalhes somente para nós com sling:resourceType especificado na exportação JSON</td>
+   <td>inclua detalhes apenas para nós com sling:resourceType especificado da exportação JSON</td>
   </tr>
   <tr>
    <td>excludePropertyPrefixes</td>
-   <td>Sequência de caracteres[]</td>
-   <td>excluir nada</td>
+   <td>String[]</td>
+   <td>não excluir nada</td>
    <td>Prefixos de propriedade</td>
    <td>excluir propriedades que começam com prefixos especificados da exportação JSON</td>
   </tr>
   <tr>
    <td>excludeProperties</td>
-   <td>Sequência de caracteres[]</td>
-   <td>excluir nada</td>
+   <td>String[]</td>
+   <td>não excluir nada</td>
    <td>Nomes de propriedades</td>
    <td>excluir propriedades especificadas da exportação JSON</td>
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>Sequência de caracteres[]</td>
+   <td>String[]</td>
    <td>incluir tudo</td>
    <td>Nomes de propriedades</td>
-   <td><p>if excludePropertyPrefixes<br /> isso inclui propriedades especificadas apesar de corresponder ao prefixo que está sendo excluído,</p> <p>else (exclude properties ignoradas) inclui apenas essas propriedades</p> </td>
+   <td><p>se excludePropertyPrefixes estiver definido<br /> inclui propriedades especificadas apesar de corresponderem ao prefixo que está sendo excluído,</p> <p>else (excluir propriedades ignoradas) incluir somente estas propriedades</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
-   <td>Sequência de caracteres[]</td>
+   <td>String[]</td>
    <td>incluir tudo</td>
-   <td>nomes filhos</td>
+   <td>nomes secundários</td>
    <td>excluir filhos especificados da exportação JSON</td>
   </tr>
   <tr>
    <td>excludeChildren</td>
-   <td>Sequência de caracteres[]<br /> <br /> </td>
-   <td>excluir nada</td>
-   <td>nomes filhos</td>
+   <td>String[]<br /> <br /> </td>
+   <td>não excluir nada</td>
+   <td>nomes secundários</td>
    <td>incluir somente filhos especificados da exportação JSON, excluir outros</td>
   </tr>
   <tr>
    <td>renameProperties</td>
-   <td>Sequência de caracteres[]<br /> <br /> </td>
-   <td>renomear nada</td>
+   <td>String[]<br /> <br /> </td>
+   <td>não renomear</td>
    <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
    <td>renomear propriedades usando substituições</td>
   </tr>
  </tbody>
 </table>
 
-### Substituições de exportação do tipo de recurso {#resource-type-export-overrides}
+### Sobreposições de exportação de tipo de recurso {#resource-type-export-overrides}
 
-Crie um nó de configuração em */apps/mobileapps/caas/exportConfig.*
+Crie um nó de configuração em */apps/mobileapps/caas/exportConfigs.*
 
 | name | resourceTypeOverrides |
 |---|---|
@@ -156,17 +156,17 @@ A tabela a seguir mostra as propriedades:
   </tr>
   <tr>
    <td>&lt;SELECTOR_TO_INC&gt;</td>
-   <td>Sequência de caracteres[] </td>
+   <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Para os seguintes tipos de recursos do sling, não retorne a exportação padrão do CaaS json.<br /> Retorne uma exportação json do cliente renderizando o recurso como;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
+   <td>Para os seguintes tipos de recursos sling, não retorne a exportação json CaaS padrão.<br /> Retorne uma exportação json do cliente renderizando o recurso como;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
 
-### Configurações de exportação dos serviços de conteúdo existentes {#existing-content-services-export-configs}
+### Configurações de exportação existentes do Content Services {#existing-content-services-export-configs}
 
-Os Serviços de conteúdo incluem duas configurações de exportação:
+Os Content Services incluem duas configurações de exportação:
 
 * padrão (nenhuma configuração especificada)
 * página (para renderizar páginas do site)
@@ -193,7 +193,7 @@ A configuração de exportação padrão dos Serviços de conteúdo será aplica
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description,descrição<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
+   <td>jcr:texto,texto<br /> jcr:título,título<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
   </tr>
   <tr>
    <td>includeComponents</td>
@@ -212,8 +212,8 @@ A configuração de exportação padrão dos Serviços de conteúdo será aplica
    <td> </td>
   </tr>
   <tr>
-   <td>Substituições JSON do Sling</td>
-   <td>fundação/componentes/imagem<br /> wcm/foundation/components/image<br /> mobileapps/caas/components/data/contentReference<br /> mobileapps/caas/components/data/assetlist</td>
+   <td>Substituições do Sling JSON</td>
+   <td>foundation/components/image<br /> wcm/foundation/components/image<br /> mobileapps/caas/components/data/contentReference<br /> mobileapps/caas/components/data/assetlist</td>
   </tr>
  </tbody>
 </table>
@@ -226,8 +226,8 @@ Essa configuração estende o padrão para incluir o agrupamento de filhos em um
 
 ### Recursos adicionais {#additional-resources}
 
-Consulte os recursos abaixo para saber mais sobre tópicos adicionais nos Serviços de conteúdo:
+Consulte os recursos abaixo para saber mais sobre tópicos em Serviços de conteúdo:
 
 * [Desenvolvimento de modelos](/help/mobile/administer-mobile-apps.md)
-* [Criação de serviços de conteúdo](/help/mobile/develop-content-as-a-service.md)
+* [Criação dos serviços de conteúdo](/help/mobile/develop-content-as-a-service.md)
 * [Administração dos serviços de conteúdo](/help/mobile/developing-content-services.md)

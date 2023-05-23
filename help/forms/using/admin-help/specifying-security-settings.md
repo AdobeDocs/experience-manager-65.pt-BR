@@ -1,5 +1,5 @@
 ---
-title: Especificação das configurações de segurança
+title: Especificação de configurações de segurança
 seo-title: Specifying security settings
 description: Saiba como especificar configurações de segurança.
 seo-description: Learn how to specify security settings.
@@ -17,12 +17,12 @@ ht-degree: 2%
 
 ---
 
-# Especificação das configurações de segurança {#specifying-security-settings}
+# Especificação de configurações de segurança {#specifying-security-settings}
 
-O Forms permite controlar se entidades externas em entradas XML são resolvidas. Por padrão, eles são resolvidos, mas você pode alterar esse comportamento para aumentar a segurança do sistema de formulários AEM.
+O Forms permite controlar se as entidades externas nas entradas XML são resolvidas. Por padrão, elas são resolvidas, mas você pode alterar esse comportamento para aumentar a segurança do sistema de formulários AEM.
 
 **Impedir o processamento de arquivos de dados XML que contêm referências a entidades externas**
 
 1. No console de administração, clique em **[!UICONTROL Serviços > Forms]**.
-1. Desmarque a caixa de seleção Resolver entidades externas .
+1. Desmarque a caixa de seleção Resolver entidades externas.
 1. Clique em **[!UICONTROL Salvar]**.

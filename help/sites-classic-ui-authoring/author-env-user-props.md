@@ -14,7 +14,7 @@ exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 75%
+ht-degree: 26%
 
 ---
 
@@ -22,39 +22,42 @@ ht-degree: 75%
 
 O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de criação.
 
-Usando as [configurações da conta](#account-settings) e [preferências do usuário](#user-preferences) as opções e preferências a seguir podem ser definidas:
+Usar o [configurações da conta](#account-settings) e [preferências do usuário](#user-preferences) as seguintes opções e preferências podem ser definidas:
 
-* **Barra de ferramentas de edição** Seleciona se deseja ter a barra de ferramentas de edição global. Essa barra de ferramentas, mostrada na parte superior da janela do navegador, oferece 
+* **Edição da barra de ferramentas**
+Selecione se deseja ter a barra de ferramentas de edição global. Essa barra de ferramentas, que é mostrada na parte superior da janela do navegador, fornece 
 **Copiar**, **Recortar**, **Colar**, **Excluir** botões para usar com os componentes de parágrafo nessa página:
 
    * Mostrar quando necessário (Padrão)
    * Sempre mostrar
    * Manter oculto
 
-* **Representar como** Com a funcionalidade [Representar como,](/help/sites-administering/security.md#impersonating-another-user) um usuário pode trabalhar em nome de outro usuário.
+* **Representar como**
+Com o [Representar como](/help/sites-administering/security.md#impersonating-another-user) funcionalidade que um usuário pode trabalhar em nome de outro usuário.
 
 * **Idioma**
-O idioma a ser usado para a interface do usuário do ambiente de criação. Selecione o idioma necessário na lista disponível.
+O idioma a ser usado para a interface do usuário do ambiente de criação. Selecione o idioma desejado na lista disponível.
 
-* **Gerenciamento de janelas** Selecione:
+* **Gerenciamento de janelas**
+Selecione:
 
-   * Várias janelas (padrão) As páginas serão abertas em uma nova janela.
-   * Janela única As páginas serão abertas na janela atual.
+   * Várias páginas do Windows (padrão) serão abertas em uma nova janela.
+   * Páginas de janela única serão abertas na janela atual.
 
-## Configurações da conta {#account-settings}
+## Configurações de conta {#account-settings}
 
-O ícone do usuário permite o acesso a várias das seguintes opções:
+O ícone de usuário fornece acesso a várias das seguintes opções:
 
-* Fazer logoff
+* Sair
 * [Representar como](/help/sites-administering/security.md#impersonating-another-user)
-* [Preferências do usuário](#user-preferences)
+* [Preferências de usuário](#user-preferences)
 * [Caixa de entrada de notificações](/help/sites-classic-ui-authoring/author-env-inbox.md)
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
-### Preferências do usuário {#user-preferences}
+### Preferências de usuário {#user-preferences}
 
-Cada usuário pode definir certas propriedades para si mesmo. Isso está disponível na caixa de diálogo **Preferências**, no canto superior direito dos consoles.
+Cada usuário pode definir determinadas propriedades para si mesmo. Isso está disponível em **Preferências** no canto superior direito dos consoles.
 
 ![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
 

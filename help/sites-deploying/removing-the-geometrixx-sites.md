@@ -1,7 +1,7 @@
 ---
 title: Remover os sites do Geometrixx
 seo-title: Removing the Geometrixx Sites
-description: Saiba como remover o conteúdo de amostra do Geometrixx.
+description: Saiba como remover o conteúdo de Geometrixx de exemplo.
 seo-description: Learn how to remove the sample Geometrixx content.
 uuid: 07d20837-3375-4e64-bb07-3e4d10452335
 contentOwner: User
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Remover os sites do Geometrixx{#removing-the-geometrixx-sites}
 
-AEM vem com um conjunto de sites de exemplo do Geometrixx. Você pode remover esse conteúdo de amostra por meio do **Gerenciador de pacotes**.
+O AEM vem com um conjunto de exemplos de sites de Geometrixx. Você pode remover esse conteúdo de amostra por meio da **Gerenciador de pacotes**.
 
-Os pacotes relacionados ao geometrixx individuais são:
+Os pacotes individuais relacionados ao geometrixx são:
 
 * `cq-geometrixx-outdoors-ugc-pkg-<version>.zip`
 * `cq-geometrixx-pkg-<version>.zip`
@@ -32,17 +32,17 @@ Os pacotes relacionados ao geometrixx individuais são:
 * `cq-geometrixx-commons-pkg-<version>.zip`
 * `cq-geometrixx-media-pkg-<version>.zip`
 
-Para remover um pacote individual, clique com o botão **Desinstalar** nesse pacote.
+Para remover um pacote individual, basta clicar em **Desinstalar** nesse pacote.
 
-Há também um super pacote:
+Há também um super-pacote:
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-Este pacote inclui todos os pacotes individuais acima. Para remover todo o conteúdo relacionado ao geometrixx de uma só vez, clique em **Desinstalar** neste pacote. O super-pacote entrará no estado desinstalado e todos os pacotes individuais desaparecerão da visualização do gerenciador de pacotes.
+Este pacote inclui todos os pacotes individuais acima. Para remover todo o conteúdo relacionado ao geometrixx de uma só vez, clique em **Desinstalar** neste pacote. O superpacote entrará no estado desinstalado e todos os pacotes individuais desaparecerão da visualização do gerenciador de pacotes.
 
-Agora você tem uma instância de AEM &quot;vazia&quot; sem nenhum site de demonstração.
+Agora você tem uma instância &quot;vazia&quot; do AEM sem nenhum site de demonstração.
 
 >[!NOTE]
 >
->Ao atualizar, os sites geometrixx são reinstalados automaticamente. Talvez seja necessário remover sites geometrixx após a atualização, caso não queira essas amostras.
+>Ao atualizar, os sites do geometrixx são automaticamente reinstalados. Talvez seja necessário remover os sites do geometrixx após a atualização se você não quiser essas amostras.
 

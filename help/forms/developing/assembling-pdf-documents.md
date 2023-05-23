@@ -1,7 +1,7 @@
 ---
-title: Montando Documentos do PDF
+title: Montagem de documentos do PDF
 seo-title: Assembling PDF Documents
-description: Use o serviço Assembler para montar vários documentos PDF em um documento PDF ou desmontar um documento PDF em vários documentos PDF.
+description: Use o serviço Assembler para reunir vários documentos de PDF em um documento de PDF ou desmontar um documento de PDF em vários documentos de PDF.
 seo-description: Use the Assembler service to assemble multiple PDF documents into one PDF document or disassemble one PDF document into multiple PDF documents.
 uuid: 0789feea-1bbc-4acd-9ad7-ddf4d05e1c68
 contentOwner: admin
@@ -19,15 +19,15 @@ ht-degree: 0%
 
 ---
 
-# Montando Documentos do PDF {#assembling-pdf-documents}
+# Montagem de documentos do PDF {#assembling-pdf-documents}
 
-**Exemplos e exemplos neste documento são apenas para o AEM Forms no ambiente JEE.**
+**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
 
-**Sobre o Serviço Assembler**
+**Sobre o Serviço de Assembler**
 
-O serviço Assembler pode reunir vários documentos PDF em um documento PDF ou desmontar um documento PDF em vários documentos PDF. O serviço Assembler pode manipular documentos de várias maneiras, como alterar o tamanho da página e girar o conteúdo. Ele pode inserir conteúdo adicional, como cabeçalhos, rodapés e um índice, além de preservar, importar ou exportar conteúdo existente, como anotações, anexos de arquivo e marcadores.
+O serviço Assembler pode reunir vários documentos de PDF em um documento de PDF ou desmontar um documento de PDF em vários documentos de PDF. O serviço do Assembler pode manipular documentos de várias maneiras, como alterar o tamanho da página e girar o conteúdo. Ele pode inserir conteúdo adicional, como cabeçalhos, rodapés e um sumário, e pode preservar, importar ou exportar conteúdo existente, como anotações, anexos de arquivo e marcadores.
 
-A partir do LiveCycle ES 8.0 e posteriores, o suporte para pacotes PDF está disponível no serviço Assembler.
+A partir do LiveCycle ES 8.0 e mais recente, o suporte para pacotes de PDF está disponível no serviço Assembler.
 
 >[!NOTE]
 >

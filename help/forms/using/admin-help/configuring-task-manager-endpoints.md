@@ -1,7 +1,7 @@
 ---
-title: Configurando endpoints do Gerenciador de Tarefas
+title: Configurar pontos de extremidade do Gerenciador de tarefas
 seo-title: Configuring Task Manager endpoints
-description: Saiba como configurar endpoints do Gerenciador de tarefas.
+description: Saiba como configurar pontos de extremidade do Gerenciador de tarefas.
 seo-description: Learn how to configure Task Manager endpoints.
 uuid: 07604b10-0bd7-4bce-9624-7ebac4754f56
 contentOwner: admin
@@ -17,32 +17,32 @@ ht-degree: 0%
 
 ---
 
-# Configurando endpoints do Gerenciador de Tarefas {#configuring-task-manager-endpoints}
+# Configurar pontos de extremidade do Gerenciador de tarefas {#configuring-task-manager-endpoints}
 
-Os endpoints do Gerenciador de tarefas permitem que os usuários do Workspace chamem o serviço.
+Os pontos de extremidade do Gerenciador de tarefas permitem que os usuários do Workspace chamem o serviço.
 
-**Configurações de ponto de extremidade do Gerenciador de Tarefas**
+**Configurações de ponto de extremidade do Gerenciador de tarefas**
 
-Use as seguintes configurações para configurar um ponto de extremidade do Gerenciador de Tarefas.
+Use as seguintes configurações para configurar um ponto de extremidade do Gerenciador de tarefas.
 
-**Nome:** (Obrigatório) Identifica o ponto de extremidade. O nome é exibido na exibição de cartão no Workspace. Não inclua um caractere &lt; porque ele truncará o nome exibido no Workspace. Se estiver inserindo um URL como o nome do ponto de extremidade, verifique se ele está em conformidade com as regras de sintaxe especificadas na RFC1738.
+**Nome:** (Obrigatório) Identifica o endpoint. O nome é exibido na visualização de cartão no Espaço de trabalho. Não inclua um caractere &lt; porque ele truncará o nome exibido no Workspace. Se você estiver inserindo um URL como o nome do endpoint, verifique se ele está em conformidade com as regras de sintaxe especificadas no RFC1738.
 
-**Descrição:** Uma descrição do ponto de extremidade. Não inclua um caractere &lt; porque ele truncará a descrição exibida no Workspace.
+**Descrição:** Uma descrição do endpoint. Não inclua um caractere &lt; porque ele truncará a descrição exibida no Workspace.
 
-**Instruções da tarefa:** Instruções para o usuário que inicia esse fluxo de trabalho.
+**Instruções da tarefa:** Instruções para o usuário que inicia esse workflow.
 
-**Proprietário do Processo:** O nome da pessoa responsável pelo processo.
+**Proprietário do processo:** O nome da pessoa responsável pelo processo.
 
-**O Usuário Pode Encaminhar A Tarefa:** Permite que o usuário encaminhe a tarefa inicial.
+**O Usuário Pode Encaminhar Tarefas:** Permite ao usuário encaminhar a tarefa inicial.
 
-**Mostrar janela do anexo:** Permite que o usuário veja a janela de anexo.
+**Mostrar janela de anexo:** Permite que o usuário veja a janela do anexo.
 
-**Permitir adição de anexo:** Permite que o usuário adicione anexos e notas.
+**Permitir Anexo Adicionando:** Permite que o usuário adicione anexos e notas.
 
-**Tarefa Inicialmente Bloqueada:** Bloqueia a tarefa inicial.
+**Tarefa inicialmente bloqueada:** Bloqueia a tarefa inicial.
 
-**Adicionar ACLs para filas compartilhadas:** A tarefa inicial é criada com ACLs para usuários de fila compartilhada.
+**Adicionar ACLs para Filas Compartilhadas:** A tarefa inicial é criada com ACLs para usuários compartilhados da fila.
 
-**Categorização:** (Obrigatório) A categoria na qual o usuário verá o formulário no Workspace. Selecione uma categoria na lista ou selecione Nova categoria para adicionar uma categoria.
+**Categorização:** (Obrigatório) A categoria em que o usuário verá o formulário no Espaço de trabalho. Selecione uma categoria na lista ou selecione Nova categoria para adicionar uma categoria.
 
-**Nome da Operação:** (Obrigatório) Uma lista de operações que podem ser atribuídas ao endpoint.
+**Nome da operação:** (Obrigatório) Uma lista de operações que podem ser atribuídas ao endpoint.

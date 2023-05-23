@@ -1,5 +1,5 @@
 ---
-title: Incorporar o vídeo do Dynamic Media, o visualizador de imagens ou o visualizador dimensional em uma página da Web
+title: Incorpore o Vídeo do Dynamic Media, o Visualizador de imagens ou o Visualizador dimensional em uma página da Web
 description: Saiba como incorporar vídeos, imagens ou imagens 3D do Dynamic Media em uma página da Web
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
@@ -17,19 +17,19 @@ ht-degree: 21%
 
 ---
 
-# Incorporar o vídeo do Dynamic Media, o visualizador de imagens ou o visualizador dimensional em uma página da Web {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Incorpore o Vídeo do Dynamic Media, o Visualizador de imagens ou o Visualizador dimensional em uma página da Web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Use o recurso **[!UICONTROL Incorporar código]** quando quiser reproduzir o vídeo ou exibir um ativo incorporado em uma página da Web. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Incorporar código]**.
 
-Você incorporar URLs somente se estiver *not* usando o Adobe Experience Manager como WCM. Se estiver usando o Experience Manager como o WCM, [você adiciona os ativos diretamente na página](adding-dynamic-media-assets-to-pages.md).
+Você incorpora URLs somente se estiver *não* usando o Adobe Experience Manager como o WCM. Se estiver usando o Experience Manager como o WCM, [você adiciona os ativos diretamente na página](adding-dynamic-media-assets-to-pages.md).
 
-Consulte [Vincular URLs ao seu aplicativo web](linking-urls-to-yourwebapplication.md).
+Consulte [Vincular URLs ao aplicativo web](linking-urls-to-yourwebapplication.md).
 
-Consulte [Fornecer imagens otimizadas para um site responsivo](responsive-site.md).
+Consulte [Entregar imagens otimizadas para um site responsivo](responsive-site.md).
 
 >[!NOTE]
 >
->O código incorporado não está disponível para cópia até que você tenha publicado o ativo selecionado. Além disso, você também deve publicar a predefinição do visualizador ou a predefinição de imagem.
+>O código incorporado não está disponível para cópia até que você tenha publicado o ativo selecionado. Além disso, você também deve publicar a predefinição do visualizador ou a predefinição da imagem.
 >
 >Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 >
@@ -37,9 +37,9 @@ Consulte [Fornecer imagens otimizadas para um site responsivo](responsive-site.m
 >
 >Consulte [Publicar predefinições da imagem](managing-image-presets.md#publishing-image-presets).
 
-**Para incorporar o Vídeo do Dynamic Media, o Visualizador de imagem ou o Visualizador de dimensões em uma página da Web:**
+**Para incorporar o Vídeo do Dynamic Media, o Visualizador de imagens ou o Visualizador dimensional em uma página da Web:**
 
-1. Navegue até o *publicado* vídeo ou ativo de imagem cujo código incorporado você deseja copiar.
+1. Navegue até a *publicado* ativo de vídeo ou imagem cujo código incorporado você deseja copiar.
 
    Lembre-se de que o código incorporado só está disponível para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou da imagem também deve ser publicada.
 
@@ -52,11 +52,11 @@ Consulte [Fornecer imagens otimizadas para um site responsivo](responsive-site.m
 1. No painel à esquerda, selecione o menu suspenso e selecione **[!UICONTROL Visualizadores]**.
 1. No painel à esquerda, selecione um nome de predefinição do visualizador. A predefinição do visualizador é aplicada ao ativo.
 1. Selecionar **[!UICONTROL Incorporar]**.
-1. No **[!UICONTROL Código incorporado]** , copie o código inteiro para a área de transferência e selecione **[!UICONTROL Fechar]**.
+1. No **[!UICONTROL Código de inserção]** , copie o código inteiro para a área de transferência e selecione **[!UICONTROL Fechar]**.
 1. Cole o código incorporado nas páginas da Web.
 
-## Usar HTTP/2 para fornecer ativos da Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Utilização de HTTP/2 para fornecer ativos do Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como os navegadores e servidores se comunicam. Ele oferece transferência mais rápida de informações e reduz a quantidade de poder de processamento necessário. A entrega de ativos do Dynamic Media agora pode ser feita via HTTP/2, o que oferece melhor resposta e tempo de carregamento.
+HTTP/2 é o novo protocolo da Web atualizado que melhora a maneira como navegadores e servidores se comunicam. Ele possibilita a transferência mais rápida de informações e reduz a quantidade necessária de poder de processamento. A entrega de ativos do Dynamic Media agora pode ser por HTTP/2, o que fornece melhores tempos de resposta e carregamento.
 
-Consulte [Entrega de conteúdo HTTP2](http2.md) para obter detalhes completos sobre a introdução ao HTTP/2 com sua conta do Dynamic Media.
+Consulte [Entrega de conteúdo HTTP2](http2.md) para obter detalhes completos sobre a introdução ao uso de HTTP/2 com sua conta da Dynamic Media.

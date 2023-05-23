@@ -1,5 +1,5 @@
 ---
-title: Obter variáveis de tarefa no URL de resumo
+title: Recuperando Variáveis de Tarefa no URL de Resumo
 seo-title: Getting Task Variables in Summary URL
 description: Como reutilizar as informações sobre uma tarefa e gerar um URL de resumo para resumir ou descrever uma tarefa.
 seo-description: How-to reuse the information about a task and generate a Summary URL to summarize or describe a task.
@@ -16,26 +16,26 @@ ht-degree: 0%
 
 ---
 
-# Obter variáveis de tarefa no URL de resumo {#getting-task-variables-in-summary-url}
+# Recuperando Variáveis de Tarefa no URL de Resumo {#getting-task-variables-in-summary-url}
 
 A página de resumo exibe informações relacionadas à tarefa. Este artigo descreve como você pode reutilizar informações relacionadas à tarefa na página de resumo.
 
-Nesta orquestração de amostra, um funcionário envia um formulário de aplicativo de licença. O formulário de aplicativo é enviado ao gerente do funcionário para aprovação.
+Nesta orquestração de exemplo, um funcionário envia um formulário de inscrição de licença. O formulário de inscrição é então enviado ao gerente do funcionário para aprovação.
 
-1. Crie um renderizador de HTML de amostra (html.esp) para resourceType **Funcionários/PtoApplication**.
+1. Crie um renderizador de HTML de amostra (html.esp) para resourceType **Funcionários/AplicativoPto**.
 
-   O renderizador assume as seguintes propriedades para serem definidas no nó:
+   O renderizador pressupõe que as seguintes propriedades sejam definidas no nó:
 
    * ename
    * empid
-   * reason
-   * duration
+   * motivo
+   * duração
 
    >[!NOTE]
    >
-   >Esse renderizador é o modelo de página de resumo.
+   >Esse renderizador é o modelo da página de resumo.
 
-   O código de amostra a seguir para esse renderizador está contido em:
+   O seguinte código de amostra para esse renderizador está contido em:
 
    `apps/Employees/PtoApplication/html.esp`
 
@@ -58,33 +58,33 @@ Nesta orquestração de amostra, um funcionário envia um formulário de aplicat
    </html>
    ```
 
-1. Modifique a orquestração para extrair as quatro propriedades dos dados de formulário enviados. Depois disso, crie um nó no CRX do tipo **Funcionários/PtoApplication**, com as propriedades preenchidas.
+1. Modifique a orquestração para extrair as quatro propriedades dos dados de formulário enviados. Depois disso, crie um nó no CRX do tipo **Funcionários/AplicativoPto**, com as propriedades preenchidas.
 
-   1. Criar um processo **criar resumo PTO** e use-o como um subprocesso antes da variável **Atribuir tarefa** na sua orquestração.
-   1. Definir **employeeName**, **employeeID**, **ptoReason**, **totalDays** e **nodeName** como variáveis de entrada no novo processo. Essas variáveis serão passadas como dados de formulário enviados.
+   1. Criar um processo **criar resumo de PTO** e use-o como um subprocesso antes da variável **Atribuir tarefa** operação na sua orquestração.
+   1. Definir **employeeName**, **employeeID**, **ptoReason**, **totalDays**, e **nodeName** como variáveis de entrada no novo processo. Essas variáveis serão transmitidas como dados de formulário enviados.
 
-      Definir também uma variável de saída **ptoNodePath** que será usada ao definir o Url de resumo.
+      Definir também uma variável de saída **ptoNodePath** que será usado ao definir o URL de resumo.
 
-   1. No **criar resumo PTO** use o **definir valor** para definir os detalhes de entrada em um **nodeProperty**(**nodeProps**).
+   1. No **criar resumo de PTO** processo, use o **definir valor** para definir os detalhes de entrada em um **nodeProperty**(**nodeProps**) mapa.
 
-      As chaves neste mapa devem ser as mesmas que as chaves definidas no renderizador de HTML na etapa anterior.
+      As chaves neste mapa devem ser as mesmas definidas no renderizador de HTML na etapa anterior.
 
-      Além disso, adicione uma **sling:resourceType** chave com valor **Funcionários/PtoApplication** no mapa.
+      Além disso, adicione um **sling:resourceType** chave com valor **Funcionários/AplicativoPto** no mapa.
 
-   1. Usar o subprocesso **storeContent** do **ContentRepositoryConnector** no **criar resumo PTO** processo. Esse subprocesso cria um nó CRX.
+   1. Usar o subprocesso **storeContent** do **ConectorDoRepositórioDeConteúdo** serviço no **criar resumo de PTO** processo. Esse subprocesso cria um nó CRX.
 
       São necessárias três variáveis de entrada:
 
-      * **Caminho da pasta**: O caminho onde o novo nó CRX é criado. Defina o caminho como **/conteúdo**.
-      * **Nome do nó**: Atribua a variável de entrada nodeName a este campo. Esta é uma string de nome de nó exclusiva.
-      * **Tipo de nó**: Definir o tipo como **nt:unstructured**. A saída desse processo é nodePath. O nodePath é o caminho CRX do nó recém-criado. O ndoePath seria a saída final do **criar PTO** processo de resumo.
-   1. Envio dos dados de formulário enviados (**employeeName**, **employeeID**, **ptoReason** e **totalDays**) como entrada no novo processo **criar resumo PTO**. Pegue a saída como **ptoSummaryNodePath**.
+      * **Caminho da pasta**: o caminho onde o novo nó CRX é criado. Definir o caminho como **/content**.
+      * **Nome do nó**: atribua a variável de entrada nodeName a esse campo. É uma string exclusiva de nome de nó.
+      * **Tipo de nó**: Defina o tipo como **nt:não estruturado**. A saída desse processo é nodePath. O nodePath é o caminho CRX do nó recém-criado. O nodePath seria a saída final do **criar PTO** processo de resumo.
+   1. Transmita os dados do formulário enviado (**employeeName**, **employeeID**, **ptoReason**, e **totalDays**) como entrada para o novo processo **criar resumo de PTO**. Usar a saída como **ptoSummaryNodePath**.
 
 
-1. Defina o Url do resumo como uma expressão XPath contendo os detalhes do servidor junto com **ptoSummaryNodePath**.
+1. Defina a Url do resumo como uma expressão XPath contendo os detalhes do servidor junto com **ptoSummaryNodePath**.
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
-Na área de trabalho do AEM Forms, ao abrir uma tarefa, o Url de resumo acessa o nó CRX e o renderizador de HTML exibe o resumo.
+Na área de trabalho do AEM Forms, ao abrir uma tarefa, o URL do resumo acessa o nó CRX e o renderizador de HTML exibe o resumo.
 
-O layout de resumo pode ser alterado sem modificar o processo. O renderizador de HTML exibe o resumo adequadamente.
+O layout de resumo pode ser alterado sem modificar o processo. O renderizador de HTML exibe o resumo apropriadamente.

@@ -26,7 +26,7 @@ O editor de SPA oferece uma solução abrangente para permitir o uso de SPAs no 
 
 >[!NOTE]
 >
->O Editor de SPA é a solução recomendada para projetos que exigem renderização do lado do cliente baseada em SPA estrutura (por exemplo, Reagir ou Angular).
+>O Editor de SPA é a solução recomendada para projetos que exigem renderização no lado do cliente baseada na estrutura SPA (por exemplo, React ou Angular).
 
 ## Introdução {#introduction}
 
@@ -39,7 +39,7 @@ A compatibilidade com SPA no AEM apresenta uma camada de JS sutil que interage c
 Para obter mais detalhes sobre SPAs no AEM, consulte os seguintes documentos:
 
 * [Blueprint do SPA](/help/sites-developing/spa-blueprint.md) para os requisitos técnicos de um SPA
-* [Introdução ao SPA no AEM](/help/sites-developing/spa-getting-started-react.md) para um rápido tour de uma SPA simples
+* [SPA Introdução ao AEM](/help/sites-developing/spa-getting-started-react.md) para um tour rápido por um SPA simples
 
 ## Design {#design}
 
@@ -160,7 +160,7 @@ Lembrando os elementos principais do editor de SPA, o fluxo de trabalho de alto 
 
 ## Requisitos e limitações {#requirements-limitations}
 
-Para permitir que o autor use o editor de páginas para editar o conteúdo de um SPA, o aplicativo SPA deve ser implementado para interagir com o SDK do Editor de SPA do AEM. Consulte a [Introdução ao SPA no AEM](/help/sites-developing/spa-getting-started-react.md) documento pelo mínimo que você precisa saber para executar o seu.
+Para permitir que o autor use o editor de páginas para editar o conteúdo de um SPA, o aplicativo SPA deve ser implementado para interagir com o SDK do Editor de SPA do AEM. Consulte a [SPA Introdução ao AEM](/help/sites-developing/spa-getting-started-react.md) documento mínimo que você precisa saber para que o seu funcione.
 
 ### Estruturas compatíveis {#supported-frameworks}
 
@@ -183,16 +183,16 @@ Seletores personalizados adicionais podem ser definidos e usados como parte de u
 
 Se você quiser usar o editor local de um componente de texto criado no SPA, há uma configuração adicional necessária.
 
-1. Defina um atributo (pode ser qualquer um), no elemento wrapper do container, que contém o HTML de texto. No caso do conteúdo de amostra do WKND Journal, é um `<div>` e o seletor que foi usado é `data-rte-editelement`.
-1. Definir a configuração `editElementQuery` no componente de texto AEM correspondente `cq:InplaceEditingConfig` que aponte para esse seletor, por exemplo `data-rte-editelement`. Isso permite que o editor saiba qual elemento HTML envolve o texto HTML.
+1. Defina um atributo (pode ser qualquer um), no elemento wrapper do container, que contém o HTML de texto. No caso do conteúdo de amostra do diário WKND, é uma `<div>` e o seletor que foi usado é `data-rte-editelement`.
+1. Definir a configuração `editElementQuery` no componente de texto AEM correspondente `cq:InplaceEditingConfig` que aponta para esse seletor, por exemplo, `data-rte-editelement`. Isso permite que o editor saiba qual elemento HTML envolve o texto HTML.
 
-Para obter um exemplo de como isso é feito, consulte o [Conteúdo de amostra do diário WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+Para obter um exemplo de como isso é feito, consulte [Conteúdo de amostra do diário WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 
 Para obter mais informações sobre a propriedade `editElementQuery` e a configuração do editor de rich text, consulte [Configurar o Editor de rich text.](/help/sites-administering/rich-text-editor.md)
 
 ### Limitações {#limitations}
 
-O AEM SPA Editor SDK foi introduzido com AEM 6.4 service pack 2. Ele é totalmente compatível com o Adobe e continua sendo aprimorado e expandido. Os seguintes recursos do AEM ainda não são compatíveis com o Editor de SPA:
+O AEM SPA Editor SDK foi introduzido com o AEM 6.4 service pack 2. Ele é totalmente suportado pelo Adobe e continua sendo aprimorado e expandido. Os seguintes recursos do AEM ainda não são compatíveis com o Editor de SPA:
 
 * Modo de Direcionamento
 * ContextHub

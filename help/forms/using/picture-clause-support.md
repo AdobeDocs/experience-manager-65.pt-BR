@@ -1,7 +1,7 @@
 ---
 title: Suporte a cláusula de imagem para formulários HTML5
 seo-title: Picture clause support for HTML5 forms
-description: Os formulários HTML5 oferecem suporte à cláusula de imagem XFA para valores de exibição e valores formatados para data, texto e símbolos numéricos.
+description: Os formulários HTML5 são compatíveis com a cláusula de Imagem XFA para valor de exibição e valor formatado para símbolos de data, texto e numéricos.
 seo-description: HTML5 forms supports XFA Picture clause for display value and formatted value for date, text, and numeric symbols.
 uuid: ca5074ce-8219-4f27-a37c-b1f0dca4ce03
 contentOwner: robhagat
@@ -14,35 +14,35 @@ exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 5%
+ht-degree: 1%
 
 ---
 
 # Suporte a cláusula de imagem para formulários HTML5 {#picture-clause-support-for-html-forms}
 
-Os formulários HTML5 oferecem suporte à cláusula de imagem XFA para valores de exibição e valores formatados para data, texto e símbolos numéricos. As seguintes Expressões de cláusula de imagem são suportadas:
+Os formulários HTML5 são compatíveis com a cláusula de Imagem XFA para valor de exibição e valor formatado para símbolos de data, texto e numéricos. As seguintes expressões de cláusula Picture são suportadas:
 
-* category(locale){picture-cláusula} | category(locale){picture-cláusula} | category(locale){picture-cláusula}
+* category(locale){picture-clause} | categoria(localidade){picture-clause} | categoria(localidade){picture-clause}
 * category.subcategory{}
 
 >[!NOTE]
 >
->Atualmente, o Mobile Forms não oferece suporte à cláusula Editar imagem. Além disso, os símbolos de cláusula DateTime e Time Picture não são compatíveis.
+>No momento, o Mobile Forms não oferece suporte à cláusula Editar imagem. Além disso, os símbolos de cláusula DateTime e Time Picture não são compatíveis.
 
-## Símbolos de campo de data suportados {#supported-date-field-symbols}
+## Símbolos de campo de data aceitos {#supported-date-field-symbols}
 
-Expressão suportada para a cláusula de imagem de data:
+Expressão suportada para a cláusula Date Picture:
 
 * date.long{}
 * date.short{}
 * date.medium{}
 * date.full{}
 * date.short{}
-* date{date Símbolos da Cláusula de Imagem}
+* data{símbolos da Cláusula de Imagem de data}
 
 >[!NOTE]
 >
->O padrão padrão da cláusula de imagem é o padrão {MMM D, YYYY}. Se nenhum padrão for aplicado, o padrão será usado.
+>O padrão padrão padrão da cláusula picture é o padrão {MMM D, YYYY}. Se nenhum padrão for aplicado, o padrão padrão padrão será usado.
 
 <table>
  <tbody>
@@ -52,23 +52,23 @@ Expressão suportada para a cláusula de imagem de data:
   </tr>
   <tr>
    <td>D</td>
-   <td>Dia do mês com 1 ou 2 dígitos (de 1 a 31)</td>
+   <td>Dia do mês com 1 ou 2 dígitos (1-31)</td>
   </tr>
   <tr>
    <td>DD</td>
-   <td>Dia do mês com 2 dígitos e 0 incluído (de 01 a 31).<br /> </td>
+   <td>Dia do mês com dois dígitos (01-31) preenchidos com zero.<br /> </td>
   </tr>
   <tr>
    <td>M</td>
-   <td>Mês do ano com 1 ou 2 dígitos (de 1 a 12).<br /> </td>
+   <td>Mês do ano com 1 ou 2 dígitos (1-12).<br /> </td>
   </tr>
   <tr>
    <td>MM</td>
-   <td>Mês do ano com 2 dígitos e 0 incluído (de 01 a 12).<br /> </td>
+   <td>Mês do ano com dois dígitos (01-12) preenchidos com zeros.<br /> </td>
   </tr>
   <tr>
    <td>MMM</td>
-   <td>Nome do mês abreviado da localidade atual<br /> </td>
+   <td>Nome abreviado do mês da localidade atual<br /> </td>
   </tr>
   <tr>
    <td>MMMM</td>
@@ -76,36 +76,36 @@ Expressão suportada para a cláusula de imagem de data:
   </tr>
   <tr>
    <td>EEE</td>
-   <td>Nome do dia da semana abreviado da localidade atual<br /> </td>
+   <td>Nome abreviado do dia da semana da localidade atual<br /> </td>
   </tr>
   <tr>
    <td>EEEE</td>
    <td>Nome completo do dia da semana da localidade atual<br /> </td>
   </tr>
   <tr>
-   <td>YY</td>
-   <td>Ano com 2 dígitos, em que 00 = 2000, 29 = 2029, 30 = 1930 e 99 = 1999<br /> </td>
+   <td>AA</td>
+   <td>Ano de 2 dígitos, onde 00 = 2000, 29 = 2029, 30 = 1930 e 99 = 1999<br /> </td>
   </tr>
   <tr>
-   <td>YYYY</td>
-   <td>Ano com 4 dígitos<br /> </td>
+   <td>AAAA</td>
+   <td>Ano de 4 dígitos<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ## Cláusula de Imagem Numérica {#numeric-picture-clause}
 
-Os formulários HTML5 são compatíveis com símbolos de Imagem numérica. No entanto, há uma diferença no suporte entre o PDF forms e o HTML Forms.
+Os formulários HTML5 suportam símbolos de figuras numéricas. No entanto, há uma diferença no suporte entre PDF forms e HTML Forms.
 
-Em **PDF forms**, um número é formatado independentemente do número de símbolos na cláusula Picture
+Entrada **PDF forms**, um número é formatado independentemente do número de símbolos na cláusula Picture tem
 
-Em **HTML Forms**, um número é formatado somente se o número tiver dígitos inferiores ao número de símbolos na cláusula Picture.
+Entrada **HTML Forms**, um número será formatado somente se o número tiver dígitos menores que o número de símbolos na cláusula Picture.
 
-**Exemplo**: Considere uma cláusula de imagem: num{zzz,zzz,zz9}.
+**Exemplo**: Considere uma cláusula Picture: num{zzz,zzz,zz9}.
 
-O número **10000** é formatado como **10.000** em HTML e PDF forms.
+O número **10000** é formatado como **10.000** tanto no HTML como no PDF forms.
 
-O número 100000 é formatado como 1.000.000 em PDF forms. No entanto, no HTML Forms, o número permanece não formatado como 1000000.
+O número 1000000 é formatado como 1.000.000 em PDF forms. No entanto, no HTML Forms, o número permanece sem formatação como 1000000.
 
 Expressões suportadas para a cláusula de Imagem Numérica em **HTML Forms** são:
 
@@ -125,21 +125,21 @@ Expressões suportadas para a cláusula de Imagem Numérica em **HTML Forms** s�
   <tr>
    <td>9</td>
    <td><strong>Formatação de saída</strong>: um único dígito. Ou para o dígito zero se os dados de entrada estiverem vazios ou um espaço na posição correspondente.<br /> </td>
-   <td>Um único dígito</td>
+   <td>Dígito único</td>
   </tr>
   <tr>
    <td>Z</td>
    <td><strong>Formatação de saída</strong>: um único dígito. Ou para um espaço se os dados de entrada estiverem vazios, um espaço ou o dígito zero na posição correspondente.<br /> </td>
-   <td>Um único dígito ou espaço</td>
+   <td>Dígito ou espaço único</td>
   </tr>
   <tr>
    <td>z</td>
    <td><strong>Formatação de saída</strong>: um único dígito. Ou para nada se os dados de entrada estiverem vazios, um espaço ou o dígito zero na posição correspondente.<br /> </td>
-   <td>Um único dígito ou nada</td>
+   <td>Um dígito ou nada</td>
   </tr>
   <tr>
    <td>E</td>
-   <td><strong>Formatação de saída</strong>: A parte exponente de um número de ponto flutuante que consiste no símbolo exponencial (E). Seguido por um sinal opcional de mais ou menos. Seguido pelo valor do expoente.<br /> </td>
+   <td><strong>Formatação de saída</strong>: a parte exponencial de um número de ponto flutuante que consiste no símbolo exponencial (E). Seguido por um sinal opcional de mais ou menos. Seguido pelo valor do expoente.<br /> </td>
    <td>Igual à formatação de saída</td>
   </tr>
   <tr>
@@ -149,22 +149,22 @@ Expressões suportadas para a cláusula de Imagem Numérica em **HTML Forms** s�
   </tr>
   <tr>
    <td>S ou s<br /> </td>
-   <td>Formatação de saída: um sinal de menos se o número for negativo. Outro espaço.<br /> </td>
-   <td>Um sinal de menos se o número for negativo. Sinal de mais se o número for positivo</td>
+   <td>Formatação de saída: um sinal de menos se o número for negativo. Mais espaço.<br /> </td>
+   <td>Sinal de menos se o número for negativo. Sinal de mais se o número for positivo</td>
   </tr>
   <tr>
    <td>V</td>
-   <td>Radix decimal do local prevalecente. Permitir que o radix decimal seja implícito ao analisar a entrada.</td>
+   <td>Raiz decimal do local predominante. Permitindo que a raiz decimal seja implicada na análise de entrada.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
    <td>v</td>
-   <td>Radix decimal do local prevalecente. Permitir que o radix decimal seja implícito ao analisar a entrada e formatar a saída.</td>
+   <td>Raiz decimal do local predominante. Permitindo que a raiz decimal seja implicada ao analisar a entrada e formatar a saída.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
    <td>.</td>
-   <td>Radix decimal do local prevalecente.</td>
+   <td>Raiz decimal do local predominante.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
@@ -174,7 +174,7 @@ Expressões suportadas para a cláusula de Imagem Numérica em **HTML Forms** s�
   </tr>
   <tr>
    <td>$ (U+FF04)</td>
-   <td>Símbolo monetário da localidade prevalecente.</td>
+   <td>Símbolo de moeda do local predominante.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
@@ -183,13 +183,13 @@ Expressões suportadas para a cláusula de Imagem Numérica em **HTML Forms** s�
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>( (U+FF08)</td>
-   <td>Parênteses esquerdo se o número for negativo. Outro espaço.</td>
+   <td>(U+FF08)</td>
+   <td>Parêntese esquerdo se o número for negativo. Mais espaço.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
    <td>) (U+FF09)</td>
-   <td>Parênteses direito se o número for negativo. Outro espaço.</td>
+   <td>Parêntese direito se o número for negativo. Mais espaço.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
@@ -202,14 +202,14 @@ Expressões suportadas para a cláusula de Imagem Numérica em **HTML Forms** s�
 
 ## Cláusula de Imagem de Texto {#text-picture-clause}
 
-Os formulários HTML5 oferecem suporte para as seguintes expressões de cláusula de figura de texto:
+Os formulários HTML5 suportam as seguintes expressões de cláusula Text Picture:
 
-* text{text Símbolos de cláusula de imagem}
+* text{símbolos de cláusula de Imagem de texto}
 
 | **Símbolo** | **Interpretação** |
 |---|---|
-| A | Um caractere alfabético único. |
-| X | Um caractere único. |
-| O | Um caractere alfanumérico único. |
-| 0 (zero) | Um caractere alfanumérico único. |
-| 9 | Um único dígito. |
+| A | Caractere alfabético único. |
+| X | Caractere único. |
+| O | Caractere alfanumérico único. |
+| 0 (zero) | Caractere alfanumérico único. |
+| 9 | Dígito único. |

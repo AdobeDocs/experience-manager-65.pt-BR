@@ -1,7 +1,7 @@
 ---
-title: Listar formulários em uma página da Web usando APIs
+title: Listagem de formulários em uma página da Web usando APIs
 seo-title: Listing forms on a web page using APIs
-description: Consulte Programaticamente o Forms Manager para recuperar uma lista filtrada de formulários e exibir em suas próprias páginas da Web.
+description: Consulte o Forms Manager de forma programada para recuperar uma lista filtrada de formulários e exibi-la em suas próprias páginas da Web.
 seo-description: Programmatically query Forms Manager to retrieve a filtered list of forms and display on your own web pages.
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
@@ -16,11 +16,11 @@ ht-degree: 1%
 
 ---
 
-# Listar formulários em uma página da Web usando APIs {#listing-forms-on-a-web-page-using-apis}
+# Listagem de formulários em uma página da Web usando APIs {#listing-forms-on-a-web-page-using-apis}
 
-O AEM Forms fornece uma API de pesquisa baseada em REST que os desenvolvedores da Web podem usar para consultar e recuperar um conjunto de formulários que atenda aos critérios de pesquisa. Você pode usar APIs para pesquisar formulários com base em vários filtros. O objeto response contém atributos de formulário, propriedades e pontos finais de formulários.
+O AEM Forms fornece uma API de pesquisa baseada em REST que os desenvolvedores da Web podem usar para consultar e recuperar um conjunto de formulários que atenda aos critérios de pesquisa. Você pode usar APIs para pesquisar formulários com base em vários filtros. O objeto de resposta contém atributos de formulário, propriedades e pontos de extremidade de renderização de formulários.
 
-Para pesquisar formulários usando a REST API, envie uma solicitação do GET para o servidor em `https://'[server]:[port]'/libs/fd/fm/content/manage.json` com parâmetros de consulta descritos abaixo.
+Para pesquisar formulários usando a REST API, envie uma solicitação do GET para o servidor em `https://'[server]:[port]'/libs/fd/fm/content/manage.json` com os parâmetros de consulta descritos abaixo.
 
 ## Parâmetros de consulta {#query-parameters}
 
@@ -32,81 +32,81 @@ Para pesquisar formulários usando a REST API, envie uma solicitação do GET pa
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Especifica a função a ser chamada. Para pesquisar formulários, defina o valor da variável <code>func </code>para <code>searchForms</code>.</p> <p>Por exemplo, <code class="code">
+   <td><p>Especifica a função a ser chamada. Para pesquisar formulários, defina o valor do <code>func </code>atributo para <code>searchForms</code>.</p> <p>Por exemplo, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Observação:</strong> <em>Esse parâmetro é obrigatório.</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Nota:</strong> <em>Esse parâmetro é obrigatório.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
-   <td><p>Especifica o caminho do aplicativo para procurar formulários. Por padrão, o atributo appPath pesquisa todos os aplicativos disponíveis no nível do nó raiz.<br /> </p> <p>Você pode especificar vários caminhos de aplicativo em uma única consulta de pesquisa. Separe vários caminhos com um caractere de barra vertical (|). </p> </td>
+   <td><p>Especifica o caminho do aplicativo para procurar formulários. Por padrão, o atributo appPath pesquisa todos os aplicativos disponíveis no nível do nó raiz.<br /> </p> <p>Você pode especificar vários caminhos de aplicativos em uma única consulta de pesquisa. Separe vários caminhos com o caractere de barra vertical (|). </p> </td>
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
-   <td><p>Especifica as propriedades a serem buscadas com os ativos. Você pode usar um asterisco (*) para buscar todas as propriedades de uma só vez. Use o operador pipe (|) para especificar várias propriedades. </p> <p>Por exemplo, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Nota</strong>: </p>
+   <td><p>Especifica as propriedades a serem buscadas com os ativos. Você pode usar um asterisco (*) para buscar todas as propriedades de uma só vez. Use o operador de barra vertical (|) para especificar várias propriedades. </p> <p>Por exemplo, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Nota</strong>: </p>
     <ul>
      <li><em>Propriedades como id, caminho e nome são sempre buscadas. </em></li>
-     <li><em>Cada ativo tem um conjunto diferente de propriedades. Propriedades como formUrl, pdfUrl e guideUrl não dependem do atributo cutpoints. Essas propriedades dependem do tipo de ativo e são buscadas de acordo. </em></li>
+     <li><em>Cada ativo tem um conjunto diferente de propriedades. Propriedades como formUrl, pdfUrl e guideUrl não dependem do atributo de pontos de corte. Essas propriedades dependem do tipo de ativo e são buscadas de acordo. </em></li>
     </ul> </td>
   </tr>
   <tr>
-   <td>relation<br /> </td>
+   <td>relação<br /> </td>
    <td>Especifica os ativos relacionados a serem buscados junto com os resultados da pesquisa. Você pode escolher uma das seguintes opções para buscar ativos relacionados:
     <ul>
-     <li><strong>NO_RELATION</strong>: Não buscar ativos relacionados.</li>
-     <li><strong>IMEDIATO</strong>: Busca ativos que estão diretamente relacionados aos resultados da pesquisa.</li>
-     <li><strong>TODAS</strong>: Buscar ativos direta e indiretamente relacionados.</li>
+     <li><strong>NO_RELATION</strong>: não busque ativos relacionados.</li>
+     <li><strong>IMEDIATO</strong>: busca ativos que estão diretamente relacionados aos resultados da pesquisa.</li>
+     <li><strong>TODOS</strong>: Buscar ativos relacionados direta e indiretamente.</li>
     </ul> </td>
   </tr>
   <tr>
    <td>maxSize</td>
-   <td>Especifica o número máximo de formulários a serem buscados.</td>
+   <td>Especifica o número máximo de formulários a serem obtidos.</td>
   </tr>
   <tr>
    <td>offset</td>
-   <td>Especifica o número de formulários a serem ignorados desde o início.</td>
+   <td>Especifica o número de formulários a ignorar desde o início.</td>
   </tr>
   <tr>
    <td>returnCount</td>
-   <td>Especifica se os resultados da pesquisa devem ou não ser retornados de acordo com os critérios especificados. </td>
+   <td>Especifica se os resultados da pesquisa que correspondem aos critérios fornecidos devem ou não ser retornados. </td>
   </tr>
   <tr>
-   <td>demonstrativos</td>
-   <td><p>Especifica a lista de instruções. As consultas são executadas na lista das instruções especificadas no formato JSON. </p> <p>Por exemplo,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
+   <td>instruções</td>
+   <td><p>Especifica a lista de instruções. As consultas são executadas na lista de instruções especificadas no formato JSON. </p> <p>Por exemplo,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");
        statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>No exemplo acima, </p>
     <ul>
-     <li><strong>name</strong>: especifica o nome da propriedade a ser pesquisada.</li>
-     <li><strong>value</strong>: especifica o valor da propriedade a ser pesquisada.</li>
+     <li><strong>name</strong>: especifica o nome da propriedade que será pesquisada.</li>
+     <li><strong>value</strong>: especifica o valor da propriedade que será pesquisada.</li>
      <li><strong>operador</strong>: especifica o operador a ser aplicado durante a pesquisa. Os seguintes operadores são compatíveis:
       <ul>
        <li>EQ - Igual a </li>
-       <li>NEQ - Não é igual a</li>
+       <li>NEQ - Diferente de</li>
        <li>GT - Maior que</li>
        <li>LT - Menor que</li>
        <li>GTEQ - Maior que ou igual a</li>
-       <li>LTEQ - menor que ou igual a</li>
-       <li>CONTAINS - A contém B se B for parte A</li>
+       <li>LTEQ - Menor que ou igual a</li>
+       <li>CONTÉM - A contém B se B é parte de A</li>
        <li>FULLTEXT - Pesquisa de texto completo</li>
        <li>STARTSWITH - A começa com B se B for a parte inicial de A</li>
        <li>ENDSWITH - A termina com B se B for a parte final de A</li>
        <li>LIKE - Implementa o operador LIKE</li>
-       <li>AND - Combinar várias declarações</li>
-      </ul> <p><strong>Observação:</strong> <em>Os operadores GT, LT, GTEQ e LTEQ são aplicáveis para propriedades de tipo linear como LONG, DOUBLE e DATE.</em></p> </li>
+       <li>AND - Combinar vários demonstrativos</li>
+      </ul> <p><strong>Nota:</strong> <em>Os operadores GT, LT, GTEQ e LTEQ são aplicáveis para propriedades do tipo linear, como LONG, DOUBLE e DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td>ordens<br /> </td>
-   <td><p>Especifica os critérios de ordem para os resultados da pesquisa. O critério é definido no formato JSON. Você pode classificar os resultados da pesquisa em mais de um campo. Os resultados são classificados na ordem em que os campos aparecem na query.</p> <p>Por exemplo,</p> <p>Para recuperar os resultados da consulta ordenados pela propriedade title na ordem crescente, adicione o seguinte parâmetro: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
+   <td>pedidos<br /> </td>
+   <td><p>Especifica os critérios de ordem para os resultados da pesquisa. Os critérios são definidos no formato JSON. Você pode classificar os resultados da pesquisa em mais de um campo. Os resultados são classificados na ordem à medida que os campos aparecem na query.</p> <p>Por exemplo,</p> <p>Para recuperar os resultados da consulta ordenados pela propriedade do título na ordem crescente, adicione o seguinte parâmetro: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");
        orderingsArray.put(orderings);
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
-     <li><strong>name</strong>: Especifica o nome da propriedade a ser usada para ordenar os resultados da pesquisa.</li>
-     <li><strong>critérios</strong>: Especifica a ordem dos resultados. O atributo order aceita os seguintes valores:
+     <li><strong>name</strong>: especifica o nome da propriedade a ser usada para ordenar os resultados da pesquisa.</li>
+     <li><strong>critérios</strong>: especifica a ordem dos resultados. O atributo order aceita os seguintes valores:
       <ul>
        <li>ASC - Use ASC para organizar os resultados na ordem crescente.<br /> </li>
        <li>DES - Use DES para organizar os resultados na ordem decrescente.</li>
@@ -115,16 +115,16 @@ Para pesquisar formulários usando a REST API, envie uma solicitação do GET pa
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Especifica se deve ser recuperado o conteúdo binário ou não. O <code>includeXdp</code> é aplicável a ativos do tipo <code>FORM</code>, <code>PDFFORM</code>e <code>PRINTFORM</code>.</td>
+   <td>Especifica se o conteúdo binário deve ser recuperado ou não. A variável <code>includeXdp</code> o atributo é aplicável a ativos do tipo <code>FORM</code>, <code>PDFFORM</code>, e <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>
-   <td>Especifica os tipos de ativos a serem recuperados de todos os ativos publicados. Use o operador pipe (|) para especificar vários tipos de ativos. Os tipos de ativos válidos são FORM, PDFFORM, PRINTFORM, RESOURCE e GUIA.</td>
+   <td>Especifica os tipos de ativos a serem recuperados de todos os ativos publicados. Use o operador de barra vertical (|) para especificar vários tipos de ativos. Os tipos de ativos válidos são FORM, PDFFORM, PRINTFORM, RESOURCE e GUIDE.</td>
   </tr>
  </tbody>
 </table>
 
-## Solicitação de exemplo {#sample-request}
+## Exemplo de solicitação {#sample-request}
 
 ```json
 func : searchForms
@@ -144,7 +144,7 @@ statements: [{"name":"name","value":"*Claim.xdp","operator":"CONTAINS"},
 orderings:[{"name" :"lastModifiedDate":"order":"ASC"}]
 ```
 
-## Resposta de exemplo {#sample-response}
+## Exemplo de resposta {#sample-response}
 
 ```json
 [
@@ -170,10 +170,10 @@ orderings:[{"name" :"lastModifiedDate":"order":"ASC"}]
 
 ## Artigos relacionados
 
-* [Ativar componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md)
+* [Habilitar componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md)
 * [Criar página do portal de formulários](/help/forms/using/creating-form-portal-page.md)
 * [Listar formulários em uma página da Web usando APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
-* [Usar componente Rascunhos e Envios](/help/forms/using/draft-submission-component.md)
+* [Usar componente de rascunhos e envios](/help/forms/using/draft-submission-component.md)
 * [Personalizar o armazenamento de rascunhos e formulários enviados](/help/forms/using/draft-submission-component.md)
 * [Amostra para integrar o componente de rascunhos e envios ao banco de dados](/help/forms/using/integrate-draft-submission-database.md)
 * [Personalização de modelos para componentes do portal de formulários](/help/forms/using/customizing-templates-forms-portal-components.md)

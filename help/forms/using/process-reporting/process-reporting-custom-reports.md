@@ -1,7 +1,7 @@
 ---
-title: Relatórios Personalizados no Processo
+title: Relatórios personalizados em relatórios de processo
 seo-title: Custom Reports in Process Reporting
-description: Você pode criar relatórios personalizados e adicioná-los à AEM Forms na interface do usuário de relatórios do processo JEE.
+description: Você pode criar relatórios personalizados e adicionar esses relatórios à AEM Forms na interface do usuário de relatórios do processo JEE.
 seo-description: You can create custom reports and add these reports to the AEM Forms on JEE Process Reporting UI.
 uuid: 81039fe8-d757-4c85-a1eb-88e4e6aa8500
 content-type: reference
@@ -17,59 +17,59 @@ ht-degree: 8%
 
 ---
 
-# Relatórios Personalizados no Processo{#custom-reports-in-process-reporting}
+# Relatórios personalizados em relatórios de processo{#custom-reports-in-process-reporting}
 
 Você pode usar a interface REST do QueryBuilder ou criar um serviço OSGi usando a API do QueryBuilder para criar um relatório personalizado.
 
 ## Etapas genéricas para criar um relatório personalizado {#generic-steps-to-build-a-custom-report}
 
-Antes de adicionar qualquer relatório personalizado, execute o seguinte procedimento de modelo:
+Antes de adicionar um relatório personalizado, execute o seguinte procedimento de modelo:
 
-1. Os dados usados em relatórios personalizados devem estar disponíveis no Relatório de Processo. Para garantir a disponibilidade dos dados, agende um trabalho ou uso de trabalho **[Sincronizar](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** na interface do usuário do Process Reporting.
-1. A solicitação de URL (que envolve a consulta desejada) deve retornar um objeto de resultado de consulta apropriado. Para criar uma query, você pode usar a interface REST de [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) para criar um serviço OSGi usando a API do QueryBuilder. Você pode criar consultas dinâmicas ou estáticas.
+1. Os dados usados em relatórios personalizados devem estar disponíveis em Process Reporting. Para garantir a disponibilidade dos dados, agende um trabalho cron ou use **[Sincronizar](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** opção na interface do usuário do Process Reporting.
+1. A solicitação de URL (encapsulando a consulta desejada) deve retornar um objeto de resultado de consulta apropriado. Para criar uma query, você pode usar a interface REST de [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) para criar um serviço OSGi usando a API do QueryBuilder. Você pode criar consultas dinâmicas ou estáticas.
 
-1. Crie uma interface de usuário personalizada para exibir os resultados. Você pode criar uma interface de usuário independente ou integrar o resultado com a interface de usuário existente do Process Reporting.
+1. Crie uma interface personalizada para exibir os resultados. Você pode criar uma interface de usuário independente ou integrar o resultado com a interface de usuário existente do Process Reporting.
 
-## Usar a interface REST do QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
+## Uso da interface REST do QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-A interface REST do CRX QueryBuilder expõe a funcionalidade do Construtor de consultas do Compartilhamento de ativos por meio de uma API Java e uma API REST. Saiba como usar [Interface REST do CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en), antes de executar as seguintes etapas:
+A interface REST do CRX QueryBuilder expõe a funcionalidade do Construtor de consultas de compartilhamento de ativos por meio de uma API Java e uma API REST. Saiba como usar o [Interface REST do QueryBuilder do CRX](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en), antes de executar as seguintes etapas:
 
 1. Navegue até o URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Crie uma consulta com base na estrutura do nó de armazenamento do Process Reporting e nas propriedades do nó.
 
    Você pode especificar parâmetros opcionais para especificar deslocamento, limite, ocorrências e propriedades. Você pode codificar os argumentos para relatórios estáticos e buscar os parâmetros da interface do usuário para relatórios dinâmicos.
 
-   Para buscar todos os nomes do processo, a consulta é:
+   Para buscar todos os nomes de processos, a consulta é:
 
    `https://'[server]:[port]'/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
 
    >[!NOTE]
    >
-   >Em cada query, o parâmetro de caminho aponta para o local de armazenamento crx e os caracteres são escapados de acordo com o padrão de URL.
+   >Em cada query, o parâmetro de caminho aponta para o local de armazenamento do crx e os caracteres são escapados de acordo com o padrão de URL.
 
 ## Criação de um serviço usando a API do Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-Os pré-requisitos para criar um serviço usando a API do construtor de consultas são [criação e implantação do pacote OSGI do CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) e [uso da API do Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en).
+Os pré-requisitos para criar um serviço usando a API do construtor de consultas são [criação e implantação do pacote OSGI do CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) e [uso da API do Construtor de consulta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en).
 
-1. Crie um serviço OSGi com anotações apropriadas. Para acessar o uso do QueryBuilder :
+1. Crie um serviço OSGi com anotações apropriadas. Para acessar o QueryBuilder, use:
 
    ```java
    @Reference(referenceInterface = QueryBuilder.class)
     private QueryBuilder queryBuilder;
    ```
 
-1. Criar um grupo de predicados. O código para criar um grupo de predicado é:
+1. Criar um grupo de predicados. O código para criar um grupo de predicados é:
 
    ```java
    PredicateGroup predicateGroup = new PredicateGroup();
     predicateGroup.setAllRequired(true);
    ```
 
-1. Adicione predicados ao predicateGroup recém-criado. Algumas construções de predicado úteis são [JcrBoolPropertyPredicateEvaluator em 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR), [JcrPropertyPredicateEvaluator no 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR), [RangePropertyPredicateEvaluator em 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR), [DateRangePredicateEvaluator em 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR)e [TypePredicateEvaluator na 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR).
+1. Adicione predicados ao predicateGroup recém-criado. Algumas construções de predicado úteis são [JcrBoolPropertyPredicateEvaluator no 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR), [JcrPropertyPredicateEvaluator em 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR), [RangePropertyPredicateEvaluator em 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR), [DateRangePredicateEvaluator em 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR), e [TypePredicateEvaluator em 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR).
 
-   Para relatórios estáticos, codifique os predicados, enquanto para relatórios dinâmicos, obtenha os predicados da solicitação.
+   Para relatórios estáticos, codifique os predicados, enquanto para relatórios dinâmicos, busque os predicados da solicitação.
 
-   O código de amostra para obter todas as instâncias de um processo é:
+   O exemplo de código para obter todas as instâncias de um processo é:
 
    ```java
    Predicate predicate;
@@ -100,7 +100,7 @@ Os pré-requisitos para criar um serviço usando a API do construtor de consulta
      predicateGroup.add(predicate);
    ```
 
-1. Defina a Consulta usando o predicateGroup.
+1. Defina a Query usando o predicateGroup.
 
    `Query query = queryBuilder.createQuery(predicateGroup, session);`
 
@@ -114,7 +114,7 @@ Os pré-requisitos para criar um serviço usando a API do construtor de consulta
            SearchResult searchResult = query.getResult();
    ```
 
-1. Itere no resultado e transforme os resultados no formato desejado. O código para enviar os resultados no formato CSV é:
+1. Repita o resultado e transforme os resultados no formato desejado. O código para enviar os resultados no formato CSV é:
 
    ```java
    Iterator<Node> iter = searchResult.getNodes();
@@ -142,7 +142,7 @@ Os pré-requisitos para criar um serviço usando a API do construtor de consulta
 
 ### Exemplo de serviço {#service-example}
 
-O exemplo de serviço a seguir conta instâncias de um processo que está em **EM EXECUÇÃO** e **COMPLETE** no final de cada mês, trimestre e ano.
+O exemplo de serviço a seguir conta instâncias de um processo que está em **EM EXECUÇÃO** e **CONCLUÍDO** no final de cada mês, trimestre e ano.
 
 ```java
 package custom.reporting.service;
@@ -424,23 +424,23 @@ A amostra `pom.xml`o arquivo a ser criado acima do serviço é:
 
 ## Criação de uma interface de usuário separada  {#creating-a-separate-ui-nbsp}
 
-Os pré-requisitos para criar uma interface de usuário separada para exibir resultados são [Noções básicas do Sling na 5.6.1](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR), [Criação de um nó CRX](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) e [privilégios de acesso](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR).
+Os pré-requisitos para criar uma interface de usuário separada para exibir resultados são [Noções básicas do Sling no 5.6.1](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR), [Criação de um nó CRX](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) e fornecer [privilégios de acesso](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR).
 
-1. Crie um nó CRX na `/apps` e conceda as permissões de acesso apropriadas. (PERM_PROCESS_REPORTING_USER)
-1. Defina o renderizador no `/content` nó .
+1. Crie um nó CRX no `/apps` e conceda as permissões de acesso apropriadas. PERM_PROCESS_REPORTING_USER
+1. Defina o renderizador no `/content` nó.
 1. Adicione arquivos JSP ou HTML ao nó criado na Etapa 1. Você também pode adicionar arquivos CSS.
 
-   ![Um nó de amostra com arquivos JSP e CSS](assets/nodewith_jsp_css_new.png)
+   ![Um exemplo de nó com arquivos JSP e CSS](assets/nodewith_jsp_css_new.png)
 
-   Um nó de amostra com arquivos JSP e CSS
+   Um exemplo de nó com arquivos JSP e CSS
 
-1. Adicione o código JavaScript para iniciar uma chamada Ajax para a API REST do querybuilder ou para o seu serviço. Além disso, adicione os argumentos apropriados.
+1. Adicione o código JavaScript para iniciar uma chamada Ajax para a API REST do querybuilder ou para seu serviço. Além disso, adicione os argumentos apropriados.
 
-1. Adicione um manipulador de sucesso apropriado à chamada Ajax para analisar e exibir o resultado. Você pode analisar o resultado em vários formatos (json/csv/user definido) e exibi-lo em uma tabela ou em outras formas.
+1. Adicione um manipulador de sucesso apropriado à chamada Ajax para analisar e exibir o resultado. Você pode analisar o resultado em vários formatos (json/csv/definido pelo usuário) e exibi-lo em uma tabela ou em outros formulários.
 
-1. (Opcional) Adicione um manipulador de erros apropriado à chamada do Ajax.
+1. (Opcional) Adicione um manipulador de erros apropriado à chamada de Ajax.
 
-Um exemplo de código JSP que usa o serviço OSGi e a API do QueryBuilder é:
+Um exemplo de código JSP que usa o serviço OSGi e a API QueryBuilder é:
 
 ```html
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0"%>
@@ -630,35 +630,35 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## Integração da interface do usuário do relatório na interface do usuário existente do Process Reporting  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## Integração da interface do usuário de relatórios à interface do usuário existente de relatórios do processo  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-Os pré-requisitos para criar uma interface de usuário separada para exibir resultados são [Noções básicas do Sling](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Criação de um nó CRX](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node) e [privilégios de acesso](/help/sites-developing/developing-with-crxde-lite.md#access-control).
+Os pré-requisitos para criar uma interface de usuário separada para exibir resultados são [Noções básicas do Sling](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Criação de um nó CRX](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node) e fornecer [privilégios de acesso](/help/sites-developing/developing-with-crxde-lite.md#access-control).
 
-1. Crie uma interface de usuário separada.
-1. Criar um filho `nt:unstructured` no `/content/process-reporting-runtime/custom-reports` nó para cada relatório que pode ser conectado.
+1. Crie uma interface separada.
+1. Criar um filho `nt:unstructured` no nó `/content/process-reporting-runtime/custom-reports` para cada relatório conectável.
 
    * **id**- Especifica o número de identificação exclusivo do relatório.
    * **name**- Especifica o nome do relatório. O nome é exibido na interface do usuário.
-   * **link**- Especifica o link relativo para o renderizador da interface de usuário separada. O link é criado como Etapa 1.
-   * **descrição**- Especifica a descrição de uma linha do relatório. Você pode deixar o campo de descrição vazio.
-   * **ícone**- Especifica a imagem que representará pictorialmente o relatório. Você pode deixar o campo de ícone vazio.
+   * **link**- Especifica o link relativo para o renderizador da interface separada. O link é criado na Etapa 1.
+   * **descrição**- Especifica a descrição de uma linha para o relatório. Você pode deixar o campo de descrição vazio.
+   * **ícone**- Especifica a imagem que representará o relatório de forma visual. Você pode deixar o campo de ícone vazio.
 
    ![Propriedades do nó ](assets/node_properties_new.png)
 
    Propriedades do nó
 
-1. A interface do usuário do relatório é integrada à interface do usuário do Process Reporting. Depois de integrar a interface do usuário, a interface do usuário atualizada é semelhante às seguintes imagens:
+1. A interface do usuário de relatórios é integrada à interface do usuário de relatórios do processo. Depois de integrar a interface do usuário, a interface atualizada é semelhante às seguintes imagens:
 
-   ![Interface do usuário de relatórios personalizados recém adicionados](assets/sampleui_screenshot_new.png)
+   ![Interface do usuário de relatórios personalizados recém-adicionados](assets/sampleui_screenshot_new.png)
 
-   Interface do usuário de relatórios personalizados recém adicionados
+   Interface do usuário de relatórios personalizados recém-adicionados
 
    ![Tela de resultados dos relatórios personalizados](assets/jsp_display_new.png)
 
    Tela de resultados dos relatórios personalizados
 
-## Pacote de exemplo {#sample-package}
+## Pacote de amostra {#sample-package}
 
-Importe o `sample-report-pkg-1.zip` pacote para integrar relatórios personalizados e interface do usuário discutidos no artigo para a interface do usuário do Process management .
+Importe o `sample-report-pkg-1.zip` pacote para integrar relatórios personalizados e interface discutida no artigo à interface do usuário de gerenciamento de processos.
 
 [Obter arquivo](assets/sample-report-pkg-1.zip)

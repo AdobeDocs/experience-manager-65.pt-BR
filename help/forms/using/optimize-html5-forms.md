@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Otimização de formulários HTML5 {#optimizing-html-forms}
 
-Os formulários HTML5 renderizam formulários no formato HTML5. A saída resultante pode ser grande dependendo de fatores como o tamanho do formulário e as imagens no formulário. Para otimizar a transferência de dados, a abordagem recomendada é compactar a resposta do HTML usando o Servidor da Web do qual a solicitação está sendo veiculada. Essa abordagem reduz o tamanho da resposta, o tráfego da rede e o tempo necessário para transmitir dados entre o servidor e as máquinas cliente.
+Os formulários HTML5 renderizam formulários no formato HTML5. A saída resultante pode ser grande, dependendo de fatores como o tamanho do formulário e as imagens no formulário. Para otimizar a transferência de dados, a abordagem recomendada é compactar a resposta de HTML usando o Servidor Web do qual a solicitação está sendo atendida. Essa abordagem reduz o tamanho da resposta, o tráfego de rede e o tempo necessário para transmitir dados entre as máquinas do servidor e do cliente.
 
 Este artigo descreve as etapas necessárias para habilitar a compactação para o Apache Web Server 2.0 de 32 bits, com JBoss.
 
@@ -27,15 +27,15 @@ Este artigo descreve as etapas necessárias para habilitar a compactação para 
 >
 >As instruções a seguir não se aplicam a servidores diferentes do Apache Web Server 2.0 de 32 bits.
 
-Obtenha o software do servidor Web Apache aplicável ao seu sistema operacional:
+Obtenha o software Apache Web Server aplicável ao seu sistema operacional:
 
-* Para Windows, baixe o servidor da Web Apache no site do Apache HTTP Server Project.
-* Para Solaris 64 bits, baixe o servidor da Web Apache do site Sunfreeware for Solaris.
+* Para Windows, baixe o servidor Web Apache do site Projeto do Apache HTTP Server.
+* Para Solaris 64 bits, baixe o servidor Web Apache do site Sunfreeware para Solaris.
 * Para Linux, o servidor Web Apache é pré-instalado em um sistema Linux.
 
 O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
 
-1. Exclua as seguintes configurações de módulo no *APACHE_HOME/conf/httpd.conf* arquivo.
+1. Remova o comentário das seguintes configurações de módulo no *APACHE_HOME/conf/httpd.conf* arquivo.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -49,7 +49,7 @@ O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
 
 1. Configure o proxy na porta 8080 do JBoss.
 
-   Adicione a seguinte configuração ao *APACHE_HOME/conf/httpd.conf* arquivo de configuração.
+   Adicione a seguinte configuração à *APACHE_HOME/conf/httpd.conf* arquivo de configuração.
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -61,13 +61,13 @@ O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
    >Quando você usa um proxy, as seguintes alterações de configuração são necessárias:
    >
    >* Acesso: *https://&lt;server>:&lt;port>/system/console/configMgr*
-   * Editar a configuração do Filtro de referenciador do Apache Sling
-   * Em Permitir Hosts, adicione a entrada para o servidor proxy
+   * Editar a configuração do Filtro referenciador do Apache Sling
+   * Em Permitir hosts, adicione a entrada para o servidor proxy
 
 
 1. Ative a compactação.
 
-   Adicione a seguinte configuração ao *APACHE_HOME/conf/httpd.conf* arquivo de configuração.
+   Adicione a seguinte configuração à *APACHE_HOME/conf/httpd.conf* arquivo de configuração.
 
    ```xml
    <Location /content/xfaforms>
@@ -85,4 +85,4 @@ O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
    </Location>
    ```
 
-1. Para acessar o servidor AEM, use https://[Apache_server]80.
+1. Para acessar o servidor AEM, use https://[Apache_server]:80.

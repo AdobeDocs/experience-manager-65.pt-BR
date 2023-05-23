@@ -1,7 +1,7 @@
 ---
-title: Visualizar dados de análise de página
+title: Visualização de dados de análise de página
 seo-title: Seeing Page Analytics Data
-description: Use dados de análise de página para avaliar a eficácia do conteúdo da página.
+description: Use os dados de análise de página para medir a eficácia do conteúdo da página.
 seo-description: Use page analytics data to gauge the effectiveness of their page content.
 uuid: a3d1e4d6-56af-44a5-832f-63167ea8af52
 contentOwner: Chris Bohnert
@@ -13,18 +13,18 @@ docset: aem65
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 85%
+ht-degree: 7%
 
 ---
 
 
-# Visualizar dados de análise de página{#seeing-page-analytics-data}
+# Visualização de dados de análise de página{#seeing-page-analytics-data}
 
-Use dados de análise de página para avaliar a eficácia do conteúdo da página.
+Use os dados de análise de página para medir a eficácia do conteúdo da página.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
-Os dados de análises de páginas são exibidos no console Sites. Quando os sites são exibidos em formato de lista, as seguintes colunas estão disponíveis por padrão:
+Os dados de análise de página são exibidos no console Sites. Quando os sites são exibidos no formato de lista, as seguintes colunas ficam disponíveis por padrão:
 
 * Exibições da página
 * Visitantes únicos
@@ -32,4 +32,4 @@ Os dados de análises de páginas são exibidos no console Sites. Quando os site
 
 >[!NOTE]
 >
->A exibição direta de dados de análises no console só está disponível na interface otimizada para toque. Consulte [Visualizar dados de análise da página](/help/sites-authoring/page-analytics-using.md) na documentação de criação padrão para obter detalhes.
+>A exibição dos dados do site Analytics diretamente no console só está disponível na interface otimizada para toque. Consulte [Visualização de dados de análise de página](/help/sites-authoring/page-analytics-using.md) na documentação de criação padrão para obter detalhes.

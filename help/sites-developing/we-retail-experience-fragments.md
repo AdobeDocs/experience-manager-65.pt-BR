@@ -1,7 +1,7 @@
 ---
-title: Experiência de fragmentos de experiência no We.Retail
+title: Experimentar fragmentos de experiência no We.Retail
 seo-title: Trying out Experience Fragments in We.Retail
-description: Experiência de fragmentos de experiência no We.Retail
+description: Experimentar fragmentos de experiência no We.Retail
 seo-description: Trying out Experience Fragments in We.Retail
 uuid: 43a6df77-9dd3-4316-b749-0ef059370f7d
 contentOwner: AEM Docs
@@ -13,25 +13,25 @@ exl-id: e17ff611-122a-4d17-97af-071d0234dd16
 source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 40%
+ht-degree: 21%
 
 ---
 
-# Experiência de fragmentos de experiência no We.Retail{#trying-out-experience-fragments-in-we-retail}
+# Experimentar fragmentos de experiência no We.Retail{#trying-out-experience-fragments-in-we-retail}
 
-Experiência de fragmentos de experiência no We.Retail
+Experimentar fragmentos de experiência no We.Retail
 
-Um [Fragmento de experiência](/help/sites-authoring/experience-fragments.md) é um grupo de um ou mais componentes, incluindo o conteúdo e o layout que podem ser referenciados nas páginas. Podem conter qualquer componente.
+Um [Fragmento de experiência](/help/sites-authoring/experience-fragments.md) é um grupo de um ou mais componentes, incluindo conteúdo e layout que podem ser referenciados nas páginas. Eles podem conter qualquer componente.
 
 Eles permitem que um autor reutilize partes de uma página (um fragmento de uma experiência), sem precisar copiar e colar o conteúdo.
 
-Isso suporta o caso de uso do Sistema de gerenciamento de conteúdo (CMS) sem periféricos, onde os autores desejam usar o AEM somente para criação, mas não para entrega ao cliente. Um ponto de contato/sistema de terceiros pode então consumir essa experiência e depois entregar para o usuário final.
+Isso é compatível com o caso de uso do sistema de gerenciamento de conteúdo (CMS) headless, em que os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um sistema/ponto de contato de terceiros pode consumir essa experiência e, em seguida, entregar ao usuário final.
 
 >[!NOTE]
 >
 >**[Fragmentos de conteúdo](/help/sites-developing/we-retail-content-fragments.md)** e **Fragmentos de experiência** são recursos diferentes no AEM:
 >
->* **Fragmentos de conteúdo** são conteúdos editoriais, principalmente texto e imagens relacionadas. Eles são puro conteúdo, sem design e layout.
+>* **Fragmentos de conteúdo** são conteúdo editorial, principalmente texto e imagens relacionadas. Eles são conteúdo puro, sem design e layout.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
 >
 >Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
@@ -42,7 +42,7 @@ Selecione **Fragmentos de experiência** na Navegação global. Aqui você confi
 
 ## Onde usar fragmentos de experiência no We.Retail {#where-to-use-experience-fragments-in-we-retail}
 
-Você pode usar o [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (como em qualquer outro componente) em [qualquer página](/help/sites-authoring/editing-content.md) under **Sites** na Navegação global.
+Você pode usar seu [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (como com qualquer outro componente) em [qualquer página](/help/sites-authoring/editing-content.md) em **Sites** na Navegação global.
 
 ## Informações adicionais {#further-information}
 

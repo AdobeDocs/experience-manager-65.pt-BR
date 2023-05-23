@@ -1,7 +1,7 @@
 ---
 title: Estratégias de backup para pastas monitoradas
 seo-title: Backup strategies for watched folders
-description: Este documento descreve como as pastas vigiadas são afetadas por diferentes cenários de backup e recuperação, as limitações e os resultados desses cenários e como minimizar a perda de dados.
+description: Este documento descreve como as pastas monitoradas são afetadas por diferentes cenários de backup e recuperação, as limitações e os resultados desses cenários e como minimizar a perda de dados.
 seo-description: This document describes how watched folders are affected by different backup and recovery scenarios, the limitations and outcomes of these scenarios, and how to minimize data loss.
 uuid: c61997b8-6c36-4bd9-90e5-411841a6c176
 contentOwner: admin
@@ -19,9 +19,9 @@ ht-degree: 2%
 
 # Estratégias de backup para pastas monitoradas {#backup-strategies-for-watched-folders}
 
-Este conteúdo descreve como as pastas assistidas são afetadas por diferentes cenários de backup e recuperação, as limitações e os resultados desses cenários e como minimizar a perda de dados.
+Esse conteúdo descreve como as pastas monitoradas são afetadas por diferentes cenários de backup e recuperação, as limitações e os resultados desses cenários e como minimizar a perda de dados.
 
-*Pasta assistida* é um aplicativo baseado em sistema de arquivos que chama operações de serviço configuradas que manipulam o arquivo em uma das seguintes pastas na hierarquia de pasta assistida:
+*Pasta monitorada* é um aplicativo baseado em sistema de arquivos que invoca operações de serviço configuradas que manipulam o arquivo em uma das seguintes pastas na hierarquia de pastas monitoradas:
 
 * Entrada
 * Fase
@@ -29,19 +29,19 @@ Este conteúdo descreve como as pastas assistidas são afetadas por diferentes c
 * Falha
 * Preservar
 
-Primeiro, um usuário ou aplicativo cliente solta o arquivo ou a pasta na pasta de entrada. A operação de serviço então move o arquivo para a pasta de estágio para processamento. Depois que o serviço executa a operação especificada, ele salva o arquivo modificado na pasta de saída. Os arquivos de origem processados com êxito são movidos para a pasta preserve e os arquivos de processamento com falha são movidos para a pasta de falha. Quando a variável `Preserve On Failure` estiver habilitado, os arquivos de origem processados com falha serão movidos para a pasta preserve. (Consulte [Configuração de endpoints de pasta observados](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).)
+Um usuário ou aplicativo cliente primeiro solta o arquivo ou pasta na pasta de entrada. A operação de serviço move o arquivo para a pasta de preparo para processamento. Depois que o serviço executa a operação especificada, ele salva o arquivo modificado na pasta de saída. Os arquivos de origem processados com sucesso são movidos para a pasta de preservação e os arquivos de processamento com falha são movidos para a pasta de falha. Quando a variável `Preserve On Failure` o atributo da pasta monitorada estiver ativado, os arquivos de origem processados com falha serão movidos para a pasta de preservação. (Consulte [Configurando pontos de extremidade de pasta monitorada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).)
 
-Você pode fazer backup das pastas controladas fazendo backup do sistema de arquivos.
+Você pode fazer backup de pastas monitoradas fazendo backup do sistema de arquivos.
 
 >[!NOTE]
 >
->Esse backup é independente do banco de dados ou do processo de backup e recuperação do armazenamento de documentos.
+>Esse backup é independente do processo de backup e recuperação do banco de dados ou do armazenamento de documentos.
 
-## Como as pastas vigiadas funcionam {#how-watched-folders-work}
+## Como as pastas monitoradas funcionam {#how-watched-folders-work}
 
-Este conteúdo descreve o processo de manipulação de arquivos de pasta monitorada. É importante compreender este processo antes de desenvolver um plano de recuperação. Neste exemplo, a variável `Preserve On Failure` está habilitado para a pasta monitorada. Os arquivos são processados na ordem em que chegam.
+Este conteúdo descreve o processo de manipulação de arquivos de pastas monitoradas. É importante entender esse processo antes de desenvolver um plano de recuperação. Neste exemplo, a variável `Preserve On Failure` o atributo da pasta monitorada está habilitado. Os arquivos são processados na ordem em que chegam.
 
-A tabela a seguir descreve a manipulação de arquivo de cinco arquivos de amostra (arquivo1, arquivo2, arquivo3, arquivo4, arquivo5) durante todo o processo. Na tabela, o eixo x representa o tempo, como Tempo 1 ou T1, e o eixo y representa as pastas dentro da hierarquia de pastas assistida, como Entrada.
+A tabela a seguir descreve a manipulação de cinco arquivos de amostra (file1, file2, file3, file4, file5) durante todo o processo. Na tabela, o eixo x representa o tempo, como Tempo 1 ou T1, e o eixo y representa as pastas dentro da hierarquia de pastas monitoradas, como Entrada.
 
 <table>
  <thead>
@@ -63,24 +63,24 @@ A tabela a seguir descreve a manipulação de arquivo de cinco arquivos de amost
    <td><p>arquivo2, arquivo3, arquivo4</p></td>
    <td><p>arquivo3, arquivo4</p></td>
    <td><p>file4</p></td>
-   <td><p>empty</p></td>
+   <td><p>vazio</p></td>
    <td><p>file5</p></td>
-   <td><p>empty</p></td>
+   <td><p>vazio</p></td>
   </tr>
   <tr>
    <td><p>Fase</p></td>
-   <td><p>empty</p></td>
+   <td><p>vazio</p></td>
    <td><p>file1</p></td>
    <td><p>file2</p></td>
    <td><p>file3</p></td>
    <td><p>file4</p></td>
-   <td><p>empty</p></td>
+   <td><p>vazio</p></td>
    <td><p>file5</p></td>
   </tr>
   <tr>
    <td><p>Saída</p></td>
-   <td><p>empty</p></td>
-   <td><p>empty</p></td>
+   <td><p>vazio</p></td>
+   <td><p>vazio</p></td>
    <td><p>file1_out</p></td>
    <td><p>file1_out, file2_out</p></td>
    <td><p>file1_out, file2_out</p></td>
@@ -89,21 +89,21 @@ A tabela a seguir descreve a manipulação de arquivo de cinco arquivos de amost
   </tr>
   <tr>
    <td><p>Falha</p></td>
-   <td><p>empty</p></td>
-   <td><p>empty</p></td>
-   <td><p>empty</p></td>
-   <td><p>empty</p></td>
+   <td><p>vazio</p></td>
+   <td><p>vazio</p></td>
+   <td><p>vazio</p></td>
+   <td><p>vazio</p></td>
    <td><p>file3_fail, arquivo3 </p></td>
    <td><p>file3_fail, arquivo3 </p></td>
    <td><p>file3_fail, arquivo3 </p></td>
   </tr>
   <tr>
    <td><p>Preservar</p></td>
-   <td><p>empty</p></td>
-   <td><p>empty</p></td>
+   <td><p>vazio</p></td>
+   <td><p>vazio</p></td>
    <td><p>file1 </p></td>
-   <td><p>file1, file2 </p></td>
-   <td><p>file1, file2 </p></td>
+   <td><p>arquivo1, arquivo2 </p></td>
+   <td><p>arquivo1, arquivo2 </p></td>
    <td><p>arquivo1, arquivo2, arquivo4 </p></td>
    <td><p>arquivo1, arquivo2, arquivo4 </p></td>
   </tr>
@@ -114,56 +114,56 @@ O texto a seguir descreve a manipulação de arquivo para cada vez:
 
 **T1:** Os quatro arquivos de amostra são colocados na pasta de entrada.
 
-**T2:** A operação de serviço move o arquivo1 para a pasta de estágio para manipulação.
+**T2:** A operação de serviço move o arquivo 1 para a pasta de preparo para manipulação.
 
-**T3:** A operação de serviço move o arquivo2 para a pasta de preparo para manipulação. Ele coloca os resultados do arquivo1 na pasta de saída e move o arquivo1 para a pasta preserve.
+**T3:** A operação de serviço move o arquivo 2 para a pasta de preparo para manipulação. Ele coloca os resultados de file1 na pasta de saída e move file1 para a pasta de preservação.
 
-**T4:** A operação de serviço coloca o arquivo3 na pasta de preparo para manipulação. Ele coloca os resultados do arquivo2 na pasta de saída e coloca o arquivo2 na pasta preserve.
+**T4:** A operação de serviço coloca o arquivo 3 na pasta de preparo para manipulação. Ele coloca os resultados do arquivo 2 na pasta de saída e coloca o arquivo 2 na pasta de preservação.
 
-**T5:** A operação de serviço coloca o arquivo4 na pasta de preparo para manipulação. A manipulação do arquivo3 falha e a operação de serviço o coloca na pasta de falha.
+**T5:** A operação de serviço coloca o arquivo 4 na pasta de preparo para manipulação. A manipulação do arquivo 3 falha e a operação de serviço o coloca na pasta de falha.
 
-**T6:** A operação de serviço coloca o arquivo5 na pasta de entrada. Ele coloca os resultados do arquivo4 na pasta de saída, coloca o arquivo4 na pasta preserve .
+**T6:** A operação de serviço coloca o arquivo 5 na pasta de entrada. Ele coloca os resultados do arquivo4 na pasta de saída, coloca o arquivo4 na pasta de preservação.
 
-**T7:** A operação de serviço coloca o arquivo5 na pasta de preparo para manipulação.
+**T7:** A operação de serviço coloca o arquivo 5 na pasta de preparo para manipulação.
 
-## Backup de pastas vigiadas {#backing-up-watched-folders}
+## Fazendo backup de pastas monitoradas {#backing-up-watched-folders}
 
-É recomendável fazer o backup de todo o sistema de arquivos de pastas monitoradas em outro sistema de arquivos.
+É recomendável fazer backup de todo o sistema de arquivos da pasta monitorada para outro sistema de arquivos.
 
-## Restaurar pastas vigiadas {#restoring-watched-folders}
+## Restaurando pastas monitoradas {#restoring-watched-folders}
 
-Esta seção descreve como restaurar pastas controladas. As pastas assistidas geralmente chamam processos de duração curta que são concluídos em um minuto. Nesses casos, restaurar a pasta assistida com um backup feito a cada hora não impedirá a perda de dados.
+Esta seção descreve como restaurar pastas monitoradas. As pastas monitoradas geralmente invocam processos de vida curta que são concluídos em um minuto. Nesses casos, a restauração da pasta monitorada com um backup feito por hora não evitará a perda de dados.
 
-Por exemplo, se um backup for feito no momento T1 e o servidor falhar no T7, o arquivo1, o arquivo2, o arquivo3 e o arquivo4 já serão manipulados. A restauração da pasta monitorada com um backup feito em T1 não impede a perda de dados.
+Por exemplo, se um backup for feito no momento T1 e o servidor falhar em T7, então file1, file2, file3 e file4 já estarão manipulados. Restaurar a pasta monitorada com um backup feito em T1 não evita a perda de dados.
 
-Se um backup mais recente foi feito, é possível restaurar os arquivos. Ao restaurar os arquivos, considere em qual pasta de hierarquia de pasta assistida o arquivo atual reside:
+Se um backup mais recente tiver sido feito, você poderá restaurar os arquivos. Ao restaurar os arquivos, considere em qual pasta de hierarquia de pastas o arquivo atual reside:
 
-**Estágio:** Os arquivos nesta pasta são processados novamente depois que a pasta assistida é restaurada.
+**Estágio:** Os arquivos nesta pasta serão processados novamente depois que a pasta monitorada for restaurada.
 
-**Entrada:** Os arquivos nesta pasta são processados novamente depois que a pasta assistida é restaurada.
+**Entrada:** Os arquivos nesta pasta serão processados novamente depois que a pasta monitorada for restaurada.
 
-**Resultado:** Os arquivos desta pasta não são processados.
+**Resultado:** Os arquivos nesta pasta não são processados.
 
-**Saída:** Os arquivos desta pasta não são processados.
+**Saída:** Os arquivos nesta pasta não são processados.
 
-**Preservar:** Os arquivos desta pasta não são processados.
+**Preservar:** Os arquivos nesta pasta não são processados.
 
 ## Estratégias para minimizar a perda de dados {#strategies-to-minimize-data-loss}
 
-As estratégias a seguir podem minimizar a perda de dados da pasta de saída e entrada ao restaurar uma pasta monitorada:
+As estratégias a seguir podem minimizar a perda de dados da pasta de saída e de entrada ao restaurar uma pasta monitorada:
 
-* Faça backup das pastas de saída e falha frequentemente, por exemplo, a cada hora, para evitar a perda de arquivos de resultado e falha.
-* Faça o backup dos arquivos de entrada em uma pasta diferente da que foi assistida. Isso garante a disponibilidade do arquivo após a recuperação caso não seja possível encontrar os arquivos na pasta de saída ou de falha. Certifique-se de que seu esquema de nomenclatura de arquivos seja consistente.
+* Faça backup das pastas de saída e de falha com frequência, por exemplo, a cada hora, para evitar a perda de arquivos de resultado e de falha.
+* Fazer backup dos arquivos de entrada em uma pasta diferente da pasta monitorada. Isso garante a disponibilidade do arquivo após a recuperação, caso não seja possível encontrar os arquivos na pasta de saída ou de falha. Verifique se o esquema de nomenclatura de arquivo é consistente.
 
-   Por exemplo, se você estiver salvando a saída com `%F.`*extensão*, o arquivo de saída terá o mesmo nome do arquivo de entrada. Isso ajuda a determinar quais arquivos de entrada são manipulados e quais devem ser reenviados. Se você vir somente o arquivo file1_out na pasta de resultados e não o arquivo2_out, o arquivo3_out e o arquivo4_out, é necessário reenviar o arquivo2, o arquivo3 e o arquivo4.
+   Por exemplo, se você estiver salvando a saída com `%F.`*extensão*, o arquivo de saída terá o mesmo nome que o arquivo de entrada. Isso ajuda a determinar quais arquivos de entrada são manipulados e quais devem ser reenviados. Se você vir somente o arquivo file1_out na pasta de resultados e não file2_out, file3_out e file4_out, deverá reenviar o arquivo2, file3 e file4.
 
-* Se o backup de pasta monitorada que está disponível for anterior ao tempo necessário para processar o trabalho, você deverá permitir que o sistema crie uma nova pasta monitorada e coloque automaticamente os arquivos na pasta de entrada.
-* Se o backup disponível mais recente não for recente o suficiente, o tempo de backup será menor do que o tempo necessário para processar os arquivos e a pasta monitorada será restaurada, o arquivo será manipulado em um dos seguintes estágios diferentes:
+* Se o backup da pasta monitorada disponível for anterior ao tempo necessário para processar o trabalho, você deverá permitir que o sistema crie uma nova pasta monitorada e coloque automaticamente os arquivos na pasta de entrada.
+* Se o último backup disponível não for suficientemente recente, o tempo de backup for menor que o tempo necessário para processar os arquivos e a pasta monitorada for restaurada, o arquivo será manipulado em um dos seguintes estágios diferentes:
 
    * **Fase 1:** Na pasta de entrada
-   * **Fase 2:** Copiado para a pasta do estágio, mas o processo ainda não é chamado
-   * **Fase 3:** Copiado para a pasta do estágio e o processo é chamado
-   * **Fase 4:** Manipulação em progresso
+   * **Fase 2:** Copiado para a pasta de preparo, mas o processo ainda não foi chamado
+   * **Fase 3:** Copiado para a pasta de preparo e o processo é chamado
+   * **Fase 4:** Manipulação em andamento
    * **Fase 5:** Resultados retornados
 
    Se os arquivos estiverem no Estágio 1, eles serão manipulados. Se os arquivos estiverem no Estágio 2 ou 3, coloque-os na pasta de entrada para que a manipulação ocorra novamente.
@@ -174,4 +174,4 @@ As estratégias a seguir podem minimizar a perda de dados da pasta de saída e e
 
 ## Conclusão {#conclusion}
 
-Devido à natureza dinâmica e em constante mudança de uma pasta assistida, a restauração das pastas monitoradas deve ser feita com arquivos com backup em um dia. Uma prática recomendada seria fazer o backup dos resultados, armazenar a pasta de entrada em um servidor e rastrear os arquivos de entrada para que você possa reenviar o trabalho em caso de falha.
+Devido à natureza dinâmica e em constante mudança de uma pasta monitorada, a restauração de pastas monitoradas deve ser feita com arquivos cujo backup seja feito em um dia. Uma prática recomendada seria fazer backup dos resultados, armazenar a pasta de entrada em um servidor e rastrear arquivos de entrada para que você possa reenviar o trabalho em caso de falha.

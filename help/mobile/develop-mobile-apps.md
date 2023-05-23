@@ -1,6 +1,6 @@
 ---
 title: Administração de aplicativos móveis
-description: Esta página serve como página de aterrissagem para começar a criar, desenvolver e administrar aplicativos móveis.
+description: Essa página serve como uma página de aterrissagem para começar a criar, desenvolver e administrar aplicativos móveis.
 uuid: 0cc9e6d6-c6ea-48f9-9b7f-9ead0f2d199e
 contentOwner: msm-service
 content-type: reference
@@ -19,15 +19,15 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-O Adobe Experience Manager (AEM) Mobile faz parte da plataforma digital de vários canais da Adobe Experience Manager que também utiliza AEM Assets, Sites, Screens, Fluxo de trabalho, Gerenciador de usuários, Commerce e Forms. O AEM Mobile oferece uma flexibilidade notável de implantação, permitindo que as empresas usem uma variedade de fontes de conteúdo.
+O Adobe Experience Manager (AEM) Mobile faz parte da plataforma digital multicanal da Adobe Experience Manager que também aproveita o AEM Assets, Sites, Screens, Workflow, User Manager, Commerce e Forms. O AEM Mobile oferece flexibilidade de implantação notável, permitindo que as empresas usem uma variedade de fontes de conteúdo.
 
-A AEM Mobile oferece vários métodos para criar aplicativos. As diferentes maneiras de criar aplicativos são:
+O AEM Mobile oferece vários métodos para criar aplicativos. As diferentes maneiras de criar aplicativos são:
 
 * [Introdução ao AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Introdução ao Adobe PhoneGap Enterprise com AEM](/help/mobile/developing-in-phonegap.md)
 
 >[!NOTE]
 >
->Se você é novo no Adobe Experience Manager, talvez queira participar [Introdução ao AEM](/help/sites-deploying/deploy.md).
+>Se você é novo no Adobe Experience Manager, talvez queira apresentar [Introdução ao AEM](/help/sites-deploying/deploy.md).

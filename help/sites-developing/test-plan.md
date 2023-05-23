@@ -1,5 +1,5 @@
 ---
-title: Compilação do plano de teste
+title: Compilando seu Plano de Teste
 seo-title: Compiling your Test Plan
 description: Os casos de teste individuais são amalgamados em seu Plano de teste
 seo-description: The individual test cases are amalgamated into your Test Plan
@@ -18,32 +18,32 @@ ht-degree: 0%
 
 ---
 
-# Compilação do plano de teste{#compiling-your-test-plan}
+# Compilando seu Plano de Teste{#compiling-your-test-plan}
 
-Os casos de teste individuais serão então agrupados em seu Plano de teste, que também definirá:
+Os casos de teste individuais serão amalgamados em seu Plano de teste, que também definirá:
 
 **Prioridades**
 
-Certos testes terão mais significado do que outros, por isso é aconselhável indicar a sua prioridade.
+Alguns testes terão mais importância do que outros, portanto é aconselhável indicar sua prioridade.
 
-Por exemplo, certos testes podem afetar uma decisão Go/No-Go e, portanto, devem ser confirmados com cada versão provisória testada.
+Por exemplo, certos testes podem afetar uma decisão de Ir/Não Ir e, portanto, devem ser confirmados com cada versão provisória testada.
 
 **Iterações**
 
-Se o projeto usar qualquer forma de iteração de desenvolvimento (envolvendo várias versões disponibilizadas), talvez seja necessário ou você queira uma indicação dos resultados para cada iteração. Isso pode ser usado para indicar:
+Se o projeto usar qualquer forma de iteração de desenvolvimento (envolvendo várias versões que estão disponíveis), talvez seja necessário ou deseje uma indicação dos resultados para cada iteração. Isso pode ser usado para indicar:
 
-* que ensaios serão abrangidos em que iteração.
-* resultados observados para testes repetidos em várias iterações.
-* que os testes de prioridade e os testes de características básicas são repetidos a intervalos regulares.
+* quais testes serão abordados em qual iteração.
+* os resultados observados para testes repetidos em várias iterações.
+* que os testes de prioridade e os testes sobre as características básicas sejam repetidos a intervalos regulares.
 
 **Testador**
 
-Em algum ponto, você pode atribuir a equipe de teste apropriada ou uma pessoa de teste específica (possivelmente dependente da disponibilidade e/ou experiência).
+Em algum momento, você pode atribuir a equipe de teste apropriada ou uma pessoa de teste específica (possivelmente dependente de disponibilidade e/ou experiência).
 
 **Resumo ou visão geral**
 
-Para fins de relatório, você deve fornecer uma visão geral dos resultados do teste:
+Para fins de relatório, você deverá fornecer uma visão geral dos resultados dos testes:
 
-* Percentagem de testes já abordados.
+* Porcentagem de testes já cobertos.
 * Porcentagem de sucesso/falha.
-* Valores específicos relacionados com os testes de prioridade.
+* Números específicos relacionados com os testes de prioridade.

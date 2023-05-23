@@ -62,7 +62,7 @@ Dependendo da escala do seu sistema, o ambiente de desenvolvimento pode ter inst
 
 ### Controle de qualidade {#quality-assurance}
 
-Este ambiente é usado pela equipe de controle de qualidade para obter uma visão completa [teste](/help/sites-developing/test-plan.md) seu novo sistema; design e função. Ele deve ter ambientes de autor e publicação, com conteúdo adequado, e fornecer todos os serviços necessários para possibilitar um conjunto completo de testes.
+Esse ambiente é usado pela equipe de controle de qualidade para [test](/help/sites-developing/test-plan.md) seu novo sistema; tanto em termos de design quanto de função. Ele deve ter ambientes de autor e publicação, com conteúdo adequado, e fornecer todos os serviços necessários para possibilitar um conjunto completo de testes.
 
 ### Estágios {#staging}
 
@@ -118,7 +118,7 @@ O código deve sempre ser propagado de baixo para cima:
 
 O código (por exemplo, modelos de design e funcionalidade de aplicativos Web personalizados) é geralmente transferido por meio da exportação e da importação de pacotes entre os diferentes repositórios de conteúdo. Quando significativo, essa replicação pode ser configurada como um processo automático.
 
-AEM projetos geralmente acionam a implantação de código:
+Os projetos AEM geralmente acionam a implantação de código:
 
 * Automaticamente: para transferência aos ambientes de desenvolvimento e controle de qualidade.
 * Manualmente: as implantações nos ambientes de preparação e produção são feitas de maneira mais controlada, geralmente manual, embora uma automação seja possível, se necessário.
@@ -140,6 +140,6 @@ O conteúdo de produção deve ser transferido do ambiente de produção ao ambi
 O conteúdo pode ser transferido:
 
 * Entre os diferentes ambientes - exportando e importando pacotes.
-* Entre instâncias diferentes - por replicação direta ([Replicação de AEM](/help/sites-deploying/replication.md)) o conteúdo (usando uma conexão HTTP ou HTTPS).
+* Entre instâncias diferentes - por replicação direta ([Replicação do AEM](/help/sites-deploying/replication.md)) o conteúdo (usando uma conexão HTTP ou HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

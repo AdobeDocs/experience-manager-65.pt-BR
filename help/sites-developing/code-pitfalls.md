@@ -1,7 +1,7 @@
 ---
-title: armadilhas de código
+title: Armadilhas de código
 seo-title: Code pitfalls
-description: Problemas comuns de codificação a serem evitados ao desenvolver para AEM
+description: Erros comuns de codificação a serem evitados ao desenvolver para AEM
 seo-description: Common coding pitfalls to avoid when developing for AEM
 uuid: e7413bdc-4889-45ff-bdcb-b0893d33a3b7
 contentOwner: User
@@ -17,16 +17,16 @@ ht-degree: 0%
 
 ---
 
-# armadilhas de código{#code-pitfalls}
+# Armadilhas de código{#code-pitfalls}
 
-## Evite vínculos Sling no código Java {#avoid-sling-bindings-in-java-code}
+## Evite vinculações Sling no código Java {#avoid-sling-bindings-in-java-code}
 
-Os Sling Bindings são uma maneira inadequada de obter acesso a um serviço em 90% dos casos. Em vez disso, você deve usar *@Reference* ou *@Inject* anotações.
+Os Vínculos Sling são uma maneira inadequada de obter acesso a um serviço em 90% dos casos. Em vez disso, use *@Reference* ou *@Inject* anotações.
 
-## Evite Thread.interrupt no código Java {#avoid-thread-interrupt-in-java-code}
+## Evitar Thread.interrupt no código Java {#avoid-thread-interrupt-in-java-code}
 
-*Thread.interrupt* O é perigoso porque pode fechar arquivos, incluindo arquivos Lucene e arquivos de cache persistentes, quando chamados no momento errado.
+*Thread.interrupt* é perigoso porque pode fechar arquivos, incluindo arquivos Lucene e arquivos de cache persistentes, quando chamado na hora errada.
 
-## Evite misturar a sincronização Java com ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
+## Evite misturar a sincronização do Java com ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
 
-Isso pode levar a uma condição de corrida na qual o código eventualmente ficará bloqueado.
+Isso pode levar a uma condição de corrida na qual o código acabará bloqueando.

@@ -78,7 +78,7 @@ O arquiteto de conteúdo funciona no início do projeto para definir essa estrut
 
 Como os Modelos de conteúdo definem a estrutura do seu conteúdo, é necessário saber quais campos de seus modelos devem ser traduzidos. Geralmente, você trabalha com o arquiteto de conteúdo para definir isso. Para navegar pelos campos de seus modelos de conteúdo, siga as etapas abaixo.
 
-1. Navegar para **Ferramentas** -> **Ativos** -> **Modelos de fragmentos do conteúdo**.
+1. Navegue até **Ferramentas** -> **Assets** -> **Modelos de fragmentos do conteúdo**.
 1. Os Modelos de fragmentos de conteúdo geralmente são armazenados em uma estrutura de pastas. Toque ou clique na pasta do seu projeto.
 1. Os modelos estão listados. Toque ou clique no modelo para ver os detalhes.
    ![Modelos de fragmentos do conteúdo](assets/content-fragment-models.png)
@@ -89,11 +89,11 @@ Como os Modelos de conteúdo definem a estrutura do seu conteúdo, é necessári
 1. Toque ou clique em um dos campos do modelo. O AEM o marca e os detalhes desse campo são mostrados na coluna direita.
    ![Detalhe do Editor de modelo de fragmento de conteúdo](assets/content-fragment-model-editor-detail.png)
 
-Anote o campo **Nome da propriedade** para todos os campos que devem ser traduzidos. Você precisará dessas informações posteriormente na jornada. Esses **Nome da propriedade** s são necessárias para informar AEM quais campos do conteúdo devem ser traduzidos.
+Anote o campo **Nome da propriedade** para todos os campos que devem ser traduzidos. Essas informações serão necessárias posteriormente na jornada. Esses **Nome da propriedade** s são necessários para informar ao AEM quais campos do seu conteúdo devem ser traduzidos.
 
 >[!TIP]
 >
->Geralmente, o arquiteto de conteúdo fornece ao especialista em tradução o **Nome da propriedade** s de todos os campos necessários para tradução. Esses nomes de campo são necessários para posteriormente na jornada. As etapas anteriores são fornecidas para a compreensão do especialista em tradução.
+>Geralmente, o arquiteto de conteúdo fornece ao especialista em tradução a **Nome da propriedade** s de todos os campos necessários para tradução. Esses nomes de campos são necessários para uma versão posterior da jornada. As etapas anteriores são fornecidas para a compreensão do especialista em tradução.
 
 ### Fragmentos de conteúdo {#content-fragments}
 
@@ -170,7 +170,7 @@ Agora que você entendeu o que são Fragmentos de conteúdo e a importância da 
 * **Regras de tradução** - As regras definem qual conteúdo localizado em caminhos específicos deve ser traduzido.
 * **Projetos de tradução** - Os projetos de tradução reúnem conteúdo que deve ser tratado como um único esforço de tradução e acompanha o progresso da tradução, interagindo com o conector para transmitir o conteúdo a ser traduzido e recebê-lo de volta do serviço de tradução.
 
-Geralmente, você só configura o conector uma vez para a instância e para as regras por projeto sem periféricos. Então, você usa projetos de tradução para traduzir seu conteúdo e manter suas traduções atualizadas continuamente.
+Geralmente, você só configura o conector para a instância e as regras uma vez por projeto headless. Então, você usa projetos de tradução para traduzir seu conteúdo e manter suas traduções atualizadas continuamente.
 
 ## O que vem a seguir {#what-is-next}
 

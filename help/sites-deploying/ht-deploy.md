@@ -1,7 +1,7 @@
 ---
-title: Artigos explicativos de configuração
+title: Artigos de instruções sobre configuração
 seo-title: Configuration How-To Articles
-description: Uma lista de artigos que descrevem como realizar tarefas de implantação específicas no AEM.
+description: Uma lista de artigos que descreve como realizar tarefas específicas de implantação no AEM.
 seo-description: A list of articles that describe how to accomplish specific deployment tasks in AEM.
 uuid: 5a339a6f-9c1a-4324-92d3-08b975131a1b
 contentOwner: Guillaume Carlino
@@ -14,17 +14,17 @@ exl-id: e9ea9df4-a355-41fc-a102-01a5d7ca2629
 source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
 workflow-type: tm+mt
 source-wordcount: '88'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
-# Artigos explicativos de configuração{#configuration-how-to-articles}
+# Artigos de instruções sobre configuração{#configuration-how-to-articles}
 
-Os seguintes tópicos descrevem como realizar tarefas específicas de implantação de AEM:
+Os tópicos a seguir descrevem como realizar tarefas específicas de implantação do AEM:
 
-* [Como usar o visualizador de registro](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
-* [Como limpar workflows e o log de auditoria](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
+* [Como Usar o Visualizador de Log](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
+* [Como limpar fluxos de trabalho e o registro de auditoria](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
 
-* [Dicas para ajuste de desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+* [Dicas para ajustar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR)
 * [Como remover recursos da tela de boas-vindas](/help/sites-developing/customizing-the-welcome-console.md)
-* [Como desativar o recurso do rastreador de localização](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
+* [Como desativar o recurso Rastreador de localização](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)

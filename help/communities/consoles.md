@@ -1,7 +1,7 @@
 ---
-title: Consoles de comunidades
+title: Consoles das comunidades
 seo-title: Communities Consoles
-description: Explicação dos Consoles da Comunidade
+description: Explicação dos Consoles da comunidade
 seo-description: Community Consoles explained
 uuid: 1c5b2600-9059-4b44-9741-f1b627423d3c
 contentOwner: Janice Kendall
@@ -18,55 +18,55 @@ ht-degree: 1%
 
 ---
 
-# Consoles de comunidades {#communities-consoles}
+# Consoles das comunidades {#communities-consoles}
 
 Os consoles AEM Communities, disponíveis no ambiente de criação no painel de navegação global, fornecem acesso a tarefas administrativas como:
 
 * [Criação de um site da comunidade](sites-console.md)
-* Adição de [grupos](groups.md) aninhado dentro do site
+* Adicionando [grupos](groups.md) aninhado no site
 * Gerenciamento [modelos de site da comunidade](sites.md)
 * Gerenciamento [membros da comunidade](members.md)
-* [Moderação](moderate-ugc.md) conteúdo gerado pelo usuário (UGC)
-* Criar [etiquetas personalizadas](badges.md)
-* Configurar a [armazenamento padrão para UGC](srp-config.md)
+* [Moderando](moderate-ugc.md) conteúdo gerado pelo usuário (UGC)
+* Criar [selos personalizados](badges.md)
+* Configuração do [armazenamento padrão para UGC](srp-config.md)
 
-When [Armazenamento UGC](working-with-srp.md) está configurada para ser um armazenamento comum compartilhado pelos ambientes de criação e publicação, a variável [console de moderação](moderation.md), disponível em ambientes do autor e de publicação, opera em uma instância solitária do UGC.
+Quando [Armazenamento UGC](working-with-srp.md) é configurado para ser um armazenamento comum compartilhado pelos ambientes do autor e de publicação, o [console de moderação](moderation.md), disponível nos ambientes autor e publicação, opera em uma instância solitária do UGC.
 
-No ambiente de criação, depois de fazer logon com privilégios de administrador, a variável `Communities` os consoles estão disponíveis nos consoles navegação e ferramentas.
+No ambiente do autor, após fazer logon com privilégios de administrador, a variável `Communities` Os consoles estão disponíveis nos consoles navegação e ferramentas.
 
 >[!NOTE]
 >
->No ambiente de publicação, uma [site da comunidade](sites-console.md) exibirá uma `Administration` item de menu quando o membro conectado tiver privilégios adequados.
+>No ambiente de publicação, uma variável [site da comunidade](sites-console.md) exibirá uma `Administration` item de menu quando o membro conectado tem privilégios apropriados.
 
-## Painel Navegação global {#global-navigation-panel}
+## Painel de navegação global {#global-navigation-panel}
 
-Selecione o `Adobe Experience Manager` ícone no canto superior esquerdo para abrir o painel de navegação global e acessar dois ícones:
+Selecione o `Adobe Experience Manager` no canto superior esquerdo para abrir o painel de navegação global e acessar dois ícones:
 
 * [Console de navegação](#navigation-console)
 * [Console Ferramentas](tools.md)
 
 ## Console de navegação {#navigation-console}
 
-Para acessar os vários consoles Comunidades, na navegação global, selecione **navegação, comunidades**.
+Para acessar os vários consoles Comunidades, na navegação global, selecione **navegação, Communities**.
 
 ![comunidades](assets/communities.png)
 
 * [Sites](sites-console.md)
 
-   O console Sites é acessível no ambiente de criação com o objetivo de criar e gerenciar sites da comunidade e seus [grupos](groups.md).
+   O console Sites pode ser acessado no ambiente de criação para criar e gerenciar sites da comunidade e seus [grupos](groups.md).
 
 * [Moderação](moderation.md)
 
-   O console Moderação é para moderação em massa do UGC e no ambiente de criação. Um console de moderação em massa semelhante pode ser acessado no ambiente de publicação para membros da comunidade aos quais foi atribuída a função de [moderador da comunidade](users.md#publishenvironmentusersandgroups) para um ou mais sites da comunidade.
+   O console de Moderação serve para a moderação em massa de UGC e no ambiente do autor. Um console de moderação em massa semelhante está acessível no ambiente de publicação para membros da comunidade com a função de [moderador da comunidade](users.md#publishenvironmentusersandgroups) para um ou mais sites da comunidade.
 
 * [Membros, Grupos](members.md)
 
-   Os consoles Membros e Grupos são para gerenciar membros da comunidade e grupos de membros que existem no ambiente de publicação a partir do ambiente de criação.
+   Os consoles Membros e grupos são para gerenciar membros da comunidade e grupos de membros que existem no ambiente de publicação do ambiente de autor.
 
 * [Relatórios](reports.md)
 
-   O console Relatórios é onde os relatórios sobre atribuições, exibições de página e conteúdo publicado (UGC) podem ser gerados quando um site da comunidade [Adobe Analytics habilitado](sites-console.md#analytics). O console só está disponível no ambiente do autor.
+   O console Relatórios é onde os relatórios sobre atribuições, visualizações de página e conteúdo publicado (UGC) podem ser gerados quando um site da comunidade tiver [Adobe Analytics habilitado](sites-console.md#analytics). O console só está disponível no ambiente do autor.
 
-## Console Ferramentas {#tools-console}
+## Console de ferramentas {#tools-console}
 
-Para acessar [Ferramentas do Communities](tools.md) (antigo console de administração), da navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]**
+Para acessar o [Ferramentas das comunidades](tools.md) (antigo console de administração), da navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Communities]**

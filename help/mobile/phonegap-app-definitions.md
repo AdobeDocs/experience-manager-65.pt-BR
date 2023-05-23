@@ -1,7 +1,7 @@
 ---
 title: Definições do aplicativo
 seo-title: App definitions
-description: Siga esta página para saber mais sobre as definições do aplicativo, que são uma maneira de identificar quais espaços e outras configurações são apropriados para o aplicativo. As definições de aplicativo permitem que o usuário adicione espaço, sem precisar recompilar o aplicativo.
+description: Siga esta página para saber mais sobre as definições do aplicativo, que são uma maneira de identificar quais espaços e outras configurações são apropriados para o aplicativo. As definições do aplicativo permitem que o usuário adicione espaço, sem ter que recompilar o aplicativo.
 seo-description: Follow this page to learn about app definitions, that are a way to identify what spaces and other configurations are appropriate for the app. App definitions allows the user to add space, without having to recompile the app.
 uuid: bdb4063b-1597-47e2-96d4-c4cc7c78c3d7
 contentOwner: User
@@ -21,23 +21,23 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-As definições do aplicativo são uma maneira de identificar quais espaços e outras configurações são apropriados para o aplicativo. As definições de aplicativo permitem que o usuário adicione espaço, sem precisar recompilar o aplicativo. A definição do aplicativo é atualizada e incluirá as informações de quaisquer novos espaços.
+As definições de aplicativo são uma maneira de identificar quais espaços e outras configurações são apropriados para o aplicativo. As definições do aplicativo permitem que o usuário adicione espaço, sem ter que recompilar o aplicativo. A definição do aplicativo é atualizada e incluirá as informações de todos os novos espaços.
 
 >[!NOTE]
 >
->As definições do aplicativo estão vinculadas a um aplicativo, portanto, exigem a criação de um aplicativo no console do aplicativo AEM Mobile.
+>As definições de aplicativo estão vinculadas a um aplicativo, portanto, exigem a criação de um Aplicativo no console de Aplicativos AEM Mobile.
 
 ## Criação de uma nova definição de aplicativo {#creating-a-new-app-definition}
 
-1. Choose **Celular** no Console de Navegação de AEM.
+1. Escolher **Dispositivo móvel** no console de navegação do AEM.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Choose **Aplicativos** from **Celular** e clique em **Criar.**
+1. Escolher **Aplicativos** de **Dispositivo móvel** e clique em **Criar.**
 
-   Choose **Aplicativo** para e insira os detalhes para criar seu novo aplicativo.
+   Escolher **Aplicativo** Acesse e insira os detalhes para criar seu novo aplicativo.
 
    ![chlimage_1-11](assets/chlimage_1-11.gif)
 
@@ -46,12 +46,12 @@ As definições do aplicativo são uma maneira de identificar quais espaços e o
 Depois de conhecer as Definições do aplicativo, saiba mais sobre os seguintes recursos de criação:
 
 * [Importar um aplicativo híbrido existente](/help/mobile/phonegap-adding-content-to-imported-app.md)
-* [Criar um novo aplicativo usando o Assistente para criação de aplicativo](/help/mobile/phonegap-create-new-app.md)
+* [Criar um novo aplicativo usando o Assistente para criação de aplicativos](/help/mobile/phonegap-create-new-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)
 
 ## Recursos adicionais {#additional-resources}
 
 Para saber mais sobre as funções e responsabilidades de um Administrador e Desenvolvedor, consulte os recursos abaixo:
 
-* [Desenvolvimento para Adobe PhoneGap Enterprise com AEM](/help/mobile/developing-in-phonegap.md)
-* [Administração de conteúdo para Adobe PhoneGap Enterprise com AEM](/help/mobile/administer-phonegap.md)
+* [Desenvolvimento do Adobe PhoneGap Enterprise com AEM](/help/mobile/developing-in-phonegap.md)
+* [Administração de conteúdo para o Adobe PhoneGap Enterprise com AEM](/help/mobile/administer-phonegap.md)

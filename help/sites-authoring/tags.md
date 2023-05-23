@@ -1,6 +1,6 @@
 ---
-title: Uso de tags para classificar o conteúdo em um site
-description: Tags são um método rápido e fácil de classificar o conteúdo em um site.
+title: Utilização de tags para classificar conteúdo em um site
+description: As tags são um método rápido e fácil de classificar conteúdo em um site.
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,9 +18,9 @@ ht-degree: 66%
 
 # Uso de tags{#using-tags}
 
-Tags são um método rápido e fácil de classificar o conteúdo em um site. As tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, ativo ou outro conteúdo para permitir que as pesquisas encontrem esse conteúdo e conteúdo relacionado.
+As tags são um método rápido e fácil de classificar conteúdo em um site. As tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, um ativo ou outro conteúdo para permitir que as pesquisas localizem esse conteúdo e conteúdo relacionado.
 
-* Consulte [Administração de tags](/help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags, bem como sobre quais tags de conteúdo foram aplicadas.
+* Consulte [Administração de tags](/help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags e sobre quais tags de conteúdo foram aplicadas.
 * Consulte [Marcação para desenvolvedores](/help/sites-developing/tags.md) para obter informações sobre a estrutura de marcação e sobre como incluir e estender tags em aplicativos personalizados.
 
 ## Dez razões para usar marcação {#ten-reasons-to-use-tagging}
@@ -34,17 +34,17 @@ Tags são um método rápido e fácil de classificar o conteúdo em um site. As 
 1. **Habilitação de SEO** - aplicadas como propriedades de página aparecerão automaticamente nas metatags da página, tornando-a visível para os mecanismos de pesquisa.
 1. **Sofisticação simples** - tags podem ser criadas simplesmente a partir de uma palavra e com o toque de um botão. Posteriormente, um título, uma descrição e um número ilimitado de etiquetas podem ser adicionadas para fornecer mais semântica à tag.
 1. **Consistência básica** - o sistema de marcação é um componente central do AEM e é usado por todos os recursos do AEM para categorizar o conteúdo. Além disso, a API de marcação está disponível para os desenvolvedores criarem aplicativos ativados para marcação com acesso às mesmas taxonomias.
-1. **Combina estrutura e flexibilidade** - AEM é ideal para trabalhar com informações estruturadas, devido ao aninhamento de páginas e caminhos. Ele é igualmente poderoso ao trabalhar com informações não estruturadas, devido à pesquisa de texto completo integrada. A marcação combina os pontos fortes de estrutura e flexibilidade.
+1. **Combina estrutura e flexibilidade** - AEM é ideal para trabalhar com informações estruturadas, devido ao aninhamento de páginas e caminhos. Ela é igualmente eficiente ao trabalhar com informações não estruturadas, devido à pesquisa integrada de texto completo. A marcação combina os pontos fortes da estrutura e da flexibilidade.
 
-Ao projetar a estrutura de conteúdo para um site e o esquema de metadados para ativos, considere a abordagem leve e acessível que a marcação oferece.
+Ao projetar a estrutura de conteúdo para um site e o esquema de metadados para ativos, considere a abordagem mais leve e acessível que a marcação oferece.
 
 ## Aplicação de tags   {#applying-tags}
 
 No ambiente de criação, os autores podem aplicar tags acessando as propriedades da página e digitando uma ou mais tags no campo **Tags/Palavras-chave**.
 
-Aplicar [tags predefinidas](/help/sites-administering/tags.md)no **Propriedades da página** use a **Tags** e o **Selecionar Tags** janela. A guia **Tags padrão** é o namespace padrão, o que significa que não há `namespace-string:` prefixado à taxonomia.
+Para aplicar [tags predefinidas](/help/sites-administering/tags.md), no **Propriedades da página** janela use o **Tags** e o campo **Selecionar tags** janela. A guia **Tags padrão** é o namespace padrão, o que significa que não há `namespace-string:` prefixado à taxonomia.
 
-![Selecione a janela Tags; usar o botão X para desmarcar as tags atualmente selecionadas](assets/chlimage_1-41.png)
+![Janela Selecionar tags; use o botão X para desmarcar as tags selecionadas no momento](assets/chlimage_1-41.png)
 
 ### Publicação de tags {#publishing-tags}
 

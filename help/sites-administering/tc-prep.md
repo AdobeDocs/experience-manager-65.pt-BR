@@ -22,7 +22,7 @@ ht-degree: 66%
 
 Sites multilíngues geralmente fornecem alguma quantidade de conteúdo em vários idiomas. O site é criado em um idioma e depois traduzido para outros idiomas. Geralmente, sites multilíngues consistem em ramificações de páginas, onde cada ramificação contém as páginas do site em um idioma diferente.
 
-O exemplo de Site de demonstração do Geometrixx inclui várias ramificações de idioma e usa a seguinte estrutura:
+O exemplo de site de demonstração do Geometrixx inclui várias ramificações de idioma e usa a seguinte estrutura:
 
 ```xml
 /content
@@ -42,9 +42,9 @@ A cópia de idioma para a qual você criou originalmente o conteúdo do site é 
 
 Use as seguintes etapas para preparar seu site para tradução:
 
-1. Crie a raiz de idioma do idioma principal. Por exemplo, a raiz do idioma do site de demonstração do Geometrixx em inglês é /content/geometrixx/en. Verifique se a raiz do idioma está configurada corretamente de acordo com as informações em [Criar uma raiz de idioma](/help/sites-administering/tc-prep.md#creating-a-language-root).
+1. Crie a raiz de idioma do idioma principal. Por exemplo, a raiz de idioma do site de demonstração em inglês do Geometrixx é /content/geometrixx/en. Verifique se a raiz do idioma está configurada corretamente de acordo com as informações em [Criar uma raiz de idioma](/help/sites-administering/tc-prep.md#creating-a-language-root).
 1. Crie o conteúdo do seu idioma principal.
-1. Crie a raiz de idioma de cada cópia de idioma para o site. Por exemplo, a cópia em francês do site de amostra do Geometrixx é /content/geometrixx/fr.
+1. Crie a raiz de idioma de cada cópia de idioma para o site. Por exemplo, a cópia do idioma em francês do site de amostra do Geometrixx é /content/geometrixx/fr.
 
 Depois de preparar o conteúdo para tradução, é possível criar automaticamente as páginas ausentes em suas cópias de idioma e projetos de tradução associados. (Consulte [Criação de um projeto de tradução](/help/sites-administering/tc-manage.md).) Para obter uma visão geral do processo de tradução de conteúdo no AEM, consulte [Tradução de conteúdo para sites multilíngues](/help/sites-administering/translation.md).
 
@@ -56,18 +56,18 @@ Para criar a raiz do idioma, crie uma página e use um código de idioma ISO com
 
 * `<language-code>`O código de idioma compatível é um código de duas letras, conforme definido pela ISO-639-1, como por exemplo `en`.
 
-* `<language-code>_<country-code>` ou `<language-code>-<country-code>`O código de país suportado é um código de duas letras em letras minúsculas ou maiúsculas, conforme definido pela norma ISO 3166, por exemplo `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>_<country-code>` ou `<language-code>-<country-code>`O código do país compatível é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166, por exemplo `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-É possível usar qualquer um dos formatos, de acordo com a estrutura escolhida para o site global.  Por exemplo, a página raiz da cópia em francês do site do Geometrixx tem `fr` como a propriedade Name . Observe que a propriedade Nome é usada como o nome do nó da página no repositório e, portanto, determina o caminho da página. (http://localhost:4502/content/geometrixx/fr.html)
+É possível usar qualquer um dos formatos, de acordo com a estrutura escolhida para o site global.  Por exemplo, a página raiz da cópia em francês do site do Geometrixx tem `fr` como a propriedade Nome. Observe que a propriedade Nome é usada como o nome do nó da página no repositório e, portanto, determina o caminho da página. (http://localhost:4502/content/geometrixx/fr.html)
 
-O procedimento a seguir usa a interface otimizada para toque para criar uma cópia de idioma de um site. Para obter instruções que usam a interface clássica, consulte [Criar uma raiz de idioma usando a interface clássica](/help/sites-administering/tc-lroot-classic.md).
+O procedimento a seguir usa a interface otimizada para toque para criar uma cópia de idioma de um site. Para obter instruções que usam a interface clássica, consulte [Criação de uma raiz de idioma usando a interface clássica](/help/sites-administering/tc-lroot-classic.md).
 
 1. Navegue até Sites.
 1. Clique ou toque no site para o qual deseja criar uma cópia de idioma.
 
-   Por exemplo, para criar uma cópia de idioma do site Geometrixx Outdoors, você clicaria ou tocaria em Geometrixx Outdoors Site.
+   Por exemplo, para criar uma cópia de idioma do site Geometrixx Outdoors, clique ou toque em Geometrixx Outdoors Site.
 
-1. Clique ou toque em Criar e, em seguida, clique ou toque em Criar página.
+1. Clique ou toque em Criar e em Criar página.
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
@@ -80,13 +80,13 @@ O procedimento a seguir usa a interface otimizada para toque para criar uma cóp
 
 ## Ver o status das raízes de idioma {#seeing-the-status-of-language-roots}
 
-A interface otimizada para toque fornece um painel Referências que mostra uma lista de raízes de idioma que foram criadas.
+A interface otimizada para toque fornece um painel de Referências que mostra uma lista de raízes de idioma que foram criadas.
 
 ![chlimage_1-23](assets/chlimage_1-23a.png)
 
-O procedimento a seguir usa a interface otimizada para toque para abrir o painel Referências para uma página.
+O procedimento a seguir usa a interface otimizada para toque para abrir o painel Referências de uma página.
 
-1. No console Sites , selecione uma página do site e clique ou toque em **Referências**.
+1. No console Sites, selecione uma página do site e clique ou toque em **Referências**.
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 

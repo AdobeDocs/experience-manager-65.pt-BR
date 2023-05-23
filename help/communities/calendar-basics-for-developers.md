@@ -1,7 +1,7 @@
 ---
 title: Fundamentos do calendário
 seo-title: Calendar Essentials
-description: Visão geral do recurso de calendário
+description: Visão geral do recurso Calendário
 seo-description: Calendar feature overview
 uuid: 14ff7a83-b2a7-4f7e-8ee7-88f336329a1a
 contentOwner: Guillaume Carlino
@@ -21,16 +21,16 @@ ht-degree: 2%
 
 Esta página fornece informações essenciais sobre como trabalhar com o recurso de calendário.
 
-## Fundamentos para o lado do cliente {#essentials-for-client-side}
+## Essentials para o lado do cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/calendário/componentes/hbs/calendário</td>
+   <td>social/calendar/components/hbs/calendar</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incondicional</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluível</strong></a></td>
    <td>Não</td>
   </tr>
   <tr>
@@ -38,7 +38,7 @@ Esta página fornece informações essenciais sobre como trabalhar com o recurso
    <td>cq.social.hbs.calendar</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelos</strong></td>
    <td>/libs/social/calendar/components/hbs/calendar/calendar.hbs</td>
    <td> </td>
   </tr>
@@ -48,34 +48,34 @@ Esta página fornece informações essenciais sobre como trabalhar com o recurso
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>see <a href="calendar.md">Uso de Calendários</a></td>
+   <td>consulte <a href="calendar.md">Uso de calendários</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizações do lado do cliente](client-customize.md)
 
-## Fundamentos para o lado do servidor {#essentials-for-server-side}
+## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [APIs do calendário](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
+* [APIs de calendário](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
-* [Endpoints do calendário](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
+* [Endpoints de calendário](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
 ### Função do calendário {#calendar-function}
 
-Uma estrutura de site da comunidade que inclui a variável [Função de calendário](functions.md#calendar-function) terá um `calendar` componente. A função Calendário suporta a identificação de um [grupo de usuários membro privilegiado](users.md#privileged-members-group).
+Uma estrutura de site da comunidade que inclui o [Função de calendário](functions.md#calendar-function) terá um configurado `calendar` componente. A função Calendário permite identificar um [grupo de usuários membro privilegiado](users.md#privileged-members-group).
 
-### Acessar publicações de calendário (UGC) {#accessing-calendar-posts-ugc}
+### Acessar publicações do calendário (UGC) {#accessing-calendar-posts-ugc}
 
-A partir AEM 6.1 Comunidades, uso de um [loja comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
-**A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
+**A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 
 Consulte:
 
 * [Visão geral do provedor de recursos de armazenamento](srp.md) - introdução e visão geral do uso do repositório
-* [Princípios básicos de SRP e UGC](srp-and-ugc.md) - Métodos e exemplos de utilitários SRP
+* [Fundamentos de SRP e UGC](srp-and-ugc.md) - Métodos e exemplos do utilitário SRP
 * [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação
-* [Refatoração do SocialUtils](socialutils.md) - mapeamento de métodos de utilitário obsoletos para os métodos de utilitário SRP atuais
+* [Refatoração de SocialUtils](socialutils.md) - mapeamento de métodos de utilitário obsoletos para métodos de utilitário SRP atuais

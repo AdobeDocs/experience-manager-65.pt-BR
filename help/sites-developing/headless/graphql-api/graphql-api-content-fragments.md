@@ -1,6 +1,6 @@
 ---
 title: API GraphQL do AEM para uso com Fragmentos de conteúdo
-description: Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) com a API do GraphQL AEM para entrega de conteúdo sem periféricos.
+description: Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) com a API do AEM GraphQL para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: cf78742614fd2d35f59905895dfacb83190140cd
@@ -12,7 +12,7 @@ ht-degree: 88%
 
 # API GraphQL do AEM para uso com Fragmentos de conteúdo {#graphql-api-for-use-with-content-fragments}
 
-Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) com a API do GraphQL AEM para entrega de conteúdo sem periféricos.
+Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) com a API do AEM GraphQL para entrega de conteúdo headless.
 
 A API GraphQL do AEM utilizada com Fragmentos de conteúdo é baseada na API GraphQL padrão de código aberto.
 
@@ -24,7 +24,7 @@ Usar a API GraphQL no AEM permite a entrega eficiente dos Fragmentos de conteúd
 
 >[!NOTE]
 >
->O GraphQL é usado atualmente em dois cenários (separados) no Adobe Experience Manager (AEM):
+>Atualmente, o GraphQL é usado em dois cenários (separados) no Adobe Experience Manager (AEM):
 >
 >* [O AEM Commerce consome dados de uma plataforma do Commerce por meio do GraphQL](/help/commerce/cif/integrating/magento.md).
 >* Fragmentos de conteúdo do AEM trabalham em conjunto com a API GraphQL do AEM (uma implementação personalizada, com base no GraphQL padrão), para fornecer conteúdo estruturado para uso em seus aplicativos.
@@ -32,7 +32,7 @@ Usar a API GraphQL no AEM permite a entrega eficiente dos Fragmentos de conteúd
 
 ## Pré-requisitos {#prerequisites}
 
-Os clientes que usam o GraphQL devem instalar o Fragmento de conteúdo AEM com o Pacote de índice GraphQL 1.0.5. Consulte o [Notas de versão](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) para obter mais detalhes.
+Os clientes que usam o GraphQL devem instalar o AEM Content Fragment with GraphQL Index Package 1.0.5. Consulte a [Notas de versão](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) para obter mais detalhes.
 
 ## A API GraphQL {#graphql-api}
 
@@ -111,12 +111,12 @@ O AEM fornece recursos para converter consultas (de ambos os tipos) em [](/help/
 As [consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md) são o método recomendado a ser usado em instâncias de publicação, como:
 
 * são armazenadas em cache
-* são gerenciados centralmente pelo AEM
+* eles são gerenciados centralmente pelo AEM
 
 <!-- is this fully accurate? -->
 >[!NOTE]
 >
->Geralmente, não há dispatcher/CDN no autor, portanto, não há ganho de desempenho no uso de consultas persistentes lá; além de testá-los.
+>Normalmente, não há dispatcher/CDN no autor, portanto, não há ganho de desempenho ao usar consultas persistentes lá; além de testá-las.
 
 As consultas GraphQL que utilizam solicitações POST não são recomendadas, pois não são armazenadas em cache. Portanto, em uma instância padrão, o Dispatcher é configurado para bloquear essas consultas.
 
@@ -128,7 +128,7 @@ Embora o GraphQL também seja compatível com solicitações GET, elas podem ati
 
 ## Interface GraphiQL {#graphiql-interface}
 
-Uma implementação do padrão [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) A interface do está disponível para uso com AEM GraphQL.
+Uma implementação da norma [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) A interface do está disponível para uso com o AEM GraphQL.
 
 >[!NOTE]
 >
@@ -136,7 +136,7 @@ Uma implementação do padrão [GraphiQL](https://graphql.org/learn/serving-over
 >
 >Em versões anteriores, era necessário um pacote para instalar o GraphiQL IDE. Se você o instalou, agora é possível removê-lo.
 
-Essa interface permite que você insira e teste diretamente consultas.
+Essa interface permite inserir e testar diretamente consultas.
 
 Por exemplo:
 
@@ -152,7 +152,7 @@ Isso fornece recursos como realce de sintaxe, preenchimento automático e sugest
 
 ## Casos de uso para ambientes de Autor e Publicação {#use-cases-author-publish-environments}
 
-Os casos de uso podem depender do tipo de ambiente de AEM:
+Os casos de uso podem depender do tipo de ambiente AEM:
 
 * Ambiente de publicação; usado para:
    * Consultar dados para o aplicativo JS (caso de uso padrão)
@@ -261,7 +261,7 @@ O GraphQL do AEM oferece suporte a uma lista de tipos. Todos os tipos de dados d
 | Enumeração |  `String` |  Usado para exibir uma opção de uma lista de opções definidas na criação do modelo |
 |  Tags |  `[String]` |  Usado para exibir uma lista de sequências de caracteres que representam tags usadas no AEM |
 | Referência de conteúdo |  `String` |  Usado para exibir o caminho para outro ativo no AEM |
-| Referência do fragmento |  *Um tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado diretamente <br><br>Vários campos, com um tipo referenciado: `[Model]` - Matriz de tipo `Model`referenciado diretamente do array <br><br>Vários campos, com vários tipos referenciados: `[AllFragmentModels]` - Matriz de todos os tipos de modelo, referenciada a partir de array com tipo de união |  Usado para fazer referência a um ou mais Fragmentos de conteúdo de determinados Tipos de modelo, definidos quando o modelo foi criado |
+| Referência do fragmento |  *Um tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado diretamente <br><br>Vários campos, com um tipo referenciado: `[Model]` - Matriz de tipo `Model`, referenciado diretamente do array <br><br>Vários campos, com vários tipos referenciados: `[AllFragmentModels]` - Matriz de todos os tipos de modelo, referenciada da matriz com tipo de união |  Usado para fazer referência a um ou mais Fragmentos de conteúdo de determinados Tipos de modelo, definidos quando o modelo foi criado |
 
 {style="table-layout:auto"}
 
@@ -483,7 +483,7 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
    * adicione `List` ao nome do modelo; por exemplo, `cityList`
    * Consulte [Exemplo de consulta - Todas as informações sobre todas as cidades](#sample-all-information-all-cities)
 
-* O filtro `includeVariations` está incluída no `List` tipo de consulta.  Para recuperar as variações do fragmento de conteúdo nos resultados da consulta, em seguida, use o `includeVariations` deve ser definido como `true`.
+* O filtro `includeVariations` está incluído na variável `List` tipo de consulta.  Para recuperar as Variações do fragmento de conteúdo nos resultados da consulta, `includeVariations` o filtro deve ser definido como `true`.
 
    >[!CAUTION]
    >O filtro `includeVariations` não pode ser usado junto com o campo gerado pelo sistema `_variation`.
@@ -521,14 +521,14 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
          >O campo gerado pelo sistema `_variation` não pode ser usado junto com o filtro `includeVariations`.
 
          * Consulte [Exemplo de consulta - Todas as cidades com uma variação nomeada](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
-      * `_tags` : para revelar as IDs de Fragmentos de conteúdo ou Variações que contêm tags; isso é uma matriz de `cq:tags` identificadores.
+      * `_tags` : para revelar as IDs dos Fragmentos de conteúdo ou Variações que contêm tags; é uma matriz de `cq:tags` identificadores.
 
-         * Consulte [Consulta de exemplo - Nomes de todas as cidades marcadas como quebras de cidade](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
-         * Consulte [Exemplo de consulta para variações do fragmento de conteúdo de um determinado modelo que tem uma tag específica anexada](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+         * Consulte [Exemplo de consulta - Nomes de todas as cidades marcadas como Quebras de cidade](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
+         * Consulte [Exemplo de consulta para variações de fragmento de conteúdo de um determinado modelo que tem uma tag específica anexada](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
 
          >[!NOTE]
          >
-         >As tags também podem ser consultadas ao listar os metadados de um fragmento de conteúdo.
+         >As tags também podem ser consultadas listando os metadados de um fragmento de conteúdo.
    * E operações:
 
       * `_operator` : aplica operadores específicos; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS` e `STARTS_WITH`
@@ -556,7 +556,7 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 
 * Fazer o fallback ao consultar fragmentos aninhados:
 
-   * Se a variação solicitada não existir em um fragmento aninhado, a variável **Principal** será retornada.
+   * Se a variação solicitada não existir em um fragmento aninhado, a variável **Principal** a variação será retornada.
 
 ### Filtro CORS {#cors-filter}
 
@@ -564,9 +564,9 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 >
 >Para obter uma visão geral detalhada da política de compartilhamento de recursos do CORS no AEM, consulte [Entenda o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=pt-BR#understand-cross-origin-resource-sharing-(cors)).
 
-Para acessar o terminal GraphQL, uma política CORS deve ser configurada no repositório Git do cliente. Isso é feito adicionando um arquivo de configuração de CORS OSGi apropriado para os endpoints desejados. 
+Para acessar o endpoint do GraphQL, uma política do CORS deve ser configurada no repositório Git do cliente. Isso é feito adicionando um arquivo de configuração de CORS OSGi apropriado para os endpoints desejados. 
 
-Essa configuração deve especificar uma origem de site confiável `alloworigin` ou `alloworiginregexp` cujo acesso deve ser concedido.
+Esta configuração deve especificar uma origem de site confiável `alloworigin` ou `alloworiginregexp` acesso deve ser concedido.
 
 Por exemplo, para conceder acesso ao endpoint do GraphQL  e ao endpoint de consultas persistentes para `https://my.domain`, é possível usar:
 
@@ -609,7 +609,7 @@ Se você tiver configurado um caminho personalizado para o endpoint, também pod
 
 Além da configuração do CORS, um filtro Referenciador deve ser configurado para permitir acesso de hosts de terceiros.
 
-Isso é feito adicionando um arquivo de configuração do Filtro de referenciador OSGi apropriado que:
+Isso é feito adicionando um arquivo de configuração de Filtro referenciador OSGi apropriado que:
 
 * especifica um nome de host de site confiável; `allow.hosts` ou `allow.hosts.regexp`
 * concede acesso a esse nome de host.

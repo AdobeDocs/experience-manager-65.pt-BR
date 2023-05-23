@@ -1,7 +1,7 @@
 ---
-title: API Javascript de contexto do cliente
+title: API Javascript do Client Context
 seo-title: Client Context Javascript API
-description: A API do Javascript para o contexto do cliente
+description: A API do Javascript para o Contexto do cliente
 seo-description: The Javascript API for Client Context
 uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
@@ -14,15 +14,15 @@ exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3153'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
-# API Javascript de contexto do cliente{#client-context-javascript-api}
+# API Javascript do Client Context{#client-context-javascript-api}
 
 ## CQ_Analytics.ClientContextMgr {#cq-analytics-clientcontextmgr}
 
-O objeto CQ_Analytics.ClientContextMgr é um singleton que contém um conjunto de armazenamentos de sessão autoregistrados e fornece métodos para registrar, persistir e gerenciar os armazenamentos de sessão.
+O objeto CQ_Analytics.ClientContextMgr é um singleton que contém um conjunto de armazenamentos de sessão registrados automaticamente e fornece métodos para registrar, persistir e gerenciar os armazenamentos de sessão.
 
 Estende CQ_Analytics.PersistedSessionStore.
 
@@ -30,86 +30,86 @@ Estende CQ_Analytics.PersistedSessionStore.
 
 #### getRegisteredStore(name) {#getregisteredstore-name}
 
-Retorna um armazenamento de sessão com um nome especificado. Consulte também [Acessar um armazenamento de sessão](/help/sites-developing/client-context.md#accessing-session-stores).
+Retorna um armazenamento de sessão de um nome especificado. Consulte também [Acessar um armazenamento de sessão](/help/sites-developing/client-context.md#accessing-session-stores).
 
 **Parâmetros**
 
-* name: Sequência de caracteres. O nome do armazenamento de sessão.
+* name: string. O nome do armazenamento de sessão.
 
-**Retorna**
+**Devoluções**
 
-Um objeto CQ_Analytics.SessionStore que representa o armazenamento de sessão do nome fornecido. Devoluções `null` quando não existe nenhum armazenamento do nome fornecido.
+Um objeto CQ_Analytics.SessionStore que representa o armazenamento de sessão do nome fornecido. Devoluções `null` quando não existe armazenamento com o nome fornecido.
 
 #### register(sessionstore) {#register-sessionstore}
 
-Registra um armazenamento de sessão com o Contexto do Cliente. Aciona os eventos storeregister e storeupdate após a conclusão.
+Registra um armazenamento de sessão com o Client Context. Aciona os eventos storeregister e storeupdate após a conclusão.
 
 **Parâmetros**
 
-* sessionstore: CQ_Analytics.SessionStore. O objeto do repositório de sessão a ser registrado.
+* sessionstore: CQ_Analytics.SessionStore. O objeto de repositório de sessão a ser registrado.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
 ## CQ_Analytics.ClientContextUtils {#cq-analytics-clientcontextutils}
 
-Fornece métodos de acompanhamento para ativação e registro da loja de sessões. Consulte também [Verificando se um armazenamento de sessão está definido e inicializado](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized).
+Fornece métodos para escuta da ativação e registro do armazenamento de sessão. Consulte também [Verificando se um Armazenamento de Sessão está Definido e Inicializado](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized).
 
 ### Métodos {#methods-1}
 
 #### onStoreInitialized(storeName, retorno de chamada, atraso) {#onstoreinitialized-storename-callback-delay}
 
-Registra uma função de retorno de chamada que é chamada quando um armazenamento de sessão é inicializado. Para armazenamentos que são inicializados várias vezes, especifique um atraso de retorno de chamada para que a função de retorno de chamada seja chamada apenas uma vez:
+Registra uma função de retorno de chamada que é chamada quando um armazenamento de sessão é inicializado. Para lojas inicializadas várias vezes, especifique um atraso de retorno de chamada para que a função de retorno de chamada seja chamada apenas uma vez:
 
 * Quando o armazenamento é inicializado durante o período de atraso de uma inicialização anterior, a chamada de função anterior é cancelada e a função é chamada novamente para a inicialização atual.
-* Se o período de atraso expirar antes de ocorrer uma inicialização subsequente, a função de retorno de chamada será executada duas vezes.
+* Se o período de atraso ocorrer antes de uma inicialização subsequente, a função de retorno de chamada será executada duas vezes.
 
-Por exemplo, um armazenamento de sessão é baseado em um objeto JSON e recuperado por meio de uma solicitação JSON. Os seguintes cenários de inicialização são possíveis:
+Por exemplo, um armazenamento de sessão é baseado em um objeto JSON e recuperado por uma solicitação JSON. Os seguintes cenários de inicialização são possíveis:
 
-* A solicitação é concluída, os dados recuperados e carregados no armazenamento. Nesse caso, a inicialização ocorre uma vez.
+* A solicitação é concluída, os dados são recuperados e carregados no armazenamento. Nesse caso, a inicialização ocorre uma vez.
 * A solicitação falha (tempo limite). Nesse caso, a inicialização não ocorre e não há dados no armazenamento.
-* A loja é pré-preenchida com valores padrão (propriedades da inicialização), mas a solicitação falha (tempo limite). Há apenas uma inicialização com valores padrão.
-* A loja é pré-preenchida.
+* O armazenamento é pré-preenchido com valores padrão (propriedades init), mas a solicitação falha (tempo limite). Há apenas uma inicialização com valores padrão.
+* O armazenamento é preenchido previamente
 
-Quando o atraso estiver definido como `true` Para um número de milissegundos, o método aguarda antes de chamar o método de retorno de chamada. Se outro evento de inicialização for acionado antes que o atraso seja passado, ele aguardará até que o tempo de atraso seja excedido sem nenhum evento de inicialização. Isso permite que a espera por que um segundo evento de inicialização seja acionado e chama a função de retorno de chamada no caso mais ideal.
+Quando o atraso estiver definido como `true` Para um número de milissegundos, o método aguarda antes de chamar o método de retorno de chamada. Se outro evento de inicialização for acionado antes que o atraso seja passado, ele aguardará até que o tempo de atraso seja excedido sem nenhum evento de inicialização. Isso permite aguardar um segundo evento de inicialização ser acionado e chama a função de retorno de chamada no caso ideal.
 
 **Parâmetros**
 
-* storeName: Sequência de caracteres. O nome do armazenamento de sessão para adicionar o ouvinte.
-* retorno de chamada: Função. A função a ser chamada na inicialização da loja.
-* atraso: Booleano ou número. O tempo para atrasar a chamada para a função de retorno de chamada, em milissegundos. Um valor booleano de `true` usa o atraso padrão de `200 ms`. Um valor booleano de `false` ou um número negativo faz com que nenhum atraso seja usado.
+* storeName: cadeia de caracteres. O nome do armazenamento de sessão para adicionar o listener.
+* callback: Função. A função a ser chamada na inicialização de armazenamento.
+* delay: Booleano ou número. O tempo de atraso da chamada para a função de retorno de chamada, em milissegundos. Um valor booleano de `true` usa o atraso padrão de `200 ms`. Um valor booleano de `false` ou um número negativo faz com que nenhum atraso seja usado.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
 #### onStoreRegistered(storeName, retorno de chamada) {#onstoreregistered-storename-callback}
 
-Registra uma função de retorno de chamada que é chamada quando um armazenamento de sessão é registrado. O evento de registro ocorre quando uma loja está registrada para [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr).
+Registra uma função de retorno de chamada que é chamada quando um armazenamento de sessão é registrado. O evento register ocorre quando um armazenamento é registrado para [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr).
 
 **Parâmetros**
 
-* storeName: Sequência de caracteres. O nome do armazenamento de sessão para adicionar o ouvinte.
-* retorno de chamada: Função. A função a ser chamada na inicialização da loja.
+* storeName: cadeia de caracteres. O nome do armazenamento de sessão para adicionar o listener.
+* callback: Função. A função a ser chamada na inicialização de armazenamento.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
 ## CQ_Analytics.JSONPStore {#cq-analytics-jsonpstore}
 
-Um armazenamento de sessão não persistente que contém dados JSON. Os dados são recuperados de um serviço JSONP externo. Use o `getInstance` ou `getRegisteredInstance` para criar uma instância dessa classe.
+Um armazenamento de sessão não persistente que contém dados JSON. Os dados são recuperados de um serviço JSONP externo. Use o `getInstance` ou `getRegisteredInstance` para criar uma ocorrência dessa classe.
 
 Estende CQ_Analytics.JSONStore.
 
 ### Propriedades {#properties}
 
-Consulte CQ_Analytics.JSONStore e CQ_Analytics.SessionStore para obter propriedades herdadas.
+Consulte CQ_Analytics.JSONStore e CQ_Analytics.SessionStore para propriedades herdadas.
 
 ### Métodos {#methods-2}
 
-Consulte também CQ_Analytics.JSONStore e CQ_Analytics.SessionStore para obter métodos herdados.
+Consulte também CQ_Analytics.JSONStore e CQ_Analytics.SessionStore para obter os métodos herdados.
 
 #### getInstance(storeName, serviceURL, dynamicData, deferLoading, loadingCallback) {#getinstance-storename-serviceurl-dynamicdata-deferloading-loadingcallback}
 
@@ -117,54 +117,54 @@ Cria um objeto CQ_Analytics.JSONPStore.
 
 **Parâmetros**
 
-* storeName: Sequência de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido para storeName com todos os caracteres em maiúsculas. Se nenhum storeName for fornecido, o método retornará null.
-* serviceURL: Sequência de caracteres. O URL do serviço JSONP
-* dynamicData: (Opcional) Objeto. Dados JSON a serem anexados aos dados de inicialização do armazenamento antes da chamada da função de retorno de chamada.
-* deferLoading: (Opcional) Booleano. Um valor true impede que o serviço JSONP seja chamado na criação do objeto. Um valor false faz com que o serviço JSONP seja chamado.
-* loadingCallback: (Opcional) String. O nome da função a ser chamada para o processamento do objeto JSONP retornado pelo serviço JSONP. A função de retorno de chamada deve definir um único parâmetro que seja um objeto CQ_Analytics.JSONPStore.
+* storeName: cadeia de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido como storeName com todos os caracteres em maiúsculas. Se nenhum storeName for fornecido, o método retornará null.
+* serviceURL: string. O URL do serviço JSONP
+* dynamicData: objeto (opcional). Dados JSON a serem anexados aos dados de inicialização do armazenamento antes que a função de retorno de chamada seja chamada.
+* deferLoading: (opcional) booleano. Um valor true impede que o serviço JSONP seja chamado na criação do objeto. Um valor false faz com que o serviço JSONP seja chamado.
+* loadingCallback: (opcional) cadeia de caracteres. O nome da função a ser chamada para processar o objeto JSONP retornado pelo serviço JSONP. A função de retorno de chamada deve definir um único parâmetro que seja um objeto CQ_Analytics.JSONPStore.
 
-**Retorna**
+**Devoluções**
 
 O novo objeto CQ_Analytics.JSONPStore ou nulo se storeName for nulo.
 
 #### getServiceURL() {#getserviceurl}
 
-Recupera o URL do serviço JSONP que este objeto usa para recuperar dados JSON.
+Recupera o URL do serviço JSONP que esse objeto usa para recuperar dados JSON.
 
 **Parâmetros**
 
 Nenhum.
 
-**Retorna**
+**Devoluções**
 
-Uma String que representa o URL do serviço ou nulo se nenhum URL de serviço tiver sido configurado.
+Uma String que representa o URL de serviço ou nulo se nenhum URL de serviço tiver sido configurado.
 
 #### load(serviceURL, dynamicData, retorno de chamada) {#load-serviceurl-dynamicdata-callback}
 
-Chama o serviço JSONP. O URL JSONP é o sufixo do URL de serviço com um nome de função de retorno de chamada.
+Chama o serviço JSONP. O URL JSONP é o URL de serviço sufixado com um determinado nome de função de retorno de chamada.
 
 **Parâmetros**
 
-* serviceURL: (Opcional) String. O serviço JSONP a ser chamado. Um valor nulo faz com que o URL de serviço já configurado seja usado. Um valor não nulo define o serviço JSONP a ser usado para esse objeto. (Consulte setServiceURL.)
-* dynamicData: (Opcional) Objeto. Dados JSON a serem anexados aos dados de inicialização do armazenamento antes da chamada da função de retorno de chamada.
-* retorno de chamada: (Opcional) String. O nome da função a ser chamada para o processamento do objeto JSONP retornado pelo serviço JSONP. A função de retorno de chamada deve definir um único parâmetro que seja um objeto CQ_Analytics.JSONPStore.
+* serviceURL: (opcional) string. O serviço JSONP a ser chamado. Um valor nulo faz com que a URL de serviço já configurada seja usada. Um valor não nulo define o serviço JSONP a ser usado para esse objeto. (Consulte setServiceURL.)
+* dynamicData: objeto (opcional). Dados JSON a serem anexados aos dados de inicialização do armazenamento antes que a função de retorno de chamada seja chamada.
+* callback: (Opcional) String. O nome da função a ser chamada para processar o objeto JSONP retornado pelo serviço JSONP. A função de retorno de chamada deve definir um único parâmetro que seja um objeto CQ_Analytics.JSONPStore.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
 #### registerNewInstance(storeName, serviceURL, dynamicData, retorno de chamada) {#registernewinstance-storename-serviceurl-dynamicdata-callback}
 
-Cria um objeto CQ_Analytics.JSONPStore e registra a loja no Contexto do Cliente.
+Cria um objeto CQ_Analytics.JSONPStore e registra o armazenamento com o Client Context.
 
 **Parâmetros**
 
-* storeName: Sequência de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido para storeName com todos os caracteres em maiúsculas. Se nenhum storeName for fornecido, o método retornará null.
-* serviceURL: (Opcional) String. O URL do serviço JSONP.
-* dynamicData: (Opcional) Objeto. Dados JSON a serem anexados aos dados de inicialização do armazenamento antes da chamada da função de retorno de chamada.
-* retorno de chamada: (Opcional) String. O nome da função a ser chamada para o processamento do objeto JSONP retornado pelo serviço JSONP. A função de retorno de chamada deve definir um único parâmetro que seja um objeto CQ_Analytics.JSONPStore.
+* storeName: cadeia de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido como storeName com todos os caracteres em maiúsculas. Se nenhum storeName for fornecido, o método retornará null.
+* serviceURL: (opcional) string. O URL do serviço JSONP.
+* dynamicData: objeto (opcional). Dados JSON a serem anexados aos dados de inicialização do armazenamento antes que a função de retorno de chamada seja chamada.
+* callback: (Opcional) String. O nome da função a ser chamada para processar o objeto JSONP retornado pelo serviço JSONP. A função de retorno de chamada deve definir um único parâmetro que seja um objeto CQ_Analytics.JSONPStore.
 
-**Retorna**
+**Devoluções**
 
 O objeto CQ_Analytics.JSONPStore registrado.
 
@@ -174,9 +174,9 @@ Define o URL do serviço JSONP a ser usado para recuperar dados JSON.
 
 **Parâmetros**
 
-* serviceURL: Sequência de caracteres. O URL do serviço JSONP que fornece dados JSON
+* serviceURL: string. O URL do serviço JSONP que fornece dados JSON
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
@@ -186,7 +186,7 @@ Um contêiner para um objeto JSON. Crie uma instância dessa classe para criar u
 
 `myjsonstore = new CQ_Analytics.JSONStore`
 
-Você pode definir um conjunto de dados que preenche a loja na inicialização.
+Você pode definir um conjunto de dados que preencha o armazenamento na inicialização.
 
 Estende CQ_Analytics.SessionStore.
 
@@ -194,25 +194,25 @@ Estende CQ_Analytics.SessionStore.
 
 #### STOREKEY {#storekey}
 
-A chave que identifica a loja. Use o `getInstance` para recuperar esse valor.
+A chave que identifica o armazenamento. Use o `getInstance` para recuperar esse valor.
 
 #### STORENAME {#storename}
 
-O nome da loja. Use o `getInstance` para recuperar esse valor.
+O nome do armazenamento. Use o `getInstance` para recuperar esse valor.
 
 ### Métodos {#methods-3}
 
-Consulte também CQ_Analytics.SessionStore para obter métodos herdados.
+Consulte também CQ_Analytics.SessionStore para ver os métodos herdados.
 
 #### limpar() {#clear}
 
-Remove os dados do armazenamento da sessão e remove todas as propriedades de inicialização.
+Remove os dados do repositório de sessão e remove todas as propriedades de inicialização.
 
 **Parâmetros**
 
 Nenhum.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
@@ -222,34 +222,34 @@ Cria um objeto CQ_Analytics.JSONStore com um determinado nome e inicializado com
 
 **Parâmetros**
 
-* storeName: Sequência de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido para storeName com todos os caracteres em maiúsculas.
-* jsonData: Objeto. Um objeto que contém dados JSON.
+* storeName: cadeia de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido como storeName com todos os caracteres em maiúsculas.
+* jsonData: objeto. Um objeto que contém dados JSON.
 
-**Retorna**
+**Devoluções**
 
 O objeto CQ_Analytics.JSONStore.
 
 #### getJSON() {#getjson}
 
-Recupera os dados do armazenamento da sessão no formato JSON.
+Recupera os dados do armazenamento de sessão no formato JSON.
 
 **Parâmetros**
 
 Nenhum.
 
-**Retorna**
+**Devoluções**
 
 Um objeto que representa os dados do armazenamento no formato JSON.
 
 #### init() {#init}
 
-Apaga o armazenamento de sessão e o inicializa com a propriedade de inicialização. Define o sinalizador de inicialização como `true` e, em seguida, dispara o `initialize` e `update` eventos.
+Limpa o armazenamento de sessão e o inicializa com a propriedade de inicialização. Define o sinalizador de inicialização como `true` e, em seguida, aciona o `initialize` e `update` eventos.
 
 **Parâmetros**
 
 Nenhum.
 
-**Retorna**
+**Devoluções**
 
 Nenhum dado retornado.
 
@@ -268,7 +268,7 @@ B: {
 }
 ```
 
-Neste exemplo, as seguintes propriedades são criadas na loja:
+Neste exemplo, as seguintes propriedades são criadas no armazenamento:
 
 ```xml
 A: "valueA"
@@ -277,56 +277,56 @@ B/B1: "valueBB1"
 
 **Parâmetros**
 
-* jsonData: Um objeto JSON que contém os dados a serem armazenados.
-* doNotClear: Um valor true preserva as propriedades de inicialização existentes e adiciona as derivadas do objeto JSON. Um valor false remove as propriedades de inicialização existentes antes de adicionar aquelas derivadas do objeto JSON.
+* jsonData: um objeto JSON que contém os dados a serem armazenados.
+* doNotClear: um valor true preserva as propriedades de inicialização existentes e adiciona as derivadas do objeto JSON. Um valor false remove as propriedades de inicialização existentes antes de adicionar as derivadas do objeto JSON.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
 #### registerNewInstance(storeName, jsonData) {#registernewinstance-storename-jsondata}
 
-Cria um objeto CQ_Analytics.JSONStore com um determinado nome e inicializado com os dados JSON fornecidos (chama o método initJSON). O novo objeto é registrado automaticamente no Clickstream Cloud Manager.
+Cria um objeto CQ_Analytics.JSONStore com um determinado nome e inicializado com os dados JSON fornecidos (chama o método initJSON). O novo objeto é registrado automaticamente com o Clickstream Cloud Manager.
 
 **Parâmetros**
 
-* storeName: Sequência de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido para storeName com todos os caracteres em maiúsculas.
-* jsonData: Objeto. Um objeto que contém dados JSON.
+* storeName: cadeia de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido como storeName com todos os caracteres em maiúsculas.
+* jsonData: objeto. Um objeto que contém dados JSON.
 
-**Retorna**
+**Devoluções**
 
 O objeto CQ_Analytics.JSONStore.
 
 ## CQ_Analytics.Observable {#cq-analytics-observable}
 
-Aciona eventos e permite que outros objetos ouçam esses eventos e reajam. As classes que estendem essa classe podem disparar eventos que fazem com que os ouvintes sejam chamados.
+Aciona eventos e permite que outros objetos ouçam esses eventos e reajam. As classes que estendem essa classe podem acionar eventos que fazem com que os ouvintes sejam chamados.
 
 ### Métodos {#methods-4}
 
-#### addListener(event, fct, scope) {#addlistener-event-fct-scope}
+#### addListener(evento, fato, escopo) {#addlistener-event-fct-scope}
 
-Registra um ouvinte para um evento. Consulte também [Criando um ouvinte para reagir a uma atualização do armazenamento de sessão](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update).
+Registra um ouvinte para um evento. Consulte também [Criando um Listener para Reagir a uma Atualização de Repositório de Sessão](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update).
 
 **Parâmetros**
 
-* evento: Sequência de caracteres. O nome do evento que será escutado.
-* fct: Função. A função que é chamada quando o evento ocorre.
-* escopo: (Opcional) Objeto. O escopo no qual executar a função do manipulador. O contexto &quot;this&quot; da função de manipulador.
+* event: String. O nome do evento a ser escutado.
+* fato: função. A função chamada quando o evento ocorre.
+* escopo: (opcional) objeto. O escopo no qual executar a função de manipulador. O contexto &quot;this&quot; da função do manipulador.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
-#### removeListener(event, fct) {#removelistener-event-fct}
+#### removeListener(evento, fato) {#removelistener-event-fct}
 
 Remove o manipulador de eventos fornecido para um evento.
 
 **Parâmetros**
 
-* evento: Sequência de caracteres. O nome do evento.
-* fct: Função. O manipulador de eventos.
+* event: String. O nome do evento.
+* fato: função. O manipulador de eventos.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
@@ -338,7 +338,7 @@ Estende CQ_Analytics.PersistedJSONStore.
 
 ### Métodos {#methods-5}
 
-Consulte também CQ_Analytics.PersistedJSONStore para obter métodos herdados.
+Consulte também CQ_Analytics.PersistedJSONStore para métodos herdados.
 
 #### getInstance(storeName, serviceURL, dynamicData, deferLoading, loadingCallback) {#getinstance-storename-serviceurl-dynamicdata-deferloading-loadingcallback-1}
 
@@ -346,39 +346,39 @@ Cria um objeto CQ_Analytics.PersistedJSONPStore.
 
 **Parâmetros**
 
-* storeName: Sequência de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido para storeName com todos os caracteres em maiúsculas. Se nenhum storeName for fornecido, o método retornará null.
-* serviceURL: Sequência de caracteres. O URL do serviço JSONP
-* dynamicData: (Opcional) Objeto. Dados JSON a serem anexados aos dados de inicialização do armazenamento antes da chamada da função de retorno de chamada.
-* deferLoading: (Opcional) Booleano. Um valor true impede que o serviço JSONP seja chamado na criação do objeto. Um valor false faz com que o serviço JSONP seja chamado.
-* loadingCallback: (Opcional) String. O nome da função a ser chamada para o processamento do objeto JSONP retornado pelo serviço JSONP. A função de retorno de chamada deve definir um único parâmetro que seja um objeto CQ_Analytics.JSONPStore.
+* storeName: cadeia de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido como storeName com todos os caracteres em maiúsculas. Se nenhum storeName for fornecido, o método retornará null.
+* serviceURL: string. O URL do serviço JSONP
+* dynamicData: objeto (opcional). Dados JSON a serem anexados aos dados de inicialização do armazenamento antes que a função de retorno de chamada seja chamada.
+* deferLoading: (opcional) booleano. Um valor true impede que o serviço JSONP seja chamado na criação do objeto. Um valor false faz com que o serviço JSONP seja chamado.
+* loadingCallback: (opcional) cadeia de caracteres. O nome da função a ser chamada para processar o objeto JSONP retornado pelo serviço JSONP. A função de retorno de chamada deve definir um único parâmetro que seja um objeto CQ_Analytics.JSONPStore.
 
-**Retorna**
+**Devoluções**
 
 O novo objeto CQ_Analytics.PersistedJSONPStore ou nulo se storeName for nulo.
 
 #### getServiceURL() {#getserviceurl-1}
 
-Recupera o URL do serviço JSONP que este objeto usa para recuperar dados JSON.
+Recupera o URL do serviço JSONP que esse objeto usa para recuperar dados JSON.
 
 **Parâmetros**
 
 Nenhum.
 
-**Retorna**
+**Devoluções**
 
-Uma String que representa o URL do serviço ou nulo se nenhum URL de serviço tiver sido configurado.
+Uma String que representa o URL de serviço ou nulo se nenhum URL de serviço tiver sido configurado.
 
 #### load(serviceURL, dynamicData, retorno de chamada) {#load-serviceurl-dynamicdata-callback-1}
 
-Chama o serviço JSONP. O URL JSONP é o sufixo do URL de serviço com um nome de função de retorno de chamada.
+Chama o serviço JSONP. O URL JSONP é o URL de serviço sufixado com um determinado nome de função de retorno de chamada.
 
 **Parâmetros**
 
-* serviceURL: (Opcional) String. O serviço JSONP a ser chamado. Um valor nulo faz com que o URL de serviço já configurado seja usado. Um valor não nulo define o serviço JSONP a ser usado para esse objeto. (Consulte setServiceURL.)
-* dynamicData: (Opcional) Objeto. Dados JSON a serem anexados aos dados de inicialização do armazenamento antes da chamada da função de retorno de chamada.
-* retorno de chamada: (Opcional) String. O nome da função a ser chamada para o processamento do objeto JSONP retornado pelo serviço JSONP. A função de retorno de chamada deve definir um único parâmetro que seja um objeto CQ_Analytics.JSONPStore.
+* serviceURL: (opcional) string. O serviço JSONP a ser chamado. Um valor nulo faz com que a URL de serviço já configurada seja usada. Um valor não nulo define o serviço JSONP a ser usado para esse objeto. (Consulte setServiceURL.)
+* dynamicData: objeto (opcional). Dados JSON a serem anexados aos dados de inicialização do armazenamento antes que a função de retorno de chamada seja chamada.
+* callback: (Opcional) String. O nome da função a ser chamada para processar o objeto JSONP retornado pelo serviço JSONP. A função de retorno de chamada deve definir um único parâmetro que seja um objeto CQ_Analytics.JSONPStore.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
@@ -388,12 +388,12 @@ Cria um objeto CQ_Analytics.PersistedJSONPStore e registra o armazenamento no Co
 
 **Parâmetros**
 
-* storeName: Sequência de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido para storeName com todos os caracteres em maiúsculas. Se nenhum storeName for fornecido, o método retornará null.
-* serviceURL: (Opcional) String. O URL do serviço JSONP.
-* dynamicData: (Opcional) Objeto. Dados JSON a serem anexados aos dados de inicialização do armazenamento antes da chamada da função de retorno de chamada.
-* retorno de chamada: (Opcional) String. O nome da função a ser chamada para o processamento do objeto JSONP retornado pelo serviço JSONP. A função de retorno de chamada deve definir um único parâmetro que seja um objeto CQ_Analytics.JSONPStore.
+* storeName: cadeia de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido como storeName com todos os caracteres em maiúsculas. Se nenhum storeName for fornecido, o método retornará null.
+* serviceURL: (opcional) string. O URL do serviço JSONP.
+* dynamicData: objeto (opcional). Dados JSON a serem anexados aos dados de inicialização do armazenamento antes que a função de retorno de chamada seja chamada.
+* callback: (Opcional) String. O nome da função a ser chamada para processar o objeto JSONP retornado pelo serviço JSONP. A função de retorno de chamada deve definir um único parâmetro que seja um objeto CQ_Analytics.JSONPStore.
 
-**Retorna**
+**Devoluções**
 
 O objeto CQ_Analytics.PersistedJSONPStore registrado.
 
@@ -403,15 +403,15 @@ Define o URL do serviço JSONP a ser usado para recuperar dados JSON.
 
 **Parâmetros**
 
-* serviceURL: Sequência de caracteres. O URL do serviço JSONP que fornece dados JSON
+* serviceURL: string. O URL do serviço JSONP que fornece dados JSON
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
 ## CQ_Analytics.PersistedJSONStore {#cq-analytics-persistedjsonstore}
 
-Um contêiner persistente de um objeto JSON.
+Um container persistente de um objeto JSON.
 
 Estende `CQ_Analytics.PersistedSessionStore`.
 
@@ -419,15 +419,15 @@ Estende `CQ_Analytics.PersistedSessionStore`.
 
 #### STOREKEY {#storekey-1}
 
-A chave que identifica a loja. Use o `getInstance` para recuperar esse valor.
+A chave que identifica o armazenamento. Use o `getInstance` para recuperar esse valor.
 
 #### STORENAME {#storename-1}
 
-O nome da loja. Use o `getInstance` para recuperar esse valor.
+O nome do armazenamento. Use o `getInstance` para recuperar esse valor.
 
 ### Métodos {#methods-6}
 
-Consulte também CQ_Analytics.PersistedSessionStore para obter métodos herdados.
+Consulte também CQ_Analytics.PersistedSessionStore para ver os métodos herdados.
 
 #### getInstance(storeName, jsonData) {#getinstance-storename-jsondata-1}
 
@@ -435,22 +435,22 @@ Cria um objeto CQ_Analytics.PersistedJSONStore com um determinado nome e inicial
 
 **Parâmetros**
 
-* storeName: Sequência de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido para storeName com todos os caracteres em maiúsculas.
-* jsonData: Objeto. Um objeto que contém dados JSON.
+* storeName: cadeia de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido como storeName com todos os caracteres em maiúsculas.
+* jsonData: objeto. Um objeto que contém dados JSON.
 
-**Retorna**
+**Devoluções**
 
-O objeto CQ_Analytics.PersistedJSONStore .
+O objeto CQ_Analytics.PersistedJSONStore.
 
 #### getJSON() {#getjson-1}
 
-Recupera os dados do armazenamento da sessão no formato JSON.
+Recupera os dados do armazenamento de sessão no formato JSON.
 
 **Parâmetros**
 
 Nenhum.
 
-**Retorna**
+**Devoluções**
 
 Um objeto que representa os dados do armazenamento no formato JSON.
 
@@ -469,7 +469,7 @@ B: {
 }
 ```
 
-Neste exemplo, as seguintes propriedades são criadas na loja:
+Neste exemplo, as seguintes propriedades são criadas no armazenamento:
 
 ```xml
 A: "valueA"
@@ -478,29 +478,29 @@ B/B1: "valueBB1"
 
 **Parâmetros**
 
-* jsonData: Um objeto JSON que contém os dados a serem armazenados.
-* doNotClear: Um valor true preserva as propriedades de inicialização existentes e adiciona as derivadas do objeto JSON. Um valor false remove as propriedades de inicialização existentes antes de adicionar aquelas derivadas do objeto JSON.
+* jsonData: um objeto JSON que contém os dados a serem armazenados.
+* doNotClear: um valor true preserva as propriedades de inicialização existentes e adiciona as derivadas do objeto JSON. Um valor false remove as propriedades de inicialização existentes antes de adicionar as derivadas do objeto JSON.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
 #### registerNewInstance(storeName, jsonData) {#registernewinstance-storename-jsondata-1}
 
-Cria um objeto CQ_Analytics.PersistedJSONStore com um determinado nome e inicializado com os dados JSON fornecidos (chama o método initJSON). O novo objeto é registrado automaticamente no Gerenciador de Contexto do Cliente.
+Cria um objeto CQ_Analytics.PersistedJSONStore com um determinado nome e inicializado com os dados JSON fornecidos (chama o método initJSON). O novo objeto é registrado automaticamente com o Client Context Manager.
 
 **Parâmetros**
 
-* storeName: Sequência de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido para storeName com todos os caracteres em maiúsculas.
-* jsonData: Objeto. Um objeto que contém dados JSON.
+* storeName: cadeia de caracteres. O nome a ser usado como a propriedade STORENAME. O valor da propriedade STOREKEY é definido como storeName com todos os caracteres em maiúsculas.
+* jsonData: objeto. Um objeto que contém dados JSON.
 
-**Retorna**
+**Devoluções**
 
-O objeto CQ_Analytics.PersistedJSONStore .
+O objeto CQ_Analytics.PersistedJSONStore.
 
 ## CQ_Analytics.PersistedSessionStore {#cq-analytics-persistedsessionstore}
 
-Um contêiner de propriedades e valores. Os dados são mantidos usando CQ_Analytics.SessionPersistence. Crie uma instância dessa classe para criar um armazenamento de sessão persistente:
+Um container de propriedades e valores. Os dados são mantidos usando CQ_Analytics.SessionPersistence. Crie uma instância desta classe para criar um armazenamento de sessão persistente:
 
 `mypersistedstore = new CQ_Analytics.PersistedSessionStore`
 
@@ -514,9 +514,9 @@ O valor padrão é `key`.
 
 ### Métodos {#methods-7}
 
-Consulte CQ_Analytics.SessionStore para obter métodos herdados.
+Consulte CQ_Analytics.SessionStore para obter os métodos herdados.
 
-Quando os métodos herdados `clear`, `setProperty`, `setProperties`, `removeProperty` são usadas para alterar os dados do armazenamento, as alterações são automaticamente persistentes, a menos que as propriedades alteradas sejam sinalizadas como notPersisted.
+Quando os métodos herdados `clear`, `setProperty`, `setProperties`, `removeProperty` são usados para alterar os dados de armazenamento, as alterações são automaticamente persistentes, a menos que as propriedades alteradas sejam sinalizadas como notPersisted.
 
 #### getStoreKey() {#getstorekey}
 
@@ -526,9 +526,9 @@ Recupera o `STOREKEY` propriedade.
 
 Nenhum
 
-**Retorna**
+**Devoluções**
 
-O valor da variável `STOREKEY` propriedade.
+O valor de `STOREKEY` propriedade.
 
 #### isPersisted(name) {#ispersisted-name}
 
@@ -536,55 +536,55 @@ Determina se uma propriedade de dados é persistente.
 
 **Parâmetros**
 
-* name: Sequência de caracteres. O nome da propriedade.
+* name: string. O nome da propriedade.
 
-**Retorna**
+**Devoluções**
 
-Um valor booleano de `true` se a propriedade for persistente e um valor de `false` se o valor não for uma propriedade persistente.
+Um valor booleano de `true` se a propriedade for persistente, e um valor de `false` se o valor não for uma propriedade persistente.
 
 #### persist() {#persist}
 
-Persiste no armazenamento da sessão. O modo de persistência padrão usa o navegador `localStorage` usar `ClientSidePersistence` como o nome ( `window.localStorage.set("ClientSidePersistance", store);`)
+Persiste no armazenamento de sessão. O modo de persistência padrão usa o navegador `localStorage` usar `ClientSidePersistence` como o nome ( `window.localStorage.set("ClientSidePersistance", store);`)
 
-Se localStorage não estiver disponível ou gravável, o armazenamento será mantido como uma propriedade da janela.
+Se localStorage não estiver disponível ou não for gravável, o armazenamento será mantido como uma propriedade da janela.
 
-Aciona o `persist` após a conclusão.
+Aciona o `persist` evento após a conclusão.
 
 **Parâmetros**
 
 Nenhum
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
-#### reset(deferEvent) {#reset-deferevent}
+#### redefinir(deferEvent) {#reset-deferevent}
 
-Remove todas as propriedades de dados do armazenamento e mantém o armazenamento. Opcionalmente, não dispara a variável `udpate` após a conclusão.
+Remove todas as propriedades de dados do armazenamento e mantém o armazenamento. Opcionalmente, o não aciona o `udpate` evento após a conclusão.
 
 **Parâmetros**
 
-* deferEvent: Um valor de true impede que a variável `update` de ser acionado. Um valor de `false` O faz com que o evento de atualização seja acionado.
+* deferEvent: um valor de true impede que o `update` evento de ser disparado. Um valor de `false` faz com que o evento de atualização seja disparado.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
-#### setNonPersisted(name) {#setnonpersisted-name}
+#### setNonPersisted(nome) {#setnonpersisted-name}
 
 Sinaliza uma propriedade de dados como não persistente.
 
 **Parâmetros**
 
-* name: Sequência de caracteres. O nome da propriedade que não deve ser mantida.
+* name: string. O nome da propriedade que não deve ser persistida.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor de retorno.
 
 ## CQ_Analytics.SessionStore {#cq-analytics-sessionstore}
 
-CQ_Analytics.SessionStore representa um armazenamento de sessão. Crie uma instância dessa classe para criar um armazenamento de sessão:
+CQ_Analytics.SessionStore representa um armazenamento de sessão. Crie uma instância desta classe para criar um armazenamento de sessão:
 
 `mystore = new CQ_Analytics.SessionStore`
 
@@ -598,18 +598,18 @@ O nome do armazenamento de sessão. Use getName para recuperar o valor dessa pro
 
 ### Métodos {#methods-8}
 
-#### addInitProperty(name, value) {#addinitproperty-name-value}
+#### addInitProperty(nome, valor) {#addinitproperty-name-value}
 
-Adiciona uma propriedade e um valor aos dados de inicialização do repositório de sessão.
+Adiciona uma propriedade e um valor aos dados de inicialização do armazenamento de sessão.
 
-Use loadInitProperties para preencher os dados do repositório de sessão com os valores de inicialização.
+Use loadInitProperties para preencher os dados do armazenamento de sessão com os valores de inicialização.
 
 **Parâmetros**
 
-* name: Sequência de caracteres. O nome da propriedade a ser adicionada.
-* valor: Sequência de caracteres. O valor da propriedade a ser adicionada.
+* name: string. O nome da propriedade a ser adicionada.
+* value: String. O valor da propriedade a ser adicionada.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
@@ -621,19 +621,19 @@ Remove todas as propriedades de dados do armazenamento.
 
 Nenhum.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor de retorno.
 
 #### getData(excluded) {#getdata-excluded}
 
-Retorna os dados de armazenamento. Opcionalmente, exclui propriedades de nomes dos dados. Chama a `init` se a propriedade de dados do armazenamento não existir.
+Retorna os dados da loja. Opcionalmente, exclui propriedades de nomes dos dados. Chama o `init` se a propriedade data do armazenamento não existir.
 
 **Parâmetros**
 
-excluídos: (Opcional) Uma matriz de nomes de propriedade a serem excluídos dos dados retornados.
+excluded: (opcional) uma matriz de nomes de propriedade a serem excluídos dos dados retornados.
 
-**Retorna**
+**Devoluções**
 
 Um objeto de propriedades e seus valores.
 
@@ -643,46 +643,46 @@ Recupera o valor de uma propriedade de dados.
 
 **Parâmetros**
 
-* name: Sequência de caracteres. O nome da propriedade de dados a ser recuperada.
+* name: string. O nome da propriedade de dados a ser recuperada.
 
-**Retorna**
+**Devoluções**
 
-O valor da propriedade de dados. Devoluções `null` se o armazenamento de sessão não contiver nenhuma propriedade do nome fornecido.
+O valor da propriedade data. Devoluções `null` se o armazenamento de sessão não contiver nenhuma propriedade do nome especificado.
 
 #### getName() {#getname}
 
-Retorna o nome do armazenamento da sessão.
+Retorna o nome do armazenamento de sessão.
 
 **Parâmetros**
 
 Nenhum.
 
-**Retorna**
+**Devoluções**
 
 Um valor String que representa o nome do armazenamento.
 
 #### getProperty(name, raw) {#getproperty-name-raw}
 
-Retorna o valor de uma propriedade. O valor é retornado como a propriedade bruta ou o valor filtrado por XSS. Chama a `init` se a propriedade de dados do armazenamento não existir.
+Retorna o valor de uma propriedade. O valor é retornado como a propriedade bruta ou o valor filtrado por XSS. Chama o `init` se a propriedade data do armazenamento não existir.
 
 **Parâmetros**
 
-* name: Sequência de caracteres. O nome da propriedade de dados a ser recuperada.
-* bruto: Booleano. Um valor true faz com que o valor da propriedade bruta seja retornado. Um valor false faz com que o valor retornado seja filtrado por XSS.
+* name: string. O nome da propriedade de dados a ser recuperada.
+* raw: Booleano. Um valor true faz com que o valor da propriedade raw seja retornado. Um valor false faz com que o valor retornado seja filtrado por XSS.
 
-**Retorna**
+**Devoluções**
 
-O valor da propriedade de dados.
+O valor da propriedade data.
 
-#### getPropertyNames(excluded) {#getpropertynames-excluded}
+#### getPropertyNames(excluída) {#getpropertynames-excluded}
 
-Retorna os nomes das propriedades que o armazenamento de sessão contém. Chama a `init` se a propriedade de dados do armazenamento não existir.
+Retorna os nomes das propriedades que o armazenamento de sessão contém. Chama o `init` se a propriedade data do armazenamento não existir.
 
 **Parâmetros**
 
-excluídos: (Opcional) Uma matriz de nomes de propriedade para omitir dos resultados.
+excluded: (opcional) uma matriz de nomes de propriedade a serem omitidos dos resultados.
 
-**Retorna**
+**Devoluções**
 
 Uma matriz de valores de String que representam os nomes de propriedade da sessão.
 
@@ -694,19 +694,19 @@ Retorna o armazenamento de sessão anexado ao objeto atual.
 
 Nenhum.
 
-**Retorna**
+**Devoluções**
 
-this
+este
 
 #### init() {#init-1}
 
-Marca o armazenamento como inicializado e dispara o `initialize` evento.
+Marca o armazenamento como inicializado e aciona o `initialize` evento.
 
 **Parâmetros**
 
 Nenhum.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
@@ -718,68 +718,68 @@ Indica se o armazenamento de sessões foi inicializado.
 
 Nenhum.
 
-**Retorna**
+**Devoluções**
 
 Um valor de `true` se o armazenamento for inicializado e um valor de `false` se o armazenamento não for inicializado.
 
 #### loadInitProperties(obj, setValues) {#loadinitproperties-obj-setvalues}
 
-Adiciona as propriedades de um determinado objeto aos dados de inicialização do armazenamento de sessão. Opcionalmente, os dados do objeto também serão adicionados aos dados do armazenamento.
+Adiciona as propriedades de um determinado objeto aos dados de inicialização do armazenamento da sessão. Opcionalmente, os dados do objeto também são adicionados aos dados de armazenamento.
 
 **Parâmetros**
 
-* obj: Um objeto que contém propriedades enumeráveis.
-* setValues: Quando verdadeiro, as propriedades do objeto são adicionadas aos dados do armazenamento da sessão se os dados do armazenamento ainda não incluírem uma propriedade do mesmo nome. Quando falso, nenhum dado é adicionado aos dados do armazenamento da sessão.
+* obj: um objeto que contém propriedades enumeráveis.
+* setValues: Quando verdadeiro, as propriedades obj são adicionadas aos dados do armazenamento da sessão se os dados do armazenamento ainda não incluírem uma propriedade com o mesmo nome. Quando false, nenhum dado é adicionado aos dados de armazenamento da sessão.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
-#### removeProperty(name) {#removeproperty-name}
+#### removeProperty(nome) {#removeproperty-name}
 
-Remove uma propriedade do armazenamento de sessão. Aciona o `update` após a conclusão. Chama a `init` se a propriedade de dados do armazenamento não existir.
+Remove uma propriedade do armazenamento de sessão. Aciona o `update` evento após a conclusão. Chama o `init` se a propriedade data do armazenamento não existir.
 
 **Parâmetros**
 
-* name: Sequência de caracteres. O nome da propriedade a ser removida.
+* name: string. O nome da propriedade a ser removida.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
-#### reset() {#reset}
+#### redefinir() {#reset}
 
-Restaura os valores iniciais do armazenamento de dados. A implementação padrão simplesmente remove todos os dados. Aciona o `update` após a conclusão.
+Restaura os valores iniciais do armazenamento de dados. A implementação padrão simplesmente remove todos os dados. Aciona o `update` evento após a conclusão.
 
 **Parâmetros**
 
 Nenhum.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
-#### setProperties(properties) {#setproperties-properties}
+#### setProperties(propriedades) {#setproperties-properties}
 
-Define os valores de várias propriedades. Aciona o `update` após a conclusão. Chama a `init` se a propriedade de dados do armazenamento não existir.
+Define os valores de várias propriedades. Aciona o `update` evento após a conclusão. Chama o `init` se a propriedade data do armazenamento não existir.
 
 **Parâmetros**
 
 * Propriedades: Objeto. Um objeto que contém propriedades enumeráveis. Cada nome e valor de propriedade é adicionado ao armazenamento.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.
 
-#### setProperty(name, value) {#setproperty-name-value}
+#### setProperty(nome, valor) {#setproperty-name-value}
 
-Define o valor de uma propriedade. Aciona o `update` após a conclusão. Chama a `init` se a propriedade de dados do armazenamento não existir.
+Define o valor de uma propriedade. Aciona o `update` evento após a conclusão. Chama o `init` se a propriedade data do armazenamento não existir.
 
 **Parâmetros**
 
-* name: Sequência de caracteres. O nome da propriedade.
-* valor: Sequência de caracteres. Valor da propriedade.
+* name: string. O nome da propriedade.
+* value: String. Valor da propriedade.
 
-**Retorna**
+**Devoluções**
 
 Nenhum valor retornado.

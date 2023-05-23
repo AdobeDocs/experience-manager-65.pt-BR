@@ -1,7 +1,7 @@
 ---
-title: "Tutorial: Planejar a comunicação interativa"
+title: "Tutorial: Planejar a Comunicação Interativa"
 seo-title: Plan your Interactive Communication
-description: Planeje a anatomia de sua comunicação interativa
+description: Planeje a anatomia para sua comunicação interativa
 seo-description: Plan the anatomy for your Interactive Communication
 uuid: 1c2b5c5b-c655-4559-8748-3e0b343779c2
 contentOwner: anujkapo
@@ -12,37 +12,37 @@ exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '654'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
 # Tutorial: Planejar a comunicação interativa {#tutorial-plan-the-interactive-communication}
 
-Planeje a anatomia de sua comunicação interativa
+Planeje a anatomia para sua comunicação interativa
 
-![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
+![02-criar-formulário-adaptável-imagem-principal](assets/02-create-adaptive-form-main-image.png)
 
-Este tutorial é uma etapa do [Criar sua primeira comunicação interativa](/help/forms/using/create-your-first-interactive-communication.md) série. É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso tutorial completo.
+Este tutorial é uma etapa da [Criar a primeira comunicação interativa](/help/forms/using/create-your-first-interactive-communication.md) série. É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso completo do tutorial.
 
-A primeira etapa no planejamento de uma comunicação interativa é finalizar o conteúdo da comunicação interativa. Especialistas de assuntos de departamentos como jurídico, financeiro, suporte ou marketing podem ajudá-lo a finalizar o conteúdo. Após a finalização do conteúdo, é necessário analisá-lo para identificar os vários tipos de ativos necessários para criar a Comunicação interativa.
+A primeira etapa no planejamento de uma comunicação interativa é finalizar o conteúdo da comunicação interativa. Especialistas no assunto de departamentos como jurídico, financeiro, de suporte ou de marketing podem ajudar você a finalizar o conteúdo. Depois que o conteúdo for finalizado, você deverá analisá-lo para identificar os vários tipos de ativos necessários para criar a Comunicação interativa.
 
-## Considerações sobre planejamento {#planning-considerations}
+## Considerações de planejamento {#planning-considerations}
 
 Uma comunicação interativa inclui os seguintes elementos:
 
-* **Texto estático** A maioria inclui as partes da comunicação interativa que são de natureza genérica e estão incluídas na comunicação com todos os clientes. Por exemplo, cabeçalho, rodapé, saudação ou isenções de responsabilidade.
-* **Dados provenientes de um sistema de back-end (modelo de dados de formulário)** O é específico do cliente e é dinamicamente mesclado com a comunicação interativa. Por exemplo, o número ou o endereço da política podem ser obtidos usando o modelo de dados de formulário.
-* **Layout ou modelos** para as versões Imprimir e Web da Comunicação Interativa.
-* **Pedido** em que os vários parágrafos de texto aparecem na Comunicação interativa.
-* **Dados inseridos por um funcionário de linha de frente (interface do usuário do agente)** quem está personalizando a comunicação antes de enviá-la. Por exemplo, a data de vencimento do pagamento.
+* **Texto estático** na sua maioria, inclui as partes da comunicação interativa que são de natureza genérica e estão incluídas na comunicação com todos os clientes. Por exemplo, cabeçalho, rodapé, saudação ou avisos de isenção de responsabilidade.
+* **Dados obtidos de um sistema de back-end (modelo de dados de formulário)** é específico do cliente e é mesclado dinamicamente com a comunicação interativa. Por exemplo, o número da política ou o endereço pode ser originado usando o modelo de dados de formulário.
+* **Layout ou modelos** para a versão impressa e para Web da comunicação interativa.
+* **Pedido** nos quais os vários parágrafos de texto aparecem na Comunicação interativa.
+* **Dados inseridos por um funcionário de linha de frente (interface do agente)** que está personalizando a comunicação antes de enviá-la. Por exemplo, a data de pagamento.
 
 * **Dados condicionais** que é preenchida com base em condições predefinidas. Por exemplo, a data em que a comunicação interativa é gerada.
 * **Imagens armazenadas em um repositório**, como logotipos e imagens de assinatura. Imagens como logotipos corporativos apareceriam na maioria ou em toda a comunicação interativa.
-* **Tabelas e gráficos** necessário para simplificar a representação de dados complexos em uma comunicação interativa
+* **Gráficos e tabelas** para simplificar a representação de dados complexos numa comunicação interativa
 
-## Anatomia da Comunicação Interativa {#anatomy-of-the-interactive-communication}
+## Anatomia da comunicação interativa {#anatomy-of-the-interactive-communication}
 
-Após finalizar o conteúdo e os elementos usados para criar sua Comunicação interativa, você pode criar uma anatomia da Comunicação interativa. A anatomia deve ter os detalhes listados no [Considerações sobre planejamento](/help/forms/using/planning-interactive-communications.md#planning-considerations) seção. Baseado no nosso caso de uso, o exemplo a seguir é uma anatomia da conta mensal que um operador de telecom envia para seus clientes.
+Depois de finalizar o conteúdo e os elementos usados para criar a Comunicação interativa, você pode criar uma anatomia da Comunicação interativa. A anatomia deve ter os detalhes listados na [Considerações sobre o planejamento](/help/forms/using/planning-interactive-communications.md#planning-considerations) seção. Com base em nosso caso de uso, veja a seguir um exemplo de anatomia da conta mensal que uma operadora de telecomunicações envia aos seus clientes.
 
 A anatomia inclui dados com os seguintes modos de entrada:
 
@@ -54,7 +54,7 @@ A anatomia inclui dados com os seguintes modos de entrada:
 
 Em cada seção, o texto em negrito representa texto estático. O banco de dados inclui tabelas de clientes, contas e chamadas. Um modelo de dados de formulário pode receber dados de qualquer uma dessas tabelas. Para obter mais informações, consulte [Criar modelo de dados de formulário](/help/forms/using/create-form-data-model0.md).
 
-A tabela a seguir ilustra a fonte de dados para cada campo na anatomia da comunicação interativa:
+A tabela a seguir ilustra a fonte de dados de cada campo na anatomia da Comunicação Interativa:
 
 <table>
  <tbody>
@@ -67,64 +67,64 @@ A tabela a seguir ilustra a fonte de dados para cada campo na anatomia da comuni
   </tr>
   <tr>
    <td>Detalhes da Lista</td>
-   <td><p>Números da fatura</p> <p>Data da Cobrança</p> <p>Período de Faturamento</p> <p>Seu plano</p> </td>
-   <td><p>Valor para <strong>Seu plano </strong>campo</p> <p>Tabela - cliente</p> </td>
+   <td><p>Número da Fatura</p> <p>Data de Cobrança</p> <p>Período de Cobrança</p> <p>Seu plano</p> </td>
+   <td><p>Valor para <strong>Seu plano </strong>campo</p> <p>Tabela: cliente</p> </td>
    <td><p>Valores para os seguintes campos:</p>
     <ul>
-     <li>Números da fatura</li>
-     <li>Data da Cobrança</li>
-     <li>Período de Faturamento</li>
+     <li>Número da Fatura</li>
+     <li>Data de Cobrança</li>
+     <li>Período de Cobrança</li>
     </ul> <p> </p> </td>
    <td>—</td>
   </tr>
   <tr>
    <td>Detalhes do cliente</td>
-   <td><p>Local de fornecimento</p> <p>Código do Estado</p> <p>Número do celular</p> <p>Número de Contato Alternativo</p> <p>Número do relacionamento</p> <p>Número de Conexões</p> </td>
+   <td><p>Local de fornecimento</p> <p>Código de Estado</p> <p>Número de celular</p> <p>Número de Contato Alternativo</p> <p>Número do relacionamento</p> <p>Número de conexões</p> </td>
    <td><p>Valores para os seguintes campos:</p>
     <ul>
      <li>Nome</li>
      <li>Endereço</li>
-     <li>Número do celular</li>
+     <li>Número de celular</li>
      <li>Número de Contato Alternativo</li>
      <li>Número do relacionamento</li>
-    </ul> <p>Tabela - cliente</p> </td>
+    </ul> <p>Tabela: cliente</p> </td>
    <td><p>Valores para os seguintes campos:</p>
     <ul>
      <li>Local de fornecimento</li>
-     <li>Código do Estado</li>
-     <li>Número de Conexões</li>
+     <li>Código de Estado</li>
+     <li>Número de conexões</li>
     </ul> </td>
    <td>--</td>
   </tr>
   <tr>
-   <td>Resumo da Lista</td>
-   <td><p>Saldo anterior</p> <p>Pagamentos</p> <p>Ajustamentos</p> <p>Encargos do período de faturamento atual</p> <p>Valor devido</p> <p>Data de vencimento</p> </td>
-   <td><p>Valor para a variável <strong>Encargos do período de faturamento atual </strong> campo</p> <p>Tabela - faturas</p> </td>
+   <td>Sumário da Lista</td>
+   <td><p>Saldo Anterior</p> <p>Pagamentos</p> <p>Ajustes</p> <p>Cobra o período de faturamento atual</p> <p>Valor Devido</p> <p>Data de vencimento</p> </td>
+   <td><p>Valor para o <strong>Cobra o período de faturamento atual </strong> campo</p> <p>Tabela - listas</p> </td>
    <td><p>Valores para os seguintes campos:</p>
     <ul>
-     <li>Saldo anterior</li>
+     <li>Saldo Anterior</li>
      <li>Pagamentos</li>
-     <li>Ajustamentos</li>
-     <li>Valor devido</li>
+     <li>Ajustes</li>
+     <li>Valor Devido</li>
      <li>Data de vencimento</li>
     </ul> </td>
    <td>--</td>
   </tr>
   <tr>
    <td>Resumo dos encargos</td>
-   <td><p>Encargos de Chamada</p> <p>Encargos de Chamada em Conferência</p> <p>Encargos SMS </p> <p>Tarifas de Internet Móvel</p> <p>Encargos de roaming nacional</p> <p>Encargos de roaming internacional</p> <p>Encargos de Serviços de Valor Acrescentado</p> <p>Encargos Totais</p> <p>TOTAL A PAGAR</p> <p>Condição no campo Encargos de Serviços de Valor Agregado</p> </td>
+   <td><p>Encargos de chamada</p> <p>Encargos de Chamada em Conferência</p> <p>Encargos de SMS </p> <p>Encargos de Internet Móvel</p> <p>Tarifas de roaming nacional</p> <p>Tarifas de roaming internacional</p> <p>Encargos de Serviços de Valor Agregado</p> <p>Total de Encargos</p> <p>TOTAL A PAGAR</p> <p>Condição no campo Encargos de Serviços de Valor Agregado</p> </td>
    <td><p>Valores para os seguintes campos:</p>
     <ul>
-     <li>Encargos de Chamada</li>
+     <li>Encargos de chamada</li>
      <li>Encargos de Chamada em Conferência</li>
-     <li>Encargos SMS </li>
-     <li>Tarifas de Internet Móvel</li>
-     <li>Encargos de roaming nacional</li>
-     <li>Encargos de roaming internacional</li>
-     <li>Encargos de Serviços de Valor Acrescentado</li>
-     <li>Encargos Totais (usagecharges campo calculado)</li>
-     <li>TOTAL PAGÁVEL (taxas de utilização calculadas, campo)</li>
-    </ul> <p>Tabela - faturas</p> </td>
+     <li>Encargos de SMS </li>
+     <li>Encargos de Internet Móvel</li>
+     <li>Tarifas de roaming nacional</li>
+     <li>Tarifas de roaming internacional</li>
+     <li>Encargos de Serviços de Valor Agregado</li>
+     <li>Total de Encargos (campo calculado encargos de uso)</li>
+     <li>TOTAL A PAGAR (campo calculado encargos de uso)</li>
+    </ul> <p>Tabela - listas</p> </td>
    <td>Nenhum campo</td>
    <td>--</td>
   </tr>
@@ -143,11 +143,11 @@ A tabela a seguir ilustra a fonte de dados para cada campo na anatomia da comuni
    <td>--</td>
   </tr>
   <tr>
-   <td>Pagar Agora</td>
+   <td>Pagar agora</td>
    <td>--</td>
    <td>--</td>
    <td>--</td>
-   <td>PagarAgora</td>
+   <td>PayNow</td>
   </tr>
   <tr>
    <td>Serviços de valor agregado</td>

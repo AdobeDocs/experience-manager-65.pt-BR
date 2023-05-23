@@ -1,7 +1,7 @@
 ---
 title: Recurso de blog
 seo-title: Blog Feature
-description: Informações comunitárias em formato de diário
+description: Informações da comunidade em um formato de diário
 seo-description: Community information in a journaling format
 uuid: 7323063f-81e8-45c3-9035-bf7df6124830
 contentOwner: msm-service
@@ -14,7 +14,7 @@ exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1666'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -22,58 +22,58 @@ ht-degree: 8%
 
 ## Introdução {#introduction}
 
-O recurso de blog do AEM Communities se transformou de uma atividade de criação em uma verdadeira atividade da comunidade que ocorre no ambiente de publicação.
+O recurso de blog do AEM Communities foi transformado de uma atividade de criação para uma verdadeira atividade da comunidade, que ocorre no ambiente de publicação.
 
-O recurso de blog suporta o fornecimento de informações da comunidade em formato de diário. As entradas do blog são feitas no ambiente de publicação por membros autorizados (usuários registrados, conectados).
+O recurso de blog permite o fornecimento de informações da comunidade em um formato de registro no diário. Entradas de blog são feitas no ambiente de publicação por membros autorizados (usuários registrados e conectados).
 
 O recurso de blog fornece :
 
-* Criação de artigos e comentários do lado da publicação
+* Criação do lado da publicação de artigos e comentários do blog
 * Edição de rich text
-* Imagens embutidas (com suporte para arrastar e soltar)
-* Conteúdo de rede social integrado ([Suporte para oEmbed](/help/communities/blog-developer-basics.md#allowing-rich-media))
+* Imagens integradas (com suporte para arrastar e soltar)
+* Conteúdo de rede social incorporado ([Suporte incorporado](/help/communities/blog-developer-basics.md#allowing-rich-media))
 * Modo de rascunho
 * Publicação agendada
-* Compor em nome (a [membro privilegiado](/help/communities/users.md#privileged-members-group) pode criar conteúdo em nome de um membro da comunidade diferente)
-* [Moderação em contexto e em massa](/help/communities/moderate-ugc.md) de artigos e comentários do blog
+* Compor em nome de (uma [membro privilegiado](/help/communities/users.md#privileged-members-group) pode criar conteúdo em nome de um membro da comunidade diferente)
+* [Moderação em massa e no contexto](/help/communities/moderate-ugc.md) de artigos e comentários do blog
 
 Esta seção da documentação descreve:
 
 * Adicionar o recurso de blog a um site AEM
-* Configurações para componentes do blog
+* Configurações para componentes de blog
 
 >[!NOTE]
 >
->Os componentes `Journal` e `Journal Sidebar` são intituladas `Blog` e `Blog Sidebar`.
+>Os componentes `Journal` e `Journal Sidebar` são denominados `Blog` e `Blog Sidebar`.
 >
->O recurso de blog encontrado no AEM 6.0 e em versões anteriores foi removido. Ele era baseado em um modelo e permitia apenas que os autores criassem conteúdo no ambiente de criação.
+>O recurso de blog encontrado no AEM 6.0 e em versões anteriores foi removido. Ele era baseado em um modelo e só permitia que os autores criassem conteúdo no ambiente de criação.
 
-## Adicionar componentes de blog a uma página {#adding-blog-components-to-a-page}
+## Adicionar componentes do blog a uma página {#adding-blog-components-to-a-page}
 
-Se desejar adicionar um blog a uma página no modo de criação, use o navegador de componentes para localizar
+Se desejar adicionar um blog a uma página no modo de autor, use o navegador de componentes para localizar
 
 * `Communities / Blog`
 * `Communities / Blog Sidebar`
 
 e arraste-os para o local em uma página onde o blog deve aparecer.
 
-Para obter as informações necessárias, visite [Noções básicas sobre componentes do Communities](/help/communities/basics.md).
+Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](/help/communities/basics.md).
 
-Quando a variável [bibliotecas obrigatórias do lado do cliente](/help/communities/blog-developer-basics.md#essentials-for-client-side) são incluídos, é assim que a variável `Blog` componente será exibido:
+Quando a variável [bibliotecas obrigatórias do lado do cliente](/help/communities/blog-developer-basics.md#essentials-for-client-side) são incluídos, é assim que a variável `Blog` componente aparecerá:
 
-![componente de blog adicional](assets/add-blog-component.png)
+![add-blog-component](assets/add-blog-component.png)
 
-### Configuração do Blog {#configuring-blog}
+### Configuração de blog {#configuring-blog}
 
-Selecione o `Blog` para acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o colocado `Blog` para acessar e selecionar a variável `Configure` ícone que abre a caixa de diálogo de edição.
 
-![configure](assets/configure-new.png)
+![configurar](assets/configure-new.png)
 
 ![Configurações do blog](assets/blog-configure.png)
 
 #### Guia Configurações {#settings-tab}
 
-Em **Configurações** , especifique os recursos básicos do blog :
+No **Configurações** especifique os recursos básicos do blog:
 
 * **Permitir miniatura de anexo**
 
@@ -81,19 +81,19 @@ Em **Configurações** , especifique os recursos básicos do blog :
 
 * **Tamanho máximo da miniatura do anexo**
 
-   Tamanho máximo (em pixels) da imagem de miniatura do anexo. O valor padrão é 800 x 800.
+   Tamanho máximo (em pixels) da imagem em miniatura do anexo. O valor padrão é 800 x 800.
 
 * **Tamanho mínimo de imagem para a miniatura**
 
-   Tamanho mínimo (em bytes) da imagem para gerar miniatura de imagens em linha. O valor padrão é 100000 bytes (100 kb).
+   Tamanho mínimo (em bytes) da imagem para gerar a miniatura para imagens integradas. O valor padrão é 100000 bytes (100kb).
 
 * **Tamanho máximo da miniatura**
 
-   Tamanho máximo (em pixels) da imagem em miniatura para imagem em linha. O valor padrão é 800 x 800.
+   Tamanho máximo (em pixels) da imagem em miniatura para imagem integrada. O valor padrão é 800 x 800.
 
 * **Permitir membros privilegiados**
 
-   Se marcada, somente os membros com privilégios poderão criar conteúdo.
+   Se marcado, somente os membros Privilegiados poderão criar conteúdo.
 
 * **Membros privilegiados permitidos**
 
@@ -101,7 +101,7 @@ Em **Configurações** , especifique os recursos básicos do blog :
 
 * **Bloquear conteúdo gerado pelo usuário no modo Edição do autor**
 
-   Se estiver ativado, bloqueia o Conteúdo gerado pelo usuário durante a edição no Modo de autor.
+   Se estiver ativado, bloqueia o conteúdo gerado pelo usuário ao editar no Modo Autor.
 
 * **Título do diário**
 
@@ -111,7 +111,7 @@ Em **Configurações** , especifique os recursos básicos do blog :
 >
 >O Título do diário é usado para criar automaticamente o URL para o blog.
 >
->No máximo 50 caracteres (com 5 caracteres adicionais para exclusividade) são usados no título do diário que você especificar aqui para criar o URL do blog.
+>No máximo 50 caracteres (com 5 caracteres adicionais para exclusividade) são usados do título do diário especificado aqui para criar o URL do blog.
 
 * **Descrição do diário**
 
@@ -123,31 +123,31 @@ Em **Configurações** , especifique os recursos básicos do blog :
 
 * **Moderada**
 
-   Se marcada, a postagem de entradas e comentários do blog deve ser aprovada antes de serem exibidos em um site publicado. O padrão está desmarcado.
+   Se marcado, a postagem de entradas de blog e comentários deve ser aprovada antes de serem exibidos em um site publicado. O padrão é desmarcado.
 
 * **Fechado**
 
-   Se marcada, o blog é fechado para novas entradas e comentários do blog. O padrão está desmarcado.
+   Se marcado, o blog será fechado para novas entradas e comentários de blog. O padrão está desmarcado.
 
 * **Editor de rich text**
 
-   Se marcada, entradas de blog e comentários podem ser inseridos com marcação. O padrão está marcado.
+   Se marcadas, as entradas de blog e os comentários podem ser inseridos com marcação. O padrão está marcado.
 
 * **Permitir marcação**
 
-   Se marcada, permitir que membros adicionem rótulos de tag à publicação (consulte **Campo de tag** ). O padrão está desmarcado.
+   Se marcados, permitem que os membros adicionem rótulos de tag à sua publicação (consulte **Campo de tag** guia ). O padrão está desmarcado.
 
 * **Permitir carregamento de arquivos**
 
-   Se marcada, permita que anexos de arquivo sejam adicionados a uma entrada ou comentário do blog. O padrão está desmarcado.
+   Se marcado, permite que anexos de arquivo sejam adicionados a uma entrada de blog ou comentário. O padrão está desmarcado.
 
 * **Tamanho máximo do arquivo**
 
-   Relevante apenas se `Allow File Uploads` está marcada. Este campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
+   Relevante apenas se `Allow File Uploads` está marcado. Esse campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
 * **Tipos de arquivos permitidos**
 
-   Relevante apenas se `Allow File Uploads` está marcada. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se qualquer tipo de arquivo for especificado, os não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que todos os tipos de arquivo são permitidos.
+   Relevante apenas se `Allow File Uploads` está marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
 
 * **Tamanho máximo do arquivo de imagem a ser anexado**
 
@@ -155,27 +155,27 @@ Em **Configurações** , especifique os recursos básicos do blog :
 
 * **Permitir respostas**
 
-   Se marcada, permita respostas para comentários publicados na entrada do blog. O padrão está desmarcado.
+   Se marcado, permite respostas aos comentários postados na entrada do blog. O padrão está desmarcado.
 
 * **Permitir votação**
 
-   Se marcada, inclua o recurso Votação com uma entrada de blog. O padrão está desmarcado.
+   Se marcado, inclui o recurso Votação com uma entrada de blog. O padrão está desmarcado.
 
 * **Permitir que usuários excluam comentários e tópicos**
 
-   Se marcada, permita que os membros excluam os comentários e entradas de blog que publicaram. O padrão está desmarcado.
+   Se marcados, permitem que os membros excluam os comentários e as entradas de blog postados. O padrão está desmarcado.
 
 * **Permitir monitoramento**
 
-   Se marcada, inclua o seguinte recurso para artigos do blog, que permite que os membros sejam [notificado](/help/communities/notifications.md) de novos posts. O padrão está desmarcado.
+   Se marcado, inclui o seguinte recurso para artigos de blog, que permite que membros sejam [notificado](/help/communities/notifications.md) de novos posts. O padrão está desmarcado.
 
 * **Permitir assinaturas de email**
 
-   Se marcada, permita que os membros sejam notificados sobre novas postagens por email ([assinatura](/help/communities/subscriptions.md)). Exige `Allow Following` a verificar e [email configurado](/help/communities/email.md). O padrão está desmarcado.
+   Se marcado, permitir que os membros sejam notificados sobre novas publicações por email ([subscrição](/help/communities/subscriptions.md)). Exige `Allow Following` a ser verificado e [email configurado](/help/communities/email.md). O padrão está desmarcado.
 
 * **Exibir selos**
 
-   Se marcada, exibir ganhado e atribuído [emblemas](/help/communities/implementing-scoring.md) com a entrada de um membro no blog. O padrão está desmarcado.
+   Se marcado, exibir ganho e atribuído [medalhas](/help/communities/implementing-scoring.md) com uma entrada de blog do membro. O padrão está desmarcado.
 
 * **Não receber respostas na página de listagem**
 
@@ -185,83 +185,83 @@ Em **Configurações** , especifique os recursos básicos do blog :
 
 * **Ativar a menção**
 
-   Se estiver habilitado, o permite que usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e os marque usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas menções.
+   Se ativado, permite que os usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e marquem-nos usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas menções.
 
 * **Quantidade máxima de menções**
 
-   Restrinja o número máximo de menções permitidas em uma publicação. O padrão é 10.
+   Restringir o número máximo de menções permitidas em uma publicação. O padrão é 10.
 
 * **Padrão de menção da interface do usuário**
 
-   Especifique a string de padrão permitida para marcar (@menção) o usuário registrado em uma publicação. Por exemplo ~{{familyName}}{{givenName}}.
+   Especifique a string padrão permitida para marcar (@mention) o usuário registrado em uma publicação. Por exemplo ~{{familyName}}{{givenName}}.
 
-#### Guia Moderação do usuário {#user-moderation-tab}
+#### Guia Moderação de usuário {#user-moderation-tab}
 
-Em **Moderação do usuário** , especifique as configurações de moderação :
+No **Moderação de usuário** especifique as configurações de moderação:
 
 * **Negar postagens**
 
-   Se marcada, os moderadores de membros confiáveis poderão negar publicações e impedir que a publicação apareça no fórum público. O padrão está desmarcado.
+   Se marcados, os moderadores de membros confiáveis poderão negar postagens e impedir que a postagem apareça no fórum público. O padrão está desmarcado.
 
 * **Fechar/Reabrir tópicos**
 
-   Se marcada, os moderadores de membros confiáveis podem fechar um tópico para outras edições e comentários, e também podem reabrir um tópico. O padrão está desmarcado.
+   Se marcados, os moderadores de membros confiáveis podem fechar um tópico para outras edições e comentários, e também podem reabrir um tópico. O padrão está desmarcado.
 
 * **Sinalizar postagens**
 
-   Se marcada, permita que os membros sinalizem os tópicos ou comentários de outras pessoas como inapropriado. O padrão está desmarcado.
+   Se marcado, permite que os membros marquem tópicos ou comentários de outras pessoas como inadequados. O padrão está desmarcado.
 
 * **Sinalizar lista de motivo**
 
-   Se marcada, permita que os membros escolham, em uma lista suspensa, o motivo para marcar um tópico ou comentário como inapropriado. O padrão está desmarcado.
+   Se marcado, permite que os membros escolham, em uma lista suspensa, o motivo para sinalizar um tópico ou comentário como inapropriado. O padrão está desmarcado.
 
 * **Motivo personalizado de sinalização**
 
-   Se marcada, permita que os membros insiram seu próprio motivo para marcar um tópico ou comentário como inapropriado. O padrão está desmarcado.
+   Se marcado, permite que os membros insiram seu próprio motivo para sinalizar um tópico ou comentário como inapropriado. O padrão está desmarcado.
 
 * **Limite de moderação**
 
-   Insira o número de vezes que um tópico ou comentário deve ser sinalizado pelos membros antes que os moderadores sejam notificados. O padrão é 1 ( uma vez).
+   Insira o número de vezes que um tópico ou comentário deve ser marcado pelos membros antes que os moderadores sejam notificados. O padrão é 1 (uma vez).
 
 * **Limite de sinalização**
 
-   Insira o número de vezes que um tópico ou comentário deve ser sinalizado antes de ser oculto da exibição pública. Se definido como -1, o tópico ou comentário sinalizado nunca será oculto da exibição pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
+   Insira o número de vezes que um tópico ou comentário deve ser sinalizado antes de ser ocultado da visualização pública. Se definido como -1, o tópico ou comentário sinalizado nunca será ocultado da exibição pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
 
 #### Guia Campo de tag {#tag-field-tab}
 
-Em **Campo de tag** , especifique as tags que podem ser aplicadas se **Permitir marcação** é verificada no **Configurações** guia :
+No **Campo de tag** especifique as tags que poderão ser aplicadas se **Permitir marcação** é verificar no **Configurações** Guia:
 
-* **Espaços de nomes permitidos**
+* **Namespaces permitidos**
 
-   Relevante se `Allow Tagging` é verificada sob o **Configurações** guia . As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace verificadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão não está marcado, o que significa que todos os namespaces são permitidos.
+   Relevante se `Allow Tagging` é verificado sob o **Configurações** guia. As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace marcadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão é nenhum marcado, o que significa que todos os namespaces são permitidos.
 
 * **Limite sugerido**
 
-   Insira o número de tags a serem exibidas como sugestão para o membro postando no fórum. Um valor de -1 significa que não há limites. O padrão é 0.
+   Insira o número de tags a serem exibidas como sugestão para a publicação do membro no fórum. Um valor de -1 significa sem limites. O padrão é 0.
 
-### Configuração da barra lateral do blog {#configuring-blog-sidebar}
+### Configurar a barra lateral do blog {#configuring-blog-sidebar}
 
-Quando você clicar duas vezes no botão `Blog Sidebar` , uma caixa de diálogo de edição é aberta.
+Ao clicar duas vezes no ícone `Blog Sidebar` componente, uma caixa de diálogo de edição é aberta.
 
-Em **Configurações da barra lateral do diário** , especifique o formato de data para arquivos e o tipo de entradas a serem exibidas na barra lateral :
+No **Configurações da barra lateral do diário** especifique o formato de data para os arquivos e o tipo de entradas a serem exibidas na barra lateral:
 
-![blog-component-sidebar](assets/blog-component-sidebar.png)
+![barra lateral de componentes do blog](assets/blog-component-sidebar.png)
 
 * **Formato de data**
 
-   O formato usado para exibir arquivos de entradas de blog. O formato usa espaços reservados de acordo com a convenção do Java.
+   O formato usado para exibir arquivos de entradas de blog. O formato usa espaços reservados seguindo a convenção do Java.
 
-   * aaaa : ano inteiro, como &#39;2015&#39;
-   * yy : ano curto, como &quot;15&quot;
+   * aaaa : ano completo, como &#39;2015&#39;
+   * aa : ano curto, como &quot;15&quot;
    * MMMM : mês inteiro, como junho
-   * MMM : mês curto, como junho
+   * MMM : mês curto, como jun
    * MM : número do mês, como 06
 
-   O padrão é &quot;yyyy MMMM&quot;, que exibiria, por exemplo, &quot;2015 June&quot;
+   O padrão é &quot;yyyy MMMMM&quot;, que exibiria, por exemplo, &quot;junho de 2015&quot;
 
 * **Visualizar tipo**
 
-   O Título e o tipo de entradas de blog a serem exibidas na barra lateral. A escolha é entre
+   O Título e o tipo das entradas do blog a serem exibidas na barra lateral. A escolha é entre
 
    * Autores
    * Categorias
@@ -269,25 +269,25 @@ Em **Configurações da barra lateral do diário** , especifique o formato de da
 
 * **Caminho do componente Blopg**
 
-   *(Opcional)* O local do recurso de blog do qual os artigos de blog devem ser listados. Se deixado em branco, usará o componente de resourceType `social/journal/components/hbs/journal` que aparece na mesma página.
+   *(Opcional)* A localização do recurso de blog do qual os artigos de blog devem ser listados. Se deixado em branco, usará o componente de resourceType `social/journal/components/hbs/journal` que aparece na mesma página.
 
    * Por exemplo, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **Limite sugerido**
 
-   O número de artigos do blog a serem exibidos. Um valor de -1 significa que não há limite. O padrão é -1.
+   O número de artigos de blog a serem exibidos. Um valor de -1 significa sem limite. O padrão é -1.
 
 ## Experiência de visitante do site {#site-visitor-experience}
 
-No ambiente de publicação, o recurso de blog exibirá o artigo de blog mais recente, seguido de artigos de blog mais antigos em ordem decrescente de criação. As barras laterais do blog permitem que os visitantes do site apliquem filtros para limitar a seleção dos artigos do blog exibidos.
+No ambiente de publicação, o recurso de blog exibirá o artigo de blog mais recente seguido de artigos de blog mais antigos em ordem decrescente de criação. As barras laterais de blog permitem que os visitantes do site apliquem filtros para limitar a seleção de artigos de blog exibidos.
 
-O artigo do blog é seguido por um link para postar ou exibir comentários.
+O artigo do blog é seguido por um link para publicar ou exibir comentários.
 
-Quando um artigo de blog é selecionado, o artigo do blog e os comentários são exibidos (se ativados).
+Quando um artigo de blog é selecionado, o artigo de blog e os comentários são exibidos (se ativados).
 
-Outras capacidades dependem se o visitante do site é um moderador, administrador, membro da comunidade, membro privilegiado ou anônimo.
+Outras habilidades dependem se o visitante do site é moderador, administrador, membro da comunidade, membro privilegiado ou anônimo.
 
-### Como trabalhar com artigos {#working-with-articles}
+### Trabalhar com artigos {#working-with-articles}
 
 Ao criar um novo artigo de blog, há a opção de:
 
@@ -295,43 +295,43 @@ Ao criar um novo artigo de blog, há a opção de:
 1. Publicar um rascunho
 1. Publicar em uma data e hora programadas
 
-Os artigos do blog aparecerão sob a guia apropriada (Publicado, Rascunhos ou Programado) para os membros capazes de criar na publicação.
+Os artigos do blog serão exibidos na guia apropriada (Publicado, Rascunhos ou Agendado) para os membros que podem ser autores em publicações.
 
 #### Moderadores e administradores {#moderators-and-administrators}
 
-Quando o usuário conectado tem privilégios de moderador ou administrador, ele pode executar [tarefas de moderação](/help/communities/moderate-ugc.md) (como permitido pela configuração do componente) em todos os artigos e comentários do blog publicados em um blog.
+Quando o usuário conectado tem privilégios de moderador ou administrador, ele pode executar [tarefas de moderação](/help/communities/moderate-ugc.md) (conforme permitido pela configuração do componente ) em todos os artigos e comentários de blog publicados em um blog.
 
-![página inicial do moderador](assets/moderator-homepage.png)
+![moderator-homepage](assets/moderator-homepage.png)
 
 #### Membros {#members}
 
-Quando o usuário conectado é um membro da comunidade ou [membro privilegiado](/help/communities/users.md#privileged-members-group) (dependendo da configuração), eles podem selecionar `New Article` para criar e publicar um novo artigo no blog.
+Quando o usuário conectado é um membro da comunidade ou [membro privilegiado](/help/communities/users.md#privileged-members-group) (dependendo da configuração), é possível selecionar `New Article` para criar e publicar um novo artigo de blog.
 
-Especificamente, podem:
+Especificamente, eles podem:
 
 * Criar um novo artigo de blog
-* Publicar um novo artigo no blog em nome de outro membro
+* Publicar um novo artigo de blog em nome de outro membro
 * Publicar um comentário em um artigo do blog
-* Editar seu próprio artigo ou comentário no blog
-* Excluir seu próprio artigo ou comentário do blog
-* Sinalizar artigos ou comentários de outros blogues
+* Editar seu próprio artigo de blog ou comentário
+* Excluir seu próprio artigo de blog ou comentário
+* Sinalizar artigos ou comentários de outras pessoas
 
-![membro-homepage](assets/member-homepage.png)
+![member-homepage](assets/member-homepage.png)
 
 ![create-blog](assets/create-blog.png)
 
 #### Anônimo {#anonymous}
 
-Os visitantes do site que não estiverem conectados podem ler somente artigos e comentários postados do blog, traduzi-los se houver suporte, mas não podem adicionar um artigo ou comentário do blog nem sinalizar artigos ou comentários de outras pessoas.
+Os visitantes do site que não estão conectados podem apenas ler artigos e comentários de blog publicados, traduzi-los se houver suporte, mas não podem adicionar um artigo ou comentário de blog nem sinalizar artigos ou comentários de outras pessoas.
 
 ![anonymous-user-view](assets/anonymous-user-view.png)
 
 ## Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas no [Blog Essentials](/help/communities/blog-developer-basics.md) página para desenvolvedores.
+Mais informações podem ser encontradas no [Fundamentos do blog](/help/communities/blog-developer-basics.md) página para desenvolvedores.
 
-Para obter moderação de entradas e comentários do blog, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
+Para moderação de entradas e comentários do blog, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
-Para marcar entradas e comentários do blog, consulte [Marcação de conteúdo gerado pelo usuário](/help/communities/tag-ugc.md).
+Para marcar entradas de blog e comentários, consulte [Marcação do conteúdo gerado pelo usuário](/help/communities/tag-ugc.md).
 
-Para obter a tradução de entradas e comentários do blog, consulte [Tradução de conteúdo gerado pelo usuário](/help/communities/translate-ugc.md).
+Para tradução de entradas e comentários do blog, consulte [Tradução de conteúdo gerado pelo usuário](/help/communities/translate-ugc.md).

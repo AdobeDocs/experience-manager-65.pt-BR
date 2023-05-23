@@ -1,27 +1,27 @@
 ---
-title: Notas de versão do AEM Content and Commerce 2022
-description: Notas de versão do AEM Content and Commerce 2022
+title: Notas de versão de 2022 de conteúdo e comércio de AEM
+description: Notas de versão de 2022 de conteúdo e comércio de AEM
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
 source-git-commit: 0fdff88695646603cec120d25f156f8c918686df
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 44%
+ht-degree: 46%
 
 ---
 
-# Visão geral da versão da Commerce Integration Framework do GitHub
+# Visão geral da versão do GitHub da estrutura de integração do comércio
 
-## Visão geral dos requisitos do sistema
+## Visão geral dos requisitos de sistema
 
-Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF que você está usando ou planeja usar no futuro.
+Consulte na tabela a seguir os requisitos mínimos do sistema para saber a versão da CIF que você está usando ou pretende usar no futuro.
 
 | Componente | Requisitos do sistema |
 |:-------|:-----:|
-| Complemento CIF | Mínimo: AEM 6.5.7, Magento 2.3.5 Esquemas do GraphQL |
+| Complemento CIF | Mínimo: Esquemas GraphQL com AEM 6.5.7, Magento 2.3.5 |
 | Componentes principais da CIF | [Requisitos do sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Arquétipo de projeto do AEM | [Requisitos do sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
-## Data de lançamento: Setembro de 2022
+## Data de lançamento: setembro de 2022
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
@@ -31,12 +31,12 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 ### Novidades {#what-is-new-september}
 
-* Os autores podem enriquecer dinamicamente listas de produtos com Fragmentos de experiência (Exemplo: Colocar banner entre as listas de produtos)
-* O componente de lista suporta páginas de produto/categoria associadas para mostrar dinamicamente páginas relacionadas
+* Os autores podem enriquecer dinamicamente listas de produtos com Fragmentos de experiência (Exemplo: colocar banner entre as listas de produtos)
+* O componente de Lista oferece suporte às páginas de produto/categoria associadas para mostrar dinamicamente páginas relacionadas
 * Suporte para componentes do Peregrine 12.5
-* Suporte para carregamento de preço no lado do cliente em teaser e carrossel de produtos
+* Suporte para carregamento de preço no lado do cliente no teaser e no carrossel do produto
 
-## Data de lançamento: Julho de 2022
+## Data de lançamento: julho de 2022
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
@@ -44,10 +44,10 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 ### Novidades {#what-is-new-july}
 
-* Associação de páginas de AEM a produtos e categorias por meio das propriedades AEM página mais visão geral do cockpit de produtos
-   ![associação da página de cockpit do produto](/help/assets/CIF/product_cockpit_page_association.png)
+* Associação de páginas de AEM a produtos e categorias por meio de propriedades de página de AEM, além de visão geral no cockpit do produto
+   ![associação de página do cockpit do produto](/help/assets/CIF/product_cockpit_page_association.png)
 
-## Data de lançamento: Junho de 2022
+## Data de lançamento: junho de 2022
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
@@ -67,7 +67,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 * Componente de página incorreto no datalayer
 
-## Data de lançamento: Maio de 2022
+## Data de lançamento: maio de 2022
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
@@ -83,7 +83,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 * Aprimoramento da compatibilidade e robustez de conectores de terceiros no I/O Runtime
 
-* Melhore o suporte para substituições de configuração do cliente GQL (por exemplo, definir o comportamento de armazenamento em cache personalizado)
+* Melhorar o suporte para substituições de configuração de cliente GQL (por exemplo, definir um comportamento de cache personalizado)
 
 ### Correções de erros {#bug-fixes-may}
 
@@ -91,7 +91,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
 * Ocasionalmente, o seletor de produto fica oculto atrás dos componentes
 
-## Data de lançamento: Abril de 2022
+## Data de lançamento: abril de 2022
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
@@ -109,7 +109,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 
    ![Atalho do Editor de sites para o cockpit de produtos](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
-## Data de lançamento: Fevereiro de 2022
+## Data de lançamento: fevereiro de 2022
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
@@ -125,7 +125,7 @@ Analise os requisitos mínimos do sistema na tabela abaixo para a versão da CIF
 * Gerenciamento simplificado de configurações e tratamento de erros do CIF usando o nome de configuração da nuvem do CIF em vez da configuração do URL de proxy
 * Seleção manual da categoria para a lista de produtos e os componentes do carrossel. Isso permite que os profissionais de conteúdo usem esses componentes em páginas de conteúdo, fora da experiência de catálogo
 
-## Data de lançamento: Janeiro de 2022
+## Data de lançamento: janeiro de 2022
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|

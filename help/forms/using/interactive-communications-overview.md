@@ -1,7 +1,7 @@
 ---
 title: Visão geral das comunicações interativas
 seo-title: Interactive Communications Overview
-description: Este artigo inclui visão geral, casos de uso de exemplo, fluxo de trabalho de criação e diferenças entre comunicação interativa e carta.
+description: Este artigo inclui visão geral, exemplos de casos de uso, fluxo de trabalho de criação e diferenças entre a comunicação interativa e a correspondência.
 seo-description: Interactive Communication key capabilities, sample use cases, creation workflow, and differences between Interactive Communication and Correspondence Management
 uuid: a06b4ac7-ca20-4d6d-b2b7-87b21e2f5cf9
 contentOwner: gtalwar
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 # Visão geral das comunicações interativas {#interactive-communications-overview}
 
-Este artigo inclui visão geral, casos de uso de exemplo, fluxo de trabalho de criação e diferenças entre comunicação interativa e carta.
+Este artigo inclui visão geral, exemplos de casos de uso, fluxo de trabalho de criação e diferenças entre a comunicação interativa e a correspondência.
 
 ![](do-not-localize/correspondence-management.png)
 
@@ -27,14 +27,14 @@ As Comunicações interativas centralizam e gerenciam a criação, montagem e de
 
 ## Principais recursos {#key-capabilities}
 
-Veja a seguir os principais recursos das Comunicações interativas:
+A seguir estão os principais recursos das Comunicações interativas:
 
-- Integração imediata com o modelo de dados de formulário para permitir o acesso fácil e simplificado a bancos de dados back-end e outros sistemas CRM, como o MS® Dynamics
-- Interface de criação integrada para canais de impressão e Web com capacidade de gerar automaticamente canal da Web a partir do canal de impressão
-- Gráficos para apresentar informações em formatos visuais facilmente compreensíveis em impressão e web
-- Fragmentos de documento suportam o editor de regras e o modelo de dados de formulário
-- A interface do usuário do agente exibe a pré-visualização da Web e impressão da Comunicação interativa
-- Arrastar e soltar componentes para construir rapidamente canais de impressão e da Web
+- Integração imediata com o modelo de dados de formulário para permitir acesso fácil e simplificado a bancos de dados de back-end e outros sistemas de CRM, como o MS® Dynamics
+- Interface de criação integrada para canais de impressão e da Web com capacidade de gerar automaticamente o canal da Web a partir do canal de impressão
+- Gráficos para apresentar informações em formatos visuais facilmente compreensíveis em impressão e na Web
+- Os fragmentos de documento são compatíveis com o editor de regras e o modelo de dados de formulário
+- A interface do usuário do agente exibe a impressão e a visualização da Web da comunicação interativa
+- Arraste e solte componentes para construir rapidamente canais de impressão e da Web
 
 ## Criação de comunicação interativa {#interactive-communication-creation}
 
@@ -42,36 +42,36 @@ Veja a seguir os principais recursos das Comunicações interativas:
 
 ### Fluxo de trabalho {#workflow}
 
-Para criar uma comunicação interativa, faça com que [blocos de construção](#buildingblocks) para comunicação interativa pronta e depois conclua as seguintes etapas:
+Para criar uma Comunicação interativa, faça com que [elementos](#buildingblocks) para Comunicação interativa pronta e, em seguida, conclua as seguintes etapas:
 
-1. Escolha para [criar uma comunicação interativa](/help/forms/using/create-interactive-communication.md).
+1. Optar por [criar uma comunicação interativa](/help/forms/using/create-interactive-communication.md).
 
-1. Especifique a [modelo de dados de formulário](/help/forms/using/data-integration.md), serviço de preenchimento prévio e [modelos de canal de impressão e Web](/help/forms/using/web-channel-print-channel.md). Você pode optar por gerar o canal da Web a partir do canal de impressão.
+1. Especifique a [modelo de dados de formulário](/help/forms/using/data-integration.md), serviço de preenchimento prévio e [modelos de canal da web e de impressão](/help/forms/using/web-channel-print-channel.md). Você pode optar por gerar um canal da Web a partir do canal de impressão.
 
-1. Usar o [interface de arrastar e soltar](/help/forms/using/introduction-interactive-communication-authoring.md), adicione fragmentos de documento, imagens, componentes para imprimir e canal da Web da Comunicação interativa, conforme necessário.
-1. Configure as propriedades dos componentes inseridos, como o seguinte:
+1. Usar o [interface de arrastar e soltar](/help/forms/using/introduction-interactive-communication-authoring.md), adicione fragmentos de documentos, imagens, componentes a serem impressos e o canal da Web da Comunicação interativa, conforme necessário.
+1. Configure as propriedades dos componentes inseridos, como as seguintes:
 
    1. [Imagens](/help/forms/using/create-interactive-communication.md#step2)
-   1. [Tabelas](/help/forms/using/create-interactive-communication.md#tables) (Incluindo Fragmentos de Layout)
+   1. [Tabelas](/help/forms/using/create-interactive-communication.md#tables) (Incluindo Fragmentos de layout)
    1. [Gráficos](/help/forms/using/chart-component-interactive-communications.md)
-   1. [Fragmentos de documento](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
+   1. [Fragmentos do documento](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
-1. Visualize canais de impressão e da Web e, se necessário, edite a Comunicação interativa.
-1. O agente usa a interface do agente para [preparar a comunicação interativa](/help/forms/using/prepare-send-interactive-communication.md) para enviá-lo ao recipient/pós-processo.
+1. Pré-visualize canais de impressão e da Web e, se necessário, edite a Comunicação interativa.
+1. O agente usa a interface do usuário do agente para [preparar a comunicação interativa](/help/forms/using/prepare-send-interactive-communication.md) para enviá-lo ao processo de destinatário/publicação.
 
-### Elementos básicos {#buildingblocks}
+### Blocos de construção {#buildingblocks}
 
-A seguir estão os blocos de construção necessários para criar uma Comunicação Interativa:
+A seguir estão os componentes necessários para criar uma Comunicação interativa:
 
 - [Modelo de dados do formulário](/help/forms/using/data-integration.md)
-- [Modelos de canal de impressão e Web](/help/forms/using/web-channel-print-channel.md)
-- [Fragmentos de documento](/help/forms/using/document-fragments.md)
+- [Modelos de canal da Web e de impressão](/help/forms/using/web-channel-print-channel.md)
+- [Fragmentos do documento](/help/forms/using/document-fragments.md)
 - Imagens
-- [Temas](/help/forms/using/themes.md) para o canal Web
+- [Temas](/help/forms/using/themes.md) para o canal da Web
 
-## Comunicações Interativas E Gerenciamento De Correspondência {#interactive-communications-vs-correspondence-management}
+## Comunicações Interativas Vs Gerenciamento De Correspondência {#interactive-communications-vs-correspondence-management}
 
-A Comunicação interativa é a abordagem padrão e recomendada para criar comunicações com clientes. Para continuar usando as letras que criam no AEM 6.3 Forms e no AEM 6.2 Forms, é necessário [instalar um pacote de compatibilidade](/help/forms/using/compatibility-package.md). Veja a seguir uma comparação entre os recursos de Comunicação interativa e carta.
+A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente. Para continuar usando as letras que criam no AEM 6.3 Forms e no AEM 6.2 Forms, é necessário [instalar um pacote de compatibilidade](/help/forms/using/compatibility-package.md). Veja a seguir uma comparação entre os recursos de Comunicação interativa e cartas.
 
 <table>
  <tbody>
@@ -83,41 +83,41 @@ A Comunicação interativa é a abordagem padrão e recomendada para criar comun
   <tr>
    <td>Saída</td>
    <td>Impressão e Web</td>
-   <td>Impressão</td>
+   <td>Imprimir</td>
   </tr>
   <tr>
-   <td>Esquema</td>
+   <td>Schema</td>
    <td>Modelo de dados do formulário </td>
    <td>Dicionário de dados </td>
   </tr>
   <tr>
    <td>Localização</td>
-   <td>Não suportado no modelo de dados de formulário</td>
-   <td>Suportado no dicionário de dados</td>
+   <td>Não compatível com o modelo de dados de formulário</td>
+   <td>Compatível com o dicionário de dados</td>
   </tr>
   <tr>
    <td>Editor de regras</td>
    <td>
     <ul>
      <li>Editor de regras de suporte a texto e condição para criar condições em linha</li>
-     <li>O editor de comunicação interativa oferece suporte à aplicação de regras em componentes do canal da Web</li>
+     <li>O Editor de comunicação interativa oferece suporte à aplicação de regras em componentes do canal da Web</li>
     </ul> </td>
-   <td>Nenhuma interface do usuário para criação de expressão condicional</td>
+   <td>Nenhuma interface para a criação de expressão condicional</td>
   </tr>
   <tr>
    <td>Criação  </td>
-   <td>Arrastar e soltar interface para construir canal de impressão e da Web</td>
+   <td>Interface de arrastar e soltar para construir canais de impressão e da Web</td>
    <td>Nenhum mecanismo de arrastar e soltar </td>
   </tr>
   <tr>
    <td>Gráficos</td>
-   <td>Gráficos suportados em impressão e canal da Web</td>
+   <td>Gráficos compatíveis com impressão e canal da Web</td>
    <td>Não suportado</td>
   </tr>
   <tr>
    <td>Temas</td>
-   <td>Usa temas para criar estilo no canal da Web</td>
-   <td>Não apoia temas</td>
+   <td>Usa temas para estilizar o canal da Web</td>
+   <td>Não suporta temas</td>
   </tr>
    <tr>
    <td>Rascunhos</td>
@@ -125,7 +125,7 @@ A Comunicação interativa é a abordagem padrão e recomendada para criar comun
    <td>Compatível</td>
   </tr>
    <tr>
-   <td>Submissões</td>
+   <td>Envios</td>
    <td>Compatível</td>
    <td>Compatível</td>
   </tr>

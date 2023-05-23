@@ -1,7 +1,7 @@
 ---
 title: Campanhas
 seo-title: Campaigns
-description: Saiba mais sobre as noções básicas do uso de Campanhas AEM.
+description: Saiba mais sobre as noções básicas de uso das campanhas de AEM.
 seo-description: Learn the basics of using AEM Campaigns.
 uuid: f4be814f-8b0f-4089-88bb-0141227bce02
 contentOwner: Guillaume Carlino
@@ -19,16 +19,16 @@ ht-degree: 1%
 
 # Campanhas{#campaigns}
 
-O gerenciamento de campanhas fornece aos profissionais de marketing digital a oportunidade de fornecer conteúdo personalizado e criar experiências dedicadas para os visitantes.
+O gerenciamento de campanhas oferece aos profissionais de marketing digital a oportunidade de fornecer conteúdo personalizado e criar experiências dedicadas para os visitantes.
 
 Se você estiver administrando campanhas (incluindo landing pages), talvez precise fazer o seguinte:
 
-* **Definir segmentos** - É necessário definir segmentos e estratégias para o seu conteúdo direcionado.
-* **Preparar o HTML para landing pages** - As Landing pages permitem que os autores importem design e conteúdo diretamente para uma página de AEM de forma rápida e fácil. Você precisa preparar o HTML para que os ativos possam ser importados corretamente. As landing pages são úteis ao criar landing pages de marketing que ficam ativas apenas por um tempo limitado e precisam ser criadas rapidamente.
-* **Integrar ao SiteCatalyst** - É possível integrar landing pages com o SiteCatalyst.
+* **Definir segmentos** - Você precisa definir segmentos e estratégias para o seu conteúdo direcionado.
+* **Preparar HTML para páginas de aterrissagem** - As landing pages permitem que os autores importem design e conteúdo diretamente para uma página do AEM de forma rápida e fácil. Você precisa preparar o HTML para que os ativos possam ser importados corretamente. As landing pages são úteis ao criar landing pages de marketing que só estão ativas por um tempo limitado e precisam ser criadas rapidamente.
+* **Integrar ao SiteCatalyst** - Você pode integrar páginas de aterrissagem ao SiteCatalyst.
 
 Consulte as seguintes páginas:
 
 * [Configuração da segmentação](/help/sites-administering/campaign-segmentation.md)
-* [Extensão e configuração do Importador de design para páginas de aterrissagem](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
-* [Integração de páginas de aterrissagem com o Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
+* [Extensão e configuração do importador de design para páginas iniciais](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
+* [Integração de landing pages ao Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)

@@ -1,6 +1,6 @@
 ---
 title: Layout responsivo
-description: Embora o componente do contêiner de layout esteja disponível na interface clássica, as suas funcionalidades estão disponíveis apenas na interface habilitada para toque.
+description: Embora o componente de Contêiner de layout esteja disponível na interface clássica, sua funcionalidade completa só está disponível e é compatível na interface habilitada para toque.
 uuid: 203c7491-ce0e-49fc-ad81-1697325b3d8c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -19,4 +19,4 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Embora o componente do contêiner de layout esteja disponível na interface clássica, as suas funcionalidades estão disponíveis apenas na interface habilitada para toque. Consulte [Layout responsivo](/help/sites-authoring/responsive-layout.md) na documentação de criação padrão para obter mais detalhes.
+>Embora o componente de Contêiner de layout esteja disponível na interface clássica, sua funcionalidade completa só está disponível e é compatível na interface habilitada para toque. Consulte [Layout responsivo](/help/sites-authoring/responsive-layout.md) na documentação de criação padrão para obter mais detalhes.

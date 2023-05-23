@@ -53,36 +53,36 @@ Sua conta já terá sido configurada com os privilégios necessários. Em caso d
 
 A primeira vez que você efetuar o logon, um pequeno tutorial online destacará alguns dos principais recursos da interface.
 
-Em seguida, você pode usar o Painel de navegação para acessar as áreas-chave do AEM. Para Fragmentos de conteúdo, você usará a variável **Console de ativos**.
+Em seguida, você pode usar o Painel de navegação para acessar as áreas-chave do AEM. Para fragmentos de conteúdo, você usará o **Console de ativos**.
 
-O Painel de navegação pode ser aberto selecionando o ícone Adobe na parte superior esquerda, seguido pelo pequeno ícone de bússola:
+O Painel de navegação pode ser aberto selecionando o ícone Adobe no canto superior esquerdo, seguido pelo ícone de bússola pequeno:
 
 ![Painel Navegação](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
->Embora os Fragmentos de conteúdo sejam um recurso de AEM **Sites**, são encontradas no **Ativos** console. Este é um detalhe técnico que não deve afetar você, mas que pode ser útil.
+>Embora os fragmentos de conteúdo sejam um recurso do AEM **Sites**, elas são encontradas na **Assets** console. Este é um detalhe técnico que não deve afetar você, mas que pode ser útil.
 
-No console, é possível selecionar pastas para navegar até o Fragmento do conteúdo ou a navegação estrutural (no cabeçalho) para navegar de volta para a árvore.
+No console, é possível selecionar pastas para navegar até o fragmento de conteúdo ou as navegações estruturais (no cabeçalho) para navegar de volta até a árvore.
 
 ![Navegações estruturais](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
 
 ### Ações, Seleção, Exibição {#actions-selecting-viewing}
 
-O **Ativos** o console dedicou-se **Barras de ferramentas de ação** e **Ações rápidas** que você pode usar depois de selecionar um recurso (por exemplo, uma pasta ou fragmento de conteúdo).
+A variável **Assets** o console tem dedicado **Barras de ferramentas de ação**, e **Ações rápidas** que você pode usar após selecionar um recurso (por exemplo, uma pasta ou fragmento de conteúdo).
 
 As Ações rápidas estão disponíveis para um único recurso, consulte **Basileia** no exemplo abaixo:
 
 ![Ações rápidas](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
-A barra de ferramentas Ações fornece acesso a toda a gama de ações - aplicáveis ao cenário atual. As ações disponíveis podem mudar; por exemplo, dependendo da sua localização ou se você selecionou vários recursos:
+A barra de ferramentas Ações fornece acesso à gama completa de ações, aplicáveis ao cenário atual. As ações disponíveis podem mudar; por exemplo, dependendo da sua localização ou se você selecionou vários recursos:
 
 ![Barra de ferramentas de ação](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
 
-Você pode selecionar o formato para visualizar seus recursos com o Seletor de exibições:
+Você pode selecionar o formato para exibir seus recursos com o Seletor de exibição:
 
 ![Exibir seletor](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
 
-Você pode exibir informações adicionais sobre itens usando o Seletor de painéis. Isso também dá acesso a ações adicionais.
+É possível ver informações adicionais sobre itens usando o Seletor de painéis. Isso também dá acesso a ações adicionais.
 
 ![Painel esquerdo](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
 
@@ -136,23 +136,23 @@ Você provavelmente receberá uma pasta inicial em que poderá criar suas pastas
 
 ### Criação de um Fragmento de conteúdo {#creating-fragment}
 
-A criação de um Fragmento de conteúdo é muito semelhante - você apenas usa a variável **Fragmento de conteúdo** em vez disso:
+A criação de um fragmento de conteúdo é muito semelhante - você só usa o **Fragmento do conteúdo** opção em vez disso:
 
 ![Opção Criar fragmento de conteúdo](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
-Desta vez, um assistente será aberto. A primeira etapa é selecionar o Modelo do fragmento de conteúdo no qual o fragmento será baseado:
+Desta vez, um assistente é aberto. A primeira etapa é selecionar o Modelo de fragmento de conteúdo no qual o fragmento será baseado:
 
-![Criar fragmento de conteúdo - selecione Modelo](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+![Criar fragmento de conteúdo — selecionar modelo](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-Depois de continuar com o **Próximo** você pode fornecer os detalhes (**Básico** e **Avançado**) para o fragmento:
+Depois de continuar com **Próxima** você pode fornecer os detalhes (**Básico** e **Avançado**) para o fragmento:
 
 ![Criar fragmento de conteúdo: fornecer um nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-Confirme com **Criar** e você pode **Abrir** no editor.
+Confirmar com **Criar** e você poderá **Abertura** o fragmento no editor.
 
 ### Edição de um fragmento {#editing-fragment}
 
-Você pode abrir um fragmento imediatamente após criá-lo ou selecionando-o no console Assets.
+Você pode abrir um fragmento imediatamente após criá-lo ou selecionando-o no console de Ativos.
 
 Quando o editor for aberto pela primeira vez, você verá:
 
@@ -217,7 +217,7 @@ Os Modelos de fragmentos de conteúdo são essenciais para os Fragmentos de cont
 
 Após concluir o fragmento, é possível **Publicar** para que esteja disponível para os aplicativos headless.
 
-As ações de publicação estão disponíveis no editor (ou na barra de ferramentas do **Ativos** console):
+As ações de publicação estão disponíveis no editor (ou na barra de ferramentas do **Assets** console):
 
 ![Editor de fragmento de conteúdo - Meu fragmento](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
@@ -262,7 +262,7 @@ Agora que você aprendeu o básico, o próximo passo é [Saiba mais sobre refer�
 
 
 * Guias de introdução
-   * [Criação de uma pasta de ativos sem cabeçalho Guia de início rápido](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+   * [Criação de uma pasta de ativos Guia de início rápido do Headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Jornada do arquiteto de conteúdo do AEM Headless](/help/journey-headless/architect/overview.md)
 

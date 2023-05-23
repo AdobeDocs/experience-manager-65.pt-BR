@@ -1,6 +1,6 @@
 ---
-title: Guia de início rápido sem cabeçalho para acessar e entregar fragmentos de conteúdo
-description: Saiba como usar AEM API REST de ativos para gerenciar Fragmentos de conteúdo e a API do GraphQL para entrega sem interface do conteúdo do Fragmento de conteúdo.
+title: Acesso e entrega de Fragmentos de conteúdo - Guia de início rápido do Headless
+description: Saiba como usar a API REST do AEM Assets para gerenciar fragmentos de conteúdo e a API do GraphQL para entrega headless do conteúdo do fragmento de conteúdo.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 67%
 
 ---
 
-# Guia de início rápido sem cabeçalho para acessar e entregar fragmentos de conteúdo {#accessing-delivering-content-fragments}
+# Acesso e entrega de Fragmentos de conteúdo - Guia de início rápido do Headless {#accessing-delivering-content-fragments}
 
-Saiba como usar AEM API REST de ativos para gerenciar Fragmentos de conteúdo e a API do GraphQL para entrega sem interface do conteúdo do Fragmento de conteúdo.
+Saiba como usar a API REST do AEM Assets para gerenciar fragmentos de conteúdo e a API do GraphQL para entrega headless do conteúdo do fragmento de conteúdo.
 
 ## O que são as APIs REST do GraphQL e do Assets? {#what-are-the-apis}
 
@@ -58,13 +58,13 @@ Os arquitetos da informação precisarão projetar consultas para seus endpoints
    ![GraphiQL query](assets/graphiql-query.png)
 -->
 
-1. Clique no botão **Executar Consulta** (seta para a direita) ou use o ícone `Ctrl-Enter` A tecla de atalho e os resultados são exibidos como JSON no painel direito.
+1. Clique em **Executar consulta** (seta para a direita) ou use o ícone `Ctrl-Enter` A tecla de atalho e os resultados são exibidos como JSON no painel direito.
    ![Resultados do GraphiQL](assets/graphiql-results.png)
 
 1. Clique em:
    * **Documentação** na parte superior direita da página para mostrar a documentação contextual para ajudá-lo a criar suas consultas que se adaptam aos seus próprios modelos.
    * **Histórico** na barra de ferramentas superior para mostrar consultas anteriores.
-   * **Salvar como** e **Salvar** para salvar suas consultas, depois disso você pode listá-las e recuperá-las do **Consultas Persistentes** painel e **Publicar**.
+   * **Salvar como** e **Salvar** para salvar suas consultas, após o que você pode listá-las e recuperá-las do **Consultas persistentes** painel e **Publish**.
       ![Documentação do GraphiQL](assets/graphiql-documentation.png)
 
 O GraphQL permite consultas estruturadas que podem direcionar não apenas conjuntos de dados específicos ou objetos de dados individuais, mas também fornecer elementos específicos dos objetos, resultados aninhados, oferecer suporte para variáveis de consulta e muito mais.
@@ -75,9 +75,9 @@ O GraphQL pode evitar solicitações de API iterativas, bem como a entrega exces
 
 Pronto! Agora você tem uma compreensão básica do gerenciamento de conteúdo headless no AEM. É claro que há muito mais recursos onde você pode se aprofundar para obter um entendimento abrangente dos recursos disponíveis.
 
-* **[Navegador de configuração](create-configuration.md)** - Para obter detalhes sobre o Navegador de configuração de AEM
+* **[Navegador de configuração](create-configuration.md)** - Para obter detalhes sobre o Navegador de configuração do AEM
 * **[Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)** - Para obter detalhes sobre a criação e o gerenciamento dos Fragmentos de conteúdo
-* **[GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md)** para obter mais detalhes sobre o uso do GraphiQL IDE
-* **[Consultas Persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md)** para obter mais detalhes de Consultas Persistentes
+* **[IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)** para obter mais detalhes sobre o uso do GraphiQL IDE
+* **[Consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md)** para obter mais detalhes sobre consultas persistentes
 * **[Suporte a fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/assets-api-content-fragments.md)** - Para obter detalhes sobre como acessar conteúdo do AEM diretamente pela API HTTP, por meio de operações CRUD (Criar, Ler, Atualizar, Excluir)
 * **[API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)** - Para obter detalhes sobre como fornecer Fragmentos de conteúdo de forma headless

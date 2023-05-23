@@ -110,7 +110,7 @@ Agora que você aprendeu as noções básicas, o próximo passo é começar a cr
 
 * [Conceitos de criação](/help/sites-authoring/author.md)
 
-* [Manuseio básico](/help/sites-authoring/basic-handling.md) - esta página se baseia principalmente no **Sites** , mas muitos/a maioria dos recursos também são relevantes para navegar e executar ações, **Modelos de fragmentos do conteúdo** nos termos do **Ativos** console.
+* [Manuseio básico](/help/sites-authoring/basic-handling.md) - esta página se baseia principalmente no **Sites** console, mas muitos/a maioria dos recursos também são relevantes para navegar e executar ações, **Modelos de fragmentos do conteúdo** no **Assets** console.
 
 * [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
 
@@ -132,4 +132,4 @@ Agora que você aprendeu as noções básicas, o próximo passo é começar a cr
 
 * Guias de introdução
 
-   * [Criação dos modelos de fragmento de conteúdo sem cabeçalho Guia de início rápido](/help/sites-developing/headless/getting-started/create-content-model.md)
+   * [Criação de modelos de fragmento de conteúdo - Guia de início rápido do Headless](/help/sites-developing/headless/getting-started/create-content-model.md)

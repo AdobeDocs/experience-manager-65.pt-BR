@@ -1,7 +1,7 @@
 ---
 title: Uso das propriedades de conteúdo para exportar conteúdo
 seo-title: Using Content Properties to Export Content
-description: A página a seguir mostra as Propriedades e os nós do aplicativo.
+description: A página a seguir mostra as Propriedades e os Nós do aplicativo.
 seo-description: The following page shows App Properties and Nodes.
 uuid: 73f1832f-e457-47d0-a0e1-80af90897d31
 contentOwner: User
@@ -21,15 +21,15 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-Os aplicativos são representados como *cq:Pages* em AEM.
+Os aplicativos são representados como *cq:Pages* no AEM.
 
-Eles compartilham as mesmas propriedades comuns encontradas em qualquer *cq:Page* além de outras mostradas abaixo que representam as propriedades de suporte da integração.
+Eles compartilham as mesmas propriedades comuns encontradas em qualquer *cq:Page* além de outros mostrados abaixo que representam propriedades de suporte à integração.
 
 ## Propriedades do aplicativo {#app-properties}
 
-A tabela a seguir mostra **Propriedades e nós do aplicativo**.
+A tabela a seguir mostra **Nós e propriedades do aplicativo**.
 
 <table>
  <tbody>
@@ -40,48 +40,48 @@ A tabela a seguir mostra **Propriedades e nós do aplicativo**.
   </tr>
   <tr>
    <td>dps-cloudConfig</td>
-   <td>String:Path</td>
-   <td><p>Caminho para um Cloud Service móvel sob demanda configurado. Usado para ações sob demanda do AEM Mobile para dispositivos móveis (invocação de API)</p> <p>Essa associação é configurada por meio do bloco Gerenciar conexão , quando um autor escolhe um Cloud Service Mobile On-Demand para associar o aplicativo.</p> </td>
+   <td>Sequência:Caminho</td>
+   <td><p>Caminho para um Cloud Service do Mobile On-Demand configurado. Usado para ações do AEM Mobile para o Mobile On-Demand (invocação da API)</p> <p>Essa associação é configurada por meio do bloco Gerenciar conexão quando um autor escolhe um Cloud Service do Mobile On-Demand ao qual associar o aplicativo.</p> </td>
   </tr>
   <tr>
    <td>dps-exportTemplate</td>
-   <td>String:Path</td>
-   <td><p>Caminho para as configurações de exportação do aplicativo. A configuração de exportação é uma pasta com 2 templates de configuração de exportação do ContentSync filho;</p> <p><i>dps-article</i>: Configuração de exportação do ContentSync para exportar conteúdo do artigo</p> <p><i>dps-HTMLResources</i>: Configuração de exportação do ContentSync para exportar recursos compartilhados aplicativo/artigo</p> </td>
+   <td>Sequência:Caminho</td>
+   <td><p>Caminho das configurações de exportação do aplicativo. A configuração de exportação é uma pasta com dois modelos de configuração de exportação filhos do ContentSync;</p> <p><i>dps-article</i>: configuração de exportação do ContentSync para exportar o conteúdo do artigo</p> <p><i>dps-HTMLResources</i>: configuração de exportação do ContentSync para exportar recursos compartilhados de aplicativo/artigo</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
-   <td>Sequência de caracteres</td>
-   <td><p>Id/URI do projeto Mobile On-Demand ao qual este Aplicativo está vinculado/vinculado.</p> <p>Essa associação é configurada por meio do bloco Gerenciar conexão , quando um autor escolhe o projeto a partir de uma lista de projetos disponíveis para o Cloud Service Mobile On-Demand associado.</p> </td>
+   <td>String</td>
+   <td><p>ID/URI do projeto do Mobile On-Demand ao qual este aplicativo está vinculado/ligado.</p> <p>Essa associação é configurada por meio do bloco Gerenciar conexão quando um autor escolhe o projeto em uma lista de projetos disponíveis para o Cloud Service Mobile On-Demand associado.</p> </td>
   </tr>
   <tr>
    <td>dps-projectTitle</td>
-   <td>Sequência de caracteres</td>
+   <td>String</td>
    <td>Título do aplicativo.</td>
   </tr>
   <tr>
    <td>dps-resourceType</td>
-   <td>Sequência de caracteres</td>
+   <td>String</td>
    <td>Tipo de conteúdo.</td>
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
    <td>Data</td>
-   <td>Data do último upload de recursos compartilhados do AEM para o AEM Mobile.</td>
+   <td>Data do último upload de recursos compartilhados do AEM para a AEM Mobile.</td>
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploadedBy</td>
-   <td>String:userid</td>
-   <td>ID do usuário que realizou o último upload da solicitação de recursos compartilhados do AEM para o AEM Mobile.</td>
+   <td>Cadeia de caracteres:ID do usuário</td>
+   <td>ID do usuário que realizou o último upload de solicitação de recursos compartilhados do AEM para o AEM Mobile.</td>
   </tr>
   <tr>
-   <td>pge-dashboard-config</td>
-   <td>String:Path</td>
+   <td>page-dashboard-config</td>
+   <td>Sequência:Caminho</td>
    <td>Caminho para uma configuração de painel. O caminho pode ser redirecionado para uma configuração de painel personalizada, conforme necessário.</td>
   </tr>
   <tr>
    <td>sling:resourceType</td>
-   <td>String:Path</td>
-   <td><p>Caminho para um cq:Componente que é ou estende <i>mobileapps/core/components/instance.</i></p> <p>Isso fornece a presença e renderização no Catálogo de aplicativos.</p> </td>
+   <td>Sequência:Caminho</td>
+   <td><p>Caminho para um cq:Component que é ou estende <i>mobileapps/core/components/instance.</i></p> <p>Isso fornece a presença e a renderização no Catálogo de aplicativos.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -89,5 +89,5 @@ A tabela a seguir mostra **Propriedades e nós do aplicativo**.
 Você pode usar ***Propriedades de conteúdo*** para criar conteúdo. Consulte os seguintes recursos para criar e exportar artigos e recursos compartilhados:
 
 * [Propriedades de conteúdo](/help/mobile/content-properties.md)
-* [Criação da configuração de exportação de artigo](/help/mobile/creating-article-export-configuration.md)
-* [Criando Configuração de Exportação de Recursos Compartilhados](/help/mobile/creating-shared-resources-export-configuration.md)
+* [Criação da configuração de exportação do artigo](/help/mobile/creating-article-export-configuration.md)
+* [Criação da Configuração de Exportação de Recursos Compartilhados](/help/mobile/creating-shared-resources-export-configuration.md)

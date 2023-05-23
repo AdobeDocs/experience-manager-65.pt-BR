@@ -1,7 +1,7 @@
 ---
-title: Configuração do Dispatcher para Comunidades
+title: Configuração do Dispatcher para comunidades
 seo-title: Configuring Dispatcher for Communities
-description: Configurar o dispatcher para AEM Communities
+description: Configurar o dispatcher para o AEM Communities
 seo-description: Configure the dispatcher for AEM Communities
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
@@ -17,29 +17,29 @@ ht-degree: 11%
 
 ---
 
-# Configuração do Dispatcher para Comunidades {#configuring-dispatcher-for-communities}
+# Configuração do Dispatcher para comunidades {#configuring-dispatcher-for-communities}
 
 ## AEM Communities {#aem-communities}
 
 Para o AEM Communities, é necessário configurar o Dispatcher para garantir o funcionamento adequado do [sites da comunidade](overview.md#community-sites). Configurações adicionais são necessárias ao incluir recursos como logon social.
 
-Para saber o que é necessário para sua implantação específica e design de site
+Para saber o que é necessário para sua implantação específica e design do site
 
 * Entre em contato com o [Atendimento ao cliente](https://helpx.adobe.com/br/marketing-cloud/contact-support.html)
 
-Veja também o [Documentação do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+Consulte também a seção [Documentação do Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
-## Armazenamento em cache do Dispatcher {#dispatcher-caching}
+## Cache do Dispatcher {#dispatcher-caching}
 
 ### Visão geral {#overview}
 
-O armazenamento em cache do Dispatcher para AEM Communities é a capacidade do Dispatcher de fornecer versões em cache completo das páginas de um site da comunidade.
+O armazenamento em cache do Dispatcher para AEM Communities é a capacidade do Dispatcher de fornecer versões totalmente armazenadas em cache das páginas de um site da comunidade.
 
-Atualmente, é compatível apenas com visitantes anônimos do site, como usuários que navegam no site da comunidade ou chegam em uma página da comunidade como resultado de uma pesquisa, bem como com mecanismos de pesquisa que indexam páginas. O benefício é que usuários anônimos e mecanismos de pesquisa experimentarão um desempenho aprimorado.
+Atualmente, só é compatível com visitantes anônimos do site, como usuários que navegam pelo site da comunidade ou acessam uma página da comunidade como resultado de uma pesquisa, bem como com mecanismos de pesquisa que indexam páginas. O benefício é que usuários anônimos e mecanismos de pesquisa terão um desempenho aprimorado.
 
-Para membros conectados, o dispatcher ignora o cache, retransmitindo as solicitações diretamente ao editor, de modo que todas as páginas sejam geradas e entregues dinamicamente.
+Para membros conectados, o dispatcher ignora o cache, retransmitindo solicitações diretamente para o publicador, de modo que todas as páginas sejam geradas e entregues dinamicamente.
 
-Quando configurada para oferecer suporte ao armazenamento em cache do dispatcher, uma expiração de &quot;idade máxima&quot; baseada em TTL é adicionada ao cabeçalho para garantir que as páginas em cache do dispatcher sejam atuais.
+Quando configurado para ser compatível com o armazenamento em cache do dispatcher, uma expiração de &quot;idade máxima&quot; baseada em TTL é adicionada ao cabeçalho para garantir que as páginas em cache do dispatcher estejam atuais.
 
 ### Requisitos {#requirements}
 
@@ -47,11 +47,11 @@ Quando configurada para oferecer suporte ao armazenamento em cache do dispatcher
 * [Pacote ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Versão 3.3.2 ou posterior
-   * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` Configuração do OSGi
+   * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` Configuração OSGi
 
 ### Configuração {#configuration}
 
-A configuração do OSGi **ACS AEM Commons - Cabeçalho de Controle de Cache do Dispatcher - Idade Máxima** define a expiração de páginas em cache que aparecem em um caminho especificado.
+A configuração do OSGi **ACS AEM Commons - Cabeçalho do controle de cache do Dispatcher - Idade máxima** define a expiração das páginas em cache que aparecem em um caminho especificado.
 
 * No [Console da Web](../../help/sites-deploying/configuring-osgi.md)
 
@@ -62,23 +62,23 @@ A configuração do OSGi **ACS AEM Commons - Cabeçalho de Controle de Cache do 
 
    ![dispatcher](assets/dispatcher.png)
 
-* **Padrões de filtro**
+* **Padrões de Filtro**
 
-   *(obrigatório)* Um ou mais caminhos para páginas da comunidade. Por exemplo, `/content/sites/engage/(.*)`.
+   *(obrigatório)* Um ou mais caminhos para as páginas da comunidade. Por exemplo, `/content/sites/engage/(.*)`.
 
 * **Idade máxima do controle de cache**
 
-   *(obrigatório)* A idade máxima (em segundos) para adicionar ao cabeçalho Controle de Cache. O valor deve ser maior que zero (0).
+   *(obrigatório)* O tempo máximo (em segundos) para adicionar ao cabeçalho de Controle de Cache. O valor deve ser maior que zero (0).
 
 ## Filtros do Dispatcher {#dispatcher-filters}
 
-A seção /filter do `dispatcher.any` o arquivo está documentado em [Configuração do acesso ao conteúdo - /filtro](https://helpx.adobe.com/br/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
+A seção /filter do `dispatcher.any` o arquivo está documentado em [Configuração do acesso ao conteúdo - /filter](https://helpx.adobe.com/br/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
-Esta seção descreve entradas que são provavelmente necessárias para o bom funcionamento dos recursos das Comunidades.
+Esta seção descreve entradas que provavelmente são necessárias para o funcionamento adequado dos recursos das Comunidades.
 
-Os nomes de propriedades do filtro seguem a convenção de uso de um número de quatro dígitos para indicar a ordem na qual aplicar padrões de filtro. Quando vários padrões de filtros se aplicam a uma solicitação, o último padrão de filtro que se aplica é efetivo. Assim, o primeiro padrão de filtro é frequentemente usado para negar tudo, de modo que os padrões a seguir servem para restaurar o acesso de forma controlada.
+Os nomes de propriedades de filtro seguem a convenção de usar um número de quatro dígitos para indicar a ordem na qual aplicar padrões de filtro. Quando vários padrões de filtros se aplicam a uma solicitação, o último padrão de filtro que se aplica é efetivo. Assim, o primeiro padrão de filtro é frequentemente usado para negar tudo, de modo que os padrões a seguir servem para restaurar o acesso de maneira controlada.
 
-As amostras a seguir usam nomes de propriedades que provavelmente precisarão ser modificadas para se encaixarem em qualquer arquivo dispatcher.any específico.
+As amostras a seguir usam nomes de propriedades que provavelmente precisarão ser modificados para se ajustarem a qualquer arquivo dispatcher.any específico.
 
 Consulte também:
 
@@ -86,14 +86,14 @@ Consulte também:
 
 >[!NOTE]
 >
->**Exemplos de nome da propriedade**
->Todos os nomes de propriedades mostrados, como **/0050** e **0170**, deve ser ajustado para se ajustar a um arquivo de configuração dispatcher.any existente.
+>**Exemplos de nome de propriedade**
+>Todos os nomes de propriedades exibidos, como **/0050** e **/0170**, deve ser ajustado para se ajustar a um arquivo de configuração dispatcher.any existente.
 
 >[!CAUTION]
 >
->Consulte a [Lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) para considerações adicionais ao restringir o acesso usando o Dispatcher. Além disso, leia a [Lista de verificação de segurança AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) para obter detalhes de segurança adicionais relacionados à instalação do AEM.
+>Consulte a [Lista de verificação de segurança do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) para considerações adicionais ao restringir o acesso usando o Dispatcher. Além disso, leia o [Lista de verificação de segurança do AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) para obter detalhes de segurança adicionais relacionados à instalação do AEM.
 
-As entradas a seguir devem ser adicionadas ao final da seção /filter , especialmente depois de todas as entradas de negação.
+As entradas a seguir devem ser adicionadas ao final da seção /filter, especialmente depois de todas as entradas de negação.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -225,7 +225,7 @@ As entradas a seguir devem ser adicionadas ao final da seção /filter , especia
 
 ## Regras do Dispatcher {#dispatcher-rules}
 
-A seção de regras de `dispatcher.any` define quais respostas devem ser armazenadas em cache com base no URL solicitado. Para Comunidades, a seção Regras é usada para definir o que nunca deve ser armazenado em cache.
+A seção de regras de `dispatcher.any` define quais respostas devem ser armazenadas em cache com base no URL solicitado. Para Comunidades, a seção de regras é usada para definir o que nunca deve ser armazenado em cache.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -273,13 +273,13 @@ A seção de regras de `dispatcher.any` define quais respostas devem ser armazen
 
 ## Resolução de problemas {#troubleshooting}
 
-Uma grande fonte de problemas é inserir regras de filtro sem prestar atenção ao efeito nas regras anteriores, especialmente ao adicionar uma regra para negar acesso.
+Uma importante fonte de problemas é inserir regras de filtro sem prestar atenção ao efeito nas regras anteriores, especialmente ao adicionar uma regra para negar acesso.
 
-O primeiro padrão de filtro é frequentemente usado para negar tudo, de modo que os seguintes filtros restaurem o acesso de maneira controlada. Quando vários filtros se aplicam a uma solicitação, o último filtro que se aplica é aquele em vigor.
+O primeiro padrão de filtro geralmente é usado para negar tudo para que os filtros a seguir restaurem o acesso de maneira controlada. Quando vários filtros se aplicam a uma solicitação, o último filtro que se aplica é o que está em vigor.
 
 ## Exemplo de dispatcher.any {#sample-dispatcher-any}
 
-Veja a seguir uma amostra `dispatcher.any` arquivo que inclui Comunidades /filtros e /regras.
+Veja a seguir uma amostra `dispatcher.any` arquivo que inclui as Comunidades /filtros e /regras.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->

@@ -1,7 +1,7 @@
 ---
 title: Configurar a sincronização da Live Copy
 seo-title: Configuring Live Copy Synchronization
-description: Saiba mais sobre como configurar a sincronização da Live Copy.
+description: Saiba como configurar a sincronização da Live Copy.
 seo-description: Learn about configuring Live Copy Synchronization.
 uuid: a5db0bee-a761-4cff-81dc-31b374525f47
 contentOwner: msm-service
@@ -15,30 +15,30 @@ exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
 source-git-commit: 96aa75dec7433aa3961944fa57a80c4719316ba5
 workflow-type: tm+mt
 source-wordcount: '2696'
-ht-degree: 86%
+ht-degree: 28%
 
 ---
 
 # Configurar a sincronização da Live Copy{#configuring-live-copy-synchronization}
 
-Execute as tarefas a seguir para controlar como e quando as cópias dinâmicas são sincronizadas com o conteúdo de origem.
+Execute as seguintes tarefas para controlar como e quando as live copies são sincronizadas com seu conteúdo de origem.
 
-* Decida se as configurações de implementação existentes atendem aos seus requisitos ou se você precisa criar uma ou mais.
-* Especifique as configurações de implementação a serem usadas para as cópias dinâmicas.
+* Decida se as configurações de implantação existentes atendem aos seus requisitos ou se é necessário criar um ou mais.
+* Especifique as configurações de implantação a serem usadas para suas live copies.
 
-## Configurações instaladas e personalizadas de implementação {#installed-and-custom-rollout-configurations}
+## Configurações de implantação instaladas e personalizadas {#installed-and-custom-rollout-configurations}
 
-Esta seção fornece informações sobre as configurações de implementação instaladas e as ações de sincronização que elas usam, além de como criar configurações personalizadas, se necessário.
+Esta seção fornece informações sobre as configurações de implantação instaladas e as ações de sincronização que elas usam, e como criar configurações personalizadas, se necessário.
 
 >[!CAUTION]
 >
->A atualização ou alteração de uma configuração de implementação pronta para uso (instalada) é **not** recomendado. Se houver um requisito para uma ação ativa personalizada, ela deverá ser adicionada em uma configuração de implantação personalizada.
+>Atualizar ou alterar uma configuração de implantação pronta para uso (instalada) é **não** recomendado. Se houver um requisito para uma ação ativa personalizada, ela deverá ser adicionada em uma configuração de implantação personalizada.
 
-### Acionadores de implementação {#rollout-triggers}
+### Acionadores de implantação {#rollout-triggers}
 
-Cada configuração de implementação usa um acionador de implementação que faz com que a implementação ocorra. As configurações de implementação podem usar um dos seguintes acionadores:
+Cada configuração de implantação usa um acionador de implantação que ocasiona a implantação. As configurações de implantação podem usar um dos seguintes acionadores:
 
-* **Na distribuição**: o comando **Implementação** é usado na página de blueprint, ou o comando **Sincronizar** é usado na página de Live Copy.
+* **Na implantação**: A variável **Implantação** for usado na página de blueprint ou na guia **Sincronizar** é usado na página da live copy.
 
 * **Em modificação**: a página de origem é modificada.
 
@@ -50,9 +50,9 @@ Cada configuração de implementação usa um acionador de implementação que f
 >
 >O uso do acionador Ao modificar pode afetar o desempenho. Consulte [Práticas recomendadas do MSM](/help/sites-administering/msm-best-practices.md#onmodify) para obter mais informações.
 
-### Configurações de implementação instaladas {#installed-rollout-configurations}
+### Configurações de implantação instaladas {#installed-rollout-configurations}
 
-A tabela a seguir lista as configurações de implementação instaladas com o AEM. A tabela inclui as ações de acionador e de sincronização de cada configuração de implementação. Se as ações de configuração de implementação instaladas não atenderem aos requisitos, você poderá [criar uma nova configuração de implementação](#creating-a-rollout-configuration).
+A tabela a seguir lista as configurações de implantação instaladas com AEM. A tabela inclui as ações de acionador e de sincronização de cada configuração de implementação. Se as ações de configuração de implantação instaladas não atenderem aos seus requisitos, você poderá [criar uma nova configuração de implantação](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -60,7 +60,7 @@ A tabela a seguir lista as configurações de implementação instaladas com o A
    <th>Nome</th>
    <th>Descrição</th>
    <th>Acionar</th>
-   <th>Ações de sincronização<br /><br />  consulte também <a href="#installed-synchronization-actions">Ações de sincronização instaladas</a></th>
+   <th>Ações de sincronização<br /> <br /> consulte também <a href="#installed-synchronization-actions">Ações de Sincronização Instaladas</a></th>
   </tr>
   <tr>
    <td>Configuração de implantação padrão</td>
@@ -70,25 +70,25 @@ A tabela a seguir lista as configurações de implementação instaladas com o A
   </tr>
   <tr>
    <td>Acionar com a ativação do blueprint</td>
-   <td>Publica a Live Copy quando a origem é publicada.</td>
+   <td>Publica a live copy quando a origem é publicada.</td>
    <td>No modo de ativação</td>
    <td>targetActivate</td>
   </tr>
   <tr>
    <td>Desligar com a desativação do blueprint</td>
-   <td>Desativa a Live Copy quando a origem é desativada.</td>
+   <td>Desativa a live copy quando a origem é desativada.</td>
    <td>Ao desativar</td>
    <td>targetDeactivate<br /> </td>
   </tr>
   <tr>
    <td>Forçar modificação</td>
-   <td><p>Força o conteúdo à Live Copy quando a origem é modificada.</p> <p>Use esta configuração de implementação com moderação, pois usa o acionador Em modificação.</p> </td>
+   <td><p>Envia o conteúdo para a live copy quando a origem é modificada.</p> <p>Use essa configuração de implantação com moderação, pois ela usa o acionador Ao modificar.</p> </td>
    <td>Em modificação</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> </td>
   </tr>
   <tr>
    <td>Forçar modificação (superficial)</td>
-   <td><p>Força o conteúdo à Live Copy quando a página do blueprint é modificada, sem atualizar referências (por exemplo, para cópias superficiais).</p> <p>Use esta configuração de implementação com moderação, pois usa o acionador Em modificação.</p> </td>
+   <td><p>Envia o conteúdo para a live copy quando a página do blueprint é modificada, sem atualizar referências (por exemplo, para cópias superficiais).</p> <p>Use essa configuração de implantação com moderação, pois ela usa o acionador Ao modificar.</p> </td>
    <td>Em modificação</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> orderChildren</td>
   </tr>
@@ -99,25 +99,25 @@ A tabela a seguir lista as configurações de implementação instaladas com o A
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> markLiveRelationship</td>
   </tr>
   <tr>
-   <td>Configuração de implementação do conteúdo da página de catálogo</td>
+   <td>Configuração de implantação do conteúdo da página de catálogo</td>
    <td>Aplica modelos de página para um blueprint do catálogo.</td>
    <td>Na implantação</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productCreateUpdate<br /> orderChildren</td>
   </tr>
   <tr>
    <td>Configuração de implantação da atualização da página de catálogo</td>
-   <td>Aplica propriedades de destino a partir de um blueprint do catálogo. Deve ser executado após a Configuração de implementação do conteúdo da página de catálogo.</td>
+   <td>Aplica propriedades de direcionamento de um blueprint do catálogo. Deve ser executado após a Configuração de implantação do conteúdo da página de catálogo.</td>
    <td>Na implantação</td>
    <td>catalogRolloutHooks</td>
   </tr>
   <tr>
    <td>Configuração de implantação da DPS Publications</td>
-   <td>A Configuração de implementação de publicação DPS permite iniciar o processo de implementação no acionador de implementação, ao mesmo tempo em que exclui as propriedades de associação FolioProducer na implementação inicial</td>
+   <td>Configuração de implantação da publicação do DPS que permite iniciar o processo de implantação com o acionador de implantação e excluir as propriedades de ligação do FolioProducer na implantação inicial</td>
    <td>Na implantação</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> dpsMetadataFilter</td>
   </tr>
   <tr>
-   <td>Configuração de implantação do catálogo herdado (5.6.0).</td>
+   <td>Configuração de implantação do catálogo herdado (5.6.0)</td>
    <td>Obsoleto.  Use a API Catalog Generator em vez do MSM para implementações de catálogos.</td>
    <td>Na implantação</td>
    <td>editProperties</td>
@@ -125,9 +125,9 @@ A tabela a seguir lista as configurações de implementação instaladas com o A
  </tbody>
 </table>
 
-### Ações de sincronização instaladas {#installed-synchronization-actions}
+### Ações de Sincronização Instaladas {#installed-synchronization-actions}
 
-A tabela a seguir lista as ações de sincronização instaladas com o AEM. Se as ações instaladas não atenderem aos requisitos, você poderá [Criar uma nova ação de sincronização](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
+A tabela a seguir lista as ações de sincronização instaladas com o AEM. Se as ações instaladas não atenderem aos seus requisitos, você poderá [Criar uma Nova Ação de Sincronização](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
 
 <table>
  <tbody>
@@ -138,147 +138,147 @@ A tabela a seguir lista as ações de sincronização instaladas com o AEM. Se a
   </tr>
   <tr>
    <td>contentCopy</td>
-   <td>Quando os nós da origem não existem na Live Copy, copia os nós para a Live Copy. <a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de cópia de conteúdo MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. <br /> </td>
+   <td>Quando os nós da origem não existem na live copy, o copia os nós para a live copy. <a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de cópia de conteúdo MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. <br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td>contentDelete</td>
-   <td><p>Exclui nós da Live Copy que não existem na origem. <a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de exclusão de conteúdo MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> </td>
+   <td><p>Exclui nós da live copy que não existem na origem. <a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de exclusão de conteúdo MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> </td>
    <td> </td>
   </tr>
   <tr>
    <td>contentUpdate</td>
-   <td>Atualiza o conteúdo da Live Copy com as alterações da origem. <a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de atualização de conteúdo MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. <br /> </td>
+   <td>Atualiza o conteúdo da live copy com as alterações da origem. <a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de atualização de conteúdo MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. <br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td>editProperties</td>
-   <td><p>Edita as propriedades da Live Copy. A propriedade editMap determina quais propriedades são editadas e seu valor. O valor da propriedade editMap deve usar o seguinte formato:</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>O <code>current_value</code> e <code>new_value</code> itens são expressões regulares. <br /> </p> <p>Por exemplo, considere o seguinte valor para a editMap:</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Este valor edita as propriedades dos nós de Live Copy da seguinte maneira:</p>
+   <td><p>Edita propriedades da live copy. A propriedade editMap determina quais propriedades são editadas e seus valores. O valor da propriedade editMap deve usar o seguinte formato:</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[novo_valor]</p> <p>A variável <code>current_value</code> e <code>new_value</code> itens são expressões regulares. <br /> </p> <p>Por exemplo, considere o seguinte valor para editMap:</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Esse valor edita as propriedades dos nós de live copy da seguinte maneira:</p>
     <ul>
-     <li>O <code>sling:resourceType</code> propriedades definidas como <code>contentpage</code> ou <code>homepage</code> estão definidas como <code>mobilecontentpage.</code></li>
+     <li>A variável <code>sling:resourceType</code> propriedades que estão definidas como <code>contentpage</code> ou para <code>homepage</code> estão definidos como <code>mobilecontentpage.</code></li>
      <li>As propriedades <code>cq:template</code> definidas como <code>contentpage</code> são definidas como <code>mobilecontentpage.</code></li>
     </ul> </td>
-   <td><p> </p> <p>editMap: (cadeia de caracteres) identifica a propriedade, o valor atual e o novo valor. Consulte a Descrição para obter informações.<br /> </p> </td>
+   <td><p> </p> <p>editMap: (String) identifica a propriedade, o valor atual e o novo valor. Consulte a Descrição para obter informações.<br /> </p> </td>
   </tr>
   <tr>
-   <td>notify</td>
-   <td>Envia um evento de página que a página foi distribuída. Para ser notificado, é necessário primeiro assinar eventos de distribuição.</td>
+   <td>notificar</td>
+   <td>Envia um evento de página informando que a página foi implantada. Para ser notificado, é necessário primeiro assinar eventos de distribuição.</td>
    <td> </td>
   </tr>
   <tr>
    <td>orderChildren</td>
-   <td>Na Live Copy, ordena os filhos (nós), com base na ordem no blueprint<br /> </td>
+   <td>Na live copy, ela ordena os filhos (nós), com base na ordem no blueprint<br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>Na Live Copy, essa ação de sincronização atualiza referências, como links.<br /> Ela procura caminhos nas páginas de Live Copy que apontam para um recurso dentro do blueprint. Quando encontrado, ela atualiza o caminho para apontar para o recurso relacionado dentro da Live Copy (em vez do blueprint). As referências que têm destinos fora do blueprint não são alteradas.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de atualização de referências MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> </td>
+   <td><p>Na live copy, essa ação de sincronização atualiza referências como links.<br /> Ela procura caminhos nas páginas de live copy que apontam para um recurso dentro do blueprint. Quando encontrado, ele atualiza o caminho para apontar para o recurso relacionado dentro da live copy (em vez do blueprint). As referências que têm destinos fora do blueprint não são alteradas.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de atualização de referências MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> </td>
    <td> </td>
   </tr>
   <tr>
    <td>targetVersion</td>
-   <td><p>Cria uma versão da Live Copy.</p> <p>Essa ação deve ser a única ação de sincronização incluída em uma configuração de implementação.</p> </td>
+   <td><p>Cria uma versão da live copy.</p> <p>Essa ação deve ser a única ação de sincronização incluída em uma configuração de implementação.</p> </td>
    <td> </td>
   </tr>
   <tr>
    <td>targetActivate</td>
-   <td><p>Ativa a Live Copy.</p> <p>Essa ação deve ser a única ação de sincronização incluída em uma configuração de implementação.</p> </td>
+   <td><p>Ativa a live copy.</p> <p>Essa ação deve ser a única ação de sincronização incluída em uma configuração de implementação.</p> </td>
    <td> </td>
   </tr>
   <tr>
    <td>targetDeactivate</td>
-   <td><p>Desativa a Live Copy.</p> <p>Essa ação deve ser a única ação de sincronização incluída em uma configuração de implementação.</p> </td>
+   <td><p>Desativa a live copy.</p> <p>Essa ação deve ser a única ação de sincronização incluída em uma configuração de implementação.</p> </td>
    <td> </td>
   </tr>
   <tr>
    <td>fluxo de trabalho</td>
-   <td><p>Inicia o fluxo de trabalho definido pela propriedade de destino (somente para páginas) e toma a Live Copy como carga.</p> <p>O caminho de destino é o caminho do nó do modelo.</p> </td>
-   <td>target: (cadeia de caracteres) o caminho para o modelo de fluxo de trabalho.<br /> </td>
+   <td><p>Inicia o fluxo de trabalho definido pela propriedade de direcionamento (somente para páginas) e toma a live copy como carga.</p> <p>O caminho de destino é o caminho do nó do modelo.</p> </td>
+   <td>target: (String) O caminho para o modelo de fluxo de trabalho.<br /> </td>
   </tr>
   <tr>
-   <td>mandatory</td>
-   <td><p>Define a permissão de várias ACLs na página de Live Copy como somente leitura para um grupo de usuários específico. As ACLs a seguir estão configuradas:</p>
+   <td>obrigatório</td>
+   <td><p>Define a permissão de várias ACLs na página da live copy como somente leitura para um grupo de usuários específico. As seguintes ACLs são configuradas:</p>
     <ul>
      <li>ActionSet.ACTION_NAME_REMOVE</li>
      <li>ActionSet.ACTION_NAME_SET_PROPERTY</li>
      <li>ActionSet.ACTION_NAME_ACL_MODIFY</li>
     </ul> <p>Use esta ação somente para páginas.</p> </td>
-   <td>target: (cadeia de caracteres) a ID do grupo para o qual você está definindo permissões. <br /> </td>
+   <td>target: (String) A ID do grupo para o qual você está definindo permissões. <br /> </td>
   </tr>
   <tr>
    <td>mandatoryContent</td>
-   <td><p>Define a permissão de várias ACLs na página de Live Copy como somente leitura para um grupo de usuários específico. As ACLs a seguir estão configuradas:</p>
+   <td><p>Define a permissão de várias ACLs na página da live copy como somente leitura para um grupo de usuários específico. As seguintes ACLs são configuradas:</p>
     <ul>
      <li>ActionSet.ACTION_NAME_SET_PROPERTY</li>
      <li>ActionSet.ACTION_NAME_ACL_MODIFY</li>
     </ul> <p>Use esta ação somente para páginas.</p> </td>
-   <td>target: (cadeia de caracteres) a ID do grupo para o qual você está definindo permissões. </td>
+   <td>target: (String) A ID do grupo para o qual você está definindo permissões. </td>
   </tr>
   <tr>
    <td>mandatoryStructure</td>
-   <td>Define a permissão da ACL ActionSet.ACTION_NAME_REMOVE na página de Live Copy como somente leitura para um grupo de usuários específico. Use esta ação somente para páginas.</td>
-   <td>target: (cadeia de caracteres) a ID do grupo para o qual você está definindo permissões. </td>
+   <td>Define a permissão da ACL ActionSet.ACTION_NAME_REMOVE na página da live copy como somente leitura para um grupo de usuários específico. Use esta ação somente para páginas.</td>
+   <td>target: (String) A ID do grupo para o qual você está definindo permissões. </td>
   </tr>
   <tr>
    <td>VersionCopyAction</td>
-   <td>Se a página de blueprint/origem tiver sido publicada pelo menos uma vez, cria uma página de Live Copy usando a versão publicada. Observação: essa ação só está disponível para criar uma página de Live Copy com base em uma página de origem publicada, não para atualizar uma página de Live Copy existente. </td>
+   <td>Se a página de blueprint/origem tiver sido publicada pelo menos uma vez, o cria uma página de live copy usando a versão publicada. Observação: essa ação só está disponível para criar uma página de live copy com base em uma página de origem publicada, não para atualizar uma página de live copy existente. </td>
    <td> </td>
   </tr>
   <tr>
-   <td>PageMoveAction</td>
-   <td><p>A PageMoveAction se aplica quando uma página foi movida no blueprint.</p> <p>A ação copia em vez de mover a página LiveCopy (relacionada) do local antes de mover para o local depois.</p> <p>A PageMoveAction não altera a página LiveCopy no local antes da movimentação. Portanto, para RolloutConfigurations consecutivas ele tem o status de um LiveRelationhip sem Blueprint.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de movimentação de página MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> <p>Essa ação deve ser a única ação de sincronização incluída em uma configuração de implementação.</p> </td>
+   <td>AçãoDeMovimentaçãoDePágina</td>
+   <td><p>A PageMoveAction se aplica quando uma página foi movida no blueprint.</p> <p>A ação copia, em vez de mover, a página da Live Copy (relacionada) do local anterior à movimentação para o local posterior.</p> <p>PageMoveAction não altera a página da Live Copy no local antes de mover. Portanto, para configurações de implantação consecutivas, ela tem o status de um LiveRelationship sem blueprint.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure o serviço de Ação de movimentação de página MSM CQ</a> para especificar os tipos de nó, itens de parágrafo e propriedades de página a serem excluídos. </p> <p>Essa ação deve ser a única ação de sincronização incluída em uma configuração de implementação.</p> </td>
    <td><p>prop_referenceUpdate: (booleano) defina como verdadeiro para atualizar referências. O padrão é verdadeiro.</p> <p> </p> </td>
   </tr>
   <tr>
    <td>productCreateUpdate</td>
-   <td>Cria ou atualiza recursos do Produto em um catálogo. Essa ação deve ser usada em uma das seguintes situações:
+   <td>Cria ou atualiza recursos de Produto em um catálogo. Esta ação deve ser usada em uma das seguintes situações:
     <ul>
-     <li>Ao gerar ou implantar um catálogo (ou seção de catálogo)</li>
-     <li>Um usuário restaura a herança de sincronização de um componente de produto.</li>
+     <li>Geração ou implantação de um catálogo (ou seção de catálogo)</li>
+     <li>Um usuário restaura a herança da sincronização de um componente de produto.</li>
     </ul> </td>
    <td> </td>
   </tr>
   <tr>
    <td>markLiveRelationship</td>
-   <td>Indica se existe uma relação dinâmica para conteúdo criado na inicialização.</td>
+   <td>Indica que existe um relacionamento dinâmico para conteúdo criado na inicialização.</td>
    <td> </td>
   </tr>
   <tr>
    <td>catalogRolloutHooks</td>
-   <td>Executa ganchos de implementação específicos da geração de catálogo. Chama os métodos executePageRolloutHooks e executeProductRolloutHooks do CatalogGenerator.<br /> Consulte com.adobe.cq.commerce.pim.api.CatalogGenerator in the AEM Javadocs.</td>
+   <td>Executa ganchos de implantação específicos de geração de catálogo. Chama os métodos executePageRolloutHooks e executeProductRolloutHooks do do CatalogGenerator.<br /> Consulte com.adobe.cq.commerce.pim.api.CatalogGenerator nos Javadocs AEM.</td>
    <td> </td>
   </tr>
   <tr>
    <td>productUpdate</td>
-   <td>Atualiza páginas do produto em uma Live Copy de um catálogo de produtos</td>
+   <td>Atualiza páginas de produto em uma live copy de um catálogo de produtos</td>
    <td> </td>
   </tr>
  </tbody>
 </table>
 
-### Criar uma configuração de implementação {#creating-a-rollout-configuration}
+### Criação de uma configuração de implantação {#creating-a-rollout-configuration}
 
-Você pode [criar uma configuração de implementação](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) quando as configurações de implementação instaladas não atenderem aos requisitos do aplicativo:
+Você pode [criar uma configuração de implantação](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) quando as configurações de implantação instaladas não atenderem aos requisitos do aplicativo:
 
-* [Criar a configuração de implementação](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
-* [Adicionar ações de sincronização à configuração de implementação](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
+* [Criar a configuração de implantação](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
+* [Adicionar ações de sincronização à configuração de implantação](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
 
-A nova configuração de implementação estará disponível para você quando definir configurações de implementação em um blueprint ou página de Live Copy.
+A nova configuração de implantação está então disponível ao definir configurações de implantação em uma página de blueprint ou Live Copy.
 
 ### Excluir propriedades e tipos de nó da sincronização {#excluding-properties-and-node-types-from-synchronization}
 
-Você pode configurar vários serviços OSGi que suportam ações de sincronização correspondentes para que eles não afetem tipos de nó e propriedades específicos. Por exemplo, muitas propriedades e subnós relacionados ao funcionamento interno da AEM não devem ser incluídos em uma live copy. Somente o conteúdo relevante para o usuário da página deve ser copiado.
+Você pode configurar vários serviços OSGi que suportam ações de sincronização correspondentes para que eles não afetem tipos de nó e propriedades específicos. Por exemplo, muitas propriedades e nós secundários relacionados ao funcionamento interno do AEM não devem ser incluídos em uma live copy. Somente o conteúdo relevante para o usuário da página deve ser copiado.
 
-Ao trabalhar com AEM, existem vários métodos de gestão das definições de configuração para esses serviços; see [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
+Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
-A tabela a seguir lista as ações de sincronização para as quais você pode especificar os nós a serem excluídos. A tabela fornece os nomes dos serviços a serem configurados usando o Console na Web e o PID para configurar o usando um nó de repositório.
+A tabela a seguir lista as ações de sincronização para as quais você pode especificar os nós a serem excluídos. A tabela fornece os nomes dos serviços a serem configurados usando o Console da Web e o PID para configurar usando um nó de repositório.
 
 | Ação de sincronização | Nome do serviço no Console da web | PID do serviço |
 |---|---|---|
 | contentCopy | Ação de cópia de conteúdo MSM CQ | com.day.cq.wcm.msm.impl.actions.ContentCopyActionFactory |
 | contentDelete | Ação de exclusão de conteúdo MSM CQ | com.day.cq.wcm.msm.impl.actions.ContentDeleteActionFactory |
 | contentUpdate | Ação de atualização de conteúdo do MSM CQ | com.day.cq.wcm.msm.impl.actions.ContentUpdateActionFactory |
-| PageMoveAction | Ação de movimentação de página MSM CQ | com.day.cq.wcm.msm.impl.actions.PageMoveActionFactory |
+| AçãoDeMovimentaçãoDePágina | Ação de movimentação de página MSM CQ | com.day.cq.wcm.msm.impl.actions.PageMoveActionFactory |
 | referencesUpdate | Ação de atualização de referências MSM CQ | com.day.cq.wcm.msm.impl.actions.ReferencesUpdateActionFactory |
 
 A tabela a seguir descreve as propriedades que você pode configurar:
@@ -290,7 +290,7 @@ A tabela a seguir descreve as propriedades que você pode configurar:
    <th>Descrição</th>
   </tr>
   <tr>
-   <td><p>Tipos de nó excluídos</p> <p>cq.wcm.msm.action.excludednodetypes</p> </td>
+   <td><p>Nodetypes Excluídos</p> <p>cq.wcm.msm.action.excludednodetypes</p> </td>
    <td>Uma expressão regular que corresponde aos nomes dos tipos de nó que serão excluídos da ação de sincronização.</td>
   </tr>
   <tr>
@@ -303,24 +303,24 @@ A tabela a seguir descreve as propriedades que você pode configurar:
   </tr>
   <tr>
    <td><p>Tipos de nó Mixin ignorados</p> <p>cq.wcm.msm.action.ignoredMixin</p> </td>
-   <td>Disponível somente para a Ação de atualização de conteúdo do MSM CQ. Uma expressão comum que corresponde aos nomes dos tipos de nó mixin a serem excluídos da ação de sincronização.</td>
+   <td>Disponível somente para Ação de atualização de conteúdo MSM CQ. Uma expressão regular que corresponde aos nomes dos tipos de nó mixin que serão excluídos da ação de sincronização.</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->Na interface do usuário clássica, o ícone de bloqueio que aparece na caixa de diálogo Propriedades da página de páginas LiveCopy não reflete a configuração da propriedade Propriedades de página excluídas. O ícone de bloqueio é exibido até mesmo para propriedades que são excluídas da ação de sincronização.
+>Na interface clássica, o ícone de bloqueio exibido na caixa de diálogo Propriedades da página para páginas do Live Copy não reflete a configuração da propriedade Propriedades da página excluídas. O ícone de bloqueio aparece mesmo para propriedades que são excluídas da ação de sincronização.
 
 >[!NOTE]
 >
->Na interface otimizada para toque, veja também [Configurar bloqueios do MSM em Propriedades da página (interface do usuário otimizada para toque)](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-pagep-roperties-touch-optimized-ui).
+>Na interface otimizada para toque, consulte também [Configuração de bloqueios do MSM nas propriedades da página (interface otimizada para toque)](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-pagep-roperties-touch-optimized-ui).
 
-#### Ação de atualização de conteúdo do MSM CQ - Exclusões {#cq-msm-content-update-action-exclusions}
+#### Ação de atualização de conteúdo MSM CQ - Exclusões {#cq-msm-content-update-action-exclusions}
 
-Várias propriedades e tipos de nó são excluídas por padrão, elas são definidas na configuração OSGi da **Ação de atualização de conteúdo do MSM CQ**, em **Propriedades de página excluídas**.
+Várias propriedades e tipos de nó são excluídos por padrão, eles são definidos na configuração OSGi de **Ação de atualização de conteúdo MSM CQ**, em **Propriedades da página excluída**.
 
-Por padrão, as propriedades que correspondentes às seguintes expressões comuns são excluídas (ou seja, não é atualizada) na implementação:
+Por padrão, as propriedades que correspondem às seguintes expressões regulares são excluídas (ou seja, não atualizadas) na implantação:
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -334,9 +334,9 @@ Por exemplo, se você quiser que o **Título** da página seja incluído nas alt
 
 Você pode configurar vários serviços OSGi que oferecem suporte às ações de sincronização correspondentes relacionadas à atualização de referências.
 
-Ao trabalhar com AEM, existem vários métodos de gestão das definições de configuração para esses serviços; see [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
+Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
-A tabela a seguir lista as ações de sincronização para as quais você pode especificar a atualização de referência. A tabela fornece os nomes dos serviços a serem configurados usando o Console na Web e o PID para configurar o usando um nó de repositório.
+A tabela a seguir lista as ações de sincronização para as quais você pode especificar a atualização de referência. A tabela fornece os nomes dos serviços a serem configurados usando o Console da Web e o PID para configurar usando um nó de repositório.
 
 <table>
  <tbody>
@@ -346,39 +346,39 @@ A tabela a seguir lista as ações de sincronização para as quais você pode e
   </tr>
   <tr>
    <td><p>Atualizar referência entre LiveCopies aninhadas</p> <p>cq.wcm.msm.impl.action.referencesupdate.prop_updateNested</p> </td>
-   <td>Disponível somente para a Ação de atualização de referências MSM CQ. Selecione essa opção (Console da Web) ou defina essa propriedade booleana como true (configuração do repositório) para substituir referências que direcionem qualquer recurso que esteja na ramificação da LiveCopy mais importante.</td>
+   <td>Disponível somente para a Ação de atualização de referências MSM CQ. Selecione esta opção (Console da Web) ou defina esta propriedade boolean como true (configuração do repositório) para substituir referências que se destinam a qualquer recurso que esteja dentro da ramificação da Live Copy mais elevada.</td>
   </tr>
   <tr>
    <td><p>Atualizar páginas de referência</p> <p>cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate</p> </td>
-   <td>Disponível somente para Ação de movimentação de página MSM CQ. Selecione essa opção (Console da Web) ou defina essa propriedade booleana como <code>true</code> (configuração do repositório) para atualizar quaisquer referências para usar a página original para, em vez disso, fazer referência à página LiveCopy.</td>
+   <td>Disponível somente para a Ação de movimentação de página MSM CQ. Selecione esta opção (Console da Web) ou defina esta propriedade booleana como <code>true</code> (configuração do repositório) para atualizar todas as referências para usar a página original para fazer referência à página Live Copy.</td>
   </tr>
  </tbody>
 </table>
 
 ## Especificar as configurações de implementação a serem usadas {#specifying-the-rollout-configurations-to-use}
 
-O MSM permite que você especifique conjuntos de configurações de implementação usados com frequência e, quando necessário, pode substituí-los por cópias dinâmicas específicas. O MSM fornece vários locais para especificar as configurações de implementação a serem usadas. O local determina se a configuração se aplica a uma Live Copy específica.
+O MSM permite especificar conjuntos de configurações de implantação usados com frequência e, quando necessário, você pode substituí-los por live copies específicas. O MSM fornece vários locais para especificar as configurações de implementação a serem usadas. O local determina se a configuração se aplica a uma live copy específica.
 
-A lista de locais a seguir em que você pode especificar as configurações de implementação a serem usadas descreve como o MSM determina quais configurações usar para uma Live Copy:
+A seguinte lista de locais onde você pode especificar as configurações de implantação a serem usadas descreve como o MSM determina quais configurações de implantação usar para uma live copy:
 
-* **[Propriedades da página de Live Copy](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page):** quando uma página de Live Copy é configurada para usar uma ou mais configurações de implementação, o MSM usa essas configurações.
-* **[Propriedades da página do blueprint](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):** quando uma Live Copy é baseada em um blueprint, e a página de Live Copy não está configurada com uma configuração de implementação, a configuração associada à página de origem do blueprint é usada.
-* **Propriedades da página principal da Live Copy:** Quando nem a página de Live Copy nem a página de origem do blueprint são configuradas com uma configuração de implementação, a configuração de implementação que se aplica à página pai da página de Live Copy é usada.
-* **[Padrão do sistema](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):** Quando a configuração de implementação da página pai da Live Copy não pode ser determinada, a configuração de implementação padrão do sistema é usada.
+* **[Propriedades da página de Live Copy](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page):** Quando uma página de live copy é configurada para usar uma ou mais configurações de implantação, o MSM usa essas configurações.
+* **[Propriedades da página de blueprint](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):** Quando uma live copy é baseada em um blueprint e a página de live copy não está definida com uma configuração de implantação, a configuração associada à página de origem do blueprint é usada.
+* **Propriedades da página principal da Live Copy:** Quando nenhuma página de live copy ou página de origem do blueprint é definida com uma configuração de implantação, a configuração que se aplica à página principal da página de live copy é usada.
+* **[Padrão do sistema](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):** Quando a configuração de implantação da página principal da live copy não pode ser determinada, a configuração padrão do sistema é usada.
 
-Por exemplo, um blueprint usa o site de referência We.Retail como conteúdo de origem. Um site é criado a partir do blueprint. Cada item da lista a seguir descreve um cenário diferente sobre o uso de configurações de implementação:
+Por exemplo, um blueprint usa o site de referência We.Retail como conteúdo de origem. Um site é criado a partir do blueprint. Cada item na lista a seguir descreve um cenário diferente com relação ao uso de configurações de implantação:
 
-* Nenhuma das páginas do blueprint ou das páginas de Live Copy é configurada para usar uma configuração de implementação. O MSM usa a configuração de implementação padrão do sistema para todas as páginas de Live Copy.
-* A página raiz do site de referência We.Retail é configurada com várias configurações de implementação. O MSM usa essas configurações de implementação para todas as páginas de Live Copy.
-* A página raiz do site de referência We.Retail é configurada com várias configurações de implementação e a página raiz do site de Live Copy é configurada com um conjunto diferente de configurações de implementação. O MSM usa as configurações de implementação configuradas na página raiz do site de Live Copy.
+* Nenhuma das páginas do blueprint ou das páginas de live copy está definida para usar uma configuração de implantação. O MSM usa a configuração de implantação padrão do sistema para todas as páginas de live copy.
+* A página raiz do site de referência We.Retail está configurada com várias configurações de implantação. O MSM usa essas configurações de implantação para todas as páginas de live copy.
+* A página raiz do site de referência We.Retail está configurada com várias configurações de implantação, e a página raiz do site de live copy está configurada com um conjunto diferente de configurações de implantação. O MSM usa as configurações de implantação definidas na página raiz do site de live copy.
 
 ### Definir as configurações de implementação de uma página de Live Copy {#setting-the-rollout-configurations-for-a-live-copy-page}
 
-Configure uma página de Live Copy com as configurações de implementação a serem usadas quando a página de origem for distribuída. As páginas secundárias herdam a configuração por padrão. Ao definir a configuração de implementação a ser usada, você estará substituindo a configuração que a página de Live Copy herda de seu pai.
+Defina uma página de live copy com as configurações de implantação a serem usadas quando a página de origem for implantada. As páginas secundárias herdam a configuração por padrão. Ao definir a configuração de implantação a ser usada, você substituirá a configuração que a página de live copy herdará da página principal.
 
-Também é possível definir as configurações de implementação para uma página de Live Copy ao [criar a Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page).
+Você também pode definir as configurações de implantação para uma página de live copy ao [criar a live copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page).
 
-1. Use o console **Sites** para selecionar a página de Live Copy.
+1. Use o **Sites** para selecionar a página live copy.
 1. Selecione **Propriedades** na barra de ferramentas.
 1. Abra a guia **Live Copy**.
 
@@ -386,21 +386,21 @@ Também é possível definir as configurações de implementação para uma pág
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
-1. Se necessário, ajuste o sinalizador de **Herança da Live Copy**. Se essa opção for marcada, a configuração da cópias dinâmica terá efeito em todas as páginas secundárias.
+1. Se necessário, ajuste o sinalizador de **Herança da Live Copy**. Se essa opção for marcada, a configuração da live copy terá efeito em todas as tarefas derivadas.
 
-1. Desmarque a propriedade **Herdar configuração de implementação do Pai** e selecione uma ou mais configurações de implementação na lista.
+1. Limpe a **Herdar configurações de implantação do primário** e selecione uma ou mais configurações de implantação na lista.
 
-   As configurações de implementação selecionadas aparecem abaixo da lista suspensa.
+   As configurações de implantação selecionadas aparecem abaixo da lista suspensa.
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
-1. Clique ou toque em **Salvar**.
+1. Clique ou toque **Salvar**.
 
-### Definir a configuração de implementação de uma página do blueprint {#setting-the-rollout-configuration-for-a-blueprint-page}
+### Definir a configuração de implantação de uma página do blueprint {#setting-the-rollout-configuration-for-a-blueprint-page}
 
-Configure uma página do blueprint com as configurações de implementação a serem usadas quando a página do blueprint for distribuída.
+Configure uma página de blueprint com as configurações de implantação a serem usadas quando a página de blueprint for implantada.
 
-Observe que as páginas secundárias da página do blueprint herdam a configuração. Ao definir a configuração de implementação a ser usada, você pode estar substituindo a configuração que a página herda de seu pai.
+Observe que as páginas secundárias da página do blueprint herdam a configuração. Ao definir a configuração de implantação a ser usada, você pode substituir a configuração que a página herda da página principal.
 
 1. Use o console **Sites** para selecionar a página raiz do blueprint.
 1. Selecione **Propriedades** na barra de ferramentas.
@@ -410,12 +410,13 @@ Observe que as páginas secundárias da página do blueprint herdam a configura�
 
 ### Definir a configuração de implementação padrão do sistema {#setting-the-system-default-rollout-configuration}
 
-Especifique uma configuração de implementação a ser usada como padrão do sistema. Para especificar o padrão, configure o serviço OSGi:
+Especifique uma configuração de implantação a ser usada como padrão do sistema. Para especificar o padrão, configure o serviço OSGi:
 
-* O PID de serviço do **Gerente de relacionamento dinâmico do WCM CQ do dia**  é 
+* **Gerente de relacionamento dinâmico do WCM CQ do dia**
+o PID do serviço é 
 `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
-Configure o serviço usando a variável [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [nó do repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
+Configure o serviço usando a variável [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou um [nó do repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
 * No console da web, o nome da propriedade a ser configurada é Configuração de implantação padrão.
 * Ao usar um nó de repositório, o nome da propriedade a ser configurada é `liverelationshipmgr.relationsconfig.default`.

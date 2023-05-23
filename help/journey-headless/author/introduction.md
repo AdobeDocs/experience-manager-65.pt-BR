@@ -1,6 +1,6 @@
 ---
-title: Criação para Headless com o Adobe Experience Manager
-description: Uma introdução aos recursos avançados, flexíveis e sem periféricos do Adobe Experience Manager e como criar conteúdo para o seu projeto.
+title: Criação para headless com Adobe Experience Manager
+description: Uma introdução aos recursos headless avançados e flexíveis do Adobe Experience Manager e como criar conteúdo para seu projeto.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
 source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 90%
 
 # Criação para headless com AEM - uma introdução {#author-headless-introduction}
 
-Nesta parte do [jornada do autor de conteúdo sem cabeçalho do AEM](overview.md), você pode aprender os conceitos e a terminologia (básica) necessários para entender a criação de conteúdo para entrega de conteúdo sem periféricos com o Adobe Experience Manager (AEM).
+Nesta parte do [Jornada de autor de conteúdo do AEM Headless](overview.md), você pode aprender os conceitos e a terminologia (básicos) necessários para entender a criação de conteúdo para entrega de conteúdo headless com o Adobe Experience Manager (AEM).
 
 ## Objetivo {#objective}
 

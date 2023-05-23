@@ -1,7 +1,7 @@
 ---
-title: Descarregamento de Tarefas
+title: Descarregamento de trabalhos
 seo-title: Offloading Jobs
-description: Saiba como configurar e usar instâncias AEM em uma topologia para executar tipos específicos de processamento.
+description: Saiba como configurar e usar instâncias de AEM em uma topologia para executar tipos específicos de processamento.
 seo-description: Learn how to configure and use AEM instances in a topology in order to perform specific types of processing.
 uuid: e971d403-dfd2-471f-b23d-a67e35f1ed88
 contentOwner: User
@@ -18,102 +18,102 @@ ht-degree: 1%
 
 ---
 
-# Descarregamento de Tarefas{#offloading-jobs}
+# Descarregamento de trabalhos{#offloading-jobs}
 
 ## Introdução {#introduction}
 
-A descarga distribui tarefas de processamento entre instâncias de Experience Manager em uma topologia. Com a descarga, você pode usar instâncias Experience Manager específicas para executar tipos específicos de processamento. O processamento especializado permite maximizar o uso dos recursos disponíveis do servidor.
+A descarga distribui tarefas de processamento entre instâncias de Experience Manager em uma topologia. Com a descarga, você pode usar instâncias de Experience Manager específicas para executar tipos específicos de processamento. O processamento especializado permite maximizar o uso dos recursos disponíveis do servidor.
 
-A descarga é baseada na variável [Descoberta do Apache Sling](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e recursos do Sling JobManager. Para usar a descarga, você adiciona Experience Manager clusters a uma topologia e identifica os tópicos de trabalho que o cluster processa. Os clusters são compostos de uma ou mais instâncias de Experience Manager, de modo que uma única instância é considerada um cluster.
+A descarga é baseada na variável [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling JobManager. Para usar a descarga, você adiciona clusters de Experience Manager a uma topologia e identifica os tópicos de trabalho que o cluster processa. Os clusters são compostos de uma ou mais instâncias de Experience Manager, de modo que uma única instância é considerada um cluster.
 
 Para obter informações sobre como adicionar instâncias a uma topologia, consulte [Administração de topologias](/help/sites-deploying/offloading.md#administering-topologies).
 
-### Distribuição de trabalho {#job-distribution}
+### Distribuição de tarefas {#job-distribution}
 
-O Sling JobManager e o JobConsumer permitem a criação de tarefas que são processadas em uma topologia:
+O Sling JobManager e o JobConsumer permitem a criação de trabalhos processados em uma topologia:
 
-* Gerenciador de tarefas: Um serviço que cria empregos para tópicos específicos.
-* JobConsumer: Um serviço que executa tarefas de um ou mais tópicos. Vários serviços JobConsumer podem ser registrados para o mesmo tópico.
+* JobManager: um serviço que cria processos para tópicos específicos.
+* JobConsumer: um serviço que executa processos de um ou mais tópicos. Vários serviços JobConsumer podem ser registrados para o mesmo tópico.
 
-Quando o JobManager cria um trabalho, a estrutura Offloading seleciona um cluster Experience Manager na topologia para executar o trabalho:
+Quando o JobManager cria um job, a estrutura de Descarregamento seleciona um cluster de Experience Manager na topologia para executar o job:
 
-* O cluster deve incluir uma ou mais instâncias que estejam executando um JobConsumer que esteja registrado para o tópico de trabalho.
+* O cluster deve incluir uma ou mais instâncias que estejam executando um JobConsumer registrado para o tópico de trabalho.
 * O tópico deve ser ativado para pelo menos uma instância no cluster.
 
-Consulte [Configurar o consumo de tópico](/help/sites-deploying/offloading.md#configuring-topic-consumption) para obter informações sobre como refinar a distribuição de tarefas.
+Consulte [Configuração do Consumo de Tópico](/help/sites-deploying/offloading.md#configuring-topic-consumption) para obter informações sobre como refinar a distribuição de jobs.
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-Quando a estrutura de Descarregamento seleciona um cluster para executar um trabalho e o cluster é composto por várias instâncias, a Distribuição do Sling determina qual instância no cluster executa o trabalho.
+Quando a estrutura de descarregamento seleciona um cluster para executar um trabalho e o cluster é composto por várias instâncias, a Distribuição de sling determina qual instância no cluster executa o trabalho.
 
-### Cargas da tarefa {#job-payloads}
+### Cargas de trabalho {#job-payloads}
 
-A estrutura de Descarregamento oferece suporte a cargas de trabalho que associam tarefas a recursos no repositório. As cargas de trabalho são úteis quando as tarefas são criadas para recursos de processamento e a tarefa é descarregada para outro computador.
+A estrutura de descarregamento suporta cargas de trabalho que associam trabalhos a recursos no repositório. As cargas de trabalho são úteis quando os trabalhos são criados para recursos de processamento e o trabalho é descarregado em outro computador.
 
-Após a criação de um trabalho, a carga fica somente garantida na instância que cria o trabalho. Ao descarregar o trabalho, os agentes de replicação garantem que a carga seja criada na instância que eventualmente consuma o trabalho. Quando a execução do trabalho é concluída, a replicação inversa faz com que a carga seja copiada de volta para a instância que criou o trabalho.
+Após a criação de um trabalho, é garantido que a carga esteja localizada apenas na instância que cria o trabalho. Ao descarregar o trabalho, os agentes de replicação garantem que a carga seja criada na instância que eventualmente consome o trabalho. Quando a execução do job é concluída, a replicação reversa faz com que a carga seja copiada de volta para a instância que criou o job.
 
 ## Administração de topologias {#administering-topologies}
 
-As topologias são Experience Manager clusters vagamente acoplados que estão participando da descarga. Um cluster consiste em uma ou mais instâncias do servidor Experience Manager (uma única instância é considerada um cluster).
+As topologias são clusters de Experience Manager livremente acoplados que estão participando da descarga. Um cluster consiste em uma ou mais instâncias do servidor Experience Manager (uma única instância é considerada um cluster).
 
 Cada instância do Experience Manager executa os seguintes serviços relacionados à descarga:
 
-* Serviço de descoberta: Envia solicitações para um Conector de topologia para unir a topologia.
-* Conector de topologia: Recebe as solicitações de associação e aceita ou recusa cada solicitação.
+* Serviço Descoberta: envia solicitações a um Conector de Topologia para ingressar na topologia.
+* Conector de topologia: recebe as solicitações de associação e aceita ou recusa cada solicitação.
 
-O Serviço de Descoberta de todos os membros da topologia aponta para o Conector de Topologia em um dos membros. Nas seções a seguir, esse membro é conhecido como membro raiz.
+O Serviço de Descoberta de todos os membros da topologia apontam para o Conector de Topologia em um dos membros. Nas seções seguintes, esse membro é chamado de membro raiz.
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
-Cada cluster na topologia contém uma instância reconhecida como líder. O líder do cluster interage com a topologia em nome dos outros membros do cluster. Quando o pontilhado deixa o cluster, um novo pontilhado do cluster é automaticamente escolhido.
+Cada cluster na topologia contém uma instância reconhecida como líder. O líder do cluster interage com a topologia em nome dos outros membros do cluster. Quando o líder deixa o cluster, um novo líder para o cluster é escolhido automaticamente.
 
-### Exibição da topologia {#viewing-the-topology}
+### Exibindo a Topologia {#viewing-the-topology}
 
-Use o Navegador de topologia para explorar o estado da topologia em que a instância do Experience Manager está participando. O Navegador de topologia mostra os clusters e instâncias da topologia.
+Use o Navegador de Topologia para explorar o estado da topologia em que a instância Experience Manager está participando. O Navegador de Topologia mostra os clusters e as instâncias da topologia.
 
-Para cada cluster, você vê uma lista de membros do cluster que indica a ordem em que cada membro se juntou ao cluster e qual membro é o Líder. A propriedade Current indica a instância que você está administrando no momento.
+Para cada cluster, você verá uma lista de membros do cluster que indica a ordem em que cada membro se associou ao cluster e qual membro é o Líder. A propriedade Current indica a instância que você está administrando no momento.
 
-Para cada instância no cluster, você pode ver várias propriedades relacionadas à topologia:
+Para cada instância do cluster, você pode ver várias propriedades relacionadas à topologia:
 
-* Uma lista de permissões de tópicos para o consumidor de emprego da instância.
-* Os endpoints expostos para conexão com a topologia.
-* Os tópicos da tarefa para os quais a instância está registrada para descarregamento.
-* Os tópicos da tarefa que a instância processa.
+* Uma lista de permissões de tópicos para o consumidor de jobs da instância.
+* Os pontos de extremidade expostos para conexão com a topologia.
+* Os tópicos de trabalho para os quais a instância está registrada para descarregamento.
+* Os tópicos de job que a instância processa.
 
-1. Usando a interface de toque, clique na guia Ferramentas. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
-1. Na área Operações de Granite, clique em Descarregar navegador.
-1. No painel de navegação, clique em Navegador de topologia.
+1. Usando a interface para toque, clique na guia Ferramentas. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
+1. Na área Operações do Granite, clique em Descarregamento de navegador.
+1. No painel de navegação, clique em Navegador de Topologia.
 
-   Os clusters que participam da topologia aparecem.
+   Os clusters que estão participando da topologia são exibidos.
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-1. Clique em um cluster para ver uma lista das instâncias no cluster e sua ID, o status Atual e o status Líder.
-1. Clique em uma ID de instância para ver as propriedades mais detalhadas.
+1. Clique em um cluster para ver uma lista das instâncias no cluster e seus status ID, Status atual e Líder.
+1. Clique em uma ID de instância para ver propriedades mais detalhadas.
 
-Você também pode usar o Console da Web para exibir informações de topologia. O console fornece mais informações sobre os clusters de topologia:
+Você também pode usar a Console da Web para exibir informações de topologia. O console fornece mais informações sobre os clusters de topologia:
 
 * Qual instância é a instância local.
-* Os serviços do Conector de Topologia que essa instância usa para se conectar à topologia (de saída) e aos serviços que se conectam a essa instância (de entrada).
-* Altere o histórico das propriedades da topologia e da instância.
+* Os serviços do Conector de Topologia que esta instância usa para se conectar à topologia (saída) e os serviços que se conectam a esta instância (entrada).
+* Altere o histórico da topologia e as propriedades da instância.
 
-Use o procedimento a seguir para abrir a página Gerenciamento de Topologia do Console da Web:
+Use o procedimento a seguir para abrir a página Gerenciamento de Topologia da Console Web:
 
-1. Abra o Console da Web em seu navegador. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
-1. Clique em Principal > Gerenciamento de topologia.
+1. Abra o Console da Web no navegador. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Clique em Principal > Gerenciamento de Topologia.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
-### Configuração da Associação de Topologia {#configuring-topology-membership}
+### Configuração de associação de topologia {#configuring-topology-membership}
 
-O Apache Sling Resource-Based Discovery Service é executado em cada instância para controlar como as instâncias do Experience Manager interagem com uma topologia.
+O Apache Sling Resource-Based Discovery Service é executado em cada instância para controlar como as instâncias Experience Manager interagem com uma topologia.
 
-O Serviço de descoberta envia solicitações POST periódicas (heartbeats) para os serviços do Conector de topologia para estabelecer e manter conexões com a topologia. O serviço Topology Connector mantém uma lista de permissões de endereços IP ou nomes de host que têm permissão para ingressar na topologia:
+O Serviço de Descoberta envia solicitações de POST periódicas (heartbeats) aos serviços do Conector de Topologia para estabelecer e manter conexões com a topologia. O serviço do Conector de topologia mantém uma lista de permissões de endereços IP ou nomes de host que têm permissão para ingressar na topologia:
 
-* Para unir uma instância a uma topologia, especifique o URL do serviço Topology Connector do membro raiz.
-* Para permitir que uma instância participe de uma topologia, adicione a instância à lista de permissões do serviço Topology Connector do membro raiz.
+* Para unir uma instância a uma topologia, especifique o URL do serviço do Conector de Topologia do membro raiz.
+* Para permitir que uma instância ingresse em uma topologia, adicione-a à lista de permissões do serviço Conector de Topologia do membro raiz.
 
-Use o Console da Web ou um nó sling:OsgiConfig para configurar as seguintes propriedades do serviço org.apache.sling.discovery.impt.Config :
+Use o Console da Web ou um nó sling:OsgiConfig para configurar as seguintes propriedades do serviço org.apache.sling.discovery.impt.Config:
 
 <table>
  <tbody>
@@ -126,35 +126,35 @@ Use o Console da Web ou um nó sling:OsgiConfig para configurar as seguintes pro
   <tr>
    <td>Tempo limite do Heartbeat (segundos)</td>
    <td>heartbeatTimeout</td>
-   <td>O tempo em segundos para aguardar uma resposta de pulsação antes que a instância de destino seja considerada indisponível. </td>
+   <td>O tempo em segundos para aguardar uma resposta de heartbeat antes que a instância direcionada seja considerada indisponível. </td>
    <td>20</td>
   </tr>
   <tr>
    <td>Intervalo do Heartbeat (segundos)</td>
    <td>heartbeatInterval</td>
-   <td>O tempo em segundos entre as pulsações.</td>
+   <td>A quantidade de tempo em segundos entre as pulsações.</td>
    <td>15</td>
   </tr>
   <tr>
-   <td>Atraso mínimo de evento (segundos)</td>
+   <td>Atraso mínimo do evento (segundos)</td>
    <td>minEventDelay</td>
-   <td><p>Quando ocorre uma alteração na topologia, o tempo necessário para atrasar a alteração de estado de TOPOLOGY_CHANGING para TOPOLOGY_CHANGED. Cada alteração que ocorre quando o estado é TOPOLOGY_CHANGING aumenta o atraso por essa quantidade de tempo.</p> <p>Esse atraso impede que os ouvintes sejam inundados por eventos. </p> <p>Para não usar atraso, especifique 0 ou um número negativo.</p> </td>
+   <td><p>Quando ocorre uma alteração na topologia, o tempo necessário para atrasar a alteração de estado de TOPOLOGY_CHANGING para TOPOLOGY_CHANGED. Cada alteração que ocorre quando o estado é TOPOLOGY_CHANGING aumenta o atraso nessa quantidade de tempo.</p> <p>Esse atraso impede que os ouvintes sejam inundados por eventos. </p> <p>Para não usar atraso, especifique 0 ou um número negativo.</p> </td>
    <td>3</td>
   </tr>
   <tr>
-   <td>URLs do conector de topologia</td>
+   <td>URLs do Conector de Topologia</td>
    <td>topologyConnectorUrls</td>
-   <td>Os URLs dos serviços do Topology Connector para enviar mensagens de heartbeat.</td>
+   <td>Os URLs dos serviços do Conector de Topologia para enviar mensagens de heartbeat.</td>
    <td>http://localhost:4502/libs/sling/topology/connector</td>
   </tr>
   <tr>
-   <td>Lista de permissões do conector de topologia</td>
+   <td>Lista de permissões do Conector de Topologia</td>
    <td>topologyConnectorWhitelist</td>
-   <td>A lista de endereços IP ou nomes de host que o serviço local do Conector de Topologia permite na topologia. </td>
+   <td>A lista de endereços IP ou nomes de host permitidos pelo serviço do Conector de Topologia local na topologia. </td>
    <td><p>localhost</p> <p>127.0.0.1</p> </td>
   </tr>
   <tr>
-   <td>Nome do Descritor de Repositório</td>
+   <td>Nome do descritor de repositório</td>
    <td>leaderElectionRepositoryDescriptor</td>
    <td> </td>
    <td>&lt;sem valor&gt;</td>
@@ -162,31 +162,31 @@ Use o Console da Web ou um nó sling:OsgiConfig para configurar as seguintes pro
  </tbody>
 </table>
 
-Use o procedimento a seguir para conectar uma instância do CQ ao membro raiz de uma topologia. O procedimento aponta a instância para o URL do Conector de Topologia do membro de topologia raiz. Execute esse procedimento em todos os membros da topologia.
+Use o procedimento a seguir para conectar uma instância do CQ ao membro raiz de uma topologia. O procedimento aponta a instância para o URL do Conector de Topologia do membro da topologia raiz. Execute este procedimento em todos os membros da topologia.
 
-1. Abra o Console da Web em seu navegador. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
-1. Clique em Principal > Gerenciamento de topologia.
-1. Clique em Configurar serviço de descoberta.
-1. Adicione um item à propriedade Topology Connector URLs e especifique o URL do serviço Topology Connector do membro de topologia raiz. O URL está no formato https://rootservername:4502/libs/sling/topology/connector.
+1. Abra o Console da Web no navegador. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Clique em Principal > Gerenciamento de Topologia.
+1. Clique em Configurar Serviço de Descoberta.
+1. Adicione um item à propriedade URLs do Conector de Topologia e especifique o URL do serviço do Conector de Topologia do membro da topologia raiz. A URL está no formato https://rootservername:4502/libs/sling/topology/connector.
 
-Execute o procedimento a seguir no membro raiz da topologia. O procedimento adiciona os nomes dos outros membros da topologia à lista de permissões do Serviço de Descoberta.
+Execute o procedimento a seguir no membro raiz da topologia. O procedimento adiciona os nomes dos outros membros da topologia à sua lista de permissões do Serviço de Descoberta.
 
-1. Abra o Console da Web em seu navegador. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
-1. Clique em Principal > Gerenciamento de topologia.
-1. Clique em Configurar serviço de descoberta.
-1. Para cada membro da topologia, adicione um item à propriedade de lista de permissões Topology Connector e especifique o nome do host ou endereço IP do membro da topologia.
+1. Abra o Console da Web no navegador. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Clique em Principal > Gerenciamento de Topologia.
+1. Clique em Configurar Serviço de Descoberta.
+1. Para cada membro da topologia, adicione um item à propriedade de lista de permissões do Conector de Topologia e especifique o nome do host ou o endereço IP do membro da topologia.
 
-## Configurar o consumo de tópico {#configuring-topic-consumption}
+## Configuração do Consumo de Tópico {#configuring-topic-consumption}
 
-Use o Navegador de descarga para configurar o consumo de tópico para as instâncias de Experience Manager na topologia. Para cada instância, é possível especificar os tópicos que ela consome. Por exemplo, para configurar sua topologia de forma que somente uma instância consuma tópicos de um tipo específico, desative o tópico em todas as instâncias, exceto uma.
+Use o Offloading Browser para configurar o consumo de tópicos para as instâncias de Experience Manager na topologia. Para cada instância, você pode especificar os tópicos que ela consome. Por exemplo, para configurar sua topologia para que apenas uma instância consuma tópicos de um tipo específico, desative o tópico em todas as instâncias, exceto uma.
 
-As tarefas são distribuídas entre instâncias que têm o tópico associado habilitado usando a lógica de round robin.
+Os processos são distribuídos entre instâncias que têm o tópico associado ativado usando a lógica de revezamento.
 
-1. Usando a interface de toque, clique na guia Ferramentas. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
-1. Na área Operações de Granite, clique em Descarregar navegador.
-1. No painel de navegação, clique em Descarregar navegador.
+1. Usando a interface para toque, clique na guia Ferramentas. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
+1. Na área Operações do Granite, clique em Descarregamento de navegador.
+1. No painel de navegação, clique em Descarregamento de navegador.
 
-   Os tópicos de descarregamento e as instâncias do servidor que podem consumir os tópicos são exibidos.
+   Os tópicos de descarga e as instâncias do servidor que podem consumir os tópicos são exibidos.
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
@@ -195,79 +195,79 @@ As tarefas são distribuídas entre instâncias que têm o tópico associado hab
 
    ![chlimage_1-114](assets/chlimage_1-114.png)
 
-1. Clique em um dos seguintes botões ao lado de um tópico para configurar o comportamento de consumo para a instância e, em seguida, clique em Salvar:
+1. Clique em um dos seguintes botões ao lado de um tópico para configurar o comportamento de consumo da instância e, em seguida, clique em Salvar:
 
-   * Ativado: Essa instância consome trabalhos desse tópico.
-   * Desativado: Essa instância não consome trabalhos desse tópico.
-   * Exclusivo: Essa instância consome trabalhos somente desse tópico.
+   * Ativado: Essa instância consome jobs desse tópico.
+   * Desativado: essa instância não consome tarefas desse tópico.
+   * Exclusivo: essa instância consome trabalhos somente deste tópico.
 
-   **Observação:** Quando você seleciona Exclusivo para um tópico, todos os outros tópicos são automaticamente definidos como Desativado.
+   **Nota:** Quando você seleciona Exclusivo para um tópico, todos os outros tópicos são automaticamente definidos como Desativado.
 
 ### Consumidores de Trabalho Instalados {#installed-job-consumers}
 
-Várias implementações do JobConsumer são instaladas com o Experience Manager. Os tópicos para os quais esses JobConsumers estão registrados são exibidos no Navegador de Descarregamento. Os tópicos adicionais que aparecem são aqueles que JobConsumers personalizados registraram. A tabela a seguir descreve o JobConsumers padrão.
+Várias implementações do JobConsumer são instaladas com o Experience Manager. Os tópicos para os quais esses Consumidores de trabalho estão registrados aparecem em Descarregamento de navegador. Tópicos adicionais exibidos são aqueles que os Consumidores de trabalho personalizados registraram. A tabela a seguir descreve os JobConsumers padrão.
 
-| Tópico da tarefa | PID do serviço | Descrição |
+| Tópico de trabalho | PID do serviço | Descrição |
 |---|---|---|
-| / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Instalado com o Apache Sling. Processa trabalhos que o administrador de eventos OSGi gera para compatibilidade com versões anteriores. |
+| / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Instalado com o Apache Sling. Processa trabalhos gerados pelo administrador de eventos OSGi para oferecer compatibilidade com versões anteriores. |
 | com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Um agente de replicação que replica cargas de trabalho. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
 -->
 
-### Desativar e ativar tópicos para uma instância {#disabling-and-enabling-topics-for-an-instance}
+### Desativando e Ativando Tópicos para uma Instância {#disabling-and-enabling-topics-for-an-instance}
 
-O serviço Apache Sling Job Consumer Manager fornece propriedades de lista de permissões e lista de bloqueios de tópicos. Configure essas propriedades para ativar ou desativar o processamento de tópicos específicos em uma instância do Experience Manager.
+O serviço Apache Sling Job Consumer Manager fornece lista de permissões de tópico e propriedades de lista de bloqueios. Configure essas propriedades para ativar ou desativar o processamento de tópicos específicos em uma instância de Experience Manager.
 
-**Observação:** Se a instância pertencer a uma topologia, você também poderá usar o Navegador de descarga em qualquer computador na topologia para ativar ou desativar os tópicos.
+**Nota:** Se a instância pertencer a uma topologia, você também poderá usar o Descarregamento de Navegador em qualquer computador da topologia para ativar ou desativar tópicos.
 
-A lógica que cria a lista de tópicos ativados primeiro permite todos os tópicos que estão na lista de permissões e, em seguida, remove os tópicos que estão na lista de bloqueios. Por padrão, todos os tópicos são ativados (o valor da lista de permissões é `*`) e nenhum tópico estiver desativado (a lista de bloqueios não tem valor).
+A lógica que cria a lista de tópicos ativados primeiro permite todos os tópicos que estão na lista de permissões e, em seguida, remove os tópicos que estão na lista de bloqueios. Por padrão, todos os tópicos são ativados (o valor da lista de permissões é `*`) e nenhum tópico está desativado (a lista de bloqueios não tem valor).
 
-Use o Console da Web ou um `sling:OsgiConfig` para configurar as seguintes propriedades. Para `sling:OsgiConfig` , o PID do serviço Gerenciador de Consumidores de Trabalho é org.apache.sling.event.impl.jobs.JobConsumerManager.
+Use o Console da Web ou um `sling:OsgiConfig` para configurar as seguintes propriedades. Para `sling:OsgiConfig` nós, o PID do serviço Gerenciador de Consumidores de Jobs é org.apache.sling.event.impl.jobs.JobConsumerManager.
 
-| Nome da propriedade no Console da Web | ID do OSGi | Descrição |
+| Nome da propriedade no Console da Web | ID OSGi | Descrição |
 |---|---|---|
-| Lista de permissões de tópico | job.consumermanager.whitelist | Uma lista de tópicos que o serviço local do JobManager processa. O valor padrão do &amp;ast; faz com que todos os tópicos sejam enviados para o serviço TopicConsumer registrado. |
-| Lista de bloqueios de tópico | job.consumermanager.blacklist | Uma lista de tópicos que o serviço local do JobManager não processa. |
+| Lista de permissões de tópico | job.consumermanager.whitelist | Uma lista de tópicos que o serviço JobManager local processa. O valor padrão de &amp;ast; faz com que todos os tópicos sejam enviados para o serviço TopicConsumer registrado. |
+| Lista de bloqueios de tópico | job.consumermanager.blacklist | Uma lista de tópicos que o serviço JobManager local não processa. |
 
-## Criando Agentes De Replicação Para Descarregamento {#creating-replication-agents-for-offloading}
+## Criação De Agentes De Replicação Para Descarregamento {#creating-replication-agents-for-offloading}
 
-A estrutura de descarregamento usa a replicação para transportar recursos entre o autor e o trabalhador. A estrutura de descarregamento cria agentes de replicação automaticamente quando as instâncias se juntam à topologia. Os agentes são criados com valores padrão. Você deve alterar manualmente a senha usada pelos agentes para autenticação.
+A estrutura de descarregamento usa replicação para transportar recursos entre o autor e o trabalhador. A estrutura de descarga cria agentes de replicação automaticamente quando as instâncias se associam à topologia. Os agentes são criados com valores padrão. Você deve alterar manualmente a senha que os agentes usam para autenticação.
 
 >[!CAUTION]
 >
 >Um problema conhecido com os agentes de replicação gerados automaticamente requer a criação manual de novos agentes de replicação.
 
-Crie os agentes de replicação que transportam cargas de trabalho entre instâncias para descarregamento. A ilustração a seguir mostra os agentes necessários para descarregar do autor para uma instância de trabalho. O autor tem uma ID do Sling de 1 e a instância do trabalhador tem uma ID do Sling de 2:
+Crie os agentes de replicação que transportam cargas de trabalho entre instâncias para descarregamento. A ilustração a seguir mostra os agentes necessários para descarregar do autor para uma instância de trabalho. O autor tem uma Sling ID de 1 e a instância do trabalhador tem uma Sling ID de 2:
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
-Essa configuração requer os três agentes a seguir:
+Essa configuração exige os três agentes a seguir:
 
 1. Um agente de saída na instância do autor que é replicado para a instância do trabalhador.
-1. Um agente reverso na instância do autor que puxa da caixa de saída na instância do trabalhador.
+1. Um agente reverso na instância do autor que extrai da caixa de saída na instância do trabalhador.
 1. Um agente de caixa de saída na instância do trabalhador.
 
-Esse esquema de replicação é semelhante ao usado entre instâncias de autor e publicação. No entanto, para a situação de descarregamento, todas as instâncias envolvidas são instâncias de criação.
+Esse esquema de replicação é semelhante ao usado entre as instâncias de autor e de publicação. No entanto, para a situação de descarregamento, todas as instâncias envolvidas são instâncias de criação.
 
 >[!NOTE]
 >
->A estrutura Descarregamento usa a topologia para obter os endereços IP das instâncias de descarregamento. A estrutura então cria automaticamente os agentes de replicação com base nesses endereços IP. Se os endereços IP das instâncias de descarregamento forem alterados posteriormente, a alteração será propagada automaticamente na topologia depois que a instância for reiniciada. No entanto, a estrutura de Descarregamento não atualiza automaticamente os agentes de replicação para refletir os novos endereços IP. Para evitar essa situação, use endereços IP fixos para todas as instâncias na topologia.
+>A estrutura de descarregamento usa a topologia para obter os endereços IP das instâncias de descarregamento. Em seguida, a estrutura cria automaticamente os agentes de replicação com base nesses endereços IP. Se os endereços IP das instâncias de descarregamento forem alterados posteriormente, a alteração será propagada automaticamente na topologia após a reinicialização da instância. No entanto, a estrutura de descarga não atualiza automaticamente os agentes de replicação para refletir os novos endereços IP. Para evitar essa situação, use endereços IP fixos para todas as instâncias na topologia.
 
-### Como nomear os agentes de replicação para descarregamento {#naming-the-replication-agents-for-offloading}
+### Nomear os agentes de replicação para descarga {#naming-the-replication-agents-for-offloading}
 
-Use um formato específico para a variável ***Nome*** propriedade dos agentes de replicação para que a estrutura de descarregamento use automaticamente o agente correto para instâncias de trabalho específicas.
+Use um formato específico para o ***Nome*** dos agentes de replicação para que a estrutura de descarga use automaticamente o agente correto para instâncias de trabalho específicas.
 
 **Nomear o agente de saída na instância do autor:**
 
-`offloading_<slingid>`, onde `<slingid>` é a ID do Sling da instância do trabalhador.
+`offloading_<slingid>`, onde `<slingid>` é a Sling ID da instância do trabalhador.
 
 Exemplo: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Nomear o agente reverso na instância do autor:**
 
-`offloading_reverse_<slingid>`, onde `<slingid>` é a ID do Sling da instância do trabalhador.
+`offloading_reverse_<slingid>`, onde `<slingid>` é a Sling ID da instância do trabalhador.
 
 Exemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
@@ -275,50 +275,50 @@ Exemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 `offloading_outbox`
 
-### Criação do agente de saída {#creating-the-outgoing-agent}
+### Criando o agente de saída {#creating-the-outgoing-agent}
 
-1. Crie um **Agente de replicação** sobre o autor. (Consulte o [documentação para agentes de replicação](/help/sites-deploying/replication.md)). Especifique qualquer **Título**. O **Nome** deve seguir a convenção de nomenclatura.
+1. Criar um **Agente de replicação** no autor. (Consulte a [documentação dos agentes de replicação](/help/sites-deploying/replication.md)). Especifique qualquer **Título**. A variável **Nome** deve seguir a convenção de nomenclatura.
 1. Crie o agente usando as seguintes propriedades:
 
    | Propriedade | Valor |
    |---|---|
    | Configurações > Tipo de serialização | Padrão |
    | Transporte >URI de transporte | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transporte > Transportar usuário | Usuário de replicação na instância de destino |
-   | Transporte > Senha de transporte | Senha do usuário de replicação na instância de destino |
+   | Transporte >Transporte de usuário | Usuário de replicação na instância de destino |
+   | Transporte >Senha de Transporte | Senha do usuário de replicação na instância de destino |
    | Estendido > Método HTTP | POST |
-   | Triggers > Ignorar padrão | Verdadeiro |
+   | Acionadores > Ignorar padrão | Verdadeiro |
 
 ### Criação do agente reverso {#creating-the-reverse-agent}
 
-1. Crie um **Agente de replicação inversa** sobre o autor. (Consulte o [documentação para agentes de replicação](/help/sites-deploying/replication.md).) Especifique qualquer **Título**. O **Nome** deve seguir a convenção de nomenclatura.
+1. Criar um **Reverter agente de replicação** no autor. (Consulte a [documentação dos agentes de replicação](/help/sites-deploying/replication.md).) Especifique qualquer **Título**. A variável **Nome** deve seguir a convenção de nomenclatura.
 1. Crie o agente usando as seguintes propriedades:
 
    | Propriedade | Valor |
    |---|---|
    | Configurações > Tipo de serialização | Padrão |
    | Transporte >URI de transporte | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transporte > Transportar usuário | Usuário de replicação na instância de destino |
-   | Transporte > Senha de transporte | Senha do usuário de replicação na instância de destino |
+   | Transporte >Transporte de usuário | Usuário de replicação na instância de destino |
+   | Transporte >Senha de Transporte | Senha do usuário de replicação na instância de destino |
    | Estendido > Método HTTP | GET |
 
 ### Criação do agente de caixa de saída {#creating-the-outbox-agent}
 
-1. Crie um **Agente de replicação** na instância do trabalhador. (Consulte o [documentação para agentes de replicação](/help/sites-deploying/replication.md).) Especifique qualquer **Título**. O **Nome** deve ser `offloading_outbox`.
-1. Crie o agente usando as seguintes propriedades.
+1. Criar um **Agente de replicação** na instância do trabalhador. (Consulte a [documentação dos agentes de replicação](/help/sites-deploying/replication.md).) Especifique qualquer **Título**. A variável **Nome** deve ser `offloading_outbox`.
+1. Crie o agente usando as propriedades a seguir.
 
    | Propriedade | Valor |
    |---|---|
    | Configurações > Tipo de serialização | Padrão |
    | Transporte >URI de transporte | repo://var/replication/outbox |
-   | Acionador > Ignorar padrão | Verdadeiro |
+   | Acionar > Ignorar padrão | Verdadeiro |
 
 ### Encontrar a ID do Sling {#finding-the-sling-id}
 
-Obtenha a ID do Sling de uma instância do Experience Manager usando um dos seguintes métodos:
+Obtenha a Sling ID de uma instância do Experience Manager usando um dos seguintes métodos:
 
-* Abra o Console da Web e, nas Configurações do Sling, encontre o valor da propriedade do Sling ID ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Esse método é útil se a instância ainda não fizer parte da topologia.
-* Use o navegador Topologia se a instância já fizer parte da topologia.
+* Abra o Console da Web e, nas Configurações do Sling, localize o valor da propriedade ID do Sling ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Esse método é útil se a instância ainda não fizer parte da topologia.
+* Use o navegador de Topologia se a instância já fizer parte da topologia.
 
 <!--
 ## Offloading the Processing of DAM Assets {#offloading-the-processing-of-dam-assets}
@@ -356,4 +356,4 @@ The following procedure assumes the following characteristics for the offloading
 
 Além dos detalhes apresentados nesta página, você também pode ler o seguinte:
 
-* Para obter informações sobre o uso de APIs Java para criar tarefas e consumidores de tarefas, consulte [Criação e consumo de trabalhos para descarregamento](/help/sites-developing/dev-offloading.md).
+* Para obter informações sobre como usar APIs Java para criar jobs e consumidores de jobs, consulte [Criando e Consumindo Jobs para Descarregamento](/help/sites-developing/dev-offloading.md).

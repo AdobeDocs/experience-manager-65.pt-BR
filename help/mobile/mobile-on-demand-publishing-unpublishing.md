@@ -1,7 +1,7 @@
 ---
-title: Publicar Cancelar publicação de conteúdo
+title: Publicar e desfazer publicação de conteúdo
 seo-title: Publish UnPublish Content
-description: Depois de conhecer as ações de gerenciamento de conteúdo em artigos, banners e coleções, siga esta página para saber como publicar seu conteúdo. Além disso, é possível desfazer a publicação do conteúdo.
+description: Quando estiver familiarizado com as ações de gerenciamento de conteúdo em artigos, banners e coleções, siga esta página para saber como publicar seu conteúdo. Além disso, você pode desfazer a publicação do conteúdo.
 seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
 uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
@@ -17,21 +17,21 @@ ht-degree: 1%
 
 ---
 
-# Publicar Cancelar publicação de conteúdo{#publish-unpublish-content}
+# Publicar e desfazer publicação de conteúdo{#publish-unpublish-content}
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-Depois de conhecer as ações de gerenciamento de conteúdo em artigos, banners e coleções, você pode publicar seu conteúdo. Além disso, é possível desfazer a publicação do conteúdo.
+Depois de conhecer as ações de gerenciamento de conteúdo em artigos, banners e coleções, você pode publicar seu conteúdo. Além disso, você pode desfazer a publicação do conteúdo.
 
 >[!NOTE]
 >
->Para saber mais sobre considerações de design para aplicativos AEM Mobile, consulte [Considerações de design para aplicativos AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) em Ajuda online.
+>Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) na Ajuda online.
 
-## Publicar/desfazer a publicação do conteúdo {#publishing-unpublishing-the-content}
+## Publicar/desfazer publicação do conteúdo {#publishing-unpublishing-the-content}
 
-Isso é diferente de uma &quot;Publicação AEM&quot;. Não estamos enviando conteúdo para uma instância do servidor de publicação do AEM para torná-lo público. Aqui, informamos o Mobile On-Demand que o conteúdo selecionado deve ser tornado público no aplicativo Mobile On-Demand ativo.
+Isso é diferente de um &quot;AEM Publish&quot;. Não estamos enviando conteúdo para uma instância do servidor de publicação do AEM para torná-lo visível publicamente. Aqui, estamos informando ao Mobile On-Demand que o conteúdo selecionado deve ser tornado público no aplicativo ao vivo do Mobile On-Demand.
 
 >[!NOTE]
 >
@@ -39,11 +39,11 @@ Isso é diferente de uma &quot;Publicação AEM&quot;. Não estamos enviando con
 
 O fluxo de trabalho geral para publicar/desfazer a publicação de um artigo:
 
-1. No Mobile, escolha seu aplicativo Mobile On-Demand no catálogo.
+1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
 1. Selecione um artigo.
-1. Adicione artigos adicionais, se necessário, na exibição em lista.
-1. Selecione Publicar na barra de ações. Após alguns instantes, seus artigos serão publicados.
-1. Use as mesmas etapas acima para Cancelar a publicação de artigos.
+1. Adicione mais artigos, se necessário, da exibição em lista.
+1. Selecione Publicar na barra de ações. Após alguns minutos, seus artigos serão publicados.
+1. Use as mesmas etapas acima para Desfazer a publicação de artigos.
 
 <!-- FAIL >>[!NOTE]
 >
@@ -53,11 +53,11 @@ O fluxo de trabalho geral para publicar/desfazer a publicação de um artigo:
 
 ### Próximas etapas {#the-next-steps}
 
-Depois de aprender sobre a criação e a publicação de conteúdo, consulte
+Depois de saber como criar e publicar conteúdo, consulte
 
 * [Desenvolvimento de conteúdo AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administração de conteúdo para usar o AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
 Ou ainda precisa aprender sobre os tópicos de criação, consulte
 
-[Criação AEM conteúdo para aplicativos AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+[Criação de conteúdo AEM para aplicativos AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)

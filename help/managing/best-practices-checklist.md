@@ -1,7 +1,7 @@
 ---
-title: Lista de verificação
+title: A Lista de Verificação
 seo-title: The Checklist
-description: As Listas de verificação de projeto servem como um conjunto de práticas recomendadas para a entrega do projeto. Elas orientam você em todas as fases do ciclo de vida do projeto e fornecem um monitoramento de alto nível do seu status atual.
+description: As Listas de verificação do projeto são um conjunto de práticas recomendadas para a entrega do projeto. Elas orientam você em todas as fases do ciclo de vida do projeto e fornecem monitoramento de alto nível do status atual.
 seo-description: The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
 uuid: e8ab9042-4d54-445d-b104-23d5d38f58b6
 contentOwner: User
@@ -17,11 +17,11 @@ ht-degree: 1%
 
 ---
 
-# Lista de verificação{#the-checklist}
+# A Lista de Verificação{#the-checklist}
 
-As Listas de verificação de projeto servem como um conjunto de práticas recomendadas para a entrega do projeto. Elas orientam você em todas as fases do ciclo de vida do projeto e fornecem um monitoramento de alto nível do seu status atual.
+As Listas de verificação do projeto são um conjunto de práticas recomendadas para a entrega do projeto. Elas orientam você em todas as fases do ciclo de vida do projeto e fornecem monitoramento de alto nível do status atual.
 
-Há listas de verificação para cada persona (função) envolvida no projeto. Isso detalha os resultados, detalhados por fase e marco. Eles também mostram os documentos necessários para gerar os materiais de entrega. Ao rastrear o status e a qualidade de seus documentos, você pode monitorar o status do projeto como um todo, fornecendo transparência e responsabilidade.
+Há listas de verificação para cada persona (função) envolvida em seu projeto. Eles detalham os materiais de entrega, divididos por fase e marco. Eles também mostram os documentos necessários para gerar os materiais para entrega. Ao rastrear o status e a qualidade de seus documentos, você pode monitorar o status do projeto como um todo, fornecendo transparência e responsabilidade.
 
 ## Download {#download}
 
@@ -34,24 +34,24 @@ Lista de verificação de práticas recomendadas do projeto AEM v2
 A planilha fornece as seguintes planilhas:
 
 * **Instruções**
-   * Fornece instruções sobre como usar a planilha, juntamente com explicações dos mecanismos usados.
-* **[Heartbeat de projeto](/help/managing/best-practices.md#project-heartbeat-dashboard)**
-* **[Status por função](/help/managing/best-practices.md#status-by-role)**
-* Uma série de listas de verificação, de acordo com [Persona](/help/managing/best-practices.md#persona), [Fase e marco](/help/managing/best-practices.md#phases-and-milestones)
+   * Fornece instruções sobre como usar a planilha, juntamente com explicações sobre os mecanismos usados.
+* **[Project Heartbeat](/help/managing/best-practices.md#project-heartbeat-dashboard)**
+* **[Status por Função](/help/managing/best-practices.md#status-by-role)**
+* Uma série de listas de [Persona](/help/managing/best-practices.md#persona), [Fase e Etapa](/help/managing/best-practices.md#phases-and-milestones)
 * **Glossário**
-   * O Glossário lista detalhes de todos os documentos que podem ser entregues na lista de verificação do projeto.
-   * O [Glossário](/help/managing/best-practices-glossary.md) O também está disponível como parte da documentação do .
-* **[Definições de Persona](/help/managing/best-practices.md#persona)**
+   * O Glossário lista detalhes de todos os documentos do Material de entrega da Lista de verificação do projeto.
+   * A variável [Glossário](/help/managing/best-practices-glossary.md) O também está disponível como parte da documentação do.
+* **[Definições de persona](/help/managing/best-practices.md#persona)**
 
-## Uso das listas de verificação {#using-the-checklists}
+## Utilização das Listas de verificação {#using-the-checklists}
 
-Para realizar com sucesso um projeto de alta qualidade, é necessário concluir todos os itens nas listas de verificação, preferencialmente em ordem:
+Para entregar com êxito um projeto de alta qualidade, você precisa concluir todos os itens nas listas de verificação, de preferência na ordem:
 
-1. As listas de verificação são definidas de acordo com a variável **[Persona](/help/managing/best-practices.md#persona)** (função) envolvido. Cada pessoa deve usar a lista de verificação adequada à sua função no projeto.
-1. As listas de verificação abrangem a **[Documentos necessários](/help/managing/best-practices.md#required-documents)** e **[Deliverables](/help/managing/best-practices.md#deliverables)** para cada marco - a pessoa relevante deve definir os campos de status e qualidade apropriados.
+1. As listas de verificação são definidas **[Persona](/help/managing/best-practices.md#persona)** (Função) envolvido. Cada pessoa deve usar a lista de verificação apropriada à sua função no projeto.
+1. As listas de verificação abrangem **[Documentos necessários](/help/managing/best-practices.md#required-documents)** e **[Entregáveis](/help/managing/best-practices.md#deliverables)** para cada marco - a pessoa relevante deve definir os campos de status e qualidade apropriados.
 
    >[!NOTE]
    >
-   >Não há uma relação direta 1:1 entre os documentos individuais necessários e os deliveries.
+   >Não há uma relação direta 1:1 entre os documentos necessários individuais e os materiais de entrega.
 
-1. Com base nos status da variável **[Documentos necessários](/help/managing/best-practices.md#required-documents)** e **[Deliverables](/help/managing/best-practices.md#deliverables)**, as planilhas **[Heartbeat de projeto](/help/managing/best-practices.md#project-heartbeat-dashboard)** e **[Status por função](/help/managing/best-practices.md#status-by-role)** são atualizadas automaticamente para fornecer uma indicação atualizada do progresso e da integridade do projeto.
+1. Com base nos status das **[Documentos necessários](/help/managing/best-practices.md#required-documents)** e **[Entregáveis](/help/managing/best-practices.md#deliverables)**, as planilhas **[Project Heartbeat](/help/managing/best-practices.md#project-heartbeat-dashboard)** e **[Status por Função](/help/managing/best-practices.md#status-by-role)** são atualizados automaticamente para fornecer uma indicação atualizada do progresso e da integridade do projeto.

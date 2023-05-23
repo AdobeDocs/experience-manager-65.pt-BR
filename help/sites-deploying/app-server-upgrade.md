@@ -1,6 +1,6 @@
 ---
-title: Etapas de atualização para instalações do servidor de aplicativos
-description: Saiba como atualizar instâncias de AEM que são implantadas pelos Servidores de Aplicativos.
+title: Etapas de Atualização para Instalações de Servidor de Aplicativos
+description: Saiba como atualizar instâncias do AEM implantadas por meio de servidores de aplicativos.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
 source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
@@ -10,13 +10,13 @@ ht-degree: 0%
 
 ---
 
-# Etapas de atualização para instalações do servidor de aplicativos{#upgrade-steps-for-application-server-installations}
+# Etapas de Atualização para Instalações de Servidor de Aplicativos{#upgrade-steps-for-application-server-installations}
 
-Esta seção descreve o procedimento que precisa ser seguido para atualizar AEM para instalações do Servidor de Aplicativos.
+Esta seção descreve o procedimento que deve ser seguido para atualizar o AEM nas instalações do Servidor de Aplicativos.
 
-Todos os exemplos neste procedimento usam o Tomcat como o Servidor de Aplicativos e implicam que você tem uma versão funcional do AEM já implantada. O procedimento destina-se a documentar as atualizações realizadas a partir de **AEM versão 6.4 a 6.5**.
+Todos os exemplos neste procedimento usam o Tomcat como o servidor da aplicação e implicam que você já tem uma versão funcional do AEM implantada. O procedimento destina-se a documentar as atualizações realizadas de **AEM versão 6.4 para 6.5**.
 
-1. Primeiro, comece o Tom Cat. Na maioria das situações, é possível fazer isso executando o `./catalina.sh` inicie o script de inicialização executando este comando a partir do terminal:
+1. Primeiro, inicie o TomCat. Na maioria das situações, é possível fazer isso executando o `./catalina.sh` inicie o script de inicialização executando este comando no terminal:
 
    ```shell
    $CATALINA_HOME/bin/catalina.sh start
@@ -28,9 +28,9 @@ Todos os exemplos neste procedimento usam o Tomcat como o Servidor de Aplicativo
    https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Em seguida, desimplante o AEM 6.4. Isso pode ser feito no Gerenciador de aplicativos do Tom Cat (`http://serveraddress:serverport/manager/html`)
+1. Em seguida, desimplante o AEM 6.4. Isso pode ser feito no Gerenciador de aplicativos do TomCat (`http://serveraddress:serverport/manager/html`)
 
-1. Agora, migre o repositório usando a ferramenta de migração crx2oak. Para fazer isso, baixe a versão mais recente do crx2oak de [esta localização](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
+1. Agora, migre o repositório usando a ferramenta de migração crx2oak. Para fazer isso, baixe a versão mais recente do crx2oak em [este local](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
    SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
@@ -57,43 +57,43 @@ Todos os exemplos neste procedimento usam o Tomcat como o Servidor de Aplicativo
 
       1. `sling.run.mode.install.options`
 
-1. Remova os arquivos e pastas que não são mais necessários. Os itens que você precisa remover especificamente são:
+1. Remova os arquivos e as pastas que não são mais necessários. Os itens que você precisa remover especificamente são:
 
-   * O **pasta de inicialização/inicialização**. Você pode excluí-lo executando o seguinte comando no terminal: `rm -rf crx-quickstart/launchpad/startup`
+   * A variável **pasta de inicialização**. Você pode excluí-lo executando o seguinte comando no terminal: `rm -rf crx-quickstart/launchpad/startup`
 
-   * O **arquivo base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * A variável **arquivo base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
 
-   * O **Arquivo BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * A variável **Arquivo BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
    * Remover **sling.options.file** executando: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
-1. Agora, crie o armazenamento de nó e o armazenamento de dados que serão usados com o AEM 6.5. Você pode fazer isso criando dois arquivos com os seguintes nomes em `crx-quickstart\install`:
+1. Agora, crie o armazenamento de nós e o armazenamento de dados que será usado com AEM 6.5. Você pode fazer isso criando dois arquivos com os seguintes nomes em `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
 
-   Esses dois arquivos configurarão AEM para usar um armazenamento de nó TarMK e um armazenamento de dados File.
+   Esses dois arquivos configurarão o AEM para usar um armazenamento de nó TarMK e um armazenamento de dados File.
 
-1. Edite os arquivos de configuração para prepará-los para uso. Mais especificamente:
+1. Edite os arquivos de configuração para deixá-los prontos para uso. Mais especificamente:
 
-   * Adicione a seguinte linha em `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
+   * Adicione a seguinte linha a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
       `customBlobStore=true`
 
-   * Em seguida, adicione as seguintes linhas a `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
+   * Em seguida, adicione as seguintes linhas em `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
 
       ```
       path=./crx-quickstart/repository/datastore
       minRecordLength=4096
       ```
 
-1. Agora é necessário alterar os modos de execução no arquivo war AEM 6.5. Para fazer isso, primeiro crie uma pasta temporária que estará hospedando a guerra AEM 6.5. O nome da pasta neste exemplo será `temp`. Depois que o arquivo war for copiado, extraia seu conteúdo executando de dentro da pasta temporária:
+1. Agora, você precisa alterar os modos de execução no arquivo WAR AEM 6.5. Para fazer isso, primeiro crie uma pasta temporária que abrigará a guerra do AEM 6.5. O nome da pasta neste exemplo será `temp`. Depois que o arquivo WAR tiver sido copiado, extraia o conteúdo executando de dentro da pasta temporária:
 
    ```
    jar xvf aem-quickstart-6.5.0.war
    ```
 
-1. Depois que o conteúdo tiver sido extraído, vá para a variável **WEB-INF** e edite o arquivo web.xml para alterar os modos de execução. Para localizar o local em que estão definidos no XML, procure a variável `sling.run.modes` string. Depois de encontrá-lo, altere os modos de execução na próxima linha de código, que por padrão é definida como author:
+1. Depois que o conteúdo for extraído, acesse o **WEB-INF** e edite o arquivo web.xml para alterar os modos de execução. Para encontrar o local onde eles estão definidos no XML, procure a variável `sling.run.modes` string. Depois de encontrá-lo, altere os modos de execução na próxima linha do código, que por padrão é definida como autor:
 
    ```bash
    <param-value >author</param-value>
@@ -116,4 +116,4 @@ Todos os exemplos neste procedimento usam o Tomcat como o Servidor de Aplicativo
    jar cvf aem65.war
    ```
 
-1. Finalmente, implante o novo arquivo de guerra em TomCat.
+1. Finalmente, implante o novo arquivo war no TomCat.

@@ -1,7 +1,7 @@
 ---
-title: Criando Aplicações Web que Renderiza Forms
+title: Criação de aplicações Web que renderizam o Forms
 seo-title: Creating Web Applications thatRenders Forms
-description: Crie um aplicativo baseado na Web que use servlets Java para chamar o serviço Forms e renderizar formulários. O servlet Java serve como o link entre o serviço Forms que retorna um formulário e um navegador da Web cliente.
+description: Crie uma aplicação baseada na web que use servlets Java para chamar o serviço Forms e renderizar formulários. O servlet Java serve como o link entre o serviço Forms que retorna um formulário e um navegador Web cliente.
 seo-description: Create a web-based application that uses Java servlets to invoke the Forms service and render forms. The Java servlet serves as the link between the Forms service that returns a form and a client web browser.
 uuid: 00de10c5-79bd-4d8a-ae18-32f1fd2623bf
 contentOwner: admin
@@ -19,21 +19,21 @@ ht-degree: 0%
 
 ---
 
-# Criação de aplicativos Web que renderizam o Forms {#creating-web-applications-thatrenders-forms}
+# Criação de aplicações Web que renderizam o Forms {#creating-web-applications-thatrenders-forms}
 
-**Exemplos e exemplos neste documento são apenas para o AEM Forms no ambiente JEE.**
+**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
 
-## Criação de aplicativos Web que renderizam o Forms {#creating-web-applications-that-renders-forms}
+## Criação de aplicações Web que renderizam o Forms {#creating-web-applications-that-renders-forms}
 
-Você pode criar um aplicativo baseado na Web que use servlets Java para chamar o serviço Forms e renderizar formulários. Uma vantagem de usar um servlet Java™ é que você pode gravar o valor de retorno do processo em um navegador da Web cliente. Ou seja, um servlet Java pode ser usado como o link entre o serviço da Forms que retorna um formulário e um navegador da Web cliente.
+Você pode criar uma aplicação baseada na web que use servlets Java para chamar o serviço Forms e renderizar formulários. Uma vantagem de usar um servlet Java™ é que você pode gravar o valor de retorno do processo em um navegador da Web cliente. Ou seja, um servlet Java pode ser usado como o link entre o serviço Forms que retorna um formulário e um navegador cliente da Web.
 
 >[!NOTE]
 >
->Esta seção descreve como criar um aplicativo baseado na Web que use um servlet Java que chame o serviço Forms e renderize formulários baseados em fragmentos. (Consulte [Renderização do Forms com base em fragmentos](/help/forms/developing/rendering-forms-based-fragments.md).)
+>Esta seção descreve como criar uma aplicação baseada na Web que usa um servlet Java que chama o serviço do Forms e renderiza formulários com base em fragmentos. (Consulte [Renderização do Forms com base em fragmentos](/help/forms/developing/rendering-forms-based-fragments.md).)
 
-Usando um servlet Java, você pode gravar um formulário em um navegador da Web cliente para que um cliente possa visualizar e inserir dados no formulário. Depois de preencher o formulário com dados, o usuário da Web clica em um botão Enviar localizado no formulário para enviar informações de volta ao servlet Java, onde os dados podem ser recuperados e processados. Por exemplo, os dados podem ser enviados para outro processo.
+Usando um servlet Java, você pode escrever um formulário em um navegador Web cliente para que um cliente possa visualizar e inserir dados no formulário. Depois de preencher o formulário com dados, o usuário da Web clica em um botão de envio localizado no formulário para enviar informações de volta para o servlet Java, onde os dados podem ser recuperados e processados. Por exemplo, os dados podem ser enviados para outro processo.
 
-Esta seção discute como criar um aplicativo baseado na web que permite que o usuário selecione dados de formulário com base em americano ou dados de formulário com base em Canadá, conforme mostrado na ilustração a seguir.
+Esta seção discute como criar um aplicativo baseado na Web que permita ao usuário selecionar dados de formulário baseados nos EUA ou dados de formulário baseados no Canadá, conforme mostrado na ilustração a seguir.
 
 ![cw_cw_fragmentwebclient](assets/cw_cw_fragmentwebclient.png)
 
@@ -41,52 +41,52 @@ O formulário renderizado é um formulário baseado em fragmentos. Ou seja, se o
 
 ![cw_cw_fragementformfooter](assets/cw_cw_fragementformfooter.png)
 
-Da mesma forma, se o usuário selecionar dados canadenses, o formulário retornado conterá um endereço canadense, conforme mostrado na ilustração a seguir.
+Da mesma forma, se o usuário selecionar dados canadenses, o formulário retornado conterá um endereço canadense, como mostrado na ilustração a seguir.
 
 ![cw_cw_fragementformfootercnd](assets/cw_cw_fragementformfootercnd.png)
 
 >[!NOTE]
 >
->Para obter informações sobre como criar designs de formulário com base em fragmentos, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+>Para obter informações sobre como criar designs de formulário com base em fragmentos, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt).
 
 **Arquivos de exemplo**
 
-Esta seção usa arquivos de exemplo que podem ser localizados no seguinte local:
+Esta seção usa arquivos de exemplo que podem estar localizados no seguinte local:
 
-&lt;*Diretório de instalação do Forms Designer*>/Amostras/Forms/Pedido de compra/Fragmentos de formulário
+&lt;*Diretório de instalação do Forms Designer*>/Samples/Forms/Ordem de compra/Fragmentos de formulário
 
-onde &lt;*diretório de instalação*> é o caminho de instalação. Para os fins do aplicativo cliente, o arquivo Purchase Order Dynamic.xdp foi copiado deste local de instalação e implantado em um aplicativo Forms chamado *Aplicativos/FormsApplication*. O arquivo Purchase Order Dynamic.xdp é colocado em uma pasta chamada FormsFolder. Da mesma forma, os fragmentos são colocados na pasta Fragmentos, como mostrado na ilustração a seguir.
+onde &lt;*diretório de instalação*> é o caminho de instalação. Para os fins do aplicativo cliente, o arquivo Dynamic.xdp da ordem de compra foi copiado desse local de instalação e implantado em um aplicativo da Forms chamado *Aplicativos/FormuláriosAplicativo*. O arquivo Dynamic.xdp da ordem de compra é colocado em uma pasta chamada FormsFolder. Da mesma forma, os fragmentos são colocados em uma pasta chamada Fragmentos, como mostrado na ilustração a seguir.
 
 ![cw_cw_fragmentsrepository](assets/cw_cw_fragmentsrepository.png)
 
-Para acessar o design de formulário Purchase Order Dynamic.xdp, especifique `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp` como o nome do formulário (o primeiro parâmetro passado para a função `renderPDFForm` método) e `repository:///` como o valor do URI raiz do conteúdo.
+Para acessar o design do formulário Dynamic.xdp da Ordem de Compra, especifique `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp` como o nome do formulário (o primeiro parâmetro passado para o `renderPDFForm` ) e `repository:///` como o valor de URI da raiz do conteúdo.
 
-Os arquivos de dados XML usados pelo aplicativo Web foram movidos da pasta Dados para `C:\Adobe`(o sistema de arquivos que pertence ao servidor de aplicativos J2EE que hospeda o AEM Forms). Os nomes de arquivo são Ordem de Compra *Canada.xml* e Ordem de Compra *US.xml*.
+Os arquivos de dados XML usados pelo aplicativo web foram movidos da pasta Data para `C:\Adobe`(o sistema de arquivos que pertence ao servidor de aplicativos J2EE que hospeda o AEM Forms). Os nomes de arquivo são Ordem de compra *Canadá.xml* e Ordem de Compra *EUA.xml*.
 
 >[!NOTE]
 >
->Para obter informações sobre como criar um aplicativo do Forms usando o Workbench, consulte [ajuda do workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>Para obter informações sobre como criar um aplicativo Forms usando o Workbench, consulte [Ajuda do workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
-Para criar aplicativos baseados na Web que renderizam formulários com base em fragmentos, execute as seguintes etapas:
+Para criar aplicativos baseados na Web que renderizem formulários com base em fragmentos, execute as seguintes etapas:
 
 1. Crie um novo projeto da Web.
-1. Crie uma lógica de aplicativo Java que represente o servlet Java.
-1. Crie a página da Web para o aplicativo da Web.
-1. Compacte o aplicativo Web em um arquivo WAR.
+1. Crie uma lógica de aplicação Java que represente o servlet Java.
+1. Crie a página da Web para o aplicativo Web.
+1. Empacotar a aplicação Web em um arquivo WAR.
 1. Implante o arquivo WAR no servidor de aplicativos J2EE.
 1. Teste seu aplicativo web.
 
 >[!NOTE]
 >
->Algumas dessas etapas dependem do aplicativo J2EE no qual o AEM Forms é implantado. Por exemplo, o método usado para implantar um arquivo WAR depende do servidor de aplicativos J2EE que você está usando. Esta seção supõe que o AEM Forms esteja implantado no JBoss®.
+>Algumas dessas etapas dependem da aplicação J2EE na qual o AEM Forms é implantado. Por exemplo, o método usado para disponibilizar um arquivo WAR depende do servidor de aplicativos J2EE que você está usando. Esta seção pressupõe que o AEM Forms esteja implantado no JBoss®.
 
-### Criação de um projeto da Web {#creating-a-web-project}
+### Criação de um projeto web {#creating-a-web-project}
 
-A primeira etapa para criar uma aplicação Web que contenha um servlet Java que possa chamar o serviço Forms é criar um novo projeto Web. O Java IDE no qual este documento se baseia é o Eclipse 3.3. Usando o Eclipse IDE, crie um projeto da Web e adicione os arquivos JAR necessários ao seu projeto. Finalmente, adicione uma HTML page chamada *index.html* e um servlet Java para o seu projeto.
+A primeira etapa para criar uma aplicação Web que contenha um servlet Java que possa chamar o serviço Forms é criar um novo projeto Web. O Java IDE no qual este documento se baseia é o Eclipse 3.3. Usando o Eclipse IDE, crie um projeto da Web e adicione os arquivos JAR necessários ao seu projeto. Por fim, adicione uma página de HTML chamada *index.html* e um servlet Java para o seu projeto.
 
-A lista a seguir especifica os arquivos JAR que você deve adicionar ao seu projeto da Web:
+A lista a seguir especifica os arquivos JAR que devem ser adicionados ao projeto da Web:
 
 * adobe-forms-client.jar
 * adobe-livecycle-client.jar
@@ -95,37 +95,37 @@ A lista a seguir especifica os arquivos JAR que você deve adicionar ao seu proj
 
 Para obter a localização desses arquivos JAR, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Para criar um projeto da Web:**
+**Para criar um projeto Web:**
 
 1. Inicie o Eclipse e clique em **Arquivo** >  **Novo projeto**.
-1. No **Novo projeto** caixa de diálogo, selecione **Web** > **Projeto Web dinâmico**.
-1. Tipo `FragmentsWebApplication` para o nome do seu projeto e clique em **Concluir**.
+1. No **Novo projeto** caixa de diálogo, selecione **Web** > **Projeto dinâmico da Web**.
+1. Tipo `FragmentsWebApplication` para obter o nome do seu projeto e clique em **Concluir**.
 
-**Para adicionar os arquivos JAR necessários ao seu projeto:**
+**Para adicionar os arquivos JAR necessários ao projeto:**
 
-1. Na janela Explorador de projetos , clique com o botão direito do mouse no `FragmentsWebApplication` e selecione **Propriedades**.
-1. Clique em **Caminho de compilação Java** e clique no botão **Bibliotecas** guia .
-1. Clique no botão **Adicionar JARs externos** e navegue até os arquivos JAR para incluir.
+1. Na janela Project Explorer, clique com o botão direito do mouse no `FragmentsWebApplication` projeto e selecione **Propriedades**.
+1. Clique em **Caminho de compilação Java** e, em seguida, clique no link **Bibliotecas** guia.
+1. Clique em **Adicionar JARs externos** e navegue até os arquivos JAR que serão incluídos.
 
-**Para adicionar um servlet Java ao seu projeto:**
+**Para adicionar um servlet Java ao projeto:**
 
-1. Na janela Explorador de projetos , clique com o botão direito do mouse no `FragmentsWebApplication` e selecione **Novo** >  **Outras**.
-1. Expanda o **Web** pasta, selecione **Servlet** e, em seguida, clique em **Próximo**.
-1. Na caixa de diálogo Criar servlet, digite `RenderFormFragment` para o nome do servlet e clique em **Concluir**.
+1. Na janela Project Explorer, clique com o botão direito do mouse no `FragmentsWebApplication` projeto e selecione **Novo** >  **Outro**.
+1. Expanda a **Web** , selecione **Servlet** e clique em **Próxima**.
+1. Na caixa de diálogo Criar Servlet, digite `RenderFormFragment` para obter o nome do servlet e, em seguida, clique em **Concluir**.
 
-**Para adicionar uma HTML ao seu projeto:**
+**Para adicionar uma página de HTML ao projeto:**
 
-1. Na janela Explorador de projetos , clique com o botão direito do mouse no `FragmentsWebApplication` e selecione **Novo** > **Outras**.
-1. Expanda o **Web** pasta, selecione **HTML** e clique em **Próximo**.
+1. Na janela Project Explorer, clique com o botão direito do mouse no `FragmentsWebApplication` projeto e selecione **Novo** > **Outro**.
+1. Expanda a **Web** , selecione **HTML** e clique em **Próxima**.
 1. Na caixa de diálogo Novo HTML, digite `index.html` para o nome do arquivo e clique em **Concluir**.
 
 >[!NOTE]
 >
->Para obter informações sobre como criar a HTML que chama a variável `RenderFormFragment` Servlet Java, consulte [Criação da página da Web](/help/forms/developing/rendering-forms.md#creating-the-web-page).
+>Para obter informações sobre como criar a página HTML que chama a variável `RenderFormFragment` Servlet Java, consulte [Criação da página da Web](/help/forms/developing/rendering-forms.md#creating-the-web-page).
 
-### Criar lógica de aplicativo Java para o servlet {#creating-java-application-logic-for-the-servlet}
+### Criando lógica da aplicação Java para o servlet {#creating-java-application-logic-for-the-servlet}
 
-Você cria uma lógica de aplicativo Java que chama o serviço Forms de dentro do servlet Java. O código a seguir mostra a sintaxe do `RenderFormFragment` Servlet Java:
+Você cria a lógica da aplicação Java que chama o serviço Forms de dentro do servlet Java. O código a seguir mostra a sintaxe da variável `RenderFormFragment` Servlet Java:
 
 ```java
      public class RenderFormFragment extends HttpServlet implements Servlet {
@@ -140,35 +140,35 @@ Você cria uma lógica de aplicativo Java que chama o serviço Forms de dentro d
              }
 ```
 
-Normalmente, você não colocaria o código do cliente em um servlet Java `doGet` ou `doPost` método . Uma prática de programação melhor é colocar esse código em uma classe separada, instanciando a classe de dentro do `doPost` método (ou `doGet` e chame os métodos apropriados. No entanto, para a brevidade do código, os exemplos de código nesta seção são mantidos para um mínimo e os exemplos de código são colocados na variável `doPost` método .
+Normalmente, você não colocaria o código do cliente em um do servlet Java `doGet` ou `doPost` método. Uma prática de programação recomendada é colocar esse código em uma classe separada, instanciar a classe de dentro do `doPost` método (ou `doGet` ) e chame os métodos apropriados. No entanto, para abreviar o código, os exemplos de código nesta seção são reduzidos ao mínimo e os exemplos de código são colocados no `doPost` método.
 
-Para renderizar um formulário com base em fragmentos usando a API do serviço do Forms, execute as seguintes tarefas:
+Para renderizar um formulário com base em fragmentos usando a API de serviço do Forms, execute as seguintes tarefas:
 
-1. Inclua arquivos JAR do cliente, como adobe-forms-client.jar, no caminho de classe do seu projeto Java. Para obter informações sobre a localização desses arquivos, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
-1. Recupere o valor do botão de opção que é enviado do formulário HTML e especifica se os dados americanos ou canadenses devem ser usados. Se o americano for enviado, crie um `com.adobe.idp.Document` que armazena dados localizados na *Purchase Order US.xml*. Da mesma forma, se for Canadá, crie um `com.adobe.idp.Document` que armazena dados localizados na *Purchase Order Canada.xml* arquivo.
-1. Crie um `ServiceClientFactory` objeto que contém propriedades de conexão. (Consulte [Configuração das propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-1. Crie um `FormsServiceClient` usando seu construtor e passando o `ServiceClientFactory` objeto.
-1. Crie um `URLSpec` que armazena valores de URI usando seu construtor.
-1. Chame o `URLSpec` do objeto `setApplicationWebRoot` e transmita um valor de string que representa a raiz da Web do aplicativo.
-1. Chame o `URLSpec` do objeto `setContentRootURI` e transmita um valor de string que especifica o valor de URI da raiz de conteúdo. Verifique se o design de formulário e os fragmentos estão localizados no URI raiz do conteúdo. Caso contrário, o serviço Forms acionará uma exceção. Para fazer referência ao repositório do AEM Forms, especifique `repository://`.
-1. Chame o `URLSpec` do objeto `setTargetURL` e transmita um valor de string que especifica o valor do URL de destino para onde os dados do formulário são publicados. Se você definir o URL de destino no design de formulário, poderá passar uma string vazia. Também é possível especificar a URL para a qual um formulário é enviado para executar cálculos.
-1. Chame o `FormsServiceClient` do objeto `renderPDFForm` e transmita os seguintes valores:
+1. Inclua arquivos JAR do cliente, como adobe-forms-client.jar, no caminho de classe do projeto Java. Para obter informações sobre a localização desses arquivos, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+1. Recupere o valor do botão de opção enviado do formulário HTML e especifique se os dados americanos ou canadenses devem ser usados. Se o estado americano for enviado, crie um `com.adobe.idp.Document` que armazena dados localizados na *Ordem de Compra US.xml*. Da mesma forma, se for canadense, crie um `com.adobe.idp.Document` que armazena dados localizados na *Ordem de Compra Canada.xml* arquivo.
+1. Criar um `ServiceClientFactory` objeto que contém propriedades de conexão. (Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+1. Criar um `FormsServiceClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+1. Criar um `URLSpec` objeto que armazena valores URI usando seu construtor.
+1. Chame o `URLSpec` do objeto `setApplicationWebRoot` e transmita um valor de string que represente a raiz da web do aplicativo.
+1. Chame o `URLSpec` do objeto `setContentRootURI` e transmita um valor de string que especifique o valor do URI raiz do conteúdo. Verifique se o design do formulário e os fragmentos estão localizados no URI da raiz de conteúdo. Caso contrário, o serviço Forms acionará uma exceção. Para fazer referência ao repositório do AEM Forms, especifique `repository://`.
+1. Chame o `URLSpec` do objeto `setTargetURL` e transmitem um valor de string que especifica o valor da URL de destino para onde os dados de formulário são publicados. Se você definir o URL de destino no design do formulário, será possível passar uma cadeia de caracteres vazia. Você também pode especificar a URL para onde um formulário é enviado para realizar cálculos.
+1. Chame o `FormsServiceClient` do objeto `renderPDFForm` e passe os seguintes valores:
 
-   * Um valor de string que especifica o nome do design de formulário, incluindo a extensão de nome de arquivo.
-   * A `com.adobe.idp.Document` objeto que contém dados para mesclar com o formulário (criado na etapa 2).
+   * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo.
+   * A `com.adobe.idp.Document` objeto que contém dados a serem mesclados com o formulário (criado na etapa 2).
    * A `PDFFormRenderSpec` objeto que armazena opções de tempo de execução. Para obter mais informações, consulte [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * A `URLSpec` objeto que contém valores de URI exigidos pelo serviço Forms para renderizar um formulário com base em fragmentos.
-   * A `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
+   * A `URLSpec` objeto que contém valores de URI exigidos pelo serviço do Forms para renderizar um formulário com base em fragmentos.
+   * A `java.util.HashMap` objeto que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
 
-   O `renderPDFForm` método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário que deve ser gravado no navegador da Web do cliente.
+   A variável `renderPDFForm` o método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário que deve ser gravado no navegador da web do cliente.
 
-1. Crie um `com.adobe.idp.Document` chamando o `FormsResult` objeto &quot;s `getOutputContent` método .
-1. Obtenha o tipo de conteúdo da variável `com.adobe.idp.Document` ao invocar seu `getContentType` método .
-1. Defina as `javax.servlet.http.HttpServletResponse` tipo de conteúdo do objeto, chamando seu `setContentType` e a transmissão do tipo de conteúdo do `com.adobe.idp.Document` objeto.
-1. Crie um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados do formulário no navegador da Web cliente, chamando o `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream` método .
-1. Crie um `java.io.InputStream` chamando o `com.adobe.idp.Document` do objeto `getInputStream` método .
-1. Crie uma matriz de bytes para preenchê-la com o fluxo de dados do formulário, chamando o `InputStream` do objeto `read`e transmitindo a matriz de bytes como um argumento.
-1. Chame o `javax.servlet.ServletOutputStream` do objeto `write` para enviar o fluxo de dados do formulário para o navegador da Web cliente. Transmita a matriz de bytes para a `write` método .
+1. Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` object&#39;s `getOutputContent` método.
+1. Obter o tipo de conteúdo do `com.adobe.idp.Document` ao invocar seu `getContentType` método.
+1. Defina o `javax.servlet.http.HttpServletResponse` tipo de conteúdo do objeto chamando seu `setContentType` e transmitindo o tipo de conteúdo do `com.adobe.idp.Document` objeto.
+1. Criar um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados de formulário no navegador da web cliente, chamando o `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream` método.
+1. Criar um `java.io.InputStream` ao invocar o `com.adobe.idp.Document` do objeto `getInputStream` método.
+1. Crie uma matriz de bytes para preenchê-la com o fluxo de dados de formulário, chamando o `InputStream` do objeto `read`e transmitindo a matriz de bytes como um argumento.
+1. Chame o `javax.servlet.ServletOutputStream` do objeto `write` para enviar o fluxo de dados de formulário para o navegador web cliente. Passe a matriz de bytes para o `write` método.
 
 O código de exemplo a seguir representa o servlet Java que chama o serviço Forms e renderiza um formulário com base em fragmentos.
 
@@ -309,9 +309,9 @@ O código de exemplo a seguir representa o servlet Java que chama o serviço For
 
 ### Criação da página da Web {#creating-the-web-page}
 
-A página da Web index.html fornece um ponto de entrada para o servlet Java e chama o serviço Forms. Esta página da Web é um formulário HTML básico que contém dois botões de opção e um botão Enviar. O nome dos botões de opção é rádio. Quando o usuário clica no botão Enviar , os dados do formulário são publicados no `RenderFormFragment` Servlet Java.
+A página da Web index.html fornece um ponto de entrada para o servlet Java e chama o serviço Forms. Esta página da Web é um formulário HTML básico que contém dois botões de opção e um botão de envio. O nome dos botões de opção é radio. Quando o usuário clica no botão enviar, os dados do formulário são postados no `RenderFormFragment` Servlet Java.
 
-O servlet Java captura os dados publicados da página do HTML usando o seguinte código Java:
+O servlet Java captura os dados publicados na página HTML usando o seguinte código Java:
 
 ```java
              Document oInputData = null;
@@ -331,7 +331,7 @@ O servlet Java captura os dados publicados da página do HTML usando o seguinte 
              }
 ```
 
-O código de HTML a seguir está localizado no arquivo index.html que foi criado durante a configuração do ambiente de desenvolvimento. (Consulte [Criação de um projeto da Web](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
+O código de HTML a seguir está localizado no arquivo index.html criado durante a configuração do ambiente de desenvolvimento. (Consulte [Criação de um projeto web](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
 
 ```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -373,28 +373,28 @@ O código de HTML a seguir está localizado no arquivo index.html que foi criado
  </html>
 ```
 
-### Empacotamento da aplicação web {#packaging-the-web-application}
+### Empacotamento do aplicativo web {#packaging-the-web-application}
 
-Para implantar o servlet Java que chama o serviço Forms, coloque o aplicativo Web em um arquivo WAR. Certifique-se de que os arquivos JAR externos dos quais a lógica comercial do componente depende, como adobe-livecycle-client.jar e adobe-forms-client.jar, também estejam incluídos no arquivo WAR.
+Para implantar o servlet Java que chama o serviço Forms, empacote sua aplicação web em um arquivo WAR. Certifique-se de que os arquivos JAR externos dos quais a lógica de negócios do componente depende, como adobe-livecycle-client.jar e adobe-forms-client.jar, também estejam incluídos no arquivo WAR.
 
-**Para empacotar um aplicativo Web em um arquivo WAR:**
+**Para empacotar uma aplicação Web em um arquivo WAR:**
 
-1. No **Explorador de projetos** , clique com o botão direito do mouse no `FragmentsWebApplication` e selecione **Exportar** > **Arquivo WAR**.
-1. No **Módulo Web** caixa de texto, tipo `FragmentsWebApplication` para o nome do projeto Java.
-1. No **Destino** caixa de texto, tipo `FragmentsWebApplication.war`**para** nome do arquivo, especifique o local do arquivo WAR e clique em Concluir.
+1. No **Explorador de projetos** clique com o botão direito do mouse na janela `FragmentsWebApplication` projeto e selecione **Exportar** > **arquivo WAR**.
+1. No **Módulo Web** caixa de texto, digite `FragmentsWebApplication` para o nome do projeto Java.
+1. No **Destino** caixa de texto, digite `FragmentsWebApplication.war`**para o** nome do arquivo, especifique o local do arquivo WAR e clique em Concluir.
 
-### Implantação do arquivo WAR no servidor de aplicativos J2EE {#deploying-the-war-file-to-the-j2ee-application-server}
+### Implantando o arquivo WAR no servidor de aplicativos J2EE {#deploying-the-war-file-to-the-j2ee-application-server}
 
-Você pode implantar o arquivo WAR no servidor de aplicativos J2EE no qual o AEM Forms é implantado. Após a implantação do arquivo WAR, é possível acessar a página da Web do HTML por meio de um navegador da Web.
+Você pode implantar o arquivo WAR no servidor da aplicação J2EE no qual o AEM Forms é implantado. Depois que o arquivo WAR for implantado, você poderá acessar a página da Web do HTML usando um navegador da Web.
 
-**Para implantar o arquivo WAR no servidor de aplicativos J2EE:**
+**Para implantar o arquivo WAR no servidor da aplicação J2EE:**
 
 * Copie o arquivo WAR do caminho de exportação para `[Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\all\deploy`.
 
-### Teste da aplicação web {#testing-your-web-application}
+### Teste do aplicativo web {#testing-your-web-application}
 
-Depois de implantar a aplicação Web, você pode testá-la usando um navegador da Web. Supondo que você esteja usando o mesmo computador que hospeda o AEM Forms, você pode especificar o seguinte URL:
+Depois de implantar a aplicação Web, você pode testá-la usando um navegador da Web. Supondo que você esteja usando o mesmo computador que hospeda o AEM Forms, é possível especificar a seguinte URL:
 
 * http://localhost:8080/FragmentsWebApplication/index.html
 
-   Selecione um botão de opção e clique no botão Submit . Um formulário baseado em fragmentos será exibido no navegador da Web. Se ocorrerem problemas, consulte o arquivo de log do servidor de aplicativos J2EE.
+   Selecione um botão de opção e clique no botão Enviar. Um Formulário baseado em fragmentos será exibido no navegador da Web. Se ocorrerem problemas, consulte o arquivo de log do servidor de aplicativos J2EE.

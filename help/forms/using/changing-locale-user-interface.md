@@ -1,7 +1,7 @@
 ---
-title: Alteração do local da interface do usuário do AEM Forms workspace
+title: Alterando o local da interface do usuário do espaço de trabalho do AEM Forms
 seo-title: Changing the locale of AEM Forms workspace user interface
-description: Como modificar o espaço de trabalho do AEM Forms para localizar texto, categorias recolhidas, filas e processos, e o seletor de datas na interface.
+description: Como modificar o espaço de trabalho do AEM Forms para localizar texto, categorias recolhidas, filas e processos e o seletor de datas na interface.
 seo-description: How to modify the AEM Forms workspace to localize text, collapsed categories, queues, and processes, and the date picker on the interface.
 uuid: c89ff150-a36e-45cc-99a6-8768dbe58eab
 contentOwner: robhagat
@@ -18,52 +18,52 @@ ht-degree: 0%
 
 ---
 
-# Alteração do local da interface do usuário do AEM Forms workspace{#changing-the-locale-of-aem-forms-workspace-user-interface}
+# Alterando o local da interface do usuário do espaço de trabalho do AEM Forms{#changing-the-locale-of-aem-forms-workspace-user-interface}
 
-A AEM Forms workspace oferece suporte pronto para uso para idiomas inglês, francês, alemão e japonês. Também fornece a capacidade de localizar a interface do usuário do AEM Forms workspace para qualquer outro idioma.
+O espaço de trabalho do AEM Forms oferece suporte imediato para os idiomas inglês, francês, alemão e japonês. Ela também permite localizar a interface do usuário do AEM Forms Workspace em qualquer outro idioma.
 
-Para localizar a interface do usuário do AEM Forms workspace para o idioma de sua escolha:
+Para traduzir a interface do usuário do AEM Forms Workspace para o idioma de sua escolha:
 
-* Localizar texto do espaço de trabalho do AEM Forms.
-* Localize categorias, filas e processos recolhidos.
-* Localizar Selecionador de Datas
+* Localize o texto do espaço de trabalho do AEM Forms.
+* Localizar categorias, filas e processos recolhidos.
+* Localizar Seletor de Data
 
 Antes de executar as etapas acima, siga as etapas listadas em [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
 
 >[!NOTE]
 >
->Para alterar o idioma da tela de logon do espaço de trabalho do AEM Forms, consulte [Criação de uma nova tela de logon](../../forms/using/creating-new-login-screen.md).
+>Para alterar o idioma da tela de logon do espaço de trabalho do AEM Forms, consulte [Criando uma nova tela de logon](../../forms/using/creating-new-login-screen.md).
 
 ## Localização de texto {#localizing-text}
 
-Execute as etapas a seguir para adicionar suporte a um idioma *Novo* e o código de local do navegador *nw*.
+Execute as seguintes etapas para adicionar suporte a um idioma *Novo* e o código de localidade do navegador *novo*.
 
-1. Faça logon no CRXDE Lite.
+1. Efetue logon no CRXDE Lite.
 O URL padrão do CRXDE Lite é `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Navegar até o local `apps/ws/locales` e criar uma nova pasta `nw.`
-1. Copiar o arquivo `translation.json`do local `/apps/ws/locales/en-US` para localização `/apps/ws/locales/nw` .
-1. Navegar para `/apps/ws/locales/nw` e abrir `translation.json` para edição. Faça alterações específicas da localidade no arquivo translation.json.
+1. Navegue até o local `apps/ws/locales` e criar uma nova pasta `nw.`
+1. Copie o arquivo `translation.json`do local `/apps/ws/locales/en-US` para o local `/apps/ws/locales/nw` .
+1. Navegue até `/apps/ws/locales/nw` e aberto `translation.json` para edição. Faça alterações específicas da localidade no arquivo translation.json.
 
-   Os exemplos a seguir contêm o arquivo translation.json para as localidades em inglês e francês do espaço de trabalho do AEM Forms.
+   Os exemplos a seguir contêm o arquivo translation.json para os códigos de idioma inglês e francês do espaço de trabalho do AEM Forms.
 
-   ![translation_json_in_en](assets/translation_json_in_en.png) ![translation_json_in_fr](assets/translation_json_in_fr.png)
+   ![translation_json_in_br](assets/translation_json_in_en.png) ![translation_json_in_fr](assets/translation_json_in_fr.png)
 
 ## Localização de categorias, filas e processos recolhidos {#localizing-collapsed-categories-queues-and-processes}
 
-O espaço de trabalho do AEM Forms usa imagens para exibir cabeçalhos de categorias, filas e processos. Você precisa de um pacote de desenvolvimento para localizar esses cabeçalhos. Para obter informações detalhadas sobre a criação de pacotes de desenvolvimento, consulte [Criação do código do espaço de trabalho do AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+O AEM Forms workspace usa imagens para exibir cabeçalhos de categorias, filas e processos. É necessário um pacote de desenvolvimento para localizar esses cabeçalhos. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criação do código do espaço de trabalho do AEM Forms.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-Nas etapas a seguir, presume-se que os novos arquivos de imagem localizados sejam *Categories_nw.png*, *Queue_nw.png* e *Processes_nw.png*. A largura recomendada das imagens é de 19px.
+Nas etapas a seguir, presume-se que os novos arquivos de imagem localizados sejam *Categories_nw.png*, *Fila_nw.png*, e *Processes_nw.png*. A largura recomendada das imagens é 19px.
 
 >[!NOTE]
 >
->Para localizar o código do idioma do navegador do código do idioma do navegador. Abrir `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
+>Para encontrar o código de localidade do idioma do navegador do seu navegador. Abrir `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
-![recolher_painéis_imagem](assets/collapsing_panels_image.png)
+![recolhimento_panels_image](assets/collapsing_panels_image.png)
 
 Execute as seguintes etapas para localizar as imagens:
 
-1. Usando um cliente WebDAV, coloque os arquivos de imagem no */apps/ws/images* pasta.
-1. Navegar para */apps/ws/css*. Abrir *newStyle.css* para editar e adicionar as seguintes entradas:
+1. Usando um cliente WebDAV, coloque os arquivos de imagem na */apps/ws/images* pasta.
+1. Navegue até */apps/ws/css*. Abertura *newStyle.css* para editar e adicionar as seguintes entradas:
 
    ```css
    #categoryListBar .content.nw {
@@ -79,8 +79,8 @@ Execute as seguintes etapas para localizar as imagens:
    }
    ```
 
-1. Execute todas as alterações semânticas listadas no [Personalização do Workspace](../../forms/using/introduction-customizing-html-workspace.md) artigo 10. o
-1. Navegue até o *js/runtime/utility* e abra o *usersession.js* para edição.
+1. Execute todas as alterações semânticas listadas no [Personalização do Workspace](../../forms/using/introduction-customizing-html-workspace.md) artigo.
+1. Navegue até a *js/runtime/utility* e abra a *usersession.js* arquivo para edição.
 1. Localize o código listado no bloco de código original e adicione a condição *lang!== &#39;nw&#39;* para a instrução if:
 
    ```javascript
@@ -107,25 +107,25 @@ Execute as seguintes etapas para localizar as imagens:
        }
    ```
 
-## Localizando seletor de datas {#localizing-date-picker}
+## Seletor de Data de Localização {#localizing-date-picker}
 
-Você precisa que o pacote de desenvolvimento localize o *datepicker* API. Para obter informações detalhadas sobre a criação de pacotes de desenvolvimento, consulte [Criação do código do espaço de trabalho do AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
+É necessário um pacote de desenvolvimento para localizar o *datepicker* API. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criação do código do espaço de trabalho do AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
-1. Baixe e extraia o [Pacote da interface do usuário do jQuery](https://jqueryui.com/download/all/), navegue até *&lt;extracted jquery=&quot;&quot; ui=&quot;&quot; package=&quot;&quot;>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
-1. Copie o arquivo jquery.ui.datepicker-new.js para código de localidade agora em apps/ws/js/libs/jqueryui e faça alterações específicas de localidade no arquivo .
-1. Navegar para `apps/ws/js` e abra o `jquery.ui.datepicker-nw.js` para edição.
-1. No arquivo main.js, crie um alias para `jquery.ui.datepicker-nw.js.` O código para criar um alias para a variável `jquery.ui.datepicker-nw.js` O arquivo é:
+1. Baixe e extraia o [Pacote de interface do usuário jQuery](https://jqueryui.com/download/all/), navegue até *&lt;extracted jquery=&quot;&quot; ui=&quot;&quot; package=&quot;&quot;>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
+1. Copie o arquivo jquery.ui.datepicker-nw.js do código de localidade nw para apps/ws/js/libs/jqueryui e faça alterações específicas de localidade no arquivo.
+1. Navegue até `apps/ws/js` e abra o `jquery.ui.datepicker-nw.js` arquivo para edição.
+1. No arquivo main.js, crie um alias para `jquery.ui.datepicker-nw.js.` O código para criar um alias para o `jquery.ui.datepicker-nw.js` o arquivo é:
 
    ```javascript
    jqueryuidatepickernw : pathprefix + 'libs/jqueryui/jquery.ui.datepicker-nw'
    ```
 
-1. Usar alias `jqueryuidatepickernw` para incluir a `jquery.ui.datepicker-nw.js` em todos os arquivos que usam datepicker. O datepicker é usado nos seguintes arquivos:
+1. Usar alias `jqueryuidatepickernw` para incluir o `jquery.ui.datepicker-nw.js` em todos os arquivos que usam o datepicker. O seletor de datas é usado nos seguintes arquivos:
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`
 
-   O código de amostra abaixo mostra como adicionar a entrada de jquery.ui.datepicker-new.js:
+   O código de amostra abaixo mostra como adicionar a entrada de jquery.ui.datepicker-nw.js:
 
    ```json
    //Original Code
@@ -167,7 +167,7 @@ Você precisa que o pacote de desenvolvimento localize o *datepicker* API. Para 
    * apps\ws\js\runtime\views\searchtemplatedetails.js
    * apps\ws\js\runtime\views\outofoffice.js
 
-   Altere o seguinte código para adicionar a nova localidade:
+   Altere o código a seguir para adicionar o novo local:
 
    ```javascript
    if (locale === 'ja-JP') {

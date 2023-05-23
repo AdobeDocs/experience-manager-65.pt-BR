@@ -1,7 +1,7 @@
 ---
-title: Integração do Form Bridge ao portal personalizado para formulários HTML5
+title: Integração do Form Bridge com o portal personalizado para formulários HTML5
 seo-title: Integrating Form Bridge with custom portal for HTML5 forms
-description: Você pode usar a API FormBridge para obter ou definir os valores dos campos do formulário a partir da página HTML e enviar o formulário.
+description: Você pode usar a API FormBridge para obter ou definir os valores dos campos de formulário na página HTML e enviar o formulário.
 seo-description: You can use the FormBridge API to get or set the values of form fields from the HTML page and submit the form.
 uuid: c8911f82-1a25-47a5-9a06-19b5dce74a2c
 content-type: reference
@@ -18,27 +18,27 @@ ht-degree: 0%
 
 ---
 
-# Integração do Form Bridge ao portal personalizado para formulários HTML5{#integrating-form-bridge-with-custom-portal-for-html-forms}
+# Integração do Form Bridge com o portal personalizado para formulários HTML5{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-O FormBridge é uma API HTML5 Forms bridge que permite interagir com um formulário. Para obter a referência da API do FormBridge, consulte [Referência da API do FormBridge](/help/forms/using/form-bridge-apis.md).
+FormBridge é uma API de ponte de formulários HTML5 que permite interagir com um formulário. Para obter a referência da API FormBridge, consulte [Referência da API do FormBridge](/help/forms/using/form-bridge-apis.md).
 
-Você pode usar a API FormBridge para obter ou definir os valores dos campos do formulário a partir da página HTML e enviar o formulário. Por exemplo, você pode usar a API para criar uma experiência semelhante a um assistente.
+Você pode usar a API FormBridge para obter ou definir os valores dos campos de formulário na página HTML e enviar o formulário. Por exemplo, você pode usar a API para criar uma experiência semelhante a um assistente.
 
-Um aplicativo HTML existente pode aproveitar a API do FormBridge para interagir com um formulário e incorporá-lo à página do HTML. Você pode usar as seguintes etapas para definir o valor de um campo usando a API Form Bridge.
+Um aplicativo HTML existente pode aproveitar a API FormBridge para interagir com um formulário e incorporá-lo na página HTML. Você pode usar as seguintes etapas para definir o valor de um campo usando a API do Form Bridge.
 
 ## Integração de formulários HTML5 a uma página da Web {#integrating-html-forms-to-a-web-page}
 
-1. **Escolha um Perfil ou crie um Perfil**
+1. **Escolha um perfil ou crie um perfil**
 
-   1. Na interface do CRX DE, navegue até: `https://'[server]:[port]'/crx/de`.
-   1. Faça logon com as credenciais de administrador.
+   1. Na interface do CRX DE, acesse: `https://'[server]:[port]'/crx/de`.
+   1. Faça logon com credenciais de administrador.
    1. Crie um perfil ou escolha um perfil existente.
 
-      Para obter detalhes sobre como criar um perfil, consulte [Criação de um novo perfil](/help/forms/using/custom-profile.md).
+      Para obter detalhes sobre como criar um perfil, consulte [Criar um novo perfil](/help/forms/using/custom-profile.md).
 
 1. **Modificar o perfil do HTML**
 
-   Inclua tempo de execução XFA, biblioteca de localidade XFA e trecho de HTML de formulário XFA no renderizador de perfil, crie sua página da Web e coloque o formulário dentro da página da Web.
+   Inclua o tempo de execução XFA, a biblioteca de localidades XFA e o trecho de HTML do formulário XFA no renderizador de perfil, crie sua página da Web e coloque o formulário dentro da página da Web.
 
    Por exemplo, use o seguinte trecho de código para criar um aplicativo com dois campos de entrada e um formulário para demonstrar a interação entre o formulário e um aplicativo externo.
 
@@ -76,22 +76,22 @@ Um aplicativo HTML existente pode aproveitar a API do FormBridge para interagir 
 
    >[!NOTE]
    >
-   >O **linha 9** O contém referência de JSP adicional para estilos de CSS e arquivos JavaScript para projetar a página.
+   >A variável **linha 9**, contém referências JSP adicionais para estilos CSS e arquivos JavaScript para criar a página.
    >
    >
-   >O &lt;div id=&quot;rightdiv&quot;> ativar **linha 18** contém o trecho HTML do formulário XFA.
-   O estilo da página é em dois contêineres: **left** e **right**. O contêiner correto tem o formulário . O contêiner esquerdo tem dois campos de entrada e parte da HTML externa.
+   >A variável &lt;div id=&quot;rightdiv&quot;> tag ativada **linha 18** contém o trecho HTML do formulário XFA.
+   A página tem o estilo de dois contêineres: **left** e **direita**. O contêiner direito tem o formulário. O container esquerdo tem dois campos de entrada e parte da página de HTML externa.
    A captura de tela a seguir mostra como o formulário é exibido em um navegador.
 
    ![portal](assets/portal.jpg)
 
-   O lado esquerdo é parte do **HTML page**. O lado direito que contém os campos é o **formulário xfa**.
+   O lado esquerdo faz parte da **página HTML**. O lado direito que contém os campos é o **formulário xfa**.
 
-1. **Acesso aos campos do formulário da página**
+1. **Acesso aos campos de formulário da página**
 
-   Este é um exemplo de script que pode ser adicionado para definir valores em um campo de formulário.
+   Este é um exemplo de script que você pode adicionar para definir valores em um campo de formulário.
 
-   Por exemplo, se você deseja definir a variável **EmployeeName** uso dos valores em Campos **Nome** e **Sobrenome**, chame o **window.formBridge.setFieldValue** .
+   Por exemplo, se você deseja definir a variável **EmployeeName** utilização dos valores nos Campos **Nome** e **Sobrenome**, chame o **window.formBridge.setFieldValue** função.
 
    Da mesma forma, é possível ler o valor chamando **window.formBridge.getFieldValue** API.
 

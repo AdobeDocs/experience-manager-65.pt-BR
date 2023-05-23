@@ -1,6 +1,6 @@
 ---
-title: Criação de um Guia de início rápido sem cabeçalho de configuração
-description: Crie uma configuração como uma primeira etapa para começar a usar o headless no AEM 6.5.
+title: Criação de um guia de início rápido do headless de configuração
+description: Crie uma configuração como um primeiro passo para começar a usar o headless no AEM 6.5.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
 source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 69%
 
 ---
 
-# Criação de um Guia de início rápido sem cabeçalho de configuração {#creating-configuration}
+# Criação de um guia de início rápido do headless de configuração {#creating-configuration}
 
 Como primeiro passo para começar a usar o headless no AEM 6.5, é necessário criar uma configuração.
 
@@ -27,9 +27,9 @@ No contexto do gerenciamento de conteúdo headless no AEM, considere uma configu
 
 Um administrador só precisaria criar uma configuração uma vez ou, muito raramente, quando um novo espaço de trabalho fosse necessário para organizar seus modelos de conteúdo. Para os propósitos deste guia de introdução, precisamos criar apenas uma configuração.
 
-1. Faça logon em AEM e, no menu principal, selecione **Ferramentas -> Geral -> Navegador de configuração**.
-1. Forneça uma **Título** para sua configuração.
-   * Um nome será gerado automaticamente com base no título e ajustado de acordo com [AEM convenções de nomenclatura.](/help/sites-developing/naming-conventions.md). Ele se tornará o nome do nó no repositório.
+1. Faça logon no AEM e, no menu principal, selecione **Ferramentas -> Geral -> Navegador de configuração**.
+1. Forneça um **Título** para sua configuração.
+   * Um nome será gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM.](/help/sites-developing/naming-conventions.md). Ele se tornará o nome do nó no repositório.
 1. Verifique as seguintes opções:
    * **Modelos de fragmentos do conteúdo**
    * **Consultas persistentes de GraphQL**

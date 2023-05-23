@@ -1,7 +1,7 @@
 ---
-title: Limites de contribuição dos membros
+title: Limites de contribuição do membro
 seo-title: Member Contribution Limits
-description: O recurso de limites de contribuição permite limitar as contribuições para proteção contra spam
+description: O recurso de limites de contribuição permite limitar as contribuições para proteger contra spam
 seo-description: Contribution limits feature lets you limit the contributions to protect against spam
 uuid: 99b2a855-3f0d-41a0-9572-517a7f29af9f
 contentOwner: Janice Kendall
@@ -18,27 +18,27 @@ ht-degree: 1%
 
 ---
 
-# Limites de contribuição dos membros {#member-contribution-limits}
+# Limites de contribuição do membro {#member-contribution-limits}
 
 ## Visão geral {#overview}
 
-O recurso de limites de contribuição oferece a capacidade de limitar as contribuições dos membros da comunidade como meio de proteger contra spam.
+O recurso de limites de contribuição oferece a capacidade de limitar as contribuições dos membros da comunidade como um meio de proteção contra spam.
 
 Quando um membro é limitado, qualquer postagem que exceda o número permitido de contribuições resultará em um alerta de que o limite foi excedido e a postagem é rejeitada. O membro da comunidade pode então ir para o centro de mensagens da comunidade e entrar em contato com um gerente da comunidade que pode remover os limites, se apropriado.
 
-Os limites de contribuição podem ser ativados individualmente a partir da variável [Console de membros](members.md) e/ou configurados para serem ativados automaticamente quando os visitantes do site se tornam novos membros.
+Os limites de contribuição podem ser habilitados individualmente do [Console de membros](members.md) e/ou configurada para ser ativada automaticamente quando os visitantes do site se tornarem novos membros.
 
-Usando o console Membros , os limites de contribuição podem ser removidos de forma proativa para um membro por um gerente de comunidade a qualquer momento ou removidos de forma reativa quando um membro envia uma mensagem para um gerente de comunidade que faz tal solicitação.
+Usando o console Membros, os limites de contribuição podem ser removidos de forma proativa para um membro por um gerente da comunidade a qualquer momento, ou removidos de forma reativa quando um membro envia uma mensagem a um gerente da comunidade que faz essa solicitação.
 
-## Configuração dos limites de contribuição de conteúdo gerado pelo usuário do AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
+## Configuração de limites de contribuição de conteúdo gerado pelo usuário do AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
 
-Essa configuração OSGi:
+Esta configuração OSGi:
 
-* Define as características dos limites de contribuição (número de lugares em um período).
-* Identifica quem o membro poderá enviar a mensagem quando o limite for atingido.
+* Define as características dos limites de contribuição (número de postagens em um período de tempo).
+* Identifica quem o membro poderá enviar mensagens quando o limite for atingido.
 * Identifica domínios que nunca precisam ser restritos.
 
-Para acessar essa configuração do OSGi:
+Para acessar essa configuração OSGi:
 
 * No editor principal:
 * Faça logon com privilégios de administrador.
@@ -53,7 +53,7 @@ Para acessar essa configuração do OSGi:
 
 * **[!UICONTROL Aplicar automaticamente limites de contribuição de UGC]**
 
-   Se marcada, defina automaticamente os limites de contribuição para os usuários quando eles se registrarem como membros da comunidade. Isso é refletido no perfil do membro da comunidade e pode ser ativado/desativado no [console membros](members.md). Os novos membros com um endereço de email de uma lista de permissões de domínios nunca são restritos.
+   Se marcadas, definem automaticamente limites de contribuição para os usuários quando eles se registrarem como membros da comunidade. Isso é refletido no perfil do membro da comunidade e pode ser ativado/desativado no [console de membros](members.md). Novos membros com um endereço de email de um incluo na lista de permissões de domínios nunca são restritos.
 
    O padrão está desmarcado.
 
@@ -63,7 +63,7 @@ Para acessar essa configuração do OSGi:
 
    O padrão é 10 publicações.
 
-* **[!UICONTROL Frequência do limite UGC]**
+* **[!UICONTROL Frequência limite de UGC]**
 
    O período que restringe o limite de UGC.
 
@@ -71,18 +71,18 @@ Para acessar essa configuração do OSGi:
 
 * **[!UICONTROL Domínios]**
 
-   Uma lista de  lista de permissões de um ou mais domínios de email. Selecione o ícone + para fazer entradas adicionais.
+   Uma lista de inclui na lista de permissões de um ou mais domínios de email. Selecione o ícone + para criar entradas adicionais.
 
-   Os usuários com endereços de email na lista de permissões de domínios não são afetados quando os limites de contribuição do UGC são aplicados automaticamente. Por exemplo, se domínio `mycompany.com` é adicionado à lista de domínios e, em seguida, um membro com endereço de email `me@mycompany.com` nunca é restringido a postagem.
+   Lista de permissões Os usuários com endereços de email na pesquisa de domínios não são afetados quando os limites de contribuição UGC são aplicados automaticamente. Por exemplo, se o domínio `mycompany.com` é adicionado à lista de domínios e, em seguida, um membro com endereço de email `me@mycompany.com` nunca está restrito ao lançamento.
 
-   O padrão é uma  lista de permissões vazia.
+   O padrão é uma inclui na lista de permissões vazia.
 
-* **[!UICONTROL Recipients de mensagens]**
+* **[!UICONTROL Destinatários de mensagens]**
 
-   Lista de um ou mais IDs autorizados de membros que podem alterar os limites de contribuição dos membros. Selecione o ícone + para fazer entradas adicionais.
+   Lista de uma ou mais IDs autorizadas de membros que podem modificar os limites de contribuição para membros. Selecione o ícone + para criar entradas adicionais.
 
-   Os membros só podem alcançar membros específicos quando o seu limite tenha sido atingido.
+   Os membros só podem alcançar membros especificados quando o limite foi atingido.
 
-   O padrão não é destinatários de mensagens.
+   O padrão é nenhum destinatário de mensagem.
 
-Observação: A configuração padrão resulta em um limite de 10 publicações dentro de um período de uma hora.
+Observação: a configuração padrão resulta em um limite de 10 publicações em um período de uma hora.

@@ -54,7 +54,7 @@ A API HTTP de ativos abrange:
 
 A implementação atual da API HTTP de ativos é baseada no estilo de arquitetura **REST** e permite que você acesse o conteúdo (armazenado no AEM) por meio de operações **CRUD** (criar, ler, atualizar, excluir).
 
-Com essa operação, a API permite operar o Adobe Experience Manager como um CMS (Content Management System) sem periféricos fornecendo serviços de conteúdo a um aplicativo front-end JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON. Por exemplo, aplicativos de página única (SPA) baseados em estrutura ou personalizados exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
+Com essas operações, a API permite operar o Adobe Experience Manager como um CMS (Content Management System) headless, fornecendo Serviços de conteúdo a um aplicativo front-end JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON. Por exemplo, aplicativos de página única (SPA) baseados em estrutura ou personalizados exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
 
 <!--
 >[!NOTE]
@@ -318,7 +318,7 @@ Agora que concluiu esta parte da jornada de desenvolvedores headless do AEM, voc
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-Você deve continuar sua jornada sem periféricos de AEM revisando o documento em seguida [Como ativar seu aplicativo sem periféricos](go-live.md) onde você leva seu AEM projeto Headless ao vivo!
+Você deve continuar sua jornada AEM headless revisando em seguida o documento [Como fazer a ativação com seu aplicativo headless](go-live.md) onde você realmente leva seu projeto AEM Headless ao vivo!
 
 ## Recursos adicionais {#additional-resources}
 

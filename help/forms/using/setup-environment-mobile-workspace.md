@@ -26,23 +26,23 @@ Você precisa do seguinte hardware, software e licenças para criar e implantar 
 
 * Microsoft Windows 10
 * Microsoft Visual Studio 2015
-* Ferramentas do Microsoft Visual Studio para o Apache Cordova
+* Ferramentas do Microsoft Visual Studio para Apache Cordova
 
 ## Para dispositivos iOS {#for-ios-devices}
 
-* Apple Mac baseado na Intel executando o Mac OS X 10.9.5 ou superior
+* Mac Apple baseado em Intel executando o Mac OS X 10.9.5 ou superior
 * iOS SDK 8.4 ou superior
-* Versão Xcode: Xcode 6.4 para OS X ou superior
+* Versão do Xcode: Xcode 6.4 para OS X ou superior
 * Associação ao programa iOS Developer Enterprise
 * Certificado empresarial para distribuição de aplicativos iOS internos
 * Apple iPad com iOS 8.4 ou posterior
 
 ## Para dispositivos Android {#for-android-devices}
 
-* Kit de ferramentas de desenvolvimento do Android (pacote ADT) que pode ser baixado de [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
+* Android Development Toolkit (pacote ADT) que pode ser baixado em [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
 * Se o ambiente estiver configurado em um sistema MAC, o ADT deverá ser instalado na pasta Aplicativos.
-* Se o ADT estiver instalado em qualquer outro local no MAC, ou se o ambiente estiver configurado em um sistema Windows, o caminho do SDK do ADT precisará ser atualizado em `local.properties` arquivo disponível em `src\android` pasta no arquivo de origem extraído `mobileworkspace-src.zip`. Nesse arquivo, aponte a variável `sdk.dir` para o local do SDK do ADT no desktop.
+* Se o ADT estiver instalado em qualquer outro local no MAC ou se o ambiente estiver configurado em um sistema Windows, o caminho do SDK do ADT precisará ser atualizado em `local.properties` arquivo que está disponível em `src\android` pasta no arquivo de origem extraído `mobileworkspace-src.zip`. Neste arquivo, aponte para `sdk.dir` variável para o local do SDK do ADT no desktop.
 
 >[!NOTE]
 >
->O adobe-lc-mobileworkspace-src.zip contém PhoneGap SDK 5.0. Certifique-se de que o PhoneGap SDK não esteja pré-instalado.
+>O adobe-lc-mobileworkspace-src.zip contém PhoneGap SDK 5.0. Verifique se o SDK do PhoneGap não está pré-instalado.

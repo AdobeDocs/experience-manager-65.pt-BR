@@ -1,5 +1,5 @@
 ---
-title: Usar o salvamento automático no aplicativo AEM Forms
+title: Uso do salvamento automático no aplicativo AEM Forms
 seo-title: Using autosave in AEM Forms app
 description: Saiba como usar o recurso de salvamento automático no aplicativo AEM Forms que permite evitar perda de dados.
 seo-description: Learn how to use autosave feature in AEM Forms app that lets you avoid data loss.
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 ---
 
-# Usar o salvamento automático no aplicativo AEM Forms{#using-autosave-in-aem-forms-app}
+# Uso do salvamento automático no aplicativo AEM Forms{#using-autosave-in-aem-forms-app}
 
-Quando um usuário insere dados no aplicativo Adobe Experience Manager Forms, o recurso de salvamento automático os salva em intervalos regulares. O recurso de salvamento automático no aplicativo AEM Forms ajuda você a evitar perda de dados se o aplicativo for fechado acidentalmente.
+Quando um usuário insere dados no aplicativo Adobe Experience Manager Forms, o recurso de salvamento automático os salva em intervalos regulares. O recurso de salvamento automático no aplicativo AEM Forms ajuda a evitar a perda de dados se o aplicativo for fechado acidentalmente.
 
 Seu aplicativo pode fechar acidentalmente:
 
-* Se o seu dispositivo desligar devido a pouca bateria
+* Se o dispositivo for desligado devido à bateria fraca
 * Se o usuário matar o aplicativo
 * Se ocorrer uma falha inesperada
 
@@ -32,15 +32,15 @@ Você pode especificar os intervalos após os quais o aplicativo salva os dados 
 
 >[!NOTE]
 >
->Selecione a frequência do salvamento automático criteriosamente. Operações frequentes de salvamento automático podem ter um impacto notório no desempenho do dispositivo.
+>Selecione a frequência de salvamento automático criteriosamente. Operações frequentes de salvamento automático podem ter um impacto notável no desempenho do dispositivo.
 
 Execute as seguintes etapas para usar o recurso de salvamento automático no aplicativo AEM Forms:
 
 1. Faça logon no aplicativo e navegue até **Configurações > Geral**.
-1. Na tela Geral, use o **Frequência de Salvamento Automático** para selecionar os intervalos em que deseja que o aplicativo salve os dados inseridos.
+1. Na tela Geral, use o **Frequência de salvamento automático** opção para selecionar os intervalos em que deseja que o aplicativo salve os dados inseridos.
    [ ![Configuração da frequência de salvamento automático](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
-1. Ao reiniciar o aplicativo e fazer logon com o mesmo usuário, você é solicitado a restaurar a tarefa com a caixa de diálogo Recuperar tarefa não salva. Clique em **OK** na caixa de diálogo Recuperar tarefa não salva para retomar o trabalho com a tarefa salva. Você pode clicar em **Cancelar** para excluir os dados salvos correspondentes ao último salvamento automático acionado e começar a trabalhar com uma nova tarefa.
+1. Ao reiniciar o aplicativo e fazer logon com o mesmo usuário, você será solicitado a restaurar a tarefa com a caixa de diálogo Recuperar tarefa não salva. Clique em **OK** na caixa de diálogo Recuperar tarefa não salva para retomar o trabalho com a tarefa salva. Você pode clicar em **Cancelar** para excluir os dados salvos correspondentes ao último salvamento automático acionado e começar a trabalhar com uma nova tarefa.
 
-   Ao clicar em **OK**, a tarefa é restaurada com os dados correspondentes ao salvamento automático mais recente acionado antes que o aplicativo travasse. Inclui os dados do formulário e todos os anexos associados à tarefa.
-   [ ![Obter uma tarefa recuperada ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Um formulário de trabalho em andamento **B.** Aplicativo fechado à força **C.** O aplicativo foi reiniciado com a caixa de diálogo Recuperar tarefa não salva **D.** Formulário restaurado com dados originais
+   Ao clicar em **OK**, a tarefa é restaurada com os dados correspondentes ao salvamento automático mais recente acionado antes da falha do aplicativo. Inclui os dados de formulário e todos os anexos associados à tarefa.
+   [ ![Recuperando uma tarefa ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Um formulário de trabalho em andamento **B.** Aplicativo fechado à força **C** O aplicativo foi reiniciado com a caixa de diálogo Recuperar tarefa não salva **D.** Formulário restaurado com dados originais

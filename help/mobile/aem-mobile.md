@@ -1,6 +1,6 @@
 ---
-title: Introdução aos serviços móveis sob demanda da Adobe Experience Manager
-description: Introdução à administração AEM aplicativo móvel On-Demand Services. Ele fornece uma visão geral das funções e responsabilidades de um administrador de AEM para serviços sob demanda.
+title: Introdução aos serviços móveis por demanda da Adobe Experience Manager
+description: Introdução à administração do aplicativo AEM Mobile On-Demand Services. Ele fornece uma visão geral das funções e responsabilidades de um administrador de AEM para serviços por demanda.
 uuid: fd99c032-287a-489b-9690-b18980c55c29
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -31,25 +31,25 @@ ht-degree: 2%
 >
 >**Pré-requisitos:**
 >
->Antes de começar a configurar seu ambiente para o AEM Mobile On-demand Services, consulte [AEM Mobile Application Dashboard ou Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Antes de começar a configurar seu ambiente para o AEM Mobile On-demand Services, consulte [AEM Mobile Application Dashboard ou o Centro de Controle](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Um ***Administrador de AEM*** O é responsável por adicionar um novo aplicativo ao catálogo do AEM Mobile, criando um novo aplicativo usando o assistente de criação ou importando um aplicativo existente. Administradores de AEM que criam um novo aplicativo usando o AEM Mobile *assistente de criação* normalmente, selecione um dos modelos de aplicativo desejados a partir de nossos exemplos de referência prontos para uso ou (na maioria dos casos) um modelo de aplicativo personalizado criado por *AEM desenvolvedores.*
+Um ***Administrador do AEM*** O é responsável por adicionar um novo aplicativo ao catálogo do AEM Mobile, criando um novo aplicativo usando o assistente de criação ou importando um aplicativo existente. Administradores de AEM AEM Mobile que criam um novo aplicativo usando o *assistente de criação* normalmente, selecione um dos modelos de aplicativo desejados em nossas amostras de referência prontas para uso ou (na maioria dos casos) um modelo de aplicativo personalizado criado por *Desenvolvedores de AEM.*
 
 >[!NOTE]
 >
->Para obter mais informações sobre como configurar AEM grupos e permissões, clique em [Criando Funções de Usuário e Concedendo Acesso](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) em Ajuda online.
+>Para obter mais informações sobre a configuração de grupos e permissões de AEM, clique em [Criando Atribuições de Usuário e Concedendo Acesso](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) na Ajuda online.
 
-Um administrador de AEM é responsável pelas seguintes tarefas ao criar um aplicativo usando o AEM Mobile On-demand Services:
+Um administrador do AEM é responsável pelas seguintes tarefas ao criar um aplicativo usando o AEM Mobile On-demand Services:
 
-* [Configuração do AEM Mobile](/help/mobile/aem-mobile-setup.md)que abrange
+* [Configuração do AEM Mobile](/help/mobile/aem-mobile-setup.md), que abrange
 
    * Provisionamento do AEM Mobile
-   * Criação de projetos para AEM Mobile
+   * Criação de projetos para o AEM Mobile
    * Configuração de um conector do AEM Mobile
    * Adicionar funções de usuário do AEM Mobile e atribuir permissões
 
-* [Configurar seus usuários e grupos de usuários](/help/mobile/aem-mobile-configure-users.md)
-* [Visualização com comprovação](/help/mobile/aem-mobile-manage-ondemand-services.md)
+* [Configurar usuários e grupos de usuários](/help/mobile/aem-mobile-configure-users.md)
+* [Visualização com simulação](/help/mobile/aem-mobile-manage-ondemand-services.md)
 * [Administração dos serviços de conteúdo](/help/mobile/developing-content-services.md)
 
 ## Recursos adicionais {#additional-resources}

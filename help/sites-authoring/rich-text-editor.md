@@ -12,7 +12,7 @@ exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 68%
+ht-degree: 51%
 
 ---
 
@@ -30,7 +30,7 @@ Selecionar um componente baseado em texto com um único toque ou clique revelar�
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Tocar/clicar mais uma vez, ou selecionar inicialmente o componente com um toque/clique duplo lento abrirá a edição no local, que possui sua própria barra de ferramentas. Aqui, você pode editar o conteúdo e efetuar alterações básicas na formatação.
+Tocar/clicar novamente ou selecionar inicialmente o componente com um toque duplo/clique lento abrirá a edição no local, que tem sua própria barra de ferramentas. Aqui você pode editar o conteúdo e fazer alterações básicas na formatação.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 
@@ -44,9 +44,9 @@ Essa barra de ferramentas fornece as seguintes opções:
 * **Fechar**
 * **Salvar**
 
-## Edição em tela cheia {#full-screen-editing}
+## Edição de tela cheia {#full-screen-editing}
 
-Para componentes baseados em texto, toque no modo de tela cheia na barra de ferramentas ![](do-not-localize/screen_shot_2018-03-21at163236.png) abre o editor de rich text e oculta o restante do conteúdo da página.
+Para componentes baseados em texto, tocar no modo de tela cheia na barra de ferramentas ![](do-not-localize/screen_shot_2018-03-21at163236.png) abre o editor de rich text e oculta o restante do conteúdo da página.
 
 O modo de tela cheia exibe todas as opções configuradas que podem ser usadas para criação. A disponibilidade é opções [depende da configuração](/help/sites-administering/rich-text-editor.md).
 

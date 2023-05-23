@@ -1,7 +1,7 @@
 ---
-title: Integração com o gerenciador de aprendizado do Adobe Adobe
+title: Integração com o Adobe Adobe Learning Manager
 seo-title: Integrating with Adobe Learning Manager
-description: Saiba como integrar o AEM com o Adobe Learning Manager.
+description: Saiba como integrar o AEM ao Adobe Learning Manager.
 seo-description: Learn how to integrate AEM Adobe Learning Manager.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration

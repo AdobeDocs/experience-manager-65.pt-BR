@@ -10,31 +10,31 @@ exl-id: e5c80569-d3c0-4358-9b91-b98a64d1c004
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Protect um documento em nome de outro usuário {#protect-a-document-on-behalf-of-another-user}
 
-O SDK Java de segurança de documentos da AEM Forms fornece APIs para permitir que uma conta de usuário proteja um documento em nome de outro usuário sem obter as permissões para editar o documento. Você pode usar as APIs em um processo de fluxo de trabalho ou de forma programática como um serviço de documento. As novas APIs são:
+O SDK do Java para Segurança de documentos da AEM Forms fornece APIs para permitir que uma conta de usuário proteja um documento em nome de outro usuário sem obter as permissões para editar o documento. Você pode usar as APIs em um processo de fluxo de trabalho ou programaticamente como um serviço de documento. As novas APIs são:
 
-* **secureDocumentUse** a API ProtectDocument para aplicar uma política a um documento em nome de
+* **protectDocumentUse** a API ProtectDocument para aplicar uma política a um documento em nome de
 
-   outra conta de usuário. As permissões da conta de usuário usada para aplicar a política permanecem limitadas à proteção do documento. Não obtém direitos para abrir e visualizar o documento. RMSecureDocumentResult secureDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, booleano bExactMatchForNames)
+   outra conta de usuário. As permissões da conta de usuário usada para aplicar a política permanecem limitadas à proteção do documento. Ele não possui direitos para abrir e visualizar o documento. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, booleano bExactMatchForNames)
 
-* **createLicenseUse** a API CreateLicense para criar uma licença para uma política em nome de outra conta de usuário. PublishLicenseDTO createLicense(String policyId, String documentName, logSecureDocEvent booleano)
-* **secureDocumentWithCoverPageUse** a API ProtectDocumentWithCoverPage para aplicar uma política e adicionar uma folha de rosto a um documento em nome de outro usuário. As permissões da conta de usuário usada para aplicar a política permanecem limitadas à proteção do documento. Não reúne os direitos de abrir e visualizar o documento. RMSecureDocumentResult protectionDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, booleano bExactMatchForNames)
+* **createLicenseUse** Use a API CreateLicense para criar uma licença para uma política em nome de outra conta de usuário. PublishLicenseDTO createLicense(String policyId, String documentName, booleano logSecureDocEvent)
+* **protectDocumentWithCoverPageUse** Use a API ProtectDocumentWithCoverPage para aplicar uma política e adicionar uma página de capa a um documento em nome de outro usuário. As permissões da conta de usuário usada para aplicar a política permanecem limitadas à proteção do documento. Ele não possui os direitos de abrir e visualizar o documento. RMSecureDocumentResult protectDocumentWithCoverPage(Documento no documento, Nome do documento da cadeia de caracteres, Nome do conjunto de políticas da cadeia de caracteres, Nome da política da cadeia de caracteres, Documento coverDoc, Booleano bExactMatchForNames)
 
-## Usar as APIs para proteger um documento em nome de outro usuário {#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
+## Uso das APIs para proteger um documento em nome de outro usuário {#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
 
 Execute as seguintes etapas para proteger um documento em nome de outro usuário e sem obter as permissões para editar o documento:
 
 1. Criar um conjunto de políticas. Por exemplo, PolicySet1.
-1. Crie uma política no conjunto de políticas recém-criado. Por exemplo, Policy1 em PolicySet1.
-1. Crie um usuário com a função Rights Management User End. Por exemplo, Usuário1. Forneça as permissões para exibir documentos protegidos usando a Política1 para o usuário recém-criado.
-1. Crie uma nova função. Por exemplo, Função1. Forneça a permissão Service Invoke para a função recém-criada. Crie um usuário com a função recém-criada. Por exemplo, User2.Você pode usar User2 ou um administrador para criar uma conexão SDK e chamar o serviço secureDocument.
+1. Crie uma política no conjunto de políticas recém-criado. Por exemplo, Política1 em PolicySet1.
+1. Crie um usuário com a função Rights Management Usuário final. Por exemplo, User1. Forneça ao usuário recém-criado as permissões para visualizar documentos protegidos usando a Política 1.
+1. Criar uma nova função. Por exemplo, Função1. Forneça a permissão Chamar serviço para a função recém-criada. Crie um usuário com a função recém-criada. Por exemplo, Usuário2. Você pode usar Usuário2 ou um administrador para criar uma conexão de SDK e chamar o serviço protectDocument.
 
-   Agora, você pode executar o seguinte código de amostra para proteger um documento sem fornecer permissões para editar o documento para o usuário que protege o documento:
+   Agora, você pode executar o seguinte código de amostra para proteger um documento sem fornecer permissões para editar o documento ao usuário que o protege:
 
    ```java
    import java.io.File;

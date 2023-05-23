@@ -21,15 +21,15 @@ ht-degree: 35%
 
 # Assistente de cópia de Idioma{#language-copy-wizard}
 
-O assistente de Cópia de idioma é uma experiência guiada para criar e instrumentar a estrutura de conteúdo multilíngue. Agora é muito mais simples e rápido criar uma cópia de idioma.
+O assistente de Cópia de idioma é uma experiência guiada para criar e instrumentar a estrutura de conteúdo multilíngue. Agora é muito mais simples e rápido criar uma cópia de linguagem.
 
 >[!NOTE]
 >
->O usuário precisa ser membro do grupo de administradores do projeto para criar a Cópia de idioma de um site.
+>O usuário precisa ser membro do grupo de administradores de projeto para criar a Cópia de idioma de um site.
 
 Para acessar este assistente:
 
-1. Em Sites, selecione uma página e toque/clique em Criar.
+1. No Sites, selecione uma página e toque/clique em Criar.
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 
@@ -37,11 +37,11 @@ Para acessar este assistente:
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
-1. O **Selecionar origem** etapa do assistente permite adicionar/remover páginas. Também há a opção de incluir ou excluir as subpáginas.
+1. A variável **Selecionar fonte** etapa do assistente permite adicionar/remover páginas. Também há a opção de incluir ou excluir as subpáginas.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
-1. O **Próximo** O botão traz você para o **Configurar** etapa do assistente. Aqui você pode adicionar/remover idiomas e selecionar o método de tradução.
+1. A variável **Próxima** O botão traz você para a **Configurar** etapa do assistente. Aqui você pode adicionar/remover idiomas e selecionar o método de tradução.
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
 
@@ -49,7 +49,7 @@ Para acessar este assistente:
    >
    >Por padrão, há apenas uma configuração de tradução. Para poder selecionar outras configurações, é necessário definir as configurações de nuvem primeiro. Consulte [Configuração da estrutura de integração de tradução](/help/sites-administering/tc-tic.md).
 
-1. O **Próximo** O botão traz você para o **Traduzir** etapa do assistente. Aqui você pode escolher entre criar somente a estrutura, criar um novo projeto de tradução ou adicionar a um projeto de tradução existente.
+1. A variável **Próxima** O botão traz você para a **Traduza** etapa do assistente. Aqui é possível escolher entre criar somente a estrutura, criar um novo projeto de tradução ou adicionar a um projeto de tradução existente.
 
    >[!NOTE]
    >

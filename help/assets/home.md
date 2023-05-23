@@ -1,6 +1,6 @@
 ---
 title: Guia do Assets
-description: Crie, gerencie, processe e distribua ativos digitais no Experience Manager. Esses guias descrevem as práticas recomendadas, os recursos de acessibilidade e como usar AEM ativos 6.5.
+description: Crie, gerencie, processe e distribua ativos digitais no Experience Manager. Esses guias descrevem práticas recomendadas, recursos de acessibilidade e como usar ativos do AEM 6.5.
 user-guide-title: Guia do Assets
 feature: Asset Management
 role: User, Architect, Admin
@@ -14,7 +14,7 @@ ht-degree: 24%
 
 # Guia do Assets
 
-Crie, gerencie, processe e distribua ativos digitais no Experience Manager. Esses guias descrevem as práticas recomendadas, os recursos de acessibilidade e como usar AEM ativos 6.5.
+Crie, gerencie, processe e distribua ativos digitais no Experience Manager. Esses guias descrevem práticas recomendadas, recursos de acessibilidade e como usar ativos do AEM 6.5.
 
 ## Chave [!DNL Experience Manager] artigos
 
@@ -22,7 +22,7 @@ Crie, gerencie, processe e distribua ativos digitais no Experience Manager. Esse
 * [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=pt-BR)
 * [Lista de verificação de segurança](/help/sites-administering/security-checklist.md)
 
-## [!DNL Experience Manager] Guias 6.5
+## [!DNL Experience Manager] Guias do 6.5
 
 | Guia do usuário | Descrição |
 |--- |---|
@@ -31,18 +31,18 @@ Crie, gerencie, processe e distribua ativos digitais no Experience Manager. Esse
 | [Guia do usuário do Communities](/help/communities/home.md) | Crie experiências online, como fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais. |
 | [Guia de administração](/help/sites-administering/home.md) | Entenda como administrar o Adobe Experience Manager. |
 | [Guia de criação](/help/sites-authoring/home.md) | Este guia explica os conceitos de criação no Experience Manager. |
-| [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação no Experience Manager na interface do usuário clássica. |
+| [Guia de criação da interface clássica](/help/sites-classic-ui-authoring/home.md) | Este guia explica os conceitos de criação em Experience Manager na interface clássica do usuário. |
 | [Guia do usuário do Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=pt-BR) | Saiba mais sobre a solução de sinalização digital para publicar experiências digitais dinâmicas e interativas. |
-| [Guia de implantação do usuário](/help/sites-deploying/home.md) | Este guia mostra os conceitos básicos do Experience Manager. |
-| [Guia do usuário de desenvolvimento](/help/sites-developing/home.md) | Saiba como criar a implantação do Experience Manager. |
-| [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto do Experience Manager com êxito. |
+| [Guia de implementação do usuário](/help/sites-deploying/home.md) | Este guia mostra as noções básicas do Experience Manager. |
+| [Guia do usuário para desenvolvimento](/help/sites-developing/home.md) | Saiba como criar sua implantação de Experience Manager. |
+| [Guia do usuário de gerenciamento](/help/managing/home.md) | Este guia descreve como gerenciar um projeto Experience Manager com sucesso. |
 | [Guia do usuário do Commerce](/help/commerce/home.md) | Saiba mais sobre a Commerce Integration Framework no Experience Manager. |
 | [Guia do usuário do Mobile](/help/mobile/home.md) | Este guia descreve como criar e gerenciar conteúdo para aplicativos móveis. |
 
 
 ## Chave [!DNL Experience Manager] recursos
 
-* [Experience Manager Video Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
+* [Tutorials de vídeo Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
 * [Disponibilidade do GDPR](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Fórum da comunidade do Experience Manager Assets](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-assets/ct-p/experience-manager-assets-community)

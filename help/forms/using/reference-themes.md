@@ -1,7 +1,7 @@
 ---
-title: Temas de Referência
+title: Temas de referência
 seo-title: Reference Themes
-description: O AEM Forms fornece temas de formulários adaptáveis que podem ser obtidos da Distribuição de software e usados para criar um estilo em um formulário.
+description: O AEM Forms fornece temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,36 +12,36 @@ exl-id: f6c24894-c322-4c44-b001-8978954d6e53
 source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Temas de Referência{#reference-themes}
+# Temas de referência{#reference-themes}
 
-[Temas](../../forms/using/themes.md) permite criar estilos em seus formulários sem conhecimento profundo de CSS. Além do tema padrão, você pode obter os seguintes temas instalando o [Pacote do complemento AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
+[Temas](../../forms/using/themes.md) As permitem criar estilos de formulários sem um conhecimento profundo de CSS. Além do tema padrão, você pode obter os seguintes temas instalando o [Pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR):
 
-* Beril
+* Berilo
 * Exec
 * Exec-Light
-* Liberdade
+* Liberty
 * Ultramarina
-* Urbane
-* Padrões de web design dos EUA
+* Urbana
+* Padrões de design da Web nos EUA
 * Tranquilo
 
-Cada tema contém um estilo exclusivo e elegante que pode ser usado para criar formulários adaptáveis encantadores para os usuários. Ele contém um estilo exclusivo para seletores como painel, caixa de texto, caixa numérica, botão de opção, tabela e switch. As estilos nesses temas baseiam-se em requisitos. Por exemplo, em um cenário específico, você precisa de um tema minimalista com fontes limpas. O tema da liberdade permite-nos alcançar esse aspecto.
+Cada tema contém um estilo único e elegante que você pode usar para criar formulários adaptáveis deliciosos para seus usuários. Ele contém um estilo exclusivo para seletores, como painel, caixa de texto, caixa numérica, botão de opção, tabela e switch. Os estilos nesses temas são baseados na exigência. Por exemplo, em um cenário específico, você precisa de um tema minimalista com fontes limpas. O tema da liberdade permite que você realize esse olhar.
 
-![Temas de Referência](assets/ref-themes.png)
+![Temas de referência](assets/ref-themes.png)
 
-Os temas incluídos neste pacote são responsivos e o estilo nesses temas é definido para exibições móveis e para desktop. A maioria dos navegadores modernos em vários dispositivos pode renderizar formulários aplicados com um desses temas sem complicações.
+Os temas incluídos neste pacote são responsivos e o estilo nesses temas são definidos para exibições móveis e em desktop. A maioria dos navegadores modernos em uma variedade de dispositivos pode renderizar formulários aplicados com um desses temas sem qualquer problema.
 
-Para obter mais informações sobre como instalar o pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
+Para obter mais informações sobre a instalação do pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 
-## Beril {#beryl}
+## Berilo {#beryl}
 
-O tema Beryl é usado pela forma adaptável We.Gov e enfatiza o uso de imagem de fundo, transparência e ícones grandes e planos. Na captura de tela abaixo, você pode ver a aparência do tema Beryl e como ele pode melhorar o estilo de seu formulário.
+O tema Beryl é usado pela forma adaptativa We.Gov e enfatiza o uso da imagem de fundo, transparência e ícones grandes e planos. Na captura de tela abaixo, você pode ver como o tema Beryl aparece e como ele pode melhorar o estilo do seu formulário.
 
-![Tema de berilo](assets/beryl.png)
+![Tema berilo](assets/beryl.png)
 
 <!--[Click to enlarge
 
@@ -49,27 +49,27 @@ O tema Beryl é usado pela forma adaptável We.Gov e enfatiza o uso de imagem de
 
 ## Exec {#exec}
 
-O tema Exec evita preenchimentos sólidos em segundo plano para enfatizar os componentes do formulário. Selecionar e clicar em componentes altera as cores das fontes. Em comparação ao tema padrão Tela, a cor da fonte do texto na guia selecionada muda para azul escuro. Observe como os botões de navegação e envio são diferentes do tema Beryl.
+O tema de execução evita preenchimentos de plano de fundo sólidos para enfatizar componentes de formulário. Selecionar e clicar em componentes altera as cores da fonte. Em comparação com o tema padrão da Tela de Pintura, a cor da fonte do texto na guia selecionada muda para azul escuro. Observe como os botões de navegação e envio são diferentes do tema Beryl.
 
-![Tema executivo](assets/exec.png)
+![Tema exec](assets/exec.png)
 
 <!--[Click to enlarge
 
 ](assets/exec-1.png)-->
 
-## Execução de luz {#exec-light}
+## Luz de execução {#exec-light}
 
-O tema Exec Light usa espaço em branco para criar uma experiência contínua. Os botões Next e Submit obtêm um preenchimento sólido e uma sombra 3D. As guias selecionadas à esquerda recebem uma seta em vez de marcas de verificação duplas.
+O tema Exec Light usa espaço em branco para criar uma experiência contínua. Os botões Avançar e Enviar obtêm um preenchimento sólido e uma sombra 3D. As guias selecionadas à esquerda recebem uma seta em vez de marcas de seleção dupla.
 
-![Tema de luz executivo](assets/exec-light.png)
+![Tema Exec light](assets/exec-light.png)
 
 <!--[Click to enlarge
 
 ](assets/exec-light-1.png)-->
 
-## Liberdade {#liberty}
+## Liberty {#liberty}
 
-O tema da liberdade usa uma abordagem minimalista para destacar o importante. Por exemplo, a cor da fonte da guia visitada muda para verde. Você só pode ver o contorno inferior da caixa de texto que emula a aparência de um formulário baseado em papel com linhas. A caixa de texto ativa tem um contorno inferior preto, enquanto outros ficam com o contorno inferior cinza claro.
+O tema Liberdade usa uma abordagem minimalista para destacar o importante. Por exemplo, a cor da fonte da guia visitada muda para verde. Você só pode ver o contorno inferior da caixa de texto que emula a aparência de um formulário em papel com linhas. A caixa de texto ativa tem um contorno inferior preto, enquanto outros têm contorno inferior cinza claro.
 
 ![Tema da liberdade](assets/liberty.png)
 
@@ -79,9 +79,9 @@ O tema da liberdade usa uma abordagem minimalista para destacar o importante. Po
 
 ## Tranquilo {#tranquil}
 
-O tema tranquilo fornece tons claros e escuros do esquema de cor Tranquilo para destacar diferentes componentes de um formulário. Por exemplo, botões de opção, painéis e guias recebem um tom diferente de verde.
+O tema Tranquil fornece tons claros e escuros do esquema de cores Tranquil para destacar diferentes componentes de um formulário. Por exemplo, botões de opção, painéis e guias obtêm um tom diferente de verde.
 
-![Tema do tranquilo](assets/tranquil.png)
+![Tema tranquilo](assets/tranquil.png)
 
 <!--[Click to enlarge
 
@@ -89,27 +89,27 @@ O tema tranquilo fornece tons claros e escuros do esquema de cor Tranquilo para 
 
 ## Ultramarina {#ultramarine}
 
-O tema ultramarine usa tons azuis profundos para realçar componentes como guias, painéis, caixas de texto e botões.
+O tema ultramarino usa sombras azuis profundas para realçar componentes como guias, painéis, caixas de texto e botões.
 
 ![Tema ultramarino](assets/ultramarine.png)
 
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
-## Urbane {#urbane}
+## Urbana {#urbane}
 
-O tema Urbane enfatiza uma aparência minimalista e funcional para seu formulário. Ao aplicar o tema Urbane ao seu formulário, você pode ver que os componentes são planos. Os painéis obtêm contornos finos para criar uma aparência moderna.
+O tema Urbane enfatiza uma aparência minimalista e funcional para o seu formulário. Ao aplicar o tema Urbane ao formulário, você pode ver que os componentes são planos. Os painéis têm contornos finos para criar uma aparência moderna.
 
-![Tema de Urbana](assets/urbane.png)
+![Tema Urbane](assets/urbane.png)
 
 <!--[Click to enlarge
 
 ](assets/urbane-1.png)-->
 
-## Padrões de web design dos EUA {#u-s-web-design-standards}
+## Padrões de design da Web nos EUA {#u-s-web-design-standards}
 
-O tema Padrões de web design dos EUA, como o nome sugere, usa as fontes e os estilos descritos no site Padrões de web dos EUA em rascunho. O padrão da Web é usado por organizações federais para criar experiências consistentes na Web em sites do governo federal.
+O tema de padrões de design da Web dos EUA, como o nome sugere, usa faces de texto e estilos descritos no site de padrões de design da Web em rascunho dos EUA. O padrão da Web é usado por organizações federais para criar experiências consistentes na Web em sites do governo federal.
 
-![Tema dos Padrões de Design da Web dos Estados Unidos](assets/us-web-standards.png)
+![Tema dos padrões de design da Web nos EUA](assets/us-web-standards.png)
 
 <!--[Click to enlarge
 

@@ -20,44 +20,44 @@ ht-degree: 1%
 
 # Modos de execução{#run-modes}
 
-Os modos de execução permitem ajustar a instância do AEM para uma finalidade específica; por exemplo, criar ou publicar, testar, desenvolver, intranet ou outras.
+Os modos de execução permitem ajustar a instância de AEM para uma finalidade específica; por exemplo, criar ou publicar, testar, desenvolver, intranet ou outros.
 
 É possível:
 
 * [Definir coleções de parâmetros de configuração para cada modo de execução](#defining-configuration-properties-for-a-run-mode).
 
-   Um conjunto básico de parâmetros de configuração é aplicado a todos os modos de execução. Em seguida, é possível ajustar conjuntos adicionais para a finalidade do ambiente específico. Elas são aplicadas conforme necessário.
+   Um conjunto básico de parâmetros de configuração é aplicado a todos os modos de execução, e você pode ajustar conjuntos adicionais para a finalidade de seu ambiente específico. Elas são aplicadas conforme necessário.
 
 * [Definir pacotes adicionais a serem instalados para um modo específico](#defining-additional-bundles-to-be-installed-for-a-run-mode).
 
-Todas as configurações e definições são armazenadas em um repositório e ativadas pela configuração da variável **Modo de execução**.
+Todas as configurações e definições são armazenadas em um repositório e ativadas configurando o **Modo de execução**.
 
-## Modos de Execução de Instalação {#installation-run-modes}
+## Modos de execução da instalação {#installation-run-modes}
 
-Os modos de execução de instalação (ou fixos) são usados no momento da instalação e, em seguida, corrigidos durante todo o tempo de vida da instância, não podem ser alterados.
+Os modos de execução de instalação (ou fixos) são usados no momento da instalação e, em seguida, corrigidos durante todo o tempo de vida da instância, eles não podem ser alterados.
 
-Os modos de execução de instalação são fornecidos prontos para uso:
+Os modos de execução da instalação são fornecidos prontos para uso:
 
 * `author`
 * `publish`
 * `samplecontent`
 * `nosamplecontent`
 
-Trata-se de dois pares de modos de execução mutuamente exclusivos; por exemplo, é possível:
+Esses são dois pares de modos de execução mutuamente exclusivos; por exemplo, você pode:
 
-* defina uma `author` ou `publish`, não ambos ao mesmo tempo
+* defina `author` ou `publish`, não ambos ao mesmo tempo
 
-* combinar `author` com `samplecontent` ou `nosamplecontent` (mas não ambos)
+* combinar `author` com um `samplecontent` ou `nosamplecontent` (mas não ambos)
 
 >[!CAUTION]
 >
->Ao usar um dos modos de execução acima (autor, publicação, conteúdo de amostra, nosamplecontent), o valor usado no momento da instalação define o modo de execução para o *vida inteira* dessa instalação.
+>Ao usar um dos modos de execução acima (author, publish, samplecontent, nosamplecontent), o valor usado no momento da instalação define o modo de execução da *vida inteira* dessa instalação.
 >
->Para esses modos de execução, você *cannot* altere-as após a instalação.
+>Para esses modos de execução, você *não é possível* altere-os após a instalação.
 
 ## Modos de execução personalizados {#customized-run-modes}
 
-Você também pode criar seus próprios modos de execução personalizados. Eles podem ser combinados para cobrir cenários como:
+Você também pode criar seus próprios modos de execução personalizados. Eles podem ser combinados para abranger cenários como:
 
 * `author` + `development`
 
@@ -67,21 +67,21 @@ Você também pode criar seus próprios modos de execução personalizados. Eles
 
 * `publish` + `intranet`
 
-* conforme necessário . . .
+* conforme necessário. . .
 
 Os modos de execução personalizados também podem ser selecionados em cada inicialização.
 
-## Uso de conteúdo de amostra e nosamplecontent {#using-samplecontent-and-nosamplecontent}
+## Uso de samplecontent e nosamplecontent {#using-samplecontent-and-nosamplecontent}
 
-Esses modos permitem controlar o uso de conteúdo de amostra. O conteúdo da amostra é definido antes da inicialização rápida ser criada e pode incluir pacotes, configurações, etc:
+Esses modos permitem controlar o uso de conteúdo de amostra. O conteúdo de amostra é definido antes que o início rápido seja criado e pode incluir pacotes, configurações etc.:
 
-* O `samplecontent` o modo de execução instalará esse conteúdo (o modo padrão).
+* A variável `samplecontent` o modo de execução instalará esse conteúdo (o modo padrão).
 
-* O `nosamplecontent` não instalará o conteúdo de amostra.
+* A variável `nosamplecontent` não instalará o conteúdo de amostra.
 
 O modo de execução nosamplecontent foi projetado para instalações de produção.
 
-## Definição das propriedades de configuração para um modo de execução {#defining-configuration-properties-for-a-run-mode}
+## Definição das propriedades de configuração de um modo de execução {#defining-configuration-properties-for-a-run-mode}
 
 Uma coleção de valores para propriedades de configuração, usada para um modo de execução específico, pode ser salva no repositório.
 
@@ -97,67 +97,67 @@ O modo de execução é indicado por um sufixo no nome da pasta. Isso permite ar
 
 * `config.publish`
 
-   Usado para publicar modo de execução
+   Usado para o modo de execução de publicação
 
 * `config.<run-mode>`
 
-   Utilizado para o modo de execução aplicável; por exemplo, config
+   Usado para o modo de execução aplicável; por exemplo, config
 
-Consulte [Configuração do OSGi no Repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) para obter mais detalhes sobre como definir os nós de configuração individuais nessas pastas e criar configurações para combinações de vários modos de execução.
+Consulte [Configuração do OSGi no repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) para obter mais detalhes sobre como definir os nós de configuração individuais nessas pastas e criar configurações para combinações de vários modos de execução.
 
 >[!NOTE]
 >
->Para [Modos de Execução de Instalação](#installation-run-modes) (por exemplo, autor) o modo de execução não pode ser alterado após a instalação. No entanto, as alterações nas propriedades de configuração individuais entrarão em vigor após a reinicialização.
+>Para [Modos de execução da instalação](#installation-run-modes) (por exemplo, autor) o modo de execução não pode ser alterado após a instalação. No entanto, as alterações nas propriedades de configuração individuais entrarão em vigor na reinicialização.
 
-## Definindo pacotes adicionais a serem instalados para um modo de execução {#defining-additional-bundles-to-be-installed-for-a-run-mode}
+## Definição de pacotes adicionais a serem instalados para um modo de execução {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
-Pacotes adicionais que devem ser instalados para um modo de execução específico também podem ser especificados. Para essas definições, as pastas de instalação são usadas para manter os pacotes. Novamente, o modo de execução é indicado por um prefixo:
+Pacotes adicionais que devem ser instalados para um modo de execução específico também podem ser especificados. Para essas definições, as pastas de instalação são usadas para armazenar os pacotes. Novamente, o modo de execução é indicado por um prefixo:
 
 * `install.author`
 * `install.publish`
 
 Essas pastas são do tipo `nt:folder` e devem conter o pacote apropriado.
 
-## Iniciando o CQ com um modo de execução específico {#starting-cq-with-a-specific-run-mode}
+## Início do CQ com um modo de execução específico {#starting-cq-with-a-specific-run-mode}
 
-Se você tiver definido configurações para vários modos de execução, precisará definir qual deve ser usada na inicialização. Existem vários métodos para especificar qual modo de execução usar; a ordem da resolução é:
+Se você tiver definido as configurações para vários modos de execução, será necessário definir qual será usado na inicialização. Existem vários métodos para especificar qual modo de execução usar; a ordem da resolução é:
 
 1. [propriedades do sistema (](#using-a-system-property-in-the-start-script)
 1. [ ](#using-the-sling-properties-file)
 1. [ ](#using-the-r-option)
 1. [Detecção de nome de arquivo](#filename-detection-renaming-the-jar-file)
 
-Ao usar um servidor de aplicativos, você também pode [definir o modo de execução em web.xml](#defining-the-run-mode-in-web-xml-with-application-server).
+Quando estiver usando um servidor de aplicativos, você também poderá [definir o modo de execução em web.xml](#defining-the-run-mode-in-web-xml-with-application-server).
 
 ### Uso do arquivo sling.properties {#using-the-sling-properties-file}
 
-O `sling.properties` pode ser usado para definir o modo de execução necessário:
+A variável `sling.properties` arquivo pode ser usado para definir o modo de execução necessário:
 
 1. Edite o arquivo de configuração:
 
    `<cq-installation-dir>/crx-quickstart/conf/sling.properties`
 
-1. Adicione as seguintes propriedades: o exemplo a seguir é para o autor:
+1. Adicione as seguintes propriedades; o exemplo a seguir é para autor:
 
    `sling.run.modes=author`
 
 ### Uso da opção -r {#using-the-r-option}
 
-Um modo de execução personalizado pode ser ativado usando o `-r` ao iniciar o início rápido. Por exemplo, use o seguinte comando para iniciar uma instância de AEM com o modo de execução definido como dev. &quot;
+Um modo de execução personalizado pode ser ativado usando o `-r` ao iniciar o início rápido. Por exemplo, use o seguinte comando para iniciar uma instância do AEM com o modo de execução definido como dev. &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
 ```
 
-### Uso de uma propriedade do sistema no script de início {#using-a-system-property-in-the-start-script}
+### Usando uma propriedade do sistema no script de inicialização {#using-a-system-property-in-the-start-script}
 
-Uma propriedade do sistema no script de início pode ser usada para especificar o modo de execução.
+Uma propriedade do sistema no script de inicialização pode ser usada para especificar o modo de execução.
 
 * Por exemplo, use o seguinte para iniciar uma instância como uma instância de publicação de produção localizada nos EUA:
 
    `-Dsling.run.modes=publish,prod,us`
 
-### Detecção de nome de arquivo - renomeação do arquivo jar {#filename-detection-renaming-the-jar-file}
+### Detecção de nome de arquivo - renomeando o arquivo jar {#filename-detection-renaming-the-jar-file}
 
 Os dois modos de execução de instalação a seguir podem ser ativados renomeando o arquivo jar de instalação antes da instalação:
 
@@ -168,20 +168,20 @@ O arquivo jar deve usar a convenção de nomenclatura:
 
 `cq5-<run-mode>-p<port-number>`
 
-Por exemplo, defina a variável `publish` execute o modo nomeando o arquivo jar:
+Por exemplo, defina a variável `publish` executar nomeando o arquivo jar:
 
 `cq5-publish-p4503`
 
-### Definindo o modo de execução em web.xml (com o Servidor de Aplicativos) {#defining-the-run-mode-in-web-xml-with-application-server}
+### Definindo o modo de execução em web.xml (com Servidor de Aplicações) {#defining-the-run-mode-in-web-xml-with-application-server}
 
-Ao usar um servidor de aplicativos, você também pode configurar a propriedade :
+Quando estiver usando um servidor de aplicativos, você também poderá configurar a propriedade:
 
 `sling.run.modes`
 
-no arquivo :
+no arquivo:
 
 `WEB-INF/web.xml`
 
-Isso está no AEM `war` e deve ser atualizado antes da implantação.
+Isto é no AEM `war` arquivo e deve ser atualizado antes da implantação.
 
-Consulte [Instalar AEM com um servidor de aplicativos](/help/sites-deploying/application-server-install.md) para obter mais detalhes.
+Consulte [Instalar o AEM com um servidor de aplicativos](/help/sites-deploying/application-server-install.md) para obter mais detalhes.

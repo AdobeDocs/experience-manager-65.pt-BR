@@ -1,6 +1,6 @@
 ---
-title: Introdução ao conteúdo e comércio AEM
-description: Saiba como implantar um projeto de Conteúdo e Comércio AEM.
+title: Introdução ao conteúdo e comércio de AEM
+description: Saiba como implantar um projeto de conteúdo e comércio do AEM.
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
@@ -11,85 +11,85 @@ ht-degree: 6%
 
 ---
 
-# Introdução ao conteúdo e comércio AEM {#start}
+# Introdução ao conteúdo e comércio de AEM {#start}
 
-Para começar a usar AEM Content and Commerce, é necessário instalar o AEM Content and Commerce Add-On for AEM 6.5.
+Para começar a usar o AEM Content and Commerce, é necessário instalar o AEM Content and Commerce Add-On para AEM 6.5.
 
 ## Requisito mínimo de software
 
-[AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html) 7 ou posterior é necessário.
+[Pacote de serviços do AEM 6.5](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html) 7 ou posterior é obrigatório.
 
 ## Integração {#onboarding}
 
-A integração do conteúdo e do comércio AEM é um processo de duas etapas:
+A integração de conteúdo e comércio do AEM é um processo de duas etapas:
 
-1. Instale o complemento Conteúdo AEM e Commerce para o AEM 6.5
+1. Instalar o complemento de conteúdo e comércio do AEM para AEM 6.5
 
-2. Conectar AEM com sua solução comercial
+2. Conectar o AEM à sua solução comercial
 
-### Instale o complemento Conteúdo AEM e Commerce para o AEM 6.5 {#install-add-on}
+### Instalar o complemento de conteúdo e comércio do AEM para AEM 6.5 {#install-add-on}
 
-Baixe e instale o AEM Commerce Add-On para AEM 6.5 no [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html) portal.
+Baixe e instale o complemento AEM Commerce para AEM 6.5 da [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html) portal.
 
 Inicie e instale o AEM 6.5 Service Pack necessário. Recomendamos instalar o último service pack disponível.
 
 >[!NOTE]
 >
->Isso será feito pelo CSE para AEM clientes do Managed Service.
+>Isso será feito pelo CSE para clientes do AEM Managed Service.
 
-### Conecte AEM ao seu sistema de comércio {#connect}
+### Conectar o AEM ao seu sistema do Commerce {#connect}
 
-AEM pode ser conectado a qualquer sistema de comércio que tenha um terminal GraphQL acessível para AEM. Normalmente, esses pontos de extremidade estão disponíveis publicamente ou podem ser conectados via VPN privada ou conexões locais, dependendo da configuração individual do projeto.
+O AEM pode ser conectado a qualquer sistema comercial que tenha um terminal GraphQL acessível para AEM. Esses endpoints geralmente estão disponíveis publicamente ou podem ser conectados por VPN privada ou conexões locais, dependendo da configuração individual do projeto.
 
-Opcionalmente, é possível fornecer o cabeçalho de autenticação para usar recursos adicionais da CIF que exigem autenticação.
+Como opção, o cabeçalho de autenticação pode ser fornecido para usar recursos CIF adicionais que exigem autenticação.
 
-Projetos gerados pela [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype)e o [Loja de referência Venia AEM](https://github.com/adobe/aem-cif-guides-venia) que já está incluída no [configuração padrão](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) deve ser ajustado.
+Projetos gerados pelo [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype), e o [Loja de referência AEM Venia](https://github.com/adobe/aem-cif-guides-venia) que já está incluído na lista [configuração padrão](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) deve ser ajustado.
 
-Substitua o valor da variável `url` em `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` com o terminal GraphQL do seu sistema de comércio. Essa configuração pode ser feita por meio do console OSGI ou da implantação da configuração OSGI por meio do projeto. Diferentes configurações para sistemas de armazenamento temporário e de produção são suportadas usando diferentes modos de execução de AEM.
+Substitua o valor de `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` com o terminal GraphQL do seu sistema de comércio. Essa configuração pode ser feita por meio do console OSGI ou implantando a configuração OSGI por meio do projeto. Diferentes configurações para sistemas de preparo e produção são compatíveis com o uso de diferentes modos de execução do AEM.
 
-Os Componentes principais do AEM Content and Commerce e da CIF usam conexões AEM lado do servidor e do cliente. Os Componentes principais da CIF do lado do cliente e as ferramentas de criação do complemento CIF se conectam por padrão ao `/api/graphql`. Isso pode ser ajustado através da configuração do Cloud Service da CIF, se necessário (veja abaixo).
+O complemento de conteúdo e comércio para AEM e os componentes principais da CIF usam conexões AEM do lado do servidor e do lado do cliente. Os Componentes principais da CIF do lado do cliente e as ferramentas de criação do complemento CIF se conectam por padrão a `/api/graphql`. Isso pode ser ajustado por meio da configuração do Cloud Service da CIF, se necessário (veja abaixo).
 
-O complemento CIF fornece um servlet proxy da GraphQL em `/api/graphql` que podem, opcionalmente, ser utilizadas para [desenvolvimento local](develop.md). Para implantações de produção, é altamente recomendável configurar um proxy reverso para o terminal comercial do GraphQL por meio do Dispatcher de AEM ou em outras camadas de rede (como CDN).
+O complemento CIF fornece um servlet proxy do GraphQL em `/api/graphql` que podem ser usados opcionalmente para [desenvolvimento local](develop.md). Para implantações de produção, é altamente recomendável configurar um proxy reverso para o endpoint do GraphQL de comércio por meio do AEM Dispatcher ou em outras camadas de rede (como o CDN).
 
-## Configuração de lojas e catálogos {#catalog}
+## Configurando lojas e catálogos {#catalog}
 
-O complemento e o [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components) pode ser usado em várias estruturas de site AEM conectadas a diferentes lojas de comércio (ou visualizações de loja, e assim por diante). Por padrão, o complemento CIF é implantado com uma configuração padrão que se conecta à loja e ao catálogo padrão da Adobe Commerce.
+O Complemento e o [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components) pode ser usado em várias estruturas de site de AEM conectadas a diferentes lojas de comércio (ou visualizações de loja e assim por diante). Por padrão, o complemento CIF é implantado com uma configuração padrão conectada ao armazenamento e catálogo padrão da Adobe Commerce.
 
-Essa configuração pode ser ajustada para o projeto por meio da configuração do Cloud Service da CIF, seguindo estas etapas:
+Essa configuração pode ser ajustada para o projeto por meio da configuração de Cloud Service da CIF seguindo estas etapas:
 
-1. AEM acesse Ferramentas -> Cloud Services -> Configuração da CIF
+1. No AEM, acesse Ferramentas -> Cloud Services -> Configuração da CIF
 
 2. Selecione a configuração de comércio que deseja alterar
 
-3. Abra as propriedades de configuração na barra de ações
+3. Abrir as propriedades de configuração por meio da barra de ações
 
-![Configuração do CIF Cloud Services](/help/commerce/cif/assets/cif-cloud-service-config.png)
+![Configuração de Cloud Services da CIF](/help/commerce/cif/assets/cif-cloud-service-config.png)
 
 As seguintes propriedades podem ser configuradas:
 
-- GraphQL Client - selecione o cliente GraphQL configurado para comunicação de backend de comércio. Normalmente, isso deve permanecer no padrão.
-- Exibição da loja - o identificador de exibição da loja. Se estiver vazia, a exibição de loja padrão será usada.
-- GraphQL Proxy Path - o caminho do URL Proxy GraphQL em AEM usado para solicitações de proxy para o terminal de comércio back-end do GraphQL.
+- Cliente GraphQL - selecione o cliente GraphQL configurado para comunicação de back-end de comércio. Normalmente, isso deve permanecer no padrão.
+- Exibição de loja - o identificador de exibição de loja. Se estiver vazia, a visualização de loja padrão será usada.
+- Caminho de proxy do GraphQL - o caminho de URL que o proxy do GraphQL no AEM usa para solicitações de proxy para o endpoint do GraphQL de back-end de comércio.
 
    >[!NOTE]
    >
-   >Na maioria das configurações, o valor padrão `/api/graphql` não deve ser alterado. Somente a configuração avançada que não usa o proxy GraphQL fornecido deve alterar essa configuração.
+   >Na maioria das configurações, o valor padrão é `/api/graphql` não deve ser alterado. Somente a configuração avançada que não usa o proxy do GraphQL fornecido deve alterar essa configuração.
 
-- Ativar o suporte à UID do catálogo - ative o suporte para UID em vez da ID nas chamadas de GraphQL de back-end de comércio.
+- Habilitar suporte a UID do catálogo - habilite o suporte para UID em vez de ID nas chamadas de GraphQL de back-end de comércio.
 
    >[!NOTE]
    >
-   >O suporte para UIDs foi introduzido no Adobe Commerce 2.4.2. Habilite-o somente se o back-end de comércio suportar um esquema GraphQL da versão 2.4.2 ou posterior.
+   >O suporte para UIDs foi introduzido no Adobe Commerce 2.4.2. Habilite isso somente se o back-end de comércio suportar um esquema do GraphQL versão 2.4.2 ou posterior.
 
-- Identificador de categoria raiz do catálogo - o identificador (UID ou ID) da raiz do catálogo de loja
+- Identificador de categoria raiz do catálogo - o identificador (UID ou ID) da raiz do catálogo de armazenamento
 
    >[!CAUTION]
    >
-   >A partir da versão 2.0.0 dos Componentes principais da CIF, o suporte para o `id` foi removido e substituído por `uid`. Se o seu projeto usa a versão 2.0.0 dos Componentes principais da CIF, você deve ativar o Suporte à UID de catálogo e usar uma UID de categoria válida como &quot;Identificador de categoria raiz do catálogo&quot;.
+   >A partir da versão 2.0.0 dos Componentes principais da CIF, o suporte para `id` foi removido e substituído por `uid`. Se o projeto usar os Componentes principais da CIF versão 2.0.0, você deverá ativar o Suporte à UID do catálogo e usar uma UID de categoria válida como &quot;Identificador de categoria raiz do catálogo&quot;.
 
-A configuração mostrada acima é para referência. Os projetos devem fornecer suas próprias configurações.
+A configuração mostrada acima serve como referência. Os projetos devem fornecer suas próprias configurações.
 
-Para configurações mais complexas usando várias estruturas de site de AEM combinadas com catálogos de comércio diferentes, consulte o [Configuração de várias lojas do Commerce](configuring/multi-store-setup.md) tutorial.
+Para configurações mais complexas usando várias estruturas de site AEM combinadas com diferentes catálogos de comércio, consulte a [Configuração de várias lojas do Commerce](configuring/multi-store-setup.md) tutorial.
 
 ## Recursos adicionais {#additional-resources}
 

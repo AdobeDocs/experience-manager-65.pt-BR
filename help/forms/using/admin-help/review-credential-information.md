@@ -1,5 +1,5 @@
 ---
-title: Revisar informações de uso de credenciais
+title: Revisar informações de uso da credencial
 seo-title: Review credential use information
 description: Saiba como revisar informações de uso de credenciais.
 seo-description: Learn how to review credential use information.
@@ -17,25 +17,25 @@ ht-degree: 0%
 
 ---
 
-# Revisar informações de uso de credenciais {#review-credential-use-information}
+# Revisar informações de uso da credencial {#review-credential-use-information}
 
-A credencial contém informações descrevendo seu uso pretendido e que podem ser acessadas por meio do aplicativo da Web do usuário final das extensões do Acrobat Reader DC. Você pode usar essas informações para determinar o tipo de credencial instalada (avaliação ou produção) e suas datas de validade.
+A credencial contém informações que descrevem seu uso pretendido que podem ser acessadas por meio do aplicativo web do usuário final das extensões do Acrobat Reader DC. Você pode usar essas informações para determinar o tipo de credencial instalada (avaliação ou produção) e suas datas de validade.
 
 1. Abra um navegador da Web e insira este URL:
 
-   http://localhost:port/ReaderExtensions (onde *porta* é o número da porta do servidor de aplicativos)
+   http://localhost:port/ReaderExtensions (onde *porta* é o número da porta do seu servidor de aplicativos)
 
-1. Faça logon usando o nome de usuário e a senha padrão:
+1. Efetue login usando o nome de usuário e a senha padrão:
 
-   Nome do usuário: administrador
+   Nome de usuário: administrador
 
    Senha: senha
 
    >[!NOTE]
    >
-   >Você deve ter privilégios de administrador ou superusuário para fazer logon usando o nome de usuário e a senha padrão. Para permitir que outros usuários acessem extensões do Acrobat Reader DC, crie as contas de usuário no Gerenciamento de usuários e conceda aos usuários a função de extensões do Acrobat Reader DC Web Application.
+   >Você deve ter privilégios de administrador ou superusuário para efetuar login usando o nome de usuário e a senha default. Para permitir que outros usuários acessem extensões do Acrobat Reader DC, crie as contas de usuário no Gerenciamento de usuários e conceda aos usuários a função de Aplicativo Web de extensões do Acrobat Reader DC.
 
-1. Selecione o alias da credencial na lista Selecionar Credencial e revise as informações incluídas na Data de Expiração e no Aviso de Uso Pretendido.
+1. Selecione o alias da credencial na lista Selecionar credencial e revise as informações incluídas na Data de expiração e no Aviso de uso pretendido.
 
 >[!NOTE]
 >

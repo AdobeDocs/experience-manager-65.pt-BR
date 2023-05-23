@@ -34,14 +34,14 @@ O arquivo se aplica a todos os projetos de tradução.
 
 >[!NOTE]
 >
->Após uma atualização para 6.4, é recomendável mover o arquivo de /etc. Consulte [Reestruturação comum de repositório no AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) para obter mais detalhes.
+>Após uma atualização para a versão 6.4, é recomendável mover o arquivo de /etc. Consulte [Reestruturação do repositório comum no AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) para obter mais detalhes.
 
 As regras incluem as seguintes informações:
 
 * O caminho do nó ao qual a regra se aplica. A regra também se aplica aos descendentes do nó.
 * Os nomes das propriedades do nó que contêm o conteúdo a ser traduzido. A propriedade pode ser específica a um tipo de recurso específico ou a todos os tipos de recurso.
 
-Por exemplo, você pode criar uma regra que traduza o conteúdo que os autores adicionam a todos os componentes de Texto de base AEM em suas páginas. A regra pode identificar o nó `/content` e a propriedade `text` do componente `foundation/components/text`.
+Por exemplo, você pode criar uma regra que traduza o conteúdo que os autores adicionam a todos os componentes de texto de base do AEM em suas páginas. A regra pode identificar o nó `/content` e a propriedade `text` do componente `foundation/components/text`.
 
 Existe um [console](#translation-rules-ui) que foi adicionado para configurar regras de tradução. As definições na interface preencherão o arquivo para você.
 
@@ -77,7 +77,7 @@ Cada um desses elementos `node` têm as seguintes características:
    * O atributo `resourceType` contém o caminho que é resolvido para o componente que implementa o tipo de recurso.
    * Os elementos `property` secundários identificam a propriedade do nó a ser traduzida. Use este nó da mesma forma que os elementos `property` secundários para regras de nó.
 
-A seguinte regra de exemplo faz com que o conteúdo de todas as propriedades `text` seja traduzido para todas as páginas abaixo do nó `/content`. A regra é eficaz para qualquer componente que armazene conteúdo em um `text` , como o componente de Texto de base e o componente de Imagem de base.
+A seguinte regra de exemplo faz com que o conteúdo de todas as propriedades `text` seja traduzido para todas as páginas abaixo do nó `/content`. A regra é válida para qualquer componente que armazene conteúdo em uma `text` propriedade, como o componente de texto de base e o componente de imagem de base.
 
 ```xml
 <node path="/content">
@@ -85,7 +85,7 @@ A seguinte regra de exemplo faz com que o conteúdo de todas as propriedades `te
 </node>
 ```
 
-O exemplo a seguir traduz o conteúdo de todos `text` e também traduz outras propriedades do componente de imagem de base. Se outros componentes tiverem propriedades com o mesmo nome, a regra não se aplica a eles.
+O exemplo a seguir traduz o conteúdo de todos `text` propriedades e também traduz outras propriedades do componente de Imagem de base. Se outros componentes tiverem propriedades com o mesmo nome, a regra não se aplica a eles.
 
 ```xml
 <node path="/content">
@@ -111,7 +111,7 @@ Cada elemento `assetNode` tem as seguintes características:
 * Um atributo `resourceType` que é igual ao caminho que é resolvido para o componente.
 * Um atributo `assetReferenceAttribute` que é igual ao nome da propriedade que armazena o binário do ativo (para ativos incorporados) ou o caminho para o ativo referenciado.
 
-O exemplo a seguir extrai imagens do componente de imagem de base:
+O exemplo a seguir extrai imagens do componente de Imagem básico:
 
 ```xml
 <assetNode resourceType="foundation/components/image" assetReferenceAttribute="fileReference"/>
@@ -163,7 +163,7 @@ Para acessá-lo:
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-Daqui, você pode **Adicionar contexto**. Isso permite adicionar um caminho.
+A partir daqui, você pode **Adicionar contexto**. Isso permite adicionar um caminho.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
@@ -171,17 +171,17 @@ Em seguida, é necessário selecionar o contexto e clicar em **Editar**. Isso ab
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
-Há 4 atributos que você pode alterar por meio da interface do usuário: `isDeep`, `inherit`, `translate` e `updateDestinationLanguage`.
+Há 4 atributos que você pode alterar por meio da interface: `isDeep`, `inherit`, `translate` e `updateDestinationLanguage`.
 
 **isDeep** Esse atributo é aplicável em filtros de nó e é verdadeiro por padrão. Ele verifica se o nó (ou seus antecessores) contém essa propriedade com o valor da propriedade especificado no filtro. Se for falso, ele só verifica o nó atual.
 
-Por exemplo, nós filho estão sendo adicionados a um trabalho de tradução mesmo quando o nó pai tem a propriedade `draftOnly` definido como true para sinalizar conteúdo de rascunho. Aqui, o atributo `isDeep` entra em ação e verifica se os nós principais têm a propriedade `draftOnly` definida como verdadeira e exclui os nós secundários.
+Por exemplo, nós secundários são adicionados a um trabalho de tradução mesmo quando o nó principal tem uma propriedade `draftOnly` defina como true para sinalizar conteúdo de rascunho. Aqui, o atributo `isDeep` entra em ação e verifica se os nós principais têm a propriedade `draftOnly` definida como verdadeira e exclui os nós secundários.
 
-No Editor, você pode marcar/desmarcar **É Profundo** no **Filtros** guia .
+No Editor, você pode marcar/desmarcar **É profundo** no **Filtros** guia.
 
 ![chlimage_1-59](assets/chlimage_1-59.jpeg)
 
-Este é um exemplo do xml resultante quando **É Profundo** está desmarcada na interface do usuário:
+Este é um exemplo do xml resultante quando **É profundo** O está desmarcado na interface do usuário:
 
 ```xml
  <filter>
@@ -189,19 +189,19 @@ Este é um exemplo do xml resultante quando **É Profundo** está desmarcada na 
 </filter>
 ```
 
-**herdar** Isso é aplicável em propriedades. Por padrão, cada propriedade é herdada, mas se você quiser que alguma propriedade não seja herdada no filho, poderá marcar essa propriedade como false para que seja aplicada somente nesse nó específico.
+**herdar** Isso é aplicável em propriedades. Por padrão, todas as propriedades são herdadas, mas se você quiser que alguma propriedade não seja herdada no nó secundário, poderá marcá-la como falsa para que seja aplicada somente nesse nó específico.
 
 Na interface, você pode marcar/desmarcar **Herdar** na guia **Propriedades**.
 
 ![chlimage_1-60](assets/chlimage_1-60.jpeg)
 
-**tradução** O atributo de tradução é usado apenas para especificar se uma propriedade deve ser traduzida ou não.
+**traduzir** O atributo translate é usado apenas para especificar se uma propriedade deve ser traduzida ou não.
 
 Na interface, você pode marcar/desmarcar **Traduzir** na guia **Propriedades**.
 
-**updateDestinationLanguage** Esse atributo é usado para propriedades que não têm texto, mas códigos de idioma, por exemplo jcr:language. O usuário não está traduzindo o texto, e sim convertendo a localidade do idioma da origem para o destino. Essas propriedades não são enviadas para tradução.
+**updateDestinationLanguage** Esse atributo é usado para propriedades que não têm texto, e sim códigos de idioma. Por exemplo: jcr:language. O usuário não está traduzindo o texto, e sim convertendo a localidade do idioma da origem para o destino. Essas propriedades não são enviadas para tradução.
 
-Na interface do usuário, você pode marcar/desmarcar **Traduzir** no **Propriedades** , mas para as propriedades específicas que têm códigos de idioma como valor.
+Na interface, você pode marcar/desmarcar **Traduza** no **Propriedades** , mas para as propriedades específicas que têm códigos de idioma como valor.
 
 Para ajudar a esclarecer a diferença entre `updateDestinationLanguage` e `translate`, veja um exemplo simples de um contexto com apenas duas regras:
 
@@ -218,7 +218,7 @@ O resultado no XML terá esta aparência:
 
 O arquivo translation_rules.xml instalado com AEM contém um conjunto padrão de regras de tradução. Você pode editar o arquivo para atender aos requisitos dos seus projetos de tradução. Por exemplo, você pode adicionar regras para que o conteúdo dos componentes personalizados seja traduzido.
 
-Se você editar o arquivo translation_rules.xml, mantenha uma cópia de backup em um pacote de conteúdo. Instalar AEM service packs ou reinstalar determinados pacotes AEM pode substituir o arquivo translation_rules.xml atual pelo original. Para restaurar as regras nessa situação, você pode instalar o pacote que contém a cópia de backup.
+Se você editar o arquivo translation_rules.xml, mantenha uma cópia de backup em um pacote de conteúdo. Instalar service packs de AEM ou reinstalar determinados pacotes de AEM pode substituir o arquivo Translation_rules.xml atual pelo original. Para restaurar as regras nessa situação, você pode instalar o pacote que contém a cópia de backup.
 
 >[!NOTE]
 >

@@ -19,6 +19,6 @@ ht-degree: 13%
 
 # Folha de características do Sling{#sling-cheatsheet}
 
-![Entendendo a resolução do script Apache Sling.](assets/sling-cheatsheet-01.png)
+![Compreender a resolução do script do Apache Sling.](assets/sling-cheatsheet-01.png)
 
-![Usando o SlingPostServlet - este é o manipulador padrão para suas solicitações de POST; pode fazer quase tudo.](assets/sling-cheatsheet-02.png)
+![Usando o SlingPostServlet - esse é o manipulador padrão para suas solicitações POST; ele pode fazer quase tudo.](assets/sling-cheatsheet-02.png)

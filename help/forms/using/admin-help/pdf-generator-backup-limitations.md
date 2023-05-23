@@ -20,4 +20,4 @@ ht-degree: 0%
 
 # Limitações de backup do PDF Generator {#pdf-generator-backup-limitations}
 
-Não é possível fazer backup do diretório temporário que o PDF Generator usa para converter arquivos. Mesmo que o serviço seja restaurado corretamente, os dados podem ser perdidos porque o PDF Generator revisa e limpa o conteúdo do diretório temporário em intervalos definidos.
+Não é possível fazer backup do diretório temporário que o Gerador de PDF usa para converter arquivos. Mesmo que o serviço seja restaurado corretamente, os dados podem ser perdidos porque o Gerador de PDF revisa e limpa o conteúdo do diretório temporário em intervalos definidos.

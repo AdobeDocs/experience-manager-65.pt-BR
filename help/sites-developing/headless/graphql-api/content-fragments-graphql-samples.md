@@ -360,10 +360,10 @@ Se você criar uma nova variação chamada &quot;Centro de Berlim&quot; (`berlin
 
 Se você:
 
-* crie uma variedade de tags, nomeadas `Tourism` : `Business`, `City Break`, `Holiday`
+* crie uma variedade de tags, chamadas `Tourism` : `Business`, `City Break`, `Holiday`
 * e atribuí-los à variação Principal de vários `City` instâncias
 
-Em seguida, você pode usar um query para retornar detalhes da variável `name` e `tags`de todas as entradas marcadas como Quebras de cidade no `city`esquema.
+Em seguida, você pode usar uma consulta para retornar detalhes do `name` e `tags`de todas as entradas marcadas como Quebras de cidade na variável `city`esquema.
 
 **Exemplo de consulta**
 
@@ -1328,11 +1328,11 @@ Esta consulta interroga:
 Esta consulta interroga:
 
 * por vários Fragmentos de conteúdo do tipo `bookmark`
-   * com referências de fragmento a outros fragmentos do tipo de modelo específico `Article`
+   * com Referências de fragmentos a outros fragmentos do tipo de modelo específico `Article`
 
 >[!NOTE]
 >
->O campo `fragments` tem o tipo de dados `fragment-reference`, com o modelo `Article` selecionado. O query fornece `fragments` como uma matriz de `[Article]`.
+>O campo `fragments` tem o tipo de dados `fragment-reference`, com o modelo `Article` selecionado. Entrega da consulta `fragments` como uma matriz de `[Article]`.
 
 ```graphql
 {
@@ -1356,7 +1356,7 @@ Esta consulta interroga:
 
 >[!NOTE]
 >
->O campo `fragments` tem o tipo de dados `fragment-reference`, com os modelos `Article` e `Adventure` selecionados. O query fornece `fragments` como uma matriz de `[AllFragmentModels]`, que é cancelado com o tipo de união.
+>O campo `fragments` tem o tipo de dados `fragment-reference`, com os modelos `Article` e `Adventure` selecionados. Entrega da consulta `fragments` como uma matriz de `[AllFragmentModels]`, que é desreferenciado com o tipo de união.
 
 ```graphql
 {
@@ -1561,11 +1561,11 @@ Esta consulta interroga:
 }
 ```
 
-### Exemplo de consulta para vários fragmentos de conteúdo e suas variações, de um determinado modelo {#sample-wknd-multiple-fragment-variations-given-model}
+### Exemplo de consulta para vários Fragmentos de conteúdo e suas Variações de um determinado modelo {#sample-wknd-multiple-fragment-variations-given-model}
 
 Esta consulta interroga:
 
-* para Fragmentos de conteúdo do tipo `article` e todas as variações
+* por Fragmentos de conteúdo do tipo `article` e todas as variações
 
 **Exemplo de consulta**
 
@@ -1588,11 +1588,11 @@ query {
 }
 ```
 
-### Exemplo de consulta para variações do fragmento de conteúdo de um determinado modelo que tem uma tag específica anexada{#sample-wknd-fragment-variations-given-model-specific-tag}
+### Exemplo de consulta para variações de fragmento de conteúdo de um determinado modelo que tem uma tag específica anexada{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 Esta consulta interroga:
 
-* para Fragmentos de conteúdo do tipo `article` com uma ou mais variações com a tag `WKND : Activity / Hiking`
+* por Fragmentos de conteúdo do tipo `article` com uma ou mais variações com a tag `WKND : Activity / Hiking`
 
 **Exemplo de consulta**
 

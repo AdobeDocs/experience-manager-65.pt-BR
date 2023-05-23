@@ -1,5 +1,5 @@
 ---
-title: Gerenciamento de tarefas em uma hierarquia organizacional usando a Visualização do Gerenciador
+title: Gerenciando tarefas em uma hierarquia organizacional usando a Exibição do Gerente
 seo-title: Managing tasks in an organizational hierarchy using Manager View
 description: Como os gerentes e chefes de organização podem acessar e trabalhar nas tarefas de seus relatórios diretos e indiretos na guia Tarefas no espaço de trabalho do AEM Forms.
 seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
@@ -18,22 +18,22 @@ ht-degree: 0%
 
 ---
 
-# Gerenciamento de tarefas em uma hierarquia organizacional usando a Visualização do Gerenciador{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
+# Gerenciando tarefas em uma hierarquia organizacional usando a Exibição do Gerente{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
-Na área de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas atribuídas a qualquer pessoa em sua hierarquia (relatórios diretos ou indiretos) e executar várias ações com eles. As tarefas estão disponíveis na guia To-do no espaço de trabalho do AEM Forms. As ações apoiadas nas tarefas dos relatórios diretos são:
+No espaço de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas atribuídas a qualquer pessoa em sua hierarquia — relatórios diretos ou indiretos — e executar várias ações neles. As tarefas estão disponíveis na guia Tarefa no espaço de trabalho do AEM Forms. As ações compatíveis com as tarefas de subordinados diretos são:
 
-**Avançar** Encaminhe uma tarefa do relatório direto para qualquer usuário.
+**Encaminhar** Encaminhar uma tarefa de subordinado direto a qualquer usuário.
 
-**Reclamação** Reivindica uma tarefa de relatório direto.
+**Reclamação** Reclamar uma tarefa de um subordinado direto.
 
-**Reivindicação e abertura** Reivindica uma tarefa de um relatório direto e o abre automaticamente na lista De Tarefas do gerente.
+**Reclamação e abertura** Reclamar uma tarefa de um subordinado direto e abri-la automaticamente na lista de tarefas pendentes do gerente.
 
-**Rejeitar** Rejeitar uma tarefa encaminhada a um relatório direto por algum outro usuário. Essa opção está disponível para as tarefas encaminhadas por outros usuários a um relatório direto.
+**Rejeitar** Rejeitar uma tarefa encaminhada a um subordinado direto por algum outro usuário. Essa opção está disponível para as tarefas encaminhadas por outros usuários a um subordinado direto.
 
-O AEM Forms restringe o acesso de um usuário somente às tarefas para as quais o usuário tem controle de acesso (ACL). Essa verificação garante que um usuário possa buscar apenas as tarefas nas quais o usuário tem permissões de acesso. Usando serviços e implementações da Web de terceiros para definir a hierarquia, uma organização pode personalizar a definição de gerente e relatórios diretos para atender às suas necessidades.
+O AEM Forms restringe o acesso de um usuário somente às tarefas para as quais o usuário tem controle de acesso (ACL). Essa verificação garante que um usuário possa buscar somente as tarefas nas quais tem permissões de acesso. Usando serviços da Web e implementações de terceiros para definir a hierarquia, uma organização pode personalizar a definição de gerente e subordinados diretos para atender às suas necessidades.
 
-1. Crie um DSC. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para AEM Forms&quot; em [Programação com o AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guia.
-1. No DSC, defina um novo SPI para o gerenciamento de hierarquia para definir relatórios diretos e hierarquia dentro dos usuários do AEM Forms. A seguir, há um exemplo de trecho de código Java™.
+1. Crie um DSC. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para o AEM Forms&quot; no [Programação com o AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guia.
+1. No DSC, defina uma nova SPI para gerenciamento de hierarquia para definir subordinados diretos e hierarquia dentro dos usuários do AEM Forms. Veja a seguir um exemplo de trecho de código Java™.
 
    ```java
    public class MyHierarchyMgmtService
@@ -68,7 +68,7 @@ O AEM Forms restringe o acesso de um usuário somente às tarefas para as quais 
    }
    ```
 
-1. Crie um arquivo component.xml. Certifique-se de que a spec-id deve ser a mesma mostrada no trecho de código abaixo. A seguir, há um trecho de código de amostra que pode ser redefinido.
+1. Crie um arquivo component.xml. Certifique-se de que a spec-id seja igual à mostrada no trecho de código abaixo. A seguir está um exemplo de trecho de código que você pode redefinir.
 
    ```xml
    <component xmlns="https://adobe.com/idp/dsc/component/document">
@@ -112,11 +112,11 @@ O AEM Forms restringe o acesso de um usuário somente às tarefas para as quais 
    </component>
    ```
 
-1. Implante o DSC por meio do Workbench. Reiniciar `ProcessManagementTeamTasksService` serviço.
-1. Talvez seja necessário atualizar seu navegador ou fazer logout/login com o usuário novamente.
+1. Implante o DSC por meio do Workbench. Restart `ProcessManagementTeamTasksService` serviço.
+1. Talvez seja necessário atualizar o navegador ou fazer logout/logon com o usuário novamente.
 
-A tela a seguir ilustra o acesso às tarefas dos relatórios diretos e às ações disponíveis.
+A tela a seguir ilustra o acesso às tarefas de subordinados diretos e às ações disponíveis.
 
 ![cu_manager_view](assets/cu_manager_view.png)
 
-Acesse as tarefas dos relatórios diretos e execute as tarefas
+Acessar tarefas de subordinados diretos e agir nas tarefas

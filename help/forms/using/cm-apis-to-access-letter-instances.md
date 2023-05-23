@@ -1,7 +1,7 @@
 ---
 title: APIs para acessar instâncias de cartas
 seo-title: APIs to access letter instances
-description: Saiba como usar APIs para acessar instâncias de carta.
+description: Saiba como usar APIs para acessar instâncias de cartas.
 seo-description: Learn how to use APIs to access letter instances.
 uuid: e7fb7798-f49d-458f-87f5-22df5f3e7d10
 content-type: reference
@@ -21,28 +21,28 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-Usando a interface Criar correspondência do gerenciamento de correspondência, é possível salvar rascunhos de instâncias de carta em andamento e há instâncias de carta enviadas.
+Usando a interface Criar correspondência do Gerenciamento de correspondências, você pode salvar rascunhos de instâncias de cartas em andamento e há instâncias de cartas enviadas.
 
-O Gerenciamento de correspondência fornece APIs usando as quais você pode criar a interface de listagem para trabalhar com instâncias ou rascunhos de cartas enviadas. As APIs listam e abrem instâncias de carta enviadas e de rascunho de um agente, para que o agente possa continuar trabalhando nas instâncias de rascunho ou de carta enviada.
+O Gerenciamento de correspondências fornece APIs com as quais você pode criar a interface de listagem para trabalhar com instâncias de cartas enviadas ou rascunhos. As APIs listam e abrem instâncias de cartas de rascunho e enviadas de um agente, para que o agente possa continuar trabalhando nas instâncias de rascunho ou cartas enviadas.
 
-## Buscando instâncias de carta {#fetching-letter-instances}
+## Buscando instâncias de cartas {#fetching-letter-instances}
 
-O Gerenciamento de correspondência expõe APIs para buscar instâncias de carta por meio do serviço LetterInstanceService.
+O Gerenciamento de correspondências expõe as APIs para buscar instâncias de cartas por meio do serviço LetterInstanceService.
 
 | Método | Descrição |
 |--- |--- |
-| getAllLetterInstances | Busca instâncias de carta com base no parâmetro de consulta de entrada. Para buscar todas as instâncias de letra, passe o parâmetro de consulta como nulo. |
-| getLetterInstance | Busca a instância de letra especificada com base na ID da instância de letra. |
-| letterInstanceExists | Verifica se uma LetterInstance existe pelo nome fornecido. |
+| getAllLetterInstances | Obtém instâncias de cartas com base no parâmetro de consulta de entrada. Para buscar todas as instâncias de cartas, passe o parâmetro de consulta como nulo. |
+| getLetterInstance | Busca a ocorrência de carta especificada com base na ID da ocorrência de carta. |
+| letterInstanceExists | Verifica se existe uma LetterInstance com o nome fornecido. |
 
 >[!NOTE]
 >
->O LetterInstanceService é um serviço OSGI e sua instância pode ser recuperada usando @Reference no Java
->Classe ou sling.getService(LetterInstanceService). Classe ) no JSP.
+>LetterInstanceService é um serviço OSGI e sua instância pode ser recuperada usando @Reference em Java
+>Class ou sling.getService(LetterInstanceService). Class ) em JSP.
 
 ### Uso de getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-A API a seguir encontra as instâncias de carta com base no objeto de consulta (Enviado e Rascunho). Se o objeto de consulta for nulo, retornará todas as instâncias de letra. Essa API retorna a lista de [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objetos, que podem ser usados para extrair informações adicionais da instância de letra
+A API a seguir encontra as instâncias de correspondência com base no objeto de consulta (Enviado e Rascunho). Se o objeto de consulta for nulo, ele retornará todas as instâncias de correspondência. Essa API retorna a lista de [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objetos, que podem ser usados para extrair informações adicionais da ocorrência de carta
 
 **Sintaxe**: `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -54,14 +54,14 @@ A API a seguir encontra as instâncias de carta com base no objeto de consulta (
   </tr>
   <tr>
    <td>query</td>
-   <td>O parâmetro de consulta é usado para localizar/filtrar a instância da Carta. Aqui a consulta suporta apenas atributos/propriedades de nível superior do objeto. A consulta consiste em instruções e o "attributeName" usado no objeto Statement deve ser o nome da propriedade no objeto Letter instance .<br /> </td>
+   <td>O parâmetro de consulta é usado para localizar/filtrar a instância de carta. Aqui, a consulta suporta apenas atributos/propriedades de nível superior do objeto. A consulta consiste em instruções e o "attributeName" usado no objeto Statement deve ser o nome da propriedade no objeto de instância Letter.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-#### Exemplo 1: Buscar todas as instâncias de letra do tipo ENVIADO {#example-fetch-all-the-letter-instances-of-type-submitted}
+#### Exemplo 1: buscar todas as instâncias de correspondência do tipo ENVIADO {#example-fetch-all-the-letter-instances-of-type-submitted}
 
-O código a seguir retorna a lista de instâncias de carta enviadas. Para obter somente rascunhos, altere a variável `LetterInstanceType.COMPLETE.name()` para `LetterInstanceType.DRAFT.name().`
+O código a seguir retorna a lista de ocorrências de cartas enviadas. Para obter apenas rascunhos, altere a `LetterInstanceType.COMPLETE.name()` para `LetterInstanceType.DRAFT.name().`
 
 ```java
 @Reference
@@ -78,9 +78,9 @@ query.addStatement(statementForInstanceType);
 submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 ```
 
-#### Exemplo 2: buscar todas as instâncias de letra enviadas por um usuário e o tipo de instância de letra é RASCUNHO {#example-nbsp-fetch-all-the-letter-instances-submitted-by-a-user-and-letter-instance-type-is-draft}
+#### Exemplo 2: buscar todas as instâncias de cartas enviadas por um usuário e o tipo de instância de cartas é RASCUNHO {#example-nbsp-fetch-all-the-letter-instances-submitted-by-a-user-and-letter-instance-type-is-draft}
 
-O código a seguir tem várias instruções na mesma query para obter os resultados filtrados com base em critérios diferentes, como a instância de carta enviada (atributo enviado por) por um usuário e o tipo de letterInstanceType é DRAFT.
+O código a seguir tem várias instruções na mesma consulta para obter os resultados filtrados com base em diferentes critérios, como instância de carta enviada (atributo enviado por) por um usuário e o tipo de letterInstanceType é DRAFT.
 
 ```java
 @Reference
@@ -107,7 +107,7 @@ submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 
 ### Uso de getLetterInstance {#using-nbsp-getletterinstance}
 
-Busque a instância da carta identificada pela id de instância da carta fornecida. Retorna &quot;null se a ID da instância não corresponder.
+Busque a ocorrência de carta identificada pela ID de ocorrência de carta fornecida. Ele retorna &quot;null&quot; se a ID da instância não for correspondente.
 
 **Sintaxe:** `public LetterInstanceVO getLetterInstance(String letterInstanceId) throws ICCException;`
 
@@ -118,15 +118,15 @@ String letterInstanceId = "/content/apps/cm/letterInstances/1001/sampleLetterIns
 LetterInstanceVO letterInstance = letterInstanceService.getLetterInstance(letterInstanceId );
 ```
 
-### Verificando se a LetterInstance existe {#verifying-if-letterinstance-exist}
+### Verificando se LetterInstance existe {#verifying-if-letterinstance-exist}
 
-Verifique se existe uma Instância de Carta com o nome especificado
+Verificar se existe uma Instância de Letra com o nome especificado
 
 **Sintaxe**: `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
 
 | **Parâmetro** | **Descrição** |
 |---|---|
-| letterInstanceName | Nome da instância da carta que você deseja verificar se ela existe. |
+| letterInstanceName | Nome da ocorrência de carta que você deseja verificar se existe. |
 
 ```java
 @Reference
@@ -135,25 +135,25 @@ String letterInstanceName = "sampleLetterInstance";
 Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName );
 ```
 
-## Abertura de instâncias de carta {#opening-letter-instances}
+## Abertura de instâncias de cartas {#opening-letter-instances}
 
-A Instância da Carta pode ser do tipo Enviado ou Rascunho. Abrir ambos os tipos de instância de letra mostra comportamentos diferentes:
+A ocorrência da carta pode ser do tipo Enviado ou Rascunho. A abertura de ambos os tipos de ocorrência de letra mostra comportamentos diferentes:
 
-* No caso de Instância de carta enviada, um PDF representando a instância de carta é aberto. A instância da Carta Enviada persistente no servidor também contém o dataXML &amp; processado XDP, que pode ser usado para realizar e mais usar um caso personalizado, como criar um PDF/A.
-* No caso de instância de carta de rascunho, a interface do usuário de criação de correspondência é recarregada para o estado anterior exato, como durante o momento em que o rascunho foi criado
+* No caso de Instância de carta enviada, uma PDF que representa a instância de carta é aberta. A instância de carta enviada persistente no servidor também contém o XML de dados e o XDP processado, que podem ser usados para realizar e personalizar ainda mais o uso de um caso, como a criação de um PDF/A.
+* No caso de ocorrência de carta de Rascunho, a interface de criação de correspondência é recarregada para o estado exato anterior como estava durante o tempo em que o rascunho foi criado
 
 ### Abrindo Instância de Carta de Rascunho  {#opening-draft-letter-instance-nbsp}
 
-A interface do usuário do CCR é compatível com o parâmetro cmLetterInstanceId, que pode ser usado para recarregar a letra.
+A interface do CCR é compatível com o parâmetro cmLetterInstanceId, que pode ser usado para recarregar a carta.
 
 `https://[hostName]:[portNo]/[contextPath]//aem/forms/createcorrespondence.html?random=[randomNo]&cmLetterInstanceId=[letterInstanceId]`
 
 >[!NOTE]
 >
->Não é necessário especificar o cmLetterId ou cmLetterName/State/Version ao recarregar uma correspondência, pois os dados enviados já contêm todos os detalhes sobre a correspondência recarregada. RandomNo é usado para evitar problemas de cache do navegador, você pode usar o carimbo de data e hora como um número aleatório.
+>Não é necessário especificar o cmLetterId ou cmLetterName/State/Version ao recarregar uma correspondência, pois os dados enviados já contêm todos os detalhes sobre a correspondência que é recarregada. RandomNo é usado para evitar problemas de cache no navegador. Você pode usar o carimbo de data e hora como um número aleatório.
 
-### Abrindo a instância da carta enviada {#opening-submitted-letter-instance}
+### Abrindo instância de carta enviada {#opening-submitted-letter-instance}
 
-O PDF enviado pode ser aberto diretamente usando a ID da instância da carta:
+O PDF enviado pode ser aberto diretamente usando a ID de instância da carta:
 
 `https://[hostName]:[portNo]/[contextPath]/[letterInstanceId]`

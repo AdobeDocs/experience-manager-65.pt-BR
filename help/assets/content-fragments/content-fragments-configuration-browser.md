@@ -1,6 +1,6 @@
 ---
 title: Fragmentos de conteúdo — Navegador de configuração
-description: Saiba como ativar determinadas funcionalidades de Fragmento de conteúdo no Navegador de configuração para aproveitar AEM poderosos recursos de entrega sem cabeçalho.
+description: Saiba como ativar determinadas funcionalidades do Fragmento de conteúdo no Navegador de configuração para aproveitar os recursos avançados de entrega do AEM headless.
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
@@ -13,7 +13,7 @@ ht-degree: 78%
 
 # Fragmentos de conteúdo — Navegador de configuração{#content-fragments-configuration-browser}
 
-Saiba como ativar determinadas funcionalidades de Fragmento de conteúdo no Navegador de configuração para aproveitar AEM poderosos recursos de entrega sem cabeçalho.
+Saiba como ativar determinadas funcionalidades do Fragmento de conteúdo no Navegador de configuração para aproveitar os recursos avançados de entrega do AEM headless.
 
 ## Ativar a funcionalidade de fragmento de conteúdo para sua instância {#enable-content-fragment-functionality-instance}
 
@@ -61,7 +61,7 @@ Para [usar determinadas funcionalidades do fragmento de conteúdo](#creating-a-c
 
 ### Aplique a configuração à sua pasta de ativos {#apply-the-configuration-to-your-assets-folder}
 
-Quando a configuração **global** estiver ativado para a funcionalidade de fragmento de conteúdo, então se aplica a qualquer pasta de Ativos.
+Quando a configuração **global** está ativado para a funcionalidade de fragmento de conteúdo e se aplica a qualquer pasta de ativos.
 
 Para usar outras configurações (ou seja, excluindo globais) com uma pasta do Assets comparável, é necessário definir a conexão. Isso é feito ao selecionar a **Configuração** apropriada na guia **Serviços da nuvem** das **Propriedades da pasta** da pasta apropriada.
 

@@ -1,5 +1,5 @@
 ---
-title: Solução de problemas AEM durante a criação
+title: Solução de problemas do AEM durante a criação
 description: A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o AEM, junto com sugestões sobre como resolvê-los.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
@@ -21,21 +21,21 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 >[!NOTE]
 >
->Ao enfrentar problemas, também vale a pena verificar a lista de [Problemas conhecidos](/help/release-notes/release-notes.md) para sua instância (pacotes de versões e serviços).
+>Em caso de problemas, vale a pena também verificar a lista de [Problemas conhecidos](/help/release-notes/release-notes.md) para sua instância (versão e service packs).
 
 >[!NOTE]
 >
->Os usuários que tiverem privilégios de administrador e quiserem resolver problemas com o AEM, poderão utilizar os métodos de resolução de problemas descritos em [AEM de solução de problemas (para administradores)](/help/sites-administering/troubleshoot.md). Se você não tiver privilégios suficientes, consulte o administrador do sistema sobre AEM de solução de problemas.
+>Os usuários que têm privilégios de administrador e desejam solucionar problemas com AEM podem usar os métodos de solução de problemas descritos em [Solução de problemas do AEM (para administradores)](/help/sites-administering/troubleshoot.md). Se você não tiver privilégios suficientes, consulte o administrador do sistema para obter informações sobre como solucionar problemas de AEM.
 
 ## A versão antiga da página ainda está no site publicado {#old-page-version-still-on-published-site}
 
 * **Problema**:
 
-   * Você fez alterações em uma página e replicou a página para o site de publicação, mas a variável *old* A versão da página ainda está sendo exibida no site de publicação.
+   * Você fez alterações em uma página e a replicou para o site de publicação, mas a variável *antigo* A versão da página ainda está sendo exibida no site de publicação.
 
 * **Motivo**:
 
-   * Isso pode ter várias causas, na maioria das vezes o cache (seu navegador local ou o Dispatcher), embora, às vezes, possa ser um problema com a fila de replicação.
+   * Isso pode ter várias causas, mais frequentemente o cache (seu navegador local ou o Dispatcher), embora possa, às vezes, ser um problema com a fila de replicação.
 
 * **Soluções**:
 
@@ -54,25 +54,25 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 * **Problema**:
 
-   * O Sidekick não está visível ao editar uma página de conteúdo no ambiente do autor.
+   * O Sidekick não está visível ao editar uma página de conteúdo no ambiente de criação.
 
 * **Motivo**:
 
-   * Em casos raros, você pode ter posicionado o cabeçalho do sidekick fora do escopo da janela atual. Isso significa que não é possível reposicioná-lo novamente.
+   * Em casos raros, você pode ter posicionado o cabeçalho do seu sidekick fora do escopo da sua janela atual. Isso significa que não é possível reposicioná-lo novamente.
 
 * **Solução**:
 
-   * Faça logout da sessão atual e login novamente. O sidekick retornará à posição padrão.
+   * Faça logout da sessão atual e login novamente. O Sidekick retornará à posição padrão.
 
 ## Localizar e substituir - nem todas as instâncias são substituídas {#find-replace-not-all-instances-are-replaced}
 
 * **Problema:**
 
-   * Ao usar a variável **Localizar e Substituir** pode acontecer que nem todas as instâncias do `find` são substituídos em uma página.
+   * Ao usar o **Localizar e substituir** opção, pode acontecer que nem todas as instâncias da `find` termo são substituídos em uma página.
 
 * **Motivo**:
 
-   * A capacidade de **Localizar e Substituir** depende de como o conteúdo é salvo e se ele pode ser pesquisado. Por exemplo, um texto de blog é armazenado em `jcr:text` propriedade que não está configurada para ser pesquisada. O escopo padrão do servlet localizar e substituir abrange as seguintes propriedades:
+   * A capacidade de **Localizar e substituir** depende de como o conteúdo é salvo e se ele pode ser pesquisado. Por exemplo, um texto de blog é armazenado em `jcr:text` propriedade que não está configurada para ser pesquisada. O escopo padrão para o servlet localizar e substituir abrange as seguintes propriedades:
 
       * `jcr:title`
       * `jcr:description`
@@ -81,6 +81,6 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 * **Solução**:
 
-   * Essas definições podem ser alteradas com a configuração de **Servlet Localizar e substituir do Day CQ WCM** usando o **Console da Web**; por exemplo, em
+   * Essas definições podem ser alteradas com a configuração para **Servlet Localizar e Substituir CQ do Dia** usando o **Console da Web**; por exemplo, em
 
       `http://localhost:4502/system/console/configMgr`

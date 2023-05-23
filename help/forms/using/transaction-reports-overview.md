@@ -1,5 +1,5 @@
 ---
-title: Visão geral dos relatórios de transação
+title: Visão Geral dos Relatórios de Transação
 seo-title: Transaction Reports Overview
 description: Manter uma contagem de todos os formulários enviados, comunicação interativa renderizada, Documentos convertidos em um formato para outro e muito mais
 seo-description: Keep a count of all the forms submitted, interactive communication rendered, Documents converted to one format to another, and more
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ---
 
-# Visão geral dos relatórios de transação{#transaction-reports-overview}
+# Visão Geral dos Relatórios de Transação{#transaction-reports-overview}
 
 ## Introdução {#introduction}
 
-Relatórios de transação no AEM Forms permitem que você mantenha uma contagem de todas as transações realizadas desde uma data especificada na implantação do AEM Forms. O objetivo é fornecer informações sobre o uso do produto e ajudar as partes interessadas a entender seus volumes de processamento digital. Exemplos de uma transação incluem:
+Os relatórios de transações no AEM Forms permitem manter uma contagem de todas as transações ocorridas desde uma data especificada na implantação do AEM Forms. O objetivo é fornecer informações sobre o uso do produto e ajudar as partes interessadas a entender seus volumes de processamento digital. Exemplos de uma transação incluem:
 
 * Envio de um formulário adaptável, um formulário HTML5 ou um conjunto de formulários
 * Representação de uma versão impressa ou da Web de uma comunicação interativa
@@ -28,38 +28,38 @@ Relatórios de transação no AEM Forms permitem que você mantenha uma contagem
 
 Para obter mais informações sobre o que é considerado uma transação, consulte [APIs faturáveis](../../forms/using/transaction-reports-billable-apis.md).
 
-A gravação de transação é desativada por padrão. Você pode [habilitar gravação de transações](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) do Console AEM Web. Você pode exibir relatórios de transação nas instâncias de autor, processamento ou publicação. Exiba relatórios de transação nas instâncias de criação ou processamento para obter uma soma agregada de todas as transações. Visualize relatórios de transação nas instâncias de publicação para obter uma contagem de todas as transações que ocorrem apenas nessa instância de publicação, de onde o relatório é executado.
+A gravação de transação está desabilitada por padrão. Você pode [habilitar registro de transação](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) no console da Web AEM. Você pode exibir relatórios de transações nas instâncias de autor, processamento ou publicação. Exiba relatórios de transações nas instâncias de autor ou de processamento para obter uma soma agregada de todas as transações. Exiba relatórios de transações nas instâncias de publicação para obter uma contagem de todas as transações que ocorrem somente nessa instância de publicação de onde o relatório é executado.
 
-Não crie conteúdo (Crie formulários adaptáveis, comunicação interativa, temas e outras atividades de criação) e processe documentos (Use workflows, serviços de documento e outras atividades de processamento) na mesma instância de AEM. Manter a gravação de transações desativada para os servidores da AEM Forms usados para criar conteúdo. Mantenha a gravação de transações ativada para os servidores da AEM Forms usados para processar documentos.
+Não crie conteúdo (crie formulários adaptáveis, comunicação interativa, temas e outras atividades de criação) e processe documentos (use fluxos de trabalho, serviços de documentos e outras atividades de processamento) na mesma instância do AEM. Mantenha a gravação da transação desativada para os servidores do AEM Forms usados para criar conteúdo. Mantenha a gravação da transação ativada para os servidores do AEM Forms usados para processar documentos.
 
 ![sample-transaction-report-author-1](assets/sample-transaction-report-author-1.png)
 
-Uma transação permanece no buffer por um período especificado (Tempo do buffer de liberação + Tempo de replicação inversa). Por padrão, leva aproximadamente 90 segundos para a contagem de transações ser refletida no relatório de transações.
+Uma transação permanece no buffer por um período especificado (Tempo do Buffer de Liberação + Tempo de replicação reversa). Por padrão, leva aproximadamente 90 segundos para a contagem de transações ser refletida no relatório de transações.
 
-Ações como enviar um Formulário PDF, usar a interface do usuário do agente para visualizar uma comunicação interativa ou usar métodos de envio de formulário não padrão não são contabilizadas como transações. A AEM Forms fornece uma API para registrar essas transações. Chame a API das implementações personalizadas para registrar uma transação.
+Ações como enviar um Formulário PDF, usar a interface do usuário do agente para visualizar uma comunicação interativa ou usar métodos de envio de formulário não padrão não são contabilizadas como transações. O AEM Forms fornece uma API para registrar essas transações. Chame a API a partir das implementações personalizadas para registrar uma transação.
 
 ## Topologia suportada {#supported-topology}
 
-Os relatórios de transação estão disponíveis somente no AEM Forms no ambiente OSGi. Ele oferece suporte para author-publish, author-processing-publish e somente a topologias de processamento. Por exemplo, topologias, consulte [Topologias de arquitetura e implantação do AEM Forms](../../forms/using/transaction-reports-overview.md).
+Os relatórios de transação estão disponíveis somente no AEM Forms em ambientes OSGi. Ela oferece suporte às topologias author-publish, author-processing-publish e somente ao processamento de topologias. Por exemplo, topologias, consulte [Arquitetura e topologias de implantação do AEM Forms](../../forms/using/transaction-reports-overview.md).
 
-A contagem de transações é replicada reversa das instâncias de publicação para as instâncias de autor ou de processamento. Uma topologia indicativa de autor-publicação é exibida abaixo:
+A contagem de transações é revertida e replicada das instâncias de publicação para as instâncias de autoria ou processamento. Uma topologia indicativa de publicação do autor é exibida abaixo:
 
 ![simple-author-publish-topology](assets/simple-author-publish-topology.png)
 
 >[!NOTE]
 >
->Os relatórios de transação do AEM Forms não são compatíveis com topologias que contêm apenas instâncias de publicação.
+>Os relatórios de transação do AEM Forms não suportam topologias que contêm apenas instâncias de publicação.
 
-### Orientações para a utilização dos relatórios de transações {#guidelines-for-using-transaction-reports}
+### Diretrizes para o uso de relatórios de transação {#guidelines-for-using-transaction-reports}
 
-* Desative os relatórios de transação em todas as instâncias do autor, pois os relatórios em instâncias do autor incluem transações registradas durante as atividades de criação.
-* Ative o **Mostrar transações apenas da publicação** na instância de autor para exibir transações cumulativas de todas as instâncias de publicação. Você também pode exibir relatórios de transação em cada instância de publicação para transações reais apenas nessa instância de publicação específica.
-* Não use instâncias de autor para executar fluxos de trabalho e processar documentos.
+* Desative os relatórios de transações em todas as instâncias de autor, pois os relatórios sobre instâncias de autor incluem transações registradas durante as atividades de criação.
+* Ativar o **Mostrar transações somente a partir da publicação** opção na instância do autor para exibir transações cumulativas de todas as instâncias de publicação. Você também pode exibir relatórios de transações em cada instância de publicação para transações reais somente nessa instância de publicação específica.
+* Não use instâncias do autor para executar fluxos de trabalho e processar documentos.
 * Antes de usar o relatório de transações, se você tiver uma topologia com servidores de publicação, verifique se a replicação inversa está ativada para todas as instâncias de publicação.
-* Os dados de transação são replicados reversivamente de uma instância de publicação para apenas a instância de autor ou processamento correspondente. A instância de processamento ou autor não pode replicar mais os dados para outra instância. Por exemplo, se você tiver a topologia author-processing-publish, os dados de transação agregados serão replicados somente para a instância de processamento.
+* Os dados da transação são revertidos e replicados de uma instância de publicação para somente o autor ou instância de processamento correspondente. A instância de autoria ou processamento não pode replicar dados para outra instância. Por exemplo, se você tiver a topologia author-processing-publish, os dados de transação agregados serão replicados somente na instância de processamento.
 
 ## Artigos relacionados {#related-articles}
 
-* [Exibindo e Noções Gerais de Relatórios de Transações](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [APIs faturáveis dos relatórios de transação](../../forms/using/transaction-reports-billable-apis.md)
+* [Visualização e noções básicas de relatórios de transações](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [APIs de relatórios de transação faturáveis](../../forms/using/transaction-reports-billable-apis.md)
 * [Registrar uma transação para implementações personalizadas](/help/forms/using/record-transaction-custom-implementation.md)

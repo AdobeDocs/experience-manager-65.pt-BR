@@ -1,7 +1,7 @@
 ---
-title: AEM Sites - Preparação para o GDPR
+title: AEM Sites - Disponibilidade do GDPR
 seo-title: AEM Sites - GDPR Readiness
-description: Saiba mais sobre os detalhes do Preparação do GDPR para o AEM Sites.
+description: Saiba mais sobre os detalhes de Preparação do GDPR para o AEM Sites.
 seo-description: Learn about the details of GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: AEM Docs
@@ -17,51 +17,51 @@ ht-degree: 54%
 
 ---
 
-# AEM Sites - Preparação para o GDPR{#aem-sites-gdpr-readiness}
+# AEM Sites - Disponibilidade do GDPR{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
->O GDPR é usado como exemplo nas seções abaixo, mas os detalhes cobertos são aplicáveis a todas as regulamentações de proteção e privacidade de dados; como GDPR, CCPA etc.
+>O GDPR é usado como exemplo nas seções abaixo, mas os detalhes abordados se aplicam a todas as regulamentações de proteção e privacidade de dados; como o GDPR, CCPA etc.
 
-O Regulamento Geral sobre a Proteção de Dados da União Europeia sobre os direitos de privacidade de dados entra em vigor em maio de 2018.
+O Regulamento Geral sobre a Proteção de Dados da União Europeia entra em vigor em maio de 2018.
 
-A AEM Sites está pronta para ajudar os clientes com suas obrigações de conformidade com o GDPR. Esta página orienta os clientes pelos procedimentos para lidar com solicitações do GDPR no AEM Sites. Ele descreve a localização dos dados privados armazenados e como removê-los manualmente ou com um código.
+A AEM Sites está pronta para ajudar os clientes em suas obrigações de conformidade com o GDPR. Esta página orienta os clientes por meio de procedimentos para lidar com solicitações do GDPR na AEM Sites. Ele descreve a localização dos dados privados armazenados e como removê-los manualmente ou com um código.
 
-Para obter mais informações, consulte o [Página do GDPR no Centro de privacidade do Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Para obter mais informações, consulte a [Página do GDPR no Centro de privacidade do Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Consulte [Preparação para o GDPR do AEM](/help/managing/data-protection-and-privacy.md) para obter mais detalhes.
+>Consulte [Disponibilidade do GDPR do AEM](/help/managing/data-protection-and-privacy.md) para obter mais detalhes.
 
-## Servidor de Autores {#author-server}
+## Servidor do autor {#author-server}
 
-As contas de usuário e o conteúdo UGC no servidor do autor são abordados na seção [Documentação do GDPR da plataforma](/help/managing/data-protection-and-privacy.md).
+As contas de usuário e o conteúdo UGC no servidor do autor são abordados na [Documentação do GDPR da plataforma](/help/managing/data-protection-and-privacy.md).
 
-## Publicar servidor {#publish-server}
+## Servidor de publicação {#publish-server}
 
-As contas de usuário usadas para autenticar visitantes no site, e o conteúdo UGC no servidor de publicação são abordados no [Documentação do GDPR da plataforma](/help/managing/data-protection-and-privacy.md).
+As contas de usuário usadas para autenticar visitantes no site e o conteúdo UGC no servidor de publicação são abordados na [Documentação do GDPR da plataforma](/help/managing/data-protection-and-privacy.md).
 
 Por padrão, os componentes dos AEM Sites não armazenam dados de formulário inseridos por visitantes no servidor de publicação. É recomendável encaminhar os dados para um sistema de terceiros ou para o Adobe Campaign para processamento adicional.
 
 ## Aceitar/Recusar {#opt-in-opt-out}
 
-AEM tem um [serviço de cancelamento de cookie](/help/sites-developing/cookie-optout.md) que podem ser usadas para gerenciar a aceitação/rejeição para usuários.
+O AEM tem um [serviço de cookie opt-out](/help/sites-developing/cookie-optout.md) que podem ser usados para gerenciar a aceitação/recusa dos usuários.
 
-## Insights aprimorados do Analytics {#enhanced-insights-by-analytics}
+## Insights aprimorados pelo Analytics {#enhanced-insights-by-analytics}
 
-O AEM Sites inclui uma integração opcional com insights aprimorados pelo Analytics que usa funcionalidade no serviço sob demanda da Adobe Analytics.
+O AEM Sites inclui uma integração opcional com o Enhanced Insights by Analytics que usa a funcionalidade no Adobe Analytics On-demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de titulares de dados do GDPR relacionadas ao Adobe Analytics, consulte [Adobe Analytics e o RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
+Para obter mais informações sobre como gerenciar solicitações de titulares de dados do GDPR relacionadas ao Adobe Analytics, consulte [ADOBE ANALYTICS e o GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
-## Personalização aprimorada pelo Target {#enhanced-personalization-by-target}
+## Personalização aprimorada por Target {#enhanced-personalization-by-target}
 
-O AEM Sites inclui uma integração opcional com a Personalização aprimorada pelo Target, que usa funcionalidade no Adobe Target On-Demand Service.
+O AEM Sites inclui uma integração opcional com a Personalização aprimorada pelo Target que usa a funcionalidade no Adobe Target On-demand Service.
 
 Para obter mais informações sobre como gerenciar solicitações de titulares de dados do GDPR relacionadas ao Adobe Target, consulte [Adobe Target - Privacidade e Regulamento Geral sobre a Proteção de Dados](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en).
 
 ## ContextHub {#contexthub}
 
-AEM fornece uma camada de dados opcional com [ContextHub](/help/sites-developing/contexthub.md). Isto mantém os dados específicos do visitante no navegador, para serem usados para personalização baseada em regras.
+O AEM fornece uma camada de dados opcional com [ContextHub](/help/sites-developing/contexthub.md). Isto mantém os dados específicos do visitante no navegador, para serem usados para personalização baseada em regras.
 
 Por padrão, esses dados do visitante não são armazenados no AEM; o AEM envia as regras para a camada de dados para tomar decisões de personalização no navegador.
 
@@ -69,16 +69,16 @@ Por padrão, esses dados do visitante não são armazenados no AEM; o AEM envia 
 >
 >Antes do Adobe CQ 5.6, o ClientContext (uma versão anterior do ContextHub) enviava os dados para o servidor, mas não os armazenava.
 >
->O Adobe CQ 5.5 e versões anteriores agora são EOL e não são contempladas por esta documentação.
+>O Adobe CQ 5.5 e versões anteriores agora estão em final de vida útil e não são cobertos por esta documentação.
 
 ### Implementação do Opt-in/Opt-out (Aceitar/Recusar) {#implementing-opt-in-opt-out}
 
 O proprietário do site precisa implementar um componente de opção de recusa, de acordo com as diretrizes a seguir.
 
-Essas diretrizes implementam a opção de aceitação como padrão. Assim, um visitante do site deve concordar claramente, antes que qualquer dado pessoal seja armazenado na persistência do navegador (no lado do cliente).
+Essas diretrizes implementam a opção de aceitação como padrão. Assim, um visitante do site deve concordar claramente, antes que quaisquer Dados pessoais sejam armazenados na persistência do navegador (lado do cliente).
 
 * O componente de opt out (recusar) deve ser incluído sempre que o componente ContextHub for incluído.
-* Os termos e condições relacionados ao GDPR do site devem ser exibidos para o visitante do site, permitindo que:
+* Os termos e condições relacionados ao GDPR do site devem ser exibidos para o visitante do site, para que eles possam:
 
    * Aceitar
    * Rejeitar

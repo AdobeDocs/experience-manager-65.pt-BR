@@ -1,6 +1,6 @@
 ---
 title: Anotações ao editar uma página de conteúdo
-description: Muitos componentes diretamente relacionados ao conteúdo permitem que você adicione uma anotação.
+description: Muitos componentes diretamente relacionados ao conteúdo permitem adicionar uma anotação.
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,7 +17,7 @@ ht-degree: 40%
 
 # Anotações ao editar uma página{#annotations-when-editing-a-page}
 
-Com frequência, a adição de conteúdo às páginas do seu site está sujeita a discussões antes da publicação efetiva. Para auxiliar nesse processo, muitos componentes diretamente relacionados ao conteúdo (em oposição, por exemplo, ao layout) permitem adicionar uma anotação.
+Adicionar conteúdo às páginas do seu site geralmente está sujeito a discussões antes de realmente ser publicado. Para auxiliar nisso, muitos componentes diretamente relacionados ao conteúdo (em vez de, por exemplo, ao layout) permitem adicionar uma anotação.
 
 Uma anotação coloca um marcador colorido/nota adesiva na página. A anotação permite a você (ou outros usuários) deixar comentários e/ou perguntas para outros autores/revisores.
 
@@ -27,7 +27,7 @@ Uma anotação coloca um marcador colorido/nota adesiva na página. A anotação
 
 >[!NOTE]
 >
->As anotações criadas na interface clássica serão exibidas na interface habilitada para toque. No entanto, os rascunhos são específicos da interface do usuário e são mostrados somente na interface do usuário na qual foram criados.
+>As anotações criadas na interface clássica serão exibidas na interface habilitada para toque. No entanto, os rascunhos são específicos da interface do usuário e são exibidos somente na interface do usuário em que foram criados.
 
 >[!CAUTION]
 >
@@ -47,18 +47,18 @@ Um [modo](/help/sites-authoring/author-environment-tools.md#page-modes) é usado
 
 >[!NOTE]
 >
->É possível fazer anotações em vários recursos:
+>É possível anotar em vários recursos:
 >
->* [Anotar ativos](/help/assets/manage-assets.md#annotating)
+>* [Anotação de ativos](/help/assets/manage-assets.md#annotating)
 >* [Anotação de ativos de vídeo](/help/assets/managing-video-assets.md#annotate-video-assets)
 >
 
 
 ### Anotação em componente {#annotating-a-component}
 
-O modo Anotar permite criar, editar, mover ou excluir anotações em seu conteúdo:
+O modo Anotar permite criar, editar, mover ou excluir anotações do seu conteúdo:
 
-1. Você pode entrar no modo Anotar usando o ícone na barra de ferramentas (canto superior direito) ao editar uma página:
+1. É possível entrar no modo Anotar usando o ícone na barra de ferramentas (canto superior direito) ao editar uma página:
 
    ![](do-not-localize/screen_shot_2018-03-22at110414.png)
 
@@ -66,24 +66,24 @@ O modo Anotar permite criar, editar, mover ou excluir anotações em seu conteú
 
    >[!NOTE]
    >
-   >Para sair do modo Anotar, toque/clique no ícone Anotar (símbolo x) à direita da barra de ferramentas superior.
+   >Para sair do modo de Anotação, toque/clique no ícone Anotar (símbolo x) à direita da barra de ferramentas superior.
 
 1. Clique/toque no ícone Adicionar anotação (símbolo de mais à esquerda da barra de ferramentas) para começar a adicionar as anotações.
 
    >[!NOTE]
    >
-   >Para interromper a adição de anotações (e retornar à exibição), toque/clique no ícone Cancelar (símbolo x em um círculo branco) à esquerda da barra de ferramentas superior.
+   >Para parar de adicionar anotações (e voltar à exibição), toque/clique no ícone Cancelar (símbolo x em um círculo branco) à esquerda da barra de ferramentas superior.
 
 1. Clique/toque no componente desejado (os componentes que podem ser anotados serão destacados com uma borda azul) para adicionar a anotação e abrir a caixa de diálogo:
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
-   Aqui, você pode usar o campo e/ou ícone apropriado para:
+   Aqui você pode usar o campo e/ou ícone apropriado para:
 
    * Insira o texto da anotação.
    * Criar um rascunho (linhas e formas) para realçar uma área do componente.
 
-      O cursor se transformará em uma cruz durante a criação de um rascunho. Você pode desenhar várias linhas distintas. A linha de rascunho reflete a cor da anotação e pode ser uma seta, círculo ou forma oval.
+      O cursor se transformará em um fio cruzado ao criar um rascunho. Você pode desenhar várias linhas distintas. A linha de rascunho reflete a cor da anotação e pode ser uma seta, círculo ou forma oval.
    ![](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Escolher/alterar a cor:
@@ -94,7 +94,7 @@ O modo Anotar permite criar, editar, mover ou excluir anotações em seu conteú
 
    ![](do-not-localize/screen_shot_2018-03-22at110647.png)
 
-1. Você pode fechar a caixa de diálogo de anotação clicando/tocando fora dela. Uma exibição truncada (a primeira palavra) da anotação, junto com os rascunhos existentes, é mostrada:
+1. Você pode fechar a caixa de diálogo de anotação clicando/tocando fora dela. Uma exibição truncada (a primeira palavra) da anotação, juntamente com os rascunhos existentes, é mostrada:
 
    ![screen_shot_2018-03-22at110850](assets/screen_shot_2018-03-22at110850.png)
 
@@ -102,15 +102,15 @@ O modo Anotar permite criar, editar, mover ou excluir anotações em seu conteú
 
    * Clicar/tocar em um marcador de texto para abrir a anotação. Depois de aberta, você pode exibir o texto completo, fazer alterações ou excluir a anotação.
 
-      * Rascunhos não podem ser excluídos independentemente da anotação.
+      * Os rascunhos não podem ser excluídos independentemente da anotação.
    * Reposicionar o marcador de texto.
    * Clicar/tocar em uma linha de rascunho para selecionar esse rascunho e arrastá-lo para a posição desejada.
    * Mover ou copiar um componente
 
-      * As anotações relacionadas e seus rascunhos também serão movidos ou copiados, e sua posição em relação ao parágrafo permanecerá a mesma.
+      * As anotações relacionadas e seus rascunhos também serão movidos ou copiados e sua posição em relação ao parágrafo permanecerá a mesma.
 
 
-1. Para sair do modo Anotar e retornar ao modo usado anteriormente, toque/clique no ícone Anotar (símbolo x) à direita da barra de ferramentas superior.
+1. Para sair do modo Anotação e voltar ao modo usado anteriormente, toque/clique no ícone Anotar (símbolo x) à direita da barra de ferramentas superior.
 
 >[!NOTE]
 >

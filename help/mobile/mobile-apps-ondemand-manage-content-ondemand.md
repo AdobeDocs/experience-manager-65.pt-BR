@@ -1,7 +1,7 @@
 ---
 title: Gerenciamento de conteúdo
 seo-title: Managing Content
-description: As ações de Gerenciamento de conteúdo são os blocos fundamentais que ajudam a criar e gerenciar conteúdo em um aplicativo. Siga esta página para saber mais.
+description: As ações de gerenciamento de conteúdo são os blocos fundamentais que ajudam a criar e gerenciar conteúdo em um aplicativo. Siga esta página para saber mais.
 seo-description: Content Management actions are the building blocks that help to create and manage content within an application. Follow this page to learn more.
 uuid: ab680836-133b-45b9-913c-e721b7e9fc04
 contentOwner: User
@@ -21,37 +21,37 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-As ações de Gerenciamento de conteúdo são os blocos fundamentais que ajudam a criar e gerenciar conteúdo em um aplicativo. As seguintes ações são executadas no conteúdo do aplicativo.
+As ações de gerenciamento de conteúdo são os blocos fundamentais que ajudam a criar e gerenciar conteúdo em um aplicativo. As ações a seguir são executadas no conteúdo do aplicativo.
 
 ## Visão geral do conteúdo {#content-overview}
 
-Se você pensar em uma revista online, o conteúdo principal inclui artigos, anúncios e capas. Três tipos principais de conteúdo Mobile On-Demand podem ser criados no AEM:
+Se você pensar em uma revista on-line, o conteúdo principal inclui artigos, anúncios e as capas. Três tipos principais de conteúdo Mobile On-Demand podem ser criados no AEM:
 
-* **Artigos**: texto baseado junto com a arte para transmitir informações
-* **Banners:** links promocionais gráficos
-* **Coleções:** representa um *bucket* preenchido com conteúdo como artigos ou banners que se encaixam no tema da capa
+* **Artigos**: baseado em texto junto com a arte para transmitir informações
+* **Banners:** links promocionais tipicamente gráficos
+* **Coleções:** representa um grupo bem definido *balde* repleto de conteúdo, como artigos ou banners que se encaixam no tema da capa
 
-* **Recursos compartilhados:** permite a reutilização ou o compartilhamento de partes comuns em artigos
+* **Recursos compartilhados:** permite reutilizar ou compartilhar partes comuns entre artigos
 
 >[!NOTE]
 >
->Para saber mais sobre considerações de design para aplicativos AEM Mobile, consulte [Considerações de design para aplicativos AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) em Ajuda online.
+>Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) na Ajuda online.
 
 ## Criação e gerenciamento de conteúdo {#creating-and-managing-content}
 
-Os tópicos a seguir descrevem a criação e o gerenciamento de conteúdo, especificamente artigos, banners e coleções. Depois de aprender a criar e gerenciar o conteúdo, você pode ver tópicos adicionais como upload de recursos compartilhados, publicação/cancelamento da publicação de conteúdo e visualização com a Comprovação.
+Os tópicos a seguir descrevem a criação e o gerenciamento de conteúdo, a saber, artigos, banners e coleções. Depois de aprender a criar e gerenciar o conteúdo, você poderá ver tópicos adicionais, como fazer upload de recursos compartilhados, publicar/desfazer a publicação de conteúdo e visualizar com Comprovação.
 
 * [Gerenciamento de artigos](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Gerenciamento de banners](/help/mobile/mobile-on-demand-managing-banners.md)
-* [Gerenciando Coleções](/help/mobile/mobile-on-demand-managing-collections.md)
+* [Gerenciar coleções](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Upload de recursos compartilhados](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publicar Cancelar publicação de conteúdo](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publicar e desfazer publicação de conteúdo](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >
->Geralmente, você deve Comprovar antes de publicar o conteúdo. Consulte [Visualização com comprovação](/help/mobile/aem-mobile-manage-ondemand-services.md) para obter mais detalhes.
+>Geralmente, é necessário realizar a simulação antes de publicar o conteúdo. Consulte [Visualização com simulação](/help/mobile/aem-mobile-manage-ondemand-services.md) para obter mais detalhes.
 
 ### Recursos adicionais {#additional-resources}
 

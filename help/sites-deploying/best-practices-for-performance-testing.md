@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 18f843ed3ffb719d168b67826baaffd926ffd2dd
+source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 1%
@@ -60,7 +60,7 @@ Existem muitas ferramentas de teste de desempenho disponíveis comercialmente no
 
 * **Load Runner** O é um produto de teste de carga de nível empresarial. Uma versão de avaliação gratuita está disponível. Mais informações podem ser encontradas em [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 
-* Ferramentas de teste de carregamento de site como [Vercara](https://vercara.com/website-performance-management) também pode ser usado.
+* Ferramentas de teste de carregamento de site como [Neustar](https://neustarsecurityservices.com/web-performance-management) também pode ser usado.
 * Ao testar sites móveis ou responsivos, um conjunto separado de ferramentas deve ser usado. Elas funcionam acelerando a largura de banda da rede, simulando conexões móveis mais lentas, como 3G ou EDGE. Entre as ferramentas mais usadas estão as seguintes:
 
    * **[Condicionador de Link de Rede](https://nshipster.com/network-link-conditioner/)** - fornece uma interface fácil de usar e funciona em um nível relativamente baixo na pilha de rede. Ele inclui versões para OS X e iOS;

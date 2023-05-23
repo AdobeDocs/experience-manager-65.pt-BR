@@ -1,7 +1,7 @@
 ---
-title: Lidar com solicitações do GDPR para a AEM Foundation
+title: Lidar com solicitações do GDPR para a Fundação AEM
 seo-title: Handling GDPR Requests for the AEM Foundation
-description: Lidar com solicitações do GDPR para a AEM Foundation
+description: Lidar com solicitações do GDPR para a Fundação AEM
 seo-description: null
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
@@ -14,21 +14,21 @@ ht-degree: 55%
 
 ---
 
-# Lidar com solicitações do GDPR para a AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
+# Lidar com solicitações do GDPR para a Fundação AEM{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
->O GDPR é usado como exemplo nas seções abaixo, mas os detalhes cobertos são aplicáveis a todas as regulamentações de proteção e privacidade de dados; como GDPR, CCPA etc.
+>O GDPR é usado como exemplo nas seções abaixo, mas os detalhes abordados se aplicam a todas as regulamentações de proteção e privacidade de dados; como o GDPR, CCPA etc.
 
-## Suporte ao GDPR da AEM Foundation {#aem-foundation-gdpr-support}
+## Suporte ao GDPR da Fundação AEM {#aem-foundation-gdpr-support}
 
-No nível da AEM Foundation, os dados pessoais armazenados são o Perfil de usuário. Portanto, as informações neste artigo abordam principalmente como acessar e excluir perfis de usuário, para atender às solicitações de acesso e exclusão do GDPR, respectivamente.
+No nível da Fundação AEM, os Dados Pessoais armazenados são o Perfil do Usuário. Portanto, as informações neste artigo abordam principalmente como acessar e excluir perfis de usuário, atendendo às solicitações de Acesso e Exclusão do GDPR, respectivamente.
 
 ## Acessar um perfil de usuário {#accessing-a-user-profile}
 
 ### Etapas manuais {#manual-steps}
 
-1. Abra o console de Administração do Usuário, navegando até **[!UICONTROL Configurações - Segurança - Usuários]** ou navegando diretamente para `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Abra o console Administração do usuário, navegando até **[!UICONTROL Configurações - Segurança - Usuários]** ou navegando diretamente para `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -82,17 +82,17 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![userdisable](assets/userdisable.png)
 
-1. Por fim, confirme a ação :
+1. Por fim, confirme a ação:
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   A interface do usuário indicará que o usuário foi desativado ao esmaecer e adicionar um bloqueio à placa de perfil:
+   A interface do usuário indicará que o usuário foi desativado ao esmaecer e adicionar um bloqueio ao cartão de perfil:
 
    ![disableduser](assets/disableduser.png)
 
 ### Excluir informações do perfil do usuário {#delete-user-profile-information}
 
-1. Faça logon no CRXDE Lite e, em seguida, procure a variável `[!UICONTROL userId]`:
+1. Efetue logon no CRXDE Lite e procure pelo `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
@@ -100,10 +100,10 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. Exclua os nós de perfil e todos os seus filhos. Há dois formatos para os nós do perfil, dependendo da versão AEM:
+1. Excluir nós de perfil e todos os seus filhos. Há dois formatos para os nós de perfil, dependendo da versão do AEM:
 
    1. O perfil privado padrão em `[!UICONTROL /profile]`
-   1. `[!UICONTROL /profiles]`, para novos perfis criados com o AEM 6.5.
+   1. `[!UICONTROL /profiles]`, para novos perfis criados usando o AEM 6.5.
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Visão geral da configuração do SSL
 seo-title: Overview of configuring SSL
-description: Saiba mais sobre como melhorar a segurança da comunicação configurando o SSL.
+description: Saiba como melhorar a segurança da comunicação configurando o SSL.
 seo-description: Learn about how to enhance security of communication by configuring SSL.
 uuid: 3e99d2bf-137b-45ba-8384-309624094623
 contentOwner: admin
@@ -19,18 +19,18 @@ ht-degree: 0%
 
 # Visão geral da configuração do SSL {#overview-of-configuring-ssl}
 
-Você pode criar credenciais SSL (Secure Sockets Layer) e configurar o SSL no servidor de aplicativos para melhorar a segurança da comunicação com seu servidor de aplicativos.
+Você pode criar credenciais SSL (Secure Sockets Layer) e configurar o SSL no servidor de aplicativos para melhorar a segurança da comunicação com o servidor de aplicativos.
 
-Como produto de segurança, o Rights Management requer a configuração do SSL. Ao configurar certificados SSL, certifique-se de usar somente chaves RSA. Certificados SSL com chaves DSA não são suportados.
+Como produto de segurança, o Rights Management exige a configuração do SSL. Ao configurar certificados SSL, certifique-se de usar somente chaves RSA. Certificados SSL com chaves DSA não são compatíveis.
 
-As informações fornecidas se aplicam às instalações chave, automática e manual. Ele oferece um exemplo de método para configurar o SSL. Você também pode usar outros métodos mais apropriados para sua rede ou organização.
-
->[!NOTE]
->
->É recomendável concluir a instalação, configuração e implantação dos módulos de formulários AEM e garantir que os produtos estejam sendo executados corretamente antes de configurar o SSL no servidor de aplicativos.
+As informações fornecidas se aplicam às instalações manuais, automáticas e turnkey. Ele oferece um exemplo de um método para configurar o SSL. Você também pode usar outros métodos mais apropriados para sua rede ou organização.
 
 >[!NOTE]
 >
->Ao criar certificados e credenciais de segurança SSL, use os mesmos privilégios de conta de usuário usados para executar o servidor de aplicativos. Se o servidor de aplicativos for executado usando outros privilégios de usuário, o formulário poderá não ser renderizado corretamente para representações PDFForm quando o ContentRootURI apontar para https.
+>É recomendável concluir a instalação, a configuração e a implantação dos módulos de formulários AEM e garantir que os produtos estejam sendo executados corretamente antes de configurar o SSL no servidor de aplicativos.
 
-Se você tiver um servidor LDAP habilitado para SSL, configure o Gerenciamento de usuários para funcionar com ele. (Consulte [Configurar o gerenciamento de usuários para um servidor LDAP habilitado para SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
+>[!NOTE]
+>
+>Ao criar certificados de segurança SSL e credenciais, use os mesmos privilégios de conta de usuário que você usou para executar o servidor de aplicativos. Se o servidor de aplicativos for executado usando outros privilégios de usuário, o formulário poderá não ser renderizado corretamente para representações PDFForm quando ContentRootURI apontar para https.
+
+Se você tiver um servidor LDAP habilitado para SSL, configure o Gerenciamento de usuários para trabalhar com ele. (Consulte [Configurar o gerenciamento de usuários para um servidor LDAP habilitado para SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)

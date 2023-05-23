@@ -1,7 +1,7 @@
 ---
 title: Aceitação e aprovação
 seo-title: Acceptance and Sign-off
-description: Testes de aceitação são uma categoria especial de teste usada para verificar se o projeto atende aos requisitos do cliente e se o cliente aceita o projeto
+description: Os Testes de aceitação são uma categoria especial de teste usada para verificar se o projeto atende aos requisitos do cliente e se o cliente aceita o projeto
 seo-description: Acceptance Tests are a special category of test used to verify that the project fulfils the customer's requirements and that the customer accepts the project
 uuid: 6bdd2a99-d141-43ef-9102-99e65aba02d3
 contentOwner: Guillaume Carlino
@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # Aceitação e aprovação{#acceptance-and-sign-off}
 
-Tal como mencionado, [Testes de aceitação](/help/sites-developing/planning.md) são uma categoria especial de ensaio utilizada para verificar que:
+Como mencionado, [Testes de aceitação](/help/sites-developing/planning.md) constituem uma categoria especial de ensaio utilizada para verificar se:
 
 * O projeto atende aos requisitos do cliente.
 * O cliente aceita o projeto.
 
-Eles devem ser definidos pelo cliente e pelo gerente do projeto. Têm um significado especial, uma vez que estão frequentemente relacionadas com a faturação final.
+Elas devem ser definidas pelo cliente e pelo gerente de projeto. Têm especial importância, uma vez que estão frequentemente relacionadas com a faturação final.
 
-Por isso, devem ser:
+Por esse motivo, devem ser:
 
 * Definido o mais cedo possível.
 * Atualizado sempre que necessário.
-* Todas as alterações devem ser formalmente aceitas e assinadas por ambas as partes (parceiro e cliente).
+* Quaisquer alterações devem ser formalmente aceitas e assinadas por ambas as partes (parceiro e cliente).

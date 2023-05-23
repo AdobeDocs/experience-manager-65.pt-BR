@@ -1,7 +1,7 @@
 ---
 title: Visão geral do fluxo de trabalho do Forms
 seo-title: Overview of Forms workflow
-description: O fluxo de trabalho do Forms permite que os usuários criem, gerenciem e otimizem processos centrados em seres humanos. Usando o fluxo de trabalho de formulários, os usuários também podem gerenciar aplicativos automatizados de processos de negócios que conectam sistemas e pessoas.
+description: O fluxo de trabalho do Forms permite que os usuários projetem, gerenciem e otimizem processos centrados no ser humano. Usando o fluxo de trabalho de formulários, os usuários também podem gerenciar aplicativos automatizados de processos de negócios que conectam sistemas e pessoas.
 seo-description: Forms workflow lets users design, manage, and optimize human-centric processes. Using forms workflow, users can also manage automated business-process applications that connect systems and people.
 uuid: b28ada7c-de75-416a-b2c8-f6494be5330c
 contentOwner: admin
@@ -19,9 +19,9 @@ ht-degree: 2%
 
 # Visão geral do fluxo de trabalho do Forms {#overview-of-forms-workflow}
 
-O fluxo de trabalho do Forms permite que os usuários criem, gerenciem e otimizem processos centrados em seres humanos. Usando o fluxo de trabalho de formulários, os usuários também podem gerenciar aplicativos automatizados de processos de negócios que conectam sistemas e pessoas.
+O fluxo de trabalho do Forms permite que os usuários projetem, gerenciem e otimizem processos centrados no ser humano. Usando o fluxo de trabalho de formulários, os usuários também podem gerenciar aplicativos automatizados de processos de negócios que conectam sistemas e pessoas.
 
-Em cada página do fluxo de trabalho do Forms no console de administração, é possível executar um conjunto diferente de tarefas, conforme descrito nesta tabela.
+Em cada página de fluxo de trabalho do Forms no console de administração, é possível executar um conjunto diferente de tarefas, conforme descrito nesta tabela.
 
 <table>
  <thead>
@@ -37,9 +37,9 @@ Em cada página do fluxo de trabalho do Forms no console de administração, é 
    <td>
     <ul>
      <li><p>Definir configurações de email</p></li>
-     <li><p>Configurar notificações de tarefa para usuários</p></li>
-     <li><p>Configurar notificações de administrador</p></li>
-     <li><p>Definir configurações para o Monitoramento de Atividade Empresarial </p></li>
+     <li><p>Configurar notificações de tarefas para usuários</p></li>
+     <li><p>Configurar notificações do administrador</p></li>
+     <li><p>Definir definições de configuração para o Monitoramento de Atividades de Negócios </p></li>
     </ul></td>
    <td><p><a href="/help/forms/using/admin-help/configuring-server-settings.md#configuring-server-settings">Definição das configurações do servidor</a></p></td>
   </tr>
@@ -48,33 +48,33 @@ Em cada página do fluxo de trabalho do Forms no console de administração, é 
    <td>
     <ul>
      <li><p>Exibir processos ativos</p></li>
-     <li><p>Exibir e trabalhar com instâncias de processos, operações e tarefas</p></li>
+     <li><p>Exibir e trabalhar com instâncias de processo, operações e tarefas</p></li>
      <li><p>Suspender, encerrar e repetir instâncias, subprocessos e operações do processo</p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/processes.md#managing-processes">Gerenciamento de processos</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/processes.md#managing-processes">Gerenciar processos</a></p></td>
   </tr>
   <tr>
    <td><p>Pesquisa de processos</p></td>
    <td>
     <ul>
-     <li><p>Procurar processos</p></li>
+     <li><p>Pesquisar processos</p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/searching-process-instances.md#searching-for-process-instances">Pesquisar instâncias de processo</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/searching-process-instances.md#searching-for-process-instances">Pesquisando instâncias de processo</a></p></td>
   </tr>
   <tr>
    <td><p>Pesquisa de tarefa</p></td>
    <td>
     <ul>
-     <li><p>Procurar tarefas por ID de utilizador ou de tarefa</p></li>
+     <li><p>Procurar tarefas por usuário ou ID da tarefa</p></li>
     </ul></td>
    <td><p><a href="/help/forms/using/admin-help/tasks.md#working-with-tasks">Trabalhar com tarefas</a></p></td>
   </tr>
   <tr>
-   <td><p>Erros de operações paralisadas</p></td>
+   <td><p>Erros de Operações Paralisadas</p></td>
    <td>
     <ul>
-     <li><p>Exibir todas as operações paralisadas e seus erros</p></li>
-     <li><p>Tentar novamente ou encerrar operações paralisadas</p></li>
+     <li><p>Exibir todas as operações interrompidas e seus erros</p></li>
+     <li><p>Repetir ou finalizar operações paralisadas</p></li>
     </ul></td>
    <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">Trabalhar com operações e ramificações paralisadas</a></p></td>
   </tr>
@@ -82,8 +82,8 @@ Em cada página do fluxo de trabalho do Forms no console de administração, é 
    <td><p>Erros de Ramificação Paralisada</p></td>
    <td>
     <ul>
-     <li><p>Exibir todas as ramificações paralisadas e seus erros</p></li>
-     <li><p>Tentar ramificações paralisadas</p></li>
+     <li><p>Exibir todas as ramificações interrompidas e seus erros</p></li>
+     <li><p>Repetir ramificações paralisadas</p></li>
     </ul></td>
    <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">Trabalhar com operações e ramificações paralisadas</a></p></td>
   </tr>
@@ -91,20 +91,20 @@ Em cada página do fluxo de trabalho do Forms no console de administração, é 
    <td><p>Fora do escritório</p></td>
    <td>
     <ul>
-     <li><p>Exibir as informações de ausência do escritório de um usuário</p></li>
+     <li><p>Exibir as informações de Ausência Temporária de um usuário</p></li>
      <li><p>Alterar o status do usuário (dentro ou fora do escritório)</p></li>
-     <li><p>Adicionar um intervalo de datas Fora do Escritório </p></li>
-     <li><p>Especificar o que fazer com tarefas enquanto o usuário estiver fora do escritório</p></li>
+     <li><p>Adicionar um intervalo de datas de Ausência Temporária </p></li>
+     <li><p>Especificar o que fazer com tarefas enquanto o usuário estiver ausente</p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/configuring-out-office-settings.md#configuring-out-of-office-settings">Configuração das configurações fora do escritório</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/configuring-out-office-settings.md#configuring-out-of-office-settings">Definindo Configurações de Ausência Temporária</a></p></td>
   </tr>
   <tr>
-   <td><p>Calendários de Negócios</p></td>
+   <td><p>Calendários Comerciais</p></td>
    <td>
     <ul>
-     <li><p>Criar calendários de negócios que definam dias úteis e não úteis</p></li>
+     <li><p>Criar calendários comerciais que definem dias úteis e não-úteis</p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars">Configurando Calendários Comerciais</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars">Configuração de calendários de negócios</a></p></td>
   </tr>
   <tr>
    <td><p>Fila compartilhada</p></td>

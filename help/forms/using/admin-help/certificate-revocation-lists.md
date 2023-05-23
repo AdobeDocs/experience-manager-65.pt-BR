@@ -1,7 +1,7 @@
 ---
-title: Gerenciar listas de revogação de certificado
+title: Gerenciando listas de revogação de certificados
 seo-title: Managing certificate revocationlists
-description: Saiba como gerenciar listas de revogação de certificados.
+description: Saiba como gerenciar listas de certificados revogados.
 seo-description: Learn how to manage certificate revocation lists.
 uuid: d8c4b64c-a273-4f5d-8b71-f6ea455c0f0a
 contentOwner: admin
@@ -17,15 +17,15 @@ ht-degree: 1%
 
 ---
 
-# Gerenciar listas de revogação de certificado{#managing-certificate-revocationlists}
+# Gerenciando listas de revogação de certificados{#managing-certificate-revocationlists}
 
-Usando o Gerenciamento de Armazenamento de Confiança, você pode importar, editar e excluir listas de revogação de certificados (CRLs). As listas de revogação de certificados codificadas em Base64 e DER são suportadas.
+Usando o Gerenciamento de Repositório de Confiança, você pode importar, editar e excluir listas de certificados revogados (CRLs). Listas de certificados revogados codificadas em Base64 e DER são suportadas.
 
 ## Importar uma CRL {#import-a-crl}
 
 1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Listas de revogação de certificados e, em seguida, clique em Importar.
-1. Na caixa Alias , digite um identificador para a CRL.
-1. Clique em Procurar para localizar a CRL e, em seguida, clique em OK.
+1. Na caixa Alias, digite um identificador para a CRL.
+1. Clique em Procurar para localizar a CRL e clique em OK.
 
 ## Exportar uma CRL {#export-a-crl}
 
@@ -37,4 +37,4 @@ Usando o Gerenciamento de Armazenamento de Confiança, você pode importar, edit
 ## Excluir uma CRL {#delete-a-crl}
 
 1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Listas de revogação de certificados.
-1. Marque as caixas de seleção das CRLs a serem excluídas, clique em Excluir e em OK.
+1. Marque as caixas de seleção das CRLs a serem excluídas, clique em Excluir e, em seguida, clique em OK.

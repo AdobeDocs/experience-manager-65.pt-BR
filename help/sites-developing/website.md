@@ -1,7 +1,7 @@
 ---
-title: Criar um site com recursos completos (JSP)
+title: Criar um site completo (JSP)
 seo-title: Create a Fully-Featured Website (JSP)
-description: Este tutorial permite que você crie um site em destaque com o AEM
+description: Este tutorial permite que você crie um site completo com AEM
 seo-description: This tutorial enables you to create a fully featured website with AEM
 uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
 contentOwner: Guillaume Carlino
@@ -18,41 +18,41 @@ ht-degree: 2%
 
 ---
 
-# Criar um site com recursos completos (JSP){#create-a-fully-featured-website-jsp}
+# Criar um site completo (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
 >
->Este artigo descreve como criar um site usando o JSP e com base na interface clássica. O Adobe recomenda o aproveitamento das tecnologias de AEM mais recentes para seus sites, conforme descrito detalhadamente no artigo [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md).
+>Este artigo descreve como criar um site usando JSP e com base na interface clássica. A Adobe recomenda aproveitar as tecnologias de AEM mais recentes para seus sites, conforme descrito detalhadamente no artigo [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md).
 
-Este tutorial permite que você crie um site em destaque com o Adobe Experience Manager (AEM). O site será baseado em um site genérico e será direcionado principalmente para desenvolvedores da Web. Todo o desenvolvimento ocorrerá em um ambiente de criação.
+Este tutorial permite criar um site completo com o Adobe Experience Manager (AEM). O site será baseado em um site genérico e destina-se principalmente a desenvolvedores da Web. Todo o desenvolvimento ocorrerá em um ambiente de criação.
 
 Este tutorial descreve como:
 
-1. Instalar AEM.
-1. Acesse o CRXDE Lite (o ambiente de desenvolvimento).
+1. Instale o AEM.
+1. CRXDE Lite de acesso (o ambiente de desenvolvimento).
 1. Configure a estrutura do projeto no CRXDE Lite.
-1. Crie o modelo, o componente e os scripts usados como a base para a criação de páginas de conteúdo.
-1. Crie a página raiz do seu site e, em seguida, as páginas de conteúdo.
-1. Crie os seguintes componentes para uso em suas páginas:
+1. Crie o modelo, o componente e os scripts usados como base para a criação de páginas de conteúdo.
+1. Crie a página raiz para o seu site e, em seguida, as páginas de conteúdo.
+1. Crie os seguintes componentes para usar em suas páginas:
 
    * Navegação superior
    * Listar secundários
    * Logotipo
    * Imagem
-   * Imagem de texto
+   * Texto-imagem
    * Pesquisar
 
-1. Inclua vários componentes fundamentais.
+1. Incluir vários componentes de base.
 
-Depois de executar todas as etapas, suas páginas terão a seguinte aparência:
+Depois de executar todas as etapas, as páginas serão exibidas da seguinte maneira:
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
-**Baixe o resultado final**
+**Baixar o resultado final**
 
-Para acompanhar o tutorial em vez de realizar os exercícios, baixe o site-1.0.zip. Este arquivo é um pacote de conteúdo AEM que contém os resultados deste tutorial. Use [Gerenciador de pacotes](/help/sites-administering/package-manager.md) para instalar o pacote na instância do autor.
+Para seguir o tutorial em vez de executar os exercícios, baixe o site-1.0.zip. Este arquivo é um pacote de conteúdo AEM que contém os resultados deste tutorial. Uso [Gerenciador de pacotes](/help/sites-administering/package-manager.md) para instalar o pacote na instância do autor.
 
-**OBSERVAÇÃO:** A instalação deste pacote substituirá todos os recursos na sua instância de criação que você criou usando este tutorial.
+**NOTA:** A instalação deste pacote substituirá todos os recursos na instância de criação que você criou usando este tutorial.
 
 Pacote de conteúdo do site
 
@@ -60,25 +60,25 @@ Pacote de conteúdo do site
 
 ## Instalação do Adobe Experience Manager {#installing-adobe-experience-manager}
 
-Para instalar uma instância do AEM para desenvolver seu site, siga as instruções para configurar um [ambiente de implantação com instâncias de criação e publicação](/help/sites-deploying/deploy.md#author-and-publish-installs)ou executar uma [instalação genérica](/help/sites-deploying/deploy.md#default-local-install). A instalação genérica envolve o download do arquivo AEM Quickstart JAR, colocar o arquivo license.properties no mesmo diretório do arquivo JAR e clicar duas vezes no arquivo JAR.
+Para instalar uma instância de AEM para desenvolver seu site, siga as instruções para configurar um [ambiente de implantação com instâncias de autor e publicação](/help/sites-deploying/deploy.md#author-and-publish-installs)ou execute um [instalação genérica](/help/sites-deploying/deploy.md#default-local-install). A instalação genérica envolve o download do arquivo JAR AEM Quickstart, a colocação do arquivo license.properties no mesmo diretório do arquivo JAR e um clique duplo no arquivo JAR.
 
-Depois de instalar o AEM, acesse o ambiente de desenvolvimento do CRXDE Lite clicando no link CRXDE Lite na página de boas-vindas:
+Depois de instalar o AEM, acesse o ambiente de desenvolvimento de CRXDE Lite clicando no link CRXDE Lite na página de Boas-vindas:
 
 ![chlimage_1-25](assets/chlimage_1-25.png)
 
 >[!NOTE]
 >
->O URL do CRXDE Lite para uma instância de criação de AEM que é instalada localmente usando a porta padrão é [https://localhost:4502/crx/de/](https://localhost:4502/crx/de/).
+>O URL do CRXDE Lite para uma instância de criação AEM instalada localmente usando a porta padrão é [https://localhost:4502/crx/de/](https://localhost:4502/crx/de/).
 
-### Configuração da estrutura do projeto no CRXDE Lite {#setting-up-the-project-structure-in-crxde-lite}
+### Como configurar a estrutura do projeto no CRXDE Lite {#setting-up-the-project-structure-in-crxde-lite}
 
-Use o CRXDE Lite para criar a estrutura de aplicativos do meu site no repositório:
+Use o CRXDE Lite para criar a estrutura do aplicativo mywebsite no repositório:
 
-1. Na árvore no lado esquerdo do CRXDE Lite, clique com o botão direito do mouse no **`/apps`** e clique em **Criar** > **Criar** **Pasta**. No **Criar pasta** diálogo, tipo `mywebsite` como o nome da pasta e clique em **OK**.
-1. Clique com o botão direito do mouse no **`/apps/mywebsite`** e clique em **Criar** > **Criar pasta**. No **Criar pasta** diálogo, tipo `components` como o nome da pasta e clique em **OK**.
-1. Clique com o botão direito do mouse no **`/apps/mywebsite`** e clique em **Criar** > **Criar pasta**. No **Criar pasta** diálogo, tipo `templates` como o nome da pasta e clique em **OK**.
+1. Na árvore do lado esquerdo do CRXDE Lite, clique com o botão direito do mouse no **`/apps`** e clique em **Criar** > **Criar** **Pasta**. No **Criar pasta** caixa de diálogo, digite `mywebsite` como o nome da pasta e clique em **OK**.
+1. Clique com o botão direito do mouse no **`/apps/mywebsite`** e clique em **Criar** > **Criar pasta**. No **Criar pasta** caixa de diálogo, digite `components` como o nome da pasta e clique em **OK**.
+1. Clique com o botão direito do mouse no **`/apps/mywebsite`** e clique em **Criar** > **Criar pasta**. No **Criar pasta** caixa de diálogo, digite `templates` como o nome da pasta e clique em **OK**.
 
-   A estrutura na árvore agora deve ser parecida com isto:
+   A estrutura da árvore agora deve ser semelhante a esta:
 
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
@@ -86,25 +86,25 @@ Use o CRXDE Lite para criar a estrutura de aplicativos do meu site no repositór
 
 ### Configuração do design {#setting-up-the-design}
 
-Nesta seção, crie o design para seu aplicativo usando a ferramenta Designer. O design fornece recursos de CSS e imagem para seu site.
+Nesta seção, você cria o design do aplicativo usando a ferramenta Designer. O design do fornece recursos de CSS e imagem para o site.
 
 >[!NOTE]
 >
->Clique no link a seguir para baixar mywebsite.zip. O arquivo contém os arquivos estáticos.css e de imagem para seu design.
+>Clique no link a seguir para baixar mywebsite.zip. O arquivo contém os arquivos static.css e de imagem para o seu design.
 
-Exemplo de arquivo estático.css e imagens
+Arquivo static.css de amostra e imagens
 
 [Obter arquivo](assets/mywebsite.zip)
 
-1. Na página AEM Boas-vindas, clique em **Ferramentas**. ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html))
+1. Na página de boas-vindas do AEM, clique em **Ferramentas**. ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html))
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
-1. Na árvore de pastas, selecione o **Designs** e clique em **Novo** > **Nova página**. Tipo `mywebsite` como título e clique em **Criar**.
+1. Na árvore de pastas, selecione o **Designs** e clique em **Novo** > **Nova página**. Tipo `mywebsite` como o título e clique em **Criar**.
 
-1. Se o item do meu site não aparecer na tabela, atualize a árvore ou a tabela.
+1. Se o item mywebsite não aparecer na tabela, atualize a árvore ou a tabela.
 
-1. [Usando o WebDAV](/help/sites-administering/webdav-access.md) acesse o URL em https://localhost:4502, copie a amostra `static.css` e `images` pasta do arquivo mysite.zip baixado na `/etc/designs/mywebsite` pasta.
+1. [Uso do WebDAV](/help/sites-administering/webdav-access.md) para acessar o URL em https://localhost:4502, copie a amostra `static.css` arquivo e `images` do arquivo mywebsite.zip baixado na pasta `/etc/designs/mywebsite` pasta.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -113,70 +113,70 @@ Exemplo de arquivo estático.css e imagens
 Nesta seção, você cria o seguinte:
 
 * O modelo de página de conteúdo que será usado para criar páginas de conteúdo no site de exemplo
-* O componente página de conteúdo que será usado para renderizar páginas de conteúdo
-* O script da página de conteúdo
+* O componente contentpage que será usado para renderizar páginas de conteúdo
+* O script contentpage
 
-#### Criação do modelo de página de conteúdo {#creating-the-contentpage-template}
+#### Criação do modelo Contentpage {#creating-the-contentpage-template}
 
-Crie um modelo para usar como base das páginas da Web do site.
+Crie um modelo para usar como a base das páginas da Web do site.
 
-Um modelo define o conteúdo padrão de uma nova página. Sites complexos podem usar vários modelos para criar os diferentes tipos de páginas no site. Neste exercício, todas as páginas são baseadas em um modelo simples.
+Um modelo define o conteúdo padrão de uma nova página. Sites complexos podem usar vários modelos para criar os diferentes tipos de páginas no site. Neste exercício, todas as páginas se baseiam em um modelo simples.
 
 1. Na árvore de pastas do CRXDE Lite, clique com o botão direito do mouse `/apps/mywebsite/templates` e clique em **Criar** > **Criar modelo**.
 
-1. Na caixa de diálogo Criar modelo, digite os seguintes valores e clique em **Próximo**:
+1. Na caixa de diálogo Criar modelo, digite os seguintes valores e clique em **Próxima**:
 
    * **Rótulo**: contentpage
-   * **Título**: Modelo de página de conteúdo do meu site
-   * **Descrição**: Este é meu modelo de página de conteúdo do site
-   * **Tipo de recurso:** mysite/components/contentpage
+   * **Título**: Modelo da página de conteúdo do meu site
+   * **Descrição**: este é o modelo da página de conteúdo do meu site
+   * **Tipo de recurso:** mywebsite/components/contentpage
 
-   Use o valor padrão para a propriedade Classificação .
+   Use o valor padrão para a propriedade Ranking.
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-   O tipo de recurso identifica o componente que renderiza a página. Nesse caso, todas as páginas criadas usando o modelo de página de conteúdo são renderizadas pelo `mywebsite/components/contentpage` componente.
+   O tipo de recurso identifica o componente que renderiza a página. Nesse caso, todas as páginas criadas usando o template contentpage são renderizadas pelo `mywebsite/components/contentpage` componente.
 
-1. Para especificar os caminhos das páginas que podem usar esse modelo, clique no botão de adição e digite `/content(/.*)?` na caixa de texto exibida. Em seguida, clique em **Próximo**.
+1. Para especificar os caminhos das páginas que podem usar esse modelo, clique no botão de adição e digite `/content(/.*)?` na caixa de texto exibida. Em seguida, clique em **Próxima**.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   O valor da propriedade de caminho permitida é um *expressão regular.* As páginas que têm um caminho que corresponde à expressão podem usar o modelo . Nesse caso, a expressão regular corresponde ao caminho da variável **/conteúdo** e todas as subpáginas.
+   O valor da propriedade de caminho permitida é um *expressão regular.* As páginas que têm um caminho que corresponde à expressão podem usar o modelo. Nesse caso, a expressão regular corresponde ao caminho do **/content** pasta e todas as subpáginas.
 
-   Quando um autor cria uma página abaixo de /content, a variável **contentpage** O modelo é exibido em uma lista de modelos disponíveis para uso.
+   Quando um autor cria uma página abaixo de /conteúdo, a variável **contentpage** modelo aparece em uma lista de modelos disponíveis para uso.
 
-1. Clique em **Próximo** no **Pais permitidos** e **Filhos permitidos** painéis e clique em **OK**. No CRXDE Lite, clique em **Salvar tudo**.
+1. Clique em **Próxima** no **Pais permitidos** e **Filhos permitidos** e clique em **OK**. No CRXDE Lite, clique em **Salvar tudo**.
 
    ![chlimage_1-31](assets/chlimage_1-31.png)
 
-#### Criação do componente Conteúdo da página {#creating-the-contentpage-component}
+#### Criação do componente Contentpage {#creating-the-contentpage-component}
 
-Crie o *componente* que define o conteúdo e renderiza as páginas que usam o modelo contentpage. O local do componente deve corresponder ao valor da propriedade Tipo de recurso do modelo de página de conteúdo.
+Crie o *componente* que define o conteúdo e renderiza as páginas que usam o modelo contentpage. O local do componente deve corresponder ao valor da propriedade Resource Type do modelo contentpage.
 
-1. No CRXDE Lite, clique com o botão direito do mouse `/apps/mywebsite/components` e clique em **Criar** > **Componente**.
+1. No CRXDE Lite, clique com o botão direito do mouse em `/apps/mywebsite/components` e clique em **Criar** > **Componente**.
 1. No **Criar componente** digite os seguintes valores de propriedade:
 
    * **Rótulo**: contentpage
-   * **Título**: Componente da página Conteúdo do meu site
-   * **Descrição**: Este é o Componente da Página Conteúdo do Meu Site
+   * **Título**: Componente da página de conteúdo do meu site
+   * **Descrição**: este é o componente Página de conteúdo do meu site
 
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
-   O local do novo componente é `/apps/mywebsite/components/contentpage`. Esse caminho corresponde ao tipo de recurso do modelo de página de conteúdo (menos o **`/apps/`** parte do caminho).
+   O local do novo componente é `/apps/mywebsite/components/contentpage`. Esse caminho corresponde ao tipo de recurso do modelo contentpage (menos o **`/apps/`** parte do caminho).
 
    Essa correspondência conecta o modelo ao componente e é essencial para o funcionamento correto do site.
 
-1. Clique em **Próximo** até que o painel Filhos permitidos da caixa de diálogo seja exibido e clique em **OK**. No CRXDE Lite, clique em **Salvar tudo**.
+1. Clique em **Próxima** até que o painel Filhos permitidos da caixa de diálogo seja exibido e clique em **OK**. No CRXDE Lite, clique em **Salvar tudo**.
 
-   A estrutura agora tem a seguinte aparência:
+   A estrutura agora se parece com o seguinte:
 
    ![chlimage_1-33](assets/chlimage_1-33.png)
 
-#### Desenvolvimento do script de componente de página de conteúdo {#developing-the-contentpage-component-script}
+#### Desenvolvimento do script do componente Contentpage {#developing-the-contentpage-component-script}
 
-Adicione o código ao script contentpage.jsp para definir o conteúdo da página.
+Adicione código ao script contentpage.jsp para definir o conteúdo da página.
 
-1. No CRXDE Lite, abra o arquivo `contentpage.jsp` em `/apps/mywebsite/components/contentpage`. O arquivo contém o seguinte código por padrão:
+1. No CRXDE Lite, abra o arquivo `contentpage.jsp` in `/apps/mywebsite/components/contentpage`. O arquivo contém o seguinte código por padrão:
 
    ```java
    <%--
@@ -213,16 +213,16 @@ Adicione o código ao script contentpage.jsp para definir o conteúdo da página
 
 1. Clique em **Salvar tudo** para salvar as alterações.
 
-### Criação da página do site e das páginas de conteúdo {#creating-your-website-page-and-content-pages}
+### Criação da página do seu site e das páginas de conteúdo {#creating-your-website-page-and-content-pages}
 
-Nesta seção, crie as seguintes páginas que usam o modelo de página de conteúdo: Meu site, inglês, produtos, serviços e clientes.
+Nesta seção, você cria as seguintes páginas, todas usando o modelo de página de conteúdo: Meu site, Inglês, Produtos, Serviços e Clientes.
 
 1. Na página de boas-vindas do AEM ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html)), clique em Sites.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
 1. Na árvore de pastas, selecione o **Sites** e clique em **Novo** > **Nova página**.
-1. No **Criar página** digite:
+1. No **Criar página** insira o seguinte:
 
    * Título: `My Website`
    * Nome: `mywebsite`
@@ -231,35 +231,35 @@ Nesta seção, crie as seguintes páginas que usam o modelo de página de conte�
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
 1. Clique em **Criar**. Na árvore de pastas, selecione o **/Websites/Meu Site** e clique em **Novo** > **Nova página**.
-1. Na caixa de diálogo Criar página , insira os seguintes valores de propriedade e clique em Criar:
+1. Na caixa de diálogo Criar página, digite os seguintes valores de propriedade e clique em Criar:
 
-   * Título: Inglês
+   * Título: inglês
    * Nome: en
-   * Selecionar o modelo da página de conteúdo do meu site
+   * Selecionar o Modelo da Página de Conteúdo do Meu Site
 
-1. Na árvore de pastas, selecione o **/Websites/Meu Site/Inglês** e clique em **Novo**> **Nova página**.
+1. Na árvore de pastas, selecione o **/Sites/Meu Site/Inglês** e clique em **Novo**> **Nova página**.
 1. No **Criar página** , insira os seguintes valores de propriedade e clique em **Criar**:
 
    * Título: Produtos
-   * Selecionar o modelo da página de conteúdo do meu site
+   * Selecionar o Modelo da Página de Conteúdo do Meu Site
 
-1. Na árvore de pastas, selecione o **/Websites/Meu Site/Inglês** e clique em **Novo** > **Nova página**.
+1. Na árvore de pastas, selecione o **/Sites/Meu Site/Inglês** e clique em **Novo** > **Nova página**.
 1. No **Criar página** , insira os seguintes valores de propriedade e clique em **Criar**:
 
    * Título: Serviços
-   * Selecionar o modelo da página de conteúdo do meu site
+   * Selecionar o Modelo da Página de Conteúdo do Meu Site
 
-1. Na árvore de pastas, selecione o **/Websites/Meu Site/Inglês** e clique em **Novo** > **Nova página**.
+1. Na árvore de pastas, selecione o **/Sites/Meu Site/Inglês** e clique em **Novo** > **Nova página**.
 1. No **Criar página** , insira os seguintes valores de propriedade e clique em **Criar**:
 
    * Título: Clientes
-   * Selecionar o modelo da página de conteúdo do meu site
+   * Selecionar o Modelo da Página de Conteúdo do Meu Site
 
    Sua estrutura tem a seguinte aparência:
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
-1. Para vincular suas páginas ao design do mysite, no CRXDE Lite, selecione a variável `/content/mywebsite/en/jcr:content` nó . Na guia Propriedades, digite os seguintes valores para uma nova propriedade e clique em Adicionar:
+1. Para vincular suas páginas ao design do meu site, no CRXDE Lite, selecione o `/content/mywebsite/en/jcr:content` nó. Na guia Propriedades, digite os seguintes valores para uma nova propriedade e clique em Adicionar:
 
    * Nome: cq:designPath
    * Tipo: String
@@ -271,23 +271,23 @@ Nesta seção, crie as seguintes páginas que usam o modelo de página de conte�
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-### Aprimoramento do script de página de conteúdo {#enhancing-the-contentpage-script}
+### Aprimoramento do script Contentpage {#enhancing-the-contentpage-script}
 
-Esta seção descreve como aprimorar o script de página de conteúdo usando os scripts de componente de base AEM e escrevendo seus próprios scripts.
+Esta seção descreve como aprimorar o script de página de conteúdo usando os scripts de componente de base do AEM e escrevendo seus próprios scripts.
 
-O **Produtos** será exibida da seguinte maneira:
+A variável **Produtos** A página terá a seguinte aparência:
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-#### Uso de scripts de página de base {#using-the-foundation-page-scripts}
+#### Uso dos Scripts de Página de Base {#using-the-foundation-page-scripts}
 
-Neste exercício, você configura seu componente de conteúdo de página para que seu supertipo seja o componente Página de AEM. Como os componentes herdam os recursos de seu supertipo, o conteúdo da página herda os scripts e as propriedades do componente Página.
+Neste exercício, você configura o componente Conteúdo da página para que o supertipo seja o componente Página do AEM. Como os componentes herdam os recursos do supertipo, o conteúdo da página herda os scripts e as propriedades do componente Página.
 
-Por exemplo, no código JSP do seu componente, é possível referenciar os scripts que o componente de supertipo fornece como se estivessem incluídos no seu componente.
+Por exemplo, no código JSP do componente, você pode fazer referência aos scripts que o componente de supertipo fornece como se estivessem incluídos em seu componente.
 
-1. No CRXDE Lite, adicione uma propriedade ao `/apps/mywebsite/components/contentpage` nó .
+1. No CRXDE Lite, adicione uma propriedade à variável `/apps/mywebsite/components/contentpage` nó.
 
-   1. Selecione o `/apps/mywebsite/components/contentpage` nó .
+   1. Selecione o `/apps/mywebsite/components/contentpage` nó.
    1. Na parte inferior da guia Propriedades, digite os seguintes valores de propriedade e clique em Adicionar:
 
       * **Nome:** sling:resourceSuperType
@@ -309,11 +309,11 @@ Por exemplo, no código JSP do seu componente, é possível referenciar os scrip
    ```
 
 1. Salve as alterações.
-1. No seu navegador, recarregue a página Produtos . Tem a seguinte aparência:
+1. No navegador, recarregue a página Produtos. Ela tem a seguinte aparência:
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-   Abra a fonte da página para ver os elementos javascript e HTML que os scripts head.jsp e body.jsp geraram. O seguinte trecho de script abre o Sidekick quando você abre a página:
+   Abra a fonte da página para ver os elementos de javascript e HTML gerados pelos scripts head.jsp e body.jsp. O trecho de script a seguir abre o Sidekick quando você abre a página:
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -324,15 +324,15 @@ Por exemplo, no código JSP do seu componente, é possível referenciar os scrip
 
 #### Usar seus próprios scripts {#using-your-own-scripts}
 
-Nesta seção, você cria vários scripts que geram uma parte do corpo da página. Em seguida, crie o arquivo body.jsp no componente pagecontent para substituir o body.jsp do componente Página AEM. No arquivo body.jsp, você inclui os scripts que geram as diferentes partes do corpo da página.
+Nesta seção, você cria vários scripts que geram, cada um, uma parte do corpo da página. Em seguida, crie o arquivo body.jsp no componente pagecontent para substituir o body.jsp do componente Página de AEM. No arquivo body.jsp, você inclui os scripts que geram as diferentes partes do corpo da página.
 
-**Dica:** Quando um componente inclui um arquivo que tem o mesmo nome e o mesmo local relativo de um arquivo no supertipo do componente, ele é chamado *sobreposição*.
+**Dica:** Quando um componente inclui um arquivo com o mesmo nome e local relativo de um arquivo no supertipo do componente, ele é chamado de *sobreposição*.
 
-1. No CRXDE Lite, crie o arquivo `left.jsp` under `/apps/mywebsite/components/contentpage`:
+1. No CRXDE Lite, crie o arquivo `left.jsp` em `/apps/mywebsite/components/contentpage`:
 
-   1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/contentpage`, em seguida, selecione **Criar **e **Criar arquivo**.
+   1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/contentpage`, selecione **Criar **e **Criar arquivo**.
 
-   1. Na janela , digite `left.jsp` como **Nome** e clique em **OK**.
+   1. Na janela, digite `left.jsp` como o **Nome** e clique em **OK**.
 
 1. Editar o arquivo `left.jsp` para remover o conteúdo existente e substituir pelo seguinte código:
 
@@ -346,9 +346,9 @@ Nesta seção, você cria vários scripts que geram uma parte do corpo da págin
    ```
 
 1. Salve as alterações.
-1. No CRXDE Lite, crie o arquivo `center.jsp` under `/apps/mywebsite/components/contentpage`:
+1. No CRXDE Lite, crie o arquivo `center.jsp` em `/apps/mywebsite/components/contentpage`:
 
-   1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/contentpage`, selecione **Criar**, em seguida **Criar arquivo**.
+   1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/contentpage`, selecione **Criar**, depois **Criar arquivo**.
 
    1. Na caixa de diálogo, digite `center.jsp` as **Nome** e clique em **OK**.
 
@@ -364,9 +364,9 @@ Nesta seção, você cria vários scripts que geram uma parte do corpo da págin
    ```
 
 1. Salve as alterações.
-1. No CRXDE Lite, crie o arquivo `right.jsp` under `/apps/mywebsite/components/contentpage`:
+1. No CRXDE Lite, crie o arquivo `right.jsp` em `/apps/mywebsite/components/contentpage`:
 
-   1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/contentpage`, selecione **Criar**, em seguida **Criar arquivo**.
+   1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/contentpage`, selecione **Criar**, depois **Criar arquivo**.
 
    1. Na caixa de diálogo, digite `right.jsp` as **Nome** e clique em **OK**.
 
@@ -380,7 +380,7 @@ Nesta seção, você cria vários scripts que geram uma parte do corpo da págin
    ```
 
 1. Salve as alterações.
-1. No CRXDE Lite, crie o arquivo `body.jsp` under `/apps/mywebsite/components/contentpage`:
+1. No CRXDE Lite, crie o arquivo `body.jsp` em `/apps/mywebsite/components/contentpage`:
 1. Editar o arquivo `body.jsp` para remover o conteúdo existente e substituir pelo seguinte código:
 
    ```java
@@ -401,24 +401,24 @@ Nesta seção, você cria vários scripts que geram uma parte do corpo da págin
    ```
 
 1. Salve as alterações.
-1. No seu navegador, recarregue a página Produtos . Tem a seguinte aparência:
+1. No navegador, recarregue a página Produtos. Ela tem a seguinte aparência:
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-### Criação do componente Navegação superior {#creating-the-top-navigation-component}
+### Criação do componente de Navegação superior {#creating-the-top-navigation-component}
 
-Nesta seção, você cria um componente que exibe links para todas as páginas de nível superior do site para facilitar a navegação. Esse conteúdo de componente é exibido na parte superior de todas as páginas criadas usando o modelo de página de conteúdo.
+Nesta seção, você cria um componente que exibe links para todas as páginas de nível superior do site para facilitar a navegação. Esse conteúdo do componente aparece na parte superior de todas as páginas criadas usando o modelo de página de conteúdo.
 
-Na primeira versão do componente de navegação superior (topnav) os itens de navegação são apenas links de texto. Na segunda versão, você implementa a navegação superior com links de navegação de imagem.
+Na primeira versão do componente de navegação superior (navegação superior), os itens de navegação são somente links de texto. Na segunda versão, você implementa topnav com links de navegação de imagem.
 
 Sua navegação superior terá a seguinte aparência:
 
 ![chlimage_1-39](assets/chlimage_1-39.png)
 
-#### Criação do componente Navegação superior {#creating-the-top-navigation-component-1}
+#### Criação do componente de Navegação superior {#creating-the-top-navigation-component-1}
 
-1. No CRXDE Lite, clique com o botão direito do mouse `/apps/mywebsite/components`, selecione **Criar**, em seguida **Criar componente**.
-1. No **Criar componente** digite:
+1. No CRXDE Lite, clique com o botão direito do mouse em `/apps/mywebsite/components`, selecione **Criar**, depois **Criar componente**.
+1. No **Criar componente** insira o seguinte:
 
    * **Rótulo**: `topnav`
 
@@ -426,13 +426,13 @@ Sua navegação superior terá a seguinte aparência:
 
    * **Descrição**: `This is My Top Navigation Component`
 
-1. Clique em **Próximo** até chegar à última janela em que você clicou **OK**. Salve as alterações.
+1. Clique em **Próxima** até chegar à última janela em que clicar em **OK**. Salve as alterações.
 
 #### Criação do script de navegação superior com links textuais {#creating-the-top-navigation-script-with-textual-links}
 
-Adicione o script de renderização ao topnav para gerar links de texto para páginas filhas:
+Adicione o script de renderização à navegação superior para gerar links de texto para páginas secundárias:
 
-1. No CRXDE Lite, abra o arquivo `topnav.jsp` under `/apps/mywebsite/components/topnav`.
+1. No CRXDE Lite, abra o arquivo `topnav.jsp` em `/apps/mywebsite/components/topnav`.
 1. Substitua o código que está lá copiando e colando o seguinte código:
 
    ```xml
@@ -455,11 +455,11 @@ Adicione o script de renderização ao topnav para gerar links de texto para pá
    %>
    ```
 
-#### Inclusão da navegação superior no componente Página de conteúdo {#including-top-navigation-in-the-contentpage-component}
+#### Inclusão da navegação superior no componente Contentpage {#including-top-navigation-in-the-contentpage-component}
 
-Para incluir o topnav no seu componente contentpage:
+Para incluir topnav no componente de página de conteúdo:
 
-1. No CRXDE Lite, abra o `body.jsp` under `/apps/mywebsite/components/contentpage`e substituir:
+1. No CRXDE Lite, abra o `body.jsp` em `/apps/mywebsite/components/contentpage`e substitua:
 
    ```xml
    <div class="topnav">topnav</div>
@@ -472,45 +472,45 @@ Para incluir o topnav no seu componente contentpage:
    ```
 
 1. Salve as alterações.
-1. No seu navegador, recarregue a Página de produtos. A navegação superior é exibida da seguinte maneira:
+1. No navegador, recarregue a página Produtos. A navegação superior é exibida da seguinte maneira:
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
 #### Aprimoramento de páginas com legendas {#enhancing-pages-with-subtitles}
 
-O componente Página define propriedades que permitem fornecer legendas para as páginas. Adicione legendas que fornecem informações sobre o conteúdo da página.
+O componente Página define as propriedades que permitem fornecer legendas para páginas. Adicione legendas que forneçam informações sobre o conteúdo da página.
 
-1. No seu navegador, abra o **Produtos** página.
+1. No navegador, abra o **Produtos** página.
 1. No Sidekick **Página** clique em **Propriedades da página**.
-1. Na guia Básico da caixa de diálogo, expanda **Mais títulos e descrição,** e para o **Legenda** propriedade, tipo **o que fazemos**. Clique em **OK**.
-1. Repita as etapas anteriores para adicionar o subtítulo **sobre nossos serviços** para **Serviços** página.
-1. Repita as etapas anteriores para adicionar o subtítulo **a confiança que ganhamos** para **Clientes** página.
+1. Na guia Básico da caixa de diálogo, expanda **Mais títulos e descrições,** e para o **Legenda** propriedade, tipo **o que fazemos**. Clique em **OK**.
+1. Repetir as etapas anteriores para adicionar o subtítulo **sobre nossos serviços** para o **Serviços** página.
+1. Repetir as etapas anteriores para adicionar o subtítulo **a confiança que ganhamos** para o **Clientes** página.
 
-   **Dica:** No CRXDE Lite, selecione o nó /content/mywebsite/en/products/jcr:content para ver que a propriedade de subtítulo é adicionada.
+   **Dica:** No CRXDE Lite, selecione o nó /content/mywebsite/en/products/jcr:content para ver que a propriedade de subtítulo foi adicionada.
 
-#### Aprimorar a navegação superior usando links de imagem {#enhance-top-navigation-by-using-image-links}
+#### Melhorar a navegação superior usando links de imagem {#enhance-top-navigation-by-using-image-links}
 
-Aprimore o script de renderização do componente de navegação superior para usar links de imagem em vez de hipertexto para os controles de navegação. A imagem inclui o título e o subtítulo do direcionamento do link.
+Aprimore o script de renderização do componente de navegação superior para usar links de imagem em vez de hipertexto para os controles de navegação. A imagem inclui o título e o subtítulo do destino do link.
 
-Este exercício demonstra [Processamento de solicitação Sling](/help/sites-developing/the-basics.md#sling-request-processing). O script topnav.jsp é modificado para chamar um script que gera dinamicamente imagens para serem usadas nos links de navegação da página. Neste exercício, o Sling analisa o URL dos arquivos de origem da imagem para determinar o script a ser usado para renderizar as imagens.
+Este exercício demonstra [Processamento de solicitação do Sling](/help/sites-developing/the-basics.md#sling-request-processing). O script topnav.jsp é modificado para chamar um script que gera dinamicamente imagens para serem usadas nos links de navegação da página. Neste exercício, o Sling analisa o URL dos arquivos de origem de imagem para determinar o script a ser usado para renderizar as imagens.
 
-Por exemplo, a origem do link da imagem para a página Produtos pode ser https://localhost:4502/content/mywebsite/en/products.navimage.png. O Sling analisa esse URL para determinar o tipo de recurso e o script a ser usado para renderizar o recurso:
+Por exemplo, a origem do link de imagem para a página Produtos pode ser https://localhost:4502/content/mywebsite/en/products.navimage.png. O Sling analisa esse URL para determinar o tipo de recurso e o script a ser usado para renderizar o recurso:
 
 1. O Sling determina o caminho do recurso a ser `/content/mwebysite/en/products.png.`
-1. O Sling corresponde a este caminho com o `/content/mywebsite/en/products` nó .
+1. O Sling corresponde esse caminho com o `/content/mywebsite/en/products` nó.
 1. O Sling determina o `sling:resourceType` deste nó a ser `mywebsite/components/contentpage`.
 
 1. O Sling encontra o script neste componente que melhor corresponde ao seletor de URL ( `navimage`) e extensão de nome de arquivo ( `png`).
 
 Neste exercício, o Sling corresponde esses URLs ao script /apps/mywebsite/components/contentpage/navimage.png.java que você cria.
 
-1. No CRXDE Lite, abra o `topnav.jsp` under `/apps/mywebsite/components/topnav.`Localize o conteúdo do elemento de âncora (linha 14):
+1. No CRXDE Lite, abra o `topnav.jsp` em `/apps/mywebsite/components/topnav.`Localize o conteúdo do elemento de ancoragem (linha 14):
 
    ```xml
    <%=child.getTitle() %>
    ```
 
-1. Substitua o conteúdo da âncora pelo seguinte código:
+1. Substitua o conteúdo de âncora pelo seguinte código:
 
    ```xml
    <img alt="<%= child.getTitle() %>" src="<%= child.getPath() %>.navimage.png">
@@ -520,13 +520,13 @@ Neste exercício, o Sling corresponde esses URLs ao script /apps/mywebsite/compo
 1. Clique com o botão direito do mouse no `/apps/mywebsite/components/contentpage` e clique em **Criar** > **Criar arquivo**.
 1. No **Criar arquivo** janela, como **Nome**, tipo `navimage.png.java`.
 
-   A extensão de nome de arquivo .java indica ao Sling que o suporte Java a scripts do Apache deve ser usado para compilar o script e criar um servlet.
+   A extensão de nome de arquivo .java indica ao Sling que o Suporte a Java para script Apache Sling deve ser usado para compilar o script e criar um servlet.
 
 1. Copie o código a seguir em `navimage.png.java.`O código estende a classe AbstractImageServlet:
 
    * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) cria um objeto ImageContext que armazena as propriedades do recurso atual.
-   * A página principal do recurso é extraída do objeto ImageContext. O título e o subtítulo da página são obtidos.
-   * [ImageHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) é usada para gerar a imagem do arquivo navimage_bg.jpg do design do site, o título da página e o subtítulo da página.
+   * A página principal do recurso é extraída do objeto ImageContext. O título da página e o subtítulo são obtidos.
+   * [ImageHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) é usado para gerar a imagem do arquivo navimage_bg.jpg do design do site, o título da página e o subtítulo da página.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -644,37 +644,37 @@ Neste exercício, o Sling corresponde esses URLs ao script /apps/mywebsite/compo
    ```
 
 1. Salve as alterações.
-1. No seu navegador, recarregue a página Produtos . A navegação superior agora aparece da seguinte maneira:
+1. No navegador, recarregue a página Produtos. A navegação superior agora é exibida da seguinte maneira:
 
    ![screen_shot_2012-03-07at10047pm](assets/screen_shot_2012-03-07at10047pm.png)
 
-### Criação do componente Filhos da lista {#creating-the-list-children-component}
+### Criação do componente List Children {#creating-the-list-children-component}
 
-Crie o componente listchildren que gera uma lista de links de página que incluem o título, a descrição e a data das páginas (por exemplo, páginas de produto). Os links direcionam as páginas filhas da página atual ou de uma página raiz especificada na caixa de diálogo do componente.
+Crie o componente listchildren que gera uma lista de links de página que incluem o título, a descrição e a data das páginas (por exemplo, páginas de produtos). Os links têm como alvo as páginas secundárias da página atual ou de uma página raiz especificada na caixa de diálogo do componente.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
-#### Criação de páginas de produtos {#creating-product-pages}
+#### Criação de páginas de produto {#creating-product-pages}
 
 Crie duas páginas localizadas abaixo da página Produtos. Para cada página, que descreve dois produtos específicos, você define um título, uma descrição e uma data.
 
 1. Na árvore de pastas da página Sites, selecione o item Sites/Meu site/Inglês/Produtos e clique em Novo > Nova página.
-1. Na caixa de diálogo, digite os seguintes valores de propriedade e clique em Criar:
+1. Na caixa de diálogo, insira os seguintes valores de propriedade e clique em Criar:
 
    * Título: Produto 1.
-   * Nome: produto1.
-   * Selecionar o modelo da página de conteúdo do meu site
+   * Nome: product1.
+   * Selecionar Modelo de Página de Conteúdo do Meu Site
 
 1. Crie outra página abaixo de Produtos usando os seguintes valores de propriedade:
 
    * Título: Produto 2
-   * Nome: produto2
-   * Selecionar o modelo da página de conteúdo do meu site
+   * Nome: product2
+   * Selecionar Modelo de Página de Conteúdo do Meu Site
 
-1. No CRXDE Lite, defina uma descrição e uma data para a página do Produto 1:
+1. No CRXDE Lite, defina uma descrição e uma data para a página Produto 1:
 
-   1. Selecione o `/content/mywebsite/en/products/product1/jcr:content` nó .
-   1. No **Propriedades** , insira os seguintes valores:
+   1. Selecione o `/content/mywebsite/en/products/product1/jcr:content` nó.
+   1. No **Propriedades** insira os seguintes valores:
 
       * Nome: `jcr:description`
       * Tipo: `String`
@@ -693,11 +693,11 @@ Crie duas páginas localizadas abaixo da página Produtos. Para cada página, qu
 1. No CRXDE Lite, defina uma descrição e uma data para a página Produto 2:
 
    1. Selecione o nó /content/mywebsite/en/products/product2/jcr:content.
-   1. No **Propriedades** , insira os seguintes valores:
+   1. No **Propriedades** insira os seguintes valores:
 
-      * Nome: jcr:description
+      * Nome: jcr:descrição
       * Tipo: String
-      * Valor: Esta é uma descrição do Produto 2!.
+      * Valor: esta é uma descrição do Produto 2!.
    1. Clique em **Adicionar**.
    1. Nas mesmas caixas de texto, substitua os valores anteriores pelos seguintes valores:
 
@@ -709,24 +709,24 @@ Crie duas páginas localizadas abaixo da página Produtos. Para cada página, qu
 
 
 
-#### Criação do componente Filhos da lista {#creating-the-list-children-component-1}
+#### Criação do componente List Children {#creating-the-list-children-component-1}
 
 Para criar o componente listchildren:
 
-1. No CRXDE Lite, clique com o botão direito do mouse `/apps/mywebsite/components`, selecione **Criar**, em seguida **Criar componente**.
+1. No CRXDE Lite, clique com o botão direito do mouse em `/apps/mywebsite/components`, selecione **Criar**, depois **Criar componente**.
 1. Na caixa de diálogo, digite os seguintes valores de propriedade e clique em Avançar:
 
-   * Rótulo: listem crianças.
-   * Título: Componente Minhas Listchildren.
-   * Descrição: Este é o Componente Minhas Listchildren .
+   * Label: listchildren.
+   * Título: Componente Minhas listas e filhos.
+   * Descrição: Este é o Componente Minhas listas e filhos.
 
-1. Continue clicando em Avançar até que o painel Filhos permitidos seja exibido e clique em OK.
+1. Continue a clicar em Avançar até que o painel Filhos permitidos seja exibido e, em seguida, clique em OK.
 
-#### Criando o script de lista de filhos {#creating-the-list-children-script}
+#### Criação do script List Children {#creating-the-list-children-script}
 
 Desenvolva o script para o componente listchildren.
 
-1. No CRXDE Lite, abra o arquivo `listchildren.jsp` under `/apps/mywebsite/components/listchildren`.
+1. No CRXDE Lite, abra o arquivo `listchildren.jsp` em `/apps/mywebsite/components/listchildren`.
 1. Substitua o código padrão pelo seguinte código:
 
    ```xml
@@ -755,15 +755,15 @@ Desenvolva o script para o componente listchildren.
 
 1. Salve as alterações.
 
-#### Caixa de diálogo Filhos da lista {#creating-the-list-children-dialog}
+#### Criando a caixa de diálogo Listar filhos {#creating-the-list-children-dialog}
 
 Crie a caixa de diálogo usada para configurar as propriedades do componente listchildren.
 
-1. Crie o nó de diálogo sob o componente listchildren:
+1. Crie o nó da caixa de diálogo sob o componente listchildren:
 
    1. No CRXDE Lite, clique com o botão direito do mouse no `/apps/mywebsite/components/listchildren`e clique em **Criar** > **Criar caixa de diálogo**.
 
-   1. Na caixa de diálogo, digite os seguintes valores de propriedade e clique em OK
+   1. Na caixa de diálogo, insira os seguintes valores de propriedade e clique em OK
 
       * **Rótulo**: `dialog`
 
@@ -775,14 +775,14 @@ Crie a caixa de diálogo usada para configurar as propriedades do componente lis
 
    ![screen_shot_2012-03-07at50415pm](assets/screen_shot_2012-03-07at50415pm.png)
 
-1. Selecione o `/apps/mywebsite/components/listchildren/dialog/items/items/tab1` nó .
-1. Na guia Properties , altere o valor da variável **título** propriedade para `List Children`
+1. Selecione o `/apps/mywebsite/components/listchildren/dialog/items/items/tab1` nó.
+1. Na guia Propriedades, altere o valor da variável **título** propriedade para `List Children`
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
-1. Selecione o nó tab1 e clique em Criar > Criar nó, insira os seguintes valores de propriedade e clique em OK:
+1. Selecione o nó tab1, clique em Criar > Criar nó, insira os seguintes valores de propriedade e clique em OK:
 
-   * Nome: items
+   * Nome: itens
    * Tipo: cq:WidgetCollection
 
    ![screen_shot_2012-03-07at51018pm](assets/screen_shot_2012-03-07at51018pm.png)
@@ -798,17 +798,17 @@ Crie a caixa de diálogo usada para configurar as propriedades do componente lis
 
    | Nome | Tipo | Valor |
    |---|---|---|
-   | fieldLabel | Sequência de caracteres | Caminho da raiz da lista |
-   | name | Sequência de caracteres | ./listroot |
-   | xtype | Sequência de caracteres | campo de texto |
+   | fieldLabel | String | Caminho da raiz da lista |
+   | name | String | ./listroot |
+   | xtype | String | textfield |
 
    ![screen_shot_2012-03-07at51433pm](assets/screen_shot_2012-03-07at51433pm.png)
 
-#### Inclusão de filhos da lista no componente Página de conteúdo {#including-list-children-in-the-contentpage-component}
+#### Inclusão de Filhos de Lista no Componente Contentpage {#including-list-children-in-the-contentpage-component}
 
-Para incluir o componente listchildren no seu componente página de conteúdo, proceda da seguinte maneira:
+Para incluir o componente listchildren no componente contentpage, proceda da seguinte maneira:
 
-1. No CRXDE Lite, abra o arquivo `left.jsp` under `/apps/mywebsite/components/contentpage` e localize o seguinte código (linha 4):
+1. No CRXDE Lite, abra o arquivo `left.jsp` em `/apps/mywebsite/components/contentpage` e localize o seguinte código (linha 4):
 
    ```xml
    <div>newslist</div>
@@ -822,14 +822,14 @@ Para incluir o componente listchildren no seu componente página de conteúdo, p
 
 1. Salve as alterações.
 
-#### Exibindo filhos da lista em uma página {#viewing-list-children-in-a-page}
+#### Exibir filhos da lista em uma página {#viewing-list-children-in-a-page}
 
-Para ver a operação completa deste componente, é possível visualizar a página Produtos :
+Para ver a operação completa desse componente, é possível visualizar a página Produtos:
 
-* quando a página pai (&quot;Caminho da raiz da lista&quot;) não estiver definida.
-* quando a página pai (&quot;Caminho da raiz da lista&quot;) é definida.
+* quando a página principal (&quot;Caminho da raiz da lista&quot;) não está definida.
+* quando a página principal (&quot;Caminho da raiz da lista&quot;) é definida.
 
-1. No seu navegador, recarregue a Página de produtos. O componente listchildren aparece da seguinte maneira:
+1. No navegador, recarregue a página Produtos. O componente listchildren é exibido da seguinte maneira:
 
    ![chlimage_1-43](assets/chlimage_1-43.png)
 
@@ -839,41 +839,41 @@ Para ver a operação completa deste componente, é possível visualizar a pági
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
-### Criação do componente de logotipo {#creating-the-logo-component}
+### Criação do componente de Logotipo {#creating-the-logo-component}
 
-Crie um componente que exiba o logotipo da empresa e forneça um link para a página inicial do site. O componente contém uma caixa de diálogo do modo de design para que os valores de propriedade sejam armazenados no design do site (/etc/designs/mywebsite):
+Crie um componente que exiba o logotipo da empresa e forneça um link para a página inicial do site. O componente contém uma caixa de diálogo no modo de design para que os valores de propriedade sejam armazenados no design do site (/etc/designs/mywebsite):
 
-* Os valores da propriedade se aplicam a todas as instâncias do componente que são adicionadas a páginas que usam o design.
-* As propriedades podem ser configuradas usando qualquer instância do componente que esteja em uma página que use o design.
+* Os valores de propriedade se aplicam a todas as instâncias do componente que são adicionadas às páginas que usam o design.
+* As propriedades podem ser configuradas usando qualquer instância do componente que esteja em uma página que usa o design.
 
-A caixa de diálogo do modo de design contém propriedades para definir a imagem e o caminho do link. O componente de logotipo será colocado no lado superior esquerdo de todas as páginas do site.
+Sua caixa de diálogo de modo de design contém propriedades para configurar a imagem e o caminho do link. O componente de logotipo será colocado no lado superior esquerdo de todas as páginas do site.
 
-Ele terá a seguinte aparência:
+Terá a seguinte aparência:
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
 >[!NOTE]
 >
->O Adobe Experience Manager fornece um componente de logotipo mais completo ( `/libs/foundation/components/logo`).
+>A Adobe Experience Manager fornece um componente de logotipo com mais recursos ( `/libs/foundation/components/logo`).
 
-#### Criação do nó do componente de logotipo {#creating-the-logo-component-node}
+#### Criação do nó do componente de Logotipo {#creating-the-logo-component-node}
 
 Para criar o componente de logotipo, siga as etapas:
 
-1. No CRXDE Lite, clique com o botão direito do mouse em /apps/mywebsite/components, selecione **Criar**, em seguida **Criar componente**.
-1. Na caixa de diálogo Criar componente , digite os seguintes valores de propriedade e clique em Próximo:
+1. No CRXDE Lite, clique com o botão direito do mouse em /apps/mywebsite/components, selecione **Criar**, depois **Criar componente**.
+1. Na caixa de diálogo Criar componente, insira os seguintes valores de propriedade e clique em Próximo:
 
    * Etiqueta: `logo`.
    * Título: `My Logo Component`.
    * Descrição: `This is My Logo Component`.
 
-1. Clique em Avançar até acessar o painel final da caixa de diálogo e clique em **OK**.
+1. Clique em Avançar até chegar ao painel final da caixa de diálogo e clique em **OK**.
 
-#### Criação do script do logotipo {#creating-the-logo-script}
+#### Criação do script de logotipo {#creating-the-logo-script}
 
-Esta seção descreve como criar o script para exibir a imagem do logotipo com um link para a página inicial.
+Esta seção descreve como criar o script para exibir a imagem de logotipo com um link para a página inicial.
 
-1. No CRXDE Lite, abra o arquivo `logo.jsp` under `/apps/mywebsite/components/logo`.
+1. No CRXDE Lite, abra o arquivo `logo.jsp` em `/apps/mywebsite/components/logo`.
 1. O código a seguir cria o link para a página inicial do site e adiciona uma referência à imagem do logotipo. Copie o código para `logo.jsp`:
 
    ```xml
@@ -908,30 +908,30 @@ Esta seção descreve como criar o script para exibir a imagem do logotipo com u
 
 1. Salve as alterações.
 
-#### Criação da caixa de diálogo Design do logotipo {#creating-the-logo-design-dialog}
+#### Criando a caixa de diálogo Design do logotipo {#creating-the-logo-design-dialog}
 
-Crie a caixa de diálogo para configurar o componente do logotipo no modo Design . Os nós de diálogo do modo de design devem ser nomeados `design_dialog`.
+Crie a caixa de diálogo para configurar o componente de logotipo no modo Design. Os nós da caixa de diálogo do modo de design devem ser nomeados `design_dialog`.
 
-1. Crie o nó de diálogo sob o componente de logotipo:
+1. Crie o nó da caixa de diálogo sob o componente de logotipo:
 
    1. Clique com o botão direito do mouse no `/apps/mywebsite/components/logo` e clique em **Criar** > **Criar caixa de diálogo**.
 
    1. Digite os seguintes valores de propriedade e clique em OK:
 
-      * **Rótulo:** `design_dialog`
+      * **Etiqueta:** `design_dialog`
 
       * **Título:** `Logo (Design)`
 
 1. Clique com o botão direito do mouse no nó tab1 na ramificação design_dialog e clique em Excluir. Clique em Salvar tudo.
-1. Em `design_dialog/items/items`nó , crie um novo nó chamado `img` de tipo `cq:Widget`. Adicione as seguintes propriedades e clique em Salvar tudo:
+1. No `design_dialog/items/items`crie um novo nó chamado `img` do tipo `cq:Widget`. Adicione as seguintes propriedades e clique em Salvar tudo:
 
    | Nome | Tipo | Valor |
    |---|---|---|
-   | fileNameParameter | Sequência de caracteres | ./imageName |
-   | fileReferenceParameter | Sequência de caracteres | ./imageReference |
-   | name | Sequência de caracteres | ./imagem |
-   | título | Sequência de caracteres | Imagem |
-   | xtype | Sequência de caracteres | html5smartimage |
+   | fileNameParameter | String | ./imageName |
+   | fileReferenceParameter | String | ./imageReference |
+   | name | String | ./imagem |
+   | título | String | Imagem |
+   | xtype | String | html5smartimage |
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
@@ -939,8 +939,8 @@ Crie a caixa de diálogo para configurar o componente do logotipo no modo Design
 
 Crie o script que recupera a imagem do logotipo e a grava na página.
 
-1. Clique com o botão direito do mouse no nó do componente de logotipo e clique em Criar > Criar arquivo para criar o arquivo de script chamado img.GET.java.
-1. Abra o arquivo, copie o seguinte código no arquivo e clique em Salvar tudo:
+1. Clique com o botão direito do mouse no nó do componente do logotipo e clique em Criar > Criar arquivo para criar o arquivo de script chamado img.GET.java.
+1. Abra o arquivo, copie o código a seguir no arquivo e clique em Salvar tudo:
 
 ```java
 package apps.mywebsite.components.logo;
@@ -1008,9 +1008,9 @@ public class img_GET extends AbstractImageServlet {
 }
 ```
 
-#### Adicionar o componente de logotipo ao componente de página de conteúdo {#adding-the-logo-component-to-the-contentpage-component}
+#### Adicionar o componente de Logotipo ao componente de página de conteúdo {#adding-the-logo-component-to-the-contentpage-component}
 
-1. No CRXDE Lite, abra o `left.jsp` under `/apps/mywebsite/components/contentpage file` e localize a seguinte linha de código:
+1. No CRXDE Lite, abra o `left.jsp` em `/apps/mywebsite/components/contentpage file` e localize a seguinte linha de código:
 
    ```xml
    <div>logo</div>
@@ -1023,24 +1023,24 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. Salve as alterações.
-1. No seu navegador, recarregue a página Produtos . O logotipo aparece da seguinte maneira, embora atualmente mostre apenas o link subjacente:
+1. No navegador, recarregue a página Produtos. O logotipo tem a seguinte aparência, embora atualmente mostre apenas o link subjacente:
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
-#### Configuração da imagem do logotipo em uma página {#setting-the-logo-image-in-a-page}
+#### Configuração da imagem de logotipo em uma página {#setting-the-logo-image-in-a-page}
 
-Esta seção descreve como definir uma imagem como logotipo usando a caixa de diálogo Modo de design.
+Esta seção descreve como definir uma imagem como seu logotipo usando a caixa de diálogo do modo de design.
 
-1. Com a página Produtos aberta em seu navegador, clique no botão Design na parte inferior do Sidekick para entrar no modo de design.
+1. Com a página Produtos aberta no navegador, clique no botão Design na parte inferior do Sidekick para entrar no modo de design.
 
    ![](do-not-localize/chlimage_1-1.png)
 
 1. Na barra Design do logotipo, clique em Editar para usar a caixa de diálogo para editar as configurações do componente de logotipo.
-1. Na caixa de diálogo, clique no painel da guia Imagem, procure a imagem do logotipo.png que você extraiu do arquivo mywebsite.zip e clique em OK.
+1. Na caixa de diálogo, clique no painel da guia Imagem, procure a imagem logo.png extraída do arquivo mywebsite.zip e clique em OK.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
-1. Clique no triângulo na barra de título do Sidekick para retornar ao modo Editar .
+1. Clique no triângulo na barra de título do Sidekick para retornar ao modo Editar.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -1048,11 +1048,11 @@ Esta seção descreve como definir uma imagem como logotipo usando a caixa de di
 
    `/etc/designs/mywebsite/jcr:content/contentpage/logo`
 
-### Inclusão do componente de navegação estrutural {#including-the-breadcrumb-component}
+### Inclusão do componente de Navegação estrutural {#including-the-breadcrumb-component}
 
-Nesta seção, você inclui o componente navegação estrutural (trilha), que é um dos componentes fundamentais.
+Nesta seção, você inclui o componente de navegação estrutural (trilha), que é um dos componentes de base.
 
-1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `center.jsp` e substituir:
+1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `center.jsp` e substitua:
 
    ```java
    <div>trail</div>
@@ -1065,15 +1065,15 @@ Nesta seção, você inclui o componente navegação estrutural (trilha), que é
    ```
 
 1. Salve as alterações.
-1. No seu navegador, recarregue o **Produtos 1** página. O componente de trilha tem a seguinte aparência:
+1. No navegador, recarregue o **Produtos 1** página. O componente de trilha tem a seguinte aparência:
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-### Inclusão do componente de título {#including-the-title-component}
+### Inclusão do componente de Título {#including-the-title-component}
 
-Nesta seção, você inclui o componente de título, que é um dos componentes fundamentais.
+Nesta seção, você inclui o componente de título, que é um dos componentes de base.
 
-1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `center.jsp` e substituir:
+1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `center.jsp` e substitua:
 
    ```xml
    <div>title</div>
@@ -1086,17 +1086,17 @@ Nesta seção, você inclui o componente de título, que é um dos componentes f
    ```
 
 1. Salve as alterações.
-1. No seu navegador, recarregue a página Produtos . O componente de título tem a seguinte aparência:
+1. No navegador, recarregue a página Produtos. O componente de título tem a seguinte aparência:
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
-   **Observação**: Você pode definir um Título diferente e o Tipo/Tamanho no modo de edição.
+   **Nota**: é possível definir um Título diferente e o Tipo/Tamanho no modo de edição.
 
-### Inclusão do componente Sistema de parágrafo {#including-the-paragraph-system-component}
+### Incluindo o componente de sistema do parágrafo {#including-the-paragraph-system-component}
 
-O sistema de parágrafo (parsys) é uma parte significativa de um site, pois gerencia uma lista de parágrafos. Ela permite que os autores adicionem componentes de parágrafo à página e fornece estrutura.
+O sistema de parágrafos (parsys) é uma parte significativa de um site, pois gerencia uma lista de parágrafos. Ela permite que os autores adicionem componentes de parágrafo à página e fornece estrutura.
 
-Adicione o componente parsys (um dos componentes fundamentais) ao seu componente contentpage.
+Adicione o componente parsys (um dos componentes de base) ao componente contentpage.
 
 1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `center.jsp` e localize a seguinte linha de código:
 
@@ -1110,34 +1110,34 @@ Adicione o componente parsys (um dos componentes fundamentais) ao seu componente
    <cq:include path="par" resourceType="foundation/components/parsys" />
    ```
 
-1. No seu navegador, atualize a página Produtos . Agora ele tem o componente parsys, o que é visto da seguinte maneira:
+1. No navegador, atualize a página Produtos. Agora ele tem o componente parsys, que é visto da seguinte maneira:
 
    ![chlimage_1-52](assets/chlimage_1-52.png)
 
-### Criação do componente de imagem {#creating-the-image-component}
+### Criação do componente de Imagem {#creating-the-image-component}
 
-Crie um componente que exibe uma imagem no sistema de parágrafo. Para economizar tempo, o componente de imagem é criado como uma cópia do componente de logotipo com algumas alterações de propriedade.
+Crie um componente que exiba uma imagem no sistema de parágrafos. Para economizar tempo, o componente de imagem é criado como uma cópia do componente de logotipo com algumas alterações de propriedade.
 
 >[!NOTE]
 >
->O Adobe Experience Manager fornece um componente de imagem com mais recursos ( `/libs/foundation/components/image`).
+>O Adobe Experience Manager fornece um componente de imagem mais completo ( `/libs/foundation/components/image`).
 
-#### Criação do componente de imagem {#creating-the-image-component-1}
+#### Criação do componente de Imagem {#creating-the-image-component-1}
 
 1. Clique com o botão direito do mouse no `/apps/mywebsite/components/logo` e clique em Copiar.
 1. Clique com o botão direito do mouse no `/apps/mywebsite/components` e clique em Colar.
-1. Clique com o botão direito do mouse no `Copy of logo` , clique em Renomear, exclua o texto existente e digite `image`.
+1. Clique com o botão direito do mouse no `Copy of logo` clique em Renomear, exclua o texto existente e digite `image`.
 
-1. Selecione o `image` nó do componente e altere os seguintes valores de propriedade:
+1. Selecione o `image` e altere os seguintes valores de propriedade:
 
-   * `jcr:title:` Meu componente de imagem.
-   * `jcr:description`: Este é o Meu Componente de Imagem.
+   * `jcr:title:` Componente de Minha imagem.
+   * `jcr:description`: este é o meu componente de imagem.
 
-1. Adicione uma propriedade ao `image` nó com os seguintes valores de propriedade:
+1. Adicionar uma propriedade à variável `image` com os seguintes valores de propriedade:
 
    * Nome: componentGroup
    * Tipo: String
-   * Valor: MeuSite
+   * Valor: MyWebsite
 
 1. Abaixo do `image` , renomeie o `design_dialog` nó para `dialog`.
 
@@ -1175,9 +1175,9 @@ Esta seção descreve como criar o script de imagem.
 
 #### Criação do nó Image cq:editConfig {#creating-the-image-cq-editconfig-node}
 
-O `cq:editConfig` O tipo de nó permite configurar determinados comportamentos dos componentes ao editar suas propriedades.
+A variável `cq:editConfig` O tipo de nó permite configurar determinados comportamentos de componentes ao editar suas propriedades.
 
-Nesta seção, você usa um nó cq:editConfig para permitir que você arraste ativos do Localizador de conteúdo para seu componente de imagem.
+Nesta seção, você usa um nó cq:editConfig para permitir que você arraste ativos do Localizador de conteúdo para o componente de imagem.
 
 1. No CRXDE Lite, no nó /apps/mywebsite/components/image, crie um novo nó da seguinte maneira:
 
@@ -1192,43 +1192,43 @@ Nesta seção, você usa um nó cq:editConfig para permitir que você arraste at
 1. No nó cq:dropTargets, crie um novo nó da seguinte maneira:
 
    * Nome: imagem.
-   * Tipo: nt:unstructured.
+   * Tipo: nt:não estruturado.
 
 1. No CRXDE, defina as propriedades da seguinte maneira:
 
 | Nome | Tipo | Valor |
 |---|---|---|
-| Aceitar | Sequência de caracteres | image/(gif | jpeg | png) |
-| grupos | Sequência de caracteres | media |
-| propertyName | Sequência de caracteres | ./imageReference |
+| Aceitar | String | image/(gif | jpeg | png) |
+| grupos | String | mídia |
+| propertyName | String | ./imageReference |
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
 #### Adição do ícone {#adding-the-icon}
 
-Nesta seção, você adiciona o ícone a ser exibido ao lado do componente de imagem quando ele estiver listado no Sidekick:
+Nesta seção, você adiciona o ícone para aparecer ao lado do componente de imagem quando ele estiver listado no Sidekick:
 
-1. No CRXDE Lite, clique com o botão direito do mouse no arquivo `/libs/foundation/components/image/icon.png` e selecione **Copiar.**
-1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/image` e clique em **Colar**, depois clique em **Salvar tudo**.
+1. No CRXDE Lite, clique com o botão direito no arquivo `/libs/foundation/components/image/icon.png` e selecione **Copiar.**
+1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/image` e clique em **Colar** e, em seguida, clique em **Salvar tudo**.
 
-#### Uso do componente de imagem {#using-the-image-component}
+#### Uso do Componente de imagem {#using-the-image-component}
 
-Nesta seção, você visualizará o **Produtos** e adicione seu componente de imagem ao sistema de parágrafo.
+Nesta seção, você visualizará as **Produtos** e adicione seu componente de imagem ao sistema de parágrafos.
 
-1. No seu navegador, recarregue o **Produtos** página.
-1. No Sidekick, clique no botão **modo de design** ícone .
-1. Clique no botão Editar para editar a caixa de diálogo de design de par.
-1. Na caixa de diálogo, uma lista de **Componentes permitidos** é mostrada; navegue até **MeuSite**, selecione o **Meu componente de imagem** e clique em **Ok.**
+1. No navegador, recarregue o **Produtos** página.
+1. No Sidekick, clique no botão **modo de design** ícone.
+1. Clique no botão Editar para editar a caixa de diálogo de design do par.
+1. Na caixa de diálogo, uma lista de **Componentes permitidos** é exibido; navegue até **MeuSite**, selecione o **Meu componente de imagem** e clique em **OK.**
 1. Retornar para **modo de edição.**
-1. Clique duas vezes no quadro parsys (em **Arraste componentes ou ativos aqui**). O **Inserir novo componente** e **Sidekick** os seletores têm a seguinte aparência:
+1. Clique duas vezes no quadro parsys (ativado **Arraste componentes ou ativos para cá**). A variável **Inserir novo componente** e **Sidekick** os seletores têm a seguinte aparência:
 
    ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
-### Inclusão do componente Barra de ferramentas {#including-the-toolbar-component}
+### Inclusão do componente da barra de ferramentas {#including-the-toolbar-component}
 
-Nesta seção, você inclui o componente da barra de ferramentas, que é um dos componentes fundamentais.
+Nesta seção, você inclui o componente Barra de ferramentas, que é um dos componentes de base.
 
-Há várias opções, no modo de edição e também no modo de design.
+Há várias opções, no modo de edição e no modo de design.
 
 1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o `body.jsp` e localize o seguinte código:
 
@@ -1236,58 +1236,58 @@ Há várias opções, no modo de edição e também no modo de design.
    <div class="toolbar">toolbar</div>
    ```
 
-1. Substitua esse código pelo seguinte código e salve as alterações.
+1. Substitua esse código pelo código a seguir e salve as alterações.
 
    ```java
    <cq:include path="toolbar" resourceType="foundation/components/toolbar"/>
    ```
 
-1. Na árvore de pastas da página Sites AEM, selecione Sites/Meu site/Inglês e clique em Novo > Nova página. Especifique os seguintes valores de propriedade e clique em Criar:
+1. Na árvore de pastas da página Sites do AEM, selecione Sites/Meu site/Inglês e clique em Novo > Nova página. Especifique os seguintes valores de propriedade e clique em Criar:
 
    * Título: Barra de ferramentas
-   * Selecionar o modelo da página de conteúdo do meu site
+   * Selecionar Modelo de Página de Conteúdo do Meu Site
 
 1. Na lista de páginas, clique com o botão direito do mouse na página Barra de ferramentas e clique em Propriedades. Selecione Ocultar na navegação e clique em OK.
 
-   A opção Ocultar na navegação impede que a página seja exibida em componentes de navegação, como topnav e listchildren.
+   A opção Ocultar na navegação impede que a página apareça em componentes de navegação, como navegação superior e listchildren.
 
-1. Em Barra de ferramentas, crie as seguintes páginas:
+1. Na Barra de ferramentas, crie as seguintes páginas:
 
    * Contatos
    * Feedback
    * Logon
    * Pesquisar
 
-1. No seu navegador, recarregue a página Produtos . Tem a seguinte aparência:
+1. No navegador, recarregue a página Produtos. Ela tem a seguinte aparência:
 
    ![chlimage_1-55](assets/chlimage_1-55.png)
 
-### Criação do componente de pesquisa {#creating-the-search-component}
+### Criação do componente de Pesquisa {#creating-the-search-component}
 
-Nesta seção, você cria o componente para procurar conteúdo no site. Esse componente de pesquisa pode ser colocado no sistema de parágrafo de qualquer página (por exemplo, em uma página de resultados de pesquisa especializada).
+Nesta seção, você cria o componente para pesquisar conteúdo no site. Esse componente de pesquisa pode ser colocado no sistema de parágrafo de qualquer página (por exemplo, em uma página de resultados de pesquisa especializada).
 
-Sua caixa de entrada de pesquisa terá a seguinte aparência **Inglês** página:
+Sua caixa de entrada de pesquisa será exibida da seguinte maneira no **Inglês** página:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-#### Criação do componente de pesquisa {#creating-the-search-component-1}
+#### Criação do componente de Pesquisa {#creating-the-search-component-1}
 
-1. No CRXDE Lite, clique com o botão direito do mouse `/apps/mywebsite/components`, selecione **Criar**, em seguida **Criar componente**.
+1. No CRXDE Lite, clique com o botão direito do mouse em `/apps/mywebsite/components`, selecione **Criar**, depois **Criar componente**.
 1. Use a caixa de diálogo para configurar o componente:
 
-   1. Um primeiro painel, especifique os seguintes valores de propriedade:
+   1. Em um primeiro painel, especifique os seguintes valores de propriedade:
 
       * Rótulo: pesquisa
       * Título: Meu componente de pesquisa
-      * Descrição: Este é o meu componente de pesquisa
+      * Descrição: Este é meu componente de pesquisa
       * Grupo: MeuSite
-   1. Clique em Next (Avançar) e, em seguida, clique em Next (Avançar) novamente.
-   1. No painel Pais permitidos , clique no botão + e digite `*/parsys`.
+   1. Clique em Avançar e, em seguida, clique em Avançar novamente.
+   1. No painel Pais permitidos, clique no botão + e digite `*/parsys`.
    1. Clique em Avançar e em OK.
 
 
 1. Clique em Salvar tudo.
-1. Copie os seguintes nós e cole-os no nó apps/mywebsite/components/search :
+1. Copie os nós a seguir e cole-os no nó apps/mywebsite/components/search:
 
    * `/libs/foundation/components/search/dialog`
    * `` `/libs/foundation/components/search/i18n`
@@ -1454,17 +1454,17 @@ Esta seção descreve como criar o script de pesquisa:
 
 1. Salve as alterações.
 
-#### Inclusão de uma caixa de pesquisa no componente Página de conteúdo {#including-a-search-box-in-the-contentpage-component}
+#### Inclusão de uma caixa de pesquisa no componente Contentpage {#including-a-search-box-in-the-contentpage-component}
 
 Para incluir uma caixa de entrada de pesquisa na seção esquerda da página de conteúdo, proceda da seguinte maneira:
 
-1. No CRXDE Lite, abra o arquivo `left.jsp` under `/apps/mywebsite/components/contentpage` e localize o seguinte código (linha 2):
+1. No CRXDE Lite, abra o arquivo `left.jsp` em `/apps/mywebsite/components/contentpage` e localize o seguinte código (linha 2):
 
    ```xml
    %><div class="left">
    ```
 
-1. Insira o seguinte código **before** essa linha:
+1. Insira o código a seguir **antes** essa linha:
 
    ```java
    %><%@ page import="com.day.text.Text"%><%
@@ -1478,7 +1478,7 @@ Para incluir uma caixa de entrada de pesquisa na seção esquerda da página de 
    <div>search</div>
    ```
 
-1. Substitua esse código pelo seguinte código e salve as alterações.
+1. Substitua esse código pelo código a seguir e salve as alterações.
 
    ```java
    <div class="form_1">
@@ -1491,34 +1491,34 @@ Para incluir uma caixa de entrada de pesquisa na seção esquerda da página de 
    </div>
    ```
 
-1. No seu navegador, recarregue a página Produtos . O componente de pesquisa tem a seguinte aparência:
+1. No navegador, recarregue a página Produtos. O componente de pesquisa tem a seguinte aparência:
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
 
-#### Inclusão do componente de pesquisa na página de pesquisa {#including-the-search-component-in-the-search-page}
+#### Inclusão do componente de Pesquisa na página de Pesquisa {#including-the-search-component-in-the-search-page}
 
-Nesta seção, você adiciona o componente de pesquisa ao sistema de parágrafo.
+Nesta seção, você adiciona o componente de pesquisa ao sistema de parágrafos.
 
-1. No seu navegador, abra a página Pesquisar .
-1. No Sidekick, clique no ícone do modo de design.
-1. No bloco Design de par (abaixo do título Pesquisa), clique em Editar.
-1. Na caixa de diálogo, role para baixo até a  **Meus sites** , selecione **Meu componente de pesquisa** e clique em **OK**.
+1. No navegador, abra a página Pesquisar.
+1. No Sidekick, clique no ícone modo de design.
+1. No bloco Design de par (abaixo do título Pesquisar), clique em Editar.
+1. Na caixa de diálogo, role para baixo até a  **Meus Sites** grupo, selecione **Meu componente de pesquisa** e clique em **OK**.
 1. No Sidekick, clique no triângulo para retornar ao modo de edição.
-1. Arraste o componente Minha pesquisa do Sidekick para o quadro parsys. Tem a seguinte aparência:
+1. Arraste o componente Minha pesquisa do Sidekick para o quadro parsys. Ela tem a seguinte aparência:
 
    ![chlimage_1-58](assets/chlimage_1-58.png)
 
-1. Navegue até a página Produtos . Procure por clientes na caixa de entrada e pressione Enter. Você é redirecionado para a página Pesquisar . Alterne para o modo de visualização: a saída está em um formato semelhante ao seguinte:
+1. Navegue até a página Produtos. Procure por clientes na caixa de entrada e pressione Enter. Você é redirecionado para a página Pesquisar. Alternar para modo de visualização: a saída está em um formato semelhante ao seguinte:
 
    ![chlimage_1-59](assets/chlimage_1-59.png)
 
 ### Inclusão do componente Iparsys {#including-the-iparsys-component}
 
-Nesta seção, você inclui o componente Sistema de parágrafo de herança (iparsys), que é um dos componentes fundamentais. Esse componente permite que você crie uma estrutura de parágrafos em uma página principal e faça com que páginas filhas herdem os parágrafos.
+Nesta seção, você inclui o componente Sistema de parágrafo de herança (iparsys), que é um dos componentes de base. Esse componente permite criar uma estrutura de parágrafos em uma página principal e fazer com que as páginas secundárias herdem os parágrafos.
 
-Para esse componente, você pode definir vários parâmetros no modo de edição e no modo de design.
+Para este componente, você pode definir vários parâmetros nos modos de edição e design.
 
-1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `right.jsp` e substituir:
+1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `right.jsp` e substitua:
 
    ```java
    <div>iparsys</div>
@@ -1531,6 +1531,6 @@ Para esse componente, você pode definir vários parâmetros no modo de edição
    ```
 
 1. Salve as alterações.
-1. No seu navegador, recarregue a página** Produtos*. A página inteira tem a seguinte aparência:
+1. No navegador, recarregue a página ** Produtos **. A página inteira se parece com o seguinte:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

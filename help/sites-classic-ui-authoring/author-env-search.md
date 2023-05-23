@@ -22,76 +22,76 @@ O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteú
 
 >[!NOTE]
 >
->Fora do ambiente de criação, outros mecanismos também estão disponíveis para pesquisa, como o [Query Builder](/help/sites-developing/querybuilder-api.md) e [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Fora do ambiente de criação, outros mecanismos também estão disponíveis para pesquisa, como o [Construtor de consulta](/help/sites-developing/querybuilder-api.md) e [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Noções básicas de pesquisa {#search-basics}
 
-Para acessar o painel de pesquisa, clique no botão **Pesquisar** na parte superior do painel esquerdo do console adequado.
+Para acessar o painel de pesquisa, clique no link **Pesquisar** na parte superior do painel esquerdo do console apropriado.
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
 O painel de pesquisa permite pesquisar em todas as páginas do site. Ele contém campos e widgets para o seguinte:
 
-* **Texto completo**: Procurar o texto especificado
-* **Modificado após/antes**: Pesquisar apenas as páginas que foram alteradas entre as datas específicas
-* **Modelo**: Pesquisar apenas as páginas com base no modelo especificado
-* **Tags**: Pesquisar apenas as páginas com as tags especificadas
+* **Texto completo**: Procure o texto especificado
+* **Modificado antes/depois**: Pesquise somente as páginas que foram alteradas entre as datas específicas
+* **Modelo**: Pesquise somente as páginas com base no modelo especificado
+* **Tags**: pesquisa somente nas páginas com as tags especificadas
 
 >[!NOTE]
 >
->Quando sua instância estiver configurada para [Pesquisa de Lucene](/help/sites-deploying/queries-and-indexing.md) você pode usar o seguinte em **Texto completo**:
+>Quando sua instância é configurada para [Pesquisa Lucene](/help/sites-deploying/queries-and-indexing.md) você pode usar o seguinte no **Texto completo**:
 >
 >* [Curingas](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [Operadores booleanos](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
 >
 >* [Expressões regulares](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
->* [Agrupamento de campo](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
->* [Promover](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
+>* [Agrupamento de campos](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
+>* [Impulsionando](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
 >
 
 
-Execute a pesquisa clicando em **Pesquisar** na parte inferior do painel. Clique em **Redefinir** para apagar os critérios de pesquisa.
+Execute a pesquisa clicando em **Pesquisar** na parte inferior do painel. Clique em **Redefinir** para limpar os critérios de pesquisa.
 
 ## Filtro {#filter}
 
-Em vários locais, um filtro pode ser definido (e limpo) para detalhar e refinar sua visualização:
+Em vários locais, um filtro pode ser definido (e limpo) para detalhar e refinar sua exibição:
 
 ![chlimage_1-102](assets/chlimage_1-102.png)
 
 ## Localizar e substituir {#find-and-replace}
 
-No **Sites** console a **Localizar e Substituir** A opção de menu permite procurar e substituir várias instâncias de uma sequência em uma seção do site.
+No **Sites** console a **Localizar e substituir** A opção de menu permite pesquisar e substituir várias instâncias de uma cadeia de caracteres em uma seção do site.
 
 1. Selecione a página raiz, ou pasta, onde deseja que a ação localizar e substituir ocorra.
-1. Selecionar **Ferramentas** then **Localizar e Substituir**:
+1. Selecionar **Ferramentas** depois **Localizar e substituir**:
 
    ![screen_shot_2012-02-15at120346pm](assets/screen_shot_2012-02-15at120346pm.png)
 
-1. O **Localizar e Substituir** O faz o seguinte:
+1. A variável **Localizar e substituir** faz o seguinte:
 
-   * confirma o caminho raiz onde a ação localizar deve iniciar
+   * confirma o caminho raiz no qual a ação localizar deve começar
    * define o termo a ser encontrado
    * define o termo que deve substituí-lo
    * indica se a pesquisa deve diferenciar maiúsculas de minúsculas
-   * indica se apenas palavras inteiras devem ser encontradas (caso contrário, subsequências também são encontradas)
+   * indica se somente palavras inteiras devem ser encontradas (caso contrário, as subsequências de caracteres também serão encontradas)
 
-   Clicar **Visualizar** lista onde o termo foi encontrado. Você pode selecionar/desmarcar as instâncias específicas que serão substituídas:
+   Clicando **Visualizar** listas em que o termo foi encontrado. Você pode selecionar/limpar instâncias específicas a serem substituídas:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
-1. Clique em **Substituir** para substituir efetivamente todas as instâncias. Você receberá uma solicitação para confirmar a ação.
+1. Clique em **Substituir** para substituir todas as instâncias. Você receberá uma solicitação para confirmar a ação.
 
-O escopo padrão do servlet localizar e substituir abrange as seguintes propriedades:
+O escopo padrão para o servlet localizar e substituir abrange as seguintes propriedades:
 
 * `jcr:title`
 * `jcr:description`
 * `jcr:text`
 * `text`
 
-O escopo pode ser alterado usando o Console de Gerenciamento da Web Apache Felix (por exemplo, em `https://localhost:4502/system/console/configMgr`). Selecionar `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` e configure o escopo conforme necessário.
+O escopo pode ser alterado usando o Console de gerenciamento Web Apache Felix (por exemplo, em `https://localhost:4502/system/console/configMgr`). Selecionar `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` e configure o escopo conforme necessário.
 
 >[!NOTE]
 >
->Em uma instalação padrão do AEM, a opção Localizar e substituir usa Lucene para a funcionalidade de pesquisa.
+>Em uma instalação padrão do AEM, Localizar e substituir usa Lucene para a funcionalidade de pesquisa.
 >
->Lucene indexa propriedades de sequência de até 16k de comprimento. As sequências que passarem disso não serão pesquisadas.
+>O Lucene indexa propriedades de sequência de caracteres de até 16k de comprimento. Cadeias de caracteres acima desse valor não serão pesquisadas.

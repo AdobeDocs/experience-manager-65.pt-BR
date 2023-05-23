@@ -10,20 +10,20 @@ hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
 workflow-type: tm+mt
 source-wordcount: '580'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
-# Visualizar ativos 3D no Adobe Experience Manager {#previewing-3d-assets-aem}
+# Pré-visualizar ativos 3D no Adobe Experience Manager {#previewing-3d-assets-aem}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
-O Experience Manager oferece suporte para upload, delivery e visualização interativa de ativos 3D como parte do processo de criação.
+O Experience Manager é compatível com upload, entrega e pré-visualização interativa de ativos 3D como parte do processo de criação.
 
-O visualizador 3D interativo está disponível na página de detalhes do ativo no Experience Manager. O visualizador inclui, entre outras coisas, uma coleção de controles interativos de câmera que permitem que você orbite, amplie e desloque o ativo 3D.
+O visualizador 3D interativo está disponível na página de detalhes do ativo no Experience Manager. O visualizador inclui, entre outras coisas, uma coleção de controles de câmera interativos que permitem girar, aplicar zoom e deslocar o ativo 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
@@ -31,18 +31,18 @@ O visualizador 3D interativo está disponível na página de detalhes do ativo n
 
 A visualização 3D interativa é compatível com os seguintes formatos de arquivo:
 
-| extensão de arquivo 3D | Formato de arquivo | Tipo MIME | Notas |
+| Extensão de arquivo 3D | Formato de arquivo | Tipo MIME | Notas |
 |---|---|---|---|
-| GLB | Transmissão binária GL | modelo/gltf-binário |  |
-| GLTF | Formato de transmissão GL | model/gltf+json | Consulte **Observação** abaixo. |
-| OBJ | Arquivo de objeto 3D WaveFront | application/x-tgif |  |
+| GLB | Transmissão GL Binária | model/gltf-binary |  |
+| GLTF | Formato de Transmissão GL | model/gltf+json | Consulte **Nota** abaixo. |
+| OBJ | Arquivo de objeto 3D do WaveFront | application/x-tgif |  |
 | STL | Estereolitografia | application/vnd.ms-pki.stl |  |
-| DN | Adobe Dimension | model/x-adobe-dn | Suporte apenas para ingestão; visualização não disponível. |
-| USDZ | Arquivo Zip de descrição da cena universal | model/vnd.usdz+zip | Suporte apenas para ingestão; visualização não disponível. |
+| DN | Adobe Dimension | model/x-adobe-dn | Suporte somente para assimilação; visualização não disponível. |
+| USDZ | Arquivo Zip de Descrição de Cena Universal | model/vnd.usdz+zip | Suporte somente para assimilação; visualização não disponível. |
 
 >[!NOTE]
 >
->Se os materiais não forem renderizados na visualização de um modelo GLTF, certifique-se de que eles sejam nomeados corretamente e em um `textures` na mesma pasta raiz do modelo, semelhante ao seguinte:
+>Se os materiais não renderizam na pré-visualização de um modelo gLTF, certifique-se de que sejam nomeados corretamente e em uma `textures` pasta na mesma pasta raiz do modelo, semelhante ao seguinte:
 
     Ativo (pasta)
     model.gltf
@@ -51,17 +51,17 @@ A visualização 3D interativa é compatível com os seguintes formatos de arqui
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Considerações de desempenho ao visualizar ativos 3D no Experience Manager{#performance-3d-previewing-assets}
+## Considerações de desempenho ao pré-visualizar ativos 3D no Experience Manager{#performance-3d-previewing-assets}
 
 O tempo necessário para abrir um ativo 3D na página de visualização de detalhes do ativo depende de vários fatores, como largura de banda, complexidade da imagem e latências para o servidor.
 
-Além disso, os recursos do computador cliente - como uma estação de trabalho, um notebook ou um dispositivo de toque móvel - também são importantes a serem considerados ao manipular a câmera interativamente. Um sistema bastante poderoso com bons recursos gráficos pode tornar a experiência interativa de visualização em 3D mais fácil e favorável.
+Além disso, os recursos do computador cliente - como estação de trabalho, notebook ou dispositivo de toque móvel - também são importantes ao manipular a câmera interativamente. Um sistema razoavelmente eficiente com boas capacidades gráficas pode tornar a experiência de visualização 3D interativa mais suave e favorável.
 
 **Para visualizar ativos 3D no Experience Manager:**
 
-1. Certifique-se de ter carregado ativos 3D no Experience Manager.
+1. Verifique se você carregou ativos 3D no Experience Manager.
 Consulte [Formatos compatíveis com a visualização 3D](#supported-3d-previewing-assets) e [Fazer upload de ativos](/help/assets/manage-assets.md#uploading-assets).
-1. De Experience Manager, no **[!UICONTROL Navegação]** página, selecione **[!UICONTROL Ativos]** > **[!UICONTROL Arquivos]**.
+1. Do Experience Manager, no **[!UICONTROL Navegação]** selecione **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]**.
 
    ![Página de navegação](/help/assets/assets-dm/navigation-assets.png)
 
@@ -72,17 +72,17 @@ Consulte [Formatos compatíveis com a visualização 3D](#supported-3d-previewin
 
 1. Selecione o cartão do ativo 3D.
 
-   ![Visualização 3D interativa](/help/assets/assets-dm/3d-preview.png)
-   _Visualização interativa de um ativo 3D na página de visualização de detalhes do ativo._
-1. Na página de exibição de detalhes do ativo para o ativo 3D, siga um destes procedimentos:
+   ![Visualização interativa em 3D](/help/assets/assets-dm/3d-preview.png)
+   _Visualização interativa de um ativo 3D na página de exibição de detalhes do ativo._
+1. Na página da exibição Detalhes do ativo do ativo 3D, siga um destes procedimentos:
 
    | Exibir | Descrição | Ação do mouse | Ação da tela de toque |
    | --- | --- | --- | --- |
-   | **Rode a câmera** | Gire a visualização em torno da cena 3D e dos objetos. | Clique com o botão esquerdo e arraste. | Pressione com um único dedo e arraste. |
-   | **Deslocar a câmera** | Deslocar a vista para a esquerda, para a direita, para cima ou para baixo. | Clique com o botão direito + arraste. | Pressione com dois dedos e arraste. |
-   | **Zoom da câmera** | Mova para dentro e para fora de áreas na cena 3D. | Roda de rolagem. | Um beliscão de dois dedos. |
-   | **Recenter a câmera** | Insira novamente sua câmera em um ponto em um objeto na cena 3D. | Clique duas vezes. | Toque duas vezes. |
-   | **Redefinir** | Próximo ao canto inferior direito da página, selecione o ícone Redefinir para restaurar o ponto de destino da exibição para o centro do ativo 3D. A redefinição também aproxima ou afasta a câmera para mostrar o ativo inteiro e com um tamanho de visualização razoável. |  |  |
-   | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, selecione o ícone de tela cheia. |  |  |
+   | **Girar a câmera** | Gire a visualização em torno da cena 3D e dos objetos. | Clique com o botão esquerdo + arraste. | Pressione com um dedo + arraste. |
+   | **Deslocar a câmera** | Desloque sua exibição para a esquerda, direita, para cima ou para baixo. | Clique com o botão direito + arraste. | Pressione com dois dedos + arraste. |
+   | **Aplicar zoom à sua câmera** | Mova para dentro e para fora das áreas na cena 3D. | Roda de rolagem. | Pinça de dois dedos. |
+   | **Recentralize sua câmera** | Recentralize sua câmera em um ponto sobre um objeto na cena 3D. | Clique duas vezes em. | Toque duas vezes. |
+   | **Redefinir** | Próximo ao canto inferior direito da página, selecione o ícone Redefinir para restaurar o ponto de destino de exibição para o centro do ativo 3D. A redefinição também move a câmera para mais perto ou mais longe, para mostrar o ativo em sua totalidade e em um tamanho de visualização razoável. |  |  |
+   | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, selecione o ícone Tela cheia. |  |  |
 
 1. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Fechar]**.

@@ -1,7 +1,7 @@
 ---
 title: Baixar um modelo de formulário XFA ou PDF
 seo-title: Download an XFA or a PDF form template
-description: Você pode exportar formulários do repositório para o sistema local e migrar os formulários baixados para o novo repositório.
+description: É possível exportar formulários do repositório para o sistema local e migrar os formulários baixados para um novo repositório.
 seo-description: You can export forms from the repository to the local system and migrate the downloaded forms to new repository.
 uuid: 5f7fbd14-cb9d-4749-8708-7efe49df89d7
 content-type: reference
@@ -19,17 +19,17 @@ ht-degree: 0%
 
 # Baixar um modelo de formulário XFA ou PDF {#download-an-xfa-or-a-pdf-form-template}
 
-A operação de download, como o nome indica, permite exportar formulários do repositório para o sistema local. Em combinação com a operação de upload, essa operação ajuda a migrar os formulários de um repositório para outro.
+A operação de download, como o nome indica, permite exportar formulários do repositório para o sistema local. Em combinação com a operação de upload, essa operação ajuda a migrar seus formulários de um repositório para outro.
 
 No AEM Forms, a operação de download é compatível com os seguintes tipos de ativos:
 
-* Modelos de formulário (Forms XFA)
+* Modelos de formulário (XFA Forms)
 * PDF forms
-* Documentos (arquivos PDF simples)
+* Documentos (arquivos de PDF simples)
 
-O AEM Forms suporta o download desses tipos de formulário individualmente ou em uma pasta que contenha um ou mais formulários compatíveis.
+O AEM Forms permite o download desses tipos de formulário individualmente ou em uma pasta que contenha um ou mais formulários compatíveis.
 
-Além desses ativos, você pode baixar a variável `Resource` tipo de ativo se ele estiver presente em uma pasta. Essa funcionalidade é fornecida para permitir o download do recurso mencionado por um formulário XFA junto com o formulário.
+Além desses ativos, você pode baixar o `Resource` tipo de ativo se ele estiver presente em uma pasta. Essa funcionalidade é fornecida para permitir que você baixe o recurso referido por um formulário XFA junto com o formulário.
 
 ## Baixar um ou mais formulários {#download-one-or-more-forms}
 
@@ -37,7 +37,7 @@ Além desses ativos, você pode baixar a variável `Resource` tipo de ativo se e
 
 1. Navegue até o local do ativo que deseja baixar.
 
-1. Selecione o ativo. Clique no botão **[!UICONTROL Baixar]** ![aem6forms_download](assets/aem6forms_download.png) na barra de ferramentas.
+1. Selecione o ativo. Clique em **[!UICONTROL Baixar]** ![aem6forms_download](assets/aem6forms_download.png) na barra de ferramentas.
 
    >[!NOTE]
    >
@@ -47,12 +47,12 @@ Além desses ativos, você pode baixar a variável `Resource` tipo de ativo se e
 
    O AEM Forms gera um arquivo ZIP contendo o arquivo selecionado ou a pasta selecionada.
 
-   Se você estiver baixando uma pasta, os ativos suportados dentro da pasta serão baixados na hierarquia existente.
+   Se você estiver baixando uma pasta, os ativos compatíveis dentro da pasta serão baixados em sua hierarquia existente.
 
-   O arquivo ZIP é salvo no `Downloads` no seu sistema.
+   O arquivo ZIP é salvo no `Downloads` pasta no seu sistema.
 
 ## Considerações relacionadas para a operação de upload {#related-considerations-for-the-upload-operation}
 
-* Você pode fazer upload do arquivo ZIP para qualquer outro local no mesmo repositório ou em outro
+* Você pode fazer upload do arquivo ZIP para qualquer outro local no mesmo repositório ou em outro repositório
 * A hierarquia dos ativos em uma pasta é retida durante a operação de upload
-* Quaisquer alterações de metadados feitas nos ativos baixados antes do download são refletidas no upload
+* Todas as alterações de metadados feitas nos ativos baixados antes do download são refletidas no upload

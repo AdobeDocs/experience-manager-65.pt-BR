@@ -1,7 +1,7 @@
 ---
-title: Roteamento do Modelo de SPA
+title: Roteamento de modelo SPA
 seo-title: SPA Model Routing
-description: Para aplicativos de página única no AEM, o aplicativo é responsável pelo roteamento. Este documento descreve o mecanismo de roteamento, o contrato e as opções disponíveis.
+description: Para aplicativos de página única no AEM, o aplicativo é responsável pelo roteamento. Este documento descreve o mecanismo de encaminhamento, o contrato e as opções disponíveis.
 seo-description: For single page applications in AEM, the app is responsible for the routing. This document describes the routing mechanism, the contract, and options available.
 uuid: 93b4f85a-a240-42d4-95e2-e8b790df7723
 contentOwner: bohnert
@@ -17,53 +17,53 @@ ht-degree: 0%
 
 ---
 
-# Roteamento do Modelo de SPA{#spa-model-routing}
+# Roteamento de modelo SPA{#spa-model-routing}
 
-Para aplicativos de página única no AEM, o aplicativo é responsável pelo roteamento. Este documento descreve o mecanismo de roteamento, o contrato e as opções disponíveis.
+Para aplicativos de página única no AEM, o aplicativo é responsável pelo roteamento. Este documento descreve o mecanismo de encaminhamento, o contrato e as opções disponíveis.
 
 >[!NOTE]
 >
->O Editor de SPA é a solução recomendada para projetos que exigem renderização do lado do cliente baseada em SPA estrutura (por exemplo, Reagir ou Angular).
+>O Editor de SPA é a solução recomendada para projetos que exigem renderização no lado do cliente baseada na estrutura SPA (por exemplo, React ou Angular).
 
 ## Roteamento do projeto {#project-routing}
 
-O aplicativo é proprietário do roteamento e é implementado pelos desenvolvedores de front-end do projeto. Este documento descreve o roteamento específico para o modelo retornado pelo servidor AEM. A estrutura de dados do modelo de página expõe o URL do recurso subjacente. O projeto front-end pode usar qualquer biblioteca personalizada ou de terceiros que forneça funcionalidades de roteamento. Quando uma rota espera um fragmento de modelo, uma chamada para a variável `PageModelManager.getData()` pode ser feita. Quando uma rota de modelo é alterada, um evento deve ser acionado para avisar as bibliotecas de escuta, como o Editor de páginas.
+O aplicativo é o proprietário do roteamento e é implementado pelos desenvolvedores de front-end do projeto. Este documento descreve o roteamento específico para o modelo retornado pelo servidor AEM. A estrutura de dados do modelo de página expõe o URL do recurso subjacente. O projeto de front-end pode usar qualquer biblioteca personalizada ou de terceiros fornecendo funcionalidades de roteamento. Quando uma rota espera um fragmento de modelo, uma chamada para o `PageModelManager.getData()` função pode ser feita. Quando uma rota de modelo é alterada, um evento deve ser acionado para avisar as bibliotecas de escuta, como o Editor de páginas.
 
 ## Arquitetura {#architecture}
 
 Para obter uma descrição detalhada, consulte o [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) seção do documento Blueprint SPA.
 
-## ModelRouter {#modelrouter}
+## RoteadorModelo {#modelrouter}
 
-O `ModelRouter` - quando ativado - encapsula as funções da API do Histórico do HTML5 `pushState` e `replaceState` para garantir que um determinado fragmento do modelo seja buscado e acessível previamente. Em seguida, notifica o componente front-end registrado de que o modelo foi modificado.
+A variável `ModelRouter` - quando ativado - encapsula as funções da API do histórico do HTML5 `pushState` e `replaceState` para garantir que determinado fragmento de modelo seja buscado previamente e acessível. Em seguida, notifica o componente de front-end registrado de que o modelo foi modificado.
 
-## Roteamento Manual vs Automático de Modelo {#manual-vs-automatic-model-routing}
+## Roteiro de Modelo Manual vs. Automático {#manual-vs-automatic-model-routing}
 
-O `ModelRouter` automatiza a busca de fragmentos do modelo. Mas como qualquer ferramenta automatizada, ela tem limitações. Quando necessário `ModelRouter` pode ser desativado ou configurado para ignorar caminhos usando propriedades meta (consulte a seção Propriedades Meta do [Componente Página SPA](/help/sites-developing/spa-page-component.md) documento). Os desenvolvedores de front-end podem implementar sua própria camada de roteamento de modelo, solicitando a `PageModelManager` para carregar qualquer fragmento específico do modelo usando o `getData()` .
+A variável `ModelRouter` O automatiza a busca de fragmentos do modelo. Mas, como qualquer ferramenta automatizada, há limitações. Quando necessário, a variável `ModelRouter` podem ser desativadas ou configuradas para ignorar caminhos usando metapropriedades (Consulte a seção Metapropriedades do [Componente de página do SPA](/help/sites-developing/spa-page-component.md) documento). Os desenvolvedores de front-end podem então implementar sua própria camada de roteamento de modelo, solicitando a `PageModelManager` para carregar um determinado fragmento de modelo usando o `getData()` função.
 
 >[!NOTE]
 >
->O [We.Retail Journal](https://github.com/adobe/aem-sample-we-retail-journal) o projeto React de amostra ilustra a abordagem automatizada, enquanto o projeto do Angular ilustra a abordagem manual. Uma abordagem semiautomatizada seria também um caso de uso válido.
+>A variável [Diário do We.Retail](https://github.com/adobe/aem-sample-we-retail-journal) exemplo O projeto React ilustra a abordagem automatizada, enquanto o projeto Angular ilustra a manual. Uma abordagem semiautomatizada também seria um caso de uso válido.
 
 >[!CAUTION]
 >
->A versão atual do `ModelRouter` suporta apenas o uso de URLs que apontem para o caminho de recurso real dos pontos de entrada do Modelo do Sling. Não é compatível com o uso de URLs ou aliases personalizados.
+>A versão atual do `ModelRouter` suportam apenas o uso de URLs que apontam para o caminho real do recurso dos pontos de entrada do Modelo Sling. Ele não é compatível com o uso de URLs ou aliases personalizados.
 
-## Contrato de Roteamento {#routing-contract}
+## Contrato de Encaminhamento {#routing-contract}
 
-A implementação atual baseia-se na hipótese de que o projeto de SPA usa a API do Histórico do HTML5 para rotear para as diferentes páginas do aplicativo.
+A implementação atual baseia-se no pressuposto de que o projeto SPA usa a API de Histórico HTML5 para roteamento para as diferentes páginas de aplicativos.
 
 ### Configuração {#configuration}
 
-O `ModelRouter` suporta o conceito de roteamento de modelo como ele escuta `pushState` e `replaceState` chamadas para buscar fragmentos de modelo previamente. Internamente, ele dispara a função `PageModelManager` para carregar o modelo que corresponde a um determinado URL e dispara um `cq-pagemodel-route-changed` evento que outros módulos podem ouvir.
+A variável `ModelRouter` O suporta o conceito de roteamento de modelo conforme ele escuta `pushState` e `replaceState` chamadas para buscar previamente fragmentos do modelo. Internamente, ele aciona o `PageModelManager` para carregar o modelo que corresponde a um determinado URL e acionar um `cq-pagemodel-route-changed` evento que outros módulos podem ouvir.
 
-Por padrão, esse comportamento é ativado automaticamente. Para desativá-lo, o SPA deve renderizar a seguinte meta propriedade:
+Por padrão, esse comportamento é ativado automaticamente. Para desativá-lo, o SPA deve renderizar a seguinte metapropriedade:
 
 ```
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-Observe que cada rota do SPA deve corresponder a um recurso acessível em AEM (por exemplo, &quot; `/content/mysite/mypage"`) desde a `PageModelManager` O tentará carregar automaticamente o modelo de página correspondente depois que a rota for selecionada. Embora, se necessário, o SPA também possa definir uma &quot;lista de bloqueios&quot; de rotas que devem ser ignoradas pelo `PageModelManager`:
+Observe que cada rota do SPA deve corresponder a um recurso acessível no AEM (por exemplo, &quot; `/content/mysite/mypage"`), uma vez que `PageModelManager` O tentará carregar automaticamente o modelo de página correspondente quando a rota for selecionada. Embora, se necessário, o SPA também possa definir uma &quot;lista de bloqueios&quot; de rotas que devem ser ignoradas pelo `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

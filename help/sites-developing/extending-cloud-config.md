@@ -27,12 +27,12 @@ As configurações são projetadas para fornecer a lógica e a estrutura para ar
 
 Os princípios usados no desenvolvimento das configurações foram baseados nos seguintes conceitos:
 
-* Os serviços/adaptadores são usados para recuperar as configurações.
-* As configurações (por exemplo, propriedades/parágrafos) são herdadas dos pais.
+* Serviços/adaptadores são usados para recuperar as configurações.
+* As configurações (por exemplo, propriedades/parágrafos) são herdadas do(s) pai(s).
 * Referenciado a partir de nós do Analytics por caminho.
 * Facilmente extensível.
 * Tem flexibilidade para atender a configurações mais complexas, como [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Suporte para dependências (por exemplo, [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) os plug-ins precisam de um [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) configuração).
+* Suporte para dependências (por exemplo, [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) Os plug-ins do precisam de um [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) configuração).
 
 ## Estrutura {#structure}
 
@@ -40,20 +40,20 @@ O caminho base das configurações é:
 
 `/etc/cloudservices`.
 
-Para cada tipo de configuração, um modelo e um componente serão fornecidos.Isso possibilita ter modelos de configuração que podem atender à maioria das necessidades após serem personalizados.
+Para cada tipo de configuração, será fornecido um modelo e um componente. Isso possibilita ter modelos de configuração que podem atender à maioria das necessidades após a personalização.
 
-Para fornecer uma configuração para novos serviços, você precisa:
+Para fornecer uma configuração para novos serviços, é necessário:
 
-* criar uma página de serviço em
+* criar uma página de serviço no
 
    `/etc/cloudservices`
 
-* nesta rubrica:
+* nesta seção:
 
-   * um template de configuração
+   * um modelo de configuração
    * um componente de configuração
 
-O modelo e o componente devem herdar o `sling:resourceSuperType` do template base:
+O modelo e o componente devem herdar o `sling:resourceSuperType` a partir do modelo base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -71,7 +71,7 @@ Seu modelo estenderá o modelo base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-e defina uma `resourceType` que aponta para o componente personalizado.
+e definir um `resourceType` que aponta para o componente personalizado.
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -94,7 +94,7 @@ sling:resourceType = cq/analytics/components/generictrackerpage
 
 ### Componentes {#components}
 
-Seu componente deve estender o componente base:
+Seu componente deve estender o componente básico:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -104,7 +104,7 @@ Seu componente deve estender o componente base:
 /libs/cq/analytics/components/generictrackerpage
 ```
 
-Após configurar o modelo e o componente, é possível adicionar a configuração adicionando subpáginas em:
+Depois de definir o modelo e o componente, é possível adicionar a configuração adicionando subpáginas em:
 
 `/etc/cloudservices/<service-name>`
 
@@ -124,7 +124,7 @@ O modelo de conteúdo é armazenado como `cq:Page` em:
 As configurações são armazenadas no subnó `jcr:content`.
 
 * As propriedades fixas, definidas em uma caixa de diálogo, devem ser armazenadas no `jcr:node` diretamente.
-* Elementos dinâmicos (usando `parsys` ou `iparsys`) use um subnó para armazenar os dados do componente.
+* Elementos dinâmicos (uso de `parsys` ou `iparsys`) usar um subnó para armazenar os dados do componente.
 
 ```xml
 /etc/cloudservices/service/config/jcr:content as nt:unstructured
@@ -139,32 +139,32 @@ propertyname
 
 Para obter a documentação de referência sobre a API, consulte [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
-### Integração de AEM {#aem-integration}
+### Integração com o AEM {#aem-integration}
 
-Os serviços disponíveis estão listados na variável **Cloud Services** da guia **Propriedades da página** de qualquer página herdada de `foundation/components/page` ou `wcm/mobile/components/page`).
+Os serviços disponíveis estão listados na **Cloud Services** guia do **Propriedades da página** caixa de diálogo (de qualquer página que herde de `foundation/components/page` ou `wcm/mobile/components/page`).
 
 A guia também fornece:
 
-* um link para o local onde você pode ativar o serviço
-* escolha uma configuração (subnó do serviço) de um campo de caminho
+* um link para o local onde você pode habilitar o serviço
+* escolha uma configuração (subnó do serviço) em um campo de caminho
 
 #### Criptografia de senha {#password-encryption}
 
-Ao armazenar credenciais do usuário para o serviço, todas as senhas devem ser criptografadas.
+Ao armazenar credenciais de usuário para o serviço, todas as senhas devem ser criptografadas.
 
-Para isso, adicione um campo de formulário oculto. Este campo deve ter a anotação `@Encrypted` no nome da propriedade; ou seja, para o `password` o nome seria escrito como:
+Você pode fazer isso adicionando um campo de formulário oculto. Este campo deve ter a anotação `@Encrypted` no nome da propriedade; ou seja, para a variável `password` o nome seria escrito como:
 
 `password@Encrypted`
 
-A propriedade será automaticamente criptografada (usando o `CryptoSupport` pela `EncryptionPostProcessor`.
+A propriedade será criptografada automaticamente (usando o `CryptoSupport` serviço) pela `EncryptionPostProcessor`.
 
 >[!NOTE]
 >
->Isso é semelhante ao padrão ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)` anotações.
+>É semelhante ao padrão ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)` anotações.
 
 >[!NOTE]
 >
->Por padrão, a variável `EcryptionPostProcessor` somente criptografia `POST` pedidos apresentados `/etc/cloudservices`.
+>Por padrão, a variável `EcryptionPostProcessor` somente criptografa `POST` pedidos feitos a `/etc/cloudservices`.
 
 #### Propriedades adicionais para a página de serviço jcr:nós de conteúdo {#additional-properties-for-service-page-jcr-content-nodes}
 
@@ -176,7 +176,7 @@ A propriedade será automaticamente criptografada (usando o `CryptoSupport` pela
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Caminho de referência para um componente a ser incluído automaticamente na página.<br /> Isso é usado para funcionalidades adicionais e inclusões de JS.<br /> Isso inclui o componente na página em que<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> é incluída (normalmente antes da variável <code>body</code> tag).<br /> Caso o Analytics e o Target sejam usados para incluir funcionalidades adicionais, como chamadas de JavaScript para rastrear o comportamento do visitante.</td>
+   <td>Caminho de referência para um componente a ser incluído automaticamente na página.<br /> Isso é usado para funcionalidade adicional e inclusões de JS.<br /> Isso inclui o componente na página em que<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> está incluído (normalmente antes da <code>body</code> tag).<br /> No caso do Analytics e do Target, usamos isso para incluir funcionalidades adicionais, como chamadas JavaScript para rastrear o comportamento do visitante.</td>
   </tr>
   <tr>
    <td>descrição</td>
@@ -188,19 +188,19 @@ A propriedade será automaticamente criptografada (usando o `CryptoSupport` pela
   </tr>
   <tr>
    <td>classificação</td>
-   <td>Classificação do serviço para uso em listas.</td>
+   <td>Classificação de serviço para uso em listagens.</td>
   </tr>
   <tr>
-   <td>seletedChildren</td>
-   <td>Filtrar para exibir configurações na caixa de diálogo de propriedades da página.</td>
+   <td>seletableChildren</td>
+   <td>Filtro para exibir configurações na caixa de diálogo de propriedades da página.</td>
   </tr>
   <tr>
    <td>serviceUrl</td>
-   <td>URL para o site do serviço.</td>
+   <td>URL do site de serviço.</td>
   </tr>
   <tr>
    <td>serviceUrlLabel</td>
-   <td>Rótulo do URL de serviço.</td>
+   <td>Rótulo para URL de serviço.</td>
   </tr>
   <tr>
    <td>thumbnailPath</td>

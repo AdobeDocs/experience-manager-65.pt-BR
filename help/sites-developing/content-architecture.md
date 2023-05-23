@@ -1,7 +1,7 @@
 ---
 title: Arquitetura de conteúdo
 seo-title: Content Architecture
-description: Dicas para arquitetar seu conteúdo (dica - tudo é conteúdo)
+description: Dicas para projetar seu conteúdo (dica - tudo é conteúdo)
 seo-description: Tips for architecting your content in Adobe Experience Manager (AEM). (hint - everything is content)
 uuid: fef2bf0f-70ec-4621-8479-a62b7e1fbc07
 contentOwner: User
@@ -21,48 +21,48 @@ ht-degree: 0%
 
 ## Siga o modelo de David {#follow-david-s-model}
 
-O Modelo de David foi escrito por David Nuescheler anos atrás, mas as ideias são verdadeiras hoje. Os principais princípios do Modelo de David são os seguintes:
+O modelo de David foi escrito por David Nuescheler anos atrás, mas as ideias se mantêm verdadeiras hoje. Os principais princípios do Modelo de David são os seguintes:
 
-* Os dados vêm primeiro, estruturam-se depois. Talvez.
+* Os dados vêm primeiro, estruturados depois. Talvez.
 * Direcione a hierarquia de conteúdo, não deixe que isso aconteça.
-* Os espaços de trabalho são para `clone()`, `merge()`e `update()`.
-* Cuidado com irmãos de mesmo nome.
+* Os espaços de trabalho são para `clone()`, `merge()`, e `update()`.
+* Cuidado com os irmãos de mesmo nome.
 * As referências são consideradas prejudiciais.
-* Os arquivos são arquivos.
-* As IDs são más.
+* Arquivos são arquivos.
+* As identidades são más.
 
 O modelo de David pode ser encontrado no wiki do Jackrabbit em [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### Tudo é conteúdo {#everything-is-content}
 
-Tudo deve ser armazenado no repositório em vez de depender de fontes de dados de terceiros separadas, como bancos de dados. Isso se aplica ao conteúdo criado, dados binários como imagens, código, configurações etc. Isso nos permite usar um conjunto de APIs para gerenciar todo o conteúdo e gerenciar a promoção desse conteúdo por meio da replicação. Também obtemos uma única fonte de backup, registro etc.
+Tudo deve ser armazenado no repositório, em vez de depender de fontes de dados separadas de terceiros, como bancos de dados. Isso se aplica ao conteúdo criado, dados binários como imagens, código, configurações etc. Isso nos permite usar um conjunto de APIs para gerenciar todo o conteúdo e gerenciar a promoção desse conteúdo por meio de replicação. Também obtemos uma única fonte de backup, registro etc.
 
-### Usar o princípio de design &quot;modelo de conteúdo primeiro&quot; {#use-the-content-model-first-design-principle}
+### Usar o princípio de design de &quot;modelo de conteúdo primeiro&quot; {#use-the-content-model-first-design-principle}
 
-Ao criar um novo recurso, sempre comece criando a estrutura de conteúdo JCR primeiro e, em seguida, procure ler e gravar seu conteúdo usando os servlets Sling padrão. Isso permitirá garantir que sua implementação funcione bem com mecanismos de controle de acesso prontos para uso e evita gerar servlets desnecessários no estilo CRUD.
+Ao criar um novo recurso, sempre comece criando a estrutura de conteúdo JCR primeiro e, em seguida, examine a leitura e a gravação de conteúdo usando os servlets Sling padrão. Isso garantirá que sua implementação funcione bem com mecanismos de controle de acesso prontos para uso e permitirá que você evite gerar servlets de estilo CRUD desnecessários.
 
-### Seja RESTful {#be-restful}
+### Ser RESTful {#be-restful}
 
-Os servlets devem ser definidos com base em resourceTypes em vez de caminhos. Isso possibilita usar os controles de acesso do JCR, seguir os princípios do REST e usar o resolvedor de recursos e de recursos que são fornecidos a nós na solicitação. Isso também permite alterar os scripts que renderizam URLs no lado do servidor sem precisar alterar quaisquer URLs do lado do cliente, enquanto oculta os detalhes de implementação do lado do servidor do cliente para obter mais segurança.
+Os servlets devem ser definidos com base em resourceTypes em vez de caminhos. Isso permite usar controles de acesso JCR, seguir princípios REST e usar o resolvedor de recursos e recursos fornecidos a nós na solicitação. Isso também permite alterar os scripts que renderizam URLs no lado do servidor sem precisar alterar URLs do lado do cliente, enquanto oculta os detalhes de implementação do lado do servidor do cliente para maior segurança.
 
-### Evite definir novos tipos de nó {#avoid-defining-new-node-types}
+### Evitar a definição de novos tipos de nó {#avoid-defining-new-node-types}
 
-Os tipos de nó funcionam em um nível baixo na camada de infraestrutura e a maioria dos requisitos pode ser atendida usando um sling:resourceType atribuído a um tipo de nó nt:unstructured, oak:Unstructured, sling:Folder ou cq:Page . Os tipos de nó são iguais ao esquema no repositório e a alteração dos tipos de nó pode ser muito cara na estrada.
+Os tipos de nó funcionam em um nível baixo na camada de infraestrutura e a maioria dos requisitos pode ser atendida usando um sling:resourceType atribuído a um tipo de nó nt:unstructured, oak:Unstructured, sling:Folder ou cq:Page. Os tipos de nó equivalentes ao esquema no repositório e a alteração dos tipos de nó pode ser muito dispendiosa.
 
-### Aceitar as convenções de nomenclatura no JCR {#adhere-to-naming-conventions-in-the-jcr}
+### Seguir as convenções de nomenclatura no JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-Aderir às convenções de nomenclatura adicionará consistência à sua base de código, diminuindo a taxa de incidência de defeitos e aumentando a velocidade dos desenvolvedores que trabalham no sistema. As seguintes convenções são usadas pelo Adobe no desenvolvimento de AEM:
+Seguir as convenções de nomenclatura adicionará consistência à sua base de código, reduzindo a taxa de incidência de defeitos e aumentando a velocidade dos desenvolvedores que trabalham no sistema. As seguintes convenções são usadas pelo Adobe no desenvolvimento do AEM:
 
-* Nomes de nó
+* Nomes de nós
 
-   * Todas as minúsculas
-   * Separação de palavras usando hífens
+   * Todas em minúsculas
+   * Separação de palavras usando hifens
 
 * Nomes de propriedades
 
-   * Camel case, começando com letra minúscula
+   * Camel case, começando com uma letra minúscula
 
 * Componentes (JSP/HTML)
 
-   * Todas as minúsculas
-   * Separação de palavras usando hífens
+   * Todas em minúsculas
+   * Separação de palavras usando hifens

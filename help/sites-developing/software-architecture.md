@@ -19,48 +19,48 @@ ht-degree: 0%
 
 # Arquitetura de software{#software-architecture}
 
-## Design para atualizações {#design-for-upgrades}
+## Projeto para atualizações {#design-for-upgrades}
 
-Ao estender os comportamentos do OOTB, é importante ter em mente as atualizações. Sempre aplique personalizações no diretório /apps e sobreponha os nós correspondentes no diretório /libs ou use sling:resourceSuperType para estender o comportamento pronto para uso. Embora algumas modificações possam ser necessárias para oferecer suporte a uma nova versão de AEM, a nova versão não deve substituir as personalizações caso essa prática seja seguida.
+Ao estender comportamentos OOTB, é importante ter as atualizações em mente. Sempre aplique personalizações no diretório /apps e sobreponha a parte superior dos nós correspondentes no diretório /libs ou use sling:resourceSuperType para estender o comportamento pronto para uso. Embora algumas modificações possam ser necessárias para suportar uma nova versão do AEM, a nova versão não deve substituir suas personalizações se essa prática for seguida.
 
-### Reutilizar modelos e componentes sempre que possível {#reuse-template-and-components-when-possible}
+### Reutilizar modelo e componentes quando possível {#reuse-template-and-components-when-possible}
 
-Isso permitirá que o site mantenha uma aparência mais consistente e simplifique a manutenção do código. Quando um novo modelo for necessário, certifique-se de estender de um modelo base compartilhado para que os requisitos globais, como a inclusão clientlib, possam ser codificados em um local. Quando um novo componente for necessário, procure oportunidades para se estender a partir de um componente existente.
+Isso permitirá que o site mantenha uma aparência mais consistente e simplifique a manutenção do código. Quando um novo modelo for necessário, estenda de um modelo base compartilhado para que os requisitos globais, como a inclusão da clientlib, possam ser codificados em um local. Quando um novo componente for necessário, procure oportunidades para estender de um componente existente.
 
 ### Designs de modelo de design {#design-template-designs}
 
-Ao definir quais componentes podem ser incluídos em cada parsys na página, a consistência da aparência do site pode ser controlada. Ao restringir o acesso ao design nas páginas, os &quot;superautores&quot; podem ter permissão para modificar os componentes permitidos por página sem a intervenção do desenvolvedor, garantindo ao mesmo tempo que os outros autores sigam os padrões corporativos.
+Ao definir quais componentes podem ser incluídos em cada parsys na página, a consistência da aparência do site pode ser controlada. Restringindo o acesso ao design nas páginas, os &quot;superautores&quot; podem modificar os componentes permitidos por página sem a intervenção do desenvolvedor e, ao mesmo tempo, garantindo que os outros autores sigam os padrões corporativos.
 
-### Desenvolver uma arquitetura SOLID {#develop-a-solid-architecture}
+### Desenvolver uma arquitetura SÓLIDA {#develop-a-solid-architecture}
 
-O SOLID é um acrônimo que descreve cinco princípios arquitetônicos que devem ser respeitados:
+SOLID é um acrônimo que descreve cinco princípios arquitetônicos que devem ser seguidos:
 
 * **S** Princípio de responsabilidade única - cada módulo, classe, método, etc. deve ter apenas uma responsabilidade.
-* **O** Princípio aberto/fechado - os módulos devem ser abertos para extensão e fechados para modificação.
-* **L** Princípio da substituição iskov - os tipos devem ser substituíveis pelos seus subtipos.
-* **I** Princípio de segmentação da interface - nenhum cliente deve ser forçado a depender de métodos que não usa.
-* **D** Princípio de inversão de dependência - Os módulos de alto nível não devem depender dos módulos de baixo nível. Ambos devem depender de abstrações. As abstrações não devem depender de detalhes. Os detalhes devem depender de abstrações.
+* **O** Princípio de Abertura/Fechamento - os módulos devem ser abertos para extensão e fechados para modificação.
+* **L** Princípio de substituição iskov - os tipos devem ser substituíveis por seus subtipos.
+* **I** Princípio de segmentação de interface - nenhum cliente deve ser forçado a depender de métodos que não usa.
+* **D** Princípio da inversão de dependência - os módulos de alto nível não devem depender dos módulos de baixo nível. Ambos devem depender de abstrações. As abstrações não devem depender de detalhes. Os detalhes devem depender de abstrações.
 
-O cumprimento destes cinco princípios deve conduzir a um sistema que tenha uma separação rigorosa das preocupações.
+O esforço para cumprir esses cinco princípios deve resultar em um sistema que tenha uma separação estrita de preocupações.
 
 >[!TIP]
 >
->O SOLID é um conceito comumente utilizado na programação orientada a objetos e cada elemento é amplamente discutido na literatura do setor.
+>SOLID é um conceito comumente usado em programação orientada a objetos e cada elemento é amplamente discutido na literatura da indústria.
 >
->Este é apenas um breve resumo apresentado para conscientização e você é encorajado a se familiarizar com esses conceitos mais a fundo.
+>Este é apenas um breve resumo apresentado para conscientização e você é incentivado a familiarizar-se com esses conceitos em mais profundidade.
 
-### Siga o princípio da robustez {#follow-the-robustness-principle}
+### Siga o princípio de robustez {#follow-the-robustness-principle}
 
-O Princípio da Robustez afirma que devemos ser conservadores no que enviamos, mas ser liberais no que aceitamos. Em outras palavras, ao enviar mensagens para terceiros, devemos estar em conformidade total com as especificações, mas ao receber mensagens de terceiros, devemos aceitar mensagens não conformes, desde que o significado da mensagem seja claro.
+O Princípio da Robustez afirma que devemos ser conservadores no que enviamos, mas ser liberais no que aceitamos. Em outras palavras, ao enviar mensagens para terceiros, devemos estar em total conformidade com as especificações, mas ao receber mensagens de terceiros, devemos aceitar mensagens não conformes, desde que o significado da mensagem seja claro.
 
 ### Implementar picos em seus próprios módulos {#implement-spikes-in-their-own-modules}
 
-Picos e código de teste são parte integrante de qualquer implementação de software do Agile, mas queremos garantir que eles não entrem em nossa base de código de produção sem o nível apropriado de supervisão. Como resultado, é recomendável criar picos em seu próprio módulo.
+Os picos e o código de teste são parte integrante de qualquer implementação de software Agile, mas queremos garantir que eles não cheguem à nossa base de código de produção sem o nível apropriado de supervisão. Como resultado, é recomendável criar picos em seu próprio módulo.
 
 ### Implementar scripts de migração de dados em seu próprio módulo {#implement-data-migration-scripts-in-their-own-module}
 
-Os scripts de migração de dados, enquanto o código de produção, geralmente são executados apenas uma vez na primeira inicialização de um site. Portanto, assim que o site estiver ativo, isso se torna código inativo. Para garantir que não criemos um código de implementação que dependa dos scripts de migração, eles devem ser implementados em seu próprio módulo. Isso também permite remover e desativar esse código imediatamente após o lançamento, eliminando o código inativo do sistema.
+Os scripts de migração de dados, enquanto o código de produção, geralmente são executados apenas uma vez na primeira inicialização de um site. Portanto, assim que o site estiver ativo, isso se tornará um código inativo. Para garantir que não criemos um código de implementação que dependa dos scripts de migração, eles devem ser implementados em seu próprio módulo. Isso também nos permite remover e desativar esse código imediatamente após o lançamento, eliminando o código inativo do sistema.
 
-### Siga as convenções Maven publicadas em arquivos POM {#follow-published-maven-conventions-in-pom-files}
+### Siga as convenções do Maven publicadas em arquivos POM {#follow-published-maven-conventions-in-pom-files}
 
-O Apache publicou convenções de estilo em [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). É preferível seguir estas convenções, uma vez que facilitará a rápida mobilização de novos recursos.
+O Apache publicou convenções de estilo em [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). É melhor seguir essas convenções, pois facilitará a rápida disponibilização de novos recursos.

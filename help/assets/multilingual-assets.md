@@ -1,6 +1,6 @@
 ---
 title: Ativo multilíngue
-description: Saiba como automatizar fluxos de trabalho para tradução de ativos, incluindo binários, metadados e tags em vários idiomas.
+description: Saiba como automatizar fluxos de trabalho para traduzir ativos, incluindo binários, metadados e tags em vários idiomas.
 contentOwner: AG
 feature: Asset Management
 role: Admin
@@ -20,22 +20,22 @@ ht-degree: 8%
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
-[!DNL Adobe Experience Manager Assets] permite automatizar fluxos de trabalho de tradução em ativos (incluindo binários, metadados e tags) para gerar ativos em outros idiomas para usar em projetos multilíngues.
+[!DNL Adobe Experience Manager Assets] O permite automatizar fluxos de trabalho de tradução em ativos (incluindo binários, metadados e tags) para gerar ativos em outros idiomas para uso em projetos multilíngues.
 
-Para automatizar workflows de tradução, você integra provedores de serviços de tradução a [!DNL Experience Manager] e criar projetos para traduzir ativos em vários idiomas. [!DNL Experience Manager]O permite workflows de tradução humana e de máquina.
+Para automatizar fluxos de trabalho de tradução, você integra provedores de serviços de tradução com [!DNL Experience Manager] e criar projetos para traduzir ativos em vários idiomas. [!DNL Experience Manager]O permite workflows de tradução humana e de máquina.
 
-Tradução humana: Os ativos traduzidos são retornados e importados para o [!DNL Experience Manager]. Quando seu provedor de tradução está integrado ao [!DNL Experience Manager], os ativos são enviados automaticamente entre [!DNL Experience Manager] e o provedor de tradução.
+Tradução humana: os ativos traduzidos são retornados e importados para o [!DNL Experience Manager]. Quando seu provedor de tradução é integrado ao [!DNL Experience Manager], os ativos são automaticamente enviados entre [!DNL Experience Manager] e o provedor de tradução.
 
-Tradução da máquina: O serviço de tradução automática traduz imediatamente os metadados e as tags para os ativos.
+Tradução automática: o serviço de tradução automática traduz imediatamente os metadados e as tags dos ativos.
 
 A tradução de ativos inclui o seguinte:
 
 1. [Conectar o Experience Manager com o provedor de serviços de tradução](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Criar configurações da estrutura de integração de tradução](/help/sites-administering/tc-tic.md)
 1. [Preparar ativos para tradução](preparing-assets-for-translation.md)
-1. [Aplicar serviços de nuvem de tradução a pastas](transition-cloud-services.md)
+1. [Aplicar serviços de tradução em nuvem a pastas](transition-cloud-services.md)
 1. [Criar projetos de tradução](translation-projects.md)
 
-Se seu provedor de serviços de tradução não fornecer um conector para integrar com [!DNL Experience Manager]use um [processo alternativo](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+Se o seu provedor de serviços de tradução não fornecer um conector para integração com o [!DNL Experience Manager], use um [processo alternativo](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
-Consulte também [Criar projetos de tradução para fragmentos de conteúdo](creating-translation-projects-for-content-fragments.md).
+Consulte também, [Criar projetos de tradução para fragmentos de conteúdo](creating-translation-projects-for-content-fragments.md).

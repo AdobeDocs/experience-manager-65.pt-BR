@@ -1,7 +1,7 @@
 ---
-title: Uso do Gráfico Social
+title: Uso do gráfico social
 seo-title: Using Social Graph
-description: Adicionar um componente a seguir a uma página
+description: Adicionar um componente seguinte a uma página
 seo-description: Adding a Following component to a page
 uuid: 8be6334b-e6c9-40bc-90a8-750b98419470
 contentOwner: Guillaume Carlino
@@ -17,29 +17,29 @@ ht-degree: 1%
 
 ---
 
-# Uso do Gráfico Social {#using-social-graph}
+# Uso do gráfico social {#using-social-graph}
 
 ## Introdução {#introduction}
 
-A capacidade de um membro da comunidade seguir [atividades](activities.md) e a seguir é estabelecida através de duas componentes: `Follow` e `Following`.
+A capacidade de um membro da comunidade de seguir [atividades](activities.md) e ser seguida é estabelecida por meio de dois componentes: `Follow` e `Following`.
 
-O `Follow` deve ser associado a outro recurso, e essa associação já está estabelecida para membros e recursos da comunidade.
+A variável `Follow` o componente deve ser associado a outro recurso, e essa associação já foi estabelecida para membros e recursos da comunidade.
 
-O `Following` simplesmente lista os membros que estão seguindo o membro atual ou que estão sendo seguidos pelo membro atual. Esse gráfico social das relações entre membros está incluído no perfil de usuário estabelecido para um [site da comunidade](overview.md#communitiessites).
+A variável `Following` o componente simplesmente lista os membros que estão seguindo o membro atual ou que estão sendo seguidos pelo membro atual. Este gráfico social dos relacionamentos entre membros é incluído no perfil do usuário estabelecido para um [site da comunidade](overview.md#communitiessites).
 
-## Adicionar o seguinte a uma página {#adding-following-to-a-page}
+## Adicionar seguidores a uma página {#adding-following-to-a-page}
 
-Se desejar adicionar uma `Following` para uma página no modo autor, localize o componente `Communities / Following` e arraste-o para o lugar em uma página onde o gráfico social deve aparecer.
+Se desejar adicionar um `Following` para uma página no modo de autor, localize o componente `Communities / Following` e arraste-o para o local em uma página onde o gráfico social deve aparecer.
 
-Para obter as informações necessárias, visite [Noções básicas sobre componentes do Communities](basics.md).
+Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](basics.md).
 
-Quando a variável [bibliotecas obrigatórias do lado do cliente](essentials-socialgraph.md#essentials-for-client-side) são incluídos, é assim que a variável `Following` componente será exibido:
+Quando a variável [bibliotecas obrigatórias do lado do cliente](essentials-socialgraph.md#essentials-for-client-side) são incluídos, é assim que a variável `Following` componente aparecerá:
 
-![following](assets/following.png)
+![seguindo](assets/following.png)
 
-## Configurar a seguir {#configuring-following}
+## Configurar o seguinte {#configuring-following}
 
-Atualmente, é necessário definir a propriedade para determinar se o componente exibe a variável `follows` ou a `following` relação.
+No momento, é necessário definir a propriedade para determinar se o componente exibe a variável `follows` ou a `following` relação.
 
 ## Informações adicionais {#additional-information}
 

@@ -11,4 +11,4 @@ ht-degree: 65%
 
 # Como unir tudo: seu aplicativo e seu conteúdo no AEM headless {#put-it-all-together}
 
-Esta página tem como objetivo fornecer orientação sobre como configurar um projeto de desenvolvimento local usando o novo SDK sem cabeçalho AEM. Fique ligado para obter mais detalhes assim que o SDK estiver disponível publicamente.
+Esta página tem como objetivo fornecer orientação sobre como configurar um projeto de desenvolvimento local usando o SDK AEM Headless totalmente novo. Fique ligado para obter mais detalhes assim que o SDK estiver disponível publicamente.

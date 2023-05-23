@@ -14,7 +14,7 @@ exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -27,13 +27,13 @@ Várias configurações prontas para uso estão disponíveis para integração c
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-Você também pode configurar sua própria instância do **Trechos Genéricos do Analytics** para definir novas configurações de serviço.
+Você também pode configurar sua própria instância do **Trechos de análise genéricos** para definir novas configurações de serviço.
 
-As informações são coletadas por meio de pequenos trechos de código adicionados às páginas da Web. Por exemplo:
+As informações são então coletadas por meio de pequenos trechos de código que são adicionados às páginas da web. Por exemplo:
 
 >[!CAUTION]
 >
->Os scripts não devem ser colocados em `script` tags.
+>Os scripts não devem estar entre `script` específicos.
 
 ```
 var _gaq = _gaq || [];
@@ -47,62 +47,62 @@ _gaq.push(['_trackPageview']);
 })();
 ```
 
-Esses trechos permitem que os dados sejam coletados e os relatórios sejam gerados. Os dados reais coletados dependem do provedor e do snippet de código real usado. As estatísticas de exemplo incluem:
+Esses snippets permitem que os dados sejam coletados e os relatórios gerados. Os dados reais coletados dependem do provedor e do trecho de código real usado. As estatísticas de exemplo incluem:
 
 * quantos visitantes ao longo do tempo
-* quantas páginas visitaram
+* quantas páginas visitadas
 * termos de pesquisa usados
-* páginas de aterrissagem
+* landing pages
 
 >[!CAUTION]
 >
->O site de demonstração Geometrixx-Outdoors é configurado para que os atributos fornecidos nas Propriedades da página sejam anexados ao código fonte html (logo acima da função `</html>` endtag) no `js` script.
+>O site de demonstração Geometrixx-Outdoors é configurado de modo que os atributos fornecidos nas Propriedades da página sejam anexados ao código fonte html (logo acima da tag `</html>` endtag) no correspondente `js` script.
 >
->Se seu próprio `/apps` não herdar do componente de página padrão ( `/libs/foundation/components/page`) você (ou seus desenvolvedores) deve garantir que o `js` scripts são incluídos, por exemplo, por meio de `cq/cloudserviceconfigs/components/servicescomponents`ou utilizar um mecanismo semelhante.
+>Se o seu `/apps` não herdar do componente de página padrão ( `/libs/foundation/components/page`) você (ou seus desenvolvedores) devem se certificar de que as tags `js` scripts são incluídos, por exemplo, incluindo `cq/cloudserviceconfigs/components/servicescomponents`ou utilizando um mecanismo semelhante.
 >
 >Sem isso, nenhum dos serviços (Genérico, Analytics, Target etc.) funcionará.
 
-## Criando um novo serviço com um trecho genérico {#creating-a-new-service-with-a-generic-snippet}
+## Criação de um novo serviço com um trecho genérico {#creating-a-new-service-with-a-generic-snippet}
 
 Para a configuração básica:
 
 1. Abra o **Ferramentas** console.
 1. No painel esquerdo, expanda **Configurações do Cloud Services**.
-1. Clique duas vezes em **Snippet genérico do Analytics** para abrir a página:
+1. Clique duas vezes em **Fragmento da análise genérica** para abrir a página:
 
    ![](assets/analytics_genericoverview.png)
 
-1. Clique em + para adicionar uma nova configuração usando a caixa de diálogo; no mínimo, atribua um nome, por exemplo, google analytics:
+1. Clique no + para adicionar uma nova configuração usando a caixa de diálogo; no mínimo, atribua um nome, por exemplo google analytics:
 
    ![](assets/analytics_addconfig.png)
 
-1. Clique em **Criar**, a caixa de diálogo do snippet será aberta imediatamente - cole o snippet do javascript apropriado no campo :
+1. Clique em **Criar**, a caixa de diálogo de trecho será aberta imediatamente - cole o trecho javascript apropriado no campo:
 
    ![](assets/analytics_snippet.png)
 
 1. Clique em **OK** para salvar.
 
-## Usar seu novo serviço em páginas {#using-your-new-service-on-pages}
+## Usar seu novo serviço nas páginas {#using-your-new-service-on-pages}
 
-Depois de criar a configuração de serviço, agora é necessário configurar as páginas necessárias para usá-la:
+Após criar a configuração do serviço, agora é necessário configurar as páginas necessárias para usá-lo:
 
-1. Navegue até a página .
-1. Abra o **Propriedades da página** do sidekick, em seguida, o **Cloud Services** guia .
-1. Clique em **Adicionar Serviço**, em seguida, selecione o serviço necessário; por exemplo, a variável **Snippet genérico do Analytics**:
+1. Navegue até a página.
+1. Abra o **Propriedades da página** no sidekick, depois o **Cloud Services** guia.
+1. Clique em **Adicionar serviço** e selecione o serviço necessário; por exemplo, o **Fragmento da análise genérica**:
 
    ![](assets/analytics_selectservice.png)
 
 1. Clique em **OK** para salvar.
-1. Você será retornado ao **Cloud Services** guia . O **Snippet genérico do Analytics** está listada com a mensagem `Configuration reference missing`. Use a lista suspensa para selecionar sua instância de serviço específica; por exemplo, google-analytics:
+1. Você será redirecionado para a **Cloud Services** guia. A variável **Fragmento da análise genérica** agora está listado com a mensagem `Configuration reference missing`. Use a lista suspensa para selecionar sua instância de serviço específica; por exemplo, google-analytics:
 
    ![](assets/analytics_selectspecificservice.png)
 
 1. Clique em **OK** para salvar.
 
-   O trecho agora pode ser visto se você visualizar a Fonte da página da página.
+   O trecho agora poderá ser visto se você exibir a Origem da página para a página.
 
-   Após um período adequado, você poderá visualizar as estatísticas coletadas.
+   Após um período de tempo adequado, você poderá exibir as estatísticas coletadas.
 
    >[!NOTE]
    >
-   >Se a configuração for anexada a uma página que tem páginas filhas, o serviço também será herdado por elas.
+   >Se a configuração for anexada a uma página que tem páginas secundárias, o serviço também será herdado por elas.

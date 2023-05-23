@@ -1,5 +1,5 @@
 ---
-title: Adicionar e remover credenciais de nome de usuário e senha
+title: Adição e remoção de credenciais de nome de usuário e senha
 seo-title: Adding and removing user name and password credentials
 description: Saiba como adicionar e remover credenciais de nome de usuário e senha.
 seo-description: Learn how to add and remove user name and password credentials.
@@ -17,18 +17,18 @@ ht-degree: 0%
 
 ---
 
-# Adicionar e remover credenciais de nome de usuário e senha {#adding-and-removing-user-name-and-password-credentials}
+# Adição e remoção de credenciais de nome de usuário e senha {#adding-and-removing-user-name-and-password-credentials}
 
-Na página Gerenciamento de armazenamento de confiança, é possível adicionar e remover as credenciais de nome de usuário e senha usadas pelo serviço da Forms ao receber uma solicitação com segurança de nível SOAP.
+Na página Gerenciamento de armazenamento de confiança, você pode adicionar e remover credenciais de nome de usuário e senha usadas pelo serviço Forms quando ele recebe uma solicitação com segurança de nível SOAP.
 
-## Adicionar um nome de usuário e credencial de senha {#add-a-user-name-and-password-credential}
+## Adicionar uma credencial de nome de usuário e senha {#add-a-user-name-and-password-credential}
 
-1. No console de administração, clique em **[!UICONTROL Configurações > Gerenciamento de armazenamento de confiança > Credenciais de usuário e senha]** e, em seguida, clique em **[!UICONTROL Adicionar]**.
+1. No console de administração, clique em **[!UICONTROL Configurações > Gerenciamento de armazenamento de confiança > Credenciais de usuário e senha]** e clique em **[!UICONTROL Adicionar]**.
 1. No **[!UICONTROL Nome do perfil]** digite um nome para a credencial.
 1. No **[!UICONTROL Nome do usuário]** digite um nome de usuário exclusivo.
 1. No **[!UICONTROL Senha]** digite uma senha para o usuário e clique em **[!UICONTROL OK]**.
 
-## Excluir um nome de usuário e uma credencial de senha {#delete-a-user-name-and-password-credential}
+## Excluir uma credencial de nome de usuário e senha {#delete-a-user-name-and-password-credential}
 
 1. No console de administração, clique em **[!UICONTROL Configurações > Gerenciamento de armazenamento de confiança > Credenciais de usuário e senha]**.
-1. Marque as caixas de seleção das credenciais que deseja excluir, clique em **[!UICONTROL Excluir]** e, em seguida, clique em **[!UICONTROL OK]**.
+1. Marque as caixas de seleção das credenciais que deseja excluir e clique em **[!UICONTROL Excluir]** e clique em **[!UICONTROL OK]**.

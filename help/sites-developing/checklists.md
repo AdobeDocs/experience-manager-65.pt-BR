@@ -19,21 +19,21 @@ ht-degree: 3%
 
 # Listas de verificação{#checklists}
 
-A lista de verificação a seguir destaca alguns dos principais problemas. Leia as outras seções relacionadas ao Teste para obter detalhes completos.
+A lista de verificação a seguir destaca alguns dos principais problemas. Leia as outras seções relacionadas a Testes para obter detalhes completos.
 
-| Marcar | Resposta | Ação | Proprietário | O prazo é |
+| Verificar | Resposta | Ação | Proprietário | O prazo é |
 |---|---|---|---|---|
-| Foi criado um mecanismo de informação claro e regular? |  |  |  |  |
-| Os principais intervenientes (da equipe de testes) estão envolvidos nas reuniões de status? |  |  |  |  |
-| As responsabilidades de ensaio estão claramente definidas (em especial para o cliente)? |  |  |  |  |
-| O cliente tem a experiência necessária para cumprir os seus compromissos de teste? |  |  |  |  |
+| Foi criado um mecanismo de apresentação de relatórios claro e regular? |  |  |  |  |
+| Os principais participantes (da equipe de testes) estão envolvidos nas reuniões de status? |  |  |  |  |
+| As responsabilidades de teste estão claramente definidas (especialmente para o cliente)? |  |  |  |  |
+| O cliente tem a experiência necessária para cumprir seus compromissos de teste? |  |  |  |  |
 | Todas as ferramentas (teste e rastreamento) foram selecionadas? |  |  |  |  |
 | As ferramentas acima foram instaladas e os usuários (principalmente a equipe do projeto) treinados conforme necessário? |  |  |  |  |
 | Foi elaborado um plano de ensaio claro e abrangente? |  |  |  |  |
-| O plano de ensaio foi revisto pelas partes competentes? |  |  |  |  |
+| O plano de ensaio foi revisto pelas partes interessadas? |  |  |  |  |
 | Os testes de aceitação foram claramente definidos? |  |  |  |  |
-| Os testes de aceitação foram oficialmente aceites por todas as partes? |  |  |  |  |
+| Os testes de aceitação foram oficialmente aceitos por todas as partes? |  |  |  |  |
 
 >[!NOTE]
 >
->Você também pode ver a variável [Gerenciamento de projetos - Lista de verificação de práticas recomendadas](/help/managing/best-practices.md) para obter mais listas de verificação relacionadas ao projeto inteiro.
+>Você também pode ver a [Gerenciamento de projetos - Lista de verificação de práticas recomendadas](/help/managing/best-practices.md) para obter mais listas de verificação relacionadas a todo o projeto.

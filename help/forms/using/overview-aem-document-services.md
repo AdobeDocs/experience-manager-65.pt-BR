@@ -1,7 +1,7 @@
 ---
-title: Visão geral dos AEM Document Services
+title: Visão geral dos serviços de documento AEM
 seo-title: Overview of AEM Document Services
-description: AEM Document Services são um conjunto de serviços OSGi para criar, montar e proteger documentos do PDF.
+description: Os serviços de documento AEM são um conjunto de serviços OSGi para criar, montar e proteger documentos PDF.
 seo-description: AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents.
 uuid: 439144b7-f805-4819-9ed9-a6e9e374b5ed
 content-type: reference
@@ -17,119 +17,119 @@ ht-degree: 0%
 
 ---
 
-# Visão geral dos AEM Document Services{#overview-of-aem-document-services}
+# Visão geral dos serviços de documento AEM{#overview-of-aem-document-services}
 
-AEM Document Services são um conjunto de serviços OSGi para criar, montar e proteger documentos do PDF. Os Serviços de Documento contêm os seguintes serviços:
+Os serviços de documento AEM são um conjunto de serviços OSGi para criar, montar e proteger documentos PDF. Os Serviços de documento contêm os seguintes serviços:
 
 ## Serviço de saída {#output-service}
 
-O Serviço de saída permite criar documentos em diferentes formatos, incluindo PDF, formatos de impressora laser e formatos de impressora de etiquetas. Os formatos de impressora a laser são PostScript e PCL (Printer Control Language). A lista a seguir especifica os formatos de impressora de etiquetas:
+O Output service permite criar documentos em diferentes formatos, incluindo formatos de PDF, impressora a laser e impressora a laser. Os formatos de impressora a laser são PostScript e Printer Control Language (PCL). A lista a seguir especifica os formatos de impressora de etiquetas:
 
 * Zebra (ZPL)
-* Intermecenas (IPL)
+* Intermec (IPL)
 * Datamax (DPL)
 * TecToshiba (TPCL)
 
-Um documento pode ser enviado para uma impressora de rede, para uma impressora local ou para um arquivo no sistema de arquivos. O serviço de saída mescla dados de formulário XML com um design de formulário para gerar um documento. O serviço de saída pode gerar um documento sem mesclar dados de formulário XML no documento. No entanto, o fluxo de trabalho principal está mesclando dados no documento.
+Um documento pode ser enviado para uma impressora de rede, uma impressora local ou um arquivo no sistema de arquivos. O serviço de Saída mescla dados de formulário XML com um design de formulário para gerar um documento. O Serviço de saída pode gerar um documento sem mesclar dados de formulário XML no documento. No entanto, o fluxo de trabalho principal é a mesclagem de dados no documento.
 
 >[!NOTE]
 >
->Normalmente, um design de formulário é criado usando o Designer. Para obter informações sobre como criar designs de formulário para o serviço Saída, consulte a Ajuda do Designer.
+>Um design de formulário normalmente é criado usando o Designer. Para obter informações sobre como criar designs de formulário para o serviço de Saída, consulte a Ajuda do Designer.
 
-Ao usar o serviço de saída para unir dados XML a um design de formulário, o resultado é um documento PDF não interativo. Um documento PDF não interativo não permite que os usuários insiram dados em seus campos. Por outro lado, é possível usar o serviço Forms para criar um formulário PDF interativo que permite que os usuários insiram dados em seus campos.
+Ao usar o Serviço de saída para mesclar dados XML com um design de formulário, o resultado é um documento PDF não interativo. Um documento PDF não interativo não permite que os usuários insiram dados em seus campos. Por outro lado, você pode usar o serviço Forms para criar um formulário PDF interativo que permita aos usuários inserir dados em seus campos.
 
-As quatro operações de serviço de Saída a seguir estão disponíveis para uso:
+As quatro operações de Serviço de saída a seguir estão disponíveis para uso:
 
-* **generatePDFOuput**: Une um design de formulário aos dados para gerar um documento PDF
-* **generatePrintedOutput**: Mescla um design de formulário com dados de formulário para gerar um documento para enviar a uma impressora laser ou de rede de etiquetas
+* **generatePDFOuput**: mescla um design de formulário com dados para gerar um documento PDF
+* **generatePrintedOutput**: mescla um design de formulário com dados de formulário para gerar um documento para enviar a uma impressora a laser ou a uma impressora de rede de etiquetas
 
-* **generatePDFOutputBatch**: Une vários modelos com vários registros de dados em uma única invocação para gerar um lote de arquivos PDF. Há também a opção de gerar um único PDF combinando todos os PDF
-* **generatePrintedOutputBatch**: Une vários modelos com vários registros de dados em uma única invocação para gerar um lote de documentos impressos (PS,PCL,ZPL,DPL,IPL,TPCL). Há também a opção de gerar um único documento impresso.
+* **generatePDFOutputBatch**: mescla vários modelos com vários registros de dados em uma única chamada para gerar um lote de arquivos PDF. Há também a opção de gerar um único PDF combinando todos os PDF
+* **generatePrintedOutputBatch**: Mescla vários templates com vários registros de dados em uma única chamada para gerar um lote de documentos de impressão (PS,PCL,ZPL,DPL,IPL,TPCL). Há também a opção de gerar um único documento de impressão.
 
 ## Serviço de Assembler {#assembler-service}
 
-O serviço Assembler permite combinar, reorganizar e aumentar documentos PDF e XDP e obter informações sobre documentos PDF. Cada tarefa enviada ao serviço Assembler inclui um documento XML de Descrição de Documento (DDX), documentos de origem e recursos externos (strings e gráficos). O documento DDX fornece instruções sobre como usar os documentos de origem para produzir um conjunto de documentos resultantes.
+O serviço Assembler permite combinar, reorganizar e aumentar documentos PDF e XDP e obter informações sobre documentos PDF. Cada tarefa enviada ao serviço Assembler inclui um documento XML de Descrição de Documento (DDX), documentos de origem e recursos externos (sequências e gráficos). O documento DDX fornece instruções sobre como usar os documentos de origem para produzir um conjunto de documentos resultantes.
 
-Além dos recursos acima mencionados, o serviço Assembler:
+Além dos recursos mencionados acima, o serviço Assembler:
 
-* Converte documentos PDF em PDF/A padrão.
+* Converte documentos PDF para o padrão PDF/A.
 * Transforma PDF forms, formulários XML (criados no Designer) e PDF forms (criados no Acrobat) em PDF/A-1b, PDF/A-2b e PDFA/A-3b.
-* Converte documentos PDF assinados ou não (são necessárias Assinaturas Digitais).
+* Converte documentos de PDF assinados ou não (são necessárias assinaturas digitais).
 * Valida a conformidade de um arquivo PDF/A e o converte, se necessário.
 
 ### Sobre o DDX {#about-ddx}
 
-Ao usar o serviço Assembler, use uma linguagem baseada em XML chamada Document Description XML (DDX) para descrever a saída desejada. DDX é uma linguagem de marcação declarativa cujos elementos representam blocos de construção de documentos. Esses blocos de construção incluem documentos PDF, documentos XDP, fragmentos de formulário XDP e outros elementos, como comentários, marcadores e texto estilizado.
+Ao usar o serviço Assembler, use uma linguagem baseada em XML chamada Document Description XML (DDX) para descrever a saída desejada. O DDX é uma linguagem de marcação declarativa cujos elementos representam os blocos fundamentais de documentos. Esses blocos fundamentais incluem documentos PDF, documentos XDP, fragmentos de formulário XDP e outros elementos, como comentários, marcadores e texto estilizado.
 
 O documento DDX pode especificar documentos resultantes com estas características:
 
-* Documento PDF que é montado a partir de vários documentos PDF
-* Vários documentos PDF separados por um único documento PDF
-* Portfolio PDF que inclui uma interface de usuário autocontida e vários documentos PDF e não PDF
-* Documento XDP que é montado a partir de vários documentos XDP
-* Documento XDP que contém fragmentos XML que são inseridos dinamicamente em um documento XDP
-* Documento PDF que compacta um documento XDP
-* Arquivos XML que relatam as características de um documento PDF. As características relatadas incluem texto, comentários, dados de formulário, anexos de arquivo, arquivos usados em Portfolio de PDF, marcadores e propriedades de PDF. As propriedades de PDF incluem propriedades de formulário, rotação de página e autor do documento.
+* documento PDF que é montado a partir de vários documentos PDF
+* Vários documentos de PDF separados de um único documento de PDF
+* Portfolio PDF que inclui uma interface de usuário independente e vários documentos PDF e não PDF
+* Documento XDP montado a partir de vários documentos XDP
+* Documento XDP que contém fragmentos XML inseridos dinamicamente em um documento XDP
+* documento PDF que empacota um documento XDP
+* Arquivos XML que relatam as características de um documento PDF. As características relatadas incluem texto, comentários, dados de formulário, anexos de arquivo, arquivos usados em Portfolio PDF, marcadores e propriedades PDF. As propriedades PDF incluem propriedades de formulário, rotação de página e autor de documento.
 
-Você pode usar DDX para aumentar documentos PDF como parte da montagem ou desmontagem do documento. Você pode especificar qualquer combinação dos seguintes efeitos:
+Você pode usar o DDX para aumentar documentos em PDF como parte da montagem ou desmontagem de documentos. Você pode especificar qualquer combinação dos seguintes efeitos:
 
-* Adicione ou remova marcas d&#39;água ou planos de fundo nas páginas selecionadas.
-* Adicione ou remova cabeçalhos e rodapés em páginas selecionadas.
-* Remove a estrutura e os recursos de navegação de um PDF Package ou PDF Portfolio. O resultado é um único arquivo PDF.
-* Rótulos de página de renumeração. Rótulos de página geralmente são usados para numeração de página.
-* Importe metadados de outro documento de origem.
+* Adicionar ou remover marcas d&#39;água ou planos de fundo em páginas selecionadas.
+* Adicionar ou remover cabeçalhos e rodapés nas páginas selecionadas.
+* Remove a estrutura e os recursos de navegação de um Pacote de PDF PDF ou Portfolio. O resultado é um único arquivo PDF.
+* Renumerar rótulos de página. Os rótulos de página normalmente são usados para numeração de páginas.
+* Importar metadados de outro documento de origem.
 * Adicione ou remova anexos de arquivo, marcadores, links, comentários e JavaScript.
-* Defina as características de visualização inicial e otimize para visualização na Web.
-* Defina permissões para PDF criptografado.
-* Girar páginas ou girar e girar o conteúdo nas páginas.
-* Altere o tamanho das páginas selecionadas.
-* Mesclar dados com um PDF baseado em XFA.
+* Defina as características de exibição iniciais e otimize para visualização na Web.
+* Definir permissões para PDF criptografado.
+* Girar páginas ou girar e deslocar o conteúdo nas páginas.
+* Alterar o tamanho das páginas selecionadas.
+* Mescle dados com um PDF baseado em XFA.
 
-Você pode usar um mapa de entrada simples para especificar os locais dos documentos de origem e resultantes. Você também pode usar os seguintes tipos de URLs de dados externos:
+Você pode usar um mapa de entrada simples para especificar os locais dos documentos de origem e resultantes. Você também pode usar os seguintes tipos de URL de dados externos:
 
 * Arquivo
 * FTP
 * HTTP/HTTPS
 
-## Serviço de Garantia de Doc {#doc-assurance-service}
+## Serviço de garantia de documentos {#doc-assurance-service}
 
-O Serviço de garantia de documentos ajuda você a criptografar e descriptografar documentos, estender a funcionalidade do Adobe Reader com direitos de uso adicionais e adicionar assinaturas digitais aos documentos. Seus usuários podem interagir facilmente com PDF forms e documentos, enquanto sua organização melhora a segurança, o arquivamento e a conformidade.
+O Doc Assurance Service ajuda a criptografar e descriptografar documentos, estender a funcionalidade do Adobe Reader com direitos de uso adicionais e adicionar assinaturas digitais aos documentos. Seus usuários podem interagir facilmente com PDF forms e documentos, enquanto sua organização melhora a segurança, o arquivamento e a conformidade.
 
-O serviço de garantia de documentos contém três serviços: assinatura, criptografia e extensão do leitor.
+O serviço Doc Assurance contém três serviços: assinatura, criptografia e extensão do leitor.
 
 ### Serviço de assinatura {#signature-service}
 
-O serviço de assinatura permite que você trabalhe com assinaturas digitais e documentos no servidor de AEM. Por exemplo, o serviço de assinatura é normalmente usado nas seguintes situações:
+O serviço de assinatura permite trabalhar com assinaturas digitais e documentos no servidor AEM. Por exemplo, o serviço de Assinatura é normalmente usado nas seguintes situações:
 
-* O servidor de AEM certifica um formulário antes de ele ser enviado a um usuário para ser aberto usando o Acrobat ou o Adobe Reader.
-* O servidor de AEM valida uma assinatura que foi adicionada a um formulário usando o Acrobat ou o Adobe Reader.
+* O servidor AEM certifica um formulário antes que ele seja enviado a um usuário para ser aberto usando o Acrobat ou o Adobe Reader.
+* O servidor AEM valida uma assinatura que foi adicionada a um formulário usando Acrobat ou Adobe Reader.
 * O servidor AEM assina um formulário em nome de um notário público.
 
-O serviço de assinatura acessa certificados e credenciais armazenadas no armazenamento de confiança.
+O serviço de Assinatura acessa certificados e credenciais armazenados no armazenamento de confiança.
 
 ### Serviço de criptografia {#encryption-service}
 
-O serviço Encryption permite criptografar e descriptografar documentos. Quando um documento é criptografado, seu conteúdo se torna ilegível. Você pode criptografar todo o documento do PDF (incluindo seu conteúdo, metadados e anexos), tudo menos seus metadados ou apenas os anexos. Um usuário autorizado pode descriptografar o documento para obter acesso a seu conteúdo. Se um documento do PDF for criptografado com uma senha, o usuário deverá especificar a senha de abertura para que o documento possa ser visualizado no Adobe Reader ou Acrobat. Se um documento PDF for criptografado com um certificado, o usuário deverá descriptografar o documento PDF com uma chave privada (certificado). A chave privada usada para descriptografar o documento PDF deve corresponder à chave pública usada para criptografá-lo.
+O serviço de criptografia permite criptografar e descriptografar documentos. Quando um documento é criptografado, seu conteúdo fica ilegível. Você pode criptografar todo o documento PDF (incluindo seu conteúdo, metadados e anexos), tudo exceto seus metadados ou apenas os anexos. Um usuário autorizado pode descriptografar o documento para obter acesso ao conteúdo. Se um documento PDF for criptografado com uma senha, o usuário deverá especificar a senha aberta para que o documento possa ser visualizado no Adobe Reader ou no Acrobat. Se um documento PDF for criptografado com um certificado, o usuário deverá descriptografar o documento PDF com uma chave privada (certificado). A chave privada usada para descriptografar o documento PDF deve corresponder à chave pública usada para criptografá-lo.
 
-### Serviço de extensão do Reader {#reader-extension-service}
+### Serviço de extensão Reader {#reader-extension-service}
 
-O serviço Reader Extensions permite que sua organização compartilhe facilmente documentos interativos do PDF, estendendo a funcionalidade do Adobe Reader com direitos de uso adicionais. O serviço Reader Extensions funciona com o Adobe Reader 7.0 ou posterior. O serviço adiciona direitos de uso a um documento PDF. Essa ação ativa recursos que geralmente não estão disponíveis quando um documento do PDF é aberto usando o Adobe Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento. Usuários de terceiros não exigem software ou plug-ins adicionais para trabalhar com documentos ativados por direitos.
+O serviço de extensões do Reader permite que sua organização compartilhe facilmente documentos interativos do PDF, estendendo a funcionalidade do Adobe Reader com direitos de uso adicionais. O serviço Reader Extensions funciona com o Adobe Reader 7.0 ou posterior. O serviço adiciona direitos de uso a um documento PDF. Essa ação ativa recursos que geralmente não estão disponíveis quando um documento PDF é aberto usando o Adobe Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento. Usuários de terceiros não precisam de software ou plug-ins adicionais para trabalhar com documentos habilitados por direitos.
 
-Quando os documentos do PDF têm os direitos de uso apropriados adicionados, os recipients podem realizar as seguintes atividades no Adobe Reader:
+Quando os documentos PDF têm os direitos de uso apropriados adicionados, os recipients podem fazer as seguintes atividades no Adobe Reader:
 
-* Preencha os documentos e formulários PDF on-line ou off-line, permitindo que os destinatários salvem cópias localmente para seus registros e ainda mantenham as informações adicionadas intactas
-* Salve documentos do PDF em um disco rígido local para manter o documento original e quaisquer comentários, dados ou anexos adicionais
-* Anexar arquivos e clipes de mídia a documentos PDF
-* Assinar, certificar e autenticar documentos do PDF aplicando assinaturas digitais usando tecnologias PKI (Public Key Infrastructure, infraestrutura de chave pública) padrão do setor
-* Enviar documentos PDF preenchidos ou anotados eletronicamente
-* Use documentos e formulários PDF como um front-end de desenvolvimento intuitivo para bancos de dados internos e serviços da Web
-* Compartilhe documentos do PDF com outras pessoas para que os revisores possam adicionar comentários usando ferramentas de marcação intuitivas. Essas ferramentas incluem notas autoadesivas eletrônicas, carimbos, destaques e tachado de texto. As mesmas funções estão disponíveis no Acrobat.
-* Suporte à decodificação de formulários com códigos de barras.
+* Preencha os documentos e formulários do PDF on-line ou off-line, permitindo que os recipients salvem cópias localmente para seus registros e ainda mantenham as informações adicionadas intactas
+* Salve os documentos de PDF em um disco rígido local para reter o documento original e quaisquer comentários, dados ou anexos adicionais
+* Anexar arquivos e clipes de mídia a documentos do PDF
+* Assine, certifique e autentique documentos PDF aplicando assinaturas digitais usando tecnologias de infraestrutura de chave pública (PKI) padrão do setor
+* Enviar eletronicamente documentos de PDF concluídos ou anotados
+* Use documentos e formulários do PDF como um front-end de desenvolvimento intuitivo para bancos de dados internos e serviços da Web
+* Compartilhe documentos do PDF com outras pessoas para que os revisores possam adicionar comentários usando ferramentas de marcação intuitivas. Essas ferramentas incluem notas adesivas eletrônicas, carimbos, destaques e tachado de texto. As mesmas funções estão disponíveis no Acrobat.
+* Suporte para decodificação de formulários com código de barras.
 
-Esses recursos especiais do usuário são ativados automaticamente quando um documento do PDF habilitado para direitos é aberto no Adobe Reader. Quando o usuário terminar de trabalhar com um documento habilitado para direitos, essas funções serão novamente desativadas no Adobe Reader. Eles permanecem desativados até que o usuário receba outro documento de PDF habilitado para direitos.
+Esses recursos especiais do usuário são ativados automaticamente quando um documento PDF habilitado para direitos é aberto no Adobe Reader. Quando o usuário terminar de trabalhar com um documento com direitos ativados, essas funções serão novamente desativadas no Adobe Reader. Eles permanecem desativados até que o usuário receba outro documento PDF com direitos ativados.
 
 Imediatamente, o serviço DocAssurance não está disponível para uso. Para configurar o serviço DocAssurance, consulte [Instalar e configurar serviços de documento](../../forms/using/install-configure-document-services.md).
 
-## Enviar para o serviço de impressora {#send-to-printer-service}
+## Enviar para Serviço de Impressora {#send-to-printer-service}
 
-O serviço Enviar para impressora fornece a API para enviar documentos para a impressora especificada para impressão.
+Enviar para Serviço de Impressora fornece API para Enviar documentos para impressora especificada para impressão.

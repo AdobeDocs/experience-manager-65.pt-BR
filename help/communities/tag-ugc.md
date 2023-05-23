@@ -1,7 +1,7 @@
 ---
-title: Marcação de conteúdo gerado pelo usuário
+title: Marcação do conteúdo gerado pelo usuário
 seo-title: Tagging User Generated Content
-description: A marcação do conteúdo gerado pelo usuário (UGC) é a forma como os membros da comunidade podem ajudar outros membros a pesquisar conteúdo
+description: A marcação do conteúdo gerado pelo usuário (UGC) mostra como os membros da comunidade podem ajudar outros membros a pesquisar conteúdo
 seo-description: Tagging of user generated content (UGC) is how community members can help other members search for content
 uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
@@ -18,15 +18,15 @@ ht-degree: 3%
 
 ---
 
-# Marcação de conteúdo gerado pelo usuário {#tagging-user-generated-content}
+# Marcação do conteúdo gerado pelo usuário {#tagging-user-generated-content}
 
 ## Visão geral {#overview}
 
-A marcação do conteúdo gerado pelo usuário (UGC) é o meio pelo qual os membros da comunidade podem ajudar outros membros a pesquisar conteúdo.
+A marcação de conteúdo gerado pelo usuário (UGC) é o meio pelo qual os membros da comunidade podem ajudar outros membros a pesquisar conteúdo.
 
-Normalmente, as tags são aplicadas por autores e administradores no ambiente de criação. A marcação do UGC é exclusiva no fato de as tags UGC serem aplicadas pelos membros da comunidade no ambiente de publicação.
+Normalmente, as tags são aplicadas por autores e administradores no ambiente de criação. A marcação de UGC é única, pois as tags UGC são aplicadas pelos membros da comunidade no ambiente de publicação.
 
-Os namespaces e as taxonomias de tags são iguais para ambos os aplicativos.
+Os namespaces e as taxonomias de tags são os mesmos para ambos os aplicativos.
 
 ## Recursos das comunidades {#communities-features}
 
@@ -34,25 +34,25 @@ Os recursos do AEM Communities que podem ser configurados para permitir a marca�
 
 * [Blog](blog-feature.md)
 * [Calendário](calendar.md)
-* [Biblioteca de arquivos](file-library.md)
+* [Biblioteca de arquivo](file-library.md)
 * [Fórum](forum.md#configuretheaddedforum)
 * [Perguntas e respostas](working-with-qna.md)
 
 ## Administração de tags {#administering-tags}
 
-Consulte [Administração de tags](../../help/sites-administering/tags.md#tagging-console) para criar e gerenciar namespaces e taxonomias de tags.
+Consulte [Administração de tags](../../help/sites-administering/tags.md#tagging-console) para criar e gerenciar namespaces de tags e taxonomias.
 
-Consulte [Tag Essentials](tag.md) para obter informações sobre desenvolvedores.
+Consulte [Fundamentos de tags](tag.md) para obter informações do desenvolvedor.
 
-Consulte [Uso da Nuvem de tags sociais](tagcloud.md) para adicionar um componente Nuvem de tag social a uma página, a fim de facilitar a pesquisa por UGC publicado usando as tags aplicadas.
+Consulte [Uso da Social Tag Cloud](tagcloud.md) para adicionar um componente do Social Tag Cloud a uma página e facilitar a pesquisa de UGC publicado usando as tags aplicadas.
 
 ### Permissões de tag {#tag-permissions}
 
-As permissões padrão são definidas para não permitir que os namespaces de tags sejam lidos por todos no ambiente de publicação.
+As permissões padrão são definidas para não permitir que os namespaces de tag sejam lidos por todos no ambiente de publicação.
 
-Como as tags são aplicadas ao UGC no ambiente de publicação, a permissão de leitura precisa ser ativada para os membros da comunidade para que possam selecionar tags a serem aplicadas.
+Como as tags são aplicadas a UGC no ambiente de publicação, a permissão de leitura precisa ser ativada para os membros da comunidade para que eles possam selecionar as tags a serem aplicadas.
 
-Consulte [Definir permissões de tag](../../help/sites-administering/tags.md#setting-tag-permissions).
+Consulte [Definição de permissões de tag](../../help/sites-administering/tags.md#setting-tag-permissions).
 
 Veja a seguir como ele aparece no CRXDE quando um administrador aplica permissões de leitura a `/etc/tag/discussions` para o grupo `Community Engage Members`.
 

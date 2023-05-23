@@ -1,6 +1,6 @@
 ---
-title: Estrutura de integração do comércio eletrônico
-description: AEM eCommerce ajuda os profissionais de marketing a fornecer experiências de compras personalizadas e com marca em todos os pontos de contato da Web, móveis e sociais.
+title: Estrutura de integração de comércio eletrônico
+description: O eCommerce AEM ajuda os profissionais de marketing a fornecer experiências de compras personalizadas e de marca em pontos de contato da Web, de dispositivos móveis e sociais.
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
@@ -15,16 +15,16 @@ ht-degree: 2%
 # eCommerce{#ecommerce}
 
 * [Conceitos ](/help/commerce/cif-classic/administering/concepts.md)
-* [Administração (genérica)](/help/commerce/cif-classic/administering/generic.md)
+* [Administração (genérico)](/help/commerce/cif-classic/administering/generic.md)
 
-O Adobe fornece duas versões da Estrutura de integração de comércio:
+O Adobe fornece duas versões da Commerce Integration Framework:
 
 <table>
  <tbody>
   <tr>
    <th><p> </p> </th>
    <th><p>CIF no local</p> </th>
-   <th><p>CIF Cloud</p> </th>
+   <th><p>Nuvem da CIF</p> </th>
   </tr>
   <tr>
    <td><p>Versões compatíveis do AEM</p> </td>
@@ -36,26 +36,26 @@ O Adobe fornece duas versões da Estrutura de integração de comércio:
    <td>
     <ul>
      <li>AEM, Java</li>
-     <li>Integração monolítica, mapeamento pré-criado (modelo)</li>
+     <li>Integração monolítica, mapeamento pré-compilação (modelo)</li>
      <li>Repositório JCR</li>
     </ul> </td>
    <td>
     <ul>
      <li>Adobe Commerce</li>
      <li>Java e Javascript</li>
-     <li>Nenhum dado de comércio armazenado no repositório JCR</li>
+     <li>Nenhum dado comercial armazenado no repositório JCR</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p>Front-end</p> </td>
-   <td><p>AEM páginas renderizadas do lado do servidor</p> </td>
+   <td><p>Páginas renderizadas do lado do servidor do AEM</p> </td>
    <td>Aplicativo de página mista (renderização híbrida)</td>
   </tr>
   <tr>
    <td><p>Catálogo de produtos</p> </td>
    <td>
     <ul>
-     <li>Importador de produto, editor, armazenamento em cache em AEM</li>
+     <li>Importador de produtos, editor e armazenamento em cache no AEM</li>
      <li>Catálogos regulares com páginas de AEM ou proxy</li>
     </ul> </td>
    <td>
@@ -69,7 +69,7 @@ O Adobe fornece duas versões da Estrutura de integração de comércio:
    <td><p>Escalabilidade</p> </td>
    <td>
     <ul>
-     <li>Pode suportar até alguns milhões de produtos (depende do caso de uso)</li>
+     <li>Pode oferecer suporte a até alguns milhões de produtos (depende do caso de uso)</li>
      <li>Armazenamento em cache no Dispatcher</li>
     </ul> </td>
    <td>
@@ -81,41 +81,41 @@ O Adobe fornece duas versões da Estrutura de integração de comércio:
   <tr>
    <td>Modelo de dados padronizado</td>
    <td>Não</td>
-   <td>Sim, esquema Adobe Commerce GraphQL</td>
+   <td>Sim, esquema do Adobe Commerce GraphQL</td>
   </tr>
   <tr>
    <td>Disponibilidade</td>
-   <td><p>Sim. SAP Commerce Cloud (Extensão atualizada para oferecer suporte ao AEM 6.4 e Hybris 5 (padrão) e mantém compatibilidade com Hybris 4</p> <p>Salesforce Commerce Cloud (Conector de software aberto para suporte ao AEM 6.4)</p> </td>
-   <td>Sim por meio do código aberto via GitHub. Adobe Commerce (Suporta 2.3.2 (padrão) e compatível com 2.3.1).</td>
+   <td><p>Sim. SAP Commerce Cloud (Extensão atualizada para oferecer suporte a AEM 6.4 e Hybris 5 (padrão) e mantém compatibilidade com o Hybris 4</p> <p>Commerce Cloud do Salesforce (conector de código aberto para suporte ao AEM 6.4)</p> </td>
+   <td>Sim, via código aberto via GitHub. Adobe Commerce (Suporta 2.3.2 (padrão) e compatível com 2.3.1).</td>
   </tr>
   <tr>
    <td>Quando usar</td>
-   <td>Casos de uso limitados: Por exemplo, cenários em que catálogos pequenos e estáticos podem precisar ser importados</td>
-   <td>Solução preferencial na maioria dos casos de uso</td>
+   <td>Casos de uso limitados: por exemplo, para cenários em que catálogos pequenos e estáticos podem precisar ser importados</td>
+   <td>Solução preferida na maioria dos casos de uso</td>
   </tr>
  </tbody>
 </table>
 
-O eCommerce, juntamente com o Product Information Management (PIM), lida com as atividades de um site focado na venda de produtos por meio de uma loja online:
+O comércio eletrônico, juntamente com o Gerenciamento de informações de produtos (PIM), lida com as atividades de um site focado na venda de produtos por meio de uma loja online:
 
-* Criação, duração e obsolescência de um produto
-* Gestão de preços
+* Criação, vida útil e obsolescência de um produto
+* Gerenciamento de preços
 * Gerenciamento de transações
-* Gestão de catálogos inteiros
-* Registros de armazenamento ao vivo e centralizado
+* Gerenciamento de catálogos inteiros
+* Registros de armazenamento dinâmicos e centralizados
 * Interfaces da Web
 
-AEM eCommerce ajuda os profissionais de marketing a fornecer experiências de compras personalizadas e com marca em todos os pontos de contato da Web, móveis e sociais. O ambiente de criação de AEM permite personalizar páginas e componentes com base no contexto do visitante do público-alvo e nas estratégias de comercialização; por exemplo:
+O eCommerce AEM ajuda os profissionais de marketing a fornecer experiências de compras personalizadas e de marca em pontos de contato da Web, de dispositivos móveis e sociais. O ambiente de criação do AEM permite personalizar páginas e componentes com base no contexto do visitante do público-alvo e nas estratégias de merchandising; por exemplo:
 
 * Páginas de produto
 * Componentes do carrinho de compras
-* Componentes de check-out
+* Fazer check-out dos componentes
 
-A implementação permite acesso em tempo real às informações do produto. Isso pode ser usado para impor:
+A implementação permite acesso em tempo real às informações do produto. Isso pode ser usado para aplicar:
 
 * Integridade das informações do produto
 * Preços
-* Inventário de manutenção de estoque
+* Estoque de manutenção de estoque
 * Variações no estado de um carrinho de compras
 
 >[!NOTE]
@@ -126,9 +126,9 @@ A implementação permite acesso em tempo real às informações do produto. Iss
 
 ## Recursos principais {#main-features}
 
-AEM eCommerce fornece:
+O eCommerce AEM oferece:
 
-* Um número de **componentes de AEM prontos para uso** para ilustrar o que pode ser feito para o seu projeto:
+* Um certo número de **componentes de AEM prontos para uso** para ilustrar o que pode ser obtido em seu projeto:
 
    * Exibição do produto
    * Carrinho de compras
@@ -141,35 +141,35 @@ AEM eCommerce fornece:
 
    >[!NOTE]
    >
-   >A estrutura de integração fornecida pelo AEM também permite que você crie componentes de AEM adicionais para recursos de comércio, independentemente do mecanismo de comércio eletrônico específico.
+   >A estrutura de integração fornecida pelo AEM também permite a criação de componentes adicionais do AEM para recursos de comércio, independentemente do mecanismo de comércio eletrônico específico.
 
 * **Pesquisar** - utilizando:
 
-   * a pesquisa de AEM
+   * a pesquisa por AEM
    * a pesquisa do sistema de comércio eletrônico
    * uma pesquisa de terceiros
-   * ou uma combinação destes.
+   * ou uma combinação dos mesmos.
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)
 
-* Usa a capacidade AEM para **apresentar seu conteúdo em vários canais**, seja essa janela completa do navegador ou dispositivo móvel. Isso entrega seu conteúdo no formato necessário para seus visitantes.
+* Usa a capacidade do AEM para **apresentar seu conteúdo em vários canais**, seja a janela completa do navegador ou o dispositivo móvel. Isso entrega seu conteúdo no formato necessário para seus visitantes.
 
    ![](/help/sites-administering/assets/chlimage_1-132.png)
 
 * A capacidade de **desenvolva sua própria implementação de integração com base no [Estrutura de comércio eletrônico AEM](#the-framework)**.
 
-   As duas implementações atualmente disponíveis são criadas na mesma base - além da API geral (a estrutura). A implementação de uma nova integração envolve apenas a implementação dos recursos de que sua integração precisa. Os componentes de front-end podem ser usados por qualquer nova implementação, pois usam interfaces (assim, são independentes da implementação).
+   As duas implementações disponíveis atualmente são criadas na mesma base, com base na API geral (a estrutura). A implementação de uma nova integração envolve apenas a implementação dos recursos necessários à sua integração. Os componentes de front-end podem ser usados por qualquer nova implementação, à medida que usam interfaces (portanto, são independentes da implementação).
 
-* A possibilidade de desenvolver **comércio orientado para a experiência com base em dados e atividade do comprador**. Isso permite que você perceba vários cenários:
+* A possibilidade de **comércio orientado por experiência com base em dados e atividades do comprador**. Isso permite que você perceba vários cenários:
 
    * Um exemplo pode ser fornecer reduções nos custos de envio quando o pedido total exceder um valor específico.
-   * Outro pode permitir que você forneça ofertas sazonais que usam dados de perfil (por exemplo, localização). Estes podem ser realçados, novamente dependendo de outros fatores, quando necessário.
+   * Outro pode permitir que você forneça ofertas sazonais que usam dados de perfil (por exemplo, localização). Estes podem então ser destacados, novamente dependendo de outros fatores, quando necessário.
 
-   No exemplo abaixo, um teaser é mostrado, pois o conteúdo do carrinho é inferior a US$ 75:
+   No exemplo abaixo, um teaser é exibido, pois o conteúdo do carrinho é inferior a US$ 75:
 
    ![](/help/sites-administering/assets/chlimage_1-133.png)
 
-   Isso pode ser alterado quando o conteúdo do carrinho exceder $75:
+   Isso pode ser alterado quando o conteúdo do carrinho exceder US$ 75:
 
    ![](/help/sites-administering/assets/chlimage_1-134.png)
 
@@ -179,19 +179,19 @@ AEM eCommerce fornece:
    * Histórico completo do pedido
    * Atualização do catálogo expresso
 
-## Enquadramento {#the-framework}
+## A estrutura {#the-framework}
 
-O [Conceitos](/help/commerce/cif-classic/administering/concepts.md) A seção aborda a estrutura com mais detalhes, mas o seguinte fornece uma visão de alto nível e de alta velocidade da estrutura:
+A variável [Conceitos](/help/commerce/cif-classic/administering/concepts.md) A seção aborda a estrutura com mais detalhes, mas a seguir há uma exibição de alto nível e alta velocidade da estrutura:
 
 ### O quê? {#what}
 
 * A estrutura de integração fornece a API, uma variedade de componentes para ilustrar a funcionalidade e várias extensões para fornecer exemplos de métodos de conexão.
-* O quadro fornece a estrutura básica necessária para a implementação de um projeto.
+* A estrutura fornece a estrutura básica necessária para a implementação de um projeto.
 * A estrutura é extensível.
-* A estrutura não fornece um site pronto para uso e pronto para uso. É sempre necessário um certo trabalho de desenvolvimento para adaptar a estrutura às suas especificações.
+* A estrutura não fornece um site pronto para uso imediato. Uma certa quantidade de trabalho de desenvolvimento é sempre necessária para adaptar a estrutura às suas especificações.
 
 ### Por quê? {#why}
 
-* Fornecer os mecanismos básicos necessários para realizar rapidamente um site personalizado de eCommerce.
-* A Tp oferece a flexibilidade necessária para desenvolver um site de comércio eletrônico real.
-* Ilustre as práticas recomendadas.
+* Fornecer os mecanismos básicos necessários para realizar rapidamente um site de comércio eletrônico personalizado.
+* As dicas fornecem a flexibilidade necessária para desenvolver um site de comércio eletrônico real.
+* Ilustrar as práticas recomendadas.

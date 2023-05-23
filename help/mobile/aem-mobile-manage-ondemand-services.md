@@ -1,7 +1,7 @@
 ---
-title: Visualização com comprovação
+title: Visualização com simulação
 seo-title: Previewing with Preflight
-description: Esta página explica Visualização com o aplicativo Preflight.
+description: Esta página explica a visualização com o aplicativo Comprovação.
 seo-description: With the Mobile On Demand Preflight app, you can view all projects to which you have access. Follow this page to learn more about this.
 uuid: bea83055-8172-4634-88ec-5d3f163ad8e0
 contentOwner: User
@@ -17,39 +17,39 @@ ht-degree: 1%
 
 ---
 
-# Visualização com comprovação {#previewing-with-preflight}
+# Visualização com simulação {#previewing-with-preflight}
 
-Esta página explica Visualização com o aplicativo Preflight.
-
->[!NOTE]
->
->A Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
-
-As seguintes ações são executadas no aplicativo como um todo.
-
-Com o aplicativo Mobile On Demand Preflight, é possível visualizar todos os projetos aos quais você tem acesso. Após selecionar um projeto, você pode visualizar o conteúdo do aplicativo, incluindo páginas de navegação e artigos, para ter uma ideia da aparência e do desempenho do aplicativo em vários dispositivos.
+Esta página explica a visualização com o aplicativo Comprovação.
 
 >[!NOTE]
 >
->O aplicativo Preflight é semelhante ao visualizador PhoneGap Enterprise na natureza.
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-## Visualização com comprovação {#previewing-with-preflight-1}
+As ações a seguir são executadas no aplicativo como um todo.
 
-1. No Mobile, escolha seu aplicativo Mobile On-Demand no catálogo.
-1. Clique nas reticências (...) no **Gerenciar artigos** (ou Banners/Coleções).
+Com o aplicativo Comprovação por demanda para dispositivo móvel, é possível visualizar todos os projetos aos quais você tem acesso. Depois de selecionar um projeto, você pode pré-visualizar o conteúdo do aplicativo, incluindo navegar pelas páginas e artigos para ter uma ideia de como o aplicativo é exibido e executado em vários dispositivos.
+
+>[!NOTE]
+>
+>O aplicativo Preflight é semelhante à natureza do visualizador do PhoneGap Enterprise.
+
+## Visualização com simulação {#previewing-with-preflight-1}
+
+1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
+1. Clique nas reticências (...) da **Gerenciar artigos** (ou Banners/Coleções).
 1. Selecionar **Comprovação** na barra de ações.
-1. Clique em **Ativar comprovação** na caixa de diálogo.
-1. O aplicativo agora estará pronto para visualização no aplicativo Mobile On-Demand Preflight.
+1. Clique em **Ativar simulação** da caixa de diálogo.
+1. Seu aplicativo estará pronto para visualização no aplicativo de simulação por demanda para dispositivos móveis.
 
 ![chlimage_1-8](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->O aplicativo AEM Preflight é usado para visualizar o conteúdo e navegar nas páginas. Para saber mais sobre o aplicativo Preflight, clique em [here](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>O aplicativo Comprovação do AEM é usado para visualizar conteúdo e navegar pelas páginas. Para saber mais detalhes sobre o aplicativo Comprovação, clique em [aqui](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 
-### Avançar {#getting-ahead}
+### Avançando {#getting-ahead}
 
-Se você ainda precisar de mais informações sobre a criação de conteúdo, consulte os seguintes recursos para criar e gerenciar conteúdo em um aplicativo do AEM Mobile:
+Se ainda precisar de mais informações sobre criação de conteúdo, consulte os seguintes recursos para criar e gerenciar conteúdo em um aplicativo do AEM Mobile:
 
 * [Painel de aplicativos do AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
 * [Gerenciamento de conteúdo](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)

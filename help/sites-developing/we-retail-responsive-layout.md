@@ -1,7 +1,7 @@
 ---
-title: Tentando um layout responsivo no We.Retail
+title: Experimentar layout responsivo no We.Retail
 seo-title: Trying out Responsive Layout in We.Retail
-description: Tentando um layout responsivo no We.Retail
+description: Experimentar layout responsivo no We.Retail
 seo-description: null
 uuid: d9613655-f54e-458f-9175-d07bb868f58b
 contentOwner: User
@@ -13,38 +13,38 @@ exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
-# Tentando um layout responsivo no We.Retail{#trying-out-responsive-layout-in-we-retail}
+# Experimentar layout responsivo no We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Todas as páginas We.Retail usam o componente Contêiner de layout para implementar um design responsivo. O contêiner de layout fornece um sistema de parágrafo que permite posicionar os componentes dentro de uma grade responsiva. Esta grade pode reorganizar o layout de acordo com o dispositivo/tamanho e formato da janela. O componente é usado junto com a variável **Layout** no editor de páginas, que permite criar e editar seu layout responsivo dependendo do dispositivo.
+Todas as páginas do We.Retail usam o componente de Contêiner de layout para implementar um design responsivo. O contêiner de layout fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o tamanho e o formato do dispositivo/janela. O componente é usado em conjunto com o **Layout** no editor de páginas, o que permite criar e editar o layout responsivo dependendo do dispositivo.
 
-## Tentando {#trying-it-out}
+## Experimentando {#trying-it-out}
 
-1. Edite a página Navegação no Ártico na seção Experiências do ramo de idioma principal.
+1. Edite a página Navegação no Ártico na seção Experiências da ramificação principal de idioma.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. Mudar para **Visualizar** para ver a página da forma que seria renderizada para um visitante do site. Role para baixo até o conteúdo do artigo *Aloha espíritos no noroeste da Noruega*.
+1. Alternar para **Visualizar** para ver a página como ela seria renderizada para um visitante do site. Role para baixo até o conteúdo do artigo *Almoços Aloha em Norther Norway*.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
-1. Redimensione a janela do navegador e observe o layout se adaptando dinamicamente ao redimensionamento.
+1. Redimensione a janela do navegador e observe enquanto o layout se adapta dinamicamente ao redimensionamento.
 
    ![chlimage_1-179](assets/chlimage_1-179.png)
 
-1. Alterne para o modo Layout . A barra de ferramentas do emulador é exibida automaticamente, permitindo que você planeje o layout por dispositivo de destino.
+1. Alternar para o modo Layout. A barra de ferramentas do emulador é exibida automaticamente, permitindo planejar o layout por dispositivo direcionado.
 
-   Selecionar um componente exibe opções flutuantes e de ocultação no menu de edição junto com alças de redimensionamento para o componente.
+   Selecionar um componente exibe as opções flutuantes e ocultas no menu de edição juntamente com as alças de redimensionamento do componente.
 
    ![chlimage_1-180](assets/chlimage_1-180.png)
 
-1. Agarrar e arrastar a alça de redimensionamento do componente mostra automaticamente a grade de layout para ajudá-lo com o redimensionamento.
+1. A ação de arrastar e segurar a alça de redimensionamento do componente mostra automaticamente a grade do layout para ajudá-lo com o redimensionamento.
 
    ![chlimage_1-181](assets/chlimage_1-181.png)
 
 ## Informações adicionais {#further-information}
 
-Para obter mais informações, consulte o documento de criação [Layout responsivo](/help/sites-authoring/responsive-layout.md) ou o documento do administrador [Configuração do contêiner de layout e modo de layout](/help/sites-administering/configuring-responsive-layout.md) para obter detalhes técnicos completos.
+Para obter mais informações, consulte o documento de criação [Layout responsivo](/help/sites-authoring/responsive-layout.md) ou o documento do administrador [Configurar o contêiner de layout e o modo de layout](/help/sites-administering/configuring-responsive-layout.md) para obter detalhes técnicos completos.

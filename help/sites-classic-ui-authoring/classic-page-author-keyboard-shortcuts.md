@@ -21,14 +21,14 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 >[!NOTE]
 >
->Nas tabelas a seguir, para as combinações de teclas na **Atalho** , as teclas Ctrl e Command funcionam no macOS.
+>Nas tabelas a seguir, para as combinações de teclas no **Atalho** , as teclas Ctrl e Command funcionam no macOS.
 
 >[!NOTE]
 >
->Multisseleção em um dispositivo de desktop:
+>Seleção múltipla em um dispositivo de desktop:
 >
->* Windows: Clique com a tecla Ctrl pressionada nos componentes necessários.
->* Mac: Cmd+clique nos componentes necessários.
+>* Windows: pressione Ctrl e clique nos componentes necessários.
+>* Mac: pressione Cmd e clique nos componentes necessários.
 >
 
 
@@ -64,12 +64,12 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-C</code></strong></td>
-   <td>Copiar parágrafos selecionados.</td>
+   <td>Copiar os parágrafos selecionados.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Recortar parágrafos selecionados.<strong><br /> Observação:</strong> O parágrafo recortado não desaparecerá até que tenha sido colado no novo local.</td>
+   <td>Recortar parágrafos selecionados.<strong><br /> Nota:</strong> O parágrafo recortado não desaparecerá até que seja colado no novo local.</td>
   </tr>
   <tr>
    <td> </td>
@@ -84,17 +84,17 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
   <tr>
    <td> </td>
    <td><strong><code>Super-Del (fn-delete)</code></strong></td>
-   <td>Excluir os parágrafos selecionados.</td>
+   <td>Excluir parágrafos selecionados.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Cmd-Backspace</code></strong></td>
-   <td>Excluir os parágrafos selecionados.</td>
+   <td>Excluir parágrafos selecionados.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Forçar o menu de contexto padrão (navegador).<br /> <strong>Observação:</strong> AEM menus de contexto ocorrem apenas na interface clássica.</td>
+   <td>Forçar menu de contexto padrão (navegador).<br /> <strong>Nota:</strong> Menus de contexto AEM só ocorrem na interface clássica.</td>
   </tr>
   <tr>
    <td> </td>
@@ -117,24 +117,24 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
    <td>Sublinhado</td>
   </tr>
   <tr>
-   <td>Localizador de conteúdo - Caixa de pesquisa</td>
+   <td>Content Finder - Caixa de pesquisa</td>
    <td><strong><code>down-arrow</code></strong></td>
-   <td>Acione uma lista de sugestões. Necessário quando alguns caracteres foram inseridos para acionar a lista automaticamente (isso acontece quando dois ou mais caracteres foram inseridos).</td>
+   <td>Acione uma lista de sugestões. Necessário quando poucos caracteres foram inseridos para acionar a lista automaticamente (isso acontece quando dois ou mais caracteres foram inseridos).</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>right-arrow</code></strong><br /> (em um caminho sugerido)</td>
-   <td>Selecionar item e acionar sugestões para o caminho selecionado.</td>
+   <td>Selecione o item e acione sugestões para o caminho selecionado.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>left-arrow</code></strong><br /> (em um caminho sugerido)</td>
-   <td>Selecione o item e acione sugestões para seus ancestrais (como em irmãos de pais).</td>
+   <td>Selecione o item e acione sugestões para seus antecessores (como em irmãos do pai).</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Enter</code></strong><br /> (em um caminho sugerido)</td>
-   <td>Selecionar item e acionar pesquisa.</td>
+   <td>Selecione o item e acione a pesquisa.</td>
   </tr>
   <tr>
    <td> </td>
@@ -144,7 +144,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
   <tr>
    <td>Localizador de conteúdo<br /> </td>
    <td><strong><code>Alt+drag</code></strong></td>
-   <td><p>Arraste ativos, solte no destino.</p> <p>A ação de soltar produz um novo parágrafo; em vez de substituir o ativo no destino.</p> </td>
+   <td><p>Arraste os ativos e solte no destino.</p> <p>A ação de soltar produz um novo parágrafo; em vez de substituir o ativo no destino.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -153,7 +153,7 @@ Vários atalhos de teclado também estão disponíveis para os usuários de desk
 
 ## Atalhos de teclado para desenvolvimento {#keyboard-shortcuts-for-development}
 
-Atalhos adicionais de teclado estão disponíveis para desenvolvedores de desktop ao usar o editor de páginas.
+Atalhos de teclado adicionais estão disponíveis para desenvolvedores de desktop ao usar o editor de página.
 
 <table>
  <tbody>
@@ -164,8 +164,8 @@ Atalhos adicionais de teclado estão disponíveis para desenvolvedores de deskto
   </tr>
   <tr>
    <td>Modo de edição</td>
-   <td>Defina o sufixo a seguir no URL:<br /> <code>?debugClientLibs=true</code><br /> Em seguida, use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
-   <td>Para ver as estatísticas de tempo para o carregamento da página.</td>
+   <td>Defina o seguinte sufixo no URL:<br /> <code>?debugClientLibs=true</code><br /> Em seguida, use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Para ver as estatísticas de tempo do carregamento da página.</td>
   </tr>
  </tbody>
 </table>

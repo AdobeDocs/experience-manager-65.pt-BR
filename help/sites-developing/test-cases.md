@@ -1,7 +1,7 @@
 ---
 title: Definição dos casos de teste
 seo-title: Defining your Test Cases
-description: Os casos de teste devem se basear nos casos de uso e na especificação detalhada dos requisitos
+description: Seus casos de teste devem se basear nos casos de uso e na especificação detalhada dos requisitos
 seo-description: Your test cases should be based upon the use cases and the detailed requirements specification
 uuid: daaa5370-bcd3-45a6-9974-f9b5af6a1529
 contentOwner: Guillaume Carlino
@@ -20,12 +20,12 @@ ht-degree: 0%
 
 # Definição dos casos de teste{#defining-your-test-cases}
 
-Os casos de teste devem se basear no seguinte:
+Seus casos de teste devem se basear no:
 
 **Casos de uso**
 
 * Eles definem a funcionalidade necessária em termos da interação entre os Atores (funções que iniciam determinadas ações) e o sistema.
-* Os Casos de uso devem ser definidos pelo cliente.
+* Os casos de uso devem ser definidos pelo cliente.
 
 **Especificação detalhada dos requisitos**
 
@@ -33,47 +33,47 @@ Os casos de teste devem se basear no seguinte:
 
 Os ensaios devem definir claramente:
 
-* Pré-requisitos; podem abranger sistemas, configurações ou experiência de testador específicos.
-* Etapas a seguir; a um nível adequado de pormenor.
+* Pré-requisitos; eles podem abranger sistemas específicos, configurações ou experiência do testador.
+* Etapas a serem seguidas, em um nível apropriado de detalhes.
 * Resultados esperados.
-* Critérios claros para aprovação ou falha.
+* Limpar critérios para aprovação ou reprovação.
 
-A perspectiva de automatizar casos de testes é obviamente atraente, pois pode eliminar tarefas repetitivas.
+A perspectiva de automatizar casos de teste é obviamente atraente, pois pode eliminar tarefas repetitivas.
 
-## Testes manuais versus automatizados {#manual-versus-automated-tests}
+## Testes manuais versus testes automatizados {#manual-versus-automated-tests}
 
-No entanto, a automatização dos casos de ensaio constitui um investimento significativo, pelo que devem ser considerados alguns aspectos:
+No entanto, a automatização de casos de teste é um investimento significativo, portanto, alguns aspectos devem ser considerados:
 
-* Requer tempo, esforço e experiência para configurar e configurar.
-* Se o navegador for baseado, há um risco aumentado de problemas quando as atualizações do navegador são instaladas; exigindo mais tempo para corrigir.
-* Só é realmente viável para grandes projetos.
+* Requer tempo, esforço e experiência para instalar e configurar o.
+* Se baseado em navegador, há um risco maior de problemas quando as atualizações do navegador são instaladas; é necessário mais tempo para corrigir.
+* Apenas muito viável para grandes projetos.
 * Bom quando várias versões estão sendo geradas para teste ou no plano de lançamento de longo prazo.
 
-## Teste de aspectos específicos {#testing-specific-aspects}
+## Testar aspectos específicos {#testing-specific-aspects}
 
-Ao testar AEM alguns detalhes específicos são de especial interesse:
+Ao testar o AEM, alguns detalhes específicos são de especial interesse:
 
-**Criar e publicar ambientes**
+**Ambientes de criação e publicação**
 
-Embora, coberto por [Ambientes](/help/sites-developing/the-basics.md#environments) vale a pena destacar um fator decisivo de AEM no que diz respeito aos testes.
+Embora, [Ambientes](/help/sites-developing/the-basics.md#environments) vale destacar um fator decisivo do AEM em relação aos testes.
 
-Você deve considerar AEM como dois aplicativos:
+Você deve considerar o AEM como dois aplicativos:
 
 * o *Autor* ambiente Essa instância permite que os autores insiram e publiquem conteúdo.
-Ele tem um conjunto pequeno (er) e previsível de usuários, para os quais a funcionalidade e o desempenho específicos são cruciais.
+Ele tem um pequeno conjunto previsível de usuários, para os quais a funcionalidade e o desempenho específicos são cruciais.
 
-* o *Publicar* ambiente Essa instância apresenta o site em seu formulário publicado para acesso de visitantes.
-Isso geralmente tem um conjunto maior de usuários, onde o volume de tráfego nem sempre é 100% previsível. O desempenho ainda é fundamental ao responder às solicitações. O armazenamento em cache e o balanceamento de carga também devem ser considerados.
+* o *Publish* ambiente Essa instância apresenta o site em seu formulário publicado para acesso dos visitantes.
+Isso geralmente tem um conjunto maior de usuários, em que o volume de tráfego nem sempre é 100% previsível. O desempenho ainda é crucial ao responder às solicitações. O armazenamento em cache e o balanceamento de carga também devem ser considerados.
 
-Embora o mesmo software como tal, eles:
+Embora sejam o mesmo software, eles:
 
-* servir diferentes finalidades
+* servir a diferentes propósitos
 * têm requisitos diferentes em relação à funcionalidade e ao desempenho
-* são configuradas de forma diferente
-* são afinadas separadamente
+* são configurados de forma diferente
+* são ajustados separadamente
 * cada um terá seu próprio conjunto de testes de aceitação
 
-Por outras palavras, devem ser testados separadamente e com casos de ensaio diferentes.
+Em outras palavras, eles devem ser testados separadamente e com casos de teste diferentes.
 
 **Personalização**
 
@@ -85,13 +85,13 @@ O armazenamento em cache também deve ser verificado para verificar o comportame
 
 A maioria dos projetos instalará o Dispatcher para armazenamento em cache e balanceamento de carga.
 
-O teste é difícil (o armazenamento em cache ocorre em vários níveis e em vários locais) e deve ser feito em caixa preta. Os principais aspectos a serem testados são:
+Os testes são difíceis (o armazenamento em cache ocorre em vários níveis e em vários locais) e devem ser feitos em uma base de caixa preta. Os principais aspectos a serem testados são:
 
 * **Precisão**
-garanta que as atualizações de conteúdo sejam vistas pelo visitante do site.
+certifique-se de que as atualizações de conteúdo sejam vistas pelo visitante do site.
 
 * **Continuidade**
-certifique-se de que o site ainda esteja disponível quando um servidor for desligado.
+verifique se o site ainda está disponível quando um servidor é desligado.
 
 * **Clusters**
 Os clusters são usados para fornecer:
@@ -101,10 +101,10 @@ Se um servidor falhar, outros servidores no cluster assumirão o processamento.
 
    * **Desempenho**
 O balanceamento de carga com failover completo aumenta o desempenho de um cluster.
-Quando usado para um projeto do cliente, o cluster deve ser testado para confirmar a operação correta da configuração.
+Quando usado para um projeto de cliente, o cluster deve ser testado para confirmar a operação correta da configuração.
 
 ## Teste de software de terceiros {#testing-third-party-software}
 
-Qualquer software de terceiros com interface de AEM será referenciado nas Especificações de Requisitos Detalhadas.
+Qualquer software de terceiros com interface com AEM será mencionado nas Especificações detalhadas de requisitos.
 
-Os ensaios necessários (dependendo do âmbito definido) devem ser analisados e obtidos ensaios limpos.
+Devem analisar-se todos os ensaios necessários (dependendo do âmbito definido) e obter-se um ensaio limpo.

@@ -1,6 +1,6 @@
 ---
-title: Mensagens de erro sobre APIs obsoletas em logs de erros
-description: Mensagens de erro sobre APIs obsoletas em logs de erros
+title: Mensagens de erro sobre APIs obsoletas em logs de erro
+description: Mensagens de erro sobre APIs obsoletas em logs de erro
 source-git-commit: b05666883645ca11784292e4bfb5bf9c1e35a43b
 workflow-type: tm+mt
 source-wordcount: '102'
@@ -9,7 +9,7 @@ ht-degree: 7%
 ---
 
 
-# Mensagens de erro sobre APIs obsoletas em logs de erros {#error-messages-about-deprecated-apis-in-error-logs}
+# Mensagens de erro sobre APIs obsoletas em logs de erro {#error-messages-about-deprecated-apis-in-error-logs}
 
 O problema se aplica às seguintes versões:
 
@@ -25,8 +25,8 @@ O problema se aplica às seguintes versões:
 1. Instalar [Experience Manager Forms Service Pack 13 ou posterior (6.5.13.0 ou posterior)](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=pt-BR)
 1. Use o link a seguir para baixar o pacote (arquivo .jar com resolução) da Distribuição de software:
 
-   https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]pack/com.adobe.livecycle.dsc.externalloginmodule-4.0.8.jar
+   https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[..]pack/com.adobe.livecycle.dsc.externalloginmodule-4.0.8.jar
 
-1. Abra o Experience Manager Configuration Manager e instale o arquivo baixado com.adobe.livecycle.dsc.externalloginmodule-4.0.8.jar.
+1. Abra o Gerenciador de configuração do Experience Manager e instale o arquivo com.adobe.livecycle.dsc.externalloginmodule-4.0.8.jar baixado.
 
 O problema foi resolvido.

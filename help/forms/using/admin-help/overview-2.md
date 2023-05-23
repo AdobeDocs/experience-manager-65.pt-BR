@@ -1,7 +1,7 @@
 ---
-title: Noções básicas para o gerenciamento de certificados e credenciais
+title: Noções básicas do gerenciamento de certificados e credenciais
 seo-title: Basics of managing certificates and credentials
-description: Saiba mais sobre as noções básicas do gerenciamento de certificados e credenciais.
+description: Saiba mais sobre as noções básicas de gerenciamento de certificados e credenciais.
 seo-description: Learn about the basics of managing certificates and credentials.
 uuid: f421e206-e7b5-416c-b9fb-974094f10a66
 contentOwner: admin
@@ -17,19 +17,19 @@ ht-degree: 0%
 
 ---
 
-# Noções básicas para o gerenciamento de certificados e credenciais {#basics-of-managing-certificates-and-credentials}
+# Noções básicas do gerenciamento de certificados e credenciais {#basics-of-managing-certificates-and-credentials}
 
-A *credencial* contém as informações da chave privada necessárias para assinar ou identificar documentos. A *certificate* são informações de chave pública configuradas para confiança. Os formulários AEM usam certificados e credenciais para várias finalidades:
+A *credencial* contém as informações da chave privada necessárias para assinar ou identificar documentos. A *certificado* são informações de chave pública que você configura para confiança. Os formulários AEM usam certificados e credenciais para várias finalidades:
 
-* As extensões do Acrobat Reader DC usam uma credencial para habilitar os direitos de uso do Adobe Reader em documentos do PDF. (Consulte [Configurar credenciais para uso com extensões do Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
-* Você pode configurar o Rights Management para exibir credenciais para uso no Acrobat somente de emissores confiáveis. (Consulte [Definir configurações de exibição de Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) O nome comum (NC) deve constar do certificado.
-* O serviço de assinatura acessa certificados e credenciais. Para obter detalhes sobre o serviço de assinatura, consulte [Referência de serviços](https://www.adobe.com/go/learn_aemforms_services_65).
+* As extensões do Acrobat Reader DC usam uma credencial para ativar os direitos de uso do Adobe Reader em documentos do PDF. (Consulte [Configuração de credenciais para uso com extensões do Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
+* Você pode configurar o Rights Management para exibir credenciais para uso no Acrobat somente de emissores confiáveis. (Consulte [Definir configurações de exibição de Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) A Common Name (CN) deve estar presente no certificado.
+* O serviço de Assinatura acessa certificados e credenciais. Para obter detalhes sobre o serviço de assinatura, consulte [Referência de serviços](https://www.adobe.com/go/learn_aemforms_services_65).
 
 **Gerar uma chave de par**
 
-AEM formulários usa o Armazenamento de confiança para armazenar e gerenciar certificados, credenciais e CRLs (certificate&#39;&#39; lists). Além disso, você pode usar um dispositivo HSM (Hardware Security Module, Módulo de segurança de hardware) independente para armazenar chaves privadas.
+O AEM Forms usa seu armazenamento de confiança para armazenar e gerenciar certificados, credenciais e listas de certificados revogados (CRLs). Além disso, você pode usar um dispositivo HSM (Hardware Security Module, módulo de segurança de hardware) independente para armazenar chaves privadas.
 
-AEM forms não fornece nenhuma opção para gerar um par de chaves. No entanto, você pode gerá-lo usando ferramentas, como o keytool do Java, e importá-lo AEM forms Trust Store. Para obter mais informações sobre a ferramenta-chave Java, consulte o seguinte:
+O AEM Forms não fornece nenhuma opção para gerar um par de chaves. No entanto, você pode gerá-lo usando ferramentas, como a ferramenta de chave Java, e importá-lo no AEM Forms Trust Store. Para obter mais informações sobre a ferramenta Java keytool, consulte o seguinte:
 
 [https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html](https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html)
 
@@ -37,19 +37,19 @@ AEM forms não fornece nenhuma opção para gerar um par de chaves. No entanto, 
 
 [https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL](https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL)
 
-Os seguintes tipos de assinatura são suportados e podem ser importados em AEM formulários:
+Os seguintes tipos de assinatura são suportados e podem ser importados em formulários AEM:
 
 * Assinatura XML
 * XMLTimeStampToken
-* RFC 3161 TimeStampToken
+* RFC 3161 Token de carimbo de data/hora
 * PKCS#7
 * PKCS#1
 * Assinaturas DSA
 
-**Manuseio de chave perdida ou comprometida**
+**Tratamento de chave perdida ou comprometida**
 
-Se você suspeitar que sua chave foi perdida ou comprometida, execute as seguintes ações:
+Se você suspeitar que a chave foi perdida ou comprometida, execute as seguintes ações:
 
-1. Informe a autoridade de certificação para que ela adicione a chave comprometida na lista de revogação de certificado para revogar a chave.
+1. Informe a autoridade de certificação para que ela adicione a chave comprometida à lista de certificados revogados para revogar a chave.
 1. Obter uma nova chave e seus certificados da autoridade de certificação.
 1. Assine os documentos que foram assinados usando a chave comprometida novamente usando a nova chave.

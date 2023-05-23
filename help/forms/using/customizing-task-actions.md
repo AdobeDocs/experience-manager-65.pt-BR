@@ -1,5 +1,5 @@
 ---
-title: Personalização de ações da tarefa
+title: Personalizando Ações da Tarefa
 seo-title: Customizing Task Actions
 description: Você pode personalizar a aparência das ações da tarefa, usar somente imagens para ações e personalizar as imagens usadas nas ações de rota.
 seo-description: You can customize appearance of the task actions, use only images for actions, and customize the images used in route actions.
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 ---
 
-# Personalização de ações da tarefa {#customizing-task-actions}
+# Personalizando Ações da Tarefa {#customizing-task-actions}
 
-A área de trabalho do AEM Forms permite que os usuários personalizem as ações da tarefa. Antes de personalizar as ações da tarefa, siga as etapas listadas em [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+O espaço de trabalho do AEM Forms permite que os usuários personalizem as ações da tarefa. Antes de personalizar as ações da tarefa, siga as etapas listadas em [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
-## Personalização do estilo do texto {#customizing-text-style}
+## Personalização do estilo de texto {#customizing-text-style}
 
-Para personalizar o estilo do texto, adicione o seguinte trecho de código no `/apps/ws/css/newStyle.css` arquivo:
+Para personalizar o estilo do texto, adicione o seguinte fragmento de código na `/apps/ws/css/newStyle.css` arquivo:
 
 ```css
 /*-------- For Task Actions visible in task list task action popup ----------------------------------------------------*/
@@ -110,7 +110,7 @@ Para personalizar o estilo do texto, adicione o seguinte trecho de código no `/
 
 ## Personalização de imagens {#customizing-images}
 
-Para personalizar as imagens, adicione o seguinte fragmento de código no `/apps/ws/css/newStyle.css` arquivo. O trecho de código a seguir personaliza a imagem do *bloqueio* ação:
+Para personalizar as imagens, adicione o seguinte fragmento de código na `/apps/ws/css/newStyle.css` arquivo. O trecho de código a seguir personaliza a imagem para o *bloquear* ação:
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -120,7 +120,7 @@ Para personalizar as imagens, adicione o seguinte fragmento de código no `/apps
 
 >[!NOTE]
 >
->Adicione estilos separados para exibir imagens diferentes ou imagens de resolução diferente para a lista de tarefas e as ações de detalhes da tarefa. Por exemplo, para alterar a ação &quot;bloquear&quot;:
+>Adicione estilos separados para exibir imagens diferentes ou imagens de diferentes resoluções para as ações Lista de tarefas e Detalhes da tarefa. Por exemplo, para alterar a ação &#39;lock&#39;:
 
 ```css
 #taskarea .taskActionsPopUp .lock{
@@ -131,13 +131,13 @@ Para personalizar as imagens, adicione o seguinte fragmento de código no `/apps
 }
 ```
 
-## Mostrar somente imagens para ações {#showing-only-images-for-actions}
+## Mostrando apenas imagens para ações {#showing-only-images-for-actions}
 
-Para mostrar apenas imagens para ações, personalize as imagens usadas nas ações de rota. Para obter informações detalhadas, consulte [Imagens para ações de rota](/help/forms/using/images-route-actions.md).
+Para mostrar somente imagens para ações, personalize as imagens usadas nas ações de rota. Para obter informações detalhadas, consulte [Imagens para Ações de Roteiro](/help/forms/using/images-route-actions.md).
 
-### Menu pop-up de ação da tarefa Lista de tarefas {#task-list-task-action-nbsp-pop-up-menu}
+### Menu pop-up de ação de tarefa da Lista de tarefas {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Você precisa de um pacote de desenvolvimento para personalizar itens do menu pop-up da ação da lista de tarefas do espaço de trabalho do AEM Forms. Para obter informações detalhadas sobre a criação de pacotes de desenvolvimento, consulte [Criação do código do espaço de trabalho do AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. Você precisa de um pacote de desenvolvimento para personalizar itens do menu pop-up de ações da lista de tarefas do espaço de trabalho do AEM Forms. Para obter informações detalhadas sobre como criar um pacote de desenvolvimento, consulte [Criação do código do espaço de trabalho do AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Copiar /libs/ws/js/runtime/templates/task.html para `/apps/ws/js/runtime/templates/task.html`substitua o seguinte trecho de código:
 
@@ -262,12 +262,12 @@ Para mostrar apenas imagens para ações, personalize as imagens usadas nas aç�
    }
    ```
 
-### Menu pop-up Ação da tarefa Detalhes da tarefa {#task-details-task-action-pop-up-menu}
+### Menu pop-up da ação da tarefa Detalhes da tarefa {#task-details-task-action-pop-up-menu}
 
-Execute as seguintes etapas para personalizar o menu pop-up Ações da tarefa Detalhes :
+Execute as seguintes etapas para personalizar o menu pop-up de ações da tarefa Detalhes:
 
 * Copie o arquivo /libs/ws/js/runtime/templates/taskdetails.html para o `/apps/ws/js/runtime/templates/` pasta:
-* Encapsule a tag do ícone dentro da tag de âncora em vez do texto. Por exemplo, a variável *novo código* listado abaixo encapsula a tag do ícone dentro da tag de âncora:
+* Encapsula a tag de ícone dentro da tag de âncora em vez de texto. Por exemplo, a variável *novo código* listado abaixo encapsula a tag de ícone dentro da tag de âncora:
 
 ```html
 // Original code

@@ -21,28 +21,28 @@ ht-degree: 1%
 
 ## Pré-requisitos {#prerequisite}
 
-Conhecimento sobre layouts, que permite criar/usar um layout personalizado. Consulte [Alterar o layout do painel](../../forms/using/layout-capabilities-adaptive-forms.md).
+Conhecimento de layouts, que permite criar/usar um layout personalizado. Consulte [Alteração do layout do painel](../../forms/using/layout-capabilities-adaptive-forms.md).
 
-## Componente de layout do painel de formulário adaptável {#adaptive-form-panel-layout-component}
+## Componente Layout do painel de formulário adaptável {#adaptive-form-panel-layout-component}
 
-O componente Layout do painel de formulário adaptável controla a maneira como os componentes de formulário adaptáveis são posicionados em um painel em relação à interface do usuário.
+O componente Layout do painel de formulário adaptável controla a forma como os componentes de formulário adaptáveis são dispostos em um painel em relação à interface do usuário.
 
 ## Criação de um layout de painel personalizado {#creating-a-custom-panel-layout}
 
-1. Navegar até o local `/crx/de`.
-1. Copiar um layout de painel do local `/libs/fd/af/layouts/panel` (por exemplo, `tabbedPanelLayout`) a `/apps` (por exemplo, `/apps/af-custom-layout`).
-1. Renomeie o layout copiado para o `customPanelLayout`. Alterar as propriedades dos nós `qtip` e `jcr:description`. Por exemplo, altere para `Custom layout - Toggle tabs`.
+1. Navegue até o local `/crx/de`.
+1. Copiar um layout de painel do local `/libs/fd/af/layouts/panel` (por exemplo, `tabbedPanelLayout`) para `/apps` (por exemplo, `/apps/af-custom-layout`).
+1. Renomear o layout copiado para `customPanelLayout`. Alterar as propriedades dos nós `qtip` e `jcr:description`. Por exemplo, altere para `Custom layout - Toggle tabs`.
 
-qdica
+qtip
 
-![Instantâneo CRX DE Layout do Painel Personalizado](assets/custom_layout_new.png)
+![Instantâneo CRX DE de layout de painel personalizado](assets/custom_layout_new.png)
 
 >[!NOTE]
 >
->Configuração da propriedade `guideComponentType`ao valor `fd/af/layouts/panel` determina que o layout é um layout de painel.
+>Definição da propriedade `guideComponentType`ao valor `fd/af/layouts/panel` determina que o layout é um layout de painel.
 
-1. Renomear o arquivo `tabbedPanelLayout.jsp` no novo layout para customPanelLayout.jsp.
-1. Para introduzir novos estilos e comportamentos, crie uma biblioteca de clientes no `etc` nó . Por exemplo, no local /etc/af-custom-layout-clientlib, crie o nó client-library. Deixe o nó ter a propriedade de categorias af.panel.custom. Ele tem os seguintes arquivos .css e .js:
+1. Renomear o arquivo `tabbedPanelLayout.jsp` no novo layout em customPanelLayout.jsp.
+1. Para introduzir novos estilos e comportamentos, crie uma biblioteca do cliente no `etc` nó. Por exemplo, no local /etc/af-custom-layout-clientlib, crie o nó client-library. Deixe o nó ter a propriedade de categorias af.panel.custom. Ele tem os seguintes arquivos .css e .js:
 
    ```css
    /** CSS defining new styles used by custom layout **/
@@ -114,9 +114,9 @@ qdica
    });
    ```
 
-1. Para aprimorar a aparência e o comportamento, é possível incluir uma `client library`.
+1. Para aprimorar a aparência e o comportamento, você pode incluir uma `client library`.
 
-   Além disso, atualize os caminhos dos scripts incluídos em arquivos .jsp. Por exemplo, atualize o `customPanelLayout.jsp` como segue:
+   Além disso, atualize os caminhos dos scripts incluídos nos arquivos .jsp. Por exemplo, atualize o `customPanelLayout.jsp` do seguinte modo:
 
    ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
@@ -145,7 +145,7 @@ qdica
    </div>
    ```
 
-   O `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` arquivo:
+   A variável `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` arquivo:
 
    ```html
    <%-- jsp governing the navigation part --%>
@@ -174,7 +174,7 @@ qdica
    </ul>
    ```
 
-   O arquivo `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
+   A atualização `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
 
    ```html
    <%-- jsp governing the panel content --%>
@@ -201,10 +201,10 @@ qdica
    </div>
    ```
 
-1. Abra um formulário adaptável no modo Criação. O layout do painel definido é adicionado à lista para configurar layouts de painel.
+1. Abra um formulário adaptável no Modo de criação. O layout de painel definido é adicionado à lista para configurar layouts de painel.
 
-   ![O layout do Painel personalizado é exibido na lista de layout do painel](assets/auth-layt.png) ![Captura de tela do formulário adaptável, usando o layout personalizado do painel](assets/s1.png) ![Captura de tela demonstrando a funcionalidade de alternância do layout personalizado](assets/s2.png)
+   ![O layout personalizado do painel é exibido na lista de layouts do painel](assets/auth-layt.png) ![Captura de tela do formulário adaptável, usando o layout de painel personalizado](assets/s1.png) ![Captura de tela que demonstra a funcionalidade de alternância do layout personalizado](assets/s2.png)
 
-ZIP de amostra para um layout de painel personalizado e um formulário adaptável usando-o.
+Exemplo de ZIP para um layout de painel personalizado e um formulário adaptável usando-o.
 
 [Obter arquivo](assets/af-custom-layout.zip)

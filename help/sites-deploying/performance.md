@@ -1,7 +1,7 @@
 ---
 title: Desempenho e escalabilidade
 seo-title: Performance & Scalability
-description: Este white paper discute a maneira como a escalabilidade foi incorporada ao AEM, juntamente com indicadores de desempenho e recursos de recuperação de desastres.
+description: Este white paper discute como a escalabilidade foi integrada ao AEM, juntamente com indicadores de desempenho e recursos de recuperação de desastres.
 seo-description: This white paper discusses the ways scalability has been built into AEM along with performance indicators and disaster recovery features.
 uuid: 709ed651-534d-4b80-8f9b-ac99669f6f61
 contentOwner: User
@@ -19,9 +19,9 @@ ht-degree: 2%
 
 # Desempenho e escalabilidade{#performance-scalability}
 
-## White Paper: AEM escalabilidade, desempenho e recuperação de desastres {#white-paper-aem-scalability-performance-and-disaster-recovery}
+## Informe oficial: Escalabilidade, desempenho e recuperação de desastres do AEM {#white-paper-aem-scalability-performance-and-disaster-recovery}
 
-Este white paper discute a maneira como a escalabilidade foi integrada ao Adobe Experience Manager, juntamente com indicadores de desempenho excepcionais e excelentes recursos de recuperação de desastres.
+Este white paper discute como a escalabilidade foi integrada ao Adobe Experience Manager, juntamente com indicadores de desempenho excelentes e excelentes recursos de recuperação de desastres.
 
 Uma plataforma flexível e escalável que promove agilidade técnica, alto desempenho e recursos sólidos de recuperação de desastres.
 

@@ -36,7 +36,7 @@ Todo esse conteúdo perfeitamente estruturado (em Fragmentos de conteúdo) está
 
 O que você precisa é de uma maneira de direcionar conteúdo específico, selecionar o que precisa e retorná-lo ao seu aplicativo para processamento adicional.
 
-Com o Adobe Experience Manager (AEM), você pode acessar seletivamente seus Fragmentos de conteúdo, usando a API do GraphQL AEM, para retornar somente o conteúdo necessário. Isso significa que você pode realizar a entrega headless de conteúdo estruturado para uso em seus aplicativos.
+Com o Adobe Experience Manager (AEM), você pode acessar seletivamente os fragmentos de conteúdo, usando a API do GraphQL AEM, para retornar somente o conteúdo necessário. Isso significa que você pode realizar a entrega headless de conteúdo estruturado para uso em seus aplicativos.
 
 >[!NOTE]
 >
@@ -245,8 +245,8 @@ Antes de começar com as consultas de conteúdo, você precisa:
    * Use Ferramentas -> Ativos -> GraphQL
    * [Habilitar seu ponto de acesso de GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
-* Acesse GraphiQL (se necessário)
-   * [AEM interface GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
+* Acessar GraphiQL (se necessário)
+   * [Interface GraphiQL do AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
 
 ### Estrutura de amostra {#sample-structure}
 
@@ -269,7 +269,7 @@ Os modelos de fragmento serão usados:
 
 ### Onde testar suas consultas {#where-to-test-your-queries}
 
-As queries podem ser inseridas no [Interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), por exemplo em:
+Os queries podem ser inseridos na variável [Interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), por exemplo, em:
 
 * `http://localhost:4502/aem/graphiql.html`
 

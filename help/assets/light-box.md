@@ -1,6 +1,6 @@
 ---
 title: Lightbox como sua galeria de imagens pessoal
-description: Saiba mais sobre o Lightbox como sua galeria de imagens pessoal nos Ativos da Adobe Experience Manager].
+description: Saiba mais sobre o Lightbox como sua galeria de imagens pessoal no Adobe Experience Manager Assets].
 contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Renditions
@@ -16,26 +16,26 @@ ht-degree: 0%
 
 O Lightbox é um tipo especial de coleção que fornece acesso fácil aos ativos. Você pode acessar rapidamente o Lightbox para adicionar ou excluir ativos. Ele serve como sua galeria de imagens pessoal.
 
-Se você for um [!DNL Adobe Experience Manager Assets] usuário, o Lightbox é criado automaticamente quando você faz logon pela primeira vez no aplicativo. É exclusivo do seu logon. Outros usuários não podem acessar o Lightbox.
+Se você é um [!DNL Adobe Experience Manager Assets] usuário, o Lightbox é criado automaticamente quando você faz logon pela primeira vez no aplicativo. É exclusivo para o seu login. Outros usuários não podem acessar o Lightbox.
 
 ## Adicionar ativos ao lightbox {#adding-assets-to-lightbox}
 
-1. No [!DNL Assets] na interface do usuário, selecione os ativos que deseja adicionar ao Lightbox.
-1. Arraste os ativos para a **[!UICONTROL Soltar no Lightbox]** zona. Solte quando a zona suspensa se tornar ativa e seu rótulo for alterado para **[!UICONTROL Soltar para adicionar]**.
+1. No [!DNL Assets] selecione os ativos que deseja adicionar à Lightbox.
+1. Arraste os ativos para a **[!UICONTROL Soltar no Lightbox]** zona. Liberação quando a zona de lançamento se torna ativa e seu rótulo muda para **[!UICONTROL Soltar para adicionar]**.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 
-1. Na caixa de diálogo , clique em **[!UICONTROL Adicionar]** e então feche-o para concluir o processo. Os ativos selecionados são adicionados ao Lightbox.
-1. Para exibir o Lightbox, acesse o console Coleções .
-1. Clique em **[!UICONTROL Lightbox]** para exibir os ativos nele.
+1. Na caixa de diálogo, clique em **[!UICONTROL Adicionar]** e feche-o para concluir o processo. Os ativos selecionados são adicionados ao Lightbox.
+1. Para exibir o Lightbox, acesse o console Coleções.
+1. Clique em **[!UICONTROL Lightbox]** para exibir os ativos nela.
 
    >[!NOTE]
    >
-   >Embora o Lightbox se pareça com uma coleção, você não pode executar todas as ações que normalmente executa em coleções. Por exemplo, você não pode excluir, compartilhar ou exibir configurações de um Lightbox. Além disso, não é possível adicioná-lo a outras coleções. No entanto, você pode editar os ativos dentro de um lightbox.
+   >Embora o Lightbox se pareça a uma coleção, não é possível executar todas as ações normalmente executadas nas coleções. Por exemplo, você não pode excluir, compartilhar ou visualizar configurações de um Lightbox. Além disso, não é possível adicioná-lo a outras coleções. No entanto, você pode editar os ativos dentro de uma lightbox.
 
-## Remover ativos do Lightbox {#removing-assets-from-lightbox}
+## Remover ativos da Lightbox {#removing-assets-from-lightbox}
 
-1. Navegue até o console Coleções , clique em Lightbox para exibir seus ativos.
+1. Navegue até o console Coleções e clique em Lightbox para visualizar os ativos.
 1. Selecione os ativos que deseja remover.
 1. Na barra de ferramentas, clique em **[!UICONTROL Remover]**.
-1. Na caixa de diálogo , clique em **[!UICONTROL Remover]** para confirmar a ação de exclusão. Os ativos são excluídos do Lightbox.
+1. Na caixa de diálogo, clique em **[!UICONTROL Remover]** para confirmar a ação de exclusão. Os ativos são excluídos da Lightbox.

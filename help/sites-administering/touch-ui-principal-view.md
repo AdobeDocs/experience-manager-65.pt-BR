@@ -1,7 +1,7 @@
 ---
-title: Visão Principal para Gerenciamento de Permissões
+title: Exibição principal para gerenciamento de permissões
 seo-title: Principal View for Permissions Management
-description: Saiba mais sobre a nova interface da interface do usuário de toque que facilita o gerenciamento de permissões.
+description: Saiba mais sobre a nova interface de toque que facilita o gerenciamento de permissões.
 seo-description: Learn about the new Touch UI interface that facilitates permissions management.
 uuid: 16c5889a-60dd-4b66-bbc4-74fbdb5fc32f
 contentOwner: sarchiz
@@ -18,57 +18,57 @@ ht-degree: 1%
 
 ---
 
-# Visão Principal para Gerenciamento de Permissões{#principal-view-for-permissions-management}
+# Exibição principal para gerenciamento de permissões{#principal-view-for-permissions-management}
 
 ## Visão geral {#overview}
 
-O AEM 6.5 apresenta o Gerenciamento de permissões para usuários e grupos. A funcionalidade principal permanece a mesma da interface clássica, mas é mais fácil de usar e eficiente.
+O AEM 6.5 apresenta o Gerenciamento de permissões para usuários e grupos. A funcionalidade principal permanece a mesma da interface clássica, mas é mais amigável e eficiente.
 
 ## Como usar {#how-to-use}
 
-### Acesso à interface do usuário {#accessing-the-ui}
+### Acesso à interface {#accessing-the-ui}
 
-O novo gerenciamento de permissões baseado na interface do usuário é acessado pelo cartão Permissões em Segurança, como mostrado abaixo:
+O novo gerenciamento de permissões com base na interface é acessado por meio do cartão Permissões, em Segurança, conforme mostrado abaixo:
 
 ![](assets/screen_shot_2019-03-17at63333pm.png)
 
-A nova exibição facilita visualizar todo o conjunto de privilégios e restrições de um determinado principal em todos os caminhos em que as Permissões foram concedidas explicitamente. Isso remove a necessidade de acessar o
+A nova exibição facilita a análise de todo o conjunto de privilégios e restrições para uma determinada entidade de segurança em todos os caminhos nos quais as Permissões foram concedidas explicitamente. Isso elimina a necessidade de ir para
 
-CRXDE para gerenciar privilégios e restrições avançados. Foi consolidado na mesma perspectiva. A exibição assume como padrão o Grupo &quot;todos&quot;.
+CRXDE para gerenciar privilégios e restrições avançados. Ela foi consolidada na mesma visão. A visualização assume como padrão o Grupo &quot;todos&quot;.
 
 ![](assets/unu-1.png)
 
-Existe um filtro que permite ao usuário selecionar o tipo de principals a serem observados **Usuários**, **Grupos** ou **Todos** e procurar qualquer principal **.**
+Há um filtro que permite ao usuário selecionar o tipo de entidades a serem observadas **Usuários**, **Grupos** ou **Todos** e pesquisar qualquer principal **.**
 
 ![](assets/image2019-3-20_23-52-51.png)
 
-### Exibindo Permissões para um Principal {#viewing-permissions-for-a-principal}
+### Exibindo permissões para um Principal {#viewing-permissions-for-a-principal}
 
-O quadro à esquerda permite que os usuários rolem para baixo para localizar qualquer principal ou pesquisar por um Grupo ou Usuário com base no filtro selecionado, conforme mostrado abaixo:
+O quadro à esquerda permite que os usuários rolem para baixo para encontrar qualquer principal ou pesquisar por um Grupo ou um Usuário com base no filtro selecionado, conforme mostrado abaixo:
 
 ![](assets/doi-1.png)
 
-Clicar no nome mostra as permissões atribuídas à direita. O painel de permissões mostra a lista de Entradas de Controle de Acesso em caminhos específicos junto com restrições configuradas.
+Clicar no nome mostra as permissões atribuídas à direita. O painel de permissões mostra a lista de Entradas de controle de acesso em caminhos específicos, juntamente com as restrições configuradas.
 
 ![](assets/trei-1.png)
 
-### Adicionando nova Entrada de Controle de Acesso para um Principal {#adding-new-access-control-entry-for-a-principal}
+### Adicionando uma nova Entrada de Controle de Acesso para um Principal {#adding-new-access-control-entry-for-a-principal}
 
-Novas permissões podem ser adicionadas adicionando uma nova Entrada de controle de acesso clicando no botão Adicionar ACE.
+Para adicionar novas permissões, adicione uma nova Entrada de controle de acesso clicando no botão Adicionar ACE.
 
 ![](assets/patru.png)
 
-Isso exibe a janela mostrada abaixo, a próxima etapa é escolher um caminho onde a permissão precisa ser configurada.
+Isso exibe a janela mostrada abaixo. A próxima etapa é escolher um caminho em que a permissão precise ser configurada.
 
 ![](assets/cinci-1.png)
 
-Aqui, selecionamos um caminho para o qual queremos configurar uma permissão **dam-users**:
+Aqui selecionamos um caminho para o qual queremos configurar uma permissão para **dam-users**:
 
 ![](assets/sase-1.png)
 
-Depois que o caminho é selecionado, o fluxo de trabalho volta a essa tela, onde o usuário pode selecionar um ou mais privilégios dos namespaces disponíveis (como `jcr`, `rep` ou `crx`) conforme mostrado abaixo.
+Após selecionar o caminho, o fluxo de trabalho volta para essa tela, onde o usuário pode selecionar um ou mais privilégios dos namespaces disponíveis (como `jcr`, `rep` ou `crx`) conforme mostrado abaixo.
 
-Os privilégios podem ser adicionados pesquisando-se usando o campo de texto e selecionando-o na lista.
+Os privilégios podem ser adicionados pesquisando usando o campo de texto e selecionando na lista.
 
 >[!NOTE]
 >
@@ -76,66 +76,66 @@ Os privilégios podem ser adicionados pesquisando-se usando o campo de texto e s
 
 ![](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
 
-Depois que a lista de privilégios for selecionada, o usuário poderá escolher o Tipo de permissão : Negar ou Permitir, conforme mostrado abaixo.
+Depois que a lista de privilégios for selecionada, o usuário poderá escolher o Tipo de permissão: Negar ou Permitir, conforme mostrado abaixo.
 
 ![](assets/screen_shot_2019-03-17at63938pm.png) ![](assets/screen_shot_2019-03-17at63947pm.png)
 
 ### Uso de restrições {#using-restrictions}
 
-Além da lista de privilégios e do Tipo de permissão em um determinado caminho, essa tela também permite adicionar restrições ao controle de acesso de granularidade fina, conforme mostrado abaixo:
+Além da lista de privilégios e do Tipo de permissão em um determinado caminho, essa tela também permite adicionar restrições para controle de acesso refinado, conforme mostrado abaixo:
 
 ![](assets/image2019-3-21_1-4-14.png)
 
 >[!NOTE]
 >
->Para obter mais informações sobre o que cada restrição significa, consulte [Documentação do Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>Para obter mais informações sobre o que significa cada restrição, consulte [a documentação do Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
-As restrições podem ser adicionadas, conforme mostrado abaixo, escolhendo o tipo de restrição, inserindo o valor e pressionando o **+** ícone .
+As restrições podem ser adicionadas conforme mostrado abaixo, escolhendo o tipo de restrição, inserindo o valor e acessando o **+** ícone.
 
 ![](assets/sapte-1.png) ![](assets/opt-1.png)
 
-A nova ACE é refletida na Lista de controle de acesso, como mostrado abaixo. Observe que `jcr:write` é um privilégio agregado que inclui `jcr:removeNode` que foi adicionado acima, mas não é mostrado abaixo, pois está coberto em `jcr:write`.
+O novo ACE é refletido na Lista de controle de acesso conforme mostrado abaixo. Observe que `jcr:write` é um privilégio agregado que inclui `jcr:removeNode` que foi acrescentado acima, mas não é mostrado abaixo como seu coberto `jcr:write`.
 
 ### Edição de ACEs {#editing-aces}
 
-As Entradas de Controle de Acesso podem ser editadas selecionando um principal e escolhendo o ACE que deseja editar.
+As Entradas de controle de acesso podem ser editadas selecionando um principal e escolhendo o ACE que você deseja editar.
 
 Por exemplo, aqui podemos editar a entrada abaixo para **dam-users** clicando no ícone de lápis à direita:
 
 ![Adicionar restrição](assets/image2019-3-21_0-35-39.png)
 
-A tela de edição é mostrada com ACEs configuradas pré-selecionadas, elas podem ser excluídas clicando no ícone de cruz ao lado delas ou novos privilégios podem ser adicionados para o caminho especificado, conforme mostrado abaixo.
+A tela de edição é exibida com ACEs configuradas pré-selecionadas, que podem ser excluídas clicando no ícone cruzado ao lado delas ou novos privilégios podem ser adicionados ao caminho fornecido, conforme mostrado abaixo.
 
 ![Editar entrada](assets/noua-1.png)
 
-Aqui, adicionamos a variável `addChildNodes` privilégio de **dam-users** no caminho determinado.
+Aqui, adicionamos a variável `addChildNodes` privilégio para **dam-users** no caminho fornecido.
 
 ![](assets/image2019-3-21_0-45-35.png)
 
-As alterações podem ser salvas clicando no botão **Salvar** no canto superior direito, e as alterações refletirão nas novas permissões para **dam-users **conforme mostrado abaixo:
+As alterações podem ser salvas clicando no ícone **Salvar** no canto superior direito, e as alterações serão refletidas nas novas permissões para **dam-users **conforme mostrado abaixo:
 
 ![](assets/zece-1.png)
 
 ### Exclusão de ACEs {#deleting-aces}
 
-As Entradas de Controle de Acesso podem ser excluídas para remover todas as permissões concedidas a um responsável principal em um caminho específico. O ícone X ao lado da ACE pode ser usado para excluí-lo, conforme mostrado abaixo:
+As Entradas de Controle de Acesso podem ser excluídas para remover todas as permissões concedidas a um principal em um caminho específico. O ícone X ao lado de ACE pode ser usado para excluí-lo, conforme mostrado abaixo:
 
 ![](assets/image2019-3-21_0-53-19.png) ![](assets/unspe.png)
 
-### Combinações de privilégios da interface clássica {#classic-ui-privilege-combinations}
+### Combinações de Privilégios da Interface Clássica {#classic-ui-privilege-combinations}
 
-Observe que a nova interface de usuário de permissões usa explicitamente o conjunto básico de privilégios em vez de combinações predefinidas que não refletiram verdadeiramente os privilégios subjacentes exatos que foram concedidos.
+Observe que a nova interface de permissões usa explicitamente o conjunto básico de privilégios em vez de combinações predefinidas que não refletiam verdadeiramente os privilégios subjacentes exatos que foram concedidos.
 
-Isso gerou confusão sobre o que exatamente está sendo configurado. A tabela a seguir lista o mapeamento entre as combinações de privilégios da interface clássica e os privilégios reais que as constituem:
+Causou confusão sobre o que exatamente está sendo configurado. A tabela a seguir lista o mapeamento entre as combinações de privilégios da interface clássica para os privilégios reais que as constituem:
 
 <table>
  <tbody>
   <tr>
-   <th>Combinações de privilégios da interface clássica</th>
-   <th>Privilégio da interface do usuário de permissões</th>
+   <th>Combinações de Privilégios da Interface Clássica</th>
+   <th>Privilégio de Permissões da Interface do Usuário</th>
   </tr>
   <tr>
-   <td>Leitura</td>
+   <td>Ler</td>
    <td><code>jcr:read</code></td>
   </tr>
   <tr>

@@ -1,5 +1,5 @@
 ---
-title: Guia de início rápido para Criação de fragmentos de conteúdo sem cabeçalho
+title: Criação de fragmentos de conteúdo do Guia de início rápido do Headless
 description: Saiba como usar fragmentos de conteúdo do AEM para projetar, criar, preparar e usar conteúdo independente de página para entrega headless.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
 source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
@@ -9,7 +9,7 @@ ht-degree: 91%
 
 ---
 
-# Guia de início rápido para Criação de fragmentos de conteúdo sem cabeçalho {#creating-content-fragments}
+# Criação de fragmentos de conteúdo do Guia de início rápido do Headless {#creating-content-fragments}
 
 Saiba como usar fragmentos de conteúdo do AEM para projetar, criar, preparar e usar conteúdo independente de página para entrega headless.
 
@@ -25,8 +25,8 @@ Fragmentos de conteúdo contêm conteúdo estruturado e podem ser entregues no f
 
 Os autores de conteúdo criarão qualquer quantidade de fragmentos de conteúdo para representar o conteúdo que eles criam. Esta será a principal tarefa deles no AEM. Para os propósitos deste guia de introdução, só será necessário criar um.
 
-1. Faça logon em AEM e, no menu principal, selecione **Navegação -> Ativos**.
-1. Navegue até o [pasta criada anteriormente.](create-assets-folder.md)
+1. Faça logon no AEM e, no menu principal, selecione **Navegação -> Ativos**.
+1. Navegue até a [pasta criada anteriormente.](create-assets-folder.md)
 1. Toque ou clique em **Criar -> Fragmento de conteúdo**.
 1. A criação de um fragmento de conteúdo é apresentada como um assistente de duas etapas. Primeiro, selecione qual modelo deseja usar para criar o fragmento de conteúdo e toque ou clique em **Próximo**.
    * Os modelos disponíveis dependem da [**Configuração na nuvem** que foi definida para a pasta de ativos](create-assets-folder.md) na qual você está criando o fragmento de conteúdo.

@@ -23,49 +23,49 @@ ht-degree: 4%
 
 ## Visão geral {#overview}
 
-&quot;Ferramentas de desenvolvedor AEM&quot; é um plug-in do Eclipse com base no [Plug-in do Eclipse para o Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) lançado sob a licença do Apache 2.
+&quot;Ferramentas para desenvolvedores AEM&quot; é um plug-in do Eclipse baseado no [Plug-in Eclipse para Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) lançado com a Licença Apache 2.
 
-Ela oferece vários recursos que facilitam AEM desenvolvimento:
+Ele oferece vários recursos que facilitam o desenvolvimento do AEM:
 
-* Integração perfeita com instâncias AEM por meio do Eclipse Server Connector.
-* Sincronização para pacotes de conteúdo e OSGI.
-* Suporte à depuração com capacidade de troca automática de código.
-* Bootstrap simples de AEM projetos por meio de um Assistente de criação de projeto específico.
-* Edição fácil das propriedades do JCR.
+* Integração perfeita com instâncias de AEM por meio do Eclipse Server Connector.
+* Sincronização para conteúdo e pacotes OSGI.
+* Suporte à depuração com recurso de troca automática de código.
+* Bootstrap simples de projetos AEM por meio de um Assistente de criação de projeto específico.
+* Fácil edição das propriedades do JCR.
 
 ## Requisitos {#requirements}
 
-Antes de usar as Ferramentas do desenvolvedor do AEM, faça o seguinte:
+Antes de usar as ferramentas de desenvolvedor do AEM, faça o seguinte:
 
-* Baixe e instale [Eclipse IDE para desenvolvedores Java™ EE](https://www.eclipse.org/downloads/packages/release/luna/r/eclipse-ide-java-ee-developers). AEM Ferramentas de desenvolvedor atualmente oferecem suporte ao Eclipse Kepler ou mais recente
+* Baixar e instalar [Desenvolvedores do Eclipse IDE para Java™ EE](https://www.eclipse.org/downloads/packages/release/luna/r/eclipse-ide-java-ee-developers). Atualmente, as ferramentas de desenvolvedor do AEM são compatíveis com o Eclipse Kepler ou mais recente
 
-* Pode ser usado com AEM versão 5.6.1 ou mais recente
-* Configure sua instalação do eclipse para garantir que você tenha pelo menos 1 GB de memória heap editando seu `eclipse.ini` arquivo de configuração, conforme descrito na [Perguntas frequentes sobre o Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
+* Pode ser usado com o AEM versão 5.6.1 ou mais recente
+* Configure a instalação do eclipse para garantir que você tenha pelo menos 1 GB de memória heap ao editar o `eclipse.ini` arquivo de configuração conforme descrito na seção [Perguntas frequentes sobre o Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
 
 >[!NOTE]
 >
->No macOS, clique com o botão direito do mouse **Eclipse.app** e selecione **Mostrar conteúdo do pacote** para encontrar seu `eclipse.ini`.
+>No macOS, clique com o botão direito do mouse em **Eclipse.app** e selecione **Mostrar conteúdo do pacote** para encontrar o seu `eclipse.ini`.
 
-## Como instalar as Ferramentas de Desenvolvedor do AEM para o Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
+## Como instalar as ferramentas de desenvolvedor do AEM para Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Uma vez que tenha cumprido o [requisitos](#requirements) acima, você pode instalar o plug-in da seguinte maneira:
+Depois de ter cumprido as [requisitos](#requirements) acima, você pode instalar o plug-in da seguinte maneira:
 
-1. Navegue pelo **Ferramentas do desenvolvedor do AEM** site em `https://eclipse.adobe.com/aem/dev-tools/`.
+1. Navegue pelo **Ferramentas para desenvolvedores do AEM** site em `https://eclipse.adobe.com/aem/dev-tools/`.
 
 1. Copie o **Link de instalação**.
 
-   Como alternativa, você pode baixar um arquivo em vez de usar o link de instalação. Isso permite a instalação offline, mas você perde as notificações de atualização automáticas.
+   Como alternativa, você pode baixar um arquivo em vez de usar o link de instalação. Isso permite a instalação offline, mas você perde as notificações de atualização automática.
 
 1. No Eclipse, abra o **Ajuda** menu.
 1. Clique em **Instalar novo software**.
 1. Clique em **Adicionar...**.
-1. Em **Nome** digite AEM Ferramentas do desenvolvedor.
-1. Em **Localização** copie o URL de instalação.
+1. Entrada **Nome** digite Ferramentas para desenvolvedores do AEM.
+1. Entrada **Localização** copie o URL de instalação.
 1. Clique em **Ok**.
-1. Verifique ambos **AEM** e **Sling** plug-ins.
+1. Marque ambos **AEM** e **Sling** plugins.
 1. Clique em **Avançar**.
 1. Clique em **Avançar**.
-1. Aceite os contratos do lixão e clique em **Concluir**.
+1. Aceite os contratos lincese e clique em **Concluir**.
 1. Clique em **Sim** para reiniciar o Eclipse.
 
 ## Como Importar Projetos Existentes {#how-to-import-existing-projects}
@@ -74,19 +74,19 @@ Uma vez que tenha cumprido o [requisitos](#requirements) acima, você pode insta
 >
 >Consulte [Como trabalhar com um pacote no Eclipse quando ele foi baixado do AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407).
 
-## A perspectiva AEM {#the-aem-perspective}
+## A perspectiva do AEM {#the-aem-perspective}
 
-As Ferramentas de desenvolvimento de AEM para o Eclipse são fornecidas com uma Perspectiva que oferece controle total sobre os projetos e instâncias de AEM.
+As ferramentas de desenvolvimento do AEM para o Eclipse são fornecidas com uma Perspectiva que oferece controle total sobre seus projetos e instâncias do AEM.
 
 ![chlimage_1-2](assets/chlimage_1-2a.jpeg)
 
 ## Exemplo de projeto de vários módulos {#sample-multi-module-project}
 
-As &quot;Ferramentas de desenvolvedor AEM&quot; incluem uma amostra de projeto de vários módulos que ajuda você a se familiarizar rapidamente com a configuração do projeto no Eclipse. Também serve como um guia de práticas recomendadas para vários recursos AEM. [Saiba mais sobre o Arquétipo de projeto](https://github.com/adobe/aem-project-archetype).
+As &quot;Ferramentas de desenvolvedor de AEM&quot; incluem um projeto de amostra e de vários módulos que ajuda você a se familiarizar rapidamente com uma configuração de projeto no Eclipse. Ele também serve como um guia de práticas recomendadas para vários recursos do AEM. [Saiba mais sobre o Arquétipo de projeto](https://github.com/adobe/aem-project-archetype).
 
 Para criar o projeto de amostra, conclua as seguintes etapas:
 
-1. No **Arquivo** > **Novo** > **Projeto** navegue até o menu **AEM** e selecione **AEM exemplo de projeto de vários módulos**.
+1. No **Arquivo** > **Novo** > **Projeto** , navegue até o menu **AEM** e selecione **Projeto de vários módulos de amostra AEM**.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
@@ -94,21 +94,21 @@ Para criar o projeto de amostra, conclua as seguintes etapas:
 
    >[!NOTE]
    >
-   >Essa etapa pode demorar um pouco, pois m2eclipse deve digitalizar os catálogos do arquétipo.
+   >Esta etapa pode demorar porque o m2eclipse deve verificar os catálogos de arquétipo.
 
    ![chlimage_1-70](assets/chlimage_1-70a.png)
 
-1. Choose **com.adobe.granite.archetypes : sample-project-archetype : (número mais alto)** no menu e, em seguida, clique em **Próximo**.
+1. Escolher **com.adobe.granite.archetypes : arquétipo de projeto de amostra : (número mais alto)** no menu e clique em **Próxima**.
 
    ![chlimage_1-71](assets/chlimage_1-71a.png)
 
-1. Preencha um **Nome**, **ID do grupo** e um **ID do artefato** para o projeto de amostra. Também é possível optar por definir algumas propriedades avançadas.
+1. Preencher um **Nome**, **ID do grupo**, e uma **ID do artefato** para o projeto de amostra. Você também pode optar por definir algumas propriedades avançadas.
 
    ![chlimage_1-72](assets/chlimage_1-72a.png)
 
 1. Agora, configure um servidor AEM ao qual o Eclipse possa se conectar.
 
-   Para usar o recurso do depurador, certifique-se de ter iniciado o AEM no modo de depuração, o que pode ser obtido adicionando o seguinte à linha de comando:
+   Para usar o recurso de depuração, verifique se você iniciou o AEM no modo de depuração, que pode ser obtido adicionando o seguinte à linha de comando:
 
    ```
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
@@ -120,24 +120,24 @@ Para criar o projeto de amostra, conclua as seguintes etapas:
 
    >[!NOTE]
    >
-   >Numa nova instalação (mais especificamente: quando as dependências maven nunca tiverem sido baixadas), você poderá criar o projeto com erros. Nesse caso, siga o procedimento descrito em [Resolvendo Definição de Projeto Inválida](#resolving-invalid-project-definition).
+   >Em uma nova instalação (mais especificamente: quando as dependências do Maven nunca foram baixadas), você pode criar o projeto com erros. Nesse caso, siga o procedimento descrito em [Resolvendo Definição de Projeto Inválida](#resolving-invalid-project-definition).
 
 ## Resolução de problemas {#troubleshooting}
 
 ### Resolvendo Definição de Projeto Inválida {#resolving-invalid-project-definition}
 
-Para resolver dependências inválidas e definição de projeto, proceda da seguinte maneira:
+Para resolver dependências inválidas e a definição do projeto, proceda da seguinte maneira:
 
 1. Selecione todos os projetos criados.
-1. Clique com o botão direito do mouse. No menu **Maven**, selecione **Atualizar projetos**.
-1. Verificar **Forçar atualizações de instantâneos/versões**.
-1. Clique em **OK**. O Eclipse tenta baixar as dependências necessárias.
+1. Clique com o botão direito do mouse em. No menu **Maven**, selecione **Atualizar Projetos**.
+1. Marcar **Forçar Atualizações de Instantâneo/Liberações**.
+1. Clique em **OK**. O Eclipse tenta fazer download das dependências necessárias.
 
 ### Ativação do autopreenchimento da biblioteca de tags em arquivos JSP {#enabling-tag-library-autocompletion-in-jsp-files}
 
-O autopreenchimento da biblioteca de tags funciona imediatamente, visto que as dependências adequadas são adicionadas ao projeto. Há um problema conhecido ao usar o AEM Uber Jar, que não inclui os arquivos tld e TagExtraInfo necessários.
+O autopreenchimento da biblioteca de tags funciona imediatamente, já que as dependências apropriadas são adicionadas ao projeto. Há um problema conhecido ao usar o AEM Uber Jar, que não inclui os arquivos tld e TagExtraInfo necessários.
 
-Para contornar isso, verifique se o artefato org.apache.sling.scripting.jsp.taglib está no caminho de classe antes do AEM Uber Jar. Para projetos Maven, coloque a seguinte dependência no pom.xml antes do Uber Jar.
+Para contornar isso, verifique se o artefato org.apache.sling.scripting.jsp.taglib está no classpath antes do AEM Uber Jar. Para projetos Maven, coloque a seguinte dependência no pom.xml antes do Uber Jar.
 
 ```xml
 <dependency>
@@ -147,18 +147,18 @@ Para contornar isso, verifique se o artefato org.apache.sling.scripting.jsp.tagl
 </dependency>
 ```
 
-Certifique-se de adicionar a versão adequada para a implantação do AEM.
+Certifique-se de adicionar a versão adequada para a sua distribuição de AEM.
 
 ## Mais informações {#more-information}
 
-O site oficial Apache Sling IDE tooling for Eclipse fornece informações úteis:
+A ferramenta oficial do Apache Sling IDE para o site do Eclipse fornece informações úteis:
 
-* O [**Ferramentas do Apache Sling IDE para Eclipse** Guia do usuário](https://sling.apache.org/documentation/development/ide-tooling.html), esta documentação o orienta pelos conceitos gerais, integração de servidor e recursos de implantação suportados pelas Ferramentas de desenvolvimento de AEM.
-* O [Seção Solução de problemas](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
-* O [Lista de problemas conhecidos](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
+* A variável [**Ferramentas Apache Sling IDE para Eclipse** Guia do usuário](https://sling.apache.org/documentation/development/ide-tooling.html), esta documentação o orienta pelos conceitos gerais, pela integração de servidores e pelos recursos de implantação compatíveis com as Ferramentas de desenvolvimento do AEM.
+* A variável [Seção Solução de problemas](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
+* A variável [Lista de problemas conhecidos](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
-O seguinte funcionário [Eclipse](https://www.eclipse.org/) a documentação pode ajudar a configurar seu ambiente:
+O seguinte funcionário [Eclipse](https://www.eclipse.org/) A documentação do pode ajudar a configurar seu ambiente:
 
 * [Introdução ao Eclipse](https://www.eclipse.org/getting-started/)
-* [Sistema de ajuda do Eclipse Luna](https://help.eclipse.org/latest/index.jsp)
-* [Integração Maven (m2eclipse)](https://www.eclipse.org/m2e/)
+* [Sistema de ajuda Eclipse Luna](https://help.eclipse.org/latest/index.jsp)
+* [Integração do Maven (m2eclipse)](https://www.eclipse.org/m2e/)

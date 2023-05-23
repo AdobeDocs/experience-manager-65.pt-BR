@@ -1,6 +1,6 @@
 ---
-title: Sobre o gerenciamento de ativos da Dynamic Media
-description: Saiba como trabalhar com ativos Dynamic Media
+title: Sobre o gerenciamento de ativos do Dynamic Media
+description: Saiba como trabalhar com ativos do Dynamic Media
 uuid: 9c7f9d4e-caab-434f-a1ae-eca16c883461
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -17,17 +17,17 @@ ht-degree: 14%
 
 ---
 
-# Sobre o gerenciamento de ativos da Dynamic Media {#managing-assets}
+# Sobre o gerenciamento de ativos do Dynamic Media {#managing-assets}
 
-O gerenciamento de ativos do Dynamic Media - imagens, vídeo e ativos interativos - após o upload envolve muitas tarefas, incluindo a visualização, o download ou a publicação de ativos.
+O gerenciamento de ativos do Dynamic Media - imagens, vídeo e ativos interativos - após serem carregados - envolve muitas tarefas, incluindo visualização, download ou publicação.
 
-Ao visualizar, você também pode aplicar predefinições de imagens (somente para imagens) ou predefinições do visualizador (para vídeo e imagens). Não é possível aplicar ambos a um ativo. Consulte [Aplicar predefinições do visualizador](/help/assets/viewer-presets.md) e [Aplicar predefinições de imagens](/help/assets/image-sets.md).
+Ao visualizar, também é possível aplicar predefinições de imagens (somente para imagens) ou predefinições do visualizador (para vídeos e imagens). Não é possível aplicar ambos a um ativo. Consulte [Aplicação de predefinições do visualizador](/help/assets/viewer-presets.md) e [Aplicação de predefinições de imagens](/help/assets/image-sets.md).
 
-Informações gerais sobre o gerenciamento de ativos podem ser encontradas em [Gerenciar ativos](/help/assets/manage-assets.md).
+Informações gerais sobre o gerenciamento de ativos estão disponíveis em [Gerenciar ativos](/help/assets/manage-assets.md).
 
-Os seguintes tópicos descrevem como gerenciar ativos do Dynamic Media:
+Os tópicos a seguir descrevem como gerenciar ativos do Dynamic Media:
 
 * [Práticas recomendadas para otimização da qualidade de imagens](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Visualização de ativos do Dynamic Media](/help/assets/previewing-assets.md)
-* [Publicação de ativos Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md)
+* [Publicação de ativos do Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md)
 * [Trabalho com seletores](/help/assets/working-with-selectors.md)

@@ -1,7 +1,7 @@
 ---
 title: Sites do servidor de aplicativos
 seo-title: Application server websites
-description: Este documento contém links para os sites do fabricante de todos os servidores de aplicativos compatíveis.
+description: Este documento contém links para os sites do fabricante para todos os servidores de aplicativos compatíveis.
 seo-description: This document contains links to the manufacturer websites for all supported application servers.
 uuid: a5db777e-646a-4f12-9705-6ca50d9339d4
 contentOwner: admin
@@ -19,10 +19,10 @@ ht-degree: 0%
 
 # Sites do servidor de aplicativos {#application-server-websites}
 
-Esta lista contém links para os sites do fabricante de todos os servidores de aplicativos compatíveis.
+Esta lista contém links para os sites do fabricante para todos os servidores de aplicativos suportados.
 
 **JBoss:** https://www.jboss.com/products/platforms/application
 
-**Oracle WebLogic:** www.oracle.com/us/products/middleware/application-server/index.html
+**WebLogic do Oracle:** www.oracle.com/us/products/middleware/application-server/index.html
 
 **IBM WebSphere:** www-01.ibm.com/software/websphere/

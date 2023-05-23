@@ -1,6 +1,6 @@
 ---
 title: Sua Caixa de entrada para gerenciar tarefas
-description: Gerenciando suas tarefas com a caixa de entrada.
+description: Gerenciar suas tarefas com a caixa de entrada.
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,18 +17,18 @@ ht-degree: 28%
 
 # Sua caixa de entrada{#your-inbox}
 
-Você pode receber notificações de várias áreas de AEM, incluindo fluxos de trabalho e projetos; por exemplo, sobre:
+Você pode receber notificações de várias áreas do AEM, incluindo fluxos de trabalho e projetos; por exemplo, sobre:
 
 * Tarefas:
 
-   * eles também podem ser criados em vários pontos da interface do usuário do AEM, por exemplo, em **Projetos**,
-   * podem ser o produto de um fluxo de trabalho **Criar tarefa** ou **Criar tarefa do projeto** etapa.
+   * também podem ser criadas em vários pontos da interface do usuário AEM, por exemplo, em **Projetos**,
+   * eles podem ser o produto de um workflow **Criar tarefa** ou **Criar tarefa de projeto** etapa.
 
 * Fluxos de trabalhos:
 
-   * itens de trabalho que representam as ações que você precisa executar no conteúdo da página;
+   * itens de trabalho que representam as ações que devem ser executadas no conteúdo da página;
 
-      * estes são o produto do fluxo de trabalho **Participante** etapas
+      * estes são o produto de um fluxo de trabalho **Participante** etapas
    * itens de falha, para permitir que os administradores tentem novamente a etapa que falhou.
 
 
@@ -36,7 +36,7 @@ Você recebe essas notificações em sua própria Caixa de entrada, onde pode vi
 
 >[!NOTE]
 >
->O AEM pronto para uso vem pré-carregado com tarefas administrativas atribuídas ao grupo de usuários administradores. Consulte [Tarefas administrativas prontas para uso](#out-of-the-box-administrative-tasks) para obter detalhes.
+>O AEM pronto para uso vem pré-carregado com tarefas administrativas atribuídas ao grupo de usuários administrador. Consulte [Tarefas administrativas prontas para uso](#out-of-the-box-administrative-tasks) para obter detalhes.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Você recebe essas notificações em sua própria Caixa de entrada, onde pode vi
 
 ## Caixa de entrada no cabeçalho {#inbox-in-the-header}
 
-De qualquer um dos consoles, o número atual de itens na sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que exigem ações ou acesso à caixa de entrada:
+Em qualquer um dos consoles, o número atual de itens na sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que exigem ação(ões) ou acesso à caixa de entrada:
 
 ![wf-80](assets/wf-80.png)
 
@@ -61,7 +61,7 @@ De qualquer um dos consoles, o número atual de itens na sua caixa de entrada é
 
 ## Tarefas administrativas prontas para uso  {#out-of-the-box-administrative-tasks}
 
-O AEM pronto para uso vem pré-carregado com quatro tarefas atribuídas ao grupo de usuários administradores.
+O AEM pronto para uso vem pré-carregado com quatro tarefas atribuídas ao grupo de usuários administrador.
 
 * [Configurar Analytics e Targeting](/help/sites-administering/opt-in.md)
 * [Aplicar a lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md)
@@ -77,7 +77,7 @@ Para abrir a caixa de entrada de notificação do AEM:
 1. Selecione **Exibir todos**. A **Caixa de entrada do AEM** será aberta. A caixa de entrada mostra itens de fluxos de trabalho, projetos e tarefas.
 1. A exibição padrão é [Exibição em lista](#inbox-list-view), mas você também pode alternar para [Exibição de calendário](#inbox-calendar-view). Isso é feito com o seletor de visualização (barra de ferramentas, parte superior direita).
 
-   Para ambas as exibições você também pode definir [Exibir configurações](#inbox-view-settings); as opções disponíveis dependem da exibição atual.
+   Para ambas as exibições também é possível definir [Configurações de exibição](#inbox-view-settings); as opções disponíveis dependem da exibição atual.
 
    ![wf-79](assets/inbox-list-view.png)
 
@@ -87,13 +87,13 @@ Para abrir a caixa de entrada de notificação do AEM:
 
 ### Caixa de entrada - exibição de lista {#inbox-list-view}
 
-Esta exibição lista todos os itens, juntamente com as principais informações relevantes:
+Essa exibição lista todos os itens, juntamente com as principais informações relevantes:
 
 ![wf-82](assets/wf-82.png)
 
 ### Caixa de entrada - Exibição de calendário {#inbox-calendar-view}
 
-Essa exibição apresenta itens de acordo com sua posição no calendário e a exibição precisa selecionada:
+Esta exibição apresenta os itens de acordo com sua posição no calendário e a exibição precisa selecionada:
 
 ![wf-93](assets/wf-93.png)
 
@@ -101,16 +101,16 @@ Essa exibição apresenta itens de acordo com sua posição no calendário e a e
 
 * selecionar uma exibição específica; **Linha do tempo**, **Coluna**, **Lista**
 
-* especifique as tarefas a serem exibidas de acordo com **Agendar**; **Todos**, **Planejado**, **Em Andamento**, **Em breve**, **Vencimento Anterior**
+* especificar as tarefas a serem exibidas de acordo com **Agendar**; **Todos**, **Planejado**, **Em andamento**, **Vencimento em breve**, **Vencido**
 
-* detalhar para obter informações mais detalhadas sobre um item
+* fazer drill-down para obter informações mais detalhadas sobre um item
 * selecione um intervalo de datas para focalizar na exibição:
 
 ![wf-91](assets/wf-91.png)
 
 ### Caixa de entrada - configurações {#inbox-view-settings}
 
-Para ambas as exibições (Lista e Calendário), você pode definir configurações:
+Para ambas as exibições (Lista e Calendário), é possível definir as configurações:
 
 * **Exibição de calendário**
 
@@ -133,33 +133,33 @@ Para ambas as exibições (Lista e Calendário), você pode definir configuraç�
 
 ### Caixa de entrada - Controle de administração {#inbox-admin-control}
 
-A opção Controle de administrador permite que os administradores:
+A opção Admin Control permite que os administradores:
 
-* Personalizar as colunas da Caixa de entrada de AEM
+* Personalizar as colunas da Caixa de entrada do AEM
 
-* Personalizar texto e logotipo do cabeçalho
+* Personalizar o texto e o logotipo do cabeçalho
 
 * Controlar a exibição de links de navegação disponíveis no cabeçalho
 
-A opção Controle de administrador está visível somente para os membros do `administrators` ou `workflow-administrators` grupo.
+A opção Admin Control está visível somente para os membros da `administrators` ou `workflow-administrators` grupo.
 
-* **Personalização de coluna**: Personalize uma Caixa de entrada de AEM para alterar o título padrão de uma coluna, reorganizar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho.
-   * **Adicionar coluna**: Selecione uma coluna para adicionar AEM Caixa de entrada.
+* **Personalização da coluna**: personalize uma caixa de entrada AEM para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho.
+   * **Adicionar coluna**: selecione uma coluna para adicionar à Caixa de entrada AEM.
    * **Editar Coluna**: Passe o mouse sobre o título da coluna e toque em ![editar](assets/edit.svg) ícone para inserir um nome de exibição de coluna.
-   * **Excluir coluna**: Toque no ![excluir](assets/delete_updated.svg) ícone para excluir a coluna AEM Caixa de entrada.
-   * **Mover coluna**: Arraste o ![mover](assets/move_updated.svg) ícone para mover uma coluna para uma nova posição em AEM Caixa de entrada.
+   * **Excluir coluna**: Toque no ![excluir](assets/delete_updated.svg) ícone para excluir a coluna da Caixa de entrada AEM.
+   * **Mover Coluna**: arraste o ![mover](assets/move_updated.svg) ícone para mover uma coluna para uma nova posição na Caixa de entrada AEM.
 
    ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personalização da marca**
 
-   * **Personalizar texto do cabeçalho:** Especifique o texto a ser exibido no cabeçalho para substituir o padrão **Adobe Experience Manager** texto.
+   * **Personalizar texto de cabeçalho:** Especifique o texto a ser exibido no cabeçalho para substituir o padrão **Adobe Experience Manager** texto.
 
-   * **Personalizar logotipo:** Especifique a imagem a ser exibida no cabeçalho como logotipo. Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte-a no campo .
+   * **Personalizar logotipo:** Especifique a imagem a ser exibida no cabeçalho como logotipo. Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte essa imagem no campo.
 
 * **Navegação do usuário**
-   * **Ocultar opções de navegação:** Selecione essa opção para ocultar as opções de navegação disponíveis no cabeçalho. As opções de navegação incluem links para outras soluções, link de Ajuda e as opções de criação disponíveis ao tocar no logotipo ou texto do Adobe Experience Manager.
-* **Salvar:** Toque/clique nessa opção para salvar as configurações.
+   * **Ocultar opções de navegação:** Selecione essa opção para ocultar as opções de navegação disponíveis no cabeçalho. As opções de navegação incluem links para outras soluções, o link Ajuda e as opções de criação disponíveis ao tocar no logotipo ou texto do Adobe Experience Manager.
+* **Salvar:** Toque/clique nesta opção para salvar as configurações.
 
 ## Realizar ação em um item {#taking-action-on-an-item}
 
@@ -168,18 +168,18 @@ A opção Controle de administrador está visível somente para os membros do `a
 >Embora seja possível selecionar mais de um item, ações só podem ser executadas em um item de cada vez.
 
 
-1. Para executar uma ação em um item, selecione a miniatura do item apropriado. Os ícones das ações aplicáveis a esse item serão mostrados na barra de ferramentas:
+1. Para realizar uma ação em um item, selecione a miniatura do item apropriado. Os ícones das ações aplicáveis a esse item serão mostrados na barra de ferramentas:
 
    ![wf-84](assets/wf-84.png)
 
    As ações são apropriadas ao item e incluem:
 
    * **Concluir** ação; por exemplo, uma tarefa ou item de fluxo de trabalho.
-   * **Atribuir novamente**/**Delegar** um item.
-   * **Abrir** Um artigo; dependendo do tipo de item, essa ação pode:
+   * **Reatribuir**/**Delegar** um item.
+   * **Abertura** um item; dependendo do tipo de item, essa ação pode:
 
       * mostrar as propriedades do item
-      * abrir um painel ou assistente apropriado para uma nova ação
+      * abrir um painel ou assistente apropriado para executar outras ações
       * abrir documentação relacionada
    * **Recuar** para uma etapa anterior.
    * Visualizar a carga de um fluxo de trabalho.
@@ -198,13 +198,13 @@ A opção Controle de administrador está visível somente para os membros do `a
    * um assistente de ação será iniciado.
    * uma página de documentação será aberta.
 
-   Por exemplo, **Atribuir novamente** abrirá uma caixa de diálogo:
+   Por exemplo, **Reatribuir** abrirá uma caixa de diálogo:
 
    ![wf-85](assets/wf-85.png)
 
    Se uma caixa de diálogo, um assistente ou uma página de documentação tiver sido aberta, é possível:
 
-   * Confirmar a ação adequada; Por exemplo, Atribuir novamente.
+   * Confirme a ação apropriada; por exemplo, Reatribuir.
    * Cancelar a ação.
    * Seta para trás; por exemplo, se um assistente de ação ou uma página de documentação tiver sido aberta, você poderá retornar à Caixa de entrada.
 
@@ -213,8 +213,8 @@ A opção Controle de administrador está visível somente para os membros do `a
 
 Na caixa de entrada, é possível criar tarefas:
 
-1. Selecionar **Criar**, em seguida **Tarefa**.
-1. Preencha os campos necessários no **Básico** e **Avançado** guias; somente a variável **Título** é obrigatório, todas as outras são opcionais:
+1. Selecionar **Criar**, depois **Tarefa**.
+1. Preencha os campos necessários no **Básico** e **Avançado** guias; somente o **Título** é obrigatório, todos os outros são opcionais:
 
    * **Básico**:
 
@@ -231,7 +231,7 @@ Na caixa de entrada, é possível criar tarefas:
 
    * **Avançado**
 
-      * **Nome**: isso será usado para formar o URL; se estiver em branco, será baseado na variável **Título**.
+      * **Nome**: isso será usado para formar o URL; se estiver vazio, será baseado no **Título**.
 
    ![wf-87](assets/wf-87.png)
 
@@ -241,7 +241,7 @@ Na caixa de entrada, é possível criar tarefas:
 
 Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/projects.md) com base nessa tarefa:
 
-1. Selecione a tarefa apropriada tocando/clicando na miniatura.
+1. Selecione a tarefa apropriada, tocando/clicando na miniatura.
 
    >[!NOTE]
    >
@@ -250,7 +250,7 @@ Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/p
    >Itens de trabalho (de um fluxo de trabalho) não podem ser usados para criar um projeto.
 
 1. Selecione **Criar projeto** na barra de ferramentas para abrir o assistente.
-1. Selecione o modelo apropriado e **Próximo**.
+1. Selecione o modelo apropriado e, em seguida, **Próxima**.
 1. Especifique as propriedades necessárias:
 
    * **Básico**
@@ -259,7 +259,7 @@ Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/p
       * **Descrição**
       * **Data inicial**
       * **Data de vencimento**
-      * **Usuário** e papel
+      * **Usuário** e função
    * **Avançado**
 
       * **Nome**
@@ -267,7 +267,7 @@ Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/p
    >
    >Consulte [Criação de um projeto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) para obter informações completas.
 
-1. Selecionar **Criar** para confirmar a ação.
+1. Selecionar **Criar** para confirmar a ação
 
 ## Filtrar itens na Caixa de entrada do AEM {#filtering-items-in-the-aem-inbox}
 

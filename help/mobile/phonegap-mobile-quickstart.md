@@ -1,7 +1,7 @@
 ---
-title: Início rápido remoto
+title: Quickstart móvel
 seo-title: Mobile Quickstart
-description: Siga esta página para saber mais sobre AEM verificar aplicativo. O aplicativo AEM Verify é uma maneira rápida e fácil de executar seus aplicativos móveis AEM em qualquer dispositivo móvel iOS ou Android.
+description: Siga esta página para saber mais sobre o aplicativo AEM Verify. O aplicativo AEM Verify é uma maneira rápida e fácil de executar seus aplicativos móveis AEM em qualquer dispositivo móvel iOS ou Android.
 seo-description: Follow this page to learn about AEM Verify app. The AEM Verify app is a quick and an easy way to run your AEM mobile applications on any iOS or Android mobile device.
 uuid: afae4b9d-f835-4d83-b758-39a0d7741510
 contentOwner: User
@@ -17,14 +17,14 @@ ht-degree: 2%
 
 ---
 
-# Início rápido remoto {#mobile-quickstart}
+# Quickstart móvel {#mobile-quickstart}
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-## AEM verificar aplicativo {#aem-verify-app}
+## Aplicativo de verificação AEM {#aem-verify-app}
 
 >[!CAUTION]
 >
->O aplicativo AEM Verify foi descontinuado. O aplicativo foi removido da Apple AppStore e do Android PlayStore.
+>O aplicativo de verificação do AEM foi descontinuado. O aplicativo foi removido da Apple AppStore e da Android PlayStore.

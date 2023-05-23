@@ -14,7 +14,7 @@ exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
 source-wordcount: '259'
-ht-degree: 78%
+ht-degree: 81%
 
 ---
 
@@ -36,14 +36,14 @@ A meta deste tutorial de várias partes é ensinar a um desenvolvedor novo no AE
 
 A implementação do tutorial aproveita muitos recursos avançados do AEM. O site será implementado usando:
 
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
 * [Modelos sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Interface de toque](/help/sites-developing/touch-ui-concepts.md)
 * [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 * [Modelos editáveis](/help/sites-developing/page-templates-editable.md)
 
-Prossiga com o tutorial antes de mergulhar detalhadamente nos conceitos acima.
+Prossiga pelo tutorial antes de mergulhar nos conceitos acima em detalhes.
 
 ## Próximas etapas {#next-steps}
 
-Depois de concluir a [tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), considere revisar o documento [AEM Conceitos principais](/help/sites-developing/the-basics.md) obter uma melhor compreensão de algumas das tecnologias subjacentes e paradigmas de desenvolvimento da AEM.
+Depois de concluir o [tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), considere revisar o documento [Conceitos principais de AEM](/help/sites-developing/the-basics.md) para obter uma melhor compreensão de algumas das tecnologias subjacentes e paradigmas de desenvolvimento do AEM.

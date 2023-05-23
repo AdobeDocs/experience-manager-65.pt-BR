@@ -27,94 +27,94 @@ Para configurar seu site, as instruções abaixo descrevem as pastas a serem cri
 
 * `/etc/designs/an-scf-sandbox`
 
-   É aqui que residem os elementos de design baixáveis.
+   É aqui que ficam os elementos de design baixáveis.
 
 * `/content/an-scf-sandbox`
 
-   É aqui que ficam as páginas da Web que podem ser baixadas.
+   É aqui que as páginas da Web disponíveis para download residem.
 
-O código neste tutorial dependerá do nome da pasta principal ser o mesmo para o aplicativo, design e conteúdo. Se você escolher outro nome para o seu site, sempre substitua `an-scf-sandbox` com o nome que escolheu.
+O código deste tutorial dependerá do nome da pasta principal ser o mesmo para o aplicativo, design e conteúdo. Se você escolher algum outro nome para o seu site, sempre substitua `an-scf-sandbox` com o nome escolhido.
 
 >[!NOTE]
 >
 >Sobre nomes:
 >
->* Os nomes vistos no CRXDE são nomes de nós que formam o caminho para o conteúdo endereçável.
->* Os nomes de nó podem conter espaços, mas quando usados em um URI, o espaço deve ser codificado como &#39;%20&#39; ou &#39;+&#39;.
->* Os nomes de nó podem conter hifens e sublinhados, mas devem ser codificados quando referenciados como um nome de pacote em um arquivo Java. Os hifens e sublinhados são escapados com o sublinhado seguido pelo seu valor unicode:
+>* Os nomes vistos no CRXDE são nomes de nó que formam o caminho para o conteúdo endereçável.
+>* Os nomes de nós podem conter espaços, mas quando usados em um URI, o espaço deve ser codificado como &#39;%20&#39; ou &#39;+&#39;.
+>* Os nomes de nó podem conter hifens e sublinhados, mas devem ser codificados quando referenciados como um nome de pacote em um arquivo Java. Os hifens e sublinhados são escapados com um sublinhado seguido pelo valor unicode:
    >
-   >   * hífen torna-se &#39;_002d&#39;
-   >   * underscore se torna &#39;_005f&#39;
+   >   * o hífen se torna &#39;_002d&#39;
+   >   * sublinhado torna-se &#39;_005f&#39;
 
 
 ## Configurar o Diretório de Aplicativos (/apps) {#setup-the-application-directory-apps}
 
-O diretório /apps no repositório contém o código com implementa o comportamento e a renderização das páginas servidas do diretório /content.
+O diretório /apps no repositório contém o código com o que implementa o comportamento e a renderização das páginas fornecidas pelo diretório /content.
 
-O diretório /apps está protegido e não é acessível publicamente, como são os diretórios /content e /etc/designs.
+O diretório /apps está protegido e não está acessível publicamente, assim como os diretórios /content e /etc/designs.
 
 1. Criar `/apps/an-scf-sandbox` pasta.
 
-   Usando **[!UICONTROL CRXDE Lite]**, no painel explorador
+   Usar **[!UICONTROL CRXDE Lite]**, no painel do explorador
 
    1. Selecione o `/apps` pasta.
    1. Clique com o botão direito do mouse **[!UICONTROL Criar]**... ou puxe para baixo o **[!UICONTROL Criar...]** menu.
-   1. Selecionar **[!UICONTROL Criar Pasta...]**.
-   1. No **[!UICONTROL Criar pasta]** , digite `an-scf-sandbox`.
+   1. Selecionar **[!UICONTROL Criar pasta...]**.
+   1. No **[!UICONTROL Criar pasta]** , insira `an-scf-sandbox`.
    1. Clique em **[!UICONTROL OK]**.
 
 1. Criar **[!UICONTROL componentes]** subpasta.
 
    1. Selecione o `/apps/an-scf-sandbox` pasta.
    1. Clique em **[!UICONTROL Criar > Criar pasta]**.
-   1. No **[!UICONTROL Criar pasta]** , digite **[!UICONTROL componentes]**.
+   1. No **[!UICONTROL Criar pasta]** , insira **[!UICONTROL componentes]**.
    1. Clique em **[!UICONTROL OK]**.
 
 1. Criar **[!UICONTROL modelos]** subpasta.
 
    1. Selecione o `/apps/an-scf-sandbox` pasta.
    1. Clique em **[!UICONTROL Criar > Criar pasta]**.
-   1. No **[!UICONTROL Criar pasta]** , digite **[!UICONTROL modelos]**.
+   1. No **[!UICONTROL Criar pasta]** , insira **[!UICONTROL modelos]**.
    1. Clique em **[!UICONTROL OK]**.
    1. Selecionar novamente `/apps/an-scf-sandbox`.
    1. Selecionar **[!UICONTROL Salvar tudo]**.
 
-   Como em qualquer processo de edição, salve com frequência. Se tiver problemas ao inserir dados, pode ser porque o tempo limite do seu logon foi excedido ou porque você precisa salvar as edições anteriores.
+   Como em qualquer processo de edição, salve com frequência. Se você tiver problemas ao inserir dados, talvez o tempo limite do seu logon tenha expirado ou você precise salvar as edições anteriores.
 
-1. A estrutura no painel explorador do CRXDE Lite agora deve ser semelhante a esta:
+1. A estrutura no painel do explorador do CRXDE Lite agora deve ser semelhante a esta:
 
    ![crxde-template](assets/crxde-template.png)
 
-## Configurar o diretório de design (/etc/designs) {#setup-the-design-directory-etc-designs}
+## Configurar o Diretório de design (/etc/designs) {#setup-the-design-directory-etc-designs}
 
-O diretório /etc/designs contém as imagens, scripts e folhas de estilos a serem baixadas junto com o conteúdo da página.
+O diretório /etc/designs contém as imagens, scripts e folhas de estilos a serem baixados junto com o conteúdo da página.
 
 1. Para usar a ferramenta Designer na interface clássica, navegue até [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
 
-   Observação: Se você usar o CRXDE Lite para criar um Nó do tipo `cq:Page`, o Controle de acesso e a Replicação não seriam definidos com as configurações padrão de uma página.
+   Observação: se você usar o CRXDE Lite para criar um Nó do tipo `cq:Page`, o Controle de acesso e a Replicação não seriam definidos como as configurações padrão para uma página.
 
-1. No painel do explorador, selecione o **[!UICONTROL Designs]** e clique em **[!UICONTROL Novo]** > **[!UICONTROL Nova página]**.
+1. No painel do explorador, selecione a variável **[!UICONTROL Designs]** e clique em **[!UICONTROL Novo]** > **[!UICONTROL Nova página]**.
 
    Insira:
 
    * Título: **[!UICONTROL Uma sandbox SCF]**
    * Nome: **[!UICONTROL an-scf-sandbox]**
-   * Selecionar **[!UICONTROL Modelo da página de design]**
+   * Selecionar **[!UICONTROL Modelo de página de design]**
 
    Clique em **[!UICONTROL Criar]**.
 
    ![design-template](assets/design-template.png)
 
-1. Atualize o painel do explorador se a pasta &quot;An SCF Sandbox&quot; não for exibida.
+1. Atualize o painel do explorador se a pasta &quot;Uma sandbox SCF&quot; não for exibida.
 
 1. Retorne ao CRXDE Lite (http:// localhost:4502/crx/de) e expanda /etc/designs para ver o nó chamado &quot;an-scf-sandbox&quot;.
 
-   No painel inferior direito do CRXDE, é possível exibir a guia Propriedades, a guia Controle de acesso e a guia Replicação para ver o que foi definido usando o Modelo da página de design.
+   No painel inferior direito do CRXDE, você pode visualizar a guia Propriedades, a guia Controle de acesso e a guia Replicação para ver o que foi definido usando o Modelo de página de design.
 
    ![crxde-configure-template](assets/crxde-configure-template.png)
 
 ## Configurar o Diretório de conteúdo (/content) {#setup-the-content-directory-content}
 
-O diretório /content no repositório é onde o conteúdo do site reside. Os caminhos em /content compõem os caminhos do URL para solicitações do navegador.
+O diretório /content no repositório é onde o conteúdo do site reside. Os caminhos em /content compreendem os caminhos do URL para solicitações do navegador.
 
-*Depois* o [modelo de página](initial-app.md#createthepagetemplate) for criada como parte do aplicativo inicial, o conteúdo da página inicial poderá ser criado com base no template .... [**execute**](initial-app.md)
+*Depois* o [modelo de página](initial-app.md#createthepagetemplate) for criado como parte do aplicativo inicial, o conteúdo da página inicial poderá ser criado com base no modelo.... [**^**](initial-app.md)

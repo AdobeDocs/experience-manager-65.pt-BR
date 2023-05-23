@@ -1,6 +1,6 @@
 ---
-title: Como criar um Forms adaptável usando o esquema XML?
-description: Saiba como usar o esquema XML como modelo de formulário em um formulário adaptável. Você pode aplicar modelos XSD existentes para criar formulários adaptáveis e arrastar e soltar elementos de esquema do XSD no formulário adaptável. Aprofunde-se com uma amostra de esquema XML, adicione propriedades especiais a campos usando esquema XML e limite valores aceitáveis para um componente de formulário adaptável.
+title: Como criar Forms adaptável usando o esquema XML?
+description: Saiba como usar o esquema XML como modelo de formulário em um formulário adaptável. Aplique modelos XSD existentes para criar formulários adaptáveis e arraste e solte elementos de esquema do XSD no formulário adaptável. Saiba mais com uma amostra de um esquema XML, adicione propriedades especiais a campos usando o esquema XML e limite valores aceitáveis para um componente de formulário adaptável.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
@@ -12,24 +12,24 @@ ht-degree: 5%
 
 ---
 
-# Criação de formulários adaptáveis usando o Esquema XML {#creating-adaptive-forms-using-xml-schema}
+# Criação de formulários adaptáveis usando o esquema XML {#creating-adaptive-forms-using-xml-schema}
 
 ## Pré-requisitos {#prerequisites}
 
-A criação de um formulário adaptável usando um esquema XML como seu modelo de formulário requer compreensão básica de esquemas XML. Além disso, é recomendável ler o conteúdo a seguir antes deste artigo.
+A criação de um formulário adaptável usando um esquema XML como modelo de formulário requer compreensão básica de esquemas XML. Além disso, é recomendável ler o conteúdo a seguir antes deste artigo.
 
 * [Criação de um formulário adaptável](creating-adaptive-form.md)
 * [Esquema XML](https://www.w3.org/TR/xmlschema-2/)
 
-## Uso de um esquema XML como modelo de formulário {#using-an-xml-schema-as-form-model}
+## Usando um esquema XML como modelo de formulário {#using-an-xml-schema-as-form-model}
 
-[!DNL Experience Manager Forms] O suporta a criação de um formulário adaptável usando um esquema XML existente como o modelo de formulário. Esse esquema XML representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na organização.
+[!DNL Experience Manager Forms] O oferece suporte à criação de um formulário adaptável usando um esquema XML existente como o modelo de formulário. Esse esquema XML representa a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização.
 
 Os principais recursos do uso de um esquema XML são:
 
 * A estrutura do XSD é exibida como uma árvore na guia Localizador de conteúdo no modo de criação de um formulário adaptável. Você pode arrastar e adicionar elemento da hierarquia XSD ao formulário adaptável.
-* É possível preencher previamente o formulário usando XML compatível com o schema associado.
-* Ao enviar, os dados inseridos pelo usuário são enviados como XML que se alinha ao schema associado.
+* Você pode preencher previamente o formulário usando um XML compatível com o esquema associado.
+* No envio, os dados inseridos pelo usuário são enviados como XML que se alinha ao schema associado.
 
 Um esquema XML consiste em tipos de elementos simples e complexos. Os elementos têm atributos que adicionam regras ao elemento. Quando esses elementos e atributos são arrastados para um formulário adaptável, eles são mapeados automaticamente para o componente de formulário adaptável correspondente.
 
@@ -70,7 +70,7 @@ Esse mapeamento de elementos XML com componentes de formulário adaptáveis é o
    <td>Lista suspensa</td>
   </tr>
   <tr>
-   <td>Qualquer elemento do tipo complexo</td>
+   <td>Qualquer elemento de tipo complexo</td>
    <td>Painel</td>
   </tr>
  </tbody>
@@ -78,7 +78,7 @@ Esse mapeamento de elementos XML com componentes de formulário adaptáveis é o
 
 ## Exemplo de esquema XML {#sample-xml-schema}
 
-Aqui está um exemplo de esquema XML.
+Este é um exemplo de um esquema XML.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -124,7 +124,7 @@ Aqui está um exemplo de esquema XML.
 >
 >Certifique-se de que o esquema XML tenha apenas um elemento raiz. Não há suporte para um esquema XML com mais de um elemento raiz.
 
-## Adição de propriedades especiais a campos usando esquema XML {#adding-special-properties-to-fields-using-xml-schema}
+## Adição de propriedades especiais a campos usando o esquema XML {#adding-special-properties-to-fields-using-xml-schema}
 
 Você pode adicionar os seguintes atributos aos elementos do Esquema XML para adicionar propriedades especiais aos campos do formulário adaptável associado.
 
@@ -132,12 +132,12 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
  <tbody>
   <tr>
    <th><strong>Propriedade do esquema</strong></th>
-   <th><strong>Uso em forma adaptável</strong></th>
-   <th><strong>Suportado em </strong></th>
+   <th><strong>Uso no formulário adaptável</strong></th>
+   <th><strong>Compatível com o </strong></th>
   </tr>
   <tr>
    <td><code>use=required </code></td>
-   <td>Marca um campo obrigatório<br /> </td>
+   <td>Marca um campo como obrigatório<br /> </td>
    <td>Atributo</td>
   </tr>
   <tr>
@@ -147,13 +147,13 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
   </tr>
   <tr>
    <td><code>minOccurs="3"</code></td>
-   <td><p>Especifica ocorrências mínimas</p> <p>(Para subformulários repetíveis (tipos complexos)</p> </td>
+   <td><p>Especifica o mínimo de ocorrências</p> <p>(Para subformulários repetíveis (tipos complexos))</p> </td>
    <td>Elemento (tipo complexo)</td>
   </tr>
   <tr>
    <td><code class="code">maxOccurs="10"
       </code></td>
-   <td><p>Especifica o máximo de ocorrências</p> <p>(Para subformulários repetíveis (tipos complexos)</p> </td>
+   <td><p>Especifica o máximo de ocorrências</p> <p>(Para subformulários repetíveis (tipos complexos))</p> </td>
    <td>Elemento (tipo complexo)</td>
   </tr>
  </tbody>
@@ -161,16 +161,16 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
 
 >[!NOTE]
 >
->Ao arrastar um elemento de esquema para um formulário adaptável, uma legenda padrão é gerada por:
+>Quando você arrasta um elemento de esquema para um formulário adaptável, uma legenda padrão é gerada por:
 >
->* Capitalizar o primeiro caractere do nome do elemento
->* Inserindo espaço em branco nos limites da Camel Case.
+>* Colocar o primeiro caractere do nome do elemento em maiúsculas
+>* Inserção de espaço em branco nos limites do Camel Case.
 >
 >Por exemplo, se você adicionar a variável `userFirstName` elemento de esquema, a legenda gerada no formulário adaptável é `User First Name`.
 
-## Limite valores aceitáveis para um componente de formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
+## Limitar valores aceitáveis para um componente de formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
 
-É possível adicionar as seguintes restrições aos elementos do esquema XML para limitar os valores aceitáveis para um componente de formulário adaptável:
+Você pode adicionar as seguintes restrições aos elementos do esquema XML para limitar os valores aceitáveis para um componente de formulário adaptável:
 
 <table>
  <tbody>
@@ -182,7 +182,7 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
   </tr>
   <tr>
    <td><p><code>totalDigits</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica o número máximo de dígitos permitidos em um componente. O número de dígitos especificado deve ser maior que zero.</p> </td>
    <td>
     <ul>
@@ -192,52 +192,52 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
   </tr>
   <tr>
    <td><p><code>maximum</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica o limite superior para valores numéricos e datas. Por padrão, o valor máximo é incluído.</p> </td>
    <td>
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico<br /> </li>
-     <li>Seletor de datas</li>
+     <li>Seletor de data</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>minimum</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica o limite inferior para valores numéricos e datas. Por padrão, o valor mínimo é incluído.</p> </td>
    <td>
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de datas</li>
+     <li>Seletor de data</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>exclusiveMaximum</code></p> </td>
    <td><p>Booleano</p> </td>
-   <td><p>Se verdadeiro, o valor numérico ou a data especificada no componente do formulário deve ser menor que o valor numérico ou a data especificada para a propriedade máxima.</p> <p>Se falso, o valor numérico ou a data especificada no componente do formulário deve ser menor ou igual ao valor numérico ou à data especificada para a propriedade maximum .</p> </td>
+   <td><p>Se true, o valor numérico ou a data especificada no componente do formulário deverá ser menor que o valor numérico ou a data especificada para a propriedade máxima.</p> <p>Se false, o valor numérico ou a data especificada no componente do formulário deve ser menor ou igual ao valor numérico ou à data especificada para a propriedade maximum.</p> </td>
    <td>
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de datas</li>
+     <li>Seletor de data</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>exclusiveMinimum</code></p> </td>
    <td><p>Booleano</p> </td>
-   <td><p>Se verdadeiro, o valor numérico ou a data especificada no componente do formulário deve ser maior que o valor numérico ou a data especificada para a propriedade mínima.</p> <p>Se falso, o valor numérico ou a data especificada no componente do formulário deve ser maior ou igual ao valor numérico ou à data especificada para a propriedade mínima.</p> </td>
+   <td><p>Se true, o valor numérico ou a data especificada no componente do formulário deverá ser maior que o valor numérico ou a data especificada para a propriedade minimum.</p> <p>Se false, o valor numérico ou a data especificada no componente do formulário deve ser maior ou igual ao valor numérico ou à data especificada para a propriedade minimum.</p> </td>
    <td>
     <ul>
      <li>Caixa numérica</li>
      <li>Escalonador numérico</li>
-     <li>Seletor de datas</li>
+     <li>Seletor de data</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p><code>minLength</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
-   <td><p>Especifica o número mínimo de caracteres permitidos em um componente. O comprimento mínimo deve ser igual ou superior a zero.</p> </td>
+   <td><p>String</p> </td>
+   <td><p>Especifica o número mínimo de caracteres permitidos em um componente. O comprimento mínimo deve ser igual ou maior que zero.</p> </td>
    <td>
     <ul>
      <li>Caixa de texto</li>
@@ -245,7 +245,7 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
   </tr>
   <tr>
    <td><p><code>maxLength</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
+   <td><p>String</p> </td>
    <td><p>Especifica o número máximo de caracteres permitidos em um componente. O comprimento máximo deve ser maior que zero.</p> </td>
    <td>
     <ul>
@@ -254,8 +254,8 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
   </tr>
   <tr>
    <td><p><code>length</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
-   <td><p>Especifica o número exato de caracteres permitidos em um componente. O comprimento deve ser igual ou superior a zero.</p> </td>
+   <td><p>String</p> </td>
+   <td><p>Especifica o número exato de caracteres permitidos em um componente. O comprimento deve ser igual ou maior que zero.</p> </td>
    <td>
     <ul>
      <li>Caixa de texto</li>
@@ -263,8 +263,8 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
   </tr>
   <tr>
    <td><p><code>fractionDigits</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
-   <td><p>Especifica o número máximo de casas decimais permitidas em um componente. O fractionDigits deve ser igual ou maior que zero.</p> </td>
+   <td><p>String</p> </td>
+   <td><p>Especifica o número máximo de casas decimais permitidas em um componente. O número de dígitos da fração deve ser igual ou maior que zero.</p> </td>
    <td>
     <ul>
      <li> Caixa numérica com tipo de dados flutuante ou decimal</li>
@@ -272,11 +272,11 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
   </tr>
   <tr>
    <td><p><code>pattern</code></p> </td>
-   <td><p>Sequência de caracteres</p> </td>
-   <td><p>Especifica a sequência de caracteres. Um componente aceita os caracteres se eles estiverem em conformidade com o padrão especificado.</p> <p>A propriedade pattern mapeia para o padrão de validação do componente de formulário adaptável correspondente.</p> </td>
+   <td><p>String</p> </td>
+   <td><p>Especifica a sequência dos caracteres. Um componente aceita os caracteres se eles estiverem em conformidade com o padrão especificado.</p> <p>A propriedade pattern mapeia para o padrão de validação do componente de formulário adaptável correspondente.</p> </td>
    <td>
     <ul>
-     <li>Todos os componentes de formulários adaptáveis que estão mapeados para um esquema XSD </li>
+     <li>Todos os componentes de formulários adaptáveis mapeados para um esquema XSD </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -286,11 +286,11 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
 
 **Como sei qual elemento na árvore está associado a qual elemento XML?**
 
-Ao clicar duas vezes em um elemento no Localizador de conteúdo, uma janela pop-up exibe um nome de campo e uma propriedade chamada `bindRef`. Essa propriedade mapeia o elemento de árvore para o elemento ou atributo no esquema.
+Quando você clica duas vezes em um elemento no Localizador de conteúdo, uma janela pop-up exibe um nome de campo e uma propriedade chamada `bindRef`. Essa propriedade mapeia o elemento de árvore para o elemento ou atributo no esquema.
 
 ![Um campo bindref de um elemento de esquema XML](assets/dblclick.png)
 
-O bindRef</code> mostra a associação entre um elemento de árvore e um elemento ou atributo em um schema.
+O bindRef</code> o campo mostra a associação entre um elemento de árvore e um elemento ou atributo em um esquema.
 
 >[!NOTE]
 >
@@ -298,7 +298,7 @@ O bindRef</code> mostra a associação entre um elemento de árvore e um element
 
 **Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada de qualquer tipo complexo) para subformulários repetíveis (os valores minOccours ou maxOccurs são maiores que 1)?**
 
-Em um subformulário repetível, é necessário usar o subformulário Complete. Se quiser apenas campos seletivos, use toda a estrutura e exclua os não desejados.
+Em um subformulário repetível, você deve usar o subformulário Concluído. Se desejar apenas campos seletivos, use a estrutura inteira e exclua os indesejados.
 
 **Tenho uma estrutura complexa longa no Localizador de conteúdo. Como posso encontrar um elemento específico?**
 
@@ -309,4 +309,4 @@ Você tem duas opções:
 
 **O que é um bindRef?**
 
-A `bindRef` é a conexão entre um componente de formulário adaptável e um elemento ou atributo de esquema. Ele determina que `XPath` onde o valor capturado desse componente ou campo está disponível no XML de saída. A `bindRef`também é usada ao pré-preencher um valor de campo a partir do XML pré-preenchido (pré-preenchido).
+A `bindRef` é a conexão entre um componente de formulário adaptável e um elemento ou atributo de esquema. Ele dita que `XPath` em que o valor capturado deste componente ou campo está disponível no XML de saída. A `bindRef`também é usado ao preencher previamente um valor de campo do XML preenchido previamente (preenchido previamente).

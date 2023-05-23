@@ -1,6 +1,6 @@
 ---
-title: Aplicar serviços de nuvem de tradução a pastas
-description: Aplicar serviços de nuvem de tradução a pastas
+title: Aplicar serviços de tradução em nuvem a pastas
+description: Aplicar serviços de tradução em nuvem a pastas
 contentOwner: AG
 role: Admin
 feature: Translation
@@ -12,23 +12,23 @@ ht-degree: 43%
 
 ---
 
-# Aplicar serviços de nuvem de tradução a pastas {#applying-translation-cloud-services-to-folders}
+# Aplicar serviços de tradução em nuvem a pastas {#applying-translation-cloud-services-to-folders}
 
-[!DNL Adobe Experience Manager] permite que você utilize os serviços de tradução em nuvem do provedor de tradução de sua escolha para garantir que seus ativos sejam traduzidos de acordo com suas necessidades.
+[!DNL Adobe Experience Manager] O permite que você use serviços de tradução baseados em nuvem do provedor de tradução de sua escolha para garantir que seus ativos sejam traduzidos com base em seus requisitos.
 
-Você pode aplicar o serviço da nuvem de tradução diretamente à sua pasta de ativos para que eles possam ser utilizados durante os fluxos de trabalho de tradução.
+Você pode aplicar o serviço de nuvem de tradução diretamente à pasta de ativos para que ele possa ser usado durante os fluxos de trabalho de tradução.
 
 ## Aplicar os serviços de tradução {#applying-the-translation-services}
 
-A aplicação de serviços da nuvem de tradução diretamente à sua pasta de ativos elimina a necessidade de configurar os serviços de tradução ao criar ou atualizar fluxos de trabalho de tradução.
+Aplicar serviços de nuvem de tradução diretamente à pasta de ativos elimina a necessidade de configurar serviços de tradução ao criar ou atualizar fluxos de trabalho de tradução.
 
-1. No [!DNL Assets] interface do usuário, selecione a pasta na qual deseja aplicar os serviços de tradução.
+1. No [!DNL Assets] , selecione a pasta à qual deseja aplicar os serviços de tradução.
 1. Na barra de ferramentas, clique em **[!UICONTROL Propriedades]** para exibir o **[!UICONTROL Propriedades da pasta]** página.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Navegue até a guia **[!UICONTROL Serviços da nuvem]**.
-1. Na lista Configurações do Cloud Service, escolha o provedor de tradução desejado. Por exemplo, se você deseja aproveitar os serviços de tradução do Microsoft, escolha **[!UICONTROL Microsoft Translator]**.
+1. Na lista Configurações de Cloud Service, escolha o provedor de tradução desejado. Por exemplo, se você deseja utilizar os serviços de tradução do Microsoft, escolha **[!UICONTROL Microsoft Translator]**.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -36,19 +36,19 @@ A aplicação de serviços da nuvem de tradução diretamente à sua pasta de at
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Na barra de ferramentas, clique em **[!UICONTROL Salvar]** e, em seguida, clique em **[!UICONTROL OK]** para fechar a caixa de diálogo.O serviço de tradução é aplicado à pasta.
+1. Na barra de ferramentas, clique em **[!UICONTROL Salvar]** e clique em **[!UICONTROL OK]** para fechar a caixa de diálogo. O serviço de tradução é aplicado à pasta.
 
 ## Aplicar conector de tradução personalizado  {#applying-custom-translation-connector}
 
 Se quiser aplicar um conector personalizado para os serviços de tradução que deseja usar nos fluxos de trabalho de tradução. Para aplicar um conector personalizado, primeiro instale o conector do Gerenciador de pacotes. Em seguida, configure o conector do console Serviços da nuvem. Após configurar o conector, ele estará disponível na lista de conectores na guia Serviços da nuvem descrita em [Aplicar serviços de tradução](transition-cloud-services.md#applying-the-translation-services). Depois de aplicar o conector personalizado e executar os fluxos de trabalho de tradução, o bloco **[!UICONTROL Resumo da tradução]** do projeto de tradução exibe os detalhes do conector nos cabeçalhos **[!UICONTROL Provedor]** e **[!UICONTROL Método]**.
 
 1. Instale o conector do Gerenciador de pacotes.
-1. Clique no botão [!DNL Experience Manager] e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Cloud Services]**.
+1. Clique em [!DNL Experience Manager] e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Cloud Services]**.
 1. Localize o conector instalado em **[!UICONTROL Serviços de terceiros]** na página **[!UICONTROL Serviços da nuvem]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Clique no botão **[!UICONTROL Configurar agora]** para abrir o **[!UICONTROL Criar configuração]** caixa de diálogo.
+1. Clique em **[!UICONTROL Configurar agora]** link para abrir a **[!UICONTROL Criar configuração]** diálogo.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 

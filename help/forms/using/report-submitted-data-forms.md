@@ -1,7 +1,7 @@
 ---
 title: APIs para trabalhar com formulários enviados no portal de formulários
 seo-title: APIs to work with submitted forms on forms portal
-description: O AEM Forms fornece APIs que você pode usar para consultar e realizar ações nos dados de formulários enviados no portal de formulários.
+description: O AEM Forms fornece APIs que você pode usar para consultar e realizar ações em dados de formulários enviados no portal de formulários.
 seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
@@ -13,13 +13,13 @@ exl-id: a685889e-5d24-471c-926d-dbb096792bc8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 9%
+ht-degree: 7%
 
 ---
 
 # APIs para trabalhar com formulários enviados no portal de formulários {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-O AEM Forms fornece APIs que podem ser usadas para consultar dados de formulários enviados pelo portal de formulários. Além disso, você pode postar comentários ou atualizar propriedades de formulários enviados usando as APIs explicadas neste documento.
+O AEM Forms fornece APIs que você pode usar para consultar dados de formulários enviados por meio do portal de formulários. Além disso, você pode publicar comentários ou atualizar propriedades de formulários enviados usando as APIs explicadas neste documento.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ O AEM Forms fornece APIs que podem ser usadas para consultar dados de formulári
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
-Retorna uma lista de todos os formulários elegíveis.
+Retorna uma lista de todos os formulários qualificados.
 
 ### Parâmetros de URL {#url-parameters}
 
@@ -35,7 +35,7 @@ Essa API não requer parâmetros adicionais.
 
 ### Resposta {#response}
 
-O objeto response contém uma matriz JSON que inclui nomes de formulários e seu caminho de repositório. A estrutura da resposta é a seguinte:
+O objeto de resposta contém uma matriz JSON que inclui nomes de formulários e seu caminho de repositório. A estrutura da resposta é a seguinte:
 
 ```json
 [
@@ -75,7 +75,7 @@ Especifique os seguintes parâmetros no URL da solicitação:
   </tr>
   <tr>
    <td><code>formPath</code></td>
-   <td>Especifica o caminho do repositório CRX no qual o formulário reside. Se você não especificar o caminho do formulário, ele retornará uma resposta vazia.<br /> </td>
+   <td>Especifica o caminho do repositório CRX onde o formulário reside. Se você não especificar o caminho do formulário, ele retornará uma resposta vazia.<br /> </td>
   </tr>
   <tr>
    <td><code>offset</code> (opcional)</td>
@@ -87,11 +87,11 @@ Especifique os seguintes parâmetros no URL da solicitação:
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (opcional)</td>
-   <td>Especifica a propriedade para classificar resultados. O valor padrão é <strong>jcr:lastModified</strong>, que classifica os resultados com base no último horário modificado.</td>
+   <td>Especifica a propriedade para classificar resultados. O valor padrão é <strong>jcr:lastModified</strong>, que classifica os resultados com base no horário da última modificação.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (opcional)</td>
-   <td>Especifica a ordem para classificar resultados. O valor padrão é <strong>desc</strong>, que classifica os resultados em ordem decrescente. Você pode especificar <code>asc</code> para classificar os resultados em ordem crescente.</td>
+   <td>Especifica a ordem de classificação dos resultados. O valor padrão é <strong>desc</strong>, que classifica os resultados em ordem decrescente. Você pode especificar <code>asc</code> para classificar os resultados em ordem crescente.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (opcional)</td>
@@ -106,7 +106,7 @@ Especifique os seguintes parâmetros no URL da solicitação:
 
 ### Resposta {#response-1}
 
-O objeto response contém uma matriz JSON que inclui detalhes dos formulários especificados. A estrutura da resposta é a seguinte:
+O objeto de resposta contém uma matriz JSON que inclui detalhes dos formulários especificados. A estrutura da resposta é a seguinte:
 
 ```json
 {
@@ -140,11 +140,11 @@ Especifique os seguintes parâmetros no URL da solicitação:
 | Parâmetro | Descrição |
 |---|---|
 | `submitID` | Especifica a ID de metadados associada a uma instância de envio. |
-| `Comment` | Especifica o texto para comentário a ser adicionado à instância de envio especificada. |
+| `Comment` | Especifica o texto a ser adicionado ao comentário para a instância de envio especificada. |
 
 ### Resposta {#response-2}
 
-Retorna uma ID de comentário sobre a postagem bem-sucedida de um comentário.
+Retorna uma ID de comentário na publicação bem-sucedida de um comentário.
 
 ### Exemplo {#example-2}
 
@@ -162,7 +162,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 
 ## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
-Retorna todos os comentários postados na instância de envio especificada.
+Retorna todos os comentários publicados na instância de envio especificada.
 
 ### Parâmetros de URL {#url-parameters-3}
 
@@ -174,7 +174,7 @@ Especifique o seguinte parâmetro no URL da solicitação:
 
 ### Resposta {#response-3}
 
-O objeto response contém uma matriz JSON que inclui todos os comentários associados à ID de envio especificada. A estrutura da resposta é a seguinte:
+O objeto de resposta contém uma matriz JSON que inclui todos os comentários associados à ID de envio especificada. A estrutura da resposta é a seguinte:
 
 ```json
 [{
@@ -200,7 +200,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 
 ## POST /content/forms/portal/submission.review.json?func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
-Atualiza o valor da propriedade especificada da instância de formulário submetido especificada.
+Atualiza o valor da propriedade specified da instância do formulário enviado especificada.
 
 ### Parâmetros de URL {#url-parameters-4}
 

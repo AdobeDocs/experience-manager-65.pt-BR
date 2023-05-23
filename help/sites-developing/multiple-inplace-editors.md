@@ -1,6 +1,6 @@
 ---
-title: Configure o RTE para vários editores no local.
-description: Crie vários editores no local no Adobe Experience Manager configurando o Editor de Rich Text.
+title: Configurar o RTE para vários editores no local.
+description: Crie vários editores no local no Adobe Experience Manager ao configurar o Editor de Rich Text.
 contentOwner: AG
 exl-id: 03030317-8b7d-408a-bdfd-619824d7260c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
@@ -18,7 +18,7 @@ Você pode configurar o Editor de Rich Text no Adobe Experience Manager para que
 
 ## Configurar vários editores {#configure-multiple-editors}
 
-Para ativar vários editores no local, a estrutura de um `cq:InplaceEditingConfig` o tipo de nó foi aprimorado com a definição de `cq:ChildEditorConfig` tipo de nó.
+Para habilitar vários editores no local, a estrutura de um `cq:InplaceEditingConfig` tipo de nó foi aprimorado com a definição de `cq:ChildEditorConfig` tipo de nó.
 
 Por exemplo:
 
@@ -55,37 +55,37 @@ Por exemplo:
 
 Para configurar vários editores, siga estas etapas:
 
-1. No nó `cq:inplaceEditing` de tipo `cq:InplaceEditingConfig`) defina as seguintes propriedades:
+1. No nó `cq:inplaceEditing` (do tipo `cq:InplaceEditingConfig`) defina as seguintes propriedades:
 
    * Nome:`editorType`
    * Tipo: `String`
    * Valor: `hybrid`
 
-1. Nesse nó, crie um nó:
+1. Neste nó, crie um nó:
 
    * Nome: `cq:ChildEditors`
    * Tipo: `nt:unstructured`
 
-1. Em `cq:childEditors` , crie um nó para cada editor local:
+1. Em `cq:childEditors` crie um nó para cada editor no local:
 
-   * Nome: O nome de cada nó é o nome da propriedade que ele representa, como ocorre com os destinos de soltar. Por exemplo, `image` e `text`.
+   * Nome: O nome de cada nó é o nome da propriedade que ele representa, como ocorre com os destinos de eliminação. Por exemplo, `image` e `text`.
    * Tipo: `cq:ChildEditorConfig`
 
    >[!NOTE]
    >
-   >Há uma correlação entre os destinos de soltar definidos e os editores filhos. O nome do `cq:ChildEditorConfig` é considerado como a ID de destino de soltar, para uso como parâmetro para o editor secundário selecionado. Se a subárea editável não tiver um destino de soltar, por exemplo, em um componente de texto, o nome do editor secundário ainda será considerado uma ID para identificar a área editável correspondente.
+   >Há uma correlação entre os alvos de eliminação definidos e os editores filhos. O nome do `cq:ChildEditorConfig` O nó é considerado a ID de destino de lançamento, para uso como parâmetro no editor secundário selecionado. Se a subárea editável não tiver um destino de soltar, por exemplo, em um componente de texto, o nome do editor filho ainda será considerado uma ID para identificar a área editável correspondente.
 
-1. Em cada um desses nós (`cq:ChildEditorConfig`) defina as propriedades:
+1. Em cada um desses nós (`cq:ChildEditorConfig`) definir as propriedades:
 
    * Nome: `type`.
-   * Valor: O nome do editor no local registrado; por exemplo, `image` e `text`.
+   * Valor: o nome do editor registrado no local; por exemplo, `image` e `text`.
 
    * Nome: `title`.
-   * Valor: O título exibido na lista de seleção de componentes dos editores disponíveis. Por exemplo, `Image` e `Text`.
+   * Valor: o título exibido na lista de seleção de componentes dos editores disponíveis. Por exemplo, `Image` e `Text`.
 
-### Configuração adicional para editores de Rich Text {#additional-configuration-for-rich-text-editors}
+### Configuração adicional para editores de rich text {#additional-configuration-for-rich-text-editors}
 
-A configuração de vários editores de rich text é um pouco diferente, pois é possível configurar cada instância do RTE individual separadamente. Para obter detalhes, consulte [configurar o Editor de Rich Text](/help/sites-administering/rich-text-editor.md). Para ter vários RTEs, crie uma configuração para cada RTE no local. O Adobe recomenda criar o novo nó de configuração em `cq:InplaceEditingConfig` como cada RTE individual pode ter uma configuração diferente. No novo nó , crie cada configuração de RTE individual.
+A configuração de vários editores de rich text é um pouco diferente, pois é possível configurar cada instância individual do RTE separadamente. Para obter detalhes, consulte [configurar o Editor de Rich Text](/help/sites-administering/rich-text-editor.md). Para ter vários RTEs, crie uma configuração para cada RTE no local. O Adobe recomenda criar o novo nó de configuração em `cq:InplaceEditingConfig` já que cada RTE individual pode ter uma configuração diferente. No novo nó, crie cada configuração de RTE individual.
 
 ```xml
     texttext
@@ -102,11 +102,11 @@ A configuração de vários editores de rich text é um pouco diferente, pois é
 
 >[!NOTE]
 >
->No entanto, para o RTE, a variável `configPath` é suportada quando há apenas uma instância do editor de texto (sub-área editável) no componente. Esse uso de `configPath` é fornecido para oferecer suporte à compatibilidade com versões anteriores das caixas de diálogo da interface do usuário do componente.
+>No entanto, para o RTE, a `configPath` a propriedade é compatível quando há apenas uma instância do editor de texto (subárea editável) no componente. Esta utilização de `configPath` O é fornecido para oferecer compatibilidade com versões anteriores das caixas de diálogo da interface do usuário do componente.
 
 >[!CAUTION]
 >
->Não nomeie o nó de configuração do RTE como `config`. Caso contrário, as configurações do RTE estarão disponíveis apenas para os administradores e não para os usuários do grupo `content-author`.
+>Não nomeie o nó de configuração do RTE como `config`. Caso contrário, as configurações de RTE estarão disponíveis somente para os administradores e não para os usuários do grupo `content-author`.
 
 ## Exemplos de código {#code-samples}
 
@@ -118,5 +118,5 @@ Para obter informações gerais sobre como adicionar um editor no local, consult
 
 >[!MORELIKETHIS]
 >
->* [Configurar o editor de rich text no Experience Manager](/help/sites-administering/rich-text-editor.md).
+>* [Configurar editor de rich text no Experience Manager](/help/sites-administering/rich-text-editor.md).
 

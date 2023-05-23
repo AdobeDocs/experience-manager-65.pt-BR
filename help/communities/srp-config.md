@@ -1,7 +1,7 @@
 ---
 title: Configuração de armazenamento
 seo-title: Storage Configuration
-description: Como acessar o Console de Configuração de Armazenamento
+description: Como acessar o console de configuração de armazenamento
 seo-description: How to access the Storage Configuration Console
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
 contentOwner: Janice Kendall
@@ -35,27 +35,27 @@ Para uma discussão sobre opções de armazenamento e topologias de implantaçã
 
 No ambiente de criação, para acessar o console de configuração de armazenamento.
 
-* Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Configuração de armazenamento]**
+* Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Communities]** > **[!UICONTROL Configuração de armazenamento]**
 
 Para selecionar uma opção de armazenamento diferente do JCR padrão:
 
 * Selecionar uma opção
 * Configurar adequadamente
 
-   * Veja detalhes para [selecionando o MSRP](msrp.md#select-msrp)
-   * Veja detalhes para [selecionando DSRP](dsrp.md#select-dsrp)
-   * Veja detalhes para [selecionando ASRP](asrp.md#select-asrp)
+   * Veja os detalhes de [seleção de MSRP](msrp.md#select-msrp)
+   * Veja os detalhes de [seleção de DSRP](dsrp.md#select-dsrp)
+   * Veja os detalhes de [selecionando ASRP](asrp.md#select-asrp)
 
 * Selecione **[!UICONTROL Enviar]**.
 
 ### Sobre o armazenamento JCR {#about-jcr-storage}
 
-Esteja ciente de que se nenhuma seleção for feita, o padrão será o repositório AEM, o JCR.
+Observe que, se nenhuma seleção for feita, o padrão será o repositório AEM, JCR.
 
-JCR é *not* uma loja comum compartilhada pelos ambientes de criação e publicação. O conteúdo da comunidade será visível somente no ambiente de criação ou publicação em que foi criado.
+O JCR é *não* um armazenamento comum compartilhado pelos ambientes do autor e de publicação. O conteúdo da comunidade será visível somente no ambiente de autor ou publicação em que foi criado.
 
-Visita [Loja JCR](jsrp.md) para obter mais informações.
+Visita [Armazenamento JCR](jsrp.md) para obter informações adicionais.
 
 >[!NOTE]
 >
->A ausência do nó `srpc` under `/etc/socialconfig` indica o padrão [Loja JCR](jsrp.md).
+>A ausência do nó `srpc` em `/etc/socialconfig` indica o padrão [Armazenamento JCR](jsrp.md).

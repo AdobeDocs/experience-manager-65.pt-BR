@@ -1,7 +1,7 @@
 ---
 title: Pós-processamento de cartas e comunicações interativas
 seo-title: Post Processing of Letters
-description: O pós-processamento de cartas no Gerenciamento de correspondência permite criar processos de postagem do AEM e Forms, como impressão e email, e integrá-los às suas cartas.
+description: O pós-processamento de cartas no Gerenciamento de correspondência permite criar processos de postagem de AEM e Forms, como impressão e email, e integrá-los às suas cartas.
 seo-description: Post Processing of Letters in Correspondence Management lets you create AEM and Forms post processes, such as print and email, and integrate them with your letters.
 uuid: 40cb349d-6ba2-4794-9ec6-dcab15c35b8d
 content-type: reference
@@ -22,65 +22,65 @@ ht-degree: 0%
 
 ## Pós-processamento {#post-processing}
 
-Os agentes podem associar e executar fluxos de trabalho de pós-processamento em cartas e comunicações interativas. O processo de postagem a ser executado pode ser selecionado na exibição Propriedades do modelo Carta . Você pode configurar processos de publicação para enviar emails, imprimir, fax ou arquivar suas cartas finais.
+Os agentes podem associar e executar fluxos de trabalho de pós-processamento em cartas e comunicações interativas. O pós-processo a ser executado pode ser selecionado na exibição Propriedades do modelo Carta. Você pode configurar processos de correio para enviar e-mails, imprimir, enviar fax ou arquivar suas cartas finais.
 
 ![Pós-processamento](assets/ppoverview.png)
 
-Para associar processos de publicação a letras ou comunicações interativas, primeiro é necessário configurar os processos de publicação. Dois tipos de workflows podem ser executados em cartas enviadas:
+Para associar processos de publicação a cartas ou comunicações interativas, primeiro é necessário configurar os processos de publicação. Dois tipos de fluxos de trabalho podem ser executados em cartas enviadas:
 
-1. **Forms Workflow:** Esses são os workflows de gerenciamento de processos do AEM Forms em JEE. Instruções para configuração [Forms Workflow](#formsworkflow).
+1. **Forms Workflow:** Estes são os workflows de gerenciamento de processo do AEM Forms no JEE. Instruções para configuração [Forms Workflow](#formsworkflow).
 
-1. **Fluxo de trabalho AEM:** AEM workflows também podem ser usados como processos de publicação para cartas enviadas. Instruções para configuração [Fluxo de trabalho AEM](../../forms/using/aem-forms-workflow.md).
+1. **Fluxo de trabalho do AEM:** Os fluxos de trabalho do AEM também podem ser usados como processos de postagem para cartas enviadas. Instruções para configuração [Fluxo de trabalho do AEM](../../forms/using/aem-forms-workflow.md).
 
 ## Fluxo de trabalho dos formulários {#formsworkflow}
 
-1. Em AEM, abra a Configuração do Adobe Experience Manager Web Console para seu servidor usando o seguinte URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. No AEM, abra Configuração do console da Web do Adobe Experience Manager para o servidor usando o seguinte URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
    ![Gerenciador de configurações](assets/2configmanager-1.png)
 
-1. Nesta página, localize a Configuração do SDK do cliente do AEM Forms e expanda-a clicando nela.
-1. No URL do servidor, insira o nome do AEM Forms no servidor JEE, os detalhes de logon e clique em **Salvar**.
+1. Nesta página, localize a Configuração do SDK do cliente da AEM Forms e expanda-a clicando nela.
+1. No URL do servidor, digite o nome do AEM Forms no servidor JEE, os detalhes de logon e clique em **Salvar**.
 
    ![Insira o nome do servidor do LiveCycle](assets/1cofigmanager.png)
 
 1. Especifique o nome de usuário e a senha.
-1. Certifique-se de que sun.util.calendar é adicionado à Configuração do firewall de desserialização.
+1. Verifique se sun.util.calendar foi adicionado à Configuração do firewall de desserialização.
 
-   Vá para Configuração do firewall de desserialização e, em Incluir na lista de permissões classes de prefixos do pacote, adicione sun.util.calendar.
+   Incluir na lista de permissões Acesse Configuração do firewall de desserialização e, em classes ➡ de prefixos de pacote, adicione sun.util.calendar.
 
-1. Agora seus servidores são mapeados e os processos de publicação no AEM Forms no JEE estão disponíveis na interface do usuário AEM ao criar cartas.
+1. Agora seus servidores estão mapeados e os processos de publicação no AEM Forms no JEE estão disponíveis na interface do usuário AEM ao criar cartas.
 
-   ![Criar tela de carta com processos de publicação listados](assets/0configmanager.png)
+   ![Criar tela de carta com os processos de publicação listados](assets/0configmanager.png)
 
-1. Para autenticar um processo/serviço, copie o nome de um processo e volte para a página Configurações do console da Web do Adobe Experience Manager > Configuração do SDK do cliente do AEM Forms e adicione o processo como um novo serviço.
+1. Para autenticar um processo/serviço, copie o nome de um processo, volte para a página Configurações do console da Web do Adobe Experience Manager > Configuração do SDK do cliente AEM Forms e adicione o processo como um novo serviço.
 
-   Por exemplo, se a lista suspensa na página Propriedades da letra exibir o nome do processo como Forms Workflow -> ValidCCPostProcess/SaveXML, adicione um Nome de Serviço como `ValidCCPostProcess/SaveXML`.
+   Por exemplo, se a lista suspensa na página Propriedades da carta exibir o nome do processo como Forms Workflow -> ValidCCPostProcess/SaveXML, adicione um Nome do serviço como `ValidCCPostProcess/SaveXML`.
 
-1. Para usar o AEM Forms em workflows JEE para pós-processamento, configure os parâmetros e as saídas necessários. Os valores padrão dos parâmetros são indicados abaixo.
+1. Para usar workflows do AEM Forms no JEE para pós-processamento, configure os parâmetros e as saídas necessários. Os valores padrão dos parâmetros são indicados abaixo.
 
-   Vá para a página Configurações do console da Web do Adobe Experience Manager > **[!UICONTROL Configurações de gerenciamento de correspondência]** e configure os seguintes parâmetros:
+   Vá para a página Configurações do console da Web do Adobe Experience Manager > **[!UICONTROL Configurações do gerenciamento de correspondência]** e configure os seguintes parâmetros:
 
-   1. **inPDFDoc (parâmetro de documento de PDF):** Um documento PDF como entrada. Esta entrada contém a letra renderizada como entrada. Os nomes de parâmetro indicados são configuráveis. Eles podem ser configurados nas configurações do Gerenciamento de correspondência na configuração.
-   1. **inXMLDoc (parâmetro de dados XML):** Um documento XML como entrada. Essa entrada contém dados inseridos pelo usuário no formato XML.
-   1. **inXDPDoc (parâmetro do documento XDP):** Um documento XML como entrada. Esta entrada contém layout subjacente (XDP).
-   1. **inAttachmentDocs (parâmetro Attachment Documents ):** Um parâmetro de entrada de lista. Esta entrada contém todos os anexos como entrada.
-   1. **redirectURL (Redirecionar saída de URL):** Um tipo de saída que indica o url para o qual redirecionar.
+   1. **inPDFDoc (parâmetro de documento PDF):** Um documento PDF como entrada. Esta entrada contém a letra renderizada como entrada. Os nomes de parâmetro indicados são configuráveis. Elas podem ser definidas nas configurações do Gerenciamento de correspondência a partir da configuração.
+   1. **inXMLDoc (parâmetro de dados XML):** Um documento XML como entrada. Essa entrada contém dados inseridos pelo usuário na forma de XML.
+   1. **inXDPDoc (parâmetro de documento XDP):** Um documento XML como entrada. Esta entrada contém o layout subjacente (XDP).
+   1. **inAttachmentDocs (parâmetro Attachment Documents):** Um parâmetro de entrada de lista. Esta entrada contém todos os anexos como entrada.
+   1. **redirectURL (Saída de URL de redirecionamento):** Um tipo de saída indicando o URL para o qual redirecionar.
 
-   Seu fluxo de trabalho de formulários deve ter um parâmetro de documento PDF ou um parâmetro de dados XML como entrada com o mesmo nome especificado em **[!UICONTROL Configurações de gerenciamento de correspondência]**. Isso é necessário para que o processo seja listado na lista suspensa Processo de postagem .
+   Seu fluxo de trabalho de formulários deve ter um parâmetro de documento PDF ou parâmetro de dados XML como entrada com o mesmo nome especificado em **[!UICONTROL Configurações do gerenciamento de correspondência]**. Isso é necessário para que o processo seja listado na lista suspensa Pós-processamento.
 
 ## Configurações na instância de publicação {#settings-on-the-publish-instance}
 
-1. fazer logon no `https://localhost:publishport/aem/forms`.
-1. Navegar para **[!UICONTROL Letras]** para exibir a carta publicada disponível na instância de publicação.
-1. Defina as Configurações do AEM DS. Consulte [Definir configurações AEM DS](../../forms/using/configuring-the-processing-server-url-.md).
+1. fazer logon em `https://localhost:publishport/aem/forms`.
+1. Navegue até **[!UICONTROL Cartas]** para exibir a carta publicada que está disponível na instância de publicação.
+1. Defina as configurações de AEM DS. Consulte [Definição das configurações de AEM DS](../../forms/using/configuring-the-processing-server-url-.md).
 
 >[!NOTE]
 >
->Ao usar workflows do Forms ou AEM, antes de fazer qualquer envio do servidor de publicação, é necessário configurar o serviço de configurações do DS. Caso contrário, a apresentação do formulário não será válida.
+>Ao usar workflows Forms ou AEM, antes de fazer qualquer envio do servidor de publicação, é necessário definir o serviço de configurações do DS. Caso contrário, o envio do Formulário não terá êxito.
 
 ## Recuperação de instâncias de carta {#letter-instances-retrieval}
 
-As instâncias de carta salvas podem ser mais manipuladas, como recuperação de instâncias de carta e exclusão de instâncias de carta, usando as seguintes APIs definidas em LetterInstanceService.
+As instâncias de cartas salvas podem ser manipuladas ainda mais, como a recuperação de instâncias de cartas e a exclusão de instâncias de cartas, usando as seguintes APIs definidas em LetterInstanceService.
 
 <table>
  <tbody>
@@ -90,46 +90,46 @@ As instâncias de carta salvas podem ser mais manipuladas, como recuperação de
    <td><strong>Descrição</strong></td>
   </tr>
   <tr>
-   <td><p>CartaInstânciaPúblicaVO</p> <p>getLetterInstance(String letterInstanceId)</p> <p>Emite ICCException; </p> </td>
+   <td><p>LetterInstanceVO Pública</p> <p>getLetterInstance(String letterInstanceId)</p> <p>Gera uma exceção ICCE; </p> </td>
    <td>getLetterInstance</td>
-   <td>Buscar a instância de letra especificada </td>
+   <td>Buscar a ocorrência de carta especificada </td>
   </tr>
   <tr>
-   <td>Public void deleteLetterInstance(String letterInstanceId) lança ICCException; </td>
+   <td>Public void deleteLetterInstance(String letterInstanceId) gera ICCException; </td>
    <td>deleteLetterInstance </td>
-   <td>Excluída a instância de carta especificada </td>
+   <td>Excluída a ocorrência de carta especificada </td>
   </tr>
   <tr>
-   <td>List getAllLetterInstances(Query) lança ICCException; </td>
+   <td>List getAllLetterInstances(Query) gera ICCException; </td>
    <td>getAllLetterInstances </td>
-   <td>Essa API busca instâncias de letras com base no parâmetro de consulta de entrada. Para buscar todas as instâncias de letra, o parâmetro de consulta pode ser passado como nulo.<br /> </td>
+   <td>Essa API busca instâncias de cartas com base no parâmetro de consulta de entrada. Para buscar todas as instâncias de correspondência, o parâmetro de consulta pode ser passado como nulo.<br /> </td>
   </tr>
   <tr>
-   <td>Public Boolean letterInstanceExists(String letterInstanceName) lança ICCException; </td>
+   <td>letterInstanceExists(String letterInstanceName) booleana pública lança ICCException; </td>
    <td>letterInstanceExists </td>
-   <td>Verifique se existe uma LetterInstance pelo nome fornecido </td>
+   <td>Verificar se existe uma LetterInstance com o nome especificado </td>
   </tr>
  </tbody>
 </table>
 
-## Associar um processo de publicação a uma carta {#associating-a-post-process-with-a-letter}
+## Associando um processo de publicação a uma carta {#associating-a-post-process-with-a-letter}
 
-Na interface do usuário do CCR, conclua as seguintes etapas para associar um processo de publicação a uma letra:
+Na interface do usuário do CCR, conclua as seguintes etapas para associar um pós-processo a uma correspondência:
 
-1. Passe o mouse sobre uma carta e toque em **Propriedades da exibição**.
+1. Passe o mouse sobre uma letra e toque **Propriedades da exibição**.
 1. Selecione **Editar**.
-1. Nas Propriedades básicas, usando o menu suspenso Processo de postagem , selecione o processo de postagem a ser associado à carta. Os processos de publicação relacionados ao AEM e ao Forms estão listados na lista suspensa.
+1. Nas Propriedades básicas, usando o menu suspenso Pós-processo, selecione o pós-processo a ser associado à correspondência. Tanto o AEM quanto os processos de post relacionados ao Forms estão listados no menu suspenso.
 1. Toque **Salvar**.
-1. Depois de configurar a carta com o Processo de postagem, publique a carta e, opcionalmente, na instância de publicação, especifique o URL de processamento no serviço de Configurações AEM DS. Isso garante que o processo de publicação seja executado na instância de processamento.
+1. Depois de configurar a correspondência com o pós-processamento, publique a correspondência e, opcionalmente, na instância de publicação, especifique o URL de processamento no serviço de Configurações do AEM DS. Isso garante que o pós-processo seja executado na instância de processamento.
 
 ## Recarregar uma instância de carta de rascunho  {#reloaddraft}
 
-Uma instância de carta de rascunho pode ser recarregada na interface do usuário usando o seguinte url:
+Uma instância de carta de rascunho pode ser recarregada na interface usando o seguinte url:
 
 `https://<server>:<port>/aem/forms/`
 
 `createcorrespondence.html?/random=$&cmLetterInstanceId=$<LetterInstanceId>`
 
-LetterInstanceID: A ID exclusiva da instância da carta enviada.
+LetterInstanceID: a ID exclusiva da instância de carta enviada.
 
-Para obter mais informações sobre como salvar uma carta de rascunho, consulte [Salvar rascunhos e enviar instâncias de carta](../../forms/using/create-correspondence.md#savingdrafts).
+Para obter mais informações sobre como salvar um rascunho de carta, consulte [Salvar rascunhos e enviar instâncias de carta](../../forms/using/create-correspondence.md#savingdrafts).

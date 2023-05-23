@@ -1,7 +1,7 @@
 ---
 title: Atualização do link para a documentação
 seo-title: Updating the link to the documentation
-description: Como atualizar o destino do link Ajuda do Workspace no espaço de trabalho do AEM Forms para apontar para o link de documentação personalizado.
+description: Como atualizar o destino do link de Ajuda do Espaço de trabalho no espaço de trabalho do AEM Forms para apontar para o link de documentação personalizado.
 seo-description: How-to update the destination of Workspace Help link in AEM Forms workspace to point to your custom documentation link.
 uuid: 64056d10-1451-44ed-8f25-81a21037dc75
 contentOwner: robhagat
@@ -21,12 +21,12 @@ ht-degree: 3%
 
 Você pode acessar o conteúdo de ajuda padrão do espaço de trabalho do AEM Forms selecionando **Ajuda > Ajuda do Workspace**. Ele aponta para a documentação online no site do Adobe. No entanto, você pode atualizá-lo para apontar para qualquer outro URL.
 
-Considere os seguintes casos de uso em que você pode querer alterar o URL de ajuda padrão:
+Considere os seguintes casos de uso em que talvez você queira alterar o URL de ajuda padrão:
 
-* Para fornecer ajuda localizada em um idioma de sua escolha.
-* Para fornecer conteúdo de ajuda personalizado para seu espaço de trabalho personalizado.
+* Por fornecer ajuda localizada em um idioma de sua escolha.
+* Para fornecer conteúdo de ajuda personalizado para o seu espaço de trabalho personalizado.
 
-Para atualizar o URL da documentação online, siga as [Etapas genéricas da personalização](/help/forms/using/generic-steps-html-workspace-customization.md) e, em seguida, execute as etapas a seguir.
+Para atualizar o URL da documentação online, siga o [Etapas genéricas de personalização](/help/forms/using/generic-steps-html-workspace-customization.md) e depois as etapas a seguir.
 
 1. Copie o `userinfo.html` arquivo de `/libs/ws/js/runtime/templates` para `/apps/ws/js/runtime/templates`.
 1. Alterar:

@@ -1,7 +1,7 @@
 ---
 title: Uso da API sendToPrinter
 seo-title: Using the sendToPrinter API
-description: Usando o serviço sendToPrinter para enviar um documento para a impressora.
+description: Uso do serviço sendToPrinter para enviar um documento à impressora.
 seo-description: Using the sendToPrinter service to send a document to printer.
 uuid: c6a3fe8d-ec19-4350-b4a6-4c3d1971b501
 content-type: reference
@@ -20,11 +20,11 @@ ht-degree: 14%
 
 ## Visão geral {#overview}
 
-No AEM Forms, você pode usar o serviço SendToPrinter para enviar um documento para a impressora. O serviço SendToPrinter suporta os seguintes mecanismos de acesso de impressão:
+No AEM Forms, você pode usar o serviço SendToPrinter para enviar um documento para a impressora. O serviço SendToPrinter oferece suporte aos seguintes mecanismos de acesso de impressão:
 
 * **Impressora acessível diretamente** `: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
 
-* **Impressora direta acessível** `: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
+* **Impressora acessível indiretamente** `: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
 
    Ao enviar um documento para uma impressora, especifique um destes protocolos de impressão:
 
@@ -32,19 +32,19 @@ No AEM Forms, você pode usar o serviço SendToPrinter para enviar um documento 
    * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
    * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIFS**: O serviço de saída suporta o protocolo de impressão CIFS (Common Internet File System).
+   * **CIFS**: o serviço de saída é compatível com o protocolo de impressão CIFS (Common Internet File System).
 
-## Usando o serviço SendToPrinter {#using-sendtoprinter-service}
+## Uso do Serviço SendToPrinter {#using-sendtoprinter-service}
 
 A tabela abaixo lista:
 
-* informações sobre o printerName ou printServer a ser usado para vários protocolos.
-* valor ou exceção que uma impressora retorna para várias combinações de URI e Nome do Servidor de Impressora
+* informações sobre printerName ou printServer a serem usadas para vários protocolos.
+* valor ou exceção que uma impressora retorna para várias combinações de URI do Servidor de Impressoras e Nome da impressora
 
-| Protocolo (Mecanismo de acesso) | URI do servidor de impressão (PrinterSpec.printServer) | Nome da impressora (PrinterSpec.printerName) | Resultado |
+| Protocolo (mecanismo de acesso) | URI do Servidor de Impressão (PrinterSpec.printServer) | Nome da impressora (PrinterSpec.printerName) | Resultado |
 |--- |--- |--- |--- |
-| SharedPrinter | Qualquer | Vazio | Exceção: O argumento necessário sPrinterName não pode estar vazio. |
-| SharedPrinter | Qualquer | Inválido | Uma exceção declara que a impressora não pode ser encontrada. |
+| SharedPrinter | Qualquer | Vazio | Exceção: o argumento obrigatório sPrinterName não pode estar vazio. |
+| SharedPrinter | Qualquer | Inválido | Uma exceção indica que a impressora não pode ser encontrada. |
 | SharedPrinter | Qualquer | Válido | Trabalho de impressão bem-sucedido. |
 | LPD | Vazio | Qualquer | uma exceção informando que o argumento necessário sPrintServerUri não pode estar vazio. |
 | LPD | Inválido | Vazio | uma exceção informando que o argumento necessário sPrinterName não pode estar vazio. |
@@ -58,15 +58,15 @@ A tabela abaixo lista:
 | DirectIP | Inválido | Qualquer | uma exceção informando que a impressora não pode ser encontrada. |
 | DirectIP | Válido | Qualquer | Trabalho de impressão bem-sucedido. |
 | CIFS | Válido | Vazio | Trabalho de impressão bem-sucedido. |
-| CIFS | Inválido | Qualquer | um erro desconhecido ao imprimir usando CIFS. |
+| CIFS | Inválido | Qualquer | erro desconhecido ao imprimir usando CIFS. |
 | CIFS | Vazio | Qualquer | uma exceção informando que o argumento necessário sPrintServerUri não pode estar vazio. |
 
-## Suporte de autenticação {#authentication-support}
+## Suporte à autenticação {#authentication-support}
 
-A autenticação só é suportada para impressão CIFS. Para autenticar, forneça o nome de usuário/senha/domínio em PrinterSpec. Você pode criptografar uma senha usando AEM Granite CyprtoSupport Service executando as seguintes etapas:
+A autenticação é suportada somente para impressão CIFS. Para autenticar, forneça o nome de usuário/senha/domínio em PrinterSpec. Você pode criptografar uma senha usando o serviço de suporte AEM Granite Cyprus executando as seguintes etapas:
 
-1. Vá para https://&lt;server>:&lt;port>/system/console.
+1. Acesse https://&lt;server>:&lt;port>/system/console.
 
-1. Ir para **[!UICONTROL Principal]** > **[!UICONTROL Suporte de criptografia]**.
+1. Ir para **[!UICONTROL Principal]** > **[!UICONTROL Suporte a criptografia]**.
 
-1. Insira algum texto Simples e clique em **[!UICONTROL Protect]**.
+1. Insira algum texto sem formatação e clique em **[!UICONTROL Protect]**.

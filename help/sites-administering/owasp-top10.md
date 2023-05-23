@@ -1,5 +1,5 @@
 ---
-title: OWASP Top 10
+title: OWASP 10 melhores
 seo-title: OWASP Top 10
 description: Saiba como o AEM lida com os 10 principais riscos de segurança da OWASP.
 seo-description: Learn how AEM deals with the top 10 OWASP security risks.
@@ -18,58 +18,58 @@ ht-degree: 0%
 
 ---
 
-# OWASP Top 10{#owasp-top}
+# OWASP 10 melhores{#owasp-top}
 
-O [Abrir Projeto de Segurança da Aplicação Web](https://www.owasp.org) (OWASP) mantém uma lista do que considera ser o [Os 10 Riscos Principais de Segurança da Aplicação Web](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
+A variável [Abrir Projeto de Segurança de Aplicativo Web](https://www.owasp.org) (OWASP) mantém uma lista do que consideram ser a [Os 10 maiores riscos à segurança de aplicações web](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
 
-Elas estão listadas abaixo, juntamente com uma explicação de como o CRX lida com elas.
+Eles estão listados abaixo, junto com uma explicação de como o CRX lida com eles.
 
 ## 1. Injeção {#injection}
 
-* SQL - Impedido pelo design: A configuração padrão do repositório não inclui nem requer um banco de dados tradicional, todos os dados são armazenados no repositório de conteúdo. Todo o acesso está limitado a usuários autenticados e só pode ser executado por meio da API JCR. O SQL é compatível somente com consultas de pesquisa (SELECT). Mais o SQL oferece suporte à vinculação de valor.
-* LDAP - A injeção LDAP não é possível, pois o módulo de autenticação filtra a entrada e executa a importação do usuário usando o método bind.
-* SO - Não há execução de shell executada no aplicativo.
+* SQL — evitado por design: a configuração padrão do repositório não inclui nem exige um banco de dados tradicional; todos os dados são armazenados no repositório de conteúdo. Todo o acesso é limitado a usuários autenticados e só pode ser executado por meio da API JCR. O SQL é compatível somente com consultas de pesquisa (SELECT). Além disso, o SQL oferece suporte à vinculação de valores.
+* LDAP - A injeção de LDAP não é possível, pois o módulo de autenticação filtra a entrada e executa a importação do usuário usando o método bind.
+* OS - Não há execução de shell a partir do aplicativo.
 
-## 2. Script entre sites (XSS) {#cross-site-scripting-xss}
+## 2. Criação de script entre sites (XSS) {#cross-site-scripting-xss}
 
-A prática geral de mitigação é codificar toda a saída de conteúdo gerado pelo usuário usando uma biblioteca de proteção XSS do lado do servidor com base em [Codificador OWASP](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) e [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
+A prática geral de mitigação é codificar todas as saídas de conteúdo gerado pelo usuário usando uma biblioteca de proteção XSS do lado do servidor com base em [Codificador OWASP](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) e [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
-O XSS é uma prioridade máxima durante testes e desenvolvimento, e todos os problemas encontrados são (normalmente) resolvidos imediatamente.
+O XSS é uma prioridade principal durante os testes e o desenvolvimento, e todos os problemas encontrados são (normalmente) resolvidos imediatamente.
 
-## 3. Autenticação quebrada e gerenciamento de sessão {#broken-authentication-and-session-management}
+## 3. Autenticação interrompida e gerenciamento de sessão {#broken-authentication-and-session-management}
 
-O AEM usa técnicas de autenticação sólidas e comprovadas, com base em [Apache Jackrabbit](https://jackrabbit.apache.org/) e [Apache Sling](https://sling.apache.org/). Sessões de Navegador/HTTP não são usadas em AEM.
+O AEM usa técnicas de autenticação comprovadas e de som, contando com [Apache Jackrabbit](https://jackrabbit.apache.org/) e [Apache Sling](https://sling.apache.org/). As sessões de navegador/HTTP não são usadas no AEM.
 
-## 4. Referências inseguras de objeto direto {#insecure-direct-object-references}
+## 4. Referências de objeto direto não seguras {#insecure-direct-object-references}
 
-Todo o acesso a objetos de dados é mediado pelo repositório e, portanto, restringido pelo controle de acesso baseado em funções.
+Todo o acesso a objetos de dados é mediado pelo repositório e, portanto, restrito pelo controle de acesso baseado em função.
 
 ## 5. Falsificação de solicitação entre sites (CSRF) {#cross-site-request-forgery-csrf}
 
-A falsificação de solicitação entre sites (CSRF) é atenuada ao injetar automaticamente um token criptográfico em todos os formulários e solicitações de AJAX e verificar esse token no servidor para cada POST.
+A CSRF (Falsificação de solicitação entre sites) é atenuada pela injeção automática de um token criptográfico em todos os formulários e solicitações de AJAX e pela verificação desse token no servidor para cada POST.
 
-Além disso, AEM vem com um filtro baseado no cabeçalho do referenciador, que pode ser configurado para *only* permitir solicitações de POST de hosts específicos (definido em uma lista).
+Além disso, o AEM é enviado com um filtro baseado no cabeçalho do referenciador, que pode ser configurado para *somente* permitir solicitações POST de hosts específicos (definidos em uma lista).
 
-## 6. Configuração incorreta da segurança {#security-misconfiguration}
+## 6. Erro de configuração de segurança {#security-misconfiguration}
 
-É impossível garantir que todos os softwares estejam sempre configurados corretamente. No entanto, nos esforçamos para fornecer o máximo de orientação possível e tornar a configuração o mais simples possível. Além disso, AEM navios com [verificações de integridade de segurança integradas](/help/sites-administering/operations-dashboard.md) que o ajuda a monitorar rapidamente a configuração de segurança.
+É impossível garantir que todo o software esteja sempre configurado corretamente. No entanto, nos esforçamos para fornecer o máximo de orientação possível e tornar a configuração o mais simples possível. Além disso, o AEM [verificações de integridade de segurança integradas](/help/sites-administering/operations-dashboard.md) que ajudam a monitorar rapidamente a configuração de segurança.
 
-Revise o [Lista de verificação de segurança](/help/sites-administering/security-checklist.md) para obter mais informações, que fornecem instruções passo a passo de proteção.
+Revise o [Lista de verificação de segurança](/help/sites-administering/security-checklist.md) para obter mais informações que fornecem instruções passo a passo sobre fortalecimento.
 
-## 7. Armazenamento Criptográfico Inseguro {#insecure-cryptographic-storage}
+## 7. Armazenamento criptográfico inseguro {#insecure-cryptographic-storage}
 
 As senhas são armazenadas como hashes criptográficos no nó do usuário; por padrão, esses nós só podem ser lidos pelo administrador e pelo próprio usuário.
 
-Dados confidenciais, como credenciais de terceiros, são armazenados em formulários criptografados usando uma biblioteca criptográfica certificada pelo FIPS 140-2.
+Dados confidenciais, como credenciais de terceiros, são armazenados em formato criptografado usando uma biblioteca criptográfica com certificação FIPS 140-2.
 
 ## 8. Falha ao restringir o acesso ao URL {#failure-to-restrict-url-access}
 
-O repositório permite a configuração de [privilégios de granulação fina (conforme especificado pelo JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) para um determinado usuário ou grupo em um determinado caminho, por meio de entradas de controle de acesso. As restrições de acesso são aplicadas pelo repositório.
+O repositório permite a configuração de [privilégios refinados (conforme especificado pelo JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) para qualquer usuário ou grupo específico em qualquer caminho, por meio de entradas de controle de acesso. As restrições de acesso são aplicadas pelo repositório.
 
 ## 9. Proteção insuficiente da camada de transporte {#insufficient-transport-layer-protection}
 
-Atenuado pela configuração do servidor (por exemplo, usar somente HTTPS).
+Reduzido pela configuração do servidor (por exemplo, usar somente HTTPS).
 
 ## 10. Redirecionamentos e encaminhamentos não validados {#unvalidated-redirects-and-forwards}
 
-Atenuado ao restringir todos os redirecionamentos para destinos fornecidos pelo usuário a locais internos.
+Atenuado pela restrição de todos os redirecionamentos para destinos fornecidos pelo usuário para locais internos.

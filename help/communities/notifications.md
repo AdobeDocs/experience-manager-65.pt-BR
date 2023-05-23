@@ -1,7 +1,7 @@
 ---
-title: Notificações de comunidades
+title: Notificações das comunidades
 seo-title: Communities Notifications
-description: A AEM Communities tem notificações que exibem eventos de interesse para o membro da comunidade que fez logon
+description: O AEM Communities tem notificações que exibem eventos de interesse para o membro da comunidade conectado
 seo-description: AEM Communities has notifications that display events of interest to the signed-in community member
 uuid: 2f5ea4b5-7308-414e-a3f8-2e8aa76b1ef4
 contentOwner: Janice Kendall
@@ -19,90 +19,90 @@ ht-degree: 1%
 
 ---
 
-# Notificações de comunidades {#communities-notifications}
+# Notificações das comunidades {#communities-notifications}
 
 ## Visão geral {#overview}
 
-O AEM Communities fornece uma seção de notificações que exibe eventos de interesse para o membro da comunidade com logon assinado.
+O AEM Communities fornece uma seção de notificações que exibe eventos de interesse para o membro da comunidade conectado.
 
-As notificações são semelhantes a [atividades](/help/communities/essentials-activities.md) e [assinaturas](/help/communities/subscriptions.md) que possam resultar de:
+As notificações são semelhantes a [atividades](/help/communities/essentials-activities.md) e [assinaturas](/help/communities/subscriptions.md) como podem resultar de:
 
-* O conteúdo de publicação do membro.
-* O membro que escolheu seguir outro membro.
-* O membro opta por seguir tópicos específicos, artigos e outros threads de conteúdo.
-* A marcação de membro (@menção) de outro membro da comunidade em um conteúdo gerado pelo usuário.
+* O conteúdo de postagem do membro.
+* O membro que escolhe seguir outro membro.
+* O membro optou por seguir tópicos, artigos e outras threads de conteúdo específicos.
+* A marcação de membro (@mention) de outro membro da comunidade em um conteúdo gerado pelo usuário.
 
-O que distingue notificações de atividades e assinaturas é:
+O que distingue as notificações das atividades e assinaturas é:
 
 * Um link para a seção de notificações está sempre presente no cabeçalho de um site da comunidade:
 
-   * As atividades exigem [função de fluxo de atividades](/help/communities/functions.md#activity-stream-function) a ser incluído na estrutura do site da comunidade.
-   * As assinaturas exigem [configuração do email](/help/communities/email.md).
+   * As atividades exigem o [função de fluxo de atividade](/help/communities/functions.md#activity-stream-function) para ser incluído na estrutura do site da comunidade.
+   * As assinaturas exigem [configuração de email](/help/communities/email.md).
 
-* A implementação das notificações é por meio de canais escaláveis e conectáveis:
+* A implementação de notificações é feita por meio de canais dimensionáveis e conectáveis:
 
    * As atividades só estão disponíveis na Web.
    * As assinaturas só estão disponíveis por email.
 
-Comunidades [FP1](/help/communities/deploy-communities.md#latestfeaturepack), os canais de notificação disponíveis são:
+A partir das comunidades [FP1](/help/communities/deploy-communities.md#latestfeaturepack), os canais de notificação disponíveis são:
 
-* O canal da Web, acessado por meio do `Notifications` link .
-* O canal de email, disponível quando o email está configurado corretamente.
+* O canal da Web, acessado por meio do `Notifications` link.
+* O canal de email, disponível quando o email é configurado corretamente.
 
-Os canais futuros são dispositivos móveis e desktop.
+Os canais futuros são móvel e desktop.
 
 ### Requisitos {#requirements}
 
-**Configurar Email**
+**Configurar email**
 
-O email deve ser configurado para que o canal de email das notificações funcione.
+O email deve ser configurado para que o canal de email funcione.
 
 Para obter instruções sobre como configurar o email, consulte [Configuração de email](/help/communities/analytics.md).
 
-**Habilitar Seguir**
+**Ativar Seguir**
 
-Os componentes devem ser configurados para ativar o seguinte. Os recursos que permitem o seguinte são [blog](/help/communities/blog-feature.md), [fórum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendário](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md)e [comentários](/help/communities/comments.md).
+Os componentes devem ser configurados para permitir o acompanhamento. Os recursos que permitem seguir são [blog](/help/communities/blog-feature.md), [fórum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendário](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md), e [comentários](/help/communities/comments.md).
 
 **Nota**:
 
-* Componentes usados na comunidade [modelos de site](/help/communities/sites.md) e [modelos de grupo](/help/communities/tools-groups.md) pode já estar configurado para ser seguido.
+* Componentes usados na comunidade [modelos de site](/help/communities/sites.md) e [modelos de grupo](/help/communities/tools-groups.md) pode já estar configurado para seguir.
 
 * Os perfis de membro já estão configurados para permitir que outros membros sigam.
 
-## Notificações do seguinte {#notifications-from-following}
+## Notificações do Seguinte {#notifications-from-following}
 
 ![notificações](assets/notifications.png)
 
-O **[!UICONTROL Seguir]** fornece um meio de seguir entradas como atividades, assinaturas e/ou notificações. Sempre que a variável **[!UICONTROL Seguir]** for selecionado, é possível ativar ou desativar uma seleção. O `Email Subscriptions` A seleção só está presente quando configurada.
+A variável **[!UICONTROL Seguir]** O botão fornece um meio de seguir entradas como atividades, assinaturas e/ou notificações. Cada vez que a variável **[!UICONTROL Seguir]** for selecionada, é possível ativar ou desativar uma seleção. A variável `Email Subscriptions` a seleção está presente somente quando configurada.
 
-Se qualquer método de seguir for selecionado, o texto do botão será alterado para **[!UICONTROL Seguindo]**. Para maior comodidade, é possível selecionar `Unfollow All` para desativar todos os métodos.
+Se qualquer método de seguir for selecionado, o texto do botão será alterado para **[!UICONTROL Seguindo]**. Por conveniência, é possível selecionar `Unfollow All` para desativar todos os métodos.
 
-O **[!UICONTROL Seguir]** será exibido:
+A variável **[!UICONTROL Seguir]** aparecerá:
 
-* Ao visualizar o perfil de outro membro.
-* Em uma página principal do recurso, como fóruns, QnA e blogs:
+* Ao exibir o perfil de outro membro.
+* Em uma página principal de recursos, como fóruns, QnA e blogs:
 
-   * Segue todas as atividades para esse recurso geral.
+   * Segue todas as atividades desse recurso geral.
 
-* Para uma entrada específica, como um tópico do fórum, uma pergunta de QnA ou um artigo do blog:
+* Para uma entrada específica, como um tópico do fórum, pergunta QnA ou artigo de blog:
 
-   * Segue todas as atividades da entrada específica.
+   * Segue todas as atividades dessa entrada específica.
 
-## Gerenciando configurações de notificação {#managing-notification-settings}
+## Gerenciar configurações de notificação {#managing-notification-settings}
 
-Ao selecionar o link Configurações de notificação na página Notificações , é possível que cada membro gerencie como as notificações são recebidas.
+Ao selecionar o link Definições de Notificação na página Notificações, é possível que cada membro gerencie como as notificações são recebidas.
 
-O canal da Web é sempre ativado.
+O canal da Web está sempre habilitado.
 
 ![notifications14](assets/notifications1.png)
 
-O canal de email, que depende do [configuração do email](/help/communities/email.md), fornece as mesmas configurações do canal da Web.
+O canal de email, que depende da [configuração de email](/help/communities/email.md), fornece as mesmas configurações do canal Web.
 
 O canal de email está desativado por padrão.
 
 ![notifications2](assets/notifications2.png)
 
-Ele pode ser ativado por um membro, mas ainda depende da configuração do email.
+Ela pode ser ativada por um membro, mas ainda depende do email estar configurado.
 
 ![notifications3](assets/notifications3.png)
 
@@ -110,7 +110,7 @@ Ele pode ser ativado por um membro, mas ainda depende da configuração do email
 
 ### Notificações da Web {#web-notifications}
 
-A [site de comunidade criado pelo assistente](/help/communities/sites-console.md) O agora inclui um link para a `Notifications` na barra de cabeçalho do site acima do banner. Ao contrário das mensagens, as notificações são criadas para cada site da comunidade, enquanto as mensagens devem ser ativadas durante o processo de criação do site.
+A [o assistente criou o site da comunidade](/help/communities/sites-console.md) agora inclui um link para a variável `Notifications` recurso na barra de cabeçalho do site acima do banner. Diferentemente das mensagens, as notificações são criadas para cada site da comunidade, enquanto as mensagens devem ser ativadas durante o processo de criação do site.
 
 Ao visitar o site publicado, selecione o `Notifications` exibirá todas as notificações do membro.
 
@@ -124,11 +124,11 @@ Quando o canal de email está ativado, o membro recebe um email que contém um l
 
 ## Personalizar notificações por email {#customize-email-notifications}
 
-As organizações podem personalizar as notificações por email ao [sobreposição](/help/communities/client-customize.md#overlays) os modelos em **/libs/settings/community/templates/email/html**.
+As organizações podem personalizar as notificações por email [sobreposição](/help/communities/client-customize.md#overlays) os modelos em **/libs/settings/community/templates/email/html**.
 
-Por exemplo, para modificar as notificações de e-mail das menções (para um componente de comunidades), adicione um **if** condição para verbo **menção** nos modelos dos componentes para os quais você ativou a variável **@menções** suporte.
+Por exemplo, para modificar as menções notificações por email (para um componente de comunidades), adicione uma **se** condição para verbo **menção** nos modelos dos componentes para os quais você ativou a variável **@mentions** suporte.
 
-Para modificar o modelo de notificações por email para @mention em comentários do blog, coloque o modelo pronto para uso em: **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en**
+Para modificar o modelo de notificações por email para @mention em comentários de blog, coloque o modelo pronto para uso em: **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/br**
 
 ```java
 {{#equals this.verb "mention"}}\

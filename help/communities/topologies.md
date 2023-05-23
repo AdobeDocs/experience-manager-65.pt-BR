@@ -1,7 +1,7 @@
 ---
 title: Topologias recomendadas para comunidades
 seo-title: Recommended Topologies for Communities
-description: Como abordar a manipulação de conteúdo gerado pelo usuário (UGC)
+description: Como abordar o manuseio de conteúdo gerado pelo usuário (UGC)
 seo-description: How to approach the handling of user-generated content (UGC)
 uuid: 4bc1c423-0ba9-4f2e-b11c-4d6824f45641
 contentOwner: Guillaume Carlino
@@ -21,56 +21,56 @@ ht-degree: 1%
 
 A partir do AEM Communities 6.1, uma abordagem única foi adotada para lidar com o conteúdo gerado pelo usuário (UGC) enviado pelos visitantes do site (membros) do ambiente de publicação.
 
-Essa abordagem é fundamentalmente diferente da forma como a plataforma de AEM lida com o conteúdo do site, geralmente gerenciado a partir do ambiente de criação.
+Essa abordagem é fundamentalmente diferente da maneira como a plataforma AEM lida com o conteúdo do site, que geralmente é gerenciado no ambiente do autor.
 
-A plataforma de AEM usa uma loja de nós que replica o conteúdo do site do autor para publicar, enquanto o AEM Communities usa uma única loja comum para UGC que nunca é replicada.
+A plataforma AEM usa um armazenamento de nós que replica o conteúdo do site do autor para a publicação, enquanto o AEM Communities usa um armazenamento único e comum para UGC que nunca é replicado.
 
 Para o armazenamento UGC comum, é necessário escolher um [provedor de recursos de armazenamento (SRP)](working-with-srp.md). As opções recomendadas são:
 
-* [DSRP - Provedor de Recursos de Armazenamento de Banco de Dados Relacional](dsrp.md)
-* [MSRP - Provedor de recursos de armazenamento MongoDB](msrp.md)
-* [ASRP - Provedor de Recursos de Armazenamento Adobe](asrp.md)
+* [DSRP - Provedor de Recurso de Armazenamento de Banco de Dados Relacional](dsrp.md)
+* [MSRP - Provedor de Recurso de Armazenamento MongoDB](msrp.md)
+* [ASRP - Provedor de recurso de armazenamento de Adobe](asrp.md)
 
-Outra opção SRP, [JSRP - Provedor de recursos de armazenamento JCR](jsrp.md), não oferece suporte a uma loja UGC comum para os ambientes de autor e publicação para ambos os acessos.
+Uma outra opção SRP, [JSRP - Provedor de recurso de armazenamento JCR](jsrp.md)O não é compatível com um armazenamento UGC comum para os ambientes de autor e publicação para acesso.
 
-Exigir um armazenamento comum resulta nas seguintes topologias recomendadas.
-
->[!NOTE]
->
->Para AEM Communities, [O UGC nunca é replicado](working-with-srp.md#ugc-never-replicated).
->
->Quando a implantação não inclui um [loja comum](working-with-srp.md), o UGC estará visível somente na instância de publicação ou autor do AEM na qual foi inserido.
+A exigência de um armazenamento comum resulta nas seguintes topologias recomendadas.
 
 >[!NOTE]
 >
->Para obter mais informações sobre a plataforma de AEM, consulte [Implantações recomendadas](../../help/sites-deploying/recommended-deploys.md) e [Introdução à plataforma de AEM](../../help/sites-deploying/data-store-config.md).
+>Para o AEM Communities, [O UGC nunca é replicado](working-with-srp.md#ugc-never-replicated).
+>
+>Quando a implantação não incluir uma [armazenamento comum](working-with-srp.md), o UGC será visível somente na instância de publicação ou autor do AEM em que foi inserido.
+
+>[!NOTE]
+>
+>Para obter mais informações sobre a plataforma AEM, consulte [Implantações recomendadas](../../help/sites-deploying/recommended-deploys.md) e [Introdução à plataforma AEM](../../help/sites-deploying/data-store-config.md).
 
 ## Para produção {#for-production}
 
-É essencial estabelecer uma loja comum para o UGC e, portanto, a implantação subjacente depende da sua capacidade de suportar uma loja comum.
+Estabelecer um armazenamento comum para UGC é essencial e, portanto, a implantação subjacente depende de sua capacidade de dar suporte a um armazenamento comum.
 
 Dois exemplos:
 
 1. Se o volume esperado de UGC for alto e uma instância MongoDB local for possível, a escolha será [MSRP](msrp.md).
 
-1. Para obter o desempenho ideal para o conteúdo da página, a escolha de uma [publicar farm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) e [ASRP](asrp.md) forneceria o dimensionamento ideal do UGC com operações relativamente simples.
+1. Para obter o desempenho ideal do conteúdo da página, a escolha de um [publicar farm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) e [ASRP](asrp.md) O forneceria dimensionamento ideal de UGC com operações relativamente simples.
 
 Para ambos, a implantação pode ser baseada em qualquer microkernel OAK.
 
-Para escolher a loja comum apropriada, considere cuidadosamente a [características](working-with-srp.md#characteristics-of-srp-options) de cada.
+Para escolher o armazenamento comum apropriado, considere cuidadosamente o armazenamento exclusivo [características](working-with-srp.md#characteristics-of-srp-options) de cada um.
 
-Para obter mais detalhes sobre os microkernals do Oak, visite [Implantações recomendadas](../../help/sites-deploying/recommended-deploys.md).
+Para obter mais detalhes sobre microkernals do Oak, visite [Implantações recomendadas](../../help/sites-deploying/recommended-deploys.md).
 
-### Farm de Publicação TarMK {#tarmk-publish-farm}
+### Farm de publicação do TarMK {#tarmk-publish-farm}
 
 Quando a topologia é um farm de publicação, os tópicos relevantes de importância são:
 
-* [Sincronização de usuários](sync.md)
+* [Sincronização de usuário](sync.md)
 * [Gerenciar usuários e grupos de usuários](users.md)
 
 ### Recomendado: DSRP, MSRP ou ASRP {#recommended-dsrp-msrp-or-asrp}
 
-| MicroKernel | CONTEÚDO DO SITE | CONTENTREPOSITÓRIO GERADO PELO USUÁRIO | PROVEDOR DE RECURSOS DE ARMAZENAMENTO | COMO CONSERVAR |
+| Microkernel | SITE CONTENTREPOSITORY | CONTENTREPOSITORY GERADO PELO USUÁRIO | PROVEDOR DE RECURSOS DE ARMAZENAMENTO | ARMAZENAMENTO COMUM |
 |-------------|------------------------|----------------------------------|---------------------------|---------------|
 | qualquer | JCR | MySQL | DSRP | Sim |
 | qualquer | JCR | MongoDB | MSRP | Sim |
@@ -79,35 +79,35 @@ Quando a topologia é um farm de publicação, os tópicos relevantes de import�
 ### JSRP {#jsrp}
 
 
-| Implantação | CONTEÚDO DO SITE | CONTENTREPOSITÓRIO GERADO PELO USUÁRIO | PROVEDOR DE RECURSOS DE ARMAZENAMENTO | COMO CONSERVAR |
+| Implantação | SITE CONTENTREPOSITORY | CONTENTREPOSITORY GERADO PELO USUÁRIO | PROVEDOR DE RECURSOS DE ARMAZENAMENTO | ARMAZENAMENTO COMUM |
 |----------------------|------------------------|----------------------------------|---------------------------|---------------------------------|
 | Farm TarMK (padrão) | JCR | JCR | JSRP | Não |
 | Cluster Oak | JCR | JCR | JSRP | Sim somente para o ambiente de publicação |
 
 ## Para desenvolvimento {#for-development}
 
-Para ambientes não relacionados à produção, [JSRP](jsrp.md) O oferece simplicidade na configuração de um ambiente de desenvolvimento com uma instância de autor e uma instância de publicação.
+Para ambientes não relacionados à produção, [JSRP](jsrp.md) O oferece simplicidade para configurar um ambiente de desenvolvimento com uma instância de autor e uma instância de publicação.
 
-Se estiver escolhendo [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) para produção, também é possível configurar um ambiente de desenvolvimento semelhante usando o Adobe on demand storage ou o MongoDB. Para ver um exemplo, consulte [Como configurar o MongoDB para demonstração](demo-mongo.md).
+Se escolher [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) para produção, também é possível configurar um ambiente de desenvolvimento semelhante usando o armazenamento Adobe on-demand ou MongoDB. Para ver um exemplo, consulte [Como configurar o MongoDB para demonstração](demo-mongo.md).
 
 ## Referências {#references}
 
-* [Sincronização de usuários](sync.md)
+* [Sincronização de usuário](sync.md)
 
-   Discute a sincronização dos dados do usuário entre instâncias do farm de publicação.
+   Discute a sincronização dos dados do usuário entre as instâncias do farm de publicação.
 
 * [Gerenciar usuários e grupos de usuários](users.md)
 
-   Discute as funções de usuários e grupos de usuários nos ambientes de criação e publicação.
+   Discute as funções dos usuários e grupos de usuários nos ambientes do autor e de publicação.
 
-* UGC [loja comum](working-with-srp.md)
+* UGC [armazenamento comum](working-with-srp.md)
 
-   Descreve o armazenamento de conteúdo da comunidade separado do conteúdo do site.
+   Descreve o armazenamento do conteúdo da comunidade separado do conteúdo do site.
 
-* [Armazenamento de nós e armazenamento de dados](../../help/sites-deploying/data-store-config.md)
+* [Armazenamentos de nós e armazenamentos de dados](../../help/sites-deploying/data-store-config.md)
 
-   Basicamente, o conteúdo do site é armazenado em um armazenamento de nós. No Assets, um armazenamento de dados pode ser configurado para armazenar dados binários. Para Comunidades, um armazenamento comum deve ser configurado para selecionar a SRP.
+   Basicamente, o conteúdo do site é armazenado em um armazenamento de nó. Para Ativos, um armazenamento de dados pode ser configurado para armazenar dados binários. Para Communities, um armazenamento comum deve ser configurado para selecionar o SRP.
 
 * [Elementos de armazenamento](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
-   Descreve as duas implementações de armazenamento de nó: Tar e MongoDB.
+   Descreve as implementações de armazenamento de dois nós: Tar e MongoDB.

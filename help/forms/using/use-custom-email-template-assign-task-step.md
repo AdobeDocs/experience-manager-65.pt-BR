@@ -1,7 +1,7 @@
 ---
 title: Usar modelos de email personalizados em uma etapa Atribuir tarefa
 seo-title: Use custom email templates in an Assign Task step
-description: Modelos de email personalizados para notificações por email do fluxo de trabalho de formulários
+description: Modelos de email personalizados para notificações por email de fluxo de trabalho de formulários
 seo-description: Custom email templates for forms workflow email notifications
 uuid: ba453d54-813f-4a4f-a82e-1a6a28b6939c
 topic-tags: publish
@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Usar modelos de email personalizados em uma etapa Atribuir tarefa{#use-custom-email-templates-in-an-assign-task-step}
 
-Você pode usar a etapa Atribuir tarefa para criar e atribuir tarefas a um usuário ou grupo. Quando uma tarefa é atribuída a um usuário ou grupo, uma notificação por email é enviada ao usuário definido ou a cada membro do grupo definido. Uma notificação de email típica contém um link da tarefa atribuída e informações relacionadas à tarefa. A imagem a seguir exibe um exemplo de notificação por email:
+Você pode usar a etapa Atribuir tarefa para criar e atribuir tarefas a um usuário ou grupo. Quando uma tarefa é atribuída a um usuário ou grupo, uma notificação por email é enviada ao usuário definido ou a cada membro do grupo definido. Uma notificação de e-mail típica contém o link da tarefa atribuída e informações relacionadas à tarefa. A imagem a seguir exibe um exemplo de notificação por email:
 
 ![Notificação por email com modelo pronto para uso](do-not-localize/default_email_template_new.png)
 
-Você pode personalizar a aparência e usar metadados personalizados em uma notificação por email. O AEM Forms fornece um modelo pronto para uso para notificações por email. Você pode personalizar o modelo pronto para uso ou criar um novo modelo do zero.
+Você pode personalizar a aparência e usar metadados personalizados em uma notificação por email. A AEM Forms fornece um modelo pronto para uso para notificações por email. É possível personalizar o modelo pronto para uso ou criar um novo modelo do zero.
 
-Os modelos de notificação por email são baseados em [HTML email](https://en.wikipedia.org/wiki/HTML_email). Esses emails se adaptam a diferentes clientes de email e tamanhos de tela. Além disso, o estilo do email é definido no template .
+Os modelos de notificação por email são baseados em [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Esses emails se adaptam a diferentes clientes de email e tamanhos de tela. Além disso, o estilo do email é definido no template.
 
 A imagem a seguir exibe uma notificação por email personalizada:
 
@@ -31,7 +31,7 @@ A imagem a seguir exibe uma notificação por email personalizada:
 
 ## Personalizar o modelo existente {#customize-the-existing-template}
 
-Pronto para uso, o AEM Forms fornece um modelo para notificações por email. O modelo fornece a descrição do título, data de vencimento, prioridade, nome do fluxo de trabalho e link da tarefa atribuída. Você pode personalizar o modelo para alterar a aparência. Execute as seguintes etapas para personalizar o modelo:
+Por padrão, o AEM Forms fornece um modelo para notificações por email. O modelo fornece a descrição do título, a data de vencimento, a prioridade, o nome do fluxo de trabalho e o link da tarefa atribuída. É possível personalizar o modelo para alterar a aparência. Execute as seguintes etapas para personalizar o modelo:
 
 1. Faça logon no CRXDE com a conta de administrador.
 
@@ -39,15 +39,15 @@ Pronto para uso, o AEM Forms fornece um modelo para notificações por email. O 
 
 1. Abra o arquivo htmlEmailTemplate.txt. Ele contém o template padrão.
 
-1. Substitua o conteúdo do arquivo htmlEmailTemplate.txt por conteúdo personalizado.
+1. Substitua o conteúdo do arquivo htmlEmailTemplate.txt pelo conteúdo personalizado.
 
-   Um modelo de notificação por email é um [HTML email](https://en.wikipedia.org/wiki/HTML_email). Você pode substituir o código html existente pelo seu código personalizado para alterar a aparência do modelo.
+   Um modelo de notificação por e-mail é um [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Você pode substituir o código html existente pelo seu código personalizado para alterar a aparência do modelo.
 
 1. Salve o arquivo. Agora, o modelo personalizado está pronto para uso.
 
-## Criar um template de email {#create-an-email-template}
+## Criar um modelo de email {#create-an-email-template}
 
-Pronto para uso, o AEM Forms fornece um modelo para notificações por email. O modelo fornece a descrição do título, data de vencimento, prioridade, nome do fluxo de trabalho e link da tarefa atribuída. Você também pode adicionar um modelo de email personalizado (seu próprio modelo) para as etapas da tarefa Atribuir. Execute as seguintes etapas para adicionar um modelo de email personalizado:
+Por padrão, o AEM Forms fornece um modelo para notificações por email. O modelo fornece a descrição do título, a data de vencimento, a prioridade, o nome do fluxo de trabalho e o link da tarefa atribuída. Você também pode adicionar um modelo de email personalizado (seu próprio modelo) para as etapas Atribuir tarefa. Execute as seguintes etapas para adicionar um modelo de email personalizado:
 
 1. Faça logon no CRXDE com a conta de administrador.
 
@@ -55,22 +55,22 @@ Pronto para uso, o AEM Forms fornece um modelo para notificações por email. O 
 
 1. Crie um arquivo .txt. Por exemplo, EmailOnTaskAssign.txt.
 
-1. Adicione o código HTML personalizado ao arquivo.
+1. Adicione o código de HTML personalizado ao arquivo.
 
-   Um modelo de notificação por email é um [HTML email](https://en.wikipedia.org/wiki/HTML_email). Você pode adicionar código de HTML personalizado ao arquivo para criar um novo modelo.
+   Um modelo de notificação por e-mail é um [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Você pode adicionar um código de HTML personalizado ao arquivo para criar um novo modelo.
 
-1. Salve o arquivo. O modelo está pronto para uso na etapa Atribuir tarefa .
+1. Salve o arquivo. O modelo está pronto para uso na etapa Atribuir tarefa.
 
 ## Usar um modelo de email em uma etapa Atribuir tarefa {#use-an-email-template-in-an-assign-task-step}
 
-Pronto para uso, a etapa Atribuir tarefa está configurada para usar o modelo padrão, htmlEmailTemplate.txt. Você pode optar por usar um modelo personalizado. Para alterar o modelo:
+Pronto para uso, a etapa Atribuir tarefa está configurada para usar o modelo padrão, htmlEmailTemplate.txt. Você pode optar por usar um modelo personalizado. Para alterar o template:
 
-1. Abra a etapa Atribuir tarefa .
+1. Abra a etapa Atribuir tarefa.
 
-1. Navegue até Destinatário > HTML Email Template.
+1. Navegue até Designado > Modelo de e-mail do HTML.
 
-1. Selecione o modelo de email HTML recém-criado.
+1. Selecione o modelo de e-mail de HTML recém-criado.
 
-1. Clique em OK. O modelo é alterado.
+1. Clique em OK. O template foi alterado.
 
-Uma notificação por email também usa [metadados](../../forms/using/use-metadata-in-email-notifications.md). Por exemplo, data de vencimento, prioridade, nome do workflow e muito mais. Você também pode configurar o modelo para usar [metadados personalizados](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).
+Uma notificação por e-mail também usa [metadados](../../forms/using/use-metadata-in-email-notifications.md). Por exemplo, data de vencimento, prioridade, nome do workflow e muito mais. Você também pode configurar o template para usar [metadados personalizados](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).

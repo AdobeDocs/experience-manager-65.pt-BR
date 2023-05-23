@@ -1,7 +1,7 @@
 ---
-title: Considerações ao executar o AdministrationConsole
+title: Considerações ao executar o Administration Console
 seo-title: Considerations when running AdministrationConsole
-description: Este documento lista alguns pontos a serem considerados ao executar o Console de Administração.
+description: Este documento lista alguns pontos a serem considerados ao executar o Administration Console.
 seo-description: This document lists a few points to consider when running Administration Console.
 uuid: e260f187-4728-44f3-a5c1-7388ff3965c4
 contentOwner: admin
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 # Considerações ao executar o Console de administração {#considerations-when-running-administrationconsole}
 
-Essas são algumas coisas a serem consideradas ao executar o Console de administração:
+Estes são alguns aspectos a serem considerados ao executar o Administration Console:
 
 * Se você acessar o console de administração usando o URL `https://[hostname]:'port'/adminui`, o nome de host especificado não pode conter caracteres sublinhados. Caso contrário, os links para algumas áreas do console de administração podem não funcionar corretamente.
-* Se você executar o console de administração no Windows Explorer em um SO japonês, poderá enfrentar estes problemas:
+* Se você executar o console de administração no Windows Explorer em um sistema operacional japonês, poderá encontrar os seguintes problemas:
 
    * Clicar em um link o retorna à página de logon em vez do link esperado.
    * Clicar em um link exibe um erro de permissão.
 
-   A prática recomendada é executar o console de administração a partir de outro navegador, como o Mozilla Firefox, para garantir que nenhum link falhe.
+   A prática recomendada é executar o console de administração de outro navegador, como o Mozilla Firefox, para garantir que nenhum link falhe.
 
 * Não use caracteres de barra invertida () ao realizar pesquisas no console de administração.

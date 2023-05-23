@@ -13,7 +13,7 @@ exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
@@ -28,11 +28,11 @@ Esta página fornece uma visão geral dos componentes do Adobe Experience Manage
 * Desenvolvidos como unidades independentes em uma pasta do repositório.
 * Não contêm arquivos de configuração ocultos.
 * Podem conter outros componentes.
-* Pode ser executado em qualquer lugar em qualquer sistema AEM. Eles também podem se limitar a ser executados em componentes específicos.
+* Pode ser executado em qualquer lugar dentro de qualquer sistema AEM. Eles também podem ser limitados para execução em componentes específicos.
 * Têm uma interface de usuário padronizada.
 * Têm um comportamento de edição que pode ser configurado.
 * Usam caixas de diálogo que são criadas usando subelementos com base nos componentes da interface do Granite
-* São desenvolvidos usando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) (recomendado) ou JSP.
+* São desenvolvidos usando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) (recomendado) ou JSP.
 * Podem ser desenvolvidos para criar componentes personalizados que estendem a funcionalidade padrão.
 
 Como os componentes são modulares, você pode:
@@ -40,42 +40,42 @@ Como os componentes são modulares, você pode:
 * Desenvolver um novo componente na instância local.
 * Implantá-los no ambiente de teste.
 * Implantá-los no ambiente de criação ativo, onde eles permitem que autores e/ou administradores adicionem e configurem conteúdo.
-* Implantá-los em ambientes de publicação ativos, onde eles são usados para renderizar conteúdo para os visitantes do site. Determinados componentes, por exemplo, para Comunidades, também aceitam informações de seus usuários.
+* Implantá-los em ambientes de publicação ativos, onde eles são usados para renderizar conteúdo para os visitantes do site. Determinados componentes, por exemplo, para Comunidades, também aceitam a entrada dos usuários.
 
 Cada componente do AEM:
 
 * É um tipo de recurso.
 * É uma coleção de scripts que executa completamente uma função específica.
-* Pode funcionar em *isolamento*, ou seja, dentro de AEM ou de um portal.
+* Pode funcionar em *isolamento*, ou seja, no AEM ou em um portal.
 
-## Componentes prontos para uso no AEM {#out-of-the-box-components-within-aem}
+## Componentes prontos para uso dentro do AEM {#out-of-the-box-components-within-aem}
 
-AEM vem com uma variedade de [componentes prontos para uso](/help/sites-authoring/default-components.md) que oferecem funcionalidades abrangentes, incluindo:
+O AEM vem com uma variedade de [componentes prontos para uso](/help/sites-authoring/default-components.md) que oferecem funcionalidade abrangente, incluindo:
 
 * Sistema de parágrafos ( `parsys`)
-* Página ( `responsivegrid` - interface habilitada para toque somente)
+* Página ( `responsivegrid` - somente interface habilitada para toque)
 * Texto
-* Imagem, acompanhada do texto
+* Imagem, com texto de acompanhamento
 * Barra de ferramentas
 
-Os componentes fornecidos e seu uso na variável [Sites We.Retail de exemplo](/help/sites-developing/we-retail.md) fornecido ilustra como implementar e usar componentes. Os componentes são fornecidos com todos os códigos-fonte e podem ser usados como estão ou como pontos de partida para componentes modificados ou estendidos.
+Os componentes fornecidos e seu uso na [exemplos de sites We.Retail](/help/sites-developing/we-retail.md) As informações fornecidas ilustram como implementar e usar componentes. Os componentes são fornecidos com todos os códigos-fonte e podem ser usados como estão ou como pontos de partida para componentes modificados ou estendidos.
 
-### Componentes principais e componentes básicos {#core-components-and-foundation-components}
+### Componentes principais e Componentes de base {#core-components-and-foundation-components}
 
-Há dois conjuntos de componentes de AEM fornecidos pelo Adobe disponíveis:
+Há dois conjuntos de componentes AEM fornecidos pelo Adobe disponíveis:
 
 * [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-* [Componentes fundamentais](/help/sites-authoring/default-components-foundation.md)
+* [Componentes de base](/help/sites-authoring/default-components-foundation.md)
 
-**Componentes principais** foram introduzidos com o AEM 6.3 e oferecem funcionalidade de criação flexível e repleta de recursos. O [Site de referência We.Retail](/help/sites-developing/we-retail.md) ilustra como os componentes principais podem ser usados e representam as práticas recomendadas atuais do desenvolvimento de componentes.
+**Componentes principais** foram introduzidos com o AEM 6.3 e oferecem funcionalidade de criação flexível e repleta de recursos. A variável [Site de referência do We.Retail](/help/sites-developing/we-retail.md) ilustra como os componentes principais podem ser usados e representa as práticas recomendadas atuais do desenvolvimento de componentes.
 
-**Componentes básicos** estão disponíveis com AEM para várias versões e estão disponíveis prontamente em uma instalação padrão do AEM. Embora ainda sejam compatíveis, a maioria foi substituída, não são mais aprimoradas e se baseiam em tecnologias herdadas.
+**Componentes de base** estão disponíveis com AEM para muitas versões e prontas para uso em uma instalação padrão do AEM. Embora ainda seja compatível, a maioria foi descontinuada, não está mais aprimorada e é baseada em tecnologias herdadas.
 
 >[!NOTE]
 >
->[Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) representam as práticas recomendadas atuais para design e desenvolvimento de componentes e servem como implementações de referência.
+>[Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) representar as práticas recomendadas atuais para design e desenvolvimento de componentes e servir como implementações de referência.
 >
->[Ferramentas de Modernização AEM](modernization-tools.md) pode ajudar na migração para os Componentes principais.
+>[Ferramentas de modernização do AEM](modernization-tools.md) podem ajudar na migração para os Componentes principais.
 
 ### Visualização de componentes disponíveis {#viewing-available-components}
 
@@ -95,22 +95,22 @@ Como alternativa, você também pode usar o CRXDE Lite para obter uma lista de t
 
 ## Recursos adicionais {#further-reading}
 
-As páginas a seguir fornecem informações mais detalhadas sobre o desenvolvimento desses — e de outros — componentes:
+As páginas a seguir fornecem informações mais detalhadas sobre o desenvolvimento desses e de outros componentes:
 
-* [Componentes AEM - Noções básicas](/help/sites-developing/components-basics.md)
-* [Desenvolvimento de componentes de AEM](/help/sites-developing/developing-components.md)
-* [Desenvolvimento de componentes de AEM - Amostras de código](/help/sites-developing/developing-components-samples.md)
+* [Componentes do AEM - Noções básicas](/help/sites-developing/components-basics.md)
+* [Desenvolvimento de componentes do AEM](/help/sites-developing/developing-components.md)
+* [Desenvolvimento de componentes do AEM - Amostras de código](/help/sites-developing/developing-components-samples.md)
 * [Configuração de vários editores no local](/help/sites-developing/multiple-inplace-editors.md)
 * [Modo de desenvolvedor](/help/sites-developing/developer-mode.md)
-* [Testar sua interface do usuário](/help/sites-developing/hobbes.md)
+* [Teste da interface do usuário](/help/sites-developing/hobbes.md)
 * [Componentes para fragmentos de conteúdo](/help/sites-developing/components-content-fragments.md)
-* [Obter informações de página no formato JSON](/help/sites-developing/pageinfo.md)
+* [Obtendo informações de página no formato JSON](/help/sites-developing/pageinfo.md)
 * [Internacionalizar componentes](/help/sites-developing/i18n.md)
 * [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 * [Uso de condições de ocultação](/help/sites-developing/hide-conditions.md)
-* Interface do usuário clássica
+* IU Clássica
 
-   * [Componentes AEM (interface clássica)](/help/sites-developing/developing-components-classic.md)
+   * [Componentes do AEM (Interface clássica)](/help/sites-developing/developing-components-classic.md)
    * [Uso e extensão de widgets (interface de usuário clássica)](/help/sites-developing/widgets.md)
-   * [Uso de xtypes (interface clássica)](/help/sites-developing/xtypes.md)
+   * [Uso do xtypes (Interface clássica)](/help/sites-developing/xtypes.md)
    * [Desenvolvimento do Forms (interface clássica)](/help/sites-developing/developing-forms.md)

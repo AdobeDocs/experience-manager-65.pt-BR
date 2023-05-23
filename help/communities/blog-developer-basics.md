@@ -1,5 +1,5 @@
 ---
-title: Blog Essentials
+title: Fundamentos do blog
 seo-title: Blog Essentials
 description: Visão geral do blog
 seo-description: Blog overview
@@ -18,9 +18,9 @@ ht-degree: 2%
 
 ---
 
-# Blog Essentials {#blog-essentials}
+# Fundamentos do blog {#blog-essentials}
 
-A partir AEM 6.1 Communities, um blog é uma atividade comunitária. Os artigos de blog agora são publicados no ambiente de publicação, onde antes os artigos de blog só podiam ser criados no ambiente de criação e publicados.
+Desde o AEM 6.1 Communities, um blog é uma atividade comunitária. Agora os artigos de blog são publicados a partir do ambiente de publicação, onde anteriormente os artigos de blog só podiam ser criados no ambiente de criação e publicados.
 
 Artigos de blog agora podem ser criados por qualquer membro da comunidade, a menos que restritos a membros privilegiados.
 
@@ -30,9 +30,9 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
 >
 >A infraestrutura subjacente do recurso de blog é o recurso de diário.
 
-## Fundamentos para o lado do cliente {#essentials-for-client-side}
+## Essentials para o lado do cliente {#essentials-for-client-side}
 
-O recurso de blog é composto de dois componentes principais que estão disponíveis ao adicionar o [Função do blog](/help/communities/functions.md#blog-function) ou adicionando os componentes a uma página no modo de edição do autor.
+O recurso de blog é composto por dois componentes principais que estão disponíveis ao adicionar o [Função de blog](/help/communities/functions.md#blog-function) ou adicionando os componentes a uma página no modo de edição do autor.
 
 ### Blog {#blog}
 
@@ -40,18 +40,18 @@ O recurso de blog é composto de dois componentes principais que estão disponí
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/diário/componentes/hbs/diário</td>
+   <td>social/journal/components/hbs/journal</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>incondicional</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>incluível</strong></a></td>
    <td>Não</td>
   </tr>
   <tr>
    <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.vote<br /> cq.social.hbs.journal</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.voting<br /> cq.social.hbs.journal</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelos</strong></td>
    <td> /libs/social/journal/components/hbs/journal/journal.hbs<br /> /libs/social/journal/components/hbs/entry_topic/list-item.hbs</td>
   </tr>
   <tr>
@@ -60,65 +60,65 @@ O recurso de blog é composto de dois componentes principais que estão disponí
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>see <a href="/help/communities/blog-feature.md">Recurso de blog</a></td>
+   <td>consulte <a href="/help/communities/blog-feature.md">Recurso de blog</a></td>
   </tr>
  </tbody>
 </table>
 
 ### Barra lateral do blog {#blog-sidebar}
 
-| **resourceType** | social/diário/componentes/hbs/barra lateral |
+| **resourceType** | social/journal/components/hbs/sidebar |
 |---|---|
-| [**incondicional**](/help/communities/scf.md#add-or-include-a-communities-component) | Não |
+| [**incluível**](/help/communities/scf.md#add-or-include-a-communities-component) | Não |
 | [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
-| **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
+| **modelos** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **propriedades** | see [Recurso de blog](/help/communities/blog-feature.md) |
+| **propriedades** | consulte [Recurso de blog](/help/communities/blog-feature.md) |
 
 * [Personalizações do lado do cliente](/help/communities/client-customize.md)
 
-## Fundamentos para o lado do servidor {#essentials-for-server-side}
+## Essentials para o lado do servidor {#essentials-for-server-side}
 
 * [API do blog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Pontos de extremidade do blog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Endpoints do blog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](/help/communities/server-customize.md)
 
 ### Função do blog {#blog-function}
 
-Uma estrutura de site da comunidade que inclui a variável [Função do blog](/help/communities/functions.md#blog-function) terá configurado `Blog` e `Blog Sidebar` componentes. A função Blog suporta a identificação de um [grupo de usuários membro privilegiado](/help/communities/users.md#privileged-members-group).
+Uma estrutura de site da comunidade que inclui o [Função de blog](/help/communities/functions.md#blog-function) terá configurado `Blog` e `Blog Sidebar` componentes. A função Blog suporta a identificação de um [grupo de usuários membro privilegiado](/help/communities/users.md#privileged-members-group).
 
-### Acesso a Entradas de Blog (UGC) {#accessing-blog-entries-ugc}
+### Acessar entradas do blog (UGC) {#accessing-blog-entries-ugc}
 
-O UGC deve ser moderado usando um dos métodos padrão de moderação.
+A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
-A partir AEM 6.1 Comunidades, uso de um [loja comum](/help/communities/working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](/help/communities/working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
-**A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
+**A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 
 Consulte :
 
 * [Visão geral do provedor de recursos de armazenamento](/help/communities/srp.md) - introdução e visão geral do uso do repositório.
-* [Princípios básicos de SRP e UGC](/help/communities/srp-and-ugc.md) - métodos e exemplos de utilitários SRP.
+* [Fundamentos de SRP e UGC](/help/communities/srp-and-ugc.md) - Métodos e exemplos do utilitário SRP.
 * [Acesso ao UGC com SRP](/help/communities/accessing-ugc-with-srp.md) - diretrizes de codificação.
-* [Refatoração do SocialUtils](/help/communities/socialutils.md) - mapeamento de métodos de utilitário obsoletos para os métodos de utilitário SRP atuais.
+* [Refatoração de SocialUtils](/help/communities/socialutils.md) - mapeamento de métodos de utilitário obsoletos para métodos de utilitário SRP atuais.
 
-## Editor principal {#primary-publisher}
+## Editor primário {#primary-publisher}
 
-Quando a implantação é um farm de publicação, é necessário identificar um editor principal que pesquisará artigos agendados para publicação.
+Quando a implantação é um farm de publicação, é necessário identificar um editor principal que sondará os artigos agendados para publicação.
 
-Consulte [Editor principal](/help/communities/deploy-communities.md#primary-publisher) para obter mais detalhes.
+Consulte [Editor primário](/help/communities/deploy-communities.md#primary-publisher) para obter mais detalhes.
 
-## Permitir mídias avançadas {#allowing-rich-media}
+## Permitir mídia avançada {#allowing-rich-media}
 
-A plataforma de AEM bloqueia links de outros sites para impedir ataques de XSS, conforme descrito em
+A plataforma AEM bloqueia links de outros sites para impedir ataques XSS, conforme descrito em
 
-* [Protect contra script entre sites (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [Protect contra Scripts entre sites (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
-A partir do AEM 6.2, as modificações anteriormente necessárias manualmente são incluídas no arquivo de configuração padrão do AntiSamy.
+A partir do AEM 6.2, as modificações que anteriormente precisavam ser feitas manualmente estão incluídas no arquivo de configuração padrão do AntiSamy.
 
-A mídia avançada é incorporada em um artigo do blog, selecionando o `Embed Media from External Sites` ícone :
+A mídia avançada é incorporada em um artigo de blog ao selecionar o `Embed Media from External Sites` ícone:
 
-![media](assets/media-icon.png)
+![mídia](assets/media-icon.png)

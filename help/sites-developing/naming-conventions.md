@@ -1,6 +1,6 @@
 ---
-title: Como nomear convenções de nós no repositório de conteúdo Jave
-description: Os nós no repositório estão sujeitos às convenções de nomenclatura do Java Content Repository
+title: Nomeação de convenções de nós no repositório de conteúdo Jave
+description: Os nós no repositório estão sujeitos às convenções de nomenclatura do Repositório de conteúdo Java
 uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,22 +17,22 @@ ht-degree: 7%
 
 # Convenções de nomenclatura{#naming-conventions}
 
-Os nós no repositório estão sujeitos às convenções de nomenclatura da variável [Repositório de conteúdo Java](/help/sites-developing/the-basics.md#java-content-repository). No entanto, AEM impõe mais convenções para o nome dos nós da página.
+Os nós no repositório estão sujeitos às convenções de nomenclatura da [Repositório de conteúdo Java](/help/sites-developing/the-basics.md#java-content-repository). No entanto, o AEM impõe mais convenções para o nome dos nós da página.
 
 ## Convenções de nomenclatura para páginas {#naming-conventions-for-pages}
 
 Essas convenções de nomenclatura são implementadas em vários níveis:
 
-* JcrUtil: a AEM da aplicação do [Utilitários JCR](#jcr-utilities).
-* PageManager: o [Gerenciador de página](#page-manager) O fornece métodos para operações no nível da página.
-* De acordo com a interface do usuário que está sendo usada:
+* JcrUtil: a implementação do AEM do [Utilitários JCR](#jcr-utilities).
+* PageManager: a [Gerenciador de páginas](#page-manager) O fornece métodos para operações em nível de página.
+* De acordo com a interface que está sendo usada:
 
-   * [Interface do usuário padrão e habilitada para toque](#standard-ui)
+   * [Interface de usuário padrão habilitada para toque](#standard-ui)
    * [IU Clássica](#classic-ui)
 
 ### Utilitários JCR {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) é a AEM implementação dos utilitários JCR. De especial interesse para validar nomes são os mapeamentos de caracteres que ele controla e as seguintes validações:
+[JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) é a implementação AEM dos utilitários JCR. De especial interesse para validar nomes são os mapeamentos de caracteres que ele controla e as seguintes validações:
 
 * `isValidName`
 
@@ -41,35 +41,35 @@ Essas convenções de nomenclatura são implementadas em vários níveis:
 
 * `createValidName`
 
-   * Isso cria um rótulo válido de uma cadeia de caracteres arbitrária.
-   * Ele pode ser usado para criar um nome a partir de um título.
+   * Isso cria um rótulo válido de uma sequência arbitrária.
+   * Ela pode ser usada para criar um nome a partir de um título.
 
-### Gerenciador de página {#page-manager}
+### Gerenciador de páginas {#page-manager}
 
-[PageManager](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) O fornece métodos para operações de nível de página, com base em [JCRUtil](#jcr-utilities).
+[PageManager](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) O fornece métodos para operações no nível da página, com base em [JCRUtil](#jcr-utilities).
 
 ### Interface do usuário padrão {#standard-ui}
 
-A interface de usuário padrão habilitada para toque:
+A interface padrão habilitada para toque:
 
 * Valida o nome de acordo com as restrições impostas pelo PageManager quando:
 
    * um título de página é fornecido para conversão no nome do nó
-   * é fornecido um nome de nó explícito
+   * um nome de nó explícito é fornecido
 
 ### IU Clássica {#classic-ui}
 
-A interface clássica impõe restrições mais severas:
+A interface clássica impõe restrições mais rigorosas:
 
-* Valida o nome quando um nome de nó explícito é:
+* Valida o nome quando um nome de nó explícito:
 
    * um título de página é fornecido para conversão no nome do nó
-   * é fornecido um nome de nó explícito
+   * um nome de nó explícito é fornecido
 
-* Caracteres válidos (somente esses caracteres são válidos quando uma página é criada na interface clássica, mesmo que `PageManagerImpl` permitiria caracteres adicionais):
+* Caracteres válidos (somente esses caracteres são realmente válidos quando uma página é criada na interface clássica, mesmo que `PageManagerImpl` permitiria caracteres adicionais):
 
    * &#39;a&#39; a &#39;z&#39;
    * &#39;A&#39; a &#39;Z&#39;
    * &#39;0&#39; a &#39;9&#39;
    * _ (sublinhado)
-   * `-` (traço/menos)
+   * `-` (traço/sinal de menos)

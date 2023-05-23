@@ -1,7 +1,7 @@
 ---
 title: Gerenciamento de assinaturas
 seo-title: Managing Subscriptions
-description: Os usuários podem ser solicitados a se inscrever em listas de distribuição do Provedor de serviços de email com a ajuda do componente Formulário usado em uma página da web do AEM. Para preparar uma página do AEM com um formulário de inscrição para assinatura de listas de distribuição do seu serviço de email, você deve aplicar a configuração de serviço correspondente à página do AEM que o possível assinante visitará.
+description: Os usuários podem ser solicitados a assinar as listas de correspondência do provedor de serviços de email com a ajuda do componente de Formulário usado em uma página da Web AEM. Para preparar uma página AEM com um formulário de inscrição para inscrição nas listas de endereçamento do seu serviço de email, você deve aplicar a configuração de serviço correspondente à página AEM que o assinante potencial visitará.
 seo-description: Users can be asked to subscribe to Email Service Provider's mailing lists with the help of the Form component used on an AEM web page. To prepare an AEM page with a sign-up form for subscription to your e-mail service mailing lists, you must apply the corresponding service configuration to the AEM page that the potential subscriber will visit.
 uuid: b2578a3d-dba1-4114-b21a-5f34c0cccc5a
 contentOwner: User
@@ -13,7 +13,7 @@ exl-id: add05d22-3a11-49e9-a554-2315962552d5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '916'
-ht-degree: 73%
+ht-degree: 0%
 
 ---
 
@@ -21,100 +21,100 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->O Adobe não planeja aprimorar mais esse recurso (Gerenciamento de leads e listas).
->A recomendação é aproveitar [Adobe Campaign e sua integração AEM](/help/sites-administering/campaign.md).
+>O Adobe não planeja aprimorar ainda mais esse recurso (Gerenciamento de clientes em potencial e listas).
+>A recomendação é aproveitar [Adobe Campaign e sua integração com o AEM](/help/sites-administering/campaign.md).
 
-Os usuários podem ser solicitados a se inscrever **do Provedor de serviços de email** listas de distribuição com a ajuda do **Formulário** componente usado em uma página AEM da Web. Para preparar uma página do AEM com um formulário de inscrição para assinatura de listas de distribuição do seu serviço de email, você deve aplicar a configuração de serviço correspondente à página do AEM que o possível assinante visitará.
+Os usuários podem ser solicitados a assinar **do provedor de serviços de e-mail** listas de endereçamento com a ajuda do **Formulário** componente usado em uma página da Web AEM. Para preparar uma página AEM com um formulário de inscrição para inscrição nas listas de endereçamento do seu serviço de email, você deve aplicar a configuração de serviço correspondente à página AEM que o assinante potencial visitará.
 
-## Aplicação da configuração do serviço de email a uma página {#applying-email-service-configuration-to-a-page}
+## Aplicar a configuração do Serviço de email a uma página {#applying-email-service-configuration-to-a-page}
 
-Para configurar uma página do AEM:
+Para configurar uma página AEM:
 
-1. Navegue até a guia **Sites**.
-1. Selecione a página que precisa ser configurada para o serviço. Clique com o botão direito do mouse na página e selecione **Propriedades**.
+1. Navegue até a **Sites** guia.
+1. Selecione a página que precisa ser configurada para o serviço. Clique com o botão direito do mouse e selecione **Propriedades**.
 
-1. Selecionar **Cloud Services** then **Adicionar Serviço**. Selecione uma configuração na lista de configurações disponíveis.
+1. Selecionar **Cloud Services** depois **Adicionar serviço**. Selecione uma configuração na lista de configurações disponíveis.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
 1. Clique em **OK**.
 
-## Criação de um formulário de inscrição em uma página do AEM para assinar/cancelar a assinatura de listas {#creating-a-sign-up-form-on-an-aem-page-for-subscribing-unsubscribing-to-lists}
+## Criação de um formulário de inscrição em uma página de AEM para inscrição/cancelamento de inscrição em listas {#creating-a-sign-up-form-on-an-aem-page-for-subscribing-unsubscribing-to-lists}
 
-Para criar um formulário de inscrição e configurá-lo para assinaturas de listas de distribuição do Provedor de serviços de email:
+Para criar um formulário de inscrição e configurá-lo para assinaturas das listas de endereçamento do provedor de serviços de email:
 
 1. Abra a página do AEM que o usuário visitará.
-1. Aplique a configuração do Provedor de serviços de email à página.
+1. Aplique a configuração do provedor de serviços de email à página.
 
-1. Adicione um componente **Formulário** à página arrastando esse componente do sidekick. Se o componente não estiver disponível, alterne para o modo de design e ative o grupo **Formulário**.
-1. Clique em **Editar** no **Início do formulário** e navegue até a **Avançado** guia .
-1. No **Formulário** , selecione **Serviço de e-mail: Criar Assinante** e adicionar à lista.
-1. Na parte inferior da caixa de diálogo, abra o **Configuração de ação** , que permite selecionar uma ou mais listas de assinaturas.
-1. Na lista **Selecionar,** selecione a lista na qual você deseja que os usuários se inscrevam. Você pode adicionar várias listas usando o botão de adição (**Adicionar item**).
+1. Adicionar um **Formulário** para a página, arrastando o componente do sidekick. Se o componente não estiver disponível, alterne para o modo de design e ative **Formulário** grupo.
+1. Clique em **Editar** no **Início do formulário** e navegue até a **Avançado** guia.
+1. No **Formulário** selecione **Serviço de E-mail: Criar Assinante** e adicionar à lista.
+1. Na parte inferior da caixa de diálogo, abra **Configuração de ação** , que permite selecionar uma ou mais listas de assinaturas.
+1. No **Selecionar lista**, selecione a lista que deseja que os usuários assinem. É possível adicionar várias listas usando o botão de adição (**Adicionar item**).
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
    >[!NOTE]
    >
-   >Sua caixa de diálogo pode ser diferente, dependendo do provedor de serviços de email.
+   >Sua caixa de diálogo pode ser diferente dependendo do provedor de serviços de email.
 
-1. Na guia **Formulário**, selecione a página de agradecimento que você deseja que os usuários acessem depois de enviarem o formulário (se ficar em branco, o formulário será exibido novamente após o envio). Clique em **OK**. Um componente de **ID de email** aparece no Formulário, permitindo criar um formulário em que os usuários podem enviar seus endereços de email para assinar ou cancelar a assinatura de uma lista de emails.
-1. Adicione o componente de botão **Enviar** da seção **Formulário** no sidekick.
+1. No **Formulário** , selecione a página de agradecimento que você deseja que os usuários acessem após enviarem o formulário (Se permanecer em branco, o formulário será exibido novamente após o envio). Clique em **OK**. Um **ID do e-mail** aparece no Formulário, que permite criar um formulário em que os usuários podem enviar seus endereços de email para se inscreverem ou cancelar a inscrição de uma lista de endereçamento.
+1. Adicione o **Enviar** componente de botão do **Formulário** seção no sidekick.
 
-   O formulário está pronto. Publique a página configurada nas etapas acima junto com a página de **agradecimento** na instância de publicação. Qualquer assinante em potencial que visitar a página poderá preencher o formulário e assinar a lista fornecida na configuração.
+   O formulário está pronto. Publique a página configurada nas etapas acima, juntamente com o **obrigado** página para a instância de publicação. Qualquer assinante em potencial que visite a página pode preencher o formulário e assinar a lista fornecida na configuração.
 
    >[!NOTE]
    >
-   >Para que a assinatura do formulário funcione corretamente, [as chaves de criptografia do autor precisam ser exportadas e importadas na instância de publicação](#exporting-keys-from-author-and-importing-on-publish).
+   >Para fazer com que a assinatura do formulário funcione corretamente, [as chaves de criptografia do autor precisam ser exportadas e importadas na instância de publicação](#exporting-keys-from-author-and-importing-on-publish).
 
 ## Exportação de chaves do autor e importação na publicação {#exporting-keys-from-author-and-importing-on-publish}
 
-Para que o processo de assinatura ou cancelamento de assinatura do serviço de email funcione com o uso do formulário de inscrição na instância de publicação, é necessário seguir estas etapas:
+Para que a assinatura e o cancelamento de assinatura do serviço de e-mail funcionem por meio do formulário de inscrição na instância de publicação, é necessário seguir estas etapas:
 
-1. Na instância de autor, navegue até o Gerenciador de pacotes.
-1. Crie um novo pacote. Defina o filtro como `/etc/key`.
-1. Construa e faça o download do pacote.
-1. Navegue até o Gerenciador de pacotes na instância de publicação e faça upload desse pacote.
-1. Navegue até o console do osgi de Publicação e reinicie o pacote chamado **Adobe Granite Crypto Support**.
+1. Na instância do autor, navegue até o Gerenciador de pacotes.
+1. Crie um novo pacote. Definir o filtro como `/etc/key`.
+1. Crie e baixe o pacote.
+1. Navegue até o Gerenciador de pacotes na instância de publicação e faça upload deste pacote.
+1. Navegue até o console Publicar osgi e reinicie o pacote chamado **Suporte à criptografia do Adobe Granite**.
 
-## Cancelamento da assinatura de usuários em listas {#unsubscribing-users-from-lists}
+## Cancelamento de assinatura de usuários em listas {#unsubscribing-users-from-lists}
 
-Para cancelar a assinatura de usuários em listas:
+Para cancelar a inscrição de usuários nas listas:
 
-1. Abra as propriedades da página do AEM que tem o formulário de inscrição para cancelar a assinatura de um lead.
-1. Aplique a configuração de serviço à página.
+1. Abra as propriedades da página AEM que tem o formulário de inscrição para cancelar a inscrição de um cliente potencial.
+1. Aplicar a configuração do serviço à página.
 1. Crie um formulário de inscrição na página.
-1. Ao configurar o componente, selecione a ação **Serviço de email**: **Cancelar inscrição do usuário da lista.**
-1. No menu suspenso, selecione a lista apropriada da qual o usuário será removido ao cancelar a assinatura.
+1. Ao configurar o componente, selecione a ação **Serviço de e-mail**: **Cancelar inscrição do usuário na lista.**
+1. No menu suspenso, selecione a lista apropriada da qual o usuário será removido ao cancelar a inscrição.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
-1. Exportar as chaves do autor para publicar.
+1. Exporte as chaves do autor para a publicação.
 
-## Configurando emails de resposta automática para o serviço de email {#configuring-auto-responder-emails-for-email-service}
+## Configuração de emails de resposta automática para o Serviço de email {#configuring-auto-responder-emails-for-email-service}
 
 Para configurar um email de resposta automática para um assinante:
 
-1. Abra as propriedades da página de AEM que têm o formulário de inscrição para configurar a resposta automática para um lead.
-1. Aplique a configuração do ExactTarget à página.
+1. Abra as propriedades da página AEM que têm o formulário de inscrição para configurar o respondente automático para um cliente potencial.
+1. Aplicar a configuração ExactTarget à página.
 
-1. Adicione um componente **Formulário** à página arrastando esse componente do sidekick. Se o componente não estiver disponível, alterne para o modo de design e ative o grupo **Formulário**.
-1. Clique em **Editar** no **Início do formulário** e navegue até a **Avançado** guia .
-1. No **Formulário** , selecione **Serviço de e-mail: Envie um email de resposta automática.**
-1. **Selecionar um email** (esse é o email enviado como um email de resposta automática).
+1. Adicionar um **Formulário** para a página, arrastando o componente do sidekick. Se o componente não estiver disponível, alterne para o modo de design e ative a opção **Formulário** grupo.
+1. Clique em **Editar** no **Início do formulário** e navegue até a **Avançado** guia.
+1. No **Formulário** selecione **Serviço de e-mail: envia um e-mail de resposta automática.**
+1. **Selecione um email** (esse é o email enviado como um email de resposta automática).
 
 1. **Selecionar classificação** (essa classificação é usada para enviar o email).
 1. Selecione o **Obrigado** página (a página para a qual os usuários são direcionados depois de enviarem o formulário).
 
-   No **Formulário** selecione a página de agradecimento que deseja que os usuários acessem depois de enviarem o formulário. (Caso deixado em branco, o formulário será exibido novamente após o envio.) Clique em **OK**.
+   No **Formulário** selecione a página de agradecimento que os usuários devem acessar depois de enviarem o formulário. (Se deixado em branco, o formulário será exibido novamente após o envio.) Clique em **OK**.
 
-1. Exportar as chaves do autor para publicar.
-1. Adicione o componente de botão **Enviar** da seção **Formulário** no sidekick.
+1. Exporte as chaves do autor para a publicação.
+1. Adicione o **Enviar** componente de botão do **Formulário** seção no sidekick.
 
-   O formulário de inscrição está pronto. Publique a página configurada nas etapas acima junto com a página de **agradecimento** na instância de publicação. Qualquer assinante em potencial que visitar a página poderá preencher o formulário e, ao enviá-lo, o visitante receberá um email de resposta automática na ID de email preenchida nesse formulário.
+   O formulário de inscrição está pronto. Publique a página configurada nas etapas acima, juntamente com o **obrigado** página para a instância de publicação. Qualquer assinante em potencial que visite a página pode preencher o formulário e, ao enviar o formulário, o visitante receberá um email de resposta automática sobre a ID de email preenchida no formulário.
 
    >[!NOTE]
    >
-   >Para que a assinatura do formulário de inscrição funcione corretamente, [as chaves de criptografia do autor precisam ser exportadas e importadas na instância de publicação](#exporting-keys-from-author-and-importing-on-publish).
+   >Para fazer com que o formulário de inscrição funcione corretamente, [as chaves de criptografia do autor precisam ser exportadas e importadas na instância de publicação](#exporting-keys-from-author-and-importing-on-publish).
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)

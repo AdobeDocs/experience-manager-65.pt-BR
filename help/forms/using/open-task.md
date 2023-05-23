@@ -1,5 +1,5 @@
 ---
-title: Abrir uma tarefa
+title: Abrindo uma tarefa
 seo-title: Opening a task
 description: Etapas para abrir uma tarefa no aplicativo AEM Forms.
 seo-description: Steps to open a task on your AEM Forms app.
@@ -16,28 +16,28 @@ ht-degree: 0%
 
 ---
 
-# Abrir uma tarefa {#opening-a-task}
+# Abrindo uma tarefa {#opening-a-task}
 
-Se o aplicativo AEM Forms sincronizar com um servidor AEM Forms, você poderá trabalhar com tarefas atribuídas a você. As tarefas são etapas no Fluxo de trabalho definido no workbench ou no editor de fluxo de trabalho AEM.
+Se o aplicativo AEM Forms for sincronizado com um servidor AEM Forms, você poderá trabalhar com as tarefas atribuídas a você. Tarefas são etapas no Fluxo de trabalho definido no Workbench ou no editor de fluxo de trabalho AEM.
 
-Outros formulários são salvos como rascunho na guia Rascunhos . Consulte [Salvar um rascunho](/help/forms/using/save-as-draft.md).
+Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salvar um rascunho](/help/forms/using/save-as-draft.md).
 
 **Para abrir uma tarefa**
 
 1. Toque na tarefa na lista de tarefas.
 
-   Quando você seleciona uma tarefa, a descrição da tarefa, conforme definido no Workbench, é exibida abaixo do nome da tarefa. Após a descrição, a ação/ações do usuário associadas à tarefa é exibida.
+   Quando você seleciona uma tarefa, a descrição da tarefa, conforme definido no Workbench, é exibida abaixo do nome da tarefa. Após a descrição, a ação do usuário/ações associadas à tarefa são exibidas.
 
    * Se uma tarefa tiver ações associadas a ela, tocar nas reticências horizontais ao lado da tarefa na tela inicial exibirá as ações.
-   * Se o designer do processo não associar nenhuma ação a uma tarefa, a ação padrão associada à tarefa será Concluída.
+   * Se o designer de processo não associar nenhuma ação a uma tarefa, a ação padrão associada à tarefa será Concluída.
 
 1. Toque na tarefa para abri-la.
 
-   Você pode tocar em **Exibir resumo** para exibir instruções adicionais especificadas no processo do Workbench.
+   Você pode tocar em **Exibir resumo** para exibir instruções adicionais especificadas no processo Bancada.
 
 **Para abrir um aplicativo**
 
-1. Toque em **aplicativo** no **Forms** guia .
+1. Toque no **aplicativo** no **Forms** guia.
 
    Quando você seleciona um aplicativo, a descrição do aplicativo é exibida abaixo do nome do aplicativo. Após a descrição, as ações/ações do usuário associadas ao aplicativo são exibidas.
 
@@ -46,4 +46,4 @@ Outros formulários são salvos como rascunho na guia Rascunhos . Consulte [Salv
 
 1. Toque na tarefa para abri-la.
 
-   Você pode tocar em **Exibir resumo** para ver as instruções adicionais especificadas para o aplicativo.
+   Você pode tocar em **Exibir resumo** para exibir instruções adicionais especificadas para o aplicativo.

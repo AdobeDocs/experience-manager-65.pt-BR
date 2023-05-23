@@ -1,6 +1,6 @@
 ---
-title: Andaime na criação do Adobe Experience Manager
-description: Com o scaffolding, você pode criar um scaffold com os campos que refletem a estrutura desejada para suas páginas e usar este formulário para criar páginas com base nessa estrutura.
+title: Andaime em criação no Adobe Experience Manager
+description: Com o andaime, você pode criar um andaime com campos que refletem a estrutura desejada para as páginas e, em seguida, usar este formulário para criar páginas com base nessa estrutura.
 uuid: f2542fe2-598f-4631-ae64-a6ee14cd7748
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,10 +17,10 @@ ht-degree: 0%
 
 # Andaime{#scaffolding}
 
-Às vezes, pode ser necessário criar um grande conjunto de páginas que compartilha a mesma estrutura, mas tem um conteúdo diferente. Por meio da interface de AEM padrão, seria necessário criar cada página, arrastar os componentes apropriados para a página e preencher cada um deles individualmente.
+Às vezes, pode ser necessário criar um grande conjunto de páginas que compartilham a mesma estrutura, mas têm conteúdo diferente. Por meio da interface AEM padrão, seria necessário criar cada página, arrastar os componentes apropriados para a página e preencher cada um deles individualmente.
 
-Com o scaffolding, você pode criar um formulário (um scaffold) com os campos que refletem a estrutura desejada para suas páginas e usar esse formulário para criar facilmente páginas com base nessa estrutura.
+Com o andaime, você pode criar um formulário (um andaime) com campos que refletem a estrutura desejada para as páginas e, em seguida, usar este formulário para criar facilmente páginas com base nessa estrutura.
 
 >[!NOTE]
 >
->Embora haja um scaffolding [modo](/help/sites-authoring/author-environment-tools.md#page-modes) disponível, a manutenção e a criação de scaffolds, bem como a criação de novas páginas a partir de scaffolds são feitas na interface clássica. Consulte [Andaime](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) na documentação de criação da interface clássica para obter detalhes.
+>Embora haja um andaime [modo](/help/sites-authoring/author-environment-tools.md#page-modes) disponível, a manutenção e a criação de scaffolds, bem como a criação de novas páginas a partir de scaffolds são feitas na interface clássica. Consulte [Andaime](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) na documentação de criação da interface clássica para obter mais detalhes.

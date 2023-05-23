@@ -1,6 +1,6 @@
 ---
-title: Fim da vida útil do visualizador DHTML
-description: A partir de 31 de janeiro de 2014, a plataforma do visualizador DHTML será oficialmente encerrada.
+title: Fim da vida útil de visualizadores DHTML
+description: A partir de 31 de janeiro de 2014, a plataforma de visualizador DHTML será oficialmente encerrada.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 ---
 
-# Fim da vida útil do visualizador DHTML {#dhtml-viewer-end-of-life}
+# Fim da vida útil de visualizadores DHTML {#dhtml-viewer-end-of-life}
 
-A partir de 31 de janeiro de 2014, a plataforma do visualizador DHTML será oficialmente encerrada.
+A partir de 31 de janeiro de 2014, a plataforma de visualizador DHTML será oficialmente encerrada.
 
-Consulte a [Guia de referência de visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) para os visualizadores compatíveis mais recentes.
+Consulte a [Guia de referência de visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) para os visualizadores suportados mais recentes.
 
 <!-- OBSOLETE CONTENT **What is the change?**
 

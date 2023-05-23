@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # Arquivos de log {#log-files}
 
-Eventos como erros de tempo de execução ou de inicialização são registrados nos arquivos de log do servidor de aplicativos. Se tiver problemas ao implantar no servidor de aplicativos, você poderá usar os arquivos de log para ajudá-lo a encontrar o problema. Você pode abrir os arquivos de log usando qualquer editor de texto.
+Eventos como erros de tempo de execução ou de inicialização são registrados nos arquivos de log do servidor de aplicativos. Se você tiver problemas ao implantar no servidor de aplicativos, poderá usar os arquivos de log para ajudá-lo a encontrar o problema. Você pode abrir os arquivos de log usando qualquer editor de texto.
 
-(JBoss) Os seguintes arquivos de log estão localizados na variável `[appserver root]/server/'server'/log` diretório:
+(JBoss) Os seguintes arquivos de log estão localizados na `[appserver root]/server/'server'/log` diretório:
 
 * boot.log
 * server.log.*[aaaa-mm-dd]*
 * server.log
 
-(WebLogic) Os arquivos de log de domínio estão localizados na `[appserverdomain]` os arquivos de log do servidor e do diretório estão localizados na `[appserverdomain]/servers/[appserver name]/logs` diretório:
+(WebLogic) Os arquivos de log de domínio estão localizados na `[appserverdomain]` diretório e os arquivos de log do servidor estão localizados no `[appserverdomain]/servers/[appserver name]/logs` diretório:
 
 * `access.log`
 * `[appserver name].log`

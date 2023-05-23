@@ -24,9 +24,9 @@ O **Visão geral da Live Copy** permite:
 
 * Visualizar/gerenciar a herança em um site:
 
-   * Exibir a árvore do blueprint e a estrutura de live copy correspondente, juntamente com o status da herança
+   * Visualizar a árvore do blueprint e a estrutura correspondente da live copy, junto com o status da herança
    * Alterar o status da herança; por exemplo, suspender, retomar
-   * Exibir propriedades do blueprint e da live copy
+   * Exibir propriedades de blueprint e Live Copy
 
 * Executar ações de implantação
 
@@ -37,7 +37,7 @@ Você pode abrir a visão geral da Live Copy em:
 * [Painel lateral Referências de uma página do blueprint (console Sites)](#opening-live-copy-overview-references-for-a-blueprint-page)
 * [Propriedades de uma página do blueprint](#opening-live-copy-overview-properties-of-a-blueprint-page)
 
-### Abrindo a Visão Geral da Live Copy - Referências de uma Página do Blueprint {#opening-live-copy-overview-references-for-a-blueprint-page}
+### Abrir a visão geral da Live Copy - referências para uma página do blueprint {#opening-live-copy-overview-references-for-a-blueprint-page}
 
 A **Visão geral da Live Copy** pode ser aberta a partir do painel lateral **Referências** do console **Sites**:
 
@@ -53,7 +53,7 @@ A **Visão geral da Live Copy** pode ser aberta a partir do painel lateral **Ref
 1. Selecionar **Visão geral da Live Copy** para mostrar e usar a visão geral de todas as live copies relacionadas ao blueprint selecionado.
 1. Use **Fechar** para sair e retornar ao console **Sites**.
 
-### Abrindo a Visão Geral da Live Copy - Propriedades de uma Página do Blueprint {#opening-live-copy-overview-properties-of-a-blueprint-page}
+### Abrir a visão geral da Live Copy - propriedades de uma página do blueprint {#opening-live-copy-overview-properties-of-a-blueprint-page}
 
 A **Visão geral da Live Copy** pode ser aberta ao visualizar propriedades de uma página do blueprint:
 
@@ -66,16 +66,16 @@ A **Visão geral da Live Copy** pode ser aberta ao visualizar propriedades de um
 
    >[!NOTE]
    >
-   >Para obter mais detalhes, consulte também o artigo da Base de conhecimento [Mensagem de status de livecopy - Atualizada/Verde/Sincronizada](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
+   >Para obter mais detalhes, consulte também o artigo da Base de conhecimento [Mensagem de status da Live Copy - Atualizada/Verde/Em sincronia](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
 1. Use **Fechar** para sair e retornar ao console **Sites**.
 
 ## Usar a visão geral da Live Copy {#using-the-live-copy-overview}
 
-O **Visão geral da Live Copy** também pode ser usado para executar ações na live copy:
+A variável **Visão geral da Live Copy** O também pode ser usado para executar ações na live copy:
 
 1. Abra a **Visão geral da Live Copy**. 
-1. Selecione o blueprint ou a página de Live Copy necessária - a barra de ferramentas será atualizada para mostrar as ações disponíveis. O [ações](/help/sites-administering/msm.md#terms-used) disponível depende da seleção de um [blueprint](#actions-for-a-blueprint-page) ou [live copy](#actions-for-a-live-copy-page) página:
+1. Selecione o blueprint necessário ou a página de live copy - a barra de ferramentas será atualizada para mostrar as ações disponíveis. A variável [ações](/help/sites-administering/msm.md#terms-used) depende se você seleciona um [blueprint](#actions-for-a-blueprint-page) ou [live copy](#actions-for-a-live-copy-page) página:
 
 ### Ações para uma página do blueprint {#actions-for-a-blueprint-page}
 
@@ -93,13 +93,13 @@ Quando você seleciona uma página do blueprint, as seguintes ações estão dis
 
 ### Ações para uma página de Live Copy {#actions-for-a-live-copy-page}
 
-Quando você seleciona uma página de Live Copy, as seguintes ações estão disponíveis:
+Quando você seleciona uma página de live copy, as seguintes ações estão disponíveis:
 
 ![chlimage_1-362](assets/chlimage_1-362.png)
 
 * Editar
 
-   * Abra a página da live copy para edição.
+   * Abra a página de live copy para edição.
 
 * [Status do relacionamento](#relationship-status)
 
@@ -111,35 +111,35 @@ Quando você seleciona uma página de Live Copy, as seguintes ações estão dis
 
 * [Redefinir](/help/sites-administering/msm-livecopy.md#resetting-a-live-copy-page)
 
-   * Redefina uma página de Live Copy para remover todos os cancelamentos de herança e retornar a página ao mesmo estado que a página de origem.
+   * Redefina uma página de live copy para remover todos os cancelamentos de herança e retornar a página ao mesmo estado que a página de origem.
 
 * [Suspender](/help/sites-administering/msm.md#suspending-and-cancelling-inheritance-and-synchronization)
 
-   * Desativa temporariamente a relação ativa entre uma live copy e sua página de blueprint.
+   * Desativa temporariamente a relação dinâmica entre uma live copy e sua página do blueprint.
 
 * [Retomar](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
-   * Resume permite que você reinstale uma relação suspensa.
+   * Retomar permite que você restaure uma relação suspensa.
 
 * [Desconectar](/help/sites-administering/msm.md#detaching-a-live-copy)
 
-   * Remove permanentemente a relação ativa entre uma live copy e sua página de blueprint.
+   * Remove permanentemente o relacionamento dinâmico entre uma live copy e sua página de blueprint.
 
 ## Status do relacionamento {#relationship-status}
 
 O console **Status do relacionamento** tem duas guias que fornecem uma variedade de funcionalidades:
 
-* [Informações sobre o Status da Relação](#relationship-status-information)
+* [Informações de Status do Relacionamento](#relationship-status-information)
 * [Informações da Live Copy](#live-copy-information)
 
-### Informações sobre o Status da Relação {#relationship-status-information}
+### Informações de Status do Relacionamento {#relationship-status-information}
 
-Esta guia fornece informações detalhadas sobre o status da relação entre o blueprint e a live copy:
+Essa guia fornece informações detalhadas sobre o status do relacionamento entre o blueprint e a live copy:
 
 ![chlimage_1-363](assets/chlimage_1-363.png)
 
 ### Informações da Live Copy {#live-copy-information}
 
-Esta guia permite visualizar e editar a configuração da live copy:
+Essa guia permite visualizar e editar a configuração da live copy:
 
 ![chlimage_1-364](assets/chlimage_1-364.png)

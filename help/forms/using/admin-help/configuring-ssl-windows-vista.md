@@ -19,22 +19,22 @@ ht-degree: 0%
 
 # Configuração do SSL no Windows Vista {#configuring-ssl-on-windows-vista}
 
-Para configurar o SSL no Windows Vista™, você precisa de um certificado SSL com chaves RSA para autenticação. Você pode usar a ferramenta-chave Java para criar o certificado.
+Para configurar o SSL no Windows Vista™, você precisa de um certificado SSL com chaves RSA para autenticação. Você pode usar a ferramenta Chave Java para criar o certificado.
 
 >[!NOTE]
 >
 >O Windows Vista não funcionará com chaves DSA.
 
-Você pode executar keytool usando um único comando que inclui todas as informações necessárias para criar o certificado e o keystore.
+Você pode executar a ferramenta de chaves usando um único comando que inclui todas as informações necessárias para criar o certificado e o keystore.
 
 **Criar um certificado SSL**
 
-1. Em um prompt de comando, navegue até *`[JAVA HOME]`*/bin e digite o seguinte comando para criar o certificado e o armazenamento de chaves:
+1. Em um prompt de comando, navegue até *`[JAVA HOME]`*/bin e digite o seguinte comando para criar o certificado e o keystore:
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Nome do host* `, OU=`*Nome do grupo* `, O=`*Nome da empresa* `,L=`*Nome da cidade* `, S=`*Estado* `, C=`*Código do país* `" -alias`*&quot;Certificado LC&quot;* `-keypass` `key`*_* *senha* `-keystore`*keystorename* `.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*Nome do host* `, OU=`*Nome do grupo* `, O=`*Nome da empresa* `,L=`*Nome da cidade* `, S=`*Estado* `, C=`*Código do país* `" -alias`*&quot;LC Cert&quot;* `-keypass` `key`*_* *senha* `-keystore`*keystorename* `.keystore`
 
    >[!NOTE]
    >
    >Substituir *`[JAVA_HOME]`com o diretório onde o JDK está instalado e substitua o texto em itálico por valores que correspondam ao seu ambiente.*
 
-1. Tipo `changeit` como senha. Essa senha é o padrão para uma instalação Java, e o administrador do sistema pode tê-la alterado.
+1. Tipo `changeit` como a senha. Essa senha é o padrão para uma instalação do Java e o administrador do sistema pode tê-la alterado.

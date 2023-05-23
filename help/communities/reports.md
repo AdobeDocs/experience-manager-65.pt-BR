@@ -23,17 +23,17 @@ ht-degree: 9%
 
 ## Visão geral {#overview}
 
-Para o AEM Communities, há vários relatórios que podem ser acessados de várias maneiras do ambiente de criação.
+Para o AEM Communities, há vários relatórios que podem ser acessados de várias maneiras no ambiente de criação.
 
-Em geral, os diversos relatórios são:
+Em geral, os vários relatórios são:
 
 * [Relatório de exibições](#views-report)
 
-   Fornece um gráfico de visualizações de conteúdo por membros da comunidade e visitantes do site para qualquer site da comunidade.
+   Fornece um gráfico de exibições de conteúdo por membros da comunidade e visitantes do site para qualquer site da comunidade.
 
 * [Relatório de publicações](#posts-report)
 
-   Fornece um gráfico de vários tipos de postagens por membros da comunidade para qualquer site da comunidade.
+   Fornece um gráfico de vários tipos de publicações de membros da comunidade para qualquer site da comunidade.
 
 Os relatórios tabulares podem ser exportados no formato .csv para processamento subsequente.
 
@@ -41,19 +41,19 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
 
 ### Relatórios para sites da comunidade {#reports-for-community-sites}
 
-* Na navegação global: **[!UICONTROL Navegação]** > **[!UICONTROL Comunidades]** >  **[!UICONTROL Relatórios]**
+* Na navegação global: **[!UICONTROL Navegação]** > **[!UICONTROL Communities]** >  **[!UICONTROL Relatórios]**
 
-* Escolha entre:
+* Escolher de:
 
    * **[!UICONTROL Relatório de atribuições]**
 
-      * Gere um relatório para o Site da Comunidade, Usuário ou Grupo e Atribuição selecionados.
+      * Gere um relatório para o site da comunidade, usuário ou grupo selecionado e atribuição.
    * **[!UICONTROL Relatório de publicações]**
 
-      * Gere um relatório para o Site da comunidade, Tipo de conteúdo e Período selecionado.
+      * Gerar um relatório para o site da comunidade, tipo de conteúdo e período de tempo selecionados.
    * **[!UICONTROL Relatório de exibições]**
 
-      * gerar um relatório para o Site da comunidade, Tipo de conteúdo e Período.
+      * gere um relatório para o Site da comunidade, Tipo de conteúdo e Período selecionados.
 
 
 
@@ -61,11 +61,11 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
 
 ## Relatório de exibições {#views-report}
 
-O console Exibições permite que os relatórios sejam gerados nas exibições de página por recursos da comunidade por um determinado período.
+O console Exibições permite que os relatórios sejam gerados nas exibições de página pelos recursos da comunidade por um determinado período de tempo.
 
-![exibir relatório](assets/view-report.png)
+![exibir-relatório](assets/view-report.png)
 
-Selecione os critérios do relatório:
+Selecione os critérios para o relatório:
 
 * **[!UICONTROL Site]**
 
@@ -73,11 +73,11 @@ Selecione os critérios do relatório:
 
 * **[!UICONTROL Tipo de conteúdo]**
 
-   Pode escolher Todos os conteúdos ou selecionar um dos recursos existentes no site.
+   Pode escolher Todo o conteúdo ou selecionar um dos recursos presentes no site.
 
-* **[!UICONTROL Intervalo de tempo]**
+* **[!UICONTROL Período de tempo]**
 
-   Selecione um dos seguintes:
+   Selecione um de:
 
    * Últimos 7 dias
    * Últimos 30 dias
@@ -90,11 +90,11 @@ Selecionar **[!UICONTROL Gerar]** para criar o relatório.
 
 ## Relatório de publicações {#posts-report}
 
-O console Publicações permite que os relatórios sejam gerados no número de publicações para recursos da comunidade por um determinado período.
+O console de Publicações permite que os relatórios sejam gerados sobre o número de publicações para os recursos da comunidade por um determinado período de tempo.
 
-![relatório de postagens](assets/posts-report.png)
+![post-report](assets/posts-report.png)
 
-Selecione os critérios do relatório:
+Selecione os critérios para o relatório:
 
 * **[!UICONTROL Site]**
 
@@ -102,11 +102,11 @@ Selecione os critérios do relatório:
 
 * **[!UICONTROL Tipo de conteúdo]**
 
-   Pode escolher Todos os conteúdos ou selecionar um dos recursos existentes no site.
+   Pode escolher Todo o conteúdo ou selecionar um dos recursos presentes no site.
 
-* **[!UICONTROL Intervalo de tempo]**
+* **[!UICONTROL Período de tempo]**
 
-   Selecione um dos seguintes:
+   Selecione um de:
 
    * Últimos 7 dias
    * Últimos 30 dias
@@ -115,16 +115,16 @@ Selecione os critérios do relatório:
 
 Selecionar **[!UICONTROL Gerar]** para criar o relatório.
 
-![gerar relatório](assets/generate-posts-report.png)
+![generate-report](assets/generate-posts-report.png)
 
 ## Resolução de problemas {#troubleshooting}
 
 ### Nenhum site da comunidade listado {#no-community-sites-listed}
 
-Se nenhum site da comunidade estiver listado, verifique se o Adobe Analytics foi ativado para um site. Se você escolher relatórios em atribuições, verifique se a função de atribuições está na estrutura do site da comunidade.
+Se nenhum site da comunidade estiver listado, verifique se o Adobe Analytics foi ativado para um site. Se escolher relatórios sobre atribuições, certifique-se de que a função de atribuições esteja na estrutura do site da comunidade.
 
 ### Os relatórios não são exibidos na instância do autor do AEM {#reports-do-not-show-in-aem-author-instance}
 
-Se os relatórios não forem exibidos na instância do autor do AEM, verifique as personalizações, como o mapeamento de URL na instância de publicação. Se o mapeamento de URL for feito somente na instância de publicação do AEM do site de comunidades, verifique se o mesmo foi configurado na instância de autor do AEM em **Relatório de tendência do site - Fábrica do componente social** configuração.
+Se os relatórios não forem exibidos na instância do AEM Author, verifique as personalizações, como o mapeamento de URL na instância de Publicação. Se o mapeamento de URL for feito somente na instância de publicação do AEM do site das comunidades, verifique se o mesmo foi configurado na instância de autor do AEM no **Fatory do Componente Social do Relatório de Tendências do Site** configuração.
 
-![Mapeamento de URL no autor do AEM](assets/sitetrend.png)
+![Mapeamento de URL no AEM Author](assets/sitetrend.png)

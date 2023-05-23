@@ -1,7 +1,7 @@
 ---
-title: Criação de uma ação personalizada da barra de ferramentas
+title: Criar uma ação personalizada de barra de ferramentas
 seo-title: Creating a custom toolbar action
-description: Os desenvolvedores de formulários podem criar ações personalizadas da barra de ferramentas para formulários adaptáveis no AEM Forms. O uso de ações personalizadas por autores de formulários pode fornecer mais fluxos de trabalho e opções aos usuários finais.
+description: Os desenvolvedores de formulários podem criar ações personalizadas da barra de ferramentas para formulários adaptáveis no AEM Forms. O uso de ações personalizadas de autores de formulários pode fornecer mais fluxos de trabalho e opções aos usuários finais.
 seo-description: Form developers can create custom toolbar actions for adaptive forms in AEM Forms. Using custom actions form authors can provide more workflows and options to their end users.
 uuid: cd785cfb-e1bb-4158-be9b-d99e04eccc02
 content-type: reference
@@ -17,44 +17,44 @@ ht-degree: 0%
 
 ---
 
-# Criação de uma ação personalizada da barra de ferramentas{#creating-a-custom-toolbar-action}
+# Criar uma ação personalizada de barra de ferramentas{#creating-a-custom-toolbar-action}
 
 ## Pré-requisitos {#prerequisite}
 
-Antes de criar uma ação personalizada da barra de ferramentas, familiarize-se com [Usar bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md) e [Desenvolvimento com o CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+Antes de criar uma ação personalizada na barra de ferramentas, familiarize-se com o [Uso de bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md) e [Desenvolvimento com o CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## O que é uma ação {#what-is-an-action-br}
 
-Um formulário adaptável fornece uma barra de ferramentas que permite ao autor do formulário configurar um conjunto de opções. Essas opções são definidas como ações para o formulário adaptável. Clique no botão Editar na Barra de ferramentas do Painel para definir as ações compatíveis com formulários adaptáveis.
+Um formulário adaptável fornece uma barra de ferramentas que permite ao autor do formulário configurar um conjunto de opções. Essas opções são definidas como ações para o formulário adaptável. Clique no botão Editar na barra de ferramentas do Painel para definir as ações compatíveis com formulários adaptáveis.
 
 ![Ações padrão da barra de ferramentas](assets/default_toolbar_actions.png)
 
-Além do conjunto de ações fornecido por padrão, você pode criar ações personalizadas na barra de ferramentas. Por exemplo, é possível adicionar uma ação para permitir que o usuário revise todos os campos do formulário adaptável antes de enviar um formulário.
+Além do conjunto de ações fornecido por padrão, você pode criar ações personalizadas na barra de ferramentas. Por exemplo, você pode adicionar uma ação para permitir que o usuário revise todos os campos de formulário adaptáveis antes que um formulário seja enviado.
 
 ## Etapas para criar uma ação personalizada em formulários adaptáveis {#steps}
 
-Para ilustrar a criação de uma ação personalizada da barra de ferramentas, as etapas a seguir ajudam a criar um botão para que os usuários finais revisem todos os campos do formulário adaptável antes de enviar um formulário preenchido.
+Para ilustrar a criação de uma ação personalizada de barra de ferramentas, as etapas a seguir orientam você a criar um botão para que os usuários finais revisem todos os campos de formulário adaptáveis antes de enviar um formulário preenchido.
 
-1. Todas as ações padrão compatíveis com formulários adaptáveis estão presentes em `/libs/fd/af/components/actions` pasta. No CRXDE, copie a variável `fileattachmentlisting` nó a partir de `/libs/fd/af/components/actions/fileattachmentlisting` para `/apps/customaction`.
+1. Todas as ações padrão compatíveis com formulários adaptáveis estão presentes em `/libs/fd/af/components/actions` pasta. No CRXDE, copie a variável `fileattachmentlisting` nó de `/libs/fd/af/components/actions/fileattachmentlisting` para `/apps/customaction`.
 
-1. Depois de copiar o nó para `apps/customaction` , renomeie o nome do nó para `reviewbeforesubmit`. Além disso, altere a `jcr:title` e `jcr:description` propriedades do nó.
+1. Depois de copiar o nó para `apps/customaction` pasta, renomeie o nome do nó para `reviewbeforesubmit`. Além disso, altere o `jcr:title` e `jcr:description` propriedades do nó.
 
-   O `jcr:title` contém o nome da ação exibida na caixa de diálogo da barra de ferramentas. O `jcr:description` contém mais informações que são exibidas quando um usuário passa o ponteiro sobre a ação.
+   A variável `jcr:title` A propriedade contém o nome da ação que é exibida na caixa de diálogo da barra de ferramentas. A variável `jcr:description` A propriedade contém mais informações que são exibidas quando um usuário passa o ponteiro sobre a ação.
 
    ![Hierarquia de nós para personalização da barra de ferramentas](assets/action3.png)
 
-1. Selecionar `cq:template` nó no `reviewbeforesubmit` nó . Certifique-se de que o valor de `guideNodeClass` a propriedade é `guideButton` e alterar `jcr:title` propriedade adequadamente.
-1. Altere a propriedade do tipo no `cq:Template` nó . No exemplo atual, altere a propriedade type para o botão .
+1. Selecionar `cq:template` nó em `reviewbeforesubmit` nó. Verifique se o valor de `guideNodeClass` propriedade é `guideButton` e alterar `jcr:title` propriedade em conformidade.
+1. Altere a propriedade de tipo na variável `cq:Template` nó. Para o exemplo atual, altere a propriedade type para button.
 
-   O valor do tipo é adicionado como uma classe CSS no HTML gerado para o componente. Os usuários podem usar essa Classe CSS para criar um estilo em suas ações. O estilo padrão para dispositivos móveis e para desktop é fornecido para os valores do tipo botão, enviar, redefinir e salvar.
+   O valor de tipo é adicionado como uma classe CSS no HTML gerado para o componente. Os usuários podem usar essa classe CSS para estilizar suas ações. O estilo padrão para dispositivos móveis e desktop é fornecido para os valores de botão, enviar, redefinir e salvar.
 
-1. Selecione a ação personalizada na caixa de diálogo da barra de ferramentas de edição de formulário adaptável. Um botão Revisar é exibido na barra de ferramentas do painel.
+1. Selecione a ação personalizada na caixa de diálogo da barra de ferramentas de edição do formulário adaptável. Um botão Revisar é exibido na barra de ferramentas do painel.
 
-   ![A ação personalizada está disponível na barra de ferramentas](assets/custom_action_available_in_toolbar.png) ![Exibição da ação da barra de ferramentas criada personalizada](assets/action7.png)
+   ![A ação personalizada está disponível na barra de ferramentas](assets/custom_action_available_in_toolbar.png) ![Exibição da ação de barra de ferramentas criada de forma personalizada](assets/action7.png)
 
-1. Para fornecer funcionalidade ao botão Revisar, adicione algum código JavaScript e CSS e código do lado do servidor no arquivo init.jsp, presente no `reviewbeforesubmit` nó .
+1. Para fornecer funcionalidade ao botão Revisar, adicione algum código JavaScript e CSS e código do lado do servidor no arquivo init.jsp, presente no `reviewbeforesubmit` nó.
 
-   Adicione o seguinte código em `init.jsp`.
+   Adicione o código a seguir em `init.jsp`.
 
    ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -112,7 +112,7 @@ Para ilustrar a criação de uma ação personalizada da barra de ferramentas, a
    </div><!-- /.modal -->
    ```
 
-   Adicione o seguinte código no `ReviewBeforeSubmit.js` arquivo.
+   Adicione o seguinte código na `ReviewBeforeSubmit.js` arquivo.
 
    ```javascript
    /*anonymous function to handle show of review before submit view */
@@ -147,7 +147,7 @@ Para ilustrar a criação de uma ação personalizada da barra de ferramentas, a
    });
    ```
 
-   Adicione o seguinte código a `ReviewBeforeSubmit.css` arquivo.
+   Adicione o código a seguir a `ReviewBeforeSubmit.css` arquivo.
 
    ```css
    .modal-list .reviewlabel {
@@ -180,7 +180,7 @@ Para ilustrar a criação de uma ação personalizada da barra de ferramentas, a
 
    >[!NOTE]
    >
-   >O `GuideBridge` A biblioteca não é carregada no modo de criação. Portanto, essa ação personalizada não funciona no modo de criação.
+   >A variável `GuideBridge` a biblioteca não está carregada no modo de criação. Portanto, essa ação personalizada não funciona no modo de criação.
 
    ![Demonstração da ação do botão de revisão personalizado](assets/action9.png)
 

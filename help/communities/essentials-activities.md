@@ -1,5 +1,5 @@
 ---
-title: Fundamentos do fluxo de atividade
+title: Fundamentos do fluxo de atividades
 seo-title: Activity Stream Essentials
 description: Lista de atividades recentes executadas por um membro ou uma lista de atividades recentes em um único thread de conteúdo
 seo-description: List of recent activites performed by a member or a list of recent activities on a single thread of content
@@ -18,25 +18,25 @@ ht-degree: 2%
 
 ---
 
-# Fundamentos do fluxo de atividade {#activity-stream-essentials}
+# Fundamentos do fluxo de atividades {#activity-stream-essentials}
 
-As atividades de um membro da comunidade assinado, como postar em um fórum ou blog, são coletadas em um fluxo que pode ser filtrado e exibido de várias maneiras pela configuração do componente fluxos de atividade.
+As atividades de um membro da comunidade conectado, como postar em um fórum ou blog, são coletadas em um fluxo que pode ser filtrado e exibido de várias maneiras por meio da configuração do componente de fluxos de atividade.
 
-A capacidade de seguir adiciona outro conjunto de atividades quando os membros da comunidade seguem postagens de interesse ou outros membros da comunidade.
+A capacidade de seguir o adiciona outro conjunto de atividades quando os membros da comunidade seguem postagens de interesse ou outros membros da comunidade.
 
-Todos [sites da comunidade](/help/communities/overview.md#communitiessites) inclua uma página de perfil de usuário para o membro conectado que exibirá as atividades do membro da mesma maneira.
+Todos [sites da comunidade](/help/communities/overview.md#communitiessites) inclua uma página de perfil do usuário para o membro conectado que exibirá as atividades do membro da mesma maneira.
 
 ## Conceitos  {#concepts}
 
-Um *fluxo de atividades* é a lista de atividades recentes executadas por um membro ou uma lista de atividades recentes em um único thread de conteúdo, como um tópico ou blog do fórum.
+Um *fluxo de atividades* é a lista de atividades recentes executadas por um membro ou uma lista de atividades recentes em um único thread de conteúdo, como um tópico de fórum ou blog.
 
-Um membro pode seguir um fluxo de atividade seguindo outro indivíduo ou conteúdo.
+Um membro pode seguir um fluxo de atividade, seguindo outro indivíduo ou conteúdo.
 
 A *feed de notícias* é uma mesclagem dos fluxos de atividade que estão sendo seguidos por um membro em um único fluxo.
 
 A *[gráfico social](/help/communities/essentials-socialgraph.md)* captura os seguintes relacionamentos de um membro para outro.
 
-## Fundamentos para o lado do cliente {#essentials-for-client-side}
+## Essentials para o lado do cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -45,7 +45,7 @@ A *[gráfico social](/help/communities/essentials-socialgraph.md)* captura os se
    <td>social/activitystreams/components/hbs/activitystreams</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>incondicional</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>incluível</strong></a></td>
    <td>Não</td>
   </tr>
   <tr>
@@ -53,7 +53,7 @@ A *[gráfico social](/help/communities/essentials-socialgraph.md)* captura os se
    <td>cq.social.hbs.activitystreams</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelos</strong></td>
    <td> /libs/social/activitystreams/components/hbs/activitystreams/activitystreams.hbs<br /> /libs/social/activitystreams/components/hbs/activitystreams/activity/activity-title.hbs<br /> /libs/social/activitystreams/components/hbs/activitystreams/activity/activity.hbs</td>
   </tr>
   <tr>
@@ -62,14 +62,14 @@ A *[gráfico social](/help/communities/essentials-socialgraph.md)* captura os se
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>Consulte <a href="/help/communities/activities.md">Recurso Fluxos de atividade</a></td>
+   <td>Consulte <a href="/help/communities/activities.md">Recurso de fluxos de atividade</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizações do lado do cliente](/help/communities/client-customize.md)
 
-## Fundamentos para o lado do servidor {#essentials-for-server-side}
+## Essentials para o lado do servidor {#essentials-for-server-side}
 
 * [API de fluxos de atividade](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
@@ -79,4 +79,4 @@ A *[gráfico social](/help/communities/essentials-socialgraph.md)* captura os se
 
 ### Função de fluxo de atividades {#activity-stream-function}
 
-Uma estrutura de site da comunidade que inclui a variável [Função de fluxo de atividade](/help/communities/functions.md#activity-stream-function), inclui um `activity streams` componente.
+Uma estrutura de site da comunidade que inclui o [Função de fluxo de atividades](/help/communities/functions.md#activity-stream-function), inclui um configurado `activity streams` componente.

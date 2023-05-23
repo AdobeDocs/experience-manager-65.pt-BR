@@ -1,7 +1,7 @@
 ---
-title: Alterar a ordem da avaliação para autenticação
+title: Alterar a ordem de avaliação para autenticação
 seo-title: Change the order of evaluation for authentication
-description: É possível alterar a ordem em que AEM formulários avalia vários provedores de autenticação.
+description: Você pode alterar a ordem em que os formulários AEM avaliam vários provedores de autenticação.
 seo-description: You can change the order in which AEM forms evaluates multiple authentication providers.
 uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
 contentOwner: admin
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ---
 
-# Alterar a ordem da avaliação para autenticação {#change-the-order-of-evaluation-for-authentication}
+# Alterar a ordem de avaliação para autenticação {#change-the-order-of-evaluation-for-authentication}
 
-Se você configurou vários provedores de autenticação, é possível alterar a ordem em que AEM formulários os avalia para autenticação. A ordem dos provedores de autenticação listados no arquivo config.xml determina a ordem da avaliação para autenticação.
+Se você configurou vários provedores de autenticação, é possível alterar a ordem em que os formulários AEM os avaliam para autenticação. A ordem dos provedores de autenticação listados no arquivo config.xml determina a ordem de avaliação para autenticação.
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos de configuração.
-1. Para exportar a configuração atual para um arquivo, clique em Exportar e salve o arquivo de configuração em outro local.
-1. Localize o seguinte nó no arquivo :
+1. Para exportar a definição da configuração atual para um arquivo, clique em Exportar e salve o arquivo de configuração em outro local.
+1. Localize o seguinte nó no arquivo:
 
    ```xml
     <node name="AuthSchemes">
@@ -43,7 +43,7 @@ Se você configurou vários provedores de autenticação, é possível alterar a
     </node>
    ```
 
-   Em `<entry key="order" value="3" />`, edite o valor de cada nó para definir a ordem da avaliação de autenticação.
+   Entrada `<entry key="order" value="3" />`, edite o valor de cada nó para definir a ordem da avaliação de autenticação.
 
-1. Para importar o arquivo atualizado, em Gerenciamento de usuários, clique em Configuração > Importar e exportar arquivos de configuração.
+1. Para importar o arquivo atualizado, no Gerenciamento de usuários, clique em Configuração > Importar e exportar arquivos de configuração.
 1. Clique em Procurar para localizar o arquivo, clique em Importar e em OK.

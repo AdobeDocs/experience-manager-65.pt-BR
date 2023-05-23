@@ -1,6 +1,6 @@
 ---
 title: Limitações do Dynamic Media
-description: Saiba mais sobre as práticas recomendadas e os limites impostos ao criar um Conjunto de imagens ou um Conjunto de rotação ou carregar um PDF. Saiba também sobre combinações de navegador da Web e sistema operacional não compatíveis com o Dynamic Media.
+description: Saiba mais sobre as práticas recomendadas e os limites impostos ao criar um Conjunto de imagens ou um Conjunto de rotação ou carregar um PDF. Saiba mais sobre combinações incompatíveis de navegador da Web e sistema operacional para o Dynamic Media.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
@@ -17,35 +17,35 @@ ht-degree: 3%
 
 # Limitações do Dynamic Media
 
-As seções a seguir descrevem as limitações no Dynamic Media.
+As seções a seguir descrevem as limitações do Dynamic Media.
 
 Este tópico inclui as seguintes seções:
 
-* [Práticas recomendadas e limites impostos pela Dynamic Media sobre os tipos de ativos](#best-practice-enforced-limits)
-* [Navegador da Web e combinações de sistema operacional não compatíveis para Dynamic Media](#unsupported-browser-os)
+* [Práticas recomendadas e limites impostos pela Dynamic Media em tipos de ativos](#best-practice-enforced-limits)
+* [Combinações de navegador da Web e sistema operacional não compatíveis com o Dynamic Media](#unsupported-browser-os)
 
-## Práticas recomendadas e limites impostos pela Dynamic Media sobre os tipos de ativos {#best-practice-enforced-limits}
+## Práticas recomendadas e limites impostos pela Dynamic Media em tipos de ativos {#best-practice-enforced-limits}
 
-Quando você cria um Conjunto de rotação ou um Conjunto de imagens, ou faz upload de PDF para extração de página, o Adobe recomenda as seguintes práticas recomendadas e impõe os seguintes limites:
+Ao criar um Conjunto de rotação ou um Conjunto de imagens, ou fazer upload de PDF para extração de página, o Adobe recomenda as seguintes práticas recomendadas e impõe os seguintes limites:
 
 | Ativo - Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
-| **Imagem** - Número de Smart Crops por imagem | 5 | 100 |
+| **Imagem** - Número de cortes inteligentes por imagem | 5 | 100 |
 | **Todos os conjuntos** - Número de ativos duplicados por conjunto | Sem duplicatas | 20 |
-| **Todos os conjuntos** - Número máximo de ativos por conjunto | 5 a 10 imagens por conjunto | 1000 |
-| **Conjunto de rotação** - Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |
+| **Todos os conjuntos** - Número máximo de ativos por conjunto | De 5 a 10 imagens por conjunto | 1000 |
+| **Grupo de rotação** - Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |
 | **PDF** - Número máximo de páginas para um PDF a ser considerado para extração |  | 100 (para todos os PDF) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
-## Navegador da Web e combinações de sistema operacional não compatíveis para Dynamic Media {#unsupported-browser-os}
+## Combinações de navegador da Web e sistema operacional não compatíveis com o Dynamic Media {#unsupported-browser-os}
 
-O Dynamic Media não é compatível com as seguintes combinações de navegador e sistema operacional.
+O Dynamic Media não oferece suporte às seguintes combinações de navegador da Web e sistema operacional.
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
 * Internet Explorer 11 + Windows Phone 8.1
-* Atualização do Internet Explorer 11 + Windows Phone 8.1
+* Internet Explorer 11 + Atualização do Windows Phone 8.1
 * Safari 6 + iOS 6.0.1
 * Safari 7 + iOS 7.1
 * Safari 7 + OS X 10.9 Mavericks

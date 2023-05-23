@@ -1,7 +1,7 @@
 ---
 title: Diretrizes de desempenho
 seo-title: Performance Guidelines
-description: Este artigo fornece diretrizes gerais sobre como otimizar o desempenho da implantação do AEM.
+description: Este artigo fornece diretrizes gerais sobre como otimizar o desempenho da sua implementação do AEM.
 seo-description: This article provides general guidelines on how to optimize the performance of your AEM deployment.
 uuid: 38cf8044-9ff9-48df-a843-43f74b0c0133
 contentOwner: User
@@ -14,20 +14,20 @@ exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
 workflow-type: tm+mt
 source-wordcount: '2913'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 # Diretrizes de desempenho{#performance-guidelines}
 
-Esta página fornece diretrizes gerais sobre como otimizar o desempenho da implantação do AEM. Se você não AEM, analise as seguintes páginas antes de começar a ler as diretrizes de desempenho:
+Esta página fornece diretrizes gerais sobre como otimizar o desempenho da implementação do AEM. Se você é novo no AEM, reveja as seguintes páginas antes de começar a ler as diretrizes de desempenho:
 
-* [AEM conceitos básicos](/help/sites-deploying/deploy.md#basic-concepts)
-* [Visão geral do armazenamento em AEM](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
+* [Conceitos básicos sobre AEM](/help/sites-deploying/deploy.md#basic-concepts)
+* [Visão geral do armazenamento no AEM](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md)
 * [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)
 
-Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rolar para exibir todas as opções):
+Ilustradas abaixo estão as opções de implantação disponíveis para AEM (role a tela para exibir todas as opções):
 
 <table>
  <tbody>
@@ -38,7 +38,7 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
    <td><p><strong>Servidor de aplicativos</strong></p> </td>
    <td><p><strong>JRE</strong></p> </td>
    <td><p><strong>Segurança</strong></p> </td>
-   <td><p><strong>Micro kernel</strong></p> </td>
+   <td><p><strong>Micro Kernel</strong></p> </td>
    <td><p><strong>Armazenamento de dados</strong></p> </td>
    <td><p><strong>Indexação</strong></p> </td>
    <td><p><strong>Servidor Web</strong></p> </td>
@@ -47,12 +47,12 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
   </tr>
   <tr>
    <td><p>Sites</p> </td>
-   <td><p>Não-HA</p> </td>
+   <td><p>Não HA</p> </td>
    <td><p>Windows</p> </td>
    <td><p>CQSE</p> </td>
    <td><p>Oracle</p> </td>
    <td><p>LDAP</p> </td>
-   <td><p>Tar</p> </td>
+   <td><p>TAR</p> </td>
    <td><p>Segmento</p> </td>
    <td><p>Propriedade</p> </td>
    <td><p>Apache</p> </td>
@@ -61,7 +61,7 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
   </tr>
   <tr>
    <td><p>Assets</p> </td>
-   <td><p>Publicar-HA</p> </td>
+   <td><p>Publish-HA</p> </td>
    <td><p>Solaris™</p> </td>
    <td><p>WebLogic</p> </td>
    <td><p>IBM®</p> </td>
@@ -75,7 +75,7 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
   </tr>
   <tr>
    <td><p>Communities</p> </td>
-   <td><p>Autor-CS</p> </td>
+   <td><p>Author-CS</p> </td>
    <td><p>Red Hat®</p> </td>
    <td><p>WebSphere®</p> </td>
    <td><p>HP</p> </td>
@@ -89,7 +89,7 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
   </tr>
   <tr>
    <td><p>Forms</p> </td>
-   <td><p>Author-Offload</p> </td>
+   <td><p>Descarregamento de autor</p> </td>
    <td><p>HP-UX</p> </td>
    <td><p>Tomcat</p> </td>
    <td><p> </p> </td>
@@ -103,7 +103,7 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
   </tr>
   <tr>
    <td><p>Móvel</p> </td>
-   <td><p>Cluster de Autores</p> </td>
+   <td><p>Cluster do autor</p> </td>
    <td><p>IBM® AIX®</p> </td>
    <td><p>JBoss®</p> </td>
    <td><p> </p> </td>
@@ -132,7 +132,7 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
   <tr>
    <td><p>Commerce</p> </td>
    <td><p>MSRP</p> </td>
-   <td><p>Apple OS</p> </td>
+   <td><p>SO APPLE</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -214,7 +214,7 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td><p>Segurança de documento</p> </td>
+   <td><p>Segurança de Doc</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -262,129 +262,129 @@ Ilustradas abaixo estão as opções de implantação disponíveis para AEM (rol
 >
 >As diretrizes de desempenho se aplicam principalmente ao AEM Sites.
 
-## Quando utilizar as diretrizes de desempenho {#when-to-use-the-performance-guidelines}
+## Quando usar as diretrizes de desempenho {#when-to-use-the-performance-guidelines}
 
 Use as diretrizes de desempenho nas seguintes situações:
 
-* **Implantação pela primeira vez**: Ao planejar a implantação do AEM Sites ou do Assets pela primeira vez, é importante compreender as opções disponíveis. Especialmente ao configurar o Micro Kernel, o Node Store e o Data Store (em comparação com as configurações padrão). Por exemplo, alterar as configurações padrão do Data Store para TarMK para File Data Store.
-* **Atualização para uma nova versão**: Ao atualizar para uma nova versão, é importante entender as diferenças de desempenho em comparação ao ambiente em execução. Por exemplo, atualização do AEM 6.1 para 6.2 ou do AEM 6.0 CRX2 para 6.2 OAK.
-* **O tempo de resposta é lento**: Quando a arquitetura do Nodestore selecionada não estiver atendendo aos seus requisitos, é importante compreender as diferenças de desempenho em comparação com outras opções de topologia. Por exemplo, implantar o TarMK em vez do MongoMK ou usar um File Data Store em vez de um Amazon S3 ou Microsoft® Azure Data Store.
-* **Adicionar mais autores**: Quando a topologia TarMK recomendada não estiver atendendo aos requisitos de desempenho e o redimensionamento do nó Autor atingir a capacidade máxima disponível, entenda as diferenças de desempenho. Compare com o uso do MongoMK com três ou mais nós do Author. Por exemplo, implantar MongoMK em vez de TarMK.
-* **Adicionar mais conteúdo**: Quando a arquitetura recomendada do Data Store não atender aos seus requisitos, é importante compreender as diferenças de desempenho em comparação com outras opções do Data Store. Exemplo: usando o Amazon S3 ou o Microsoft® Azure Data Store em vez de um File Data Store.
+* **Primeira implantação**: ao planejar a implantação do AEM Sites ou do Assets pela primeira vez, é importante entender as opções disponíveis. Especialmente ao configurar o Micro Kernel, o Armazenamento de nós e o Armazenamento de dados (em comparação às configurações padrão). Por exemplo, alterar as configurações padrão do Armazenamento de dados para TarMK para Armazenamento de dados de arquivo.
+* **Atualização para uma nova versão**: ao atualizar para uma nova versão, é importante entender as diferenças de desempenho em comparação ao ambiente de execução. Por exemplo, atualização do AEM 6.1 para 6.2 ou do AEM 6.0 CRX2 para o 6.2 OAK.
+* **O tempo de resposta é lento**: quando a arquitetura do Nodestore selecionada não atende aos seus requisitos, é importante entender as diferenças de desempenho em comparação a outras opções de topologia. Por exemplo, implantar TarMK em vez de MongoMK ou usar um Armazenamento de dados de arquivo em vez de um Armazenamento de dados Amazon S3 ou Microsoft® Azure.
+* **Adicionar mais autores**: quando a topologia TarMK recomendada não estiver cumprindo os requisitos de desempenho e o upsizing do nó Autor tiver atingido a capacidade máxima disponível, entenda as diferenças de desempenho. Compare com o uso de MongoMK com três ou mais nós de Autor. Por exemplo, implantar MongoMK em vez de TarMK.
+* **Adicionar mais conteúdo**: quando a arquitetura de armazenamento de dados recomendada não atende aos seus requisitos, é importante entender as diferenças de desempenho em comparação a outras opções de armazenamento de dados. Exemplo: usar o Amazon S3 ou o Microsoft® Azure Data Store em vez de um File Data Store.
 
 ## Introdução {#introduction}
 
-Este capítulo fornece uma visão geral da arquitetura de AEM e seus componentes mais importantes. Ele também fornece diretrizes de desenvolvimento e descreve os cenários de teste usados nos testes de benchmark TarMK e MongoMK.
+Este capítulo fornece uma visão geral da arquitetura do AEM e seus componentes mais importantes. Também fornece diretrizes de desenvolvimento e descreve os cenários de teste usados nos testes de referência TarMK e MongoMK.
 
 ### A plataforma AEM {#the-aem-platform}
 
-A plataforma de AEM consiste nos seguintes componentes:
+A plataforma AEM consiste nos seguintes componentes:
 
 ![chlimage_1](assets/chlimage_1a.png)
 
-Para obter mais informações sobre a plataforma de AEM, consulte [O que é AEM](/help/sites-deploying/deploy.md#what-is-aem).
+Para obter mais informações sobre a plataforma AEM, consulte [O que é AEM](/help/sites-deploying/deploy.md#what-is-aem).
 
-### A arquitetura AEM {#the-aem-architecture}
+### A arquitetura do AEM {#the-aem-architecture}
 
-Há três blocos fundamentais importantes para uma implantação de AEM. O **Instância do autor** , que é usada por autores, editores e aprovadores de conteúdo para criar e revisar conteúdo. Quando o conteúdo é aprovado, ele é publicado em um segundo tipo de instância chamado de **Instância de publicação** de onde é acessado pelos usuários finais. O terceiro bloco de construção é o **Dispatcher** que é um módulo que lida com o armazenamento em cache e a filtragem de URL e é instalado no servidor da Web. Para obter mais informações sobre a arquitetura de AEM, consulte [Cenários típicos de implantação](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
+Há três componentes importantes para uma implantação do AEM. A variável **Instância do autor** que é usado por autores, editores e aprovadores de conteúdo para criar e revisar o conteúdo. Quando o conteúdo for aprovado, será publicado em um tipo de segunda instância chamado de **Publicar instância** de onde é acessado pelos usuários finais. O terceiro elemento é a **Dispatcher** que é um módulo que lida com armazenamento em cache e filtragem de URL e está instalado no servidor da web. Para obter informações adicionais sobre a arquitetura AEM, consulte [Cenários de implantação típicos](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
 
 ![chlimage_1-1](assets/chlimage_1-1a.png)
 
 ### Micro Kernels {#micro-kernels}
 
-Micro Kernels atuam como gerentes de persistência em AEM. Existem três tipos de Micro Kernels usados com AEM: TarMK, MongoDB e Banco de Dados Relacional (sob suporte restrito). Escolher um para atender a sua necessidade depende da finalidade da sua instância e do tipo de implantação que você está considerando. Para obter mais informações sobre Micro Kernels, consulte o [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md) página.
+Os micronúcleos atuam como gerenciadores de persistência no AEM. Há três tipos de Micro Kernels usados com AEM: TarMK, MongoDB e Banco de Dados Relacional (sob suporte restrito). Escolher um para atender às suas necessidades depende da finalidade da instância e do tipo de implantação que você está considerando. Para obter informações adicionais sobre os Micro Kernels, consulte a [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md) página.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
 ### Nodestore {#nodestore}
 
-No AEM, os dados binários podem ser armazenados independentemente dos nós de conteúdo. O local onde os dados binários são armazenados é chamado de **Armazenamento de dados**, enquanto a localização dos nós e propriedades de conteúdo é chamada de **Loja de nós**.
+No AEM, os dados binários podem ser armazenados independentemente dos nós de conteúdo. O local onde os dados binários são armazenados é chamado de **Armazenamento de dados**, enquanto a localização dos nós e propriedades de conteúdo é chamada de **Armazenamento de nós**.
 
 >[!NOTE]
 >
->O Adobe recomenda que o TarMK seja a tecnologia de persistência padrão usada pelos clientes para as instâncias de Autor do AEM e Publicação.
+>A Adobe recomenda que o TarMK seja a tecnologia de persistência padrão usada pelos clientes para as instâncias Autor e Publicar do AEM.
 
 >[!CAUTION]
 >
->O Micro Kernel do Banco de Dados Relacional está sob suporte restrito. Contato [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) antes de usar esse tipo de Micro Kernel.
+>O Micro Kernel do Banco de Dados Relacional está sob suporte restrito. Contato [Atendimento ao cliente Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) antes de usar esse tipo de Micro Kernel.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
 ### Armazenamento de dados {#data-store}
 
-Ao lidar com um grande número de binários, é recomendável usar um armazenamento de dados externo em vez dos armazenamentos de nó padrão para maximizar o desempenho. Por exemplo, se seu projeto exigir muitos ativos de mídia, armazená-los no Arquivo ou no Data Store do Azure/S3 torna o acesso mais rápido do que armazená-los diretamente em um MongoDB.
+Ao lidar com um grande número de binários, é recomendável usar um armazenamento de dados externo em vez dos armazenamentos de nó padrão para maximizar o desempenho. Por exemplo, se seu projeto requer muitos ativos de mídia, armazená-los no Arquivo ou no Armazenamento de dados do Azure/S3 torna mais rápido acessá-los do que armazená-los diretamente em um MongoDB.
 
 Para obter mais detalhes sobre as opções de configuração disponíveis, consulte [Configuração de nós e armazenamentos de dados](/help/sites-deploying/data-store-config.md).
 
 >[!NOTE]
 >
->O Adobe recomenda que você escolha a opção de implantar AEM no Azure ou no Amazon Web Services (AWS) usando o Adobe Managed Services. Os clientes se beneficiam de uma equipe que tem a experiência e as habilidades de implantar e operar AEM nesses ambientes de computação em nuvem. Consulte [documentação adicional sobre o Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
+>A Adobe recomenda escolher a opção de implantar o AEM no Azure ou no Amazon Web Services (AWS) usando o Adobe Managed Services. Os clientes se beneficiam de uma equipe que tem a experiência e as habilidades de implantação e operação do AEM nesses ambientes de computação em nuvem. Consulte [documentação adicional sobre o Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 >
->Para recomendações sobre como implantar AEM no Azure ou no AWS, fora do Adobe Managed Services, o Adobe recomenda trabalhar diretamente com o provedor de nuvem. Ou trabalhe com um dos parceiros Adobe que oferecem suporte para a implantação do AEM no ambiente de nuvem de sua escolha. O provedor ou parceiro de nuvem selecionado é responsável pelas especificações de dimensionamento, design e implementação da arquitetura que ele suporta para atender aos requisitos específicos de desempenho, carga, escalabilidade e segurança.
+>Para obter recomendações sobre como implantar o AEM no Azure ou no AWS, fora do Adobe Managed Services, o Adobe recomenda trabalhar diretamente com o provedor de nuvem. Ou trabalhe com um dos parceiros da Adobe que oferecem suporte à implantação do AEM no ambiente de nuvem de sua escolha. O provedor ou parceiro de nuvem selecionado é responsável pelas especificações de dimensionamento, design e implementação da arquitetura à qual dá suporte para atender aos seus requisitos específicos de desempenho, carga, escalabilidade e segurança.
 >Consulte também a [requisitos técnicos](/help/sites-deploying/technical-requirements.md#supported-platforms) página.
 >
 >
 >
 ### Pesquisar {#search-features}
 
-Listados nesta seção são os provedores de índice personalizados usados com o AEM. Para saber mais sobre indexação, consulte [Consultas e indexação do Oak](/help/sites-deploying/queries-and-indexing.md).
+Listados nesta seção estão os provedores de índice personalizados usados com AEM. Para saber mais sobre indexação, consulte [Consultas e indexação do Oak](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
-Para a maioria das implantações, o Adobe recomenda o uso do Índice Lucene. Use Solr somente para escalabilidade em implantações especializadas e complexas.
+Para a maioria das implantações, o Adobe recomenda usar o Índice Lucene. Use o Solr somente para escalabilidade em implantações especializadas e complexas.
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
 
 ### Diretrizes de desenvolvimento {#development-guidelines}
 
-Desenvolver para o AEM destinado a **desempenho e escalabilidade**. Estas são as práticas recomendadas que você pode seguir:
+Desenvolver para o AEM visando **desempenho e escalabilidade**. Estas são as práticas recomendadas que você pode seguir:
 
-**DO**
+**FAZER**
 
 * Aplicar separação de apresentação, lógica e conteúdo
-* Use APIs AEM existentes (por exemplo: Sling) e ferramentas (ex: Replicação)
+* Usar APIs (por exemplo: Sling) e ferramentas (por exemplo: Replication) do AEM existentes
 * Desenvolver no contexto do conteúdo real
-* Desenvolver para otimizar a capacidade de armazenamento em cache
-* Minimize o número de salvamentos (por exemplo: ao usar workflows transitórios)
-* Certifique-se de que todos os pontos finais HTTP sejam RESTful
-* Restringir o escopo da observação do JCR
-* Considere o encadeamento assíncrono
+* Desenvolver para uma capacidade de armazenamento em cache ideal
+* Minimizar o número de salvamentos (por exemplo: usando fluxos de trabalho transitórios)
+* Verifique se todos os pontos de extremidade HTTP são RESTful
+* Restringir o escopo de observação do JCR
+* Considere o thread assíncrono
 
 **NÃO**
 
 * Não use APIs JCR diretamente, se você puder
-* Não altere /libs, mas use sobreposições
-* Não use consultas sempre que possível
-* Não use o Sling Bindings para obter serviços OSGi no código Java™, mas use:
+* Não altere /libs, use sobreposições
+* Não usar consultas sempre que possível
+* Não use Ligações Sling para obter serviços OSGi no código Java™, mas use:
 
    * @Reference em um componente DS
-   * @Inject em um Modelo Sling
-   * sling.getService() em uma Classe de Uso Sightly
+   * @Inject em um modelo Sling
+   * sling.getService() em uma classe de uso Sightly
    * sling.getService() em um JSP
    * um ServiceTracker
    * acesso direto ao registro do serviço OSGi
 
-Para obter mais detalhes sobre o desenvolvimento no AEM, leia [Desenvolvimento - Noções básicas](/help/sites-developing/the-basics.md). Para obter mais práticas recomendadas, consulte [Práticas recomendadas de desenvolvimento](/help/sites-developing/best-practices.md).
+Para obter mais detalhes sobre o desenvolvimento do AEM, leia [Desenvolvimento - Noções básicas](/help/sites-developing/the-basics.md). Para obter práticas recomendadas adicionais, consulte [Práticas recomendadas de desenvolvimento](/help/sites-developing/best-practices.md).
 
-### Cenários de referência {#benchmark-scenarios}
+### Cenários de benchmark {#benchmark-scenarios}
 
 >[!NOTE]
-Todos os testes de benchmark exibidos nesta página foram executados em uma configuração de laboratório.
+Todos os testes de benchmark exibidos nesta página foram executados em ambiente de laboratório.
 
-Os cenários de teste detalhados abaixo são usados para as seções de benchmark dos capítulos TarMK, MongoMk e TarMK vs MongoMk. Para ver qual cenário foi usado para um teste de referencial específico, leia o campo Cenário da [Especificações técnicas](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) tabela.
+Os cenários de teste detalhados abaixo são usados para as seções de benchmark dos capítulos TarMK, MongoMk e TarMK vs. MongoMk. Para ver qual cenário foi usado para um teste de benchmark específico, leia o campo Cenário na seção [Especificações técnicas](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) tabela.
 
 **Cenário de produto único**
 
 AEM Assets:
 
-* Interações do usuário: Pesquise ativos / Pesquise ativos / Baixe ativos / Leia metadados do ativo / Atualize metadados do ativo / Carregar ativo / Executar fluxo de trabalho de upload de ativo
+* Interações do usuário: Procurar ativos / Pesquisar ativos / Baixar ativo / Ler metadados de ativo / Atualizar metadados de ativo / Fazer upload de ativo / Executar upload de fluxo de trabalho de ativo
 * Modo de execução: usuários simultâneos, única interação por usuário
 
-**Cenário de combinação de produtos**
+**Cenário de produtos mistos**
 
-AEM Sites + Ativos:
+AEM Sites + Assets:
 
-* Interações do usuário do Sites: Ler Página Do Artigo / Ler Página / Criar Parágrafo / Editar Parágrafo / Criar Página De Conteúdo / Ativar Página De Conteúdo / Pesquisar Do Autor
-* Interações do usuário do Assets: Pesquise ativos / Pesquise ativos / Baixe ativos / Leia metadados do ativo / Atualize metadados do ativo / Carregar ativo / Executar fluxo de trabalho de upload de ativo
+* Interações de usuário do Sites: Ler página de artigo / Ler página / Criar parágrafo / Editar parágrafo / Criar página de conteúdo / Ativar página de conteúdo / Pesquisar autor
+* Interações do usuário de ativos: Procurar ativos / Pesquisar ativos / Baixar ativo / Ler metadados de ativo / Atualizar metadados de ativo / Fazer upload de ativo / Executar upload de fluxo de trabalho de ativo
 * Modo de execução: usuários simultâneos, interações mistas por usuário
 
 **Cenário de caso de uso vertical**
@@ -396,39 +396,39 @@ Mídia:
 
 ## TarMK {#tarmk}
 
-Este capítulo fornece diretrizes gerais de desempenho para o TarMK, especificando os requisitos mínimos de arquitetura e a configuração das configurações. Os testes de referência são também fornecidos para maior clarificação.
+Este capítulo fornece as diretrizes gerais de desempenho para TarMK especificando os requisitos mínimos de arquitetura e a configuração das configurações. Os testes de referência também são apresentados para maior clarificação.
 
-O Adobe recomenda que o TarMK seja a tecnologia de persistência padrão usada pelos clientes em todos os cenários de implantação, tanto para as instâncias de Autor e Publicação do AEM.
+A Adobe recomenda que o TarMK seja a tecnologia de persistência padrão usada pelos clientes em todos os cenários de implantação, para as instâncias Autor e Publicar do AEM.
 
 Para obter mais informações sobre TarMK, consulte [Cenários de implantação](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) e [Armazenamento Tar](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).
 
-### Diretrizes de arquitetura mínima do TarMK {#tarmk-minimum-architecture-guidelines}
+### Diretrizes de arquitetura mínima da TarMK {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
-As diretrizes mínimas de arquitetura apresentadas abaixo são para ambientes de produção e sites de alto tráfego. Essas diretrizes são **not** o [especificações mínimas](/help/sites-deploying/technical-requirements.md#prerequisites) para executar AEM.
+As diretrizes de arquitetura mínimas apresentadas abaixo são para ambientes de produção e sites de alto tráfego. Essas diretrizes são **não** o [especificações mínimas](/help/sites-deploying/technical-requirements.md#prerequisites) para executar o AEM.
 
-Para estabelecer um bom desempenho ao usar o TarMK, você deve começar com a seguinte arquitetura:
+Para estabelecer um bom desempenho ao usar TarMK, você deve começar com a seguinte arquitetura:
 
-* Uma instância de autor
+* Uma instância de Author
 * Duas instâncias de publicação
 * Dois Dispatchers
 
-As diretrizes de arquitetura para AEM sites e AEM Assets estão ilustradas abaixo.
+Ilustradas abaixo estão as diretrizes de arquitetura para sites AEM e AEM Assets.
 
 >[!NOTE]
-A replicação sem binário deve ser desativada **ATIVADO** se o armazenamento de dados do arquivo for compartilhado.
+A replicação sem binários deve ser ativada **LIGADO** se o armazenamento de dados do arquivo for compartilhado.
 
-**Diretrizes de arquitetura Tar para a AEM Sites**
+**Diretrizes de arquitetura Tar para o AEM Sites**
 
 ![chlimage_1-5](assets/chlimage_1-5a.png)
 
-**Diretrizes de arquitetura Tar para a AEM Assets**
+**Diretrizes de arquitetura Tar para o AEM Assets**
 
 ![chlimage_1-6](assets/chlimage_1-6a.png)
 
-### Diretriz de configurações do TarMK {#tarmk-settings-guideline}
+### Diretriz de configurações TarMK {#tarmk-settings-guideline}
 
-Para um bom desempenho, você deve seguir as diretrizes de configuração apresentadas abaixo. Para obter instruções sobre como alterar as configurações, [veja esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+Para um bom desempenho, você deve seguir as diretrizes de configuração apresentadas abaixo. Para obter instruções sobre como alterar as configurações, [ver esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR).
 
 <table>
  <tbody>
@@ -439,33 +439,33 @@ Para um bom desempenho, você deve seguir as diretrizes de configuração aprese
    <td><strong>Descrição</strong></td>
   </tr>
   <tr>
-   <td>Filas de Trabalho Sling</td>
+   <td>Filas de trabalhos do Sling</td>
    <td><code>queue.maxparallel</code></td>
-   <td>Defina o valor para metade do número de núcleos da CPU. </td>
+   <td>Defina o valor como metade do número de núcleos da CPU. </td>
    <td>Por padrão, o número de threads simultâneos por fila de trabalhos é igual ao número de núcleos da CPU.</td>
   </tr>
   <tr>
-   <td>Fila de Fluxo de Trabalho Transitório do Granite</td>
+   <td>Fila de fluxo de trabalho transitório do Granite</td>
    <td><code>Max Parallel</code></td>
-   <td>Defina o valor para metade do número de núcleos da CPU</td>
+   <td>Defina o valor para a metade do número de núcleos da CPU</td>
    <td> </td>
   </tr>
   <tr>
-   <td>Parâmetros da JVM</td>
+   <td>Parâmetros JVM</td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> </td>
    <td><p>500000</p> <p>100000</p> <p>250000</p> <p>Verdadeiro</p> </td>
-   <td>Para impedir que consultas expansivas sobrecarreguem os sistemas, adicione esses parâmetros da JVM no script de início de AEM.</td>
+   <td>Para evitar que consultas expansivas sobrecarreguem os sistemas, adicione esses parâmetros JVM no script de inicialização AEM.</td>
   </tr>
   <tr>
    <td>Configuração do índice Lucene</td>
    <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td>
    <td><p>Ativado</p> <p>Ativado</p> <p>Ativado</p> </td>
-   <td>Para obter mais detalhes sobre os parâmetros disponíveis, consulte <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">esta página</a>.</td>
+   <td>Para obter mais informações sobre os parâmetros disponíveis, consulte <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">esta página</a>.</td>
   </tr>
   <tr>
    <td>Armazenamento de dados = Armazenamento de dados S3</td>
    <td><p><code>maxCachedBinarySize</code></p> <p><code>cacheSizeInMB</code></p> </td>
-   <td><p>1048576 (1 MB) ou menor</p> <p>2-10% do tamanho máximo do heap</p> </td>
+   <td><p>1048576 (1 MB) ou menor</p> <p>2 a 10% do tamanho máximo do heap</p> </td>
    <td>Consulte também <a href="/help/sites-deploying/data-store-config.md#data-store-configurations">Configurações do armazenamento de dados</a>.</td>
   </tr>
   <tr>
@@ -478,47 +478,47 @@ Para um bom desempenho, você deve seguir as diretrizes de configuração aprese
    <td>Writeback de metadados DAM</td>
    <td><code>Transient Workflow</code></td>
    <td>verificado</td>
-   <td>Esse workflow gerencia XMP write-back para o binário original e define a data da última modificação no JCR.</td>
+   <td>Esse fluxo de trabalho gerencia o write-back do XMP para o binário original e define a última data modificada em JCR.</td>
   </tr>
  </tbody>
 </table>
 
-### Benchmark de desempenho do TarMK {#tarmk-performance-benchmark}
+### Benchmark de desempenho TarMK {#tarmk-performance-benchmark}
 
 #### Especificações técnicas {#technical-specifications}
 
-Os testes de benchmark foram realizados com as seguintes especificações:
+Os testes de referência foram realizados nas seguintes especificações:
 
 |  | **Nó do autor** |
 |---|---|
-| Servidor | Hardware de metal nu (HP) |
+| Servidor | Hardware sem sistema operacional (HP) |
 | Sistema Operacional | Red Hat® Linux® |
-| CPU / núcleos | CPU Intel(R) Xeon(R) CPU E5-2407 @2,40GHz, 8 núcleos |
+| CPU / Núcleos | CPU Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 núcleos |
 | RAM | 32 GB |
 | Disco | Magnético |
 | Java™ | Oracle JRE versão 8 |
-| Heap da JVM | 16 GB |
+| Heap de JVM | 16 GB |
 | Produto | AEM 6.2 |
 | Nodestore | TarMK |
-| Armazenamento de dados | DS de arquivo |
-| Cenário | Produto único: Ativos / 30 threads simultâneos |
+| Armazenamento de dados | Arquivo DS |
+| Cenário | Produto único: Ativos / 30 threads simultâneas |
 
-#### Resultados do benchmark de desempenho {#performance-benchmark-results}
+#### Resultados do Benchmark de Desempenho {#performance-benchmark-results}
 
 >[!NOTE]
-Os números apresentados abaixo foram normalizados para 1 como linha de base e não são os números reais da taxa de transferência.
+Os números apresentados abaixo foram normalizados para 1 como a linha de base e não são os números de rendimento reais.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png) ![chlimage_1-8](assets/chlimage_1-8a.png)
 
 ## MongoMK {#mongomk}
 
-O motivo principal para escolher o back-end de persistência do MongoMK sobre o TarMK é dimensionar as instâncias horizontalmente. Essa capacidade significa ter duas ou mais instâncias de autor ativas sempre em execução e usar o MongoDB como o sistema de armazenamento de persistência. A necessidade de executar mais de uma instância de autor geralmente resulta do fato de que a CPU e a capacidade de memória de um único servidor, suportando todas as atividades de criação simultâneas, não são mais sustentáveis.
+O principal motivo para escolher o back-end de persistência MongoMK em vez do TarMK é dimensionar as instâncias horizontalmente. Essa capacidade significa ter duas ou mais instâncias de autor ativas sempre em execução e usando o MongoDB como o sistema de armazenamento de persistência. A necessidade de executar mais de uma instância de autor geralmente resulta do fato de que a capacidade da CPU e da memória de um único servidor, que suporta todas as atividades de criação simultâneas, não é mais sustentável.
 
 Para obter mais informações sobre TarMK, consulte [Cenários de implantação](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) e [Armazenamento Mongo](/help/sites-deploying/storage-elements-in-aem-6.md#mongo-storage).
 
 ### Diretrizes de arquitetura mínima do MongoMK {#mongomk-minimum-architecture-guidelines}
 
-Para estabelecer um bom desempenho ao usar o MongoMK, você deve começar com a seguinte arquitetura:
+Para estabelecer um bom desempenho ao usar o MongoMK, você deve começar pela seguinte arquitetura:
 
 * Três instâncias de autor
 * Duas instâncias de publicação
@@ -526,63 +526,63 @@ Para estabelecer um bom desempenho ao usar o MongoMK, você deve começar com a 
 * Dois Dispatchers
 
 >[!NOTE]
-Em ambientes de produção, o MongoDB é sempre usado como um conjunto de réplicas com um primário e dois segundos. Leituras e gravações vão para o primário e as leituras podem ir para os secundários. Se o armazenamento não estiver disponível, um dos secundários pode ser substituído por um árbitro, mas os conjuntos de réplicas do MongoDB devem sempre ser compostos por um número ímpar de instâncias.
+Em ambientes de produção, o MongoDB é sempre usado como um conjunto de réplicas com um primário e dois secundários. As leituras e gravações vão para o principal e as leituras para o secundário. Se o armazenamento não estiver disponível, um dos secundários pode ser substituído por um árbitro, mas os conjuntos de réplicas do MongoDB sempre devem ser compostos de um número ímpar de instâncias.
 
 >[!NOTE]
-A replicação sem binário deve ser desativada **ATIVADO** se o armazenamento de dados do arquivo for compartilhado.
+A replicação sem binários deve ser ativada **LIGADO** se o armazenamento de dados do arquivo for compartilhado.
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
 ### Diretrizes de configurações do MongoMK {#mongomk-settings-guidelines}
 
-Para um bom desempenho, você deve seguir as diretrizes de configuração apresentadas abaixo. Para obter instruções sobre como alterar as configurações, [veja esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+Para um bom desempenho, você deve seguir as diretrizes de configuração apresentadas abaixo. Para obter instruções sobre como alterar as configurações, [ver esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR).
 
 <table>
  <tbody>
   <tr>
    <td><strong>Configuração</strong></td>
    <td><strong>Parâmetro</strong></td>
-   <td><strong>Value (padrão)</strong></td>
+   <td><strong>Valor (padrão)</strong></td>
    <td><strong>Descrição</strong></td>
   </tr>
   <tr>
-   <td>Filas de Trabalho Sling</td>
+   <td>Filas de trabalhos do Sling</td>
    <td><code>queue.maxparallel</code></td>
-   <td>Defina o valor para metade do número de núcleos da CPU. </td>
+   <td>Defina o valor como metade do número de núcleos da CPU. </td>
    <td>Por padrão, o número de threads simultâneos por fila de trabalhos é igual ao número de núcleos da CPU.</td>
   </tr>
   <tr>
-   <td>Fila de Fluxo de Trabalho Transitório do Granite</td>
+   <td>Fila de fluxo de trabalho transitório do Granite</td>
    <td><code>Max Parallel</code></td>
-   <td>Defina o valor para metade do número de núcleos da CPU.</td>
+   <td>Defina o valor como metade do número de núcleos da CPU.</td>
    <td> </td>
   </tr>
   <tr>
-   <td>Parâmetros da JVM</td>
+   <td>Parâmetros JVM</td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> <p><code>Doak.mongo.maxQueryTimeMS</code></p> </td>
    <td><p>500000</p> <p>100000</p> <p>250000</p> <p>Verdadeiro</p> <p>60000</p> </td>
-   <td>Para impedir que consultas expansivas sobrecarreguem os sistemas, adicione esses parâmetros da JVM no script de início de AEM.</td>
+   <td>Para evitar que consultas expansivas sobrecarreguem os sistemas, adicione esses parâmetros JVM no script de inicialização AEM.</td>
   </tr>
   <tr>
    <td>Configuração do índice Lucene</td>
    <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td>
    <td><p>Ativado</p> <p>Ativado</p> <p>Ativado</p> </td>
-   <td>Para obter mais detalhes sobre os parâmetros disponíveis, consulte <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">esta página</a>.</td>
+   <td>Para obter mais detalhes sobre parâmetros disponíveis, consulte <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">esta página</a>.</td>
   </tr>
   <tr>
    <td>Armazenamento de dados = Armazenamento de dados S3</td>
    <td><p><code>maxCachedBinarySize</code></p> <p><code>cacheSizeInMB</code></p> </td>
-   <td><p>1048576 (1 MB) ou menor</p> <p>2-10% do tamanho máximo do heap</p> </td>
+   <td><p>1048576 (1 MB) ou menor</p> <p>2 a 10% do tamanho máximo do heap</p> </td>
    <td>Consulte também <a href="/help/sites-deploying/data-store-config.md#data-store-configurations">Configurações do armazenamento de dados</a>.</td>
   </tr>
   <tr>
    <td>DocumentNodeStoreService</td>
    <td><p><code>cache</code></p> <p><code>nodeCachePercentage</code></p> <p><code>childrenCachePercentage</code></p> <p><code>diffCachePercentage</code></p> <p><code>docChildrenCachePercentage</code></p> <p><code>prevDocCachePercentage</code></p> <p><code>persistentCache</code></p> </td>
    <td><p>2048</p> <p>35 (25)</p> <p>20 (10)</p> <p>30 (5)</p> <p>10 (3)</p> <p>4 (4)</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td>
-   <td><p>O tamanho padrão do cache é definido como 256 MB.</p> <p>Tem impacto no tempo necessário para executar a invalidação do cache.</p> </td>
+   <td><p>O tamanho padrão do cache é definido como 256 MB.</p> <p>Tem impacto no tempo necessário para executar a invalidação de cache.</p> </td>
   </tr>
   <tr>
-   <td>oak-observation</td>
+   <td>oak-observed</td>
    <td><p><code>thread pool</code></p> <p><code>length</code></p> </td>
    <td><p>mín. e máx. = 20</p> <p>50000</p> </td>
    <td> </td>
@@ -590,63 +590,63 @@ Para um bom desempenho, você deve seguir as diretrizes de configuração aprese
  </tbody>
 </table>
 
-### Benchmark de desempenho do MongoMK {#mongomk-performance-benchmark}
+### Benchmark de desempenho MongoMK {#mongomk-performance-benchmark}
 
 ### Especificações técnicas {#technical-specifications-1}
 
-Os testes de benchmark foram realizados com as seguintes especificações:
+Os testes de referência foram realizados nas seguintes especificações:
 
 |  | **Nó Autor** | **Nó MongoDB** |
 |---|---|---|
-| Servidor | Hardware de metal nu (HP) | Hardware de metal nu (HP) |
+| Servidor | Hardware sem sistema operacional (HP) | Hardware sem sistema operacional (HP) |
 | Sistema Operacional | Red Hat® Linux® | Red Hat® Linux® |
-| CPU / núcleos | CPU Intel(R) Xeon(R) CPU E5-2407 @2,40GHz, 8 núcleos | CPU Intel(R) Xeon(R) CPU E5-2407 @2,40GHz, 8 núcleos |
+| CPU / Núcleos | CPU Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 núcleos | CPU Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 núcleos |
 | RAM | 32 GB | 32 GB |
-| Disco | Magnético - >IOPS de 1k | Magnético - >IOPS de 1k |
+| Disco | Magnético - >1k IOPS | Magnético - >1k IOPS |
 | Java™ | Oracle JRE versão 8 | N/A |
-| Heap da JVM | 16 GB | N/A |
+| Heap de JVM | 16 GB | N/A |
 | Produto | AEM 6.2 | MongoDB 3.2 WiredTiger |
 | Nodestore | MongoMK | N/A |
-| Armazenamento de dados | DS de arquivo | N/A |
-| Cenário | Produto único: Ativos / 30 threads simultâneos | Produto único: Ativos / 30 threads simultâneos |
+| Armazenamento de dados | Arquivo DS | N/A |
+| Cenário | Produto único: Ativos / 30 threads simultâneas | Produto único: Ativos / 30 threads simultâneas |
 
-### Resultados do benchmark de desempenho {#performance-benchmark-results-1}
+### Resultados do Benchmark de Desempenho {#performance-benchmark-results-1}
 
 >[!NOTE]
-Os números apresentados abaixo foram normalizados para 1 como linha de base e não são os números reais da taxa de transferência.
+Os números apresentados abaixo foram normalizados para 1 como a linha de base e não são os números de rendimento reais.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png) ![chlimage_1-11](assets/chlimage_1-11a.png)
 
 ## TarMK vs MongoMK {#tarmk-vs-mongomk}
 
-A regra básica a ser considerada ao escolher entre os dois é que o TarMK foi projetado para desempenho, enquanto o MongoMK é usado para escalabilidade. O Adobe recomenda que o TarMK seja a tecnologia de persistência padrão usada pelos clientes em todos os cenários de implantação, tanto para as instâncias de Autor e Publicação do AEM.
+A regra básica para considerar ao escolher entre os dois é que o TarMK é projetado para desempenho, enquanto o MongoMK é usado para escalabilidade. A Adobe recomenda que o TarMK seja a tecnologia de persistência padrão usada pelos clientes em todos os cenários de implantação, para as instâncias Autor e Publicar do AEM.
 
-O motivo principal para escolher o back-end de persistência do MongoMK sobre o TarMK é dimensionar as instâncias horizontalmente. Essa funcionalidade significa ter duas ou mais instâncias de autor ativas sempre em execução e usar o MongoDB como o sistema de armazenamento de persistência. A necessidade de executar mais de uma instância de autor geralmente resulta do fato de que a CPU e a capacidade de memória de um único servidor, suportando todas as atividades de criação simultâneas, não são mais sustentáveis.
+O principal motivo para escolher o back-end de persistência MongoMK em vez do TarMK é dimensionar as instâncias horizontalmente. Essa funcionalidade significa ter duas ou mais instâncias de autor ativas sempre em execução e usando o MongoDB como o sistema de armazenamento de persistência. A necessidade de executar mais de uma instância de autor geralmente resulta do fato de que a capacidade da CPU e da memória de um único servidor, que suporta todas as atividades de criação simultâneas, não é mais sustentável.
 
-Para obter mais detalhes sobre TarMK vs MongoMK, consulte [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md#microkernels-which-one-to-use).
+Para mais detalhes sobre TarMK vs MongoMK, consulte [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md#microkernels-which-one-to-use).
 
-### Diretrizes do TarMK vs MongoMk {#tarmk-vs-mongomk-guidelines}
+### Diretrizes TarMK vs MongoMk {#tarmk-vs-mongomk-guidelines}
 
 **Benefícios do TarMK**
 
-* Propósito criado para aplicativos de gerenciamento de conteúdo
-* Os arquivos são sempre consistentes e podem ser copiados em backup usando qualquer ferramenta de backup baseada em arquivo
-* Fornece um mecanismo de failover - consulte [Modo de espera a frio](/help/sites-deploying/tarmk-cold-standby.md) para obter mais detalhes
-* Fornece alto desempenho e armazenamento de dados confiável com o mínimo de sobrecarga operacional
+* Desenvolvido especificamente para aplicativos de gerenciamento de conteúdo
+* Os arquivos são sempre consistentes e podem ser submetidos a backup usando qualquer ferramenta de backup baseada em arquivos
+* Fornece um mecanismo de failover - consulte [Modo de espera frio](/help/sites-deploying/tarmk-cold-standby.md) para obter mais detalhes
+* Oferece alto desempenho e armazenamento de dados confiável com sobrecarga operacional mínima
 * TCO mais baixo (custo total de propriedade)
 
-**Critérios para escolher MongoMK**
+**Critérios para a escolha do MongoMK**
 
-* Número de usuários nomeados conectados em um dia: nos milhares ou mais
-* Número de usuários simultâneos: nas centenas ou mais
-* Volume de ingestões de ativos por dia: em centenas de milhares ou mais
+* Número de usuários nomeados conectados em um dia: milhares ou mais
+* Número de usuários simultâneos: centenas ou mais
+* Volume de assimilações de ativos por dia: em centenas de milhares ou mais
 * Volume de edições de página por dia: em centenas de milhares ou mais
 * Volume de pesquisas por dia: em dezenas de milhares ou mais
 
-### TarMK vs. Benchmarks do MongoMK {#tarmk-vs-mongomk-benchmarks}
+### Referenciais TarMK vs MongoMK {#tarmk-vs-mongomk-benchmarks}
 
 >[!NOTE]
-Os números apresentados abaixo foram normalizados para 1 como linha de base e não são números reais da taxa de transferência.
+Os números apresentados abaixo foram normalizados para 1 como a linha de base e não são números de taxa de transferência reais.
 
 ### Especificações técnicas do cenário 1 {#scenario-technical-specifications}
 
@@ -654,14 +654,14 @@ Os números apresentados abaixo foram normalizados para 1 como linha de base e n
  <tbody>
   <tr>
    <td><strong> </strong></td>
-   <td><strong>Nó OAK do autor</strong></td>
+   <td><strong>Nó de OAK do autor</strong></td>
    <td><strong>Nó MongoDB</strong></td>
    <td> </td>
   </tr>
   <tr>
    <td>Servidor</td>
-   <td>Hardware de metal nu (HP)</td>
-   <td>Hardware de metal nu (HP)</td>
+   <td>Hardware sem sistema operacional (HP)</td>
+   <td>Hardware sem sistema operacional (HP)</td>
    <td> </td>
   </tr>
   <tr>
@@ -671,9 +671,9 @@ Os números apresentados abaixo foram normalizados para 1 como linha de base e n
    <td> </td>
   </tr>
   <tr>
-   <td>CPU / núcleos</td>
-   <td>CPU Intel(R) Xeon(R) CPU E5-2407 @2,40GHz, 8 núcleos</td>
-   <td>CPU Intel(R) Xeon(R) CPU E5-2407 @2,40GHz, 8 núcleos</td>
+   <td>CPU / Núcleos</td>
+   <td>CPU Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 núcleos</td>
+   <td>CPU Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 núcleos</td>
    <td> </td>
   </tr>
   <tr>
@@ -684,8 +684,8 @@ Os números apresentados abaixo foram normalizados para 1 como linha de base e n
   </tr>
   <tr>
    <td>Disco</td>
-   <td>Magnético - &gt;IOPS de 1k</td>
-   <td>Magnético - &gt;IOPS de 1k</td>
+   <td>Magnético - &gt;1k IOPS</td>
+   <td>Magnético - &gt;1k IOPS</td>
    <td> </td>
   </tr>
   <tr>
@@ -695,7 +695,7 @@ Os números apresentados abaixo foram normalizados para 1 como linha de base e n
    <td> </td>
   </tr>
   <tr>
-   <td>JVM Heap16GB</td>
+   <td>Heap JVM de 16 GB</td>
    <td>16 GB</td>
    <td>N/A</td>
    <td> </td>
@@ -714,27 +714,27 @@ Os números apresentados abaixo foram normalizados para 1 como linha de base e n
   </tr>
   <tr>
    <td>Armazenamento de dados</td>
-   <td>DS de arquivo </td>
+   <td>Arquivo DS </td>
    <td>N/A</td>
    <td> </td>
   </tr>
   <tr>
    <td>Cenário</td>
-   <td><p><br /> Produto único: Ativos / 30 threads simultâneos por execução</p> </td>
+   <td><p><br /> Um único produto: ativos/30 threads simultâneos por execução</p> </td>
    <td> </td>
    <td> </td>
   </tr>
  </tbody>
 </table>
 
-### Resultados do benchmark de desempenho do cenário 1 {#scenario-performance-benchmark-results}
+### Resultados do teste de desempenho do cenário 1 {#scenario-performance-benchmark-results}
 
 ![chlimage_1-12](assets/chlimage_1-12a.png)
 
-### Cenário 2 Especificações técnicas {#scenario-technical-specifications-1}
+### Especificações técnicas do cenário 2 {#scenario-technical-specifications-1}
 
 >[!NOTE]
-Para ativar o mesmo número de Autores com MongoDB como com um sistema TarMK, você precisa de um cluster com dois nós AEM. Um cluster MongoDB de quatro nós pode lidar com 1,8 vezes o número de Autores de uma instância TarMK. Um cluster MongoDB de oito nós pode lidar com 2,3 vezes o número de Autores de uma instância TarMK.
+Para habilitar o mesmo número de Autores com MongoDB que com um sistema TarMK, você precisa de um cluster com dois nós AEM. Um cluster MongoDB de quatro nós pode lidar com 1,8 vez o número de autores do que uma instância TarMK. Um cluster MongoDB de oito nós pode lidar com 2,3 vezes o número de autores do que uma instância TarMK.
 
 <table>
  <tbody>
@@ -757,7 +757,7 @@ Para ativar o mesmo número de Autores com MongoDB como com um sistema TarMK, vo
    <td>Red Hat® Linux®</td>
   </tr>
   <tr>
-   <td>CPU / núcleos</td>
+   <td>CPU / Núcleos</td>
    <td>32</td>
    <td>32</td>
    <td>32</td>
@@ -770,9 +770,9 @@ Para ativar o mesmo número de Autores com MongoDB como com um sistema TarMK, vo
   </tr>
   <tr>
    <td>Disco</td>
-   <td>SSD - IOPS de 10 mil</td>
-   <td>SSD - IOPS de 10 mil</td>
-   <td>SSD - IOPS de 10 mil</td>
+   <td>SSD - 10.000 IOPS</td>
+   <td>SSD - 10.000 IOPS</td>
+   <td>SSD - 10.000 IOPS</td>
   </tr>
   <tr>
    <td>Java™</td>
@@ -781,7 +781,7 @@ Para ativar o mesmo número de Autores com MongoDB como com um sistema TarMK, vo
    <td>N/A</td>
   </tr>
   <tr>
-   <td>JVM Heap16GB</td>
+   <td>Heap JVM de 16 GB</td>
    <td>30 GB</td>
    <td>30 GB</td>
    <td>N/A</td>
@@ -800,24 +800,24 @@ Para ativar o mesmo número de Autores com MongoDB como com um sistema TarMK, vo
   </tr>
   <tr>
    <td>Armazenamento de dados</td>
-   <td>DS de arquivo </td>
-   <td><br /> DS de arquivo</td>
+   <td>Arquivo DS </td>
+   <td><br /> Arquivo DS</td>
    <td><br /> N/A</td>
   </tr>
   <tr>
    <td>Cenário</td>
-   <td><p><br /> <br /> Caso de uso vertical: Mídia / 2000 threads simultâneos</p> </td>
+   <td><p><br /> <br /> Caso de uso vertical: Mídia/threads simultâneas do 2000</p> </td>
    <td></td>
    <td></td>
   </tr>
  </tbody>
 </table>
 
-### Resultados do benchmark de desempenho do cenário 2 {#scenario-performance-benchmark-results-1}
+### Resultados do teste de desempenho do cenário 2 {#scenario-performance-benchmark-results-1}
 
 ![chlimage_1-13](assets/chlimage_1-13a.png)
 
-### Diretrizes De Escalabilidade Da Arquitetura Para AEM Sites E Ativos {#architecture-scalability-guidelines-for-aem-sites-and-assets}
+### Diretrizes de escalabilidade da arquitetura para AEM Sites e Assets {#architecture-scalability-guidelines-for-aem-sites-and-assets}
 
 ![chlimage_1-14](assets/chlimage_1-14a.png)
 
@@ -825,27 +825,27 @@ Para ativar o mesmo número de Autores com MongoDB como com um sistema TarMK, vo
 
 As diretrizes apresentadas nesta página podem ser resumidas da seguinte maneira:
 
-* **TarMK com armazenamento de dados de arquivo** - A arquitetura recomendada para a maioria dos clientes:
+* **TarMK com armazenamento de dados de arquivos** - A arquitetura recomendada para a maioria dos clientes:
 
-   * Topologia mínima: uma instância de Autor, duas instâncias de Publicação, dois Dispatchers
-   * Replicação sem binário ativada se o armazenamento de dados do arquivo for compartilhado
+   * Topologia mínima: uma instância de autor, duas instâncias de publicação, dois Dispatchers
+   * Replicação sem binários ativada se o armazenamento de dados de arquivos estiver compartilhado
 
-* **MongoMK com armazenamento de dados de arquivo** - A arquitetura recomendada para a escalabilidade horizontal do nível do autor:
+* **MongoMK com armazenamento de dados de arquivos** - A arquitetura recomendada para escalabilidade horizontal da camada do autor:
 
-   * Topologia mínima: três instâncias de Autor, três instâncias de MongoDB, duas instâncias de Publicação, dois Dispatchers
-   * Replicação sem binário ativada se o armazenamento de dados do arquivo for compartilhado
+   * Topologia mínima: três instâncias de Autor, três instâncias MongoDB, duas instâncias de Publicação, dois Dispatchers
+   * Replicação sem binários ativada se o armazenamento de dados de arquivos estiver compartilhado
 
-* **Nodestore** - Armazenado no disco local, não em um NAS (Network Attached Storage, armazenamento conectado à rede)
+* **Nodestore** - Armazenado no disco local, não em um armazenamento conectado à rede (NAS)
 * Ao usar **Amazon S3**:
 
    * O armazenamento de dados do Amazon S3 é compartilhado entre a camada Autor e Publicação
-   * A replicação sem binário deve ser ativada
-   * A coleta de lixo do armazenamento de dados requer uma primeira execução em todos os nós Autor e Publicação e, em seguida, uma segunda execução no Autor
+   * A replicação sem binários deve estar ativada
+   * A coleta de lixo do armazenamento de dados requer uma primeira execução em todos os nós do Author e Publish, e uma segunda execução no Author
 
-* **O índice personalizado deve ser criado além do índice predefinido** - Baseado na maioria das pesquisas comuns
+* **O índice personalizado deve ser criado além do índice pronto para uso** - Com base nas pesquisas mais comuns
 
-   * Índices Lucene devem ser usados para índices personalizados
+   * Os índices Lucene devem ser usados para os índices personalizados
 
-* **A personalização do fluxo de trabalho pode melhorar substancialmente o desempenho** - Remova a etapa de vídeo no fluxo de trabalho &quot;Atualizar ativo&quot;, desabilitando ouvintes que não são usados e assim por diante.
+* **A personalização do workflow pode melhorar substancialmente o desempenho** - Remova a etapa de vídeo no fluxo de trabalho &quot;Atualizar ativo&quot;, desativando ouvintes que não são usados e assim por diante.
 
 Para obter mais detalhes, leia também a [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md) página.

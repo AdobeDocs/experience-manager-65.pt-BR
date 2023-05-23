@@ -1,7 +1,7 @@
 ---
-title: Como a geração de relatórios de processo funciona
+title: Como Funciona o Relatório de Processo
 seo-title: How Process Reporting Works
-description: Descrição dos serviços que compõem a AEM Forms no JEE Process Reporting e uma introdução à interface do usuário de Relatórios do Processo
+description: Descrição dos serviços que compõem o AEM Forms no JEE Process Reporting e uma introdução à interface do Process Reporting
 seo-description: Description of the services that make up the AEM Forms on JEE Process Reporting and an introduction to the Process Reporting UI
 uuid: 4631b734-a679-495c-a708-2348bf22c1f7
 content-type: reference
@@ -16,39 +16,39 @@ ht-degree: 0%
 ---
 
 
-# Como a geração de relatórios de processo funciona {#how-process-reporting-works}
+# Como Funciona o Relatório de Processo {#how-process-reporting-works}
 
-O Process Reporting é o módulo de relatórios da AEM Forms no JEE.
+Process Reporting é o módulo de relatório do AEM Forms no JEE.
 
-O Relatório de processos permite que você execute relatórios em processos e tarefas do AEM Forms.
+Process Reporting permite executar relatórios em processos e tarefas do AEM Forms.
 
-O Process Reporting usa o repositório incorporado do Process Reporting para publicar os dados do Forms. Em seguida, ele usa esses dados para executar relatórios.
+O Process Reporting usa o repositório incorporado do Process Reporting para publicar dados do Forms. Em seguida, ele usa esses dados para executar relatórios.
 
-O Process Reporting consiste nos seguintes módulos:
+O Relatório de processos consiste nos seguintes módulos:
 
 * [Serviço ProcessDataPublisher](/help/forms/using/process-reporting/process-reporting-architecture.md#p-processdatapublisher-service-br-p)
-* [Serviço ProcessDataStorage](/help/forms/using/process-reporting/process-reporting-architecture.md#p-processdatastorageprovider-service-br-p)
+* [serviço ProcessDataStorage](/help/forms/using/process-reporting/process-reporting-architecture.md#p-processdatastorageprovider-service-br-p)
 * [Serviço OSGi](/help/forms/using/process-reporting/process-reporting-architecture.md#p-osgi-service-br-p)
 * [Servlet de dados de consulta](/help/forms/using/process-reporting/process-reporting-architecture.md#p-querydataservlet-service-br-p)
-* [Interface do usuário do Process Reporting](/help/forms/using/process-reporting/process-reporting-architecture.md#p-process-reporting-user-interface-br-p)
+* [Interface do usuário do Relatório de processos](/help/forms/using/process-reporting/process-reporting-architecture.md#p-process-reporting-user-interface-br-p)
 
 ## Arquitetura de relatórios de processos {#process-reporting-architecture-br}
 
 ![processreportingarchitecture](assets/processreportingarchitecture.png)
 
-## Módulos de Relatório de Processos {#process-reporting-modules}
+## Módulos de relatório de processo {#process-reporting-modules}
 
 ### Serviço ProcessDataPublisher {#processdatapublisher-service-br}
 
-O servidor ProcessDataPublisher é executado periodicamente no banco de dados do AEM Forms e extrai os dados alterados desde a última execução do serviço. Em seguida, ele publica os dados no serviço de Armazenamento de Dados de Processo.
+O servidor ProcessDataPublisher é executado periodicamente no banco de dados do AEM Forms e extrai os dados alterados desde a última execução do serviço. Em seguida, ele publica os dados no serviço de Armazenamento de dados de processos.
 
-Para obter detalhes sobre como configurar o serviço, consulte [Configurar o serviço ProcessDataPublisher](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
+Para obter detalhes sobre a configuração do serviço, consulte [Configurar o serviço ProcessDataPublisher](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
 
 ### Serviço ProcessDataStorageProvider {#processdatastorageprovider-service-br}
 
 O serviço ProcessDataStorageProvider recebe dados do processo do serviço ProcessDataPublisher e salva os dados no repositório do Process Reporting.
 
-Para obter detalhes sobre como configurar o serviço, consulte [Configurar o serviço ProcessDataStorageProvider](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
+Para obter detalhes sobre a configuração do serviço, consulte [Configurar o serviço ProcessDataStorageProvider](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
 
 ### Serviço OSGi {#osgi-service-br}
 
@@ -58,20 +58,20 @@ O QueryDataServlet usa esse serviço para obter os dados de relatório do reposi
 
 O serviço QueryDataServlet aceita consultas da interface do usuário do Process Reporting.
 
-O serviço usa os serviços OSGi para obter os dados de relatório relevantes, processar os dados e retornar os dados à interface do usuário.
+O serviço usa serviços OSGi para obter os dados de relatório relevantes, processa os dados e retorna os dados à interface do usuário.
 
-### Interface do usuário do Process Reporting {#process-reporting-user-interface-br}
+### Interface do usuário do Relatório de processos {#process-reporting-user-interface-br}
 
-A interface do usuário do Process Reporting é uma interface baseada em navegador da Web. Use essa interface para exibir informações de processo e tarefa publicadas no banco de dados do AEM Forms.
+A interface do usuário de Relatórios do processo é baseada em navegador da Web. Use essa interface para exibir informações sobre processos e tarefas publicadas no banco de dados do AEM Forms.
 
 ### Serviço QueryDataServlet {#querydataservlet-service-br-1}
 
 O serviço QueryDataServlet aceita consultas da interface do usuário do Process Reporting.
 
-O serviço usa os serviços OSGi para obter os dados de relatório relevantes, processar os dados e retornar os dados à interface do usuário.
+O serviço usa serviços OSGi para obter os dados de relatório relevantes, processa os dados e retorna os dados à interface do usuário.
 
 ### Relatórios personalizados {#custom-reports-br}
 
-Você pode criar seus próprios relatórios personalizados e exibi-los na guia Relatórios personalizados da interface do usuário do Relatório de processo .
+Você pode criar seus próprios relatórios personalizados e exibi-los na guia Relatórios personalizados da interface do usuário Processar relatórios.
 
-Para obter as etapas para criar um relatório personalizado, consulte Criar um relatório personalizado no artigo [Relatórios Personalizados no Processo](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
+Para obter as etapas para criar um relatório personalizado, consulte Para criar um relatório personalizado no artigo [Relatórios personalizados em relatórios de processo](/help/forms/using/process-reporting/process-reporting-custom-reports.md).

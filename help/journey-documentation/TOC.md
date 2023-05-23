@@ -23,7 +23,7 @@ Please note that all links to other guides need to be absolute references with l
    + [O que é uma jornada de documentação?](home.md)
 
 + Jornadas headless {#headless}
-   + [Página inicial do Jornada sem periféricos](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/home.html)
+   + [Página inicial do Jornada Headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/home.html)
    + Jornada de desenvolvedores headless {#developer}
       + [Compreender o headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/overview.html)
       + [Saiba mais sobre o desenvolvimento headless CMS](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/learn-about.html)

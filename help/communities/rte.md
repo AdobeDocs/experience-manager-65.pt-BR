@@ -1,7 +1,7 @@
 ---
-title: Princípios básicos do editor de rich text
+title: Fundamentos do Editor de Rich Text
 seo-title: Rich Text Editor Essentials
-description: Visão geral de recursos do Editor de Rich Text
+description: Visão geral do recurso Editor de Rich Text
 seo-description: Rich text Editor feature overview
 uuid: f96015cc-114b-431a-a5ba-dc195c2a0b83
 contentOwner: msm-service
@@ -17,21 +17,21 @@ ht-degree: 3%
 
 ---
 
-# Princípios básicos do editor de rich text {#rich-text-editor-essentials}
+# Fundamentos do Editor de Rich Text {#rich-text-editor-essentials}
 
 ## Visão geral {#overview}
 
 Um Editor de Rich Text (RTE) fornece a capacidade de inserir texto com marcação.
 
-Para componentes das Comunidades, enquanto são semelhantes ao [editor de rich text no ambiente do autor](../../help/sites-authoring/rich-text-editor.md), afeta o texto inserido no ambiente de publicação.
+Para componentes das Comunidades, embora semelhantes ao [editor de rich text no ambiente do autor](../../help/sites-authoring/rich-text-editor.md), afeta o texto inserido no ambiente de publicação.
 
-![editor de rich text](assets/rich-text-editor.png)
+![rich-text-editor](assets/rich-text-editor.png)
 
 ## Ativação do editor de rich text {#enabling-rich-text-editor}
 
-Os componentes de Comunidades que permitem conteúdo gerado pelo usuário (UGC) podem ser habilitados para permitir o RTE. Dependendo de o componente ter sido adicionado a uma página ou incluído em uma [função](functions.md), o RTE pode ou não ser ativado por padrão.
+Os componentes das comunidades que permitem conteúdo gerado pelo usuário (UGC) podem ser habilitados para permitir RTE. Dependendo se o componente foi adicionado a uma página ou incluído em um [função](functions.md), o RTE pode ou não estar ativado por padrão.
 
-Se não estiver ativado, basta inserir [modo de edição do autor](sites-console.md#authoring-site-content), selecione o componente para edição e selecione o `Rich Text Editor` caixa de seleção.
+Se não estiver ativado, basta inserir [modo de edição do autor](sites-console.md#authoring-site-content), selecione o componente para edição e selecione o `Rich Text Editor` caixa de seleção
 
 O RTE está disponível para os seguintes componentes do Communities:
 
@@ -41,26 +41,26 @@ O RTE está disponível para os seguintes componentes do Communities:
 * [Filelibrary](file-library.md)
 * [Fórum](forum.md)
 * [Mensagens](configure-messaging.md)
-* [Perguntas e respostas](working-with-qna.md)
+* [QnA](working-with-qna.md)
 * [Revisões](reviews.md)
 
 ## Personalização {#customization}
 
-A personalização do editor de rich text é possível, pois a implementação é baseada em [Editor CKE](https://www.ckeditor.com/).
+A personalização do editor de rich text é possível, pois a implementação é baseada em [CKEditor](https://www.ckeditor.com/).
 
-A configuração atual dos componentes das Comunidades está no `cq.social.  scf   clientlib`, localizado no repositório em
+A configuração atual dos componentes do Communities está em `cq.social.  scf   clientlib`, localizado no repositório em
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
-A modificação da clientlib cq.social.scf não é recomendada, pois as atualizações futuras podem substituir qualquer edição.
+Não é recomendado modificar o clientlib cq.social.scf, pois atualizações futuras podem substituir qualquer edição.
 
-### Exemplo de personalização: Links em linha {#example-customization-inline-links}
+### Exemplo de personalização: links integrados {#example-customization-inline-links}
 
-Devido a questões de segurança, as opções de hiperlink não são incluídas no conjunto de ícones de rich text apresentados aos membros por padrão. A habilidade para o mal é extensa quando os hrefs são permitidos no UGC.
+Por questões de segurança, as opções de hiperlink não estão incluídas no conjunto de ícones de rich text apresentado aos membros por padrão. A capacidade de danificar é extensa quando os hrefs são permitidos no UGC.
 
 Para adicionar as opções de hiperlink à barra de ferramentas:
 
-* Adicionar uma barra de ferramentas chamada &quot; `links`&quot;
+* Adicione uma barra de ferramentas chamada &quot; `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
 * Selecionar **[!UICONTROL Salvar tudo]**
 

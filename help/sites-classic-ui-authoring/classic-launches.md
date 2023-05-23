@@ -1,6 +1,6 @@
 ---
 title: Lançamentos
-description: Crie um lançamento para permitir a atualização de uma nova versão das páginas da Web existentes para ativação futura. Ao criar a inicialização, especifique um título e a página de origem.
+description: Crie um lançamento para permitir a atualização de uma nova versão de páginas da Web existentes para ativação futura. Ao criar a inicialização, especifique um título e a página de origem.
 uuid: b1952b6c-fc44-4e39-80ba-9380a6c66b8c
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,18 +17,18 @@ ht-degree: 29%
 
 # Lançamentos{#launches}
 
-Lançamentos permitem que você desenvolva com eficiência o conteúdo para uma versão futura.
+Os lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura.
 
-Um lançamento é criado para permitir que você faça modificações prontas para futuras publicações (mantendo suas páginas atuais). Após editar e atualizar suas páginas de lançamento, você as promove à origem e ativa as páginas de origem (nível superior). A promoção duplica o conteúdo do lançamento nas páginas de origem e pode ser feita manual ou automaticamente (dependendo dos campos definidos ao criar e editar o lançamento).
+Um lançamento é criado para permitir que você faça modificações prontas para futuras publicações (mantendo suas páginas atuais). Após editar e atualizar suas páginas de lançamento, você as promove à origem e ativa as páginas de origem (nível superior). A promoção duplica o conteúdo da inicialização de volta às páginas de origem e pode ser feita manual ou automaticamente (dependendo dos campos definidos ao criar e editar a inicialização).
 
 >[!NOTE]
 >
->A teoria por trás dos lançamentos é descrita em detalhes em [Lançamentos](/help/sites-authoring/launches.md) na documentação de criação padrão.
+>A teoria por trás dos lançamentos é descrita em detalhes na seção [Lançamentos](/help/sites-authoring/launches.md) na documentação de criação padrão.
 >
->Informações específicas sobre o uso de lançamentos na interface clássica podem ser encontradas na documentação a seguir, juntamente com [Criação de lançamentos](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Edição de lançamentos](/help/sites-classic-ui-authoring/classic-launches-editing.md)e [Promoção de lançamentos](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>As informações específicas para usar inicializações na interface clássica podem ser encontradas na documentação a seguir, juntamente com [Criação de lançamentos](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Edição de lançamentos](/help/sites-classic-ui-authoring/classic-launches-editing.md), e [Promoção de lançamentos](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
->Várias ramificações de origem para um lançamento não são possíveis na interface clássica.
+>Não é possível ter várias ramificações de origem para uma inicialização na interface clássica.
 
-O console Lançamentos pode ser acessado diretamente com [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+O console Inicializações pode ser acessado diretamente com [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)

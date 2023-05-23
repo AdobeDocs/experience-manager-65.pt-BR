@@ -1,7 +1,7 @@
 ---
 title: Fundamentos do site da comunidade
 seo-title: Community Site Essentials
-description: Como exportar e excluir sites da comunidade e criar modelos de site personalizados
+description: Exportação e exclusão de sites da comunidade e criação de modelos de site personalizados
 seo-description: Exporting and deleting community sites and creating custom site templates
 uuid: f0ec0e71-64e9-415a-b14a-939a9b1611c1
 contentOwner: msm-service
@@ -26,9 +26,9 @@ Um modelo de site personalizado pode ser especificado separadamente para cada c�
 Para fazer isso:
 
 * Crie um modelo personalizado.
-* Sobreponha o caminho padrão do modelo do site.
+* Sobrepor o caminho do modelo de site padrão.
 * Adicione o modelo personalizado ao caminho de sobreposição.
-* Especifique o modelo personalizado adicionando um `page-template` para a `configuration` nó .
+* Especifique o modelo personalizado adicionando um `page-template` para a propriedade `configuration` nó.
 
 **Modelo padrão**:
 
@@ -38,7 +38,7 @@ Para fazer isso:
 
 `/apps/social/console/components/hbs/sitepage/template-name.hbs`
 
-**Propriedade**: modelo de página
+**Propriedade**: page-template
 
 **Tipo**: String
 
@@ -52,7 +52,7 @@ Por exemplo: `/content/sites/engage/en/configuration`
 
 >[!NOTE]
 >
->Todos os nós no caminho sobreposto só precisam ser do tipo `Folder`.
+>Todos os nós no caminho sobreposto precisam ser somente do tipo `Folder`.
 
 >[!CAUTION]
 >
@@ -60,36 +60,36 @@ Por exemplo: `/content/sites/engage/en/configuration`
 
 ### Exemplo de modelo de site personalizado {#custom-site-template-example}
 
-Como exemplo, `vertical-sitepage.hbs` é um modelo de site que resulta no posicionamento dos links de menu verticalmente no lado esquerdo da página, em vez de horizontalmente abaixo do banner.
+Como exemplo, `vertical-sitepage.hbs` é um modelo de site que resulta no posicionamento de links de menu verticalmente no lado esquerdo da página, em vez de horizontalmente abaixo do banner.
 
 [Obter arquivo](assets/vertical-sitepage.hbs)
 Coloque o modelo de site personalizado na pasta de sobreposição:
 
 `/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
-Identifique o modelo personalizado adicionando um `page-template` para o nó de configuração:
+Identifique o modelo personalizado adicionando um `page-template` ao nó de configuração:
 
 `/content/sites/sample/en/configuration`
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Certifique-se de **Salvar tudo** e replicar o código personalizado para todas as instâncias AEM (o código personalizado não é incluído quando o conteúdo do site da comunidade é publicado do console).
+Certifique-se de **Salvar tudo** e replique o código personalizado em todas as instâncias do AEM (o código personalizado não é incluído quando o conteúdo do site da comunidade é publicado no console).
 
-A prática recomendada para replicar código personalizado é [criar um pacote](../../help/sites-administering/package-manager.md#creating-a-new-package) e implante-o em todas as instâncias.
+A prática recomendada para replicar o código personalizado é [criar um pacote](../../help/sites-administering/package-manager.md#creating-a-new-package) e implantá-lo em todas as instâncias.
 
-## Exportar um site de comunidade {#exporting-a-community-site}
+## Exportação de um site da comunidade {#exporting-a-community-site}
 
-Depois que um site da comunidade é criado, é possível exportar o site como um pacote de AEM armazenado no gerenciador de pacotes e disponível para download e upload.
+Depois que um site da comunidade é criado, é possível exportá-lo como um pacote AEM armazenado no gerenciador de pacotes e disponível para download e upload.
 
 Isso está disponível no [Console de sites das comunidades](sites-console.md#exporting-the-site).
 
-Observe que o UGC e o código personalizado não estão incluídos no pacote de site da comunidade.
+Observe que o UGC e o código personalizado não estão incluídos no pacote do site da comunidade.
 
-Para exportar o UGC, use o [Ferramenta de migração UGC da AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), uma ferramenta de migração de código aberto disponível no GitHub.
+Para exportar UGC, use o [Ferramenta de migração UGC do AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), uma ferramenta de migração de código aberto disponível no GitHub.
 
-## Excluindo um site da comunidade {#deleting-a-community-site}
+## Exclusão de um site da comunidade {#deleting-a-community-site}
 
-A partir do AEM Communities 6.3 Service Pack 1, o ícone Excluir site é exibido ao passar o mouse sobre o site da comunidade a partir do **[!UICONTROL Comunidades]** > **[!UICONTROL Sites]** console. Durante o desenvolvimento, se desejar excluir um site da comunidade e começar a usar o novo, você pode usar essa funcionalidade. Excluir um site da comunidade remove os seguintes itens associados a ele:
+A partir do AEM Communities 6.3 Service Pack 1, o ícone Excluir site é exibido ao passar o mouse sobre o site da comunidade de **[!UICONTROL Communities]** > **[!UICONTROL Sites]** console. Durante o desenvolvimento, se for desejado excluir um site da comunidade e começar do zero, você poderá usar essa funcionalidade. A exclusão de um site da comunidade remove os seguintes itens associados a esse site:
 
 * [UGC](#user-generated-content)
 * [Grupos de usuários](#community-user-groups)
@@ -97,11 +97,11 @@ A partir do AEM Communities 6.3 Service Pack 1, o ícone Excluir site é exibido
 
 ### ID exclusiva do site da comunidade {#community-unique-site-id}
 
-Para identificar a ID de site exclusiva associada ao site da comunidade, usando o CRXDE:
+Para identificar a ID exclusiva do site associada ao site da comunidade, usando o CRXDE:
 
 * Navegue até a raiz de idioma do site, como `/content/sites/*<site name>*/en/rep:policy`.
 
-* Encontre a `allow<#>` nó com um `rep:principalName` neste formato `rep:principalName = *community-enable-nrh9h-members*`.
+* Localize o `allow<#>` nó com um `rep:principalName` neste formato `rep:principalName = *community-enable-nrh9h-members*`.
 
 * A ID do site é o terceiro componente do `rep:principalName`
 
@@ -109,7 +109,7 @@ Para identificar a ID de site exclusiva associada ao site da comunidade, usando 
 
    * **nome do site** = *habilitar*
    * **ID do site** = *nrh9h*
-   * **ID de site exclusiva** = *enable-nrh9h*
+   * **identificador exclusivo do site** = *enable-nrh9h*
 
 ### Conteúdo gerado pelo usuário {#user-generated-content}
 
@@ -119,17 +119,17 @@ Obtenha o projeto communities-srp-tools do Github:
 
 Ele contém um servlet para excluir todo o UGC de qualquer SRP.
 
-Todo o UGC pode ser removido ou para um site específico, por exemplo:
+Todos os UGC podem ser removidos ou para um site específico, por exemplo:
 
 * `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
-Isso remove somente o conteúdo gerado pelo usuário (inserido na publicação) e não o conteúdo criado (inserido no autor). Por conseguinte, [nós sombra](srp.md#shadownodes) não são afetadas.
+Isso remove apenas o conteúdo gerado pelo usuário (inserido na publicação) e não o conteúdo criado (inserido no autor). Por conseguinte, [nós de sombra](srp.md#shadownodes) não são afetadas.
 
 ### Grupos de usuários da comunidade {#community-user-groups}
 
-Em todas as instâncias de autor e publicação, no [console de segurança](../../help/sites-administering/security.md), localize e remova o [grupos de usuários](users.md) que são:
+Em todas as instâncias de autor e publicação, no [console de segurança](../../help/sites-administering/security.md), localize e remova a variável [grupos de usuários](users.md) que são:
 
 * Prefixado com `community`
-* Seguido de [id de site exclusiva](#community-unique-site-id)
+* Seguido por [id exclusiva do site](#community-unique-site-id)
 
 Por exemplo, `community-engage-x0e11-members`.

@@ -1,5 +1,5 @@
 ---
-title: Introdução ao Relatório de Processos
+title: Introdução ao Process Reporting
 seo-title: Introduction to Process Reporting
 description: Introdução e principais recursos do AEM Forms no JEE Process Reporting
 seo-description: Introduction and key capabilities of AEM Forms on JEE Process Reporting
@@ -17,21 +17,21 @@ ht-degree: 0%
 
 ---
 
-# Introdução ao Relatório de Processos{#introduction-to-process-reporting}
+# Introdução ao Process Reporting{#introduction-to-process-reporting}
 
-![relatório de processos](assets/process-reporting.png)
+![relatório de processo](assets/process-reporting.png)
 
-O Process Reporting é uma ferramenta baseada em navegador usada para criar e exibir relatórios sobre processos e tarefas do AEM Forms.
+Relatórios de processos é uma ferramenta baseada em navegador usada para criar e exibir relatórios sobre processos e tarefas do AEM Forms.
 
-O Relatório de processos fornece um conjunto de relatórios prontos para uso que permitem filtrar, exibir informações sobre processos de execução longa, duração do processo e volume de fluxo de trabalho.
+O Process Reporting fornece um conjunto de relatórios prontos para uso que permitem filtrar, exibir informações sobre processos de longa execução, duração do processo e volume do fluxo de trabalho.
 
-Além disso, o Process Reporting fornece uma interface para executar consultas adhoc e integrar exibições de relatório personalizadas na interface do usuário do Process Reporting .
+Além disso, o Process Reporting fornece uma interface para executar consultas adhoc e integrar exibições de relatórios personalizadas à interface do usuário do Process Reporting.
 
-Para obter a lista de navegadores compatíveis, consulte [Plataformas compatíveis com a AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md).
+Para obter a lista de navegadores compatíveis, consulte [Plataformas compatíveis com AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
-O Process Reporting é criado em módulos que:
+O Process Reporting é construído em módulos que:
 
-* Ler dados do processo do banco de dados AEM Forms
+* Ler dados do processo do Banco de Dados do AEM Forms
 * Publicar dados do processo em um repositório incorporado do Process Reporting
 * Fornece uma interface de usuário baseada em navegador para exibir relatórios
 
@@ -41,32 +41,32 @@ O Process Reporting é criado em módulos que:
 
 ![gerenciamento de site](assets/site-management.png)
 
-Exiba a lista de processos de longa execução, gráficos de duração do processo e execute consultas personalizadas usando filtros.
+Visualize a lista de processos de longa execução, gráficos de duração do processo e executar consultas personalizadas usando filtros.
 
-O Process Reporting também fornece a opção para exportar o relatório e os dados da consulta no formato CSV.
+Process Reporting também oferece a opção de exportar o relatório e consultar dados no formato CSV.
 
-### Relatórios ad hoc {#adhoc-reports}
+### Relatórios Ad Hoc {#adhoc-reports}
 
-![imprimir&amp;-cor](assets/print-&-colour.png)
+![print-&amp;-color](assets/print-&-colour.png)
 
-Use filtros para obter uma exibição específica dos seus dados.
+Use filtros para obter uma visualização específica dos seus dados.
 
 Você pode pesquisar processos ou tarefas por ID, duração, datas de início e término, iniciador do processo etc.
 
 É possível combinar vários filtros para criar relatórios específicos.
 
-Você pode salvar os filtros de relatório a serem executados em uma data ou hora posterior.
+É possível salvar os filtros de relatório para execução em uma data ou hora posterior.
 
-### Histórico de Processo/Tarefa {#process-task-history}
+### Histórico de Processos/Tarefas {#process-task-history}
 
 ![gerenciamento de arquivos](assets/file-management.png)
 
-Os servidores da AEM Forms executam vários processos em paralelo. Esses processos continuam fazendo a transição de um estado para outro. Ao publicar dados do Forms no repositório do Process Reporting em intervalos regulares, o Process Reporting retém as informações de transição sobre os processos em execução no AEM Forms.
+Os servidores da AEM Forms executam vários processos em paralelo. Esses processos continuam em transição de um estado para outro. Ao publicar dados do Forms no repositório do Process Reporting em intervalos regulares, o Process Reporting retém as informações de transição sobre os processos em execução no AEM Forms.
 
 ### Controle de acesso {#access-control-br}
 
 ![sem título](assets/untitled.png)
 
-Relatório de processos fornece acesso com base em permissão à interface do usuário.
+O Process Reporting fornece acesso baseado em permissão à interface do usuário.
 
 Isso significa que somente os usuários com permissões de relatório têm acesso à interface do usuário do Process Reporting.

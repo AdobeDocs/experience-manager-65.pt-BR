@@ -1,7 +1,7 @@
 ---
-title: Licenças do conector SharePoint, avisos de direitos autorais e isenções de responsabilidade
+title: Licenças do SharePoint Connector, Avisos de direitos autorais e Isenções de responsabilidade
 seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
-description: Saiba mais sobre as Licenças de Conector SharePoint, Avisos de Direitos Autorais e Isenções de Responsabilidade.
+description: Saiba mais sobre as licenças do SharePoint Connector, avisos de direitos autorais e isenções de responsabilidade.
 seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: 182c8f0f-dcca-461a-9d8f-f05b376ad0cb
 contentOwner: User
@@ -18,30 +18,30 @@ ht-degree: 19%
 
 ---
 
-# Licenças do conector SharePoint, avisos de direitos autorais e isenções de responsabilidade{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# Licenças do SharePoint Connector, Avisos de direitos autorais e Isenções de responsabilidade{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-Esta seção lista todas as licenças, avisos de direitos autorais e isenções de responsabilidade que devem ser explicitamente mencionados em conexão com o Day JCR Connector for MS SharePoint.
+Esta seção lista todas as licenças, avisos de direitos autorais e isenções de responsabilidade que devem ser explicitamente declarados em conexão com o Conector Day JCR para MS SharePoint.
 
-## Visão geral de bibliotecas de terceiros do Connector {#overview-of-connector-rd-party-libraries}
+## Visão geral das bibliotecas de terceiros do conector {#overview-of-connector-rd-party-libraries}
 
-A tabela a seguir lista bibliotecas de terceiros usadas nas bibliotecas principais do Conector SharePoint, juntamente com licenças, avisos de copyright ou isenções de responsabilidade pelas quais são cobertas:
+A tabela a seguir lista as bibliotecas de terceiros usadas nas bibliotecas principais do Conector SharePoint, juntamente com as licenças, avisos de direitos autorais ou isenções de responsabilidade que abrangem essas bibliotecas:
 
 | Biblioteca | Tipo de licença |
 |---|---|
-| antígeno | [Apache](#apache) |
+| anógeno | [Apache](#apache) |
 | axiom-api | [Apache](#apache) |
-| axiom-dom | [Apache](#apache) |
+| axioma-dom | [Apache](#apache) |
 | axiom-impl | [Apache](#apache) |
 | axis2-adb | [Apache](#apache) |
-| eixo2-kernel | [Apache](#apache) |
-| Backport-util-simultâneo | Domínio público |
+| axis2-kernel | [Apache](#apache) |
+| Backport-util-concurrent | Domínio público |
 | commons-codec | [Apache](#apache) |
 | commons-collections | [Apache](#apache) |
 | commons-fileupload | [Apache](#apache) |
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| simultâneo | [Concorrente](#concurrent) (Domínio público) |
+| simultâneo | [Simultâneo](#concurrent) (Domínio público) |
 | geronimo-ativation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -60,12 +60,12 @@ A tabela a seguir lista bibliotecas de terceiros usadas nas bibliotecas principa
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-apis | [Apache](#apache) (contém partes cobertas por licenças de domínio público e software W3C) |
+| xml-apis | [Apache](#apache) (contém partes cobertas pelas licenças de Domínio público e Software W3C) |
 | XmlSchema | [Apache](#apache) |
 
-## Visão geral de bibliotecas de terceiros do CRX {#overview-of-crx-rd-party-libraries}
+## Visão geral das bibliotecas de terceiros do CRX {#overview-of-crx-rd-party-libraries}
 
-A tabela a seguir lista bibliotecas de terceiros usadas no CRX, juntamente com licenças, avisos de direitos autorais ou isenções de responsabilidade pelas quais são cobertas:
+A tabela a seguir lista as bibliotecas de terceiros usadas no CRX, juntamente com as licenças, avisos de direitos autorais ou isenções de responsabilidade sobre as quais são abordadas:
 
 <table>
  <colgroup>
@@ -98,7 +98,7 @@ A tabela a seguir lista bibliotecas de terceiros usadas no CRX, juntamente com l
   </tr>
   <tr>
    <td>concurrent-1.3.4.jar</td>
-   <td><a href="#concurrent">Concorrente</a></td>
+   <td><a href="#concurrent">Simultâneo</a></td>
   </tr>
   <tr>
    <td>derby-10.1.2.1.jar</td>
@@ -114,7 +114,7 @@ A tabela a seguir lista bibliotecas de terceiros usadas no CRX, juntamente com l
   </tr>
   <tr>
    <td>jcr-1.0.jar</td>
-   <td><a href="#day-jcr">JCR de dia</a></td>
+   <td><a href="#day-jcr">JCR do dia</a></td>
   </tr>
   <tr>
    <td>jdom-1.0.jar</td>
@@ -130,7 +130,7 @@ A tabela a seguir lista bibliotecas de terceiros usadas no CRX, juntamente com l
   </tr>
   <tr>
    <td>pdfbox-0.7.2.jar</td>
-   <td><a href="#pdfbox">PDFBox</a></td>
+   <td><a href="#pdfbox">PDFBbox</a></td>
   </tr>
   <tr>
    <td>poi-2.5.1-day.jar</td>
@@ -155,9 +155,9 @@ A tabela a seguir lista bibliotecas de terceiros usadas no CRX, juntamente com l
  </tbody>
 </table>
 
-## Visão geral de bibliotecas de terceiros do CQSE {#overview-of-cqse-rd-party-libraries}
+## Visão geral das bibliotecas de terceiros do CQSE {#overview-of-cqse-rd-party-libraries}
 
-A tabela a seguir lista bibliotecas de terceiros usadas no mecanismo de servlet do Communiqué, juntamente com licenças, avisos de copyright ou isenções de responsabilidade pelas quais são cobertas:
+A tabela a seguir lista as bibliotecas de terceiros usadas no Mecanismo de Servlet do Comunicado, juntamente com as licenças, avisos de direitos autorais ou isenções de responsabilidade pelas quais são abordados:
 
 <table>
  <colgroup>
@@ -426,7 +426,7 @@ A tabela a seguir lista bibliotecas de terceiros usadas no mecanismo de servlet 
      limitations under the License.
 ```
 
-## Concorrente {#concurrent}
+## Simultâneo {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
@@ -438,7 +438,7 @@ A tabela a seguir lista bibliotecas de terceiros usadas no mecanismo de servlet 
      <a href="https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf" TARGET="_blank" >https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf</a>
 ```
 
-## JCR de dia {#day-jcr}
+## JCR do dia {#day-jcr}
 
 ```xml
      Day Management AG ("Licensor") is willing to license this
@@ -695,7 +695,7 @@ A tabela a seguir lista bibliotecas de terceiros usadas no mecanismo de servlet 
      on the JDOM Project, please see <https://www.jdom.org/>.
 ```
 
-## PDFBox {#pdfbox}
+## PDFBbox {#pdfbox}
 
 ```xml
      Copyright (c) 2003-2005, <a href="https://www.pdfbox.org/" TARGET="_blank" >www.pdfbox.org</a>

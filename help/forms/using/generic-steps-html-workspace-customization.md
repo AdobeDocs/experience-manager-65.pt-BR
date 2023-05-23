@@ -1,7 +1,7 @@
 ---
 title: Etapas genéricas para personalização do espaço de trabalho do AEM Forms
 seo-title: Generic steps for AEM Forms workspace customization
-description: Como começar a personalizar a interface do usuário do AEM Forms workspace.
+description: Introdução à personalização da interface do usuário do espaço de trabalho do AEM Forms.
 seo-description: How to get started customizing AEM Forms workspace user interface.
 uuid: da6310b4-1c58-468d-85c6-975fd2c141f9
 contentOwner: robhagat
@@ -23,18 +23,18 @@ ht-degree: 1%
 As etapas genéricas para executar qualquer personalização são:
 
 1. Faça logon no CRXDE Lite acessando `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Crie um `sling:Folder` nome da pasta `ws` at `/apps`, se não existir. Para criar um `sling:Folder` , clique com o botão direito do mouse no `apps` e selecione **[!UICONTROL Criar]** > **[!UICONTROL Criar nó]**. Especifique o nome como `ws`, selecione tipo como `sling:Folder` e clique em **[!UICONTROL OK]**. Clique em **[!UICONTROL Salvar tudo]**.
-1. Navegue até `/apps/ws`e navegue até o **[!UICONTROL Controle de acesso]** guia .
-1. Selecione o **[!UICONTROL Repositório]** opção. No **[!UICONTROL Controle de acesso]** listar, clique em **[!UICONTROL +]** para adicionar uma nova entrada. Clique em **[!UICONTROL +]** novamente.
+1. Criar um `sling:Folder` pasta chamada `ws` em `/apps`, se não existir. Para criar um `sling:Folder` , clique com o botão direito do mouse na `apps` e selecione **[!UICONTROL Criar]** > **[!UICONTROL Criar nó]**. Especifique o nome como `ws`, selecione tipo como `sling:Folder` e clique em **[!UICONTROL OK]**. Clique em **[!UICONTROL Salvar tudo]**.
+1. Navegue até `/apps/ws`e navegue até o **[!UICONTROL Controle de acesso]** guia.
+1. Selecione o **[!UICONTROL Repositório]** opção. No **[!UICONTROL Controle de acesso]** clique em **[!UICONTROL +]** para adicionar uma nova entrada. Clique em **[!UICONTROL +]** novamente.
 1. Pesquise e selecione o **PERM_WORKSPACE_USER** Principal.
 
-   ![Selecione PERM_WORKSPACE_USER principal como parte das etapas genéricas para personalizar o HTML Workspace](assets/perm_workspace_user.png)
+   ![Selecione PRINCIPAL PERM_WORKSPACE_USER como parte das etapas genéricas para personalizar o HTML Workspace](assets/perm_workspace_user.png)
 
-1. Dar `jcr:read` privilégio do diretor.
+1. Conceder `jcr:read` ao responsável principal.
 1. Clique em **[!UICONTROL Salvar tudo]**.
-1. Copie o `GET.jsp`, `index`e `html.jsp` arquivos da `/libs/ws` para `/apps/ws` pasta.
-1. Copie o `/libs/ws/locales` na pasta `/apps/ws` pasta. Clique em **[!UICONTROL Salvar tudo]**.
-1. Atualize as referências e os caminhos relativos na `GET.jsp` como mostrado abaixo e clique em **[!UICONTROL Salvar tudo]**.
+1. Copie o `GET.jsp`, `index`, e `html.jsp` arquivos do `/libs/ws` pasta para a `/apps/ws` pasta.
+1. Copie o `/libs/ws/locales` pasta na `/apps/ws` pasta. Clique em **[!UICONTROL Salvar tudo]**.
+1. Atualize as referências e os caminhos relativos no `GET.jsp` conforme mostrado abaixo e clique em **[!UICONTROL Salvar tudo]**.
 
    ```javascript
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
@@ -42,11 +42,11 @@ As etapas genéricas para executar qualquer personalização são:
 
 1. Faça o seguinte para personalizações de CSS:
 
-   1. Navegue até o `/apps/ws` e crie uma nova pasta chamada `css`.
+   1. Navegue até a `/apps/ws` e crie uma nova pasta chamada `css`.
 
-   1. No `css` criar um novo arquivo chamado `newStyle.css`.
+   1. No `css` , crie um novo arquivo com o nome `newStyle.css`.
 
-   1. Abrir `/apps/ws/html`.jsp e alterar de
+   1. Abertura `/apps/ws/html`.jsp e alterar de
 
    ```javascript
    <link lang="en" rel="stylesheet" type="text/css" href="css/style.css" />
@@ -63,7 +63,7 @@ As etapas genéricas para executar qualquer personalização são:
 
    >[!NOTE]
    >
-   >Coloque a entrada do arquivo CSS definido pelo usuário após a entrada de style.css, conforme mostrado acima.
+   >Coloque a entrada do arquivo CSS definido pelo usuário após a entrada de style.css, como mostrado acima.
 
 1. No arquivo /apps/ws/html.jsp, altere de
 
@@ -79,9 +79,9 @@ As etapas genéricas para executar qualquer personalização são:
 
 1. Faça o seguinte:
 
-   1. Crie uma pasta chamada `js` at `/apps/ws`. Clique em **[!UICONTROL Salvar tudo]**.
+   1. Crie uma pasta chamada `js` em `/apps/ws`. Clique em **[!UICONTROL Salvar tudo]**.
 
-   1. Crie uma pasta chamada `libs` at `/apps/ws/js`. Clique em **[!UICONTROL Salvar tudo]**.
+   1. Crie uma pasta chamada `libs` em `/apps/ws/js`. Clique em **[!UICONTROL Salvar tudo]**.
 
    1. Copiar `/libs/ws/js/libs/jqueryui` pasta para `/apps/ws/js/libs`. Clique em **[!UICONTROL Salvar tudo]**.
 
@@ -95,6 +95,6 @@ As etapas genéricas para executar qualquer personalização são:
 
    1. Copiar /libs/ws/js/registry.js para `/apps/ws/js/registry.js`.
 
-1. Clique em **[!UICONTROL Salvar tudo]**, limpe o cache e atualize o espaço de trabalho do AEM Forms.
+1. Clique em **[!UICONTROL Salvar tudo]**, limpar o cache e atualizar o espaço de trabalho do AEM Forms.
 
    Acessar o URL `https://'[server]:[port]'/lc/ws` e faça logon com credenciais de administrador/senha. O navegador redireciona para `https://'[server]:[port]'/lc/apps/ws/index.html`.

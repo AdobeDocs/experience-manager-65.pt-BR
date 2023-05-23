@@ -1,5 +1,5 @@
 ---
-title: Primeiras etapas para autores ao criar conteúdo em AEM
+title: Primeiros passos para autores ao criar conteúdo no AEM
 description: Uma visão geral das principais tarefas que você usa ao criar conteúdo com o Adobe Experience Manager (AEM).
 uuid: 1a09da22-faa4-4a7a-a2c5-97a255a6a2ae
 contentOwner: Chris Bohnert
@@ -16,25 +16,25 @@ ht-degree: 6%
 
 ---
 
-# Primeiros passos para autores{#first-steps-for-authors}
+# Primeiras etapas para autores{#first-steps-for-authors}
 
-Esta seção fornece uma visão geral das principais tarefas que você usará ao [começar a criar conteúdo](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) com o Adobe Experience Manager (AEM).
+Esta seção fornece uma visão geral das principais tarefas que você usará quando [como começar a criar conteúdo](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) com o Adobe Experience Manager (AEM).
 
 Abrange:
 
 * [Introdução](#getting-started)\
-   Detalhar a sequência básica de eventos que você precisa para criar e publicar sua primeira página.
+   Detalhar a sequência básica de eventos necessária para criar e publicar sua primeira página.
 
 * [Outras ações](#further-actions)\
-   Além das muitas outras ações que você pode usar na criação.
+   Dando sequência a muitas outras ações que você pode usar ao criar.
 
 ## Introdução {#getting-started}
 
-Isso detalha a sequência básica de eventos que você precisa para criar e publicar sua primeira página.
+Eles detalham a sequência básica de eventos necessária para criar e publicar sua primeira página.
 
 ### Navegar até o local da página {#navigating-to-the-page-location}
 
-O conteúdo do seu site é mantido em uma estrutura em árvore. Para criar ou editar uma página você precisa [navegar até o local](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+O conteúdo do site é mantido em uma estrutura em árvore. Para criar ou editar uma página, é necessário [navegar até o local](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 ### Criar uma nova página {#creating-a-new-page}
 
@@ -42,48 +42,48 @@ Antes de editar, é necessário [criar uma nova página](/help/sites-authoring/m
 
 ### Abrir uma página {#opening-a-page}
 
-Para várias ações, como edição, é necessário [abrir uma página](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
+Para muitas ações, como editar, é necessário [abrir uma página](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 
 ### Editar uma página {#editing-a-page}
 
-Se a instância já tem páginas existentes ou você acabou de criar uma nova página, é possível [editar uma página](/help/sites-authoring/editing-content.md) por:
+Se sua instância já tiver páginas existentes ou se você acabou de criar uma nova página, é possível [editar uma página](/help/sites-authoring/editing-content.md) por:
 
 * [Inserir um componente (parágrafo)](/help/sites-authoring/editing-content.md#inserting-a-component)
-* [Editar/Configurar/Copiar/Cortar/Excluir/Colar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) um componente
-* [Editar (conteúdo)](/help/sites-authoring/editing-content.md#edit-content)
-* [Editar (conteúdo) - Modo de tela cheia](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
+* [Editar/Configurar/Copiar/Recortar/Excluir/Colar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) um componente
+* [Editar (Conteúdo)](/help/sites-authoring/editing-content.md#edit-content)
+* [Editar (Conteúdo) - Modo de tela cheia](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
 * [Desfazer e refazer edições de página](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
-* [Uso do modo de visualização](/help/sites-authoring/editing-content.md#preview-mode) (para ver como ficará ao ser publicado)
+* [Utilização do modo de visualização](/help/sites-authoring/editing-content.md#preview-mode) (para ver a aparência exibida ao ser publicado)
 * [Bloquear uma página  ](/help/sites-authoring/editing-content.md#locking-a-page)
 
 ### Publicar uma página {#publishing-a-page}
 
-Quando terminar de editar a página, você desejará [publicar (ou ativar) sua página](/help/sites-authoring/publishing-pages.md#main-pars-title-10) para que esteja disponível para os visitantes do seu site.
+Quando terminar de editar sua página, você desejará [publicar (ou ativar) sua página](/help/sites-authoring/publishing-pages.md#main-pars-title-10) para que esteja disponível para os visitantes do seu site.
 
 ## Outras ações {#further-actions}
 
-Após as etapas básicas, há muitas outras ações que você pode usar na criação.
+Depois das etapas básicas, há muitas outras ações que você pode usar ao criar.
 
 ### Copiar uma página {#copying-a-page}
 
-Por vezes é mais fácil [copiar uma página](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page) e reutilize o conteúdo em vez de criar tudo novamente do zero.
+Às vezes, é mais fácil [copiar uma página](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page) e reutilizar o conteúdo em vez de criar tudo do zero novamente.
 
 ### Mover ou renomear uma página {#moving-or-renaming-a-page}
 
-[Mover e renomear páginas](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page) é basicamente feita com a mesma ação.
+[Mover e renomear páginas](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page) O é feito basicamente com a mesma ação.
 
 ### Desfazer a publicação de uma página {#unpublishing-a-page}
 
-Para tornar o conteúdo anteriormente publicado (ou ativado) indisponível no seu site público, você [desfazer a publicação (ou desativar) da página](/help/sites-authoring/publishing-pages.md#main-pars-title-5).
+Para tornar indisponível o conteúdo publicado (ou ativado) anteriormente em seu site público, você [desfazer a publicação (ou desativar) da página](/help/sites-authoring/publishing-pages.md#main-pars-title-5).
 
 ### Excluir uma página {#deleting-a-page}
 
-Caso uma página não seja mais necessária, talvez você queira [excluir a página](/help/sites-authoring/managing-pages.md#deleting-a-page).
+Se uma página não for mais necessária, talvez você queira [excluir a página](/help/sites-authoring/managing-pages.md#deleting-a-page).
 
-### Definir as propriedades da página {#setting-the-page-properties}
+### Configurar as propriedades da página {#setting-the-page-properties}
 
-Cada [página tem propriedades](/help/sites-authoring/editing-page-properties.md) que você pode definir para determinar os aspectos do seu funcionamento. Eles podem ser atualizados com qualquer interface do usuário do .
+A cada [a página tem propriedades](/help/sites-authoring/editing-page-properties.md) que você pode definir para determinar aspectos de sua operação. Eles podem ser atualizados com qualquer uma das interfaces do usuário.
 
 ### Criar uma versão de uma página {#creating-a-version-of-a-page}
 
@@ -91,4 +91,4 @@ Você pode [criar uma versão](/help/sites-authoring/working-with-page-versions.
 
 ## Mais informações {#more-information}
 
-O acesso a mais informações sobre a criação pode ser encontrado em [Criação de página](/help/sites-authoring/page-authoring.md).
+O acesso a mais informações sobre criação pode ser encontrado em [Criação de página](/help/sites-authoring/page-authoring.md).

@@ -1,7 +1,7 @@
 ---
-title: Guia do usuário dos recursos do AEM 6.5
+title: Guia do usuário de recursos do AEM 6.5
 seo-title: AEM 6.5 Capabilities User Guide
-description: Uma visão geral dos recursos essenciais do AEM 6.5
+description: Uma visão geral das capacidades essenciais do AEM 6.5
 seo-description: An overview of the essential capabilities of AEM 6.5
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
@@ -11,11 +11,11 @@ ht-degree: 57%
 
 ---
 
-# AEM 6.5 Guias do usuário de recursos {#aem-65-capabilities-user-guides}
+# Guias do usuário de recursos do AEM 6.5 {#aem-65-capabilities-user-guides}
 
-## AEM Foundation {#aem-foundation}
+## Fundação AEM {#aem-foundation}
 
-[Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluindo a implantação da nuvem do Adobe Managed Services.
+[Saiba mais sobre a instalação, implantação e arquitetura do Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluindo a implantação do Adobe Managed Services na nuvem.
 
 [Saiba como gerenciar um projeto do AEM](/help/managing/home.md).
 
@@ -39,7 +39,7 @@ ht-degree: 57%
 
 ## Comércio AEM {#aem-commerce}
 
-[Saiba mais sobre AEM Commerce.](/help/commerce/home.md)
+[Saiba mais sobre o comércio de AEM.](/help/commerce/home.md)
 
 ## AEM Communities {#aem-communities}
 

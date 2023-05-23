@@ -1,7 +1,7 @@
 ---
 title: Classificações do Adobe
 seo-title: Adobe Classifications
-description: Saiba mais sobre Classificações Adobe.
+description: Saiba mais sobre as Classificações de Adobe.
 seo-description: Learn about Adobe Classifications.
 uuid: 57fb59f4-da90-4fe7-a5b1-c3bd51159a16
 contentOwner: User
@@ -19,68 +19,68 @@ ht-degree: 7%
 
 # Classificações do Adobe{#adobe-classifications}
 
-Classificações Adobe exportam dados de classificações para [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de forma programada. O exportador é uma implementação de um **com.adobe.cq.scheduled.exportador.Exporter**.
+Classificações de Adobe exportam dados de classificações para [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de forma programada. O exportador é uma implementação de um **com.adobe.cq.scheduled.exporter.Exporter**.
 
 Para configurar isso:
 
-1. Usando **Navegação**, selecione **Ferramentas**, **Cloud Services**, em seguida **Cloud Services herdados**.
-1. Rolar para **Adobe Analytics** e selecione **Mostrar configurações**.
-1. Clique no botão **[+]** link ao lado da configuração do Adobe Analytics.
+1. Usar **Navegação**, selecione **Ferramentas**, **Cloud Services**, depois **Cloud Services herdados**.
+1. Navegue até **Adobe Analytics** e selecione **Exibir configurações**.
+1. Clique em **[+]** ao lado da configuração do Adobe Analytics.
 
-1. No **Criar estrutura** caixa de diálogo:
+1. No **Criar estrutura** diálogo:
 
    * Especifica um **Título**.
    * Opcionalmente, é possível especificar a variável **Nome**, para o nó que armazena os detalhes da estrutura no repositório.
-   * Selecionar **Classificações Adobe Analytics**
+   * Selecionar **Classificações do Adobe Analytics**
 
    E clique em **Criar**.
 
    ![Caixa de diálogo Criar estrutura](assets/aa-25.png)
 
-1. O **Configurações de classificações** será aberta para edição.
+1. A variável **Configurações de classificações** será aberta para edição.
 
-   ![Caixa de diálogo Configurações das classificações](assets/aa-classifications-settings.png)
+   ![Caixa de diálogo Configurações de classificações](assets/aa-classifications-settings.png)
 
-   As propriedades incluem:
+   As propriedades incluem o seguinte:
 
    | **Texto** | **Descrição** |
    |---|---|
    | Ativado | Selecionar **Sim** para ativar as configurações de Classificações de Adobe. |
-   | Substituir quando houver conflito | Selecionar **Sim** para substituir qualquer conflito de dados. Por padrão, isso é definido como **Não**. |
-   | Exclusão processada | Se estiver definido como **Sim**, exclui os nós processados após serem exportados. O padrão é **Falso**. |
-   | Exportar descrição da tarefa | Insira uma descrição para o job Adobe Classifications. |
-   | E-mail de notificação | Insira um endereço de email para a notificação de Classificações de Adobe. |
-   | Conjunto de relatórios | Insira o Conjunto de relatórios para executar o trabalho de importação. |
-   | Conjunto de Dados | Insira a ID de relação do conjunto de dados para executar o trabalho de importação. |
-   | Transformador | No menu suspenso , selecione uma implementação de transformador. |
-   | Fonte de Dados | Navegue até o caminho para o contêiner de dados. |
-   | Exportar programação | Selecione o agendamento para a exportação. O padrão é a cada 30 minutos. |
+   | Substituir quando houver conflito | Selecionar **Sim** para substituir qualquer colisão de dados. Por padrão, é definido como **Não**. |
+   | Exclusão processada | Se definida como **Sim**, exclui os nós processados após serem exportados. O padrão é **Falso**. |
+   | Exportar descrição da tarefa | Informe uma descrição para o job de Classificações de Adobe. |
+   | E-mail de notificação | Insira um endereço de email para notificação de Classificações de Adobe. |
+   | Conjunto de relatórios | Informe o Conjunto de relatórios para o qual executar o job de importação. |
+   | Conjunto de Dados | Insira a ID de relação do conjunto de dados para a qual executar o trabalho de importação. |
+   | Transformador | No menu suspenso, selecione uma implementação de transformador. |
+   | Fonte de Dados | Navegue até o caminho do container de dados. |
+   | Exportar programação | Selecione o cronograma da exportação. O padrão é a cada 30 minutos. |
 
 1. Clique em **OK** para salvar suas configurações.
 
-## Modificando o tamanho da página {#modifying-page-size}
+## Modificação do tamanho da página {#modifying-page-size}
 
-Os registros são processados em páginas. Por padrão, as Classificações de Adobe criam páginas com um tamanho de página de 1000.
+Os registros são processados em páginas. Por padrão, as Classificações de Adobe criam páginas com tamanho de página de 1000.
 
-Uma página pode ter no máximo 25000 páginas, por definição em Classificações de Adobe e pode ser modificada no console Felix. Durante a exportação, as Classificações Adobe bloqueiam o nó de origem para evitar modificações simultâneas. O nó é desbloqueado após a exportação, com erro ou quando a sessão é fechada.
+Uma página pode ter no máximo 25000 páginas, por definição em Classificações de Adobe e pode ser modificada a partir do console Felix. Durante a exportação, as Classificações de Adobe bloqueiam o nó de origem para impedir modificações simultâneas. O nó é desbloqueado após a exportação, por erro ou quando a sessão é encerrada.
 
 Para alterar o tamanho da página:
 
-1. Navegue até o console OSGI em **https://&lt;host>:&lt;port>/system/console/configMgr** e selecione **Exportador de classificações de Adobe AEM**.
+1. Navegue até o console OSGI em **https://&lt;host>:&lt;port>/system/console/configMgr** e selecione **Exportador de classificações do Adobe AEM**.
 
    ![aa-26](assets/aa-26.png)
 
-1. Atualize o **Exportar tamanho da página** conforme necessário, em seguida, clique em **Salvar**.
+1. Atualize o **Exportar tamanho da página** conforme necessário, em seguida clique em **Salvar**.
 
-## SAINTDefaultTransformer {#saintdefaulttransformer}
+## TransformadorpadraoSAINT {#saintdefaulttransformer}
 
 >[!NOTE]
 >
->Classificações Adobe eram conhecidas anteriormente como Exportador SAINT.
+>As Classificações Adobe eram anteriormente conhecidas como Exportador de SAINT.
 
-Um exportador pode utilizar um Transformador para transformar os dados de exportação em um formato específico. Para Classificações Adobe, uma subinterface `SAINTTransformer<String[]>` foi fornecida a implementação da interface Transformer. Essa interface é usada para restringir o tipo de dados a `String[]` que é usada pela API do SAINT e para ter uma interface de marcador para localizar esses serviços para seleção.
+Um Exportador pode usar um Transformador para transformar os dados exportados em um formato específico. Para Classificações de Adobe, uma subinterface `SAINTTransformer<String[]>` A implementação da interface do transformador foi fornecida. Essa interface é usada para restringir o tipo de dados a `String[]` que é usado pela API SAINT e para ter uma interface de marcador para encontrar esses serviços para seleção.
 
-Na implementação padrão SAINTDefaultTransformer, os recursos secundários da origem do exportador são tratados como registros com nomes de propriedade como chaves e valores de propriedade como valores. O **Chave** é adicionada automaticamente como primeira coluna - seu valor será o nome do nó. Propriedades namespaces (contendo `:`) não são tomadas em consideração.
+Na implementação padrão SAINTDefaultTransformer, os recursos secundários da origem do exportador são tratados como registros com nomes de propriedade como chaves e valores de propriedade como valores. A variável **Chave** A coluna é adicionada automaticamente como primeira coluna; seu valor será o nome do nó. Propriedades Namespace (contendo `:`) são ignorados.
 
 *Estrutura do nó:*
 
@@ -88,19 +88,19 @@ Na implementação padrão SAINTDefaultTransformer, os recursos secundários da 
 
    * 1 `nt:unstructured`
 
-      * Produto = Meu nome do produto (cadeia de caracteres)
+      * Produto = Meu nome de produto (String)
       * Preço = 120,90 (String)
-      * Size = M (String)
-      * Cor = preto (cadeia de caracteres)
-      * Cor^Código = 101 (Cadeia de Caracteres)
+      * Tamanho = M (String)
+      * Cor = preto (String)
+      * Cor^Código = 101 (Cadeia de caracteres)
 
 **Cabeçalho e registro de SAINT:**
 
 | **Chave** | **Produto** | **Preço** | **Tamanho** | **Cor** | **Cor^Código** |
 |---|---|---|---|---|---|
-| 1 | Meu nome de produto | 120.90 | M | black | 101 |
+| 1 | Nome do meu produto | 120.90 | M | black | 101 |
 
-As propriedades incluem:
+As propriedades incluem o seguinte:
 
 <table>
  <tbody>
@@ -110,7 +110,7 @@ As propriedades incluem:
   </tr>
   <tr>
    <td>transformador</td>
-   <td>Um nome de classe de uma implementação SAINTTransformer</td>
+   <td>Um nome de classe de uma implementação SAINTransformer</td>
   </tr>
   <tr>
    <td>email</td>
@@ -118,22 +118,22 @@ As propriedades incluem:
   </tr>
   <tr>
    <td>conjuntos de relatórios</td>
-   <td>IDs de conjunto de relatórios para executar o trabalho de importação. </td>
+   <td>IDs de conjunto de relatórios para os quais executar o trabalho de importação. </td>
   </tr>
   <tr>
    <td>conjunto de dados</td>
-   <td>ID da relação do conjunto de dados para executar o trabalho de importação. </td>
+   <td>ID da relação do conjunto de dados para a qual executar o trabalho de importação. </td>
   </tr>
   <tr>
    <td>descrição</td>
-   <td>Descrição da tarefa. <br /> </td>
+   <td>Descrição do trabalho. <br /> </td>
   </tr>
   <tr>
    <td>substituir</td>
    <td>Sinalizador para substituir colisões de dados. O padrão é <strong>false</strong>.</td>
   </tr>
   <tr>
-   <td>divisões de verificação</td>
+   <td>checkdivisions</td>
    <td>Sinalizador para verificar a compatibilidade dos conjuntos de relatórios. O padrão é <strong>true</strong>.</td>
   </tr>
   <tr>
@@ -143,6 +143,6 @@ As propriedades incluem:
  </tbody>
 </table>
 
-## Automatizando a exportação de classificações de Adobe {#automating-adobe-classifications-export}
+## Automatização da exportação de classificações do Adobe {#automating-adobe-classifications-export}
 
-Você pode criar seu próprio fluxo de trabalho, de modo que qualquer nova importação inicie o fluxo de trabalho para criar os dados apropriados e estruturados corretamente no **/var/export/** para que possa ser exportado para Classificações Adobe.
+Você pode criar seu próprio workflow, para que qualquer nova importação inicie o workflow para criar os dados apropriados e corretamente estruturados no **/var/export/** para que possa ser exportado para Classificações de Adobe.

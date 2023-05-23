@@ -1,7 +1,7 @@
 ---
-title: Noções básicas sobre componentes do Communities
+title: Noções básicas sobre componentes das comunidades
 seo-title: Communities Components Basics
-description: Adicionar recursos do Communities ao AEM sites no modo de edição e configurar componentes
+description: Adicionar recursos das Comunidades a sites AEM no modo de edição e configurar componentes
 seo-description: Add Communities features to AEM sites in edit mode and configure components
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
@@ -17,57 +17,57 @@ ht-degree: 2%
 
 ---
 
-# Noções básicas sobre componentes do Communities {#communities-components-basics}
+# Noções básicas sobre componentes das comunidades {#communities-components-basics}
 
 ## Visão geral {#overview}
 
-A seção de criação da documentação descreve como adicionar recursos do Communities aos sites AEM no modo de edição do autor, bem como descrever as configurações de componentes.
+A seção de criação da documentação descreve a adição de recursos das Comunidades ao sites AEM no modo de edição do autor, bem como a descrição das configurações de componentes.
 
-Os componentes podem ser explorados usando uma instância AEM e o [Guia de componentes da comunidade](components-guide.md).
+Componentes podem ser explorados usando uma instância AEM e o mecanismo de [Guia de componentes da comunidade](components-guide.md).
 
 ## Acesso aos componentes das comunidades {#accessing-communities-components}
 
-Ao criar o conteúdo da página, se o modelo subjacente permitir alterações no design da página, é possível habilitar componentes que ainda não estão disponíveis no navegador de componentes como parte do design do site.
+Ao criar conteúdo da página, se o modelo subjacente permitir alterações no design da página, será possível habilitar componentes que ainda não estejam disponíveis no navegador de componentes como parte do design do site.
 
-Os componentes disponíveis das Comunidades são listados [here](author-communities.md#available-communities-components).
+Os componentes das Comunidades disponíveis estão listados [aqui](author-communities.md#available-communities-components).
 
 >[!NOTE]
 >
->Para obter informações gerais sobre criação, visualize o [guia rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Para obter informações gerais sobre criação, consulte [guia rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se não estiver familiarizado com AEM, visualize a documentação em [tratamento básico](../../help/sites-authoring/basic-handling.md).
+>Se não estiver familiarizado com o AEM, consulte a documentação em [manuseio básico](../../help/sites-authoring/basic-handling.md).
 
 ### Entrando no modo de design {#entering-design-mode}
 
-Se uma **Comunidades** não for encontrado no navegador de componentes (sidekick), será necessário inserir `Design Mode` para adicionar outros componentes do Communities. [Bibliotecas obrigatórias do lado do cliente](#required-clientlibs) (clientlibs) também pode precisar ser adicionada.
+Se um **Communities** componente não é encontrado no navegador de componentes (sidekick), será necessário inserir `Design Mode` para adicionar outros componentes do Communities. [Bibliotecas obrigatórias do lado do cliente](#required-clientlibs) (clientlibs) também pode precisar ser adicionado.
 
 Para obter detalhes, consulte [Configuração de componentes no modo de design](../../help/sites-authoring/default-components-designmode.md).
 
-A seguir estão imagens de selecionar alguns componentes do Communities e exibi-los no navegador de componentes:
+A seguir estão imagens de como selecionar alguns componentes de Comunidades e visualizá-los no navegador de componentes:
 
-![design de componentes](assets/component-design.png)
+![design de componente](assets/component-design.png)
 
 Os componentes selecionados agora estão disponíveis no navegador de componentes:
 
 ![component-design1](assets/component-design1.png)
 
-## Clientlibs necessários {#required-clientlibs}
+## Clientlibs Necessárias {#required-clientlibs}
 
-[Bibliotecas do lado do cliente](../../help/sites-developing/clientlibs.md) (clientlibs) são necessários para o funcionamento correto (JavaScript) e o estilo (CSS) de um componente.
+[Bibliotecas do lado do cliente](../../help/sites-developing/clientlibs.md) (clientlibs) são necessários para o funcionamento adequado (JavaScript) e estilo (CSS) de um componente.
 
-Ao adicionar um componente Comunidades a uma página, se o resultado for um erro ou uma aparência inesperada, a primeira coisa a tentar é adicionar as clientlibs necessárias para o componente Comunidades. Para obter detalhes, consulte [Clientlibs para componentes do Communities](clientlibs.md).
+Ao adicionar um componente das Comunidades a uma página, se o resultado for um erro ou uma aparência inesperada, a primeira coisa a tentar é adicionar as clientlibs necessárias para o componente das Comunidades. Para obter detalhes, consulte [Clientlibs para componentes das comunidades](clientlibs.md).
 
-### Exemplo: Análises inicialmente colocadas sem bibliotecas de clientes... {#example-initially-placed-reviews-without-client-libraries}
+### Exemplo: revisões inicialmente colocadas sem bibliotecas de clientes... {#example-initially-placed-reviews-without-client-libraries}
 
 ![clientlibs1](assets/clientlibs1.png)
 
-### ... E com bibliotecas de clientes {#and-with-client-libraries}
+### .. E com bibliotecas de clientes {#and-with-client-libraries}
 
 ![clientlibs2](assets/clientlibs2.png)
 
 ## Marcação com tags {#tagging}
 
-Muitos recursos das Comunidades podem ser configurados para permitir que os membros marquem o conteúdo inserido (publicado) no ambiente de publicação.
+Muitos recursos do Communities podem ser configurados para permitir que os membros marquem o conteúdo inserido (publicado) no ambiente de publicação.
 
 Se a marcação for permitida, a configuração do site da comunidade poderá ser definida para limitar os namespaces apresentados aos membros no ambiente de publicação. Consulte a [Console de sites da comunidade](sites-console.md#tagging).
 
@@ -75,17 +75,17 @@ Recursos que permitem marcação: [blog](blog-feature.md), [calendário](calenda
 
 Recursos que usam tags: [pesquisa](search.md), [nuvem de tags sociais](tagcloud.md)
 
-Para obter informações de criação:
+Para obter informações sobre criação:
 
 * [Uso de tags](../../help/sites-authoring/tags.md)
 
-Para informações administrativas:
+Para obter informações administrativas:
 
-* Criação de namespaces de tags (taxonomia): [Administração de tags](../../help/sites-administering/tags.md)
-* Configuração do site da comunidade: see [MARCAÇÃO](sites-console.md#tagging)
-* [Marcação de conteúdo gerado pelo usuário](../../help/sites-authoring/tags.md)
+* Criação de namespaces de tag (taxonomia): [Administração de tags](../../help/sites-administering/tags.md)
+* Configuração do site da comunidade: consulte [MARCAÇÃO](sites-console.md#tagging)
+* [Marcação do conteúdo gerado pelo usuário](../../help/sites-authoring/tags.md)
 
-Para informações do desenvolvedor:
+Para obter informações do desenvolvedor:
 
 * [Estrutura de marcação do AEM](../../help/sites-developing/framework.md)
-* [Princípios básicos de marcação](tag.md)
+* [Fundamentos de marcação](tag.md)

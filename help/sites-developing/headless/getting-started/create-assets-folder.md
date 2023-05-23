@@ -1,5 +1,5 @@
 ---
-title: Criação de uma pasta de ativos sem cabeçalho Guia de início rápido
+title: Criação de uma pasta de ativos Guia de início rápido do Headless
 description: Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fragmentos de conteúdo, a base do seu conteúdo headless.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
 source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
@@ -9,7 +9,7 @@ ht-degree: 87%
 
 ---
 
-# Criação de uma pasta de ativos sem cabeçalho Guia de início rápido {#creating-an-assets-folder}
+# Criação de uma pasta de ativos Guia de início rápido do Headless {#creating-an-assets-folder}
 
 Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fragmentos de conteúdo, a base do seu conteúdo headless. Os fragmentos de conteúdo são armazenados nas pastas de ativos.
 
@@ -25,7 +25,7 @@ As pastas de ativos são usadas para [organizar ativos de conteúdo tradicionais
 
 Um administrador só precisaria criar pastas ocasionalmente para organizar o conteúdo, conforme ele fosse criado. Para os propósitos deste guia de introdução, precisamos criar apenas uma pasta.
 
-1. Faça logon em AEM e, no menu principal, selecione **Navegação -> Ativos -> Arquivos**.
+1. Faça logon no AEM e, no menu principal, selecione **Navegação -> Ativos -> Arquivos**.
 1. Toque ou clique em **Criar -> Pasta**. 
 1. Forneça um **Título** e um **Nome** para sua pasta.
    * O **Título** deve ser descritivo.
@@ -34,7 +34,7 @@ Um administrador só precisaria criar pastas ocasionalmente para organizar o con
       * Ele pode ser ajustado, se necessário.
 
    ![Criar pasta](assets/assets-folder-create.png)
-1. Selecione a pasta que acabou de criar e selecione **Propriedades** na barra de ferramentas (ou use o `p` [atalho do teclado.](/help/sites-authoring/keyboard-shortcuts.md))
+1. Selecione a pasta que acabou de criar e selecione **Propriedades** na barra de ferramentas (ou use o `p` [atalho de teclado.](/help/sites-authoring/keyboard-shortcuts.md))
 1. Na janela **Propriedades**, selecione a guia **Serviços em nuvem**.
 1. Para a **Configuração na nuvem**, selecione a [configuração criada anteriormente.](create-configuration.md)
 

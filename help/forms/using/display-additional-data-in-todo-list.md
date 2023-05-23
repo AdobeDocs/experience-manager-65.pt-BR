@@ -1,7 +1,7 @@
 ---
-title: Exibição de dados adicionais na lista de Tarefas
+title: Exibição de dados adicionais na lista de tarefas
 seo-title: Displaying additional data in ToDo list
-description: Como personalizar a exibição da lista de Tarefas do espaço de trabalho do LiveCycle AEM Forms para mostrar mais informações além do padrão.
+description: Como personalizar a exibição da lista de tarefas do espaço de trabalho do LiveCycle AEM Forms para mostrar mais informações além do padrão.
 seo-description: How-to customize the display of the To-do list of LiveCycle AEM Forms workspace to show more information besides the default.
 uuid: 9467c655-dce2-43ce-8e8f-54542fe81279
 content-type: reference
@@ -17,24 +17,24 @@ ht-degree: 1%
 
 ---
 
-# Exibição de dados adicionais na lista de Tarefas{#displaying-additional-data-in-todo-list}
+# Exibição de dados adicionais na lista de tarefas{#displaying-additional-data-in-todo-list}
 
-Por padrão, a lista de Tarefas a fazer do espaço de trabalho do AEM Forms exibe o nome de exibição e a descrição da tarefa. No entanto, é possível adicionar outras informações, como data de criação e data do prazo. Você também pode adicionar ícones e alterar o estilo da exibição.
+Por padrão, a lista de tarefas pendentes do espaço de trabalho do AEM Forms exibe o nome de exibição e a descrição da tarefa. No entanto, é possível adicionar outras informações, como data de criação e data do prazo final. Você também pode adicionar ícones e alterar o estilo da exibição.
 
-![Uma análise da guia HTML Workspace To-do mostrando a configuração padrão](assets/html-todo-list.png)
+![Uma olhada na guia Tarefas pendentes do HTML Workspace mostrando a configuração padrão](assets/html-todo-list.png)
 
-Este artigo detalha as etapas para adicionar informações para cada tarefa na lista de Tarefas.
+Este artigo detalha as etapas para adicionar informações para exibir para cada tarefa na Lista de tarefas pendentes.
 
 ## O que pode ser adicionado {#what-can-be-added}
 
-Você pode adicionar as informações disponíveis em `task.json` enviado pelo servidor. As informações podem ser adicionadas como texto sem formatação ou você pode usar estilos para formatar as informações.
+É possível adicionar as informações disponíveis em `task.json` enviado pelo servidor. As informações podem ser adicionadas como texto simples ou você pode usar estilos para formatar as informações.
 
-Para obter mais informações sobre a descrição do objeto JSON, consulte [this](/help/forms/using/html-workspace-json-object-description.md) artigo 10. o
+Para obter mais informações sobre a descrição do Objeto JSON, consulte [este](/help/forms/using/html-workspace-json-object-description.md) artigo.
 
 ## Exibição de informações em uma tarefa {#displaying-information-on-a-task}
 
 1. Siga as [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
-1. Para exibir informações adicionais para uma tarefa, os pares de valores chave correspondentes devem ser adicionados no bloco de tarefas de `translation.json`.
+1. Para exibir informações adicionais de uma tarefa, os pares de valor-chave correspondentes devem ser adicionados dentro do bloco de tarefas de `translation.json`.
 
    Por exemplo, alterar `/apps/ws/locales/en-US/translation.json` Inglês:
 
@@ -123,7 +123,7 @@ Para obter mais informações sobre a descrição do objeto JSON, consulte [this
 
 ## Definição de CSS para a nova propriedade {#defining-css-for-the-new-property}
 
-1. É possível aplicar estilo às informações (propriedade) adicionadas a uma tarefa. Para fazer isso, é necessário adicionar informações de estilo para a nova propriedade adicionada a `/apps/ws/css/newStyle.css`.
+1. Você pode aplicar estilo às informações (propriedade) adicionadas a uma tarefa. Para fazer isso, você precisa adicionar informações de estilo para a nova propriedade adicionada a `/apps/ws/css/newStyle.css`.
 
    Por exemplo, adicione:
 
@@ -135,18 +135,18 @@ Para obter mais informações sobre a descrição do objeto JSON, consulte [this
    }
    ```
 
-## Adicionando entrada no modelo HTML {#adding-entry-in-the-html-template}
+## Adição de entrada no Modelo HTML {#adding-entry-in-the-html-template}
 
-Por fim, é necessário incluir uma entrada no pacote dev para cada propriedade que você deseja adicionar à tarefa. Para criar uma, consulte Criação do código do espaço de trabalho AEM Forms .
+Finalmente, é necessário incluir uma entrada no pacote dev para cada propriedade que você deseja adicionar à tarefa. Para criar uma consulte Criação de código do espaço de trabalho do AEM Forms.
 
 1. Copiar `task.html`:
 
    * de: `/libs/ws/js/runtime/templates/`
    * para: `/apps/ws/js/runtime/templates/`
 
-1. Adicione as novas informações em `/apps/ws/js/runtime/templates/task.html`.
+1. Adicionar as novas informações a `/apps/ws/js/runtime/templates/task.html`.
 
-   Por exemplo, adicione em `div class="taskProperties"`:
+   Por exemplo, adicionar em `div class="taskProperties"`:
 
    ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>

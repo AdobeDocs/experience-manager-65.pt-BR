@@ -1,6 +1,6 @@
 ---
 title: Variações - Criação dos fragmentos de conteúdo
-description: Entenda como as variações podem tornar o conteúdo sem interface AEM ainda mais flexível, permitindo que você crie conteúdo para o fragmento e, em seguida, crie variações desse conteúdo de acordo com a finalidade.
+description: Entenda como as variações podem tornar o conteúdo headless no AEM ainda mais flexível, permitindo criar conteúdo para o fragmento e, em seguida, criar variações desse conteúdo de acordo com a finalidade.
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
@@ -13,7 +13,7 @@ ht-degree: 87%
 
 # Variações - Criação dos fragmentos de conteúdo{#variations-authoring-fragment-content}
 
-[Variações](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) são um recurso importante de fragmentos de conteúdo AEM, pois permitem criar e editar cópias do conteúdo principal para uso em canais e/ou cenários específicos, tornando a entrega de conteúdo sem cabeçalho ainda mais flexível.
+[Variações](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) são um recurso importante dos fragmentos de conteúdo do AEM, pois permitem criar e editar cópias do conteúdo principal para uso em canais e/ou cenários específicos, tornando a entrega de conteúdo headless ainda mais flexível.
 
 Na guia **Variações**, é possível:
 
@@ -48,7 +48,7 @@ Por exemplo:
 
 É possível:
 
-* Faça edições no seu conteúdo diretamente no **Variações** Guia; cada tipo de dados fornece opções de edição diferentes, por exemplo:
+* Faça edições no seu conteúdo diretamente no **Variações** ; cada tipo de dados fornece opções de edição diferentes, por exemplo:
 
    * para campos de **Texto multilinha**, também é possível abrir o [editor de tela cheia](#full-screen-editor) para:
 
@@ -62,13 +62,13 @@ Por exemplo:
 
    * As [Tags](/help/sites-authoring/tags.md) são particularmente eficientes ao organizar os fragmentos, pois podem ser usadas para a classificação de conteúdo e taxonomia. As tags podem ser usadas para encontrar conteúdo (por tags) e aplicar operações em massa.
 
-      * As pesquisas por uma tag retornarão o fragmento, com a variação marcada realçada.
-      * Tags de variação também podem ser usadas para agrupar variações de um perfil específico da Rede de entrega de conteúdo (CDN) (para armazenamento em cache CDN), em vez de usar o nome da variação.
+      * As pesquisas por uma tag retornarão o fragmento, com a variação marcada destacada.
+      * As tags de variação também podem ser usadas para agrupar variações de um perfil específico da Rede de entrega de conteúdo (CDN) (para armazenamento em cache de CDN), em vez de usar o nome da variação.
 
-      Por exemplo, você pode marcar fragmentos relevantes como &quot;lançamento de Natal&quot; para permitir a navegação somente nesses como um subconjunto ou copiá-los para uso com outro lançamento futuro em uma nova pasta.
+      Por exemplo, você pode marcar fragmentos relevantes como &quot;lançamento de Natal&quot; para permitir a navegação somente entre eles como um subconjunto ou copiá-los para uso com outro lançamento futuro em uma nova pasta.
    >[!NOTE]
    >
-   >**Tags** também pode ser adicionado (para a função **Principal** como parte da [Metadados](/help/assets/content-fragments/content-fragments-metadata.md)
+   >**Tags** também podem ser adicionados (à lista **Principal** variação) como parte da [Metadados](/help/assets/content-fragments/content-fragments-metadata.md)
 
 * [Criar e gerenciar variações](#managing-variations) do conteúdo **Principal.**
 
@@ -179,7 +179,7 @@ Se o Modelo do fragmento de conteúdo contiver Referências de fragmento, os aut
 
 #### Editar fragmento de conteúdo {#fragment-references-edit-content-fragment}
 
-A opção **Editar fragmento do conteúdo** abrirá esse fragmento em uma nova guia de janela.
+A opção **Editar fragmento de conteúdo** abrirá esse fragmento em uma nova guia da janela.
 
 <!--
 The option **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
@@ -403,7 +403,7 @@ Para criar uma nova variação:
    Ao criar uma nova variação, é sempre o **Principal** que é copiado, não a variação que está aberta no momento.
 
    >[!NOTE]
-   Ao criar uma nova variação, todas as variáveis **Tags** atualmente atribuído ao **Principal** são copiadas para sua nova variação.
+   Ao criar uma nova variação, todas as **Tags** atualmente atribuído à **Principal** são copiadas para a nova variação.
 
 ### Editar uma variação {#editing-a-variation}
 
@@ -451,7 +451,7 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 >[!CAUTION]
 A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
 Somente o elemento atual da variação será sincronizado.
-A sincronização só funciona na variável **Texto de várias linhas** tipo de dados.
+A sincronização só funciona no **Texto multilinha** tipo de dados.
 A transferência de alterações *de uma variação para o **Principal*** não está disponível como uma opção.
 
 <!-- needs new screenshot for synchronize effect -->
@@ -476,4 +476,4 @@ A transferência de alterações *de uma variação para o **Principal*** não e
 
    ![sincronização com o Principal](assets/cfm-variations-11c.png)
 
-1. Selecionar **Sincronizar**, a variação será atualizada e exibida.
+1. Selecionar **Sincronizar**, a variação será atualizada e mostrada.

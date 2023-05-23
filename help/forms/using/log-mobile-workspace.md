@@ -1,5 +1,5 @@
 ---
-title: Fazer logon no aplicativo AEM Forms
+title: Logon no aplicativo AEM Forms
 seo-title: Logging in to AEM Forms app
 description: Etapas para fazer logon no aplicativo AEM Forms.
 seo-description: Steps to log into the AEM Forms app.
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ---
 
-# Fazer logon no aplicativo AEM Forms{#logging-in-to-aem-forms-app}
+# Logon no aplicativo AEM Forms{#logging-in-to-aem-forms-app}
 
-Ao iniciar o aplicativo AEM Forms, primeiro é necessário fornecer suas credenciais de logon e um URL do servidor do AEM Forms.
+Ao iniciar o aplicativo AEM Forms, primeiro é necessário fornecer suas credenciais de logon e um URL de servidor do AEM Forms.
 
 ## Para iniciar o aplicativo {#to-start-the-app}
 
@@ -28,13 +28,13 @@ Ao iniciar o aplicativo AEM Forms, primeiro é necessário fornecer suas credenc
 
    >[!NOTE]
    >
-   >O aplicativo móvel armazena em cache todos os URLs do servidor do AEM Forms inseridos.
+   >O aplicativo móvel armazena em cache todos os URLs do servidor do AEM Forms que você insere.
    >
-   >    * Para exibir a lista de URLs de servidor, clique na seta da lista no canto direito da caixa de texto URL do servidor .
-   >    * Você pode selecionar um URL de servidor do AEM Forms para fazer logon por meio do aplicativo.
+   >    * Para exibir a lista de URLs do servidor, clique na seta da lista no canto direito da caixa de texto URL do servidor.
+   >    * Você pode selecionar um URL de servidor do AEM Forms para fazer logon no por meio do aplicativo.
 
 
-Ao fazer logon no aplicativo, você é direcionado para a função [**Início** tela](../../forms/using/home-screen.md).
+Ao fazer logon no aplicativo, você é direcionado para a [**Início** tela](../../forms/using/home-screen.md).
 
 >[!NOTE]
 >

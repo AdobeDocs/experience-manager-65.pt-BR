@@ -1,7 +1,7 @@
 ---
 title: ClientContext
 seo-title: Client Context
-description: Saiba como usar o Contexto do Cliente no AEM.
+description: Saiba como usar o Client Context no AEM.
 seo-description: Learn how to use the Client Context in AEM.
 uuid: 82b2f976-cb41-42f8-ad4b-3a5cd23cc5f5
 contentOwner: msm-service
@@ -22,123 +22,123 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->O Contexto do Cliente foi substituído pelo ContextHub. Para obter mais detalhes, consulte os [configuração](/help/sites-developing/ch-configuring.md) e [desenvolvedor](/help/sites-developing/contexthub.md) documentação.
+>O Client Context foi substituído pelo ContextHub. Para obter mais detalhes, consulte a seção [configuração](/help/sites-developing/ch-configuring.md) e [desenvolvedor](/help/sites-developing/contexthub.md) documentação.
 
-O Contexto do Cliente é um mecanismo que fornece determinadas informações sobre a página atual e o visitante. Ele pode ser aberto usando **Ctrl-Alt-c** (janelas) ou **control-option-c** (Mac):
+O Contexto do cliente é um mecanismo que fornece determinadas informações sobre a página atual e o visitante. Pode ser aberto usando **Ctrl-Alt-c** (janelas) ou **control-option-c** (Mac)
 
 ![](assets/clientcontext_alisonparker.png)
 
-Em ambas as [ambiente de publicação e criação, ele mostra informações](#propertiesavailableintheclientcontext) sobre:
+Em ambos os [ambiente de publicação e criação, ele mostra informações](#propertiesavailableintheclientcontext) sobre:
 
-* O visitante; dependendo da sua instância, determinadas informações são solicitadas ou derivadas.
-* Tags de página e o número de vezes que essas tags foram acessadas pelo visitante atual (isso é mostrado quando você move o mouse sobre uma tag específica).
+* O visitante; dependendo da sua instância, certas informações são solicitadas ou derivadas.
+* Tags de página e o número de vezes que essas tags foram acessadas pelo visitante atual (isso é mostrado quando você move o mouse sobre uma tag específica) .
 * Informações da página.
-* Informações sobre o ambiente técnico; como endereço IP, navegador e resolução de tela.
-* Qualquer segmento que esteja resolvido no momento.
+* Informações sobre o ambiente técnico, como endereço IP, navegador e resolução de tela.
+* Quaisquer segmentos que estão atualmente resolvidos.
 
-Os ícones (disponíveis apenas no ambiente do autor) permitem configurar os detalhes do contexto do cliente:
+Os ícones (disponíveis apenas no ambiente de criação) permitem configurar os detalhes do contexto do cliente:
 
 ![](do-not-localize/clientcontext_icons.png)
 
 * **Editar**
-Uma nova página será aberta permitindo que você [editar, adicionar ou remover uma propriedade do perfil](#editingprofiledetails).
+Uma nova página será aberta, permitindo que você [editar, adicionar ou remover uma propriedade de perfil](#editingprofiledetails).
 
 * **Carregar**
-Você pode [selecione de uma lista de perfis e carregue o perfil](#loading-a-new-user-profile) você quer testar.
+Você pode [selecione em uma lista de perfis e carregue o perfil](#loading-a-new-user-profile) você quer testar.
 
 * **Redefinir**
 Você pode [redefinir o perfil](#resetting-the-profile-to-the-current-user) ao do usuário atual.
 
-## Componentes de contexto de cliente disponíveis {#available-client-context-components}
+## Componentes disponíveis do Client Context {#available-client-context-components}
 
-O Contexto do Cliente pode mostrar as seguintes propriedades ([dependendo do que foi selecionado usando Editar](#adding-a-property-component)):
+O Client Context pode mostrar as seguintes propriedades ([dependendo do que foi selecionado com a opção Editar](#adding-a-property-component)):
 
-**Informações de surfer** Mostra as seguintes informações do lado do cliente:
+**Informação do Surfer** Mostra as seguintes informações do lado do cliente:
 
 * o **Endereço IP**
-* **palavras-chave** usado para referência do mecanismo de pesquisa
+* **palavras-chave** usado para referência de mecanismo de pesquisa
 * o **navegador** em uso
 * o **SO** (sistema operacional) em uso
 * a tela **resolution**
 * o **mouse X** position
 * o **mouse Y** position
 
-**Fluxo de atividade** Isso fornece informações sobre a atividade social do usuário em várias plataformas; por exemplo, os fóruns de AEM, blogs, classificações etc.
+**Fluxo de atividades** Isso fornece informações sobre a atividade social do usuário em várias plataformas; por exemplo, os fóruns AEM, blogs, classificações, etc.
 
-**Campanha** Permite que os autores simulem uma experiência específica para uma campanha. Esse componente substitui a resolução normal da campanha e a seleção da experiência para permitir o teste de várias permutas.
+**Campaign** Permite que os autores simulem uma experiência específica para uma campanha. Esse componente substitui a resolução normal da campanha e a seleção de experiência para permitir o teste de várias permutações.
 
-A resolução da campanha é normalmente baseada na propriedade priority da campanha. A experiência é normalmente selecionada com base na segmentação.
+A resolução da campanha normalmente é baseada na propriedade priority da campanha. Normalmente, a experiência é selecionada com base na segmentação.
 
-**Carrinho** Mostra informações do carrinho de compras, incluindo entradas do produto (título, quantidade, preço Formatado etc.), promoções resolvidas (título, mensagem etc.) e vales (código, descrição, etc.).
+**Carrinho** Mostra informações do carrinho de compras, incluindo entradas de produto (título, quantidade, priceFormatted etc.), promoções resolvidas (título, mensagem etc.) e vouchers (código, descrição, etc.).
 
-O armazenamento de sessão de carrinho também notifica o servidor sobre alterações de promoção resolvidas (com base em alterações de segmentação) usando o ClientContextCartServlet.
+O armazenamento de sessão do carrinho também notifica o servidor sobre alterações promocionais resolvidas (com base em alterações de segmentação) usando o ClientContextCartServlet.
 
-**Loja genérica** É um componente genérico que exibe o conteúdo de uma loja. É uma versão de nível inferior do componente Propriedades da loja genérica .
+**Loja genérica** É um componente genérico que exibe o conteúdo de um armazenamento. É uma versão de nível inferior do componente Propriedades de armazenamento genérico.
 
-A Loja genérica deve ser configurada com um renderizador JS que exibirá os dados de maneira personalizada.
+O armazenamento genérico deve ser configurado com um renderizador JS que exibirá os dados de maneira personalizada.
 
-**Propriedades da Loja Genérica** É um componente genérico que exibe o conteúdo de uma loja. É uma versão de nível superior do componente de Loja Genérica.
+**Propriedades de armazenamento genérico** É um componente genérico que exibe o conteúdo de um armazenamento. É uma versão de nível superior do componente de Loja genérica.
 
-O componente Propriedades da loja genérica inclui um renderizador padrão que lista as propriedades configuradas (junto com uma miniatura).
+O componente Propriedades de armazenamento genérico inclui um renderizador padrão que lista as propriedades configuradas (junto com uma miniatura).
 
-**Geolocalização** Mostra a latitude e a longitude do cliente. Ela usa a API de geolocalização do HTML5 para consultar o navegador quanto ao local atual. Isso resulta na exibição de um pop-up ao visitante, onde o navegador pergunta se ele concorda em compartilhar sua localização.
+**Localização geográfica** Mostra a latitude e a longitude do cliente. Ele usa a API de geolocalização do HTML5 para consultar o navegador quanto à localização atual. Isso resulta na exibição de um pop-up para o visitante, onde o navegador pergunta se ele concorda em compartilhar sua localização.
 
-Quando exibido na Nuvem de contexto, o componente usa uma API do Google para exibir um mapa como miniatura. O componente está sujeito à API do Google [limites de uso](https://developers.google.com/maps/documentation/staticmaps/intro#Limits).
-
->[!NOTE]
->
->No AEM 6.1, o armazenamento Geolocation não fornece mais o recurso de geocodificação reversa. Portanto, o armazenamento de Geolocalização não recupera mais detalhes sobre a localização atual, como o nome da cidade ou o código do país. Os segmentos que usam esses dados de armazenamento não funcionarão corretamente. O armazenamento Geolocation contém apenas a latitude e a longitude de um local.
-
-**Loja JSONP** Um componente que exibe conteúdo que depende de sua instalação.
-
-O padrão JSONP é um complemento do JSON que permite contornar a mesma política de origem (impossibilitando que um aplicativo da Web se comunique com servidores que estão em outro domínio). Consiste em vincular o objeto JSON em uma chamada de função para poder carregá-lo como um `<script>` do outro domínio (que é uma exceção permitida para a mesma política de origem).
-
-A Loja JSONP é como qualquer outra loja, mas carrega informações que vêm de outro domínio sem a necessidade de ter um proxy para essas informações no domínio atual. Veja o exemplo em [Armazenamento de dados no contexto do cliente via JSONP](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
+Quando exibido na Context Cloud, o componente usa uma API do Google para exibir um mapa como miniatura. O componente está sujeito à API do Google [limites de uso](https://developers.google.com/maps/documentation/staticmaps/intro#Limits).
 
 >[!NOTE]
 >
->A Loja JSONP não armazena as informações em cache no cookie, mas recupera esses dados em cada carregamento de página.
+>No AEM 6.1, a loja de geolocalização não fornece mais o recurso de geocodificação reversa. Portanto, a loja de Geolocalização não recupera mais detalhes sobre a localização atual, como o nome da cidade ou o código do país. Os segmentos que usam esses dados de armazenamento não funcionarão corretamente. O armazenamento de Geolocalização contém apenas a latitude e a longitude de um local.
 
-**Dados do perfil** Mostra as informações coletadas no perfil do usuário. Por exemplo, gênero, idade, endereço de email, entre outros.
+**Armazenamento JSONP** Um componente que exibe o conteúdo que é dependente da sua instalação.
 
-**Segmentos resolvidos** Mostra quais segmentos atualmente são resolvidos (geralmente dependendo de outras informações mostradas no contexto do cliente). Isso é de interesse ao configurar uma campanha.
+O padrão JSONP é um complemento do JSON que permite contornar a mesma política de origem (impossibilitando que um aplicativo da Web se comunique com servidores que estão em outro domínio). Consiste em envolver o objeto JSON em uma chamada de função para poder carregá-lo como um `<script>` do outro domínio (que é uma exceção permitida para a mesma política de origem).
 
-Por exemplo, se o mouse está atualmente sobre a parte esquerda ou direita da janela. Esse segmento é usado principalmente para testes, pois as alterações podem ser vistas imediatamente.
+O JSONP Store é como qualquer outro armazenamento, mas carrega informações que vêm de outro domínio sem a necessidade de ter um proxy para essas informações no domínio atual. Veja o exemplo em [Armazenamento de dados no contexto do cliente por meio do JSONP](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
+
+>[!NOTE]
+>
+>O JSONP Store não armazena as informações em cache no cookie, mas recupera esses dados em cada carregamento de página.
+
+**Dados do perfil** Mostra informações coletadas no perfil do usuário. Por exemplo, sexo, idade, endereço de email, entre outros.
+
+**Segmentos resolvidos** Mostra quais segmentos são resolvidos no momento (geralmente depende de outras informações mostradas no contexto do cliente). Isso é interessante ao configurar uma campanha.
+
+Por exemplo, se o mouse estiver sobre a parte esquerda ou direita da janela. Esse segmento é usado principalmente para testes, pois as alterações podem ser vistas imediatamente.
 
 **Gráfico social** Mostra o gráfico social dos amigos e seguidores do usuário.
 
 >[!NOTE]
 >
->Atualmente, esse é um recurso de demonstração que depende de dados pré-configurados definidos nos nós de perfil dos nossos usuários de demonstração. Por exemplo, consulte:
+>Atualmente, este é um recurso de demonstração que depende do conjunto de dados pré-configurado nos nós de perfil de nossos usuários de demonstração. Por exemplo, consulte:
 >
 >`/home/users/geometrixx/aparker@geometrixx.info/profile` => propriedade friends
 
-**Nuvem de tags** Mostra tags definidas na página atual e as obtidas durante a navegação no site. Mover o mouse sobre uma tag mostra o número de vezes que o usuário atual acessou páginas que contêm essa tag específica.
+**Nuvem de tags** Mostra as tags definidas na página atual e as obtidas durante a navegação no site. Mover o mouse sobre uma tag mostra o número de vezes que o usuário atual acessou páginas que contêm essa tag específica.
 
 >[!NOTE]
-As tags definidas em ativos DAM exibidos nas páginas visitadas não serão contadas.
+As tags definidas nos ativos DAM exibidos nas páginas visitadas não serão contadas.
 
-**Armazenamento de recursos técnicos** Esse componente depende da sua instalação.
+**Loja Technographics** Esse componente depende da sua instalação.
 
-**Produtos visualizados** Mantém o controle dos produtos que o comprador visualizou. Pode ser consultado para o produto visualizado mais recentemente ou para o produto visualizado mais recentemente, que ainda não está no carrinho.
+**Produtos visualizados** Rastreia os produtos que o comprador visualizou. Pode ser consultado sobre o produto visualizado mais recentemente ou sobre o produto visualizado mais recentemente que ainda não está no carrinho.
 
-Este armazenamento de sessão não tem nenhum componente de contexto de cliente padrão.
+Este repositório de sessão não tem um componente de contexto de cliente padrão.
 
-Para obter mais informações, consulte [Contexto do cliente em detalhes](/help/sites-developing/client-context.md).
+Para obter informações adicionais, consulte [Contexto do cliente em detalhes](/help/sites-developing/client-context.md).
 
 >[!NOTE]
-Os dados da página não estão mais no contexto do cliente como um componente padrão. Se necessário, é possível adicionar isso editando o contexto do cliente, adicionando a variável **Propriedades da Loja Genérica** , em seguida, configure-o para definir a variável **Loja** as `pagedata`.
+Os dados de página não estão mais no contexto do cliente como um componente padrão. Se necessário, você pode adicionar isso editando o contexto do cliente, adicionando o **Propriedades de armazenamento genérico** e, em seguida, configurar para definir a variável **Loja** as `pagedata`.
 
-## Alteração do perfil de contexto do cliente {#changing-the-client-context-profile}
+## Alterar o perfil do Client Context {#changing-the-client-context-profile}
 
-O Contexto do Cliente permite que você altere os detalhes interativamente:
+O Client Context permite alterar interativamente os detalhes:
 
-* Alterar o perfil que está sendo usado no Contexto do Cliente permite que você veja as diferentes experiências que vários usuários verão para a página atual.
-* Além de alterar o perfil do usuário, você pode alterar alguns detalhes do perfil para ver como a experiência da página difere sob várias condições.
+* Alterar o perfil que está sendo usado no Contexto do cliente permite ver as diferentes experiências que os vários usuários verão na página atual.
+* Além de alterar o perfil do usuário, você pode alterar alguns detalhes do perfil para ver como a experiência da página difere em várias condições.
 
-### Carregar um novo perfil de usuário {#loading-a-new-user-profile}
+### Carregando um novo perfil de usuário {#loading-a-new-user-profile}
 
-Você pode alterar o perfil ao:
+É possível alterar o perfil ao:
 
 * [usando o ícone carregar](#loading-a-new-visitor-profile-with-the-load-profile-icon)
 * [usando o controle deslizante de seleção](#loadinganewvisitorprofilewiththeselectionslider)
@@ -147,19 +147,19 @@ Quando terminar, você poderá [redefinir o perfil](#resetting-the-profile-to-th
 
 #### Carregamento de um novo perfil de visitante com o ícone Carregar perfil {#loading-a-new-visitor-profile-with-the-load-profile-icon}
 
-1. Clique no ícone Carregar perfil :
+1. Clique no ícone Carregar perfil:
 
    ![](do-not-localize/clientcontext_loadprofile.png)
 
-1. Isso abrirá a caixa de diálogo , onde você pode selecionar o perfil que deseja carregar:
+1. Isso abrirá a caixa de diálogo, onde é possível selecionar o perfil que deseja carregar:
 
    ![](assets/clientcontext_profileloader.png)
 
 1. Clique em **OK** para carregar.
 
-#### Carregamento de um novo perfil de usuário com o controle deslizante de seleção {#loading-a-new-user-profile-with-the-selection-slider}
+#### Carregando um Novo Perfil de Usuário com o Controle Deslizante de Seleção {#loading-a-new-user-profile-with-the-selection-slider}
 
-Você também pode selecionar um perfil com o controle deslizante de seleção:
+Também é possível selecionar um perfil com o controle deslizante de seleção:
 
 1. Clique duas vezes no ícone que representa o usuário atual. O seletor será aberto, use as setas para navegar e ver os perfis disponíveis:
 
@@ -169,71 +169,71 @@ Você também pode selecionar um perfil com o controle deslizante de seleção:
 
 #### Redefinir o perfil para o usuário atual {#resetting-the-profile-to-the-current-user}
 
-1. Use o ícone de redefinição para retornar o perfil no Contexto do Cliente para o do usuário atual:
+1. Use o ícone de redefinição para retornar o perfil no Contexto do cliente para o do usuário atual:
 
    ![](do-not-localize/clientcontext_resetprofile.png)
 
-### Alteração da plataforma do navegador {#changing-the-browser-platform}
+### Alterar a plataforma do navegador {#changing-the-browser-platform}
 
 1. Clique duas vezes no ícone que representa a plataforma do navegador. O seletor será aberto, use as setas para navegar e ver as plataformas/navegadores disponíveis:
 
    ![](assets/clientcontext_browserplatform.png)
 
-1. Clique no navegador da plataforma que você deseja carregar. Quando os detalhes tiverem sido carregados, clique fora do seletor para fechar.
+1. Clique no navegador da plataforma que deseja carregar. Quando os detalhes tiverem sido carregados, clique fora do seletor para fechar.
 
-### Alterar a localização geográfica {#changing-the-geolocation}
+### Alterar a geolocalização {#changing-the-geolocation}
 
-1. Clique duas vezes no ícone de geolocalização. Um mapa expandido será aberto, aqui você pode arrastar o marcador para um novo local:
+1. Clique duas vezes no ícone de localização geográfica. Um mapa expandido será aberto, onde você pode arrastar o marcador para um novo local:
 
    ![](assets/clientcontext_geomocationrelocate.png)
 
 1. Clique fora do mapa para fechar.
 
-### Alterar a seleção de tag {#changing-the-tag-selection}
+### Alteração da seleção de tags {#changing-the-tag-selection}
 
-1. Clique duas vezes na seção Nuvem de tags do Contexto do Cliente. A caixa de diálogo será aberta, aqui você pode selecionar tags:
+1. Clique duas vezes na seção Nuvem de tags do Contexto do cliente. A caixa de diálogo será aberta, onde é possível selecionar tags:
 
    ![](assets/clientcontext_tagselection.png)
 
-1. Clique em OK para carregar no Contexto do Cliente.
+1. Clique em OK para carregar no Client Context.
 
-## Editar o contexto do cliente {#editing-the-client-context}
+## Editar o Client Context {#editing-the-client-context}
 
-A edição de um contexto de cliente pode ser usada para definir (ou redefinir) os valores de determinadas propriedades, adicionar uma nova propriedade ou remover uma que não seja mais necessária.
+A edição de um contexto de cliente pode ser usada para definir (ou redefinir) os valores de determinadas propriedades, adicionar uma nova propriedade ou remover uma que não é mais necessária.
 
 ### Editar detalhes da propriedade {#editing-property-details}
 
-A edição de um contexto de cliente pode ser usada para definir (ou redefinir) os valores de determinadas propriedades. Isso permite testar cenários específicos (especialmente úteis para [segmentação](/help/sites-administering/campaign-segmentation.md) e [campanhas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
+A edição de um contexto de cliente pode ser usada para definir (ou redefinir) os valores de determinadas propriedades. Isso permite testar cenários específicos (particularmente úteis para [segmentação](/help/sites-administering/campaign-segmentation.md) e [campanhas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
 
 ![](assets/clientcontext_alisonparker_edit.png)
 
-### Adicionar um componente de propriedade {#adding-a-property-component}
+### Adição de um componente de propriedade {#adding-a-property-component}
 
-Após ter aberto o **Página de design do ClientContext**, você também pode **Adicionar** uma propriedade completamente nova usando os componentes disponíveis (os componentes são listados no sidekick ou do **Inserir novo componente** que é aberta depois de um clique duplo na **Arraste componentes ou ativos aqui** caixa):
+Depois de abrir o **página de design do ClientContext**, você também pode **Adicionar** uma propriedade completamente nova usando os componentes disponíveis (os componentes estão listados no sidekick ou no **Inserir novo componente** que é aberta depois de clicar duas vezes na variável **Arraste componentes ou ativos para cá** caixa):
 
 ![](assets/clientcontext_alisonparker_new.png)
 
-### Remover um componente de propriedade {#removing-a-property-component}
+### Remoção de um componente de propriedade {#removing-a-property-component}
 
-Após ter aberto o **Página de design do ClientContext**, você também pode **Remover** uma propriedade, se não for mais necessária. Inclui propriedades fornecidas prontas para uso; **Redefinir** O reinstalará se tiverem sido removidas.
+Depois de abrir o **página de design do ClientContext**, você também pode **Remover** uma propriedade se não for mais necessária. Isso inclui propriedades fornecidas prontas para uso; **Redefinir** O os restabelecerá se tiverem sido removidos.
 
-## Armazenamento de dados no contexto do cliente via JSONP {#storing-data-in-client-context-via-jsonp}
+## Armazenamento de dados no contexto do cliente por meio do JSONP {#storing-data-in-client-context-via-jsonp}
 
-Siga este exemplo para usar o componente de armazenamento de contexto da Loja JSONP para adicionar dados externos ao Contexto do Cliente. Em seguida, crie um segmento com base nas informações desses dados. O exemplo usa o serviço JSONP fornecido por WIPmania.com. O serviço retorna informações de localização geográfica com base no endereço IP do cliente Web.
+Siga este exemplo para usar o componente de armazenamento de contexto do JSONP Store para adicionar dados externos ao Client Context. Em seguida, crie um segmento com base nas informações desses dados. O exemplo usa o serviço JSONP fornecido pelo WIPmania.com. O serviço retorna informações de geolocalização com base no endereço IP do cliente Web.
 
-Esse exemplo usa o site de amostra do Geometrixx Outdoors para acessar o Contexto do Cliente e testar o segmento criado. Você pode usar um site diferente, desde que a página tenha ativado o Contexto do Cliente. (Consulte [Adicionar contexto do cliente a uma página](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
+Este exemplo usa o site de amostra do Geometrixx Outdoors para acessar o Contexto do cliente e testar o segmento criado. Você pode usar um site diferente se a página tiver ativado o Contexto do cliente. (Consulte [Adicionar o Client Context a uma página](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
 
-### Adicionar o componente da loja JSONP {#add-the-jsonp-store-component}
+### Adicionar o componente de armazenamento JSONP {#add-the-jsonp-store-component}
 
-Adicione o componente Loja JSONP ao Contexto do Cliente e use-o para recuperar e armazenar informações de geolocalização sobre o cliente da Web.
+Adicione o componente JSONP Store ao Client Context e use-o para recuperar e armazenar informações de geolocalização sobre o cliente Web.
 
-1. Abra a página inicial em inglês do site Geometrixx Outdoors na instância do autor do AEM. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
-1. Para abrir o Contexto do Cliente, pressione Ctrl-Alt-c (windows) ou control-option-c (Mac).
-1. Clique no ícone de edição na parte superior do Contexto do Cliente para abrir o Designer de Contexto do Cliente.
+1. Abra a página inicial em inglês do site Geometrixx Outdoors na instância do autor AEM. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Para abrir o Client Context, pressione Ctrl-Alt-c (windows) ou control-option-c (Mac).
+1. Clique no ícone de edição na parte superior do Client Context para abrir o Client Context Designer.
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Arraste o componente Loja JSONP para o Contexto do Cliente.
+1. Arraste o componente de Armazenamento JSONP para o Contexto do cliente.
 
    ![](assets/chlimage_1-4.jpeg)
 
@@ -242,42 +242,42 @@ Adicione o componente Loja JSONP ao Contexto do Cliente e use-o para recuperar e
 
    `https://api.wipmania.com/jsonp?callback=${callback}`
 
-   O componente chama o serviço JSONP e lista todas as propriedades que os dados retornados contêm. As propriedades que estão na lista são aquelas que estarão disponíveis no Contexto do Cliente.
+   O componente chama o serviço JSONP e lista todas as propriedades que os dados retornados contêm. As propriedades que estão na lista são aquelas que estarão disponíveis no Client Context.
 
    ![](assets/chlimage_1-40.png)
 
 1. Clique em OK.
-1. Retorne à página inicial do Geometrixx Outdoors e atualize a página. O Contexto do Cliente agora inclui as informações do componente Loja JSONP.
+1. Retorne à página inicial do Geometrixx Outdoors e atualize a página. O Contexto do cliente agora inclui as informações do componente de Armazenamento JSONP.
 
    ![](assets/chlimage_1-41.png)
 
 ### Criar o segmento {#create-the-segment}
 
-Use os dados do armazenamento de sessão que você criou usando o componente de armazenamento JSONP. O segmento usa a latitude do armazenamento de sessão e a data atual para determinar se é a hora de inverno no local do cliente.
+Use os dados do armazenamento de sessão criado por meio do componente de armazenamento JSONP. O segmento usa a latitude do armazenamento de sessão e a data atual para determinar se é a hora de inverno no local do cliente.
 
 1. Abra o console Ferramentas no navegador da Web (`https://localhost:4502/miscadmin#/etc`).
-1. Na árvore de pastas, clique na pasta Ferramentas/Segmentação e em Nova > Nova pasta. Especifique os seguintes valores de propriedade e clique em Criar:
+1. Na árvore de pastas, clique na pasta Ferramentas/Segmentação e, em seguida, clique em Nova > Nova pasta. Especifique os seguintes valores de propriedade e clique em Criar:
 
    * Nome: mysegments
    * Título: Meus segmentos
 
 1. Selecione a pasta Meus segmentos e clique em Nova > Nova página:
 
-   1. Para o Título, digite Inverno.
-   1. Selecione o modelo Segmento .
+   1. Para o Título, digite inverno.
+   1. Selecione o modelo de Segmento.
    1. Clique em Criar.
 
-1. Clique com o botão direito do mouse no segmento Winter e clique em Open (Abrir).
-1. Arraste a propriedade Generic Store para o contêiner AND padrão.
+1. Clique com o botão direito do mouse no segmento Winter e clique em Open.
+1. Arraste a Propriedade de armazenamento genérico para o contêiner AND padrão.
 
    ![](assets/chlimage_1-5.jpeg)
 
 1. Clique duas vezes no componente para abrir a caixa de diálogo de edição, especifique os seguintes valores de propriedade e clique em OK:
 
-   * Conservar: wipmania
+   * Loja: wipmania
    * Nome da propriedade: latitude
    * Operador: é maior que
-   * Valor da propriedade: 30º
+   * Valor da propriedade: 30
 
 1. Arraste o componente Script para o mesmo contêiner AND e abra a caixa de diálogo de edição. Adicione o script a seguir e clique em OK:
 

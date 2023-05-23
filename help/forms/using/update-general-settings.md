@@ -1,7 +1,7 @@
 ---
-title: Atualização das configurações gerais
+title: Atualização de configurações gerais
 seo-title: Updating general settings
-description: Atualize as configurações do aplicativo AEM Forms, como a tela inicial e as opções de busca de pontos de partida e anexos
+description: Atualize as configurações do aplicativo AEM Forms, como a tela inicial, e busque as opções de pontos iniciais e anexos
 seo-description: Update AEM Forms app settings such as the Home screen and fetch Startpoints and attachments options
 uuid: 650d677e-2b3c-498e-9e46-fa659af934ca
 content-type: reference
@@ -17,26 +17,26 @@ ht-degree: 1%
 
 ---
 
-# Atualização das configurações gerais{#updating-general-settings}
+# Atualização de configurações gerais{#updating-general-settings}
 
-As configurações gerais do aplicativo AEM Forms permitem especificar configurações, como buscar anexos, modo offline, tela de aterrissagem, categoria padrão e frequência de salvamento automático.
+As configurações gerais do aplicativo AEM Forms permitem especificar configurações como busca de anexos, modo offline, tela de aterrissagem, categoria padrão e frequência de salvamento automático.
 
-## Atualização das configurações gerais no seu aplicativo {#working-with-the-form}
+## Atualização das Configurações gerais no aplicativo {#working-with-the-form}
 
-Ao sincronizar seu aplicativo com o servidor do AEM Forms, todos os formulários e tarefas definidas serão baixados no dispositivo móvel.
+Ao sincronizar o aplicativo com o servidor do AEM Forms, todos os formulários e tarefas definidas são baixados para o dispositivo móvel.
 
-A solução de aplicativo AEM Forms pronta para uso não baixa os anexos associados a cada formulário quando o aplicativo é sincronizado.
+A solução de aplicativo pronta para uso do AEM Forms não baixa os anexos associados a cada formulário quando o aplicativo é sincronizado.
 
-Na guia General , altere os anexos de download, o modo offline, a tela de aterrissagem, o salvamento automático e as configurações de sincronização. Você pode alterar a variável [Tela inicial](../../forms/using/home-screen.md) do seu aplicativo.
+Na guia General, altere as configurações de download de anexos, modo offline, tela de aterrissagem, salvamento automático e sincronização. Você pode alterar a [Tela inicial](../../forms/using/home-screen.md) do seu aplicativo.
 
-**Navegue até a guia Geral na tela Configurações**
+**Acesse a guia Geral na tela Configurações**
 
-1. Para ir para a tela Configuração, toque no botão Menu no canto superior esquerdo da tela inicial e toque em **Configurações**.
-1. Na tela Configurações , toque na guia Geral .
+1. Para acessar a tela Configuração, toque no botão Menu no canto superior esquerdo da tela inicial e, em seguida, toque em **Configurações**.
+1. Na tela Configurações, toque na guia Geral.
 
    ![Configurações gerais no aplicativo AEM Forms](assets/gen-settings-1.png)
 
-   Tela Configurações gerais
+   tela Configurações gerais
 
    >[!NOTE]
    >
@@ -46,23 +46,23 @@ Na guia General , altere os anexos de download, o modo offline, a tela de aterri
 
 Você pode fazer as seguintes alterações nas configurações do seu aplicativo.
 
-* **Buscar anexos da tarefa**: Especificar se os anexos associados devem ou não ser baixados quando cada tarefa for baixada no aplicativo.
-* **Modo offline**: Para ativar ou desativar o serviço offline para o aplicativo AEM Forms. Consulte [Trabalhar no modo offline](/help/forms/using/work-offline-mode.md) para obter detalhes.
-* **Tela de aterrissagem**: Para definir o local de início ([Tela inicial](../../forms/using/home-screen.md)) para o aplicativo.
+* **Buscar anexos da tarefa**: para especificar se os anexos associados devem ser baixados quando cada tarefa for baixada no aplicativo.
+* **Modo offline**: para ativar ou desativar o serviço offline para o aplicativo AEM Forms. Consulte [Trabalhar no modo offline](/help/forms/using/work-offline-mode.md) para obter detalhes.
+* **Landing screen**: Para definir o local inicial ([Tela inicial](../../forms/using/home-screen.md)) para o aplicativo.
 Opções disponíveis:
 
    * Forms
    * Tarefas
    * Favoritos
 
-* **Categoria padrão**: Permite que você selecione a categoria de formulários a serem mostrados na tela inicial. Ao selecionar Todos, você pode ver todos os formulários na tela inicial. As categorias são preenchidas com base nos formulários carregados no aplicativo. O Forms está disponível no aplicativo com base nas configurações de formulário especificadas no servidor do AEM Forms.
+* **Categoria padrão**: permite selecionar a categoria de formulários para mostrar na tela inicial. Ao selecionar Tudo, você pode ver todos os formulários na tela inicial. As categorias são preenchidas com base nos formulários carregados no aplicativo. Os Forms estão disponíveis no aplicativo com base nas configurações de formulário especificadas no servidor do AEM Forms.
 
-* **Frequência de Salvamento Automático**: Para definir a frequência na qual o [aplicativo móvel salva dados de formulário](../../forms/using/autosave-data-app.md) localmente.
-* **Frequência de Sincronização**: Para definir a frequência na qual o [aplicativo móvel é sincronizado](../../forms/using/sync-app.md) com o servidor AEM Forms no modo online.
-   **Limpar dados locais**: Limpe o banco de dados, incluindo configurações e dados locais para todos os usuários e armazenamento de arquivos do dispositivo.
+* **Frequência de salvamento automático**: Para definir a frequência com que seus [o aplicativo móvel salva dados de formulário](../../forms/using/autosave-data-app.md) localmente.
+* **Frequência de sincronização**: Para definir a frequência com que seus [o aplicativo móvel está sincronizado](../../forms/using/sync-app.md) com o servidor do AEM Forms no modo online.
+   **Limpar dados locais**: limpe o banco de dados, incluindo as configurações e os dados locais para todos os usuários e o armazenamento de arquivos do dispositivo.
 
 >[!NOTE]
 >
->Limpar o cache fará logoff imediatamente do aplicativo.
+>Limpar o cache encerra sua sessão imediatamente no aplicativo.
 >
 >No entanto, você será solicitado a confirmar a operação de limpeza do cache.

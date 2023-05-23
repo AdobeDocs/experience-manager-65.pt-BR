@@ -21,17 +21,17 @@ ht-degree: 1%
 
 A minificação remove do código-fonte os caracteres redundantes, como espaço em branco, nova linha e comentários. Isso melhora o desempenho ao reduzir o tamanho do código. Embora a minificação não afete a funcionalidade, ela reduz a legibilidade do código.
 
-Para gerar código minificado para alterações semânticas, siga essas etapas.
+Para gerar um código minificado para alterações semânticas, siga estas etapas.
 
-1. Copiar `client-html/src/main/webapp/js` do src-package no sistema de arquivos.
+1. Copiar `client-html/src/main/webapp/js` do pacote src no sistema de arquivos.
 
    >[!NOTE]
    >
    >Consulte [Introdução à Personalização do espaço de trabalho do AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) para obter mais detalhes sobre os pacotes.
 
-1. Atualizar caminhos em `main.js` localizado em client-html/src/main/webapp/js, para modelos/visualizações adicionados/atualizados.
+1. Atualizar caminhos em `main.js` localizado em client-html/src/main/webapp/js, para modelos/exibições adicionados/atualizados.
 
-   Por exemplo, a adição de um novo modelo do Sharequue, digamos mySharequue, muda:
+   Por exemplo, a adição de um novo modelo Sharequeue, digamos mySharequeue, altera:
 
    ```javascript
    sharequeuemodel : pathprefix + 'runtime/models/sharequeue',
@@ -43,9 +43,9 @@ Para gerar código minificado para alterações semânticas, siga essas etapas.
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
-1. Atualizar `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` em caso de alteração/adição de alias em `main.js`.
+1. Atualizar `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` caso haja alteração/adição de alias em `main.js`.
 
-   Por exemplo, a adição de um novo modelo do Sharequue, digamos mySharequue, muda:
+   Por exemplo, a adição de um novo modelo Sharequeue, digamos mySharequeue, altera:
 
    ```xml
    <sharequeue
@@ -69,12 +69,12 @@ Para gerar código minificado para alterações semânticas, siga essas etapas.
    mvn clean install
    ```
 
-   Ele gera uma pasta arquivos minificados, em client-html/src/main/webapp/js com minificações main.js e registry.js.
+   Ele gera uma pasta minified-files, em client-html/src/main/webapp/js com main.js e registry.js minificados.
 
 >[!NOTE]
 >
->A minificação só funcionará na JVM de 64 bits.
+>A minificação só funcionará no JVM de 64 bits.
 
 >[!NOTE]
 >
->Se você diminuir, a atualização será afetada.
+>Se você minificar, a atualização será afetada.

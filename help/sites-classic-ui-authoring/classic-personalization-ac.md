@@ -1,6 +1,6 @@
 ---
 title: Trabalhar com o Adobe Campaign
-description: O Adobe Campaign é um conjunto de soluções que permite personalizar e fornecer campanhas em todos os seus canais online e offline.
+description: O Adobe Campaign é um conjunto de soluções que permite personalizar e entregar campanhas em todos os seus canais online e offline.
 uuid: d216ce8d-c9e5-4a3c-bd25-a922770f5b6c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,20 +17,20 @@ ht-degree: 2%
 
 # Trabalhar com o Adobe Campaign{#working-with-adobe-campaign}
 
-O Adobe Campaign é um conjunto de soluções que permite personalizar e fornecer campanhas em todos os seus canais online e offline.
+O Adobe Campaign é um conjunto de soluções que permite personalizar e entregar campanhas em todos os seus canais online e offline.
 
 Esta documentação descreve como trabalhar com o Adobe Campaign:
 
-* Adobe Campaign 6.1, que é a solução local.
+* Adobe Campaign 6.1, que é a solução no local.
 * Adobe Campaign Standard, que é a solução por assinatura.
 
 Consulte o link a seguir:
 
 * [Trabalhar com o Adobe Campaign 6.1 e o Adobe Campaign Standard](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md)
 * [Componentes do Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
-* [Direcionamento da sua Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
+* [Direcionamento do seu Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
 
-Você deve ter [AEM integrada com Adobe Campaign](/help/sites-administering/campaign.md).
+Você deve ter [AEM integrado com Adobe Campaign](/help/sites-administering/campaign.md).
 
 Além disso, se você quiser personalizar suas integrações, consulte os seguintes tópicos:
 

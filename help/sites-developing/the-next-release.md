@@ -1,7 +1,7 @@
 ---
-title: A próxima versão..
+title: A próxima versão...
 seo-title: The next release...
-description: Uma versão subsequente está quase sempre prevista e pode até começar durante as etapas finais da implementação atual
+description: Uma versão subsequente está quase sempre prevista e pode até ser iniciada durante os estágios finais da implementação atual
 seo-description: A subsequent release is nearly always foreseen, and can even start during the final stages of the current implementation
 uuid: 6ae213fb-1bd3-464c-bfd0-14ddceaee11e
 contentOwner: Guillaume Carlino
@@ -17,16 +17,16 @@ ht-degree: 0%
 
 ---
 
-# A próxima versão..{#the-next-release}
+# A próxima versão...{#the-next-release}
 
-A implementação de um projeto raramente é o fim do processo. Uma versão subsequente está (quase) sempre prevista e pode até começar durante as etapas finais da implementação atual.
+A implementação de um projeto raramente é o fim do processo. Uma versão subsequente é (quase) sempre prevista e pode até ser iniciada durante os estágios finais da implementação atual.
 
 Em qualquer caso, pode ser útil planejar a próxima versão ao:
 
-* Documentação e armazenamento cuidadoso dos casos de teste, para que possam ser referenciados ou reutilizados.
+* Documentar e armazenar cuidadosamente os casos de teste para que possam ser referenciados ou, quem sabe, reutilizados.
 * Desenvolvimento de testes que podem ser usados como testes de regressão para a próxima versão.
-* A coleta de qualquer informação que você ou o cliente obtiveram com a experiência do processo de teste.
+* Coletar quaisquer informações que você ou o cliente tenham obtido por meio da experiência do processo de teste.
 
-   Isso pode ajudar a formar os requisitos para a próxima versão; por exemplo, a experiência do cliente com o produto aumentou durante os testes.
+   Isso pode ajudar nos requisitos do formulário para a próxima versão; por exemplo, como a experiência do cliente com o produto aumentou durante os testes.
 
-Como a próxima versão pode ser uma migração, qualquer informação relacionada a ela será útil.
+Como a próxima versão pode ser uma migração, qualquer informação relacionada a isso será útil.

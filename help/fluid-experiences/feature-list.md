@@ -13,20 +13,20 @@ ht-degree: 10%
 
 # Lista de recursos de experiências fluídas do AEM{#aem-fluid-experiences-feature-list}
 
-As experiências fluídas do Adobe Experience Manager são obtidas com os avançados conjuntos de recursos do AEM Sites, AEM Dynamic Media e AEM Assets para fornecer uma solução robusta para a entrega de conteúdo sem interface.
+O Adobe Experience Manager Fluid Experience utiliza os poderosos conjuntos de recursos do AEM Sites, AEM Dynamic Media e AEM Assets para fornecer uma solução robusta para a entrega de conteúdo headless.
 
-AEM Experiências fluídas se diferenciam dos AEM clássicos, já que apenas o caso de uso de delivery sem interface é resolvido. A criação e entrega de conteúdo abrangente e AEM forte suporte para casos de uso híbrido estão disponíveis com o [soluções completas de AEM Sites, Assets e Dynamic Media.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=pt-BR)
+O AEM Fluid Experience se diferencia do AEM clássico, pois somente o caso de uso de delivery headless é abordado. A criação e entrega de conteúdo headful e o forte suporte AEM para casos de uso híbrido estão disponíveis com o [soluções completas da AEM Sites, Assets e Dynamic Media.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=pt-BR)
 
-As tabelas a seguir definem os recursos de AEM Experiências fluídas e vinculam à documentação de suporte relevante.
+As tabelas a seguir definem os recursos do AEM Fluid Experience e vinculam-se à documentação de suporte relevante.
 
 * [Repositório](#repository-features)
 * [Acesso, APIs e entrega](#access-api-and-delivery-features)
 * [Administração e integrações](#admin-and-integration-features)
-* [Analytics e personalização](#analytics-and-personalization)
+* [Analytics e Personalização](#analytics-and-personalization)
 
 >[!NOTE]
 >
->AEM Experiências fluídas é um subconjunto de AEM funcionalidade. Os recursos vinculados a essas tabelas podem incluir recursos adicionais incluídos em AEM, mas não em Experiências fluídas AEM.
+>Experiências fluídas do AEM é um subconjunto da funcionalidade AEM. Os recursos vinculados nessas tabelas podem incluir recursos adicionais incluídos no AEM, mas não nas experiências com o AEM Fluid.
 
 ## Recursos do repositório {#repository-features}
 
@@ -56,35 +56,35 @@ As tabelas a seguir definem os recursos de AEM Experiências fluídas e vinculam
 | [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) |
 | [Dynamic Media](/help/assets/dynamic-media.md) |
 
-## Recursos de administração e integração {#admin-and-integration-features}
+## Administração e recursos de integração {#admin-and-integration-features}
 
 |  |
 |---|
 | [Gerenciamento de usuários](/help/sites-administering/user-group-ac-admin.md) |
-| [Gerenciamento de ativos multilíngues](/help/assets/multilingual-assets.md) |
+| [Gerenciamento de ativos em vários idiomas](/help/assets/multilingual-assets.md) |
 | [Internacionalização](/help/sites-developing/i18n.md) |
-| [Tradução do conteúdo](/help/sites-administering/translation.md) |
+| [Tradução de conteúdo](/help/sites-administering/translation.md) |
 | [Monitoramento](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Backup](/help/sites-administering/backup-and-restore.md) |
 | [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR) |
-| [Integração de PIM](/help/sites-authoring/managing-product-information.md) |
+| [Integração do PIM](/help/sites-authoring/managing-product-information.md) |
 | [Projetos e tarefas](/help/sites-authoring/projects.md) |
 | [Fluxos de trabalhos](/help/sites-administering/workflows-starting.md) |
 | Conectividade (serviços em nuvem) |
 
-## Analytics e personalização {#analytics-and-personalization}
+## Analytics e Personalização {#analytics-and-personalization}
 
 |  |
 |---|
 | [Relatórios de ativos](/help/assets/asset-reports.md) |
-| Insights aprimorados fornecidos pela Adobe Analytics |
-| Insights aprimorados fornecidos pela Adobe Target |
+| Insights aprimorados viabilizados pelo Adobe Analytics |
+| Insights aprimorados viabilizados pelo Adobe Target |
 
 ## Saiba mais {#learn-more}
 
 * [Experiências fluídas para casos de uso sem interface](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=en)
-* [Serviço de conteúdo AEM: O que, por quê e como?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
+* [Serviço de conteúdo AEM: o que, por que e como?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
 * [Uso dos serviços de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/developing/developing-content-services.html?lang=en)
-* [Desenvolvimento de aplicativo móvel](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/developing/developing-content-services.html?lang=en)
+* [Desenvolvimento de um aplicativo móvel](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/developing/developing-content-services.html?lang=en)
 * [Perguntas frequentes sobre acesso de terceiros](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=en)
 * [Uso de APIs do Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

@@ -1,7 +1,7 @@
 ---
 title: Script de análise de solicitação
 seo-title: Request Analysis Script
-description: O script de análise de solicitação é feito para facilitar a análise dos arquivos access.log produzindo um relatório legível para processamento posterior
+description: O script de análise de solicitação é feito para facilitar a análise dos arquivos access.log, produzindo um relatório legível para processamento posterior
 seo-description: The request analysis script is made to ease the analysis of the access.log files producing a readable report for later processing
 uuid: 24eff3c6-5748-46f3-a30c-4a3a6427ce1d
 contentOwner: Guillaume Carlino
@@ -21,23 +21,23 @@ ht-degree: 2%
 
 ## Download {#download}
 
-Esse script é feito para facilitar a análise da variável `access.log` arquivos que geram um relatório legível para processamento posterior.
+Esse script é feito para facilitar a análise do `access.log` arquivos produzindo um relatório legível para processamento posterior.
 
 [Obter arquivo](assets/analyse-access.sh)
 
 ## Descrição {#description}
 
-Esse script é feito para facilitar a análise da variável `access.log` arquivos que geram um relatório legível para processamento posterior.
+Esse script é feito para facilitar a análise do `access.log` arquivos produzindo um relatório legível para processamento posterior.
 
-Ele produz o número geral de solicitações, o GET vs POST, a distribuição de solicitações ao longo do tempo e muito mais.
+Ele produz o número geral de solicitações, GET vs. POST, a distribuição de Solicitações ao longo do tempo e muito mais.
 
-A saída está na sintaxe do Markdown, portanto, será mais fácil convertê-la em PDF com ferramentas como pandoc ou exibi-la em um navegador com plug-ins como o visualizador do Markdown.
+A saída está na sintaxe do Markdown, portanto, será mais fácil convertê-la em PDF com ferramentas como pandoc ou mostrá-la em um navegador com plug-ins como o visualizador do Markdown.
 
 Ele pode analisar um caminho personalizado fornecido na linha de comando.
 
-Retirando do comentário dentro do arquivo que informa como executá-lo:
+A partir do comentário dentro do arquivo que informa como executá-lo:
 
-Analisar CQ `access.log` extrapolação de várias informações e produção de uma saída do Markdown em `stdout`.
+Analisar CQ `access.log` extrapolando várias informações e produzindo uma saída do Markdown no `stdout`.
 
 ## Uso {#usage}
 
@@ -47,6 +47,6 @@ você pode fornecer caminhos personalizados adicionais para analisar na linha de
 
 `/analyse-access.sh access.log.2013-&ast; /my/custom/path/1 /my/custom/path/2`
 
-você pode salvar a saída por uma simples tubulação
+você pode salvar a saída usando um encanamento simples
 
 `./analyse-access.sh access.log.2013-&ast; | tee yr2013.md`

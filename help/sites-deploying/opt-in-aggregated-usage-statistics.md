@@ -1,7 +1,7 @@
 ---
-title: Aceitação Em Coleta De Estatísticas De Uso Agregado
+title: Ativando A Coleta De Estatísticas De Uso Agregado
 seo-title: Opting Into Aggregated Usage Statistics Collection
-description: Saiba como aceitar estatísticas de uso agregado.
+description: Saiba como aderir às estatísticas de uso agregadas.
 seo-description: Learn how to opt into aggregated usage statistics.
 uuid: 8bd0b870-4bea-42e1-8179-e900164591b6
 contentOwner: raiman
@@ -18,61 +18,61 @@ ht-degree: 3%
 
 ---
 
-# Aceitação Em Coleta De Estatísticas De Uso Agregado{#opting-into-aggregated-usage-statistics-collection}
+# Ativando A Coleta De Estatísticas De Uso Agregado{#opting-into-aggregated-usage-statistics-collection}
 
 ## Introdução {#introduction}
 
-Você pode ajudar a melhorar o Adobe Marketing Cloud enviando estatísticas do Adobe sobre como você interage com o AEM. Essas informações não contêm dados sobre os visitantes do site de sua empresa e serão usadas apenas para ajudar o Adobe a fornecer, oferecer suporte e melhorar a experiência do usuário.
+Você pode ajudar a melhorar o Adobe Marketing Cloud enviando estatísticas de Adobe sobre como você interage com o AEM. Estas informações não contêm dados sobre os visitantes do site da sua empresa e só serão usadas para ajudar o Adobe a fornecer, suportar e melhorar a experiência do usuário.
 
-Você pode aderir à coleção de estatísticas de uso usando a interface do usuário de toque ou o console da Web.
-
->[!NOTE]
->
->Existem vários regulamentos sobre proteção de dados e privacidade; incluindo, por exemplo, o GDPR e a CCPA. A AEM Sites está pronta para ajudar os clientes com suas obrigações de proteção de dados e conformidade com a privacidade. Esta página orienta os clientes pelos procedimentos para aceitar (ou não) a Coleta de Estatísticas de Uso Agregado.
->
->Para obter mais informações, consulte também a [Adobe Center](https://www.adobe.com/br/privacy.html).
+Você pode aderir à coleção de estatísticas de uso usando a interface para toque ou o Console da Web.
 
 >[!NOTE]
 >
->Você também pode recusar a qualquer momento usando o [Console da Web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) ou não selecionando a opção de aceitação na tela de aceitação AEM.
+>Há várias regulamentações de proteção e privacidade de dados; incluindo, por exemplo, o GDPR e o CCPA. A AEM Sites está pronta para ajudar os clientes em suas obrigações de conformidade de proteção e privacidade de dados. Esta página orienta os clientes por meio dos procedimentos de aceitação (ou recusa) da Coleta de Estatísticas de Uso Agregado.
+>
+>Para obter mais informações, consulte também o [Centro de privacidade do Adobe](https://www.adobe.com/br/privacy.html).
 
-## Aceitar usando a interface de toque {#opt-in-by-using-the-touch-ui}
+>[!NOTE]
+>
+>Também é possível recusar a qualquer momento usando o [Console da Web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) ou não selecionando a opção de aceitação na tela de aceitação do AEM.
 
-Na primeira vez que você começar a AEM, é possível aceitar usando a interface do usuário de toque da seguinte maneira:
+## Aceitar usando a interface para toque {#opt-in-by-using-the-touch-ui}
 
-1. Na tela Navegação de AEM, clique no botão **Caixa de entrada** Ícone (sino).
+Na primeira vez que você iniciar o AEM, poderá aceitar usando a interface para toque da seguinte maneira:
 
-   ![usage_statistics_navigationscreen](assets/usage_statisticsnavigationscreen.png)
+1. Na tela de Navegação do AEM, clique na guia **Caixa de entrada** Ícone (sino).
 
-1. Na lista suspensa, clique em &quot;**Ativar Coleta de Estatísticas de Uso Agregado**&quot;.
+   ![usage_statistics navigationscreen](assets/usage_statisticsnavigationscreen.png)
 
-   ![usage_statistics_navigationscreen2](assets/usage_statisticsnavigationscreen2.png)
+1. Na lista suspensa, clique em &quot;**Permitir coleta de dados estatísticos de uso agregados**&quot;.
 
-1. Na tela de opção, selecione &quot;**Permitir coleta de estatísticas de uso agregadas**&quot;.
+   ![usage_statticsnavigationscreen2](assets/usage_statisticsnavigationscreen2.png)
 
-   ![usage_statistics-opt-creen](assets/usage_statisticsopt-inscreen.png)
+1. Na tela de aceitação, selecione &quot;**Permitir coleta de dados estatísticos de uso agregados**&quot;.
+
+   ![usage_statticsopt-inscreen](assets/usage_statisticsopt-inscreen.png)
 
 1. Clique em &quot;**Concluído**&quot;.
 
-## Aceitar usando o Console da Web {#opt-in-by-using-the-web-console}
+## Aceitar usando o console da Web {#opt-in-by-using-the-web-console}
 
-Você pode aceitar (ou rejeitar) usando o Console da Web da seguinte maneira:
+Você pode aceitar (ou recusar) usando o Console da Web da seguinte maneira:
 
-1. Na tela Navegação de AEM, clique em **Ferramentas** e depois **Operações**.
+1. Na tela de Navegação do AEM, clique em **Ferramentas** e depois **Operações**.
 
-   ![usage_statistics_opsdashboard](assets/usage_statisticsopsdashboard.png)
+   ![usage_statticsopsdashboard](assets/usage_statisticsopsdashboard.png)
 
 1. Na janela Operações, clique em **Console da Web**.
 
-   ![usage_statistics_webconsole](assets/usage_statisticswebconsole.png)
+   ![usage_statistics webconsole](assets/usage_statisticswebconsole.png)
 
 1. Pesquisar por &quot;**Coleta de Estatísticas de Uso Agregado**&quot;.
-1. Clique no botão **Editar** ícone .
+1. Clique em **Editar** ícone.
 
-   ![usage_statistics_collectionedit](assets/usage_statisticscollectionedit.png)
+   ![usage_statistics collectionedit](assets/usage_statisticscollectionedit.png)
 
-1. Marque a caixa de seleção **Ativado.** Como alternativa, você pode desmarcar a caixa de seleção se quiser recusar a coleta de estatísticas de uso.
+1. Marque a caixa de seleção **Ativado.** Como alternativa, desmarque a caixa de seleção se desejar recusar a coleta de estatísticas de uso.
 
-   ![usage_statisticsselect](assets/usage_statisticsselect.png)
+   ![usage_statticsselect](assets/usage_statisticsselect.png)
 
 1. Clique em **Salvar**.

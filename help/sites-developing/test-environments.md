@@ -19,24 +19,24 @@ ht-degree: 0%
 
 # Quais ambientes de teste serão necessários?{#which-test-environments-will-be-needed}
 
-Para definir quais configurações serão testadas, considere o seguinte:
+Para definir quais configurações para teste, você deve considerar o seguinte:
 
-**Desenvolvimento** - Para Unidade e determinados testes de integração.
+**Desenvolvimento** - Para unidade e certos testes de integração.
 
-**Teste** - Para a maioria dos testes.
+**Testes** - Para a maioria dos testes.
 
-**Ao vivo** - Para o desempenho final e os testes de esforço. Também para testes de aceitação com o cliente.
+**Ao vivo** - Para os testes finais de desempenho e de esforço. Também para testes de aceitação com o cliente.
 
-Você também precisará decidir quais instâncias serão necessárias, onde (normalmente, pelo menos uma de cada para todos os níveis de teste):
+Você também precisará decidir quais instâncias serão necessárias onde (geralmente, pelo menos uma de cada para todos os níveis de teste):
 
 **Autor** - Essa instância permite que os autores insiram e publiquem conteúdo.
 
-**Publicar** - Essa instância apresenta o site em seu formulário publicado para acesso de visitantes.
+**Publish** - Esta instância apresenta o site em seu formulário publicado para acesso dos visitantes.
 
-Deve ser testado junto com o Dispatcher.
+Deve ser testado juntamente com o Dispatcher.
 
-Finalmente, o hardware real deve ser considerado - qualquer teste de desempenho deve ser feito em um sistema o mais próximo possível da configuração do ambiente ativo final. Por isso, também é recomendável dividir o lançamento do projeto em um:
+Por fim, o hardware real deve ser considerado - todos os testes de desempenho devem ser feitos em um sistema com a configuração o mais próxima possível do ambiente ativo final. Por esse motivo, também é recomendável que o Lançamento do projeto seja dividido em:
 
-**Lançamento suave** - Redução da disponibilidade; que permite tempo para testes de desempenho, ajuste e otimização em condições realistas no ambiente de produção.
+**Inicialização suave** - Disponibilidade reduzida, o que permite tempo para testes de desempenho, ajuste e otimização em condições realistas no ambiente de produção.
 
-**Inicialização forçada** - Disponibilidade total.
+**Inicialização rígida** - Disponibilidade total.

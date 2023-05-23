@@ -1,5 +1,5 @@
 ---
-title: Visualização de dados de análise de página para medir a eficácia do conteúdo da página
+title: Visualização dos dados de análise da página para medir a eficácia do conteúdo da página
 description: Usar dados de análise de página para medir a eficácia do conteúdo da página
 uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
@@ -15,21 +15,21 @@ ht-degree: 4%
 
 ---
 
-# Visualizar dados de análise da página{#seeing-page-analytics-data}
+# Visualização de dados de análise de página{#seeing-page-analytics-data}
 
 Use os dados de análise da página para medir a eficácia do conteúdo da página.
 
-## Análise visível do console {#analytics-visible-from-the-console}
+## Analytics visível no Console {#analytics-visible-from-the-console}
 
 ![aa-10](assets/aa-10.png)
 
-Os dados de análise da página são exibidos em [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view) do console Sites . Quando as páginas são exibidas em formato de lista, as seguintes colunas estão disponíveis por padrão:
+Os dados de análise da página são exibidos em [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view) do console Sites. Quando as páginas são exibidas no formato de lista, as seguintes colunas estão disponíveis por padrão:
 
 * Exibições da página
 * Visitantes únicos
 * Tempo na página
 
-Cada coluna mostra um valor para o período de relatório atual e também indica se o valor aumentou ou diminuiu em relação ao período de relatório anterior. Os dados exibidos são atualizados a cada 12 horas.
+Cada coluna mostra um valor para o período de relatório atual e também indica se o valor aumentou ou diminuiu desde o período de relatório anterior. Os dados exibidos são atualizados a cada 12 horas.
 
 >[!NOTE]
 >
@@ -38,81 +38,81 @@ Cada coluna mostra um valor para o período de relatório atual e também indica
 1. Abra o **Sites** console; por exemplo [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
 1. Na extremidade direita da barra de ferramentas (canto superior direito), clique ou toque no ícone para selecionar **Exibição de lista** (o ícone mostrado dependerá do [exibição atual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Novamente, na extremidade direita da barra de ferramentas (canto superior direito), clique ou toque no ícone e selecione **Exibir configurações**. O **Configurar colunas** será aberta. Faça as alterações necessárias e confirme com **Atualizar**.
+1. Novamente, na extremidade direita da barra de ferramentas (canto superior direito), clique ou toque no ícone e selecione **Configurações de exibição**. A variável **Configurar colunas** será aberta. Faça as alterações necessárias e confirme com **Atualizar**.
 
    ![aa-04](assets/aa-04.png)
 
-### Selecionar o período de relatório {#selecting-the-reporting-period}
+### Seleção do Período de Geração de Relatórios {#selecting-the-reporting-period}
 
-Selecione o período de relatório para o qual os dados do Analytics aparecem no console Sites :
+Selecione o período do relatório para o qual os dados do Analytics aparecem no console Sites:
 
 * Dados dos últimos 30 dias
 * Dados dos últimos 90 dias
 * Dados deste ano
 
-O período de relatório atual aparece na barra de ferramentas do console Sites (à direita da barra de ferramentas superior). Use o menu suspenso para selecionar o período de relatório necessário.
+O período atual do relatório aparece na barra de ferramentas do console Sites (à direita da barra de ferramentas superior). Use o menu suspenso para selecionar o período de relatório necessário.
 ![aa-05](assets/aa-05.png)
 
-### Configuração das colunas de dados disponíveis {#configuring-available-data-columns}
+### Configuração de Colunas de Dados Disponíveis {#configuring-available-data-columns}
 
-Os membros do grupo de usuários analytics-administrators podem configurar o console Sites para permitir que os autores vejam colunas adicionais do Analytics.
+Os membros do grupo de usuários de administradores de análises podem configurar o console Sites para permitir que os autores vejam colunas adicionais do Analytics.
 
 >[!NOTE]
 >
->Quando uma árvore de páginas contém páginas filhas associadas a diferentes configurações de nuvem do Adobe Analytics, você não pode configurar as colunas de dados disponíveis para as páginas.
+>Quando uma árvore de páginas contém páginas secundárias associadas a diferentes configurações de nuvem do Adobe Analytics, não é possível definir colunas de dados disponíveis para as páginas.
 
-1. Na Exibição de lista, use os seletores de exibição (à direita da barra de ferramentas), selecione **Exibir configurações** e depois **Adicionar dados personalizados do Analytics**.
+1. Na Exibição em lista, use os seletores de exibições (à direita da barra de ferramentas) e selecione **Configurações de exibição** e depois **Adicionar dados personalizados do Analytics**.
 
    ![aa-15](assets/aa-15.png)
 
 1. Selecione as métricas que deseja expor aos autores no console Sites e clique em **Adicionar**.
 
-   As colunas que aparecem são recuperadas do Adobe Analytics.
+   As colunas exibidas são recuperadas do Adobe Analytics.
 
    ![aa-16](assets/aa-16.png)
 
-### Abrir Content Insights de Sites {#opening-content-insights-from-sites}
+### Abrindo insights de conteúdo em sites {#opening-content-insights-from-sites}
 
-Abrir [Content Insight](/help/sites-authoring/content-insights.md) no console Sites para investigar ainda mais a eficácia da página.
+Abertura [Content Insight](/help/sites-authoring/content-insights.md) no console Sites para investigar mais a eficácia da página.
 
-1. No console Sites , selecione a página na qual deseja visualizar os Content Insights.
-1. Na barra de ferramentas, clique no ícone Analytics e Recommendations .
+1. No console do Sites, selecione a página da qual deseja ver os Insights de conteúdo.
+1. Na barra de ferramentas, clique no ícone Analytics e Recommendations.
 
    ![](do-not-localize/chlimage_1-16a.png)
 
-## Analytics visível do Editor de páginas (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
+## Análises visíveis no Editor de páginas (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >
->Isso será mostrado se a variável [Activity Map foi configurado](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) para o seu site.
+>Isso será mostrado se a variável [O Activity Map foi configurado](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) para o seu site.
 
 >[!NOTE]
 >
->Os dados do Activity Map são retirados do Adobe Analytics.
+>Os dados da Activity Map são obtidos do Adobe Analytics.
 
-Quando seu site tiver sido [configurado para Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), você pode usar o [Activity Map de modo](/help/sites-authoring/author-environment-tools.md#page-modes) para visualizar os dados relevantes. Por exemplo:
+Quando o site tiver sido [configurado para Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), você pode usar o [Activity Map de modo](/help/sites-authoring/author-environment-tools.md#page-modes) para visualizar dados relevantes. Por exemplo:
 
 ![aa-07](assets/aa-07.png)
 
-### Acesso ao Activity Map {#accessing-the-activity-map}
+### Acessar o Activity Map {#accessing-the-activity-map}
 
-Depois de selecionar o [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) , você será solicitado a inserir suas credenciais do Adobe Analytics.
+Depois de selecionar o [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) , você será solicitado a inserir suas credenciais da Adobe Analytics.
 
 ![aa-03](assets/aa-03.png)
 
-O **Analytics** a barra de ferramentas flutuante é exibida; aqui você pode:
+A variável **Analytics** a barra de ferramentas flutuante é exibida; aqui você pode:
 
-* altere o formato da barra de ferramentas usando as setas duplas (**>>**)
-* Alternar detalhes da página (ícone de olhos)
-* Defina as configurações do Activity Map (ícone de engrenagem)
-* Selecione a análise a ser mostrada (vários seletores suspensos)
-* Sair do Activity Map e fechar a barra de ferramentas (x)
+* alterar o formato da barra de ferramentas usando as setas duplas (**>>**)
+* Alternar Detalhes da página (ícone de olho)
+* Defina as configurações de Activity Map ( ícone cog)
+* Selecione a análise que será exibida (vários seletores suspensos)
+* Saia do Activity Map e feche a barra de ferramentas (x)
 
 ![aa-09](assets/aa-09.png)
 
-### Seleção do Analytics para mostrar {#selecting-the-analytics-to-show}
+### Selecionar o Analytics para mostrar {#selecting-the-analytics-to-show}
 
-Você pode selecionar os dados analíticos a serem exibidos e como eles devem ser exibidos, usando os vários critérios:
+Você pode selecionar os dados analíticos a serem mostrados e como eles devem ser exibidos, usando os vários critérios:
 
 * **Padrão**/**Ao vivo**
 
@@ -120,17 +120,17 @@ Você pode selecionar os dados analíticos a serem exibidos e como eles devem se
 * grupo de usuários
 * **Bolhas**/**Gradiente**/**Ganhadores e perdedores**/**Desligado**
 
-* período a ser mostrado
+* período a ser exibido
 
 ![aa-13](assets/aa-13.png)
 
 ### Configuração do Activity Map {#configuring-the-activity-map}
 
-Use o **Mostrar configurações** ícone para abrir o **Configurações do Activity Map** caixa de diálogo.
+Use o **Exibir configurações** ícone para abrir o **Configurações do Activity Map** diálogo.
 
 ![aa-04-1](assets/aa-04-1.png)
 
-O **Configurações do Activity Map** A caixa de diálogo fornece uma variedade de opções em três guias:
+A variável **Configurações do Activity Map** A caixa de diálogo fornece uma variedade de opções em três guias:
 
 ![aa-06](assets/aa-06.png)
 
@@ -139,7 +139,7 @@ O **Configurações do Activity Map** A caixa de diálogo fornece uma variedade 
    * Conjunto de relatórios
    * Nome da Página
    * Idioma
-   * Sobreposições de rótulo com
+   * Sobreposições de Rótulo com
    * Tamanho da fonte do rótulo
    * Cor do gradiente
    * Cor da bolha
@@ -153,6 +153,6 @@ O **Configurações do Activity Map** A caixa de diálogo fornece uma variedade 
 
 * Online
 
-   * Exibir principais (ganhadores ou perdedores)
-   * Excluir os inferiores %
+   * Exibir os principais (ganhadores ou perdedores)
+   * Excluir % inferior
    * Atualização automática (dados e período)

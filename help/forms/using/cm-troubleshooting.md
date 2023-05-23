@@ -1,5 +1,5 @@
 ---
-title: "Gerenciamento de correspondência: Solução de problemas"
+title: "Gerenciamento de correspondência: solução de problemas"
 seo-title: Correspondence Management Troubleshooting
 description: Solução de problemas do gerenciamento de correspondência
 seo-description: Correspondence Management Troubleshooting
@@ -17,40 +17,40 @@ ht-degree: 6%
 
 ---
 
-# Gerenciamento de correspondência: Solução de problemas {#correspondence-management-troubleshooting}
+# Gerenciamento de correspondência: solução de problemas {#correspondence-management-troubleshooting}
 
 ## Erros ao salvar uma carta {#errors-when-saving-a-letter}
 
 ### Problema {#issue}
 
-Um dos seguintes erros é exibido ao salvar uma carta:
+Um dos seguintes erros é exibido ao salvar uma correspondência:
 
-* O vínculo de dados não está presente para o módulo de texto
+* Vinculação de dados ausente para o módulo de texto
 * Forneça a informação de propriedade necessária para o seguinte
 
 ### Motivo {#reason}
 
-Esses erros podem ocorrer devido a um dos seguintes:
+Esses erros podem ocorrer devido a um dos seguintes motivos:
 
-* Um dicionário de dados está vinculado à carta, mas não está presente no servidor.
+* Um dicionário de dados está associado à carta, mas não está presente no servidor.
 * Um dicionário de dados é vinculado à letra, mas tem um sublinhado (_) em seu nome.
 
 ### Solução alternativa {#workaround}
 
-Certifique-se de que o dicionário de dados que você está usando na carta esteja presente no servidor e não tenha um sublinhado (_) em seu nome.
+Certifique-se de que o dicionário de dados que você está usando na correspondência esteja presente no servidor e não tenha um sublinhado (_) em seu nome.
 
-## Erro ao visualizar uma carta {#error-when-previewing-a-letter}
+## Erro ao visualizar uma correspondência {#error-when-previewing-a-letter}
 
 ### Problema {#issue-1}
 
-Ao visualizar uma carta, o erro &quot;Erro na carta de carregamento: Não foi possível importar o ativo da entrada XML&quot; é exibido mesmo quando um ativo de texto não publicado anteriormente na carta é publicado.
+Ao visualizar uma correspondência, o erro &quot;Erro ao carregar a correspondência: não foi possível importar o ativo da entrada XML&quot; aparece mesmo quando um ativo de texto não publicado anteriormente na correspondência é publicado.
 
 ### Solução alternativa {#workaround-1}
 
-Redefina o cache de letras na instância de publicação usando as seguintes etapas e tente visualizar novamente a carta:
+Redefina o cache de cartas na instância de publicação usando as seguintes etapas e tente exibir a carta novamente:
 
 1. Ir para **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e faça logon como Administrador.
-1. Selecionar **Configurações de gerenciamento de correspondência**.
-1. Em **Configurações de gerenciamento de correspondência**, desativar **Ativar Cache de Carta** e, em seguida, clique em **Salvar.**
-1. Habilitar **Ativar Cache de Carta** e, em seguida, clique em **Salvar**.
+1. Selecionar **Configurações do gerenciamento de correspondência**.
+1. Entrada **Configurações do gerenciamento de correspondência**, desativar **Ativar cache de cartas** e clique em **Salve.**
+1. Ativar **Ativar cache de cartas** e clique em **Salvar**.
 1. Tente novamente visualizar a carta.

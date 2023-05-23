@@ -1,7 +1,7 @@
 ---
 title: Experimente o site publicado
 seo-title: Experience the Published Site
-description: Navegue até um site publicado
+description: Navegar até um site publicado
 seo-description: Browse to a published site
 uuid: 44594e9e-27ad-475d-953d-3611b04f0df8
 contentOwner: Janice Kendall
@@ -20,43 +20,43 @@ ht-degree: 1%
 
 # Experimente o site publicado {#experience-the-published-site}
 
-## Navegue até o novo site na publicação {#browse-to-new-site-on-publish}
+## Navegar até o novo site em Publicar {#browse-to-new-site-on-publish}
 
 Agora que o site de comunidades recém-criado foi publicado, navegue até o URL exibido ao criar o site, mas no servidor de publicação, por exemplo:
 
 * URL do autor = https://localhost:4502/content/sites/engage/en.html
 * URL de publicação = https://localhost:4503/content/sites/engage/en.html
 
-Para minimizar a confusão sobre qual membro está conectado ao autor e à publicação, sugerimos usar navegadores diferentes para cada instância.
+Para minimizar a confusão sobre qual membro está conectado no autor e na publicação, é recomendável usar navegadores diferentes para cada instância.
 
-Ao chegar pela primeira vez ao site publicado, o visitante do site normalmente não estaria conectado e seria anônimo.
+Ao chegar ao site publicado pela primeira vez, normalmente o visitante do site ainda não estava conectado e era anônimo.
 
 `https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
-![autorpublished](assets/authorpublished.png)
+![authorpublished](assets/authorpublished.png)
 
-## Visitante Anônimo do Site {#anonymous-site-visitor}
+## Visitante anônimo do site {#anonymous-site-visitor}
 
 Um visitante anônimo do site vê o seguinte na interface do usuário:
 
 * Título do site (Tutorial de introdução)
 * Nenhum link de perfil
-* Sem link de mensagens
-* Sem link de notificações
+* Nenhum link de mensagem
+* Nenhum link de notificações
 * Campo Pesquisa
-* Link de logon
+* Link de login
 * O banner da marca
 * Links de menu para os componentes incluídos no Modelo de site de referência.
 
-Se você selecionar vários links, eles estarão no modo somente leitura.
+Se selecionar vários links, você os verá no modo somente leitura.
 
 ### Impedir acesso anônimo no JCR {#prevent-anonymous-access-on-jcr}
 
-Uma limitação conhecida expõe o conteúdo do site da comunidade para visitantes anônimos por meio de conteúdo jcr e json , embora **permitir acesso anônimo** está desativado para o conteúdo do site. No entanto, esse comportamento pode ser controlado usando Restrições do Sling como uma solução alternativa.
+Uma limitação conhecida expõe o conteúdo do site da comunidade para visitantes anônimos por meio do conteúdo jcr e json, embora **permitir acesso anônimo** O está desativado para o conteúdo do site. No entanto, esse comportamento pode ser controlado usando Restrições de Sling como solução alternativa.
 
-Para proteger o conteúdo do site da comunidade do acesso de usuários anônimos por meio de conteúdo jcr e json , siga estas etapas:
+Para proteger o conteúdo do site da comunidade do acesso de usuários anônimos por meio de conteúdo jcr e json, siga estas etapas:
 
-1. Na instância do autor do AEM, acesse https:// hostname:port/editor.html/content/site/sitename.html.
+1. Na instância do AEM Author, acesse https:// hostname:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -64,69 +64,69 @@ Para proteger o conteúdo do site da comunidade do acesso de usuários anônimos
 
 1. Ir para **Propriedades da página**.
 
-   ![propriedades de página](assets/page-properties.png)
+   ![page-properties](assets/page-properties.png)
 
-1. Ir para **Avançado** guia .
+1. Ir para **Avançado** guia.
 
-1. Habilitar **Requisito de autenticação**.
+1. Ativar **Requisitos de autenticação**.
 
    ![autenticação de site](assets/site-authentication.png)
 
-1. Adicione o caminho da página de logon. Por exemplo, **/content/......./GetStarted**.
+1. Adicione o caminho da página de logon. Por exemplo, **/content/..../GetStarted**.
 1. Publique a página.
 
-## Membro da Comunidade Confiável {#trusted-community-member}
+## Membro de comunidade confiável {#trusted-community-member}
 
-Essa experiência assume [Aaron McDonald](/help/communities/tutorials.md#demo-users) recebeu as funções de [gerente e moderador da comunidade](/help/communities/create-site.md#roles). Caso contrário, retorne ao ambiente de criação para [modificar as configurações do site](/help/communities/sites-console.md#modifying-site-properties) e selecione Aaron McDonald como gerente da comunidade e moderador.
+Essa experiência assume que [Aaron McDonald](/help/communities/tutorials.md#demo-users) foi atribuído às funções de [gerente e moderador da comunidade](/help/communities/create-site.md#roles). Caso contrário, retorne ao ambiente de criação para [modificar as configurações do site](/help/communities/sites-console.md#modifying-site-properties) e selecione Aaron McDonald como gerente da comunidade e moderador.
 
-No canto superior direito, selecione `Log in`e faça logon com o nome de usuário (aaron.mcdonald@mailinator.com) e senha (senha). Observe a capacidade de fazer logon com credenciais do Twitter ou Facebook.
+No canto superior direito, selecione `Log in`, e assine com o nome de usuário (aaron.mcdonald@mailinator.com) e a senha (senha). Observe a capacidade de fazer logon com credenciais do Twitter ou da Facebook.
 
 ![fazer logon](assets/login.png)
 
-Depois de fazer logon como membro da comunidade registrada, observe os seguintes itens de menu para clicar e explorar seu site da comunidade:
+Depois de fazer logon como membro registrado da comunidade, observe os seguintes itens de menu para clicar e explorar seu site da comunidade:
 
-* **Perfil** permite visualizar e editar seu perfil.
-* [Mensagens](/help/communities/configure-messaging.md) A opção direciona você para a seção de mensagens diretas, onde é possível:
+* **Perfil** permite visualizar e editar o perfil.
+* [Mensagens](/help/communities/configure-messaging.md) direciona você para a seção de mensagens diretas, onde é possível:
 
    1. Exibir as mensagens diretas recebidas (Caixa de entrada), enviadas (Itens enviados) e excluídas (Lixeira).
-   1. Componha novas mensagens diretas para enviar a indivíduos e grupos.
+   1. Redija novas mensagens diretas para enviar a indivíduos e grupos.
 
-* [Notificações](/help/communities/notifications.md) direciona você à seção de notificações, onde é possível visualizar os eventos de interesse e editar as configurações de notificação.
-* [Administração](/help/communities/published-site.md#moderationlink) direciona você à página de moderação do AEM Communities, se tiver privilégios de moderação.
+* [Notificação](/help/communities/notifications.md) A opção direciona você para a seção notificações, onde é possível exibir os eventos de interesse e editar as configurações de notificação.
+* [Administração](/help/communities/published-site.md#moderationlink) O direciona você para a página Moderação do AEM Communities, caso tenha privilégios de moderação.
 
 ![adminscreen](assets/adminscreen.png)
 
-Observe que a página Calendário é a página inicial, pois o Modelo de site de referência escolhido incluiu a função Calendário primeiro, seguido pela função Fluxo de atividade, função do Fórum e assim por diante. Essa estrutura é visível do [Modelo do site](/help/communities/sites.md#edit-site-template) ou ao modificar as propriedades do site no ambiente do autor:
+Observe que a página Calendário é a página inicial porque o Modelo de site de referência escolhido incluiu a função Calendário primeiro, seguido pela função Fluxo de atividades, função Fórum e assim por diante. Essa estrutura é visível do [Modelo do site](/help/communities/sites.md#edit-site-template) ou ao modificar propriedades do site no ambiente de criação:
 
-![sitecemplate](assets/sitetemplate.png)
+![sitetemplate](assets/sitetemplate.png)
 
 >[!NOTE]
 >
 >Para obter mais informações sobre componentes e funções do Communities, visite:
 >
 >* [Componentes das comunidades](/help/communities/author-communities.md) (para autores)
->* [Componentes, funções e recursos essenciais](/help/communities/essentials.md) (para desenvolvedores)
+>* [Fundamentos de componentes, funções e recursos](/help/communities/essentials.md) (para desenvolvedores)
 
 
 ### Link do fórum {#forum-link}
 
-Visualize o recurso básico do fórum selecionando o link Forum .
+Exiba o recurso básico do fórum selecionando o link Fórum.
 
 Os membros podem postar um novo tópico ou seguir um tópico.
 
-Os visitantes do site podem visualizar postagens e classificá-las de várias maneiras.
+Os visitantes do site podem visualizar publicações e classificá-las de várias maneiras.
 
 ![forumlink](assets/forumlink.png)
 
 ### Link Grupos {#groups-link}
 
-Como Aaron é um administrador de grupo, selecionar o link Grupos permitirá que Aaron crie um novo grupo da comunidade selecionando um modelo de grupo, uma imagem, se o grupo está aberto ou secreto e convidando membros.
+Como Aaron é um administrador de grupo, selecionar o link Grupos permitirá que Aaron crie um novo grupo da comunidade selecionando um modelo de grupo, imagem, seja o grupo aberto ou secreto, e convidando membros.
 
 Este é um exemplo em que um grupo é criado no ambiente de publicação.
 
-Grupos também podem ser criados no ambiente de criação e gerenciados no site da comunidade no ambiente de criação ([Console de grupos da comunidade](/help/communities/groups.md)). A experiência de [criação de grupos no autor](/help/communities/nested-groups.md) é o próximo neste tutorial.
+Os grupos também podem ser criados no ambiente de criação e gerenciados no site da comunidade no ambiente de criação ([Console de grupos da comunidade](/help/communities/groups.md)). A experiência do [criação de grupos no autor](/help/communities/nested-groups.md) é o próximo neste tutorial.
 
-![berço](assets/grouplink.png)
+![grouplink](assets/grouplink.png)
 
 Criar um grupo de referência:
 
@@ -136,39 +136,39 @@ Criar um grupo de referência:
    * Nome do grupo : `Sports`
    * Descrição : `A parent group for various sporting groups`.
    * Nome do URL do grupo : `sports`
-   * Selecionar `Open Group` (permitir a participação de qualquer membro da comunidade através da sua adesão)
+   * Selecionar `Open Group` (permitir a participação de qualquer membro da comunidade ao ingressar)
 
 1. **Guia Modelo**
 
-   * Selecionar `Reference Group` (contém uma função de grupos em sua estrutura para permitir grupos aninhados)
+   * Selecionar `Reference Group` (contém uma função groups em sua estrutura para permitir grupos aninhados)
 
 1. Selecionar **Criar grupo**
 
    ![creategroup](assets/creategroup.png)
 
-Após a criação de um novo grupo, **selecione o novo grupo Esportes** para criar dois grupos (aninhados) dentro dele. Como uma estrutura de site não pode começar com a função de grupos , após abrir o grupo Esportes, é necessário selecionar o link Grupos :
+Depois que um novo grupo for criado, **selecionar o novo grupo Esportes** para criar dois grupos (aninhados) dentro dele. Como uma estrutura de site não pode começar com a função groups, depois de abrir o grupo Sports, é necessário selecionar o link Groups:
 
 ![grouplink1](assets/grouplink1.png)
 
-O segundo conjunto de links, começando com `Blog`pertencer ao grupo selecionado no momento, a variável `Sports` grupo. Selecionando os Esportes `Groups` link , é possível aninhar dois grupos no grupo Esportes .
+O segundo conjunto de links, começando com `Blog`, pertencer ao grupo selecionado no momento, a variável `Sports` grupo. Ao selecionar as opções de esportes&#39; `Groups` link, é possível aninhar dois grupos no grupo Esportes.
 
 Como exemplo, adicione dois `new groups`.
 
-* Um nome `Baseball`
+* Um chamado `Baseball`
 
-   * Deixe-a configurada como uma `Open Group` (associação obrigatória).
-   * Na guia Modelos , selecione `Conversational Group`.
+   * Deixe-o definido como `Open Group` (associação necessária).
+   * Na guia Modelos, selecione `Conversational Group`.
 
-* Um nome `Gymnastics`
+* Um chamado `Gymnastics`
 
-   * Alterar a configuração para `Member Only Group` (associação restrita).
-   * Na guia Modelos , selecione `Conversational Group`.
+   * Alterar sua configuração para `Member Only Group` (associação restrita).
+   * Na guia Modelos, selecione `Conversational Group`.
 
 **Aviso**:
 
-* Uma atualização da página pode ser necessária antes que ambos os grupos sejam exibidos.
-* Este modelo faz *not* inclua a função groups , portanto, não será possível aninhar mais grupos.
-* No autor, o [Console Grupos](/help/communities/groups.md) fornece uma terceira opção - uma `Public Group` (associação opcional).
+* Pode ser necessário atualizar a página antes que ambos os grupos sejam exibidos.
+* Esse modelo não *não* incluir a função groups, portanto, não será possível fazer mais aninhamento de grupos.
+* No autor, a variável [Console de grupos](/help/communities/groups.md) fornece uma terceira opção - uma `Public Group` (associação opcional).
 
 Depois que ambos os grupos forem criados, selecione o grupo Beisebol, um grupo aberto e observe seus links:
 
@@ -178,56 +178,56 @@ Os links do grupo são exibidos abaixo dos links do site principal e resultam na
 
 ![grouplink2](assets/grouplink2.png)
 
-Ao criar - com privilégios administrativos, navegue até o [Console de grupos de comunidades](/help/communities/members.md) e adicione Weston McCall ao `Community Engage Gymnastics <uid> Members` grupo.
+Na criação - com privilégios administrativos, navegue até o [Console de grupos de comunidades](/help/communities/members.md) e adicione Weston McCall à `Community Engage Gymnastics <uid> Members` grupo.
 
-Continuando a publicar, saia como Aaron McDonald e veja os grupos no Sports Group como um visitante anônimo do site:
+Continuando a publicar, saia como Aaron McDonald e visualize os grupos no Sports Group como um visitante anônimo do site:
 
-* Da página inicial
+* Da home page
 * Selecionar `Groups` link
 * Selecionar `Sports` link
-* Selecionar os Esportes&#39; `Groups` link
+* Selecione o &#39;Esportes&#39; `Groups` link
 
-Somente o grupo Beisebol será visível.
+Somente o grupo Beisebol estará visível.
 
-Faça logon como Weston McCall (weston.mccall@dodgit.com / senha) e navegue até o mesmo local. Observe que o Weston é capaz de `Join` abrir `Baseball` e `enter or Leave` privado `Gymnastics` grupo.
+Faça logon como Weston McCall (weston.mccall@dodgit.com / password) e navegue até o mesmo local. Observe que a Weston pode `Join` a abertura `Baseball` agrupar e `enter or Leave` o privado `Gymnastics` grupo.
 
 ![grouplink3](assets/grouplink3.png)
 
 ### Link da página da Web {#web-page-link}
 
-Visualize a página da Web básica incluída no site selecionando o link Página da Web. As ferramentas de criação de AEM padrão podem ser usadas para adicionar conteúdo a esta página no ambiente de criação.
+Exiba a página da Web básica incluída no site selecionando o link Página da Web. As ferramentas de criação padrão do AEM podem ser usadas para adicionar conteúdo a esta página no ambiente de criação.
 
-Por exemplo, acesse **autor** , abra o `engage` na pasta [Console de sites das comunidades](/help/communities/sites-console.md), selecione o **Abrir Site** ícone para entrar no modo de edição do autor. Em seguida, selecione o modo de visualização para selecionar o `Web Page` e, em seguida, selecione o modo de edição para adicionar componentes Título e Texto . Por último, publique novamente apenas a página ou o site inteiro.
+Por exemplo, vá para **autor** , abra a variável `engage` pasta na [Console de sites das comunidades](/help/communities/sites-console.md), selecione o **Abrir site** ícone para entrar no modo de edição do autor. Em seguida, selecione o modo de visualização para selecionar a `Web Page` e selecione o modo de edição para adicionar os componentes Título e Texto. Por último, publique novamente apenas a página ou todo o site.
 
 ![webpagelink](assets/webpagelink.png)
 
 ### Link de moderação {#moderationlink}
 
-Quando o membro da comunidade tiver privilégios de moderação, o link Moderação estará visível e a seleção exibirá o conteúdo da comunidade publicado e permitirá que ele seja [moderado](/help/communities/moderate-ugc.md) de forma semelhante à [console de moderação](/help/communities/moderation.md) no ambiente de criação.
+Quando o membro da comunidade tiver privilégios de moderação, o link Moderação ficará visível e sua seleção exibirá o conteúdo da comunidade publicado e permitirá que ele seja [moderado](/help/communities/moderate-ugc.md) de uma forma semelhante à [console de moderação](/help/communities/moderation.md) no ambiente de criação.
 
-Use o botão Voltar do navegador para retornar ao site publicado. A maioria dos consoles não é acessível a partir da navegação global no ambiente de publicação.
+Use o botão Voltar do navegador para retornar ao site publicado. A maioria dos consoles não pode ser acessada a partir da navegação global no ambiente de publicação.
 
 ![moderationlink](assets/moderationlink.png)
 
-## Autoregistro {#self-registration}
+## Autorregistro {#self-registration}
 
-Depois de fazer logoff, é possível criar um novo registro de usuário.
+Depois de fazer logout, é possível criar um novo registro de usuário.
 
 * Selecionar `Log In`
 * Selecionar `Sign up for a new account`
 
 ![registro](assets/registration.png)
 
-![assinatura](assets/signup.png)
+![inscrição](assets/signup.png)
 
-Por padrão, o endereço de email é a id de logon. Se estiver desmarcado, o visitante poderá inserir sua própria ID de logon (nome de usuário). O nome de usuário deve ser exclusivo no ambiente de publicação.
+Por padrão, o endereço de email é a ID de logon. Se estiver desmarcada, o visitante poderá inserir sua própria ID de logon (nome de usuário). O nome de usuário deve ser exclusivo no ambiente de publicação.
 
-Após especificar o nome do usuário, email e senha, selecione `Sign Up` O criará o usuário e permitirá que ele assine.
+Depois de especificar o nome do usuário, email e senha, selecione `Sign Up` criará o usuário e permitirá que ele assine.
 
-Depois de conectado, a primeira página apresentada é sua `Profile` , que podem personalizar.
+Depois de fazer logon, a primeira página apresentada é a delas `Profile` página, que eles podem personalizar.
 
-![o perfil do visitante](assets/profile.png)
+![perfil](assets/profile.png)
 
-Se o membro esquecer a id de logon, será possível recuperar o usando seu endereço de email.
+Se o membro esquecer sua ID de logon, é possível recuperar o está usando seu endereço de email.
 
 ![forgotusername](assets/forgotusername.png)

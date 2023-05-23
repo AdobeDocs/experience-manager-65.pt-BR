@@ -1,7 +1,7 @@
 ---
-title: Validar um documento DDX usando a API do serviço da Web
+title: Validar um documento DDX usando a API do serviço Web
 seo-title: Validate a DDX document using theweb service API
-description: Use a API do Serviço de Assembler para validar um documento DDX.
+description: Use a API de serviço do Assembler para validar um documento DDX.
 seo-description: Use the Assembler Service API to validate a DDX document.
 uuid: f6125746-6138-4e46-a1c4-fb24fd7399c5
 contentOwner: admin
@@ -18,68 +18,68 @@ ht-degree: 0%
 
 ---
 
-# Validar um documento DDX usando a API do serviço da Web {#validate-a-ddx-document-using-theweb-service-api}
+# Validar um documento DDX usando a API do serviço Web {#validate-a-ddx-document-using-theweb-service-api}
 
-**Exemplos e exemplos neste documento são apenas para o AEM Forms no ambiente JEE.**
+**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
 
-Valide um documento DDX usando a API do Serviço de Assembler (serviço da Web):
+Valide um documento DDX usando a API de serviço do Assembler (serviço Web):
 
-1. Inclua arquivos de projeto.
+1. Incluir arquivos de projeto.
 
-   Crie um projeto Microsoft .NET que use MTOM. Certifique-se de usar a seguinte definição de WSDL: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
+   Crie um projeto Microsoft .NET que use MTOM. Certifique-se de usar a seguinte definição WSDL: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
    >Substitua localhost pelo endereço IP do servidor de formulários.
 
-1. Crie um cliente Assembler PDF.
+1. Crie um cliente PDF Assembler.
 
-   * Crie um `AssemblerServiceClient` usando seu construtor padrão.
-   * Crie um `AssemblerServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Passe um valor de string que especifica o WSDL para o serviço do AEM Forms (por exemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado ao criar uma referência de serviço.
-   * Crie um `System.ServiceModel.BasicHttpBinding` obtendo o valor da variável `AssemblerServiceClient.Endpoint.Binding` campo. Converta o valor de retorno para `BasicHttpBinding`.
-   * Defina as `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que o MTOM seja usado.
+   * Criar um `AssemblerServiceClient` usando seu construtor padrão.
+   * Criar um `AssemblerServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado quando você cria uma referência de serviço.
+   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `AssemblerServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
       * Atribuir o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor correspondente da senha ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+      * Atribua o valor de senha correspondente ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Faça referência a um documento DDX existente.
+1. Consulte um documento DDX existente.
 
-   * Crie um `BLOB` usando seu construtor. O `BLOB` é usado para armazenar o documento DDX.
-   * Crie um `System.IO.FileStream` chamando seu construtor e passando um valor de string que representa o local do arquivo do documento DX e o modo para abrir o arquivo no.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo a variável `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo chamando a variável `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo a ser lido.
-   * Preencha o `BLOB` ao atribuir seu `MTOM` com o conteúdo da matriz de bytes.
+   * Criar um `BLOB` usando seu construtor. A variável `BLOB` objeto é usado para armazenar o documento DDX.
+   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento DDX e o modo em que o arquivo será aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
+   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
 
-1. Defina opções de tempo de execução para validar o documento DDX.
+1. Defina as opções de tempo de execução para validar o documento DDX.
 
-   * Crie um `AssemblerOptionSpec` que armazena opções de tempo de execução usando seu construtor.
+   * Criar um `AssemblerOptionSpec` objeto que armazena opções de tempo de execução usando seu construtor.
    * Defina a opção de tempo de execução que instrui o serviço Assembler a validar o documento DDX atribuindo o valor true ao `AssemblerOptionSpec` do objeto `validateOnly` membro de dados.
-   * Defina a quantidade de informações que o serviço Assembler grava no arquivo de log atribuindo um valor de string à variável `AssemblerOptionSpec` do objeto `logLevel` membro de dados. método Ao validar um documento DDX, você deseja que mais informações sejam gravadas no arquivo de log que ajudará no processo de validação. Como resultado, é possível especificar o valor `FINE` ou `FINER`. Para obter informações sobre as opções de tempo de execução que podem ser definidas, consulte o `AssemblerOptionSpec` referência de classe em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Defina a quantidade de informações que o serviço Assembler grava no arquivo de log atribuindo um valor de string ao `AssemblerOptionSpec` do objeto `logLevel` membro de dados. método Ao validar um documento DDX, você deseja que mais informações sejam gravadas no arquivo de log que auxiliará no processo de validação. Como resultado, é possível especificar o valor `FINE` ou `FINER`. Para obter informações sobre as opções de tempo de execução que podem ser definidas, consulte `AssemblerOptionSpec` referência de classe em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Execute a validação.
 
-   Chame o `AssemblerServiceClient` do objeto `invokeDDX` e transmita os seguintes valores:
+   Chame o `AssemblerServiceClient` do objeto `invokeDDX` e passe os seguintes valores:
 
    * A `BLOB` objeto que representa o documento DDX.
-   * O valor `null` para `Map` objeto que geralmente armazena documentos PDF.
-   * Um `AssemblerOptionSpec` que especifica as opções de tempo de execução.
+   * O valor `null` para o `Map` objeto que geralmente armazena documentos PDF.
+   * Um `AssemblerOptionSpec` objeto que especifica as opções de tempo de execução.
 
-   O `invokeDDX` retorna um método `AssemblerResult` objeto que contém informações que especificam se o documento DDX é válido.
+   A variável `invokeDDX` o método retorna um `AssemblerResult` objeto que contém informações que especificam se o documento DDX é válido.
 
-1. Salve os resultados de validação em um arquivo de log.
+1. Salve os resultados da validação em um arquivo de log.
 
-   * Crie um `System.IO.FileStream` chamando seu construtor e passando um valor de string que representa o local do arquivo de log e o modo no qual o arquivo será aberto. Certifique-se de que a extensão do nome de arquivo seja .xml.
-   * Crie um `BLOB` objeto que armazena informações de log obtendo o valor da variável `AssemblerResult` do objeto `jobLog` membro de dados.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `BLOB` objeto. Preencha a matriz de bytes obtendo o valor da variável `BLOB` do objeto `MTOM` campo.
-   * Crie um `System.IO.BinaryWriter` chamando seu construtor e passando o `System.IO.FileStream` objeto.
-   * Escreva o conteúdo da matriz de bytes em um arquivo PDF chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo de log e o modo em que o arquivo será aberto. Verifique se a extensão do nome do arquivo é .xml.
+   * Criar um `BLOB` objeto que armazena informações de log obtendo o valor do `AssemblerResult` do objeto `jobLog` membro de dados.
+   * Crie uma matriz de bytes que armazene o conteúdo da variável `BLOB` objeto. Preencha a matriz de bytes obtendo o valor de `BLOB` do objeto `MTOM` campo.
+   * Criar um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
+   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
 
    >[!NOTE]
    >
-   >Se o documento DDX for inválido, um `OperationException` é jogada. Na declaração catch, é possível obter o valor da variável `OperationException` do objeto `jobLog` membro.
+   >Se o documento DDX for inválido, uma `OperationException` é lançado. Na instrução catch, é possível obter o valor de `OperationException` do objeto `jobLog` membro.
 
 **Consulte também**
 

@@ -1,6 +1,6 @@
 ---
-title: Implantar o eCommerce com o SAP Commerce Cloud
-description: Saiba como implantar o eCommerce com o SAP Commerce Cloud.
+title: Implantação do comércio eletrônico com o SAP Commerce Cloud
+description: Saiba como implantar o comércio eletrônico com o SAP Commerce Cloud.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
@@ -12,11 +12,11 @@ ht-degree: 2%
 
 ---
 
-# Commerce Cloud SAP{#sap-commerce-cloud}
+# COMMERCE CLOUD SAP{#sap-commerce-cloud}
 
 >[!NOTE]
 >
->Esta página contém links para o site de hybris. Para determinadas páginas, você precisará de uma conta para fazer logon.
+>Esta página contém links para o site da hybris. Para determinadas páginas, será necessário ter uma conta para fazer logon.
 
 ## Implantação do comércio eletrônico com o SAP Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
 
@@ -26,50 +26,50 @@ ht-degree: 2%
 >
 >`Geometrixx Outdoors Site English (US)`
 
-Implantação do [pacotes necessários de comércio eletrônico](#packages-needed-for-ecommerce-with-hybris) fornecerá a funcionalidade completa da estrutura de comércio eletrônico, juntamente com uma implementação de referência da funcionalidade de comércio eletrônico, conforme fornecido com uma implementação de hiperligações (incluindo um catálogo de demonstração)
+Implantar o [pacotes de comércio eletrônico necessários](#packages-needed-for-ecommerce-with-hybris) fornecerá a funcionalidade completa da estrutura de comércio eletrônico, juntamente com uma implementação de referência da funcionalidade de comércio eletrônico, conforme fornecido com uma implementação híbrida (incluindo um catálogo de demonstração)
 
-Está disponível na ramificação Inglês (EUA) ( `/content/geometrixx-outdoors/en_US`) do site Geometrixx Outdoors:
+Está disponível na ramificação em inglês (EUA) ( `/content/geometrixx-outdoors/en_US`) do local da Geometrixx Outdoors:
 
-* [Informações sobre o produto](#productinformationwithcolorvariants) (com variantes de cor, quando apropriado)
+* [Informações do produto](#productinformationwithcolorvariants) (com variantes de cor, quando apropriado)
 
-* [Visão geral do conteúdo do Carrinho de compras](#shoppingcartcontentoverview)
-* [Inscrição no Cliente](#customersignup) e [Logon do cliente](#customersignin)
+* [Visão geral do conteúdo do carrinho de compras](#shoppingcartcontentoverview)
+* [Inscrição do cliente](#customersignup) e [Logon do cliente](#customersignin)
 
-* [Acesso ao console de gerenciamento de híbridos](#accesstothehybrismanagementconsole)
+* [Acesso ao console de gerenciamento híbrido](#accesstothehybrismanagementconsole)
 
-### Requisitos técnicos - servidor hybris {#technical-requirements-hybris-server}
+### Requisitos técnicos - hybris Server {#technical-requirements-hybris-server}
 
-A extensão hybris da estrutura de integração de comércio eletrônico foi atualizada para oferecer suporte ao Hybris 5 (como padrão), mantendo a compatibilidade com versões anteriores do [Híbris 4](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#developing-for-hybris).
+A extensão hybris da Estrutura de integração de comércio eletrônico foi atualizada para oferecer suporte ao Hybris 5 (como padrão), mantendo a compatibilidade com versões anteriores com o [Hybris 4](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#developing-for-hybris).
 
 >[!NOTE]
 >
->* Suporta as versões 18.11 e superior.
->* Você precisará do Java 7 para executar a variável [servidor hybris 5.](https://www.hybris.com/en/architecture-technology)
->* O complemento hybris, o [Acelerador de Telco](https://www.hybris.com/en/products/telecommunication), não é compatível com a extensão do AEM.
+>* Oferece suporte às versões 18.11 e posteriores.
+>* Você precisará do Java 7 para executar o [hybris 5 server.](https://www.hybris.com/en/architecture-technology)
+>* O complemento hybris, a variável [Acelerador Telco](https://www.hybris.com/en/products/telecommunication), não é compatível com a extensão AEM.
 >
 
 
-### Pacotes necessários para comércio eletrônico com híbridos {#packages-needed-for-ecommerce-with-hybris}
+### Pacotes necessários para comércio eletrônico com hybris {#packages-needed-for-ecommerce-with-hybris}
 
-Para instalar a funcionalidade de comércio eletrônico, é necessário:
+Para instalar a funcionalidade de comércio eletrônico, você precisa:
 
 * Seu servidor hybris
-* AEM estrutura de comércio eletrônico:
+* Estrutura de comércio eletrônico AEM:
 
-   * isso faz parte de uma instalação AEM padrão
+   * isto é parte de uma instalação padrão do AEM
 
-* AEM pacote Geometrixx-all:
+* Pacote para AEM Geometrixx-all:
 
    * `cq-geometrixx-all-pkg`
 
-* Pacotes de conteúdo de híbridos AEM:
+* Pacotes de conteúdo do AEM hybris:
 
    * `cq-hybris-content-6.3.2`
-   * implementação de API específica de híbridos
+   * implementação da API específica do hybris
    * `cq-geometrixx-hybris-content-6.3.2`
-   * uma implementação de referência para ilustrar o uso de híbridos ( `geometrixx-outdoors/en_US`)
+   * uma implementação de referência para ilustrar o uso de hybris ( `geometrixx-outdoors/en_US`)
 
-### Instalação do comércio eletrônico com híbridos {#installation-of-ecommerce-with-hybris}
+### Instalação do eCommerce com hybris {#installation-of-ecommerce-with-hybris}
 
 Para instalar uma configuração completa (usando o catálogo de demonstração, Geometrixx Outdoors), as etapas básicas são:
 
@@ -84,15 +84,15 @@ Para instalar uma configuração completa (usando o catálogo de demonstração,
    1. ` [cq-geometrixx-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-geometrixx-hybris-content)`
 
 1. [Baixe e crie seu servidor hybris](#download-and-build-your-hybris-server).
-1. Construa seu catálogo no seu mecanismo de comércio eletrônico:
+1. Construa seu catálogo no mecanismo de comércio eletrônico:
 
-   1. [Configure a loja no exterior do Geometrixx](#setup-the-geometrixx-outdoors-store).
+   1. [Configurar a loja de outdoor do Geometrixx](#setup-the-geometrixx-outdoors-store).
 
-1. [Autor](/help/sites-authoring/qg-page-authoring.md) quaisquer páginas suplementares necessárias no AEM.
+1. [Autor](/help/sites-authoring/qg-page-authoring.md) qualquer página suplementar que você precise no AEM.
 
 >[!CAUTION]
 >
->O uso do servidor hybris requer uma licença de hybris separada.
+>O uso do servidor hybris requer uma licença hybris separada.
 
 >[!NOTE]
 >
@@ -100,21 +100,21 @@ Para instalar uma configuração completa (usando o catálogo de demonstração,
 
 ### Baixe e crie seu servidor hybris {#download-and-build-your-hybris-server}
 
-As etapas neste procedimento baixarão e criarão o servidor hybris. Ele também fará as configurações iniciais necessárias para as conexões entre hybris e cq. A extensão será utilizável com as configurações padrão.
+As etapas neste procedimento baixarão e criarão o servidor hybris. Ele também fará as configurações iniciais necessárias para as conexões entre hybris e cq. A extensão poderá ser usada com as configurações padrão.
 
 >[!CAUTION]
 >
->As versões Hybris anteriores à 5.5.1 não são compatíveis.
+>As versões do Hybris anteriores à 5.5.1 não são compatíveis.
 
 >[!NOTE]
 >
->Para concluir isso, será necessário [Groovy](https://groovy-lang.org/) instalado no seu sistema.
+>Para concluir, é necessário [Groovy](https://groovy-lang.org/) instalado no sistema.
 
-1. Baixe o **hybris Commerce Suite** distribuição do site de download de híbridos.
+1. Baixe o **hybris Commerce Suite** distribuição do site de download do hybris.
 
    >[!CAUTION]
    >
-   >Você precisará de uma conta (de híbridos) para acessar o .
+   >Você precisará de uma conta (do hybris) para acessar isso.
 
 1. Descompacte o arquivo de distribuição no local desejado (referido como &lt;hybris-root-directory>).
 1. Na linha de comando, execute o seguinte:
@@ -132,9 +132,9 @@ As etapas neste procedimento baixarão e criarão o servidor hybris. Ele também
    >
    >`ant clean all`
    >
-   >Press `Return` quando necessário.
+   >Pressione `Return` quando necessário.
 
-1. Baixe os seguintes arquivos para a pasta raiz da distribuição de híbridos extraídos,
+1. Baixe os arquivos a seguir para a pasta raiz da distribuição hybris extraída,
 
    ```
        <hybris-root-directory>
@@ -145,7 +145,7 @@ As etapas neste procedimento baixarão e criarão o servidor hybris. Ele também
 
    >[!NOTE]
    >
-   >Para hybris 5.6.0 e posteriores, use o seguinte setup.groovy.
+   >Para o hybris 5.6.0 e versões posteriores, use o seguinte setup.groovy.
 
    5.6.0 e posterior
 
@@ -154,7 +154,7 @@ As etapas neste procedimento baixarão e criarão o servidor hybris. Ele também
 1. Na linha de comando, execute o seguinte para:
 
    * atualizar a configuração do servidor hybris (conforme exigido pela extensão)
-   * recrie o servidor hybris com a configuração modificada
+   * reconstruir o servidor hybris com a configuração modificada
    * iniciar o servidor
 
    ```shell
@@ -166,13 +166,13 @@ As etapas neste procedimento baixarão e criarão o servidor hybris. Ele também
 
    >[!NOTE]
    >
-   >Dependendo do seu sistema, várias dessas etapas podem levar vários minutos para serem concluídas.
+   >Dependendo do sistema, várias dessas etapas podem levar vários minutos para serem concluídas.
 
-1. No seu navegador, navegue até o **console de administração de híbridos** em:
+1. Em seu navegador, navegue até o **console de administração hybris** em:
 
    [http://localhost:9002](http://localhost:9002)
 
-1. Clique em **Inicializar** e, em seguida, confirme a ação de inicialização (pois ela excluirá os dados existentes).
+1. Clique em **Inicializar** e, em seguida, confirme a ação de inicialização (pois excluirá os dados existentes).
 
    O progresso será mostrado no console, com `FINISHED` indicando a conclusão.
 
@@ -180,61 +180,61 @@ As etapas neste procedimento baixarão e criarão o servidor hybris. Ele também
    >
    >Dependendo do sistema, isso pode levar vários minutos para ser concluído.
 
-### Configurar a Geometrixx Outdoors Store {#setup-the-geometrixx-outdoors-store}
+### Configurar a loja de Geometrixx Outdoors {#setup-the-geometrixx-outdoors-store}
 
-Este procedimento fará upload e configurará a loja de demonstração - Geometrixx Online.
+Este procedimento fará o upload e a configuração da loja de demonstração - Geometrixx Online.
 
-1. Inicie sua instância de híbridos. Na linha de comando, execute o seguinte:
+1. Inicie a instância do hybris. Na linha de comando, execute o seguinte:
 
    ```shell
    cd <hybris-root-directory>/bin/platform
    sh hybrisserver.sh
    ```
 
-1. No seu navegador, navegue até o **console de gerenciamento de híbridos** em:
+1. Em seu navegador, navegue até o **hybris management console** em:
 
    [https://localhost:9002/backoffice](https://localhost:9002/backoffice)
 
-   Use estas credenciais:
-   * nome de usuário: administrador
+   Usar estas credenciais:
+   * nome de usuário: admin
    * senha: nimda
 
-1. Na navegação da barra lateral, expanda **Sistema** e **Ferramentas**. Em seguida, selecione **Importar** para abrir o **Assistente: Importação de CSV** janela.
-1. No **Configuração** guia , **Upload** o seguinte **Importar arquivo**:
+1. Na navegação da barra lateral, expanda **Sistema** e **Ferramentas**. Em seguida, selecione **Importar** para abrir o **Assistente: importação de CSV** janela.
+1. No **Configuração** guia, **Carregar** o seguinte **Importar arquivo**:
 
 [Obter arquivo](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
 
-1. Defina as **Configuração de localidade** para:
+1. Defina o **Configuração de local** para:
 
    `en_US - English (United States)`
 
-1. Abra o **Recursos** guia .
-1. **Upload** o seguinte **Media-Zip**:
+1. Abra o **Recursos** guia.
+1. **Carregar** o seguinte **Media-Zip**:
 
 [Obter arquivo](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
 
-1. Clique em **Iniciar** para importar os arquivos especificados. O **Resultado** mostrará quaisquer entradas de log.
+1. Clique em **Início** para importar os arquivos especificados. A variável **Resultado** mostrará quaisquer entradas de log.
 
 1. Clique em **Concluído** para fechar a janela de importação.
 
-1. Na barra lateral, selecione **Sistema**, em seguida **Ferramentas**, em seguida **Importar**.
+1. Na barra lateral, selecione **Sistema**, depois **Ferramentas**, depois **Importar**.
 
-1. **Upload** o seguinte **Importar arquivo**:
+1. **Carregar** o seguinte **Importar arquivo**:
 
 [Obter arquivo](/help/sites-deploying/assets/base-store.csv)
 
-   Para os híbridos 5.7, use o seguinte:
+   Para o hybris 5.7, use o seguinte:
 
 [Obter arquivo](/help/sites-deploying/assets/base-store-5_7.csv)
 
-1. Defina as **Configuração de localidade** para:
+1. Defina o **Configuração de local** para:
 
    `en_US - English (United States)`
 
-1. Clique em **Iniciar** para importar os arquivos especificados. O **Resultado** mostrará quaisquer entradas de log.
+1. Clique em **Início** para importar os arquivos especificados. A variável **Resultado** mostrará quaisquer entradas de log.
 
 1. Clique em **Concluído** para fechar a janela de importação.
 
-1. Agora é possível usar o cockpit de produtos para visualizar os catálogos e produtos importados:
+1. Agora você pode usar o cockpit do produto para exibir os catálogos e produtos importados:
 
    [http://localhost:9002/productcockpit](http://localhost:9002/productcockpit)

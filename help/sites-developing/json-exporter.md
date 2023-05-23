@@ -27,17 +27,17 @@ Eles realizam a entrega de conteúdo para canais que não são páginas da Web t
 * Aplicativos nativos para dispositivos móveis
 * outros canais e pontos de contato externos ao AEM
 
-Com fragmentos de conteúdo que usam conteúdo estruturado, você pode fornecer serviços de conteúdo usando o exportador JSON para fornecer o conteúdo de qualquer página AEM no formato de modelo de dados JSON. Esse método pode ser consumido por seus próprios aplicativos.
+Com fragmentos de conteúdo que usam conteúdo estruturado, você pode fornecer serviços de conteúdo usando o exportador JSON para fornecer o conteúdo de qualquer página AEM no formato de modelo de dados JSON. Esse método pode ser consumido pelos seus próprios aplicativos.
 
 >[!NOTE]
 >
->A funcionalidade descrita aqui está disponível para todos os componentes principais desde que [versão 1.1.0 dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR).
+>A funcionalidade descrita aqui está disponível para todos os Componentes principais desde [versão 1.1.0 dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR).
 
-## Exportador JSON com Componentes principais do fragmento de conteúdo {#json-exporter-with-content-fragment-core-components}
+## Exportador JSON com componentes principais de fragmento de conteúdo {#json-exporter-with-content-fragment-core-components}
 
-Usando o exportador JSON de AEM, você pode fornecer o conteúdo de qualquer página de AEM no formato de modelo de dados JSON. Esse método pode ser consumido por seus próprios aplicativos.
+Usando o exportador JSON do AEM, é possível fornecer o conteúdo de qualquer página AEM no formato do modelo de dados JSON. Esse método pode ser consumido pelos seus próprios aplicativos.
 
-No AEM, o delivery é obtido usando o seletor `model` e `.json` extensão.
+No AEM, a entrega é realizada usando o seletor `model` e `.json` extensão.
 
 `.model.json`
 
@@ -51,13 +51,13 @@ No AEM, o delivery é obtido usando o seletor `model` e `.json` extensão.
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
-Como alternativa, você pode fornecer o conteúdo de um fragmento de conteúdo estruturado, direcionando-o especificamente.
+Como alternativa, você pode fornecer o conteúdo de um fragmento de conteúdo estruturado direcionando-o especificamente.
 
-Use o caminho inteiro para o fragmento (por meio do `jcr:content`); por exemplo, com um sufixo como.
+Use o caminho inteiro para o fragmento (por meio da variável `jcr:content`); por exemplo, com um sufixo como.
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
-A página pode conter um único fragmento de conteúdo ou vários componentes de vários tipos. Você também pode usar mecanismos como componentes de lista para pesquisar automaticamente pelo conteúdo relevante.
+Sua página pode conter um único fragmento de conteúdo ou vários componentes de vários tipos. Você também pode usar mecanismos como componentes de lista para pesquisar automaticamente conteúdo relevante.
 
 * Por exemplo, um URL como:
 
@@ -71,11 +71,11 @@ A página pode conter um único fragmento de conteúdo ou vários componentes de
 
    >[!NOTE]
    >
-   >Você pode [adaptar seus próprios componentes](/help/sites-developing/json-exporter-components.md) para acessar e usar esses dados.
+   >Você pode [adapte seus próprios componentes](/help/sites-developing/json-exporter-components.md) para acessar e usar esses dados.
 
    >[!NOTE]
    >
-   >Embora não seja uma implementação padrão, [vários seletores são suportados,](json-exporter-components.md#multiple-selectors) but `model` deve ser o primeiro.
+   >Embora não seja uma implementação padrão, [vários seletores são compatíveis,](json-exporter-components.md#multiple-selectors) mas `model` deve ser o primeiro.
 
 ### Informações adicionais {#further-information}
 
@@ -87,20 +87,20 @@ Consulte também:
 
 * Modelos sling:
 
-   * [Modelos do Sling - Associando uma classe de modelo a um tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Modelos Sling - Associando uma classe de modelo a um tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
 * AEM com JSON:
 
-   * [Obter informações de página no formato JSON](/help/sites-developing/pageinfo.md)
+   * [Obtendo informações de página no formato JSON](/help/sites-developing/pageinfo.md)
 
 ## Documentação relacionada {#related-documentation}
 
 Para obter mais detalhes, consulte:
 
-* O [Tópico Fragmentos de conteúdo no guia do usuário Ativos](/help/assets/content-fragments/content-fragments.md)
+* A variável [Tópico Fragmentos de conteúdo no guia do usuário Ativos](/help/assets/content-fragments/content-fragments.md)
 
 * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 * [Criação com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md)
 * [Ativação de exportação em JSON para um componente](/help/sites-developing/json-exporter-components.md)
 
-* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Componente do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e a variável [Componente Fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

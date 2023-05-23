@@ -14,7 +14,7 @@ exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 99%
+ht-degree: 59%
 
 ---
 
@@ -24,19 +24,19 @@ O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do 
 
 Usando a opção [Usuário](/help/sites-authoring/user-properties.md#user-settings) no [cabeçalho](/help/sites-authoring/basic-handling.md#the-header) e a caixa de diálogo [Minhas preferências](#userpreferences) associada, é possível modificar suas opções de usuário, como as seguintes:
 
-Comece acessando a opção [Usuário](/help/sites-authoring/user-properties.md#user-settings) no cabeçalho.
+Comece acessando o [Usuário](/help/sites-authoring/user-properties.md#user-settings) no cabeçalho.
 
 ## Configurações de usuário {#user-settings}
 
-A caixa de diálogo **Configurações do usuário** oferece acesso ao seguinte:
+A variável **Usuário** a caixa de diálogo configurações dá acesso a:
 
 * Representar como
 
-   * Com a funcionalidade [Representar como,](/help/sites-administering/security.md#impersonating-another-user) um usuário pode trabalhar em nome de outro usuário.
+   * Com o [Representar como](/help/sites-administering/security.md#impersonating-another-user) funcionalidade que um usuário pode trabalhar em nome de outro usuário.
 
 * Perfil
 
-   * Oferece um link conveniente para as [configurações do usuário](/help/sites-administering/security.md)
+   * Oferece um link conveniente para o seu [configurações do usuário](/help/sites-administering/security.md))
 
 * [Minhas preferências](/help/sites-authoring/user-properties.md#my-preferences)
 
@@ -54,15 +54,15 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
 * **Idioma**
 
-   Isso define o idioma a ser usado para a interface de usuário do ambiente de criação. Selecione o idioma desejado na lista disponível.
+   Isso define o idioma a ser usado para a interface do usuário do ambiente de criação. Selecione o idioma desejado na lista disponível.
 
-   Essa configuração também é usada para a interface de usuário clássica.
+   Essa configuração também é usada para a interface clássica.
 
 * **Gerenciamento de janelas**
 
-   Isso define o comportamento ou abertura das janelas. Selecione um dos seguintes:
+   Isso define o comportamento ou a abertura de janelas. Selecione um dos seguintes:
 
-   * **Diversas janelas** (padrão)
+   * **Várias janelas** (Padrão)
 
       * As páginas serão abertas em uma nova janela.
    * **Uma janela**
@@ -105,11 +105,11 @@ Cada usuário pode definir certas propriedades para si mesmo.
    * [Atalhos de teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Atalhos de teclado para os consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
-   Essa opção ativa atalhos de teclado. Por padrão, eles estão ativados, mas podem ser desativados, por exemplo, caso um usuário tenha determinados requisitos de acessibilidade.
+   Essa opção ativa os atalhos de teclado. Por padrão, eles estão ativados, mas podem ser desativados se um usuário tiver determinados requisitos de acessibilidade.
 
 * **Usar a experiência de criação clássica**
 
-   Essa opção permite a criação de uma página baseada na [interface de usuário clássica](/help/sites-classic-ui-authoring/home.md). Por padrão, a interface de usuário padrão é usada.
+   Essa opção permite [IU clássica](/help/sites-classic-ui-authoring/home.md)criação de página com base em. Por padrão, a interface do usuário é usada.
 
 * **Ativar a Página inicial dos ativos**
 
@@ -117,4 +117,4 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
 * **Configuração do Stock**
 
-   Essa opção permite especificar a configuração preferencial do Adobe Stock e só estará disponível se o administrador do sistema tiver habilitado a [integração com o Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+   Essa opção permite especificar a configuração preferencial do Adobe Stock e só estará disponível se o administrador do sistema tiver ativado [Integração do Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

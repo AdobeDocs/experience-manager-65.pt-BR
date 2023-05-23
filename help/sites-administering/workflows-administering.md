@@ -23,7 +23,7 @@ O console do fluxo de trabalho fornece várias ferramentas para administrar inst
 
 >[!NOTE]
 >
->O [Console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) O fornece operações adicionais de manutenção de workflow.
+>A variável [Console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) O fornece operações adicionais de manutenção de workflow.
 
 Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use a [navegação global](/help/sites-authoring/basic-handling.md#global-navigation) para abrir o painel **Ferramentas** e selecione **Fluxo de trabalho**:
 
@@ -99,7 +99,7 @@ Quando um fluxo de trabalho falha, o AEM fornece o console **Falhas**, que permi
 
 * **Detalhes da falha**
 Abre uma janela para mostrar a  
-**Mensagem de falha**, **Etapa** e **Pilha de falhas**.
+**Mensagem de falha**, **Etapa**, e **Pilha de falhas**.
 
 * **Abrir histórico**
 Mostra detalhes do histórico do fluxo de trabalho.
@@ -120,7 +120,7 @@ Para investigar falhas e, em seguida, retomar ou encerrar o fluxo de trabalho, u
 
 Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução.
 
-Configurar **Configuração de limpeza de fluxo de trabalho do Adobe Granite** para limpar instâncias do fluxo de trabalho de acordo com sua idade e status. Você também pode remover as instâncias de fluxo de trabalho de todos os modelos ou de um modelo específico.
+Configurar **Configuração de limpeza de fluxo de trabalho do Adobe Granite** para remover instâncias de fluxo de trabalho de acordo com sua idade e status. Você também pode remover as instâncias de fluxo de trabalho de todos os modelos ou de um modelo específico.
 
 Você também pode criar várias configurações do serviço para remover as instâncias de fluxo de trabalho que satisfaçam critérios diferentes. Por exemplo, crie uma configuração que remova as instâncias de um modelo de fluxo de trabalho específico quando elas estiverem em execução por muito mais tempo do que o esperado. Crie outra configuração que remova todos os fluxos de trabalho concluídos após um determinado número de dias para minimizar o tamanho do repositório.
 
@@ -160,7 +160,7 @@ Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deplo
   <tr>
    <td>Modelos a remover</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>A ID dos modelos de fluxo de trabalho a serem removidos. A ID é o caminho para o nó do modelo, por exemplo:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>Para especificar vários modelos, clique no botão + no console da Web. </p> <p>Não especifique nenhum valor para limpar instâncias de todos os modelos de fluxo de trabalho.</p> </td>
+   <td><p>A ID dos modelos de fluxo de trabalho a serem removidos. A ID é o caminho para o nó do modelo, por exemplo:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>Para especificar vários modelos, clique no botão + no console da Web. </p> <p>Não especifique nenhum valor para remover instâncias de todos os modelos de fluxo de trabalho.</p> </td>
   </tr>
   <tr>
    <td>Idade do fluxo de trabalho</td>
@@ -172,7 +172,7 @@ Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deplo
 
 ## Configuração do tamanho máximo da caixa de entrada {#setting-the-maximum-size-of-the-inbox}
 
-Você pode definir o tamanho máximo da caixa de entrada configurando o **Serviço de fluxo de trabalho do Adobe Granite**, usando o [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [adicionar uma configuração OSGi ao repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). A tabela a seguir descreve a propriedade configurada para qualquer método.
+É possível definir o tamanho máximo da caixa de entrada configurando o **Serviço de fluxo de trabalho do Adobe Granite**, utilizando o [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [adicionar uma configuração OSGi ao repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). A tabela a seguir descreve a propriedade que você configura para qualquer método.
 
 >[!NOTE]
 >
@@ -194,7 +194,7 @@ No nível do modelo de fluxo de trabalho, um sinalizador é fornecido para indic
 
 A propriedade *userMetadataPersistenceEnabled* será armazenada no *nó jcr:content* do modelo de fluxo de trabalho. Esse sinalizador será mantido nos metadados do fluxo de trabalho como *cq:userMetaDataCustomPersistenceEnabled*.
 
-A ilustração abaixo mostra como definir o sinalizador em um workflow.
+A ilustração abaixo mostra como definir o sinalizador em um fluxo de trabalho.
 
 ![workflow-externalize-config](assets/workflow-externalize-config.png)
 

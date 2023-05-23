@@ -1,6 +1,6 @@
 ---
 title: Vídeo
-description: Saiba mais sobre o gerenciamento centralizado de ativos de vídeo no Adobe Experience Manager Assets, onde é possível fazer upload de vídeos para codificação automática no Dynamic Media Classic e acessar vídeos do Dynamic Media Classic diretamente do Experience Manager Assets. A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado para todas as telas.
+description: Saiba mais sobre o gerenciamento centralizado de ativos de vídeo do Adobe Experience Manager Assets, onde você pode fazer upload de vídeos para codificação automática no Dynamic Media Classic e acessar vídeos do Dynamic Media Classic diretamente do Experience Manager Assets. A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado para todas as telas.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -14,106 +14,106 @@ feature: Video
 source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '1563'
-ht-degree: 31%
+ht-degree: 1%
 
 ---
 
 # Vídeo {#video}
 
-O Adobe Experience Manager Assets oferece gerenciamento centralizado de ativos de vídeo, onde é possível fazer upload de vídeos diretamente para os Ativos, a fim de codificar automaticamente para o Dynamic Media Classic, e acessar vídeos do Dynamic Media Classic diretamente dos Ativos, para criação de página.
+O Adobe Experience Manager Assets fornece um gerenciamento centralizado de ativos de vídeo, em que você pode fazer upload de vídeos diretamente no Assets para codificação automática no Dynamic Media Classic e acessar vídeos do Dynamic Media Classic diretamente do Assets para criação de página.
 
-A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado para todas as telas (detecção automática de dispositivo e de largura de banda).
+A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo otimizado a todas as telas (detecção automática de dispositivo e largura de banda).
 
-* O **[!UICONTROL Vídeo Scene7]** O componente executa automaticamente a detecção de dispositivo e de largura de banda para reproduzir o vídeo no formato adequado e de qualidade certa em desktops, tablets e dispositivos móveis.
-* Assets: é possível incluir conjuntos de vídeos adaptáveis, em vez de somente ativos de vídeo individuais. Um conjunto de vídeos adaptáveis contém todas as representações de vídeo necessárias para reproduzir o vídeo com facilidade em várias telas. Um Conjunto de vídeos adaptáveis agrupa versões do mesmo vídeo codificadas em diferentes formatos e taxas de bits, como 400 kbps, 800 kbps e 1000 kbps. Você usa um Conjunto de vídeos adaptáveis, juntamente com o componente de vídeo do S7, para transmissão de vídeo adaptável em várias telas, incluindo dispositivos móveis de desktop, iOS, Android™, BlackBerry® e Windows.
+* A variável **[!UICONTROL Vídeo do Scene7]** O componente executa automaticamente a detecção de dispositivos e largura de banda para reproduzir o formato certo e o vídeo com a qualidade certa em desktops, tablets e dispositivos móveis.
+* Ativos - É possível incluir conjuntos de vídeos adaptáveis em vez de apenas ativos de vídeo únicos. Um conjunto de vídeos adaptáveis contém todas as representações de vídeo necessárias para reproduzir vídeo de forma contínua em várias telas. Um Conjunto de vídeos adaptados agrupa versões do mesmo vídeo codificadas em taxas de bits e formatos diferentes, como 400 kbps, 800 kbps e 1000 kbps. Você usa um Conjunto de vídeos adaptados, juntamente com o componente de vídeo S7, para transmissão de vídeo adaptado em várias telas, incluindo dispositivos móveis para desktop, iOS, Android™, BlackBerry® e Windows.
 <!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## Sobre FFMPEG e Dynamic Media Classic {#about-ffmpeg-and-scene}
 
-O processo de codificação de vídeo padrão se baseia no uso da integração em FFMPEG com perfis de vídeo. Portanto, o fluxo de trabalho de assimilação de DAM pronto para uso contém as duas etapas de fluxo de trabalho baseadas em ffmpeg a seguir:
+O processo de codificação de vídeo padrão é baseado no uso da integração baseada em FFMPEG com perfis de vídeo. Portanto, o fluxo de trabalho de assimilação do DAM pronto para uso contém as duas etapas de fluxo de trabalho baseadas em ffmpeg a seguir:
 
 * Miniaturas de FFMPEG
 * Codificação FFMPEG
 
-Habilitar e configurar a integração do Dynamic Media Classic não remove ou desativa automaticamente essas duas etapas do fluxo de trabalho do fluxo de trabalho de assimilação DAM pronto para uso. Se você já usa a codificação de vídeo baseada em FFMPEG no Adobe Experience Manager, é provável que tenha o FFMPEG instalado em seus ambientes de criação. Nesse caso, um novo vídeo assimilado usando DAM seria codificado duas vezes: uma vez no codificador FFMPEG e uma vez na integração do Dynamic Media Classic.
+A ativação e a configuração da integração do Dynamic Media Classic não removem nem desativam automaticamente essas duas etapas do fluxo de trabalho de assimilação do DAM pronto para uso. Se você já usa a codificação de vídeo baseada em FFMPEG no Adobe Experience Manager, é provável que tenha o FFMPEG instalado em seus ambientes de criação. Nesse caso, um novo vídeo assimilado usando DAM seria codificado duas vezes: uma vez no codificador FFMPEG e outra na integração do Dynamic Media Classic.
 
-Se você tiver a codificação de vídeo baseada em FFMPEG configurada no Experience Manager e o FFMPEG instalado, o Adobe recomenda remover os dois fluxos de trabalho FFMPEG dos fluxos de trabalho de assimilação do DAM.
+Se você tiver a codificação de vídeo baseada em FFMPEG no Experience Manager configurada e o FFMPEG instalado, o Adobe recomenda remover os dois workflows FFMPEG dos workflows de assimilação do DAM.
 
 ## Formatos suportados {#supported-formats}
 
-Os seguintes formatos são compatíveis com o componente de vídeo do Scene7:
+Os seguintes formatos são compatíveis com o componente de Vídeo do Scene7:
 
 * F4V H.264
 * MP4 H.264
 
-## Decida onde fazer upload do vídeo {#deciding-where-to-upload-your-video}
+## Decida onde carregar seu vídeo {#deciding-where-to-upload-your-video}
 
-Para decidir onde fazer upload de seus ativos de vídeo, considere o seguinte:
+A decisão sobre onde carregar seus ativos de vídeo depende do seguinte:
 
-* O ativo de vídeo requer um fluxo de trabalho?
-* O ativo de vídeo requer controle de versão?
+* Você precisa de um fluxo de trabalho para o ativo de vídeo?
+* Você precisa do controle de versão para o ativo de vídeo?
 
-Se a resposta for “sim” para ambas as perguntas, faça upload do vídeo diretamente no Adobe DAM. Se a resposta for &quot;não&quot; para ambas as perguntas, faça upload do vídeo diretamente no Dynamic Media Classic. O fluxo de trabalho referente a cada cenário é descrito na próxima seção.
+Se a resposta for &quot;sim&quot; a uma ou ambas as perguntas, carregue o vídeo diretamente no Adobe DAM. Se a resposta for &quot;não&quot; às duas perguntas, carregue o vídeo diretamente no Dynamic Media Classic. O fluxo de trabalho para cada cenário é descrito na seção a seguir.
 
-### Se você estiver fazendo upload do vídeo diretamente no Adobe DAM {#if-you-are-uploading-your-video-directly-to-adobe-dam}
+### Se você estiver carregando o vídeo diretamente no DAM do Adobe {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
-Se precisar de um fluxo de trabalho ou controle de versão para seus ativos, carregue primeiro no Adobe DAM. Este é o fluxo de trabalho recomendado:
+Se precisar de um fluxo de trabalho ou controle de versão para seus ativos, carregue primeiro para o DAM do Adobe. O fluxo de trabalho recomendado é o seguinte:
 
-1. Faça upload do ativo de vídeo no Adobe DAM e codifique e publique automaticamente no Dynamic Media Classic.
-1. No Experience Manager, acesse os ativos de vídeo no WCM na **[!UICONTROL Filmes]** do Localizador de conteúdo.
-1. Autor com **[!UICONTROL Vídeo Scene7]** ou **[!UICONTROL Vídeo de base]** componente.
+1. Faça upload do ativo de vídeo para o DAM do Adobe e codifique e publique automaticamente no Dynamic Media Classic.
+1. No Experience Manager, acesse os ativos de vídeo no WCM no **[!UICONTROL Filmes]** do Localizador de conteúdo.
+1. Autor com **[!UICONTROL Vídeo do Scene7]** ou **[!UICONTROL Vídeo do Foundation]** componente.
 
-### Se você estiver fazendo upload do seu vídeo para o Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
+### Se você estiver carregando seu vídeo no Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
 
-Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos, faça upload dos ativos para a Scene7. Este é o fluxo de trabalho recomendado:
+Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos, faça upload dos ativos para a Scene7. O fluxo de trabalho recomendado é o seguinte:
 
-1. No Dynamic Media Classic, [configurar um upload e codificação agendados de FTP para o Scene7 (automatizado pelo sistema)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
-1. No Experience Manager, acesse os ativos de vídeo no WCM na **[!UICONTROL Scene7]** do Localizador de conteúdo.
-1. Crie com o **[!UICONTROL Vídeo Scene7]** componente.
+1. No Dynamic Media Classic, [configurar o upload e a codificação programados do FTP no Scene7 (automatizado pelo sistema)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+1. No Experience Manager, acesse os ativos de vídeo no WCM no **[!UICONTROL Scene7]** do Localizador de conteúdo.
+1. Autor com o **[!UICONTROL Vídeo do Scene7]** componente.
 
 ## Configurar integração com o Scene7 Video {#configuring-integration-with-scene-video}
 
-1. Em **[!UICONTROL Cloud Services]**, navegue até o **[!UICONTROL Scene7]** e selecione **[!UICONTROL Editar]**.
-1. Selecione a guia **[!UICONTROL Vídeo]**.
+1. Entrada **[!UICONTROL Cloud Services]**, navegue até o **[!UICONTROL Scene7]** e selecione **[!UICONTROL Editar]**.
+1. Selecione o **[!UICONTROL Vídeo]** guia.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
 
    >[!NOTE]
    >
-   >A guia **[!UICONTROL Vídeo]** não será exibida se a página não possuir uma configuração de nuvem.
+   >A variável **[!UICONTROL Vídeo]** A guia não será exibida se a página não tiver uma configuração na nuvem.
 
-1. Selecione o perfil de codificação de vídeo adaptável, um perfil de codificação de vídeo pronto para uso ou um perfil de codificação de vídeo personalizado.
+1. Selecione o perfil de codificação de vídeo adaptável, um perfil de codificação de vídeo único pronto para uso ou um perfil de codificação de vídeo personalizado.
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre o que significam as predefinições de vídeo, consulte o [Documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
+   >Para obter mais informações sobre o que significam as predefinições de vídeo, consulte [Documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
-   >A Adobe recomenda selecionar ambos os conjuntos de vídeos adaptáveis ao configurar as predefinições universais ou selecionar a opção **[!UICONTROL Codificação de vídeo adaptável]**.
+   >Adobe recomenda selecionar os dois conjuntos de vídeo adaptável ao configurar as predefinições universais ou selecionar a variável **[!UICONTROL Codificação de vídeo adaptável]** opção.
 
-1. Os perfis de codificação selecionados são aplicados automaticamente a todos os vídeos enviados por upload para a pasta de destino DAM CQ configurada para essa configuração de nuvem do Scene7. É possível configurar várias configurações de nuvem do Scene7 com diferentes pastas de destino para aplicar diversos perfis de codificação, conforme necessário.
+1. Os perfis de codificação selecionados são aplicados automaticamente a todos os vídeos carregados na pasta de destino do CQ DAM que você configurou para essa configuração de nuvem do Scene7. É possível definir várias configurações de nuvem do Scene7 com pastas de destino diferentes para aplicar perfis de codificação diferentes, conforme necessário.
 
 ## Atualizar predefinições do visualizador e de codificação {#updating-viewer-and-encoding-presets}
 
-Para atualizar o visualizador e as predefinições de codificação de vídeo porque as predefinições foram atualizadas no Scene7, navegue até a configuração do Scene7 na Configuração da nuvem e selecione **[!UICONTROL Atualizar as predefinições de codificação e do visualizador]**.
+Para atualizar as predefinições do visualizador e de codificação para o vídeo porque as predefinições foram atualizadas no Scene7, navegue até a configuração do Scene7 na Configuração da nuvem e selecione **[!UICONTROL Atualizar o visualizador e as predefinições de codificação]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Faça upload do vídeo de origem primária para o Scene7 a partir do Adobe DAM {#uploading-your-master-video}
+## Faça upload do vídeo de origem principal para o Scene7 a partir do Adobe DAM {#uploading-your-master-video}
 
-1. Navegue até a pasta de destino DAM CQ onde você definiu as configurações de nuvem com os perfis de codificação do Scene7.
-1. Selecionar **[!UICONTROL Upload]** para fazer upload do vídeo de origem primária. O upload e a codificação do vídeo são concluídos após a [!UICONTROL Ativo de atualização DAM] O fluxo de trabalho está concluído e **[!UICONTROL Publicar no Scene7]** tem uma marca de seleção.
+1. Navegue até a pasta de destino do CQ DAM, na qual você definiu a configuração da nuvem com perfis de codificação do Scene7.
+1. Selecionar **[!UICONTROL Carregar]** para carregar o vídeo de origem principal. O upload e a codificação de vídeo são concluídos após a [!UICONTROL Ativo de atualização DAM] o fluxo de trabalho está concluído e **[!UICONTROL Publicar no Scene7]** tem uma marca de seleção.
 
    >[!NOTE]
    >
-   >Leva tempo para que as miniaturas de vídeo sejam geradas.
+   >Demora até que as miniaturas de vídeo sejam geradas.
 
-   Arrastar o vídeo de origem primária do DAM para os acessos do componente de vídeo *all* Representações de proxy codificadas no Scene7 para entrega.
+   Arrastar o vídeo de origem principal do DAM para o componente de vídeo acessa *all* Representações de proxy codificadas do Scene7 para entrega.
 
-## Comparação do componente de vídeo de base com o componente de vídeo do Scene7 {#foundation-video-component-versus-scene-video-component}
+## Componente de vídeo do Foundation versus Componente de vídeo do Scene7 {#foundation-video-component-versus-scene-video-component}
 
-Ao usar o Experience Manager, você tem acesso ao componente Vídeo disponível no Sites e ao componente de vídeo do Scene7. Esses componentes não são intercambiáveis.
+Ao usar o Experience Manager, você tem acesso ao componente de Vídeo disponível no Sites e ao componente de Vídeo do Scene7. Esses componentes não são intercambiáveis.
 
-O componente de vídeo do Scene7 funciona somente para vídeos do Scene7. O componente de base funciona com vídeos armazenados do Experience Manager (usando ffmpeg) e vídeos do Scene7.
+O componente de vídeo do Scene7 só funciona para vídeos do Scene7. O componente de base funciona com vídeos armazenados em Experience Manager (usando ffmpeg) e vídeos do Scene7.
 
 A matriz a seguir explica quando usar qual componente:
 
@@ -121,21 +121,21 @@ A matriz a seguir explica quando usar qual componente:
 
 >[!NOTE]
 >
->Pronto para uso, o componente de vídeo do S7 usa o perfil de vídeo universal. No entanto, você pode obter o reprodutor de vídeo baseado em HTML5 para uso pelo Experience Manager. No Scene7, copie o código incorporado do reprodutor de vídeo pronto para uso do HTML5 e coloque-o na página Experience Manager.
+>Imediatamente, o componente de vídeo S7 usa o perfil de vídeo universal. Entretanto, você pode obter o reprodutor de vídeo baseado em HTML para uso pelo Experience Manager. No Scene7, copie o código incorporado do reprodutor de vídeo HTML5 pronto para uso e coloque-o na página Experience Manager.
 
-## Componente Experience Manager Video {#aem-video-component}
+## Componente de vídeo do Experience Manager {#aem-video-component}
 
-Mesmo que o uso do componente de vídeo do Scene7 seja recomendado para visualizar vídeos do Scene7, esta seção descreve o uso de vídeos do Scene7 com o Componente de vídeo de base no Experience Manager, por uma questão de integridade.
+Mesmo que o uso do componente de vídeo do Scene7 seja recomendado para visualizar vídeos do Scene7, esta seção descreve o uso de vídeos do Scene7 com o componente de vídeo de base no Experience Manager, para fins de integridade.
 
 ### Comparação entre Experience Manager Video e Scene7 Video {#aem-video-and-scene-video-comparison}
 
-A tabela a seguir fornece uma comparação de alto nível dos recursos suportados entre o componente de Vídeo de base do Experience Manager e o componente de Vídeo do Scene7:
+A tabela a seguir fornece uma comparação de alto nível de recursos compatíveis entre o componente de Vídeo de base do Experience Manager e o componente de Vídeo do Scene7:
 
-|  | Vídeo de base do Experience Manager | Vídeo do Scene7 |
+|  | Vídeo do Experience Manager Foundation | Vídeo do Scene7 |
 |---|---|---|
-| Abordagem | Abordagem de HTML5 primeiro. O Flash é usado somente para o fallback não-HTML5. | Flash na maioria dos computadores. O HTML5 é usado para dispositivos móveis e tablets. |
-| Entrega | Progressiva | Transmissão adaptável |
-| Acompanhamento | Sim | Sim |
+| Abordagem | HTML5 primeira abordagem. O Flash é usado somente para fallback não HTML 5. | Flash na maioria dos desktops. O HTML5 é usado para dispositivos móveis e tablets. |
+| Entrega | Progressivo | Streaming adaptável |
+| Rastreamento | Sim | Sim |
 | Extensibilidade | Sim | Não |
 | Vídeo móvel | Sim | Sim |
 
@@ -143,49 +143,49 @@ A tabela a seguir fornece uma comparação de alto nível dos recursos suportado
 
 #### Criar perfis de vídeo {#creating-video-profiles}
 
-As diferentes codificações de vídeo são criadas de acordo com as predefinições de codificação do S7 selecionadas na configuração de nuvem do S7. Para que o componente de vídeo de base os use, um perfil de vídeo deve ser criado para cada predefinição de codificação do S7 selecionada. Esse método permite que o componente de vídeo selecione as representações do DAM de acordo.
+As várias codificações de vídeo são criadas de acordo com as predefinições de codificação do S7 selecionadas na configuração da nuvem do S7. Para que o componente de vídeo de base os use, um perfil de vídeo deve ser criado para cada predefinição de codificação S7 selecionada. Esse método permite que o componente de vídeo selecione as representações do DAM de acordo.
 
 >[!NOTE]
 >
->Os novos perfis de vídeo e as alterações a eles devem ser ativados para publicação.
+>Novos perfis de vídeo e alterações neles devem ser ativados para publicar.
 
 1. No Experience Manager, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Console de configuração]**.
 1. No **[!UICONTROL Console de configuração]**, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL DAM]** > **[!UICONTROL Perfis de vídeo]** na árvore de navegação.
-1. Crie um Perfil de vídeo S7. No **[!UICONTROL Novo]**. selecione **[!UICONTROL Criar página]** e selecione o modelo Perfil de vídeo do Scene7 . Dê um nome à nova página de perfil de vídeo e selecione **[!UICONTROL Criar]**.
+1. Crie um perfil de vídeo S7. No **[!UICONTROL Novo]**. selecione **[!UICONTROL Criar página]** e selecione o modelo Perfil de vídeo do Scene7. Nomeie a nova página de perfil de vídeo e selecione **[!UICONTROL Criar]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
-1. Edite o novo perfil de vídeo. Selecione primeiro a configuração de nuvem. Em seguida, selecione a mesma predefinição de codificação selecionada na configuração de nuvem.
+1. Edite o novo perfil de vídeo. Selecione a configuração de nuvem primeiro. Em seguida, selecione a mesma predefinição de codificação que foi selecionada na configuração da nuvem.
 
    ![chlimage_1-367](assets/chlimage_1-367.png)
 
    | Propriedade | Descrição |
    |---|---|
    | Configurações de nuvem do Scene7 | A configuração da nuvem a ser usada para as predefinições de codificação. |
-   | Predefinição de codificação do Scene7 | A predefinição de codificação com a qual mapear esse perfil de vídeo. |
-   | Tipo de vídeo HTML5 | Essa propriedade permite definir o valor da propriedade type do elemento de fonte de vídeo HTML5. Essa informação não é fornecida pelas predefinições de codificação do S7, mas é necessária para renderizar corretamente os vídeos usando o elemento de vídeo HTML5. Uma lista de formatos comuns é fornecida, mas eles podem ser substituídos por outros formatos. |
+   | Predefinição de codificação do Scene7 | A predefinição de codificação para mapear esse perfil de vídeo. |
+   | Tipo de vídeo HTML5 | Essa propriedade permite que você defina o valor da propriedade type do elemento de fonte de vídeo HTML5. Essas informações não são fornecidas pelas predefinições de codificação do S7, mas são necessárias para renderizar corretamente os vídeos usando o elemento de vídeo HTML5. Uma lista de formatos comuns é fornecida, mas pode ser substituída por outros formatos. |
 
-   Repita essa etapa para todas as predefinições de codificação selecionadas na configuração de nuvem que você deseja usar no componente de vídeo.
+   Repita essa etapa para todas as predefinições de codificação selecionadas na configuração da nuvem que você deseja usar no componente de vídeo.
 
 #### Configurar design {#configuring-design}
 
-O **[!UICONTROL Vídeo de base]** O componente deve saber quais perfis de vídeo usar para criar a lista de fontes de vídeo. Abra a caixa de diálogo Design dos componentes de vídeo e configure o design dos componentes para usar os novos perfis de vídeo.
+A variável **[!UICONTROL Vídeo do Foundation]** O componente deve saber quais perfis de vídeo usar para criar a lista de fontes de vídeo. Abra a caixa de diálogo design de componentes de vídeo e configure o design de componentes para usar os novos perfis de vídeo.
 
 >[!NOTE]
 >
->Se você usar a variável **[!UICONTROL Vídeo de base]** em uma página móvel, repita essas etapas no design da página móvel.
+>Se você usar o **[!UICONTROL Vídeo do Foundation]** em uma página para dispositivos móveis, repita essas etapas no design da página para dispositivos móveis.
 
 >[!NOTE]
 >
->As alterações feitas no design exigem que ele seja aplicado para serem aplicadas na publicação.
+>As alterações feitas no design exigem a ativação do design para entrarem em vigor na publicação.
 
-1. Abra o **[!UICONTROL Vídeo de base]** caixa de diálogo design do componente e altere para **[!UICONTROL Perfis]** guia . Em seguida, exclua os perfis prontos e adicione os novos perfis de vídeo do S7. A ordem da lista de perfis na caixa de diálogo design define a ordem do elemento de fontes de vídeo ao renderizar.
-1. Para navegadores não compatíveis com o HTML5, o componente de vídeo permite configurar um fallback de Flash. Abra a caixa de diálogo Design dos componentes de vídeo e altere para **[!UICONTROL Flash]** guia . Defina as configurações do player do Flash e atribua um perfil de fallback ao player de flash.
+1. Abra o **[!UICONTROL Vídeo do Foundation]** caixa de diálogo design do componente e altere para a **[!UICONTROL Perfis]** guia. Em seguida, exclua os perfis prontos para uso e adicione os novos perfis de vídeo S7. A ordem da lista de perfis na caixa de diálogo design define a ordem do elemento de fontes de vídeo durante a renderização.
+1. Para navegadores que não aceitam o HTML5, o componente de vídeo permite configurar um fallback de Flash. Abra a caixa de diálogo design de componentes de vídeo e altere para a **[!UICONTROL Flash]** guia. Defina as configurações do reprodutor Flash e atribua um perfil de fallback para o reprodutor flash.
 
 #### Lista de verificação {#checklist}
 
-1. Crie uma configuração de nuvem do S7. Verifique se as predefinições de codificação de vídeo estão definidas e se o importador está em execução.
-1. Crie um perfil de vídeo do S7 para cada predefinição de codificação de vídeo selecionada na configuração da nuvem.
+1. Criar uma configuração de nuvem S7. Verifique se as predefinições de codificação de vídeo estão definidas e se o importador está em execução.
+1. Crie um perfil de vídeo S7 para cada predefinição de codificação de vídeo selecionada na configuração de nuvem.
 1. Os perfis de vídeo devem ser ativados.
-1. Configure o design do **[!UICONTROL Vídeo de base]** na sua página.
-1. Ative o design após finalizar as alterações no design.
+1. Configurar o design do **[!UICONTROL Vídeo do Foundation]** componente na sua página.
+1. Ative o design depois de concluir as alterações de design.

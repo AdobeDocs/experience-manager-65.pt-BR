@@ -1,7 +1,7 @@
 ---
 title: Integração de dados do AEM Forms
 seo-title: AEM Forms Data Integration
-description: A Integração de dados permite integrar o AEM Forms a diferentes fontes de dados e criar um modelo de dados de formulário para criar e trabalhar com formulários adaptáveis e comunicações interativas.
+description: A Integração de dados permite integrar o AEM Forms a fontes de dados diferentes e criar um modelo de dados de formulário para criar e trabalhar com formulários adaptáveis e comunicações interativas.
 seo-description: Data Integration lets you integrate AEM Forms with disparate data sources and create form data model to create and work with adaptive forms and interactive communications.
 uuid: 01df045e-1b26-437c-9674-fd223ecd5097
 contentOwner: vishgupt
@@ -22,35 +22,35 @@ ht-degree: 0%
 
 ![](do-not-localize/data-integeration.png)
 
-As infraestruturas empresariais incluem sistemas de back-end ou fontes de dados diferentes, como bancos de dados, serviços da Web, serviços REST, serviços OData e soluções CRM. Juntos, eles fazem um sistema de informações que fornece dados para aplicativos corporativos para executar negócios diários. Por outro lado, os aplicativos capturam dados e os enviam de volta para atualizar fontes de dados.
+As infraestruturas corporativas incluem sistemas back-end distintos ou fontes de dados como bancos de dados, serviços da Web, serviços REST, serviços OData e soluções de CRM. Juntas, elas fazem um sistema de informações que serve dados para aplicativos corporativos para realizar negócios diários. Por outro lado, os aplicativos capturam os dados e os enviam de volta para atualizar as fontes de dados.
 
-[!DNL AEM Forms] aplicativos como formulários adaptáveis e comunicações interativas exigem integração com fontes de dados para buscar dados do cliente enquanto renderiza formulários e cria comunicações interativas. Há casos de uso em que os dados são obtidos de fontes de dados com base em entradas de usuários em formulários adaptáveis. Além disso, os dados de formulário adaptável enviados podem ser gravados novamente para atualizar as respectivas fontes de dados.
+[!DNL AEM Forms] aplicativos como formulários adaptáveis e comunicações interativas exigem integração com fontes de dados para buscar dados do cliente e, ao mesmo tempo, renderizar formulários e criar comunicações interativas. Há casos de uso em que os dados são obtidos de fontes de dados com base nas entradas do usuário em formulários adaptáveis. Além disso, os dados de formulário adaptável enviados podem ser gravados para atualizar as respectivas fontes de dados.
 
-Embora um sistema modular distribuído tenha seus próprios benefícios, o desafio é integrar e criar associações de dados em todas as fontes de dados. A integração de dados é a chave para uma infraestrutura empresarial funcional e eficiente, com diferentes fontes de dados conectadas a aplicativos para troca de dados comerciais.
+Embora um sistema modular e distribuído tenha seus próprios benefícios, o desafio está na integração e criação de associações de dados entre as fontes de dados. A integração de dados é a chave para uma infraestrutura empresarial funcional e eficiente, com diferentes fontes de dados conectadas a aplicativos para troca de dados de negócios.
 
 ## Visão geral da integração de dados {#data-integration-overview}
 
-![aem-forms-data-integeration](assets/aem-forms-data-integeration.png)
+![aem-forms-data-integration](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] A integração de dados permite configurar e conectar diferentes fontes de dados com [!DNL AEM Forms]. Ele fornece uma interface de usuário intuitiva para criar um esquema de representação de dados unificado de entidades e serviços de negócios em fontes de dados conectadas. A representação unificada é conhecida como um modelo de dados de formulário, uma extensão do esquema JSON. As entidades em um modelo de dados de formulário são chamadas de objetos de modelo de dados. Um modelo de dados de formulário permite:
+[!DNL AEM Forms] A Integração de dados permite configurar e conectar diferentes fontes de dados com o [!DNL AEM Forms]. Ele fornece uma interface de usuário intuitiva para criar um esquema de representação de dados unificada de entidades e serviços comerciais em fontes de dados conectadas. A representação unificada é conhecida como modelo de dados de formulário, uma extensão do esquema JSON. As entidades em um modelo de dados de formulário são chamadas de objetos do modelo de dados. Um modelo de dados de formulário permite:
 
-* Acesse objetos, propriedades e serviços do modelo de dados de fontes de dados conectadas.
-* Criar objetos e propriedades personalizados do modelo de dados
-* Criar associações entre objetos de modelo de dados dentro e entre fontes de dados.
-* Chame os serviços de objeto do modelo de dados para consultar ou gravar dados de e para fontes de dados.
+* Acesse objetos de modelo de dados, propriedades e serviços a partir de fontes de dados conectadas.
+* Criar objetos e propriedades de modelo de dados personalizados
+* Crie associações entre objetos de modelo de dados em e entre fontes de dados.
+* Invoque serviços de objeto de modelo de dados para consultar ou gravar dados de e para fontes de dados.
 
-Depois de criar um modelo de dados de formulário, você pode usá-lo em vários workflows de comunicação adaptáveis e interativos, como:
+Depois de criar um modelo de dados de formulário, você pode usá-lo em vários formulários adaptáveis e workflows de comunicações interativas, como:
 
-* Criar formulários adaptáveis e comunicações interativas com base no modelo de dados de formulário
-* Preencher previamente formulários adaptáveis e comunicações interativas a partir de fontes de dados configuradas
-* Chamar serviços/operações de fonte de dados usando regras de formulário adaptáveis
-* Gravar dados de formulário adaptável enviados em fontes de dados
+* Crie formulários adaptáveis e comunicações interativas com base no modelo de dados de formulário
+* Preencher previamente os formulários adaptáveis e as comunicações interativas das fontes de dados configuradas
+* Invocar serviços/operações de fonte de dados usando regras de formulário adaptáveis
+* Gravar dados de formulário adaptável enviados nas fontes de dados
 
 ## Introdução à integração de dados {#get-started-with-data-integration}
 
-A primeira etapa para implementar a integração de dados é identificar e configurar fontes de dados que armazenam informações que você deseja aproveitar em formulários adaptáveis e casos de uso de comunicações interativas. Em seguida, crie um modelo de dados de formulário que use objetos, propriedades e serviços de modelo de dados de uma ou mais fontes de dados. É possível criar formulários adaptáveis e comunicações interativas com base em um modelo de dados de formulário em que os campos de formulário adaptável ou os espaços reservados em comunicações interativas estão vinculados às respectivas propriedades de fonte de dados.
+A primeira etapa para implementar a integração de dados é identificar e configurar fontes de dados que armazenam informações que você deseja aproveitar em formulários adaptáveis e casos de uso de comunicações interativas. Em seguida, crie um modelo de dados de formulário que use o objeto de modelo de dados, as propriedades e os serviços de uma ou mais fontes de dados. Você pode criar formulários adaptáveis e comunicações interativas com base em um modelo de dados de formulário em que os campos de formulário adaptáveis ou espaços reservados em comunicações interativas são vinculados às respectivas propriedades da fonte de dados.
 
-[!DNL AEM Forms] O também permite criar um modelo de dados de formulário independente das fontes de dados e associar ou vincular objetos e propriedades do modelo de dados no modelo de dados de formulário à fonte de dados posteriormente. Ele elimina qualquer dependência das fontes de dados enquanto você trabalha em um modelo de dados de formulário.
+[!DNL AEM Forms] também permite criar um modelo de dados de formulário independente das fontes de dados e associar ou vincular objetos e propriedades do modelo de dados de formulário no modelo de dados de formulário com a fonte de dados posteriormente. Ele elimina qualquer dependência em fontes de dados enquanto você trabalha em um modelo de dados de formulário.
 
 Analise o seguinte para começar, entender e implementar a integração de dados.
 

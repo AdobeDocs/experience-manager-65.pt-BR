@@ -1,7 +1,7 @@
 ---
 title: Personalização do console de boas-vindas (interface clássica)
 seo-title: Customizing the Welcome Console (Classic UI)
-description: O console de boas-vindas fornece uma lista de links para os vários consoles e funcionalidades no AEM
+description: O console de Boas-vindas fornece uma lista de links para os vários consoles e funcionalidades dentro do AEM
 seo-description: The Welcome console provides a list of links to the various consoles and functionality within AEM
 uuid: 4ef20cef-2d7a-417d-b36b-ed4fa56cd511
 contentOwner: User
@@ -13,7 +13,7 @@ exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
@@ -21,26 +21,26 @@ ht-degree: 9%
 
 >[!CAUTION]
 >
->Esta página lida com a interface clássica.
+>Esta página lida com a interface clássica do usuário.
 >
->Consulte [Personalização dos consoles](/help/sites-developing/customizing-consoles-touch.md) para obter detalhes sobre a interface de usuário padrão habilitada para toque.
+>Consulte [Personalização dos Consoles](/help/sites-developing/customizing-consoles-touch.md) para obter detalhes sobre a interface padrão habilitada para toque.
 
-O console de boas-vindas fornece uma lista de links para os vários consoles e funcionalidades no AEM.
+O console de Boas-vindas fornece uma lista de links para os vários consoles e funcionalidades dentro do AEM.
 
 ![cq_welcomescreen](assets/cq_welcomescreen.png)
 
-É possível configurar os links que estão visíveis. Isso pode ser definido para usuários e/ou grupos específicos. As ações a serem tomadas dependem do tipo de target (que correlaciona-se com a seção do console em que estão):
+É possível configurar os links que estão visíveis. Isso pode ser definido para usuários e/ou grupos específicos. As ações a serem tomadas dependem do tipo de target (que se correlaciona à seção do console em que estão):
 
 * [Consoles principais](#links-in-main-console-left-pane) - Links no console principal (painel esquerdo)
 * [Recursos, documentação e referência, recursos](#links-in-sidebar-right-pane) - Links na barra lateral (painel direito)
 
 ## Links no console principal (painel esquerdo) {#links-in-main-console-left-pane}
 
-Isso lista os consoles principais de AEM.
+Isso lista os principais consoles do AEM.
 
 ![cq_welcomescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
 
-### Configuração se os links do console principal estão visíveis {#configuring-whether-main-console-links-are-visible}
+### Configuração da visibilidade dos links do console principal {#configuring-whether-main-console-links-are-visible}
 
 As permissões de nível de nó determinam se o link pode ser visto ou não. Os nós em questão são:
 
@@ -72,11 +72,11 @@ Consulte a [Seção Segurança](/help/sites-administering/security.md) para obte
 
 ![cq_welcomescreensidebar](assets/cq_welcomescreensidebar.png)
 
-Esses links se baseiam na existência de *e* acesso de leitura a nós sob o seguinte caminho:
+Estas ligações baseiam-se na *e* acesso de leitura aos nós no seguinte caminho:
 
 `/libs/cq/core/content/welcome`
 
-Há três seções (espaçadas ligeiramente entre si) fornecidas por padrão:
+Há três seções (espaçadas levemente afastadas) fornecidas por padrão:
 
 <table>
  <tbody>
@@ -159,19 +159,19 @@ Há três seções (espaçadas ligeiramente entre si) fornecidas por padrão:
  </tbody>
 </table>
 
-#### Configuração da exibição dos links na barra lateral {#configuring-whether-sidebar-links-are-visible}
+#### Configurar se os links da barra lateral estão visíveis {#configuring-whether-sidebar-links-are-visible}
 
 É possível ocultar um link de usuários ou grupos específicos removendo o acesso de leitura aos nós que representam o link.
 
-* Recursos - remova o acesso a:
+* Recursos - remover acesso a:
 
    `/libs/cq/core/content/welcome/resources/<link-target>`
 
-* Documentos - remover acesso a:
+* Documentação - remover acesso a:
 
    `/libs/cq/core/content/welcome/docs/<link-target>`
 
-* Recursos - remova o acesso a:
+* Recursos - remover acesso a:
 
    `/libs/cq/core/content/welcome/features/<link-target>`
 
@@ -187,26 +187,26 @@ Por exemplo:
 
 Consulte a [Seção Segurança](/help/sites-administering/security.md) para obter mais informações sobre como definir as permissões desejadas.
 
-### Mecanismo de seleção de links {#link-selection-mechanism}
+### Mecanismo de seleção de link {#link-selection-mechanism}
 
-Em `/libs/cq/core/components/welcome/welcome.jsp` é feita [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), que executa uma consulta em nós que têm a propriedade :
+Entrada `/libs/cq/core/components/welcome/welcome.jsp` é feita uso de [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), que executa uma consulta em nós que têm a propriedade:
 
 * `jcr:mixinTypes` com o valor: `cq:Console`
 
 >[!NOTE]
 >
->Execute o seguinte query para ver a lista existente:
+>Execute a seguinte consulta para ver a lista existente:
 >
 >* `select * from cq:Console`
 >
 
 
-Quando um usuário ou grupo não tem permissão de leitura em um nó com o mixin `cq:Console`, esse nó não é recuperado pelo `ConsoleUtil` , portanto, não está listado no console.
+Quando um usuário ou grupo não tem permissão de leitura em um nó com o mixin `cq:Console`, esse nó não será recuperado pelo `ConsoleUtil` pesquisa, portanto, não está listado no console.
 
 ### Adicionar um item personalizado {#adding-a-custom-item}
 
-O [mecanismo de seleção de links](#link-selection-mechanism) pode ser usada para adicionar seu próprio item personalizado à lista de links.
+A variável [mecanismo de seleção de link](#link-selection-mechanism) pode ser usado para adicionar seu próprio item personalizado à lista de links.
 
-Adicione seu item personalizado à lista adicionando o `cq:Console` mixin no seu widget ou recurso. Isso é feito definindo a propriedade:
+Adicione seu item personalizado à lista adicionando o `cq:Console` fazer mixin no widget ou recurso. Isso é feito definindo a propriedade:
 
 * `jcr:mixinTypes` com o valor: `cq:Console`

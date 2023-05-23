@@ -23,28 +23,28 @@ Esta seção descreve as tarefas necessárias para fazer backup e recuperar o re
 
 >[!NOTE]
 >
->Essas instruções consideram que os formulários AEM com Connectors para ECM e EMC Documentum Content Server são instalados e configurados conforme necessário.
+>Essas instruções pressupõem que os formulários AEM com Connectors for ECM e EMC Documentum Content Server estejam instalados e configurados conforme necessário.
 
-Tanto para os processos de backup quanto de restauração, há duas tarefas principais:
+Para os processos de backup e restauração, há duas tarefas principais:
 
-* Backup (ou restauração) do ambiente de formulários de AEM.
+* Backup (ou restauração) do ambiente de formulários AEM.
 * Backup (ou restauração) do EMC Documentum Content Server.
 
 >[!NOTE]
 >
->Faça o backup dos dados dos formulários AEM antes de fazer o backup do sistema EMC Documentum e, em seguida, restaurar o sistema EMC Documentum antes de restaurar o ambiente AEM forms.
+>Faça backup dos dados de formulários AEM antes de fazer backup do sistema EMC Documentum e, posteriormente, restaure o sistema EMC Documentum antes de restaurar o ambiente de formulários AEM.
 
 ## Requisitos de software {#software-requirements}
 
-Para realizar as tarefas de backup necessárias em seu EMC Documentum Content Server, adquira um utilitário apropriado de terceiros, como o EMC NetWorker, da EMC ou do CYA SmartRecovery for EMC Documentum do CYA. As instruções a seguir descrevem as etapas para usar o EMC NetWorker Module versão 7.2.2.
+Para executar as tarefas de backup necessárias no EMC Documentum Content Server, adquira um utilitário apropriado de terceiros, como o EMC NetWorker da EMC ou o CYA SmartRecovery for EMC Documentum da CYA. As instruções a seguir descrevem as etapas de uso do EMC NetWorker Module versão 7.2.2.
 
 Você precisa dos seguintes módulos do EMC NetWorker:
 
-* Módulo NetWorker
+* Módulo do NetWorker
 * Assistente de configuração do NetWorker
 * Assistente de configuração do dispositivo NetWorker
-* NetWorker Module for the database type used by your Content Server
-* Módulo NetWorker para Documentum
+* Módulo do NetWorker para o tipo de banco de dados usado por seu Content Server
+* Módulo do NetWorker para Documentum
 
 ## Preparando o EMC Document Content Server para backup e recuperação {#preparing-the-emc-document-content-server-for-backup-and-recovery}
 
@@ -52,13 +52,13 @@ Esta seção descreve a instalação e configuração do software EMC NetWorker 
 
 **Preparar o servidor EMC Documentum para backup**
 
-1. No EMC Documentum Content Server, instale os módulos EMC NetWorker, aceitando todos os padrões.
+1. No EMC Documentum Content Server, instale os módulos do EMC NetWorker, aceitando todos os padrões.
 
-   Durante os processos de instalação, você será solicitado a inserir o nome do servidor do computador do Servidor de conteúdo como o *Nome do servidor NetWorker*. Ao instalar o EMC NetWorker Module for your database, escolha uma instalação &quot;Complete&quot;.
+   Durante os processos de instalação, será solicitado que você digite o nome do servidor do computador do Servidor de conteúdo como *Nome do servidor NetWorker*. Ao instalar o EMC NetWorker Module for your database, escolha uma instalação &quot;completa&quot;.
 
-1. Usando o conteúdo de amostra abaixo, crie um arquivo de configuração chamado *nsrnmd_win.cfg* e salvá-lo em um local acessível no Servidor de conteúdo. Esse arquivo será chamado pelos comandos backup e restauração.
+1. Usando o conteúdo de exemplo abaixo, crie um arquivo de configuração chamado *nsrnmd_win.cfg* e salve-o em um local acessível no Servidor de conteúdo. Esse arquivo será chamado pelos comandos backup e restore.
 
-   O texto a seguir contém caracteres de formatação para quebras de linha. Se você copiar este texto para um local fora deste documento, copie uma parte de cada vez e remova os caracteres de formatação ao colá-lo no novo local.
+   O texto a seguir contém caracteres de formatação para quebras de linha. Se você copiar este texto para um local fora deste documento, copie uma parte de cada vez e remova os caracteres de formatação quando colá-la no novo local.
 
    ```shell
     ################################################
@@ -187,28 +187,28 @@ Esta seção descreve a instalação e configuração do software EMC NetWorker 
     NMDDE_DM_PASSWD=XAtup9pl
    ```
 
-   Mantenha o campo de senha do arquivo de configuração `NMDDE_DM_PASSWD` em branco. Você definirá a senha na próxima etapa.
+   Manter o campo de senha do arquivo de configuração `NMDDE_DM_PASSWD` em branco. Você definirá a senha na próxima etapa.
 
 1. Defina a senha do arquivo de configuração da seguinte maneira:
 
    * Abra um prompt de comando e altere para `[NetWorker_root]\Legato\nsr\bin`.
    * Execute o seguinte comando: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
 
-1. Crie os arquivos em lote executáveis (.bat) usados para fazer backup do banco de dados. (Consulte a documentação do NetWorker.) Defina os detalhes nos arquivos em lote de acordo com sua instalação.
+1. Crie os arquivos executáveis em lote (.bat) usados para fazer backup do banco de dados. (Consulte a documentação do NetWorker.) Defina os detalhes nos arquivos em lote de acordo com sua instalação.
 
-   * Backup completo do banco de dados (nsrnmdbf.bat):
+   * Backup completo do banco de dados (nsrnmddbf.bat):
 
       `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[senha ]*`-l full`*&lt;database_name>*
 
-   * Backup incremental do banco de dados (nsrnmdbi.bat):
+   * Backup incremental do banco de dados (nsrnmddbi.bat):
 
       `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
-   * Backup do log do banco de dados (nsrnmdbl.bat):
+   * Backup de log do banco de dados (nsrnmddbl.bat):
 
       `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
 
-      Em que:
+      Onde:
 
       `[NetWorker_database_module_root]` é o diretório de instalação do módulo NetWorker. Por exemplo, o diretório de instalação padrão do NetWorker Module for SQL Server é C:\Program Files\Legato\nsr\bin\nsrsqlsv.
 
@@ -216,11 +216,11 @@ Esta seção descreve a instalação e configuração do software EMC NetWorker 
 
       `username` &amp; `password` são o nome de usuário e a senha do usuário administrador do banco de dados.
 
-      `database_name` é o nome do banco de dados para backup.
+      `database_name` é o nome do banco de dados do qual se fará backup.
 
 **Criar um dispositivo de backup**
 
-1. Crie um novo diretório no servidor EMC Documentum e compartilhe a pasta fornecendo direitos completos a todos os usuários.
+1. Crie um novo diretório no servidor EMC Documentum e compartilhe a pasta dando direitos completos a todos os usuários.
 1. Inicie o EMC NetWorker Administrator e clique em Media Management > Devices.
 1. Clique com o botão direito do mouse em Dispositivos e selecione Criar.
 1. Insira os seguintes valores e clique em OK:
@@ -230,17 +230,17 @@ Esta seção descreve a instalação e configuração do software EMC NetWorker 
    **Tipo de mídia:** `File`
 
 1. Clique com o botão direito do mouse no novo dispositivo e selecione Operações.
-1. Clique em Rótulo, insira um nome, clique em OK e em Montar.
+1. Clique em Rótulo, digite um nome, clique em OK e, em seguida, clique em Montar.
 
-Um dispositivo é adicionado ao qual os arquivos de backup serão salvos. É possível adicionar vários dispositivos de diferentes formatos.
+Um dispositivo é adicionado ao qual os arquivos de backup serão salvos. É possível adicionar vários dispositivos de formatos diferentes.
 
 ## Faça backup do EMC Documentum Content Server {#back-up-the-emc-documentum-content-server}
 
-Execute as tarefas a seguir após concluir um backup completo dos dados do AEM forms. (Consulte [Backup dos dados dos formulários AEM](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
+Execute as seguintes tarefas depois de concluir um backup completo dos dados de formulários AEM. (Consulte [Backup dos dados de formulários AEM](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
 
 >[!NOTE]
 >
->Os scripts de comando exigem o caminho completo para o arquivo nsrnmd_win.cfg criado em [Preparando o EMC Document Content Server para backup e recuperação](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>Os scripts de comando exigem o caminho completo para o arquivo nsrnmd_win.cfg criado no [Preparando o EMC Document Content Server para backup e recuperação](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Abra um prompt de comando e altere para `[NetWorker_root]\Legato\nsr\bin`.
 1. Execute o seguinte comando:
@@ -251,16 +251,16 @@ Execute as tarefas a seguir após concluir um backup completo dos dados do AEM f
 
 ## Restaurar o EMC Documentum Content Server {#restore-the-emc-documentum-content-server}
 
-Execute as seguintes tarefas antes de restaurar os dados dos formulários AEM. (Consulte [Recuperação dos dados de formulários de AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
+Execute as seguintes tarefas antes de restaurar os dados de formulários AEM. (Consulte [Recuperação dos dados de formulários do AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
 
 >[!NOTE]
 >
->Os scripts de comando exigem o caminho completo para o arquivo nsrnmd_win.cfg criado em [Preparando o EMC Document Content Server para backup e recuperação](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>Os scripts de comando exigem o caminho completo para o arquivo nsrnmd_win.cfg criado no [Preparando o EMC Document Content Server para backup e recuperação](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
 1. Pare o serviço Docbase que você está restaurando.
 1. Inicie o NetWorker User Utility para seu módulo de banco de dados (por exemplo, *Usuário do NetWorker para SQL Server*).
 1. Clique na ferramenta Restaurar e selecione Normal.
-1. No lado esquerdo da tela, selecione o banco de dados do Docbase e clique no botão Start na barra de ferramentas.
+1. No lado esquerdo da tela, selecione o banco de dados para sua Docbase e clique no botão Iniciar na barra de ferramentas.
 1. Quando o banco de dados for restaurado, reinicie o serviço Docbase.
 1. Abra um prompt de comando e altere para *[NetWorker_root]*\Legato\nsr\bin
 1. Execute o seguinte comando:

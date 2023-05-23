@@ -1,7 +1,7 @@
 ---
-title: Auxiliares do Handlebars do SCF
+title: Auxiliares de Handlebars SCF
 seo-title: SCF Handlebars Helpers
-description: Manipuladores Métodos de ajuda para facilitar o trabalho com o SCF
+description: Métodos do Handlebars Helper para facilitar o trabalho com o SCF
 seo-description: Handlebars Helper methods to facilitate work with SCF
 uuid: 9c514199-871e-4b68-8147-2052d2eeda15
 contentOwner: msm-service
@@ -17,33 +17,33 @@ ht-degree: 2%
 
 ---
 
-# Auxiliares do Handlebars do SCF {#scf-handlebars-helpers}
+# Auxiliares de Handlebars SCF {#scf-handlebars-helpers}
 
-| **[Fundamentos dos recursos ⇐](essentials.md)** | **[Personalização do lado do servidor](server-customize.md)** |
+| **[Feature Essentials](essentials.md)** | **[Personalização do lado do servidor ^](server-customize.md)** |
 |---|---|
-|  | **[Personalização do lado do cliente](client-customize.md)** |
+|  | **[Personalização no lado do cliente ^](client-customize.md)** |
 
-Os Handlebars Helpers (helpers) são métodos que podem ser chamados a partir de scripts Handlebars para facilitar o trabalho com componentes SCF.
+Os Handlebars Helpers (helpers) são métodos chamados de scripts Handlebars para facilitar o trabalho com componentes SCF.
 
-A implementação inclui uma definição do lado do cliente e do lado do servidor. Também é possível para os desenvolvedores criarem ajuda personalizada.
+A implementação inclui uma definição do lado do cliente e do lado do servidor. Também é possível para os desenvolvedores criar auxiliares personalizados.
 
-Os auxiliar SCF personalizados fornecidos com o AEM Communities são definidos na variável [biblioteca cliente](../../help/sites-developing/clientlibs.md):
+Os auxiliares SCF personalizados fornecidos com o AEM Communities são definidos na [biblioteca do cliente](../../help/sites-developing/clientlibs.md):
 
 * `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
 >
->Certifique-se de instalar o [Pacote de recursos mais recente das Comunidades](deploy-communities.md#latestfeaturepack).
+>Instale o [pacote de recursos mais recente do Communities](deploy-communities.md#latestfeaturepack).
 
 ## Abreviar {#abbreviate}
 
-Um auxiliar para retornar uma string abreviada que esteja em conformidade com as propriedades maxWords e maxLength.
+Um auxiliar para retornar uma sequência de caracteres abreviada em conformidade com as propriedades maxWords e maxLength.
 
-A string a ser abreviada é fornecida como o contexto. Se nenhum contexto for fornecido, uma string vazia será retornada.
+A cadeia de caracteres a ser abreviada é fornecida como contexto. Se nenhum contexto for fornecido, uma string vazia será retornada.
 
-Primeiro, o contexto é reduzido a maxLength e, em seguida, o contexto é dividido em palavras e reduzido a maxWords.
+Primeiro, o contexto é reduzido para maxLength e, em seguida, o contexto é dividido em palavras e reduzido para maxWords.
 
-Se safeString estiver definido como true, a string retornada será uma SafeString.
+Se safeString estiver definido como true, a cadeia de caracteres retornada será SafeString.
 
 ### Parâmetros {#parameters}
 
@@ -53,7 +53,7 @@ Se safeString estiver definido como true, a string retornada será uma SafeStrin
 
 * **maxLength**: Número
 
-   (Opcional) O padrão é o comprimento do contexto.
+   (Opcional) Padrão é a duração do contexto.
 
 * **maxWords**: Número
 
@@ -61,7 +61,7 @@ Se safeString estiver definido como true, a string retornada será uma SafeStrin
 
 * **safeString**: Booleano
 
-   (Opcional) Retorna um Handlebars.SafeString() se verdadeiro. O padrão é false.
+   (Opcional) Retorna Handlebars.SafeString() se verdadeiro. O padrão é falso.
 
 ### Exemplos {#examples}
 
@@ -91,29 +91,29 @@ Then abbreviate would return
 
 ## Content-loadmore {#content-loadmore}
 
-Um auxiliar para adicionar duas extensões em um div, uma para o texto completo e outra para o texto menor, com a capacidade de alternar entre as duas visualizações.
+Um auxiliar para adicionar duas extensões em uma div, uma para o texto completo e outra para o menos texto, com a capacidade de alternar entre as duas visualizações.
 
 ### Parâmetros {#parameters-1}
 
 * **contexto**: String
 
-   (Opcional) O padrão é a string vazia.
+   (Opcional) O padrão é a cadeia de caracteres vazia.
 
 * **numChars**: Número
 
-   (Opcional) O número de caracteres a serem exibidos ao não exibir texto completo. O padrão é 100.
+   (Opcional) O número de caracteres a serem exibidos quando não estiver exibindo o texto completo. O padrão é 100.
 
 * **moreText**: String
 
-   (Opcional) O texto a ser exibido, indicando que há mais texto para exibir. O padrão é &quot;mais&quot;.
+   (Opcional) O texto a ser exibido, indicando que há mais texto a ser exibido. O padrão é &quot;mais&quot;.
 
 * **elipsesText**: String
 
-   (Opcional) O texto a ser exibido, indicando que há texto oculto. O padrão é &quot;...&quot;.
+   (Opcional) O texto a ser exibido indicando que há texto oculto. O padrão é &quot;...&quot;.
 
 * **safeString**: Booleano
 
-   (Opcional) Valor booleano indicando se deve ou não aplicar Handlebars.SafeString() antes de retornar o resultado. O padrão é false.
+   (Opcional) Valor booleano que indica se Handlebars.SafeString() deve ser aplicado ou não antes de retornar o resultado. O padrão é falso.
 
 ### Exemplo {#example}
 
@@ -137,11 +137,11 @@ Um auxiliar para retornar uma string de data formatada.
 
 * **contexto**: Número
 
-   (Opcional) um deslocamento de valor de milissegundo de 1º de janeiro de 1970 (época). O padrão é a data atual.
+   (Opcional) uma diferença de valor em milissegundos de 1º de janeiro de 1970 (época). O padrão é a data atual.
 
-* **format**: String
+* **formato**: String
 
-   (Opcional) O formato de data a ser aplicado. O padrão é &quot;AAAA-MM-DDTHH:mm:s.sssZ&quot; e o resultado aparece como &quot;2015-03-18T18:17:13-07:00&quot;
+   (Opcional) O formato de data a ser aplicado. O padrão é &quot;AAAA-MM-DDTHH:mm:&quot;ss.sssZ&quot; e o resultado aparece como &quot;2015-03-18T18:17:13-07:00&quot;
 
 ### Exemplos {#examples-1}
 
@@ -157,19 +157,19 @@ Um auxiliar para retornar uma string de data formatada.
 // returns "03-18-2015"
 ```
 
-## Igual {#equals}
+## Igual a {#equals}
 
-Um auxiliar para retornar conteúdo dependendo de uma condição de igualdade.
+Um auxiliar para retornar o conteúdo dependendo de uma condição de igualdade.
 
 ### Parâmetros {#parameters-3}
 
-* **valor**: String
+* **lvalue**: String
 
    O valor à esquerda a ser comparado.
 
 * **rvalue**: String
 
-   O valor à direita para comparar.
+   O valor à direita a ser comparado.
 
 ### Exemplo {#example-1}
 
@@ -181,15 +181,15 @@ Um auxiliar para retornar conteúdo dependendo de uma condição de igualdade.
 {{/equals}}
 ```
 
-## Modo If-wcm {#if-wcm-mode}
+## If-wcm-mode {#if-wcm-mode}
 
-Um auxiliar de bloco que testa o valor atual de [Modo WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) em relação a uma lista de modos separada por sequência.
+Um auxiliar de bloco que testa o valor atual de [Modo WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) contra uma lista de modos separada por sequência.
 
 ### Parâmetros {#parameters-4}
 
 * **contexto**: String
 
-   (Opcional) A string a ser traduzida. Obrigatório se nenhum padrão for fornecido.
+   (Opcional) A sequência de caracteres a ser traduzida. Obrigatório se nenhum padrão for fornecido.
 
 * **modo**: String
 
@@ -207,19 +207,19 @@ Um auxiliar de bloco que testa o valor atual de [Modo WCM](https://helpx.adobe.c
 
 ## i18n {#i-n}
 
-Esse auxiliar substitui o Auxiliar Handlebars &#39;i18n&#39;.
+Este auxiliar substitui o auxiliar Handlebars &#39;i18n&#39;.
 
-Consulte também [Internacionalização de strings no código JavaScript](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
+Consulte também [Internacionalizando strings no código JavaScript](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
 
 ### Parâmetros {#parameters-5}
 
 * **contexto**: String
 
-   (Opcional) A string a ser traduzida. Obrigatório se nenhum padrão for fornecido.
+   (Opcional) A sequência de caracteres a ser traduzida. Obrigatório se nenhum padrão for fornecido.
 
-* **default**: String
+* **padrão**: String
 
-   (Opcional) A string padrão para traduzir. Obrigatório se nenhum contexto tiver sido fornecido.
+   (Opcional) A cadeia de caracteres padrão a ser traduzida. Obrigatório se nenhum contexto for fornecido.
 
 * **comentário**: String
 
@@ -236,21 +236,21 @@ Consulte também [Internacionalização de strings no código JavaScript](../../
 
 Um auxiliar para incluir um componente como um recurso não existente em um modelo.
 
-Isso permite que o recurso seja programaticamente personalizado mais facilmente do que é possível para um recurso adicionado como um nó JCR. Consulte [Adicionar ou incluir um componente Comunidades](scf.md#add-or-include-a-communities-component).
+Isso permite que o recurso seja personalizado de forma programática mais facilmente do que é possível para um recurso adicionado como um nó JCR. Consulte [Adicionar ou incluir um componente das comunidades](scf.md#add-or-include-a-communities-component).
 
-Somente alguns componentes selecionados das Comunidades podem ser incluídos. Para AEM 6.1, os que podem ser incluídos são [comentários](essentials-comments.md), [classificação](rating-basics.md), [revisões](reviews-basics.md)e [votação](essentials-voting.md).
+Somente alguns componentes selecionados das Comunidades podem ser incluídos. Para o AEM 6.1, os que são incluíveis são [comentários](essentials-comments.md), [avaliação](rating-basics.md), [análises](reviews-basics.md), e [votação](essentials-voting.md).
 
-Esse auxiliar, apropriado somente no lado do servidor, fornece funcionalidade semelhante a [cq:include](../../help/sites-developing/taglib.md) para scripts JSP.
+Este auxiliar, apropriado somente no lado do servidor, fornece funcionalidade semelhante a [cq:include](../../help/sites-developing/taglib.md) para scripts JSP.
 
 ### Parâmetros {#parameters-6}
 
-* **contexto**: String ou objeto
+* **contexto**: sequência ou objeto
 
-   (Opcional, a menos que forneça um caminho relativo)
+   (Opcional, exceto se fornecer um caminho relativo)
 
-   Use `this` para transmitir o contexto atual.
+   Uso `this` para transmitir o contexto atual.
 
-   Use `this.id` para obter o recurso em `id` para renderizar o resourceType solicitado.
+   Uso `this.id` para obter o recurso em `id` para renderizar o resourceType solicitado.
 
 * **resourceType**: String
 
@@ -262,11 +262,11 @@ Esse auxiliar, apropriado somente no lado do servidor, fornece funcionalidade se
 
 * **caminho**: String
 
-   (Obrigatório) O caminho para o recurso. Se o caminho for relativo, um contexto deve ser fornecido, caso contrário, a string vazia é retornada.
+   (Obrigatório) O caminho para o recurso. Se o caminho for relativo, um contexto deverá ser fornecido, caso contrário, a cadeia de caracteres vazia será retornada.
 
 * **authoringDisabled**: Booleano
 
-   (Opcional) O padrão é falso. Apenas para uso interno.
+   (Opcional) O padrão é falso. Somente para uso interno.
 
 ### Exemplo {#example-4}
 
@@ -278,19 +278,19 @@ Isso incluirá um novo componente de comentários em `this.id` + /comentários.
 
 ## IncludeClientLib {#includeclientlib}
 
-Um auxiliar que inclui uma biblioteca cliente html AEM, que pode ser uma biblioteca js, css ou tema. Para várias inclusões de tipos diferentes, por exemplo js e css, essa tag precisa ser usada várias vezes no script Handlebars.
+Um auxiliar que inclui uma biblioteca cliente AEM html, que pode ser um js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo, js e css, essa tag precisa ser usada várias vezes no script Handlebars.
 
-Esse auxiliar, apropriado somente no lado do servidor, fornece funcionalidade semelhante a [ui:includeClientLib](../../help/sites-developing/taglib.md) para scripts JSP.
+Este auxiliar, apropriado somente no lado do servidor, fornece funcionalidade semelhante a [ui:includeClientLib](../../help/sites-developing/taglib.md) para scripts JSP.
 
 ### Parâmetros {#parameters-7}
 
 * **categorias**: String
 
-   (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas Javascript e CSS para as categorias fornecidas. O nome do tema é extraído da solicitação.
+   (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas JavaScript e CSS para as categorias fornecidas. O nome do tema é extraído da solicitação.
 
 * **tema**: String
 
-   (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas relacionadas ao tema (tanto CSS quanto JS) para as categorias fornecidas. O nome do tema é extraído da solicitação.
+   (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas relacionadas ao tema (CSS e JS) para as categorias fornecidas. O nome do tema é extraído da solicitação.
 
 * **js**: String
 
@@ -340,20 +340,20 @@ Esse auxiliar, apropriado somente no lado do servidor, fornece funcionalidade se
     <link href="/etc/clientlibs/social/hbs/comments.css" rel="stylesheet" type="text/css">
 ```
 
-## Bastante tempo {#pretty-time}
+## Tempo bonito {#pretty-time}
 
-Um auxiliar para exibir quanto tempo passou até um ponto de interrupção, após o qual um formato de data regular é exibido.
+Um auxiliar para exibir quanto tempo passou até um ponto de corte, após o qual um formato de data regular é exibido.
 
 Por exemplo:
 
-* Há 12 horas
-* há 7 dias
+* 12 horas atrás
+* 7 dias atrás
 
 ### Parâmetros {#parameters-8}
 
 * **contexto**: Número
 
-   Um tempo no passado para comparar com &quot;agora&quot;. O tempo é expresso como um deslocamento de valor de milissegundo a partir de 1º de janeiro de 1970 (época).
+   Um horário no passado para comparar com &#39;agora&#39;. O tempo é expresso como um deslocamento de valor em milissegundos a partir de 1° de janeiro de 1970 (época).
 
 * **daysCutoff**: Número
 
@@ -377,15 +377,15 @@ Depending on how long in the past, may return
 
 ## Xss-html {#xss-html}
 
-Um auxiliar que codifica uma cadeia de caracteres de origem para o conteúdo do elemento HTML para ajudar a proteger contra XSS.
+Um auxiliar que codifica uma cadeia de caracteres de origem para o conteúdo do elemento de HTML para ajudar a proteger contra XSS.
 
-OBSERVAÇÃO: isso não é um validador e não deve ser usado para gravar valores de atributos.
+OBSERVAÇÃO: não é um validador e não deve ser usado para gravar valores de atributo.
 
 ### Parâmetros {#parameters-9}
 
 * **contexto**: objeto
 
-   A HTML para codificar.
+   O HTML a ser codificado.
 
 ### Exemplo {#example-6}
 
@@ -397,13 +397,13 @@ OBSERVAÇÃO: isso não é um validador e não deve ser usado para gravar valore
 
 Um auxiliar que codifica uma cadeia de caracteres de origem para gravar em um valor de atributo HTML para ajudar a proteger contra XSS.
 
-OBSERVAÇÃO: isso não é um validador e não deve ser usado para gravar atributos acionáveis (href, src, manipuladores de eventos).
+OBSERVAÇÃO: não é um validador e não deve ser usado para gravar atributos acionáveis (href, src, manipuladores de eventos).
 
 ### Parâmetros {#parameters-10}
 
 * **contexto**: Objeto
 
-   A HTML para codificar.
+   O HTML a ser codificado.
 
 ### Exemplo {#example-7}
 
@@ -413,15 +413,15 @@ OBSERVAÇÃO: isso não é um validador e não deve ser usado para gravar atribu
 
 ## Xss-jsString {#xss-jsstring}
 
-Um auxiliar que codifica uma cadeia de caracteres de origem para gravação no conteúdo da sequência de caracteres do JavaScript para ajudar a proteger contra XSS.
+Um auxiliar que codifica uma cadeia de caracteres de origem para gravar no conteúdo de cadeia de caracteres JavaScript para ajudar a proteger contra XSS.
 
-OBSERVAÇÃO: isso não é um validador e não deve ser usado para gravar em JavaScript arbitrário.
+OBSERVAÇÃO: não é um validador e não deve ser usado para gravação em JavaScript arbitrário.
 
 ### Parâmetros {#parameters-11}
 
 * **contexto**: Objeto
 
-   A HTML para codificar.
+   O HTML a ser codificado.
 
 ### Exemplo {#example-8}
 
@@ -431,9 +431,9 @@ var input = {{xss-jsString topic-title}}
 
 ## Xss-validHref {#xss-validhref}
 
-Um auxiliar que limpa um URL para escrever como HTML href ou valor de atributo de força para ajudar a proteger contra XSS.
+Um auxiliar que limpa um URL para gravar como um valor de atributo HTML href ou srce para ajudar a proteger contra XSS.
 
-OBSERVAÇÃO: isso pode retornar uma string vazia
+OBSERVAÇÃO: isso pode retornar uma cadeia de caracteres vazia
 
 ### Parâmetros {#parameters-12}
 
@@ -447,28 +447,28 @@ OBSERVAÇÃO: isso pode retornar uma string vazia
 <a href="{{xss-validHref url}}">my link</a>
 ```
 
-## Visão geral do Handlebars.js {#handlebars-js-basic-overview}
+## Visão geral básica do Handlebars.js {#handlebars-js-basic-overview}
 
-* Uma chamada de ajuda Handlebars é um identificador simples (a variável *name* do auxiliar), seguido por zero ou mais parâmetros separados por espaço.
-* Os parâmetros podem ser um simples objeto String, number, boolean ou JSON, bem como uma sequência opcional de pares de valores chave (argumentos de hash) como o(s) último(s) parâmetro(s).
+* Uma chamada de auxiliar do Handlebars é um identificador simples (o *name* do auxiliar), seguido por zero ou mais parâmetros separados por espaço.
+* Os parâmetros podem ser um objeto String, number, boolean ou JSON simples, bem como uma sequência opcional de pares de valores-chave (argumentos de hash) como os últimos parâmetros.
 * As chaves nos argumentos de hash devem ser identificadores simples.
-* Os valores em argumentos de hash são expressões Handlebars: identificadores simples, caminhos ou strings.
-* O contexto atual, `this`, está sempre disponível para os Handlebars helpers.
-* O contexto pode ser uma string, um número, um booleano ou um objeto de dados JSON.
-* É possível transmitir um objeto aninhado no contexto atual como o contexto, como `this.url` ou `this.id` (ver exemplos de ajuda simples e de bloqueio).
+* Os valores em argumentos de hash são expressões Handlebars: identificadores simples, caminhos ou Strings.
+* O contexto atual, `this`, está sempre disponível para os auxiliares do Handlebars.
+* O contexto pode ser um objeto de dados String, number, boolean ou JSON.
+* É possível passar um objeto aninhado no contexto atual como o contexto, como `this.url` ou `this.id` (consulte os exemplos a seguir de auxiliares simples e de bloco).
 
-* Bloquear auxiliar são funções que podem ser chamadas de qualquer lugar no modelo. Eles podem invocar um bloco do modelo zero ou mais vezes com um contexto diferente a cada vez. Eles contêm um contexto entre {{#*name*}} and {{/*name*}}.
+* Bloquear auxiliares são funções que podem ser chamadas de qualquer lugar no modelo. Eles podem chamar um bloco do modelo zero ou mais vezes com um contexto diferente a cada vez. Eles contêm um contexto entre {{#*name*}} and {{/*name*}}.
 
-* O Handlebars fornece um parâmetro final a ajudantes chamados de &quot;opções&quot;. O objeto especial &quot;opções&quot; inclui
+* Handlebars fornece um parâmetro final para auxiliares chamado de &quot;opções&quot;. O objeto especial &#39;options&#39; inclui
 
-   * Dados privados opcionais (options.data)
-   * Propriedades opcionais do valor-chave da chamada (options.hash)
-   * Capacidade de invocar a si mesmo (options.fn())
+   * Dados particulares opcionais (options.data)
+   * Propriedades de valor-chave opcionais da chamada (options.hash)
+   * Capacidade de chamar a si mesmo (options.fn())
    * Capacidade de invocar o inverso de si mesmo (options.inverse())
 
-* Recomenda-se que o conteúdo HTML String retornado de um auxiliar seja um SafeString.
+* Recomenda-se que o conteúdo da Cadeia de HTML retornado de um auxiliar seja um SafeString.
 
-### Um exemplo de um auxiliar simples da documentação do Handlebars.js: {#an-example-of-a-simple-helper-from-handlebars-js-documentation}
+### Um exemplo de um assistente simples da documentação do Handlebars.js: {#an-example-of-a-simple-helper-from-handlebars-js-documentation}
 
 ```
 Handlebars.registerHelper('link_to', function(title, options) {
@@ -491,10 +491,10 @@ template(context);
 Renderizaria:
 
 &lt;ul>
-&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Post!&lt;/a>&lt;/li>
+&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Publicar!&lt;/a>&lt;/li>
 &lt;/ul>
 
-### Um exemplo de um bloco helper da documentação do Handlebars.js: {#an-example-of-a-block-helper-from-handlebars-js-documentation}
+### Um exemplo de um assistente de bloco da documentação do Handlebars.js: {#an-example-of-a-block-helper-from-handlebars-js-documentation}
 
 ```
 Handlebars.registerHelper('link', function(options) {
@@ -520,11 +520,11 @@ Renderizaria:
 &lt;li>&lt;a href=&quot;/people/2&quot;>Yehuda&lt;/a>&lt;/li>
 &lt;/ul>
 
-## Ajuda personalizada do SCF {#custom-scf-helpers}
+## Auxiliares de SCF personalizados {#custom-scf-helpers}
 
-Os auxiliares personalizados devem ser implementados no lado do servidor e no lado do cliente, especialmente ao transmitir dados. Para SCF, a maioria dos modelos é compilada e renderizada no lado do servidor à medida que o servidor gera o HTML para um determinado componente quando a página é solicitada.
+Os auxiliares personalizados devem ser implementados no lado do servidor e no lado do cliente, especialmente ao transmitir dados. Para o SCF, a maioria dos modelos é compilada e renderizada no lado do servidor, pois o servidor gera o HTML para um determinado componente quando a página é solicitada.
 
-### Ajudantes personalizados do lado do servidor {#server-side-custom-helpers}
+### Auxiliares personalizados do lado do servidor {#server-side-custom-helpers}
 
 Para implementar e registrar um auxiliar SCF personalizado no lado do servidor, basta implementar a interface Java [TemplateHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), torne-o um [Serviço OSGi](../../help/sites-developing/the-basics.md#osgi) e instale-o como parte de um pacote OSGi.
 
@@ -570,11 +570,11 @@ public class FooTextHelper implements TemplateHelper<String>{
 >
 >Um auxiliar criado para o lado do servidor também deve ser criado para o lado do cliente.
 >
->O componente é renderizado novamente no lado do cliente para o usuário conectado e, se o auxiliar do lado do cliente não for encontrado, o componente desaparece.
+>O componente é renderizado novamente no lado do cliente para o usuário conectado e, se o auxiliar do lado do cliente não for encontrado, o componente desaparecerá.
 
 ### Auxiliares personalizados do lado do cliente {#client-side-custom-helpers}
 
-Os auxiliar do lado do cliente são scripts Handlebars registrados ao invocar `Handlebars.registerHelper()`.
+Os auxiliares do lado do cliente são scripts Handlebars registrados chamando `Handlebars.registerHelper()`.
 Por exemplo:
 
 ### custom-helpers.js {#custom-helpers-js}
@@ -592,15 +592,15 @@ function(Handlebars, SCF, $CQ) {
 })(Handlebars, SCF, $CQ);
 ```
 
-Os auxiliar personalizados do lado do cliente devem ser adicionados a uma biblioteca personalizada do cliente.
+Os auxiliares personalizados do lado do cliente devem ser adicionados a uma biblioteca personalizada do cliente.
 A clientlib deve:
 
 * Incluir uma dependência em `cq.social.scf`.
-* Carregar depois que o Handlebars tiver sido carregado.
-* Be [included](clientlibs.md).
+* Carregar depois que o Handlebars for carregado.
+* Ser [incluído](clientlibs.md).
 
-Observação: os assistentes do CCAH são definidos em `/etc/clientlibs/social/commons/scf/helpers.js`.
+Observação: os auxiliares do SCF estão definidos em `/etc/clientlibs/social/commons/scf/helpers.js`.
 
-| **[Fundamentos dos recursos ⇐](essentials.md)** | **[Personalização do lado do servidor](server-customize.md)** |
+| **[Feature Essentials](essentials.md)** | **[Personalização do lado do servidor ^](server-customize.md)** |
 |---|---|
-|  | **[Personalização do lado do cliente](client-customize.md)** |
+|  | **[Personalização no lado do cliente ^](client-customize.md)** |

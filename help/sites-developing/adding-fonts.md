@@ -1,7 +1,7 @@
 ---
-title: Adicionar fontes para renderização de gráficos
+title: Adicionar fontes para renderização gráfica
 seo-title: Adding Fonts for Graphic-Rendering
-description: AEM permite gerar gráficos incorporando texto obtido dinamicamente do seu conteúdo
+description: O AEM permite gerar gráficos que incorporam texto dinamicamente retirado do seu conteúdo
 seo-description: AEM allows you to generate graphics incorporating text dynamically taken from your content
 uuid: 67d9b10f-e986-4d29-bde2-10e08075fe17
 contentOwner: Guillaume Carlino
@@ -17,35 +17,35 @@ ht-degree: 1%
 
 ---
 
-# Adicionar fontes para renderização de gráficos{#adding-fonts-for-graphic-rendering}
+# Adicionar fontes para renderização gráfica{#adding-fonts-for-graphic-rendering}
 
-AEM permite gerar gráficos incorporando texto obtido dinamicamente do seu conteúdo.
+O AEM permite gerar gráficos incorporando texto dinamicamente retirado do seu conteúdo.
 
 Para fazer isso, você também pode carregar e usar suas próprias fontes.
 
-Atualmente, todas as implementações da plataforma Java são compatíveis [TrueType](https://en.wikipedia.org/wiki/Truetype) fontes.
+Atualmente, todas as implementações do suporte à plataforma Java [TrueType](https://en.wikipedia.org/wiki/Truetype) fontes.
 
 1. Abra o CRXDE Lite e navegue até a pasta do aplicativo do projeto:
 
    `/apps/<your-project>/`
 
-1. Em `/apps/<your-project>/` crie um novo nó:
+1. Em `/apps/<your-project>/` criar um novo nó:
 
    * **Nome**: `fonts`
    * **Tipo**: `sling:Folder`
 
    Salve todas as alterações.
 
-1. Copie os arquivos de fonte nesta pasta; por exemplo, usando o WebDAV.
+1. Copie os arquivos de fonte nesta pasta; por exemplo, usando WebDAV.
 
    >[!NOTE]
    >
    >Os arquivos de fonte no repositório devem ter o sufixo `*.ttf` ou `*.TTF`.
 
-1. Atualize o [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) de [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Adicione o caminho à sua pasta de fontes; ou seja, `/apps/<your-project>/fonts`.
+1. Atualize o [Configuração OSGi](/help/sites-deploying/configuring-osgi.md) de [Auxiliar de fontes Day Commons GFX](/help/sites-deploying/osgi-configuration-settings.md). Adicione o caminho para a pasta de fontes; por exemplo, `/apps/<your-project>/fonts`.
 
-1. Volte para CRXDE Lite. Agora você deve ver um `.fontlist` na pasta que contém o nome das fontes importadas.
+1. Retorne ao CRXDE Lite. Agora você deve ver uma `.fontlist` nó na pasta que contém o nome das fontes importadas.
 
    Essas fontes agora estão prontas para serem usadas na API do Java.
 
-Para obter detalhes completos sobre como usar as fontes com a API do Java, consulte o [documentação da classe Font da API Java](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).
+Para obter detalhes completos sobre como usar as fontes com a API Java, consulte a [Documentação da classe Fonte da API Java](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).

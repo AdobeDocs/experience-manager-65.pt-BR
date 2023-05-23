@@ -22,20 +22,20 @@ ht-degree: 65%
 
 >[!CAUTION]
 >
->Algumas funcionalidades nesta página exigem a aplicação do AEM 6.5.3.0 (ou posterior).
+>Algumas funcionalidades desta página exigem a aplicação do AEM 6.5.3.0 (ou posterior).
 >
 >6.5.3.0:
 >
->* **Domínios do Externalizador** agora pode ser selecionado.
-   >  **Observação:** Domínios do Externalizador são relevantes somente para o conteúdo do Fragmento de experiência que é enviado ao Target, e não para metadados como Exibir conteúdo da oferta.
+>* **Domínios externalizadores** agora pode ser selecionado.
+   >  **Nota:** Os domínios do externalizador são relevantes somente para o conteúdo do fragmento de experiência que é enviado ao Target, e não para metadados como Exibir conteúdo da oferta.
 >
 >6.5.2.0:
 >
->* Os Fragmentos de experiência podem ser exportados para:
+>* Os fragmentos de experiência podem ser exportados para:
    >
    >   * o espaço de trabalho padrão.
-   >   * um espaço de trabalho nomeado, especificado na Configuração da nuvem.
-   >   * **Observação:** A exportação para espaços de trabalho específicos requer o Adobe Target Premium.
+   >   * um espaço de trabalho nomeado, especificado na Configuração na nuvem.
+   >   * **Nota:** A exportação para espaços de trabalho específicos exige o Adobe Target Premium.
 >
 >* AEM deve ser [integrado ao Adobe Target usando IMS](/help/sites-administering/integration-target-ims.md).
 >
@@ -45,19 +45,19 @@ ht-degree: 65%
 >* O AEM deve estar integrado ao Adobe Target, de acordo com as instruções na seção [Integração com o Adobe Target](/help/sites-administering/target.md).
 
 
-Você pode exportar [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md), criado no Adobe Experience Manager (AEM), no Adobe Target (Target). Eles podem ser usados como ofertas em atividades do Target, para testar e personalizar experiências em escala.
+Você pode exportar [Fragmentos de experiência](/help/sites-authoring/experience-fragments.md), criado no Adobe Experience Manager (AEM), para o Adobe Target (Target). Eles podem ser usados como ofertas em atividades do Target, para testar e personalizar experiências em escala.
 
-Há três opções de formato disponíveis para exportar um Fragmento de experiência para o Adobe Target:
+Há três opções de formato disponíveis para exportar um fragmento de experiência para o Adobe Target:
 
 * HTML (padrão): suporte para entrega de conteúdo da Web e híbrido
 * JSON: suporte para entrega de conteúdo headless
 * HTML e JSON
 
-AEM Fragmentos de experiência podem ser exportados para o espaço de trabalho padrão no Adobe Target ou para espaços de trabalho definidos pelo usuário no Adobe Target. Isso é feito usando o Console do Adobe Developer, para o qual AEM deve ser [integrado ao Adobe Target usando IMS](/help/sites-administering/integration-target-ims.md).
+Os fragmentos de experiência do AEM podem ser exportados para o espaço de trabalho padrão no Adobe Target ou para espaços de trabalho definidos pelo usuário para o Adobe Target. Isso é feito usando o Console do Adobe Developer, para o qual o AEM deve ser [integrado ao Adobe Target usando IMS](/help/sites-administering/integration-target-ims.md).
 
 >[!NOTE]
 >
->Os espaços de trabalho do Adobe Target não existem no próprio Adobe Target. Eles são definidos e gerenciados no Adobe IMS (Identity Management System) e, em seguida, selecionados para uso nas soluções usando integrações do Adobe Developer Console.
+>Os espaços de trabalho do Adobe Target não existem no próprio Adobe Target. Eles são definidos e gerenciados no Adobe IMS (Identity Management System) e depois selecionados para uso nas soluções que usam integrações do console do Adobe Developer.
 
 >[!NOTE]
 >
@@ -76,11 +76,11 @@ AEM Fragmentos de experiência podem ser exportados para o espaço de trabalho p
 
 >[!CAUTION]
 >
->Algumas funcionalidades nesta página exigem a aplicação do AEM 6.5.3.0.
+>Algumas funcionalidades desta página requerem a aplicação do AEM 6.5.3.0.
 
 Várias ações são necessárias:
 
-1. Você tem que [integrar AEM com o Adobe Target usando IMS](/help/sites-administering/integration-target-ims.md).
+1. Você precisa [integrar o AEM ao Adobe Target usando IMS](/help/sites-administering/integration-target-ims.md).
 2. Os fragmentos de experiência são exportados da instância do autor do AEM, portanto, é necessário [Configurar o Externalizador de links do AEM](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) na instância do autor para garantir que todas as referências do fragmento de experiência sejam externalizadas para entrega na Web.
 
    >[!NOTE]
@@ -213,13 +213,13 @@ Para evitar essas situações:
 
 
 
-## Remoção de bibliotecas de clientes dos fragmentos de experiência exportados para o Target {#removing-clientlibs-from-fragments-exported-target}
+## Remoção de ClientLibs dos Fragmentos de experiência exportados para o Target {#removing-clientlibs-from-fragments-exported-target}
 
-Os Fragmentos de experiência contêm tags html completas e todas as bibliotecas de clientes necessárias (CSS/JS) para renderizar o fragmento exatamente como ele foi criado pelo autor de conteúdo do fragmento de experiência. Isso é por design.
+Os Fragmentos de experiência contêm tags html completas e todas as Bibliotecas de clientes (CSS/JS) necessárias para renderizar o fragmento exatamente como ele foi criado pelo Autor de conteúdo do fragmento de experiência. Isto é um projeto.
 
-Ao usar uma oferta de fragmento de experiência com o Adobe Target em uma página que está sendo entregue pelo AEM, a página Direcionado já contém todas as bibliotecas de clientes necessárias. Além disso, o html externo na oferta do fragmento de experiência também não é necessário (consulte [Considerações](#considerations)).
+Ao usar uma Oferta de fragmento de experiência com o Adobe Target em uma página que está sendo entregue pelo AEM, a página Direcionado já contém todas as Bibliotecas de clientes necessárias. Além disso, o html irrelevante na oferta de fragmento de experiência também não é necessário (consulte [Considerações](#considerations)).
 
-Este é um pseudo-exemplo do html em uma oferta do fragmento de experiência:
+Veja a seguir um pseudo exemplo do html em uma Oferta de fragmento de experiência:
 
 ```html
 <!DOCTYPE>
@@ -235,19 +235,19 @@ Este é um pseudo-exemplo do html em uma oferta do fragmento de experiência:
 </html>
 ```
 
-Em um alto nível, quando o AEM exporta um Fragmento de experiência para o Adobe Target, ele faz isso usando vários Seletores de sling adicionais. Por exemplo, o URL do Fragmento de experiência exportado pode ter a seguinte aparência (aviso `nocloudconfigs.atoffer`):
+Em alto nível, quando o AEM exporta um fragmento de experiência para o Adobe Target, ele faz isso usando vários seletores Sling adicionais. Por exemplo, o URL do Fragmento de experiência exportado pode ser semelhante ao seguinte (aviso `nocloudconfigs.atoffer`):
 
 * http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
 
-O `nocloudconfigs` O seletor é definido por meio do uso de HTL e pode ser sobreposto copiando-o de:
+A variável `nocloudconfigs` O seletor é definido por meio do uso de HTL e pode ser sobreposto copiando-o de:
 
 * /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
 
-O `atoffer` na verdade, o seletor é aplicado após o processamento usando [Reescrita Sling](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Qualquer um pode ser usado para remover as bibliotecas de clientes.
+A variável `atoffer` o seletor é realmente aplicado pós-processamento usando [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Ambos podem ser usados para remover as bibliotecas de clientes.
 
 ### Exemplo {#example}
 
-Para este fim, ilustraremos como fazer isso com `nocloudconfigs`.
+Para o propósito aqui, ilustraremos como fazer isso com `nocloudconfigs`.
 
 >[!NOTE]
 >
@@ -255,17 +255,17 @@ Para este fim, ilustraremos como fazer isso com `nocloudconfigs`.
 
 #### Sobreposições {#overlays}
 
-Neste exemplo específico, a variável [sobreposições](/help/sites-developing/overlays.md) ser incluído removerá as bibliotecas de clientes *e* o html externo. Pressupõe-se que você já tenha criado o Tipo de modelo do fragmento de experiência. Os arquivos necessários que precisarão ser copiados de `/libs/cq/experience-fragments/components/xfpage/` incluem:
+Neste exemplo específico, a variável [sobreposições](/help/sites-developing/overlays.md) ser incluído removerá as Bibliotecas de clientes *e* o html irrelevante. Pressupõe-se que você já tenha criado o tipo de modelo do fragmento de experiência. Os arquivos necessários que precisarão ser copiados do `/libs/cq/experience-fragments/components/xfpage/` incluem:
 
 * `nocloudconfigs.html`
 * `head.nocloudconfigs.html`
 * `body.nocloudconfigs.html`
 
-#### Sobreposições de tipo de modelo {#template-type-overlays}
+#### Sobreposições do tipo de modelo {#template-type-overlays}
 
 Para o propósito deste exemplo, usaremos a seguinte estrutura:
 
-![Sobreposições de tipo de modelo](assets/xf-target-integration-02.png "Sobreposições de tipo de modelo")
+![Sobreposições do tipo de modelo](assets/xf-target-integration-02.png "Sobreposições do tipo de modelo")
 
 O conteúdo desses arquivos é o seguinte:
 
@@ -283,12 +283,12 @@ O conteúdo desses arquivos é o seguinte:
 
 >[!NOTE]
 >
->Para usar `data-sly-unwrap` para remover a tag body necessária `nocloudconfigs.html`.
+>Para usar `data-sly-unwrap` para remover a marca de corpo necessária `nocloudconfigs.html`.
 
 ### Considerações {#considerations}
 
-Se você precisar oferecer suporte a sites AEM e não AEM usando as Ofertas de fragmento de experiência no Adobe Target, será necessário criar dois Fragmentos de experiência (dois tipos de modelo diferentes):
+Se você precisar oferecer suporte a sites AEM e não AEM usando Ofertas de fragmento de experiência no Adobe Target, será necessário criar dois fragmentos de experiência (dois tipos de modelo diferentes):
 
 * Um com a sobreposição para remover clientlibs/html extra
 
-* Uma que não tem a sobreposição e, portanto, inclui as clientlibs necessárias
+* Uma que não tenha a sobreposição e, portanto, inclua as clientlibs necessárias

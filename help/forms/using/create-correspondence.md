@@ -1,7 +1,7 @@
 ---
 title: Criar correspondência
 seo-title: Create Correspondence
-description: Depois de criar um template de carta, você pode usá-lo para criar correspondência no AEM Forms gerenciando dados, conteúdo e anexos.
+description: Depois de criar um modelo de correspondência, você pode usá-lo para criar correspondência no AEM Forms gerenciando dados, conteúdo e anexos.
 seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
 uuid: 48cf2b26-c9b4-4127-9ea0-1b36addbff60
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -21,93 +21,93 @@ ht-degree: 0%
 
 ## Criar correspondência na interface do usuário Criar correspondência {#create-correspondence-in-the-create-correspondence-user-interface}
 
-Depois de um [modelo de carta é criado no Gerenciamento de correspondência](../../forms/using/create-letter.md), o usuário final/agente/ajuste de solicitação pode abrir a carta na interface do usuário Criar correspondência e criar uma correspondência inserindo dados, configurando o conteúdo e gerenciando anexos. Por fim, o regulador ou agente de crédito pode gerenciar o conteúdo no modo de visualização e enviar a carta.
+Depois de um [o modelo de carta é criado no Gerenciamento de correspondência](../../forms/using/create-letter.md), o usuário final/agente/ajustador de solicitações pode abrir a correspondência na interface do usuário Criar correspondência e criar uma correspondência inserindo dados, configurando conteúdo e gerenciando anexos. Por fim, o ajustador de reclamações ou o agente pode gerenciar o conteúdo no modo de visualização e enviar a carta.
 
 ### Visualizar uma correspondência {#preview-a-correspondence}
 
-Selecione a carta para pré-visualizar usando as seguintes etapas:
+Selecione a correspondência a ser visualizada usando as seguintes etapas:
 
 1. Na página Cartas, toque em **Selecionar**.
-1. Selecione a carta apropriada tocando nela.
+1. Selecione a letra apropriada tocando nela.
 
-   ![Selecionar letra](assets/1_selectletter.png)
+   ![Selecionar carta](assets/1_selectletter.png)
 
-   Selecionar letra
+   Selecionar carta
 
-1. Para uma carta baseada no Dicionário de dados, selecione **Visualizar** > **Visualizar**. Ou para uma carta não baseada em dicionário de dados, selecione **Visualizar**. Você também pode passar o mouse sobre uma carta (sem selecioná-la) e tocar no ícone Exibição da carta para visualizá-la.
+1. Para uma carta baseada no Dicionário de Dados, selecione **Visualizar** > **Visualizar**. Ou, para uma correspondência não baseada em dicionário de dados, selecione **Visualizar**. Você também pode passar o mouse sobre uma correspondência (sem selecioná-la) e tocar no ícone Visualização de correspondência para visualizá-la.
 
    >[!NOTE]
    >
-   >Se um dicionário de dados não estiver associado à carta, a visualização da carta será aberta. Caso contrário, se a letra for baseada no dicionário de dados, o Gerenciamento de correspondência exibirá as opções Visualizar e Personalizado no menu Visualizar e você poderá selecionar uma das duas opções. Também é possível associar dados de teste a um Dicionário de dados. Quando a variável [O Dicionário de dados associou os dados de teste](../../forms/using/data-dictionary.md#p-working-with-test-data-p), depois ao selecionar a opção de visualização, a visualização normal é aberta com os dados de teste preenchidos.
+   >Se um dicionário de dados não estiver associado à correspondência, a pré-visualização da correspondência será aberta. Caso contrário, se a correspondência for baseada no dicionário de dados, o Gerenciamento de correspondências exibirá as opções Visualizar e Personalizar no menu Visualizar e você poderá selecionar uma das duas opções. Você também pode associar dados de teste a um dicionário de dados. Quando a variável [O dicionário de dados tem dados de teste associados](../../forms/using/data-dictionary.md#p-working-with-test-data-p), em seguida, ao selecionar a opção de visualização, a visualização normal é aberta com os dados de teste preenchidos.
 
-1. Para poder renderizar uma correspondência ao visualizá-la, você deve ser um administrador ou parte de um dos seguintes grupos:
+1. Para poder renderizar uma correspondência ao pré-visualizá-la, você deve ser um administrador ou parte de um dos seguintes grupos:
 
-   * usuários de formulários (para visualização na instância do autor)
+   * forms-users (para visualizar na instância do autor)
    * cm-agent-users (para representação na instância de publicação)
 
-   Se você não tiver as permissões necessárias, solicite ao administrador o acesso apropriado. Para obter mais informações sobre como criar e adicionar usuários a grupos, consulte [Adicionar usuários ou grupos a um grupo](/help/sites-administering/security.md). Se você tentar renderizar uma correspondência sem ter as permissões apropriadas, a página de erro 404 será exibida.
+   Se você não tiver as permissões necessárias, solicite o acesso apropriado ao administrador. Para obter mais informações sobre como criar e adicionar usuários a grupos, consulte [Adicionar usuários ou grupos a um grupo](/help/sites-administering/security.md). Se você tentar renderizar uma correspondência sem ter as permissões apropriadas, a página de erro 404 é exibida.
 
-1. Se você selecionou **Visualizar** > **Personalizado**, uma caixa de diálogo é aberta. Na caixa de diálogo, selecione um arquivo de dados, correspondente ao dicionário de dados, para visualizar a carta e, em seguida, selecione **Visualizar**. Um arquivo de dados é criado com base em um dicionário de dados de uma carta específica. Para obter mais informações sobre o arquivo de dados, consulte [Dicionário de dados](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
+1. Se você selecionou **Visualizar** > **Personalizado**, uma caixa de diálogo é aberta. Na caixa de diálogo, selecione um arquivo de dados, correspondente ao dicionário de dados, para visualizar a correspondência com e selecione **Visualizar**. Um arquivo de dados é criado com base em um dicionário de dados de uma correspondência específica. Para obter mais informações sobre o arquivo de dados, consulte [Dicionário de dados](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
 
-   ![Carta de visualização](assets/8_previewcustomdatafile.png)
+   ![Visualizar carta](assets/8_previewcustomdatafile.png)
 
-1. Por padrão, a visualização de HTML de letra (visualização de formulários móveis) é aberta com a guia Data em foco.
+1. A pré-visualização de HTML de correspondência (pré-visualização de formulários para dispositivos móveis) é aberta com a guia Dados em foco por padrão.
 
-   Para obter mais informações sobre formulários móveis e os recursos que eles suportam, consulte [Diferenciação de recursos entre o Mobile Forms e o PDF forms](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
+   Para obter mais informações sobre formulários móveis e os recursos compatíveis, consulte [Diferenciação de recursos entre o Mobile Forms e o PDF forms](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
 
-   Há três guias: dados, conteúdo e anexos. Se não houver elementos de dados (variáveis de espaço reservado e campos de layout), a letra será aberta diretamente com a guia Content exibida. A guia Anexos só está disponível quando os anexos estão presentes ou o acesso à biblioteca está ativado.
+   Há três guias: dados, conteúdo e anexos. Se não houver elementos de dados (variáveis de espaço reservado e campos de layout), a correspondência será aberta diretamente no com a guia Conteúdo exibida. A guia Anexos está disponível somente quando há anexos ou quando o acesso à biblioteca está ativado.
 
    >[!NOTE]
    >
-   >Para obter mais informações sobre como alternar entre o modo HTML ou PDF de representação de visualização de letra, consulte [Alterar modo de representação da letra](#changerenditionmode). Para obter mais informações sobre o suporte ao PDF no Gerenciamento de correspondência e AEM, consulte [Descontinuação dos plug-ins do navegador NPAPI e seu impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >Para obter mais informações sobre como alternar entre o modo de representação de HTML ou PDF da pré-visualização de correspondência, consulte [Alterar modo de representação da carta](#changerenditionmode). Para obter mais informações sobre o suporte ao PDF no Gerenciamento de correspondência e AEM, consulte [Descontinuação de plug-ins de navegadores NPAPI e seu impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### Inserir dados {#enterdata}
 
-Na guia Data , preencha os campos de layout e os espaços reservados disponíveis.
+Na guia Dados, preencha os campos de layout e espaços reservados disponíveis.
 
-1. Insira os dados e as variáveis de conteúdo nos campos, conforme necessário. Preencha todos os campos obrigatórios marcados com um asterisco (&#42;) para ativar o **Enviar** botão.
+1. Insira os dados e as variáveis de conteúdo nos campos, conforme necessário. Preencha todos os campos obrigatórios marcados com um asterisco (&#42;) para habilitar o **Enviar** botão.
 
-   Toque em um valor de campo de dados na visualização da HTML letter para realçar o campo de dados correspondente na guia Data .
+   Toque em um valor de campo de dados na pré-visualização da letra HTML para realçar o campo de dados correspondente na guia Data.
 
    ![Inserir dados na carta](assets/2_enterdata.png) ![2_1_enterdata](assets/2_1_enterdata.png)
 
 ### Gerenciar conteúdo {#managecontent}
 
-Na guia conteúdo , gerencie o conteúdo, como fragmentos de documento e variáveis de conteúdo na carta.
+Na guia content, gerencie o conteúdo, como fragmentos de documentos e variáveis de conteúdo na correspondência.
 
-1. Selecionar **Conteúdo**. O Gerenciamento de correspondência exibe a guia de conteúdo da carta.
+1. Selecionar **Conteúdo**. O Gerenciamento de correspondências exibe a guia Conteúdo da correspondência.
 
-   ![Guia Conteúdo - realce do módulo no conteúdo](assets/3_content.png)
+   ![Guia Conteúdo - destacar módulo no conteúdo](assets/3_content.png)
 
-1. Edite os módulos de conteúdo, conforme necessário, na guia Content . Para trazer o foco para o módulo de conteúdo relevante na hierarquia do conteúdo, você pode tocar na linha relevante ou no parágrafo na visualização da carta ou tocar no módulo de conteúdo diretamente na hierarquia Conteúdo.
+1. Edite os módulos de conteúdo, conforme necessário, na guia Content. Para focalizar o módulo de conteúdo relevante na hierarquia de conteúdo, você pode tocar na linha ou no parágrafo relevante na pré-visualização de correspondências ou tocar no módulo de conteúdo diretamente na hierarquia de conteúdo.
 
-   Por exemplo, a linha &quot;Revisamos...&quot; é selecionada no gráfico abaixo e o módulo de conteúdo relevante é selecionado na guia Conteúdo.
+   Por exemplo, a linha &quot;Analisamos... &quot; é selecionada no gráfico abaixo e o módulo de conteúdo relevante é selecionado na guia Conteúdo.
 
-   ![4_Highlightmoduleincontent](assets/4_highlightmoduleincontent.png)
+   ![4_highlightmoduleincontent](assets/4_highlightmoduleincontent.png)
 
-   Na guia Conteúdo ou dados , ao tocar em Realçar os módulos selecionados ( ![Highlightseltedmodulesincontentcr](assets/highlightselectedmodulesincontentccr.png)) na parte superior esquerda da visualização da HTML letter, é possível desativar ou ativar a funcionalidade para ir para o módulo de conteúdo/dados quando o texto, parágrafo ou campo de dados relevante for selecionado na visualização da carta.
+   Na guia Conteúdo ou Dados, tocando em Realçar módulos selecionados ( ![highlightselectedmodulesincontentcr](assets/highlightselectedmodulesincontentccr.png)) na parte superior esquerda da pré-visualização da carta de HTML, você pode desativar ou ativar a funcionalidade para acessar o módulo de conteúdo/dados quando o texto, parágrafo ou campo de dados relevante for selecionado na pré-visualização da carta.
 
-   Para obter mais informações sobre as ações disponíveis para vários módulos na interface do usuário Criar correspondência , consulte [Ações e informações disponíveis na interface do usuário Criar correspondência](#actions-and-info-available-in-the-create-correspondence-content-tab).
+   Para obter mais informações sobre as ações disponíveis para vários módulos na interface do usuário Criar correspondência, consulte [Ações e informações disponíveis na interface de usuário Criar correspondência](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
-1. Para localizar módulos de conteúdo, use o campo Localizar . Insira o nome completo ou parcial ou o título do módulo de conteúdo para pesquisá-lo na correspondência.
-1. Toque no ícone Exibir ( ![display](assets/display.png)) na frente de uma lista, texto, condição ou área de destino para exibi-la ou ocultá-la na letra.
-1. Para editar um módulo de texto embutido ou editável, toque no **Editar** ícone ( ![edittextmodule](assets/edittextmodule.png)) ou clique duas vezes no módulo de texto relevante na visualização da carta.
+1. Para localizar módulos de conteúdo, use o campo Localizar. Insira o nome completo ou parcial ou o título do módulo de conteúdo para pesquisá-lo na correspondência.
+1. Toque no ícone Exibição ( ![exibição](assets/display.png)) na frente de uma lista, texto, condição ou área de público alvo para mostrá-lo ou ocultá-lo na correspondência.
+1. Para editar um módulo de texto incorporado ou editável, toque no **Editar** ícone ( ![edittextmodule](assets/edittextmodule.png)) ou clique duas vezes no módulo de texto relevante na pré-visualização de correspondências.
 
    O sistema exibe um editor de texto para editar e formatar o texto.
 
-   O verificador ortográfico padrão em seu navegador verifica a ortografia no Editor de texto. Para gerenciar a verificação ortográfica e gramatical, você pode editar as configurações do verificador ortográfico do seu navegador ou instalar plug-ins/endereços do navegador para verificar a ortografia e a gramática.
+   O verificador ortográfico padrão do navegador verifica a ortografia no editor de texto. Para gerenciar a verificação ortográfica e gramatical, você pode editar as configurações do verificador ortográfico do navegador ou instalar plug-ins/complementos do navegador para verificar a ortografia e a gramática.
 
-   Você também pode usar os vários atalhos de teclado no editor de texto para gerenciar, editar e formatar o texto. Para obter mais informações sobre [Editor de texto](/help/forms/using/keyboard-shortcuts.md#correspondence-management) atalhos de teclado em atalhos de teclado do Correspondence Management.
+   Você também pode usar os vários atalhos de teclado no editor de texto para gerenciar, editar e formatar texto. Para obter mais informações sobre [Editor de texto](/help/forms/using/keyboard-shortcuts.md#correspondence-management) atalhos de teclado no Gerenciamento de correspondências Atalhos de teclado.
 
    ![5_edittextmodule](assets/5_edittextmodule.png)
 
-   Você pode querer reutilizar um ou mais parágrafos de texto que existem em outra aplicação do documento. Você pode copiar e colar o texto diretamente, como MS Word, HTML pages ou qualquer outro aplicativo.
+   Talvez você queira reutilizar um ou mais parágrafos de texto que existem em outro aplicativo do documento. Você pode copiar e colar texto diretamente, como do MS Word, de páginas HTML ou de qualquer outro aplicativo.
 
-   Você pode copiar e colar um ou mais parágrafos de texto em um módulo de texto editável. Por exemplo, você pode ter um documento do MS Word com uma lista com marcadores de provas de residência aceitáveis como:
+   Você pode copiar e colar um ou mais parágrafos de texto em um módulo de texto editável. Por exemplo, você pode ter um documento do MS Word com uma lista com marcadores de provas de residência aceitáveis, como as seguintes:
 
    ![pastetextmsword](assets/pastetextmsword.png)
 
-   Você pode copiar e colar diretamente o texto do documento do MS Word em um módulo de texto editável. A formatação, como lista com marcadores, fonte e cor do texto, é retida no módulo de texto.
+   Você pode copiar e colar diretamente o texto do documento do MS Word em um módulo de texto editável. A formatação, como lista com marcadores, fonte e cor do texto, é mantida no módulo de texto.
 
    ![pastetexteditablemodule](assets/pastetexteditablemodule.png)
 
@@ -115,69 +115,69 @@ Na guia conteúdo , gerencie o conteúdo, como fragmentos de documento e variáv
    >
    >A formatação do texto colado, no entanto, tem alguns [limitações](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
-   Você pode recuar o texto e os números na carta usando a tecla Tab. Por exemplo, você pode usar a tecla Tab para alinhar várias colunas de texto em uma lista em um formato tabular.
+   Você pode recuar o texto e os números na sua carta usando a tecla Tab. Por exemplo, você pode usar a tecla Tab para alinhar várias colunas de texto em uma lista em um formato tabular.
 
-   ![espaços de tabulação](assets/tabspaces.png)
+   ![tabspaces](assets/tabspaces.png)
 
-   Exemplo: Uso da tecla Tab para alinhar várias colunas de texto em um formato tabular
+   Exemplo: uso da tecla Tab para alinhar várias colunas de texto em um formato tabular
 
    >[!NOTE]
    >
    >Para obter mais informações sobre como configurar o espaçamento entre guias para seus módulos de texto e letras, consulte [Mais informações sobre como usar o espaçamento entre guias para organizar o texto](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
 
-1. Se necessário, inserir caracteres especiais na correspondência. Por exemplo, é possível usar a paleta Caracteres especiais para inserir:
+1. Se necessário, insira caracteres especiais na correspondência. Por exemplo, você pode usar a paleta Caracteres especiais para inserir:
 
-   * Símbolos monetários como €, ¥ e £
-   * Símbolos matemáticos como ∑, Lei e ^
-   * Símbolos de pontuação como ‟ e &quot;
+   * Símbolos de moeda, como €,¥ e £
+   * Símbolos matemáticos como ∑, √, ‖ e ^
+   * Símbolos de pontuação, como ‟ e &quot;
 
    ![caracteres especiais](assets/specialcharacters.png)
 
-   O Gerenciamento de correspondência tem suporte integrado para 210 caracteres especiais. O administrador pode [adicionar suporte para caracteres especiais mais/personalizados por personalização](../../forms/using/custom-special-characters.md).
+   O Gerenciamento de correspondências incorporou suporte para 210 caracteres especiais. O administrador pode [adicionar suporte para mais caracteres especiais/personalizados por personalização](../../forms/using/custom-special-characters.md).
 
-1. Para realçar\enfatizar partes do texto em um módulo em linha editável, selecione o texto e toque em Realçar cor.
+1. Para destacar\enfatizar partes do texto em um módulo incorporado editável, selecione o texto e toque em Realçar cor.
 
-   ![letterbackground color](assets/letterbackgroundcolor.png)
+   ![letterbackgroundcolor](assets/letterbackgroundcolor.png)
 
-   Você pode tocar diretamente em uma cor básica `**[A]**` presente na paleta Cores básicas ou toque em **Selecionar** depois de usar o controle deslizante `**[B]**` para escolher a sombra apropriada da cor.
+   Você pode tocar diretamente em uma cor básica `**[A]**` presente na paleta Cores básicas ou toque em **Selecionar** depois de usar o controle deslizante `**[B]**` para escolher o tom apropriado da cor.
 
-   Opcionalmente, também é possível acessar a guia Avançado para selecionar a Matiz, a Luminosidade e a Saturação apropriadas `**[C]**` para criar a cor precisa e toque em Selecionar `**[D]**` para aplicar a cor para realçar o texto.
+   Como opção, você também pode ir para a guia Avançado para selecionar o Matiz, a Luminosidade e a Saturação apropriados `**[C]**` para criar a cor precisa e, em seguida, toque em Selecionar `**[D]**` para aplicar a cor para realçar o texto.
 
-   ![textbackground color](assets/textbackgroundcolor.png)
+   ![textbackgroundcolor](assets/textbackgroundcolor.png)
 
-1. Faça as alterações apropriadas de conteúdo e formato e toque em **Salvar**. Toque em ( ![editnextmoduleccr](assets/editnextmoduleccr.png)) para se mover entre módulos de texto editáveis ou toque em **Salvar e próximo** para salvar as alterações e ir para o próximo módulo de texto editável.
-1. O sistema também exibe as variáveis não preenchidas para cada ramificação. Quando não há variáveis não preenchidas, as variáveis não preenchidas são mostradas como 0. Se houver uma variável não preenchida, é possível tocar em uma ramificação para expandi-la e localizar a variável não preenchida. Use a barra de ferramentas de conteúdo para Excluir conteúdo, aumentar/diminuir o recuo do conteúdo e inserir quebras de página antes/depois do conteúdo.
+1. Faça as alterações apropriadas no conteúdo e formato e toque em **Salvar**. Toque em ( ![editnextmoduleccr](assets/editnextmoduleccr.png)) para mover entre módulos de texto editáveis ou toque em **Salvar e Avançar** para salvar as alterações e mover para o próximo módulo de texto editável.
+1. O sistema também exibe as variáveis não preenchidas para cada ramificação. Quando não há variáveis não preenchidas, as variáveis não preenchidas são mostradas como 0. Se houver uma variável não preenchida, você pode tocar em uma ramificação para expandi-la e localizar a variável não preenchida. Use a barra de ferramentas Conteúdo para Excluir o conteúdo, aumentar/diminuir o recuo do conteúdo e inserir quebras de página antes/depois do conteúdo.
 
-   É possível inserir quebras de página nos módulos de dados acima e abaixo mesmo quando fizerem parte de listas e condições.
+   Você pode inserir quebras de página acima e abaixo dos módulos de dados mesmo quando eles fazem parte de listas e condições.
 
-1. Toque em Abrir/fechar a variável de conteúdo ( ![opencont entvariables](assets/opencontentvariables.png)) para abrir as variáveis de conteúdo e preenchê-las adequadamente.
-1. Depois de preencher a variável não preenchida corretamente, a contagem da variável não preenchida será definida como 0.
+1. Toque em Abrir/Fechar variável de conteúdo ( ![opfind entvariables](assets/opencontentvariables.png)) para abrir as variáveis de conteúdo e preenchê-las adequadamente.
+1. Depois de preencher corretamente a variável não preenchida, a contagem da variável não preenchida é definida como 0.
 
-   Na interface do usuário Criar correspondência, a contagem de variáveis não preenchidas é exibida em cada nível da hierarquia de qualquer módulo que contenha pelo menos uma variável. Se um módulo contiver variáveis não preenchidas, a contagem será exibida no nível da variável, do módulo, da área de destino e do template de letra.
+   Na interface do usuário Criar correspondência, a contagem de variáveis não preenchidas é exibida em cada nível da hierarquia de qualquer módulo que contenha pelo menos uma variável. Se um módulo contiver variáveis não preenchidas, a contagem será exibida no nível da variável, módulo, área de destino e modelo de correspondência.
 
-   A contagem de variáveis não preenchidas inclui:
+   A contagem variável não preenchida inclui:
 
-   * Somente dicionário de dados desprotegido e variáveis de espaço reservado. A contagem de variáveis não inclui o layout ou as variáveis protegidas do dicionário de dados.
+   * Somente dicionário de dados desprotegido e variáveis de espaço reservado. A contagem de variáveis não inclui variáveis de layout ou de dicionário de dados protegido.
    * Campos obrigatórios.
-   * Campos de layout, se forem obrigatórios e vinculados ao usuário.
-   * Somente instâncias de variáveis exclusivas. Se um módulo, área de destino ou modelo de letra contiver duas ou mais instâncias da mesma variável, a contagem será exibida como 1 (uma). No entanto, para cada uma das instâncias, a contagem é exibida como 1.
+   * Campos de layout se forem obrigatórios e vinculados ao usuário.
+   * Somente instâncias de variáveis exclusivas. Se um módulo, área de destino ou modelo de correspondência contiver duas ou mais instâncias da mesma variável, a contagem será exibida como 1 (uma). No entanto, para cada uma das instâncias, a contagem é exibida como 1.
 
-   A contagem de variáveis não preenchidas não inclui módulos desmarcados. Se um módulo for incluído em um template de letra, mas não estiver na letra, a contagem de variáveis não preenchidas neste módulo não será exibida.
+   A contagem de variáveis não preenchidas não inclui módulos desmarcados. Se um módulo for incluído em um modelo de correspondência, mas não estiver na correspondência, a contagem de variáveis não preenchidas nesse módulo não será exibida.
 
-   Para a área de destino, módulo e variável, a contagem é exibida à direita de cada objeto no template de letra. No entanto, para o modelo completo, a contagem é exibida na barra de status Criar correspondência .
+   Para a área de destino, o módulo e a variável, a contagem é exibida à direita de cada objeto no modelo de correspondência. No entanto, para o modelo completo, a contagem é exibida na barra de status Criar correspondência.
 
-   Os módulos em um template de carta exibem a contagem de variáveis não preenchidas conforme descrito abaixo:
+   Os módulos em um modelo de correspondência exibem a contagem de variáveis não preenchidas, conforme descrito abaixo:
 
-   * **Texto** Exibe a soma das variáveis exclusivas não preenchidas de espaço reservado e dos elementos de dicionário de dados contidos no módulo de texto.
+   * **Texto** Exibe a soma das variáveis de espaço reservado não preenchidas exclusivas e dos elementos do dicionário de dados contidos no módulo de texto.
    * **Condição** Exibe a soma das variáveis de condição não preenchidas exclusivas contidas na condição e as variáveis contidas nos módulos resultantes.
-   * **Lista** Exibe a soma de todas as variáveis não preenchidas exclusivas contidas nos módulos atribuídos à lista.
+   * **Lista** Exibe a soma de todas as variáveis não preenchidas contidas nos módulos atribuídos à lista.
    * **Área de destino** Exibe a soma de todas as variáveis não preenchidas exclusivas contidas nos módulos atribuídos à área de destino.
 
    Observe o seguinte em relação às variáveis com valores padrão:
 
-   * Um campo de variável booleana assume como padrão *false*. No entanto, a variável é considerada como não preenchida. Isso implica que a contagem de variáveis inclui todos os campos de variável Booleana com valor *false*.
+   * Um campo de variável booleano é padronizado como *false*. No entanto, a variável é considerada não preenchida. Isso implica que a contagem de variáveis inclua todos os campos de variáveis booleanas com valor *false*.
 
-   * Um campo de variável numérica assume como padrão *0 (zero)*. No entanto, a variável é considerada como não preenchida. Isso implica que a contagem de variáveis inclua todos os campos de variável numérica com valor *0 (zero)*.
+   * Um campo de variável numérica é padronizado como *0 (zero)*. No entanto, a variável é considerada não preenchida. Isso implica que a contagem de variáveis inclua todos os campos de variável numérica com valor *0 (zero)*.
 
 
 
@@ -185,204 +185,204 @@ Na guia conteúdo , gerencie o conteúdo, como fragmentos de documento e variáv
 
 **Área de destino**
 
-* Inserir Linha em Branco: Insere uma nova linha em branco.
-* Inserir texto em linha: Insere um novo módulo de texto.
-* Bloqueio de pedido (informações): Indica que a ordem do conteúdo não pode ser alterada.
-* Valores não preenchidos (informações): Indica o número de variáveis não preenchidas na área de destino.
+* Inserir linha em branco: insere uma nova linha em branco.
+* Inserir texto incorporado: insere um novo módulo de texto.
+* Order Lock (info): indica que a ordem do conteúdo não pode ser alterada.
+* Valores não preenchidos (informações): indica o número de variáveis não preenchidas na área de destino.
 
 **Módulo**
 
-* Seleção (ícone de olhos): Inclui\exclui módulo da letra.
-* Ignorar marcadores (aplicável para módulos de lista e seus módulos filhos): Ignora marcadores em um módulo específico.
-* Quebra de página antes (aplicável para módulos filho da área de destino): Insere quebra de página antes do módulo .
-* Quebra de página após (aplicável para módulos filho da área de destino): Insere quebra de página antes do módulo .
-* Valores não preenchidos (informações): Indica o número de variáveis não preenchidas na área de destino.
-* Editar (apenas módulos de texto): Abra o editor de rich text para editar o módulo de texto.
-* Painel de dados (módulos de texto e condição): Abra todas as variáveis do módulo.
+* Seleção (ícone de olho): Inclui\exclui o módulo da carta.
+* Ignorar marcadores (aplicável a módulos de lista e seus módulos filhos): ignora marcadores em um módulo específico.
+* Quebra de página antes (aplicável a módulos secundários da área de destino): insere a quebra de página antes do módulo.
+* Quebra de página depois de (aplicável a módulos secundários da área de destino): insere a quebra de página antes do módulo.
+* Valores não preenchidos (informações): indica o número de variáveis não preenchidas na área de destino.
+* Editar (somente módulos de texto): abrir o editor de rich text para editar o módulo de texto.
+* Painel de dados (módulos de texto e condição): abra todas as variáveis do módulo.
 
 **Módulo de lista**
 
-* Inserir Linha em Branco: Insere uma nova linha em branco.
-* Biblioteca de conteúdo: Abre a biblioteca de conteúdo para adicionar módulos à lista.
+* Inserir linha em branco: insere uma nova linha em branco.
+* Biblioteca de conteúdo: abre a biblioteca de conteúdo para adicionar módulos à lista.
 * Configuração de lista (somente lista aninhada):
-* Bloqueio de pedido (informações): Indica que a ordem dos itens da lista não pode ser alterada.
+* Order Lock (info): indica que a ordem dos itens da lista não pode ser alterada.
 
 ### Gerenciar anexos {#manage-attachments}
 
-1. Selecionar **Anexos**. O Gerenciamento de correspondência exibe os anexos disponíveis, conforme configurado ao criar o modelo de carta.
-1. Você pode optar por não enviar um anexo junto com a carta, tocando no ícone de exibição e tocar na cruz no anexo para excluí-lo da carta. Para os anexos especificados, ao criar um modelo de carta, como Obrigatório, os ícones Exibir e Excluir são desativados.
-1. Toque em Acesso à biblioteca ( ![library aryaccess](assets/libraryaccess.png)) para acessar a Biblioteca de conteúdo para inserir ativos DAM como anexos.
+1. Selecionar **Anexos**. O Gerenciamento de correspondências exibe os anexos disponíveis, conforme configurado durante a criação do modelo de correspondência.
+1. Você pode optar por não enviar um anexo junto com a carta tocando no ícone de exibição e pode tocar na cruz no anexo para excluí-lo da carta. Para os anexos especificados, ao criar um modelo de correspondência, como Obrigatório, os ícones Exibir e Excluir ficam desativados.
+1. Toque em Acesso à biblioteca ( ![libraryaccess](assets/libraryaccess.png)) para acessar a Biblioteca de conteúdo e inserir ativos DAM como anexos.
 
    >[!NOTE]
    >
-   >O ícone Acesso à biblioteca está disponível somente quando o acesso à biblioteca foi ativado durante a criação da carta.
+   >O ícone de Acesso à biblioteca está disponível somente quando o acesso à biblioteca foi ativado durante a criação da carta.
 
-1. Se a ordem dos anexos não tiver sido bloqueada durante a criação da correspondência, é possível reordenar os anexos selecionando um anexo e tocando nas setas para baixo e para cima.
+1. Se a ordem dos anexos não tiver sido bloqueada durante a criação da correspondência, você poderá reordenar os anexos selecionando um anexo e tocando nas setas para baixo e para cima.
 
    Para obter mais informações, consulte [Entrega do anexo](#attachmentdelivery).
 
-### Gerenciar conteúdo na visualização e enviar a carta {#manage-content-in-preview-and-submit-the-letter}
+### Gerenciar conteúdo na pré-visualização e enviar a carta {#manage-content-in-preview-and-submit-the-letter}
 
-É possível fazer alterações relacionadas ao layout e ao conteúdo para garantir que a letra seja a aparência desejada e enviá-la para os vários processos de publicação.
+Você pode fazer alterações no layout e no conteúdo para garantir que a correspondência tenha a aparência desejada e enviá-la para os vários processos de publicação.
 
-1. Para realçar todo o conteúdo editável na carta, toque em **Realçar seções editáveis**.
+1. Para destacar todo o conteúdo editável na carta, toque em **Realçar Seções Editáveis**.
 
-   O conteúdo editável da carta é destacado com fundo cinza.
+   O conteúdo editável da carta é realçado com o plano de fundo cinza.
 
-   ![Destacar conteúdo editável](assets/4_highlightmoduleincontent-1.png)
+   ![Realçar conteúdo editável](assets/4_highlightmoduleincontent-1.png)
 
-1. Edite os módulos de conteúdo, conforme necessário, na guia Content . Para trazer o foco para o módulo de conteúdo relevante na hierarquia do conteúdo, você pode tocar na linha relevante ou no parágrafo na visualização da carta ou tocar no módulo de conteúdo diretamente na hierarquia Conteúdo.
+1. Edite os módulos de conteúdo, conforme necessário, na guia Content. Para focalizar o módulo de conteúdo relevante na hierarquia de conteúdo, você pode tocar na linha ou no parágrafo relevante na pré-visualização de correspondências ou tocar no módulo de conteúdo diretamente na hierarquia de conteúdo.
 
-   Por exemplo, a linha &quot;Para permitir que a gente acesse...&quot; é selecionado no gráfico abaixo e o módulo de conteúdo correspondente é selecionado na guia Content .
+   Por exemplo, a linha &quot;To allow us to access...&quot; é selecionada no gráfico abaixo e o módulo de conteúdo correspondente é selecionado na guia Content.
 
-   Ao tocar em Realçar os módulos selecionados no conteúdo ( ![Highlightseltedmodulesincontentcr](assets/highlightselectedmodulesincontentccr.png)), você pode desativar ou ativar a funcionalidade para realçar o módulo de conteúdo na guia Content quando o texto, parágrafo ou campo de dados relevante for tocado na visualização da carta.
+   Ao tocar em Realçar módulos selecionados no conteúdo ( ![highlightselectedmodulesincontentcr](assets/highlightselectedmodulesincontentccr.png)), você pode desativar ou ativar a funcionalidade para realçar o módulo de conteúdo na guia Conteúdo quando o texto, parágrafo ou campo de dados relevante for tocado na pré-visualização de correspondência.
 
-   Para obter mais informações sobre as ações disponíveis para vários módulos na interface do usuário Criar correspondência , consulte [Ações e informações disponíveis na interface do usuário Criar correspondência](#actions-and-info-available-in-the-create-correspondence-content-tab).
+   Para obter mais informações sobre as ações disponíveis para vários módulos na interface do usuário Criar correspondência, consulte [Ações e informações disponíveis na interface de usuário Criar correspondência](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
-1. Para adicionar uma quebra de página à letra, toque em onde deseja inserir uma quebra de página e selecione Quebra de página antes ou Quebra de página depois ( ![pagebreakbefore after](assets/pagebreakbeforeafter.png)).
+1. Para adicionar uma quebra de página à carta, toque em onde deseja inserir uma quebra de página e selecione Quebra de página antes ou Quebra de página depois ( ![pagebreakbefore after](assets/pagebreakbeforeafter.png)).
 
-   Um espaço reservado para quebra de página explícito é inserido na carta. Para ver como uma quebra de página explícita afeta a letra, consulte a visualização de PDF nivelada.
+   Um espaço reservado para quebra de página explícita é inserido na correspondência. Para ver como uma quebra de página explícita afeta a correspondência, consulte a pré-visualização de PDF nivelado.
 
    >[!NOTE]
    >
-   >Como os formulários móveis não suportam quebras de página, os cabeçalhos e rodapés são exibidos apenas uma vez. No entanto, é possível definir explicitamente os cabeçalhos e rodapés no layout (por página) para serem exibidos na visualização de formulários móveis. Além disso, as páginas em branco na carta, se houver, não aparecem na visualização de Formulários móveis.
+   >Como os formulários móveis não são compatíveis com quebras de página, os cabeçalhos e rodapés são exibidos apenas uma vez. No entanto, é possível definir explicitamente cabeçalhos e rodapés no layout (por página) para serem exibidos na pré-visualização de formulários para dispositivos móveis. Além disso, as páginas em branco na carta, se houver, não aparecem na pré-visualização de formulários para dispositivos móveis.
 
    ![Quebra de página explícita](assets/8_pagebreak.png)
 
-1. Para salvar a carta como rascunho, que pode ser usado posteriormente, toque em Salvar como rascunho. Para usar essa opção, sua carta precisa ser [publicado](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Para obter mais informações, consulte Instância de rascunho em [Salvar rascunhos e enviar instâncias de carta](#savingdrafts).
+1. Para salvar a carta como rascunho, na qual você pode continuar trabalhando posteriormente, toque em Salvar como rascunho. Para usar essa opção, sua carta precisa ser [publicado](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Para obter mais informações, consulte Instância de rascunho em [Salvar rascunhos e enviar instâncias de carta](#savingdrafts).
 
-   ![savesrascunho](assets/saveasdraft.png)
+   ![saveasdraft](assets/saveasdraft.png)
 
-   A caixa de diálogo Nome da Carta de Rascunho é exibida com a ID da instância da letra. Como opção, você pode editar essa ID. Anote a ID da letra e toque em **Concluído**. Posteriormente, você pode usar essa ID para [recarregar a carta de rascunho](submit-letter-topostprocess.md#reloaddraft).
+   A caixa de diálogo Nome da carta de rascunho é exibida com a ID da instância da carta. Você pode, opcionalmente, editar essa ID. Anote a ID da carta e toque em **Concluído**. Posteriormente, você pode usar essa ID para [recarregar o rascunho de carta](submit-letter-topostprocess.md#reloaddraft).
 
-1. Para visualizar a letra como um PDF nivelado com o layout exato e as quebras de página como serão enviadas, toque em ( ![visualização](assets/preview.png)) Visualizar.
+1. Para visualizar a carta como um PDF nivelado com o layout exato e as quebras de página como ela será enviada, toque em ( ![pré-visualização](assets/preview.png)) Visualizar.
 
-   A letra aparece como um PDF achatado. O PDF nivelado é a representação exata da carta, pois ela será enviada com as fontes, quebras e layout corretos.
+   A letra aparece como um PDF achatado. O PDF achatado é a representação exata da letra, pois será enviada com as fontes, quebras e layout corretos da letra.
 
    >[!NOTE]
    >
-   >Se você estiver usando o Mozilla Firefox e o tipo de representação de HTML, para visualizar a letra como PDF nivelado, certifique-se de usar o plug-in nativo do navegador e não o plug-in Acrobat. Para selecionar o plug-in nativo do navegador, vá para as configurações do Mozilla Firefox e, para o PDF de tipo de conteúdo, selecione Visualizar no Firefox.
+   >Se você estiver usando o Mozilla Firefox e o tipo de representação HTML, para visualizar a letra como PDF nivelado, certifique-se de usar o plug-in do navegador nativo e não o plug-in do Acrobat. Para selecionar o plug-in do navegador nativo, vá para as configurações do Mozilla Firefox e, para o tipo de conteúdo PDF, selecione Visualizar no Firefox.
 
-1. Se a visualização de PDF nivelada for satisfatória, toque em **Enviar** para enviar a carta. Ou para fazer alterações na carta, toque em **Sair da visualização** para voltar à visualização Criar interface de usuário de correspondência da carta para fazer alterações na carta. Ao tocar em Enviar, se a configuração Gerenciar instância da carta estiver ativada na instância Publicar, a instância da carta de envio será gerada.
+1. Se você achar que a visualização de PDF nivelado é satisfatória, toque em **Enviar** para enviar a carta. Ou, para fazer alterações na carta, toque em **Sair da visualização** para voltar para a visualização Criar interface de correspondência da carta para fazer alterações nela. Ao tocar em Enviar, se a configuração Gerenciar instância de carta estiver habilitada na instância de Publicação, a instância de carta de envio será gerada.
 
-   Para obter mais informações, consulte Instância de rascunho em Salvar rascunhos e enviar instâncias de carta.
+   Para obter mais informações, consulte Instância de rascunho em Salvar rascunhos e enviar instâncias de cartas.
 
-   Você também pode salvar a carta como rascunho para fazer alterações à carta posteriormente.
+   Você também pode salvar a carta como rascunho para alterá-la posteriormente.
 
-   Depois de fazer as alterações necessárias, você pode enviar a carta da pré-visualização do HTML5 ou tocar em Visualizar novamente para revisar a saída do PDF nivelado.
+   Depois de fazer as alterações necessárias, você pode enviar a correspondência da pré-visualização do HTML5 ou tocar em Visualizar novamente para revisar a saída de PDF nivelado.
 
-   Para obter informações sobre diferenças entre formulários HTML5 e PDF forms, consulte [Diferenciação de recursos entre formulários HTML5 e PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
+   Para obter informações sobre as diferenças entre os formulários HTML5 e PDF forms, consulte [Diferenciação de recursos entre formulários HTML e PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
 ## Salvar rascunhos e enviar instâncias de carta {#savingdrafts}
 
-Quando uma carta é renderizada na interface do usuário Criar correspondência, você pode salvar a carta como visualizada.
+Quando uma correspondência é renderizada na interface do usuário Criar correspondência, você pode salvá-la como visualizada.
 
-Há dois tipos de instâncias de carta que podem ser salvas: Instância de rascunho e instância de envio.
+Há dois tipos de instâncias de correspondência que podem ser salvas: Instância de rascunho e Instância de envio.
 
-* **Instância de rascunho**: A instância de rascunho captura o estado atual da carta que você está visualizando. Para salvar uma instância de rascunho, primeiro verifique se a carta e todos os ativos aos quais a carta faz referência estão no estado Publicado . Para obter informações sobre como publicar uma carta, consulte [Publicar um ativo](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Você precisa Publicar uma carta antes de poder salvá-la como rascunho, pois ao publicar uma carta, você cria uma versão da carta, seus ativos dependentes e dados nesse momento. A versão publicada de uma carta não pode ser editada por você ou por outro usuário e pode ser restaurada posteriormente sem discrepâncias inesperadas da versão publicada. Você pode retornar a essa instância posteriormente e continuar de onde parou.
+* **Instância de rascunho**: a instância de rascunho captura o estado atual da carta que você está visualizando. Para salvar uma instância de rascunho, primeiro verifique se a carta e todos os ativos aos quais a carta faz referência estão no estado Publicado. Para obter informações sobre como publicar uma carta, consulte [Publicar um ativo](../../forms/using/publishing-unpublishing-forms.md#publishanasset). É necessário Publicar uma carta antes de salvá-la como rascunho, pois, ao publicá-la, você cria uma versão da carta, seus ativos dependentes e dados nesse ponto. A versão publicada de uma correspondência não pode ser editada por você ou por outro usuário e pode ser restaurada posteriormente sem discrepâncias inesperadas em relação à versão publicada. Você pode retornar para essa instância mais tarde e continuar de onde parou.
 
-* **Enviar instância**: As instâncias de envio capturam o estado da carta conforme ela é enviada. A instância de envio armazena o estado de PDF da instância da carta depois que ela é processada juntamente com os dados inseridos pelo usuário na interface do usuário Criar correspondência .
+* **Enviar instância**: as instâncias de envio capturam o estado da carta como foi enviada. A instância de envio armazena o estado PDF da instância de carta depois de ser pós-processada junto com os dados inseridos pelo usuário na interface do usuário Criar correspondência.
 
-Essas instâncias só podem ser salvas quando a carta estiver sendo visualizada na instância de publicação. Por padrão, salvar em instâncias é desativado. Para habilitar o salvamento de instâncias de carta, execute as seguintes etapas.
+Essas instâncias só podem ser salvas quando a carta está sendo exibida na instância de publicação. Por padrão, o salvamento em instâncias é desativado. Para ativar o salvamento de instâncias de cartas, execute as seguintes etapas.
 
-1. Em AEM, abra a Configuração do Adobe Experience Manager Web Console para seu servidor usando o seguinte URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
-1. Localizar **[!UICONTROL Configurações de gerenciamento de correspondência]** e clique nele.
-1. Verificar **[!UICONTROL Gerenciar instâncias de carta na publicação]** e clique em **[!UICONTROL Salvar]**.
+1. No AEM, abra Configuração do console da Web do Adobe Experience Manager para o servidor usando o seguinte URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
+1. Localizar **[!UICONTROL Configurações do gerenciamento de correspondência]** e clique nela.
+1. Marcar **[!UICONTROL Gerenciar instâncias de carta ao publicar]** e clique em **[!UICONTROL Salvar]**.
 
-### Habilitar recurso Salvar rascunho {#enable-save-draft-feature}
+### Ativar o recurso Salvar rascunho {#enable-save-draft-feature}
 
 Antes de publicar cartas ou salvar rascunhos na instância de publicação, execute as seguintes etapas na instância de criação e publicação para ativar o recurso Salvar como rascunho:
 
-O *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* as propriedades não são transferidas para a instância de publicação por padrão. Para o transporte *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* propriedades para publicar instância, desative o [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente. Para desativar o componente:
+A variável *cq:lastReplicationAction*, *cq:last replicated* e *cq:lastReplicatedBy* as propriedades não são transferidas para a instância de publicação por padrão. A fim de assegurar a *cq:lastReplicationAction*, *cq:last replicated* e *cq:lastReplicatedBy* propriedades para publicar instância, desative a variável [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente. Para desativar o componente:
 
-1. Na instância do autor, abra o console Componentes do console da Web do Adobe Experience Manager. O URL padrão é `http://author-server:port/system/console/components`
+1. Na instância do autor, abra o console Componentes do Adobe Experience Manager Web Console. O URL padrão é `http://author-server:port/system/console/components`
 
-1. Procure a variável **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** componente.
+1. Procure por **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** componente.
 
 1. Clique em ![Botão Desativar](/help/forms/using/assets/enablebutton.png) ícone para desativar o [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente.
 
 ![Instância do autor](/help/forms/using/assets/replicationproperties.png)
 
-Para ativar o recurso salvar como rascunho, substitua o URL existente em [!UICONTROL URL de Autor do VersionRestoreManager] com o URL da instância do autor. Para substituir o URL:
+Para ativar o recurso Salvar como rascunho, substitua o URL existente em [!UICONTROL URL do autor do VersionRestoreManager] com o URL da instância do autor. Para substituir o URL:
 
-1. Na instância de publicação, abra [!UICONTROL Configuração do Console da Web do Aode Manager]. O URL padrão é `https://publish-server:port/system/console/configMgr`
+1. Na instância de publicação, abra [!UICONTROL Configuração do console da Web do Aode Manager]. O URL padrão é `https://publish-server:port/system/console/configMgr`
 
-1. Pesquise e abra o **[!UICONTROL Gerenciamento de correspondência - Configurações de restauração de versão da instância de autor]** componente.
+1. Pesquise e abra o **[!UICONTROL Gerenciamento de correspondências - Configurações de restauração de versão da instância do autor]** componente.
 
-1. Localize a variável **[!UICONTROL URL de Autor do VersionRestoreManager]** e especifique o URL da instância do autor.
+1. Localize o **[!UICONTROL URL do autor do VersionRestoreManager]** e especifique o URL da instância do autor.
 
 1. Clique em Salvar.
 
 ![Instância de publicação](/help/forms/using/assets/correspondencemanagement.png)
 
-Quando o salvamento de instâncias de carta estiver ativado, você terá a opção de selecionar onde salvar as instâncias de carta. Há duas opções para salvar as instâncias de carta: Salvar local ou Salvar remotamente.
+Quando a opção para salvar as ocorrências de cartas está ativada, você tem a opção para selecionar onde salvar as ocorrências de cartas. Há duas opções para salvar as instâncias de carta: Salvar local ou Salvar remoto.
 
-### Salvar local {#local-save}
+### Salvamento local {#local-save}
 
-As instâncias de carta são salvas na instância de publicação e são replicadas inversamente na instância do autor.
+As instâncias de correspondência são salvas na instância de publicação e são replicadas revertidas na instância de autoria.
 
-### Salvar remotamente {#remote-save}
+### Salvamento remoto {#remote-save}
 
-Essa opção existe para pessoas que têm preocupações sobre como salvar dados de usuários em instâncias de publicação, que em geral estão fora do firewall corporativo. Quando o salvamento remoto é ativado, as instâncias de carta não são salvas na instância de publicação, mas são remotamente salvas no autor de processamento especificado por meio das configurações do SDK do cliente do LiveCycle.
+Essa opção existe para pessoas que têm preocupações com o salvamento de dados do usuário em instâncias de publicação, que em geral estão fora do firewall corporativo. Quando o salvamento remoto está ativado, as instâncias de carta não são salvas na instância de publicação, mas são salvas remotamente no autor de processamento especificado por meio das configurações do SDK do cliente do LiveCycle.
 
-#### Ativar salvamento remoto {#enable-remote-save}
+#### Habilitar salvamento remoto {#enable-remote-save}
 
-1. Em AEM, abra a Configuração do Adobe Experience Manager Web Console para seu servidor usando o seguinte URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
-1. Procurar por **[!UICONTROL Configurações de gerenciamento de correspondência]** e clique nele.
-1. Localize a variável **[!UICONTROL Salvar Remoto]** , marque-a e clique em **[!UICONTROL Salvar]**.
+1. No AEM, abra Configuração do console da Web do Adobe Experience Manager para o servidor usando o seguinte URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Pesquisar por **[!UICONTROL Configurações do gerenciamento de correspondência]** e clique nela.
+1. Localize o **[!UICONTROL Salvamento remoto]** configuração, marque-a e clique em **[!UICONTROL Salvar]**.
 
-#### Especificar configurações do autor de processamento {#specify-processing-author-settings}
+#### Especificar as configurações de processamento do autor {#specify-processing-author-settings}
 
-1. Em AEM, abra a Configuração do Adobe Experience Manager Web Console para seu servidor usando o seguinte URL: `https://<server>:<port>/system/console/configMgr`
+1. No AEM, abra Configuração do console da Web do Adobe Experience Manager para o servidor usando o seguinte URL: `https://<server>:<port>/system/console/configMgr`
 
-   ![Configuração do Console da Web do Adobe Experience Manager](assets/2configmanager.png)
+   ![Configuração do console da Web do Adobe Experience Manager](assets/2configmanager.png)
 
 1. Nesta página, localize a Configuração do SDK do cliente do Adobe LiveCycle e expanda-a clicando nela.
 
-1. No URL do Servidor de processamento, digite o nome do servidor do LiveCycle, forneça as informações de logon e clique em **Salvar**.
+1. No URL do servidor de processamento, digite o nome do servidor do LiveCycle, forneça as informações de logon e clique em **Salvar**.
 
-   ![Insira o nome e as informações de logon do servidor do LiveCycle](assets/3configmanager.png)
+   ![Insira o nome e as informações de logon do servidor LiveCycle](assets/3configmanager.png)
 
 1. Se necessário, defina o nome de usuário e a senha com os quais deseja acessar o servidor.
 
 #### Entrega do anexo {#attachmentdelivery}
 
-* Os anexos da carta estão disponíveis no processo de publicação no PDF, que é criado após o envio da carta.
-* Quando a Carta é renderizada usando APIs do lado do servidor como um PDF interativo ou não interativo, o PDF renderizado contém anexos como anexos de PDF.
-* Quando um processo de postagem associado a um modelo de carta é carregado como parte das operações Enviar ou Concluir Correspondência usando a interface do usuário Criar Correspondência , os anexos são passados como a Lista&lt;com.adobe.idp.document> no parâmetro AttachmentDocs .
-* Mecanismos de delivery prontos para uso, como email e Impressão, também entregam anexos junto com a PDF da correspondência gerada.
+* Os anexos de carta estão disponíveis no pós-processamento no PDF, que é criado após o envio da carta.
+* Quando a carta é renderizada usando APIs do lado do servidor como um PDF interativo ou não interativo, o PDF renderizado contém anexos como anexos de PDF.
+* Quando um processo de publicação associado a um modelo de correspondência é carregado como parte das operações Enviar ou Concluir correspondência usando a interface do usuário Criar correspondência, os anexos são passados como a Lista&lt;com.adobe.idp.document> no parâmetro AttachmentDocs.
+* Os mecanismos de delivery prontos para uso, como email e impressão, também fornecem anexos junto com o PDF da correspondência gerada.
 
-## Modos de representação da visualização de letras: Visualização de formulários móveis e visualização do PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
+## Modos de representação da visualização de correspondências: visualização de formulários para dispositivos móveis e visualização de PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-O Gerenciamento de correspondência do AEM Forms exibe uma carta como HTML na interface do usuário Criar correspondência. No entanto, o Correspondence Management ainda oferece suporte para reverter para a visualização do PDF em vez da visualização do HTML. Para obter mais informações sobre como alternar entre o HTML e o modo PDF de visualização, consulte [Alterar modo de representação da letra](#changerenditionmode).
+O Gerenciamento de correspondência da AEM Forms exibe uma correspondência como HTML na interface Criar correspondência. No entanto, o Gerenciamento de correspondência ainda é compatível com a reversão para a visualização de PDF em vez de pré-visualização de HTML. Para obter mais informações sobre como alternar entre os modos de visualização HTML e PDF, consulte [Alterar modo de representação da carta](#changerenditionmode).
 
-A seguir estão os benefícios e a funcionalidade disponíveis na visualização HTML e PDF.
+A seguir estão os benefícios e a funcionalidade disponíveis na pré-visualização de HTML e PDF.
 
-**Benefícios dos formulários móveis/visualização de HTML**
+**Benefícios do formulário para publicação de conteúdo para dispositivos móveis/visualização de HTML**
 
-* **Toque em um valor de campo de dados para realçar o campo de dados correspondente**: Na interface do usuário Criar correspondência, é possível tocar em um valor de campo de dados na carta para realçar o campo de dados correspondente na guia Dados . Para obter mais informações, consulte [Inserir dados](#enterdata).
+* **Toque em um valor de campo de dados para realçar o campo de dados correspondente**: na interface do usuário Criar correspondência, toque em um valor de campo de dados na correspondência para realçar o campo de dados correspondente na guia Dados. Para obter mais informações, consulte [Inserir dados](#enterdata).
 
-* **Suporte ao navegador**: O navegador interrompe o suporte para NPAPI gradualmente, o que afeta a visualização de PDF da carta. A visualização de HTML/formulários móveis da carta não é afetada por isso.
-* **Destacar conteúdo editável em uma carta**: Na interface do usuário Criar correspondência, toque em Realçar conteúdo editável para realçar todo o conteúdo editável na carta em cinza. Para obter mais informações, consulte [Gerenciar conteúdo](#managecontent).
+* **Suporte ao navegador**: Os navegadores removem gradualmente o suporte para NPAPI, o que afeta a pré-visualização de PDF da correspondência. A visualização da carta nos formulários HTML/móveis não é afetada por isso.
+* **Realçar conteúdo editável em uma correspondência**: na interface do usuário Criar correspondência, toque em Realçar conteúdo editável para realçar todo o conteúdo editável na letra em cinza. Para obter mais informações, consulte [Gerenciar conteúdo](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
-`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`  **Benefícios da visualização de PDF**
+`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`  **Benefícios da visualização do PDF**
 
-* **Quebra de página**: Na visualização do PDF, é possível visualizar exatamente como as quebras de página na letra afetam sua saída.
-* **Visualização final**: Na visualização do PDF, é possível exibir a formatação exata e a aparência da letra, já que ela aparecerá em sua saída.
+* **Quebra de página**: na pré-visualização de PDF, é possível visualizar exatamente como as quebras de página na correspondência afetam a saída.
+* **Visualização final**: na pré-visualização de PDF, é possível visualizar a formatação e a aparência exatas da letra, conforme ela aparecerá na saída.
 
-Para obter informações sobre o suporte a scripts no PDF forms, consulte [Suporte a scripts](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
+Para obter informações sobre suporte a scripts no PDF forms, consulte [Suporte a script](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html).
 
-Para obter mais informações sobre o suporte a scripts em formulários HTML5, consulte [Suporte a scripts para formulários HTML5](/help/forms/using/scripting-support.md).
+Para obter mais informações sobre suporte a script em formulários HTML5, consulte [Suporte a script para formulários HTML5](/help/forms/using/scripting-support.md).
 
-### Alterar modo de representação da letra {#changerenditionmode}
+### Alterar modo de representação da carta {#changerenditionmode}
 
-Por padrão, a interface do usuário Criar correspondência usa o HTML ou formulários móveis para renderizar a visualização da carta. A visualização de formulários móveis não apresenta problemas de renderização em nenhum navegador, pois usa o plug-in nativo do navegador e não requer plug-ins adicionais. Você pode alterar o modo de visualização de letra para PDF. No entanto, as restrições do navegador podem criar problemas para diferentes recursos da visualização interativa do PDF da carta.
+Por padrão, a interface Criar correspondência usa o HTML ou formulários móveis para renderizar a pré-visualização de correspondência. A visualização de formulários móveis não tem problemas de renderização em nenhum navegador, pois usa o plug-in nativo do navegador e não requer plug-ins adicionais. É possível alterar o modo de visualização de correspondência para PDF. No entanto, as restrições do navegador podem criar problemas para diferentes recursos da pré-visualização interativa de PDF da correspondência.
 
-Para obter mais informações sobre a compatibilidade do navegador com a visualização de carta, consulte [Descontinuação dos plug-ins do navegador NPAPI e seu impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Para obter mais informações sobre a compatibilidade do navegador com a pré-visualização de cartas, consulte [Descontinuação de plug-ins de navegadores NPAPI e seu impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
-Para alterar o modo de visualização da carta, conclua as seguintes etapas:
+Para alterar o modo de visualização da correspondência, conclua as seguintes etapas:
 
 1. Ir para `https://[system]:'port'/system/console/configMgr` e, se necessário, faça logon como Administrador.
-1. Ir para **[!UICONTROL Configurações de gerenciamento de correspondência]** > **[!UICONTROL Tipo de representação]** e selecione **HTML Rendition** (Padrão) ou **PDF Rendition**.
+1. Ir para **[!UICONTROL Configurações do gerenciamento de correspondência]** > **[!UICONTROL Tipo de representação]** e selecione **Representação do HTML** (Padrão) ou **Representação do PDF**.
 1. Clique em **[!UICONTROL Salvar]**.

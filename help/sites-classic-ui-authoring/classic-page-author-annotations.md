@@ -1,6 +1,6 @@
 ---
 title: Anotações ao editar uma página
-description: Com frequência, a adição de conteúdo às páginas do seu site está sujeita a discussões antes da publicação efetiva. Para ajudar nisso, muitos componentes diretamente relacionados ao conteúdo permitem adicionar uma anotação.
+description: Adicionar conteúdo às páginas do seu site geralmente está sujeito a discussões antes de realmente ser publicado. Para auxiliar nisso, muitos componentes diretamente relacionados ao conteúdo permitem adicionar uma anotação.
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 # Anotações ao editar uma página{#annotations-when-editing-a-page}
 
-Com frequência, a adição de conteúdo às páginas do seu site está sujeita a discussões antes da publicação efetiva. Para auxiliar nesse processo, muitos componentes diretamente relacionados ao conteúdo (em oposição, por exemplo, ao layout) permitem adicionar uma anotação.
+Adicionar conteúdo às páginas do seu site geralmente está sujeito a discussões antes de realmente ser publicado. Para auxiliar nisso, muitos componentes diretamente relacionados ao conteúdo (em vez de, por exemplo, ao layout) permitem adicionar uma anotação.
 
 Uma anotação coloca um marcador colorido/nota adesiva na página. A anotação permite a você (ou outros usuários) deixar comentários e/ou perguntas para outros autores/revisores.
 
@@ -28,11 +28,11 @@ Uma anotação coloca um marcador colorido/nota adesiva na página. A anotação
 
 >[!NOTE]
 >
->As anotações criadas na interface clássica também serão exibidas na interface otimizada para toque. No entanto, os rascunhos são específicos da interface do usuário e são mostrados somente na interface do usuário na qual foram criados.
+>As anotações criadas na interface clássica também serão exibidas na interface otimizada para toque. No entanto, os rascunhos são específicos da interface do usuário e são mostrados somente na interface do usuário em que foram criados.
 
 >[!CAUTION]
 >
->A exclusão de um recurso (por exemplo, parágrafo) exclui todas as anotações e rascunhos associados a ele; independentemente de sua posição na página como um todo.
+>A exclusão de um recurso (por exemplo, parágrafo) exclui todas as anotações e rascunhos associados a ele, independentemente de sua posição na página como um todo.
 
 >[!NOTE]
 >
@@ -40,64 +40,64 @@ Uma anotação coloca um marcador colorido/nota adesiva na página. A anotação
 
 ## Anotações {#annotations}
 
-Dependendo do design do parágrafo, a anotação está disponível como uma opção no menu de contexto (geralmente, o botão direito do mouse quando sobre o parágrafo necessário) ou como um botão na barra de edição de parágrafo.
+Dependendo do design do parágrafo, a anotação está disponível como uma opção no menu de contexto (geralmente o botão direito do mouse sobre o parágrafo necessário) ou como um botão na barra de edição de parágrafo.
 
-Em qualquer caso, selecione **Anotar**. Uma anotação adesiva colorida será aplicada ao parágrafo; você entrará imediatamente no modo Editar, o que lhe permitirá a adição direta de texto:
+Em ambos os casos, selecione **Anotar**. Uma anotação colorida de nota adesiva será aplicada ao parágrafo; você estará imediatamente no modo Editar, permitindo adicionar o texto diretamente:
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
-É possível mover a anotação para uma nova posição na página. Clique na área da borda superior e segure e arraste simultaneamente a anotação para a nova posição. Isso pode estar em qualquer lugar da página, embora geralmente seja significativo mantê-la conectada ao parágrafo de alguma forma.
+Você pode mover a anotação para uma nova posição na página. Clique na área da borda superior, mantenha pressionada e arraste simultaneamente a anotação para a nova posição. Pode ser em qualquer lugar da página, embora geralmente seja significativo mantê-lo conectado ao parágrafo de alguma forma.
 
-As anotações (incluindo os rascunhos relacionados) também são incluídas em qualquer ação de cópia, recorte ou exclusão executada no parágrafo ao qual estão anexadas; para ações de cópia ou recorte, a posição da anotação (e rascunhos relacionados) mantém sua posição em relação ao parágrafo original.
+As anotações (incluindo rascunhos relacionados) também são incluídas em qualquer ação de cópia, recorte ou exclusão realizada no parágrafo ao qual estão anexadas; para ações de cópia ou recorte, a posição da anotação (e rascunhos relacionados) mantém sua posição em relação ao parágrafo de origem.
 
-O tamanho da anotação também pode ser aumentado ou diminuído ao arrastar o canto inferior direito.
+O tamanho da anotação também pode ser aumentado ou diminuído arrastando o canto inferior direito.
 
-Para fins de rastreamento, a linha de rodapé indicará o usuário que criou a anotação e a data. Os autores seguintes poderão editar a mesma anotação (o rodapé será atualizado) ou criar uma nova anotação para o mesmo parágrafo.
+Para fins de rastreamento, a linha de rodapé indicará o usuário que criou a anotação e a data. Os autores subsequentes podem editar a mesma anotação (o rodapé será atualizado) ou criar uma nova anotação para o mesmo parágrafo.
 
-A confirmação será solicitada quando você optar por excluir a anotação (a exclusão da anotação também exclui qualquer rascunho associado a ela).
+A confirmação será solicitada ao selecionar a exclusão da anotação (a exclusão de uma anotação também exclui os rascunhos anexados a essa anotação).
 
-Os três ícones no canto superior esquerdo permitem minimizar a anotação (junto com os rascunhos relacionados), alterar a cor e adicionar rascunhos.
+Os três ícones na parte superior esquerda permitem minimizar a anotação (juntamente com qualquer rascunho relacionado), alterar a cor e adicionar rascunhos.
 
 >[!NOTE]
 >
->As anotações são visíveis apenas no modo de Edição do ambiente do autor.
+>As anotações só são visíveis no modo Editar do ambiente de criação.
 >
->Elas não estão visíveis em um ambiente de publicação, nem nos modos Visualizar ou Design disponíveis em um ambiente de criação.
+>Eles não estão visíveis em um ambiente de publicação, nem nos modos de Visualização ou Design disponíveis em um ambiente de autor.
 
 >[!NOTE]
 >
 >As anotações não podem ser adicionadas a uma página que foi bloqueada por outro usuário.
 
-## Rascunhos de anotação {#annotation-sketches}
+## Rascunhos de anotações {#annotation-sketches}
 
 >[!NOTE]
 >
 >Os rascunhos não estão disponíveis no Internet Explorer, portanto:
 >
 >* o ícone não será exibido.
->* os rascunhos existentes, criados em outro navegador, não serão exibidos.
+>* rascunhos existentes, criados em outro navegador, não serão exibidos.
 >
 
 
-Os rascunhos são um recurso de anotações que permitem criar gráficos de linhas simples em qualquer lugar na janela do navegador (porção visível):
+Os rascunhos são um recurso de anotações que permitem criar gráficos de linha simples em qualquer lugar na janela do navegador (parte visível):
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
-* O cursor se transformará em uma cruz quando você estiver no modo de rascunho. Você pode desenhar várias linhas distintas.
+* O cursor se transformará em um fio cruzado quando você estiver no modo de rascunho. Você pode desenhar várias linhas distintas.
 * A linha de rascunho reflete a cor da anotação e pode ser:
 
-   * mão livre
+   * à mão livre
 
       o modo padrão; termine soltando o botão do mouse.
 
-   * reto:
+   * reta:
 
-      manter pressionado `ALT` e clique nos pontos de início e fim; termine com um clique duplo.
+      mantenha pressionada `ALT` e clique nos pontos inicial e final; conclua com um clique duplo.
 
-* Depois de sair do modo de rascunho, você pode clicar em uma linha de rascunho para selecionar esse rascunho.
-* Para mover um rascunho, selecione-o e depois arraste-o para a posição desejada.
-* Um rascunho se sobrepõe ao conteúdo. Isso significa que, nos 4 cantos do rascunho, não é possível clicar no parágrafo subjacente; por exemplo, se você precisar editar ou acessar um link. Se isso se tornar um problema (por exemplo, se houver um rascunho cobrindo uma área grande da página), minimize a anotação apropriada, pois isso também minimizará todos os rascunhos relacionados, fornecendo acesso à área subjacente.
-* Para excluir um rascunho individual - selecione o rascunho necessário e pressione a tecla **Excluir** tecla (**fn**-**backspace** em uma MAC).
+* Depois de sair do modo de rascunho, você pode clicar em uma linha de rascunho para selecioná-lo.
+* Mover um rascunho selecionando-o e arrastando-o para a posição desejada.
+* Um rascunho sobrepõe o conteúdo. Isso significa que dentro dos 4 cantos do rascunho não é possível clicar no parágrafo subjacente; por exemplo, se você precisar editar ou acessar um link. Se isso se tornar um problema (por exemplo, se você tiver um rascunho que cubra uma grande área da página), minimize a anotação apropriada, pois isso também minimizará todos os rascunhos relacionados, dando acesso à área subjacente.
+* Para excluir um rascunho individual - selecione o rascunho necessário e pressione a tecla **Excluir** chave (**fn**-**backspace** em um MAC).
 
-* Se você mover ou copiar um parágrafo, quaisquer anotações relacionadas e seus rascunhos também serão movidos ou copiados; a sua posição em relação ao parágrafo permanecerá a mesma.
-* Se você excluir uma anotação, todos os rascunhos associados a ela também serão excluídos.
+* Se você mover ou copiar um parágrafo, todas as anotações relacionadas e seus rascunhos também serão movidos ou copiados; sua posição em relação ao parágrafo permanecerá a mesma.
+* Se você excluir uma anotação, todos os rascunhos anexados a essa anotação também serão excluídos.

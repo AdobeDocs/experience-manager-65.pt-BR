@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Ajustando o desempenho do Monitor de Integridade{#fine-tuning-health-monitor-performance}
 
-A coleta das estatísticas do sistema que preenchem o Monitor de integridade afeta o desempenho do ambiente de formulários AEM. Esse impacto pode ser controlado definindo as opções de Java listadas abaixo no servidor de aplicativos.
+Coletar as estatísticas do sistema que preenchem o Health Monitor tem algum impacto no desempenho do seu ambiente de formulários AEM. Esse impacto pode ser controlado definindo as opções de Java listadas abaixo em seu servidor de aplicativos.
 
 <table>
  <thead>
@@ -32,7 +32,7 @@ A coleta das estatísticas do sistema que preenchem o Monitor de integridade afe
  <tbody>
   <tr>
    <td><p>adobe.healthmonitor.enabled</p></td>
-   <td><p>Ativar ou desativar thread do Monitor de Estado de Funcionamento</p></td>
+   <td><p>Ativar ou desativar thread do Monitor de Integridade</p></td>
    <td><p>verdadeiro</p></td>
   </tr>
   <tr>
@@ -47,17 +47,17 @@ A coleta das estatísticas do sistema que preenchem o Monitor de integridade afe
   </tr>
   <tr>
    <td><p>adobe.cache.multicast-port</p></td>
-   <td><p>A porta de multicast usada para se comunicar com outros membros do sistema distribuído. Se definida como zero, a multicast será desativada para detecção e distribuição de membros. </p><p>Observação: Selecione diferentes endereços e portas multicast para diferentes sistemas distribuídos. Não use somente endereços diferentes.</p></td>
+   <td><p>A porta multicast usada para se comunicar com outros membros do sistema distribuído. Se definido como zero, o multicast será desabilitado para descoberta e distribuição de membros. </p><p>Observação: selecione portas e endereços de multicast diferentes para sistemas distribuídos diferentes. Não use somente endereços diferentes.</p></td>
    <td><p>Nenhum valor padrão. Os valores válidos variam de 0 a 65535.</p></td>
   </tr>
   <tr>
-   <td><p>taxa de amostra de estatística</p></td>
-   <td><p>A taxa em milissegundos à qual as estatísticas são amostradas. As estatísticas do sistema operacional só são atualizadas quando uma amostra é coletada.</p></td>
+   <td><p>statistic-sample-rate</p></td>
+   <td><p>A taxa em milissegundos em que as estatísticas são amostradas. As estatísticas do sistema operacional só são atualizadas quando uma amostra é coletada.</p></td>
    <td><p>600000</p></td>
   </tr>
   <tr>
    <td><p>adobe.workmanager.healthmonitor.enabled</p></td>
-   <td><p>Essa propriedade ativa ou desativa a coleta de estatísticas do Gerenciador de Trabalho, como a contagem de tarefas ou de itens de trabalho.</p></td>
+   <td><p>Essa propriedade ativa ou desativa a coleta de estatísticas do Work Manager, como contagem de itens de trabalho ou de jobs.</p></td>
    <td><p>verdadeiro</p></td>
   </tr>
  </tbody>
@@ -65,30 +65,30 @@ A coleta das estatísticas do sistema que preenchem o Monitor de integridade afe
 
 ## Adicionar opções Java ao JBoss {#add-java-options-to-jboss}
 
-1. Pare o servidor de aplicativos JBoss.
-1. Abra o *[raiz do appserver]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) em um editor e adicione qualquer uma das opções do Java, conforme necessário.
+1. Interrompa o servidor da aplicação JBoss.
+1. Abra o *[raiz do appserver]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) em um editor e adicione qualquer uma das opções de Java, conforme necessário.
 1. Reinicie o servidor.
 
-## Adicionar opções de Java ao WebLogic {#add-java-options-to-weblogic}
+## Adicionar opções Java ao WebLogic {#add-java-options-to-weblogic}
 
-1. Inicie o console de administração do WebLogic digitando https://[nome do host]:&#39;port&#39;/console na linha do URL de um navegador da Web.
-1. Digite o nome de usuário e a senha que você criou para o domínio do WebLogic Server e clique em Registrar no Change Center, clique em Bloquear e editar.
-1. Em Estrutura de domínio, clique em Ambiente > Servidores e, no painel direito, clique no nome do servidor gerenciado.
-1. Na próxima tela, clique na guia Configuração > Início do servidor .
-1. Na caixa Argumentos , anexe os argumentos necessários ao final do conteúdo atual. Por exemplo, adicionar - `Dadobe.healthmonitor.enabled=false` desativa o Monitor de integridade.
+1. Inicie o console de administração do WebLogic digitando https://[nome do host]:&#39;port&#39;/console na linha URL de um navegador da web.
+1. Digite o nome de usuário e a senha criados para o domínio do WebLogic Server e clique em Registrar no Centro de Alterações, em Bloquear e Editar.
+1. Em Estrutura do domínio, clique em Ambiente > Servidores e, no painel direito, clique no nome do servidor gerenciado.
+1. Na próxima tela, clique na guia Configuração > na guia Início do servidor.
+1. Na caixa Argumentos, anexe os argumentos necessários ao final do conteúdo atual. Por exemplo, adicionar - `Dadobe.healthmonitor.enabled=false` desabilita o Monitor de Integridade.
 1. Clique em Salvar e em Ativar alterações.
-1. Reinicie o servidor gerenciado do WebLogic.
+1. Reinicie o servidor gerenciado WebLogic.
 
-## Adicionar opções Java ao WebSphere {#add-java-options-to-websphere}
+## Adicionar opções de Java ao WebSphere {#add-java-options-to-websphere}
 
-1. Na árvore de navegação do Console Administrativo do WebSphere, faça o seguinte para o servidor de aplicativos:
+1. Na árvore de navegação do Console administrativo do WebSphere, faça o seguinte para o servidor de aplicativos:
 
    (WebSphere 6.x) Clique em Servidores > Servidores de aplicativos
 
-   (WebSphere 7.x) Clique em Servidores > Tipos de Servidor > Servidores de Aplicativos WebSphere
+   (WebSphere 7.x) Clique em Servidores > Tipos de servidor > Servidores de aplicativos WebSphere
 
 1. No painel direito, clique no nome do servidor.
-1. Em Infraestrutura do servidor, clique em Java e fluxo de trabalho de formulários > Definição do processo.
-1. Em Additional Properties, clique em Java Virtual Machine.
+1. Em Infraestrutura do servidor, clique em Fluxo de trabalho de formulários e Java > Definição de processo.
+1. Em Propriedades adicionais, clique em Java Virtual Machine.
 1. Na caixa Generic JVM arguments, digite os argumentos necessários.
-1. Clique em OK ou Aplicar e em Salvar diretamente na configuração principal.
+1. Clique em OK ou em Aplicar e, em seguida, clique em Salvar diretamente na configuração principal.

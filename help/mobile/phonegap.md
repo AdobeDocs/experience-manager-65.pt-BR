@@ -18,11 +18,11 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) Mobile é apenas um pilar que constitui a plataforma AEM completa.
+O Adobe Experience Manager (AEM) Mobile é apenas um pilar que compõe a plataforma completa do AEM.
 
-Iniciar uma nova experiência com o aplicativo AEM Mobile requer uma coesão de funções antes de estar pronto para a edição de conteúdo. As seguintes funções fornecem um ponto de partida para a criação de um novo aplicativo do AEM Mobile:
+Para iniciar uma nova experiência de aplicativo AEM Mobile, é necessário ter várias funções antes que ela esteja pronta para edição de conteúdo. As seguintes funções fornecem um ponto de partida para a criação de um novo aplicativo do AEM Mobile:
 
 * **Administrador**
 * **Desenvolvedor**
@@ -30,16 +30,16 @@ Iniciar uma nova experiência com o aplicativo AEM Mobile requer uma coesão de 
 
 ## Criação de aplicativos PhoneGap {#authoring-phonegap-applications}
 
-Um ***Autor do AEM* ou *Profissional de marketing*)**O é capaz de usar os modelos e componentes prontos para uso para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos do DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo).
+Um ***AEM Author* (ou *Profissional de marketing*)**O é capaz de usar os modelos e componentes prontos para uso para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos no DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo).
 
 Consulte os seguintes recursos para começar:
 
 * [Criação de aplicativos móveis](/help/mobile/phonegap-authoring-apps.md)
-* [Criação e gerenciamento do conteúdo do aplicativo](/help/mobile/phonegap-manage-app-content.md)
+* [Criação e gerenciamento de conteúdo do aplicativo](/help/mobile/phonegap-manage-app-content.md)
 * [Gerenciar mosaico do aplicativo](/help/mobile/phonegap-app-details-tile.md)
 * [Edição de metadados do aplicativo](/help/mobile/phonegap-editmetadata.md)
 * [Definições do aplicativo](/help/mobile/phonegap-app-definitions.md)
-* [Criação de um novo aplicativo AEM Mobile usando o assistente criar](/help/mobile/phonegap-create-new-app.md)
+* [Criação de um novo aplicativo AEM Mobile usando o assistente de criação](/help/mobile/phonegap-create-new-app.md)
 * [Importar um aplicativo híbrido existente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
 Para saber mais sobre **Serviços de conteúdo**, consulte [Visão geral dos serviços de conteúdo](/help/mobile/develop-content-as-a-service.md) para começar.
@@ -48,5 +48,5 @@ Para saber mais sobre **Serviços de conteúdo**, consulte [Visão geral dos ser
 
 Para saber mais sobre as funções e responsabilidades de um Administrador e Desenvolvedor, consulte os recursos abaixo:
 
-* [Desenvolvimento para Adobe PhoneGap Enterprise com AEM](/help/mobile/developing-in-phonegap.md)
-* [Administração de conteúdo para Adobe PhoneGap Enterprise com AEM](/help/mobile/administer-phonegap.md)
+* [Desenvolvimento do Adobe PhoneGap Enterprise com AEM](/help/mobile/developing-in-phonegap.md)
+* [Administração de conteúdo para o Adobe PhoneGap Enterprise com AEM](/help/mobile/administer-phonegap.md)

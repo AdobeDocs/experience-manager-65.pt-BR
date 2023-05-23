@@ -1,5 +1,5 @@
 ---
-title: Detectar o tipo MIME de ativos usando o Apache Tika
+title: Detectar tipos MIME de ativos usando o Apache Tika
 description: Ativar o Apache Tika para ajudar [!DNL Experience Manager Assets] detecte o tipo MIME de ativos do fluxo de conteúdo durante a operação de upload em vez da extensão de arquivo.
 contentOwner: AG
 role: Admin, Architect
@@ -12,23 +12,23 @@ ht-degree: 0%
 
 ---
 
-# Detectar tipo MIME de ativos usando [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
+# Detectar tipos MIME de ativos usando [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
 
-Normalmente, [!DNL Adobe Experience Manager Assets] O detecta o tipo MIME de ativos que você faz upload da extensão de arquivo.
+Normalmente, [!DNL Adobe Experience Manager Assets] O detecta o tipo MIME de ativos que você faz upload a partir da extensão de arquivo.
 
-Se você usar [!DNL Apache Tika] para fazer upload de ativos, [!DNL Assets] O detecta o tipo MIME do fluxo de conteúdo durante a operação de upload, em vez da extensão de arquivo.
+Se você usar [!DNL Apache Tika] para fazer upload de ativos, [!DNL Assets] O detecta o tipo MIME do fluxo de conteúdo durante a operação de upload em vez da extensão de arquivo.
 
-Esse recurso é desativado por padrão. Para ativar o recurso, configure a variável **[!UICONTROL Tipo Mime Day CQ DAM]** de [!UICONTROL Gerenciador de configuração].
+Esse recurso está desativado por padrão. Para habilitar o recurso, configure o **[!UICONTROL Tipo de Mime do DAM CQ do dia]** serviço de [!UICONTROL Gerenciador de configurações].
 
 >[!NOTE]
 >
->Detecção de tipo MIME usando o [!DNL Apache Tika] biblioteca é uma operação que usa muitos recursos.
+>Detecção de tipo MIME usando o [!DNL Apache Tika] A biblioteca do é uma operação que consome muitos recursos.
 
 1. Para abrir o console da Web do Configuration Manager, acesse `https://[aem_server]:[port]/system/console/configMgr`.
 
-1. Na lista de serviços, localize **[!UICONTROL Serviço de Tipo Mime Day CQ DAM]** e clique em **[!UICONTROL Editar]**.
+1. Na lista de serviços, localize **[!UICONTROL Serviço de tipo DAM Mime do DAM do Day CQ]** e clique em **[!UICONTROL Editar]**.
 
-1. Selecione o **[!UICONTROL Detectar MIME do conteúdo]** para permitir a análise de ativos carregados para determinar seu tipo MIME ao ignorar extensões de arquivo. Por padrão, essa opção não está selecionada.
+1. Selecione o **[!UICONTROL Detectar MIME do conteúdo]** opção para habilitar a análise de ativos carregados para determinar seu tipo MIME ao ignorar as extensões de arquivo. Por padrão, essa opção não está selecionada.
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 

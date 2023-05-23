@@ -17,27 +17,27 @@ ht-degree: 0%
 
 O Adobe Experience Manager Assets gera representações de vídeo para ativos de vídeo de vários formatos, incluindo OGG, FLV e assim por diante.
 
-O Experience Manager Assets suporta representações estáticas e dinâmicas (representações codificadas por DM) para ativos de mídia.
+O Experience Manager Assets é compatível com representações estáticas e dinâmicas (representações codificadas no DM) para ativos de mídia.
 
 As representações estáticas são geradas nativamente usando FFMPEG (instalado e disponível no caminho do sistema) e armazenadas no repositório de conteúdo.
 
-As representações codificadas em DM são armazenadas no servidor proxy e servidas no tempo de execução.
+As representações codificadas por DM são armazenadas no servidor proxy e veiculadas no tempo de execução.
 
-O Experience Manager Assets fornece suporte de reprodução para essas execuções no lado do cliente.
+A Experience Manager Assets fornece suporte à reprodução para essas representações no lado do cliente.
 
-Para exibir as representações de um ativo de vídeo específico, abra a página de ativos e selecione o ícone Navegação global . Em seguida, escolha **[!UICONTROL Representações]** na lista.
+Para exibir as representações de um ativo de vídeo específico, abra a página de ativos e selecione o ícone Navegação global. Em seguida, escolha **[!UICONTROL Representações]** da lista.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-A lista de representações de vídeo é exibida no **[!UICONTROL Representações]** painel.
+A lista de representações de vídeo é exibida na **[!UICONTROL Representações]** painel.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-Para configurar o servidor proxy para representações codificadas em DM, [configurar serviços da Dynamic Media Cloud](config-dynamic.md).
+Para configurar o servidor proxy para representações codificadas por DM, [configurar os serviços do Dynamic Media Cloud](config-dynamic.md).
 
 Para gerar representações de vídeo com os parâmetros desejados, [criar um perfil de vídeo correspondente](video-profiles.md).
 
-Após configurar o servidor proxy e criar perfis de vídeo, é possível incluir essa predefinição de vídeo em um perfil de processamento e aplicar o perfil de processamento a uma pasta.
+Depois de configurar o servidor proxy e criar perfis de vídeo, você pode incluir essa predefinição de vídeo em um perfil de processamento e aplicar o perfil de processamento a uma pasta.
 
 >[!NOTE]
 >

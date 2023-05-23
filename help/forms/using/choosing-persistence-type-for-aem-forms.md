@@ -1,7 +1,7 @@
 ---
-title: Como escolher um tipo de persistência para uma instalação do AEM Forms
+title: Escolha de um tipo de persistência para uma instalação do AEM Forms
 seo-title: Choosing a persistence type for an AEM Forms installation
-description: Escolha um tipo de persistência com sabedoria. Ajuda você a criar um ambiente AEM Forms eficiente e escalável.
+description: Escolha um tipo de persistência sabiamente. Ele ajuda a criar um ambiente AEM Forms eficiente e escalável.
 seo-description: Choose a persistence type wisely. It helps you build an efficient and scale able AEM Forms environment.
 uuid: 1c692502-5039-4757-9358-1772772b3904
 content-type: reference
@@ -18,22 +18,22 @@ ht-degree: 1%
 
 ---
 
-# Como escolher um tipo de persistência para uma instalação do AEM Forms {#choosing-a-persistence-type-for-an-aem-forms-installation}
+# Escolha de um tipo de persistência para uma instalação do AEM Forms {#choosing-a-persistence-type-for-an-aem-forms-installation}
 
-Escolha um tipo de persistência com sabedoria. Ajuda você a criar um ambiente AEM Forms eficiente e escalável.
+Escolha um tipo de persistência sabiamente. Ele ajuda a criar um ambiente AEM Forms eficiente e escalável.
 
-A persistência é o método para armazenar conteúdo nos armazenamentos físicos. Ela define a estrutura de dados real e o mecanismo de armazenamento dos dados. MicroKernels atuam como gerentes de persistência no AEM Forms. A AEM Forms suporta persistência (MicroKernals) do tipo TarMK, MongoMK e RDBMK. Você pode escolher um tipo de persistência para o AEM Forms dependendo da finalidade e do tipo de implantação (Servidor único, Farm ou Cluster) de uma instância do AEM Forms.
+Persistência é o método para armazenar conteúdo nos armazenamentos físicos. Ele define a estrutura de dados real e o mecanismo de armazenamento dos dados. Os micronúcleos atuam como gerenciadores de persistência no AEM Forms. O AEM Forms oferece suporte à persistência (MicroKernals) do tipo TarMK, MongoMK e RDBMK. Você pode escolher um tipo de persistência para o AEM Forms, dependendo da finalidade e do tipo de implantação (Servidor único, Farm ou Cluster) de uma instância do AEM Forms.
 
 >[!NOTE]
 >
->O LiveCycle ES4 SP1 usa a persistência do TarPM para armazenar conteúdo.
+>O LiveCycle ES4 SP1 usa a persistência TarPM para armazenar conteúdo.
 
-A tabela a seguir lista todos os tipos de persistência suportados junto com vários parâmetros para ajudá-lo a escolher um tipo de persistência para o seu ambiente:
+A tabela a seguir lista todos os tipos de persistência compatíveis, juntamente com vários parâmetros, para ajudá-lo a escolher um tipo de persistência para seu ambiente:
 
 <table>
  <tbody>
   <tr>
-   <th><strong>Tipo/custo de instalação</strong></th>
+   <th><strong>Tipo de Instalação/Custo</strong></th>
    <th><strong>TarMK</strong></th>
    <th><strong>MongoMk</strong></th>
    <th><strong>RDBMK</strong></th>
@@ -53,18 +53,18 @@ A tabela a seguir lista todos os tipos de persistência suportados junto com vá
   <tr>
    <th><strong>Custo da licença</strong></th>
    <td>Incluído com AEM </td>
-   <td>Licença separada necessária</td>
-   <td>Licença separada necessária</td>
+   <td>É necessária uma licença separada</td>
+   <td>É necessária uma licença separada</td>
   </tr>
  </tbody>
 </table>
 
-O TarMK foi projetado para desempenho, enquanto o MongoMK e o RDBMK foram projetados para escalabilidade. O Adobe recomenda o TarMK como a tecnologia de persistência padrão para todos os cenários de implantação do AEM Forms, para instâncias de Autor e Publicação, exceto nos casos de uso descritos na seção [Escolhendo Mongo ou um Microkernel de Banco de Dados Relacional sobre TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
+O TarMK foi projetado para desempenho, enquanto o MongoMK e o RDBMK foram projetados para escalabilidade. A Adobe recomenda fortemente o TarMK como a tecnologia de persistência padrão para todos os cenários de implantação do AEM Forms, para instâncias de Autor e Publicação, exceto nos casos de uso descritos na seção [Escolhendo Mongo ou um Microkernel de Banco de Dados Relacional sobre TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
 
-Para obter a lista de Microkernels suportados, consulte [AEM Forms sobre requisitos técnicos do OSGi](/help/sites-deploying/technical-requirements.md) ou [AEM Forms em combinações de plataformas compatíveis com JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) artigos.
+Para ver a lista de micronúcleos suportados, consulte [Requisitos técnicos do AEM Forms no OSGi](/help/sites-deploying/technical-requirements.md) ou [Combinações de plataforma compatíveis com AEM Forms no JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) artigos.
 
 ## Escolhendo Mongo ou um Microkernel de Banco de Dados Relacional sobre TarMK {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
 
-Um ambiente AEM Forms escalável (em cluster) é um conjunto de duas ou mais instâncias ativas do autor configuradas horizontalmente. Você pode optar por executar mais de uma instância de autor se um único servidor, compatível com todas as atividades de criação simultâneas, não for mais sustentável.
+Um ambiente escalável (em cluster) do AEM Forms é um conjunto de duas ou mais instâncias de autor ativas configuradas horizontalmente. Você pode optar por executar mais de uma instância do autor se um único servidor, que suporta todas as atividades de criação simultâneas, não for mais sustentável.
 
-Somente os tipos de persistência MongoMK e RDBMK são compatíveis com um AEM Forms escalável (em cluster) no ambiente JEE. O número de servidores ou o tamanho do ambiente escalável varia para cada instalação. Para obter uma lista de considerações e exemplos, consulte a [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md) e ou [Topologias de arquitetura e implantação do AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md) artigo 10. o Você também pode entrar em contato com o suporte da AEM Forms para obter informações detalhadas sobre o planejamento de capacidade do AEM Forms com RDBMK e TarMK.
+Somente os tipos de persistência MongoMK e RDBMK são compatíveis com um AEM Forms escalável (em cluster) no ambiente JEE. O número de servidores ou o tamanho do ambiente escalável varia para cada instalação. Para obter uma lista de considerações e exemplos, consulte [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md) e ou [Arquitetura e topologias de implantação do AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md) artigo. Você também pode entrar em contato com o suporte da AEM Forms para obter informações detalhadas sobre o planejamento de capacidade do AEM Forms com RDBMK e TarMK.

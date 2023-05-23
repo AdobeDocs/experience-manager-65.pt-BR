@@ -1,6 +1,6 @@
 ---
-title: Compactar e descompactar arquivos usando uma AEM Forms no JEE Custom DSC
-description: Saiba como compactar e descompactar arquivos usando um AEM Forms no JEE Custom DSC
+title: Compactar e descompactar arquivos usando um AEM Forms no JEE Custom DSC
+description: Saiba como compactar e descompactar arquivos usando um AEM Forms no DSC personalizado JEE
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
@@ -9,21 +9,21 @@ ht-degree: 0%
 
 ---
 
-# Compactar e descompactar arquivos usando uma AEM Forms no JEE Custom DSC {#compressing-decompressing-files}
+# Compactação e descompactação de arquivos usando um AEM Forms no DSC personalizado JEE {#compressing-decompressing-files}
 
-## Conhecimento pré-requisito {#prerequisites}
+## Conhecimento de pré-requisito {#prerequisites}
 
-Experimente o AEM Forms no JEE Process Management, programação básica do Java e criação de componente personalizado.
+Experiência com o AEM Forms no Gerenciamento de processos JEE, programação Java básica e criação de componente personalizado.
 
-**Outros produtos necessários**
+**Outros produtos adicionais obrigatórios**
 
-Editor Java como [Eclipse](https://www.eclipse.org/) ou [Netbeans IDE](https://netbeans.apache.org/)
+Editor Java, como [Eclipse](https://www.eclipse.org/) ou [Netbeans IDE](https://netbeans.apache.org/)
 
 ## Nível do usuário {#user-level}
 
 Intermediário
 
-O AEM Forms no JEE permite que os desenvolvedores criem DSC personalizados (Contêiner do serviço de documento) para criar recursos enriquecidos prontos para uso. A criação desses componentes pode ser conectada à AEM Forms no ambiente de tempo de execução JEE e serve o propósito pretendido. Este artigo explica como criar um Serviço ZIP personalizado que pode ser usado para compactar uma lista de arquivos em um arquivo .zip e descompactar um .zip em uma lista de documentos.
+O AEM Forms no JEE permite que os desenvolvedores criem o DSC (Contêiner de serviço do documento) personalizado para criar recursos prontos para uso aprimorados. A criação desses componentes pode ser conectada ao ambiente de tempo de execução do AEM Forms no JEE e serve ao propósito pretendido. Este artigo explica como criar um serviço ZIP personalizado que pode ser usado para compactar uma lista de arquivos em um arquivo .zip e descompactar um .zip em uma lista de documentos.
 
 ## Criação de um componente DSC personalizado {#create-custom-dsc-component}
 
@@ -32,8 +32,8 @@ Crie um componente DSC personalizado com duas operações de serviço para compa
 1. Adicionar o arquivo adobe-livecycle-client.jar à biblioteca
 1. Adicionar os ícones necessários
 1. Criar uma classe pública
-1. Crie dois métodos públicos chamados UnzipDocument &amp; ZipDocuments
-1. Escreva a lógica de Compactação e Descompactação
+1. Crie dois métodos públicos chamados UnzipDocument e ZipDocuments
+1. Escreva a lógica para compactação e descompactação
 
 O código pode ser encontrado aqui:
 
@@ -120,9 +120,9 @@ public class ZIPService {
 }
 ```
 
-## Criação de um arquivo Component.XML {#create-component-xml-file}
+## Criando um arquivo Component.XML {#create-component-xml-file}
 
-Um arquivo component.xml deve ser criado dentro da pasta raiz do pacote que definiu as operações de serviço e seus parâmetros.
+Um arquivo component.xml deve ser criado na pasta raiz do pacote que definiu as operações de serviço e seus parâmetros.
 
 O arquivo component.xml é mostrado aqui:
 
@@ -188,8 +188,8 @@ O arquivo component.xml é mostrado aqui:
 ## Empacotamento e implantação do componente {#packaging-deploying-component}
 
 1. Compile o projeto java e crie um arquivo .JAR.
-1. Implante o componente (arquivo .JAR) na AEM Forms no tempo de execução do JEE por meio do Workbench.
-1. Inicie o serviço no Workbench (consulte a Figura abaixo).
+1. Implante o componente (arquivo .JAR) no AEM Forms no tempo de execução do JEE por meio do Workbench.
+1. Inicie o serviço a partir do Workbench (consulte a Figura abaixo).
 
 ![Design do processo](assets/process-design.jpg)
 
@@ -205,18 +205,18 @@ Da mesma forma, a operação ZipDocuments do componente personalizado pode aceit
 
 A orquestração de fluxo de trabalho a seguir mostra como descompactar o arquivo ZIP fornecido, compactá-lo novamente em outro arquivo ZIP e retornar a saída (consulte a Figura abaixo).
 
-![Fluxo de trabalho Descompactar CEP](assets/unzip-zip-process.jpg)
+![Fluxo de trabalho do Unzip Zip](assets/unzip-zip-process.jpg)
 
-## Alguns casos de uso comercial {#business-use-cases}
+## Alguns casos de uso de negócios {#business-use-cases}
 
-Você pode usar esse Serviço ZIP nos seguintes casos de uso:
+Você pode usar esse serviço ZIP para os seguintes casos de uso:
 
-* Localize todos os arquivos em uma determinada pasta e retorne os arquivos como um documento compactado.
+* Localizar todos os arquivos em uma determinada pasta e retornar os arquivos como um documento compactado.
 
-* Forneça um arquivo ZIP contendo vários documentos PDF que podem ser estendidos pelo leitor após descompactá-los. Isso requer o módulo AEM Forms no JEE Reader Extensions .
+* Forneça um arquivo ZIP contendo vários documentos PDF que podem ser estendidos pelo leitor após descompactá-los. Isso requer o AEM Forms no módulo de extensões Reader JEE.
 
-* Forneça um arquivo ZIP contendo o tipo heterogêneo de documento que pode ser descompactado e convertido como documento PDF usando o serviço Gerar PDF.
+* Forneça um arquivo ZIP contendo um tipo heterogêneo de documento que pode ser descompactado e convertido como documento PDF usando o serviço Generate PDF.
 
 * A política protege uma lista de documentos e retorna como um arquivo ZIP.
 
-* Permita que os usuários baixem todos os anexos de uma instância de processo como um único arquivo ZIP.
+* Permite que os usuários baixem todos os anexos de uma instância do processo como um único arquivo ZIP.

@@ -1,7 +1,7 @@
 ---
 title: Editor
 seo-title: Editor
-description: Saiba como retornar ao Editor da interface clássica.
+description: Saiba como alternar de volta para o Editor de interface clássica.
 seo-description: Learn how to switch back to the Classic UI Editor.
 uuid: ca8b07e7-014f-428e-82bd-87f3aae12f6e
 contentOwner: Chris Bohnert
@@ -32,16 +32,16 @@ Para reativar a opção **Abrir na interface clássica** no **Informações da p
 
    ` [https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui)`
 
-1. Crie uma sobreposição usando o **Nó de sobreposição** opção; por exemplo:
+1. Criar uma sobreposição usando o **Sobrepor nó** opção; por exemplo:
 
    * **Caminho**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **Local de sobreposição**: `/apps/`
-   * **Corresponder tipos de nó**: ativo (marque a caixa de seleção)
+   * **Corresponder tipos de nós**: ativo (marque a caixa de seleção)
 
 1. Adicione a seguinte propriedade de texto de vários valores ao nó sobreposto:
 
    `sling:hideProperties = ["granite:hidden"]`
 
-1. O **Abrir na interface clássica** está novamente disponível na variável **Informações da página** ao editar páginas.
+1. A variável **Abrir na interface clássica** está novamente disponível na **Informações da página** ao editar páginas.
 
    ![](assets/syui-03-2019-02-27-15-19-48.png)

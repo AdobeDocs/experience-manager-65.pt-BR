@@ -1,7 +1,7 @@
 ---
-title: Configuração de endpoints remotos
+title: Configuração de pontos de extremidade Remotos
 seo-title: Configuring Remoting endpoints
-description: Saiba como configurar endpoints remotos.
+description: Saiba como configurar pontos de extremidade remotos.
 seo-description: Learn how to configure remoting endpoints.
 uuid: 4d4f9274-dcae-4b9f-975a-575376c2f89c
 contentOwner: admin
@@ -17,10 +17,10 @@ ht-degree: 0%
 
 ---
 
-# Configuração de endpoints remotos {#configuring-remoting-endpoints}
+# Configuração de pontos de extremidade Remotos {#configuring-remoting-endpoints}
 
-Um terminal remoto permite que um aplicativo criado com o Flex chame o serviço usando (obsoleto para formulários AEM) AEM Remoção de formulários. Um terminal remoto é criado automaticamente para cada serviço ativado. Um destino Flex com o mesmo nome do ponto de extremidade é criado e os clientes Flex podem criar objetos remotos que apontam para esse destino para chamar operações no serviço relevante.
+Um endpoint de comunicação remota permite que um aplicativo criado com o Flex chame o serviço usando o AEM forms Remoting (Desaprovado para formulários AEM). Um ponto de extremidade remoto é criado automaticamente para cada serviço ativado. Um destino do Flex que tem o mesmo nome do endpoint é criado, e os clientes Flex podem criar objetos remotos que apontam para esse destino para chamar operações no serviço relevante.
 
-## Remoção das configurações de ponto de extremidade {#remoting-endpoint-settings}
+## Configurações de ponto de extremidade de comunicação remota {#remoting-endpoint-settings}
 
-**Método de autenticação de cliente Flex:** Determina o tipo de resposta que o servidor envia para o cliente quando o serviço chamado está habilitado para segurança, a operação invocada não oferece suporte a invocações anônimas e o cliente transmite nenhuma ou credenciais inválidas.
+**Método de autenticação de cliente Flex:** Determina o tipo de resposta que o servidor envia de volta ao cliente quando o serviço chamado está habilitado para segurança, a operação chamada não dá suporte a invocações anônimas e o cliente passa credenciais inválidas ou nenhuma.

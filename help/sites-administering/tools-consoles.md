@@ -20,7 +20,7 @@ ht-degree: 33%
 
 # Consoles Ferramentas{#tools-consoles}
 
-Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. Atualmente, existem dois sabores do **Ferramentas** console dependente da interface do usuário usada:
+Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. Atualmente, existem dois tipos de **Ferramentas** console dependente da interface do usuário que você está usando:
 
 * [Ferramentas - Interface otimizada para toque](#tools-touch-optimized-ui)
 * [Ferramentas - Interface clássica](#tools-classic-ui)
@@ -47,7 +47,7 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE Lite</td>
+   <td>CRXDE LITE</td>
   </tr>
   <tr>
    <td> </td>
@@ -369,16 +369,16 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
    <th>Propósito</th>
   </tr>
   <tr>
-   <td>Centro de controle MSM</td>
-   <td>Ponto centralizado para gerenciar vários sites.</td>
+   <td>Centro de controle do MSM</td>
+   <td>Ponto centralizado para gerenciar seus vários sites.</td>
   </tr>
   <tr>
-   <td>Configurações de contexto do cliente<br /> </td>
-   <td>O Contexto do Cliente representa uma coleção dinâmica de dados do usuário. As configurações padrão e da Marketing Cloud são mantidas aqui.<br /> </td>
+   <td>Configurações do ClientContext<br /> </td>
+   <td>O Client Context representa uma coleção de dados do usuário montada dinamicamente. As configurações padrão e da Experience Cloud são mantidas aqui.<br /> </td>
   </tr>
   <tr>
    <td>Configurações dos serviços em nuvem<br /> </td>
-   <td>Mantém as configurações relacionadas à integração com a Adobe Marketing Cloud.</td>
+   <td>Contém configurações relacionadas à integração com a Adobe Marketing Cloud.</td>
   </tr>
   <tr>
    <td>Configurações da nuvem<br /> </td>
@@ -398,15 +398,15 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Documentação personalizada</td>
-   <td>Usada ao estender a documentação e a ajuda online.</td>
+   <td>Usado ao estender a documentação e a ajuda online.</td>
   </tr>
   <tr>
    <td>fd</td>
    <td>Nenhuma funcionalidade ativa relacionada a esta entrada.</td>
   </tr>
   <tr>
-   <td>Envio de formulário</td>
-   <td>Contém a lista de envios de formulário recebidos.</td>
+   <td>Envio de formulários</td>
+   <td>Contém a lista de envios de formulários recebidos.</td>
   </tr>
   <tr>
    <td>Importadores </td>
@@ -425,24 +425,24 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
    <td>Um link alternativo para o Gerenciador de pacotes que mostra os pacotes que foram carregados para AEM WCM. Semelhante às informações mostradas no Gerenciador de pacotes do CRX.</td>
   </tr>
   <tr>
-   <td>Replicação - Agentes de Replicação</td>
-   <td>Usado para replicar dados do autor para publicar ao publicar páginas ou com replicação inversa para retornar comentários do usuário do ambiente de publicação para o autor.</td>
+   <td>Replicação - Agentes de replicação</td>
+   <td>Usado para replicar dados do autor para publicar ao publicar páginas, ou com replicação reversa para retornar os comentários do usuário do ambiente de publicação para o autor.</td>
   </tr>
   <tr>
    <td>Relatórios</td>
-   <td>O AEM fornece diversos relatórios personalizados, permite que você crie relatórios personalizados e/ou desenvolva os seus próprios relatórios.</td>
+   <td>O AEM fornece uma variedade de relatórios personalizados, permite criar relatórios personalizados e/ou desenvolver os seus próprios relatórios.</td>
   </tr>
   <tr>
    <td>Scaffolding da página padrão </td>
-   <td>Com o scaffolding, você pode criar um formulário (um scaffold) com os campos que refletem a estrutura desejada para suas páginas e usar esse formulário para criar facilmente páginas com base nessa estrutura.</td>
+   <td>Com o andaime, você pode criar um formulário (um andaime) com campos que refletem a estrutura desejada para as páginas e, em seguida, usar este formulário para criar facilmente páginas com base nessa estrutura.</td>
   </tr>
   <tr>
    <td>Segurança - Configuração de autoatendimento </td>
-   <td>Permite configurar os emails que os usuários recebem automaticamente ao criar uma conta ou redefinir uma senha e confirmar uma senha que foi redefinida.</td>
+   <td>Permite configurar os emails que os usuários recebem automaticamente quando criam uma conta ou redefinem uma senha e confirmar uma senha que foi redefinida.</td>
   </tr>
   <tr>
    <td>Segmentação</td>
-   <td>Os visitantes têm interesses e objetivos diferentes quando chegam a um site. Entender essas metas e atender às expectativas é um fator importante de sucesso para o marketing online. A segmentação ajuda a conseguir isso ao analisar e caracterizar os detalhes do visitante.<br /> </td>
+   <td>Os visitantes do site têm interesses e objetivos diferentes quando chegam a um site. Entender essas metas e atender às expectativas é um fator de sucesso importante para o marketing online. A segmentação ajuda a fazer isso analisando e caracterizando os detalhes de um visitante.<br /> </td>
   </tr>
   <tr>
    <td>inquilinos</td>
@@ -454,11 +454,11 @@ Os consoles **Ferramentas** fornecem acesso a uma série de ferramentas especial
   </tr>
   <tr>
    <td>Controle de versão - Limpar versões</td>
-   <td>Permite limpar versões de página, conforme necessário.</td>
+   <td>Permite que você expurgue versões de página conforme necessário.</td>
   </tr>
   <tr>
    <td>Fluxo de trabalho</td>
-   <td>Os fluxos de trabalho controlam uma série de ações em páginas ou ativos digitais que suportam qualquer processo editorial.</td>
+   <td>Os fluxos de trabalho controlam uma série de ações em páginas ou ativos digitais que oferecem suporte a qualquer processo editorial.</td>
   </tr>
  </tbody>
 </table>

@@ -21,12 +21,12 @@ ht-degree: 0%
 
 A implementação padrão de tabelas no HTML5 Forms usa elementos HTML DIV para renderizar uma tabela. A renderização envolve o uso de funções ARIA para atender aos requisitos de acessibilidade.
 
-Para evitar problemas de acessibilidade com leitores de tela que não suportam totalmente as funções ARIA usadas com tabelas de dados, o HTML5 Forms fornece uma representação alternativa para as tabelas. Essas tabelas são baseadas no novo formato de tabela introduzido no Designer, que também suporta:
+Para evitar problemas de acessibilidade com leitores de tela que não suportam totalmente as funções ARIA usadas com tabelas de dados, o HTML5 Forms fornece uma representação alternativa para as tabelas. Essas tabelas são baseadas no novo formato de tabela introduzido no Designer que também é compatível com:
 
 * Cabeçalhos de linha
-* Intervalo de linha
+* Extensão de linha
 
-Para usar o novo formato no HTML5 Forms, marque a tabela como complexa. Para marcar a tabela como complexa, adicione `extras` na origem XML do subformulário de tabela da seguinte maneira:
+Para usar o novo formato no HTML5 Forms, marque a tabela como complexa. Para marcar a tabela como complexa, adicione `extras` na fonte XML do subformulário da tabela da seguinte maneira:
 
 ```xml
 </extras>
@@ -34,20 +34,20 @@ Para usar o novo formato no HTML5 Forms, marque a tabela como complexa. Para mar
  </extras>
 ```
 
-As tabelas marcadas como *complexTable* siga a representação de HTML nativo e forneça melhor suporte de acessibilidade para determinados leitores de tela.  Para criar uma extensão de linha, selecione células consecutivas de uma tabela na mesma coluna, clique com o botão direito do mouse na seleção e clique em **[!UICONTROL Mesclar células]**.
+As tabelas marcadas como *complexTable* siga a representação de HTML nativa e forneça um melhor suporte de acessibilidade para determinados leitores de tela.  Para criar uma extensão de linha, selecione células consecutivas de uma tabela na mesma coluna, clique com o botão direito do mouse na seleção e clique em **[!UICONTROL Mesclar Células]**.
 
 >[!NOTE]
 >
->A criação de um span de linha funciona somente para as células mais à esquerda.
+>A criação de uma extensão de linha funciona somente para as células mais à esquerda.
 
 Para marcar uma linha como cabeçalho da linha, selecione todas as células na linha, clique com o botão direito do mouse na seleção e clique em **[!UICONTROL Marcar Cabeçalho]**.
 
 Para marcar uma célula como cabeçalho da coluna, selecione qualquer célula na coluna, clique com o botão direito do mouse na seleção e clique em **[!UICONTROL Marcar Cabeçalho]**.
 
-Limitações em novas *TabelaAcessível* formato:
+Limitações em novos *AccessibleTable* formato:
 
-* Falta de suporte para campos que podem ser expandidos se a extensão da linha for usada na tabela
-* Nenhum suporte para tabelas aninhadas (tabelas dentro de células da tabela)
-* O suporte para expansão de linha é limitado às linhas de cabeçalho e células de cabeçalho
-* O suporte é limitado a tabelas regulares
-* Nenhum suporte para preenchimento prévio de dados em tabelas com duração > 1
+* Falta de suporte para campos que podem ser expandidos se rowspan for usado na tabela
+* Não há suporte para tabelas aninhadas (tabelas dentro de células de tabela)
+* A compatibilidade com rowspan é limitada às linhas e células do cabeçalho
+* Suporte limitado a tabelas regulares
+* Não há suporte para preenchimentos prévios de dados em tabelas com rowspan > 1

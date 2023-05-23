@@ -15,11 +15,11 @@ ht-degree: 3%
 
 ## Experience Manager Sites {#aem-sites}
 
-O Experience Manager Sites é um sistema de gerenciamento de conteúdo no Adobe Experience Manager. Ele oferece um único local para criar, gerenciar e entregar experiências digitais em sites, sites móveis e telas no site para torná-las globais ao alcance, embora sejam relevantes e envolventes pessoalmente. [Saiba mais](https://business.adobe.com/products/experience-manager/sites/web-content-management.html) ou [use os novos tutoriais sobre recursos do vídeo.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en)
+O Experience Manager Sites é um sistema de gerenciamento de conteúdo no Adobe Experience Manager. Ele oferece um local para criar, gerenciar e fornecer experiências digitais em sites, sites móveis e telas no site para torná-los globais em alcance, mas pessoalmente relevantes e envolventes. [Saiba mais](https://business.adobe.com/products/experience-manager/sites/web-content-management.html) ou [consulte tutoriais sobre novos recursos de vídeo.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en)
 
 ## Experience Manager Assets {#aem-assets}
 
-O Experience Manager Assets permite que sua empresa crie, gerencie, entregue e otimize facilmente os ativos digitais em uma plataforma em nuvem de vários locatários. [Realize novos tutoriais sobre recursos de vídeo no AEM Assets.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
+O Experience Manager Assets permite que sua organização crie, gerencie, entregue e otimize facilmente ativos digitais de uma plataforma de nuvem com vários locatários. [Veja os novos tutoriais de recursos de vídeo sobre o AEM Assets.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
 
 * [Trabalhar com o Experience Manager Assets](/help/assets/manage-assets.md)
 * [Trabalhar com o Dynamic Media](/help/assets/dynamic-media.md)
@@ -27,23 +27,23 @@ O Experience Manager Assets permite que sua empresa crie, gerencie, entregue e o
 
 ## Experience Manager Forms {#aem-forms}
 
-O Experience Manager oferece uma solução fácil de usar para criar, gerenciar, publicar e atualizar formulários digitais complexos ao integrar-se a processos back-end, regras de negócios e dados.
+O Experience Manager oferece uma solução fácil de usar para criar, gerenciar, publicar e atualizar formulários digitais complexos e, ao mesmo tempo, integrar a processos de back-end, regras de negócios e dados.
 
-O Experience Manager Forms combina criação, gerenciamento e publicação de formulários, além de recursos de gerenciamento de correspondência, segurança de documentos e análises integradas para criar experiências envolventes e completas. [Realize novos tutoriais em recursos de vídeo para o Experience Manager Forms.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
+O Experience Manager Forms combina criação, gerenciamento e publicação de formulários, juntamente com recursos de gerenciamento de correspondência, segurança de documentos e análise integrada para criar experiências envolventes de ponta a ponta. [Consulte os tutoriais dos novos recursos de vídeo do Experience Manager Forms.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
 
 * [Introdução ao Experience Manager Forms](/help/forms/using/introduction-aem-forms.md)
-* [Novidades no Experience Manager Forms](/help/forms/using/whats-new.md)
+* [Novidades do Experience Manager Forms](/help/forms/using/whats-new.md)
 * [Arquiteturas e topologias na Experience Manager Forms](/help/forms/using/aem-forms-architecture-deployment.md)
-* [Ajuste de desempenho no Experience Manager Forms](/help/forms/using/performance-tuning-aem-forms.md)
+* [Ajuste de desempenho do Experience Manager Forms](/help/forms/using/performance-tuning-aem-forms.md)
 
 ## Experience Manager Screens {#aem-screens}
 
-O Experience Manager Screens é um recurso do Adobe Experience Manager que permite a publicação de experiências e interações digitais dinâmicas e interativas envolvendo diferentes tipos de telas, tudo isso em uma plataforma abrangente de marketing digital. [Saiba mais.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=pt-BR)
+O Experience Manager Screens é um recurso do Adobe Experience Manager que permite a publicação de experiências e interações digitais dinâmicas e interativas envolvendo diferentes tipos de telas, tudo a partir de uma plataforma abrangente de marketing digital. [Saiba mais.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=pt-BR)
 
-## Experience Manager Communities {#aem-communities}
+## Comunidades Experience Manager {#aem-communities}
 
-O Experience Manager Communities é um recurso do Adobe Experience Manager que ajuda a criar experiências de comunidade online, incluindo fóruns, grupos de usuários, recursos de aprendizado e outros recursos sociais valiosos para clientes, funcionários e sua marca. [Saiba mais.](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/overview.html?lang=en)
+O Experience Manager Communities é um recurso da Adobe Experience Manager que ajuda você a criar experiências online na comunidade, incluindo fóruns, grupos de usuários, recursos de aprendizagem e outros recursos sociais úteis para clientes, funcionários e sua marca. [Saiba mais.](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/overview.html?lang=en)
 
 ## Experience Manager Foundation {#aem-foundation}
 
-Saiba mais sobre o [Adobe Experience Manager 6.5 foundation](/help/sites-deploying/home.md) e do Adobe [novas introduções de vídeo aos recursos desta versão.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
+Saiba mais sobre o [Adobe Experience Manager 6.5 foundation](/help/sites-deploying/home.md) e Adobe o modelo de implantação do Managed Services ou examinar alguns dos [novas introduções de vídeo aos recursos nesta versão.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)

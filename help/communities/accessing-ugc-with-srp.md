@@ -1,7 +1,7 @@
 ---
 title: Acesso ao UGC com SRP
 seo-title: Accessing UGC with SRP
-description: Quando um site é configurado para usar o ASRP ou o MSRP, o UGC real não é armazenado AEM armazenamento de nós (JCR)
+description: Quando um site é configurado para usar ASRP ou MSRP, o UGC real não é armazenado no armazenamento de nó AEM (JCR)
 seo-description: When a site is configured to use ASRP or MSRP, the actual UGC is not be stored in AEM's node store (JCR)
 uuid: 30549f93-e370-4b8b-a35a-69e05884227e
 contentOwner: Guillaume Carlino
@@ -20,35 +20,35 @@ ht-degree: 0%
 
 # Acesso ao UGC com SRP {#accessing-ugc-with-srp}
 
-## Sobre SRP {#about-srp}
+## Sobre o SRP {#about-srp}
 
-Todos os componentes e recursos do AEM Communities são criados na [quadro de componentes sociais (SCF)](/help/communities/scf.md), que chama a API SocialResourceProvider para acessar todo o conteúdo gerado pelo usuário (UGC).
+Todos os componentes e recursos do AEM Communities são criados no [estrutura da componente social (SCF)](/help/communities/scf.md), que chama a API SocialResourceProvider para acessar todo o conteúdo gerado pelo usuário (UGC).
 
-Antes de criar um site da comunidade, a variável [provedor de recursos de armazenamento (SRP)](/help/communities/working-with-srp.md) deve ser configurado para selecionar uma implementação consistente com o subjacente [topologia](/help/communities/topologies.md). As implementações de SRP são baseadas em três opções de armazenamento :
+Antes de criar um site da comunidade, a variável [provedor de recursos de armazenamento (SRP)](/help/communities/working-with-srp.md) deve ser configurado para selecionar uma implementação consistente com a subjacente [topologia](/help/communities/topologies.md). As implementações do SRP são baseadas em três opções de armazenamento:
 
-1. [ASRP](/help/communities/asrp.md) - Adobe on Demand Storage
+1. [ASRP](/help/communities/asrp.md) - Adobe on-demand storage
 1. [MSRP](/help/communities/msrp.md) - MongoDB
 1. [JSRP](/help/communities/jsrp.md) - JCR
 
-## Sobre o armazenamento UGC {#about-ugc-storage}
+## Sobre o armazenamento de UGC {#about-ugc-storage}
 
-O que é importante saber sobre o armazenamento do UGC é que, quando um site é configurado para usar o ASRP ou o MSRP, o UGC real não é armazenado no AEM [armazenamento de nó](/help/sites-deploying/data-store-config.md) (JCR).
+O que é importante saber sobre o armazenamento de UGC é que, quando um site é configurado para usar ASRP ou MSRP, o UGC real não é armazenado no AEM [armazenamento de nós](/help/sites-deploying/data-store-config.md) (JCR).
 
-Embora possa haver nós no JCR que somem o UGC para fornecer metadados úteis, esses nós não devem ser confundidos com o UGC real.
+Embora possa haver nós no JCR que fazem sombra do UGC para fornecer metadados úteis, esses nós não devem ser confundidos com o UGC real.
 
 Consulte [Visão geral do provedor de recursos de armazenamento.](/help/communities/srp.md)
 
 ## Prática recomendada {#best-practice}
 
-Ao desenvolver componentes personalizados, os desenvolvedores devem ter cuidado para codificar independentemente da topologia escolhida atualmente, mantendo assim a flexibilidade para migrar para uma nova topologia no futuro.
+Ao desenvolver componentes personalizados, os desenvolvedores devem ter cuidado com o código independentemente da topologia escolhida no momento, mantendo assim a flexibilidade para mudar para uma nova topologia no futuro.
 
-### Suponha que o JCR não esteja disponível {#assume-jcr-not-available}
+### Assumir JCR não disponível {#assume-jcr-not-available}
 
-Os métodos específicos do JCR devem ser evitados.
+Métodos específicos para JCR devem ser evitados.
 
-Métodos para usar :
+Métodos a utilizar :
 
-* API Sling (Recurso Sling)
+* API Sling (recurso Sling)
 
    * não suponha que haja nós JCR
 
@@ -57,24 +57,24 @@ Métodos para usar :
    * não suponha que haja eventos JCR
 
 * [SocialResourceUtilities](/help/communities/socialutils.md#socialresourceutilities-package)
-* [SCFUtilities](/help/communities/socialutils.md#scfutilities-package)
+* [Utilitários SCFU](/help/communities/socialutils.md#scfutilities-package)
 
-Métodos para evitar :
+Métodos a evitar:
 
 * API de nó
 * Eventos JCR
 * inicializadores de fluxo de trabalho (que usam eventos JCR)
 
-### Usar Coleções de Pesquisa {#use-search-collections}
+### Usar coleções de pesquisa {#use-search-collections}
 
-Diferentes SRPs podem ter diferentes linguagens de consulta nativas. É recomendável usar métodos do [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) para executar o idioma de consulta apropriado.
+Diferentes SRPs podem ter diferentes idiomas de consulta nativos. É recomendável usar métodos do [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pacote para executar o idioma de consulta apropriado.
 
-Para obter mais informações, consulte [Fundamentos da pesquisa](/help/communities/search-implementation.md).
+Para obter mais informações, consulte [Search Essentials](/help/communities/search-implementation.md).
 
 ## Recursos {#resources}
 
-* [Armazenamento de conteúdo da comunidade](/help/communities/working-with-srp.md) - discute as opções de SRP disponíveis para uma loja comum UGC
+* [Armazenamento de conteúdo da comunidade](/help/communities/working-with-srp.md) - discute as opções de SRP disponíveis para um armazenamento comum de UGC
 * [Visão geral do provedor de recursos de armazenamento](/help/communities/srp.md) - introdução e visão geral do uso do repositório
-* [Princípios básicos de SRP e UGC](/help/communities/srp-and-ugc.md) - Métodos e exemplos de utilitários SRP
-* [Fundamentos da pesquisa](/help/communities/search-implementation.md) - informações essenciais para a pesquisa de UGC
-* [Refatoração do SocialUtils](/help/communities/socialutils.md) - mapeamento de métodos de utilitário obsoletos para os métodos de utilitário SRP atuais
+* [Fundamentos de SRP e UGC](/help/communities/srp-and-ugc.md) - Métodos e exemplos do utilitário SRP
+* [Search Essentials](/help/communities/search-implementation.md) - informações essenciais para pesquisar UGC
+* [Refatoração de SocialUtils](/help/communities/socialutils.md) - mapeamento de métodos de utilitário obsoletos para métodos de utilitário SRP atuais

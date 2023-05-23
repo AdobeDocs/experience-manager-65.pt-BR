@@ -11,50 +11,50 @@ ht-degree: 1%
 
 # Alterações importantes no complemento Commerce Integration Framework (CIF){#notable-changes}
 
-Este documento destaca as importantes diferenças entre o complemento Commerce Integration Framework (CIF) e as versões antigas da CIF, principalmente conhecidas como CIF clássica (início rápido) e CIF fonte aberta.
+Este documento destaca as diferenças importantes entre o complemento Commerce Integration Framework (CIF) e as versões antigas da CIF, conhecidas principalmente como CIF Classic (Quickstart) e CIF Open-source.
 
 ## Instalação e atualizações
 
-O pacote complementar da CIF do AEM é instalado e atualizado com AEM Gerenciador de pacotes.
+O pacote complementar CIF para AEM é instalado e atualizado com o Gerenciador de pacotes AEM.
 
 **Versões anteriores da CIF**
 
-* CIF Classic: Sem a necessidade de instalação, a CIF fazia parte do Início rápido. As atualizações da CIF faziam parte de atualizações regulares de AEM ou service pack
-* Código aberto da CIF: Instalação via GitHub. As atualizações faziam parte do trabalho manual de atualização/manutenção.
+* CIF clássica: não é necessária nenhuma instalação. A CIF fazia parte do Quickstart. As atualizações da CIF faziam parte das atualizações regulares do AEM ou do service pack
+* Código aberto da CIF: instalação via GitHub. As atualizações faziam parte do trabalho manual de atualização/manutenção.
 
-## Configuração do ponto de extremidade
+## Configuração do endpoint
 
-O terminal é configurado pelo console OSGi.
+O endpoint é configurado por meio do console OSGi.
 
 **Versões anteriores da CIF**
 
-* CIF Classic: Por meio da configuração OSGi no AEM
-* Código aberto da CIF: Por meio do navegador de configuração da CIF
+* CIF clássica: por meio da configuração OSGi no AEM
+* Código aberto da CIF: por meio do navegador de configuração da CIF
 
 ## Implantação do projeto CIF Venia
 
-Projeto disponível em [Guias de AEM do GitHub - Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) e implantação feita pelo Gerenciador de pacotes AEM.
+Projeto disponível em [Guias do GitHub AEM - Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) e implantação feitas pelo Gerenciador de pacotes AEM.
 
 **Versões anteriores da CIF**
 
-* CIF Classic: Via instalação AEM pacote
+* CIF Classic: Instalação do pacote por AEM
 
 ## Dados do catálogo de produtos
 
-Os dados do catálogo de produtos são solicitados sob demanda por meio de chamadas em tempo real para um endpoint externo que oferece suporte às APIs GraphQL necessárias. Essas APIs oferecem suporte para o acesso a dados ao vivo ou preparados em qualquer data específica. Não é necessária replicação.
+Os dados do catálogo de produtos são solicitados sob demanda por meio de chamadas em tempo real para um endpoint externo que oferece suporte às APIs necessárias do GraphQL. Essas APIs oferecem suporte ao acesso a dados dinâmicos ou em estágios em qualquer data. Nenhuma replicação necessária.
 
 **Versões anteriores da CIF**
 
-* CIF Classic: Os dados de produtos em tempo real e preparados são importados e mantidos no JCR no AEM Author por meio de importação completa ou delta de produtos. Os dados do produto em tempo real são replicados para o AEM Publish.
+* CIF Clássico: dados de produtos em tempo real e em etapas são importados e mantidos em JCR no AEM Author por meio de uma importação completa ou delta de produtos. Os dados de produtos em tempo real são replicados para a publicação do AEM.
 
-## Experiências do catálogo de produtos com renderização de AEM
+## Experiências do catálogo de produtos com renderização por AEM
 
-AEM renderiza experiências de catálogo de produtos dinamicamente usando modelos de catálogo AEM que foram atribuídos a produtos e categorias. Não é necessária replicação.
+O AEM renderiza experiências de catálogo de produtos dinamicamente usando modelos de catálogo de AEM que foram atribuídos a produtos e categorias. Nenhuma replicação necessária.
 
 **Versões anteriores da CIF**
 
-* CIF Classic: O AEM Author cria uma página de AEM para cada categoria/produto usando a ferramenta de blueprint do catálogo. Essas páginas são replicadas para o AEM Publish.
+* CIF Clássica: o AEM Author cria uma página de AEM para cada categoria/produto usando a ferramenta de blueprint do catálogo. Essas páginas são replicadas para o AEM Publish.
 
 >[!NOTE]
 >
->Para obter a documentação adicional sobre como usar a CIF com AEM Managed Service ou AEM no local, consulte [Estrutura de integração de comércio](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Para obter a documentação adicional sobre como usar a CIF com AEM Managed Service ou AEM no local, consulte [Estrutura de integração do Commerce](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

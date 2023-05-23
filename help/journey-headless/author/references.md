@@ -123,7 +123,7 @@ Agora que você aprendeu sobre referências e estrutura nos Fragmentos de conte�
 
 
 * Guias de introdução
-   * [Criação de uma pasta de ativos sem cabeçalho Guia de início rápido](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+   * [Criação de uma pasta de ativos Guia de início rápido do Headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Jornada do arquiteto de conteúdo do AEM Headless](/help/journey-headless/architect/overview.md)
 

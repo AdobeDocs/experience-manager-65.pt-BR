@@ -20,13 +20,13 @@ ht-degree: 2%
 
 # Marcação com tags{#tagging}
 
-A marcação permite que o conteúdo seja categorizado e organizado. As tags podem ser classificadas por namespace e taxonomia.
+A marcação permite que o conteúdo seja categorizado e organizado. As tags podem ser classificadas por um namespace e uma taxonomia.
 
-* Consulte [Administração de tags](/help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags, bem como sobre quais tags de conteúdo foram aplicadas.
+* Consulte [Administração de tags](/help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags e sobre quais tags de conteúdo foram aplicadas.
 * Consulte [Uso de tags](/help/sites-authoring/tags.md) para obter informações sobre como marcar conteúdo.
 
-As seguintes informações estão disponíveis para desenvolvedores :
+As seguintes informações estão disponíveis para desenvolvedores:
 
-* [Estrutura de marcação de AEM](/help/sites-developing/framework.md) - Uma descrição dos nós e propriedades usados para marcação
+* [Estrutura de marcação AEM](/help/sites-developing/framework.md) - Uma descrição dos nós e propriedades usadas para marcação
 
-* [Criação de tags em um aplicativo AEM](/help/sites-developing/building.md) - Uma descrição das APIs que funcionam com a estrutura de marcação do lado do cliente e do código do lado do servidor
+* [Criação de tags em um aplicativo AEM](/help/sites-developing/building.md) - Uma descrição das APIs que funcionam com a estrutura de marcação do código do lado do cliente e do lado do servidor

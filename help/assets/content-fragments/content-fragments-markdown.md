@@ -1,6 +1,6 @@
 ---
 title: Markdown
-description: Entenda como o editor de Fragmento de conteúdo usa a sintaxe de marcação para permitir que você crie conteúdo sem periféricos com facilidade.
+description: Entenda como o editor de Fragmento de conteúdo usa a sintaxe de Markdown para permitir que você crie conteúdo headless facilmente.
 feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
@@ -13,7 +13,7 @@ ht-degree: 91%
 
 # Markdown {#markdown}
 
-Quando você [criação](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), o editor de fragmento de conteúdo usa *marcação* sintaxe para permitir que você grave facilmente o conteúdo sem periféricos:
+Quando você estiver [criação](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), o editor de fragmento de conteúdo usa *markdown* sintaxe para permitir que você grave conteúdo headless facilmente:
 
 ![editor de Markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

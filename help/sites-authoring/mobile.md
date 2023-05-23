@@ -17,24 +17,24 @@ ht-degree: 20%
 
 # Criação de uma página para dispositivos móveis  {#authoring-a-page-for-mobile-devices}
 
-Ao criar uma página para dispositivos móveis, a página é exibida de uma maneira que emula o dispositivo móvel. Ao criar a página, você pode alternar entre vários emuladores para ver o que o usuário final vê ao acessar a página.
+Ao criar uma página móvel, a página é exibida de uma forma que emula o dispositivo móvel. Ao criar a página, você pode alternar entre vários emuladores para ver o que o usuário final vê ao acessar a página.
 
-Os dispositivos são agrupados nas categorias Recurso, Inteligente e Toque, de acordo com os recursos dos dispositivos para renderizar uma página. Quando o usuário final acessa uma página móvel, o AEM detecta o dispositivo e envia a representação que corresponde ao seu grupo de dispositivos.
+Os dispositivos são agrupados no recurso de categorias, inteligente e por toque de acordo com os recursos dos dispositivos para renderizar uma página. Quando o usuário final acessa uma página móvel, o AEM detecta o dispositivo e envia a representação que corresponde ao seu grupo de dispositivos.
 
 >[!NOTE]
 >
 >Para criar um site móvel com base em um site padrão existente, crie uma live copy do site padrão. (Consulte [Criação de uma Live Copy para diferentes canais](/help/sites-administering/msm-livecopy.md).)
 >
->Os desenvolvedores do AEM podem criar novos grupos de dispositivos. (Consulte [Criando Filtros de Grupo de Dispositivos](/help/sites-developing/groupfilters.md).)
+>Os desenvolvedores do AEM podem criar novos grupos de dispositivos. (Consulte [Criando filtros do grupo de dispositivos](/help/sites-developing/groupfilters.md).)
 
 Use o procedimento a seguir para criar uma página para dispositivos móveis:
 
 1. Na navegação global, abra o console **Sites**.
-1. Abra a página **We.Retail** -> **Estados Unidos** -> **Inglês**.
+1. Abrir a página **We.Retail** -> **Estados Unidos** -> **Inglês**.
 
-1. Mudar para **Visualizar** modo.
-1. Alterne para o emulador desejado clicando no ícone do dispositivo na parte superior da página.
-1. Arraste e solte componentes do navegador de componentes na página.
+1. Alternar para **Visualizar** modo.
+1. Alterne para o emulador desejado, clicando no ícone de dispositivo na parte superior da página.
+1. Arraste e solte componentes do navegador de componentes para a página.
 
 A página é semelhante ao seguinte:
 

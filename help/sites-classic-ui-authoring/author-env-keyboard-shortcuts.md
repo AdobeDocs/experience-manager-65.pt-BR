@@ -1,6 +1,6 @@
 ---
 title: Atalhos de teclado para os consoles
-description: Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se ao uso dos consoles, outros à edição de página.
+description: Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns se aplicam ao uso dos consoles, outros para edição de página.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -21,7 +21,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se 
 
 >[!NOTE]
 >
->Multisseleção em um dispositivo de desktop:
+>Seleção múltipla em um dispositivo de desktop:
 >
 >* Windows: **Ctrl**+**click** nos componentes necessários.
 >
@@ -40,10 +40,10 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se 
   </tr>
   <tr>
    <td>Console</td>
-   <td><strong><code>Shift-Double-Click</code></strong><br /> (na página desejada)</td>
-   <td>Abra a página em uma nova janela.<br /> <strong>Observação:</strong> é operacional se a variável <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propriedades do usuário</a> são definidas como Janela única; se Várias janelas, esse é o comportamento padrão.</td>
+   <td><strong><code>Shift-Double-Click</code></strong><br /> (na página obrigatória)</td>
+   <td>Abrir página em nova janela.<br /> <strong>Nota:</strong> este sistema é operacional se o <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propriedades do usuário</a> são definidos como Janela única; se Várias janelas, esse será o comportamento padrão.</td>
   </tr>
  </tbody>
 </table>
 
-Vários atalhos de teclado também estão disponíveis para os usuários da área de trabalho ao usar a variável [editor de páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para criar páginas.
+Vários atalhos de teclado também estão disponíveis para os usuários de desktop ao usar o [editor de página](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para criar páginas.

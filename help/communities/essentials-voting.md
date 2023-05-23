@@ -1,5 +1,5 @@
 ---
-title: Fundamentos da votação
+title: Fundamentos para votação
 seo-title: Voting Essentials
 description: Visão geral do componente de votação
 seo-description: Voting component overview
@@ -17,32 +17,32 @@ ht-degree: 1%
 
 ---
 
-# Fundamentos da votação {#voting-essentials}
+# Fundamentos para votação {#voting-essentials}
 
-A componente de votação, a [tally](tally.md) subclasse, é uma ferramenta útil que permite aos membros classificar um conteúdo específico simplesmente selecionando setas para cima ou para baixo para indicar sua opinião.
+A componente de votação, uma [tally](tally.md) subclasse, é uma ferramenta útil que permite aos membros classificar um conteúdo específico simplesmente selecionando setas para cima ou para baixo para indicar sua opinião.
 
-É permitido colocar várias instâncias de um componente de votação na mesma página; cada instância deve ser configurada com um `tally name` propriedade.
+É permitido colocar várias instâncias de um componente de votação na mesma página; cada instância deve ser configurada com um único `tally name` propriedade.
 
-Não há apoio para o envio anônimo de um voto. Os visitantes do site devem se registrar e fazer logon para participar da votação apenas uma vez. O visitante conectado (membro) pode alterar o voto a qualquer momento.
+Não há suporte para postagem anônima de um voto. Os visitantes do site devem se registrar e fazer logon para participar da votação apenas uma vez. O visitante conectado (membro) pode alterar seu voto a qualquer momento.
 
-## Fundamentos para o lado do cliente {#essentials-for-client-side}
+## Essentials para o lado do cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/tally/components/hbs/votar</td>
+   <td>social/tally/components/hbs/voting</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incondicional</strong></a></td>
-   <td>Sim - as propriedades podem ser editadas em <i>projeto </i>modo</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluível</strong></a></td>
+   <td>Sim - as propriedades são editáveis no <i>design </i>modo</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td> cq.social.hbs.voting</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>modelos</strong></td>
    <td><p> /libs/social/tally/components/hbs/voting/voting.hbs<br /> /libs/social/tally/components/hbs/voting/activity-title.hbs</p> </td>
   </tr>
   <tr>
@@ -51,33 +51,33 @@ Não há apoio para o envio anônimo de um voto. Os visitantes do site devem se 
   </tr>
   <tr>
    <td><strong>propriedades</strong></td>
-   <td><p>Consulte <a href="voting.md">Usar votação</a></p> </td>
+   <td><p>Consulte <a href="voting.md">Usando a votação</a></p> </td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizações do lado do cliente](client-customize.md)
 
-## Fundamentos para o lado do servidor {#essentials-for-server-side}
+## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [Tally APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [APIs Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
 * [Endpoints Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
-### Acesso à Votação Publicada (UGC) {#accessing-posted-voting-ugc}
+### Acessando a votação publicada (UGC) {#accessing-posted-voting-ugc}
 
-O UGC deve ser moderado usando um dos métodos padrão de moderação.
+A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir AEM 6.1 Comunidades, uso de um [loja comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
-**A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso prévio**.
+**A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 
 Consulte:
 
 * [Visão geral do provedor de recursos de armazenamento](srp.md) - introdução e visão geral do uso do repositório.
-* [Princípios básicos de SRP e UGC](srp-and-ugc.md) - métodos e exemplos de utilitários SRP.
+* [Fundamentos de SRP e UGC](srp-and-ugc.md) - Métodos e exemplos do utilitário SRP.
 * [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação.
-* [Refatoração do SocialUtils](socialutils.md) - mapeamento de métodos de utilitário obsoletos para os métodos de utilitário SRP atuais.
+* [Refatoração de SocialUtils](socialutils.md) - mapeamento de métodos de utilitário obsoletos para métodos de utilitário SRP atuais.

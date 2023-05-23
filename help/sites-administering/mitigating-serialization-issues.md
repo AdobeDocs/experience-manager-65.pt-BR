@@ -1,5 +1,5 @@
 ---
-title: Atenuando problemas de serialização no AEM
+title: Redução de problemas de serialização no AEM
 seo-title: Mitigating serialization issues in AEM
 description: Saiba como atenuar problemas de serialização no AEM.
 seo-description: Learn how to mitigate serialization issues in AEM.
@@ -17,38 +17,38 @@ ht-degree: 0%
 
 ---
 
-# Atenuando problemas de serialização no AEM{#mitigating-serialization-issues-in-aem}
+# Redução de problemas de serialização no AEM{#mitigating-serialization-issues-in-aem}
 
 ## Visão geral {#overview}
 
-A equipe de AEM do Adobe trabalhou em estreita colaboração com o projeto open-source [NotSoSerial](https://github.com/kantega/notsoserial) para ajudar a mitigar as vulnerabilidades descritas em **CVE-2015-7501**. O NotSoSerial está licenciado sob o [Licença Apache 2](https://www.apache.org/licenses/LICENSE-2.0) e inclui o código ASM licenciado sob sua própria licença [Licença tipo BSD](https://asm.ow2.io/).
+A equipe de AEM da Adobe trabalhou em estreita colaboração com o projeto de código aberto [NotSoSerial](https://github.com/kantega/notsoserial) para ajudar a reduzir as vulnerabilidades descritas em **CVE-2015-7501**. NotSoSerial é licenciado sob o [Licença do Apache 2](https://www.apache.org/licenses/LICENSE-2.0) e inclui o código ASM licenciado sob sua própria licença [Licença do tipo BSD](https://asm.ow2.io/).
 
-O agente incluído com este pacote é a distribuição do jar modificado do Adobe de NotSoSerial.
+O jar do agente incluído neste pacote é a distribuição Adobe modificada de NotSoSerial.
 
-NotSoSerial é uma solução no nível do Java™ para um problema no nível do Java™ e não é AEM. Ele adiciona uma verificação de comprovação a uma tentativa de desserializar um objeto. Essa verificação testa um nome de classe em relação a uma  de lista de permissões estilo firewall, ou lista de bloqueios, ou ambos. Devido ao número limitado de classes na  de lista de bloqueios padrão, é improvável que esse teste afete seus sistemas ou códigos.
+NotSoSerial é uma solução de nível Java™ para um problema de nível Java™ e não é específico do AEM. Ele adiciona uma verificação de comprovação a uma tentativa de desserializar um objeto. Essa verificação testa um nome de classe em relação a uma inclui na lista de permissões de estilo de firewall, ou inclui na lista de bloqueios, ou ambos. Devido ao número limitado de classes no incluo na lista de bloqueios padrão, é improvável que esse teste afete seus sistemas ou códigos.
 
-Por padrão, o agente executa uma verificação de  lista de bloqueios em relação às classes vulneráveis conhecidas atuais. Essa  de lista de bloqueios tem como objetivo protegê-lo da lista atual de explorações que usam esse tipo de vulnerabilidade.
+Por padrão, o agente executa uma verificação de inclui na lista de bloqueios em relação às classes vulneráveis conhecidas no momento. Essa inclui na lista de bloqueios destina-se a protegê-lo da lista atual de explorações que usam esse tipo de vulnerabilidade.
 
-A  de lista de bloqueios e lista de permissões pode ser configurada seguindo as instruções em [Configurar o agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) seção deste artigo.
+A inclui na lista de bloqueios e a inclui na lista de permissões podem ser configuradas seguindo as instruções em [Configurar o agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) seção deste artigo.
 
-O agente tem como objetivo ajudar a mitigar as classes vulneráveis mais recentes conhecidas. Se seu projeto estiver desserializando dados não confiáveis, eles ainda poderão estar vulneráveis a ataques de negação de serviço, ataques de falta de memória e explorações desconhecidas de desserialização futuras.
+O agente deve ajudar a reduzir as classes vulneráveis conhecidas mais recentes. Se o seu projeto estiver desserializando dados não confiáveis, ele ainda poderá estar vulnerável a ataques de negação de serviço, ataques de memória insuficiente e explorações desconhecidas de desserialização futuras.
 
-O Adobe suporta oficialmente o Java™ 6, 7 e 8. No entanto, o Adobe entendendo que o NotSo5 também é compatível com o Java™ 5.
+O Adobe oferece suporte oficial ao Java™ 6, 7 e 8. No entanto, o Adobe entende que o NotSoSerial também é compatível com o Java™ 5.
 
 ## Instalar o agente {#installing-the-agent}
 
 >[!NOTE]
 >
->Se você tiver instalado anteriormente o hotfix de serialização para o AEM 6.1, remova os comandos de início do agente da linha de execução do Java™.
+>Se você tiver instalado anteriormente o hotfix de serialização para AEM 6.1, remova os comandos agent start da sua linha de execução Java™.
 
 1. Instale o **com.adobe.cq.cq-serialization-tester** pacote.
 
-1. Vá para o Console da Web do Pacote em `https://server:port/system/console/bundles`
-1. Procure o pacote de serialização e inicie-o. Isso carrega dinamicamente o agente NotSoSerial.
+1. Acesse o Console da Web do pacote em `https://server:port/system/console/bundles`
+1. Procure o pacote de serialização e inicie-o. Isso faz com que o carregue automaticamente o agente NotSoSerial.
 
-## Instalar o agente nos servidores de aplicativos {#installing-the-agent-on-application-servers}
+## Instalando o Agente nos Servidores de Aplicações {#installing-the-agent-on-application-servers}
 
-O agente NotSoSerial não está incluído na distribuição padrão de AEM para servidores de aplicativos. No entanto, você pode extraí-lo da distribuição AEM jar e usá-lo com a configuração do servidor de aplicativos:
+O agente NotSoSerial não está incluído na distribuição padrão do AEM para servidores de aplicativos. No entanto, você pode extraí-lo da distribuição AEM jar e usá-lo com a configuração do servidor de aplicativos:
 
 1. Primeiro, baixe o arquivo AEM quickstart e extraia-o:
 
@@ -56,9 +56,9 @@ O agente NotSoSerial não está incluído na distribuição padrão de AEM para 
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. Vá para o local da inicialização rápida recém-descompactada AEM e copie a variável `crx-quickstart/opt/notsoserial/` para `crx-quickstart` pasta da instalação do servidor de aplicativos AEM.
+1. Vá para o local do quickstart AEM recém-descompactado e copie o `crx-quickstart/opt/notsoserial/` pasta para a `crx-quickstart` pasta da instalação do servidor de aplicativos AEM.
 
-1. Alterar a propriedade de `/opt` para o usuário que está executando o servidor:
+1. Alterar a propriedade do `/opt` para o usuário que está executando o servidor:
 
    ```shell
    chown -R opt <user running the server>
@@ -68,35 +68,35 @@ O agente NotSoSerial não está incluído na distribuição padrão de AEM para 
 
 ## Configurar o agente {#configuring-the-agent}
 
-A configuração padrão é adequada para a maioria das instalações. Essa configuração inclui uma  lista de bloqueios de classes vulneráveis de execução remota conhecidas e uma lista de permissões de pacotes em que a desserialização de dados confiáveis é segura.
+A configuração padrão é adequada para a maioria das instalações. Essa configuração inclui uma incluir na lista de bloqueios lista de permissões de classes vulneráveis de execução remota conhecida e um grupo de pacotes de em que a desserialização de dados confiáveis é segura.
 
-A configuração do firewall é dinâmica e pode ser alterada a qualquer momento ao:
+A configuração do firewall é dinâmica e pode ser alterada a qualquer momento por:
 
-1. Ir para o Console da Web em `https://server:port/system/console/configMgr`
-1. Como pesquisar e clicar em **Configuração do firewall de desserialização.**
+1. Acessando o console da Web em `https://server:port/system/console/configMgr`
+1. Pesquisando e clicando em **Configuração do firewall de desserialização.**
 
    >[!NOTE]
    Você também pode acessar a página de configuração diretamente acessando o URL em:
    * `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 
-Essa configuração contém a  de lista de permissões, a  de lista de bloqueios e o registro de desserialização.
+Essa configuração contém os registros incluir na lista de permissões, incluir na lista de bloqueios e desserializar.
 
 **Permitir listagem**
 
-Na seção permitir listagem, essas listagens são classes ou prefixos de pacote que são permitidos para desserialização. Se você estiver desserializando classes próprias, adicione as classes ou pacotes a essa lista de permissões.
+Na seção lista de permissões, essas listagens são classes ou prefixos de pacote permitidos para desserialização. Se você estiver desserializando suas próprias classes, adicione as classes ou pacotes a este incluo na lista de permissões.
 
-**Lista de bloqueios**
+**Listagem de Blocos**
 
-Na seção de listagem de blocos, há classes que nunca são permitidas para desserialização. O conjunto inicial dessas classes é limitado a classes que foram consideradas vulneráveis a ataques de execução remota. A  de lista de bloqueios é aplicada antes de qualquer entrada da lista de permissões.
+Na seção de listagem de blocos, há classes que nunca têm permissão para desserialização. O conjunto inicial dessas classes é limitado às classes que foram consideradas vulneráveis a ataques de execução remota. A inclui na lista de bloqueios ➡ é aplicada antes de qualquer entrada na lista de permissões.
 
-**Registro de diagnóstico**
+**Log de Diagnóstico**
 
-Na seção para registro em log de diagnóstico, você pode escolher várias opções para registrar quando a desserialização estiver ocorrendo. Essas opções só são conectadas na primeira utilização e não são registradas novamente em usos subsequentes.
+Na seção para logs de diagnóstico, você pode escolher várias opções para registrar quando a desserialização estiver ocorrendo. Essas opções só são registradas no primeiro uso e não são registradas novamente em usos subsequentes.
 
-O padrão de **class-name-only** informa sobre as classes que estão sendo desserializadas.
+O padrão de **class-name-only** informa as classes que estão sendo desserializadas.
 
-Também é possível definir a variável **pilha completa** opção que registra uma pilha de Java™ da primeira tentativa de desserialização para informá-lo onde sua desserialização está acontecendo. Essa opção é útil para localizar e remover a desserialização de seu uso.
+Você também pode definir a variável **pilha completa** opção que registra uma pilha de Java™ da primeira tentativa de desserialização para informar onde a desserialização está ocorrendo. Essa opção é útil para encontrar e remover a desserialização do seu uso.
 
 ## Verificando a ativação do agente {#verifying-the-agent-s-activation}
 
@@ -104,35 +104,35 @@ Você pode verificar a configuração do agente de desserialização navegando a
 
 * `https://server:port/system/console/healthcheck?tags=deserialization`
 
-Após acessar o URL, uma lista de verificações de integridade relacionadas ao agente é exibida. Você pode determinar se o agente está ativado corretamente verificando se as verificações de integridade estão sendo transmitidas. Se estiverem falhando, você deve carregar o agente manualmente.
+Após acessar o URL, uma lista de verificações de integridade relacionadas ao agente é exibida. Você pode determinar se o agente está ativado corretamente, verificando se as verificações de integridade estão sendo bem-sucedidas. Se eles estiverem falhando, você deve carregar o agente manualmente.
 
-Para obter mais informações sobre solução de problemas com o agente, consulte [Lidar com erros com o carregamento dinâmico de agentes](#handling-errors-with-dynamic-agent-loading) abaixo.
+Para obter mais informações sobre solução de problemas com o agente, consulte [Tratamento De Erros Com O Carregamento Do Agente Dinâmico](#handling-errors-with-dynamic-agent-loading) abaixo.
 
 >[!NOTE]
-Se você adicionar `org.apache.commons.collections.functors` para a lista de permissões, a verificação de integridade sempre falha.
+Se você adicionar `org.apache.commons.collections.functors` ao incluir na lista de permissões, a verificação de integridade sempre falha.
 
-## Lidar com erros com o carregamento do agente dinâmico {#handling-errors-with-dynamic-agent-loading}
+## Manipular erros com o carregamento dinâmico do agente {#handling-errors-with-dynamic-agent-loading}
 
-Se erros forem expostos no registro ou se as etapas de verificação detectarem um problema ao carregar o agente, carregue o agente manualmente. Esse workflow também é recomendado se você usar um JRE (Java™ Runtime Environment) em vez de um JDK (Java™ Development Toolkit), pois as ferramentas para carregamento dinâmico não estão disponíveis.
+Se erros forem expostos no registro ou se as etapas de verificação detectarem um problema ao carregar o agente, carregue o agente manualmente. Esse fluxo de trabalho também é recomendado se você usar um JRE (Java™ Runtime Environment) em vez de um JDK (Java™ Development Toolkit), porque as ferramentas para carregamento dinâmico não estão disponíveis.
 
 Para carregar o agente manualmente, faça o seguinte:
 
-1. Edite os parâmetros de inicialização da JVM do jar CQ, adicionando a seguinte opção:
+1. Edite os parâmetros de inicialização da JVM do jar do CQ, adicionando a seguinte opção:
 
    ```shell
    -javaagent:<aem-installation-folder>/crx-quickstart/opt/notsoserial/notsoserial.jar
    ```
 
    >[!NOTE]
-   Requer que você use também a opção -nofork CQ/AEM, juntamente com as configurações apropriadas da memória JVM, já que o agente não é ativado em uma JVM bifurcada.
+   Exige que você use a opção -nofork CQ/AEM também, juntamente com as configurações de memória JVM apropriadas, pois o agente não está ativado em uma JVM bifurcada.
 
    >[!NOTE]
-   A distribuição de Adobe do jar do agente NotSoSerial pode ser encontrada no `crx-quickstart/opt/notsoserial/` pasta da instalação do AEM.
+   A distribuição de Adobe do jar do agente NotSoSerial pode ser encontrada no `crx-quickstart/opt/notsoserial/` pasta da sua instalação do AEM.
 
-1. Parar e reiniciar a JVM;
+1. Interrompa e reinicie a JVM;
 
 1. Verifique a ativação do agente novamente seguindo as etapas descritas acima em [Verificando a ativação do agente](/help/sites-administering/mitigating-serialization-issues.md#verifying-the-agent-s-activation).
 
 ## Outras considerações {#other-considerations}
 
-Se você estiver executando em uma IBM® JVM, revise a documentação sobre suporte para a API de conexão Java™ em [esta localização](https://www.ibm.com/docs/en/sdk-java-technology/8?topic=documentation-java-attach-api).
+Se estiver executando em uma IBM® JVM, reveja a documentação sobre suporte para a API Java™ Attach em [este local](https://www.ibm.com/docs/en/sdk-java-technology/8?topic=documentation-java-attach-api).

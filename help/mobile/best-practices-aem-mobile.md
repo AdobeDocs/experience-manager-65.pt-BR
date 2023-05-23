@@ -1,6 +1,6 @@
 ---
 title: Práticas recomendadas para o AEM Mobile On-demand Services
-description: Saiba mais sobre as práticas recomendadas e diretrizes que ajudam desenvolvedores de AEM experientes em sites que desejam criar modelos e componentes de aplicativos móveis.
+description: Saiba mais sobre as práticas recomendadas e as diretrizes que ajudam desenvolvedores experientes de AEM em sites que desejam criar modelos e componentes de aplicativos móveis.
 uuid: 7733c8b1-a88c-455c-8080-f7add4205b92
 contentOwner: User
 content-type: reference
@@ -19,71 +19,71 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->A Adobe recomenda usar o Editor de SPA para projetos que exigem renderização do lado do cliente com base em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+>A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-A criação de um aplicativo do AEM Mobile On-demand Services é diferente da criação de um aplicativo que é executado diretamente no shell do Cordova (ou PhoneGap). Os desenvolvedores devem estar familiarizados com:
+Criar um aplicativo AEM Mobile On-demand Services é diferente de criar um aplicativo que é executado diretamente no shell Cordova (ou PhoneGap). Os desenvolvedores devem estar familiarizados com:
 
-* Plug-ins compatíveis prontos para uso, bem como os plug-ins específicos do AEM Mobile.
-
->[!NOTE]
->
->Para saber mais sobre plug-ins, consulte os seguintes recursos:
->
->* [Uso de plug-ins do Cordova no AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
->* [Uso de plug-ins do Cordova específicos para AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
->
-
-
-* Os modelos que usam funcionalidade de plug-in devem ser escritos de forma que ainda sejam autorais no navegador, sem a presença da ponte de plug-in.
-
-   * Por exemplo, espere a variável *deviceready* antes de tentar acessar a API de um plug-in.
-
-## Diretrizes para desenvolvedores de AEM {#guidelines-for-aem-developers}
-
-As diretrizes a seguir ajudarão desenvolvedores de AEM experientes em sites que desejam criar modelos e componentes de aplicativos móveis:
-
-**Estrutura AEM modelos de sites para incentivar a reutilização e a extensibilidade**
-
-* Preferir vários arquivos de script de componente por um único monolítico
-
-   * Vários pontos de extensão vazios são fornecidos, como *customheaderlibs.html* e *customfooterlibs.html*, que permitem que o desenvolvedor altere o modelo da página enquanto duplica o menor código principal possível
-   * Os modelos podem ser estendidos e personalizados por meio do Sling *sling:resourceSuperType* mecanismo
-
-* Preferir Sightly/HTL sobre JSP como a linguagem de modelo
-
-   * Usar isso incentiva a separação do código da marcação, oferece proteção XSS e tem uma sintaxe mais familiar
-
-**Otimizar para o desempenho no dispositivo**
-
-* O script específico do artigo e as folhas de estilos devem ser incluídos na carga do artigo, usando o modelo contentsync de artigo dps
-* Os scripts e as folhas de estilos compartilhados por mais de um artigo devem ser incluídos nos recursos compartilhados, por meio do modelo contentsync dps-HTMLResources
-* Não faça referência a nenhum script externo que seja bloqueio de renderização
+* Plug-ins compatíveis imediatamente, bem como plug-ins específicos do AEM Mobile.
 
 >[!NOTE]
 >
->Você pode saber mais detalhadamente sobre scripts externos de bloqueio de renderização [here](https://developers.google.com/speed/docs/insights/BlockingJS).
+>Para saber mais detalhes sobre plug-ins, consulte os seguintes recursos:
+>
+>* [Utilização de plug-ins do Cordova no AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
+>* [Uso de plug-ins específicos do AEM Mobile habilitados para Cordova](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+>
 
-**Preferir bibliotecas JS e CSS do cliente específicas do aplicativo em relação a Web**
+
+* Os modelos que usam a funcionalidade de plug-in devem ser escritos de forma que ainda sejam autoráveis no navegador, sem que a ponte do plug-in esteja presente.
+
+   * Por exemplo, aguarde o *device ready* antes de tentar acessar a API de um plugin.
+
+## Diretrizes para desenvolvedores do AEM {#guidelines-for-aem-developers}
+
+As diretrizes a seguir ajudarão desenvolvedores experientes de AEM em sites que desejam criar modelos e componentes de aplicativos móveis:
+
+**Estruturar modelos de sites AEM para incentivar a reutilização e a extensibilidade**
+
+* Preferir vários arquivos de script de componentes em vez de um único arquivo monolítico
+
+   * São fornecidos vários pontos de extensão vazios, como *customheaderlibs.html* e *customfooterlibs.html*, que permitem que o desenvolvedor altere o modelo da página enquanto duplica o mínimo possível de código principal
+   * Os modelos podem ser estendidos e personalizados por meio do *sling:resourceSuperType* mecanismo
+
+* Prefira Sightly/HTL a JSP como a linguagem de modelo
+
+   * O uso dessa opção incentiva a separação do código da marcação, oferece proteção XSS integrada e tem uma sintaxe mais familiar
+
+**Otimizar para desempenho no dispositivo**
+
+* O script específico do artigo e as folhas de estilos devem ser incluídos na carga do artigo, usando o template dps-article contentsync
+* As folhas de estilos e scripts compartilhadas por mais de um artigo devem ser incluídas nos recursos compartilhados, por meio do modelo de sincronização de conteúdo dps-HTMLResources
+* Não fazer referência a nenhum script externo que esteja bloqueando a renderização
+
+>[!NOTE]
+>
+>Você pode saber mais detalhes sobre os scripts externos de bloqueio de renderização [aqui](https://developers.google.com/speed/docs/insights/BlockingJS).
+
+**Prefira JS do lado do cliente específico do aplicativo e bibliotecas CSS específicas da Web**
 
 * Para evitar sobrecarga em bibliotecas como jQuery Mobile para lidar com uma grande variedade de dispositivos e navegadores
-* Quando um modelo está sendo executado em uma visualização da Web de um aplicativo, você tem controle sobre as plataformas e versões que o aplicativo vai suportar, bem como sobre o conhecimento de que o suporte a JavaScript estará presente. Por exemplo, prefira Iônico (talvez apenas o CSS) em vez do jQuery Mobile e da interface do usuário Onsen em vez do Bootstrap.
+* Quando um modelo está em execução na visualização da Web de um aplicativo, você tem controle sobre as plataformas e versões que o aplicativo será compatível, bem como o conhecimento de que o suporte ao JavaScript estará presente. Por exemplo, prefira o Ionic (talvez apenas o CSS) ao jQuery Mobile e à interface do usuário do Onsen em vez do Bootstrap.
 
 >[!NOTE]
 >
->Para saber mais sobre o jQuery móvel, clique em [here](https://jquerymobile.com/browser-support/1.4/).
+>Para saber mais detalhes sobre o jQuery mobile, clique em [aqui](https://jquerymobile.com/browser-support/1.4/).
 
-**Preferir microbibliotecas em vez de pilha completa**
+**Preferir bibliotecas micro em vez de pilha completa**
 
-* O tempo que leva para colocar o conteúdo no vidro do dispositivo será retardado por cada biblioteca da qual seus artigos dependem. Esse atraso é agravado quando uma nova visualização da Web é usada para renderizar cada artigo, de modo que cada biblioteca deve ser inicializada novamente do zero
-* Se os artigos não forem criados como SPA (aplicativos de página única), provavelmente não será necessário incluir uma biblioteca de pilha completa, como o Angular
-* Preferir bibliotecas menores e de finalidade única para ajudar a adicionar a interatividade necessária para sua página, como [Rastreamento](https://github.com/ftlabs/fastclick) ou [Velocity.js](https://velocityjs.org)
+* O tempo necessário para colocar seu conteúdo no vidro do dispositivo será reduzido por cada biblioteca da qual seu(s) artigo(s) depende. Esse atraso é agravado quando uma nova visualização da Web é usada para renderizar cada artigo, de modo que cada biblioteca deve ser inicializada novamente do zero
+* Se seus artigos não forem criados como SPA (aplicativos de página única), você provavelmente não precisará incluir uma biblioteca de pilha completa, como o Angular
+* Prefira bibliotecas menores de uso único para ajudar a adicionar a interatividade exigida por sua página, como [Fastclick](https://github.com/ftlabs/fastclick) ou [Velocity.js](https://velocityjs.org)
 
 **Minimizar o tamanho da carga do artigo**
 
-* Use os menores ativos possíveis que possam cobrir efetivamente o maior visor que você estará suportando, em uma resolução razoável
-* Usar uma ferramenta como *ImageOptim* em suas imagens para remover qualquer metadado em excesso
+* Use os menores ativos possíveis que possam cobrir efetivamente o maior visor que você estará apoiando, com uma resolução razoável
+* Use uma ferramenta como *ImageOptim* nas imagens para remover qualquer excesso de metadados
 
-## Avançar {#getting-ahead}
+## Avançando {#getting-ahead}
 
 Para entender mais sobre as outras duas funções e responsabilidades, consulte os recursos abaixo:
 

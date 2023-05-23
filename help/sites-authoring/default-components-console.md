@@ -14,13 +14,13 @@ exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 96%
+ht-degree: 54%
 
 ---
 
 # Console de componentes{#components-console}
 
-O console Componentes permite navegar em todos os componentes definidos para a sua instância e exibir as principais informações de cada componente. 
+O console Componentes permite navegar em todos os componentes definidos para a instância e exibir as principais informações de cada componente.
 
 Ele pode ser acessado em **Ferramentas ->** **Geral ->** **Componentes**. No console, as visualizações em Cartão e Lista estão disponíveis. Como não há estrutura em árvore para componentes, a exibição em coluna não está disponível.
 
@@ -38,7 +38,7 @@ Com o ícone **Apenas conteúdo** (na parte superior esquerda), você pode abrir
 
 ### Detalhes do componente {#component-details}
 
-Para exibir detalhes sobre um componente específico, toque/clique no recurso desejado. As três guias fornecem:
+Para exibir detalhes sobre um componente específico, toque/clique no recurso desejado. Três guias fornecem:
 
 * **Propriedades**
 
@@ -47,12 +47,12 @@ Para exibir detalhes sobre um componente específico, toque/clique no recurso de
    Na guia Propriedades, é possível:
 
    * Veja as propriedades gerais do componente.
-   * Visualizar como o [ícone ou a abreviação foi definida](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) para o componente.
+   * Exibir como a [O ícone ou a abreviação foi definido](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) para o componente.
 
-      * Clicar na origem do ícone levará você até esse componente.
-   * Visualizar o **Tipo de recurso** e o **Supertipo do recurso** (se definido) para o componente.
+      * Clicar na origem do ícone levará você ao componente.
+   * Exibir o **Tipo de recurso** e **Supertipo do recurso** (se definido) para o componente.
 
-      * Clicar no Supertipo do recurso levará você até esse componente.
+      * Clicar no Supertipo de recurso levará você a esse componente.
    >[!NOTE]
    >
    >Como `/apps` não pode ser editado no tempo de execução, o console Componentes fica somente leitura.
@@ -71,6 +71,6 @@ Para exibir detalhes sobre um componente específico, toque/clique no recurso de
 
 * **Documentação**
 
-   Se o desenvolvedor tiver fornecido a [documentação referente ao componente](/help/sites-developing/developing-components.md#documenting-your-component), ela aparecerá na guia **Documentação**. Se não houver documentação disponível, a guia **Documentação** não será exibida.
+   Se o desenvolvedor tiver fornecido [documentação do componente](/help/sites-developing/developing-components.md#documenting-your-component), ele aparecerá no **Documentação** guia. Se não houver documentação disponível, a guia **Documentação** não será exibida.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)

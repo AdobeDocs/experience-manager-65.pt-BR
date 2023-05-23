@@ -1,7 +1,7 @@
 ---
 title: Introdução à criação de formulários adaptáveis
 seo-title: Introduction to authoring adaptive forms
-description: O AEM Forms oferece uma interface fácil de usar, mas eficiente, para a criação de formulários adaptáveis. Ele fornece vários componentes e ferramentas que podem ser usadas para criar formulários.
+description: O AEM Forms fornece interface fácil de usar, mas eficiente para a criação de formulários adaptáveis. Ele fornece vários componentes e ferramentas que podem ser usadas para criar formulários.
 seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring adaptive forms. It provides a host of components and tools that you can use to build forms.
 uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
@@ -22,40 +22,40 @@ ht-degree: 57%
 
 ## Visão geral {#overview}
 
-Formulários adaptáveis permitem criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms oferece uma interface de usuário intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. É possível optar por criar um formulário adaptável com base em um modelo de formulário ou esquema ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atenda não apenas às suas necessidades, mas que amplie seus investimentos de infraestrutura e ativos. Você pode escolher entre as seguintes opções para criar um formulário adaptável:
+Os formulários adaptáveis permitem criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms fornece uma interface de usuário intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. Você pode optar por criar um formulário adaptável com base em um modelo de formulário ou esquema ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atenda não apenas às suas necessidades, mas que amplie seus investimentos de infraestrutura e ativos. Escolha entre as seguintes opções para criar um formulário adaptável:
 
 * **Usar um modelo de dados de formulário**
-   [Integração de dados](../../forms/using/data-integration.md) O permite integrar entidades e serviços de diferentes fontes de dados em um modelo de dados de formulário que pode ser usado para criar formulários adaptáveis. Escolha o modelo de dados de formulário se o formulário adaptável que você está criando envolver a busca e gravação de dados de e para várias fontes de dados.
+   [Integração de dados](../../forms/using/data-integration.md) O permite integrar entidades e serviços de diferentes fontes de dados em um modelo de dados de formulário que você pode usar para criar formulários adaptáveis. Escolha o modelo de dados de formulário se o formulário adaptável que você está criando envolver a busca e gravação de dados de e para várias fontes de dados.
 
 * **Usar um modelo de formulário XDP**
-Esse é um modelo de formulário ideal se você tiver investido em formulários baseados em XFA ou XDP. Ele fornece uma maneira direta de converter formulários baseados em XFA em formulários adaptáveis. Quaisquer regras XFA existentes são retidas nos formulários adaptáveis associados. Os formulários adaptáveis resultantes são compatíveis com construções XFA, como validações, eventos, propriedades e padrões.
+Esse é um modelo de formulário ideal se você tiver investido em formulários baseados em XFA ou XDP. Ele fornece uma maneira direta de converter seus formulários baseados em XFA em formulários adaptáveis. Quaisquer regras XFA existentes são mantidas nos formulários adaptáveis associados. Os formulários adaptáveis resultantes são compatíveis com construções XFA, como validações, eventos, propriedades e padrões.
 
 * **Usar uma definição de esquema XML (XSD) ou um esquema JSON**
-Os esquemas XML e JSON representam a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na sua organização. É possível associar o esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estarão disponíveis para uso na guia Objetos do modelo de dados do navegador Conteúdo ao criar formulários adaptáveis.
+Os esquemas XML e JSON representam a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na sua organização. Você pode associar o esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estarão disponíveis para uso na guia Objetos do modelo de dados do navegador de conteúdo ao criar formulários adaptáveis.
 
-* **Uso de um modelo de formulário nenhum ou sem**
+* **Uso de nenhum ou sem um modelo de formulário**
 Os formulários adaptáveis criados com essa opção não usam nenhum modelo de formulário. O XML de dados gerado desses formulários tem uma estrutura simples com campos e valores correspondentes.
 
 Para obter mais informações sobre como criar um formulário adaptável, consulte [Criação de um formulário adaptável](../../forms/using/creating-adaptive-form.md).
 
-## Interface do usuário de criação de formulário adaptável {#adaptive-form-authoring-ui}
+## Interface de criação do formulário adaptável {#adaptive-form-authoring-ui}
 
-A interface otimizada para toque para a criação de formulários adaptáveis é intuitiva e oferece:
+A interface otimizada para toque para a criação de formulários adaptáveis é intuitiva e fornece:
 
 * Funcionalidade de arrastar e soltar
 * Componentes de formulário padrão
 * Repositório integrado de ativos
 
-Ao criar um novo formulário ou editar um formulário adaptável existente, você usa os seguintes elementos da interface do usuário:
+Ao criar um novo formulário adaptável ou editar um formulário adaptável existente, use os seguintes elementos de interface do usuário:
 
 * [Barra lateral](#sidebar)
 * [Barra de ferramentas da página](#page-toolbar)
 * [Barra de ferramentas Componente](#component-toolbar)
 * [Página de formulário adaptável](#af-page)
 
-![Interface do usuário de criação de formulário adaptável](assets/formeditor.png)
+![Interface de criação do formulário adaptável](assets/formeditor.png)
 
-**A.** Barra lateral **B.** Barra de ferramentas da página **C.** Página de formulário adaptável
+**A.** Barra lateral **B.** Barra de ferramentas da página **C** Página de formulário adaptável
 
 ### Barra lateral {#sidebar}
 
@@ -98,7 +98,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
 
 * **Navegador de componentes**
 
-   Inclui componentes que podem ser usados para criar um formulário adaptável. Você pode arrastar componentes do para o formulário adaptável para adicionar elementos de formulário e configurar o elemento adicionado de acordo com os requisitos. A tabela a seguir descreve os componentes listados no navegador de componentes.
+   Inclui componentes que você pode usar para criar um formulário adaptável. Você pode arrastar componentes de para o formulário adaptável para adicionar elementos de formulário e configurar elementos adicionados de acordo com os requisitos. A tabela a seguir descreve os componentes listados no navegador de componentes.
 
 <table>
  <tbody>
@@ -120,7 +120,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Gráfico</td>
-   <td>Adiciona um gráfico que pode ser usado em formulários e documentos adaptáveis para representação visual de dados bidimensionais em painéis repetitivos e linhas de tabela.</td>
+   <td>Adiciona um gráfico que pode ser usado em formulários e documentos adaptáveis para representação visual de dados bidimensionais em painéis e linhas de tabela repetíveis.</td>
   </tr>
   <tr>
    <td>Caixa de seleção</td>
@@ -152,7 +152,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Anexo de arquivo</td>
-   <td><p>Adiciona um botão que permite aos usuários navegar e anexar documentos compatíveis a um formulário. Você pode anexar vários arquivos a um componente de anexo de arquivo. Você também pode especificar o **[!UICONTROL Tamanho máximo do arquivo]** e o **[!UICONTROL Tipos de arquivo suportados]** para os anexos no navegador de propriedades do componente. </p> <p><strong> Nota: </strong><ul> <li> O componente não suporta a anexação de arquivos com nome de arquivo começando com caracteres (.), contendo caracteres \ / : * ? " &lt; &gt; | ; % $, ou contendo nomes de arquivo especiais reservados para o sistema operacional Windows como nul, prn, con, lpt ou com. </li> <li> Para anexar vários arquivos a um componente de anexo de arquivo aberto no navegador Apple Safari, selecione e anexe arquivos um por um. Não é possível selecionar e anexar vários arquivos de uma só vez.</li> <li>O componente Anexo de arquivo oferece suporte a um conjunto predefinido de formatos de arquivo em formulários adaptáveis habilitados para o Adobe Sign. Para obter mais informações, consulte <a href="https://helpx.adobe.com/br/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formatos de arquivo compatíveis</a>. </li></ul></p> </td>
+   <td><p>Adiciona um botão que permite aos usuários navegar e anexar documentos compatíveis a um formulário. Você pode anexar vários arquivos a um componente de anexo de arquivo. Você também pode especificar o **[!UICONTROL Tamanho Máximo do Arquivo]** e **[!UICONTROL Tipos de Arquivos Suportados]** para os anexos no navegador de propriedades do componente. </p> <p><strong> Nota: </strong><ul> <li> O componente não oferece suporte à anexação de arquivos com nomes de arquivo que comecem com caracteres (.), contendo os caracteres \ / : * ? " &lt; &gt; | ; % $ ou contendo nomes de arquivo especiais reservados para o sistema operacional Windows, como nul, prn, con, lpt ou com. </li> <li> Para anexar vários arquivos a um componente de anexo de arquivo aberto no navegador Apple Safari, selecione e anexe arquivos um por um. Não é possível selecionar e anexar vários arquivos de uma só vez.</li> <li>O componente de Anexo de arquivo é compatível com um conjunto predefinido de formatos de arquivo em formulários adaptáveis habilitados para o Adobe Sign. Para obter mais informações, consulte <a href="https://helpx.adobe.com/br/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formatos de arquivo compatíveis</a>. </li></ul></p> </td>
   </tr>
   <tr>
    <td>Listagem de Anexo de arquivo</td>
@@ -228,7 +228,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Botão Enviar</td>
-   <td>Adiciona um botão Enviar para enviar o formulário para a ação de envio configurada.</td>
+   <td>Adiciona um botão enviar para enviar o formulário à ação de envio configurada.</td>
   </tr>
   <tr>
    <td>Etapa de resumo</td>
@@ -266,7 +266,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Etapa de verificação</td>
-   <td><p>Adicione um espaço reservado para exibir o formulário preenchido para verificação por usuário.</p> <p><strong>Observação</strong>: O formulário adaptável contendo o componente Verificar não suporta usuários anônimos. Além disso, não é recomendado usar o componente Verificar em um fragmento de formulário adaptável.</p> </td>
+   <td><p>Adicione um espaço reservado para exibir o formulário preenchido para verificação por usuário.</p> <p><strong>Nota</strong>: o formulário adaptável que contém o componente Verificar não é compatível com usuários anônimos. Além disso, não é recomendável usar o componente Verificar em um fragmento de formulário adaptável.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -275,39 +275,39 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
 
 Algumas práticas recomendadas e pontos principais a serem lembrados ao trabalhar com componentes de formulário adaptáveis são os seguintes:
 
-* Cada componente tem propriedades associadas que controlam sua aparência e funcionalidade. Para configurar as propriedades de um componente, toque no componente e toque em ![cmppr](assets/cmppr.png) para abrir as propriedades do componente no navegador Propriedades.
-* Um componente é identificado com seu nome de elemento. Ao tocar ![cmppr](assets/cmppr.png), é possível alterar o nome do componente alterando o **[!UICONTROL Nome do elemento]** no navegador de propriedades. O campo Nome do elemento aceita somente letras, números, hifens (-) e sublinhados (_). Outros caracteres especiais não são permitidos e o nome do elemento deve começar com uma letra.
+* Cada componente tem propriedades associadas que controlam sua aparência e funcionalidade. Para configurar as propriedades de um componente, toque no componente e ![cmppr](assets/cmppr.png) para abrir as propriedades do componente no navegador Propriedades.
+* Um componente é identificado com seu nome de elemento. Ao tocar em ![cmppr](assets/cmppr.png), é possível alterar o nome do componente alterando o **[!UICONTROL Nome do elemento]** no navegador de propriedades. O campo Nome do elemento aceita somente letras, números, hifens (-) e sublinhados (_). Outros caracteres especiais não são permitidos e o nome do elemento deve começar com uma letra.
 
-* Você pode modificar a propriedade Título de um componente de formulário adaptável em linha no editor de formulário sem abrir o navegador Propriedades , desde que o título esteja visível no formulário. Para fazer isso:
+* Você pode modificar a propriedade Título de um componente de formulário adaptável em linha no editor de formulários sem abrir o navegador Propriedades, desde que o título esteja visível no formulário. Para fazer isso:
 
-   1. Toque para selecionar um componente que tenha um **[!UICONTROL Título]** e **[!UICONTROL Ocultar título]** está desativada.
+   1. Toque para selecionar um componente que tenha uma **[!UICONTROL Título]** propriedade e cuja **[!UICONTROL Ocultar título]** propriedade está desativada.
 
    1. Toque ![aem_6_3_edit](assets/aem_6_3_edit.png) para tornar o título editável.
 
-   1. Modifique o título e toque na tecla Return ou em qualquer lugar fora do componente para salvar as alterações. Toque na chave Esc para descartar as alterações.
+   1. Modifique o título e toque na tecla Return ou em qualquer lugar fora do componente para salvar as alterações. Toque na tecla Esc para descartar as alterações.
 
-* Alguns componentes de formulário adaptáveis, como Email e Telefone, incluem padrões de validação prontos para uso. No entanto, é possível especificar a validação personalizada atualizando o **[!UICONTROL Padrão de validação]** na opção Padrões nas propriedades do componente. Consulte descrições de componentes na tabela acima para obter mais informações sobre validações padrão.
+* Alguns componentes de formulário adaptáveis, como Email e Telefone, incluem padrões de validação prontos para uso. No entanto, você pode especificar a validação personalizada atualizando o **[!UICONTROL Padrão de validação]** sob a opção Padrões nas propriedades do componente. Consulte descrições de componentes na tabela acima para obter mais informações sobre validações padrão.
 
-* Campos de formulários adaptáveis, como Caixa numérica e Email podem ser configurados para incluir tipos de entrada HTML5 especializados. Quando esses campos estão em foco em dispositivos móveis e tablets, o teclado exibe um alfabeto, números e caracteres específicos na frente, normalmente usados para inserir informações nos campos. Ajuda os usuários a inserir informações rapidamente sem precisar alternar entre conjuntos de caracteres no teclado. Para permitir entrada especializada em um componente, habilite a função **[!UICONTROL Usar número do tipo HTML]** caixa de seleção nas propriedades do componente.
+* Campos de formulários adaptáveis, como Caixa numérica e Email podem ser configurados para incluir tipos de entrada de HTML5 especializados. Quando esses campos estão em foco em dispositivos móveis e tablets, o teclado exibe inicialmente o alfabeto, os números e os caracteres específicos que são normalmente usados para inserir informações nos campos. Isso ajuda os usuários a inserir informações rapidamente, sem precisar alternar entre conjuntos de caracteres no teclado numérico. Para permitir entrada especializada para um componente, ative a opção **[!UICONTROL Usar número do tipo de HTML]** em suas propriedades de componente.
 
-* Você pode ativar um componente Caixa de texto para aceitar rich text. Para ativar o rich text de uma caixa de texto, ative a **[!UICONTROL Permitir Rich Text]** nas propriedades do componente.
+* Você pode ativar um componente Caixa de texto para aceitar rich text. Para habilitar rich text para uma caixa de texto, habilite a opção **[!UICONTROL Permitir Rich Text]** nas propriedades do componente.
 
-* Você pode ativar os componentes Caixa de texto, Email e Telefone para preencher automaticamente valores para campos como nome, endereço, cartão de crédito, telefone e email a partir das informações armazenadas nas configurações de preenchimento automático do navegador. Para ativar este recurso, selecione **[!UICONTROL Ativar Preenchimento Automático]** nas propriedades do componente e selecione um **[!UICONTROL Atributo de preenchimento automático]**. Quando um usuário preenche um formulário adaptável, os valores são sugeridos a partir do perfil de preenchimento automático no navegador ou com base nos valores preenchidos anteriormente pelo usuário. Observe que o preenchimento automático funciona se as configurações de preenchimento automático no navegador do usuário estiverem ativadas.
+* Você pode ativar os componentes Caixa de texto, Email e Telefone para preencher automaticamente valores para campos como nome, endereço, cartão de crédito, telefone e email a partir das informações armazenadas nas configurações de preenchimento automático do navegador. Para ativar esse recurso, selecione **[!UICONTROL Ativar preenchimento automático]** nas propriedades do componente e selecione um **[!UICONTROL Preencher atributo automaticamente]**. Quando um usuário preenche um formulário adaptável, os valores são sugeridos pelo perfil de preenchimento automático no navegador ou com base nos valores preenchidos anteriormente pelo usuário. Observe que o preenchimento automático funciona se as configurações de preenchimento automático no navegador do usuário estiverem ativadas.
 
-* Especifique valores para os itens de Botão de opção e Caixa de seleção em `{value}={text}` nas propriedades do componente.
-* O componente File attachment, por padrão, permite que um usuário anexe apenas um arquivo. No entanto, é possível configurar as propriedades do componente para suportar vários anexos. Além disso, se um usuário anexar vários arquivos com o mesmo nome de arquivo, os anexos podem causar alguns problemas. Portanto, é recomendável associar um identificador exclusivo para cada anexo enviado no envio do formulário. Para fazer isso:
+* Especificar valores para os itens Botão de opção e Caixa de seleção em `{value}={text}` formato nas propriedades do componente.
+* O componente de anexo de Arquivo, por padrão, permite que um usuário anexe apenas um arquivo. No entanto, você pode configurar as propriedades do componente para suportar vários anexos. Além disso, se um usuário anexar vários arquivos com o mesmo nome de arquivo, os anexos poderão causar alguns problemas. Portanto, é recomendável associar um identificador exclusivo para cada anexo enviado no envio do formulário. Para fazer isso:
 
    1. No servidor do AEM Forms, navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
    1. Localizar e tocar **[!UICONTROL Serviço de configuração adaptável do Forms]**.
-   1. Na caixa de diálogo Adaptive Forms Configuration Service , habilite **[!UICONTROL Tornar Nomes de Arquivos Exclusivos]**. Por padrão, está desativado.
+   1. Na caixa de diálogo Serviço de configuração do Forms adaptável, ative **[!UICONTROL Tornar Nomes de Arquivos Exclusivos]**. Por padrão, está desativado.
 
-* Para permitir que os usuários anexem um PDF usando o navegador Safari, verifique se **application/pdf** é adicionado à propriedade Tipos de arquivo suportados do componente Anexo de arquivo . Os formulários adaptáveis criados com a versão anterior do AEM Forms podem conter **.pdf** em vez de **application/pdf** na propriedade Tipos de arquivo suportados .
+* Para permitir que os usuários anexem um PDF usando o navegador Safari, verifique se **application/pdf** é adicionado à propriedade Tipos de arquivo suportados do componente de anexo de arquivo. Os formulários adaptáveis criados com a versão anterior do AEM Forms podem conter **.pdf** em vez de **application/pdf** na propriedade Tipos de arquivos suportados.
 
 Para obter mais práticas recomendadas sobre formulários adaptáveis, consulte [Práticas recomendadas para trabalhar com formulários adaptáveis](/help/forms/using/adaptive-forms-best-practices.md).
 
 >[!NOTE]
 >
->Os componentes de formulário adaptável não suportam idiomas da direita para a esquerda (RTL). Por exemplo, hebraico.
+>Os componentes do formulário adaptável não são compatíveis com idiomas da direita para a esquerda (RTL). Por exemplo, hebraico.
 
 ### Barra de ferramentas da página {#page-toolbar}
 
@@ -339,11 +339,11 @@ A barra de ferramentas da página na parte superior fornece opções que permite
 
 Ao selecionar um componente, você visualiza uma barra de ferramentas que permite trabalhar nele. Há opções para recortar, colar, mover e especificar as propriedades dos componentes. As opções são:
 
-A.**Configurar**: ao tocar em **[!UICONTROL Configurar]**, as propriedades do componente ficam visíveis na barra lateral. A configuração dessas propriedades permite personalizar a experiência de captura de dados. Você pode alterar o nome do elemento do componente, especificar o texto do rótulo no campo Título do componente. O nome do elemento permite capturar valores inseridos pelos usuários usando o componente. Nas propriedades do componente, especifique o comportamento do componente e gerencie a entrada do usuário. Configure as propriedades na barra lateral para capturar os dados do usuário e usá-los para processamento adicional. As propriedades do contêiner de formulário adaptável permitem especificar as bibliotecas do cliente, os Layouts, os Temas, as configurações de Documento de registro, salvar configurações, as configurações de envio e as configurações de metadados.
+A.**Configurar**: ao tocar em **[!UICONTROL Configurar]**, as propriedades do componente ficam visíveis na barra lateral. A configuração dessas propriedades permite personalizar a experiência de captura de dados. Você pode alterar o nome do elemento do componente, especificar o texto do rótulo no campo Título do componente. O nome do elemento permite capturar valores inseridos pelos usuários usando o componente. Nas propriedades do componente, especifique o comportamento do componente e gerencie a entrada do usuário. Configure as propriedades na barra lateral para capturar os dados do usuário e usá-los para processamento adicional. As propriedades para o contêiner de formulário adaptável permitem especificar as bibliotecas do cliente, os Layouts, os Temas, as configurações do Documento de registro, as configurações de salvamento, as configurações de envio e as configurações de metadados.
 
 B.**Copiar**: você pode usar a opção de copiar para copiar um componente e colá-lo em outros lugares do formulário. Quando você cola um componente, o componente colado obtém um novo nome de elemento, mas retém as propriedades do componente copiado.
 
-C.**Recortar**: Você pode usar a opção de recortar para mover um componente de um local para outro no formulário adaptável.
+C **Recortar**: Você pode usar a opção recortar para mover um componente de um local para outro no formulário adaptável.
 
 D. **Excluir**: permite excluir o componente do formulário.
 
@@ -355,7 +355,7 @@ G. **Editar regras**: permite abrir o editor de regras. Para obter mais informa�
 
 H. **Grupo**: permite selecionar vários componentes se você deseja cortar, copiar ou colar mais de um componente.
 
-I. **Página principal**: permite selecionar a página principal de um componente. Por exemplo, um campo de texto está em uma subseção, que fica em uma seção. A seção encontra-se no painel raiz do guia e o contêiner de formulário adaptável é o pai de um painel raiz do guia. Para um componente, você pode observar todas as opções com a hierarquia classificada de baixo para cima.
+I. **Página principal**: permite selecionar a página principal de um componente. Por exemplo, um campo de texto está em uma subseção, que fica em uma seção. A seção reside no painel raiz da guia, e o contêiner de formulário adaptável é o pai de um painel raiz da guia. Para um componente, você pode observar todas as opções com a hierarquia classificada de baixo para cima.
 
 Por exemplo, se você tocar em **[!UICONTROL Página principal]** numa caixa de texto, é possível ver:
 
@@ -374,21 +374,21 @@ J. **Outros**: fornece mais opções para trabalhar com o componente selecionado
 
 ### Página de formulário adaptável {#af-page}
 
-A página de formulário adaptável é o formulário real. É como qualquer outra página WCM modelada como o WCM componente `cq:Page`. A imagem a seguir mostra a estrutura de conteúdo de um formulário adaptável típico.
+A página do formulário adaptável é o formulário real. É como qualquer outra página WCM modelada como o WCM componente `cq:Page`. A imagem a seguir mostra a estrutura de conteúdo de um formulário adaptável típico.
 
 ![Estrutura de conteúdo de uma página WCM de formulário adaptável](assets/afstructure.png)
 
 A estrutura de conteúdo normalmente contém os seguintes componentes principais:
 
-* **guideContainer**: A raiz de um formulário adaptável, que é marcado como **[!UICONTROL Início do formulário adaptável]** na interface do usuário do formulário adaptável. Nesse componente, você pode especificar:
+* **guideContainer**: A raiz de um formulário adaptável, que está marcada como **[!UICONTROL Início do formulário adaptável]** na interface do formulário adaptável. Nesse componente, você pode especificar:
 
-   * *Layout móvel do formulário adaptável*: Define a aparência do formulário em dispositivos móveis.
+   * *Layout de dispositivo móvel do formulário adaptável*: define a aparência do formulário em dispositivos móveis.
    * *Página de agradecimento*: define a página para a qual o usuário é redirecionado após enviar o formulário.
    * *Enviar ação*: define como o formulário é processado no servidor depois que o usuário envia o formulário.
    * *Estilo*: especifica o caminho para o arquivo CSS usado para personalizar a aparência do formulário.
 
 * **rootPanel:** O painel raiz de um formulário adaptável. Ele pode conter sub-painéis sob o nó itens. Cada painel, incluindo o painel raiz, pode ter um layout associado a ele. O layout do painel determina como o formulário é posicionado. Por exemplo, no layout Accordion, seus itens são apresentados como etapas Accordion.
 
-* **barra de ferramentas:** Um contêiner de formulário adaptável tem uma barra de ferramentas global associada, que é global ao formulário. Essa barra de ferramentas pode ser adicionada usando o **[!UICONTROL Adicionar barra de ferramentas]** na barra de edição, que permite que se adicionem ações, como Enviar, Salvar, Redefinir e assim por diante.
+* **barra de ferramentas:** Um container de formulário adaptável tem uma barra de ferramentas global associada, que é global para o formulário. Essa barra de ferramentas pode ser adicionada usando o **[!UICONTROL Adicionar barra de ferramentas]** na barra de edição, que permite que se adicionem ações, como Enviar, Salvar, Redefinir e assim por diante.
 
 * **ativos:** esse nó contém informações adicionais usadas para a criação de formulários. Por exemplo, detalhes do modelo de formulário, detalhes de localização e assim por diante).

@@ -1,7 +1,7 @@
 ---
-title: APIs faturáveis dos relatórios de transação
+title: APIs de relatórios de transação faturáveis
 seo-title: Transaction Reports Billable APIs
-description: Lista de todas as APIs que são contabilizadas como transações
+description: Lista de todas as APIs contabilizadas como transações
 seo-description: List of all the APIs that are accounted as transactions
 uuid: d2f38ae4-75df-426f-af34-52ae6fb324f3
 topic-tags: forms-manager
@@ -16,28 +16,28 @@ ht-degree: 7%
 
 ---
 
-# APIs faturáveis dos relatórios de transação{#transaction-reports-billable-apis}
+# APIs de relatórios de transação faturáveis{#transaction-reports-billable-apis}
 
-O AEM Forms fornece várias APIs para enviar formulários, processar documentos e renderizar documentos. Algumas APIs são contabilizadas como transações e outras podem ser usadas livremente. Este documento fornece uma lista de todas as APIs que são contabilizadas como transações em um relatório de transações. Veja alguns cenários comuns em que uma API faturável é usada:
+O AEM Forms fornece várias APIs para enviar formulários, processar documentos e renderizar documentos. Algumas APIs são contabilizadas como transações e outras são livres para uso. Este documento fornece uma lista de todas as APIs que são contabilizadas como transações em um relatório de transações. Estes são alguns cenários comuns em que uma API faturável é usada:
 
 * Envio de um formulário adaptável, formulário HTML5 e conjunto de formulários
 * Renderização de uma versão impressa ou da Web de uma comunicação interativa
-* Converter um documento de um formato para outro
-* Nivelar um documento de PDF dinâmico
-* Gerar um Documento de Registro
+* Conversão de um documento de um formato para outro
+* Nivelamento de um documento PDF dinâmico
+* Gerar um documento de registro
 * Mesclar um documento PDF interativo com outro documento PDF
-* Uso da etapa de atribuição de tarefa e etapas de serviços de documento de AEM Workflows
-* Uso de formulários adaptáveis em um formulário adaptável
+* Usando a etapa atribuir tarefa e as etapas serviços de documento dos fluxos de trabalho do AEM
+* Uso de formulário adaptável em um formulário adaptável
 
-As APIs de faturamento não contabilizam o número de páginas, o comprimento de um documento ou formulário ou o formato final do documento renderizado. Um relatório de transações divide as transações em duas categorias: Documentos renderizados e Forms enviado.
+As APIs de faturamento não levam em conta o número de páginas, o comprimento de um documento ou formulário ou o formato final do documento renderizado. Um relatório de transações divide as transações em duas categorias: Documentos Renderizados e Forms Submetidos.
 
-* **Forms Enviada:** Quando os dados são enviados de qualquer tipo de formulário criado com o AEM Forms e os dados são enviados para qualquer repositório de armazenamento de dados ou banco de dados é considerado envio de formulário. Por exemplo, o envio de um formulário adaptável, HTML5 Form, PDF forms e conjunto de formulários são considerados como formulários enviados. Cada formulário em um conjunto de formulários é considerado um envio. Por exemplo, se um conjunto de formulários tiver 5 formulários, quando o conjunto de formulários for enviado, o serviço de relatório de transações o contará como 5 envios.
+* **Forms enviado:** Quando os dados são enviados de qualquer tipo de formulário criado com o AEM Forms e os dados são enviados para qualquer repositório ou banco de dados de armazenamento de dados, é considerado o envio do formulário. Por exemplo, o envio de um formulário adaptável, o Formulário HTML, os PDF forms e o conjunto de formulários são contabilizados como formulários enviados. Cada formulário em um conjunto de formulários é considerado um envio. Por exemplo, se um conjunto de formulários tiver 5 formulários, quando o conjunto for enviado, o serviço de relatório de transações o contará como 5 envios.
 
-* **Documentos renderizados:** Gerar um documento combinando um modelo e dados, assinando ou certificando digitalmente um documento, usando APIs de serviços de documento faturáveis para serviços de documento ou convertendo um documento de um formato para outro são contabilizados como documentos renderizados.
+* **Documentos renderizados:** Gerar um documento combinando um modelo e dados, assinando ou certificando digitalmente um documento, usando APIs de serviços de documento faturáveis para serviços de documento ou convertendo um documento de um formato para outro são considerados documentos renderizados.
 
 >[!NOTE]
 >
->A interface do usuário de Relatórios de transação exibe três categorias: Forms Enviado, Documentos Renderizados e Documentos Processados. Tanto os documentos renderizados quanto os documentos processados são contabilizados como Documentos renderizados.
+>A interface dos Relatórios de Transação exibe três categorias: Forms Submetido, Documentos Renderizados e Documentos Processados. Tanto os Documentos renderizados quanto os Documentos processados são contabilizados como Documentos renderizados.
 
 ## APIs de serviços de documento faturáveis {#billable-document-services-apis}
 
@@ -48,7 +48,7 @@ As APIs de faturamento não contabilizam o número de páginas, o comprimento de
   <tr>
    <td><p>API</p> </td>
    <td>Descrição</td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
@@ -65,42 +65,42 @@ As APIs de faturamento não contabilizam o número de páginas, o comprimento de
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td>
-   <td>Converte o Adobe PDF em tipos de arquivos suportados. </td>
+   <td>Converte o Adobe PDF em tipos de arquivos compatíveis. </td>
    <td>Documentos processados<br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF2</a></td>
-   <td>Converte o Adobe PDF em tipos de arquivos suportados. </td>
+   <td>Converte o Adobe PDF em tipos de arquivos compatíveis. </td>
    <td>Documentos processados<br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
-   <td>Converte o Adobe PDF em tipos de arquivos suportados. </td>
+   <td>Converte o Adobe PDF em tipos de arquivos compatíveis. </td>
    <td>Documentos processados<br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td>
-   <td><p>Cria PDF a partir de HTML pages.</p> </td>
+   <td><p>Cria PDF a partir de páginas de HTML.</p> </td>
    <td>Documentos processados<br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf</a></td>
-   <td>Cria PDF a partir de URLs que apontam para uma página HTML.</td>
+   <td>Cria PDF a partir de URLs que apontam para uma página de HTML.</td>
    <td>Documentos processados<br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf2-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf2</a></td>
-   <td>Cria PDF a partir de URLs que apontam para uma página HTML.</td>
+   <td>Cria PDF a partir de URLs que apontam para uma página de HTML.</td>
    <td>Documentos processados<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">otimizePDF</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">otimizarPDF</a></td>
    <td>Otimiza o PDF para reduzir o tamanho do arquivo, removendo metadados desnecessários sem afetar a qualidade.</td>
    <td>Documentos processados<br /> </td>
    <td> </td>
@@ -115,7 +115,7 @@ As APIs de faturamento não contabilizam o número de páginas, o comprimento de
   <tr>
    <td><p>API</p> </td>
    <td>Descrição</td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
@@ -133,19 +133,19 @@ As APIs de faturamento não contabilizam o número de páginas, o comprimento de
  </tbody>
 </table>
 
-### Documento do Serviço de Registro (DoR Service) {#document-of-record-service-dor-service}
+### Documento do serviço de registro (serviço DoR) {#document-of-record-service-dor-service}
 
 <table>
  <tbody>
   <tr>
    <td><p>API</p> </td>
    <td>Descrição</td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">renderizar</a></td>
-   <td>Chama o método de renderização especificado para gerar um documento de registro usando parâmetros fornecidos.</td>
+   <td>Chama o método de renderização especificado para gerar um documento de registro usando os parâmetros fornecidos.</td>
    <td>Documentos processados</td>
    <td> </td>
   </tr>
@@ -159,44 +159,44 @@ As APIs de faturamento não contabilizam o número de páginas, o comprimento de
   <tr>
    <td><p>API</p> </td>
    <td>Descrição</td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-" target="_blank">generatePDFOutput</a></td>
-   <td>Une dados e modelos para criar um documento PDF.</td>
+   <td>Mescla dados e modelos para criar um documento PDF.</td>
    <td>Documentos processados</td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-" target="_blank">generatePDFOutput</a></td>
-   <td>Une dados e modelos para criar um documento PDF.</td>
+   <td>Mescla dados e modelos para criar um documento PDF.</td>
    <td>Documentos processados</td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
-   <td>Une dados e modelos para criar um conjunto de documentos PDF.</td>
+   <td>Mescla dados e modelos para criar um conjunto de documentos PDF.</td>
    <td>Documentos processados</td>
-   <td> A API generatePDFOutputBatch combina um modelo de formulário a um registro e gera um PDF. Quando você processa um lote de registros, o serviço de relatório de transações conta cada registro como uma representação de PDF separada. <br> Você pode usar o <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> sinalizador para combinar várias representações em um único arquivo PDF. Independentemente do status do sinalizador, o serviço conta cada registro como uma representação de PDF separada. </td>
+   <td> A API generatePDFOutputBatch combina um modelo de formulário com um registro e gera um PDF. Quando você processa um lote de registros, o serviço de relatório de transações conta cada registro como uma representação de PDF separada. <br> Você pode usar o <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> sinalizador para combinar várias representações em um único arquivo PDF. Independentemente do status do sinalizador, o serviço conta cada registro como uma representação de PDF separada. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
-   <td>Converte documentos XDP e PDF em formatos PostScript (PS), PCL (Printer Command Language) e ZPL. </td>
+   <td>Converte documentos XDP e PDF em formatos de arquivo PostScript (PS), Printer Command Language (PCL) e ZPL. </td>
    <td>Documentos processados</td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
-   <td>Converte documentos XDP e PDF em formatos PostScript (PS), PCL (Printer Command Language) e ZPL. </td>
+   <td>Converte documentos XDP e PDF em formatos de arquivo PostScript (PS), Printer Command Language (PCL) e ZPL. </td>
    <td>Documentos processados</td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
-   <td>Converte um conjunto de documentos XDP e PDF em um conjunto de formatos de arquivo PostScript (PS), PCL (Printer Command Language) e ZPL. </td>
+   <td>Converte um conjunto de documentos XDP e PDF em um conjunto de formatos de arquivo PostScript (PS), Printer Command Language (PCL) e ZPL. </td>
    <td>Documentos processados</td>
-   <td> A API generatePDFOutputBatch combina um modelo de formulário a um registro e gera um PDF. Quando você processa um lote de registros, o serviço de relatório de transações conta cada registro como uma representação de PDF separada. <br> Você pode usar o <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> sinalizador para combinar várias representações em um único arquivo PDF. Independentemente do status do sinalizador, o serviço conta cada registro como uma representação de PDF separada. </td>
+   <td> A API generatePDFOutputBatch combina um modelo de formulário com um registro e gera um PDF. Quando você processa um lote de registros, o serviço de relatório de transações conta cada registro como uma representação de PDF separada. <br> Você pode usar o <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> sinalizador para combinar várias representações em um único arquivo PDF. Independentemente do status do sinalizador, o serviço conta cada registro como uma representação de PDF separada. </td>
   </tr>
  </tbody>
 </table>
@@ -208,12 +208,12 @@ As APIs de faturamento não contabilizam o número de páginas, o comprimento de
   <tr>
    <td><p>API</p> </td>
    <td>Descrição</td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
-   <td>Renderiza o PDF Form a partir de modelos XDP. Os modelos XP são criados no Forms Designer.</td>
+   <td>Renderiza o formulário de PDF a partir de modelos XDP. Os modelos do XP são criados no Forms Designer.</td>
    <td>Documentos processados</td>
    <td> </td>
   </tr>
@@ -233,12 +233,12 @@ As APIs de faturamento não contabilizam o número de páginas, o comprimento de
   <tr>
    <td><p>API</p> </td>
    <td>Descrição</td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toImage</a></td>
-   <td>Converte um documento PDF em uma lista de documentos de imagem. Os formatos de imagem suportados são JPEG, JPEG2K, PNG e TIFF.</td>
+   <td>Converte um documento PDF em uma lista de documentos de imagem. Os formatos de imagem compatíveis são JPEG, JPEG2K, PNG e TIFF.</td>
    <td>Documentos processados</td>
    <td> </td>
   </tr>
@@ -258,12 +258,12 @@ As APIs de faturamento não contabilizam o número de páginas, o comprimento de
   <tr>
    <td><p>API</p> </td>
    <td>Descrição</td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode-com.adobe.aemfd.docmanager.Document-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-com.adobe.fd.bcf.api.CharSet-" target="_blank">decodificação</a></td>
-   <td>Decodifica todos os códigos de barras em um objeto de Documento e retorna um objeto org.w3c.dom.Document que contém dados recuperados do código de barras.</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode-com.adobe.aemfd.docmanager.Document-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-com.adobe.fd.bcf.api.CharSet-" target="_blank">decodificar</a></td>
+   <td>Decodifica todos os códigos de barras em um objeto Documento e retorna um objeto org.w3c.dom.Document que contém os dados recuperados do código de barras.</td>
    <td>Documentos processados</td>
    <td> </td>
   </tr>
@@ -277,24 +277,24 @@ As APIs de faturamento não contabilizam o número de páginas, o comprimento de
   <tr>
    <td><p>API</p> </td>
    <td>Descrição</td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">invocar</a></td>
-   <td>Executa o documento DDX especificado e retorna um <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> objeto contendo os documentos resultantes. </td>
+   <td>Executa o documento DDX especificado e retorna um <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> objeto que contém os documentos resultantes. </td>
    <td>Documentos processados</td>
    <td>As seguintes operações não são contabilizadas como transações:
     <ul>
      <li>Criação de pacotes ou portfólio</li>
-     <li>Como configurar vários XDPs </li>
+     <li>Compilação de vários XDPs </li>
     </ul> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invocar</a></td>
-   <td>Executa o documento DDX especificado e retorna um <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> objeto contendo os documentos resultantes. </td>
+   <td>Executa o documento DDX especificado e retorna um <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> objeto que contém os documentos resultantes. </td>
    <td>Documentos processados</td>
-   <td>Todos os formatos de arquivo de entrada que os serviços PDF Generator, Forms e Output suportam, o serviço Assembler suporta todos esses formatos como formatos de arquivo de saída. </td>
+   <td>Todos os formatos de arquivo de entrada compatíveis com os serviços PDF Generator, Forms e Output, o serviço Assembler é compatível com todos esses formatos como formatos de arquivo de saída. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-">toPDFA</a></td>
@@ -307,24 +307,24 @@ As APIs de faturamento não contabilizam o número de páginas, o comprimento de
 
 >[!NOTE]
 >
->* A API invoke do serviço de montagem pode chamar internamente uma API faturável de outro serviço, dependendo da entrada. Portanto, a API de chamada pode ser contabilizada como nenhuma, única ou várias transações. O número de transações contadas depende da entrada e das APIs internas chamadas.
->* Um único documento de PDF produzido usando o serviço de montagem pode ser contabilizado como nenhuma, única ou várias transações. O número de transações contadas depende do código DDX fornecido.
+>* A API de chamada do serviço do montador pode chamar internamente uma API faturável de outro serviço, dependendo da entrada. Portanto, a API invoke pode ser contabilizada como nenhuma, uma única ou várias transações. O número de transações contadas depende da entrada e das APIs internas chamadas.
+>* Um único documento de PDF produzido usando o serviço de montagem pode ser contabilizado como nenhuma, uma única ou várias transações. O número de transações contadas depende do código DDX fornecido.
 >
 
 
-### Serviço Utilitário PDF  {#pdf-utility-service}
+### Serviço do utilitário PDF  {#pdf-utility-service}
 
 <table>
  <tbody>
   <tr>
    <td><p>API</p> </td>
    <td>Descrição</td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">conversionPDFtoXDP</a></td>
-   <td>Converte um documento PDF em um arquivo XDP. Para que um documento do PDF seja convertido com êxito em um arquivo XDP, o documento do PDF deve conter um fluxo XFA no dicionário do AcroForm.</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td>
+   <td>Converte um documento PDF em um arquivo XDP. Para que um documento PDF seja convertido com êxito em um arquivo XDP, o documento PDF deve conter um fluxo XFA no dicionário AcroForm.</td>
    <td>Documentos processados</td>
    <td> </td>
   </tr>
@@ -333,16 +333,16 @@ As APIs de faturamento não contabilizam o número de páginas, o comprimento de
 
 ## APIs de captura de dados faturáveis {#billable-data-capture-apis}
 
-Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de formulários são contabilizados como transações. Por padrão, o envio de um Formulário PDF não é contabilizado como uma transação. Use o [API do gravador de transações](record-transaction-custom-implementation.md) para registrar um envio de PDF forms como uma transação.
+Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de formulários são contabilizados como transações. Por padrão, o envio de um Formulário de PDF não é contabilizado como uma transação. Usar o fornecido [API do gravador de transações](record-transaction-custom-implementation.md) para registrar um envio de PDF forms como uma transação.
 
-### Formulários adaptáveis {#adaptive-forms}
+### Adaptive Forms {#adaptive-forms}
 
 <table>
  <tbody>
   <tr>
    <td><p>Caso de uso </p> </td>
    <td>Descrição</td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
@@ -351,8 +351,8 @@ Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de
    <td>Formulários enviados</td>
    <td>
     <ul>
-     <li>Envios bem-sucedidos de uma ou duas transações. O número de transações contadas depende do tipo de ação de envio usada para envio. Por exemplo, o envio de PDF por email para enviar contas de ação para duas contagens de transações. Uma transação para envio de formulário e outra para PDF gerada usando o serviço Document of Record (DOR) . </li>
-     <li>O uso do formulário adaptável em um formulário adaptável (Adaptive Form Form Forset) conta somente uma transação. É possível ter qualquer número de formulários adaptáveis em um formulário adaptável.</li>
+     <li>Os envios bem-sucedidos levam em conta uma ou duas transações. O número de transações contadas depende do tipo de ação de envio usado para envio. Por exemplo, o envio de PDF por meio de ações de envio de email contabiliza duas contagens de transações. Uma transação para envio de formulário e outra para PDF gerado usando o serviço de Documento de registro (DOR). </li>
+     <li>O uso do formulário adaptável em um formulário adaptável (conjunto de formulários de formulário adaptável) contabiliza apenas uma transação. É possível ter qualquer número de formulários adaptáveis em um formulário adaptável.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -365,12 +365,12 @@ Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de
   <tr>
    <td><p>Caso de uso </p> </td>
    <td>Descrição </td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
    <td>Envio de um formulário HTML5</td>
-   <td>Envia um Formulário HTML5 para enviar o URL configurado no formulário.</td>
+   <td>Envia um formulário HTML5 para enviar a URL configurada no formulário.</td>
    <td>Formulários enviados</td>
    <td> </td>
   </tr>
@@ -384,25 +384,25 @@ Todos os eventos de envio de formulários adaptáveis, HTML5 Forms e conjunto de
   <tr>
    <td><p>API</p> </td>
    <td>Descrição</td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
    <td>Envio de um conjunto de formulários</td>
-   <td>Envia o formulário definido para a URL de envio configurada no conjunto de formulários.</td>
+   <td>Envia o conjunto de formulários para a URL de envio configurada no conjunto de formulários.</td>
    <td>Formulários enviados</td>
    <td>
     <ul>
-     <li>O uso do formulário adaptável em um formulário adaptável (Adaptive Form Form Forset) conta somente uma transação. É possível ter qualquer número de formulários adaptáveis em um formulário adaptável.</li>
-     <li>Cada formulário em um conjunto de formulários HTML5 Forms é contabilizado como uma transação separada. </li>
+     <li>O uso do formulário adaptável em um formulário adaptável (conjunto de formulários de formulário adaptável) contabiliza apenas uma transação. É possível ter qualquer número de formulários adaptáveis em um formulário adaptável.</li>
+     <li>Todos os formulários em um conjunto de formulários HTML5 Forms são considerados uma transação separada. </li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-## Comunicação interativa faturável e fluxos de trabalho de AEM centrados em formulários nas APIs OSGi {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
+## Comunicação interativa faturável e fluxos de trabalho do AEM centrados em formulário nas APIs OSGi {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
-Atribua etapas de tarefas e serviços de documento de Fluxos de trabalho de AEM centrados em formulários no OSGi e todas as representações de comunicação interativa e são contabilizadas como transações. A visualização de uma comunicação interativa na instância do autor e a visualização na instância de publicação usando a interface do usuário do agente não são contabilizadas como transações. Se uma etapa do fluxo de trabalho contabilizar uma transação e o fluxo de trabalho não for concluído, a contagem de transações não será revertida.
+Atribua etapas de serviços de tarefa e documento de Workflows do AEM centrados em formulário no OSGi e todas as representações de comunicação interativa e são contabilizadas como transações. A visualização de uma comunicação interativa na instância do autor e a visualização na instância de publicação usando a interface do usuário do agente não são contabilizadas como transações. Se uma etapa do fluxo de trabalho contabilizar uma transação e o fluxo de trabalho não for concluído, a contagem da transação não será revertida.
 
 ### Comunicação interativa - Canal da Web {#interactive-communication-web-channel}
 
@@ -411,7 +411,7 @@ Atribua etapas de tarefas e serviços de documento de Fluxos de trabalho de AEM 
   <tr>
    <td><p>API</p> </td>
    <td>Descrição</td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
@@ -432,7 +432,7 @@ Atribua etapas de tarefas e serviços de documento de Fluxos de trabalho de AEM 
   <tr>
    <td><p>API</p> </td>
    <td>Descrição</td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
@@ -446,41 +446,41 @@ Atribua etapas de tarefas e serviços de documento de Fluxos de trabalho de AEM 
  </tbody>
 </table>
 
-### Fluxos de trabalho de AEM centrados em formulários no OSGi  {#form-centric-aem-workflows-on-osgi}
+### Workflows do AEM centrados em formulários no OSGi  {#form-centric-aem-workflows-on-osgi}
 
 <table>
  <tbody>
   <tr>
    <td><p>Caso de uso</p> </td>
-   <td>Categoria do relatório de transação</td>
+   <td>Categoria do relatório de transações</td>
    <td>Informações adicionais</td>
   </tr>
   <tr>
-   <td>Envio de uma etapa Atribuir tarefa</td>
+   <td>Submetendo uma etapa Atribuir Tarefa</td>
    <td>Formulários enviados</td>
    <td>
     <div>
     </div> </td>
   </tr>
   <tr>
-   <td>Envio de um ponto de partida do aplicativo de fluxo de trabalho </td>
+   <td>Envio de um ponto de partida de aplicativo de fluxo de trabalho </td>
    <td>Formulários enviados</td>
    <td> </td>
   </tr>
   <tr>
-   <td>Envio de uma comunicação interativa (Canal de impressão) da interface do agente para um workflow</td>
+   <td>Envio de uma comunicação interativa (canal de impressão) da interface do usuário do agente para um fluxo de trabalho</td>
    <td>Documentos renderizados</td>
    <td> </td>
   </tr>
  </tbody>
 </table>
 
-## Registro de APIs faturáveis como transações do código personalizado {#recording-billable-apis-as-transactions-for-custom-code}
+## Registrando APIs faturáveis como transações para código personalizado {#recording-billable-apis-as-transactions-for-custom-code}
 
-Ações como enviar um Formulário PDF, usar a interface do usuário do agente para visualizar uma comunicação interativa, usar o envio de formulário não padrão e implementações personalizadas não são contabilizadas como transações. O AEM Forms fornece uma API para registrar ações como transações. Você pode chamar a API das implementações personalizadas para [registrar uma transação](/help/forms/using/record-transaction-custom-implementation.md).
+Ações como enviar um Formulário PDF, usar a interface do usuário do agente para visualizar uma comunicação interativa, usar o envio de formulários não padrão e implementações personalizadas não são contabilizadas como transações. O AEM Forms fornece uma API para registrar ações como transações. É possível chamar a API a partir das implementações personalizadas para [registrar uma transação](/help/forms/using/record-transaction-custom-implementation.md).
 
 ## Artigos relacionados {#related-articles}
 
-* [Visão geral dos relatórios de transação](../../forms/using/transaction-reports-overview.md)
-* [Exibindo e Noções Gerais de Relatórios de Transações](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [Visão Geral dos Relatórios de Transação](../../forms/using/transaction-reports-overview.md)
+* [Visualização e noções básicas de relatórios de transações](../../forms/using/viewing-and-understanding-transaction-reports.md)
 * [Registrar uma transação para implementações personalizadas](/help/forms/using/record-transaction-custom-implementation.md)

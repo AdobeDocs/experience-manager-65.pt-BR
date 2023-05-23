@@ -1,7 +1,7 @@
 ---
-title: Introdução à plataforma de AEM
+title: Introdução à plataforma AEM
 seo-title: Introduction to the AEM Platform
-description: Este artigo fornece uma visão geral da plataforma de AEM e seus componentes mais importantes.
+description: Este artigo fornece uma visão geral da plataforma AEM e seus componentes mais importantes.
 seo-description: This article provides a general overview of the AEM platform and its most important components.
 uuid: 214d4c49-1f5c-432c-a2c0-c1fbdceee716
 contentOwner: Guillaume Carlino
@@ -18,22 +18,22 @@ ht-degree: 0%
 
 ---
 
-# Introdução à plataforma de AEM{#introduction-to-the-aem-platform}
+# Introdução à plataforma AEM{#introduction-to-the-aem-platform}
 
 A plataforma AEM no AEM 6 é baseada no Apache Jackrabbit Oak.
 
-O Apache Jackrabbit Oak é um esforço para implementar um repositório de conteúdo hierárquico escalável e de desempenho para ser usado como a base de sites de classe mundial modernos e outros aplicativos de conteúdo exigentes.
+O Apache Jackrabbit Oak é um esforço para implementar um repositório de conteúdo hierárquico escalável e eficiente para uso como base de sites modernos de classe mundial e outros aplicativos de conteúdo exigentes.
 
-Ele é o sucessor do Jackrabbit 2 e é usado pelo AEM 6 como o back-end padrão para seu repositório de conteúdo, o CRX.
+É o sucessor do Jackrabbit 2 e é usado pelo AEM 6 como back-end padrão para seu repositório de conteúdo, o CRX.
 
 ## Princípios e objetivos do projeto {#design-principles-and-goals}
 
-O Oak implementa o [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0). Os seus principais objetivos de concepção são:
+O Oak implementa o [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0) Seus principais objetivos de design são:
 
 * Melhor suporte para repositórios grandes
 * Vários nós de cluster distribuídos para alta disponibilidade
 * Melhor desempenho
-* Suporte para vários nós secundários e Níveis de Controle de Acesso
+* Suporte para muitos nós filhos e níveis de controle de acesso
 
 ## Conceito de arquitetura {#architecture-concept}
 
@@ -41,58 +41,58 @@ O Oak implementa o [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0). Os
 
 ### Armazenamento {#storage}
 
-O objetivo da camada de armazenamento é:
+A finalidade da camada de armazenamento é:
 
 * Implementar um modelo de árvore
-* Tornar o armazenamento plugável
+* Tornar o armazenamento conectável
 * Fornecer um mecanismo de clustering
 
 ### Oak Core {#oak-core}
 
 O Oak Core adiciona várias camadas à camada de armazenamento:
 
-* Controles de nível de acesso
+* Controles de Nível de Acesso
 * Pesquisa e indexação
 * Observação
 
 ### Oak JCR {#oak-jcr}
 
-O principal objetivo do JCR do Oak é transformar a semântica do JCR em operações em árvore. É também responsável por:
+O principal objetivo do JCR do Oak é transformar a semântica de JCR em operações em árvore. É também responsável por:
 
 * Implementar a API JCR
-* Contendo ganchos de confirmação que implementam restrições do JCR
+* Contendo ganchos de confirmação que implementam restrições JCR
 
-Além disso, agora são possíveis implementações que não são Java e fazem parte do conceito JCR do Oak.
+Além disso, implementações não-Java agora são possíveis e fazem parte do conceito Oak JCR.
 
-## Visão geral do armazenamento {#storage-overview}
+## Visão geral de armazenamento {#storage-overview}
 
 A camada de armazenamento do Oak fornece uma camada de abstração para o armazenamento real do conteúdo.
 
-Atualmente, há duas implementações de armazenamento disponíveis no AEM6: **Armazenamento Tar** e **Armazenamento MongoDB**.
+Atualmente, há duas implementações de armazenamento de dados disponíveis no AEM6: **Armazenamento Tar** e **Armazenamento MongoDB**.
 
 ### Armazenamento Tar {#tar-storage}
 
 O armazenamento Tar usa arquivos tar. Ele armazena o conteúdo como vários tipos de registros em segmentos maiores. Os diários são usados para rastrear o estado mais recente do repositório.
 
-Há vários princípios-chave de design que foram criados em torno:
+Há vários princípios-chave de design que foram criados com base nisso:
 
 * **Segmentos imutáveis**
 
-O conteúdo é armazenado em segmentos que podem ter até 256 KB. Eles são imutáveis, o que facilita o cache de segmentos acessados com frequência e reduz erros do sistema que podem corromper o repositório.
+O conteúdo é armazenado em segmentos que podem ter até 256 KB. Eles são imutáveis, o que facilita o armazenamento em cache de segmentos acessados com frequência e reduz os erros do sistema que podem corromper o repositório.
 
 Cada segmento é identificado por um identificador exclusivo (UUID) e contém um subconjunto contínuo da árvore de conteúdo. Além disso, os segmentos podem fazer referência a outro conteúdo. Cada segmento mantém uma lista de UUIDs de outros segmentos referenciados.
 
 * **Localidade**
 
-Os registros relacionados, como um nó e seus filhos imediatos, são armazenados no mesmo segmento. Isso torna a pesquisa no repositório rápida e evita a maioria das falhas de cache para clientes típicos que acessam mais de um nó relacionado por sessão.
+Registros relacionados, como um nó e seus secundários imediatos, são armazenados no mesmo segmento. Isso agiliza a pesquisa no repositório e evita a maioria dos erros de cache para clientes típicos que acessam mais de um nó relacionado por sessão.
 
 * **Compactação**
 
-A formatação de registros é otimizada para tamanho para reduzir custos de E/S e ajustar o máximo conteúdo possível em caches.
+A formatação de registros é otimizada por tamanho para reduzir os custos de E/S e ajustar o máximo de conteúdo em caches possível.
 
 ### Armazenamento Mongo {#mongo-storage}
 
-O armazenamento MongoDB usa MongoDB para compartilhamento e clustering. A árvore do repositório é mantida em um banco de dados MongoDB, onde cada nó é um documento separado.
+O armazenamento MongoDB usa o MongoDB para fragmentação e clustering. A árvore do repositório é mantida em um banco de dados MongoDB em que cada nó é um documento separado.
 
 Ela tem várias particularidades:
 
@@ -101,36 +101,36 @@ Ela tem várias particularidades:
 Para cada atualização (confirmação) do conteúdo, uma nova revisão é criada. Uma revisão é basicamente uma string que consiste em três elementos:
 
 1. Um carimbo de data e hora derivado da hora do sistema da máquina em que foi gerado
-1. Um contador para distinguir as revisões criadas com o mesmo carimbo de data e hora
-1. O ID do nó do cluster em que a revisão foi criada
+1. Um contador para distinguir revisões criadas com o mesmo carimbo de data/hora
+1. A ID do nó do cluster em que a revisão foi criada
 
 * Marcas
 
-Há suporte para ramificações, o que permite que o cliente prepare várias alterações e as torne visíveis com uma única chamada de mesclagem.
+As ramificações são compatíveis, o que permite que o cliente prepare várias alterações e as torne visíveis com uma única chamada de mesclagem.
 
 * Documentos anteriores
 
-O armazenamento MongoDB adiciona dados a um documento com todas as modificações. No entanto, ela só excluirá dados se uma limpeza for explicitamente acionada. Os dados antigos são movidos quando um determinado limite é atingido. Os documentos anteriores contêm apenas dados imutáveis, o que significa que contêm apenas revisões confirmadas e unidas.
+O armazenamento MongoDB adiciona dados a um documento com cada modificação. No entanto, ela só excluirá os dados se uma limpeza for acionada explicitamente. Os dados antigos são movidos quando um determinado limite é atingido. Os documentos anteriores contêm apenas dados imutáveis, o que significa que eles contêm apenas revisões confirmadas e mescladas.
 
-* Metadados do nó do cluster
+* Metadados do nó de cluster
 
 Os dados sobre nós de cluster ativos e inativos são mantidos no banco de dados para facilitar as operações de cluster.
 
-Uma configuração típica de cluster AEM com o armazenamento MongoDB:
+Uma configuração típica de cluster AEM com armazenamento MongoDB:
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
-## O que é diferente do Jackrabbit 2? {#what-is-different-from-jackrabbit}
+## O que é diferente de Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
-Como o Oak é compatível com o JCR 1.0 padrão, quase não há alterações no nível do usuário. No entanto, há algumas diferenças notáveis que você deve considerar ao configurar uma instalação de AEM baseada no Oak:
+Como o Oak é compatível com versões anteriores do JCR 1.0, quase não há alterações no nível do usuário. No entanto, há algumas diferenças notáveis que você deve considerar ao configurar uma instalação do AEM baseada no Oak:
 
 * O Oak não cria índices automaticamente. Dessa forma, os índices personalizados devem ser criados quando necessário.
-* Ao contrário do Jackrabbit 2, onde as sessões sempre refletem o estado mais recente do repositório, com o Oak uma sessão reflete uma exibição estável do repositório a partir do momento em que a sessão foi adquirida. O motivo é devido ao modelo MVCC no qual o Oak se baseia.
-* Os irmãos com mesmo nome (SNS) não são suportados no Oak.
+* Ao contrário do Jackrabbit 2, onde as sessões sempre refletem o estado mais recente do repositório, com o Oak, uma sessão reflete uma visualização estável do repositório desde o momento em que a sessão foi adquirida. O motivo é devido ao modelo MVCC no qual o Oak é baseado.
+* Irmãos de mesmo nome (SNS) não são compatíveis com o Oak.
 
 ## Outra documentação relacionada à plataforma {#other-platform-related-documentation}
 
-Para obter mais informações sobre a plataforma de AEM, verifique também os artigos abaixo:
+Para obter mais informações sobre a plataforma AEM, consulte também os artigos abaixo:
 
 * [Configuração de armazenamento de nós e armazenamento de dados no AEM 6](/help/sites-deploying/data-store-config.md)
 * [Consultas e indexação do Oak](/help/sites-deploying/queries-and-indexing.md)

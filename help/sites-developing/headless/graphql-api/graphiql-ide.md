@@ -1,7 +1,8 @@
 ---
 title: Uso do GraphiQL IDE no AEM
 description: Saiba como usar o GraphiQL IDE no Adobe Experience Manager.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
+source-git-commit: b8c9e5cd3192b51954091b677d700c51617c9460
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 97%
@@ -131,7 +132,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## Publicação de consultas persistentes {#publishing-persisted-queries}
 
-Depois de selecionar o [consulta persistente](/help/sites-developing/headless/graphql-api/persisted-queries.md) na lista (painel esquerdo), é possível usar o **Publicar** e **Cancelar publicação** ações. Isso as ativará no ambiente de publicação (por exemplo, `dev-publish`) para facilitar o acesso de seus aplicativos durante os testes.
+Depois de selecionar o [consulta persistente](/help/sites-developing/headless/graphql-api/persisted-queries.md) na lista (painel esquerdo), é possível usar o **Publish** e **Cancelar publicação** ações. Isso as ativará no ambiente de publicação (por exemplo, `dev-publish`) para facilitar o acesso de seus aplicativos durante os testes.
 
 >[!NOTE]
 >

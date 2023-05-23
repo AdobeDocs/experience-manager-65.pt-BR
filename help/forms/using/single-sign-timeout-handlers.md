@@ -1,7 +1,7 @@
 ---
 title: Manipuladores de logon único e tempo limite
 seo-title: Single Sign On and timeout handlers
-description: Como definir o valor de tempo limite da sessão para o espaço de trabalho do AEM Forms.
+description: Como definir o valor do tempo limite da sessão para o espaço de trabalho do AEM Forms.
 seo-description: How-to set the session timeout value for AEM Forms workspace.
 uuid: 17583fd5-6453-41d3-bb63-a639983fbea9
 contentOwner: robhagat
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Manipuladores de logon único e tempo limite {#single-sign-on-and-timeout-handlers}
 
-O espaço de trabalho do AEM Forms é habilitado para SSO. Se um usuário tiver feito logon em um aplicativo do AEM Forms, como a interface do usuário do Forms Manager ou PDF Generator, e acessar o espaço de trabalho do AEM Forms na mesma sessão do navegador, o usuário estará conectado ao espaço de trabalho do AEM Forms e vice-versa.
+O espaço de trabalho do AEM Forms está habilitado para SSO. Se um usuário tiver feito logon em um aplicativo do AEM Forms, como a interface do usuário do Forms Manager ou do PDF Generator, e acessar o AEM Forms workspace na mesma sessão do navegador, ele será conectado ao AEM Forms workspace e vice-versa.
 
 ## Lidar com o tempo limite do servidor no espaço de trabalho do AEM Forms {#handling-server-timeout-in-nbsp-aem-forms-workspace}
 
@@ -27,10 +27,10 @@ O tempo limite da sessão de um usuário pode ser configurado no Console de admi
 
 Para definir o tempo limite, faça logon no `https://'[server]:[port]'/adminui`, navegue até **Configurações > Gerenciamento de usuários > Configuração > Configurar atributos avançados do sistema** e faça as configurações desejadas.
 
-No espaço de trabalho do AEM Forms, o tempo limite é tratado como:
+No AEM Forms, o tempo limite do espaço de trabalho é tratado como:
 
-* A duração da sessão de um usuário está disponível em resposta a `initialize` chamada que inicializa a sessão do usuário.
-* Uma caixa de diálogo pop-up notifica o usuário que a sessão está prestes a expirar, 15 segundos antes da expiração da sessão.
+* A duração da sessão para um usuário está disponível em resposta a `initialize` chamada que inicializa a sessão do usuário.
+* Uma caixa de diálogo pop-up notifica o usuário de que a sessão está prestes a expirar, 15 segundos antes da expiração da sessão.
 
 Nesta caixa de diálogo pop-up:
 
@@ -39,4 +39,4 @@ Nesta caixa de diálogo pop-up:
 
 >[!NOTE]
 >
->Se nenhuma ação for executada, o usuário será desconectado automaticamente do espaço de trabalho do AEM Forms três segundos antes da expiração da sessão.
+>Se nenhuma ação for tomada, o usuário será automaticamente desconectado do espaço de trabalho do AEM Forms três segundos antes da expiração da sessão.

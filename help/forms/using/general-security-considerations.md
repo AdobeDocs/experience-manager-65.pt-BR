@@ -1,7 +1,7 @@
 ---
-title: Considerações gerais de segurança para AEM Forms no JEE
+title: Considerações gerais de segurança para o AEM Forms no JEE
 seo-title: General Security Considerations for AEM Forms on JEE
-description: Saiba como se preparar para endurecer seu AEM Forms no ambiente JEE.
+description: Saiba como se preparar para fortalecer seu AEM Forms no ambiente JEE.
 seo-description: Learn how to prepare for hardening your AEM Forms on JEE environment.
 uuid: 4d098731-fc8f-41d7-98b5-5c2e31211614
 content-type: reference
@@ -18,24 +18,24 @@ ht-degree: 1%
 
 ---
 
-# Considerações gerais de segurança para AEM Forms no JEE{#general-security-considerations-for-aem-forms-on-jee}
+# Considerações gerais de segurança para o AEM Forms no JEE{#general-security-considerations-for-aem-forms-on-jee}
 
-Este artigo fornece informações introdutórias que ajudam você a se preparar para proteger seu ambiente AEM Forms. Ele inclui informações de pré-requisito sobre o AEM Forms no JEE, sistema operacional, servidor de aplicativos e segurança de banco de dados. Revise essas informações antes de continuar a bloquear seu ambiente.
+Este artigo fornece informações introdutórias que ajudam você a se preparar para fortalecer seu ambiente do AEM Forms. Inclui informações de pré-requisitos sobre o AEM Forms no JEE, sistema operacional, servidor de aplicativos e segurança de banco de dados. Examine essas informações antes de continuar a bloquear o ambiente.
 
 ## Informações de segurança específicas do fornecedor {#vendor-specific-security-information}
 
-Esta seção contém informações relacionadas à segurança sobre sistemas operacionais, servidores de aplicativos e bancos de dados que são incorporadas à AEM Forms na solução JEE.
+Esta seção contém informações relacionadas à segurança sobre sistemas operacionais, servidores de aplicativos e bancos de dados incorporados à sua solução AEM Forms no JEE.
 
-Use os links nesta seção para encontrar informações de segurança específicas do fornecedor para seu sistema operacional, banco de dados e servidor de aplicativos.
+Use os links desta seção para localizar informações de segurança específicas do fornecedor para seu sistema operacional, banco de dados e servidor de aplicativos.
 
 ### Informações de segurança do sistema operacional {#operating-system-security-information}
 
-Ao proteger seu sistema operacional, considere cuidadosamente a implementação das medidas descritas pelo fornecedor do sistema operacional, incluindo o seguinte:
+Ao proteger seu sistema operacional, considere cuidadosamente a implementação das medidas descritas pelo fornecedor do sistema operacional, incluindo as seguintes:
 
-* Definir e controlar usuários, atribuições e privilégios
+* Definindo e controlando usuários, atribuições e privilégios
 * Monitorar logs e trilhas de auditoria
 * Remoção de serviços e aplicativos desnecessários
-* Backup de arquivos
+* Fazendo backup de arquivos
 
 Para obter informações de segurança sobre sistemas operacionais compatíveis com o AEM Forms no JEE, consulte os recursos na tabela:
 
@@ -49,23 +49,23 @@ Para obter informações de segurança sobre sistemas operacionais compatíveis 
  <tbody>
   <tr>
    <td><p>IBM® AIX® 7.2</p> </td>
-   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">Benefícios de segurança do IBM® AIX®</a></p> </td>
+   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">Benefícios da segurança no IBM® AIX®</a></p> </td>
   </tr>
   <tr>
    <td><p>Microsoft® Windows Server® 2016 </p> </td>
-   <td><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Guia de segurança do Windows Server 2016</a></p> </td>
+   <td><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Guia de Segurança do Windows Server 2016</a></p> </td>
   </tr>
   <tr>
    <td><p>Red Hat® Linux® AP ou ES</p> </td>
-   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Guia de segurança Red Hat® Enterprise Linux®</a></p> </td>
+   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Guia de segurança do Red Hat® Enterprise Linux®</a></p> </td>
   </tr>
   <tr>
    <td><p>Sun Solaris™ 11</p> </td>
    <td><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">Diretrizes de segurança e proteção</a></p> </td>
   </tr>
   <tr>
-   <td>Oracle Linux® 7 Update 3</td>
-   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">Guia de segurança para a versão 7</a><br /> </td>
+   <td>Oracle Linux® 7 Atualização 3</td>
+   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">Guia de segurança da versão 7</a><br /> </td>
   </tr>
   <tr>
    <td>CentOS 7<sup> </sup></td>
@@ -76,17 +76,17 @@ Para obter informações de segurança sobre sistemas operacionais compatíveis 
 
 ### Informações de segurança do servidor de aplicativos {#application-server-security-information}
 
-Ao proteger o servidor de aplicativos, considere cuidadosamente a implementação das medidas descritas pelo fornecedor do servidor, incluindo o seguinte:
+Ao proteger o servidor de aplicativos, considere cuidadosamente a implementação das medidas descritas pelo fornecedor do servidor, incluindo as seguintes:
 
 * Uso de nome de usuário de administrador não óbvio
-* Desativação de serviços desnecessários
+* Desabilitar serviços desnecessários
 * Proteção do gerenciador de console
 * Ativação de cookies seguros
-* Fechamento de portas desnecessárias
+* Fechando portas desnecessárias
 * Limitação de clientes por endereços IP ou domínios
-* Uso do Gerenciador de segurança do Java™ para restringir de forma programática privilégios
+* Utilização do Gerenciador de segurança Java™ para restringir privilégios de forma programática
 
-Para obter informações de segurança sobre servidores de aplicativos compatíveis com o AEM Forms no JEE, consulte os recursos nesta tabela.
+Para obter informações de segurança sobre servidores de aplicações compatíveis com o AEM Forms no JEE, consulte os recursos nesta tabela.
 
 <table>
  <thead>
@@ -98,11 +98,11 @@ Para obter informações de segurança sobre servidores de aplicativos compatív
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p>Procure por Noções básicas sobre a segurança do WebLogic em <a href="https://docs.oracle.com/">https://docs.oracle.com/</a>.</p> </td>
+   <td><p>Procure por Noções Básicas sobre a Segurança do WebLogic em <a href="https://docs.oracle.com/">https://docs.oracle.com/</a>.</p> </td>
   </tr>
   <tr>
    <td><p>IBM® WebSphere®</p> </td>
-   <td><p><a href="https://www.ibm.com/developerworks/websphere/zones/was/security/" target="_blank">Proteção de aplicativos e seu ambiente</a></p> </td>
+   <td><p><a href="https://www.ibm.com/developerworks/websphere/zones/was/security/" target="_blank">Protegendo aplicativos e seus ambientes</a></p> </td>
   </tr>
   <tr>
    <td><p>Red Hat® JBoss®</p> </td>
@@ -113,11 +113,11 @@ Para obter informações de segurança sobre servidores de aplicativos compatív
 
 ### Informações de segurança do banco de dados {#database-security-information}
 
-Ao proteger seu banco de dados, considere implementar as medidas descritas pelo fornecedor do banco de dados, incluindo o seguinte:
+Ao proteger seu banco de dados, considere implementar as medidas descritas pelo fornecedor do banco de dados, incluindo as seguintes:
 
-* Restrição de operações com listas de controle de acesso (ACLs)
+* Restringindo operações com listas de controle de acesso (ACLs)
 * Uso de portas não padrão
-* Ocultar o banco de dados por trás de um firewall
+* Ocultando o banco de dados por trás de um firewall
 * Criptografar dados confidenciais antes de gravá-los no banco de dados (consulte a documentação do fabricante do banco de dados)
 
 Para obter informações de segurança sobre bancos de dados compatíveis com o AEM Forms no JEE, consulte os recursos nesta tabela.
@@ -144,12 +144,12 @@ Para obter informações de segurança sobre bancos de dados compatíveis com o 
   </tr>
   <tr>
    <td><p>Oracle® 12c</p> </td>
-   <td><p>Consulte o capítulo Segurança no <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Documentação do oracle 12g</a></p> </td>
+   <td><p>Consulte o capítulo Segurança no <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Documentação do Oracle 12g</a></p> </td>
   </tr>
  </tbody>
 </table>
 
-Esta tabela descreve as portas padrão que precisam ser abertas durante o processo de configuração do AEM Forms no JEE. Se estiver se conectando por https, ajuste as informações da porta e os endereços IP de acordo. Para obter mais informações sobre como configurar portas, consulte o *Instalação e implantação do AEM Forms no JEE* documento para o servidor de aplicativos.
+Esta tabela descreve as portas padrão que devem ser abertas durante o processo de configuração do AEM Forms no JEE. Se estiver se conectando via https, ajuste as informações da porta e os endereços IP de acordo. Para obter mais informações sobre a configuração de portas, consulte *Instalação e implantação do AEM Forms no JEE* para o seu servidor de aplicativos.
 
 <table>
  <thead>
@@ -169,11 +169,11 @@ Esta tabela descreve as portas padrão que precisam ser abertas durante o proces
   </tr>
   <tr>
    <td>&gt;<p>Servidor Gerenciado WebLogic</p> </td>
-   <td><p>Definir pelo administrador durante a configuração</p> </td>
+   <td><p>Definido pelo administrador durante a configuração</p> </td>
   </tr>
   <tr>
    <td>&gt;<p>WebSphere®</p> </td>
-   <td><p>9060, se a Segurança Global estiver ativada, o valor padrão da porta SSL será 9043.</p> <p>9080</p> </td>
+   <td><p>9060, se a Segurança global estiver ativada, o valor padrão da porta SSL será 9043.</p> <p>9080</p> </td>
   </tr>
   <tr>
    <td>&gt;<p>Servidor BAM</p> </td>
@@ -201,52 +201,52 @@ Esta tabela descreve as portas padrão que precisam ser abertas durante o proces
   </tr>
   <tr>
    <td>&gt;<p>LDAP</p> </td>
-   <td><p>A porta em que o servidor LDAP está sendo executado. Normalmente, a porta padrão é 389. No entanto, se você selecionar a opção SSL, a porta padrão normalmente é 636. Confirme com o administrador LDAP qual porta especificar.</p> </td>
+   <td><p>A porta em que o servidor LDAP está sendo executado. Normalmente, a porta padrão é 389. No entanto, se você selecionar a opção SSL, a porta padrão normalmente é a 636. Confirme com o administrador LDAP que porta especificar.</p> </td>
   </tr>
  </tbody>
 </table>
 
 ### Configuração do JBoss® para usar uma porta HTTP não padrão {#configuring-jboss-to-use-a-non-default-http-port}
 
-O JBoss® Application Server usa 8080 como a porta HTTP padrão. O JBoss® também tem portas pré-configuradas 8180, 8280 e 8380, que são comentadas no arquivo jboss-service.xml. Se você tiver um aplicativo em seu computador que já use essa porta, altere a porta que o AEM Forms no JEE usa seguindo estas etapas:
+O JBoss® Application Server usa 8080 como a porta HTTP padrão. O JBoss® também tem as portas pré-configuradas 8180, 8280 e 8380, que são comentadas no arquivo jboss-service.xml. Se você tiver um aplicativo em seu computador que já use essa porta, altere a porta que o AEM Forms no JEE usa seguindo estas etapas:
 
 1. Abra o seguinte arquivo para edição:
 
-   Instalação de servidor único: [Raiz JBoss®]/standalone/configuration/standalone.xml
+   Instalação em um único servidor: [Raiz JBoss®]/standalone/configuration/standalone.xml
 
-   Instalações de cluster: [Raiz JBoss®]/domain/configuration/domain.xml
+   Instalações do cluster: [Raiz JBoss®]/domain/configuration/domain.xml
 
-1. Altere o valor de **porta** no **&lt;socket-binding>** para um número de porta personalizado. Por exemplo, o seguinte usa a porta 8090:
+1. Altere o valor de **porta** atributo no **&lt;socket-binding>** para um número de porta personalizado. Por exemplo, o seguinte usa a porta 8090:
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
-1. Salve e feche o arquivo.
+1. Salvar e fechar o arquivo.
 1. Reinicie o servidor de aplicativos JBoss®.
 
-## AEM Forms em considerações de segurança do JEE {#aem-forms-on-jee-security-considerations}
+## Considerações de segurança do AEM Forms no JEE {#aem-forms-on-jee-security-considerations}
 
-Esta seção descreve alguns AEM Forms sobre problemas de segurança específicos de JEE que você deve conhecer.
+Esta seção descreve algumas AEM Forms sobre problemas de segurança específicos do JEE que você deve saber.
 
 ### Credenciais de email não criptografadas no banco de dados {#email-credentials-not-encrypted-in-database}
 
-As credenciais de email armazenadas pelos aplicativos não são criptografadas antes de serem armazenadas no AEM Forms no banco de dados JEE. Ao configurar um terminal de serviço para usar email, as informações de senha usadas como parte dessa configuração de ponto de extremidade não são criptografadas quando armazenadas no banco de dados.
+As credenciais de email armazenadas pelas aplicações não são criptografadas antes de serem armazenadas no banco de dados do AEM Forms no JEE. Quando você configura um endpoint de serviço para usar email, as informações de senha usadas como parte dessa configuração de endpoint não são criptografadas quando armazenadas no banco de dados.
 
-### Conteúdo confidencial do Rights Management no banco de dados {#sensitive-content-for-rights-management-in-the-database}
+### Conteúdo confidencial para o Rights Management no banco de dados {#sensitive-content-for-rights-management-in-the-database}
 
-O AEM Forms no JEE usa o banco de dados AEM Forms no JEE para armazenar informações confidenciais da chave de documento e outro material criptográfico usado para documentos de política. Proteger o banco de dados contra invasão ajuda a proteger essas informações confidenciais.
+O AEM Forms no JEE usa o banco de dados AEM Forms no JEE para armazenar informações confidenciais da chave do documento e outros materiais criptográficos usados para documentos de política. Proteger o banco de dados contra invasões ajuda a proteger essas informações confidenciais.
 
-### Senha no formulário de texto limpo {#password-in-clear-text-format-in-adobe-ds-xml}
+### Senha em formato de texto não criptografado {#password-in-clear-text-format-in-adobe-ds-xml}
 
-O servidor de aplicativos usado para executar o AEM Forms no JEE requer sua própria configuração para acessar seu banco de dados por meio de uma fonte de dados configurada no servidor de aplicativos. Certifique-se de que o servidor de aplicativos não exponha a senha do banco de dados em texto nítido em seu arquivo de configuração da fonte de dados.
+O servidor de aplicativos usado para executar o AEM Forms no JEE requer sua própria configuração para acessar o banco de dados por meio de uma fonte de dados configurada no servidor de aplicativos. Certifique-se de que o servidor de aplicativos não exponha a senha do banco de dados em texto não criptografado no arquivo de configuração da origem de dados.
 
-O lc_[banco de dados]O arquivo .xml não deve conter senha no formato de texto limpo. Consulte o fornecedor do servidor de aplicativos sobre como criptografar essas senhas para o servidor de aplicativos.
+O lc_[banco de dados]O arquivo .xml não deve conter senha em formato de texto não criptografado. Consulte o fornecedor do servidor de aplicativos para saber como criptografar essas senhas para ele.
 
 >[!NOTE]
 >
->O instalador turnkey do AEM Forms em JEE JBoss® criptografa a senha do banco de dados.
+>O instalador turnkey do AEM Forms no JEE JBoss® criptografa a senha do banco de dados.
 
-O IBM® WebSphere® Application Server e o Oracle WebLogic Server podem criptografar senhas de fonte de dados por padrão. No entanto, você deve confirmar com a documentação do servidor de aplicativos para garantir que isso aconteça.
+O IBM® WebSphere® Application Server e o Oracle WebLogic Server podem criptografar senhas de origens de dados por padrão. No entanto, você deve confirmar com a documentação do servidor de aplicativos para garantir que isso esteja acontecendo.
 
-### Proteção da chave privada armazenada no Armazenamento de confiança {#protecting-the-private-key-stored-in-trust-store}
+### Protegendo a chave privada armazenada no Armazenamento de Confiança {#protecting-the-private-key-stored-in-trust-store}
 
-As chaves privadas ou credenciais importadas no Armazenamento de Confiança são armazenadas no AEM Forms no banco de dados JEE. Para proteger o banco de dados e restringir o acesso apenas a administradores designados, tome as precauções apropriadas.
+As chaves privadas ou credenciais importadas no Trust Store são armazenadas no AEM Forms no banco de dados JEE. Para proteger o banco de dados e restringir o acesso somente aos administradores designados, tome as precauções adequadas.

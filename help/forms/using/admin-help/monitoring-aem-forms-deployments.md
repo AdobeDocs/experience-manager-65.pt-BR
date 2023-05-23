@@ -1,7 +1,7 @@
 ---
-title: Monitoramento AEM implantações de formulários
+title: Monitoramento de implantações de formulários AEM
 seo-title: Monitoring AEM forms deployments
-description: É possível monitorar AEM implantações de formulários a partir de um nível de sistema e de um nível interno. Saiba mais sobre como monitorar AEM implantações de formulários neste documento.
+description: Você pode monitorar implantações de formulários AEM tanto no nível do sistema quanto no nível interno. Saiba mais sobre o monitoramento de implantações de formulários AEM neste documento.
 seo-description: You can monitor AEM forms deployments from both a system level and an internal level. Learn more about monitoring AEM forms deployments from this document.
 uuid: 032b7a93-3069-4ad5-a8c6-4c160f290669
 contentOwner: admin
@@ -17,22 +17,22 @@ ht-degree: 0%
 
 ---
 
-# Monitoramento AEM implantações de formulários {#monitoring-aem-forms-deployments}
+# Monitoramento de implantações de formulários AEM {#monitoring-aem-forms-deployments}
 
-É possível monitorar AEM implantações de formulários a partir de um nível de sistema e de um nível interno. Você pode usar ferramentas de gerenciamento especializadas como HP OpenView, IBM® Tivoli e CA UniCenter e um monitor JMX de terceiros chamado *JConsole* para monitorar especificamente a atividade do Java™. A implementação de uma estratégia de monitoramento melhora a disponibilidade, confiabilidade e desempenho de suas implantações de formulários AEM.
+Você pode monitorar implantações de formulários AEM tanto no nível do sistema quanto no nível interno. Você pode usar ferramentas de gerenciamento especializadas, como HP OpenView, IBM® Tivoli e CA UniCenter, e um monitor JMX de terceiros chamado *JConsole* para monitorar especificamente a atividade do Java™. A implementação de uma estratégia de monitoramento melhora a disponibilidade, a confiabilidade e o desempenho das implantações de formulários AEM.
 
 <!-- For more information about monitoring AEM forms deployments, see [A technical guide for monitoring AEM forms deployments](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
-## Monitoramento com MBeans {#monitoring-using-mbeans}
+## Monitorando usando MBeans {#monitoring-using-mbeans}
 
-O AEM Forms fornece dois MBeans registrados que fornecem informações de navegação e estatísticas. Essas partes são as únicas MBeans compatíveis com integração e inspeção:
+O AEM Forms fornece dois MBeans registrados que fornecem informações de navegação e estatística. Essas partes são os únicos MBeans compatíveis com integração e inspeção:
 
-* **ServiceStatistics:** Este MBean fornece informações sobre o nome do serviço e sua versão.
-* **OperationStatistics:** Este MBean fornece a estatística de cada serviço de servidor do AEM Forms. Este MBean é onde os administradores podem obter informações sobre um serviço específico, como tempo de invocação e número de erros.
+* **ServiceStatistic:** Este MBean fornece informações sobre o nome do serviço e sua versão.
+* **Estatística da Operação:** Este MBean fornece as estatísticas de cada serviço do servidor do AEM Forms. Este MBean é onde os administradores podem obter informações sobre um serviço específico, como o tempo de chamada e o número de erros.
 
-### Interfaces públicas ServiceStatisticsMbean {#servicestatisticmbean-public-interfaces}
+### Interfaces públicas ServiceStatisticMbean {#servicestatisticmbean-public-interfaces}
 
-Essas interfaces públicas do ServiceStatistics MBean podem ser acessadas para fins de teste:
+Essas interfaces públicas do ServiceStatistic MBean podem ser acessadas para fins de teste:
 
 ```java
  public String getServiceId();
@@ -40,9 +40,9 @@ Essas interfaces públicas do ServiceStatistics MBean podem ser acessadas para f
  public int getMinorVersion();
 ```
 
-### Interfaces públicas OperationStatisticsMbean {#operationstatisticmbean-public-interfaces}
+### Interfaces públicas de OperationStatisticMbean {#operationstatisticmbean-public-interfaces}
 
-Essas interfaces públicas do OperationStatistics MBean podem ser acessadas para fins de teste:
+Essas interfaces públicas do MBean OperationStatistic podem ser acessadas para fins de teste:
 
 ```java
  // InvocationCount: The number of times the method is invoked.
@@ -68,13 +68,13 @@ Essas interfaces públicas do OperationStatistics MBean podem ser acessadas para
  public void setExceptionMessage(String errorMessage);
 ```
 
-### Estatísticas de Operação e Árvore do MBean {#mbean-tree-operation-statistics}
+### Árvore MBean e estatísticas da operação {#mbean-tree-operation-statistics}
 
-Usando um console JMX (JConsole), as estatísticas do MBean OperationStatistics estão disponíveis. Essas estatísticas são atributos do MBean e podem ser navegadas na seguinte árvore de hierarquia:
+Usando um console JMX (JConsole), as estatísticas do MBean OperationStatistic estão disponíveis. Essas estatísticas são atributos de MBean e podem ser navegadas sob a seguinte árvore hierárquica:
 
-**Árvore do MBean**
+**Árvore MBean**
 
-**Nome do domínio Adobe:** Depende do Servidor de Aplicativos. Se o Servidor de Aplicativos não definir o domínio, o padrão será adobe.com.
+**Nome do domínio do Adobe:** Depende do servidor de aplicativos. Se o Servidor de Aplicativos não definir o domínio, o padrão será adobe.com.
 
 **ServiceType:** AdobeService é o nome usado para listar todos os serviços.
 
@@ -82,45 +82,45 @@ Usando um console JMX (JConsole), as estatísticas do MBean OperationStatistics 
 
 **Versão:** Versão do serviço.
 
-**Estatísticas da Operação**
+**Estatísticas da operação**
 
-**Hora da Chamada:** Tempo necessário para a execução do método. Essa invocação não inclui o momento em que a solicitação é serializada, transferida de cliente para servidor e desserializada.
+**Hora da Chamada:** Tempo decorrido para a execução do método. Essa chamada não inclui o tempo em que a solicitação é serializada, transferida do cliente para o servidor e desserializada.
 
-**Contagem de invocações:** O número de vezes que o serviço é chamado.
+**Contagem de chamadas:** O número de vezes que o serviço é chamado.
 
-**Tempo médio de invocação:** Tempo médio de todas as invocações executadas desde que o servidor foi iniciado.
+**Tempo médio de invocação:** Tempo médio de todas as invocações executadas desde a inicialização do servidor.
 
-**Tempo máximo de invocação:** A duração da invocação mais longa que foi executada desde que o servidor foi iniciado.
+**Tempo máximo de invocação:** A duração da invocação mais longa executada desde a inicialização do servidor.
 
-**Tempo mínimo de invocação:** A duração da invocação mais curta que foi executada desde que o servidor foi iniciado.
+**Tempo mínimo de invocação:** A duração da invocação mais curta executada desde a inicialização do servidor.
 
 **Contagem de Exceções:** Número de invocações que resultaram em falhas.
 
 **Mensagem de exceção:** A mensagem de erro da última exceção que ocorreu.
 
-**Data/Hora da Última Amostragem:** A data da última invocação.
+**Data e hora da última amostragem:** A data da última invocação.
 
-**Unidade de Tempo:** O padrão é milissegundos.
+**Unidade de tempo:** O padrão é milissegundo.
 
-Para ativar o monitoramento JMX, os servidores de aplicativos normalmente precisam de alguma configuração. Consulte a documentação do servidor de aplicativos para obter as especificações.
+Para ativar o monitoramento JMX, os servidores de aplicações normalmente precisam de alguma configuração. Consulte a documentação do servidor de aplicativos para obter informações específicas.
 
 ### Exemplos de como configurar o acesso JMX aberto {#examples-of-how-to-set-up-open-jmx-access}
 
 **JBoss® 4.0.3/4.2.0 - configurar a inicialização da JVM**
 
-Para exibir MBeans do JConsole, configure os parâmetros de inicialização da JVM do servidor de aplicativos JBoss. Verifique se o JBoss foi iniciado a partir do arquivo run.bat/sh.
+Para exibir MBeans do JConsole, configure os parâmetros de inicialização do JVM do servidor de aplicações JBoss. Certifique-se de que o JBoss foi iniciado a partir do arquivo run.bat/sh.
 
 1. Edite o arquivo run.bat localizado em InstallJBoss/bin.
-1. Encontre a linha JAVA_OPTS e adicione o seguinte:
+1. Localize a linha JAVA_OPTS e adicione o seguinte:
 
    ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
-**WebLogic 9.2/10 - configure a inicialização da JVM**
+**WebLogic 9.2 /10 - configurar a inicialização da JVM**
 
 1. Edite o arquivo startWebLogic.bat localizado em `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
-1. Encontre a linha JAVA_OPTS e adicione o seguinte:
+1. Localize a linha JAVA_OPTS e adicione o seguinte:
 
    ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
@@ -132,20 +132,20 @@ Para exibir MBeans do JConsole, configure os parâmetros de inicialização da J
 >
 >Para o WebLogic, você pode acessar o MBean usando remoto ou IIOP.
 
-**Acesse o MBean remotamente**
+**Acessar o MBean remotamente**
 
-1. Inicie o JConsole para nova conexão e clique na guia remota.
-1. Insira o nome do host e a porta (9088, o número que você especifica durante as opções de inicialização da JVM).
+1. Inicie o JConsole para nova conexão e clique na guia remoto.
+1. Insira o nome do host e a porta (9088, o número especificado durante as opções de inicialização da JVM).
 
 **WebSphere® 6.1 - configurar a inicialização da JVM**
 
-1. No Admin Console (Application server > server1 > Process Definition > JVM), adicione a seguinte linha no campo Generic JVM Argument:
+1. No Admin Console (Servidor de aplicativos > server1 > Definição de processo > JVM), adicione a seguinte linha no campo Argumento JVM Genérico:
 
    ```shell
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
    ```
 
-1. Adicione ou exclua o comentário das três linhas a seguir no arquivo /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties (ou &lt;your websphere=&quot;&quot; jre=&quot;&quot;>/ lib/management/management.properties):
+1. Adicione ou remova o comentário das três linhas a seguir no arquivo /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties (ou &lt;your websphere=&quot;&quot; jre=&quot;&quot;>/ lib/management/management.properties):
 
    ```shell
     com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect

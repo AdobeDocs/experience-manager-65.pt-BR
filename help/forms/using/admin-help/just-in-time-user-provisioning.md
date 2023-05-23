@@ -1,7 +1,7 @@
 ---
-title: Provisionamento de usuário em tempo real
+title: Provisionamento de usuário just-in-time
 seo-title: Just-in-time user provisioning
-description: Use o provisionamento just-in-time para adicionar usuários ao Gerenciamento de usuários após a autenticação bem-sucedida e atribuir dinamicamente funções e grupos relevantes ao novo usuário.
+description: Use o provisionamento just-in-time para adicionar usuários ao Gerenciamento de usuários após a autenticação bem-sucedida e atribua dinamicamente funções e grupos relevantes ao novo usuário.
 seo-description: Use just-in-time provisioning to add users to User Management after successfull authentication and dynamically assign relevant roles and groups to the new user.
 uuid: a5ad4698-70bb-487b-a069-7133e2f420c2
 contentOwner: admin
@@ -17,34 +17,34 @@ ht-degree: 0%
 
 ---
 
-# Provisionamento de usuário em tempo real {#just-in-time-user-provisioning}
+# Provisionamento de usuário just-in-time {#just-in-time-user-provisioning}
 
-AEM formulários oferecem suporte ao provisionamento just-in-time de usuários que ainda não existem no Gerenciamento de usuários. Com o provisionamento just-in-time, os usuários são adicionados automaticamente ao Gerenciamento de usuários depois que suas credenciais são autenticadas com êxito. Além disso, funções e grupos relevantes são atribuídos dinamicamente ao novo usuário.
+Os formulários AEM são compatíveis com o provisionamento just-in-time de usuários que ainda não existem no Gerenciamento de usuários. Com o provisionamento just-in-time, os usuários são adicionados automaticamente ao Gerenciamento de usuários depois que suas credenciais forem autenticadas com êxito. Além disso, as funções e os grupos relevantes são atribuídos dinamicamente ao novo usuário.
 
-## Necessidade de provisionamento de usuário em tempo real {#need-for-just-in-time-user-provisioning}
+## Necessidade de provisionamento de usuários just-in-time {#need-for-just-in-time-user-provisioning}
 
-A autenticação tradicional funciona assim:
+É assim que a autenticação tradicional funciona:
 
-1. Quando um usuário tenta fazer logon em AEM formulários, o Gerenciamento de usuários transmite as credenciais do usuário sequencialmente para todos os provedores de autenticação disponíveis. (As credenciais de logon incluem uma combinação de nome de usuário/senha, tíquete Kerberos, assinatura PKCS7 e assim por diante.)
+1. Quando um usuário tenta fazer logon em formulários AEM, o Gerenciamento de usuários passa as credenciais do usuário sequencialmente para todos os provedores de autenticação disponíveis. (As credenciais de logon incluem uma combinação de nome de usuário/senha, tíquete Kerberos, assinatura PKCS7 e assim por diante.)
 1. O provedor de autenticação valida as credenciais.
-1. O provedor de autenticação verifica se o usuário existe no banco de dados do Gerenciamento de usuários. Os seguintes resultados são possíveis:
+1. O provedor de autenticação verifica se o usuário existe no banco de dados de Gerenciamento de usuários. Os seguintes resultados são possíveis:
 
-   **Existe:** Se o usuário estiver atual e desbloqueado, o Gerenciamento de usuários retornará a autenticação bem-sucedida. No entanto, se o usuário não for atual ou estiver bloqueado, o Gerenciamento de usuários retornará a falha de autenticação.
+   **Existe:** Se o usuário for atual e estiver desbloqueado, o Gerenciamento de usuários retornará uma autenticação bem-sucedida. No entanto, se o usuário não for atual ou estiver bloqueado, o Gerenciamento de usuários retornará uma falha de autenticação.
 
-   **Não existe:** O Gerenciamento de usuários retorna a falha de autenticação.
+   **Não existe:** O Gerenciamento de usuários retorna uma falha de autenticação.
 
-   **Inválido:** O Gerenciamento de usuários retorna a falha de autenticação.
+   **Inválido:** O Gerenciamento de usuários retorna uma falha de autenticação.
 
-1. O resultado retornado pelo provedor de autenticação é avaliado. Se o provedor de autenticação retornar a autenticação bem-sucedido, o usuário poderá fazer logon. Caso contrário, o Gerenciamento de usuários verificará o próximo provedor de autenticação (etapas 2 a 3).
-1. A falha de autenticação é retornada se nenhum provedor de autenticação disponível validar as credenciais do usuário.
+1. O resultado retornado pelo provedor de autenticação é avaliado. Se o provedor de autenticação retornou êxito de autenticação, o usuário tem permissão para fazer logon. Caso contrário, o Gerenciamento de usuários verificará com o próximo provedor de autenticação (etapas 2-3).
+1. A falha de autenticação será retornada se nenhum provedor de autenticação disponível validar as credenciais do usuário.
 
-Quando o provisionamento just-in-time é implementado, um novo usuário é criado dinamicamente no Gerenciamento de usuários se um dos provedores de autenticação validar as credenciais do usuário. (Após a etapa 3 do procedimento de autenticação tradicional, acima).
+Quando o provisionamento just-in-time é implementado, um novo usuário é criado dinamicamente no Gerenciamento de usuários se um dos provedores de autenticação validar as credenciais do usuário. (Após a etapa 3 no procedimento de autenticação tradicional, acima.)
 
-## Implemente o provisionamento do usuário just-in-time {#implement-just-in-time-user-provisioning}
+## Implementar o provisionamento de usuários just-in-time {#implement-just-in-time-user-provisioning}
 
 ### APIs para provisionamento just-in-time {#apis-for-just-in-time-provisioning}
 
-Os AEM forms fornecem as seguintes APIs para o provisionamento just-in-time:
+Os formulários AEM fornecem as seguintes APIs para provisionamento just-in-time:
 
 ```java
 package com.adobe.idp.um.spi.authentication  ;
@@ -81,33 +81,33 @@ public Boolean assign(User user);
 }
 ```
 
-### Considerações ao criar um domínio ativado apenas no tempo {#considerations-while-creating-a-just-in-time-enabled-domain}
+### Considerações ao criar um domínio habilitado para just-in-time {#considerations-while-creating-a-just-in-time-enabled-domain}
 
-* Ao criar um `IdentityCreator` para um domínio híbrido, verifique se uma senha de teste está especificada para o usuário local. Não deixe este campo de senha vazio.
+* Ao criar uma `IdentityCreator` para um domínio híbrido, verifique se uma senha fictícia foi especificada para o usuário local. Não deixe este campo de senha vazio.
 * Recomendação: Use `DomainSpecificAuthentication` para validar as credenciais do usuário em relação a um domínio específico.
 
-### Criar um domínio ativado apenas no tempo {#create-a-just-in-time-enabled-domain}
+### Criar um domínio habilitado para just-in-time {#create-a-just-in-time-enabled-domain}
 
 1. Escreva um DSC implementando as APIs na seção &quot;APIs para provisionamento just-in-time&quot;.
 1. Implante o DSC no servidor de formulários.
-1. Crie um domínio ativado apenas no tempo:
+1. Criar um domínio habilitado para just-in-time:
 
-   * No Console de Administração, clique em Configurações > Gerenciamento de Usuário > Gerenciamento de Domínio > Novo Domínio Enterprise.
-   * Configure o domínio e selecione Habilitar provisionamento Exatamente no Tempo. <!--Fix broken link (See Setting up and managing domains).-->
-   * Adicionar provedores de autenticação. Ao adicionar provedores de autenticação, na tela Nova Autenticação, selecione um Criador de Identidade e Provedor de Atribuição registrado.
+   * No Console de Administração, clique em Configurações > Gerenciamento de usuários > Gerenciamento de domínio > Novo domínio corporativo.
+   * Configure o domínio e selecione Ativar provisionamento just-in-time. <!--Fix broken link (See Setting up and managing domains).-->
+   * Adicionar provedores de autenticação. Ao adicionar provedores de autenticação, na tela Nova autenticação, selecione um Criador de identidade e um Provedor de atribuição registrados.
 
 1. Salve o novo domínio.
 
-## Por trás das cenas {#behind-the-scenes}
+## Nos bastidores {#behind-the-scenes}
 
-Suponha que um usuário esteja tentando fazer logon em AEM formulários e que um provedor de autenticação aceite suas credenciais de usuário. Se o usuário ainda não existir no banco de dados do Gerenciamento de usuários, a verificação de identidade do usuário falhará. AEM formulários agora executa as seguintes ações:
+Suponha que um usuário esteja tentando fazer logon em formulários AEM e um provedor de autenticação aceite suas credenciais de usuário. Se o usuário ainda não existir no banco de dados de Gerenciamento de usuários, a verificação de identidade do usuário falhará. Os formulários AEM agora executam as seguintes ações:
 
-1. Crie um `UserProvisioningBO` com os dados de autenticação e coloque-os em um mapa de credenciais.
-1. Com base nas informações de domínio retornadas por `UserProvisioningBO`, buscar e invocar o `IdentityCreator` e `AssignmentProvider` para o domínio .
-1. Invocar `IdentityCreator`. Se retornar um bem-sucedido `AuthResponse`, extrair `UserInfo` no mapa de credenciais. Passe para o `AssignmentProvider` para atribuição de grupo/função e qualquer outro pós-processamento depois que o usuário é criado.
-1. Se o usuário for criado com sucesso, retorne a tentativa de logon pelo usuário como bem-sucedido.
-1. Para domínios híbridos, extraia informações do usuário dos dados de autenticação fornecidos ao provedor de autenticação. Se essas informações forem buscadas com sucesso, crie o usuário dinamicamente.
+1. Criar um `UserProvisioningBO` objeto com os dados de autenticação e coloque-o em um mapa de credenciais.
+1. Com base nas informações de domínio retornadas por `UserProvisioningBO`, obtenha e chame o registrado `IdentityCreator` e `AssignmentProvider` para o domínio.
+1. Chamar `IdentityCreator`. Se retornar um resultado de `AuthResponse`, extrair `UserInfo` no mapa de credenciais. Passe-o para o `AssignmentProvider` para atribuição de grupo/função e qualquer outro pós-processamento após a criação do usuário.
+1. Se o usuário for criado com sucesso, retorne a tentativa de logon por ele como bem-sucedida.
+1. Para domínios híbridos, obtenha informações do usuário dos dados de autenticação fornecidos ao provedor de autenticação. Se essas informações forem buscadas com sucesso, crie o usuário dinamicamente.
 
 >[!NOTE]
 >
->O recurso de provisionamento just-in-time é fornecido com uma implementação padrão de `IdentityCreator` que você pode usar para criar usuários dinamicamente. Os usuários são criados com as informações associadas aos diretórios no domínio.
+>O recurso de provisionamento just-in-time vem com uma implementação padrão de `IdentityCreator` que você pode usar para criar usuários dinamicamente. Os usuários são criados com as informações associadas aos diretórios no domínio.

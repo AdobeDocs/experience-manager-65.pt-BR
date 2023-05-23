@@ -1,7 +1,7 @@
 ---
 title: Leitores de tela para formulários HTML5
 seo-title: Screen readers for HTML5 forms
-description: Lista os leitores de tela suportados com formulários HTML5.
+description: Lista os leitores de tela compatíveis com formulários HTML5.
 seo-description: Lists the screen readers supported with HTML5 forms.
 uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # Leitores de tela para formulários HTML5 {#screen-readers-for-html-forms}
 
-Os componentes de formulários HTML5 renderizam o modelo de formulário XFA em um formato HTML5. Todos os navegadores padrão compatíveis com o HTML5 podem renderizar esses formulários. Para oferecer suporte a experiências de captura de dados semelhantes em formulários PDF e HTML5, o layout do PDF forms é retido em formulários HTML5.
+Os componentes de formulários HTML5 renderizam o modelo de formulário XFA para um formato HTML5. Todos os navegadores padrão compatíveis com o HTML5 podem renderizar esses formulários. Para oferecer suporte a uma experiência de captura de dados semelhante em formulários de PDF e HTML5, o layout de PDF forms é retido em formulários de HTML.
 
-Os formulários HTML5 usam construções HTML padrão que permitem o uso de ferramentas de acessibilidade comuns para o HTML com esses formulários. Se um formulário for projetado de acordo com as práticas recomendadas para formulários acessíveis, ele funcionará com qualquer leitor de tela suportado. Além disso, esses formulários são ativados para navegação pelo teclado.
+Os formulários HTML5 usam construções de HTML padrão, permitindo que ferramentas de acessibilidade regulares para HTML sejam usadas com esses formulários. Se um formulário for criado de acordo com as práticas recomendadas para formulários acessíveis, ele funcionará com qualquer leitor de tela compatível. Além disso, esses formulários são ativados para navegação pelo teclado.
 
 ## Padrões de acessibilidade {#accessibility-standards}
 
@@ -32,17 +32,17 @@ Os formulários HTML5 estão em conformidade com a seção 508 para acessibilida
 * JAWS 14.0 no Microsoft® Windows
 * VoiceOver no macOS X e iPad
 
-### JAWS {#jaws}
+### MANDÍBULAS {#jaws}
 
-Todos os pressionamentos de teclas e atalhos padrão funcionam para formulários HTML5. Para obter mais informações sobre como usar o JAWS, visite [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
+Todos os pressionamentos de tecla e atalhos padrão funcionam para formulários HTML5. Para obter mais informações sobre o uso do JAWS, visite [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
 
 ### VoiceOver {#voiceover}
 
-Os formulários HTML5 suportam todos os pressionamentos de teclas e gestos padrão do Voice over. Para obter mais informações sobre como configurar e usar o VoiceOver, consulte [https://www.apple.com/accessibility/vision/](https://www.apple.com/accessibility/vision/).
+Os formulários HTML5 suportam todos os pressionamentos de tecla e gestos padrão de Voz sobre. Para obter mais informações sobre como configurar e usar o VoiceOver, consulte [https://www.apple.com/accessibility/vision/](https://www.apple.com/accessibility/vision/).
 
 ## Problemas conhecidos {#known-issues}
 
-* **(Somente no Internet Explorer 9)** Nos formulários HTML5, as páginas são carregadas sob demanda (dinamicamente). O carregamento de página sob demanda causa problemas com o funcionamento dos leitores de tela. Quando o foco do leitor de tela estiver no último campo da página e o usuário pressionar a tecla tab, o leitor de tela retornará o foco para o primeiro campo da primeira página no formulário.
-* **(Somente no Internet Explorer 9)** O controle do Seletor de data em formulários HTML5 não é totalmente acessível com teclado. No controle do Seletor de datas, se você pressionar várias vezes as teclas Para cima/Para baixo, o controle do Seletor de datas será fechado e o foco será movido para o campo seguinte/último.
+* **(Somente Gerenciador Interno 9)** Nos formulários HTML5, as páginas são carregadas sob demanda (dinamicamente). O carregamento de página sob demanda causa problemas com o funcionamento dos leitores de tela. Quando o foco do leitor de tela está no último campo da página e o usuário pressiona Tab, o leitor de tela retorna o foco para o primeiro campo da primeira página do formulário.
+* **(Somente Gerenciador Interno 9)** O controle Seletor de datas em formulários HTML5 não é totalmente acessível com o teclado. No controle Seletor de datas, se você pressionar as teclas Para cima/Para baixo várias vezes, o controle Seletor de datas será fechado e o foco será movido para o próximo/último campo.
 
 * O VoiceOver não consegue detectar as teclas de seta no widget de data no iPad safari.
