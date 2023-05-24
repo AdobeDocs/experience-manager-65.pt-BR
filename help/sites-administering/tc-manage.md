@@ -2,10 +2,10 @@
 title: Gerenciamento de projetos de tradução
 description: Saiba como gerenciar projetos de tradução no AEM.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 7efb1b8d345b07835e5f45a1afe9da13163411b2
+source-git-commit: 106fc0e1ef6d65f13bd3875783102da44694581e
 workflow-type: tm+mt
-source-wordcount: '3536'
-ht-degree: 57%
+source-wordcount: '3587'
+ht-degree: 55%
 
 ---
 
@@ -412,13 +412,20 @@ Preencha sua cópia de idioma para que ela tenha conteúdo do idioma principal q
 
 ## Mover ou renomear uma página de origem {#move-source}
 
-Se uma página de origem já traduzida precisar ser [renomeada ou movida](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), traduzir a página novamente após a movimentação criará uma nova cópia de idioma com base no novo nome/local da página. A cópia de idioma antiga baseada no nome/local anterior ainda estará lá.
+Se uma página de origem já traduzida precisar ser [renomeada ou movida](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), traduzir a página novamente após a movimentação criará uma nova cópia de idioma com base no novo nome/local da página. A cópia de idioma antiga baseada no nome/local anterior ainda estará lá. Para evitar isso, você pode usar a funcionalidade de cópia de idioma de atualização após a movimentação:
 
-A prática recomendada neste cenário é seguir este procedimento:
-1. Cancele a publicação das cópias de idioma associadas à página de origem que você deseja mover.
-1. Exclua essas cópias.
-1. Crie novas cópias de idioma a partir da página de origem recém-movida.
-1. Publique as cópias de idioma recém-criadas.
+1. Mova uma página que tenha uma cópia de idioma.
+1. Selecione a raiz da cópia de idioma.
+1. Abra o **Referências** painel.
+1. Selecionar **Cópias de idiomas**.
+1. Selecione os idiomas de destino que deseja atualizar.
+1. Selecionar **Atualizar cópias de idioma**.
+1. Clique em **Atualizar**. A [Launch](/help/sites-authoring/launches-promoting.md) será criado.
+1. Navegue até a raiz de idioma necessária e selecione-a.
+1. Usar o **Referências** , selecione **Lançamentos**.
+1. Clique no lançamento que acabou de ser criado e clique em **Promover lançamento**.
+
+Agora, a página de origem foi movida, bem como a cópia de idioma associada.
 
 ## Criação de um projeto de tradução usando o Console de projetos {#creating-a-translation-project-using-the-projects-console}
 
