@@ -1,18 +1,18 @@
 ---
-title: Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas
-description: Saiba como usar o GraphQL com o AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
+title: Saiba como usar o GraphQL com AEM - Exemplos de conteúdo e consultas
+description: Saiba como usar o GraphQL com AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 85f8da2a30e1bb5b78cbb36cd9b79939dd913251
+source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
 workflow-type: tm+mt
 source-wordcount: '1586'
-ht-degree: 91%
+ht-degree: 71%
 
 ---
 
 # Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas {#learn-graphql-with-aem-sample-content-queries}
 
-Saiba como usar o GraphQL com o AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
+Saiba como usar o GraphQL com AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Saiba como usar o GraphQL com o AEM para fornecer conteúdo em headless, explora
 >* [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
 
-Para começar a usar consultas GraphQL e saber como elas funcionam com Fragmentos de conteúdo do AEM, seria de ajuda examinar alguns exemplos práticos.
+Para começar a usar consultas do GraphQL e saber como elas funcionam com Fragmentos de conteúdo AEM, seria de ajuda ver alguns exemplos práticos.
 
 Para isso, consulte:
 
@@ -38,7 +38,7 @@ Veja esses exemplos de consultas para obter ilustrações de como criar consulta
 
 >[!NOTE]
 >
->Dependendo do seu caso, você pode acessar diretamente a [Interface GraphiQL incluída na API GraphQL do AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) para enviar e testar consultas.
+>Dependendo da sua instância, você pode acessar diretamente a variável [Interface GraphiQL incluída com a API AEM GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) para enviar e testar consultas.
 >
 >Por exemplo: `http://localhost:4502/content/graphiql.html`
 
@@ -48,11 +48,11 @@ Veja esses exemplos de consultas para obter ilustrações de como criar consulta
 
 ### Exemplo de consulta - Todos os esquemas e tipos de dados disponíveis {#sample-all-schemes-datatypes}
 
-Isso retornará todos os `types` para todos os esquemas disponíveis.
+Este exemplo de consulta retorna todas as `types` para todos os esquemas disponíveis.
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 {
   __schema {
     types {
@@ -65,7 +65,7 @@ Isso retornará todos os `types` para todos os esquemas disponíveis.
 
 **Exemplo de resultado**
 
-```xml
+```json
 {
   "data": {
     "__schema": {
@@ -141,10 +141,10 @@ Isso retornará todos os `types` para todos os esquemas disponíveis.
 
 ### Exemplo de consulta - Todas as informações sobre todas as cidades {#sample-all-information-all-cities}
 
-Para recuperar todas as informações sobre todas as cidades, você pode usar essa consulta básica:
+Para recuperar todas as informações sobre todas as cidades, você pode usar a consulta básica:
 **Exemplo de consulta**
 
-```xml
+```graphql
 {
   cityList {
     items
@@ -152,9 +152,9 @@ Para recuperar todas as informações sobre todas as cidades, você pode usar es
 }
 ```
 
-Quando executada, o sistema expandirá automaticamente a consulta para incluir todos os campos:
+Quando executado, o sistema expande automaticamente a consulta para incluir todos os campos:
 
-```xml
+```graphql
 {
   cityList {
     items {
@@ -169,7 +169,7 @@ Quando executada, o sistema expandirá automaticamente a consulta para incluir t
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -224,11 +224,11 @@ Quando executada, o sistema expandirá automaticamente a consulta para incluir t
 
 ### Exemplo de consulta - Nomes de todas as cidades {#sample-names-all-cities}
 
-Esta é uma consulta simples para retornar o `name`de todas as entradas no esquema`city`.
+Este exemplo de consulta é uma consulta simples para retornar o `name`de todas as entradas no `city`esquema.
 
 **Exemplo de consulta**
 
-```xml
+```xmgraphqll
 query {
   cityList {
     items {
@@ -240,7 +240,7 @@ query {
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -274,11 +274,11 @@ query {
 
 ### Exemplo de consulta - Um único fragmento de cidade específico {#sample-single-specific-city-fragment}
 
-Esta é uma consulta para retornar os detalhes de uma única entrada de fragmento em um local específico no repositório.
+Este exemplo de consulta é uma consulta para retornar os detalhes de uma única entrada de fragmento em um local específico no repositório.
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 {
   cityByPath (_path: "/content/dam/sample-content-fragments/cities/berlin") {
     item {
@@ -294,7 +294,7 @@ Esta é uma consulta para retornar os detalhes de uma única entrada de fragment
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "cityByPath": {
@@ -315,11 +315,11 @@ Esta é uma consulta para retornar os detalhes de uma única entrada de fragment
 
 ### Exemplo de consulta - Todas as cidades com uma variação nomeada {#sample-cities-named-variation}
 
-Se você criar uma nova variação chamada &quot;Centro de Berlim&quot; (`berlin_centre`), para a `city` Berlim, use uma consulta para retornar detalhes da variação.
+Se você criar uma variação chamada &quot;Centro de Berlim&quot; (`berlin_centre`), para o `city` Berlim, você pode usar uma consulta para retornar detalhes da variação.
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 {
   cityList (variation: "berlin_center") {
     items {
@@ -335,7 +335,7 @@ Se você criar uma nova variação chamada &quot;Centro de Berlim&quot; (`berlin
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -360,14 +360,14 @@ Se você criar uma nova variação chamada &quot;Centro de Berlim&quot; (`berlin
 
 Se você:
 
-* crie uma variedade de tags, chamadas `Tourism` : `Business`, `City Break`, `Holiday`
-* e atribuí-los à variação Principal de vários `City` instâncias
+* criar várias tags, chamadas `Tourism` : `Business`, `City Break`, `Holiday`
+* e atribuir essas tags à variação Principal de vários `City` instâncias
 
 Em seguida, você pode usar uma consulta para retornar detalhes do `name` e `tags`de todas as entradas marcadas como Quebras de cidade na variável `city`esquema.
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 query {
   cityList(
     includeVariations: true,
@@ -383,7 +383,7 @@ query {
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -414,7 +414,7 @@ Usando a estrutura dos fragmentos aninhados, essa consulta retorna os detalhes c
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 query {
   companyList {
     items {
@@ -443,7 +443,7 @@ query {
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -538,11 +538,11 @@ query {
 
 ### Exemplo de consulta - Todas as pessoas com o nome de &quot;Jobs&quot; ou &quot;Smith&quot; {#sample-all-persons-jobs-smith}
 
-Isso filtrará todas as `persons` para qualquer uma que tenha o nome `Jobs` ou `Smith`.
+Este exemplo de consulta filtra tudo `persons` para qualquer uma que tenha o nome `Jobs`ou `Smith`.
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -567,7 +567,7 @@ query {
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -592,11 +592,11 @@ query {
 
 ### Exemplo de consulta - Todas as pessoas que não tenham o nome &quot;Jobs&quot; {#sample-all-persons-not-jobs}
 
-Isso filtrará todas as `persons` para qualquer uma que tenha o nome `Jobs` ou `Smith`.
+Este exemplo de consulta filtra tudo `persons` para qualquer uma que tenha o nome `Jobs`ou `Smith`.
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -618,7 +618,7 @@ query {
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -663,7 +663,7 @@ Todas as `adventures` em que o `_path` comece com um prefixo específico (`/cont
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 query {
   adventureList(
     filter: {
@@ -685,7 +685,7 @@ query {
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "adventureList": {
@@ -702,13 +702,13 @@ query {
 }
 ```
 
-### Exemplo de consulta - todas as cidades localizadas na Alemanha ou na Suíça com população entre 400.000 e 999.999 {#sample-all-cities-d-ch-population}
+### Exemplo de consulta - todas as cidades na Alemanha ou na Suíça com população de 400.000 a 999.999 {#sample-all-cities-d-ch-population}
 
 Aqui, uma combinação de campos é filtrada. Um `AND` (implícito) é usado para selecionar o intervalo `population`, enquanto um `OR` (explícito) é usado para selecionar as cidades necessárias.
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     population: {
@@ -744,7 +744,7 @@ query {
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -771,7 +771,7 @@ Esta consulta interroga todas as cidades que tenham `SAN` no nome, podendo ser m
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     name: {
@@ -795,7 +795,7 @@ query {
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -822,7 +822,7 @@ Essa consulta filtra em uma matriz com um item (`city:na`) que deve ocorrer pelo
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -846,7 +846,7 @@ query {
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -880,7 +880,7 @@ Essa consulta filtra em um valor de matriz exato.
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -906,7 +906,7 @@ query {
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -932,7 +932,7 @@ Esta consulta ilustra a filtragem de qualquer `person` de `name` &quot;Smith&quo
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -964,7 +964,7 @@ query {
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -998,7 +998,7 @@ Esta consulta ilustra a filtragem entre três fragmentos aninhados - `company`, 
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -1040,7 +1040,7 @@ query {
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -1090,7 +1090,7 @@ Esta consulta ilustra a filtragem entre três fragmentos aninhados - `company`, 
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 query {
   awardList(filter: {
       id: {
@@ -1117,7 +1117,7 @@ query {
 
 **Exemplo de resultados**
 
-```xml
+```json
 {
   "data": {
     "awardList": {
@@ -1146,7 +1146,7 @@ query {
 
 ## Exemplo de consulta usando o projeto WKND {#sample-queries-using-wknd-project}
 
-Esses exemplos de consultas são baseadas no projeto WKND. Isso tem:
+Esses exemplos de consultas são baseadas no projeto WKND. Ele tem o seguinte:
 
 * Modelos de fragmentos de conteúdo disponíveis em:
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
@@ -1167,7 +1167,7 @@ Este exemplo de consulta interroga:
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 {
   articleList {
     items {
@@ -1187,7 +1187,7 @@ Esta consulta interroga:
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 {
   adventureList {
     items {
@@ -1244,7 +1244,7 @@ Esta consulta interroga:
 Este exemplo de consulta interroga:
 
 * por um único Fragmento de conteúdo do tipo `article` em um caminho específico
-   * dentro desse conteúdo, todos os formatos de conteúdo:
+   * nesse caminho, todos os formatos de conteúdo:
       * HTML
       * Markdown
       * Texto sem formatação
@@ -1252,7 +1252,7 @@ Este exemplo de consulta interroga:
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 {
   articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
     item {
@@ -1278,7 +1278,7 @@ Este exemplo de consulta interroga:
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 {
   adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
     item {
@@ -1298,7 +1298,7 @@ Este exemplo de consulta interroga:
 Esta consulta interroga:
 
 * por um único Fragmento de conteúdo do tipo `article` em um caminho específico
-   * dentro disso, o caminho e o autor do fragmento referenciado (aninhado)
+   * nesse caminho, o caminho e o autor do fragmento referenciado (aninhado)
 
 >[!NOTE]
 >
@@ -1393,7 +1393,7 @@ Essas consultas interrogam:
 
 A consulta a seguir retorna todas as referências de conteúdo usando `_references`:
 
-```xml
+```graphql
 {
   bookmarkList {
      _references {
@@ -1427,13 +1427,13 @@ A consulta a seguir retorna todas as referências de conteúdo usando `_referenc
 
 #### Exemplo de consulta para vários Fragmentos de conteúdo com anexos {#sample-wknd-multiple-fragments-attachments}
 
-A consulta a seguir retorna todos os `attachments` - um campo específico (subgrupo) de tipo `content-reference`:
+A consulta a seguir retorna todas as `attachments` - um campo específico (subgrupo) de tipo `content-reference`:
 
 >[!NOTE]
 >
 >O campo `attachments` tem o tipo de dados `content-reference`, com vários formulários selecionados.
 
-```xml
+```graphql
 {
   bookmarkList {
     items {
@@ -1477,7 +1477,7 @@ Esta consulta interroga:
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 {
   bookmarkByPath(_path: "/content/dam/wknd/en/bookmarks/skitouring") {
     item {
@@ -1515,11 +1515,11 @@ Esta consulta interroga:
 Esta consulta interroga:
 
 * por um único Fragmento de conteúdo do tipo `article` em um caminho específico
-   * dentro disso, os dados relativos à variação: `variation1`
+   * nesse caminho, os dados relacionados à variação: `variation1`
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 {
   articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
     item {
@@ -1544,7 +1544,7 @@ Esta consulta interroga:
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 {
   articleList (variation: "variation1") {
     items {
@@ -1569,7 +1569,7 @@ Esta consulta interroga:
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 query {
   articleList(
     includeVariations: true  ){
@@ -1596,7 +1596,7 @@ Esta consulta interroga:
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 {
   articleList(
     includeVariations: true,
@@ -1625,7 +1625,7 @@ Esta consulta interroga:
 
 **Exemplo de consulta**
 
-```xml
+```graphql
 { 
   articleList (_locale: "fr") {
     items {
@@ -1652,7 +1652,7 @@ Os exemplos de consultas são baseados na seguinte estrutura, que usa:
 
 ### Exemplos de Modelos de fragmento de conteúdo (esquemas) {#sample-content-fragment-models-schemas}
 
-Para o exemplo de consultas, usaremos os seguintes Modelos de conteúdo e suas interrelações (referências ->):
+Para o exemplo de consultas, use os seguintes Modelos de conteúdo e suas interrelações (referências ->):
 
 * [Empresa](#model-company)
 -> [Pessoa](#model-person)

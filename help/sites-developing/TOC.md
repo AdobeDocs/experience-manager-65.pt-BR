@@ -8,9 +8,9 @@ breadcrumb-title: Guia de desenvolvimento
 user-guide-description: Este guia aborda como criar sua instância no AEM.
 feature: Developing
 role: Developer
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1296'
 ht-degree: 37%
 
 ---
@@ -142,6 +142,8 @@ ht-degree: 37%
       + [Gerenciamento de endpoints do GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
       + [Uso do GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [Consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md)
+      + [Otimização de consultas de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
+      + [Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Autenticação para consultas remotas de GraphQL do AEM em fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
       + [API GraphQL do AEM com fragmentos de conteúdo - Amostras de conteúdo e consultas](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 + SPA Desenvolvimento híbrido e AEM{#spas}
@@ -189,10 +191,10 @@ ht-degree: 37%
    + [Exemplos de tipos de módulo da interface do usuário do ContextHub](ch-samplemodules.md)
    + [Diagnósticos do ContextHub](ch-diagnostics.md)
    + [Desenvolvimento de conteúdo direcionado](target.md)
-   + [Referência da API Javascript do ContextHub](contexthub-api.md)
+   + [Referência da API JavaScript do ContextHub](contexthub-api.md)
    + ClientContext{#client-context}
       + [Contexto do cliente em detalhes](client-context.md)
-      + [API Javascript do Client Context](ccjsapi.md)
+      + [API JavaScript do Client Context](ccjsapi.md)
 + Extensão do AEM{#extending-aem}
    + [Extensão do AEM usando o Adobe Developer App Builder](app-builder.md)
    + [Personalização da criação de página](customizing-page-authoring-touch.md)
@@ -233,7 +235,7 @@ ht-degree: 37%
       + [Desenvolvimento de relatórios](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-reports.html)
 + Testes{#testing}
    + [Planejamento](planning.md)
-   + [Quais ambientes de teste serão necessários?](test-environments.md)
+   + [Quais ambientes de teste são necessários?](test-environments.md)
    + [Definição dos casos de teste](test-cases.md)
    + [Testes - quando e com quem?](when-who.md)
    + [Compilando seu Plano de Teste](test-plan.md)

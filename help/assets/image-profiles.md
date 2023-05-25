@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: bb0658ef33736587fbc191738d57cf586e5cba9d
+source-git-commit: 16ea73e9e75ddee25d7d348d4220a0e0f96a9ae8
 workflow-type: tm+mt
-source-wordcount: '3045'
+source-wordcount: '3033'
 ht-degree: 6%
 
 ---
@@ -45,23 +45,13 @@ Cada geração de Recorte inteligente criada requer processamento extra. Por exe
 **Diretrizes para definir o Recorte inteligente em um Perfil de imagem**
 Para manter o uso do Corte inteligente sob controle e otimizar o tempo de processamento e o armazenamento das lavouras, a Adobe recomenda as seguintes diretrizes e dicas:
 
-* Evite criar perfis de corte inteligente duplicados que tenham os mesmos valores de largura e altura.
+* Os ativos de imagem que terão um recorte inteligente aplicado a eles devem ter no mínimo 50 x 50 pixels ou mais.
+* Idealmente, tenha de 10 a 15 recortes inteligentes por imagem para otimizar as taxas de tela e o tempo de processamento.
 * Nomeie os cortes inteligentes com base nas dimensões do corte, não no uso final. Isso ajuda a otimizar para duplicatas em que uma única dimensão é usada em várias páginas.
 * Crie perfis de imagem ao nível da página/tipo de ativo para pastas e subpastas específicas em vez de um perfil de recorte inteligente comum que é aplicado a todas as pastas ou todos os ativos.
 * Um perfil de imagem aplicado a subpastas substitui um perfil de imagem aplicado à pasta.
-* Crie perfis de imagem para pastas e subpastas específicas em nível de página/tipo de ativo, em vez de um perfil de recorte inteligente comum aplicado a todas as pastas ou a todos os ativos.
-* Um Perfil de imagem que você aplica a subpastas substitui um Perfil de imagem que é aplicado à pasta.
-* Idealmente, tenha de 10 a 15 recortes inteligentes por imagem para otimizar as taxas de tela e o tempo de processamento.
-
-<!--
-* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger. CQDOC-20087
-* An Image Profile that contains duplicate smart crop dimensions is not permitted. CQDOC-20087
-* Duplicate named Image Profiles that have smart crop options set are not permitted. CQDOC-20087
-* Create page-wise/asset type-wise Image Profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
-* An Image Profile that you apply to subfolders overrides an Image Profile that is applied to the folder.
-* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time. -->
-<!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
-* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
+* Um Perfil de Imagem que contém dimensões de corte inteligente duplicadas não é permitido.
+* Perfis de imagem nomeados duplicados com opções de corte inteligente definidas não são permitidos.
 
 Você tem duas opções de corte de imagem para escolher: Corte de pixels ou Corte inteligente. Também é possível optar por automatizar a criação de amostras de cores e imagens.
 
