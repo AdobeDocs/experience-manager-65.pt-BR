@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: be028f116ccb83853cd46dc742438babd2207314
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
@@ -199,3 +199,7 @@ O novo idioma (finlandês) agora está disponível na caixa de diálogo de tag d
 >[!NOTE]
 >
 >O novo idioma precisa ser um dos idiomas reconhecidos pelo AEM, ou seja, precisa estar disponível como um nó abaixo `/libs/wcm/core/resources/languages`.
+
+>[!CAUTION]
+>
+>A instalação de um pacote de serviços redefine a propriedade languages do nó /content/cq:tags para o padrão. Portanto, é necessário adicioná-lo das propriedades antes da instalação.
