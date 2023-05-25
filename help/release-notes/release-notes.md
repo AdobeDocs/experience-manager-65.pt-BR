@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: f8af806bbb78623d5ba12379fc547a2cffc03841
+source-git-commit: 0bce05571590bc09e2b65f6bd6c1f387c71fba3a
 workflow-type: tm+mt
-source-wordcount: '2606'
+source-wordcount: '2620'
 ht-degree: 2%
 
 ---
@@ -70,6 +70,7 @@ Alguns dos principais recursos e melhorias nesta versão são os seguintes:
 * Não é possível acionar um fluxo de trabalho para vários Ativos selecionados que são encontrados usando filtros de pesquisa. (ASSETS-7689)
 * Quando você seleciona um Ativo (ou vários Ativos) nos resultados da pesquisa, a opção relacionar ou não relacionar não está visível. Mas a opção está disponível, caso contrário. (ASSETS-7679)
 * O painel Filtros de pesquisa é aberto somente uma vez após o logon e não é aberto se você sair da página de pesquisa e executar a pesquisa novamente. (ASSETS-7671)
+* A caixa de combinação de email não exibe a taxa de contraste apropriada ao compartilhar um link. (ASSETS-17349)
 
 <!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST 
 * When you select any file in a Collection and click `Download`, and then navigate to the email checkbox and expand it, regular text and email link is not recognizable due to background color. (ASSETS-17349) 
