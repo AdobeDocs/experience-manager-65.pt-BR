@@ -6,9 +6,9 @@ role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 8bd103e392bf5630cb2db654dedcfe4f926b2c9d
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '808'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 Esse recurso de writeback XMP no [!DNL Adobe Experience Manager Assets] O replica as alterações nos metadados nas representações do ativo original. Ao alterar os metadados de um ativo no Assets ou ao fazer upload do ativo, as alterações são inicialmente armazenadas no nó de metadados na hierarquia do ativo.
 
-O recurso de writeback XMP permite propagar as alterações de metadados em todas as representações ou representações específicas do ativo. O recurso grava somente as propriedades de metadados que usam `jcr` namespace, ou seja, uma propriedade chamada `dc:title` é gravado de volta, mas uma propriedade chamada `mytitle` não é.
+O recurso de writeback XMP permite propagar as alterações de metadados em todas as representações ou representações específicas do ativo. O recurso grava somente as propriedades de metadados que usam namespaces registrados, ou seja, uma propriedade chamada `dc:title` é gravado de volta, mas uma propriedade chamada `mytitle` não é.
 
 Considere um cenário em que você modifica a variável [!UICONTROL Título] propriedade do ativo intitulada `Classic Leather` para `Nylon`.
 
