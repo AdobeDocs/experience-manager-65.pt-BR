@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 7bfa9a9e143f199c42161b92dcba66ae441ad1fb
 workflow-type: tm+mt
-source-wordcount: '9970'
+source-wordcount: '9993'
 ht-degree: 4%
 
 ---
@@ -402,6 +402,9 @@ Para visualizar um ativo usando o teclado, siga estas etapas:
    ![Seletor de data e hora ou use as teclas do teclado no campo No horário para adicionar data e hora para a ativação do ativo](assets/datepicker.png)
 
    *Figura: use o seletor de datas para agendar a ativação de ativos.*
+
+1. Você precisa verificar **[!UICONTROL Horário ligado/desligado atingido]** opção se quiser atualizar os acionadores do agente de replicação nas propriedades de Metadados.
+   ![Configurações do agente](assets-dm/Agent-settings.png)
 
 1. Para desativar o ativo após uma duração específica, escolha a data/hora de desativação no seletor de datas ao lado da variável **[!UICONTROL Tempo desligado]** campo. A data de desativação deve ser posterior à data de ativação de um ativo. Depois que a variável [!UICONTROL Tempo desligado], um ativo e suas representações não estão disponíveis por meio do [!DNL Assets] Web ou por meio da API HTTP.
 
