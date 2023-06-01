@@ -2,9 +2,9 @@
 title: Instruções de instalação de patch do AEM Forms para o AEM Forms
 description: Instruções de instalação do pacote de serviços do AEM Forms para ambientes OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 01bf12ec46966ab2c78e2e825840230ea1bd3395
+source-git-commit: 57ead48ba3211075ae4b85801ba8cf6394582a9d
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1728'
 ht-degree: 9%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 9%
 
 | Produto | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Versão | 6.5.16.0 |
+| Versão | 6.5.17.0 |
 | Tipo | Versão do Service Pack |
-| Data | 2 de março de 2023 |
+| Data | 1 de junho de 2023 |
 | URL de download | [Versões mais recentes do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -240,4 +240,4 @@ Há dois métodos diferentes que você pode usar para instalar automaticamente o
 
 * Verifique os registros do monitor (error.log) após a conclusão da instalação para verificar se há atividade. Aguarde alguns minutos até que não haja atividade nos logs. Reinicie a instância do AEM.
 
-* Caso você obtenha uma **erro de serviço indisponível** após instalar o pacote de serviços AEM Forms 6.5.15.0, [instalar o fragmento e o pacote do servlet](/help/forms/using/aem-service-pack-installation-solution.md) para corrigir o erro.
+* Caso você obtenha uma **erro de serviço indisponível** após instalar o pacote de serviços AEM Forms 6.5.15.0 ou posterior, [instalar o fragmento e o pacote do servlet](/help/forms/using/aem-service-pack-installation-solution.md) para corrigir o erro.

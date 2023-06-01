@@ -10,9 +10,9 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
+source-git-commit: db4b432a95856302eb2e80b6386eee557d6afd17
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2090'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ A Integração de dados do AEM Forms permite configurar e conectar-se a diferent
 * Serviços da Web com base em SOAP
 * Serviços OData
 
-A integração de dados é compatível com os tipos de autenticação OAuth2.0, Autenticação básica e Chave de API prontos para uso e permite a implementação de autenticação personalizada para acessar serviços da Web. Enquanto os serviços RESTful, baseados em SOAP e OData são configurados no AEM Cloud Services, o JDBC para bancos de dados relacionais e conector para perfil de usuário AEM são configurados no console da Web AEM.
+A integração de dados é compatível com OAuth2.0([Código de autorização](https://oauth.net/2/grant-types/authorization-code/), [Credenciais do cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticação básica e Autenticação de chave de API tipos prontos para uso e permite a implementação de autenticação personalizada para acessar serviços da Web. Enquanto os serviços RESTful, baseados em SOAP e OData são configurados no AEM Cloud Services, o JDBC para bancos de dados relacionais e conector para perfil de usuário AEM são configurados no console da Web AEM.
 
 ## Configurar banco de dados relacional {#configure-relational-database}
 
@@ -132,7 +132,7 @@ Faça o seguinte para configurar os serviços RESTful:
       * Host: o nome do domínio ou endereço IP do host que serve a API REST. É um campo obrigatório.
       * Caminho base: o prefixo do URL para todos os caminhos da API. É um campo opcional.\
          Se necessário, edite os valores pré-preenchidos nesses campos.
-   * Selecione o tipo de autenticação — None, OAuth2.0, Basic Authentication, API Key, Custom Authentication ou Mutual Authentication — para acessar o serviço RESTful e fornecer os detalhes correspondentes para autenticação.
+   * Selecione o tipo de autenticação — None, OAuth2.0([Código de autorização](https://oauth.net/2/grant-types/authorization-code/), [Credenciais do cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticação básica, Chave de API, Autenticação personalizada ou Autenticação mútua — para acessar o serviço RESTful e, de acordo, fornecer detalhes para autenticação.
 
    Se você selecionar **[!UICONTROL Chave de API]** como o tipo de autenticação, especifique o valor da chave de API. A chave de API pode ser enviada como um cabeçalho de solicitação ou como um parâmetro de consulta. Selecione uma dessas opções na **[!UICONTROL Localização]** e especifique o nome do cabeçalho ou do parâmetro de consulta na lista suspensa **[!UICONTROL Nome do parâmetro]** em conformidade.
 
@@ -174,7 +174,7 @@ Os serviços da Web baseados em SOAP são descritos usando [Especificações da 
 
    * URL WSDL do serviço Web.
    * Terminal de serviço. Especifique um valor neste campo para substituir o ponto final de serviço mencionado no WSDL.
-   * Selecione o tipo de autenticação — None, OAuth2.0, Basic Authentication, Custom Authentication, X509 Token ou Mutual Authentication — para acessar o serviço SOAP e fornecer os detalhes de autenticação de acordo.
+   * Selecione o tipo de autenticação — None, OAuth2.0([Código de autorização](https://oauth.net/2/grant-types/authorization-code/), [Credenciais do cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticação Básica, Autenticação Personalizada, Token X509 ou Autenticação Mútua — para acessar o serviço SOAP e fornecer os detalhes de autenticação de acordo.
 
       Se você selecionar **[!UICONTROL X509 Token]** como o Authentication type, configure o certificado X509. Para obter mais informações, consulte [Configurar certificados](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 Especifique o alias do KeyStore para o certificado X509 na **[!UICONTROL Alias da chave]** campo. Especifique o tempo, em segundos, até que a solicitação de autenticação permaneça válida, no **[!UICONTROL Tempo de vida]** campo. Opcionalmente, selecione para assinar o corpo da mensagem ou o cabeçalho do carimbo de data e hora, ou ambos.
@@ -200,7 +200,7 @@ Um serviço OData é identificado por sua URL raiz de serviço. Para configurar 
 1. Especifique os seguintes detalhes para o serviço OData:
 
    * URL da Raiz de Serviço do serviço OData a ser configurado.
-   * Selecione o tipo de autenticação — None, OAuth2.0, Basic Authentication ou Custom Authentication — para acessar o serviço OData e fornecer os detalhes de autenticação de acordo.
+   * Selecione o tipo de autenticação — None, OAuth2.0([Código de autorização](https://oauth.net/2/grant-types/authorization-code/), [Credenciais do cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticação Básica ou Autenticação Personalizada — para acessar o serviço OData e fornecer os detalhes de autenticação de acordo.
 
    >[!NOTE]
    >
@@ -210,7 +210,7 @@ Um serviço OData é identificado por sua URL raiz de serviço. Para configurar 
 
 ## Autenticação mútua baseada em certificado para serviços da web RESTful e SOAP {#mutual-authentication}
 
-Quando você habilita a autenticação mútua para o modelo de dados de formulário, tanto a fonte de dados quanto o Servidor AEM executando o modelo de dados de formulário autenticam a identidade um do outro antes de compartilhar quaisquer dados. Você pode usar autenticação mútua para conexões REST e SOAP (fontes de dados). Para configurar a autenticação mútua para um modelo de dados de formulário no seu ambiente do AEM Forms:
+Quando você habilita a autenticação mútua para o modelo de dados de formulário, a fonte de dados e o Servidor AEM executando o modelo de dados de formulário autenticam a identidade um do outro antes de compartilhar quaisquer dados. Você pode usar autenticação mútua para conexões REST e SOAP (fontes de dados). Para configurar a autenticação mútua para um modelo de dados de formulário no seu ambiente do AEM Forms:
 
 1. Fazer upload da chave privada (certificado) para [!DNL AEM Forms] servidor. Para fazer upload da chave privada:
    1. Faça logon no [!DNL AEM Forms] servidor como administrador.
