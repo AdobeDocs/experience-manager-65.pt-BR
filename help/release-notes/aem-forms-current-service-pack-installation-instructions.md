@@ -2,9 +2,9 @@
 title: Instruções de instalação de patch do AEM Forms para o AEM Forms
 description: Instruções de instalação do pacote de serviços do AEM Forms para ambientes OSGi e JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 57ead48ba3211075ae4b85801ba8cf6394582a9d
+source-git-commit: a54d75ba653f469495203fa4643dbd78dbd7c38f
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '1727'
 ht-degree: 9%
 
 ---
@@ -33,7 +33,7 @@ O Adobe Experience Manager (AEM) Forms Service Pack inclui recursos novos e atua
 
 >[!NOTE]
 >
-> O Adobe lança um instalador completo a cada 6º service pack. O AEM 6.5 Forms Service Pack 12 (6.5.12.0) no JEE foi o último instalador completo. O instalador completo oferece suporte para novas plataformas, enquanto o instalador regular de pacotes de serviços inclui novos recursos, correções de erros e melhorias gerais. Se você estiver executando uma nova instalação ou planejando usar o software mais recente para o seu Forms AEM 6.5 no ambiente JEE, o Adobe AEM recomenda usar o instalador completo do 6.5.12.0 Forms AEM no JEE, lançado em 03 de março de 2022, em vez do instalador do Forms 6.5, lançado em 08 de abril de 2019. Depois de usar o instalador completo, instale o pacote de serviços mais recente.
+> O Adobe lança um instalador completo a cada sexto service pack. O AEM 6.5 Forms Service Pack 12 (6.5.12.0) no JEE foi o último instalador completo. O instalador completo oferece suporte para novas plataformas, enquanto o instalador regular de pacotes de serviços inclui novos recursos, correções de erros e melhorias gerais. Se você estiver executando uma nova instalação ou planejando usar o software mais recente para o seu Forms AEM 6.5 no ambiente JEE, o Adobe AEM recomenda usar o instalador completo do 6.5.12.0 Forms AEM no JEE, lançado em 03 de março de 2022, em vez do instalador do Forms 6.5, lançado em 08 de abril de 2019. Depois de usar o instalador completo, instale o pacote de serviços mais recente.
 
 ## Baixar e instalar o Service Pack em um formulário AEM no ambiente JEE {#download-and-install-for-jee-service-pack}
 
@@ -112,11 +112,11 @@ Navegue até o diretório apropriado e, em um shell e digite
 
 +++
 
-+++4. Instalar o fragmento do servlet
++++4. Instalar o fragmento do servlet (AEM Service Pack 6.5.14.0 ou anterior)
 
 >[!NOTE]
 >
-> * No caso, você está atualizando do **AEM Service Pack 6.5.15.0**, não é necessário instalar o **fragmento de servlet**. Se estiver atualizando de uma versão anterior à **AEM Service Pack 6.5.15.0**, é obrigatório instalar o **fragmento de servlet**.
+> * Se você estiver atualizando de **AEM Service Pack 6.5.15.0**, a instalação do **fragmento de servlet** não é obrigatório. Para versões **AEM Service Pack 6.5.14.0** ou anterior, é obrigatório instalar o fragmento de servlet.
 > * É obrigatório instalar o **fragmento de servlet** para todos os servidores de aplicativos, exceto os executados em **JBoss® EAP 7.4.0**.
 
 
