@@ -6,7 +6,7 @@ role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: d6587ef59332d6b4d419c7d7b6e29930f366d171
 workflow-type: tm+mt
 source-wordcount: '5499'
 ht-degree: 8%
@@ -524,9 +524,9 @@ Ao fazer upload de um novo vídeo para uma pasta que tenha a codificação de v�
    >
    >Pode levar muito tempo para que as mensagens de erro/falha sejam gravadas devido a várias configurações de fluxo de trabalho no **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por exemplo:
    >
-   >    * Configuração da fila de trabalhos do Apache Sling
-   >    * Manipulador de trabalho do processo externo do fluxo de trabalho do Adobe Granite
-   >    * Fila de tempo limite de fluxo de trabalho do Granite
+   >* Configuração da fila de trabalhos do Apache Sling
+   >* Manipulador de trabalho do processo externo do fluxo de trabalho do Adobe Granite
+   >* Fila de tempo limite de fluxo de trabalho do Granite
 
    >
    >Você pode ajustar a variável **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** nessas configurações.
@@ -557,13 +557,10 @@ Ao fazer upload de um novo vídeo para uma pasta que tenha a codificação de v�
    >
    >Pode levar muito tempo para que a mensagem de erro seja gravada devido a várias configurações de fluxo de trabalho **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por exemplo:
    >
-   >
-   >
-   >    * Configuração da fila de trabalhos do Apache Sling
-   >    * Manipulador de trabalho do processo externo do fluxo de trabalho do Adobe Granite
-   >    * Fila de tempo limite de fluxo de trabalho do Granite
+   >* Configuração da fila de trabalhos do Apache Sling
+   >* Manipulador de trabalho do processo externo do fluxo de trabalho do Adobe Granite
+   >* Fila de tempo limite de fluxo de trabalho do Granite
 
-   >
    >
    >Você pode ajustar a variável **[!UICONTROL tentativas]**, **[!UICONTROL atraso de repetição]**, e **[!UICONTROL timeout]** nessas configurações.
 
