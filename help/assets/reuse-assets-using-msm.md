@@ -7,9 +7,9 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 56632bd6ce9fc90f0bc61f903f84f7ea8bbcd12d
 workflow-type: tm+mt
-source-wordcount: '3389'
+source-wordcount: '3288'
 ht-degree: 10%
 
 ---
@@ -287,22 +287,6 @@ Se você tiver vários ativos em uma pasta de live copy, iniciar ações em cada
    ![Atualize facilmente muitos ativos em pastas de live copy a partir do console Visão geral da Live Copy](assets/livecopyconsole_update_many_assets.png)
 
    *Figura: atualize facilmente muitos ativos nas pastas de live copy do [!UICONTROL Visão geral da Live Copy] console.*
-
-## Estender o MSM para [!DNL Assets] {#extend-api}
-
-[!DNL Experience Manager] O permite estender a funcionalidade usando as APIs Java do MSM. Para [!DNL Assets], a extensão funciona da mesma maneira que funciona com o MSM para [!DNL Sites]. Para obter detalhes, consulte [Extensão do MSM](/help/sites-developing/extending-msm.md) e o seguinte para obter informações sobre tarefas específicas:
-
-* [Visão geral das APIs](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
-* [Criar uma ação de sincronização](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
-* [Criar uma configuração de implantação](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
-* [Criar e usar uma classe simples do LiveActionFactory](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
-
->[!NOTE]
->
->* Blueprint no MSM para [!DNL Sites] é chamado de origem da Live Copy no MSM para [!DNL Assets].
->* A remoção da etapa de capítulos no assistente de criação de site não é suportada no MSM para [!DNL Assets].
->* A configuração de bloqueios de MSM, nas propriedades da página (interface habilitada para toque), não é compatível com o MSM para [!DNL Assets].
-
 
 ## Impacto das tarefas de gerenciamento de ativos nas live copies {#manage-assets}
 
