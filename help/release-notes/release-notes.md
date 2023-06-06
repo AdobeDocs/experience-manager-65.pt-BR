@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 7f152c3b7b80c78bb73b45e83cc566e9bbb0c393
+source-git-commit: 206242583fcbf651dbc6234dc01be5140d0cfca7
 workflow-type: tm+mt
-source-wordcount: '3494'
+source-wordcount: '3537'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Alguns dos principais recursos e melhorias nesta versão são os seguintes:
    Não é necessário navegar até o local do ativo e visualizar suas propriedades para executar essas operações.
 * **Dynamic Media _Instantâneo_**: experimente com imagens de teste ou URLs Dynamic Media para ver a saída de diferentes modificadores de imagem e otimizações de Imagem inteligente para tamanho de arquivo (com entrega de WebP e AVIF), largura de banda da rede e Proporção de pixels do dispositivo. Consulte [Instantâneo do Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
 * **Transmissão DASH com o Dynamic Media** - Novo protocolo (DASH - Dynamic Adaptive Streaming over HTTP) iniciado para transmissão adaptável na entrega de vídeo do Dynamic Media (com CMAF ativado). Disponível agora para todas as regiões, [habilitado por meio de um tíquete de suporte](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
-
+* **Integração do AEM Sites e dos fragmentos de conteúdo ao AEM Assets Next-Generation Dynamic Media**: os usuários do AEM Assets as a Cloud Service Next-Generation Dynamic Media agora podem usar esses ativos hospedados em nuvem para criação e entrega com instâncias de serviços no local ou gerenciados do AEM Sites 6.5.
 * **Integração do Adaptive Forms nas páginas do site AEM**: crie experiências de inscrição digital de maneira contínua aproveitando componentes adaptáveis do Forms no editor do AEM Sites usando: - Contêiner adaptável do Forms e Forms adaptável - Componentes incorporados (v2).
 * **Suporte ao reCAPTCHA Enterprise no AEM Forms**: adição de suporte ao reCAPTCHA Enterprise no AEM Forms, fornecendo proteção aprimorada contra atividades fraudulentas e spam, além do suporte existente ao Google reCAPTCHA v2.
 * **Suporte ao Adobe Acrobat Sign para o governo com AEM Forms**: permita a integração segura e compatível do AEM Forms com o Adobe Sign para o governo (compatível com FedRAMP).
