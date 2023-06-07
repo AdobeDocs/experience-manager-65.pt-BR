@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 9bf19cd21db185229d565d684dbac9e44f236532
+source-git-commit: 2c9337af99811d7b58712e1d0def7b5af5661c11
 workflow-type: tm+mt
-source-wordcount: '3586'
+source-wordcount: '3567'
 ht-degree: 1%
 
 ---
@@ -104,9 +104,8 @@ Alguns dos principais recursos e melhorias nesta versão são os seguintes:
 
 ## [!DNL Forms]{#forms-6517}
 
-* Quando um usuário atualiza para o Experience Manager 6.5.16.0 Service Pack, o arquivo anexado não é recuperado corretamente. (FORMS-8906)
-* Depois de atualizar para o Experience Manager 6.5.15.0 Service Pack, os formulários de HTML 5 não estão funcionando ou sendo carregados corretamente no navegador Edge com modo de compatibilidade com o IE. (FORMS-8526, FORMS-8523)
-* Quando um usuário aplica o Experience Manager 6.5.16.0 Service Pack, o editor de regras falha ao abrir. (FORMS-8290)
+* Depois de atualizar para o AEM 6.5.15.0 Service Pack, os formulários HTML5 não estão funcionando ou sendo carregados corretamente no navegador Edge com modo de compatibilidade com o IE. (FORMS-8526, FORMS-8523)
+* Quando um usuário aplica o AEM 6.5.16.0 Service Pack, o editor de regras falha ao abrir. (FORMS-8290)
 * Quando o número máximo de dígitos da validação é aplicado a um componente Caixa numérica, ela falha. (FORMS-7938)
 * Ao criar instruções de comunicação interativa, o componente de gráfico no PDF não é gerado corretamente. (FORMS-7827, FORMS-8297)
 * A coleta de lixo do Java™ não pode limpar o heap de geração antiga em um servidor OSGi do Experience Manager Forms. (FORMS-8207)
