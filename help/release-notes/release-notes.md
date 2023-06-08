@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 2c9337af99811d7b58712e1d0def7b5af5661c11
+source-git-commit: 36edc2507d9acd7d5f94e433a654ccc1647bb58a
 workflow-type: tm+mt
-source-wordcount: '3567'
+source-wordcount: '3568'
 ht-degree: 1%
 
 ---
@@ -187,7 +187,7 @@ Novas pastas de `cache` e `diff-cache` são criadas automaticamente e você não
 * As cópias de idioma de uma página não estavam sendo atualizadas conforme esperado. (SITES-11191)
 * Abrir chamada de páginas que não são da campanha `targeteditor.html` desnecessariamente. Remova o `targeteditor` chame quando não for necessário. (SITES-12469)
 * As Live Copies não podem ser criadas para páginas com anotações. (SITES-12154)
-* A implantação de páginas está funcionando no Experience Manager 6.5.16. (SITES-12008)
+* A implantação de páginas não está funcionando no Experience Manager 6.5.16. (SITES-12008)
 * Memória insuficiente; alta atividade de coleta de lixo devido a `NotificationManagerImpl`. `NotificationManager` atualização do pacote para o Experience Manager 6.5. (SITES-11440)
 * Correção dos testes de TI do WCM que estavam bloqueando o service pack 17. (SITES-13089)
 * Falha ao recuperar referências de sites no servlet. (SITES-10901)
