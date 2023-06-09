@@ -7,10 +7,10 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 7bfa9a9e143f199c42161b92dcba66ae441ad1fb
+source-git-commit: 0afd721ff02f2c9abeed40c4b8f4fdf169523c35
 workflow-type: tm+mt
-source-wordcount: '9993'
-ht-degree: 4%
+source-wordcount: '10068'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,6 @@ Ao organizar uma coleção de ativos, por exemplo, todas as `Nature` imagens, é
 >
 >* Compartilhamento de um [!DNL Assets] pasta do tipo `sling:OrderedFolder` não é compatível ao compartilhar no Experience Cloud. Se quiser compartilhar uma pasta, não selecione [!UICONTROL Encomendado] ao criar uma pasta.
 >* [!DNL Experience Manager] não permite usar `subassets` palavra como o nome de uma pasta. É uma palavra-chave reservada para um nó que contém subativos para ativos compostos.
-
 
 1. Navegue até o local na pasta de ativos digitais em que deseja criar uma pasta. No menu, clique em **[!UICONTROL Criar]**. Selecionar **[!UICONTROL Nova pasta]**.
 1. No **[!UICONTROL Título]** , forneça um nome de pasta. Por padrão, o DAM usa o título fornecido como o nome da pasta. Depois que a pasta for criada, você poderá substituir o padrão e especificar outro nome de pasta.
@@ -58,6 +57,12 @@ Você pode fazer upload de vários tipos de ativos (incluindo imagens, arquivos 
 >[!NOTE]
 >
 >No modo Dynamic Media - Scene7, o tamanho padrão do arquivo de upload de ativos é de 2 GB ou menos. Para configurar o upload de ativos maiores que 2 GB até 15 GB, consulte [(Opcional) Configure o modo Dynamic Media - Scene7 para carregar ativos maiores que 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+
+>[!IMPORTANT]
+>
+>Os ativos que você carrega no Experience Manager que têm um nome de arquivo maior que 100 caracteres têm um nome abreviado quando são usados no Dynamic Media.
+>
+>Os primeiros 100 caracteres no nome do arquivo são usados como estão; todos os caracteres restantes são substituídos por uma sequência alfanumérica. Esse método de renomeação garante um nome exclusivo quando o ativo é usado no Dynamic Media. Também se destina a acomodar o tamanho máximo permitido para o nome do arquivo do ativo no Dynamic Media.
 
 Você pode optar por fazer upload de ativos para pastas com ou sem um perfil de processamento atribuído a eles.
 
@@ -104,7 +109,6 @@ Para configurar a tarefa de limpeza para os trabalhos de upload de partes não c
 >* Para garantir que o carregamento de partes esteja habilitado para arquivos com tamanhos que possam causar expiração de credencial enquanto o carregamento estiver em andamento.
 >
 >* Para garantir que cada parte seja concluída antes que a credencial expire.
-
 
 Se você fizer upload de um ativo com o mesmo nome de um ativo que já está disponível no local em que você está fazendo upload do ativo, uma caixa de diálogo de aviso será exibida.
 
@@ -198,22 +202,22 @@ Para cancelar um trabalho de upload em andamento, clique em **[!UICONTROL Cancel
 
 | Opção de upload | Subopção | Descrição |
 |---|---|---|
-| Nome da tarefa |  | O nome padrão pré-preenchido no campo de texto inclui a parte inserida pelo usuário do nome e o carimbo de data e hora. Você pode usar o nome padrão ou inserir um nome de sua própria criação para esse trabalho de upload. <br>O job e outros jobs de upload e publicação são registrados na página Jobs, onde você pode verificar o status dos jobs. |
-| Publicar após o upload |  | Publica automaticamente os ativos que você faz upload. |
-| Substituir em qualquer pasta, mesmo nome de ativo base independentemente da extensão |  | Selecione essa opção se desejar que os arquivos dos quais você fez upload substituam arquivos existentes com os mesmos nomes. O nome dessa opção pode ser diferente, dependendo das configurações em **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]** > **[!UICONTROL Carregar no aplicativo]** > **[!UICONTROL Substituir imagens]**. |
-| Descompactar arquivos zip ou tar ao fazer upload |  |  |
-| Opções de trabalho |  | Clique em **[!UICONTROL Opções de trabalho]** para que você possa abrir o [!UICONTROL Fazer upload das opções de trabalho] e escolha as opções que afetam todo o processo de upload. Essas opções são as mesmas para todos os tipos de arquivos.<br>Você pode escolher opções default para fazer upload de arquivos começando na página Definições Gerais da Aplicação. Para abrir esta página, escolha **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]**. Selecione o **[!UICONTROL Opções de upload padrão]** opção para abrir a variável [!UICONTROL Fazer upload das opções de trabalho] caixa de diálogo. |
-|  | Quando | Selecione Ocasional ou Recorrente. Para definir um trabalho recorrente, escolha uma opção Repetir — Diariamente, Semanalmente, Mensalmente ou Personalizado — para especificar quando você deseja que o trabalho de upload do FTP se repita. Em seguida, especifique as opções de agendamento, conforme necessário. |
-|  | Incluir subpastas | Fazer upload de todas as subpastas contidas na pasta que você deseja fazer upload. Os nomes da pasta e suas subpastas que você fez upload são inseridos automaticamente em [!DNL Experience Manager Assets]. |
-|  | Opções de corte | Para recortar manualmente das laterais de uma imagem, selecione o menu Recortar e escolha Manual. Em seguida, insira o número de pixels a serem cortados de qualquer lado ou de cada lado da imagem. O quanto da imagem é cortada depende da configuração ppi (pixels por polegada) no arquivo de imagem. Por exemplo, se a imagem exibir 150 ppi e você inserir 75 nas caixas de texto Superior, Direito, Inferior e Esquerdo, uma meia polegada será cortada de cada lado.<br> Para recortar automaticamente pixels de espaço em branco de uma imagem, abra o menu Recortar, escolha Manual e insira medidas de pixel nos campos Superior, Direito, Inferior e Esquerdo para recortar das laterais. Você também pode escolher Aparar no menu Cortar e escolher estas opções:<br> **Aparar Com Base Em** <ul><li>**Cor** - Escolha a opção Cor. Em seguida, selecione o menu Canto e escolha o canto da imagem com a cor que melhor representa a cor do espaço em branco que você deseja cortar.</li><li>**Transparência** - Escolha a opção Transparência.<br> **Tolerância** - Arraste o controle deslizante para especificar uma tolerância de 0 a 1.Para cortar com base na cor, especifique 0 para cortar pixels somente se eles corresponderem exatamente à cor selecionada no canto da imagem. Números próximos a 1 permitem mais diferença de cor.<br>Para cortar com base na transparência, especifique 0 para cortar os pixels somente se eles forem transparentes. Números mais próximos de 1 permitem mais transparência.</li></ul><br>Essas opções de corte não são destrutivas. |
-|  | Opções de perfil de cores | Escolha uma conversão de cores ao criar arquivos otimizados usados para entrega:<ul><li>Preservação de cor padrão: mantém as cores da imagem de origem sempre que as imagens contêm informações de espaço de cores; não há conversão de cores. Quase todas as imagens atuais têm o perfil de cores apropriado já incorporado. No entanto, se uma imagem de origem CMYK não contiver um perfil de cores incorporado, as cores serão convertidas no espaço de cores sRGB (azul vermelho verde padrão). sRGB é o espaço de cores recomendado para exibir imagens em páginas da Web.</li><li>Manter espaço de cor original: retém as cores originais sem nenhuma conversão de cores no ponto. Para imagens sem um perfil de cores incorporado, qualquer conversão de cores é feita usando os perfis de cores padrão definidos nas configurações de Publicação. Os perfis de cores podem não estar alinhados com a cor nos arquivos criados com essa opção. Portanto, é recomendável usar a opção Preservação de cor padrão.</li><li>Personalizar De > Para<br> Abre menus para que você possa escolher um espaço de cores Converter de e Converter em. Essa opção avançada substitui qualquer informação de cor incorporada no arquivo de origem. Selecione essa opção quando todas as imagens que você está enviando contiverem dados de perfil de cores incorretos ou ausentes.</li></ul> |
-|  | Opções de edição de imagem | É possível preservar as máscaras de recorte nas imagens e escolher um perfil de cores.<br> Consulte [Configuração de opções para edições de imagem no upload](#setting-image-editing-options-at-upload). |
-|  | Opções de Postscript | É possível rasterizar arquivos de PostScript®, cortar arquivos, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cores.<br> Consulte [Definição de opções de upload de PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
-|  | Opções do Photoshop | É possível criar modelos a partir de arquivos Adobe® Photoshop®, manter camadas, especificar como as camadas são nomeadas, extrair texto e especificar como as imagens são ancoradas em modelos.<br> Os modelos não são compatíveis com o [!DNL Experience Manager].<br> Consulte [Configuração das opções de upload do Photoshop](#setting-photoshop-upload-options). |
-|  | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras e links de pesquisa, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cores.<br>eCatalogs não são compatíveis no [!DNL Experience Manager]. <br> Consulte [Configuração das opções de upload de PDF](#setting-pdf-upload-options).<br>**Nota**: o número máximo de páginas para um PDF a ser considerado para extração é 5.000 para novos uploads. Esse limite será alterado para 100 páginas (para todos os PDF) em 31 de dezembro de 2022. Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md). |
-|  | Opções do Illustrator | É possível rasterizar arquivos Adobe Illustrator®, manter planos de fundo transparentes, escolher uma resolução e um espaço de cores.<br> Consulte [Definição de opções de upload de PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
-|  | Opções de EVideo | É possível transcodificar um arquivo de vídeo escolhendo uma Predefinição de vídeo.<br> Consulte [Configuração das opções de upload de eVideo](#setting-evideo-upload-options). |
-|  | Predefinições de conjunto de lotes | Para criar um Conjunto de imagens ou um Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição. Crie as predefinições na página Configuração do aplicativo/Predefinições de conjunto de lotes do Dynamic Media Classic.<br> Consulte [Configuração de predefinições de conjunto de lotes para gerar automaticamente conjuntos de imagens e conjuntos de rotação](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) para saber mais sobre criação de predefinições de conjunto de lotes.<br> Consulte [Definir predefinições de conjunto de lotes no upload](#setting-batch-set-presets-at-upload). |
+| Nome da tarefa | | O nome padrão pré-preenchido no campo de texto inclui a parte inserida pelo usuário do nome e o carimbo de data e hora. Você pode usar o nome padrão ou inserir um nome de sua própria criação para esse trabalho de upload. <br>O job e outros jobs de upload e publicação são registrados na página Jobs, onde você pode verificar o status dos jobs. |
+| Publicar após o upload | | Publica automaticamente os ativos que você faz upload. |
+| Substituir em qualquer pasta, mesmo nome de ativo base independentemente da extensão | | Selecione essa opção se desejar que os arquivos dos quais você fez upload substituam arquivos existentes com os mesmos nomes. O nome dessa opção pode ser diferente, dependendo das configurações em **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]** > **[!UICONTROL Carregar no aplicativo]** > **[!UICONTROL Substituir imagens]**. |
+| Descompactar arquivos zip ou tar ao fazer upload | | |
+| Opções de trabalho | | Clique em **[!UICONTROL Opções de trabalho]** para que você possa abrir o [!UICONTROL Fazer upload das opções de trabalho] e escolha as opções que afetam todo o processo de upload. Essas opções são as mesmas para todos os tipos de arquivos.<br>Você pode escolher opções default para fazer upload de arquivos começando na página Definições Gerais da Aplicação. Para abrir esta página, escolha **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]**. Selecione o **[!UICONTROL Opções de upload padrão]** opção para abrir a variável [!UICONTROL Fazer upload das opções de trabalho] caixa de diálogo. |
+| | Quando | Selecione Ocasional ou Recorrente. Para definir um trabalho recorrente, escolha uma opção Repetir — Diariamente, Semanalmente, Mensalmente ou Personalizado — para especificar quando você deseja que o trabalho de upload do FTP se repita. Em seguida, especifique as opções de agendamento, conforme necessário. |
+| | Incluir subpastas | Faça upload de todas as subpastas contidas na pasta que você deseja fazer upload. Os nomes da pasta e suas subpastas que você fez upload são inseridos automaticamente em [!DNL Experience Manager Assets]. |
+| | Opções de corte | Para recortar manualmente das laterais de uma imagem, selecione o menu Recortar e escolha Manual. Em seguida, insira o número de pixels a serem cortados de qualquer lado ou de cada lado da imagem. O quanto da imagem é cortada depende da configuração ppi (pixels por polegada) no arquivo de imagem. Por exemplo, se a imagem exibir 150 ppi e você inserir 75 nas caixas de texto Superior, Direito, Inferior e Esquerdo, uma meia polegada será cortada de cada lado.<br> Para recortar automaticamente pixels de espaço em branco de uma imagem, abra o menu Recortar, escolha Manual e insira medidas de pixel nos campos Superior, Direito, Inferior e Esquerdo para recortar das laterais. Você também pode escolher Aparar no menu Cortar e escolher estas opções:<br> **Aparar Com Base Em** <ul><li>**Cor** - Escolha a opção Cor. Em seguida, selecione o menu Canto e escolha o canto da imagem com a cor que melhor representa a cor do espaço em branco que você deseja cortar.</li><li>**Transparência** - Escolha a opção Transparência.<br> **Tolerância** - Arraste o controle deslizante para especificar uma tolerância de 0 a 1.Para cortar com base na cor, especifique 0 para cortar pixels somente se eles corresponderem exatamente à cor selecionada no canto da imagem. Números próximos a 1 permitem mais diferença de cor.<br>Para cortar com base na transparência, especifique 0 para cortar os pixels somente se eles forem transparentes. Números mais próximos de 1 permitem mais transparência.</li></ul><br>Essas opções de corte não são destrutivas. |
+| | Opções de perfil de cores | Escolha uma conversão de cores ao criar arquivos otimizados usados para entrega:<ul><li>Preservação de cor padrão: mantém as cores da imagem de origem sempre que as imagens contêm informações de espaço de cores; não há conversão de cores. Quase todas as imagens atuais têm o perfil de cores apropriado já incorporado. No entanto, se uma imagem de origem CMYK não contiver um perfil de cores incorporado, as cores serão convertidas no espaço de cores sRGB (azul vermelho verde padrão). sRGB é o espaço de cores recomendado para exibir imagens em páginas da Web.</li><li>Manter espaço de cor original: retém as cores originais sem nenhuma conversão de cores no ponto. Para imagens sem um perfil de cores incorporado, qualquer conversão de cores é feita usando os perfis de cores padrão definidos nas configurações de Publicação. Os perfis de cores podem não estar alinhados com a cor nos arquivos criados com essa opção. Portanto, é recomendável usar a opção Preservação de cor padrão.</li><li>Personalizar De > Para<br> Abre menus para que você possa escolher um espaço de cores Converter de e Converter em. Essa opção avançada substitui qualquer informação de cor incorporada no arquivo de origem. Selecione essa opção quando todas as imagens que você está enviando contiverem dados de perfil de cores incorretos ou ausentes.</li></ul> |
+| | Opções de edição de imagem | É possível preservar as máscaras de recorte nas imagens e escolher um perfil de cores.<br> Consulte [Configuração de opções para edições de imagem no upload](#setting-image-editing-options-at-upload). |
+| | Opções de Postscript | É possível rasterizar arquivos de PostScript®, cortar arquivos, manter planos de fundo transparentes, escolher uma resolução e escolher um espaço de cores.<br> Consulte [Definição de opções de upload de PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Opções do Photoshop | É possível criar modelos a partir de arquivos Adobe® Photoshop®, manter camadas, especificar como as camadas são nomeadas, extrair texto e especificar como as imagens são ancoradas em modelos.<br> Os modelos não são compatíveis com o [!DNL Experience Manager].<br> Consulte [Configuração das opções de upload do Photoshop](#setting-photoshop-upload-options). |
+| | Opções de PDF | Você pode rasterizar os arquivos, extrair palavras e links de pesquisa, gerar automaticamente um eCatalog, definir a resolução e escolher um espaço de cores.<br>eCatalogs não são compatíveis no [!DNL Experience Manager]. <br> Consulte [Configuração das opções de upload de PDF](#setting-pdf-upload-options).<br>**Nota**: o número máximo de páginas para um PDF a ser considerado para extração é 5.000 para novos uploads. Esse limite será alterado para 100 páginas (para todos os PDF) em 31 de dezembro de 2022. Consulte também [Limitações do Dynamic Media](/help/assets/limitations.md). |
+| | Opções do Illustrator | É possível rasterizar arquivos Adobe Illustrator®, manter planos de fundo transparentes, escolher uma resolução e um espaço de cores.<br> Consulte [Definição de opções de upload de PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Opções de EVideo | É possível transcodificar um arquivo de vídeo escolhendo uma Predefinição de vídeo.<br> Consulte [Configuração das opções de upload de eVideo](#setting-evideo-upload-options). |
+| | Predefinições de conjunto de lotes | Para criar um Conjunto de imagens ou um Conjunto de rotação a partir dos arquivos carregados, clique na coluna Ativo da predefinição que deseja usar. É possível selecionar mais de uma predefinição. Crie as predefinições na página Configuração do aplicativo/Predefinições de conjunto de lotes do Dynamic Media Classic.<br> Consulte [Configuração de predefinições de conjunto de lotes para gerar automaticamente conjuntos de imagens e conjuntos de rotação](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) para saber mais sobre criação de predefinições de conjunto de lotes.<br> Consulte [Definir predefinições de conjunto de lotes no upload](#setting-batch-set-presets-at-upload). |
 
 #### Definir opções para edições de imagem no upload {#setting-image-editing-options-at-upload}
 
@@ -247,14 +251,14 @@ Ao fazer upload de arquivos de imagem PostScript (EPS) ou Illustrator (AI), voc�
 
 | Opção | Subopção | Descrição |
 |---|---|---|
-| Processando |  | Escolher **[!UICONTROL Rasterizar]** para converter gráficos vetoriais no arquivo para o formato bitmap. |
-| Manter plano de fundo transparente na imagem renderizada |  | Mantenha a transparência de fundo do arquivo. |
-| Resolução |  | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo. |
-| Espaço de cor |  | Selecione o menu Espaço de cor e escolha entre as seguintes opções de espaço de cor: |
-|  | Detectar automaticamente | Mantém o espaço de cores do arquivo. |
-|  | Forçar como RGB | Converte para o espaço de cores do RGB. |
-|  | Forçar como CMYK | Converte para o espaço de cores CMYK. |
-|  | Forçar como escala de cinza | Converte para o espaço de cor de tons de cinza. |
+| Processando | | Escolher **[!UICONTROL Rasterizar]** para converter gráficos vetoriais no arquivo para o formato bitmap. |
+| Manter plano de fundo transparente na imagem renderizada | | Mantenha a transparência de fundo do arquivo. |
+| Resolução | | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo. |
+| Espaço de cor | | Selecione o menu Espaço de cor e escolha entre as seguintes opções de espaço de cor: |
+| | Detectar automaticamente | Mantém o espaço de cores do arquivo. |
+| | Forçar como RGB | Converte para o espaço de cores do RGB. |
+| | Forçar como CMYK | Converte para o espaço de cores CMYK. |
+| | Forçar como escala de cinza | Converte para o espaço de cor de tons de cinza. |
 
 #### Definir opções de upload do Photoshop {#setting-photoshop-upload-options}
 
@@ -270,15 +274,15 @@ Use o [!UICONTROL Opções de corte] e [!UICONTROL Opções de perfil de cores],
 
 | Opção | Subopção | Descrição |
 |---|---|---|
-| Manter camadas |  | Extrai as camadas na PSD, se houver, para ativos individuais. As camadas de ativos permanecem associadas ao PSD. Para exibi-los, abra o arquivo PSD na exibição de Detalhes e selecione o painel de camadas. |
-| Criar modelo |  | Cria um modelo a partir das camadas no arquivo PSD. |
-| Extrair texto |  | Extrai o texto para que os usuários possam pesquisar texto em um Visualizador. |
-| Estender camadas ao tamanho do plano de fundo |  | Estende o tamanho das camadas de imagem extraídas para o tamanho da camada de plano de fundo. |
-| Nomeação de camada |  | As camadas no arquivo PSD são carregadas como imagens separadas. |
-|  | Nome da camada | Nomeia as imagens com base nos nomes das camadas no arquivo PSD. Por exemplo, uma camada chamada Etiqueta de preço no arquivo de PSD original se torna uma imagem chamada Etiqueta de preço. No entanto, se os nomes das camadas no arquivo PSD forem nomes de camadas padrão do Photoshop (Plano de fundo, Camada 1, Camada 2 e assim por diante), as imagens serão nomeadas após seus números de camada no arquivo PSD. Eles não são nomeados com base nos nomes de camada padrão. |
-|  | Photoshop e Número de Camada | Nomeia as imagens de acordo com seus números de camada no arquivo PSD, ignorando os nomes das camadas originais. As imagens são nomeadas com o nome de arquivo do Photoshop e um número de camada anexado. Por exemplo, a segunda camada de um arquivo chamado Spring Ad.psd é chamada Spring Ad_2, mesmo se tiver um nome não padrão no Photoshop. |
-|  | Photoshop e nome da camada | Nomeia as imagens após o arquivo PSD seguido pelo nome ou número da camada. O número da camada é usado se os nomes das camadas no arquivo PSD forem nomes de camadas Photoshop padrão. Por exemplo, uma camada chamada Price Tag em um arquivo de PSD chamado SpringAd é chamada Spring Ad_Price Tag. Uma camada com o nome padrão Layer 2 é chamada Spring Ad_2. |
-| Âncora |  | Especifique como as imagens são ancoradas em modelos que são gerados a partir da composição em camadas produzida a partir do arquivo PSD. Por padrão, a âncora é o centro. Uma âncora central permite que imagens de substituição preencham melhor o mesmo espaço, independentemente da proporção da imagem de substituição. As imagens com um aspecto diferente que substituem essa imagem, ao referenciar o modelo e usar a substituição de parâmetro, ocupam efetivamente o mesmo espaço. Altere para uma configuração diferente se seu aplicativo exigir que as imagens de substituição preencham o espaço alocado no modelo. |
+| Manter camadas | | Extrai as camadas na PSD, se houver, para ativos individuais. As camadas de ativos permanecem associadas ao PSD. Para exibi-los, abra o arquivo PSD na exibição de Detalhes e selecione o painel de camadas. |
+| Criar modelo | | Cria um modelo a partir das camadas no arquivo PSD. |
+| Extrair texto | | Extrai o texto para que os usuários possam pesquisar texto em um Visualizador. |
+| Estender camadas ao tamanho do plano de fundo | | Estende o tamanho das camadas de imagem extraídas para o tamanho da camada de plano de fundo. |
+| Nomeação de camada | | As camadas no arquivo PSD são carregadas como imagens separadas. |
+| | Nome da camada | Nomeia as imagens com base nos nomes das camadas no arquivo PSD. Por exemplo, uma camada chamada Etiqueta de preço no arquivo de PSD original se torna uma imagem chamada Etiqueta de preço. No entanto, se os nomes das camadas no arquivo PSD forem nomes de camadas padrão do Photoshop (Plano de fundo, Camada 1, Camada 2 e assim por diante), as imagens serão nomeadas após seus números de camada no arquivo PSD. Eles não são nomeados com base nos nomes de camada padrão. |
+| | Photoshop e Número de Camada | Nomeia as imagens de acordo com seus números de camada no arquivo PSD, ignorando os nomes das camadas originais. As imagens são nomeadas com o nome de arquivo do Photoshop e um número de camada anexado. Por exemplo, a segunda camada de um arquivo chamado Spring Ad.psd é chamada Spring Ad_2, mesmo se tiver um nome não padrão no Photoshop. |
+| | Photoshop e nome da camada | Nomeia as imagens após o arquivo PSD seguido pelo nome ou número da camada. O número da camada é usado se os nomes das camadas no arquivo PSD forem nomes de camadas Photoshop padrão. Por exemplo, uma camada chamada Price Tag em um arquivo de PSD chamado SpringAd é chamada Spring Ad_Price Tag. Uma camada com o nome padrão Layer 2 é chamada Spring Ad_2. |
+| Âncora | | Especifique como as imagens são ancoradas em modelos que são gerados a partir da composição em camadas produzida a partir do arquivo PSD. Por padrão, a âncora é o centro. Uma âncora central permite que imagens de substituição preencham melhor o mesmo espaço, independentemente da proporção da imagem de substituição. As imagens com um aspecto diferente que substituem essa imagem, ao referenciar o modelo e usar a substituição de parâmetro, ocupam efetivamente o mesmo espaço. Altere para uma configuração diferente se seu aplicativo exigir que as imagens de substituição preencham o espaço alocado no modelo. |
 
 #### Definir opções de upload de PDF {#setting-pdf-upload-options}
 
@@ -296,14 +300,14 @@ Escolha entre as seguintes opções:
 |---|---|---|
 | Processando | Rasterizar | (Padrão) Extrai as páginas no arquivo PDF e converte gráficos de vetor em imagens de bitmap. Escolha essa opção se desejar criar um eCatalog. |
 | Extrair | Pesquisar palavras | Extrai palavras do arquivo PDF para que o arquivo possa ser pesquisado por palavra-chave em um eCatalog Viewer. |
-|  | Links | Extrai links dos arquivos PDF e os converte em Mapas de imagem que são usados em um eCatalog Viewer. |
-| Gerar automaticamente eCatalog a partir de PDF de várias páginas |  | Cria automaticamente um eCatalog a partir do arquivo PDF. O eCatalog é nomeado com base no arquivo PDF que você carregou. (Essa opção só estará disponível se você rasterizar o arquivo de PDF à medida que fizer upload dele.) |
-| Resolução |  | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo PDF. O padrão é 150. |
-| Espaço de cor |  | Selecione o menu Espaço de cor e escolha um espaço de cor para o arquivo PDF. A maioria dos arquivos PDF tem imagens coloridas RGB e CMYK. O espaço de cores do RGB é preferível para visualização on-line. |
-|  | Detectar automaticamente | Mantém o espaço de cores do arquivo PDF. |
-|  | Forçar como RGB | Converte para o espaço de cores do RGB. |
-|  | Forçar como CMYK | Converte para o espaço de cores CMYK. |
-|  | Forçar como escala de cinza | Converte para o espaço de cor de tons de cinza. |
+| | Links | Extrai links dos arquivos PDF e os converte em Mapas de imagem que são usados em um eCatalog Viewer. |
+| Gerar automaticamente eCatalog a partir de PDF de várias páginas | | Cria automaticamente um eCatalog a partir do arquivo PDF. O eCatalog é nomeado com base no arquivo PDF que você carregou. (Essa opção só estará disponível se você rasterizar o arquivo de PDF à medida que fizer upload dele.) |
+| Resolução | | Determina a configuração de resolução. Essa configuração determina quantos pixels são exibidos por polegada no arquivo PDF. O padrão é 150. |
+| Espaço de cor | | Selecione o menu Espaço de cor e escolha um espaço de cor para o arquivo PDF. A maioria dos arquivos PDF tem imagens coloridas RGB e CMYK. O espaço de cores do RGB é preferível para visualização on-line. |
+| | Detectar automaticamente | Mantém o espaço de cores do arquivo PDF. |
+| | Forçar como RGB | Converte para o espaço de cores do RGB. |
+| | Forçar como CMYK | Converte para o espaço de cores CMYK. |
+| | Forçar como escala de cinza | Converte para o espaço de cor de tons de cinza. |
 
 #### Definir opções de upload de eVideo {#setting-evideo-upload-options}
 
@@ -311,11 +315,11 @@ Para transcodificar um arquivo de vídeo escolhendo entre várias predefiniçõe
 
 | Opção | Subopção | Descrição |
 |---|---|---|
-| Vídeo adaptável |  | Uma única predefinição de codificação que funciona com qualquer taxa de proporção para criar vídeos, para serem enviados a dispositivos móveis, tablets e computadores de mesa. Os vídeos de origem carregados codificados com essa predefinição são definidos com uma altura fixa. No entanto, a largura é dimensionada automaticamente para preservar a proporção do vídeo. <br>A prática recomendada é usar a codificação do Adaptive Video. |
+| Vídeo adaptável | | Uma única predefinição de codificação que funciona com qualquer taxa de proporção para criar vídeos, para serem enviados a dispositivos móveis, tablets e computadores de mesa. Os vídeos de origem carregados codificados com essa predefinição são definidos com uma altura fixa. No entanto, a largura é dimensionada automaticamente para preservar a proporção do vídeo. <br>A prática recomendada é usar a codificação do Adaptive Video. |
 | Predefinições de codificação única | Predefinições de codificação de classificação | Selecionar **[!UICONTROL Nome]** ou **[!UICONTROL Tamanho]** para classificar as predefinições de codificação listadas em Área de trabalho, Dispositivo móvel e Tablet por nome ou por tamanho de resolução. |
-|  | Desktop | Crie um arquivo MP4 para proporcionar uma experiência de vídeo contínua ou progressiva a computadores desktop. Selecione uma ou mais taxas de proporção com o tamanho da resolução e a taxa de dados de destino desejados. |
-|  | Móvel | Crie um arquivo MP4 para entrega em dispositivos móveis iPhone ou Android™. Selecione uma ou mais taxas de proporção com o tamanho da resolução e a taxa de dados de destino desejados. |
-|  | Tablet | Crie um arquivo MP4 para entrega em dispositivos tablet iPad ou Android™. Selecione uma ou mais taxas de proporção com o tamanho da resolução e a taxa de dados de destino desejados. |
+| | Desktop | Crie um arquivo MP4 para proporcionar uma experiência de vídeo contínua ou progressiva a computadores desktop. Selecione uma ou mais taxas de proporção com o tamanho da resolução e a taxa de dados de destino desejados. |
+| | Móvel | Crie um arquivo MP4 para entrega em dispositivos móveis iPhone ou Android™. Selecione uma ou mais taxas de proporção com o tamanho da resolução e a taxa de dados de destino desejados. |
+| | Tablet | Crie um arquivo MP4 para entrega em dispositivos tablet iPad ou Android™. Selecione uma ou mais taxas de proporção com o tamanho da resolução e a taxa de dados de destino desejados. |
 
 #### Definir predefinições de conjunto de lotes no upload {#setting-batch-set-presets-at-upload}
 
@@ -382,7 +386,6 @@ Para visualizar um ativo usando o teclado, siga estas etapas:
 >* [Visualizar ativos do Dynamic Media](/help/assets/previewing-assets.md).
 >* [Exibir subativos](managing-linked-subassets.md#viewing-subassets).
 
-
 ## Editar propriedades e metadados {#editing-properties}
 
 1. Navegue até o local do ativo cujos metadados você deseja editar.
@@ -403,7 +406,7 @@ Para visualizar um ativo usando o teclado, siga estas etapas:
 
    *Figura: use o seletor de datas para agendar a ativação de ativos.*
 
-1. Você precisa verificar **[!UICONTROL Horário ligado/desligado atingido]** opção se quiser atualizar os acionadores do agente de replicação nas propriedades de Metadados.
+1. Marcar **[!UICONTROL Horário ligado/desligado atingido]** opção se quiser atualizar os acionadores do agente de replicação nas propriedades de Metadados.
    ![Configurações do agente](assets-dm/Agent-settings.png)
 
 1. Para desativar o ativo após uma duração específica, escolha a data/hora de desativação no seletor de datas ao lado da variável **[!UICONTROL Tempo desligado]** campo. A data de desativação deve ser posterior à data de ativação de um ativo. Depois que a variável [!UICONTROL Tempo desligado], um ativo e suas representações não estão disponíveis por meio do [!DNL Assets] Web ou por meio da API HTTP.
@@ -482,11 +485,11 @@ Para mover ativos ou pastas:
    * Especifique o nome do ativo depois que ele for movido. Clique em **[!UICONTROL Próxima]** para continuar.
 
    * Clique em **[!UICONTROL Cancelar]** para interromper o processo.
+
    >[!NOTE]
    >
    >* Você pode especificar o mesmo nome para o ativo se não houver um ativo com esse nome no novo local. No entanto, você deve usar um nome diferente se mover o ativo para um local onde exista um ativo com o mesmo nome. Se você usar o mesmo nome, o sistema gerará automaticamente uma variação do nome. Por exemplo, se o ativo tiver o nome Quadrado, o sistema gera o nome Quadrado1 para sua cópia.
    >* Ao renomear, não é permitido espaço em branco no nome do arquivo.
-
 
 1. No **[!UICONTROL Selecionar destino]** , siga um destes procedimentos:
 
@@ -557,7 +560,7 @@ Mover ativos ao arrastá-los não abre [!UICONTROL Mover ativo] , portanto, voc�
    >
    >As anotações de vídeo são suportadas apenas em navegadores com formatos de vídeo compatíveis com o HTML5. Além disso, dependendo do navegador, diferentes formatos de vídeo são compatíveis. No entanto, o formato de vídeo MXF ainda não é compatível com anotações de vídeo.
 
-Para obter mais informações sobre a geração e a exibição de subativos, consulte [gerenciar subativos](managing-linked-subassets.md#generate-subassets).
+Para obter mais informações sobre a geração e a exibição de subativos, consulte [Gerenciar subativos](managing-linked-subassets.md#generate-subassets).
 
 ## Excluir ativos {#deleting-assets}
 
@@ -576,11 +579,11 @@ Para excluir um ativo ou uma pasta contendo ativo:
    * Se o ativo não tiver referências, o ativo é excluído.
 
    * Se o ativo tiver referências, uma mensagem de erro informará que **Um ou mais ativos são mencionados**. É possível selecionar **[!UICONTROL Forçar Exclusão]** ou **[!UICONTROL Cancelar]**.
+
    >[!NOTE]
    >
    >* Para resolver ou remover as referências recebidas de outras páginas, atualize as referências relevantes antes de excluir um ativo. Além disso, desative a opção forçar exclusão usando uma sobreposição, para impedir que os usuários excluam os ativos referenciados e deixem links desfeitos.
    >* É possível excluir um *pasta* que contém arquivos de ativos com check-out. Antes de excluir uma pasta, verifique se nenhum ativo digital foi retirado por usuários.
-
 
 >[!NOTE]
 >
@@ -863,9 +866,9 @@ Este é um exemplo de como configurar [!DNL Experience Manager] para imprimir an
 
 1. Baixe fontes Google Noto CJK nos links a seguir e armazene-as no diretório de fontes configurado no Serviço do gerenciador de fontes.
 
-   * Fonte All In One Super CJK: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-   * Noto Sans (para idiomas europeus): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-   * Nenhuma fonte para um idioma de sua escolha: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
+   * Fonte All In One Super CJK: [https://fonts.google.com/noto/use](https://fonts.google.com/noto/use)
+   * Noto Sans (para idiomas europeus): [https://fonts.google.com/noto](https://fonts.google.com/noto)
+   * Nenhuma fonte para um idioma de sua escolha: [https://fonts.google.com/noto](https://fonts.google.com/noto)
 
 1. Configure o arquivo PDF de anotação definindo o parâmetro font-family como `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Essa configuração está disponível por padrão e funciona para todos os idiomas europeu e CJK.
 1. Se o idioma de sua escolha for diferente dos idiomas mencionados na etapa 2, anexe uma entrada apropriada (separada por vírgulas) à família de fontes padrão.
@@ -895,9 +898,9 @@ Você também pode ativar o controle automático de versão por meio de um fluxo
    * Clique em **[!UICONTROL Salvar como versão]** para que você possa criar uma versão do ativo. Opcionalmente, adicione um rótulo e comentário.
    * Clique em **[!UICONTROL Criar]** para criar uma versão.
 
-      ![Criar versão de ativo na barra lateral](assets/create-new-version-from-timeline.png)
+     ![Criar versão de ativo na barra lateral](assets/create-new-version-from-timeline.png)
 
-      *Figura: Criar uma versão de um ativo do [!UICONTROL Linha do tempo] barra lateral esquerda.*
+     *Figura: Criar uma versão de um ativo do [!UICONTROL Linha do tempo] barra lateral esquerda.*
 
 1. Para exibir uma versão de um ativo:
 
@@ -911,9 +914,9 @@ Você também pode ativar o controle automático de versão por meio de um fluxo
    * Clique em uma versão do ativo. Opcionalmente, adicione um rótulo e um comentário.
    * Clique em **[!UICONTROL Reverter para esta versão]**.
 
-      ![Selecione uma versão para reverter a ela](assets/select_version.png)
+     ![Selecione uma versão para reverter a ela](assets/select_version.png)
 
-      *Figura: selecione uma versão e reverta para ela. Ele se torna a versão atual, que fica disponível para os usuários do DAM.*
+     *Figura: selecione uma versão e reverta para ela. Ele se torna a versão atual, que fica disponível para os usuários do DAM.*
 
 1. Para comparar entre duas versões de uma imagem, siga estas etapas:
    * Clique na versão a ser comparada com a versão atual.
@@ -934,7 +937,7 @@ Uma coleção é um conjunto ordenado de ativos. Use coleções para compartilha
 * Uma coleção pode incluir ativos de locais diferentes, pois eles contêm apenas referências a esses ativos. Cada coleção mantém a integridade referencial dos ativos.
 * Você pode compartilhar coleções com vários usuários com diferentes níveis de privilégio, incluindo edição, visualização e assim por diante.
 
-Para saber detalhes do Gerenciamento de coleções, consulte [gerenciar coleções](/help/assets/manage-collections.md).
+Para saber detalhes do Gerenciamento de coleções, consulte [Gerenciar coleções de ativos digitais](/help/assets/manage-collections.md).
 
 ## Ocultar ativos expirados ao visualizar ativos no aplicativo de desktop ou Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
@@ -954,4 +957,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Para saber mais, veja como [navegar pelos ativos do DAM usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [como usar o Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Para saber mais, veja como [navegar pelos ativos do DAM usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [como usar o Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html).
