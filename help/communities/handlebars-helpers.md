@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1509'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 | **[Feature Essentials](essentials.md)** | **[Personalização do lado do servidor ^](server-customize.md)** |
 |---|---|
-|  | **[Personalização no lado do cliente ^](client-customize.md)** |
+|   | **[Personalização no lado do cliente ^](client-customize.md)** |
 
 Os Handlebars Helpers (helpers) são métodos chamados de scripts Handlebars para facilitar o trabalho com componentes SCF.
 
@@ -49,19 +49,19 @@ Se safeString estiver definido como true, a cadeia de caracteres retornada será
 
 * **contexto**: String
 
-   (Opcional) O padrão é a string vazia
+  (Opcional) O padrão é a string vazia
 
 * **maxLength**: Número
 
-   (Opcional) Padrão é a duração do contexto.
+  (Opcional) Padrão é a duração do contexto.
 
 * **maxWords**: Número
 
-   (Opcional) Padrão é o número de palavras na string aparada.
+  (Opcional) Padrão é o número de palavras na string aparada.
 
 * **safeString**: Booleano
 
-   (Opcional) Retorna Handlebars.SafeString() se verdadeiro. O padrão é falso.
+  (Opcional) Retorna Handlebars.SafeString() se verdadeiro. O padrão é falso.
 
 ### Exemplos {#examples}
 
@@ -97,23 +97,23 @@ Um auxiliar para adicionar duas extensões em uma div, uma para o texto completo
 
 * **contexto**: String
 
-   (Opcional) O padrão é a cadeia de caracteres vazia.
+  (Opcional) O padrão é a cadeia de caracteres vazia.
 
 * **numChars**: Número
 
-   (Opcional) O número de caracteres a serem exibidos quando não estiver exibindo o texto completo. O padrão é 100.
+  (Opcional) O número de caracteres a serem exibidos quando não estiver exibindo o texto completo. O padrão é 100.
 
 * **moreText**: String
 
-   (Opcional) O texto a ser exibido, indicando que há mais texto a ser exibido. O padrão é &quot;mais&quot;.
+  (Opcional) O texto a ser exibido, indicando que há mais texto a ser exibido. O padrão é &quot;mais&quot;.
 
 * **elipsesText**: String
 
-   (Opcional) O texto a ser exibido indicando que há texto oculto. O padrão é &quot;...&quot;.
+  (Opcional) O texto a ser exibido indicando que há texto oculto. O padrão é &quot;...&quot;.
 
 * **safeString**: Booleano
 
-   (Opcional) Valor booleano que indica se Handlebars.SafeString() deve ser aplicado ou não antes de retornar o resultado. O padrão é falso.
+  (Opcional) Valor booleano que indica se Handlebars.SafeString() deve ser aplicado ou não antes de retornar o resultado. O padrão é falso.
 
 ### Exemplo {#example}
 
@@ -137,11 +137,11 @@ Um auxiliar para retornar uma string de data formatada.
 
 * **contexto**: Número
 
-   (Opcional) uma diferença de valor em milissegundos de 1º de janeiro de 1970 (época). O padrão é a data atual.
+  (Opcional) uma diferença de valor em milissegundos de 1º de janeiro de 1970 (época). O padrão é a data atual.
 
 * **formato**: String
 
-   (Opcional) O formato de data a ser aplicado. O padrão é &quot;AAAA-MM-DDTHH:mm:&quot;ss.sssZ&quot; e o resultado aparece como &quot;2015-03-18T18:17:13-07:00&quot;
+  (Opcional) O formato de data a ser aplicado. O padrão é &quot;AAAA-MM-DDTHH:mm:&quot;ss.sssZ&quot; e o resultado aparece como &quot;2015-03-18T18:17:13-07:00&quot;
 
 ### Exemplos {#examples-1}
 
@@ -165,11 +165,11 @@ Um auxiliar para retornar o conteúdo dependendo de uma condição de igualdade.
 
 * **lvalue**: String
 
-   O valor à esquerda a ser comparado.
+  O valor à esquerda a ser comparado.
 
 * **rvalue**: String
 
-   O valor à direita a ser comparado.
+  O valor à direita a ser comparado.
 
 ### Exemplo {#example-1}
 
@@ -189,11 +189,11 @@ Um auxiliar de bloco que testa o valor atual de [Modo WCM](https://helpx.adobe.c
 
 * **contexto**: String
 
-   (Opcional) A sequência de caracteres a ser traduzida. Obrigatório se nenhum padrão for fornecido.
+  (Opcional) A sequência de caracteres a ser traduzida. Obrigatório se nenhum padrão for fornecido.
 
 * **modo**: String
 
-   (Opcional) Uma lista separada por vírgulas de [Modos WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) para testar se definido.
+  (Opcional) Uma lista separada por vírgulas de [Modos WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) para testar se definido.
 
 ### Exemplo {#example-2}
 
@@ -215,15 +215,15 @@ Consulte também [Internacionalizando strings no código JavaScript](../../help/
 
 * **contexto**: String
 
-   (Opcional) A sequência de caracteres a ser traduzida. Obrigatório se nenhum padrão for fornecido.
+  (Opcional) A sequência de caracteres a ser traduzida. Obrigatório se nenhum padrão for fornecido.
 
 * **padrão**: String
 
-   (Opcional) A cadeia de caracteres padrão a ser traduzida. Obrigatório se nenhum contexto for fornecido.
+  (Opcional) A cadeia de caracteres padrão a ser traduzida. Obrigatório se nenhum contexto for fornecido.
 
 * **comentário**: String
 
-   (Opcional) Uma dica de tradução
+  (Opcional) Uma dica de tradução
 
 ### Exemplo {#example-3}
 
@@ -246,27 +246,27 @@ Este auxiliar, apropriado somente no lado do servidor, fornece funcionalidade se
 
 * **contexto**: sequência ou objeto
 
-   (Opcional, exceto se fornecer um caminho relativo)
+  (Opcional, exceto se fornecer um caminho relativo)
 
-   Uso `this` para transmitir o contexto atual.
+  Uso `this` para transmitir o contexto atual.
 
-   Uso `this.id` para obter o recurso em `id` para renderizar o resourceType solicitado.
+  Uso `this.id` para obter o recurso em `id` para renderizar o resourceType solicitado.
 
 * **resourceType**: String
 
-   (Opcional) o tipo de recurso assumirá como padrão o tipo de recurso do contexto.
+  (Opcional) o tipo de recurso assumirá como padrão o tipo de recurso do contexto.
 
 * **modelo**: String
 
-   Caminho para o script do componente.
+  Caminho para o script do componente.
 
 * **caminho**: String
 
-   (Obrigatório) O caminho para o recurso. Se o caminho for relativo, um contexto deverá ser fornecido, caso contrário, a cadeia de caracteres vazia será retornada.
+  (Obrigatório) O caminho para o recurso. Se o caminho for relativo, um contexto deverá ser fornecido, caso contrário, a cadeia de caracteres vazia será retornada.
 
 * **authoringDisabled**: Booleano
 
-   (Opcional) O padrão é falso. Somente para uso interno.
+  (Opcional) O padrão é falso. Somente para uso interno.
 
 ### Exemplo {#example-4}
 
@@ -286,19 +286,19 @@ Este auxiliar, apropriado somente no lado do servidor, fornece funcionalidade se
 
 * **categorias**: String
 
-   (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas JavaScript e CSS para as categorias fornecidas. O nome do tema é extraído da solicitação.
+  (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas JavaScript e CSS para as categorias fornecidas. O nome do tema é extraído da solicitação.
 
 * **tema**: String
 
-   (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas relacionadas ao tema (CSS e JS) para as categorias fornecidas. O nome do tema é extraído da solicitação.
+  (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas relacionadas ao tema (CSS e JS) para as categorias fornecidas. O nome do tema é extraído da solicitação.
 
 * **js**: String
 
-   (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas JavaScript para as categorias fornecidas.
+  (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas JavaScript para as categorias fornecidas.
 
 * **css**: String
 
-   (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas CSS para as categorias fornecidas.
+  (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas CSS para as categorias fornecidas.
 
 ### Exemplos {#examples-2}
 
@@ -353,11 +353,11 @@ Por exemplo:
 
 * **contexto**: Número
 
-   Um horário no passado para comparar com &#39;agora&#39;. O tempo é expresso como um deslocamento de valor em milissegundos a partir de 1° de janeiro de 1970 (época).
+  Um horário no passado para comparar com &#39;agora&#39;. O tempo é expresso como um deslocamento de valor em milissegundos a partir de 1° de janeiro de 1970 (época).
 
 * **daysCutoff**: Número
 
-   O número de dias atrás antes de alternar para uma data real. O padrão é 60.
+  O número de dias atrás antes de alternar para uma data real. O padrão é 60.
 
 ### Exemplo {#example-5}
 
@@ -385,7 +385,7 @@ OBSERVAÇÃO: não é um validador e não deve ser usado para gravar valores de 
 
 * **contexto**: objeto
 
-   O HTML a ser codificado.
+  O HTML a ser codificado.
 
 ### Exemplo {#example-6}
 
@@ -403,7 +403,7 @@ OBSERVAÇÃO: não é um validador e não deve ser usado para gravar atributos a
 
 * **contexto**: Objeto
 
-   O HTML a ser codificado.
+  O HTML a ser codificado.
 
 ### Exemplo {#example-7}
 
@@ -421,7 +421,7 @@ OBSERVAÇÃO: não é um validador e não deve ser usado para gravação em Java
 
 * **contexto**: Objeto
 
-   O HTML a ser codificado.
+  O HTML a ser codificado.
 
 ### Exemplo {#example-8}
 
@@ -439,7 +439,7 @@ OBSERVAÇÃO: isso pode retornar uma cadeia de caracteres vazia
 
 * **contexto**: Objeto
 
-   O URL para limpar.
+  O URL para limpar.
 
 ### Exemplo {#example-9}
 
@@ -457,7 +457,7 @@ OBSERVAÇÃO: isso pode retornar uma cadeia de caracteres vazia
 * O contexto pode ser um objeto de dados String, number, boolean ou JSON.
 * É possível passar um objeto aninhado no contexto atual como o contexto, como `this.url` ou `this.id` (consulte os exemplos a seguir de auxiliares simples e de bloco).
 
-* Bloquear auxiliares são funções que podem ser chamadas de qualquer lugar no modelo. Eles podem chamar um bloco do modelo zero ou mais vezes com um contexto diferente a cada vez. Eles contêm um contexto entre {{#*name*}} and {{/*name*}}.
+* Bloquear auxiliares são funções que podem ser chamadas de qualquer lugar no modelo. Eles podem chamar um bloco do modelo zero ou mais vezes com um contexto diferente a cada vez. Eles contêm um contexto entre `{{#*name*}}` e `{{/*name*}}`.
 
 * Handlebars fornece um parâmetro final para auxiliares chamado de &quot;opções&quot;. O objeto especial &#39;options&#39; inclui
 
@@ -603,4 +603,4 @@ Observação: os auxiliares do SCF estão definidos em `/etc/clientlibs/social/c
 
 | **[Feature Essentials](essentials.md)** | **[Personalização do lado do servidor ^](server-customize.md)** |
 |---|---|
-|  | **[Personalização no lado do cliente ^](client-customize.md)** |
+|   | **[Personalização no lado do cliente ^](client-customize.md)** |

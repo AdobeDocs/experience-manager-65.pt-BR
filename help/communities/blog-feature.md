@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 7%
@@ -77,35 +77,35 @@ No **Configurações** especifique os recursos básicos do blog:
 
 * **Permitir miniatura de anexo**
 
-   Se marcada, uma miniatura da imagem anexada é criada.
+  Se marcada, uma miniatura da imagem anexada é criada.
 
 * **Tamanho máximo da miniatura do anexo**
 
-   Tamanho máximo (em pixels) da imagem em miniatura do anexo. O valor padrão é 800 x 800.
+  Tamanho máximo (em pixels) da imagem em miniatura do anexo. O valor padrão é 800 x 800.
 
 * **Tamanho mínimo de imagem para a miniatura**
 
-   Tamanho mínimo (em bytes) da imagem para gerar a miniatura para imagens integradas. O valor padrão é 100000 bytes (100kb).
+  Tamanho mínimo (em bytes) da imagem para gerar a miniatura para imagens integradas. O valor padrão é 100000 bytes (100kb).
 
 * **Tamanho máximo da miniatura**
 
-   Tamanho máximo (em pixels) da imagem em miniatura para imagem integrada. O valor padrão é 800 x 800.
+  Tamanho máximo (em pixels) da imagem em miniatura para imagem integrada. O valor padrão é 800 x 800.
 
 * **Permitir membros privilegiados**
 
-   Se marcado, somente os membros Privilegiados poderão criar conteúdo.
+  Se marcado, somente os membros Privilegiados poderão criar conteúdo.
 
 * **Membros privilegiados permitidos**
 
-   Adicione os membros privilegiados com permissão para criar conteúdo.
+  Adicione os membros privilegiados com permissão para criar conteúdo.
 
 * **Bloquear conteúdo gerado pelo usuário no modo Edição do autor**
 
-   Se estiver ativado, bloqueia o conteúdo gerado pelo usuário ao editar no Modo Autor.
+  Se estiver ativado, bloqueia o conteúdo gerado pelo usuário ao editar no Modo Autor.
 
 * **Título do diário**
 
-   O título do blog a ser exibido na página.
+  O título do blog a ser exibido na página.
 
 >[!NOTE]
 >
@@ -115,85 +115,85 @@ No **Configurações** especifique os recursos básicos do blog:
 
 * **Descrição do diário**
 
-   A descrição do blog.
+  A descrição do blog.
 
 * **Tópicos por página**
 
-   Define o número de entradas/comentários do blog exibidos por página. O padrão é 10.
+  Define o número de entradas/comentários do blog exibidos por página. O padrão é 10.
 
 * **Moderada**
 
-   Se marcado, a postagem de entradas de blog e comentários deve ser aprovada antes de serem exibidos em um site publicado. O padrão é desmarcado.
+  Se marcado, a postagem de entradas de blog e comentários deve ser aprovada antes de serem exibidos em um site publicado. O padrão é desmarcado.
 
 * **Fechado**
 
-   Se marcado, o blog será fechado para novas entradas e comentários de blog. O padrão está desmarcado.
+  Se marcado, o blog será fechado para novas entradas e comentários de blog. O padrão está desmarcado.
 
 * **Editor de rich text**
 
-   Se marcadas, as entradas de blog e os comentários podem ser inseridos com marcação. O padrão está marcado.
+  Se marcadas, as entradas de blog e os comentários podem ser inseridos com marcação. O padrão está marcado.
 
 * **Permitir marcação**
 
-   Se marcados, permitem que os membros adicionem rótulos de tag à sua publicação (consulte **Campo de tag** guia ). O padrão está desmarcado.
+  Se marcados, permitem que os membros adicionem rótulos de tag à sua publicação (consulte **Campo de tag** guia ). O padrão está desmarcado.
 
 * **Permitir carregamento de arquivos**
 
-   Se marcado, permite que anexos de arquivo sejam adicionados a uma entrada de blog ou comentário. O padrão está desmarcado.
+  Se marcado, permite que anexos de arquivo sejam adicionados a uma entrada de blog ou comentário. O padrão está desmarcado.
 
 * **Tamanho máximo do arquivo**
 
-   Relevante apenas se `Allow File Uploads` está marcado. Esse campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
+  Relevante apenas se `Allow File Uploads` está marcado. Esse campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
 * **Tipos de arquivos permitidos**
 
-   Relevante apenas se `Allow File Uploads` está marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
+  Relevante apenas se `Allow File Uploads` está marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
 
 * **Tamanho máximo do arquivo de imagem a ser anexado**
 
-   Relevante somente se Permitir uploads de arquivo estiver marcado. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152 (2 Mb).
+  Relevante somente se Permitir uploads de arquivo estiver marcado. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152 (2 Mb).
 
 * **Permitir respostas**
 
-   Se marcado, permite respostas aos comentários postados na entrada do blog. O padrão está desmarcado.
+  Se marcado, permite respostas aos comentários postados na entrada do blog. O padrão está desmarcado.
 
 * **Permitir votação**
 
-   Se marcado, inclui o recurso Votação com uma entrada de blog. O padrão está desmarcado.
+  Se marcado, inclui o recurso Votação com uma entrada de blog. O padrão está desmarcado.
 
 * **Permitir que usuários excluam comentários e tópicos**
 
-   Se marcados, permitem que os membros excluam os comentários e as entradas de blog postados. O padrão está desmarcado.
+  Se marcados, permitem que os membros excluam os comentários e as entradas de blog postados. O padrão está desmarcado.
 
 * **Permitir monitoramento**
 
-   Se marcado, inclui o seguinte recurso para artigos de blog, que permite que membros sejam [notificado](/help/communities/notifications.md) de novos posts. O padrão está desmarcado.
+  Se marcado, inclui o seguinte recurso para artigos de blog, que permite que membros sejam [notificado](/help/communities/notifications.md) de novos posts. O padrão está desmarcado.
 
 * **Permitir assinaturas de email**
 
-   Se marcado, permitir que os membros sejam notificados sobre novas publicações por email ([subscrição](/help/communities/subscriptions.md)). Exige `Allow Following` a ser verificado e [email configurado](/help/communities/email.md). O padrão está desmarcado.
+  Se marcado, permitir que os membros sejam notificados sobre novas publicações por email ([subscrição](/help/communities/subscriptions.md)). Exige `Allow Following` a ser verificado e [email configurado](/help/communities/email.md). O padrão está desmarcado.
 
 * **Exibir selos**
 
-   Se marcado, exibir ganho e atribuído [medalhas](/help/communities/implementing-scoring.md) com uma entrada de blog do membro. O padrão está desmarcado.
+  Se marcado, exibir ganho e atribuído [medalhas](/help/communities/implementing-scoring.md) com uma entrada de blog do membro. O padrão está desmarcado.
 
 * **Não receber respostas na página de listagem**
 
 * **Ativar conteúdo em destaque**
 
-   Se marcada, a ideia pode ser identificada como [conteúdo em destaque](/help/communities/featured.md). O padrão está desmarcado.
+  Se marcada, a ideia pode ser identificada como [conteúdo em destaque](/help/communities/featured.md). O padrão está desmarcado.
 
 * **Ativar a menção**
 
-   Se ativado, permite que os usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e marquem-nos usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas menções.
+  Se ativado, permite que os usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e marquem-nos usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas menções.
 
 * **Quantidade máxima de menções**
 
-   Restringir o número máximo de menções permitidas em uma publicação. O padrão é 10.
+  Restringir o número máximo de menções permitidas em uma publicação. O padrão é 10.
 
 * **Padrão de menção da interface do usuário**
 
-   Especifique a string padrão permitida para marcar (@mention) o usuário registrado em uma publicação. Por exemplo ~{{familyName}}{{givenName}}.
+  Especifique a string do padrão permitido para marcar (@mention) o usuário registrado em uma publicação. Por exemplo, `~{{familyName}}{{givenName}}`.
 
 #### Guia Moderação de usuário {#user-moderation-tab}
 
@@ -201,31 +201,31 @@ No **Moderação de usuário** especifique as configurações de moderação:
 
 * **Negar postagens**
 
-   Se marcados, os moderadores de membros confiáveis poderão negar postagens e impedir que a postagem apareça no fórum público. O padrão está desmarcado.
+  Se marcados, os moderadores de membros confiáveis poderão negar postagens e impedir que a postagem apareça no fórum público. O padrão está desmarcado.
 
 * **Fechar/Reabrir tópicos**
 
-   Se marcados, os moderadores de membros confiáveis podem fechar um tópico para outras edições e comentários, e também podem reabrir um tópico. O padrão está desmarcado.
+  Se marcados, os moderadores de membros confiáveis podem fechar um tópico para outras edições e comentários, e também podem reabrir um tópico. O padrão está desmarcado.
 
 * **Sinalizar postagens**
 
-   Se marcado, permite que os membros marquem tópicos ou comentários de outras pessoas como inadequados. O padrão está desmarcado.
+  Se marcado, permite que os membros marquem tópicos ou comentários de outras pessoas como inadequados. O padrão está desmarcado.
 
 * **Sinalizar lista de motivo**
 
-   Se marcado, permite que os membros escolham, em uma lista suspensa, o motivo para sinalizar um tópico ou comentário como inapropriado. O padrão está desmarcado.
+  Se marcado, permite que os membros escolham, em uma lista suspensa, o motivo para sinalizar um tópico ou comentário como inapropriado. O padrão está desmarcado.
 
 * **Motivo personalizado de sinalização**
 
-   Se marcado, permite que os membros insiram seu próprio motivo para sinalizar um tópico ou comentário como inapropriado. O padrão está desmarcado.
+  Se marcado, permite que os membros insiram seu próprio motivo para sinalizar um tópico ou comentário como inapropriado. O padrão está desmarcado.
 
 * **Limite de moderação**
 
-   Insira o número de vezes que um tópico ou comentário deve ser marcado pelos membros antes que os moderadores sejam notificados. O padrão é 1 (uma vez).
+  Insira o número de vezes que um tópico ou comentário deve ser marcado pelos membros antes que os moderadores sejam notificados. O padrão é 1 (uma vez).
 
 * **Limite de sinalização**
 
-   Insira o número de vezes que um tópico ou comentário deve ser sinalizado antes de ser ocultado da visualização pública. Se definido como -1, o tópico ou comentário sinalizado nunca será ocultado da exibição pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
+  Insira o número de vezes que um tópico ou comentário deve ser sinalizado antes de ser ocultado da visualização pública. Se definido como -1, o tópico ou comentário sinalizado nunca será ocultado da exibição pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
 
 #### Guia Campo de tag {#tag-field-tab}
 
@@ -233,11 +233,11 @@ No **Campo de tag** especifique as tags que poderão ser aplicadas se **Permitir
 
 * **Namespaces permitidos**
 
-   Relevante se `Allow Tagging` é verificado sob o **Configurações** guia. As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace marcadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão é nenhum marcado, o que significa que todos os namespaces são permitidos.
+  Relevante se `Allow Tagging` é verificado sob o **Configurações** guia. As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace marcadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão é nenhum marcado, o que significa que todos os namespaces são permitidos.
 
 * **Limite sugerido**
 
-   Insira o número de tags a serem exibidas como sugestão para a publicação do membro no fórum. Um valor de -1 significa sem limites. O padrão é 0.
+  Insira o número de tags a serem exibidas como sugestão para a publicação do membro no fórum. Um valor de -1 significa sem limites. O padrão é 0.
 
 ### Configurar a barra lateral do blog {#configuring-blog-sidebar}
 
@@ -249,7 +249,7 @@ No **Configurações da barra lateral do diário** especifique o formato de data
 
 * **Formato de data**
 
-   O formato usado para exibir arquivos de entradas de blog. O formato usa espaços reservados seguindo a convenção do Java.
+  O formato usado para exibir arquivos de entradas de blog. O formato usa espaços reservados seguindo a convenção do Java.
 
    * aaaa : ano completo, como &#39;2015&#39;
    * aa : ano curto, como &quot;15&quot;
@@ -257,11 +257,11 @@ No **Configurações da barra lateral do diário** especifique o formato de data
    * MMM : mês curto, como jun
    * MM : número do mês, como 06
 
-   O padrão é &quot;yyyy MMMMM&quot;, que exibiria, por exemplo, &quot;junho de 2015&quot;
+  O padrão é &quot;yyyy MMMMM&quot;, que exibiria, por exemplo, &quot;junho de 2015&quot;
 
 * **Visualizar tipo**
 
-   O Título e o tipo das entradas do blog a serem exibidas na barra lateral. A escolha é entre
+  O Título e o tipo das entradas do blog a serem exibidas na barra lateral. A escolha é entre
 
    * Autores
    * Categorias
@@ -269,13 +269,13 @@ No **Configurações da barra lateral do diário** especifique o formato de data
 
 * **Caminho do componente Blopg**
 
-   *(Opcional)* A localização do recurso de blog do qual os artigos de blog devem ser listados. Se deixado em branco, usará o componente de resourceType `social/journal/components/hbs/journal` que aparece na mesma página.
+  *(Opcional)* A localização do recurso de blog do qual os artigos de blog devem ser listados. Se deixado em branco, usará o componente de resourceType `social/journal/components/hbs/journal` que aparece na mesma página.
 
    * Por exemplo, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **Limite sugerido**
 
-   O número de artigos de blog a serem exibidos. Um valor de -1 significa sem limite. O padrão é -1.
+  O número de artigos de blog a serem exibidos. Um valor de -1 significa sem limite. O padrão é -1.
 
 ## Experiência de visitante do site {#site-visitor-experience}
 
