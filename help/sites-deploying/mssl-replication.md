@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8027a8564f2dce408e7cd5b01f3b86c703c9e3a
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1392'
 ht-degree: 3%
 
 ---
@@ -202,8 +202,7 @@ Para executar o procedimento a seguir, você deve estar conectado como administr
 ### Instalar o certificado do autor {#install-the-author-certificate}
 
 1. Abra a página Gerenciamento de usuários da instância de publicação. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. Localize a conta de usuário que você usa para executar solicitações de replicação e clique ou toque no nome de usuário.
-1. Se o link Criar TrustStore aparecer na área Configurações da conta, clique no link, crie uma senha para o TrustStore e clique em OK.
+1. Se o link Criar TrustStore aparecer na área Armazenamento global de confiança, clique no link, crie uma senha para o TrustStore e clique em OK.
 1. Na área Configurações da conta, clique em Gerenciar TrustStore.
 1. Clique em Adicionar certificado do arquivo CER.
 1. Verifique se a opção Mapear certificado para usuário está selecionada. Clique em Selecionar arquivo de certificado, selecione author.cer e clique em Abrir.
