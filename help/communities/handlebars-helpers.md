@@ -1,8 +1,6 @@
 ---
 title: Auxiliares de Handlebars SCF
-seo-title: SCF Handlebars Helpers
 description: Métodos do Handlebars Helper para facilitar o trabalho com o SCF
-seo-description: Handlebars Helper methods to facilitate work with SCF
 uuid: 9c514199-871e-4b68-8147-2052d2eeda15
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +8,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1473'
 ht-degree: 2%
 
 ---
@@ -113,7 +111,7 @@ Um auxiliar para adicionar duas extensões em uma div, uma para o texto completo
 
 * **safeString**: Booleano
 
-  (Opcional) Valor booleano que indica se Handlebars.SafeString() deve ser aplicado ou não antes de retornar o resultado. O padrão é falso.
+  (Opcional) Valor booleano que indica se Handlebars.SafeString() deve ser aplicado antes de retornar o resultado. O padrão é falso.
 
 ### Exemplo {#example}
 
@@ -183,7 +181,7 @@ Um auxiliar para retornar o conteúdo dependendo de uma condição de igualdade.
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Um auxiliar de bloco que testa o valor atual de [Modo WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) contra uma lista de modos separada por sequência.
+Um auxiliar de bloco que testa o valor atual de [Modo WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) contra uma lista de modos separada por sequência.
 
 ### Parâmetros {#parameters-4}
 
@@ -193,7 +191,7 @@ Um auxiliar de bloco que testa o valor atual de [Modo WCM](https://helpx.adobe.c
 
 * **modo**: String
 
-  (Opcional) Uma lista separada por vírgulas de [Modos WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) para testar se definido.
+  (Opcional) Uma lista separada por vírgulas de [Modos WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) para testar se definido.
 
 ### Exemplo {#example-2}
 
@@ -236,9 +234,9 @@ Consulte também [Internacionalizando strings no código JavaScript](../../help/
 
 Um auxiliar para incluir um componente como um recurso não existente em um modelo.
 
-Isso permite que o recurso seja personalizado de forma programática mais facilmente do que é possível para um recurso adicionado como um nó JCR. Consulte [Adicionar ou incluir um componente das comunidades](scf.md#add-or-include-a-communities-component).
+Esse método permite que o recurso seja personalizado programaticamente com mais facilidade do que é possível para um recurso adicionado como um nó JCR. Consulte [Adicionar ou incluir um componente das comunidades](scf.md#add-or-include-a-communities-component).
 
-Somente alguns componentes selecionados das Comunidades podem ser incluídos. Para o AEM 6.1, os que são incluíveis são [comentários](essentials-comments.md), [avaliação](rating-basics.md), [análises](reviews-basics.md), e [votação](essentials-voting.md).
+Apenas alguns componentes selecionados das Comunidades estão disponíveis para inclusão. <!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
 
 Este auxiliar, apropriado somente no lado do servidor, fornece funcionalidade semelhante a [cq:include](../../help/sites-developing/taglib.md) para scripts JSP.
 
@@ -254,7 +252,7 @@ Este auxiliar, apropriado somente no lado do servidor, fornece funcionalidade se
 
 * **resourceType**: String
 
-  (Opcional) o tipo de recurso assumirá como padrão o tipo de recurso do contexto.
+  (Opcional) O tipo de recurso assume como padrão o tipo de recurso do contexto.
 
 * **modelo**: String
 
@@ -274,11 +272,11 @@ Este auxiliar, apropriado somente no lado do servidor, fornece funcionalidade se
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-Isso incluirá um novo componente de comentários em `this.id` + /comentários.
+Inclui um novo componente de comentários em `this.id` + /comentários.
 
 ## IncludeClientLib {#includeclientlib}
 
-Um auxiliar que inclui uma biblioteca cliente AEM html, que pode ser um js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo, js e css, essa tag precisa ser usada várias vezes no script Handlebars.
+Um auxiliar que inclui uma biblioteca cliente AEM html, que pode ser um js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo, js e css, essa tag deve ser usada várias vezes no script Handlebars.
 
 Este auxiliar, apropriado somente no lado do servidor, fornece funcionalidade semelhante a [ui:includeClientLib](../../help/sites-developing/taglib.md) para scripts JSP.
 
@@ -286,19 +284,19 @@ Este auxiliar, apropriado somente no lado do servidor, fornece funcionalidade se
 
 * **categorias**: String
 
-  (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas JavaScript e CSS para as categorias fornecidas. O nome do tema é extraído da solicitação.
+  (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Inclua todas as bibliotecas JavaScript e CSS para as categorias fornecidas. O nome do tema é extraído da solicitação.
 
 * **tema**: String
 
-  (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas relacionadas ao tema (CSS e JS) para as categorias fornecidas. O nome do tema é extraído da solicitação.
+  (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Inclua todas as bibliotecas relacionadas ao tema (CSS e JS) para as categorias fornecidas. O nome do tema é extraído da solicitação.
 
 * **js**: String
 
-  (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas JavaScript para as categorias fornecidas.
+  (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Inclui todas as bibliotecas JavaScript para as categorias fornecidas.
 
 * **css**: String
 
-  (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Isso incluirá todas as bibliotecas CSS para as categorias fornecidas.
+  (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Inclui todas as bibliotecas CSS para as categorias fornecidas.
 
 ### Exemplos {#examples-2}
 
@@ -379,7 +377,7 @@ Depending on how long in the past, may return
 
 Um auxiliar que codifica uma cadeia de caracteres de origem para o conteúdo do elemento de HTML para ajudar a proteger contra XSS.
 
-OBSERVAÇÃO: não é um validador e não deve ser usado para gravar valores de atributo.
+OBSERVAÇÃO: este auxiliar não é um validador e não deve ser usado para gravar valores de atributo.
 
 ### Parâmetros {#parameters-9}
 
@@ -397,7 +395,7 @@ OBSERVAÇÃO: não é um validador e não deve ser usado para gravar valores de 
 
 Um auxiliar que codifica uma cadeia de caracteres de origem para gravar em um valor de atributo HTML para ajudar a proteger contra XSS.
 
-OBSERVAÇÃO: não é um validador e não deve ser usado para gravar atributos acionáveis (href, src, manipuladores de eventos).
+OBSERVAÇÃO: este auxiliar não é um validador e não deve ser usado para gravar atributos acionáveis (href, src, manipuladores de eventos).
 
 ### Parâmetros {#parameters-10}
 
@@ -415,7 +413,7 @@ OBSERVAÇÃO: não é um validador e não deve ser usado para gravar atributos a
 
 Um auxiliar que codifica uma cadeia de caracteres de origem para gravar no conteúdo de cadeia de caracteres JavaScript para ajudar a proteger contra XSS.
 
-OBSERVAÇÃO: não é um validador e não deve ser usado para gravação em JavaScript arbitrário.
+OBSERVAÇÃO: Este auxiliar não é um validador e não deve ser usado para gravação em JavaScript arbitrário.
 
 ### Parâmetros {#parameters-11}
 
@@ -433,7 +431,7 @@ var input = {{xss-jsString topic-title}}
 
 Um auxiliar que limpa um URL para gravar como um valor de atributo HTML href ou srce para ajudar a proteger contra XSS.
 
-OBSERVAÇÃO: isso pode retornar uma cadeia de caracteres vazia
+OBSERVAÇÃO: este auxiliar pode retornar uma cadeia de caracteres vazia.
 
 ### Parâmetros {#parameters-12}
 
@@ -450,7 +448,7 @@ OBSERVAÇÃO: isso pode retornar uma cadeia de caracteres vazia
 ## Visão geral básica do Handlebars.js {#handlebars-js-basic-overview}
 
 * Uma chamada de auxiliar do Handlebars é um identificador simples (o *name* do auxiliar), seguido por zero ou mais parâmetros separados por espaço.
-* Os parâmetros podem ser um objeto String, number, boolean ou JSON simples, bem como uma sequência opcional de pares de valores-chave (argumentos de hash) como os últimos parâmetros.
+* Os parâmetros podem ser um objeto String, número, booleano ou JSON simples e uma sequência opcional de pares de valores-chave (argumentos de hash) como os últimos parâmetros.
 * As chaves nos argumentos de hash devem ser identificadores simples.
 * Os valores em argumentos de hash são expressões Handlebars: identificadores simples, caminhos ou Strings.
 * O contexto atual, `this`, está sempre disponível para os auxiliares do Handlebars.
@@ -459,7 +457,7 @@ OBSERVAÇÃO: isso pode retornar uma cadeia de caracteres vazia
 
 * Bloquear auxiliares são funções que podem ser chamadas de qualquer lugar no modelo. Eles podem chamar um bloco do modelo zero ou mais vezes com um contexto diferente a cada vez. Eles contêm um contexto entre `{{#*name*}}` e `{{/*name*}}`.
 
-* Handlebars fornece um parâmetro final para auxiliares chamado de &quot;opções&quot;. O objeto especial &#39;options&#39; inclui
+* Os Handlebars fornecem um parâmetro final para os auxiliares chamados de &quot;opções&quot;. O objeto especial &#39;options&#39; inclui
 
    * Dados particulares opcionais (options.data)
    * Propriedades de valor-chave opcionais da chamada (options.hash)
@@ -526,7 +524,7 @@ Os auxiliares personalizados devem ser implementados no lado do servidor e no la
 
 ### Auxiliares personalizados do lado do servidor {#server-side-custom-helpers}
 
-Para implementar e registrar um auxiliar SCF personalizado no lado do servidor, basta implementar a interface Java [TemplateHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), torne-o um [Serviço OSGi](../../help/sites-developing/the-basics.md#osgi) e instale-o como parte de um pacote OSGi.
+Para implementar e registrar um auxiliar SCF personalizado no lado do servidor, basta implementar a interface Java™ [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), torne-o um [Serviço OSGi](../../help/sites-developing/the-basics.md#osgi) e instale-o como parte de um pacote OSGi.
 
 Por exemplo:
 

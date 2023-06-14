@@ -1,8 +1,6 @@
 ---
 title: Recurso Biblioteca de Arquivos
-seo-title: File Library Feature
 description: O recurso Biblioteca de arquivos permite que visitantes do site conectados façam upload, gerenciem e baixem arquivos
-seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '733'
 ht-degree: 9%
 
 ---
@@ -35,17 +33,17 @@ Para adicionar um `File Library` para uma página no modo de autor, localize o c
 
 * `Communities / File Library`
 
-e arraste-o para o local em uma página.
+E arraste-o para o local em uma página.
 
 Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](/help/communities/basics.md).
 
-Quando a variável [bibliotecas obrigatórias do lado do cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) são incluídos, é assim que a variável `File Library` componente aparecerá:
+Quando a variável [bibliotecas obrigatórias do lado do cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) são incluídos, é assim que a `File Library` é exibido:
 
 ![file-library1](assets/file-library1.png)
 
 ### Configuração da biblioteca de arquivos {#configuring-file-library}
 
-Selecione o colocado `File Library` para acessar e selecionar a variável `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o colocado `File Library` para que você possa acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
 
 ![configure-new](assets/configure-new.png)
 
@@ -61,11 +59,11 @@ No **Comentários** especifique se e como os comentários dos arquivos carregado
 
 * **Comentários por página**
 
-  Limita o número de comentários exibidos por página, bem como o número de respostas exibidas. O padrão é **10**.
+  Limita o número de comentários exibidos por página e o número de respostas exibidas. O padrão é **10**.
 
 * **Tamanho máximo do arquivo**
 
-  Esse valor limitará o tamanho do arquivo carregado. O limite padrão é 104857600 (10 Mb).
+  Esse valor limita o tamanho do arquivo carregado. O limite padrão é 104857600 (10 MB).
 
 * **Comprimento máximo da mensagem de**
 
@@ -73,7 +71,7 @@ No **Comentários** especifique se e como os comentários dos arquivos carregado
 
 * **Tipos de arquivos permitidos**
 
-  Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
+  Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo, .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os tipos de arquivo não especificados não serão permitidos. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
 
 * **Editor de rich text**
 
@@ -85,11 +83,11 @@ No **Comentários** especifique se e como os comentários dos arquivos carregado
 
 * **Permitir marcação**
 
-  Se marcado, a capacidade de adicionar uma tag ao arquivo será habilitada. O padrão está desmarcado.
+  Se essa opção estiver marcada, a capacidade de adicionar uma tag ao arquivo será ativada. O padrão está desmarcado.
 
 * **Namespaces permitidos**
 
-  Se Permitir marcação estiver marcado, as tags disponíveis serão limitadas aos namespaces marcados. Se nenhum estiver marcado, todos serão permitidos. O padrão é todos os namespaces.
+  Se Permitir marcação estiver marcado, as tags disponíveis serão limitadas aos namespaces marcados. Se nenhum namespace for marcado, todos serão permitidos. O padrão é todos os namespaces.
 
 * **Limite sugerido**
 
@@ -97,7 +95,7 @@ No **Comentários** especifique se e como os comentários dos arquivos carregado
 
 * **Permitir votação**
 
-  Se marcado, a capacidade de votar em um arquivo será habilitada. O padrão está desmarcado.
+  Se marcado, a capacidade de votar em um arquivo será ativada. O padrão está desmarcado.
 
 * **Permitir monitoramento**
 
@@ -113,7 +111,7 @@ No **Comentários** especifique se e como os comentários dos arquivos carregado
 
 * **Padrão de menção da interface do usuário**
 
-  Especifique a string padrão permitida para marcar (@mention) o usuário registrado em uma publicação. Por exemplo, `~{{familyName}}{{givenName}}`.
+  Especifique a cadeia de caracteres do padrão permitido para marcar (@mention) o usuário registrado em uma publicação. Por exemplo, `~{{familyName}}{{givenName}}`.
 
 * **Permitir respostas encadeadas**
 
@@ -129,7 +127,7 @@ No **Moderação de usuário** , configure a moderação de comentários, se os 
 
 * **Excluir comentários**
 
-  Se marcado, o visitante que postou o comentário recebe a capacidade de excluí-lo. O padrão está marcado.
+  Se marcado, o visitante que postou o comentário poderá excluí-lo, se desejado. O padrão está marcado.
 
 * **Negar comentários**
 
@@ -171,4 +169,4 @@ Mais informações podem ser encontradas no [Fundamentos da biblioteca de arquiv
 
 Para moderação de tópicos e comentários publicados, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
-Para marcar tópicos e comentários publicados, consulte [Marcação do conteúdo gerado pelo usuário](/help/communities/tag-ugc.md).
+Para marcar tópicos e comentários publicados, consulte [Marcação de conteúdo gerado pelo usuário](/help/communities/tag-ugc.md).

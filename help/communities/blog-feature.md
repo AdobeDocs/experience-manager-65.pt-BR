@@ -1,8 +1,6 @@
 ---
 title: Recurso de blog
-seo-title: Blog Feature
 description: Informações da comunidade em um formato de diário
-seo-description: Community information in a journaling format
 uuid: 7323063f-81e8-45c3-9035-bf7df6124830
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1652'
 ht-degree: 7%
 
 ---
@@ -34,7 +32,7 @@ O recurso de blog fornece :
 * Conteúdo de rede social incorporado ([Suporte incorporado](/help/communities/blog-developer-basics.md#allowing-rich-media))
 * Modo de rascunho
 * Publicação agendada
-* Compor em nome de (uma [membro privilegiado](/help/communities/users.md#privileged-members-group) pode criar conteúdo em nome de um membro da comunidade diferente)
+* Compor em nome de (uma [membro privilegiado](/help/communities/users.md#privileged-members-group) pode criar conteúdo em nome de outro membro da comunidade)
 * [Moderação em massa e no contexto](/help/communities/moderate-ugc.md) de artigos e comentários do blog
 
 Esta seção da documentação descreve:
@@ -55,17 +53,17 @@ Se desejar adicionar um blog a uma página no modo de autor, use o navegador de 
 * `Communities / Blog`
 * `Communities / Blog Sidebar`
 
-e arraste-os para o local em uma página onde o blog deve aparecer.
+E arraste-os para o lugar em uma página onde o blog deve aparecer.
 
 Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](/help/communities/basics.md).
 
-Quando a variável [bibliotecas obrigatórias do lado do cliente](/help/communities/blog-developer-basics.md#essentials-for-client-side) são incluídos, é assim que a variável `Blog` componente aparecerá:
+Quando a variável [bibliotecas obrigatórias do lado do cliente](/help/communities/blog-developer-basics.md#essentials-for-client-side) estão incluídos, a variável `Blog` componente aparece da seguinte forma:
 
 ![add-blog-component](assets/add-blog-component.png)
 
 ### Configuração de blog {#configuring-blog}
 
-Selecione o colocado `Blog` para acessar e selecionar a variável `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o colocado `Blog` para que você possa acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
 
 ![configurar](assets/configure-new.png)
 
@@ -85,7 +83,7 @@ No **Configurações** especifique os recursos básicos do blog:
 
 * **Tamanho mínimo de imagem para a miniatura**
 
-  Tamanho mínimo (em bytes) da imagem para gerar a miniatura para imagens integradas. O valor padrão é 100000 bytes (100kb).
+  Tamanho mínimo (em bytes) da imagem para gerar a miniatura para imagens integradas. O valor padrão é 100000 bytes (100 kb).
 
 * **Tamanho máximo da miniatura**
 
@@ -123,7 +121,7 @@ No **Configurações** especifique os recursos básicos do blog:
 
 * **Moderada**
 
-  Se marcado, a postagem de entradas de blog e comentários deve ser aprovada antes de serem exibidos em um site publicado. O padrão é desmarcado.
+  Se marcados, a postagem de entradas de blog e comentários deve ser aprovada antes de serem exibidos em um site publicado. O padrão é desmarcado.
 
 * **Fechado**
 
@@ -143,11 +141,11 @@ No **Configurações** especifique os recursos básicos do blog:
 
 * **Tamanho máximo do arquivo**
 
-  Relevante apenas se `Allow File Uploads` está marcado. Esse campo limitará o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
+  Relevante apenas se `Allow File Uploads` está marcado. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
 * **Tipos de arquivos permitidos**
 
-  Relevante apenas se `Allow File Uploads` está marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
+  Relevante apenas se `Allow File Uploads` está marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os tipos de arquivo não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
 
 * **Tamanho máximo do arquivo de imagem a ser anexado**
 
@@ -181,11 +179,11 @@ No **Configurações** especifique os recursos básicos do blog:
 
 * **Ativar conteúdo em destaque**
 
-  Se marcada, a ideia pode ser identificada como [conteúdo em destaque](/help/communities/featured.md). O padrão está desmarcado.
+  Se marcada, a ideia é identificada como [conteúdo em destaque](/help/communities/featured.md). O padrão está desmarcado.
 
 * **Ativar a menção**
 
-  Se ativado, permite que os usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e marquem-nos usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas menções.
+  Se ativado, permite que os usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e marquem-nos usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas próprias menções.
 
 * **Quantidade máxima de menções**
 
@@ -201,7 +199,7 @@ No **Moderação de usuário** especifique as configurações de moderação:
 
 * **Negar postagens**
 
-  Se marcados, os moderadores de membros confiáveis poderão negar postagens e impedir que a postagem apareça no fórum público. O padrão está desmarcado.
+  Se marcados, os moderadores de membros confiáveis têm permissão para negar postagens e impedir que elas apareçam no fórum público. O padrão está desmarcado.
 
 * **Fechar/Reabrir tópicos**
 
@@ -229,11 +227,11 @@ No **Moderação de usuário** especifique as configurações de moderação:
 
 #### Guia Campo de tag {#tag-field-tab}
 
-No **Campo de tag** especifique as tags que poderão ser aplicadas se **Permitir marcação** é verificar no **Configurações** Guia:
+No **Campo de tag** especifique quais tags podem ser aplicadas se **Permitir marcação** é verificar no **Configurações** Guia:
 
 * **Namespaces permitidos**
 
-  Relevante se `Allow Tagging` é verificado sob o **Configurações** guia. As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace marcadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão é nenhum marcado, o que significa que todos os namespaces são permitidos.
+  Relevante se `Allow Tagging` é verificado sob o **Configurações** guia. As tags que podem ser aplicadas estão limitadas às tags nas categorias de namespace marcadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão é nenhum marcado, o que significa que todos os namespaces são permitidos.
 
 * **Limite sugerido**
 
@@ -249,7 +247,7 @@ No **Configurações da barra lateral do diário** especifique o formato de data
 
 * **Formato de data**
 
-  O formato usado para exibir arquivos de entradas de blog. O formato usa espaços reservados seguindo a convenção do Java.
+  O formato usado para exibir arquivos de entradas de blog. O formato usa espaços reservados seguindo a convenção do Java™.
 
    * aaaa : ano completo, como &#39;2015&#39;
    * aa : ano curto, como &quot;15&quot;
@@ -267,9 +265,9 @@ No **Configurações da barra lateral do diário** especifique o formato de data
    * Categorias
    * Arquivos
 
-* **Caminho do componente Blopg**
+* **Caminho do componente de blog**
 
-  *(Opcional)* A localização do recurso de blog do qual os artigos de blog devem ser listados. Se deixado em branco, usará o componente de resourceType `social/journal/components/hbs/journal` que aparece na mesma página.
+  *(Opcional)* A localização do recurso de blog do qual os artigos de blog devem ser listados. Se deixado em branco, ele usará o componente de resourceType `social/journal/components/hbs/journal` que aparece na mesma página.
 
    * Por exemplo, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -279,7 +277,7 @@ No **Configurações da barra lateral do diário** especifique o formato de data
 
 ## Experiência de visitante do site {#site-visitor-experience}
 
-No ambiente de publicação, o recurso de blog exibirá o artigo de blog mais recente seguido de artigos de blog mais antigos em ordem decrescente de criação. As barras laterais de blog permitem que os visitantes do site apliquem filtros para limitar a seleção de artigos de blog exibidos.
+No ambiente de publicação, o recurso de blog exibe o artigo de blog mais recente seguido de artigos de blog mais antigos em ordem decrescente de criação. As barras laterais de blog permitem que os visitantes do site apliquem filtros para limitar a seleção de artigos de blog exibidos.
 
 O artigo do blog é seguido por um link para publicar ou exibir comentários.
 
@@ -289,13 +287,13 @@ Outras habilidades dependem se o visitante do site é moderador, administrador, 
 
 ### Trabalhar com artigos {#working-with-articles}
 
-Ao criar um novo artigo de blog, há a opção de:
+Ao criar um artigo de blog, existe a opção de fazer o seguinte:
 
 1. Publicar imediatamente
 1. Publicar um rascunho
 1. Publicar em uma data e hora programadas
 
-Os artigos do blog serão exibidos na guia apropriada (Publicado, Rascunhos ou Agendado) para os membros que podem ser autores em publicações.
+Os artigos do blog aparecem na guia apropriada (Publicado, Rascunhos ou Agendado) para membros que podem ser autores em publicações.
 
 #### Moderadores e administradores {#moderators-and-administrators}
 
@@ -309,7 +307,7 @@ Quando o usuário conectado é um membro da comunidade ou [membro privilegiado](
 
 Especificamente, eles podem:
 
-* Criar um novo artigo de blog
+* Criar um artigo de blog
 * Publicar um novo artigo de blog em nome de outro membro
 * Publicar um comentário em um artigo do blog
 * Editar seu próprio artigo de blog ou comentário
@@ -332,6 +330,6 @@ Mais informações podem ser encontradas no [Fundamentos do blog](/help/communit
 
 Para moderação de entradas e comentários do blog, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
-Para marcar entradas de blog e comentários, consulte [Marcação do conteúdo gerado pelo usuário](/help/communities/tag-ugc.md).
+Para marcar entradas de blog e comentários, consulte [Marcação de conteúdo gerado pelo usuário](/help/communities/tag-ugc.md).
 
 Para tradução de entradas e comentários do blog, consulte [Tradução de conteúdo gerado pelo usuário](/help/communities/translate-ugc.md).
