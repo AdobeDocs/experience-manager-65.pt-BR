@@ -1,16 +1,14 @@
 ---
 title: Remover os sites do Geometrixx
-seo-title: Removing the Geometrixx Sites
 description: Saiba como remover o conteúdo de Geometrixx de exemplo.
-seo-description: Learn how to remove the sample Geometrixx content.
 uuid: 07d20837-3375-4e64-bb07-3e4d10452335
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '126'
 ht-degree: 0%
 
 ---
@@ -38,11 +36,11 @@ Há também um super-pacote:
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-Este pacote inclui todos os pacotes individuais acima. Para remover todo o conteúdo relacionado ao geometrixx de uma só vez, clique em **Desinstalar** neste pacote. O superpacote entrará no estado desinstalado e todos os pacotes individuais desaparecerão da visualização do gerenciador de pacotes.
+Este pacote inclui todos os pacotes individuais acima. Para remover todo o conteúdo relacionado ao geometrixx de uma só vez, clique em **Desinstalar** neste pacote. O superpacote entra no estado desinstalado e todos os pacotes individuais desaparecem da exibição do Gerenciador de pacotes.
 
 Agora você tem uma instância &quot;vazia&quot; do AEM sem nenhum site de demonstração.
 
 >[!NOTE]
 >
->Ao atualizar, os sites do geometrixx são automaticamente reinstalados. Talvez seja necessário remover os sites do geometrixx após a atualização se você não quiser essas amostras.
+>Ao atualizar, os sites do Geometrixx são automaticamente reinstalados. Remova os sites do Geometrixx depois da atualização se não quiser essas amostras.
 

@@ -1,8 +1,6 @@
 ---
 title: Desenvolvimento de aplicativos com a CLI do PhoneGap
-seo-title: Developing Apps with PhoneGap CLI
-description: Siga esta página para saber mais sobre como desenvolver aplicativos com a CLI do PhoneGap.
-seo-description: Follow this page to learn about developing apps with PhoneGap CLI.
+description: Saiba mais sobre como desenvolver aplicativos com a CLI do PhoneGap.
 uuid: 9a66171d-19af-40db-9c07-f5dd9561e1b5
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -25,7 +23,7 @@ ht-degree: 0%
 
 A qualquer momento, como desenvolvedor, você pode executar o aplicativo em um dispositivo ou em um emulador, desde que tenha configurado o ambiente de desenvolvimento.
 
-Para executar os exemplos a seguir, será necessário um sistema que execute OSx (Mac) com Xcode ou um sistema Mac/Win/Linux com o Android SDK instalado.
+Para executar os exemplos a seguir, é necessário um sistema que execute o OS X (Mac) com Xcode ou um sistema Mac/Win/Linux com o Android™ SDK instalado.
 
 ## Bootstrap do ambiente de desenvolvimento {#bootstrap-your-development-environment}
 
@@ -33,17 +31,17 @@ Para executar os exemplos a seguir, será necessário um sistema que execute OSx
 
 Para iOS: para desenvolver iPhones e iPads, é necessário o Xcode IDE da Apple.
 
-* Baixe gratuitamente [aqui](https://developer.apple.com/xcode/downloads/).
+* Baixe gratuitamente [aqui](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
 * [Guia da plataforma PhoneGap iOS](https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
 
-Para Android: para desenvolver iPhones e iPads, é necessário o Android Studio IDE da Google.
+Para Android™: para desenvolver iPhones e iPads, é necessário o Android™ Studio IDE da Google.
 
-* Baixe gratuitamente [aqui](https://developer.android.com/sdk/index.html).
-* [Guia da plataforma PhoneGap Android](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
+* Baixe gratuitamente [aqui](https://developer.android.com/studio).
+* [Guia da plataforma PhoneGap Android™](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
 
 ## Baixar a Origem {#download-the-source}
 
-Depois de inicializar seu ambiente de desenvolvimento com êxito, baixe a origem do Bloco de build do aplicativo AEM:
+Depois de inicializar seu ambiente de desenvolvimento com êxito, baixe a origem do Bloco de build de aplicativo AEM:
 
 * Clique na divisa suspensa do bloco PhoneGap Build.
 
@@ -58,7 +56,7 @@ Depois de inicializar seu ambiente de desenvolvimento com êxito, baixe a origem
 >
 >A fonte de desenvolvimento contém o estado mais recente do aplicativo, enquanto inclui alterações não preparadas. Use a fonte de Preparo para criar candidatos a lançamento para enviar a fornecedores da loja de aplicativos.
 >
->Se você nunca preparar seu aplicativo, selecionar Preparo acionará o fluxo de trabalho de preparo (dica: isso será exibido como um aplicativo preparado no aplicativo Visualizador Corporativo do PhoneGap, disponível na AppStore e na Google PlayStore).
+>Se você nunca preparar seu aplicativo, selecionar Preparo acionará o fluxo de trabalho de preparo (dica: é exibido como um aplicativo preparado no aplicativo Visualizador corporativo do PhoneGap, disponível na AppStore e na Google PlayStore).
 
 * Clique em Baixar e salve o ZIP no computador.
 * Extraia o arquivo zip baixado para o espaço de trabalho.
@@ -85,21 +83,20 @@ phonegap run ios
 
 >[!NOTE]
 >
->Se você tiver problemas neste momento, volte aos conceitos básicos para solucionar problemas -
+>Se você tiver problemas neste momento, volte aos conceitos básicos para solucionar os problemas -
 >
->1. Criar uma nova pasta (teste mkdir)
+>1. Criar uma pasta (teste mkdir)
 >1. Navegar para esta nova pasta (teste de cd)
->1. Executar &#39;phonegap create helloWorld&#39;
+>1. Executar `phonegap create helloWorld`
 >1. Navegue até helloWorld (cd helloWorld)
->1. Execute &#39;phonegap run android (ou substitua android por ios como descrito acima).
->1. O emulador será aberto executando o aplicativo PhoneGap recém-criado, informando &quot;Device Ready&quot; (Pronto para dispositivo) se a ponte JavaScript para o nativo estiver operacional.
-
+>1. Executar `phonegap run android` (ou substitua o android pelo iOS conforme descrito acima).
+>1. O emulador é aberto executando o aplicativo PhoneGap recém-criado, informando &quot;Device Ready&quot; (Pronto para dispositivo) se a ponte JavaScript para o nativo estiver operacional.
 >
->Isso verificará se o ambiente de desenvolvimento da CLI do PhoneGap está funcionando corretamente.
+>Essa solução de problemas verifica se o ambiente de desenvolvimento da CLI do PhoneGap está sendo executado corretamente.
 
-## Depurar JavaScripts com a depuração do Safari e do IOS {#debug-javascripts-with-safari-and-ios-debug}
+## Depurar JavaScript com depuração do Safari e IOS {#debug-javascripts-with-safari-and-ios-debug}
 
-Você pode depurar os JavaScripts do aplicativo usando as ferramentas de desenvolvedor do Safari, da mesma forma que faria com um aplicativo web.
+Você pode depurar o JavaScript do aplicativo usando as ferramentas de desenvolvedor do Safari, da mesma forma que faria com um aplicativo web.
 
 ## Ativar as ferramentas de desenvolvedor do Safari {#enable-safari-developer-tools}
 
@@ -122,7 +119,7 @@ Para ativar as ferramentas do desenvolvedor:
 Você pode conectar o Safari a um dispositivo ou emulador do iOS.
 
 * Em uma janela de console, navegue até o diretório raiz da origem extraída.
-* Digite o seguinte comando para iniciar seu aplicativo no dispositivo ou emulador.
+* Digite o comando a seguir para iniciar o aplicativo no dispositivo ou emulador.
 
 ```xml
 phonegap run <platform> --device
@@ -141,11 +138,11 @@ phonegap run <platform> --emulator
 
 ## Depurar JavaScript com o Inspetor da Web do Safari {#debug-javascript-with-safari-s-web-inspector}
 
-Você pode definir pontos de interrupção em qualquer lugar na sua origem. Quando você interage com o emulador ou dispositivo, a execução do aplicativo é interrompida nesses pontos de interrupção. Você pode percorrer a execução e inspecionar os valores nas variáveis.
+Você pode definir pontos de interrupção em qualquer lugar na sua origem. Quando você interage com o emulador ou dispositivo, a execução do aplicativo para nesses pontos de interrupção. É possível percorrer as etapas de execução e inspecionar os valores nas variáveis.
 
 * Clique em Recursos na janela Inspetor Web
 * Navegue pela árvore de origem e clique no arquivo de origem desejado
-* Clique no número da linha adjacente para adicionar um ponto de interrupção
+* Clique no número da linha ao lado da adição de um ponto de interrupção
 * Interagir com dispositivo ou emulador
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
@@ -160,4 +157,4 @@ Você pode definir pontos de interrupção em qualquer lugar na sua origem. Quan
 
 ## Próximas etapas {#the-next-steps}
 
-Depois de saber mais sobre o desenvolvimento de aplicativos com a CLI do PhoneGap, consulte [Acessar recursos do dispositivo](/help/mobile/phonegap-access-device-features.md).
+Depois de saber mais sobre como desenvolver aplicativos com a CLI do PhoneGap, consulte [Acessar recursos do dispositivo](/help/mobile/phonegap-access-device-features.md).

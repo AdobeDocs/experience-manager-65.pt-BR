@@ -1,6 +1,5 @@
 ---
 title: API de Serviço de Backup e Restauração Inicializações Rápidas
-seo-title: Backup and Restore Service APIQuick Starts
 description: API de Serviço de Backup e Restauração Inicializações Rápidas
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
@@ -10,9 +9,9 @@ topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -21,21 +20,21 @@ ht-degree: 0%
 
 **Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
 
-O Java API Quick Start (SOAP) está disponível para a API de serviço de backup e restauração.
+O Java™ API Quick Start (SOAP) está disponível para a API de serviço de backup e restauração.
 
-[Início rápido: entrando no modo de backup usando a API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Início rápido: entrando no modo de backup usando o Java](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Início rápido: saindo do modo de backup usando a API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[Início rápido: sair do modo de backup usando o Java](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->Os Quick Starts localizados em Programação com o AEM Forms são baseados no sistema operacional Forms. No entanto, se você estiver usando outro sistema operacional, como o UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Os Quick Starts na programação com o AEM Forms são baseados no sistema operacional Forms. No entanto, se você estiver usando outro sistema operacional, como o UNIX®, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Início rápido (modo SOAP): entrando no modo de backup usando a API Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
+## Início rápido (modo SOAP): entrando no modo de backup usando a API Java™ {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-O exemplo de código Java a seguir entra no modo de backup com um rótulo exclusivo para duas horas. Depois que o tempo de backup expirar ou se o modo de backup for explicitamente encerrado, o servidor de formulários retornará para a limpeza de arquivos do Armazenamento global de documentos. (Consulte [Entrando no Modo de Backup no servidor de formulários](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
+O seguinte exemplo de código Java™ entra no modo de backup com um rótulo exclusivo para duas horas. Depois que o tempo de backup expirar ou se o modo de backup for explicitamente encerrado, o Forms Server retornará para a limpeza de arquivos do Armazenamento global de documentos. (Consulte [Entrando no modo de backup no servidor do Forms](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -123,7 +122,7 @@ O exemplo de código Java a seguir entra no modo de backup com um rótulo exclus
              // Enter backup mode on the forms server server
              BackupModeEntryResult backupResult = backup.enterBackupMode(backUpLabel,minsInBackupMode, continousCoverage);
  
-             // Get information from entering backup mode ontheforms server server.
+             // Get information from entering backup mode on the forms server server.
              if (backupResult != null)
              {
                  System.out.println("Start time is: " + backupResult.getStartTime());
@@ -148,9 +147,9 @@ O exemplo de código Java a seguir entra no modo de backup com um rótulo exclus
  
 ```
 
-## Início rápido (modo SOAP): saindo do modo de backup usando a API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Início rápido (modo SOAP): saindo do modo de backup usando a API Java™ {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-O exemplo de código Java a seguir faz com que um Forms Server saia do modo de backup e retorne à limpeza de arquivos do Armazenamento global de documentos. (Consulte [Deixando o modo de backup no servidor de formulários](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
+O seguinte exemplo de código Java™ faz com que um Forms Server saia do modo de backup e retorne à limpeza de arquivos do Armazenamento global de documentos. (Consulte [Saindo do modo de backup no servidor do Forms](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```java
  /*

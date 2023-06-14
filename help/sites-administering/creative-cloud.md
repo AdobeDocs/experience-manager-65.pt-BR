@@ -1,8 +1,6 @@
 ---
 title: Compartilhamento de pastas com o Adobe Creative Cloud
-seo-title: Folder sharing with Adobe Creative Cloud
 description: Saiba mais sobre a pasta de compartilhamento com o Adobe Creative Cloud
-seo-description: Learn about sharing folder with Adobe Creative Cloud
 uuid: 4d93df7d-36da-43bb-a069-42993c607b2b
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 7699c08b-a5b8-4f8b-8856-113d09349f49
 docset: aem65
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 15%
+source-wordcount: '68'
+ht-degree: 7%
 
 ---
 
@@ -22,7 +20,7 @@ ht-degree: 15%
 
 >[!CAUTION]
 >
->O recurso de compartilhamento de pasta AEM para Creative Cloud está obsoleto. Os clientes são extremamente recomendáveis a usar recursos mais recentes, como o [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) ou [aplicativo de desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR). Saiba mais em [Práticas recomendadas de integração de AEM e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>O recurso de compartilhamento de pasta AEM para Creative Cloud está obsoleto. Os clientes são aconselhados a usar recursos mais recentes, como o [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) ou [aplicativo de desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en). Saiba mais em [Práticas recomendadas de integração de AEM e Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

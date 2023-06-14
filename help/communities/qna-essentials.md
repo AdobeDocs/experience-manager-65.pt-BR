@@ -1,8 +1,6 @@
 ---
 title: Fundamentos de QnA
-seo-title: QnA Essentials
 description: Recurso de fórum de perguntas e respostas
-seo-description: Questions and answers forum feature
 uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +8,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '239'
 ht-degree: 2%
 
 ---
@@ -30,7 +28,7 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
    <td>social/qna/components/hbs/qnaforum</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component">incluível</a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component">include</a></td>
    <td>Não</td>
   </tr>
   <tr>
@@ -56,22 +54,22 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API QnA](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [API QnA](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [Pontos finais de QnA](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [Pontos finais de QnA](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
 ### Função QnA {#qna-function}
 
-Uma estrutura de site da comunidade que inclui o [Função QnA](functions.md#qna-function) terá um configurado `QnA` componente, bem como configurações que afetam a moderação e a marcação. A função QnA é compatível com a identificação de um [grupo de usuários membro privilegiado](users.md#privileged-members-group).
+Uma estrutura de site da comunidade que inclui o [Função QnA](functions.md#qna-function) tem um configurado `QnA` e configurações que afetam a moderação e a marcação. A função QnA é compatível com a identificação de um [grupo de usuários membro privilegiado](users.md#privileged-members-group).
 
 ### Acessar publicações do fórum QnA (UGC) {#accessing-qna-forum-posts-ugc}
 
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 

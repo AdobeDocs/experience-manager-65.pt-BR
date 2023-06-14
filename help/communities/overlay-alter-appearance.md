@@ -1,8 +1,6 @@
 ---
 title: Alterar a aparência
-seo-title: Alter the Appearance
 description: Modificar o script
-seo-description: Modify the script
 uuid: 30555b9f-da29-4115-9ed5-25f80a247bd6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -44,7 +42,7 @@ Para não exibir o avatar ao lado de cada comentário publicado:
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Exclua as linhas ou coloque-as em volta `<!--` e `-->` para comentá-los. Além disso, os caracteres &quot;xxx&quot; estão sendo adicionados como um indicador visual de onde o avatar estaria.
+Exclua as linhas ou coloque-as em volta `<!--` e `-->` então você comenta eles. Além disso, os caracteres &quot;xxx&quot; estão sendo adicionados como um indicador visual de onde o avatar estaria.
 
 ```xml
    xxx
@@ -63,14 +61,14 @@ Envie o componente de comentários sobrepostos para a instância de publicação
 
 Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]** e clique em **[!UICONTROL Ativar árvore]**.
 
-No Caminho inicial, digite `/apps/social/commons` e selecione **[!UICONTROL Ativar]**.
+Para o Caminho inicial, insira `/apps/social/commons` e selecione **[!UICONTROL Ativar]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 
 ### Exibir resultados {#view-results}
 
-Se você fizer logon na instância de publicação como administrador, por exemplo, https://localhost:4503/crx/de como administrador/administrador, poderá verificar se os componentes sobrepostos estão lá.
+Se você fizer logon na instância de publicação como administrador, por exemplo, https://localhost:4503/crx/de como administrador/administrador, será possível verificar se os componentes sobrepostos estão lá.
 
-Se você fizer logout e fizer logon novamente como `aaron.mcdonald@mailinator.com/password` e, ao atualizar a página, você observará que o comentário publicado não é mais exibido com um avatar, em vez de um simples &quot;xxx&quot; ser exibido.
+Se você fizer logoff e, em seguida, fazer logon como `aaron.mcdonald@mailinator.com/password` e atualizar a página, você observa que um avatar não é exibido com o comentário publicado. Em vez disso, um simples &quot;xxx&quot; é exibido.
 
 ![create-template-component](assets/create-template-component.png)

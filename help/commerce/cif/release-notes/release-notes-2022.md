@@ -2,10 +2,10 @@
 title: Notas de versão de 2022 de conteúdo e comércio de AEM
 description: Notas de versão de 2022 de conteúdo e comércio de AEM
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 0fdff88695646603cec120d25f156f8c918686df
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 46%
+source-wordcount: '816'
+ht-degree: 35%
 
 ---
 
@@ -17,7 +17,7 @@ Consulte na tabela a seguir os requisitos mínimos do sistema para saber a vers�
 
 | Componente | Requisitos do sistema |
 |:-------|:-----:|
-| Complemento CIF | Mínimo: Esquemas GraphQL com AEM 6.5.7, Magento 2.3.5 |
+| Complemento CIF | Mínimo: esquemas do GraphQL com AEM 6.5.7, Adobe Commerce 2.3.5 |
 | Componentes principais da CIF | [Requisitos do sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Arquétipo de projeto do AEM | [Requisitos do sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -45,7 +45,7 @@ Consulte na tabela a seguir os requisitos mínimos do sistema para saber a vers�
 ### Novidades {#what-is-new-july}
 
 * Associação de páginas de AEM a produtos e categorias por meio de propriedades de página de AEM, além de visão geral no cockpit do produto
-   ![associação de página do cockpit do produto](/help/assets/CIF/product_cockpit_page_association.png)
+  ![associação de página do cockpit do produto](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Data de lançamento: junho de 2022
 
@@ -57,7 +57,7 @@ Consulte na tabela a seguir os requisitos mínimos do sistema para saber a vers�
 
 ### Novidades {#what-is-new-june}
 
-* O enriquecimento do catálogo de produtos agora é compatível com as páginas do AEM. Isso permite que os autores gerenciem a associação entre página e produto.
+* O enriquecimento do catálogo de produtos agora é compatível com páginas AEM, permitindo que os autores gerenciem a associação entre página e produto.
 
 * Várias melhorias nos Componentes principais da CIF
 
@@ -65,7 +65,7 @@ Consulte na tabela a seguir os requisitos mínimos do sistema para saber a vers�
 
 * Adicionar token de logon à busca de preços no lado do cliente
 
-* Componente de página incorreto no datalayer
+* Componente de página incorreto na camada de dados.
 
 ## Data de lançamento: maio de 2022
 
@@ -87,7 +87,7 @@ Consulte na tabela a seguir os requisitos mínimos do sistema para saber a vers�
 
 ### Correções de erros {#bug-fixes-may}
 
-* O campo seletor de produtos de vários valores mostra o 2º produto e os demais produtos como inválidos
+* O campo seletor de produtos de vários valores mostra produtos secundários e adicionais como inválidos
 
 * Ocasionalmente, o seletor de produto fica oculto atrás dos componentes
 
@@ -103,11 +103,11 @@ Consulte na tabela a seguir os requisitos mínimos do sistema para saber a vers�
 
 * Acesso rápido ao cockpit de produtos: acesse facilmente as informações completas e detalhadas do produto com um clique no Editor de sites
 
-   ![Ativar lista de desejos](/help/assets/CIF/enable-wishlist.png)
+  ![Ativar lista de desejos](/help/assets/CIF/enable-wishlist.png)
 
 * Compatibilidade com componentes adicionais de comércio de marketing: os componentes podem ser configurados para mostrar uma chamada para ação de adição ao carrinho e de lista de desejos
 
-   ![Atalho do Editor de sites para o cockpit de produtos](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+  ![Atalho do Editor de sites para o cockpit de produtos](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## Data de lançamento: fevereiro de 2022
 
@@ -121,9 +121,9 @@ Consulte na tabela a seguir os requisitos mínimos do sistema para saber a vers�
 
 * Beta: Suporte do componente principal de pesquisa CIF do AEM para o Commerce LiveSearch
 * SEO aprimorado para cenários com várias lojas: os formatos de URL para PDP/PLP agora podem ser configurados no nível da loja por meio das propriedades de configuração da nuvem do CIF
-* O seletor de produto oferece suporte a produtos preparados por meio da nova opção de filtro na interface.  Isso permite que os profissionais de conteúdo preparem o gerenciamento de conteúdo do produto para lançamentos de produtos futuros
+* O seletor de produtos oferece suporte a produtos por etapa por meio da nova opção de filtro na interface. Permite que os profissionais de conteúdo preparem o gerenciamento de conteúdo do produto para lançamentos futuros
 * Gerenciamento simplificado de configurações e tratamento de erros do CIF usando o nome de configuração da nuvem do CIF em vez da configuração do URL de proxy
-* Seleção manual da categoria para a lista de produtos e os componentes do carrossel. Isso permite que os profissionais de conteúdo usem esses componentes em páginas de conteúdo, fora da experiência de catálogo
+* Seleção manual da categoria para a lista de produtos e os componentes do carrossel. Permite que os profissionais de conteúdo usem esses componentes em páginas de conteúdo, fora da experiência de catálogo
 
 ## Data de lançamento: janeiro de 2022
 
