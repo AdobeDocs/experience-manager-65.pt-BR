@@ -8,9 +8,9 @@ user-guide-title: Guia do Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
-source-git-commit: f0ffa552bd4a5b8b20a58aed7847c4de07acc4f4
+source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
 workflow-type: tm+mt
-source-wordcount: '3860'
+source-wordcount: '3870'
 ht-degree: 4%
 
 ---
@@ -134,6 +134,7 @@ ht-degree: 4%
 + Forms adaptável - Criação básica {#adaptive-forms-basic-authoring}
    + [Práticas recomendadas para trabalhar com formulários adaptáveis](using/adaptive-forms-best-practices.md)
    + [Criação de um formulário adaptável](using/creating-adaptive-form.md)
+   + [Criar ou adicionar um formulário adaptável à página do AEM Sites](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
    + [Fragmentos de formulário adaptável](using/adaptive-form-fragments.md)
    + [Configuração da ação Enviar](using/configuring-submit-actions.md)
    + [Uso de CAPTCHA em formulários adaptáveis](using/captcha-adaptive-forms.md)
@@ -468,13 +469,13 @@ ht-degree: 4%
       + [Ativação de comentários on-line para o plug-in do navegador da Web do Adobe Reader](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
       + [Configuração de valores de tempo limite para uso com extensões do Acrobat Reader DC](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
       + [Atualização de certificados do serviço de extensão de Reader expirados](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
-   + Trabalhar com o gerador de PDF {#work-with-pdf-generator}
+   + Trabalhar com o PDF Generator {#work-with-pdf-generator}
       + [Introdução ao trabalho com o PDF Generator](/help/forms/using/admin-help/overview-5.md)
       + [Ativação de conversões de arquivos multithread](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
       + [Definição das configurações do Adobe PDF](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [Definição das configurações de segurança](/help/forms/using/admin-help/configuring-security-settings.md)
       + [Definição das configurações de tipo de arquivo](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [Importação e exportação de arquivos de configuração do Gerador de PDF](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [Importação e exportação de arquivos de configuração de PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [Habilitar suporte para PDF/A](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [Configuração de uma impressora de rede PDFG (somente Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [Configuração de fontes de fallback](/help/forms/using/admin-help/configuring-fallback-fonts.md)
