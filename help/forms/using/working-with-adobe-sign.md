@@ -11,9 +11,9 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 4714554609a10e58b1c7141696d694fac46887a6
+source-git-commit: 66674f0e2621d8786ab4d662cddad373122d8b51
 workflow-type: tm+mt
-source-wordcount: '3826'
+source-wordcount: '3855'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,8 @@ Execute as seguintes etapas para adicionar campos a um formulário adaptável e 
    >
    >    * Usar [!DNL Adobe Sign] o bloco não é obrigatório [!DNL Adobe Sign] em um formulário adaptável. Se você não usar [!DNL Adobe Sign] bloquear e adicionar campos para os signatários, o campo de assinatura padrão será exibido na parte inferior dos documentos de assinatura.
    >    * Uso [!DNL Adobe Sign] bloquear somente para formulários adaptáveis que geram automaticamente Documento de registro. Se estiver usando um XDP personalizado para gerar um Documento de registro ou um formulário adaptável baseado em modelo de formulário, [!DNL Adobe Sign] bloco não é suportado.
-
+   >
+   >
 
 1. Selecione o **[!UICONTROL Bloco do Adobe Sign]** e toque no botão **Editar** ![aem_6_3_edit](assets/aem_6_3_edit.png) ícone. Ele exibe opções para adicionar campos e a aparência do formato de um campo.
 
@@ -194,11 +195,13 @@ Você pode ter apenas um ou vários signatários para um formulário adaptável.
 
    * **[!UICONTROL Endereço de e-mail do assinante]:** Especifique o endereço de email do signatário. O signatário recebe para ser assinados documentos/formulários no endereço de email especificado. Você pode optar por usar um endereço de email fornecido em um campo de formulário, no perfil de usuário AEM do usuário conectado ou inserir manualmente um endereço de email. É uma etapa obrigatória. Verifique se o endereço de email do primeiro signatário ou do único signatário (no caso de um signatário único) não é idêntico a [!DNL Adobe Sign] conta usada para configurar os serviços em nuvem do AEM.
 
-   * **[!UICONTROL Método de autenticação do assinante]:** Especifique o método para autenticar um usuário antes de abrir um formulário para assinatura. Você pode escolher entre telefone, base de conhecimento e autenticação com base na identidade social.
+   * **[!UICONTROL Método de autenticação do assinante]:** Especifique o método para autenticar um usuário antes de abrir um formulário para assinatura. Você pode escolher entre telefone, base de conhecimento e autenticação com base na identidade social. Para o Adobe Acrobat Sign Solutions for Government, somente as opções de autenticação por telefone e com base em conhecimento estão disponíveis.
+
    >[!NOTE]
    >
    >    * Por padrão, a autenticação com base na identidade social fornece uma opção para autenticar usando o Facebook, o Google e o LinkedIn. Você pode entrar em contato [!DNL Adobe Sign] suporte para habilitar outros provedores de autenticação social.
-
+   >
+   >
 
    * **[!DNL Adobe Sign]campos a serem preenchidos ou assinados:** Selecionar [!DNL Adobe Sign] para o signatário. Um formulário adaptável pode ter vários [!DNL Adobe Sign] campos. Você pode optar por ativar campos específicos para um signatário. O campo exibe todas as [!DNL Adobe Sign] Blocos. Ao selecionar um bloco, todos os campos do bloco são selecionados. Você pode usar o ícone X para desmarcar um campo.
 
@@ -248,7 +251,8 @@ Depois [edição de propriedades de formulário adaptável para o sinal de Adobe
 
    Aplique assinaturas digitais ao formulário adaptável usando:
 
-   * Assinaturas na nuvem: assine com um [ID digital](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) hospedado por um provedor de serviços de confiança.
+   * Assinaturas na nuvem: assine com um [ID digital](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) hospedado por um provedor de serviços de confiança. A opção Assinatura na nuvem não está disponível para o Adobe Acrobat Sign Solutions para o governo.
+
    * Adobe Acrobat ou Reader: baixe e abra o documento com o Adobe Acrobat ou Reader para assinar usando um cartão inteligente, token USB ou ID digital baseada em arquivo.
 
    Depois de adicionar o campo de assinatura em nuvem ao formulário adaptável, execute as seguintes etapas para concluir o processo de configuração:
@@ -257,7 +261,6 @@ Depois [edição de propriedades de formulário adaptável para o sinal de Adobe
    * [Selecione Adobe Sign Cloud Service para obter um formulário adaptável](../../forms/using/working-with-adobe-sign.md#selectadobesigncloudserviceforanadaptiveform)
    * [Adicionar signatários do Adobe Sign a um formulário adaptável](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform)
    * [Selecione Enviar ação para um formulário adaptável](../../forms/using/working-with-adobe-sign.md#selectsubmitactionforanadaptiveform)
-
 
 ## Criar experiência de assinatura no formulário {#create-in-form-signing-experience}
 
@@ -297,7 +300,6 @@ Execute as seguintes etapas para configurar o componente Etapa de assinatura:
    >
    >* Ao arrastar e soltar a variável **[!UICONTROL Etapa de assinatura]** componente ao formulário, a variável **[!UICONTROL O signatário e a pessoa que preenche o formulário são a mesma pessoa?]** é automaticamente definida para **Sim**. É necessário manter o formulário funcionando.
    >* Use o componente Etapa de resumo após o componente Etapa de assinatura para obter a melhor experiência. A etapa Resumo envia o formulário automática e imediatamente após você concluir a assinatura de um formulário no componente Etapa de assinatura. Se você não usar a etapa de resumo, um envio automático será acionado somente após o intervalo definido usando o [Serviço de configuração do Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
-
    >
    >Algumas práticas recomendadas são:
    >
@@ -306,7 +308,6 @@ Execute as seguintes etapas para configurar o componente Etapa de assinatura:
    >* Os formulários adaptáveis que contêm a Etapa de assinatura não podem ter o botão enviar.
    >* O envio para os formulários adaptáveis que contêm a etapa Assinatura é feito por meio de um serviço em segundo plano ou da etapa Resumo. Se houver um signatário configurado que também esteja preenchendo o formulário, a vantagem de lidar com o envio do formulário adaptável usando a etapa Resumo é que ele avalia imediatamente se o signatário assinou o formulário e invoca a ação de envio. Um serviço em segundo plano leva mais tempo para avaliar se todos os signatários configurados assinaram o formulário e atrasa o envio do formulário adaptável.
    >* Crie o formulário para não permitir que um usuário volte de um painel que contém a etapa Assinatura ou Resumo.
-
 
 
 ### Configurar a página de agradecimento ou o componente da etapa de resumo {#configure-the-thank-you-page-or-summary-step-component}
