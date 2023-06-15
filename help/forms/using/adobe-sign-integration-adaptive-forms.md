@@ -11,9 +11,9 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 9b792e8601ac52f92e8bc143e3d1e8c4eb7cd79c
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '2004'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,15 @@ ht-degree: 1%
 
 [!DNL Adobe Sign] habilita fluxos de trabalho de assinatura eletrônica para formulários adaptáveis. As assinaturas eletrônicas melhoram os fluxos de trabalho para processar documentos para áreas jurídicas, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e muito mais.
 
-Em um [!DNL Adobe Sign] e adaptáveis, um usuário preenche um formulário adaptável para **solicitar um serviço**. Por exemplo, um aplicativo de cartão de crédito e um formulário de benefícios para o cidadão. Quando um usuário preenche, envia e assina o formulário de aplicativo, ele é enviado ao provedor de serviços para que seja tomada uma nova ação. O provedor de serviços analisa o aplicativo e usa [!DNL Adobe Sign] para marcar o pedido como aprovado. Para habilitar workflows de assinatura eletrônica semelhantes, é possível integrar [!DNL Adobe Sign] com AEM [!DNL Forms].
+Em um [!DNL Adobe Acrobat Sign] e Adaptive Forms, um usuário preenche um Formulário adaptável para solicitar um serviço. Por exemplo, um aplicativo de cartão de crédito e um formulário de benefícios para o cidadão. Quando um usuário preenche, envia e assina o formulário de aplicativo, ele é enviado ao provedor de serviços para que seja tomada uma nova ação. O provedor de serviços analisa o aplicativo e usa [!DNL Adobe Acrobat Sign] para marcar o pedido como aprovado. O AEM Forms é compatível com Adobe Acrobat Sign e Adobe Acrobat Sign Solutions para o governo. Dependendo da sua licença e dos requisitos, você pode integrar ou conectar o AEM Forms a qualquer uma das soluções:
 
-Para usar [!DNL Adobe Sign] com AEM [!DNL Forms], configurar [!DNL Adobe Sign] nos serviços em nuvem AEM:
+* [Conectar o AEM Forms com o Adobe Acrobat Sign](#adobe-sign)
+* [Conectar o AEM Forms com o Adobe Acrobat Sign Solutions para o governo](#adobe-acrobat-sign-for-government)
+
+## Conectar o AEM Forms com o Adobe Acrobat Sign {#adobe-sign}
+
+Para conectar **[!DNL AEM Forms]** com **[!DNL Adobe Acrobat Sign]**, configure o software e as contas listados na seção de pré-requisitos e configure o Adobe Sign Cloud Service nas instâncias do Author e do Publish do AEM Forms:
+
 
 ## Pré-requisitos {#prerequisites}
 
@@ -52,6 +58,7 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
    >Você pode executar as etapas 1 a 4 para criar um novo contêiner de configuração e criar um [!DNL Adobe Sign] no contêiner ou use o existente `global` pasta em **Ferramentas** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Se você criar a configuração no novo container de configuração, certifique-se de especificar o nome do container no **[!UICONTROL Contêiner de configuração]** ao criar um formulário adaptável.
 
    >[!NOTE]
+   >
    Verifique se o URL da página de configuração dos serviços em nuvem começa com **HTTPS**. Caso contrário, [ativar SSL](/help/sites-administering/ssl-by-default.md) para AEM [!DNL Forms] servidor.
 
 1. Na página de configuração, toque em **[!UICONTROL Criar]** para criar [!DNL Adobe Sign] configuração no AEM [!DNL Forms].
@@ -73,6 +80,7 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
    Se você criar outro [!DNL Adobe Sign] para um recurso ou componente do Adobe Experience Manager, verifique se todas as [!DNL Adobe Sign] As configurações de nuvem apontam para o mesmo fragmento.
 
    >[!NOTE]
+   >
    Mantenha a **Criar configuração do Adobe Sign** página aberta. Não feche. Você pode recuperar **ID do cliente** e **Segredo do cliente** após definir as configurações de OAuth para o [!DNL Adobe Sign] conforme descrito nas próximas etapas.
 
 
@@ -83,6 +91,7 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
    1. Copie o **[!UICONTROL ID do cliente]** e **[!UICONTROL Segredo do cliente]** em um bloco de notas.
    1. No **[!UICONTROL URL de redirecionamento]** adicione o URL HTTPS copiado na etapa anterior.
    1. Ative as seguintes configurações do OAuth para o [!DNL Adobe Sign] e clique em **[!UICONTROL Salvar]**.
+
    * aggrement_read
    * aggrement_write
    * agment_send
@@ -107,6 +116,7 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
    Você pode modificar o valor do fragmento de banco de dados. Reinicie o servidor para poder usar o novo valor para o fragmento de banco de dados.
 
    >[!NOTE]
+   >
    Certifique-se de que as configurações da instância do autor e de publicação apontem para o mesmo fragmento. Se você criar várias configurações do Adobe Sign para uma organização, verifique se todas as configurações utilizam o mesmo fragmento.
 
 1. Volte para o **[!UICONTROL Criar configuração do Adobe Sign]** página. No **[!UICONTROL Configurações]** especifique a **ID do cliente** (também conhecido como ID do aplicativo) e **Segredo do cliente**. Use o [ID do cliente e segredo do cliente do aplicativo Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) criado para o AEM Forms.
@@ -125,6 +135,100 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
 
 Agora, [!DNL Adobe Sign] é integrado ao AEM [!DNL Forms] e pronto para uso em formulários adaptáveis. Para [usar o serviço Adobe Sign em um formulário adaptável](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), especifique o container de configuração criado acima nas propriedades do formulário adaptável.
 
+## Conectar o AEM Forms com o Adobe Acrobat Sign Solutions para o governo {#adobe-acrobat-sign-for-government}
+
+[!BADGE documentação beta]{type=Caution tooltip="Status amarelo"}
+<span class="preview"> Esta seção contém a documentação beta e está sujeita a alterações.</span>
+
+A conexão do AEM Forms com o Adobe Acrobat Sign Solutions para o governo é um processo de várias etapas. Envolve:
+
+* Criação de um URL de redirecionamento para suas instâncias do AEM
+* Compartilhamento do URL de redirecionamento e escopos com a equipe do Adobe Sign Solutions for Government
+* Recebimento de credenciais da equipe do Adobe Sign
+* Usar as credenciais recebidas para conectar o AEM Forms ao Adobe Acrobat Sign Solutions for Government
+
+![](/help/forms/using/assets/adobe-acrobat-sign-govt-workflow.png)
+
+O AEM Forms as a Cloud Service fornece ambientes de desenvolvimento, preparo e produção. Você pode começar com a conexão do seu ambiente de desenvolvimento para com o Adobe Acrobat Sign Solutions for Government e conectar os ambientes de preparo e produção posteriormente.
+
+### Antes de você iniciar {#prerequisites-for-adobe-sign-for-acrobat-sign-for-government}
+
+Antes de começar a conectar o AEM Forms com a solução da Adobe Acrobat Sign,
+
+* Verifique se [Adobe Acrobat Sign Solutions para o governo](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#account-provisioning) conta provisionada.
+* Seu AEM [!DNL Forms] servidores são [SSL habilitado](/help/sites-administering/ssl-by-default.md) .
+* Seu AEM [!DNL Forms] os servidores estão usando [chave criptográfica idêntica](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) para instâncias de criação e publicação.
+
+### Conecte o AEM Forms as a Cloud Service com o Adobe Acrobat Sign Solutions for Government {#connect-adobe-acrobat-sign-for-government}
+
+#### Criar um URL de redirecionamento para sua instância do AEM
+
+1. Na instância do autor as a Cloud Service do Forms, navegue até **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Geral]** > **[!UICONTROL Navegador de configuração]**.
+1. No **[!UICONTROL Navegador de configuração]** página, toque em **[!UICONTROL Criar]**.
+1. No **[!UICONTROL Criar configuração]** , especifique um **[!UICONTROL Título]** para a configuração, ative **[!UICONTROL Configurações da nuvem]** e toque em **[!UICONTROL Criar]**. Ele cria um contêiner de configuração para armazenar Cloud Services. Verifique se o nome da pasta não contém nenhum espaço.
+1. Navegue até **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Acrobat Sign]** e abra o container de configuração criado na etapa anterior. Ao criar um Formulário adaptável, especifique o nome do contêiner na **[!UICONTROL Contêiner de configuração]** campo.
+1. Na página de configuração, toque em **[!UICONTROL Criar]** para criar [!DNL Adobe Acrobat Sign] configuração no AEM Forms.
+1. Copie o URL da janela do navegador atual para um bloco de notas do URL. Esse URL é chamado de `re-direct URL`. Na próxima seção, você compartilhará o `re-direct URL` e `Scopes` com a equipe do Adobe Sign e solicite credenciais (ID do cliente e Segredo do cliente).
+
+>
+>
+>
+* Use um [Nível superior](https://en.wikipedia.org/wiki/Top-level_domain) domínio como `re-direct URL`. Por exemplo, `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
+* Não use um URL local como `re-direct URL`. Por exemplo, `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/SignConfig`.
+> 
+
+
+#### Compartilhar a URL de redirecionamento e os escopos com a equipe do Adobe Sign e receber credenciais
+
+A equipe de soluções da Adobe Acrobat Sign para o governo exige a `re-direct URL` e os escopos específicos a serem ativados para que o aplicativo Adobe Acrobat Sign (listado abaixo) gere credenciais (ID do cliente e Segredo do cliente) que permitem conectar o AEM Forms ao Adobe Acrobat Sign Solutions for Government.
+
+Compartilhe o `scopes` (listadas abaixo) e o `re-direct URL` criou e anotou a última etapa da seção anterior com seu representante de soluções para o governo da Adobe Acrobat Sign ([Membro da equipe do Adobe Professional Services](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password)).
+
+**_Escopos_**
+
+* [!DNL aggrement_read]
+* [!DNL aggrement_write]
+* [!DNL aggrement_send]
+* [!DNL widget_read]
+* [!DNL widget_write]
+* [!DNL workflow_read]
+* [!DNL offline_access]
+
+O representante gera e compartilha credenciais com você. Na próxima seção, use as credenciais (ID do cliente e Segredo do cliente) para conectar o AEM Forms ao Adobe Acrobat Sign Solutions for Government.
+
+#### Use as credenciais recebidas para conectar o AEM Forms ao Adobe Acrobat Sign Solutions for Government
+
+1. Abra o `re-direct URL` no navegador. Você criou e anotou o `re-direct URL` na última etapa do [criar um URL de redirecionamento na sua instância do AEM](#create-redirect-url) seção.
+
+1. No **[!UICONTROL Geral]** guia do **[!UICONTROL Criar configuração do Adobe Sign]** página, especifique um **[!UICONTROL Nome]** para a configuração e toque em **[!UICONTROL Próxima]**. Opcionalmente, é possível especificar um **[!UICONTROL Título]** e navegue para selecionar um **[!UICONTROL Miniatura]** para a configuração. Clique em **[!UICONTROL Avançar]**.
+
+1. No **[!UICONTROL Configurações]** guia do **[!UICONTROL Criar configuração do Adobe Sign]** página, para o **[!UICONTROL Selecionar solução]** selecione [!DNL Adobe Acrobat Sign Solutions for Government].
+
+   ![Adobe Acrobat Sign Solutions para o governo](/help/forms/using/assets/adobe-sign-for-govt.png)
+
+1. No **[!UICONTROL E-mail]** especifique o endereço de email associado à sua conta do Adobe Acrobat Sign Solutions for Government.
+
+1. A variável **[!UICONTROL URL do OAuth]** campo especifica o fragmento de banco de dados do Adobe Sign. O campo contém o URL padrão. Não altere o URL.
+
+1. Usar as credenciais compartilhadas pela Adobe Acrobat Sign para o representante de soluções do governo ([Membro da equipe do Adobe Professional Services]) na seção anterior como [**[!UICONTROL ID do cliente]** e **[!UICONTROL Segredo do cliente]**].
+
+1. Selecione o **[!UICONTROL Ativar Adobe Acrobat Sign para anexos]** opção para anexar arquivos anexados a um Formulário adaptável aos arquivos correspondentes [!DNL Adobe Acrobat Sign] documento enviado para assinatura.
+
+1. Toque **[!UICONTROL Conectar-se ao Adobe Sign]**. Quando as credenciais forem solicitadas, forneça o nome de usuário e a senha da conta usada ao criar [!DNL Adobe Acrobat Sign] aplicação. Quando for solicitado que você confirme o acesso de `your developer account`, Clique em **[!UICONTROL Permitir acesso]**. Se as credenciais estiverem corretas e você permitir [!DNL AEM Forms] para acessar o [!DNL Adobe Acrobat Sign] conta de desenvolvedor, uma mensagem de sucesso semelhante à seguinte é exibida.
+
+   ![Êxito na configuração da nuvem do Adobe Acrobat Sign](/help/forms/using/assets/adobe-sign-cloud-configuration-success.png)
+
+   <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
+
+1. Toque **[!UICONTROL Criar]** para criar a configuração.
+1. Abra o console da Web AEM. O URL é `https://'[server]:[port]'/system/console/configMgr`
+1. Abertura **[!UICONTROL Serviço de configuração comum do Forms].**
+1. No **[!UICONTROL Permitir]** campo, **selecionar** Todos os usuários - Todos os usuários, anônimos ou conectados, podem visualizar anexos, verificar e assinar formulários e clicar em **[!UICONTROL Salvar].** A instância do autor está configurada para usar [!DNL Adobe Sign].
+
+1. Publique a configuração.
+1. Uso [replicação](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html?lang=pt-BR) para criar configurações idênticas nas instâncias de publicação correspondentes.
+
+Agora, você pode [usar a opção adicionar campos do Adobe Acrobat Sign em um Formulário adaptável](working-with-adobe-sign.md) ou [Fluxo de trabalho do AEM](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Adicione o contêiner de configuração usado para a configuração do Cloud Service a todo o Forms adaptável que está sendo habilitado para [!DNL Adobe Acrobat Sign]. Você pode especificar um contêiner de configuração nas propriedades de um Formulário adaptável.
 
 
 ## Configurar [!DNL Adobe Sign] scheduler para sincronizar o status de assinatura {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
