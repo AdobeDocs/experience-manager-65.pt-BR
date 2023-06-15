@@ -2,19 +2,15 @@
 title: Criar ou adicionar um formulário adaptável à página do AEM Sites
 description: Descubra como criar ou adicionar facilmente um formulário adaptável à sua página do AEM Sites. Conheça as técnicas passo a passo e as práticas recomendadas para integrar formulários dinâmicos e personalizáveis ao seu site, otimizando suas experiências digitais para obter o máximo impacto.
 feature: Adaptive Forms
-source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
+source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
 workflow-type: tm+mt
-source-wordcount: '2874'
+source-wordcount: '2862'
 ht-degree: 0%
 
 ---
 
 
 # Criar ou adicionar um formulário adaptável à página do AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
-
-[!BADGE documentação de pré-lançamento]{type=Caution tooltip="Status amarelo"}
-
-<span class="preview"> Esta é a documentação de pré-lançamento e está sujeita a alterações.</span>
 
 Com o AEM Forms, você pode incorporar facilmente formulários adaptáveis em suas páginas da Web. Isso permite que seus visitantes preencham e enviem formulários de maneira conveniente sem nunca sair da página em que estão. Ao fazer isso, eles podem se envolver facilmente com outros elementos do site enquanto interagem ativamente com o formulário.
 
@@ -236,8 +232,6 @@ Você pode usar o serviço de Preenchimento do modelo de dados de formulário pa
 1. Clique nas propriedades do Contêiner de formulário adaptável ![Propriedades do contêiner de formulário adaptável](/help/forms/using/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
    ![](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. Selecionar um modelo de dados do formulário. Abra o **[!UICONTROL Básico]** guia. No serviço de preenchimento, selecione **[!UICONTROL Serviço de Preenchimento de Rascunho do Portal do Forms]**.
-
-
 1. Clique em **[!UICONTROL Concluído]**.
 
 ## Redirecionar o usuário para um novo usuário no envio do formulário ou mostrar uma mensagem de agradecimento
