@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: cfc7ad16-965e-4075-bc4d-5630abeaba55
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -369,7 +369,7 @@ O diretório www contém todo o conteúdo da Web (arquivos HTML, JS e CSS) que i
 
 #### www/config.xml {#www-config-xml}
 
-A variável [Documentação do PhoneGap](https://docs.phonegap.com) O se refere a esse arquivo como um &quot;arquivo de configuração global&quot;. O config.xml contém muitas propriedades do aplicativo, como o nome do aplicativo, as &quot;preferências&quot; do aplicativo (por exemplo, se uma visualização da Web do iOS permite ou não a rolagem excessiva) e as dependências de plug-in que são *somente* consumido pelo PhoneGap build.
+A documentação do PhoneGap (`https://docs.phonegap.com`) refere-se a esse arquivo como um &quot;arquivo de configuração global&quot;. O config.xml contém muitas propriedades do aplicativo, como o nome do aplicativo, as &quot;preferências&quot; do aplicativo (por exemplo, se uma visualização da Web do iOS permite ou não a rolagem excessiva) e as dependências de plug-in que são *somente* consumido pelo PhoneGap build.
 
 O arquivo config.xml é um arquivo estático no AEM e é exportado como está pela Sincronização de conteúdo.
 
@@ -381,7 +381,7 @@ O arquivo config.xml contém o `content` elemento:
 
 `<content src="content/phonegap/geometrixx/apps/ng-geometrixx-outdoors/en.html" />`
 
-Entrada [a documentação do PhoneGap](https://docs.phonegap.com), esse elemento é descrito como &quot;O &lt;content> O elemento define a página inicial do aplicativo no diretório de ativos da web de nível superior. O valor padrão é index.html, que normalmente aparece em um diretório www de nível superior do projeto.&quot;
+Na documentação do PhoneGap (`https://docs.phonegap.com`), esse elemento é descrito como &quot;O &lt;content> O elemento define a página inicial do aplicativo no diretório de ativos da web de nível superior. O valor padrão é index.html, que normalmente aparece em um diretório www de nível superior do projeto.&quot;
 
 A build do PhoneGap falhará se um arquivo index.html não estiver presente. Portanto, esse arquivo está incluído.
 

@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ O AEM aproveita as soluções de publicação do Adobe PhoneGap e do Adobe, perm
 * Apresentar o HTML5 Webviews a versões novas ou pré-existentes **nativo** aplicativos por meio do Cordova WebViews.
 * Crie, prepare e compartilhe conteúdo multimídia avançado em todos os canais de entrega, incluindo internet, internet móvel, aplicativo para dispositivos móveis e impressão.
 
-O AEM integra-se ao Adobe **[Serviço de PhoneGap Build](https://build.phonegap.com/)** para simplificar o processo de criação e implantação de aplicativos.
+O AEM integra-se ao serviço da Adobe PhoneGap Build (`https://build.phonegap.com/`) para simplificar o processo de criação e implantação de aplicativos.
 
 **Adobe ContentSync** O permite que os usuários baixem facilmente atualizações de página e conteúdo OTA (Over-the-Air) para seus dispositivos sem precisar reinstalar o aplicativo ou baixá-las da appStore, do Google Play ou de outras fontes de aplicativo.
 

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: c614a7ff-0d13-4407-bda0-c0a402a13dcd
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Se o código do lado do cliente estiver totalmente acoplado a um componente espe
 
 ## Configuração do PhoneGap {#phonegap-configuration}
 
-Cada aplicativo AEM Mobile contém um diretório que hospeda os arquivos de configuração usados pelo PhoneGap [interface de linha de comando](https://github.com/phonegap/phonegap-cli) e [PhoneGap Build](https://build.phonegap.com/) para transformar seu conteúdo da web em um aplicativo executável. Na amostra do Geometrixx, por exemplo, este diretório (/content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-content) está localizado como parte do Shell; uma decisão de design feita devido ao fato de que ele contém apenas conteúdo que não pode ser atualizado ao ar, como plug-ins que lidam com APIs de dispositivo e a configuração do próprio aplicativo.
+Cada aplicativo AEM Mobile contém um diretório que hospeda os arquivos de configuração usados pelo PhoneGap [interface de linha de comando](https://github.com/phonegap/phonegap-cli) e PhoneGap build em `https://build.phonegap.com/` para transformar seu conteúdo da web em um aplicativo executável. Na amostra do Geometrixx, por exemplo, este diretório (/content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-content) está localizado como parte do Shell; uma decisão de design feita devido ao fato de que ele contém apenas conteúdo que não pode ser atualizado ao ar, como plug-ins que lidam com APIs de dispositivo e a configuração do próprio aplicativo.
 
 Neste diretório, você também encontrará vários [Ganchos Cordova](https://cordova.apache.org/docs/en/edge/guide_appdev_hooks_index.md.html#Hooks%20Guide) que pode ser usado para instalar plug-ins, colocar arquivos de recurso em seus locais específicos da plataforma e outras ações que devem ser executadas como parte da build. Observação: como alternativa ao download de cada plug-in como parte da criação, você pode seguir o padrão do aplicativo Coletor de cozinha e [incluir código fonte do plug-in](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins) com o restante do projeto de aplicativo.
 

@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -112,7 +112,7 @@ Mova o conteúdo do aplicativo móvel para o sistema de arquivos.
 
 ### Uso da CLI do PhoneGap para criar {#using-the-phonegap-cli-to-build}
 
-Use a CLI do PhoneGap para compilar e instalar o aplicativo. Para obter informações sobre como usar a CLI do PhoneGap, consulte a seção [Interface de linha de comando](https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html) documentação.
+Use a CLI do PhoneGap para compilar e instalar o aplicativo. Para obter informações sobre como usar a CLI do PhoneGap, consulte a Interface de linha de comando do PhoneGap (`https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html`).
 
 1. Abra um terminal ou prompt de comando e altere o diretório atual para o arquivo ZIP do aplicativo baixado. Por exemplo, o seguinte altera o diretório para o arquivo ng-app-cli.1392137825303.zip:
 
@@ -162,7 +162,7 @@ Envie os recursos do aplicativo ao PhoneGap Build para compilação nas várias 
 
    **Nota:** A versão Beta do AEM Beta não cria uma notificação na Caixa de entrada quando a build é concluída com sucesso.
 
-1. Na caixa de diálogo Sucesso, clique em PhoneGap Build para abrir a página Adobe PhoneGap Build em [https://build.phonegap.com/apps](https://build.phonegap.com/apps). Se estiver esperando o aplicativo aparecer, verifique a [Status do PhoneGap Build](https://status.build.phonegap.com/) página.
+1. Na caixa de diálogo Sucesso, clique em PhoneGap Build para abrir a página Adobe PhoneGap Build em `https://build.phonegap.com/apps`. Se estiver esperando o aplicativo aparecer, verifique o Status do PhoneGap Build em `https://status.build.phonegap.com/`.
 
    Para obter informações sobre como instalar o build, consulte a [Documentação do PhoneGap Build](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 

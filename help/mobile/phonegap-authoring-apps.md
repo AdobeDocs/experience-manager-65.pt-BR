@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -93,9 +93,9 @@ Esses ícones representam um pacote de Versão de conteúdo para conteúdo do ap
 
 ### O mosaico do PhoneGap Build {#the-phonegap-build-tile}
 
-A variável **Mosaico de PhoneGap Build** conecta-se com [https://build.phonegap.com](https://build.phonegap.com) para criar e hospedar builds remotos. Depois de criada, a build é disponibilizada como download ou diretamente no seu dispositivo por meio de um código QR.
+A variável **Mosaico de PhoneGap Build** conecta-se com `https://build.phonegap.com` para criar e hospedar builds remotos. Depois de criada, a build é disponibilizada como download ou diretamente no seu dispositivo por meio de um código QR.
 
-Como alternativa, baixe a origem do dispositivo para criar localmente por meio da [CLI do PhoneGap](https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html).
+Como alternativa, você pode baixar a origem do dispositivo para criar localmente por meio da CLI do PhoneGap (`https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html`).
 
 ![Mosaico de PhoneGap Build](assets/chlimage_1-140.png)
 

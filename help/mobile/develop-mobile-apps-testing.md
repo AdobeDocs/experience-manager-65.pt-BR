@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Deve-se realizar algum grau de teste automático para abranger a variedade de ta
 
 ## Teste manual {#manual-testing}
 
-Além do teste automático, seu aplicativo deve passar por um ciclo de teste manual. Os clientes que executam o aplicativo em um dispositivo real não podem ser duplicados por um script. Aqui você também tem muitas opções. Você pode usar uma plataforma, como o HockeyApp, para definir quem tem acesso e coletar feedback. Ou você pode terceirizar todo o processo para um serviço como UTest, ElusiveStars ou Testin. Se você tiver um grupo de testadores internos, mas não tiver variação de dispositivos, há serviços em nuvem nos quais você pode executar testes manuais no pool de dispositivos. Um desses serviços que fornece isso é o SauceLabs. Você também pode criar aplicativos remotamente para o PhoneGap Enterprise e instalá-los em dispositivos locais como um nível de teste de aceitação ou demonstração. Consulte a [PhoneGap](https://phonegap.com/) para obter os recursos e a documentação mais recentes. Qualquer que seja a abordagem, os testes manuais devem ser realizados;
+Além do teste automático, seu aplicativo deve passar por um ciclo de teste manual. Os clientes que executam o aplicativo em um dispositivo real não podem ser duplicados por um script. Aqui você também tem muitas opções. Você pode usar uma plataforma, como o HockeyApp, para definir quem tem acesso e coletar feedback. Ou você pode terceirizar todo o processo para um serviço como UTest, ElusiveStars ou Testin. Se você tiver um grupo de testadores internos, mas não tiver variação de dispositivos, há serviços em nuvem nos quais você pode executar testes manuais no pool de dispositivos. Um desses serviços que fornece isso é o SauceLabs. Você também pode criar aplicativos remotamente para o PhoneGap Enterprise e instalá-los em dispositivos locais como um nível de teste de aceitação ou demonstração. Consulte o PhoneGap (`https://phonegap.com/`) para obter os recursos e a documentação mais recentes. Qualquer que seja a abordagem, os testes manuais devem ser realizados;
 
 * atingir um grande alvo de testadores,
 * testar contra um grande pool de dispositivos (idealmente dispositivos reais, mas simuladores/emuladores se dispositivos reais não estiverem disponíveis),
