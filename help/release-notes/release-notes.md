@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Adobe Experience Manager] 6.5
 description: Encontre informações sobre versões, novidades, instruções de instalação e uma lista de alterações detalhada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 540de86c4b16d3e9ab823e36158bf1c62fd4ba63
+source-git-commit: 316b93575d9cbbc2c5a64bc5030b036a2ade5b92
 workflow-type: tm+mt
-source-wordcount: '3798'
+source-wordcount: '3777'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ Alguns dos principais recursos e melhorias nesta versão são os seguintes:
 * Quando um usuário atualiza para o Experience Manager Forms 6.5.16.0 Service Pack e tenta alterar o `LicenseType` para `Production`, as alterações não são refletidas. (FORMS-7594)
 * Quando um usuário tenta invocar um Processo LCA com um PDF que compreende o `Chinese Full Width Characters`, ocorre um problema com a `ValidateForm` processo. (FORMS-7464)
 * No Experience Manager Forms Designer, o XMLFM gera saída ZPL com tamanhos de papel diferentes, como letra, A4 e A5, para modelos baseados em XDP. (FORMS-7898)
-* Devido às limitações do navegador, a opção de preenchimento automático no formulário não funciona após 194 campos de formulário no Experience Manager Forms 6.5.14.0. (FORMS-9426)
+
 
 ## Integrações{#integrations-6517}
 
