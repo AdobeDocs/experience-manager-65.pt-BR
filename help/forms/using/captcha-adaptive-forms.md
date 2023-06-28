@@ -11,7 +11,7 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 031c683029c61f8f49c07d276c27e05b3fcfd5fc
+source-git-commit: 294a7de1c777c49acf8590ec0900b0342f01e7eb
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Quando o serviço reCAPTCHA Enterprise estiver ativado, ele estará disponível 
 ![reCAPTCHA Enterprise](/help/forms/using/assets/recaptcha1-enterprise.png)
 
 
-## Configurar o Google reCAPTCHA v2 {#steps-to-implement-reCAPTCHA-v2-in-forms}
+### Configurar o Google reCAPTCHA v2 {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
 1. Obter [Par de chaves da API do reCAPTCHA](https://www.google.com/recaptcha/admin) do Google. Inclui uma **chave do site** e uma **chave secreta**.
 1. Criar contêiner de configuração para serviços em nuvem.
@@ -333,6 +333,6 @@ public interface GuideCaptchaValidator {
 }
 ```
 
-`captchaPropertyNodePath` refere-se ao caminho do recurso do componente CAPTCHA no repositório Sling. Use essa propriedade para incluir detalhes específicos do componente CAPTCHA. Por exemplo, `captchaPropertyNodePath` inclui informações para a configuração de nuvem do reCAPTCHA configurada no componente CAPTCHA. As informações de configuração da nuvem fornecem **[!UICONTROL Chave do site]** e **[!UICONTROL Chave secreta]** configurações para implementar o serviço reCAPTCHA.
+`captchaPropertyNodePath` Refere-se ao caminho do recurso do componente CAPTCHA no repositório Sling. Use essa propriedade para incluir detalhes específicos do componente CAPTCHA. Por exemplo, `captchaPropertyNodePath` inclui informações para a configuração de nuvem do reCAPTCHA configurada no componente CAPTCHA. As informações de configuração da nuvem fornecem **[!UICONTROL Chave do site]** e **[!UICONTROL Chave secreta]** configurações para implementar o serviço reCAPTCHA.
 
-`userResponseToken` refere-se à `g_reCAPTCHA_response` que é gerado após resolver um CAPTCHA em um formulário.
+`userResponseToken` Consulte a seção `g_reCAPTCHA_response` que é gerado após resolver um CAPTCHA em um formulário.
