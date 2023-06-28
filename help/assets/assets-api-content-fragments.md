@@ -2,9 +2,10 @@
 title: Suporte a fragmentos de conteúdo do Adobe Experience Manager na API HTTP do Assets
 description: Saiba mais sobre o suporte a Fragmentos de conteúdo na API HTTP do Assets, uma parte importante do recurso de entrega headless AEM.
 feature: Content Fragments,Assets HTTP API
+role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 48131c5accfe73b83197bd581ed5a22bc4890a56
 workflow-type: tm+mt
 source-wordcount: '1957'
 ht-degree: 24%
@@ -76,7 +77,6 @@ Por exemplo, para acessar `/content/dam/wknd/en/adventures/cycling-tuscany`, sol
 >
 >* `/api/assets` **não** precisa da utilização do seletor `.model`.
 >* `/content/path/to/page` **precisa** da utilização do seletor `.model`.
-
 
 O método HTTP determina a operação a ser executada:
 
@@ -155,7 +155,6 @@ Se a API REST do Assets for usada em um ambiente sem requisitos de autenticaçã
 >* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
 >* [Vídeo - Desenvolvimento do CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
-
 
 Em ambientes com requisitos de autenticação específicos, o OAuth é recomendado.
 
@@ -331,49 +330,52 @@ Os seguintes códigos de status podem ser vistos nas circunstâncias relevantes:
 
 * **500** (Erro interno do servidor)
 
-   >[!NOTE]
-   >
-   >Esse erro é retornado:
-   >
-   >* quando ocorreu um erro que não pode ser identificado com um código específico
-   >* quando a carga fornecida não era válida
+  >[!NOTE]
+  >
+  >Esse erro é retornado:
+  >
+  >* quando ocorreu um erro que não pode ser identificado com um código específico
+  >* quando a carga fornecida não era válida
 
-
-   A seguir, há uma lista de cenários comuns em que esse status de erro é retornado, juntamente com a mensagem de erro (monospace) gerada:
+  A seguir, há uma lista de cenários comuns em que esse status de erro é retornado, juntamente com a mensagem de erro (monospace) gerada:
 
    * A pasta primária não existe (ao criar um fragmento de conteúdo via `POST`)
    * Nenhum modelo de fragmento de conteúdo foi fornecido (cq:model está ausente), não pode ser lido (devido a um caminho inválido ou um problema de permissão) ou não há um modelo de fragmento válido:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
+
    * Não foi possível criar o fragmento de conteúdo (possivelmente um problema de permissão):
 
       * `Could not create content fragment`
+
    * Não foi possível atualizar o título e/ou a descrição:
 
       * `Could not set value on content fragment`
+
    * Não foi possível definir os metadados:
 
       * `Could not set metadata on content fragment`
+
    * O elemento de conteúdo não pôde ser encontrado ou atualizado
 
       * `Could not update content element`
       * `Could not update fragment data of element`
 
-   As mensagens de erro detalhadas geralmente são retornadas da seguinte maneira:
+  As mensagens de erro detalhadas geralmente são retornadas da seguinte maneira:
 
-   ```xml
-   {
-     "class": "core/response",
-     "properties": {
-       "path": "/api/assets/foo/bar/qux",
-       "location": "/api/assets/foo/bar/qux.json",
-       "parentLocation": "/api/assets/foo/bar.json",
-       "status.code": 500,
-       "status.message": "...{error message}.."
-     }
-   }
-   ```
+  ```xml
+  {
+    "class": "core/response",
+    "properties": {
+      "path": "/api/assets/foo/bar/qux",
+      "location": "/api/assets/foo/bar/qux.json",
+      "parentLocation": "/api/assets/foo/bar.json",
+      "status.code": 500,
+      "status.message": "...{error message}.."
+    }
+  }
+  ```
 
 ## Referência da API  {#api-reference}
 
