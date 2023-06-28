@@ -5,7 +5,7 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 39930967e2f423b7fbbc79bcb85f78d15809e97d
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets-view/integrations/workfront-connector-configure.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 Um usuário com acesso de administrador no [!DNL Adobe Experience Manager] configura o conector aprimorado após a instalação. Para obter instruções de instalação, consulte [Instale o conector](/help/assets/workfront-integrations.md).
@@ -30,7 +30,6 @@ Um usuário com acesso de administrador no [!DNL Adobe Experience Manager] confi
 >* O Adobe suporta o conector aprimorado versões 1.7.4 e superiores. As versões anteriores de pré-lançamento e personalizadas não são compatíveis. Para verificar a versão aprimorada do conector, navegue até a `digital.hoodoo` grupo disponível no painel esquerdo no [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR).
 >
 >* Consulte [Exame de certificação de parceiros para o conector aprimorado do Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obter informações sobre o exame, consulte [Guia do exame](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
-
 
 ## Configurar assinaturas de evento {#event-subscriptions}
 
@@ -46,7 +45,7 @@ Para usar esses recursos, habilite as assinaturas de evento.
 * Selecione o [!UICONTROL Integração personalizada do Workfront] você criou na seção 6.
 * Clique em [!UICONTROL Ativar assinaturas de evento do Workfront].
 
-   ![Assinatura do evento](/help/assets/assets/event-subs.png)
+  ![Assinatura do evento](/help/assets/assets/event-subs.png)
 
 ## Configurar pastas vinculadas {#linked-folders}
 
