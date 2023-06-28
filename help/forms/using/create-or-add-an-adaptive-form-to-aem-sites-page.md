@@ -2,15 +2,20 @@
 title: Criar ou adicionar um formulário adaptável à página do AEM Sites
 description: Descubra como criar ou adicionar facilmente um formulário adaptável à sua página do AEM Sites. Conheça as técnicas passo a passo e as práticas recomendadas para integrar formulários dinâmicos e personalizáveis ao seu site, otimizando suas experiências digitais para obter o máximo impacto.
 feature: Adaptive Forms
-source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
+exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
+source-git-commit: cd6d9b4d019e24002e4fe1cc8679d270b24c2934
 workflow-type: tm+mt
-source-wordcount: '2862'
+source-wordcount: '2883'
 ht-degree: 0%
 
 ---
 
-
 # Criar ou adicionar um formulário adaptável à página do AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | Este artigo |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 
 Com o AEM Forms, você pode incorporar facilmente formulários adaptáveis em suas páginas da Web. Isso permite que seus visitantes preencham e enviem formulários de maneira conveniente sem nunca sair da página em que estão. Ao fazer isso, eles podem se envolver facilmente com outros elementos do site enquanto interagem ativamente com o formulário.
 
@@ -246,7 +251,3 @@ No envio de um formulário, você pode redirecionar o usuário para outra págin
    * Para configurar um URL de redirecionamento, para na opção Enviar, selecione a opção Redirecionar para URL e forneça um endereço absoluto, um URL de redirecionamento ou um caminho relativo de uma página do AEM Sites.
 
    * Para configurar uma mensagem personalizada ou de agradecimento, para na opção Enviar, selecione a opção Mostrar mensagem e forneça uma mensagem na caixa Conteúdo da mensagem. É uma caixa de rich text, você pode usar a opção de tela cheia para exibir todos os itens de rich text disponíveis.
-
-
-
-

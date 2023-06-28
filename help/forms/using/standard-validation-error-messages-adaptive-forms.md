@@ -10,14 +10,19 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: cd6d9b4d019e24002e4fe1cc8679d270b24c2934
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1131'
 ht-degree: 0%
 
 ---
 
 # Mensagens de erro de validação padrão para formulários adaptáveis {#standard-validation-error-messages}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | Este artigo |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html) |
 
 Os formulários adaptáveis validam as entradas que você fornece nos campos com base em um critério de validação predefinido. Os critérios de validação se referem aos valores de entrada aceitáveis para campos em um formulário adaptável. Você pode definir os critérios de validação com base na fonte de dados usada com o formulário adaptável. Por exemplo, se você usar os serviços Web RESTful como fonte de dados, poderá definir os critérios de validação em um arquivo de definição do Swagger.
 
@@ -51,7 +56,7 @@ Os formulários adaptáveis exibem os erros no nível do campo se as mensagens d
 }
 ```
 
-Onde:
+Em que:
 
 * `errorCausedBy` descreve o motivo da falha
 * `errors` menção à expressão SOM dos campos que falharam nos critérios de validação junto com a mensagem de erro de validação
