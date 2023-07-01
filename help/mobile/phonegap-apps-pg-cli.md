@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -89,10 +89,10 @@ phonegap run ios
 >1. Navegar para esta nova pasta (teste de cd)
 >1. Executar `phonegap create helloWorld`
 >1. Navegue até helloWorld (cd helloWorld)
->1. Executar `phonegap run android` (ou substitua o android pelo iOS conforme descrito acima).
->1. O emulador é aberto executando o aplicativo PhoneGap recém-criado, informando &quot;Device Ready&quot; (Pronto para dispositivo) se a ponte JavaScript para o nativo estiver operacional.
+>1. Executar `phonegap run android` (ou substitua o Android™ pelo iOS conforme descrito acima).
+1. O emulador é aberto executando o aplicativo PhoneGap recém-criado, informando &quot;Device Ready&quot; (Pronto para dispositivo) se a ponte JavaScript para o nativo estiver operacional.
 >
->Essa solução de problemas verifica se o ambiente de desenvolvimento da CLI do PhoneGap está sendo executado corretamente.
+Essa solução de problemas verifica se o ambiente de desenvolvimento da CLI do PhoneGap está sendo executado corretamente.
 
 ## Depurar JavaScript com depuração do Safari e IOS {#debug-javascripts-with-safari-and-ios-debug}
 
@@ -149,11 +149,11 @@ Você pode definir pontos de interrupção em qualquer lugar na sua origem. Quan
 
 * Use os botões de controle para continuar a execução, passar por cima, entrar e sair dos métodos:
 
-![](do-not-localize/chlimage_1-4.png)
+![Cinco botões de controle de funcionamento diferentes alinhados em uma linha horizontal.](do-not-localize/chlimage_1-4.png)
 
 >[!NOTE]
 >
->Para ver os valores das variáveis, no método atual, passe o mouse sobre ele.
+Para ver os valores das variáveis, no método atual, passe o mouse sobre ele.
 
 ## Próximas etapas {#the-next-steps}
 

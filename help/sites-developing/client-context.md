@@ -1,8 +1,6 @@
 ---
 title: Contexto do cliente em detalhes
-seo-title: Client Context in Detail
 description: O Client Context representa uma coleção de dados do usuário montada dinamicamente
-seo-description: The Client Context represents a dynamically assembled collection of user data
 uuid: 95b08fbd-4f50-44a1-80fb-46335fe04a40
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,9 +10,9 @@ discoiquuid: c881ad66-bcc3-4f99-b77f-0944c23e2d29
 docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -25,13 +23,13 @@ ht-degree: 0%
 >
 >O Client Context foi substituído pelo ContextHub. Consulte a [documentação relacionada](/help/sites-developing/contexthub.md) para obter detalhes.
 
-O Client Context representa uma coleção de dados do usuário montada dinamicamente. Você pode usar os dados para determinar o conteúdo a ser exibido em uma página da Web em uma determinada situação (direcionamento de conteúdo). Os dados também estão disponíveis para análise de site e para qualquer javascript na página.
+O Client Context representa uma coleção de dados do usuário montada dinamicamente. Você pode usar os dados para determinar o conteúdo a ser exibido em uma página da Web em uma determinada situação (direcionamento de conteúdo). Os dados também estão disponíveis para análise de site e para qualquer JavaScript na página.
 
 O Contexto do cliente consiste principalmente nos seguintes aspectos:
 
-* O armazenamento de sessão, que contém os dados do usuário.
+* O armazenamento de sessão que contém os dados do usuário.
 * A interface que exibe os dados do usuário e fornece ferramentas para simular a experiência do usuário.
-* A [API javascript](/help/sites-developing/ccjsapi.md) para interagir com armazenamentos de sessão.
+* A [API JavaScript](/help/sites-developing/ccjsapi.md) para interagir com armazenamentos de sessão.
 
 Para criar um armazenamento de sessão independente e adicioná-lo ao Contexto do cliente, ou criar um armazenamento de sessão vinculado a um componente do Armazenamento de contexto. O AEM instala vários componentes do Context Store que você pode usar imediatamente. Você pode usar esses componentes como base para seus componentes.
 
@@ -44,11 +42,11 @@ O Client Context inclui vários armazenamentos de sessão que contêm dados do u
 * O navegador Web do cliente.
 * O servidor (consulte [Armazenamento JSONP](/help/sites-administering/client-context.md#main-pars-variable-8) para armazenar informações de fontes de terceiros)
 
-A estrutura do Client Context fornece uma [API javascript](/help/sites-developing/ccjsapi.md) que você pode usar para interagir com armazenamentos de sessão para ler e gravar dados do usuário, e ouvir e reagir para armazenar eventos. Você também pode criar armazenamentos de sessão para dados de usuário que você usa para direcionamento de conteúdo ou outros fins.
+A estrutura do Client Context fornece uma [API JavaScript](/help/sites-developing/ccjsapi.md) que você pode usar para interagir com armazenamentos de sessão para ler e gravar dados do usuário, e ouvir e reagir para armazenar eventos. Você também pode criar armazenamentos de sessão para dados de usuário que você usa para direcionamento de conteúdo ou outros fins.
 
-Os dados do repositório de sessão permanecem no cliente. O Client Context não grava dados no servidor. Para enviar dados ao servidor, use um formulário ou desenvolva um javascript personalizado.
+Os dados do repositório de sessão permanecem no cliente. O Client Context não grava dados no servidor. Para enviar dados ao servidor, use um formulário ou desenvolva um JavaScript personalizado.
 
-Cada armazenamento de sessão é uma coleção de pares de valor de propriedade. O armazenamento de sessão representa uma coleção de dados (de qualquer tipo), cujo significado conceitual pode ser decidido pelo designer e/ou desenvolvedor. O exemplo de código javascript a seguir define um objeto que representa os dados de perfil que o armazenamento de sessão pode conter:
+Cada armazenamento de sessão é uma coleção de pares de valor de propriedade. O armazenamento de sessão representa uma coleção de dados (de qualquer tipo), cujo significado conceitual pode ser decidido pelo designer e/ou desenvolvedor. O exemplo de código JavaScript a seguir define um objeto que representa os dados do perfil que o armazenamento de sessão pode conter:
 
 ```
 {
@@ -79,7 +77,7 @@ Os componentes do armazenamento de contexto podem incluir os seguintes itens:
 * Scripts JSP que definem a aparência no Client Context.
 * Propriedades para listar o componente no Sidekick.
 * Editar caixas de diálogo para configurar instâncias de componentes.
-* Javascript que inicializa o armazenamento de sessão.
+* JavaScript que inicializa o armazenamento de sessão.
 
 Para obter uma descrição dos Componentes do Context Store instalados que você pode adicionar ao Context Store, consulte [Componentes disponíveis do Client Context](/help/sites-administering/client-context.md#available-client-context-components).
 
@@ -103,7 +101,7 @@ Inclua o componente Contexto do cliente na seção de corpo das páginas da Web 
 
 O componente clientcontext faz com que a página carregue as bibliotecas de clientes que implementam o Client Context.
 
-* A API javascript do Client Context.
+* A API do JavaScript do Client Context.
 * A estrutura do Client Context compatível com armazenamentos de sessão, gerenciamento de eventos etc.
 * Segmentos definidos.
 * Os scripts init.js gerados para cada componente do armazenamento de contexto que foi adicionado ao Contexto do cliente.
@@ -128,19 +126,19 @@ Crie um armazenamento de sessão para os dados que você precisa adicionar e rec
 
 1. Crie uma pasta da biblioteca do cliente que tenha um `categories` valor da propriedade de `personalization.stores.kernel`. O Client Context carrega automaticamente as bibliotecas de clientes desta categoria.
 
-1. Configure a pasta da biblioteca do cliente para que ela tenha uma dependência na `personalization.core.kernel` pasta da biblioteca do cliente. A variável `personalization.core.kernel` A biblioteca do cliente fornece a API javascript do Client Context.
+1. Configure a pasta da biblioteca do cliente para que ela tenha uma dependência na `personalization.core.kernel` pasta da biblioteca do cliente. A variável `personalization.core.kernel` A biblioteca do cliente fornece a API JavaScript do Client Context.
 
-1. Adicione o javascript que cria e inicializa o armazenamento de sessão.
+1. Adicione o JavaScript que cria e inicializa o armazenamento de sessão.
 
-A inclusão do javascript na biblioteca do cliente personalization.stores.kernel faz com que o armazenamento seja criado quando a estrutura Client Context é carregada.
+Incluir o JavaScript na biblioteca do cliente personalization.stores.kernel faz com que o armazenamento seja criado quando a estrutura Client Context for carregada.
 
 >[!NOTE]
 >
->Se estiver criando uma loja de sessão como parte de um componente da loja de contexto, você pode, como alternativa, colocar o javascript no arquivo init.js.jsp do componente. Nesse caso, o armazenamento de sessão será criado somente se o componente for adicionado ao Client Context.
+>Se você estiver criando um armazenamento de sessão como parte de um componente do armazenamento de contexto, como alternativa, coloque o JavaScript no arquivo init.js.jsp do componente. Nesse caso, o armazenamento de sessão será criado somente se o componente for adicionado ao Client Context.
 
 #### Tipos de lojas de sessão {#types-of-session-stores}
 
-Os armazenamentos de sessão são criados e disponibilizados durante uma sessão do navegador ou são mantidos no armazenamento do navegador ou em cookies. A API javascript do Client Context define várias classes que representam ambos os tipos de armazenamentos de dados:
+Os armazenamentos de sessão são criados e disponibilizados durante uma sessão do navegador ou são mantidos no armazenamento do navegador ou em cookies. A API JavaScript do Client Context define várias classes que representam ambos os tipos de armazenamentos de dados:
 
 * ` [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore)`: esses objetos residem somente na página DOM. Os dados são criados e mantidos durante o tempo de vida da página.
 * ` [CQ_Analytics.PerstistedSessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore)`: esses objetos residem no DOM da página e são mantidos no armazenamento do navegador ou nos cookies. Os dados estão disponíveis em todas as páginas e sessões do usuário.
@@ -153,7 +151,7 @@ A API também fornece extensões dessas classes especializadas para armazenar da
 
 #### Criando o objeto de armazenamento da sessão {#creating-the-session-store-object}
 
-O javascript da pasta da biblioteca do cliente cria e inicializa o armazenamento de sessão. O armazenamento de sessão deve ser registrado usando o Gerenciador de armazenamento de contexto. O exemplo a seguir cria e registra um [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) objeto.
+O JavaScript da pasta da biblioteca do cliente cria e inicializa o armazenamento de sessão. O armazenamento de sessão deve ser registrado usando o Gerenciador de armazenamento de contexto. O exemplo a seguir cria e registra um [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) objeto.
 
 ```
 //Create the session store
@@ -210,7 +208,7 @@ Id da div na qual o armazenamento deve ser renderizado.
 
 Ao editar o Contexto do cliente, os componentes do armazenamento de contexto aparecem no Sidekick. Como em todos os componentes, a variável `componentGroup` e `jcr:title` as propriedades do componente de contexto do cliente determinam o grupo e o nome do componente.
 
-Todos os componentes que têm um `componentGroup` valor da propriedade de `Client Context` aparecem no Sidekick por padrão. Se você usar um valor diferente para a variável `componentGroup` você deve adicionar manualmente o componente ao Sidekick usando o modo Design.
+Todos os componentes que têm um `componentGroup` valor da propriedade de `Client Context` são exibidos em Sidekick por padrão. Se você usar um valor diferente para a variável `componentGroup` propriedade, é necessário adicionar manualmente o componente ao Sidekick usando o modo Design.
 
 #### Instâncias do componente de armazenamento de contexto {#context-store-component-instances}
 
@@ -220,9 +218,9 @@ Quando o Client Context é inicializado, esses nós são processados.
 
 #### Inicializando o Repositório de Sessão Associado {#initializing-the-associated-session-store}
 
-Adicione um arquivo init.js.jsp ao componente para gerar o código javascript que inicializa o armazenamento de sessão que seu componente de armazenamento de contexto usa. Por exemplo, use o script de inicialização para recuperar as propriedades de configuração do componente e usá-las para preencher o armazenamento da sessão.
+Adicione um arquivo init.js.jsp ao componente para gerar o código JavaScript que inicializa o armazenamento de sessão que seu componente de armazenamento de contexto usa. Por exemplo, use o script de inicialização para recuperar as propriedades de configuração do componente e usá-las para preencher o armazenamento da sessão.
 
-O javascript gerado é adicionado à página quando o Contexto do cliente é inicializado no carregamento da página nas instâncias do autor e de publicação. Esta JSP é executada antes que a instância do componente do armazenamento de contexto seja carregada e renderizada.
+O JavaScript gerado é adicionado à página quando o Contexto do cliente é inicializado no carregamento da página nas instâncias do autor e de publicação. Esta JSP é executada antes que a instância do componente do armazenamento de contexto seja carregada e renderizada.
 
 O código deve definir o tipo MIME do arquivo como `text/javascript`ou não será executado.
 
@@ -325,12 +323,12 @@ A tag tem o seguinte formato:
 
 Seu armazenamento de sessão precisará de um método &quot;renderizador&quot; que será chamado toda vez que o componente precisar ser renderizado. A função do renderizador é chamada com dois parâmetros:
 
-* @param {String} armazenar O armazenamento a ser renderizado
-* @param {String} divId da div na qual o armazenamento deve ser renderizado.
+* @param {String} armazenamento O armazenamento a ser renderizado
+* @param {String} divId Id da div na qual o armazenamento deve ser renderizado.
 
 ## Interagir com armazenamentos de sessão {#interacting-with-session-stores}
 
-Use o javascript para interagir com armazenamentos de sessão.
+Use o JavaScript para interagir com armazenamentos de sessão.
 
 ### Acessar lojas de sessão {#accessing-session-stores}
 
@@ -353,7 +351,7 @@ function getName(){
 
 A sessão armazena eventos de acionamento, de modo que é possível adicionar ouvintes e acionar eventos com base nesses eventos.
 
-Os armazenamentos de sessão são criados no `Observable` padrão. Eles estendem [ `CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) que fornece a ` [addListener](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)` método.
+Os armazenamentos de sessão são criados no `Observable` padrão. Eles estendem [`CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) que fornece a ` [addListener](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)` método.
 
 O exemplo a seguir adiciona um ouvinte à variável `update` evento do `profile` armazenamento de sessão.
 
@@ -482,7 +480,7 @@ window.CQMobileSlider["geometrixx-outdoors"] = {
 Neste exemplo, você cria um componente de armazenamento de contexto que recupera dados de um serviço externo e os armazena no armazenamento de sessão:
 
 * Estende o componente genericstoreproperties.
-* Inicializa um armazenamento usando um objeto javascript CQ_Analytics.JSONPStore.
+* Inicializa um armazenamento usando um objeto JavaScript CQ_Analytics.JSONPStore.
 * Chama um serviço JSONP para recuperar dados e adicioná-los ao armazenamento.
 * Renderiza os dados no Contexto do cliente.
 
@@ -536,7 +534,7 @@ O componente de armazenamento de contexto requer uma caixa de diálogo de ediç�
 
 Adicione um arquivo init.js.jsp ao componente geográfico e use-o para criar o armazenamento de sessão, recuperar os dados de local e adicioná-lo ao armazenamento.
 
-O arquivo init.js.jsp é executado quando o Client Context é carregado pela página. Nesse momento, a API JavaScript do Client Context é carregada e está disponível para o script.
+O arquivo init.js.jsp é executado quando o Client Context é carregado pela página. Nesse momento, a API JavaScript do Client Context é carregada e fica disponível para o script.
 
 1. Clique com o botão direito do mouse no nó /apps/myapp/contextstores/geoloc e clique em Criar > Criar arquivo. Especifique um Nome de init.js.jsp e clique em OK.
 1. Adicione o seguinte código à parte superior da página e clique em Salvar tudo.
@@ -599,7 +597,7 @@ Adicione o componente de Armazenamento de localização ao Contexto do cliente p
 1. Clique em Ctrl-Alt-c (windows) ou control-option-c (Mac) para abrir o Client Context.
 1. Clique no ícone de edição na parte superior do Client Context para abrir o Client Context Designer.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Ícone de edição indicado por um lápis dentro de um quadrado.](do-not-localize/chlimage_1.png)
 
 1. Arraste o componente Loja de localização para Contexto do cliente.
 
@@ -617,11 +615,11 @@ Para criar um segundo contexto de cliente, é necessário duplicar a ramificaç�
 `/etc/clientcontext/default`
 
 * A subpasta:
-   `/content`
+  `/content`
 conterá o conteúdo do contexto de cliente personalizado.
 
 * A pasta:
-   `/contextstores`
+  `/contextstores`
 permite definir configurações diferentes para os armazenamentos de contexto.
 
 Para usar o contexto de cliente personalizado, edite a propriedade

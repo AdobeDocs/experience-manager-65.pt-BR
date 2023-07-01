@@ -1,8 +1,6 @@
 ---
 title: Design responsivo para páginas da Web
-seo-title: Responsive design for web pages
-description: Com um design responsivo, as mesmas páginas podem ser exibidas efetivamente em vários dispositivos em várias orientações
-seo-description: With responsive design, the same pages can be effectively displayed on multiple devices in multiple orientations
+description: Com um design responsivo, as mesmas páginas podem ser exibidas efetivamente em vários dispositivos em várias orientações.
 uuid: 3d324557-e7ff-4c82-920f-9b5a906925e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '5336'
+source-wordcount: '5375'
 ht-degree: 0%
 
 ---
@@ -23,6 +21,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (como _React_). [Saiba mais](/help/sites-developing/spa-overview.md).
+>
 
 >[!NOTE]
 >
@@ -201,7 +200,7 @@ Por exemplo, para criar um ` [sling:OsgiConfig](/help/sites-deploying/configurin
 * Pasta pai: `/apps/application_name/config`
 * Nome: `com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-*alias*`
 
-   O - `*alias*` o sufixo é necessário porque o serviço MobileEmulatorProvider é um serviço de fábrica. Use qualquer alias que seja exclusivo para esta fábrica.
+  O - `*alias*` o sufixo é necessário porque o serviço MobileEmulatorProvider é um serviço de fábrica. Use qualquer alias que seja exclusivo para esta fábrica.
 
 * jcr:primaryType: `sling:OsgiConfig`
 
@@ -211,12 +210,12 @@ Adicione a seguinte propriedade do nó:
 * Tipo: `String[]`
 * Valor: os caminhos para os componentes da página que renderizam suas páginas da Web. Por exemplo, o aplicativo geometrixx-media usa os seguintes valores:
 
-   ```
-   geometrixx-media/components/page
-    geometrixx-unlimited/components/pages/page
-    geometrixx-unlimited/components/pages/coverpage
-    geometrixx-unlimited/components/pages/issue
-   ```
+  ```
+  geometrixx-media/components/page
+   geometrixx-unlimited/components/pages/page
+   geometrixx-unlimited/components/pages/coverpage
+   geometrixx-unlimited/components/pages/issue
+  ```
 
 ### Especificando os grupos de dispositivos {#specifying-the-device-groups}
 
@@ -235,6 +234,7 @@ Use o console Ferramentas para [criar e editar grupos de dispositivos](/help/sit
 >[!NOTE]
 >
 >Para grupos de dispositivos que você usa para design responsivo, edite o grupo de dispositivos e, na guia Geral, selecione Desativar emulador. Essa opção impede que o carrossel do emulador apareça, o que não é relevante para o design responsivo.
+>
 
 ## Uso de imagens adaptáveis {#using-adaptive-images}
 
@@ -326,6 +326,7 @@ O HTML de exemplo a seguir seleciona entre duas representações DAM da mesma im
 >* Script que gera o HTML: `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
 >
 >A seção subsequente fornece detalhes sobre esse componente.
+>
 
 ### Como entender a renderização de imagem no AEM {#understanding-image-rendering-in-aem}
 
@@ -366,6 +367,7 @@ O componente deve executar as seguintes tarefas:
 >[!NOTE]
 >
 >O cliente da Web usa as bibliotecas de JavaScript matchMedia e Picturefill (ou bibliotecas semelhantes) para avaliar os seletores de mídia.
+>
 
 O servlet que processa a solicitação de imagem deve executar as seguintes tarefas:
 
@@ -657,6 +659,7 @@ A variável `ImageReferenceModificationServlet` a classe substitui a `createLaye
 
 >[!NOTE]
 >A variável [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) A classe fornece o getFileReferencemethod.
+>
 
 ## Desenvolvimento de uma grade de fluidos {#developing-a-fluid-grid}
 
@@ -698,6 +701,7 @@ Por exemplo, o aplicativo de amostra geometrixx-media contém o componente media
 >[!NOTE]
 >
 >Quando um componente inclui vários `cq:include` elementos que fazem referência ao componente parsys, cada `path` o atributo deve ter um valor diferente.
+>
 
 #### Dimensionamento da grade de componentes Página {#scaling-the-page-component-grid}
 
@@ -862,13 +866,13 @@ Para cada intervalo de larguras de visor que você está direcionando, use uma l
 
 Use grades para dimensionar blocos de conteúdo e adaptá-los a diferentes tamanhos de visor. Os blocos de conteúdo se estendem por um número específico de colunas. À medida que as larguras das colunas aumentam ou diminuem para se ajustarem a diferentes tamanhos de visor, as larguras dos blocos de conteúdo aumentam ou diminuem de acordo. O dimensionamento pode suportar visores de grande e médio porte com largura suficiente para acomodar o posicionamento lado a lado dos blocos de conteúdo.
 
-![](do-not-localize/chlimage_1-1a.png)
+![Imagem de duas grades, uma que é dimensionada menor que a outra.](do-not-localize/chlimage_1-1a.png)
 
 #### Reposicionamento de conteúdo na grade {#repositioning-content-in-the-grid}
 
 O tamanho dos blocos de conteúdo pode ser restringido por uma largura mínima, além da qual o dimensionamento não é mais eficaz. Para janelas de visualização menores, a grade pode ser usada para distribuir verticalmente blocos de conteúdo, em vez de horizontalmente.
 
-![](do-not-localize/chlimage_1-2a.png)
+![Imagem de duas grades, uma reposicionada menor que a outra.](do-not-localize/chlimage_1-2a.png)
 
 ### Design da grade {#designing-the-grid}
 
@@ -953,7 +957,7 @@ Use o estilo de flutuação de `.row-fluid` para que você possa controlar se os
 
 Adicione o estilo à `.row-fluid` dentro de cada consulta de mídia. Defina o valor de acordo com o layout de página que você está usando para essa consulta de mídia. Por exemplo, o diagrama a seguir ilustra uma linha que distribui conteúdo horizontalmente para janelas de visualização amplas e verticalmente para janelas de visualização estreitas.
 
-![](do-not-localize/chlimage_1-3a.png)
+![Duas imagens de blocos de conteúdo em uma linha, a segunda imagem mostrando a linha reposicionada.](do-not-localize/chlimage_1-3a.png)
 
 O CSS a seguir pode implementar esse comportamento:
 

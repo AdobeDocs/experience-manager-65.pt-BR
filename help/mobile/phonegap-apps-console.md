@@ -1,8 +1,6 @@
 ---
 title: Criação e edição de aplicativos usando o console Aplicativos
-seo-title: Creating and Editing Apps Using the Apps Console
 description: Siga esta página para saber como criar e editar aplicativos usando o console de aplicativos.
-seo-description: Follow this page to learn about creating and editing apps using apps console.
 uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '2615'
+source-wordcount: '2695'
 ht-degree: 0%
 
 ---
@@ -62,7 +60,7 @@ A página de idioma tem dois propósitos:
 
 ### A Página Inicial {#the-home-page}
 
-A página inicial ou index.html de uma variação de idioma de um aplicativo é exibida quando o aplicativo é aberto. A página inicial fornece aos usuários um menu de links para várias páginas do aplicativo. O sistema de parágrafo permite adicionar componentes à página para criar conteúdo.
+A página inicial ou index.html de uma variação de idioma de um aplicativo é exibida quando o aplicativo é aberto. A página inicial fornece aos usuários um menu de links para várias páginas no aplicativo. O sistema de parágrafo permite adicionar componentes à página para criar conteúdo.
 
 ## Criação de um aplicativo para dispositivos móveis {#creating-a-mobile-application}
 
@@ -89,9 +87,9 @@ Existem guias adicionais (e opcionais) para o serviço de nuvem de build e para 
 O procedimento a seguir usa a interface para toque para criar um aplicativo para dispositivos móveis.
 
 1. No painel, clique em Aplicativos.
-1. Clique ou toque no ícone Criar.
+1. Clique no ícone Criar.
 
-   ![](do-not-localize/chlimage_1-7.png)
+   ![O ícone Criar indicado por um sinal de mais dentro de um quadrado.](do-not-localize/chlimage_1-7.png)
 
 1. (Opcional) Na guia Avançado, forneça uma descrição para o aplicativo e altere o URL do servidor, se necessário.
 1. (Opcional) Se estiver usando PhoneGap Build para compilar o aplicativo, na guia Criar, selecione a Configuração a ser usada.
@@ -114,30 +112,30 @@ Após criar um aplicativo para dispositivos móveis, você pode alterar as propr
 1. No painel, clique ou toque em Aplicativos.
 1. Selecione o aplicativo a ser configurado e clique no ícone Propriedades da página de exibição.
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![O ícone Exibir propriedades da página indicado pela letra I dentro de um círculo.](do-not-localize/chlimage_1-8.png)
 
 1. Para alterar os valores de propriedade, clique ou toque no ícone Editar.
 
-   ![](do-not-localize/chlimage_1-9.png)
+   ![O ícone Edit indicado por um lápis.](do-not-localize/chlimage_1-9.png)
 
 1. Configure as propriedades Básicas e Avançadas e clique ou toque no ícone Concluído.
 
-   ![](do-not-localize/chlimage_1-10.png)
+   ![O ícone Concluído indicado por um símbolo de marca de seleção.](do-not-localize/chlimage_1-10.png)
 
 #### Configurar uma variação de idioma do aplicativo {#configure-a-language-variation-of-the-application}
 
-1. No painel, clique ou toque em Aplicativos.
+1. No painel, clique em Aplicativos.
 1. Clique para fazer drill-into no aplicativo móvel que deseja editar no Admin Console de aplicativos. Selecione a versão do idioma do aplicativo a ser configurado e clique no ícone Exibir propriedades do aplicativo.
 
-   ![](do-not-localize/chlimage_1-11.png)
+   ![O ícone Exibir Propriedades do Aplicativo indicado pela letra I dentro de um círculo.](do-not-localize/chlimage_1-11.png)
 
 1. Para alterar os valores de propriedade, clique ou toque no ícone Editar.
 
-   ![](do-not-localize/chlimage_1-12.png)
+   ![O ícone Edit indicado por um lápis.](do-not-localize/chlimage_1-12.png)
 
 1. Configure as propriedades nas guias Básico, Avançado, Criar e Analytics e clique ou toque no ícone Concluído.
 
-   ![](do-not-localize/chlimage_1-13.png)
+   ![O ícone Concluído indicado por um símbolo de marca de seleção.](do-not-localize/chlimage_1-13.png)
 
 ### Criação do conteúdo de um aplicativo móvel {#authoring-the-content-of-a-mobile-application}
 
@@ -167,7 +165,7 @@ Execute o procedimento a seguir na instância em que deseja atualizar o cache. P
 1. No painel, clique ou toque em Aplicativos e, em seguida, clique ou toque no aplicativo.
 1. Selecione a página inicial e clique ou toque no ícone Atualizar cache.
 
-   ![](do-not-localize/chlimage_1-14.png)
+   ![O ícone Atualizar cache indicado por um barrell listrado com um símbolo de reciclagem sobre ele.](do-not-localize/chlimage_1-14.png)
 
 ### Utilização de modelos de aplicativo {#using-app-templates}
 
@@ -222,7 +220,7 @@ Para abrir o aplicativo, no painel, clique em Aplicativos móveis e selecione Ge
 Cada página do aplicativo móvel inclui os seguintes recursos:
 
 * Um botão Voltar para retornar à página principal. Observe que o botão Voltar não é exibido na página inicial.
-* Um trilho expansível que oferece um menu de comandos e links:
+* Um painel dispensável que oferece um menu de comandos e links:
 
    * Abra a página Locais.
    * Abra o carrinho.
@@ -251,7 +249,7 @@ Cada página de categoria usa a mesma estrutura de conteúdo que a página de en
 
 ### A página de produtos - Aplicativo móvel Geometrixx {#the-products-page-geometrixx-mobile-app}
 
-A página Produtos e sua hierarquia de páginas secundárias implementam um sistema de classificação para páginas de produtos. As páginas inferiores em cada ramificação da hierarquia são uma página de produto que contém um ng Componente de produto.
+A página Produtos e sua hierarquia de páginas secundárias implementam um sistema de classificação para páginas de produtos. As páginas inferiores em cada ramificação da hierarquia são uma página de produto que contém um componente Produto ng.
 
 A página Produtos não está disponível para usuários do aplicativo. A página de engrenagens fornece acesso a cada página de produto.
 
@@ -269,7 +267,7 @@ Ao usar o aplicativo, a página Notícias está disponível no carrossel da pág
 
 ### A página Sobre nós - Aplicativo móvel Geometrixx {#the-about-us-page-geometrixx-mobile-app}
 
-A página Sobre nós contém vários componentes Linha de Duas Colunas. Cada coluna contém um componente Imagem ou Texto. Os componentes são editáveis e o sistema de parágrafo permite adicionar componentes.
+A página Sobre nós contém vários componentes Linha de duas colunas. Cada coluna contém um componente Imagem ou Texto. Os componentes são editáveis e o sistema de parágrafo permite adicionar componentes.
 
 Ao usar o aplicativo, a página Sobre nós está disponível no carrossel da página em inglês.
 
@@ -304,7 +302,7 @@ Configure o comportamento do carrossel:
 Especifique como a lista de páginas é gerada:
 
 * Uso da lista de criação: o método a ser usado para especificar as páginas a serem incluídas no carrossel. Consulte Criação da lista de páginas.
-* Ordenar por: selecione uma propriedade de página a ser usada para classificar a lista de páginas. Por exemplo, selecione jcr:title para classificar páginas em ordem alfabética por título.
+* Ordenar por: selecione uma propriedade de página a ser usada para classificar a lista de páginas. Por exemplo, selecione jcr:title para classificar páginas alfabeticamente por título.
 * Limite: o número máximo de páginas a serem incluídas. Essa propriedade é adequada para métodos baseados em pesquisa para criar a lista de páginas.
 
 #### Criação da lista de páginas {#building-the-page-list}

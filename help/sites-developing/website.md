@@ -1,8 +1,6 @@
 ---
 title: Criar um site completo (JSP)
-seo-title: Create a Fully-Featured Website (JSP)
 description: Este tutorial permite que você crie um site completo com AEM
-seo-description: This tutorial enables you to create a fully featured website with AEM
 uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +9,7 @@ content-type: reference
 discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
 source-wordcount: '4935'
 ht-degree: 2%
@@ -24,7 +22,7 @@ ht-degree: 2%
 >
 >Este artigo descreve como criar um site usando JSP e com base na interface clássica. A Adobe recomenda aproveitar as tecnologias de AEM mais recentes para seus sites, conforme descrito detalhadamente no artigo [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md).
 
-Este tutorial permite criar um site completo com o Adobe Experience Manager (AEM). O site será baseado em um site genérico e destina-se principalmente a desenvolvedores da Web. Todo o desenvolvimento ocorrerá em um ambiente de criação.
+Este tutorial permite criar um site completo com o Adobe Experience Manager (AEM). O site será baseado em um site genérico e destina-se principalmente a desenvolvedores da Web. Todo o desenvolvimento ocorre em um ambiente de criação.
 
 Este tutorial descreve como:
 
@@ -293,8 +291,8 @@ Por exemplo, no código JSP do componente, você pode fazer referência aos scri
       * **Nome:** sling:resourceSuperType
       * **Tipo:** String
       * **Valor:** foundation/components/page
-   1. Clique em Salvar tudo.
 
+   1. Clique em Salvar tudo.
 
 1. Abra o `contentpage.jsp` arquivo em `/apps/mywebsite/components/contentpage` e substitua o código existente pelo seguinte código:
 
@@ -524,9 +522,9 @@ Neste exercício, o Sling corresponde esses URLs ao script /apps/mywebsite/compo
 
 1. Copie o código a seguir em `navimage.png.java.`O código estende a classe AbstractImageServlet:
 
-   * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) cria um objeto ImageContext que armazena as propriedades do recurso atual.
+   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) cria um objeto ImageContext que armazena as propriedades do recurso atual.
    * A página principal do recurso é extraída do objeto ImageContext. O título da página e o subtítulo são obtidos.
-   * [ImageHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) é usado para gerar a imagem do arquivo navimage_bg.jpg do design do site, o título da página e o subtítulo da página.
+   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) é usado para gerar a imagem do arquivo navimage_bg.jpg do design do site, o título da página e o subtítulo da página.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -656,7 +654,7 @@ Crie o componente listchildren que gera uma lista de links de página que inclue
 
 #### Criação de páginas de produto {#creating-product-pages}
 
-Crie duas páginas localizadas abaixo da página Produtos. Para cada página, que descreve dois produtos específicos, você define um título, uma descrição e uma data.
+Crie duas páginas localizadas abaixo da página Produtos. Para cada página que descreve dois produtos específicos, você define um título, uma descrição e uma data.
 
 1. Na árvore de pastas da página Sites, selecione o item Sites/Meu site/Inglês/Produtos e clique em Novo > Nova página.
 1. Na caixa de diálogo, insira os seguintes valores de propriedade e clique em Criar:
@@ -679,6 +677,7 @@ Crie duas páginas localizadas abaixo da página Produtos. Para cada página, qu
       * Nome: `jcr:description`
       * Tipo: `String`
       * Valor: `This is a description of the Product 1!.`
+
    1. Clique em **Adicionar**.
    1. No **Propriedades** , crie outra propriedade usando os seguintes valores:
 
@@ -686,9 +685,8 @@ Crie duas páginas localizadas abaixo da página Produtos. Para cada página, qu
       * Tipo: String
       * Valor: 14/02/2008
       * Clique em Adicionar.
+
    1. Clique em Salvar tudo.
-
-
 
 1. No CRXDE Lite, defina uma descrição e uma data para a página Produto 2:
 
@@ -698,6 +696,7 @@ Crie duas páginas localizadas abaixo da página Produtos. Para cada página, qu
       * Nome: jcr:descrição
       * Tipo: String
       * Valor: esta é uma descrição do Produto 2!.
+
    1. Clique em **Adicionar**.
    1. Nas mesmas caixas de texto, substitua os valores anteriores pelos seguintes valores:
 
@@ -705,9 +704,8 @@ Crie duas páginas localizadas abaixo da página Produtos. Para cada página, qu
       * Tipo: String
       * Valor: 11/05/2012
       * Clique em Adicionar.
+
    1. Clique em Salvar tudo.
-
-
 
 #### Criação do componente List Children {#creating-the-list-children-component-1}
 
@@ -1033,14 +1031,14 @@ Esta seção descreve como definir uma imagem como seu logotipo usando a caixa d
 
 1. Com a página Produtos aberta no navegador, clique no botão Design na parte inferior do Sidekick para entrar no modo de design.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![O botão Design indicado por um quadrado direito.](do-not-localize/chlimage_1-1.png)
 
 1. Na barra Design do logotipo, clique em Editar para usar a caixa de diálogo para editar as configurações do componente de logotipo.
 1. Na caixa de diálogo, clique no painel da guia Imagem, procure a imagem logo.png extraída do arquivo mywebsite.zip e clique em OK.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
-1. Clique no triângulo na barra de título do Sidekick para retornar ao modo Editar.
+1. Clique no triângulo na barra de título do Sidekick para retornar ao modo de Edição.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -1206,7 +1204,7 @@ Nesta seção, você usa um nó cq:editConfig para permitir que você arraste at
 
 #### Adição do ícone {#adding-the-icon}
 
-Nesta seção, você adiciona o ícone para aparecer ao lado do componente de imagem quando ele estiver listado no Sidekick:
+Nesta seção, você adiciona o ícone para aparecer ao lado do componente de imagem quando ele estiver listado em Sidekick:
 
 1. No CRXDE Lite, clique com o botão direito no arquivo `/libs/foundation/components/image/icon.png` e selecione **Copiar.**
 1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/image` e clique em **Colar** e, em seguida, clique em **Salvar tudo**.
@@ -1216,7 +1214,7 @@ Nesta seção, você adiciona o ícone para aparecer ao lado do componente de im
 Nesta seção, você visualizará as **Produtos** e adicione seu componente de imagem ao sistema de parágrafos.
 
 1. No navegador, recarregue o **Produtos** página.
-1. No Sidekick, clique no botão **modo de design** ícone.
+1. No Sidekick, clique na guia **modo de design** ícone.
 1. Clique no botão Editar para editar a caixa de diálogo de design do par.
 1. Na caixa de diálogo, uma lista de **Componentes permitidos** é exibido; navegue até **MeuSite**, selecione o **Meu componente de imagem** e clique em **OK.**
 1. Retornar para **modo de edição.**
@@ -1281,10 +1279,10 @@ Sua caixa de entrada de pesquisa será exibida da seguinte maneira no **Inglês*
       * Título: Meu componente de pesquisa
       * Descrição: Este é meu componente de pesquisa
       * Grupo: MeuSite
+
    1. Clique em Avançar e, em seguida, clique em Avançar novamente.
    1. No painel Pais permitidos, clique no botão + e digite `*/parsys`.
    1. Clique em Avançar e em OK.
-
 
 1. Clique em Salvar tudo.
 1. Copie os nós a seguir e cole-os no nó apps/mywebsite/components/search:
@@ -1500,11 +1498,11 @@ Para incluir uma caixa de entrada de pesquisa na seção esquerda da página de 
 Nesta seção, você adiciona o componente de pesquisa ao sistema de parágrafos.
 
 1. No navegador, abra a página Pesquisar.
-1. No Sidekick, clique no ícone modo de design.
+1. No Sidekick, clique no ícone do modo de design.
 1. No bloco Design de par (abaixo do título Pesquisar), clique em Editar.
 1. Na caixa de diálogo, role para baixo até a  **Meus Sites** grupo, selecione **Meu componente de pesquisa** e clique em **OK**.
 1. No Sidekick, clique no triângulo para retornar ao modo de edição.
-1. Arraste o componente Minha pesquisa do Sidekick para o quadro parsys. Ela tem a seguinte aparência:
+1. Arraste o Meu componente de pesquisa do Sidekick para o quadro parsys. Ela tem a seguinte aparência:
 
    ![chlimage_1-58](assets/chlimage_1-58.png)
 

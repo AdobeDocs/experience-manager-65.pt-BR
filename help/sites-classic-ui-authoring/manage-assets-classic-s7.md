@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '3511'
+source-wordcount: '3532'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,7 @@ Você pode publicar ativos digitais no Dynamic Media Classic (Scene7) pelo conso
 >[!NOTE]
 >
 >O Experience Manager publica no Dynamic Media Classic (Scene7) de forma assíncrona. Depois de selecionar **[!UICONTROL Publish]**, pode levar vários segundos para que seu ativo seja publicado no Dynamic Media Classic (Scene7).
+>
 
 ### Publicação por meio do console Assets {#publishing-from-the-assets-console}
 
@@ -56,7 +57,7 @@ Publique no Dynamic Media Classic (Scene7) a partir do console de Ativos se os a
 
 1. Na interface clássica do Experience Manager, selecione **[!UICONTROL Ativos digitais]** para acessar o gerenciador de ativos digitais.
 
-1. Selecione o ativo (ou os ativos) ou a pasta na pasta de destino que você deseja publicar no Dynamic Media Classic (Scene7), clique com o botão direito do mouse e selecione **[!UICONTROL Publicar no Dynamic Media Classic (Scene7)]**. Como alternativa, você pode selecionar **[!UICONTROL Publicar no Dynamic Media Classic (Scene7)]** do **[!UICONTROL Ferramentas]** menu.
+1. Selecione o ativo (ou ativos) ou a pasta na pasta de destino que você deseja publicar no Dynamic Media Classic (Scene7), clique com o botão direito do mouse e selecione **[!UICONTROL Publicar no Dynamic Media Classic (Scene7)]**. Como alternativa, você pode selecionar **[!UICONTROL Publicar no Dynamic Media Classic (Scene7)]** do **[!UICONTROL Ferramentas]** menu.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -205,7 +206,7 @@ O componente de HTML5 Zoom exibe uma imagem maior quando você pressiona o botã
 
 O ativo tem ferramentas de zoom na parte inferior. Selecionar **[!UICONTROL +]** para ampliar. Selecionar **[!UICONTROL -]** para reduzir. Selecionar o **[!UICONTROL x]** ou a seta para redefinir zoom traz a imagem de volta ao tamanho original como foi importada. Selecione as setas diagonais para que você possa usá-las em tela cheia. Selecionar **[!UICONTROL Editar]** para configurar o componente. Com esse componente, você pode configurar [configurações comuns a todos os componentes do Dynamic Media Classic (Scene7)](#settings-common-to-all-scene-components).
 
-![](do-not-localize/chlimage_1-3.png)
+![Imagem de flores de tulipa dentro do componente de HTML5 Zoom.](do-not-localize/chlimage_1-3.png)
 
 ### Flyout {#flyout}
 
@@ -223,7 +224,7 @@ No componente Flyout HTML5, o ativo é exibido como tela dividida; deixa o ativo
 
 O componente de Imagem do Dynamic Media Classic (Scene7) permite adicionar a funcionalidade do Dynamic Media Classic (Scene7) às suas imagens, como modificadores do Dynamic Media Classic (Scene7), predefinições de imagens ou do visualizador e nitidez. O componente de imagem do Dynamic Media Classic (Scene7) é semelhante a outros componentes de imagem no Experience Manager com funcionalidade especial do Dynamic Media Classic (Scene7). Neste exemplo, a imagem tem o modificador de URL do Dynamic Media Classic (Scene7), `&op_invert=1` aplicado.
 
-![](do-not-localize/chlimage_1-4.png)
+![Imagem de uma esfera dentro do componente de imagem do Dynamic Media Classic (Scene 7)](do-not-localize/chlimage_1-4.png)
 
 **Título, texto alternativo** - Na guia Avançado, adicione um título à imagem e um texto alternativo para os usuários que têm gráficos desativados.
 
@@ -331,10 +332,9 @@ Se você tiver várias configurações, o Experience Manager, por padrão, exibi
 >* Quando [A Visualização Segura está ativada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), os ativos publicados e não publicados no Dynamic Media Classic (Scene7) aparecem no navegador de conteúdo do Dynamic Media Classic (Scene7).
 >* Se você não vir **[!UICONTROL Dynamic Media Classic (Scene7)]** ou o **[!UICONTROL S7]** ícone como uma opção no navegador de conteúdo, você deve [configurar o Dynamic Media Classic (Scene7) para funcionar com o Experience Manager](/help/sites-administering/scene7.md).
 >* Para vídeo, o navegador de conteúdo do Dynamic Media Classic (Scene7) é compatível com:
-   >   * Conjuntos de vídeos adaptados: contêiner de todas as representações de vídeo necessárias para a reprodução contínua em várias telas
-   >   * Vídeo MP4 único
-   >   * Vídeo F4V único
-
+>   * Conjuntos de vídeos adaptados: contêiner de todas as representações de vídeo necessárias para a reprodução contínua em várias telas
+>   * Vídeo MP4 único
+>   * Vídeo F4V único
 
 ### Procurar conteúdo {#browsing-content-in-the-classic-ui}
 
@@ -357,7 +357,6 @@ Por padrão, os ativos são exibidos por nome de arquivo. No entanto, também é
 >* Vídeo F4V único
 >
 
-
 ### Pesquisar ativos do Dynamic Media Classic (Scene7) com o navegador de conteúdo {#searching-for-scene-assets-with-the-content-browser}
 
 Pesquisar ativos do Dynamic Media Classic (Scene7) é semelhante a pesquisar ativos do Experience Manager. A exceção é que, ao pesquisar, você está vendo uma visualização remota dos ativos no sistema Dynamic Media Classic (Scene7), em vez de importá-los diretamente para o Experience Manager.
@@ -366,7 +365,7 @@ Você pode usar a interface clássica ou a interface otimizada para toque para v
 
 Ao pesquisar em qualquer uma das interfaces do usuário, você pode filtrar pelos seguintes critérios (mostrados aqui na interface otimizada para toque):
 
-**Inserir palavras-chave** - Você pode pesquisar ativos por nome. Ao pesquisar as palavras-chave, digite é com o nome do arquivo que começa. Por exemplo, digitar a palavra &quot;natação&quot; procuraria qualquer nome de arquivo de ativo que começasse com essas letras nessa ordem. Certifique-se de selecionar Inserir depois de digitar o termo para localizar o ativo.
+**Inserir palavras-chave** - Você pode pesquisar ativos por nome. Ao pesquisar as palavras-chave, digite é com o nome do arquivo que começa. Por exemplo, digitar a palavra &quot;natação&quot; procuraria qualquer nome de arquivo de ativo que começasse com essas letras nessa ordem. Selecione `Enter` depois de digitar o termo para localizar o ativo.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -397,7 +396,6 @@ Por padrão, o Experience Manager pesquisa a pasta selecionada e todas as subpas
 >* Ao pesquisar vídeos, você pesquisa uma única representação. Os resultados retornam a representação original (somente &#42;.mp4) e a representação codificada.
 >* Ao pesquisar um conjunto de vídeos adaptáveis, você está pesquisando a pasta e todas as subpastas, mas somente se tiver adicionado uma palavra-chave à pesquisa. Se você não tiver adicionado uma palavra-chave, o Experience Manager não pesquisará nas subpastas.
 >
-
 
 **Publicar status** - Você pode filtrar por ativos com base no status da publicação: Não publicado ou Publicado. Se você não selecionar nenhum Status de publicação, o Experience Manager, por padrão, pesquisará todos os status de publicação.
 

@@ -1,8 +1,6 @@
 ---
 title: Desenvolvimento de aplicativos móveis
-seo-title: Building Mobile Applications
-description: Esta página fornece um artigo passo a passo completo sobre como criar um aplicativo para dispositivos móveis usando o código disponível no GitHub que está disponível aqui.Crie seu aplicativo para instalar em um dispositivo ou simulador para teste ou para publicação em lojas de aplicativos. Você pode criar aplicativos localmente usando a interface de linha de comando do PhoneGap ou na nuvem usando o PhoneGap Build.
-seo-description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here.Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build.
+description: Esta página fornece um artigo passo a passo completo sobre como criar um aplicativo para dispositivos móveis usando o código disponível no GitHub, que está disponível aqui. Crie seu aplicativo para instalação em um dispositivo ou simulador para teste ou publicação em app stores. Você pode criar aplicativos localmente usando a interface de linha de comando do PhoneGap ou na nuvem usando o PhoneGap Build.
 uuid: 1ff6fe1a-24cc-4973-a2cd-8d356bc649b0
 contentOwner: User
 content-type: reference
@@ -10,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1058'
+ht-degree: 1%
 
 ---
 
@@ -59,14 +57,14 @@ Compile o aplicativo PhoneGap no computador usando a CLI (Command-line Interface
 
 Para criar usando a CLI do PhoneGap, você precisa instalar o Node.js e o utilitário do cliente PhoneGap. Você precisa de uma conexão com a Internet para executar o procedimento a seguir.
 
-1. Baixar e instalar [Node.js](https://nodejs.org/).
+1. Baixar e instalar [Node.js](https://nodejs.org/en).
 1. Abra um terminal ou prompt de comando e digite o seguinte comando do nó para instalar o utilitário PhoneGap:
 
    ```shell
    npm install -g phonegap
    ```
 
-   Em um sistema Unix ou Linux, talvez seja necessário prefixar o comando com `sudo`.
+   Em um sistema UNIX® ou Linux®, talvez seja necessário prefixar o comando com `sudo`.
 
    O terminal mostra os resultados de uma série de comandos HTTP GET. Quando a instalação for bem-sucedida, o terminal mostrará onde as bibliotecas são instaladas, semelhante ao seguinte exemplo:
 
@@ -88,16 +86,16 @@ Para criar usando a CLI do PhoneGap, você precisa instalar o Node.js e o utilit
 1. (Opcional) Obtenha o SDK para a plataforma móvel para a qual você está direcionando:
 
    * Para criar aplicativos para a plataforma iOS, instale a versão mais recente do [Xcode](https://developer.apple.com/xcode/).
-   * Para criar aplicativos Android, instale o [Android SDK](https://developer.android.com/).
+   * Para criar aplicativos Android™, instale o [Android™ SDK](https://developer.android.com/).
 
 ### Download do arquivo ZIP de conteúdo {#downloading-the-content-zip-file}
 
 Mova o conteúdo do aplicativo móvel para o sistema de arquivos.
 
 1. Na página Aplicativos móveis, selecione seu aplicativo.
-1. (Opcional) Para criar o aplicativo para instalações completas, na barra de ferramentas, clique ou toque no ícone Limpar cache.
+1. (Opcional) Para criar o aplicativo para instalações completas, na barra de ferramentas, clique no ícone Limpar cache.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Ícone Limpar cache indicado por um símbolo de link quebrado.](do-not-localize/chlimage_1.png)
 
    >[!NOTE]
    >
@@ -105,7 +103,7 @@ Mova o conteúdo do aplicativo móvel para o sistema de arquivos.
 
 1. Na barra de ferramentas, clique ou toque no ícone Baixar ativos da CLI.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Ícone Download de ativos CLI indicado pelo símbolo de tablet sobreposto.](do-not-localize/chlimage_1-1.png)
 
 1. Depois de salvar o arquivo ZIP, clique em Fechar na caixa de diálogo Êxito.
 1. Extraia o conteúdo do arquivo ZIP.
@@ -120,7 +118,7 @@ Use a CLI do PhoneGap para compilar e instalar o aplicativo. Para obter informa�
    cd ~/Downloads/ng-app-cli.1392137825303
    ```
 
-1. Digite o comando phonegap para a plataforma que você está direcionando. Por exemplo, o comando a seguir cria o aplicativo para Android:
+1. Digite o comando phonegap para a plataforma que você está direcionando. Por exemplo, o comando a seguir cria o aplicativo para Android™:
 
    ```shell
    phonegap build android
@@ -150,7 +148,7 @@ Envie os recursos do aplicativo ao PhoneGap Build para compilação nas várias 
 1. Na página Aplicativos móveis, abra o aplicativo móvel. ([http://localhost:4502/mobile.html/content/phonegap](http://localhost:4502/mobile.html/content/phonegap))
 1. (Opcional) Para criar o aplicativo para instalações completas, selecione o aplicativo e clique no ícone Limpar cache.
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Ícone Limpar cache indicado por um símbolo de link quebrado.](do-not-localize/chlimage_1-2.png)
 
    >[!NOTE]
    >
@@ -158,7 +156,7 @@ Envie os recursos do aplicativo ao PhoneGap Build para compilação nas várias 
 
 1. Selecione a página inicial e clique no ícone Criar remoto.
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Ícone Build Remote indicado por duas engrenagens redondas.](do-not-localize/chlimage_1-3.png)
 
    **Nota:** A versão Beta do AEM Beta não cria uma notificação na Caixa de entrada quando a build é concluída com sucesso.
 

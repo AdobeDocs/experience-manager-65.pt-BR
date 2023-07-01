@@ -1,8 +1,6 @@
 ---
 title: Consoles de gerenciamento de membros e grupos
-seo-title: Members & Groups Management Consoles
 description: Como acessar os consoles de Gerenciamento de Membros e Grupos
-seo-description: How to access Members and Groups Management consoles
 uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '942'
 ht-degree: 4%
 
 ---
@@ -55,7 +53,7 @@ No ambiente de criação, para acessar o console Membros para gerenciar membros 
 
 Selecione o ícone do painel lateral no lado esquerdo da `Members` cabeçalho para alternar, abra o painel lateral de pesquisa.
 
-![](assets/leftpanel-icon.png)
+![Ícone do painel lateral de pesquisa.](assets/leftpanel-icon.png)
 
 
 ![member-console2](assets/member-console2.png)
@@ -97,19 +95,19 @@ O membro pode alterar seu endereço de email ao atualizar seu perfil. Se a ID ti
 
 * **[!UICONTROL Senha]**
 
-   (*Obrigatório*) A senha de entrada.
+  (*Obrigatório*) A senha de entrada.
 
 * **[!UICONTROL Digite a senha novamente]**
 
-   (*Obrigatório*) Digite novamente a senha para verificação.
+  (*Obrigatório*) Digite novamente a senha para verificação.
 
 * **[!UICONTROL Adicionar membro aos Sites]**
 
-   (*Opcional*) Selecione dentre os sites da comunidade existentes para adicionar o membro ao grupo de membros do site da comunidade.
+  (*Opcional*) Selecione dentre os sites da comunidade existentes para adicionar o membro ao grupo de membros do site da comunidade.
 
 * **[!UICONTROL Adicionar membro aos grupos]**
 
-   (*Opcional*) Selecione dentre os grupos membros existentes para adicionar o membro a esse grupo.
+  (*Opcional*) Selecione dentre os grupos membros existentes para adicionar o membro a esse grupo.
 
 * Selecione **[!UICONTROL Salvar]**
 
@@ -122,17 +120,17 @@ Nas Configurações da conta, é possível para um administrador da comunidade:
 
    * Não proibido Um membro tem acesso total ao site da comunidade.
 
-   O padrão é `Not Banned`.
+  O padrão é `Not Banned`.
 
 * **[!UICONTROL Limites de contribuição]**
 
-   Se marcada, a capacidade do membro de publicar conteúdo é limitada.
+  Se marcada, a capacidade do membro de publicar conteúdo é limitada.
 O padrão depende da configuração dos limites de contribuição.
 Consulte [Limites de contribuição do membro](limits.md).
 
 * **[!UICONTROL Alterar senha]**
 
-   Um link que está presente ao modificar um membro existente. Fornece a capacidade de um administrador da comunidade redefinir uma senha para um membro.
+  Um link que está presente ao modificar um membro existente. Fornece a capacidade de um administrador da comunidade redefinir uma senha para um membro.
 
 ### GERAL - Foto {#general-photo}
 
@@ -181,23 +179,23 @@ Os campos obrigatórios para criar um novo grupo de membros do lado da publicaç
 
 * **[!UICONTROL ID]**
 
-   (*Obrigatório*) O identificador exclusivo do grupo.
+  (*Obrigatório*) O identificador exclusivo do grupo.
 
-   *Depois de criada, a ID não pode ser modificada.*
+  *Depois de criada, a ID não pode ser modificada.*
 
 * **[!UICONTROL Nome]**
 
-   (*Opcional*) O nome de exibição do grupo.
+  (*Opcional*) O nome de exibição do grupo.
 
-   O valor padrão é a ID.
+  O valor padrão é a ID.
 
 * **[!UICONTROL Descrição]**
 
-   (*Opcional*) Uma descrição da finalidade e das permissões do grupo.
+  (*Opcional*) Uma descrição da finalidade e das permissões do grupo.
 
 * **[!UICONTROL Adicionar membros ao grupo]**
 
-   (*Opcional*) Selecione os membros do lado da publicação a serem incluídos como membros iniciais do grupo.
+  (*Opcional*) Selecione os membros do lado da publicação a serem incluídos como membros iniciais do grupo.
 
 * Selecione **[!UICONTROL Salvar]**
 

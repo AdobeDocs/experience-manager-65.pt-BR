@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 14%
+source-wordcount: '1836'
+ht-degree: 13%
 
 ---
 
@@ -207,19 +207,19 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, is
 
 Há dois ícones na borda inferior do sidekick que são importantes para visualizar páginas:
 
-![](do-not-localize/chlimage_1-5.png)
+![Borda inferior do sidekick com uma linha horizontal de sete ícones. Dois dos ícones no início da linha, o ícone de edição e o ícone do modo de visualização, são indicados por um símbolo de lápis e um símbolo de lupa, respectivamente.](do-not-localize/chlimage_1-5.png)
 
 * O ícone de lápis mostra que você está no modo de edição, onde é possível adicionar, modificar, mover ou excluir conteúdo.
 
-   ![](do-not-localize/chlimage_1-6.png)
+  ![Ícone de edição indicado por um lápis.](do-not-localize/chlimage_1-6.png)
 
 * O ícone de lupa permite selecionar o modo de visualização, em que a página é exibida como será vista no ambiente de publicação (às vezes, também é necessária uma atualização de página):
 
-   ![](do-not-localize/chlimage_1-7.png)
+  ![Ícone do modo de visualização indicado por um símbolo de lupa.](do-not-localize/chlimage_1-7.png)
 
-   No modo de visualização, o sidekick será reduzido. Clique no ícone de seta para baixo para voltar ao modo de edição:
+  No modo de visualização, o sidekick será reduzido. Clique no ícone de seta para baixo para voltar ao modo de edição:
 
-   ![](do-not-localize/chlimage_1-8.png)
+  ![Barra com AEM como o título e um ícone de modo de edição à direita do título indicado por um símbolo de seta para baixo.](do-not-localize/chlimage_1-8.png)
 
 ## Localizar e Substituir {#find-replace}
 
@@ -286,7 +286,6 @@ O comportamento dos comandos desfazer e refazer é semelhante ao de outros progr
 >* desfaça no máximo 20 ações de edição (configuração padrão).
 >* também usar [Atalhos de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para desfazer e refazer.
 >
-
 
 Você pode desfazer e refazer os seguintes tipos de alterações de página:
 
