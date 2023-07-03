@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
 workflow-type: tm+mt
-source-wordcount: '3047'
+source-wordcount: '3082'
 ht-degree: 40%
 
 ---
@@ -46,51 +46,51 @@ A barra de ferramentas oferece acesso a várias opções. Dependendo do contexto
 
 * **Ativar/desativar painel lateral**
 
-   Isso abre/fecha o painel lateral, que contém a tag [Navegador de ativos](/help/sites-authoring/author-environment-tools.md#assets-browser), [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser), e [Árvore de conteúdo](/help/sites-authoring/author-environment-tools.md#content-tree).
+  Isso abre/fecha o painel lateral, que contém a tag [Navegador de ativos](/help/sites-authoring/author-environment-tools.md#assets-browser), [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser), e [Árvore de conteúdo](/help/sites-authoring/author-environment-tools.md#content-tree).
 
-   ![](do-not-localize/screen_shot_2018-03-22at111425.png)
+  ![Ativar/desativar painel lateral](do-not-localize/screen_shot_2018-03-22at111425.png)
 
 * **Informações da página**
 
-   Fornece acesso à [Informações da página](/help/sites-authoring/author-environment-tools.md#page-information) incluindo detalhes da página e ações que podem ser tomadas na página, incluindo visualização e edição de informações da página, visualização de propriedades da página e publicação/cancelamento da publicação da página.
+  Fornece acesso à [Informações da página](/help/sites-authoring/author-environment-tools.md#page-information) incluindo detalhes da página e ações que podem ser tomadas na página, incluindo visualização e edição de informações da página, visualização de propriedades da página e publicação/cancelamento da publicação da página.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111437.png)
+  ![Informações da página](do-not-localize/screen_shot_2018-03-22at111437.png)
 
 * **Emulador**
 
-   Alterna a [barra de ferramentas do emulador](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), que é usado para emular a aparência da página em outro dispositivo. Isso é alternado automaticamente no modo de layout.
+  Alterna a [barra de ferramentas do emulador](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), que é usado para emular a aparência da página em outro dispositivo. Isso é alternado automaticamente no modo de layout.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111442.png)
+  ![Emulador](do-not-localize/screen_shot_2018-03-22at111442.png)
 
 * **ContextHub**
 
-   Abre a [hub de contexto](/help/sites-authoring/ch-previewing.md). Disponível somente no modo de Visualização.
+  Abre a [hub de contexto](/help/sites-authoring/ch-previewing.md). Disponível somente no modo de Visualização.
 
-   ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
+  ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
 
 * **Título da página**
 
-   Isso é puramente informativo.
+  Isso é puramente informativo.
 
-   ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
+  ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
 
 * **Seletor de modo**
 
-   Exibe o atual [modo](/help/sites-authoring/author-environment-tools.md#page-modes) e permite selecionar outro modo, como editar, layout, timewarp ou direcionamento.
+  Exibe o atual [modo](/help/sites-authoring/author-environment-tools.md#page-modes) e permite selecionar outro modo, como editar, layout, timewarp ou direcionamento.
 
-   ![chlimage_1-120](assets/chlimage_1-120.png)
+  ![chlimage_1-120](assets/chlimage_1-120.png)
 
 * **Visualizar**
 
-   Habilita [modo de visualização](/help/sites-authoring/editing-content.md#preview-mode). Isso exibe a página como ela será exibida quando publicada.
+  Habilita [modo de visualização](/help/sites-authoring/editing-content.md#preview-mode). Isso exibe a página como ela será exibida quando publicada.
 
-   ![chlimage_1-121](assets/chlimage_1-121.png)
+  ![chlimage_1-121](assets/chlimage_1-121.png)
 
 * **Anotar**
 
-   Permite adicionar [anotações](/help/sites-authoring/annotations.md) à página ao revisar uma página. Após a primeira anotação, o ícone alternará para um número que indica o número de anotações na página.
+  Permite adicionar [anotações](/help/sites-authoring/annotations.md) à página ao revisar uma página. Após a primeira anotação, o ícone alternará para um número que indica o número de anotações na página.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111638.png)
+  ![Anotar](do-not-localize/screen_shot_2018-03-22at111638.png)
 
 ### Notificação de status {#status-notification}
 
@@ -122,11 +122,11 @@ O placeholder do componente é um indicador para mostrar onde um componente ser�
 
 * Ao adicionar um novo componente à página (arrastar do navegador de componentes):
 
-   ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
+  ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
 
 * Ao mover um componente existente:
 
-   ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
+  ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
 
 ## Inserir um componente {#inserting-a-component}
 
@@ -230,77 +230,77 @@ As ações reais disponíveis para o usuário serão mostradas conforme apropria
 
 * **Editar**
 
-   [Dependendo do tipo de componente,](/help/sites-authoring/default-components.md) permitirá a [edição do conteúdo do componente](#edit-content). Muitas vezes será disponibilizada uma barra de ferramentas.
+  [Dependendo do tipo de componente,](/help/sites-authoring/default-components.md) permitirá a [edição do conteúdo do componente](#edit-content). Muitas vezes será disponibilizada uma barra de ferramentas.
 
-   ![](do-not-localize/screen_shot_2018-03-22at112936.png)
+  ![Editar](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configurar**
 
-   [Dependendo do tipo de componente,](/help/sites-authoring/default-components.md) permitirá a edição e configuração das propriedades do componente. Frequentemente uma caixa de diálogo será aberta.
+  [Dependendo do tipo de componente,](/help/sites-authoring/default-components.md) permitirá a edição e configuração das propriedades do componente. Frequentemente uma caixa de diálogo será aberta.
 
-   ![](do-not-localize/screen_shot_2018-03-22at112955.png)
+  ![Configurar](do-not-localize/screen_shot_2018-03-22at112955.png)
 
 * **Copiar**
 
-   Isso copiará o componente para a área de transferência. Após a ação de colagem, o componente original permanecerá.
+  Isso copiará o componente para a área de transferência. Após a ação de colagem, o componente original permanecerá.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113000.png)
+  ![Copiar](do-not-localize/screen_shot_2018-03-22at113000.png)
 
 * **Recortar**
 
-   Isso copiará o componente para a área de transferência. Após a ação de colagem, o componente original será removido.
+  Isso copiará o componente para a área de transferência. Após a ação de colagem, o componente original será removido.
 
-   ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
+  ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
 
 * **Excluir**
 
-   O componente será excluído da página com sua confirmação.
+  O componente será excluído da página com sua confirmação.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113012.png)
+  ![Excluir](do-not-localize/screen_shot_2018-03-22at113012.png)
 
 * **Inserir componente**
 
-   Isso abre a caixa de diálogo para [adicionar um novo componente](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  Isso abre a caixa de diálogo para [adicionar um novo componente](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-   ![](do-not-localize/screen_shot_2018-03-22at113017.png)
+  ![Inserir componente](do-not-localize/screen_shot_2018-03-22at113017.png)
 
 * **Colar**
 
-   Isso colará o componente da área de transferência na página. Se o original permanece, depende se você usou copiar ou recortar.
+  Isso colará o componente da área de transferência na página. Se o original permanece, depende se você usou copiar ou recortar.
 
    * É possível colar na mesma página ou em uma diferente.
    * O item colado será colado acima do item no qual você seleciona a ação de colagem.
    * A ação Colar só será exibida se houver conteúdo na área de transferência.
 
-   ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
+  ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
-   >[!NOTE]
-   >
-   >Se você colar em uma página diferente que já estava aberta antes da operação de cortar/copiar, será necessário atualizar a página para ver o conteúdo colado.
+  >[!NOTE]
+  >
+  >Se você colar em uma página diferente que já estava aberta antes da operação de cortar/copiar, será necessário atualizar a página para ver o conteúdo colado.
 
 * **Grupo**
 
-   Isso permite selecionar vários componentes de uma só vez. O mesmo pode ser alcançado em um dispositivo desktop por um **Ctrl+Clique** ou **Command+clique**.
+  Isso permite selecionar vários componentes de uma só vez. O mesmo pode ser alcançado em um dispositivo desktop por um **Ctrl+Clique** ou **Command+clique**.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113240.png)
+  ![Grupo](do-not-localize/screen_shot_2018-03-22at113240.png)
 
 * **Pai**
 
-   Permite selecionar o componente principal do componente selecionado.
+  Permite selecionar o componente principal do componente selecionado.
 
-   ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
+  ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
 
 * **Layout**
 
-   Isso permite modificar a variável [layout](/help/sites-authoring/editing-content.md#edit-component-layout) do componente selecionado. Isso se aplica somente ao componente selecionado e não ativa o [Modo de layout](/help/sites-authoring/author-environment-tools.md#page-modes) para a página inteira.
+  Isso permite modificar a variável [layout](/help/sites-authoring/editing-content.md#edit-component-layout) do componente selecionado. Isso se aplica somente ao componente selecionado e não ativa o [Modo de layout](/help/sites-authoring/author-environment-tools.md#page-modes) para a página inteira.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113044.png)
+  ![Layout](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **Converta em uma variação de fragmento de experiência**
 
-   Isso permite criar um novo [fragmento de experiência](/help/sites-authoring/experience-fragments.md) do componente selecionado ou adicioná-lo a um fragmento de experiência existente.
+  Isso permite criar um novo [fragmento de experiência](/help/sites-authoring/experience-fragments.md) do componente selecionado ou adicioná-lo a um fragmento de experiência existente.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113033.png)
+  ![Converter em variação de Fragmento de experiência](do-not-localize/screen_shot_2018-03-22at113033.png)
 
 ## Editar (Conteúdo) {#edit-content}
 
@@ -317,28 +317,28 @@ As opções de edição exatas dependerão do componente. Para alguns componente
 
 * [Componente de texto](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
-   ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
+  ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
 
 * Componente de imagem
 
-   ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
+  ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
 
-   >[!NOTE]
-   >
-   >A edição não funciona em um componente de imagem vazio.
-   >
-   >
-   >Você deve [arrastar ou fazer upload de uma imagem (usando Configurar)](/help/sites-authoring/default-components-foundation.md#image) antes de começar a editá-lo.
+  >[!NOTE]
+  >
+  >A edição não funciona em um componente de imagem vazio.
+  >
+  >
+  >Você deve [arrastar ou fazer upload de uma imagem (usando Configurar)](/help/sites-authoring/default-components-foundation.md#image) antes de começar a editá-lo.
 
 * Componente de imagem - tela cheia
 
-   [Entrar no modo de tela cheia](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) para o componente de imagem permite mais espaço para editar a imagem, bem como mostrar opções de edição adicionais como **Inicializar mapa** e **Restaurar zoom**. Além disso, a tela cheia permite selecionar predefinições de corte.
+  [Entrar no modo de tela cheia](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) para o componente de imagem permite mais espaço para editar a imagem, bem como mostrar opções de edição adicionais como **Inicializar mapa** e **Restaurar zoom**. Além disso, a tela cheia permite selecionar predefinições de corte.
 
-   ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
+  ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
 
 * Componentes construídos a partir de mais de um componente básico, como a [Componente de base de texto e imagem](/help/sites-authoring/default-components-foundation.md#text-image), primeiro solicite que você confirme qual conjunto de opções de edição deseja:
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+  ![chlimage_1-123](assets/chlimage_1-123.png)
 
 ### Arraste e solte ativos no componente {#drag-and-drop-assets-into-component}
 
@@ -356,7 +356,7 @@ Para tipos de componentes específicos, você pode arrastar e soltar ativos do n
 
 Para todos os componentes, o modo de tela cheia pode ser acessado com (e fechado de):
 
-![](do-not-localize/chlimage_1-20.png)
+![Editar modo de tela cheia](do-not-localize/chlimage_1-20.png)
 
 Por exemplo, o componente de **Texto:**
 
@@ -391,7 +391,7 @@ Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/
 
    Clique ou toque na ação **Layout** para definir o layout do componente.
 
-   ![](do-not-localize/chlimage_1-21.png)
+   ![Barra de ferramentas Componente](do-not-localize/chlimage_1-21.png)
 
 1. Depois que a ação Layout for selecionada:
 
@@ -405,7 +405,7 @@ Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/
 
 1. Após fazer as alterações necessárias no layout, clique no botão **Fechar** no menu de ação de componente para concluir a modificação do layout do componente. A barra de ferramentas do componente retornará ao seu estado normal de edição.
 
-   ![](do-not-localize/screen_shot_2018-03-22at133920.png)
+   ![Fechar](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
@@ -425,27 +425,27 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, is
 
 * **Live Copy**
 
-   A barra de ferramentas do componente, se o componente estiver em uma página que faz parte de uma live copy ou inicialização (com base em uma live copy). Por exemplo:
+  A barra de ferramentas do componente, se o componente estiver em uma página que faz parte de uma live copy ou inicialização (com base em uma live copy). Por exemplo:
 
-   ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
+  ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
 
-   A opção Cancelar herança está disponível:
+  A opção Cancelar herança está disponível:
 
-   ![](do-not-localize/screen_shot_2018-03-22at134406.png)
+  ![Cancelar herança](do-not-localize/screen_shot_2018-03-22at134406.png)
 
-   Ou reativar a herança se já tiver sido cancelada:
+  Ou reativar a herança se já tiver sido cancelada:
 
-   ![](do-not-localize/screen_shot_2018-03-22at134417.png)
+  ![Reativar herança](do-not-localize/screen_shot_2018-03-22at134417.png)
 
-   A ação de Implantação também está disponível no blueprint ou na origem de Live Copy:
+  A ação de Implantação também está disponível no blueprint ou na origem de Live Copy:
 
-   ![](do-not-localize/screen_shot_2018-03-22at134516.png)
+  ![Implantação](do-not-localize/screen_shot_2018-03-22at134516.png)
 
 * **Um Sistema De Parágrafo Herdado**
 
-   A janela de configuração. Por exemplo, como no Sistema de parágrafo herdado:
+  A janela de configuração. Por exemplo, como no Sistema de parágrafo herdado:
 
-   ![chlimage_1-124](assets/chlimage_1-124.png)
+  ![chlimage_1-124](assets/chlimage_1-124.png)
 
 ## Editar o modelo da página {#editing-the-page-template}
 
@@ -485,7 +485,6 @@ Existem duas opções para a visualização de uma página:
 >* Use o [atalho de teclado](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` para alternar entre a visualização e o último modo selecionado.
 >
 
-
 >[!NOTE]
 >
 >O cookie do Modo WCM está definido para ambas as opções.
@@ -517,7 +516,7 @@ Uma página pode ser bloqueada a partir:
    1. Selecione a página com [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Selecione o ícone de bloqueio.
 
-   ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
+  ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor de página**
 
@@ -552,7 +551,7 @@ O menu de Informações da página lista **Desbloquear** como uma opção, e o �
 
 Os ícones a seguir permitem desfazer ou refazer uma ação. Os seguintes itens são mostrados na barra de ferramentas, quando apropriado: 
 
-![](do-not-localize/screen_shot_2018-03-23at093614.png)
+![Desfazer e refazer](do-not-localize/screen_shot_2018-03-23at093614.png)
 
 >[!NOTE]
 >
@@ -584,7 +583,6 @@ O comportamento dos comandos desfazer e refazer é semelhante ao de outros progr
 >* Desfazer no máximo 20 ações de edição (configuração padrão).
 >* Também use [Atalhos de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para desfazer e refazer.
 >
-
 
 Você pode desfazer e refazer os seguintes tipos de alterações de página:
 

@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: bc1f0bd20804bbae78c7ea9a5209e183d6bbaaf3
+source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2242'
 ht-degree: 40%
 
 ---
@@ -69,21 +69,21 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
 
 * **Dispositivo móvel (por exemplo, iPad)**
 
-   O navegador de componentes cobre completamente a página que está sendo editada.
+  O navegador de componentes cobre completamente a página que está sendo editada.
 
-   Para adicionar um componente à sua página, toque e segure o componente desejado e mova-o para a direita - o navegador de componentes será fechado para mostrar a página novamente - onde você pode posicionar o componente.
+  Para adicionar um componente à sua página, toque e segure o componente desejado e mova-o para a direita - o navegador de componentes será fechado para mostrar a página novamente - onde você pode posicionar o componente.
 
-   ![ateat-04](assets/ateat-04.png)
+  ![ateat-04](assets/ateat-04.png)
 
 * **Dispositivo de desktop**
 
-   O navegador de componentes é aberto no lado esquerdo da janela.
+  O navegador de componentes é aberto no lado esquerdo da janela.
 
-   Para adicionar um componente à sua página, clique no componente desejado e arraste-o para o local desejado.
+  Para adicionar um componente à sua página, clique no componente desejado e arraste-o para o local desejado.
 
-   ![ateat-05](assets/ateat-05.png)
+  ![ateat-05](assets/ateat-05.png)
 
-   Os componentes são representados por
+  Os componentes são representados por
 
    * Nome do componente
    * Grupo do componente (em cinza)
@@ -92,16 +92,16 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
       * Os ícones dos componentes padrão são monocromáticos.
       * As abreviações são sempre os dois primeiros caracteres do nome do componente.
 
-   Na barra de ferramentas superior, no navegador **Componentes**, é possível:
+  Na barra de ferramentas superior, no navegador **Componentes**, é possível:
 
    * Filtrar componentes por nome.
    * Limitar a exibição para um grupo específico usando a seleção suspensa.
 
-   Para obter uma descrição mais detalhada do componente, clique ou toque no ícone de informações ao lado do componente no navegador **Componentes** (se disponível). Por exemplo, para o **Contêiner de layout**:
+  Para obter uma descrição mais detalhada do componente, clique ou toque no ícone de informações ao lado do componente no navegador **Componentes** (se disponível). Por exemplo, para o **Contêiner de layout**:
 
-   ![ateat-06](assets/ateat-06.png)
+  ![ateat-06](assets/ateat-06.png)
 
-   Para mais informações sobre os componentes disponíveis para você, consulte o [Console de componentes](/help/sites-authoring/default-components-console.md).
+  Para mais informações sobre os componentes disponíveis para você, consulte o [Console de componentes](/help/sites-authoring/default-components-console.md).
 
 ## Navegador de ativos {#assets-browser}
 
@@ -150,23 +150,23 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
 
 * **Dispositivo móvel, como o iPad**
 
-   O navegador de ativos cobre completamente a página que está sendo editada.
+  O navegador de ativos cobre completamente a página que está sendo editada.
 
-   Para adicionar um ativo à página, toque e segure o ativo necessário e mova-o para a direita: o navegador de ativos fechará para mostrar a página novamente, onde é possível adicionar o ativo ao componente necessário.
+  Para adicionar um ativo à página, toque e segure o ativo necessário e mova-o para a direita: o navegador de ativos fechará para mostrar a página novamente, onde é possível adicionar o ativo ao componente necessário.
 
-   ![ateat-09](assets/ateat-09.png)
+  ![ateat-09](assets/ateat-09.png)
 
 * **Dispositivo de desktop**
 
-   O navegador de ativos é aberto no lado esquerdo da janela.
+  O navegador de ativos é aberto no lado esquerdo da janela.
 
-   Para adicionar um ativo à página, clique no ativo necessário e arraste-o para o componente ou local necessário.
+  Para adicionar um ativo à página, clique no ativo necessário e arraste-o para o componente ou local necessário.
 
-   ![ateat-10](assets/ateat-10.png)
+  ![ateat-10](assets/ateat-10.png)
 
 Se você precisar fazer uma alteração rápida em um ativo, pode iniciar o [editor de ativos](/help/assets/manage-assets.md) diretamente do navegador de ativos, clicando no ícone de edição mostrado ao lado do nome do ativo.
 
-![](do-not-localize/screen_shot_2018-03-22at142448.png)
+![Dispositivo desktop do navegador de ativos](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Árvore de conteúdo {#content-tree}
 
@@ -174,7 +174,7 @@ A variável **Árvore de conteúdo** fornece uma visão geral de todos os compon
 
 A Árvore de conteúdo é uma guia dentro do painel lateral (junto com o navegador de componentes e ativos). Para abrir (ou fechar) o painel lateral, use o ícone na parte superior esquerda da barra de ferramentas:
 
-![](do-not-localize/screen_shot_2018-03-22at142042.png)
+![Árvore de conteúdo](do-not-localize/screen_shot_2018-03-22at142042.png)
 
 Ao abrir o painel lateral, ele deslizará para ser aberto (a partir do lado esquerdo). Selecione a guia **Árvore de conteúdo**, se necessário. Ao abrir, é possível ver uma representação em exibição de árvore da página ou do modelo, para que seja mais fácil entender como o conteúdo é estruturado hierarquicamente. Além disso, em uma página complexa, facilita a alternância entre componentes da página.
 
@@ -196,19 +196,19 @@ Clicar no componente destacará o componente no editor de páginas. As ações d
 
 * Por exemplo, uma página básica:
 
-   `https://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
+  `https://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
 
-   ![ateat-12](assets/ateat-12.png)
+  ![ateat-12](assets/ateat-12.png)
 
-   Se o componente que você clicar na árvore for editável, um ícone de chave inglesa aparecerá à direita do nome. Clicar nesse ícone iniciará diretamente a caixa de diálogo de edição do componente.
+  Se o componente que você clicar na árvore for editável, um ícone de chave inglesa aparecerá à direita do nome. Clicar nesse ícone iniciará diretamente a caixa de diálogo de edição do componente.
 
-   ![](do-not-localize/screen_shot_2018-03-22at142725.png)
+  ![Ícone de chave inglesa - Editar](do-not-localize/screen_shot_2018-03-22at142725.png)
 
 * Ou uma página que faça parte de um [livecopy](/help/sites-administering/msm.md), em que os componentes são herdados de outra página; por exemplo:
 
-   `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
+  `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
-   ![ateat-13](assets/ateat-13.png)
+  ![ateat-13](assets/ateat-13.png)
 
 ## Fragmentos: navegador do conteúdo associado {#fragments-associated-content-browser}
 
@@ -320,7 +320,6 @@ Você pode acessar esses itens usando os ícones no canto superior direito. O í
 >* Existe um [atalho de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre o modo de **Visualização** e o atualmente selecionado (por exemplo, **Editar**, **Layout** etc).
 >
 
-
 ## Seleção de caminho {#path-selection}
 
 Geralmente, durante a criação, é necessário selecionar outro recurso, como ao definir um link para outra página ou recurso ou selecionar uma imagem. Para selecionar facilmente um caminho, [campos de caminho](/help/sites-authoring/author-environment-tools.md#path-fields) O preenchimento automático da oferta e o [navegador de caminho](/help/sites-authoring/author-environment-tools.md#path-browser) permite uma seleção mais robusta.
@@ -333,7 +332,7 @@ Agora, os campos de caminho têm funcionalidade antecipada e de preenchimento au
 
 Clicar no botão **Abrir caixa de diálogo** no campo de caminho abre a caixa de diálogo [navegador de caminho](/help/sites-authoring/author-environment-tools.md#path-browser) para permitir opções mais detalhadas de seleção.
 
-![](do-not-localize/screen_shot_2018-03-22at154427.png)
+![Abrir caixa de diálogo da Seleção](do-not-localize/screen_shot_2018-03-22at154427.png)
 
 Como alternativa, comece a digitar no campo de caminho e o AEM oferecerá caminhos correspondentes à medida que você digita.
 
@@ -351,7 +350,7 @@ O navegador de caminho é organizado da mesma maneira que a [exibição de colun
 * A qualquer momento, você pode usar o campo de pesquisa na parte superior da caixa de diálogo. Clique em **X** no campo de pesquisa para limpar a pesquisa.
 * Para limitar sua pesquisa, você pode revelar as opções de filtro e filtrar seus resultados com base em um determinado caminho.
 
-   ![ateat-21](assets/ateat-21.png)
+  ![ateat-21](assets/ateat-21.png)
 
 ## Atalhos de teclado {#keyboard-shortcuts}
 
