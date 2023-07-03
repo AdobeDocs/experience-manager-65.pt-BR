@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 54%
+source-wordcount: '1805'
+ht-degree: 55%
 
 ---
 
@@ -40,11 +40,11 @@ O AEM permite um layout responsivo para suas páginas usando uma combinação de
 
 * Componente [**Contêiner de layout**](#adding-a-layout-container-and-its-content-edit-mode)
 
-   Este componente está disponível no [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) e fornece um sistema de parágrafo de grade para que você possa adicionar e posicionar componentes em uma grade responsiva. Ele também pode ser definido como o sistema de parágrafos padrão na sua página.
+  Este componente está disponível no [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) e fornece um sistema de parágrafo de grade para que você possa adicionar e posicionar componentes em uma grade responsiva. Ele também pode ser definido como o sistema de parágrafos padrão na sua página.
 
 * [**Modo de layout**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
-   Depois que o contêiner de layout é posicionado na página, você pode usar o modo **Layout** para posicionar conteúdo na grade responsiva.
+  Depois que o contêiner de layout é posicionado na página, você pode usar o modo **Layout** para posicionar conteúdo na grade responsiva.
 
 * [**Emulador**](#selecting-a-device-to-emulate)
 Permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. O usuário pode observar como o conteúdo será renderizado utilizando o Emulador.
@@ -101,7 +101,7 @@ Por exemplo, ao selecionar o dispositivo **iPhone 6 Plus** (definido com uma lar
 
 1. Selecione o ícone **Emulador** na barra de ferramentas superior:
 
-   ![](do-not-localize/screen_shot_2018-03-23at084256.png)
+   ![Emulador](do-not-localize/screen_shot_2018-03-23at084256.png)
 
 1. A barra de ferramentas do emulador abre.
 
@@ -109,13 +109,13 @@ Por exemplo, ao selecionar o dispositivo **iPhone 6 Plus** (definido com uma lar
 
    A barra de ferramentas do emulador exibe opções adicionais de layout:
 
-   * **Girar dispositivo** - Permite girar um dispositivo de orientação vertical (retrato) para a orientação horizontal (paisagem) e vice-versa.
+   * **Girar dispositivo** - permite que você gire um dispositivo de orientação vertical (retrato) para a orientação horizontal (paisagem) e vice-versa.
 
-   ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
+     ![Girar dispositivo](do-not-localize/screen_shot_2018-03-23at084612.png) ![Girar dispositivo](do-not-localize/screen_shot_2018-03-23at084637.png)
 
    * **Selecionar dispositivo** - defina um dispositivo específico para emular de uma lista (consulte a próxima etapa para obter detalhes)
 
-   ![](do-not-localize/screen_shot_2018-03-23at084743.png)
+     ![Selecionar o dispositivo](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. Para selecionar um dispositivo específico para emular, você pode:
 
@@ -138,8 +138,6 @@ Por exemplo, ao selecionar o dispositivo **iPhone 6 Plus** (definido com uma lar
    * A dobra também pode ser considerada a quebra de linha da página (não deve ser confundida com o [pontos de interrupção](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) para o conteúdo. Isso é exibido para maior comodidade, para mostrar qual parte do conteúdo o usuário verá no dispositivo antes de rolar a tela.
    * A linha para a dobra não será mostrada se a altura do dispositivo que está sendo emulado for maior que o tamanho da tela.
    * A dobra é mostrada para a conveniência do autor e não é mostrada na página publicada.
-
-
 
 ## Adicionar um contêiner de layout e seu conteúdo (Modo de edição) {#adding-a-layout-container-and-its-content-edit-mode}
 
@@ -172,7 +170,7 @@ Assim como em outros componentes, você pode selecionar e executar ações (reco
 
    É preciso selecionar a opção **Pai**.
 
-   ![](do-not-localize/screen_shot_2018-03-23at085417.png)
+   ![Opção Pai](do-not-localize/screen_shot_2018-03-23at085417.png)
 
 1. Se o componente de layout estiver aninhado, selecione o **Pai** A opção apresenta uma seleção suspensa, que permite selecionar o contêiner de layout aninhado ou seu(s) pai(s).
 
@@ -212,61 +210,62 @@ Quando estiver no modo de layout, você poderá executar várias ações em uma 
 
 * Redimensione os componentes de conteúdo usando os pontos azuis. O redimensionamento sempre se ajustará à grade. Ao redimensionar a grade de plano de fundo, será mostrado para auxiliar o alinhamento:
 
-   ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
+  ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 
-   >[!NOTE]
-   >
-   >As proporções e as taxas são mantidas quando os componentes como **Imagens** são redimensionados.
+  >[!NOTE]
+  >
+  >As proporções e as taxas são mantidas quando os componentes como **Imagens** são redimensionados.
 
 * Clique/toque em um componente de conteúdo, a barra de ferramenta permite que você:
 
    * **Pai**
 
-      Permite selecionar o componente do contêiner de layout inteiro para executar uma ação em tudo.
+     Permite selecionar o componente do contêiner de layout inteiro para executar uma ação em tudo.
 
    * **Flutuar até a nova linha**
 
-      O componente será movido para uma nova linha, dependendo do espaço disponível na grade.
+     O componente será movido para uma nova linha, dependendo do espaço disponível na grade.
 
    * **Ocultar componente**
 
-      O componente ficará invisível (ele pode ser restaurado na barra de ferramentas do contêiner de layout).
-   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
+     O componente ficará invisível (ele pode ser restaurado na barra de ferramentas do contêiner de layout).
+
+  ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * No modo **Layout**, você pode tocar/clicar em **Arrastar componentes aqui** para selecionar o componente inteiro. Isso mostrará a barra de ferramentas para esse modo.
 
-   A barra de ferramentas terá opções diferentes dependendo do estado do componente de layout e dos componentes que pertencem a ele. Por exemplo:
+  A barra de ferramentas terá opções diferentes dependendo do estado do componente de layout e dos componentes que pertencem a ele. Por exemplo:
 
    * **Pai** - seleciona o componente do pai.
 
-   ![](do-not-localize/screen_shot_2018-03-23at090823.png)
+     ![Pai](do-not-localize/screen_shot_2018-03-23at090823.png)
 
    * **Mostrar componentes ocultos** - Revelar todos os componentes ou componentes individuais. O número indica quantos componentes ocultos há atualmente. o contador mostra quantos componentes estão ocultos.
 
-   ![](do-not-localize/screen_shot_2018-03-23at091007.png)
+     ![Mostrar componentes ocultos](do-not-localize/screen_shot_2018-03-23at091007.png)
 
    * **Reverter layout do ponto de interrupção** - reverte para o layout padrão. Ou seja, nenhum layout personalizado será imposto.
 
-   ![](do-not-localize/screen_shot_2018-03-23at091013.png)
+     ![Inverter layout do ponto de interrupção](do-not-localize/screen_shot_2018-03-23at091013.png)
 
    * **Flutuar para uma nova linha** - move o componente uma posição acima, se o espaço permitir.
 
-   ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
+     ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
    * **Ocultar componente** - oculta o componente atual.
 
-   ![](do-not-localize/screen_shot_2018-03-23at090834.png)
+     ![Ocultar componente](do-not-localize/screen_shot_2018-03-23at090834.png)
 
-   >[!NOTE]
-   >
-   >No exemplo acima, as ações flutuar e ocultar estão disponíveis porque este Contêiner de layout está aninhado em um Contêiner de layout pai.
+     >[!NOTE]
+     >
+     >No exemplo acima, as ações flutuar e ocultar estão disponíveis porque este Contêiner de layout está aninhado em um Contêiner de layout pai.
 
-   * **Revelar componentes** Selecione os componentes principais para mostrar a barra de ferramentas de ação com a 
-opção **Mostrar componentes ocultos**. Neste exemplo, dois componentes estão ocultos.
-   ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
+   * **Revelar componentes** Selecione os componentes principais para mostrar a barra de ferramentas de ação com a opção **Mostrar componentes ocultos**. Neste exemplo, dois componentes estão ocultos.
 
-   Selecionar a opção **Mostrar componentes ocultos** exibirá em azul os componentes que estão ocultos no momento em suas posições originais.
+     ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
-   ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
+  Selecionar a opção **Mostrar componentes ocultos** exibirá em azul os componentes que estão ocultos no momento em suas posições originais.
 
-   Selecionar **Restaurar tudo** revelará todos os componentes ocultos.
+  ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
+
+  Selecionar **Restaurar tudo** revelará todos os componentes ocultos.

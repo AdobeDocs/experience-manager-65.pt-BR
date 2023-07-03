@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -68,13 +68,13 @@ Para ativar ou desativar um componente:
 
 1. Clique ou toque no **Pai** ícone.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103204.png)
+   ![Pai](do-not-localize/screen_shot_2018-03-22at103204.png)
 
    Isso selecionará o sistema de parágrafo que contém o componente atual.
 
 1. A variável **Configurar** O ícone do sistema de parágrafo será mostrado na barra de ação do pai.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103256.png)
+   ![Configurar](do-not-localize/screen_shot_2018-03-22at103256.png)
 
    Selecione esta opção para mostrar a caixa de diálogo.
 
@@ -121,7 +121,7 @@ Para ativar ou desativar um componente:
 
 1. Use o **Configurar** ícone para abrir o diálogo.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103256-1.png)
+   ![Ícone Configurar](do-not-localize/screen_shot_2018-03-22at103256-1.png)
 
    Na caixa de diálogo de design, é possível configurar o componente de acordo com os parâmetros de design disponíveis.
 
@@ -151,12 +151,12 @@ Para ativar ou desativar um componente:
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Use o ícone ** Excluir ** para remover uma entrada de uma lista de diálogo de várias entradas.
+   Use o **Excluir** ícone para remover uma entrada de uma lista de caixas de diálogo de várias entradas.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103809.png)
+   ![Excluir](do-not-localize/screen_shot_2018-03-22at103809.png)
 
    Use o **Mover** ícone para reorganizar a ordem das entradas em uma lista de caixas de diálogo de várias entradas.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103816.png)
+   ![Mover](do-not-localize/screen_shot_2018-03-22at103816.png)
 
 1. Clique ou toque no **Concluído** ícone para salvar e fechar o diálogo.
