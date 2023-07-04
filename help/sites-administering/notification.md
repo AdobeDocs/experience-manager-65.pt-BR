@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 144fbe2d0efe20d848e9556f8d652a403d1835b2
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2026'
 ht-degree: 12%
 
 ---
@@ -144,11 +144,11 @@ Onde &lt;text_x> pode ser uma combinação de texto estático e variáveis de st
 * `${userId}`, a ID do usuário que acionou o evento.
 * `${modifications}`, descreve o tipo de evento de página e o caminho da página no formato:
 
-   &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
+  &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
 
-   Por exemplo:
+  Por exemplo:
 
-   PageModified => /content/geometrixx/en/products
+  PageModified => /content/geometrixx/en/products
 
 ### Modelos de email para notificação de fluxo de trabalho {#email-templates-for-workflow-notification}
 
@@ -342,7 +342,7 @@ Por fim, confirme a configuração ao:
 1. Pesquise por **Azure Active Directory** na barra de pesquisa e clique no resultado. Como alternativa, você pode navegar diretamente para [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Clique em **Registro do aplicativo** - **Novo registro**
 
-   ![](assets/oauth-outlook1.png)
+   ![Configuração do Microsoft Outlook](assets/oauth-outlook1.png)
 
 1. Preencha as informações de acordo com suas necessidades e clique em **Registrar**
 1. Acesse o aplicativo recém-criado e selecione **Permissões de API**
@@ -397,7 +397,7 @@ Em seguida, integre suas configurações do OAuth2 com o AEM:
 
 Depois de definidas, as configurações devem ter esta aparência:
 
-![](assets/oauth-outlook-smptconfig.png)
+![Visualização das configurações no lado do AEM](assets/oauth-outlook-smptconfig.png)
 
 Agora, ative os componentes OAuth. Você pode fazer isso ao:
 

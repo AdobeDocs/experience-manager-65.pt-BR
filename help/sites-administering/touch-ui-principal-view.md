@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '760'
 ht-degree: 1%
 
 ---
@@ -30,41 +30,41 @@ O AEM 6.5 apresenta o Gerenciamento de permissões para usuários e grupos. A fu
 
 O novo gerenciamento de permissões com base na interface é acessado por meio do cartão Permissões, em Segurança, conforme mostrado abaixo:
 
-![](assets/screen_shot_2019-03-17at63333pm.png)
+![Interface do usuário de gerenciamento de permissões](assets/screen_shot_2019-03-17at63333pm.png)
 
 A nova exibição facilita a análise de todo o conjunto de privilégios e restrições para uma determinada entidade de segurança em todos os caminhos nos quais as Permissões foram concedidas explicitamente. Isso elimina a necessidade de ir para
 
 CRXDE para gerenciar privilégios e restrições avançados. Ela foi consolidada na mesma visão. A visualização assume como padrão o Grupo &quot;todos&quot;.
 
-![](assets/unu-1.png)
+![Exibição do grupo &quot;todos&quot;](assets/unu-1.png)
 
 Há um filtro que permite ao usuário selecionar o tipo de entidades a serem observadas **Usuários**, **Grupos** ou **Todos** e pesquisar qualquer principal **.**
 
-![](assets/image2019-3-20_23-52-51.png)
+![Pesquisar tipos de Principais](assets/image2019-3-20_23-52-51.png)
 
 ### Exibindo permissões para um Principal {#viewing-permissions-for-a-principal}
 
 O quadro à esquerda permite que os usuários rolem para baixo para encontrar qualquer principal ou pesquisar por um Grupo ou um Usuário com base no filtro selecionado, conforme mostrado abaixo:
 
-![](assets/doi-1.png)
+![Exibir permissões para um Principal](assets/doi-1.png)
 
 Clicar no nome mostra as permissões atribuídas à direita. O painel de permissões mostra a lista de Entradas de controle de acesso em caminhos específicos, juntamente com as restrições configuradas.
 
-![](assets/trei-1.png)
+![Exibir Lista de ACL](assets/trei-1.png)
 
 ### Adicionando uma nova Entrada de Controle de Acesso para um Principal {#adding-new-access-control-entry-for-a-principal}
 
 Para adicionar novas permissões, adicione uma nova Entrada de controle de acesso clicando no botão Adicionar ACE.
 
-![](assets/patru.png)
+![Adicionar nova ACL para um Principal](assets/patru.png)
 
 Isso exibe a janela mostrada abaixo. A próxima etapa é escolher um caminho em que a permissão precise ser configurada.
 
-![](assets/cinci-1.png)
+![Configurar caminho de permissões](assets/cinci-1.png)
 
 Aqui selecionamos um caminho para o qual queremos configurar uma permissão para **dam-users**:
 
-![](assets/sase-1.png)
+![Exemplo de configuração para dam-users](assets/sase-1.png)
 
 Após selecionar o caminho, o fluxo de trabalho volta para essa tela, onde o usuário pode selecionar um ou mais privilégios dos namespaces disponíveis (como `jcr`, `rep` ou `crx`) conforme mostrado abaixo.
 
@@ -74,17 +74,17 @@ Os privilégios podem ser adicionados pesquisando usando o campo de texto e sele
 >
 >Para obter uma lista completa de privilégios e descrições, consulte [esta página](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
+![Permissão de pesquisa para um determinado caminho](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
 
 Depois que a lista de privilégios for selecionada, o usuário poderá escolher o Tipo de permissão: Negar ou Permitir, conforme mostrado abaixo.
 
-![](assets/screen_shot_2019-03-17at63938pm.png) ![](assets/screen_shot_2019-03-17at63947pm.png)
+![Selecionar permissão](assets/screen_shot_2019-03-17at63938pm.png) ![Selecionar permissão](assets/screen_shot_2019-03-17at63947pm.png)
 
 ### Uso de restrições {#using-restrictions}
 
 Além da lista de privilégios e do Tipo de permissão em um determinado caminho, essa tela também permite adicionar restrições para controle de acesso refinado, conforme mostrado abaixo:
 
-![](assets/image2019-3-21_1-4-14.png)
+![Adicionar restrições](assets/image2019-3-21_1-4-14.png)
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ Além da lista de privilégios e do Tipo de permissão em um determinado caminho
 
 As restrições podem ser adicionadas conforme mostrado abaixo, escolhendo o tipo de restrição, inserindo o valor e acessando o **+** ícone.
 
-![](assets/sapte-1.png) ![](assets/opt-1.png)
+![Adicionar o tipo de restrição](assets/sapte-1.png) ![Adicionar o tipo de restrição](assets/opt-1.png)
 
 O novo ACE é refletido na Lista de controle de acesso conforme mostrado abaixo. Observe que `jcr:write` é um privilégio agregado que inclui `jcr:removeNode` que foi acrescentado acima, mas não é mostrado abaixo como seu coberto `jcr:write`.
 
@@ -110,17 +110,17 @@ A tela de edição é exibida com ACEs configuradas pré-selecionadas, que podem
 
 Aqui, adicionamos a variável `addChildNodes` privilégio para **dam-users** no caminho fornecido.
 
-![](assets/image2019-3-21_0-45-35.png)
+![Adicionar privilégio](assets/image2019-3-21_0-45-35.png)
 
-As alterações podem ser salvas clicando no ícone **Salvar** no canto superior direito, e as alterações serão refletidas nas novas permissões para **dam-users **conforme mostrado abaixo:
+As alterações podem ser salvas clicando no ícone **Salvar** no canto superior direito, e as alterações serão refletidas nas novas permissões para **dam-users** conforme mostrado abaixo:
 
-![](assets/zece-1.png)
+![Salvar alterações](assets/zece-1.png)
 
 ### Exclusão de ACEs {#deleting-aces}
 
 As Entradas de Controle de Acesso podem ser excluídas para remover todas as permissões concedidas a um principal em um caminho específico. O ícone X ao lado de ACE pode ser usado para excluí-lo, conforme mostrado abaixo:
 
-![](assets/image2019-3-21_0-53-19.png) ![](assets/unspe.png)
+![Excluir ACEs](assets/image2019-3-21_0-53-19.png) ![Excluir ACEs](assets/unspe.png)
 
 ### Combinações de Privilégios da Interface Clássica {#classic-ui-privilege-combinations}
 

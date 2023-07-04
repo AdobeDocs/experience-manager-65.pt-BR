@@ -10,9 +10,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5402'
 ht-degree: 1%
 
 ---
@@ -284,14 +284,14 @@ Veja a seguir recomendações sobre o gerenciamento de listas de controle de ace
 
 * Não atribua permissões diretamente aos usuários. Atribuí-los somente a grupos.
 
-   Isso simplifica a manutenção, pois o número de grupos é muito menor do que o número de usuários e também menos volátil.
+  Isso simplifica a manutenção, pois o número de grupos é muito menor do que o número de usuários e também menos volátil.
 
 * Se quiser que um grupo/usuário possa modificar apenas páginas, não conceda a ele direitos de criação ou negação. Conceda a eles apenas direitos de modificação e leitura.
 * Use Negar com moderação. Na medida do possível, use somente Permitir.
 
-   O uso de negar pode causar efeitos inesperados se as permissões forem aplicadas em uma ordem diferente da ordem esperada. Se um usuário for membro de mais de um grupo, as instruções Deny de um grupo poderão cancelar a instrução Allow de outro grupo ou o oposto. É difícil manter uma visão geral quando tal coisa acontece e pode facilmente levar a resultados imprevistos, enquanto Permitir atribuições não causa esses conflitos.
+  O uso de negar pode causar efeitos inesperados se as permissões forem aplicadas em uma ordem diferente da ordem esperada. Se um usuário for membro de mais de um grupo, as instruções Deny de um grupo poderão cancelar a instrução Allow de outro grupo ou o oposto. É difícil manter uma visão geral quando tal coisa acontece e pode facilmente levar a resultados imprevistos, enquanto Permitir atribuições não causa esses conflitos.
 
-   O Adobe recomenda que você trabalhe com Permitir em vez de Negar para ver [Práticas recomendadas](#best-practices).
+  O Adobe recomenda que você trabalhe com Permitir em vez de Negar para ver [Práticas recomendadas](#best-practices).
 
 Antes de modificar qualquer uma das permissões, compreenda como elas funcionam e se relacionam entre si. Consulte a documentação do CRX que ilustra como o WCM do AEM [avalia os direitos de acesso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated)e exemplos de configuração de listas de controle de acesso.
 
@@ -391,7 +391,7 @@ Para acessar a segurança WCM do AEM, siga um destes procedimentos:
 
 * Na tela Welcome (Bem-vindo) ou em vários locais no AEM, clique no ícone de segurança:
 
-![](do-not-localize/wcmtoolbar.png)
+![Guia Segurança do WCM no AEM](do-not-localize/wcmtoolbar.png)
 
 * Navegue diretamente para `https://<server>:<port>/useradmin`. Certifique-se de fazer logon no AEM como administrador.
 
@@ -640,7 +640,6 @@ O privilégio de replicação é o direito de publicar conteúdo e pode ser defi
 >* Os privilégios de replicação de um usuário substituem os privilégios de replicação de um grupo.
 >* Os direitos de replicação Permitir têm uma precedência maior do que os direitos de replicação Negar. Consulte [Permissões no AEM](#permissions-in-aem) para obter mais informações.
 >
-
 
 Para definir privilégios de replicação:
 

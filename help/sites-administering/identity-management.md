@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1226'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Os visitantes individuais do seu site só podem ser identificados quando você f
 * [AEM Communities](/help/communities/overview.md)Os visitantes do site são necessários para fazer logon e publicar conteúdo na comunidade.
 * [Grupos de usuários fechados](/help/sites-administering/cug.md)
 
-   Talvez seja necessário limitar o acesso ao seu site (ou a seções dele) para visitantes específicos.
+  Talvez seja necessário limitar o acesso ao seu site (ou a seções dele) para visitantes específicos.
 
 * [Personalização](/help/sites-administering/personalization.md) Permitir que os visitantes configurem determinados aspectos de como acessam o site.
 
@@ -33,15 +33,15 @@ A funcionalidade de logon (e logout) é fornecida por um [conta com um **Perfil*
 
 * Autorregistro no site
 
-   A [Site da comunidade](/help/communities/sites-console.md) O pode ser configurado para permitir que os visitantes se registrem ou façam logon com suas contas do Facebook ou da Twitter.
+  A [Site da comunidade](/help/communities/sites-console.md) O pode ser configurado para permitir que os visitantes se registrem ou façam logon com suas contas do Facebook ou da Twitter.
 
 * Solicitação de registro no site
 
-   Para um grupo de usuários fechado, você pode permitir que os visitantes solicitem o registro, mas impor a autorização por meio de um fluxo de trabalho.
+  Para um grupo de usuários fechado, você pode permitir que os visitantes solicitem o registro, mas impor a autorização por meio de um fluxo de trabalho.
 
 * Registrar cada conta do ambiente de criação
 
-   Se você tiver um pequeno número de perfis que precisarão de autorização de qualquer maneira, poderá optar por registrar cada perfil diretamente.
+  Se você tiver um pequeno número de perfis que precisarão de autorização de qualquer maneira, poderá optar por registrar cada perfil diretamente.
 
 Para permitir que os visitantes se registrem, uma série de componentes e formulários podem ser usados para coletar as informações de identificação necessárias e, em seguida, as informações de perfil adicionais (geralmente opcionais). Depois de se registrarem, também devem poder verificar e atualizar os dados que enviaram.
 
@@ -106,7 +106,7 @@ Para ver os detalhes do seu perfil, clique em **Meu perfil** no canto superior d
 1. Pressione **control-alt-C** para abrir o contexto do cliente.
 1. No canto superior esquerdo do contexto do cliente, clique na **Carregar um perfil** botão.
 
-   ![](do-not-localize/loadprofile.png)
+   ![Botão Carregar um perfil](do-not-localize/loadprofile.png)
 
 1. Selecione outro perfil na lista suspensa na janela de diálogo; por exemplo, **Alison Parker**.
 1. Clique em **OK**.
@@ -156,11 +156,11 @@ Isso é feito com:
 
 * [Provedores de Estado](#state-providers)
 
-   Para gerenciar os dois estados de uma propriedade específica e as transições entre os dois.
+  Para gerenciar os dois estados de uma propriedade específica e as transições entre os dois.
 
 * [Fluxos de trabalhos](#workflows)
 
-   Para gerenciar ações relacionadas aos estados.
+  Para gerenciar ações relacionadas aos estados.
 
 Vários estados podem ser definidos; por exemplo, no Geometrixx, eles incluem:
 

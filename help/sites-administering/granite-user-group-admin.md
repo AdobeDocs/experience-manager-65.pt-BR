@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '945'
 ht-degree: 4%
 
 ---
@@ -32,9 +32,9 @@ Escolhendo um **Usuários** ou **Grupos** no console Ferramentas, o console apro
 
 * [Administração de usuários](#user-administration)
 
-   ![chlimage_1-73](assets/chlimage_1-73a.png)
+  ![chlimage_1-73](assets/chlimage_1-73a.png)
 
-   A variável **Usuários** listas do console:
+  A variável **Usuários** listas do console:
 
    * o nome de usuário
    * o nome de login do usuário (nome da conta)
@@ -42,9 +42,9 @@ Escolhendo um **Usuários** ou **Grupos** no console Ferramentas, o console apro
 
 * [Administração de grupo](#group-administration)
 
-   ![chlimage_1-74](assets/chlimage_1-74a.png)
+  ![chlimage_1-74](assets/chlimage_1-74a.png)
 
-   A variável **Grupos** listas do console:
+  A variável **Grupos** listas do console:
 
    * o nome do grupo
    * a descrição do grupo
@@ -56,7 +56,7 @@ Escolhendo um **Usuários** ou **Grupos** no console Ferramentas, o console apro
 
 1. Use o **Adicionar usuário** ícone:
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Adicionar usuário](do-not-localize/chlimage_1-1.png)
 
 1. A variável **Criar usuário** O formulário será aberto:
 
@@ -66,16 +66,16 @@ Escolhendo um **Usuários** ou **Grupos** no console Ferramentas, o console apro
 
    * **ID**
 
-      É a identificação exclusiva da conta de usuário. É obrigatório e não pode conter espaços.
+     É a identificação exclusiva da conta de usuário. É obrigatório e não pode conter espaços.
 
    * **Endereço de email**
    * **Senha**
 
-      Uma senha é obrigatória.
+     Uma senha é obrigatória.
 
    * **Digite a senha novamente**
 
-      Isso é obrigatório, pois é necessário para confirmação da senha.
+     Isso é obrigatório, pois é necessário para confirmação da senha.
 
    * **Nome**
    * **Sobrenome**
@@ -93,24 +93,23 @@ Escolhendo um **Usuários** ou **Grupos** no console Ferramentas, o console apro
    * **Configurações de conta**
 
       * **Status**
-Você pode sinalizar a conta como 
-**ativo** ou **inativo**.
+Você pode sinalizar a conta como **ativo** ou **inativo**.
+
    * **Foto**
 
-      Aqui você pode carregar uma foto para usar como avatar.
+     Aqui você pode carregar uma foto para usar como avatar.
 
-      Tipos de arquivo aceitos: `.jpg .png .tif .gif`
+     Tipos de arquivo aceitos: `.jpg .png .tif .gif`
 
-      Tamanho preferencial: `240x240px`
+     Tamanho preferencial: `240x240px`
 
    * **Adicionar usuário aos grupos**
 
-      Use o menu suspenso de seleção para selecionar grupos dos quais o usuário deve ser membro. Depois de selecionado, use o **X** pelo nome a ser desmarcado antes de salvar.
+     Use o menu suspenso de seleção para selecionar grupos dos quais o usuário deve ser membro. Depois de selecionado, use o **X** pelo nome a ser desmarcado antes de salvar.
 
    * **Grupos**
 
-      Uma lista de grupos dos quais o usuário é membro no momento. Use o **X** pelo nome a ser desmarcado antes de salvar.
-
+     Uma lista de grupos dos quais o usuário é membro no momento. Use o **X** pelo nome a ser desmarcado antes de salvar.
 
 1. Quando tiver definido a conta de usuário, use:
 
@@ -146,7 +145,7 @@ Você pode sinalizar a conta como
 1. Use a caixa de clique para sinalizar um ou mais usuários.
 1. Use o **Grupos** ícone:
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Usando o ícone Grupos](do-not-localize/chlimage_1-2.png)
 
    Para abrir o menu suspenso de seleção de grupo:
 
@@ -164,7 +163,7 @@ Você pode sinalizar a conta como
 1. Use a caixa de clique para sinalizar um ou mais usuários.
 1. Use o **Excluir** ícone para excluir os detalhes do usuário:
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Excluir detalhes do usuário existente](do-not-localize/chlimage_1-3.png)
 
 1. Você será solicitado a confirmar a exclusão e, em seguida, uma mensagem confirmará que a exclusão ocorreu.
 
@@ -174,7 +173,7 @@ Você pode sinalizar a conta como
 
 1. Use o ícone Adicionar grupo:
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Adicionar um novo grupo](do-not-localize/chlimage_1-4.png)
 
 1. A variável **Criar grupo** O formulário será aberto:
 
@@ -184,23 +183,23 @@ Você pode sinalizar a conta como
 
    * **ID**
 
-      É um identificador exclusivo do grupo. Isso é obrigatório e não pode conter espaços.
+     É um identificador exclusivo do grupo. Isso é obrigatório e não pode conter espaços.
 
    * **Nome**
 
-      Um nome para o grupo; ele será mostrado no console Grupos.
+     Um nome para o grupo; ele será mostrado no console Grupos.
 
    * **Descrição**
 
-      Uma descrição do grupo.
+     Uma descrição do grupo.
 
    * **Adicionar membros ao grupo**
 
-      Use o menu suspenso de seleção para selecionar usuários a serem adicionados ao grupo. Depois de selecionado, use o **X** pelo nome a ser desmarcado antes de salvar.
+     Use o menu suspenso de seleção para selecionar usuários a serem adicionados ao grupo. Depois de selecionado, use o **X** pelo nome a ser desmarcado antes de salvar.
 
    * **Membros do grupo**
 
-      Uma lista de usuários no grupo. Use o **X** pelo nome a ser desmarcado antes de salvar.
+     Uma lista de usuários no grupo. Use o **X** pelo nome a ser desmarcado antes de salvar.
 
 1. Quando tiver definido o grupo, use:
 
@@ -218,7 +217,7 @@ Você pode sinalizar a conta como
 1. Use a caixa de clique para sinalizar um grupo.
 1. Use o **Copiar** ícone para copiar os detalhes do grupo:
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Copiar um grupo existente](do-not-localize/chlimage_1-5.png)
 
 1. A variável **Editar configurações de grupo** formulário será aberto.
 
@@ -231,6 +230,6 @@ Você pode sinalizar a conta como
 1. Use a caixa de clique para sinalizar um ou mais grupos.
 1. Use o **Excluir** ícone para excluir os detalhes do grupo:
 
-   ![](do-not-localize/chlimage_1-6.png)
+   ![Deletando um grupo existente](do-not-localize/chlimage_1-6.png)
 
 1. Você será solicitado a confirmar a exclusão e, em seguida, uma mensagem confirmará que a exclusão ocorreu.
