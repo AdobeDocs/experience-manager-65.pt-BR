@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b4370d23c7b1bd43e1f02a862f11952d04892eb3
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ Neste exemplo, estamos reativando a IU Clássica para o console Sites.
 
    Por exemplo
 
-   [ `https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
+   [`https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
 1. Selecione o nó correspondente ao console para o qual você deseja reativar a interface clássica. Para nosso exemplo, reativaremos a interface clássica para o console Sites.
 
@@ -50,6 +50,6 @@ Neste exemplo, estamos reativando a IU Clássica para o console Sites.
 
 1. A variável **Interface clássica** A opção está disponível novamente como uma opção de popover no admin console.
 
-   ![](assets/syui-01-2019-02-27-15-16-55.png)
+   ![opção de popover da interface clássica](assets/syui-01-2019-02-27-15-16-55.png)
 
 Repita essas etapas para cada console para o qual deseja reativar o acesso à versão da interface clássica.

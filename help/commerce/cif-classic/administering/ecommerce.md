@@ -5,10 +5,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 745ca1aa7bc96d0938ec550a357d9edcbea341db
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -137,11 +137,11 @@ O eCommerce AEM oferece:
    * Vouchers
    * e outros
 
-   ![](/help/sites-administering/assets/chlimage_1-130.png)
+  ![exemplo de componentes geometrixx](/help/sites-administering/assets/chlimage_1-130.png)
 
-   >[!NOTE]
-   >
-   >A estrutura de integração fornecida pelo AEM também permite a criação de componentes adicionais do AEM para recursos de comércio, independentemente do mecanismo de comércio eletrônico específico.
+  >[!NOTE]
+  >
+  >A estrutura de integração fornecida pelo AEM também permite a criação de componentes adicionais do AEM para recursos de comércio, independentemente do mecanismo de comércio eletrônico específico.
 
 * **Pesquisar** - utilizando:
 
@@ -150,28 +150,28 @@ O eCommerce AEM oferece:
    * uma pesquisa de terceiros
    * ou uma combinação dos mesmos.
 
-   ![](/help/sites-administering/assets/chlimage_1-131.png)
+  ![exemplo de pesquisa](/help/sites-administering/assets/chlimage_1-131.png)
 
 * Usa a capacidade do AEM para **apresentar seu conteúdo em vários canais**, seja a janela completa do navegador ou o dispositivo móvel. Isso entrega seu conteúdo no formato necessário para seus visitantes.
 
-   ![](/help/sites-administering/assets/chlimage_1-132.png)
+  ![exemplo de visualização móvel](/help/sites-administering/assets/chlimage_1-132.png)
 
 * A capacidade de **desenvolva sua própria implementação de integração com base no [Estrutura de comércio eletrônico AEM](#the-framework)**.
 
-   As duas implementações disponíveis atualmente são criadas na mesma base, com base na API geral (a estrutura). A implementação de uma nova integração envolve apenas a implementação dos recursos necessários à sua integração. Os componentes de front-end podem ser usados por qualquer nova implementação, à medida que usam interfaces (portanto, são independentes da implementação).
+  As duas implementações disponíveis atualmente são criadas na mesma base, com base na API geral (a estrutura). A implementação de uma nova integração envolve apenas a implementação dos recursos necessários à sua integração. Os componentes de front-end podem ser usados por qualquer nova implementação, à medida que usam interfaces (portanto, são independentes da implementação).
 
 * A possibilidade de **comércio orientado por experiência com base em dados e atividades do comprador**. Isso permite que você perceba vários cenários:
 
    * Um exemplo pode ser fornecer reduções nos custos de envio quando o pedido total exceder um valor específico.
    * Outro pode permitir que você forneça ofertas sazonais que usam dados de perfil (por exemplo, localização). Estes podem então ser destacados, novamente dependendo de outros fatores, quando necessário.
 
-   No exemplo abaixo, um teaser é exibido, pois o conteúdo do carrinho é inferior a US$ 75:
+  No exemplo abaixo, um teaser é exibido, pois o conteúdo do carrinho é inferior a US$ 75:
 
-   ![](/help/sites-administering/assets/chlimage_1-133.png)
+  ![carrinho de compras com contexto do cliente](/help/sites-administering/assets/chlimage_1-133.png)
 
-   Isso pode ser alterado quando o conteúdo do carrinho exceder US$ 75:
+  Isso pode ser alterado quando o conteúdo do carrinho exceder US$ 75:
 
-   ![](/help/sites-administering/assets/chlimage_1-134.png)
+  ![carrinho de compras com contexto do cliente após alteração](/help/sites-administering/assets/chlimage_1-134.png)
 
 * E outros recursos, incluindo:
 

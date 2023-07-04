@@ -10,10 +10,10 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: 66631fd0813f623f3321072fc00fd90f7fa33d21
+source-git-commit: fef4f47794942b1fca4b30ce518b2faa8951f482
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -112,7 +112,7 @@ Execute as seguintes etapas para criar um conjunto de relatórios.
 Cloud Service é a informação sobre sua conta Adobe Analytics. A configuração permite que o Adobe Experience Manager (AEM) se conecte ao Adobe Analytics. Crie uma configuração separada para cada conta do Analytics que você usa.
 
 1. Faça logon na instância de autor do AEM como administrador.
-1. No canto superior esquerdo, clique em **Adobe Experience Manager** > **Ferramentas** ![](/help/forms/using/assets/tools.png) > **Cloud Services** > **Cloud Services herdados**.
+1. No canto superior esquerdo, clique em **Adobe Experience Manager** > **Ferramentas** ![ícone de martelo](/help/forms/using/assets/tools.png) > **Cloud Services** > **Cloud Services herdados**.
 1. Localizar **Adobe Analytics** ícone. Clique em **Exibir configurações** e prossiga para o clique **[+]** para adicionar nova configuração.
 
    Se você for um usuário pela primeira vez, clique em **Configurar agora**.
@@ -145,7 +145,7 @@ Uma estrutura Adobe Analytics é um conjunto de mapeamentos entre variáveis Ado
 
    ![information_to_send_to_report_suite](assets/information_to_send_to_report_suite.png)
 
-1. Arraste um **Componente do Form Analytics** do **outro** categoria do SideKick na estrutura.
+1. Arraste um **Componente do Form Analytics** do **outro** categoria de Sidekick para a estrutura.
 1. Para mapear variáveis do Analytics com variáveis definidas no componente, arraste uma variável do Localizador de conteúdo do AEM para um campo no componente de rastreamento.
 
    ![Mapeamento de variáveis do AEM com variáveis do Adobe Analytics](assets/analytics_new.png)
@@ -169,6 +169,7 @@ Uma estrutura Adobe Analytics é um conjunto de mapeamentos entre variáveis Ado
    * **cron de sincronização de relatório do Analytics**: especifique a expressão CRON para obter relatórios do Adobe Analytics. O valor padrão é 0 0 2 ? &#42; &#42;.
 
    * **Tempo limite de busca de relatório:** Especifique a duração, em segundos, para aguardar a resposta do servidor ao relatório de análise. O tempo padrão é de 120 segundos.
+
    >[!NOTE]
    >
    >Pode levar até 10 segundos a mais para atingir o tempo limite da operação de busca de relatórios e, em seguida, o número especificado de segundos.
