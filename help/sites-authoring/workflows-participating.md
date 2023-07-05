@@ -9,9 +9,9 @@ topic-tags: site-features
 discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1526'
 ht-degree: 34%
 
 ---
@@ -33,11 +33,11 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
 
 * Seu [notificação](/help/sites-authoring/inbox.md) O indicador (barra de ferramentas) será incrementado:
 
-   ![](do-not-localize/wf-57.png)
+  ![Indicador de notificação](do-not-localize/wf-57.png)
 
 * O item será listado na sua [Caixa de entrada](/help/sites-authoring/inbox.md) de notificações:
 
-   ![wf-58](assets/wf-58.png)
+  ![wf-58](assets/wf-58.png)
 
 * Quando você estiver usando o editor de páginas, a barra de status mostrará:
 
@@ -48,18 +48,18 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
       * use as setas para a esquerda/direita para navegar pelas informações de status dos vários workflows.
       * clique/toque no número real para abrir uma lista suspensa de todos os fluxos de trabalho aplicáveis e selecione o fluxo de trabalho que deseja exibir na barra de status.
 
-   ![wf-59](assets/wf-59.png)
+  ![wf-59](assets/wf-59.png)
 
-   >[!NOTE]
-   >
-   >A barra de status é visível apenas para usuários com privilégios de fluxo de trabalho, por exemplo, os membros do grupo `workflow-users`.
-   >
-   >
-   >As ações são exibidas quando o usuário atual está diretamente envolvido na etapa atual do fluxo de trabalho.
+  >[!NOTE]
+  >
+  >A barra de status é visível apenas para usuários com privilégios de fluxo de trabalho, por exemplo, os membros do grupo `workflow-users`.
+  >
+  >
+  >As ações são exibidas quando o usuário atual está diretamente envolvido na etapa atual do fluxo de trabalho.
 
 * Quando **Linha do tempo** estiver aberta para o recurso, a etapa do fluxo de trabalho será mostrada. Ao clicar/tocar no banner do alerta, as ações disponíveis também serão exibidas:
 
-   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
+  ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
 ### Concluindo uma etapa do participante {#completing-a-participant-step}
 
@@ -229,19 +229,19 @@ Os detalhes do workflow são mostrados em guias e as ações apropriadas estão 
 
 * Guia **ITEM DE TRABALHO:**
 
-   ![wf-72](assets/wf-72.png)
+  ![wf-72](assets/wf-72.png)
 
 * Guia **INFORMAÇÕES DO FLUXO DE TRABALHO**:
 
-   ![wf-73](assets/wf-73.png)
+  ![wf-73](assets/wf-73.png)
 
-   Se [Estágios do fluxo de trabalho](/help/sites-developing/workflows.md#workflow-stages) foram configuradas para o modelo, é possível visualizar o progresso de acordo com estes:
+  Se [Estágios do fluxo de trabalho](/help/sites-developing/workflows.md#workflow-stages) foram configuradas para o modelo, é possível visualizar o progresso de acordo com estes:
 
-   ![wf-107](assets/wf-107.png)
+  ![wf-107](assets/wf-107.png)
 
 * Guia **COMENTÁRIOS**:
 
-   ![wf-75](assets/wf-75.png)
+  ![wf-75](assets/wf-75.png)
 
 Você pode abrir os detalhes do item de trabalho nos seguintes locais:
 

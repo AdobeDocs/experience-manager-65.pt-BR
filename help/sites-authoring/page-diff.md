@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '567'
 ht-degree: 32%
 
 ---
@@ -74,7 +74,7 @@ O recurso de diferencial detecta alterações no nível do componente e do HTML.
 
 Para se concentrar em um conteúdo específico, você pode clicar no ícone de tela inteira para qualquer &quot;lado&quot; da comparação lado a lado, ampliando o conteúdo até o tamanho da janela do navegador.
 
-![](do-not-localize/chlimage_1-18.png)
+![Ícone do modo de tela cheia](do-not-localize/chlimage_1-18.png)
 
 O lado selecionado preencherá a janela inteira, mas a barra permanecerá no topo, permitindo que você alterne entre as duas páginas.
 
@@ -82,7 +82,7 @@ O lado selecionado preencherá a janela inteira, mas a barra permanecerá no top
 
 Você também pode optar por fechar a visualização em tela cheia clicando no ícone Saída da tela cheia.
 
-![](do-not-localize/chlimage_1-19.png)
+![Fechar tela inteira](do-not-localize/chlimage_1-19.png)
 
 Você pode sair da comparação lado a lado a qualquer momento clicando no botão Fechar no cabeçalho.
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1580'
 ht-degree: 54%
 
 ---
@@ -64,7 +64,6 @@ Antes de dar a visão geral das especificidades, veja uma pequena coleção de d
 >* [Atalhos De Teclado Ao Editar Páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Atalhos de teclado para Consoles](/help/sites-authoring/keyboard-shortcuts.md)
 >
-
 
 ### Encontrar a sua página {#finding-your-page}
 
@@ -119,6 +118,7 @@ Como selecionar uma página depende da exibição usada no console:
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
    * O cartão será sobreposto como uma marca de verificação para mostrar que a página foi selecionada.
+
    >[!NOTE]
    >
    >Uma vez no modo de seleção, a variável **Selecionar** O ícone (uma marca de verificação) será alterado para a variável **Desmarcar** ícone (uma cruz).
@@ -154,8 +154,9 @@ Para editar sua página:
       * selecionar a guia componentes (a guia [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser))
       * arrastar o componente desejado para a página.
 
-      O painel lateral pode ser aberto (ou fechado) com:
-   ![](do-not-localize/screen_shot_2018-03-21at160738.png)
+     O painel lateral pode ser aberto (ou fechado) com:
+
+     ![Abrir painel lateral](do-not-localize/screen_shot_2018-03-21at160738.png)
 
    * [Editar o conteúdo de um componente existente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) na página:
 
@@ -163,18 +164,21 @@ Para editar sua página:
       * Abra o editor local do componente com um clique de toque e segure ou com um clique duplo e lento. As ações disponíveis serão exibidas (para alguns componentes, essa será uma seleção limitada).
       * Para ver todas as ações disponíveis, entre no modo de tela cheia usando:
 
-   ![](do-not-localize/screen_shot_2018-03-21at160706.png)
+     ![Modo de tela cheia](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurar as propriedades de um componente existente](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
       * Abra a barra de ferramentas do componente com um toque ou clique. Use o **Configurar** Ícone (chave inglesa) para abrir a caixa de diálogo.
+
    * [Mover um componente](/help/sites-authoring/editing-content.md#moving-a-component) ou:
 
       * Arraste o componente para o novo local.
       * Abra a barra de ferramentas do componente com um toque ou clique. Use os ícones **Cortar** e **Colar** conforme necessário.
+
    * [Copiar (e Colar)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) um componente:
 
       * Abra a barra de ferramentas do componente com um toque ou clique. Use os ícones **Copiar** e **Colar** conforme necessário.
+
    >[!NOTE]
    >
    >Você pode **Colar** os componentes na mesma página ou em uma diferente. Ao colar em uma página diferente que já foi aberta antes da operação de cortar/copiar, essa página precisará de uma atualização. 
@@ -182,15 +186,17 @@ Para editar sua página:
    * [Excluir](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) um componente:
 
       * Abra a barra de ferramentas do componente com um toque ou clique, em seguida, use o ícone **Excluir**.
+
    * [Adicionar anotações](/help/sites-authoring/annotations.md#annotations) à página:
 
       * Selecione o **Anotar** (ícone de balão de fala). Adicionar anotações usando o **Adicionar anotação** (mais). Saia do modo de anotação usando o X na parte superior direita.
 
-   ![](do-not-localize/screen_shot_2018-03-21at160813.png)
+     ![Anotar](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [Visualizar uma página](/help/sites-authoring/editing-content.md#preview-mode) (para ver como ele aparecerá no ambiente de publicação)
 
       * Selecionar **Visualizar** na barra de ferramentas.
+
    * Retorne ao modo de edição (ou selecione outro modo) usando o **Editar** seletor suspenso.
 
    >[!NOTE]
@@ -209,17 +215,16 @@ Existem dois (principais) métodos de [editar propriedades da página](/help/sit
       * [Ações rápidas (apenas a exibição de cartão/desktop)](#quick-actions-card-view-desktop-only) para o recurso apropriado.
       * A barra de ferramenta quando a sua [página é selecionada](#selectiingyourpageforfurtheraction).
 
-   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
+  ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
    1. As propriedades da página serão exibidas. É possível fazer atualizações conforme necessário, em seguida, usar a opção Salvar para continuar
-
 
 * Quando [editar sua página](#editing-your-page-content):
 
    1. Abra o **Informações da página** menu.
    1. Selecionar **Abrir propriedades** para abrir a caixa de diálogo para editar as propriedades.
 
-   ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
+  ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
 ### Publicar sua página (ou desfazer a publicação) {#publishing-your-page-or-unpublishing}
 
@@ -233,22 +238,22 @@ Existem dois métodos principais de [publicar sua página](/help/sites-authoring
       * [Ações rápidas (apenas a exibição de cartão/desktop)](#quick-actions-card-view-desktop-only) para o recurso apropriado.
       * A barra de ferramentas quando a sua [página é selecionada](#selectiingyourpageforfurtheraction) (também fornece o acesso à opção [Publicar mais tarde](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
 
-   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
+  ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * Quando [editar sua página](#editing-your-page-content):
 
    1. Abra o **Informações da página** menu.
    1. Selecionar **Publicar página**.
 
-   ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
+  ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
 * Desfazer a publicação de uma página do console só pode ser feito por meio da opção **Gerenciar publicação**, que está disponível somente na barra de ferramentas (não pelas ações rápidas).
 
-   A opção **Cancelar publicação da página** ainda está disponível por meio do menu **Informações da página** no editor.
+  A opção **Cancelar publicação da página** ainda está disponível por meio do menu **Informações da página** no editor.
 
-   ![screen_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
+  ![screen_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
 
-   Consulte [Publicar páginas](/help/sites-authoring/publishing-pages.md#unpublishing-pages) para obter mais informações.
+  Consulte [Publicar páginas](/help/sites-authoring/publishing-pages.md#unpublishing-pages) para obter mais informações.
 
 ### Mover, copiar e colar ou excluir sua página   {#move-copy-and-paste-or-delete-your-page}
 
@@ -265,12 +270,15 @@ Todas essas ações podem ser acionadas por:
    * Copiar:
 
       * Em seguida, será necessário navegar até o novo local e colar.
+
    * Mover:
 
       * Isso abrirá o assistente para coletar as informações necessárias para mover a página. Siga as instruções na tela.
+
    * Exclua:
 
       * Você receberá uma solicitação para confirmar a ação.
+
    >[!NOTE]
    >
    >A opção Excluir não está disponível como uma Ação rápida.
@@ -330,6 +338,7 @@ O mesmo mecanismo básico é usado ao restaurar e/ou comparar as versões da sua
    * **Reverter para essa versão**
 
       * A versão será restaurada.
+
    * **Exibir diferenças**
 
       * A página será aberta com as diferenças (entre as duas versões) destacadas.

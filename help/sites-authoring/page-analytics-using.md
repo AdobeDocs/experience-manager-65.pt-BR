@@ -12,9 +12,9 @@ discoiquuid: 5d192a48-c86f-4803-bb0d-0411ac7470f5
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '449'
 ht-degree: 11%
 
 ---
@@ -83,7 +83,7 @@ Abertura [Content Insight](/help/sites-authoring/content-insights.md) no console
 1. No console do Sites, selecione a página da qual deseja ver os Insights de conteúdo.
 1. Na barra de ferramentas, clique no ícone Analytics e Recommendations.
 
-   ![](do-not-localize/chlimage_1-14.png)
+   ![Ícone do Analytics e do Recommendations](do-not-localize/chlimage_1-14.png)
 
 ## Análises visíveis no Editor de páginas (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 

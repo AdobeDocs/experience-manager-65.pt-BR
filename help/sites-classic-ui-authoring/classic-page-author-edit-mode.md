@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '6035'
+source-wordcount: '6036'
 ht-degree: 7%
 
 ---
@@ -48,7 +48,7 @@ Os componentes Gerais são os componentes básicos usados para criar conteúdo.
 
 Você pode definir um link com título e descrição.
 
-![](do-not-localize/chlimage_1-2.png)
+![Link](do-not-localize/chlimage_1-2.png)
 
 ### Imagem adaptativa {#adaptive-image}
 
@@ -163,11 +163,12 @@ Dependendo do item escolhido, um novo painel será exibido:
 
          * **Página principal**
 Especifique um caminho manualmente ou usando o seletor. Deixe em branco para utilizar a página atual como principal.
+
       * **Opções de lista fixa**
 
          * **Páginas**
-Selecione uma lista de páginas. Utilização 
-`+` para adicionar mais entradas e os botões de seta para cima/baixo para ajustar a ordem.
+Selecione uma lista de páginas. Uso `+` para adicionar mais entradas e os botões de seta para cima/baixo para ajustar a ordem.
+
       * **Opções de pesquisa**
 
          * **Iniciar em**
@@ -175,21 +176,18 @@ Insira um caminho inicial manualmente ou usando o seletor.
 
          * **Pesquisar consulta**
 Você pode inserir uma consulta de pesquisa de texto simples.
+
       * **Opções de pesquisa avançada**
 
          * **Notação de predicativo do Querybuilder**
 Você pode inserir uma consulta de pesquisa usando a notação de predicado do Querybuilder. Por exemplo, você pode digitar &quot;fulltext=Marketing&quot; para que todas as páginas com &quot;Marketing&quot; em seu conteúdo sejam exibidas no Carrossel.
 Consulte [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa das expressões de query e mais exemplos.
+
    * **Ordenar por**
-Selecionar 
-`jcr:title`, `jcr:created`, `cq:lastModified`ou `cq:template` no menu suspenso.
+Selecionar `jcr:title`, `jcr:created`, `cq:lastModified`ou `cq:template` no menu suspenso.
 
    * **Limite**
 Opcional. O número máximo de itens que você deseja usar no Carrossel.
-
-
-
-
 
 >[!NOTE]
 >
@@ -262,19 +260,19 @@ O componente de integração de aplicativos externos (**Externo**) permite incor
 
    * **Aplicativo de destino**
 
-      Especifique o URL do aplicativo Web a ser integrado; por exemplo:
+     Especifique o URL do aplicativo Web a ser integrado; por exemplo:
 
-      ```
-      https://en.wikipedia.org/wiki/Main_Page
-      ```
+     ```
+     https://en.wikipedia.org/wiki/Main_Page
+     ```
 
    * **Enviar parâmetros**
 
-      Marque a caixa para que os parâmetros sejam passados para o aplicativo quando necessário.
+     Marque a caixa para que os parâmetros sejam passados para o aplicativo quando necessário.
 
    * **Largura e altura**
 
-      Definir o tamanho do iframe
+     Definir o tamanho do iframe
 
 O aplicativo externo é integrado ao sistema de parágrafo da página AEM; por exemplo, ao usar um aplicativo do Target de `https://en.wikipedia.org/wiki/Main_Page`:
 
@@ -292,37 +290,37 @@ O componente de Flash permite carregar um filme de Flash. Você pode arrastar um
 
    * **Filme em flash**
 
-      O arquivo de filme flash. Arraste um ativo do localizador de conteúdo ou clique em para abrir uma janela de navegação.
+     O arquivo de filme flash. Arraste um ativo do localizador de conteúdo ou clique em para abrir uma janela de navegação.
 
    * **Tamanho**
 
-      Dimension em pixels da área de exibição que contém o filme.
+     Dimension em pixels da área de exibição que contém o filme.
 
 * **Imagem alternativa**
 
-   Uma imagem alternativa a ser mostrada
+  Uma imagem alternativa a ser mostrada
 
 * **Avançado**
 
    * **Menu de contexto**
 
-      Indica se o menu de contexto deve ser exibido ou oculto.
+     Indica se o menu de contexto deve ser exibido ou oculto.
 
    * **Modo de janela**
 
-      Como a janela aparece, por exemplo, opaca, transparente ou como uma janela distinta (sólida).
+     Como a janela aparece, por exemplo, opaca, transparente ou como uma janela distinta (sólida).
 
    * **Cor do plano de fundo**
 
-      Uma cor de plano de fundo selecionada no gráfico de cores fornecido.
+     Uma cor de plano de fundo selecionada no gráfico de cores fornecido.
 
    * **Versão mínima**
 
-      A versão mínima do Flash Player de Adobe necessária para executar o filme. O padrão é 9.0.0.
+     A versão mínima do Flash Player de Adobe necessária para executar o filme. O padrão é 9.0.0.
 
    * **Atributos**
 
-      Quaisquer outros atributos necessários.
+     Quaisquer outros atributos necessários.
 
 ### Imagem {#image}
 
@@ -346,43 +344,43 @@ Quando uma imagem é carregada, você pode configurar o seguinte:
 
 * **Mapa**
 
-   Para mapear uma imagem, selecione Mapear. Você pode especificar como deseja criar o mapa de imagem (retângulo, polígono etc.) e onde a área deve apontar.
+  Para mapear uma imagem, selecione Mapear. Você pode especificar como deseja criar o mapa de imagem (retângulo, polígono etc.) e onde a área deve apontar.
 
 * **Cortar**
 
-   Selecione Cortar para recortar uma parte de uma imagem. Use o mouse para cortar a imagem.
+  Selecione Cortar para recortar uma parte de uma imagem. Use o mouse para cortar a imagem.
 
 * **Girar**
 
-   Para girar uma imagem, selecione Girar. Use repetidamente até que a imagem seja girada da maneira desejada.
+  Para girar uma imagem, selecione Girar. Use repetidamente até que a imagem seja girada da maneira desejada.
 
 * **Limpar**
 
-   Remover a imagem atual.
+  Remover a imagem atual.
 
 * **Barra de zoom**
 
-   Para ampliar e reduzir a imagem, use a barra deslizante abaixo da imagem (acima dos botões OK e Cancelar)
+  Para ampliar e reduzir a imagem, use a barra deslizante abaixo da imagem (acima dos botões OK e Cancelar)
 
 * **Título**
 
-   O título da imagem.
+  O título da imagem.
 
 * **Alternar texto**
 
-   Um texto alternativo a ser usado ao criar conteúdo acessível.
+  Um texto alternativo a ser usado ao criar conteúdo acessível.
 
 * **Vincular a**
 
-   Crie um link para ativos ou outras páginas no seu site.
+  Crie um link para ativos ou outras páginas no seu site.
 
 * **Descrição**
 
-   Uma descrição da imagem.
+  Uma descrição da imagem.
 
 * **Tamanho**
 
-   Define a altura e a largura da imagem.
+  Define a altura e a largura da imagem.
 
 A imagem final (com **Título** e **Descrição**) pode ser mostrado como:
 
@@ -402,61 +400,61 @@ O componente Lista permite configurar critérios de pesquisa para exibir uma lis
 
    * **Criar uso da lista**
 
-      Aqui você especifica onde a lista recupera o conteúdo. Há vários métodos:
+     Aqui você especifica onde a lista recupera o conteúdo. Há vários métodos:
 
    * Dependendo do item escolhido, um novo painel será exibido:
 
       * **Opções de páginas filho**
 
          * **Filhos de** (Página principal) Especifique um caminho manualmente ou usando o seletor. Deixe em branco para utilizar a página atual como principal.
+
       * **Opções de lista fixa**
 
          * **Páginas**
 
-            Selecione uma lista de páginas. Use + para adicionar mais entradas e os botões para cima/baixo para ajustar a ordem.
+           Selecione uma lista de páginas. Use + para adicionar mais entradas e os botões para cima/baixo para ajustar a ordem.
+
       * **Opções de pesquisa**
 
          * **Começa em**
 
-            Insira um caminho inicial manualmente ou usando o seletor.
+           Insira um caminho inicial manualmente ou usando o seletor.
 
          * **Pesquisar consulta**
 
-            Você pode inserir uma consulta de pesquisa de texto simples.
+           Você pode inserir uma consulta de pesquisa de texto simples.
+
       * **Opções de pesquisa avançada**
 
          * **Notação do predicativo do Querybuilder**
 
-            Você pode inserir uma consulta de pesquisa usando a notação de predicado do Querybuilder. Por exemplo, você pode digitar &quot;fulltext=Marketing&quot; para que todas as páginas com &quot;Marketing&quot; em seu conteúdo sejam exibidas no Carrossel.
+           Você pode inserir uma consulta de pesquisa usando a notação de predicado do Querybuilder. Por exemplo, você pode digitar &quot;fulltext=Marketing&quot; para que todas as páginas com &quot;Marketing&quot; em seu conteúdo sejam exibidas no Carrossel.
 
-            Consulte [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa das expressões de query e mais exemplos.
+           Consulte [API do QueryBuilder](/help/sites-developing/querybuilder-api.md) para obter uma discussão completa das expressões de query e mais exemplos.
+
       * **Tags**
 
-         Especifique a **Página principal**, **Tags/Palavras-chave** e os critérios de correspondência necessários.
+        Especifique a **Página principal**, **Tags/Palavras-chave** e os critérios de correspondência necessários.
+
    * **Exibir como**
 
-      Como você deseja que os itens sejam listados; inclui Links, Teasers e Notícias.
+     Como você deseja que os itens sejam listados; inclui Links, Teasers e Notícias.
 
    * **Ordenar por**
 
-      Se a lista deve ser ordenada e, em caso afirmativo, os critérios a serem usados para a classificação. Você pode inserir um critério ou selecionar um na lista suspensa fornecida.
+     Se a lista deve ser ordenada e, em caso afirmativo, os critérios a serem usados para a classificação. Você pode inserir um critério ou selecionar um na lista suspensa fornecida.
 
    * **Limite**
 
-      Especifique o número máximo de itens que deseja exibir na lista.
+     Especifique o número máximo de itens que deseja exibir na lista.
 
-   * **Ativar feed**
+   * **Habilitar feed**
 
-      Indica se um feed RSS deve ser ativado para a lista.
+     Indica se um feed RSS deve ser ativado para a lista.
 
    * **Paginar após**
 
-      Aqui você pode especificar o número de itens da lista a serem exibidos de uma vez. Uma lista com mais itens do que o especificado usa a paginação para exibir a lista em várias partes.
-
-
-
-
-
+     Aqui você pode especificar o número de itens da lista a serem exibidos de uma vez. Uma lista com mais itens do que o especificado usa a paginação para exibir a lista em várias partes.
 
 O exemplo a seguir mostra uma **Lista** de forma que possa exibir uma lista de páginas secundárias (o design é controlado pelas definições CSS personalizadas de um design de site).
 
@@ -474,29 +472,29 @@ Você pode configurar:
 
    * Rótulo da seção
 
-      Texto de lead-in para os campos de entrada.
+     Texto de lead-in para os campos de entrada.
 
    * Rótulo do nome de usuário
 
-      Texto para rotular o campo de nome de usuário.
+     Texto para rotular o campo de nome de usuário.
 
    * Rótulo da senha
 
-      Texto para rotular o campo de senha.
+     Texto para rotular o campo de senha.
 
    * Rótulo do botão de logon
 
-      Texto do botão de logon.
+     Texto do botão de logon.
 
    * Redirecionar para
 
-      Você pode especificar a página do site que deve ser aberta depois que o usuário fizer logon.
+     Você pode especificar a página do site que deve ser aberta depois que o usuário fizer logon.
 
 * Já está conectado.
 
    * Continuar a etiqueta do botão
 
-      Texto para indicar que o usuário já está conectado.
+     Texto para indicar que o usuário já está conectado.
 
 ### Status do pedido {#order-status}
 
@@ -504,15 +502,15 @@ Você pode configurar:
 
    * **Título**
 
-      Especifique o texto do título que deseja exibir.
+     Especifique o texto do título que deseja exibir.
 
    * **Link**
 
-      Especifique a página (produto) para a qual o status do pedido deve ser exibido.
+     Especifique a página (produto) para a qual o status do pedido deve ser exibido.
 
    * **Tipo / Tamanho**
 
-      Selecione a partir da seleção fornecida.
+     Selecione a partir da seleção fornecida.
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -524,7 +522,7 @@ A variável **Referência** permite referenciar o texto de outra página do site
 
    * **Referência**
 
-      Especifique o caminho para a página e o parágrafo que deseja referenciar (inclua o conteúdo).
+     Especifique o caminho para a página e o parágrafo que deseja referenciar (inclua o conteúdo).
 
 Para especificar o caminho para um parágrafo, você deve usar o seguinte como sufixo no caminho (para a página):
 
@@ -556,52 +554,52 @@ Você pode configurar:
 
    * **Tipos de nós**
 
-      Se a pesquisa precisar ser restrita a um tipo de nó específico, liste-os aqui; por exemplo, `cq:Page`.
+     Se a pesquisa precisar ser restrita a um tipo de nó específico, liste-os aqui; por exemplo, `cq:Page`.
 
    * **Caminho para pesquisar em**
 
-      Especifique a página raiz da ramificação que deseja pesquisar.
+     Especifique a página raiz da ramificação que deseja pesquisar.
 
    * **Texto do botão de pesquisa**
 
-      O nome exibido no botão de pesquisa real.
+     O nome exibido no botão de pesquisa real.
 
    * **Texto de estatísticas**
 
-      O texto exibido acima dos resultados da pesquisa.
+     O texto exibido acima dos resultados da pesquisa.
 
    * **Nenhum texto de resultados**
 
-      Se não houver resultados, o texto inserido aqui será exibido.
+     Se não houver resultados, o texto inserido aqui será exibido.
 
    * **Verificar a ortografia do texto**
 
-      Se alguém inserir um termo semelhante, este texto será exibido antes do termo.
+     Se alguém inserir um termo semelhante, este texto será exibido antes do termo.
 Por exemplo, se você digitar `Geometrixxe`, o sistema exibe &quot;Você quis dizer? Geometrixx&quot;.
 
    * **Texto de páginas semelhantes**
 
-      O texto que é exibido ao lado de um resultado para páginas semelhantes. Para recortar parte de uma imagem, clique neste link.
+     O texto que é exibido ao lado de um resultado para páginas semelhantes. Para recortar parte de uma imagem, clique neste link.
 
    * **Texto de Pesquisas Relacionadas**
 
-      O texto que aparece ao lado das pesquisas por termos e tópicos relacionados.
+     O texto que aparece ao lado das pesquisas por termos e tópicos relacionados.
 
    * **Texto de tendência da pesquisa**
 
-      O título acima dos termos de pesquisa que um usuário insere.
+     O título acima dos termos de pesquisa que um usuário insere.
 
    * **Rótulo das páginas de resultado**
 
-      O texto que aparece na parte inferior desta lista com links para outras páginas de resultados.
+     O texto que aparece na parte inferior desta lista com links para outras páginas de resultados.
 
    * **Rótulo anterior**
 
-      O nome que aparece no link para as páginas de pesquisa anteriores.
+     O nome que aparece no link para as páginas de pesquisa anteriores.
 
    * **Próximo rótulo**
 
-      O nome que aparece no link para as páginas de pesquisa subsequentes.
+     O nome que aparece no link para as páginas de pesquisa subsequentes.
 
 O exemplo a seguir mostra o componente de Pesquisa após uma pesquisa pela palavra *`geometrixx`* no diretório raiz de uma instalação padrão. Também ilustra a paginação de resultados:
 
@@ -623,7 +621,7 @@ Se necessário, você poderá configurar:
 
    * **Caminho raiz**
 
-      Caminho de onde a listagem deve começar.
+     Caminho de onde a listagem deve começar.
 
 ### Slideshow {#slideshow}
 
@@ -635,17 +633,17 @@ Você pode configurar:
 
    * **Novo slide**
 
-      Você pode especificar uma seleção de slides usando o **Adicionar** (e **Remover**) botões.
+     Você pode especificar uma seleção de slides usando o **Adicionar** (e **Remover**) botões.
 
    * **Título**
 
-      Especifique um título, se necessário. Esse título é sobreposto no slide apropriado.
+     Especifique um título, se necessário. Esse título é sobreposto no slide apropriado.
 
 * **Avançado**
 
    * **Tamanho**
 
-      Especifique a largura e a altura em pixels.
+     Especifique a largura e a altura em pixels.
 
 O componente de apresentação de slides exibe repetidamente cada um em sequência, por um curto período, antes de passar para o próximo slide:
 
@@ -723,35 +721,35 @@ Você pode configurar:
 
 * **Estilos de componentes** (**Estilos**)
 
-   Aqui você pode alinhar a imagem à esquerda ou à direita. O padrão é **Esquerda** alinhado, com a imagem à esquerda.
+  Aqui você pode alinhar a imagem à esquerda ou à direita. O padrão é **Esquerda** alinhado, com a imagem à esquerda.
 
 * **Propriedades da imagem** (**Propriedades avançadas da imagem**)
 
-   Permite especificar o seguinte:
+  Permite especificar o seguinte:
 
    * **Ativos da imagem**
 
-      Carregue a imagem necessária.
+     Carregue a imagem necessária.
 
    * **Título**
 
-      O título do bloco. É mostrado por mouseover.
+     O título do bloco. É mostrado por mouseover.
 
    * **Alternar texto**
 
-      Texto alternativo a ser mostrado se a imagem não puder ser exibida. Se deixado em branco, o título será usado.
+     Texto alternativo a ser mostrado se a imagem não puder ser exibida. Se deixado em branco, o título será usado.
 
    * **Vincular para**
 
-      Especifique um caminho de destino.
+     Especifique um caminho de destino.
 
    * **Descrição**
 
-      Uma descrição da imagem.
+     Uma descrição da imagem.
 
    * **Tamanho**
 
-      Define a altura e a largura da imagem.
+     Define a altura e a largura da imagem.
 
 O exemplo a seguir mostra um componente de Imagem de texto que exibe a imagem alinhada à esquerda:
 
@@ -768,15 +766,15 @@ Você pode configurar o seguinte:
 
 * **Título**
 
-   Se quiser usar um nome diferente do título da página, insira-o aqui.
+  Se quiser usar um nome diferente do título da página, insira-o aqui.
 
 * **Link**
 
-   O URI se o título for para operar como um link.
+  O URI se o título for para operar como um link.
 
 * **Tipo / Tamanho**
 
-   Selecione Pequeno ou Grande na lista suspensa. O pequeno é gerado como uma imagem. Grande é gerado como texto.
+  Selecione Pequeno ou Grande na lista suspensa. O pequeno é gerado como uma imagem. Grande é gerado como texto.
 
 O exemplo a seguir mostra uma **Título** componente que está sendo exibido; o design é determinado pelo CSS específico do site.
 
@@ -794,11 +792,11 @@ Depois de colocar uma instância do componente na página, você pode configurar
 
    * **Ativo de vídeo**
 
-      Carregue ou solte seu ativo de vídeo.
+     Carregue ou solte seu ativo de vídeo.
 
    * **Tamanho**
 
-      O tamanho nativo do vídeo (largura x altura em pixels) é exibido nas caixas ao lado de Tamanho (veja acima). Insira manualmente as dimensões de largura e altura aqui se desejar substituir as dimensões nativas do vídeo. Selecionar **OK** ignora a caixa de diálogo.
+     O tamanho nativo do vídeo (largura x altura em pixels) é exibido nas caixas ao lado de Tamanho (veja acima). Insira manualmente as dimensões de largura e altura aqui se desejar substituir as dimensões nativas do vídeo. Selecionar **OK** ignora a caixa de diálogo.
 
 >[!NOTE]
 >
@@ -808,7 +806,6 @@ Depois de colocar uma instância do componente na página, você pode configurar
 >* `Ogg`
 >* `FLV` (vídeo de Flash)
 >
-
 
 ## Colunas {#columns}
 
@@ -834,7 +831,7 @@ O componente de Controle de coluna permite que os usuários selecionem como dese
 
    * **Layout da coluna**
 
-      Selecione o número de colunas que você deseja renderizar. Depois de criada, cada coluna tem seu próprio link para arrastar componentes ou ativos ao adicionar conteúdo.
+     Selecione o número de colunas que você deseja renderizar. Depois de criada, cada coluna tem seu próprio link para arrastar componentes ou ativos ao adicionar conteúdo.
 
 ## Formulário {#form}
 
@@ -848,15 +845,15 @@ Os Forms são criados a partir de vários componentes diferentes:
 
 * **Formulário**
 
-   O componente de Formulário define o início e o fim de um novo formulário em uma página. Outros componentes podem ser colocados entre esses elementos, como tabelas e downloads.
+  O componente de Formulário define o início e o fim de um novo formulário em uma página. Outros componentes podem ser colocados entre esses elementos, como tabelas e downloads.
 
 * **Campos e elementos do formulário**
 
-   Os campos e elementos de formulário podem incluir caixas de texto, botões de opção e imagens. O usuário geralmente conclui uma ação em um campo de formulário, como digitar texto. Consulte elementos de formulário individuais para obter mais informações.
+  Os campos e elementos de formulário podem incluir caixas de texto, botões de opção e imagens. O usuário geralmente conclui uma ação em um campo de formulário, como digitar texto. Consulte elementos de formulário individuais para obter mais informações.
 
 * **Componentes do perfil**
 
-   Os componentes do perfil estão relacionados aos perfis de visitantes usados para colaboração social e outras áreas em que a personalização do visitante é necessária.
+  Os componentes do perfil estão relacionados aos perfis de visitantes usados para colaboração social e outras áreas em que a personalização do visitante é necessária.
 
 O exemplo a seguir mostra um formulário. É composto pelos seguintes **Formulário** componente (início e término), com dois **Formulário** **Texto** campos usados para entrada, uma **Geral** **Texto** campo usado para o texto de lead- in e um **Enviar** botão.
 
@@ -874,19 +871,19 @@ Ao configurar qualquer um dos componentes de formulário, as seguintes guias est
 
 * **Título e texto**
 
-   Aqui você deve especificar as informações básicas, como o título do formulário e qualquer texto que o acompanhe. Quando apropriado, também permite definir outras informações importantes, como se o campo é multisselecionável e se há itens disponíveis para seleção.
+  Aqui você deve especificar as informações básicas, como o título do formulário e qualquer texto que o acompanhe. Quando apropriado, também permite definir outras informações importantes, como se o campo é multisselecionável e se há itens disponíveis para seleção.
 
 * **Valores iniciais**
 
-   Permite especificar um valor default.
+  Permite especificar um valor default.
 
 * **Restrições**
 
-   Aqui você pode especificar se um campo é obrigatório e colocar restrições nesse campo, como ser numérico.
+  Aqui você pode especificar se um campo é obrigatório e colocar restrições nesse campo, como ser numérico.
 
 * **Estilo**
 
-   Indica o tamanho e o estilo dos campos.
+  Indica o tamanho e o estilo dos campos.
 
 >[!NOTE]
 >
@@ -898,57 +895,57 @@ Essas guias fornecem os parâmetros necessários. As guias dependem do tipo de c
 
    * **Nome do elemento**
 
-      Nome do elemento de formulário. Indica onde os dados estão armazenados no repositório.
+     Nome do elemento de formulário. Indica onde os dados estão armazenados no repositório.
 Este campo é obrigatório e deve conter apenas os seguintes caracteres:
 
       * caracteres alfanuméricos
       * `_ . / : -`
+
    * **Título**
 
-      O título exibido com o campo. Se deixado em branco, o título padrão é exibido.
+     O título exibido com o campo. Se deixado em branco, o título padrão é exibido.
 
    * **Descrição**
 
-      Permite fornecer informações adicionais ao usuário, se necessário. No formulário, essa descrição é mostrada abaixo do campo, em uma fonte menor do que o título.
+     Permite fornecer informações adicionais ao usuário, se necessário. No formulário, essa descrição é mostrada abaixo do campo, em uma fonte menor do que o título.
 
    * **Exibir / Ocultar**
 
-      Determina quando o campo está visível.
-
+     Determina quando o campo está visível.
 
 * **Valores iniciais**
 
    * **Valor padrão**
 
-      O valor exibido no campo quando o formulário é aberto. Ou seja, antes que o usuário tenha feito qualquer entrada.
+     O valor exibido no campo quando o formulário é aberto. Ou seja, antes que o usuário tenha feito qualquer entrada.
 
 * **Restrições**
 
    * **Obrigatório**
 
-      Essa restrição depende do tipo de componente de formulário, mas fornece uma ou mais caixas de clique para indicar que esse campo é obrigatório ou que determinadas partes desse campo são obrigatórias.
+     Essa restrição depende do tipo de componente de formulário, mas fornece uma ou mais caixas de clique para indicar que esse campo é obrigatório ou que determinadas partes desse campo são obrigatórias.
 
    * **Mensagem obrigatória**
 
-      Uma mensagem para informar aos usuários que esse campo é obrigatório. Um campo obrigatório está sinalizado com um asterisco.
+     Uma mensagem para informar aos usuários que esse campo é obrigatório. Um campo obrigatório está sinalizado com um asterisco.
 
    * **Restrição**
 
-      As restrições disponíveis para seleção dependem do tipo de componente de formulário.
+     As restrições disponíveis para seleção dependem do tipo de componente de formulário.
 
    * **Mensagem de restrição**
 
-      Uma mensagem para informar aos usuários o que é necessário.
+     Uma mensagem para informar aos usuários o que é necessário.
 
 * **Estilo**
 
    * **Tamanho**
 
-      Em linhas e colunas.
+     Em linhas e colunas.
 
    * **Largura**
 
-      Em pixels.
+     Em pixels.
 
    * **CSS**
 
@@ -968,19 +965,19 @@ Esse componente necessário define o início de um novo formulário em uma pági
 
    * **Página de agradecimento**
 
-      A página a ser referenciada para agradecer aos visitantes por fornecer sua entrada. Se deixado em branco, o formulário será exibido novamente após o envio.
+     A página a ser referenciada para agradecer aos visitantes por fornecer sua entrada. Se deixado em branco, o formulário será exibido novamente após o envio.
 
    * **Iniciar fluxo de trabalho**
 
-      Determina qual fluxo de trabalho será acionado depois que um formulário for enviado.
+     Determina qual fluxo de trabalho será acionado depois que um formulário for enviado.
 
 * **Avançado**
 
    * **Tipo de ação**
 
-      Um formulário precisa de uma ação. A ação define a operação que é acionada para execução com os dados enviados pelo usuário (semelhante à ação= em HTML). Alguns precisam de uma correspondência **Configuração de ação**.
+     Um formulário precisa de uma ação. A ação define a operação que é acionada para execução com os dados enviados pelo usuário (semelhante à ação= em HTML). Alguns precisam de uma correspondência **Configuração de ação**.
 
-      Uma seleção de tipos de ação está incluída em uma instalação padrão do AEM:
+     Uma seleção de tipos de ação está incluída em uma instalação padrão do AEM:
 
       * **Solicitação de conta**
       * **Criar conteúdo**
@@ -999,142 +996,142 @@ Esse componente necessário define o início de um novo formulário em uma pági
       * **Definir senha**
       * **Armazenar conteúdo**
 
-         O tipo de ação padrão.
+        O tipo de ação padrão.
 
       * **Armazenar conteúdo com uploads**
       * **Enviar Ordem**
       * **Cancelar assinatura do assinante**
       * **Atualizar a ordem**
+
    * **Identificador de formulário**
 
-      O identificador do formulário identifica exclusivamente o formulário. Use o identificador de formulário se você tiver vários formulários em uma única página; verifique se eles têm identificadores diferentes.
+     O identificador do formulário identifica exclusivamente o formulário. Use o identificador de formulário se você tiver vários formulários em uma única página; verifique se eles têm identificadores diferentes.
 
    * **Carregar caminho**
 
-      O caminho para as propriedades do nó usadas para carregar valores predefinidos nos campos de formulário.
+     O caminho para as propriedades do nó usadas para carregar valores predefinidos nos campos de formulário.
 Este campo é opcional e especifica o caminho para um nó no repositório. Quando esse nó tem propriedades que correspondem aos nomes dos campos, os campos apropriados no formulário são pré-carregados com o valor dessas propriedades. Se não houver correspondência, o campo conterá o valor padrão.
 Usar **Carregar caminho** você pode pré-carregar o formulário com valores nos campos obrigatórios. Consulte [Pré-carregando Valores de Formulário](/help/sites-developing/developing-forms.md#preloading-form-values).
 
    * **Validação do cliente**
 
-      Indica se a validação do cliente é necessária para este formulário (validação do servidor) *sempre* ocorre.). A validação é obtida com o **Forms Captcha** componente.
+     Indica se a validação do cliente é necessária para este formulário (validação do servidor) *sempre* ocorre.). A validação é obtida com o **Forms Captcha** componente.
 
    * **Tipo de recurso de validação**
 
-      Define o tipo de recurso de validação de formulário se desejar validar o formulário inteiro (em vez de campos individuais). Se você estiver validando o formulário completo, inclua também um dos seguintes:
+     Define o tipo de recurso de validação de formulário se desejar validar o formulário inteiro (em vez de campos individuais). Se você estiver validando o formulário completo, inclua também um dos seguintes:
 
       * Um script para validação de cliente:
 
-         `/apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
+        `/apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
 
       * Um script para validação no lado do servidor:
 
-         `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
+        `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
+
    * **Configurações de ação**
 
-      As opções disponíveis em **Configuração de ação** depende do selecionado **Tipo de ação**:
+     As opções disponíveis em **Configuração de ação** depende do selecionado **Tipo de ação**:
 
       * **Solicitação de conta**
 
          * **Criar página de conta**
 A página usada ao criar uma conta.
+
       * **Criar conteúdo**
 
          * Caminho de conteúdo O caminho de conteúdo de qualquer conteúdo que o formulário despeja. Digite um caminho que termine com uma barra `/`. A barra significa que, para cada porta de formulário, um novo nó é criado no local determinado; por exemplo:
-            `/forms/feedback/`
+           `/forms/feedback/`
 
          * **Tipo**
 
-            Selecione o tipo necessário.
+           Selecione o tipo necessário.
 
          * **Formulário**
 
-            Especifique o formulário.
+           Especifique o formulário.
 
          * **Renderizar com**
 
-            Selecione a opção necessária na lista.
+           Selecione a opção necessária na lista.
 
          * **Tipo de recurso**
 
-            Se definido, ele é adicionado a cada comentário como `sling:resourceType`
+           Se definido, ele é adicionado a cada comentário como `sling:resourceType`
 
          * **Exibir seletor**
+
       * **Criar cliente em potencial**
 
          * **O cliente em potencial será adicionado a esta lista**
 Especifique a lista de clientes potenciais necessária.
+
       * **Criar e atualizar a conta**
 
          * **Grupo inicial**
 
-            Grupo ao qual atribuir o novo usuário.
+           Grupo ao qual atribuir o novo usuário.
 
          * **Início**
 
-            Página a ser exibida após o logon bem-sucedido.
+           Página a ser exibida após o logon bem-sucedido.
 
          * **Caminho**
 
-            O caminho (relativo) para onde a nova conta é criada e armazenada.
+           O caminho (relativo) para onde a nova conta é criada e armazenada.
 
          * **Exibir dados...**
 
-            Selecione o botão para que você possa acessar as informações sobre os resultados do formulário no Editor de itens em massa. Aqui, é possível exportar as informações para um `.tsv` arquivo (separado por tabulação) (para uso, por exemplo, em uma planilha do Excel).
+           Selecione o botão para que você possa acessar as informações sobre os resultados do formulário no Editor de itens em massa. Aqui, é possível exportar as informações para um `.tsv` arquivo (separado por tabulação) (para uso, por exemplo, em uma planilha do Excel).
+
       * **Email**
 
          * **De**
 
-            Insira o endereço de email do qual o email deve vir.
+           Insira o endereço de email do qual o email deve vir.
 
          * **Mailto**
 
-            Insira um ou mais endereços de email para os quais o formulário é enviado.
+           Insira um ou mais endereços de email para os quais o formulário é enviado.
 
          * **CC**
 
-            Insira um ou mais endereços de email CC.
+           Insira um ou mais endereços de email CC.
 
          * **BCC**
 
-            Insira um ou mais endereços de email CCO.
+           Insira um ou mais endereços de email CCO.
 
          * **Assunto**
 
-            Insira um assunto para o email.
+           Insira um assunto para o email.
+
       * **Redefinir senha**
 
          * **Alterar página de senha**
 
-            A página usada ao alterar a senha.
+           A página usada ao alterar a senha.
+
       * **Armazenar conteúdo**
 
          * **Caminho do conteúdo**
 
-            O caminho de conteúdo para qualquer conteúdo que o formulário despeja. Digite um caminho que termine com uma barra `/`. A barra significa que, para cada porta de formulário, um novo nó é criado no local determinado; por exemplo:
-            `/forms/feedback/`
+           O caminho de conteúdo para qualquer conteúdo que o formulário despeja. Digite um caminho que termine com uma barra `/`. A barra significa que, para cada porta de formulário, um novo nó é criado no local determinado; por exemplo:
+           `/forms/feedback/`
 
          * **Exibir dados...**
 
-            Selecione o botão para que você possa acessar as informações sobre os resultados do formulário no Editor de itens em massa. Aqui, você pode exportar as informações para um arquivo .tsv (separado por tabulação) (para uso, por exemplo, em uma planilha do Excel).
+           Selecione o botão para que você possa acessar as informações sobre os resultados do formulário no Editor de itens em massa. Aqui, você pode exportar as informações para um arquivo .tsv (separado por tabulação) (para uso, por exemplo, em uma planilha do Excel).
+
       * **Armazenar conteúdo com os uploads**
 
-         Tem as mesmas opções que **Armazenar conteúdo**.
+        Tem as mesmas opções que **Armazenar conteúdo**.
 
       * **Cancelar assinatura do assinante**
 
          * **O cliente em potencial será excluído da lista**
 
-            Especifique a lista de clientes potenciais necessária.
-
-
-
-
-
-
-
-
-
+           Especifique a lista de clientes potenciais necessária.
 
 #### Final do formulário {#end-of-form}
 
@@ -1144,27 +1141,27 @@ Marca o fim do formulário. Você pode configurar o seguinte:
 
    * **Mostrar botão enviar**
 
-      Indica se um botão Enviar deve ser mostrado ou não.
+     Indica se um botão Enviar deve ser mostrado ou não.
 
    * **Enviar nome**
 
-      Um identificador se estiver usando vários botões de envio em um formulário.
+     Um identificador se estiver usando vários botões de envio em um formulário.
 
    * **Enviar título**
 
-      O nome que aparece no botão, como Enviar ou Enviar.
+     O nome que aparece no botão, como Enviar ou Enviar.
 
    * **Mostrar botão de redefinição**
 
-      Marcar a caixa de seleção torna visível o botão Redefinir.
+     Marcar a caixa de seleção torna visível o botão Redefinir.
 
    * **Redefinir título**
 
-      O nome que aparece no botão Redefinir.
+     O nome que aparece no botão Redefinir.
 
    * **Descrição**
 
-      Informações que aparecem abaixo do botão.
+     Informações que aparecem abaixo do botão.
 
 ### Nome da conta {#account-name}
 
@@ -1323,9 +1320,9 @@ Você pode especificar vários parâmetros, incluindo os namespaces que podem se
       * **Tags padrão**
       * **Marketing**
       * **Propriedades do ativo**
+
    * **Largura em pixels**
    * **Tamanho do popup**
-
 
 ### Campo de texto {#text-field}
 

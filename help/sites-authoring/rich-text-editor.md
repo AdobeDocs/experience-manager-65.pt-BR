@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '264'
 ht-degree: 51%
 
 ---
@@ -46,7 +46,7 @@ Essa barra de ferramentas fornece as seguintes opções:
 
 ## Edição de tela cheia {#full-screen-editing}
 
-Para componentes baseados em texto, tocar no modo de tela cheia na barra de ferramentas ![](do-not-localize/screen_shot_2018-03-21at163236.png) abre o editor de rich text e oculta o restante do conteúdo da página.
+Para componentes baseados em texto, tocar no modo de tela cheia na barra de ferramentas ![Modo de edição de tela inteira](do-not-localize/screen_shot_2018-03-21at163236.png) abre o editor de rich text e oculta o restante do conteúdo da página.
 
 O modo de tela cheia exibe todas as opções configuradas que podem ser usadas para criação. A disponibilidade é opções [depende da configuração](/help/sites-administering/rich-text-editor.md).
 

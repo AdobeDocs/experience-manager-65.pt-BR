@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 0%
+source-wordcount: '1179'
+ht-degree: 1%
 
 ---
 
@@ -148,7 +148,7 @@ Para as campanhas individuais, há duas visualizações disponíveis:
 
    Use o ícone:
 
-   ![](do-not-localize/mcm_iconcalendarview.png)
+   ![Exibição de calendário](do-not-localize/mcm_iconcalendarview.png)
 
    Ele apresenta uma lista de todos os pontos de contato (cinza) com um período horizontal das experiências (verde) conectadas a esse ponto de contato:
 
@@ -166,7 +166,7 @@ Para as campanhas individuais, há duas visualizações disponíveis:
 
    Use o ícone:
 
-   ![](do-not-localize/mcm_icon_listview.png)
+   ![Exibição de lista](do-not-localize/mcm_icon_listview.png)
 
    Isso lista todas as experiências (por exemplo, teasers e boletins informativos) da campanha selecionada:
 

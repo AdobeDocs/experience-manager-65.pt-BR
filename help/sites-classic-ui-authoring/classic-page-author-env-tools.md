@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '902'
 ht-degree: 6%
 
 ---
@@ -40,7 +40,7 @@ Vários **Ajuda** os recursos podem ser acessados diretamente do AEM:
 
 Além de acessar [ajuda das barras de ferramentas do console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), você também pode acessar a ajuda do sidekick (usando o ? ícone) ao editar uma página:
 
-![](do-not-localize/sidekick-collapsed-2.png)
+![Sidekick recolhido](do-not-localize/sidekick-collapsed-2.png)
 
 Ou usando o **Ajuda** botão na caixa de diálogo de edição de componentes específicos; isso mostrará a ajuda sensível ao contexto.
 
@@ -188,9 +188,9 @@ O console do site também [fornece informações sobre o status atual da página
 
 Ao editar uma página com a interface clássica, existem vários modos que podem ser acessados usando os ícones na parte inferior do sidekick:
 
-![](do-not-localize/chlimage_1-12.png)
+![Modos de página  ](do-not-localize/chlimage_1-12.png)
 
-A linha de ícones na parte inferior do Sidekick é usada para alternar modos para trabalhar com as páginas:
+A linha de ícones na parte inferior do Sidekick é usada para alternar os modos de trabalho com as páginas:
 
 * [Editar](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 Esse é o modo padrão e permite editar a página, adicionar ou excluir componentes e fazer outras alterações.
@@ -209,7 +209,6 @@ Nesse modo, é possível editar o design da página configurando os componentes 
 >* [ClientContext](/help/sites-administering/client-context.md)
 >* Sites - abrirá o console Sites.
 >* Recarregar - atualizará a página.
-
 
 ## Atalhos de teclado {#keyboard-shortcuts}
 

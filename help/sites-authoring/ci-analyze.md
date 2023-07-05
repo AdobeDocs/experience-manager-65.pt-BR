@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Para alterar o período de geração de relatório de uma página de Content Ins
 
 1. Se o período de tempo não for exibido na parte superior da página, clique ou toque no ícone Alternar período de tempo.
 
-   ![](do-not-localize/chlimage_1-22.png)
+   ![Alternar período de tempo](do-not-localize/chlimage_1-22.png)
 
 1. Para alterar a data de início do período do relatório, arraste o círculo que aparece no lado esquerdo da área sombreada para a data de início desejada.
 
@@ -92,7 +92,7 @@ Use o procedimento a seguir para criar uma tarefa para uma recomendação da SEO
 
 1. Clique ou toque no ícone de informações da recomendação da SEO.
 
-   ![](do-not-localize/chlimage_1-23.png)
+   ![Ícone de informação](do-not-localize/chlimage_1-23.png)
 
 1. Clique no ícone de triângulo delimitado que aparece ao lado do ícone de informações.
 

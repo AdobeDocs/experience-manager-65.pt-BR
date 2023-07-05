@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,13 @@ No modo Design, o sidekick é minimizado e existe a possibilidade de configurar 
 
 1. Para entrar no modo Design, abra uma página para edição e use o ícone Sidekick:
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Modo de design](do-not-localize/chlimage_1.png)
 
 1. Clique em **Editar** no sistema de parágrafos (**Design de par**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
-1. Uma caixa de diálogo será aberta, listando os grupos de componentes que são mostrados no Sidekick junto com os componentes individuais que eles contêm.
+1. Uma caixa de diálogo será aberta, listando os grupos de componentes mostrados no Sidekick junto com os componentes individuais que eles contêm.
 
    Selecione conforme necessário para adicionar ou remover os componentes que estarão disponíveis no sidekick.
 
@@ -59,7 +59,7 @@ No modo Design, o sidekick é minimizado e existe a possibilidade de configurar 
 
 1. O Sidekick é minimizado no modo Design. Ao clicar na seta, é possível maximizar o Sidekick e retornar ao Modo de edição:
 
-   ![](do-not-localize/sidekick-collapsed.png)
+   ![Sidekick minimizado](do-not-localize/sidekick-collapsed.png)
 
 ## Configuração do design de um componente {#configuring-the-design-of-a-component}
 
@@ -67,7 +67,7 @@ No modo Design, você também pode configurar atributos para os componentes indi
 
 1. Para entrar no modo Design, abra uma página para edição e use o ícone Sidekick:
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Modo de design - Sidekick](do-not-localize/chlimage_1-1.png)
 
 1. Você pode configurar o design de componentes.
 
@@ -79,4 +79,4 @@ No modo Design, você também pode configurar atributos para os componentes indi
 
 1. O Sidekick é minimizado no modo Design. Ao clicar na seta, é possível maximizar o Sidekick e retornar ao Modo de edição:
 
-   ![](do-not-localize/sidekick-collapsed-1.png)
+   ![Sidekick minimizado](do-not-localize/sidekick-collapsed-1.png)

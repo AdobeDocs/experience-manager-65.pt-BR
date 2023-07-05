@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
 exl-id: 46c2fbd0-7eff-4a6c-a088-57560ad2c5e4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 6%
+source-wordcount: '93'
+ht-degree: 8%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 6%
 1. Selecione a nova campanha no painel esquerdo ou clique duas vezes nela no painel direito.
 1. Selecione a exibição de lista usando o ícone:
 
-   ![](do-not-localize/chlimage_1-11.png)
+   ![Exibição de lista](do-not-localize/chlimage_1-11.png)
 
 1. Clique em **Novo ...**
 1. Você pode especificar o **Título**, **Nome** e o tipo de experiência a ser criada; nesse caso, Oferta do Test&amp;Target.

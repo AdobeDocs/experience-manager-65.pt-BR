@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1760'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Este documento descreve as noções básicas para a criação de boletins inform
 
 1. Selecione a exibição de lista usando o ícone:
 
-   ![](do-not-localize/mcm_icon_listview-1.png)
+   ![Exibição de lista](do-not-localize/mcm_icon_listview-1.png)
 
 1. Clique em **Novo...**
 
@@ -92,6 +92,7 @@ A data e hora de envio do informativo.
 
    * **Lista de destinatários padrão**
 Lista padrão que deve receber o informativo.
+
    Eles podem ser atualizados posteriormente no **Propriedades...** diálogo.
 
 1. Clique em **OK** para salvar.

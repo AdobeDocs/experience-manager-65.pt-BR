@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '369'
 ht-degree: 30%
 
 ---
@@ -42,7 +42,7 @@ A barra de ferramentas do ContextHub está disponível no modo Visualização. A
 
 1. Para exibir a barra de ferramentas, clique ou toque no ícone ContextHub.
 
-   ![](do-not-localize/screen_shot_2018-03-23at093621.png)
+   ![Context Hub](do-not-localize/screen_shot_2018-03-23at093621.png)
 
 ## Recursos do módulo de UI {#ui-module-features}
 
@@ -68,4 +68,4 @@ A sobreposição pop-up de um módulo pode incluir elementos de formulário que 
 
 As sobreposições de pop-up podem incluir um ícone no qual você clica ou toca para expandir o conteúdo do pop-up para cobrir toda a janela ou tela do navegador.
 
-![](do-not-localize/chlimage_1-18.png)
+![Tela cheia](do-not-localize/chlimage_1-18.png)

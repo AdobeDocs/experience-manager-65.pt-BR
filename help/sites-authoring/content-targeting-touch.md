@@ -11,9 +11,9 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '5349'
+source-wordcount: '5390'
 ht-degree: 33%
 
 ---
@@ -253,7 +253,7 @@ Execute o seguinte procedimento depois de [início do processo de direcionamento
 
 1. Clique ou toque no ícone de Direcionamento.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Target](do-not-localize/chlimage_1.png)
 
    O conteúdo do componente é a oferta para a experiência padrão. Quando um componente é direcionado, seu nó padrão é replicado para cada experiência. Isso é necessário para editar o nó de conteúdo correto durante a criação da experiência. Para essas experiências diferentes do padrão,[ adicione uma oferta personalizada](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) ou[ adicione uma oferta da biblioteca](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
@@ -275,7 +275,7 @@ No modo Target, o componente de Direcionamento tem uma borda azul, e a mensagem 
 
 No modo de Edição, o componente de Direcionamento tem um ícone de alvo.
 
-![](do-not-localize/chlimage_1-1.png)
+![Componente de direcionamento no modo de Edição](do-not-localize/chlimage_1-1.png)
 
 Quando você arrasta os componentes ao componente de Direcionamento, eles se tornam componentes direcionados.
 
@@ -296,6 +296,8 @@ Se estiver editando o conteúdo direcionado, clique ou toque em **Iniciar o dire
    >
    >
    >Os administradores podem decidir se essa configuração é obrigatória em **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
+   >
+   >
    Para exigir que os usuários insiram um local, marque a caixa de seleção **Forçar local **.
 
 1. Selecione a experiência para a qual deseja criar a oferta.
@@ -321,7 +323,7 @@ Se decidir que a oferta pode ser usada para outras experiências, poderá criar 
 
 1. Clique ou toque na oferta para revelar o menu de ofertas e, em seguida, clique ou toque no ícone de edição.
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Menu Oferta](do-not-localize/chlimage_1-2.png)
 
 1. Edite o conteúdo do componente.
 
@@ -338,7 +340,7 @@ Não é possível adicionar ofertas de biblioteca à experiência padrão.
 
 1. Clique ou toque no ícone de pasta.
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Ícone de pasta](do-not-localize/chlimage_1-3.png)
 
 1. Selecione a oferta da biblioteca e clique ou toque no ícone de marca de seleção.
 
@@ -371,7 +373,7 @@ Para obter informações sobre como usar o console Ofertas para criar uma oferta
 1. Selecione a experiência para revelar a oferta personalizada.
 1. Clique ou toque na oferta personalizada para revelar o menu de ofertas e, em seguida, clique ou toque na **Salvar oferta na biblioteca de ofertas** ícone.
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Salvar oferta na biblioteca de ofertas](do-not-localize/chlimage_1-4.png)
 
 1. Digite um nome para a oferta e selecione a biblioteca à qual está adicionando a oferta e clique ou toque no ícone de marca de seleção.
 
@@ -382,7 +384,7 @@ Converta uma oferta da biblioteca em uma oferta personalizada para alterar a ofe
 1. Selecione a experiência para revelar a oferta da biblioteca.
 1. Clique ou toque na oferta da biblioteca para revelar o menu de ofertas e, em seguida, clique ou toque no ícone Converter em oferta em linha.
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Converter para oferta inline](do-not-localize/chlimage_1-5.png)
 
 #### Editar uma oferta de biblioteca {#editing-a-library-offer}
 
@@ -410,7 +412,7 @@ Para obter informações sobre mecanismos de direcionamento, consulte [Mecanismo
 
 Um público-alvo não deve ser usado por mais de uma experiência. Um símbolo de aviso é exibido ao lado de uma experiência quando é mapeado para um público-alvo que está mapeado para outra experiência.
 
-![](do-not-localize/chlimage_1-6.png)
+![Símbolo de aviso quando mapeado para um público-alvo que está mapeado para outra experiência](do-not-localize/chlimage_1-6.png)
 
 ### Associação de experiências com públicos (AEM ou Adobe Target) {#associating-experiences-with-audiences-aem-or-adobe-target}
 
@@ -577,11 +579,13 @@ Para definir metas e configurações se estiver usando o Adobe Target:
    Todas as métricas também têm configurações avançadas que podem ser definidas. Selecionar **Configurações avançadas** para acessá-las. Consulte a definição de como as métricas de sucesso são contadas na tabela anterior, bem como a [documentação do Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=pt-BR).
 
    >[!NOTE]
+   >
    Você deve ter, pelo menos, uma meta definida.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
    >[!NOTE]
+   >
    Se houver informações ausentes em sua métrica, uma linha vermelha circunda a métrica.
 
 1. Clique em **Adicionar uma nova métrica** para configurar métricas de sucesso adicionais.
@@ -589,6 +593,7 @@ Para definir metas e configurações se estiver usando o Adobe Target:
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
    >[!NOTE]
+   >
    Você pode remover metas adicionais clicando ou tocando nos três pontos e clicando ou tocando **Excluir**. O AEM exige que você tenha pelo menos um objetivo definido.
 
 1. Se quiser ter mais controle sobre como as métricas de sucesso são contadas, clique ou toque em **Configurações avançadas** para acessá-las.
@@ -611,6 +616,7 @@ Os critérios a seguir determinam o conteúdo que aparece ao simular a experiên
 Se conteúdo inesperado aparecer na página ao carregar um perfil, verifique a configuração de cada item nesta lista.
 
 >[!NOTE]
+>
 Se estiver usando o teste A/B, ao simular as experiências, elas serão mostradas com base na porcentagem de tráfego. Isso é controlado pela Adobe Target, o que pode levar a resultados inesperados para os autores. (A atividade _author é sincronizada com configurações específicas que permitem a reavaliação durante a simulação.) Os autores podem precisar atualizar para ver as outras experiências com base em suas configurações de tráfego.
 
 Para simular a experiência do visitante, use as seguintes ferramentas:
@@ -621,7 +627,7 @@ Para simular a experiência do visitante, use as seguintes ferramentas:
 1. Para alternar para o modo de Visualização, clique ou toque em **Visualização** na barra de ferramentas.
 1. Na barra de ferramentas, clique ou toque no ícone do Context Hub.
 
-   ![](do-not-localize/chlimage_1-7.png)
+   ![Context Hub](do-not-localize/chlimage_1-7.png)
 
 1. Use o Context Hub para alterar as propriedades do contexto. Por exemplo, clique ou toque na propriedade Persona para selecionar um usuário diferente.
 
@@ -637,7 +643,7 @@ Você pode personalizar o componente de Direcionamento acessando as opções do 
 
 1. Depois de direcionar o componente, no componente de Direcionamento, clique ou toque no componente e no ícone de configurações (cog).
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![Menu do componente de Direcionamento](do-not-localize/chlimage_1-8.png)
 
    O AEM exibe a janela de opções do componente de Direcionamento.
 
@@ -645,7 +651,7 @@ Você pode personalizar o componente de Direcionamento acessando as opções do 
 
 1. Como alternativa, para acessar essas configurações no modo de tela cheia, na janela de opções do componente de Direcionamento, clique ou toque no ícone de tela cheia.
 
-   ![](do-not-localize/chlimage_1-9.png)
+   ![Janela de opções do componente de Direcionamento](do-not-localize/chlimage_1-9.png)
 
    O AEM exibe a janela de opções do componente de Direcionamento em tela cheia.
 
@@ -704,6 +710,7 @@ Se você selecionar Adobe Target como mecanismo:
 </table>
 
 >[!NOTE]
+>
 Quando você seleciona um componente e o torna compatível com o público-alvo, o AEM também substitui o componente e injeta um componente do Adobe Target. (O componente do Adobe Target não é usado apenas ao adicioná-lo manualmente à página, mas também quando você direciona a um componente existente.)
 
 Se você selecionar Contexto do cliente (lado do cliente) como mecanismo:

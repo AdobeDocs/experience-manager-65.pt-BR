@@ -9,9 +9,9 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '2828'
+source-wordcount: '2839'
 ht-degree: 4%
 
 ---
@@ -85,7 +85,7 @@ Você pode arrastar e soltar uma imagem da [Navegador de ativos](/help/sites-aut
 
 Depois que a imagem for carregada (e não antes) você poderá usar [edição no local](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) para cortar/girar a imagem conforme necessário:
 
-![](do-not-localize/chlimage_1-10.png)
+![Inserir barra de ferramentas de edição](do-not-localize/chlimage_1-10.png)
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Depois que a imagem for carregada (e não antes) você poderá usar [edição no
 
 Várias opções adicionais estão disponíveis no modo de edição de tela cheia; por exemplo, map e zoom:
 
-![](do-not-localize/chlimage_1-11.png)
+![Modo de edição de tela inteira](do-not-localize/chlimage_1-11.png)
 
 Quando uma imagem é carregada, você pode configurar o seguinte:
 
@@ -132,6 +132,7 @@ Define a altura e a largura da imagem.
 >Você deve inserir informações no **Texto Alternativo** no campo **Avançado** ou a imagem não pode ser salva e você verá a seguinte mensagem de erro:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 O exemplo a seguir mostra um componente de Imagem (Campanha) sendo exibido.
 
@@ -150,8 +151,7 @@ A legenda do link. Esse é o texto que os usuários veem.
 Adiciona mais informações sobre como usar o link.
 
 * **LinkType**
-Na lista suspensa, selecione entre um 
-**URL personalizado** e uma **Documento adaptável**. Este campo é obrigatório. Se você selecionar URL personalizado, poderá fornecer o URL do link. Se você selecionar Documento adaptável, poderá fornecer o caminho do documento.
+Na lista suspensa, selecione entre um **URL personalizado** e uma **Documento adaptável**. Este campo é obrigatório. Se você selecionar URL personalizado, poderá fornecer o URL do link. Se você selecionar Documento adaptável, poderá fornecer o caminho do documento.
 
 * **Parâmetro de URL adicional**
 Adicione quaisquer parâmetros de URL adicionais. Clique em Adicionar item para adicionar vários itens.
@@ -161,6 +161,7 @@ Adicione quaisquer parâmetros de URL adicionais. Clique em Adicionar item para 
 >Você deve inserir informações no **Tipo de link** no campo **Informações de URL** ou o componente não pode ser salvo e você verá a seguinte mensagem de erro:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 O exemplo a seguir mostra um componente Link (Campanha) sendo exibido.
 
@@ -196,11 +197,11 @@ Ao clicar para configurar o componente, você seleciona Texto ou Imagem.
 
 Selecionar **Texto** exibe um editor em linha:
 
-![](do-not-localize/chlimage_1-12.png)
+![Barra de ferramentas de texto](do-not-localize/chlimage_1-12.png)
 
 Selecionar **Imagem** exibe o editor local de imagens:
 
-![](do-not-localize/chlimage_1-13.png)
+![Barra de ferramentas Imagem](do-not-localize/chlimage_1-13.png)
 
 Consulte [Componente de imagem (Campanha)](#image-campaign) para obter mais informações sobre como trabalhar com imagens. Consulte [Componente de Texto e personalização (Campanha)](#text-personalization-campaign) para obter mais informações sobre como trabalhar com texto.
 
@@ -234,6 +235,7 @@ Define a altura e a largura da imagem.
 >A variável **Texto Alternativo** no campo **Avançado** é necessária ou o componente não pode ser salvo e você verá a seguinte mensagem de erro:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 O exemplo a seguir mostra um componente de Texto e imagem (Campanha) sendo exibido.
 
@@ -300,7 +302,7 @@ A tabela a seguir descreve os componentes que estão disponíveis para exibir e 
   <tr>
    <td><p>Caixa de seleção (Campanha)</p> </td>
    <td><p>booleano</p> </td>
-   <td><p>Não entrar mais em contato (por qualquer canal)</p> </td>
+   <td><p>Não contato mais longo (por qualquer canal)</p> </td>
   </tr>
   <tr>
    <td><p>Campo de dados (Campanha)</p> <p>Campo de data/HTML 5 (Campanha)</p> </td>
