@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: feef7362b832f2ddef1902ef2a25d55323b6be26
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1167'
 ht-degree: 1%
 
 ---
+
 
 # O Editor de itens em massa{#the-bulk-editor}
 
@@ -46,11 +47,11 @@ Um exemplo para ilustrar esse caso de uso está incluído no site do Geometrixx:
 1. Navegue até a **Suporte** e, em seguida, para a **Satisfação do Atendimento ao Cliente** pesquisa.
 1. **Editar** o **Início do formulário** parágrafo. Na caixa de diálogo, clique no link **Avançado** , expanda a **Configuração de ação** e, em seguida, clique em **Exibir Dados...**.
 
-   ![](assets/custsatsurvey.png)
+   ![Exemplo de pesquisa de satisfação do cliente](assets/custsatsurvey.png)
 
 1. O Editor de itens em massa é totalmente personalizável. No entanto, neste exemplo, o editor de itens em massa não permite que os usuários editem o conteúdo, mas apenas permite que exportem as informações para uma planilha.
 
-   ![](assets/bulkeditor.png)
+   ![Console do editor de itens em massa](assets/bulkeditor.png)
 
 ## Como usar o editor em massa {#how-to-use-the-bulk-editor}
 
@@ -100,16 +101,16 @@ Para usar o editor de itens em massa para editar vários itens simultaneamente:
 
 Por exemplo:
 
-![](assets/searchfilter.png)
+![Opções de filtro do editor de itens em massa](assets/searchfilter.png)
 
 1. Clique em **Pesquisar**. O Editor de itens em massa exibe os resultados.
 Para o exemplo acima, todas as páginas que atendem aos seus critérios de pesquisa são retornadas e exibidas com as colunas solicitadas.
 
-   ![](assets/chlimage_1-39.png)
+   ![Resultados do editor em massa](assets/chlimage_1-39.png)
 
 1. Faça as alterações necessárias clicando duas vezes em uma célula.
 
-   ![](assets/srchresultedit.png)
+   ![Edição em massa](assets/srchresultedit.png)
 
 1. Clique em **Salvar** para salvar as alterações (a variável **Salvar** será ativado assim que você editar uma célula).
 
@@ -137,12 +138,12 @@ Para exportar conteúdo:
    >
    >Por padrão, as alterações são codificadas em [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252) (também conhecido como CP-1252). Você pode verificar UTF-8 para exportar as alterações em UTF-8.
 
-   ![](assets/srchrsesultexport.png)
+   ![Exportação de resultados](assets/srchrsesultexport.png)
 
 1. Selecione o local e confirme se deseja baixar o arquivo.
 1. Após baixar o arquivo, você pode abri-lo no seu programa de planilhas, por exemplo, Microsoft Excel. O programa de planilha importa o arquivo e o converte em um formato de planilha.
 
-   ![](assets/exportinexcel.png)
+   ![Resultados exportados em uma planilha](assets/exportinexcel.png)
 
 ### Importação de conteúdo {#importing-content}
 

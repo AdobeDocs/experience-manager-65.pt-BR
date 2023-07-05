@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 02afc4eb78acaacc40d3ba1830ccb1e9c3907d0f
+source-git-commit: aaeef8fcc0ed5f205aeb7ab40cc61f60912c9869
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1973'
 ht-degree: 0%
 
 ---
+
 
 # ClientContext{#client-context}
 
@@ -26,9 +27,9 @@ ht-degree: 0%
 
 O Contexto do cliente é um mecanismo que fornece determinadas informações sobre a página atual e o visitante. Pode ser aberto usando **Ctrl-Alt-c** (janelas) ou **control-option-c** (Mac)
 
-![](assets/clientcontext_alisonparker.png)
+![Um exemplo da janela Client Context](assets/clientcontext_alisonparker.png)
 
-Em ambos os [ambiente de publicação e criação, ele mostra informações](#propertiesavailableintheclientcontext) sobre:
+No ambiente de publicação e criação, ele mostra informações sobre:
 
 * O visitante; dependendo da sua instância, certas informações são solicitadas ou derivadas.
 * Tags de página e o número de vezes que essas tags foram acessadas pelo visitante atual (isso é mostrado quando você move o mouse sobre uma tag específica) .
@@ -38,7 +39,7 @@ Em ambos os [ambiente de publicação e criação, ele mostra informações](#pr
 
 Os ícones (disponíveis apenas no ambiente de criação) permitem configurar os detalhes do contexto do cliente:
 
-![](do-not-localize/clientcontext_icons.png)
+![Os ícones Editar, Carregar e Redefinir da janela Contexto do cliente](do-not-localize/clientcontext_icons.png)
 
 * **Editar**
 Uma nova página será aberta, permitindo que você [editar, adicionar ou remover uma propriedade de perfil](#editingprofiledetails).
@@ -116,6 +117,7 @@ Por exemplo, se o mouse estiver sobre a parte esquerda ou direita da janela. Ess
 **Nuvem de tags** Mostra as tags definidas na página atual e as obtidas durante a navegação no site. Mover o mouse sobre uma tag mostra o número de vezes que o usuário atual acessou páginas que contêm essa tag específica.
 
 >[!NOTE]
+>
 As tags definidas nos ativos DAM exibidos nas páginas visitadas não serão contadas.
 
 **Loja Technographics** Esse componente depende da sua instalação.
@@ -127,6 +129,7 @@ Este repositório de sessão não tem um componente de contexto de cliente padr�
 Para obter informações adicionais, consulte [Contexto do cliente em detalhes](/help/sites-developing/client-context.md).
 
 >[!NOTE]
+>
 Os dados de página não estão mais no contexto do cliente como um componente padrão. Se necessário, você pode adicionar isso editando o contexto do cliente, adicionando o **Propriedades de armazenamento genérico** e, em seguida, configurar para definir a variável **Loja** as `pagedata`.
 
 ## Alterar o perfil do Client Context {#changing-the-client-context-profile}
@@ -149,11 +152,11 @@ Quando terminar, você poderá [redefinir o perfil](#resetting-the-profile-to-th
 
 1. Clique no ícone Carregar perfil:
 
-   ![](do-not-localize/clientcontext_loadprofile.png)
+   ![O ícone Carregar perfil do Client Context](do-not-localize/clientcontext_loadprofile.png)
 
 1. Isso abrirá a caixa de diálogo, onde é possível selecionar o perfil que deseja carregar:
 
-   ![](assets/clientcontext_profileloader.png)
+   ![A caixa de diálogo Carregador de perfil mostrando o menu suspenso para selecionar um perfil](assets/clientcontext_profileloader.png)
 
 1. Clique em **OK** para carregar.
 
@@ -163,7 +166,7 @@ Também é possível selecionar um perfil com o controle deslizante de seleção
 
 1. Clique duas vezes no ícone que representa o usuário atual. O seletor será aberto, use as setas para navegar e ver os perfis disponíveis:
 
-   ![](assets/clientcontext_profileselector.png)
+   ![O seletor de usuários](assets/clientcontext_profileselector.png)
 
 1. Clique no perfil que deseja carregar. Quando os detalhes tiverem sido carregados, clique fora do seletor para fechar.
 
@@ -171,13 +174,13 @@ Também é possível selecionar um perfil com o controle deslizante de seleção
 
 1. Use o ícone de redefinição para retornar o perfil no Contexto do cliente para o do usuário atual:
 
-   ![](do-not-localize/clientcontext_resetprofile.png)
+   ![O ícone de redefinição](do-not-localize/clientcontext_resetprofile.png)
 
 ### Alterar a plataforma do navegador {#changing-the-browser-platform}
 
 1. Clique duas vezes no ícone que representa a plataforma do navegador. O seletor será aberto, use as setas para navegar e ver as plataformas/navegadores disponíveis:
 
-   ![](assets/clientcontext_browserplatform.png)
+   ![Seletor de plataforma do navegador](assets/clientcontext_browserplatform.png)
 
 1. Clique no navegador da plataforma que deseja carregar. Quando os detalhes tiverem sido carregados, clique fora do seletor para fechar.
 
@@ -185,7 +188,7 @@ Também é possível selecionar um perfil com o controle deslizante de seleção
 
 1. Clique duas vezes no ícone de localização geográfica. Um mapa expandido será aberto, onde você pode arrastar o marcador para um novo local:
 
-   ![](assets/clientcontext_geomocationrelocate.png)
+   ![Detalhes de geolocalização](assets/clientcontext_geomocationrelocate.png)
 
 1. Clique fora do mapa para fechar.
 
@@ -193,7 +196,7 @@ Também é possível selecionar um perfil com o controle deslizante de seleção
 
 1. Clique duas vezes na seção Nuvem de tags do Contexto do cliente. A caixa de diálogo será aberta, onde é possível selecionar tags:
 
-   ![](assets/clientcontext_tagselection.png)
+   ![Caixa de diálogo Nuvem de tags](assets/clientcontext_tagselection.png)
 
 1. Clique em OK para carregar no Client Context.
 
@@ -205,13 +208,13 @@ A edição de um contexto de cliente pode ser usada para definir (ou redefinir) 
 
 A edição de um contexto de cliente pode ser usada para definir (ou redefinir) os valores de determinadas propriedades. Isso permite testar cenários específicos (particularmente úteis para [segmentação](/help/sites-administering/campaign-segmentation.md) e [campanhas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
 
-![](assets/clientcontext_alisonparker_edit.png)
+![Editar o Client Context](assets/clientcontext_alisonparker_edit.png)
 
 ### Adição de um componente de propriedade {#adding-a-property-component}
 
 Depois de abrir o **página de design do ClientContext**, você também pode **Adicionar** uma propriedade completamente nova usando os componentes disponíveis (os componentes estão listados no sidekick ou no **Inserir novo componente** que é aberta depois de clicar duas vezes na variável **Arraste componentes ou ativos para cá** caixa):
 
-![](assets/clientcontext_alisonparker_new.png)
+![Adicionar uma propriedade à janela Client Context](assets/clientcontext_alisonparker_new.png)
 
 ### Remoção de um componente de propriedade {#removing-a-property-component}
 
@@ -231,11 +234,11 @@ Adicione o componente JSONP Store ao Client Context e use-o para recuperar e arm
 1. Para abrir o Client Context, pressione Ctrl-Alt-c (windows) ou control-option-c (Mac).
 1. Clique no ícone de edição na parte superior do Client Context para abrir o Client Context Designer.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Ícone de link](do-not-localize/chlimage_1.png)
 
 1. Arraste o componente de Armazenamento JSONP para o Contexto do cliente.
 
-   ![](assets/chlimage_1-4.jpeg)
+   ![Arrastar e soltar o componente de armazenamento JSONP no Contexto do cliente](assets/chlimage_1-4.jpeg)
 
 1. Clique duas vezes no componente para abrir a caixa de diálogo de edição.
 1. Na caixa URL do serviço JSONP, digite o seguinte URL e clique em Buscar armazenamento:
@@ -244,12 +247,12 @@ Adicione o componente JSONP Store ao Client Context e use-o para recuperar e arm
 
    O componente chama o serviço JSONP e lista todas as propriedades que os dados retornados contêm. As propriedades que estão na lista são aquelas que estarão disponíveis no Client Context.
 
-   ![](assets/chlimage_1-40.png)
+   ![As propriedades do serviço JSONP](assets/chlimage_1-40.png)
 
 1. Clique em OK.
 1. Retorne à página inicial do Geometrixx Outdoors e atualize a página. O Contexto do cliente agora inclui as informações do componente de Armazenamento JSONP.
 
-   ![](assets/chlimage_1-41.png)
+   ![Exemplo do componente JSONP preenchido com dados](assets/chlimage_1-41.png)
 
 ### Criar o segmento {#create-the-segment}
 
@@ -270,7 +273,7 @@ Use os dados do armazenamento de sessão criado por meio do componente de armaze
 1. Clique com o botão direito do mouse no segmento Winter e clique em Open.
 1. Arraste a Propriedade de armazenamento genérico para o contêiner AND padrão.
 
-   ![](assets/chlimage_1-5.jpeg)
+   ![Adicionar um componente ao editor de segmentos](assets/chlimage_1-5.jpeg)
 
 1. Clique duas vezes no componente para abrir a caixa de diálogo de edição, especifique os seguintes valores de propriedade e clique em OK:
 

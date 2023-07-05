@@ -9,12 +9,13 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 201c87da1316944e594ade6d95800326b1e6667c
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '961'
 ht-degree: 4%
 
 ---
+
 
 # Consoles de gerenciamento de membros e grupos {#members-groups-management-consoles}
 
@@ -47,7 +48,7 @@ No ambiente de criação, para acessar o console Membros para gerenciar membros 
 >
 >Não será possível usar o console Membros se a variável [serviço de túnel](deploy-communities.md#tunnel-service-on-author) não está ativado.
 
-![member-console1](assets/member-console1.png)
+![O console do membro](assets/member-console1.png)
 
 ### Pesquisar {#search-features}
 
@@ -56,7 +57,7 @@ Selecione o ícone do painel lateral no lado esquerdo da `Members` cabeçalho pa
 ![Ícone do painel lateral de pesquisa.](assets/leftpanel-icon.png)
 
 
-![member-console2](assets/member-console2.png)
+![Opções de filtro para o console do membro](assets/member-console2.png)
 
 Selecione o ícone de pesquisa no lado esquerdo da `Members` para alternar o painel lateral de pesquisa fechado.
 
@@ -76,7 +77,7 @@ Os cabeçalhos de coluna são
 
 Selecionar `Create Member` para criar um usuário no ambiente de publicação.
 
-![create-member1](assets/create-member1.png)
+![A janela Criar novo membro](assets/create-member1.png)
 
 ### GERAL - Detalhes do membro {#general-member-details}
 
@@ -150,7 +151,7 @@ A variável `BADGES` fornece a capacidade de atribuir selos manualmente, bem com
 
 Consulte também [Pontuação e medalhas](implementing-scoring.md).
 
-![create-member2](assets/create-member2.png)
+![A janela Editar Configurações de Associação](assets/create-member2.png)
 
 * **[!UICONTROL Adicionar selos]**
    * Comece a digitar para selecionar de [medalhas disponíveis](badges.md). Depois que um selo é selecionado, escolha cada site ou todos os sites, nos quais o selo deve ser exibido junto com o avatar do membro.
@@ -173,7 +174,7 @@ Para acessar o console Grupos:
 
 Selecionar `Add Group` para criar um grupo no ambiente de publicação.
 
-![group-console1](assets/group-console1.png)
+![A janela Criar novo grupo](assets/group-console1.png)
 
 Os campos obrigatórios para criar um novo grupo de membros do lado da publicação são:
 

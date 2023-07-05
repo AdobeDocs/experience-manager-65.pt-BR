@@ -500,7 +500,7 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
    >
    >O método recomendado para configuração e outras alterações é:
    >
-   >1. Recriar o item necessário, como ele existe em `/libs`, em `/apps`. Nesse caso, de:
+   >1. Recrie o item necessário, como ele existe em `/libs`, em `/apps`. Nesse caso, de:
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Fazer alterações em `/apps.`
 
