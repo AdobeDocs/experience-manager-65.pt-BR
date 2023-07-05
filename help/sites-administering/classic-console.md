@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 21330d460d1080ab1dee3e82bc3c3877677c1420
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
+
 
 # Console de marcação da interface clássica{#classic-ui-tagging-console}
 
@@ -30,7 +31,7 @@ Para acessar o console de Marcação da Interface Clássica:
 * entrar com privilégios administrativos
 * navegue até o console, por exemplo, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
-![](assets/managing_tags_usingthetagasministrationconsole.png)
+![Janela do console clássico](assets/managing_tags_usingthetagasministrationconsole.png)
 
 ## Criação de tags e namespaces {#creating-tags-and-namespaces}
 
@@ -38,33 +39,29 @@ Para acessar o console de Marcação da Interface Clássica:
 
    Se você selecionar **Tags** você pode criar um namespace:
 
-   ![](assets/creating_tags_andnamespaces.png)
+   ![Caixa de diálogo Criando um namespace](assets/creating_tags_andnamespaces.png)
 
    Se selecionar um namespace (por exemplo, **Demonstração**), você pode criar uma tag nesse namespace:
 
-   ![](assets/creating_tags_andnamespacesinnewnamespace.png)
+   ![Caixa de diálogo Criação de uma tag](assets/creating_tags_andnamespacesinnewnamespace.png)
 
 1. Em ambos os casos, insira
 
    * **Título**
-(
-*Obrigatório*) O título de exibição da tag. Embora qualquer caractere possa ser inserido, é recomendável não usar estes caracteres especiais:
+(*Obrigatório*) O título de exibição da tag. Embora qualquer caractere possa ser inserido, é recomendável não usar estes caracteres especiais:
 
       * `colon (:)` - delimitador de namespace
       * `forward slash (/)` - delimitador de submarca
 
-      Esses caracteres não serão exibidos se inseridos.
+     Esses caracteres não serão exibidos se inseridos.
 
    * **Nome**
-(
-*Obrigatório*) O nome do nó da tag.
+(*Obrigatório*) O nome do nó da tag.
 
    * **Descrição**
-(
-*Opcional*) Uma descrição para a tag.
+(*Opcional*) Uma descrição para a tag.
 
    * selecionar **Criar**
-
 
 ## Edição de tags {#editing-tags}
 
@@ -90,7 +87,7 @@ Para acessar o console de Marcação da Interface Clássica:
 
 **Lista** abre uma nova janela mostrando os caminhos de todas as páginas usando a tag destacada:
 
-![](assets/list_showing_wheretagsarereferenced.png)
+![Localização de onde as tags são referenciadas](assets/list_showing_wheretagsarereferenced.png)
 
 ## Mover tags {#moving-tags}
 
@@ -107,7 +104,7 @@ Para ajudar os administradores e desenvolvedores de tags a limpar a taxonomia ou
 
 A variável **Mover tag** tem a seguinte aparência:
 
-![](assets/move_tag.png)
+![Mover uma tag](assets/move_tag.png)
 
 >[!NOTE]
 >
@@ -129,7 +126,7 @@ Para mesclar uma tag a outra:
 
 A variável **Mesclar tag** tem a seguinte aparência:
 
-![](assets/mergetag.png)
+![Mesclar uma tag](assets/mergetag.png)
 
 ## Contagem do uso de tags {#counting-usage-of-tags}
 
@@ -158,7 +155,7 @@ O procedimento a seguir mostra como traduzir o `title`da tag **Animais** para in
 
 A caixa de diálogo tem a seguinte aparência:
 
-![](assets/edit_tag.png)
+![Edição de uma tag](assets/edit_tag.png)
 
 O console Marcação usa a configuração de idioma do usuário, portanto, para a tag Animal, &quot;Animaux&quot; é exibido para um usuário que define o idioma para francês nas propriedades do usuário.
 
@@ -175,11 +172,11 @@ Por padrão, a tag `titles`nas propriedades da página são exibidas no idioma d
 
    Selecione o **Animais** (**Animaux**) e selecione fora da caixa de diálogo para fechá-la e adicionar a tag às propriedades da página.
 
-   ![](assets/french_tag.png)
+   ![Edição de outra tag](assets/french_tag.png)
 
 Por padrão, a caixa de diálogo Propriedades da página exibe a tag `titles`de acordo com o idioma da página.
 
-Em geral, o idioma da tag é retirado do idioma da página se o idioma da página estiver disponível. Quando a variável [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) for usada em outros casos (por exemplo, em formulários ou caixas de diálogo), a linguagem da tag dependerá do contexto.
+Em geral, o idioma da tag é retirado do idioma da página se o idioma da página estiver disponível. Quando a variável [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) for usada em outros casos (por exemplo, em formulários ou caixas de diálogo), a linguagem da tag dependerá do contexto.
 
 >[!NOTE]
 >

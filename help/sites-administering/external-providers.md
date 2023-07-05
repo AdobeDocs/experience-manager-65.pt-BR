@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ec4f24528089fe3de639b974ff4ab6f8807fc7fc
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 1%
+source-wordcount: '448'
+ht-degree: 2%
 
 ---
+
 
 # Analytics com provedores externos {#analytics-with-external-providers}
 
@@ -70,15 +71,15 @@ Para a configuração básica:
 1. No painel esquerdo, expanda **Configurações do Cloud Services**.
 1. Clique duas vezes em **Fragmento da análise genérica** para abrir a página:
 
-   ![](assets/analytics_genericoverview.png)
+   ![Fragmento da análise genérica](assets/analytics_genericoverview.png)
 
 1. Clique no + para adicionar uma nova configuração usando a caixa de diálogo; no mínimo, atribua um nome, por exemplo google analytics:
 
-   ![](assets/analytics_addconfig.png)
+   ![Criar configuração](assets/analytics_addconfig.png)
 
 1. Clique em **Criar**, a caixa de diálogo de trecho será aberta imediatamente - cole o trecho javascript apropriado no campo:
 
-   ![](assets/analytics_snippet.png)
+   ![Edição do componente](assets/analytics_snippet.png)
 
 1. Clique em **OK** para salvar.
 
@@ -90,12 +91,12 @@ Após criar a configuração do serviço, agora é necessário configurar as pá
 1. Abra o **Propriedades da página** no sidekick, depois o **Cloud Services** guia.
 1. Clique em **Adicionar serviço** e selecione o serviço necessário; por exemplo, o **Fragmento da análise genérica**:
 
-   ![](assets/analytics_selectservice.png)
+   ![Adicionar um serviço em nuvem](assets/analytics_selectservice.png)
 
 1. Clique em **OK** para salvar.
 1. Você será redirecionado para a **Cloud Services** guia. A variável **Fragmento da análise genérica** agora está listado com a mensagem `Configuration reference missing`. Use a lista suspensa para selecionar sua instância de serviço específica; por exemplo, google-analytics:
 
-   ![](assets/analytics_selectspecificservice.png)
+   ![Adicionar configuração do serviço em nuvem](assets/analytics_selectspecificservice.png)
 
 1. Clique em **OK** para salvar.
 

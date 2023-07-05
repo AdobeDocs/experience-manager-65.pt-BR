@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 4dd216167f97eb6f6181586b57694b139872c5ef
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '958'
 ht-degree: 4%
 
 ---
+
 
 # Operações do Granite - Administração de usuários e grupos{#granite-operations-user-and-group-administration}
 
@@ -26,7 +27,7 @@ Estas contas constituem a base subjacente da [Contas AEM](/help/sites-administer
 
 Os consoles de administração de usuários e grupos do Granite estão disponíveis no **[Ferramentas](/help/sites-administering/tools-consoles.md)** console da interface otimizada para toque:
 
-![chlimage_1-72](assets/chlimage_1-72a.png)
+![Console Ferramentas](assets/chlimage_1-72a.png)
 
 Escolhendo um **Usuários** ou **Grupos** no console Ferramentas, o console apropriado será aberto. Em ambos, é possível realizar ações usando a caixa de cliques e, em seguida, as ações na barra de ferramentas, ou abrindo os detalhes da conta por meio do link em **Nome**.
 
@@ -42,7 +43,7 @@ Escolhendo um **Usuários** ou **Grupos** no console Ferramentas, o console apro
 
 * [Administração de grupo](#group-administration)
 
-  ![chlimage_1-74](assets/chlimage_1-74a.png)
+  ![Console de gerenciamento de usuários](assets/chlimage_1-74a.png)
 
   A variável **Grupos** listas do console:
 
@@ -56,11 +57,11 @@ Escolhendo um **Usuários** ou **Grupos** no console Ferramentas, o console apro
 
 1. Use o **Adicionar usuário** ícone:
 
-   ![Adicionar usuário](do-not-localize/chlimage_1-1.png)
+   ![Ícone Adicionar usuário](do-not-localize/chlimage_1-1.png)
 
 1. A variável **Criar usuário** O formulário será aberto:
 
-   ![chlimage_1-75](assets/chlimage_1-75a.png)
+   ![Formulário Detalhes do usuário](assets/chlimage_1-75a.png)
 
    Aqui você pode inserir os detalhes do usuário para a conta (a maioria é padrão e autoexplicativa):
 
@@ -132,11 +133,11 @@ Você pode sinalizar a conta como **ativo** ou **inativo**.
 
 1. Agora é possível editar os detalhes como em [Adicionar um novo usuário](#adding-a-new-user). Em **Configurações da conta** há um link para **Alterar senha**.
 
-   ![chlimage_1-76](assets/chlimage_1-76a.png)
+   ![Caixa de diálogo Configurações da conta](assets/chlimage_1-76a.png)
 
 1. A variável **Alterar senha** será aberta. Digite e digite novamente a nova senha, juntamente com a senha. Uso **OK** para confirmar as alterações.
 
-   ![chlimage_1-77](assets/chlimage_1-77a.png)
+   ![Caixa de diálogo Alterar senha](assets/chlimage_1-77a.png)
 
    Uma mensagem confirmará que a senha foi alterada.
 
@@ -149,7 +150,7 @@ Você pode sinalizar a conta como **ativo** ou **inativo**.
 
    Para abrir o menu suspenso de seleção de grupo:
 
-   ![chlimage_1-78](assets/chlimage_1-78a.png)
+   ![Seletor de grupos](assets/chlimage_1-78a.png)
 
 1. Na caixa de seleção, é possível marcar ou desmarcar os grupos aos quais a conta de usuário deve pertencer.
 
@@ -177,7 +178,7 @@ Você pode sinalizar a conta como **ativo** ou **inativo**.
 
 1. A variável **Criar grupo** O formulário será aberto:
 
-   ![chlimage_1-79](assets/chlimage_1-79a.png)
+   ![Formulário Detalhes do grupo](assets/chlimage_1-79a.png)
 
    Aqui você pode inserir os detalhes do grupo:
 

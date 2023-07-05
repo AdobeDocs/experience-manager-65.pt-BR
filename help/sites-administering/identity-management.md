@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 1036127ae508ec76c868db5fb67709c104c51123
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1250'
 ht-degree: 2%
 
 ---
+
 
 # Gerenciamento de identidade{#identity-management}
 
@@ -61,11 +62,11 @@ A [formulário](/help/sites-authoring/default-components.md#form-component) O po
 Por exemplo, os usuários podem solicitar um novo perfil, usando a página Geometrixx
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
-![registerform](assets/registerform.png)
+![Exemplo de formulário de registro](assets/registerform.png)
 
 Ao enviar a solicitação, a página de perfil é aberta, onde o usuário pode fornecer detalhes pessoais.
 
-![profilepage](assets/profilepage.png)
+![Exemplo de página de perfil](assets/profilepage.png)
 
 A nova conta também está visível no [Console de usuários](/help/sites-administering/security.md).
 
@@ -79,7 +80,7 @@ Por exemplo, os usuários podem fazer logon ou criar uma nova conta usando o **C
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![fazer logon](assets/login.png)
+![Exemplo de página de logon](assets/login.png)
 
 ## Efetuando logout {#logging-out}
 
@@ -106,13 +107,13 @@ Para ver os detalhes do seu perfil, clique em **Meu perfil** no canto superior d
 1. Pressione **control-alt-C** para abrir o contexto do cliente.
 1. No canto superior esquerdo do contexto do cliente, clique na **Carregar um perfil** botão.
 
-   ![Botão Carregar um perfil](do-not-localize/loadprofile.png)
+   ![Carregar um ícone de perfil](do-not-localize/loadprofile.png)
 
 1. Selecione outro perfil na lista suspensa na janela de diálogo; por exemplo, **Alison Parker**.
 1. Clique em **OK**.
 1. Clique novamente em **Meu perfil**. O formulário será atualizado com os detalhes de Alison.
 
-   ![profilealison](assets/profilealison.png)
+   ![Exemplo de perfil de Alison](assets/profilealison.png)
 
 1. Agora você pode usar **Editar perfil** ou **Alterar senha** para atualizar os detalhes.
 
@@ -136,11 +137,11 @@ Para ver os detalhes do seu perfil, clique em **Meu perfil** no canto superior d
 
    Na próxima vez que visualizar um perfil, você poderá selecionar uma cor favorita:
 
-   ![aparkerfavcolor](assets/aparkerfavcolour.png)
+   ![Campo de amostra de cor favorita de Alison Parker](assets/aparkerfavcolour.png)
 
    O campo será salvo sob o **perfil** seção da conta de usuário relevante:
 
-   ![aparkercrxdelite](assets/aparkercrxdelite.png)
+   ![Dados de Alison Parker no CRXDE](assets/aparkercrxdelite.png)
 
 ## Estados do perfil {#profile-states}
 
@@ -188,7 +189,7 @@ Os perfis são armazenados no repositório de conteúdo como parte da[conta de u
 
 O perfil pode ser encontrado em `/home/users/geometrixx`:
 
-![chlimage_1-138](assets/chlimage_1-138.png)
+![Perfis como vistos no CRXDE](assets/chlimage_1-138.png)
 
 Em uma instalação padrão (autor ou publicação), todos têm acesso de leitura a todas as informações de perfil de todos os usuários. todo mundo é &quot;*Grupo interno que contém automaticamente todos os usuários e grupos existentes. A lista de membros não pode ser editada*&quot;.
 
@@ -205,7 +206,7 @@ Se esse acesso não for adequado para a sua instalação, você poderá alterar 
 
 Isso pode ser feito usando o **[Controle de acesso](/help/sites-administering/user-group-ac-admin.md#access-right-management)** guia:
 
-![aclmanager](assets/aclmanager.png)
+![Gerenciando ACLs no CRXDE](assets/aclmanager.png)
 
 ## Componentes do perfil {#profile-components}
 
@@ -220,22 +221,22 @@ Esse componente fornece dois campos para:
 
 Com as configurações padrão, o componente será exibido da seguinte maneira:
 
-![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png)
+![Caixa de diálogo Verificar senha](assets/dc_profiles_checkedpassword.png)
 
 ### Foto de avatar do perfil  {#profile-avatar-photo}
 
 Esse componente fornece ao usuário um mecanismo para selecionar e fazer upload de um arquivo de foto de avatar.
 
-![dc_profiles_avatarphoto](assets/dc_profiles_avatarphoto.png)
+![Seletor de avatar](assets/dc_profiles_avatarphoto.png)
 
 ### Nome detalhado de perfil {#profile-detailed-name}
 
 Esse componente permite que o usuário insira um nome detalhado.
 
-![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
+![Caixa de diálogo de nome detalhado](assets/dc_profiles_detailedname.png)
 
 ### Gênero do perfil {#profile-gender}
 
 Esse componente permite que o usuário insira seu gênero.
 
-![dc_profiles_gender](assets/dc_profiles_gender.png)
+![Seletor de gênero](assets/dc_profiles_gender.png)

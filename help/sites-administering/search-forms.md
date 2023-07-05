@@ -6,12 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1a3e0f90bbe133a7b0fc383b997e69b10ca82478
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2067'
 ht-degree: 12%
 
 ---
+
 
 # Configuração de formulários de pesquisa{#configuring-search-forms}
 
@@ -29,7 +30,7 @@ Você pode [configurar os formulários de pesquisa](#configuring-your-search-for
 
 Ao acessar esse console pela primeira vez, você pode ver que todas as configurações têm um símbolo de cadeado. Isso indica que a configuração apropriada é a configuração padrão (pronta para uso) e não pode ser excluída. Depois de personalizar a configuração, o bloqueio desaparecerá, a menos que você [excluir sua configuração personalizada](#deleting-a-configuration-to-reinstate-the-default), nesse caso, o padrão (e o indicador de cadeado) será reinstalado.
 
-![chlimage_1-374](assets/chlimage_1-374.png)
+![Janela Pesquisar formulários](assets/chlimage_1-374.png)
 
 ## Configurações {#configurations}
 
@@ -37,63 +38,63 @@ As configurações padrão disponíveis são:
 
 * **Editor de páginas (Pesquisa de documentos):**
 
-   Essa configuração define as opções disponíveis ao pesquisar por um documento no navegador de ativos (ao editar uma página).
+  Essa configuração define as opções disponíveis ao pesquisar por um documento no navegador de ativos (ao editar uma página).
 
 * **Editor de páginas (Pesquisa de imagens):**
 
-   Essa configuração define as opções disponíveis ao pesquisar imagens no navegador de ativos (ao editar uma página).
+  Essa configuração define as opções disponíveis ao pesquisar imagens no navegador de ativos (ao editar uma página).
 
 * **Editor de páginas (Pesquisa de manuscrito):**
 
-   Essa configuração define as opções disponíveis ao pesquisar manuscritos no navegador de ativos (ao editar uma página).
+  Essa configuração define as opções disponíveis ao pesquisar manuscritos no navegador de ativos (ao editar uma página).
 
 * **Editor de páginas (Pesquisa de páginas):**
 
-   Essa configuração define as opções disponíveis ao pesquisar páginas no navegador de ativos (ao editar uma página).
+  Essa configuração define as opções disponíveis ao pesquisar páginas no navegador de ativos (ao editar uma página).
 
 * **Editor de páginas (Pesquisa de parágrafos):**
 
-   Essa configuração define as opções disponíveis ao pesquisar parágrafos no navegador de ativos (ao editar uma página).
+  Essa configuração define as opções disponíveis ao pesquisar parágrafos no navegador de ativos (ao editar uma página).
 
 * **Editor de páginas (Pesquisa de produto):**
 
-   Essa configuração define as opções disponíveis ao pesquisar produtos no navegador de ativos (ao editar uma página).
+  Essa configuração define as opções disponíveis ao pesquisar produtos no navegador de ativos (ao editar uma página).
 
 * **Editor de páginas (Dynamic Media Classic) [anteriormente Scene7] search)**:
 
-   Essa configuração define as opções disponíveis ao pesquisar recursos do Scene7 no navegador de ativos (ao editar uma página).
+  Essa configuração define as opções disponíveis ao pesquisar recursos do Scene7 no navegador de ativos (ao editar uma página).
 
 * **Trilho de pesquisa do administrador de sites**:
 
-   Essa configuração define as opções de pesquisa disponíveis para o usuário ao usar o painel de pesquisa do console Sites.
+  Essa configuração define as opções de pesquisa disponíveis para o usuário ao usar o painel de pesquisa do console Sites.
 
 * **Editor de página (Pesquisa de vídeos):**
 
-   Essa configuração define as opções disponíveis ao pesquisar vídeos no navegador de ativos (ao editar uma página).
+  Essa configuração define as opções disponíveis ao pesquisar vídeos no navegador de ativos (ao editar uma página).
 
 * **Trilho de pesquisa do administrador de ativos:**
 
-   Essa configuração define as opções de pesquisa disponíveis para o usuário ao usar o console de Ativos.
+  Essa configuração define as opções de pesquisa disponíveis para o usuário ao usar o console de Ativos.
 
 * **Painel de pesquisa do administrador de catálogos:**
 
-   Essa configuração define as opções de pesquisa disponíveis para o usuário ao pesquisar um catálogo de comércio.
+  Essa configuração define as opções de pesquisa disponíveis para o usuário ao pesquisar um catálogo de comércio.
 
 * **Painel de pesquisa do administrador de pedidos:**
 
-   Essa configuração define as opções de pesquisa disponíveis para o usuário ao pesquisar pedidos de comércio.
+  Essa configuração define as opções de pesquisa disponíveis para o usuário ao pesquisar pedidos de comércio.
 
 * **Painel de pesquisa do administrador das coleções do produto:**
 
-   Essa configuração define as opções de pesquisa disponíveis para o usuário ao pesquisar coleções de produtos comerciais.
+  Essa configuração define as opções de pesquisa disponíveis para o usuário ao pesquisar coleções de produtos comerciais.
 
 * **Painel de pesquisa do administrador de produtos:**
 
-   Essa configuração define as opções de pesquisa disponíveis para o usuário ao pesquisar produtos comerciais.
+  Essa configuração define as opções de pesquisa disponíveis para o usuário ao pesquisar produtos comerciais.
 
 * **Trilho de pesquisa do administrador de projetos:**
 
-   Essa configuração define as opções de pesquisa disponíveis para o usuário ao pesquisar projetos.
+  Essa configuração define as opções de pesquisa disponíveis para o usuário ao pesquisar projetos.
 
 ## Predicados e suas configurações {#predicates-and-their-settings}
 
@@ -329,11 +330,11 @@ Os seguintes predicados estão disponíveis, dependendo da configuração:
 >[!NOTE]
 >
 >* Os predicados de pesquisa comuns são definidos em:
-   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >* Os predicados de pesquisa relacionados somente ao siteadmin (interface clássica) estão localizados em:
-   >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
-   >   * Eles estão obsoletos e só estão disponíveis para compatibilidade com versões anteriores.
+>  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+>   * Eles estão obsoletos e só estão disponíveis para compatibilidade com versões anteriores.
 >
 >Essas informações são somente para referência. Você não deve fazer alterações no `/libs`.
 
@@ -343,47 +344,46 @@ Dependendo do predicado, uma seleção de configurações está disponível para
 
 * **Rótulo do campo**
 
-   O rótulo que aparecerá como o cabeçalho recolhível ou como o rótulo do campo do predicado.
+  O rótulo que aparecerá como o cabeçalho recolhível ou como o rótulo do campo do predicado.
 
 * **Descrição**
 
-   Detalhes descritivos do usuário.
+  Detalhes descritivos do usuário.
 
 * **Espaço reservado**
 
-   Texto vazio ou o marcador de posição do predicado, caso nenhum texto de filtragem seja inserido.
+  Texto vazio ou o marcador de posição do predicado, caso nenhum texto de filtragem seja inserido.
 
 * **Nome da Propriedade**
 
-   A propriedade a ser pesquisada. Usa um caminho relativo e os curingas `*/*/*` especifique a profundidade da propriedade em relação à variável `jcr:content` (cada asterisco representa um nível de nó).
+  A propriedade a ser pesquisada. Usa um caminho relativo e os curingas `*/*/*` especifique a profundidade da propriedade em relação à variável `jcr:content` (cada asterisco representa um nível de nó).
 
-   Se quiser pesquisar somente em um nó secundário de primeiro nível do recurso que tenha o `x` propriedade no `jcr:content` uso do nó `*/jcr:content/x`
+  Se quiser pesquisar somente em um nó secundário de primeiro nível do recurso que tenha o `x` propriedade no `jcr:content` uso do nó `*/jcr:content/x`
 
 * **Profundidade da propriedade**
 
-   A profundidade máxima para pesquisar essa propriedade nos recursos. Assim, uma pesquisa nessa propriedade pode ser executada em um recurso e em filhos recursivos até que o nível dos filhos seja igual à profundidade especificada.
+  A profundidade máxima para pesquisar essa propriedade nos recursos. Assim, uma pesquisa nessa propriedade pode ser executada em um recurso e em filhos recursivos até que o nível dos filhos seja igual à profundidade especificada.
 
 * **Valor da propriedade**
 
-   O valor da propriedade como uma cadeia de caracteres absoluta ou como uma linguagem de expressão; por exemplo, `cq:Page` ou
+  O valor da propriedade como uma cadeia de caracteres absoluta ou como uma linguagem de expressão; por exemplo, `cq:Page` ou
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
+  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **Texto do intervalo**
 
-   O rótulo do campo de intervalo na variável **Intervalo de datas** predicado.
+  O rótulo do campo de intervalo na variável **Intervalo de datas** predicado.
 
 * **Caminho de opção**
 
-   O usuário pode selecionar o caminho usando o Navegador de caminho na guia de configuração do predicado. Depois de selecionar o **+** ícone é usado para adicionar a seleção à lista de opções válidas (em seguida, o **-** ícone a ser removido, se necessário).
+  O usuário pode selecionar o caminho usando o Navegador de caminho na guia de configuração do predicado. Depois de selecionar o **+** ícone é usado para adicionar a seleção à lista de opções válidas (em seguida, o **-** ícone a ser removido, se necessário).
 
-   As opções são nós de conteúdo criados pelo usuário, com a seguinte estrutura:
+  As opções são nós de conteúdo criados pelo usuário, com a seguinte estrutura:
 
-   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
+  `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **Caminho do nó de opções**
-Efetivamente, o mesmo que a 
-**Caminho de opções**, somente no campo de predicado comum, o outro é específico para ativos.
+Efetivamente, o mesmo que a **Caminho de opções**, somente no campo de predicado comum, o outro é específico para ativos.
 
 * **Seleção única**
 Se marcadas, as opções são renderizadas como caixas de seleção que permitem apenas uma única seleção. Se for marcada por engano, uma caixa de seleção pode ser desmarcada.
@@ -411,7 +411,6 @@ Os rótulos das caixas de seleção Publicar e Live Copy para o predicado espec�
    >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
 
-
 ### Adicionar/editar um campo de predicado e definir configurações de campo {#add-edit-a-predicate-field-and-define-field-settings}
 
 É possível adicionar ou editar campos e definir/atualizar suas configurações:
@@ -419,20 +418,21 @@ Os rótulos das caixas de seleção Publicar e Live Copy para o predicado espec�
 1. [Abra a configuração personalizada](#creating-opening-a-customized-configuration) para atualização.
 1. Se quiser adicionar um novo campo, abra o **Selecionar predicado** e arraste o predicado necessário para o local desejado. Por exemplo, a variável **Predicado do intervalo de datas**:
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![Edição de um formulário de pesquisa](assets/chlimage_1-375.png)
 
 1. Dependendo se:
 
    * Você está adicionando um novo campo:
 
-      Depois de adicionar o predicado, a variável **Configurações** será aberta e mostrará as propriedades que podem ser definidas.
+     Depois de adicionar o predicado, a variável **Configurações** será aberta e mostrará as propriedades que podem ser definidas.
 
    * Você deseja atualizar um predicado existente:
 
-      Selecione o campo de predicado (à direita) e abra o **Configurações** guia.
+     Selecione o campo de predicado (à direita) e abra o **Configurações** guia.
+
    Por exemplo, as configurações para o **Predicado do intervalo de datas**:
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![Propriedades do predicado de intervalo de datas](assets/chlimage_1-376.png)
 
 1. Faça as alterações necessárias e confirme com **Concluído**.
 
@@ -440,11 +440,11 @@ Os rótulos das caixas de seleção Publicar e Live Copy para o predicado espec�
 
 1. Selecione o ícone Visualizar:
 
-   ![](do-not-localize/chlimage_1-31.png)
+   ![Ícone Visualizar](do-not-localize/chlimage_1-31.png)
 
 1. Isso exibirá os formulários de pesquisa como eles serão exibidos (totalmente expandidos) na coluna Pesquisa do console apropriado.
 
-   ![chlimage_1-377](assets/chlimage_1-377.png)
+   ![Pré-visualização do formulário de pesquisa](assets/chlimage_1-377.png)
 
 1. **Fechar** Visualize para retornar e concluir a configuração.
 
@@ -453,7 +453,7 @@ Os rótulos das caixas de seleção Publicar e Live Copy para o predicado espec�
 1. [Abra a configuração personalizada](#creating-opening-a-customized-configuration) para atualização.
 1. Selecione o campo de predicado (à direita), abra o **Configurações** e selecione a guia **Excluir** (canto inferior esquerdo).
 
-   ![](do-not-localize/chlimage_1-32.png)
+   ![Ícone Excluir](do-not-localize/chlimage_1-32.png)
 
 1. Uma caixa de diálogo solicitará a confirmação da ação de exclusão.
 
@@ -471,7 +471,7 @@ A exclusão de uma configuração personalizada é feita no console:
 
 1. Selecione a configuração necessária (por exemplo, **Editor de páginas (Pesquisa de parágrafos)**) e, em seguida, o **Excluir** ícone na barra de ferramentas:
 
-   ![chlimage_1-378](assets/chlimage_1-378.png)
+   ![Exclusão de um formulário](assets/chlimage_1-378.png)
 
 1. A configuração personalizada será excluída e o padrão será restaurado (isso é indicado pelo reaparecimento do símbolo de cadeado no console).
 
@@ -490,7 +490,7 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
    * `jcr:title` - o rótulo do campo a ser exibido no painel de pesquisa
    * `value` - o valor da propriedade a ser pesquisada em
 
-   ![chlimage_1-379](assets/chlimage_1-379.png)
+   ![Adição de opções no CRXDE](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >
@@ -504,7 +504,6 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Fazer alterações em `/apps.`
 
-
 1. Abra o **Pesquisar no Forms** e selecione a configuração que deseja atualizar. Por exemplo, **Trilho de pesquisa do administrador de sites**.
 
    Clique/toque no ícone **Editar formulários de pesquisa** ícone.
@@ -514,21 +513,22 @@ O exemplo a seguir (para pesquisar de acordo com o modelo usado para criar uma p
 
    * **Nome da Propriedade**
 
-      Específica a propriedade do nó a ser pesquisada nos nós de destino. Por exemplo:
+     Específica a propriedade do nó a ser pesquisada nos nós de destino. Por exemplo:
 
-      `jcr:content/cq:template`
+     `jcr:content/cq:template`
 
    * **Caminho do nó de opção**
 
-      Selecione o caminho para onde as opções são mantidas. Por exemplo:
+     Selecione o caminho para onde as opções são mantidas. Por exemplo:
 
-      `/apps/cq/gui/content/common/options/predicates/templatetype`
-   ![chlimage_1-380](assets/chlimage_1-380.png)
+     `/apps/cq/gui/content/common/options/predicates/templatetype`
+
+   ![Adição do caminho da propriedade](assets/chlimage_1-380.png)
 
 1. Selecionar **Concluído** para salvar sua configuração.
 1. Navegue até o console apropriado (neste exemplo, **Sites**) e abra a guia **Pesquisar** ferroviário. Os formulários de pesquisa recém-definidos, juntamente com as várias opções, estarão visíveis. Selecione a opção necessária para ver os resultados da pesquisa:
 
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![Os resultados finais](assets/chlimage_1-381.png)
 
 ## Permissões de usuário {#user-permissions}
 

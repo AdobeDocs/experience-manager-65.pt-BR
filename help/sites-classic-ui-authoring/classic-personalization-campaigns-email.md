@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1770'
 ht-degree: 1%
 
 ---
+
 
 # Marketing por email{#e-mail-marketing}
 
@@ -56,13 +57,13 @@ Este documento descreve as noções básicas para a criação de boletins inform
 
 1. Selecione a exibição de lista usando o ícone:
 
-   ![Exibição de lista](do-not-localize/mcm_icon_listview-1.png)
+   ![Ícone Exibição de lista](do-not-localize/mcm_icon_listview-1.png)
 
 1. Clique em **Novo...**
 
    Você pode especificar o **Título**, **Nome** e o tipo de experiência a ser criada; neste caso, Informativo.
 
-   ![mcm_createnewsletter](assets/mcm_createnewsletter.png)
+   ![Caixa de diálogo Criar experiência](assets/mcm_createnewsletter.png)
 
 1. Clique em **Criar**.
 
@@ -70,7 +71,7 @@ Este documento descreve as noções básicas para a criação de boletins inform
 
    A variável **Lista de destinatários padrão** é um campo obrigatório, pois forma o ponto de contato para o informativo (consulte [Trabalhar com listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) para obter mais informações sobre listas).
 
-   ![mcm_newnewsletterdialog](assets/mcm_newnewsletterdialog.png)
+   ![Caixa de diálogo Propriedades da página](assets/mcm_newnewsletterdialog.png)
 
    * **Do nome**
 Nome que deve aparecer como remetente do informativo.
@@ -110,7 +111,7 @@ Você pode adicionar conteúdo, incluindo conteúdo dinâmico, ao seu informativ
    >
    >Personalize informativos usando variáveis. No boletim informativo do Geometrixx, as variáveis estão disponíveis no componente de Texto. Os valores das variáveis são herdados das informações no perfil do usuário.
 
-   ![mcm_newsletter_content](assets/mcm_newsletter_content.png)
+   ![Editar conteúdo do informativo](assets/mcm_newsletter_content.png)
 
 1. Para inserir variáveis, selecione a variável na lista e clique em **Inserir**. As variáveis são preenchidas no Perfil.
 
@@ -128,13 +129,13 @@ Para personalizar um informativo e simular como ele será:
 
 1. Coloque o cursor onde deseja que a variável apareça, selecione uma variável na lista suspensa e clique em **Inserir**. Faça isso para quantas variáveis forem necessárias e clique em **OK**.
 
-   ![mcm_newsletter_variables](assets/mcm_newsletter_variables.png)
+   ![Adição de variáveis](assets/mcm_newsletter_variables.png)
 
 1. Para simular a aparência da variável quando enviada, pressione CTRL+ALT+c para abrir o contexto do cliente e selecione **Carregar**. Selecione o usuário na lista cujo perfil você deseja carregar e clique em **OK**.
 
    As informações do perfil carregado preencheram as variáveis.
 
-   ![mc_newsletter_testvariables](assets/mc_newsletter_testvariables.png)
+   ![Teste de variáveis](assets/mc_newsletter_testvariables.png)
 
 ## Testando informativos em diferentes clientes de e-mail {#testing-newsletters-in-different-e-mail-clients}
 
@@ -161,11 +162,11 @@ Para alternar entre clientes, clique no ícone correspondente para exibir o info
 
 1. Clique em um cliente de e-mail na barra superior para ver como o informativo seria exibido nesse cliente.
 
-   ![chlimage_1-119](assets/chlimage_1-119.png)
+   ![Alternar clientes de email](assets/chlimage_1-119.png)
 
 1. Repita esta etapa para qualquer cliente de e-mail adicional que desejar ver.
 
-   ![chlimage_1-120](assets/chlimage_1-120.png)
+   ![Alteração de clientes de email](assets/chlimage_1-120.png)
 
 ## Personalizar configurações do informativo {#customizing-newsletter-settings}
 
@@ -178,11 +179,11 @@ Para personalizar as configurações do informativo:
 
 1. No MCM, abra o informativo cujas configurações você deseja personalizar.
 
-   ![mcm_newsletter_open](assets/mcm_newsletter_open.png)
+   ![Abrir um informativo](assets/mcm_newsletter_open.png)
 
 1. Na parte superior do informativo, clique em **Configurações**.
 
-   ![mcm_newsletter_settings](assets/mcm_newsletter_settings.png)
+   ![Editar configurações do informativo](assets/mcm_newsletter_settings.png)
 1. Insira o **De** endereço de email
 
 1. Modifique o **Assunto** do e-mail, se necessário.
@@ -213,7 +214,7 @@ Para enviar boletins informativos de testes de voo:
 
 1. Na parte superior do informativo, clique em **Teste** para testar antes de enviar.
 
-   ![mcm_newsletter_testsettings](assets/mcm_newsletter_testsettings.png)
+   ![Configurações para testar um informativo](assets/mcm_newsletter_testsettings.png)
 
 1. Insira o endereço de email de teste para onde deseja enviar o informativo e clique em **Enviar**. Se quiser alterar o perfil, carregue outro perfil no contexto do cliente. Para fazer isso, pressione CTRL+ALT+c e selecione Carregar e carregue um perfil.
 
@@ -253,11 +254,11 @@ Para enviar um informativo de dentro da campanha:
 
 1. Na lista do destinatário, selecione a lista que deseja receber o informativo e clique em **Próxima**.
 
-   ![mcm_newslettersend](assets/mcm_newslettersend.png)
+   ![Envio de informativo](assets/mcm_newslettersend.png)
 
 1. A conclusão da configuração foi confirmada. Clique em **Enviar** para enviar o informativo.
 
-   ![mcm_newslettersendconfirm](assets/mcm_newslettersendconfirm.png)
+   ![Confirmação de envio do informativo](assets/mcm_newslettersendconfirm.png)
 
    >[!NOTE]
    >
@@ -277,15 +278,15 @@ Para enviar um informativo de uma lista:
 
 1. No **Ferramentas** selecione **Enviar informativo**. A variável **Enviar informativo** é aberta.
 
-   ![mcm_newslettersendfromlist](assets/mcm_newslettersendfromlist.png)
+   ![Console de informativo](assets/mcm_newslettersendfromlist.png)
 
 1. No **Informativo** selecione o informativo que deseja enviar e clique em **Próxima**.
 
-   ![mcm_newslettersenddialog](assets/mcm_newslettersenddialog.png)
+   ![Caixa de diálogo Enviar informativo](assets/mcm_newslettersenddialog.png)
 
 1. A conclusão da configuração foi confirmada. Clique em **Enviar** para enviar o informativo selecionado para a lista especificada de clientes potenciais.
 
-   ![mcm_newslettersenddialog_confirmation](assets/mcm_newslettersenddialog_confirmation.png)
+   ![Enviar confirmação](assets/mcm_newslettersenddialog_confirmation.png)
 
    Seu informativo é enviado aos destinatários selecionados.
 
@@ -299,6 +300,6 @@ Para assinar um boletim informativo (usando o site do Geometrixx como exemplo):
 
 1. Clique em **Sites** e navegue até a Geometrixx **Barra de ferramentas** e abra-o.
 
-   ![chlimage_1-121](assets/chlimage_1-121.png)
+   ![Exemplo de assinatura](assets/chlimage_1-121.png)
 
 1. No informativo do Geometrixx **Inscrever-se** digite seu endereço de e-mail e clique em **Inscrever-se**. Agora você está inscrito no informativo.

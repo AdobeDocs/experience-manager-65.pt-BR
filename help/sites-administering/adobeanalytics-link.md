@@ -10,12 +10,13 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 5e94a0cdb363e95ce398ea4ed0bce4a6aba9e7ce
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1612'
 ht-degree: 1%
 
 ---
+
 
 # Configuração do rastreamento de links para o Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
@@ -28,7 +29,7 @@ Quando os usuários clicam em links nas páginas do seu site, você pode captura
 1. Usar **Exibir configurações**, abra a estrutura necessária do Adobe Analytics.
 1. Expanda a **Configuração de rastreamento de link** e configure conforme necessário (esta página fornece mais detalhes):
 
-   ![aa-08](assets/aa-08.png)
+   ![Estrutura do Analytics](assets/aa-08.png)
 
 ## Rastreamento de downloads de arquivos {#tracking-file-downloads}
 
@@ -80,19 +81,19 @@ Ativa o rastreamento de links externos.
 * **Filtros externos**
 (Opcional) Define filtros para corresponder aos URLs externos dos destinos de links. Quando os destinos do link correspondem ao filtro, o link é rastreado. Os filtros externos são úteis para rastrear apenas alguns dos links externos nas suas páginas.
 
-   Para especificar os links externos a serem rastreados, digite todo o URL ou parte do destino do link. Separe vários filtros com uma vírgula. Coloque os literais de string entre aspas simples. Nenhum valor (o valor padrão de `''`, duas aspas simples) faz com que todos os links externos sejam rastreados.
+  Para especificar os links externos a serem rastreados, digite todo o URL ou parte do destino do link. Separe vários filtros com uma vírgula. Coloque os literais de string entre aspas simples. Nenhum valor (o valor padrão de `''`, duas aspas simples) faz com que todos os links externos sejam rastreados.
 
 * **Filtros internos**
 Define filtros para corresponder aos URLs de links internos. Quando o link é direcionado a URLs que correspondem a esse filtro, o link não é rastreado. O valor padrão é um comando javascript que retorna o nome do host do URL do endereço da janela atual.
 
-   Para especificar os links internos que não são rastreados, digite todo o URL interno do destino do link ou parte dele. Separe vários filtros com uma vírgula. Coloque os literais de string entre aspas simples.
+  Para especificar os links internos que não são rastreados, digite todo o URL interno do destino do link ou parte dele. Separe vários filtros com uma vírgula. Coloque os literais de string entre aspas simples.
 
-   O valor padrão é `'javascript:,'+window.location.hostname`
+  O valor padrão é `'javascript:,'+window.location.hostname`
 
 * **Deixar sequência de consulta**
 Inclui parâmetros de URL ao avaliar correspondências com filtros internos e externos.
 
-   Permite incluir parâmetros de URL ao avaliar URLs de destino de link em relação a filtros externos e internos.
+  Permite incluir parâmetros de URL ao avaliar URLs de destino de link em relação a filtros externos e internos.
 
 As propriedades de rastreamento de link externo são implementadas como código no `analytics.sitecatalyst.js` arquivo gerado para uma página. O código de exemplo a seguir é gerado para uma página associada a uma estrutura que ativou o rastreamento de links externos com a seguinte configuração:
 
@@ -123,14 +124,14 @@ Propriedades para enviar dados variáveis com cliques em links:
 * **Vincular eventos de rastreamento**
 Insira as variáveis de evento do Adobe Analytics que deseja usar para contar cliques em links.
 
-   Separe vários nomes de variáveis com uma vírgula.
+  Separe vários nomes de variáveis com uma vírgula.
 
-   O valor padrão de `None` não causa nenhum rastreamento de evento.
+  O valor padrão de `None` não causa nenhum rastreamento de evento.
 
 * **Vars de rastreamento de link**
 Insira as variáveis do Adobe Analytics que você deseja enviar para o Adobe Analytics quando os links forem clicados. Separe vários nomes de variáveis com uma vírgula.
 
-   O valor padrão de `None` faz com que nenhum dado variável seja enviado.
+  O valor padrão de `None` faz com que nenhum dado variável seja enviado.
 
 Quando você especifica os eventos e as variáveis a serem enviados, a configuração é implementada como código na `analytics.sitecatalyst.js` arquivo gerado para uma página. O código de exemplo a seguir é gerado para uma página quando a estrutura rastreia a variável `event10` e o evento `prop4` propriedade:
 
@@ -236,7 +237,7 @@ Este exemplo ilustra como o mapeamento funciona no contexto do rastreamento e do
 
 A chamada feita terá esta aparência quando visualizada com o Adobe Marketing Cloud Debugger:
 
-![aa-leavequerysearch-blank](assets/aa-leavequerysearch-blank.png)
+![Adobe Marketing Cloud Debugger](assets/aa-leavequerysearch-blank.png)
 
 >[!NOTE]
 >
@@ -250,7 +251,7 @@ A chamada feita terá esta aparência quando visualizada com o Adobe Marketing C
 
 Os detalhes da chamada exibidos no Adobe Marketing Cloud Debugger são semelhantes ao seguinte exemplo:
 
-![aa-leavequerysearch-ative](assets/aa-leavequerysearch-active.png)
+![Adobe Marketing Cloud Debugger novamente](assets/aa-leavequerysearch-active.png)
 
 >[!NOTE]
 >
@@ -323,7 +324,7 @@ Use o procedimento a seguir para configurar o rastreamento de links para um **Te
 
 1. Selecione o texto que deseja usar como hipertexto e clique no botão Hiperlink.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Ícone de link](do-not-localize/chlimage_1.png)
 
 1. Adicione o URL de destino na caixa Link para e expanda a área Rastreamento de link.
 
@@ -333,7 +334,7 @@ Use o procedimento a seguir para configurar o rastreamento de links para um **Te
    >
    >Ele só será ativado quando você selecionar um link válido no RTE.
 
-   ![aa-17](assets/aa-17.png)
+   ![Ativação do rastreamento de links](assets/aa-17.png)
 
 1. Ativar **Rastreamento de link personalizado** para substituir a configuração de rastreamento de link da estrutura do Adobe Analytics e ativar o rastreamento de link para o link atual.
 

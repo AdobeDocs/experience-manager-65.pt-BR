@@ -10,12 +10,13 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 93dfac20bbb761abd580a004741ade20dc4ee2fe
 workflow-type: tm+mt
-source-wordcount: '2026'
+source-wordcount: '2068'
 ht-degree: 12%
 
 ---
+
 
 # Configuração da notificação por e-mail{#configuring-email-notification}
 
@@ -54,7 +55,7 @@ Para ajudar você a depurar um problema com o **Serviço de email Day CQ**, voc�
 
 A configuração tem a seguinte aparência no console da Web:
 
-![chlimage_1-276](assets/chlimage_1-276.png)
+![A janela de configuração do OSGi do Day CQ Mail Service](assets/chlimage_1-276.png)
 
 ## Configuração do canal de notificação por email {#configuring-the-email-notification-channel}
 
@@ -88,7 +89,7 @@ Ao receber notificações por email do fluxo de trabalho, o endereço de email d
 
 A configuração padrão tem a seguinte aparência no Console da Web:
 
-![chlimage_1-277](assets/chlimage_1-277.png)
+![A janela de configuração do Day CQ Workflow Email Notification Service](assets/chlimage_1-277.png)
 
 ### Modelos de email para notificação de página {#email-templates-for-page-notification}
 
@@ -233,7 +234,7 @@ As seguintes variáveis podem ser usadas no template de email:
 
 * `${payload.type}`, o tipo de conteúdo
 * `${payload.path}`, caminho da carga útil
-* `${host.prefix}`, prefixo de host, por exemplo: http://localhost:4502
+* `${host.prefix}`, prefixo de host, por exemplo: `http://localhost:4502`
 
 ### Adicionando um modelo de email para um novo idioma {#adding-an-email-template-for-a-new-language}
 
@@ -310,11 +311,11 @@ Em seguida, configure o provedor SMTP OAuth seguindo o procedimento abaixo:
    * Expiração do token de atualização: nunca
 1. Clique em **Salvar**.
 
-<!-- clarify refresh token expiry, currrently not present in the UI -->
+<!-- clarify refresh token expiry, currently not present in the UI -->
 
 Depois de definidas, as configurações devem ter esta aparência:
 
-![provedor smtp oauth](assets/oauth-smtpprov2.png)
+![A janela de configuração do Provedor CQ Mailer SMTP Oauth2](assets/oauth-smtpprov2.png)
 
 Agora, ative os componentes OAuth. Você pode fazer isso ao:
 
@@ -324,7 +325,7 @@ Agora, ative os componentes OAuth. Você pode fazer isso ao:
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Pressione o ícone Reproduzir à esquerda dos componentes
 
-   ![componentes](assets/oauth-components-play.png)
+   ![Lista de componentes que mostram o OAuthCodeGenerateServlet e o OAuthCodeAccessTokenGenerator](assets/oauth-components-play.png)
 
 Por fim, confirme a configuração ao:
 
@@ -342,7 +343,7 @@ Por fim, confirme a configuração ao:
 1. Pesquise por **Azure Active Directory** na barra de pesquisa e clique no resultado. Como alternativa, você pode navegar diretamente para [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Clique em **Registro do aplicativo** - **Novo registro**
 
-   ![Configuração do Microsoft Outlook](assets/oauth-outlook1.png)
+   ![O novo botão de registro ao configurar o Microsoft Outlook](assets/oauth-outlook1.png)
 
 1. Preencha as informações de acordo com suas necessidades e clique em **Registrar**
 1. Acesse o aplicativo recém-criado e selecione **Permissões de API**
@@ -397,7 +398,7 @@ Em seguida, integre suas configurações do OAuth2 com o AEM:
 
 Depois de definidas, as configurações devem ter esta aparência:
 
-![Visualização das configurações no lado do AEM](assets/oauth-outlook-smptconfig.png)
+![A configuração OAuth2 do SMTP Mailer do CQ concluída](assets/oauth-outlook-smptconfig.png)
 
 Agora, ative os componentes OAuth. Você pode fazer isso ao:
 
@@ -407,7 +408,7 @@ Agora, ative os componentes OAuth. Você pode fazer isso ao:
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Pressione o ícone Reproduzir à esquerda dos componentes
 
-![components2](assets/oauth-components-play.png)
+![Um trecho da lista de componentes que contém OAuthCodeGenerateServlet e OAuthCodeAccessTokenGenerator](assets/oauth-components-play.png)
 
 Por fim, confirme a configuração ao:
 

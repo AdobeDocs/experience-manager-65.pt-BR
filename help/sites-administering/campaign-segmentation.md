@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8f98d018518f2491f29211552863d3fa005cc0b7
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 18%
+source-wordcount: '1140'
+ht-degree: 17%
 
 ---
+
 
 # Configuração da segmentação {#configuring-segmentation}
 
@@ -34,7 +35,7 @@ O AEM permite criar e atualizar facilmente segmentos, teasers e campanhas. Tamb�
 
 A variável **Editor de segmentos** O permite definir facilmente um segmento:
 
-![](assets/segmenteditor.png)
+![A janela Editor de segmentos](assets/segmenteditor.png)
 
 Você pode **Editar** cada segmento para especificar um **Título**, **Descrição** e **Aumentar** fator. Usando o sidekick você pode adicionar **E** e **OU** contêineres para definir o **Lógica do segmento** e, em seguida, adicione o **Características do segmento** para definir os critérios de seleção.
 
@@ -130,17 +131,17 @@ Para definir seu novo segmento:
 1. Criar um [nova página](/help/sites-authoring/editing-content.md#creatinganewpage) usando o **Segmento** modelo.
 1. Abra a nova página para ver o editor de segmentos:
 
-   ![](assets/screen_shot_2012-02-02at101726am.png)
+   ![A primeira etapa da criação de um novo segmento no Editor de segmentos](assets/screen_shot_2012-02-02at101726am.png)
 
 1. Use o sidekick ou o menu de contexto (normalmente clique com o botão direito do mouse e selecione **Novo...** para abrir a janela Inserir novo componente) para encontrar a característica do segmento que você precisa. Em seguida, arraste-o para a **Editor de segmentos** ele aparecerá no padrão **E** recipiente.
 1. Clique duas vezes na nova característica para editar os parâmetros específicos; por exemplo, a posição do mouse:
 
-   ![](assets/screen_shot_2012-02-02at103135am.png)
+   ![Edição de um componente no Editor de segmentos](assets/screen_shot_2012-02-02at103135am.png)
 
 1. Clique em **OK** para salvar suas definições:
 1. Você pode **Editar** a definição de segmento para fornecer uma **Título**, **Descrição** e **[Aumentar](#boost-factor)** fator:
 
-   ![](assets/screen_shot_2012-02-02at103547am.png)
+   ![Editar as configurações de segmento no Editor de segmentos](assets/screen_shot_2012-02-02at103547am.png)
 
 1. Adicione mais características, se necessário. É possível formular expressões boolean usando o **E Contêiner** e **Contêiner OR** componentes encontrados em **Lógica do segmento**. Com o editor de segmentos, é possível excluir características ou contêineres que não são mais necessários ou arrastá-los para novas posições na instrução.
 
@@ -161,7 +162,7 @@ Feminino e entre 16 e 62 anos
 
 Como o operador principal é OU, você precisa começar com um **Contêiner OR**. Dentro deste, você tem duas instruções AND. Para cada uma delas, você precisa de uma **E Contêiner**, em que você pode adicionar as características individuais.
 
-![](assets/screen_shot_2012-02-02at105145am.png)
+![Um exemplo de operadores AND e OR no Editor de segmentos](assets/screen_shot_2012-02-02at105145am.png)
 
 ## Testar a aplicação de um segmento {#testing-the-application-of-a-segment}
 
@@ -174,11 +175,11 @@ Depois que o segmento é definido, os resultados potenciais podem ser testados c
 
 Por exemplo, uma definição de segmento simples pode ser baseada na idade e no gênero do usuário. O carregamento de um perfil específico mostra que o segmento foi resolvido com êxito:
 
-![](assets/screen_shot_2012-02-02at105926am.png)
+![Usar a janela Contexto do cliente para testar uma operação de segmentação AND](assets/screen_shot_2012-02-02at105926am.png)
 
 Ou não:
 
-![](assets/screen_shot_2012-02-02at110019am.png)
+![Usar a janela Contexto do cliente para testar uma operação de NÃO segmentação](assets/screen_shot_2012-02-02at110019am.png)
 
 >[!NOTE]
 >
@@ -188,7 +189,7 @@ Esses testes também podem ser executados em páginas de conteúdo e em combina�
 
 Passar o mouse sobre um parágrafo de teaser mostrará os segmentos aplicados, se eles estão sendo resolvidos no momento e, portanto, por que a instância de teaser atual foi selecionada:
 
-![](assets/chlimage_1-47.png)
+![Um exemplo de mouse sobre um segmento](assets/chlimage_1-47.png)
 
 ### Usar seu segmento {#using-your-segment}
 
