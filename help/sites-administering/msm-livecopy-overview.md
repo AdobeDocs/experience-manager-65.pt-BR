@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 36%
+source-wordcount: '553'
+ht-degree: 34%
 
 ---
 
@@ -44,7 +44,7 @@ A **Visão geral da Live Copy** pode ser aberta a partir do painel lateral **Ref
 1. No console **Sites**, [navegue até a página do blueprint e selecione-a](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Abra o **[Referências](/help/sites-authoring/basic-handling.md#references)** e selecione **Live Copies**.
 
-   ![chlimage_1-359](assets/chlimage_1-359.png)
+   ![Painel Referências - Live copies](assets/chlimage_1-359.png)
 
    >[!NOTE]
    >
@@ -60,7 +60,7 @@ A **Visão geral da Live Copy** pode ser aberta ao visualizar propriedades de um
 1. Abra as **Propriedades** para a página do blueprint apropriada.
 1. Abra a guia **Blueprint** — a opção **Visão geral da Live Copy** será exibida na barra de ferramentas superior:
 
-   ![chlimage_1-360](assets/chlimage_1-360.png)
+   ![Guia Blueprint — Visão geral da Live Copy](assets/chlimage_1-360.png)
 
 1. Selecionar **Visão geral da Live Copy** para mostrar e usar a visão geral de todas as live copies relacionadas ao blueprint atual.
 
@@ -81,7 +81,7 @@ A variável **Visão geral da Live Copy** O também pode ser usado para executar
 
 Quando você seleciona uma página do blueprint, as seguintes ações estão disponíveis:
 
-![chlimage_1-361](assets/chlimage_1-361.png)
+![Blueprint selecionado - ações disponíveis](assets/chlimage_1-361.png)
 
 * Editar
 
@@ -95,7 +95,7 @@ Quando você seleciona uma página do blueprint, as seguintes ações estão dis
 
 Quando você seleciona uma página de live copy, as seguintes ações estão disponíveis:
 
-![chlimage_1-362](assets/chlimage_1-362.png)
+![Página de Live Copy selecionada - ações disponíveis](assets/chlimage_1-362.png)
 
 * Editar
 
@@ -136,10 +136,10 @@ O console **Status do relacionamento** tem duas guias que fornecem uma variedade
 
 Essa guia fornece informações detalhadas sobre o status do relacionamento entre o blueprint e a live copy:
 
-![chlimage_1-363](assets/chlimage_1-363.png)
+![Informações de status do relacionamento](assets/chlimage_1-363.png)
 
 ### Informações da Live Copy {#live-copy-information}
 
 Essa guia permite visualizar e editar a configuração da live copy:
 
-![chlimage_1-364](assets/chlimage_1-364.png)
+![Informações da Live Copy](assets/chlimage_1-364.png)

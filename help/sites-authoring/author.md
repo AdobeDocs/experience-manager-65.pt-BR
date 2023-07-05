@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 25%
+source-wordcount: '540'
+ht-degree: 32%
 
 ---
 
@@ -34,7 +34,7 @@ O ambiente de criação fornece os mecanismos para criar, atualizar e revisar es
 * Um autor cria e revisa o conteúdo (que pode ser de vários tipos; por exemplo, páginas, ativos, publicações etc.)
 * que será, em algum momento, publicado no seu site.
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+![Visão geral dos ambientes](assets/chlimage_1-132.png)
 
 No ambiente de criação, a funcionalidade do AEM é disponibilizada por meio de duas interfaces do usuário. Para o ambiente de publicação, você projeta toda a aparência e comportamento da interface disponível para os usuários.
 
@@ -46,7 +46,7 @@ O autor trabalha no que é conhecido como **ambiente do autor**. Isso oferece um
 >
 >Sua conta precisa dos direitos de acesso apropriados para criar, editar ou publicar conteúdo.
 
-Dependendo de como sua instância e seus direitos de acesso pessoal estão configurados, você pode executar muitas tarefas no conteúdo, incluindo (entre outras):
+Dependendo de como sua instância e seus direitos de acesso pessoais estão configurados, é possível executar muitas tarefas no seu conteúdo, incluindo (entre outras):
 
 * gerar novo conteúdo ou editar conteúdo existente em uma página
 * usar modelos predefinidos para criar novas páginas de conteúdo
@@ -79,15 +79,14 @@ Quando o site AEM é um [site da comunidade](/help/communities/overview.md), ou 
 >Infelizmente, às vezes há uma sobreposição na terminologia usada. Isso pode acontecer com:
 >
 >* **Publicar/Desfazer a publicação**
-   >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
+>  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
 >
 >* **Ativar / Desativar**
-   >  Estes termos são sinônimos de publicar/desfazer a publicação.
+>  Estes termos são sinônimos de publicar/desfazer a publicação.
 >
 >* **Replicar / Replicação**
-   >  Esses são os termos técnicos usados para indicar a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro; ou seja, ao publicar ou reverter a replicação de comentários do usuário.
+>  Esses são os termos técnicos usados para indicar a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro; ou seja, ao publicar ou reverter a replicação de comentários do usuário.
 >
-
 
 #### Dispatcher {#dispatcher}
 

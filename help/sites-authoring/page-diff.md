@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 32%
+source-wordcount: '578'
+ht-degree: 31%
 
 ---
 
@@ -52,7 +52,7 @@ Por exemplo, ao comparar versões, a versão atual é exibida à esquerda e a ve
 
 A origem de ambas as páginas é claramente exibida na barra de cabeçalho na parte superior da janela do navegador.
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![Fonte mostrada no cabeçalho](assets/chlimage_1-109.png)
 
 O recurso de diferencial detecta alterações no nível do componente e do HTML. Os itens alterados são realçados com cores diferentes.
 
@@ -78,7 +78,7 @@ Para se concentrar em um conteúdo específico, você pode clicar no ícone de t
 
 O lado selecionado preencherá a janela inteira, mas a barra permanecerá no topo, permitindo que você alterne entre as duas páginas.
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![A barra na parte superior permite alternar entre páginas](assets/chlimage_1-110.png)
 
 Você também pode optar por fechar a visualização em tela cheia clicando no ícone Saída da tela cheia.
 

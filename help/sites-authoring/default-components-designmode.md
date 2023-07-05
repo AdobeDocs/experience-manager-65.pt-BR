@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '915'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,7 @@ Para ativar ou desativar um componente:
 
    Use o **Adicionar** botão para adicionar entradas adicionais a uma lista de caixas de diálogo de várias entradas.
 
-   ![chlimage_1-94](assets/chlimage_1-94.png)
+   ![Adicionar entrada adicional](assets/chlimage_1-94.png)
 
    Use o **Excluir** ícone para remover uma entrada de uma lista de caixas de diálogo de várias entradas.
 

@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: 7f595bec8ea138d5a73a17d0548320a31544dcd1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 48%
+source-wordcount: '1040'
+ht-degree: 46%
 
 ---
 
@@ -41,6 +41,7 @@ Você pode criar uma inicialização no console Sites ou Inicializações:
    * **Inicializações**:
 
       1. Selecionar **Criar lançamento** na barra de ferramentas para abrir o assistente.
+
    * **Sites**:
 
       1. Selecione **Criar** na barra de ferramentas para abrir a caixa de seleção.
@@ -59,7 +60,7 @@ Você pode criar uma inicialização no console Sites ou Inicializações:
 
    Repita conforme necessário.
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![Selecionar fonte e adicionar páginas](assets/chlimage_1-225.png)
 
    >[!NOTE]
    >
@@ -77,7 +78,7 @@ Você pode criar uma inicialização no console Sites ou Inicializações:
 
    Continue clicando em **Próximo**.
 
-   ![chlimage_1-226](assets/chlimage_1-226.png)
+   ![Especificar se as páginas devem ser incluídas](assets/chlimage_1-226.png)
 
 1. Na etapa **Propriedades** do assistente, é possível especificar:
 
@@ -86,11 +87,11 @@ Você pode criar uma inicialização no console Sites ou Inicializações:
    * **usar um novo modelo para substituir a página**: consulte [Criar inicialização com um novo modelo](#create-launch-with-new-template) para obter mais detalhes.
    * **Herdar dados online da página de origem:** selecione essa opção para atualizar automaticamente o conteúdo das páginas de inicialização quando as páginas de origem forem alteradas. Essa opção faz isso transformando a inicialização em uma [live copy](/help/sites-administering/msm.md).
 
-      Por padrão, esta opção é selecionada.
+     Por padrão, esta opção é selecionada.
 
    * **Data da inicialização**: a data e a hora em que a cópia de inicialização deve ser ativada (dependendo do sinalizador de **Pronto para produção**; consulte [Inicializações - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
-   ![chlimage_1-227](assets/chlimage_1-227.png)
+   ![Especificar propriedades](assets/chlimage_1-227.png)
 
 1. Uso **Criar** para concluir o processo e criar o novo lançamento. A caixa de diálogo de confirmação perguntará se você deseja abrir a inicialização imediatamente.
 
@@ -101,22 +102,20 @@ Você pode criar uma inicialização no console Sites ou Inicializações:
 
 ### Criar inicialização com um novo modelo {#create-launch-with-new-template}
 
-Quando [criação de uma inicialização](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) você pode optar por usar um novo modelo:
-
-**utilizando um novo modelo para substituir a página**
+Quando [criação de uma inicialização](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) é possível selecionar se deseja usar um novo modelo com a opção: **uso de um novo modelo para substituir a página**
 
 >[!CAUTION]
 >
 >Essa opção está disponível apenas ao criar uma inicialização no console **Sites**. Não está disponível ao criar uma inicialização no console **Inicializações**.
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![Usar um novo modelo para substituir a página](assets/chlimage_1-228.png)
 
 Selecionar isso irá:
 
 * atualizar as outras opções disponíveis,
 * inclua uma nova etapa, na qual você possa selecionar o modelo necessário.
 
-![chlimage_1-229](assets/chlimage_1-229.png)
+![Selecionar modelo](assets/chlimage_1-229.png)
 
 >[!CAUTION]
 >
@@ -139,11 +138,11 @@ A criação de uma inicialização aninhada no console **Inicializações** segu
 1. No console **Inicializações**, selecione **Criar**.
 1. Selecione **Adicionar páginas** e navegue até a ramificação de inicializações especificando `/content/launches` no filtro. Selecione a inicialização necessária e confirme com **Selecionar**:
 
-   ![chlimage_1-230](assets/chlimage_1-230.png)
+   ![Selecionar lançamento](assets/chlimage_1-230.png)
 
 1. Continuar com **Próxima** e conclua o **Propriedades** como em qualquer outro lançamento.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![Especificar propriedades](assets/chlimage_1-231.png)
 
 #### Criação de uma inicialização aninhada - Console Sites {#creating-a-nested-launch-sites-console}
 

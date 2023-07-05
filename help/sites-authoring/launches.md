@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 32%
+source-wordcount: '846'
+ht-degree: 31%
 
 ---
 
@@ -53,7 +53,7 @@ Os lançamentos permitem:
 
       * As páginas de origem podem ser obtidas de várias ramificações (separadas).
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+  ![Visão geral das ações de lançamento](assets/chlimage_1-111.png)
 
 * Edite a configuração do lançamento:
 
@@ -67,32 +67,32 @@ Os lançamentos permitem:
       * Promova o conteúdo do seu lançamento para a **Target** (páginas de origem) quando estiver pronto para ser publicado.
       * Publique o conteúdo das páginas de origem (após promover de volta).
       * Promover todas as páginas ou somente as páginas modificadas.
+
    * Automaticamente - isso envolve o seguinte:
 
       * O campo **Data de lançamento** (**Data de ativação**):**** pode ser definida ao criar ou editar um lançamento.
 
-      * A variável **Pronto para produção** sinalizador: só pode ser definido ao editar um lançamento.
+      * A variável **Pronto para produção** sinalizador: só pode ser definido ao editar uma inicialização.
       * Se a variável **Pronto para produção** for definido, a inicialização será promovida automaticamente para as páginas de produção no **Launch**(**Ao vivo**) **data**. Após a promoção, as páginas de produção são publicadas automaticamente.\
-         Se nenhuma data tiver sido definida, o sinalizador não terá efeito.
-
+        Se nenhuma data tiver sido definida, o sinalizador não terá efeito.
 
 * Atualize suas páginas de origem e de lançamento em paralelo:
 
    * As alterações nas páginas de origem são implementadas automaticamente na cópia de lançamento (se configurada como herança, ou seja, como uma live copy).
    * As alterações na sua cópia de lançamento podem ser feitas sem interromper essas atualizações automáticas ou as páginas de origem.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+  ![Visão geral das atualizações](assets/chlimage_1-112.png)
 
 * [Criar uma inicialização aninhada](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - um lançamento dentro de um lançamento:
 
    * A origem é um lançamento existente.
    * Você pode [promover uma inicialização aninhada](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) para qualquer destino; pode ser uma inicialização principal ou as páginas de origem de nível superior (Produção).
 
-   ![chlimage_1-113](assets/chlimage_1-113.png)
+  ![Visão geral da inicialização aninhada](assets/chlimage_1-113.png)
 
-   >[!CAUTION]
-   >
-   >Excluir um lançamento removerá o próprio lançamento e qualquer lançamento descendente aninhado.
+  >[!CAUTION]
+  >
+  >Excluir um lançamento removerá o próprio lançamento e qualquer lançamento descendente aninhado.
 
 >[!NOTE]
 >
@@ -121,8 +121,8 @@ O console Lançamentos fornece uma visão geral dos lançamentos e permite que v
 1. Abra o **Referências** e selecione a página de origem.
 1. Selecionar **Lançamentos**, os lançamentos existentes serão listados:
 
-   ![screen-shot_2019-03-05at121901-1](assets/screen-shot_2019-03-05at121901-1.png)
+   ![Guia Referência - Inicializações](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. Toque/clique no lançamento apropriado. A lista de ações possíveis será exibida:
 
-   ![screen-shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
+   ![Selecione o lançamento para mostrar as ações possíveis](assets/screen-shot_2019-03-05at121952-1.png)

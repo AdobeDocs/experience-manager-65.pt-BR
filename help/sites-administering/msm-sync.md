@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 96aa75dec7433aa3961944fa57a80c4719316ba5
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: '2702'
 ht-degree: 28%
 
 ---
@@ -322,7 +322,7 @@ Várias propriedades e tipos de nó são excluídos por padrão, eles são defin
 
 Por padrão, as propriedades que correspondem às seguintes expressões regulares são excluídas (ou seja, não atualizadas) na implantação:
 
-![chlimage_1](assets/chlimage_1.png)
+![Ação de atualização de conteúdo do MSM CQ](assets/chlimage_1.png)
 
 É possível alterar as expressões definindo a lista de exclusões conforme necessário.
 
@@ -384,7 +384,7 @@ Você também pode definir as configurações de implantação para uma página 
 
    A seção **Configuração** mostra as configurações de implementação que a página herda.
 
-   ![chlimage_1-1](assets/chlimage_1-1.png)
+   ![Configuração](assets/chlimage_1-1.png)
 
 1. Se necessário, ajuste o sinalizador de **Herança da Live Copy**. Se essa opção for marcada, a configuração da live copy terá efeito em todas as tarefas derivadas.
 
@@ -392,7 +392,7 @@ Você também pode definir as configurações de implantação para uma página 
 
    As configurações de implantação selecionadas aparecem abaixo da lista suspensa.
 
-   ![chlimage_1-2](assets/chlimage_1-2.png)
+   ![Configurações de implantação selecionadas](assets/chlimage_1-2.png)
 
 1. Clique ou toque **Salvar**.
 
@@ -413,8 +413,7 @@ Observe que as páginas secundárias da página do blueprint herdam a configura�
 Especifique uma configuração de implantação a ser usada como padrão do sistema. Para especificar o padrão, configure o serviço OSGi:
 
 * **Gerente de relacionamento dinâmico do WCM CQ do dia**
-o PID do serviço é 
-`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+o PID do serviço é `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Configure o serviço usando a variável [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou um [nó do repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 

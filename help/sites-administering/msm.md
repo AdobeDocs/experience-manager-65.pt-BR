@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2667'
 ht-degree: 34%
 
 ---
@@ -45,80 +45,79 @@ Há muitos casos de uso para o MSM e as live copies, alguns cenários incluem:
 
 * **Multinacionais - da empresa global para a local**
 
-   Um caso de uso típico que o MSM permite é a reutilização de conteúdo em vários sites multinacionais de mesmo idioma. Isso permite que o conteúdo principal seja reutilizado, ao mesmo tempo que permite variações nacionais.
+  Um caso de uso típico que o MSM permite é a reutilização de conteúdo em vários sites multinacionais de mesmo idioma. Isso permite que o conteúdo principal seja reutilizado, ao mesmo tempo que permite variações nacionais.
 
-   Por exemplo, a seção em inglês da amostra do site de referência We.Retail é criada para clientes nos EUA. A maior parte do conteúdo deste site também pode ser usada para outros sites We.Retail que atendem clientes que falam inglês de diferentes países e culturas. O conteúdo principal permanece o mesmo em todos os sites, enquanto ajustes regionais podem ser feitos.
+  Por exemplo, a seção em inglês da amostra do site de referência We.Retail é criada para clientes nos EUA. A maior parte do conteúdo deste site também pode ser usada para outros sites We.Retail que atendem clientes que falam inglês de diferentes países e culturas. O conteúdo principal permanece o mesmo em todos os sites, enquanto ajustes regionais podem ser feitos.
 
-   A seguinte estrutura pode ser usada para sites dos Estados Unidos, Reino Unido, Canadá e Austrália:
+  A seguinte estrutura pode ser usada para sites dos Estados Unidos, Reino Unido, Canadá e Austrália:
 
-   ```xml
-   /content
-       |- we.retail
-           |- language-masters
-               |- en
-       |- we.retail
-           |- us
-               |- en
-       |- we.retail
-           |- gb
-               |- en
-       |- we.retail
-           |- ca
-               |- en
-       |- we.retail
-           |- au
-               |- en
-   ```
+  ```xml
+  /content
+      |- we.retail
+          |- language-masters
+              |- en
+      |- we.retail
+          |- us
+              |- en
+      |- we.retail
+          |- gb
+              |- en
+      |- we.retail
+          |- ca
+              |- en
+      |- we.retail
+          |- au
+              |- en
+  ```
 
-   >[!NOTE]
-   >
-   >O MSM não traduz o conteúdo. Ele é usado para criar a estrutura necessária e implantar o conteúdo.
-   >
-   >
-   >Consulte [Tradução de conteúdo para sites multilíngues](/help/sites-administering/translation.md) se quiser estender esse exemplo.
+  >[!NOTE]
+  >
+  >O MSM não traduz o conteúdo. Ele é usado para criar a estrutura necessária e implantar o conteúdo.
+  >
+  >
+  >Consulte [Tradução de conteúdo para sites multilíngues](/help/sites-administering/translation.md) se quiser estender esse exemplo.
 
 * **Nacional - da sede para as divisões regionais**
 
-   Alternativamente, uma empresa com uma rede de revendedores pode querer sites separados para suas concessionárias individuais - cada um sendo uma variação do site principal fornecido pela sede. Pode ser uma única empresa com vários escritórios regionais ou um sistema nacional de franquias composto por um franqueador central e por vários franqueados locais.
+  Alternativamente, uma empresa com uma rede de revendedores pode querer sites separados para suas concessionárias individuais - cada um sendo uma variação do site principal fornecido pela sede. Pode ser uma única empresa com vários escritórios regionais ou um sistema nacional de franquias composto por um franqueador central e por vários franqueados locais.
 
-   A sede pode fornecer as informações principais, enquanto as entidades regionais podem adicionar informações locais, como detalhes de contato, horários de abertura e eventos.
+  A sede pode fornecer as informações principais, enquanto as entidades regionais podem adicionar informações locais, como detalhes de contato, horários de abertura e eventos.
 
-   ```xml
-   /content
-       |- head-office-Berlin
-       |- branch-Hamburg
-       |- branch-Stuttgart
-       |- branch-Munich
-       |- branch-Frankfurt
-   ```
+  ```xml
+  /content
+      |- head-office-Berlin
+      |- branch-Hamburg
+      |- branch-Stuttgart
+      |- branch-Munich
+      |- branch-Frankfurt
+  ```
 
 * **Várias versões**
 
-   Ou você pode usar o MSM para criar versões de uma sub-ramificação específica. Por exemplo, um subsite de suporte contendo detalhes das diferentes versões de um produto específico, onde as informações básicas permanecem constantes e apenas os recursos atualizados precisam ser alterados:
+  Ou você pode usar o MSM para criar versões de uma sub-ramificação específica. Por exemplo, um subsite de suporte contendo detalhes das diferentes versões de um produto específico, onde as informações básicas permanecem constantes e apenas os recursos atualizados precisam ser alterados:
 
-   ```xml
-   /content
-       |- support
-           |- product X
-               |- v5.0
-               |- v4.0
-               |- v3.0
-               |- v2.0
-               |- v1.0
-   ```
+  ```xml
+  /content
+      |- support
+          |- product X
+              |- v5.0
+              |- v4.0
+              |- v3.0
+              |- v2.0
+              |- v1.0
+  ```
 
-   >[!NOTE]
-   >
-   >Em tal cenário, há sempre a questão de se fazer uma cópia simples ou usar as live copies.
-   >
-   >Há um equilíbrio de:
-   >
-   >  * Quanto do conteúdo principal precisará ser atualizado nas várias versões.
-   >
-   >Contra:
-   >
-   >  * Quantas cópias individuais precisarão ser ajustadas.
-
+  >[!NOTE]
+  >
+  >Em tal cenário, há sempre a questão de se fazer uma cópia simples ou usar as live copies.
+  >
+  >Há um equilíbrio de:
+  >
+  >  * Quanto do conteúdo principal precisará ser atualizado nas várias versões.
+  >
+  >Contra:
+  >
+  >  * Quantas cópias individuais precisarão ser ajustadas.
 
 ## MSM a partir da interface {#msm-from-the-ui}
 
@@ -304,7 +303,7 @@ A forma básica da live copy tem:
 
 * As alterações podem ser [sincronizadas](/help/sites-administering/msm-livecopy.md#synchronizing-your-live-copy) de acordo com os requisitos.
 
-![chlimage_1-367](assets/chlimage_1-367.png)
+![Sincronizar](assets/chlimage_1-367.png)
 
 #### Live Copy com páginas que não são da Live Copy {#live-copy-with-non-live-copy-pages}
 
@@ -313,7 +312,7 @@ Ao criar uma live copy no AEM, você pode ver e navegar pela ramificação da li
 * Esses recursos não têm um relacionamento dinâmico com as páginas de origem/blueprints e não são sincronizados.
 * Podem ocorrer alguns cenários que o MSM trata como casos especiais. Por exemplo, quando você (ou um processo) cria uma página com a mesma posição e nome nas ramificações da origem/blueprint e da live copy. Para essas situações, consulte [Conflitos de implantação do MSM](/help/sites-administering/msm-rollout-conflicts.md) para obter mais informações.
 
-![chlimage_1-368](assets/chlimage_1-368.png)
+![Conflitos de implantação](assets/chlimage_1-368.png)
 
 #### Live Copies aninhadas {#nested-live-copies}
 
@@ -322,9 +321,9 @@ Quando você (ou um processo) cria um [nova página em uma live copy existente](
 * Uma implantação profunda, acionada para a live copy de nível superior, pode continuar na live copy aninhada (por exemplo, se o acionador corresponder).
 * Quaisquer links entre as origens serão regravados nas live copies.
 
-   Por exemplo, os links do segundo ao primeiro blueprint serão reescritos como links da segunda live copy aninhada para a primeira live copy.
+  Por exemplo, os links do segundo ao primeiro blueprint serão reescritos como links da segunda live copy aninhada para a primeira live copy.
 
-![chlimage_1-369](assets/chlimage_1-369.png)
+![Links entre origens](assets/chlimage_1-369.png)
 
 >[!NOTE]
 >
@@ -350,13 +349,13 @@ A origem forma o blueprint para a live copy. O blueprint é definido quando voc�
 
 * [Criar uma configuração de blueprint](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration)
 
-   A configuração define (antecipadamente) as páginas que serão usadas para criar a live copy.
+  A configuração define (antecipadamente) as páginas que serão usadas para criar a live copy.
 
 * [Criar uma Live Copy de uma página](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
-   As páginas usadas para criar a live copy (as páginas de origem) são as páginas do blueprint.
+  As páginas usadas para criar a live copy (as páginas de origem) são as páginas do blueprint.
 
-   A página de origem pode ser referenciada por uma configuração de blueprint, ou não.
+  A página de origem pode ser referenciada por uma configuração de blueprint, ou não.
 
 ### Implantação e sincronização {#rollout-and-synchronize}
 
@@ -365,31 +364,31 @@ Uma implantação é a ação central do MSM que sincroniza as Live Copies com a
 * A [configuração de implantação](#rollout-configurations) pode ser definida para que [eventos](/help/sites-administering/msm-sync.md#rollout-triggers) específicos ocasionem uma implantação automaticamente.
 * Ao criar uma página do blueprint, é possível usar o [Implantação](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) comando para enviar alterações para a live copy.
 
-   **O comando Implantação** está disponível em uma página de blueprint referenciada em uma configuração de blueprint.
+  **O comando Implantação** está disponível em uma página de blueprint referenciada em uma configuração de blueprint.
 
-   ![chlimage_1-370](assets/chlimage_1-370.png)
+  ![Implantação](assets/chlimage_1-370.png)
 
 * Ao criar uma página de live copy, é possível usar o [Sincronizar](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) comando para extrair as alterações da origem para a live copy.
 
-   A variável **Sincronizar** está sempre disponível na página da live copy (independentemente da página de origem/blueprint ser alterada por uma configuração de blueprint).
+  A variável **Sincronizar** está sempre disponível na página da live copy (independentemente da página de origem/blueprint ser alterada por uma configuração de blueprint).
 
-   ![chlimage_1-371](assets/chlimage_1-371.png)
+  ![Sincronizar](assets/chlimage_1-371.png)
 
-### Configurações de implementação {#rollout-configurations}
+### Configurações de implantação {#rollout-configurations}
 
 Uma configuração de implantação define quando e como uma live copy é sincronizada com o conteúdo original. Uma configuração de implantação consiste em um acionador e uma ou mais ações de sincronização:
 
 * **Acionar**
 
-   Um acionador é um evento que ocasiona a sincronização da ação dinâmica, como a ativação de uma página de origem. O MSM define os acionadores que você pode usar.
+  Um acionador é um evento que ocasiona a sincronização da ação dinâmica, como a ativação de uma página de origem. O MSM define os acionadores que você pode usar.
 
 * **Ações de sincronização**
 
-   São executadas na live copy para sincronizá-la com a origem. Exemplos de ações são: copiar o conteúdo, ordenar nós secundários e ativar a página de live copy. O MSM fornece várias ações de sincronização.
+  São executadas na live copy para sincronizá-la com a origem. Exemplos de ações são: copiar o conteúdo, ordenar nós secundários e ativar a página de live copy. O MSM fornece várias ações de sincronização.
 
-   >[!NOTE]
-   >
-   >É possível criar ações personalizadas para sua instância usando a API do Java.
+  >[!NOTE]
+  >
+  >É possível criar ações personalizadas para sua instância usando a API do Java.
 
 As configurações de implantação podem ser reutilizadas, de modo que mais de uma live copy pode usar a mesma configuração. Várias [configurações de implantação](/help/sites-administering/msm-sync.md#installed-rollout-configurations) estão inclusas em uma instalação padrão.
 
@@ -440,10 +439,10 @@ As etapas a seguir descrevem o procedimento padrão de uso do MSM para reutiliza
 O MSM fornece ferramentas para que sua implementação possa se adaptar às complexidades excepcionais que podem existir ao compartilhar conteúdo:
 
 * **Configurações de implantação personalizadas**
-   [Criar uma configuração de implantação](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) quando as configurações de implantação instaladas não atenderem aos seus requisitos. Você pode usar qualquer acionador de implantação e ação de sincronização disponível.
+  [Criar uma configuração de implantação](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) quando as configurações de implantação instaladas não atenderem aos seus requisitos. Você pode usar qualquer acionador de implantação e ação de sincronização disponível.
 
 * **Ações de Sincronização Personalizadas**
-   [Criar uma ação de sincronização personalizada](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) quando as ações instaladas não atenderem aos requisitos específicos do aplicativo. O MSM fornece uma API Java para criar ações de sincronização personalizadas.
+  [Criar uma ação de sincronização personalizada](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) quando as ações instaladas não atenderem aos requisitos específicos do aplicativo. O MSM fornece uma API Java para criar ações de sincronização personalizadas.
 
 ## Práticas recomendadas     {#best-practices}
 

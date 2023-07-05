@@ -8,9 +8,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b1d45f01-78de-423c-8f6b-5cb7067c3a2f
 exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Para corrigir esse problema, altere o seguinte no `$CAMPAIGN_HOME/conf/config-<i
 
 No Adobe Campaign Classic, verifique se você não tem nenhuma barra à direita (`/`) após o número da porta.
 
-![chlimage_1-149](assets/chlimage_1-149.png)
+![Adobe Campaign Classic - certifique-se de que não haja barra à direita após o número da porta](assets/chlimage_1-149.png)
 
 ## Se você receber um aviso sobre setlocale {#if-you-get-a-warning-about-your-setlocale}
 

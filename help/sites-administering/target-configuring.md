@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: c96f83b84ed1473aee0ddcca08a0e585ec088aa1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2200'
 ht-degree: 30%
 
 ---
@@ -56,14 +56,13 @@ Os seguintes valores de propriedade são usados na configuração da nuvem da Co
 >* Melhores opções de implementação para aplicativos de página única
 >* A AT.js contém os componentes que foram incluídos na target.js, portanto, não é mais chamada para o target.
 
-
 <!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Propriedades da Estrutura de Destino Provisionada {#provisioned-target-framework-properties}
 
 A Estrutura de destino provisionada que o assistente de Opt-in cria está configurada para enviar dados de contexto do armazenamento de Dados do perfil. A idade e os itens de dados de gênero do armazenamento são enviados para o Target por padrão. Sua solução provavelmente requer o envio de parâmetros adicionais.
 
-![chlimage_1-158](assets/chlimage_1-158.png)
+![Estrutura de Destino Provisionada](assets/chlimage_1-158.png)
 
 Você pode configurar a estrutura para enviar informações de contexto adicionais ao Target, conforme descrito em [Adição de uma estrutura do Target](/help/sites-administering/target-configuring.md#adding-a-target-framework).
 
@@ -93,7 +92,6 @@ Para fazer isso, você especifica com qual configuração de nuvem do A4T deve s
    1. Definir a propriedade **disable** para **false**.
    1. Toque ou clique **Salvar tudo**.
 
-
 #### Caixa de diálogo Configuração do A4T Analytics {#a4t-analytics-config-dialog}
 
 ```xml
@@ -109,8 +107,11 @@ Clique em **OK**. Ao direcionar conteúdo com o Adobe Target, você pode [seleci
 Integrar manualmente ao Adobe Target em vez de usar o assistente de aceitação.
 
 >[!NOTE]
+>
 O arquivo da biblioteca do Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única. A Adobe recomenda usar a AT.js como a biblioteca de cliente, em vez da mbox.js.
+>
 A AT.js oferece várias melhorias em relação à biblioteca mbox.js:
+>
 * Tempos de carregamento de página aprimorados para implementações da Web
 * Segurança aprimorada
 * Melhores opções de implementação para aplicativos de página única
@@ -146,12 +147,13 @@ Use o procedimento a seguir para criar uma configuração da nuvem do Target no 
    ![AdobeTargetSettings](assets/adobe-target-settings.jpg)
 
    >[!NOTE]
+   >
    Ao configurar o A4T com AEM, você pode ver uma entrada ausente na referência Configuração. Para poder selecionar a estrutura de análise, faça o seguinte:
+   >
    1. Navegue até **Ferramentas** > **Geral** > **CRXDE Lite**.
    1. Navegue até **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    1. Definir a propriedade **disable** para **false**.
    1. Toque ou clique **Salvar tudo**.
-
 
 1. Na caixa de diálogo, forneça valores para essas propriedades.
 
@@ -169,9 +171,13 @@ Use o procedimento a seguir para criar uma configuração da nuvem do Target no 
    * **AT.js personalizada**: Deixe em branco se tiver marcado a caixa do DTM ou para usar a AT.js padrão. Como alternativa, faça upload do seu AT.js personalizado. Aparece somente se tiver selecionado AT.js.
 
    >[!NOTE]
+   >
    Por padrão, quando você opta pelo assistente de configuração do Adobe Target, o Direcionamento preciso é ativado.
+   >
    Direcionamento preciso significa que a configuração do Cloud Service aguarda o contexto ser carregado antes de carregar o conteúdo. Como resultado, em termos de desempenho, o direcionamento preciso pode criar um atraso de alguns milissegundos antes de carregar o conteúdo.
+   >
    O direcionamento preciso é sempre ativado na instância do autor. No entanto, na instância de publicação, é possível desativar o direcionamento preciso globalmente, limpando a marca de seleção ao lado de Direcionamento preciso na configuração do Cloud Service (**http://localhost:4502/etc/cloudservices.html**). Você também pode ativar e desativar o direcionamento preciso para componentes individuais, independentemente das suas definições na configuração do Cloud Service.
+   >
    Se você ***já*** tiver criado componentes direcionados e alterar essa configuração, suas alterações não afetarão esses componentes. Altere esses componentes diretamente.
 
 1. Clique em **Conectar-se ao Target** para inicializar a conexão com o Target. Se a conexão for bem-sucedida, a mensagem **Conexão bem-sucedida** será exibida. Clique em **OK** na mensagem e, em seguida, em **OK** na caixa de diálogo.
@@ -187,26 +193,28 @@ Você pode criar várias estruturas para uma única configuração do Target. V�
 1. Na página de configuração do Target, clique no link **+** (sinal de adição) ao lado de Estruturas disponíveis.
 1. Na caixa de diálogo Criar estrutura, especifique um **Título**, selecione a **estrutura do Adobe Target** e clique em **Criar**.
 
-   ![chlimage_1-161](assets/chlimage_1-161.png)
+   ![Caixa de diálogo Criar estrutura](assets/chlimage_1-161.png)
 
    A página de estrutura é aberta. O Sidekick fornece componentes que representam informações do [Client Context](/help/sites-administering/client-context.md) ou [ContextHub](/help/sites-developing/ch-configuring.md) que você pode mapear.
 
-   ![chlimage_1-162](assets/chlimage_1-162.png)
+   ![Componentes da estrutura](assets/chlimage_1-162.png)
 
 1. Arraste o componente Contexto do cliente que representa os dados que você deseja usar para mapear até a zona de destino. Como alternativa, arraste o componente de **Armazenamento do ContextHub** para a estrutura.
 
    >[!NOTE]
+   >
    Ao mapear, os parâmetros são enviados para uma mbox por meio de sequências de caracteres simples. Não é possível mapear matrizes do ContextHub.
 
    Por exemplo, para usar **Dados do perfil** sobre os visitantes do seu site para controlar sua campanha do Target, arraste o **Dados do perfil** componente à página. As variáveis de dados de perfil disponíveis para mapeamento para parâmetros do Target são exibidas.
 
-   ![chlimage_1-163](assets/chlimage_1-163.png)
+   ![Dados do perfil](assets/chlimage_1-163.png)
 
 1. Selecione as variáveis que você deseja tornar visíveis para o sistema do Adobe Target marcando a caixa de seleção **Compartilhar** nas colunas apropriadas.
 
-   ![chlimage_1-164](assets/chlimage_1-164.png)
+   ![Compartilhar](assets/chlimage_1-164.png)
 
    >[!NOTE]
+   >
    A sincronização de parâmetros é uma via de mão única - do AEM para o Adobe Target.
 
 Sua estrutura foi criada. Para replicar a estrutura para a instância de publicação, use a opção **Ativar estrutura** no sidekick.
@@ -216,8 +224,12 @@ Sua estrutura foi criada. Para replicar a estrutura para a instância de publica
 Associe seu [Atividades do AEM](/help/sites-authoring/activitylib.md) com sua configuração da nuvem do Target, para que você possa espelhar as atividades em [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
+>
 Os tipos de atividades disponíveis são determinados pelo seguinte:
+>
+>
 * Se a variável **xt_only** estiver ativada no locatário do Adobe Target (clientcode) usado no lado do AEM para se conectar ao Adobe Target, você poderá criar **somente** Atividades XT no AEM.
+>
 * Se a variável **xt_only** opção é **não** ativada no locatário do Adobe Target (clientcode), será possível criar **ambos** Atividades XT e A/B no AEM.
 >
 **Nota adicional:** **xt_only** é uma configuração aplicada em um determinado locatário do Target (clientcode) e só pode ser modificada diretamente no Adobe Target. Não é possível ativar ou desativar essa opção no AEM.
@@ -234,17 +246,19 @@ Quando você associa uma página à estrutura, as páginas secundárias herdam a
 1. Toque/clique em **Editar**.
 1. Toque/clique **Adicionar configuração** em **Configurações do Cloud Service** e selecione **Adobe Target**.
 
-   ![chlimage_1-165](assets/chlimage_1-165.png)
+   ![Adicionar configuração](assets/chlimage_1-165.png)
 
 1. Selecione a estrutura desejada em **Referência de configuração**.
 
    >[!NOTE]
+   >
    Certifique-se de selecionar as opções **estrutura** que você criou e não a configuração da nuvem do Target na qual ela foi criada.
 
 1. Toque/clique **Concluído**.
 1. Ative a página raiz do site para replicá-la no servidor de publicação. (Consulte [Como Publicar Páginas](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]
+   >
    Se a estrutura anexada à página ainda não tiver sido ativada, um assistente será aberto para que você também possa publicá-la.
 
 ## Resolução de Problemas de Conexão do Target {#troubleshooting-target-connection-problems}

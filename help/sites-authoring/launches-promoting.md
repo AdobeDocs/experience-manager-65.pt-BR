@@ -10,9 +10,9 @@ discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '773'
 ht-degree: 19%
 
 ---
@@ -48,7 +48,6 @@ ht-degree: 19%
 >* [Inicializações - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter mais detalhes sobre promoção e publicação automáticas.
 >
 
-
 É possível promover inicializações a partir do **Sites** console ou o **Lançamentos** console:
 
 1. Abrir:
@@ -60,17 +59,18 @@ ht-degree: 19%
       1. Selecionar **Lançamentos** (por exemplo, Lançamentos [1]) para mostrar uma lista de lançamentos específica.
       1. Selecione a inicialização específica para mostrar as ações disponíveis.
       1. Selecione **Promover lançamento** para abrir o assistente.
+
    * o **Lançamentos** console:
 
       1. Selecione o seu lançamento (toque/clique na miniatura).
       1. Selecionar **Promover**.
-
 
 1. Na primeira etapa, é possível especificar:
 
    * **Target**
 
       * **Excluir inicialização após promoção**
+
    * **Escopo**
 
       * **Promover lançamento completo**
@@ -89,7 +89,7 @@ ht-degree: 19%
 1. Selecionar **Próxima** para continuar.
 1. É possível revisar as páginas a serem promovidas, isso dependerá do intervalo de páginas escolhido:
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![Revisar páginas a serem promovidas](assets/chlimage_1-102.png)
 
 1. Selecionar **Promover**.
 
@@ -97,7 +97,7 @@ ht-degree: 19%
 
 Ao editar uma página de inicialização, a variável **Promover lançamento** a ação também está disponível em **Informações da página**. Isso abrirá o assistente para coletar as informações necessárias.
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![Promover lançamento](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Ao editar uma página de inicialização, a variável **Promover lançamento** a
 
 Depois de criar uma inicialização aninhada, você pode promovê-la de volta para qualquer uma das origens, incluindo a origem raiz (produção).
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![Visão geral da promoção de uma inicialização aninhada](assets/chlimage_1-104.png)
 
 1. Assim como com [Criação de uma inicialização aninhada](#creatinganestedlaunchlaunchwithinalaunch), navegue até o lançamento necessário e selecione-o no **Lançamentos** console ou o **Referências** ferroviário.
 1. Selecione **Promover lançamento** para abrir o assistente.
@@ -121,6 +121,7 @@ Depois de criar uma inicialização aninhada, você pode promovê-la de volta pa
 
       * **Excluir inicialização após promoção**
 Após a promoção, a inicialização selecionada e qualquer inicialização aninhada dentro dela será excluída.
+
    * **Escopo**
 Aqui é possível promover toda a inicialização ou somente as páginas que foram editadas. No último caso, você pode optar por incluir/excluir subpáginas. A configuração padrão é promover alterações de página somente para a página atual:
 
@@ -129,12 +130,12 @@ Aqui é possível promover toda a inicialização ou somente as páginas que for
       * **Divulgar a página atual**
       * **Divulgar página atual e subpáginas**
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![Configurações para promover um lançamento](assets/chlimage_1-105.png)
 
 1. Selecione **Próximo**.
 1. Revise os detalhes da promoção antes que selecionar **Promover**:
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![Revisar detalhes e Promover](assets/chlimage_1-106.png)
 
    >[!NOTE]
    >
@@ -142,7 +143,7 @@ Aqui é possível promover toda a inicialização ou somente as páginas que for
 
 1. Suas alterações serão promovidas e refletidas no **Lançamentos** console:
 
-   ![chlimage_1-107](assets/chlimage_1-107.png)
+   ![Iniciar console](assets/chlimage_1-107.png)
 
 ## Processamento de Páginas promovidas usando o fluxo de trabalho do AEM {#processing-promoted-pages-using-aem-workflow}
 
@@ -156,4 +157,4 @@ Para iniciar um fluxo de trabalho automaticamente quando as páginas forem promo
 
 Por exemplo, você pode gerar automaticamente solicitações de ativação de página quando os autores promovem páginas de Lançamentos. Configure um iniciador de fluxo de trabalho para iniciar o fluxo de trabalho Ativação de solicitação quando o nó do pacote for modificado.
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![Iniciador do fluxo de trabalho](assets/chlimage_1-108.png)
