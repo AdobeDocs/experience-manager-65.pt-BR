@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: ddd908ed8287d77d9009633399c1e0bc1a12fe1b
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Os privilégios podem ser adicionados pesquisando usando o campo de texto e sele
 >
 >Para obter uma lista completa de privilégios e descrições, consulte [esta página](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![Permissão de pesquisa para um determinado caminho](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
+![Permissão de pesquisa para determinado caminho.](assets/image2019-3-21_0-5-47.png) ![Adicione nova entrada para &quot;dam-users&quot; como mostrado por um caminho selecionado em colunas verticais.](assets/image2019-3-21_0-6-53.png)
 
 Depois que a lista de privilégios for selecionada, o usuário poderá escolher o Tipo de permissão: Negar ou Permitir, conforme mostrado abaixo.
 

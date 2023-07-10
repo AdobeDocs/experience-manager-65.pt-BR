@@ -2,7 +2,7 @@
 title: Integração com o Adobe Target usando IMS
 description: Saiba mais sobre a integração do AEM com o Adobe Target usando o IMS
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: 2f5f6a94a20feb2813b6da1b71e22f8675529ea5
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
 source-wordcount: '1548'
 ht-degree: 54%
@@ -117,7 +117,7 @@ Abra o Adobe Developer Console para criar um Projeto com o Adobe Target que o AE
 <!--
 1. The creation will be confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
-   ![](assets/integrate-target-io-07.png)
+   ![integrate-target-io-07](assets/integrate-target-io-07.png)
 -->
 
 ### Atribuir privilégios à integração {#assigning-privileges-to-the-integration}

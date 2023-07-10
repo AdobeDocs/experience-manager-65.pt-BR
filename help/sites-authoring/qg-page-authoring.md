@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 54%
+source-wordcount: '1558'
+ht-degree: 46%
 
 ---
 
@@ -40,11 +40,11 @@ Antes de dar a visão geral das especificidades, veja uma pequena coleção de d
 
 * **Criar**
 
-   * Este botão está disponível em vários consoles, as opções apresentadas são sensíveis ao contexto, por isso podem variar de acordo com o cenário.
+   * Esse botão está disponível em vários consoles; as opções apresentadas são sensíveis ao contexto, portanto podem variar de acordo com o cenário.
 
 * Reorganização de páginas em uma pasta
 
-   * Isso pode ser feito na [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view). As alterações serão aplicadas e estarão visíveis em outras exibições.
+   * Isso pode ser feito em [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view). As alterações são aplicadas e visíveis em outras exibições.
 
 #### Criação de página {#page-authoring}
 
@@ -69,7 +69,7 @@ Antes de dar a visão geral das especificidades, veja uma pequena coleção de d
 
 Há vários aspectos para localizar uma página; você pode navegar e/ou pesquisar:
 
-1. Abra o console **Sites** (usando a opção **Sites** na [Navegação global](/help/sites-authoring/basic-handling.md#global-navigation) - isso é acionado (menu suspenso) ao selecionar o link do Adobe Experience Manager (parte superior esquerda).
+1. Abra o **Sites** console (usando o **Sites** opção no [Navegação global](/help/sites-authoring/basic-handling.md#global-navigation)) - é acionado (menu suspenso) ao selecionar o link do Adobe Experience Manager (parte superior esquerda).
 
 1. Navegue para baixo na árvore, tocando/clicando na página apropriada. A forma como os recursos da página são apresentados depende da exibição usada ([Cartão, Lista ou Coluna](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)):
 
@@ -85,9 +85,9 @@ Há vários aspectos para localizar uma página; você pode navegar e/ou pesquis
 
 ### Criar uma nova página {#creating-a-new-page}
 
-Para [criar uma nova página](/help/sites-authoring/managing-pages.md#creating-a-new-page):
+Para [criar uma página](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
-1. [Navegue até o local onde deseja criar a nova página.](#finding-your-page)
+1. [Navegue até o local](#finding-your-page) onde você deseja criar a página.
 1. Use o **Criar** e selecione **Página** na lista:
 
    ![qgtap-02](assets/qgtap-02.png)
@@ -134,8 +134,6 @@ As [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions) est
 
 ### Editar o seu conteúdo da página {#editing-your-page-content}
 
-Para editar sua página:
-
 1. [Navegue até a página](#finding-your-page) que deseja editar.
 1. [Abra a página para edição](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing) usando o ícone Editar (lápis):
 
@@ -143,12 +141,12 @@ Para editar sua página:
 
    Essa opção pode ser acessada com:
 
-   * [Ações rápidas (apenas a exibição de cartão/desktop)](#quick-actions-card-view-desktop-only) para o recurso apropriado.
+   * As [Ações rápidas (apenas a exibição de cartão/área de trabalho)](#quick-actions-card-view-desktop-only) do recurso adequado.
    * A barra de ferramenta quando a sua [página é selecionada](#selectiingyourpageforfurtheraction).
 
-1. Quando o editor é aberto, é possível:
+1. Quando o editor for aberto, você poderá:
 
-   * [Adicionar um novo componente à página](/help/sites-authoring/editing-content.md#inserting-a-component) por:
+   * [Adicionar um novo componente para a página](/help/sites-authoring/editing-content.md#inserting-a-component) ao:
 
       * abrir o painel lateral
       * selecionar a guia componentes (a guia [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser))
@@ -161,7 +159,7 @@ Para editar sua página:
    * [Editar o conteúdo de um componente existente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) na página:
 
       * Abra a barra de ferramentas do componente com um toque ou clique. Use o **Editar** (lápis) ícone para abrir a caixa de diálogo.
-      * Abra o editor local do componente com um clique de toque e segure ou com um clique duplo e lento. As ações disponíveis serão exibidas (para alguns componentes, essa será uma seleção limitada).
+      * Abra o editor local do componente com um clique de toque e segure ou com um clique duplo e lento. As ações disponíveis são exibidas (para alguns componentes, é uma seleção limitada).
       * Para ver todas as ações disponíveis, entre no modo de tela cheia usando:
 
      ![Modo de tela cheia](do-not-localize/screen_shot_2018-03-21at160706.png)
@@ -212,7 +210,7 @@ Existem dois (principais) métodos de [editar propriedades da página](/help/sit
    1. [Navegue até a página](#finding-your-page) que deseja publicar.
    1. Selecione o **Propriedades** ícone de:
 
-      * [Ações rápidas (apenas a exibição de cartão/desktop)](#quick-actions-card-view-desktop-only) para o recurso apropriado.
+      * As [Ações rápidas (apenas a exibição de cartão/área de trabalho)](#quick-actions-card-view-desktop-only) do recurso adequado.
       * A barra de ferramenta quando a sua [página é selecionada](#selectiingyourpageforfurtheraction).
 
   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
@@ -235,7 +233,7 @@ Existem dois métodos principais de [publicar sua página](/help/sites-authoring
    1. [Navegue até a página](#finding-your-page) que deseja publicar.
    1. Selecione o ícone **Publicação rápida** por meio de:
 
-      * [Ações rápidas (apenas a exibição de cartão/desktop)](#quick-actions-card-view-desktop-only) para o recurso apropriado.
+      * As [Ações rápidas (apenas a exibição de cartão/área de trabalho)](#quick-actions-card-view-desktop-only) do recurso adequado.
       * A barra de ferramentas quando a sua [página é selecionada](#selectiingyourpageforfurtheraction) (também fornece o acesso à opção [Publicar mais tarde](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
 
   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
@@ -269,15 +267,15 @@ Todas essas ações podem ser acionadas por:
 
    * Copiar:
 
-      * Em seguida, será necessário navegar até o novo local e colar.
+      * Navegue até o novo local e cole.
 
    * Mover:
 
-      * Isso abrirá o assistente para coletar as informações necessárias para mover a página. Siga as instruções na tela.
+      * O assistente é aberto para coletar as informações necessárias para mover a página. Siga as instruções na tela.
 
    * Exclua:
 
-      * Você receberá uma solicitação para confirmar a ação.
+      * Você deverá confirmar a ação.
 
    >[!NOTE]
    >
@@ -288,7 +286,7 @@ Todas essas ações podem ser acionadas por:
 [Bloquear uma página](/help/sites-authoring/editing-content.md#locking-a-page) impede que outros autores trabalhem nela enquanto você estiver trabalhando. O ícone/botão Bloquear (e Desbloquear) pode ser encontrado:
 
 * A barra de ferramenta quando a sua [página é selecionada](#selecting-your-page-for-further-action).
-* O [menu suspenso Informações da página](#editing-the-page-properties) ao editar uma página.
+* A variável [Menu suspenso Informações da página](#editing-the-page-properties) ao editar uma página.
 * A barra de ferramentas da página ao editar uma página (quando a página estiver bloqueada)
 
 Por exemplo, o ícone de bloqueio tem a seguinte aparência:
@@ -297,7 +295,7 @@ Por exemplo, o ícone de bloqueio tem a seguinte aparência:
 
 ### Acessar as referências da página {#accessing-page-references}
 
-[O acesso rápido às referências](/help/sites-authoring/author-environment-tools.md#references) para/de uma página estão disponíveis no Trilho de referências.
+[Acesso rápido às referências](/help/sites-authoring/author-environment-tools.md#references) para uma página ou de uma página estão disponíveis no Trilho de referências.
 
 1. Selecione a **Referências** usando o ícone da barra de ferramentas (antes ou depois de [selecionar a página](#selecting-your-page-for-further-action)): 
 
@@ -331,14 +329,14 @@ O mesmo mecanismo básico é usado ao restaurar e/ou comparar as versões da sua
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
-   Se uma versão da sua página já foi salva, ela será listada na Linha do tempo.
+   Se uma versão da sua página já foi salva, ela é listada na Linha do tempo.
 
 1. Toque/clique na versão que deseja restaurar - isso revelará botões de ação adicionais:
 
    * **Reverter para essa versão**
 
-      * A versão será restaurada.
+      * A versão é restaurada.
 
    * **Exibir diferenças**
 
-      * A página será aberta com as diferenças (entre as duas versões) destacadas.
+      * A página é aberta com diferenças (entre as duas versões) destacadas.
