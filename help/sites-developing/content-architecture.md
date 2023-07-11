@@ -1,18 +1,14 @@
 ---
 title: Arquitetura de conteúdo
-seo-title: Content Architecture
 description: Dicas para projetar seu conteúdo (dica - tudo é conteúdo)
-seo-description: Tips for architecting your content in Adobe Experience Manager (AEM). (hint - everything is content)
-uuid: fef2bf0f-70ec-4621-8479-a62b7e1fbc07
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
 exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -31,15 +27,15 @@ O modelo de David foi escrito por David Nuescheler anos atrás, mas as ideias se
 * Arquivos são arquivos.
 * As identidades são más.
 
-O modelo de David pode ser encontrado no wiki do Jackrabbit em [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+O modelo de David pode ser encontrado no wiki Jackrabbit em [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### Tudo é conteúdo {#everything-is-content}
 
-Tudo deve ser armazenado no repositório, em vez de depender de fontes de dados separadas de terceiros, como bancos de dados. Isso se aplica ao conteúdo criado, dados binários como imagens, código, configurações etc. Isso nos permite usar um conjunto de APIs para gerenciar todo o conteúdo e gerenciar a promoção desse conteúdo por meio de replicação. Também obtemos uma única fonte de backup, registro etc.
+Tudo deve ser armazenado no repositório, em vez de depender de fontes de dados separadas de terceiros, como bancos de dados. Isso se aplica ao conteúdo criado, aos dados binários como imagens, código e configurações. Isso nos permite usar um conjunto de APIs para gerenciar todo o conteúdo e gerenciar a promoção desse conteúdo por meio de replicação. Você também obtém uma única fonte de backup, registro e assim por diante.
 
 ### Usar o princípio de design de &quot;modelo de conteúdo primeiro&quot; {#use-the-content-model-first-design-principle}
 
-Ao criar um novo recurso, sempre comece criando a estrutura de conteúdo JCR primeiro e, em seguida, examine a leitura e a gravação de conteúdo usando os servlets Sling padrão. Isso garantirá que sua implementação funcione bem com mecanismos de controle de acesso prontos para uso e permitirá que você evite gerar servlets de estilo CRUD desnecessários.
+Ao criar um novo recurso, sempre comece criando a estrutura de conteúdo JCR primeiro e, em seguida, examine a leitura e a gravação de conteúdo usando os servlets Sling padrão. Isso permite garantir que sua implementação funcione bem com mecanismos de controle de acesso prontos para uso e evitar a geração de servlets de estilo CRUD desnecessários.
 
 ### Ser RESTful {#be-restful}
 
@@ -47,11 +43,11 @@ Os servlets devem ser definidos com base em resourceTypes em vez de caminhos. Is
 
 ### Evitar a definição de novos tipos de nó {#avoid-defining-new-node-types}
 
-Os tipos de nó funcionam em um nível baixo na camada de infraestrutura e a maioria dos requisitos pode ser atendida usando um sling:resourceType atribuído a um tipo de nó nt:unstructured, oak:Unstructured, sling:Folder ou cq:Page. Os tipos de nó equivalentes ao esquema no repositório e a alteração dos tipos de nó pode ser muito dispendiosa.
+Os tipos de nó funcionam em um nível baixo na camada de infraestrutura e a maioria dos requisitos pode ser atendida usando um sling:resourceType atribuído a um tipo de nó nt:unstructured, oak:Unstructured, sling:Folder ou cq:Page. Os tipos de nó equivalem ao esquema no repositório e alterar os tipos de nó pode custar caro.
 
 ### Seguir as convenções de nomenclatura no JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-Seguir as convenções de nomenclatura adicionará consistência à sua base de código, reduzindo a taxa de incidência de defeitos e aumentando a velocidade dos desenvolvedores que trabalham no sistema. As seguintes convenções são usadas pelo Adobe no desenvolvimento do AEM:
+Seguir convenções de nomenclatura adiciona consistência à base de código, reduzindo a taxa de incidência de defeitos e aumentando a velocidade dos desenvolvedores que trabalham no sistema. As seguintes convenções são usadas pelo Adobe no desenvolvimento do AEM:
 
 * Nomes de nós
 

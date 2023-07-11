@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 35%
+source-wordcount: '898'
+ht-degree: 29%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 35%
 
 >[!NOTE]
 >
->A Otimização do mecanismo de pesquisa (SEO) se tornou uma preocupação principal para muitos comerciantes. Como resultado, as preocupações com a SEO precisam ser abordadas em muitos projetos de AEM. Leia [Práticas recomendadas de gerenciamento de SEO e URL](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) para obter informações adicionais.
+>A Otimização do mecanismo de pesquisa (SEO) se tornou uma preocupação principal para muitos comerciantes. Como resultado, as preocupações com a SEO devem ser abordadas em muitos projetos de AEM. Consulte [Práticas recomendadas de gerenciamento de SEO e URL](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) para obter informações adicionais.
 
 Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) fornecem configurações avançadas para personalizar os URLs das páginas de produto e categoria. Muitas implementações personalizam esses URLs para fins de otimização de mecanismo de pesquisa (SEO). O vídeo a seguir mostra detalhes sobre como configurar o serviço `UrlProvider` e os recursos do [Mapeamento do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para personalizar os URLs das páginas de produto e categoria.
 
@@ -46,15 +46,15 @@ O modelo configura os URLs das páginas de produto e oferece suporte às seguint
 
 No caso do [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` será substituída por `/content/venia/us/en/products/product-page`
-* `{{sku}}` será substituído pelo SKU do produto, por exemplo, `VP09`
-* `{{url_key}}` será substituído pelo nome do produto `url_key` propriedade, por exemplo `lenora-crochet-shorts`
-* `{{url_path}}` será substituído pelo nome do produto `url_path`, por exemplo, `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` será substituída pela variante selecionada no momento, por exemplo, `VP09-KH-S`
+* `{{page}}` é substituída por `/content/venia/us/en/products/product-page`
+* `{{sku}}` é substituído pelo SKU do produto, por exemplo, `VP09`
+* `{{url_key}}` é substituído pelo nome do produto `url_key` propriedade, por exemplo, `lenora-crochet-shorts`
+* `{{url_path}}` é substituído pelo nome do produto `url_path`, por exemplo, `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` é substituída pela variante selecionada no momento, por exemplo, `VP09-KH-S`
 
 Uma vez que a `url_path` foi descontinuado, os formatos de URL de produto predefinidos usam o `url_rewrites` e escolha aquele com mais segmentos de caminho como alternativa se a variável `url_path` não está disponível.
 
-Com os dados de exemplo acima, um URL de variante de produto formatado usando o formato de URL padrão será semelhante a `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
+Com os dados de exemplo acima, um URL de variante de produto formatado usando o formato de URL padrão se parece com `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
 ### Formato do URL da página de categoria {#product-list}
 
@@ -65,11 +65,11 @@ O modelo configura os URLs das páginas de categoria ou lista de produtos e ofer
 
 No caso do [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia):
 
-* `{{page}}` será substituída por `/content/venia/us/en/products/category-page`
-* `{{url_key}}` será substituída pela categoria de `url_key` propriedade
-* `{{url_path}}` será substituída pela categoria de `url_path`
+* `{{page}}` é substituída por `/content/venia/us/en/products/category-page`
+* `{{url_key}}` é substituído pelo nome da `url_key` propriedade
+* `{{url_path}}` é substituído pelo nome da `url_path`
 
-Com os dados de exemplo acima, uma URL de página de categoria formatada usando o formato de URL padrão será semelhante a `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
+Com os dados de exemplo acima, uma URL de página de categoria formatada usando o formato de URL padrão se parece com `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
 >[!NOTE]
 > 
@@ -85,17 +85,17 @@ Por outro lado, em instâncias do nível de publicação, os urls de páginas de
 
 ## Formatos personalizados de URL {#custom-url-format}
 
-Para fornecer um formato de URL personalizado, um projeto pode implementar o [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) ou o [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) e registre a implementação como um serviço OSGI. Essas implementações, se disponíveis, substituirão o formato pré-definido configurado. Se houver várias implementações registradas, aquela com a classificação de serviço mais alta substituirá aquela(s) com a classificação de serviço mais baixa.
+Para fornecer um formato de URL personalizado que um projeto possa implementar [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) ou o [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) e registre a implementação como um serviço OSGI. Essas implementações, se disponíveis, substituem o formato pré-definido configurado. Se houver várias implementações registradas, aquela com a classificação de serviço mais alta substituirá aquelas com a classificação de serviço mais baixa.
 
 As implementações de formato de URL personalizado devem implementar um par de métodos para criar um URL a partir de determinados parâmetros e para analisar um URL para retornar os mesmos parâmetros, respectivamente.
 
 ## Combinar com Mapeamentos do Sling {#sling-mapping}
 
-Além do `UrlProvider`, também é possível configurar os [Mapeamentos do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para substituir e processar URLs. O Arquétipo do AEM também fornece [um exemplo de configuração](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) para definir alguns Mapeamentos do Sling para as portas 4503 (Publish) e 80 (Dispatcher).
+Além do `UrlProvider`, também é possível configurar [Mapeamentos do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para substituir e processar URLs. O projeto Arquétipo AEM também fornece [um exemplo de configuração](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) para configurar alguns Mapeamentos do Sling para as portas 4503 (Publish) e 80 (Dispatcher).
 
 ## Combinar com o AEM Dispatcher {#dispatcher}
 
-As substituições de URL também podem ser obtidas usando o servidor HTTP do AEM Dispatcher com o módulo `mod_rewrite`. O [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype) fornece uma configuração de referência do AEM Dispatcher que já inclui [regras de substituição](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) básicas para o tamanho gerado.
+As substituições de URL também podem ser obtidas usando o servidor HTTP do AEM Dispatcher com `mod_rewrite` módulo. O [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype) fornece uma configuração de referência do AEM Dispatcher que já inclui [regras de substituição](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) básicas para o tamanho gerado.
 
 ## Exemplo
 

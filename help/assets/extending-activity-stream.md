@@ -5,9 +5,9 @@ contentOwner: AG
 role: Developer
 feature: Asset Management
 exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Essa integração pode consumir CPU e espaço em disco, por exemplo, ao fazer um
 
 ## Eventos de ação compatíveis {#supported-action-events}
 
-Os seguintes eventos podem ser configurados para serem gravados:
+Você pode configurar os seguintes eventos a serem gravados:
 
 * Licença aceita (ACEITA)
 * Ativo criado (ASSET_CREATED)
@@ -52,10 +52,10 @@ A variável [Console da Web](/help/sites-deploying/configuring-osgi.md) O fornec
 
 1. Marcar **[!UICONTROL Habilita este serviço]**.
 
-1. Verificar qual **[!UICONTROL Tipos de evento]** você deseja ser registrado no fluxo de atividade do usuário.
+1. Verificar qual **[!UICONTROL Tipos de evento]** que você deseja registrar no fluxo de atividades do usuário.
 
 1. Clique em **[!UICONTROL Salvar]**.
 
 ## Ler eventos gravados {#reading-recorded-events}
 
-Os eventos registrados são armazenados como atividades. Você pode lê-los programaticamente usando o [API do ActivityManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+Os eventos registrados são armazenados como atividades. Você pode lê-los programaticamente usando o [API do ActivityManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

@@ -1,12 +1,10 @@
 ---
 title: Segurança
-seo-title: Security
 description: A segurança de aplicativos começa durante a fase de desenvolvimento
-seo-description: Application Security starts during the development phase
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
-source-git-commit: c55b70ec11842d3f7d82adbf552b2624c1dcc599
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -25,15 +23,15 @@ A criação de script entre sites (XSS) permite que invasores injetem código em
 
 O AEM aplica o princípio de filtrar todo o conteúdo fornecido pelo usuário na saída. É dada a maior prioridade à prevenção de XSS durante o desenvolvimento e o teste.
 
-O mecanismo de proteção XSS fornecido pelo AEM baseia-se no [Biblioteca Java do AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) fornecido por [OWASP (The Open Web Application Security Project, Projeto de Segurança de Aplicações Web Abertas)](https://www.owasp.org/). A configuração padrão do AntiSamy pode ser encontrada em
+O mecanismo de proteção XSS fornecido pelo AEM baseia-se no [Biblioteca Java™ antisspam](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) fornecido por [OWASP (The Open Web Application Security Project, Projeto de Segurança de Aplicações Web Abertas)](https://owasp.org/). A configuração padrão do AntiSamy pode ser encontrada em
 
 `/libs/cq/xssprotection/config.xml`
 
-É importante adaptar essa configuração às suas necessidades de segurança, sobrepondo o arquivo de configuração. O funcionário [Documentação do AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) O fornecerá todas as informações necessárias para implementar seus requisitos de segurança.
+É importante adaptar essa configuração às suas necessidades de segurança, sobrepondo o arquivo de configuração. O funcionário [Documentação do AntiSamy](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) O fornece todas as informações necessárias para implementar seus requisitos de segurança.
 
 >[!NOTE]
 >
->Recomendamos que você sempre acesse a API de proteção XSS usando o [XSSAPI fornecido por AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>O Adobe recomenda que você sempre acesse a API de proteção XSS usando a variável [XSSAPI fornecido por AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
 Além disso, um firewall de aplicativo web, como [mod_security para Apache](https://www.modsecurity.org)O, oferece controle confiável e central sobre a segurança do ambiente de implantação e proteção contra ataques de script entre sites não detectados anteriormente.
 
@@ -41,9 +39,9 @@ Além disso, um firewall de aplicativo web, como [mod_security para Apache](http
 
 >[!NOTE]
 >
->As ACLs para as Informações de Cloud Service, bem como as configurações de OSGi necessárias para proteger sua instância são automatizadas como parte da [Modo de produção pronto](/help/sites-administering/production-ready.md). Embora isso signifique que você não precisa fazer as alterações de configuração manualmente, ainda é recomendável revisá-las antes de entrar em funcionamento com a implantação.
+>As ACLs para as Informações de Cloud Service e as configurações de OSGi necessárias para proteger sua instância são automatizadas como parte da [Modo de produção pronto](/help/sites-administering/production-ready.md). Embora isso signifique que não é necessário alterar a configuração manualmente, ainda é recomendável revisá-los antes de entrar em funcionamento com a implantação.
 
-Quando você [integrar sua instância do AEM à Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md) você usa [configurações de Cloud Service](/help/sites-developing/extending-cloud-config.md). As informações sobre essas configurações, juntamente com quaisquer estatísticas coletadas, são armazenadas no repositório. Recomendamos que, se estiver usando essa funcionalidade, você verifique se a segurança padrão nessas informações corresponde aos seus requisitos.
+Quando você [integrar sua instância do AEM à Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md), você usa [configurações de Cloud Service](/help/sites-developing/extending-cloud-config.md). As informações sobre essas configurações, juntamente com quaisquer estatísticas coletadas, são armazenadas no repositório. A Adobe recomenda que, se estiver usando essa funcionalidade, você verifique se a segurança padrão nessas informações corresponde aos seus requisitos.
 
 O módulo webservicesupport grava estatísticas e informações de configuração em:
 

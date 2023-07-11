@@ -1,14 +1,13 @@
 ---
 title: Usar AEM com Commerce Cloud SAP
 description: Saiba como usar o AEM com o SAP Commerce Cloud.
-uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1702'
 ht-degree: 1%
 
 ---
@@ -52,27 +51,27 @@ Após a instalação, é possível configurar sua instância:
    >
    >Use o menu de contexto (geralmente clicando com o botão direito do mouse) para selecionar `Create Solr sort`.
    >
-   >Para o Hybris 5.0.0, abra o `Indexed Types` clique duas vezes em `ClothesVariantProduct`, depois a guia `SOLR Sort`.
+   >Para o Hybris 5.0.0, abra o `Indexed Types` clique duas vezes `ClothesVariantProduct`, depois a guia `SOLR Sort`.
 
    ![chlimage_1-36](/help/sites-administering/assets/chlimage_1-36a.png)
 
-1. No **Tipos Indexados** defina as **Tipo Composto** para:
+1. No **Tipos Indexados** , defina o **Tipo Composto** para:
 
    `Product - Product`
 
-1. No **Tipos Indexados** guia ajustar a **Consultas do indexador** para `full`:
+1. No **Tipos Indexados** , ajuste a **Consultas do indexador** para `full`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}})
    ```
 
-1. No **Tipos Indexados** guia ajustar a **Consultas do indexador** para `incremental`:
+1. No **Tipos Indexados** , ajuste a **Consultas do indexador** para `incremental`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}}) AND {modifiedtime} <= ?lastIndexTime
    ```
 
-1. No **Tipos Indexados** guia ajustar a `category` faceta. Clique duas vezes na última entrada na lista de categorias para abrir a variável **Propriedade indexada** guia:
+1. No **Tipos Indexados** , ajuste a `category` faceta. Clique duas vezes na última entrada na lista de categorias para abrir a variável **Propriedade indexada** guia:
 
    >[!NOTE]
    >
@@ -106,7 +105,7 @@ A variável **Versão do catálogo** ( `hybris.catalog.version`) que é importad
 **Configuração Day CQ Commerce Hybris**
 ( `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
-**Versão do catálogo** normalmente é definido como `Online` ou `Staged` (o padrão).
+**Versão do catálogo** está definido como `Online` ou `Staged` (o padrão).
 
 >[!NOTE]
 >
@@ -151,7 +150,7 @@ A lista a seguir mostra uma estrutura de exemplo (de ativos, páginas e componen
               + ...
 ```
 
-Essa estrutura é criada pelo serviço OSGi `DefaultImportHandler` que implementa a `ImportHandler` interface. Um manipulador de importação é chamado pelo importador real para criar produtos, variações de produtos, categorias, ativos, etc.
+Essa estrutura é criada pelo serviço OSGi `DefaultImportHandler` que implementa a `ImportHandler` interface. Um manipulador de importação é chamado pelo importador real para criar produtos, variações de produtos, categorias, ativos e assim por diante.
 
 >[!NOTE]
 >
@@ -244,7 +243,7 @@ As seguintes propriedades indicam o link com hybris:
 
 ### Importação incremental {#incremental-import}
 
-1. Verifique as informações contidas no AEM para o(s) produto(s) relevante(s), na subárvore apropriada em:
+1. Verifique as informações contidas no AEM para os produtos relevantes, na subárvore apropriada em:
 
    `/etc/commerce/products`
 
@@ -252,7 +251,7 @@ As seguintes propriedades indicam o link com hybris:
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. Em híbridos, atualizar as informações mantidas sobre o(s) produto(s) revelador(es).
+1. No hybris, atualize as informações mantidas sobre os produtos relevantes.
 
 1. Abra o importador hybris no AEM:
 
@@ -276,7 +275,7 @@ As seguintes propriedades indicam o link com hybris:
 
 O processo de importação pode levar muito tempo. Assim, como uma extensão da Sincronização de produto, você pode selecionar áreas específicas do catálogo para uma atualização expressa que é acionada manualmente. Isso usa o feed de exportação junto com a configuração de atributos padrão.
 
-1. Verifique as informações contidas no AEM para o(s) produto(s) relevante(s), na subárvore apropriada em:
+1. Verifique as informações contidas no AEM para os produtos relevantes, na subárvore apropriada em:
 
    `/etc/commerce/products`
 
@@ -284,9 +283,9 @@ O processo de importação pode levar muito tempo. Assim, como uma extensão da 
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. Em híbridos, atualizar as informações mantidas sobre o(s) produto(s) revelador(es).
+1. No hybris, atualize as informações mantidas sobre os produtos relevantes.
 
-1. Em hybris, adicione o(s) produto(s) à Fila expressa; por exemplo:
+1. Em hybris, adicione um ou mais produtos à Express Queue; por exemplo:
 
    ![chlimage_1-43](/help/sites-administering/assets/chlimage_1-43a.png)
 
@@ -369,7 +368,7 @@ Para remover um ou mais produtos do catálogo:
 
    [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-1. Remova o produto no console hybris. Usar a opção **Alterar status de aprovação** para definir o status como `unapproved`. O produto será removido do feed ao vivo.
+1. Remova o produto no console hybris. Usar a opção **Alterar status de aprovação** para definir o status como `unapproved`. O produto é removido do feed ao vivo.
 
    Por exemplo:
 
@@ -378,23 +377,23 @@ Para remover um ou mais produtos do catálogo:
    * Pesquisar `Cajamara`
    * Selecione este produto e altere o status de aprovação para `unapproved`
 
-1. Execute outra atualização incremental (consulte [Importação do catálogo](#catalog-import)). O log listará o produto excluído.
-1. [Implantação](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) o catálogo apropriado. A página do produto e do produto terá sido removida do AEM.
+1. Execute outra atualização incremental (consulte [Importação do catálogo](#catalog-import)). O log lista o produto excluído.
+1. [Implantação](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) o catálogo apropriado. A página do produto e do produto foi removida do AEM.
 
    Por exemplo:
 
    * Abrir:
 
-      [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
+     [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
 
    * Implante o `Hybris Base` catálogo
    * Abrir:
 
-      [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
+     [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-   * A variável `Cajamara` o produto terá sido removido do `Bike` categoria
+   * A variável `Cajamara` o produto é removido do `Bike` categoria
 
-1. Para reinstalar o produto:
+1. Para restaurar o produto:
 
    1. No hybris, defina o status de aprovação novamente como **aprovado**
    1. No AEM:
@@ -436,4 +435,3 @@ Para adicionar o histórico do pedido à [contexto do cliente](/help/sites-devel
    >* Clique no segmento ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html))
    >
    >* O segmento é criado usando o **Propriedade do histórico do pedido** característica.
-

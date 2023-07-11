@@ -1,19 +1,15 @@
 ---
 title: Definição dos casos de teste
-seo-title: Defining your Test Cases
 description: Seus casos de teste devem se basear nos casos de uso e na especificação detalhada dos requisitos
-seo-description: Your test cases should be based upon the use cases and the detailed requirements specification
-uuid: daaa5370-bcd3-45a6-9974-f9b5af6a1529
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: f01eb2aa-6891-4f5d-8a4a-43fc1534c222
 docset: aem65
 exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -38,7 +34,7 @@ Os ensaios devem definir claramente:
 * Resultados esperados.
 * Limpar critérios para aprovação ou reprovação.
 
-A perspectiva de automatizar casos de teste é obviamente atraente, pois pode eliminar tarefas repetitivas.
+A perspectiva de automatizar casos de teste é atraente porque elimina tarefas repetitivas.
 
 ## Testes manuais versus testes automatizados {#manual-versus-automated-tests}
 
@@ -46,7 +42,7 @@ No entanto, a automatização de casos de teste é um investimento significativo
 
 * Requer tempo, esforço e experiência para instalar e configurar o.
 * Se baseado em navegador, há um risco maior de problemas quando as atualizações do navegador são instaladas; é necessário mais tempo para corrigir.
-* Apenas muito viável para grandes projetos.
+* Viável apenas para grandes projetos.
 * Bom quando várias versões estão sendo geradas para teste ou no plano de lançamento de longo prazo.
 
 ## Testar aspectos específicos {#testing-specific-aspects}
@@ -55,15 +51,15 @@ Ao testar o AEM, alguns detalhes específicos são de especial interesse:
 
 **Ambientes de criação e publicação**
 
-Embora, [Ambientes](/help/sites-developing/the-basics.md#environments) vale destacar um fator decisivo do AEM em relação aos testes.
+Embora abrangido pelo [Ambientes](/help/sites-developing/the-basics.md#environments)No entanto, vale a pena destacar um fator decisivo do AEM em relação aos testes.
 
-Você deve considerar o AEM como dois aplicativos:
+Considere o AEM como dois aplicativos:
 
 * o *Autor* ambiente Essa instância permite que os autores insiram e publiquem conteúdo.
 Ele tem um pequeno conjunto previsível de usuários, para os quais a funcionalidade e o desempenho específicos são cruciais.
 
 * o *Publish* ambiente Essa instância apresenta o site em seu formulário publicado para acesso dos visitantes.
-Isso geralmente tem um conjunto maior de usuários, em que o volume de tráfego nem sempre é 100% previsível. O desempenho ainda é crucial ao responder às solicitações. O armazenamento em cache e o balanceamento de carga também devem ser considerados.
+Isso geralmente tem um conjunto maior de usuários, em que o volume de tráfego nem sempre é 100% previsível. O desempenho ainda é crucial ao responder às solicitações. Considere também armazenamento em cache e balanceamento de carga.
 
 Embora sejam o mesmo software, eles:
 
@@ -71,7 +67,7 @@ Embora sejam o mesmo software, eles:
 * têm requisitos diferentes em relação à funcionalidade e ao desempenho
 * são configurados de forma diferente
 * são ajustados separadamente
-* cada um terá seu próprio conjunto de testes de aceitação
+* cada um tem seu próprio conjunto de testes de aceitação
 
 Em outras palavras, eles devem ser testados separadamente e com casos de teste diferentes.
 
@@ -79,22 +75,22 @@ Em outras palavras, eles devem ser testados separadamente e com casos de teste d
 
 Ao testar a personalização, cada caso de uso individual deve ser repetido usando várias contas de usuário para provar o comportamento.
 
-O armazenamento em cache também deve ser verificado para verificar o comportamento correto.
+Verifique o armazenamento em cache também para determinar o comportamento correto.
 
 **O Dispatcher**
 
-A maioria dos projetos instalará o Dispatcher para armazenamento em cache e balanceamento de carga.
+A maioria dos projetos instala o Dispatcher para armazenamento em cache e balanceamento de carga.
 
 Os testes são difíceis (o armazenamento em cache ocorre em vários níveis e em vários locais) e devem ser feitos em uma base de caixa preta. Os principais aspectos a serem testados são:
 
 * **Precisão**
-certifique-se de que as atualizações de conteúdo sejam vistas pelo visitante do site.
+Garante que as atualizações de conteúdo sejam vistas pelo visitante do site.
 
 * **Continuidade**
-verifique se o site ainda está disponível quando um servidor é desligado.
+Verifique se o site ainda está disponível quando um servidor é desligado.
 
 * **Clusters**
-Os clusters são usados para fornecer:
+Usado para fornecer o seguinte:
 
    * **Failover**
 Se um servidor falhar, outros servidores no cluster assumirão o processamento.

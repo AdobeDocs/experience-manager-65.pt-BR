@@ -1,26 +1,22 @@
 ---
 title: OWASP 10 melhores
-seo-title: OWASP Top 10
-description: Saiba como o AEM lida com os 10 principais riscos de segurança da OWASP.
-seo-description: Learn how AEM deals with the top 10 OWASP security risks.
-uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
+description: Saiba como o AEM lida com os dez principais riscos de segurança da OWASP.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
 
 # OWASP 10 melhores{#owasp-top}
 
-A variável [Abrir Projeto de Segurança de Aplicativo Web](https://www.owasp.org) (OWASP) mantém uma lista do que consideram ser a [Os 10 maiores riscos à segurança de aplicações web](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
+A variável [Abrir Projeto de Segurança de Aplicativo Web](https://owasp.org/) (OWASP) mantém uma lista do que consideram ser a [Dez principais riscos à segurança de aplicações web](https://owasp.org/www-project-top-ten/).
 
 Eles estão listados abaixo, junto com uma explicação de como o CRX lida com eles.
 
@@ -32,13 +28,13 @@ Eles estão listados abaixo, junto com uma explicação de como o CRX lida com e
 
 ## 2. Criação de script entre sites (XSS) {#cross-site-scripting-xss}
 
-A prática geral de mitigação é codificar todas as saídas de conteúdo gerado pelo usuário usando uma biblioteca de proteção XSS do lado do servidor com base em [Codificador OWASP](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) e [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
+A prática geral de mitigação é codificar todas as saídas de conteúdo gerado pelo usuário usando uma biblioteca de proteção XSS do lado do servidor com base em [Codificador OWASP](https://owasp.org/www-project-java-encoder/) e [AntiSamy](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
 O XSS é uma prioridade principal durante os testes e o desenvolvimento, e todos os problemas encontrados são (normalmente) resolvidos imediatamente.
 
 ## 3. Autenticação interrompida e gerenciamento de sessão {#broken-authentication-and-session-management}
 
-O AEM usa técnicas de autenticação comprovadas e de som, contando com [Apache Jackrabbit](https://jackrabbit.apache.org/) e [Apache Sling](https://sling.apache.org/). As sessões de navegador/HTTP não são usadas no AEM.
+O AEM usa técnicas de autenticação comprovadas e de som, contando com [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) e [Apache Sling](https://sling.apache.org/). As sessões de navegador/HTTP não são usadas no AEM.
 
 ## 4. Referências de objeto direto não seguras {#insecure-direct-object-references}
 
@@ -52,23 +48,23 @@ Além disso, o AEM é enviado com um filtro baseado no cabeçalho do referenciad
 
 ## 6. Erro de configuração de segurança {#security-misconfiguration}
 
-É impossível garantir que todo o software esteja sempre configurado corretamente. No entanto, nos esforçamos para fornecer o máximo de orientação possível e tornar a configuração o mais simples possível. Além disso, o AEM [verificações de integridade de segurança integradas](/help/sites-administering/operations-dashboard.md) que ajudam a monitorar rapidamente a configuração de segurança.
+É impossível garantir que todo o software esteja sempre configurado corretamente. No entanto, o Adobe se esforça para fornecer o máximo de orientação possível e tornar a configuração o mais simples possível. Além disso, o AEM [verificações de integridade de segurança integradas](/help/sites-administering/operations-dashboard.md) que ajudam a monitorar rapidamente a configuração de segurança.
 
-Revise o [Lista de verificação de segurança](/help/sites-administering/security-checklist.md) para obter mais informações que fornecem instruções passo a passo sobre fortalecimento.
+Revise o [Lista de verificação de segurança](/help/sites-administering/security-checklist.md) para obter mais informações que fornecem instruções passo a passo sobre como reforçar o.
 
 ## 7. Armazenamento criptográfico inseguro {#insecure-cryptographic-storage}
 
-As senhas são armazenadas como hashes criptográficos no nó do usuário; por padrão, esses nós só podem ser lidos pelo administrador e pelo próprio usuário.
+As senhas são armazenadas como hashes criptográficos no nó do usuário. Por padrão, esses nós só podem ser lidos pelo administrador e pelo próprio usuário.
 
 Dados confidenciais, como credenciais de terceiros, são armazenados em formato criptografado usando uma biblioteca criptográfica com certificação FIPS 140-2.
 
 ## 8. Falha ao restringir o acesso ao URL {#failure-to-restrict-url-access}
 
-O repositório permite a configuração de [privilégios refinados (conforme especificado pelo JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) para qualquer usuário ou grupo específico em qualquer caminho, por meio de entradas de controle de acesso. As restrições de acesso são aplicadas pelo repositório.
+O repositório permite a configuração de [privilégios refinados (conforme especificado pelo JCR)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) para qualquer usuário ou grupo específico em qualquer caminho, por meio de entradas de controle de acesso. As restrições de acesso são aplicadas pelo repositório.
 
 ## 9. Proteção insuficiente da camada de transporte {#insufficient-transport-layer-protection}
 
-Reduzido pela configuração do servidor (por exemplo, usar somente HTTPS).
+Reduzido pela configuração do servidor (por exemplo, use somente HTTPS).
 
 ## 10. Redirecionamentos e encaminhamentos não validados {#unvalidated-redirects-and-forwards}
 

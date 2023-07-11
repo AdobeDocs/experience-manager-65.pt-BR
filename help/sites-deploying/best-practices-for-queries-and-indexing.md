@@ -1,27 +1,23 @@
 ---
 title: Práticas recomendadas para consultas e indexação
-seo-title: Best Practices for Queries and Indexing
 description: Este artigo fornece diretrizes sobre como otimizar seus índices e consultas.
-seo-description: This article provides guidelines on how to optimize your indexes and queries.
-uuid: 0609935a-4a72-4b8e-a28e-daede9fc05f4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: d8ae63edd71c7d27fe93d24b30fb00a29332658d
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '4663'
-ht-degree: 10%
+source-wordcount: '4614'
+ht-degree: 7%
 
 ---
 
 # Práticas recomendadas para consultas e indexação{#best-practices-for-queries-and-indexing}
 
-Juntamente com a transição para o Oak no AEM 6, foram feitas algumas mudanças importantes na forma como as consultas e os índices são gerenciados. Em Jackrabbit 2, todo o conteúdo era indexado por padrão e podia ser consultado livremente. No Oak, os índices devem ser criados manualmente no `oak:index` nó. Uma consulta pode ser executada sem um índice, mas, para conjuntos de dados grandes, ela será executada muito lentamente ou até mesmo anulada.
+Juntamente com a transição para o Oak no AEM 6, foram feitas algumas mudanças importantes na forma como as consultas e os índices são gerenciados. Em Jackrabbit 2, todo o conteúdo era indexado por padrão e podia ser consultado livremente. No Oak, os índices devem ser criados manualmente no `oak:index` nó. Uma consulta pode ser executada sem um índice, mas, para conjuntos de dados grandes, ela será executada lentamente ou até mesmo anulada.
 
-Este artigo destacará quando criar índices, bem como quando eles não são necessários, truques para evitar o uso de consultas quando eles não são necessários e dicas para otimizar seu desempenho com o máximo de eficiência.
+Este artigo descreve quando criar índices e quando eles não são necessários, truques para evitar o uso de consultas quando eles não são necessários e dicas para otimizar seu desempenho com o máximo de eficiência possível.
 
 Além disso, leia a [Documentação do Oak sobre gravação de consultas e índices](/help/sites-deploying/queries-and-indexing.md). Além de os índices serem um novo conceito no AEM 6, há diferenças sintáticas nas consultas do Oak que precisam ser consideradas ao migrar o código de uma instalação anterior do AEM.
 
@@ -29,11 +25,11 @@ Além disso, leia a [Documentação do Oak sobre gravação de consultas e índi
 
 ### Design de repositório e taxonomia {#repository-and-taxonomy-design}
 
-Ao projetar a taxonomia de um repositório, vários fatores precisam ser considerados. Isso inclui controles de acesso, localização, herança de propriedade de componente e página, entre outros.
+Ao projetar a taxonomia de um repositório, vários fatores precisam ser considerados. Isso inclui controles de acesso, localização, componente e herança de propriedade da página, entre outros.
 
-Ao projetar uma taxonomia que atenda a essas questões, também é importante considerar a flexibilidade do design de indexação. Nesse contexto, a flexibilidade é a capacidade de uma taxonomia que permite que o conteúdo seja acessado de forma previsível com base em seu caminho. Isso tornará o sistema mais eficiente e fácil de manter do que um que exigirá a execução de muitas consultas.
+Ao projetar uma taxonomia que atenda a essas questões, também é importante considerar a flexibilidade do design de indexação. Nesse contexto, a flexibilidade é a capacidade de uma taxonomia que permite que o conteúdo seja acessado de forma previsível com base em seu caminho. Isso tornará o sistema mais eficiente e fácil de manter do que um que requer a execução de muitas consultas.
 
-Além disso, ao projetar uma taxonomia, é importante considerar se a ordenação é importante. Nos casos em que a ordenação explícita não é obrigatória e um grande número de nós semelhantes é esperado, é preferível usar um tipo de nó não ordenado, como `sling:Folder` ou `oak:Unstructured`. Nos casos em que a ordenação é obrigatória, `nt:unstructured` e `sling:OrderedFolder` seriam mais adequados.
+Além disso, ao projetar uma taxonomia, é importante considerar se a ordenação é importante. Nos casos em que a ordenação explícita não é obrigatória e muitos nós semelhantes são esperados, é preferível usar um tipo de nó não ordenado, como `sling:Folder` ou `oak:Unstructured`. Nos casos em que a ordenação é obrigatória, `nt:unstructured`, e `sling:OrderedFolder` são mais adequadas.
 
 ### Consultas em componentes {#queries-in-components}
 
@@ -53,7 +49,7 @@ Por exemplo, se o conteúdo for armazenado em uma taxonomia semelhante a:
 /content/myUnstructuredContent/parentCategory/childCategory/contentPiece
 ```
 
-o nó `/content/myUnstructuredContent/parentCategory/childCategory` pode simplesmente ser recuperado e seus secundários podem ser analisados e usados para renderizar o componente.
+A variável `/content/myUnstructuredContent/parentCategory/childCategory` O nó pode simplesmente ser recuperado e seus secundários podem ser analisados e usados para renderizar o componente.
 
 Além disso, ao lidar com um conjunto de resultados pequeno ou homogêneo, pode ser mais rápido percorrer o repositório e coletar os nós necessários, em vez de criar uma consulta para retornar o mesmo conjunto de resultados. Como consideração geral, as consultas devem ser evitadas sempre que possível.
 
@@ -67,11 +63,11 @@ Se os dados ou o conteúdo forem alterados regularmente, a consulta poderá ser 
 
 ## Otimização de consulta {#query-optimization}
 
-Ao executar uma consulta que não esteja usando um índice, serão registrados avisos sobre o percurso do nó. Se esta for uma consulta que vai ser executada com frequência, um índice deverá ser criado. Para determinar qual índice uma determinada consulta está usando, a variável [Ferramenta Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) é recomendada. Para obter informações adicionais, o log de DEPURAÇÃO pode ser ativado para as APIs de pesquisa relevantes.
+Ao executar uma consulta que não esteja usando um índice, serão registrados avisos sobre o percurso do nó. Se esta for uma consulta que vai ser executada com frequência, crie um índice. Para determinar qual índice uma determinada consulta está usando, a variável [Ferramenta Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) é recomendada. Para obter informações adicionais, o log de DEPURAÇÃO pode ser ativado para as APIs de pesquisa relevantes.
 
 >[!NOTE]
 >
->Depois de modificar uma definição de índice, o índice precisa ser recriado (reindexado). Dependendo do tamanho do índice, isso pode levar algum tempo para ser concluído.
+>Após modificar uma definição de índice, o índice deve ser recriado (reindexado). Dependendo do tamanho do índice, isso pode levar algum tempo para ser concluído.
 
 Ao executar consultas complexas, pode haver casos em que o detalhamento da consulta em várias consultas menores e a associação dos dados por meio de código após o fato ter maior desempenho. A recomendação para esses casos é comparar o desempenho das duas abordagens para determinar qual opção seria melhor para o caso de uso em questão.
 
@@ -85,11 +81,11 @@ Embora todas as consultas sejam convertidas para o SQL2 antes de serem executada
 
 >[!NOTE]
 >
->Ao usar o QueryBuilder, ele determinará a contagem de resultados por padrão, que é mais lenta no Oak em comparação às versões anteriores do Jackrabbit. Para compensar isso, você pode usar o [parâmetro guessTotal](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results).
+>Ao usar o QueryBuilder, ele determina a contagem de resultados por padrão, que é mais lenta no Oak em comparação às versões anteriores do Jackrabbit. Para compensar isso, você pode usar o [parâmetro guessTotal](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results).
 
 ### A Ferramenta Explicar Consulta {#the-explain-query-tool}
 
-Como em qualquer linguagem de consulta, a primeira etapa para otimizar uma consulta é entender como ela será executada. Para habilitar esta atividade, você pode usar o [Ferramenta Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) que faz parte do Painel de operações. Com essa ferramenta, um query pode ser conectado e explicado. Um aviso será exibido se o query causar problemas com um repositório grande, bem como o tempo de execução e os índices que serão usados. A ferramenta também pode carregar uma lista de consultas lentas e populares que podem ser explicadas e otimizadas.
+Como em qualquer linguagem de consulta, a primeira etapa para otimizar uma consulta é entender como ela será executada. Para habilitar esta atividade, você pode usar o [Ferramenta Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) que faz parte do Painel de operações. Com essa ferramenta, um query pode ser conectado e explicado. Um aviso será exibido se a consulta causar problemas com um repositório grande e o tempo de execução e os índices que serão usados. A ferramenta também pode carregar uma lista de consultas lentas e populares que podem ser explicadas e otimizadas.
 
 ### Log de DEPURAÇÃO para consultas {#debug-logging-for-queries}
 
@@ -99,7 +95,7 @@ Para obter algumas informações adicionais sobre como o Oak está escolhendo qu
 * org.apache.jackrabbit.oak.query
 * com.day.cq.search
 
-Remova esse agente de log quando terminar de depurar sua consulta, pois ela gerará muita atividade e poderá eventualmente preencher seu disco com arquivos de log.
+Certifique-se de remover este agente de log quando terminar de depurar a consulta. Ela tende a produzir uma grande quantidade de atividade e pode eventualmente preencher seu disco com arquivos de log.
 
 Para obter mais informações sobre como fazer isso, consulte a [Documentação de registro](/help/sites-deploying/configure-logging.md).
 
@@ -121,9 +117,9 @@ Você também pode extrair os índices no seu sistema no formato JSON. Para faze
 
 **Durante o desenvolvimento**
 
-Definir limites baixos para `oak.queryLimitInMemory` (p. ex. 10000) e carvalho. `queryLimitReads` (p. ex. 5000) e otimize a consulta cara ao acessar um UnsupportedOperationException dizendo &quot;A consulta lê mais de x nós...&quot;
+Definir limites baixos para `oak.queryLimitInMemory` (por exemplo, 10000) e Oak. `queryLimitReads` (por exemplo, 5000) e otimize a consulta cara ao acessar um UnsupportedOperationException dizendo &quot;A consulta lê mais de x nós...&quot;
 
-Isso ajuda a evitar consultas que consomem muitos recursos (por exemplo, não apoiado por qualquer índice ou apoiado por um índice de cobertura menor). Por exemplo, uma consulta que lê 1 milhão de nós resultaria em maior I/O e teria um impacto negativo no desempenho geral do aplicativo. Qualquer query que falhar devido aos limites acima deve ser analisada e otimizada.
+Isso ajuda a evitar consultas que consomem muitos recursos (ou seja, sem o suporte de qualquer índice ou com menos índice de cobertura). Por exemplo, uma consulta que lê 1 milhão de nós resultaria em maior I/O e teria um impacto negativo no desempenho geral do aplicativo. Qualquer query que falhar devido aos limites acima deve ser analisada e otimizada.
 
 #### **Pós-implantação** {#post-deployment}
 
@@ -144,7 +140,7 @@ Os valores recomendados são:
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-No AEM 6.3, os 2 parâmetros acima são pré-configurados OOTB e podem ser mantidos por meio do OSGi QueryEngineSettings.
+No AEM 6.3, os dois parâmetros acima são pré-configurados e podem ser mantidos por meio do OSGi QueryEngineSettings.
 
 Mais informações disponíveis em : [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -152,11 +148,11 @@ Mais informações disponíveis em : [https://jackrabbit.apache.org/oak/docs/que
 
 ### Devo criar um índice? {#should-i-create-an-index}
 
-A primeira pergunta a ser feita ao criar ou otimizar índices é se eles são realmente necessários para uma determinada situação. Se você executar o query em questão apenas uma vez ou apenas ocasionalmente e fora do horário de pico do sistema por meio de um processo em lote, talvez seja melhor não criar um índice.
+A primeira pergunta a ser feita ao criar ou otimizar índices é se eles são necessários para uma determinada situação. Se você executar o query em questão apenas uma vez ou apenas ocasionalmente e fora do horário de pico do sistema por meio de um processo em lote, talvez seja melhor não criar um índice.
 
-Após a criação de um índice, sempre que os dados indexados forem atualizados, o índice também deverá ser atualizado. Como isso traz implicações de desempenho para o sistema, os índices só devem ser criados quando forem realmente necessários.
+Após a criação de um índice, sempre que os dados indexados forem atualizados, o índice também deverá ser atualizado. Como isso traz implicações de desempenho para o sistema, os índices só devem ser criados quando forem necessários.
 
-Além disso, os índices só serão úteis se os dados contidos no índice forem exclusivos o suficiente para garantir isso. Considere um índice em um livro e os tópicos que ele aborda. Ao indexar um conjunto de tópicos em um texto, geralmente haverá centenas ou milhares de entradas, o que permite saltar rapidamente para um subconjunto de páginas para encontrar rapidamente as informações que você está procurando. Se esse índice tivesse apenas duas ou três entradas, cada uma apontando para várias centenas de páginas, o índice não seria muito útil. Esse mesmo conceito se aplica aos índices de banco de dados. Se houver apenas alguns valores únicos, o índice não será muito útil. Dito isso, um índice também pode se tornar grande demais para ser útil. Para analisar as estatísticas de índice, consulte [Estatísticas de índice](/help/sites-deploying/best-practices-for-queries-and-indexing.md#index-statistics) acima.
+Além disso, os índices só serão úteis se os dados contidos no índice forem exclusivos o suficiente para garantir isso. Considere um índice em um livro e os tópicos que ele aborda. Ao indexar um conjunto de tópicos em um texto, geralmente haverá centenas ou milhares de entradas, o que permite saltar rapidamente para um subconjunto de páginas para encontrar rapidamente as informações que você está procurando. Se esse índice tivesse apenas duas ou três entradas, cada uma apontando para várias centenas de páginas, o índice não seria útil. Esse mesmo conceito se aplica aos índices de banco de dados. Se houver apenas alguns valores únicos, o índice não será útil. Dito isso, um índice também pode se tornar grande demais para ser útil. Para analisar as estatísticas de índice, consulte [Estatísticas de índice](/help/sites-deploying/best-practices-for-queries-and-indexing.md#index-statistics) acima.
 
 ### Índices Lucene ou Propriedade? {#lucene-or-property-indexes}
 
@@ -170,9 +166,9 @@ Em geral, é recomendável usar índices Lucene, a menos que haja uma necessidad
 
 ### Indexação Solr {#solr-indexing}
 
-O AEM também oferece suporte à indexação Solr por padrão. Isso é usado principalmente para oferecer suporte à pesquisa de texto completo, mas também pode ser usado para qualquer tipo de consulta JCR. O Solr deve ser considerado quando as instâncias AEM não têm a capacidade de CPU para lidar com o número de consultas necessárias em implantações intensivas de pesquisa, como sites orientados por pesquisa com um alto número de usuários simultâneos. Como alternativa, o Solr pode ser implementado em uma abordagem baseada em crawler para aproveitar alguns dos recursos mais avançados da plataforma.
+O AEM também oferece suporte à indexação Solr por padrão. Ele é usado para oferecer suporte à pesquisa de texto completo, mas também pode ser usado para qualquer tipo de consulta JCR. O Solr deve ser considerado quando as instâncias AEM não têm a capacidade de CPU para lidar com o número de consultas necessárias em implantações intensivas de pesquisa, como sites orientados por pesquisa com um alto número de usuários simultâneos. Como alternativa, o Solr pode ser implementado em uma abordagem baseada em crawler para usar alguns dos recursos mais avançados da plataforma.
 
-Os índices Solr podem ser configurados para execução incorporada no servidor AEM para ambientes de desenvolvimento ou podem ser descarregados em uma instância remota para melhorar a escalabilidade de pesquisa nos ambientes de produção e preparo. Embora a descarga da pesquisa melhore a escalabilidade, ela introduzirá latência e, por causa disso, não é recomendado, a menos que seja necessário. Para obter mais informações sobre como configurar a integração Solr e como criar índices Solr, consulte o [Documentação de consultas e indexação do Oak](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
+Os índices Solr podem ser configurados para execução incorporada no servidor AEM para ambientes de desenvolvimento ou podem ser descarregados em uma instância remota para melhorar a escalabilidade de pesquisa nos ambientes de produção e preparo. Embora a descarga de pesquisa melhore a escalabilidade, ela introduz latência e, por causa disso, não é recomendada, a menos que seja necessária. Para obter mais informações sobre como configurar a integração Solr e como criar índices Solr, consulte o [Documentação de consultas e indexação do Oak](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 
 >[!NOTE]
 >
@@ -180,16 +176,16 @@ Os índices Solr podem ser configurados para execução incorporada no servidor 
 
 A desvantagem de adotar essa abordagem é que, embora por padrão, as consultas de AEM respeitem as ACLs e, portanto, ocultem resultados aos quais um usuário não tem acesso, externalizar a pesquisa para um servidor Solr não oferecerá suporte a esse recurso. Se a pesquisa for externalizada dessa maneira, é necessário ter cuidado extra para garantir que os usuários não tenham resultados que não deveriam ver.
 
-Os possíveis casos de uso em que essa abordagem pode ser adequada são aqueles em que os dados de pesquisa de várias fontes podem precisar ser agregados. Por exemplo, você pode ter um site hospedado no AEM, bem como um segundo site hospedado em uma plataforma de terceiros. O Solr pode ser configurado para rastrear o conteúdo de ambos os sites e armazená-los em um índice agregado. Isso permitiria pesquisas entre sites.
+Os possíveis casos de uso em que essa abordagem pode ser adequada são aqueles em que os dados de pesquisa de várias fontes podem precisar ser agregados. Por exemplo, você pode ter um site sendo hospedado no AEM e um segundo site sendo hospedado em uma plataforma de terceiros. O Solr pode ser configurado para rastrear o conteúdo de ambos os sites e armazená-los em um índice agregado. Isso permitiria pesquisas entre sites.
 
 ### Considerações sobre design {#design-considerations}
 
 A documentação do Oak para índices Lucene lista várias considerações a serem feitas ao criar índices:
 
-* Se a consulta usar restrições de caminho diferentes, utilize `evaluatePathRestrictions`. Isso permitirá que a consulta retorne o subconjunto de resultados no caminho especificado e, em seguida, filtre-os com base na consulta. Caso contrário, a consulta procurará todos os resultados que correspondem aos parâmetros de consulta no repositório e os filtrará com base no caminho.
-* Se a consulta usar classificação, tenha uma definição de propriedade explícita para a propriedade classificada e defina `ordered` para `true` para ele. Isso permitirá que os resultados sejam ordenados como tal no índice e economize em operações de classificação caras no tempo de execução da consulta.
+* Se a consulta usar restrições de caminho diferentes, use `evaluatePathRestrictions`. Isso permite que a consulta retorne o subconjunto de resultados no caminho especificado e, em seguida, filtre-os com base na consulta. Caso contrário, a consulta procurará todos os resultados que correspondam aos parâmetros de consulta no repositório e os filtrará com base no caminho.
+* Se a consulta usar classificação, tenha uma definição de propriedade explícita para a propriedade classificada e defina `ordered` para `true` para ele. Isso permite que os resultados sejam ordenados como tal no índice e salve em operações de classificação dispendiosas no tempo de execução da consulta.
 
-* Coloque apenas o que é necessário no índice. A adição de recursos ou propriedades desnecessários fará com que o índice aumente e diminua o desempenho.
+* Coloque apenas o que é necessário no índice. Adicionar recursos ou propriedades desnecessários faz com que o índice aumente e diminua o desempenho.
 * Em um índice de propriedade, ter um nome de propriedade exclusivo ajudaria a reduzir o tamanho em um índice, mas para índices Lucene, o uso de `nodeTypes` e `mixins` para obter índices coesos. Consulta de um específico `nodeType` ou `mixin` terá melhor desempenho do que consultar `nt:base`. Ao usar essa abordagem, defina `indexRules` para o `nodeTypes` em questão.
 
 * Se as consultas estiverem sendo executadas somente em determinados caminhos, crie esses índices nesses caminhos. Os índices não precisam estar localizados na raiz do repositório.
@@ -197,15 +193,15 @@ A documentação do Oak para índices Lucene lista várias considerações a ser
 
 ### CopyOnRead {#copyonread}
 
-Nos casos em que a `NodeStore` é armazenado remotamente, uma opção chamada `CopyOnRead` pode ser ativado. A opção fará com que o índice remoto seja gravado no sistema de arquivos local quando for lido. Isso pode ajudar a melhorar o desempenho de consultas que geralmente são executadas nesses índices remotos.
+Nos casos em que a `NodeStore` é armazenado remotamente, uma opção chamada `CopyOnRead` pode ser ativado. A opção faz com que o índice remoto seja gravado no sistema de arquivos local quando ele é lido. Isso pode ajudar a melhorar o desempenho de consultas que geralmente são executadas nesses índices remotos.
 
 Isso pode ser configurado no console OSGi na **LuceneIndexProvider** e está habilitado por padrão a partir do Oak 1.0.13.
 
 ### Remoção de Índices {#removing-indexes}
 
-Ao remover um índice, é sempre recomendável desativar temporariamente o índice definindo o `type` propriedade para `disabled` e realize testes para garantir que seu aplicativo funcione corretamente antes de realmente excluí-lo. Observe que um índice não é atualizado enquanto está desativado, portanto, talvez ele não tenha o conteúdo correto se estiver reativado e possa precisar ser reindexado.
+Ao remover um índice, é sempre recomendável desativar temporariamente o índice definindo o `type` propriedade para `disabled` e realize testes para garantir que seu aplicativo funcione corretamente antes de realmente excluí-lo. Um índice não é atualizado enquanto está desativado, portanto, talvez ele não tenha o conteúdo correto se estiver reativado e precise ser reindexado.
 
-Após remover um índice de propriedade em uma instância TarMK, a compactação precisará ser executada para recuperar qualquer espaço em disco que estava em uso. Para índices Lucene, o conteúdo real do índice fica no BlobStore, portanto, uma coleta de lixo do armazenamento de dados seria necessária.
+Após remover um índice de propriedade em uma instância TarMK, a compactação deve ser executada para recuperar qualquer espaço em disco que estava em uso. Para índices Lucene, o conteúdo real do índice fica no BlobStore, portanto, uma coleta de lixo do armazenamento de dados seria necessária.
 
 Ao remover um índice em uma instância do MongoDB, o custo da exclusão é proporcional ao número de nós no índice. Como a exclusão de um índice grande pode causar problemas, a abordagem recomendada é desativar o índice e excluí-lo somente durante uma janela de manutenção, usando uma ferramenta como **oak-mongo.js**. Observe que essa abordagem não deve ser empregada para conteúdo de nó regular, pois pode introduzir inconsistências de dados.
 
@@ -215,15 +211,15 @@ Ao remover um índice em uma instância do MongoDB, o custo da exclusão é prop
 
 ### A Folha de características de consulta JCR {#jcrquerycheatsheet}
 
-Para auxiliar na criação de consultas JCR e definições de índice eficientes, a [Folha de características de consulta JCR](assets/JCR_query_cheatsheet-v1.1.pdf) está disponível para download e uso como referência durante o desenvolvimento. Ele contém exemplos de consulta para o QueryBuilder, XPath e SQL-2, e abrange vários cenários que se comportam de forma diferente em termos de desempenho de consulta. Ela também fornece recomendações sobre como criar ou personalizar índices do Oak. O conteúdo desta Folha de características se aplica ao AEM 6.5 e ao AEM as a Cloud Service.
+Para auxiliar na criação de consultas JCR e definições de índice eficientes, a [Folha de características de consulta JCR](assets/JCR_query_cheatsheet-v1.1.pdf) está disponível para download e uso como referência durante o desenvolvimento. Ela contém exemplos de consulta para o QueryBuilder, XPath e SQL-2, e abrange vários cenários que se comportam de maneira diferente em termos de desempenho de consulta. Ela também fornece recomendações sobre como criar ou personalizar índices do Oak. O conteúdo desta Folha de características se aplica ao AEM 6.5 e ao AEM as a Cloud Service.
 
 ## Reindexação {#re-indexing}
 
 Esta seção descreve as **somente** motivos aceitáveis para reindexar índices Oak.
 
-Fora dos motivos descritos abaixo, iniciar reindexações de índices Oak **não** alterar o comportamento ou resolver problemas e aumentar desnecessariamente a carga no AEM.
+Fora dos motivos descritos abaixo, iniciar reindexações de índices Oak faz **não** alterar o comportamento ou resolver problemas e aumentar desnecessariamente as cargas no AEM.
 
-A reindexação de índices Oak deve ser evitada, a menos que seja feita por um motivo nas tabelas abaixo.
+A reindexação de índices Oak deve ser evitada, a menos que seja feita por uma razão nas tabelas abaixo.
 
 >[!NOTE]
 >
@@ -234,10 +230,9 @@ A reindexação de índices Oak deve ser evitada, a menos que seja feita por um 
 >* o processo de indexação foi concluído
 >
 
-
 ### Alterações na configuração do índice Oak {#oak-index-configuration-changes}
 
-As únicas condições de não-erro aceitáveis para reindexar índices Oak são se a configuração de um índice Oak tiver sido alterada.
+As únicas condições aceitáveis de não-erro para reindexar índices Oak são se a configuração de um índice Oak tiver sido alterada.
 
 *A reindexação deve ser sempre abordada com consideração adequada sobre seu impacto no desempenho geral do AEM e realizada durante períodos de baixa atividade ou janelas de manutenção.*
 
@@ -264,7 +259,7 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
 
 * Como resolver:
 
-   * [Indexar novamente](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) o índice lucene
+   * [Reindexar](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) o índice lucene
    * Como alternativa, toque (execute uma operação de gravação benigna) nos nós ausentes
 
       * Requer toques manuais ou código personalizado
@@ -292,21 +287,21 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
 
    * Versões do Oak anteriores à 1.6:
 
-      * [Indexar novamente](#how-to-re-index) o índice lucene
+      * [Reindexar](#how-to-re-index) o índice lucene
+
    * Oak versões 1.6+
 
       * Se o conteúdo existente não for afetado pelas alterações, apenas uma atualização será necessária
 
          * [Atualizar](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) o índice lucene definindo [oak:queryIndexDefinition]@refresh=true
+
       * Senão, [reindexar](#how-to-re-index) o índice lucene
 
          * Observação: o estado do índice da última reindexação válida (ou indexação inicial) será usado até que uma nova reindexação seja acionada
 
-
-
 ### Situações de erro e excepcionais {#erring-and-exceptional-situations}
 
-A tabela a seguir descreve os únicos erros aceitáveis e as situações excepcionais em que a reindexação de índices do Oak resolverá o problema.
+A tabela a seguir descreve os únicos erros aceitáveis e as situações excepcionais em que a reindexação de índices do Oak resolve o problema.
 
 Se houver um problema no AEM que não corresponda aos critérios descritos abaixo, **não** reindexe os índices, pois isso não resolverá o problema.
 
@@ -334,17 +329,17 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
 
    * Executar uma verificação de repositório de passagem; por exemplo:
 
-      [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
+     [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
 
-      percorrer o repositório determina se outros binários (além dos arquivos do lucene) estão ausentes
+     percorrer o repositório determina se outros binários (além dos arquivos do lucene) estão ausentes
 
    * Se binários diferentes dos índices Lucene estiverem ausentes, restaurar do backup
    * Caso contrário, [reindexar](#how-to-re-index) *all* índices Lucene
    * Nota:
 
-      Essa condição é indicativa de um armazenamento de dados mal configurado que pode resultar em QUALQUER binário (por exemplo, binários de ativos) para serem perdidos.
+     Essa condição indica um armazenamento de dados configurado incorretamente que pode resultar na ausência DE QUALQUER binário (por exemplo, binários de ativos).
 
-      Nesse caso, restaure para a última versão válida do repositório para recuperar todos os binários ausentes.
+     Nesse caso, restaure para a última versão válida do repositório para recuperar todos os binários ausentes.
 
 #### O binário do índice Lucene está corrompido {#lucene-index-binary-is-corrupt}
 
@@ -359,9 +354,9 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
 
 * Como verificar:
 
-   * A variável `AsyncIndexUpdate` (a cada 5s) falhará, com uma exceção, no erro.log:
+   * A variável `AsyncIndexUpdate` (a cada cinco segundos) falhará com uma exceção no error.log:
 
-      `...a Lucene index file is corrupt...`
+     `...a Lucene index file is corrupt...`
 
 * Como resolver:
 
@@ -370,11 +365,11 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
       1. Parar AEM
       1. Excluir a cópia local do índice Lucene em `crx-quickstart/repository/index`
       1. Reiniciar o AEM
+
    * Se isso não resolver o problema e a variável `AsyncIndexUpdate` as exceções persistem, então:
 
-      1. [Indexar novamente](#how-to-re-index) o índice de erros
+      1. [Reindexar](#how-to-re-index) o índice de erros
       1. Também arquive um [Suporte para Adobe](https://helpx.adobe.com/support.html) tíquete
-
 
 ### Como reindexar {#how-to-re-index}
 
@@ -389,13 +384,13 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
 
    * `[oak:queryIndexDefinition]@reindex-async=true`
 
-* Indexe novamente o índice de propriedade de forma assíncrona usando o Console da Web por meio da **PropertyIndexAsyncReindex** MBean;
+* Reindexe o índice de propriedade de forma assíncrona usando o Console da Web por meio da **PropertyIndexAsyncReindex** MBean;
 
-   por exemplo,
+  por exemplo,
 
-   [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
+  [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
 
-#### Reindexação de índices de propriedades do Lucene {#re-indexing-lucene-property-indexes}
+#### Reindexação de índices de propriedade do Lucene {#re-indexing-lucene-property-indexes}
 
 * Uso [oak-run.jar para reindexar](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) o índice de propriedade Lucene.
 * Defina a propriedade async-reindex como true no índice de propriedade lucene
@@ -410,16 +405,16 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
 
 A pré-extração de texto é o processo de extrair e processar texto de binários, diretamente do Armazenamento de dados por meio de um processo isolado e expor diretamente o texto extraído a reindexações subsequentes de índices Oak.
 
-* A pré-extração de texto Oak é recomendada para reindexação de índices Lucene em repositórios com grandes volumes de arquivos (binários) que contêm texto extraível (por exemplo, PDF, documentos do Word, PPTs, TXT etc.) que se qualificam para pesquisa de texto completo por meio de índices Oak implantados; por exemplo `/oak:index/damAssetLucene`.
-* A pré-extração de texto só beneficiará a reindexação/indexação de índices Lucene e NÃO índices de propriedade Oak, já que os índices de propriedade não extraem texto de binários.
-* A pré-extração de texto tem um alto impacto positivo quando a reindexação de texto completo de binários de texto pesado (PDF, Doc, TXT, etc.), em que o como um repositório de imagens não desfrutará das mesmas eficiências, pois as imagens não contêm texto extraível.
-* A pré-extração de texto executa a extração de texto completo relacionado à pesquisa de maneira extra eficiente e o expõe ao processo de reindexação/indexação do Oak de forma extra eficiente para consumo.
+* A pré-extração de texto Oak é recomendada para reindexação de índices Lucene em repositórios com grandes volumes de arquivos (binários) que contenham texto extraível (por exemplo, PDF, documentos do Word, PPTs, TXT e assim por diante) que se qualificam para pesquisa de texto completo por meio de índices Oak implantados; por exemplo, `/oak:index/damAssetLucene`.
+* A pré-extração de texto beneficia apenas a reindexação/indexação de índices Lucene e NÃO índices de propriedade Oak, já que os índices de propriedade não extraem texto de binários.
+* A pré-extração de texto tem um alto impacto positivo quando a reindexação de texto completo de binários com muitos textos (PDF, Doc, TXT e assim por diante), enquanto um repositório de imagens não desfrutará da mesma eficiência, já que as imagens não contêm texto extraível.
+* A pré-extração de texto executa a extração de texto completo relacionado à pesquisa de maneira extra eficiente e o expõe ao processo de reindexação/indexação do Oak de forma extra eficiente para o consumo.
 
 #### Quando a pré-extração de texto PODE ser usada? {#when-can-text-pre-extraction-be-used}
 
-Indexar novamente um **existente** índice lucene com extração binária ativada
+Reindexação de um **existente** índice lucene com extração binária ativada
 
-* Reindexação do processamento **all** conteúdo candidato no repositório; quando os binários dos quais extrair o texto completo são numerosos ou complexos, um aumento na carga computacional para realizar a extração de texto completo é colocado no AEM. A pré-extração de texto move o &quot;trabalho computacional dispendioso&quot; da extração de texto para um processo isolado que acessa diretamente o AEM Data Store, evitando sobrecarga e contenção de recursos no AEM.
+* Reindexação em processamento **all** conteúdo candidato no repositório; quando os binários dos quais extrair o texto completo são numerosos ou complexos, um aumento na carga computacional para realizar a extração de texto completo é colocado no AEM. A pré-extração de texto move o &quot;trabalho computacional dispendioso&quot; da extração de texto para um processo isolado que acessa diretamente o AEM Data Store, evitando sobrecarga e contenção de recursos no AEM.
 
 O apoio à implantação de um **novo** índice de lucene para AEM com extração binária ativada
 
@@ -440,7 +435,7 @@ Em operação normal do AEM, por exemplo, fazer upload de ativos por meio da int
 * Uma janela de manutenção para gerar o arquivo CSV E executar a reindexação final
 * Versão do Oak: 1.0.18+, 1.2.3+
 * [oak-run.jar](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)versão 1.7.4+
-* Uma pasta/compartilhamento do sistema de arquivos para armazenar o texto extraído acessível das instâncias de AEM de indexação
+* Uma pasta/compartilhamento do sistema de arquivos para armazenar o texto extraído acessível das instâncias de indexação do AEM
 
    * A configuração OSGi de pré-extração de texto requer um caminho de sistema de arquivos para os arquivos de texto extraídos, de modo que eles devem ser acessíveis diretamente da instância AEM (unidade local ou montagem de compartilhamento de arquivos)
 
@@ -462,7 +457,7 @@ Em operação normal do AEM, por exemplo, fazer upload de ativos por meio da int
 
 1b. A lista de nós (1a) é armazenada no sistema de arquivos como um arquivo CSV
 
-Observe que todo o armazenamento de nós é percorrido (conforme especificado pelos caminhos no comando oak-run) sempre que `--generate` é executado e uma **novo** Arquivo CSV criado. O arquivo CSV é **não** reutilizado entre execuções discretas do processo de pré-extração de texto (Etapas 1 - 2).
+Todo o armazenamento de nós é percorrido (conforme especificado pelos caminhos no comando oak-run) todas as vezes `--generate` é executado e uma **novo** Arquivo CSV criado. O arquivo CSV é **não** reutilizado entre execuções discretas do processo de pré-extração de texto (Etapas 1 - 2).
 
 **Pré-extrair texto para o sistema de arquivos**
 
@@ -472,16 +467,16 @@ Observe que todo o armazenamento de nós é percorrido (conforme especificado pe
 
 2b. O processo iniciado no (2a) acessa os nós binários definidos no CSV no Armazenamento de dados diretamente e extrai o texto.
 
-2-C.  O texto extraído é armazenado no sistema de arquivos em um formato assimilável pelo processo de reindexação do Oak (3a)
+2-C. O texto extraído é armazenado no sistema de arquivos em um formato assimilável pelo processo de reindexação do Oak (3a)
 
 O texto pré-extraído é identificado no CSV pela impressão digital binária. Se o arquivo binário for o mesmo, o mesmo texto pré-extraído poderá ser usado em instâncias AEM. Como o AEM Publish geralmente é um subconjunto do AEM Author, o texto pré-extraído do AEM Author também pode ser usado para reindexar o AEM Publish (supondo que o AEM Publish tenha acesso ao sistema de arquivos para os arquivos de texto extraídos).
 
-O texto pré-extraído pode ser adicionado de forma incremental ao ao longo do tempo. A pré-extração de texto ignorará a extração de binários extraídos anteriormente, portanto, é prática recomendada manter o texto pré-extraído caso a reindexação ocorra novamente no futuro (supondo que o conteúdo extraído não seja muito grande. Se for, avalie o compactação do conteúdo nesse ínterim, já que o texto é bem compactado).
+O texto pré-extraído pode ser adicionado de forma incremental ao ao longo do tempo. A pré-extração de texto ignorará a extração de binários extraídos anteriormente, portanto, é prática recomendada manter o texto pré-extraído para o caso de a reindexação ocorrer novamente no futuro (supondo que o conteúdo extraído não seja muito grande. Se for, avalie o compactação do conteúdo nesse ínterim, já que o texto é bem compactado).
 
-**Indexar novamente índices Oak, obtendo texto completo de arquivos de texto extraído**
+**Reindexar índices Oak, obtendo texto completo de arquivos de texto extraído**
 
 *Execute a reindexação (Etapas 3a-b) durante um período de manutenção/baixo uso, pois o Armazenamento de nós é percorrido durante essa operação, o que pode incorrer em carga significativa no sistema.*
 
-3a. [Indexar novamente](#how-to-re-index) de índices Lucene é chamado no AEM
+3a. [Reindexar](#how-to-re-index) de índices Lucene é invocado no AEM.
 
 3b. A configuração OSGi Apache Jackrabbit Oak DataStore PreExtractingTextProvider (configurada para apontar para o texto extraído por meio de um caminho de sistema de arquivos) instrui o Oak para o texto completo de origem dos arquivos extraídos, e evita atingir diretamente e processar os dados armazenados no repositório.
