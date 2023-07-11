@@ -10,16 +10,16 @@ discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 feature: Adaptive Forms
 exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '937'
 ht-degree: 1%
 
 ---
 
 # Tutorial: publique seu formulário adaptável {#tutorial-publish-your-adaptive-form}
 
-![](do-not-localize/13-publish-your-adaptive-form-small.png)
+![Imagem principal](do-not-localize/13-publish-your-adaptive-form-small.png)
 
 Este tutorial é uma etapa da [Criar O Primeiro Formulário Adaptável](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) série. É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso completo do tutorial.
 
@@ -69,7 +69,8 @@ AEM [!DNL Forms] fornecer um componente, AEM [!DNL Forms] Contêiner, para incor
    * Se você modificar apenas o formulário inserido em uma página de site publicada, publique o formulário original e as alterações refletirão na página de site publicada. A página do site publicada inclui uma referência ao formulário e não requer a republicação da página.
    * Se você modificar a variável [!DNL Sites] e o formulário incorporado, publique novamente a [!DNL Sites] página e o formulário.
 
-      ![incorporado no aem-sites](assets/embed-in-aem-sites.png)
+     ![incorporado no aem-sites](assets/embed-in-aem-sites.png)
+
    Formulário de alteração de endereço de remessa e cobrança adicionado a um AEM [!DNL Sites] página.
 
 ## Incorporar o formulário adaptável em uma página da Web externa {#embed-the-adaptive-form-in-an-external-webpage}

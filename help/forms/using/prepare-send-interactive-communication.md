@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '2021'
+source-wordcount: '2022'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,7 @@ Na guia Conteúdo, gerencie o conteúdo, como fragmentos de documento e variáve
 
       * [Copiar e colar texto formatado de outros aplicativos](#pasteformattedtext)
       * [Realçar partes do texto](#highlightemphasize)
+
    * [Caracteres especiais](#specialcharacters)
    * [Atalhos de teclado](/help/forms/using/keyboard-shortcuts.md)
 
@@ -147,7 +148,7 @@ A interface do usuário do agente tem suporte integrado para 210 caracteres espe
 
 ### Fragmentos do documento {#document-fragments}
 
-![](do-not-localize/contentoptionsdocfragments.png)
+![document-fragments-ui-operations](do-not-localize/contentoptionsdocfragments.png)
 
 * **Setas para cima/para baixo**: setas para mover fragmentos de documento para cima ou para baixo na Comunicação interativa.
 * **Excluir**: Se permitido, exclua o fragmento do documento da Comunicação interativa.
@@ -324,20 +325,20 @@ A tabela a seguir explica a amostra `ccrDocumentInstance` Implementação da SPI
   <td><p><strong>Exemplos de serviço de banco de dados</strong></p></td> 
    </tr>
   <tr>
-   <td><p>Você pode criar um rascunho para uma Comunicação interativa ou enviá-lo diretamente. A API para a operação de salvamento verifica se a Comunicação interativa é enviada como um rascunho e inclui um nome de rascunho. A API chama o serviço mySQLDataBaseServiceCRUD com Salvar como o método de entrada.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
-   <td><p>O serviço mySQLDataBaseServiceCRUD verifica Salvar como o método de entrada e gera uma ID de rascunho gerada automaticamente e a retorna ao AEM. A lógica para gerar uma ID de rascunho pode variar com base no banco de dados.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
+   <td><p>Você pode criar um rascunho para uma Comunicação interativa ou enviá-lo diretamente. A API para a operação de salvamento verifica se a Comunicação interativa é enviada como um rascunho e inclui um nome de rascunho. A API chama o serviço mySQLDataBaseServiceCRUD com Salvar como o método de entrada.</p></br><img src="assets/save-as-draft-save-operation.png"/></td>
+   <td><p>O serviço mySQLDataBaseServiceCRUD verifica Salvar como o método de entrada e gera uma ID de rascunho gerada automaticamente e a retorna ao AEM. A lógica para gerar uma ID de rascunho pode variar com base no banco de dados.</p></br><img src="assets/save-operation-service.png"/></td>
    </tr>
   <tr>
-   <td><p>A API da operação de atualização recupera o status do rascunho da Comunicação interativa e verifica se a Comunicação interativa inclui um nome de rascunho. A API chama o serviço mySQLDataBaseServiceCRUD para atualizar esse status no Banco de Dados.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
+   <td><p>A API da operação de atualização recupera o status do rascunho da Comunicação interativa e verifica se a Comunicação interativa inclui um nome de rascunho. A API chama o serviço mySQLDataBaseServiceCRUD para atualizar esse status no Banco de Dados.</p></br><img src="assets/save-as-draft-update-operation.png"/></td>
    <td><p>O serviço mySQLDataBaseServiceCRUD verifica Update como o método de entrada e salva o status do rascunho de Comunicação Interativa no banco de dados.</br></p><img src="assets/update-operation-service.png"/></td>
    </tr>
    <tr>
    <td><p>A API para a operação get verifica se a Comunicação interativa inclui uma ID de rascunho. A API chama o serviço mySQLDataBaseServiceCRUD com Get como o método de entrada para recuperar os dados da comunicação interativa.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
-   <td><p>O serviço mySQLDataBaseServiceCRUD verifica Get como o método de entrada e recupera os dados para a Comunicação Interativa com base na ID de rascunho.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
+   <td><p>O serviço mySQLDataBaseServiceCRUD verifica Get como o método de entrada e recupera os dados para a Comunicação Interativa com base na ID de rascunho.</p></br><img src="assets/get-operation-service.png"/></td>
    </tr>
    <tr>
    <td><p>A API da operação getAll chama o serviço mySQLGetALLData para recuperar dados de todas as Comunicações interativas salvas no banco de dados.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
-   <td><p>O serviço mySQLGetALLData recupera dados de todas as Comunicações Interativas salvas no banco de dados.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
+   <td><p>O serviço mySQLGetALLData recupera dados de todas as Comunicações Interativas salvas no banco de dados.</p></br><img src="assets/getall-operation-service.png"/></td>
    </tr>
   </tbody>
 </table>

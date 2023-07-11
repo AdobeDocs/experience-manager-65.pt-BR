@@ -9,9 +9,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ O AEM 6.5.12.0 Forms no JEE fornece dois tipos de instaladores: Instalador compl
 
 A tabela a seguir mostra cenários de uso do instalador de patch e completo.
 
-![](assets/full-and-patch-installer.png)
+![Cenário do instalador completo e de patch](assets/full-and-patch-installer.png)
 
 Execute o seguinte procedimento para usar o instalador completo para atualizar o AEM 6.3 Forms existente no JEE ou o AEM 6.4 Forms AEM no JEE para o 6.5.12.0 Forms no JEE:
 

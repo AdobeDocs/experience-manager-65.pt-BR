@@ -10,9 +10,9 @@ discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 feature: Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ O HTML5 Forms é um novo recurso do software Adobe Experience Manager 6.0 (AEM 6
 
 Os formulários HTML5 geram documentos baseados em construções HTML5 padrão. Você pode ver formulários de HTML5 em todos os navegadores modernos com suporte para HTML5. Não é necessário instalar plug-ins adicionais do navegador para os navegadores. Para obter mais informações sobre os navegadores compatíveis, consulte [Plataformas de cliente compatíveis](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
 
-![](do-not-localize/mobile_form_on_an_ipad_date_14.png)
+![Visualização do formulário HTML5](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
 ## Principais recursos dos formulários HTML5 {#key-capabilities-of-html-forms-br}
 

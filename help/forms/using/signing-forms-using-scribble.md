@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ Você pode tocar no **Configurar** ![configurar](assets/configure.png) ícone pa
 >[!NOTE]
 >
 >As assinaturas são sempre salvas em formato PNG.
+>
 
 ## Configurar um formulário adaptável para usar a assinatura escritas {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -54,12 +55,14 @@ Você pode tocar no **Configurar** ![configurar](assets/configure.png) ícone pa
    >[!NOTE]
    >
    >O componente Etapa de assinatura ocupa toda a largura disponível para o formulário. É recomendável não ter nenhum outro componente na seção que contém o componente Etapa de assinatura.
+   >
 
-1. No Navegador de conteúdo, toque em **Contêiner de formulário** e toque no **Configurar** ![](/help/forms/using/assets/configure.png) ícone. Ela abre as propriedades do navegador e exibe as propriedades do contêiner do Formulário adaptável. Navegue até **Contêiner de formulário adaptável** > **Assinatura eletrônica** e desmarque a opção **Ativar o Adobe Sign** opção. Toque no botão Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) ícone para salvar as alterações.
+1. No Navegador de conteúdo, toque em **Contêiner de formulário** e toque no **Configurar** ![configurar](/help/forms/using/assets/configure.png) ícone. Ela abre as propriedades do navegador e exibe as propriedades do contêiner do Formulário adaptável. Navegue até **Contêiner de formulário adaptável** > **Assinatura eletrônica** e desmarque a opção **Ativar o Adobe Sign** opção. Toque no botão Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) ícone para salvar as alterações.
 
    >[!NOTE]
    >
    >Quando você adiciona um componente Etapa de assinatura a um formulário adaptável, a opção Habilitar Adobe Sign é selecionada automaticamente.
+   >
 
 1. Toque no **Configurar** ![configurar](assets/configure.png) ícone. Ele abre o navegador de propriedades e exibe as propriedades da etapa Assinatura. Configure as seguintes propriedades:
 

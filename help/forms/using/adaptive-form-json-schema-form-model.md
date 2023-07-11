@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 5%
+source-wordcount: '1718'
+ht-degree: 4%
 
 ---
 
@@ -386,170 +386,170 @@ Você deve ser um membro do [grupo forms-power-user](forms-groups-privileges-tas
    <td>Calcular</td>
    <td>Visibilidade</td>
    <td>Validar</td>
-   <td>Ativado</td>
+   <td>Habilitado</td>
    <td>Confirmação de valor</td>
    <td>Clique em </td>
    <td>Opções</td>
   </tr>
   <tr>
    <td>Campo de texto</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Campo numérico</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Escalonador numérico</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Botão de opção</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Telefone</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Alternar</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Botão</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
   </tr>
   <tr>
    <td>Caixa de seleção</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Suspenso</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Opção de imagem</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Campo de entrada de data</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Seletor de data</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Email</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Anexo de arquivo</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Imagem</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>
@@ -558,9 +558,9 @@ Você deve ser um membro do [grupo forms-power-user](forms-groups-privileges-tas
   </tr>
   <tr>
    <td>Draw</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>
@@ -569,9 +569,9 @@ Você deve ser um membro do [grupo forms-power-user](forms-groups-privileges-tas
   </tr>
   <tr>
    <td>Painel</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Ícone de marca de verificação Sim" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>

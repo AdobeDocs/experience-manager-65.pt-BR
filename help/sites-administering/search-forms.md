@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 1a3e0f90bbe133a7b0fc383b997e69b10ca82478
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2068'
 ht-degree: 12%
 
 ---
@@ -397,7 +397,7 @@ Os rótulos das caixas de seleção Publicar e Live Copy para o predicado espec�
 
 ### Criação/abertura de uma configuração personalizada {#creating-opening-a-customized-configuration}
 
-1. Navegue até **Ferramentas**, **Geral**, **Pesquisar no Forms**.
+1. Navegue até **Ferramentas** >>  **Geral** >> **Pesquisar no Forms**.
 
 1. Selecione a configuração que deseja personalizar.
 1. Use o **Editar** ícone para abrir a configuração para atualização.
@@ -440,7 +440,7 @@ Os rótulos das caixas de seleção Publicar e Live Copy para o predicado espec�
 
 1. Selecione o ícone Visualizar:
 
-   ![Ícone Visualizar](do-not-localize/chlimage_1-31.png)
+   ![Visualizar formulários de pesquisa](do-not-localize/chlimage_1-31.png)
 
 1. Isso exibirá os formulários de pesquisa como eles serão exibidos (totalmente expandidos) na coluna Pesquisa do console apropriado.
 

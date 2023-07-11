@@ -9,9 +9,9 @@ discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 318347178fd626dea8e5a15caa7cdad8fe353eba
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '966'
 ht-degree: 9%
 
 ---
@@ -95,7 +95,7 @@ Metas:
 
 ## Etapa 4: Crie o estilo do formulário adaptável {#step-style-your-adaptive-form}
 
-![](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
+![estilo de formulário adaptável](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
 
 Os formulários adaptáveis fornecem temas e uma [editor](../../forms/using/themes.md) para criar temas para os formulários adaptáveis. Um tema contém detalhes de estilo para componentes e painéis, e você pode reutilizar um tema em diferentes formas. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica o tema ao formulário, o estilo especificado é refletido nos componentes correspondentes do formulário. Os formulários adaptáveis também aceitam estilos em linha para estilos específicos de um formulário.
 

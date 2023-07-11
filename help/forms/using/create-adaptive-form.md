@@ -8,9 +8,9 @@ uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
 discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1380'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ Formulários adaptáveis são formulários de nova geração que são dinâmicos
 * [Pré-visualizar e enviar um formulário adaptável](/help/forms/using/create-adaptive-form.md)
 
 No final do artigo, você terá um formulário semelhante ao seguinte:\
-[![](do-not-localize/form-preview-mobile.gif)](do-not-localize/form-preview-mobile.gif)
+[![Visualização de formulário em dispositivos móveis](do-not-localize/form-preview-mobile.gif)](do-not-localize/form-preview-mobile.gif)
 
 ## Etapa 1: criar o formulário adaptável {#step-create-the-adaptive-form}
 
@@ -99,14 +99,14 @@ Os componentes são blocos fundamentais de um formulário adaptável. AEM [!DNL 
      </tr> 
      <tr> 
       <td>Campo obrigatório</td> 
-      <td>Ativado</td> 
-      <td>Ativado</td> 
-      <td>Ativado</td> 
+      <td>Habilitado</td> 
+      <td>Habilitado</td> 
+      <td>Habilitado</td> 
      </tr> 
      <tr> 
       <td>Permitir várias linhas<br /> </td> 
       <td>Desativado</td> 
-      <td>Ativado</td> 
+      <td>Habilitado</td> 
       <td>Desativado</td> 
      </tr> 
     </tbody> 
@@ -119,8 +119,8 @@ Os componentes são blocos fundamentais de um formulário adaptável. AEM [!DNL 
    | Título | Código postal |
    | Nome do elemento | customer_ZIPCode |
    | Número máximo de dígitos | 6 |
-   | Campo obrigatório | Ativado |
-   | Tipo de padrão de exibição | Nenhum padrão |
+   | Campo obrigatório | Habilitado |
+   | Tipo de padrão de exibição | Sem padrão |
 
 1. Arraste um **[!UICONTROL E-mail]** antes do componente de rodapé. Abra as propriedades do componente, defina os valores listados na tabela abaixo e toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -128,7 +128,7 @@ Os componentes são blocos fundamentais de um formulário adaptável. AEM [!DNL 
    |---|---|
    | Título | Email |
    | Nome do elemento | customer_Email |
-   | Campo obrigatório | Ativado |
+   | Campo obrigatório | Habilitado |
 
 1. Arraste um **[!UICONTROL Anexo de arquivo]** antes do componente de rodapé. Abra as propriedades do componente, defina os valores listados na tabela abaixo e toque em ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -148,7 +148,7 @@ Os componentes são blocos fundamentais de um formulário adaptável. AEM [!DNL 
      </tr> 
      <tr> 
       <td>Campo obrigatório</td> 
-      <td>Ativado</td> 
+      <td>Habilitado</td> 
      </tr> 
     </tbody> 
    </table>
@@ -175,7 +175,7 @@ Usando as etapas a seguir, você pode configurar a ação de envio de email e a 
    | Para | `${customer_Email}` |
    | Assunto | Confirmação: você adicionou o endereço de entrega no site We.Retail. |
    | Modelo do e-mail | Oi `${customer_Name}`, O seguinte endereço é adicionado como o endereço de entrega da sua conta: <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Atenciosamente, We.Retail |
-   | Incluir anexos | Ativado |
+   | Incluir anexos | Habilitado |
 
    Seu formulário está pronto. Agora, você pode visualizar o formulário e testar a funcionalidade. Se você usou o nome mencionado no tutorial e acessou o formulário na máquina que executa o AEM [!DNL Forms] , então o formulário estará disponível em [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
 

@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '3681'
+source-wordcount: '3682'
 ht-degree: 2%
 
 ---
 
 # Fluxo de trabalho centrado no Forms no OSGi{#forms-centric-workflow-on-osgi}
 
-![](do-not-localize/header.png)
+![hero-image](do-not-localize/header.png)
 
 As empresas coletam dados de centenas e milhares de formulários, vários sistemas de back-end e fontes de dados online ou offline. Eles também têm um conjunto dinâmico de usuários para tomar decisões sobre os dados, o que envolve processos iterativos de revisão e aprovação.
 
@@ -236,7 +236,7 @@ Um administrador (um membro do grupo de administradores de fd) pode configurar u
   </tr>
   <tr>
    <td><span class="uicontrol">Processar arquivos usando</code></td>
-   <td>Selecione o <span class="uicontrol">Fluxo de trabalho </code>opção. </code></td>
+   <td>Selecione o <span class="uicontrol">Fluxo de trabalho </code>opção. </td>
   </tr>
   <tr>
    <td><span class="uicontrol">Modelo de fluxo de trabalho</code></td>

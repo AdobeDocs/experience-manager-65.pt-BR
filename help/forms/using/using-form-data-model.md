@@ -10,16 +10,16 @@ discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
 
 # Usar modelo de dados de formulário{#use-form-data-model}
 
-![](do-not-localize/data-integeration.png)
+![hero-image](do-not-localize/data-integration.png)
 
 A integração de dados do AEM Forms permite usar fontes de dados de back-end diferentes para criar um modelo de dados de formulário que você pode usar como esquema em vários formulários adaptáveis e workflows de comunicações interativas. Ele requer a configuração de fontes de dados e a criação de um modelo de dados de formulário com base nos objetos e serviços do modelo de dados disponíveis nas fontes de dados. Para obter mais informações, consulte o seguinte:
 

@@ -10,7 +10,7 @@ discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 feature: Interactive Communication
 exl-id: bef1f05e-aea2-433e-b3d5-0b7ad8163fa7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 0%
@@ -93,6 +93,7 @@ Execute as seguintes etapas para criar um modelo XDP para o canal de impressão:
 
       * Encargos
       * Gráficos
+
    * ChamadasDiscriminadas
    * PayNow
    * ValueAddedServices
@@ -162,6 +163,7 @@ Para criar um fragmento de layout para o canal de impressão da Comunicação in
    1. Selecionar **.xdp** do **Salvar como tipo** lista suspensa.
 
    1. Toque **Salvar**.
+
    Depois de criar um modelo XDP para fragmento de layout usando o Forms Designer, você deve [upload](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) para o servidor do AEM Forms, para que o modelo fique disponível para uso ao criar fragmentos de layout.
 
 ## Criar modelo para canal da Web {#create-template-for-web-channel}
@@ -231,7 +233,7 @@ Execute as seguintes etapas para criar um modelo para o canal da Web no **Create
    1. Especificar **Detalhes da Lista** no campo Título.
    1. Selecionar **1** do **Número de colunas** lista suspensa.
 
-   1. Toque ![](/help/forms/using/assets/done_icon.png) para salvar as propriedades.
+   1. Toque ![Salvar](/help/forms/using/assets/done_icon.png) para salvar as propriedades.
 
    O nome do painel é atualizado para **Detalhes da Lista** na árvore de conteúdo.
 
@@ -275,4 +277,4 @@ Com base no caso de uso, você deve incluir o **Pagar agora** e **Assinar** bot�
 
    ![Componentes permitidos](assets/allowed_components_af_new.png)
 
-1. Toque ![done_icon](assets/done_icon.png) para salvar as propriedades.
+1. Toque ![save](assets/done_icon.png) para salvar as propriedades.
