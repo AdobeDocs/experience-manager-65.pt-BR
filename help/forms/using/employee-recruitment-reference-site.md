@@ -1,14 +1,10 @@
 ---
 title: Apresentação do site de referência de recrutamento do funcionário
-seo-title: Employee recruitment
 description: O site de referência do AEM Forms mostra como as organizações podem usar os recursos do AEM Forms para implementar o workflow de recrutamento de funcionários.
-seo-description: AEM Forms reference site showcases how organizations can use AEM Forms features to implement employee recruitment workflow.
-uuid: 27e456ba-3c08-4c43-ad54-1ba0070995ad
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 exl-id: bdfc0a20-1e98-47f9-a1d1-5af5b3ef15db
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 0%
@@ -92,7 +88,7 @@ Certifique-se de especificar uma ID de e-mail válida no aplicativo, pois qualqu
 
 ## Perfil de Sarah Rose na lista de candidatos de John Jacobs para a triagem do gerente de contratação {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
 
-A organização recebe a requisição de cargo submetida por Sarah. John Jacobs, um recrutador, é designado para revisar o perfil de Sarah. Ele revisa a tarefa em sua Caixa de entrada AEM, encontra o perfil que corresponde ao requisito do cargo e clica em Shortlist. O perfil de Sarah é encaminhado para Gloria Rios, a gerente de contratação, para sua aprovação.
+A organização recebe a requisição de cargo submetida por Sarah. John Jacobs, um recrutador, é designado para revisar o perfil de Sarah. John analisa a tarefa em sua Caixa de entrada AEM, encontra o perfil que corresponde ao requisito da tarefa e clica em Shortlist. O perfil de Sarah é encaminhado para Gloria Rios, a gerente de contratação, para sua aprovação.
 
 ![jjacobs-inbox-1](assets/jjacobs-inbox-1.png)
 
@@ -138,7 +134,7 @@ John Doe recebe a tarefa de agendar uma entrevista em sua caixa de entrada. John
 
 ![johnjacobsaeminbox](assets/johnjacobsaeminbox.png)
 
-Caixa de entrada do AEM de John Doe
+Caixa de entrada AEM de John Doe
 
 ![johndoescheduleentrevista](assets/johndoescheduleinterview.png)
 
@@ -146,7 +142,7 @@ John Doe agenda a entrevista e envia os detalhes para Sarah Rose
 
 ## Sarah Rose recebe o e-mail com a programação da entrevista {#sarah-rose-receives-the-email-with-interview-schedule}
 
-Sarah Rose recebe o email com cronograma de entrevistas, local e outros detalhes. Ela clica em Accept para indicar que está bem com o cronograma e o local da entrevista. Como guiado pela informação precisa, Sarah chega às entrevistas.
+Sarah Rose recebe o email com cronograma de entrevistas, local e outros detalhes. Sarah clica em Accept para indicar que está bem com o cronograma e o local da entrevista. Como guiado pela informação precisa, Sarah chega às entrevistas.
 
 ![sarahroseinterviewemail](assets/sarahroseinterviewemail.png)
 
@@ -166,7 +162,7 @@ Gloria Rios seleciona Sarah Rose após as entrevistas
 
 ## John Doe solicita mais informações {#john-doe-requests-more-information}
 
-Antes de pedir a um candidato para ingressar na organização, seu histórico precisa ser verificado. John Doe abre e revisa os detalhes da candidata selecionada e descobre que alguns de seus detalhes de emprego e educação ainda não foram preenchidos. Cliques do John Doe Precisam de mais informações.
+Antes de pedir a um candidato para se juntar à organização, os antecedentes de Sarah devem ser verificados. John Doe abre e revisa os detalhes da candidata selecionada e descobre que alguns de seus detalhes de emprego e educação ainda não foram preenchidos. Cliques do John Doe Precisam de mais informações.
 
 ![johndoeinbox](assets/johndoeinbox.png) ![johndoeneedmoreinformation](assets/johndoeneedmoreinformation.png)
 
@@ -208,7 +204,7 @@ John Jacobs vê a solicitação de verificação de histórico em sua caixa de e
 
 ![johnjacobsbackgroundcheckinbox](assets/johnjacobsbackgroundcheckinbox.png)
 
-Caixa de entrada do AEM de John Jacobs
+Caixa de entrada AEM de John Jacobs
 
 ![johnjacobsbackgroundcheckgoahead](assets/johnjacobsbackgroundcheckgoahead.png)
 
@@ -216,11 +212,11 @@ Depois de executar a verificação de background, John Jacobs clica em Ir adiant
 
 ## John Doe envia a carta de adesão para Sarah Rose {#john-doe-sends-out-the-joining-letter-to-sarah-rose}
 
-John Doe recebe uma solicitação em sua caixa de entrada do AEM para enviar a carta de associação. John abre a solicitação e visualiza os detalhes. John Doe anexa a PDF da carta de junção e clica em Anexar e enviar carta de junção.
+John Doe recebe uma solicitação em sua Caixa de entrada do AEM para enviar a carta de associação. John abre a solicitação e visualiza os detalhes. John Doe anexa a PDF da carta de junção e clica em Anexar e enviar carta de junção.
 
 ![johndoejoiningletterinbox](assets/johndoejoiningletterinbox.png)
 
-Caixa de entrada do AEM de John Doe
+Caixa de entrada AEM de John Doe
 
 ![johndoejoiningletterattachandsend](assets/johndoejoiningletterattachandsend.png)
 

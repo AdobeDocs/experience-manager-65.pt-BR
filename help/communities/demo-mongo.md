@@ -1,9 +1,6 @@
 ---
 title: Como configurar o MongoDB para demonstração
-seo-title: How to Setup MongoDB for Demo
 description: Como configurar o MSRP para uma instância de autor e uma instância de publicação
-seo-description: How to setup MSRP for one author instance and one publish instance
-uuid: d2035a9e-f05c-4f90-949d-7cdae9646750
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -11,9 +8,9 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -38,17 +35,17 @@ Essa configuração é adequada para *não produção* ambientes como para desen
 
 ### Instalar MongoDB {#install-mongodb}
 
-* Baixar MongoDB de [https://www.mongodb.org/](https://www.mongodb.org/)
+* Baixar MongoDB de [https://www.mongodb.com/](https://www.mongodb.com/)
 
    * Opção de sistema operacional:
 
-      * Linux
+      * Linux®
       * Mac 10.8
       * Windows 7
+
    * Escolha da versão:
 
       * No mínimo, use a versão 2.6
-
 
 * Configuração básica
 
@@ -56,9 +53,9 @@ Essa configuração é adequada para *não produção* ambientes como para desen
    * Configurar para mongod:
 
       * Não é necessário configurar mongos ou fragmentação.
-   * A pasta MongoDB instalada será chamada de &lt;mongo-install>.
-   * O caminho do diretório de dados definido será chamado de &lt;mongo-dbpath>.
 
+   * A pasta MongoDB instalada é chamada &lt;mongo-install>.
+   * O caminho do diretório de dados definido é chamado &lt;mongo-dbpath>.
 
 * O MongoDB pode ser executado no mesmo host que o AEM ou remotamente.
 
@@ -66,7 +63,7 @@ Essa configuração é adequada para *não produção* ambientes como para desen
 
 * &lt;mongo-install>/bin/mongod — dbpath &lt;mongo-dbpath>
 
-Isso iniciará um servidor MongoDB usando a porta padrão 27017.
+Isso inicia um servidor MongoDB usando a porta padrão 27017.
 
 * Para o Mac, aumente o ulimit com o argumento inicial &#39;ulimit -n 2048&#39;
 
@@ -100,13 +97,13 @@ Os comandos a seguir são um exemplo de configuração de um conjunto de réplic
 
    * Adequado para qualquer SO.
    * Solr versão 7.0.
-   * Solr requer Java 1.7 ou superior.
+   * Solr requer Java™ 1.7 ou superior.
 
 * Configuração básica
 
    * Siga o &quot;exemplo&quot; de configuração Solr.
    * Nenhum serviço é necessário.
-   * A pasta Solr instalada será chamada de &lt;solr-install>.
+   * A pasta Solr instalada é chamada &lt;solr-install>.
 
 ### Configurar Solr para AEM Communities {#configure-solr-for-aem-communities}
 
@@ -122,20 +119,21 @@ O método de execução do Solr pode diferir dependendo da versão e da maneira 
 Para simplificar, usando a versão 4.10 como exemplo, inicie o Solr no modo independente:
 
 * cd para &lt;solrinstall>/exemplo
-* java -jar start.jar
+* Java™ -jar start.jar
 
-Isso iniciará um servidor HTTP Solr usando a porta padrão 8983. Você pode navegar até o console Solr para obter um console Solr para testes.
+Este processo inicia um servidor HTTP Solr usando a porta padrão 8983. Você pode navegar até o console Solr para obter um console Solr para testes.
 
 * console Solr padrão: [http://localhost:8983/solr/](http://localhost:8983/solr/)
 
 >[!NOTE]
 >
 >Se o Console Solr não estiver disponível, verifique os logs em &lt;solrinstall>/example/logs. Verifique se o SOLR está tentando se vincular a um nome de host específico que não pode ser resolvido (por exemplo, &quot;user-macbook-pro&quot;).
-Em caso afirmativo, atualize o arquivo etc/hosts com uma nova entrada para esse nome de host (por exemplo, 127.0.0.1 user-macbook-pro) e o Solr será iniciado corretamente.
+>
+Em caso afirmativo, atualize `etc/hosts` com uma nova entrada para esse nome de host (por exemplo, 127.0.0.1 user-macbook-pro) para iniciar Solr corretamente.
 
 ### SolrCloud {#solrcloud}
 
-Para executar uma configuração muito básica (não de produção) solrCloud, inicie solr com:
+Para executar uma configuração básica (não de produção) solrCloud, inicie solr com:
 
 * `java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar`
 
@@ -143,7 +141,7 @@ Para executar uma configuração muito básica (não de produção) solrCloud, i
 
 Inicie o autor e publique instâncias AEM, se necessário.
 
-Se o AEM estava em execução antes do MongoDB ser iniciado, as instâncias do AEM precisarão ser reiniciadas.
+Se o AEM estava em execução antes do MongoDB ser iniciado, as instâncias do AEM devem ser reiniciadas.
 
 Siga as instruções na página principal da documentação: [MSRP - Armazenamento comum do MongoDB](msrp.md)
 
@@ -161,7 +159,7 @@ Para testar e verificar o armazenamento comum do MongoDB, publique um comentári
 
    ![exibir-comentário](assets/view-comment.png)
 
-   Observação: embora existam nós JCR no *asipath* na criação, elas são para a estrutura SCF. O UGC real não está no JCR, ele está no MongoDB.
+   Observação: embora existam nós JCR no *asipath* na criação, esses nós são para a estrutura SCF. O UGC real não está no JCR, ele está no MongoDB.
 
 1. Visualizar o UGC no mongodb **[!UICONTROL Communities]** > **[!UICONTROL Coleções]** > **[!UICONTROL Conteúdo]**
 
@@ -184,7 +182,7 @@ Para testar e verificar o armazenamento comum do MongoDB, publique um comentári
 
 1. Verifique se o MSRP foi configurado para ser o provedor padrão:
 
-   * Em todas as instâncias de AEM do autor e de publicação, revisite a [Console de configuração de armazenamento](srp-config.md) ou verifique o repositório AEM:
+   * Em todas as instâncias de AEM do autor e de publicação, revisite a [Console de configuração de armazenamento](srp-config.md)ou verifique o repositório AEM:
 
    * No JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) não contém um [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) significa que o provedor de armazenamento é JSRP.
    * Se o nó srpc existir e contiver o nó [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), as propriedades defaultconfiguration devem definir o MSRP como o provedor padrão.

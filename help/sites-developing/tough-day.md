@@ -4,9 +4,9 @@ description: O teste Dia difícil simula a carga diária de cerca de 1000 autore
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 1b92b973209fdbd2509b1c644c1064a1e9224a9e
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1824'
 ht-degree: 2%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 2%
 
 ## O que é difícil dia 2 {#what-is-tough-day}
 
-&quot;Dia difícil 2&quot; é um aplicativo que permite testar os limites da sua instância de AEM. Ele pode ser executado imediatamente com o conjunto de testes padrão ou pode ser configurado para atender às suas necessidades de teste. Você pode assistir [esta gravação](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) para a apresentação do pedido.
+&quot;Dia difícil 2&quot; é um aplicativo que permite testar os limites da sua instância de AEM. Ele pode ser executado imediatamente com o conjunto de testes padrão ou pode ser configurado para atender às suas necessidades de teste. Você pode assistir [esta gravação](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) para a apresentação do pedido.
 
 >[!CAUTION]
 >
->O Dia Difícil 2 exige o Java 8.
+>O Dia Difícil 2 exige o Java™ 8.
 
 ## Como executar difícil dia 2 {#how-to-run-tough-day}
 
@@ -41,7 +41,7 @@ O conjunto contém 15% de ações de gravação e 85% de ações de leitura.
 
 Para executar os testes do conjunto, o Dia Difícil 2 instalará seu pacote de conteúdo padrão. Isso pode ser evitado definindo o `installsamplecontent`parâmetro para `false`, mas lembre-se de que você também deve alterar os caminhos padrão para os testes que pretende executar. Se o jar for executado sem parâmetros, o Dia Difícil 2 exibirá a variável [informações de ajuda](/help/sites-developing/tough-day.md#getting-help).
 
-Como regra geral, você pode usar o aplicativo seguindo este padrão:
+Como regra, você pode usar o aplicativo seguindo este padrão:
 
 ```xml
 java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  [<global arguments> | <actions> | --runmode | --publishmode]
@@ -49,7 +49,8 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 >[!NOTE]
 >
->O Dia Difícil 2 não tem uma etapa de limpeza. Como resultado, é recomendável executar o Dia de resistência 2 em uma instância de preparo clonada e não na instância de produção principal. A instância de preparo deve ser descartada após os testes.
+O Dia Difícil 2 não tem uma etapa de limpeza. Como resultado, é recomendável executar o Dia de resistência 2 em uma instância de preparo clonada e não na instância de produção principal. A instância de preparo deve ser descartada após os testes.
+>
 
 ### Obtendo ajuda {#getting-help}
 
@@ -91,22 +92,22 @@ Na tabela abaixo, você pode encontrar os parâmetros de ajuda relevantes.
   <tr>
    <td> — help — runmode/publishmode type=&lt;mode&gt;</td>
    <td>Lista informações sobre o modo de execução ou publicação especificado.</td>
-   <td><p>java - jar toughday2. jar — help — runmode type=constantload</p> <p>java -jar toughday2.jar —help —publishmode type=interval</p> </td>
+   <td><p>Java™ - jar toughday2.jar — help — runmode type=constantload</p> <p>Java™ -jar toughday2.jar —help —publishmode type=interval</p> </td>
   </tr>
   <tr>
    <td>— help — suite=&lt;suitename&gt;</td>
    <td>Lista todos os testes de um determinado conjunto e suas respectivas propriedades configuráveis.</td>
-   <td><br /> java - jar toughday2. jar — help — suite=get_ tests</td>
+   <td><br /> Java™ - jar toughday2.jar — help — suite=get_tests</td>
   </tr>
   <tr>
    <td> — help — tag=&lt;tag&gt;</td>
    <td><br /> Lista todos os itens que têm a tag especificada.</td>
-   <td>java -jar toughday2.jar —help —tag=publicar</td>
+   <td>Java™ -jar toughday2.jar — help —tag=publish</td>
   </tr>
   <tr>
    <td>— help &lt;testclass publisherclass=""&gt;</td>
    <td><br /> Lista todas as propriedades configuráveis para determinado teste ou editor.</td>
-   <td><p>java -jar toughday2.jar —help UploadPDFTest</p> <p>java -jar toughday2.jar — help CSVPublisher</p> </td>
+   <td><p>Java™ -jar toughday2.jar —ajuda UploadPDFTest</p> <p>Java™ -jar toughday2.jar —ajuda CSVPublisher</p> </td>
   </tr>
  </tbody>
 </table>
@@ -139,7 +140,7 @@ Você pode encontrar os parâmetros relevantes na lista abaixo:
 
 ## Personalização {#customizing}
 
-A personalização pode ser obtida de duas maneiras: parâmetros de linha de comando ou arquivos de configuração yaml. **Os arquivos de configuração geralmente são usados para grandes conjuntos personalizados e eles substituirão os parâmetros padrão do Dia difícil 2. Os parâmetros da linha de comando substituem os arquivos de configuração e os parâmetros padrão.**
+A personalização pode ser obtida de duas maneiras: parâmetros de linha de comando ou arquivos de configuração yaml. **Os arquivos de configuração são usados para grandes conjuntos personalizados e eles substituem os parâmetros padrão do Dia difícil 2. Os parâmetros de linha de comando substituem os arquivos de configuração e os parâmetros padrão.**
 
 A única maneira de salvar uma configuração de teste é copiá-la no formato yaml.
 
@@ -237,7 +238,7 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Os testes existentes em um determinado conjunto também podem ser reconfigurados usando o `config`* *parâmetro. Observe que você também deve especificar o nome do conjunto e o nome real do teste (não o nome da Classe de teste). Você pode encontrar o nome do teste na variável `name` propriedade da classe de teste. Para obter mais detalhes sobre como encontrar propriedades de teste, leia a [Alterando propriedades de teste](/help/sites-developing/tough-day.md#changing-the-test-properties) seção.
+Os testes existentes em um determinado conjunto também podem ser reconfigurados usando o `config`* *parâmetro. Você também deve especificar o nome do conjunto e o nome real do teste (não o nome da Classe de Teste). Você pode encontrar o nome do teste na variável `name` propriedade da classe de teste. Para obter mais detalhes sobre como encontrar propriedades de teste, leia a [Alterando propriedades de teste](/help/sites-developing/tough-day.md#changing-the-test-properties) seção.
 
 No exemplo abaixo, o título de ativo padrão para o `CreatePageTreeTest` (nomeado como `UploadAsset`) foi alterado para &quot;NewAsset&quot;.
 
@@ -259,7 +260,7 @@ tests:
       title : NewAsset
 ```
 
-Além disso, também é possível remover testes de conjuntos ou editores predefinidos da configuração padrão usando o `exclude` parâmetro. Observe que você também deve especificar o nome do conjunto e o nome real do teste (não o Test C `lass` nome). Você pode encontrar o nome do teste na variável `name` propriedade da classe de teste. No exemplo abaixo, a variável `CreatePageTreeTest` (nomeado como `UploadAsset`) é removido do conjunto de dias úteis.
+Além disso, também é possível remover testes de conjuntos ou editores predefinidos da configuração padrão usando o `exclude` parâmetro. Você também deve especificar o nome do conjunto e o nome real do teste (não o Test C `lass` nome). Você pode encontrar o nome do teste na variável `name` propriedade da classe de teste. No exemplo abaixo, a variável `CreatePageTreeTest` (nomeado como `UploadAsset`) é removido do conjunto de dias úteis.
 
 Usando parâmetros de linha de comando:
 
@@ -306,7 +307,7 @@ A variável **carga constante** o modo de execução difere do modo de execuçã
 
 ### Testar seleção {#test-selection}
 
-O processo de seleção de teste é o mesmo para ambos os modos de execução e é executado da seguinte maneira: todos os testes têm uma `weight` propriedade, que determina a probabilidade de execução em um thread. Por exemplo, se tivermos dois testes, um com um peso de 5 e o outro com um peso de 10, o último tem duas vezes mais probabilidade de ser executado do que o primeiro.
+O processo de seleção de teste é o mesmo para ambos os modos de execução e é executado da seguinte maneira: todos os testes têm uma `weight` propriedade, que determina a probabilidade de execução em um thread. Por exemplo, se você tiver dois testes, um com um peso de 5 e o outro com um peso de 10, o último terá duas vezes mais probabilidade de ser executado do que o primeiro.
 
 Além disso, os testes `count` propriedade, que limita o número de execuções a um determinado número. Após esse número ser aprovado, não ocorrerá mais nenhuma execução do teste. Todas as instâncias de teste que já estão em execução concluirão a execução como configurada. O exemplo a seguir mostra como adicionar esses parâmetros na linha de comando ou usando um arquivo de configuração yaml.
 
@@ -329,7 +330,7 @@ ou
 
 >[!NOTE]
 >
->Devido a execuções paralelas, o número real de execuções de teste não será exatamente a quantidade configurada no `count` parâmetro. Espere um desvio proporcional ao número de threads em execução (controlado pelo `concurrency parameter`).
+Devido a execuções paralelas, o número real de execuções de teste não será exatamente a quantidade configurada no `count` parâmetro. Espere um desvio proporcional ao número de threads em execução (controlado pelo `concurrency parameter`).
 
 ### Execução de prática {#dry-run}
 
@@ -345,7 +346,7 @@ O Dia difícil 2 gera métricas de teste e logs. Para obter mais detalhes, leia 
 
 ### Métricas de teste {#test-metrics}
 
-Atualmente, o Dia difícil 2 relata 9 métricas de teste que você pode avaliar. Métricas com o **&#42;** símbolo são relatados somente após execuções bem-sucedidas:
+Atualmente, o Dia difícil 2 relata nove métricas de teste que você pode avaliar. Métricas com o **&#42;** símbolo são relatados somente após execuções bem-sucedidas:
 
 | **Nome** | **Descrição** |
 |---|---|
@@ -399,7 +400,7 @@ O Dia Difícil 2 cria uma pasta de logs no mesmo diretório em que você executo
 * **toughday.log**: contém mensagens relacionadas ao estado do aplicativo, informações de depuração e mensagens globais.
 * **dia difícil_&lt;testname>.log**: mensagens relacionadas ao teste especificado.
 
-Os logs não são substituídos, as execuções subsequentes anexarão mensagens aos logs existentes. Os logs têm vários níveis. Para obter mais informações, consulte a ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
+Os logs não são substituídos, as execuções subsequentes anexam mensagens aos logs existentes. Os logs têm vários níveis. Para obter mais informações, consulte a ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
 <!--
 #### Example Usage {#example-usage}

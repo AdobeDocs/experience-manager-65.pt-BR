@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1232'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 | **[Feature Essentials](essentials.md)** | **[Personalização do lado do servidor ^](server-customize.md)** |
 |---|---|
-|  | **[SCF Handlebars Helpers ^](handlebars-helpers.md)** |
+|   | **[SCF Handlebars Helpers ^](handlebars-helpers.md)** |
 
 Há várias abordagens para personalizar a aparência e/ou o comportamento de um componente do AEM Communities no lado do cliente.
 
@@ -53,7 +53,7 @@ Isso é diferente de [sobreposição](#overlays) o componente padrão, onde a na
 
 Para obter um exemplo rápido de extensão do componente de comentários, experimente o [Tutorial do componente Estender comentários](extend-comments.md).
 
-## Vinculação Javascript {#javascript-binding}
+## Vinculação JavaScript {#javascript-binding}
 
 O script HBS do componente deve ser vinculado aos objetos, modelos e visualizações do JavaScript que implementam esse recurso.
 
@@ -63,7 +63,7 @@ Para vincular um componente, todo o script do componente deve estar contido em u
 
 * `data-component-id`=&quot;{{id}}&quot;
 
-   resolve para a propriedade id do contexto
+  resolve para a propriedade id do contexto
 
 * `data-scf-component`=&quot;*&lt;resourcetype>*
 
@@ -87,13 +87,13 @@ Todas as propriedades definidas em um componente/recurso podem ser acessadas faz
 
 ## Aplicação de capa a CSS {#skinning-css}
 
-A personalização de componentes para corresponder ao tema geral do site pode ser realizada alterando cores, fontes, imagens, botões, links, espaçamento e até mesmo o posicionamento em uma determinada extensão.
+A personalização de componentes para corresponder ao tema geral do site pode ser realizada alterando cores, fontes, imagens, botões, links, espaçamento e até mesmo posicionando em uma determinada extensão.
 
-A atribuição de capa pode ser obtida substituindo seletivamente os estilos da estrutura ou escrevendo folhas de estilos totalmente novas. Os componentes SCF definem classes CSS namespaces, modulares e semânticas que afetam os vários elementos que compõem um componente.
+A atribuição de capa pode ser obtida substituindo seletivamente os estilos da estrutura ou escrevendo folhas de estilos totalmente novas. Os componentes SCF definem classes CSS namespace, modulares e semânticas que afetam os vários elementos que compõem um componente.
 
 Para aplicar capa a um componente:
 
-1. Identifique os elementos que deseja alterar (por exemplo, área do compositor, botões da barra de ferramentas, fonte da mensagem etc.).
+1. Identifique os elementos que deseja alterar (por exemplo, área do compositor, botões da barra de ferramentas, fonte da mensagem e assim por diante).
 1. Identifique a classe/regras CSS que afetam esses elementos.
 1. Crie um arquivo de folha de estilos (.css).
 1. Incluir a folha de estilos em uma pasta da biblioteca do cliente ([clientlibs](#clientlibs-for-scf)) para seu site e verifique se ele foi incluído nos modelos e páginas com [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
@@ -104,17 +104,17 @@ Os estilos personalizados agora substituirão os estilos de estrutura padrão, e
 
 >[!CAUTION]
 >
->Qualquer nome de classe CSS que tenha o prefixo `scf-js` tem um uso específico no código javascript. Essas classes afetam o estado de um componente (por exemplo, alternar de oculto para visível) e não devem ser substituídas nem removidas.
+>Qualquer nome de classe CSS que tenha o prefixo `scf-js` O tem um uso específico no código JavaScript. Essas classes afetam o estado de um componente (por exemplo, alternar de oculto para visível) e não devem ser substituídas nem removidas.
 >
->Embora a `scf-js` as classes não afetam os estilos, os nomes das classes podem ser usados nas folhas de estilos com a ressalva de que, como eles controlam os estados dos elementos, pode haver efeitos colaterais.
+>Embora a `scf-js` as classes não afetam os estilos, os nomes das classes podem ser usados em folhas de estilos com o aviso de que, como eles controlam os estados dos elementos, pode haver efeitos colaterais.
 
-## Extensão do Javascript {#extending-javascript}
+## Extensão do JavaScript {#extending-javascript}
 
-Para estender uma implementação do Javascript dos componentes, é necessário:
+Para estender uma implementação do JavaScript de componentes, é necessário:
 
 1. Crie um componente para seu aplicativo com um jcr:resourceSuperType definido com o valor do jcr:resourceType do componente estendido, por exemplo, social/forum/components/hbs/forum.
-1. Examine o Javascript do componente SCF padrão para determinar quais métodos precisam ser registrados usando SCF.registerComponent().
-1. Copie o Javascript do componente estendido ou inicie do zero.
+1. Examine o JavaScript do componente SCF padrão para determinar quais métodos precisam ser registrados usando SCF.registerComponent().
+1. Copie o JavaScript do componente estendido ou inicie do zero.
 1. Estenda o método.
 1. Use SCF.registerComponent() para registrar todos os métodos com os padrões ou com os objetos e exibições personalizados.
 
@@ -200,10 +200,10 @@ As clientlibs do autor necessárias podem ser identificadas inserindo-se &quot;a
 
 Cada site é diferente na forma como eles gerenciam as bibliotecas de clientes. Vários fatores incluem:
 
-* Velocidade geral: talvez o desejo seja que o site seja responsivo, mas é aceitável que a primeira página seja um pouco lenta de carregar. Se muitas das páginas usarem o mesmo JavaScript, os vários JavaScripts poderão ser incorporados a uma clientlib e referenciados a partir da primeira página a ser carregada. O Javascript nesse download único permanece em cache, minimizando a quantidade de dados para baixar em páginas subsequentes.
-* Breve tempo para a primeira página: talvez o desejo seja que a primeira página seja carregada rapidamente. Nesse caso, o Javascript está em vários arquivos pequenos para ser referenciado somente onde for necessário.
+* Velocidade geral: talvez o desejo seja que o site seja responsivo, mas é aceitável que a primeira página seja um pouco lenta de carregar. Se muitas das páginas usarem o mesmo JavaScript, os vários JavaScripts poderão ser incorporados a uma clientlib e referenciados a partir da primeira página a ser carregada. O JavaScript nesse download único permanece armazenado em cache, minimizando a quantidade de dados para baixar para páginas subsequentes.
+* Breve tempo para a primeira página: talvez o desejo seja que a primeira página seja carregada rapidamente. Nesse caso, o JavaScript está em vários arquivos pequenos para ser referenciado somente onde necessário.
 * Um equilíbrio entre o primeiro carregamento da página e os downloads subsequentes.
 
 | **[Feature Essentials](essentials.md)** | **[Personalização do lado do servidor ^](server-customize.md)** |
 |---|---|
-|  | **[SCF Handlebars Helpers ^](handlebars-helpers.md)** |
+|   | **[SCF Handlebars Helpers ^](handlebars-helpers.md)** |

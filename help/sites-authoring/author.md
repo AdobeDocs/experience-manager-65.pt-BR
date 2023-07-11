@@ -1,20 +1,16 @@
 ---
 title: Criação
-seo-title: Authoring
-description: Conceitos de criação no AEM
-seo-description: Concepts of authoring in AEM
-uuid: eaa5f613-a138-4215-8f84-dfc962fe7fa7
+description: Conceitos de criação no Adobe Experience Manager
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 32%
+source-wordcount: '551'
+ht-degree: 20%
 
 ---
 
@@ -29,24 +25,24 @@ O AEM fornece dois ambientes:
 
 Eles interagem para permitir que você disponibilize conteúdo no seu site, para que os visitantes possam lê-lo.
 
-O ambiente de criação fornece os mecanismos para criar, atualizar e revisar esse conteúdo antes de realmente publicá-lo:
+O ambiente de criação oferece os mecanismos para criação, atualização e análise desse conteúdo, antes de realmente publicá-lo:
 
-* Um autor cria e revisa o conteúdo (que pode ser de vários tipos; por exemplo, páginas, ativos, publicações etc.)
+* Um autor cria e revisa o conteúdo (que pode ser de vários tipos; por exemplo, páginas, ativos, publicações e assim por diante)
 * que será, em algum momento, publicado no seu site.
 
 ![Visão geral dos ambientes](assets/chlimage_1-132.png)
 
-No ambiente de criação, a funcionalidade do AEM é disponibilizada por meio de duas interfaces do usuário. Para o ambiente de publicação, você projeta toda a aparência e comportamento da interface disponível para os usuários.
+No ambiente de criação, a funcionalidade do AEM é disponibilizada por meio de duas interfaces do usuário. Para o ambiente de publicação, você projeta toda a aparência e comportamento da interface disponibilizada para os usuários.
 
 ### Ambiente de criação {#author-environment}
 
-O autor trabalha no que é conhecido como **ambiente do autor**. Isso oferece uma interface fácil de usar (interface gráfica do usuário (GUI ou UI)) para criar o conteúdo. Normalmente, ela está localizada atrás do firewall de uma empresa que fornece proteção total e requer que o autor faça logon, usando uma conta que recebeu os direitos de acesso apropriados.
+O autor trabalha no que é conhecido como **ambiente do autor**. Isso oferece uma interface fácil de usar (interface gráfica do usuário (GUI ou UI)) para criar o conteúdo. Ela está localizada atrás do firewall de uma empresa que fornece proteção total e requer que o autor faça logon, usando uma conta que recebeu os direitos de acesso apropriados.
 
 >[!NOTE]
 >
 >Sua conta precisa dos direitos de acesso apropriados para criar, editar ou publicar conteúdo.
 
-Dependendo de como sua instância e seus direitos de acesso pessoais estão configurados, é possível executar muitas tarefas no seu conteúdo, incluindo (entre outras):
+Dependendo de como sua instância e seus direitos de acesso pessoal estão configurados, você pode executar muitas tarefas no conteúdo, incluindo (entre outras):
 
 * gerar novo conteúdo ou editar conteúdo existente em uma página
 * usar modelos predefinidos para criar novas páginas de conteúdo
@@ -54,12 +50,12 @@ Dependendo de como sua instância e seus direitos de acesso pessoais estão conf
 * criar, editar e gerenciar suas publicações
 * desenvolver suas campanhas e os recursos relacionados
 * desenvolver e gerenciar sites da comunidade
-* mover, copiar ou excluir páginas de conteúdo, ativos etc
-* publicar (ou desfazer a publicação) páginas, ativos, etc
+* mover, copiar ou excluir páginas de conteúdo, ativos e assim por diante
+* publicar (ou desfazer a publicação) páginas, ativos e assim por diante
 
-Além disso, há tarefas administrativas que o ajudam a gerenciar seu conteúdo:
+Além disso, há tarefas administrativas que ajudam você a gerenciar seu conteúdo:
 
-* fluxos de trabalho que controlam como as alterações são gerenciadas; por exemplo. imposição de uma revisão antes da publicação
+* fluxos de trabalho que controlam como as alterações são gerenciadas; por exemplo, impor uma revisão antes da publicação
 * projetos que coordenam tarefas individuais
 
 >[!NOTE]
@@ -90,4 +86,4 @@ Quando o site AEM é um [site da comunidade](/help/communities/overview.md), ou 
 
 #### Dispatcher {#dispatcher}
 
-Para otimizar o desempenho para os visitantes do seu site, o **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) implementa o balanceamento de carga e o cache.**
+Para otimizar o desempenho para os visitantes do seu site, a variável **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR)** O implementa o balanceamento de carga e o cache.
