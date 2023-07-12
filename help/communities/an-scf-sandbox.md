@@ -1,24 +1,19 @@
 ---
 title: Criar uma sandbox SCF
-seo-title: Create An SCF Sandbox
-description: Este tutorial é principalmente para desenvolvedores novos no AEM, que estão interessados em usar os componentes SCF.  Ele aborda a criação de um site de sandbox SCF
-seo-description: This tutorial is primarily for developers, new to AEM, who are interested in using SCF components.  It walks through the creation of An SCF Sandbox site
-uuid: ee52e670-e1e6-4bcd-9548-c963142e6704
+description: Este tutorial é principalmente para desenvolvedores novos no AEM, que estão interessados em usar os componentes SCF. Ele aborda a criação de um site de sandbox SCF
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 exl-id: 89858814-6625-4a56-8359-cc1eca402816
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
 
 # Criar uma sandbox SCF  {#create-an-scf-sandbox}
-
 
 Desde o AEM 6.1 Communities, a maneira mais fácil de criar rapidamente uma sandbox é criar um site da comunidade. Consulte [Introdução ao AEM Communities](getting-started.md).
 
@@ -26,7 +21,7 @@ Outra ferramenta útil para os desenvolvedores é a [Guia de componentes da comu
 
 O exercício de criar um site pode ser útil para entender a estrutura de um site AEM que pode incluir recursos das Comunidades, além de fornecer páginas simples nas quais explorar o trabalho com a [estrutura da componente social (SCF)](scf.md).
 
-Este tutorial é principalmente para desenvolvedores novos no AEM, que estão interessados em usar os componentes SCF. Ele aborda a criação de um site de sandbox SCF, semelhante ao tutorial para [Como criar um site completo da Internet](../../help/sites-developing/website.md) que se concentra nas estruturas do site, como navegação, logotipo, pesquisa, barra de ferramentas e listagem de páginas secundárias.
+Este tutorial é principalmente para desenvolvedores novos no AEM, que estão interessados em usar os componentes SCF. Ele aborda a criação de um site de sandbox SCF, semelhante ao tutorial para [Como criar um site completo da Internet](../../help/sites-developing/website.md) que focaliza estruturas no site, como navegação, logotipo, pesquisa, barra de ferramentas e listagem de páginas secundárias.
 
 O desenvolvimento ocorre em uma instância do autor, enquanto o teste com o site é melhor em uma instância de publicação.
 
@@ -41,7 +36,7 @@ As etapas deste tutorial são:
 
 >[!CAUTION]
 >
->Este tutorial não cria um site da comunidade com a funcionalidade criada usando o [Console de sites das comunidades](sites-console.md). Por exemplo, este tutorial não descreve como configurar o logon, o autorregistro, [login social](social-login.md), mensagens, perfis e assim por diante.
+>Este tutorial não cria um site da comunidade com a funcionalidade criada usando o [Console de sites das comunidades](sites-console.md). Por exemplo, este tutorial não descreve como configurar o login, o autorregistro, [login social](social-login.md), mensagens, perfis e assim por diante.
 >
 >Se um site de comunidade simples for preferido, siga as [Criar uma página de exemplo](create-sample-page.md) tutorial.
 
@@ -80,10 +75,10 @@ Para trabalhar com o CRXDE Lite, é necessário fazer logon com privilégios de 
 * `password: admin`
 
 
-**Esteja ciente** que esse logon expirará e você precisará fazer logon novamente periodicamente usando o menu suspenso na extremidade direita da barra de ferramentas do CRXDe Lite.
+Esse logon expira e você deve fazer logon novamente periodicamente usando o menu suspenso na extremidade direita da barra de ferramentas do CRXDE Lite.
 
 Se não estiver conectado, você não poderá navegar no repositório JCR nem executar operações de edição/salvamento.
 
-***Em caso de dúvida, faça logon novamente!***
+***Na dúvida, faça o logon novamente!***
 
 ![fazer logon novamente](assets/relogin.png)

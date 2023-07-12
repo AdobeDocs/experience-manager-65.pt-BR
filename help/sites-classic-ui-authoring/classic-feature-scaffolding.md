@@ -1,24 +1,22 @@
 ---
 title: Andaime
-description: Às vezes, pode ser necessário criar um grande conjunto de páginas que compartilham a mesma estrutura, mas têm conteúdo diferente. Com o andaime, você pode criar um formulário (um andaime) com campos que refletem a estrutura desejada para as páginas e, em seguida, usar este formulário para criar facilmente páginas com base nessa estrutura.
-uuid: 5904abc0-b256-4da4-a7d7-3c17ea299648
+description: Às vezes, pode ser necessário criar um grande conjunto de páginas que compartilham estrutura, mas têm conteúdo diferente. Com o andaime, você pode criar um formulário (um andaime) com campos que refletem a estrutura desejada para as páginas e, em seguida, usar este formulário para criar facilmente páginas com base nessa estrutura.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: a63e5732-b1a3-4639-9838-652af401e788
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1432'
 ht-degree: 0%
 
 ---
 
 # Andaime{#scaffolding}
 
-Às vezes, pode ser necessário criar um grande conjunto de páginas que compartilham a mesma estrutura, mas têm conteúdo diferente. Por meio da interface AEM padrão, seria necessário criar cada página, arrastar os componentes apropriados para a página e preencher cada um deles individualmente.
+Às vezes, pode ser necessário criar um grande conjunto de páginas que compartilham estrutura, mas têm conteúdo diferente. Por meio da interface padrão do Adobe Experience Manager (AEM), seria necessário criar cada página, arrastar os componentes apropriados para a página e preencher cada um deles individualmente.
 
 Com o andaime, você pode criar um formulário (um andaime) com campos que refletem a estrutura desejada para as páginas e, em seguida, usar este formulário para criar facilmente páginas com base nessa estrutura.
 
@@ -31,8 +29,8 @@ Com o andaime, você pode criar um formulário (um andaime) com campos que refle
 Os andaimes são armazenados no **Ferramentas** console do administrador do site.
 
 * Abra o **Ferramentas** e clique em **Scaffolding da página padrão**.
-* Em, clique em **geometrixx**.
-* Em **geometrixx** você encontrará um *página de andaime* chamado **Notícias**. Clique duas vezes para abrir esta página.
+* Nessa, clique em **Geometrixx**.
+* Em **Geometrixx**, você encontrará um *página de andaime* chamado **Notícias**. Clique duas vezes para abrir esta página.
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
@@ -44,8 +42,8 @@ As propriedades da página de andaime são:
 
 * **Texto do título**: este é o nome da própria página de andaime. Neste exemplo, ele é chamado de &quot;Notícias&quot;.
 * **Descrição**: Isso aparece abaixo do título na página de andaimes.
-* **Modelo de destino**: este é o modelo que esse scaffolding usará ao criar uma nova página. Neste exemplo, é um *Página de conteúdo da Geometria* modelo.
-* **Caminho de destino**: este é o caminho da página principal abaixo da qual este scaffolding criará novas páginas. Neste exemplo, o caminho é */content/geometrixx/en/news*.
+* **Modelo de destino**: este é o modelo que esse scaffolding usará ao criar uma página. Neste exemplo, é um *Página de conteúdo do Geometrixx* modelo.
+* **Caminho de destino**: este é o caminho da página principal abaixo da qual este scaffolding criará páginas. Neste exemplo, o caminho é */content/geometrixx/en/news*.
 
 O corpo do andaime é a forma. Quando um usuário deseja criar uma página usando o andaime, ele preenche o formulário e clica em *Criar*, na parte inferior. No **Notícias** exemplo acima o formulário tem os seguintes campos:
 
@@ -60,15 +58,15 @@ O corpo do andaime é a forma. Quando um usuário deseja criar uma página usand
 
 ### Criação de um scaffold {#creating-a-scaffold}
 
-Para criar um novo scaffold, vá para a **Ferramentas** console, depois **Scaffolding da página padrão** e criar uma nova página. Um tipo de modelo de página única estará disponível, o *Modelo de andaime.*
+Para criar um novo andaime, vá para a **Ferramentas** console, depois **Scaffolding da página padrão** e crie uma página. Um tipo de modelo de página única está disponível, o *Modelo de andaime.*
 
-Vá para a **Propriedades da página** da nova página e defina o *Texto do título*, *Descrição*, *Modelo de destino* e *Caminho de destino*, conforme descrito acima.
+Vá para a **Propriedades da página** da nova página e defina o *Texto do título*, *Descrição*, *Modelo de destino*, e *Caminho de destino*, conforme descrito acima.
 
 Em seguida, é necessário definir a estrutura da página que esse scaffolding criará. Para fazer isso, acesse **[modo de design](/help/sites-authoring/page-authoring.md#sidekick)** na página de andaime. Um link será exibido, permitindo editar o scaffold na **editor de diálogo**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
-Usando o editor de diálogo, especifique as propriedades que serão criadas sempre que uma nova página for criada usando esse scaffolding.
+Usando o editor de caixa de diálogo, especifique as propriedades que serão criadas sempre que uma nova página for criada usando esse scaffolding.
 
 A definição da caixa de diálogo de um scaffold funciona de forma semelhante à de um componente (consulte [Componentes](/help/sites-developing/components.md)). No entanto, algumas diferenças importantes se aplicam:
 
@@ -82,7 +80,7 @@ Agora, clique no campo de diálogo **Caixa de diálogo > Painel de guias > Texto
 
 ![textedit](assets/textedit.png)
 
-A lista de propriedades desse campo aparecerá no lado direito do editor da caixa de diálogo, desta forma:
+A lista de propriedades desse campo aparece no lado direito do editor da caixa de diálogo, desta forma:
 
 ![list_of_properties](assets/list_of_properties.png)
 
@@ -97,7 +95,7 @@ Isso define o local do armazenamento de conteúdo para o texto que será inserid
 * O fato de a cadeia de caracteres aqui armazenada dever ser interpretado *rich text*, e
 * qual componente deve ser usado para renderizar esse conteúdo para a página resultante.
 
-Observe que em uma caixa de diálogo de componente normal, não seria necessário especificar essas informações, pois estão implícitas no fato de que a caixa de diálogo já está vinculada a um componente específico.
+Em uma caixa de diálogo de componente normal, não seria necessário especificar essas informações, pois estão implícitas no fato de que a caixa de diálogo já está vinculada a um componente específico.
 
 Para especificar essas duas informações, use campos ocultos. Clique no primeiro campo oculto **Caixa de diálogo > Painel de guias > Texto > Oculto**, desta forma:
 
@@ -113,13 +111,13 @@ A propriedade de nome deste campo oculto é
 
 Esta é uma propriedade booleana usada para interpretar a sequência de texto armazenada em `./jcr:content/par/text/text`.
 
-Como sabemos que o texto deve ser interpretado como um rich text, especificamos o `value` propriedade deste campo como `true`.
+Como sabemos que o texto deve ser interpretado como um rich text, vamos especificar o `value` propriedade deste campo como `true`.
 
 >[!CAUTION]
 >
->O editor de caixa de diálogo permite que o usuário altere os valores de *existente* propriedades na definição da caixa de diálogo. Para adicionar uma nova propriedade, o usuário deve usar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por exemplo, quando um novo campo oculto é adicionado a uma definição de caixa de diálogo com o editor de caixa de diálogo, ele não tem uma *value* (ou seja, uma propriedade com o nome &quot;value&quot;). Se o campo oculto em questão exigir um campo padrão, *value* para ser definida, essa propriedade deverá ser adicionada manualmente com uma das ferramentas do CRX. O valor não pode ser adicionado com o próprio editor de diálogo. No entanto, quando a propriedade estiver presente, seu valor poderá ser editado com o editor da caixa de diálogo.
+>O editor de caixa de diálogo permite que o usuário altere os valores de *existente* propriedades na definição da caixa de diálogo. Para adicionar uma nova propriedade, o usuário deve usar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por exemplo, quando um novo campo oculto é adicionado a uma definição de caixa de diálogo com o editor de caixa de diálogo, ele não tem uma *value* (ou seja, uma propriedade com o nome &quot;value&quot;). Se o campo oculto em questão exigir que uma propriedade de valor padrão seja definida, essa propriedade deverá ser adicionada manualmente com uma das ferramentas CRX. O valor não pode ser adicionado com o próprio editor de diálogo. No entanto, quando a propriedade estiver presente, seu valor poderá ser editado com o editor da caixa de diálogo.
 
-O segundo campo oculto pode ser visto clicando nele desta forma:
+O segundo campo oculto pode ser visto clicando-o da seguinte maneira:
 
 ![hidden2](assets/hidden2.png)
 
@@ -131,7 +129,7 @@ A propriedade de nome deste campo oculto é
 
 `./jcr:content/par/text/sling:resourceType`
 
-e o valor fixo especificado para essa propriedade é
+E o valor fixo especificado para essa propriedade é
 
 `foundation/components/textimage`
 
@@ -143,7 +141,7 @@ Na interface clássica, o scaffolding é totalmente integrado à herança do MSM
 
 Ao abrir uma página no **Andaime** modo (usando o ícone na parte inferior do sidekick) todos os componentes sujeitos a herança serão indicados por:
 
-* um símbolo de cadeado (para a maioria dos componentes; por exemplo, Texto e Título)
+* um símbolo de bloqueio (para a maioria dos componentes; por exemplo, Texto e Título)
 * uma máscara com o texto **Clique para cancelar a herança** (para componentes de Imagem)
 
 Eles mostram que o componente não pode ser editado, até que a herança seja cancelada.
@@ -156,12 +154,12 @@ Eles mostram que o componente não pode ser editado, até que a herança seja ca
 
 Clicar no símbolo de bloqueio ou no ícone de imagem permite interromper a herança:
 
-* o símbolo será alterado para um cadeado aberto.
+* o símbolo muda para um cadeado aberto.
 * depois de desbloqueado, é possível editar o conteúdo.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-Depois de desbloquear, você pode restaurar a herança clicando no símbolo de cadeado desbloqueado - isso perderá todas as edições que você fez.
+Depois de desbloquear, você pode restaurar a herança clicando no símbolo de cadeado desbloqueado; isso perderá todas as edições que você fez.
 
 >[!NOTE]
 >

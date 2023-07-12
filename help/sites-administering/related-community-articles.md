@@ -1,25 +1,21 @@
 ---
 title: Artigos relacionados da comunidade
-seo-title: Related Community Articles
-description: Encontre uma lista de artigos gerados pela comunidade sobre integrações do Marketing Cloud com AEM.
-seo-description: Find a list of community generated articles about Marketing Cloud integrations with AEM.
-uuid: b1562a21-a6f5-4cd9-821f-f258b53a1d99
+description: Encontre uma lista de artigos gerados pela comunidade sobre integrações do Experience Cloud com o Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 85bfce4f-737a-475c-987d-f94c85b3d763
 exl-id: ebf6d4ef-20ba-487b-b301-52de8936628f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '92'
 ht-degree: 6%
 
 ---
 
 # Artigos relacionados da comunidade{#related-community-articles}
 
-A Comunidade AEM gerou uma série de artigos relacionados a Integrações de Marketing Cloud com AEM.
+A Comunidade Adobe Experience Manager (AEM) gerou uma série de artigos relacionados às integrações Experience Cloud com o AEM.
 
 Veja a seguir uma lista do conteúdo disponível:
 

@@ -1,17 +1,14 @@
 ---
 title: Apresentação do site de referência da Renovação do Seguro Automático We.Finance
-seo-title: We.Finance Auto Insurance Renewal reference site walkthrough
 description: Apresentação do site de referência da Renovação do Seguro Automático We.Finance
-uuid: c749a6f7-71f1-4f47-b824-9c7b699072c7
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
-discoiquuid: ad450124-49a5-4afb-aac3-ed3733d6504b
 docset: aem65
 exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -22,11 +19,11 @@ ht-degree: 0%
 
 O site We.Finance é um site de serviços financeiros criado para ajudá-lo a conhecer os recursos de comunicações interativas do AEM Forms.
 
-Leia sobre a apresentação detalhada do caso de uso We.Finance Auto Insurance, que mostra como os formulários AEM e sua integração com o Microsoft Dynamics ajudam a personalizar a experiência do cliente em uma empresa de serviços financeiros. A apresentação interativa foi projetada para facilitar a implementação de transações digitais complexas e a comunicação com o cliente em uma empresa financeira.
+Leia a apresentação detalhada do caso de uso We.Finance Auto Insurance, que mostra como os formulários AEM e sua integração com o Microsoft® Dynamics ajudam a personalizar a experiência do cliente em uma empresa de serviços financeiros. A apresentação interativa foi projetada para facilitar a implementação de transações digitais complexas e a comunicação com o cliente em uma empresa financeira.
 
 **A jornada começa com o caso de uso:**
 
-Sarah Rose é um cliente existente We.Finance e adquiriu uma apólice de seguro automóvel. Agora é a época do ano para a renovação de sua apólice de seguro. Gloria Rios, agente de seguros, We.Finance envia um lembrete para Sarah sobre sua renovação da política. Sarah segue as instruções fornecidas no e-mail e conclui com sucesso o processo.
+Sarah Rose é um cliente existente We.Finance e adquiriu uma apólice de seguro automóvel. Agora é a época do ano para a renovação da apólice de seguro da Sarah. Gloria Rios, agente de seguros, We.Finance envia um lembrete para Sarah sobre sua renovação da política. Sarah segue as instruções fornecidas no e-mail e conclui com sucesso o processo.
 
 ## Apresentação do aplicativo de Seguro automático {#auto-insurance-application-walkthrough}
 
@@ -45,15 +42,15 @@ Sarah recebe um e-mail com o assunto &quot;Sua renovação de seguro automóvel&
 
 #### Veja você mesmo {#see-it-yourself}
 
-Ir para **Adobe Experience Manager** > **Forms** > **Forms e documentos** > **We.Finance** > **Seguro Automático**. Selecione a renovação do seguro automático **comunicação interativa** e clique em **Abrir IU do agente**. A comunicação interativa é aberta na interface do usuário do agente. Insira um endereço de email válido para receber o email com o documento de política anexado e clique em Enviar.
+Ir para **Adobe Experience Manager** > **Forms** > **Forms e documentos** > **We.Finance** > **Seguro Automático**. Selecione a renovação do seguro automático **comunicação interativa** e clique em **Abrir IU do agente**. A comunicação interativa é aberta na interface do usuário do agente. Insira um endereço de email válido para que eles possam receber o email com o documento de política anexado e clicar em Enviar.
 
 Você pode acessar e revisar a comunicação interativa Renovação de seguro automático diretamente de `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
 ### Sarah recebe uma comunicação de renovação da apólice de seguro da We.Finance e decide renovar {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
-Sarah recebe um e-mail com um anexo da We.Finance que a lembra que sua apólice de Seguro Automático está prestes a expirar. O anexo é a versão impressa de sua carta de Seguro Automático.
+Sarah recebe um e-mail com um anexo da We.Finance, lembrando Sarah que sua apólice de Seguro Automático está prestes a expirar. O anexo é a versão impressa da carta do seguro automático da Sarah.
 
-Cliques de Sarah **Renovar agora** e é direcionado para a versão da Web de sua carta de Seguro Automático. Além desta carta, Sarah encontra o número de dias restantes para que sua política expire. A página fornece a Sarah uma visão geral básica de seus detalhes da Apólice de seguro, como Número da apólice, Quantia devida e outras informações, como ofertas de desconto e recompensas de fidelidade. Sarah novamente clica **Renovar agora** na parte inferior da política.
+Cliques de Sarah **Renovar agora** e é direcionado para a versão da Web de sua carta de Seguro Automático. Além desta carta, Sarah encontra a quantidade de tempo restante para sua política antes que ela expire. A página fornece a Sarah uma visão geral básica de seus detalhes da Apólice de seguro, como Número da apólice, Quantia devida e outras informações, como ofertas de desconto e recompensas de fidelidade. Sarah novamente clica **Renovar agora** na parte inferior da política.
 
 ![ref1](assets/ref1.png)
 
@@ -67,7 +64,7 @@ O botão Renovar agora no email está vinculado ao aplicativo Renovação autom�
 
 Você deve ter recebido um email com uma PDF anexada. O PDF é uma versão impressa da sua carta de Seguro Automático. Clique em **Renovar agora** para acessar a versão da política na web. Verifique suas informações pessoais e detalhes da política e clique em **Renovar agora** que leva você a outra Comunicação interativa.
 
-A variável **Renovar agora** botão no e-mail direciona Sarah para a versão da política da Web. Você pode visitar o seguinte URL:
+A variável **Renovar agora** botão no e-mail direciona Sarah para a política na web. Você pode visitar o seguinte URL:
 
 `https://[authorServer]:[authorPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=1`
 

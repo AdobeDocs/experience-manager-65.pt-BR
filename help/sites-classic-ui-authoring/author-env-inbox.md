@@ -1,24 +1,22 @@
 ---
 title: Sua caixa de entrada
-description: Você pode receber notificações de várias áreas do AEM, como notificações sobre itens de trabalho ou tarefas que representam ações que você precisa executar no conteúdo da página.
-uuid: e7ba9150-957d-4f84-a570-2f3d83792472
+description: Você pode receber notificações de várias áreas do AEM, como notificações sobre itens de trabalho ou tarefas que representam ações que você deve executar no conteúdo da página.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
 exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
 
 # Sua caixa de entrada{#your-inbox}
 
-Você pode receber notificações de várias áreas do AEM, como notificações sobre itens de trabalho ou tarefas que representam ações que você precisa executar no conteúdo da página.
+Você pode receber notificações de várias áreas do AEM, como notificações sobre itens de trabalho ou tarefas que representam ações que você deve executar no conteúdo da página.
 
 Você recebe essas notificações em duas caixas de entrada, que são separadas pelo tipo de notificações:
 
@@ -40,7 +38,7 @@ Para exibir suas notificações:
    >
    >` https://<host>:<port>/libs/wcm/core/content/inbox.html`
 
-1. Suas notificações serão listadas. É possível realizar ações conforme necessário:
+1. Suas notificações estão listadas. É possível realizar ações conforme necessário:
 
    * [Assinando notificações](#subscribing-to-notifications)
    * [Processamento de notificações](#processing-your-notifications)
@@ -68,18 +66,18 @@ Para assinar notificações:
 
 1. Selecione o canal de notificação:
 
-   * **Caixa de entrada**: as notificações serão exibidas na caixa de entrada do AEM.
-   * **E-mail**: as notificações serão enviadas por email para o endereço definido em seu perfil de usuário.
+   * **Caixa de entrada**: as notificações são exibidas na Caixa de entrada AEM.
+   * **E-mail**: as notificações são enviadas por email para o endereço definido em seu perfil de usuário.
 
    >[!NOTE]
    >
-   >Algumas configurações precisam ser definidas para serem notificadas por email. Também é possível personalizar o template de email ou adicionar um template de email para um novo idioma. Consulte [Configuração da notificação por e-mail](/help/sites-administering/notification.md#configuringemailnotification) para configurar notificações por email no AEM.
+   >Algumas configurações devem ser definidas para serem notificadas por email. Também é possível personalizar o template de email ou adicionar um template de email para um novo idioma. Consulte [Configuração da notificação por e-mail](/help/sites-administering/notification.md#configuringemailnotification) para configurar notificações por email no AEM.
 
 1. Selecione as ações de página para as quais deseja ser notificado:
 
    * Ativado: quando uma página é ativada.
    * Desativado: quando uma página é desativada.
-   * Deleted (syndication): quando uma página foi excluída-replicada, ou seja, quando uma ação de exclusão executada em uma página é replicada.
+   * Excluída (sindicalização): quando uma página é excluída-replicada, ou seja, quando uma ação de exclusão executada em uma página é replicada.
 Quando uma página é excluída ou movida, uma ação de exclusão é automaticamente replicada: a página é excluída na instância de origem em que a ação de exclusão foi executada e na instância de destino definida pelos agentes de replicação.
 
    * Modificado: quando uma página é modificada.
@@ -90,7 +88,7 @@ Quando uma página é excluída ou movida, uma ação de exclusão é automatica
 1. Defina os caminhos das páginas para as quais você será notificado:
 
    * Clique em **Adicionar** para adicionar uma nova linha à tabela.
-   * Clique em **Caminho** célula da tabela e insira o caminho, por exemplo `/content/docs`.
+   * Clique em **Caminho** célula da tabela e insira o caminho, por exemplo, `/content/docs`.
 
    * Para ser notificado para todas as páginas pertencentes à subárvore, defina **Exata?** para **Não**.
 Para ser notificado somente para ações na página definida pelo caminho, defina **Exata?** para **Sim**.
@@ -103,7 +101,7 @@ Para ser notificado somente para ações na página definida pelo caminho, defin
 
 ## Processamento de notificações {#processing-your-notifications}
 
-Se você optou por receber notificações na caixa de entrada do AEM, sua caixa de entrada será preenchida com notificações. Você pode [exibir suas notificações](#viewing-your-notifications) em seguida, selecione as notificações necessárias para:
+Se você optou por receber notificações na Caixa de entrada do AEM, a caixa de entrada estará cheia de notificações. Você pode [exibir suas notificações](#viewing-your-notifications), em seguida, selecione as notificações necessárias para:
 
 * Aprove-a clicando em **Aprovar**: o valor no **Ler** a coluna está definida como **true**.
 

@@ -1,29 +1,25 @@
 ---
 title: Implantação de práticas recomendadas
-seo-title: Deploying Best Practices
 description: Implantação e manutenção de práticas recomendadas.
-seo-description: Deploying and maintaining best practices.
-uuid: 4546ed2c-43d5-40f3-874f-567b324e78c2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 9%
+source-wordcount: '434'
+ht-degree: 11%
 
 ---
 
 # Implantação de práticas recomendadas{#deploying-best-practices}
 
-A implantação de práticas recomendadas descreve como implantar ou manter o AEM da maneira mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
+A implantação de práticas recomendadas descreve como implantar ou manter o Adobe Experience Manager (AEM) da maneira mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui várias áreas no AEM.
 
 As seguintes áreas têm documentação disponível sobre implantação e manutenção de práticas recomendadas e recomendações:
 
-* [OAK](#oak)
+* [Oak](#oak)
 * [Communities](#communities)
 * [Interface](#ui)
 * [Desempenho](#performance)
@@ -36,7 +32,7 @@ Para obter as práticas recomendadas sobre administração, desenvolvimento ou c
 
 Os documentos específicos são descritos e vinculados nas tabelas seguintes.
 
-## OAK {#oak}
+## Oak {#oak}
 
 [Oak](/help/sites-deploying/platform.md) O é um repositório de conteúdo hierárquico dimensionável e eficiente que é a base do AEM.
 
@@ -48,7 +44,7 @@ Os documentos específicos são descritos e vinculados nas tabelas seguintes.
    <td>Fornece um white paper sobre a agilidade técnica, o alto desempenho e os recursos sólidos de recuperação de desastres</td>
   </tr>
   <tr>
-   <td>Implantações recomendadas do OAK</td>
+   <td>Implantações recomendadas do Oak</td>
    <td><a href="/help/sites-deploying/recommended-deploys.md">Implantações recomendadas</a></td>
    <td>Descreve cenários de implantação</td>
   </tr>
@@ -63,7 +59,7 @@ Os documentos específicos são descritos e vinculados nas tabelas seguintes.
    <td>Este documento explica as práticas recomendadas para armazenar dados binários e nós de conteúdo. Inclui informações sobre o uso do armazenamento de dados do Amazon S3.</td>
   </tr>
   <tr>
-   <td>Pesquisar no OAK</td>
+   <td>Pesquisar no Oak</td>
    <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Práticas recomendadas para consultas e indexação</a><br /> </td>
    <td>Descreve as práticas recomendadas para indexar conteúdo.</td>
   </tr>
@@ -99,13 +95,13 @@ As práticas recomendadas para o desempenho estão listadas aqui:
   </tr>
   <tr>
    <td>Uso do Dispatcher com um CDN</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Uso do Dispatcher com um CDN</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR#using-dispatcher-with-a-cdn">Uso do Dispatcher com um CDN</a></td>
    <td>Uma rede de entrega de conteúdo (CDN), como Akamai Edge Delivery ou Amazon Cloud Front, fornece conteúdo de um local próximo ao usuário final.</td>
   </tr>
   <tr>
    <td>Otimização do desempenho</td>
    <td><a href="/help/sites-deploying/configuring-performance.md">Otimização do desempenho</a></td>
-   <td>Um problema importante é o tempo que seu site leva para responder às solicitações do visitante.</td>
+   <td>Um problema importante é o tempo que o site leva para responder às solicitações do visitante.</td>
   </tr>
   <tr>
    <td>Teste de desempenho</td>
