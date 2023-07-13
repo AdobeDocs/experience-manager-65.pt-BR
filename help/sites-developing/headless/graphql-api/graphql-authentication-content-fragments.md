@@ -1,24 +1,24 @@
 ---
-title: Autenticação para consultas remotas de GraphQL do AEM em fragmentos de conteúdo
-description: Entenda a autenticação necessária para consultas de GraphQL remotas do AEM, para proteger sua entrega de conteúdo headless.
+title: Autenticação para consultas remotas do Adobe Experience Manager GraphQL em fragmentos de conteúdo
+description: Entenda a autenticação necessária para consultas do Adobe Experience Manager GraphQL remoto para proteger sua entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: 167f3318-7bc7-48fc-aaa9-73da43433f2f
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 61%
+source-wordcount: '110'
+ht-degree: 0%
 
 ---
 
-# Autenticação para consultas remotas de GraphQL do AEM em fragmentos de conteúdo {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
+# Autenticação para consultas remotas do Adobe Experience Manager GraphQL em fragmentos de conteúdo {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
 Um caso de uso principal para o [API do GraphQL do Adobe Experience Manager (AEM) para entrega de fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) é aceitar consultas remotas de aplicativos ou serviços de terceiros. Essas consultas remotas podem exigir acesso à API autenticada para garantir a entrega de conteúdo headless.
 
 >[!NOTE]
 >
->Para testes e desenvolvimento, também é possível acessar a API GraphQL do AEM diretamente, usando a [interface GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface).
+>Para testes e desenvolvimento, também é possível acessar a API GraphQL do AEM diretamente usando o [Interface GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface).
 
-Para autenticação, o serviço de terceiros precisa se autenticar usando o nome de usuário e a senha da conta AEM.
+Para autenticação, o serviço de terceiros precisa se autenticar usando o nome de usuário e a senha da conta do AEM.
 
 <!-- 6.5.10.0 - does this content/page need to be migrated? -->
 

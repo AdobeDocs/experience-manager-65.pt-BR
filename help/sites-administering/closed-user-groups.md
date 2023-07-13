@@ -1,20 +1,16 @@
 ---
 title: Grupos de usuários fechados no AEM
-seo-title: Closed User Groups in AEM
 description: Saiba mais sobre Grupos de usuários fechados no AEM.
-seo-description: Learn about Closed User Groups in AEM.
-uuid: 83396163-86ce-406b-b797-2457ed975ccd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '6872'
+source-wordcount: '6845'
 ht-degree: 0%
 
 ---
@@ -78,19 +74,19 @@ Em contraste com a implementação anterior, as novas políticas CUG são sempre
 
 #### Avaliação de Permissão de Políticas CUG {#permission-evaluation-of-cug-policies}
 
-Além de um gerenciamento de controle de acesso dedicado para CUGs, o novo modelo de autorização permite ativar condicionalmente a avaliação de permissões para suas políticas. Isso permite configurar políticas CUG em um ambiente de preparo e habilitar a avaliação das permissões efetivas apenas depois de replicadas no ambiente de produção.
+Além de um gerenciamento de controle de acesso dedicado para CUGs, o novo modelo de autorização permite que você ative condicionalmente a avaliação de permissões para suas políticas. Isso permite configurar políticas CUG em um ambiente de preparo e habilitar a avaliação das permissões efetivas apenas depois de replicadas no ambiente de produção.
 
 A avaliação de permissão para políticas CUG e a interação com o modelo de autorização padrão ou adicional seguem o padrão projetado para vários mecanismos de autorização no Apache Jackrabbit Oak: um determinado conjunto de permissões é concedido se e somente se todos os modelos concederem acesso. Consulte [esta página](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) para obter mais detalhes.
 
 As seguintes características se aplicam à avaliação de permissão associada ao modelo de autorização criado para manipular e avaliar as políticas CUG:
 
 * Ela só lida com permissões de leitura para nós e propriedades regulares, mas não lida com o conteúdo de controle de acesso
-* Ele não lida com permissões de gravação nem com qualquer tipo de permissões necessárias para a modificação de conteúdo JCR protegido (controle de acesso, informações de tipo de nó, controle de versão, bloqueio ou gerenciamento de usuários, entre outros); essas permissões não são afetadas por uma política CUG e não serão avaliadas pelo modelo de autorização associado. A concessão ou não dessas permissões depende dos outros modelos configurados na configuração de segurança.
+* Ele não lida com permissões de gravação nem com qualquer tipo de permissões necessárias para modificação de conteúdo JCR protegido (controle de acesso, informações de tipo de nó, controle de versão, bloqueio ou gerenciamento de usuários, entre outros); essas permissões não são afetadas por uma política CUG e não serão avaliadas pelo modelo de autorização associado. A concessão ou não dessas permissões depende dos outros modelos configurados na configuração de segurança.
 
 O efeito de uma única política CUG na avaliação da permissão pode ser resumido da seguinte maneira:
 
 * O acesso de leitura é negado para todos, exceto para assuntos que contenham entidades principais ou entidades principais excluídas listadas na política;
-* A política tem efeito no nó controlado por acesso que detém a política e suas propriedades;
+* A política produz efeitos no nó controlado por acesso que detém a política e as suas propriedades;
 * O efeito é adicionalmente herdado abaixo da hierarquia - isto é, a árvore de itens definida pelo nó controlado por acesso;
 * No entanto, não afeta irmãos nem ancestrais do nó controlado por acesso;
 * A herança de um determinado CUG é interrompida em um CUG aninhado.
@@ -99,9 +95,9 @@ O efeito de uma única política CUG na avaliação da permissão pode ser resum
 
 As seguintes práticas recomendadas devem ser consideradas para definir o acesso de leitura restrito por meio de CUGs:
 
-* Tome uma decisão consciente sobre se sua necessidade de um CUG é sobre a restrição do acesso de leitura ou um requisito de autenticação. No caso destas últimas ou se houver necessidade de ambas, consulte a seção sobre Práticas recomendadas para obter detalhes sobre o requisito de autenticação
+* Tome uma decisão consciente sobre se sua necessidade de um CUG é sobre a restrição do acesso de leitura ou um requisito de autenticação. Se este último ou se houver necessidade de ambos, consulte a seção sobre práticas recomendadas para obter detalhes sobre o requisito de autenticação
 * Crie um modelo de ameaça para os dados ou conteúdo que precisam ser protegidos para identificar limites de ameaça e obter uma visão clara sobre a confidencialidade dos dados e as funções associadas ao acesso autorizado
-* Modelar o conteúdo do repositório e os CUGs tendo em mente os aspectos e as práticas recomendadas relacionados à autorização geral:
+* Modelar o conteúdo do repositório e os CUGs tendo em mente os aspectos gerais relacionados à autorização e as práticas recomendadas:
 
    * Lembre-se de que a permissão de leitura só será concedida se um determinado CUG e a avaliação de outros módulos implantados na concessão de configuração permitirem que um determinado assunto leia um determinado item do repositório
    * Evite criar CUGs redundantes em que o acesso de leitura já esteja restrito por outros módulos de autorização
@@ -146,24 +142,24 @@ A avaliação do caminho de login e o redirecionamento para o recurso correspond
 Ao chamar `AuthenticationHandler.requestCredentials` esse manipulador faz uma tentativa de determinar a página de logon de mapeamento para a qual o usuário será redirecionado. Isso inclui as seguintes etapas:
 
 * Faça a distinção entre senha expirada e necessidade de logon regular como motivo para o redirecionamento;
-* No caso de um logon regular, o testa se um caminho de logon pode ser obtido na seguinte ordem:
+* Se um logon regular, testa se um caminho de logon pode ser obtido na seguinte ordem:
 
    * do LoginPathProvider conforme implementado pela nova `com.adobe.granite.auth.requirement.impl.RequirementService`,
    * da implementação CUG antiga e obsoleta,
    * nos Mapeamentos da página de logon, conforme definido com a `LoginSelectorHandler`,
-   * e, por fim, fallback para a Página de logon padrão, conforme definido com `LoginSelectorHandler`.
+   * e, por fim, retorne à Página de logon padrão, conforme definido com a `LoginSelectorHandler`.
 
 * Assim que um caminho de logon válido for obtido por meio das chamadas listadas acima, a solicitação do usuário será redirecionada para essa página.
 
 O público-alvo desta documentação é a avaliação do caminho de logon conforme exposto pelo `LoginPathProvider` interface. A implementação enviada desde o AEM 6.3 se comporta da seguinte maneira:
 
 * O registro de caminhos de logon depende da distinção entre a senha expirada e a necessidade de logon regular como motivo para o redirecionamento
-* No caso de logon regular, testa se um caminho de logon pode ser obtido na seguinte ordem:
+* Se um logon regular, testa se um caminho de logon pode ser obtido na seguinte ordem:
 
    * do `LoginPathProvider` conforme implementado pelo novo `com.adobe.granite.auth.requirement.impl.RequirementService`,
    * da implementação CUG antiga e obsoleta,
    * a partir dos Mapeamentos da página de logon conforme definido com a `LoginSelectorHandler`,
-   * e, por fim, fazer o fallback para a Página de logon padrão, conforme definido com `LoginSelectorHandler`.
+   * e, por fim, voltar para a Página de logon padrão, conforme definido com a `LoginSelectorHandler`.
 
 * Assim que um caminho de logon válido for obtido por meio das chamadas listadas acima, a solicitação do usuário será redirecionada para essa página.
 
@@ -177,7 +173,7 @@ A variável `LoginPathProvider` conforme implementado pelo novo suporte de requi
 
 As seguintes práticas recomendadas devem ser consideradas ao definir os requisitos de autenticação:
 
-* Evite aninhar requisitos de autenticação: colocar um único marcador de requisito de autenticação no início de uma árvore deve ser suficiente e é herdado para toda a subárvore definida pelo nó de destino. Os requisitos de autenticação adicionais nessa árvore devem ser considerados redundantes e podem levar a problemas de desempenho ao avaliar o requisito de autenticação no Apache Sling. Com a separação das áreas CUG relacionadas com autorização e autenticação, é possível restringir o acesso de leitura por meio do CUG ou outro tipo de políticas, enquanto ao mesmo tempo impõe a autenticação para toda a árvore.
+* Evite aninhar requisitos de autenticação: colocar um único marcador de requisito de autenticação no início de uma árvore deve ser suficiente e é herdado para toda a subárvore definida pelo nó de destino. Os requisitos de autenticação adicionais nessa árvore devem ser considerados redundantes e podem levar a problemas de desempenho ao avaliar o requisito de autenticação no Apache Sling. Com a separação das áreas de autorização e de autenticação do CUG, é possível restringir o acesso de leitura por meio do CUG ou de outro tipo de políticas, ao mesmo tempo que se impõe a autenticação para toda a árvore.
 * O conteúdo do repositório de modelo é tal que os requisitos de autenticação se aplicam a toda a árvore, sem a necessidade de excluir subárvores aninhadas do requisito novamente.
 * Para evitar especificar e subsequentemente registrar caminhos de logon redundantes:
 
@@ -281,7 +277,7 @@ if (cugPolicy.addPrincipals(toAdd1, toAdd2) || cugPolicy.removePrincipals(toRemo
 
 ### Recuperar Políticas CUG Efetivas {#retrieve-effective-cug-policies}
 
-O gerenciamento de controle de acesso JCR define um método de melhor esforço para recuperar as políticas que entram em vigor em um determinado caminho. Devido ao fato de que a avaliação das políticas CUG é condicional e depende da configuração correspondente a ser habilitada, chamando `getEffectivePolicies` é uma maneira conveniente de verificar se uma determinada política CUG está sendo aplicada em uma determinada instalação.
+O gerenciamento de controle de acesso JCR define um método de melhor esforço para recuperar as políticas que entram em vigor em um determinado caminho. Como a avaliação das políticas CUG é condicional e depende da configuração correspondente a ser habilitada, chamando `getEffectivePolicies` é uma maneira conveniente de verificar se uma determinada política CUG está sendo aplicada em uma determinada instalação.
 
 >[!NOTE]
 >
@@ -324,7 +320,7 @@ while (isSupportedPath(path)) {
 }
 ```
 
-#### Gerenciando políticas CUG pelo principal {#managing-cug-policies-by-pincipal}
+#### Gerenciando políticas CUG por principal {#managing-cug-policies-by-pincipal}
 
 As extensões definidas pelo `JackrabbitAccessControlManager` que permitem editar as políticas de controle de acesso por principal não são implementadas com o gerenciamento de controle de acesso CUG, já que, por definição, uma política CUG sempre afeta todos os principais: aqueles listados com o `PrincipalSetPolicy` estão recebendo acesso de leitura enquanto todas as outras entidades serão impedidas de ler o conteúdo na árvore definida pelo nó de destino.
 
@@ -332,7 +328,7 @@ Os métodos correspondentes sempre retornam uma matriz de política vazia, mas n
 
 ### Gerenciamento do requisito de autenticação {#managing-the-authentication-requirement}
 
-A criação, modificação ou remoção de novos requisitos de autenticação é alcançada alterando o tipo de nó efetivo do nó de destino. A propriedade de caminho de logon opcional pode ser gravada usando a API JCR comum.
+A criação, modificação ou remoção de um novo requisito de autenticação é alcançada alterando o tipo de nó efetivo do nó de destino. A propriedade de caminho de logon opcional pode ser gravada usando a API JCR comum.
 
 >[!NOTE]
 >
@@ -490,7 +486,7 @@ Consulte também a documentação de mapeamento CUG para obter um mapeamento abr
 
 ### Autorização: instalação e configuração {#authorization-setup-and-configuration}
 
-As novas partes relacionadas à autorização estão contidas no **Autorização Oak CUG** pacote ( `org.apache.jackrabbit.oak-authorization-cug`), que faz parte da instalação padrão do AEM. O pacote define um modelo de autorização separado destinado a ser implantado como uma maneira adicional de gerenciar o acesso de leitura.
+As novas partes relacionadas com a autorização estão **Autorização Oak CUG** pacote ( `org.apache.jackrabbit.oak-authorization-cug`), que faz parte da instalação padrão do AEM. O pacote define um modelo de autorização separado destinado a ser implantado como uma maneira adicional de gerenciar o acesso de leitura.
 
 #### Configurando a autorização CUG {#setting-up-cug-authorization}
 
@@ -555,7 +551,7 @@ Os dois componentes OSGi a seguir foram introduzidos para definir requisitos de 
   </tr>
   <tr>
    <td>Descrição</td>
-   <td>Permite excluir entidades principais com o(s) nome(s) configurado(s) da avaliação CUG.</td>
+   <td>Permite excluir entidades principais com os nomes configurados da avaliação CUG.</td>
   </tr>
   <tr>
    <td>Propriedades de configuração</td>
@@ -588,7 +584,7 @@ As opções de configuração disponíveis associadas ao módulo de autorizaçã
 
 A isenção de princípios individuais da avaliação CUG foi adotada a partir da implementação anterior. A nova autorização CUG cobre isso com uma interface dedicada chamada CugExclude. O Apache Jackrabbit Oak 1.4 vem com uma implementação padrão que exclui um conjunto fixo de principais, bem como uma implementação estendida que permite configurar nomes principais individuais. O último é configurado em instâncias de publicação do AEM.
 
-O padrão desde o AEM 6.3 impede que as seguintes entidades sejam afetadas pelas políticas CUG:
+O padrão desde o AEM 6.3 impede que os seguintes principais sejam afetados pelas políticas CUG:
 
 * entidades administrativas (usuário administrador, grupo de administradores)
 * principais de usuário do serviço
@@ -604,15 +600,15 @@ Como alternativa, é possível fornecer e implantar uma implementação personal
 
 As novas partes relacionadas à autenticação estão contidas no **Manipulador de autenticação do Adobe Granite** pacote ( `com.adobe.granite.auth.authhandler` versão 5.6.48). Este pacote faz parte da instalação padrão do AEM.
 
-Para configurar a substituição do requisito de autenticação para o suporte CUG obsoleto, alguns componentes OSGi devem estar presentes e ativos em uma determinada instalação de AEM. Para obter mais detalhes, consulte **Características dos componentes OSGi** abaixo.
+Para configurar a substituição do requisito de autenticação para o suporte CUG obsoleto, alguns componentes OSGi devem estar presentes e ativos em uma determinada instalação do AEM. Para obter mais detalhes, consulte **Características dos componentes OSGi** abaixo.
 
 >[!NOTE]
 >
->Devido à opção de configuração obrigatória com RequirementHandler, as partes relacionadas à autenticação só estarão ativas se o recurso tiver sido habilitado por meio da especificação de um conjunto de caminhos compatíveis. Com uma instalação padrão do AEM, o recurso é desativado no modo de execução do autor e ativado para /content no modo de execução de publicação.
+>Devido à opção de configuração obrigatória com o RequirementHandler, as partes relacionadas à autenticação só estarão ativas se o recurso tiver sido habilitado por meio da especificação de um conjunto de caminhos compatíveis. Com uma instalação padrão do AEM, o recurso é desativado no modo de execução do autor e ativado para /content no modo de execução de publicação.
 
 **Características dos componentes OSGi**
 
-Os 2 componentes OSGi a seguir foram introduzidos para definir requisitos de autenticação e especificar caminhos de logon dedicados:
+Os dois componentes OSGi a seguir foram introduzidos para definir requisitos de autenticação e especificar caminhos de logon dedicados:
 
 * `com.adobe.granite.auth.requirement.impl.RequirementService`
 * `com.adobe.granite.auth.requirement.impl.DefaultRequirementHandler`
@@ -682,7 +678,7 @@ As partes relacionadas à autenticação da regravação do CUG vêm apenas com 
 
 ## Configuração padrão desde o AEM 6.3 {#default-configuration-since-aem}
 
-As novas instalações do AEM usarão, por padrão, as novas implementações para as partes relacionadas à autorização e autenticação do recurso CUG. A implementação antiga &quot;Suporte ao grupo de usuários fechado (CUG) do Adobe Granite&quot; foi descontinuada e será desativada por padrão em todas as instalações de AEM. Em vez disso, as novas implementações serão habilitadas da seguinte maneira:
+As novas instalações do AEM usarão, por padrão, as novas implementações para as partes relacionadas à autorização e à autenticação do recurso CUG. A implementação antiga &quot;Suporte ao grupo de usuários fechado (CUG) do Adobe Granite&quot; foi descontinuada e será desativada por padrão em todas as instalações de AEM. Em vez disso, as novas implementações serão habilitadas da seguinte maneira:
 
 ### Instâncias do autor {#author-instances}
 
@@ -786,7 +782,7 @@ O componente OSGi obsoleto **Suporte a grupo de usuários fechado (CUG) do Adobe
 
 As seções a seguir descrevem as diferenças entre as implementações antigas e novas do ponto de vista da implementação e da segurança. Embora a nova implementação tenha como objetivo fornecer a mesma funcionalidade, há alterações sutis que são importantes ao usar o novo CUG.
 
-### Diferenças No Que Diz Respeito À Autorização {#differences-with-regards-to-authorization}
+### Diferenças Em Relação À Autorização {#differences-with-regards-to-authorization}
 
 As principais diferenças do ponto de vista da autorização são resumidas na lista seguinte:
 
@@ -804,7 +800,7 @@ Essa mudança de propriedades residuais do JCR para uma política dedicada de co
 
 Espera-se que as políticas CUG sejam criadas no nó JCR que define a subárvore para estar sujeita a acesso de leitura restrito. Essa provavelmente será uma página de AEM caso o CUG afete toda a árvore.
 
-Observe que a inserção da política CUG somente no nó jcr:content localizado abaixo de uma determinada página restringirá o acesso ao conteúdo s.str de uma determinada página, mas não terá efeito em nenhum irmão ou página secundária. Esse pode ser um caso de uso válido, e é possível obtê-lo com um editor de repositório que permite a aplicação de conteúdo de acesso refinado. No entanto, contrasta com a implementação anterior, em que a inserção de uma propriedade cq:cugEnabled no nó jcr:content era remapeada internamente para o nó da página. Esse mapeamento não é mais executado.
+Observe que a inserção da política CUG somente no nó jcr:content localizado abaixo de uma determinada página restringirá o acesso ao conteúdo s.str de uma determinada página, mas não terá efeito em nenhum irmão ou página secundária. Esse pode ser um caso de uso válido e é possível obtê-lo com um editor de repositório que permite a aplicação de conteúdo de acesso refinado. No entanto, contrasta com a implementação anterior, em que a inserção de uma propriedade cq:cugEnabled no nó jcr:content era remapeada internamente para o nó da página. Esse mapeamento não é mais executado.
 
 **Avaliação de permissão com políticas CUG**
 

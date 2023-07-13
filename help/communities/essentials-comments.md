@@ -1,18 +1,14 @@
 ---
 title: Fundamentos de comentários
-seo-title: Comments Essentials
 description: Visão geral do componente Comentários
-seo-description: Comments component overview
-uuid: 58b7bb58-f598-4bcb-93ae-b7795cab51cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '335'
 ht-degree: 4%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 4%
 
 Esta página fornece os fundamentos para trabalhar com o sistema de comentários (componente de comentários) e as opções para gerenciar o conteúdo gerado pelo usuário (UGC) produzido quando os membros postam comentários ou respostas.
 
-A componente de comentários estabelece um sistema de comentários de forma que cada postagem individual seja representada por um componente de comentário (singular). É o sistema de comentários que está incluído na página. O sistema de comentários criará os comentários individuais quando invocado.
+A componente de comentários estabelece um sistema de comentários de forma que cada postagem individual seja representada por um componente de comentário (singular). É o sistema de comentários que está incluído na página. O sistema de comentários cria comentários individuais quando chamado.
 
 ## Essentials para o lado do cliente {#essentials-for-client-side}
 
@@ -79,9 +75,9 @@ Isso se aplica a qualquer componente que estende um sistema de comentários.
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API de comentários](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
+* [API de comentários](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
-* [Endpoints de comentários](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
+* [Endpoints de comentários](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
@@ -90,7 +86,7 @@ Isso se aplica a qualquer componente que estende um sistema de comentários.
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 

@@ -1,18 +1,14 @@
 ---
 title: Como usar a ferramenta Servidor proxy
-seo-title: How to use the Proxy Server Tool
 description: O servidor proxy atua como um servidor intermediário que retransmite solicitações entre um cliente e um servidor
-seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
-uuid: 30f4f46d-839e-4d23-a511-12f29b3cc8aa
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -44,7 +40,7 @@ Iniciar o servidor na linha de comando:
 
 `<host>`
 
-Esse é o endereço do host da instância do CRX à qual você deseja se conectar. Se a instância estiver em seu computador local, isso será `localhost`.
+Esse é o endereço do host da instância do CRX à qual você deseja se conectar. Se a instância estiver no computador local, isso será `localhost`.
 
 `<remoteport>`
 
@@ -98,7 +94,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Isso mostra o número de bytes transmitidos entre o cliente ( `C`) e o servidor ( `S`) na 6ª conexão e na velocidade média.
+Isso mostra o número de bytes transmitidos entre o cliente ( `C`) e o servidor ( `S`) na sexta conexão e na velocidade média.
 
 **Um exemplo de saída de log**
 
@@ -106,11 +102,11 @@ Como exemplo, considere uma página que produz o seguinte código quando solicit
 
 ### Exemplo {#example}
 
-Como exemplo, considere um documento html muito simples localizado no repositório em
+Como exemplo, considere um documento html simples no repositório em
 
 `/content/test.html`
 
-ao lado de um arquivo de imagem localizado em
+Ao lado de um arquivo de imagem em
 
 `/content/test.jpg`
 
@@ -128,13 +124,13 @@ O conteúdo de `test.html` é:
 </html>
 ```
 
-Supondo que a instância AEM esteja em execução `localhost:4502` iniciamos o proxy da seguinte forma:
+Supondo que a instância AEM esteja em execução `localhost:4502`, o proxy é iniciado assim:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-A instância do CQ/CRX agora pode ser acessada por meio do proxy em `localhost:4444` e toda a comunicação através desta porta é registrada em `test.log`.
+A instância do CQ/CRX agora pode ser acessada por meio do proxy em `localhost:4444` e toda a comunicação por meio desta porta é registrada em `test.log`.
 
-Agora, se observarmos a saída do proxy, veremos a interação entre o navegador e a instância do AEM.
+Agora, se você observar a saída do proxy, verá a interação entre o navegador e a instância do AEM.
 
 Na inicialização, o proxy gera o seguinte:
 
@@ -143,11 +139,11 @@ starting proxy for localhost:4502 on port 4444
 using logfile: <some-dir>/crx-quickstart/opt/helpers/test.log
 ```
 
-Em seguida, abrimos um navegador e acessamos a página de teste:
+Agora abra um navegador e acesse a página de teste:
 
 `http://localhost:4444/content/test.html`
 
-e vemos o navegador fazer um `GET` solicitação para a página:
+E você vê que o navegador faz uma `GET` solicitação para a página:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -208,7 +204,7 @@ S-7-#000017 -> [Connection: Keep-Alive ]
 
 **Verificando se a opção Keep-Alive funciona**
 
-Keep-alive é um recurso de HTTP que permite que um cliente reutilize a conexão TCP com o servidor para fazer várias solicitações (para o código de página, imagens, folhas de estilos e assim por diante). Sem o keep-alive, o cliente precisa estabelecer uma nova conexão para cada solicitação.
+Keep-alive é um recurso do HTTP que permite que um cliente reutilize a conexão TCP com o servidor para fazer várias solicitações (para o código da página, imagens, folhas de estilos e assim por diante). Sem o keep-alive, o cliente precisa estabelecer uma nova conexão para cada solicitação.
 
 Para verificar se o keep-alive funciona:
 
@@ -219,7 +215,7 @@ Para verificar se o keep-alive funciona:
 
 **Localizando solicitações perdidas**
 
-Se você perder solicitações em uma configuração de servidor complexa, por exemplo, com um firewall e um dispatcher, poderá usar o servidor proxy para descobrir onde a solicitação foi perdida. No caso de um firewall:
+Se você perder solicitações em uma configuração de servidor complexa, por exemplo, com um firewall e um Dispatcher, poderá usar o servidor proxy para descobrir onde a solicitação foi perdida. Se houver um firewall:
 
 * Iniciar um proxy antes de um firewall
 * Iniciar outro proxy após um firewall

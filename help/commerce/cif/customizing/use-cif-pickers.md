@@ -8,7 +8,7 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
-source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 0%
@@ -33,23 +33,23 @@ Para usar o seletor de produtos em um componente de projeto, um desenvolvedor de
     selectionId="sku"/>
 ```
 
-O campo do produto permite navegar até o produto que um usuário deseja selecionar por meio das diferentes exibições. Por padrão, o campo product retorna a ID do produto, mas pode ser configurado usando o `selectionId` atributo.
+O campo produto permite a navegação até o produto que um usuário deseja selecionar por meio das diferentes visualizações. Por padrão, o campo product retorna a ID do produto, mas pode ser configurado usando o `selectionId` atributo.
 
 O campo seletor de produto oferece suporte às seguintes propriedades opcionais:
 
-- selectionId (id, uid, sku, slug, combineSlug, combineSku) - permite escolher o atributo de produto a ser retornado pelo seletor (padrão = id). Usar sku retorna o sku do produto selecionado, ao usar o combineSku e retorna uma string como base#variant com os skus do produto base e a variante selecionada, ou um único sku se um produto base estiver selecionado.
-- filtro (folderOrProduct, folderOrProductOrVariant): filtra o conteúdo a ser renderizado pelo seletor ao navegar na árvore do produto. folderOrProduct - renderiza pastas e produtos. folderOrProductOrVariant - renderiza pastas, variantes de produto e de produto. Se um produto ou variante de produto for renderizado, ela também poderá ser selecionada no seletor. (padrão = folderOrProduct)
+- selectionId (id, uid, sku, slug, combineSlug, combineSku) - permite que você escolha o atributo de produto a ser retornado pelo seletor (padrão = id). Usar sku retorna o sku do produto selecionado, ao usar o combineSku e retorna uma string como base#variant com os skus do produto base e a variante selecionada, ou um único sku se um produto base estiver selecionado.
+- filtro (folderOrProduct, folderOrProductOrVariant): filtra o conteúdo a ser renderizado pelo seletor ao navegar na árvore do produto. folderOrProduct - renderiza pastas e produtos. folderOrProductOrVariant - renderiza pastas, produtos e variantes de produtos. Se um produto ou variante de produto for renderizado, também se tornará selecionável no seletor. (padrão = folderOrProduct)
 - múltiplo (true, false) - habilita a seleção de um ou vários produtos (padrão = false)
 - emptyText - para configurar o valor de texto vazio do campo do seletor
 
-Além disso, as propriedades padrão do campo de diagnóstico, como `name`, `fieldLabel`ou `fieldDescription` também são compatíveis.
+Além disso, as propriedades padrão do campo de diálogo, como `name`, `fieldLabel`ou `fieldDescription`, também são compatíveis.
 
 >[!CAUTION]
 >
 >A variável `cifproductfield` exige que o `cif.shell.picker` clientlib. Para adicionar uma clientlib a uma caixa de diálogo, é possível usar a propriedade extraClientlibs.
 >[!CAUTION]
 >
->A partir da versão 2.0.0 dos Componentes principais da CIF, o suporte para `id` foi removido e substituído por `uid`. Recomendamos usar `sku` ou `slug` como identificador do produto. Continuamos a oferecer suporte `id` somente para projetos que usam os Componentes principais da CIF versão 1.x.
+>A partir da versão 2.0.0 dos Componentes principais da CIF, o suporte para `id` foi removido e substituído por `uid`. O Adobe recomenda usar `sku` ou `slug` como identificador do produto. O Adobe continua a oferecer suporte `id` somente para projetos que usam os Componentes principais da CIF versão 1.x.
 
 Um exemplo completo de funcionamento do `cifproductfield` pode ser encontrado no [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) projeto. Consulte também [Personalização de caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) da documentação dos Componentes principais do AEM.
 
@@ -72,13 +72,13 @@ O campo do seletor de categoria é compatível com as seguintes propriedades opc
 - selectionId(id, uid, slug, urlPath, idAndUrlPath) _(obsoleto)_, uidAndUrlPath _(obsoleto)_) - permite escolher o atributo de categoria a ser retornado pelo seletor (padrão = id).
 - multiple (true, false) - habilita a seleção de uma ou várias categorias (padrão = false)
 
-Além disso, as propriedades padrão do campo de diagnóstico, como `name`, `fieldLabel`ou `fieldDescription` também são compatíveis.
+Além disso, as propriedades padrão do campo de diálogo, como `name`, `fieldLabel`ou `fieldDescription` também são compatíveis.
 
 >[!CAUTION]
 >
 >Igual ao `cifproductfield` componente o `cifcategoryfield` O componente também exige que o `cif.shell.picker` clientlib. Para adicionar uma clientlib a uma caixa de diálogo, você pode usar o `extraClientlibs` propriedade. Consulte [Personalização de caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) da documentação dos Componentes principais do AEM.
 >[!CAUTION]
 >
->A partir da versão 2.0.0 dos Componentes principais da CIF, o suporte para `id` foi removido e substituído por `uid`. Recomendamos usar `uid` ou `urlPath` como identificador de categoria. Continuamos a oferecer suporte `id` &amp; `idAndUrlPath` somente para projetos que usam os Componentes principais da CIF versão 1.x.
+>A partir da versão 2.0.0 dos Componentes principais da CIF, o suporte para `id` foi removido e substituído por `uid`. O Adobe recomenda usar `uid` ou `urlPath` como identificador de categoria. O Adobe continua a oferecer suporte `id` &amp; `idAndUrlPath` somente para projetos que usam os Componentes principais da CIF versão 1.x.
 
 Um exemplo completo de funcionamento do `cifcategoryfield` pode ser encontrado no [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) projeto.
