@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: c6eee2e647a0c5e6f5a8dd7a1a13d18218fdf10b
 workflow-type: tm+mt
 source-wordcount: '1533'
 ht-degree: 43%
@@ -62,7 +62,7 @@ Os fragmentos de experiência do AEM podem ser exportados para o espaço de trab
 >
 >Para obter mais informações, consulte também:
 >
->* [Desenvolvimento do Adobe Target](http://developers.adobetarget.com/)
+>* [Desenvolvimento do Adobe Target](https://developers.adobetarget.com/)
 >* [Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
 >
 
