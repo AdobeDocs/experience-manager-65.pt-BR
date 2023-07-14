@@ -1,20 +1,16 @@
 ---
 title: Verificações pós-atualização e solução de problemas
-seo-title: Post Upgrade Checks and Troubleshooting
 description: Saiba como solucionar problemas que podem ocorrer após uma atualização.
-seo-description: Learn how to troubleshoot issues that might appear after an upgrade.
-uuid: 3f525f2c-8d25-4bb8-a57e-3adf667edde8
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: 5a67aa9f-e5eb-4d7e-89da-2ee1a45eb8ce
 docset: aem65
 feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1785'
 ht-degree: 0%
 
 ---
@@ -56,10 +52,10 @@ O principal objetivo desse recurso é reduzir a necessidade de interpretação m
 
 Mais especificamente, garante que:
 
-* As falhas de atualização detectadas pela estrutura de atualização podem ser centralizadas em um único relatório de atualização;
+* As falhas de atualização detectadas pela estrutura de atualização são centralizadas em um único relatório de atualização;
 * O relatório de atualização inclui indicadores sobre a intervenção manual necessária.
 
-Para acomodar isso, foram feitas alterações no modo como os logs são gerados no `upgrade.log` arquivo.
+Para acomodar isso, foram feitas alterações na maneira como os logs são gerados no `upgrade.log` arquivo.
 
 Este é um exemplo de relatório que não mostra erros durante a atualização:
 
@@ -79,19 +75,19 @@ Navegue até o console OSGi `/system/console/bundles` e verifique se algum pacot
 
 ### Verificar versão do Oak {#verify-oak-version}
 
-Após a atualização, você deverá ver que a versão do Oak foi atualizada para **1.10.2**. Para verificar a versão do Oak, navegue até o console OSGi e observe a versão associada aos pacotes Oak: Oak Core, Oak Commons, Oak Segment Tar.
+Após a atualização, você deve ver que a versão do Oak foi atualizada para **1.10.2**. Para verificar a versão do Oak, navegue até o console OSGi e verifique a versão associada aos pacotes Oak: Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Pasta PreUpgradeBackup do Inspect {#inspect-preupgradebackup-folder}
 
-Durante a atualização, o AEM tentará fazer backup das personalizações e armazená-las abaixo de `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Para visualizar esta pasta no CRXDE Lite, talvez seja necessário [habilitar CRXDE Lite temporariamente](/help/sites-administering/enabling-crxde-lite.md).
+Durante a atualização, o AEM tenta fazer backup das personalizações e as armazena abaixo de `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Para exibir esta pasta no CRXDE Lite, talvez seja necessário [habilitar CRXDE Lite temporariamente](/help/sites-administering/enabling-crxde-lite.md).
 
-A pasta com o carimbo de data/hora deve ter uma propriedade chamada `mergeStatus` com um valor de `COMPLETED`. A variável **para processar** a pasta deve estar vazia e a variável **substituído** indica quais nós foram substituídos durante a atualização. Conteúdo abaixo de **sobras** indica o conteúdo que não pôde ser mesclado com segurança durante a atualização. Se a implementação for dependente de qualquer um dos nós secundários (e ainda não estiver instalado pelo pacote de código atualizado) eles precisarão ser mesclados manualmente.
+A pasta com o carimbo de data/hora deve ter uma propriedade chamada `mergeStatus` com um valor de `COMPLETED`. A variável **para processar** a pasta deve estar vazia e a variável **substituído** indica quais nós foram substituídos durante a atualização. O conteúdo abaixo do nó restante indica conteúdo que não pôde ser mesclado com segurança durante a atualização. Se a implementação depender de qualquer um dos nós secundários (e ainda não instalados pelo pacote de código atualizado), eles precisarão ser mesclados manualmente.
 
 Desative o CRXDE Lite após este exercício se estiver em um ambiente de Preparo ou Produção.
 
 ### Validação inicial das páginas {#initial-validation-of-pages}
 
-Executar uma validação inicial em várias páginas no AEM. Se estiver atualizando um ambiente de Autor, abra a página Iniciar e a página de Boas-vindas ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Nos ambientes Autor e Publicação, abra algumas páginas de aplicativo e teste de fumaça que são renderizados corretamente. Em caso de problemas, consulte o `error.log` para solucionar problemas.
+Executar uma validação inicial em várias páginas no AEM. Se estiver atualizando um ambiente de Autor, abra a página Iniciar e a página de Boas-vindas ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Nos ambientes Autor e Publicação, abra algumas páginas de aplicativo e teste de fumaça que eles renderizam corretamente. Em caso de problemas, consulte o `error.log` para solucionar problemas.
 
 ### Aplicar Service Packs do AEM {#apply-aem-service-packs}
 
@@ -113,7 +109,7 @@ Se estiver usando um Armazenamento de dados de arquivo, verifique se a tarefa Co
 
 #### Ativar limpeza de revisão online {#enable-online-revision-cleanup}
 
-Se estiver usando MongoMK ou o novo formato de segmento TarMK, verifique se a tarefa de Limpeza de revisão está ativada e adicionada à lista Manutenção diária. Instruções descritas [aqui](/help/sites-deploying/revision-cleanup.md).
+Se estiver usando MongoMK ou o novo formato de segmento TarMK, verifique se a tarefa Revision Clean Up está ativada e adicionada à lista Daily Maintenance (Manutenção diária). Instruções descritas [aqui](/help/sites-deploying/revision-cleanup.md).
 
 ### Executar plano de teste {#execute-test-plan}
 
@@ -131,7 +127,7 @@ Todos os trabalhos agendados como parte da base de código podem ser ativados ne
 
 Esta seção contém alguns cenários de problemas que podem ocorrer durante o procedimento de atualização para AEM 6.3.
 
-Esses cenários devem ajudar a rastrear a causa raiz dos problemas relacionados à atualização e devem ajudar a identificar problemas específicos do projeto ou do produto.
+Esses cenários devem ajudar a rastrear a causa raiz de problemas relacionados à atualização e devem ajudar a identificar problemas específicos do projeto ou do produto.
 
 ### Falha na migração do repositório  {#repository-migration-failing-}
 
@@ -141,15 +137,15 @@ Se a migração ainda falhar, você poderá descobrir qual é a causa raiz, insp
 
 ### A Atualização Não Foi Executada {#the-upgrade-did-not-run}
 
-Antes de iniciar as etapas de preparação, execute o **origem** primeiro, executando-a com o comando java -jar aem-quickstart.jar. Isso é necessário para garantir que o arquivo quickstart.properties seja gerado corretamente. Se estiver ausente, a atualização não funcionará. Como alternativa, verifique se o arquivo está presente na seção `crx-quickstart/conf` na pasta de instalação da instância de origem. Além disso, ao iniciar o AEM para iniciar a atualização, ele deve ser executado com o comando java -jar aem-quickstart.jar. A inicialização a partir de um script de inicialização não iniciará o AEM no modo de atualização.
+Antes de iniciar as etapas de preparação, execute o **origem** primeiro, executando-a com o comando Java™ -jar aem-quickstart.jar. Isso é necessário para garantir que o arquivo quickstart.properties seja gerado corretamente. Se estiver ausente, a atualização não funcionará. Como alternativa, verifique se o arquivo está presente na seção `crx-quickstart/conf` na pasta de instalação da instância de origem. Além disso, ao iniciar o AEM para iniciar a atualização, ele deve ser executado com o comando Java™ -jar aem-quickstart.jar. A inicialização a partir de um script de inicialização não iniciará o AEM no modo de atualização.
 
 ### Falha ao atualizar pacotes e pacotes  {#packages-and-bundles-fail-to-update-}
 
-Se os pacotes não forem instalados durante a atualização, os pacotes que eles contêm também não serão atualizados. Essa categoria de problemas geralmente é causada por uma configuração incorreta do armazenamento de dados. Eles também aparecerão como **ERRO** e **AVISO** mensagens no error.log. Como na maioria desses casos o logon padrão pode falhar, você pode usar o CRXDE diretamente para inspecionar e encontrar os problemas de configuração.
+Se os pacotes não forem instalados durante a atualização, os pacotes que eles contêm também não serão atualizados. Essa categoria de problemas é causada por uma configuração incorreta do armazenamento de dados. Eles também aparecerão como **ERRO** e **AVISO** mensagens no error.log. Como na maioria desses casos o logon padrão pode falhar, você pode usar o CRXDE diretamente para inspecionar e encontrar os problemas de configuração.
 
 ### Alguns pacotes de AEM não estão mudando para o estado ativo {#some-aem-bundles-are-not-switching-to-the-active-state}
 
-No caso de pacotes não inicializando, você deve verificar se há dependências não satisfeitas.
+Se houver pacotes não inicializando, verifique se há dependências não satisfeitas.
 
 Caso esse problema esteja presente, mas se baseie em uma instalação de pacote com falha que resultou na não atualização de pacotes, eles serão considerados incompatíveis para a nova versão. Para obter mais informações sobre como solucionar esse problema, consulte **Falha ao atualizar pacotes e pacotes** acima.
 
@@ -161,19 +157,19 @@ Caso seus pacotes personalizados não estejam alternando para o estado ativo, é
 
 A API removida deve ser marcada como obsoleta em uma das versões anteriores. Você pode encontrar instruções sobre uma migração direta do seu código neste aviso de desativação. O Adobe visa o controle de versão semântico sempre que possível, para que as versões possam indicar alterações de quebra.
 
-Também é melhor verificar se a alteração que causou o problema foi absolutamente necessária e revertê-la se não for. Verifique também se o aumento da versão da exportação de pacotes foi aumentado mais do que o necessário, após o controle de versão semântico rigoroso.
+Também é melhor verificar se a alteração que causou o problema foi necessária e, caso contrário, revertê-la. Verifique também se o aumento da versão da exportação de pacotes foi aumentado mais do que o necessário, após o controle de versão semântico rigoroso.
 
 ### Interface de plataforma defeituosa {#malfunctioning-platform-ui}
 
-No caso de determinadas funcionalidades da interface do usuário que não estejam funcionando corretamente após a atualização, verifique primeiro se há sobreposições personalizadas da interface. Algumas estruturas podem ter sido alteradas e a sobreposição pode precisar de uma atualização ou está obsoleta.
+Se houver determinada funcionalidade da interface do usuário que não esteja funcionando corretamente após a atualização, verifique primeiro se há sobreposições personalizadas da interface. Algumas estruturas podem ter sido alteradas e a sobreposição pode precisar de uma atualização ou está obsoleta.
 
-Em seguida, verifique se há erros de Javascript que possam ser rastreados até extensões personalizadas adicionadas que estejam vinculadas às bibliotecas do cliente. O mesmo pode se aplicar ao CSS personalizado que pode estar causando problemas no layout do AEM.
+Em seguida, verifique se há erros de JavaScript que possam ser rastreados até extensões personalizadas adicionadas que estejam vinculadas às bibliotecas do cliente. O mesmo pode se aplicar ao CSS personalizado que pode estar causando problemas no layout do AEM.
 
-Finalmente, verifique se há erros de configuração com os quais o Javascript não possa lidar. Geralmente, isso ocorre com extensões desativadas incorretamente.
+Por fim, verifique se há erros de configuração com os quais o JavaScript talvez não consiga lidar. Geralmente, isso ocorre com extensões desativadas incorretamente.
 
 ### Componentes personalizados com defeito, Modelos ou Extensões de UI {#malfunctioning-custom-components-templates-or-ui-extensions}
 
-Na maioria dos casos, as causas raiz desses problemas são as mesmas dos pacotes que não foram iniciados ou dos pacotes que não estão sendo instalados com a única diferença de que os problemas começam a ocorrer ao usar os componentes pela primeira vez.
+Normalmente, as causas básicas desses problemas são as mesmas dos pacotes que não são iniciados ou dos pacotes que não estão sendo instalados, com a única diferença de que os problemas começam a ocorrer ao usar os componentes pela primeira vez.
 
 A maneira de lidar com um código personalizado incorreto é primeiro executar testes de fumaça para identificar a causa. Depois de encontrá-lo, verifique as recomendações neste [link] seção do artigo para saber como corrigi-los.
 
@@ -183,7 +179,7 @@ A maneira de lidar com um código personalizado incorreto é primeiro executar t
 
 ### Análise de error.log e upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
-Na maioria das situações, os registros precisam ser consultados para detectar a causa de um problema. No entanto, no caso de atualizações, também é necessário monitorar problemas de dependência, pois os pacotes antigos podem não ser atualizados corretamente.
+Na maioria das situações, os registros precisam ser consultados para que os erros localizem a causa de um problema. No entanto, com as atualizações, também é necessário monitorar problemas de dependência, pois os pacotes antigos podem não ser atualizados corretamente.
 
 A melhor maneira de fazer isso é remover o error.log, removendo todas as mensagens que provavelmente não estão relacionadas ao problema que você está enfrentando. Você pode fazer isso por meio de uma ferramenta como o grep, usando:
 
@@ -203,4 +199,4 @@ Em alguns casos, mensagens de AVISO também podem ser encontradas, pois pode hav
 
 ### Contato com o suporte da Adobe {#contacting-adobe-support}
 
-Se você seguiu as instruções desta página e ainda está vendo problemas, entre em contato com o Suporte do Adobe. Para fornecer o máximo possível de informações ao engenheiro de suporte que trabalha no seu caso, inclua o arquivo upgrade.log da sua atualização.
+Se você seguiu as instruções desta página e ainda está vendo problemas, entre em contato com o Suporte da Adobe. Para fornecer o máximo possível de informações ao engenheiro de suporte que trabalha no seu caso, inclua o arquivo upgrade.log da sua atualização.

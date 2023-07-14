@@ -1,27 +1,23 @@
 ---
 title: Experimentar fragmentos de conteúdo no We.Retail
-seo-title: Trying out Content Fragments in We.Retail
 description: Experimentar fragmentos de conteúdo no We.Retail
-seo-description: null
-uuid: 66daddfe-8e98-47b6-8499-db055887ac17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 20%
+source-wordcount: '455'
+ht-degree: 17%
 
 ---
 
 # Experimentar fragmentos de conteúdo no We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Fragmentos de conteúdo - Eles permitem criar conteúdo não vinculado a canais, juntamente com variações (podem ser específicas de cada canal). **We.Retail** (conforme disponível em uma instância pronta para uso do AEM) fornece o fragmento **Surfe no Ártico em Lofoten** base. Isso ilustra que:
+Fragmentos de conteúdo - Eles permitem criar conteúdo não vinculado a canais, juntamente com variações (podem ser específicas de cada canal). **We.Retail** (conforme disponível em uma instância pronta para uso do Adobe Experience Manager) fornece o fragmento **Surfe no Ártico em Lofoten** base. Isso ilustra que:
 
-* Os fragmentos de conteúdo do Adobe Experience Manager (AEM) são [criados e gerenciados como ativos independentes da página](/help/assets/content-fragments/content-fragments.md). Eles permitem criar conteúdo não vinculado a canais, juntamente com variações (podem ser específicas de cada canal). 
+* Os fragmentos de conteúdo do Adobe Experience Manager (AEM) são [criados e gerenciados como ativos independentes da página](/help/assets/content-fragments/content-fragments.md). Eles permitem criar conteúdo não vinculado a canais, juntamente com variações (podem ser específicas de cada canal).
 
    * Consulte [Onde encontrar ativos de fragmento de conteúdo no We.Retail](#where-to-find-content-fragments-in-we-retail)
 
@@ -35,7 +31,7 @@ Para obter a documentação completa sobre criação, gerenciamento, uso e desen
 
 >[!NOTE]
 >
->**Fragmentos de conteúdo** e **[Fragmentos de experiência](/help/sites-authoring/experience-fragments.md)** são recursos diferentes no AEM:
+>**Fragmentos de conteúdo** e **[fragmentos de experiência](/help/sites-authoring/experience-fragments.md)** são recursos diferentes no AEM:
 >
 >* **Fragmentos de conteúdo** são conteúdo editorial, principalmente texto e imagens relacionadas. Eles são conteúdo puro, sem design e layout.
 >* **Fragmentos de experiência** são conteúdo totalmente apresentado; um fragmento de uma página da Web.
@@ -48,7 +44,7 @@ Há vários fragmentos de conteúdo de amostra no We.Retail; navegue por **Asset
 
 Isso inclui **Surfe no Ártico em Lofoten**, um fragmento junto com ativos visuais relacionados:
 
-* Navegar via **Assets**, **Arquivos**, **We.Retail**, **Inglês**, **Experiências**, **Surfe no Ártico em Lofoten**:
+* Navegar por meio de **Assets**, **Arquivos**, **We.Retail**, **Inglês**, **Experiências**, **Surfe no Ártico em Lofoten**:
 
    * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 

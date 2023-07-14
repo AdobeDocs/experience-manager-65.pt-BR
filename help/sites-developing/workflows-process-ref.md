@@ -1,18 +1,14 @@
 ---
 title: Referência do processo de fluxo de trabalho
-seo-title: Workflow Process Reference
 description: Referência do processo de fluxo de trabalho
-seo-description: null
-uuid: de367aa8-4580-4810-b665-2a7b521e36ca
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
-source-git-commit: cf3b739fd774bc860d9906b9884d22fd532fd5dd
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1068'
 ht-degree: 1%
 
 ---
@@ -25,11 +21,11 @@ O AEM fornece várias etapas de processo que podem ser usadas para criar modelos
 
 Para cada etapa do processo, as seguintes características são descritas.
 
-### Classe Java ou caminho ECMA {#java-class-or-ecma-path}
+### Classe Java™ ou caminho ECMA {#java-class-or-ecma-path}
 
-As etapas do processo são definidas por uma classe Java ou por um ECMAScript.
+As etapas do processo são definidas por uma classe Java™ ou por um ECMAScript.
 
-* Para os processos de classe Java, é fornecido o nome de classe totalmente qualificado.
+* Para os processos de classe Java™, o nome de classe totalmente qualificado é fornecido.
 * Para os processos do ECMAScript, é fornecido o caminho para o script.
 
 ### Carga {#payload}
@@ -38,7 +34,7 @@ A carga é a entidade sobre a qual uma instância de fluxo de trabalho atua. A c
 
 Por exemplo, se um fluxo de trabalho for aplicado a uma página AEM *P* depois *P* é passado de etapa a etapa conforme o fluxo de trabalho avança, com cada etapa atuando opcionalmente *P* de alguma forma.
 
-No caso mais comum, a carga é um nó JCR no repositório (por exemplo, uma página ou ativo AEM). Uma carga de Nó JCR é passada como uma string que é um caminho JCR ou um identificador JCR (UUID). Em alguns casos, a carga pode ser uma propriedade JCR (passada como um caminho JCR), um URL, um objeto binário ou um objeto Java genérico. Etapas de processo individuais que atuam na carga normalmente esperam uma carga de um determinado tipo ou agem de forma diferente dependendo do tipo de carga. Para cada processo descrito abaixo, o tipo de carga útil esperado, se houver, é descrito.
+No caso mais comum, a carga é um nó JCR no repositório (por exemplo, uma página ou ativo AEM). Uma carga de Nó JCR é passada como uma string que é um caminho JCR ou um identificador JCR (UUID). Às vezes, a carga pode ser uma propriedade JCR (passada como um caminho JCR), um URL, um objeto binário ou um objeto Java™ genérico. Etapas de processo individuais que atuam na carga normalmente esperam uma carga de um determinado tipo ou agem de forma diferente dependendo do tipo de carga. Para cada processo descrito abaixo, o tipo de carga útil esperado, se houver, é descrito.
 
 ### Argumentos {#arguments}
 
@@ -85,7 +81,7 @@ A maneira recomendada de fazer isso é usar um serviço de usuário criado com o
 >
 >* habilitar o **Modo herdado do processo de fluxo de trabalho**
 >
->Isso reverterá para o comportamento antigo de fornecer uma sessão de administrador ao `WorkflowProcess` e fornecer acesso irrestrito a todo o repositório mais uma vez.
+>Isso reverte para o comportamento antigo de fornecer uma sessão de administrador ao `WorkflowProcess` e fornecer acesso irrestrito a todo o repositório mais uma vez.
 
 ## Processos de Controle de Workflow {#workflow-control-processes}
 
@@ -95,7 +91,7 @@ Os processos a seguir não executam ações no conteúdo. Eles servem para contr
 
 A variável `AbsoluteTimeAutoAdvancer` (Avançador automático de tempo absoluto) se comporta de forma idêntica ao **AutoAdvancer**, exceto que o tempo limite é atingido em uma determinada hora e data, em vez de após um determinado período.
 
-* **Classe Java**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
+* **Classe Java™**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
 * **Carga**: nenhuma.
 * **Argumentos**: nenhuma.
 * **Tempo limite**: O processo atinge o tempo limite quando a hora e a data definidas são atingidas.
@@ -104,7 +100,7 @@ A variável `AbsoluteTimeAutoAdvancer` (Avançador automático de tempo absoluto
 
 A variável `AutoAdvancer` processo avança automaticamente o fluxo de trabalho para a próxima etapa. Se houver mais de uma próxima etapa possível (por exemplo, se houver uma divisão OR), esse processo avançará o fluxo de trabalho ao longo da *rota padrão*, se um tiver sido especificado, caso contrário, o workflow não será avançado.
 
-* **Classe Java**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
+* **Classe Java™**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 
 * **Carga**: nenhuma.
 * **Argumentos**: nenhuma.
@@ -112,9 +108,9 @@ A variável `AutoAdvancer` processo avança automaticamente o fluxo de trabalho 
 
 ### ProcessAssembler (Assembler de Processo) {#processassembler-process-assembler}
 
-A variável `ProcessAssembler` O processo executa vários subprocessos sequencialmente em uma única etapa do fluxo de trabalho. Para usar o `ProcessAssembler`, crie uma única etapa desse tipo no fluxo de trabalho e defina os argumentos para indicar os nomes e os argumentos dos subprocessos que deseja executar.
+A variável `ProcessAssembler` O processo executa vários subprocessos sequencialmente em uma única etapa do fluxo de trabalho. Para usar o `ProcessAssembler`, crie uma única etapa desse tipo no workflow e defina seus argumentos para indicar os nomes e argumentos dos subprocessos que deseja executar.
 
-* **Classe Java**: `com.day.cq.workflow.impl.process.ProcessAssembler`
+* **Classe Java™**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
 * **Carga**: um ativo DAM, uma página AEM ou nenhuma carga (depende dos requisitos dos subprocessos).
 * **Argumentos**:
@@ -136,7 +132,7 @@ Por exemplo:
 
 * Extraia os metadados do ativo.
 * Cria três miniaturas dos três tamanhos especificados.
-* Crie uma imagem de JPEG do ativo, supondo que o ativo originalmente não seja um GIF nem um PNG (nesse caso, nenhum JPEG é criado).
+* Crie uma imagem de JPEG do ativo, supondo que o ativo originalmente não seja um GIF ou um PNG (caso em que nenhum JPEG é criado).
 * Defina a data da última modificação no ativo.
 
 ```shell
@@ -152,7 +148,7 @@ Os processos a seguir executam tarefas simples ou servem como exemplos.
 
 >[!CAUTION]
 >
->Você ***deve*** não alterar nada no `/libs` caminho.
+>Não altere nada no `/libs` caminho.
 >
 >Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
 
@@ -200,7 +196,7 @@ Este é um exemplo de processo do ECMAScript.
 
 Bloqueia a carga do workflow.
 
-* **Classe Java:** `com.day.cq.workflow.impl.process.LockProcess`
+* **Classe Java™:** `com.day.cq.workflow.impl.process.LockProcess`
 
 * **Carga:** JCR_PATH e JCR_UUID
 * **Argumentos:** Nenhum
@@ -215,7 +211,7 @@ A etapa não tem efeito nas seguintes circunstâncias:
 
 Desbloqueia a carga do fluxo de trabalho.
 
-* **Classe Java:** `com.day.cq.workflow.impl.process.UnlockProcess`
+* **Classe Java™:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
 * **Carga:** JCR_PATH e JCR_UUID
 * **Argumentos:** Nenhum
@@ -232,9 +228,9 @@ O processo a seguir executa uma tarefa relacionada à versão.
 
 ### CreateVersionProcess {#createversionprocess}
 
-Cria uma nova versão da carga do fluxo de trabalho (página AEM ou ativo DAM).
+Cria uma versão da carga do fluxo de trabalho (página AEM ou ativo DAM).
 
-* **Classe Java**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
+* **Classe Java™**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 
 * **Carga**: um caminho JCR ou UUID que se refere a uma página ou ativo DAM
 * **Argumentos**: Nenhuma

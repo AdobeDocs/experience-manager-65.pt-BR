@@ -1,28 +1,24 @@
 ---
-title: Desenvolvimento de SPAs para o AEM
-seo-title: Developing SPAs for AEM
-description: Este artigo apresenta questões importantes a serem consideradas ao engajar um desenvolvedor de front-end a desenvolver um AEM, bem como fornece uma visão geral da arquitetura do AEM SPA SPA AEM com relação ao SPA para ter em mente ao implantar um desenvolvido no.
-seo-description: This article presents important questions to consider when engaging a front-end developer to develop a SPA for AEM as well as gives an overview of the architecture of AEM with respect to SPAs to keep in mind when deploying a developed SPA on AEM.
-uuid: 6673a041-c557-4968-ae54-4cd5b9f56251
+title: Desenvolvimento do SPA para Adobe Experience Manager
+description: Este artigo apresenta questões importantes a serem consideradas ao envolver um desenvolvedor de front-end para desenvolver um SPA para Adobe Experience Manager (AEM AEM SPA SPA AEM) e fornece uma visão geral da arquitetura do em relação ao para ter em mente ao implantar um desenvolvido no.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 9584392a-d8a3-45a4-9cdf-fd211c8e6091
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 8%
+source-wordcount: '2056'
+ht-degree: 4%
 
 ---
 
 # Desenvolvimento de SPAs para o AEM{#developing-spas-for-aem}
 
-Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas de SPA, e os autores desejam editar o conteúdo de um site criado usando essas estruturas diretamente no AEM.
+Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas SPA, e os autores desejam editar o conteúdo no Adobe Experience Manager (AEM) para um site criado com essas estruturas.
 
-Este artigo apresenta questões importantes a serem consideradas ao envolver um desenvolvedor de front-end para desenvolver um SPA para AEM e fornece uma visão geral da arquitetura do AEM com relação à implantação do no SPA AEM.
+Este artigo apresenta perguntas importantes a serem consideradas ao envolver um desenvolvedor de front-end para desenvolver um SPA para AEM e fornece uma visão geral da arquitetura do AEM em relação à implantação do no SPA AEM.
 
 >[!NOTE]
 >
@@ -30,10 +26,10 @@ Este artigo apresenta questões importantes a serem consideradas ao envolver um 
 
 ## Princípios de desenvolvimento do SPA para AEM {#spa-development-principles-for-aem}
 
-O desenvolvimento de aplicativos de página única no AEM parte do princípio de que o desenvolvedor de front-end segue as práticas recomendadas padronizadas ao criar um SPA. Se, como desenvolvedor de front-end, você seguir essas práticas recomendadas gerais, bem como alguns princípios específicos do AEM, seu SPA estará funcional com [AEM e seus recursos de criação de conteúdo](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
+O desenvolvimento de aplicativos de página única no AEM parte do princípio de que o desenvolvedor de front-end segue as práticas recomendadas padronizadas ao criar um SPA. Se, como desenvolvedor de front-end, você seguir essas práticas recomendadas gerais e alguns princípios específicos do AEM, seu SPA estará funcional com [AEM e seus recursos de criação de conteúdo](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
 
 * **[Portabilidade](/help/sites-developing/spa-architecture.md#portability) -** Assim como com qualquer componente, os componentes devem ser criados para serem o mais portáteis possível. O SPA deve ser desenvolvido com componentes portáteis e reutilizáveis.
-* **[AEM controla a estrutura do site](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** - O desenvolvedor de front-end cria componentes e tem a propriedade de sua estrutura interna, mas depende do AEM para definir a estrutura de conteúdo do site.
+* **[AEM direciona a estrutura do site](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** - O desenvolvedor de front-end cria componentes e tem sua estrutura interna, mas depende do AEM para definir a estrutura de conteúdo do site.
 * **[Renderização dinâmica](/help/sites-developing/spa-architecture.md#dynamic-rendering)** - Todas as renderizações devem ser dinâmicas.
 * **[Roteamento Dinâmico](#dynamic-routing) -** O SPA é responsável pelo roteamento e o AEM o escuta e busca com base nele. Qualquer roteamento também deve ser dinâmico.
 
@@ -49,7 +45,7 @@ O SPA resultante deve ser construído com componentes altamente portáteis e reu
 
 ### AEM direciona a estrutura do site {#aem-drives-site-structure}
 
-O desenvolvedor de front-end deve se considerar responsável pela criação de uma biblioteca de componentes SPA usados para criar o aplicativo. O desenvolvedor front-end tem controle total da estrutura interna dos componentes. [No entanto, o AEM sempre é o dono da estrutura do site.](/help/sites-developing/spa-overview.md)
+O desenvolvedor de front-end deve se considerar responsável pela criação de uma biblioteca de componentes SPA usados para criar o aplicativo. O desenvolvedor de front-end tem controle total da estrutura interna dos componentes. [No entanto, o AEM, em todos os momentos, é o dono da estrutura do site.](/help/sites-developing/spa-overview.md)
 
 Isso significa que o desenvolvedor de front-end pode adicionar conteúdo do cliente antes ou depois do ponto de entrada dos componentes e também pode fazer chamadas de terceiros dentro do componente. No entanto, o desenvolvedor de front-end não tem controle total sobre como os componentes se aninham, por exemplo.
 
@@ -63,11 +59,11 @@ Qualquer renderização explícita que aponte para um conteúdo específico é c
 
 Assim como na renderização, todo o roteamento também deve ser dinâmico. No AEM, [o SPA sempre deve ser o proprietário do roteamento](/help/sites-developing/spa-routing.md) e o AEM escuta e busca conteúdo com base nela.
 
-Qualquer roteamento estático funciona contra o [princípio da portabilidade](/help/sites-developing/spa-architecture.md#portability) e limita o autor por não ser compatível com os recursos de criação de conteúdo do AEM. Por exemplo, com o roteamento estático, se o autor de conteúdo quiser alterar uma rota ou uma página, ele terá que pedir ao desenvolvedor de front-end para fazer isso.
+Qualquer roteamento estático funciona contra o [princípio da portabilidade](/help/sites-developing/spa-architecture.md#portability) e limita o autor por não ser compatível com os recursos de criação de conteúdo do AEM. Por exemplo, com o roteamento estático, se o autor de conteúdo quiser alterar uma rota ou alterar uma página, ele terá que solicitar que o desenvolvedor de front-end faça isso.
 
 ## Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou Angular e utiliza o SDK do SPA.
+Qualquer projeto AEM deve usar o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que oferece suporte a projetos SPA usando o React ou o Angular e usa o SDK do SPA.
 
 ## Modelos de design SPA {#spa-design-models}
 
@@ -85,12 +81,12 @@ Pode haver casos em que isso não seja totalmente necessário. A tabela a seguir
   <tr>
    <td>O AEM é usado como um CMS headless sem usar o <a href="/help/sites-developing/spa-reference-materials.md">Estrutura do SDK do editor de SPA.</a></td>
    <td>O desenvolvedor front-end tem controle total sobre o aplicativo.</td>
-   <td><p>Os autores de conteúdo não podem aproveitar a experiência de criação de conteúdo AEM.</p> <p>O código não é portátil nem reutilizável se contiver referências estáticas ou roteamento.</p> <p>Não permite o uso do editor de modelo, portanto, o desenvolvedor de front-end deve manter modelos editáveis por meio do JCR.</p> </td>
+   <td><p>Os autores de conteúdo não podem usar a experiência de criação de conteúdo AEM.</p> <p>O código não é portátil nem reutilizável se contiver referências estáticas ou roteamento.</p> <p>Não permite o uso do editor de modelos, portanto, o desenvolvedor de front-end deve manter modelos editáveis por meio do JCR.</p> </td>
   </tr>
   <tr>
    <td>O desenvolvedor de front-end usa a estrutura do SDK do Editor de SPA, mas abre apenas algumas áreas para o autor de conteúdo.</td>
    <td>O desenvolvedor mantém controle sobre o aplicativo, habilitando apenas a criação em áreas restritas do aplicativo.</td>
-   <td><p>Os autores de conteúdo estão restritos a um conjunto limitado de experiências de criação de conteúdo no AEM.</p> <p>O código corre o risco de não ser portátil nem reutilizável se contiver referências estáticas ou roteamento.</p> <p>Não permite o uso do editor de modelo, portanto, o desenvolvedor de front-end deve manter modelos editáveis por meio do JCR.</p> </td>
+   <td><p>Os autores de conteúdo estão restritos a um conjunto limitado de experiências de criação de conteúdo no AEM.</p> <p>O código corre o risco de não ser portátil nem reutilizável se contiver referências estáticas ou roteamento.</p> <p>Não permite o uso do editor de modelos, portanto, o desenvolvedor de front-end deve manter modelos editáveis por meio do JCR.</p> </td>
   </tr>
   <tr>
    <td>O projeto aproveita totalmente o SDK do Editor de SPA, e os componentes de front-end são desenvolvidos como uma biblioteca e a estrutura de conteúdo do aplicativo é delegada ao AEM.</td>
@@ -113,7 +109,7 @@ Siga estas etapas para preparar seu SPA existente para trabalhar com AEM.
 1. **Torne seus componentes JS modulares.**
 
    Torne-os capazes de ser renderizados em qualquer ordem, posição e tamanho.
-1. **Use os contêineres fornecidos por nosso SDK para colocar seus componentes na tela.**
+1. **Use os contêineres fornecidos pelo SDK do Adobe para colocar seus componentes na tela.**
 
    O AEM fornece um componente de sistema de página e parágrafo para você usar.
 1. **Crie um componente AEM para cada componente JS.**
@@ -122,9 +118,9 @@ Siga estas etapas para preparar seu SPA existente para trabalhar com AEM.
 
 ## Instruções para desenvolvedores de front-end {#instructions-for-front-end-developers}
 
-A principal tarefa ao envolver um desenvolvedor de front-end para criar um SPA para AEM é chegar a um acordo sobre os componentes e seus modelos JSON.
+A principal tarefa de envolver um desenvolvedor de front-end para criar um SPA para AEM é chegar a um acordo sobre os componentes e seus modelos JSON.
 
-Veja a seguir um esboço das etapas que um desenvolvedor de front-end precisa seguir ao desenvolver um SPA para AEM.
+Veja a seguir um resumo das etapas que um desenvolvedor de front-end precisa seguir ao desenvolver um SPA para AEM.
 
 1. **Concordar sobre os componentes e seu modelo JSON**
 
@@ -138,7 +134,7 @@ Veja a seguir um esboço das etapas que um desenvolvedor de front-end precisa se
 
 1. **Implementar do componente `render()` método**
 
-   O desenvolvedor de front-end implementa o `render()` método conforme julgar adequado e pode utilizar os campos do `cqModel` propriedade. Isso gera o DOM e os fragmentos de HTML que serão inseridos na página. Essa é a maneira padrão de criar um aplicativo no React.
+   O desenvolvedor de front-end implementa o `render()` como bem entenderem e podem usar os campos de `cqModel` propriedade. Isso gera o DOM e os fragmentos de HTML inseridos na página. Essa é a maneira padrão de criar um aplicativo no React.
 
 1. **Mapear o componente para o tipo de recurso AEM via`MapTo()`**
 
@@ -148,7 +144,7 @@ Veja a seguir um esboço das etapas que um desenvolvedor de front-end precisa se
 
    A variável `Page` e `ResponsiveGrid` são bons exemplos de classes que estendem a base `Container`.
 
-1. **Definir o do componente `EditConfig` como parâmetro para`MapTo()`**
+1. **Definir o `EditConfig` como parâmetro para`MapTo()`**
 
    Esse parâmetro é necessário para informar ao editor como o componente deve ser nomeado, desde que ainda não tenha sido renderizado ou não tenha conteúdo para renderizar.
 
@@ -158,9 +154,9 @@ Veja a seguir um esboço das etapas que um desenvolvedor de front-end precisa se
 
 1. **Implementar uma solução de roteamento que use o HTML `History` API.**
 
-   Quando a variável `ModelRouter` está ativado, chamando o `pushState` e `replaceState` As funções do acionarão uma solicitação para o `PageModelManager` para buscar um fragmento ausente do modelo.
+   Quando a variável `ModelRouter` está ativado, chamando o `pushState` e `replaceState` acionar uma solicitação para o `PageModelManager` para buscar um fragmento ausente do modelo.
 
-   A versão atual do `ModelRouter` suportam apenas o uso de URLs que apontam para o caminho real do recurso dos pontos de entrada do Modelo Sling. Ele não é compatível com o uso de URLs ou aliases personalizados.
+   A versão atual do `ModelRouter` O suporta apenas o uso de URLs que apontam para o caminho de recurso real dos pontos de entrada do Modelo Sling. Ele não é compatível com o uso de URLs ou aliases personalizados.
 
    A variável `ModelRouter` O pode ser desativado ou configurado para ignorar uma lista de expressões regulares.
 
@@ -191,37 +187,37 @@ A arquitetura geral do AEM, incluindo ambientes de desenvolvimento, criação e 
 
 * **Ambiente de compilação**
 
-   É aqui que a origem do aplicativo SPA e a origem do componente são verificadas.
+  É aqui que a origem do aplicativo SPA e a origem do componente são verificadas.
 
    * O gerador de clientlib do NPM cria uma biblioteca do cliente a partir do projeto SPA.
-   * Essa biblioteca será coletada pelo Maven e implantada pelo plug-in Maven Build junto com o componente no autor do AEM.
+   * Essa biblioteca é retirada pelo Maven e implantada pelo plug-in Maven Build junto com o componente no autor do AEM.
 
 * **Autor do AEM**
 
-   O conteúdo é criado sobre o autor de AEM, incluindo a criação de SPA.
+  O conteúdo é criado sobre o autor de AEM, incluindo a criação de SPA.
 
-   Quando um SPA é editado usando o Editor de SPA no ambiente de criação:
+  Quando um SPA é editado usando o Editor de SPA no ambiente de criação:
 
    1. O SPA solicita o HTML externo.
    1. O CSS é carregado.
-   1. O Javascript do aplicativo SPA é carregado.
+   1. O JavaScript do aplicativo SPA é carregado.
    1. Quando o aplicativo SPA é executado, o JSON é solicitado, permitindo que o aplicativo crie o DOM da página, incluindo o `cq-data` atributos.
    1. Este `cq-data` Os atributos permitem que o editor carregue informações adicionais da página para que saiba quais configurações de edição estão disponíveis para os componentes.
 
 * **AEM Publish**
 
-   É aqui que o conteúdo criado e as bibliotecas compiladas, incluindo artefatos de aplicativos SPA, clientlibs e componentes, são publicados para consumo público.
+  É aqui que o conteúdo criado e as bibliotecas compiladas, incluindo artefatos de aplicativos SPA, clientlibs e componentes, são publicados para consumo público.
 
 * **Dispatcher/CDN**
 
-   O dispatcher serve como a camada de cache do AEM para os visitantes do site.
+  O Dispatcher serve como a camada de armazenamento em cache do AEM para os visitantes do site.
 
    * As solicitações são processadas de forma semelhante à do Autor do AEM, no entanto, não há solicitação de informações da página, pois elas são necessárias somente para o editor.
-   * Javascript, CSS, JSON e HTML são armazenados em cache, otimizando a página para entrega rápida.
+   * JavaScript, CSS, JSON e HTML são armazenados em cache, otimizando a página para entrega rápida.
 
 >[!NOTE]
 >
->Dentro do AEM não há necessidade de executar mecanismos de build do Javascript ou executar o próprio Javascript. O AEM hospeda somente os artefatos compilados do aplicativo SPA.
+>Dentro do AEM, não há necessidade de executar mecanismos de criação JavaScript ou executar o próprio JavaScript. O AEM hospeda somente os artefatos compilados do aplicativo SPA.
 
 ## Próximas etapas {#next-steps}
 

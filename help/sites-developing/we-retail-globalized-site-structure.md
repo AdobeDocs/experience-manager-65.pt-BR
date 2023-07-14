@@ -1,34 +1,30 @@
 ---
 title: Experimentar a estrutura globalizada de sites no We.Retail
-seo-title: Trying out the Globalized Site Structure in We.Retail
 description: Experimentar a estrutura globalizada de sites no We.Retail
-seo-description: null
-uuid: 5e5a809d-578f-4171-8226-cb65aa995754
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
 # Experimentar a estrutura globalizada de sites no We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
-O We.Retail foi criado com uma estrutura de site globalizada que oferece matrizes de idioma que podem ser copiadas para sites específicos de cada país. Tudo é configurado imediatamente para permitir que você experimente essa estrutura e os recursos de tradução integrados.
+O We.Retail foi criado com uma estrutura de site globalizada que oferece uma principal de idioma que pode ser copiada para sites específicos de cada país. Tudo é configurado imediatamente para permitir que você experimente essa estrutura e os recursos de tradução integrados.
 
 ## Experimentando {#trying-it-out}
 
 1. Abra o console Sites em **Navegação global -> Sites**.
-1. Alterne para a exibição de coluna (se ainda não estiver ativa) e selecione We.Retail. Observe o exemplo de estrutura de país com Suíça, Estados Unidos, França, etc., junto com os Idiomas principais.
+1. Alterne para a exibição de coluna (se ainda não estiver ativa) e selecione We.Retail. Observe o exemplo de estrutura de país com Suíça, Estados Unidos, França e assim por diante, ao lado do Principal Idioma.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
 
-1. Selecione Suíça e veja as raízes de idioma para os idiomas desse país. Observe que ainda não há nenhum conteúdo abaixo dessas raízes.
+1. Selecione Suíça e veja as raízes de idioma para os idiomas desse país. Ainda não há conteúdo abaixo dessas raízes.
 
    ![chlimage_1-88](assets/chlimage_1-88a.png)
 
@@ -36,7 +32,7 @@ O We.Retail foi criado com uma estrutura de site globalizada que oferece matrize
 
    ![chlimage_1-89](assets/chlimage_1-89a.png)
 
-1. Retorne à exibição de coluna, clique no Idioma Principal e veja as raízes principais do idioma com conteúdo. Observe que somente o inglês tem conteúdo.
+1. Retorne à exibição de coluna, clique no Idioma Principal e veja as raízes principais do idioma com conteúdo. Somente o inglês tem conteúdo.
 
    O We.Retail não vem com nenhum conteúdo traduzido, mas a estrutura e a configuração estão em vigor para permitir que você demonstre os serviços de tradução.
 
@@ -54,7 +50,7 @@ O We.Retail foi criado com uma estrutura de site globalizada que oferece matrize
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-1. Clique em Alemão para ver os detalhes do projeto de tradução. Observe que o status está em **Rascunho**. Para iniciar a tradução com o serviço de tradução do Microsoft, clique na divisa ao lado da **Tarefa de tradução** cabeçalho e selecione **Início**.
+1. Clique em Alemão para ver os detalhes do projeto de tradução. O status está em **Rascunho**. Para iniciar a tradução com o serviço de tradução da Microsoft®, clique na divisa ao lado da **Tarefa de tradução** cabeçalho e selecione **Início**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
@@ -68,7 +64,7 @@ O We.Retail foi criado com uma estrutura de site globalizada que oferece matrize
 
 >[!NOTE]
 >
->Esse procedimento demonstrou a integração integrada com a tradução automática do Microsoft. Usar o [Estrutura de integração de tradução do AEM](/help/sites-administering/translation.md), você pode integrar a muitos serviços de tradução padrão para orquestrar a tradução do AEM.
+>Este procedimento demonstrou a integração integrada com a tradução automática da Microsoft®. Usar o [Estrutura de integração de tradução do AEM](/help/sites-administering/translation.md), você pode integrar a muitos serviços de tradução padrão para orquestrar a tradução do AEM.
 
 ## Informações adicionais {#further-information}
 

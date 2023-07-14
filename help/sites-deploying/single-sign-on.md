@@ -1,20 +1,16 @@
 ---
 title: Logon único
-seo-title: Single Sign On
-description: Saiba como configurar o Logon único (SSO) para uma instância de AEM.
-seo-description: Learn how to configure Single Sign On (SSO) for an AEM instance.
-uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
+description: Saiba como configurar o Logon único (SSO) para uma instância do Adobe Experience Manager (AEM).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring, Security
 content-type: reference
-discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 0%
+source-wordcount: '742'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 O Logon único (SSO) permite que um usuário acesse vários sistemas após fornecer credenciais de autenticação (como um nome de usuário e senha) uma vez. Um sistema separado (conhecido como autenticador confiável) executa a autenticação e fornece ao Experience Manager as credenciais do usuário. O Experience Manager verifica e impõe as permissões de acesso para o usuário (ou seja, determina quais recursos o usuário tem permissão para acessar).
 
-O serviço Manipulador de Autenticação SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) processa os resultados de autenticação fornecidos pelo autenticador confiável. O Manipulador de autenticação SSO pesquisa um ssid (Identificador SSO) como o valor de um atributo especial nos seguintes locais, nesta ordem:
+O serviço Manipulador de Autenticação SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) processa os resultados de autenticação fornecidos pelo autenticador confiável. O Manipulador de autenticação SSO procura um Identificador SSO (SSID) como o valor de um atributo especial nos seguintes locais, nesta ordem:
 
 1. Cabeçalhos de solicitação
 1. Cookies
@@ -30,16 +26,16 @@ O serviço Manipulador de Autenticação SSO ( `com.adobe.granite.auth.sso.impl.
 
 Quando um valor é encontrado, a pesquisa é concluída e esse valor é usado.
 
-Configure os dois serviços a seguir para reconhecer o nome do atributo que armazena o ssid:
+Configure os dois serviços a seguir para reconhecer o nome do atributo que armazena o SSID:
 
 * O módulo de logon.
 * O serviço de autenticação SSO.
 
-Você deve especificar o mesmo nome de atributo para ambos os serviços. O atributo está incluído na variável `SimpleCredentials` que é fornecido a `Repository.login`. O valor do atributo é irrelevante e ignorado, a mera presença dele é importante e verificada.
+Especifique o mesmo nome de atributo para ambos os serviços. O atributo está incluído na variável `SimpleCredentials` que é fornecido a `Repository.login`. O valor do atributo é irrelevante e ignorado, a mera presença dele é importante e verificada.
 
 ## Configuração de SSO {#configuring-sso}
 
-Para configurar o SSO para uma instância AEM, é necessário configurar o [Manipulador de autenticação SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Para configurar o SSO para uma instância AEM, configure o [Manipulador de autenticação SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
 1. Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
@@ -49,7 +45,8 @@ Para configurar o SSO para uma instância AEM, é necessário configurar o [Mani
    * **Nomes do cabeçalho**: `LOGON_USER`
    * **Formato de ID**: `^<DOMAIN>\\(.+)$`
 
-      Onde `<*DOMAIN*>` é substituído pelo seu próprio nome de domínio.
+     Onde `<*DOMAIN*>` é substituído pelo nome do seu próprio domínio.
+
    Para CoSign:
 
    * **Caminho:** conforme necessário; por exemplo, `/`
@@ -62,8 +59,6 @@ Para configurar o SSO para uma instância AEM, é necessário configurar o [Mani
    * **Nomes do cabeçalho:** SM_USER
    * **Formato de ID**: Como está
 
-
-
 1. Confirme se o Logon único está funcionando conforme necessário, incluindo autorização.
 
 >[!CAUTION]
@@ -74,32 +69,31 @@ Para configurar o SSO para uma instância AEM, é necessário configurar o [Mani
 >
 >Qualquer usuário que possa acessar diretamente sua instância AEM sem passar pelo servidor da Web poderá agir como qualquer usuário enviando o cabeçalho, cookie ou parâmetro, se os nomes forem conhecidos.
 >
->Além disso, verifique se nos cabeçalhos, cookies e nomes de parâmetros de solicitação você só configura o que é necessário para a configuração do SSO.
+>Além disso, certifique-se de que, entre os cabeçalhos, cookies e nomes de parâmetros de solicitação, você configure apenas aquele que é necessário para a configuração do SSO.
+>
 
 >[!NOTE]
 >
->O Logon único geralmente é usado em conjunto com [LDAP](/help/sites-administering/ldap-config.md).
+>O Logon único geralmente é usado com [LDAP](/help/sites-administering/ldap-config.md).
 
 >[!NOTE]
 >
->Se você também estiver usando a variável [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) com o Microsoft Internet Information Server (IIS), será necessária uma configuração adicional em:
+>Se você também estiver usando a variável [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) com o Microsoft® Internet Information Server (IIS), será necessária uma configuração adicional em:
 >
->* `disp_iis.ini`
->* IIS
+* `disp_iis.ini`
+* IIS
 >
->Entrada `disp_iis.ini` definir:
->(consulte [instalação do Dispatcher com o Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) para obter detalhes completos)
+Entrada `disp_iis.ini` set: (consulte [instalação do Dispatcher com o Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en#microsoft-internet-information-server) para obter detalhes completos)
 >
->* `servervariables=1` (encaminha variáveis do servidor IIS como cabeçalhos de solicitação para a instância remota)
->* `replaceauthorization=1` (substitui qualquer cabeçalho chamado &quot;Autorização&quot;, diferente de &quot;Básica&quot;, por seu equivalente &quot;Básica&quot;)
+* `servervariables=1` (encaminha variáveis do servidor IIS como cabeçalhos de solicitação para a instância remota)
+* `replaceauthorization=1` (substitui qualquer cabeçalho chamado &quot;Autorização&quot;, diferente de &quot;Básica&quot;, por seu equivalente &quot;Básica&quot;)
 >
->No IIS:
+No IIS:
 >
->* disable **Acesso anônimo**
+* disable **Acesso anônimo**
 >
->* habilitar **Autenticação integrada do Windows**
+* habilitar **Autenticação integrada do Windows**
 >
-
 
 Você pode ver qual manipulador de autenticação está sendo aplicado a qualquer seção da árvore de conteúdo usando o **Autenticador** opção do Felix Console; por exemplo:
 
@@ -157,7 +151,7 @@ Ou você pode usar o seguinte comando curl para enviar a `TestHeader` cabeçalho
 
 >[!NOTE]
 >
->Ao usar o parâmetro de solicitação em um navegador, você só verá parte do HTML - sem CSS. Isso ocorre porque todas as solicitações do HTML são feitas sem o parâmetro de solicitação.
+Ao usar o parâmetro de solicitação em um navegador, você só verá parte do HTML - sem CSS. Isso ocorre porque todas as solicitações do HTML são feitas sem o parâmetro de solicitação.
 
 ## Remoção de links de saída do AEM {#removing-aem-sign-out-links}
 

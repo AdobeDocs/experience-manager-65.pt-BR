@@ -1,26 +1,22 @@
 ---
-title: Conceitos da interface habilitada para toque por AEM
-seo-title: Concepts of the AEM Touch-Enabled UI
-description: Com o AEM 5.6, o Adobe apresentou uma nova interface otimizada para toque com design responsivo para o ambiente de criação
-seo-description: With AEM 5.6 Adobe introduced a new touch-optimized UI with responsive design for the author environment
-uuid: 401c5a65-6ddc-4942-ab8e-395016f9c629
+title: Conceitos da interface do usuário habilitada para toque do Adobe Experience Manager
+description: Com o Adobe Experience Manager 5.6, o Adobe apresentou uma nova interface otimizada para toque com design responsivo para o ambiente de criação
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: df3aaed1-97b5-4a4a-af74-cb887462475b
 docset: aem65
 exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2167'
 ht-degree: 0%
 
 ---
 
-# Conceitos da interface habilitada para toque por AEM{#concepts-of-the-aem-touch-enabled-ui}
+# Conceitos da interface do usuário habilitada para toque do Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
-O AEM apresenta uma interface habilitada para toque com [design responsivo](/help/sites-authoring/responsive-layout.md) para o ambiente de criação projetado para operar em dispositivos de toque e desktop.
+O Adobe Experience Manager (AEM) apresenta uma interface habilitada para toque com [design responsivo](/help/sites-authoring/responsive-layout.md) para o ambiente de criação projetado para operar em dispositivos de toque e desktop.
 
 >[!NOTE]
 >
@@ -31,19 +27,19 @@ A interface habilitada para toque inclui:
 * O cabeçalho do conjunto que:
    * Mostra o logotipo
    * Fornece um link para a Navegação global
-   * Fornece link para outras ações genéricas, como Pesquisa, Ajuda, Soluções do Marketing Cloud, Notificações e Configurações do usuário.
+   * Fornece link para outras ações genéricas, como Pesquisa, Ajuda, Soluções Experience Cloud, Notificações e Configurações do Usuário.
 * O painel esquerdo (exibido quando necessário e oculto), que pode mostrar:
    * Linha do tempo
    * Referências
    * Filtros
 * O cabeçalho de navegação, que novamente é sensível ao contexto e pode mostrar:
-   * Indica qual console você está usando no momento e/ou seu local nesse console
+   * Indica qual console você está usando no momento, sua localização ou ambos dentro desse console
    * Seleção para o painel esquerdo
    * Navegações estruturais
    * O acesso a **Criar** ações
    * Exibir seleções
 * A área de conteúdo que:
-   * Lista os itens de conteúdo (sejam páginas, ativos, publicações de fóruns etc.)
+   * Lista os itens de conteúdo (sejam páginas, ativos, publicações de fórum e assim por diante)
    * Pode ser formatado conforme solicitado, por exemplo, coluna, cartão ou lista
    * Usa um design responsivo (a tela é redimensionada automaticamente de acordo com o tamanho do dispositivo e/ou da janela)
    * Usa rolagem infinita (sem mais paginação, todos os itens são listados em uma janela)
@@ -52,7 +48,7 @@ A interface habilitada para toque inclui:
 
 >[!NOTE]
 >
->Quase toda a funcionalidade do AEM foi transferida para a interface habilitada para toque. No entanto, em alguns casos limitados, a funcionalidade reverterá para a interface clássica. Consulte [Status do recurso da interface de toque](/help/release-notes/touch-ui-features-status.md) para obter mais informações.
+>Quase toda a funcionalidade do AEM foi transferida para a interface habilitada para toque. No entanto, em alguns casos limitados, a funcionalidade reverte para a interface clássica. Consulte [Status do recurso da interface de toque](/help/release-notes/touch-ui-features-status.md) para obter mais informações.
 
 A interface habilitada para toque foi projetada pelo Adobe para fornecer consistência na experiência do usuário em vários produtos. Tem por base:
 
@@ -69,11 +65,11 @@ Os princípios básicos da interface habilitada para toque são:
 * Incluir testes incorporados
 * Design ascendente para garantir que esses princípios sejam aplicados a todos os elementos e componentes
 
-Para obter mais uma visão geral da estrutura da interface habilitada para toque, consulte o artigo [Estrutura da interface habilitada para toque por AEM](/help/sites-developing/touch-ui-structure.md).
+Para obter uma visão geral adicional da estrutura da interface habilitada para toque, consulte [Estrutura da interface habilitada para toque por AEM](/help/sites-developing/touch-ui-structure.md).
 
 ## Pilha de tecnologia AEM {#aem-technology-stack}
 
-O AEM usa a plataforma Granite como base e a plataforma Granite inclui, entre outras coisas, o Repositório de conteúdo Java.
+O AEM usa a plataforma Granite como base e a plataforma Granite inclui, entre outras coisas, o repositório de conteúdo Java™.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -83,7 +79,7 @@ O Granite é uma pilha da Web aberta do Adobe, que fornece vários componentes, 
 
 * Um inicializador de aplicativos
 * Uma estrutura OSGi na qual tudo é implantado
-* Vários serviços de compêndio OSGi para dar suporte à criação de aplicativos
+* Vários serviços de compêndio OSGi para suportar a criação de aplicativos
 * Uma estrutura de log abrangente que fornece várias APIs de log
 * A implementação do repositório CRX da especificação da API JCR
 * A estrutura da Web do Apache Sling
@@ -93,7 +89,7 @@ O Granite é uma pilha da Web aberta do Adobe, que fornece vários componentes, 
 >
 >O Granite é executado como um projeto de desenvolvimento aberto no Adobe: contribuições para o código, discussões e problemas são feitas em toda a empresa.
 >
->No entanto, o Granite é **não** um projeto de código aberto. É fortemente baseado em vários projetos de código aberto (Apache Sling, Felix, Jackrabbit e Lucene em particular), mas Adobe traça uma linha clara entre o que é público e o que é interno.
+>No entanto, o Granite é **não** um projeto de código aberto. É fortemente baseado em vários projetos de código aberto (Apache Sling, Felix, Jackrabbit, e Lucene em particular), mas Adobe traça uma linha clara entre o que é público e o que é interno.
 
 ## Interface do Granite {#granite-ui}
 
@@ -158,7 +154,7 @@ Eles são entregues como parte do pacote de conteúdo:
 
 Isso é formado por uma coleção de componentes do sling que permitem que o autor *compor* um aplicativo da web rápido. O desenvolvedor desenvolve componentes, o autor monta os componentes para ser um aplicativo da Web. A função do lado do servidor é oferecer o preço acessível da hipermídia (marcação) ao cliente.
 
-Atualmente, os componentes estão localizados no repositório do Granite em:
+Atualmente, os componentes estão no repositório do Granite em:
 
 `/libs/granite/ui/components/foundation`
 
@@ -201,7 +197,7 @@ As diferenças entre a interface do Granite e a ExtJS (usada para a interface cl
 
 ### Componentes de base da interface de usuário do Granite {#granite-ui-foundation-components}
 
-A variável [Componentes de base da interface do Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) O fornece os blocos de construção básicos necessários para criar qualquer interface do usuário. Incluem, entre outros:
+A variável [Componentes de base da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) O fornece os blocos de construção básicos necessários para criar qualquer interface do usuário. Incluem, entre outros:
 
 * Botão
 * Hiperlink
@@ -222,7 +218,7 @@ Propósito:
 Implementação:
 
 * Composição e configuração baseadas no repositório
-* Aproveitamento das instalações de teste fornecidas pela plataforma Granite
+* Uso das instalações de teste fornecidas pela plataforma Granite
 * Modelos JSP
 
 Essa biblioteca de componentes de base pode ser usada ou estendida por outras bibliotecas.
@@ -258,7 +254,7 @@ Ao atualizar o código ExtJS para usar a interface do Granite, a lista a seguir 
 
 ### Componentes de administração da interface de usuário do Granite {#granite-ui-administration-components}
 
-A variável [Componentes de administração da interface do Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) aproveite os componentes básicos para fornecer blocos de construção genéricos que qualquer aplicativo de administração possa implementar. Estas incluem, entre outras:
+A variável [Componentes de administração da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) aproveite os componentes básicos para fornecer blocos de construção genéricos que qualquer aplicativo de administração possa implementar. Estes incluem, entre outros:
 
 * Barra de navegação global
 * Trilho (esqueleto)
@@ -279,7 +275,7 @@ Implementação:
 CoralUI.pdf
 
 [Obter arquivo](assets/coralui.pdf)
-A CUI (Coral UI) é uma implementação do estilo visual Adobe para a interface habilitada para toque, projetada para fornecer consistência na experiência do usuário em vários produtos. A interface do usuário do Coral fornece tudo o que você precisa para adotar o estilo visual usado no ambiente de criação.
+A CUI (Coral UI) é uma implementação do estilo visual Adobe para a interface habilitada para toque projetada para fornecer consistência na experiência do usuário em vários produtos. A interface do usuário do Coral fornece tudo o que é necessário para adotar o estilo visual usado no ambiente de criação.
 
 >[!CAUTION]
 >
@@ -301,7 +297,6 @@ A CUI (Coral UI) é uma implementação do estilo visual Adobe para a interface 
 >* Aplicativos/componentes/páginas da Web que não estão claramente conectados ao Adobe.
 >
 
-
 A interface do Coral é uma coleção de blocos fundamentais para o desenvolvimento de aplicativos web.
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
@@ -316,7 +311,7 @@ Os elementos HTML fornecem uma aparência comum para todos os elementos básicos
 
 No nível mais básico, um elemento HTML é uma tag HTML com um nome de classe dedicado. Elementos mais complexos podem ser compostos de várias tags, aninhadas entre si (de uma maneira específica).
 
-O CSS é usado para fornecer a aparência real. Para facilitar a personalização da aparência e comportamento (por exemplo, no caso de marca), os valores de estilo reais são declarados como variáveis, que são expandidas pela variável [MENOS](https://lesscss.org/) pré-processador durante o tempo de execução.
+O CSS é usado para fornecer a aparência real. Para facilitar a personalização da aparência (por exemplo, no caso de marcas), os valores de estilo reais são declarados como variáveis, que são expandidas pelo [MENOS](https://lesscss.org/) pré-processador durante o tempo de execução.
 
 Propósito:
 
@@ -325,7 +320,7 @@ Propósito:
 
 Implementação:
 
-* tags HTML com estilos inspirados em [bootstrap](https://twitter.github.com/bootstrap/)
+* tags HTML com estilos inspirados em [Bootstrap](https://twitter.github.com/bootstrap/)
 * As classes são definidas em arquivos LESS
 * Os ícones são definidos como sprites de fonte
 
@@ -362,7 +357,7 @@ Os valores reais são definidos em um arquivo de variável LESS (a seguinte extr
 
 ### Plug-ins de elementos {#element-plugins}
 
-Muitos dos elementos de HTML precisarão exibir algum tipo de comportamento dinâmico, como menus pop-up de abertura e fechamento. Essa é a função dos plug-ins de elementos, que realizam essas tarefas manipulando o DOM usando JavaScript.
+Muitos dos elementos de HTML precisam exibir algum tipo de comportamento dinâmico, como menus pop-up de abertura e fechamento. Essa é a função dos plug-ins de elementos, que realizam essas tarefas manipulando o DOM usando JavaScript.
 
 Um plug-in pode ser:
 
@@ -371,7 +366,7 @@ Um plug-in pode ser:
 
 O comportamento do plug-in pode ser personalizado com parâmetros, através:
 
-* Passagem dos parâmetros por meio de uma chamada de javascript
+* Passar os parâmetros com uma chamada JavaScript
 * Uso de dedicado `data-*` atributos vinculados à marcação HTML
 
 Embora o desenvolvedor possa selecionar a melhor abordagem para qualquer plug-in, a regra geral é usar:
@@ -424,18 +419,18 @@ Uma extração de marcação de exemplo (observe as opções especificadas como 
 A chamada para o plug-in jQuery:
 
 ```
-$(‘.cards’).cardlayout ();
+$('.cards').cardlayout ();
 ```
 
-Isso será exibido como:
+Isso é exibido como:
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-A variável `cardLayout` O plug-in apresenta o `UL` elementos com base nas respectivas alturas e tendo também em conta a largura do pai.
+A variável `cardLayout` O plug-in apresenta o `UL` elementos com base em suas respectivas alturas e também levando em consideração a largura do pai.
 
 ### Widgets de elementos do HTML {#html-elements-widgets}
 
-Um widget combina um ou mais elementos básicos com um plug-in javascript para formar elementos de interface do usuário de &quot;nível superior&quot;. Eles podem implementar comportamentos mais complexos e também uma aparência mais complexa do que um único elemento pode oferecer. Bons exemplos são o seletor de tags ou os widgets do painel.
+Um widget combina um ou mais elementos básicos com um plug-in JavaScript para formar elementos de interface do usuário de &quot;nível superior&quot;. Eles podem implementar comportamentos mais complexos e também uma aparência mais complexa do que um único elemento pode oferecer. Bons exemplos são o seletor de tags ou os widgets do painel.
 
 Um widget pode acionar e ouvir eventos personalizados para cooperar com outros widgets na página. Alguns widgets são widgets nativos do jQuery que usam os elementos HTML Coral.
 
@@ -447,7 +442,7 @@ Propósito:
 Implementação:
 
 * Plug-in jQuery + marcação HTML
-* Pode utilizar modelos do lado do cliente/servidor
+* Pode usar modelos do lado do cliente/servidor
 
 Exemplo de marcação:
 
@@ -478,13 +473,13 @@ O plug-in emite a marcação HTML (essa marcação usa elementos básicos, que p
        autocomplete="off">
 ```
 
-Isso será exibido como:
+Isso é exibido como:
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
 ### Biblioteca do utilitário {#utility-library}
 
-Esta biblioteca é uma coleção de plug-ins e/ou funções de ajuda do javascript que são:
+Esta biblioteca é uma coleção de plug-ins e/ou funções de ajuda do JavaScript que são:
 
 * Independente da interface
 * No entanto, é fundamental para a criação de aplicativos web completos
