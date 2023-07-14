@@ -1,16 +1,14 @@
 ---
 title: Adicionar rastreamento do Adobe Analytics aos componentes
 description: Adicionar rastreamento do Adobe Analytics aos componentes
-uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -38,7 +36,7 @@ A entrada do ContextHub deve ser incluída imediatamente abaixo de `<head>` tag,
 
 A variável `contexthub` script que você insere após a variável `<head>` O elemento adiciona os recursos do ContextHub à página.
 
-A variável `cloudservices` scripts adicionados na variável `<head>` e a variável `<body>` as seções se aplicam às configurações dos serviços em nuvem adicionadas à página. (Se a página usar mais de uma configuração Cloud Services, será necessário incluir a jsp do ContextHub e a Cloud Services jsp apenas uma vez.)
+A variável `cloudservices` scripts adicionados na variável `<head>` e a variável `<body>` as seções se aplicam às configurações dos serviços em nuvem adicionadas à página. (Se a página usar mais de uma configuração Cloud Services, você deverá incluir a jsp do ContextHub e a jsp Cloud Services apenas uma vez.)
 
 Quando uma estrutura Adobe Analytics é adicionada à página, a variável `cloudservices` Os scripts geram JavaScript relacionado à Adobe Analytics e referências a bibliotecas do lado do cliente, semelhantes ao seguinte exemplo:
 
@@ -196,7 +194,7 @@ Configure o componente de navegação superior e edite o arquivo JSP para defini
 
 1. Clique em Salvar tudo.
 1. Abra o `topnav.jsp` arquivo.
-1. Em um elemento, adicione o seguinte atributo:
+1. No elemento, adicione o seguinte atributo:
 
    ```xml
    onclick = "tracknav('<%= child.getPath() %>.html')"
@@ -362,7 +360,7 @@ A variável `analytics` o nó do componente deve expor os nomes das variáveis u
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-O módulo de comércio eletrônico fornece vários componentes que geram dados variáveis de s.products. Por exemplo, o componente de envio ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) gera um JavaScript semelhante ao seguinte exemplo:
+O módulo de comércio eletrônico fornece vários componentes que geram dados variáveis de s.products. Por exemplo, a variável `submitorder` componente ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) gera um JavaScript semelhante ao seguinte exemplo:
 
 ```
 <script type="text/javascript">
@@ -438,6 +436,6 @@ O módulo de comércio eletrônico fornece vários componentes que geram dados v
 
 #### Limitar o tamanho das chamadas de rastreamento {#limiting-the-size-of-tracking-calls}
 
-Geralmente, os navegadores da Web limitam o tamanho de solicitações do GET. Como os valores de produto CQ e SKU são caminhos de repositório, os arrays de produtos que incluem vários valores podem exceder o limite de tamanho da solicitação. Portanto, seus componentes devem limitar o número de itens na variável `product` matriz de cada `CQ_Analytics.record function`. Crie várias funções se o número de itens que você precisa rastrear puder exceder o limite.
+Geralmente, os navegadores da Web limitam o tamanho de solicitações do GET. Como os valores de produto CQ e SKU são caminhos de repositório, os arrays de produtos que incluem vários valores podem exceder o limite de tamanho da solicitação. Portanto, seus componentes devem limitar o número de itens na variável `product` matriz de cada `CQ_Analytics.record function`. Crie várias funções se o número de itens que você deve rastrear puder exceder o limite.
 
-Por exemplo, o componente de pedido de envio de eCommerce limita o número de `product` itens em uma chamada para quatro. Quando o carrinho contém mais de quatro produtos, ele gera vários `CQ_Analytics.record` funções.
+Por exemplo, o eCommerce `submitorder` O componente limita o número de `product` itens em uma chamada para quatro. Quando o carrinho contém mais de quatro produtos, ele gera vários `CQ_Analytics.record` funções.

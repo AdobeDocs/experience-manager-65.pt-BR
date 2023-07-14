@@ -1,18 +1,16 @@
 ---
 title: Trabalhar com versões de páginas de conteúdo
 description: Criar, comparar e restaurar versões de uma página
-uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 0a06837576e102d0e46f7afd0f5a197c292ddae7
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 42%
+source-wordcount: '1497'
+ht-degree: 41%
 
 ---
 
@@ -56,7 +54,7 @@ O controle de versão cria um &quot;instantâneo&quot; de uma página em um mome
 1. Navegue para mostrar a página para a qual você deseja criar uma versão.
 1. Selecione a página no [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Selecione o **Criar** opção na barra de ferramentas para abrir a caixa de diálogo.
-1. Na caixa de diálogo, você pode inserir um **Rótulo** e uma **Comentário** se necessário:
+1. Na caixa de diálogo, você pode inserir um **Rótulo** e uma **Comentário**, se necessário:
 
    ![Insira um rótulo e um comentário](assets/screen_shot_2012-02-15at105050am.png)
 

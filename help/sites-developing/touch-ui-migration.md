@@ -1,28 +1,24 @@
 ---
 title: Migração para a interface de toque
-seo-title: Migration to the Touch UI
 description: Migração para a interface de toque
-seo-description: Migration to the Touch UI
-uuid: 47c43b56-532b-4ada-8503-04d66bab3564
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
-discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '659'
 ht-degree: 5%
 
 ---
 
 # Migração para a interface de toque{#migration-to-the-touch-ui}
 
-A partir da versão 6.0, o Adobe Experience Manager (AEM) apresentou uma nova interface de usuário chamada de *interface habilitada para toque* (também conhecido simplesmente como *interface de toque*). Ele está alinhado à Adobe Marketing Cloud e às diretrizes gerais da interface do usuário do Adobe. Essa se tornou a interface padrão no AEM, com a interface herdada, orientada para desktop, chamada de *IU clássica*.
+A partir da versão 6.0, o Adobe Experience Manager (AEM) apresentou uma nova interface de usuário chamada de *interface habilitada para toque* (também conhecido simplesmente como *interface de toque*). Ele está alinhado à Adobe Experience Cloud e às diretrizes gerais da interface do usuário do Adobe. Essa se tornou a interface padrão no AEM, com a interface herdada, orientada para desktop, chamada de *IU clássica*.
 
-Se você tem usado o AEM com a interface clássica, será necessário tomar medidas para migrar sua instância. Esta página serve como um trampolim, fornecendo links para recursos individuais.
+Se você tem usado o AEM com a interface clássica, execute uma ação para migrar sua instância. Esta página serve como um trampolim, fornecendo links para recursos individuais.
 
 >[!NOTE]
 >
@@ -30,7 +26,7 @@ Se você tem usado o AEM com a interface clássica, será necessário tomar medi
 
 ## Noções básicas {#the-basics}
 
-Ao migrar, você deve estar ciente das seguintes (principais) diferenças entre a interface clássica e a interface de toque:
+Ao migrar, esteja ciente das principais diferenças a seguir entre a interface clássica e a interface para toque:
 
 <table>
  <tbody>
@@ -66,11 +62,11 @@ Ao migrar, você deve estar ciente das seguintes (principais) diferenças entre 
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Localização do Javascript:</p>
+   <td><p>Localização do JavaScript:</p>
     <ul>
      <li>As peças imperativas são incorporadas diretamente usando ouvintes ou gerenciadas em clientlibs.</li>
     </ul> </td>
-   <td><p>Localização do Javascript:</p>
+   <td><p>Localização do JavaScript:</p>
     <ul>
      <li>Partes imperativas não podem ser incorporadas na definição do diálogo; separação de responsabilidades.</li>
     </ul> </td>
@@ -78,11 +74,11 @@ Ao migrar, você deve estar ciente das seguintes (principais) diferenças entre 
   <tr>
    <td><p>Manipulação de eventos:</p>
     <ul>
-     <li>Os widgets de diálogo fazem referência direta ao código Javascript.</li>
+     <li>Os widgets de diálogo fazem referência direta ao código JavaScript.</li>
     </ul> </td>
    <td><p>Manipulação de eventos:</p>
     <ul>
-     <li>O Javascript observa eventos de diálogo.</li>
+     <li>O JavaScript observa eventos de diálogo.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -107,7 +103,7 @@ Antes de começar, verifique o status e as recomendações relacionadas:
 * [Status dos recursos da interface de toque](/help/release-notes/touch-ui-features-status.md)
 * [Interface do usuário do Recommendations para clientes](/help/sites-deploying/ui-recommendations.md)
 
-As noções básicas para o desenvolvimento da interface para toque fornecerão uma base sólida:
+As noções básicas para o desenvolvimento da interface para toque fornecem uma base sólida:
 
 * [Conceitos da interface habilitada para toque por AEM](/help/sites-developing/touch-ui-concepts.md)
 * [Estrutura da interface habilitada para toque por AEM](/help/sites-developing/touch-ui-structure.md)
@@ -149,10 +145,10 @@ Embora não esteja diretamente relacionado a uma migração para a interface de 
 Para obter informações completas sobre o desenvolvimento do AEM, consulte a coleta de recursos em:
 
 * [Guia do usuário para desenvolvimento](/help/sites-developing/home.md)
-* [Documentação da interface de usuário do Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Documentação da interface de usuário do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM 6.5 Sites Tutorials e vídeos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](/help/sites-developing/getting-started.md)
-* [Gems AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
+* [Gems AEM](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en)
 * [Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

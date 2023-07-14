@@ -1,18 +1,14 @@
 ---
 title: Gerenciar mosaico do aplicativo
-seo-title: Manage App Tile
 description: Siga esta página para saber mais sobre o bloco Gerenciar aplicativo no painel do aplicativo que fornece a capacidade de modificar detalhes sobre o aplicativo.
-seo-description: Follow this page to learn about the Manage App Tile on the app dashboard that provides the ability to modify details about the Application.
-uuid: bde75ecd-8694-427c-9b16-2c4ab2fd4d8b
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1252'
 ht-degree: 1%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 1%
 >
 >A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-A variável **Gerenciar aplicativo** Bloco no painel do aplicativo fornece a capacidade de modificar detalhes sobre o aplicativo. Para abrir a página Detalhes, clique no link de detalhes do bloco Gerenciar aplicativo. Na página Gerenciar aplicativo, é possível editar as configurações do Aplicativo PhoneGap (config.xml) e preparar seu aplicativo para envio às várias lojas de aplicativos.
+A variável **Gerenciar aplicativo** Bloco no painel do aplicativo fornece a capacidade de modificar detalhes sobre o aplicativo. Para abrir a página Detalhes, clique no link de detalhes do bloco Gerenciar aplicativo. Na página Gerenciar aplicativo, é possível editar as configurações do Aplicativo PhoneGap (config.xml) e preparar seu aplicativo para envio a várias lojas de aplicativos.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -50,7 +46,7 @@ As plataformas exibidas são orientadas pelo conteúdo config.xml do PhoneGap:
 </widget>
 ```
 
-Cada loja de aplicativos do fornecedor, como o Apple App Store ou o Google Play Store, por exemplo, requer uma ou mais capturas de tela do aplicativo móvel para exibir os detalhes do aplicativo aos clientes. Essas capturas de tela podem ter requisitos rigorosos em relação a dimensões e conteúdo (basicamente, elas devem realmente representar o aplicativo). Os aplicativos AEM oferecem suporte para selecionar e gerenciar essas capturas de tela para as plataformas compatíveis e visualizar dimensões de porta conforme exigido pela loja de aplicativos de cada fornecedor.
+Cada loja de aplicativos de fornecedor — por exemplo, Apple App Store ou Google Play Store — requer uma ou mais capturas de tela do aplicativo móvel para exibir os detalhes do aplicativo aos clientes. Essas capturas de tela podem ter requisitos rigorosos em relação a dimensões e conteúdo (basicamente, elas devem realmente representar o aplicativo). Os aplicativos AEM oferecem suporte para selecionar e gerenciar essas capturas de tela para as plataformas compatíveis e visualizar dimensões de porta conforme exigido pela loja de aplicativos de cada fornecedor.
 
 >[!NOTE]
 >
@@ -78,7 +74,7 @@ Nesta seção, você define o URL do Servidor de atualização de conteúdo, a p
 
 **Versão do PhoneGap** é a versão na qual você deseja compilar seu aplicativo com PhoneGap. A prática recomendada é acompanhar a versão atual para garantir que você obtenha os melhores e mais recentes recursos e correções de erros.
 
-**URL do servidor de atualização de conteúdo** é o URL que seu aplicativo usará para chamar para atualizações do ContentSync. Ele deve ser definido como o URL do dispatcher ou, se não estiver usando um dispatcher, para uma das instâncias de publicação que serão usadas para fornecer atualizações do ContentSync ao aplicativo.
+**URL do servidor de atualização de conteúdo** é o URL que seu aplicativo usará para chamar para atualizações do ContentSync. Ele deve ser definido como o URL do Dispatcher ou, se não estiver usando um Dispatcher, como uma das instâncias de publicação que serão usadas para fornecer atualizações do ContentSync ao aplicativo.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -112,9 +108,9 @@ A funcionalidade de exportação é usada para fornecer uma maneira conveniente 
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
-#### Metadados do Android {#android-metadata}
+#### Metadados do Android™ {#android-metadata}
 
-Ao selecionar a plataforma Android, não há metadados personalizados no momento que possam ser definidos. Ao clicar no botão de download como arquivo zip, ele será gerado com um arquivo de propriedades que contém todos os metadados e capturas de tela associadas.
+Ao selecionar a plataforma Android™, não há metadados personalizados no momento que possam ser definidos. Ao clicar no botão de download, um arquivo zip é gerado com um arquivo de propriedades que contém todos os metadados e capturas de tela associadas.
 
 A funcionalidade de exportação é usada para fornecer uma maneira conveniente de coletar as capturas de tela e os metadados que podem ser transmitidos ao editor do aplicativo para entrada na loja de aplicativos específica do fornecedor.
 
@@ -124,7 +120,7 @@ A funcionalidade de exportação é usada para fornecer uma maneira conveniente 
 
 Um dos principais recursos dos aplicativos AEM é a capacidade de ter um aplicativo móvel solicitando novo conteúdo por meio do ContentSync, em que o conteúdo pode ser recursos html, páginas, vídeo, imagens, texto e muito mais. Depois que um autor de conteúdo atualiza o conteúdo e, em seguida, publica esse conteúdo, o servidor disponibiliza a atualização de conteúdo para o aplicativo móvel baixar.
 
-A propriedade URL do Servidor de atualização de conteúdo é o URL que deve apontar para uma instância de publicação, diretamente ou por meio do Dispatcher ou CDN. O formato do URL é simplesmente:
+A propriedade URL do Servidor de atualização de conteúdo é o URL que deve apontar para uma instância de publicação, diretamente ou por meio do Dispatcher ou do CDN. O formato do URL é simplesmente:
 
 `https://[hostname]:[port]`
 
@@ -150,7 +146,7 @@ A variável **Capturas de tela** A guia exibe as resoluções de captura de tela
 
 ### A guia Autenticação {#the-authentication-tab}
 
-A variável **Autenticação** permite que você selecione um cliente OAuth para se associar ao aplicativo e permite que um desenvolvedor utilize a autenticação OAuth do Adobe Experience Manager.
+A variável **Autenticação** permite que você selecione um cliente OAuth para associar ao aplicativo e permite que um desenvolvedor use a autenticação OAuth do Adobe Experience Manager.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 

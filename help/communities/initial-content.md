@@ -1,18 +1,14 @@
 ---
 title: Conteúdo inicial da sandbox
-seo-title: Initial Sandbox Content
 description: Criar conteúdo
-seo-description: Create content
-uuid: 9810fe47-8d1a-4238-9b9c-0cc47c63d97a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '462'
 ht-degree: 4%
 
 ---
@@ -21,17 +17,17 @@ ht-degree: 4%
 
 Nesta seção, você cria as seguintes páginas, todas usando o [modelo de página](initial-app.md#createthepagetemplate):
 
-* Site de sandbox SCF, que redirecionará para a versão em inglês da página principal.
+* Site de sandbox SCF, que redireciona para a versão em inglês da página principal.
 
    * Sandbox SCF - A página principal da versão em inglês do site.
 
    * SCF Play - Filho da página principal na qual jogar.
 
-Embora este tutorial não aborde [cópias de idioma](../../help/sites-administering/tc-prep.md), foi projetada para que a página raiz possa implementar a detecção do idioma preferencial para o usuário por meio do cabeçalho de HTML e redirecionar para a página principal apropriada do idioma. A convenção é usar o código de país de duas letras para o nome do nó da página, por exemplo, &quot;en&quot; para inglês, &quot;fr&quot; para francês e assim por diante.
+Embora este tutorial não aborde [cópias de idioma](../../help/sites-administering/tc-prep.md), foi projetada para que a página raiz possa implementar a detecção do idioma preferencial para o usuário por meio do cabeçalho de HTML e redirecionar para a página principal apropriada do idioma. A convenção é usar o código de país de duas letras para o nome do nó da página, por exemplo, &quot;en&quot; para inglês e &quot;fr&quot; para francês.
 
 ## Criar primeiras páginas {#create-first-pages}
 
-Agora que existe um [modelo de página](initial-app.md#createthepagetemplate), podemos estabelecer a página raiz do site no diretório /content.
+Agora que existe um [modelo de página](initial-app.md#createthepagetemplate), é possível estabelecer a página raiz do site no diretório /content.
 
 1. A interface do usuário padrão atualmente fornece blueprints para criar sites. Como este tutorial está criando um site simples, a interface clássica é útil.
 
@@ -58,14 +54,14 @@ Agora que existe um [modelo de página](initial-app.md#createthepagetemplate), p
 
    ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
-1. No painel do explorador, selecione a página que acabou de criar, `/Websites/SCF Sandbox Site`e clique em **[!UICONTROL Novo]** > **[!UICONTROL Nova página]**:
+1. No painel do explorador, selecione a página criada, `/Websites/SCF Sandbox Site`e clique em **[!UICONTROL Novo]** > **[!UICONTROL Nova página]**:
 
    * Título: `SCF Sandbox`
    * Nome: `en`
    * Selecionar **[!UICONTROL Um modelo de reprodução de sandbox SCF]**
    * Clique em **[!UICONTROL Criar]**
 
-1. No painel do explorador, selecione a página que acabou de criar, `/Websites/SCF Sandbox Site/SCF Sandbox`e clique em **[!UICONTROL Novo]** > **[!UICONTROL Nova página]**
+1. No painel do explorador, selecione a página criada, `/Websites/SCF Sandbox Site/SCF Sandbox`e clique em **[!UICONTROL Novo]** > **[!UICONTROL Nova página]**
 
    * Título: `SCF Play`
    * Nome: `play`
@@ -86,7 +82,7 @@ Quando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdes
 
 * `cq:template="/libs/wcm/core/templates/designpage"`
 
-foi definido, o que fornece a capacidade opcional de fazer referência a ativos de design em um script usando `currentDesign.getPath()`. Por exemplo
+Foi definido, o que fornece a capacidade opcional de fazer referência a ativos de design em um script usando `currentDesign.getPath()`. Por exemplo
 
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
@@ -97,14 +93,14 @@ foi definido, o que fornece a capacidade opcional de fazer referência a ativos 
 
 * Clique no botão verde `[+] Add`
 
-O repositório deve ser mostrado da seguinte maneira:
+O repositório deve ser exibido da seguinte maneira:
 
 ![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 * Clique em **[!UICONTROL Salvar tudo]**
 
-Em caso de problemas para salvar a configuração, faça logon novamente e configure novamente.
+Se houver algum problema ao salvar a configuração, faça logon novamente e configure novamente.
 
 >[!NOTE]
 >
->A utilização de `cq:designPath` é opcional e não está relacionado ao [uso de clientlibs](develop-app.md#includeclientlibsintemplate), que são essencialmente necessários à medida que os componentes do CCAH usam [clientlibs](client-customize.md#clientlibs-for-scf) para gerenciar JS e CSS.
+>A utilização de `cq:designPath` é opcional e não está relacionado ao [uso de clientlibs](develop-app.md#includeclientlibsintemplate), que são necessários à medida que os componentes do SCF usam [clientlibs](client-customize.md#clientlibs-for-scf) para gerenciar JS e CSS.

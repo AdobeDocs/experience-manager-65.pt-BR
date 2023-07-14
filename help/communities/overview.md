@@ -1,19 +1,15 @@
 ---
 title: Visão geral do AEM Communities
-seo-title: AEM Communities Overview
 description: Uma visão geral dos recursos e da configuração do AEM Communities
-seo-description: An overview of AEM Communities features and setup
-uuid: 14405847-36ae-4958-bdc6-d799ecd05f06
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 exl-id: d6243dff-a067-455c-a326-5f451f225efd
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1265'
 ht-degree: 1%
 
 ---
@@ -35,7 +31,7 @@ O AEM Communities permite o desenvolvimento de uma relação com visitantes do s
 * **Pontuação** para conceder medalhas,
 * **Compartilhamento de arquivos**,
 * **Notificação** e **fluxos de atividade**,
-* Permite **marcação** (@mention) outros membros registrados no Conteúdo gerado pelo usuário, para chamar a atenção deles.
+* Permite **marcação** (@mention) outros membros registrados em Conteúdo gerado pelo usuário, para chamar a atenção deles.
 
 Os recursos do Communities podem ser demonstrados usando o [Máquina de demonstração AEM](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) disponível publicamente em GitHub.com ou com a nova implementação de referência do We.Retail.
 
@@ -62,7 +58,7 @@ A variável [assistente de criação de site](/help/communities/sites-console.md
 
    * Logon : autorregistro, [login social](/help/communities/social-login.md), perfis de usuário
 
-      * Notificações: os membros veem eventos de relevância para eles e o conteúdo gerado pelo usuário onde estão [@mentioned](/help/communities/overview.md#mentionssupport).
+      * Notificações: os membros veem eventos de relevância para eles e conteúdo gerado pelo usuário onde estão [@mentioned](/help/communities/overview.md#mentionssupport).
 
       * Mensagens: os membros podem enviar ou receber mensagens no site da comunidade.
       * Pesquisa: capacidade de pesquisar no site da comunidade.
@@ -75,7 +71,7 @@ A variável [assistente de criação de site](/help/communities/sites-console.md
    * Marca: upload opcional de uma imagem de banner para exibição em todas as páginas do site da comunidade
    * Menu de navegação: são fornecidos links de navegação para os recursos incluídos no modelo de site da comunidade.
 
-Para experimentar a facilidade de criar rapidamente um novo site da comunidade, visite [Introdução ao AEM Communities](/help/communities/getting-started.md).
+Para experimentar a facilidade de criar rapidamente um site da comunidade, visite [Introdução ao AEM Communities](/help/communities/getting-started.md).
 
 ## Persistência de conteúdo da comunidade {#community-content-persistence}
 
@@ -85,9 +81,9 @@ O conteúdo da comunidade é facilmente acessado por meio do SRP (Storage Resour
 
 Para saber mais sobre a persistência de conteúdo da comunidade e as implantações recomendadas, consulte:
 
-* [Armazenamento de conteúdo da comunidade](/help/communities/working-with-srp.md), que discute as opções de armazenamento SRP disponíveis para UGC.
-* [Topologias recomendadas](/help/communities/topologies.md), que discute topologias com base no caso de uso e na escolha do SRP.
-* [Atualização para comunidades do AEM 6.5](/help/communities/upgrade.md), que fornece informações úteis sobre o UGC ao migrar para o AEM 6.5.
+* [Armazenamento de conteúdo da comunidade](/help/communities/working-with-srp.md)— discute as opções de armazenamento SRP disponíveis para UGC.
+* [Topologias recomendadas](/help/communities/topologies.md)— discute topologias com base no caso de uso e na escolha do SRP.
+* [Atualização para comunidades do AEM 6.5](/help/communities/upgrade.md)— fornece informações úteis sobre UGC ao mudar para AEM 6.5.
 
 ## Consoles das comunidades {#communities-consoles}
 
@@ -109,7 +105,7 @@ No ambiente de criação, o console de navegação global fornece acesso às [Co
 
    * Fornece a capacidade de criar e gerenciar usuários do lado da publicação (membros) a partir do ambiente do autor.
    * Fornece a capacidade de proibir membros.
-   * Fornece a capacidade de criar e gerenciar grupos de usuários do lado da publicação (grupos de membros) a partir do ambiente do autor.
+   * Fornece a capacidade de criar e gerenciar grupos de usuários do lado da publicação (grupos de membros) a partir do ambiente de criação.
 
 * [Relatórios](/help/communities/reports.md) console
 
@@ -135,7 +131,7 @@ O console de ferramentas globais fornece acesso às seguintes ferramentas do Com
 
 * [Guia do componente](/help/communities/components-guide.md)
 
-   * Um site de exemplo, [Componentes da comunidade](https://localhost:4502/editor.html/content/community-components/en.html), que fornece uma amostra de todos os componentes das Comunidades com sua configuração padrão e a capacidade de experimentar com eles.
+   * Um site de exemplo, [Componentes da comunidade](https://localhost:4502/editor.html/content/community-components/en.html) O fornece uma amostra de todos os componentes das Comunidades com sua configuração padrão e a capacidade de experimentar com eles.
 
 ## Modelos do site da comunidade {#community-site-templates}
 
@@ -159,7 +155,7 @@ O recurso de grupos da comunidade é a capacidade de uma subcomunidade ser criad
 
 No ambiente de criação, os grupos da comunidade (subcomunidades) podem ser criados em um site da comunidade existente ou aninhados em um grupo existente, quando a estrutura do modelo contiver a variável [Função Grupos](/help/communities/functions.md#groups-function).
 
-A criação de um grupo da comunidade exige a seleção de um modelo de grupo da comunidade que forneça o design da(s) página(s) do grupo da comunidade. Quando uma função Grupos é adicionada a uma estrutura de modelo, ela é configurada para especificar um modelo de grupo ou para fornecer uma seleção de modelos no momento em que um novo grupo da comunidade é criado.
+A criação de um grupo da comunidade exige a seleção de um modelo de grupo da comunidade que forneça o design das páginas do grupo da comunidade. Quando uma função Grupos é adicionada a uma estrutura de modelo, ela é configurada para especificar um modelo de grupo ou para fornecer uma seleção de modelos no momento em que um novo grupo da comunidade é criado.
 
 Consulte também:
 
@@ -195,7 +191,7 @@ Os recursos de uma comunidade de engajamento podem incluir:
 * Pontuação e medalhas
 * Relatórios do Analytics
 
-Para experimentar a facilidade de criar rapidamente uma nova comunidade de engajamento, visite [Introdução ao AEM Communities](/help/communities/getting-started.md).
+Para experimentar a facilidade de criar rapidamente uma comunidade de envolvimento, visite [Introdução ao AEM Communities](/help/communities/getting-started.md).
 
 ## Máquina de demonstração AEM {#aem-demo-machine}
 
@@ -208,7 +204,7 @@ A máquina de demonstração AEM inclui:
 
 * Pacotes a serem instalados.
 
-A máquina de demonstração AEM foi testada com sucesso com CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM AEM AEM 6.2, 6.3 e 6.4 no Windows, MacOS e Linux.
+A máquina de demonstração do AEM foi testada com sucesso com CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM AEM AEM 6.2, 6.3 e 6.4 no Windows, MacOS e Linux®.
 
 A máquina de demonstração AEM requer uma licença AEM válida.
 

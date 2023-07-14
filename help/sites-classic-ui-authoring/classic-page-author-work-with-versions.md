@@ -1,18 +1,16 @@
 ---
 title: Trabalhar com versões de página
 description: O controle de versão cria um "instantâneo" de uma página em um momento específico.
-uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 48936115-4be2-4b0c-81ce-d61e43e4535d
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 20%
+source-wordcount: '1353'
+ht-degree: 15%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 20%
 O controle de versão cria um &quot;instantâneo&quot; de uma página em um momento específico. Com o controle de versão, você pode executar as seguintes ações:
 
 * Criar uma versão de uma página.
-* Restaure uma página para uma versão anterior para desfazer uma alteração que você fez em uma página, por exemplo.
+* Restaurar uma página para uma versão anterior para desfazer uma alteração feita em uma página, por exemplo.
 * Comparar a versão atual de uma página com uma versão anterior com diferenças no texto e nas imagens destacadas.
 
 ## Criar uma nova versão   {#creating-a-new-version}
@@ -114,7 +112,7 @@ Para fazer isso:
 
 >[!NOTE]
 >
->Se as versões forem removidas do repositório, o Timewarp não poderá mostrar a exibição correta. Além disso, se os elementos (como código, css, imagens etc) para renderização do site forem alterados, a exibição será diferente da original, pois esses itens não têm controle de versão no repositório.
+>Se as versões forem removidas do repositório, o Timewarp não poderá mostrar a exibição correta. Além disso, se os elementos (como código, css e imagens) para renderização do site forem alterados, a exibição será diferente da original, pois esses itens não têm controle de versão no repositório.
 
 ### Uso do calendário do Timewarp {#using-the-timewarp-calendar}
 
@@ -122,7 +120,7 @@ O Timewarp está disponível no sidekick.
 
 A versão do calendário é usada se você tiver um dia específico para ser exibido:
 
-1. Abra o **Controle de versão** e clique em **Timewarp** (perto da parte inferior do sidekick). A seguinte caixa de diálogo será exibida:
+1. Abra o **Controle de versão** e clique em **Timewarp** (perto da parte inferior do sidekick). A seguinte caixa de diálogo é exibida:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
@@ -136,11 +134,11 @@ A versão do calendário é usada se você tiver um dia específico para ser exi
 
    >[!NOTE]
    >
-   >Se você navegar para uma página que foi removida/excluída do repositório, ela será renderizada corretamente se ainda houver versões antigas disponíveis no repositório.
+   >Se você navegar para uma página que foi removida ou excluída do repositório, ela será renderizada corretamente se ainda houver versões antigas disponíveis no repositório.
 
    >[!NOTE]
    >
-   >Não é possível editar a versão antiga da página. Ela só está disponível para exibição. Se você deseja restaurar a versão mais antiga, é necessário fazer isso manualmente usando [restaurar](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
+   >Não é possível editar a versão antiga da página. Ela só está disponível para exibição. Se quiser restaurar a versão mais antiga, faça isso manualmente usando [restaurar](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. Quando terminar de visualizar a página, clique em:
 
@@ -155,13 +153,13 @@ A versão da linha do tempo é usada se você quiser ter uma visão geral das at
 
 Se quiser exibir a linha do tempo do documento:
 
-1. Para mostrar a Linha do tempo, você pode:
+1. Para mostrar a Linha do tempo, siga um destes procedimentos:
 
    1. Abra o **Controle de versão** e clique em **Timewarp** (perto da parte inferior do sidekick).
 
-   1. Usar o diálogo do sidekick mostrado após [usar o calendário do Timewarp](#using-the-timewarp-calendar).
+   1. Usar a caixa de diálogo do sidekick mostrada após [usar o calendário do Timewarp](#using-the-timewarp-calendar).
 
-1. Clique em **Mostrar Linha do Tempo** - a linha do tempo do documento será exibida; por exemplo:
+1. Clique em **Mostrar Linha do Tempo** - a linha do tempo do documento é exibida; por exemplo:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -169,13 +167,13 @@ Se quiser exibir a linha do tempo do documento:
 
    * Todas as linhas indicam versões publicadas.
 Quando uma página é ativada, uma nova linha é iniciada. Toda vez que o documento é editado, uma nova cor aparece.
-No exemplo abaixo, a linha vermelha indica que a página foi editada durante o período da versão verde inicial, e a linha amarela indica que a página foi editada em algum momento durante a versão vermelha etc.
+No exemplo abaixo, a linha vermelha indica que a página foi editada durante o período da versão verde inicial, e a linha amarela indica que a página foi editada em algum momento durante a versão vermelha e assim por diante.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
 1. Clique em:
 
-   1. **Ir** para mostrar o conteúdo da página publicada no momento selecionado.
+   1. **Ir** para mostrar o conteúdo da página publicada no horário selecionado.
    1. Ao mostrar esse conteúdo, use **Sair do Timewarp** para sair e retornar à página do autor atual.
 
 ### Limitações do Timewarp {#timewarp-limitations}
@@ -186,10 +184,10 @@ O Timewarp se esforça ao máximo para reproduzir uma página em um ponto seleci
 * **O Timewarp usa versões de página** - se você navegar para uma página que foi removida/excluída do repositório, ela será renderizada corretamente se ainda houver versões antigas disponíveis no repositório.
 * **As versões removidas afetam o Timewarp** - se as versões forem removidas do repositório, o Timewarp não poderá mostrar a exibição correta.
 
-* **O Timewarp é somente leitura** - não é possível editar a versão antiga da página. Ela só está disponível para exibição. Se você deseja restaurar a versão mais antiga, é necessário fazer isso manualmente usando [restaurar](#main-pars-title-1).
+* **O Timewarp é somente leitura** - não é possível editar a versão antiga da página. Ela só está disponível para exibição. Se quiser restaurar a versão mais antiga, faça isso manualmente usando [restaurar](#main-pars-title-1).
 
-* **O Timewarp é baseado apenas no conteúdo da página** - se os elementos (como código, css, ativos/imagens, etc) para renderização do site forem alterados, a exibição será diferente da original, pois esses itens não têm controle de versão no repositório.
+* **O Timewarp é baseado apenas no conteúdo da página** - Se os elementos (como código, css e ativos de imagem) para renderização do site forem alterados, a exibição será diferente da original, pois esses itens não têm controle de versão no repositório.
 
 >[!CAUTION]
 >
->O Timewarp foi projetado como uma ferramenta para ajudar os autores a entender e criar conteúdo. Ele não se destina a ser um registro de auditoria ou a fins legais.
+>O Timewarp foi projetado para ajudar os autores a entender e criar conteúdo. Ele não se destina a ser um registro de auditoria ou a fins legais.

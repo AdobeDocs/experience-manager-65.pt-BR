@@ -1,19 +1,15 @@
 ---
 title: Mapeamento de dados do componente com propriedades do Adobe Analytics
-seo-title: Mapping Component Data with Adobe Analytics Properties
 description: Saiba como mapear dados de componentes com propriedades do SiteCatalyst.
-seo-description: Learn how to map component data with SiteCatalyst properties.
-uuid: b08ab37f-ad58-4c04-978f-8e21a3823ae8
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1440'
 ht-degree: 1%
 
 ---
@@ -39,7 +35,7 @@ Os dados mapeados são enviados para o Adobe Analytics quando a página é carre
 
 Use o procedimento a seguir para mapear variáveis de componente CQ com propriedades de relatório do Adobe Analytics.
 
-1. No **Visualização do AEM**, arraste um componente de rastreamento do sidekick para a estrutura. Por exemplo, arraste o **Página** componente do componente do **Geral** categoria.
+1. No **Visualização do AEM**, arraste um componente de rastreamento do sidekick para a estrutura. Por exemplo, arraste o **Página** componente do **Geral** categoria.
 
    ![aa-13](assets/aa-13.png)
 
@@ -65,7 +61,6 @@ Use o procedimento a seguir para mapear variáveis de componente CQ com propried
    >
    >* `eVars` e `props` são mapeados para variáveis CQ começando com um `pagedata.X` ou `eventdata.X`
    >* considerando que os eventos devem ser mapeados para variáveis que começam com `eventdata.events.X`
-
 
 1. Para disponibilizar a estrutura na instância de publicação do site, abra **Página** do sidekick e clique em **Ativar Framework.**
 
@@ -105,7 +100,7 @@ Inicialmente, ao abrir uma estrutura do Adobe Analytics, o localizador de conte�
 * Eventos
 
 Quando uma RSID é selecionada, todas as variáveis pertencentes a essa RSID são adicionadas à lista.\
-A variável `cf#` é necessário para mapear variáveis do Analytics para as variáveis do CQ presentes nos diferentes componentes de rastreamento. Consulte Configuração de uma estrutura para rastreamento básico.
+A variável `cf#` é necessário mapear variáveis do Analytics para as variáveis do CQ presentes nos diferentes componentes de rastreamento. Consulte Configuração de uma estrutura para rastreamento básico.
 
 Dependendo da exibição selecionada para a estrutura, o localizador de conteúdo será preenchido pelas variáveis do Analytics (na exibição AEM) ou pelas variáveis CQ (na exibição do Analytics).
 
@@ -127,23 +122,23 @@ A lista pode ser manipulada das seguintes maneiras:
    1. A lista pode ser recarregada a qualquer momento usando o botão de setas giratórias.
    1. Se várias RSIDs forem selecionadas na estrutura, todas as variáveis na lista serão exibidas usando todos os rótulos usados nas RSIDs selecionadas.
 
-
 1. Quando estiver na exibição do Adobe Analytics, o Localizador de conteúdo exibe todas as variáveis CQ pertencentes aos componentes de rastreamento arrastados na exibição do CQ.
 
-   * por exemplo, caso a variável **Baixar componente** é o *somente um arrastado* na visualização CQ (que tem duas variáveis mapeáveis) *eventdata.downloadLink* e *eventdata.events.startDownload*), o Localizador de conteúdo terá esta aparência ao alternar para a exibição do Adobe Analytics:
+   * Por exemplo, caso a variável **Baixar componente** é o *somente um arrastado* na visualização CQ (que tem duas variáveis mapeáveis) *eventdata.downloadLink* e *eventdata.events.startDownload*), o Localizador de conteúdo terá esta aparência ao alternar para a exibição do Adobe Analytics:
 
    ![aa-22](assets/aa-22.png)
 
-   * As variáveis podem ser arrastadas e soltas em qualquer variável do Adobe Analytics que pertença a uma das 3 seções de variáveis (**Tráfego**, **Conversão** e **Eventos**).
+   * As variáveis podem ser arrastadas e soltas em qualquer variável do Adobe Analytics que pertença a uma das três seções de variáveis (**Tráfego**, **Conversão** e **Eventos**).
 
    * Ao arrastar um novo componente de rastreamento para a estrutura na exibição do CQ, as variáveis do CQ pertencentes ao componente são adicionadas automaticamente ao Localizador de conteúdo (cf#) na exibição do Adobe Analytics.
+
    >[!NOTE]
    >
    >Somente uma variável do CQ pode ser mapeada para uma variável do Adobe Analytics em um determinado momento.
 
 ## Uso da visualização do AEM e do Analytics {#using-aem-view-and-analytics-view}
 
-A qualquer momento, os usuários têm a opção de alternar entre duas maneiras de visualizar os mapeamentos do Adobe Analytics em uma página de estrutura. As 2 exibições fornecem uma melhor visão geral dos mapeamentos dentro da estrutura, a partir de 2 perspectivas distintas.
+A qualquer momento, os usuários podem alternar entre duas maneiras de visualizar os mapeamentos do Adobe Analytics em uma página de estrutura. As duas visualizações fornecem uma melhor visão geral dos mapeamentos dentro da estrutura, a partir de duas perspectivas distintas.
 
 ### Visualização AEM {#aem-view}
 
@@ -161,14 +156,14 @@ Tomando a imagem acima como exemplo, a variável **Visualização do AEM** tem a
 
       1. Os componentes herdados estão bloqueados.
       1. Para desbloquear um componente herdado, clique duas vezes no cadeado ao lado do nome do componente
-      1. Para reverter a herança, você deve excluir o componente desbloqueado; depois disso, ele recuperará o status de bloqueado.
+      1. Para reverter a herança, exclua o componente desbloqueado; depois disso, ele recuperará o status de bloqueado.
+
    1. **Arraste componentes aqui para incluí-los no framework de análise**: os componentes podem ser arrastados do Sidekick e soltos aqui.
    1. Você pode encontrar todos os componentes incluídos atualmente na estrutura de análise:
 
       1. Para adicionar um componente, arraste um da guia Componentes do sidekick
       1. Para excluir um componente e todos os seus mapeamentos, selecione Excluir no menu de contexto do componente e aceite a exclusão na caixa de diálogo de confirmação.
       1. Lembre-se de que um componente só pode ser excluído da estrutura em que foi criado e não pode ser excluído de estruturas secundárias no sentido tradicional (eles só podem ser substituídos).
-
 
 ### Exibição do Analytics {#analytics-view}
 
@@ -185,24 +180,26 @@ Tomando a imagem acima como exemplo, a variável **Visualização do AEM** tem a
       * Variável de tráfego ( `prop1`) mapeado para uma variável do CQ ( `eventdata.downloadLink`)
 
       * Quando o componente tem um Cadeado ao lado dele, significa que é herdado de uma estrutura principal e, portanto, não pode ser editado
+
    * **Conversão**:
 
       * Variável de conversão ( `eVar1`) mapeado para uma variável do CQ ( `pagedata.title`)
 
-      * Variável de conversão ( `eVar3`) mapeado para uma expressão javascript adicionada em linha ao clicar duas vezes no campo de variável CQ e inserir o código manualmente
+      * Variável de conversão ( `eVar3`) mapeado para uma expressão JavaScript adicionada em linha clicando duas vezes no campo de variável CQ e inserindo o código manualmente
+
    * **Evento**:
 
       * Variável de evento ( `event1`) mapeado para um evento CQ ( `eventdata.events.pageView`)
 
-
-
 >[!NOTE]
 >
->A coluna da variável CQ de qualquer tabela também pode ser preenchida em linha, clicando duas vezes no campo e adicionando texto a ele. Esses campos aceitam javascript como uma entrada.
+>A coluna da variável CQ de qualquer tabela também pode ser preenchida em linha, clicando duas vezes no campo e adicionando texto a ele. Esses campos aceitam JavaScript como uma entrada.
 >
 >Por exemplo, ao lado de `prop3` você pode adicionar:
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 para enviar o *título* de uma página concatenada com seu *sitesection* usar *:* (dois pontos) e com prefixo *Adobe* as `prop3`
+>
 
 >[!CAUTION]
+>
 Somente uma variável do CQ pode ser mapeada para uma variável do Adobe Analytics em um determinado momento.

@@ -1,19 +1,15 @@
 ---
 title: Extensão e configuração do importador de design para páginas iniciais
-seo-title: Extending and Configuring the Design Importer for Landing Pages
 description: Saiba como configurar o Importador de design para páginas iniciais.
-seo-description: Learn how to configure the Design Importer for landing pages.
-uuid: a2dd0c30-03e4-4e52-ba01-6b0b306c90fc
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: e02f5484-fbc2-40dc-8d06-ddb53fd9afc2
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '3503'
+source-wordcount: '3502'
 ht-degree: 0%
 
 ---
@@ -28,7 +24,7 @@ Estas são as etapas lógicas para fazer o importador de design reconhecer seu c
 
 1. Criar um TagHandler
 
-   * Um manipulador de tags é um POJO que lida com tags HTML de um tipo específico. O &quot;tipo&quot; de tags HTML que seu TagHandler pode manipular é definido por meio da propriedade OSGi &quot;tagpattern.name&quot; de TagHandlerFactory. Essa propriedade OSGi é essencialmente um regex que deve corresponder à tag html de entrada que você deseja manipular. Todas as tags aninhadas seriam lançadas ao manipulador de tags para manipulação. Por exemplo, se você se registrar para uma div que contém uma variável &lt;p> tag, a variável &lt;p> A tag do também seria lançada no seu TagHandler e depende de você como deseja cuidar disso.
+   * Um manipulador de tags é um POJO que lida com tags HTML de um tipo específico. O &quot;tipo&quot; de tags HTML que seu TagHandler pode manipular é definido por meio da propriedade OSGi &quot;tagpattern.name&quot; de TagHandlerFactory. Essa propriedade OSGi é essencialmente um regex que deve corresponder à tag html de entrada que você deseja manipular. Todas as tags aninhadas seriam lançadas ao manipulador de tags para manipulação. Por exemplo, se você se registrar para uma div que contém uma variável &lt;p> tag, a variável &lt;p> Tag também seria lançado para o seu TagHandler e depende de você como deseja cuidar dele.
    * A interface do manipulador de tags é semelhante a uma interface do manipulador de conteúdo SAX. Ele recebe eventos SAX para cada tag html. Como provedor de manipulador de tags, é necessário implementar determinados métodos de ciclo de vida que são chamados automaticamente pela estrutura do importador de design.
 
 1. Crie o TagHandlerFactory correspondente.
@@ -127,15 +123,15 @@ Os navegadores compatíveis com &quot;arrastar e soltar&quot; do zip de design s
 
 ### Modernizador não é suportado {#modernizr-is-not-supported}
 
-`Modernizr.js` é uma ferramenta baseada em javascript que detecta recursos nativos de navegadores e detecta se eles são adequados para elementos html5 ou não. Designs que usam o Modernizador para aprimorar o suporte em versões mais antigas de navegadores diferentes podem causar problemas de importação na solução de página de aterrissagem. `Modernizr.js` scripts não são suportados com o importador Design.
+`Modernizr.js` é uma ferramenta baseada em JavaScript que detecta recursos nativos de navegadores e detecta se eles são adequados para elementos html5 ou não. Designs que usam o Modernizador para aprimorar o suporte em versões mais antigas de navegadores diferentes podem causar problemas de importação na solução de página de aterrissagem. `Modernizr.js` scripts não são suportados com o importador Design.
 
 ### As propriedades da página não são preservadas no momento da importação do pacote de design {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
 
-Qualquer propriedade da página (por exemplo, Domínio personalizado, Imposição de HTTPS etc.) O definido para uma página (que usa o modelo de Página de aterrissagem em branco) antes de importar o pacote de design é perdido após a importação do design. Portanto, a prática recomendada é definir as propriedades da página após importar o pacote de design.
+Qualquer propriedade de página (por exemplo, Domínio personalizado, Imposição de HTTPS e assim por diante) definida para uma página (que usa o modelo de Página de aterrissagem em branco) antes de importar o pacote de design é perdida após a importação do design. Portanto, a prática recomendada é definir as propriedades da página após importar o pacote de design.
 
 ### Marcação somente HTML assumida {#html-only-markup-assumed}
 
-Após a importação, a marcação é limpa por motivos de segurança e para evitar a importação e a publicação de marcação inválida. Isso pressupõe uma marcação somente HTML e todas as outras formas de elementos, como SVG em linha ou Componentes da Web, serão filtradas.
+Durante a importação, a marcação é limpa por motivos de segurança e para evitar a importação e a publicação de marcação inválida. Isso pressupõe uma marcação somente HTML e todas as outras formas de elementos, como SVG em linha ou Componentes da Web, serão filtradas.
 
 ### Texto {#text}
 
@@ -191,7 +187,7 @@ Incluindo a marcação acima no HTML, o faz o seguinte:
 * Define o `jcr:title` propriedade do componente de título criado para o texto dentro da tag de cabeçalho encapsulada em div.
 * Define o `type` à tag de cabeçalho, nesse caso `h1`.
 
-O componente de título é compatível com 7 tipos - `h1, h2, h3, h4, h5, h6` e `default`.
+O componente de título é compatível com sete tipos - `h1, h2, h3, h4, h5, h6` e `default`.
 
 **Declaração de tag de componente abreviada**:
 
@@ -251,7 +247,7 @@ Propriedades suportadas
 
 * Rótulo, com as opções negrito, itálico e sublinhado
 * URL do Target, compatível com URL de terceiros e AEM
-* Opções de renderização da página (mesma janela, nova janela etc.)
+* Opções de renderização de página (mesma janela, nova janela e assim por diante)
 
 tag HTML para incluir o componente de click-through no zip importado. Aqui, o href mapeia para o url de destino, a opção &quot;Exibir detalhes do produto&quot; mapeia para o rótulo e assim por diante.
 
@@ -277,16 +273,16 @@ Esse componente pode ser usado em qualquer aplicativo independente ou pode ser i
 
 #### Vincular ao gráfico {#graphical-link}
 
-Esse componente CTA pode ser usado para adicionar qualquer imagem gráfica com link na página de destino. A imagem pode ser um botão simples ou qualquer imagem gráfica como plano de fundo. Quando a imagem for clicada, o usuário será direcionado para o URL de destino especificado nas propriedades do componente. Ele faz parte do grupo &quot;Plano de ação&quot;.
+Esse componente CTA pode ser usado para adicionar qualquer imagem gráfica com link na página de destino. A imagem pode ser um botão simples ou qualquer imagem gráfica como plano de fundo. Quando a imagem é clicada, o usuário é levado para o URL de destino especificado nas propriedades do componente. Ele faz parte do grupo &quot;Plano de ação&quot;.
 
 Propriedades suportadas
 
 * Recorte de imagem, rotação
 * Focalizar texto, descrição, tamanho em px
 * URL do Target, compatível com URL de terceiros e AEM
-* Opções de renderização da página (mesma janela, nova janela etc.)
+* Opções de renderização de página (mesma janela, nova janela e assim por diante)
 
-tag HTML para incluir o componente de link gráfico no zip importado. Aqui, href mapeará para o url de destino, img src será a imagem de renderização, &quot;title&quot; será tomado como texto ao passar o mouse e assim por diante.
+tag HTML para incluir o componente de link gráfico no zip importado. Aqui, href mapeia para o url de destino, img src é a imagem de renderização, &quot;title&quot; é tomado como texto ao passar o mouse e assim por diante.
 
 ```xml
 <div id="cqcanvas">
@@ -304,9 +300,9 @@ tag HTML para incluir o componente de link gráfico no zip importado. Aqui, href
 >
 >Para criar um link gráfico clickthrough, é necessário envolver uma tag de âncora e a tag de imagem dentro de uma div com `data-cq-component="clickthroughgraphicallink"` atributo.
 >
->ex.: `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
+>Por exemplo, `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
->Outras maneiras de associar uma imagem a uma tag de âncora usando CSS não são compatíveis, por exemplo, a seguinte marcação não funcionará:
+>Outras maneiras de associar uma imagem a uma tag de âncora usando CSS não são compatíveis. Por exemplo, a marcação a seguir não funciona:
 >
 >`<div data-cq-component="clickthroughgraphicallink">`
 >
@@ -315,6 +311,7 @@ tag HTML para incluir o componente de link gráfico no zip importado. Aqui, href
 >`</div>`
 >
 >com um associado `css .hasbackground { background-image: pathtoimage }`
+>
 
 ### Formulário de cliente em potencial {#lead-form}
 
@@ -325,17 +322,17 @@ Um formulário de cliente potencial é um formulário usado para coletar informa
 * Campos de leads predefinidos - nome, sobrenome, endereço, data, gênero, sobre, userId, emailId, botão enviar estão disponíveis no sidekick. Basta arrastar/soltar o componente desejado em seu formulário de lead.
 * Com a ajuda desses componentes, o autor pode criar um formulário de cliente potencial independente, esses campos correspondem a campos de formulário de cliente potencial. Em aplicativos zip independentes ou importados, o usuário pode adicionar campos extras usando campos de formulário de cliente em potencial cq:form ou cta, nomeá-los e projetá-los de acordo com os requisitos.
 * Mapeie campos de formulário de cliente potencial usando nomes predefinidos específicos do formulário de cliente potencial CTA, por exemplo - firstName para o nome no formulário de cliente potencial e assim por diante.
-* Os campos que não estão mapeados para o formulário principal serão mapeados para componentes cq:form - texto, rádio, caixa de seleção, lista suspensa, oculto, senha.
+* Os campos que não estão mapeados para formulários de cliente potencial são mapeados para cq:componentes de formulário - texto, rádio, caixa de seleção, lista suspensa, oculto, senha.
 * O usuário pode fornecer o título usando a tag &quot;label&quot; e o estilo usando o atributo de estilo &quot;class&quot; (disponível somente para componentes de formulário de lead CTA).
 * A página de agradecimento e a lista de assinaturas podem ser fornecidas como um parâmetro oculto do formulário (presente no index.htm) ou podem ser adicionadas/editadas na barra de edição do &quot;Início do formulário de cliente potencial&quot;
 
-   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
+  &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
 
-   &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
+  &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
 
 * Restrições como - necessárias podem ser fornecidas a partir da configuração de edição de cada um dos componentes.
 
-tag HTML para incluir o componente de link gráfico no zip importado. Aqui, &quot;firstName&quot; é mapeado para o formulário de lead firstName e assim por diante, exceto para caixas de seleção - essas duas caixas de seleção mapeiam para o componente cq:form dropdown.
+tag HTML para incluir o componente de link gráfico no zip importado. Aqui, &quot;firstName&quot; é mapeado para o formulário de cliente potencial firstName, e assim por diante, exceto para caixas de seleção - essas duas caixas de seleção mapeiam para o componente cq:form dropdown.
 
 ```xml
 <div id="cqcanvas">
@@ -447,7 +444,7 @@ As etapas para criar um novo modelo no AEM são explicadas [aqui](/help/sites-de
 
 ### Referência a um componente da landing page {#referring-a-component-from-landing-page}
 
-Suponha que você tenha um componente que deseja referenciar em seu HTML usando o atributo data-cq-component de modo que o importador de design renderize um componente para incluir neste local. por exemplo, você deseja fazer referência ao componente de tabela ( `resourceType = /libs/foundation/components/table`). O seguinte precisa ser adicionado no HTML:
+Suponha que você tenha um componente que deseja referenciar em seu HTML usando o atributo data-cq-component de modo que o importador de design renderize um componente para incluir neste local. Por exemplo, você deseja fazer referência ao componente de tabela ( `resourceType = /libs/foundation/components/table`). O seguinte precisa ser adicionado no HTML:
 
 `<div data-cq-component="/libs/foundation/components/table">foundation table</div>`
 
@@ -467,7 +464,7 @@ O uso de seletores CSS semelhantes aos seguintes não é recomendado para uso co
 | E:n-ésimo de tipo(n) | um elemento E, o n-ésimo irmão de seu tipo | [Pseudo-classes estruturais](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:enésimo-último-de-tipo(n) | um elemento E, o n-ésimo irmão de seu tipo, contando do último | [Pseudo-classes estruturais](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
-Isso se deve ao fato de que elementos html adicionais, como &lt;div> são adicionadas ao HTML gerado após a importação.
+Isso ocorre porque elementos html adicionais, como &lt;div> são adicionadas ao HTML gerado após a importação.
 
 * Scripts que dependem da estrutura semelhante à mostrada acima também não são recomendados para uso com elementos marcados para conversão em componentes AEM.
 * O uso de estilos nas tags de marcação para conversão de componentes como &lt;div data-cq-component=&quot;&amp;ast;&quot;> não é recomendado.
@@ -519,7 +516,7 @@ A tabela abaixo descreve brevemente as propriedades:
   <tr>
    <td> </td>
    <td>Substituir padrão</td>
-   <td>O padrão que substitui as correspondências encontradas. Você pode usar referências de grupos regex como $1, $2. Além disso, esse padrão oferece suporte a palavras-chave como {designPath} que são resolvidas com o valor real durante a importação.</td>
+   <td>O padrão que substitui as correspondências encontradas. Você pode usar referências de grupos regex como $1, $2. Além disso, esse padrão suporta palavras-chave como {designPath} que são resolvidos com o valor real durante a importação.</td>
   </tr>
  </tbody>
 </table>
@@ -530,10 +527,12 @@ A tabela abaixo descreve brevemente as propriedades:
 >Se você precisar fazer alterações no padrão de pesquisa, ao abrir o editor de propriedades felix, será necessário adicionar manualmente caracteres de barra invertida para escapar dos metacaracteres regex. Se você não adicionar caracteres de barra invertida manualmente, o regex será considerado inválido e não substituirá o mais antigo.
 >
 >Por exemplo, se a configuração padrão for
->`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->E você precisa substituir >`CQ_DESIGN_PATH` com `VIPURL` no padrão de pesquisa, o padrão de pesquisa deve ter esta aparência:
-`/\* *VIPURL *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>
+>E você precisa substituir `CQ_DESIGN_PATH` com `VIPURL` no padrão de pesquisa, o padrão de pesquisa deve ter esta aparência:
+>
+>`/\* *VIPURL *\*/ *(['"])`
 
 ## Resolução de problemas {#troubleshooting}
 
@@ -545,14 +544,14 @@ Se o pacote de design contiver uma marcação de componente parsys, após a impo
 
 ### Mensagens de erro exibidas durante a importação {#error-messages-displayed-during-import}
 
-No caso de erros (por exemplo, o pacote importado não é um zip válido), a importação de design não importará o pacote e, em vez disso, exibirá uma mensagem de erro na parte superior da página, logo acima da caixa de arrastar e soltar. Exemplos de cenários de erro são apresentados aqui. Depois de corrigir o erro, é possível reimportar o zip atualizado para a mesma página de aterrissagem em branco. Os diferentes cenários em que os erros são lançados são os seguintes:
+Se houver erros (por exemplo, o pacote importado não é um zip válido), a importação do design não importará o pacote. Em vez disso, uma mensagem de erro é exibida na parte superior da página logo acima da caixa de arrastar e soltar. Exemplos de cenários de erro são apresentados aqui. Após corrigir o erro, é possível reimportar o zip atualizado para a mesma landing page em branco. Os diferentes cenários em que os erros são lançados são os seguintes:
 
 * O pacote de design importado não é um arquivo zip válido.
 * O pacote de design importado não contém um index.html no nível superior.
 
 ### Avisos exibidos após a importação {#warnings-displayed-after-import}
 
-No caso de avisos (por exemplo, HTML se refere a imagens que não existem no pacote), o importador de design importará o zip, mas ao mesmo tempo exibirá uma lista de problemas/avisos no Painel de resultados. Ao clicar no link de problemas, será exibida uma lista de avisos que apontam quaisquer problemas no pacote de design. Os diferentes cenários em que os avisos são capturados e exibidos pelo importador de design são os seguintes:
+Se houver avisos (por exemplo, HTML se refere a imagens que não existem no pacote), o importador de design importa o zip, mas ao mesmo tempo exibe uma lista de problemas/avisos no Painel de resultados. Ao clicar no link de problemas, será exibida uma lista de avisos que apontam quaisquer problemas no pacote de design. Os diferentes cenários em que os avisos são capturados e exibidos pelo importador de design são os seguintes:
 
 * HTML refere-se a imagens que não existem no pacote.
 * HTML refere-se a scripts que não existem no pacote.
@@ -560,11 +559,11 @@ No caso de avisos (por exemplo, HTML se refere a imagens que não existem no pac
 
 ### Onde os arquivos do arquivo ZIP estão sendo armazenados no AEM? {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
 
-Após importar a landing page, os arquivos (imagens, css, js etc.) no pacote de design são armazenadas no seguinte local no AEM:
+Depois que a landing page é importada, os arquivos (imagens, css, js e assim por diante) no pacote de design são armazenados no seguinte local no AEM:
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-Suponha que a landing page seja criada na campanha We.Retail e o nome da landing page seja **myBlankLandingPage** em seguida, o local onde os arquivos Zip são armazenados é o seguinte:
+Suponha que a landing page seja criada sob a campanha We.Retail e o nome da landing page seja **myBlankLandingPage** em seguida, o local onde os arquivos Zip são armazenados é o seguinte:
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 
@@ -589,7 +588,7 @@ com um CSS aplicado na classe `box` do seguinte modo:
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-Depois `box img` for usada no importador de design, a landing page resultante parecerá não ter preservado a formatação. Para contornar isso, esteja ciente de que o AEM adiciona tags div no CSS e reescreve o código de acordo. Caso contrário, algumas regras CSS serão inválidas.
+Depois `box img` for usada no importador de design, a landing page resultante parecerá não ter preservado a formatação. Para contornar isso, o AEM adiciona tags div no CSS e reescreve o código de acordo. Caso contrário, algumas regras CSS serão inválidas.
 
 ```xml
 .box img
@@ -598,4 +597,5 @@ Depois `box img` for usada no importador de design, a landing page resultante pa
 ```
 
 >[!NOTE]
-Além disso, os designers devem estar cientes de que somente o código dentro do **id=cqcanvas** for reconhecida pelo importador, caso contrário, o design não será preservado.
+>
+>Além disso, os designers devem estar cientes de que somente o código dentro do **id=cqcanvas** for reconhecida pelo importador, caso contrário, o design não será preservado.

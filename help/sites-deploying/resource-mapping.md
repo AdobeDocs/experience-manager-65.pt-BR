@@ -1,27 +1,23 @@
 ---
 title: Mapeamento de recursos
-seo-title: Resource Mapping
-description: Saiba como definir redirecionamentos, URLs personalizados e hosts virtuais para AEM usando o mapeamento de recursos.
-seo-description: Learn how to define redirects, vanity URLs and virtual hosts for AEM by using resource mapping.
-uuid: 2ca2d0e4-6f90-4ecc-82db-26991f08c66f
+description: Saiba como definir redirecionamentos, URLs personalizados e hosts virtuais para o Adobe Experience Manager usando o mapeamento de recursos.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 3582a4d8-a47b-467a-9e25-cb45f969ec93
 docset: aem65
 feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
-source-git-commit: 7c24379c01f247f5ad45e3ecd40f3edef4ac3cfb
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 3%
+source-wordcount: '522'
+ht-degree: 2%
 
 ---
 
 # Mapeamento de recursos{#resource-mapping}
 
-O mapeamento de recursos é usado para definir redirecionamentos, URLs personalizados e hosts virtuais para AEM.
+O mapeamento de recursos é usado para definir redirecionamentos, URLs personalizados e hosts virtuais para o Adobe Experience Manager (AEM).
 
 Por exemplo, você pode usar esses mapeamentos para:
 
@@ -32,11 +28,11 @@ Um mapeamento HTTP possível prefixa todas as solicitações para `localhost:450
 
 `localhost:4503/content/we-retail/en/products.html`
 
-a ser acessado usando:
+Para ser acessado usando:
 
 `localhost:4503/we-retail/en/products.html`
 
-como o mapeamento adicionará automaticamente o prefixo `/content` para `/we-retail/en/products.html`.
+Como o mapeamento adiciona automaticamente o prefixo `/content` para `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
@@ -44,7 +40,7 @@ como o mapeamento adicionará automaticamente o prefixo `/content` para `/we-ret
 
 >[!NOTE]
 >
->Consulte a documentação do Sling e [Mapeamentos para Resolução de Recursos](https://sling.apache.org/site/resources.html) e [Recursos](https://sling.apache.org/site/mappings-for-resource-resolution.html) para obter mais informações.
+>Consulte a documentação do Sling e [Mapeamentos para Resolução de Recursos](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) e [Recursos](https://sling.apache.org/documentation/the-sling-engine/resources.html) para obter mais informações.
 
 ## Exibição de Definições de Mapeamento {#viewing-mapping-definitions}
 
@@ -62,7 +58,7 @@ A lista de entradas usadas pelos métodos ResourceResolver.resolve para mapear U
 * **Mapeamento de Entradas do Mapa**
 A lista de entradas usadas pelos métodos ResourceResolver.map para mapear Caminhos de Recursos para URLs.
 
-As duas listas mostram várias entradas, incluindo aquelas definidas como padrão pelo(s) aplicativo(s). Geralmente, elas têm como objetivo simplificar URLs para o usuário.
+As duas listas mostram várias entradas, incluindo aquelas definidas como padrão pelas aplicações. Geralmente, elas têm como objetivo simplificar URLs para o usuário.
 
 O par de listas a **Padrão**, uma expressão regular correspondente à solicitação, com um **Substituição** que define o redirecionamento a ser imposto.
 
@@ -70,15 +66,15 @@ Por exemplo, o:
 
 **Padrão** `^[^/]+/[^/]+/welcome$`
 
-acionará:
+Acionará o:
 
 **Substituição** `/libs/cq/core/content/welcome.html`.
 
-para redirecionar uma solicitação:
+Para redirecionar uma solicitação:
 
 `https://localhost:4503/welcome` ``
 
-para:
+Para:
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
@@ -86,7 +82,7 @@ Novas definições de mapeamento são criadas no repositório.
 
 >[!NOTE]
 >
->Há muitos recursos disponíveis que ajudam a explicar como definir expressões regulares; por exemplo [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Há muitos recursos disponíveis que ajudam a explicar como definir expressões regulares. Por exemplo, [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Criação de definições de mapeamento no AEM {#creating-mapping-definitions-in-aem}
 
@@ -102,7 +98,7 @@ Para criar o mapeamento que prefixa qualquer solicitação para https://localhos
 
 1. Usando o CRXDE, acesse `/etc/map/http`.
 
-1. Criar um novo nó:
+1. Criar um nó:
 
    * **Tipo** `sling:Mapping`
 Esse tipo de nó se destina a esses mapeamentos, embora seu uso não seja obrigatório.
@@ -117,16 +113,16 @@ Esse tipo de nó se destina a esses mapeamentos, embora seu uso não seja obriga
       * **Tipo** `String`
 
       * **Valor** `localhost.4503/`
+
    * **Nome** `sling:internalRedirect`
 
       * **Tipo** `String[]`
 
       * **Valor** `/content/`
 
-
 1. Clique em **Salvar tudo**.
 
-Isso lidará com uma solicitação como:
+Isso lida com uma solicitação como:
 `localhost:4503/geometrixx/en/products.html`
 como se:
 `localhost:4503/content/geometrixx/en/products.html`
@@ -134,7 +130,7 @@ solicitadas.
 
 >[!NOTE]
 >
->Consulte [Recursos](https://sling.apache.org/site/mappings-for-resource-resolution.html) na Documentação do Sling, para obter mais informações sobre as propriedades do sling disponíveis e como elas podem ser configuradas.
+>Consulte [Recursos](https://sling.apache.org/documentation/the-sling-engine/resources.html) na Documentação do Sling, para obter mais informações sobre as propriedades do sling disponíveis e como elas podem ser configuradas.
 
 >[!NOTE]
 >

@@ -3,11 +3,10 @@ title: Adobe Experience Manager Mobile - Disponibilidade do GDPR
 description: Adobe Experience Manager Mobile - Disponibilidade do GDPR
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
-discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '688'
 ht-degree: 1%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->O GDPR é usado como exemplo nas seções abaixo, mas os detalhes abordados se aplicam a todas as regulamentações de proteção e privacidade de dados; como o GDPR, CCPA etc.
+>O GDPR é usado como exemplo nas seções abaixo, mas os detalhes abordados se aplicam a todas as regulamentações de proteção e privacidade de dados; como o GDPR e o CCPA.
 
 ## Suporte ao GDPR da AEM Mobile {#aem-mobile-gdpr-support}
 
@@ -26,15 +25,15 @@ A AEM Mobile está pronta para ajudar os clientes com suas obrigações de confo
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-O produto de publicação digital do Adobe (que precede o AEM Mobile) é compatível com as iniciativas de preparação do GDPR do Adobe. Consulte [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). A seguir são apresentados detalhes específicos sobre o suporte a funções relevantes do GDPR no produto Digital Publishing Suite, incluindo como trabalhar com o Adobe para iniciar solicitações do GDPR.
+O produto de publicação digital do Adobe (que precede o AEM Mobile) é compatível com as iniciativas de preparação do GDPR do Adobe. Consulte [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html). A seguir são fornecidos detalhes específicos sobre o suporte a funções relevantes do GDPR no produto do Digital Publishing Suite, incluindo como trabalhar com o Adobe para iniciar solicitações do GDPR.
 
-Para não confundir o AEM Mobile com o produto mais antigo do Digital Publishing Suite, faça logon nesse produto:
+Para não confundir o AEM Mobile com o produto mais antigo do Digital Publishing Suite, é possível fazer logon no produto do Digital Publishing Suite aqui:
 
 [https://acrobat.adobe.com/us/en/](https://acrobat.adobe.com/us/en/)
 
 ### Iniciando uma solicitação do GDPR {#initiating-a-gdpr-request}
 
-Entre em contato com o Atendimento ao cliente da Adobe para iniciar uma solicitação de GDPR para o Digital Publishing Suite.
+Entre em contato com o Atendimento ao cliente do Adobe para que você possa iniciar uma solicitação de GDPR para a Digital Publishing Suite.
 
 As seguintes IDs são necessárias para localizar dados do cliente. Qualquer subconjunto recebido implicará que as outras IDs não se aplicam a este usuário.
 
@@ -52,11 +51,11 @@ Forneça pelo menos 1 dos seguintes itens:
 
 **O Adobe excluirá minhas compras do App Store ao iniciar uma solicitação DELETE?**
 
-O Adobe excluirá as informações que possui sobre compras da App Store (assinaturas, etc.) mas as compras ainda estarão registradas nas App stores. Se o aplicativo (usuário final) estiver conectado à App Store, esses recibos serão coletados novamente e enviados ao Adobe e, posteriormente, serão considerados como novas compras e serão restaurados pelo aplicativo para terem acesso novamente.
+O Adobe exclui informações que tem de compras da App Store (assinaturas e assim por diante), mas as compras ainda estão registradas nas App Store. Se o aplicativo (usuário final) estiver conectado à App Store, esses recibos serão coletados novamente e enviados para o Adobe e depois, eles serão considerados como novas compras e serão restaurados pelo aplicativo para terem acesso novamente.
 
 **O Adobe excluirá os direitos fornecidos pelo cliente ao iniciar uma solicitação DELETE?**
 
-O Adobe excluirá as informações que possui sobre as concessões adicionais de direito direto do cliente. Se o aplicativo (usuário final) fizer logon no mecanismo OAuth usado pelo cliente, ele enviará informações para o Adobe e os serviços coletarão os direitos adicionais novamente.
+O Adobe exclui informações que possui sobre as bonificações diretas adicionais do cliente. Se o aplicativo (usuário final) fizer logon no mecanismo OAuth usado pelo cliente, ele enviará informações para o Adobe e os serviços coletarão os direitos adicionais novamente.
 
 **O que se espera do usuário final?**
 
@@ -64,19 +63,19 @@ Como a chave para atribuir direitos ao aplicativo reside no dispositivo como par
 
 **O que acontece quando um aplicativo é compartilhado entre pessoas em um dispositivo?**
 
-O Adobe tem pouquíssima informação que se associa diretamente a um usuário específico. Ele associa os dados usando uma UUID criada aleatoriamente que é mantida nos dados do aplicativo e é transmitida em cada solicitação iniciada pelo aplicativo. Isso significa que os usuários finais que compartilham o aplicativo no mesmo dispositivo usarão a mesma UUID e todos os dados serão considerados de propriedade da pessoa que faz a solicitação de GDPR. Tanto para as solicitações de acesso quanto para as de exclusão, o DPSC considerará as pessoas que compartilham um aplicativo como uma única pessoa.
+O Adobe tem o mínimo de informações associadas diretamente a um usuário específico. Ele associa os dados usando uma UUID criada aleatoriamente que é mantida nos dados do aplicativo e é transmitida em cada solicitação iniciada pelo aplicativo. Isso significa que os usuários finais que compartilham o aplicativo no mesmo dispositivo usam a mesma UUID e todos os dados são considerados de propriedade da pessoa que faz a solicitação de GDPR. Tanto para as solicitações de acesso quanto para as de exclusão, o DPSC considera as pessoas que compartilham um aplicativo como uma única pessoa.
 
 **Quais dados pessoais são rastreados com o Analytics?**
 
-Nenhum. Há dados sendo rastreados, mas no nível do aplicativo (não pessoal). Isso inclui eventos como inicializações, falhas, fechamentos, atividades, compras ou sobreposições de fólio. As localizações geográficas, nomes, IDs de dispositivos ou endereços IP não são rastreados.
+Nenhum. Há dados sendo rastreados, mas no nível do aplicativo (não pessoal). Isso inclui eventos como inicializações, falhas, fechamentos, atividades, compras ou sobreposições de fólio. Os locais geográficos, nomes, IDs de dispositivo ou endereços IP não são rastreados.
 
 **O usuário final forneceu suas informações, mas nada foi encontrado. Por que não?**
 
-À medida que o produto Digital Publishing Suite evoluía, as implementações de serviço eram alteradas e mais dados eram ofuscados. Se nenhum dado for encontrado usando os dados fornecidos pelo usuário, significa que os dados do usuário não poderão ser rastreados até essa pessoa.
+À medida que o produto da Digital Publishing Suite evoluía, as implementações de serviço eram alteradas e mais dados eram ofuscados. Se nenhum dado for encontrado usando os dados fornecidos pelo usuário, significa que os dados do usuário não poderão ser rastreados até essa pessoa.
 
 ### Exemplo {#example}
 
-Entre em contato com o Atendimento ao cliente da Adobe para iniciar uma solicitação de GDPR.
+Entre em contato com o Atendimento ao cliente do Adobe para iniciar uma solicitação de GDPR.
 
 Este é um exemplo das entradas e saídas resultantes de uma solicitação do GDPR do Digital Publishing Suite:
 

@@ -1,18 +1,14 @@
 ---
 title: Configurações do Cloud Service
-seo-title: Cloud Service Configurations
 description: É possível estender as instâncias existentes para criar suas próprias configurações
-seo-description: You can extend the existing instances to create your own configurations
-uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '563'
 ht-degree: 3%
 
 ---
@@ -28,7 +24,7 @@ As configurações são projetadas para fornecer a lógica e a estrutura para ar
 Os princípios usados no desenvolvimento das configurações foram baseados nos seguintes conceitos:
 
 * Serviços/adaptadores são usados para recuperar as configurações.
-* As configurações (por exemplo, propriedades/parágrafos) são herdadas do(s) pai(s).
+* As configurações (por exemplo, propriedades/parágrafos) são herdadas dos pais.
 * Referenciado a partir de nós do Analytics por caminho.
 * Facilmente extensível.
 * Tem flexibilidade para atender a configurações mais complexas, como [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
@@ -40,15 +36,15 @@ O caminho base das configurações é:
 
 `/etc/cloudservices`.
 
-Para cada tipo de configuração, será fornecido um modelo e um componente. Isso possibilita ter modelos de configuração que podem atender à maioria das necessidades após a personalização.
+Para cada tipo de configuração, um modelo e um componente são fornecidos. Isso possibilita ter modelos de configuração que podem atender à maioria das necessidades após a personalização.
 
-Para fornecer uma configuração para novos serviços, é necessário:
+Para fornecer uma configuração para novos serviços, faça o seguinte:
 
-* criar uma página de serviço no
+* Criar uma página de serviço no
 
-   `/etc/cloudservices`
+  `/etc/cloudservices`
 
-* nesta seção:
+* Nesta seção:
 
    * um modelo de configuração
    * um componente de configuração
@@ -57,7 +53,7 @@ O modelo e o componente devem herdar o `sling:resourceSuperType` a partir do mod
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-ou componente base, respectivamente
+Ou componente base, respectivamente
 
 `cq/cloudserviceconfigs/components/configpage`
 
@@ -67,11 +63,11 @@ O provedor de serviços também deve fornecer a página de serviço:
 
 ### Modelo {#template}
 
-Seu modelo estenderá o modelo base:
+Seu modelo estende o modelo base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-e definir um `resourceType` que aponta para o componente personalizado.
+E definir um `resourceType` que aponta para o componente personalizado.
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -137,7 +133,7 @@ propertyname
 
 ### API {#api}
 
-Para obter a documentação de referência sobre a API, consulte [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Para obter a documentação de referência sobre a API, consulte [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### Integração com o AEM {#aem-integration}
 
@@ -176,7 +172,7 @@ A propriedade será criptografada automaticamente (usando o `CryptoSupport` serv
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Caminho de referência para um componente a ser incluído automaticamente na página.<br /> Isso é usado para funcionalidade adicional e inclusões de JS.<br /> Isso inclui o componente na página em que<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> está incluído (normalmente antes da <code>body</code> tag).<br /> No caso do Analytics e do Target, usamos isso para incluir funcionalidades adicionais, como chamadas JavaScript para rastrear o comportamento do visitante.</td>
+   <td>Caminho de referência para um componente a ser incluído automaticamente na página.<br /> Isso é usado para funcionalidade adicional e inclusões de JS.<br /> Isso inclui o componente na página em que<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> está incluído (normalmente antes da <code>body</code> tag).<br /> No caso do Adobe Analytics e do Adobe Target, usamos isso para incluir funcionalidades adicionais, como chamadas JavaScript para rastrear o comportamento do visitante.</td>
   </tr>
   <tr>
    <td>descrição</td>
@@ -217,10 +213,9 @@ A propriedade será criptografada automaticamente (usando o `CryptoSupport` serv
 
 Esses serviços são fornecidos por padrão:
 
-* [Trechos do rastreador](/help/sites-administering/external-providers.md) (Google, WebTrends etc.)
+* [Trechos do rastreador](/help/sites-administering/external-providers.md) (Google, WebTrends e outros)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
-
 <!-- Search&Promote is end of life as of September 1, 2022 * [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote) -->
 * [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 

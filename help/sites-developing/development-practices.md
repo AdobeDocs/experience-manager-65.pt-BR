@@ -1,25 +1,21 @@
 ---
 title: Práticas de desenvolvimento
-seo-title: Development Practices
-description: Práticas recomendadas para o desenvolvimento no AEM
-seo-description: Best practices for developing on AEM
-uuid: 27a75f7f-6e2c-4113-9e9f-c5013a4594c2
+description: Práticas recomendadas para desenvolvimento no Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
 
 # Práticas de desenvolvimento{#development-practices}
 
-## Trabalhar de acordo com uma definição de concluído {#work-according-to-a-definition-of-done}
+## Trabalhar de acordo com uma definição de concluído (DoD) {#work-according-to-a-definition-of-done}
 
 Cada equipe tem uma definição diferente do que &quot;feito&quot; significa, mas é importante ter uma e garantir que uma história atenda aos critérios definidos antes de ser aceita.
 
@@ -40,9 +36,9 @@ Coisas como níveis de recuo e espaço em branco podem não parecer importantes,
 
 ### Objetivo para cobertura de teste elevado  {#aim-for-high-test-coverage}
 
-À medida que a implementação de um projeto cresce em tamanho, também aumentará o tempo necessário para testá-la. Sem uma boa cobertura de testes, a equipe de testes não poderá ser dimensionada e os desenvolvedores acabarão sendo enterrados em erros.
+À medida que a implementação de um projeto cresce em tamanho, o mesmo acontece com a quantidade de tempo necessária para testá-la. Sem uma boa cobertura de testes, a equipe de testes não consegue escalar e os desenvolvedores eventualmente ficam enterrados em bugs.
 
-Os desenvolvedores devem praticar o TDD, escrevendo testes de unidade com falha antes do código de produção que atenderá a seus requisitos. O controle de qualidade deve criar um conjunto automatizado de testes de aceitação para garantir que o sistema funcione conforme o esperado de um alto nível.
+Os desenvolvedores devem praticar o TDD (Test Driven Development), gravando testes de unidade com falha antes do código de produção que atende aos requisitos. O controle de qualidade deve criar um conjunto automatizado de testes de aceitação para garantir que o sistema funcione conforme o esperado de um alto nível.
 
 Há estruturas personalizadas disponíveis, como Jackalope e Prosper, para tornar o zombamento de APIs JCR mais simples para garantir a produtividade dos desenvolvedores ao escrever testes de unidade.
 
@@ -52,15 +48,15 @@ O sistema deve estar disponível para demonstração aos negócios no final de c
 
 ### Implementar um ambiente de integração contínua e usá-lo {#implement-a-continuous-integration-environment-and-use-it}
 
-A implementação de um ambiente de integração contínua permitirá que você execute testes de unidade e de integração de maneira fácil e repetitiva. Ele também dissociará as implantações da equipe de desenvolvimento, permitindo que as outras partes da equipe sejam mais eficientes e possibilitando implantações mais estáveis e previsíveis.
+A implementação de um ambiente de integração contínua permite que você execute testes de unidade e de integração de forma fácil e repetitiva. Ele também desvincula as implantações da equipe de desenvolvimento, permitindo que as outras partes da equipe sejam mais eficientes e possibilitando implantações mais estáveis e previsíveis.
 
 ### Manter o ciclo de desenvolvimento rápido, mantendo os tempos de criação baixos {#keep-the-development-cycle-fast-by-keeping-build-times-low}
 
-Se os testes de unidade demorarem muito para serem executados, os desenvolvedores evitarão executá-los e perderão o valor. Se levar muito tempo para criar o código e implantá-lo, as pessoas o farão com menos frequência. Tornar os tempos de compilação curtos uma prioridade garante que o tempo investido em nossa cobertura de teste e infraestrutura de CI continue a tornar a equipe mais produtiva.
+Se os testes de unidade demorarem muito para serem executados, os desenvolvedores evitarão executá-los e perderão o valor. Se levar muito tempo para criar o código e implantá-lo, as pessoas o farão com menos frequência. Tornar os tempos de criação curtos uma prioridade garante que o tempo investido na cobertura de testes e na infraestrutura de CI continue a tornar a equipe mais produtiva.
 
 ### Ajuste o Sonar e outras ferramentas de análise de código estático e atue em seus relatórios {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
 
-As ferramentas de análise de código podem ser valiosas, mas somente se seus relatórios levarem à ação por parte da equipe de desenvolvimento. Sem o ajuste da análise fornecida por essas ferramentas, as recomendações geradas não serão relevantes e perderão seu valor.
+As ferramentas de análise de código podem ser valiosas, mas somente se seus relatórios levarem à ação por parte da equipe de desenvolvimento. Sem o ajuste da análise que essas ferramentas oferecem, as recomendações que geram tornam-se irrelevantes e perdem seu valor.
 
 ### Siga a regra do Scout Boy {#follow-the-boy-scout-rule}
 
@@ -68,4 +64,4 @@ O Menino Scout tem uma regra: &quot;Deixe-o melhor do que você encontrou.&quot;
 
 ### Evitar a implementação de recursos YAGNI {#avoid-implementing-yagni-features}
 
-Os recursos do YAGNI (ou Você não vai precisar) são itens que são implementados quando esperamos que precisemos de algo no futuro, mesmo que não precisemos disso agora. Idealmente, devemos implementar a coisa mais simples que funcionará hoje e usar a refatoração contínua para garantir que a arquitetura do sistema evolua com os requisitos ao longo do tempo. Isso nos permitirá focar no que é importante e evitar o aumento do código e a deformação de recursos.
+Os recursos do YAGNI (You Are&#39;t Gonna Need It) são itens que são implementados quando esperamos que precisemos de algo no futuro, mesmo que não precisemos disso agora. Idealmente, devemos implementar a coisa mais simples que funcionará hoje e usar a refatoração contínua para garantir que a arquitetura do sistema evolua com os requisitos ao longo do tempo. Isso nos permite focar no que é importante e evitar o aumento excessivo de código e a deformação de recursos.

@@ -1,18 +1,14 @@
 ---
 title: Mobile On-Demand
-seo-title: Mobile On-Demand
-description: Siga esta página para saber mais sobre as funções e responsabilidades do autor do AEM Mobile On-Demand Services.
-seo-description: Follow this page to learn about the roles and responsibilities for AEM mobile On-Demand services author.
-uuid: dd0184d8-1220-4f6a-96b2-acdb31caae17
+description: Siga esta página para saber mais sobre as funções e responsabilidades do autor do Adobe Experience Manager Mobile On-Demand Services.
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 2ae7ea8d-fc58-4647-bc83-915d9f4b7dd8
 exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '273'
 ht-degree: 4%
 
 ---
@@ -35,9 +31,9 @@ ht-degree: 4%
 
 ## Autor do AEM Mobile {#aem-mobile-author}
 
-Um ***AEM Author* (ou *Profissional de marketing*)**O usa modelos e componentes desenvolvidos de forma personalizada ou prontos para uso para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos no DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo). O editor de conteúdo integrado do AEM é usado pelo *Autores do AEM* para criar experiências ricas e relevantes no aplicativo, incluindo a integração com o restante da Adobe Marketing Cloud.
+Um ***AEM Author* (ou *Profissional de marketing*)**O usa modelos e componentes personalizados ou prontos para uso para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos no DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo). O editor de conteúdo integrado do AEM é usado pelo *Autores do AEM* para criar experiências ricas e relevantes no aplicativo, incluindo a integração com o restante da Adobe Experience Cloud.
 
-Um autor de AEM é responsável pelas seguintes tarefas ao criar um aplicativo usando os Serviços por demanda da AEM Mobile.
+Um autor de AEM é responsável pelas seguintes tarefas ao criar um aplicativo usando o AEM Mobile On-demand Services.
 
 **Criação de conteúdo AEM para aplicativo AEM Mobile On-demand Services** envolve as seguintes ações:
 
@@ -55,7 +51,6 @@ Para saber mais sobre **Serviços de conteúdo**, consulte [Visão geral dos ser
 >* [Modelos](/help/sites-developing/templates.md)
 >* [Componentes](/help/sites-developing/components.md)
 >
-
 
 ## Recursos adicionais {#additional-resources}
 

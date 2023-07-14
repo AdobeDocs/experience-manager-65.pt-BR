@@ -1,17 +1,13 @@
 ---
 title: Admin Console
-seo-title: Admin Consoles
 description: Saiba como usar os Admin Console disponíveis no AEM.
-seo-description: Lear how to use the Admin Consoles available in AEM.
-uuid: 82ab5267-2f2a-4772-85d5-678d883a0294
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
-source-git-commit: 729e5eb99b0c14f3d2fd8c3f4ec636f7fb52124f
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 2%
@@ -49,7 +45,7 @@ Neste exemplo, estamos reativando a IU Clássica para o console Sites.
 
    `enableDesktopOnly = {Boolean}true`
 
-1. A variável **Interface clássica** A opção está disponível novamente como uma opção de popover no admin console.
+1. A variável **Interface clássica** está disponível novamente como uma opção de popover no Admin Console.
 
    ![opção de popover da interface clássica](assets/syui-01-2019-02-27-15-16-55.png)
 

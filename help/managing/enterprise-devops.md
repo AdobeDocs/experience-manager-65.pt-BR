@@ -1,19 +1,15 @@
 ---
 title: DevOps empresarial
-seo-title: Enterprise DevOps
 description: Saiba mais sobre os processos, os métodos e a comunicação necessários para facilitar a implantação e simplificar a colaboração.
-seo-description: Learn about the processes, methods and communication required to ease deployment and simplify collaboration.
-uuid: ca4806d2-c845-4c18-9498-4b66f0980a5e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
-discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
 exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 93%
+source-wordcount: '983'
+ht-degree: 60%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 93%
 O DevOps abrange os processos, os métodos e a comunicação necessários para:
 
 * Facilitar a implantação do seu software nos vários ambientes.
-* Simplificar a colaboração entre as equipes de desenvolvimento, teste e implantação.
+* Simplifique a colaboração entre as equipes de desenvolvimento, teste e implantação.
 
 O DevOps tem como objetivo evitar problemas como:
 
@@ -47,13 +43,13 @@ Uma implantação do Adobe Experience Manager (AEM) geralmente consiste em vári
 
 ### Desenvolvimento {#development}
 
-Os desenvolvedores são responsáveis por desenvolver e personalizar o projeto proposto (seja sites, aplicativos móveis, implementação de DAM etc.), com todas as funcionalidades necessárias. Eles:
+Os desenvolvedores são responsáveis por desenvolver e personalizar o projeto proposto (seja site, aplicativos móveis, implementação de DAM e assim por diante), com todas as funcionalidades necessárias. Eles:
 
 * desenvolvem e personalizam os elementos necessários, como modelos, componentes, fluxos de trabalho, aplicativos
 * realizam o design
 * desenvolvem os serviços e scripts necessários para implementar a funcionalidade necessária
 
-A configuração do ambiente de [desenvolvimento](/help/sites-developing/best-practices.md) pode ser dependente de vários fatores, embora seja geralmente composta de:
+A configuração da variável [desenvolvimento](/help/sites-developing/best-practices.md) O ambiente pode depender de vários fatores, embora seja composto de:
 
 * Um sistema de desenvolvimento integrado com controle de versão para fornecer uma base de código integrada. Isso é usado para mesclar e consolidar o código dos ambientes de desenvolvimento individuais usados por cada desenvolvedor.
 * Um ambiente pessoal para cada desenvolvedor; geralmente residente em sua máquina local. Em intervalos adequados, o código é sincronizado com o sistema de controle de versão
@@ -66,10 +62,10 @@ Esse ambiente é usado pela equipe de controle de qualidade para [test](/help/si
 
 ### Estágios {#staging}
 
-O ambiente de preparação deve ser um espelho do ambiente de produção - configuração, código e conteúdo:
+O ambiente de preparo deve ser um espelho do ambiente de produção — configuração, código e conteúdo:
 
 * Ele é usado para testar os scripts usados para implementar a implantação real.
-* Ele pode ser usado para testes finais (design, funcionalidade e interfaces) antes da implantação em ambientes de produção.
+* Ele pode ser usado para testes finais (design, funcionalidade e interfaces) antes da implantação nos ambientes de produção.
 * Embora nem sempre seja possível ter o ambiente de armazenamento temporário idêntico ao ambiente de produção, ele deve ser o mais semelhante possível para permitir testes de carga e desempenho.
 
 ### Produção - Autor e publicação {#production-author-and-publish}
@@ -81,7 +77,7 @@ Um ambiente de produção consiste em pelo menos uma instância de autor e uma i
 * Uma instância de [autoria](#author) para a entrada de conteúdo.
 * Uma instância de [publicação](#publish) para o conteúdo disponibilizado para seus visitantes/usuários.
 
-Dependendo da escala do projeto, ele geralmente consiste em várias instâncias de autor e/ou publicação. Em um nível inferior, o repositório também pode ser agrupado em várias instâncias.
+Dependendo da escala do projeto, ele geralmente consiste em várias instâncias de autor, várias instâncias de publicação ou ambas. Em um nível inferior, o repositório também pode ser agrupado em várias instâncias.
 
 #### Autor {#author}
 
@@ -94,11 +90,11 @@ As instâncias de autor geralmente estão localizadas atrás do firewall interno
 
 O conteúdo que foi ativado é empacotado e colocado na fila de replicação do ambiente do autor. O processo de replicação transporta esse conteúdo ao ambiente de publicação.
 
-Para fazer a replicação reversa dos dados gerados em um ambiente de publicação de volta ao ambiente de autor, um ouvinte de replicação no ambiente de autor sondará o ambiente de publicação e recuperará esse conteúdo da caixa de saída de replicação reversa do ambiente de publicação.
+Para fazer a replicação reversa dos dados gerados em um ambiente de publicação de volta ao ambiente de autor, um ouvinte de replicação no ambiente de autor pesquisa o ambiente de publicação e recupera esse conteúdo da caixa de saída de replicação reversa do ambiente de publicação.
 
 #### Publicação {#publish}
 
-Um ambiente de publicação geralmente está localizado na Zona desmilitarizada (DMZ). Trata-se do ambiente em que os visitantes acessam seu conteúdo (por exemplo, por meio de um site ou de um aplicativo móvel) e interagem com ele, seja publicamente ou dentro da sua intranet. Um ambiente de publicação:
+Um ambiente de publicação está localizado na Zona desmilitarizada (DMZ). Trata-se do ambiente em que os visitantes acessam seu conteúdo (por exemplo, por meio de um site ou de um aplicativo móvel) e interagem com ele, seja publicamente ou dentro da sua intranet. Um ambiente de publicação:
 
 * mantém o conteúdo replicado do ambiente de autor
 * disponibiliza esse conteúdo para os visitantes
@@ -109,19 +105,19 @@ O ambiente de publicação gera seu conteúdo dinamicamente em tempo real, e o c
 
 ## Transferência do código {#code-movement}
 
-O código deve sempre ser propagado de baixo para cima:
+Sempre propagar o código de baixo para cima:
 
 * o código é desenvolvido inicialmente nos ambientes de desenvolvimento locais e depois integrados
 * seguido de testes completos nos ambientes de controle de qualidade
 * depois testado novamente nos ambientes de preparo
 * somente então esse código deve ser implantado nos ambientes de produção
 
-O código (por exemplo, modelos de design e funcionalidade de aplicativos Web personalizados) é geralmente transferido por meio da exportação e da importação de pacotes entre os diferentes repositórios de conteúdo. Quando significativo, essa replicação pode ser configurada como um processo automático.
+O código (por exemplo, funcionalidade de aplicativo web personalizado e modelos de design) é transferido por meio da exportação e da importação de pacotes entre os diferentes repositórios de conteúdo. Quando significativo, essa replicação pode ser configurada como um processo automático.
 
-Os projetos AEM geralmente acionam a implantação de código:
+Projetos AEM geralmente acionam a implantação de código:
 
 * Automaticamente: para transferência aos ambientes de desenvolvimento e controle de qualidade.
-* Manualmente: as implantações nos ambientes de preparação e produção são feitas de maneira mais controlada, geralmente manual, embora uma automação seja possível, se necessário.
+* Manualmente: as implantações nos ambientes de preparo e produção são feitas de maneira mais controlada, geralmente manual, embora a automação seja possível, se necessário.
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -135,11 +131,11 @@ O conteúdo de produção deve ser transferido do ambiente de produção ao ambi
 
 >[!NOTE]
 >
->Isso não significa que o conteúdo temporário precise ser continuamente sincronizado com o ambiente de produção. Atualizações regulares são suficientes, mas principalmente antes de testar uma nova iteração de código. O conteúdo nos ambientes de controle de qualidade e desenvolvimento não precisa ser atualizado com tanta frequência. Ele deve ser apenas uma boa representação do conteúdo do ambiente de produção.
+>Isso não significa que o conteúdo temporário precise ser continuamente sincronizado com a produção. Atualizações regulares são suficientes, mas principalmente antes de testar uma nova iteração de código. O conteúdo nos ambientes de controle de qualidade e desenvolvimento não precisa ser atualizado com tanta frequência. Ele deve ser uma boa representação do conteúdo de produção.
 
 O conteúdo pode ser transferido:
 
 * Entre os diferentes ambientes - exportando e importando pacotes.
-* Entre instâncias diferentes - por replicação direta ([Replicação do AEM](/help/sites-deploying/replication.md)) o conteúdo (usando uma conexão HTTP ou HTTPS).
+* Entre instâncias diferentes - por replicação direta ([Replicação do AEM](/help/sites-deploying/replication.md)), o conteúdo (usando uma conexão HTTP ou HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

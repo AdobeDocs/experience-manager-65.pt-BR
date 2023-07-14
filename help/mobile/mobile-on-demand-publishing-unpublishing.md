@@ -1,18 +1,14 @@
 ---
 title: Publicar e desfazer publicação de conteúdo
-seo-title: Publish UnPublish Content
 description: Quando estiver familiarizado com as ações de gerenciamento de conteúdo em artigos, banners e coleções, siga esta página para saber como publicar seu conteúdo. Além disso, você pode desfazer a publicação do conteúdo.
-seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
-uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '274'
 ht-degree: 1%
 
 ---
@@ -27,11 +23,11 @@ Depois de conhecer as ações de gerenciamento de conteúdo em artigos, banners 
 
 >[!NOTE]
 >
->Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) na Ajuda online.
+>Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) na Ajuda online.
 
 ## Publicar/desfazer publicação do conteúdo {#publishing-unpublishing-the-content}
 
-Isso é diferente de um &quot;AEM Publish&quot;. Não estamos enviando conteúdo para uma instância do servidor de publicação do AEM para torná-lo visível publicamente. Aqui, estamos informando ao Mobile On-Demand que o conteúdo selecionado deve ser tornado público no aplicativo ao vivo do Mobile On-Demand.
+Isso é diferente de um &quot;AEM Publish&quot;. Você não está enviando conteúdo para uma instância do servidor de publicação do AEM para torná-lo visível publicamente. Aqui, você está informando ao Mobile On-Demand que o conteúdo selecionado deve ser tornado público no aplicativo ao vivo do Mobile On-Demand.
 
 >[!NOTE]
 >
@@ -53,11 +49,9 @@ O fluxo de trabalho geral para publicar/desfazer a publicação de um artigo:
 
 ### Próximas etapas {#the-next-steps}
 
-Depois de saber como criar e publicar conteúdo, consulte
+Depois de saber como criar e publicar conteúdo, consulte o seguinte:
 
 * [Desenvolvimento de conteúdo AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administração de conteúdo para usar o AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-Ou ainda precisa aprender sobre os tópicos de criação, consulte
-
-[Criação de conteúdo AEM para aplicativos AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+Ou, se ainda quiser saber mais sobre os tópicos de criação, consulte [Criação de conteúdo AEM para aplicativos AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md).

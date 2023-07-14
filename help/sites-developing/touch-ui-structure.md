@@ -1,25 +1,21 @@
 ---
-title: Estrutura da interface habilitada para toque por AEM
-seo-title: Structure of the AEM Touch-Enabled UI
-description: A interface otimizada para toque, conforme implementada no AEM, tem vários princípios subjacentes e é composta de vários elementos-chave
-seo-description: The touch-optimized UI, as implemented in AEM, has several underlying principles and is made up of several key elements
-uuid: 9a255238-1adc-4a40-9c37-30cb53ffb26c
+title: Estrutura da interface do usuário habilitada para toque do Adobe Experience Manager
+description: A interface otimizada para toque, conforme implementada no Adobe Experience Manager, tem vários princípios subjacentes e é composta de vários elementos-chave
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
 
-# Estrutura da interface habilitada para toque por AEM{#structure-of-the-aem-touch-enabled-ui}
+# Estrutura da interface do usuário habilitada para toque do Adobe Experience Manager{#structure-of-the-aem-touch-enabled-ui}
 
-A interface habilitada para toque do AEM tem vários princípios subjacentes e é composta por vários elementos-chave:
+A interface habilitada para toque do Adobe Experience Manager (AEM) tem vários princípios subjacentes e é composta por vários elementos-chave:
 
 ## Consoles {#consoles}
 
@@ -33,7 +29,7 @@ Todos os módulos usam o mesmo layout básico; no AEM, isso pode ser visto como:
 
 O layout segue um estilo de design responsivo e se acomoda ao tamanho do dispositivo/janela que você está usando.
 
-Por exemplo, quando a resolução cai para menos de 1024px (como em um dispositivo móvel), a tela é ajustada de acordo:
+Por exemplo, quando a resolução cai para menos de 1024 px (como em um dispositivo móvel), a tela é ajustada de acordo:
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -58,7 +54,7 @@ Em qualquer local, a barra de ferramentas mostra as ações disponíveis no mome
 
 ![chlimage_1-145](assets/chlimage_1-145.png)
 
-Também depende de um recurso estar ou não selecionado:
+Também depende se um recurso está selecionado:
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -80,7 +76,7 @@ Ao criar páginas, as áreas estruturais são as seguintes.
 
 ### Quadro de conteúdo {#content-frame}
 
-O conteúdo da página é renderizado no quadro de conteúdo. O quadro de conteúdo é completamente independente do editor, para garantir que não haja conflitos devido ao CSS ou ao javascript.
+O conteúdo da página é renderizado no quadro de conteúdo. O quadro de conteúdo é independente do editor, para garantir que não haja conflitos devido ao CSS ou ao JavaScript.
 
 O quadro de conteúdo está na seção à direita da janela, na barra de ferramentas.
 
@@ -101,9 +97,9 @@ O quadro do editor é um contêiner (abstrato) para todas as *elementos de cria�
 
 ### Painel lateral {#side-panel}
 
-Ela contém duas guias padrão para permitir que você selecione ativos e componentes. Elas podem ser arrastadas daqui e soltas na página.
+Ela contém duas guias padrão que permitem selecionar ativos e componentes. Eles podem ser arrastados daqui e soltos na página.
 
-O painel lateral fica oculto por padrão. Quando selecionado, ele será mostrado no lado esquerdo ou deslizará para cobrir a janela inteira (quando o tamanho da janela estiver abaixo de uma largura de 1024px; como, por exemplo, em um dispositivo móvel).
+O painel lateral fica oculto por padrão. Quando selecionado, ele será mostrado no lado esquerdo ou deslizará para cobrir a janela inteira (quando o tamanho da janela estiver abaixo de uma largura de 1024 px; como, por exemplo, em um dispositivo móvel).
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
@@ -115,7 +111,7 @@ Na guia Ativos, é possível selecionar dentre uma variedade de ativos. Você ta
 
 ### Painel lateral - Grupos de ativos {#side-panel-asset-groups}
 
-Na guia Ativo há uma lista suspensa que você pode usar para selecionar os grupos de ativos específicos.
+Na guia Ativo, há uma lista suspensa que você pode usar para selecionar os grupos de ativos específicos.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -127,7 +123,7 @@ Na guia Componentes, é possível selecionar dentre uma variedade de componentes
 
 ### Sobreposições {#overlays}
 
-Eles sobrepõem o quadro de conteúdo e são usados pelo [camadas](#layer) para conhecer os mecanismos de como você pode interagir (de forma completamente transparente) com os componentes e seu conteúdo.
+Eles sobrepõem o quadro de conteúdo e são usados pelo [camadas](#layer) para conhecer os mecanismos de como você pode interagir (de forma transparente) com os componentes e seu conteúdo.
 
 As sobreposições ficam no quadro do editor (com todos os outros elementos de criação de página), embora elas realmente sobreponham os componentes apropriados no quadro de conteúdo.
 
@@ -146,7 +142,7 @@ O AEM vem com várias camadas já implementadas para a criação de páginas; in
 
 >[!NOTE]
 >
->As camadas são um conceito eficiente que afeta a visualização e a interação do usuário com o conteúdo da página. Ao desenvolver suas próprias camadas, é necessário garantir que a camada seja limpa ao sair.
+>As camadas são um conceito eficiente que afeta a visualização e a interação do usuário com o conteúdo da página. Ao desenvolver suas próprias camadas, você deve garantir que a camada seja limpa ao sair.
 
 ### Alternador de camada {#layer-switcher}
 
@@ -158,7 +154,7 @@ O alternador de camadas está disponível como uma lista suspensa na barra de fe
 
 ### Component Toolbar {#component-toolbar}
 
-Cada instância de um componente revelará sua barra de ferramentas quando clicado (uma vez ou com um clique duplo lento). A barra de ferramentas contém as ações específicas (por exemplo, copiar, colar, abrir editor) disponíveis para a instância do componente (Editável) na página.
+Cada instância de um componente revela sua barra de ferramentas quando clicado (uma vez ou com um clique duplo lento). A barra de ferramentas contém as ações específicas (por exemplo, copiar, colar, abrir editor) que estão disponíveis para a instância do componente (Editável) na página.
 
 Dependendo do espaço disponível, as barras de ferramentas do componente são posicionadas no canto superior ou inferior direito do componente apropriado.
 
@@ -166,6 +162,6 @@ Dependendo do espaço disponível, as barras de ferramentas do componente são p
 
 ## Informações adicionais {#further-information}
 
-Para obter mais detalhes sobre os conceitos sobre a interface habilitada para toque, continue no artigo [Conceitos da interface habilitada para toque por AEM](/help/sites-developing/touch-ui-concepts.md).
+Para obter mais detalhes sobre os conceitos da interface habilitada para toque, leia [Conceitos da interface habilitada para toque por AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Para obter mais informações técnicas, consulte a seção [Conjunto de documentação JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para o editor de páginas habilitado para toque.
+Para obter mais informações técnicas, consulte [Conjunto de documentação JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para o editor de páginas habilitado para toque.

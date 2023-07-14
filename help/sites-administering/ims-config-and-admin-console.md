@@ -1,20 +1,16 @@
 ---
-title: Autenticação do Adobe IMS e [!DNL Admin Console] Suporte para AEM Managed Services
-seo-title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
-description: Saiba como usar o [!DNL Admin Console] no AEM.
-seo-description: Learn how to use the [!DNL Admin Console] in AEM.
-uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
+title: Autenticação do Adobe IMS e [!DNL Admin Console] Suporte para Adobe Experience Manager Managed Services
+description: Saiba como usar o [!DNL Admin Console] no Adobe Experience Manager.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: fff35031eaf55b185870da56a0b66f9145b1ec41
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 10%
+source-wordcount: '1669'
+ht-degree: 9%
 
 ---
 
@@ -22,11 +18,11 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->Observe que esse recurso está disponível somente para clientes do Adobe Managed Services.
+>Esse recurso está disponível somente para clientes do Adobe Managed Services.
 
 >[!NOTE]
 >
->No momento, o AEM não oferece suporte à atribuição de grupos a perfis.  Em vez disso, os usuários devem ser adicionados individualmente.
+>Atualmente, o Adobe Experience Manager (AEM) não oferece suporte à atribuição de grupos a perfis. Em vez disso, os usuários devem ser adicionados individualmente.
 
 ## Introdução {#introduction}
 
@@ -90,9 +86,9 @@ Há três maneiras de integrar os usuários dependendo do tamanho do cliente e d
 
 #### Adição manual até [!DNL Admin Console] IU {#manual-addition-through-admin-console-ui}
 
-Usuários e grupos podem ser criados manualmente na [!DNL Admin Console] IU. Esse método pode ser usado se eles não tiverem um grande número de usuários para gerenciar. Por exemplo, um número de menos de 50 usuários de AEM.
+Usuários e grupos podem ser criados manualmente na [!DNL Admin Console] IU. Esse método pode ser usado se eles não tiverem muitos usuários para gerenciar. Por exemplo, menos de 50 usuários de AEM.
 
-Os usuários também podem ser criados manualmente se o cliente já estiver usando esse método para administrar outros produtos de Adobe, como aplicativos do Analytics, Target ou Creative Cloud.
+Os usuários também podem ser criados manualmente se o cliente já estiver usando esse método para administrar outros produtos de Adobe, como aplicativos Adobe Analytics, Adobe Target ou Adobe Creative Cloud.
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
@@ -104,7 +100,7 @@ Para facilitar a criação de usuários, um arquivo CSV pode ser carregado para 
 
 #### Ferramenta de sincronização de usuários {#user-sync-tool}
 
-A Ferramenta de sincronização de usuários (UST, User Sync Tool) permite que clientes corporativos criem ou gerenciem usuários de Adobe que utilizam o Ative Diretory ou outros serviços de diretório OpenLDAP testados. Os usuários de destino são Administradores de identidade de TI (Diretório corporativo e Administradores do sistema) que poderão instalar e configurar a ferramenta. A ferramenta de código aberto é personalizável para que os clientes possam solicitar que um desenvolvedor a modifique para atender a seus próprios requisitos específicos.
+A Ferramenta de sincronização de usuários (UST, User Sync Tool) permite que clientes corporativos criem ou gerenciem usuários de Adobe que usam o Ative Diretory ou outros serviços de diretório OpenLDAP testados. Os usuários de destino são Administradores de identidade de TI (Diretório corporativo e Administradores do sistema) que poderão instalar e configurar a ferramenta. A ferramenta de código aberto é personalizável para que os clientes possam solicitar que um desenvolvedor a modifique para se adequar aos seus próprios requisitos específicos.
 
 Quando a Sincronização de usuários é executada, ela obtém uma lista de usuários do Ative Diretory da organização (ou de qualquer outra fonte de dados compatível) e a compara com a lista de usuários na [!DNL Admin Console]. Em seguida, chama o Adobe [!DNL User Management] para que a [!DNL Admin Console] está sincronizado com o diretório da organização. O fluxo de alterações é totalmente unidirecional; as edições feitas no [!DNL Admin Console] não é enviado para o diretório.
 
@@ -176,7 +172,7 @@ O AEM pode continuar a oferecer suporte a logons locais para usuários Administr
 
 #### Logon baseado no IMS {#ims-based-login}
 
-Para outros usuários, o logon baseado no IMS pode ser usado assim que o IMS for configurado na instância. Primeiro, o usuário clicará no link **Entrar com o Adobe** conforme mostrado abaixo:
+Para outros usuários, o logon baseado no IMS pode ser usado assim que o IMS for configurado na instância. O usuário clica primeiro **Entrar com o Adobe** conforme mostrado abaixo:
 
 ![image2018-9-18_0-10-32](assets/image2018-9-18_0-10-32.png)
 
@@ -204,11 +200,11 @@ Esse utilitário será executado pela equipe do AMS como parte do provisionament
 
 ### Gerenciando permissões e ACLs no AEM {#managing-permissions-and-acls-in-aem}
 
-O controle de acesso e as permissões continuarão a ser gerenciados no AEM, isso pode ser feito usando a separação de Grupos de usuários provenientes do IMS( por exemplo AEM-GRP-008 no exemplo abaixo) e de grupos locais onde as permissões e o controle de acesso são definidos. Os grupos de usuários sincronizados do IMS podem ser atribuídos a grupos locais e herdar as permissões.
+O controle de acesso e as permissões continuarão a ser gerenciados no AEM, isso pode ser obtido usando a separação de Grupos de usuários provenientes do IMS (por exemplo, AEM-GRP-008 no exemplo abaixo) e de grupos locais onde as permissões e o controle de acesso são definidos. Os grupos de usuários sincronizados do IMS podem ser atribuídos a grupos locais e herdar as permissões.
 
 No exemplo abaixo, adicionamos grupos sincronizados ao grupo local *Dam_Users*, como exemplo.
 
-Aqui, um usuário também foi atribuído a alguns grupos no [!DNL Admin Console]. ( Observe que os usuários e grupos podem ser sincronizados do LDAP usando a ferramenta de sincronização de usuários ou criados localmente. Consulte a seção **Integração de usuários ao[!DNL Admin Console]** acima).
+Aqui, um usuário também foi atribuído a alguns grupos no [!DNL Admin Console]. (Os usuários e grupos podem ser sincronizados do LDAP usando a ferramenta de sincronização de usuários ou criados localmente. Consulte **Integração de usuários ao[!DNL Admin Console]** anterior).
 
 >[!NOTE]
 >

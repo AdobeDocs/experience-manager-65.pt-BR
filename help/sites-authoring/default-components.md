@@ -1,17 +1,15 @@
 ---
 title: Componentes padrão
 description: O Adobe Experience Manager vem com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites.
-uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 21%
+source-wordcount: '425'
+ht-degree: 18%
 
 ---
 
@@ -38,7 +36,7 @@ Você pode selecionar um componente e arrastá-lo até o local desejado na pági
 
 * [Editar conteúdo - Modo de tela cheia](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Para obter mais informações sobre como adicionar componentes a uma página, consulte o artigo [Editar Conteúdo da Página](/help/sites-authoring/editing-content.md).
+Para obter mais informações sobre como adicionar componentes a uma página, consulte [Editar conteúdo da página](/help/sites-authoring/editing-content.md).
 Os componentes são classificados de acordo com várias categorias chamadas grupos de componentes. Exemplos desses grupos de componentes incluem:
 
 * **We.Retail**: inclui os componentes principais intermediados por proxy para uso com a [Implementação de referência do We.Retail](/help/sites-developing/we-retail.md).
@@ -49,13 +47,13 @@ Os componentes são classificados de acordo com várias categorias chamadas grup
 
 ## Visão geral de todos os componentes {#overview-of-all-components}
 
-A variável [Console de componentes](/help/sites-authoring/default-components-console.md) fornece uma visão geral dos grupos de componentes e dos componentes fornecidos pela instalação do AEM. É possível visualizar as principais informações sobre os componentes individuais e seu uso.
+A variável [Console de componentes](/help/sites-authoring/default-components-console.md) fornece uma visão geral dos grupos de componentes e dos componentes que são fornecidos por sua instalação do AEM. É possível visualizar as principais informações sobre os componentes individuais e seu uso.
 
 ## Componentes - Áreas principais {#components-major-areas}
 
 As páginas a seguir fornecem links para algumas das informações adicionais importantes sobre os componentes do:
 
-* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) - Os Componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
+* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) - Os Componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornece tipos de conteúdo essenciais para criar páginas.
 
 * [Communities](/help/communities/author-communities.md) - Os componentes fornecem recursos interativos para um site, como fóruns e comentários. Muitos desses componentes são incluídos quando um [Site da comunidade](/help/communities/overview.md) é criado.
 

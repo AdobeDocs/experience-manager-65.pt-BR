@@ -1,18 +1,14 @@
 ---
 title: Comunidades de desenvolvimento
-seo-title: Developing Communities
-description: Crie e personalize recursos da comunidade, como fóruns, grupos de usuários e muito mais
-seo-description: Create and customize community features such as forums, user groups, and more
-uuid: 51dc54da-9090-4d36-adf9-72d5479062a5
+description: Crie e personalize recursos da comunidade, como fóruns, grupos de usuários e muito mais.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '391'
 ht-degree: 5%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 5%
 
 ## Visão geral {#overview}
 
-O AEM Communities simplifica a criação e a personalização de recursos da comunidade, como fóruns, grupos de usuários, blogs, perguntas e respostas, calendários, comentários, revisões, votos, classificações e atribuições. Esses recursos resultam em conteúdo gerado pelo usuário (UGC) sendo inserido no ambiente de publicação.
+As comunidades do Adobe Experience Manager (AEM) simplificam a criação e a personalização de recursos da comunidade, como fóruns, grupos de usuários, blogs, perguntas e respostas, calendários, comentários, revisões, votos, classificações e atribuições. Esses recursos resultam em conteúdo gerado pelo usuário (UGC) sendo inserido no ambiente de publicação.
 
 A fundação de um [site da comunidade](overview.md#communitiessites) é o [estrutura da componente social](scf.md) (SCF). A criação de um site da comunidade começa com a seleção de um [modelo do site da comunidade](sites-console.md) que é composto por [funções da comunidade](functions.md).
 
@@ -36,7 +32,7 @@ Para obter uma visão geral e tutoriais de introdução, visite:
 
 ## Implantações recomendadas {#recommended-deployments}
 
-* [Armazenamento de conteúdo da comunidade](working-with-srp.md): discute as opções de SRP disponíveis para um armazenamento comum de UGC
+* [Armazenamento de conteúdo da comunidade](working-with-srp.md): discute as opções de Provedor de Recursos Sociais (SRP) disponíveis para um armazenamento comum de UGC
 * [Topologias recomendadas para comunidades](topologies.md): discute topologias com base no caso de uso e na escolha do SRP
 
 ## Estrutura do componente social {#social-component-framework}
@@ -62,11 +58,11 @@ Os componentes, funções e recursos do AEM Communities fornecem os componentes 
 ## Membros da comunidade {#community-members}
 
 * [Gerenciar usuários e grupos de usuários](users.md)
-* [Logon social com a Facebook e o Twitter](social-login.md)
+* [Social Faça logon com o Facebook e o Twitter](social-login.md)
 
 ## Grupos de comunidades {#community-groups}
 
-[Grupos de comunidades](overview.md#communitygroups) é o conceito de permitir que membros da comunidade formem subcomunidades no site da comunidade. A criação de um grupo da comunidade pode ocorrer no ambiente de publicação ou criação.
+[Grupos de comunidades](overview.md#communitygroups) são o conceito de permitir que os membros da comunidade formem subcomunidades no site da comunidade. A criação de um grupo da comunidade pode ocorrer no ambiente de publicação ou criação.
 
 * [Fundamentos do grupo da comunidade](essentials-groups.md)
 * [Função Grupos](functions.md#groups-function)
@@ -92,7 +88,7 @@ Os componentes, funções e recursos do AEM Communities fornecem os componentes 
 
 ## Documentação de comunidades relacionadas {#related-communities-documentation}
 
-* Visita [Implantação de comunidades](deploy-communities.md) para saber mais sobre as implantações recomendadas e a configuração do dispatcher.
+* Visita [Implantação de comunidades](deploy-communities.md) para saber mais sobre implantações recomendadas e configuração do Dispatcher.
 
 * Visita [Administração dos sites das comunidades](administer-landing.md) para saber mais sobre como criar um site da comunidade, configurar modelos de site da comunidade, moderar o conteúdo da comunidade, gerenciar membros e configurar mensagens.
 
