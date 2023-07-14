@@ -1,5 +1,5 @@
 ---
-title: Nomeação de convenções de nós no repositório de conteúdo Jave
+title: Convenções de nomenclatura de nós no Repositório de conteúdo Java
 description: Os nós no repositório estão sujeitos às convenções de nomenclatura do Repositório de conteúdo Java
 uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
@@ -8,14 +8,14 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 8cfc42dc8fdf4dc0bfd3f002385f100c81b15993
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 7%
 
 ---
 
-# Convenções de nomenclatura{#naming-conventions}
+# Convenções de nomenclatura {#naming-conventions}
 
 Os nós no repositório estão sujeitos às convenções de nomenclatura da [Repositório de conteúdo Java](/help/sites-developing/the-basics.md#java-content-repository). No entanto, o AEM impõe mais convenções para o nome dos nós da página.
 

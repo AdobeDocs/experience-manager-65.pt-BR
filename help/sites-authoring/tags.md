@@ -1,5 +1,5 @@
 ---
-title: Utilização de tags para classificar conteúdo em um site
+title: Uso de tags
 description: As tags são um método rápido e fácil de classificar conteúdo em um site.
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
@@ -9,14 +9,15 @@ topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 8dafa901bc628ee5e4823e9f8811bf4d09b7e072
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 66%
+source-wordcount: '569'
+ht-degree: 67%
 
 ---
 
-# Uso de tags{#using-tags}
+
+# Uso de tags {#using-tags}
 
 As tags são um método rápido e fácil de classificar conteúdo em um site. As tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, um ativo ou outro conteúdo para permitir que as pesquisas localizem esse conteúdo e conteúdo relacionado.
 
@@ -54,7 +55,7 @@ Assim como com as páginas, você pode executar o seguinte em tags e namespaces:
 
 * Ativar tags individuais.
 
-   Assim como com as páginas, tags recém-criadas precisam ser ativadas antes de serem disponibilizadas no ambiente de publicação.
+  Assim como com as páginas, tags recém-criadas precisam ser ativadas antes de serem disponibilizadas no ambiente de publicação.
 
 >[!NOTE]
 >
