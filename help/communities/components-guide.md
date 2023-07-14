@@ -1,25 +1,21 @@
 ---
 title: Guia de componentes da comunidade
-seo-title: Community Components Guide
 description: Uma ferramenta de desenvolvimento interativa para começar a usar a estrutura de componente social (SCF)
-seo-description: An interactive development tool to get started with the social component framework (SCF)
-uuid: 120e56d1-b93c-4f92-bab4-6bb5e40e0ddf
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1181'
 ht-degree: 2%
 
 ---
 
 # Guia de componentes da comunidade  {#community-components-guide}
 
-O guia Componentes da comunidade é uma ferramenta de desenvolvimento interativa para a [estrutura da componente social (SCF)](scf.md). Ele fornece uma lista de componentes do AEM Communities disponíveis ou os recursos mais complexos criados com vários componentes.
+O guia Componentes da comunidade é uma ferramenta de desenvolvimento interativa para a [estrutura da componente social (SCF)](scf.md). Ele fornece uma lista de componentes disponíveis das Comunidades Adobe Experience Manager (AEM) ou os recursos mais complexos criados com vários componentes.
 
 Juntamente com as informações básicas de cada componente, o guia permite a experimentação de como os componentes/recursos do SCF funcionam e como eles podem ser configurados ou personalizados.
 
@@ -27,28 +23,28 @@ Para obter informações sobre os fundamentos de desenvolvimento relacionados a 
 
 ## Introdução {#getting-started}
 
-O guia deve ser usado em instalações de desenvolvimento de instâncias de autor (localhost:4502) e publicação (localhost:4503).
+O guia deve ser usado em instalações de desenvolvimento de instâncias de autor (localhost:4502) e instâncias de publicação (localhost:4503).
 
 O site Componentes da comunidade é acessado navegando até
 
 * [https://&lt;server>:&lt;port>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
 
-As interações com os componentes das Comunidades variam dependendo:
+As interações com os componentes das Comunidades variam de acordo com:
 
 * O servidor (autor ou publicação).
-* Se o visitante do site está ou não conectado.
+* Se o visitante do site está conectado ou não.
 * Se estiver conectado, os privilégios atribuídos ao membro.
-* Se o SRP padrão é ou não [JSRP](jsrp.md), está em uso.
+* Se o SRP padrão, [JSRP](jsrp.md), está em uso.
 
 No autor, para entrar no modo de edição, insira `editor.html` ou `cf#` como o primeiro segmento de caminho após o nome do servidor:
 
 * Interface do usuário padrão:
 
-   [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
+  [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
 * IU Clássica:
 
-   [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
+  [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
 >[!NOTE]
 >
@@ -86,7 +82,7 @@ O corpo principal do guia é exibido:
    * Se incluído, o texto exibido é: &quot;Este componente é incluído dinamicamente&quot;.
    * Se não puder ser incluído, o texto não será exibido
 
-1. Componente ou recurso de amostra: uma instância ativa do componente ou recurso. Se um componente, ele pode ser alterado com alterações feitas nos modelos, CSS e dados fornecidos na seção de guias.
+1. Componente ou recurso de amostra: uma instância ativa do componente ou recurso. Se for um componente, ele poderá ser alterado com as alterações feitas nos modelos, CSS e dados fornecidos na seção da guia.
 
 >[!NOTE]
 >
@@ -96,7 +92,7 @@ O corpo principal do guia é exibido:
 
 Ao usar o guia em uma instância do autor, é possível executar a configuração de um componente abrindo a caixa de diálogo. As informações para desenvolvedores são fornecidas no [Fundamentos de componentes e recursos](essentials.md) seção da documentação, enquanto as configurações da caixa de diálogo estão descritas em [Componentes das comunidades](author-communities.md) seção para autores.
 
-Para o guia Componentes da comunidade, algumas configurações da caixa de diálogo do componente são sobrepostas com o [Incluível](scf.md#add-or-include-a-communities-component) alternar estado. Para alternar entre o uso do recurso existente ou de um recurso incluído dinamicamente, no modo de edição, selecione o componente e o texto incluível e clique duas vezes para abrir a caixa de diálogo de edição:
+Para o guia Componentes da comunidade, algumas configurações da caixa de diálogo do componente são sobrepostas com a [Incluível](scf.md#add-or-include-a-communities-component) alternar estado. Para alternar entre o uso do recurso existente ou de um recurso incluído dinamicamente, no modo de edição, selecione o componente e o texto incluível e clique duas vezes para abrir a caixa de diálogo de edição:
 
 ![community-component3](assets/community-component3.png)
 
@@ -106,15 +102,15 @@ No **Modelos** guia:
 
 * **Incluir o componente-filho com sling:include**
 
-   Se desmarcado, o Guia de componentes usará o recurso existente no repositório (um nó jcr que é filho de um nó par).
+  Se desmarcado, o Guia de componentes usará o recurso existente no repositório (um nó jcr que é filho de um nó par).
 
    * o texto exibido é: &quot;Este componente é incluído por meio de seu nó par&quot;.
 
-   Se marcado, o Guia de componentes usará o sling para incluir dinamicamente um componente do resourceType do nó secundário (recurso não existente).
+  Se marcado, o Guia do componente usará o sling para incluir dinamicamente um componente do resourceType do nó secundário (recurso não existente).
 
    * o texto exibido é: &quot;Este componente é incluído dinamicamente.&quot;
 
-   O padrão está desmarcado.
+  O padrão está desmarcado.
 
 ### Publicar interações {#publish-interactions}
 
@@ -132,13 +128,13 @@ Para obter mais informações, visite [Clientlibs para componentes das comunidad
 
 ## Representação {#impersonation}
 
-Na instância do autor, onde um usuário está conectado com frequência como administrador ou desenvolvedor, para experimentar o componente conectado como outro usuário, use a caixa de texto à esquerda do **[!UICONTROL Representar]** para digitar o nome de usuário ou selecione na lista suspensa e clique no botão. Clique em Reverter para sair e finalizar a representação.
+Na instância do autor, onde um usuário está conectado com frequência como administrador ou desenvolvedor, para experimentar o componente conectado como outro usuário, use a caixa de texto à esquerda do **[!UICONTROL Representar]** para digitar o nome de usuário ou selecione na lista suspensa e clique no botão. Clique em Reverter para sair e encerrar a representação.
 
 A instância de publicação não precisa representar. Basta usar o link Login/Logout para representar vários usuários, como o [usuários de demonstração](tutorials.md#demo-users).
 
 ## Personalização {#customization}
 
-Quando ativado, cada componente do SCF está disponível para prototipar de possíveis personalizações, modificando temporariamente o modelo do componente, o CSS e os dados.
+Quando ativado, cada componente do SCF está disponível para prototipar de possíveis personalizações, modificando temporariamente o modelo, o CSS e os dados do componente.
 
 ### Habilitando a personalização {#enabling-customization}
 
@@ -169,7 +165,7 @@ Usando o componente de comentários como exemplo, na instância do autor ou de p
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
 
-1. Observe que agora há 3 guias para Modelos, CSS e Dados.
+1. Observe que agora há três guias para Modelos, CSS e Dados.
 
 ![community-component5](assets/community-component5.png)
 
@@ -197,4 +193,4 @@ Uma regra pode ser selecionada para realçar as partes do DOM que usam essa regr
 
 Selecione a guia Dados para mostrar os dados do ponto de extremidade .social.json. Esses dados são editáveis e são aplicados à instância do componente de amostra.
 
-Os erros de sintaxe podem ser marcados na medianiz, bem como realçados no editor.
+Os erros de sintaxe podem ser marcados na medianiz e destacados no editor.

@@ -1,19 +1,15 @@
 ---
 title: Fundamentos do fórum
-seo-title: Forum Essentials
 description: Visão geral do fórum
-seo-description: Forum overview
-uuid: 68849582-8742-40be-9e7e-0b574ae38815
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
 exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 2%
 
 ---
 
@@ -56,22 +52,22 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API do fórum](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
+* [API do fórum](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
-* [Endpoints do fórum](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
+* [Endpoints do fórum](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
 ### Função do fórum {#forum-function}
 
-Uma estrutura de site da comunidade que inclui o [Função Fórum](functions.md#forum-function), inclui um configurado `forum` componente, bem como configurações que afetam a moderação, a marcação e a tradução.
+Uma estrutura de site da comunidade que inclui o [Função Fórum](functions.md#forum-function), inclui um configurado `forum` e configurações que afetam moderação, marcação e tradução.
 
 ### Acessar publicações do fórum (UGC) {#accessing-forum-posts-ugc}
 
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
-A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do Adobe Experience Manager 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 

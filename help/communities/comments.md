@@ -1,17 +1,13 @@
 ---
 title: Uso de comentários
-seo-title: Using Comments
 description: O recurso Comentários permite que visitantes do site conectados compartilhem suas opiniões e conhecimentos
-seo-description: Comments feature lets signed-in site visitors share their opinions and knowledge
-uuid: 40acd962-846c-483c-b789-aab3a7d2b31b
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 6%
@@ -65,43 +61,43 @@ No **Comentários** especifique como os comentários são inseridos pelos visita
 
 * **Permitir respostas**
 
-   Quando marcado, permite que os membros respondam aos comentários existentes. O padrão está desmarcado.
+  Quando marcado, permite que os membros respondam aos comentários existentes. O padrão está desmarcado.
 
 * **Comentários por página**
 
-   Limita o número de comentários exibidos por página e o número de respostas exibidas. O padrão é 10.
+  Limita o número de comentários exibidos por página e o número de respostas exibidas. O padrão é 10.
 
 * **Permitir carregamento de arquivos**
 
-   Se marcada, a opção para carregar um arquivo é apresentada com a caixa de entrada de texto. O padrão está desmarcado.
+  Se marcada, a opção para carregar um arquivo é apresentada com a caixa de entrada de texto. O padrão está desmarcado.
 
 * **Tamanho máximo do arquivo**
 
-   Relevante somente se Permitir uploads de arquivo estiver marcado. Esse valor limita o tamanho do arquivo carregado. O limite padrão é de 10 MB.
+  Relevante somente se Permitir uploads de arquivo estiver marcado. Esse valor limita o tamanho do arquivo carregado. O limite padrão é de 10 MB.
 
 * **Comprimento máximo da mensagem de**
 
-   Número máximo de caracteres que podem ser inseridos na caixa de texto. O padrão é 4.096 caracteres.
+  Número máximo de caracteres que podem ser inseridos na caixa de texto. O padrão é 4.096 caracteres.
 
 * **Tipos de arquivos permitidos**
 
-   Relevante somente se Permitir uploads de arquivo estiver marcado. Uma lista separada por vírgulas de extensões de nome de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
+  Relevante somente se Permitir uploads de arquivo estiver marcado. Uma lista separada por vírgulas de extensões de nome de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
 
 * **Editor de rich text**
 
-   Se marcado, os comentários serão inseridos com marcação. O padrão está desmarcado.
+  Se marcado, os comentários serão inseridos com marcação. O padrão está desmarcado.
 
 * **Permitir votação**
 
-   Se marcada, a opção para votar para cima ou para baixo é apresentada com a caixa de entrada de texto. O padrão está desmarcado.
+  Se marcada, a opção para votar para cima ou para baixo é apresentada com a caixa de entrada de texto. O padrão está desmarcado.
 
 * **Permitir monitoramento**
 
-   Se marcado, permitir que os membros sigam os comentários. O padrão está desmarcado.
+  Se marcado, permitir que os membros sigam os comentários. O padrão está desmarcado.
 
 * **Exibir selos**
 
-   Se marcado, permite que medalhas ganhas e concedidas sejam exibidas. O padrão está desmarcado.
+  Se marcado, permite que medalhas ganhas e concedidas sejam exibidas. O padrão está desmarcado.
 
 #### Guia Moderação de usuário {#user-moderation-tab}
 
@@ -109,39 +105,39 @@ No **Moderação de usuário** especifique como os comentários publicados são 
 
 * **Pré-moderação**
 
-   Se marcados, os comentários devem ser aprovados antes de serem exibidos em um site de publicação. O padrão está desmarcado.
+  Se marcados, os comentários devem ser aprovados antes de serem exibidos em um site de publicação. O padrão está desmarcado.
 
 * **Excluir comentários**
 
-   Se marcado, o membro que postou o comentário recebe a capacidade de excluí-lo. O padrão está desmarcado.
+  Se marcado, o membro que postou o comentário recebe a capacidade de excluí-lo. O padrão está desmarcado.
 
 * **Negar comentários**
 
-   Se marcado, permite que os moderadores neguem comentários. O padrão está desmarcado.
+  Se marcado, permite que os moderadores neguem comentários. O padrão está desmarcado.
 
 * **Fechar/Reabrir comentários**
 
-   Se marcado, permite que os moderadores fechem e reabram os comentários. O padrão está desmarcado.
+  Se marcado, permite que os moderadores fechem e reabram os comentários. O padrão está desmarcado.
 
 * **Sinalizar comentários**
 
-   Se marcado, permite que os membros sinalizem comentários como inadequados. O padrão está desmarcado.
+  Se marcado, permite que os membros sinalizem comentários como inadequados. O padrão está desmarcado.
 
 * **Sinalizar lista de motivo**
 
-   Se marcado, permite que os membros escolham, em uma lista suspensa, o motivo para sinalizar um comentário como inapropriado. O padrão está desmarcado.
+  Se marcado, permite que os membros escolham, em uma lista suspensa, o motivo para sinalizar um comentário como inapropriado. O padrão está desmarcado.
 
 * **Motivo personalizado de sinalização**
 
-   Se marcado, permite que os membros insiram seu próprio motivo para sinalizar um comentário como inapropriado. O padrão está desmarcado.
+  Se marcado, permite que os membros insiram seu próprio motivo para sinalizar um comentário como inapropriado. O padrão está desmarcado.
 
 * **Limite de moderação**
 
-   Insira o número de vezes que um comentário deve ser marcado pelos membros antes que os moderadores sejam notificados. O padrão é uma vez (1).
+  Insira o número de vezes que um comentário deve ser marcado pelos membros antes que os moderadores sejam notificados. O padrão é uma vez (1).
 
 * **Limite de sinalização**
 
-   Insira o número de vezes que um comentário deve ser sinalizado antes de ser ocultado da visualização pública. Esse número deve ser maior ou igual ao **Limite de moderação**. O padrão é 5.
+  Insira o número de vezes que um comentário deve ser sinalizado antes de ser ocultado da visualização pública. Esse número deve ser maior ou igual ao **Limite de moderação**. O padrão é 5.
 
 #### Guia Configurações de classificação {#sort-settings-tab}
 
@@ -149,11 +145,11 @@ No **Configurações de classificação** especifique como os comentários publi
 
 * **Classificar campo**
 
-   Selecione um dos `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`ou `Most Liked`.
+  Selecione um dos `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`ou `Most Liked`.
 
 * **Ordem de classificação**
 
-   Selecione um dos `Ascending` ou `Descending`.
+  Selecione um dos `Ascending` ou `Descending`.
 
 ### Alterar para um tipo de comentário personalizado {#changing-to-a-custom-comment-type}
 
@@ -167,19 +163,19 @@ No **Tipos de recursos** especifique o resourceType personalizado para novas ins
 
 * **Tipo de recursos de comentários**
 
-   Navegue até o resourceType de uma extensão `comment` componente (comentário único) em /apps. Por exemplo, `/apps/social/commons/components/hbs/comments/comment`
+  Navegue até o resourceType de uma extensão `comment` componente (comentário único) em /apps. Por exemplo, `/apps/social/commons/components/hbs/comments/comment`
 
-   Esse recurso identifica o resourceType do UGC criado quando um visitante publica um comentário.
+  Esse recurso identifica o resourceType do UGC criado quando um visitante publica um comentário.
 
 * **Tipo de recursos para pesquisa**
 
-   Navegue até o resourceType de uma extensão `voting` componente em /apps. Por exemplo, `/apps/social/components/hbs/voting`
+  Navegue até o resourceType de uma extensão `voting` componente em /apps. Por exemplo, `/apps/social/components/hbs/voting`
 
-   Esse recurso identifica o tipo de recurso do UGC criado quando um visitante publica um voto.
+  Esse recurso identifica o tipo de recurso do UGC criado quando um visitante publica um voto.
 
 * **Tipo de recursos de comentários do sistema**
 
-   Navegue até o resourceType de uma extensão `comments`componente (Sistema de comentários) em /apps. Deixe em branco, a menos que o modelo de página [inclui dinamicamente](/help/communities/scf.md#add-or-include-a-communities-component) o Sistema de comentários no script subjacente, em vez de ser adicionado à página como um recurso (nó comentários). Saiba mais lendo sobre o [{{include}} auxiliar](/help/communities/handlebars-helpers.md#include).
+  Navegue até o resourceType de uma extensão `comments`componente (Sistema de comentários) em /apps. Deixe em branco, a menos que o modelo de página [inclui dinamicamente](/help/communities/scf.md#add-or-include-a-communities-component) o Sistema de comentários no script subjacente, em vez de ser adicionado à página como um recurso (nó comentários). Saiba mais lendo sobre o [{{include}} auxiliar](/help/communities/handlebars-helpers.md#include).
 
 ### Experiência de visitante do site {#site-visitor-experience}
 
