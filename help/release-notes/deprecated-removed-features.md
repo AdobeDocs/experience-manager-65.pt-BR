@@ -2,9 +2,9 @@
 title: Recursos obsoletos e removidos na versão Adobe Experience Manager 6.5.
 description: Notas de versão específicas para recursos obsoletos e removidos do Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 11e848d93964b5f8e45ccd7388a48953a3148e35
+source-git-commit: 9be9bb1706df750ede3f804012442bd73dc462ee
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1730'
 ht-degree: 13%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 13%
 
 A Adobe avalia as funcionalidades do produto constantemente, para reinventar ou substituir recursos mais antigos por alternativas mais modernas, de forma a melhorar o valor do cliente em geral, sempre sob considerações cuidadosas de compatibilidade com versões anteriores.
 
-Para comunicar a remoção ou substituição iminente dos recursos do AEM, as seguintes regras se aplicam:
+Para comunicar a remoção ou substituição iminente dos recursos do Adobe Experience Manager (AEM), as seguintes regras se aplicam:
 
 1. O anúncio sobre a descontinuidade é oferecido primeiro. Embora obsoletos, os recursos ainda estão disponíveis, mas não estão aprimorados.
 1. A remoção de recursos obsoletos ocorre na versão principal a seguir, o mais tardar. A data da remoção será anunciada.

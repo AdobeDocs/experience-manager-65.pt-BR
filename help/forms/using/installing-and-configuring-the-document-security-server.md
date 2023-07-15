@@ -8,9 +8,9 @@ contentOwner: khsingh
 discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
 role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ O recurso de segurança de documentos está disponível somente no AEM Forms no 
 
 O diagrama a seguir mostra a arquitetura típica da Segurança de documentos do AEM Forms:
 
-![](do-not-localize/document-security-typical-environment.png)
+![Ambiente típico de segurança de documentos](do-not-localize/document-security-typical-environment.png)
 
 ## Instalação do AEM Forms no JEE {#installing-aem-forms-on-jee}
 

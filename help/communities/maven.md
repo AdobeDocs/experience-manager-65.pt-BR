@@ -1,16 +1,12 @@
 ---
 title: Uso do Maven para comunidades
-seo-title: Using Maven for Communities
-description: AEM Uber API jar
-seo-description: AEM Uber API jar
-uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
+description: Adobe Experience Manager Uber API jar
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 exl-id: 3df90511-e43e-442b-bf73-44c22c1886b7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 ## Visão geral {#overview}
 
-Esta seção da documentação do AEM Communities é adicionada a:
+Esta seção da documentação das Comunidades Adobe Experience Manager (AEM) é adicionada a:
 
 * [Construção de projetos AEM usando Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
@@ -33,7 +29,7 @@ Há apenas um artefato &quot;uber&quot; que substitui artefatos individuais:
 >
 >A partir do AEM 6.4, as APIs do Communities não são lançadas explicitamente. Todas as APIs do Communities estão agora incluídas no próprio jar do Uber.
 >
->É recomendável manter-se atualizado com a versão mais recente do Communities.
+>Mantenha-se atualizado com a versão mais recente do Communities.
 >
 >Consulte [Versões mais recentes](deploy-communities.md#latest-releases) para identificar a versão mais recente.
 

@@ -11,16 +11,16 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '335'
 ht-degree: 2%
 
 ---
 
 # Atualização para o AEM 6.5 Forms{#upgrade-to-aem-forms}
 
-O AEM 6.5 Forms inclui vários novos recursos e melhorias que simplificam a criação, o gerenciamento e as experiências do usuário com formulários e correspondências. Para saber mais sobre todos os novos recursos e aprimoramentos do AEM 6.5 Forms, consulte [Documento de resumo dos novos recursos](../../forms/using/whats-new.md).
+O AEM 6.5 Forms inclui vários novos recursos e melhorias que simplificam a criação, o gerenciamento e as experiências do usuário com formulários e correspondências. Para saber mais sobre todos os novos recursos e melhorias do AEM 6.5 Forms, consulte [Documento de resumo dos novos recursos](../../forms/using/whats-new.md).
 
 Você pode atualizar sua instalação existente do LiveCycle ou do AEM Forms para obter novos recursos e melhorias oferecidos no AEM 6.5 Forms e, ao mesmo tempo, manter intactos os dados, processos e ativos existentes. Na atualização, os metadados e o estado dos processos também são preservados. Você pode escolher um caminho de atualização para começar a atualizar.
 
@@ -41,7 +41,7 @@ Você também pode executar uma atualização multi-hop de
 
 O diagrama a seguir exibe os caminhos de atualização disponíveis para o AEM Forms no JEE:
 
-![](do-not-localize/jee-upgrade-6-5.png)
+![Atualização do JEE 6.5](do-not-localize/jee-upgrade-6-5.png)
 
 Você pode executar uma atualização direta de:
 

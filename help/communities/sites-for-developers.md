@@ -1,19 +1,15 @@
 ---
 title: Fundamentos do site da comunidade
-seo-title: Community Site Essentials
 description: Exportação e exclusão de sites da comunidade e criação de modelos de site personalizados
-seo-description: Exporting and deleting community sites and creating custom site templates
-uuid: f0ec0e71-64e9-415a-b14a-939a9b1611c1
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 2%
+source-wordcount: '497'
+ht-degree: 1%
 
 ---
 
@@ -73,19 +69,19 @@ Identifique o modelo personalizado adicionando um `page-template` ao nó de conf
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Certifique-se de **Salvar tudo** e replique o código personalizado em todas as instâncias do AEM (o código personalizado não é incluído quando o conteúdo do site da comunidade é publicado no console).
+Certifique-se de **Salvar tudo** e replique o código personalizado em todas as instâncias do Adobe Experience Manager (AEM) (o código personalizado não é incluído quando o conteúdo do site da comunidade é publicado no console).
 
 A prática recomendada para replicar o código personalizado é [criar um pacote](../../help/sites-administering/package-manager.md#creating-a-new-package) e implantá-lo em todas as instâncias.
 
 ## Exportação de um site da comunidade {#exporting-a-community-site}
 
-Depois que um site da comunidade é criado, é possível exportá-lo como um pacote AEM armazenado no gerenciador de pacotes e disponível para download e upload.
+Depois que um site da comunidade é criado, é possível exportá-lo como um pacote AEM armazenado no Gerenciador de pacotes e disponível para download e upload.
 
 Isso está disponível no [Console de sites das comunidades](sites-console.md#exporting-the-site).
 
-Observe que o UGC e o código personalizado não estão incluídos no pacote do site da comunidade.
+O UGC e o código personalizado não estão incluídos no pacote do site da comunidade.
 
-Para exportar UGC, use o [Ferramenta de migração UGC do AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), uma ferramenta de migração de código aberto disponível no GitHub.
+Para exportar UGC, use o [Ferramenta de migração UGC do AEM Communities](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), uma ferramenta de migração de código aberto disponível no GitHub.
 
 ## Exclusão de um site da comunidade {#deleting-a-community-site}
 
@@ -105,7 +101,7 @@ Para identificar a ID exclusiva do site associada ao site da comunidade, usando 
 
 * A ID do site é o terceiro componente do `rep:principalName`
 
-   Por exemplo, se `rep:principalName = community-enable-nrh9h-members`
+  Por exemplo, se `rep:principalName = community-enable-nrh9h-members`
 
    * **nome do site** = *habilitar*
    * **ID do site** = *nrh9h*
@@ -113,9 +109,9 @@ Para identificar a ID exclusiva do site associada ao site da comunidade, usando 
 
 ### Conteúdo gerado pelo usuário {#user-generated-content}
 
-Obtenha o projeto communities-srp-tools do Github:
+Obtenha o projeto communities-srp-tools no GitHub:
 
-* [https://github.com/Adobe-Marketing-Cloud/communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/communities-srp-tools)
+* [https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
 
 Ele contém um servlet para excluir todo o UGC de qualquer SRP.
 
