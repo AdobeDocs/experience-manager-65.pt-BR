@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
-source-wordcount: '2066'
+source-wordcount: '2072'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ A personalização de um tema refere-se ao processo de modificação e personali
 
 ### Pré-requisitos para personalizar um tema {#prerequisites}
 
-* [Ativar os Componentes principais adaptáveis do Forms](/help/forms/using/installing-core-components.md) para o seu ambiente.
+* [Ativar os Componentes principais adaptáveis do Forms](/help/forms/using/enable-adaptive-forms-core-components.md) para o seu ambiente.
 
 * Instale a versão mais recente do [Apache Maven.](https://maven.apache.org/download.cgi) O Apache Maven é uma ferramenta de automação de build comumente usada para projetos Java™. A instalação da versão mais recente garante que você tenha as dependências necessárias para a personalização de temas.
 
@@ -145,20 +145,17 @@ A variável `variable.scss` arquivo contém as variáveis globais do tema. Ao at
 
 1. Abra o `<your-theme-sources>/src/site/_variables.scss` arquivo para edição.
 1. Altere o valor de qualquer propriedade. Por exemplo, a cor de erro padrão é vermelha. Para alterar a cor do erro de vermelho para azul, altere o código hexadecimal de cor do `$error`variável. Por exemplo, `$error: #196ee5`.
+
+   ![Exemplo: Cor de erro definida como azul](/help/forms/using/assets/theme-level-changes.png)
+
 1. Salvar e fechar o arquivo.
 
-<!--
-
-![Example: Error color set to blue](/help/forms/using/assets/variable-customization.png)
-
--->
 
 Da mesma forma, você pode usar o `variable.scss` arquivo para definir a família e o tipo de fonte, as cores do tema e da fonte, o tamanho da fonte, o espaçamento do tema, o ícone de erro, os estilos de borda do tema e mais as variáveis que afetam vários componentes do Formulário adaptável.
 
 ##### Definir estilos de nível de componente {#component-based-customization}
 
 Você também tem a opção de personalizar a fonte, a cor, o tamanho e outras propriedades CSS de componentes principais específicos do Formulário adaptável, como botões, caixas de seleção, contêineres, rodapés e muito mais. Ao editar o arquivo CSS associado ao componente específico, é possível alinhar o estilo com a marca da organização. Para personalizar o estilo de um componente, siga estas etapas:
-
 
 1. Abra o arquivo `<your-theme-sources>/src/components/<component>/<component.scss>` para edição. Por exemplo, para alterar a cor da fonte do componente de botão, abra a variável `<your-theme-sources>/src/components/button/button.scss`, arquivo .
 1. Altere o valor de qualquer de acordo com suas necessidades. Por exemplo, para alterar a cor do componente Botão ao passar o mouse para Verde, altere o valor de `color: $white` propriedade na `cmp-adaptiveform-button__widget:hover` classe para código hexadecimal #12b453 ou qualquer outro tom de verde. O código final é semelhante ao seguinte:
@@ -326,9 +323,9 @@ Para remover temas não utilizados ou indesejados:
 
 ## Consulte também:
 
-* [Criar um formulário adaptável baseado nos Componentes principais](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [Criar um formulário adaptável baseado nos Componentes principais](create-an-adaptive-form-core-components.md)
 * [Usar o editor de regras para adicionar comportamento dinâmico ao formulário](rule-editor.md)
 * [Criar ou personalizar temas para Componentes principais com base no Forms adaptável](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Criar um modelo para os Componentes principais com base no Forms adaptável](template-editor.md)
-* [Criar ou adicionar um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Criar ou adicionar um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 

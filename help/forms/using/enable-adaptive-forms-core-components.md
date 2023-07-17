@@ -8,7 +8,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 4%
@@ -150,6 +150,6 @@ Quando os Componentes principais do Forms adaptável estiverem ativados para seu
 ## O que vem a seguir
 
 * [Criar um formulário adaptável baseado nos Componentes principais](/help/forms/using/create-an-adaptive-form-core-components.md)
-* [Criar ou adicionar um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Criar ou adicionar um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Criar temas para Forms adaptável com base em Componentes principais](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Criar um modelo para os Componentes principais com base no Forms adaptável](template-editor.md)

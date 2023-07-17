@@ -9,7 +9,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
 source-wordcount: '1869'
 ht-degree: 3%
@@ -30,13 +30,13 @@ Antes de começar, saiba mais sobre o tipo de componentes do Forms disponíveis 
 
 * [Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR): Esses são componentes de captura de dados padronizados. Esses componentes fornecem recursos de personalização, tempo de desenvolvimento reduzido e custos de manutenção mais baixos para suas experiências de inscrição digital. Um desenvolvedor pode personalizar e estilizar facilmente esses componentes. A Adobe recomenda aproveitar esses componentes modernos e extensíveis para desenvolver o Adaptive Forms.
 
-* [Componentes adaptáveis do Forms Foundation](creating-adaptive-form.md): esses são componentes clássicos (antigos) da captura de dados. Você pode continuar a usá-los para editar seus componentes de base existentes com base no Formulário adaptável. Se você estiver criando formulários, o Adobe recomenda usar  [Componentes principais adaptáveis do Forms](creating-adaptive-form-core-components.md) para criar uma Forms adaptável.
+* [Componentes adaptáveis do Forms Foundation](creating-adaptive-form.md): esses são componentes clássicos (antigos) da captura de dados. Você pode continuar a usá-los para editar seus componentes de base existentes com base no Formulário adaptável. Se você estiver criando formulários, o Adobe recomenda usar  [Componentes principais adaptáveis do Forms](/help/forms/using/create-adaptive-form.md) para criar uma Forms adaptável.
 
 ## Pré-requisitos
 
 Você precisa do seguinte para criar um Formulário adaptável:
 
-* **Ativar os Componentes principais adaptáveis do Forms para o seu ambiente**: o projeto do Arquétipo AEM versão 41 ou posterior é necessário para [ativar os Componentes principais para o seu ambiente](/help/forms/using/installing-core-components.md). Ao ativar os Componentes principais para seu ambiente, a variável **Forms adaptável (componente principal)** O modelo e o tema da Tela de desenho são adicionados ao seu ambiente.
+* **Ativar os Componentes principais adaptáveis do Forms para o seu ambiente**: o projeto do Arquétipo AEM versão 41 ou posterior é necessário para [ativar os Componentes principais para o seu ambiente](/help/forms/using/enable-adaptive-forms-core-components.md). Ao ativar os Componentes principais para seu ambiente, a variável **Forms adaptável (componente principal)** O modelo e o tema da Tela de desenho são adicionados ao seu ambiente.
 
 * **Um modelo de formulário adaptável**: um modelo fornece uma estrutura básica e define a aparência (layouts e estilos) de um Formulário adaptável. Ele tem componentes pré-formatados que contêm determinadas propriedades e estrutura de conteúdo. Também fornece as opções para definir um tema e uma ação de envio. O tema define a aparência e a aparência, e a ação de envio define a ação a ser executada no envio de um Formulário adaptável. Por exemplo, enviar os dados coletados para uma fonte de dados. O modelo chamado `blank` O é compatível com OOTB:
 
@@ -46,7 +46,7 @@ Você precisa do seguinte para criar um Formulário adaptável:
 
   >[!NOTE]
   >
-  > Se você não tiver, **Forms adaptável (componente principal)** no seu ambiente, [Ativar os Componentes principais adaptáveis do Forms para o seu ambiente](/help/forms/using/installing-core-components.md). Ao ativar os Componentes principais para seu ambiente, a variável **Forms adaptável (componente principal)** O modelo é adicionado ao seu ambiente.
+  > Se você não tiver, **Forms adaptável (componente principal)** no seu ambiente, [Ativar os Componentes principais adaptáveis do Forms para o seu ambiente](/help/forms/using/enable-adaptive-forms-core-components.md). Ao ativar os Componentes principais para seu ambiente, a variável **Forms adaptável (componente principal)** O modelo é adicionado ao seu ambiente.
 
 * **Um tema de formulário adaptável**: um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é refletido nos componentes correspondentes.  A variável `Canvas` o tema é adicionado por padrão ao ativar os componentes principais para seu ambiente. Também é possível [baixar e personalizar os temas de referência](create-or-customize-themes-for-adaptive-forms-core-components.md).
 
@@ -91,7 +91,7 @@ Uma ação enviar permite escolher o destino dos dados capturados por meio de um
 
    ![Clique no ícone de chave inglesa para abrir a caixa de diálogo Contêiner de formulário adaptável para configurar uma ação de envio](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
-1. Selecionar e configurar um **[!UICONTROL Enviar ação]**, com base nas suas necessidades. Para obter informações detalhadas sobre Ações de Envio, consulte [Ação de envio do formulário adaptável](/help/forms/configuring-submit-actions.md)
+1. Selecionar e configurar um **[!UICONTROL Enviar ação]**, com base nas suas necessidades. Para obter informações detalhadas sobre Ações de Envio, consulte [Ação de envio do formulário adaptável](/help/forms/using/configuring-submit-actions.md)
 
 <!--
     
@@ -117,8 +117,8 @@ No envio de um formulário, você pode redirecionar o usuário para outra págin
 
 Você pode usar o Modelo de dados de formulário para conectar um formulário a uma Fonte de dados para enviar e receber dados com base nas ações do usuário. Você também pode conectar um formulário a um esquema JSON para receber os dados enviados em um formato predefinido. Com base no requisito, conecte seu formulário a um esquema JSON ou modelo de dados de formulário:
 
-* [Crie um esquema JSON e faça upload para o seu ambiente](/help/forms/adaptive-form-json-schema-form-model.md)
-* [Criar um modelo de dados de formulário](/help/forms/create-form-data-models.md)
+* [Crie um esquema JSON e faça upload para o seu ambiente](/help/forms/using/adaptive-form-json-schema-form-model.md)
+* [Criar um modelo de dados de formulário](/help/forms/using/create-form-data-models.md)
 
 ### Configurar um esquema JSON ou um modelo de dados de formulário para o formulário
 
@@ -141,7 +141,7 @@ Para configurar um Esquema JSON ou um Modelo de dados de formulário para seu fo
 
 Você pode usar o serviço de preenchimento prévio para preencher automaticamente os campos de um Formulário adaptável usando dados existentes. Quando um usuário abre um formulário, os valores desses campos são preenchidos previamente. É possível:
 
-* [Criar um serviço de preenchimento prévio personalizado](/help/forms/prepopulate-adaptive-form-fields.md)
+* [Criar um serviço de preenchimento prévio personalizado](/help/forms/using/prepopulate-adaptive-form-fields.md)
 * [Usar o serviço de preenchimento do modelo de dados de formulário](#fdm-prefill-service)
 
 ### Usar o serviço de preenchimento do modelo de dados de formulário para preencher previamente os campos de um formulário adaptável {#fdm-prefill-service}
@@ -171,6 +171,6 @@ Você pode usar o serviço de preenchimento do modelo de dados de formulário pa
 
 ## Consulte também:
 
-* [Criar um formulário adaptável baseado nos Componentes principais](/help/forms/using/create-an-adaptive-form-core-components.md)
-* [Criar ou adicionar um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Criar um formulário adaptável baseado nos Componentes principais](create-an-adaptive-form-core-components.md)
+* [Criar ou adicionar um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
