@@ -1,13 +1,11 @@
 ---
-title: Criação para Adobe PhoneGap Enterprise no AEM
+title: Criação para o Adobe PhoneGap Enterprise no Adobe Experience Manager
 description: PhoneGap
-uuid: 256a9f66-4c66-434c-be79-01be3c02d688
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 4%
@@ -22,7 +20,7 @@ ht-degree: 4%
 
 O Adobe Experience Manager (AEM) Mobile é apenas um pilar que compõe a plataforma completa do AEM.
 
-Para iniciar uma nova experiência de aplicativo AEM Mobile, é necessário ter várias funções antes que ela esteja pronta para edição de conteúdo. As seguintes funções fornecem um ponto de partida para a criação de um novo aplicativo do AEM Mobile:
+Para iniciar uma nova experiência de aplicativo AEM Mobile, é necessário ter várias funções antes que ela esteja pronta para edição de conteúdo. As seguintes funções fornecem um ponto de partida para a criação de um aplicativo do AEM Mobile:
 
 * **Administrador**
 * **Desenvolvedor**
@@ -39,7 +37,7 @@ Consulte os seguintes recursos para começar:
 * [Gerenciar mosaico do aplicativo](/help/mobile/phonegap-app-details-tile.md)
 * [Edição de metadados do aplicativo](/help/mobile/phonegap-editmetadata.md)
 * [Definições do aplicativo](/help/mobile/phonegap-app-definitions.md)
-* [Criação de um novo aplicativo AEM Mobile usando o assistente de criação](/help/mobile/phonegap-create-new-app.md)
+* [Criação de um aplicativo do AEM Mobile usando o assistente de criação](/help/mobile/phonegap-create-new-app.md)
 * [Importar um aplicativo híbrido existente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
 Para saber mais sobre **Serviços de conteúdo**, consulte [Visão geral dos serviços de conteúdo](/help/mobile/develop-content-as-a-service.md) para começar.

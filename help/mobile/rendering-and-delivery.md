@@ -1,17 +1,13 @@
 ---
 title: Renderização e entrega
-seo-title: Rendering and Delivery
 description: Renderização e entrega
-seo-description: null
-uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '580'
 ht-degree: 6%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 6%
 >
 >A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-O conteúdo do AEM pode ser facilmente renderizado via [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para renderizar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e outros formatos.
+O conteúdo do Adobe Experience Manager (AEM) pode ser facilmente renderizado por meio de [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para renderizar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e outros formatos.
 
 Essas renderizações prontas para uso normalmente orientam o repositório e retornam o conteúdo como está.
 
@@ -173,7 +169,7 @@ Os Content Services incluem duas configurações de exportação:
 
 #### Configuração de exportação padrão {#default-export-configuration}
 
-A configuração de exportação padrão dos Serviços de conteúdo será aplicada se uma configuração for especificada no URI solicitado.
+A configuração de exportação padrão do Content Services é aplicada se uma configuração for especificada no URI solicitado.
 
 &lt;resource>.caas[.&lt;depth-int>].json
 

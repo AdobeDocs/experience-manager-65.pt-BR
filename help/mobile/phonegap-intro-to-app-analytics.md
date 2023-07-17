@@ -1,18 +1,14 @@
 ---
 title: Acompanhe o desempenho do aplicativo com o Adobe Mobile Analytics
-seo-title: Track App Performance with Adobe Mobile Analytics
 description: Com o Adobe Mobile Services, você pode obter informações sobre como seus usuários estão usando seus aplicativos móveis rastreando o uso, falhas do aplicativo, detalhes do dispositivo e muitas outras métricas críticas para seus aplicativos móveis. Siga esta página para saber mais.
-seo-description: With Adobe Mobile Services you can gain insight on how your users are using your mobile apps by tracking usage, app crashes, device details and so many other critical metrics for your mobile apps. Follow this page to learn more.
-uuid: 139858c7-66a1-4fea-9f7e-4671b86f67e6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 377548fa-987a-4a59-84a3-067a3541b6b2
 exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -29,11 +25,11 @@ Você deseja proporcionar experiências relevantes e envolventes aos seus client
 
 O que seu aplicativo AEM Mobile está fazendo com suas campanhas de marketing?
 
-Como você pode ajustar seus aplicativos móveis para fornecer a melhor experiência aos seus usuários?
+Como você pode ajustar os aplicativos móveis para fornecer a melhor experiência aos seus usuários?
 
 Com o Adobe Mobile Services, você pode obter informações sobre como seus usuários estão usando seus aplicativos móveis rastreando o uso, falhas do aplicativo, detalhes do dispositivo e muitas outras métricas críticas para seus aplicativos móveis.
 
-O Adobe Experience Manager Mobile fornece uma visão geral dos detalhes da análise móvel diretamente do painel de aplicativos do AEM Mobile. A variável **Mosaico de métricas móveis** no painel fornece análises em tempo real para o aplicativo móvel, permitindo que desenvolvedores, autores e administradores tenham uma ideia rápida da integridade do aplicativo móvel. Nas capas que alimentam a análise está o [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK. O SDK do Adobe Mobile Analytics pode ser conectado aos seus aplicativos nativamente ou por meio de um plug-in PhoneGap Bridge para visualizações da Web. As métricas são coletadas e armazenadas em cache no dispositivo até que ele seja conectado, no qual os dados são enviados para a nuvem do Adobe Mobile Services para relatórios e análise.
+O Adobe Experience Manager Mobile fornece uma visão geral dos detalhes da análise móvel diretamente do painel de aplicativos do AEM Mobile. A variável **Mosaico de métricas móveis** no painel do fornece o Real-Time Analytics para seu aplicativo móvel, permitindo que desenvolvedores, autores e administradores tenham uma ideia rápida da integridade do seu aplicativo móvel. Nas capas, o poder da análise é o [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) SDK. O SDK do Adobe Mobile Analytics pode ser conectado aos seus aplicativos nativamente ou por meio de um plug-in PhoneGap Bridge para visualizações da Web. As métricas são coletadas e armazenadas em cache no dispositivo até que ele seja conectado, no qual os dados são enviados para a nuvem do Adobe Mobile Services para relatórios e análise.
 
 O SDK do Adobe Mobile Analytics fornece o seguinte:
 
@@ -56,19 +52,19 @@ Por último, [Administradores de AEM](#administrators) saiba como:
 
 ## Para desenvolvedores - Integre o Analytics ao seu aplicativo {#for-developers-integrate-analytics-into-your-app}
 
-**Pré-requisito:** Administradores de AEM precisam configurar a configuração de nuvem do Adobe Mobile Services, [conforme discutido abaixo](#amscloudserviceconfig).
+**Pré-requisito:** Os administradores de AEM devem configurar a configuração de nuvem do Adobe Mobile Services, [conforme discutido abaixo](#amscloudserviceconfig).
 
 Os desenvolvedores são responsáveis por [adicionar o analytics a um aplicativo AEM Mobile](/help/mobile/phonegap-add-analytics-to-apps.md) conforme necessário para rastrear, relatar e entender como os usuários se envolvem com o conteúdo do aplicativo móvel e medir as principais métricas de ciclo de vida, como inicializações, tempo no aplicativo e taxa de falha.
 
 ## Para administradores - Configurar o Cloud Service do Adobe Mobile Services {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
 
-Para aproveitar as vantagens do Adobe Mobile Services, é necessário configurar o Cloud Service AEM Adobe Mobile Services com as informações de sua conta Adobe Analytics. O Centro de comando dos aplicativos fornece uma **Analisar métricas** bloco, onde é possível criar e associar o serviço em nuvem ao aplicativo móvel.
+Para aproveitar as vantagens do Adobe Mobile Services, você deve configurar o Cloud Service AEM Adobe Mobile Services com as informações de sua conta Adobe Analytics. O Centro de comando dos aplicativos fornece uma **Analisar métricas** bloco, onde é possível criar e associar o serviço em nuvem ao aplicativo móvel.
 
-A configuração do serviço em nuvem para o aplicativo móvel começa clicando no ícone de engrenagem localizado no bloco Analisar métricas.
+A configuração do serviço em nuvem para o aplicativo móvel começa clicando no ícone de engrenagem no bloco Analisar métricas.
 
 ![chlimage_1-125](assets/chlimage_1-125.png)
 
-Clicar no ícone de engrenagem no bloco Analisar métricas abrirá a caixa de diálogo modal &quot;Configurar análise do Mobile Services&quot;. Selecione sua configuração na lista suspensa &quot;Selecionar uma configuração do serviço móvel&quot;. Se precisar criar uma nova configuração, clique na chave inglesa.
+Clicar no ícone de engrenagem no bloco Analisar métricas abre a caixa de diálogo modal &quot;Configurar análise do Mobile Services&quot;. Selecione sua configuração na lista suspensa &quot;Selecionar uma configuração do serviço móvel&quot;. Se precisar criar uma configuração, clique na chave inglesa.
 
 Para criar um serviço em nuvem do Adobe Mobile Service, há duas etapas envolvidas: a conexão com o serviço e a seleção do conjunto de relatórios a ser atribuído à configuração.
 
@@ -76,11 +72,11 @@ Para começar, clique no botão &quot;+&quot; no bloco Gerenciar Cloud Services 
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
-Ao clicar no ícone &#39;**+** botão &#39;, o botão **Adicionar Cloud Service** será exibido.
+Depois de clicar no ícone &#39;**+** botão &#39;, o botão **Adicionar Cloud Service** será exibido.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Selecione ou crie uma nova configuração de serviço para dispositivos móveis preenchendo os campos obrigatórios conforme mostrado abaixo. O administrador do AEM precisará dessas informações para criar com êxito a conexão com o Adobe Mobile Services.
+Selecione ou crie uma nova configuração de serviço para dispositivos móveis preenchendo os campos obrigatórios conforme mostrado abaixo. O administrador do AEM requer essas informações para criar com êxito a conexão com o Adobe Mobile Services.
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
@@ -88,25 +84,25 @@ Após concluir as Configurações da conta do Mobile Services, você será solic
 
 Selecione o serviço para dispositivos móveis desejado e clique em &quot;Atualizar&quot; para atribuir a configuração do serviço para dispositivos móveis e fechar a caixa de diálogo.
 
-Agora que você associou a configuração do serviço para dispositivos móveis ao aplicativo AEM Mobile, o bloco começará a buscar os dados de métrica e a começar a criar relatórios.
+Agora que você associou a configuração do serviço para dispositivos móveis ao aplicativo AEM Mobile, o bloco começa a buscar os dados da métrica e começar a criar relatórios.
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
 ### Arquivo de configuração SDK do Adobe Mobile Services {#adobe-mobile-services-sdk-config-file}
 
-Neste ponto, o aplicativo móvel está associado a um serviço na nuvem, no entanto, o aplicativo móvel ainda não sabe como comunicar as métricas móveis coletadas de volta ao Adobe Analytics. Para conectar o aplicativo móvel ao Adobe Analytics, o arquivo de configuração SDK do Adobe Mobile Services precisa ser adicionado ao Adobe Experience Manager.
+Neste ponto, o aplicativo móvel está associado a um serviço na nuvem, no entanto, o aplicativo móvel ainda não sabe como comunicar as métricas móveis coletadas de volta ao Adobe Analytics. Para conectar o aplicativo móvel ao Adobe Analytics, o arquivo de configuração SDK do Adobe Mobile Services deve ser adicionado ao Adobe Experience Manager.
 
 No bloco Analisar métricas, clique no ícone de seta para expor as entradas do menu Baixar/Fazer upload da configuração do SDK AMS.
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-A primeira etapa é obter a Configuração do SDK do Adobe Mobile Services. Ao clicar em &quot;Baixar configuração do SDK do AMS&quot;, você será redirecionado para o site do Adobe Mobile Services em que é possível baixar o arquivo de configuração. Depois de obter o arquivo ADBMobileConfig.json, clique em &quot;Fazer upload da configuração do SDK AMS&quot; para fazer upload do arquivo de configuração no AEM.
+A primeira etapa é obter a configuração do SDK no Adobe Mobile Services. Clique em &quot;Baixar configuração de SDK AMS&quot; para ser redirecionado para o site do Adobe Mobile Services de onde você pode baixar o arquivo de configuração. Depois de obter o arquivo ADBMobileConfig.json, clique em &quot;Fazer upload da configuração do SDK AMS&quot; para fazer upload do arquivo de configuração no AEM.
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
 
 Clique no botão &quot;Fazer upload da configuração do aplicativo para Adobe Mobile Services&quot;, procure o arquivo ADBMobileConfig.json e clique em &quot;Fazer upload&quot;.
 
-Agora que o aplicativo móvel tem acesso ao arquivo ADBMobileConfig.json, ele tem o conhecimento sobre como se comunicar com o Adobe Analytics e começar a relatar o valor dessas métricas importantes que ajudarão a impulsionar o sucesso de seus aplicativos.
+Agora que o aplicativo móvel tem acesso ao arquivo ADBMobileConfig.json, ele tem o conhecimento sobre como se comunicar com o Adobe Analytics e começar a relatar o valor das métricas importantes que ajudam a impulsionar o sucesso de seus aplicativos.
 
 ## O que vem a seguir? {#what-s-next}
 

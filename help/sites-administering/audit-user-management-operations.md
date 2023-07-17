@@ -1,44 +1,40 @@
 ---
-title: Como auditar operações de gerenciamento de usuários no AEM
-seo-title: How to Audit User Management Operations in AEM
-description: Saiba como auditar Operações de gerenciamento de usuários no AEM.
-seo-description: Learn how to audit User Management Operations in AEM.
-uuid: 9d177afb-172c-4858-a678-254c97cfa472
+title: Como auditar operações de gerenciamento de usuários no Adobe Experience Manager
+description: Saiba como auditar operações de gerenciamento de usuários no Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 1%
+source-wordcount: '300'
+ht-degree: 2%
 
 ---
 
-# Como auditar operações de gerenciamento de usuários no AEM{#how-to-audit-user-management-operations-in-aem}
+# Como auditar operações de gerenciamento de usuários no Adobe Experience Manager (AEM) {#how-to-audit-user-management-operations-in-aem}
 
 ## Introdução {#introduction}
 
-O AEM introduziu a capacidade de registrar alterações de permissão para que possam ser auditadas posteriormente.
+O AEM introduziu a capacidade de registrar alterações de permissão para que você possa auditá-las posteriormente.
 
-O aprimoramento permite a auditoria de ações CRUD (Criar, Ler, Atualizar, Excluir) em permissões e atribuições de grupo de usuários. Mais especificamente, registrará:
+O aprimoramento permite a auditoria de ações CRUD (Criar, Ler, Atualizar, Excluir) em permissões e atribuições de grupo de usuários. Mais especificamente, registra:
 
 * Um novo usuário sendo criado
 * Um usuário sendo adicionado a um grupo
 * Alterações de permissão de um usuário ou grupo existente
 
-Por padrão, as entradas serão gravadas na variável `error.log` arquivo. Para facilitar o monitoramento, é recomendável que eles sejam redirecionados para um arquivo de log separado. Mais informações sobre como fazer isso estão no parágrafo abaixo.
+Por padrão, as entradas são gravadas na variável `error.log` arquivo. Para facilitar o monitoramento, é recomendável que eles sejam redirecionados para um arquivo de log separado. Mais informações sobre como fazer isso estão no parágrafo abaixo.
 
 ## Redirecionando a saída para um arquivo de log separado {#redirecting-the-output-to-a-separate-log-file}
 
-Para redirecionar a saída de registro para um arquivo de registro separado, será necessário criar um novo **Logger do Apache Sling** configuração. Usaremos `useraudit.log` como o nome do arquivo separado no exemplo abaixo.
+Para redirecionar a saída de registro para um arquivo de registro separado, crie um **Logger do Apache Sling** configuração. Vamos usar `useraudit.log` como o nome do arquivo separado no exemplo abaixo.
 
 1. Acesse o Console da Web navegando até *https://serveraddress:serverport/system/console/configMgr*
-1. Pesquisar por **Configuração do logger de log do Apache Sling**. Em seguida, pressione o sinal &quot;+&quot; no lado direito da entrada para criar uma nova configuração de fábrica.
+1. Pesquisar por **Configuração do logger de log do Apache Sling**. Em seguida, pressione o sinal &quot;+&quot; no lado direito da entrada para criar uma configuração de fábrica.
 1. Crie a seguinte configuração:
 
    * **Nível de log:** Informações
@@ -46,9 +42,9 @@ Para redirecionar a saída de registro para um arquivo de registro separado, ser
    * **Padrão de mensagem:** padrão de nível
    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Para inserir ambos os registradores na variável **Logger** , você precisa inserir o nome do primeiro e, em seguida, criar outro campo pressionando o botão &quot;+&quot; e inserindo o nome do segundo agente de log.
+   Para inserir ambos os registradores na variável **Logger** , você deve inserir o nome do primeiro e, em seguida, criar outro campo pressionando o botão &quot;+&quot; e inserindo o nome do segundo agente de log.
 
-## Exemplo de saída {#example-output}
+## Saída de exemplo {#example-output}
 
 Se configurada corretamente, a saída deverá ter esta aparência:
 

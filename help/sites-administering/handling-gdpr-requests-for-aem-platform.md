@@ -1,20 +1,16 @@
 ---
-title: Lidar com solicitações do GDPR para a Fundação AEM
-seo-title: Handling GDPR Requests for the AEM Foundation
-description: Lidar com solicitações do GDPR para a Fundação AEM
-seo-description: null
-uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
+title: Lidar com solicitações do GDPR para o Adobe Experience Manager Foundation
+description: Lidar com solicitações do GDPR para o Adobe Experience Manager Foundation
 contentOwner: sarchiz
-discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 55%
+source-wordcount: '436'
+ht-degree: 43%
 
 ---
 
-# Lidar com solicitações do GDPR para a Fundação AEM{#handling-gdpr-requests-for-the-aem-foundation}
+# Lidar com solicitações do GDPR para a base do Adobe Experience Manager (AEM){#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
@@ -42,7 +38,7 @@ No nível da Fundação AEM, os Dados Pessoais armazenados são o Perfil do Usu�
 
 ### API HTTP {#http-api}
 
-Como mencionado, a Adobe fornece APIs para acessar dados do usuário, a fim de facilitar a automação. Há vários tipos de APIs que você pode usar:
+Como mencionado, o Adobe fornece APIs para acessar dados do usuário, para facilitar a automação. Há vários tipos de APIs que você pode usar:
 
 **API UserProperties**
 
@@ -76,17 +72,17 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Desativar usuário {#disable-user}
 
 1. Abra o console Administração do usuário e procure o usuário em questão, conforme descrito acima.
-1. Passe o mouse sobre o usuário e clique no ícone de seleção. O perfil ficará cinza, indicando que está selecionado.
+1. Passe o mouse sobre o usuário e clique no ícone de seleção. O perfil fica cinza, indicando que está selecionado.
 
 1. Pressione o botão Desativar no menu superior para desativar o usuário:
 
    ![userdisable](assets/userdisable.png)
 
-1. Por fim, confirme a ação:
+1. Por último, confirme a ação:
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   A interface do usuário indicará que o usuário foi desativado ao esmaecer e adicionar um bloqueio ao cartão de perfil:
+   A interface do usuário indica que o usuário é desativado ao esmaecer e adicionar um bloqueio ao cartão de perfil:
 
    ![disableduser](assets/disableduser.png)
 
@@ -109,7 +105,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### API HTTP {#http-api-1}
 
-Os procedimentos a seguir usam a ferramenta de linha de comando `curl` para ilustrar como desativar o usuário com a **[!UICONTROL cavery]** `userId` e excluir seus perfis disponíveis no local padrão.
+Os procedimentos a seguir usam o `curl` de linha de comando para ilustrar como desativar o usuário com a tag **[!UICONTROL cavery]** `userId` e excluir perfis de `cavery` que estão disponíveis no local padrão.
 
 * *Descobrir a página inicial do usuário*
 
@@ -126,7 +122,7 @@ Usando o caminho do nó da propriedade home da carga JSON retornada do comando a
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (GDPR in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
 ```
 
-* *Excluir perfil(s) de usuário*
+* *Exclusão de perfis de usuário*
 
 Usando o caminho do nó da propriedade home da carga JSON retornada do comando de descoberta de conta e os locais dos nós de perfil, conhecidos e prontos para uso:
 

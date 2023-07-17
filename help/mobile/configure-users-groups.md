@@ -1,16 +1,14 @@
 ---
 title: Configurar usuários e grupos de usuários
 description: Siga esta página para entender as funções de usuário e como configurar seus usuários e grupos para oferecer suporte à criação e ao gerenciamento de seus aplicativos móveis.
-uuid: 55cea2b3-d7e6-4174-92b3-ee97e46b59c4
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
-discoiquuid: 167f3bd9-7dbc-4e6b-9868-3ee53935641b
 exl-id: 9f814204-8cd4-4ba9-9e25-3ff1b25c1955
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -36,7 +34,7 @@ Os membros do grupo de autores do aplicativo são responsáveis pela criação d
 
 #### Configuração de grupo - autores do aplicativo {#group-configuration-app-authors}
 
-1. Crie um novo grupo de usuários chamado &quot;autores-aplicativos&quot;:
+1. Crie um grupo de usuários chamado &quot;autores-aplicativos&quot;:
 
    Navegue até o Admin Console do usuário: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
@@ -59,9 +57,10 @@ Os membros do grupo de autores do aplicativo são responsáveis pela criação d
 1. Navegue até a [Console de permissões](http://localhost:4502/useradmin) e adicionar permissões para administrar o cloudservices
 
    * (Leitura) em /etc/cloudservices
+
    >[!NOTE]
    >
-   >Os autores do aplicativo estendem o grupo padrão de autores de conteúdo (autores) do AEM, herdando a capacidade de criar conteúdo em /content/phonegap
+   >Os autores do aplicativo estendem o grupo padrão de autores de conteúdo (autores) do AEM, para que eles herdem a capacidade de criar conteúdo em /content/phonegap
 
 ### Grupo de administradores de aplicativos AEM Mobile (grupo de administradores de aplicativos) {#aem-mobile-application-administrators-group-app-admins-group}
 
@@ -74,11 +73,11 @@ Os membros do grupo de administradores de aplicativos podem criar conteúdo de a
 >
 >As permissões determinam a disponibilidade de algumas ações do usuário no Centro de comando do aplicativo AEM.
 >
->Você observará que algumas opções não estão disponíveis para autores de aplicativos que estão disponíveis para administradores de aplicativos.
+>Observe que algumas opções não estão disponíveis para autores de aplicativos que estão disponíveis para administradores de aplicativos.
 
 #### Configuração de grupo - app-admins {#group-configuration-app-admins}
 
-1. Crie um novo grupo chamado administradores de aplicativos.
+1. Crie um grupo chamado administradores de aplicativos.
 1. Adicione os seguintes grupos ao novo grupo de administradores de aplicativos:
 
    * autores de conteúdo
@@ -112,14 +111,14 @@ Os membros do grupo de administradores de aplicativos podem criar conteúdo de a
 
 Os blocos de painéis podem expor ações diferentes com base nas permissões que o usuário tem. As informações a seguir descrevem quais ações estão disponíveis para cada bloco.
 
-Além dessas permissões, uma ação também pode ser exibida/ocultada com base em como o aplicativo atual é configurado. Por exemplo, não há razão para expor a ação &quot;Compilação remota&quot;, se uma configuração de nuvem do PhoneGap não tiver sido atribuída ao aplicativo. Eles serão listados abaixo em &quot;**Condição de configuração**&#39; seções.
+Além dessas permissões, uma ação também pode ser exibida/ocultada com base em como o aplicativo atual é configurado. Por exemplo, não há razão para expor a ação &quot;Compilação remota&quot;, se uma configuração de nuvem do PhoneGap não tiver sido atribuída ao aplicativo. Eles estão listados abaixo em &#39;**Condição de configuração**&#39; seções.
 
 ### Gerenciar mosaico do aplicativo {#manage-app-tile}
 
 No momento, o bloco não tem ações que exigem permissões. No entanto, a página de detalhes do aplicativo tem as seguintes ações:
 
 * *Editar* para autor e administrador de aplicativos (Acionador da interface do usuário - jcr:write - on /content/phonegap/{suffix})
-* *Baixar* para app-author e app-admin (Acionador da interface do usuário - em /content/phonegap/{suffix})
+* *Baixar* para autor e administrador do aplicativo (Acionador da interface do usuário - ativado /content/phonegap/{suffix})
 
 A imagem abaixo mostra as opções Baixar e Editar de um aplicativo:
 

@@ -1,16 +1,14 @@
 ---
 title: Introdução aos serviços móveis por demanda da Adobe Experience Manager
-description: Introdução à administração do aplicativo AEM Mobile On-Demand Services. Ele fornece uma visão geral das funções e responsabilidades de um administrador de AEM para serviços por demanda.
-uuid: fd99c032-287a-489b-9690-b18980c55c29
+description: Introdução à administração do aplicativo Adobe Experience Manager (AEM) para serviços móveis por demanda. Ele fornece uma visão geral das funções e responsabilidades de um administrador de AEM para serviços por demanda.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 content-type: reference
 topic-tags: administering-on-demand-services-app
-discoiquuid: 5e1e6a51-67e1-42e3-bcb0-e16bc92c9cb3
 exl-id: 95cbedaf-9a94-45fa-8ddb-15be7a09f86d
-source-git-commit: ff7e37f24990a94510331a33cb05b7b44b3bfe85
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '298'
 ht-degree: 2%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Se você não estiver usando o AEM como fonte de gerenciamento de conteúdo, consulte [Ajuda do AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Se você não estiver usando o Adobe Experience Manager (AEM) como fonte de gerenciamento de conteúdo, consulte [Ajuda do AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 ## Administrador do AEM {#aem-administrator}
 
@@ -33,7 +31,7 @@ ht-degree: 2%
 >
 >Antes de começar a configurar seu ambiente para o AEM Mobile On-demand Services, consulte [AEM Mobile Application Dashboard ou o Centro de Controle](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Um ***Administrador do AEM*** O é responsável por adicionar um novo aplicativo ao catálogo do AEM Mobile, criando um novo aplicativo usando o assistente de criação ou importando um aplicativo existente. Administradores de AEM AEM Mobile que criam um novo aplicativo usando o *assistente de criação* normalmente, selecione um dos modelos de aplicativo desejados em nossas amostras de referência prontas para uso ou (na maioria dos casos) um modelo de aplicativo personalizado criado por *Desenvolvedores de AEM.*
+Um ***Administrador do AEM*** O é responsável por adicionar um aplicativo ao catálogo do AEM Mobile, criando um aplicativo usando o assistente de criação ou importando um aplicativo existente. Administradores de AEM AEM Mobile que criam um aplicativo usando o *assistente de criação* normalmente, selecione um dos modelos de aplicativo desejados em amostras de referência prontas para uso do Adobe ou (geralmente) um modelo de aplicativo personalizado criado por *Desenvolvedores de AEM.*
 
 >[!NOTE]
 >
@@ -41,7 +39,7 @@ Um ***Administrador do AEM*** O é responsável por adicionar um novo aplicativo
 
 Um administrador do AEM é responsável pelas seguintes tarefas ao criar um aplicativo usando o AEM Mobile On-demand Services:
 
-* [Configuração do AEM Mobile](/help/mobile/aem-mobile-setup.md), que abrange
+* [Configuração do AEM Mobile](/help/mobile/aem-mobile-setup.md) que abrange
 
    * Provisionamento do AEM Mobile
    * Criação de projetos para o AEM Mobile
