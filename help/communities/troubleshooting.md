@@ -1,16 +1,14 @@
 ---
 title: Comunidade de solução de problemas
 description: Solução de problemas da comunidade, incluindo problemas conhecidos
-uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -42,24 +40,24 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 O problema é que a string de formato para com.day.cq.commons.date.RelativeTimeFormat foi alterada entre 5.4 e 5.5 de forma que o &quot;a&quot; para &quot;ago&quot; não é mais aceito.
 
-Portanto, qualquer código que usasse a API RelativeTimeFormat() precisaria ser alterado:
+Portanto, qualquer código que use a API RelativeTimeFormat() deverá ser alterado:
 
 * De: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * Para: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-A falha é diferente em Autor e Publicação. Na criação, falha silenciosamente e simplesmente não exibe os tópicos do fórum. Ao publicar, ele emite o erro na página.
+A falha é diferente em Autor e Publicação. Na criação, ela falha silenciosamente e simplesmente não exibe os tópicos do fórum. Ao publicar, ele emite o erro na página.
 
-Consulte a [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API para obter mais informações.
+Consulte a [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API para obter mais informações.
 
 ## Preocupações comuns {#common-concerns}
 
 ### Aviso nos logs: Handlebars obsoleto {#warning-in-logs-handlebars-deprecated}
 
-Durante a inicialização (não o primeiro - mas todos os próximos), o seguinte aviso pode ser visto nos registros:
+Durante a inicialização (não o primeiro - mas todos os próximos), o seguinte aviso pode ser visto nos logs:
 
 * `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` foi substituída por `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Esse aviso pode ser ignorado com segurança como `jknack.handlebars.Handlebars`, usado por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), vem com seu próprio utilitário assistente i18n. Na inicialização, ele é substituído por um AEM específico [Auxiliar i18n](handlebars-helpers.md#i-n). Este aviso é gerado pela biblioteca de terceiros para confirmar a substituição de um auxiliar existente.
+Esse aviso pode ser ignorado com segurança como `jknack.handlebars.Handlebars`, usado por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), vem com seu próprio utilitário assistente i18n. Na inicialização, ele é substituído por um AEM-specific [Auxiliar i18n](handlebars-helpers.md#i-n). Este aviso é gerado pela biblioteca de terceiros para confirmar a substituição de um auxiliar existente.
 
 ### Aviso nos logs: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

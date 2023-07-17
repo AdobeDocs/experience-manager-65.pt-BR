@@ -1,18 +1,14 @@
 ---
 title: Armazenamento personalizado para rascunhos e componentes de envio
-seo-title: Custom storage for drafts and submissions component
 description: Consulte como personalizar o armazenamento de dados do usuário para rascunhos e envios.
-seo-description: See how to customize the storage of user data for drafts and submissions.
-uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -23,18 +19,18 @@ ht-degree: 0%
 
 O AEM Forms permite salvar um formulário como rascunho. A funcionalidade de rascunho permite manter um formulário de trabalho em andamento, que pode ser concluído e enviado posteriormente de qualquer dispositivo.
 
-Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no `/content/forms/fp` na instância de Publicação. Além disso, os componentes do portal do AEM Forms fornecem serviços de dados, que você pode usar para personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar dados do usuário em um armazenamento de dados.
+Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário na `/content/forms/fp` na instância de Publicação. Além disso, os componentes do Portal do AEM Forms fornecem serviços de dados, que você pode usar para personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar dados do usuário em um armazenamento de dados.
 
 ## Pré-requisitos  {#prerequisites}
 
-* Ativar [componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md)
-* Criar um [página do portal de formulários](/help/forms/using/creating-form-portal-page.md)
-* Ativar [formulários adaptáveis para o portal de formulários](/help/forms/using/draft-submission-component.md)
+* Ativar [Componentes do Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
+* Criar um [Página do portal Forms](/help/forms/using/creating-form-portal-page.md)
+* Ativar [formulários adaptáveis para o Forms Portal](/help/forms/using/draft-submission-component.md)
 * Saiba mais [detalhes de implementação do armazenamento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Serviço de dados de rascunho {#draft-data-service}
 
-Para personalizar o armazenamento de dados do usuário para rascunhos, é necessário implementar todos os métodos do `DraftDataService` interface. O código de amostra a seguir descreve os métodos e argumentos.
+Para personalizar o armazenamento de dados do usuário para rascunhos, você deve implementar todos os métodos do `DraftDataService` interface. O código de amostra a seguir descreve os métodos e argumentos.
 
 ```java
 /**
@@ -103,7 +99,7 @@ public interface DraftDataService {
 
 ## Serviço de dados de envio {#submission-data-service}
 
-Para personalizar o armazenamento de dados do usuário para envios, é necessário implementar todos os métodos do `SubmitDataService` interface. O código de amostra a seguir descreve os métodos e argumentos.
+Para personalizar o armazenamento de dados do usuário para envios, você deve implementar todos os métodos do `SubmitDataService` interface. O código de amostra a seguir descreve os métodos e argumentos.
 
 ```java
 /**
@@ -188,7 +184,7 @@ public interface SubmitDataService {
 }
 ```
 
-O Forms Portal usa o conceito de identificador exclusivo universal (UUID) para gerar uma ID exclusiva para cada rascunho e formulário enviado. Você também pode gerar um identificador exclusivo próprio. Você pode implementar a interface FPKeyGeneratorService, substituir seus métodos e desenvolver uma lógica personalizada para gerar uma ID exclusiva personalizada para cada rascunho e formulário enviado. Além disso, defina a classificação do serviço de implementação da geração de ID personalizada como maior que 0. Ela garante que a implementação personalizada seja usada em vez da implementação padrão.
+O Forms Portal usa o conceito de Identificador exclusivo universal (UUID) para gerar um identificador exclusivo para cada rascunho e formulário enviado. Você também pode gerar um identificador exclusivo próprio. Você pode implementar a interface FPKeyGeneratorService, substituir seus métodos e desenvolver uma lógica personalizada para gerar uma ID exclusiva personalizada para cada rascunho e formulário enviado. Além disso, defina a classificação do serviço de implementação da geração de ID personalizada como maior que 0. Ela garante que a implementação personalizada seja usada em vez da implementação padrão.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -207,7 +203,7 @@ Você pode usar a anotação abaixo para aumentar a classificação de serviço 
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-Para usar a anotação acima, o importa o seguinte para o seu projeto:
+Para usar a anotação acima, importe o seguinte para o seu projeto:
 
 ```java
 import org.apache.felix.scr.annotations.Properties;
