@@ -1,16 +1,14 @@
 ---
 title: Configurar usuários e grupos de usuários
 description: Siga esta página para entender as funções de usuário e como configurar seus usuários e grupos para oferecer suporte à criação e ao gerenciamento do seu aplicativo de serviços por demanda para dispositivos móveis.
-uuid: 461e1725-41dd-4883-92b9-a7e175660401
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
-discoiquuid: c3c73e67-7f85-4308-b4cd-1b42d4f3f2d9
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -31,7 +29,7 @@ Os membros do grupo de autores do aplicativo são responsáveis pela criação d
 
 #### Configuração de grupo - autores do aplicativo {#group-configuration-app-authors}
 
-1. Crie um novo grupo de usuários chamado &quot;autores-aplicativos&quot;:
+1. Crie um grupo de usuários chamado &quot;autores-aplicativos&quot;:
 
    Navegue até o Admin Console do usuário: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
@@ -66,11 +64,11 @@ Os membros do grupo de administradores de aplicativos podem criar conteúdo de a
 >
 >As permissões determinam a disponibilidade de algumas ações do usuário no Centro de comando do aplicativo AEM.
 >
->Você observará que algumas opções não estão disponíveis para autores de aplicativos que estão disponíveis para administradores de aplicativos.
+>Observe que algumas opções não estão disponíveis para autores de aplicativos que estão disponíveis para administradores de aplicativos.
 
 ### Configuração de grupo - app-admins {#group-configuration-app-admins}
 
-1. Crie um novo grupo chamado administradores de aplicativos.
+1. Crie um grupo chamado administradores de aplicativos.
 1. Adicione os seguintes grupos ao novo grupo de administradores de aplicativos:
 
    * autores de conteúdo
@@ -104,9 +102,9 @@ Os membros do grupo de administradores de aplicativos podem criar conteúdo de a
 1. Adicione membros a este grupo conforme necessário
 1. Para exportar ou fazer upload de conteúdo
 
-   * (Leitura) em /etc/contentsync para para acessar modelos de exportação
-   * (Leitura) em /var para para passagem de caminho em leituras
-   * (Ler, Gravar, Modificar, Excluir) em /var/contentsync para gravar, ler e limpar conteúdo de exportação em cache do ContentSync
+   * (Leitura) em /etc/contentsync para acessar modelos de exportação
+   * (Leitura) em /var para passagem de caminho em leituras
+   * (Ler, Gravar, Modificar, Excluir) em /var/contentsync para gravar, ler e limpar o conteúdo de exportação em cache do ContentSync
 
 ### Recursos adicionais {#additional-resources}
 
