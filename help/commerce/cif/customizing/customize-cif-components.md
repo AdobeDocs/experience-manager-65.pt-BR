@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 1d914b12c3279bacaf5cabb3b1953e927c04bad1
 workflow-type: tm+mt
-source-wordcount: '2579'
+source-wordcount: '2571'
 ht-degree: 15%
 
 ---
@@ -28,7 +28,7 @@ A variável [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) �
 
 ## O que você vai criar
 
-A marca Venia começou recentemente a fabricar alguns produtos usando materiais sustentáveis e a empresa gostaria de exibir uma **Eco Friendly** como parte do Teaser do produto. Um novo atributo personalizado será criado no Adobe Commerce para indicar se um produto usa o **Eco amigável** material. Esse atributo personalizado será adicionado como parte da consulta do GraphQL e exibido no Teaser do produto de produtos especificados.
+A marca Venia começou recentemente a fabricar alguns produtos usando materiais sustentáveis e a empresa gostaria de exibir uma **Eco Friendly** como parte do Teaser do produto. Um novo atributo personalizado é criado no Adobe Commerce para indicar se um produto usa o **Eco amigável** material. Esse atributo personalizado é adicionado como parte da consulta do GraphQL e exibido no Teaser do produto de produtos especificados.
 
 ![Medalha ecologicamente correta Implementação final](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -69,7 +69,7 @@ Você clonará o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) 
 
 ## Criação do Teaser do produto {#author-product-teaser}
 
-O Teaser do produto é apresentado em todo este tutorial. Como primeira etapa, adicione uma nova instância do Teaser do produto à página inicial para entender a funcionalidade da linha de base.
+O Teaser do produto é apresentado em todo este tutorial. Como primeira etapa, adicione uma instância do Teaser do produto à página inicial para entender a funcionalidade da linha de base.
 
 1. Acesse a **página inicial** do site: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
@@ -178,11 +178,11 @@ Em seguida, use um GraphQL IDE para verificar se o `eco_friendly` O atributo foi
 
    ![Exemplo de resposta do GraphQL](../assets/customize-cif-components/sample-graphql-query.png)
 
-   O valor de **Sim** é um número inteiro de **1**. Isso será útil ao escrever a consulta do GraphQL em Java™.
+O valor de **Sim** é um número inteiro de **1**. Isso será útil ao escrever a consulta do GraphQL em Java™.
 
-   >[!TIP]
-   >
-   >Documentação mais detalhada sobre [O Adobe Commerce GraphQL pode ser encontrado aqui](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+>[!TIP]
+>
+>Documentação mais detalhada sobre [O Adobe Commerce GraphQL pode ser encontrado aqui](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Atualizar o Modelo do Sling para o Teaser do produto {#updating-sling-model-product-teaser}
 
@@ -213,7 +213,7 @@ Uso [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-ma
    }
    ```
 
-   Este é um novo método para encapsular a lógica para indicar se o produto tem a função `eco_friendly` atributo definido como **Sim** ou **Não**.
+Este é um novo método para encapsular a lógica para indicar se o produto tem a função `eco_friendly` atributo definido como **Sim** ou **Não**.
 
 1. Em seguida, inspecione o `MyProductTeaserImpl.java` em `core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java`.
 
@@ -234,7 +234,7 @@ Uso [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-ma
    }
    ```
 
-   Isso minimiza a quantidade de código Java™ que uma implementação precisa gravar.
+   Isso minimiza a quantidade de código Java™ que uma implementação deve gravar.
 
 1. Um dos pontos de extensão adicionais fornecidos pelos Componentes principais da CIF do AEM é o `AbstractProductRetriever` que fornece acesso a atributos específicos do produto. INSPECT o `initModel()` método:
 
@@ -486,11 +486,11 @@ Nesse ponto, a lógica de quando exibir a variável **Eco Friendly** o símbolo 
 
 ## Parabéns {#congratulations}
 
-Você concluiu a personalização do primeiro componente CIF do AEM! Baixe o [arquivos de solução concluídos aqui](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
+Você personalizou seu primeiro componente da CIF do AEM! Baixe o [arquivos de solução concluídos aqui](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
 ## Desafio extra {#bonus-challenge}
 
-Revise a funcionalidade do **Novo** Selo que já foi implementado no Teaser do produto. Tente adicionar uma caixa de seleção extra para que os autores controlem quando a **Eco Friendly** o selo deve ser exibido. Será necessário atualizar a caixa de diálogo do componente em `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
+Revise a funcionalidade do **Novo** Selo que já foi implementado no Teaser do produto. Tente adicionar uma caixa de seleção extra para que os autores controlem quando a **Eco Friendly** o selo deve ser exibido. Você deve atualizar a caixa de diálogo do componente em `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
 
 ![Novo desafio de implementação de medalha](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 
