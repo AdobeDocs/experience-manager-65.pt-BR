@@ -1,21 +1,17 @@
 ---
 title: Pontuação e medalhas das comunidades
-seo-title: Communities Scoring and Badges
 description: A pontuação e as medalhas do AEM Communities permitem identificar e recompensar os membros da comunidade
-seo-description: AEM Communities scoring and badges lets you identify and reward community members
-uuid: d73683df-a413-4b3c-869c-67568bfdfcf6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
 workflow-type: tm+mt
-source-wordcount: '2868'
+source-wordcount: '2853'
 ht-degree: 2%
 
 ---
@@ -44,17 +40,17 @@ Os principais aspectos de pontuação e medalhas são:
 
 As medalhas são colocadas sob o nome de um membro para indicar seu papel ou sua posição na comunidade. Os emblemas podem ser exibidos como uma imagem ou como um nome. Quando exibido como uma imagem, o nome é incluído como texto alternativo para acessibilidade.
 
-Por padrão, os selos estão localizados no repositório em
+Por padrão, os selos estão no repositório no seguinte local:
 
 * `/libs/settings/community/badging/images`
 
 Se armazenadas em um local diferente, elas devem ser lidas e acessíveis a todos.
 
-As medalhas são diferenciadas em UGC quanto a se foram atribuídas ou ganhas de acordo com as regras. Atualmente, as medalhas atribuídas são exibidas como texto e as medalhas obtidas são exibidas como uma imagem.
+As medalhas são diferenciadas em UGC, sejam elas atribuídas ou ganhas de acordo com as regras. Atualmente, as medalhas atribuídas são exibidas como texto e as medalhas obtidas são exibidas como uma imagem.
 
 ### Interface do usuário de gerenciamento de selos {#badge-management-ui}
 
-As Comunidades [Console de selos](/help/communities/badges.md) O fornece a capacidade de adicionar selos personalizados que podem ser exibidos para um membro quando ganho (concedido) ou quando ele assume uma função específica na comunidade (atribuído).
+As Comunidades [Console de selos](/help/communities/badges.md) permite adicionar medalhas personalizadas que podem ser exibidas para um membro quando ganho (premiado) ou quando ele assume uma função específica na comunidade (atribuído).
 
 ### Medalhas atribuídas {#assigned-badges}
 
@@ -65,18 +61,15 @@ Os emblemas atribuídos (e concedidos) são armazenados no [SRP](/help/communiti
 Estão incluídos na versão três selos com base em funções:
 
 * **moderador**
-
-   `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
+  `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
 * **gerente de grupo**
-
-   `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
+  `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
 * **membro privilegiado**
+  `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
-   `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
-
-   ![selos atribuídos](assets/assigned-badges.png)
+  ![selos atribuídos](assets/assigned-badges.png)
 
 ### Medalhas premiadas {#awarded-badges}
 
@@ -90,24 +83,21 @@ Para que os selos apareçam como uma recompensa por atividade, há duas coisas q
 Estão incluídos na versão três medalhas com base em recompensa:
 
 * **ouro**
-
-   `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
+  `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **prata**
-
-   `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
+  `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
 * **bronze**
+  `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-   `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
-
-   ![medalhas concedidas](assets/awarded-badges.png)
+  ![medalhas concedidas](assets/awarded-badges.png)
 
 >[!NOTE]
 >
 >As regras de pontuação podem ser configuradas para atribuir pontos negativos para postagens sinalizadas como inadequadas e, portanto, afetar o valor da pontuação. No entanto, uma vez que um selo é ganho, ele não será removido automaticamente devido à redução do ponto de pontuação ou a alterações nas regras de pontuação.
 >
->As medalhas concedidas podem ser revogadas da mesma maneira que as medalhas atribuídas. Consulte a [Atribuir e revogar selos](#assign-and-revoke-badges) seção. Os aprimoramentos futuros incluirão uma interface para gerenciar as medalhas dos membros.
+>As medalhas concedidas podem ser revogadas da mesma maneira que as medalhas atribuídas. Consulte a [Atribuir e revogar selos](#assign-and-revoke-badges) seção. Os aprimoramentos futuros incluirão uma interface para gerenciar os emblemas dos membros.
 
 ### Medalhas personalizadas {#custom-badges}
 
@@ -162,22 +152,22 @@ Uma propriedade booleana, `allowBadges`, ativa/desativa a exibição de selos pa
 
 ## Regras de pontuação {#scoring-rules}
 
-As regras de pontuação são a base da pontuação para fins de atribuição de medalhas.
+As regras de pontuação são a base da pontuação para a atribuição de medalhas.
 
-Muito simplesmente, cada regra de pontuação é uma lista de uma ou mais sub-regras. As regras de pontuação são aplicadas ao conteúdo do site da comunidade para identificar as regras a serem aplicadas quando os selos estiverem ativados.
+Cada regra de pontuação é uma lista de uma ou mais subregras. As regras de pontuação são aplicadas ao conteúdo do site da comunidade para identificar as regras a serem aplicadas quando os selos estiverem ativados.
 
 As regras de pontuação são herdadas, mas não aditivas. Por exemplo:
 
 * Se a página2 contiver a regra de pontuação 2 e sua página1 antecessora contiver a regra de pontuação 1.
-* Uma ação em um componente página2 chamará a regra 1 e a regra 2.
-* Se ambas as regras contiverem sub-regras aplicáveis para a mesma `topic/verb`:
+* Uma ação em um componente página2 chama a regra 1 e a regra 2.
+* Se ambas as regras contiverem subregras aplicáveis para a mesma `topic/verb`:
 
-   * Somente a sub-regra da regra 2 afetará a pontuação.
-   * As pontuações de ambas as sub-regras não são adicionadas.
+   * Somente a subregra da regra 2 afeta a pontuação.
+   * As pontuações de ambas as subregras não são adicionadas.
 
 Quando houver mais de uma regra de pontuação, as pontuações serão mantidas separadamente para cada regra.
 
-As regras de pontuação são nós do tipo `cq:Page` com propriedades em seu `jcr:content` nó que especifica a lista de regras secundárias que a definem.
+As regras de pontuação são nós do tipo `cq:Page` com propriedades em seu `jcr:content` nó que especifica a lista de subregras que a definem.
 
 As pontuações são armazenadas no SRP.
 
@@ -194,7 +184,7 @@ As pontuações são armazenadas no SRP.
 
 ### Sub-regras de pontuação {#scoring-sub-rules}
 
-As sub-regras de pontuação contêm as propriedades que detalham os valores para participar da comunidade.
+As subregras de pontuação contêm as propriedades que detalham os valores para participar da comunidade.
 
 Cada subregra de pontuação identifica:
 
@@ -202,16 +192,16 @@ Cada subregra de pontuação identifica:
 * Que função comunitária específica está envolvida?
 * Quantos pontos são concedidos?
 
-Por padrão, os pontos são atribuídos ao membro que está executando a ação, a menos que a sub-regra especifique o proprietário do conteúdo como destinatário dos pontos ( `forOwner`).
+Por padrão, os pontos são atribuídos ao membro que está executando a ação, a menos que a subregra especifique o proprietário do conteúdo como destinatário dos pontos ( `forOwner`).
 
-Cada sub-regra pode ser incluída em uma ou mais regras de pontuação.
+Cada subregra pode ser incluída em uma ou mais regras de pontuação.
 
-O nome da sub-regra geralmente segue o padrão de uso de um *assunto* , *objeto* e *verbo*. Por exemplo:
+O nome da subregra normalmente segue o padrão de uso de um *assunto*, *objeto*, e *verbo*. Por exemplo:
 
 * member-comment-create
 * membro-recebe-voto
 
-Sub-regras são nós do tipo `cq:Page` com propriedades em seu `jcr:content`nó que especifica a [verbos e tópicos](#topics-and-verbs) .
+As sub-regras são nós do tipo `cq:Page` com propriedades em seu `jcr:content`nó que especifica a [verbos e tópicos](#topics-and-verbs) .
 
 <table>
  <tbody>
@@ -239,7 +229,7 @@ Sub-regras são nós do tipo `cq:Page` com propriedades em seu `jcr:content`nó 
    <td>String</td>
    <td>
     <ul>
-     <li>opcional; restringe a sub-regra aos componentes da comunidade identificados por tópicos do evento</li>
+     <li>opcional; restringe a subregra aos componentes da comunidade identificados por tópicos do evento</li>
      <li>se especificado : o valor é uma cadeia de caracteres de vários valores de tópicos de evento</li>
      <li>uma lista de tópicos da versão está na <a href="#topics-and-verbs">Tópicos e verbos</a> seção</li>
      <li>o padrão é aplicar a todos os tópicos associados aos verbos</li>
@@ -268,7 +258,7 @@ Sub-regras são nós do tipo `cq:Page` com propriedades em seu `jcr:content`nó 
       </ul> </li>
      <li>se "avançado", especifica o mecanismo de pontuação com base na qualidade e na quantidade
       <ul>
-       <li>exige um <a href="/help/communities/advanced.md">pacote adicional</a></li>
+       <li>exige um <a href="/help/communities/advanced.md">pacote extra</a></li>
       </ul> </li>
      <li>o padrão é "basic"</li>
     </ul> </td>
@@ -301,14 +291,14 @@ Estão incluídas na versão duas regras de pontuação para o [Função do fór
 
 ### Ativação de regras de pontuação personalizadas {#activating-custom-scoring-rules}
 
-Quaisquer alterações ou adições feitas às regras de pontuação ou sub-regras feitas no ambiente de criação do precisam ser instaladas na publicação.
+Quaisquer alterações ou adições feitas às regras de pontuação ou subregras feitas no ambiente de criação devem ser instaladas na publicação.
 
 ## Regras de insígnia {#badging-rules}
 
 As regras de atribuição de emblemas vinculam regras de pontuação aos emblemas especificando:
 
 * Regra de pontuação
-* Pontuação necessária para atribuir um selo específico
+* Pontuação necessária para receber um selo específico
 
 As regras de insígnia são nós do tipo `cq:Page` com propriedades em seu `jcr:content` nó que correlaciona regras de pontuação a pontuações e selos.
 
@@ -316,7 +306,7 @@ As regras para a aposição de `thresholds` propriedade que é uma lista ordenad
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-   * Um emblema de bronze é premiado por ganhar 1 ponto.
+   * Uma medalha de bronze é concedida por ganhar um ponto.
 
 * `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
@@ -324,7 +314,7 @@ As regras para a aposição de `thresholds` propriedade que é uma lista ordenad
 
 * `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
-   * Um distintivo de ouro é concedido quando 80 pontos foram acumulados.
+   * Um selo de ouro é concedido quando 80 pontos foram acumulados.
 
 As regras de insígnia são combinadas às regras de pontuação, que determinam como os pontos se acumulam. Consulte a seção intitulada [Aplicar regras ao conteúdo](#apply-rules-to-content).
 
@@ -377,13 +367,13 @@ Estão incluídas na versão duas regras de insígnia que correspondem à [Regra
 **Notas:**
 
 * `rules` Os nós são do tipo cq:Page.
-* `rules` O deve estar localizado em um local de repositório com permissão de leitura para todos.
+* `rules` deve estar em um local de repositório com permissão de leitura para todos.
 
    * Os nomes das regras devem ser exclusivos independentemente da localização.
 
 ### Ativação das regras personalizadas de marcação {#activating-custom-badging-rules}
 
-Quaisquer alterações ou adições feitas às regras de marcação ou imagens feitas no ambiente de criação precisam ser instaladas na publicação.
+Quaisquer alterações ou adições feitas às regras de marcação ou imagens feitas no ambiente de criação devem ser instaladas na publicação.
 
 ## Atribuir e revogar selos {#assign-and-revoke-badges}
 
@@ -411,7 +401,6 @@ cURL -i -X POST -H *cabeçalho* -u *fazer logon* -F *operação* -F *selo* *memb
 >
 >* Pode se referir a uma instância de autor se a variável [Serviço de túnel](/help/communities/users.md#tunnel-service) está ativado.
 >* Pode ser um nome obscuro e aleatório - consulte [Lista de verificação de segurança](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) em relação à ID autorizável.
-
 
 ### Exemplos: {#examples}
 
@@ -445,7 +434,7 @@ Para os componentes de comunidades entregues, as tabelas a seguir descrevem a `v
 
 >[!NOTE]
 >
->Uma nova propriedade booleana, `allowBadges`, ativa/desativa a exibição de selos para uma instância de componente. Ele poderá ser configurado na versão atualizada [caixas de diálogo de edição de componente](/help/communities/author-communities.md) por meio de uma caixa de seleção rotulada **Exibir selos**.
+>Uma nova propriedade booleana, `allowBadges`, ativa/desativa a exibição de selos para uma instância de componente. Pode ser configurado na versão atualizada [caixas de diálogo de edição de componente](/help/communities/author-communities.md) por meio de uma caixa de seleção rotulada **Exibir selos**.
 
 **[Componente de calendário](/help/communities/calendar.md)**
 SocialEvent `topic`= com/adobe/cq/social/calendar
@@ -550,13 +539,13 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 Para um componente personalizado, um SocialEvent é instanciado para registrar os eventos do componente como `actions` que ocorrem por um `topic`.
 
-Para suportar pontuação, o SocialEvent precisaria substituir o método `getVerb()` de modo a que um `verb` é retornado para cada `action`. A variável `verb` retornados para uma ação podem ser aqueles normalmente usados (como `POST`) ou uma especializada para o componente (como `ADD RATING`). Existe uma *n-1* relação entre `actions` e `verbs`.
+Para suportar pontuação, o SocialEvent precisa substituir o método `getVerb()` de modo a que um `verb` é retornado para cada `action`. A variável `verb` retornados para uma ação podem ser aqueles normalmente usados (como `POST`) ou uma especializada para o componente (como `ADD RATING`). Existe uma *n-1* relação entre `actions` e `verbs`.
 
 ## Resolução de problemas {#troubleshooting}
 
 ### As medalhas não aparecem {#badges-are-not-appearing}
 
-Se as regras de pontuação e medalha tiverem sido aplicadas ao conteúdo do site, mas as medalhas não estiverem sendo atribuídas para nenhuma atividade, verifique se as medalhas foram ativadas para a instância desse componente.
+Se as regras de pontuação e medalha tiverem sido aplicadas ao conteúdo do site, mas as medalhas não estiverem sendo concedidas para nenhuma atividade, verifique se as medalhas foram ativadas para a instância desse componente.
 
 Consulte [Ativar selos para componente](#enable-badges-for-component).
 

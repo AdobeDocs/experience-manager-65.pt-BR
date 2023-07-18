@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: 939132e8b461b51e1c49237e481243bcc5de3bf6
+source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1866'
 ht-degree: 9%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 9%
 
 Como o Adobe Experience Manager (AEM) é baseado no Sling e usa um repositório JCR, os tipos de nó oferecidos por ambos estão disponíveis para uso:
 
-* [Tipos de nó JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [Tipos de nó JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Tipos de nó Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-Além desses. O AEM fornece uma variedade de tipos de nós personalizados.
+Além desses tipos de nó, o AEM fornece uma variedade de tipos de nó personalizados.
 
 ## Auditoria {#audit}
 
@@ -145,7 +145,7 @@ Define a página CQ padrão.
 
 **Descrição**
 
-Define um tipo de mixin que marca nós como pseudo páginas. Isso significa que eles podem ser adaptados para o suporte à edição de Página e WCM.
+Define um tipo de mixin que marca nós como pseudo páginas. Em outras palavras, significa que eles podem ser adaptados para o suporte de edição de Página e WCM.
 
 **Definição**
 
@@ -161,8 +161,8 @@ Define o nó padrão para o conteúdo da página, com as propriedades mínimas c
 * `@prop jcr:description` - Descrição desta página.
 * `@prop cq:template` - Caminho para o modelo usado para criar a página.
 * `@prop cq:allowedTemplates` - Lista de expressões regulares usadas para determinar os caminhos para o modelo permitido.
-* `@prop pageTitle` - Título geralmente exibido no `<title>` tag.
-* `@prop navTitle` - Título geralmente usado na navegação.
+* `@prop pageTitle` - Título exibido no `<title>` tag.
+* `@prop navTitle` - Título usado na navegação.
 * `@prop hideInNav` - Especifica se a página deve estar oculta na navegação.
 * `@prop onTime` - Hora em que esta página se torna válida.
 * `@prop offTime` - Hora em que esta página se torna inválida.
@@ -197,13 +197,13 @@ Define um modelo CQ.
 * `@node jcr:content` - Conteúdo padrão para novas páginas.
 * `@node icon.png` - Um arquivo que contém um ícone característico.
 * `@node thumbnail.png` - Um arquivo que contém uma imagem em miniatura característica.
-* `@node workflows` - Atribuir automaticamente a configuração do fluxo de trabalho. A configuração seguirá a estrutura abaixo:
+* `@node workflows` - Atribuir automaticamente a configuração do fluxo de trabalho. A configuração segue a estrutura abaixo:
    * `+ workflows`
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
 * `@prop allowedParents` - Padrões de expressão regular para determinar os caminhos para modelos permitidos como modelos principais.
-* `@prop allowedChildren` - Padrões de expressão regular para determinar os caminhos para modelos permitidos como modelos secundários.
+* `@prop allowedChildren` - Padrões de expressão regular para determinar os caminhos para modelos permitidos como modelos filho.
 * `@prop ranking` - Posicionar na lista de modelos na caixa de diálogo Criar página.
 
 **Definição**
@@ -232,14 +232,14 @@ Define um componente do CQ.
 * `@prop dialogPath` - Caminho primário da caixa de diálogo (alternativa à caixa de diálogo).
 * `@node design_dialog` - Caixa de diálogo Design.
 * `@prop cq:cellName` - Nome da célula de design.
-* `@prop cq:isContainer` - Indica se é um componente de contêiner. Isso força os nomes das células dos componentes secundários a serem usados em vez dos nomes de caminho. Por exemplo, a variável `parsys` é um componente de container. Se esse valor não estiver definido, a verificação será feita com base na existência de um `cq:childEditConfig`.
+* `@prop cq:isContainer` - Indica se é um componente de contêiner. Força os nomes das células dos componentes filhos a serem usados em vez dos nomes de caminho. Por exemplo, a variável `parsys` é um componente de container. Se esse valor não estiver definido, a verificação será feita com base na existência de um `cq:childEditConfig`.
 * `@prop cq:noDecoration` - Se verdadeiro, nenhuma decoração `div` as tags são desenhadas ao incluir este componente.
 * `@node cq:editConfig` - A configuração que define os parâmetros da barra de edição.
 * `@node cq:childEditConfig` - A configuração de edição que é herdada por componentes secundários.
 * `@node cq:htmlTag` - Define atributos de tag adicionais que são adicionados ao &quot;ambiente&quot; `div` quando o componente é incluído.
 * `@node icon.png`- Um arquivo que contém um ícone característico.
 * `@node thumbnail.png` - Um arquivo que contém uma imagem em miniatura característica.
-* `@prop allowedParents` - Padrões de expressão regular para determinar os caminhos dos componentes permitidos como componentes principais.
+* `@prop allowedParents` - Padrões de expressão regular para determinar os caminhos de componentes permitidos como componentes principais.
 * `@prop allowedChildren` - Padrões de expressão regular para determinar os caminhos de componentes permitidos como componentes secundários.
 * `@node virtual` - Contém subnós que refletem componentes virtuais usados para arrastar e soltar componentes.
 * `@prop componentGroup` - Nome do grupo de componentes, usado para arrastar e soltar o componente.
@@ -314,9 +314,9 @@ Define a configuração da &quot;barra de edição&quot;.
 
 **Descrição**
 
-Configura um alvo de liberação de um componente. O nome do nó será usado como uma ID para arrastar e soltar.
+Configura um alvo de liberação de um componente. O nome deste nó é usado como uma ID para arrastar e soltar.
 
-* `@prop accept` - Lista de tipos MIME aceitos por este alvo; ex.: `["image/*"]`
+* `@prop accept` - Lista de tipos MIME aceitos por este alvo; por exemplo, `["image/*"]`
 * `@prop groups` - Lista de grupos de arrastar e soltar que aceitam uma origem.
 * `@prop propertyName` - Nome da propriedade usada para armazenar a referência.
 
@@ -332,7 +332,7 @@ Configura um alvo de liberação de um componente. O nome do nó será usado com
 
 **Descrição**
 
-Define um componente do CQ virtual. Atualmente, eles são usados apenas para o novo assistente de arrastar e soltar componente.
+Define um componente do CQ virtual. Atualmente usado apenas para o novo assistente de arrastar e soltar componente.
 
 * `@prop jcr:title` - Título deste componente.
 * `@prop jcr:description` - Descrição deste componente.
@@ -340,8 +340,8 @@ Define um componente do CQ virtual. Atualmente, eles são usados apenas para o n
 * `@node cq:childEditConfig`- Editar a configuração herdada por componentes filhos.
 * `@node icon.png` - Um arquivo que contém um ícone característico.
 * `@node thumbnail.png` - Um arquivo que contém uma imagem em miniatura característica.
-* `@prop allowedParents` - Padrões de expressão regular para determinar os caminhos dos componentes permitidos como componentes principais.
-* `@prop allowedChildren` - Padrões de expressão regular para determinar os caminhos dos componentes permitidos como componentes secundários.
+* `@prop allowedParents` - Padrões de expressão regular para determinar caminhos de componentes permitidos como componentes principais.
+* `@prop allowedChildren` - Padrões de expressão regular para determinar caminhos de componentes permitidos como componentes secundários.
 * `@prop componentGroup` - Nome do grupo de componentes de arrastar e soltar.
 
 **Definição**
@@ -444,7 +444,7 @@ Lista de Contêineres.
 
 **Descrição**
 
-`cq:attributes` é o tipo de nó das etiquetas da versão de ContentBus. Esse nó tem apenas uma série de propriedades; das quais três são predefinidas &quot;created&quot;, &quot;csd&quot; e &quot;timestampe&quot;.
+O tipo de nó `cq:attributes` é para as etiquetas da versão do ContentBus. Esse nó tem apenas uma série de propriedades; das quais três são predefinidas &quot;created&quot;, &quot;csd&quot; e &quot;timestamp&quot;.
 
 * `@prop created (long) mandatory copy` - Carimbo de data e hora de criação das informações de versão, geralmente a hora de check-in da versão anterior ou a hora de criação da página.
 * `@prop csd (string) mandatory copy` - atributo csd padrão, cópia da propriedade cq:csd do nó da página
@@ -485,9 +485,9 @@ Os itens em uma `cq:Cq4ContentPage` são:
 
 Configuração de enquete.
 
-* `@prop source (String) mandatory` - URI da fonte de dados, é obrigatório e não deve estar vazio
-* `@prop target (String)` - O local de destino onde os dados recuperados da fonte de dados são armazenados. Isso é opcional e assume como padrão o nó cq:PollConfig.
-* `@prop interval (Long)` - O intervalo em segundos no qual pesquisar dados novos ou atualizados a partir da fonte de dados. Isso é opcional e o padrão é 30 minutos (1800 segundos).
+* `@prop source (String) mandatory` - URI da fonte de dados. Obrigatório e não deve estar vazio.
+* `@prop target (String)` - O local de destino onde os dados recuperados da fonte de dados são armazenados. Opcional e assume como padrão o nó cq:PollConfig.
+* `@prop interval (Long)` - O intervalo em segundos no qual pesquisar dados novos ou atualizados a partir da fonte de dados. Opcional e o padrão é 30 minutos (1800 segundos).
 * [Criação de serviços personalizados do importador de dados para o Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definição**
@@ -814,7 +814,7 @@ Qualquer site do usuário/público pode marcar o conteúdo (estilo Web2.0), usad
 
 **Descrição**
 
-Adiciona um `cq:userContent` subnó que pode ser modificado pelos usuários. Cada usuário terá seu próprio `cq:userContent/<userid>` subnó, que normalmente tem o mixin `cq:UserTaggable`.
+Adiciona um `cq:userContent` subnó que pode ser modificado pelos usuários. Cada usuário tem seu próprio `cq:userContent/<userid>` subnó, que normalmente tem o mixin `cq:UserTaggable`.
 
 **Definição**
 
@@ -1062,7 +1062,7 @@ Dados do fluxo de trabalho
 
 **Descrição**
 
-Autoatribuir configuração de fluxo de trabalho. A configuração seguirá esta estrutura abaixo:
+Autoatribuir configuração de fluxo de trabalho. A configuração segue essa estrutura abaixo:
 * `workflows`
    * `+ name1`
       * `- cq:path`
