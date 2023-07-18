@@ -1,23 +1,21 @@
 ---
 title: Noções sobre segmentação ao criar uma campanha
 description: A segmentação é uma consideração importante ao criar uma campanha.
-uuid: 900da068-5dda-4b6b-8be3-4b7ad614126d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 36c87684-e62a-4983-b123-87f56dbf7bc5
 exl-id: 61a5875f-ad09-4971-a886-b0d88e0c9967
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 31%
+source-wordcount: '548'
+ht-degree: 56%
 
 ---
 
 # Noções sobre segmentação{#understanding-segmentation}
 
-A segmentação é uma consideração importante ao criar uma campanha. Na maioria dos casos, será necessário ter segmentos já definidos antes de iniciar a campanha.
+A segmentação é uma consideração importante ao criar uma campanha. Normalmente, é necessário ter segmentos já definidos antes de iniciar a campanha.
 
 Os visitantes do site têm interesses e objetivos diferentes quando chegam a um site. Entender essas metas e atender às expectativas é um fator de sucesso importante para o marketing online.
 
@@ -27,7 +25,7 @@ A segmentação ajuda a fazer isso analisando e caracterizando o:
 * perfil
 * atividade em outros sites
 
-O conteúdo pode então ser direcionado especificamente para as necessidades e os interesses do visitante, dependendo dos segmentos aos quais ele corresponde.
+O conteúdo pode então ser direcionado para as necessidades e os interesses do visitante, dependendo dos segmentos aos quais ele corresponde.
 
 ## Uso da segmentação {#using-segmentation}
 
@@ -37,22 +35,22 @@ Os segmentos são definidos em [Configuração da segmentação](/help/sites-adm
 
 Ao discutir segmentação, a seguinte terminologia é usada:
 
-**Visitante** Um visitante é uma pessoa que visita um site. A visita dessa pessoa normalmente começa em uma página de referência e, em seguida, passa para uma ou mais exibições de página em seu próprio site. Um perfil comportamental pode ser criado a partir dos detalhes da visita dessa pessoa.
+**Visitante** - Um visitante é uma pessoa que visita um site. A visita dessa pessoa normalmente começa em uma página de referência e, em seguida, passa para uma ou mais exibições de página em seu próprio site. Um perfil comportamental pode ser criado a partir dos detalhes da visita dessa pessoa.
 
-**Usuário** Um usuário é um visitante que se registra no site para receber um perfil de conta. Para gerar seu perfil, eles fornecem identificação adicional, como endereço de email e gênero, entre outros. Informações adicionais também podem ser coletadas, incluindo atividades da comunidade e padrões de compra, novamente, entre outros. Com base nas informações fornecidas no perfil, um perfil demográfico pode ser criado.
+**Usuário** - Um usuário é um visitante que se registra no site para receber um perfil de conta. Para gerar seu perfil, eles fornecem identificação adicional, como endereço de email e gênero, entre outros. Informações adicionais também podem ser coletadas, incluindo atividade da comunidade e padrões de compra, novamente entre outros. Com base nas informações fornecidas no perfil, um perfil demográfico pode ser criado.
 
-**Característica** Uma característica é uma característica ou propriedade de um visitante que pode ser usada para determinar a associação a um segmento específico.
+**Característica** - Uma característica é uma qualidade ou propriedade de um visitante que pode ser usada para determinar a associação a um segmento específico.
 
-**Segmento** Um segmento é uma coleção de visitantes que compartilham certas características. Segmentos devem ser distintos, com um mínimo de sobreposição com outros segmentos.
+**Segmento** - Um segmento é uma coleção de visitantes que compartilham certas características. Segmentos devem ser distintos, com um mínimo de sobreposição com outros segmentos.
 
-**Características comportamentais** Características comportamentais são aquelas que se relacionam ao comportamento de um visitante no site. Dentre elas:
+**Características comportamentais** - Características comportamentais são aquelas que se relacionam ao comportamento de um visitante no site. Dentre elas:
 
 * Interesse no seu site; incluindo páginas visitadas e produtos comprados.
 * Interesse no site de referência; incluindo termos de pesquisa usados ou anúncios clicados.
 * Interesse em outros sites, determinado com o uso de ferramentas como o Spyjax.
-* Lealdade do visitante; duração da visita, frequência de visitas.
+* Fidelidade do visitante; duração da visita, frequência de visitas.
 
-**Características demográficas** Essas são características da população selecionadas, incluindo:
+**Características demográficas** - São características da população selecionadas, incluindo:
 
 * Idade
 * Receita
@@ -61,20 +59,20 @@ Ao discutir segmentação, a seguinte terminologia é usada:
 * Sexo
 * Local
 
-**Características derivadas** Algumas características demográficas são difíceis de determinar sem registro, mas podem ser derivadas pela combinação de características comportamentais e demográficas.
+**Características derivadas** - Algumas características demográficas são difíceis de determinar sem registro, mas podem ser derivadas pela combinação de características comportamentais e demográficas.
 
-Por exemplo, a combinação do URL de referência (como uma característica comportamental) com os dados demográficos (adquiridos de ferramentas como o [Google Ad Planner](https://www.google.com/adplanner/)) permite aos proprietários do site obterem características demográficas de seus visitantes.
+Por exemplo, combinar o URL de referência (como uma característica comportamental) com os dados demográficos (adquiridos de ferramentas como o [Planejador de anúncios Google](https://www.google.com/adplanner/)) permitem que os proprietários do site obtenham características demográficas de seus visitantes.
 
-**Subsegmento** Um segmento pode ser subdividido em vários subsegmentos. Isso é feito com a definição de características adicionais.
+**Subsegmento** - Um segmento pode ser subdividido em vários subsegmentos. Isso é feito com a definição de características adicionais.
 
-**Página de teaser** Uma página de teaser é direcionada a um público-alvo específico. Ela tem conteúdo reutilizável que pode ser usado no parágrafo de teaser.
+**Página de teaser** - Uma página de teaser é direcionada a um público-alvo específico. Ele tem conteúdo reutilizável que pode ser usado no parágrafo de teaser.
 
-**Campaign** Uma campanha é uma coleção de páginas de teaser e de páginas de marketing por email, como informativos ou convites. Normalmente, uma campanha é veiculada por um período limitado, sendo substituída por outra.
+**Campanha** -Uma campanha é uma coleção de páginas de teaser e de páginas de marketing por email, como informativos ou convites. Normalmente, uma campanha é veiculada por um período limitado, sendo substituída por outra.
 
-**Parágrafo de teaser** Este é um parágrafo que extrai o conteúdo de outra página, dependendo de uma estratégia de seleção. Essa estratégia de seleção pode considerar segmentos e campanhas.
+**Parágrafo de teaser** - É um parágrafo que extrai o conteúdo de outra página, dependendo de uma estratégia de seleção. Essa estratégia de seleção pode considerar segmentos e campanhas.
 
-**Lista** Uma lista é extraída de um segmento de usuários registrados. Por exemplo, a localização usada para orientar o conteúdo do parágrafo de teaser.
+**Lista** - Uma lista é extraída de um segmento de usuários registrados. Por exemplo, a localização usada para orientar o conteúdo do parágrafo de teaser.
 
 >[!NOTE]
 >
->Consulte [Segmentação](/help/sites-administering/campaign-segmentation.md) para obter mais informações sobre segmentos no AEM.
+>Consulte [Segmentação](/help/sites-administering/campaign-segmentation.md) para obter mais informações sobre segmentos no Adobe Experience Manager.

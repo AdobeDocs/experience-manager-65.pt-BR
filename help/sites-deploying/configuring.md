@@ -1,30 +1,26 @@
 ---
 title: Conceitos básicos de configuração
-seo-title: Basic Configuration Concepts
-description: Saiba como configurar o AEM.
-seo-description: Learn how to configure AEM.
-uuid: edcdd4bd-5917-417e-8913-40d488383ea9
+description: Saiba como configurar o Adobe Experience Manager.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 2%
+source-wordcount: '2112'
+ht-degree: 1%
 
 ---
 
 # Conceitos básicos de configuração{#basic-configuration-concepts}
 
-O Adobe Experience Manager (AEM) é instalado com configurações padrão para todos os parâmetros, o que permite sua execução imediata. No entanto, você pode configurar o AEM para seus próprios requisitos específicos.
+O Adobe Experience Manager (AEM) é instalado com configurações padrão para todos os parâmetros que permitem sua execução imediata. No entanto, você pode configurar o AEM para seus próprios requisitos específicos.
 
 Há muitos aspectos do AEM que podem ser configurados:
 
-* Alguns são [configurado normalmente para cada instalação de projeto](#primary-configuration-considerations) e devem ser revisados para confirmar se são aplicáveis ou não ao seu projeto.
+* Alguns são [configurado normalmente para cada instalação de projeto](#primary-configuration-considerations) e devem ser revisados para confirmar se são aplicáveis ao seu projeto.
 * [Configurações adicionais](#further-configuration-considerations) pode ser comum, embora não imperativo; relacionado aos recursos ou ao desempenho e estabilidade do sistema.
 * Outros são necessários apenas para certos recursos opcionais do AEM (eles são documentados junto com o recurso apropriado).
 
@@ -32,23 +28,23 @@ Dependendo da configuração específica, essas alterações podem ser feitas us
 
 * **Console da Web do Adobe CQ**
 
-   Este é um local padrão para configurar pacotes e serviços OSGi.
+  Este é um local padrão para configurar pacotes e serviços OSGi.
 
-   Consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e práticas recomendadas.
+  Consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e práticas recomendadas.
 
 * **Repositório**
 
-   Um subconjunto de configurações OSGi está disponível no repositório. Isso garante que copiar ou replicar o conteúdo do repositório recrie configurações idênticas. Você também pode adicionar suas próprias configurações, dependendo do modo de execução, ao repositório.
+  Um subconjunto de configurações OSGi está disponível no repositório. Isso garante que copiar ou replicar o conteúdo do repositório recrie configurações idênticas. Você também pode adicionar suas próprias configurações, dependendo do modo de execução, ao repositório.
 
-   Consulte [Configuração do OSGi no repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) e, em particular, [Adicionar uma nova configuração ao repositório](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) para obter mais detalhes.
+  Consulte [Configuração do OSGi no repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) e, em particular, [Adicionar uma nova configuração ao repositório](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) para obter mais detalhes.
 
 * **Sistema de arquivos**
 
-   Alguns arquivos de configuração residem no sistema de arquivos.
+  Alguns arquivos de configuração residem no sistema de arquivos.
 
 * **WCM AEM**
 
-   Vários aspectos podem ser configurados dentro do próprio WCM do AEM, muitos usando o [Ferramentas](/help/sites-administering/tools-consoles.md) console; por exemplo, agentes de replicação.
+  Vários aspectos podem ser configurados dentro do próprio WCM do AEM, muitos usando o [Ferramentas](/help/sites-administering/tools-consoles.md) console; por exemplo, agentes de replicação.
 
 >[!NOTE]
 >
@@ -58,9 +54,7 @@ Dependendo da configuração específica, essas alterações podem ser feitas us
 
 >[!NOTE]
 >
->A configuração do AEM é simples, mas você deve estar ciente de que:
->
->Certas alterações podem ter um grande impacto nos aplicativos. Por esse motivo, certifique-se de ter a experiência e o conhecimento necessários antes de começar a configurar o AEM e fazer apenas as alterações que você sabe que são necessárias. Quaisquer alterações feitas por meio do console OSGi são **imediatamente** aplicado ao sistema em execução (não é necessário reiniciar).
+>A configuração do AEM é simples. No entanto, esteja ciente de que determinadas alterações podem ter um grande impacto nos aplicativos. Por esse motivo, certifique-se de ter a experiência e o conhecimento necessários antes de começar a configurar o AEM e fazer apenas as alterações que você sabe que são necessárias. Quaisquer alterações feitas por meio do console OSGi são **imediatamente** aplicado ao sistema em execução (não é necessário reiniciar).
 
 ## Considerações sobre a configuração principal {#primary-configuration-considerations}
 
@@ -70,7 +64,7 @@ A lista fornece uma breve visão geral de cada aspecto de configuração, juntam
 
 ### Lista de verificação de segurança {#security-checklist}
 
-Vários problemas principais de configuração estão listados na [Lista de verificação de segurança](/help/sites-administering/security-checklist.md). Leia este documento e execute as ações necessárias para sua instalação.
+Vários problemas principais de configuração estão listados na [Lista de verificação de segurança](/help/sites-administering/security-checklist.md). Certifique-se de ler este documento e executar qualquer ação necessária para sua instalação.
 
 ### Configuração da interface do usuário padrão — otimizada para toque ou clássica {#configuring-the-default-ui-touch-optimized-or-classic}
 
@@ -87,7 +81,7 @@ Você pode configurar a interface do usuário necessária usando o [Mapeamento d
 
 ### IPv4 e IPv6 {#ipv-and-ipv}
 
-Todos os elementos do AEM (por exemplo, o repositório, o Dispatcher etc.) podem ser instalados em redes IPv4 e IPv6.
+Todos os elementos do AEM (por exemplo, o repositório e o Dispatcher) podem ser instalados em redes IPv4 e IPv6.
 
 A operação é contínua, pois nenhuma configuração especial é necessária. Quando necessário, você pode simplesmente especificar um endereço IP usando o formato apropriado ao seu tipo de rede.
 
@@ -95,25 +89,25 @@ Isso significa que quando um endereço IP precisar ser especificado, você poder
 
 * um endereço IPv6
 
-   por exemplo `https://[ab12::34c5:6d7:8e90:1234]:4502`
+  por exemplo `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * um endereço IPv4
 
-   por exemplo `https://123.1.1.4:4502`
+  por exemplo `https://123.1.1.4:4502`
 
 * um nome de servidor
 
-   por exemplo, `https://www.yourserver.com:4502`
+  por exemplo, `https://www.yourserver.com:4502`
 
 * o caso padrão de `localhost` será interpretado para instalações de rede IPv4 e IPv6
 
-   por exemplo, `http://localhost:4502`
+  por exemplo, `http://localhost:4502`
 
 ### Limpeza de versão {#version-purging}
 
-Em uma instalação padrão, o AEM cria uma nova versão de uma página ou nó sempre que você ativa uma página (após atualizar o conteúdo). Você também pode criar versões adicionais, mediante solicitação, usando o **Controle de versão** guia do sidekick. Todas essas versões são armazenadas no repositório e podem ser restauradas, se necessário.
+Em uma instalação padrão, o AEM cria uma versão de uma página ou nó sempre que você ativa uma página (após atualizar o conteúdo). Você também pode criar versões adicionais mediante solicitação usando o **Controle de versão** guia do sidekick. Todas essas versões são armazenadas no repositório e podem ser restauradas, se necessário.
 
-Essas versões nunca são removidas, portanto, o tamanho do repositório aumentará com o tempo e, portanto, precisará ser gerenciado.
+Essas versões nunca são removidas, portanto, o tamanho do repositório cresce com o tempo e, portanto, deve ser gerenciado.
 
 Consulte [Limpeza de versão](/help/sites-deploying/version-purging.md) para obter todos os detalhes, em especial [Gerenciador de versão](/help/sites-deploying/version-purging.md#version-manager) para obter detalhes sobre como configurar o AEM para limpar versões mais antigas quando uma nova versão é criada.
 
@@ -129,7 +123,7 @@ Consulte [Logs](/help/sites-deploying/configure-logging.md) para obter detalhes 
 
 ### Modos de execução {#run-modes}
 
-Os modos de execução permitem ajustar a instância de AEM para uma finalidade específica; por exemplo, criar ou publicar, testar, desenvolver ou intranet etc.
+Os modos de execução permitem ajustar a instância do AEM para uma finalidade específica. Por exemplo, crie ou publique, teste, desenvolvimento ou intranet e assim por diante.
 
 Isso é feito definindo coleções de parâmetros de configuração para cada modo de execução. Um conjunto básico de parâmetros de configuração é aplicado a todos os modos de execução, e você pode ajustar conjuntos adicionais para a finalidade de seu ambiente específico. Eles são aplicados conforme necessário.
 
@@ -182,17 +176,17 @@ Para gerenciamento de usuários no AEM (incluindo atribuição de direitos de ac
 
 ### Configuração do Dispatcher {#configuring-the-dispatcher}
 
-O Dispatcher é uma ferramenta de armazenamento em cache e/ou balanceamento de carga do Adobe Experience Manager, que pode ser usado em conjunto com um servidor Web de classe empresarial.
+O Dispatcher é a ferramenta do Adobe Experience Manager para armazenamento em cache, balanceamento de carga ou ambos. Ele pode ser usado com um servidor Web de classe empresarial.
 
-Consulte [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) para obter todos os detalhes, em especial [Configuração do Dispatcher](https://helpx.adobe.com/pt/experience-manager/dispatcher/using/dispatcher-configuration.html) para obter mais detalhes sobre a configuração.
+Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) para obter todos os detalhes, em especial [Configuração do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR) para obter mais detalhes sobre a configuração.
 
 ### Configuração do conector de LiveCycle AEM {#configuring-aem-livecycle-connector}
 
-Com o lançamento dos Serviços de Doc AEM e da Segurança AEM Doc, agora temos a capacidade de chamar os serviços de documento do LiveCycle para renderizar um formulário XFA, converter um documento em PDF e proteger um documento por meio de políticas. Leia [Conector do LiveCycle AEM](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) para obter mais detalhes.
+Com o lançamento dos Serviços de Doc AEM e da Segurança de Doc AEM, o AEM agora tem a capacidade de chamar os serviços de doc do LiveCycle para renderizar um formulário XFA, converter um documento em PDF e proteger um documento por meio de políticas. Consulte [Conector do LiveCycle AEM](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) para obter mais detalhes.
 
 ### Descarregamento de Jobs e Administração de Topologia {#job-offloading-and-topology-administration}
 
-[Descarregamento](/help/sites-deploying/offloading.md) distribui tarefas de processamento que constituem instâncias de Experience Manager em uma topologia. Com a descarga, você pode usar instâncias de Experience Manager específicas para executar tipos específicos de processamento. O processamento especializado permite maximizar o uso dos recursos disponíveis do servidor.
+[Descarregamento](/help/sites-deploying/offloading.md) distribui tarefas de processamento entre instâncias Experience Manager em uma topologia. Com a descarga, você pode usar instâncias de Experience Manager específicas para executar tipos específicos de processamento. O processamento especializado permite maximizar o uso dos recursos disponíveis do servidor.
 
 As topologias são clusters de Experience Manager livremente acoplados que estão participando da descarga. Um cluster consiste em uma ou mais instâncias do servidor Experience Manager (uma única instância é considerada um cluster).
 
@@ -244,17 +238,17 @@ Os objetos estáticos (por exemplo, ícones) não são alterados. Portanto, o si
 
 Consulte [Expiração de objetos estáticos](/help/sites-deploying/expiration-static-objects.md) para obter mais detalhes.
 
-### Arquivos abertos no processo Java {#open-files-in-the-java-process}
+### Arquivos abertos no processo Java™ {#open-files-in-the-java-process}
 
-Cada processo java pode acessar arquivos - isso requer recursos do sistema. Por esse motivo, um limite superior é definido como o número de arquivos que cada processo tem permissão para acessar simultaneamente. Se isso for excedido, pode ocorrer um erro de exceção.
+Cada processo Java™ pode acessar arquivos - isso requer recursos do sistema. Por esse motivo, um limite superior é definido como o número de arquivos que cada processo tem permissão para acessar simultaneamente. Se isso for excedido, poderá ocorrer um erro de exceção.
 
-Se o processo AEM exceder esse máximo, a mensagem &quot; `too many open files`&quot; será visto em `error.log`.
+Se o processo AEM exceder esse máximo, a mensagem &quot; `too many open files`&quot; é visto em `error.log`.
 
-Para evitar essas exceções, é necessário:
+Para evitar essas exceções, faça o seguinte:
 
-1. Verifique quantos arquivos abertos seu processo AEM está usando.
+1. Verifique quantos arquivos abertos o processo AEM está usando.
 
-   A forma como você faz essa verificação dependerá da plataforma em que sua instância está sendo executada. Utilitários como lsof (Unix) ou Process Explorer (Windows) podem ser usados.
+   Essa verificação depende da plataforma em que sua instância está sendo executada. Utilitários como lsof (UNIX®) ou Process Explorer (Windows) podem ser usados.
 
    Esse valor deve ser monitorado durante o desenvolvimento e o teste para:
 
@@ -301,7 +295,7 @@ Consulte [Configuração da notificação por e-mail](/help/sites-administering/
 
 ### Ativar impressões de página {#enabling-page-impressions}
 
-As impressões da página são exibidas na **Impressões** coluna da interface clássica do console siteadmin. Para habilitar a captura de impressões de página, é necessário configurar:
+As impressões da página são exibidas na **Impressões** coluna da interface clássica do console siteadmin. Para habilitar a captura de impressões de página, configure o seguinte:
 
 * Na instância de publicação:
 
@@ -309,8 +303,8 @@ As impressões da página são exibidas na **Impressões** coluna da interface c
 
 * Na instância do autor:
 
-   * [Rastreamento de impressões de página do Adobe](/help/sites-deploying/osgi-configuration-settings.md)
+   * [Rastreador de impressões de página do Adobe](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >
->A configuração do Rastreador de impressões de página do Adobe no ambiente de criação permitirá solicitações anônimas ao serviço de rastreamento.
+>A configuração do Rastreador de impressões de página do Adobe no ambiente do autor permite solicitações anônimas para o serviço de rastreamento.

@@ -1,18 +1,14 @@
 ---
 title: Campaign Management
-seo-title: Campaign Management
-description: O gerenciamento de campanhas oferece aos profissionais de marketing digital a oportunidade de fornecer conteúdo personalizado e, assim, criar experiências dedicadas para os visitantes. Ele permite que você orquestre suas campanhas de marketing na Web, no email e nos serviços móveis e, assim, envolva seus visitantes.
-seo-description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email and mobile services and so engage your visitors.
-uuid: 202d614b-a607-45de-8c24-1ee66b230315
+description: O gerenciamento de campanhas oferece aos profissionais de marketing digital a oportunidade de fornecer conteúdo personalizado e, assim, criar experiências dedicadas para os visitantes. Ele permite que você orquestre suas campanhas de marketing na Web, email e serviços móveis e, assim, envolva seus visitantes.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 exl-id: d1741525-a475-4a76-bd16-55318023495e
-source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '623'
 ht-degree: 1%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 1%
 
 O gerenciamento de campanhas oferece aos profissionais de marketing digital a oportunidade de fornecer conteúdo personalizado e, assim, criar experiências dedicadas para os visitantes.
 
-Ele permite que você orquestre suas campanhas de marketing na Web, no email e nos serviços móveis e, assim, envolva seus visitantes. Você pode criar conteúdo, segmentar visitantes, enviar e promover conteúdo direcionado para perfis de usuário específicos e gerenciar campanhas em vários canais.
+Ele permite que você orquestre suas campanhas de marketing na Web, email e serviços móveis e, assim, envolva seus visitantes. Você pode criar conteúdo, segmentar visitantes, enviar e promover conteúdo direcionado para perfis de usuário específicos e gerenciar campanhas em vários canais.
 
 Este documento descreve os vários elementos que compõem as campanhas. Informações mais detalhadas estão disponíveis nos seguintes documentos:
 
@@ -37,7 +33,7 @@ Este documento descreve os vários elementos que compõem as campanhas. Informa�
 O gerenciamento de campanhas é composto de vários elementos:
 
 * **Marcas**
-No AEM, as marcas são a unidade de nível superior e formam uma coleção de **Campanhas**.
+No Adobe Experience Manager (AEM), as marcas são a unidade de nível superior e formam uma coleção de **Campanhas**.
 
 * **Campanhas**
 Uma campanha é uma coleção de dados **Experiências**.
@@ -51,13 +47,13 @@ O conteúdo focado forma as várias experiências, apresentadas ao visitante no 
      As páginas de teaser podem:
 
       * apresentar uma variedade de opções para o visitante escolher
-      * mostrar apenas um parágrafo de teaser que seja baseado no segmento de visitante específico; por exemplo, o parágrafo de teaser mostrado pode ser dependente da idade do visitante.
+      * mostrar apenas um parágrafo de teaser com base no segmento de visitante específico. Por exemplo, o parágrafo de teaser mostrado pode depender da idade do visitante.
 
-     Normalmente, uma página de teaser é uma ação temporária que durará um período específico, até ser substituída pela próxima página de teaser.
+     Normalmente, uma página de teaser é uma ação temporária que dura um período específico, até ser substituída pela próxima página de teaser.
 
    * **Boletins informativos**
 
-     [Comunicações por e-mail](#emailmarketing) são usados para engajar os usuários e incentivá-los a visitar seu site. Normalmente, assumem a forma de um boletim informativo, enviado para o **Clientes potenciais** (que normalmente são agrupados em **Listas**). **Nota:** A Adobe não planeja aprimorar ainda mais esse recurso. A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+     [Comunicações por e-mail](#emailmarketing) são usados para engajar os usuários e incentivá-los a visitar seu site. Normalmente, assumem a forma de um boletim informativo, enviado para o **Clientes potenciais** (que estão agrupados em **Listas**). **Nota:** A Adobe não planeja aprimorar ainda mais esse recurso. A recomendação é [usar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
@@ -73,17 +69,17 @@ O conteúdo focado forma as várias experiências, apresentadas ao visitante no 
 
   As informações que você coletou sobre seus visitantes e como contatá-los formam a base para seus leads. **Nota:** A Adobe não planeja aprimorar ainda mais esse recurso.
 
-  A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+  A recomendação é [usar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 * **Listas**
 
-  Em geral, os clientes em potencial são agrupados em listas para que seja possível realizar ações coletivas neles. Nota: **Nota:** A Adobe não planeja aprimorar ainda mais esse recurso.
+  Os clientes em potencial são agrupados em listas para que você possa realizar ações coletivas neles. Nota: **Nota:** A Adobe não planeja aprimorar ainda mais esse recurso.
 
-  A recomendação é [aproveitar o Adobe Campaign e a integração com o AEM.](/help/sites-administering/campaign.md)
+  A recomendação é [usar o Adobe Campaign e a integração com o AEM.](/help/sites-administering/campaign.md)
 
 * **Segmentos**
 
-  Os visitantes do site têm interesses e objetivos diferentes quando chegam a um site. A análise disso de acordo com fatores como atividade no site, informações de perfil registradas e atividade em outros sites ajuda a definir segmentos. O conteúdo pode então ser direcionado especificamente para as necessidades e os interesses do visitante de acordo com os segmentos aos quais ele corresponde.
+  Os visitantes do site têm interesses e objetivos diferentes quando chegam a um site. A análise disso de acordo com fatores como atividade no site, informações de perfil registradas e atividade em outros sites ajuda a definir segmentos. O conteúdo pode então ser direcionado para as necessidades e os interesses do visitante de acordo com os segmentos aos quais ele corresponde.
 
 * **MCM**
 

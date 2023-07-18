@@ -1,19 +1,15 @@
 ---
 title: Ativando A Coleta De Estatísticas De Uso Agregado
-seo-title: Opting Into Aggregated Usage Statistics Collection
 description: Saiba como aderir às estatísticas de uso agregadas.
-seo-description: Learn how to opt into aggregated usage statistics.
-uuid: 8bd0b870-4bea-42e1-8179-e900164591b6
 contentOwner: raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 075f53cc-146b-4eea-bfbb-54beaed97915
 docset: aem65
 exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '300'
 ht-degree: 3%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 3%
 
 ## Introdução {#introduction}
 
-Você pode ajudar a melhorar o Adobe Marketing Cloud enviando estatísticas de Adobe sobre como você interage com o AEM. Estas informações não contêm dados sobre os visitantes do site da sua empresa e só serão usadas para ajudar o Adobe a fornecer, suportar e melhorar a experiência do usuário.
+Você pode ajudar a melhorar o Adobe Experience Cloud enviando estatísticas de Adobe sobre como interagir com o Adobe Experience Manager (AEM). Estas informações não contêm dados sobre os visitantes do site da sua empresa e são usadas apenas para ajudar o Adobe a fornecer, suportar e melhorar a experiência do usuário.
 
 Você pode aderir à coleção de estatísticas de uso usando a interface para toque ou o Console da Web.
 
@@ -34,7 +30,7 @@ Você pode aderir à coleção de estatísticas de uso usando a interface para t
 
 >[!NOTE]
 >
->Também é possível recusar a qualquer momento usando o [Console da Web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) ou não selecionando a opção de aceitação na tela de aceitação do AEM.
+>Você pode recusar a qualquer momento usando o [Console da Web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) ou não selecionando a opção de aceitação na tela de aceitação do AEM.
 
 ## Aceitar usando a interface para toque {#opt-in-by-using-the-touch-ui}
 
