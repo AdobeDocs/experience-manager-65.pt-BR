@@ -1,17 +1,15 @@
 ---
-title: Fragmentos de experiência no desenvolvimento do AEM Sites
+title: Fragmentos de experiência no desenvolvimento do Adobe Experience Manager Sites
 description: Saiba como personalizar fragmentos de experiência.
-uuid: fc9f7e59-bd7c-437a-8c63-de8559b5768d
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1777'
 ht-degree: 1%
 
 ---
@@ -71,7 +69,7 @@ A representação de HTML é gerada usando os Pipelines de reescrita do Sling. O
 
 ## Variações sociais {#social-variations}
 
-As variantes sociais podem ser publicadas em redes sociais (texto e imagem). No AEM, essas variantes sociais podem conter componentes; por exemplo, componentes de texto, componentes de imagem.
+As variantes sociais podem ser publicadas em redes sociais (texto e imagem). No Adobe Experience Manager (AEM), essas variantes sociais podem conter componentes; por exemplo, componentes de texto, componentes de imagem.
 
 A imagem e o texto da publicação social podem ser obtidos de qualquer tipo de recurso de imagem ou de texto em qualquer nível de profundidade (no bloco de construção ou no contêiner de layout).
 
@@ -109,11 +107,9 @@ Para criar um modelo de fragmento de experiência detectado pelo **Criar fragmen
 
    1. E o nome do template deve começar com:
       `experience-fragments`
-Isso permite que os usuários criem fragmentos de experiência em /content/experience-fragments como o 
-`cq:allowedTemplates` A propriedade desta pasta inclui todos os modelos com nomes que começam com `experience-fragment`. Os clientes podem atualizar essa propriedade para incluir seu próprio esquema de nomenclatura ou locais do modelo.
+Isso permite que os usuários criem fragmentos de experiência em /content/experience-fragments como o `cq:allowedTemplates` A propriedade desta pasta inclui todos os modelos com nomes que começam com `experience-fragment`. Os clientes podem atualizar essa propriedade para incluir seu próprio esquema de nomenclatura ou locais do modelo.
 
 1. [Modelos permitidos](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) O pode ser configurado no console Fragmentos de experiência.
-
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
@@ -148,7 +144,7 @@ Usar o [Exportar para o Target](/help/sites-administering/experience-fragments-t
 
 Esse recurso pode ser [ativado em uma instância de autor do AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). Ele requer uma configuração válida do Adobe Target e configurações para o Externalizador de links.
 
-O Externalizador de links é usado para determinar os URLs corretos necessários ao criar a versão do HTML da oferta do Target, que é enviada subsequentemente para o Adobe Target. Isso é necessário, pois o Adobe Target exige que todos os links dentro da Oferta de HTML do Target possam ser acessados publicamente. Isso significa que todos os recursos aos quais os links fazem referência e o próprio Fragmento de experiência devem ser publicados antes de serem usados.
+O Externalizador de links é usado para determinar os URLs corretos necessários ao criar a versão do HTML da oferta do Target, que é então enviada para o Adobe Target. Isso é necessário, pois o Adobe Target exige que todos os links dentro da Oferta de HTML do Target possam ser acessados publicamente. Isso significa que todos os recursos aos quais os links fazem referência e o próprio Fragmento de experiência devem ser publicados antes de serem usados.
 
 Por padrão, quando você constrói uma Oferta de HTML do Target, uma solicitação é enviada para um seletor de Sling personalizado no AEM. Esse seletor é chamado de `.nocloudconfigs.html`. Como o nome indica, ele cria uma renderização de HTML simples de um Fragmento de experiência, mas não inclui configurações de nuvem (que seriam informações supérfluas).
 
@@ -164,12 +160,12 @@ Depois de gerar a página HTML, o pipeline de reescrita do Sling faz modificaç�
 
    1. `src` atributos
    1. `href` atributos
-   1. `*-src` atributos (como data-src, custom-src etc.)
-   1. `*-href` atributos (como `data-href`, `custom-href`, `img-href`, etc.)
+   1. `*-src` atributos (como data-src, custom-src e assim por diante)
+   1. `*-href` atributos (como `data-href`, `custom-href`, `img-href`e assim por diante)
 
    >[!NOTE]
    >
-   >Na maioria dos casos, os links internos no HTML são links relativos, mas pode haver casos em que os componentes personalizados forneçam URLs completos no HTML. Por padrão, o AEM ignora esses URLs completos e não faz modificações.
+   >Normalmente, os links internos no HTML são links relativos, mas pode haver casos em que os componentes personalizados fornecem URLs completos no HTML. Por padrão, o AEM ignora esses URLs completos e não faz modificações.
 
    Os links nesses atributos são executados pelo Externalizador de links AEM `publishLink()` para recriar o URL como se ele estivesse em uma instância publicada e, como tal, disponibilizado publicamente.
 
@@ -216,7 +212,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 Para usar a interface, primeiro é necessário criar um pacote contendo um novo componente de serviço que implemente a interface do Provedor de reescrita de link.
 
-Esse serviço será usado para conectar a regravação da Exportação do fragmento de experiência para o Target para ter acesso aos vários links.
+Esse serviço é usado para conectar a regravação da Exportação do fragmento de experiência para o Target para ter acesso aos vários links.
 
 Por exemplo, `ComponentService`:
 
@@ -281,7 +277,7 @@ No exemplo acima, gostaríamos de reescrever:
 * `href` somente atributos
 
 * para um Fragmento de experiência específico:
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 Quaisquer outros Fragmentos de experiência que passam pelo sistema Exportar para o Target são ignorados e não são afetados pelas alterações implementadas neste Serviço.
 
@@ -294,16 +290,15 @@ Para a variação do Fragmento de experiência afetada pelo processo de regrava�
 Como entrada, o método recebe os parâmetros:
 
 * `link`
-O 
-`String` representação do link que está sendo processado no momento. Normalmente, esse é um URL relativo que aponta para o recurso na instância do autor.
+A variável `String` representação do link que está sendo processado. Normalmente, esse é um URL relativo que aponta para o recurso na instância do autor.
 
 * `tag`
-O nome do elemento HTML que está sendo processado no momento.
+O nome do elemento HTML que está sendo processado.
 
 * `attribute`
 O nome exato do atributo.
 
-Se, por exemplo, o sistema Exportar para o Target estiver processando esse elemento no momento, você poderá definir `CSSInclude` como:
+Por exemplo, se o sistema Exportar para o Target estiver processando esse elemento, você poderá definir `CSSInclude` como:
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
@@ -350,7 +345,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->Se o método acima retornar `null`, em seguida, o sistema Export to Target deixará o link como está, um link relativo para um recurso.
+>Se o método acima retornar `null`, em seguida, o sistema Export to Target deixa o link como está, um link relativo para um recurso.
 
 #### Prioridades - getPriority {#priorities-getpriority}
 

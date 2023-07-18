@@ -1,18 +1,14 @@
 ---
 title: Criação de um novo componente de campo da interface de usuário do Granite
-seo-title: Creating a New Granite UI Field Component
 description: A interface do usuário do Granite fornece vários componentes projetados para serem usados em formulários, chamados de campos
-seo-description: Granite UI provides a range of components designed to be used in forms, called fields
-uuid: cf26e057-4b0c-45f4-8975-2c658517f20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
 exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
@@ -29,7 +25,7 @@ A interface do usuário do Granite fornece vários componentes projetados para s
 
 >[!NOTE]
 >
->Para obter detalhes completos sobre campos, consulte [Documentação da interface de usuário do Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+>Para obter detalhes completos sobre campos, consulte [Documentação da interface de usuário do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Use a estrutura do Granite UI Foundation para desenvolver e/ou estender componentes do Granite. Isso tem dois elementos:
 
@@ -39,19 +35,19 @@ Use a estrutura do Granite UI Foundation para desenvolver e/ou estender componen
 
       * base - modular, componível, em camadas, reutilizável
       * componentes - componentes Sling
-   * auxiliares para ajudar no desenvolvimento de aplicativos
 
+   * auxiliares para ajudar no desenvolvimento de aplicativos
 
 * lado do cliente:
 
-   * uma coleção de clientlibs que fornecem algum vocabulário (ou seja, extensão da linguagem HTML) para alcançar padrões de interação genéricos por meio de uma interface orientada por Hypermedia
+   * uma coleção de clientlibs fornecendo algum vocabulário (isto é, extensão da linguagem HTML) para alcançar padrões de interação genéricos através de uma interface de usuário orientada por Hypermedia.
 
 O componente genérico da interface do Granite `field` O é composto por dois arquivos de interesse:
 
-* `init.jsp`: lida com o processamento genérico; a rotulagem, a descrição e fornece o valor de formulário necessário ao renderizar o campo.
-* `render.jsp`: é aqui que a renderização real do campo é executada e precisa ser substituída para seu campo personalizado; é incluído por `init.jsp`.
+* `init.jsp`: lida com o processamento genérico, rotulagem, descrição e fornece o valor de formulário necessário ao renderizar o campo.
+* `render.jsp`: é aqui que a renderização real do campo é executada e deve ser substituída para seu campo personalizado; é incluído por `init.jsp`.
 
-Consulte a [Documentação da interface do Granite - Campo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) se quiser mais detalhes.
+Consulte [Documentação da interface do Granite - Campo](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) para obter detalhes.
 
 Para obter exemplos, consulte:
 
@@ -63,7 +59,7 @@ Para obter exemplos, consulte:
 
 >[!NOTE]
 >
->Como esse mecanismo usa JSP, i18n e XSS não são fornecidos prontos para uso. Isso significa que você precisará internacionalizar e escapar suas Strings. O diretório a seguir contém os campos genéricos de uma instância padrão. Você pode usá-los como uma referência:
+>Como esse mecanismo usa JSP, i18n e XSS não são fornecidos prontos para uso. Isso significa que você deve internacionalizar e escapar seus Strings. O diretório a seguir contém os campos genéricos de uma instância padrão. Você pode usá-los como uma referência:
 >
 >`/libs/granite/ui/components/foundation/form` diretório
 
@@ -71,7 +67,7 @@ Para obter exemplos, consulte:
 
 Seu campo personalizado deve substituir apenas o `render.jsp` script, em que você fornece a marcação para o componente. Você pode considerar o JSP (ou seja, o script de renderização) como um invólucro para a marcação.
 
-1. Crie um novo componente que use a variável `sling:resourceSuperType` propriedade da qual herdar:
+1. Crie um componente que use a variável `sling:resourceSuperType` propriedade da qual herdar:
 
    `/libs/granite/ui/components/foundation/form/field`
 
@@ -79,7 +75,7 @@ Seu campo personalizado deve substituir apenas o `render.jsp` script, em que voc
 
    `render.jsp`
 
-   Nesse script, é necessário gerar a marcação hipermídia (ou seja, marcação enriquecida, que contém o preço acessível da hipermídia) para que o cliente saiba como interagir com o elemento gerado. Isso deve seguir o estilo de codificação do lado do servidor da interface do Granite.
+   Nesse script, gere a marcação hypermedia (ou seja, marcação enriquecida, contendo o custo da hypermedia) para que o cliente saiba como interagir com o elemento gerado. Isso deve seguir o estilo de codificação do lado do servidor da interface do Granite.
 
    Ao personalizar, o único contrato que você *deve* fulfillment é ler o valor do formulário (inicializado em `init.jsp`) da solicitação usando:
 
@@ -93,7 +89,7 @@ Seu campo personalizado deve substituir apenas o `render.jsp` script, em que voc
 
    >[!NOTE]
    >
-   >No momento, o JSP é o método de script preferido, pois transmitir informações de um componente para outro (o que é bastante frequente no contexto de formulário/campos) não é facilmente obtido no HTL.
+   >No momento, o JSP é o método de script preferido, pois transmitir informações de um componente para outro (o que é frequente no contexto de formulário/campos) não é facilmente obtido no HTL.
 
 ## Criação da biblioteca do cliente para o componente {#creating-the-client-library-for-the-component}
 

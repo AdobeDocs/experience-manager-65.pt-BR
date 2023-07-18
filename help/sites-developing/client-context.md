@@ -1,18 +1,16 @@
 ---
 title: Contexto do cliente em detalhes
-description: O Client Context representa uma coleção de dados do usuário montada dinamicamente
-uuid: 95b08fbd-4f50-44a1-80fb-46335fe04a40
+description: O Client Context representa uma coleção de dados do usuário montada dinamicamente.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: c881ad66-bcc3-4f99-b77f-0944c23e2d29
 docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3001'
 ht-degree: 0%
 
 ---
@@ -31,7 +29,7 @@ O Contexto do cliente consiste principalmente nos seguintes aspectos:
 * A interface que exibe os dados do usuário e fornece ferramentas para simular a experiência do usuário.
 * A [API JavaScript](/help/sites-developing/ccjsapi.md) para interagir com armazenamentos de sessão.
 
-Para criar um armazenamento de sessão independente e adicioná-lo ao Contexto do cliente, ou criar um armazenamento de sessão vinculado a um componente do Armazenamento de contexto. O AEM instala vários componentes do Context Store que você pode usar imediatamente. Você pode usar esses componentes como base para seus componentes.
+Para criar um armazenamento de sessão independente e adicioná-lo ao Contexto do cliente, ou criar um armazenamento de sessão vinculado a um componente do Armazenamento de contexto. O Adobe Experience Manager (AEM) instala vários componentes do Context Store que você pode usar imediatamente. Você pode usar esses componentes como base para seus componentes.
 
 Para obter informações sobre como abrir o Client Context, configurar as informações exibidas e simular a experiência do usuário, consulte [Client Context](/help/sites-administering/client-context.md).
 
@@ -46,7 +44,7 @@ A estrutura do Client Context fornece uma [API JavaScript](/help/sites-developin
 
 Os dados do repositório de sessão permanecem no cliente. O Client Context não grava dados no servidor. Para enviar dados ao servidor, use um formulário ou desenvolva um JavaScript personalizado.
 
-Cada armazenamento de sessão é uma coleção de pares de valor de propriedade. O armazenamento de sessão representa uma coleção de dados (de qualquer tipo), cujo significado conceitual pode ser decidido pelo designer e/ou desenvolvedor. O exemplo de código JavaScript a seguir define um objeto que representa os dados do perfil que o armazenamento de sessão pode conter:
+Cada armazenamento de sessão é uma coleção de pares de valor de propriedade. O armazenamento de sessão representa uma coleção de dados (de qualquer tipo), cujo significado conceitual pode ser decidido pelo designer ou desenvolvedor, ou ambos. O exemplo de código JavaScript a seguir define um objeto que representa os dados do perfil que o armazenamento de sessão pode conter:
 
 ```
 {
@@ -66,7 +64,7 @@ Um armazenamento de sessão pode ser mantido entre sessões do navegador ou pode
 >
 >A persistência de armazenamento usa o armazenamento do navegador ou cookies (a variável `SessionPersistence` cookie). O armazenamento do navegador é mais comum.
 >
->Quando o navegador é fechado e reaberto, um armazenamento de sessão pode ser carregado com os valores de um armazenamento persistente. Em seguida, é necessário limpar o cache do navegador para remover os valores antigos.
+>Quando o navegador é fechado e reaberto, um armazenamento de sessão pode ser carregado com os valores de um armazenamento persistente. É necessário limpar o cache do navegador para remover os valores antigos.
 
 ### Componentes do armazenamento de contexto {#context-store-components}
 
@@ -102,7 +100,7 @@ Inclua o componente Contexto do cliente na seção de corpo das páginas da Web 
 O componente clientcontext faz com que a página carregue as bibliotecas de clientes que implementam o Client Context.
 
 * A API do JavaScript do Client Context.
-* A estrutura do Client Context compatível com armazenamentos de sessão, gerenciamento de eventos etc.
+* A estrutura do Client Context compatível com armazenamentos de sessão, gerenciamento de eventos e assim por diante.
 * Segmentos definidos.
 * Os scripts init.js gerados para cada componente do armazenamento de contexto que foi adicionado ao Contexto do cliente.
 * (Somente instância do autor) A interface do usuário do Client Context.
@@ -118,11 +116,11 @@ Para estender o Client Context, crie um armazenamento de sessão e, como opção
 
 >[!NOTE]
 >
->Se você tiver (ou criar) uma `JSONP` serviço que pode fornecer os dados, você pode simplesmente usar o `JSONP` componente de armazenamento de contexto e mapeá-lo para o serviço JSONP. Isso manipulará o armazenamento da sessão.
+>Se você tiver (ou criar) uma `JSONP` serviço que pode fornecer os dados, você pode simplesmente usar o `JSONP` componente de armazenamento de contexto e mapeá-lo para o serviço JSONP. Isso manipula o armazenamento da sessão.
 
 ### Criar um armazenamento de sessão {#creating-a-session-store}
 
-Crie um armazenamento de sessão para os dados que você precisa adicionar e recuperar do Contexto do cliente. Geralmente, você usa o seguinte procedimento para criar um armazenamento de sessão:
+Crie um armazenamento de sessão para os dados que você deve adicionar e recuperar do Client Context. Geralmente, você usa o seguinte procedimento para criar um armazenamento de sessão:
 
 1. Crie uma pasta da biblioteca do cliente que tenha um `categories` valor da propriedade de `personalization.stores.kernel`. O Client Context carrega automaticamente as bibliotecas de clientes desta categoria.
 
@@ -151,7 +149,7 @@ A API também fornece extensões dessas classes especializadas para armazenar da
 
 #### Criando o objeto de armazenamento da sessão {#creating-the-session-store-object}
 
-O JavaScript da pasta da biblioteca do cliente cria e inicializa o armazenamento de sessão. O armazenamento de sessão deve ser registrado usando o Gerenciador de armazenamento de contexto. O exemplo a seguir cria e registra um [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) objeto.
+O JavaScript da pasta da biblioteca do cliente cria e inicializa o armazenamento de sessão. O armazenamento de sessão deve ser registrado usando o Gerenciador de Armazenamento de Contexto. O exemplo a seguir cria e registra um [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) objeto.
 
 ```
 //Create the session store
@@ -192,7 +190,7 @@ O AEM fornece os componentes de armazenamento genérico e de armazenamento de co
 
    * `prolog.jsp` e `epilog.jsp`: interação de componente que permite adicionar lógica do lado do servidor antes ou depois da renderização do componente.
 
-* Dados complexos: estenda o `GenericStore` componente. Seu armazenamento de sessão precisará de um método &quot;renderizador&quot; que será chamado toda vez que o componente precisar ser renderizado. A função do renderizador é chamada com dois parâmetros:
+* Dados complexos: estenda o `GenericStore` componente. Seu armazenamento de sessão precisa de um método &quot;renderizador&quot; que é chamado sempre que o componente deve ser renderizado. A função do renderizador é chamada com dois parâmetros:
 
    * `@param {String} store`
 O armazenamento a ser renderizado
@@ -300,7 +298,7 @@ A variável `/libs/cq/personalization/components/contextstores/profiledata` o co
 
 ### Renderização de Dados de Repositório de Sessão para Componentes de repositório genérico {#rendering-session-store-data-for-genericstore-components}
 
-Para renderizar dados de armazenamento usando um componente de armazenamento genérico, é necessário:
+Para renderizar dados de armazenamento usando um componente de armazenamento genérico, faça o seguinte:
 
 * Adicione a tag personalization:storeRendererTag ao script JSP do componente para identificar o nome do armazenamento da sessão.
 * Implemente um método de renderizador na classe de armazenamento de sessão.
@@ -321,7 +319,7 @@ A tag tem o seguinte formato:
 
 #### Implementar o método renderizador de armazenamento de sessão {#implementing-the-session-store-renderer-method}
 
-Seu armazenamento de sessão precisará de um método &quot;renderizador&quot; que será chamado toda vez que o componente precisar ser renderizado. A função do renderizador é chamada com dois parâmetros:
+Seu armazenamento de sessão precisa de um método &quot;renderizador&quot; que é chamado sempre que o componente deve ser renderizado. A função do renderizador é chamada com dois parâmetros:
 
 * @param {String} armazenamento O armazenamento a ser renderizado
 * @param {String} divId Id da div na qual o armazenamento deve ser renderizado.
@@ -383,7 +381,7 @@ Use o [CQ_Analytics.ClientContextUtils](/help/sites-developing/ccjsapi.md#cq-ana
 
 >[!CAUTION]
 >
->Se você depender de outra loja, precisará atender ao caso de quando a loja nunca é registrada.
+>Se você depender de outra loja, deverá atender ao caso de quando a loja nunca é registrada.
 
 O exemplo a seguir usa o `onStoreRegistered` evento do `profile` armazenamento de sessão. Quando o armazenamento é registrado, um listener é adicionado ao `update` evento do armazenamento de sessão. Quando a loja é atualizada, o conteúdo de `<div class="welcome">` elemento na página é atualizado com o nome do campo `profile` armazenamento.
 
@@ -415,7 +413,7 @@ function getName(){
 
 ### Excluir uma propriedade do cookie sessionpersistence {#excluding-a-property-from-the-sessionpersistence-cookie}
 
-Para impedir que uma propriedade de um `PersistedSessionStore` de ser persistente (ou seja, excluí-lo da variável `sessionpersistence` cookie), adicione a propriedade à lista de propriedades não persistentes do armazenamento de sessão persistente.
+Para impedir que uma propriedade de um `PersistedSessionStore` de ser mantido (ou seja, exclua-o da lista `sessionpersistence` cookie), adicione a propriedade à lista de propriedades não persistentes do armazenamento de sessão persistente.
 
 Consulte ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`
 
@@ -441,7 +439,7 @@ Ao alternar da página da área de trabalho para seu equivalente móvel:
 * O DOM da página móvel é carregado.
 * O principal `div` (obrigatório) que contém o conteúdo, é extraído e inserido na página da área de trabalho atual.
 
-* O CSS e as classes de corpo que precisam ser carregadas precisam ser configuradas manualmente.
+* O CSS e as classes de corpo que são carregadas devem ser configuradas manualmente.
 
 Por exemplo:
 
@@ -503,7 +501,7 @@ Crie um aplicativo CQ e adicione o componente geográfico.
 
 ### Criar a caixa de diálogo de edição geográfica {#create-the-geoloc-edit-dialog}
 
-O componente de armazenamento de contexto requer uma caixa de diálogo de edição. A caixa de diálogo de edição geográfica conterá uma mensagem estática que indica que não há propriedades a serem configuradas.
+O componente de armazenamento de contexto requer uma caixa de diálogo de edição. A caixa de diálogo de edição geográfica contém uma mensagem estática que indica que não há propriedades a serem configuradas.
 
 1. Clique com o botão direito do mouse no `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` e clique em Copiar.
 1. Clique com o botão direito do mouse no `/apps/myapp/contextstores/geoloc` e clique em colar.
@@ -610,13 +608,13 @@ Abra a página inicial do Geometrixx Outdoors no modo de edição e abra o Conte
 
 ## Criação de um Contexto de cliente personalizado {#creating-a-customized-client-context}
 
-Para criar um segundo contexto de cliente, é necessário duplicar a ramificação:
+Para criar um segundo contexto de cliente, duplique a ramificação:
 
 `/etc/clientcontext/default`
 
 * A subpasta:
   `/content`
-conterá o conteúdo do contexto de cliente personalizado.
+contém o conteúdo do contexto de cliente personalizado.
 
 * A pasta:
   `/contextstores`

@@ -1,30 +1,26 @@
 ---
 title: Modo de desenvolvedor
-seo-title: Developer Mode
-description: O Modo de desenvolvedor abre um painel lateral com várias guias que fornecem ao desenvolvedor informações sobre a página atual
-seo-description: Developer mode opens a side panel with several tabs that provide a developer with infomation about the current page
-uuid: 8301ab51-93d6-44f9-a813-ba7f03f54485
+description: O Modo de desenvolvedor abre um painel lateral com várias guias que fornecem ao desenvolvedor informações sobre a página atual.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '686'
 ht-degree: 1%
 
 ---
 
 # Modo de desenvolvedor{#developer-mode}
 
-Ao editar páginas no AEM, várias [modos](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) estão disponíveis, incluindo o Modo de desenvolvedor. Isso abre um painel lateral com várias guias que fornecem informações sobre a página atual para um desenvolvedor. As três guias são:
+Ao editar páginas no Adobe Experience Manager (AEM), várias [modos](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) estão disponíveis, incluindo o Modo de desenvolvedor. Isso abre um painel lateral com várias guias que fornecem informações sobre a página atual para um desenvolvedor. As três guias são:
 
 * **[Componentes](#components)** para exibir informações sobre estrutura e desempenho.
 * **[Testes](#tests)** para executar testes e analisar os resultados.
-* **[Erros](#errors)** para ver se há problemas.
+* **[Erros](#errors)** para ver os problemas que ocorrerem.
 
 Isso ajuda um desenvolvedor a:
 
@@ -38,10 +34,9 @@ Isso ajuda um desenvolvedor a:
 >
 >* Só está disponível na interface habilitada para toque (ao editar páginas).
 >* Não está disponível em dispositivos móveis ou janelas pequenas na área de trabalho (devido a restrições de espaço).
-   >
-   >   * Isso ocorre quando a largura é menor que 1024px.
+>
+>   * Isso ocorre quando a largura é menor que 1024px.
 >* Está disponível somente para usuários que são membros da `administrators` grupo.
-
 
 >[!CAUTION]
 >
@@ -59,9 +54,8 @@ Isso ajuda um desenvolvedor a:
 >Consulte:
 >
 >* Artigo da knowledge base, [Solução de problemas da interface de toque AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obter mais dicas e ferramentas.
->* Sessão AEM Gems sobre [Modo de desenvolvedor do AEM 6.0](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
+>* Sessão AEM Gems sobre [Modo de desenvolvedor do AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=en).
 >
-
 
 ## Abrindo o Modo de Desenvolvedor {#opening-developer-mode}
 
@@ -81,8 +75,8 @@ O painel é dividido em duas guias:
 
 Isso mostra uma árvore de componentes que:
 
-* Descreve a cadeia de componentes e modelos renderizados na página (SLY, JSP, etc.). A árvore pode ser expandida para mostrar o contexto dentro da hierarquia.
-* Mostra o tempo computacional do lado do servidor necessário para renderizar o componente.
+* Descreve a cadeia de componentes e modelos renderizados na página (SLY, JSP e assim por diante). A árvore pode ser expandida para mostrar o contexto dentro da hierarquia.
+* Mostra o tempo computacional do lado do servidor para renderizar o componente.
 * Permite expandir a árvore e selecionar componentes específicos dentro dela. A seleção fornece acesso aos detalhes do componente; como:
 
    * Caminho do repositório
@@ -105,7 +99,7 @@ Cada entrada de componente pode mostrar (por exemplo):
    * todos os scripts de componentes usados para renderizar o componente.
    * o caminho do conteúdo do repositório para este componente específico.
 
-   ![chlimage_1-14](assets/chlimage_1-14.png)
+  ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Editar script**: um link que:
 
@@ -116,11 +110,11 @@ Cada entrada de componente pode mostrar (por exemplo):
    * A hierarquia no componente selecionado.
    * Tempos de renderização para o componente selecionado isolado, quaisquer componentes individuais aninhados dentro dele e o total combinado.
 
-   ![chlimage_1-15](assets/chlimage_1-15.png)
+  ![chlimage_1-15](assets/chlimage_1-15.png)
 
 >[!CAUTION]
 >
->Alguns links apontam para scripts em `/libs`. No entanto, eles são apenas para referência, você **não deve** editar qualquer item em `/libs`, pois as alterações feitas poderão ser perdidas. Isso se deve ao fato de que essa ramificação pode mudar sempre que você atualizar ou aplicar um pacote de hotfixes/recursos. Quaisquer alterações necessárias devem ser feitas em `/apps`, consulte [Sobreposições e substituições](/help/sites-developing/overlays.md).
+>Alguns links apontam para scripts em `/libs`. No entanto, eles são apenas para referência, você **não deve** editar qualquer item em `/libs`, pois as alterações feitas poderão ser perdidas. Isso ocorre porque essa ramificação pode sofrer alterações sempre que você atualizar ou aplicar um hotfix ou pacote de recursos. Faça as alterações necessárias em `/apps`. Consulte [Sobreposições e substituições](/help/sites-developing/overlays.md).
 
 ### Erros {#errors}
 
@@ -131,7 +125,7 @@ Esperamos que o **Erros** A guia sempre estará vazia (como acima), mas quando o
 * Um aviso se o componente gravar uma entrada no log de erros, juntamente com detalhes do erro e links diretos para o código apropriado no CRXDE Lite.
 * Um aviso se o componente abrir uma sessão de administrador.
 
-Por exemplo, em uma situação em que um método indefinido é chamado, o erro resultante será mostrado no **Erros** guia:
+Por exemplo, em uma situação em que um método indefinido é chamado, o erro resultante é mostrado no **Erros** guia:
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -141,6 +135,6 @@ A entrada de componente na árvore da guia Componentes também será marcada com
 
 >[!CAUTION]
 >
->No AEM 6.2, os recursos de teste do Modo de desenvolvedor foram reimplementados como um aplicativo de Ferramentas independente.
+>No AEM 6.2, os recursos de teste do modo de Desenvolvedor foram reimplementados como uma aplicação de Ferramentas independente.
 >
 >Para obter detalhes completos, consulte [Teste da interface do usuário](/help/sites-developing/hobbes.md).

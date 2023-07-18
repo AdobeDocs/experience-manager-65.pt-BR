@@ -1,37 +1,33 @@
 ---
 title: Desenvolvimento do editor de itens em massa
-seo-title: Developing the Bulk Editor
 description: A marcação permite que o conteúdo seja categorizado e organizado
-seo-description: Tagging allows content to be categorized and organized
-uuid: 3cd04c52-5bdb-47f6-9fa3-d7a4937e8e20
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1836'
 ht-degree: 2%
 
 ---
 
 # Desenvolvimento do editor de itens em massa{#developing-the-bulk-editor}
 
-Esta seção descreve como desenvolver a ferramenta editor de itens em massa e como estender o componente Lista de produtos, que é baseado no editor de itens em massa.
+Esta seção descreve como desenvolver a ferramenta Editor de itens em massa e como estender o componente Lista de produtos, que é baseado no Editor de itens em massa.
 
 ## Parâmetros de consulta do editor em massa {#bulk-editor-query-parameters}
 
-Ao trabalhar com o editor de itens em massa, há vários parâmetros de consulta que você pode adicionar ao URL para chamar o editor de itens em massa com uma configuração específica. Se você quiser que o editor de itens em massa seja sempre usado com uma determinada configuração, por exemplo, como no componente Lista de produtos, será necessário modificar bulkeditor.jsp (localizado em /libs/wcm/core/components/bulkeditor) ou criar um componente com a configuração específica. As alterações feitas usando parâmetros de consulta não são permanentes.
+Ao trabalhar com o Editor de itens em massa, há vários parâmetros de consulta que você pode adicionar ao URL para chamar o Editor de itens em massa com uma configuração específica. Se você quiser que o Editor de itens em massa seja sempre usado com uma determinada configuração, por exemplo, como no componente Lista de produtos, edite `bulkeditor.jsp` (em /libs/wcm/core/components/bulkeditor) ou crie um componente com a configuração específica. As alterações feitas usando parâmetros de consulta não são permanentes.
 
 Por exemplo, se você digitar o seguinte no URL do navegador:
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-o editor de itens em massa é exibido sem o **Caminho raiz** field como hrp=true oculta o campo. Com o parâmetro hrp=false, o campo é exibido (o valor padrão).
+O Editor de itens em massa é exibido sem a **Caminho raiz** field como hrp=true oculta o campo. Com o parâmetro hrp=false, o campo é exibido (o valor padrão).
 
-Veja a seguir uma lista dos parâmetros de consulta do editor em massa:
+Veja a seguir uma lista dos parâmetros de consulta do Editor de itens em massa:
 
 >[!NOTE]
 >
@@ -164,16 +160,16 @@ Veja a seguir uma lista dos parâmetros de consulta do editor em massa:
 
 ### Desenvolvimento de um componente baseado no Editor de itens em massa: o componente de Lista de produtos {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-Esta seção fornece uma visão geral de como usar o editor de itens em massa e fornece uma descrição do componente do Geometrixx existente com base no editor de itens em massa: o componente Lista de produtos.
+Esta seção fornece uma visão geral de como usar o Editor de itens em massa e fornece uma descrição do componente Geometrixx existente com base no Editor de itens em massa: o componente Lista de produtos.
 
-O componente Lista de produtos permite que os usuários exibam e editem uma tabela de dados. Por exemplo, você pode usar o componente Lista de produtos para representar produtos em um catálogo. As informações são apresentadas em uma tabela de HTML padrão e qualquer edição é executada no **Editar** que contém um dispositivo BulkEditor. (Esse Editor de itens em massa é exatamente o mesmo que o acessível em /etc/importers/bulkeditor.html ou pelo menu Ferramentas). O componente Lista de produtos foi configurado para funcionalidade específica e limitada do editor de itens em massa. Todas as partes do editor de itens em massa (ou componentes derivados do editor de itens em massa) podem ser configuradas.
+O componente Lista de produtos permite que os usuários exibam e editem uma tabela de dados. Por exemplo, você pode usar o componente Lista de produtos para representar produtos em um catálogo. As informações são apresentadas em uma tabela de HTML padrão e qualquer edição é executada no **Editar** que contém um dispositivo BulkEditor. (Este Editor de itens em massa é o mesmo que o acessível em /etc/importers/bulkeditor.html ou através do menu Ferramentas). O componente Lista de produtos foi configurado para funcionalidade específica e limitada do Editor de itens em massa. Cada parte do Editor de itens em massa (ou componentes derivados do Editor de itens em massa) pode ser configurada.
 
-Com o editor em massa, você pode adicionar, modificar, excluir, filtrar e exportar as linhas, salvar modificações e importar um conjunto de linhas. Cada linha é armazenada como um nó na própria instância do componente Lista de produtos. Cada célula é uma propriedade de cada nó. Essa é uma opção de design e pode ser facilmente alterada. Por exemplo, você pode armazenar nós em outro lugar no repositório. A função do servlet de consulta é retornar a lista dos nós a serem exibidos; o caminho de pesquisa é definido como uma instância da Lista de produtos.
+Com o Editor de itens em massa, você pode adicionar, modificar, excluir, filtrar e exportar as linhas, salvar modificações e importar um conjunto de linhas. Cada linha é armazenada como um nó na própria instância do componente Lista de produtos. Cada célula é uma propriedade de cada nó. Essa é uma opção de design e pode ser facilmente alterada. Por exemplo, você pode armazenar nós em outro lugar no repositório. A função do servlet de consulta é retornar a lista dos nós a serem exibidos; o caminho de pesquisa é definido como uma instância da Lista de produtos.
 
-O código-fonte do componente Lista de produtos está disponível no repositório em /apps/geometrixx/components/productlist e é composto por várias partes, como todos os componentes AEM:
+O código-fonte do componente Lista de produtos está disponível no repositório em /apps/geometrixx/components/productlist e é composto por várias partes, como todos os componentes do Adobe Experience Manager (AEM):
 
 * Renderização de HTML: a renderização é feita em um arquivo JSP (/apps/geometrixx/components/productlist/productlist.jsp). O JSP lê os subnós do componente Lista de produtos atual e exibe cada um deles como uma linha de uma tabela HTML.
-* Caixa de diálogo de edição, que é onde você define a configuração do Editor de itens em massa. Configure a caixa de diálogo para corresponder às necessidades do componente: colunas disponíveis e possíveis ações executadas na grade ou na pesquisa. Consulte [propriedades de configuração do editor em massa](#bulk-editor-configuration-properties) para obter informações sobre todas as propriedades de configuração.
+* Caixa de diálogo de edição, que é onde você define a configuração do Editor de itens em massa. Configure a caixa de diálogo para corresponder às necessidades do componente: colunas disponíveis e possíveis ações executadas na grade ou na pesquisa. Consulte [Propriedades de configuração do Editor de itens em massa](#bulk-editor-configuration-properties) para obter informações sobre todas as propriedades de configuração.
 
 Aqui está uma representação XML dos subnós do diálogo:
 
@@ -268,7 +264,7 @@ Aqui está uma representação XML dos subnós do diálogo:
 
 ### Propriedades de configuração do editor de itens em massa {#bulk-editor-configuration-properties}
 
-Todas as partes do editor de itens em massa podem ser configuradas. A tabela a seguir lista todas as propriedades de configuração do editor de itens em massa.
+Cada parte do Editor de itens em massa pode ser configurada. A tabela a seguir lista todas as propriedades de configuração do Editor de itens em massa.
 
 <table>
  <tbody>
@@ -294,7 +290,7 @@ Todas as partes do editor de itens em massa podem ser configuradas. A tabela a s
   </tr>
   <tr>
    <td>extraCols</td>
-   <td>Propriedades pesquisadas adicionais (exibidas em um campo de texto separado por vírgula)</td>
+   <td>Propriedades pesquisadas extras (exibidas em um campo de texto separado por vírgulas)</td>
   </tr>
   <tr>
    <td>initialSearch</td>
@@ -457,7 +453,7 @@ Você pode configurar para cada coluna:
 
 Colunas CSS e somente leitura
 
-O editor de itens em massa tem três configurações de coluna:
+O Editor de itens em massa tem três configurações de coluna:
 
 * Nome da classe CSS da célula (cellCls): um nome de classe CSS que é adicionado a cada célula da coluna configurada.
 * Estilo da célula (cellStyle): um estilo de HTML que é adicionado a cada célula da coluna configurada.
@@ -526,14 +522,14 @@ No exemplo anterior, a coluna de seleção é a primeira coluna como forcedPosit
 
 Por padrão, o servlet Query pode ser encontrado em `/libs/wcm/core/components/bulkeditor/json.java`. Você pode configurar outro caminho para recuperar os dados.
 
-O servlet Query funciona da seguinte maneira: ele recebe uma consulta GQL e as colunas a serem retornadas, calcula os resultados e os envia de volta para o editor de itens em massa como um fluxo JSON.
+O servlet Query funciona da seguinte maneira: ele recebe uma consulta GQL e as colunas a serem retornadas, calcula os resultados e os envia de volta para o Editor de itens em massa como um fluxo JSON.
 
 No caso do componente Lista de produtos, os dois parâmetros enviados para o servlet de consulta são os seguintes:
 
 * query: &quot;path:/content/geometrixx/en/customers/jcr:content/par/productlist Cube&quot;
 * cols: &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
-e o fluxo JSON retornado é o seguinte:
+E o fluxo JSON é retornado da seguinte maneira:
 
 ```
 {
@@ -556,7 +552,7 @@ Você pode estender o servlet Query para retornar um modelo de herança complexo
 
 ### Salvar servlet {#save-servlet}
 
-Na configuração padrão do editor de itens em massa, cada linha é um nó e o caminho desse nó é armazenado no registro de linhas. O editor de itens em massa mantém o link entre a linha e o nó pelo caminho jcr. Quando um usuário edita a grade, uma lista de todas as modificações é criada. Quando um usuário clica em **Salvar**, uma consulta POST é enviada para cada caminho com os valores de propriedades atualizados. Essa é a base do conceito Sling e funciona bem se cada célula for uma propriedade do nó. Mas se o servlet Query estiver implementado para fazer o cálculo de herança, esse modelo não poderá funcionar como uma propriedade retornada pelo servlet Query que pode ser herdada de outro nó.
+Na configuração padrão do Editor de itens em massa, cada linha é um nó e o caminho desse nó é armazenado no registro de linhas. O Editor de itens em massa mantém o link entre a linha e o nó pelo caminho jcr. Quando um usuário edita a grade, uma lista de todas as modificações é criada. Quando um usuário clica em **Salvar**, uma consulta POST é enviada para cada caminho com os valores de propriedades atualizados. Essa é a base do conceito Sling e funciona bem se cada célula for uma propriedade do nó. Mas se o servlet Query estiver implementado para fazer o cálculo de herança, esse modelo não poderá funcionar como uma propriedade retornada pelo servlet Query que pode ser herdada de outro nó.
 
 O conceito de servlet Salvar é que as modificações não são publicadas diretamente em cada nó, mas são publicadas em um servlet que realiza o trabalho de gravação. Isso dá a esse servlet a possibilidade de analisar as modificações e salvar as propriedades no nó direito.
 
@@ -564,14 +560,14 @@ Cada propriedade atualizada é enviada para o servlet no seguinte formato:
 
 * Nome do parâmetro: &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>
 
-   Exemplo: /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku
+  Exemplo: /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku
 
 * Valor: &lt;value>
 
-   Exemplo: 12123
+  Exemplo: 12123
 
 O servlet precisa saber onde a propriedade catalogCode está armazenada.
 
 Uma implementação padrão para Salvar servlet está disponível em /libs/wcm/bulkeditor/save/POST.jsp e é usada no componente Lista de produtos. São necessários todos os parâmetros da solicitação (com um &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;> format) e grava as propriedades nos nós usando a API JCR. Também cria nó se eles não existirem (linhas inseridas na grade).
 
-O código padrão não deve ser usado como está, pois reimplementa o que o servidor faz nativamente (um POST em &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) e, portanto, é apenas um bom ponto de partida para criar um servlet Save que gerenciará um modelo de herança de propriedade.
+O código padrão não deve ser usado como está, pois ele reimplementa o que o servidor faz nativamente (um POST em &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) e, portanto, é apenas um bom ponto de partida para criar um servlet Save que possa gerenciar um modelo de herança de propriedade.
