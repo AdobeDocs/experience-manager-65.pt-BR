@@ -10,14 +10,20 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 0%
+source-wordcount: '662'
+ht-degree: 1%
 
 ---
 
 # Aplicar assinaturas eletrônicas a um formulário usando assinaturas escritas{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html) |
+| AEM 6.5 | Este artigo |
+
 
 Você pode usar o **Rabiscar a assinatura** componente e **Etapa de assinatura** componente para desenhar (Rabiscar) assinatura em um formulário adaptável. O componente Etapa de assinatura exibe uma versão PDF do formulário adaptável. Você precisa de uma opção Documento de registro ativada ou de formulários adaptáveis baseados em modelo de formulário para usar o componente Etapa de assinatura.
 

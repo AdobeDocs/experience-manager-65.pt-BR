@@ -12,14 +12,19 @@ docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 0%
+source-wordcount: '815'
+ht-degree: 1%
 
 ---
 
 # Suporte a novos códigos de idiomas para localização de formulários adaptáveis{#supporting-new-locales-for-adaptive-forms-localization}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html) |
+| AEM 6.5 | Este artigo |
 
 ## Sobre dicionários de local {#about-locale-dictionaries}
 
@@ -38,9 +43,8 @@ Há dois métodos para identificar o local do formulário adaptável. Quando um 
 * observando os seguintes parâmetros na ordem especificada:
 
    * Parâmetro de solicitação `afAcceptLang`
-Para substituir a localidade do navegador dos usuários, você pode transmitir a 
-`afAcceptLang` parâmetro de solicitação para forçar a localidade. Por exemplo, a URL a seguir forçará a renderização do formulário no local japonês:
-      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+Para substituir a localidade do navegador dos usuários, você pode transmitir a `afAcceptLang` parâmetro de solicitação para forçar a localidade. Por exemplo, a URL a seguir forçará a renderização do formulário no local japonês:
+     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * A localidade do navegador definida para o usuário, que é especificada na solicitação usando o `Accept-Language` cabeçalho.
 
@@ -95,7 +99,7 @@ I18N.js
 
 ### Adicionar biblioteca de cliente de formulário adaptável para uma localidade {#add-adaptive-form-client-library-for-a-locale-br}
 
-Criar um nó do tipo `cq:ClientLibraryFolder` em `etc/<folderHierarchy>`, com a categoria como `guides.I18N.<locale>` e e dependências, conforme `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` e `guide.common`. &quot;
+Criar um nó do tipo `cq:ClientLibraryFolder` em `etc/<folderHierarchy>`, com a categoria como `guides.I18N.<locale>` e dependências como `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` e `guide.common`. &quot;
 
 Adicione os seguintes arquivos à biblioteca do cliente:
 

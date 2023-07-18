@@ -11,14 +11,19 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2481'
 ht-degree: 0%
 
 ---
 
 # Arquitetura e topologias de implantação do AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html) |
+| AEM 6.5 | Este artigo |
 
 ## Arquitetura {#architecture}
 
@@ -74,9 +79,9 @@ A imagem a seguir exibe várias configurações de servidor do Formulário AEM e
 * **Processamento de dados de formulário brutos provenientes de uma instância de Publicação:** Isso é feito principalmente em uma instância de Processamento por meio de workflows de AEM que são acionados quando os dados chegam. Os workflows podem usar a etapa Modelo de dados de formulário fornecida pronta para uso para arquivar os dados ou documentos em um armazenamento de dados adequado.
 * **Armazenamento seguro de dados de formulário**: o processamento fornece um repositório por trás do firewall para dados de forma brutos que são isolados dos usuários. Nem os designers de formulário na instância do Autor nem os usuários finais na instância de Publicação podem acessar esse repositório.
 
-   >[!NOTE]
-   >
-   >A Adobe recomenda usar um armazenamento de dados de terceiros para salvar os dados processados finais em vez de usar o repositório AEM.
+  >[!NOTE]
+  >
+  >A Adobe recomenda usar um armazenamento de dados de terceiros para salvar os dados processados finais em vez de usar o repositório AEM.
 
 * **Armazenamento e pós-processamento de dados de correspondência provenientes de uma instância de publicação:** Os fluxos de trabalho do AEM executam o pós-processamento opcional das definições de correspondência. Esses workflows podem salvar os dados processados finais em um armazenamento de dados externo adequado.
 

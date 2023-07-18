@@ -6,16 +6,22 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
 
 # Introdução à publicação de formulários em um portal{#introduction-to-publishing-forms-on-a-portal}
 
-## Visão geral dos componentes do AEM Forms Portal {#aem-forms-portal-components-overview}
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM 6.5 | Este artigo |
+
+
+## Visão geral dos componentes do portal do AEM Forms {#aem-forms-portal-components-overview}
 
 Em um cenário típico de implantação de portal centrada em formulários, o desenvolvimento de formulários e o desenvolvimento de portal são duas atividades distintas. Enquanto os designers de formulários criam e armazenam formulários em um repositório, os desenvolvedores da Web criam um aplicativo da Web para listar formulários e manipular o envio de formulários. Os Forms são copiados para o nível da Web, pois não há comunicação entre o repositório de formulários e o aplicativo web.
 

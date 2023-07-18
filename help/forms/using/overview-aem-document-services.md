@@ -10,14 +10,20 @@ topic-tags: document_services
 discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
 docset: aem65
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 0%
+source-wordcount: '1423'
+ht-degree: 1%
 
 ---
 
 # Visão geral dos serviços de documento AEM{#overview-of-aem-document-services}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html) |
+| AEM 6.5 | Este artigo |
+
 
 Os serviços de documento AEM são um conjunto de serviços OSGi para criar, montar e proteger documentos PDF. Os Serviços de documento contêm os seguintes serviços:
 

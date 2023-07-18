@@ -11,14 +11,19 @@ discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '6026'
+source-wordcount: '6049'
 ht-degree: 1%
 
 ---
 
 # Criação e uso de temas {#creating-and-using-themes}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=pt-br) |
+| AEM 6.5 | Este artigo |
 
 ## Introdução {#introduction}
 
@@ -207,15 +212,15 @@ O Editor de temas é dividido em dois painéis:
 
    * **Seletor:** Mostra o componente selecionado para estilo e suas propriedades que podem ser estilizadas. O seletor representa todos os componentes de um tipo. Se você selecionar um componente Caixa de texto em um tema para estilo, todas as caixas de texto no formulário ou comunicação interativa herdarão o estilo. Os seletores permitem selecionar um componente genérico ou um componente específico para o estilo. Por exemplo, um componente de campo é um componente genérico e uma caixa de texto é um componente específico.
 
-      **Componente genérico de estilo:**
+     **Componente genérico de estilo:**
 Um campo pode ser um campo de caixa numérica, como idade, ou um campo de caixa de texto, como endereço.
 Ao estilizar um campo, todos os campos, como idade, nome, endereço, são estilizados.
 
-      **Componente específico do estilo**: um componente específico afeta objetos da categoria específica. Ao estilizar o componente caixa numérica no tema, somente o objeto caixa numérica em herdará o estilo.
+     **Componente específico do estilo**: um componente específico afeta objetos da categoria específica. Ao estilizar o componente caixa numérica no tema, somente o objeto caixa numérica em herdará o estilo.
 
-      Por exemplo, um campo de caixa de texto como endereço tem comprimento maior e um campo de caixa numérica como idade tem comprimento menor. Você pode selecionar um campo de caixa numérica, reduzir seu comprimento e aplicar ao formulário. A largura de todos os campos de caixa numérica é reduzida no formulário.
+     Por exemplo, um campo de caixa de texto como endereço tem comprimento maior e um campo de caixa numérica como idade tem comprimento menor. Você pode selecionar um campo de caixa numérica, reduzir seu comprimento e aplicar ao formulário. A largura de todos os campos de caixa numérica é reduzida no formulário.
 
-      Quando você personaliza todos os componentes do campo com uma cor de plano de fundo específica, todos os campos, como idade, nome e endereço, herdam a cor do plano de fundo. Quando você seleciona uma caixa numérica, como idade, e reduz sua largura, a largura de todas as caixas numéricas, como idade, número de pessoas em uma família é reduzida. A largura das caixas de texto não é alterada.
+     Quando você personaliza todos os componentes do campo com uma cor de plano de fundo específica, todos os campos, como idade, nome e endereço, herdam a cor do plano de fundo. Quando você seleciona uma caixa numérica, como idade, e reduz sua largura, a largura de todas as caixas numéricas, como idade, número de pessoas em uma família é reduzida. A largura das caixas de texto não é alterada.
 
    * **Estado:** Permite personalizar estilos de um objeto em um estado específico. Por exemplo, você pode especificar a aparência de um objeto quando ele está em estado padrão, de foco, desativado, ao passar o mouse ou erro.
    * **Categorias de propriedade:** As propriedades de estilo são divididas em várias categorias. Por exemplo, Dimension e Posição, Texto, Plano de fundo, Borda e Efeitos. Em cada categoria, você fornece informações de estilo. Por exemplo, em Plano de fundo, você pode fornecer Cor do plano de fundo e Imagem e gradiente.
@@ -223,9 +228,10 @@ Ao estilizar um campo, todos os campos, como idade, nome, endereço, são estili
    * **Avançado:** Permite adicionar CSS personalizado a um objeto, o que substitui as propriedades que os controles visuais definem se há uma sobreposição.
 
    * **Exibir CSS**: permite exibir o CSS do componente selecionado
-   Além disso, na barra lateral, uma seta está presente na parte inferior. Ao clicar na seta, você terá mais duas opções: **Simular o sucesso** e **Simular Erro.** Essas opções, juntamente com as descritas acima, são discutidas em detalhes [abaixo](../../forms/using/themes.md#using-rail).
 
-[ ![Editor de temas com Rail e Tela realçados.](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Tela
+  Além disso, na barra lateral, uma seta está presente na parte inferior. Ao clicar na seta, você terá mais duas opções: **Simular o sucesso** e **Simular Erro.** Essas opções, juntamente com as descritas acima, são discutidas em detalhes [abaixo](../../forms/using/themes.md#using-rail).
+
+[![Editor de temas com Rail e Tela realçados.](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Tela
 
 ### Componentes de estilo {#styling-components}
 
@@ -627,14 +633,14 @@ Você pode ver o CSS gerado usando as seguintes opções:
 
 * **Evitar ativos de outro tema**
 
-   Ao editar um tema, você pode procurar e adicionar ativos (como imagens) de outros temas. Por exemplo, você está editando o fundo de uma página. Por exemplo, ao selecionar **Página** ![botão editar](assets/edit-button.png)> **Histórico** > **Adicionar** > **Imagem**, você verá uma caixa de diálogo que permite navegar e adicionar imagens em outro tema.
+  Ao editar um tema, você pode procurar e adicionar ativos (como imagens) de outros temas. Por exemplo, você está editando o fundo de uma página. Por exemplo, ao selecionar **Página** ![botão editar](assets/edit-button.png)> **Histórico** > **Adicionar** > **Imagem**, você verá uma caixa de diálogo que permite navegar e adicionar imagens em outro tema.
 
 * Você pode enfrentar problemas com seu tema atual se um ativo for adicionado de outro tema e o outro tema for movido ou excluído. É recomendável evitar a navegação e adicionar ativos de outros temas.
 * **Uso da clientlib base, do editor de temas e do estilo em linha**
 
    * **Clientlib base**:
 
-      A biblioteca base do cliente contém informações de estilo. Para usar informações de estilo em bibliotecas do lado do cliente em temas.
+     A biblioteca base do cliente contém informações de estilo. Para usar informações de estilo em bibliotecas do lado do cliente em temas.
 
       1. Navegue até **Experience Manager > Forms > Temas**.
       1. Na página Temas, selecione um tema e clique em **Propriedades da exibição**.
@@ -642,28 +648,27 @@ Você pode ver o CSS gerado usando as seguintes opções:
       1. Na guia Avançado, no campo Local da biblioteca de clientes, navegue e selecione a biblioteca de clientes que deseja usar.
       1. Clique em **Salvar**.
 
-      O estilo especificado na biblioteca do cliente é importado no tema que o utiliza. Por exemplo, você especifica o estilo de uma caixa de texto, caixa numérica e troca na biblioteca do cliente. Ao importar a biblioteca do cliente no tema, o estilo da caixa de texto, da caixa numérica e do switch é importado. É possível estilizar outros componentes usando o editor de temas.
+     O estilo especificado na biblioteca do cliente é importado no tema que o utiliza. Por exemplo, você especifica o estilo de uma caixa de texto, caixa numérica e troca na biblioteca do cliente. Ao importar a biblioteca do cliente no tema, o estilo da caixa de texto, da caixa numérica e do switch é importado. É possível estilizar outros componentes usando o editor de temas.
 Você também pode criar um tema, criar cópias dele e modificar o estilo fornecido nos temas copiados para casos de uso semelhantes.
 Consulte [Obter aparência específica usando temas](#specific-af-appearance)
 
    * **Editor de temas:**
 
-      O Editor de temas permite criar temas para estilizar o formulário ou a comunicação interativa. Você pode especificar o estilo dos componentes em um tema, que permitem consistência na aparência entre vários formulários ou comunicações interativas desenvolvidas. É recomendável especificar informações de estilo em um tema e, em seguida, aplicar o tema a um formulário.
+     O Editor de temas permite criar temas para estilizar o formulário ou a comunicação interativa. Você pode especificar o estilo dos componentes em um tema, que permitem consistência na aparência entre vários formulários ou comunicações interativas desenvolvidas. É recomendável especificar informações de estilo em um tema e, em seguida, aplicar o tema a um formulário.
 
    * **Estilo em linha:**
 
-      É possível estilizar componentes usando o modo Estilo no formulário ou o editor multicanal de comunicação interativa ao trabalhar com um formulário. O uso do modo de estilo para alterar o estilo do componente de formulário substitui o estilo especificado no tema. Se quiser alterar o estilo de determinados componentes de um formulário específico, consulte [Estilo em linha dos componentes](../../forms/using/inline-style-adaptive-forms.md).
-
+     É possível estilizar componentes usando o modo Estilo no formulário ou o editor multicanal de comunicação interativa ao trabalhar com um formulário. O uso do modo de estilo para alterar o estilo do componente de formulário substitui o estilo especificado no tema. Se quiser alterar o estilo de determinados componentes de um formulário específico, consulte [Estilo em linha dos componentes](../../forms/using/inline-style-adaptive-forms.md).
 
 * **Uso de bibliotecas do lado do cliente**
 
-   Se quiser criar bibliotecas de clientes para importar informações de estilo, consulte [Uso de bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md). Depois de criar uma biblioteca do cliente, você pode importá-la no tema usando as etapas mencionadas acima.
+  Se quiser criar bibliotecas de clientes para importar informações de estilo, consulte [Uso de bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md). Depois de criar uma biblioteca do cliente, você pode importá-la no tema usando as etapas mencionadas acima.
 
 * **Alteração da largura do layout do painel de contêiner**
 
-   Não é recomendável alterar a largura do layout do painel de contêiner. Quando você especifica a largura de um painel de contêiner, ele se torna estático e não se adapta a exibições diferentes.
+  Não é recomendável alterar a largura do layout do painel de contêiner. Quando você especifica a largura de um painel de contêiner, ele se torna estático e não se adapta a exibições diferentes.
 
 * **Quando usar o editor de formulários ou de temas para trabalhar com cabeçalho e rodapé**
 
-   Use o editor de temas se desejar estilizar o cabeçalho e o rodapé usando opções de estilo, como estilo da fonte, plano de fundo e transparência.
+  Use o editor de temas se desejar estilizar o cabeçalho e o rodapé usando opções de estilo, como estilo da fonte, plano de fundo e transparência.
 Se você quiser fornecer informações como uma imagem de logotipo, o nome da empresa no cabeçalho e informações de direitos autorais no rodapé, use as opções do editor de formulários.

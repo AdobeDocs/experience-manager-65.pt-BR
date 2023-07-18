@@ -4,14 +4,19 @@ seo-title: Configure Out of Office settings
 description: Configurar configurações de Ausência Temporária
 seo-description: Configure Out of Office settings
 exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 0%
+source-wordcount: '820'
+ht-degree: 1%
 
 ---
 
 # Definir configuração de Ausência Temporária {#configure-out-of-office-settings}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html) |
+| AEM 6.5 | Este artigo |
 
 Se você planeja ficar fora do escritório, é possível especificar o que acontece com os itens atribuídos a você nesse período.
 
@@ -28,7 +33,6 @@ Você pode segregar a delegação de itens com base nos modelos de fluxo de trab
 >* Quando você desativa a configuração Ausência Temporária, os itens delegados não são automaticamente atribuídos de volta a você. Você pode usar a funcionalidade de declaração para atribuir itens a você.
 >* Quando o Usuário A delega itens ao Usuário B e o Usuário B delega ainda mais ao Usuário C, os itens são atribuídos apenas ao Usuário C e não ao Usuário B.
 >* Quando houver um loop na atribuição, as tarefas permanecerão com o usuário original. Por exemplo, quando o Usuário A delega itens ao Usuário B, o Usuário B delega ao Usuário C, o Usuário C delega ao Usuário D e o Usuário D delega ao Usuário B, um loop é criado. Nessa situação, o item permanece com o Usuário original. O usuário A é o usuário original no exemplo acima.
-
 
 ## Ativar a configuração de Ausência Temporária para sua conta {#enable-out-of-office}
 

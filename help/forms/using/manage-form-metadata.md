@@ -11,14 +11,19 @@ discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
 role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 1%
+source-wordcount: '1995'
+ht-degree: 2%
 
 ---
 
 # Gerenciar metadados de formulário{#manage-form-metadata}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html) |
+| AEM 6.5 | Este artigo |
 
 ## Visão geral  {#overview-nbsp}
 
@@ -203,7 +208,6 @@ Os ativos têm valores de propriedade existentes, que podem ser exibidos no modo
    * O painel esquerdo contém a miniatura do formulário
    * O painel direito contém propriedades de metadados no modo somente leitura, distribuídas em várias guias.
 
-
 ## Adicionar/atualizar valores de metadados de formulário {#add-update-form-metadata-values}
 
 É possível editar o valor das propriedades de metadados existentes ou adicionar novos valores a um campo de propriedade de metadados existente (por exemplo, quando um campo de metadados está em branco).
@@ -240,7 +244,6 @@ Para formulários adaptáveis, é fornecida uma funcionalidade adicional, que pe
 >* Use uma imagem quadrada para a miniatura. Quando você usa uma imagem não quadrada e visualiza a miniatura na exibição em lista, a miniatura aparece cortada.
 >* Depois que uma nova imagem é carregada ou gerada, a miniatura é substituída por essa imagem e não pode ser redefinida para a imagem anterior.
 >
-
 
 ## Adicionar metadados personalizados {#add-custom-metadata}
 

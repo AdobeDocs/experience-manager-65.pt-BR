@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1245'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,12 @@ ht-degree: 1%
 # Resumo dos novos recursos | AEM 6.5 Forms{#new-features-summary-aem-forms}
 
 ## Relatórios de transação {#transaction-reports}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/latest-innovations.html) |
+| AEM 6.5 | Este artigo |
+
 
 Os relatórios de transação permitem capturar e rastrear o número de formulários enviados, documentos processados e documentos renderizados. O objetivo por trás do rastreamento dessas transações é tomar uma decisão informada sobre o uso do produto e reequilibrar os investimentos em hardware e software. Alguns exemplos de transações incluem:
 

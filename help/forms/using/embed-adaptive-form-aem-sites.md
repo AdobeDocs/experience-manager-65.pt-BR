@@ -10,14 +10,20 @@ topic-tags: author, interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1105'
 ht-degree: 0%
 
 ---
 
 # Incorpore um formulário adaptável ou comunicação interativa na página de sites AEM {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html) |
+| AEM 6.5 | Este artigo |
+
 
 ## Visão geral {#overview}
 
@@ -62,10 +68,10 @@ Para incorporar um formulário adaptável ou a comunicação interativa usando o
       * **Obrigado Pela Mensagem**: escreva uma mensagem usando o editor de rich text para mostrar no envio do formulário. Essa opção está disponível somente quando você opta por mostrar uma mensagem de agradecimento.
       * **Página de agradecimento**: navegue e selecione a página que será exibida no envio do formulário. Essa opção está disponível somente quando você escolhe mostrar uma página de agradecimento.
       * **Atualizar página no envio**: permite atualizar a página que contém o formulário adaptável incorporado para mostrar a página de agradecimento. Caso contrário, a página de agradecimento substituirá o formulário adaptável no container do AEM Forms, sem atualizar a página. Essa opção está disponível somente quando você escolhe mostrar uma página de agradecimento.
+
    * **Tema**: selecione um tema que define o estilo dos componentes do seu formulário adaptável ou comunicação interativa. O estilo inclui propriedades de aparência, como estilo da fonte, cor do plano de fundo, dimensões e alinhamento.
    * **Altura**: especifique a altura do container. Deixe em branco para redimensionar automaticamente o contêiner.
    * **Biblioteca cliente CSS**: especifique o caminho para uma biblioteca de cliente CSS.
-
 
 1. Salve as configurações. O formulário adaptável ou a comunicação interativa agora está incorporada na página.
 

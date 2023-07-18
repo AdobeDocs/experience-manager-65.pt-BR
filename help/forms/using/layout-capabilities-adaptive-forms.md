@@ -10,14 +10,21 @@ discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 feature: Adaptive Forms
 exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 1%
+source-wordcount: '1152'
+ht-degree: 2%
 
 ---
 
 # Recursos de layout de formulários adaptáveis{#layout-capabilities-of-adaptive-forms}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms.html) |
+| AEM 6.5 | Este artigo |
+
+
 
 O Adobe Experience Manager (AEM) permite criar formulários adaptáveis fáceis de usar que oferecem experiências dinâmicas para os usuários finais. O layout de formulário controla como os itens ou componentes são exibidos em um formulário adaptável.
 

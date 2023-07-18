@@ -3,15 +3,21 @@ title: Integração do Salesforce com o AEM Forms usando o fluxo de credenciais 
 seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 description: Etapas para integrar a integração do Salesforce com o AEM Forms usando o fluxo de credenciais do cliente OAuth 2.0
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
-source-git-commit: cc0375f5b5616f82a73bd983a9da95225c51db99
+exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 0%
+source-wordcount: '524'
+ht-degree: 2%
 
 ---
 
-
 # Integração do Salesforce usando o fluxo de credenciais do cliente OAuth 2.0  {#configure-salesforce-with-ouath-2.0-client-credential}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html) |
+| AEM 6.5 | Este artigo |
+
 
 Para integrar o AEM Forms ao aplicativo Salesforce, o fluxo de credenciais do cliente OAuth 2.0 é usado. É um método padronizado e seguro para comunicação direta sem envolvimento do usuário. Nesse fluxo, o aplicativo cliente (Formulário AEM) troca as credenciais do cliente, definidas no aplicativo conectado do Salesforce, para obter um token de acesso. As credenciais do cliente necessárias incluem a chave do consumidor e o segredo do consumidor.
 
@@ -74,5 +80,3 @@ O Swagger é um conjunto de regras, especificações e ferramentas de código ab
 1. Se a conexão for bem-sucedida, clique no link **[!UICONTROL Criar]** botão.
 
 Agora, você pode [criar o modelo de dados do formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) para integrar a fonte de dados configurada ao Formulário adaptável.
-
-

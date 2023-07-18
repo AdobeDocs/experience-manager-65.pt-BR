@@ -10,14 +10,20 @@ discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2421'
 ht-degree: 0%
 
 ---
 
 # Tabelas em formulários adaptáveis{#tables-in-adaptive-forms}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html) |
+| AEM 6.5 | Este artigo |
+
 
 O uso de tabelas é uma maneira eficaz, simplificada e organizada de apresentar dados complexos. Ele ajuda os usuários a identificar informações facilmente e fornecer entradas em uma organização ordenada de linhas e colunas. A maioria dos formulários de serviços financeiros e organizações governamentais exigem grandes tabelas de dados para colocar números e realizar cálculos.
 
@@ -312,4 +318,4 @@ Além disso, você pode arrastar e soltar um grupo de elementos de tipo complexo
 * Se você mover linhas para cima e para baixo durante a criação de uma tabela baseada em XSD, alguma perda de dados das linhas da tabela será vista no XML de dados gerado no envio do formulário.
 * Cada célula do corpo em uma tabela padrão tem um nome de elemento predefinido associado a ela. Se adicionar outra tabela no formulário adaptável, as células de corpo padrão na nova tabela terão o mesmo nome de elemento da primeira tabela. Nesse cenário, os dados gerados no envio do formulário incluirão dados nas células do corpo padrão de apenas uma das tabelas. Portanto, renomeie os nomes dos elementos para as células do corpo padrão para mantê-los exclusivos nas tabelas e evitar perda de dados.
 
-   Observe que isso é aplicável somente às células do corpo padrão. Se você adicionar mais linhas ou colunas a uma tabela, gerará automaticamente nomes de elementos exclusivos para células de corpo fora do padrão.
+  Observe que isso é aplicável somente às células do corpo padrão. Se você adicionar mais linhas ou colunas a uma tabela, gerará automaticamente nomes de elementos exclusivos para células de corpo fora do padrão.

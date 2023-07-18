@@ -10,14 +10,19 @@ discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 feature: Adaptive Forms
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2191'
 ht-degree: 0%
 
 ---
 
 # Preencher previamente campos de formulário adaptável{#prefill-adaptive-form-fields}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html) |
+| AEM 6.5 | Este artigo |
 
 ## Introdução {#introduction}
 
@@ -25,7 +30,7 @@ ht-degree: 0%
 
 ## Estrutura dos dados de preenchimento prévio {#the-prefill-structure}
 
-Um formulário adaptável pode ter uma combinação de campos vinculados e não vinculados. Campos vinculados são campos que são arrastados da guia Localizador de conteúdo e contêm campos não vazios `bindRef` valor da propriedade na caixa de diálogo de edição do campo. Os campos não vinculados são arrastados diretamente do navegador de componentes do Sidekick e têm um vazio `bindRef` valor.
+Um formulário adaptável pode ter uma combinação de campos vinculados e não vinculados. Campos vinculados são campos que são arrastados da guia Localizador de conteúdo e contêm campos não vazios `bindRef` valor da propriedade na caixa de diálogo de edição do campo. Os campos não vinculados são arrastados diretamente do navegador de componentes do Sidekick e têm um campo vazio `bindRef` valor.
 
 É possível preencher previamente os campos vinculados e não vinculados de um formulário adaptável. Os dados de pré-preenchimento contêm as seções afBoundData e afUnBoundData para preencher previamente os campos ligados e não vinculados de um formulário adaptável. A variável `afBoundData` contém os dados de preenchimento prévio para campos e painéis vinculados. Esses dados devem ser compatíveis com o schema do modelo de formulário associado:
 
@@ -132,7 +137,7 @@ Para campos cujo modelo é o esquema XML, os dados são pré-preenchidos na vari
 
 >[!NOTE]
 >
->É recomendável não usar campos não vinculados em painéis vinculados (painéis com campos não vazios) `bindRef` que foi criado ao arrastar componentes do Sidekick ou da guia Fontes de dados). Isso pode causar perda de dados desses campos não vinculados. Além disso, é recomendável que os nomes dos campos sejam exclusivos em todo o formulário, especialmente para campos não vinculados.
+>É recomendável não usar campos não vinculados em painéis vinculados (painéis com campos não vazios) `bindRef` que foi criado ao arrastar componentes da guia Sidekick ou Fontes de dados). Isso pode causar perda de dados desses campos não vinculados. Além disso, é recomendável que os nomes dos campos sejam exclusivos em todo o formulário, especialmente para campos não vinculados.
 
 #### Um exemplo sem afData e afBoundData wrapper {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -244,6 +249,7 @@ Para ativar o serviço de preenchimento prévio, especifique a Configuração do
 
    * file:///C:/Users/public/Document/Prefill/.&#42;
    * https://localhost:8000/somesamplexmlfile.xml
+
    >[!NOTE]
    >
    >Por padrão, o preenchimento prévio é permitido por meio de arquivos crx para todos os tipos de Forms adaptável (XSD, XDP, JSON, FDM e sem modelo de formulário baseado). O preenchimento prévio é permitido somente com arquivos JSON e XML.
@@ -384,8 +390,9 @@ Você pode configurar o servidor do AEM Forms para executar a ação de mesclage
    1. Habilitar a opção Configuration.af.clientside.datamerge.enabled.name
 * Para ativar ou desativar o na linha de comando:
    * Para habilitar, execute o seguinte comando cURL:
-      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
    * Para desativar, execute o seguinte comando cURL:
-      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
-   Para aproveitar ao máximo os dados pré-preenchidos na opção do cliente, atualize o serviço de preenchimento para retornar [MapaAnexoArquivo](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) e [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
+     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+
+  Para aproveitar ao máximo os dados pré-preenchidos na opção do cliente, atualize o serviço de preenchimento para retornar [MapaAnexoArquivo](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) e [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)

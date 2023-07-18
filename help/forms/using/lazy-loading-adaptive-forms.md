@@ -10,14 +10,19 @@ discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 1%
+source-wordcount: '1034'
+ht-degree: 2%
 
 ---
 
 # Melhorar o desempenho de formulários grandes com carregamento lento{#improve-performance-of-large-forms-with-lazy-loading}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/lazy-loading-adaptive-forms.html) |
+| AEM 6.5 | Este artigo |
 
 ## Introdução ao carregamento lento {#introduction-to-lazy-loading}
 
@@ -32,17 +37,17 @@ Antes de configurar o carregamento lento de fragmentos no formulário adaptável
 * **Identificar e criar fragmentos**
 Você pode configurar apenas fragmentos de formulário adaptáveis para carregamento lento. Um fragmento é um segmento independente que fica fora de um formulário adaptável e pode ser reutilizado em formulários. Portanto, o primeiro passo para implementar o carregamento lento é identificar seções lógicas em um formulário e convertê-las em fragmentos. Você pode criar um fragmento do zero ou salvar um painel de formulário existente como fragmento.
 
-   Para obter mais informações sobre como criar fragmentos, consulte [Fragmentos de formulário adaptável](../../forms/using/adaptive-form-fragments.md).
+  Para obter mais informações sobre como criar fragmentos, consulte [Fragmentos de formulário adaptável](../../forms/using/adaptive-form-fragments.md).
 
 * **Identificar e marcar valores globais**
 As transações baseadas em Forms envolvem elementos dinâmicos para capturar dados relevantes de usuários e processá-los para simplificar a experiência de preenchimento de formulário. Por exemplo, o formulário tem o campo A no fragmento X cujo valor determina a validade do campo B em outro fragmento. Nesse caso, se o fragmento X estiver marcado para carregamento lento, o valor do campo A deverá estar disponível para validar o campo B, mesmo quando o fragmento X não estiver carregado. Para isso, você pode marcar o campo A como global, o que garante que seu valor esteja disponível para validar o campo B quando o fragmento X não estiver carregado.
 
-   Para obter informações sobre como tornar um valor de campo global, consulte [Configuração de carregamento lento](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  Para obter informações sobre como tornar um valor de campo global, consulte [Configuração de carregamento lento](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
 * **Escrever regras para controlar a visibilidade dos campos**
 O Forms inclui alguns campos e seções que não se aplicam a todos os usuários e em todas as condições. Os autores e desenvolvedores do Forms usam as regras de visibilidade ou mostrar-ocultar para controlar sua visibilidade com base nas entradas do usuário. Por exemplo, o campo Endereço Comercial não é exibido para os usuários que escolhem Desempregado no campo Status do Emprego em um formulário. Para obter mais informações sobre como escrever regras, consulte [Uso do editor de regras](../../forms/using/rule-editor.md).
 
-   Você pode aproveitar as regras de visibilidade nos fragmentos carregados lentamente para que os campos condicionais sejam exibidos somente quando forem necessários. Além disso, marque o campo condicional como global para fazer referência a ele na expressão de visibilidade do fragmento carregado lentamente.
+  Você pode aproveitar as regras de visibilidade nos fragmentos carregados lentamente para que os campos condicionais sejam exibidos somente quando forem necessários. Além disso, marque o campo condicional como global para fazer referência a ele na expressão de visibilidade do fragmento carregado lentamente.
 
 ## Configuração de carregamento lento {#configuring-lazy-loading}
 
@@ -87,4 +92,4 @@ Os pontos importantes que você deve ter em mente ao desenvolver scripts para pa
 * Use a propriedade de campos disponível globalmente para disponibilizar o valor dos campos localizados em um painel de carregamento lento para todos os outros painéis de um formulário.
 * Não encaminhe o valor de referência de um campo dentro de um painel lento independentemente de o campo estar marcado globalmente entre fragmentos ou não.
 * Use o recurso de redefinição de painel para redefinir tudo o que está visível no painel usando a seguinte expressão de clique.\
-   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()
+  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()

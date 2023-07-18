@@ -10,14 +10,19 @@ topic-tags: customization
 discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 1%
+source-wordcount: '1639'
+ht-degree: 2%
 
 ---
 
 # Gravação da ação enviar personalizada para formulários adaptáveis{#writing-custom-submit-action-for-adaptive-forms}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html) |
+| AEM 6.5 | Este artigo |
 
 Os formulários adaptáveis exigem ações de envio para processar dados especificados pelo usuário. A ação Enviar determina a tarefa executada nos dados enviados por meio de um formulário adaptável. O Adobe Experience Manager (AEM) inclui [Ações de envio OOTB](../../forms/using/configuring-submit-actions.md) que demonstram tarefas personalizadas que podem ser executadas usando os dados enviados pelo usuário. Por exemplo, você pode executar tarefas, como enviar emails ou armazenar dados.
 

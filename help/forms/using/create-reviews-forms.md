@@ -8,14 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 docset: aem65
 feature: Adaptive Forms
-source-git-commit: 0ca7d76d0f5a3e440e5df9c986e3bb0efec368c1
+exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 0%
+source-wordcount: '673'
+ht-degree: 2%
 
 ---
 
 # Criar e gerenciar revisões em formulários{#creating-and-managing-reviews-to-forms}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=pt-br) |
+| AEM 6.5 | Este artigo |
 
 ## Análise {#review}
 
@@ -39,7 +45,6 @@ Uma revisão é um mecanismo que permite que um ou mais revisores comentem formu
    >* O administrador pode acessar qualquer grupo associado aos usuários do formulário.
    >* O grupo Usuários de Serviço não está disponível para seleção para revisão.
 
-
 ### Ações que ocorrem quando uma revisão é configurada {#actions-that-occur-when-a-review-is-set-up}
 
 Esta seção descreve o que acontece quando uma revisão é criada ou configurada.
@@ -59,7 +64,6 @@ Esta seção descreve o que acontece quando uma revisão é criada ou configurad
 >
 >* Somente as revisões em andamento podem ser modificadas.
 >* As revisões concluídas não podem ser modificadas.
-
 
 1. Navegue até a guia formulários e selecione um formulário.
 
@@ -111,4 +115,5 @@ Esta seção descreve o que acontece em **Atualização/Fim da Revisão**:
    1. **Revisores**: Para cada revisor, a tarefa incompleta relacionada à revisão é encerrada. A tarefa não aparece mais como &#39;Pendente&#39; na seção Notificações do revisor.
    1. **Iniciador**: a tarefa atribuída ao iniciador da revisão está marcada como concluída. A tarefa é removida da seção Notificação do iniciador da revisão.
    1. **Todos**: a revisão aparece na seção Análises anteriores. Nenhum comentário adicional pode ser adicionado.
+
    ![revisão concluída](assets/review-complete-imgg.png)

@@ -9,14 +9,20 @@ discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 0%
+source-wordcount: '1893'
+ht-degree: 1%
 
 ---
 
 # Configuração da ação Enviar{#configuring-the-submit-action}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=pt-br) |
+| AEM 6.5 | Este artigo |
+
 
 ## Introdução às ações de envio {#introduction-to-submit-actions}
 
@@ -68,6 +74,7 @@ Também é possível **Habilitar solicitação POST** e forneça um URL para pub
 Configurar Ação De Envio De Ponto De Extremidade Rest
 
 >[!NOTE]
+>
 Para passar os campos como parâmetros em um URL REST, todos os campos devem ter nomes de elemento diferentes, mesmo se os campos forem colocados em painéis diferentes.
 
 ### Publicar dados enviados em um recurso ou ponto de extremidade rest externo  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
@@ -98,6 +105,7 @@ Neste exemplo, `data` armazena os dados XML e `att` armazena dados de anexo.
 A variável **Enviar e-mail** ação de envio envia um email a um ou mais recipients após o envio bem-sucedido do formulário. O email gerado pode conter dados de formulário em um formato predefinido.
 
 >[!NOTE]
+>
 Todos os campos de formulário devem ter nomes de elementos diferentes, mesmo que sejam colocados em painéis diferentes), para incluir dados de formulário em um email.
 
 ## Enviar PDF por e-mail {#send-pdf-via-email}
@@ -105,6 +113,7 @@ Todos os campos de formulário devem ter nomes de elementos diferentes, mesmo qu
 A variável **Enviar PDF por e-mail** a ação enviar envia um email com um PDF contendo dados de formulário para um ou mais recipients no envio bem-sucedido do formulário.
 
 >[!NOTE]
+>
 Essa ação de envio está disponível para formulários adaptáveis baseados em XFA e formulários de adaptação baseados em XSD que têm o modelo Documento de registro.
 
 ## Chamar um Forms Workflow {#invoke-a-forms-workflow}
@@ -138,6 +147,7 @@ A ação enviar coloca o seguinte no local da carga útil do fluxo de trabalho. 
 * **Arquivo de dados**: contém dados enviados para o Formulário adaptável. Você pode usar o **[!UICONTROL Caminho do arquivo de dados]** opção para especificar o nome do arquivo e o caminho do arquivo relativo à carga útil. Por exemplo, a variável `/addresschange/data.xml` caminho cria uma pasta chamada `addresschange` e o coloca em relação à carga útil. Também é possível especificar somente `data.xml` para enviar somente dados enviados sem criar uma hierarquia de pastas. Use a opção de variável e selecione a variável na lista de variáveis disponíveis para o modelo de fluxo de trabalho.
 
 >[!NOTE]
+>
 As variáveis podem ser usadas independentemente de o modelo de fluxo de trabalho estar ou não marcado para armazenamento de dados externo.
 
 * **Anexos**: Você pode usar o **[!UICONTROL Caminho do anexo]** opção para especificar o nome da pasta para armazenar os anexos carregados no Formulário adaptável. A pasta é criada em relação à carga útil. Se o workflow estiver marcado para armazenamento de dados externo, use a opção variable e selecione a variável na lista de variáveis disponíveis para o modelo de workflow.
@@ -169,6 +179,7 @@ Ativar a validação do lado do servidor
 Se o usuário final ignorar essas validações e enviar os formulários, o servidor executará novamente a validação. Se a validação falhar no final do servidor, a transação de envio será interrompida. O usuário final é apresentado ao formulário original novamente. Os dados capturados e os dados enviados são apresentados ao usuário como um erro.
 
 >[!NOTE]
+>
 A validação do lado do servidor valida o modelo de formulário. É recomendável criar uma biblioteca do cliente separada para validações e não misturá-la com outras coisas, como estilo de HTML e manipulação de DOM na mesma biblioteca do cliente.
 
 ### Suporte a funções personalizadas em expressões de validação {#supporting-custom-functions-in-validation-expressions-br}

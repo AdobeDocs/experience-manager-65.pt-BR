@@ -11,14 +11,20 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '3466'
-ht-degree: 2%
+source-wordcount: '3488'
+ht-degree: 3%
 
 ---
 
 # Gerar documento de registro para formulários adaptáveis{#generate-document-of-record-for-adaptive-forms}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-br) |
+| AEM 6.5 | Este artigo |
+
 
 ## Visão geral {#overview}
 
@@ -226,7 +232,7 @@ Um modelo base é usado para definir o cabeçalho, rodapé, estilo e aparência 
 
 **Convenções de estilo para campos**
 
-* Para aplicar estilo nos campos no documento de registro, o modelo base fornece campos localizados na variável `AF_FIELDSSUBFORM` subde sob o `AF_METATEMPLATE` subformulário raiz.
+* Para aplicar o estilo nos campos do documento de registro, o modelo base fornece campos localizados no `AF_FIELDSSUBFORM` subde sob o `AF_METATEMPLATE` subformulário raiz.
 
 * As propriedades desses campos são aplicadas aos campos no documento de registro. Esses campos devem seguir o `AF_<name of field in all caps>_XFO` convenção de nomenclatura. Por exemplo, o nome do campo da caixa de seleção deve ser `AF_CHECKBOX_XFO`.
 
@@ -287,7 +293,8 @@ Você também pode selecionar um modelo de formulário ao criar um formulário.
    >
    >    * Seu formulário adaptável é baseado em esquema
    >    * Você está usando **Associar o modelo de formulário como o documento de modelo de registro** opção para documento de registro
-
+   >
+   >
 
 1. Clique em **Concluído.**
 

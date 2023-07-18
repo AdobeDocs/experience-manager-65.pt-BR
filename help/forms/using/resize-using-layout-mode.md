@@ -3,14 +3,20 @@ title: Use o modo Layout para redimensionar componentes para formulários adapt�
 description: Definir a posição dos componentes usando a grade responsiva disponível no modo Layout
 feature: Adaptive Forms
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 0%
+source-wordcount: '1068'
+ht-degree: 1%
 
 ---
 
 # Usar o modo Layout para redimensionar componentes {#use-layout-mode-to-resize-components}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/resize-using-layout-mode.html?) |
+| AEM 6.5 | Este artigo |
+
 
 A interface de criação do formulário adaptável permite redimensionar componentes usando o modo Layout. Arraste e solte pontos azuis dentro de colunas para definir os pontos inicial e final para posicionar componentes. Os pontos azuis são exibidos depois de tocar no componente na grade responsiva. A grade responsiva consiste em 12 colunas iguais. O sombreamento das cores branco e azul em colunas alternadas diferencia uma coluna da outra.
 

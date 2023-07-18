@@ -11,14 +11,20 @@ discoiquuid: 0f335ea0-504f-4cc0-b97b-c3fc715bcc2e
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1333c6cb-15cc-429b-a13e-5d23afdee69a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 54%
+source-wordcount: '538'
+ht-degree: 53%
 
 ---
 
 # Introdução à sequência de formulários em várias etapas{#introduction-to-multi-step-form-sequence}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/introduction-form-sequence.html) |
+| AEM 6.5 | Este artigo |
+
 
 Os formulários adaptáveis permitem que os autores de formulários criem uma experiência de captura de dados em várias etapas com grande facilidade. Eles possuem suporte integrado para criar vários painéis e associar cada painel a diferentes padrões de navegação. Os autores do formulário podem agrupar campos de formulário em seções lógicas e representar um grupo como um painel. A navegação geral entre painéis é controlada com o layout do painel. Os autores podem optar por organizar painéis em diferentes layouts, por exemplo, colocando sequencialmente usando o layout Assistente ou de maneira ad-hoc usando o layout com guias. Para obter informações sobre layouts de painel, consulte [Recursos de layout de formulários adaptáveis](../../forms/using/layout-capabilities-adaptive-forms.md).
 
@@ -42,8 +48,8 @@ Considere um caso de uso em que você precisa criar uma sequência para etapas d
 
       * Serviços de assinatura eletrônica da Adobe Document Cloud
       * Assinatura escrita
-   * **Confirmação**: contém o componente **Resumo** que exibe uma mensagem confirmando o envio do formulário depois que um usuário o assina e atinge a etapa de Confirmação (Resumo) da sequência. Os autores podem configurar o texto do componente Resumo: mostrar uma mensagem de agradecimento, mostrar um link para o PDF gerado e assim por diante.
 
+   * **Confirmação**: contém o componente **Resumo** que exibe uma mensagem confirmando o envio do formulário depois que um usuário o assina e atinge a etapa de Confirmação (Resumo) da sequência. Os autores podem configurar o texto do componente Resumo: mostrar uma mensagem de agradecimento, mostrar um link para o PDF gerado e assim por diante.
 
 1. Selecione o layout do painel raiz como **[!UICONTROL Assistente]**.
 1. Conclua as etapas restantes para criar o modelo de formulário. Para obter mais informações, consulte [Criação de um modelo de formulário adaptável personalizado](../../forms/using/custom-adaptive-forms-templates.md).

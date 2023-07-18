@@ -11,14 +11,19 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 1%
+source-wordcount: '1663'
+ht-degree: 2%
 
 ---
 
 # Criação de uma página do portal de formulários{#creating-a-forms-portal-page}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM 6.5 | Este artigo |
 
 Os componentes do portal do Forms equipam os desenvolvedores da Web com componentes para criar e personalizar um portal de formulários em sites criados usando o Adobe Experience Manager (AEM). Para obter uma visão geral rápida do portal de formulários, consulte [Introdução à publicação de formulários em um portal](../../forms/using/introduction-publishing-forms.md).
 

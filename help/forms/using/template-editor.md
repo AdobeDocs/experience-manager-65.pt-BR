@@ -11,14 +11,21 @@ discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1964'
-ht-degree: 0%
+source-wordcount: '1987'
+ht-degree: 1%
 
 ---
 
 # Modelos de formulário adaptável{#adaptive-form-templates}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html) |
+| AEM 6.5 | Este artigo |
+
+
 
 Ao criar um formulário, você adiciona campos e componentes para definir a estrutura do formulário, o conteúdo e as ações no editor. Adicione campos e componentes na `guideRootPanel` do contêiner de formulário. Com o Editor de modelos, você pode criar um modelo que contenha estrutura básica e conteúdo inicial que os autores possam usar para criar formulários.
 

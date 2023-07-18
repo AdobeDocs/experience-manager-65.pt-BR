@@ -10,14 +10,19 @@ discoiquuid: 0ffbb4d3-9371-4705-8496-f98e22d9c4a6
 docset: aem65
 feature: Adaptive Forms
 exl-id: be1a774f-5681-443f-b195-28e89a020547
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 0%
+source-wordcount: '260'
+ht-degree: 3%
 
 ---
 
 # Configuração da página de redirecionamento{#configuring-redirect-page}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-redirect-page.html) |
+| AEM 6.5 | Este artigo |
 
 Os autores de formulários podem configurar uma página para cada formulário, para a qual os usuários são redirecionados após enviarem um formulário.
 

@@ -10,14 +10,19 @@ discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '1206'
-ht-degree: 0%
+source-wordcount: '1227'
+ht-degree: 1%
 
 ---
 
 # Configuração OData do Microsoft Dynamics{#microsoft-dynamics-odata-configuration}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html) |
+| AEM 6.5 | Este artigo |
 
 ![integração de dados](assets/data-integeration.png)
 
@@ -96,17 +101,17 @@ Faça o seguinte para registrar um cliente OAuth em um computador do Ative Diret
 
    `Add-AdfsClient -ClientId "<Client-ID>" -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
 
-   Onde:
+   Em que:
 
    * `Client-ID` é uma ID de cliente que você pode gerar usando qualquer gerador de GUID.
    * `redirect-uri` é a URL para o serviço de nuvem OData do Microsoft Dynamics no AEM Forms. O serviço de nuvem padrão instalado com o pacote do AEM Forms é implantado no seguinte URL:
-      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+     `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Execute o seguinte comando para conceder acesso à máquina do AD FS:
 
    `Grant-AdfsApplicationPermission -ClientRoleIdentifier "<Client-ID>" -ServerRoleIdentifier <resource> -ScopeNames openid`
 
-   Onde:
+   Em que:
 
    * `resource` é o URL da organização do Microsoft Dynamics.
 

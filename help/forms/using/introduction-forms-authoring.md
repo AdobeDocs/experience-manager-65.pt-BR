@@ -11,21 +11,27 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '3138'
-ht-degree: 57%
+source-wordcount: '3161'
+ht-degree: 56%
 
 ---
 
 # Introdução à criação de formulários adaptáveis {#introduction-to-authoring-adaptive-forms}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html) |
+| AEM 6.5 | Este artigo |
+
 
 ## Visão geral {#overview}
 
 Os formulários adaptáveis permitem criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms fornece uma interface de usuário intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. Você pode optar por criar um formulário adaptável com base em um modelo de formulário ou esquema ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atenda não apenas às suas necessidades, mas que amplie seus investimentos de infraestrutura e ativos. Escolha entre as seguintes opções para criar um formulário adaptável:
 
 * **Usar um modelo de dados de formulário**
-   [Integração de dados](../../forms/using/data-integration.md) O permite integrar entidades e serviços de diferentes fontes de dados em um modelo de dados de formulário que você pode usar para criar formulários adaptáveis. Escolha o modelo de dados de formulário se o formulário adaptável que você está criando envolver a busca e gravação de dados de e para várias fontes de dados.
+  [Integração de dados](../../forms/using/data-integration.md) O permite integrar entidades e serviços de diferentes fontes de dados em um modelo de dados de formulário que você pode usar para criar formulários adaptáveis. Escolha o modelo de dados de formulário se o formulário adaptável que você está criando envolver a busca e gravação de dados de e para várias fontes de dados.
 
 * **Usar um modelo de formulário XDP**
 Esse é um modelo de formulário ideal se você tiver investido em formulários baseados em XFA ou XDP. Ele fornece uma maneira direta de converter seus formulários baseados em XFA em formulários adaptáveis. Quaisquer regras XFA existentes são mantidas nos formulários adaptáveis associados. Os formulários adaptáveis resultantes são compatíveis com construções XFA, como validações, eventos, propriedades e padrões.
@@ -88,17 +94,17 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
 
 * **Navegador de propriedades**
 
-   Permite editar as propriedades de um componente. As propriedades mudam de acordo com um componente. Para ver as propriedades do contêiner de formulário adaptável:
+  Permite editar as propriedades de um componente. As propriedades mudam de acordo com um componente. Para ver as propriedades do contêiner de formulário adaptável:
 
-   Selecione um componente e toque em ![nível de campo](assets/field-level.png) > **[!UICONTROL Contêiner de formulário adaptável]** e toque em ![cmppr](assets/cmppr.png).
+  Selecione um componente e toque em ![nível de campo](assets/field-level.png) > **[!UICONTROL Contêiner de formulário adaptável]** e toque em ![cmppr](assets/cmppr.png).
 
 * **Navegador de ativos**
 
-   Segmenta diferentes tipos de conteúdo, como imagens, documentos, páginas, filmes e assim por diante.
+  Segmenta diferentes tipos de conteúdo, como imagens, documentos, páginas, filmes e assim por diante.
 
 * **Navegador de componentes**
 
-   Inclui componentes que você pode usar para criar um formulário adaptável. Você pode arrastar componentes de para o formulário adaptável para adicionar elementos de formulário e configurar elementos adicionados de acordo com os requisitos. A tabela a seguir descreve os componentes listados no navegador de componentes.
+  Inclui componentes que você pode usar para criar um formulário adaptável. Você pode arrastar componentes de para o formulário adaptável para adicionar elementos de formulário e configurar elementos adicionados de acordo com os requisitos. A tabela a seguir descreve os componentes listados no navegador de componentes.
 
 <table>
  <tbody>
@@ -188,7 +194,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Painel</td>
-   <td><p>Adiciona um painel ou subpainel.</p> <p>Você também pode adicionar um componente de painel da barra de ferramentas do painel principal usando o botão <span class="uicontrol">Adicionar painel secundário</code>. Da mesma forma, é possível adicionar uma barra de ferramentas específica do painel usando o botão <span class="uicontrol">Adicionar barra de ferramentas do painel</code>. É possível configurar a posição da barra de ferramentas do painel usando a caixa de diálogo Editar painel.</code></code></p> </td>
+   <td><p>Adiciona um painel ou subpainel.</p> <p>Você também pode adicionar um componente Painel na barra de ferramentas do painel principal usando a <span class="uicontrol">Adicionar painel secundário</code> botão. Da mesma forma, é possível adicionar uma barra de ferramentas específica do painel usando o <span class="uicontrol">Adicionar a barra de ferramentas do painel</code> botão. É possível configurar a posição da barra de ferramentas do painel usando a caixa de diálogo Editar painel.</p> </td>
   </tr>
   <tr>
    <td>Caixa de senha</td>
@@ -328,8 +334,8 @@ A barra de ferramentas da página na parte superior fornece opções que permite
 
       * Descubra que formulários são compostos.
       * Depure onde e quando está acontecendo, o que, por vezes, ajuda a resolver problemas.
-   * **Design**. Permitir ativar ou desativar componentes personalizados ou componentes prontos para uso que não estejam listados na Barra lateral.
 
+   * **Design**. Permitir ativar ou desativar componentes personalizados ou componentes prontos para uso que não estejam listados na Barra lateral.
 
 * **Visualizar**: permite que você visualize a aparência do formulário ao publicá-lo.
 

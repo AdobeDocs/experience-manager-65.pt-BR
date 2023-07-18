@@ -10,14 +10,20 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: db4b432a95856302eb2e80b6386eee557d6afd17
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2112'
 ht-degree: 1%
 
 ---
 
 # Configurar fontes de dados{#configure-data-sources}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html) |
+| AEM 6.5 | Este artigo |
+
 
 ![Integração de dados](do-not-localize/data-integeration.png)
 
@@ -51,7 +57,6 @@ Você pode configurar bancos de dados relacionais usando a Configuração do Con
    >
    > 1. Acesse https://&#39;[server]:[porta]&#39;/system/console/crypto.
    > 1. No **[!UICONTROL Texto sem formatação]** especifique a senha ou qualquer string para criptografar e toque em **[!UICONTROL Protect]**.
-
    >
    >O texto criptografado é exibido no campo Texto protegido que você pode especificar na configuração.
 
@@ -131,7 +136,8 @@ Faça o seguinte para configurar os serviços RESTful:
       * Esquema: os protocolos de transferência usados pela API REST. O número de tipos de esquema exibidos na lista suspensa depende dos esquemas definidos na origem do Swagger.
       * Host: o nome do domínio ou endereço IP do host que serve a API REST. É um campo obrigatório.
       * Caminho base: o prefixo do URL para todos os caminhos da API. É um campo opcional.\
-         Se necessário, edite os valores pré-preenchidos nesses campos.
+        Se necessário, edite os valores pré-preenchidos nesses campos.
+
    * Selecione o tipo de autenticação — None, OAuth2.0([Código de autorização](https://oauth.net/2/grant-types/authorization-code/), [Credenciais do cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticação básica, Chave de API, Autenticação personalizada ou Autenticação mútua — para acessar o serviço RESTful e, de acordo, fornecer detalhes para autenticação.
 
    Se você selecionar **[!UICONTROL Chave de API]** como o tipo de autenticação, especifique o valor da chave de API. A chave de API pode ser enviada como um cabeçalho de solicitação ou como um parâmetro de consulta. Selecione uma dessas opções na **[!UICONTROL Localização]** e especifique o nome do cabeçalho ou do parâmetro de consulta na lista suspensa **[!UICONTROL Nome do parâmetro]** em conformidade.
@@ -176,10 +182,10 @@ Os serviços da Web baseados em SOAP são descritos usando [Especificações da 
    * Terminal de serviço. Especifique um valor neste campo para substituir o ponto final de serviço mencionado no WSDL.
    * Selecione o tipo de autenticação — None, OAuth2.0([Código de autorização](https://oauth.net/2/grant-types/authorization-code/), [Credenciais do cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticação Básica, Autenticação Personalizada, Token X509 ou Autenticação Mútua — para acessar o serviço SOAP e fornecer os detalhes de autenticação de acordo.
 
-      Se você selecionar **[!UICONTROL X509 Token]** como o Authentication type, configure o certificado X509. Para obter mais informações, consulte [Configurar certificados](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+     Se você selecionar **[!UICONTROL X509 Token]** como o Authentication type, configure o certificado X509. Para obter mais informações, consulte [Configurar certificados](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 Especifique o alias do KeyStore para o certificado X509 na **[!UICONTROL Alias da chave]** campo. Especifique o tempo, em segundos, até que a solicitação de autenticação permaneça válida, no **[!UICONTROL Tempo de vida]** campo. Opcionalmente, selecione para assinar o corpo da mensagem ou o cabeçalho do carimbo de data e hora, ou ambos.
 
-      Se você selecionar **[!UICONTROL Autenticação mútua]** como o tipo de autenticação, consulte [Autenticação mútua baseada em certificado para serviços da web RESTful e SOAP](#mutual-authentication).
+     Se você selecionar **[!UICONTROL Autenticação mútua]** como o tipo de autenticação, consulte [Autenticação mútua baseada em certificado para serviços da web RESTful e SOAP](#mutual-authentication).
 
 1. Toque **[!UICONTROL Criar]** para criar a configuração de nuvem do serviço da Web SOAP.
 

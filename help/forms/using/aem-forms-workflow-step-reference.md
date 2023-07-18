@@ -9,14 +9,19 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '7575'
+source-wordcount: '7594'
 ht-degree: 0%
 
 ---
 
 # Fluxo de trabalho centrado na Forms no OSGi - Referência da etapa {#forms-centric-workflow-on-osgi-step-reference}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html) |
+| AEM 6.5 | Este artigo |
 
 Use modelos de fluxo de trabalho para converter uma lógica de negócios em um processo repetitivo automatizado. Um modelo ajuda a definir e executar uma série de etapas. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos. Você pode [incluir várias etapas do fluxo de trabalho do AEM em um modelo para atingir a lógica de negócios](/help/sites-developing/workflows-models.md#extending-aem).
 
@@ -51,7 +56,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 * **Realçar a ação e o comentário da última tarefa em Detalhes da tarefa:** Selecione essa opção para exibir a última ação realizada e o comentário recebido na seção de detalhes da tarefa de uma tarefa.
 * **Tipo:** Escolha o tipo de documento a ser preenchido quando o fluxo de trabalho for iniciado. Você pode escolher um formulário adaptável, um formulário adaptável somente leitura, um documento PDF não interativo, a interface do usuário do agente de comunicação interativa ou o documento de canal da Web de comunicação interativa.
 * **Usar formulário adaptável:** Especifique o método para localizar o formulário adaptável de entrada. Essa opção estará disponível se você selecionar Formulário adaptável ou Formulário adaptável somente leitura na lista suspensa Tipo. Você pode usar o formulário adaptável enviado ao fluxo de trabalho, disponível em um caminho absoluto ou disponível em um caminho em uma variável. Você pode usar uma variável do tipo String para especificar o caminho.\
-   É possível associar vários formulários adaptáveis a um fluxo de trabalho. Como resultado, você pode especificar um formulário adaptável no tempo de execução usando os métodos de entrada disponíveis.
+  É possível associar vários formulários adaptáveis a um fluxo de trabalho. Como resultado, você pode especificar um formulário adaptável no tempo de execução usando os métodos de entrada disponíveis.
 
 * **Usar a comunicação interativa:** Especifique o método para localizar a comunicação interativa de entrada. É possível usar a comunicação interativa enviada para o workflow, disponível em um caminho absoluto ou disponível em um caminho em uma variável. Você pode usar uma variável do tipo String para especificar o caminho. Essa opção estará disponível se você selecionar Interface do usuário do agente de comunicação interativa ou Documento do canal da Web de comunicação interativa na lista suspensa Tipo.
 
@@ -72,7 +77,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
       * **Escolha um serviço personalizado:** Selecione o serviço de preenchimento prévio para recuperar os dados e preencher previamente o documento do canal da Web de comunicação interativa ou a interface do usuário do agente.
       * **Utilizar o serviço de preenchimento da comunicação interativa selecionada acima:** Use essa opção para usar o serviço de preenchimento prévio da Comunicação interativa definida na lista suspensa Usar comunicação interativa.
       * **Mapeamento de atributo de solicitação:** Use a seção Mapeamento do atributo de solicitação para definir a [nome e valor do atributo de solicitação](../../forms/using/work-with-form-data-model.md#bindargument). Recupere os detalhes da fonte de dados com base no nome e valor do atributo especificado na solicitação. Você pode definir um valor de atributo de solicitação usando um valor literal ou uma variável do tipo de dados String.\
-         As opções de mapeamento de serviço de preenchimento prévio e atributo de solicitação estarão disponíveis somente se você selecionar Interface do usuário do agente de comunicação interativa ou Documento de canal da Web de comunicação interativa na lista suspensa Tipo.
+        As opções de mapeamento de serviço de preenchimento prévio e atributo de solicitação estarão disponíveis somente se você selecionar Interface do usuário do agente de comunicação interativa ou Documento de canal da Web de comunicação interativa na lista suspensa Tipo.
 
 * **Informações enviadas:** Os seguintes campos listados abaixo servem como locais de saída para a tarefa:
 
@@ -94,7 +99,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 * **Argumentos:** O campo está disponível quando um script diferente do script RandomParticipantChoose é selecionado no campo Seletor de participantes. O campo permite fornecer uma lista de argumentos separados por vírgula para o script selecionado no campo Seletor de participantes.
 
 * **Usuário ou Grupo:** A tarefa é atribuída ao usuário ou grupo selecionado. A opção está disponível quando a variável **Para uma opção específica de usuário ou grupo** está selecionado no **Opções de atribuição** campo. O campo lista todos os usuários e grupos do grupo workflow-usuários.\
-   A variável **Usuário ou grupo** lista os usuários e grupos aos quais o usuário conectado tem acesso. A exibição do nome de usuário depende se você tem permissões de acesso no **usuários** no repositório crx para esse usuário específico.
+  A variável **Usuário ou grupo** lista os usuários e grupos aos quais o usuário conectado tem acesso. A exibição do nome de usuário depende se você tem permissões de acesso no **usuários** no repositório crx para esse usuário específico.
 
 * **[!UICONTROL Enviar email de notificação]**: selecione essa opção para enviar notificações por email ao signatário. Essas notificações são enviadas quando uma tarefa é atribuída a um usuário ou grupo. Você pode usar o **[!UICONTROL Endereço de email do destinatário]** opção para especificar o mecanismo para recuperar o endereço de email.
 
@@ -259,7 +264,7 @@ A etapa Chamar serviço do modelo de dados de formulário tem os campos listados
    * **Recuperar dos metadados de fluxo de trabalho:** Use a opção quando o valor a ser usado for salvo em uma propriedade de metadados de fluxo de trabalho. Por exemplo, emailAddress.
    * **[!UICONTROL Relativo à carga útil]**: use a opção para recuperar o anexo de arquivo salvo em um caminho relativo à carga. Selecione a opção e especifique o nome da pasta que inclui o anexo de arquivo ou especifique o nome do anexo de arquivo na caixa de texto.
 
-      Por exemplo, se a pasta Relativo à carga no repositório CRX incluir um anexo de arquivo na `attachment\attachment-folder` local, especificar `attachment\attachment-folder` na caixa de texto após selecionar a variável **[!UICONTROL Relativo à carga útil]** opção.
+     Por exemplo, se a pasta Relativo à carga no repositório CRX incluir um anexo de arquivo na `attachment\attachment-folder` local, especificar `attachment\attachment-folder` na caixa de texto após selecionar a variável **[!UICONTROL Relativo à carga útil]** opção.
    * **Anotação JSON Dot:** Use a opção quando o valor a ser usado estiver em um arquivo JSON. Por exemplo, insurance.customerDetails.emailAddress. A opção Anotação JSON Dot estará disponível somente se a opção Mapear campos de entrada a partir de JSON de entrada estiver selecionada.
    * **Mapear campos de entrada do JSON de entrada:** Especifique o caminho de um arquivo JSON para obter o valor de entrada de alguns argumentos de serviço do arquivo JSON. O caminho do arquivo JSON pode ser relativo à carga, um caminho absoluto ou você pode selecionar um documento JSON de entrada usando uma variável do tipo JSON ou Modelo de dados de formulário.
 
@@ -288,7 +293,7 @@ A etapa Assinar documento permite usar o Adobe Sign para assinar documentos. A e
 * **Selecione o caminho do anexo de entrada usando:** Caminho dos anexos. Esses anexos estão incluídos no Documento de assinatura. Você pode manter os anexos em um local relativo à carga, especificar um caminho absoluto dos anexos ou recuperar anexos armazenados em uma variável de matriz do tipo de dados Documento.
 
 
-   Se você especificar o caminho de uma pasta, por exemplo, anexos, todos os arquivos diretamente disponíveis na pasta serão anexados ao Documento de assinatura. Se algum arquivo estiver disponível nas pastas diretamente disponíveis no caminho de anexo especificado, os arquivos serão incluídos no Documento de assinatura como anexos. Se houver pastas em pastas diretamente disponíveis, elas serão ignoradas.
+  Se você especificar o caminho de uma pasta, por exemplo, anexos, todos os arquivos diretamente disponíveis na pasta serão anexados ao Documento de assinatura. Se algum arquivo estiver disponível nas pastas diretamente disponíveis no caminho de anexo especificado, os arquivos serão incluídos no Documento de assinatura como anexos. Se houver pastas em pastas diretamente disponíveis, elas serão ignoradas.
 
 * **Dias até o prazo final:** Um documento está marcado como vencido (com prazo excedido) depois que não há nenhuma atividade na tarefa pelo número de dias especificado no **Dias até o prazo** campo. O número de dias é contado depois que o documentado é atribuído a um usuário para assinatura.
 * **Frequência de e-mails de lembrete:** Você pode enviar um email de lembrete em intervalos diários ou semanais. A semana é contada a partir do dia em que o documento é atribuído a um usuário para assinatura.
@@ -437,7 +442,7 @@ A etapa Gerar Saída Impressa tem as seguintes propriedades:
 
 * **[!UICONTROL Selecione o local da raiz do conteúdo usando]**: raiz de conteúdo é um valor de cadeia de caracteres que especifica o URI, a referência absoluta ou o local no repositório para recuperar ativos relativos usados pelo design do formulário. Por exemplo, se o design do formulário referenciar uma imagem relativamente, como ../myImage.gif, myImage.gif deverá estar localizado em repository://. O valor padrão é repository://, que aponta para o nível raiz do repositório.
 
-   Quando você seleciona um ativo do aplicativo, o caminho do URI da raiz do conteúdo deve ter a estrutura correta. Por exemplo, se um formulário for separado de um aplicativo chamado SampleApp e for colocado em SampleApp/1.0/forms/Test.xdp, o URI da Raiz de conteúdo deverá ser especificado como repository://administrator@password/Applications/SampleApp/1.0/forms/ ou repositório:/Applications/SampleApp/1.0/forms/ (quando a autoridade for nula). Quando o URI da raiz do conteúdo é especificado dessa maneira, os caminhos de todos os ativos referenciados no formulário serão resolvidos em relação a esse URI.
+  Quando você seleciona um ativo do aplicativo, o caminho do URI da raiz do conteúdo deve ter a estrutura correta. Por exemplo, se um formulário for separado de um aplicativo chamado SampleApp e for colocado em SampleApp/1.0/forms/Test.xdp, o URI da Raiz de conteúdo deverá ser especificado como repository://administrator@password/Applications/SampleApp/1.0/forms/ ou repositório:/Applications/SampleApp/1.0/forms/ (quando a autoridade for nula). Quando o URI da raiz do conteúdo é especificado dessa maneira, os caminhos de todos os ativos referenciados no formulário serão resolvidos em relação a esse URI.
 
 * **[!UICONTROL Selecione o arquivo XCI usando]**: os arquivos XCI são usados para descrever fontes e outras propriedades usadas para elementos de design de formulário. Você pode manter um arquivo XCI relativo à carga útil, em um caminho absoluto ou usando uma variável do tipo de dados Documento.
 

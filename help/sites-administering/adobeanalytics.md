@@ -11,14 +11,20 @@ content-type: reference
 discoiquuid: 444c522e-2f33-4f41-846c-8d317e799659
 docset: aem65
 exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 73%
+source-wordcount: '314'
+ht-degree: 71%
 
 ---
 
 # Integração ao Adobe Analytics{#integrating-with-adobe-analytics}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html) |
+| AEM 6.5 | Este artigo |
+
 
 A integração do Adobe Analytics e do AEM permite rastrear a atividade da página da Web:
 
@@ -58,9 +64,8 @@ Consulte:
 >Se estiver usando o Adobe Analytics com uma configuração de proxy personalizada, precisará [configurar dois pacotes OSGi](/help/sites-deploying/configuring-osgi.md) (por exemplo, com o console da Web) necessários para as configurações de proxy do **Apache HTTP Client**. Ambos são necessários, pois algumas funcionalidades do AEM usam as APIs 3.x, enquanto outros usam as APIs 4.x. Configurar o:
 >
 >* **Day Commons HTTP Client 3.1** para configurar a API 3.x;
-   >  por exemplo, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>  por exemplo, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >
 >* **Configuração de proxy de componentes HTTP do Apache** para configurar a API 4.x;
-   >  por exemplo, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>  por exemplo, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
-
