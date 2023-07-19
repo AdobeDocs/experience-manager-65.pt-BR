@@ -8,7 +8,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
+source-git-commit: 90731516671ee0681ff91f2ac47888b1febee199
 workflow-type: tm+mt
 source-wordcount: '1968'
 ht-degree: 2%
@@ -179,10 +179,9 @@ Você também tem a opção de personalizar a fonte, a cor, o tamanho e outras p
 
 -->
 
->
+>[!NOTE]
 >
 > Quando um estilo é definido no nível do tema e do componente, o estilo definido no nível do componente tem prioridade.
-
 
 #### 3. Prepare o tema para implantação {#generate-the-clientlib}
 
@@ -275,9 +274,10 @@ Após a instalação do pacote, o tema fica disponível para seleção.
 
 ![Biblioteca de temas do cliente](/help/forms/using/assets/themeclientlibrary.png)
 
+>[!NOTE]
 >
 >
->Caso encontre dificuldades ao acessar a caixa de diálogo de logon em uma instância de publicação para instalar o pacote por meio do Gerenciador de pacotes, tente fazer logon por meio do seguinte URL: `http://[Publish Server URL]:[PORT]/system/console`. Isso permite o acesso para fazer logon na instância de publicação, permitindo que você continue com o processo de instalação.
+> Caso encontre dificuldades ao acessar a caixa de diálogo de logon em uma instância de publicação para instalar o pacote por meio do Gerenciador de pacotes, tente fazer logon por meio do seguinte URL: `http://[Publish Server URL]:[PORT]/system/console`. Isso permite o acesso para fazer logon na instância de publicação, permitindo que você continue com o processo de instalação.
 
 ## Aplicar um tema a um formulário adaptável {#using-theme-in-adaptive-form}
 
