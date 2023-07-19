@@ -9,9 +9,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1725'
 ht-degree: 3%
 
 ---
@@ -19,10 +19,16 @@ ht-degree: 3%
 
 # Criar componentes principais com base no Forms adaptável {#creating-an-adaptive-form-core-components}
 
+
+<span class="preview"> O Adobe recomenda usar os Componentes principais para [adicionar o Adaptive Forms a uma página do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou para [criar Forms adaptável independente](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
+
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM 6.5 | Este artigo |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=pt-BR) |
+
+**Aplicável a:** ❎ Dos Componentes Principais Do Formulário Adaptável [Componentes de base do formulário adaptável](/help/forms/using/create-adaptive-form.md).
+
 
 Formulários adaptáveis fornecem uma experiência envolvente, responsiva, dinâmica e adaptável. O AEM Forms fornece uma interface de usuário empresarial fácil de usar para criar rapidamente o Adaptive Forms. A interface do usuário oferece navegação rápida por guias para selecionar facilmente o modelo pré-configurado, o estilo, os campos e as opções de envio para criar um Formulário adaptável.
 
@@ -38,17 +44,13 @@ Você precisa do seguinte para criar um Formulário adaptável:
 
 * **Ativar os Componentes principais adaptáveis do Forms para o seu ambiente**: o projeto do Arquétipo AEM versão 41 ou posterior é necessário para [ativar os Componentes principais para o seu ambiente](/help/forms/using/enable-adaptive-forms-core-components.md). Ao ativar os Componentes principais para seu ambiente, a variável **Forms adaptável (componente principal)** O modelo e o tema da Tela de desenho são adicionados ao seu ambiente.
 
-* **Um modelo de formulário adaptável**: um modelo fornece uma estrutura básica e define a aparência (layouts e estilos) de um Formulário adaptável. Ele tem componentes pré-formatados que contêm determinadas propriedades e estrutura de conteúdo. Também fornece as opções para definir um tema e uma ação de envio. O tema define a aparência e a aparência, e a ação de envio define a ação a ser executada no envio de um Formulário adaptável. Por exemplo, enviar os dados coletados para uma fonte de dados. O modelo chamado `blank` O é compatível com OOTB:
-
-   * A variável `blank` O modelo de está incluído em todos os ambientes AEM Forms novos no local e AMS.
-   * É possível instalar o pacote de referência, por meio do Gerenciador de pacotes, para adicionar o `blank` para seu ambiente AEM Forms no local e AMS.
-   * Também é possível [criar um novo modelo do Forms adaptável (Componentes principais)](template-editor.md) do zero.
+* **Um modelo de formulário adaptável**: um modelo fornece uma estrutura básica e define a aparência (layouts e estilos) de um Formulário adaptável. Ele tem componentes pré-formatados que contêm determinadas propriedades e estrutura de conteúdo. Também fornece as opções para definir um tema e uma ação de envio. O tema define a aparência e a aparência, e a ação de envio define a ação a ser executada no envio de um Formulário adaptável.
 
   >[!NOTE]
   >
   > Se você não tiver, **Forms adaptável (componente principal)** no seu ambiente, [Ativar os Componentes principais adaptáveis do Forms para o seu ambiente](/help/forms/using/enable-adaptive-forms-core-components.md). Ao ativar os Componentes principais para seu ambiente, a variável **Forms adaptável (componente principal)** O modelo é adicionado ao seu ambiente.
 
-* **Um tema de formulário adaptável**: um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é refletido nos componentes correspondentes.  A variável `Canvas` o tema é adicionado por padrão ao ativar os componentes principais para seu ambiente. Também é possível [baixar e personalizar os temas de referência](create-or-customize-themes-for-adaptive-forms-core-components.md).
+* **Um tema de formulário adaptável**: um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é refletido nos componentes correspondentes.  A variável `Canvas` o tema é adicionado por padrão ao ativar os componentes principais para seu ambiente. Também é possível [baixar e personalizar os temas padrão](create-or-customize-themes-for-adaptive-forms-core-components.md).
 
 * **Permissões**: adicionar usuários ao [!DNL forms-users] grupo. Os membros da [!DNL forms-users] grupo tem permissões para criar um Formulário adaptável. Para obter uma lista detalhada de grupos de usuários específicos de formulários, consulte [Grupos e permissões](forms-groups-privileges-tasks.md).
 
@@ -137,6 +139,10 @@ Para configurar um Esquema JSON ou um Modelo de dados de formulário para seu fo
 
 1. Clique em **[!UICONTROL Concluído]**.
 
+>[!NOTE]
+>
+> Você pode editar o esquema JSON ou o modelo de dados de formulário para um formulário adaptável usando as propriedades do Contêiner do guia.
+
 ## Configurar um serviço de preenchimento  {#configure-prefill-service-for-form}
 
 Você pode usar o serviço de preenchimento prévio para preencher automaticamente os campos de um Formulário adaptável usando dados existentes. Quando um usuário abre um formulário, os valores desses campos são preenchidos previamente. É possível:
@@ -155,13 +161,15 @@ Você pode usar o serviço de preenchimento do modelo de dados de formulário pa
 1. Selecionar um modelo de dados do formulário. Abra o **[!UICONTROL Básico]** guia. No serviço de preenchimento, selecione **[!UICONTROL Serviço de preenchimento do modelo de dados de formulário]**.
 1. Clique em **[!UICONTROL Concluído]**. O formulário adaptável agora está configurado para usar o Preenchimento prévio do modelo de dados de formulário. Agora você pode, use o [editor de regras](rule-editor.md) para criar regras para preencher previamente os campos do formulário.
 
-## Editar propriedades do modelo de formulário de um formulário adaptável {#edit-form-model}
+<!--
+## Edit Form Model properties of an Adaptive Form {#edit-form-model}
 
-1. Selecione o Formulário adaptável e toque em ![Informações da página](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Abrir propriedades]**. A página Propriedades do formulário é aberta.
+1. Select the Adaptive Form and tap ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
 
-1. Vá para a **[!UICONTROL Modelo de formulário]** e escolha um modelo de formulário. Se o Formulário adaptável não tiver um modelo de formulário, você terá a liberdade de escolher um esquema JSON ou um modelo de dados de formulário. Por outro lado, se o formulário adaptável já estiver baseado em um modelo de formulário, você terá a opção de alternar para outro modelo de formulário do mesmo tipo. Por exemplo, se o formulário estiver usando um esquema JSON, você poderá alternar facilmente para outro esquema JSON e, de forma semelhante, se o formulário estiver usando um Modelo de dados de formulário, você poderá alternar para outro Modelo de dados de formulário.
+1. Go to the **[!UICONTROL Form Model]** tab and choose a form model. If the Adaptive Form is without a form model, you have the freedom to choose either a JSON schema or a form data model. On the other hand, if the Adaptive Form is already based on a form model, you have the option to switch to another form model of the same type. For instance, if the form is using a JSON schema, you can easily switch to another JSON schema, and similarly if the form is using a Form Data Model, you can switch to another Form Data Model. 
 
-1. Toque **[!UICONTROL Salvar]** para salvar as propriedades.
+1. Tap **[!UICONTROL Save]** to save the properties.
+-->
 
 ## O que vem a seguir
 
