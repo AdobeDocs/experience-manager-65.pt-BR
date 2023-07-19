@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 90731516671ee0681ff91f2ac47888b1febee199
+source-git-commit: a5d38ef6b3281992fd9ac3121cdb6c998631b205
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1961'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 No AEM Forms 6.5, um tema é uma biblioteca cliente AEM usada para definir os estilos (aparência e comportamento) de um Formulário adaptável. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é refletido nos componentes correspondentes. Um tema é gerenciado de forma independente sem uma referência a um Formulário adaptável e pode ser reutilizado em vários Forms adaptáveis.
 
-## Temas disponíveis {#available-standard-theme}
+## Temas disponíveis {#available-theme}
 
 O ambiente AEM 6.5 fornece os temas listados abaixo para o Forms adaptável baseado em Componentes principais:
 
@@ -51,13 +51,13 @@ Um tema é um pacote que abrange o arquivo CSS, arquivos JavaScript e recursos (
 
 ## Criar um tema
 
-O AEM Forms 6.5 fornece os temas padrão listados abaixo para os Componentes principais baseados no Adaptive Forms.
+O AEM Forms 6.5 fornece os temas listados abaixo para os Componentes principais com base no Adaptive Forms.
 
 * [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
 
-Você pode [personalizar qualquer um desses temas padrão para criar um tema](#customize-a-theme-core-components).
+Você pode [personalizar qualquer um desses temas para criar um tema](#customize-a-theme-core-components).
 
 ## Personalizar um tema {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -92,7 +92,7 @@ A personalização de um tema refere-se ao processo de modificação e personali
 
 A criação ou personalização de um tema é um processo de várias etapas. Execute as etapas na ordem listada para criar/personalizar o tema:
 
-1. [Clonar um tema padrão](#clone-git-repo-of-theme)
+1. [Clonar um tema](#clone-git-repo-of-theme)
 1. [Personalizar a aparência do tema](#customize-the-theme)
 1. [Preparar o tema para implantação local](#generate-the-clientlib)
 1. [Implantar o tema em um ambiente local](#deploy-the-theme-on-a-local-environment)
@@ -102,17 +102,17 @@ A criação ou personalização de um tema é um processo de várias etapas. Exe
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
 -->
 
-Os exemplos fornecidos no documento são baseados no **Tela** tema, mas é possível clonar qualquer tema padrão e personalizá-lo usando as mesmas instruções. Essas instruções se aplicam a qualquer tema, permitindo modificar temas de acordo com suas necessidades específicas.
+Os exemplos fornecidos no documento são baseados no **Tela** tema, mas é possível clonar qualquer tema e personalizá-lo usando as mesmas instruções. Essas instruções se aplicam a qualquer tema, permitindo modificar temas de acordo com suas necessidades específicas.
 
 #### 1. Clonar o repositório Git do tema {#clone-git-repo-of-theme}
 
-Para clonar um tema padrão para os Componentes principais com base no Adaptive Forms, escolha um dos seguintes temas padrão:
+Para clonar um tema para os Componentes principais com base no Adaptive Forms, escolha um dos seguintes temas:
 
 * [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
 
-Execute as seguintes instruções para clonar um tema padrão:
+Execute as seguintes instruções para clonar um tema:
 
 1. Abra o prompt de comando ou a janela do terminal no ambiente de desenvolvimento local.
 
