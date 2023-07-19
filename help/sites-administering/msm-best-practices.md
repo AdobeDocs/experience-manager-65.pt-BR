@@ -4,9 +4,9 @@ description: Descubra as práticas recomendadas compiladas pelas equipes de enge
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1617'
 ht-degree: 43%
 
 ---
@@ -19,7 +19,7 @@ O MSM é uma estrutura configurável para automatizar a implantação de conteú
 
 * Cuidadosamente **planeje a estrutura do plano e os fluxos de conteúdo** antes de iniciar a implementação.
 * **Mantenha a quantidade de live copies no mínimo.** O processamento de live copies é uma tarefa que consome muitos recursos. Quanto mais live copies existirem em seu sistema, mais o desempenho poderá ser afetado: desde o processamento de índices internos de live copy, passando pelas operações de live copy, como implantações, até operações de interface do usuário, como a exibição de relacionamentos de live copy no painel de referências do Administrador do Sites. A prática recomendada é criar live copies de sites ou ramificações de um site, em que os relacionamentos de live copy são herdados para páginas no site ou ramificação. Evite criar live copies individuais para páginas em um site ou ramificação quando toda a estrutura puder ser transformada em uma live copy.
-* **Personalize o quanto for necessário, mas o mínimo possível.** Embora o MSM suporte um alto grau de personalização (por exemplo, configurações de implantação), normalmente, a prática recomendada para obter desempenho, confiabilidade e capacidade de atualização no seu site é minimizar as personalizações.
+* **Personalize o quanto for necessário, mas o mínimo possível.** Embora o MSM suporte um alto grau de personalização (por exemplo, configurações de implantação) normalmente, a prática recomendada para obter desempenho, confiabilidade e capacidade de atualização no seu site é minimizar as personalizações.
 * Estabeleça um modelo de **governança** desde o início e treine os usuários adequadamente para garantir o sucesso. Uma prática recomendada do ponto de vista da governação é **minimizar a autoridade que os produtores de conteúdo locais têm** para alocar/conectar conteúdo a outros usuários locais e suas respectivas live copies. Isso ocorre porque heranças encadeadas e sem governança podem aumentar significativamente a complexidade de uma estrutura do MSM e comprometer seu desempenho e confiabilidade.
 
 * Quando existir um plano para sua estrutura, fluxos de conteúdo, automação e governança - **crie um protótipo e teste completamente seu sistema**, antes de iniciar a implementação em tempo real.
@@ -32,7 +32,6 @@ O MSM é uma estrutura configurável para automatizar a implantação de conteú
 >* [Solução de problemas e perguntas frequentes do MSM](troubleshoot-msm.md)
 >
 
-
 >[!NOTE]
 >
 >Você também pode usar a variável [Componente de referência](/help/sites-authoring/default-components-foundation.md#reference) para reutilizar uma única página ou parágrafo. No entanto, lembre-se:
@@ -40,7 +39,6 @@ O MSM é uma estrutura configurável para automatizar a implantação de conteú
 >* O MSM é mais flexível e permite um controle detalhado sobre o conteúdo que é sincronizado e quando.
 >* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) agora são recomendadas em relação aos componentes de base.
 >
-
 
 ## Origens de Live Copy e configurações de blueprint {#live-copy-sources-and-blueprint-configurations}
 
@@ -81,11 +79,11 @@ Observe que o AEM tem duas abordagens principais para a criação de live copies
 
 * Quando [criação de uma Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
-   Essa pode ser considerada a abordagem mais genérica, permitindo que você crie Live Copies de qualquer página. A estrutura de conteúdo de uma live copy corresponde exatamente à origem.
+  Essa pode ser considerada a abordagem mais genérica, permitindo que você crie Live Copies de qualquer página. A estrutura de conteúdo de uma live copy corresponde exatamente à origem.
 
 * Quando [criar um site](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
 
-   Esta é uma abordagem mais especializada, principalmente para criar sites com uma estrutura multilíngue.
+  Esta é uma abordagem mais especializada, principalmente para criar sites com uma estrutura multilíngue.
 
 Estas são algumas considerações que devem ser levadas em conta ao criar um site:
 
@@ -93,7 +91,7 @@ Estas são algumas considerações que devem ser levadas em conta ao criar um si
 * Para permitir a seleção de caminhos de idioma para criar em um novo site, as raízes de idioma correspondentes devem existir no blueprint (origem).
 * Uma vez a [o novo site foi criado como uma live copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (usando **Criar**, depois **Site**), os dois primeiros níveis dessa live copy são *superficial*. Os filhos da página não pertencem ao relacionamento dinâmico, mas uma implantação ainda descerá se um relacionamento dinâmico que corresponda ao acionador for encontrado.
 
-   Ajuda a evitar:
+  Ajuda a evitar:
 
    * adicionar idiomas manualmente no blueprint (abaixo do primeiro nível)
    * adicionar conteúdo manualmente diretamente abaixo da raiz do idioma,
@@ -110,7 +108,7 @@ O MSM pode ajudar na criação de sites multilíngues de duas maneiras:
       * O MSM permite cancelar a herança no nível da página e/ou do componente. Isso ajuda a impedir a substituição do conteúdo traduzido (de uma live copy, com conteúdo ainda não traduzido de um blueprint) na próxima implantação.
       * Alguns conectores de tradução de terceiros automatizam esse gerenciamento de heranças do MSM.
 
-         Consulte seu provedor de serviços de tradução para obter mais informações.
+        Consulte seu provedor de serviços de tradução para obter mais informações.
 
       * Uma abordagem alternativa para criar e traduzir matrizes de idioma é usar cópias de idioma juntamente com a estrutura de integração de tradução pronta para uso do AEM.
 
@@ -142,9 +140,9 @@ As modificações na estrutura de conteúdo em um blueprint/árvore de origem s�
 
    * Essa nova configuração deve incluir a ação:
 
-      `PageMoveAction`
+     `PageMoveAction`
 
-      Não adicione outras ações a essa configuração.
+     Não adicione outras ações a essa configuração.
 
 * Posicione a nova configuração:
 
@@ -152,13 +150,13 @@ As modificações na estrutura de conteúdo em um blueprint/árvore de origem s�
 
       * Posicione a configuração recém-criada antes da configuração de implantação padrão.
 
-         A configuração de implantação padrão cuidará da exclusão das páginas em seu local antigo.
+        A configuração de implantação padrão cuidará da exclusão das páginas em seu local antigo.
+
    * Para implantar a movimentação da página, mantendo as respectivas páginas em seu local antigo nas live copies (essencialmente duplicando o conteúdo):
 
       * Posicione a configuração recém-criada após a configuração padrão de implantação.
 
-         Isso garantirá que nenhum conteúdo seja excluído na live copy ou desativado na publicação.
-
+        Isso garantirá que nenhum conteúdo seja excluído na live copy ou desativado na publicação.
 
 ## Personalização de implantações {#customizing-rollouts}
 

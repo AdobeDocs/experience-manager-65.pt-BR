@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2080'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ Cada item presente no modelo contém um `:type` campo que expõe um tipo de recu
 
 #### Modelo dinâmico para mapeamento de componentes {#dynamic-model-to-component-mapping}
 
-Para obter detalhes sobre como o modelo dinâmico para o mapeamento de componentes ocorre no SDK SPA para AEM do Javascript, consulte o artigo [Modelo dinâmico para mapeamento de componentes para SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Para obter detalhes sobre como o modelo dinâmico para o mapeamento de componentes ocorre no SDK SPA do JavaScript para AEM, consulte o artigo [Modelo dinâmico para mapeamento de componentes para SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### Camada específica da estrutura {#framework-specific-layer}
 
@@ -185,7 +185,6 @@ Por exemplo:
 >* `"aem-Grid-newComponent"`: Normaliza o componente para a criação de layout
 >
 
-
 #### Mapeamento de componentes {#component-mapping}
 
 A base subjacente [`Component Mapping`](/help/sites-developing/spa-blueprint.md#componentmapping) biblioteca e seus `MapTo` pode ser encapsulada e estendida para fornecer as funcionalidades relativas à configuração de edição fornecidas junto com a classe de componente atual.
@@ -272,7 +271,7 @@ O fragmento a seguir ilustra a representação em HTML típica de uma estrutura 
 
 O aplicativo é o proprietário do roteamento. Primeiro, o desenvolvedor de front-end precisa implementar um componente de Navegação (mapeado para um componente de navegação AEM). Esse componente renderizaria links de URL a serem usados junto com uma série de rotas que exibirão ou ocultarão fragmentos de conteúdo.
 
-A base subjacente [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) biblioteca e seus ` [ModelRouter](/help/sites-developing/spa-routing.md)` Os módulos do (ativados por padrão) são responsáveis por buscar previamente e fornecer acesso ao modelo associado a um determinado caminho de recurso.
+A base subjacente [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) biblioteca e seus ` [ModelRouter](/help/sites-developing/spa-routing.md)` Os módulos do (ativados por padrão) são responsáveis por buscar previamente e fornecer acesso ao modelo associado a um determinado caminho de recurso.
 
 As duas entidades estão relacionadas com a noção de ` [ModelRouter](/help/sites-developing/spa-routing.md)` A é responsável apenas por ter o ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)` carregado com um modelo de dados estruturado em sincronia com o estado atual do aplicativo.
 

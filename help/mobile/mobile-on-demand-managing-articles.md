@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: b46058f9-4691-4fba-a656-0f8507875a79
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,6 @@ Os artigos representam o texto com base na arte para transmitir informações.
 >
 >* [Gerenciamento de artigos](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
 >
-
 
 ## Criação de um artigo {#creating-an-article}
 

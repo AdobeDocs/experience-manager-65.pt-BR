@@ -9,7 +9,7 @@ content-type: reference
 docset: aem65
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 3%
@@ -22,7 +22,7 @@ O eCommerce genérico do AEM está disponível como parte de uma instalação pa
 
 O Adobe fornece duas versões da Commerce Integration Framework:
 
-|  | CIF no local | Nuvem da CIF |
+|                         | CIF no local | Nuvem da CIF |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versões compatíveis do AEM | AEM no local ou AMS 6.x | AEM AMS 6.4 e 6.5 |
 | Back-end | - AEM, Java <br> - Integração monolítica, mapeamento pré-compilação (modelo)<br> - Repositório JCR | - ADOBE COMMERCE <br>- Java e JavaScript <br>- Nenhum dado do Commerce armazenado no repositório JCR |

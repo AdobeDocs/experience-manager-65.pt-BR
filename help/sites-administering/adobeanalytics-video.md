@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1747'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ Use o procedimento a seguir para configurar uma estrutura para o rastreamento de
    * Os exemplos nas seções seguintes usam o nome **my-sc-configuration** para a configuração e **videofw** para o quadro.
 
 1. Na página da estrutura, selecione uma RSID e defina o uso para todos. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
-1. Na categoria de componente Geral no Sidekick, arraste o componente de Vídeo para a estrutura.
+1. Na categoria geral de componentes no Sidekick, arraste o componente de Vídeo para a estrutura.
 1. Selecione um método de rastreamento:
 
    * [Etapas](/help/sites-administering/adobeanalytics.md)
@@ -290,7 +290,7 @@ Este método é semelhante ao método de Marcos com a diferença de que os marco
 
 1. Defina a opção Rastrear deslocamento.
 
-   * e.g.10,50,75,100
+   * por exemplo,10,50,75,100
 
    Além disso, as informações enviadas para o Adobe Analytics são menos personalizáveis. Há apenas três variáveis disponíveis para mapeamento:
 
@@ -344,6 +344,7 @@ Ao usar o método** legacy seconds**, as chamadas do Adobe Analytics são aciona
 1. Defina o deslocamento da faixa para qualquer número de segundos,
 
    * por exemplo, 6
+
    >[!NOTE]
    >
    >O campo de deslocamento de Rastreamento aceita apenas números inteiros maiores que 0

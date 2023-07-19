@@ -2,10 +2,10 @@
 title: Traduzir conteúdo
 description: Use o conector e as regras de tradução para traduzir o seu conteúdo headless.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2174'
-ht-degree: 95%
+source-wordcount: '2173'
+ht-degree: 94%
 
 ---
 
@@ -93,7 +93,7 @@ Para gerentes de projeto de tradução, geralmente é necessário selecionar man
 
    ![Guia Básico do projeto](assets/project-basic-tab.png)
 
-1. Na guia **Avançado**, use a lista suspensa **Idioma de destino** para selecionar os idiomas nos quais o conteúdo deve ser traduzido. Toque ou clique em **Criar**.
+1. No **Avançado** , use o **Idioma de destino** para selecionar os idiomas nos quais o conteúdo deve ser traduzido. Toque ou clique em **Criar**.
 
    ![Guia Avançado do projeto](assets/project-advanced-tab.png)
 

@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2525'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ As seguintes funções padrão adicionais podem ser incluídas, dependendo dos c
 
 **Administrador de saída:** Pode exibir e modificar configurações na página Saída no Console de administração
 
-**Administrador PDFG:** Pode exibir e modificar configurações na página Gerador de PDF no console de administração
+**Administrador PDFG:** Pode exibir e modificar configurações na página PDF Generator no console de administração
 
 **Usuário PDFG:** Pode acessar todas as funcionalidades não administrativas do PDF Generator
 

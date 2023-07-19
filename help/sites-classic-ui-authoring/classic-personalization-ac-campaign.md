@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,7 @@ As instruções detalhadas estão descritas neste documento.
 >[!NOTE]
 >
 >Ao adicionar modelos de email, adicione-os em **/content/campaigns** disponibilizá-las.
+>
 
 1. No AEM, selecione a variável **Sites** e navegue pelo explorador para encontrar onde suas campanhas de email são gerenciadas. No exemplo a seguir, o nó relacionado é **Sites** > **Campanhas** > **Geometrixx Outdoors** > **Campanhas de email**.
 
@@ -124,7 +125,6 @@ Consulte [Componentes do Adobe Campaign](/help/sites-classic-ui-authoring/classi
 >* Somente os campos do Adobe Campaign **Perfis** targeting dimension são considerados.
 >* Ao visualizar Propriedades de **Sites**, você não tem acesso aos campos de contexto do Adobe Campaign. É possível acessá-los diretamente do email ao editar.
 >
-
 
 1. Inserir um novo **Informativo** > **Texto e personalização (Campanha)** componente.
 1. Abra o componente clicando duas vezes nele. A variável **Editar** tem uma funcionalidade que permite inserir os elementos de personalização.

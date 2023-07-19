@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 0%
@@ -41,7 +41,7 @@ O código-fonte está localizado em /libs/granite/contexthub/code/ui/container/j
 
 ### Configuração {#configuration}
 
-Configure o módulo da interface contexthub.base usando um objeto Javascript no formato JSON. Inclua qualquer uma das seguintes propriedades para configurar os recursos do módulo da interface do usuário:
+Configure o módulo da interface contexthub.base usando um objeto JavaScript no formato JSON. Inclua qualquer uma das seguintes propriedades para configurar os recursos do módulo da interface do usuário:
 
 * **imagem:** Um URL para uma imagem a ser exibida como o ícone.
 * **ícone:** O nome de um [Ícone da Coral UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) classe. Se você especificar um valor para as propriedades icon e image, a imagem será usada.

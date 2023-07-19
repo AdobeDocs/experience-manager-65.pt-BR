@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 3%
@@ -112,7 +112,6 @@ A variável **Ferramentas de e-mail** O componente para ExactTarget pode adicion
 >* Duas das ferramentas de email são obrigatórias: **Endereço de correio físico (obrigatório)** e **Centro de perfil (obrigatório)**. Quando o email é publicado no ExactTarget, essas duas ferramentas de email são adicionadas à parte inferior de cada email por padrão.
 >
 
-
 ### Adicionar a ferramenta Texto e Personalização ao seu email {#adding-text-and-personalization-tool-to-your-e-mail}
 
 Você pode adicionar campos personalizados em um email adicionando o **Texto e personalização** componente à página:
@@ -160,6 +159,7 @@ Emails/Boletins informativos podem ser publicados em seu serviço de e-mail segu
 >Se um email/informativo for publicado com o mesmo nome de um email/informativo já publicado, o email/informativo anterior não será substituído. Em vez disso, um novo email/informativo é criado com o mesmo nome (as IDs de dois informativos são, no entanto, diferentes).
 >
 >A publicação do email/informativo no provedor de serviços de e-mail também publica o email/informativo na instância de publicação do AEM.
+>
 
 ### Atualização De Um Email Publicado {#updating-a-published-e-mail}
 

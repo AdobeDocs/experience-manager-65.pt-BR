@@ -8,7 +8,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1194'
 ht-degree: 6%
@@ -24,7 +24,6 @@ ht-degree: 6%
 >* Algumas funcionalidades não estão disponíveis em todos os consoles e/ou funcionalidades adicionais estão disponíveis em alguns consoles. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas serão abordadas com mais detalhes em outras páginas.
 >* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar páginas de console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [edição](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
-
 
 ## A tela de boas-vindas {#the-welcome-screen}
 
@@ -87,13 +86,13 @@ A variável **Sites** O console do fornece dois painéis para você navegar e ge
 
 * Painel esquerdo
 
-   Isso mostra a estrutura em árvore dos sites e das páginas dentro deles.
+  Isso mostra a estrutura em árvore dos sites e das páginas dentro deles.
 
-   Ele também mostra informações sobre outros aspectos do AEM, incluindo projetos, blueprints e ativos.
+  Ele também mostra informações sobre outros aspectos do AEM, incluindo projetos, blueprints e ativos.
 
 * Painel direito
 
-   Mostra as páginas (no local selecionado no painel esquerdo) e pode ser usado para realizar ações.
+  Mostra as páginas (no local selecionado no painel esquerdo) e pode ser usado para realizar ações.
 
 Aqui é possível [gerenciar suas páginas](/help/sites-authoring/managing-pages.md) usando a barra de ferramentas, um menu de contexto ou abrindo uma página para outras ações.
 
@@ -105,7 +104,7 @@ Aqui é possível [gerenciar suas páginas](/help/sites-authoring/managing-pages
 
 ## Acessar ajuda   {#accessing-help}
 
-Em vários consoles (por exemplo, sites), também há **Ajuda** estiver disponível, isso abrirá o Compartilhamento de pacotes ou o site de documentação.
+Em vários consoles (por exemplo, Sites) também há **Ajuda** estiver disponível, isso abrirá o Compartilhamento de pacotes ou o site de documentação.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
@@ -120,7 +119,7 @@ A variável **Sites** o console lista suas páginas de conteúdo em uma estrutur
    * Listar as páginas secundárias no painel direito
    * Expanda também a estrutura no painel esquerdo.
 
-      Por motivos de desempenho, essa ação depende do número de nós filhos. Com uma instalação padrão, esse método de expansão funciona quando há `30` ou menos nós filhos.
+     Por motivos de desempenho, essa ação depende do número de nós filhos. Com uma instalação padrão, esse método de expansão funciona quando há `30` ou menos nós filhos.
 
 * Um clique duplo no nome da página (painel esquerdo) também expandirá a árvore, embora, como a página é aberta ao mesmo tempo, esse efeito não seja tão óbvio.
 
@@ -202,7 +201,7 @@ Os itens a seguir estão disponíveis; um subconjunto desses campos é mostrado 
    <td>Mostra quando uma página foi bloqueada e a conta de usuário que a bloqueou.</td>
   </tr>
   <tr>
-   <td>Live Copy </td>
+   <td>Live Copy</td>
    <td>Indica quando a página faz parte de uma live copy.</td>
   </tr>
  </tbody>

@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4872'
+source-wordcount: '4871'
 ht-degree: 50%
 
 ---
@@ -80,14 +80,14 @@ A criação de um novo modelo usando o **Console de modelos** e o **Editor de mo
    * Esse é um autor específico, membro do grupo `template-authors`
 
       * Isso atribui os privilégios e permissões necessários. 
+
    * Pode configurar o uso de componentes e outros detalhes de alto nível que exigem:
 
       * Algum conhecimento técnico
 
          * Por exemplo, usar padrões ao definir caminhos.
+
       * Informações técnicas do desenvolvedor.
-
-
 
 Devido à natureza de algumas tarefas, como a criação de uma pasta, é necessário um ambiente de desenvolvimento, o que requer conhecimento/experiência.
 
@@ -265,7 +265,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
 
 1. Abra a guia **Avançado**.
 
-1. Em **Configurações do modelo** use **Adicionar campo** para especificar os caminhos aos seus modelos.
+1. Em **Configurações do modelo** use **Adicionar campo** para especificar os caminhos para seu(s) modelo(s).
 
    O caminho pode ser explícito ou usar padrões. Por exemplo:
 
@@ -304,35 +304,35 @@ Os seguintes aspectos de um modelo podem ser editados:
 
 * [Estrutura](#editingatemplatestructure)
 
-   Os componentes adicionados aqui não podem ser movidos/removido das páginas resultantes pelos autores da página. Se você quiser que os autores de página possam adicionar e remover componentes de páginas resultantes, será necessário adicionar um sistema de parágrafo ao modelo.
+  Os componentes adicionados aqui não podem ser movidos/removido das páginas resultantes pelos autores da página. Se você quiser que os autores de página possam adicionar e remover componentes de páginas resultantes, será necessário adicionar um sistema de parágrafo ao modelo.
 
-   Quando os componentes estiverem bloqueados, é possível adicionar conteúdo, que não pode ser editado por autores da página. É possível desbloquear componentes para permitir definir [Conteúdo inicial](#editingatemplateinitialcontent).
+  Quando os componentes estiverem bloqueados, é possível adicionar conteúdo, que não pode ser editado por autores da página. É possível desbloquear componentes para permitir definir [Conteúdo inicial](#editingatemplateinitialcontent).
 
-   >[!NOTE]
-   >
-   >No modo estrutura, os componentes principais de um componente desbloqueado não podem ser movidos, recortados ou excluídos.
+  >[!NOTE]
+  >
+  >No modo estrutura, os componentes principais de um componente desbloqueado não podem ser movidos, recortados ou excluídos.
 
 * [Conteúdo inicial](#editingatemplateinitialcontent)
 
-   Quando um componente tiver sido desbloqueado, é possível definir o conteúdo inicial que será copiado para páginas resultantes, criado a partir do modelo. Esses componentes desbloqueados podem ser editados nas páginas resultantes.
+  Quando um componente tiver sido desbloqueado, é possível definir o conteúdo inicial que será copiado para páginas resultantes, criado a partir do modelo. Esses componentes desbloqueados podem ser editados nas páginas resultantes.
 
-   >[!NOTE]
-   >
-   >No modo de **conteúdo inicial**, bem como nas páginas resultantes, todos os componentes desbloqueados que tenham um pai acessível (isto é, componentes dentro de um contêiner de layout) podem ser excluídos.
+  >[!NOTE]
+  >
+  >No modo de **conteúdo inicial**, bem como nas páginas resultantes, todos os componentes desbloqueados que tenham um pai acessível (isto é, componentes dentro de um contêiner de layout) podem ser excluídos.
 
 * [Layout](#editingatemplatelayout)
 
-   Aqui você pode predefinir o layout do modelo para os formatos de dispositivo necessários. O modo **Layout** de criação do modelo tem a mesma funcionalidade que o modo [**Layout** da criação de página](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
+  Aqui você pode predefinir o layout do modelo para os formatos de dispositivo necessários. O modo **Layout** de criação do modelo tem a mesma funcionalidade que o modo [**Layout** da criação de página](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
 * [Políticas da página](#editingatemplatepagepolicies)
 
-   Em políticas de página, é possível conectar políticas de página predefinidas à página. Essas políticas da página definem as várias configurações de design.
+  Em políticas de página, é possível conectar políticas de página predefinidas à página. Essas políticas da página definem as várias configurações de design.
 
 * [Estilos](/help/sites-authoring/style-system.md)
 
-   O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
+  O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
 
-   Consulte a [documentação do Style System](/help/sites-authoring/style-system.md) para obter mais informações.
+  Consulte a [documentação do Style System](/help/sites-authoring/style-system.md) para obter mais informações.
 
 O seletor de **Modo** na barra de ferramentas permite selecionar e editar o aspecto apropriado do modelo:
 
@@ -366,160 +366,160 @@ Entrada **Estrutura** modo do editor de modelos:
 
 * **Adicionar componentes**
 
-   Existem vários mecanismos para adicionar componentes ao modelo:
+  Existem vários mecanismos para adicionar componentes ao modelo:
 
    * No **Componentes** navegador no painel lateral.
    * Ao usar o **Inserir componente** opção (**+** ícone) disponível na barra de ferramentas dos componentes já no modelo ou no **Arraste os componentes para cá** caixa.
 
    * Ao arrastar um ativo (no navegador de **Ativos** no painel lateral) diretamente no modelo para gerar o componente adequado no local.
 
-   Depois de adicionado, cada componente é marcado com:
+  Depois de adicionado, cada componente é marcado com:
 
    * Uma borda
    * Um marcador para mostrar o tipo de componente
    * Um marcador para mostrar quando o componente foi desbloqueado
 
-   >[!NOTE]
-   >
-   >Ao adicionar um componente de **Título** pronto ao modelo, ele conterá **estrutura** de texto padrão.
-   >
-   >
-   >Se alterar e adicionar seu próprio texto, esse texto atualizado será usado quando uma página for criada a partir do modelo.
-   >
-   >
-   >Se deixar o texto padrão (estrutura) como está, o título será padrão para o nome da página subsequente.
+  >[!NOTE]
+  >
+  >Ao adicionar um componente de **Título** pronto ao modelo, ele conterá **estrutura** de texto padrão.
+  >
+  >
+  >Se alterar e adicionar seu próprio texto, esse texto atualizado será usado quando uma página for criada a partir do modelo.
+  >
+  >
+  >Se deixar o texto padrão (estrutura) como está, o título será padrão para o nome da página subsequente.
 
-   >[!NOTE]
-   >
-   >Embora não seja idêntico, adicionar componentes e ativos a um modelo tem muitas coisa em comum com as ações semelhantes ao [criar a página](/help/sites-authoring/editing-content.md).
+  >[!NOTE]
+  >
+  >Embora não seja idêntico, adicionar componentes e ativos a um modelo tem muitas coisa em comum com as ações semelhantes ao [criar a página](/help/sites-authoring/editing-content.md).
 
 * **Ações do componente**
 
-   Execute ações nos componentes uma vez que eles tenham sido adicionados ao modelo. Cada instância individual tem uma barra de ferramentas que permite acessar as ações disponíveis. A barra de ferramentas depende do tipo de componente.
+  Execute ações nos componentes uma vez que eles tenham sido adicionados ao modelo. Cada instância individual tem uma barra de ferramentas que permite acessar as ações disponíveis. A barra de ferramentas depende do tipo de componente.
 
-   ![screen_shot_2018-03-23at120909](assets/screen_shot_2018-03-23at120909.png)
+  ![screen_shot_2018-03-23at120909](assets/screen_shot_2018-03-23at120909.png)
 
-   Além disso, ela pode ser dependente das ações executadas como quando uma política foi associada ao componente, o ícone de configuração de design é disponibilizado.
+  Além disso, ela pode ser dependente das ações executadas como quando uma política foi associada ao componente, o ícone de configuração de design é disponibilizado.
 
 * **Editar e configurar**
 
-   Com essas duas ações você pode adicionar conteúdo aos seus componentes.
+  Com essas duas ações você pode adicionar conteúdo aos seus componentes.
 
 * **Borda para indicar estrutura**
 
-   Ao trabalhar no **Estrutura** uma borda laranja indica o componente selecionado no momento. Uma linha pontilhada também indica o componente principal.
+  Ao trabalhar no **Estrutura** uma borda laranja indica o componente selecionado no momento. Uma linha pontilhada também indica o componente principal.
 
-   Por exemplo, na captura de tela abaixo de **Texto** for selecionado, dentro de um **Contêiner de layout** (responvegrid).
+  Por exemplo, na captura de tela abaixo de **Texto** for selecionado, dentro de um **Contêiner de layout** (responvegrid).
 
-   ![chlimage_1-134](assets/chlimage_1-134.png)
+  ![chlimage_1-134](assets/chlimage_1-134.png)
 
 * **Política e propriedades (Geral)**
 
-   As políticas de conteúdo (ou design) definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com o modelo).
+  As políticas de conteúdo (ou design) definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com o modelo).
 
-   Crie uma política de conteúdo ou selecione uma existente para um componente. Isso permite que definir os detalhes do design.
+  Crie uma política de conteúdo ou selecione uma existente para um componente. Isso permite que definir os detalhes do design.
 
-   ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
+  ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 
-   A janela de configuração é dividida em dois.
+  A janela de configuração é dividida em dois.
 
    * Do lado esquerdo da caixa de diálogo, em **Política**, você tem a capacidade de selecionar uma política existente.
    * Do lado direito da caixa de diálogo, em **Propriedades**, você pode definir as propriedades específicas ao tipo de componente.
 
-   As propriedades disponíveis dependem do componente selecionado. Por exemplo, para um componente de texto, as propriedades definem as opções de copiar e colar, de formatação e de estilo de parágrafo, entre outras opções.
+  As propriedades disponíveis dependem do componente selecionado. Por exemplo, para um componente de texto, as propriedades definem as opções de copiar e colar, de formatação e de estilo de parágrafo, entre outras opções.
 
-   ***Política***
+  ***Política***
 
-   As políticas de conteúdo (ou design) definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com o modelo).
+  As políticas de conteúdo (ou design) definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com o modelo).
 
-   Em **Política** é possível selecionar uma política existente para aplicar ao componente por meio da lista suspensa.
+  Em **Política** é possível selecionar uma política existente para aplicar ao componente por meio da lista suspensa.
 
-   ![chlimage_1-137](assets/chlimage_1-137.png)
+  ![chlimage_1-137](assets/chlimage_1-137.png)
 
-   Uma nova política pode ser adicionada ao selecionar o botão adicionar ao lado da lista suspensa **Selecionar política**. Um novo título deve ser especificado no campo **Título da política**.
+  Uma nova política pode ser adicionada ao selecionar o botão adicionar ao lado da lista suspensa **Selecionar política**. Um novo título deve ser especificado no campo **Título da política**.
 
-   ![chlimage_1-138](assets/chlimage_1-138.png)
+  ![chlimage_1-138](assets/chlimage_1-138.png)
 
-   A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada será denominada **Cópia de X**, onde X é o título da política copiada.
+  A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada será denominada **Cópia de X**, onde X é o título da política copiada.
 
-   ![chlimage_1-139](assets/chlimage_1-139.png)
+  ![chlimage_1-139](assets/chlimage_1-139.png)
 
-   É opcional uma descrição da política no campo **Descrição da política**.
+  É opcional uma descrição da política no campo **Descrição da política**.
 
-   Na seção **Outros modelos que também utilizam a política selecionada**, você pode ver qual modelo utiliza a política selecionada na lista suspensa **Selecionar política**.
+  Na seção **Outros modelos que também utilizam a política selecionada**, você pode ver qual modelo utiliza a política selecionada na lista suspensa **Selecionar política**.
 
-   ![chlimage_1-140](assets/chlimage_1-140.png)
+  ![chlimage_1-140](assets/chlimage_1-140.png)
 
-   >[!NOTE]
-   >
-   >Se vários componentes do mesmo tipo forem adicionados como conteúdo inicial, a mesma política se aplica a todos os componentes. Isso reflete a mesma restrição no [**Modo Design** para modelos estáticos](/help/sites-authoring/default-components-designmode.md).
+  >[!NOTE]
+  >
+  >Se vários componentes do mesmo tipo forem adicionados como conteúdo inicial, a mesma política se aplica a todos os componentes. Isso reflete a mesma restrição no [**Modo Design** para modelos estáticos](/help/sites-authoring/default-components-designmode.md).
 
-   ***Propriedades***
+  ***Propriedades***
 
-   No **Propriedades** cabeçalho, é possível definir as configurações do componente. O cabeçalho tem duas guias:
+  No **Propriedades** cabeçalho, é possível definir as configurações do componente. O cabeçalho tem duas guias:
 
    * Principal
    * Recursos
 
-   *Principal*
+  *Principal*
 
-   No **Principal** , as configurações mais importantes do componente serão definidas.
+  No **Principal** , as configurações mais importantes do componente serão definidas.
 
-   Por exemplo, para um componente de imagem, as larguras permitidas podem ser definidas juntamente com a ativação de carregamento lento.
+  Por exemplo, para um componente de imagem, as larguras permitidas podem ser definidas juntamente com a ativação de carregamento lento.
 
-   Se uma configuração permitir várias configurações, clique ou toque no **Adicionar** para adicionar outra configuração.
+  Se uma configuração permitir várias configurações, clique ou toque no **Adicionar** para adicionar outra configuração.
 
-   ![chlimage_1-141](assets/chlimage_1-141.png)
+  ![chlimage_1-141](assets/chlimage_1-141.png)
 
-   Para remover uma configuração, clique ou toque no botão **Excluir** localizado à direita da configuração.
+  Para remover uma configuração, clique ou toque no botão **Excluir** localizado à direita da configuração.
 
-   Para remover uma configuração, clique ou toque no botão** Excluir**.
+  Para remover uma configuração, clique ou toque no botão** Excluir**.
 
-   ![chlimage_1-142](assets/chlimage_1-142.png)
+  ![chlimage_1-142](assets/chlimage_1-142.png)
 
-   *Recursos*
+  *Recursos*
 
-   A variável **Recursos** permite ativar ou desativar recursos adicionais do componente.
+  A variável **Recursos** permite ativar ou desativar recursos adicionais do componente.
 
-   Por exemplo, para um componente de imagem, é possível definir as proporções de corte, as orientações de imagem permitidas e se os uploads são permitidos.
+  Por exemplo, para um componente de imagem, é possível definir as proporções de corte, as orientações de imagem permitidas e se os uploads são permitidos.
 
-   ![chlimage_1-143](assets/chlimage_1-143.png)
+  ![chlimage_1-143](assets/chlimage_1-143.png)
 
-   >[!CAUTION]
-   >
-   >Observe que no AEM, as proporções de corte estão definidas como **altura/largura**. Isso difere da definição convencional de largura/altura e é feita por motivos de compatibilidade legal. Os usuários da criação de página não estarão cientes de qualquer diferença desde que você defina o **Nome** claramente, uma vez que este é exibido na interface do usuário.
+  >[!CAUTION]
+  >
+  >Observe que no AEM, as proporções de corte estão definidas como **altura/largura**. Isso difere da definição convencional de largura/altura e é feita por motivos de compatibilidade legal. Os usuários da criação de página não estarão cientes de qualquer diferença desde que você defina o **Nome** claramente, uma vez que este é exibido na interface do usuário.
 
-   >[!NOTE]
-   >
-   >[As políticas de conteúdo para componentes que implementam o editor de rich text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) só podem ser definidas para opções disponibilizadas pelo RTE, por meio das configurações da interface. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[!NOTE]
+  >
+  >[As políticas de conteúdo para componentes que implementam o editor de rich text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) só podem ser definidas para opções disponibilizadas pelo RTE, por meio das configurações da interface. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Política e propriedades (contêiner de layout)**
 
-   As configurações de política e propriedades de um contêiner de layout são semelhantes ao uso geral, mas com algumas diferenças.
+  As configurações de política e propriedades de um contêiner de layout são semelhantes ao uso geral, mas com algumas diferenças.
 
-   >[!NOTE]
-   >
-   >A configuração de uma política é obrigatória para componentes de contêiner, pois permite definir componentes que estarão disponíveis no contêiner.
+  >[!NOTE]
+  >
+  >A configuração de uma política é obrigatória para componentes de contêiner, pois permite definir componentes que estarão disponíveis no contêiner.
 
-   A janela de configuração é dividida em dois, assim como no uso geral da janela.
+  A janela de configuração é dividida em dois, assim como no uso geral da janela.
 
-   ***Política***
+  ***Política***
 
-   As políticas de conteúdo (ou design) definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com o modelo).
+  As políticas de conteúdo (ou design) definem as propriedades de design de um componente. Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima. Elas são aplicáveis ao modelo (e às páginas criadas com o modelo).
 
-   Em **Política** é possível selecionar uma política existente para aplicar ao componente por meio da lista suspensa. Isso funciona exatamente da mesma forma que a janela de uso geral.
+  Em **Política** é possível selecionar uma política existente para aplicar ao componente por meio da lista suspensa. Isso funciona exatamente da mesma forma que a janela de uso geral.
 
-   ***Propriedades***
+  ***Propriedades***
 
-   No **Propriedades** cabeçalho, você pode escolher quais componentes estão disponíveis para o contêiner de layout e definir suas configurações. O cabeçalho tem três guias:
+  No **Propriedades** cabeçalho, você pode escolher quais componentes estão disponíveis para o contêiner de layout e definir suas configurações. O cabeçalho tem três guias:
 
    * Componentes permitidos
    * Componentes padrão
    * Configurações responsivas
 
-   *Componentes permitidos*
+  *Componentes permitidos*
 
-   No **Componentes permitidos** defina quais componentes estarão disponíveis para o contêiner de layout.
+  No **Componentes permitidos** defina quais componentes estarão disponíveis para o contêiner de layout.
 
    * Os componentes são agrupados por seus grupos de componentes, que podem ser expandidos e recolhidos.
    * Um grupo inteiro pode ser selecionado, marcando o nome do grupo, e todos podem ser desmarcados ao desmarcar.
@@ -527,52 +527,53 @@ Entrada **Estrutura** modo do editor de modelos:
    * Há uma pesquisa disponível para filtrar um componente por nome.
    * As contagens listadas à direita do nome do grupo de componentes representam o número total de componentes selecionados nesses grupos, independentemente do filtro.
 
-   ![chlimage_1-144](assets/chlimage_1-144.png)
+  ![chlimage_1-144](assets/chlimage_1-144.png)
 
-   *Componentes padrão*
+  *Componentes padrão*
 
-   No **Componentes padrão** , você define quais componentes são associados automaticamente a determinados tipos de mídia para que, quando um autor arrastar um ativo do navegador de ativos, o AEM saiba com qual componente associá-lo. Observe que somente os componentes com zonas de lançamento estão disponíveis para essa configuração.
+  No **Componentes padrão** , você define quais componentes são associados automaticamente a determinados tipos de mídia para que, quando um autor arrastar um ativo do navegador de ativos, o AEM saiba com qual componente associá-lo. Observe que somente os componentes com zonas de lançamento estão disponíveis para essa configuração.
 
-   Clique ou toque **Adicionar mapeamento** para adicionar um componente totalmente novo e mapeamento de tipo MIME.
+  Clique ou toque **Adicionar mapeamento** para adicionar um componente totalmente novo e mapeamento de tipo MIME.
 
-   Selecione um componente na lista e clique ou toque em **Adicionar tipo** para adicionar outro tipo MIME a um componente já mapeado. Clique no ícone **Excluir** para remover a um tipo MIME.
+  Selecione um componente na lista e clique ou toque em **Adicionar tipo** para adicionar outro tipo MIME a um componente já mapeado. Clique no ícone **Excluir** para remover a um tipo MIME.
 
-   ![chlimage_1-145](assets/chlimage_1-145.png)
+  ![chlimage_1-145](assets/chlimage_1-145.png)
 
-   *Configurações responsivas*
+  *Configurações responsivas*
 
-   Na guia **Configurações responsivas**, é possível configurar o número de colunas na grade resultante do container de layout.
+  Na guia **Configurações responsivas**, é possível configurar o número de colunas na grade resultante do container de layout.
 
 * **Desbloquear/bloquear componentes**
 
-   Você desbloqueia/bloqueia componentes para definir se o conteúdo está disponível para alteração no **Conteúdo inicial** modo.
+  Você desbloqueia/bloqueia componentes para definir se o conteúdo está disponível para alteração no **Conteúdo inicial** modo.
 
-   Quando um componente tiver sido desbloqueado:
+  Quando um componente tiver sido desbloqueado:
 
    * Um indicador de cadeado aberto é mostrado na borda.
    * A barra de ferramentas do componente será ajustada de acordo.
    * Qualquer conteúdo já inserido não será mais exibido em **Estrutura** modo.
 
       * O conteúdo já inserido é considerado conteúdo inicial e é visível apenas no modo **Conteúdo inicial**.
+
    * Os pais do componente desbloqueado não podem ser movidos, recortados ou excluídos.
 
-   ![chlimage_1-146](assets/chlimage_1-146.png)
+  ![chlimage_1-146](assets/chlimage_1-146.png)
 
-   Isso inclui desbloquear componentes de contêiner para que outros componentes possam ser adicionados, no modo **Conteúdo inicial** ou nas páginas resultantes. Se você já tiver adicionado componentes/conteúdo ao contêiner antes de desbloqueá-lo, eles não serão mais exibidos quando estiverem no modo **Estrutura**, mas serão exibidos no modo **Conteúdo inicial**. No **modo Estrutura**, apenas o componente do contêiner será mostrado com sua lista de **Componentes permitidos**.
+  Isso inclui desbloquear componentes de contêiner para que outros componentes possam ser adicionados, no modo **Conteúdo inicial** ou nas páginas resultantes. Se você já tiver adicionado componentes/conteúdo ao contêiner antes de desbloqueá-lo, eles não serão mais exibidos quando estiverem no modo **Estrutura**, mas serão exibidos no modo **Conteúdo inicial**. No **modo Estrutura**, apenas o componente do contêiner será mostrado com sua lista de **Componentes permitidos**.
 
-   ![chlimage_1-147](assets/chlimage_1-147.png)
+  ![chlimage_1-147](assets/chlimage_1-147.png)
 
-   Para economizar espaço, o contêiner de layout não é expandido para acomodar a lista de componentes permitidos. Em vez disso, o container se torna uma lista rolável.
+  Para economizar espaço, o contêiner de layout não é expandido para acomodar a lista de componentes permitidos. Em vez disso, o container se torna uma lista rolável.
 
-   Os componentes configuráveis são mostrados com um ícone de **Política**, no qual você pode tocar ou clicar para editar a política e as propriedades desse componente.
+  Os componentes configuráveis são mostrados com um ícone de **Política**, no qual você pode tocar ou clicar para editar a política e as propriedades desse componente.
 
-   ![chlimage_1-148](assets/chlimage_1-148.png)
+  ![chlimage_1-148](assets/chlimage_1-148.png)
 
 * **Relação com páginas existentes**
 
-   Se a estrutura for atualizada depois de criar as páginas baseadas no modelo, então essas páginas refletirão as alterações no modelo. Um aviso é exibido na barra de ferramentas para lembrá-lo desse fato, junto com caixas de diálogo de confirmação.
+  Se a estrutura for atualizada depois de criar as páginas baseadas no modelo, então essas páginas refletirão as alterações no modelo. Um aviso é exibido na barra de ferramentas para lembrá-lo desse fato, junto com caixas de diálogo de confirmação.
 
-   ![chlimage_1-149](assets/chlimage_1-149.png)
+  ![chlimage_1-149](assets/chlimage_1-149.png)
 
 ### Editar um modelo - Conteúdo inicial - Criação {#editing-a-template-initial-content-author}
 
@@ -586,17 +587,17 @@ Embora todo o conteúdo criado no modo **Estrutura** seja visível no **Conteúd
 
 * Os componentes desbloqueados que estão disponíveis para edição são marcados. Quando selecionados, eles têm uma borda azul:
 
-   ![chlimage_1-150](assets/chlimage_1-150.png)
+  ![chlimage_1-150](assets/chlimage_1-150.png)
 
 * Os componentes desbloqueados têm uma barra de ferramentas, permitindo editar e configurar o conteúdo:
 
-   ![chlimage_1-151](assets/chlimage_1-151.png)
+  ![chlimage_1-151](assets/chlimage_1-151.png)
 
 * Se um componente do contêiner foi desbloqueado (no modo **estrutura**), você pode adicionar novos componentes ao contêiner (no modo **Conteúdo inicial**). Os componentes adicionados no modo **Conteúdo inicial** podem ser movidos para ou excluído das páginas resultantes.
 
-   Você pode adicionar o componente utilizando a área **Arraste componentes até aqui** ou a opção **Inserir novo componente** na barra de ferramentas do contêiner apropriado.
+  Você pode adicionar o componente utilizando a área **Arraste componentes até aqui** ou a opção **Inserir novo componente** na barra de ferramentas do contêiner apropriado.
 
-   ![chlimage_1-152](assets/chlimage_1-152.png) ![chlimage_1-153](assets/chlimage_1-153.png)
+  ![chlimage_1-152](assets/chlimage_1-152.png) ![chlimage_1-153](assets/chlimage_1-153.png)
 
 * Se o conteúdo inicial do modelo for atualizado depois que as páginas forem criadas com base no modelo, então essas páginas não serão afetadas por alterações no conteúdo inicial no modelo.
 
@@ -638,24 +639,24 @@ Para acessar o **Design da página** diálogo:
 
 * É possível selecionar uma política existente para a página na lista suspensa **Selecionar política**.
 
-   ![chlimage_1-157](assets/chlimage_1-157.png)
+  ![chlimage_1-157](assets/chlimage_1-157.png)
 
-   Uma nova política pode ser adicionada ao selecionar o botão adicionar ao lado da lista suspensa **Selecionar política**. Um novo título deve ser especificado no campo **Título da política**.
+  Uma nova política pode ser adicionada ao selecionar o botão adicionar ao lado da lista suspensa **Selecionar política**. Um novo título deve ser especificado no campo **Título da política**.
 
-   ![chlimage_1-158](assets/chlimage_1-158.png)
+  ![chlimage_1-158](assets/chlimage_1-158.png)
 
-   A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada será denominada **Cópia de X**, onde X é o título da política copiada.
+  A política existente selecionada na lista suspensa **Selecionar política** pode ser copiada como uma nova política usando o botão copiar ao lado do menu suspenso. Um novo título deve ser especificado no campo **Título da política**. Por padrão, a política copiada será denominada **Cópia de X**, onde X é o título da política copiada.
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+  ![chlimage_1-159](assets/chlimage_1-159.png)
 
 * Defina um título para a política no campo **Título da política**. É necessário que a política tenha um título para que possa ser facilmente selecionada na lista suspensa **Selecionar política**.
 
-   ![chlimage_1-160](assets/chlimage_1-160.png)
+  ![chlimage_1-160](assets/chlimage_1-160.png)
 
 * É opcional uma descrição da política no campo **Descrição da política**.
 * Na seção **Outros modelos que também utilizam a política selecionada**, você pode ver qual modelo utiliza a política selecionada na lista suspensa **Selecionar política**.
 
-   ![chlimage_1-161](assets/chlimage_1-161.png)
+  ![chlimage_1-161](assets/chlimage_1-161.png)
 
 #### Propriedades da página {#page-properties}
 
@@ -665,19 +666,19 @@ Usando as propriedades de página, é possível definir as bibliotecas do lado d
 
 * Especifique as bibliotecas do lado do cliente que você deseja aplicar às páginas criadas com este modelo. Inserção do nome de uma biblioteca no campo de texto na variável **Bibliotecas do cliente** seção.
 
-   ![chlimage_1-163](assets/chlimage_1-163.png)
+  ![chlimage_1-163](assets/chlimage_1-163.png)
 
 * Se as várias bibliotecas forem necessárias, clique no botão Adicionar para adicionar um campo de texto extra para o nome da biblioteca.
 
-   ![chlimage_1-164](assets/chlimage_1-164.png)
+  ![chlimage_1-164](assets/chlimage_1-164.png)
 
-   Adicione quantos campos de texto forem necessário para suas bibliotecas do lado do cliente.
+  Adicione quantos campos de texto forem necessário para suas bibliotecas do lado do cliente.
 
-   ![chlimage_1-165](assets/chlimage_1-165.png)
+  ![chlimage_1-165](assets/chlimage_1-165.png)
 
 * Defina a posição relativa das bibliotecas conforme necessário, ao arrastar os campos usando a alça de arrastar.
 
-   ![chlimage_1-166](assets/chlimage_1-166.png)
+  ![chlimage_1-166](assets/chlimage_1-166.png)
 
 >[!NOTE]
 >
@@ -707,13 +708,16 @@ Ao criar modelos, você deve considerar:
 
       * Elas são aplicadas imediatamente às páginas resultantes.
       * A publicação do template alterado ainda é necessária para que os visitantes vejam as alterações.
+
    * Alterações nas políticas de conteúdo e configurações de design:
 
       * Elas se aplicam imediatamente às páginas resultantes.
       * A publicação das alterações é necessária para que os visitantes vejam as alterações.
+
    * Alterações no conteúdo inicial:
 
       * Elas se aplicam somente às páginas criadas após as alterações no modelo.
+
    * As alterações no layout dependem se o componente modificado faz parte de:
 
       * Somente estrutura - aplicado imediatamente

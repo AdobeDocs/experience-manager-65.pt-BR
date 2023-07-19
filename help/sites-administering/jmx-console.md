@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4957'
+source-wordcount: '4956'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
    * model: a ID do modelo a ser consultado. Para ver uma contagem de instâncias de fluxo de trabalho com falha para todos os modelos de fluxo de trabalho, não especifique nenhum valor. A ID é o caminho para o nó do modelo, por exemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor retornado: o número de instâncias de fluxo de trabalho com falha.
 
@@ -101,7 +101,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * simulação: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executá-la. O valor padrão de `false` faz com que a operação seja executada.
    * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias com falha de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor retornado: dados tabulares sobre as instâncias terminadas, contendo as seguintes colunas:
 
@@ -119,7 +119,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * simulação: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executá-la. O valor padrão de `false` faz com que a operação seja executada.
    * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação aos itens de trabalho com falha de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor retornado: dados tabulares sobre os itens de trabalho com falha que são repetidos, incluindo as seguintes colunas:
 
@@ -136,7 +136,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
    * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias de fluxo de trabalho de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Número de dias desde o início do workflow: a idade das instâncias de workflow a serem removidas, em dias.
    * simulação: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executá-la. O valor padrão de `false` faz com que a operação seja executada.
 
@@ -155,7 +155,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
    * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias de fluxo de trabalho de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor retornado: o número de instâncias de fluxo de trabalho obsoletas.
 
@@ -165,7 +165,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
    * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias obsoletas de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * simulação: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executá-la. O valor padrão de `false` faz com que a operação seja executada.
 
 * Valor retornado: uma lista de instâncias de fluxo de trabalho que são reiniciadas.
@@ -181,7 +181,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
    * Modelo: (opcional) a ID do modelo para o qual o número de instâncias em execução é retornado. Especifique nenhum modelo para retornar o número de instâncias em execução de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor retornado: o número de instâncias de fluxo de trabalho em execução.
 
@@ -191,7 +191,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
    * Modelo: (opcional) a ID do modelo para o qual o número de instâncias concluídas é retornado. Especifique nenhum modelo para retornar o número de instâncias concluídas de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor retornado: o número de instâncias de fluxo de trabalho concluídas.
 
@@ -201,7 +201,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
    * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias de fluxo de trabalho de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Número de dias desde a conclusão do fluxo de trabalho: o número de dias em que as instâncias de fluxo de trabalho estiveram no estado concluído.
    * simulação: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executá-la. O valor padrão de `false` faz com que a operação seja executada.
 
@@ -556,11 +556,11 @@ Somente leitura.
 
    * `target`: (Opcional) A `String` valor que representa o nome do arquivo ZIP ou diretório em que os dados do repositório serão arquivados. Para usar um arquivo ZIP, inclua a extensão de nome de arquivo ZIP. Para usar um diretório, inclua nenhuma extensão de nome de arquivo.
 
-      Para executar um backup incremental, especifique o diretório usado anteriormente para o backup.
+     Para executar um backup incremental, especifique o diretório usado anteriormente para o backup.
 
-      Você pode especificar um caminho absoluto ou relativo. Os caminhos relativos são relativos ao pai do diretório crx-quickstart.
+     Você pode especificar um caminho absoluto ou relativo. Os caminhos relativos são relativos ao pai do diretório crx-quickstart.
 
-      Quando você não especificar nenhum valor, o valor padrão de `backup-currentdate.zip` é utilizada, onde `currentdate` está no formato `yyyyMMdd-HHmm`.
+     Quando você não especificar nenhum valor, o valor padrão de `backup-currentdate.zip` é utilizada, onde `currentdate` está no formato `yyyyMMdd-HHmm`.
 
 * Valor retornado: nenhum
 
@@ -707,7 +707,7 @@ Somente leitura.
 
 **Ativado** Um valor booleano que indica se o agente está ativado:
 
-* `true`: Ativado.
+* `true`: Habilitado.
 * `false`: Desativado.
 
 **FilaBloqueada** Um valor booleano que indica se a fila existe e está bloqueada:

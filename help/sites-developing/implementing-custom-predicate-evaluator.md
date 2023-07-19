@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ef253905-87da-4fa2-9f6c-778f1b12bd58
 docset: aem65
 exl-id: 72cbe589-14a1-40f5-a7cb-8960f02e0ebb
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '776'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Você pode encontrar o código desta página no GitHub
 
 Um avaliador de predicado lida com a avaliação de determinados predicados, que são as restrições de definição de uma consulta.
 
-Ele mapeia uma restrição de pesquisa de nível superior (como &quot;largura > 200&quot;) para uma consulta JCR específica que se ajuste ao modelo de conteúdo real (por exemplo, metadados/@width > 200). Ou ele pode filtrar nós manualmente e verificar suas restrições.
+Ele mapeia uma restrição de pesquisa de nível superior (como &quot;width > 200&quot;) para uma consulta JCR específica que se ajuste ao modelo de conteúdo real (por exemplo, metadata/@width > 200). Ou ele pode filtrar nós manualmente e verificar suas restrições.
 
 >[!NOTE]
 >

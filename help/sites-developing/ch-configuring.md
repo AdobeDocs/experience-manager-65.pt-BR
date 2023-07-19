@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 78ec31362f3aceb5cfc9cc0735bccb88082b8e2d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 1%
@@ -48,7 +48,6 @@ or
 >* `/libs/settings/cloudsettings`
 >* `/conf/global/settings/cloudsettings`
 >* `/conf/<tenant>/settings/cloudsettings`
-
 
 ## Exibição e ocultação da interface do usuário do ContextHub {#showing-and-hiding-the-contexthub-ui}
 
@@ -189,7 +188,7 @@ Um armazenamento contexthub.generic-jsonp é configurado para que ele armazene d
 
 O candidato do armazenamento de amostra contexthub.generic-jsonp permite recuperar dados de um serviço JSONP ou um serviço da Web que retorna dados JSON. Para este candidato da loja, use a configuração da loja para fornecer detalhes sobre o serviço JSONP a ser usado.
 
-A variável [init](/help/sites-developing/contexthub-api.md#init-name-config) função da `ContextHub.Store.JSONPStore` A classe Javascript define um `config` objeto que inicializa este candidato de armazenamento. A variável `config` objeto contém um `service` objeto que inclui detalhes sobre o serviço JSONP. Para configurar a loja, forneça o `service` no formato JSON como o valor da propriedade Configuração detalhada.
+A variável [init](/help/sites-developing/contexthub-api.md#init-name-config) função da `ContextHub.Store.JSONPStore` A classe JavaScript define um `config` objeto que inicializa este candidato de armazenamento. A variável `config` objeto contém um `service` objeto que inclui detalhes sobre o serviço JSONP. Para configurar a loja, forneça o `service` no formato JSON como o valor da propriedade Configuração detalhada.
 
 Para salvar dados do serviço MD5 do site jsontest.com, use o procedimento em [Criação de um armazenamento do ContextHub](/help/sites-developing/ch-configuring.md#creating-a-contexthub-store) usando as seguintes propriedades:
 
@@ -199,21 +198,21 @@ Para salvar dados do serviço MD5 do site jsontest.com, use o procedimento em [C
 * **Ativado:** Selecionar
 * **Configuração detalhada (JSON):**
 
-   ```xml
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```xml
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### Adição de um módulo de interface do usuário para os dados md5 {#adding-a-ui-module-for-the-md-data}
 
@@ -227,15 +226,15 @@ Use o procedimento em [Adição de um módulo de interface](#adding-a-ui-module)
 * **Tipo de módulo:** contexthub.base
 * **Configuração detalhada (JSON):**
 
-   ```xml
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Converstion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```xml
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Converstion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## Depuração do ContextHub {#debugging-contexthub}
 

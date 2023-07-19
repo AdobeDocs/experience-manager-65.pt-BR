@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: d6b595b6b5477b5cad662e219f1abd483491897f
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1687'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ A personalização pode ser usada em muitos casos, por exemplo:
 
 * Os usuários exigem um logon para autorização; isso será vinculado a um perfil que fornece as informações necessárias para personalização; possivelmente detalhes como localização, relacionamento com o produto, histórico de uso, responsabilidades orçamentárias etc.
 * Essas instâncias podem variar em sites como:
-* Empresas que fornecem sítios Web a uma seção altamente especializada do seu mercado, por exemplo, uma empresa farmacêutica que fornece um sítio Web especializado para médicos.
+* Empresas que fornecem sites para uma seção altamente especializada de seu mercado, por exemplo, uma empresa farmacêutica que fornece um site especializado para médicos.
 * Empresas que fornecem sites que permitem que seus clientes visualizem informações atuais de conta e faturamento; por exemplo, provedores de telefone.
 
 ### Site de Vendas e Distribuição {#sales-site}

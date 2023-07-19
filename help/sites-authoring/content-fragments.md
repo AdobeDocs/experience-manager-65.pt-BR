@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1140'
-ht-degree: 93%
+source-wordcount: '1141'
+ht-degree: 91%
 
 ---
 
@@ -74,6 +74,7 @@ Os fragmentos de conteúdo habilitam:
    * Abra o navegador de **ativos** e filtre por **Fragmentos de conteúdo** (o filtro padrão é por Imagens). Em seguida, arraste o fragmento necessário para a instância do componente.
 
    * Selecione o componente do fragmento de conteúdo e clique em **Configurar** na barra de ferramentas. Na caixa de diálogo, é possível abrir a caixa de diálogo de seleção para procurar e selecionar o **Fragmento de conteúdo** necessário.
+
    >[!NOTE]
    >
    >Um método alternativo é arrastar um fragmento de conteúdo específico diretamente para a página. Essa ação cria o componente associado (Fragmento de conteúdo) de maneira automática.
@@ -90,7 +91,8 @@ Os fragmentos de conteúdo habilitam:
    >
    >    * [Layout responsivo](/help/sites-authoring/responsive-layout.md)
    >    * [Editar conteúdo da página](/help/sites-authoring/editing-content.md)
-
+   >
+   >
 
 ### Selecionar o elemento ou a variação {#selecting-the-element-or-variation}
 
@@ -100,7 +102,7 @@ Na caixa de diálogo de configuração apropriada, é possível selecionar os pa
 
 * **Fragmento de conteúdo**
 
-   Especificar o fragmento a ser usado.
+  Especificar o fragmento a ser usado.
 
 * **Modo de exibição**:
 
@@ -113,9 +115,9 @@ Na caixa de diálogo de configuração apropriada, é possível selecionar os pa
    * O padrão **Principal** estarão sempre disponíveis.
    * Uma seleção estará disponível se o fragmento tiver sido criado com um modelo apropriado.
 
-   >[!NOTE]
-   >
-   >Os elementos disponíveis dependem do template usado.
+  >[!NOTE]
+  >
+  >Os elementos disponíveis dependem do template usado.
 
 * **Variação**
 
@@ -175,14 +177,13 @@ Quanto ao conteúdo intermediário, é possível:
 >* A menos que as duas estruturas de parágrafo entrem em conflito; nesse caso, o conteúdo intermediário não é exibido (embora ainda esteja presente internamente).
 >
 
-
 ### Usar conteúdo associado     {#using-associated-content}
 
 Se você tiver [conteúdo associado](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial de conteúdo do [conteúdo intermediário](#adding-in-between-content).
 
 >[!NOTE]
 >
->Existem vários métodos de adicionar [ativos visuais (por exemplo, imagens)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
+>Há vários métodos de adicionar [ativos visuais (por exemplo, imagens)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
 >[!NOTE]
 >

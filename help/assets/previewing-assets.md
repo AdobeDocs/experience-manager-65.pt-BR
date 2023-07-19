@@ -11,9 +11,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1368'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
       <p><strong>Navegar pela cena 3D</strong></p>
       <ul>
       <li><p><strong>Girar sua câmera 3D</strong> - Gire a visualização em torno da cena 3D e dos objetos.</p> Mouse: Clique com o botão esquerdo + arraste </p> Tela sensível ao toque: pressione + arraste</p></li>
-      <li><p><strong>Deslocar a câmera</strong> - Desloque sua visualização para a esquerda, direita, para cima e para baixo.</p> Mouse: clique com o botão direito + arraste </p> Tela sensível ao toque: pressione dois dedos + arraste</p></li>
+      <li><p><strong>Deslocar a câmera</strong> - Desloque sua visualização para a esquerda, direita, para cima e para baixo.</p> Mouse: clique com o botão direito do mouse + arraste </p> Tela sensível ao toque: pressione dois dedos + arraste</p></li>
       <li><p><strong>Aplicar zoom à sua câmera</strong> - Use o zoom da câmera para que você possa mover para dentro e para fora das áreas na cena 3D.</p> Mouse: roda de rolagem </p> Tela sensível ao toque: pinça no dedo</p></li>
       <li><p><strong>Recentralize sua câmera</strong> - Gire a visualização em torno da cena 3D e dos objetos.</p> Mouse: clique duas vezes </p> Tela sensível ao toque: toque duas vezes</li></ul></td>
       </tr>

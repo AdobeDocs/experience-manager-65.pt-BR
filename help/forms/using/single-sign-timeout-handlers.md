@@ -10,16 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 exl-id: 4f824d80-f3f8-4010-9583-5a9ab1151a7b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
 
 # Manipuladores de logon único e tempo limite {#single-sign-on-and-timeout-handlers}
 
-O espaço de trabalho do AEM Forms está habilitado para SSO. Se um usuário tiver feito logon em um aplicativo do AEM Forms, como a interface do usuário do Forms Manager ou do PDF Generator, e acessar o AEM Forms workspace na mesma sessão do navegador, ele será conectado ao AEM Forms workspace e vice-versa.
+O espaço de trabalho do AEM Forms está habilitado para SSO. Se um usuário tiver feito logon em um aplicativo do AEM Forms, como o Forms Manager ou a interface do usuário PDF Generator, e acessar o AEM Forms workspace na mesma sessão do navegador, ele será conectado ao AEM Forms workspace e vice-versa.
 
 ## Lidar com o tempo limite do servidor no espaço de trabalho do AEM Forms {#handling-server-timeout-in-nbsp-aem-forms-workspace}
 

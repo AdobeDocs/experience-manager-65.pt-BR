@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2245'
 ht-degree: 40%
 
 ---
@@ -317,7 +317,7 @@ Você pode acessar esses itens usando os ícones no canto superior direito. O í
 >* Dependendo das características da página, alguns modos podem não estar disponíveis.
 >* O acesso a alguns modos requer as permissões/privilégios apropriados.
 >* O modo de desenvolvedor não está disponível em dispositivos móveis devido a restrições de espaço.
->* Existe um [atalho de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre o modo de **Visualização** e o atualmente selecionado (por exemplo, **Editar**, **Layout** etc).
+>* Existe um [atalho de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre o modo de **Visualização** e o atualmente selecionado (por exemplo, **Editar**, **Layout** etc.).
 >
 
 ## Seleção de caminho {#path-selection}

@@ -5,10 +5,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 745ca1aa7bc96d0938ec550a357d9edcbea341db
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '753'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ O Adobe fornece duas versões da Commerce Integration Framework:
    <td>
     <ul>
      <li>Adobe Commerce</li>
-     <li>Java e Javascript</li>
+     <li>Java e JavaScript</li>
      <li>Nenhum dado comercial armazenado no repositório JCR</li>
     </ul> </td>
   </tr>
@@ -90,7 +90,7 @@ O Adobe fornece duas versões da Commerce Integration Framework:
   </tr>
   <tr>
    <td>Quando usar</td>
-   <td>Casos de uso limitados: por exemplo, para cenários em que catálogos pequenos e estáticos podem precisar ser importados</td>
+   <td>Casos de uso limitados: por exemplo, cenários em que catálogos pequenos e estáticos podem precisar ser importados</td>
    <td>Solução preferida na maioria dos casos de uso</td>
   </tr>
  </tbody>

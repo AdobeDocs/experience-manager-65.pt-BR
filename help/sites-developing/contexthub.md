@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 exl-id: 3fd50655-7461-4900-a3b8-c01b04c7ba7a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 1%
@@ -33,7 +33,7 @@ O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de co
 
 ## Persistência {#persistence}
 
-O ContextHub armazena dados de contexto persistentes no cliente. A API do Javascript do ContextHub permite acessar armazenamentos para criar, atualizar e excluir dados conforme necessário. Dessa forma, o ContextHub representa uma camada de dados em suas páginas.
+O ContextHub armazena dados de contexto persistentes no cliente. A API do JavaScript do ContextHub permite acessar armazenamentos para criar, atualizar e excluir dados conforme necessário. Dessa forma, o ContextHub representa uma camada de dados em suas páginas.
 
 Cada armazenamento do ContextHub é uma instância de um tipo de armazenamento predefinido:
 
@@ -44,7 +44,7 @@ Cada armazenamento do ContextHub é uma instância de um tipo de armazenamento p
 
 ## Segmentação {#segmentation}
 
-O ContextHub inclui um mecanismo de segmentação que gerencia segmentos e determina quais segmentos são resolvidos para o contexto atual. Vários segmentos estão definidos. Você pode usar a API do Javascript para [determinar segmentos resolvidos](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments).
+O ContextHub inclui um mecanismo de segmentação que gerencia segmentos e determina quais segmentos são resolvidos para o contexto atual. Vários segmentos estão definidos. Você pode usar a API do JavaScript para [determinar segmentos resolvidos](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments).
 
 ## Apresentação {#presentation}
 

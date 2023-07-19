@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 7ceee6819618d785f04029b9ac1c6f763995b3ac
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2861'
+source-wordcount: '2862'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ Como HTL é a tecnologia preferida para o desenvolvimento de sites AEM, o HTL de
 
 ### Uso do HTL {#using-htl}
 
-No HTL, as bibliotecas do cliente são carregadas por meio de um modelo auxiliar fornecido pelo AEM, que pode ser acessado por meio de [ `data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Três modelos estão disponíveis nesse arquivo, que pode ser chamado por meio de [ `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
+No HTL, as bibliotecas do cliente são carregadas por meio de um modelo auxiliar fornecido pelo AEM, que pode ser acessado por meio de [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Três modelos estão disponíveis nesse arquivo, que pode ser chamado por meio de [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css** - carrega somente os arquivos CSS das bibliotecas de clientes referenciadas.
 * **js** - carrega somente os arquivos JavaScript das bibliotecas de clientes referenciadas.
@@ -102,7 +102,7 @@ Para obter informações completas, incluindo atributos para filtrar JS, CSS ou 
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, que no passado era comumente usado para incluir bibliotecas de clientes, foi descontinuada desde o AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) deve ser usado em vez dos detalhados acima.
+>`<cq:includeClientLib>`, que no passado era comumente usado para incluir bibliotecas de clientes, foi descontinuada desde o AEM 5.6. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) deve ser usado em vez dos detalhados acima.
 
 ## Criação de pastas de bibliotecas de clientes {#creating-client-library-folders}
 
@@ -115,7 +115,7 @@ As pastas da biblioteca do cliente contêm os seguintes itens:
 * Os arquivos de origem JS e/ou CSS que serão mesclados.
 * Recursos que oferecem suporte a estilos CSS, como arquivos de imagem.
 
-   **Nota:** Você pode usar subpastas para organizar arquivos de origem.
+  **Nota:** Você pode usar subpastas para organizar arquivos de origem.
 * Um `js.txt` arquivo e/ou um `css.txt` arquivo que identifica os arquivos de origem a serem mesclados nos arquivos JS e/ou CSS gerados.
 
 ![clientlibarch](assets/clientlibarch.png)
@@ -399,7 +399,7 @@ A interface do usuário é definida como o minificador padrão no AEM. Para alte
 1. Ativar o **Minify** (se ainda não estiver ativada).
 1. Definir o valor **Configurações padrão do processador JS** para `min:gcc`.
 
-   As opções podem ser passadas se separadas por ponto e vírgula, por exemplo. `min:gcc;obfuscate=true`.
+   As opções podem ser passadas se separadas por ponto e vírgula, por exemplo, `min:gcc;obfuscate=true`.
 
 1. Clique em **Salvar** para salvar as alterações.
 

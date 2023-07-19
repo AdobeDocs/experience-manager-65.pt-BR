@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 64c6d198-983f-4a52-9c83-560206363868
 exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,6 @@ As coleções representam uma variável *balde* recheados de conteúdo, como art
 >
 >* [Gerenciar coleções](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
 >
-
 
 ## Criação de uma coleção {#creating-a-collection}
 

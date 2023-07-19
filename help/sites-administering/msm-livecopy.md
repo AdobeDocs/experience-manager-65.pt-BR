@@ -3,10 +3,10 @@ title: Criação e sincronização de Live Copies
 description: Saiba como criar e sincronizar Live Copies.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4230'
-ht-degree: 46%
+source-wordcount: '4229'
+ht-degree: 47%
 
 ---
 
@@ -154,7 +154,7 @@ Para criar uma Live Copy de um site a partir de uma configuração de blueprint:
 
    ![Selecione a configuração de blueprint como origem da live copy](assets/blueprint-configuration-select.png)
 
-1. Use o **Idiomas iniciais** seletor para especificar o(s) idioma(s) do site do blueprint a serem usados na live copy.
+1. Use o **Idiomas iniciais** seletor para especificar os idiomas do site do blueprint a serem usados na live copy.
 
    Todos os idiomas disponíveis estão selecionados por padrão. Para remover um idioma, clique ou toque no botão **X** que aparece ao lado do idioma.
 
@@ -591,7 +591,7 @@ Para acompanhar as alterações feitas, é possível exibir a página do bluepri
 
 1. As duas páginas (Live Copy e blueprint) serão abertas lado a lado.
 
-   Para obter informações completas sobre como usar esse recurso, consulte [Diferença de página](/help/sites-authoring/page-diff.md).
+   Para obter informações completas sobre como usar este recurso, consulte [Diferencial de página](/help/sites-authoring/page-diff.md).
 
 ## Desconectar uma Live Copy {#detaching-a-live-copy}
 

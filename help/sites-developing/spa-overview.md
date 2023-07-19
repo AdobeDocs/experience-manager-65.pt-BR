@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: a547b2e24205c63284a0e77f2e7f5678ae24968b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 90%
+source-wordcount: '1659'
+ht-degree: 91%
 
 ---
 
@@ -103,7 +103,6 @@ Lembrando os elementos principais do editor de SPA, o fluxo de trabalho de alto 
 >* Na produção (publicação), o editor de SPA nunca é carregado.
 >
 
-
 ### Fluxo de trabalho de edição de página do cliente-servidor {#client-server-page-editing-workflow}
 
 É uma visão geral mais detalhada da interação cliente-servidor ao editar um SPA.
@@ -184,7 +183,7 @@ Seletores personalizados adicionais podem ser definidos e usados como parte de u
 Se você quiser usar o editor local de um componente de texto criado no SPA, há uma configuração adicional necessária.
 
 1. Defina um atributo (pode ser qualquer um), no elemento wrapper do container, que contém o HTML de texto. No caso do conteúdo de amostra do diário WKND, é uma `<div>` e o seletor que foi usado é `data-rte-editelement`.
-1. Definir a configuração `editElementQuery` no componente de texto AEM correspondente `cq:InplaceEditingConfig` que aponta para esse seletor, por exemplo, `data-rte-editelement`. Isso permite que o editor saiba qual elemento HTML envolve o texto HTML.
+1. Defina a configuração `editElementQuery` no `cq:InplaceEditingConfig` do componente de texto AEM correspondente que aponta para esse seletor, por exemplo, `data-rte-editelement`. Isso permite que o editor saiba qual elemento HTML envolve o texto HTML.
 
 Para obter um exemplo de como isso é feito, consulte [Conteúdo de amostra do diário WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 

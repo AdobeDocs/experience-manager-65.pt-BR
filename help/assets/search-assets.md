@@ -7,9 +7,9 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: b138bc434ecad849b2c588864868cab6666d50c9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5741'
+source-wordcount: '5739'
 ht-degree: 6%
 
 ---
@@ -33,10 +33,10 @@ ht-degree: 6%
 | [Compreender os resultados e o comportamento da pesquisa](#searchbehavior) | [Modificar aspectos da pesquisa](#searchfacets) | [Atualizações de metadados em massa](#metadataupdates) |
 | [Classificação de pesquisa e aumento](#searchrank) | [Extração de texto](#extracttextupload) | [Coleções inteligentes](#collections) |
 | [Pesquisa avançada: filtragem e escopo da pesquisa](#scope) | [Predicados personalizados](#custompredicates) | [Compreender e solucionar problemas de resultados inesperados](#unexpected-results) |
-| [Pesquisar em outras soluções e aplicativos](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[aplicativo de desktop do Experience Manager](#desktop-app)</li><li>[Imagens do Adobe Stock](#adobe-stock)</li><li>[Ativos do Dynamic Media](#dynamic-media)</li></ul> |  |  |
-| [Seletor de ativos](#asset-picker) |  |  |
-| [Limitação](#limitations) e [Dicas](#tips) |  |  |
-| [Exemplos ilustrados](#samples) |  |  |
+| [Pesquisar em outras soluções e aplicativos](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[aplicativo de desktop do Experience Manager](#desktop-app)</li><li>[Imagens do Adobe Stock](#adobe-stock)</li><li>[Ativos do Dynamic Media](#dynamic-media)</li></ul> | | |
+| [Seletor de ativos](#asset-picker) | | |
+| [Limitação](#limitations) e [Dicas](#tips) | | |
+| [Exemplos ilustrados](#samples) | | |
 
 Pesquise ativos digitais usando o campo Omnisearch na parte superior do [!DNL Experience Manager] Web. Ir para **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]** in [!DNL Experience Manager], clique em ![search_icon](assets/do-not-localize/search_icon.png) na barra superior, digite palavra-chave de pesquisa e selecione `Return`. Como alternativa, use o atalho de palavra-chave `/` (barra) para abrir o campo Omnisearch. `Location:Assets` O é pré-selecionado para limitar as pesquisas aos ativos DAM. [!DNL Experience Manager] O fornece sugestões conforme você começa a digitar uma palavra-chave de pesquisa.
 
@@ -176,7 +176,7 @@ Você pode pesquisar ativos digitais com base em valores exatos de campos de met
 | No prazo | AAAA-MM-DDTHH |
 | Tempo desligado | offtime:AAAA-MM-DDTHH |
 | Intervalo de tempo(expira dateontime,offtime) | campo de faceta : limite inferior.limite superior |
-| Caminho  | /content/dam/&lt;folder name=&quot;&quot;> |
+| Caminho | /content/dam/&lt;folder name=&quot;&quot;> |
 | Título do PDF | pdftitle:&quot;Documento Adobe&quot; |
 | Assunto | assunto: &quot;Treinamento&quot; |
 | Tags | tags: &quot;Localização E Viagem&quot; |
@@ -252,7 +252,7 @@ Passe os seguintes parâmetros de solicitação em um URL para iniciar o seletor
 | `mode` | único, múltiplo | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | No modo múltiplo, é possível selecionar vários ativos simultaneamente usando o seletor de ativos. |
 | `dialog` | verdadeiro, falso | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Use esses parâmetros para abrir o seletor de ativos como uma caixa de diálogo do Granite. Essa opção só é aplicável quando você inicia o seletor de ativos por meio do Campo de caminho do Granite e o configura como URL do pickerSrc. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Use essa opção para especificar a pasta raiz do seletor de ativos. Nesse caso, o seletor de ativos permite selecionar somente ativos secundários (diretos/indiretos) na pasta raiz. |
-| `viewmode` | pesquisar |  | Para iniciar o seletor de ativos no modo de pesquisa, com `assettype` e `mimetype` parâmetros. |
+| `viewmode` | pesquisar | | Para iniciar o seletor de ativos no modo de pesquisa, com `assettype` e `mimetype` parâmetros. |
 | `assettype` | Imagens, documentos, multimídia, arquivos. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Use a opção para filtrar tipos de ativos com base no valor fornecido. |
 | `mimetype` | Tipo MIME (`/jcr:content/metadata/dc:format`) de um ativo (curinga também é compatível). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Use-a para filtrar ativos com base no tipo MIME. |
 
@@ -467,7 +467,7 @@ Você pode criar coleções inteligentes com base nos critérios de pesquisa. No
 
 Crie uma versão para os ativos exibidos nos resultados da pesquisa. Selecione o ativo e clique em **[!UICONTROL Criar]** > **[!UICONTROL Versão]**. Adicione um rótulo opcional ou um comentário e clique em **[!UICONTROL Criar]**. Você também pode selecionar vários ativos e criar versões para eles simultaneamente.
 
-### Criar um workflow {#create-workflow}
+### Criar um fluxo de trabalho {#create-workflow}
 
 Semelhante ao recurso de criação de versão, também é possível criar um fluxo de trabalho para os ativos exibidos nos resultados da pesquisa. Selecione os ativos e clique em **[!UICONTROL Criar]** > **[!UICONTROL Fluxo de trabalho]**. Selecione o modelo de fluxo de trabalho, especifique um título para o fluxo de trabalho e clique em **[!UICONTROL Início]**.
 
@@ -487,11 +487,10 @@ Relacione e não relacione ativos exibidos nos resultados da pesquisa. Selecione
 | O filtro de pesquisa ou um predicado não está disponível. | <ul><li>O filtro de pesquisa não está configurado.</li><li>Não está disponível para o seu login.</li><li>(Menos provável) As opções de pesquisa não são personalizadas na implantação que você está usando.</li></ul> | <ul><li>Entre em contato com o administrador para verificar se as personalizações de pesquisa estão disponíveis ou não.</li><li>Entre em contato com o administrador para verificar se sua conta tem o privilégio/permissões para usar a personalização.</li><li>Entre em contato com o administrador e verifique as personalizações disponíveis para o [!DNL Assets] implantação que você está usando.</li></ul> |
 | Ao pesquisar por imagens visualmente semelhantes, uma imagem esperada não aparece. | <ul><li>A imagem não está disponível em [!DNL Experience Manager].</li><li>Imagem não indexada. Normalmente, quando ele é carregado recentemente.</li><li>A imagem não tem tags inteligentes.</li></ul> | <ul><li>Adicionar a imagem a [!DNL Assets].</li><li>Entre em contato com o administrador para reindexar o repositório. Além disso, verifique se você está usando o índice apropriado.</li><li>Entre em contato com o administrador para adicionar uma tag inteligente aos ativos relevantes.</li></ul> |
 | Ao pesquisar por imagens visualmente semelhantes, uma imagem irrelevante é exibida. | Comportamento de pesquisa visual. | [!DNL Experience Manager] O exibe o maior número possível de ativos relevantes. Imagens menos relevantes, se houver, são adicionadas aos resultados, mas com uma classificação de pesquisa mais baixa. A qualidade das correspondências e a relevância dos ativos pesquisados diminuem à medida que você rolar pelos resultados da pesquisa. |
-| Ao selecionar e operar em resultados de pesquisa, nenhum ativo pesquisado é operado. | A variável [!UICONTROL Selecionar tudo] A opção seleciona apenas os primeiros 100 resultados de pesquisa na exibição de cartão e os primeiros 200 resultados de pesquisa na exibição de lista. |  |
+| Ao selecionar e operar em resultados de pesquisa, nenhum ativo pesquisado é operado. | A variável [!UICONTROL Selecionar tudo] A opção seleciona apenas os primeiros 100 resultados de pesquisa na exibição de cartão e os primeiros 200 resultados de pesquisa na exibição de lista. | |
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] guia de implementação de pesquisa](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Configuração avançada para aumentar os resultados da pesquisa](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
 >* [Configurar pesquisa de tradução inteligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
-

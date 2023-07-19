@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '406'
 ht-degree: 1%
 
 ---
@@ -64,12 +64,11 @@ Este nó contém *um jcr:content (cq:PageContent)* que será usado como base par
 >* [Componentes](/help/sites-developing/components.md)
 >
 
-
 Depois de ter a compreensão básica de Modelos e Componentes, consulte os seguintes recursos:
 
 * [Criação e adição de modelos e componentes](/help/mobile/mobile-ondemand-app-templates.md)
 * [Uso das propriedades de conteúdo para exportar conteúdo](/help/mobile/on-demand-content-properties-exporting.md)
-* [Práticas recomendadas    ](/help/mobile/best-practices-aem-mobile.md)
+* [Práticas recomendadas](/help/mobile/best-practices-aem-mobile.md)
 * [Desenvolvimento dos serviços de conteúdo do AEM Mobile](/help/mobile/developing-content-services.md)
 
 ### Recursos adicionais {#additional-resources}

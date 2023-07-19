@@ -4,9 +4,9 @@ description: Instale, configure e personalize um pacote de demonstração do AEM
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4622'
+source-wordcount: '4626'
 ht-degree: 3%
 
 ---
@@ -155,8 +155,8 @@ Esta seção contém detalhes e instruções sobre a configuração pós-implant
 
 1. Configure o serviço para se conectar ao servidor SMTP de sua escolha:
 
-   1. **Nome de host do servidor SMTP**: por exemplo (smtp.gmail.com)
-   1. **Porta do servidor**: por exemplo (465) para gmail usando SSL
+   1. **Nome de host do servidor SMTP**: por exemplo, (smtp.gmail.com)
+   1. **Porta do servidor**: por exemplo, (465) para gmail usando SSL
    1. **Usuário SMTP:** demo@ &lt;companyname> .com
    1. **Endereço &quot;De&quot;**: aemformsdemo@adobe.com
 
@@ -240,7 +240,7 @@ Esta seção contém detalhes e instruções sobre a configuração do MS® Dyna
 1. Navegue até a guia &quot;Configurações de autenticação&quot;.
 1. Insira os seguintes detalhes:
 
-   1. **Raiz do serviço:** e.g `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
+   1. **Raiz do serviço:** por exemplo, `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
    1. **Tipo de autenticação:** OAuth 2.0
    1. **Configurações de autenticação** (consulte [Definições de configuração da nuvem do MS® Dynamics](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) para coletar essas informações):
 
@@ -251,7 +251,7 @@ Esta seção contém detalhes e instruções sobre a configuração do MS® Dyna
       1. URL do token de acesso - por exemplo, [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
       1. Escopo da autorização - **openid**
       1. Cabeçalho de autenticação - **Portador da autorização**
-      1. Recurso - por exemplo `https://msdynamicsserver.api.crm3.dynamics.com`
+      1. Recurso - por exemplo, `https://msdynamicsserver.api.crm3.dynamics.com`
 
    1. Clique em &quot;Conectar ao OAuth&quot;.
 
@@ -277,7 +277,7 @@ As etapas detalhadas nesta seção estão incluídas para ajudá-lo a localizar 
 1. Para localizar o URL do recurso/URL raiz do serviço, navegue até o painel de instâncias do MS® Dynamics.
 1. Na barra de navegação superior, clique em &quot;Vendas&quot; ou no seu próprio tipo de instância e em &quot;Selecionar configurações&quot;.
 1. Clique em &quot;Personalizações&quot; e &quot;Recursos do desenvolvedor&quot; próximo ao canto inferior direito.
-1. Lá você encontra o URL da raiz de serviço: por exemplo
+1. Lá você encontra o URL da raiz de serviço: por exemplo,
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
@@ -751,7 +751,7 @@ Esta seção contém informações sobre os recursos de demonstração e as deci
 
 Para executar testes de acessibilidade, instale o plug-in do Chrome encontrado aqui em `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
-Após a instalação, carregue a página que deseja testar no navegador Chrome (Observação: abrir várias guias pode afetar a pontuação. É preferível abrir apenas uma guia). Quando a página for carregada, **clique com o botão direito** na página e selecione **Auditorias** guia. Lá, os desenvolvedores podem selecionar o tipo de auditoria a ser executada pelo plug-in de acessibilidade. Depois que todas as opções desejadas forem selecionadas, o usuário poderá clicar no botão Gerar relatório. Isso gera um documento PDF que mostra a classificação geral de acessibilidade e o que pode ser usado para aumentar a classificação geral de acessibilidade.
+Após a instalação, carregue a página que deseja testar no navegador Chrome (Observação: abrir várias guias pode afetar a pontuação. É preferível abrir apenas uma guia). Quando a página for carregada, **clique com o botão direito do mouse** na página e selecione **Auditorias** guia. Lá, os desenvolvedores podem selecionar o tipo de auditoria a ser executada pelo plug-in de acessibilidade. Depois que todas as opções desejadas forem selecionadas, o usuário poderá clicar no botão Gerar relatório. Isso gera um documento PDF que mostra a classificação geral de acessibilidade e o que pode ser usado para aumentar a classificação geral de acessibilidade.
 
 Após a execução do relatório, os usuários podem esperar ver o seguinte:
 

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '3335'
 ht-degree: 1%
@@ -304,10 +304,10 @@ Este é um campo opcional que especifica o caminho para um nó no repositório. 
 Se você estiver validando o formulário completo, inclua também um dos seguintes:
 
 * Um script para validação de cliente:
-   ` /apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
+  ` /apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
 
 * Um script para validação no lado do servidor:
-   ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
+  ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
 **Configuração de ação** Dependendo da seleção nas Opções de publicação, a Configuração da ação é alterada. Por exemplo, ao selecionar Criar cliente em potencial, você pode configurar a qual lista o cliente em potencial será adicionado.
 

@@ -7,9 +7,9 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '979'
 ht-degree: 6%
 
 ---
@@ -155,7 +155,7 @@ No **Configurações de classificação** especifique como os comentários publi
 
 Ao alterar o Tipo de recurso de comentário, o sistema de comentário não gera mais uma instância de um comentário usando o padrão, mas sim uma que foi personalizada (estendida) pelos desenvolvedores.
 
-Depois que os tipos de recursos personalizados forem conhecidos, insira [Modo Design](/help/sites-authoring/default-components-designmode.md) e clique duas vezes no ícone `Comments` para abrir uma caixa de diálogo com uma guia extra.
+Depois que os tipos de recursos personalizados forem conhecidos, insira [Modo Design](/help/sites-authoring/default-components-designmode.md) e clique duas vezes no local `Comments` para abrir uma caixa de diálogo com uma guia extra.
 
 No **Tipos de recursos** especifique o resourceType personalizado para novas instâncias do `Comments or Voting` componentes:
 

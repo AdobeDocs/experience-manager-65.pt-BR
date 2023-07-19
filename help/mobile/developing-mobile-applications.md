@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '582'
+ht-degree: 1%
 
 ---
 

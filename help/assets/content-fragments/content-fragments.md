@@ -4,9 +4,9 @@ description: Saiba como os Fragmentos de conteúdo no Adobe Experience Manager (
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1991'
 ht-degree: 93%
 
 ---
@@ -55,11 +55,10 @@ Esta e as seguintes páginas abordam as tarefas de criação, configuração, ma
 >* [Compatibilidade com os Fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/assets-api-content-fragments.md)
 >* [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
-
 O número de canais de comunicação aumenta anualmente. Normalmente, os canais se referem ao mecanismo de entrega, como:
 
-* Canal físico; por exemplo, desktop, dispositivo móvel.
-* Forma de entrega em um canal físico; por exemplo, “página de detalhes do produto”, “página de categoria do produto” para desktop ou “web para publicação de conteúdo para dispositivos móveis”, “aplicativo para dispositivos móveis” para dispositivos móveis.
+* Canal físico; por exemplo, desktop, móvel.
+* Forma de entrega em um canal físico; por exemplo, “página de detalhes do produto”, “página de categoria do produto” para desktop ou “web para publicação de conteúdo para dispositivos móveis”, “aplicativo para publicação de conteúdo para dispositvos móveis” para celular.
 
 No entanto, você (provavelmente) não deseja usar exatamente o mesmo conteúdo para todos os canais; é necessário otimizar o conteúdo de acordo com o canal específico.
 
@@ -156,9 +155,9 @@ Os ativos podem ser usados com um fragmento de conteúdo de várias maneiras; ca
    * Definem a posição do ativo.
    * Consulte [Inserir ativos no fragmento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) no Editor de fragmentos para obter mais informações.
 
-   >[!NOTE]
-   >
-   >Os ativos visuais inseridos no fragmento de conteúdo propriamente dito são anexados ao parágrafo anterior no fragmento. Quando o fragmento é adicionado a uma página, esses ativos são movidos em relação a esse parágrafo quando o conteúdo intermediário é adicionado.
+  >[!NOTE]
+  >
+  >Os ativos visuais inseridos no fragmento de conteúdo propriamente dito são anexados ao parágrafo anterior no fragmento. Quando o fragmento é adicionado a uma página, esses ativos são movidos em relação a esse parágrafo quando o conteúdo intermediário é adicionado.
 
 * **Conteúdo associado**
 
@@ -204,13 +203,13 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
    * Só podem ser adicionados a elementos de texto multilinha (qualquer tipo de fragmento).
    * São anexados ao texto anterior (parágrafo).
 
-      >[!CAUTION]
-      >
-      >Os ativos podem ser (inadvertidamente) removidos de um fragmento ao alternar para o formato de Texto sem formatação.
+     >[!CAUTION]
+     >
+     >Os ativos podem ser (inadvertidamente) removidos de um fragmento ao alternar para o formato de Texto sem formatação.
 
-      >[!NOTE]
-      >
-      >Os ativos também podem ser adicionados como [conteúdo adicional (intermediário)](/help/sites-authoring/content-fragments.md#using-associated-content) ao usar um fragmento em uma página; usando o conteúdo associado ou ativos do navegador de ativos.
+     >[!NOTE]
+     >
+     >Os ativos também podem ser adicionados como [conteúdo adicional (intermediário)](/help/sites-authoring/content-fragments.md#using-associated-content) ao usar um fragmento em uma página; usando o conteúdo associado ou ativos do navegador de ativos.
 
 * **Conteúdo associado**
 
@@ -233,9 +232,9 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
          * Ao visualizar/editar as **Propriedades** do fragmento no console
          * Ao editar os **Metadados** no editor de fragmento
 
-   >[!CAUTION]
-   >
-   >Os perfis de processamento de metadados não se aplicam aos fragmentos de conteúdo.
+  >[!CAUTION]
+  >
+  >Os perfis de processamento de metadados não se aplicam aos fragmentos de conteúdo.
 
 * **Principal**
 
@@ -243,9 +242,9 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
 
       * Cada fragmento de conteúdo tem uma instância Principal.
       * O Principal não pode ser excluído.
+
    * O Principal pode ser acessado no editor de fragmentos, em **[Variações](/help/assets/content-fragments/content-fragments-variations.md)**.
    * O Principal não é uma variação em si, mas a base de todas as variações.
-
 
 * **Variações**
 

@@ -2,9 +2,9 @@
 title: Um guia rápido para a WCAG 2.1
 description: Um guia rápido para a WCAG 2.1
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1772'
 ht-degree: 99%
 
 ---
@@ -42,8 +42,7 @@ em outras palavras, diretrizes que podem ser aplicadas a diversos formatos de co
 cada diretriz é redigida de forma que possa ser objetivamente testada, a fim de garantir que um grupo de especialistas em acessibilidade concordasse, de um modo geral, que a diretriz foi cumprida. Um dos desafios das diretrizes de acessibilidade é que, embora algumas possam ser testadas tecnicamente, outras exigem uma avaliação humana para determinar se a diretriz foi ou não cumprida com êxito.
 
 * Suporte para **implementação priorizada e contextual:**
-As orientações da WCAG 2.1 recebem prioridade, relacionadas com o impacto provável de não seguir uma orientação para um grupo específico de utilizadores com deficiência. Isso permite que os autores tomem uma decisão bem informada sobre as orientações mais importantes para suas situações específicas. Além disso, o conceito de 
-*acessibilidade compatível* foi introduzido. Isso permite que os autores tomem decisões sobre como usar tecnologias da Web que possam não ter suporte total para acessibilidade ou exigir que os usuários tenham tecnologias de assistência e/ou navegadores específicos para se beneficiarem dos recursos de acessibilidade.
+As orientações da WCAG 2.1 recebem prioridade, relacionadas com o impacto provável de não seguir uma orientação para um grupo específico de utilizadores com deficiência. Isso permite que os autores tomem uma decisão bem informada sobre as orientações mais importantes para suas situações específicas. Além disso, é introduzido o conceito &quot;*com suporte para acessibilidade*&quot;. Isso permite que os autores tomem decisões sobre como usar tecnologias da Web que possam não ter suporte total para acessibilidade ou exigir que os usuários tenham tecnologias de assistência e/ou navegadores específicos para se beneficiarem dos recursos de acessibilidade.
 
 Esses objetivos influenciaram significativamente a estrutura da WCAG 2.1.
 
@@ -104,7 +103,7 @@ As técnicas da WCAG 2.1 estão disponíveis na página [Técnicas da WCAG 2.1](
 
 As **técnicas** formam o nível abaixo dos critérios de sucesso na hierarquia da WCAG 2.1. Elas são classificadas pela WAI como informativas, não normativas. Em outras palavras, não é necessário seguir uma técnica específica para que um recurso esteja em conformidade com a WCAG 2.1.
 
-Como as técnicas são muito mais específicas do que os critérios de sucesso, elas geralmente se referem a determinada tecnologia, tipo de conteúdo (por exemplo, HTML ou vídeo) ou situação (por exemplo, comércio eletrônico ou aplicativo de e-learning). Você pode considerar técnicas como exemplos comprovados de como diretrizes e critérios de sucesso específicos podem ser cumpridos, portanto, elas são úteis para autores e desenvolvedores que trabalham em determinados contextos.
+Como as técnicas são muito mais específicas do que os critérios de sucesso, elas geralmente se referem à determinada tecnologia, tipo de conteúdo (por exemplo, HTML ou vídeo) ou situação (por exemplo, comércio eletrônico ou aplicativo de e-learning). Você pode considerar técnicas como exemplos comprovados de como diretrizes e critérios de sucesso específicos podem ser cumpridos, portanto, elas são úteis para autores e desenvolvedores que trabalham em determinados contextos.
 
 As técnicas podem ser acessadas:
 

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 59%
+source-wordcount: '519'
+ht-degree: 64%
 
 ---
 
@@ -54,38 +54,38 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
 * **Idioma**
 
-   Isso define o idioma a ser usado para a interface do usuário do ambiente de criação. Selecione o idioma desejado na lista disponível.
+  Isso define o idioma a ser usado para a interface do usuário do ambiente de criação. Selecione o idioma desejado na lista disponível.
 
-   Essa configuração também é usada para a interface clássica.
+  Essa configuração também é usada para a interface clássica.
 
 * **Gerenciamento de janelas**
 
-   Isso define o comportamento ou a abertura de janelas. Selecione um dos seguintes:
+  Isso define o comportamento ou a abertura de janelas. Selecione um dos seguintes:
 
    * **Várias janelas** (Padrão)
 
       * As páginas serão abertas em uma nova janela.
+
    * **Uma janela**
 
       * As páginas serão abertas na janela atual.
 
-
 * **Mostrar ações do desktop para Ativos**
 
-   Essa opção requer o aplicativo de desktop do AEM para uso.
+  Essa opção requer o aplicativo de desktop do AEM para uso.
 
 * **Cor da anotação**
 
-   Isso define a cor padrão usada ao fazer anotações.
+  Isso define a cor padrão usada ao fazer anotações.
 
    * Clique no bloco de cores para abrir o seletor de amostras e selecionar uma cor.
    * Como alternativa, insira o código hexadecimal da cor desejada no campo.
 
 * **Apresentação de data relativa**
 
-   Para melhorar a legibilidade, o AEM renderizará datas nos últimos sete dias como datas relativas (por exemplo, três dias atrás) e datas mais antigas como datas exatas (por exemplo, 20 de março de 2017).
+  Para melhorar a legibilidade, o AEM renderizará datas nos últimos sete dias como datas relativas (por exemplo, três dias atrás) e datas mais antigas como datas exatas (por exemplo, 20 de março de 2017).
 
-   Essa opção define como as datas no sistema são exibidas. As opções disponíveis são as seguintes:
+  Essa opção define como as datas no sistema são exibidas. As opções disponíveis são as seguintes:
 
    * **Sempre mostrar data exata**: a data exata é sempre exibida (nunca uma data relativa).
    * **1 dia**: a data relativa é mostrada para datas dentro de um dia; caso contrário, uma data exata é mostrada.
@@ -100,21 +100,21 @@ Cada usuário pode definir certas propriedades para si mesmo.
 
 * **Habilitar atalhos**
 
-   O AEM oferece suporte a vários atalhos de teclado que tornam a criação mais eficiente.
+  O AEM oferece suporte a vários atalhos de teclado que tornam a criação mais eficiente.
 
    * [Atalhos de teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Atalhos de teclado para os consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
-   Essa opção ativa os atalhos de teclado. Por padrão, eles estão ativados, mas podem ser desativados se um usuário tiver determinados requisitos de acessibilidade.
+  Essa opção ativa os atalhos de teclado. Por padrão, eles estão ativados, mas podem ser desativados se um usuário tiver determinados requisitos de acessibilidade.
 
 * **Usar a experiência de criação clássica**
 
-   Essa opção permite [IU clássica](/help/sites-classic-ui-authoring/home.md)criação de página com base em. Por padrão, a interface do usuário é usada.
+  Essa opção permite [IU clássica](/help/sites-classic-ui-authoring/home.md)criação de página com base em. Por padrão, a interface do usuário é usada.
 
 * **Ativar a Página inicial dos ativos**
 
-   Essa opção só estará disponível se o administrador do sistema tiver ativado a experiência da Página inicial do Ativos para toda a organização.
+  Essa opção só estará disponível se o administrador do sistema tiver ativado a experiência da Página inicial do Ativos para toda a organização.
 
 * **Configuração do Stock**
 
-   Essa opção permite especificar a configuração preferencial do Adobe Stock e só estará disponível se o administrador do sistema tiver ativado [Integração do Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Essa opção permite especificar a configuração preferencial do Adobe Stock e só estará disponível se o administrador do sistema tiver ativado [Integração do Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

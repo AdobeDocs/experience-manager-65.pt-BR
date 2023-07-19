@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 938469ad-f466-42f4-8b6f-bfc060ae2785
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -48,12 +48,13 @@ Para definir um mapeamento de domínio para o **Externalizador** serviço:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
-   Onde:
+   Em que:
 
    * **esquema** geralmente é http ou https, mas também pode ser ftp etc.
 
       * use https para aplicar links https, se desejado
       * ele será usado se o código do cliente não substituir o esquema ao solicitar a externalização de um URL.
+
    * **server** é o nome do host (pode ser um nome de domínio ou endereço ip).
    * **porta** (opcional) é o número da porta.
    * **contextpath** (opcional) só é definido se o AEM estiver instalado como um aplicativo web em um caminho de contexto diferente.
@@ -100,7 +101,6 @@ Esta seção mostra alguns exemplos de como a **Externalizador** serviço pode s
 
    * `https://www.website.com/contextpath/my/page.html`
 
-
 1. **Para externalizar um caminho com o domínio &quot;author&quot;:**
 
    ```java
@@ -115,7 +115,6 @@ Esta seção mostra alguns exemplos de como a **Externalizador** serviço pode s
 
    * `https://author.website.com/contextpath/my/page.html`
 
-
 1. **Para externalizar um caminho com o domínio &quot;local&quot;:**
 
    ```java
@@ -129,6 +128,5 @@ Esta seção mostra alguns exemplos de como a **Externalizador** serviço pode s
    `myExternalizedUrl` termina com o valor:
 
    * `https://publish-3.internal/contextpath/my/page.html`
-
 
 1. Você pode encontrar mais exemplos na [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).

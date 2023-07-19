@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 exl-id: 17a4e4dc-804e-44a9-9942-c37dbfc8016f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
@@ -25,7 +25,7 @@ O Adobe Analytics usa o `s.pageName` para identificar de forma exclusiva as pág
 
 * Crie o componente de página para que ele inclua a variável CQ que você mapeia para a `s.pageName` propriedade. (Consulte [Implementação do Adobe Analytics Tracking para componentes personalizados](/help/sites-developing/extending-analytics-components.md).)
 
-Para expor os dados de relatório do Analytics no console Sites e no Content Insight, o AEM requer o valor de `s.pageName` para cada página. A API Java do AEM Analytics define o `AnalyticsPageNameProvider` que você implementa para fornecer ao console Sites e aos Insights de conteúdo o valor da variável `s.pageName` propriedade. Seu `AnaltyicsPageNameProvider` O serviço resolve a propriedade pageName no servidor para fins de relatório, pois ela pode ser definida dinamicamente usando Javascript no cliente para fins de rastreamento.
+Para expor os dados de relatório do Analytics no console Sites e no Content Insight, o AEM requer o valor de `s.pageName` para cada página. A API Java do AEM Analytics define o `AnalyticsPageNameProvider` que você implementa para fornecer ao console Sites e aos Insights de conteúdo o valor da variável `s.pageName` propriedade. Seu `AnaltyicsPageNameProvider` O serviço resolve a propriedade pageName no servidor para fins de relatório, pois ela pode ser definida dinamicamente usando JavaScript no cliente para fins de rastreamento.
 
 ## O Serviço do provedor de nome de página padrão do Analytics {#the-default-analytics-page-name-provider-service}
 
@@ -43,7 +43,7 @@ A variável `DefaultPageNameProvider` serviço determina qual dessas variáveis 
 
 * `pagedata.navTitle`: O serviço usa `page.getNavigationTitle()`
 
-A variável `page` objeto é o é o [ `com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Objeto Java da página.
+A variável `page` objeto é o é o [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Objeto Java da página.
 
 Se você não mapear uma variável do CQ para o `s.pageName` no framework, o valor para `s.pageName` é gerado pelo caminho da página. Por exemplo, a página com o caminho `/content/geometrixx/en` usa o valor `content:geometrixx:en` para `s.pageName`.
 

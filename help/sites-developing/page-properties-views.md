@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Cada página tem um conjunto de [propriedades](/help/sites-authoring/editing-pag
 
 O estado padrão de cada propriedade de página é:
 
-* oculto na visualização de criação (por exemplo, **Criar página** assistente)
+* oculto na visualização criar (por exemplo, **Criar página** assistente)
 
 * disponível na visualização de edição (por exemplo, **Propriedades da exibição**)
 
@@ -71,12 +71,15 @@ Por exemplo, por padrão, a variável [**Criar página** assistente](/help/sites
    >Como referência, consulte:
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
+   >
    No entanto, você ***deve*** não alterar nada no `/libs` caminho.
+   >
    Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
+   >
    O método recomendado para configuração e outras alterações é:
+   >
    1. Recriar o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
    1. Fazer alterações em `/apps`
-
 
 1. Defina o `path` propriedade em `basic` para apontar para a substituição da guia básica (consulte a próxima etapa também). Por exemplo:
 
@@ -99,6 +102,7 @@ Por exemplo, por padrão, a variável [**Criar página** assistente](/help/sites
    A variável **Mais títulos e descrições** A seção não será mais exibida na **Criar página** assistente.
 
 >[!NOTE]
+>
 Ao configurar propriedades de página para uso com live copies, consulte [Configuração de bloqueios do MSM nas propriedades da página](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) para obter mais detalhes.
 
 ## Exemplo de configuração das propriedades da página {#sample-configuration-of-page-properties}

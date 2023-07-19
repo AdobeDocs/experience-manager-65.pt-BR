@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '557'
 ht-degree: 5%
 
 ---
@@ -57,19 +57,19 @@ Identifique quais tags UGC serão exibidas. As opções suspensas são:
    * `From page and child pages`
    * `All tags`
 
-   O padrão é `From page and child pages`, onde &quot;página&quot; se refere à **Página** abaixo.
+  O padrão é `From page and child pages`, onde &quot;página&quot; se refere à **Página** abaixo.
 
 * **[!UICONTROL Página]**
 
-   (Obrigatório se não for `All tags)` O caminho para o UGC de uma página. O padrão é a página atual, se deixada em branco.
+  (Obrigatório se não for `All tags)` O caminho para o UGC de uma página. O padrão é a página atual, se deixada em branco.
 
 * **[!UICONTROL Não há links nas tags]**
 
-   Se marcadas, as tags serão exibidas na nuvem de tags como texto simples. Se desmarcada, as tags são exibidas como links ativos que pesquisam em todo o conteúdo ao qual essa tag é aplicada. O padrão está desmarcado e requer o **[!UICONTROL Caminho do resultado da pesquisa]** a definir.
+  Se marcadas, as tags serão exibidas na nuvem de tags como texto simples. Se desmarcada, as tags são exibidas como links ativos que pesquisam em todo o conteúdo ao qual essa tag é aplicada. O padrão está desmarcado e requer o **[!UICONTROL Caminho do resultado da pesquisa]** a definir.
 
 * **[!UICONTROL Pesquisar caminho de resultados]**
 
-   O caminho para uma página na qual um `Search Result` componente foi colocado, configurado para fazer referência a UGC que inclui o caminho UGC especificado pelo **Página** configuração.
+  O caminho para uma página na qual um `Search Result` componente foi colocado, configurado para fazer referência a UGC que inclui o caminho UGC especificado pelo **Página** configuração.
 
 ## Alterar exibição da Tags em nuvem do Social {#change-display-of-social-tag-cloud}
 
@@ -81,43 +81,43 @@ Usar o **[!UICONTROL Tags em nuvem do Social (Design)]** especifique como as tag
 
 * **[!UICONTROL Mostrar caminhos completos do título]**
 
-   Se marcado, mostra os títulos das tags principais e o namespace de cada tag aplicada.
+  Se marcado, mostra os títulos das tags principais e o namespace de cada tag aplicada.
 
-   Por exemplo:
+  Por exemplo:
 
    * Marcado: `Geometrixx Media: Gadgets / Cars`
    * Desmarcado: `Cars`
 
-   Não há diferença para uma tag simples.
+  Não há diferença para uma tag simples.
 
-   O padrão está desmarcado.
+  O padrão está desmarcado.
 
 * **[!UICONTROL Mostrar apenas tags de folha]**
 
-   Se marcado, mostra somente as tags aplicadas que não contêm outras tags.
+  Se marcado, mostra somente as tags aplicadas que não contêm outras tags.
 
-   Por exemplo, considerando a TagID de:
+  Por exemplo, considerando a TagID de:
 
-   `Geometrixx Media: Gadgets / Cars`
+  `Geometrixx Media: Gadgets / Cars`
 
-   Há 3 tags que podem ser aplicadas:
+  Há 3 tags que podem ser aplicadas:
 
-   `Geometrixx Media (the namespace)`, `Gadgets`, e `Cars`
+  `Geometrixx Media (the namespace)`, `Gadgets`, e `Cars`
 
    * Marcado: somente `Cars` será exibida, se aplicada.
    * Desmarcado: `Geometrixx Media` e `Gadgets`bem como `Cars` será exibida, se aplicada.
 
-   Uma tag simples é uma tag folha.
+  Uma tag simples é uma tag folha.
 
-   O padrão está desmarcado.
+  O padrão está desmarcado.
 
 * **[!UICONTROL Modelo do link]**
 
-   Um modelo, diferente de um padrão, usado para exibir os links em uma nuvem de tags, quando os links são ativados por meio da caixa de diálogo de edição do componente.
+  Um modelo, diferente de um padrão, usado para exibir os links em uma nuvem de tags, quando os links são ativados por meio da caixa de diálogo de edição do componente.
 
 * **[!UICONTROL Mesmo tamanho para todas as tags]**
 
-   Se marcada, todas as palavras na nuvem de tags serão estilizadas da mesma forma. Se desmarcada, as palavras são estilizadas de forma diferente de acordo com seu uso. O padrão está desmarcado.
+  Se marcada, todas as palavras na nuvem de tags serão estilizadas da mesma forma. Se desmarcada, as palavras são estilizadas de forma diferente de acordo com seu uso. O padrão está desmarcado.
 
 ## Informações adicionais {#additional-information}
 

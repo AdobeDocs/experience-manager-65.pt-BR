@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '477'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 Use xgettext-maven-plugin para extrair strings do código-fonte que precisam ser traduzidas. O plug-in Maven extrai strings para um arquivo XLIFF que você envia para tradução. As cadeias de caracteres são extraídas dos seguintes locais:
 
 * Arquivos de código-fonte Java
-* Arquivos de origem do Javascript
+* Arquivos de código-fonte JavaScript
 * Representações XML de recursos SVN (nós JCR)
 
 ## Configuração da extração de sequência de caracteres {#configuring-string-extraction}
@@ -49,7 +49,7 @@ Configure como a ferramenta xgettext-maven-plugin extrai strings para o seu proj
 |---|---|
 | /filter | Identifica os arquivos analisados. |
 | /parsers/vaultxml | Configura a análise dos arquivos do Vault. Identifica os nós JCR que contêm strings externalizadas e dicas de localização. Também identifica nós JCR a ignorar. |
-| /parsers/javascript | Identifica as funções do Javascript que externalizam strings. Não é necessário alterar esta seção. |
+| /parsers/javascript | Identifica as funções JavaScript que externalizam strings. Não é necessário alterar esta seção. |
 | /parsers/regexp | Configura a análise de arquivos de modelo Java, JSP e ExtJS. Não é necessário alterar esta seção. |
 | /potenciais | A fórmula para detectar strings a serem internacionalizadas. |
 

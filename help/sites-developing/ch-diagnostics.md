@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: b833c28b-76c6-42a2-b690-3e81ddf91bc2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 1%
@@ -64,7 +64,7 @@ A seção URLs contém links para recursos do ContextHub:
 * **Editor de configuração:** Abre a [Página Configuração do ContextHub](ch-configuring.md) onde você pode configurar lojas, modos de interface e módulos de interface do usuário.
 
 * **Configuração de módulos do ContextHub:** Abre o arquivo /etc/cloudsettings/default/contexthub.config.kernel.js, que contém a representação do objeto JavaScript das configurações de armazenamento do ContextHub.
-* **Configuração da interface do ContextHub:** Abre o arquivo /etc/cloudsettings/default/contexthub.config.ui.js, que contém a representação do objeto Javascript das configurações de modo da interface do usuário do ContextHub.
+* **Configuração da interface do ContextHub:** Abre o arquivo /etc/cloudsettings/default/contexthub.config.ui.js, que contém a representação do objeto JavaScript das configurações de modo da interface do ContextHub.
 * **kernel.js:** Abre o arquivo /etc/cloudsettings/default/contexthub.kernel.js, que contém o código-fonte das bibliotecas de clientes que implementam a estrutura do ContextHub, o mecanismo de segmento e os tipos de armazenamento.
 * **ui.js:** Abre o arquivo /etc/cloudsettings/default/contexthub.ui.js, que contém o código-fonte das bibliotecas de clientes que implementam os tipos de módulo da interface do usuário e da interface do ContextHub.
 * **style.css:** Abre o arquivo /etc/cloudsettings/default/contexthub.styles.css, que contém os estilos de CSS para a interface do usuário do ContextHub e os módulos de interface do usuário.

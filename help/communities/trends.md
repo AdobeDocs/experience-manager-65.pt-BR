@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '345'
 ht-degree: 4%
 
 ---
@@ -62,39 +62,39 @@ No **Comentários** especifique se e como os comentários dos arquivos carregado
 
 * **Tipo**
 
-   Especifique se deseja exibir dados relativos aos membros da comunidade ou ao conteúdo gerado pelo usuário (UGC).
+  Especifique se deseja exibir dados relativos aos membros da comunidade ou conteúdo gerado pelo usuário (UGC).
 
-   Selecionar de:
+  Selecionar de:
 
    * `Members`
    * `Content`
 
-   O padrão é `Members`.
+  O padrão é `Members`.
 
 * **Título de exibição**
 
-   Um título descritivo a ser exibido acima dos dados, como `Trending Content`.
+  Um título descritivo a ser exibido acima dos dados, como `Trending Content`.
 O padrão é sem título.
 
 * **Contagem de exibições**
 
-   O número de itens a serem listados.
+  O número de itens a serem listados.
 O padrão é 10.
 
 * **Tipo de atividade**
 
-   Selecione um de:
+  Selecione um de:
 
    * `Views`(visitas à página)
    * `Posts`(criando UGC)
    * `Follows`
    * `Likes`
 
-   O padrão é Exibições.
+  O padrão é Exibições.
 
 * **Período de tempo**
 
-   Selecione um de:
+  Selecione um de:
 
    * `Last 24 hours`
    * `Last 7 days`
@@ -103,16 +103,16 @@ O padrão é 10.
    * `This year (since Jan 1st)`
    * `Total`
 
-   O padrão é `Total`.
+  O padrão é `Total`.
 
 * **Caminho do contexto**
 
-   Fornece a capacidade de definir o escopo da atividade para um subconjunto do site, como um Blog específico.
+  Fornece a capacidade de definir o escopo da atividade para um subconjunto do site, como um Blog específico.
 O padrão é todo o site da comunidade.
 
 * **Agregação da contagem de membros**
 
-   Quando desmarcados (desativados), somente os posts de nível superior são contados. Por exemplo, se o contexto for a página raiz (o padrão), uma variável `Activity Type` de `Posts` nunca mostrará qualquer atividade, pois não há capacidade de publicar conteúdo na página raiz. Quando marcadas, as contagens em todas as páginas descendentes são incluídas.
+  Quando desmarcados (desativados), somente os posts de nível superior são contados. Por exemplo, se o contexto for a página raiz (o padrão), uma variável `Activity Type` de `Posts` nunca mostrará qualquer atividade, pois não há capacidade de publicar conteúdo na página raiz. Quando marcadas, as contagens em todas as páginas descendentes são incluídas.
 O padrão está marcado.
 
 ### Exemplo de página com 4 componentes {#example-page-with-components}

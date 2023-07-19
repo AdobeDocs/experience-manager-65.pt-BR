@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: 393cf504-917e-4bf6-9a8b-b7a5bd862c65
 exl-id: 0ead982d-2315-4947-b762-596aa2aa42a1
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '929'
 ht-degree: 2%
 
 ---
@@ -86,8 +86,8 @@ Você deve concluir as etapas de configuração para que as integrações do AEM
 
       1. ID do cliente.
       1. Client Secret.
-   1. **(Opcional)** Editar valores existentes.
 
+   1. **(Opcional)** Editar valores existentes.
 
 1. Salve as alterações.
 1. Este é um exemplo de configuração:

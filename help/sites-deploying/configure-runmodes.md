@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 7d91fbdaae7ade27e9d6bf42bbcd5b16d3f6e358
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '748'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Os modos de execução permitem ajustar a instância de AEM para uma finalidade 
 
 * [Definir coleções de parâmetros de configuração para cada modo de execução](#defining-configuration-properties-for-a-run-mode).
 
-   Um conjunto básico de parâmetros de configuração é aplicado a todos os modos de execução, e você pode ajustar conjuntos adicionais para a finalidade de seu ambiente específico. Elas são aplicadas conforme necessário.
+  Um conjunto básico de parâmetros de configuração é aplicado a todos os modos de execução, e você pode ajustar conjuntos adicionais para a finalidade de seu ambiente específico. Elas são aplicadas conforme necessário.
 
 * [Definir pacotes adicionais a serem instalados para um modo específico](#defining-additional-bundles-to-be-installed-for-a-run-mode).
 
@@ -89,19 +89,19 @@ O modo de execução é indicado por um sufixo no nome da pasta. Isso permite ar
 
 * `config`
 
-   Aplicável a todos os modos de execução
+  Aplicável a todos os modos de execução
 
 * `config.author`
 
-   Usado para o modo de execução do autor
+  Usado para o modo de execução do autor
 
 * `config.publish`
 
-   Usado para o modo de execução de publicação
+  Usado para o modo de execução de publicação
 
 * `config.<run-mode>`
 
-   Usado para o modo de execução aplicável; por exemplo, config
+  Usado para o modo de execução aplicável; por exemplo, config
 
 Consulte [Configuração do OSGi no repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) para obter mais detalhes sobre como definir os nós de configuração individuais nessas pastas e criar configurações para combinações de vários modos de execução.
 
@@ -123,8 +123,8 @@ Essas pastas são do tipo `nt:folder` e devem conter o pacote apropriado.
 Se você tiver definido as configurações para vários modos de execução, será necessário definir qual será usado na inicialização. Existem vários métodos para especificar qual modo de execução usar; a ordem da resolução é:
 
 1. [propriedades do sistema (](#using-a-system-property-in-the-start-script)
-1. [ ](#using-the-sling-properties-file)
-1. [ ](#using-the-r-option)
+1. [](#using-the-sling-properties-file)
+1. [](#using-the-r-option)
 1. [Detecção de nome de arquivo](#filename-detection-renaming-the-jar-file)
 
 Quando estiver usando um servidor de aplicativos, você também poderá [definir o modo de execução em web.xml](#defining-the-run-mode-in-web-xml-with-application-server).
@@ -155,7 +155,7 @@ Uma propriedade do sistema no script de inicialização pode ser usada para espe
 
 * Por exemplo, use o seguinte para iniciar uma instância como uma instância de publicação de produção localizada nos EUA:
 
-   `-Dsling.run.modes=publish,prod,us`
+  `-Dsling.run.modes=publish,prod,us`
 
 ### Detecção de nome de arquivo - renomeando o arquivo jar {#filename-detection-renaming-the-jar-file}
 

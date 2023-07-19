@@ -11,9 +11,9 @@ discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4443'
+source-wordcount: '4435'
 ht-degree: 4%
 
 ---
@@ -71,7 +71,7 @@ Conclua as etapas a seguir para adicionar uma propriedade personalizada a todos 
 
 1. Na pasta de itens recém-criados, adicione um nó para a propriedade personalizada em todo o ativo (Exemplo: Geolocalização) usando as seguintes etapas:
 
-   1. Clique com o botão direito na pasta de itens e selecione **Criar** > **Criar nó**.
+   1. Clique com o botão direito do mouse na pasta de itens e selecione **Criar** > **Criar nó**.
 
       ![Criar nó no CRX](assets/itemscreatenode.png)
 
@@ -338,7 +338,7 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
 1. Na pasta de itens recém-criados, adicione um nó para a guia personalizada no ativo (aqui, mytab - esse nome não é exibido na interface do usuário) usando as seguintes etapas:
 
-   1. Clique com o botão direito na pasta de itens e selecione **Criar** > **Criar nó**.
+   1. Clique com o botão direito do mouse na pasta de itens e selecione **Criar** > **Criar nó**.
    1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** mytab (ou o nome que você deseja dar a esta propriedade)
@@ -426,7 +426,7 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
 1. Na pasta de itens recém-criados, adicione um nó para a guia personalizada no ativo (Exemplo: guia personalizada) usando as seguintes etapas:
 
-   1. Clique com o botão direito na pasta de itens e selecione **Criar** > **Criar nó**.
+   1. Clique com o botão direito do mouse na pasta de itens e selecione **Criar** > **Criar nó**.
    1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** customtab (ou o nome que você deseja dar a esta propriedade)

@@ -2,9 +2,9 @@
 title: Edição de um SPA externo no Adobe Experience Manager
 description: Este documento descreve as etapas recomendadas para fazer upload de um SPA independente em uma instância do Adobe Experience Manager, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2440'
 ht-degree: 1%
 
 ---

@@ -13,9 +13,9 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 1074843a0105df39382b64defe66fc262986b9c9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1677'
 ht-degree: 2%
 
 ---
@@ -60,15 +60,15 @@ Para acessar o console Grupos:
    * A estrutura do site da comunidade deve incluir uma função de grupos.
    * Estas capturas de tela são do tutorial de Introdução após [criação de grupos ao publicar](/help/communities/published-site.md).
 
-   ![create-group](assets/create-group.png)
+  ![create-group](assets/create-group.png)
 
 * Selecione o **Pasta Grupos** para abri-lo.
 
-   Quando abertos, todos os grupos existentes, sejam eles criados no autor ou na publicação, são exibidos.
+  Quando abertos, todos os grupos existentes, sejam eles criados no autor ou na publicação, são exibidos.
 
-   Nesse console Grupos, é possível criar novos grupos.
+  Nesse console Grupos, é possível criar novos grupos.
 
-   ![create-new-group](assets/create-new-group.png)
+  ![create-new-group](assets/create-new-group.png)
 
 * Selecione o **Criar grupo** botão.
 
@@ -78,34 +78,34 @@ Para acessar o console Grupos:
 
 * **Título do grupo da comunidade**
 
-   Um título de exibição para o grupo.
+  Um título de exibição para o grupo.
 O título é exibido no site publicado do grupo.
 
 * **Descrição do grupo da comunidade**
 
-   Uma descrição do grupo.
+  Uma descrição do grupo.
 
 * **Raiz do grupo da comunidade**
 
-   O caminho raiz para o grupo.
+  O caminho raiz para o grupo.
 A raiz padrão é o site pai, mas a raiz pode ser movida para qualquer local no site. Não é recomendável alterá-lo.
 
 * **Idiomas adicionais disponíveis do Grupo da comunidade** menu
 
-   Use o menu suspenso para selecionar os idiomas do grupo da comunidade disponíveis. O menu exibe todos os idiomas nos quais o site pai da comunidade é criado. Os usuários podem selecionar entre esses idiomas para criar grupos em vários locais nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites de comunidade.
+  Use o menu suspenso para selecionar os idiomas do grupo da comunidade disponíveis. O menu exibe todos os idiomas nos quais o site pai da comunidade é criado. Os usuários podem selecionar entre esses idiomas para criar grupos em vários locais nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites de comunidade.
 
 * **Nome do grupo da comunidade**
 
-   O nome da página raiz do grupo que aparece no URL. Evite usar caracteres de sublinhado (_) e palavras-chave, como recursos e configuração no nome do grupo.
+  O nome da página raiz do grupo que aparece no URL. Evite usar caracteres de sublinhado (_) e palavras-chave, como recursos e configuração no nome do grupo.
 
    * Verifique novamente o nome, pois ele não pode ser facilmente alterado após a criação do grupo.
    * O URL base será exibido abaixo do `Community Group Name`.
    * Para um URL válido, anexe &quot;.html&quot;
-      *por exemplo*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+     *por exemplo*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **Modelo do grupo da comunidade** menu
 
-   Use o menu suspenso para escolher um disponível [modelo de grupo da comunidade](/help/communities/tools.md).
+  Use o menu suspenso para escolher um disponível [modelo de grupo da comunidade](/help/communities/tools.md).
 
 ### Etapa 2: design {#step-design}
 
@@ -166,15 +166,15 @@ A configuração de associação permite a seleção de uma das três maneiras d
 
 * **Associação opcional**
 
-   Se selecionado, o grupo da comunidade será público. Os membros do site podem participar do grupo e publicar sem entrar explicitamente no grupo. O padrão está selecionado.
+  Se selecionado, o grupo da comunidade será público. Os membros do site podem participar do grupo e publicar sem entrar explicitamente no grupo. O padrão está selecionado.
 
 * **Associação necessária**
 
-   Se selecionado, o grupo da comunidade será aberto. Os membros do site da comunidade podem exibir o conteúdo do grupo, mas precisam ingressar no grupo para publicar conteúdo. Os membros se juntam selecionando o `Join` no ambiente de publicação. O padrão não está selecionado.
+  Se selecionado, o grupo da comunidade será aberto. Os membros do site da comunidade podem exibir o conteúdo do grupo, mas precisam ingressar no grupo para publicar conteúdo. Os membros se juntam selecionando o `Join` no ambiente de publicação. O padrão não está selecionado.
 
 * **Associação restrita**
 
-   Se selecionado, o grupo da comunidade será um grupo secreto. Os membros da comunidade devem ser convidados explicitamente. Os membros convidados são inseridos na caixa de pesquisa. Os membros podem ser adicionados posteriormente usando o [Consoles Membros e grupos](/help/communities/members.md) o ambiente do autor. O padrão não está selecionado.
+  Se selecionado, o grupo da comunidade será um grupo secreto. Os membros da comunidade devem ser convidados explicitamente. Os membros convidados são inseridos na caixa de pesquisa. Os membros podem ser adicionados posteriormente usando o [Consoles Membros e grupos](/help/communities/members.md) o ambiente do autor. O padrão não está selecionado.
 
 **MINIATURA**
 

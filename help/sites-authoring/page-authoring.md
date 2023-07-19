@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ No lado esquerdo de uma página editável, um navegador deslizante pode ser aber
 No lado esquerdo de uma página editável, um navegador deslizante pode ser aberto; daqui, os ativos podem ser arrastados para a página; por exemplo, para posicionar ativos ou criar links para outras páginas.
 
 * **Component Toolbar**
-Um único clique/toque duplo lento revelará a barra de ferramentas apropriada (única para a barra de ferramentas de edição local e, em seguida, dupla lenta para a barra de ferramentas completa).
+Um clique/toque duplo único ou lento revelará a barra de ferramentas apropriada (única para a barra de ferramentas de edição local e, em seguida, lenta dupla para a barra de ferramentas completa).
 
 * **[Layout responsivo](/help/sites-authoring/responsive-layout.md)**
 Isso fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva.

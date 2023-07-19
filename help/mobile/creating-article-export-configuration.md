@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: bc681589-5d46-44cd-888d-b0722a2fd006
 exl-id: 5295f383-3b46-4456-9177-65de68e39a85
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '300'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,6 @@ A configuração ContentSync foi encontrada em **&lt;dps-exporttemplate>/dps-art
 >* execução da instância do AEM
 >* nenhum contexto personalizado configurado ou uma porta diferente
 >
-
 
 Para exibir o recurso compartilhado de amostra, consulte as etapas abaixo:
 

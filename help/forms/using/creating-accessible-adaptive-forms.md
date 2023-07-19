@@ -10,9 +10,9 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2054'
 ht-degree: 0%
 
 ---
@@ -127,7 +127,6 @@ Para usar a opção Acessibilidade, siga estas etapas:
 >* O botão de opção e a caixa de seleção podem ter apenas duas opções de acessibilidade, a saber, Texto personalizado e Título.
 >* Para formulários adaptáveis baseados em XFA, a opção de acessibilidade é herdada das opções de acessibilidade definidas no XDP. As dicas de ferramentas do XDP são mapeadas de acordo com a Descrição curta e a Legenda são mapeadas de acordo com o Título. As outras opções funcionam como estão.
 
-
 ### 3. Fornecer equivalentes de texto para imagens {#provide-text-equivalents-for-images}
 
 As imagens podem ajudar a melhorar a compreensão de alguns usuários. No entanto, para usuários que usam leitores de tela, as imagens reduzem a acessibilidade do formulário. Se você optar por usar imagens, forneça descrições de texto para todas as imagens.
@@ -144,7 +143,7 @@ O design de acessibilidade envolve considerar diretrizes adicionais para o uso d
 
 Os usuários com deficiências visuais dependem de um alto contraste entre o texto e o plano de fundo para ler o conteúdo digital. Sem contraste suficiente, um formulário pode se tornar difícil, se não impossível, de ser lido para alguns usuários.
 
-É recomendável usar a fonte padrão e as cores de fundo — conteúdo na cor preta em um plano de fundo branco. Se você alterar as cores padrão, escolha uma cor de primeiro plano escura em uma cor de plano de fundo clara ou vice-versa.
+É recomendável usar a fonte padrão e as cores de fundo — conteúdo na cor preta em um plano de fundo branco. Se você alterar as cores padrão, escolha uma cor de primeiro plano escura em uma cor de fundo clara ou vice-versa.
 
 Consulte [Criação de temas personalizados para formulários adaptáveis](/help/forms/using/creating-custom-adaptive-form-themes.md), para obter mais informações sobre como alterar o contraste e o tema da cor dos formulários adaptáveis.
 

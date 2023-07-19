@@ -8,10 +8,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 6ebcc7bd5c72c01672244fdfba353a8949f6e331
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2979'
+ht-degree: 2%
 
 ---
 
@@ -386,7 +386,7 @@ Clicar no ponto de acesso abre uma caixa de diálogo que permite escolher o tama
 1. Você pode:
 
    * clique no componente e, em seguida, clique no ícone Editar
-   * clique duplo lento
+   * clique duas vezes lento
 
 1. Clique no ícone de tela cheia.
 

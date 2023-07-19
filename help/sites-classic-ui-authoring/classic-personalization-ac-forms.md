@@ -8,9 +8,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,7 @@ Primeiro, verifique se a conexão entre as instâncias de autor e publicação e
 >[!NOTE]
 >
 >Verifique se **acMapping** na página do **jcr:content** o nó está definido como **mapRecipient** ou **perfil** ao usar o Adobe Campaign 6.1.x ou Adobe Campaign Standard, respectivamente
+>
 
 ### Criação de um formulário {#creating-a-form}
 

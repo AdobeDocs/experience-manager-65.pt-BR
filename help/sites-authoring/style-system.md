@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1312'
-ht-degree: 62%
+ht-degree: 60%
 
 ---
 
@@ -53,7 +53,7 @@ O uso do Sistema de estilos geralmente funciona da seguinte maneira.
 
 1. O autor da página do AEM pode escolher os estilos criados no editor de páginas no menu de estilo da barra de ferramentas do componente.
 
-Observe que apenas as três últimas etapas são realizadas no AEM. Isso significa que todo o desenvolvimento do CSS e do Javascript necessários pode ser feito sem AEM.
+Observe que apenas as três últimas etapas são realizadas no AEM. Isso significa que todo o desenvolvimento do CSS e do JavaScript necessários pode ser feito sem AEM.
 
 Na verdade, a implementação de estilos requer apenas a implantação no AEM e a seleção nos componentes dos modelos desejados.
 
@@ -111,7 +111,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
 >[!CAUTION]
 >
->As classes CSS (bem como qualquer Javascript necessário) configuradas como propriedades de estilo da política de um componente devem ser implantadas como [Bibliotecas do cliente](/help/sites-developing/clientlibs.md) para funcionarem.
+>As classes CSS (bem como qualquer JavaScript necessário) configuradas como propriedades de estilo da política de um componente devem ser implantadas como [Bibliotecas de clientes](/help/sites-developing/clientlibs.md) para funcionar.
 
 ## Configurar {#setup}
 
@@ -156,9 +156,7 @@ Essa propriedade é definida no nó `cq:Component`. Por exemplo:
 >1. HTL tem precedência sobre tudo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Entre os vários estilos ativos, o primeiro estilo na lista de estilos configurados na política do componente é aplicado.
 >1. Por fim, a `cq:htmlTag`/ `cq:tagName` do componente será considerada um valor de fallback.
-
 >
-
 
 Essa capacidade de definir nomes de estilo é útil para componentes muito genéricos, como o Contêiner de layout ou o componente de Fragmento de conteúdo, para oferecer-lhes significado adicional.
 

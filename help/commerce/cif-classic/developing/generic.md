@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1863'
 ht-degree: 0%
 
 ---
@@ -49,8 +49,8 @@ A estrutura de comércio eletrônico pode ser usada com qualquer solução de co
 
       * Se encontrado, o valor é usado para filtrar a pesquisa de serviço de comércio.
       * Se não for encontrado, será usado o serviço de comércio com a classificação mais alta.
-   * A `cq:Commerce` mixin é usado para que o `cq:commerceProvider` podem ser adicionados a recursos fortemente tipados.
 
+   * A `cq:Commerce` mixin é usado para que o `cq:commerceProvider` podem ser adicionados a recursos fortemente tipados.
 
 * A variável `cq:commerceProvider` A propriedade também é usada para fazer referência à definição apropriada da fábrica de comércio.
 
@@ -97,11 +97,11 @@ A variável **CommerceSession**:
    * executa adicionar/remover/etc
    * realiza os vários cálculos no carrinho;
 
-      `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
+     `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
 * Possui a persistência do **pedido** dados:
 
-   `CommerceSession.getUserContext()`
+  `CommerceSession.getUserContext()`
 
 * Pode recuperar/atualizar detalhes do delivery usando `updateOrder(Map<String, Object> delta)`
 * Também possui o **pagamento** processando conexão
@@ -129,7 +129,6 @@ Qualquer recurso do produto pode ser representado por um `Product API`. A maiori
 >
 >1. `size`
 >1. mais um
-
 >
 >   Essa variante adicional é selecionada por meio da variável `variationAxis` propriedade da referência do produto (geralmente `color` para Geometrixx Outdoors).
 
@@ -197,7 +196,7 @@ public interface Product extends Adaptable {
  * Interface for filtering variants and AxisFilter provided as common implementation
  *
  * The <code>VariantFilter</code> is used to filter variants,
- * e.g. when using {@link Product#getVariants(VariantFilter filter)}.
+ * for example, when using {@link Product#getVariants(VariantFilter filter)}.
  */
 public interface VariantFilter {
     public boolean includes(Product product);
@@ -249,11 +248,11 @@ public class AxisFilter implements VariantFilter {
          * As referências de produto contêm um `productData` propriedade, que aponta para os dados do produto (normalmente sob `/etc/commerce/products`).
          * Os dados do produto são hierárquicos; os atributos do produto são herdados dos ancestrais de um nó de dados do produto.
          * As referências de produto também podem conter propriedades locais, que substituem as especificadas nos dados do produto.
+
       * Um produto em si:
 
          * Sem um `productData` propriedade.
          * Um nó de produto que armazena todas as propriedades localmente (e não contém uma propriedade productData ) herda atributos de produto diretamente de seus próprios antecessores.
-
 
 * **Estrutura de produto genérica do AEM**
 
@@ -321,11 +320,11 @@ public class AxisFilter implements VariantFilter {
       * Descontos por quantidade.
       * Moedas diferentes.
       * IVA e isento de IVA.
+
    * Os modificadores são completamente abertos com a seguinte interface:
 
       * `int CommerceSession.getQuantityBreakpoints(Product product)`
       * `String CommerceSession.getProductPrice(Product product)`
-
 
 **Armazenamento**
 
@@ -432,36 +431,37 @@ O ponto de entrada para a API de pesquisa é o `CommerceService#search` método 
 
    * Um Cupom é um componente baseado em páginas criado/editado com o console Sites e armazenado em:
 
-      `/content/campaigns`
+     `/content/campaigns`
 
    * Fornecimento de vouchers:
 
       * Um código de voucher (a ser digitado no carrinho pelo comprador).
       * Um rótulo de voucher (a ser exibido depois que o comprador o inserir no carrinho).
       * Um caminho de promoção (que define a ação que o voucher aplica).
+
    * Os vouchers não têm suas próprias datas/horas de ativação e desativação, mas usam os das campanhas principais.
    * Os mecanismos de comércio externo também podem fornecer vouchers; eles exigem no mínimo:
 
       * Um código de voucher
       * Um `isValid()` método
+
    * A variável **Voucher** componente ( `/libs/commerce/components/voucher`) fornece:
 
       * Um renderizador para administração de vouchers; mostra todos os vouchers que estão no carrinho.
       * As caixas de diálogo de edição (formulário) para administrar (adicionar/remover) os vouchers.
       * As ações necessárias para adicionar/remover vouchers do carrinho.
 
-
-
 * Promoções:
 
    * Uma promoção é um componente baseado em páginas, criado/editado com o console Sites e armazenado em:
 
-      `/content/campaigns`
+     `/content/campaigns`
 
    * Fornecimento de promoções:
 
       * Uma prioridade
       * Um caminho de manipulador de promoção
+
    * É possível conectar promoções a uma campanha para definir suas datas/horas de ativação/desativação.
    * É possível conectar promoções a uma experiência para definir seus segmentos.
    * As promoções não conectadas a uma experiência não serão acionadas por conta própria, mas ainda poderão ser acionadas por um Voucher.
@@ -469,17 +469,16 @@ O ponto de entrada para a API de pesquisa é o `CommerceService#search` método 
 
       * renderizadores e caixas de diálogo para administração de promoção
       * subcomponentes para renderização e edição de parâmetros de configuração específicos para os manipuladores de promoção
+
    * Dois manipuladores de promoção são fornecidos imediatamente:
 
       * `DiscountPromotionHandler`, que aplica um desconto absoluto ou percentual em todo o carrinho
       * `PerfectPartnerPromotionHandler`, que aplica um desconto absoluto ou percentual do produto se o produto do parceiro também estiver no carrinho
+
    * O CLIENTCONTEXT `SegmentMgr` resolve segmentos e o ClientContext `CartMgr` resolve promoções. Cada promoção que está sujeita a pelo menos um segmento resolvido será acionada.
 
       * As Promoções acionadas são enviadas de volta ao servidor por meio de uma chamada AJAX para recalcular o carrinho.
       * As Promoções acionadas (e os Cupons adicionados) também são mostrados no painel ClientContext.
-
-
-
 
 A adição/remoção de um voucher de um carrinho é realizada por meio do `CommerceSession` API:
 

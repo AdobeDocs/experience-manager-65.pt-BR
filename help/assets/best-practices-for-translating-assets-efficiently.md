@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Asset Management
 exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '415'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Para obter um gerenciamento eficiente de ativos para garantir que diferentes versões traduzidas permaneçam sincronizadas, crie [cópias de idioma](preparing-assets-for-translation.md) de ativos antes de executar fluxos de trabalho de tradução.
 
-Uma cópia de idioma de um ativo ou grupo de ativos é um irmão de idioma (ou uma versão do(s) ativo(s) em um idioma cognato) com uma hierarquia de conteúdo semelhante.
+Uma cópia de idioma de um ativo ou grupo de ativos é um irmão de idioma (ou uma versão dos ativos em um idioma cognato) com uma hierarquia de conteúdo semelhante.
 
 Cada cópia de idioma é um ativo independente. Portanto, a tradução de ativos em várias localidades pode aumentar consideravelmente o tamanho do repositório CRX. Por exemplo, traduzir ativos com um tamanho combinado de 10 GB em dois idiomas pode aumentar o tamanho do repositório em aproximadamente 20 GB (10 GB para cada idioma).
 

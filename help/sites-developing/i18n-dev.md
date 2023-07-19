@@ -1,8 +1,8 @@
 ---
 title: Internacionalizando strings de interface do usuário
 seo-title: Internationalizing UI Strings
-description: As APIs Java e Javascript permitem internacionalizar strings
-seo-description: Java and Javascript APIs enable you to internationalize strings
+description: As APIs Java e JavaScript permitem internacionalizar strings
+seo-description: Java and JavaScript APIs enable you to internationalize strings
 uuid: 1cfa409f-9b1e-466f-8b03-5628db42bc57
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Internacionalizando strings de interface do usuário {#internationalizing-ui-strings}
 
-As APIs Java e Javascript permitem internacionalizar strings nos seguintes tipos de recursos:
+As APIs Java e JavaScript permitem internacionalizar strings nos seguintes tipos de recursos:
 
 * Arquivos de código-fonte Java.
 * Scripts JSP.
-* Javascript em bibliotecas do lado do cliente ou na origem da página.
+* JavaScript em bibliotecas do lado do cliente ou na origem da página.
 * Valores de propriedade do nó JCR usados em caixas de diálogo e propriedades de configuração do componente.
 
 Para obter uma visão geral do processo de internacionalização e localização, consulte [Internacionalizar componentes](/help/sites-developing/i18n.md).
@@ -110,16 +110,16 @@ A variável `I18N` define um parâmetro estático `get` que é útil quando voc�
 
 * Usar a preferência de idioma do usuário: forneça o SlingHttpRequest como o primeiro parâmetro.
 
-   `I18n.get(slingHttpRequest, "Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
+  `I18n.get(slingHttpRequest, "Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 * Usar a linguagem da página: forneça o ResourceBundle como o primeiro parâmetro.
 
-   `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
+  `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 
-### Internacionalizando strings no código Javascript {#internationalizing-strings-in-javascript-code}
+### Internacionalizando strings no código JavaScript {#internationalizing-strings-in-javascript-code}
 
-A API do Javascript permite localizar strings no cliente. Assim como com [Java e JSP](#internationalizing-strings-in-java-and-jsp-code) , a API JavaScript permite identificar strings para localização, fornecer dicas de localização e incluir variáveis nas strings localizadas.
+A API do JavaScript permite localizar strings no cliente. Assim como com [Java e JSP](#internationalizing-strings-in-java-and-jsp-code) , a API JavaScript permite identificar strings para localização, fornecer dicas de localização e incluir variáveis nas strings localizadas.
 
-A variável `granite.utils` [pasta da biblioteca do cliente](/help/sites-developing/clientlibs.md) O fornece a API do Javascript. Para usar a API, inclua essa pasta da biblioteca do cliente na sua página. As funções de localização usam o `Granite.I18n` namespace.
+A variável `granite.utils` [pasta da biblioteca do cliente](/help/sites-developing/clientlibs.md) O fornece a API do JavaScript. Para usar a API, inclua essa pasta da biblioteca do cliente na sua página. As funções de localização usam o `Granite.I18n` namespace.
 
 Antes de apresentar strings localizadas, é necessário definir o local usando o `Granite.I18n.setLocale` função. A função requer o código de idioma do local como argumento:
 
@@ -146,7 +146,7 @@ Os parâmetros da função são diferentes do método Java I18n.get:
 * O segundo parâmetro é uma matriz de valores a serem inseridos no literal da string.
 * O terceiro parâmetro é a dica de localização.
 
-O exemplo a seguir usa o Javascript para localizar o Administrador de &quot;Boas-vindas de volta&quot;. Você tem duas mensagens na sua caixa de entrada.&quot; frase:
+O exemplo a seguir usa o JavaScript para localizar a mensagem &quot;Bem-vindo de volta, Administrador. Você tem duas mensagens na sua caixa de entrada.&quot; frase:
 
 ```
 Granite.I18n.setLocale("fr");

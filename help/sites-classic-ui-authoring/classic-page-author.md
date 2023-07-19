@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Uma janela flutuante do &quot;inspetor&quot; que aparece na página editável. A
 No lado esquerdo de cada página autorável, o localizador de conteúdo fornece acesso rápido a uma variedade de ativos, incluindo ativos digitais (como outras imagens, elementos e documentos do Flash), outras páginas e parágrafos. Esses itens podem ser arrastados para a página; por exemplo, para posicionar ativos ou criar links para outras páginas.
 
 * **Menu de contexto**
-Clicar com o botão direito do mouse na maioria dos elementos da tela (por exemplo, parágrafos na página) exibe um menu de contexto com as opções de ação apropriadas.
+Clicar com o botão direito do mouse na maioria dos elementos da tela (por exemplo, parágrafos na página) exibe um menu de contexto com opções de ação apropriadas.
 
 * **Pesquisar enquanto digita**
 Em determinados cenários (por exemplo, seleção de caminho em caixas de diálogo de edição), a pesquisa de conteúdo por meio da interface AEM apresenta correspondências dinâmicas à medida que você digita a consulta.

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '6086'
+source-wordcount: '6088'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ O portlet pode ser configurado com as seguintes preferências:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Esse é o caminho inicial do portlet: ele define o conteúdo que é exibido inicialmente.</p> <p><strong>Importante</strong>: se o portlet estiver configurado para se conectar às instâncias de autor e publicação do AEM que estejam em execução em um caminho de contexto diferente de<strong> /</strong>, é necessário ativar a força <strong>CQUrlInfo</strong> na configuração do Gerenciador de biblioteca HTML dessas instâncias AEM (por exemplo, via Felix Webconsole) ou a edição não funcionará e a caixa de diálogo de preferências não será exibida.</p> </td>
+   <td><p>Esse é o caminho inicial do portlet: ele define o conteúdo que é exibido inicialmente.</p> <p><strong>Importante</strong>: se o portlet estiver configurado para se conectar às instâncias de autor e publicação do AEM que estejam em execução em um caminho de contexto diferente de<strong> /</strong>, é necessário ativar a força <strong>CQUrlInfo</strong> na configuração do Gerenciador de biblioteca HTML dessas instâncias AEM (por exemplo, através do Felix Webconsole) ou a edição não funcionará e a caixa de diálogo de preferências não será exibida.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -333,7 +333,7 @@ Para ativar o SSO no WCM do AEM, acesse a entrada de configuração relevante no
 1. Acesse o console por meio do URI em https://&lt;aem-host>:&lt;port>/system/console.
 1. No menu Configuração, selecione Manipulador de autenticação SSO. Neste exemplo, o manipulador de SSO aceita solicitações de SSO para todos os caminhos com base no cookie fornecido pelo portlet AEM. Sua configuração pode variar.
 
-   | Caminho  | / | Habilita o manipulador SSO para todas as solicitações |
+   | Caminho | / | Habilita o manipulador SSO para todas as solicitações |
    |---|---|---|
    | Nomes de cookies | cqpsso | Nome do cookie fornecido pelo portlet conforme configurado no console OSGi do portlet. |
 
@@ -509,7 +509,7 @@ No HTML, é possível usar os seguintes espaços reservados, que são substituí
 | {id} | ID CSS do botão. |
 | {url} | URL do destino do botão. |
 | {text} | Etiqueta do botão. |
-| {onclick} | Javascript **onclick** função (contém {url}). |
+| {onclick} | JavaScript **onclick** função (contém {url}). |
 
 Exemplo de um arquivo button.html:
 
@@ -590,7 +590,7 @@ Os serviços OSGi opcionais podem ser implementados para personalizar várias pa
   </tr>
   <tr>
    <td>TextMapper</td>
-   <td>Permite publicar arquivos de HTML de processo, CSS e Javascript.</td>
+   <td>Permite publicar arquivos HTML de processo, CSS e JavaScript.</td>
   </tr>
   <tr>
    <td>ToolbarButton</td>
@@ -668,7 +668,7 @@ O arquivo JAR AEM Quickstart contém os arquivos de componente do portlet. Para 
 
 Adicione o componente de portlet ao sistema de parágrafos para que ele fique disponível aos autores.
 
-1. No Sidekick, clique no ícone de régua para entrar no modo Design.
+1. No Sidekick, clique no ícone da régua para entrar no modo Design.
 1. Ao lado do `Design of par` acima do primeiro parágrafo, clique em **Editar**.
 
 1. No **Geral** categoria do componente, marque a caixa de seleção ao lado do componente Portlet e clique em OK.
@@ -766,7 +766,7 @@ Para configurar o portlet:
 
    >[!NOTE]
    >
-   >Se o portlet estiver configurado para se conectar às instâncias de autor e publicação do AEM que estiverem em execução em um caminho de contexto diferente de** /**, será necessário habilitar a opção force **CQUrlInfo** na configuração do Gerenciador de biblioteca HTML dessas instâncias AEM (por exemplo, via Felix Webconsole) ou a edição não funcionará e a caixa de diálogo de preferências não será exibida.
+   >Se o portlet estiver configurado para se conectar às instâncias de autor e publicação do AEM que estiverem em execução em um caminho de contexto diferente de** /**, será necessário habilitar a opção force **CQUrlInfo** na configuração do Gerenciador de biblioteca HTML dessas instâncias AEM (por exemplo, através do Felix Webconsole) ou a edição não funcionará e a caixa de diálogo de preferências não será exibida.
 
 1. Salve as alterações de configuração no servidor de aplicativos.
 

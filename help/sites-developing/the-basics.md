@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '3324'
+source-wordcount: '3327'
 ht-degree: 1%
 
 ---
@@ -137,8 +137,8 @@ Com o Sling, você especifica qual script renderiza uma determinada entidade (de
 
 O pedido é detalhado e as informações necessárias são extraídas. O repositório é pesquisado para o recurso solicitado (nó de conteúdo):
 
-* primeiro o Sling verifica se um nó existe no local especificado na solicitação; por exemplo, `../content/corporate/jobs/developer.html`
-* se nenhum nó for encontrado, a extensão será descartada e a pesquisa será repetida; por exemplo, `../content/corporate/jobs/developer`
+* primeiro O Sling verifica se um nó existe no local especificado na solicitação; por exemplo, `../content/corporate/jobs/developer.html`
+* se nenhum nó for encontrado, a extensão será descartada e a pesquisa repetida; por exemplo, `../content/corporate/jobs/developer`
 * se nenhum nó for encontrado, o Sling retornará o código http 404 (Não encontrado).
 
 O Sling também permite que outros nós, além dos JCR, sejam recursos, mas esse é um recurso avançado.
@@ -152,7 +152,7 @@ O caminho especificado pelo `sling:resourceType` pode ser:
 * absoluto
 * relativo, a um parâmetro de configuração
 
-   Os caminhos relativos são recomendados pelo Adobe à medida que aumentam a portabilidade.
+  Os caminhos relativos são recomendados pelo Adobe à medida que aumentam a portabilidade.
 
 Todos os scripts Sling são armazenados em subpastas de `/apps` ou `/libs`, que serão pesquisados nesta ordem (consulte [Personalização de Componentes e Outros Elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
@@ -175,39 +175,39 @@ Usando o exemplo acima, se a variável `sling:resourceType` é `hr/jobs` depois 
 
 * Solicitações GET/HEAD e URLs terminando em .html (tipos de solicitação padrão, formato padrão)
 
-   O script é /apps/hr/jobs/jobs.esp; a última seção do sling:resourceType forma o nome do arquivo.
+  O script é /apps/hr/jobs/jobs.esp; a última seção do sling:resourceType forma o nome do arquivo.
 
 * solicitações POST (todos os tipos de solicitação, exceto GET/HEAD, o nome do método deve estar em maiúsculas)
 
-   POST é usado no nome do script.
+  POST é usado no nome do script.
 
-   O script é `/apps/hr/jobs/jobs.POST.esp`.
+  O script é `/apps/hr/jobs/jobs.POST.esp`.
 
 * URLs em outros formatos, não terminando em .html
 
-   Por exemplo, `../content/corporate/jobs/developer.pdf`
+  Por exemplo, `../content/corporate/jobs/developer.pdf`
 
-   O script será `/apps/hr/jobs/jobs.pdf.esp`; o sufixo é adicionado ao nome do script.
+  O script será `/apps/hr/jobs/jobs.pdf.esp`; o sufixo é adicionado ao nome do script.
 
 * URLs com seletores
 
-   Seletores podem ser usados para exibir o mesmo conteúdo em um formato alternativo. Por exemplo, uma versão para impressão, um feed RSS ou um resumo.
+  Seletores podem ser usados para exibir o mesmo conteúdo em um formato alternativo. Por exemplo, uma versão para impressão, um feed RSS ou um resumo.
 
-   Se observarmos uma versão compatível com a impressora em que o seletor possa ser *imprimir*; como em `../content/corporate/jobs/developer.print.html`
+  Se observarmos uma versão compatível com a impressora em que o seletor possa ser *imprimir*; como em `../content/corporate/jobs/developer.print.html`
 
-   O script será `/apps/hr/jobs/jobs.print.esp`; o seletor é adicionado ao nome do script.
+  O script será `/apps/hr/jobs/jobs.print.esp`; o seletor é adicionado ao nome do script.
 
 * Se nenhum sling:resourceType tiver sido definido:
 
    * o caminho do conteúdo será usado para procurar um script apropriado (se o ResourceTypeProvider baseado em caminho estiver ativo).
 
-      Por exemplo, o script para `../content/corporate/jobs/developer.html` geraria uma pesquisa em `/apps/content/corporate/jobs/`.
+     Por exemplo, o script para `../content/corporate/jobs/developer.html` geraria uma pesquisa em `/apps/content/corporate/jobs/`.
 
    * o tipo de nó primário será usado.
 
 * Se nenhum script for encontrado, o script padrão será usado.
 
-   A representação padrão é atualmente suportada como texto sem formatação (.txt), HTML (.html) e JSON (.json), e todas listarão as propriedades do nó (adequadamente formatadas). A representação padrão da extensão .res, ou solicitações sem uma extensão de solicitação, é fazer spool do recurso (quando possível).
+  A representação padrão é atualmente suportada como texto sem formatação (.txt), HTML (.html) e JSON (.json), e todas listarão as propriedades do nó (adequadamente formatadas). A representação padrão da extensão .res, ou solicitações sem uma extensão de solicitação, é fazer spool do recurso (quando possível).
 * Para o tratamento de erros http (códigos 403 ou 404), o Sling procurará um script em:
 
    * o local /apps/sling/servlet/errorhandler para [scripts personalizados](/help/sites-developing/customizing-errorhandler-pages.md)
@@ -248,19 +248,19 @@ Por exemplo:
    * b
 
       * sling:resourceSuperType = a
+
    * c
 
       * sling:resourceSuperType = b
+
    * x
 
       * sling:resourceType = c
+
    * y
 
       * sling:resourceType = c
       * sling:resourceSuperType = a
-
-
-
 
 A hierarquia de tipo de:
 
@@ -327,7 +327,7 @@ Isso permite executar as seguintes ações em qualquer um dos pacotes da sua ins
 * atualizar
 * desinstalar
 * ver o status atual
-* acessar informações mais detalhadas (por exemplo, nome simbólico, versão, localização etc.) sobre os pacotes específicos
+* acessar informações mais detalhadas (por exemplo, nome simbólico, versão, local etc.) sobre os pacotes específicos
 
 Consulte [o console da Web](/help/sites-deploying/web-console.md), [Configuração OSGI](/help/sites-deploying/configuring-osgi.md) e [Configurações do OSGi](/help/sites-deploying/osgi-configuration-settings.md) para obter mais informações.
 
@@ -418,29 +418,29 @@ A lista a seguir fornece uma visão geral da estrutura que você vê no reposit�
 
 * `/apps`
 
-   Relacionado ao aplicativo; inclui definições de componentes específicas do site. Os componentes que você desenvolve podem ser baseados nos componentes prontos para uso disponíveis em `/libs/foundation/components`.
+  Relacionado ao aplicativo; inclui definições de componentes específicas do site. Os componentes que você desenvolve podem ser baseados nos componentes prontos para uso disponíveis em `/libs/foundation/components`.
 
 * `/content`
 
-   Conteúdo criado para o seu site.
+  Conteúdo criado para o seu site.
 
 * `/etc`
 
 * `/home`
 
-   Informações do usuário e do grupo.
+  Informações do usuário e do grupo.
 
 * `/libs`
 
-   Bibliotecas e definições que pertencem ao núcleo do AEM. As subpastas em `/libs` representam os recursos de AEM prontos para uso, como pesquisa ou replicação. O conteúdo em `/libs` não deve ser modificado, pois afeta a forma como o AEM funciona. Os recursos específicos do seu site devem ser desenvolvidos em `/apps` (consulte [Personalização de Componentes e Outros Elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+  Bibliotecas e definições que pertencem ao núcleo do AEM. As subpastas em `/libs` representam os recursos de AEM prontos para uso, como pesquisa ou replicação. O conteúdo em `/libs` não deve ser modificado, pois afeta a forma como o AEM funciona. Os recursos específicos do seu site devem ser desenvolvidos em `/apps` (consulte [Personalização de Componentes e Outros Elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
-   Área de trabalho temporária.
+  Área de trabalho temporária.
 
 * `/var`
 
-   Arquivos que são alterados e atualizados pelo sistema, como registros de auditoria, estatísticas, manipulação de eventos.
+  Arquivos que são alterados e atualizados pelo sistema, como registros de auditoria, estatísticas, manipulação de eventos.
 
 ## Ambientes {#environments}
 

@@ -5,9 +5,9 @@ contentOwner: AG
 role: User
 feature: Collaboration,Asset Management
 exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Usando esse recurso, você tem a flexibilidade de compartilhar um arquivo PDF ou
 
 1. Para cancelar o relacionamento de um ativo, clique em **[!UICONTROL Não Relacionado]** ![não relacionar ativos](assets/do-not-localize/link-unrelate-icon.png) na barra de ferramentas.
 
-1. Selecione o(s) ativo(s) que deseja desrelacionar da variável **[!UICONTROL Remover relações]** e clique em **[!UICONTROL Não Relacionado]**.
+1. Selecione os ativos que você deseja não relacionar da variável **[!UICONTROL Remover relações]** e clique em **[!UICONTROL Não Relacionado]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 

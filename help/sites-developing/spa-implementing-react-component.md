@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
-source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '547'
 ht-degree: 11%
 
 ---
@@ -30,7 +30,7 @@ O recurso de criação do SPA oferece uma solução abrangente para oferecer sup
 
 ## Introdução {#introduction}
 
-Graças ao contrato simples e leve que é exigido pelo AEM e estabelecido entre o SPA e o editor do SPA, pegar um aplicativo JavaScript existente e adaptá-lo para uso com um no SPA AEM é uma questão simples.
+Graças ao contrato simples e leve que é exigido pelo AEM e estabelecido entre o SPA e o editor do SPA, pegar um aplicativo JavaScript existente e adaptá-lo para uso com um SPA AEM é uma questão simples.
 
 Este artigo ilustra o exemplo do componente de tempo no SPA da amostra We.Retail Journal.
 

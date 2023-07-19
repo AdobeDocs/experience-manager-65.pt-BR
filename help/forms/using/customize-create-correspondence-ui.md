@@ -11,9 +11,9 @@ discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,8 @@ Use as seguintes etapas para criar a estrutura de pastas necessária na ramifica
       >    * Atualizar na sua instância
       >    * Aplicar um hot fix
       >    * Instalar um pacote de recursos
-
+      >    
+      >
 
    1. Clique em **OK**. A pasta css é criada no caminho especificado.
 
@@ -140,7 +141,7 @@ Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado p
 
    A caixa de diálogo Editar jcr:data é exibida.
 
-   Agora clique na pasta newlogo.png, clique duas vezes em jcr:content (opção dim) e defina o tipo nt:resource. Se não estiver presente, crie uma propriedade com o nome jcr:content.
+   Agora clique na pasta newlogo.png, clique duas vezes em jcr:content (opção dim) e defina type nt:resource. Se não estiver presente, crie uma propriedade com o nome jcr:content.
 
 1. Na caixa de diálogo Editar jcr:dados, clique em **Procurar** e selecione o arquivo de imagem que deseja usar como logotipo (aqui CustomLogo.png).
 

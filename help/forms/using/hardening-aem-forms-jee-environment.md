@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '7665'
+source-wordcount: '7669'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Conheça uma variedade de configurações de fortalecimento de segurança para melhorar a segurança do AEM Forms no JEE executado em uma intranet corporativa.
 
-O artigo descreve recomendações e práticas recomendadas para proteger servidores que executam o AEM Forms no JEE. Este não é um documento abrangente de fortalecimento do host para o seu sistema operacional e servidores de aplicativos. Em vez disso, este artigo descreve uma variedade de configurações que fortalecem a segurança que você deve implementar para melhorar a segurança do AEM Forms no JEE que está sendo executado em uma intranet corporativa. No entanto, para garantir que o AEM Forms nos servidores de aplicativos JEE permaneça seguro, você também deve implementar procedimentos de monitoramento de segurança, detecção e resposta.
+O artigo descreve recomendações e práticas recomendadas para proteger servidores que executam o AEM Forms no JEE. Este não é um documento abrangente de fortalecimento do host para seu sistema operacional e servidores de aplicativos. Em vez disso, este artigo descreve uma variedade de configurações que fortalecem a segurança que você deve implementar para melhorar a segurança do AEM Forms no JEE que está sendo executado em uma intranet corporativa. No entanto, para garantir que o AEM Forms nos servidores de aplicativos JEE permaneça seguro, você também deve implementar procedimentos de monitoramento de segurança, detecção e resposta.
 
 O artigo descreve técnicas de proteção que devem ser aplicadas durante os seguintes estágios durante o ciclo de vida de instalação e configuração:
 
@@ -176,7 +176,7 @@ Para executar o servidor de aplicativos no qual o AEM Forms no JEE é implantado
 
    >[!NOTE]
    >
-   >Não é possível alterar essa configuração para o Gerador de PDF.
+   >Não é possível alterar essa configuração para PDF Generator.
 
 1. Selecionar **Início** > **Configurações** > **Ferramentas administrativas** > **Serviços**.
 1. Clique duas vezes no JBoss para AEM Forms no JEE e interrompa o serviço.
@@ -208,7 +208,6 @@ Para executar o servidor de aplicativos no qual o AEM Forms no JEE é implantado
    >
    >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
    >* Linux: /opt/jboss/
-
 
 1. Inicie o servidor de aplicativos.
 
@@ -462,7 +461,7 @@ Esta tabela descreve as técnicas de auditoria e registro que podem ser usadas p
 
 ### Permitir que um usuário não administrador execute o PDF Generator
 
-Você pode permitir que um usuário não administrador use o Gerador de PDF. Normalmente, apenas usuários com privilégios administrativos podem usar o Gerador de PDF. Execute as seguintes etapas para permitir que um usuário não administrador execute o PDF Generator:
+Você pode permitir que um usuário não administrador use o PDF Generator. Normalmente, somente usuários com privilégios administrativos podem usar o PDF Generator. Execute as seguintes etapas para permitir que um usuário não administrador execute o PDF Generator:
 
 1. Crie um nome de variável de ambiente PDFG_NON_ADMIN_ENABLED.
 
@@ -514,7 +513,7 @@ Determinados URLs são destacados como aplicações Web voltadas para o usuário
   </tr> 
   <tr> 
    <td><p>/pdfgui/*</p> </td> 
-   <td><p>Aplicativo web de administração do Gerador de PDF</p> </td> 
+   <td><p>aplicativo web de administração de PDF Generator</p> </td> 
    <td><p>Sim</p> </td> 
    <td><p>Sim</p> </td> 
   </tr> 
@@ -902,7 +901,7 @@ Esta seção descreve as portas default (e intervalos de configuração alternat
  <thead> 
   <tr> 
    <th><p>Propósito</p> </th> 
-   <th><p>Porta </p> </th> 
+   <th><p>Porta</p> </th> 
   </tr> 
  </thead> 
  <tbody>
@@ -923,7 +922,7 @@ Esta seção descreve as portas default (e intervalos de configuração alternat
  <thead> 
   <tr> 
    <th><p>Propósito</p> </th> 
-   <th><p>Porta </p> </th> 
+   <th><p>Porta</p> </th> 
   </tr> 
  </thead> 
  <tbody>
@@ -1030,7 +1029,6 @@ A instalação completa do AEM Forms no JEE configura uma conta de serviço, por
    >
    >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
    >* Linux: /opt/jboss/.
-
 
 1. Inicie o serviço do servidor de aplicativos.
 

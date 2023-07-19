@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 17%
+source-wordcount: '308'
+ht-degree: 18%
 
 ---
 
@@ -30,7 +30,6 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 >* Windows: pressione Ctrl e clique nos componentes necessários.
 >* Mac: pressione Cmd e clique nos componentes necessários.
 >
-
 
 ## Edição de atalhos de teclado {#editing-keyboard-shortcuts}
 
@@ -64,7 +63,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-C</code></strong></td>
-   <td>Copiar os parágrafos selecionados.</td>
+   <td>Copiar parágrafos selecionados.</td>
   </tr>
   <tr>
    <td> </td>

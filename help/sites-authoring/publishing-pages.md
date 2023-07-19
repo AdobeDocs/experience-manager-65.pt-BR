@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1663'
 ht-degree: 57%
 
 ---
@@ -29,15 +29,14 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >Alguns termos relacionados à publicação podem ser confundidos:
 >
 >* **Publicar/Desfazer a publicação**
-   >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
+>  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
 >
 >* **Ativar / Desativar**
-   >  Estes termos são sinônimos de publicar/desfazer a publicação.
+>  Estes termos são sinônimos de publicar/desfazer a publicação.
 >
 >* **Replicar / Replicação**
-   >  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
+>  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
 >
-
 
 >[!NOTE]
 >
@@ -47,7 +46,6 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >* Este [o fluxo de trabalho pode ter sido personalizado](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) pela sua equipe de desenvolvimento.
 >* Uma mensagem será exibida brevemente para notificar que o fluxo de trabalho foi disparado.
 >
-
 
 ## Publicar páginas {#publishing-pages-1}
 
@@ -270,14 +268,14 @@ Você pode usar o [Gerenciar publicação](/help/sites-authoring/publishing-page
 
 * Nas [informações de visão geral de recursos do console de sites](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   ![screen-shot_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
+  ![screen-shot_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
 
-   O status da publicação é mostrado nas exibições [cartão](/help/sites-authoring/basic-handling.md#card-view), [coluna](/help/sites-authoring/basic-handling.md#column-view) e [lista](/help/sites-authoring/basic-handling.md#list-view) do console de sites.
+  O status da publicação é mostrado nas exibições [cartão](/help/sites-authoring/basic-handling.md#card-view), [coluna](/help/sites-authoring/basic-handling.md#column-view) e [lista](/help/sites-authoring/basic-handling.md#list-view) do console de sites.
 
 * Na [linha do tempo](/help/sites-authoring/basic-handling.md#timeline)
 
-   ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
+  ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
 
 * No menu [Informações da página](/help/sites-authoring/author-environment-tools.md#page-information), ao editar uma página
 
-   ![screen_shot_2018-03-21at154456](assets/screen_shot_2018-03-21at154456.png)
+  ![screen_shot_2018-03-21at154456](assets/screen_shot_2018-03-21at154456.png)

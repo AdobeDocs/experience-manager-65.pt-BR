@@ -12,9 +12,9 @@ discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
 feature: Language Copy
 exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ O procedimento a seguir usa a interface clássica do usuário para criar uma rai
 
       * O código de idioma compatível é o código de duas letras em minúsculas, conforme definido pela ISO-639-1
       * O código do país compatível é o código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166
+
    1. Selecione o Modelo e clique em Criar.
 
    ![newpagefr](assets/newpagefr.png)
@@ -54,7 +55,7 @@ O procedimento a seguir usa a interface clássica do usuário para criar uma rai
    |---|---|
    | auto | Usa o comportamento das páginas principais |
    | ignorar | Não cria uma cópia desta página e de suas páginas secundárias |
-   | `<language>+` (por exemplo, Francês+) | Copia a página e todos os seus filhos desse idioma |
+   | `<language>+` (por exemplo, francês+) | Copia a página e todos os seus filhos desse idioma |
    | `<language>` (por exemplo, francês) | Copia somente a página desse idioma |
 
 1. Clique em OK para fechar a caixa de diálogo.

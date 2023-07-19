@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2482'
 ht-degree: 2%
 
 ---
@@ -53,11 +53,11 @@ Para obter instruções detalhadas, passo a passo, sobre como habilitar a sincro
 
 * **pacote vlt**
 
-   É um arquivo zip de todas as alterações feitas em um editor e precisam ser distribuídas entre editores. As alterações em um publicador geram eventos que são escolhidos pelo ouvinte de eventos de alteração. Isso cria um pacote vlt que contém todas as alterações.
+  É um arquivo zip de todas as alterações feitas em um editor e precisam ser distribuídas entre editores. As alterações em um publicador geram eventos que são escolhidos pelo ouvinte de eventos de alteração. Isso cria um pacote vlt que contém todas as alterações.
 
 * **pacote de distribuição**
 
-   Ele contém informações de distribuição do Sling. Essa é a informação sobre onde o conteúdo precisa ser distribuído e quando foi distribuído por último.
+  Ele contém informações de distribuição do Sling. Essa é a informação sobre onde o conteúdo precisa ser distribuído e quando foi distribuído por último.
 
 ## O Que Acontece Quando... {#what-happens-when}
 
@@ -124,13 +124,14 @@ Para configurar os agentes de sincronização do Apache Sling:
 
    * Selecione a configuração existente a ser aberta para edição (ícone de lápis).
 
-      Verificar nome: **socialpubsync**
+     Verificar nome: **socialpubsync**
 
    * Marque a caixa de seleção **Ativado**.
    * Selecionar **Use Várias filas.**
    * Especificar **Endpoints do exportador** e **Endpoints do importador** (você pode adicionar mais endpoints de exportador e importador).
 
-      Esses endpoints definem de onde você deseja obter o conteúdo e onde você deseja enviar o conteúdo. O autor busca o conteúdo do endpoint do exportador especificado e o envia por push para os editores (diferente do editor do qual buscou o conteúdo).
+     Esses endpoints definem de onde você deseja obter o conteúdo e onde você deseja enviar o conteúdo. O autor busca o conteúdo do endpoint do exportador especificado e o envia por push para os editores (diferente do editor do qual buscou o conteúdo).
+
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
 ### Distribuição do Adobe Granite - Provedor secreto de transporte de senha criptografada {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
@@ -216,7 +217,7 @@ Para alterar o intervalo de pesquisa:
 
    * Selecione a configuração existente a ser aberta para edição (ícone de lápis).
 
-      Verificar **socialpubsync -scheduled-trigger**
+     Verificar **socialpubsync -scheduled-trigger**
 
    * Defina o Intervalo em Segundos com o intervalo desejado e salve.
 

@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1293'
 ht-degree: 4%
 
 ---
@@ -49,11 +49,11 @@ No **[!UICONTROL Classificações permitidas]** especifique a lista completa de 
 
 * **[!UICONTROL Classificações permitidas]**
 
-   Uma lista de classificações que um membro pode escolher.
+  Uma lista de classificações que um membro pode escolher.
 
-   Use os botões seta para cima, seta para baixo e excluir para modificar as seleções visíveis.
+  Use os botões seta para cima, seta para baixo e excluir para modificar as seleções visíveis.
 
-   Clique em **[!UICONTROL Adicionar item]** para adicionar outra opção de classificação.
+  Clique em **[!UICONTROL Adicionar item]** para adicionar outra opção de classificação.
 
 No **[!UICONTROL Classificações necessárias]** insira novamente os itens da lista de **[!UICONTROL Classificações permitidas]** que devem ser classificados. Se um item for especificado somente na guia Classificações Permitidas, ele poderá ser deixado desmarcado quando for enviado pelo membro.
 
@@ -63,11 +63,11 @@ No site, as classificações necessárias são marcadas com um asterisco. Se um 
 
 * **[!UICONTROL Classificações necessárias]**
 
-   Um subconjunto de classificações permitidas, indicando quais classificações são necessárias.
+  Um subconjunto de classificações permitidas, indicando quais classificações são necessárias.
 
-   Use os botões seta para cima, seta para baixo e excluir para modificar as seleções visíveis.
+  Use os botões seta para cima, seta para baixo e excluir para modificar as seleções visíveis.
 
-   Clique em **[!UICONTROL Adicionar item]** para adicionar outra opção de resposta.
+  Clique em **[!UICONTROL Adicionar item]** para adicionar outra opção de resposta.
 
 >[!NOTE]
 >
@@ -79,35 +79,35 @@ No **[!UICONTROL Resenhas]** especifique como as revisões são tratadas.
 
 * **[!UICONTROL Permitir respostas]**
 
-   Se marcado, permitir respostas para revisões. O padrão está desmarcado.
+  Se marcado, permitir respostas para revisões. O padrão está desmarcado.
 
 * **[!UICONTROL Fechado]**
 
-   Se marcada, a revisão será fechada para novas revisões e respostas. O padrão está desmarcado.
+  Se marcada, a revisão será fechada para novas revisões e respostas. O padrão está desmarcado.
 
 * **[!UICONTROL Permitir carregamento de arquivos]**
 
-   Se marcado, permite que os anexos de arquivo sejam carregados para revisão. O padrão está desmarcado.
+  Se marcado, permite que os anexos de arquivo sejam carregados para revisão. O padrão está desmarcado.
 
 * **Tamanho máximo do arquivo**
 
-   Relevante apenas se **[!UICONTROL Permitir carregamentos de arquivo]** está marcado. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 10 MB.
+  Relevante apenas se **[!UICONTROL Permitir carregamentos de arquivo]** está marcado. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 10 MB.
 
 * **[!UICONTROL Comprimento máximo da mensagem de]**
 
-   Número máximo de caracteres que podem ser inseridos na caixa de texto. O padrão é 4.096 caracteres.
+  Número máximo de caracteres que podem ser inseridos na caixa de texto. O padrão é 4.096 caracteres.
 
 * **[!UICONTROL Tipos de arquivos permitidos]**
 
-   Relevante apenas se **[!UICONTROL Permitir carregamentos de arquivo]** está marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
+  Relevante apenas se **[!UICONTROL Permitir carregamentos de arquivo]** está marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não serão permitidos. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
 
 * **[!UICONTROL Editor de rich text]**
 
-   Se marcados, os posts podem ser inseridos com marcação. O padrão está desmarcado.
+  Se marcados, os posts podem ser inseridos com marcação. O padrão está desmarcado.
 
 * **[!UICONTROL Permitir votação]**
 
-   Se marcado, inclui o recurso Votação de um tópico. O padrão está desmarcado.
+  Se marcado, inclui o recurso Votação de um tópico. O padrão está desmarcado.
 
 No **[!UICONTROL Moderação de usuário]** especifique como as revisões publicadas são gerenciadas. Para obter mais informações, consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
 
@@ -115,39 +115,39 @@ No **[!UICONTROL Moderação de usuário]** especifique como as revisões public
 
 * **[!UICONTROL Pré-moderação]**
 
-   Se marcadas, as revisões devem ser aprovadas antes de serem exibidas em um site de publicação. O padrão está desmarcado.
+  Se marcadas, as revisões devem ser aprovadas antes de serem exibidas em um site de publicação. O padrão está desmarcado.
 
 * **[!UICONTROL Excluir análises]**
 
-   Se marcado, o membro que postou a revisão receberá a capacidade de excluí-lo. O padrão está desmarcado.
+  Se marcado, o membro que postou a revisão receberá a capacidade de excluí-lo. O padrão está desmarcado.
 
 * **[!UICONTROL Negar análises]**
 
-   Se marcado, permitir que os moderadores neguem comentários. O padrão está desmarcado.
+  Se marcado, permitir que os moderadores neguem comentários. O padrão está desmarcado.
 
 * **[!UICONTROL Fechar/reabrir análises]**
 
-   Se marcado, permite que os moderadores fechem e reabram os comentários. O padrão está desmarcado.
+  Se marcado, permite que os moderadores fechem e reabram os comentários. O padrão está desmarcado.
 
 * **[!UICONTROL Sinalizar análises]**
 
-   Se marcado, permite que os membros sinalizem revisões como inapropriadas. O padrão está desmarcado.
+  Se marcado, permite que os membros sinalizem revisões como inapropriadas. O padrão está desmarcado.
 
 * **[!UICONTROL Sinalizar lista de motivo]**
 
-   Se marcado, permitirá que os membros escolham, em uma lista suspensa, seu motivo para sinalizar uma revisão como inapropriado. O padrão está desmarcado.
+  Se marcado, permitirá que os membros escolham, em uma lista suspensa, seu motivo para sinalizar uma revisão como inapropriado. O padrão está desmarcado.
 
 * **[!UICONTROL Motivo personalizado de sinalização]**
 
-   Se marcado, permite que os membros insiram seu próprio motivo para sinalizar uma revisão como inapropriada. O padrão está desmarcado.
+  Se marcado, permite que os membros insiram seu próprio motivo para sinalizar uma revisão como inapropriada. O padrão está desmarcado.
 
 * **[!UICONTROL Limite de moderação]**
 
-   Insira o número de vezes que uma revisão deve ser marcada por membros antes que os moderadores sejam notificados. O padrão é uma vez (1).
+  Insira o número de vezes que uma revisão deve ser marcada por membros antes que os moderadores sejam notificados. O padrão é uma vez (1).
 
 * **[!UICONTROL Limite de sinalização]**
 
-   Insira o número de vezes que uma revisão deve ser sinalizada antes de ser ocultada da visualização pública. Esse número deve ser maior ou igual ao **[!UICONTROL Limite de moderação]**. O padrão é 5.
+  Insira o número de vezes que uma revisão deve ser sinalizada antes de ser ocultada da visualização pública. Esse número deve ser maior ou igual ao **[!UICONTROL Limite de moderação]**. O padrão é 5.
 
 ### Adicionar um resumo de revisão (exibir) a uma página {#adding-a-review-summary-display-to-a-page}
 
@@ -179,13 +179,13 @@ No **[!UICONTROL Resumo da análise]** guia
 
 * `Review Path`
 
-   digite ou procure a instância colocada do `reviews`componente para resumir, por exemplo, se adicionado à Página da Web do [Site do Geometrixx Engage,](getting-started.md) o caminho seria:
+  digite ou procure a instância colocada do `reviews`componente para resumir, por exemplo, se adicionado à Página da Web do [Site do Geometrixx Engage,](getting-started.md) o caminho seria:
 
-   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
+  `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
-   Se marcado, incluirá a exibição de um gráfico de barras indicando quantas de cada classificação de estrelas há nas revisões sendo resumidas. O padrão está desmarcado.
+  Se marcado, incluirá a exibição de um gráfico de barras indicando quantas de cada classificação de estrelas há nas revisões sendo resumidas. O padrão está desmarcado.
 
 ### Alterar para um tipo de revisão personalizada {#changing-to-a-custom-review-type}
 
@@ -201,19 +201,19 @@ No **[!UICONTROL Tipos de recursos]** especifique o resourceType personalizado p
 
 * **[!UICONTROL Tipo de recursos de comentários]**
 
-   Navegue até o resourceType de uma extensão `comment`componente (comentário único) em /apps. Por exemplo, `/apps/social/commons/components/hbs/comments/comment`.
+  Navegue até o resourceType de uma extensão `comment`componente (comentário único) em /apps. Por exemplo, `/apps/social/commons/components/hbs/comments/comment`.
 
-   Esse recurso identificará o resourceType do UGC criado quando um visitante publica um comentário.
+  Esse recurso identificará o resourceType do UGC criado quando um visitante publica um comentário.
 
 * **[!UICONTROL Tipo de recursos para pesquisa]**
 
-   Navegue até o resourceType de uma extensão `voting`componente em /apps. Por exemplo, `/apps/social/components/hbs/voting`.
+  Navegue até o resourceType de uma extensão `voting`componente em /apps. Por exemplo, `/apps/social/components/hbs/voting`.
 
-   Esse recurso identificará o tipo de recurso do UGC criado quando um visitante posta um voto.
+  Esse recurso identificará o tipo de recurso do UGC criado quando um visitante posta um voto.
 
 * **[!UICONTROL Tipo de recursos de comentários do sistema]**
 
-   Navegue até o resourceType de uma extensão `comments`componente (Sistema de comentários) em /apps. Deixe em branco, a menos que o modelo de página [inclui dinamicamente](scf.md#add-or-include-a-communities-component) o Sistema de comentários no script subjacente, em vez de ser adicionado à página como um recurso (nó comentários). Saiba mais lendo sobre o [{{include}} auxiliar](handlebars-helpers.md#include).
+  Navegue até o resourceType de uma extensão `comments`componente (Sistema de comentários) em /apps. Deixe em branco, a menos que o modelo de página [inclui dinamicamente](scf.md#add-or-include-a-communities-component) o Sistema de comentários no script subjacente, em vez de ser adicionado à página como um recurso (nó comentários). Saiba mais lendo sobre o [{{include}} auxiliar](handlebars-helpers.md#include).
 
 ## Experiência de visitante do site {#site-visitor-experience}
 

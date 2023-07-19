@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2139'
 ht-degree: 2%
 
 ---
@@ -137,7 +137,7 @@ O CRXDE Lite oferece a seguinte funcionalidade:
   </tr>
   <tr>
    <td>Widget de logon<br /> </td>
-   <td><p>Exibe os usuários conectados no momento e o espaço de trabalho no qual eles estão conectados, por exemplo, admin@crx.default.</p> <p>Clique nele para fazer logon ou refazer logon como um usuário específico. Se você não especificar um espaço de trabalho para fazer logon, você será conectado ao espaço de trabalho padrão, crx.default.</p> <p>Se quiser navegar pelo repositório como um usuário anônimo, use <strong>anônimo</strong> como o nome de logon e qualquer senha (por exemplo, um espaço ou um ponto).<br /> </p> <p>Se sua autorização não for mais válida (por exemplo, se tiver expirado), o widget de logon exibirá "<strong>Não autorizado - Login...</strong>". Clique para fazer logon novamente.</p> </td>
+   <td><p>Exibe os usuários conectados no momento e o espaço de trabalho no qual eles estão conectados, por exemplo, admin@crx.default.</p> <p>Clique nele para fazer logon ou refazer logon como um usuário específico. Se você não especificar um espaço de trabalho para fazer logon, você será conectado ao espaço de trabalho padrão, crx.default.</p> <p>Se quiser navegar pelo repositório como um usuário anônimo, use <strong>anônimo</strong> como o nome de logon e qualquer senha (por exemplo, um espaço ou um ponto).<br /> </p> <p>Se a sua autorização não for mais válida (por exemplo, se tiver expirado), o widget de login exibirá "<strong>Não autorizado - Login...</strong>". Clique para fazer logon novamente.</p> </td>
   </tr>
  </tbody>
 </table>

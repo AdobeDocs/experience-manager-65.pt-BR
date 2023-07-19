@@ -2,9 +2,9 @@
 title: Criação e organização de páginas com AEM
 description: Como criar e gerenciar páginas com AEM
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2526'
 ht-degree: 62%
 
 ---
@@ -37,10 +37,10 @@ A estrutura de um site pode ser considerada como uma estrutura em árvore que ar
 O exemplo a seguir mostra o site We.Retail, onde uma página de shorts de caminhada ( `desert-sky-shorts`) é acessada:
 
 * Ambiente de autor
-   `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+  `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Ambiente de publicação
-   `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+  `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 Dependendo da configuração da sua instância, o uso de `/content` pode ser opcional no ambiente de publicação.
 
@@ -102,7 +102,7 @@ O **Título** da página e o **Nome** podem ser criados separadamente, mas estã
 >
 >Ao definir um nome de página, um princípio básico é manter o nome da página curto, mas tão expressivo e memorável quanto possível para facilitar a compreensão do leitor. Consulte o [guia de estilo W3C](https://www.w3.org/Provider/Style/TITLE.html) no elemento `title`para obter mais informações.
 >
->Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs de até um determinado comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
+>Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs com um limite de comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
 
 Ao criar uma nova página, o AEM [validará o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
 
@@ -206,12 +206,14 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
    * **Título**:
 
       * Ele é exibido ao usuário e é obrigatório.
+
    * **Nome**:
 
       * Usado para gerar o URI. Se não especificado, o nome é derivado do título.
       * Quando você fornece um **Nome** de página ao criar uma nova página, o AEM valida[ esse nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
 
       * Você **não é possível enviar caracteres inválidos** no **Nome** campo. Quando o AEM detectar caracteres inválidos, o campo será realçado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
+
    >[!NOTE]
    >
    >Consulte [Convenções de nomenclatura da página](#page-naming-conventions).
@@ -338,6 +340,7 @@ O AEM oferece a funcionalidade de atualizar qualquer link interno que se refira 
 
       * Para selecionar o destino, clique em sua miniatura.
       * Clique em **Avançar** para continuar.
+
    * Uso **Voltar** para retornar à especificação do nome da página.
 
    >[!NOTE]
@@ -383,7 +386,7 @@ No entanto, se o número de páginas afetadas estiver acima de um limite definid
       * **Agora** a execução do trabalho assíncrono começa imediatamente.
       * **Mais tarde** permite que o usuário defina quando o trabalho assíncrono será iniciado.
 
-         ![Mover página assíncrona](assets/asynchronous-page-move.png)
+        ![Mover página assíncrona](assets/asynchronous-page-move.png)
 
 O status de trabalhos assíncronos pode ser verificado no painel [**Status de trabalhos assíncronos** ](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação global** -> **Ferramentas** -> **Operações** -> **Trabalhos**
 
@@ -438,7 +441,6 @@ Você pode criar pastas para ajudar a organizar seus arquivos e páginas.
 >* As ações padrão de mover, copiar, colar, excluir, publicar, cancelar a publicação e exibir/editar propriedades podem ser executadas em uma pasta.
 >* As pastas não estão disponíveis para seleção em uma live copy.
 >
-
 
 1. Abra o **Sites** e navegue até o local desejado.
 1. Para abrir a lista de opções, selecione **Criar** na barra de ferramentas

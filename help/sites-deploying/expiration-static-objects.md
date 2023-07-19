@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Todos os arquivos, que não são dinâmicos e que não mudam com o tempo, podem 
    </Location>
    ```
 
-   Isso permite que o cache intermediário (por exemplo, o cache do navegador) armazene arquivos CSS, Javascript, PNG e GIF por até um mês, até que expirem. Isso significa que eles não precisam ser solicitados do AEM ou do servidor Web, mas podem permanecer no cache do navegador.
+   Isso permite que o cache intermediário (por exemplo, o cache do navegador) armazene arquivos CSS, JavaScript, PNG e GIF por até um mês, até que expirem. Isso significa que eles não precisam ser solicitados do AEM ou do servidor Web, mas podem permanecer no cache do navegador.
 
    Outras seções do site não devem ser armazenadas em cache em uma instância de autor, pois estão sujeitas a alterações a qualquer momento.
 
@@ -75,7 +75,7 @@ Todos os arquivos, que não são dinâmicos e que não mudam com o tempo, podem 
    </Location>
    ```
 
-   Isso permite que o cache intermediário (por exemplo, o cache do navegador) armazene arquivos CSS, Javascript, PNG e GIF por até um dia em caches de cliente. Embora este exemplo ilustre as configurações globais para tudo abaixo `/content` e `/etc/designs`, você deve torná-lo mais granular.
+   Isso permite que o cache intermediário (por exemplo, o cache do navegador) armazene arquivos CSS, JavaScript, PNG e GIF por até um dia nos caches do cliente. Embora este exemplo ilustre as configurações globais para tudo abaixo `/content` e `/etc/designs`, você deve torná-lo mais granular.
 
    Dependendo da frequência com que seu site é atualizado, você também pode considerar o armazenamento em cache de páginas de HTML. Um período de tempo razoável seria de 1 hora:
 

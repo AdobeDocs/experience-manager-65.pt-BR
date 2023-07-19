@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '6845'
 ht-degree: 0%
@@ -91,7 +91,7 @@ O efeito de uma única política CUG na avaliação da permissão pode ser resum
 * No entanto, não afeta irmãos nem ancestrais do nó controlado por acesso;
 * A herança de um determinado CUG é interrompida em um CUG aninhado.
 
-#### Práticas recomendadas     {#best-practices}
+#### Práticas recomendadas {#best-practices}
 
 As seguintes práticas recomendadas devem ser consideradas para definir o acesso de leitura restrito por meio de CUGs:
 
@@ -169,7 +169,7 @@ A variável `LoginPathProvider` conforme implementado pelo novo suporte de requi
 >
 >A avaliação só é executada para solicitações associadas a recursos que estão localizados com nos caminhos compatíveis configurados. Para quaisquer outras solicitações, as maneiras alternativas de determinar o caminho de logon serão avaliadas.
 
-#### Práticas recomendadas     {#best-practices-1}
+#### Práticas recomendadas {#best-practices-1}
 
 As seguintes práticas recomendadas devem ser consideradas ao definir os requisitos de autenticação:
 
@@ -229,7 +229,7 @@ while (it.hasNext()) {
 }
 
 if (cugPolicy == null) {
-   log.debug("no applicable policy"); // path not supported or no applicable policy (e.g.
+   log.debug("no applicable policy"); // path not supported or no applicable policy (for example,
                                                    // the policy was set before)
    return;
 }

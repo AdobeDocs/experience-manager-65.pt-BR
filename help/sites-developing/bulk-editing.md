@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 5%
+source-wordcount: '415'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +26,7 @@ Devido à possibilidade de valores diferentes, as propriedades de página não s
 * Determinados campos normalmente são exclusivos; por exemplo, um título de página. Você deve decidir se é significativo ativar esses campos para edição de itens em massa, quando um valor será aplicado.
 * Determinados campos podem ter vários valores - isso precisa de representação significativa ao renderizar.
 
-   Por exemplo, uma caixa de seleção indicando &quot;Pronto para publicação&quot;. Isso pode ter vários valores antes da edição em massa (por exemplo, pronto, em revisão, em andamento).
+  Por exemplo, uma caixa de seleção indicando &quot;Pronto para publicação&quot;. Isso pode ter vários valores antes da edição em massa (por exemplo, pronto, em revisão, em andamento).
 
 >[!CAUTION]
 >
@@ -36,7 +36,6 @@ Devido à possibilidade de valores diferentes, as propriedades de página não s
 >* Não disponível para páginas em uma live copy.
 >* Disponível somente para páginas com o mesmo tipo de recurso.
 >
-
 
 >[!NOTE]
 >
@@ -55,7 +54,6 @@ Devido à possibilidade de valores diferentes, as propriedades de página não s
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
 >
-
 
 Os campos são ativados no componente de página (*não* no modelo):
 
@@ -92,6 +90,5 @@ Os campos são ativados no componente de página (*não* no modelo):
    >
    >    1. Recriar o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
    >    1. Fazer alterações em `/apps`
-
 
 1. Selecionar **Salvar tudo** para continuar com suas atualizações.

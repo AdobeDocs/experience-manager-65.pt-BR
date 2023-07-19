@@ -8,9 +8,9 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 787c0c25da2258f234d3c821038d62bf8ef68932
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2348'
 ht-degree: 3%
 
 ---
@@ -70,16 +70,16 @@ Consulte [Configurar o Dynamic Media Cloud Services](/help/assets/config-dms7.md
       * [Organizar ativos digitais](/help/assets/organize-assets.md#organize-digital-assets).
       * [Pesquisar ativos 3D](/help/assets/search-assets.md).
       * [Usar predicados personalizados para filtrar os resultados da pesquisa](/help/assets/search-assets.md#custompredicates).
+
    * Exibir ativos 3D
 
       * [Exibir e interagir com ativos 3D](#viewing-three-d-assets).
       * [Gerenciar a predefinição do visualizador Dimensional](/help/assets/managing-viewer-presets.md).
+
    * Trabalhar com metadados de ativos 3D
 
       * [Gerenciar metadados para ativos digitais](/help/assets/metadata.md).
       * [Esquemas de metadados](/help/assets/metadata-schemas.md).
-
-
 
 1. **Publicar ativos 3D**
 
@@ -125,11 +125,11 @@ Consulte também [Visualizar ativos usando a interface de software](/help/assets
    | Exibir | Descrição | Ação do mouse | Ação da tela de toque |
    | --- | --- | --- | --- |
    | **Girar a câmera** | Gire a visualização em torno da cena 3D e dos objetos. | Clique com o botão esquerdo + arraste. | Pressione com um dedo + arraste. |
-   | **Deslocar a câmera** | Desloque sua exibição para a esquerda, direita, para cima ou para baixo. | Clique com o botão direito + arraste. | Pressione com dois dedos + arraste. |
+   | **Deslocar a câmera** | Desloque sua exibição para a esquerda, direita, para cima ou para baixo. | Clique com o botão direito do mouse e arraste. | Pressione com dois dedos + arraste. |
    | **Aplicar zoom à sua câmera** | Mova para dentro e para fora das áreas na cena 3D. | Roda de rolagem. | Pinça de dois dedos. |
    | **Recentralize sua câmera** | Recentralize sua câmera em um ponto sobre um objeto na cena 3D. | Clique duas vezes em. | Toque duas vezes. |
-   | **Redefinir** | Próximo ao canto inferior direito da página, selecione o ícone Redefinir para restaurar o ponto de destino de exibição para o centro do ativo 3D. A redefinição também move a câmera para mais perto ou mais longe, para mostrar o ativo em sua totalidade e em um tamanho de visualização razoável. |  |  |
-   | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, selecione o ícone Tela cheia. |  |  |
+   | **Redefinir** | Próximo ao canto inferior direito da página, selecione o ícone Redefinir para restaurar o ponto de destino de exibição para o centro do ativo 3D. A redefinição também move a câmera para mais perto ou mais longe, para mostrar o ativo em sua totalidade e em um tamanho de visualização razoável. |   |   |
+   | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, selecione o ícone Tela cheia. |   |   |
 
 1. No canto superior direito da página, selecione **[!UICONTROL Fechar]** para retornar à página Ativos.
 
@@ -150,7 +150,7 @@ Consulte também [Visualizar ativos usando a interface de software](/help/assets
    * Próximo ao canto superior direito da página, selecione **[!UICONTROL Visualizar]** para inserir **[!UICONTROL Visualizar]** modo.
    * Excluir `/editor.html` no URL da página no navegador.
 
-Um ativo 3D totalmente interativo, conforme exibido na    ![Ativo 3D exibido dentro do componente de Mídia 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
+   ![Ativo 3D exibido dentro do componente de Mídia 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
 Um ativo 3D totalmente interativo, conforme exibido na **[!UICONTROL Visualizar]** modo.
 
 1. Durante a **[!UICONTROL Visualizar]** , execute um dos procedimentos a seguir:
@@ -158,11 +158,11 @@ Um ativo 3D totalmente interativo, conforme exibido na **[!UICONTROL Visualizar]
    | Exibir | Descrição | Ação do mouse | Ação da tela de toque |
    | --- | --- | --- | --- |
    | **Girar a câmera** | Gire a visualização em torno da cena 3D e dos objetos. | Clique com o botão esquerdo + arraste. | Pressione com um dedo + arraste. |
-   | **Deslocar a câmera** | Desloque sua exibição para a esquerda, direita, para cima ou para baixo. | Clique com o botão direito + arraste. | Pressione com dois dedos + arraste. |
+   | **Deslocar a câmera** | Desloque sua exibição para a esquerda, direita, para cima ou para baixo. | Clique com o botão direito do mouse e arraste. | Pressione com dois dedos + arraste. |
    | **Aplicar zoom à sua câmera** | Mova para dentro e para fora das áreas na cena 3D. | Roda de rolagem. | Pinça de dois dedos. |
    | **Recentralize sua câmera** | Recentralize sua câmera em um ponto sobre um objeto na cena 3D. | Clique duas vezes em. | Toque duas vezes. |
-   | **Redefinir** | Próximo ao canto inferior direito da página, selecione o ícone Redefinir para restaurar o ponto de destino de exibição para o centro do ativo 3D. A redefinição também move a câmera para mais perto ou mais longe, para mostrar o ativo em sua totalidade e em um tamanho de visualização razoável. |  |  |
-   | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, selecione o ícone Tela cheia. |  |  |
+   | **Redefinir** | Próximo ao canto inferior direito da página, selecione o ícone Redefinir para restaurar o ponto de destino de exibição para o centro do ativo 3D. A redefinição também move a câmera para mais perto ou mais longe, para mostrar o ativo em sua totalidade e em um tamanho de visualização razoável. |   |   |
+   | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, selecione o ícone Tela cheia. |   |   |
 
 ## Como trabalhar com o componente de Mídia 3D {#working-with-three-d-media-component}
 
@@ -287,8 +287,8 @@ Use os dois métodos a seguir para publicar ativos 3D do Dynamic Media, se você
 
 * **[!UICONTROL URL]** - Utilização **[!UICONTROL URL]** se você estiver usando um sistema de gerenciamento de conteúdo da Web de terceiros e quiser vincular ativos do Dynamic Media 3D às suas páginas da Web usando o visualizador Dimensional.
 
-   Consulte [Vincular URLs ao aplicativo da Web](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+  Consulte [Vincular URLs ao aplicativo da Web](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
 * **[!UICONTROL Incorporar]** - Utilização **[!UICONTROL Incorporar]** quando quiser visualizar um ativo 3D do Dynamic Media incorporado em uma página da Web usando o visualizador Dimensional. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida no **[!UICONTROL Incorporar]** caixa de diálogo.
 
-   Consulte [Incorpore o Vídeo do Dynamic Media, o Visualizador de imagens ou o Visualizador dimensional em uma página da Web](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
+  Consulte [Incorpore o Vídeo do Dynamic Media, o Visualizador de imagens ou o Visualizador dimensional em uma página da Web](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

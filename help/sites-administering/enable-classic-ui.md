@@ -10,16 +10,16 @@ topic-tags: operations
 content-type: reference
 discoiquuid: f3683696-663d-4de5-a388-1709f44d58c1
 exl-id: e25f0b7f-5f12-4363-b302-e51c81035c7d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '85'
 ht-degree: 1%
 
 ---
 
 # Ativação do acesso à interface clássica{#enabling-access-to-classic-ui}
 
-Com a funcionalidade habilitada para toque atingindo a paridade com e e, na verdade, excedendo a interface clássica em muitas áreas do AEM, o acesso à interface clássica por meio da interface habilitada para toque agora está desabilitada por padrão. As páginas a seguir explicam como reativar esse acesso, se necessário.
+Com a funcionalidade habilitada para toque atingindo a paridade com e, na verdade, excedendo a interface clássica em muitas áreas do AEM, o acesso à interface clássica por meio da interface habilitada para toque agora está desabilitada por padrão. As páginas a seguir explicam como reativar esse acesso, se necessário.
 
 * [Editor](/help/sites-administering/enable-classic-ui-editor.md)
 * [Admin Console](/help/sites-administering/enable-classic-ui-admin.md)

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: ccafd49a-5c8a-44eb-9b0c-37070560bb52
 exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---

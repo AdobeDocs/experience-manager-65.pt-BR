@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 8dafa901bc628ee5e4823e9f8811bf4d09b7e072
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1645'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ No AEM, o caminho base é `/content/cq:tags` e o nó raiz é do tipo `cq:Folder`
 
 ### Namespace da tag {#tag-namespace}
 
-Os namespaces permitem agrupar itens. O caso de uso mais comum é um namespace por site (por exemplo, público, interno e portal) ou por aplicativo maior (por exemplo, WCM, Assets, Communities). Mas os namespaces podem ser usados para várias outras necessidades. Os namespaces são usados na interface para mostrar apenas o subconjunto de tags (ou seja, tags de um determinado namespace) que é aplicável ao conteúdo atual.
+Os namespaces permitem agrupar itens. O caso de uso mais típico é um namespace por site (por exemplo, público, interno e portal) ou por aplicativo maior (por exemplo, WCM, Ativos, Comunidades). Mas os namespaces podem ser usados para várias outras necessidades. Os namespaces são usados na interface para mostrar apenas o subconjunto de tags (ou seja, tags de um determinado namespace) que é aplicável ao conteúdo atual.
 
 O namespace da tag é o primeiro nível na subárvore de taxonomia, que é o nó imediatamente abaixo de [nó raiz de taxonomia](#taxonomy-root-node). Um namespace é um nó do tipo `cq:Tag` cujo pai não é um `cq:Tag` tipo de nó.
 

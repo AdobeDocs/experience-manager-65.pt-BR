@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 17c198c744111753ffffcc0758f98859524c964e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '732'
 ht-degree: 9%
 
 ---
@@ -32,7 +32,7 @@ O componente de página de um SPA não fornece os elementos de HTML de seus comp
 
 ## Gerenciamento do modelo de página {#page-model-management}
 
-A resolução e o gerenciamento do modelo de página são delegados a um determinado [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) módulo. O SPA deve interagir com a `PageModelManager` módulo ao ser inicializado para buscar o modelo da página inicial e registrar-se para atualizações de modelo - produzido principalmente quando o autor está editando a página por meio do Editor de páginas. A variável `PageModelManager` pode ser acessado pelo projeto SPA como um pacote npm. Por ser um intérprete entre o AEM e o SPA, o `PageModelManager` deve acompanhar o SPA.
+A resolução e o gerenciamento do modelo de página são delegados a um determinado [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) módulo. O SPA deve interagir com a `PageModelManager` módulo ao ser inicializado para buscar o modelo da página inicial e registrar-se para atualizações de modelo - produzido principalmente quando o autor está editando a página por meio do Editor de páginas. A variável `PageModelManager` pode ser acessado pelo projeto SPA como um pacote npm. Por ser um intérprete entre o AEM e o SPA, o `PageModelManager` deve acompanhar o SPA.
 
 Para permitir que a página seja criada, uma biblioteca do cliente chamada `cq.authoring.pagemodel.messaging` deve ser adicionado para fornecer um canal de comunicação entre o SPA e o editor de páginas. Se o componente da página SPA herdar do componente wcm/core da página, há as seguintes opções para fazer o `cq.authoring.pagemodel.messaging` categoria da biblioteca do cliente disponível:
 

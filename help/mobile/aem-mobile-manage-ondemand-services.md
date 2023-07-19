@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '260'
 ht-degree: 1%
 
 ---
@@ -46,6 +46,7 @@ Com o aplicativo Comprovação por demanda para dispositivo móvel, é possível
 >[!NOTE]
 >
 >O aplicativo Comprovação do AEM é usado para visualizar conteúdo e navegar pelas páginas. Para saber mais detalhes sobre o aplicativo Comprovação, clique em [aqui](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>
 
 ### Avançando {#getting-ahead}
 

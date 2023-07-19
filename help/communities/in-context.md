@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -56,11 +56,11 @@ Para obter mais informações sobre grupos de usuários da comunidade, visite [G
    * Selecionar nova publicação
    * Insira o assunto
 
-      Quando trocar o néctar no Humming Bird Feeder
+     Quando trocar o néctar no Humming Bird Feeder
 
    * Insira o texto do corpo
 
-      Não tenho tido muito sucesso quando penduro um alimentador de beija-flor todo ano. Parece que eles chegam um ou dois dias, então é isso. Eu troco uma vez por semana é muito tempo? Preciso mudá-la antes?
+     Não tenho tido muito sucesso quando penduro um alimentador de beija-flor todo ano. Parece que eles chegam um ou dois dias, então é isso. Eu troco uma vez por semana é muito tempo? Preciso mudá-la antes?
 
    * Selecionar publicação
    * Selecione Fazer logoff
@@ -71,7 +71,7 @@ Para obter mais informações sobre grupos de usuários da comunidade, visite [G
    * Para o Tópico Hummingbird, selecione Ler mais
    * Inserir o comentário para Publicar resposta
 
-      Eu troco as minhas uma vez por semana e as recebo de maio a outubro.
+     Eu troco as minhas uma vez por semana e as recebo de maio a outubro.
 
    * Selecionar resposta
    * Selecione Fazer logoff
@@ -82,7 +82,7 @@ Para obter mais informações sobre grupos de usuários da comunidade, visite [G
    * Para o Tópico Hummingbird, selecione Ler mais
    * Inserir o comentário para Publicar resposta
 
-      Eu vendo néctar e alimentadores - visite https://my.viral.url/
+     Eu vendo néctar e alimentadores - visite https://my.viral.url/
 
    * Selecionar resposta
    * Selecione Fazer logoff

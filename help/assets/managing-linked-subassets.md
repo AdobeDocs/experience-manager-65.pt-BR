@@ -1,13 +1,13 @@
 ---
 title: Gerenciar ativos compostos com referências e várias páginas
-description: Saiba como criar referências a ativos digitais dentro do [!DNL Adobe InDesign], [!DNL Adobe Illustrator], e [!DNL Adobe Photoshop]. Use o recurso Visualizador de páginas para exibir páginas de subativos individuais de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
+description: Saiba como criar referências a ativos digitais dentro do [!DNL Adobe InDesign], [!DNL Adobe Illustrator], e [!DNL Adobe Photoshop]. Use o recurso Visualizador de páginas para exibir páginas individuais de subativos de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---
@@ -144,4 +144,3 @@ As seguintes opções estão disponíveis na barra de ferramentas, no painel à 
 >* [Configurar ações da área de trabalho no Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Criar Objetos Inteligentes Vinculados no Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Inserir gráficos no Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
-

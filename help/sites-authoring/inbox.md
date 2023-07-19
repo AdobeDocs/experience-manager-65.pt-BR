@@ -8,9 +8,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1144'
 ht-degree: 28%
 
 ---
@@ -29,8 +29,8 @@ Você pode receber notificações de várias áreas do AEM, incluindo fluxos de 
    * itens de trabalho que representam as ações que devem ser executadas no conteúdo da página;
 
       * estes são o produto de um fluxo de trabalho **Participante** etapas
-   * itens de falha, para permitir que os administradores tentem novamente a etapa que falhou.
 
+   * itens de falha, para permitir que os administradores tentem novamente a etapa que falhou.
 
 Você recebe essas notificações em sua própria Caixa de entrada, onde pode visualizá-las e tomar medidas.
 
@@ -48,7 +48,6 @@ Você recebe essas notificações em sua própria Caixa de entrada, onde pode vi
 >* [Forms](/help/forms/home.md)
 >
 
-
 ## Caixa de entrada no cabeçalho {#inbox-in-the-header}
 
 Em qualquer um dos consoles, o número atual de itens na sua caixa de entrada é mostrado no cabeçalho. O indicador também pode ser aberto para fornecer acesso rápido às páginas que exigem ação(ões) ou acesso à caixa de entrada:
@@ -65,7 +64,7 @@ O AEM pronto para uso vem pré-carregado com quatro tarefas atribuídas ao grupo
 
 * [Configurar Analytics e Targeting](/help/sites-administering/opt-in.md)
 * [Aplicar a lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md)
-* Permitir coleta de dados estatísticos de uso agregados
+* Habilitar coleta de dados estatísticos de uso agregados
 * [Configurar HTTPS](/help/sites-administering/ssl-by-default.md)
 
 ## Abrir a Caixa de entrada   {#opening-the-inbox}
@@ -114,22 +113,22 @@ Para ambas as exibições (Lista e Calendário), é possível definir as configu
 
 * **Exibição de calendário**
 
-   Para **Exibição de calendário** você pode configurar:
+  Para **Exibição de calendário** você pode configurar:
 
    * **Agrupar por**
    * **Agendamento** ou **Nenhum**
    * **Tamanho do cartão**
 
-   ![wf-92](assets/wf-92.png)
+  ![wf-92](assets/wf-92.png)
 
 * **Exibição de lista**
 
-   Para **Exibição de lista** você pode configurar o mecanismo de classificação:
+  Para **Exibição de lista** você pode configurar o mecanismo de classificação:
 
    * **Classificar campo**
    * **Ordem de classificação**
 
-   ![wf-83](assets/inbox-settings.png)
+  ![wf-83](assets/inbox-settings.png)
 
 ### Caixa de entrada - Controle de administração {#inbox-admin-control}
 
@@ -149,7 +148,7 @@ A opção Admin Control está visível somente para os membros da `administrator
    * **Excluir coluna**: Toque no ![excluir](assets/delete_updated.svg) ícone para excluir a coluna da Caixa de entrada AEM.
    * **Mover Coluna**: arraste o ![mover](assets/move_updated.svg) ícone para mover uma coluna para uma nova posição na Caixa de entrada AEM.
 
-   ![admin-control](assets/admin-control-column-customize.png)
+  ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personalização da marca**
 
@@ -181,6 +180,7 @@ A opção Admin Control está visível somente para os membros da `administrator
       * mostrar as propriedades do item
       * abrir um painel ou assistente apropriado para executar outras ações
       * abrir documentação relacionada
+
    * **Recuar** para uma etapa anterior.
    * Visualizar a carga de um fluxo de trabalho.
    * Criar um projeto a partir do item.
@@ -190,7 +190,6 @@ A opção Admin Control está visível somente para os membros da `administrator
    >Para obter mais informações, consulte:
    >
    >* Itens de fluxo de trabalho - [participar de fluxos de trabalho](/help/sites-authoring/workflows-participating.md)
-
 
 1. Dependendo do item selecionado, uma ação será iniciada; por exemplo:
 
@@ -207,7 +206,6 @@ A opção Admin Control está visível somente para os membros da `administrator
    * Confirme a ação apropriada; por exemplo, Reatribuir.
    * Cancelar a ação.
    * Seta para trás; por exemplo, se um assistente de ação ou uma página de documentação tiver sido aberta, você poderá retornar à Caixa de entrada.
-
 
 ## Criação de uma tarefa {#creating-a-task}
 
@@ -260,9 +258,11 @@ Para determinadas tarefas, você pode criar um [Projeto](/help/sites-authoring/p
       * **Data inicial**
       * **Data de vencimento**
       * **Usuário** e função
+
    * **Avançado**
 
       * **Nome**
+
    >[!NOTE]
    >
    >Consulte [Criação de um projeto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) para obter informações completas.

@@ -11,7 +11,7 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 0%
@@ -1974,7 +1974,7 @@ O código de exemplo a seguir preenche um formulário com uma fonte de dados din
 * `convertDataSource`: converte um `org.w3c.dom.Document` objeto a um `com.adobe.idp.Document` objeto. Este método aceita um `org.w3c.dom.Document` objeto como um parâmetro de entrada e retorna um `com.adobe.idp.Document` objeto.
 * `renderPOForm`: usa a API Java do serviço Forms para renderizar um formulário de ordem de compra dinâmica. A variável `com.adobe.idp.Document` objeto que foi retornado pelo `convertDataSource` é usado para preencher o formulário previamente.
 
-   Todos esses métodos são chamados de dentro do servlet Java `doPost` método. (Consulte [Pré-preenchimento do Forms com layouts fluíveis](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts).)
+  Todos esses métodos são chamados de dentro do servlet Java `doPost` método. (Consulte [Pré-preenchimento do Forms com layouts fluíveis](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts).)
 
 ```java
 /*
@@ -2346,7 +2346,7 @@ O código de exemplo a seguir processa um formulário que contém um script de c
              if (processState == 1)
              {
  
-                 //Write the data back to to the client web browser
+                 //Write the data back to the client web browser
                  ServletOutputStream oOutput = resp.getOutputStream();
                  Document calData = formOut.getOutputContent();
  

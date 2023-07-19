@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '4150'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Você deve mover-se explicitamente de painel a painel usando o `xfa.host.pageUp`
 
 Um autor de formulário especifica se um script é executado no servidor ou no cliente. O serviço Forms cria um ambiente de processamento de eventos distribuído para a execução de inteligência de formulários que pode ser distribuído entre o cliente e o servidor usando o `runAt` atributo. Para obter informações sobre esse atributo ou a criação de scripts em designs de formulário, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_pt)
 
-O serviço Forms pode executar scripts enquanto o formulário está sendo renderizado. Como resultado, você pode preencher previamente um formulário com dados se conectando a um banco de dados ou a serviços da Web que podem não estar disponíveis no cliente. Também é possível definir as funções de um botão `Click` evento a ser executado no servidor para que o cliente arredonde os dados de viagem para o servidor. Isso permite que o cliente execute scripts que podem exigir recursos de servidor, como um banco de dados corporativo, enquanto um usuário interage com um formulário. Para formulários HTML, os scripts formcalc podem ser executados somente no servidor. Como resultado, você deve marcar esses scripts para serem executados em `server` ou `both`.
+O serviço Forms pode executar scripts enquanto o formulário está sendo renderizado. Como resultado, você pode preencher previamente um formulário com dados se conectando a um banco de dados ou a serviços da Web que podem não estar disponíveis no cliente. Também é possível definir as funções de um botão `Click` evento a ser executado no servidor para que o cliente arredonde os dados de viagem para o servidor. Isso permite que o cliente execute scripts que podem exigir recursos de servidor, como um banco de dados empresarial, enquanto um usuário interage com um formulário. Para formulários HTML, os scripts formcalc podem ser executados somente no servidor. Como resultado, você deve marcar esses scripts para serem executados em `server` ou `both`.
 
 É possível criar formulários que se movem entre páginas (painéis) chamando `xfa.host.pageUp` e `xfa.host.pageDown` métodos. Esse script é colocado no `Click` e o evento `runAt` atributo está definido como `Both`. O motivo escolhido `Both` é para que o Adobe Reader ou o Acrobat (para formulários renderizados como PDF) possam alterar páginas sem acessar o servidor e o HTML forms possa alterar páginas ao arredondar os dados para o servidor. Ou seja, um formulário é enviado para o serviço Forms e um formulário é renderizado como HTML com a nova página exibida.
 
@@ -94,6 +94,7 @@ Ao renderizar formulários de HTML que contêm a funcionalidade de navegação d
 Os scripts de formulário localizados no evento form:ready são executados apenas uma vez durante a renderização inicial do formulário e não são executados para recuperações de páginas subsequentes. Por outro lado, o evento form:calculate é executado para cada navegação de página em que o formulário é renderizado.
 
 >[!NOTE]
+>
 Em um formulário multipáginas, as alterações feitas pelo JavaScript em uma página não serão mantidas se você for para uma página diferente.
 
 Você pode chamar scripts personalizados antes de enviar um formulário. Esse recurso funciona em todos os navegadores disponíveis. No entanto, ele pode ser usado somente quando os usuários renderizam o formulário HTML que tem sua `Output Type` propriedade definida como `Form Body`. Não funcionará quando o `Output Type` é `Full HTML`. Consulte Configuração de formulários na ajuda de administração para ver as etapas de configuração desse recurso.
@@ -167,6 +168,7 @@ O script a seguir mantém o `fillColor` de um campo com base no valor de `hidden
 ```
 
 >[!NOTE]
+>
 Os objetos estáticos não são exibidos em um formulário HTML renderizado quando aninhados dentro de uma célula da tabela. Por exemplo, um círculo e um retângulo aninhados dentro de uma célula de tabela não são exibidos em uma forma de HTML de renderização. No entanto, esses mesmos objetos estáticos são exibidos corretamente quando localizados fora da tabela.
 
 ## Assinatura digital de formulários de HTML {#digitally-signing-html-forms}
@@ -189,6 +191,7 @@ Você pode renderizar um formulário de HTML completo que esteja em conformidade
 É recomendável limitar o uso das regras de validação para campos de formulário ao renderizar o formulário como um formulário HTML. Algumas regras de validação podem não ser compatíveis com formulários HTML. Por exemplo, quando um padrão de validação de MM-DD-AAAA é aplicado a um `Date/Time` que esteja localizado em um design de formulário renderizado como um formulário HTML, ele não funciona corretamente, mesmo que a data seja digitada corretamente. No entanto, esse padrão de validação funciona corretamente para formulários renderizados como PDF.
 
 >[!NOTE]
+>
 Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Resumo das etapas {#summary-of-steps}
@@ -224,9 +227,11 @@ Ao renderizar um formulário como HTML, você pode especificar um valor user-age
 Os URLs HTTP para onde os dados de formulário são publicados podem ser especificados definindo o URL de destino usando a API do cliente de serviço do Forms ou podem ser especificados no botão Enviar contido no design do formulário XDP. Se a URL de destino estiver especificada no design do formulário, não defina um valor usando a API do cliente de serviço do Forms.
 
 >[!NOTE]
+>
 A renderização de um formulário HTML com uma barra de ferramentas é opcional.
 
 >[!NOTE]
+>
 Se você renderizar um formulário AHTML, é recomendável não adicionar uma barra de ferramentas ao formulário.
 
 **Renderizar um formulário HTML**
@@ -278,6 +283,7 @@ Renderize um formulário HTML usando a API do Forms (Java):
    * Para renderizar o formulário HTML nas tags HTML completas, chame o `HTMLRenderSpec` do objeto `setOutputType` e passar `OutputType.FullHTMLTags`. (Esta é uma configuração opcional.)
 
    >[!NOTE]
+   >
    Os Forms não são renderizados com sucesso no HTML quando o `StandAlone` opção é `true` e a variável `ApplicationWebRoot` faz referência a um servidor diferente do servidor de aplicativos J2EE que hospeda o AEM Forms (o `ApplicationWebRoot` é especificado usando o `URLSpec` objeto que é passado para o `FormsServiceClient` do objeto `(Deprecated) renderHTMLForm` método). Quando a variável `ApplicationWebRoot` for outro servidor de um que hospeda o AEM Forms, o valor do URI da raiz da Web no console de administração precisará ser definido como o valor do URI do aplicativo Web do formulário. Isso pode ser feito fazendo logon no console de administração, clicando em Serviços > Forms e definindo o URI da raiz da Web como https://server-name:port/FormServer. Em seguida, salve as configurações.
 
 1. Renderizar um formulário HTML
@@ -335,6 +341,7 @@ Renderize um formulário HTML usando a API (serviço da Web) do Forms:
    * Para renderizar o formulário HTML nas tags HTML completas, chame o `HTMLRenderSpec` do objeto `setOutputType` e passar `OutputType.FullHTMLTags`.
 
    >[!NOTE]
+   >
    Os Forms não são renderizados com sucesso no HTML quando o `StandAlone` opção é `true` e a variável `ApplicationWebRoot` faz referência a um servidor diferente do servidor de aplicativos J2EE que hospeda o AEM Forms (o `ApplicationWebRoot` é especificado usando o `URLSpec` objeto que é passado para o `FormsServiceClient` do objeto `(Deprecated) renderHTMLForm` método). Quando a variável `ApplicationWebRoot` for outro servidor de um que hospeda o AEM Forms, o valor do URI da raiz da Web no console de administração precisará ser definido como o valor do URI do aplicativo Web do formulário. Isso pode ser feito fazendo logon no console de administração, clicando em Serviços > Forms e definindo o URI da raiz da Web como https://server-name:port/FormServer. Em seguida, salve as configurações.
 
 1. Renderizar um formulário HTML

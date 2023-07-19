@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
 exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Se você estiver usando o MySQL como banco de dados do AEM Forms, o Console de A
 ## Editar uma categoria {#edit-a-category}
 
 1. No console de administração, clique em Serviços > Aplicativos e serviços > Gerenciamento de categorias.
-1. Selecione a categoria que deseja editar e clique em Editar. Como alternativa, você pode clicar duas vezes em uma categoria para editá-la.
+1. Selecione a categoria que deseja editar e clique em Editar. Como alternativa, clique duas vezes em uma categoria para editá-la.
 1. Edite o nome da categoria na caixa Nome.
 
 ## Remover uma categoria {#remove-a-category}

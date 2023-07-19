@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 16%
+source-wordcount: '1870'
+ht-degree: 15%
 
 ---
 
@@ -24,7 +24,6 @@ Para criar uma cópia de idioma, acione um dos seguintes workflows de cópia de 
 >
 >* Os usuários que criam projetos de tradução são membros do grupo `projects-administrators`.
 >* O provedor de serviços de tradução oferece suporte à tradução de binários.
-
 
 ## Criar e traduzir fluxo de trabalho {#create-and-translate-workflow}
 
@@ -67,7 +66,7 @@ Se você usar essa opção, os ativos a serem traduzidos serão copiados para a 
 
 1. Clique em **[!UICONTROL Criar e traduzir]** na parte inferior.
 
-1. Na lista **[!UICONTROL Idiomas de destino]**, selecione os idiomas para os quais deseja criar uma estrutura de pastas.
+1. No **[!UICONTROL Idiomas de destino]** selecione os idiomas para os quais deseja criar uma estrutura de pastas.
 
 1. No **[!UICONTROL Projeto]** selecione **[!UICONTROL Criar um novo projeto de tradução]**.
 
@@ -118,7 +117,7 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
 1. Clique em **[!UICONTROL Cópias de idioma]** em **[!UICONTROL Cópias]**. Uma lista de cópias de tradução disponíveis é exibida.
 1. Clique em **[!UICONTROL Criar e traduzir]** na parte inferior.
 
-1. Na lista **[!UICONTROL Idiomas de destino]**, selecione os idiomas para os quais deseja criar uma estrutura de pastas.
+1. No **[!UICONTROL Idiomas de destino]** selecione os idiomas para os quais deseja criar uma estrutura de pastas.
 
 1. Na lista **[!UICONTROL Projeto]**, selecione **[!UICONTROL Adicionar ao projeto de tradução existente]** para executar o fluxo de trabalho de tradução na pasta.
 
@@ -235,7 +234,7 @@ Se você usar essa opção, o conjunto de ativos será adicionado a um projeto d
 
 ## Criar cópias temporárias de idioma {#creating-temporary-language-copies}
 
-Quando você executa um fluxo de trabalho de tradução para atualizar uma cópia de idioma com versões editadas de ativos originais, a cópia de idioma existente é preservada até que você aprove o(s) ativo(s) traduzido(s). [!DNL Adobe Experience Manager Assets] O armazena os ativos recém-traduzidos em um local temporário e atualiza a cópia de idioma existente depois que você aprova explicitamente o(s) ativo(s). Se você rejeitar os ativos, a cópia de idioma permanecerá inalterada.
+Quando você executa um fluxo de trabalho de tradução para atualizar uma cópia de idioma com versões editadas de ativos originais, a cópia de idioma existente é preservada até que você aprove o(s) ativo(s) traduzido(s). [!DNL Adobe Experience Manager Assets] O armazena os ativos recém-traduzidos em um local temporário e atualiza a cópia de idioma existente depois que você aprova explicitamente os ativos. Se você rejeitar os ativos, a cópia de idioma permanecerá inalterada.
 
 1. Clique na pasta raiz de código-fonte em **[!UICONTROL Cópias de idioma]** para o qual você já criou uma cópia de idioma e clique em **[!UICONTROL Revelar no Assets]** para abrir a pasta no [!DNL Experience Manager Assets].
 

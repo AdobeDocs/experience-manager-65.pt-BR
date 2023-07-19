@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 13f15bee38b6b4af4cd59376849810a788f0c467
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3584'
 ht-degree: 2%
 
 ---
@@ -52,27 +52,26 @@ Assim como com [todos os componentes](/help/sites-developing/components.md), os 
 >1. Recriar o item necessário (ou seja, como ele existe em `/libs` em `/apps`
 >2. Fazer alterações em `/apps`
 
-
 A variável `/libs/cq/workflow/components/model/step` é o ancestral comum mais próximo do **Etapa do processo**, **Etapa do participante**, e **Etapa dinâmica do participante**, que herdam os seguintes itens:
 
 * `step.jsp`
 
-   A variável `step.jsp` O script renderiza o título do componente da etapa quando ele é adicionado a um modelo.
+  A variável `step.jsp` O script renderiza o título do componente da etapa quando ele é adicionado a um modelo.
 
-   ![wf-22-1](assets/wf-22-1.png)
+  ![wf-22-1](assets/wf-22-1.png)
 
 * [cq:dialog](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
 
-   Uma caixa de diálogo com as seguintes guias:
+  Uma caixa de diálogo com as seguintes guias:
 
    * **Comum**: para editar o título e a descrição.
    * **Avançado**: para editar propriedades de notificação por email.
 
-   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
+  ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
-   >[!NOTE]
-   >
-   >Quando as guias da caixa de diálogo de edição de um componente da etapa não corresponderem a essa aparência padrão, o componente da etapa terá scripts definidos, propriedades do nó ou guias de caixa de diálogo que substituem essas guias herdadas.
+  >[!NOTE]
+  >
+  >Quando as guias da caixa de diálogo de edição de um componente da etapa não corresponderem a essa aparência padrão, o componente da etapa terá scripts definidos, propriedades do nó ou guias de caixa de diálogo que substituem essas guias herdadas.
 
 ### Scripts ECMA {#ecma-scripts}
 
@@ -92,7 +91,7 @@ Você pode usar metadados de fluxo de trabalho para manter as informações nece
 
 Há três tipos de objetos MetaDataMap - para `Workflow`, `WorkflowData` e `WorkItem` objetos. Todos têm a mesma finalidade: armazenar metadados.
 
-Um item de trabalho tem seu próprio MetaDataMap que só pode ser usado enquanto esse item de trabalho (por exemplo, etapa) estiver em execução.
+Um item de trabalho tem seu próprio MetaDataMap que só pode ser usado enquanto esse item de trabalho (por exemplo, etapa ) estiver em execução.
 
 Ambos `Workflow` e `WorkflowData` os metadatamaps são compartilhados em todo o fluxo de trabalho. Nesses casos, é recomendável usar somente o `WorkflowData` mapa de metadados.
 
@@ -125,7 +124,6 @@ Use o procedimento a seguir para especificar valores default para a variável **
 >  Esse requisito é atendido quando a caixa de diálogo de edição usa a guia Comum que a `/libs/cq/flow/components/step/step` implementações do componente.
 >
 >* O componente de etapa ou um ancestral do componente não substitui o `step.jsp` script que o `/libs/cq/flow/components/step/step` implementações do componente.
-
 
 1. Abaixo do `cq:Component` adicione o seguinte nó:
 
@@ -669,7 +667,6 @@ function getParticipant() {
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
 
-
 Você pode desenvolver etapas de fluxo de trabalho que obtêm os recursos do pacote e os processam. Os seguintes membros da `com.day.cq.workflow.collection` fornecem acesso a pacotes de fluxo de trabalho:
 
 * `ResourceCollection`: classe do pacote de fluxo de trabalho.
@@ -826,21 +823,21 @@ Uma maneira fácil de começar a criar sua própria etapa personalizada é copia
 
    * `sling:resourceSuperType`
 
-      Deve herdar de uma etapa existente.
+     Deve herdar de uma etapa existente.
 
-      Neste exemplo, estamos herdando da etapa base em `cq/workflow/components/model/step`, mas você pode usar outros supertipos como `participant`, `process`, etc.
+     Neste exemplo, estamos herdando da etapa base em `cq/workflow/components/model/step`, mas você pode usar outros supertipos como `participant`, `process`, etc.
 
    * `jcr:title`
 
-      É o título exibido quando o componente é listado no navegador de etapas (painel lateral esquerdo do editor de modelo de fluxo de trabalho).
+     É o título exibido quando o componente é listado no navegador de etapas (painel lateral esquerdo do editor de modelo de fluxo de trabalho).
 
    * `cq:icon`
 
-      Usado para especificar um [Ícone do Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) para a etapa.
+     Usado para especificar um [Ícone do Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) para a etapa.
 
    * `componentGroup`
 
-      Deve ser um dos seguintes:
+     Deve ser um dos seguintes:
 
       * Fluxo de trabalho de colaboração
       * Fluxo de trabalho DAM
@@ -873,11 +870,12 @@ Depois [Criação da etapa básica](#creating-the-basic-step), defina a etapa **
 
    * `cq:inherit`
 
-      Quando definido como `true`, o componente de etapa herdará as propriedades da etapa especificada em `sling:resourceSuperType`.
+     Quando definido como `true`, o componente de etapa herdará as propriedades da etapa especificada em `sling:resourceSuperType`.
 
    * `cq:disableTargeting`
 
-      Defina conforme necessário.
+     Defina conforme necessário.
+
    ![wf-39](assets/wf-39.png)
 
 1. Configurar as propriedades no nó `cq:formsParameter` do seguinte modo:
@@ -886,7 +884,7 @@ Depois [Criação da etapa básica](#creating-the-basic-step), defina a etapa **
 
    * `jcr:title`
 
-      Define o título padrão no cartão de etapa no mapa do modelo e na variável **Título** do campo **Meu personalizado - Propriedades da etapa** caixa de diálogo de configuração.
+     Define o título padrão no cartão de etapa no mapa do modelo e na variável **Título** do campo **Meu personalizado - Propriedades da etapa** caixa de diálogo de configuração.
 
    * Você também pode definir suas próprias propriedades personalizadas.
 

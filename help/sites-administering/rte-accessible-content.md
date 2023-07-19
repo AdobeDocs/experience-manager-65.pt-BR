@@ -3,9 +3,9 @@ title: Configure o Editor de Rich Text para criar páginas da Web e sites acess�
 description: Configure o Editor de Rich Text para criar páginas da Web e sites acessíveis.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Com elementos estruturais disponíveis no RTE por meio das opções de formato d
 
 ## Uso do recurso de edição de origem {#use-of-the-source-edit-feature}
 
-Em alguns casos, os autores de conteúdo considerarão necessário examinar e ajustar o código-fonte HTML criado usando o RTE. Por exemplo, um conteúdo criado no RTE pode exigir marcação adicional para garantir a conformidade com a WCAG 2.0. Isso pode ser feito com o [edição de origem](/help/sites-administering/rich-text-editor.md#aboutplugins) opção do RTE. Você pode especificar o [ `sourceedit` recurso no `misctools` plug-in](/help/sites-administering/rich-text-editor.md#aboutplugins).
+Em alguns casos, os autores de conteúdo considerarão necessário examinar e ajustar o código-fonte HTML criado usando o RTE. Por exemplo, um conteúdo criado no RTE pode exigir marcação adicional para garantir a conformidade com a WCAG 2.0. Isso pode ser feito com o [edição de origem](/help/sites-administering/rich-text-editor.md#aboutplugins) opção do RTE. Você pode especificar o [`sourceedit` recurso no `misctools` plug-in](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
@@ -193,9 +193,7 @@ O RTE pode usar `strong` e `em` tags no lugar de `b` e `i`. Adicione o nó a seg
 >* A variável `itemId` para cada campo correspondente seja definida como o nome do atributo DOM apropriado (`TablePropertiesDialog`).
 >* O atributo é definido e/ou removido explicitamente do elemento DOM (`Table`).
 
-
 >[!MORELIKETHIS]
 >
 >* [Guia rápido para a WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Criar conteúdo acessível (conformidade com a WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
-

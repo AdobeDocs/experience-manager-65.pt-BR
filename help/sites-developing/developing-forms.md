@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1947'
 ht-degree: 0%
 
 ---
@@ -129,12 +129,12 @@ Você pode adicionar sua própria ação em `/apps` do seguinte modo:
 
    1. Um script post.
 O nome do script é `post.POST.<extension>`, por exemplo, `post.POST.jsp`
-O script post é chamado quando um formulário é enviado para processar o formulário, ele contém o código que lida com os dados que chegam do formulário 
-`POST`.
+O script post é chamado quando um formulário é enviado para processar o formulário, ele contém o código que lida com os dados que chegam do formulário `POST`.
 
    1. Adicione um script de encaminhamento que é chamado quando o formulário é enviado.
-O nome do script é `forward.<extension`>, por exemplo `forward.jsp`
+O nome do script é `forward.<extension`>, por exemplo, `forward.jsp`
 Este script pode definir um caminho. A solicitação atual é então encaminhada para o caminho especificado.
+
    A chamada necessária é `FormsHelper#setForwardPath` (2 variantes) Um caso típico é executar alguma validação, ou lógica, para encontrar o caminho de destino e, em seguida, encaminhar para esse caminho, permitindo que o servlet Sling POST padrão faça o armazenamento real no JCR.
 
    Também pode haver outro servlet que faça o processamento real, nesse caso, a ação do formulário e o `forward.jsp` agiria somente como o código de &quot;cola&quot;. Um exemplo disso é a ação de email em `/libs/foundation/components/form/actions/mail`, que encaminha detalhes para `<currentpath>.mail.html`onde está um servlet de e-mail.
@@ -153,6 +153,7 @@ Este script pode definir um caminho. A solicitação atual é então encaminhada
       1. validationRT do formulário: `clientvalidation.jsp`
       1. o formulário é carregado por meio do recurso de carga, se definido
       1. `addfields.jsp` durante a renderização `<form></form>`
+
    * ao manusear um formulário `POST`:
 
       1. `init.jsp`
@@ -163,15 +164,11 @@ Este script pode definir um caminho. A solicitação atual é então encaminhada
 
       1. se nenhum caminho de encaminhamento foi definido, chame `post.POST.jsp` (termina aqui, não `cleanup.jsp` chamado)
 
-
-
-
 1. Novamente, na pasta, adicione opcionalmente:
 
    1. Um script para adicionar campos.
 O nome do script é `addfields.<extension>`, por exemplo, `addfields.jsp`
-Um 
-`addfields` O script é chamado imediatamente após o HTML para o início do formulário ser gravado. Isso permite que a ação adicione campos de entrada personalizados ou outro HTML semelhante dentro do formulário.
+Um `addfields` O script é chamado imediatamente após o HTML para o início do formulário ser gravado. Isso permite que a ação adicione campos de entrada personalizados ou outro HTML semelhante dentro do formulário.
 
    1. Um script de inicialização.
 O nome do script é `init.<extension>`, por exemplo, `init.jsp`
@@ -284,6 +281,7 @@ No JavaScript, as condições usam o valor da propriedade Nome do elemento para 
 
       * **all** - se todas as condições forem verdadeiras para mostrar ou ocultar o componente
       * **qualquer** - se apenas uma ou mais condições forem verdadeiras para mostrar ou ocultar o componente
+
    * Na linha de condição (uma é apresentada como padrão), selecione um componente, operador e especifique um valor.
    * Adicione mais condições, se necessário, clicando em **Adicionar Condição**.
 
@@ -306,7 +304,6 @@ No JavaScript, as condições usam o valor da propriedade Nome do elemento para 
    >* in **Visualizar** no ambiente do autor (precisa de um recarregamento de página ao alternar para visualização pela primeira vez)
    >
    >* no ambiente de publicação
-
 
 #### Manipular referências de componentes corrompidos {#handling-broken-component-references}
 

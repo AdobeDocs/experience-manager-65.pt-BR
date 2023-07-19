@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '839'
 ht-degree: 3%
 
 ---
@@ -38,7 +38,7 @@ Para criar um novo Painel de Controle, proceda da seguinte maneira:
 1. No **Ferramentas** clique em **Console de configuração**.
 1. Na árvore, clique duas vezes em **Painel**.
 1. Clique em **Novo painel**.
-1. Digite o **Título** (por exemplo, Meu painel) e o **Nome**.
+1. Digite o **Título** (por exemplo, Meu painel) e a variável **Nome**.
 1. Clique em **Criar**.
 
 ### Clonagem De Um Painel {#cloning-a-dashboard}
@@ -73,7 +73,7 @@ Os componentes do painel não são nada mais do que comuns [Componentes do AEM](
 
 ### Componentes de relatórios do Web Analytics {#web-analytics-reporting-components}
 
-O AEM vem com um conjunto de componentes que renderizam várias métricas do [SiteCatalyst](/help/sites-administering/adobeanalytics.md) dados. Esses componentes estão listados no Sidekick no **Painel** seção.
+O AEM vem com um conjunto de componentes que renderizam várias métricas do [SiteCatalyst](/help/sites-administering/adobeanalytics.md) dados. Esses componentes estão listados na Sidekick sob o **Painel** seção.
 
 Cada componente de relatório fornece pelo menos três guias:
 
@@ -188,7 +188,7 @@ Os componentes principais do autor são armazenados no repositório em `/apps/ge
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
-O seguinte arquivo JavaScript é definido no `geout.reporting.topauthors` [Biblioteca do cliente](/help/sites-developing/clientlibs.md) como filho do próprio componente.
+O seguinte arquivo JavaScript é definido na variável `geout.reporting.topauthors` [Biblioteca do cliente](/help/sites-developing/clientlibs.md) como filho do próprio componente.
 
 A variável [QueryBuilder](/help/sites-developing/querybuilder-api.md) é usado para consultar o repositório para ler `cq:AuditEvent` nós. O resultado da consulta é um objeto JSON do qual as contribuições do autor são extraídas.
 

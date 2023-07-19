@@ -10,9 +10,9 @@ discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -42,4 +42,4 @@ O aplicativo de desktop AEM usa o protocolo WebDAV no Microsoft Windows e o SMB1
 1. Reinicie o servidor do AEM Forms. Após a reinicialização, o servidor do AEM Forms é ativado para aceitar e compartilhar conteúdo com o aplicativo para desktop AEM.
 1. Abra o aplicativo e conecte-se ao servidor do AEM Forms.
 
-   Ao se conectar com êxito, o aplicativo preenche o `content/dam` e `content/dam/formsanddocuments` pastas. Além de mover arquivos das pastas acima para as pastas locais e vice-versa, você pode usar o aplicativo para mover conteúdo entre pastas preenchidas automaticamente.
+   Ao se conectar com êxito, o aplicativo preenche o `content/dam` e `content/dam/formsanddocuments` pastas. Além de mover arquivos das pastas acima para pastas locais e vice-versa, você pode usar o aplicativo para mover conteúdo entre pastas preenchidas automaticamente.

@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2325'
+source-wordcount: '2327'
 ht-degree: 0%
 
 ---
@@ -214,7 +214,7 @@ Depois de adicionar a sequência de caracteres em inglês a um dicionário, voc�
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
-   * Clique duas vezes na **String** ou **Comentário** campos da cadeia de caracteres necessária para abrir a **Editar string** , edite as traduções conforme necessário e clique em **OK** para fechar a caixa de diálogo:
+   * Clique duas vezes na guia **String** ou **Comentário** campos da cadeia de caracteres necessária para abrir a **Editar string** , edite as traduções conforme necessário e clique em **OK** para fechar a caixa de diálogo:
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
@@ -337,7 +337,7 @@ Depois de definir um dicionário para um idioma novo na instância do AEM, é ne
 
 Vários países usam a mesma língua, por exemplo, os EUA, o Reino Unido e a Austrália usam o inglês. Isso é indicado por um código indicando o idioma e o país, como `en_US`, `en_GB` e `en_AU`.
 
-Os países padrão são usados ao exibir sinalizadores (por exemplo, na caixa de diálogo de cópia de idioma), eles são usados para resolver o país para um código de idioma.
+Os países padrão são usados ao exibir sinalizadores (por exemplo, na caixa de diálogo de cópia de idioma), para resolver o país de um código de idioma.
 
 >[!NOTE]
 >
@@ -359,11 +359,12 @@ Para alterar as definições default:
 
    * **Lista de idiomas**:
 
-      O caminho para a lista de idiomas no repositório. Defina isso no local usado para sobrepor:
+     O caminho para a lista de idiomas no repositório. Defina isso no local usado para sobrepor:
 
-      ```
-             /apps/wcm/core/resources/languages
-      ```
+     ```
+            /apps/wcm/core/resources/languages
+     ```
+
    Você pode fazer isso usando o Console da Web OSGi:
 
    ```shell

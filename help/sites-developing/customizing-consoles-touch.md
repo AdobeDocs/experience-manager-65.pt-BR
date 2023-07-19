@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '671'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,6 @@ Eles podem ser usados de várias maneiras para estender os consoles AEM. Uma peq
 >
 
 
-
 >[!CAUTION]
 >
 >Você ***deve*** não alterar nada no `/libs` caminho.
@@ -54,9 +53,7 @@ Eles podem ser usados de várias maneiras para estender os consoles AEM. Uma peq
 >1. Recriar o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
 >
 >1. Fazer alterações em `/apps`
-
 >
-
 
 Por exemplo, o seguinte local dentro da variável `/libs` a estrutura pode ser sobreposta:
 
@@ -142,17 +139,18 @@ Para personalizar as colunas na exibição de lista:
 
    * No nó:
 
-      ```
-             /apps/wcm/core/content/common/availablecolumns
-      ```
+     ```
+            /apps/wcm/core/content/common/availablecolumns
+     ```
 
    * Adicione suas novas colunas ou remova as existentes.
+
    Consulte [Uso de sobreposições (e a Fusão de recursos do Sling)](/help/sites-developing/overlays.md) para obter mais informações.
 
 1. Opcionalmente:
 
    * Se quiser conectar dados adicionais, será necessário gravar um [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) com um
-      `pageInfoProviderType` propriedade.
+     `pageInfoProviderType` propriedade.
 
    Por exemplo, consulte a classe/pacote anexado (do GitHub) abaixo.
 

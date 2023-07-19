@@ -1,15 +1,15 @@
 ---
 title: Consultas persistentes de GraphQL
-description: Saiba como criar consultas persistentes de GraphQL no Adobe Experience Manager para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método HTTP GET e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
+description: Saiba como criar consultas persistentes do GraphQL no Adobe Experience Manager para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método HTTP GET e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
-source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 91%
+source-wordcount: '1423'
+ht-degree: 90%
 
 ---
 
-# Consultas persistentes de GraphQL  {#persisted-queries-caching}
+# Consultas persistentes de GraphQL {#persisted-queries-caching}
 
 Consultas persistentes são consultas GraphQL criadas e armazenadas no servidor Adobe Experience Manager (AEM). Elas podem ser solicitadas com uma solicitação GET por aplicativos clientes. A resposta de uma solicitação do GET pode ser armazenada em cache nas camadas do Dispatcher e da Rede de entrega de conteúdo (CDN), melhorando, em última análise, o desempenho do aplicativo cliente solicitante. Isso é diferente das consultas de GraphQL padrão, que são executadas usando solicitações POST, onde a resposta não pode ser facilmente armazenada em cache.
 
@@ -40,9 +40,9 @@ Por exemplo, para criar uma consulta persistente especificamente para a configur
 Por exemplo, se houver uma consulta específica chamada `my-query`, que usa um modelo `my-model` da configuração `my-conf` do Sites:
 
 * É possível criar uma consulta usando o endpoint específico `my-conf` e, em seguida, a consulta será salva da seguinte maneira:
-   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+  `/conf/my-conf/settings/graphql/persistentQueries/my-query`
 * É possível criar a mesma consulta usando o endpoint `global`, mas a consulta será salva da seguinte maneira:
-   `/conf/global/settings/graphql/persistentQueries/my-query`
+  `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >

@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 24a64e603d460c659467c7679934bbdfd381aaa8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5903'
+source-wordcount: '5902'
 ht-degree: 0%
 
 ---
@@ -400,7 +400,7 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
       </ul> </li>
      <li>Espaço em disco obtido pela limpeza da revisão
       <ul>
-       <li>O espaço é recuperado somente quando a fase de limpeza é concluída. A conclusão da fase de limpeza é marcada pela mensagem de registro "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". O tamanho da limpeza da publicação é {} ({} bytes) e o espaço recuperado é {} ({} bytes). O peso/profundidade do mapa de compactação é {}/{} ({} bytes/{}).".</li>
+       <li>O espaço é recuperado somente quando a fase de limpeza é concluída. A conclusão da fase de limpeza é marcada pela mensagem de registro "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". O tamanho da limpeza da postagem é {} ({} bytes) e espaço recuperado {} ({} bytes). O peso/profundidade do mapa de compactação é {}/{} ({} bytes/{}).".</li>
       </ul> </li>
      <li>Ocorreu um problema durante a limpeza da revisão
       <ul>

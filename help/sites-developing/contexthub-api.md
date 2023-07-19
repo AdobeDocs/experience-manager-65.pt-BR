@@ -1,8 +1,8 @@
 ---
-title: Referência da API Javascript do ContextHub
-seo-title: ContextHub Javascript API Reference
-description: A API Javascript do ContextHub estará disponível para seus scripts quando o componente ContextHub for adicionado à página
-seo-description: The ContextHub Javascript API is available to your scripts when the ContextHub component has been added to the page
+title: Referência da API JavaScript do ContextHub
+seo-title: ContextHub JavaScript API Reference
+description: A API JavaScript do ContextHub estará disponível para seus scripts quando o componente ContextHub for adicionado à página
+seo-description: The ContextHub JavaScript API is available to your scripts when the ContextHub component has been added to the page
 uuid: 296d6c8e-517f-4837-9e86-ae571ea8aa17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5006'
+source-wordcount: '5007'
 ht-degree: 2%
 
 ---
 
-# Referência da API Javascript do ContextHub{#contexthub-javascript-api-reference}
+# Referência da API JavaScript do ContextHub{#contexthub-javascript-api-reference}
 
-A API Javascript do ContextHub estará disponível para seus scripts quando a variável [O componente ContextHub foi adicionado à página](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
+A API JavaScript do ContextHub está disponível para seus scripts quando a variável [O componente ContextHub foi adicionado à página](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
 
 ## Constantes do ContextHub {#contexthub-constants}
 
@@ -71,7 +71,7 @@ A tabela a seguir lista os nomes dos eventos que ocorrem para a interface do usu
 | ContextHub.Constants.EVENT_UI_INITIALIZED | Acionado quando o contêiner da interface do usuário é inicializado | inicializado por interface do usuário |
 | ContextHub.Constants.ACTIVE_UI_MODE | Indica o modo da interface do usuário ativa | /_/ative-ui-mode |
 
-## Referência da API Javascript do ContextHub {#contexthub-javascript-api-reference-2}
+## Referência da API JavaScript do ContextHub {#contexthub-javascript-api-reference-2}
 
 O objeto ContextHub fornece acesso a todos os armazenamentos.
 
@@ -391,7 +391,7 @@ A `boolean` valor:
 
 ## ContextHub.Store.JSONPStore {#contexthub-store-jsonpstore}
 
-Um armazenamento que contém dados JSON. Os dados são recuperados de um serviço JSONP externo ou, opcionalmente, de um serviço que retorna dados JSON. Especifique os detalhes do serviço usando o [ `init`](/help/sites-developing/contexthub-api.md#init-name-config) quando você cria uma ocorrência dessa classe.
+Um armazenamento que contém dados JSON. Os dados são recuperados de um serviço JSONP externo ou, opcionalmente, de um serviço que retorna dados JSON. Especifique os detalhes do serviço usando o [`init`](/help/sites-developing/contexthub-api.md#init-name-config) quando você cria uma ocorrência dessa classe.
 
 O armazenamento usa a persistência na memória (variável JavaScript). Os dados de armazenamento estão disponíveis somente durante o tempo de vida da página.
 
@@ -471,7 +471,7 @@ inicializa o objeto ContextHub.Store.JSONPStore.
 
    * eventDeferring: 32.
    * eventing: o objeto ContextHub.Utils.Eventing para esse armazenamento. O valor padrão é o `ContextHub.eventing` objeto.
-   * persistência: o objeto ContextHub.Utils.Persistence desse armazenamento. Por padrão, a persistência de memória é usada (objeto Javascript).
+   * persistência: o objeto ContextHub.Utils.Persistence desse armazenamento. Por padrão, a persistência de memória é usada (objeto JavaScript).
    * service: (Objeto)
 
       * host: (String) O nome ou endereço IP do servidor.
@@ -484,9 +484,9 @@ inicializa o objeto ContextHub.Store.JSONPStore.
          * auto: //
          * true: https://
          * false: https://
+
       * timeout: (Número) A quantidade de tempo de espera para que o serviço JSONP responda antes de atingir o timeout, em milissegundos.
       * ttl: O tempo mínimo em milissegundos decorrido entre chamadas para o serviço JSONP. (Consulte a [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload) função).
-
 
 #### queryService(reload) {#queryservice-reload}
 
@@ -522,7 +522,7 @@ ContextHub.Store.PersistedStore estende [ContextHub.Store.Core](/help/sites-deve
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-ContextHub.Store.SessionStore estende [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) então ele herda todas as funções dessa classe. Os dados neste armazenamento são mantidos usando a persistência na memória (objeto Javascript).
+ContextHub.Store.SessionStore estende [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) então ele herda todas as funções dessa classe. Os dados neste armazenamento são mantidos usando a persistência na memória (objeto JavaScript).
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -816,7 +816,7 @@ Analisa um valor de string como JSON e o converte em um objeto javascript.
 
 **Devoluções**
 
-Um objeto Javascript.
+Um objeto JavaScript.
 
 **Exemplo**
 
@@ -832,7 +832,7 @@ Object {
 
 #### stringify(dados) {#stringify-data}
 
-Serializa valores e objetos Javascript em valores de string do formato JSON.
+Serializa valores e objetos JavaScript em valores de string do formato JSON.
 
 **Parâmetros**
 
@@ -900,7 +900,7 @@ O valor que corresponde à chave. Quando a chave tem chaves filhas, essa funçã
 
 **Exemplo**
 
-Considere o seguinte objeto Javascript:
+Considere o seguinte objeto JavaScript:
 
 ```
 myObject {
@@ -1074,7 +1074,7 @@ Uma cópia do `tree` objeto que inclui o `key`/ `value` emparelhar.
 
 **Exemplo**
 
-Considere o seguinte código Javascript:
+Considere o seguinte código JavaScript:
 
 ```
 var myObject = {
@@ -1109,7 +1109,7 @@ Retorna os tipos de armazenamento registrados como candidatos de armazenamento. 
 
 **Parâmetros**
 
-* **storeType:** (String) O nome do tipo de armazenamento. Consulte a `storeType` parâmetro do [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) função.
+* **storeType:** (String) O nome do tipo de armazenamento. Consulte a `storeType` parâmetro do [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) função.
 
 **Devoluções**
 
@@ -1121,7 +1121,7 @@ Retorna um tipo de armazenamento dos candidatos registrados. Se mais de um tipo 
 
 **Parâmetros**
 
-* storeType: (String) o nome do candidato do armazenamento. Consulte a `storeType` parâmetro do [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) função.
+* storeType: (String) o nome do candidato do armazenamento. Consulte a `storeType` parâmetro do [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) função.
 
 **Devoluções**
 
@@ -1133,7 +1133,7 @@ Retorna os nomes dos tipos de armazenamento registrados como candidatos de armaz
 
 **Devoluções**
 
-Uma matriz de valores de string, em que cada string é o tipo de loja com o qual um candidato a armazenamento foi registrado. Consulte a `storeType` parâmetro do [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) função.
+Uma matriz de valores de string, em que cada string é o tipo de loja com o qual um candidato a armazenamento foi registrado. Consulte a `storeType` parâmetro do [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) função.
 
 #### registerStoreCandidate(store, storeType, priority, aplica) {#registerstorecandidate-store-storetype-priority-applies}
 

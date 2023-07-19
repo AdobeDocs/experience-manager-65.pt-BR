@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1805'
-ht-degree: 55%
+source-wordcount: '1806'
+ht-degree: 56%
 
 ---
 
@@ -24,7 +24,7 @@ Isso fornece um sistema de parágrafo que permite posicionar componentes em uma 
 O contêiner de layout:
 
 * Fornece ajuste horizontal à grade, juntamente com a capacidade de colocar componentes na grade lado a lado e definir quando eles devem ser recolhidos/refluir.
-* Usa pontos de interrupção predefinidos (por exemplo, para telefone, tablet etc.) para permitir que você defina o comportamento necessário do conteúdo para dispositivos/orientação relacionados.
+* Usa pontos de interrupção predefinidos (por exemplo para telefone, tablet etc.) para permitir que você defina o comportamento necessário do conteúdo para dispositivos/orientação relacionados.
 
    * Por exemplo, você pode personalizar o tamanho do componente ou se ele pode ser visualizado em dispositivos específicos.
 

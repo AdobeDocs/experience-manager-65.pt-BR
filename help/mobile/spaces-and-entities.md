@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1193'
 ht-degree: 1%
 
 ---

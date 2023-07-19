@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1357'
 ht-degree: 1%
 
 ---
@@ -23,18 +23,18 @@ ht-degree: 1%
 >
 >Este documento descreve como personalizar a criação de página na interface moderna e habilitada para toque, e não se aplica à interface clássica.
 
-O AEM fornece vários mecanismos que permitem personalizar a funcionalidade de criação de página (e a [consoles](/help/sites-developing/customizing-consoles-touch.md)) da sua instância de criação.
+O AEM fornece vários mecanismos para permitir personalizar a funcionalidade de criação de página (e a [consoles](/help/sites-developing/customizing-consoles-touch.md)) da sua instância de criação.
 
 * Clientlibs
 
-   As clientlibs permitem estender a implementação padrão para obter uma nova funcionalidade, além de reutilizar as funções, os objetos e os métodos padrão. Ao personalizar, você pode criar sua própria clientlib em `/apps.` A nova clientlib deve:
+  As clientlibs permitem estender a implementação padrão para obter uma nova funcionalidade, além de reutilizar as funções, os objetos e os métodos padrão. Ao personalizar, você pode criar sua própria clientlib em `/apps.` A nova clientlib deve:
 
    * depende da clientlib de criação `cq.authoring.editor.sites.page`
    * fazer parte dos procedimentos `cq.authoring.editor.sites.page.hook` categoria
 
 * Sobreposições
 
-   As sobreposições são baseadas em definições de nó e permitem sobrepor a funcionalidade padrão (em `/libs`) com sua própria funcionalidade personalizada (no `/apps`). Ao criar uma sobreposição, uma cópia 1:1 do original não é necessária, pois a [fusão de recursos do sling](/help/sites-developing/sling-resource-merger.md) permite a herança.
+  As sobreposições são baseadas em definições de nó e permitem sobrepor a funcionalidade padrão (em `/libs`) com sua própria funcionalidade personalizada (no `/apps`). Ao criar uma sobreposição, uma cópia 1:1 do original não é necessária, pois a [fusão de recursos do sling](/help/sites-developing/sling-resource-merger.md) permite a herança.
 
 >[!NOTE]
 >
@@ -53,7 +53,6 @@ Eles podem ser usados de várias maneiras para estender a funcionalidade de cria
 >
 
 
-
 >[!CAUTION]
 >
 >Você ***deve*** não alterar nada no `/libs` caminho.
@@ -64,7 +63,6 @@ Eles podem ser usados de várias maneiras para estender a funcionalidade de cria
 >
 >1. Recriar o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
 >1. Fazer alterações em `/apps`
-
 
 ## Adicionar nova camada (modo) {#add-new-layer-mode}
 
@@ -152,14 +150,14 @@ Em uma instalação padrão do AEM:
 
    * `cq:inplaceEditing`
 
-      por exemplo:
+     por exemplo:
 
       * `/libs/foundation/components/text/cq:editConfig`
       * `/libs/foundation/components/image/cq:editConfig`
 
          * propriedade: `editorType`
 
-            Define o tipo de editor em linha que será usado quando a edição no local for acionada para esse componente; por exemplo, `text`, `textimage`, `image`, `title`.
+           Define o tipo de editor em linha que será usado quando a edição no local for acionada para esse componente; por exemplo, `text`, `textimage`, `image`, `title`.
 
 1. Detalhes adicionais de configuração do editor podem ser configurados usando um `config` nó que contém as configurações, bem como um outro `plugin` para conter os detalhes necessários da configuração do plug-in.
 
@@ -260,4 +258,4 @@ Para ter um comportamento personalizado após essa ativação, é possível sobr
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
 1. Atualize o [modelo de fluxo de trabalho](/help/sites-developing/workflows-models.md) e configurações/scripts relacionados, conforme necessário.
-1. Remova a direita para a [ `replicate` ação](/help/sites-administering/security.md#actions) de todos os usuários apropriados para todas as páginas relevantes; para que esse fluxo de trabalho seja acionado como uma ação padrão quando qualquer um dos usuários tentar publicar (ou replicar) uma página.
+1. Remova a direita para a [`replicate` ação](/help/sites-administering/security.md#actions) de todos os usuários apropriados para todas as páginas relevantes; para que esse fluxo de trabalho seja acionado como uma ação padrão quando qualquer um dos usuários tentar publicar (ou replicar) uma página.

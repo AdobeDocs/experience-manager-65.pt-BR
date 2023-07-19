@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1190'
 ht-degree: 1%
 
 ---
@@ -64,41 +64,39 @@ Na criação, para acessar o console Configuração de armazenamento:
 
    * **[!UICONTROL URI do mongoDB]**
 
-      *padrão*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
+     *padrão*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
    * **[!UICONTROL Base de dados do mongoDB]**
 
-      *padrão*: comunidades
+     *padrão*: comunidades
 
    * **[!UICONTROL Coleção de UGC do mongoDB]**
 
-      *padrão*: conteúdo
+     *padrão*: conteúdo
 
    * **[!UICONTROL Coleção de anexos do mongoDB]**
 
-      *padrão*: anexos
+     *padrão*: anexos
 
 * **[!UICONTROL SolrConfiguration]**
 
    * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Host do Zookeeper**
 
-      Ao executar em [Modo SolrCloud](solr.md#solrcloud-mode) com um ZooKeeper externo, defina esse valor como o `HOST:PORT` para o ZooKeeper, como *my.server.com:2181*
+     Ao executar em [Modo SolrCloud](solr.md#solrcloud-mode) com um ZooKeeper externo, defina esse valor como o `HOST:PORT` para o ZooKeeper, como *my.server.com:2181*
 
-      Para um Conjunto do ZooKeeper, insira separado por vírgulas `HOST:PORT` valores, como *host1:2181,host2:2181*
+     Para um Conjunto do ZooKeeper, insira separado por vírgulas `HOST:PORT` valores, como *host1:2181,host2:2181*
 
-      Deixe em branco se estiver executando o Solr no modo independente usando o ZooKeeper interno.
-      *Padrão*: *&lt;blank>*
+     Deixe em branco se estiver executando o Solr no modo independente usando o ZooKeeper interno.
+     *Padrão*: *&lt;blank>*
 
       * **[!UICONTROL URL de Solr]**
 O URL usado para se comunicar com Solr no modo independente.
 Deixe em branco se estiver executando no modo SolrCloud.
-
-         *Padrão*: https://127.0.0.1:8983/solr/
+        *Padrão*: https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Coleção Solr]**
 O nome da coleção Solr.
-
-         *Padrão*: coleção1
+        *Padrão*: coleção1
 
 * Selecione **[!UICONTROL Enviar]**
 
@@ -198,7 +196,7 @@ cURL -u *fazer logon* -d *dados* *reindex-url*
 *caminho* = o local raiz da árvore do UGC a ser reindexado
 
 * Para reindexar todo o UGC, especifique o valor do `asipath`propriedade de
-   `/etc/socialconfig/srpc/defaultconfiguration`
+  `/etc/socialconfig/srpc/defaultconfiguration`
 * Para limitar o índice a algum UGC, especifique uma subárvore de `asipath`
 
 *reindex-url* = o terminal para reindexação do SRP

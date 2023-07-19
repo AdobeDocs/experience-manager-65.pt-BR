@@ -4,9 +4,9 @@ description: Entenda como o recurso de conteúdo associado ao AEM fornece a cone
 feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '245'
 ht-degree: 60%
 
 ---

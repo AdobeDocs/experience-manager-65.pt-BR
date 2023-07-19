@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4599'
+source-wordcount: '4597'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Para chamar programaticamente processos do AEM Forms usando Comunicação remota
 
 * *&lt;install_directory>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
-   onde &lt;*install_diretory*> é o diretório onde o AEM Forms está instalado.
+  onde &lt;*install_diretory*> é o diretório onde o AEM Forms está instalado.
 
 **Consulte também**
 
@@ -133,6 +133,7 @@ docRef.text = "Text for my document";  // Optionally, you can override the ser
 * Quando o documento não estiver no servidor, use o servlet de upload Remoto para carregar um documento no AEM Forms. Uma novidade no AEM Forms é a capacidade de fazer upload de documentos seguros. Ao fazer upload de um documento seguro, é necessário usar um usuário que tenha a *Usuário do aplicativo de carregamento de documento* função. Sem essa função, o usuário não pode carregar um documento seguro. É recomendável que você use o logon único para carregar um documento seguro. (Consulte [Enviar documentos seguros para invocar processos usando comunicação remota](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 >[!NOTE]
+>
 se o AEM Forms estiver configurado para permitir que documentos não seguros sejam carregados, você poderá usar um usuário que não tenha a função Usuário do aplicativo de carregamento de documentos para carregar um documento. Um usuário também pode ter a permissão Carregar documento. No entanto, se o AEM Forms estiver configurado para permitir somente documentos seguros, verifique se o usuário tem a função Usuário do aplicativo de upload de documentos ou a permissão Upload de documentos. (Consulte [Configuração do AEM Forms para aceitar documentos protegidos e não protegidos](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
 
 Você usa recursos padrão de upload de Flash para o URL de upload designado: `https://SERVER:PORT/remoting/lcfileupload`. Em seguida, você pode usar o `DocumentReference` sempre que um parâmetro de entrada do tipo `Document` é esperado
@@ -197,6 +198,7 @@ Para chamar um processo do AEM Forms a partir de um aplicativo criado com o Flex
 1. Manipule valores de retorno.
 
 >[!NOTE]
+>
 Esta seção discute como chamar um processo do AEM Forms e carregar um documento quando o AEM Forms está configurado para carregar documentos não seguros. Para obter informações sobre como chamar processos do AEM Forms e fazer upload de documentos protegidos e como configurar o AEM Forms para aceitar documentos protegidos e não protegidos, consulte [Enviar documentos seguros para invocar processos usando comunicação remota](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
 **Criação de uma instância mx:RemoteObject**
@@ -302,6 +304,7 @@ A autenticação básica depende da autenticação básica J2EE padrão do conta
 Para autenticação personalizada, o servidor envia uma falha ao cliente para indicar que a autenticação é necessária.
 
 >[!NOTE]
+>
 Para obter informações sobre como executar a autenticação usando tokens HTTP, consulte [Criação de aplicativos do Flash Builder que executam autenticação SSO usando tokens HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
 
 ### Uso da autenticação personalizada {#using-custom-authentication}
@@ -309,6 +312,7 @@ Para obter informações sobre como executar a autenticação usando tokens HTTP
 Você habilita a autenticação personalizada no console de administração alterando o método de autenticação de Básico para Personalizado no ponto de extremidade remoto. Se você usar a autenticação personalizada, o aplicativo cliente chamará o `ChannelSet.login` para fazer logon e a variável `ChannelSet.logout` para fazer logoff.
 
 >[!NOTE]
+>
 Na versão anterior do AEM Forms, você enviou credenciais para um destino chamando o `RemoteObject.setCredentials` método. A variável `setCredentials` O método de não passou as credenciais para o servidor até a primeira tentativa do componente de se conectar ao servidor. Portanto, se o componente emitiu um evento de falha, você não poderia ter certeza se a falha aconteceu devido a um erro de autenticação ou por outro motivo. A variável `ChannelSet.login` se conecta ao servidor quando você o chama, para que você possa lidar com um problema de autenticação imediatamente. Embora você possa continuar usando o `setCredentials` , é recomendável usar o método `ChannelSet.login` método.
 
 Como vários destinos podem usar os mesmos canais e o objeto ChannelSet correspondente, fazer logon em um destino conecta o usuário a qualquer outro destino que use o mesmo canal ou canais. Se dois componentes aplicarem credenciais diferentes ao mesmo objeto ChannelSet, as últimas credenciais aplicadas serão usadas. Se vários componentes usarem o mesmo objeto ChannelSet autenticado, chamando o `logout` O método do registra todos os componentes fora dos destinos.
@@ -454,6 +458,7 @@ Os desenvolvedores do AEM Forms criam aplicativos clientes para estender a funci
 Quando um serviço do AEM Forms é chamado usando o (obsoleto para formulários AEM) AEM Forms Remoting, o aplicativo cliente passa o cookie de autenticação como parte da solicitação. Como o usuário já foi autenticado, não é necessário logon adicional para fazer uma conexão do aplicativo cliente com o serviço AEM Forms.
 
 >[!NOTE]
+>
 Se um cookie for inválido ou estiver ausente, não haverá redirecionamento implícito para uma página de logon. Portanto, você ainda pode chamar um serviço anônimo.
 
 Você pode ignorar o mecanismo de logon único do AEM Forms gravando um aplicativo cliente que faz logon e logout por conta própria. Se você ignorar o mecanismo de logon único, poderá usar a autenticação básica ou personalizada com seu aplicativo.
@@ -548,6 +553,7 @@ Você pode passar documentos seguros para o AEM Forms ao chamar um processo que 
 Ao transmitir um documento seguro, use logon único e especifique um usuário de formulários AEM que tenha a *Usuário do aplicativo de carregamento de documento* função. Sem essa função, o usuário não pode carregar um documento seguro. Você pode atribuir uma função de maneira programática a um usuário. (Consulte [Gerenciamento de funções e permissões](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 >[!NOTE]
+>
 Ao criar uma nova função e quiser que os membros dessa função façam upload de documentos protegidos, certifique-se de especificar a permissão Upload de documentos.
 
 O AEM Forms oferece suporte a uma operação chamada `getFileUploadToken` que retorna um token passado para o servlet de upload. A variável `DocumentReference.constructRequestForUpload` requer um URL para o AEM Forms junto com o token retornado pelo `LC.FileUploadAuthenticator.getFileUploadToken` método. Este método retorna um valor de `URLRequest` objeto que é usado na chamada ao servlet de upload. O código a seguir demonstra essa lógica de aplicação.
@@ -613,9 +619,10 @@ Você pode usar o console de administração para especificar se os documentos s
 1. Clique em **Configurações**.
 1. Clique em **Configurações principais do sistema.**
 1. Clique em Configurações.
-1. Certifique-se de que a opção Permitir upload de documento não seguro de aplicativos Flex não esteja selecionada.
+1. Certifique-se de que a opção Permitir upload de documento não seguro de aplicativos do Flex não esteja selecionada.
 
 >[!NOTE]
+>
 Para configurar o AEM Forms para aceitar documentos não seguros, selecione a opção Permitir upload de documento não seguro de aplicativos do Flex. Em seguida, reinicie um aplicativo ou serviço para garantir que a configuração seja aplicada.
 
 ### Início Rápido: Invocar um processo de vida curta transmitindo um documento seguro usando Comunicação Remota {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
@@ -969,6 +976,7 @@ O tipo de dados totalmente qualificado do tipo complexo AEM Forms é atribuído 
 Os campos da classe ActionScript correspondem aos campos que pertencem ao tipo complexo AEM Forms. Os seis campos localizados na classe de ActionScript Cliente correspondem aos campos aos quais pertencem `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
+>
 Uma boa maneira de determinar os nomes de campo que pertencem a um tipo complexo do Forms é exibir o WSDL de um serviço em um navegador da Web. Um WSDL especifica os tipos complexos de um serviço e os membros de dados correspondentes. O seguinte WSDL é usado para o serviço de atendimento ao cliente: `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
 A classe de ActionScript Cliente pertence a um pacote chamado cliente. É recomendável colocar todas as classes de ActionScript que mapeiam para tipos de dados complexos do AEM Forms em seu próprio pacote. Crie uma pasta na pasta src do projeto Flex e coloque o arquivo ActionScript na pasta, conforme mostrado na ilustração a seguir.
@@ -980,6 +988,7 @@ A classe de ActionScript Cliente pertence a um pacote chamado cliente. É recome
 O código de exemplo a seguir chama o Serviço de clientes e cria um cliente. Ao executar esse exemplo de código, preencha todas as caixas de texto. Além disso, crie o arquivo Customer.as que mapeia para `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
+>
 Antes de executar este início rápido, é necessário criar e implantar o componente personalizado do Bank.
 
 ```java

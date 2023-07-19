@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
@@ -241,7 +241,7 @@ Antes de uma implantação, leia o [Descrição geral](#general-description) aci
       * remova o comentário do parâmetro inicial sling.home e defina este caminho conforme necessário
       * Recompactar arquivo web.xml
 
-   * Renomeie o arquivo AEM war como ROOT.war se quiser implantá-lo como aplicativo Web raiz, renomeie-o como, por exemplo, aemauthor.war se quiser que o aemauthor seja a raiz de contexto
+   * Renomeie o arquivo AEM war como ROOT.war se quiser implantá-lo como aplicativo Web raiz, renomeie-o para, por exemplo, aemauthor.war se quiser que o aemauthor seja a raiz de contexto
    * copie-o na pasta webapps do tomcat
    * aguarde até que o AEM seja instalado
 

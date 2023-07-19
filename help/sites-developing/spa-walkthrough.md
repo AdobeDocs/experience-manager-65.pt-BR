@@ -4,10 +4,10 @@ description: Este artigo apresenta os conceitos de um SPA e aborda o uso de um S
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 0e8ad326e883f73e795929ce7d5d36f1bcdc5347
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 73%
+source-wordcount: '1967'
+ht-degree: 70%
 
 ---
 
@@ -50,7 +50,7 @@ O passo a passo é baseado na funcionalidade padrão do AEM e no aplicativo de e
 
 ### O que é um SPA? {#what-is-a-spa}
 
-Um aplicativo de página única (SPA) é diferente de uma página convencional, no sentido de que ele é renderizado no lado do cliente e orientado principalmente por Javascript, dependendo das chamadas do Ajax para carregar dados e atualizar dinamicamente a página. A maior parte ou todo o conteúdo é recuperado uma vez em um único carregamento de página, com os recursos adicionais sendo carregados de forma assíncrona conforme necessário, com base na interação do usuário com a página.
+Um aplicativo de página única (SPA) difere de uma página convencional na medida em que é renderizado no lado do cliente e é principalmente orientado por JavaScript, dependendo de chamadas Ajax para carregar dados e atualizar dinamicamente a página. A maior parte ou todo o conteúdo é recuperado uma vez em um único carregamento de página, com os recursos adicionais sendo carregados de forma assíncrona conforme necessário, com base na interação do usuário com a página.
 
 Isso reduz a necessidade de atualizações de página e apresenta uma experiência ao usuário que é contínua, rápida e se parece mais com uma experiência de aplicativo nativo.
 
@@ -183,7 +183,7 @@ A próxima seção, [Carregamento de um aplicativo SPA,](#loading-an-spa-applica
 
 1. Alterne para a **Rede** das ferramentas do desenvolvedor e recarregue a página.
 
-   Ignorando solicitações de imagem, observe que os recursos primários carregados para a página são a própria página, o CSS, o React Javascript, suas dependências, bem como os dados JSON da página.
+   Ignorando solicitações de imagem, observe que os recursos principais carregados para a página são a própria página, o CSS, o JavaScript React, suas dependências, bem como dados JSON para a página.
 
    ![Etapa 5](assets/spa-walkthrough-step-1-5.png)
 

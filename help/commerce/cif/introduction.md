@@ -3,10 +3,10 @@ title: Introdução e visão geral
 description: Introdução e visão geral do Content and Commerce. A Estrutura de Integração do Commerce (CIF) do Experience Manager é o padrão recomendado da Adobe para integrar e estender os serviços comerciais do Adobe Commerce e outras soluções comerciais de terceiros com a Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 92%
+source-wordcount: '871'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ A CIF foi criada para inovação contínua com um complemento sempre atualizado,
 
 ### Integrações
 
-Conecte seu ecossistema (por exemplo, solução comercial) ao Experience Cloud usando  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), um PaaS sem servidor baseado em microsserviço, e [Implementação de referência da CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Conecte seu ecossistema (por exemplo, uma solução comercial) com a Experience Cloud usando o [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), um PaaS sem servidor baseado em microsserviços e [Implementação de referência da CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## Padrões comprovados e práticas recomendadas
 

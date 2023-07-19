@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1093'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Por exemplo:
 
 * [Personalização de um componente](/help/sites-developing/components.md)
 
-   Isso envolvia a sobreposição de uma definição de componente:
+  Isso envolvia a sobreposição de uma definição de componente:
 
    * Criar uma nova pasta de componentes no `/apps/<website-name>/components/<MyComponent>` copiando um componente existente:
 
@@ -73,7 +73,7 @@ Por exemplo:
 
 * [Personalização de páginas mostradas pelo Manipulador de erros](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
-   Esse caso envolve a sobreposição de um servlet:
+  Esse caso envolve a sobreposição de um servlet:
 
    * No repositório, copie o(s) script(s) padrão:
 
@@ -91,7 +91,6 @@ Por exemplo:
 >1. copiar o item em `/libs` para `/apps`
 >1. fazer alterações em `/apps`
 
-
 ## Quando usar consultas JCR e quando não usá-las {#when-to-use-jcr-queries-and-when-not-to-use-them}
 
 As consultas JCR são uma ferramenta poderosa quando empregadas corretamente. Eles são adequados para:
@@ -99,7 +98,7 @@ As consultas JCR são uma ferramenta poderosa quando empregadas corretamente. El
 * consultas reais de usuários finais, como pesquisas de texto completo sobre conteúdo.
 * ocasiões em que o conteúdo estruturado precisa ser encontrado em todo o repositório.
 
-   Nesses casos, verifique se as consultas são executadas somente quando absolutamente necessário, por exemplo, na ativação de componentes ou na invalidação de cache (em vez de Etapas de fluxos de trabalho, Manipuladores de eventos que acionam modificações de conteúdo, Filtros, etc.).
+  Nesses casos, verifique se as consultas são executadas somente quando absolutamente necessário, por exemplo, na ativação de componentes ou na invalidação de cache (em vez de, por exemplo, Etapas de fluxos de trabalho, Manipuladores de eventos que acionam modificações de conteúdo, Filtros etc.).
 
 As consultas JCR nunca devem ser usadas para solicitações de renderização puras. Por exemplo, consultas JCR não são apropriadas para
 
@@ -112,6 +111,7 @@ Para renderizar conteúdo, use o acesso de navegação à árvore de conteúdo e
 >[!NOTE]
 >
 >Se você usar o [Construtor de consulta](/help/sites-developing/querybuilder-api.md), você usa Consultas JCR, já que o Construtor de consultas gera Consultas JCR por baixo dos panos.
+>
 
 ## Considerações sobre segurança {#security-considerations}
 

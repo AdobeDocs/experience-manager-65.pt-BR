@@ -12,7 +12,7 @@ discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '3425'
 ht-degree: 4%
@@ -73,7 +73,7 @@ Para seguir este exemplo e usar os agentes de replicação default necessários 
 
 >[!NOTE]
 >
->Ativado por padrão :
+>Habilitado por padrão :
 >
 >* Agentes sobre o autor : Agente padrão (publicação)
 >
@@ -100,8 +100,7 @@ Essa replicação é ativada do ambiente do autor pelo:
 * **Agente padrão (publicação)**
 Esse agente replica o conteúdo na instância de publicação padrão.
 É possível acessar os detalhes disso (configuração e registros) no console Ferramentas do ambiente do autor; ou:
-
-   `https://localhost:4502/etc/replication/agents.author/publish.html`.
+  `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
 #### Agentes de replicação - prontos para uso {#replication-agents-out-of-the-box}
 
@@ -127,17 +126,17 @@ Ao configurar um agente de replicação no console Ferramentas, quatro guias est
 
 * **Nome**
 
-   Nome exclusivo do agente de replicação.
+  Nome exclusivo do agente de replicação.
 
 * **Descrição**
 
-   Uma descrição da finalidade deste agente de replicação.
+  Uma descrição da finalidade deste agente de replicação.
 
-* **Ativado**
+* **Habilitado**
 
-   Indica se o agente de replicação está ativado no momento.
+  Indica se o agente de replicação está ativado no momento.
 
-   Quando o agente estiver **habilitado** a fila será exibida como:
+  Quando o agente estiver **habilitado** a fila será exibida como:
 
    * **Ativo** quando os itens estão sendo processados.
    * **Ocioso** quando a fila estiver vazia.
@@ -145,94 +144,94 @@ Ao configurar um agente de replicação no console Ferramentas, quatro guias est
 
 * **Tipo de serialização**
 
-   O tipo de serialização:
+  O tipo de serialização:
 
    * **Padrão**: Defina se o agente deve ser selecionado automaticamente.
    * **Limpeza do Dispatcher**: selecione esta opção se o agente for usado para liberar o cache do dispatcher.
 
 * **Tentar novamente o atraso**
 
-   O atraso (tempo de espera em milissegundos) entre duas tentativas, caso seja encontrado um problema.
+  O atraso (tempo de espera em milissegundos) entre duas tentativas, caso seja encontrado um problema.
 
-   Padrão: `60000`
+  Padrão: `60000`
 
 * **ID de usuário agente**
 
-   Dependendo do ambiente, o agente usará essa conta de usuário para:
+  Dependendo do ambiente, o agente usará essa conta de usuário para:
 
    * coletar e empacotar o conteúdo do ambiente do autor
    * criar e gravar o conteúdo no ambiente de publicação
 
-   Deixe este campo vazio para usar a conta de usuário do sistema (a conta definida no sling como o usuário administrador); por padrão, é `admin`).
+  Deixe este campo vazio para usar a conta de usuário do sistema (a conta definida no sling como o usuário administrador); por padrão, é `admin`).
 
-   >[!CAUTION]
-   >
-   >Para um agente no ambiente de criação, esta conta *deve* ter acesso de leitura a todos os caminhos que deseja replicar.
+  >[!CAUTION]
+  >
+  >Para um agente no ambiente de criação, esta conta *deve* ter acesso de leitura a todos os caminhos que deseja replicar.
 
-   >[!CAUTION]
-   >
-   >Para um agente no ambiente de publicação, essa conta *deve* ter o acesso de criação/gravação necessário para replicar o conteúdo.
+  >[!CAUTION]
+  >
+  >Para um agente no ambiente de publicação, essa conta *deve* ter o acesso de criação/gravação necessário para replicar o conteúdo.
 
-   >[!NOTE]
-   >
-   >Isso pode ser usado como um mecanismo para selecionar conteúdo específico para replicação.
+  >[!NOTE]
+  >
+  >Isso pode ser usado como um mecanismo para selecionar conteúdo específico para replicação.
 
 * **Nível de registro**
 
-   Especifica o nível de detalhes a ser usado para mensagens de log.
+  Especifica o nível de detalhes a ser usado para mensagens de log.
 
    * `Error`: somente erros serão registrados em log
    * `Info`: erros, avisos e outras mensagens informativas serão registrados
    * `Debug`: um alto nível de detalhes será usado nas mensagens, principalmente para fins de depuração
 
-   Padrão: `Info`
+  Padrão: `Info`
 
 * **Use para replicação reversa**
 
-   Indica se esse agente será usado para replicação reversa; retorna a entrada do usuário da publicação para o ambiente do autor.
+  Indica se esse agente será usado para replicação reversa; retorna a entrada do usuário da publicação para o ambiente do autor.
 
 * **Atualização do alias**
 
-   Selecionar essa opção permite solicitações de invalidação de alias ou caminho personalizado para o Dispatcher. Consulte também [Configuração de um agente de limpeza do Dispatcher](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
+  Selecionar essa opção permite solicitações de invalidação de alias ou caminho personalizado para o Dispatcher. Consulte também [Configuração de um agente de limpeza do Dispatcher](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
 
 #### Transporte {#transport}
 
 * **URI**
 
-   Especifica o servlet de recebimento no local de destino. Especificamente, você pode especificar o nome do host (ou alias) e o caminho do contexto para a instância de destino aqui.
+  Especifica o servlet de recebimento no local de destino. Especificamente, você pode especificar o nome do host (ou alias) e o caminho do contexto para a instância de destino aqui.
 
-   Por exemplo:
+  Por exemplo:
 
    * Um agente padrão pode ser replicado para `https://localhost:4503/bin/receive`
    * Um agente de limpeza do Dispatcher pode replicar em `https://localhost:8000/dispatcher/invalidate.cache`
 
-   O protocolo especificado aqui (HTTP ou HTTPS) determinará o método de transporte.
+  O protocolo especificado aqui (HTTP ou HTTPS) determinará o método de transporte.
 
-   Para agentes de limpeza do Dispatcher, a propriedade do URI é usada somente se você usar entradas de hosts virtuais baseadas em caminho para diferenciar entre farms. Use esse campo para direcionar o farm a ser invalidado. Por exemplo, o farm nº 1 tem um host virtual de `www.mysite.com/path1/*`, e o farm nº 2 tem um host virtual de `www.mysite.com/path2/*`. Você pode usar um URL de `/path1/invalidate.cache` para direcionar o primeiro farm, e `/path2/invalidate.cache` para direcionar o segundo farm.
+  Para agentes de limpeza do Dispatcher, a propriedade do URI é usada somente se você usar entradas de hosts virtuais baseadas em caminho para diferenciar entre farms. Use esse campo para direcionar o farm a ser invalidado. Por exemplo, o farm nº 1 tem um host virtual de `www.mysite.com/path1/*`, e o farm nº 2 tem um host virtual de `www.mysite.com/path2/*`. Você pode usar um URL de `/path1/invalidate.cache` para direcionar o primeiro farm, e `/path2/invalidate.cache` para direcionar o segundo farm.
 
 * **Usuário**
 
-   Nome de usuário da conta a ser usada para acessar o público alvo.
+  Nome de usuário da conta a ser usada para acessar o público alvo.
 
 * **Senha**
 
-   Senha da conta a ser usada para acessar o público alvo.
+  Senha da conta a ser usada para acessar o público alvo.
 
 * **Domínio NTLM**
 
-   Domínio para autenticação NTML.
+  Domínio para autenticação NTML.
 
 * **Host NTLM**
 
-   Host para autenticação NTML.
+  Host para autenticação NTML.
 
 * **Ativar SSL relaxado**
 
-   Ative se quiser que certificados SSL autocertificados sejam aceitos.
+  Ative se quiser que certificados SSL autocertificados sejam aceitos.
 
 * **Permitir certificados expirados**
 
-   Ative se quiser que certificados SSL expirados sejam aceitos.
+  Ative se quiser que certificados SSL expirados sejam aceitos.
 
 #### Proxy {#proxy}
 
@@ -240,80 +239,80 @@ As seguintes configurações só serão necessárias se um proxy for necessário
 
 * **Host do proxy**
 
-   Nome do host do proxy usado para transporte.
+  Nome do host do proxy usado para transporte.
 
 * **Porta de proxy**
 
-   Porta do proxy.
+  Porta do proxy.
 
 * **Usuário de proxy**
 
-   Nome de usuário da conta a ser usada.
+  Nome de usuário da conta a ser usada.
 
 * **Senha do proxy**
 
-   Senha da conta a ser usada.
+  Senha da conta a ser usada.
 
 * **Domínio do proxy NTLM**
 
-   O domínio do proxy NTLM.
+  O domínio do proxy NTLM.
 
 * **Host do proxy NTLM**
 
-   O domínio do proxy NTLM.
+  O domínio do proxy NTLM.
 
 #### Estendido {#extended}
 
 * **Interface**
 
-   Aqui você pode definir a interface de soquete à qual se vincular.
+  Aqui você pode definir a interface de soquete à qual se vincular.
 
-   Isso define o endereço local a ser usado ao criar conexões. Se isso não for definido, o endereço padrão será usado. Isso é útil para especificar a interface a ser usada em sistemas com vários locais ou em cluster.
+  Isso define o endereço local a ser usado ao criar conexões. Se isso não for definido, o endereço padrão será usado. Isso é útil para especificar a interface a ser usada em sistemas com vários locais ou em cluster.
 
 * **Método HTTP**
 
-   O método HTTP a ser usado.
+  O método HTTP a ser usado.
 
-   Para um agente de limpeza do Dispatcher, isso é quase sempre GET e não deve ser alterado (POST seria outro valor possível).
+  Para um agente de limpeza do Dispatcher, isso é quase sempre GET e não deve ser alterado (POST seria outro valor possível).
 
 * **Cabeçalhos de HTTP**
 
-   Eles são usados para agentes de limpeza do Dispatcher e especificam elementos que devem ser removidos.
+  Eles são usados para agentes de limpeza do Dispatcher e especificam elementos que devem ser removidos.
 
-   Para um agente de limpeza do Dispatcher, as três entradas padrão não devem precisar ser alteradas:
+  Para um agente de limpeza do Dispatcher, as três entradas padrão não devem precisar ser alteradas:
 
    * `CQ-Action:{action}`
    * `CQ-Handle:{path}`
    * `CQ-Path:{path}`
 
-   Eles são usados, conforme apropriado, para indicar a ação a ser usada ao limpar a alça ou o caminho. Os subparâmetros são dinâmicos:
+  Eles são usados, conforme apropriado, para indicar a ação a ser usada ao limpar a alça ou o caminho. Os subparâmetros são dinâmicos:
 
    * `{action}` indica uma ação de replicação
 
    * `{path}` indica um caminho
 
-   Eles são substituídos pelo caminho/ação relevante para a solicitação e, portanto, não precisam ser &quot;codificados&quot;:
+  Eles são substituídos pelo caminho/ação relevante para a solicitação e, portanto, não precisam ser &quot;codificados&quot;:
 
-   >[!NOTE]
-   >
-   >Se você instalou o AEM em um contexto diferente do contexto padrão recomendado, será necessário registrar o contexto nos Cabeçalhos HTTP. Por exemplo:
-   >`CQ-Handle:/<*yourContext*>{path}`
+  >[!NOTE]
+  >
+  >Se você instalou o AEM em um contexto diferente do contexto padrão recomendado, será necessário registrar o contexto nos Cabeçalhos HTTP. Por exemplo:
+  >`CQ-Handle:/<*yourContext*>{path}`
 
 * **Fechar conexão**
 
-   Ativar para fechar a conexão após cada solicitação.
+  Ativar para fechar a conexão após cada solicitação.
 
 * **Tempo limite da conexão**
 
-   Tempo limite (em milissegundos) a ser aplicado ao tentar estabelecer uma conexão.
+  Tempo limite (em milissegundos) a ser aplicado ao tentar estabelecer uma conexão.
 
 * **Tempo limite do soquete**
 
-   Tempo limite (em milissegundos) a ser aplicado ao aguardar pelo tráfego após uma conexão ser estabelecida.
+  Tempo limite (em milissegundos) a ser aplicado ao aguardar pelo tráfego após uma conexão ser estabelecida.
 
 * **Versão do protocolo**
 
-   Versão do protocolo; por exemplo `1.0` para HTTP/1.0.
+  Versão do protocolo; por exemplo `1.0` para HTTP/1.0.
 
 #### Acionadores {#triggers}
 
@@ -321,31 +320,31 @@ Essas configurações são usadas para definir acionadores para replicação aut
 
 * **Ignorar padrão**
 
-   Se marcado, o agente será excluído da replicação padrão; isso significa que ele não será usado se um autor de conteúdo emitir uma ação de replicação.
+  Se marcado, o agente será excluído da replicação padrão; isso significa que ele não será usado se um autor de conteúdo emitir uma ação de replicação.
 
 * **Em modificação**
 
-   Aqui, uma replicação por esse agente será acionada automaticamente quando uma página for modificada. Isso é usado principalmente para agentes de limpeza do Dispatcher, mas também para replicação reversa.
+  Aqui, uma replicação por esse agente será acionada automaticamente quando uma página for modificada. Isso é usado principalmente para agentes de limpeza do Dispatcher, mas também para replicação reversa.
 
 * **Durante roll-out**
 
-   Se marcado, o agente replicará automaticamente qualquer conteúdo marcado para distribuição quando for modificado.
+  Se marcado, o agente replicará automaticamente qualquer conteúdo marcado para distribuição quando for modificado.
 
 * **Horário Ligado/Desligado atingido**
 
-   Isso acionará a replicação automática (para ativar ou desativar uma página, conforme apropriado) quando ocorrerem os tempos online ou offline definidos para uma página. Isso é usado principalmente para agentes de limpeza do Dispatcher.
+  Isso acionará a replicação automática (para ativar ou desativar uma página, conforme apropriado) quando ocorrerem os tempos online ou offline definidos para uma página. Isso é usado principalmente para agentes de limpeza do Dispatcher.
 
 * **No recebimento**
 
-   Se marcado, o agente encadeará a replicação sempre que receber eventos de replicação.
+  Se marcado, o agente encadeará a replicação sempre que receber eventos de replicação.
 
 * **Sem atualização de status**
 
-   Quando marcado, o agente não forçará uma atualização do status de replicação.
+  Quando marcado, o agente não forçará uma atualização do status de replicação.
 
 * **Sem controle de versão**
 
-   Quando marcado, o agente não forçará o controle da versão das páginas ativadas.
+  Quando marcado, o agente não forçará o controle da versão das páginas ativadas.
 
 ## Configurar os agentes de replicação {#configuring-your-replication-agents}
 
@@ -358,6 +357,7 @@ Na guia Ferramentas do ambiente de autor, é possível configurar agentes de rep
 >[!NOTE]
 >
 >Quando um dispatcher lida com solicitações HTTP para instâncias de autor ou publicação, a solicitação HTTP do agente de replicação deve incluir o cabeçalho PATH. Além do procedimento a seguir, você deve adicionar o cabeçalho PATH à lista de cabeçalhos de clientes do dispatcher. (Consulte [/clientheaders (Cabeçalhos do cliente)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
+>
 
 1. Acesse o **Ferramentas** no AEM.
 1. Clique em **Replicação** (painel esquerdo para abrir a pasta).
@@ -429,14 +429,14 @@ Para configurar a replicação de conteúdo para uma instância de publicação 
       * Defina o **Tentar novamente o atraso** para `60000`.
 
       * Deixe a **Tipo de serialização** as `Default`.
+
    * No **Transporte** guia:
 
       * Insira o URI necessário para a nova instância de publicação; por exemplo,
-         `https://localhost:4504/bin/receive`.
+        `https://localhost:4504/bin/receive`.
 
       * Insira a conta de usuário específica do site usada para replicação.
       * Você pode configurar outros parâmetros conforme necessário.
-
 
 1. Clique em **OK** para salvar as configurações.
 
@@ -453,9 +453,7 @@ Se encontrar problemas, verifique os logs na instância do autor. Dependendo do 
 >1. Configure um agente de replicação para replicar nesse ambiente de publicação.
 >1. Configurar uma conta de usuário; com os direitos de acesso necessários para ler o conteúdo que será replicado para esse ambiente de publicação específico.
 >1. Atribua a conta de usuário como o **ID de usuário agente** para o agente de replicação.
-
 >
-
 
 ### Configuração de um agente de limpeza do Dispatcher {#configuring-a-dispatcher-flush-agent}
 
@@ -474,10 +472,11 @@ Os agentes padrão estão incluídos na instalação. No entanto, determinadas c
       * Deixe a **Tipo de serialização** as `Dispatcher Flush`ou defina-o como tal se estiver criando um novo agente.
 
       * (opcional) Selecione **Atualização de alias** para ativar solicitações de invalidação de alias ou caminho personalizado para o Dispatcher.
+
    * No **Transporte** guia:
 
       * Insira o URI necessário para a nova instância de publicação; por exemplo,
-         `https://localhost:80/dispatcher/invalidate.cache`.
+        `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Insira a conta de usuário específica do site usada para replicação.
       * Você pode configurar outros parâmetros conforme necessário.
@@ -499,7 +498,7 @@ O acesso às páginas usadas para configurar os agentes de replicação pode ser
 
 >[!NOTE]
 >
->A definição dessas permissões não afetará os usuários que replicam conteúdo (por exemplo, a partir do console Sites ou da opção sidekick). A estrutura de replicação não usa a &quot;sessão de usuário&quot; do usuário atual para acessar agentes de replicação ao replicar páginas.
+>A definição dessas permissões não afetará os usuários que replicam conteúdo (por exemplo, do console Sites ou da opção sidekick). A estrutura de replicação não usa a &quot;sessão de usuário&quot; do usuário atual para acessar agentes de replicação ao replicar páginas.
 
 ### Configurar os agentes de replicação do CRXDE Lite {#configuring-your-replication-agents-from-crxde-lite}
 
@@ -570,7 +569,7 @@ O editor desembalará todos os itens, os salvará e relatará ao autor.
 
 1. Ir para `http://serveraddress:serverport/siteadmin`
 1. Pressione a **[!UICONTROL Ferramentas]** ícone no lado superior da tela
-1. No painel de navegação esquerdo, vá para **[!UICONTROL Replicação - Agentes no autor]** e clique duas vezes **[!UICONTROL Agente padrão]**.
+1. No painel de navegação esquerdo, vá para **[!UICONTROL Replicação - Agentes no autor]** e clique duas vezes em **[!UICONTROL Agente padrão]**.
    * Você também pode acessar o agente de replicação de publicação padrão acessando diretamente `http://serveraddress:serverport/etc/replication/agents.author/publish.html`
 1. Pressione a **[!UICONTROL Editar]** acima da fila de replicação.
 1. Na janela a seguir, vá para a **[!UICONTROL Lote]** guia:

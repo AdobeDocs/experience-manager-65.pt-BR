@@ -7,9 +7,9 @@ feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '579'
 ht-degree: 8%
 
 ---
@@ -33,10 +33,10 @@ A visualização 3D interativa é compatível com os seguintes formatos de arqui
 
 | Extensão de arquivo 3D | Formato de arquivo | Tipo MIME | Notas |
 |---|---|---|---|
-| GLB | Transmissão GL Binária | model/gltf-binary |  |
+| GLB | Transmissão GL Binária | model/gltf-binary | |
 | GLTF | Formato de Transmissão GL | model/gltf+json | Consulte **Nota** abaixo. |
-| OBJ | Arquivo de objeto 3D do WaveFront | application/x-tgif |  |
-| STL | Estereolitografia | application/vnd.ms-pki.stl |  |
+| OBJ | Arquivo de objeto 3D do WaveFront | application/x-tgif | |
+| STL | Estereolitografia | application/vnd.ms-pki.stl | |
 | DN | Adobe Dimension | model/x-adobe-dn | Suporte somente para assimilação; visualização não disponível. |
 | USDZ | Arquivo Zip de Descrição de Cena Universal | model/vnd.usdz+zip | Suporte somente para assimilação; visualização não disponível. |
 
@@ -79,10 +79,10 @@ Consulte [Formatos compatíveis com a visualização 3D](#supported-3d-previewin
    | Exibir | Descrição | Ação do mouse | Ação da tela de toque |
    | --- | --- | --- | --- |
    | **Girar a câmera** | Gire a visualização em torno da cena 3D e dos objetos. | Clique com o botão esquerdo + arraste. | Pressione com um dedo + arraste. |
-   | **Deslocar a câmera** | Desloque sua exibição para a esquerda, direita, para cima ou para baixo. | Clique com o botão direito + arraste. | Pressione com dois dedos + arraste. |
+   | **Deslocar a câmera** | Desloque sua exibição para a esquerda, direita, para cima ou para baixo. | Clique com o botão direito do mouse e arraste. | Pressione com dois dedos + arraste. |
    | **Aplicar zoom à sua câmera** | Mova para dentro e para fora das áreas na cena 3D. | Roda de rolagem. | Pinça de dois dedos. |
    | **Recentralize sua câmera** | Recentralize sua câmera em um ponto sobre um objeto na cena 3D. | Clique duas vezes em. | Toque duas vezes. |
-   | **Redefinir** | Próximo ao canto inferior direito da página, selecione o ícone Redefinir para restaurar o ponto de destino de exibição para o centro do ativo 3D. A redefinição também move a câmera para mais perto ou mais longe, para mostrar o ativo em sua totalidade e em um tamanho de visualização razoável. |  |  |
-   | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, selecione o ícone Tela cheia. |  |  |
+   | **Redefinir** | Próximo ao canto inferior direito da página, selecione o ícone Redefinir para restaurar o ponto de destino de exibição para o centro do ativo 3D. A redefinição também move a câmera para mais perto ou mais longe, para mostrar o ativo em sua totalidade e em um tamanho de visualização razoável. |   |   |
+   | **Modo de tela cheia** | Para entrar no modo de tela cheia, no canto inferior direito da página, selecione o ícone Tela cheia. |   |   |
 
 1. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Fechar]**.

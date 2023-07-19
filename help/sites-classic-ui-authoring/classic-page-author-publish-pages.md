@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 5%
 
 ---
@@ -29,15 +29,14 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >Alguns termos relacionados à publicação podem ser confundidos:
 >
 >* **Publicar/Desfazer a publicação**
-   >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
+>  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
 >
 >* **Ativar / Desativar**
-   >  Estes termos são sinônimos de publicar/desfazer a publicação.
+>  Estes termos são sinônimos de publicar/desfazer a publicação.
 >
 >* **Replicar / Replicação**
-   >  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
+>  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
 >
-
 
 >[!NOTE]
 >
@@ -46,7 +45,6 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >* Um fluxo de trabalho será acionado para notificar a pessoa apropriada sobre sua solicitação de publicação.
 >* Uma mensagem será exibida (por um curto período de tempo) para notificá-lo sobre isso.
 >
-
 
 ## Publicar uma página {#publishing-a-page}
 
@@ -73,6 +71,8 @@ Você pode ativar páginas no console Sites. Depois de abrir uma página e modif
    >[!NOTE]
    >
    >Se necessário, o AEM solicita que você ative ou reative quaisquer ativos vinculados à página. Você pode marcar ou desmarcar as caixas de seleção para ativar esses ativos.
+   >
+   >
 
 1. Se necessário, o AEM solicita que você ative ou reative quaisquer ativos vinculados à página. Você pode marcar ou desmarcar as caixas de seleção para ativar esses ativos.
 

@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
 exl-id: 50785534-5784-4354-b123-5e640b7c0242
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,7 @@ Os modelos são usados para determinar como as entidades são criadas. Eles defi
 >[!NOTE]
 >
 >Existe um modelo fora de um aplicativo, pois mais de um aplicativo pode usá-lo.
+>
 
 Consulte **[Modelos](/help/mobile/administer-mobile-apps.md)** para criar e gerenciar modelos no painel e no repositório.
 
@@ -65,6 +66,7 @@ Consulte **[Trabalhar com entidades](/help/mobile/spaces-and-entities.md)** para
 >[!NOTE]
 >
 >Se o modelo não corresponder a um conteúdo AEM existente, como o cliente que criou um novo modelo, haverá uma interface do usuário para que um cliente possa criar uma nova entidade.
+>
 
 ### Espaços no modelo de conteúdo {#spaces-in-content-model}
 
