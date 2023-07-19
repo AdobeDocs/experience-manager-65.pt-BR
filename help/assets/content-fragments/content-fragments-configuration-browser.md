@@ -1,23 +1,23 @@
 ---
 title: Fragmentos de conteúdo — Navegador de configuração
-description: Saiba como ativar determinadas funcionalidades do Fragmento de conteúdo no Navegador de configuração para aproveitar os recursos avançados de entrega do AEM headless.
+description: Saiba como ativar determinadas funcionalidades do fragmento de conteúdo no Navegador de configuração para usar os recursos avançados de entrega headless do Adobe Experience Manager.
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 78%
+source-wordcount: '272'
+ht-degree: 41%
 
 ---
 
 # Fragmentos de conteúdo — Navegador de configuração{#content-fragments-configuration-browser}
 
-Saiba como ativar determinadas funcionalidades do Fragmento de conteúdo no Navegador de configuração para aproveitar os recursos avançados de entrega do AEM headless.
+Saiba como ativar determinadas funcionalidades do fragmento de conteúdo no Navegador de configuração para usar os eficientes recursos de entrega headless do Adobe Experience Manager (AEM).
 
 ## Ativar a funcionalidade de fragmento de conteúdo para sua instância {#enable-content-fragment-functionality-instance}
 
-Antes de usar fragmentos de conteúdo, você precisa usar o **navegador de configuração** para ativar:
+Antes de usar fragmentos de conteúdo, use o **Navegador de configuração** para ativar o seguinte:
 
 * **Modelos de fragmentos de conteúdo** (obrigatório)
 * **Consultas persistentes de GraphQL** (opcional)
@@ -26,22 +26,21 @@ Antes de usar fragmentos de conteúdo, você precisa usar o **navegador de confi
 >
 >Se você não ativar os **modelos de fragmentos de conteúdo**:
 >
->* a opção **Criar** não estará disponível para criar novos modelos.
->* você não poderá [selecionar a configuração de sites para criar o ponto de acesso relacionado](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
+>* o **Criar** A opção não estará disponível para criar modelos.
+>* você não pode [selecione a configuração do Sites para criar o ponto de extremidade relacionado](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
 
-
-Para ativar a funcionalidade do fragmento de conteúdo, é necessário:
+Para ativar a funcionalidade de fragmento de conteúdo, você deve fazer o seguinte:
 
 * Ativar o uso da funcionalidade de fragmento de conteúdo por meio do navegador de configuração
 * Aplicar a configuração à sua pasta de ativos
 
 ### Ativar a funcionalidade de fragmento de conteúdo no navegador de configuração {#enable-content-fragment-functionality-in-configuration-browser}
 
-Para [usar determinadas funcionalidades do fragmento de conteúdo](#creating-a-content-fragment-model), primeiro é **necessário** habilitá-las por meio do **navegador de configuração**:
+Para [usar determinadas funcionalidades do fragmento de conteúdo](#creating-a-content-fragment-model), você **deve** primeiro ative-os por meio da **Navegador de configuração**:
 
 >[!NOTE]
 >
->Para obter mais detalhes, consulte também [Navegador de configuração:](/help/sites-administering/configurations.md#using-configuration-browser).
+>Para obter mais informações, consulte [Navegador de configuração:](/help/sites-administering/configurations.md#using-configuration-browser).
 
 1. Navegue até **Ferramentas**, **Geral**, e abra o **Navegador de configuração**.
 
@@ -53,7 +52,6 @@ Para [usar determinadas funcionalidades do fragmento de conteúdo](#creating-a-c
       * **Consultas persistentes de GraphQL**
 
       ![Definir configuração](assets/cfm-conf-01.png)
-
 
 1. Selecione **Criar** para salvar a definição.
 

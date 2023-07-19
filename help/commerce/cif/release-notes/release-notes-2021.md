@@ -1,10 +1,10 @@
 ---
-title: Notas de versão de 2021 de conteúdo e comércio de AEM
-description: Notas de versão de 2021 de conteúdo e comércio de AEM
+title: Notas de versão de 2021 do Adobe Experience Manager Content and Commerce
+description: Notas de versão de 2021 do Adobe Experience Manager Content and Commerce
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1318'
 ht-degree: 13%
 
 ---
@@ -17,7 +17,7 @@ Consulte na tabela a seguir os requisitos mínimos do sistema para saber a vers�
 
 | Componente | Requisitos do sistema |
 |:-------|:-----:|
-| Complemento CIF | Mínimo: esquemas do GraphQL com AEM 6.5.7, Adobe Commerce 2.3.5 |
+| Complemento CIF | Mínimo: esquemas do Adobe Experience Manager (AEM) 6.5.7, Adobe Commerce 2.3.5 GraphQL |
 | Componentes principais da CIF | [Requisitos do sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Arquétipo de projeto do AEM | [Requisitos do sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -51,7 +51,7 @@ Consulte na tabela a seguir os requisitos mínimos do sistema para saber a vers�
 
 * O complemento CIF é compatível com a versão mais recente do Commerce v2.4.3 com novas APIs e esquemas do GraphQL
 
-* Os autores podem adicionar links para páginas de produtos e catálogos em campos de texto usando o editor de rich text (RTE). Foi adicionado um ícone da CIF à barra de ferramentas do RTE, que abrirá os seletores para pesquisar e selecionar rapidamente o produto ou categoria sem sair do contexto.
+* Os autores podem adicionar links para páginas de produtos e catálogos em campos de texto usando o editor de rich text (RTE). Foi adicionado um ícone da CIF à barra de ferramentas do RTE, que abre os seletores para pesquisar e selecionar rapidamente o produto ou categoria sem sair do contexto.
 
 * O carrinho de compras pop-up e o check-out foram substituídos por páginas dedicadas de carrinho de compras e check-out para AEM. Os componentes nessas páginas são criados usando os componentes Peregrine extensíveis do Adobe Commerce
 
@@ -71,11 +71,11 @@ Consulte na tabela a seguir os requisitos mínimos do sistema para saber a vers�
 
 * A nova guia &quot;conteúdo de comércio associado&quot; no editor de sites aumenta a eficiência do autor, obtendo rapidamente acesso ao conteúdo de produto AEM relevante para o contexto atual
 
-   ![Conteúdo de comércio associado](/help/assets/CIF/associated-commerce-content.png)
+  ![Conteúdo de comércio associado](/help/assets/CIF/associated-commerce-content.png)
 
 * Interface aprimorada do seletor de produtos para obter melhor experiência do usuário, maior eficiência e suporte para catálogos de produtos complexos
 
-   ![Novo seletor de produtos](/help/assets/CIF/product-picker.png)
+  ![Novo seletor de produtos](/help/assets/CIF/product-picker.png)
 
 * Respeitar a propriedade &quot;include_in_menu&quot; no componente de navegação
 
@@ -97,9 +97,9 @@ Consulte na tabela a seguir os requisitos mínimos do sistema para saber a vers�
 
 ### Novidades {#what-is-new-august}
 
-* Nova interface do seletor de categorias para melhorar a experiência do usuário, aumentar a eficiência e melhorar o suporte para catálogos de produtos complexos
+* Nova interface do Seletor de categorias para melhorar a experiência do usuário, aumentar a eficiência e melhorar o suporte para catálogos de produtos complexos
 
-   ![Novo Seletor de Categoria](/help/assets/CIF/category-picker.png)
+  ![Novo Seletor de Categoria](/help/assets/CIF/category-picker.png)
 
 * Melhor suporte A11Y para os Componentes principais da CIF
 
