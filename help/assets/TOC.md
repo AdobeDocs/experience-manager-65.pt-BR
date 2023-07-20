@@ -6,10 +6,12 @@ audience: end-user
 user-guide-title: Guia do Assets
 breadcrumb-title: Guia do Assets
 user-guide-description: Crie, gerencie, processe e distribua ativos digitais.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+role: User
+feature: Asset Management
+source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 46%
+ht-degree: 47%
 
 ---
 
@@ -79,7 +81,7 @@ ht-degree: 46%
    + [Adição de ativos do Dynamic Media a páginas](adding-dynamic-media-assets-to-pages.md)
    + [Adicionar recursos do Dynamic Media Classic às páginas](scene7.md)
    + [Incorporação do visualizador do Dynamic Video ou Image em uma página da Web](embed-code.md)
-   + [Vincular URLs ao seu aplicativo web.](linking-urls-to-yourwebapplication.md)
+   + [Vincular URLs ao seu aplicativo web](linking-urls-to-yourwebapplication.md)
    + [Uso de conjuntos de regras para transformar URLs](using-rulesets-to-transform-urls.md)
    + [Publicar ativos do Dynamic Media](publishing-dynamicmedia-assets.md)
    + [Trabalhar com publicação seletiva no Dynamic Media](selective-publishing.md)
@@ -137,7 +139,7 @@ ht-degree: 46%
    + [Marca d&#39;água em seus ativos](watermarking.md)
    + [Modelos de ativos](asset-templates.md)
 + Brand Portal {#brandportal}
-   + [Configurar o  [!DNL Assets]  com o  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configurar o [!DNL Assets] com o [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicar ativos no  [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Publicar pastas em [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Publicar coleções em [!DNL Brand Portal]](brand-portal-publish-collection.md)

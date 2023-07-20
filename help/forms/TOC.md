@@ -8,7 +8,8 @@ user-guide-title: Guia do Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
-source-git-commit: 91683330024fbf1059715447073f35cecde45b0a
+feature: Forms Service
+source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
 workflow-type: tm+mt
 source-wordcount: '3889'
 ht-degree: 4%
@@ -479,7 +480,7 @@ ht-degree: 4%
       + [Definição das configurações do Adobe PDF](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [Definição das configurações de segurança](/help/forms/using/admin-help/configuring-security-settings.md)
       + [Definição das configurações de tipo de arquivo](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [Importação e exportação de arquivos de configuração de PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [Importação e exportação de arquivos de configuração do Gerador de PDF](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [Habilitar suporte para PDF/A](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [Configuração de uma impressora de rede PDFG (somente Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [Configuração de fontes de fallback](/help/forms/using/admin-help/configuring-fallback-fonts.md)
@@ -568,7 +569,7 @@ ht-degree: 4%
       + [Backup dos dados de formulários AEM](/help/forms/using/admin-help/backing-aem-forms-data.md)
       + [Arquivos para backup e recuperação](/help/forms/using/admin-help/files-back-recover.md)
       + [Estratégia de backup e recuperação para formulários AEM](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md)
-      + [Limitações de backup do PDF Generator](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
+      + [Limitações de backup de PDF Generator](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
       + [Estratégias de backup para pastas monitoradas](/help/forms/using/admin-help/backup-strategies-watched-folders.md)
       + [Recuperação dos dados de formulários do AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md)
       + [Estratégia de backup do Connector para usuários do EMC Documentum](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
