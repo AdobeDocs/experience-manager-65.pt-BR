@@ -8,9 +8,9 @@ user-guide-title: Guia do Adobe Experience Manager 6.5 Forms
 breadcrumb-title: Guia do Forms
 user-guide-description: Crie, gerencie, publique e atualize formulários digitais.
 role: User
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 91683330024fbf1059715447073f35cecde45b0a
 workflow-type: tm+mt
-source-wordcount: '3881'
+source-wordcount: '3889'
 ht-degree: 4%
 
 ---
@@ -127,6 +127,7 @@ ht-degree: 4%
    + [Introdução à integração de dados do AEM Forms](using/data-integration.md)
    + [Configurar fontes de dados](using/configure-data-sources.md)
    + [Configuração do Microsoft Dynamics Odata](using/ms-dynamics-odata-configuration.md)
+   + [Integração do Salesforce usando a autorização de fluxo de credenciais do cliente OAuth 2.0](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Criar modelo de dados de formulário](using/create-form-data-models.md)
    + [Trabalhar com o modelo de dados de formulário](using/work-with-form-data-model.md)
    + [Usar modelo de dados de formulário](using/using-form-data-model.md)
@@ -478,12 +479,12 @@ ht-degree: 4%
       + [Definição das configurações do Adobe PDF](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [Definição das configurações de segurança](/help/forms/using/admin-help/configuring-security-settings.md)
       + [Definição das configurações de tipo de arquivo](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [Importação e exportação de arquivos de configuração do Gerador de PDF](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [Importação e exportação de arquivos de configuração de PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [Habilitar suporte para PDF/A](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [Configuração de uma impressora de rede PDFG (somente Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [Configuração de fontes de fallback](/help/forms/using/admin-help/configuring-fallback-fonts.md)
       + [Modificação das configurações de conversão da exportação de PDF](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
-      + [Conversão de arquivos usando o PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
+      + [Conversão de arquivos usando o Gerador de PDF](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
    + Configuração do SSL {#configure-ssl}
       + [Visão geral da configuração do SSL](/help/forms/using/admin-help/overview-6.md)
       + [Configurando o SSL para o servidor da aplicação JBoss](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
@@ -567,7 +568,7 @@ ht-degree: 4%
       + [Backup dos dados de formulários AEM](/help/forms/using/admin-help/backing-aem-forms-data.md)
       + [Arquivos para backup e recuperação](/help/forms/using/admin-help/files-back-recover.md)
       + [Estratégia de backup e recuperação para formulários AEM](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md)
-      + [Limitações de backup de PDF Generator](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
+      + [Limitações de backup do PDF Generator](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
       + [Estratégias de backup para pastas monitoradas](/help/forms/using/admin-help/backup-strategies-watched-folders.md)
       + [Recuperação dos dados de formulários do AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md)
       + [Estratégia de backup do Connector para usuários do EMC Documentum](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
