@@ -1,18 +1,14 @@
 ---
 title: Modelos e componentes do aplicativo
-seo-title: App Templates and Components
 description: Siga esta página para saber mais sobre Modelos e componentes de aplicativo. Ele fornece informações detalhadas sobre a estrutura dos templates.
-seo-description: Follow this page to learn about App Templates and Components. It provides detailed information on the structure of templates.
-uuid: ba2fd91b-de5a-4f39-a976-5455f9983669
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '408'
 ht-degree: 1%
 
 ---
@@ -25,14 +21,14 @@ ht-degree: 1%
 
 Um Modelo é usado para criar uma Página e define quais componentes podem ser usados dentro do escopo selecionado. Um modelo é uma hierarquia de nós que tem a mesma estrutura da página a ser criada, mas sem nenhum conteúdo real.
 
-Cada modelo apresentará uma seleção de componentes disponíveis para uso.
+Cada modelo apresenta uma seleção de componentes disponíveis para uso.
 
 * Os modelos são criados de [Componentes](/help/sites-developing/components.md);
 * Os componentes usam e permitem acesso a Widgets e eles são usados para renderizar o Conteúdo.
 
 >[!NOTE]
 >
->Para saber como desenvolver seu aplicativo AEM usando o CRXDE Lite, consulte [Desenvolvimento com o CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Para saber como desenvolver o aplicativo Adobe Experience Manager (AEM) usando o CRXDE Lite, consulte [Desenvolvimento com o CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Um modelo é a base de uma página.
 
@@ -54,7 +50,7 @@ Várias propriedades podem ser definidas, em particular:
 * **jcr:title** - título do modelo; aparece na caixa de diálogo ao criar uma página.
 * **jcr:description** - descrição do modelo; aparece na caixa de diálogo ao criar uma página.
 
-Este nó contém *um jcr:content (cq:PageContent)* que será usado como base para o nó de conteúdo das páginas resultantes; isso faz referência, usando *sling:resourceType*, o componente a ser usado para renderizar o conteúdo real de uma nova página.
+Este nó contém *um jcr:content (cq:PageContent)* que é usado como base para o nó de conteúdo das páginas resultantes. Isso faz referência, usando *sling:resourceType*, o componente a ser usado para renderizar o conteúdo real de uma nova página.
 
 >[!NOTE]
 >

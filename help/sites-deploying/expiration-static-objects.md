@@ -1,19 +1,15 @@
 ---
 title: Expiração de objetos estáticos
-seo-title: Expiration of Static Objects
-description: Saiba como configurar o AEM para que objetos estáticos não expirem (por um período razoável).
-seo-description: Learn how to configure AEM so that static objects do not expire (for a reasonable period of time).
-uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
+description: Saiba como configurar o Adobe Experience Manager para que objetos estáticos não expirem (por um período razoável).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -27,13 +23,13 @@ Isso tem o seguinte impacto:
 * Descarrega solicitações da infraestrutura do servidor.
 * Aumenta o desempenho do carregamento da página, à medida que o navegador armazena objetos em cache no cache do navegador.
 
-As expirações são especificadas pelo padrão HTTP em relação à &quot;expiração&quot; de arquivos (consulte, por exemplo, o capítulo 14.21 de [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Protocolo de Transferência de Hipertexto — HTTP 1.1&quot;). Esse padrão usa o cabeçalho para permitir que os clientes armazenem objetos em cache até que sejam considerados obsoletos; esses objetos são armazenados em cache pelo período especificado sem que nenhuma verificação de status seja feita no servidor de origem.
+As expirações são especificadas pelo padrão HTTP em relação à &quot;expiração&quot; de arquivos (por exemplo, consulte o capítulo 14.21 de [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Protocolo de Transferência de Hipertexto — HTTP 1.1&quot;). Esse padrão usa o cabeçalho para permitir que os clientes armazenem objetos em cache até que sejam considerados obsoletos; esses objetos são armazenados em cache pelo período especificado sem que nenhuma verificação de status seja feita no servidor de origem.
 
 >[!NOTE]
 >
->Essa configuração é completamente separada do (e não funcionará para) Dispatcher.
+>Essa configuração é separada do (e não funcionará para) Dispatcher.
 >
->A finalidade do Dispatcher é armazenar dados em cache na frente do AEM.
+>A finalidade do Dispatcher é armazenar dados em cache na frente do Adobe Experience Manager (AEM).
 
 Todos os arquivos, que não são dinâmicos e que não mudam com o tempo, podem e devem ser armazenados em cache. A configuração do servidor HTTPD do Apache pode ser semelhante a um dos seguintes - dependendo do ambiente:
 
@@ -77,7 +73,7 @@ Todos os arquivos, que não são dinâmicos e que não mudam com o tempo, podem 
 
    Isso permite que o cache intermediário (por exemplo, o cache do navegador) armazene arquivos CSS, JavaScript, PNG e GIF por até um dia nos caches do cliente. Embora este exemplo ilustre as configurações globais para tudo abaixo `/content` e `/etc/designs`, você deve torná-lo mais granular.
 
-   Dependendo da frequência com que seu site é atualizado, você também pode considerar o armazenamento em cache de páginas de HTML. Um período de tempo razoável seria de 1 hora:
+   Dependendo da frequência com que seu site é atualizado, você também pode considerar o armazenamento em cache de páginas de HTML. Um período de tempo razoável seria de uma hora:
 
    ```xml
    <Location /content>

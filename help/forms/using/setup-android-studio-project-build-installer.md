@@ -1,26 +1,22 @@
 ---
-title: Configure o projeto do Android Studio e crie o aplicativo Android
-seo-title: Set up the Android studio project and build the Android app
-description: Etapas para configurar o projeto do Android Studio e criar o instalador para o aplicativo AEM Forms
-seo-description: Steps to set up the Android Studio project and build the installer for the AEM Forms app
-uuid: 4c966cdc-d0f5-4b5b-b21f-f11e8a35ec8a
+title: Configurar o projeto do Android&trade; studio e criar o aplicativo Android&trade;
+description: Etapas para configurar o projeto Android&trade; Studio e criar o instalador para o aplicativo Forms do Adobe Experience Manager (AEM)
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
-discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '597'
 ht-degree: 7%
 
 ---
 
-# Configure o projeto do Android Studio e crie o aplicativo Android {#set-up-the-android-studio-project-and-build-the-android-app}
+# Configure o projeto do Android™ Studio e crie o aplicativo Android™ {#set-up-the-android-studio-project-and-build-the-android-app}
 
-Este artigo é para a criação do aplicativo AEM Forms 6.3.1.1 e versões posteriores. Para criar um aplicativo a partir do código-fonte do código-fonte do Aplicativo AEM Forms 6.3, consulte [Configurar o projeto Eclipse e criar o aplicativo Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
+Este artigo é para a criação do aplicativo AEM Forms 6.3.1.1 e versões posteriores. Para criar um aplicativo a partir do código-fonte do Aplicativo AEM Forms 6.3, consulte [Configurar o projeto Eclipse e criar o aplicativo Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
 
-O AEM Forms fornece o código-fonte completo do aplicativo AEM Forms. A origem contém todos os componentes para criar um aplicativo AEM Forms personalizado. O arquivo do código-fonte, `adobe-lc-mobileworkspace-src-<version>.zip` O faz parte da `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacote na Distribuição de software.
+A AEM Forms fornece o código-fonte completo do aplicativo AEM Forms. A origem contém todos os componentes para criar um aplicativo AEM Forms personalizado. O arquivo do código-fonte, `adobe-lc-mobileworkspace-src-<version>.zip` O faz parte da `adobe-aemfd-forms-app-src-pkg-<version>.zip` pacote na Distribuição de software.
 
 Para obter a origem do aplicativo AEM Forms, execute as seguintes etapas:
 
@@ -49,27 +45,27 @@ A imagem a seguir exibe a estrutura de diretório do `android`pasta na `src`past
 
 1. Copie o baixado `adobe-lc-mobileworkspace-src-<version>.zip` arquivar em:
 
-   **Para usuários do MAC**: `[User_Home]/Projects`
+   **Para usuários do Mac**: `[User_Home]/Projects`
 
    **Para usuários do Windows®**: `%HOMEPATH%\Projects`
 
    >[!NOTE]
    >
-   >No Windows®, é recomendável manter o projeto do Android na unidade do sistema.
+   >No Windows®, é recomendável manter o projeto Android™ na unidade do sistema.
 
 1. Extraia o arquivo no seguinte diretório:
 
-   **Para usuários do MAC**: `[User_Home]/Projects/[your-project]`
+   **Para usuários do Mac**: `[User_Home]/Projects/[your-project]`
 
    **Para usuários do Windows®**: `%HOMEPATH%\Projects\[your-project]`
 
    >[!NOTE]
    >
-   >É recomendável manter o projeto Android extraído na unidade do sistema antes de importar o projeto para o Android Studio.
+   É recomendável manter o projeto extraído do Android na unidade do sistema antes de importar o projeto para o Android™ Studio.
 
 1. Inicie o Android™ Studio.
 
-   **Para usuários do MAC**: atualize o `local.properties` arquivo presente no `[User_Home]/Projects/[your-project]/android` e aponte a `sdk.dir` variável para `SDK` em sua área de trabalho.
+   **Para usuários do Mac**: atualize o `local.properties` arquivo presente no `[User_Home]/Projects/[your-project]/android` e aponte a `sdk.dir` variável para `SDK` em sua área de trabalho.
 
    **Para usuários do Windows®**: atualize o `local.properties` arquivo presente no `%HOMEPATH%\Projects\[your-project]\android` e aponte a `sdk.dir` variável para `SDK` em sua área de trabalho.
 
@@ -102,8 +98,8 @@ Depois de criar o projeto, você pode optar por instalar o aplicativo usando o A
 
 ### Utilização do Android™ Debug Bridge {#andriod-debug-bridge}
 
-É possível instalar o aplicativo em um dispositivo Android™ por meio da [Ponte de depuração Android™](https://developer.android.com/tools/help/adb.html) com o seguinte comando:
+É possível instalar o aplicativo em um dispositivo Android™ por meio da [Ponte de depuração Android™](https://developer.android.com/tools/adb) com o seguinte comando:
 
-**Para usuários do MAC**: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
+**Para usuários do Mac**: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
 
 **Para usuários do Windows®**: `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`

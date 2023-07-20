@@ -1,17 +1,15 @@
 ---
 title: Manuseio básico
-description: Uma visão geral do manuseio básico ao usar o ambiente do autor do AEM. Usa o console Sites como base.
-uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
+description: Uma visão geral do manuseio básico ao usar o ambiente de autor do Adobe Experience Manager. Usa o console Sites como base.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 6%
+source-wordcount: '1167'
+ht-degree: 7%
 
 ---
 
@@ -19,9 +17,9 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->* Esta página foi projetada para fornecer uma visão geral do manuseio básico ao usar o ambiente de autor do AEM. Usa o console **Sites** como base.
+>* Esta página foi projetada para fornecer uma visão geral do manuseio básico ao usar o ambiente de autor do Adobe Experience Manager (AEM). Usa o console **Sites** como base.
 >
->* Algumas funcionalidades não estão disponíveis em todos os consoles e/ou funcionalidades adicionais estão disponíveis em alguns consoles. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas serão abordadas com mais detalhes em outras páginas.
+>* Algumas funcionalidades não estão disponíveis em todos os consoles e funcionalidades adicionais estão disponíveis em alguns consoles. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas são abordadas com mais detalhes em outras páginas.
 >* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar páginas de console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [edição](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
@@ -29,7 +27,7 @@ ht-degree: 6%
 
 A interface clássica fornece uma seleção de consoles, usando mecanismos conhecidos para navegar e iniciar ações, incluindo clique, clique duplo e [menus de contexto](#context-menus).
 
-Após o logon, a tela Bem-vindo será exibida. Ela fornece uma lista de links para consoles e serviços:
+Após o logon, a tela Bem-vindo é exibida. Ela fornece uma lista de links para consoles e serviços:
 
 ![screen_shot_2012-01-30at61745pm](assets/screen_shot_2012-01-30at61745pm.png)
 
@@ -57,7 +55,7 @@ Os principais consoles são:
   </tr>
   <tr>
    <td><strong>Caixa de entrada </strong></td>
-   <td>Em muitos casos, várias pessoas estão envolvidas nas subtarefas de um fluxo de trabalho e cada pessoa deve concluir sua etapa antes de entregar o trabalho para a próxima pessoa. A Caixa de entrada permite visualizar notificações relacionadas a essas tarefas. Consulte <a href="/help/sites-administering/workflows.md">Trabalhar com fluxos de trabalho</a>. <br /> </td>
+   <td>Muitas vezes, várias pessoas estão envolvidas nas subtarefas de um fluxo de trabalho e cada pessoa deve concluir sua etapa antes de entregar o trabalho para a próxima pessoa. A Caixa de entrada permite visualizar notificações relacionadas a essas tarefas. Consulte <a href="/help/sites-administering/workflows.md">Trabalhar com fluxos de trabalho</a>. <br /> </td>
   </tr>
   <tr>
    <td><strong>Marcação com tags</strong></td>
@@ -65,7 +63,7 @@ Os principais consoles são:
   </tr>
   <tr>
    <td><strong>Ferramentas</strong></td>
-   <td>A variável <a href="/help/sites-administering/tools-consoles.md">Console Ferramentas</a> fornecer acesso a uma série de ferramentas e consoles especializados que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo.</td>
+   <td>A variável <a href="/help/sites-administering/tools-consoles.md">Console Ferramentas</a> fornecer acesso a várias ferramentas e consoles especializados que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo.</td>
   </tr>
   <tr>
    <td><strong>Usuários</strong></td>
@@ -77,7 +75,7 @@ Os principais consoles são:
   </tr>
   <tr>
    <td><strong>Fluxos de trabalhos</strong></td>
-   <td>Um fluxo de trabalho é uma série definida de etapas que descreve o processo de conclusão de alguma tarefa. Em muitos casos, várias pessoas estão envolvidas em uma tarefa e cada pessoa deve concluir seu passo antes de entregar o trabalho para a próxima pessoa. O console Fluxo de trabalho permite criar modelos de fluxo de trabalho e gerenciar instâncias de fluxo de trabalho em execução. Consulte <a href="/help/sites-administering/workflows.md">Trabalhar com fluxos de trabalho</a>.<br /> </td>
+   <td>Um fluxo de trabalho é uma série definida de etapas que descreve o processo de conclusão de alguma tarefa. Muitas vezes, várias pessoas estão envolvidas em uma tarefa e cada pessoa deve concluir sua etapa antes de entregar o trabalho para a próxima pessoa. O console Fluxo de trabalho permite criar modelos de fluxo de trabalho e gerenciar instâncias de fluxo de trabalho em execução. Consulte <a href="/help/sites-administering/workflows.md">Trabalhar com fluxos de trabalho</a>.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -88,7 +86,7 @@ A variável **Sites** O console do fornece dois painéis para você navegar e ge
 
   Isso mostra a estrutura em árvore dos sites e das páginas dentro deles.
 
-  Ele também mostra informações sobre outros aspectos do AEM, incluindo projetos, blueprints e ativos.
+  Ela também mostra informações sobre outros aspectos do AEM, incluindo projetos, blueprints e ativos.
 
 * Painel direito
 
@@ -104,7 +102,7 @@ Aqui é possível [gerenciar suas páginas](/help/sites-authoring/managing-pages
 
 ## Acessar ajuda   {#accessing-help}
 
-Em vários consoles (por exemplo, Sites) também há **Ajuda** estiver disponível, isso abrirá o Compartilhamento de pacotes ou o site de documentação.
+Em vários consoles (por exemplo, Sites), um **Ajuda** botão está disponível. Clicando **Ajuda** abre o Package Share ou o site de documentação.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
@@ -114,14 +112,14 @@ Ao editar uma página, a variável [o sidekick também possui um botão para ace
 
 A variável **Sites** o console lista suas páginas de conteúdo em uma estrutura de árvore (painel esquerdo). Para facilitar a navegação, as seções da estrutura da árvore podem ser expandidas (+) ou recolhidas (-), conforme necessário:
 
-* Um único clique no nome da página (no painel esquerdo) irá:
+* Clicar no nome da página no painel esquerdo faz o seguinte:
 
-   * Listar as páginas secundárias no painel direito
-   * Expanda também a estrutura no painel esquerdo.
+   * Lista as páginas secundárias no painel direito
+   * Expande a estrutura no painel esquerdo.
 
      Por motivos de desempenho, essa ação depende do número de nós filhos. Com uma instalação padrão, esse método de expansão funciona quando há `30` ou menos nós filhos.
 
-* Um clique duplo no nome da página (painel esquerdo) também expandirá a árvore, embora, como a página é aberta ao mesmo tempo, esse efeito não seja tão óbvio.
+* Clicar duas vezes no nome da página (painel esquerdo) expande a árvore, embora, como a página é aberta ao mesmo tempo, esse efeito não seja tão óbvio.
 
 >[!NOTE]
 >
@@ -140,7 +138,7 @@ A variável **Sites** o console lista suas páginas de conteúdo em uma estrutur
 >em:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Consulte [SiteAdmin na API do widget CQ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin) para obter mais detalhes.
+>Consulte [SiteAdmin na API do widget CQ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) para obter mais detalhes.
 
 ## Informações da página no console Sites {#page-information-on-the-websites-console}
 
@@ -182,7 +180,7 @@ Os itens a seguir estão disponíveis; um subconjunto desses campos é mostrado 
   </tr>
   <tr>
    <td>Status</td>
-   <td>Indica o status atual da página, por exemplo, se a página faz parte de um fluxo de trabalho ou uma live copy, ou se uma página está bloqueada no momento.</td>
+   <td>Indica o status da página, por exemplo, se a página faz parte de um fluxo de trabalho ou uma live copy, ou se uma página está bloqueada.</td>
   </tr>
   <tr>
    <td>Impressões</td>
@@ -209,7 +207,7 @@ Os itens a seguir estão disponíveis; um subconjunto desses campos é mostrado 
 
 >[!NOTE]
 >
->Para selecionar as colunas visíveis, passe o mouse sobre um título de coluna. Um menu suspenso será exibido, onde você pode usar o **Colunas** opção.
+>Para selecionar as colunas visíveis, passe o mouse sobre um título de coluna. Um menu suspenso é exibido e aqui você pode usar o **Colunas** opção.
 
 As cores ao lado das páginas no **Publicado** e **Modificado** as colunas indicam o status da publicação:
 
@@ -224,6 +222,6 @@ As cores ao lado das páginas no **Publicado** e **Modificado** as colunas indic
 
 ## Menus de contexto {#context-menus}
 
-A interface clássica usa mecanismos conhecidos para navegar e iniciar ações, incluindo clicar e clicar duas vezes. Dependendo da situação atual, uma variedade de menus de contexto (geralmente abertos com o botão direito do mouse) também estão disponíveis:
+A interface clássica usa mecanismos conhecidos para navegar e iniciar ações, incluindo clicar e clicar duas vezes. Dependendo da situação atual, uma variedade de menus de contexto (abertos com o botão direito do mouse) também estão disponíveis:
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)

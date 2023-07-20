@@ -1,19 +1,15 @@
 ---
 title: Limpeza de revisão
-seo-title: Revision Cleanup
-description: Saiba como usar a funcionalidade Limpeza de revisão no AEM 6.5.
-seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.5.
-uuid: 321f5038-44b0-4f1e-a1aa-2d29074eed70
+description: Saiba como usar a funcionalidade Limpeza de revisão no Adobe Experience Manager 6.5.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '5902'
+source-wordcount: '5814'
 ht-degree: 0%
 
 ---
@@ -22,13 +18,13 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-Cada atualização no repositório cria uma nova revisão de conteúdo. Como resultado, a cada atualização, o tamanho do repositório aumenta. As revisões antigas precisam ser limpas para liberar recursos de disco - isso é importante para evitar o crescimento descontrolado do repositório. Essa funcionalidade de manutenção é chamada de Limpeza de revisão. Ele está disponível como uma rotina offline desde o AEM 6.0.
+Cada atualização no repositório cria uma revisão de conteúdo. Como resultado, a cada atualização, o tamanho do repositório aumenta. As revisões antigas devem ser limpas para liberar recursos de disco - isso é importante para evitar o crescimento descontrolado do repositório. Essa funcionalidade de manutenção é chamada de Limpeza de revisão. Ele está disponível como uma rotina offline desde o Adobe Experience Manager (AEM) 6.0.
 
 Com o AEM 6.3 e superior, uma versão online dessa funcionalidade chamada Limpeza de revisão online foi introduzida. Comparada à Limpeza de revisão offline, em que a instância de AEM precisa ser desligada, a Limpeza de revisão online pode ser executada enquanto a instância de AEM está online. A Limpeza de revisão online está ativada por padrão e é a maneira recomendada de executar uma limpeza de revisão.
 
-**Nota**: [Assista ao vídeo](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/revision-cleanup-technical-video-use.html) para obter uma introdução e como usar a Limpeza de revisão online.
+**Nota**: [Assista ao vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=en) para obter uma introdução e como usar a Limpeza de revisão online.
 
-O processo de limpeza de revisão consiste em três fases: **estimativa**, **compactação** e **limpar**. A estimativa determina se a próxima fase (compactação) será executada ou não com base na quantidade de lixo que pode ser coletada. Durante a fase de compactação, os segmentos e arquivos tar são regravados, eliminando qualquer conteúdo não utilizado. A fase de limpeza remove posteriormente os segmentos antigos, incluindo qualquer lixo que eles possam conter. O modo offline geralmente pode recuperar mais espaço porque o modo online precisa levar em conta o conjunto de trabalho AEM, que impede que segmentos adicionais sejam coletados.
+O processo de limpeza de revisão consiste em três fases: **estimativa**, **compactação**, e **limpar**. A estimativa determina se a próxima fase (compactação) será executada ou não com base na quantidade de lixo que pode ser coletada. Durante a fase de compactação, os segmentos e arquivos tar são regravados, eliminando qualquer conteúdo não utilizado. A fase de limpeza remove os segmentos antigos, incluindo qualquer lixo que eles possam conter. O modo offline geralmente pode recuperar mais espaço porque o modo online deve considerar o conjunto de trabalho AEM, que impede que segmentos adicionais sejam coletados.
 
 Para obter mais detalhes sobre a Limpeza de revisão, consulte os seguintes links:
 
@@ -36,7 +32,7 @@ Para obter mais detalhes sobre a Limpeza de revisão, consulte os seguintes link
 * [Perguntas frequentes sobre limpeza de revisão online](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions)
 * [Como executar a limpeza de revisão offline](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup)
 
-Além disso, você também pode ler a [documentação oficial do Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html)
+Além disso, você pode ler a [documentação oficial do Oak](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html).
 
 ### Quando usar a Limpeza de revisão online em vez da Limpeza de revisão offline? {#when-to-use-online-revision-cleanup-as-opposed-to-offline-revision-cleanup}
 
@@ -71,7 +67,7 @@ Como alternativa, se você quiser executar a tarefa de limpeza de revisão manua
 
 O processo de limpeza de revisão recupera revisões antigas por gerações. Isso significa que cada vez que você executa a limpeza de revisão, uma nova geração é criada e mantida no disco. Há uma diferença, no entanto, entre os dois tipos de limpeza de revisão: a limpeza de revisão offline mantém uma geração, enquanto a limpeza de revisão online mantém duas gerações. Assim, ao executar a limpeza de revisão online **após** limpeza de revisão offline o seguinte acontece:
 
-1. Após a primeira execução de limpeza de revisão online, o repositório terá o tamanho dobrado. Isso acontece porque agora há duas gerações que são mantidas no disco.
+1. Após a primeira execução de limpeza de revisão online, o tamanho do repositório dobra. Isso acontece porque agora há duas gerações que são mantidas no disco.
 1. Durante as execuções subsequentes, o repositório crescerá temporariamente enquanto a nova geração é criada e, em seguida, se estabilizará de volta ao tamanho que tinha após a primeira execução, à medida que o processo de limpeza da revisão online recupera a geração anterior.
 
 Além disso, lembre-se de que, dependendo do tipo e do número de confirmações, cada geração pode variar de tamanho em comparação à anterior, de modo que o tamanho final pode variar de uma execução para a outra.
@@ -97,12 +93,12 @@ Os dois gráficos abaixo apresentam resultados de testes laboratoriais internos 
 
 A configuração padrão executa a compactação traseira em dias da semana e a compactação completa aos domingos. A configuração padrão pode ser alterada usando o novo valor de configuração `full.gc.days` do `RevisionCleanupTask` [tarefa de manutenção](/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup).
 
-Ao configurar o `full.gc.days` valor esteja ciente de que a compactação completa será executada durante o(s) dia(s) definido(s) no valor e a compactação traseira será executada durante os dias que não estiverem definidos no valor. Por exemplo, se você configurar a compactação total para ser executada no domingo, a compactação traseira será executada de segunda a sábado. Se, por exemplo, você configurar a compactação completa para ser executada todos os dias da semana, a compactação traseira não será executada.
+Ao configurar o `full.gc.days` valor, a compactação total é executada durante os dias definidos no valor e a compactação traseira é executada durante os dias que não estão definidos no valor. Por exemplo, se você configurar a compactação total para ser executada no domingo, a compactação traseira será executada de segunda a sábado. Por exemplo, se você configurar a compactação completa para ser executada todos os dias da semana, a compactação traseira não será executada.
 
 Além disso, considere que:
 
 * **Compactação da cauda** é menos eficaz e tem menos impacto nas operações normais do sistema. Assim, ele deve ser executado durante dias úteis.
-* **Compactação completa** é mais eficaz, mas também tem um impacto maior nas operações normais do sistema. Por conseguinte, destina-se a ser utilizado fora dos dias úteis.
+* **Compactação completa** O é mais eficaz, mas também tem um impacto maior nas operações normais do sistema. Por conseguinte, destina-se a ser utilizado fora dos dias úteis.
 * A compactação traseira e a compactação completa devem ser agendadas para serem executadas fora do horário de pico.
 
 ### Resolução de problemas {#troubleshooting}
@@ -111,7 +107,7 @@ Ao usar os novos modos de compactação, lembre-se do seguinte:
 
 * Você pode monitorar a atividade de entrada/saída (E/S), por exemplo: operações de E/S, CPU aguardando E/S, tamanho da fila de confirmação. Isso ajuda a determinar se o sistema está se tornando vinculado à E/S e requer upsizing.
 * A variável `RevisionCleanupTaskHealthCheck` indica o status de integridade geral da Limpeza de revisão online. Funciona da mesma forma que no AEM 6.3 e não distingue entre compactação total e de cauda.
-* As mensagens de log trazem informações relevantes sobre os modos de compactação. Por exemplo, quando a Limpeza de revisão online é iniciada, as mensagens de log correspondentes indicarão o modo de compactação. Além disso, em alguns casos de canto, o sistema reverterá para compactação completa quando for agendado para executar uma compactação traseira e as mensagens de log indicarão essa alteração. As amostras de log abaixo indicam o modo de compactação e a mudança da cauda para a compactação completa:
+* As mensagens de log trazem informações relevantes sobre os modos de compactação. Por exemplo, quando a Limpeza de revisão online é iniciada, as mensagens de log correspondentes indicam o modo de compactação. Além disso, em alguns casos de exceção, o sistema reverte para a compactação completa quando foi programado para executar uma compactação traseira e as mensagens de log indicam essa alteração. As amostras de log abaixo indicam o modo de compactação e a mudança da cauda para a compactação completa:
 
 ```
 TarMK GC: running tail compaction
@@ -120,7 +116,7 @@ TarMK GC: no base state available, running full compaction instead
 
 ### Limitações conhecidas {#known-limitations}
 
-Em alguns casos, a alternância entre os modos de cauda e compactação total atrasa o processo de limpeza. Mais precisamente, o repositório crescerá após uma compactação completa (ele dobrará de tamanho). O espaço extra será recuperado na compactação traseira subsequente, quando o repositório cair abaixo do tamanho de compactação pré-completo. As execuções de tarefas de manutenção paralelas também devem ser evitadas.
+Às vezes, a alternância entre os modos cauda e compactação total atrasa o processo de limpeza. Mais precisamente, o repositório crescerá após uma compactação completa (ele dobra de tamanho). O espaço extra é recuperado na compactação traseira subsequente, quando o repositório cai abaixo do tamanho da compactação pré-cheia. As execuções de tarefas de manutenção paralelas também devem ser evitadas.
 
 **É recomendável dimensionar o disco pelo menos duas ou três vezes maior que o tamanho estimado do repositório inicialmente.**
 
@@ -136,7 +132,7 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
   </tr>
   <tr>
    <td>O que devo estar ciente ao atualizar para o AEM 6.5?</td>
-   <td><p>O formato de persistência do TarMK será alterado com o AEM 6.5. Essas alterações não exigem uma etapa de migração proativa. Os repositórios existentes passarão por uma migração contínua, que é transparente para o usuário. O processo de migração é iniciado na primeira vez que o AEM 6.5 (ou ferramentas relacionadas) acessa o repositório.</p> <p><strong>Depois que a migração para o formato de persistência AEM 6.5 for iniciada, o repositório não poderá ser revertido para o formato de persistência AEM 6.3 anterior.</strong></p> </td>
+   <td><p>O formato de persistência da TarMK muda com o AEM 6.5. Essas alterações não exigem uma etapa de migração proativa. Os repositórios existentes passam por uma migração contínua, que é transparente para o usuário. O processo de migração é iniciado na primeira vez que o AEM 6.5 (ou ferramentas relacionadas) acessa o repositório.</p> <p><strong>Depois que a migração para o formato de persistência AEM 6.5 é iniciada, o repositório não pode ser revertido para o formato de persistência AEM 6.3 anterior.</strong></p> </td>
   </tr>
  </tbody>
 </table>
@@ -182,7 +178,7 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
   </tr>
   <tr>
    <td><strong>O que acontece se eu executar acidentalmente no formato de repositório incorreto?</strong></td>
-   <td>Se você tentar executar o módulo oak-segment em um repositório oak-segment-tar (ou vice-versa), a inicialização falhará com um <em>IllegalStateException</em> com a mensagem "Formato de segmento inválido". Não ocorrerá corrupção de dados.</td>
+   <td>Se você tentar executar o módulo oak-segment em um repositório oak-segment-tar (ou vice-versa), a inicialização falhará com uma <em>IllegalStateException</em> com a mensagem "Formato de segmento inválido". Não ocorre corrupção de dados.</td>
    <td> </td>
   </tr>
   <tr>
@@ -239,7 +235,7 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
   </tr>
   <tr>
    <td><strong>Por que a primeira Limpeza de revisão online não recupera espaço quando executada após a Limpeza de revisão offline?</strong></td>
-   <td><p>A Limpeza de revisão offline está recuperando tudo, exceto a geração mais recente, em comparação às duas gerações mais recentes da Limpeza de revisão online. No caso de um repositório novo, a Limpeza de revisão online não recuperará espaço quando executada pela primeira vez após a Limpeza de revisão offline, pois não há geração antiga o suficiente para ser recuperada.</p> <p>Além disso, leia a seção "Execução de limpeza de revisão online após a limpeza de revisão offline" do <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">este capítulo</a>.</p> </td>
+   <td><p>A Limpeza de revisão offline está recuperando tudo, exceto a geração mais recente, em comparação às duas gerações mais recentes da Limpeza de revisão online. Se houver um repositório novo, a Limpeza de revisão online não recuperará espaço quando executada pela primeira vez após a Limpeza de revisão offline porque não há geração antiga o suficiente para ser recuperada.</p> <p>Além disso, leia a seção "Execução de limpeza de revisão online após a limpeza de revisão offline" do <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">este capítulo</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -249,7 +245,7 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
   </tr>
   <tr>
    <td><strong>Há algum pré-requisito antes de executar a Limpeza de revisão on-line?</strong></td>
-   <td><p>A Limpeza de revisão online está disponível somente com o AEM 6.3 e versões posteriores. Além disso, se você estiver usando uma versão mais antiga do AEM, será necessário migrar para o novo <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak Segment Tar</a>.</p> </td>
+   <td><p>A Limpeza de revisão online está disponível somente com o AEM 6.3 e versões posteriores. Além disso, se você estiver usando uma versão mais antiga do AEM, será necessário migrar para a nova <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak Segment Tar</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -265,12 +261,12 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
   </tr>
   <tr>
    <td><strong>Os autores ainda podem trabalhar enquanto a Limpeza de revisão online está em execução?</strong></td>
-   <td>Sim, a Limpeza de revisão online pode lidar com gravações simultâneas. No entanto, a Limpeza de revisão on-line funciona de forma mais rápida e eficiente sem transações simultâneas de gravação. É recomendável agendar a tarefa de manutenção Limpeza de revisão online para um tempo relativamente silencioso, sem muito tráfego.</td>
+   <td>Sim, a Limpeza de revisão online pode lidar com gravações simultâneas. No entanto, a Limpeza de revisão on-line funciona de forma mais rápida e eficiente sem transações simultâneas de gravação. A Adobe recomenda agendar a tarefa de manutenção Limpeza de revisão online para um tempo relativamente silencioso, sem muito tráfego.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Quais são os requisitos mínimos de espaço em disco e memória heap ao executar a Limpeza de revisão online?</strong></td>
-   <td><p>O espaço em disco é continuamente monitorado durante a Limpeza de revisão on-line. Se o espaço disponível em disco ficar abaixo de um valor crítico, o processo será cancelado. O valor crítico é 25% do espaço em disco atual do repositório e não é configurável.</p> <p><strong>É recomendável dimensionar o disco pelo menos duas ou três vezes maior que o tamanho estimado do repositório inicialmente.</strong></p> <p>O espaço livre em heap é continuamente monitorado durante o processo de limpeza. Se o espaço livre do heap cair abaixo de um valor crítico, o processo será cancelado. O valor crítico é configurado por meio de org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. O valor padrão é 15%.</p> <p>O Recommendations para dimensionamento mínimo de heap de compactação não é separado das recomendações de dimensionamento de memória do AEM. Regra geral: <strong>Se uma instância de AEM tiver o tamanho suficiente para lidar com os casos de uso e a carga esperada, o processo de limpeza obterá memória suficiente.</strong></p> </td>
+   <td><p>O espaço em disco é continuamente monitorado durante a Limpeza de revisão on-line. Se o espaço disponível em disco ficar abaixo de um valor crítico, o processo será cancelado. O valor crítico é 25% do espaço em disco atual do repositório e não é configurável.</p> <p><strong>A Adobe recomenda que você dimensione o disco pelo menos duas ou três vezes maior que o tamanho estimado do repositório.</strong></p> <p>O espaço livre em heap é continuamente monitorado durante o processo de limpeza. Se o espaço livre do heap cair abaixo de um valor crítico, o processo será cancelado. O valor crítico é configurado por meio de org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. O valor padrão é 15%.</p> <p>O Recommendations para dimensionamento mínimo de heap de compactação não é separado das recomendações de dimensionamento de memória do AEM. Geralmente: <strong>Se uma instância de AEM for dimensionada o suficiente para lidar com os casos de uso e a carga esperada, o processo de limpeza obterá memória suficiente.</strong></p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -280,7 +276,7 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
   </tr>
   <tr>
    <td><strong>Por quanto tempo se espera que a Limpeza de revisão online seja executada?</strong></td>
-   <td>Não deve levar mais de 2 horas para ser executado de acordo com os testes de desempenho mais recentes que realizamos internamente.</td>
+   <td>Não deve levar mais de duas horas para ser executado de acordo com o Adobe de testes de desempenho mais recente executado internamente.</td>
    <td> </td>
   </tr>
   <tr>
@@ -295,31 +291,31 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
   </tr>
   <tr>
    <td><strong>O que acontece se a Limpeza de revisão online exceder as Janelas de manutenção configuradas?</strong></td>
-   <td>Verifique se outras tarefas de manutenção não estão atrasando sua execução. Isso pode ocorrer se mais tarefas de manutenção do que a Limpeza de revisão online forem executadas na mesma janela de manutenção. Observe que as tarefas de manutenção são executadas sequencialmente sem uma ordem configurável.</td>
+   <td>Certifique-se de que outras tarefas de manutenção não estejam atrasando sua execução. Isso pode ocorrer se mais tarefas de manutenção do que a Limpeza de revisão online forem executadas na mesma janela de manutenção. As tarefas de manutenção são executadas sequencialmente sem uma ordem configurável.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Por que a coleta de lixo de revisão é ignorada?</strong></td>
    <td><p>A Limpeza de revisão depende de uma fase de estimativa para decidir se há lixo suficiente para ser limpo. O avaliador compara o tamanho atual com o tamanho do repositório após a última compactação. Se o tamanho exceder o delta configurado, a limpeza será executada. O delta de tamanho é definido em 1 GB. Isso significa que, se o tamanho do repositório não aumentar em 1 GB desde a última execução de limpeza, a nova iteração de limpeza de revisão será ignorada. </p> <p>Abaixo estão as entradas de log relevantes para a fase de estimativa:</p>
     <ul>
-     <li>O GC de revisão será executado: <em>O delta de tamanho é N% ou N/N (N/N bytes), portanto, executando a compactação</em></li>
-     <li>O GC de revisão irá <strong>não</strong> executar: <em>O delta de tamanho é N% ou N/N (N/N bytes), então a compactação é ignorada por enquanto</em></li>
+     <li>O GC de revisão é executado: <em>O delta de tamanho é N% ou N/N (N/N bytes), portanto, executando a compactação</em></li>
+     <li>O Revision GC faz <strong>não</strong> executar: <em>O delta de tamanho é N% ou N/N (N/N bytes), então a compactação é ignorada por enquanto</em></li>
     </ul> </td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>É possível abortar com segurança a compactação automática se o impacto no desempenho for muito alto?</strong></td>
-   <td>Sim. Desde o AEM 6.3, ele pode ser interrompido com segurança pela janela Tarefa de manutenção no Painel de operações ou pelo JMX.</td>
+   <td>Sim. Desde o AEM 6.3, ele pode ser interrompido com segurança por meio da Janela de tarefas de manutenção no Painel de operações ou por meio do JMX.</td>
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Se a instância do AEM for desligada durante uma tarefa de limpeza agendada, o processo será abortado com segurança ou o desligamento será bloqueado até que a compactação seja concluída?</strong></td>
-   <td>A Limpeza de revisão será interrompida e o repositório será desligado com segurança.</td>
+   <td><strong>Se a instância do AEM for desligada durante uma tarefa de limpeza agendada, o processo será anulado com segurança ou o desligamento será bloqueado até que a compactação seja concluída?</strong></td>
+   <td>A Limpeza de revisão é interrompida e o repositório é desligado com segurança.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>O que acontece quando o sistema trava durante a Limpeza de revisão online?</strong></td>
-   <td>Não há risco de corrupção de dados nesses casos. Os restos de lixo serão limpos por uma execução subsequente.</td>
+   <td>Não há risco de corrupção de dados nesses casos. As sobras de lixo são limpas por uma execução subsequente.</td>
    <td> </td>
   </tr>
   <tr>
@@ -333,8 +329,8 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
    <td> </td>
   </tr>
   <tr>
-   <td><strong>O que acontece em caso de interferência excessiva de gravações simultâneas no repositório?</strong></td>
-   <td><p>Se houver simultaneidade de gravação no sistema, a limpeza de revisão on-line poderá exigir acesso de gravação exclusivo para poder confirmar as alterações no final de um ciclo de compactação. O sistema entrará em <strong>modo forceCompact</strong>, tal como explicado mais pormenorizadamente na seção <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html" target="_blank">documentação do oak</a>. Durante a compactação forçada, um bloqueio de gravação exclusivo é adquirido para finalmente confirmar as alterações sem nenhuma interferência de gravações simultâneas. Para limitar o impacto nos tempos de resposta, um valor de tempo limite pode ser definido. Esse valor é definido como 1 minuto por padrão, o que significa que se a opção de forçar a compactação não for concluída em 1 minuto, o processo de compactação será anulado em favor de confirmações simultâneas.</p> <p>A duração da força compacta depende dos seguintes fatores:</p>
+   <td><strong>O que acontece se houver muita interferência de gravações simultâneas no repositório?</strong></td>
+   <td><p>Se houver simultaneidade de gravação no sistema, a limpeza de revisão on-line poderá exigir acesso de gravação exclusivo para poder confirmar as alterações no final de um ciclo de compactação. O sistema entra em <strong>modo forceCompact</strong>, tal como explicado mais pormenorizadamente na seção <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html" target="_blank">Documentação do Oak</a>. Durante a compactação forçada, um bloqueio de gravação exclusivo é adquirido para finalmente confirmar as alterações sem nenhuma interferência de gravações simultâneas. Para limitar o impacto nos tempos de resposta, um valor de tempo limite pode ser definido. Esse valor é definido como um minuto por padrão, o que significa que se a opção de forçar a compactação não for concluída em um minuto, o processo de compactação será anulado em favor de confirmações simultâneas.</p> <p>A duração da força compacta depende dos seguintes fatores:</p>
     <ul>
      <li>hardware: especificamente IOPS. A duração diminui com mais IOPS.</li>
      <li>tamanho do armazenamento de segmentos: a duração aumenta de acordo com o tamanho do armazenamento de segmentos.</li>
@@ -343,12 +339,12 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
   </tr>
   <tr>
    <td><p><strong>Como a Limpeza de revisão on-line é executada em uma instância em standby?</strong></p> </td>
-   <td><p>Em uma configuração de standby inativo, somente a instância principal precisa ser configurada para executar a Limpeza de revisão online. Na instância de standby, a Limpeza de revisão on-line não precisa ser programada especificamente.</p> <p>A operação correspondente em uma instância em espera é a Limpeza automática, que corresponde à fase de limpeza da Limpeza de revisão on-line. A Limpeza Automática é executada na instância stand-by após a execução da Limpeza de Revisão On-line na instância principal.</p> <p>As fases de estimativa e compactação não serão executadas em uma instância em espera.</p> </td>
+   <td><p>Em uma configuração de standby inativo, somente a instância principal deve ser configurada para executar a Limpeza de revisão on-line. Na instância de standby, a Limpeza de revisão on-line não precisa ser programada especificamente.</p> <p>A operação correspondente em uma instância em espera é a Limpeza automática, que corresponde à fase de limpeza da Limpeza de revisão on-line. A Limpeza Automática é executada na instância stand-by após a execução da Limpeza de Revisão On-line na instância principal.</p> <p>As fases de estimativa e compactação não serão executadas em uma instância em espera.</p> </td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>A Limpeza de revisão offline pode liberar mais espaço em disco do que a Limpeza de revisão online?</strong></td>
-   <td><p>A Limpeza de revisão offline pode remover imediatamente revisões antigas, enquanto a Limpeza de revisão online precisa considerar as revisões antigas que ainda estão sendo referenciadas pela pilha do aplicativo. A primeira pode, assim, remover o lixo de forma mais agressiva do que a segunda, onde o efeito é amortizado ao longo de alguns ciclos de coleta de lixo.</p> <p>Além disso, leia a seção "Execução de limpeza de revisão online após a limpeza de revisão offline" do <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">este capítulo</a>.</p> </td>
+   <td><p>A Limpeza de revisão offline pode remover imediatamente revisões antigas, enquanto a Limpeza de revisão online deve considerar as revisões antigas que ainda estão sendo referenciadas pela pilha do aplicativo. A primeira pode, assim, remover o lixo de forma mais agressiva do que a segunda, onde o efeito é amortizado ao longo de alguns ciclos de coleta de lixo.</p> <p>Além disso, leia a seção "Execução de limpeza de revisão online após a limpeza de revisão offline" do <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">este capítulo</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -371,10 +367,10 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
 <table style="table-layout:auto">
  <tbody>
   <tr>
-   <td><strong>O que precisa ser monitorado durante a Limpeza de revisão online?</strong></td>
+   <td><strong>O que deve ser monitorado durante a Limpeza de revisão on-line?</strong></td>
    <td>
     <ul>
-     <li>O espaço em disco deve ser monitorado quando a Limpeza de Revisão Online estiver habilitada. A limpeza não será executada ou será encerrada preventivamente quando não houver espaço em disco suficiente.</li>
+     <li>O espaço em disco deve ser monitorado quando a Limpeza de Revisão Online estiver habilitada. A limpeza não é executada ou é encerrada preventivamente quando não há espaço em disco suficiente.</li>
      <li>Verifique os logs para a hora de conclusão da Limpeza de revisão online. Não deve levar mais de 2 horas.</li>
      <li>Número de pontos de verificação. Se houver mais de três pontos de verificação ao executar a compactação, será recomendável limpar os pontos de verificação.</li>
     </ul> </td>
@@ -387,7 +383,7 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
   </tr>
   <tr>
    <td><strong>Onde podemos encontrar as estatísticas das últimas execuções de Limpeza de revisão online?</strong></td>
-   <td><p>O status, o progresso e as estatísticas são expostos por meio de JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Para obter mais detalhes sobre o <code>SegmentRevisionGarbageCollection</code> MBean, leia o <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">parágrafo seguinte</a>.</p> <p>O progresso pode ser monitorado por meio das <code>EstimatedRevisionGCCompletion</code> atributo de <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Você pode obter uma referência do MBean usando o <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>Observe que as estatísticas só estão disponíveis desde a última inicialização do sistema. As ferramentas de monitoramento externas podem ser aproveitadas para manter os dados além do tempo de atividade do AEM. Consulte <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">a documentação do AEM para anexar verificações de integridade ao Nagios como exemplo para uma ferramenta de monitoramento externa</a>.</p> </td>
+   <td><p>O status, o progresso e as estatísticas são expostos por meio de JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Para obter mais detalhes sobre o <code>SegmentRevisionGarbageCollection</code> MBean, leia o <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">parágrafo seguinte</a>.</p> <p>O progresso pode ser monitorado por meio das <code>EstimatedRevisionGCCompletion</code> atributo de <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Você pode obter uma referência do MBean usando o <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>As estatísticas só estão disponíveis desde a última inicialização do sistema. Ferramentas de monitoramento externas podem ser usadas para manter os dados além do tempo de atividade do AEM. Consulte <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">a documentação do AEM para anexar verificações de integridade ao Nagios como exemplo para uma ferramenta de monitoramento externa</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -430,16 +426,16 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
   </tr>
   <tr>
    <td><strong>Quais informações são expostas na Verificação de integridade da Limpeza de revisão? Como e quando eles contribuem para os níveis de status codificados por cores? </strong></td>
-   <td><p>A Verificação de integridade da limpeza da revisão faz parte da <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Painel de operações</a>.<br /> </p> <p>O status será <strong>VERDE</strong> se a última execução da tarefa de manutenção Limpeza de revisão online foi concluída com êxito.</p> <p>Será <strong>AMARELO</strong> se a tarefa de manutenção Limpeza de revisão online foi cancelada uma vez.<br /> </p> <p>Será <strong>VERM</strong> se a tarefa de manutenção Limpeza de revisão online foi cancelada três vezes seguidas. <strong>Nesse caso, é necessária a interação manual</strong> ou a Limpeza de revisão on-line provavelmente falhará novamente. Para obter mais informações, leia a <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Solução de problemas</a> abaixo.<br /> </p> <p>Observe também que o status da Verificação de integridade será redefinido após a reinicialização do sistema. Portanto, uma instância recém-reiniciada mostrará um status verde na Verificação de integridade da limpeza de revisão. As ferramentas de monitoramento externas podem ser aproveitadas para manter os dados além do tempo de atividade do AEM. Consulte <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">a documentação do AEM para anexar verificações de integridade ao Nagios como exemplo para uma ferramenta de monitoramento externa</a>.</p> </td>
+   <td><p>A Verificação de integridade da limpeza da revisão faz parte da <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Painel de operações</a>.<br /> </p> <p>O status é <strong>VERDE</strong> se a última execução da tarefa de manutenção Limpeza de revisão online foi concluída com êxito.</p> <p>É necessário <strong>AMARELO</strong> se a tarefa de manutenção Limpeza de revisão online foi cancelada uma vez.<br /> </p> <p>É necessário <strong>VERM</strong> se a tarefa de manutenção Limpeza de revisão online foi cancelada três vezes seguidas. <strong>Nesse caso, é necessária a interação manual</strong> ou a Limpeza de revisão on-line provavelmente falhará novamente. Para obter mais informações, leia a <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Solução de problemas</a> abaixo.<br /> </p> <p>Observe também que o status da Verificação de integridade será redefinido após a reinicialização do sistema. Portanto, uma instância recém-reiniciada mostra um status verde na Verificação de integridade da limpeza de revisão. Ferramentas de monitoramento externas podem ser usadas para manter os dados além do tempo de atividade do AEM. Consulte <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">a documentação do AEM para anexar verificações de integridade ao Nagios como exemplo para uma ferramenta de monitoramento externa</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
    <td><p><strong>Como monitorar a Limpeza automática em uma instância em espera?</strong></p> </td>
-   <td><p>O status, o progresso e as estatísticas são expostos por meio do JMX usando o <code>SegmentRevisionGarbageCollection</code> MBean. Consulte também o seguinte <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Documentação do Oak</a>. </p> <p>Você pode obter uma referência do MBean usando o <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>Observe que as estatísticas estão disponíveis somente desde a última inicialização do sistema. As ferramentas de monitoramento externas podem ser aproveitadas para manter os dados além do tempo de atividade do AEM. Além disso, consulte <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">a documentação do AEM para anexar verificações de integridade ao Nagios como exemplo para uma ferramenta de monitoramento externa</a>.</p> <p>Os arquivos de log também podem ser usados para verificar o status, o progresso e as estatísticas da Limpeza automática.</p> </td>
+   <td><p>O status, o progresso e as estatísticas são expostos por meio do JMX usando o <code>SegmentRevisionGarbageCollection</code> MBean. Consulte também o seguinte <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Documentação do Oak</a>. </p> <p>Você pode obter uma referência do MBean usando o <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>As estatísticas estão disponíveis somente desde a última inicialização do sistema. Ferramentas de monitoramento externas podem ser usadas para manter os dados além do tempo de atividade do AEM. Além disso, consulte <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">a documentação do AEM para anexar verificações de integridade ao Nagios como exemplo para uma ferramenta de monitoramento externa</a>.</p> <p>Os arquivos de log também podem ser usados para verificar o status, o andamento e as estatísticas da Limpeza automática.</p> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><p><strong>O que precisa ser monitorado durante a Limpeza Automática em uma instância em espera?</strong></p> </td>
+   <td><p><strong>O que deve ser monitorado durante a Limpeza Automática em uma instância em espera?</strong></p> </td>
    <td>
     <ul>
      <li>O espaço em disco deve ser monitorado quando a Limpeza Automática for executada.</li>
@@ -457,7 +453,7 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
  <tbody>
   <tr>
    <td><strong>O que é o pior que pode acontecer se você não executar a Limpeza de revisão online?</strong></td>
-   <td>A instância do AEM ficará sem espaço em disco, o que causará paralisações na produção.</td>
+   <td>A instância do AEM fica sem espaço em disco, o que causa paralisações na produção.</td>
    <td> </td>
   </tr>
   <tr>
@@ -467,36 +463,36 @@ Em alguns casos, a alternância entre os modos de cauda e compactação total at
   </tr>
   <tr>
    <td><strong>De acordo com a Verificação de integridade e as entradas de log, a Limpeza de revisão online não foi concluída com êxito três vezes seguidas. O que é necessário para que a Limpeza de revisão online seja concluída com êxito?</strong></td>
-   <td>Você pode executar várias etapas para encontrar e corrigir o problema:<br />
+   <td>Você pode executar várias etapas para localizar e corrigir o problema:<br />
     <ul>
      <li>Primeiro, verifique as entradas do log<br /> </li>
      <li>Dependendo das informações nos logs, tome as medidas apropriadas:
       <ul>
-       <li>Se os registros mostrarem cinco ciclos compactos perdidos e um tempo limite no <code>forceCompact</code> ciclo, agendar a janela de manutenção para um tempo de silêncio quando a quantidade de gravações no repositório for baixa. Você pode verificar as gravações do repositório na ferramenta de monitoramento de métricas do repositório, localizada em <em>https://serveraddress:serverport/libs/granite/operations/content/monitoring/page.html</em></li>
+       <li>Se os registros mostrarem cinco ciclos compactos perdidos e um tempo limite no <code>forceCompact</code> ciclo, agendar a janela de manutenção para um tempo de silêncio quando a quantidade de gravações no repositório for baixa. Você pode verificar as gravações do repositório na ferramenta de monitoramento de métricas do repositório em <em>https://serveraddress:serverport/libs/granite/operations/content/monitoring/page.html</em></li>
        <li>Se a limpeza for interrompida ao final da janela de manutenção, verifique se a configuração da janela de manutenção na interface do usuário Tarefas de manutenção é grande o suficiente</li>
-       <li>Se a memória heap disponível não for suficiente, verifique se a instância tem memória suficiente.</li>
-       <li>No caso de uma reação tardia, o armazenamento de segmentos pode crescer demais para que a Limpeza de revisão online seja concluída mesmo em uma janela de manutenção mais longa. Por exemplo, se não houve uma Limpeza de revisão online bem-sucedida concluída na última semana, é recomendável planejar uma manutenção offline e executar a Limpeza de revisão offline para trazer o armazenamento de segmentos de volta a um tamanho gerenciável.</li>
+       <li>Se a memória de heap disponível não for suficiente, verifique se a instância tem memória suficiente.</li>
+       <li>Se houver uma reação tardia, o armazenamento de segmentos poderá crescer demais para que a Limpeza de revisão online seja concluída mesmo em uma janela de manutenção mais longa. Por exemplo, se não houve uma Limpeza de revisão online bem-sucedida concluída na última semana, é recomendável planejar uma manutenção offline e executar a Limpeza de revisão offline para trazer o armazenamento de segmentos de volta a um tamanho gerenciável.</li>
       </ul> </li>
     </ul> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><strong>O que precisa ser feito depois que o alerta de Verificação de integridade estiver ativado?</strong></td>
+   <td><strong>O que deve ser feito quando o alerta de Verificação de integridade estiver ativado?</strong></td>
    <td>Cf. ponto anterior.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>O que acontece se a Limpeza de revisão online ficar sem tempo durante a janela de manutenção programada?</strong></td>
-   <td>A Limpeza de revisão online será cancelada e as sobras serão removidas. Ele será iniciado novamente na próxima vez que a janela de manutenção for programada.</td>
+   <td>A Limpeza de revisão online é cancelada e as sobras são removidas. Ela começará novamente na próxima vez que a janela de manutenção for agendada.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>O que está causando <code>SegmentNotFoundException</code> instâncias a serem registradas na <code>error.log</code> e como posso me recuperar?</strong></td>
    <td><p>A <code>SegmentNotFoundException</code> é registrado pelo TarMK quando ele tenta acessar uma unidade de armazenamento (um segmento) que não consegue encontrar. Há três cenários que podem causar esse problema:</p>
     <ol>
-     <li>Um aplicativo que contorna os mecanismos de acesso recomendados (como Sling e a API JCR) e usa uma API/SPI de nível inferior para acessar o repositório e, em seguida, excede o tempo de retenção de um segmento. Ou seja, ela mantém uma referência a uma entidade por mais tempo do que o tempo de retenção permitido pela Limpeza de revisão online (24 horas por padrão). Esse caso é transitório e não causa corrupção de dados. Para recuperar, a ferramenta oak-run deve ser usada para confirmar a natureza transitória da exceção (a verificação oak-run não deve relatar erros). Para fazer isso, a instância precisa ser colocada offline e reiniciada posteriormente.</li>
-     <li>Um evento externo causou a corrupção dos dados no disco. Isso pode ser uma falha de disco, falta de espaço em disco ou uma modificação acidental dos arquivos de dados necessários. Nesse caso, a instância precisa ser colocada offline e reparada usando a verificação oak-run. Para obter mais detalhes sobre como executar a verificação oak-run, leia o seguinte <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Documentação do Apache</a>.</li>
-     <li>Todas as outras ocorrências devem ser abordadas através do <a href="https://helpx.adobe.com/br/marketing-cloud/contact-support.html" target="_blank">Atendimento ao cliente Adobe</a>.</li>
+     <li>Um aplicativo que contorna os mecanismos de acesso recomendados (como Sling e a API JCR) e usa uma API/SPI de nível inferior para acessar o repositório e, em seguida, excede o tempo de retenção de um segmento. Ou seja, ela mantém uma referência a uma entidade por mais tempo do que o tempo de retenção permitido pela Limpeza de revisão online (24 horas por padrão). Esse caso é transitório e não causa corrupção de dados. Para recuperar, a ferramenta oak-run deve ser usada para confirmar a natureza transitória da exceção (a verificação oak-run não deve relatar erros). Para fazer isso, a instância deve ser colocada offline e reiniciada posteriormente.</li>
+     <li>Um evento externo causou a corrupção dos dados no disco. Isso pode ser uma falha de disco, falta de espaço em disco ou uma modificação acidental dos arquivos de dados necessários. Nesse caso, a instância deve ser colocada offline e reparada usando a verificação oak-run. Para obter mais detalhes sobre como executar a verificação oak-run, leia o seguinte <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Documentação do Apache</a>.</li>
+     <li>Resolver todas as outras ocorrências por meio do <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support" target="_blank">Atendimento ao cliente Adobe</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -514,7 +510,7 @@ O error.log será detalhado se houver incidentes durante o processo de limpeza d
 |   |TarMK GC #2: estimation interrupted: ${REASON}. Skipping compaction. |The estimation phase terminated prematurely. Some examples of events that could interrupt the estimation phase: not enough memory or disk space on the host system. |Depends on the given reason. |
 | Compaction |TarMK GC #2: compaction paused |As long as the compaction phase is paused by configuration, neither the estimation phase nor the compaction phase will be executed. |Enable online revision cleanup. |
 |   |TarMK GC #2: compaction cancelled: ${REASON}. |The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashobard. |Depends on the given reason. |
-|   |TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles |This message doesn’t mean that there was an unrecoverable error, but only that compaction was terminated after a certain amount of attempts. Also, read the [following paragraph](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). |Read the following [Oak documentation](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), and the last question of the [Running Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) section. |
+|   |TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles |This message doesn't mean that there was an unrecoverable error, but only that compaction was terminated after a certain amount of attempts. Also, read the [following paragraph](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). |Read the following [Oak documentation](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), and the last question of the [Running Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) section. |
 | Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |-->
 
 <table style="table-layout:auto">
@@ -542,7 +538,7 @@ O error.log será detalhado se houver incidentes durante o processo de limpeza d
   <tr>
     <td>Compactação</td>
     <td>TarMK GC #2: compactação pausada.</td>
-    <td>Desde que a fase de compactação seja pausada pela configuração, nem a fase de estimativa nem a fase de compactação serão executadas.</td>
+    <td>Contanto que a fase de compactação seja pausada pela configuração, nem a fase de estimativa nem a fase de compactação serão executadas.</td>
     <td>Habilitar limpeza de revisão online.</td>
   </td>
   </tr>
@@ -556,7 +552,7 @@ O error.log será detalhado se houver incidentes durante o processo de limpeza d
   <tr>
     <td>N/A</td>
     <td>TarMK GC #2: a compactação falhou em 32.902 min (1974140 ms), após 5 ciclos.</td>
-    <td>Essa mensagem não significa que houve um erro irrecuperável, mas somente que a compactação foi encerrada após uma certa quantidade de tentativas. Além disso, leia o <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">parágrafo seguinte.</a></td>
+    <td>Essa mensagem não significa que houve um erro irrecuperável, mas somente que a compactação foi encerrada após algumas tentativas. Além disso, leia o <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">parágrafo seguinte.</a></td>
     <td>Leia o seguinte <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Documentação do Oak</a>, e a última pergunta da seção Execução de limpeza de revisão online.</a></td>
   </td>
   </tr>
@@ -580,7 +576,7 @@ O Adobe fornece uma ferramenta chamada **Oak-run** para executar a limpeza de re
 
 [https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/)
 
-A ferramenta é um jar executável que pode ser executado manualmente para compactar o repositório. O processo é chamado de limpeza de revisão offline porque o repositório precisa ser desligado para executar a ferramenta corretamente. Certifique-se de planejar a limpeza de acordo com a janela de manutenção.
+A ferramenta é um jar executável que pode ser executado manualmente para compactar o repositório. O processo é chamado de limpeza de revisão offline porque o repositório deve ser desligado para executar a ferramenta corretamente. Certifique-se de planejar a limpeza de acordo com a janela de manutenção.
 
 Para obter dicas sobre como aumentar o desempenho do processo de limpeza, consulte [Aumentar o desempenho da limpeza de revisão offline](/help/sites-deploying/revision-cleanup.md#increasing-the-performance-of-offline-revision-cleanup).
 
@@ -622,7 +618,7 @@ A lista inclui vários parâmetros de linha de comando, conforme descrito abaixo
 
 * **-Dcompress-interval**. Número de entradas do mapa de compactação a serem mantidas até a compactação do mapa atual. O padrão é 1000000. Você deve aumentar esse valor para um número ainda maior para um rendimento mais rápido, se houver memória heap suficiente disponível. **Este parâmetro foi removido na versão 1.6 do Oak e não tem efeito.**
 
-* **-Dcompaction-progress-log**. O número de nós compactados que serão registrados em log. O valor padrão é 150000, o que significa que os primeiros 150000 nós compactados serão registrados durante a operação. Use isso em conjunto com o próximo parâmetro documentado abaixo.
+* **-Dcompaction-progress-log**. O número de nós compactados registrados. O valor padrão é 150000, o que significa que os primeiros 150000 nós compactados são registrados durante a operação. Use isso com o próximo parâmetro documentado abaixo.
 
 * **-Dtar.PersistCompactionMap** Defina esse parâmetro como true para usar espaço em disco em vez de memória heap para persistência do mapa de compactação. Requer a ferramenta oak-run **versões 1.4** e superior. Para mais pormenores, ver a questão 3 do [Perguntas frequentes sobre limpeza de revisão offline](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions) seção. **Este parâmetro foi removido na versão 1.6 do Oak e não tem efeito.**
 
@@ -630,7 +626,7 @@ A lista inclui vários parâmetros de linha de comando, conforme descrito abaixo
 
 >[!CAUTION]
 >
->Usar o `--force` O parâmetro atualizará o armazenamento de segmentos para a versão mais recente, que é incompatível com as versões mais antigas do Oak. Além disso, considere que nenhum downgrade é possível. Como regra geral, você deve usar esses parâmetros com cuidado e somente se tiver conhecimento sobre como usá-los.
+>Usar o `--force` O parâmetro atualiza o armazenamento de segmentos para a versão mais recente, que é incompatível com as versões mais antigas do Oak. Além disso, considere que nenhum downgrade é possível. Geralmente, você deve usar esses parâmetros com cuidado e somente se tiver conhecimento sobre como usá-los.
 
 Um exemplo dos parâmetros em uso:
 
@@ -652,7 +648,7 @@ Além dos métodos apresentados acima, você também pode acionar o mecanismo de
  <tbody>
   <tr>
    <td><strong>Quais são os fatores que determinam a duração da Limpeza de revisão offline?</strong></td>
-   <td><p>O tamanho do repositório e a quantidade de revisões que precisam ser limpas determinam a duração da limpeza.</p> </td>
+   <td><p>O tamanho do repositório e o número de revisões que devem ser limpas determinam a duração da limpeza.</p> </td>
   </tr>
   <tr>
    <td><strong>Qual é a diferença entre uma revisão e uma versão de página?</strong></td>
@@ -664,7 +660,7 @@ Além dos métodos apresentados acima, você também pode acionar o mecanismo de
   </tr>
   <tr>
    <td><strong>Como acelerar a tarefa de Limpeza de revisão offline se ela não for concluída em 8 horas?</strong></td>
-   <td>Se a tarefa de revisão não for concluída em 8 horas e o <a href="/help/sites-administering/operations-dashboard.md#diagnosis-tools" target="_blank">despejos de encadeamento</a> revelar que o ponto de conexão principal é <code>InMemoryCompactionMap.findEntry</code>, use o seguinte parâmetro com a ferramenta oak-run <strong>versões 1.4 </strong>ou superior: <code>-Dtar.PersistCompactionMap=true</code>. Esteja ciente de <code>-Dtar.PersistCompactionMap</code> O parâmetro do foi removido na versão 1.6 do Oak.</td>
+   <td>Se a tarefa de revisão não for concluída em 8 horas e o <a href="/help/sites-administering/operations-dashboard.md#diagnosis-tools" target="_blank">despejos de encadeamento</a> revelar que o ponto de conexão principal é <code>InMemoryCompactionMap.findEntry</code>, use o seguinte parâmetro com a ferramenta oak-run <strong>versões 1.4 </strong>ou superior: <code>-Dtar.PersistCompactionMap=true</code>. A variável <code>-Dtar.PersistCompactionMap</code> O parâmetro do foi removido na versão 1.6 do Oak.</td>
   </tr>
  </tbody>
 </table>
