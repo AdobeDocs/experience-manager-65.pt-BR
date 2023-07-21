@@ -1,30 +1,26 @@
 ---
 title: Externalizar URLs
-seo-title: Externalizing URLs
 description: O Externalizador é um serviço OSGI que permite transformar programaticamente um caminho de recurso em um URL externo e absoluto
-seo-description: The Externalizer is an OSGI service that allows you to programmatically transform a resource path into an external and absolute URL
-uuid: 65bcc352-fc8c-4aa0-82fb-1321a035602d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 938469ad-f466-42f4-8b6f-bfc060ae2785
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
 
 # Externalizar URLs{#externalizing-urls}
 
-No caso do AEM, a **Externalizador** é um serviço OSGI que permite transformar programaticamente um caminho de recurso (por exemplo, `/path/to/my/page`) em um URL externo e absoluto (por exemplo, `https://www.mycompany.com/path/to/my/page`) ao prefixar o caminho com um DNS pré-configurado.
+No Adobe Experience Manager (AEM), a variável **Externalizador** é um serviço OSGI que permite transformar programaticamente um caminho de recurso (por exemplo, `/path/to/my/page`) em um URL externo e absoluto (por exemplo, `https://www.mycompany.com/path/to/my/page`) ao prefixar o caminho com um DNS pré-configurado.
 
 Como uma instância não pode saber seu URL visível externamente se estiver sendo executada por trás de uma camada da Web e porque, às vezes, um link precisa ser criado fora do escopo de solicitação, esse serviço fornece um local central para configurar esses URLs externos e criá-los.
 
-Esta página explica como configurar o **Externalizador** e como usá-lo. Para obter mais detalhes, consulte [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+Esta página explica como configurar o **Externalizador** e como usá-lo. Para obter mais detalhes, consulte [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configurar o serviço Externalizador {#configuring-the-externalizer-service}
 
@@ -50,10 +46,10 @@ Para definir um mapeamento de domínio para o **Externalizador** serviço:
 
    Em que:
 
-   * **esquema** geralmente é http ou https, mas também pode ser ftp etc.
+   * **esquema** é http ou https, mas também pode ser ftp e assim por diante.
 
       * use https para aplicar links https, se desejado
-      * ele será usado se o código do cliente não substituir o esquema ao solicitar a externalização de um URL.
+      * ele é usado se o código do cliente não substituir o esquema ao solicitar a externalização de um URL.
 
    * **server** é o nome do host (pode ser um nome de domínio ou endereço ip).
    * **porta** (opcional) é o número da porta.
@@ -61,7 +57,7 @@ Para definir um mapeamento de domínio para o **Externalizador** serviço:
 
    Por exemplo: `production https://my.production.instance`
 
-   Os seguintes nomes de mapeamento são predefinidos e sempre devem ser definidos, pois o AEM depende deles:
+   Os seguintes nomes de mapeamento são predefinidos e devem ser definidos porque o AEM depende deles:
 
    * `local` - a instância local
    * `author` - o DNS do sistema de criação
@@ -69,7 +65,7 @@ Para definir um mapeamento de domínio para o **Externalizador** serviço:
 
    >[!NOTE]
    >
-   >Uma configuração personalizada permite adicionar uma nova categoria, como `production`, `staging` ou mesmo sistemas externos não-AEM, como `my-internal-webservice`. É útil evitar a codificação rígida desses URLs em diferentes locais na base de código de um projeto.
+   >Uma configuração personalizada permite adicionar uma categoria, como `production`, `staging`, ou mesmo sistemas externos não-AEM, como `my-internal-webservice`. É útil evitar a codificação rígida desses URLs em diferentes locais na base de código de um projeto.
 
 1. Clique em **Salvar** para salvar as alterações.
 
@@ -129,4 +125,4 @@ Esta seção mostra alguns exemplos de como a **Externalizador** serviço pode s
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. Você pode encontrar mais exemplos na [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+1. Você pode encontrar mais exemplos na [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).

@@ -1,21 +1,17 @@
 ---
 title: Procedimento de atualização
-seo-title: Upgrade Procedure
-description: Saiba mais sobre o procedimento que deve ser seguido para atualizar o AEM.
-seo-description: Learn about the procedure you need to follow in order to upgrade AEM.
-uuid: 81126a70-c082-4f01-a1ad-7152182da88b
+description: Saiba mais sobre o procedimento para atualizar o Adobe Experience Manager (AEM).
 contentOwner: sarchiz
 topic-tags: upgrading
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -24,9 +20,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->A atualização exigirá tempo de inatividade para a camada Autor, pois a maioria das atualizações de AEM é executada no local. Ao seguir essas práticas recomendadas, o tempo de inatividade do nível de publicação pode ser minimizado ou eliminado.
+>A atualização requer tempo de inatividade para o nível de Autor, pois a maioria das atualizações do Adobe Experience Manager (AEM) é realizada no local. Seguindo essas práticas recomendadas, você pode minimizar ou eliminar o tempo de inatividade do nível de publicação.
 
-Ao atualizar os ambientes do AEM, você precisa considerar as diferenças na abordagem entre atualizar os ambientes do autor ou dos ambientes de publicação para minimizar o tempo de inatividade dos autores e usuários finais. Esta página descreve o procedimento de alto nível para atualizar uma topologia de AEM em execução atualmente em uma versão do AEM 6.x. Como o processo difere entre os níveis de criação e publicação, bem como implantações baseadas em Mongo e TarMK, cada nível e microkernel foi listado em uma seção separada. Ao executar a implantação, recomendamos primeiro atualizar o ambiente do autor, determinar o sucesso e prosseguir para os ambientes de publicação.
+Ao atualizar os ambientes do AEM, você deve considerar as diferenças na abordagem entre atualizar os ambientes do autor ou de publicação para minimizar o tempo de inatividade dos autores e usuários finais. Esta página descreve o procedimento de alto nível para atualizar uma topologia de AEM em execução atualmente em uma versão do AEM 6.x. Como o processo difere entre os níveis de criação e publicação, bem como implantações baseadas em Mongo e TarMK, cada nível e microkernel foi listado em uma seção separada. Ao executar a implantação, o Adobe recomenda primeiro atualizar o ambiente do autor, determinar o sucesso e prosseguir para os ambientes de publicação.
 
 <!--
 >[!IMPORTANT]
@@ -46,11 +42,11 @@ A topologia presumida para esta seção consiste em um servidor de Autores em ex
 
 ![upgrade-preparation-author](assets/upgrade-preparation-author.png)
 
-1. Parar criação de conteúdo
+1. Interrompa a criação de conteúdo.
 
-1. Interromper a instância standby
+1. Interrompa a instância standby.
 
-1. Desabilitar agentes de replicação no autor
+1. Desative os agentes de replicação no autor.
 
 1. Execute o [tarefas de manutenção pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md).
 
@@ -58,20 +54,20 @@ A topologia presumida para esta seção consiste em um servidor de Autores em ex
 
 ![execute_upgrade](assets/execute_upgrade.jpg)
 
-1. Execute o [atualização no local](/help/sites-deploying/in-place-upgrade.md)
-1. Atualizar o módulo do dispatcher *se necessário*
+1. Execute o [atualização no local](/help/sites-deploying/in-place-upgrade.md).
+1. Atualizar o módulo Dispatcher *se necessário*.
 
-1. O controle de qualidade valida a atualização
+1. O controle de qualidade valida a atualização.
 
-1. Encerre a instância do autor.
+1. Desligue a instância do autor.
 
 ### Se bem-sucedido {#if-successful}
 
 ![if_successful](assets/if_successful.jpg)
 
-1. Copiar a instância atualizada para criar um novo Modo de Espera Restrito
+1. Copie a instância atualizada para criar um Modo de Espera Restrito.
 
-1. Iniciar a instância do Autor
+1. Inicie a instância do Autor.
 
 1. Inicie a instância Stand-by.
 
@@ -79,7 +75,7 @@ A topologia presumida para esta seção consiste em um servidor de Autores em ex
 
 ![reversão](assets/rollback.jpg)
 
-1. Inicie a instância em Espera Off-line como a nova Principal
+1. Inicie a instância do Modo de Espera Off-line como o novo Principal.
 
 1. Recrie o ambiente do Autor a partir do Modo de Espera por Frio.
 
@@ -95,35 +91,35 @@ A topologia presumida para esta seção consiste em um cluster de Autores MongoM
 
 ![mongo-upgrade_prep](assets/mongo-upgrade_prep.jpg)
 
-1. Parar criação de conteúdo
-1. Clonar o armazenamento de dados para backup
-1. Pare todas as instâncias de autor do AEM, exceto uma instância de autor principal
-1. Remova todos os nós MongoDB, exceto um, do conjunto de réplicas, sua instância Mongo primária
-1. Atualize o `DocumentNodeStoreService.cfg` arquivo no Autor principal para refletir seu único conjunto de réplicas do membro
-1. Reinicie o Author principal para garantir que ele seja reiniciado corretamente
-1. Desabilitar agentes de replicação no autor principal
-1. Executar [tarefas de manutenção pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) na instância primária do autor
-1. Se necessário, atualize o MongoDB na instância primária do Mongo para a versão 3.2 com o WiredTiger
+1. Interrompa a criação de conteúdo.
+1. Clonar o armazenamento de dados para backup.
+1. Pare todas as instâncias de autor do AEM, exceto uma instância de autor principal.
+1. Remova todos os nós MongoDB, exceto um do conjunto de réplicas, sua instância Mongo primária.
+1. Atualize o `DocumentNodeStoreService.cfg` no Autor principal para refletir seu único conjunto de réplicas do membro.
+1. Reinicie o Author principal para garantir que ele seja reiniciado corretamente.
+1. Desative os agentes de replicação no autor principal.
+1. Executar [tarefas de manutenção pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) na instância primária do Autor.
+1. Se necessário, atualize o MongoDB na instância primária do Mongo para a versão 3.2 com o WiredTiger.
 
 ### Execução de atualização {#Upgrade-execution-1}
 
 ![mongo-execution](assets/mongo-execution.jpg)
 
-1. Executar um [atualização no local](/help/sites-deploying/in-place-upgrade.md) no autor principal
-1. Atualizar o Dispatcher ou o Módulo Web *se necessário*
-1. O controle de qualidade valida a atualização
+1. Executar um [atualização no local](/help/sites-deploying/in-place-upgrade.md) no Autor principal.
+1. Atualizar o Dispatcher ou o Módulo Web *se necessário*.
+1. O controle de qualidade valida a atualização.
 
 ### Se bem-sucedido {#if-successful-1}
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. Criar novas instâncias de autor do 6.5, conectadas à instância Mongo atualizada
+1. Crie novas instâncias de Autor do 6.5, conectadas à instância Mongo atualizada.
 
-1. Recrie os nós MongoDB que foram removidos do cluster
+1. Recrie os nós MongoDB que foram removidos do cluster.
 
-1. Atualize o `DocumentNodeStoreService.cfg` arquivos para refletir o conjunto completo de réplicas
+1. Atualize o `DocumentNodeStoreService.cfg` para refletir o conjunto completo de réplicas.
 
-1. Reinicie as instâncias do Autor, uma de cada vez
+1. Reinicie as instâncias do Autor, uma de cada vez.
 
 1. Remova o armazenamento de dados clonado.
 
@@ -131,17 +127,17 @@ A topologia presumida para esta seção consiste em um cluster de Autores MongoM
 
 ![mongo-rollback](assets/mongo-rollback.jpg)
 
-1. Reconfigure as instâncias secundárias do Autor para se conectarem ao armazenamento de dados clonado
+1. Reconfigure as instâncias secundárias do Autor para se conectarem ao armazenamento de dados clonado.
 
-1. Desligue a instância primária do autor atualizada
+1. Desligue a instância primária do autor atualizada.
 
 1. Desligue a instância primária do Mongo atualizada.
 
-1. Inicie as instâncias secundárias do Mongo com uma delas como a nova primária
+1. Inicie as instâncias secundárias do Mongo com uma delas como a nova primária.
 
-1. Configure o `DocumentNodeStoreService.cfg` arquivos nas instâncias secundárias do Autor para apontar para o conjunto de réplicas de instâncias Mongo ainda não atualizadas
+1. Configure o `DocumentNodeStoreService.cfg` Arquivos nas instâncias secundárias do Autor para apontar para o conjunto de réplicas de instâncias Mongo ainda não atualizadas.
 
-1. Iniciar as instâncias secundárias do Autor
+1. Inicie as instâncias secundárias do Autor.
 
 1. Limpe as instâncias do autor atualizadas, o nó Mongo e o armazenamento de dados.
 
@@ -157,46 +153,46 @@ A topologia assumida para esta seção consiste em duas instâncias de publicaç
 
 ![upgrade-publish2](assets/upgrade-publish2.png)
 
-1. Pare o tráfego para a instância de Publicação 2 no balanceador de carga
-1. Executar [manutenção pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) na Publicação 2
-1. Executar um [atualização no local](/help/sites-deploying/in-place-upgrade.md) na Publicação 2
-1. Atualizar o Dispatcher ou o Módulo Web *se necessário*
-1. Liberar o cache do Dispatcher
-1. O controle de qualidade valida a Publicação 2 por meio do Dispatcher, atrás do firewall
-1. Desligar Publicação 2
-1. Copiar a instância do Publish 2
-1. Iniciar publicação 2
+1. Pare o tráfego para a instância de Publicação 2 no balanceador de carga.
+1. Executar [manutenção pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) em Publicar 2.
+1. Executar um [atualização no local](/help/sites-deploying/in-place-upgrade.md) em Publicar 2.
+1. Atualizar o Dispatcher ou o Módulo Web *se necessário*.
+1. Limpe o cache do Dispatcher.
+1. O controle de qualidade valida a Publicação 2 por meio do Dispatcher, atrás do firewall.
+1. Desligar Publicação 2.
+1. Copie a instância Publish 2.
+1. Iniciar publicação 2.
 
 ### Se bem-sucedido {#if-successful-2}
 
 ![upgrade-publish1](assets/upgrade-publish1.png)
 
-1. Permitir tráfego para a Publicação 2
-1. Parar o tráfego para a Publicação 1
-1. Interromper a instância de Publicação 1
-1. Substitua a instância de Publicação 1 por uma cópia de Publicação 2
-1. Atualizar o Dispatcher ou o Módulo Web *se necessário*
-1. Liberar o cache do Dispatcher para Publicação 1
-1. Iniciar publicação 1
-1. O controle de qualidade valida a Publicação 1 por meio do Dispatcher, atrás do firewall
+1. Ative o tráfego para a Publicação 2.
+1. Interromper o tráfego para a Publicação 1.
+1. Interrompa a instância do Publish 1.
+1. Substitua a instância de Publicação 1 por uma cópia de Publicação 2.
+1. Atualizar o Dispatcher ou o Módulo Web *se necessário*.
+1. Limpe o cache do Dispatcher para Publicação 1.
+1. Iniciar publicação 1.
+1. O controle de qualidade valida a Publicação 1 por meio do Dispatcher, atrás do firewall.
 
 ### Se Não Tiver Êxito (Reversão) {#if-unsuccessful-rollback-1}
 
 ![pub_rollback](assets/pub_rollback.jpg)
 
-1. Criar uma cópia da Publicação 1
-1. Substitua a instância de Publicação 2 por uma cópia de Publicação 1
-1. Liberar o cache do Dispatcher para Publicação 2
-1. Iniciar publicação 2
-1. O controle de qualidade valida a Publicação 2 por meio do Dispatcher, atrás do firewall
-1. Permitir tráfego para a Publicação 2
+1. Criar uma cópia de Publicar 1.
+1. Substitua a instância de Publicação 2 por uma cópia de Publicação 1.
+1. Limpe o cache do Dispatcher para Publicação 2.
+1. Iniciar publicação 2.
+1. O controle de qualidade valida a Publicação 2 por meio do Dispatcher, atrás do firewall.
+1. Ative o tráfego para a Publicação 2.
 
 ## Etapas finais de atualização {#final-upgrade-steps}
 
-1. Permitir tráfego para a Publicação 1
-1. O controle de qualidade realiza a validação final de um URL público
-1. Ativar agentes de replicação no ambiente do autor
-1. Retomar criação de conteúdo
+1. Ative o tráfego para Publicar 1.
+1. O controle de qualidade executa a validação final de um URL público.
+1. Ative os agentes de replicação no ambiente do Autor.
+1. Retomar a criação de conteúdo.
 1. Executar [verificações pós-atualização](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).
 
 ![final](assets/final.jpg)

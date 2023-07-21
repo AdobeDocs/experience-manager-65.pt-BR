@@ -1,36 +1,32 @@
 ---
 title: Internacionalizando strings de interface do usuário
-seo-title: Internationalizing UI Strings
-description: As APIs Java e JavaScript permitem internacionalizar strings
-seo-description: Java and JavaScript APIs enable you to internationalize strings
-uuid: 1cfa409f-9b1e-466f-8b03-5628db42bc57
+description: As APIs Java&trade; e JavaScript permitem internacionalizar strings
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
 
 # Internacionalizando strings de interface do usuário {#internationalizing-ui-strings}
 
-As APIs Java e JavaScript permitem internacionalizar strings nos seguintes tipos de recursos:
+As APIs Java™ e JavaScript permitem internacionalizar strings nos seguintes tipos de recursos:
 
-* Arquivos de código-fonte Java.
+* Arquivos de origem Java™.
 * Scripts JSP.
 * JavaScript em bibliotecas do lado do cliente ou na origem da página.
 * Valores de propriedade do nó JCR usados em caixas de diálogo e propriedades de configuração do componente.
 
 Para obter uma visão geral do processo de internacionalização e localização, consulte [Internacionalizar componentes](/help/sites-developing/i18n.md).
 
-## Internacionalizando strings em código Java e JSP {#internationalizing-strings-in-java-and-jsp-code}
+## Internacionalizando strings em código Java™ e JSP {#internationalizing-strings-in-java-and-jsp-code}
 
-A variável `com.day.cq.i18n` O pacote Java permite exibir strings localizadas na interface do usuário. A variável `I18n` A classe fornece a `get` método que recupera strings localizadas do dicionário AEM. O único parâmetro obrigatório do `get` method é a cadeia de caracteres literal no idioma inglês. O inglês é o idioma padrão da interface do usuário do. O exemplo a seguir localiza a palavra `Search`:
+A variável `com.day.cq.i18n` O pacote Java™ permite exibir strings localizadas na interface do usuário. A variável `I18n` A classe fornece a `get` método que recupera strings localizadas do dicionário Adobe Experience Manager (AEM). O único parâmetro obrigatório do `get` method é a cadeia de caracteres literal no idioma inglês. O inglês é o idioma padrão da interface do usuário do. O exemplo a seguir localiza a palavra `Search`:
 
 `i18n.get("Search");`
 
@@ -48,7 +44,7 @@ Há duas maneiras de determinar o idioma preferido pelo usuário:
 
 A propriedade language da conta do usuário é o método preferido porque é mais confiável. No entanto, o usuário deve estar conectado para usar esse método.
 
-#### Criação do objeto Java I18n {#creating-the-i-n-java-object}
+#### Criação do objeto Java™ I18n {#creating-the-i-n-java-object}
 
 A classe I18n fornece dois construtores. A maneira como você determina a linguagem preferencial do usuário determina o construtor a ser usado.
 
@@ -60,7 +56,7 @@ I18n i18n = new I18n(slingRequest);
 
 O construtor usa o `SlingHTTPRequest` para recuperar a configuração de idioma do usuário.
 
-Para usar o locale da página para determinar o idioma, primeiro é necessário obter o ResourceBundle para o idioma da página solicitada:
+Para usar o local da página para determinar o idioma, primeiro obtenha o ResourceBundle para o idioma da página solicitada:
 
 ```java
 Locale pageLang = currentPage.getLanguage(false);
@@ -106,7 +102,7 @@ A string internacionalizada e a dica de tradução devem corresponder exatamente
 
 #### Uso do Método Get Estático {#using-the-static-get-method}
 
-A variável `I18N` define um parâmetro estático `get` que é útil quando você precisa localizar um pequeno número de strings. Além dos parâmetros de um objeto `get` , o método estático exige o `SlingHttpRequest` ou o `ResourceBundle` que você está usando, de acordo com a forma como está determinando o idioma preferido do usuário:
+A variável `I18N` define um parâmetro estático `get` que é útil quando você deve localizar algumas strings. Além dos parâmetros de um objeto `get` , o método estático exige o `SlingHttpRequest` ou o `ResourceBundle` que você está usando, de acordo com a forma como está determinando o idioma preferido do usuário:
 
 * Usar a preferência de idioma do usuário: forneça o SlingHttpRequest como o primeiro parâmetro.
 
@@ -117,11 +113,11 @@ A variável `I18N` define um parâmetro estático `get` que é útil quando voc�
 
 ### Internacionalizando strings no código JavaScript {#internationalizing-strings-in-javascript-code}
 
-A API do JavaScript permite localizar strings no cliente. Assim como com [Java e JSP](#internationalizing-strings-in-java-and-jsp-code) , a API JavaScript permite identificar strings para localização, fornecer dicas de localização e incluir variáveis nas strings localizadas.
+A API do JavaScript permite localizar strings no cliente. Assim como com [Java™ e JSP](#internationalizing-strings-in-java-and-jsp-code) , a API JavaScript permite identificar strings para localização, fornecer dicas de localização e incluir variáveis nas strings localizadas.
 
 A variável `granite.utils` [pasta da biblioteca do cliente](/help/sites-developing/clientlibs.md) O fornece a API do JavaScript. Para usar a API, inclua essa pasta da biblioteca do cliente na sua página. As funções de localização usam o `Granite.I18n` namespace.
 
-Antes de apresentar strings localizadas, é necessário definir o local usando o `Granite.I18n.setLocale` função. A função requer o código de idioma do local como argumento:
+Antes de apresentar strings localizadas, defina o local usando o `Granite.I18n.setLocale` função. A função requer o código de idioma do local como argumento:
 
 ```
 Granite.I18n.setLocale("fr");
@@ -140,7 +136,7 @@ Granite.I18n.setLocale("fr");
 Granite.I18n.get("string to localize", [variables], "localization hint");
 ```
 
-Os parâmetros da função são diferentes do método Java I18n.get:
+Os parâmetros de função são diferentes do método Java™ I18n.get:
 
 * O primeiro parâmetro é o literal da string a ser localizado.
 * O segundo parâmetro é uma matriz de valores a serem inseridos no literal da string.
@@ -166,7 +162,7 @@ O exemplo de script JSP a seguir recupera o `jcr:title` do repositório e exibe 
 
 #### Especificando dicas de tradução para nós JCR {#specifying-translation-hints-for-jcr-nodes}
 
-Semelhante [dicas de tradução na API Java](#using-translation-hints), você pode fornecer dicas de tradução para distinguir cadeias de caracteres duplicadas no dicionário. Forneça a dica de tradução como uma propriedade do nó que contém a propriedade internacionalizada. O nome da propriedade de dica é composto do nome da propriedade internacionalizada com a variável `_commentI18n` sufixo:
+Semelhante [dicas de tradução na API Java™](#using-translation-hints), você pode fornecer dicas de tradução para distinguir cadeias de caracteres duplicadas no dicionário. Forneça a dica de tradução como uma propriedade do nó que contém a propriedade internacionalizada. O nome da propriedade de dica é composto do nome da propriedade internacionalizada com a variável `_commentI18n` sufixo:
 
 `${prop}_commentI18n`
 
@@ -174,7 +170,7 @@ Por exemplo, uma variável `cq:page` O nó inclui a propriedade jcr:title que es
 
 ### Testar cobertura de internacionalização {#testing-internationalization-coverage}
 
-Teste se você internacionalizou todas as strings na interface do usuário. Para ver quais cadeias de caracteres são cobertas, defina o idioma do usuário como zz_ZZ e abra a interface do usuário no navegador da Web. As strings internacionalizadas são exibidas com uma tradução de stub no seguinte formato:
+Teste se você internacionalizou todas as strings na interface do usuário. Para ver quais cadeias de caracteres são cobertas, defina o idioma do usuário como zz_ZZ e abra a interface do usuário no navegador da Web. As strings internacionalizadas são exibidas com uma tradução stub no seguinte formato:
 
 `USR_*Default-String*_尠`
 

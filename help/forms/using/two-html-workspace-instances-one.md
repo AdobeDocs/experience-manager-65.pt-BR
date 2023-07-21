@@ -1,31 +1,27 @@
 ---
 title: Hospedagem de duas instâncias do espaço de trabalho do AEM Forms em um servidor
-seo-title: Hosting two AEM Forms workspace instances on one server
 description: Como os administradores de LC podem personalizar o HTML WS para hospedar duas instâncias em um único servidor acessível por URLs diferentes.
-seo-description: How LC administrators can customize HTML WS to host two instances on a single server accessible via different URLs.
-uuid: 0584f512-6b92-4418-b71c-93605cfa1927
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 exl-id: 32a546fc-e33f-46f9-ac3b-45eca0e12239
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
 # Hospedagem de duas instâncias do espaço de trabalho do AEM Forms em um servidor {#hosting-two-aem-forms-workspace-instances-on-one-server}
 
-A instalação e as configurações padrão do AEM Forms permitem que apenas um espaço de trabalho do AEM Forms esteja disponível no servidor. No entanto, talvez seja necessário hospedar duas instâncias diferentes do espaço de trabalho do AEM Forms em um único servidor do AEM Forms. As duas instâncias podem ser acessadas por URLs diferentes.
+A instalação e as configurações padrão do AEM Forms permitem que apenas um espaço de trabalho do AEM Forms esteja disponível no servidor. No entanto, talvez seja necessário hospedar duas instâncias diferentes do espaço de trabalho do AEM Forms em um único AEM Forms Server. As duas instâncias podem ser acessadas por URLs diferentes.
 
-Os administradores do AEM Forms personalizam o espaço de trabalho para criar dois URLs diferentes e disponibilizar dois espaços de trabalho no mesmo servidor. Neste artigo de personalização, pressupomos que os dois espaços de trabalho estejam acessíveis em `https://'[server]:[port]'/lc/ws` e `https://'[server]:[port]':/lc/ws2`.
+Os administradores do AEM Forms personalizam o espaço de trabalho para criar dois URLs diferentes e disponibilizar dois espaços de trabalho no mesmo servidor. Neste artigo de personalização, você pode supor que os dois espaços de trabalho estão acessíveis em `https://'[server]:[port]'/lc/ws` e `https://'[server]:[port]':/lc/ws2`.
 
 Siga estas etapas para configurar o espaço de trabalho do AEM Forms.
 
 1. Instale o pacote dev do espaço de trabalho do AEM Forms em seu servidor. Consulte [pacote dev](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), para obter instruções sobre como criá-lo.
-1. Faça login no CRXDE Lite como administrador, acessando `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Faça logon no CRXDE Lite como administrador, acessando `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Copie o nó ws em /content e cole em /content. Renomeie o nó para ws2. Clique em **[!UICONTROL Salvar tudo]**. Nas propriedades deste nó, altere o valor de `sling:resourceType` para ws2. Clique em **[!UICONTROL Salvar tudo]**.
 
 1. Copie a pasta ws de /libs e cole em /apps. Renomeie a pasta para ws2. Clique em **[!UICONTROL Salvar tudo]**.

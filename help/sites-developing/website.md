@@ -1,17 +1,15 @@
 ---
 title: Criar um site completo (JSP)
-description: Este tutorial permite que você crie um site completo com AEM
-uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
+description: Este tutorial ensina como criar um site completo com o Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '4935'
+source-wordcount: '4941'
 ht-degree: 2%
 
 ---
@@ -20,9 +18,9 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Este artigo descreve como criar um site usando JSP e com base na interface clássica. A Adobe recomenda aproveitar as tecnologias de AEM mais recentes para seus sites, conforme descrito detalhadamente no artigo [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md).
+>Este artigo descreve como criar um site usando JSP e com base na interface clássica. A Adobe recomenda o uso das tecnologias mais recentes do Adobe Experience Manager (AEM) para seus sites, conforme descrito detalhadamente no artigo [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md).
 
-Este tutorial permite criar um site completo com o Adobe Experience Manager (AEM). O site será baseado em um site genérico e destina-se principalmente a desenvolvedores da Web. Todo o desenvolvimento ocorre em um ambiente de criação.
+Este tutorial permite que você crie um site completo com AEM. O site será baseado em um site genérico e destina-se principalmente a desenvolvedores da Web. Todo o desenvolvimento ocorre em um ambiente de criação.
 
 Este tutorial descreve como:
 
@@ -42,7 +40,7 @@ Este tutorial descreve como:
 
 1. Incluir vários componentes de base.
 
-Depois de executar todas as etapas, as páginas serão exibidas da seguinte maneira:
+Depois de executar todas as etapas, as páginas serão assim:
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -50,7 +48,7 @@ Depois de executar todas as etapas, as páginas serão exibidas da seguinte mane
 
 Para seguir o tutorial em vez de executar os exercícios, baixe o site-1.0.zip. Este arquivo é um pacote de conteúdo AEM que contém os resultados deste tutorial. Uso [Gerenciador de pacotes](/help/sites-administering/package-manager.md) para instalar o pacote na instância do autor.
 
-**NOTA:** A instalação deste pacote substituirá todos os recursos na instância de criação que você criou usando este tutorial.
+**NOTA:** A instalação deste pacote substitui todos os recursos na instância de criação que você criou usando este tutorial.
 
 Pacote de conteúdo do site
 
@@ -110,9 +108,9 @@ Arquivo static.css de amostra e imagens
 
 Nesta seção, você cria o seguinte:
 
-* O modelo de página de conteúdo que será usado para criar páginas de conteúdo no site de exemplo
-* O componente contentpage que será usado para renderizar páginas de conteúdo
-* O script contentpage
+* O modelo de página de conteúdo usado para criar páginas de conteúdo no site de exemplo.
+* O componente contentpage usado para renderizar páginas de conteúdo.
+* O script contentpage.
 
 #### Criação do modelo Contentpage {#creating-the-contentpage-template}
 
@@ -273,7 +271,7 @@ Nesta seção, você cria as seguintes páginas, todas usando o modelo de págin
 
 Esta seção descreve como aprimorar o script de página de conteúdo usando os scripts de componente de base do AEM e escrevendo seus próprios scripts.
 
-A variável **Produtos** A página terá a seguinte aparência:
+Quando terminar, a janela **Produtos** A página deve ter a seguinte aparência:
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -311,7 +309,7 @@ Por exemplo, no código JSP do componente, você pode fazer referência aos scri
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-   Abra a fonte da página para ver os elementos de javascript e HTML gerados pelos scripts head.jsp e body.jsp. O trecho de script a seguir abre o Sidekick quando você abre a página:
+   Abra a fonte da página para ver os elementos JavaScript e HTML gerados pelos scripts head.jsp e body.jsp. O trecho de script a seguir abre o Sidekick quando você abre a página:
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -407,9 +405,9 @@ Nesta seção, você cria vários scripts que geram, cada um, uma parte do corpo
 
 Nesta seção, você cria um componente que exibe links para todas as páginas de nível superior do site para facilitar a navegação. Esse conteúdo do componente aparece na parte superior de todas as páginas criadas usando o modelo de página de conteúdo.
 
-Na primeira versão do componente de navegação superior (navegação superior), os itens de navegação são somente links de texto. Na segunda versão, você implementa topnav com links de navegação de imagem.
+Na primeira versão do componente de navegação superior (navegação superior), os itens de navegação são somente links de texto. Na segunda versão, você implementa o topnav com links de navegação de imagem.
 
-Sua navegação superior terá a seguinte aparência:
+Quando terminar, sua navegação superior deverá ter a seguinte aparência:
 
 ![chlimage_1-39](assets/chlimage_1-39.png)
 
@@ -518,7 +516,7 @@ Neste exercício, o Sling corresponde esses URLs ao script /apps/mywebsite/compo
 1. Clique com o botão direito do mouse no `/apps/mywebsite/components/contentpage` e clique em **Criar** > **Criar arquivo**.
 1. No **Criar arquivo** janela, como **Nome**, tipo `navimage.png.java`.
 
-   A extensão de nome de arquivo .java indica ao Sling que o Suporte a Java para script Apache Sling deve ser usado para compilar o script e criar um servlet.
+   A extensão de nome de arquivo .java indica ao Sling que o suporte ao Apache Sling Scripting Java™ deve ser usado para compilar o script e criar um servlet.
 
 1. Copie o código a seguir em `navimage.png.java.`O código estende a classe AbstractImageServlet:
 
@@ -712,7 +710,7 @@ Crie duas páginas localizadas abaixo da página Produtos. Para cada página que
 Para criar o componente listchildren:
 
 1. No CRXDE Lite, clique com o botão direito do mouse em `/apps/mywebsite/components`, selecione **Criar**, depois **Criar componente**.
-1. Na caixa de diálogo, digite os seguintes valores de propriedade e clique em Avançar:
+1. Na caixa de diálogo, insira os seguintes valores de propriedade e clique em Próximo:
 
    * Label: listchildren.
    * Título: Componente Minhas listas e filhos.
@@ -844,9 +842,9 @@ Crie um componente que exiba o logotipo da empresa e forneça um link para a pá
 * Os valores de propriedade se aplicam a todas as instâncias do componente que são adicionadas às páginas que usam o design.
 * As propriedades podem ser configuradas usando qualquer instância do componente que esteja em uma página que usa o design.
 
-Sua caixa de diálogo de modo de design contém propriedades para configurar a imagem e o caminho do link. O componente de logotipo será colocado no lado superior esquerdo de todas as páginas do site.
+Sua caixa de diálogo de modo de design contém propriedades para configurar a imagem e o caminho do link. O componente de logotipo é colocado no lado superior esquerdo de todas as páginas do site.
 
-Terá a seguinte aparência:
+Quando você terminar, a aparência deverá ser a seguinte:
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -921,7 +919,7 @@ Crie a caixa de diálogo para configurar o componente de logotipo no modo Design
       * **Título:** `Logo (Design)`
 
 1. Clique com o botão direito do mouse no nó tab1 na ramificação design_dialog e clique em Excluir. Clique em Salvar tudo.
-1. No `design_dialog/items/items`crie um novo nó chamado `img` do tipo `cq:Widget`. Adicione as seguintes propriedades e clique em Salvar tudo:
+1. No `design_dialog/items/items`crie um nó chamado `img` do tipo `cq:Widget`. Adicione as seguintes propriedades e clique em Salvar tudo:
 
    | Nome | Tipo | Valor |
    |---|---|---|
@@ -1050,7 +1048,7 @@ Esta seção descreve como definir uma imagem como seu logotipo usando a caixa d
 
 Nesta seção, você inclui o componente de navegação estrutural (trilha), que é um dos componentes de base.
 
-1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `center.jsp` e substitua:
+1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `center.jsp`e substitua:
 
    ```java
    <div>trail</div>
@@ -1071,7 +1069,7 @@ Nesta seção, você inclui o componente de navegação estrutural (trilha), que
 
 Nesta seção, você inclui o componente de título, que é um dos componentes de base.
 
-1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `center.jsp` e substitua:
+1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `center.jsp`e substitua:
 
    ```xml
    <div>title</div>
@@ -1096,7 +1094,7 @@ O sistema de parágrafos (parsys) é uma parte significativa de um site, pois ge
 
 Adicione o componente parsys (um dos componentes de base) ao componente contentpage.
 
-1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `center.jsp` e localize a seguinte linha de código:
+1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `center.jsp`e localize a seguinte linha de código:
 
    ```xml
    <div>parsys</div>
@@ -1177,17 +1175,17 @@ A variável `cq:editConfig` O tipo de nó permite configurar determinados compor
 
 Nesta seção, você usa um nó cq:editConfig para permitir que você arraste ativos do Localizador de conteúdo para o componente de imagem.
 
-1. No CRXDE Lite, no nó /apps/mywebsite/components/image, crie um novo nó da seguinte maneira:
+1. No CRXDE Lite, no nó /apps/mywebsite/components/image, crie um nó da seguinte maneira:
 
    * Nome: cq:editConfig.
    * Tipo: cq:EditConfig.
 
-1. No nó cq:editConfig, crie um novo nó da seguinte maneira:
+1. No nó cq:editConfig, crie um nó da seguinte maneira:
 
    * Nome: cq:dropTargets.
    * Tipo: cq:DropTargetConfig.
 
-1. No nó cq:dropTargets, crie um novo nó da seguinte maneira:
+1. No nó cq:dropTargets, crie um nó da seguinte maneira:
 
    * Nome: imagem.
    * Tipo: nt:não estruturado.
@@ -1211,7 +1209,7 @@ Nesta seção, você adiciona o ícone para aparecer ao lado do componente de im
 
 #### Uso do Componente de imagem {#using-the-image-component}
 
-Nesta seção, você visualizará as **Produtos** e adicione seu componente de imagem ao sistema de parágrafos.
+Nesta seção, você visualiza o **Produtos** e adicione seu componente de imagem ao sistema de parágrafos.
 
 1. No navegador, recarregue o **Produtos** página.
 1. No Sidekick, clique na guia **modo de design** ícone.
@@ -1264,7 +1262,7 @@ Há várias opções, no modo de edição e no modo de design.
 
 Nesta seção, você cria o componente para pesquisar conteúdo no site. Esse componente de pesquisa pode ser colocado no sistema de parágrafo de qualquer página (por exemplo, em uma página de resultados de pesquisa especializada).
 
-Sua caixa de entrada de pesquisa será exibida da seguinte maneira no **Inglês** página:
+Quando terminar, sua caixa de entrada de pesquisa deverá ter a seguinte aparência no campo **Inglês** página:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -1516,7 +1514,7 @@ Nesta seção, você inclui o componente Sistema de parágrafo de herança (ipar
 
 Para este componente, você pode definir vários parâmetros nos modos de edição e design.
 
-1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `right.jsp` e substitua:
+1. No CRXDE Lite, navegue até `/apps/mywebsite/components/contentpage`, abra o arquivo `right.jsp`e substitua:
 
    ```java
    <div>iparsys</div>

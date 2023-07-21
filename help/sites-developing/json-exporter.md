@@ -1,16 +1,12 @@
 ---
 title: Exportador JSON para serviços de conteúdo
-seo-title: JSON Exporter for Content Services
 description: Os Serviços de conteúdo do AEM foram criados para generalizar a descrição e a entrega de conteúdo de e para o AEM para além do foco em páginas da Web. Eles realizam a entrega de conteúdo para canais que não são páginas da Web tradicionais do AEM, usando métodos padronizados que podem ser consumidos por qualquer cliente.
-seo-description: AEM Content Services are designed to generalize the description and delivery of content in/from AEM beyond a focus on web pages. They provide the delivery of content to channels that are not traditional AEM web pages, using standardized methods that can be consumed by any client.
-uuid: be6457b1-fa9c-4f3b-b219-01a4afc239e7
 contentOwner: User
 content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 36%
@@ -61,21 +57,21 @@ Sua página pode conter um único fragmento de conteúdo ou vários componentes 
 
 * Por exemplo, um URL como:
 
-   ```shell
-   http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
-   ```
+  ```shell
+  http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
+  ```
 
 * Fornece conteúdo como:
 
-   ![chlimage_1-193](assets/chlimage_1-193.png)
+  ![chlimage_1-193](assets/chlimage_1-193.png)
 
-   >[!NOTE]
-   >
-   >Você pode [adapte seus próprios componentes](/help/sites-developing/json-exporter-components.md) para acessar e usar esses dados.
+  >[!NOTE]
+  >
+  >Você pode [adapte seus próprios componentes](/help/sites-developing/json-exporter-components.md) para acessar e usar esses dados.
 
-   >[!NOTE]
-   >
-   >Embora não seja uma implementação padrão, [vários seletores são compatíveis,](json-exporter-components.md#multiple-selectors) mas `model` deve ser o primeiro.
+  >[!NOTE]
+  >
+  >Embora não seja uma implementação padrão, [vários seletores são compatíveis,](json-exporter-components.md#multiple-selectors) mas `model` deve ser o primeiro.
 
 ### Informações adicionais {#further-information}
 
