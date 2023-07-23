@@ -11,14 +11,16 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '3488'
+source-wordcount: '3545'
 ht-degree: 3%
 
 ---
 
 # Gerar documento de registro para formulários adaptáveis{#generate-document-of-record-for-adaptive-forms}
+
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -232,7 +234,7 @@ Um modelo base é usado para definir o cabeçalho, rodapé, estilo e aparência 
 
 **Convenções de estilo para campos**
 
-* Para aplicar o estilo nos campos do documento de registro, o modelo base fornece campos localizados no `AF_FIELDSSUBFORM` subde sob o `AF_METATEMPLATE` subformulário raiz.
+* Para aplicar estilo nos campos no documento de registro, o modelo base fornece campos localizados na variável `AF_FIELDSSUBFORM` subde sob o `AF_METATEMPLATE` subformulário raiz.
 
 * As propriedades desses campos são aplicadas aos campos no documento de registro. Esses campos devem seguir o `AF_<name of field in all caps>_XFO` convenção de nomenclatura. Por exemplo, o nome do campo da caixa de seleção deve ser `AF_CHECKBOX_XFO`.
 

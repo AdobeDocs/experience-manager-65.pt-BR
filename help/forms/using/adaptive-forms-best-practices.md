@@ -9,14 +9,16 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: f05ddd2fb72258b7de5d361eb87f5e68e7ddd7ff
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '4529'
+source-wordcount: '4586'
 ht-degree: 0%
 
 ---
 
 # Práticas recomendadas para trabalhar com formulários adaptáveis {#best-practices-for-working-with-adaptive-forms}
+
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 ## Visão geral {#overview}
 
@@ -259,7 +261,7 @@ Algumas práticas recomendadas ao localizar formulários adaptáveis são as seg
 * Quaisquer modificações como adicionar um novo componente ou aplicar um script em um formulário localizado não são localizadas automaticamente. Portanto, você deve finalizar um formulário antes de localizá-lo para evitar vários ciclos de localização.
 * Uso `afAcceptLang` parâmetro de solicitação para substituir a localidade do navegador e renderizar o formulário na localidade especificada. Por exemplo, a URL a seguir forçará a renderização do formulário no local japonês, independentemente do local especificado na configuração do navegador:
 
-   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+  `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * Atualmente, o AEM Forms oferece suporte à localização de conteúdo de formulários adaptáveis em inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR). No entanto, você pode adicionar suporte para novos locais para formulários adaptáveis no tempo de execução. Para obter mais informações, consulte [Suporte a novos códigos de idiomas para localização de formulários adaptáveis](/help/forms/using/supporting-new-language-localization.md).
 
@@ -269,7 +271,7 @@ Algumas práticas recomendadas ao localizar formulários adaptáveis são as seg
 
 Você pode configurar uma instância adicional do servidor AEM Forms que reside atrás do firewall em uma zona protegida. Você pode usar essa instância para:
 
-* **Processamento em lote**: trabalhos que são recorrentes ou agendados em lotes com carga pesada. Por exemplo, imprimir declarações, gerar correspondências e usar serviços de documento como Gerador de PDF, Saída e Assembler.
+* **Processamento em lote**: trabalhos que são recorrentes ou agendados em lotes com carga pesada. Por exemplo, imprimir declarações, gerar correspondências e usar serviços de documento como PDF Generator, Saída e Assembler.
 * **Armazenamento de dados PII**: Salve os dados de PII no servidor de processamento. Isso não é necessário se você já estiver usando um provedor de armazenamento personalizado para armazenar dados de PII.
 
 ### Mover projeto para outro ambiente {#moving-project-to-another-environment}
@@ -312,7 +314,7 @@ Em um ambiente de produção, é recomendável não armazenar dados de formulár
 
 * **Armazenamento de dados de envio**: se estiver usando o Repositório de envio do portal de formulários, você deve implementar uma SPI personalizada para armazenar os dados de envio em um banco de dados. Consulte [Amostra para integrar o componente de rascunhos e envios ao banco de dados](/help/forms/using/integrate-draft-submission-database.md) para obter uma integração de exemplo.
 
-   Você também pode escrever uma ação de envio personalizada que armazene dados de formulário e anexos em um armazenamento seguro. Consulte [Gravação da ação enviar personalizada para formulários adaptáveis](/help/forms/using/custom-submit-action-form.md) para obter mais informações.
+  Você também pode escrever uma ação de envio personalizada que armazene dados de formulário e anexos em um armazenamento seguro. Consulte [Gravação da ação enviar personalizada para formulários adaptáveis](/help/forms/using/custom-submit-action-form.md) para obter mais informações.
 
 * **Comprimento da ID de rascunho**: ao salvar um formulário adaptável como rascunho, uma ID de rascunho é gerada para identificar de forma exclusiva o rascunho. O valor mínimo para o comprimento do campo de ID de rascunho é de 26 caracteres. A Adobe recomenda definir o comprimento da ID de rascunho para 26 ou mais caracteres.
 

@@ -10,14 +10,16 @@ discoiquuid: 264aa8c0-ba64-4768-b3d1-1b9baa6b4d72
 docset: aem65
 feature: Adaptive Forms
 exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 0%
+source-wordcount: '626'
+ht-degree: 1%
 
 ---
 
 # Criar um formulário adaptável usando um conjunto de formulários adaptáveis{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
+
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 ## Visão geral {#overview}
 
@@ -141,7 +143,7 @@ Execute as seguintes etapas para adicionar um formulário adaptável como um for
 
 1. Abra o formulário principal no modo de edição.
 1. Na barra lateral, clique em **Assets** ![assets-browser](assets/assets-browser.png). Em Ativos, selecione **Formulário adaptável** no menu suspenso.
-   [ ![Seleção de formulário adaptável em Ativos](assets/asset.png)](assets/asset-1.png)
+   [![Seleção de formulário adaptável em Ativos](assets/asset.png)](assets/asset-1.png)
 
 1. Arraste e solte o formulário adaptável que deseja adicionar como um formulário filho.
-   [ ![Arraste e solte o formulário adaptável no site](assets/drag-drop.png)](assets/drag-drop-1.png)O formulário adaptável solto é adicionado como um formulário filho.
+   [![Arraste e solte o formulário adaptável no site](assets/drag-drop.png)](assets/drag-drop-1.png)O formulário adaptável solto é adicionado como um formulário filho.

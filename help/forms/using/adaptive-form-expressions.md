@@ -10,14 +10,16 @@ discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2803'
 ht-degree: 0%
 
 ---
 
 # Expressões de formulário adaptável{#adaptive-form-expressions}
+
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 Os formulários adaptáveis fornecem experiência de preenchimento de formulário otimizada e simplificada para usuários finais com recursos de script dinâmicos. Ele permite escrever expressões para adicionar vários comportamentos, como campos e painéis de exibição/ocultação dinâmicos. Também permite adicionar campos calculados, tornar os campos somente leitura, adicionar lógica de validação e muito mais. O comportamento dinâmico é baseado na entrada do usuário ou em dados pré-preenchidos.
 
@@ -282,7 +284,7 @@ Execute as seguintes etapas para criar um padrão personalizado para um tipo de 
 1. Abra a guia Properties do nó criado. Por exemplo, abra a guia Propriedades de `textboxpatterns`. Adicione o `guideComponentType` para esse nó e defina seu valor como *fd/af/components/formatter/guideTextBox*.
 
 1. O valor dessa propriedade varia dependendo do campo para o qual você deseja definir os padrões. Para campo numérico, o valor de `guideComponentType` propriedade é *fd/af/components/formatter/guideNumericBox*. O valor do campo Datepicker é *fd/af/components/formatter/guideDatepicker*. &quot;
-1. Você pode adicionar um padrão personalizado atribuindo uma propriedade à variável `textboxpatterns` nó. Adicione uma propriedade com um nome (por exemplo, `pattern1`) e defina seu valor com o padrão que deseja adicionar. Por exemplo, adicionar uma propriedade `pattern1` com o valor Fax=text{99-999-999999}. O padrão está disponível para todas as Caixas de texto usadas no Forms adaptável.
+1. Você pode adicionar um padrão personalizado atribuindo uma propriedade à variável `textboxpatterns` nó. Adicione uma propriedade com um nome (por exemplo, `pattern1`) e defina seu valor com o padrão que deseja adicionar. Por exemplo, adicionar uma propriedade `pattern1` com o valor Fax=text{99-999-9999999}. O padrão está disponível para todas as Caixas de texto usadas no Forms adaptável.
 
    ![Criação de padrões personalizados para campos no CrxDe](assets/creating-custom-patterns.png)
 

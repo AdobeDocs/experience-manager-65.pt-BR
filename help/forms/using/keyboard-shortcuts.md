@@ -10,14 +10,16 @@ topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1204'
 ht-degree: 3%
 
 ---
 
 # Atalhos de teclado do AEM Forms {#aem-forms-keyboard-shortcuts}
+
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 Este artigo lista os atalhos de teclado que podem ser usados com o Editor de formulário adaptável, o Editor de temas, o Navegador de conteúdo e o Gerenciamento de correspondência para sistemas operacionais Windows e Macintosh.
 
@@ -53,7 +55,6 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 >* Windows: pressione Ctrl e clique nos componentes necessários.
 >* SO Mac: Command + clique nos componentes necessários.
 >
-
 
 ## Editor de temas  {#themeeditor}
 

@@ -11,14 +11,16 @@ discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '6049'
+source-wordcount: '6106'
 ht-degree: 1%
 
 ---
 
 # Criação e uso de temas {#creating-and-using-themes}
+
+<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -416,7 +418,7 @@ As opções para personalizar estilos de estado variam para diferentes component
   </tr>
   <tr>
    <td><p>Borda</p> </td>
-   <td><p>Permite escolher a aparência da borda do componente. Por exemplo, você deseja que a caixa de texto tenha uma borda grossa e vermelha profunda com uma linha pontilhada. </p> <p>Suas opções são largura, estilo, raio e cor da borda.</p> </td>
+   <td><p>Permite escolher a aparência da borda do componente. Por exemplo, você deseja que a caixa de texto tenha uma borda espessa vermelha profunda com uma linha pontilhada. </p> <p>Suas opções são largura, estilo, raio e cor da borda.</p> </td>
   </tr>
   <tr>
    <td><p>Efeitos</p> </td>
