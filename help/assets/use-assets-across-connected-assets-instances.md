@@ -7,9 +7,9 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 578e9eb45ab996df841cb22e89d45fadfe90592b
 workflow-type: tm+mt
-source-wordcount: '3909'
+source-wordcount: '3950'
 ht-degree: 17%
 
 ---
@@ -43,11 +43,11 @@ Antes de usar ou configurar esse recurso, verifique o seguinte:
 * Os usuários fazem parte dos grupos de usuários apropriados em cada implantação.
 * Para [!DNL Adobe Experience Manager] tipos de implantação, um dos critérios compatíveis é atendido. [!DNL Experience Manager] 6.5 [!DNL Assets] funciona com [!DNL Experience Manager] as a Cloud Service. Para obter mais informações sobre como essa funcionalidade funciona no [!DNL Experience Manager] as a [!DNL Cloud Service], consulte [Connected Assets no Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] no AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] no local |
-   |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Compatível | Compatível | Compatível |
-   | **[!DNL Experience Manager]6.5 [!DNL Assets] no AMS** | Compatível | Compatível | Compatível |
-   | **[!DNL Experience Manager]6.5 [!DNL Assets] no local** | Incompatível | Incompatível | Incompatível |
+  | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] no AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] no local |
+  |---|---|---|---|
+  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Compatível | Compatível | Compatível |
+  | **[!DNL Experience Manager]6.5 [!DNL Assets] no AMS** | Compatível | Compatível | Compatível |
+  | **[!DNL Experience Manager]6.5 [!DNL Assets] no local** | Incompatível | Incompatível | Incompatível |
 
 ### Formatos de arquivo não compatíveis {#mimetypes}
 
@@ -315,6 +315,8 @@ Sim, após configurar o Connected Assets, você pode executar as operações atu
 
 * Para obter insights sobre o uso do ativo, configure o [Assets Insight](/help/assets/asset-insights.md) funcionalidade no [!DNL Sites] instância.
 
+* Não é possível arrastar o ativo remoto para a [Caixa de diálogo Configurar componente de imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). No entanto, é possível arrastar o ativo remoto diretamente para o componente de imagem na página Sites sem clicar em **[!UICONTROL Configurar]**.
+
 ### Permissões e gerenciamento de ativos {#permissions-and-managing-assets}
 
 * Os ativos locais são cópias somente leitura. [!DNL Experience Manager]Os componentes do fazem edições não destrutivas nos ativos. Nenhuma outra edição é permitida.
@@ -352,18 +354,18 @@ Para solucionar erros comuns, siga estas etapas:
 
 * Se não conseguir acessar a implantação remota do DAM a partir do local [!DNL Sites] garantir que os cookies entre sites sejam permitidos e [suporte a cookie no mesmo site](/help/sites-administering/same-site-cookie-support.md) está configurado. Se os cookies entre sites estiverem bloqueados, as implantações do [!DNL Experience Manager] não pode autenticar. Por exemplo, [!DNL Google Chrome] no modo Incógnito pode bloquear cookies de terceiros. Para permitir cookies no [!DNL Chrome] navegador, clique no ícone &quot;olho&quot; na barra de endereços e navegue até **Site não funciona** > **Bloqueado**, selecione o URL do DAM remoto e permita o cookie de token de logon. Como alternativa, consulte [como ativar cookies de terceiros](https://support.google.com/chrome/answer/95647).
 
-   ![Erro de cookie no navegador Chrome no modo Incógnito](assets/chrome-cookies-incognito-dialog.png)
+  ![Erro de cookie no navegador Chrome no modo Incógnito](assets/chrome-cookies-incognito-dialog.png)
 
 * Se não conseguir acessar a implantação remota do DAM do Adobe Managed Services a partir da implantação do Experience Manager Sites as a Cloud Service Sites, atualize o `aem_author.vhost` arquivo, disponível em `"/etc/httpd/conf.d/available_vhosts`, para que o DAM remoto inclua os seguintes cabeçalhos na configuração do Dispatcher:
 
-   ```xml
-   Header Set Access-Control-Allow-Origin <Local Sites instance host>
-   Header Set Access-Control-Allow-Credentials true
-   ```
+  ```xml
+  Header Set Access-Control-Allow-Origin <Local Sites instance host>
+  Header Set Access-Control-Allow-Credentials true
+  ```
 
 * Se as referências remotas não forem recuperadas e resultarem em uma mensagem de erro, verifique se [!DNL Sites] a implantação está disponível e verifique se há problemas de conectividade de rede. Tente novamente mais tarde para verificar. [!DNL Assets] A implantação do tenta estabelecer duas vezes a conexão com o [!DNL Sites] e, em seguida, relata uma falha.
 
-   ![falha ao recuperar referências remotas de ativos](assets/reference-report-failure.png)
+  ![falha ao recuperar referências remotas de ativos](assets/reference-report-failure.png)
 
 * Se os cookies não forem enviados do servidor do Sites para o servidor do Assets no Google Chrome, isso ocorre porque a conexão do Assets não está em HTTPS. Se você não usar HTTPS na instância do Assets, a variável `SameSite=None` O cabeçalho não pode ser adicionado à resposta após a autenticação com o servidor de ativos.
 
