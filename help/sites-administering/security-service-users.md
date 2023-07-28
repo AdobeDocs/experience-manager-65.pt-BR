@@ -7,12 +7,13 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: f317783f3320e3987c7468aa0b2471e525b0387a
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1797'
 ht-degree: 0%
 
 ---
+
 
 # Usuários de serviço no Adobe Experience Manager (AEM) {#service-users-in-aem}
 
@@ -79,7 +80,12 @@ Se você aplicar o controle de acesso ao reestruturar o conteúdo ou quando o fi
 
 ## Usuários e Mapeamentos do Serviço {#service-users-and-mappings}
 
-Se o procedimento acima falhar, o Sling 7 oferecerá um serviço de Mapeamento de usuários do serviço, que permite configurar um mapeamento de pacote para usuário e dois métodos de API correspondentes: ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` e ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` que retornam um resolvedor de sessão/recurso com os privilégios somente de um usuário configurado. Esses métodos têm as seguintes características:
+Se o procedimento acima falhar, o Sling 7 oferecerá um serviço de Mapeamento de usuários do serviço, que permite configurar um mapeamento de pacote para usuário e dois métodos de API correspondentes:
+
+* [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
+* [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
+
+Os métodos retornam um resolvedor de sessão/recurso com os privilégios somente de um usuário configurado. Esses métodos têm as seguintes características:
 
 * Eles permitem serviços de mapeamento para usuários
 * Eles permitem definir usuários de subserviço
@@ -145,7 +151,7 @@ Ao adicionar o .content.xml correspondente ao conteúdo do pacote, verifique se 
 
 ## Adicionando uma alteração de configuração à configuração ServiceUserMapper {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-Para adicionar um mapeamento de seu serviço aos Usuários do sistema correspondentes, crie uma configuração de fábrica para o ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` serviço. Para manter essa configuração modular, ela pode ser fornecida usando o [Mecanismo de alteração do Sling](https://issues.apache.org/jira/browse/SLING-3578). A maneira recomendada de instalar essas configurações com seu pacote é usando [Carregamento do conteúdo inicial do Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
+Para adicionar um mapeamento de seu serviço aos Usuários do sistema correspondentes, crie uma configuração de fábrica para o [`ServiceUserMapper`](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html) serviço. Para manter essa configuração modular, ela pode ser fornecida usando o [Mecanismo de alteração do Sling](https://issues.apache.org/jira/browse/SLING-3578). A maneira recomendada de instalar essas configurações com seu pacote é usando [Carregamento do conteúdo inicial do Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
 1. Crie uma subpasta SLING-INF/content abaixo da pasta src/main/resources do seu pacote
 1. Nesta pasta, crie um arquivo chamado org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.ended-&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>.xml com o conteúdo da configuração de fábrica (incluindo todos os mapeamentos de usuário de subserviço). Exemplo:
