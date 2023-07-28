@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: 061af6f3318d68b50c5f606ad50db7a39da0f4fd
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ O plug-in determina automaticamente quais pacotes devem ser importados e os list
 
 * Indique no POM que os pacotes são opcionais. Use esta solução quando a conexão JDBC não exigir realmente os membros do pacote. Use o elemento Import-Package para indicar pacotes opcionais, como no exemplo a seguir:
 
-   `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
+  `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
 * Envolva os arquivos JAR que contêm os pacotes em um pacote OSGi que exporta os pacotes e implante o pacote. Use esta solução quando os membros do pacote forem necessários durante a execução do código.
 
 O conhecimento do código-fonte permite decidir qual solução usar. Você também pode experimentar qualquer uma das soluções e executar testes para validar a solução.
@@ -86,7 +86,7 @@ O conhecimento do código-fonte permite decidir qual solução usar. Você tamb�
 
 Os links a seguir abrem as páginas de download de alguns produtos de banco de dados populares:
 
-* [Microsoft® SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
+* [Microsoft® SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 * [Oracle](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 * [IBM® DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 
@@ -170,6 +170,7 @@ O código JSP de exemplo a seguir obtém uma instância da fonte de dados hsqldb
 >[!NOTE]
 >
 >Se o método getDataSource gerar uma exceção porque a fonte de dados não foi encontrada, verifique se a configuração do serviço Pool de Conexões está correta. Verifique os nomes das propriedades, os valores e os tipos de dados.
+>
 
 <!-- Link below redirects to the "Get started with AEM Sites - WKND tutorial"
 >[!NOTE]

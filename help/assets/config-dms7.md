@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 48540664fa80ac7ecc94a2d9dc56682ceaf67206
+source-git-commit: 78842fb50d5aa5e5c22801389713cb3c69cac4bf
 workflow-type: tm+mt
-source-wordcount: '6491'
+source-wordcount: '6489'
 ht-degree: 3%
 
 ---
@@ -236,7 +236,7 @@ Quando você executa o Dynamic Media - Scene7 mode no AEM, ele é encaminhado no
 
 1. No **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** marque a caixa de seleção das duas configurações a seguir:
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Quando ativada, essa configuração armazena em cache os resultados da permissão por 120 segundos ou dois minutos (padrão) para ser salva.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Quando ativada, essa configuração armazena em cache os resultados da permissão por 120 segundos (dois minutos) (padrão) para salvar.
    * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - Quando ativada, essa configuração valida o acesso de um usuário enquanto ele visualiza ativos por meio do Dynamic Media Image Server.
 
    ![Ativar as configurações da Lista de controle de acesso no modo Dynamic Media - Scene7](/help/assets/assets-dm/acl.png)
@@ -703,7 +703,7 @@ A configuração Conexão de upload do Scene7 sincroniza ativos do Experience Ma
 
    A variável **[!UICONTROL Número de conexões]** a configuração controla o número máximo de conexões HTTP permitidas para o upload do Experience Manager para o Dynamic Media; normalmente, o valor predefinido de dez conexões é suficiente.
 
-   A variável **[!UICONTROL Tempo limite do trabalho ativo]** determina o tempo de espera para que os ativos carregados do Dynamic Media sejam publicados no servidor de entrega. Esse valor é de 2100 segundos ou 35 minutos por padrão.
+   A variável **[!UICONTROL Tempo limite do trabalho ativo]** determina o tempo de espera para que os ativos carregados do Dynamic Media sejam publicados no servidor de entrega. Esse valor é de 2100 segundos (35 minutos) por padrão.
 
    Para a maioria dos casos de uso, a configuração de 2100 é suficiente.
 

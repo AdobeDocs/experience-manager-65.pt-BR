@@ -10,9 +10,9 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: cd797b1a5edd05715761f5914ebc64fdb64745af
+source-git-commit: 04941e17054951bcf6264da957d951a5d1107896
 workflow-type: tm+mt
-source-wordcount: '6631'
+source-wordcount: '6622'
 ht-degree: 7%
 
 ---
@@ -36,7 +36,7 @@ Para saber mais sobre extensões do Adobe ou extensões de terceiros, consulte [
 * A integração de tags do Experience Platform para visualizadores do Dynamic Media não funciona no nó do autor do Experience Manager. Não é possível ver nenhum rastreamento de uma página WCM até que ela seja publicada.
 * A integração de tags Experience Platform para visualizadores do Dynamic Media não é compatível com o modo de operação &quot;pop-up&quot;, em que o URL do visualizador é obtido usando o botão &quot;URL&quot; na página Detalhes do ativo.
 * A integração das tags Experience Platform não pode ser usada simultaneamente com os visualizadores herdados Integração do Analytics (por meio da `config2=` parâmetro).
-* O suporte para rastreamento de vídeo está limitado apenas ao rastreamento de &quot;reprodução principal&quot;, conforme descrito em [Visão geral do rastreamento](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en). Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é compatível.
+* O suporte para rastreamento de vídeo está limitado apenas ao rastreamento de &quot;reprodução principal&quot;, conforme descrito em [Visão geral do rastreamento](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en). Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é compatível.
 * A configuração da Duração do armazenamento para Elementos de dados não é compatível com Elementos de dados que usam o *Visualizadores do Dynamic Media* extensão. A duração do armazenamento deve ser definida como **[!UICONTROL Nenhum]**.
 
 ### Casos de uso para a integração do {#use-cases-for-the-integration}
@@ -133,7 +133,7 @@ Quando uma conta Experience Cloud é assinada para usar o Adobe Analytics para �
 
 Consulte [Instalação e configuração de extensões](#installing-and-setup-of-extensions).
 
-Atualmente, o suporte para rastreamento de vídeo está limitado apenas ao rastreamento de &quot;reprodução principal&quot;, conforme descrito em [Visão geral do rastreamento](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en). Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é compatível.
+Atualmente, o suporte para rastreamento de vídeo está limitado apenas ao rastreamento de &quot;reprodução principal&quot;, conforme descrito em [Visão geral do rastreamento](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en). Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é compatível.
 
 ## Usar a extensão Visualizadores do Dynamic Media {#using-the-dynamic-media-viewers-extension}
 
@@ -301,7 +301,7 @@ A tabela a seguir lista os eventos do Visualizador do Dynamic Media e seus argum
    <td><code>%event.detail.dm.timeStamp%</code></td>
   </tr>
   <tr>
-   <td><code>BANNER</code> </td>
+   <td><code>BANNER</code><br /> </td>
    <td><code>%event.detail.dm.BANNER.asset%</code></td>
   </tr>
   <tr>
@@ -756,7 +756,7 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
    * **[!UICONTROL Título]** - Insira um título de conta descritivo.
    * **[!UICONTROL Servidor de autorização]** - Retorne à página de detalhes da integração aberta anteriormente. Selecione o **[!UICONTROL JWT]** guia. Copie o nome do servidor—sem o caminho—como destacado abaixo.
 
-(o nome do servidor é apenas um exemplo)   Retorne à página **[!UICONTROL Conta]** e cole o nome no respectivo campo.
+   Retorne à página **[!UICONTROL Conta]** e cole o nome no respectivo campo.
 Por exemplo, `https://ims-na1.adobelogin.com/`
 (o nome do servidor é apenas um exemplo)
 
@@ -816,6 +816,7 @@ Por exemplo, `https://ims-na1.adobelogin.com/`
    * **[!UICONTROL Empresa]** - No **[!UICONTROL Empresa]** selecione sua empresa de Experience Cloud. A lista é preenchida automaticamente.
 
    * **[!UICONTROL Propriedade]** - Na lista suspensa Propriedade, selecione a propriedade Tags do Experience Platform que você criou anteriormente. A lista é preenchida automaticamente.
+
    Depois de preencher todos os campos, **[!UICONTROL Geral]** A página será semelhante ao seguinte:
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
