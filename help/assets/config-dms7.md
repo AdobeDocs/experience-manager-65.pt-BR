@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: a8db862b4a90ee6679de44df9508caf75a4c3eec
+source-git-commit: 48540664fa80ac7ecc94a2d9dc56682ceaf67206
 workflow-type: tm+mt
-source-wordcount: '6489'
+source-wordcount: '6491'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,6 @@ Com a nova arquitetura, o Experience Manager é responsável pelos ativos de ori
 >* [Entrega de conteúdo HTTP/2](/help/assets/http2.md)
 >* Redirecionamento de URL no nível da CDN
 >* Akamai ChinaCDN (para entrega ideal na China)
-
 
 ## Ativar o Dynamic Media no modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
@@ -120,12 +119,13 @@ Consulte [Instalar o pacote de recursos 18912 para migração de ativos em massa
 1. Quando a conexão for bem-sucedida, defina o seguinte. Cabeçalhos com um asterisco (*) são obrigatórios:
 
    * **[!UICONTROL Empresa]** - o nome da conta do Dynamic Media.
-      >[!IMPORTANT]
-      Somente uma configuração Dynamic Media no Cloud Services é suportada em uma instância de Experience Manager; não adicione mais de uma configuração. Várias configurações do Dynamic Media em uma instância do Experience Manager são _não_ suportado ou recomendado pelo Adobe.
+     >[!IMPORTANT]
+     >
+     Somente uma configuração Dynamic Media no Cloud Services é suportada em uma instância de Experience Manager; não adicione mais de uma configuração. Várias configurações do Dynamic Media em uma instância do Experience Manager são _não_ suportado ou recomendado pelo Adobe.
 
-      <!-- CQDOC-19579 and CQDOC-19612 -->
+     <!-- CQDOC-19579 and CQDOC-19612 -->
 
-      Consulte também [Configurar conta de alias da empresa no Dynamic Media](/help/assets/dm-alias-account.md).
+     Consulte também [Configurar conta de alias da empresa no Dynamic Media](/help/assets/dm-alias-account.md).
 
    * **[!UICONTROL Caminho da pasta raiz da empresa]**
 
@@ -133,9 +133,10 @@ Consulte [Instalar o pacote de recursos 18912 para migração de ativos em massa
       * **[!UICONTROL Imediatamente]** significa que, quando os ativos são carregados, o sistema assimila os ativos e fornece o URL/Incorporar instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.
       * **[!UICONTROL Na ativação]** significa que você deve publicar explicitamente o ativo primeiro antes que um link de URL/Incorporação seja fornecido.<br><!-- CQDOC-17478, Added March 9, 2021-->A partir do Experience Manager 6.5.8, a instância de publicação do Experience Manager reflete valores precisos de metadados do Dynamic Media, como `dam:scene7Domain` e `dam:scene7FileStatus` in **[!UICONTROL Na ativação]** somente modo de publicação. Para ativar essa funcionalidade, instale o Service Pack 8 e reinicie o Experience Manager. Acesse o Sling Config Manager. Encontre a configuração para `Scene7ActivationJobConsumer Component` ou criar um novo). Marque a caixa de seleção **[!UICONTROL Replicar metadados após a publicação do Dynamic Media]** e selecione **[!UICONTROL Salvar]**.
 
-         ![Caixa de seleção Replicar metadados após publicação no Dynamic Media](assets-dm/replicate-metadata-setting.png)
+        ![Caixa de seleção Replicar metadados após publicação no Dynamic Media](assets-dm/replicate-metadata-setting.png)
 
-      * **[!UICONTROL Publicação seletiva]** Essa opção permite controlar quais pastas são publicadas no Dynamic Media. Ele permite usar recursos como Recorte inteligente ou representações dinâmicas, ou determinar quais pastas são publicadas exclusivamente no Experience Manager para visualização. Esses mesmos ativos são *não* publicado no Dynamic Media para entrega no domínio público.<br>Você pode definir essa opção aqui no **[!UICONTROL Configuração da nuvem do Dynamic Media]** ou, se preferir, você pode optar por definir essa opção no nível da pasta, em um **[!UICONTROL Propriedades]**.<br>Consulte [Trabalhar com publicação seletiva no Dynamic Media](/help/assets/selective-publishing.md).<br>Se posteriormente você alterar essa configuração, ou se posteriormente alterá-la no nível da pasta, essas alterações afetarão somente os novos ativos que você fizer upload a partir desse ponto. O estado de publicação dos ativos existentes na pasta permanece como está até que você os altere manualmente de **[!UICONTROL Publicação rápida]** ou o **[!UICONTROL Gerenciar publicação]** caixa de diálogo.
+      * **[!UICONTROL Publicação seletiva]** Essa opção permite controlar quais pastas são publicadas no Dynamic Media. Ele permite usar recursos como Recorte inteligente ou representações dinâmicas, ou determinar quais pastas são publicadas exclusivamente no Experience Manager para visualização. Esses mesmos ativos são *não* publicado no Dynamic Media para entrega no domínio público.<br>Você pode definir essa opção aqui no **[!UICONTROL Configuração da nuvem do Dynamic Media]** ou, se preferir, você pode optar por definir essa opção no nível da pasta, em um **[!UICONTROL Propriedades]**.<br>Consulte [Trabalhar com publicação seletiva no Dynamic Media](/help/assets/selective-publishing.md).<br>Se posteriormente você alterar essa configuração ou se posteriormente alterá-la no nível da pasta, essas alterações afetarão somente os novos ativos que você fizer upload a partir desse ponto. O estado de publicação dos ativos existentes na pasta permanece como está até que você os altere manualmente de **[!UICONTROL Publicação rápida]** ou o **[!UICONTROL Gerenciar publicação]** caixa de diálogo.
+
    * **[!UICONTROL Servidor de visualização seguro]** - permite especificar o caminho do URL para o servidor de visualização de representações seguras. Ou seja, depois que as representações são geradas, o Experience Manager pode acessar e pré-visualizar com segurança as representações remotas do Dynamic Media (nenhum binário é enviado de volta para a instância do Experience Manager).
 A menos que você tenha uma organização especial para usar o servidor de sua própria empresa ou um servidor especial, a Adobe recomenda que você deixe essa configuração conforme especificado.
 
@@ -150,7 +151,9 @@ Para marcar uma pasta selecionada para sincronização com o Dynamic Media, sele
          * **[!UICONTROL Desativado para subpastas]** - Excluir tudo nesta subárvore da sincronização com o Dynamic Media.
 
    >[!NOTE]
+   >
    Não há suporte para o controle de versão no modo Dynamic Media - Scene7. Além disso, a ativação atrasada se aplica somente se **[!UICONTROL Publicar ativos]** na página Editar configuração do Dynamic Media estiver definida como **[!UICONTROL Na ativação]** e, em seguida, somente até a primeira vez que o ativo for ativado.
+   >
    Depois que um ativo é ativado, todas as atualizações são publicadas imediatamente no Delivery S7.
 
 1. Selecione **[!UICONTROL Salvar]**.
@@ -193,7 +196,7 @@ A senha alterada é salva ao selecionar **[!UICONTROL Salvar]** no canto superio
 
    * No **[!UICONTROL Nova senha]** insira uma nova senha.
 
-      A variável **[!UICONTROL Senha atual]** O campo é intencionalmente pré-preenchido e ocultado da interação.
+     A variável **[!UICONTROL Senha atual]** O campo é intencionalmente pré-preenchido e ocultado da interação.
 
    * No **[!UICONTROL Repetir senha]** , digite novamente a nova senha e selecione **[!UICONTROL Concluído]**.
 
@@ -233,7 +236,7 @@ Quando você executa o Dynamic Media - Scene7 mode no AEM, ele é encaminhado no
 
 1. No **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** marque a caixa de seleção das duas configurações a seguir:
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Quando ativada, essa configuração armazena em cache os resultados da permissão por dois minutos (padrão) para salvar.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Quando ativada, essa configuração armazena em cache os resultados da permissão por 120 segundos ou dois minutos (padrão) para ser salva.
    * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - Quando ativada, essa configuração valida o acesso de um usuário enquanto ele visualiza ativos por meio do Dynamic Media Image Server.
 
    ![Ativar as configurações da Lista de controle de acesso no modo Dynamic Media - Scene7](/help/assets/assets-dm/acl.png)
@@ -250,12 +253,13 @@ Se você pretende usar esse recurso, esteja ciente dos seguintes pré-requisitos
 * Este recurso de upload grande só é suportado para [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html) clientes.
 * Verifique se a instância do Experience Manager está configurada com o armazenamento Amazon S3 ou Microsoft® Azure Blob.
 
-   >[!NOTE]
-   Configure o armazenamento do Azure Blob com uma chave de acesso e uma chave secreta porque esse grande recurso de upload não é compatível com o AzureSas na configuração de armazenamento do Blob.
+  >[!NOTE]
+  >
+  Configure o armazenamento do Azure Blob com uma chave de acesso e uma chave secreta porque esse grande recurso de upload não é compatível com o AzureSas na configuração de armazenamento do Blob.
 
 * Oak [Download do Acesso Binário Direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) está ativado (Oak&#39;s *Upload de Acesso Binário Direto* não é obrigatório).
 
-   Para habilitar o download do Acesso Binário Direto, defina a propriedade `presignedHttpDownloadURIExpirySeconds > 0` na configuração do armazenamento de dados. O valor deve ser longo o suficiente para baixar binários maiores e possivelmente tentar novamente.
+  Para habilitar o download do Acesso Binário Direto, defina a propriedade `presignedHttpDownloadURIExpirySeconds > 0` na configuração do armazenamento de dados. O valor deve ser longo o suficiente para baixar binários maiores e possivelmente tentar novamente.
 
 * Ativos maiores que 15 GB não são carregados. (O limite de tamanho é definido na etapa 8 abaixo.)
 * Quando a variável **[!UICONTROL Reprocessamento do Dynamic Media]** Quando o fluxo de trabalho de ativos é acionado em uma pasta, ele reprocessa todos os ativos grandes que já estão sincronizados com a empresa do Dynamic Media. No entanto, se algum ativo grande ainda não estiver sincronizado na pasta, ele não fará upload do ativo. Portanto, para sincronizar ativos grandes existentes no Dynamic Media, você pode executar **[!UICONTROL Reprocessamento do Dynamic Media]** fluxo de trabalho de ativos em ativos individuais.
@@ -268,7 +272,7 @@ Se você pretende usar esse recurso, esteja ciente dos seguintes pré-requisitos
 
    * No painel à esquerda, navegue até o seguinte caminho:
 
-      `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+     `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
 
    * Copie e cole o caminho acima no campo CRXDE Lite path abaixo da barra de ferramentas e pressione `Enter`.
 
@@ -284,7 +288,7 @@ Se você pretende usar esse recurso, esteja ciente dos seguintes pré-requisitos
 
    * No painel à esquerda, navegue até o seguinte caminho de nó de sobreposição:
 
-      `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+     `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
 
    * Copie e cole o caminho acima no campo CRXDE Lite path abaixo da barra de ferramentas e pressione `Enter`.
 
@@ -304,11 +308,11 @@ Se você pretende usar esse recurso, esteja ciente dos seguintes pré-requisitos
 
    * Navegue até o seguinte caminho de URL:
 
-      `localhost:4502/system/console/configMgr/com.adobe.granite.workflow.core.job.ExternalProcessJobHandler`
+     `localhost:4502/system/console/configMgr/com.adobe.granite.workflow.core.job.ExternalProcessJobHandler`
 
    * Copie e cole o caminho acima no campo URL do seu navegador. Substitua `localhost:4502` com sua própria instância Experience Manager.
 
-1. No **[!UICONTROL Manipulador de trabalho do processo externo do fluxo de trabalho do Adobe Granite]** caixa de diálogo, no campo **[!UICONTROL Tempo limite máximo]** , defina o valor como `18000` minutos (cinco horas). O padrão é 10.800 minutos (três horas).
+1. No **[!UICONTROL Manipulador de trabalho do processo externo do fluxo de trabalho do Adobe Granite]** caixa de diálogo, no campo **[!UICONTROL Tempo limite máximo]** , defina o valor como `18000` segundos (cinco horas). O padrão é 10.800 segundos (três horas).
 
    ![Valor máximo de tempo limite](/help/assets/assets-dm/uploadassets15gb_d.png)
 
@@ -321,7 +325,7 @@ Se você pretende usar esse recurso, esteja ciente dos seguintes pré-requisitos
 1. Na página Modelos de fluxo de trabalho, selecione **[!UICONTROL Codificação de vídeo Dynamic Media]**.
 1. Na barra de ferramentas, selecione **[!UICONTROL Editar]**.
 1. Na página do fluxo de trabalho, clique duas vezes na guia **[!UICONTROL Upload binário direto do Scene7]** etapa do processo.
-1. No **[!UICONTROL Propriedades da etapa]** caixa de diálogo, no campo **[!UICONTROL Comum]** , no menu **[!UICONTROL Configurações avançadas]** cabeçalho, no campo **[!UICONTROL Tempo limite]** insira um valor de `18000` minutos (cinco horas). O padrão é `3600` minutos (uma hora).
+1. No **[!UICONTROL Propriedades da etapa]** caixa de diálogo, no campo **[!UICONTROL Comum]** , no menu **[!UICONTROL Configurações avançadas]** cabeçalho, no campo **[!UICONTROL Tempo limite]** insira um valor de `18000` segundos (cinco horas). O padrão é `3600` segundos (uma hora).
 1. Selecionar **[!UICONTROL OK]**.
 1. Selecionar **[!UICONTROL Sincronizar]**.
 1. Repita as etapas 14 a 21 para o **[!UICONTROL Ativo de atualização DAM]** modelo de fluxo de trabalho e o **[!UICONTROL Reprocessamento do Dynamic Media]** modelo de fluxo de trabalho.
@@ -356,6 +360,7 @@ O gerenciamento de cores do Dynamic Media permite corrigir as cores dos ativos. 
 Consulte [Configurar predefinições da imagem](/help/assets/managing-image-presets.md).
 
 >[!NOTE]
+>
 Por padrão, o sistema mostra 15 execuções ao selecionar **[!UICONTROL Representações]** e 15 predefinições do visualizador ao selecionar **[!UICONTROL Visualizadores]** na exibição de Detalhes do ativo. Você pode aumentar esse limite. Consulte [Aumentar o número de predefinições de imagens exibidas](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Aumentar o número de predefinições do visualizador exibidas](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### Editar tipos MIME para formatos compatíveis {#editing-mime-types-for-supported-formats}
@@ -474,6 +479,7 @@ Dois elementos estão disponíveis para definição: Correspondência e Nome de 
    É possível selecionar a variável **[!UICONTROL Exibir código]** marque a caixa para exibir a criação do valor de expressão regular ao lado das seleções do formulário. Você pode inserir ou alterar esses valores para ajudar a definir os elementos da convenção de nomenclatura, se a exibição do formulário limitar você por qualquer motivo. Se os valores não puderem ser analisados no modo de exibição de formulário, os campos de formulário ficarão inativos.
 
    >[!NOTE]
+   >
    Os campos de formulário desativados não executam nenhuma validação de que suas expressões regulares estão corretas. Você vê os resultados da expressão regular que está criando para cada elemento após a linha Resultado. A expressão regular completa é visível na parte inferior da página.
 
 1. Expanda cada elemento conforme necessário e insira as convenções de nomenclatura que deseja usar.
@@ -595,6 +601,7 @@ Quando o Conjunto de rotação é carregado e publicado, você ativaria o nome d
    As amostras acima são apenas para fins de demonstração. Você pode criar sua expressão regular da maneira que quiser que atenda às suas necessidades.
 
    >[!NOTE]
+   >
    Se a combinação de expressões regulares de linha e coluna não puder determinar a posição do ativo na matriz do conjunto de rotação multidimensional, o ativo não será adicionado ao conjunto. Um erro também é registrado.
 
 1. Em Definir convenção de nomeação e criação, especifique o sufixo ou prefixo para o nome base definido na Convenção de nomeação de ativos.
@@ -650,6 +657,7 @@ A fila de Fluxo de trabalho de trânsito do Granite é usada para o **[!UICONTRO
 1. Navegue até [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e pesquisar **Fila: Fila de fluxo de trabalho transitório do Granite**.
 
    >[!NOTE]
+   >
    Uma pesquisa de texto é necessária em vez de um URL direto, pois o PID OSGi é gerado dinamicamente.
 
 1. No **[!UICONTROL Máximo de Trabalhos Paralelos]** altere o número para o valor desejado.
@@ -673,6 +681,7 @@ A fila de Fluxo de trabalho do Granite é usada para fluxos de trabalho não tra
 1. Navegue até `https://<server>/system/console/configMgr` e pesquisar **Fila: Fila de fluxo de trabalho do Granite**.
 
    >[!NOTE]
+   >
    Uma pesquisa de texto é necessária em vez de um URL direto, pois o PID OSGi é gerado dinamicamente.
 
 1. No **[!UICONTROL Máximo de Trabalhos Paralelos]** altere o número para o valor desejado.
@@ -685,7 +694,7 @@ A fila de Fluxo de trabalho do Granite é usada para fluxos de trabalho não tra
 
 #### Atualizar a conexão de upload do Dynamic Media Classic {#updating-the-scene-upload-connection}
 
-A configuração Conexão de upload do Scene7 sincroniza ativos Experience Manager com servidores Dynamic Media Classic.
+A configuração Conexão de upload do Scene7 sincroniza ativos do Experience Manager com os servidores da Dynamic Media Classic.
 
 **Para atualizar a conexão de upload do Dynamic Media Classic:**
 
@@ -714,12 +723,13 @@ Os filtros fornecem uma maneira de *excluir* ativos sejam replicados para o nó 
 
 Se você usa o Dynamic Media para criação de imagens, vídeo ou ambos, é possível usar os filtros padrão que o Adobe fornece como está. Os seguintes filtros estão ativos por padrão:
 
-|  | Filtro | Tipo MIME | Representações |
+|   | Filtro | Tipo MIME | Representações |
 | --- | --- | --- | --- |
 | Entrega de imagem do Dynamic Media | filter-image<br>conjuntos de filtros | Começa com **image/**<br> Contém **aplicativos/** e terminará com **set**. | As &quot;imagens de filtro&quot; prontas para uso (aplica-se a ativos de imagens únicas, incluindo imagens interativas) e &quot;conjuntos de filtros&quot; (aplica-se a Conjuntos de rotação, Conjuntos de imagem, Conjuntos de mídia mista e Conjuntos de carrossel) irão:<br>· Excluir da replicação a imagem original e as representações de imagens estáticas. |
 | Entrega de vídeo do Dynamic Media | filter-video | Começa com **video/** | O &quot;filtro de vídeo&quot; pronto para uso irá:<br>· Excluir da replicação o vídeo original e as representações em miniatura estáticas. |
 
 >[!NOTE]
+>
 Os filtros se aplicam aos tipos MIME e não podem ser específicos de caminho.
 
 #### Personalizar filtros de ativos para replicação {#customizing-asset-filters-for-replication}
