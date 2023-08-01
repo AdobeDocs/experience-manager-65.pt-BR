@@ -1,6 +1,6 @@
 ---
 title: Publicação de ativos do Dynamic Media
-description: Como publicar ativos do Dynamic Media
+description: Saiba como publicar ativos do Dynamic Media, como vídeos e imagens, incluindo a entrega HTTP/2 desses ativos.
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,9 +10,9 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Publishing
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '474'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,6 @@ Consulte também [Incorporação do visualizador de vídeo ou imagem do Dynamic 
 >* Os ativos devem ser publicados para usar o URL. Se os ativos não forem publicados, copiar e colar o URL em um navegador não funcionará.
 >* As predefinições de imagem e do visualizador devem ser ativadas e publicadas para entrega em tempo real.
 >
-
 
 Para obter informações detalhadas sobre a publicação de um conjunto ou ativo, consulte [Publicar ativos](manage-assets.md).
 

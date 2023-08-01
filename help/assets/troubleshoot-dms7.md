@@ -1,6 +1,6 @@
 ---
 title: Solução de problemas do modo Dynamic Media - Scene7
-description: Solucione problemas do Dynamic Media quando ele estiver sendo executado no modo Scene7.
+description: Saiba como solucionar problemas de instalação, configuração e problemas gerais no Dynamic Media quando ele está em execução no modo Scene7.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,9 +12,9 @@ role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
-source-git-commit: 9c3df2491f99fe31e4b64b47442dd583af06974e
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1397'
 ht-degree: 1%
 
 ---
@@ -31,12 +31,12 @@ Verifique se o Dynamic Media foi configurado corretamente fazendo o seguinte:
 * Todos os Cumulative Fix Packs (CFPs) do Adobe Experience Manager 6.4 foram instalados primeiro *antes* qualquer Pacote de recursos do Dynamic Media disponível.
 * O Feature Pack 18912 opcional está instalado.
 
-   Este pacote de recursos opcional é para suporte a FTP ou se você estiver migrando ativos do Dynamic Media Classic para o Dynamic Media.
+  Este pacote de recursos opcional é para suporte a FTP ou se você estiver migrando ativos do Dynamic Media Classic para o Dynamic Media.
 
 * Navegue até a interface do usuário do Cloud Services e confirme se a conta provisionada aparece em **[!UICONTROL Configurações disponíveis]**.
 * Certifique-se de que o `Dynamic Media Asset Activation (scene7)` o agente de replicação está habilitado.
 
-   Esse agente de replicação é encontrado em Agentes no Autor.
+  Esse agente de replicação é encontrado em Agentes no Autor.
 
 ## Geral (todos os ativos) {#general-all-assets}
 
@@ -244,8 +244,7 @@ No CRXDE Lite, faça o seguinte:
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-Exemplo: 
-`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+Exemplo: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **Solução**
 

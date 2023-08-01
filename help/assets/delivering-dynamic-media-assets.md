@@ -1,6 +1,6 @@
 ---
 title: Entregar ativos do Dynamic Media
-description: Saiba como fornecer ativos do Dynamic Media
+description: Saiba como fornecer ativos do Dynamic Media, como vídeos e imagens, às suas páginas da Web.
 uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,10 +11,10 @@ docset: aem65
 role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Asset Management,Renditions
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 11%
+source-wordcount: '319'
+ht-degree: 13%
 
 ---
 
@@ -28,7 +28,7 @@ Com o Dynamic Media, você tem várias opções:
 * Se o site não estiver no Experience Manager, você terá a opção de:
 
    * Incorporar o vídeo ou a imagem no site.
-   * Vincule URLs ao aplicativo da Web. Use a vinculação quando quiser fornecer um reprodutor de vídeo como uma janela pop-up ou modal.
+   * Vincular URLs ao seu aplicativo web. Use a vinculação quando quiser fornecer um reprodutor de vídeo como uma janela pop-up ou modal.
    * Se o site for responsivo, você poderá [fornecer imagens otimizadas](/help/assets/responsive-site.md).
 
 >[!NOTE]
@@ -40,7 +40,7 @@ Para obter mais informações, consulte os seguintes tópicos:
 * [Adicionar ativos do Dynamic Media a páginas da Web](/help/assets/adding-dynamic-media-assets-to-pages.md)
 * [Incorporar o visualizador de vídeo ou imagem em uma página da Web](/help/assets/embed-code.md)
 * [Ativar proteção de hotlink no Dynamic Media](/help/assets/hotlink-protection.md)
-* [Vincular URLs ao seu aplicativo web.](/help/assets/linking-urls-to-yourwebapplication.md)
+* [Vincular URLs ao seu aplicativo web](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Entregar imagens otimizadas para um site responsivo](/help/assets/responsive-site.md)
 * [Entrega de conteúdo HTTP2](/help/assets/http2.md)
 * [Invalidar o cache da CDN por meio do Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
