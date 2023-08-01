@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 0%
@@ -61,7 +61,7 @@ O valor de `data-scf-component` o atributo pode ser o padrão, como **`social/ta
 
 Para vincular um componente, todo o script do componente deve estar contido em um &lt;div> elemento com os seguintes atributos:
 
-* `data-component-id`=&quot;{{id}}&quot;
+* `data-component-id`=&quot;`{{id}}`&quot;
 
   resolve para a propriedade id do contexto
 
@@ -70,7 +70,7 @@ Para vincular um componente, todo o script do componente deve estar contido em u
 Por exemplo, de `/apps/weretail/components/hbs/rating/rating.hbs`:
 
 ```xml
-<div class="we-Rating" data-component-id="{{id}}" data-scf-component="weretail/components/hbs/rating">
+<div class="we-Rating" data-component-id="`{{id}}`" data-scf-component="weretail/components/hbs/rating">
 
      <!-- HTML with HBS accessing the rating component -->
 
@@ -87,7 +87,7 @@ Todas as propriedades definidas em um componente/recurso podem ser acessadas faz
 
 ## Aplicação de capa a CSS {#skinning-css}
 
-A personalização de componentes para corresponder ao tema geral do site pode ser realizada alterando cores, fontes, imagens, botões, links, espaçamento e até mesmo posicionando em uma determinada extensão.
+A personalização de componentes para corresponder ao tema geral do site pode ser realizada alterando cores, fontes, imagens, botões, links, espaçamento e até mesmo o posicionamento em uma determinada extensão.
 
 A atribuição de capa pode ser obtida substituindo seletivamente os estilos da estrutura ou escrevendo folhas de estilos totalmente novas. Os componentes SCF definem classes CSS namespace, modulares e semânticas que afetam os vários elementos que compõem um componente.
 
