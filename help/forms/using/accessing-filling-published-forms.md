@@ -1,18 +1,14 @@
 ---
 title: Acesso e preenchimento de formulários publicados
-seo-title: Accessing and filling published forms
 description: O Forms Portal equipe os desenvolvedores da Web com componentes para criar e personalizar um portal de formulários em sites criados usando o Adobe Experience Manager (AEM).
-seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
-uuid: 44731604-5d97-46fa-baa9-0c020c634fa7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 88dc8ef2-95ce-4906-ac28-eecc3a32a64e
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -37,7 +33,7 @@ O componente de Pesquisa e Lister do portal roms exibe os formulários disponív
 
 Um exemplo de página do portal de formulários
 
-### Pesquisa e Lister {#search-and-lister}
+### Pesquisa e listagem {#search-and-lister}
 
 O componente de Pesquisa e Lister permite adicionar a seguinte funcionalidade ao portal de formulários:
 
@@ -60,7 +56,7 @@ A pesquisa de texto completo permite localizar e listar formulários com base na
 
 Uma caixa de diálogo de pesquisa avançada
 
-A Pesquisa avançada permite pesquisar formulários com base em propriedades de formulário especificadas. Isso fornece resultados mais específicos do que a pesquisa de texto completo. A pesquisa avançada inclui pesquisas baseadas em tags, propriedades (como Autor, Descrição e Título), data de modificação e texto completo.
+A Pesquisa avançada permite pesquisar formulários com base em propriedades de formulário especificadas. Isso fornece um resultado mais específico do que a pesquisa de texto completo. A pesquisa avançada inclui pesquisas baseadas em tags, propriedades (como Autor, Descrição e Título), data de modificação e texto completo.
 
 A lista exibe formulários com base nos parâmetros de pesquisa. Cada formulário no resultado da pesquisa é exibido com um ícone, que está hipervinculado ao formulário associado. Você pode clicar no ícone para abrir e trabalhar com o formulário associado.
 
@@ -76,7 +72,7 @@ Cada formulário contém informações de ajuda que permitem ao usuário preench
 
 #### Rascunhos e envio {#drafts-and-submission}
 
-Um usuário tem a opção de salvar um rascunho de um formulário clicando no botão Salvar. Isso permite que o usuário trabalhe em um formulário por um período de tempo antes de enviá-lo.
+Como opção, um usuário pode salvar o rascunho de um formulário clicando em **Salvar**. Isso permite que o usuário trabalhe em um formulário por um período de tempo antes de enviar o formulário.
 
 Os dados preenchidos no formulário (incluindo anexos) são salvos como rascunho no servidor. O rascunho de um formulário pode ser salvo qualquer número de vezes. O formulário salvo aparece na guia Rascunhos do componente Rascunho e envio da página.
 
@@ -92,9 +88,9 @@ Rascunhos e componentes de envios
 
 ## Iniciar um novo formulário usando dados de formulário enviados {#start-a-new-form-using-submitted-form-data}
 
-Há certos formulários que você precisa preencher e enviar com frequência. Por exemplo, o formulário para apresentar uma declaração de imposto individual é enviado todos os anos. Nesses casos, enquanto parte das informações muda sempre que você preenche o formulário, a maioria delas, como os detalhes pessoais e familiares, não muda. No entanto, ainda é necessário preencher todo o formulário novamente, do zero.
+Há determinados formulários que você deve preencher e enviar com frequência. Por exemplo, o formulário para apresentar uma declaração de imposto individual é enviado todos os anos. Nesses casos, enquanto parte das informações muda sempre que você preenche o formulário, a maioria delas, como os detalhes pessoais e familiares, não muda. No entanto, ainda é necessário preencher todo o formulário novamente, do zero.
 
-O AEM Forms pode ajudar a otimizar a experiência de preenchimento do formulário e reduzir significativamente o tempo para preencher e enviar um formulário novamente. Os usuários finais podem iniciar um novo formulário usando dados de um formulário enviado. Essa funcionalidade é incorporada no [Rascunhos e componentes de envios](../../forms/using/draft-submission-component.md). Ao adicionar o componente Rascunhos e envio à página do portal Formulários e publicá-lo, os usuários finais encontrarão uma opção nas guias Forms enviado e Forms de rascunho para iniciar um novo formulário usando dados de um formulário enviado. A imagem a seguir destaca essa opção.
+O AEM Forms pode ajudar a otimizar a experiência de preenchimento do formulário e reduzir significativamente o tempo para preencher e enviar um formulário novamente. Os usuários finais podem iniciar um novo formulário usando dados de um formulário enviado. Essa funcionalidade é incorporada no [Rascunhos e componentes de envios](../../forms/using/draft-submission-component.md). Ao adicionar o componente Rascunhos e envio à página do portal Formulários e publicá-lo, os usuários finais veem uma opção nas guias Forms enviado e Forms de rascunho para iniciar um novo formulário usando dados de um formulário enviado. A imagem a seguir destaca essa opção.
 
 ![start-a-new-form](assets/start-a-new-form.png)
 

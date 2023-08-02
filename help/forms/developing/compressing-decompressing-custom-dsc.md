@@ -2,9 +2,9 @@
 title: Compactar e descompactar arquivos usando um AEM Forms no JEE Custom DSC
 description: Saiba como compactar e descompactar arquivos usando um AEM Forms no DSC personalizado JEE
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 ## Conhecimento de pré-requisito {#prerequisites}
 
-Experiência com o AEM Forms no Gerenciamento de processos JEE, programação Java básica e criação de componente personalizado.
+Experiência com o AEM Forms no Gerenciamento de processos JEE, programação Java™ básica e criação de componente personalizado.
 
 **Outros produtos adicionais obrigatórios**
 
-Editor Java, como [Eclipse](https://www.eclipse.org/) ou [Netbeans IDE](https://netbeans.apache.org/)
+Editor Java™, como [Eclipse](https://www.eclipse.org/) ou [Netbeans IDE](https://netbeans.apache.org/)
 
 ## Nível do usuário {#user-level}
 
@@ -187,7 +187,7 @@ O arquivo component.xml é mostrado aqui:
 
 ## Empacotamento e implantação do componente {#packaging-deploying-component}
 
-1. Compile o projeto java e crie um arquivo .JAR.
+1. Compile o projeto Java™ e crie um arquivo .JAR.
 1. Implante o componente (arquivo .JAR) no AEM Forms no tempo de execução do JEE por meio do Workbench.
 1. Inicie o serviço a partir do Workbench (consulte a Figura abaixo).
 

@@ -1,19 +1,15 @@
 ---
 title: DSRP - Provedor de Recurso de Armazenamento de Banco de Dados Relacional
-seo-title: DSRP - Relational Database Storage Resource Provider
 description: Configurar o AEM Communities para usar um banco de dados relacional como seu armazenamento comum
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '617'
 ht-degree: 3%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 3%
 
 ## Sobre o DSRP {#about-dsrp}
 
-Quando o AEM Communities é configurado para usar um banco de dados relacional como seu armazenamento comum, o conteúdo gerado pelo usuário (UGC) pode ser acessado de todas as instâncias de criação e publicação sem a necessidade de sincronização ou replicação.
+Quando o AEM Communities é configurado para usar um banco de dados relacional como armazenamento comum, o conteúdo gerado pelo usuário (UGC) pode ser acessado de todas as instâncias de criação e publicação sem a necessidade de sincronização ou replicação.
 
 Consulte também [Características das opções de SRP](working-with-srp.md#characteristics-of-srp-options) e [Topologias recomendadas](topologies.md).
 
@@ -33,7 +29,7 @@ Consulte também [Características das opções de SRP](working-with-srp.md#char
 
 >[!NOTE]
 >
->A configuração de armazenamento padrão agora é armazenada em conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) em vez do caminho etc (`/etc/socialconfig/srpc/defaultconfiguration`). É recomendável seguir as instruções do [etapas de migração](#zerodt-migration-steps) para fazer com que o defaultsrp funcione conforme esperado.
+>A configuração de armazenamento padrão agora é armazenada em conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) em vez de `etc` caminho (`/etc/socialconfig/srpc/defaultconfiguration`). É recomendável seguir as instruções do [etapas de migração](#zerodt-migration-steps) para fazer com que o defaultsrp funcione conforme esperado.
 
 ## Configuração de Banco de Dados Relacional {#relational-database-configuration}
 
@@ -67,53 +63,55 @@ Na criação, para acessar o console Configuração de armazenamento
    * Selecionar **[!UICONTROL Configuração de armazenamento]**
 
       * Como exemplo, o local resultante é: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
-      >[!NOTE]
-      >
-      >A configuração de armazenamento padrão agora é armazenada em conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) em vez do caminho etc (`/etc/socialconfig/srpc/defaultconfiguration`). É recomendável seguir as instruções do [etapas de migração](#zerodt-migration-steps) para fazer com que o defaultsrp funcione conforme esperado.
-   ![dsrp-config](assets/dsrp-config.png)
+
+     >[!NOTE]
+     >
+     >A configuração de armazenamento padrão agora é armazenada em conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) em vez de `etc` caminho (`/etc/socialconfig/srpc/defaultconfiguration`). É recomendável seguir as instruções do [etapas de migração](#zerodt-migration-steps) para fazer com que o defaultsrp funcione conforme esperado.
+
+  ![dsrp-config](assets/dsrp-config.png)
 
 * Selecionar **[!UICONTROL Provedor do recurso de armazenamento do banco de dados (DSRP, Database Storage Resource Provider)]**
 * **Configuração do banco de dados**
 
    * **[!UICONTROL Nome da fonte de dados JDBC]**
 
-      O nome fornecido para a conexão MySQL deve ser igual ao inserido em [Configuração OSGi do JDBC](dsrp-mysql.md#configurejdbcconnections)
+     O nome fornecido para a conexão MySQL deve ser igual ao inserido em [Configuração OSGi do JDBC](dsrp-mysql.md#configurejdbcconnections)
 
-      *padrão*: comunidades
+     *padrão*: comunidades
 
    * **[!UICONTROL Nome do banco de dados]**
 
-      Nome dado ao esquema em [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
+     Nome dado ao esquema em [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
 
-      *padrão*: comunidades
+     *padrão*: comunidades
 
 * **SolrConfiguration**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Host do Zookeeper**
+   * **[](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html)Host do Zookeeper**
 
-      Deixe esse valor em branco se estiver executando o Solr usando o ZooKeeper interno. Senão, ao executar em [Modo SolrCloud](solr.md#solrcloud-mode) com um ZooKeeper externo, defina este valor para o URI do ZooKeeper, como *my.server.com:80*
+     Deixe esse valor em branco se estiver executando o Solr usando o ZooKeeper interno. Senão, ao executar em [Modo SolrCloud](solr.md#solrcloud-mode) com um ZooKeeper externo, defina este valor para o URI do ZooKeeper, como *my.server.com:80*
 
-      *padrão*: *&lt;blank>*
+     *padrão*: *&lt;blank>*
 
    * **[!UICONTROL URL de Solr]**
 
-      *padrão*: https://127.0.0.1:8983/solr/
+     *padrão*: https://127.0.0.1:8983/solr/
 
    * **[!UICONTROL Coleção Solr]**
 
-      *padrão*: coleção1
+     *padrão*: coleção1
 
 * Selecione **[!UICONTROL Enviar]**.
 
 ### Nenhuma etapa de migração de tempo de inatividade para defaultsrp {#zerodt-migration-steps}
 
-Siga estas etapas para garantir que a página defaultsrp [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) funciona conforme o esperado:
+Para garantir que a página defaultsrp [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) funcionar conforme esperado, siga estas etapas:
 
 1. Renomear o caminho em `/etc/socialconfig` para `/etc/socialconfig_old`, para que a configuração do sistema retorne ao jsrp(padrão).
 1. Ir para a página defaultsrp [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp), em que jsrp está configurado. Clique em **[!UICONTROL enviar]** para que o novo nó de configuração padrão seja criado em `/conf/global/settings/community/srpc`.
 1. Excluir a configuração padrão criada `/conf/global/settings/community/srpc/defaultconfiguration`.
 1. Copiar a configuração antiga `/etc/socialconfig_old/srpc/defaultconfiguration` no lugar do nó excluído (`/conf/global/settings/community/srpc/defaultconfiguration`) na etapa anterior.
-1. Excluir o nó etc antigo `/etc/socialconfig_old`.
+1. Excluir o antigo `etc` nó `/etc/socialconfig_old`.
 
 ## Publicar a configuração {#publishing-the-configuration}
 
@@ -128,9 +126,9 @@ Para disponibilizar a configuração idêntica no ambiente de publicação:
    * **Caminho de início**:
 
       * Navegue até `/etc/socialconfig/srpc/`
+
    * Assegurar `Only Modified` não está selecionado.
    * Selecionar **[!UICONTROL Ativar]**.
-
 
 ## Gerenciamento de dados do usuário {#managing-user-data}
 
