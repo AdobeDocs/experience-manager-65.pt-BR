@@ -1,15 +1,15 @@
 ---
 title: Personalização e extensão de fragmentos de conteúdo
 seo-title: Customizing and Extending Content Fragments
-description: Um fragmento de conteúdo estende um ativo padrão.
-seo-description: A content fragment extends a standard asset.
+description: Um fragmento de conteúdo estende um ativo padrão. Saiba como personalizá-los.
+seo-description: A content fragment extends a standard asset. Learn how you can customize them.
 topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: ada61b87753f3f3e70acdca0e946428511bd7b00
 workflow-type: tm+mt
-source-wordcount: '2782'
+source-wordcount: '2788'
 ht-degree: 2%
 
 ---
