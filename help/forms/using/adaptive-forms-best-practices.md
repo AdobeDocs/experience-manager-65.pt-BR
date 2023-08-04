@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 000ab7bc9a686b62fcfc122f9cf09129101ec9a8
 workflow-type: tm+mt
-source-wordcount: '4586'
+source-wordcount: '4738'
 ht-degree: 0%
 
 ---
@@ -103,6 +103,7 @@ Para obter mais informações, consulte [Criar um formulário adaptável](/help/
 É possível criar um formulário adaptável usando os modelos de formulário habilitados em **Navegador de configuração**. Para ativar os modelos de formulário, consulte [Criação do modelo de formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
 
 Os modelos de formulário também podem ser carregados de pacotes de formulários adaptáveis criados em outra máquina de criação. Os modelos de formulário são disponibilizados instalando [aemforms-references-* pacotes](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR). Algumas das práticas recomendadas são:
+
 * A variável **nosamplecontent** o modo de execução é recomendado somente para o autor e não para os nós de publicação.
 * A criação de ativos, como formulário adaptável, temas, modelos ou configurações de nuvem, é executada somente nos nós Autor, que podem ser publicados nos nós Publicar configurados.
 Para obter mais informações, consulte [Publicação e cancelamento de publicação de formulários e documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
@@ -154,6 +155,39 @@ O editor de regras fornece um editor visual e um editor de código para escrever
 
 * Os autores do formulário adaptável podem precisar gravar código JavaScript para criar lógica de negócios em um formulário. Embora o JavaScript seja eficiente, é provável que ele comprometa as expectativas de segurança. Portanto, você deve garantir que o autor do formulário seja uma pessoa confiável e que haja processos para revisar e aprovar o código JavaScript antes que um formulário seja colocado em produção. O administrador pode restringir o acesso ao editor de regras a grupos de usuários com base em sua função. Consulte [Conceder acesso ao editor de regras para grupos de usuários selecionados](/help/forms/using/rule-editor-access-user-groups.md).
 * Você pode usar expressões em regras para tornar formulários adaptáveis dinâmicos. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Essas expressões retornam valores de determinados tipos. Para obter mais informações sobre expressões e práticas recomendadas, consulte [Expressões de formulário adaptável](/help/forms/using/adaptive-form-expressions.md).
+
+* O Adobe recomenda usar operações síncronas de JavaScript em relação a operações assíncronas ao criar regras com o editor de regras. O uso de operações assíncronas é altamente desencorajado. No entanto, se você estiver em uma situação em que as operações assíncronas são inevitáveis, é essencial implementar funções de Fechamento do JavaScript. Ao fazer isso, você pode se proteger efetivamente contra possíveis condições de corrida, garantindo que as implementações de regras forneçam o melhor desempenho e mantenham a estabilidade em todo o.
+
+  Por exemplo, vamos supor que precisamos buscar dados de uma API externa e, em seguida, aplicar algumas regras com base nesses dados. Usamos um fechamento para lidar com a chamada de API assíncrona e garantir que as regras sejam aplicadas após a busca dos dados. Este é o código de exemplo:
+
+  ```JavaScript
+       function fetchDataFromAPI(apiEndpoint, callback) {
+        // Simulate asynchronous API call with setTimeout
+        setTimeout(() => {
+          // Assuming the API call is successful, we receive some data
+          const data = {
+            someValue: 42,
+          };
+          // Invoke the callback with the fetched data
+          callback(data);
+        }, 2000); // Simulate a 2-second delay for the API call
+      }
+      // Rule implementation using Closure
+      function ruleImplementation(apiEndpoint) {
+        // Using a closure to handle the asynchronous API call and rule application
+        // say you have set this value in street field inside address panel
+        var streetField = address.street;
+        fetchDataFromAPI(apiEndpoint, (data) => {
+          streetField.value = data.someValue;
+        });
+      }
+      // Example usage of the rule implementation
+      const apiEndpoint = "https://example-api.com/data";
+      ruleImplementation(apiEndpoint);
+  ```
+
+  Neste exemplo, `fetchDataFromAPI` simula uma chamada de API assíncrona usando `setTimeout`. Depois que os dados são buscados, ele chama a função de retorno de chamada fornecida, que é o fechamento para lidar com a aplicação de regra subsequente. A variável `ruleImplementation` contém a lógica da regra.
+
 
 ### Trabalhar com temas {#working-with-themes}
 
