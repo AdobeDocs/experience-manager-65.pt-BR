@@ -8,10 +8,10 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: a5d38ef6b3281992fd9ac3121cdb6c998631b205
+source-git-commit: d958f616803f92190493cc3f1ef474d0987991bd
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 2%
+source-wordcount: '1975'
+ht-degree: 3%
 
 ---
 
@@ -20,12 +20,13 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | Este artigo |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
+| AEM 6.5 | Este artigo |
+
 
 **Aplicável a:** ❎ Dos Componentes Principais Do Formulário Adaptável [Componentes de base do formulário adaptável](/help/forms/using/themes.md).
 
-No AEM Forms 6.5, um tema é uma biblioteca cliente AEM usada para definir os estilos (aparência e comportamento) de um Formulário adaptável. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é refletido nos componentes correspondentes. Um tema é gerenciado de forma independente sem uma referência a um Formulário adaptável e pode ser reutilizado em vários Forms adaptáveis.
+No AEM Forms 6.5, um tema é uma biblioteca cliente AEM usada para definir os estilos (aparência e comportamento) de um formulário adaptável. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Quando você aplica um tema, o estilo especificado é refletido nos componentes correspondentes. Um tema é gerenciado de forma independente sem uma referência a um Formulário adaptável e pode ser reutilizado em vários Forms adaptáveis.
 
 ## Temas disponíveis {#available-theme}
 
@@ -51,7 +52,7 @@ Um tema é um pacote que abrange o arquivo CSS, arquivos JavaScript e recursos (
 
 ## Criar um tema
 
-O AEM Forms 6.5 fornece os temas listados abaixo para os Componentes principais com base no Adaptive Forms.
+O AEM Forms 6.5 fornece os temas listados abaixo para o Adaptive Forms baseado em Componentes principais.
 
 * [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
@@ -337,4 +338,5 @@ Para remover temas não utilizados ou indesejados:
 * [Criar ou personalizar temas para Componentes principais com base no Forms adaptável](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Criar um modelo para os Componentes principais com base no Forms adaptável](template-editor.md)
 * [Criar ou adicionar um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Modelos de temas de amostra e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 

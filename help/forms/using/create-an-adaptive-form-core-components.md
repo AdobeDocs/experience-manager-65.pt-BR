@@ -9,9 +9,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: d958f616803f92190493cc3f1ef474d0987991bd
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '1730'
 ht-degree: 3%
 
 ---
@@ -174,10 +174,10 @@ Você pode usar o serviço de preenchimento do modelo de dados de formulário pa
 
 * [Usar o editor de regras para adicionar comportamento dinâmico ao formulário](rule-editor.md)
 * [Criar ou personalizar temas para Componentes principais com base no Forms adaptável](create-or-customize-themes-for-adaptive-forms-core-components.md)
-* Criar um modelo para os Componentes principais com base no Forms adaptável
+
 
 ## Consulte também:
 
 * [Criar um formulário adaptável baseado nos Componentes principais](create-an-adaptive-form-core-components.md)
 * [Criar ou adicionar um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
+* [Modelos de temas de amostra e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
