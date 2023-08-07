@@ -8,10 +8,10 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 2adc33b5f3ecb2a88f7ed2c5ac5cc31f98506989
 workflow-type: tm+mt
-source-wordcount: '2619'
-ht-degree: 1%
+source-wordcount: '3033'
+ht-degree: 2%
 
 ---
 
@@ -131,6 +131,84 @@ O Índice Lucene tem as seguintes opções de configuração:
 * A variável **includePropertyTypes** propriedade, que define qual subconjunto de tipos de propriedade é incluído no índice.
 * A variável **excludePropertyNames** propriedade que define uma lista de nomes de propriedade - propriedades que devem ser excluídas do índice.
 * A variável **reindexar** sinalizador que, quando definido como **true**, aciona uma reindexação completa de conteúdo.
+
+### Compreensão da pesquisa de texto completo {#understanding-fulltext-search}
+
+A documentação desta seção se aplica ao Apache Lucene, Elasticsearch, bem como índices de texto completo de, por exemplo, PostgreSQL, SQLite, MySQL. O exemplo a seguir é para AEM/Oak/Lucene.
+
+<b>Dados a serem indexados</b>
+
+O ponto inicial são os dados que precisam ser indexados. Considere os seguintes documentos, como exemplo:
+
+| <b>ID do documento</b> | <b>Caminho</b> | <b>Texto completo</b> |
+| --- | --- | --- |
+| 100 | /content/rubik | &quot;Rubik é uma marca finlandesa.&quot; |
+| 200 | /content/rubiksCube | &quot;O Cubo Mágico foi inventado em 1974.&quot; |
+| 300 | /content/cube | &quot;Um cubo é um objeto tridimensional.&quot; |
+
+
+<b>Índice invertido</b>
+
+O mecanismo de indexação divide o texto completo em palavras chamadas &quot;tokens&quot; e cria um índice chamado &quot;índice invertido&quot;. Este índice contém a lista de documentos onde ele aparece para cada palavra.
+
+Palavras muito curtas e comuns (também chamadas de &quot;palavras irrelevantes&quot;) não são indexadas. Todos os tokens são convertidos em minúsculas e a raiz é aplicada.
+
+Observe os caracteres especiais, como *&quot;-&quot;* não são indexados.
+
+| <b>Token</b> | <b>IDs de documento</b> |
+| --- | --- |
+| 194 | ..., 200,... |
+| marca | ..., 100,... |
+| cubo | ..., 200, 300,... |
+| dimension | 300 |
+| finlandês | ..., 100,... |
+| inventar | 200 |
+| objeto | ..., 300,... |
+| rubik | .., 100, 200,... |
+
+A lista de documentos está classificada. Isso se tornará útil ao consultar.
+
+<b>Localizando</b>
+
+Veja abaixo um exemplo de query. Observe que todos os caracteres especiais (como *&#39;*) foram substituídas por um espaço:
+
+```
+/jcr:root/content//element(\*; cq:Page)`[` jcr:contains('Rubik s Cube')`]`
+```
+
+As palavras são tokenizadas e filtradas da mesma forma que na indexação (palavras de caractere único são removidas, por exemplo). Nesse caso, a busca é por:
+
+```
++:fulltext:rubik +:fulltext:cube
+```
+
+O índice então consultará a lista de documentos para essas palavras. Se houver muitos documentos, as listas podem ser muito grandes. Como exemplo, vamos supor que eles contenham o seguinte:
+
+
+| <b>Token</b> | <b>IDs de documento</b> |
+| --- | --- |
+| rubik | 10, 100, 200, 1000 |
+| cubo | 30, 200, 300, 2000 |
+
+
+A Lucene vai alternar entre as duas listas (ou de forma alternada) `n` listas, ao pesquisar por `n` palavras):
+
+* Lido no &quot;rubik&quot; recebe a primeira entrada: encontra 10
+* A leitura no &quot;cubo&quot; obtém a primeira entrada `>` = 10 10 não é encontrado, então o próximo é 30.
+* Lido no &quot;rubik&quot; recebe a primeira entrada `>` = 30: encontra 100.
+* A leitura no &quot;cubo&quot; obtém a primeira entrada `>` = 100: encontra 200.
+* Lido no &quot;rubik&quot; recebe a primeira entrada `>` = 200 200 é encontrado. Portanto, o documento 200 é uma combinação para ambos os termos. Isso é lembrado.
+* Lido no &quot;rubik&quot; recebe a próxima entrada: 1000.
+* A leitura no &quot;cubo&quot; obtém a primeira entrada `>` = 1000: encontra 2000.
+* Lido no &quot;rubik&quot; recebe a primeira entrada `>` = 2000: fim da lista.
+* Finalmente, podemos parar de pesquisar.
+
+O único documento encontrado que contém ambos os termos é 200, como no exemplo abaixo:
+
+| 200 | /content/rubiksCube | &quot;O Cubo Mágico foi inventado em 1974.&quot; |
+| --- | --- | --- |
+
+Quando várias entradas são encontradas, elas são classificadas por pontuação.
 
 ### O índice de propriedade Lucene {#the-lucene-property-index}
 
