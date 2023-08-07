@@ -12,14 +12,19 @@ discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 1%
+source-wordcount: '282'
+ht-degree: 4%
 
 ---
 
 # AEM Forms em grupos e privilégios OSGi{#aem-forms-on-osgi-groups-and-privileges}
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html) |
+| AEM 6.5 | Este artigo |
 
 Você pode [criar grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) e atribuir políticas e [usuários](/help/sites-administering/user-group-ac-admin.md#user-administration) aos grupos no AEM. Essas políticas controlam os privilégios dos usuários que fazem parte do grupo.
 

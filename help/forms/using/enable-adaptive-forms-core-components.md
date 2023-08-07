@@ -8,10 +8,10 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
+source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 5%
+source-wordcount: '889'
+ht-degree: 6%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 5%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
 
 **Aplicável a:** ✔ Componentes Principais Do Formulário Adaptável ❎ Componentes De Base Do Formulário Adaptável.
 
