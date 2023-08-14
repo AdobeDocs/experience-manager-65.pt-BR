@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 2ed19ac8c60dbf49422b8f1f665be4004689e00e
 workflow-type: tm+mt
-source-wordcount: '3521'
+source-wordcount: '3550'
 ht-degree: 2%
 
 ---
@@ -139,6 +139,10 @@ Estas opções de configuração estão disponíveis:
 
 O AEM pode ser configurado para armazenar dados no S3 (Simple Storage Service, serviço simples de armazenamento) da Amazon. Ele usa o `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID da configuração.
 
+>[!NOTE]
+>
+>O AEM 6.5 é compatível com o armazenamento de dados no S3 da Amazon, no entanto, o suporte não se estende ao armazenamento de dados em outras plataformas, cujos fornecedores podem ter suas próprias implementações das APIs S3 da Amazon.
+
 Para ativar a funcionalidade de armazenamento de dados do S3, um pacote de recursos contendo o Conector de armazenamento de dados do S3 deve ser baixado e instalado. Vá para a [Repositório Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) e baixe a versão mais recente da versão 1.10.x do pacote de recursos (por exemplo, com.adobe.granite.oak.s3connector-1.10.0.zip). Além disso, você deve baixar e instalar o service pack AEM mais recente conforme listado na [Notas de versão do AEM 6.5](/help/release-notes/release-notes.md) página.
 
 >[!NOTE]
@@ -230,8 +234,8 @@ Você pode usar o arquivo de configuração com as opções detalhadas abaixo.
 
 | Chave | Descrição | Padrão | Obrigatório |
 | --- | --- | --- | --- |
-| accessKey | ID da Chave de Acesso para o usuário do IAM com acesso ao bucket. |  | Sim, quando as funções IAM não estiverem sendo usadas. |
-| secretKey | Chave de acesso secreta para o usuário do IAM com acesso ao bucket. |  | Sim, quando as funções IAM não estiverem sendo usadas. |
+| accessKey | ID da Chave de Acesso para o usuário do IAM com acesso ao bucket. | | Sim, quando as funções IAM não estiverem sendo usadas. |
+| secretKey | Chave de acesso secreta para o usuário do IAM com acesso ao bucket. | | Sim, quando as funções IAM não estiverem sendo usadas. |
 | cacheSize | O tamanho (em bytes) do cache local. | 64GB | Não. |
 | connectionTimeout | Defina o tempo de espera (em milissegundos) antes de atingir o tempo limite ao estabelecer uma conexão inicialmente. | 10000 | Não. |
 | maxCachedBinarySize | Os binários com tamanho menor ou igual a esse valor (em bytes) são armazenados no cache de memória. | 17408 (17 KB) | Não. |
@@ -239,10 +243,10 @@ Você pode usar o arquivo de configuração com as opções detalhadas abaixo.
 | maxErrorRetry | Defina o número máximo de tentativas de repetição para solicitações com falha (recuperáveis). | 3 | Não. |
 | minRecordLength | O tamanho mínimo de um objeto (em bytes) que deve ser armazenado no armazenamento de dados. | 16384 | Não. |
 | caminho | O caminho local do armazenamento de dados AEM. | `crx-quickstart/repository/datastore` | Não. |
-| proxyHost | Defina o host do proxy opcional pelo qual o cliente se conecta. |  | Não. |
-| proxyPort | Defina a porta de proxy opcional pela qual o cliente se conecta. |  | Não. |
-| s3Bucket | Nome do bucket do S3. |  | Sim |
-| s3EndPoint | Endpoint da API REST S3. |  | Não. |
+| proxyHost | Defina o host do proxy opcional pelo qual o cliente se conecta. | | Não. |
+| proxyPort | Defina a porta de proxy opcional pela qual o cliente se conecta. | | Não. |
+| s3Bucket | Nome do bucket do S3. | | Sim |
+| s3EndPoint | Endpoint da API REST S3. | | Não. |
 | s3Region | Região onde o bucket está. Veja isto [página](https://docs.aws.amazon.com/general/latest/gr/s3.html) para obter mais detalhes. | Região em que a instância do AWS está em execução. | Não. |
 | socketTimeout | Defina o tempo de espera (em milissegundos) para que os dados sejam transferidos por uma conexão estabelecida e aberta antes que a conexão expire e seja fechada. | 50000 | Não. |
 | stagingPurgeInterval | O intervalo (em segundos) para limpeza de uploads concluídos do cache de preparo. | 300 | Não. |
@@ -367,7 +371,7 @@ Para configurar a replicação sem binários com o S3, as seguintes etapas são 
    * Se estiver usando S3 como armazenamento de dados, crie um arquivo chamado o `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` no `<aem-install>/crx-quickstart/install` como acima.
 
 1. Modifique os arquivos de configuração do armazenamento de dados em cada instância para que eles apontem para o mesmo armazenamento de dados. Para obter mais informações, consulte [este artigo](/help/sites-deploying/data-store-config.md#data-store-configurations).
-1. Se a instância tiver sido clonada de um servidor existente, remova a variável `clusterId` da nova instância usando a ferramenta oak-run mais recente enquanto o repositório está offline. O comando que você deve executar é:
+1. Se a instância tiver sido clonada de um servidor existente, remova a variável `clusterId` da nova instância usando a ferramenta oak-run mais recente enquanto o repositório estiver offline. O comando que você deve executar é:
 
    ```xml
    java -jar oak-run.jar resetclusterid < repository path | Mongo URI >
@@ -391,7 +395,8 @@ Para configurar a replicação sem binários com o S3, as seguintes etapas são 
    >
    >    * Para versões do Oak **1.2.x** usar o Oak-run **1.2.12 ou mais recente**
    >    * Para versões do Oak **mais recente que o anterior**, use a versão do Oak-run que corresponda ao núcleo Oak da instalação do AEM.
-
+   >
+   >
 
 1. Por último, valide a configuração. Para validar, procure um arquivo exclusivo adicionado ao armazenamento de dados por cada repositório que o está compartilhando. O formato dos arquivos é `repository-[UUID]`, em que a UUID é um identificador exclusivo de cada repositório individual.
 
@@ -500,7 +505,6 @@ Você pode executar a coleta de lixo do armazenamento de dados ao:
 >2. Adicione o `blobTrackSnapshotIntervalInSecs=L"0"` parâmetro no `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` arquivo. Este parâmetro exige o Oak 1.12.0, 1.10.2 ou posterior.
 >3. Reinicie a instância do AEM.
 
-
 Com versões mais recentes do AEM, a coleta de lixo do armazenamento de dados também pode ser executada em armazenamentos de dados compartilhados por mais de um repositório. Para executar a coleta de lixo do armazenamento de dados em um armazenamento de dados compartilhado, siga estas etapas:
 
 1. Verifique se todas as tarefas de manutenção configuradas para a coleta de lixo do armazenamento de dados estão desabilitadas em todas as instâncias do repositório que compartilham o armazenamento de dados.
@@ -513,4 +517,5 @@ Com versões mais recentes do AEM, a coleta de lixo do armazenamento de dados ta
    1. Vá para o console JMX e selecione o Mbean do gerenciador de repositório.
    1. Clique em **Clique em startDataStoreGC(boolean markOnly)** link.
    1. Na caixa de diálogo a seguir, digite `false` para o `markOnly` parâmetro novamente.
+
    Todos os arquivos encontrados são agrupados usando a fase de marcação usada antes e excluem o restante que não é usado do armazenamento de dados.
