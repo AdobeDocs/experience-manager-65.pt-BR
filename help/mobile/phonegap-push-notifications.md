@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
 workflow-type: tm+mt
 source-wordcount: '3214'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Para usar APNs, você precisa de um **Certificado** arquivo (um arquivo .cer), u
 
 >[!NOTE]
 >
->O Google está substituindo o GCM por um serviço semelhante chamado Firebase Cloud Messaging (FCM). Para obter mais informações sobre o FCM, clique em [aqui](https://developers.google.com/cloud-messaging/faq).
+>O Google está substituindo o GCM por um serviço semelhante chamado Firebase Cloud Messaging (FCM). Para obter mais informações sobre o FCM, clique em [aqui](https://firebase.google.com/docs/cloud-messaging/).
 
 Vá para a página do Google [aqui](https://developer.android.com/google/gcm/index.html) para se familiarizar com o Google Cloud Messaging para Android™.
 
@@ -259,10 +259,10 @@ Antes de criar e implantar em seu dispositivo móvel configurado, você deve def
 1. Crie os grupos de autorização apropriados para notificações por push.
 1. Faça logon no AEM como o usuário apropriado, clique na guia Aplicativos.
 1. Clique no aplicativo.
-1. Localize o bloco Gerenciar Cloud Services e clique no lápis para modificar as configurações de nuvem.
+1. Localize o bloco Gerenciar Cloud Service e clique no lápis para modificar as configurações de nuvem.
 1. Selecione Amazon SNS Connection, Pushwoosh Connection ou Adobe Mobile Services, como a configuração de notificação.
 1. Insira as propriedades do provedor e clique em Enviar para salvá-las e em Concluído. Eles não são verificados remotamente nesse estágio, exceto se houver AMS.
-1. Agora você deve ver a configuração inserida no bloco Gerenciar Cloud Services.
+1. Agora você deve ver a configuração inserida no bloco Gerenciar Cloud Service.
 
 ### Etapa 6: criar e implantar o aplicativo {#step-build-and-deploy-the-app}
 
@@ -321,7 +321,7 @@ Crie a notificação, adicione um texto de botão e um caminho de link para o de
 >
 >Para acessar o bloco Notificações por push no painel, siga as etapas abaixo.
 
-1. Clique na edição no canto superior direito da **Gerenciar Cloud Services** bloco.
+1. Clique na edição no canto superior direito da **Gerenciar Cloud Service** bloco.
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 
